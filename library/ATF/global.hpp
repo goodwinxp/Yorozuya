@@ -67,6 +67,7 @@
 #include "_D3DFORMAT.hpp"
 #include "_D3DLIGHTTYPE.hpp"
 #include "TIMER_COMMAND.hpp"
+#include "GlobalNames.hpp"
 
 
 START_ATF_NAMESPACE
