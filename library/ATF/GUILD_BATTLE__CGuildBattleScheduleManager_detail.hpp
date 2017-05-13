@@ -10,147 +10,147 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_ptr GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_clbk GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_ptr GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_clbk GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_ptr GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_clbk GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_ptr GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_clbk GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerClear10_ptr GUILD_BATTLE__CGuildBattleScheduleManagerClear10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerClear10_clbk GUILD_BATTLE__CGuildBattleScheduleManagerClear10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_ptr GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_clbk GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_ptr GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_clbk GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_ptr GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_clbk GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerInit28_ptr GUILD_BATTLE__CGuildBattleScheduleManagerInit28_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerInit28_clbk GUILD_BATTLE__CGuildBattleScheduleManagerInit28_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_ptr GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_clbk GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_ptr GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_clbk GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_ptr GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_clbk GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_ptr GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_clbk GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_ptr GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_clbk GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_ptr GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_clbk GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_ptr GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_clbk GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_ptr GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_clbk GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_ptr GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_clbk GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_ptr GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_clbk GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_ptr GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_clbk GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_ptr GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_clbk GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_ptr GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_clbk GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerClear10_ptr GUILD_BATTLE__CGuildBattleScheduleManagerClear10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerClear10_clbk GUILD_BATTLE__CGuildBattleScheduleManagerClear10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_ptr GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_clbk GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_ptr GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_clbk GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_ptr GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_clbk GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_ptr GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_clbk GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerInit28_ptr GUILD_BATTLE__CGuildBattleScheduleManagerInit28_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerInit28_clbk GUILD_BATTLE__CGuildBattleScheduleManagerInit28_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_ptr GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_clbk GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_ptr GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_clbk GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_ptr GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_clbk GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_ptr GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_clbk GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_ptr GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_clbk GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_ptr GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_clbk GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_ptr GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_clbk GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_ptr GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_clbk GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_ptr GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_clbk GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_user(nullptr);
             
-            char GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt, struct GUILD_BATTLE::CGuildBattleSchedule** ppkSchedule, unsigned int* uiSLID)
+            static char GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt, struct GUILD_BATTLE::CGuildBattleSchedule** ppkSchedule, unsigned int* uiSLID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_user(_this, uiFieldInx, dwStartTimeInx, dwElapseTimeCnt, ppkSchedule, uiSLID, GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerAddDefaultDBTable4_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerctor_CGuildBattleScheduleManager6_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerCleanUpDanglingReservedSchedule8_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerClear10_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerClear10_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerClear10_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerClear10_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapID, unsigned int dwID)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapID, unsigned int dwID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_user(_this, uiMapID, dwID, GUILD_BATTLE__CGuildBattleScheduleManagerClearTommorowScheduleByID12_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_wrapper()
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_wrapper()
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_user(GUILD_BATTLE__CGuildBattleScheduleManagerDestroy14_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerFlip16_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapID)
+            static unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_user(_this, uiMapID, GUILD_BATTLE__CGuildBattleScheduleManagerGetCurScheduleID18_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerGetTodayDayID20_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMap, unsigned int* uiSLID)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMap, unsigned int* uiSLID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_user(_this, uiMap, uiSLID, GUILD_BATTLE__CGuildBattleScheduleManagerGetTodaySLIDByMap22_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static unsigned int GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowDayID24_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMap, unsigned int* uiSLID)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMap, unsigned int* uiSLID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_user(_this, uiMap, uiSLID, GUILD_BATTLE__CGuildBattleScheduleManagerGetTomorrowSLIDByMap26_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerInit28_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapCnt)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerInit28_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiMapCnt)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerInit28_user(_this, uiMapCnt, GUILD_BATTLE__CGuildBattleScheduleManagerInit28_next);
             };
-            struct GUILD_BATTLE::CGuildBattleScheduleManager* GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_wrapper()
+            static struct GUILD_BATTLE::CGuildBattleScheduleManager* GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_wrapper()
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_user(GUILD_BATTLE__CGuildBattleScheduleManagerInstance30_next);
             };
-            int GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static int GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerIsDayChanged32_next);
             };
-            char GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx)
+            static char GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_user(_this, uiFieldInx, dwStartTimeInx, GUILD_BATTLE__CGuildBattleScheduleManagerIsEmptyTime34_next);
             };
-            bool GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, int iCurDay, unsigned int uiOldMapCnt, int iToday, int iTodayDayID, int iTomorrow, int iTomorrowDayID)
+            static bool GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, int iCurDay, unsigned int uiOldMapCnt, int iToday, int iTodayDayID, int iTomorrow, int iTomorrowDayID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_user(_this, iCurDay, uiOldMapCnt, iToday, iTodayDayID, iTomorrow, iTomorrowDayID, GUILD_BATTLE__CGuildBattleScheduleManagerLoad36_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerLoop38_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerSetNextEvnet40_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerUpdateDayChangedWork42_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiDayID, unsigned int uiMapID, unsigned int dwID)
+            static struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this, unsigned int uiDayID, unsigned int uiMapID, unsigned int dwID)
             {
                return GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_user(_this, uiDayID, uiMapID, dwID, GUILD_BATTLE__CGuildBattleScheduleManagerUpdateUseFlag44_next);
             };
-            void GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
+            static void GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_wrapper(struct GUILD_BATTLE::CGuildBattleScheduleManager* _this)
             {
                GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_user(_this, GUILD_BATTLE__CGuildBattleScheduleManagerdtor_CGuildBattleScheduleManager48_next);
             };
             
-            hook_record CGuildBattleScheduleManager_functions[] = {
+            static hook_record CGuildBattleScheduleManager_functions[] = {
             {   (LPVOID)0x1403d9180L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleScheduleManagerAdd2_next,
@@ -269,6 +269,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

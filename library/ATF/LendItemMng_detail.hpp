@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::LendItemMngDeleteLink2_ptr LendItemMngDeleteLink2_next(nullptr);
-        info::LendItemMngDeleteLink2_clbk LendItemMngDeleteLink2_user(nullptr);
-        info::LendItemMngGetSheet4_ptr LendItemMngGetSheet4_next(nullptr);
-        info::LendItemMngGetSheet4_clbk LendItemMngGetSheet4_user(nullptr);
-        info::LendItemMngInitialize6_ptr LendItemMngInitialize6_next(nullptr);
-        info::LendItemMngInitialize6_clbk LendItemMngInitialize6_user(nullptr);
-        info::LendItemMngInsertLink8_ptr LendItemMngInsertLink8_next(nullptr);
-        info::LendItemMngInsertLink8_clbk LendItemMngInsertLink8_user(nullptr);
-        info::LendItemMngInstance10_ptr LendItemMngInstance10_next(nullptr);
-        info::LendItemMngInstance10_clbk LendItemMngInstance10_user(nullptr);
-        info::LendItemMngctor_LendItemMng12_ptr LendItemMngctor_LendItemMng12_next(nullptr);
-        info::LendItemMngctor_LendItemMng12_clbk LendItemMngctor_LendItemMng12_user(nullptr);
-        info::LendItemMngRelease14_ptr LendItemMngRelease14_next(nullptr);
-        info::LendItemMngRelease14_clbk LendItemMngRelease14_user(nullptr);
-        info::LendItemMngReleaseAll16_ptr LendItemMngReleaseAll16_next(nullptr);
-        info::LendItemMngReleaseAll16_clbk LendItemMngReleaseAll16_user(nullptr);
-        info::LendItemMngdtor_LendItemMng20_ptr LendItemMngdtor_LendItemMng20_next(nullptr);
-        info::LendItemMngdtor_LendItemMng20_clbk LendItemMngdtor_LendItemMng20_user(nullptr);
+        static info::LendItemMngDeleteLink2_ptr LendItemMngDeleteLink2_next(nullptr);
+        static info::LendItemMngDeleteLink2_clbk LendItemMngDeleteLink2_user(nullptr);
+        static info::LendItemMngGetSheet4_ptr LendItemMngGetSheet4_next(nullptr);
+        static info::LendItemMngGetSheet4_clbk LendItemMngGetSheet4_user(nullptr);
+        static info::LendItemMngInitialize6_ptr LendItemMngInitialize6_next(nullptr);
+        static info::LendItemMngInitialize6_clbk LendItemMngInitialize6_user(nullptr);
+        static info::LendItemMngInsertLink8_ptr LendItemMngInsertLink8_next(nullptr);
+        static info::LendItemMngInsertLink8_clbk LendItemMngInsertLink8_user(nullptr);
+        static info::LendItemMngInstance10_ptr LendItemMngInstance10_next(nullptr);
+        static info::LendItemMngInstance10_clbk LendItemMngInstance10_user(nullptr);
+        static info::LendItemMngctor_LendItemMng12_ptr LendItemMngctor_LendItemMng12_next(nullptr);
+        static info::LendItemMngctor_LendItemMng12_clbk LendItemMngctor_LendItemMng12_user(nullptr);
+        static info::LendItemMngRelease14_ptr LendItemMngRelease14_next(nullptr);
+        static info::LendItemMngRelease14_clbk LendItemMngRelease14_user(nullptr);
+        static info::LendItemMngReleaseAll16_ptr LendItemMngReleaseAll16_next(nullptr);
+        static info::LendItemMngReleaseAll16_clbk LendItemMngReleaseAll16_user(nullptr);
+        static info::LendItemMngdtor_LendItemMng20_ptr LendItemMngdtor_LendItemMng20_next(nullptr);
+        static info::LendItemMngdtor_LendItemMng20_clbk LendItemMngdtor_LendItemMng20_user(nullptr);
         
-        bool LendItemMngDeleteLink2_wrapper(struct LendItemMng* _this, uint16_t wIdx, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool LendItemMngDeleteLink2_wrapper(struct LendItemMng* _this, uint16_t wIdx, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return LendItemMngDeleteLink2_user(_this, wIdx, byStorageCode, pkItem, LendItemMngDeleteLink2_next);
         };
-        struct LendItemSheet* LendItemMngGetSheet4_wrapper(struct LendItemMng* _this, uint16_t wIdx)
+        static struct LendItemSheet* LendItemMngGetSheet4_wrapper(struct LendItemMng* _this, uint16_t wIdx)
         {
            return LendItemMngGetSheet4_user(_this, wIdx, LendItemMngGetSheet4_next);
         };
-        bool LendItemMngInitialize6_wrapper(struct LendItemMng* _this)
+        static bool LendItemMngInitialize6_wrapper(struct LendItemMng* _this)
         {
            return LendItemMngInitialize6_user(_this, LendItemMngInitialize6_next);
         };
-        bool LendItemMngInsertLink8_wrapper(struct LendItemMng* _this, uint16_t wIdx, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool LendItemMngInsertLink8_wrapper(struct LendItemMng* _this, uint16_t wIdx, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return LendItemMngInsertLink8_user(_this, wIdx, byStorageCode, pkItem, LendItemMngInsertLink8_next);
         };
-        struct LendItemMng* LendItemMngInstance10_wrapper()
+        static struct LendItemMng* LendItemMngInstance10_wrapper()
         {
            return LendItemMngInstance10_user(LendItemMngInstance10_next);
         };
-        void LendItemMngctor_LendItemMng12_wrapper(struct LendItemMng* _this)
+        static void LendItemMngctor_LendItemMng12_wrapper(struct LendItemMng* _this)
         {
            LendItemMngctor_LendItemMng12_user(_this, LendItemMngctor_LendItemMng12_next);
         };
-        void LendItemMngRelease14_wrapper(struct LendItemMng* _this, uint16_t wIdx)
+        static void LendItemMngRelease14_wrapper(struct LendItemMng* _this, uint16_t wIdx)
         {
            LendItemMngRelease14_user(_this, wIdx, LendItemMngRelease14_next);
         };
-        void LendItemMngReleaseAll16_wrapper(struct LendItemMng* _this)
+        static void LendItemMngReleaseAll16_wrapper(struct LendItemMng* _this)
         {
            LendItemMngReleaseAll16_user(_this, LendItemMngReleaseAll16_next);
         };
-        void LendItemMngdtor_LendItemMng20_wrapper(struct LendItemMng* _this)
+        static void LendItemMngdtor_LendItemMng20_wrapper(struct LendItemMng* _this)
         {
            LendItemMngdtor_LendItemMng20_user(_this, LendItemMngdtor_LendItemMng20_next);
         };
         
-        hook_record LendItemMng_functions[] = {
+        static hook_record LendItemMng_functions[] = {
         {   (LPVOID)0x14030dd80L,
             (LPVOID *)&LendItemMngDeleteLink2_user,
             (LPVOID *)&LendItemMngDeleteLink2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

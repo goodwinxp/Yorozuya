@@ -8,453 +8,453 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderUserInfoBuy2_ptr CUnmannedTraderUserInfoBuy2_next(nullptr);
-        info::CUnmannedTraderUserInfoBuy2_clbk CUnmannedTraderUserInfoBuy2_user(nullptr);
-        info::CUnmannedTraderUserInfoBuyComplete4_ptr CUnmannedTraderUserInfoBuyComplete4_next(nullptr);
-        info::CUnmannedTraderUserInfoBuyComplete4_clbk CUnmannedTraderUserInfoBuyComplete4_user(nullptr);
-        info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_ptr CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_next(nullptr);
-        info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_clbk CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_user(nullptr);
-        info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_ptr CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_next(nullptr);
-        info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_clbk CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_user(nullptr);
-        info::CUnmannedTraderUserInfoCancelRegist10_ptr CUnmannedTraderUserInfoCancelRegist10_next(nullptr);
-        info::CUnmannedTraderUserInfoCancelRegist10_clbk CUnmannedTraderUserInfoCancelRegist10_user(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegist12_ptr CUnmannedTraderUserInfoCheatCancelRegist12_next(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegist12_clbk CUnmannedTraderUserInfoCheatCancelRegist12_user(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegistAll14_ptr CUnmannedTraderUserInfoCheatCancelRegistAll14_next(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegistAll14_clbk CUnmannedTraderUserInfoCheatCancelRegistAll14_user(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegistSingle16_ptr CUnmannedTraderUserInfoCheatCancelRegistSingle16_next(nullptr);
-        info::CUnmannedTraderUserInfoCheatCancelRegistSingle16_clbk CUnmannedTraderUserInfoCheatCancelRegistSingle16_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckBuy18_ptr CUnmannedTraderUserInfoCheckBuy18_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckBuy18_clbk CUnmannedTraderUserInfoCheckBuy18_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckBuyComplete20_ptr CUnmannedTraderUserInfoCheckBuyComplete20_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckBuyComplete20_clbk CUnmannedTraderUserInfoCheckBuyComplete20_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckCancelRegist22_ptr CUnmannedTraderUserInfoCheckCancelRegist22_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckCancelRegist22_clbk CUnmannedTraderUserInfoCheckCancelRegist22_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_ptr CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_clbk CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckModifyPrice26_ptr CUnmannedTraderUserInfoCheckModifyPrice26_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckModifyPrice26_clbk CUnmannedTraderUserInfoCheckModifyPrice26_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckReRegist28_ptr CUnmannedTraderUserInfoCheckReRegist28_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckReRegist28_clbk CUnmannedTraderUserInfoCheckReRegist28_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckRegist30_ptr CUnmannedTraderUserInfoCheckRegist30_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckRegist30_clbk CUnmannedTraderUserInfoCheckRegist30_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckSearch32_ptr CUnmannedTraderUserInfoCheckSearch32_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckSearch32_clbk CUnmannedTraderUserInfoCheckSearch32_user(nullptr);
-        info::CUnmannedTraderUserInfoCheckSellComplete34_ptr CUnmannedTraderUserInfoCheckSellComplete34_next(nullptr);
-        info::CUnmannedTraderUserInfoCheckSellComplete34_clbk CUnmannedTraderUserInfoCheckSellComplete34_user(nullptr);
-        info::CUnmannedTraderUserInfoClear36_ptr CUnmannedTraderUserInfoClear36_next(nullptr);
-        info::CUnmannedTraderUserInfoClear36_clbk CUnmannedTraderUserInfoClear36_user(nullptr);
-        info::CUnmannedTraderUserInfoClearLoadItemInfo38_ptr CUnmannedTraderUserInfoClearLoadItemInfo38_next(nullptr);
-        info::CUnmannedTraderUserInfoClearLoadItemInfo38_clbk CUnmannedTraderUserInfoClearLoadItemInfo38_user(nullptr);
-        info::CUnmannedTraderUserInfoClearRequest40_ptr CUnmannedTraderUserInfoClearRequest40_next(nullptr);
-        info::CUnmannedTraderUserInfoClearRequest40_clbk CUnmannedTraderUserInfoClearRequest40_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCancelRegist42_ptr CUnmannedTraderUserInfoCompleteCancelRegist42_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCancelRegist42_clbk CUnmannedTraderUserInfoCompleteCancelRegist42_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCancelRegistItem44_ptr CUnmannedTraderUserInfoCompleteCancelRegistItem44_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCancelRegistItem44_clbk CUnmannedTraderUserInfoCompleteCancelRegistItem44_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCreate46_ptr CUnmannedTraderUserInfoCompleteCreate46_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteCreate46_clbk CUnmannedTraderUserInfoCompleteCreate46_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegist48_ptr CUnmannedTraderUserInfoCompleteReRegist48_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegist48_clbk CUnmannedTraderUserInfoCompleteReRegist48_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegistItem50_ptr CUnmannedTraderUserInfoCompleteReRegistItem50_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegistItem50_clbk CUnmannedTraderUserInfoCompleteReRegistItem50_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegistRollBack52_ptr CUnmannedTraderUserInfoCompleteReRegistRollBack52_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReRegistRollBack52_clbk CUnmannedTraderUserInfoCompleteReRegistRollBack52_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRegist54_ptr CUnmannedTraderUserInfoCompleteRegist54_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRegist54_clbk CUnmannedTraderUserInfoCompleteRegist54_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRegistItem56_ptr CUnmannedTraderUserInfoCompleteRegistItem56_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRegistItem56_clbk CUnmannedTraderUserInfoCompleteRegistItem56_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReprice58_ptr CUnmannedTraderUserInfoCompleteReprice58_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteReprice58_clbk CUnmannedTraderUserInfoCompleteReprice58_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRepriceItem60_ptr CUnmannedTraderUserInfoCompleteRepriceItem60_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteRepriceItem60_clbk CUnmannedTraderUserInfoCompleteRepriceItem60_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteTimeOutClear62_ptr CUnmannedTraderUserInfoCompleteTimeOutClear62_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteTimeOutClear62_clbk CUnmannedTraderUserInfoCompleteTimeOutClear62_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_ptr CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_clbk CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_user(nullptr);
-        info::CUnmannedTraderUserInfoCompleteUpdateState66_ptr CUnmannedTraderUserInfoCompleteUpdateState66_next(nullptr);
-        info::CUnmannedTraderUserInfoCompleteUpdateState66_clbk CUnmannedTraderUserInfoCompleteUpdateState66_user(nullptr);
-        info::CUnmannedTraderUserInfoCountRegistItem68_ptr CUnmannedTraderUserInfoCountRegistItem68_next(nullptr);
-        info::CUnmannedTraderUserInfoCountRegistItem68_clbk CUnmannedTraderUserInfoCountRegistItem68_user(nullptr);
-        info::CUnmannedTraderUserInfoFind70_ptr CUnmannedTraderUserInfoFind70_next(nullptr);
-        info::CUnmannedTraderUserInfoFind70_clbk CUnmannedTraderUserInfoFind70_user(nullptr);
-        info::CUnmannedTraderUserInfoFindEmpty72_ptr CUnmannedTraderUserInfoFindEmpty72_next(nullptr);
-        info::CUnmannedTraderUserInfoFindEmpty72_clbk CUnmannedTraderUserInfoFindEmpty72_user(nullptr);
-        info::CUnmannedTraderUserInfoFindOwner74_ptr CUnmannedTraderUserInfoFindOwner74_next(nullptr);
-        info::CUnmannedTraderUserInfoFindOwner74_clbk CUnmannedTraderUserInfoFindOwner74_user(nullptr);
-        info::CUnmannedTraderUserInfoFindRegist76_ptr CUnmannedTraderUserInfoFindRegist76_next(nullptr);
-        info::CUnmannedTraderUserInfoFindRegist76_clbk CUnmannedTraderUserInfoFindRegist76_user(nullptr);
-        info::CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_ptr CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_next(nullptr);
-        info::CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_clbk CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_user(nullptr);
-        info::CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_ptr CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_next(nullptr);
-        info::CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_clbk CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_user(nullptr);
-        info::CUnmannedTraderUserInfoGetIndex82_ptr CUnmannedTraderUserInfoGetIndex82_next(nullptr);
-        info::CUnmannedTraderUserInfoGetIndex82_clbk CUnmannedTraderUserInfoGetIndex82_user(nullptr);
-        info::CUnmannedTraderUserInfoGetMaxRegistCnt84_ptr CUnmannedTraderUserInfoGetMaxRegistCnt84_next(nullptr);
-        info::CUnmannedTraderUserInfoGetMaxRegistCnt84_clbk CUnmannedTraderUserInfoGetMaxRegistCnt84_user(nullptr);
-        info::CUnmannedTraderUserInfoGetRegItemInfo86_ptr CUnmannedTraderUserInfoGetRegItemInfo86_next(nullptr);
-        info::CUnmannedTraderUserInfoGetRegItemInfo86_clbk CUnmannedTraderUserInfoGetRegItemInfo86_user(nullptr);
-        info::CUnmannedTraderUserInfoGetSerial88_ptr CUnmannedTraderUserInfoGetSerial88_next(nullptr);
-        info::CUnmannedTraderUserInfoGetSerial88_clbk CUnmannedTraderUserInfoGetSerial88_user(nullptr);
-        info::CUnmannedTraderUserInfoInit90_ptr CUnmannedTraderUserInfoInit90_next(nullptr);
-        info::CUnmannedTraderUserInfoInit90_clbk CUnmannedTraderUserInfoInit90_user(nullptr);
-        info::CUnmannedTraderUserInfoIsLogInState92_ptr CUnmannedTraderUserInfoIsLogInState92_next(nullptr);
-        info::CUnmannedTraderUserInfoIsLogInState92_clbk CUnmannedTraderUserInfoIsLogInState92_user(nullptr);
-        info::CUnmannedTraderUserInfoIsNull94_ptr CUnmannedTraderUserInfoIsNull94_next(nullptr);
-        info::CUnmannedTraderUserInfoIsNull94_clbk CUnmannedTraderUserInfoIsNull94_user(nullptr);
-        info::CUnmannedTraderUserInfoLoad96_ptr CUnmannedTraderUserInfoLoad96_next(nullptr);
-        info::CUnmannedTraderUserInfoLoad96_clbk CUnmannedTraderUserInfoLoad96_user(nullptr);
-        info::CUnmannedTraderUserInfoLogOut98_ptr CUnmannedTraderUserInfoLogOut98_next(nullptr);
-        info::CUnmannedTraderUserInfoLogOut98_clbk CUnmannedTraderUserInfoLogOut98_user(nullptr);
-        info::CUnmannedTraderUserInfoModifyPrice100_ptr CUnmannedTraderUserInfoModifyPrice100_next(nullptr);
-        info::CUnmannedTraderUserInfoModifyPrice100_clbk CUnmannedTraderUserInfoModifyPrice100_user(nullptr);
-        info::CUnmannedTraderUserInfoNotifyCloseItem102_ptr CUnmannedTraderUserInfoNotifyCloseItem102_next(nullptr);
-        info::CUnmannedTraderUserInfoNotifyCloseItem102_clbk CUnmannedTraderUserInfoNotifyCloseItem102_user(nullptr);
-        info::CUnmannedTraderUserInfoNotifyRegistItem104_ptr CUnmannedTraderUserInfoNotifyRegistItem104_next(nullptr);
-        info::CUnmannedTraderUserInfoNotifyRegistItem104_clbk CUnmannedTraderUserInfoNotifyRegistItem104_user(nullptr);
-        info::CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_ptr CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_next(nullptr);
-        info::CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_clbk CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_user(nullptr);
-        info::CUnmannedTraderUserInfoProcSellWaitItem108_ptr CUnmannedTraderUserInfoProcSellWaitItem108_next(nullptr);
-        info::CUnmannedTraderUserInfoProcSellWaitItem108_clbk CUnmannedTraderUserInfoProcSellWaitItem108_user(nullptr);
-        info::CUnmannedTraderUserInfoReRegist110_ptr CUnmannedTraderUserInfoReRegist110_next(nullptr);
-        info::CUnmannedTraderUserInfoReRegist110_clbk CUnmannedTraderUserInfoReRegist110_user(nullptr);
-        info::CUnmannedTraderUserInfoRegist112_ptr CUnmannedTraderUserInfoRegist112_next(nullptr);
-        info::CUnmannedTraderUserInfoRegist112_clbk CUnmannedTraderUserInfoRegist112_user(nullptr);
-        info::CUnmannedTraderUserInfoRegistItem114_ptr CUnmannedTraderUserInfoRegistItem114_next(nullptr);
-        info::CUnmannedTraderUserInfoRegistItem114_clbk CUnmannedTraderUserInfoRegistItem114_user(nullptr);
-        info::CUnmannedTraderUserInfoSearch116_ptr CUnmannedTraderUserInfoSearch116_next(nullptr);
-        info::CUnmannedTraderUserInfoSearch116_clbk CUnmannedTraderUserInfoSearch116_user(nullptr);
-        info::CUnmannedTraderUserInfoSellComplete118_ptr CUnmannedTraderUserInfoSellComplete118_next(nullptr);
-        info::CUnmannedTraderUserInfoSellComplete118_clbk CUnmannedTraderUserInfoSellComplete118_user(nullptr);
-        info::CUnmannedTraderUserInfoSendBuyErrorResult120_ptr CUnmannedTraderUserInfoSendBuyErrorResult120_next(nullptr);
-        info::CUnmannedTraderUserInfoSendBuyErrorResult120_clbk CUnmannedTraderUserInfoSendBuyErrorResult120_user(nullptr);
-        info::CUnmannedTraderUserInfoSendCancelRegistErrorResult122_ptr CUnmannedTraderUserInfoSendCancelRegistErrorResult122_next(nullptr);
-        info::CUnmannedTraderUserInfoSendCancelRegistErrorResult122_clbk CUnmannedTraderUserInfoSendCancelRegistErrorResult122_user(nullptr);
-        info::CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_ptr CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_next(nullptr);
-        info::CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_clbk CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_user(nullptr);
-        info::CUnmannedTraderUserInfoSendNotifyCloseItem126_ptr CUnmannedTraderUserInfoSendNotifyCloseItem126_next(nullptr);
-        info::CUnmannedTraderUserInfoSendNotifyCloseItem126_clbk CUnmannedTraderUserInfoSendNotifyCloseItem126_user(nullptr);
-        info::CUnmannedTraderUserInfoSendRegistItemErrorResult128_ptr CUnmannedTraderUserInfoSendRegistItemErrorResult128_next(nullptr);
-        info::CUnmannedTraderUserInfoSendRegistItemErrorResult128_clbk CUnmannedTraderUserInfoSendRegistItemErrorResult128_user(nullptr);
-        info::CUnmannedTraderUserInfoSendRegistItemSuccessResult130_ptr CUnmannedTraderUserInfoSendRegistItemSuccessResult130_next(nullptr);
-        info::CUnmannedTraderUserInfoSendRegistItemSuccessResult130_clbk CUnmannedTraderUserInfoSendRegistItemSuccessResult130_user(nullptr);
-        info::CUnmannedTraderUserInfoSendRepriceErrorResult132_ptr CUnmannedTraderUserInfoSendRepriceErrorResult132_next(nullptr);
-        info::CUnmannedTraderUserInfoSendRepriceErrorResult132_clbk CUnmannedTraderUserInfoSendRepriceErrorResult132_user(nullptr);
-        info::CUnmannedTraderUserInfoSendRepriceSuccessResult134_ptr CUnmannedTraderUserInfoSendRepriceSuccessResult134_next(nullptr);
-        info::CUnmannedTraderUserInfoSendRepriceSuccessResult134_clbk CUnmannedTraderUserInfoSendRepriceSuccessResult134_user(nullptr);
-        info::CUnmannedTraderUserInfoSendSearchErrorResult136_ptr CUnmannedTraderUserInfoSendSearchErrorResult136_next(nullptr);
-        info::CUnmannedTraderUserInfoSendSearchErrorResult136_clbk CUnmannedTraderUserInfoSendSearchErrorResult136_user(nullptr);
-        info::CUnmannedTraderUserInfoSendSearchResult138_ptr CUnmannedTraderUserInfoSendSearchResult138_next(nullptr);
-        info::CUnmannedTraderUserInfoSendSearchResult138_clbk CUnmannedTraderUserInfoSendSearchResult138_user(nullptr);
-        info::CUnmannedTraderUserInfoSendSellInfom140_ptr CUnmannedTraderUserInfoSendSellInfom140_next(nullptr);
-        info::CUnmannedTraderUserInfoSendSellInfom140_clbk CUnmannedTraderUserInfoSendSellInfom140_user(nullptr);
-        info::CUnmannedTraderUserInfoSetAllItemState142_ptr CUnmannedTraderUserInfoSetAllItemState142_next(nullptr);
-        info::CUnmannedTraderUserInfoSetAllItemState142_clbk CUnmannedTraderUserInfoSetAllItemState142_user(nullptr);
-        info::CUnmannedTraderUserInfoSetCompleteInfo144_ptr CUnmannedTraderUserInfoSetCompleteInfo144_next(nullptr);
-        info::CUnmannedTraderUserInfoSetCompleteInfo144_clbk CUnmannedTraderUserInfoSetCompleteInfo144_user(nullptr);
-        info::CUnmannedTraderUserInfoSetLoadInfo146_ptr CUnmannedTraderUserInfoSetLoadInfo146_next(nullptr);
-        info::CUnmannedTraderUserInfoSetLoadInfo146_clbk CUnmannedTraderUserInfoSetLoadInfo146_user(nullptr);
-        info::CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_ptr CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_next(nullptr);
-        info::CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_clbk CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_user(nullptr);
+        static info::CUnmannedTraderUserInfoBuy2_ptr CUnmannedTraderUserInfoBuy2_next(nullptr);
+        static info::CUnmannedTraderUserInfoBuy2_clbk CUnmannedTraderUserInfoBuy2_user(nullptr);
+        static info::CUnmannedTraderUserInfoBuyComplete4_ptr CUnmannedTraderUserInfoBuyComplete4_next(nullptr);
+        static info::CUnmannedTraderUserInfoBuyComplete4_clbk CUnmannedTraderUserInfoBuyComplete4_user(nullptr);
+        static info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_ptr CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_next(nullptr);
+        static info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_clbk CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_user(nullptr);
+        static info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_ptr CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_next(nullptr);
+        static info::CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_clbk CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_user(nullptr);
+        static info::CUnmannedTraderUserInfoCancelRegist10_ptr CUnmannedTraderUserInfoCancelRegist10_next(nullptr);
+        static info::CUnmannedTraderUserInfoCancelRegist10_clbk CUnmannedTraderUserInfoCancelRegist10_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegist12_ptr CUnmannedTraderUserInfoCheatCancelRegist12_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegist12_clbk CUnmannedTraderUserInfoCheatCancelRegist12_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegistAll14_ptr CUnmannedTraderUserInfoCheatCancelRegistAll14_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegistAll14_clbk CUnmannedTraderUserInfoCheatCancelRegistAll14_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegistSingle16_ptr CUnmannedTraderUserInfoCheatCancelRegistSingle16_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheatCancelRegistSingle16_clbk CUnmannedTraderUserInfoCheatCancelRegistSingle16_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckBuy18_ptr CUnmannedTraderUserInfoCheckBuy18_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckBuy18_clbk CUnmannedTraderUserInfoCheckBuy18_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckBuyComplete20_ptr CUnmannedTraderUserInfoCheckBuyComplete20_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckBuyComplete20_clbk CUnmannedTraderUserInfoCheckBuyComplete20_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckCancelRegist22_ptr CUnmannedTraderUserInfoCheckCancelRegist22_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckCancelRegist22_clbk CUnmannedTraderUserInfoCheckCancelRegist22_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_ptr CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_clbk CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckModifyPrice26_ptr CUnmannedTraderUserInfoCheckModifyPrice26_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckModifyPrice26_clbk CUnmannedTraderUserInfoCheckModifyPrice26_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckReRegist28_ptr CUnmannedTraderUserInfoCheckReRegist28_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckReRegist28_clbk CUnmannedTraderUserInfoCheckReRegist28_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckRegist30_ptr CUnmannedTraderUserInfoCheckRegist30_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckRegist30_clbk CUnmannedTraderUserInfoCheckRegist30_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckSearch32_ptr CUnmannedTraderUserInfoCheckSearch32_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckSearch32_clbk CUnmannedTraderUserInfoCheckSearch32_user(nullptr);
+        static info::CUnmannedTraderUserInfoCheckSellComplete34_ptr CUnmannedTraderUserInfoCheckSellComplete34_next(nullptr);
+        static info::CUnmannedTraderUserInfoCheckSellComplete34_clbk CUnmannedTraderUserInfoCheckSellComplete34_user(nullptr);
+        static info::CUnmannedTraderUserInfoClear36_ptr CUnmannedTraderUserInfoClear36_next(nullptr);
+        static info::CUnmannedTraderUserInfoClear36_clbk CUnmannedTraderUserInfoClear36_user(nullptr);
+        static info::CUnmannedTraderUserInfoClearLoadItemInfo38_ptr CUnmannedTraderUserInfoClearLoadItemInfo38_next(nullptr);
+        static info::CUnmannedTraderUserInfoClearLoadItemInfo38_clbk CUnmannedTraderUserInfoClearLoadItemInfo38_user(nullptr);
+        static info::CUnmannedTraderUserInfoClearRequest40_ptr CUnmannedTraderUserInfoClearRequest40_next(nullptr);
+        static info::CUnmannedTraderUserInfoClearRequest40_clbk CUnmannedTraderUserInfoClearRequest40_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCancelRegist42_ptr CUnmannedTraderUserInfoCompleteCancelRegist42_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCancelRegist42_clbk CUnmannedTraderUserInfoCompleteCancelRegist42_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCancelRegistItem44_ptr CUnmannedTraderUserInfoCompleteCancelRegistItem44_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCancelRegistItem44_clbk CUnmannedTraderUserInfoCompleteCancelRegistItem44_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCreate46_ptr CUnmannedTraderUserInfoCompleteCreate46_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteCreate46_clbk CUnmannedTraderUserInfoCompleteCreate46_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegist48_ptr CUnmannedTraderUserInfoCompleteReRegist48_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegist48_clbk CUnmannedTraderUserInfoCompleteReRegist48_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegistItem50_ptr CUnmannedTraderUserInfoCompleteReRegistItem50_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegistItem50_clbk CUnmannedTraderUserInfoCompleteReRegistItem50_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegistRollBack52_ptr CUnmannedTraderUserInfoCompleteReRegistRollBack52_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReRegistRollBack52_clbk CUnmannedTraderUserInfoCompleteReRegistRollBack52_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRegist54_ptr CUnmannedTraderUserInfoCompleteRegist54_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRegist54_clbk CUnmannedTraderUserInfoCompleteRegist54_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRegistItem56_ptr CUnmannedTraderUserInfoCompleteRegistItem56_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRegistItem56_clbk CUnmannedTraderUserInfoCompleteRegistItem56_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReprice58_ptr CUnmannedTraderUserInfoCompleteReprice58_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteReprice58_clbk CUnmannedTraderUserInfoCompleteReprice58_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRepriceItem60_ptr CUnmannedTraderUserInfoCompleteRepriceItem60_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteRepriceItem60_clbk CUnmannedTraderUserInfoCompleteRepriceItem60_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteTimeOutClear62_ptr CUnmannedTraderUserInfoCompleteTimeOutClear62_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteTimeOutClear62_clbk CUnmannedTraderUserInfoCompleteTimeOutClear62_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_ptr CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_clbk CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_user(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteUpdateState66_ptr CUnmannedTraderUserInfoCompleteUpdateState66_next(nullptr);
+        static info::CUnmannedTraderUserInfoCompleteUpdateState66_clbk CUnmannedTraderUserInfoCompleteUpdateState66_user(nullptr);
+        static info::CUnmannedTraderUserInfoCountRegistItem68_ptr CUnmannedTraderUserInfoCountRegistItem68_next(nullptr);
+        static info::CUnmannedTraderUserInfoCountRegistItem68_clbk CUnmannedTraderUserInfoCountRegistItem68_user(nullptr);
+        static info::CUnmannedTraderUserInfoFind70_ptr CUnmannedTraderUserInfoFind70_next(nullptr);
+        static info::CUnmannedTraderUserInfoFind70_clbk CUnmannedTraderUserInfoFind70_user(nullptr);
+        static info::CUnmannedTraderUserInfoFindEmpty72_ptr CUnmannedTraderUserInfoFindEmpty72_next(nullptr);
+        static info::CUnmannedTraderUserInfoFindEmpty72_clbk CUnmannedTraderUserInfoFindEmpty72_user(nullptr);
+        static info::CUnmannedTraderUserInfoFindOwner74_ptr CUnmannedTraderUserInfoFindOwner74_next(nullptr);
+        static info::CUnmannedTraderUserInfoFindOwner74_clbk CUnmannedTraderUserInfoFindOwner74_user(nullptr);
+        static info::CUnmannedTraderUserInfoFindRegist76_ptr CUnmannedTraderUserInfoFindRegist76_next(nullptr);
+        static info::CUnmannedTraderUserInfoFindRegist76_clbk CUnmannedTraderUserInfoFindRegist76_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_ptr CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_clbk CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_ptr CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_clbk CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetIndex82_ptr CUnmannedTraderUserInfoGetIndex82_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetIndex82_clbk CUnmannedTraderUserInfoGetIndex82_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetMaxRegistCnt84_ptr CUnmannedTraderUserInfoGetMaxRegistCnt84_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetMaxRegistCnt84_clbk CUnmannedTraderUserInfoGetMaxRegistCnt84_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetRegItemInfo86_ptr CUnmannedTraderUserInfoGetRegItemInfo86_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetRegItemInfo86_clbk CUnmannedTraderUserInfoGetRegItemInfo86_user(nullptr);
+        static info::CUnmannedTraderUserInfoGetSerial88_ptr CUnmannedTraderUserInfoGetSerial88_next(nullptr);
+        static info::CUnmannedTraderUserInfoGetSerial88_clbk CUnmannedTraderUserInfoGetSerial88_user(nullptr);
+        static info::CUnmannedTraderUserInfoInit90_ptr CUnmannedTraderUserInfoInit90_next(nullptr);
+        static info::CUnmannedTraderUserInfoInit90_clbk CUnmannedTraderUserInfoInit90_user(nullptr);
+        static info::CUnmannedTraderUserInfoIsLogInState92_ptr CUnmannedTraderUserInfoIsLogInState92_next(nullptr);
+        static info::CUnmannedTraderUserInfoIsLogInState92_clbk CUnmannedTraderUserInfoIsLogInState92_user(nullptr);
+        static info::CUnmannedTraderUserInfoIsNull94_ptr CUnmannedTraderUserInfoIsNull94_next(nullptr);
+        static info::CUnmannedTraderUserInfoIsNull94_clbk CUnmannedTraderUserInfoIsNull94_user(nullptr);
+        static info::CUnmannedTraderUserInfoLoad96_ptr CUnmannedTraderUserInfoLoad96_next(nullptr);
+        static info::CUnmannedTraderUserInfoLoad96_clbk CUnmannedTraderUserInfoLoad96_user(nullptr);
+        static info::CUnmannedTraderUserInfoLogOut98_ptr CUnmannedTraderUserInfoLogOut98_next(nullptr);
+        static info::CUnmannedTraderUserInfoLogOut98_clbk CUnmannedTraderUserInfoLogOut98_user(nullptr);
+        static info::CUnmannedTraderUserInfoModifyPrice100_ptr CUnmannedTraderUserInfoModifyPrice100_next(nullptr);
+        static info::CUnmannedTraderUserInfoModifyPrice100_clbk CUnmannedTraderUserInfoModifyPrice100_user(nullptr);
+        static info::CUnmannedTraderUserInfoNotifyCloseItem102_ptr CUnmannedTraderUserInfoNotifyCloseItem102_next(nullptr);
+        static info::CUnmannedTraderUserInfoNotifyCloseItem102_clbk CUnmannedTraderUserInfoNotifyCloseItem102_user(nullptr);
+        static info::CUnmannedTraderUserInfoNotifyRegistItem104_ptr CUnmannedTraderUserInfoNotifyRegistItem104_next(nullptr);
+        static info::CUnmannedTraderUserInfoNotifyRegistItem104_clbk CUnmannedTraderUserInfoNotifyRegistItem104_user(nullptr);
+        static info::CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_ptr CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_next(nullptr);
+        static info::CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_clbk CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_user(nullptr);
+        static info::CUnmannedTraderUserInfoProcSellWaitItem108_ptr CUnmannedTraderUserInfoProcSellWaitItem108_next(nullptr);
+        static info::CUnmannedTraderUserInfoProcSellWaitItem108_clbk CUnmannedTraderUserInfoProcSellWaitItem108_user(nullptr);
+        static info::CUnmannedTraderUserInfoReRegist110_ptr CUnmannedTraderUserInfoReRegist110_next(nullptr);
+        static info::CUnmannedTraderUserInfoReRegist110_clbk CUnmannedTraderUserInfoReRegist110_user(nullptr);
+        static info::CUnmannedTraderUserInfoRegist112_ptr CUnmannedTraderUserInfoRegist112_next(nullptr);
+        static info::CUnmannedTraderUserInfoRegist112_clbk CUnmannedTraderUserInfoRegist112_user(nullptr);
+        static info::CUnmannedTraderUserInfoRegistItem114_ptr CUnmannedTraderUserInfoRegistItem114_next(nullptr);
+        static info::CUnmannedTraderUserInfoRegistItem114_clbk CUnmannedTraderUserInfoRegistItem114_user(nullptr);
+        static info::CUnmannedTraderUserInfoSearch116_ptr CUnmannedTraderUserInfoSearch116_next(nullptr);
+        static info::CUnmannedTraderUserInfoSearch116_clbk CUnmannedTraderUserInfoSearch116_user(nullptr);
+        static info::CUnmannedTraderUserInfoSellComplete118_ptr CUnmannedTraderUserInfoSellComplete118_next(nullptr);
+        static info::CUnmannedTraderUserInfoSellComplete118_clbk CUnmannedTraderUserInfoSellComplete118_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendBuyErrorResult120_ptr CUnmannedTraderUserInfoSendBuyErrorResult120_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendBuyErrorResult120_clbk CUnmannedTraderUserInfoSendBuyErrorResult120_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendCancelRegistErrorResult122_ptr CUnmannedTraderUserInfoSendCancelRegistErrorResult122_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendCancelRegistErrorResult122_clbk CUnmannedTraderUserInfoSendCancelRegistErrorResult122_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_ptr CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_clbk CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendNotifyCloseItem126_ptr CUnmannedTraderUserInfoSendNotifyCloseItem126_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendNotifyCloseItem126_clbk CUnmannedTraderUserInfoSendNotifyCloseItem126_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendRegistItemErrorResult128_ptr CUnmannedTraderUserInfoSendRegistItemErrorResult128_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendRegistItemErrorResult128_clbk CUnmannedTraderUserInfoSendRegistItemErrorResult128_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendRegistItemSuccessResult130_ptr CUnmannedTraderUserInfoSendRegistItemSuccessResult130_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendRegistItemSuccessResult130_clbk CUnmannedTraderUserInfoSendRegistItemSuccessResult130_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendRepriceErrorResult132_ptr CUnmannedTraderUserInfoSendRepriceErrorResult132_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendRepriceErrorResult132_clbk CUnmannedTraderUserInfoSendRepriceErrorResult132_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendRepriceSuccessResult134_ptr CUnmannedTraderUserInfoSendRepriceSuccessResult134_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendRepriceSuccessResult134_clbk CUnmannedTraderUserInfoSendRepriceSuccessResult134_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendSearchErrorResult136_ptr CUnmannedTraderUserInfoSendSearchErrorResult136_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendSearchErrorResult136_clbk CUnmannedTraderUserInfoSendSearchErrorResult136_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendSearchResult138_ptr CUnmannedTraderUserInfoSendSearchResult138_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendSearchResult138_clbk CUnmannedTraderUserInfoSendSearchResult138_user(nullptr);
+        static info::CUnmannedTraderUserInfoSendSellInfom140_ptr CUnmannedTraderUserInfoSendSellInfom140_next(nullptr);
+        static info::CUnmannedTraderUserInfoSendSellInfom140_clbk CUnmannedTraderUserInfoSendSellInfom140_user(nullptr);
+        static info::CUnmannedTraderUserInfoSetAllItemState142_ptr CUnmannedTraderUserInfoSetAllItemState142_next(nullptr);
+        static info::CUnmannedTraderUserInfoSetAllItemState142_clbk CUnmannedTraderUserInfoSetAllItemState142_user(nullptr);
+        static info::CUnmannedTraderUserInfoSetCompleteInfo144_ptr CUnmannedTraderUserInfoSetCompleteInfo144_next(nullptr);
+        static info::CUnmannedTraderUserInfoSetCompleteInfo144_clbk CUnmannedTraderUserInfoSetCompleteInfo144_user(nullptr);
+        static info::CUnmannedTraderUserInfoSetLoadInfo146_ptr CUnmannedTraderUserInfoSetLoadInfo146_next(nullptr);
+        static info::CUnmannedTraderUserInfoSetLoadInfo146_clbk CUnmannedTraderUserInfoSetLoadInfo146_user(nullptr);
+        static info::CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_ptr CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_next(nullptr);
+        static info::CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_clbk CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_user(nullptr);
         
-        void CUnmannedTraderUserInfoBuy2_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_buy_item_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoBuy2_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_buy_item_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoBuy2_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoBuy2_next);
         };
-        char CUnmannedTraderUserInfoBuyComplete4_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkBuyer, unsigned int dwSellerSerial, char* wszSellerName, char* szSellerAccountName, unsigned int dwRegistSerial, unsigned int dwK, uint64_t dwD, unsigned int dwU, unsigned int dwPrice, uint64_t lnUID, struct CLogFile* pkLogger, uint16_t* wAddItemSerial)
+        static char CUnmannedTraderUserInfoBuyComplete4_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkBuyer, unsigned int dwSellerSerial, char* wszSellerName, char* szSellerAccountName, unsigned int dwRegistSerial, unsigned int dwK, uint64_t dwD, unsigned int dwU, unsigned int dwPrice, uint64_t lnUID, struct CLogFile* pkLogger, uint16_t* wAddItemSerial)
         {
            return CUnmannedTraderUserInfoBuyComplete4_user(_this, pkBuyer, dwSellerSerial, wszSellerName, szSellerAccountName, dwRegistSerial, dwK, dwD, dwU, dwPrice, lnUID, pkLogger, wAddItemSerial, CUnmannedTraderUserInfoBuyComplete4_next);
         };
-        void CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_wrapper(struct CUnmannedTraderUserInfo* _this, struct CUnmannedTraderUserInfo* __that)
+        static void CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_wrapper(struct CUnmannedTraderUserInfo* _this, struct CUnmannedTraderUserInfo* __that)
         {
            CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_user(_this, __that, CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo6_next);
         };
-        void CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_user(_this, CUnmannedTraderUserInfoctor_CUnmannedTraderUserInfo8_next);
         };
-        void CUnmannedTraderUserInfoCancelRegist10_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_clear_item_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCancelRegist10_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_clear_item_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCancelRegist10_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoCancelRegist10_next);
         };
-        bool CUnmannedTraderUserInfoCheatCancelRegist12_wrapper(struct CUnmannedTraderUserInfo* _this, char byNth)
+        static bool CUnmannedTraderUserInfoCheatCancelRegist12_wrapper(struct CUnmannedTraderUserInfo* _this, char byNth)
         {
            return CUnmannedTraderUserInfoCheatCancelRegist12_user(_this, byNth, CUnmannedTraderUserInfoCheatCancelRegist12_next);
         };
-        bool CUnmannedTraderUserInfoCheatCancelRegistAll14_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static bool CUnmannedTraderUserInfoCheatCancelRegistAll14_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoCheatCancelRegistAll14_user(_this, CUnmannedTraderUserInfoCheatCancelRegistAll14_next);
         };
-        bool CUnmannedTraderUserInfoCheatCancelRegistSingle16_wrapper(struct CUnmannedTraderUserInfo* _this, char byNth)
+        static bool CUnmannedTraderUserInfoCheatCancelRegistSingle16_wrapper(struct CUnmannedTraderUserInfo* _this, char byNth)
         {
            return CUnmannedTraderUserInfoCheatCancelRegistSingle16_user(_this, byNth, CUnmannedTraderUserInfoCheatCancelRegistSingle16_next);
         };
-        char CUnmannedTraderUserInfoCheckBuy18_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_buy_item_request_clzo* pRequest, struct CPlayer** pkBuyer, struct CLogFile* pkLogger)
+        static char CUnmannedTraderUserInfoCheckBuy18_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_buy_item_request_clzo* pRequest, struct CPlayer** pkBuyer, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCheckBuy18_user(_this, byType, pRequest, pkBuyer, pkLogger, CUnmannedTraderUserInfoCheckBuy18_next);
         };
-        char CUnmannedTraderUserInfoCheckBuyComplete20_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkBuyer, unsigned int dwPrice)
+        static char CUnmannedTraderUserInfoCheckBuyComplete20_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkBuyer, unsigned int dwPrice)
         {
            return CUnmannedTraderUserInfoCheckBuyComplete20_user(_this, pkBuyer, dwPrice, CUnmannedTraderUserInfoCheckBuyComplete20_next);
         };
-        char CUnmannedTraderUserInfoCheckCancelRegist22_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_clear_item_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static char CUnmannedTraderUserInfoCheckCancelRegist22_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_clear_item_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCheckCancelRegist22_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoCheckCancelRegist22_next);
         };
-        bool CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_wrapper(struct CUnmannedTraderUserInfo* _this, char byTax, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_wrapper(struct CUnmannedTraderUserInfo* _this, char byTax, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_user(_this, byTax, pkLogger, CUnmannedTraderUserInfoCheckIsUpdatedTaxRate24_next);
         };
-        char CUnmannedTraderUserInfoCheckModifyPrice26_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_adjust_price_request_clzo* pRequest, unsigned int* dwOldPrice, struct CLogFile* pkLogger, unsigned int* pdwTax)
+        static char CUnmannedTraderUserInfoCheckModifyPrice26_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_adjust_price_request_clzo* pRequest, unsigned int* dwOldPrice, struct CLogFile* pkLogger, unsigned int* pdwTax)
         {
            return CUnmannedTraderUserInfoCheckModifyPrice26_user(_this, byType, pRequest, dwOldPrice, pkLogger, pdwTax, CUnmannedTraderUserInfoCheckModifyPrice26_next);
         };
-        char CUnmannedTraderUserInfoCheckReRegist28_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct CLogFile* pkLogger, uint16_t wItemSerial, char byAmount, char byItemTableCode, uint16_t wItemIndex, unsigned int dwRegistSerial, unsigned int dwPrice, char* pbyDivision, char* pbyClass, char* pbySubClass, unsigned int* pdwTax, unsigned int* pdwListIndex)
+        static char CUnmannedTraderUserInfoCheckReRegist28_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct CLogFile* pkLogger, uint16_t wItemSerial, char byAmount, char byItemTableCode, uint16_t wItemIndex, unsigned int dwRegistSerial, unsigned int dwPrice, char* pbyDivision, char* pbyClass, char* pbySubClass, unsigned int* pdwTax, unsigned int* pdwListIndex)
         {
            return CUnmannedTraderUserInfoCheckReRegist28_user(_this, byType, pkLogger, wItemSerial, byAmount, byItemTableCode, wItemIndex, dwRegistSerial, dwPrice, pbyDivision, pbyClass, pbySubClass, pdwTax, pdwListIndex, CUnmannedTraderUserInfoCheckReRegist28_next);
         };
-        char CUnmannedTraderUserInfoCheckRegist30_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, struct CLogFile* pkLogger, char* byTempSlotIndex, char* byDivision, char* byClass, char* bySubClass, unsigned int* dwListIndex, unsigned int* dwTax)
+        static char CUnmannedTraderUserInfoCheckRegist30_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, struct CLogFile* pkLogger, char* byTempSlotIndex, char* byDivision, char* byClass, char* bySubClass, unsigned int* dwListIndex, unsigned int* dwTax)
         {
            return CUnmannedTraderUserInfoCheckRegist30_user(_this, byType, pRequest, pkLogger, byTempSlotIndex, byDivision, byClass, bySubClass, dwListIndex, dwTax, CUnmannedTraderUserInfoCheckRegist30_next);
         };
-        char CUnmannedTraderUserInfoCheckSearch32_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_search_list_request_clzo* pRequest, unsigned int* dwListIndex, unsigned int* dwCurVer, struct CLogFile* pkLogger)
+        static char CUnmannedTraderUserInfoCheckSearch32_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_search_list_request_clzo* pRequest, unsigned int* dwListIndex, unsigned int* dwCurVer, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCheckSearch32_user(_this, byType, pRequest, dwListIndex, dwCurVer, pkLogger, CUnmannedTraderUserInfoCheckSearch32_next);
         };
-        char CUnmannedTraderUserInfoCheckSellComplete34_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkSellPlayer, struct CPlayer* pkBuyer, unsigned int dwRegistSerial, unsigned int dwRealPrice, struct CLogFile* pkLogger)
+        static char CUnmannedTraderUserInfoCheckSellComplete34_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkSellPlayer, struct CPlayer* pkBuyer, unsigned int dwRegistSerial, unsigned int dwRealPrice, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCheckSellComplete34_user(_this, pkSellPlayer, pkBuyer, dwRegistSerial, dwRealPrice, pkLogger, CUnmannedTraderUserInfoCheckSellComplete34_next);
         };
-        void CUnmannedTraderUserInfoClear36_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoClear36_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoClear36_user(_this, CUnmannedTraderUserInfoClear36_next);
         };
-        void CUnmannedTraderUserInfoClearLoadItemInfo38_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoClearLoadItemInfo38_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoClearLoadItemInfo38_user(_this, CUnmannedTraderUserInfoClearLoadItemInfo38_next);
         };
-        void CUnmannedTraderUserInfoClearRequest40_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoClearRequest40_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoClearRequest40_user(_this, CUnmannedTraderUserInfoClearRequest40_next);
         };
-        void CUnmannedTraderUserInfoCompleteCancelRegist42_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteCancelRegist42_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteCancelRegist42_user(_this, byRet, pLoadData, pkLogger, CUnmannedTraderUserInfoCompleteCancelRegist42_next);
         };
-        bool CUnmannedTraderUserInfoCompleteCancelRegistItem44_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderUserInfoCompleteCancelRegistItem44_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoCompleteCancelRegistItem44_user(_this, dwRegistSerial, dwItemSerial, pkLogger, CUnmannedTraderUserInfoCompleteCancelRegistItem44_next);
         };
-        void CUnmannedTraderUserInfoCompleteCreate46_wrapper(struct CUnmannedTraderUserInfo* _this, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteCreate46_wrapper(struct CUnmannedTraderUserInfo* _this, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteCreate46_user(_this, pkLogger, CUnmannedTraderUserInfoCompleteCreate46_next);
         };
-        void CUnmannedTraderUserInfoCompleteReRegist48_wrapper(struct CUnmannedTraderUserInfo* _this, char* pLoadData, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteReRegist48_wrapper(struct CUnmannedTraderUserInfo* _this, char* pLoadData, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteReRegist48_user(_this, pLoadData, pkLogger, CUnmannedTraderUserInfoCompleteReRegist48_next);
         };
-        bool CUnmannedTraderUserInfoCompleteReRegistItem50_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwPrice, struct CLogFile* pkLogger, char* pbyProcRet)
+        static bool CUnmannedTraderUserInfoCompleteReRegistItem50_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwPrice, struct CLogFile* pkLogger, char* pbyProcRet)
         {
            return CUnmannedTraderUserInfoCompleteReRegistItem50_user(_this, dwRegistSerial, dwItemSerial, dwPrice, pkLogger, pbyProcRet, CUnmannedTraderUserInfoCompleteReRegistItem50_next);
         };
-        void CUnmannedTraderUserInfoCompleteReRegistRollBack52_wrapper(struct CUnmannedTraderUserInfo* _this, char* pData, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteReRegistRollBack52_wrapper(struct CUnmannedTraderUserInfo* _this, char* pData, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteReRegistRollBack52_user(_this, pData, pkLogger, CUnmannedTraderUserInfoCompleteReRegistRollBack52_next);
         };
-        void CUnmannedTraderUserInfoCompleteRegist54_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteRegist54_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteRegist54_user(_this, byRet, pLoadData, pkLogger, CUnmannedTraderUserInfoCompleteRegist54_next);
         };
-        bool CUnmannedTraderUserInfoCompleteRegistItem56_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwETSerialNumber, unsigned int dwPrice, char bySellTurm, char byTableCode, uint16_t wItemIndex, char byStorageIndex, uint64_t dwD, unsigned int dwU, bool bInserted)
+        static bool CUnmannedTraderUserInfoCompleteRegistItem56_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwETSerialNumber, unsigned int dwPrice, char bySellTurm, char byTableCode, uint16_t wItemIndex, char byStorageIndex, uint64_t dwD, unsigned int dwU, bool bInserted)
         {
            return CUnmannedTraderUserInfoCompleteRegistItem56_user(_this, dwRegistSerial, dwItemSerial, dwETSerialNumber, dwPrice, bySellTurm, byTableCode, wItemIndex, byStorageIndex, dwD, dwU, bInserted, CUnmannedTraderUserInfoCompleteRegistItem56_next);
         };
-        void CUnmannedTraderUserInfoCompleteReprice58_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteReprice58_wrapper(struct CUnmannedTraderUserInfo* _this, char byRet, char* pLoadData, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteReprice58_user(_this, byRet, pLoadData, pkLogger, CUnmannedTraderUserInfoCompleteReprice58_next);
         };
-        bool CUnmannedTraderUserInfoCompleteRepriceItem60_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwPrice)
+        static bool CUnmannedTraderUserInfoCompleteRepriceItem60_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, uint16_t dwItemSerial, unsigned int dwPrice)
         {
            return CUnmannedTraderUserInfoCompleteRepriceItem60_user(_this, dwRegistSerial, dwItemSerial, dwPrice, CUnmannedTraderUserInfoCompleteRepriceItem60_next);
         };
-        void CUnmannedTraderUserInfoCompleteTimeOutClear62_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoCompleteTimeOutClear62_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoCompleteTimeOutClear62_user(_this, dwRegistSerial, pkLogger, CUnmannedTraderUserInfoCompleteTimeOutClear62_next);
         };
-        void CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_wrapper(struct CUnmannedTraderUserInfo* _this, char* pLoadData)
+        static void CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_wrapper(struct CUnmannedTraderUserInfo* _this, char* pLoadData)
         {
            CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_user(_this, pLoadData, CUnmannedTraderUserInfoCompleteUpdateCheatRegistTime64_next);
         };
-        bool CUnmannedTraderUserInfoCompleteUpdateState66_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, char byState, bool bReCountRegist)
+        static bool CUnmannedTraderUserInfoCompleteUpdateState66_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, char byState, bool bReCountRegist)
         {
            return CUnmannedTraderUserInfoCompleteUpdateState66_user(_this, dwRegistSerial, byState, bReCountRegist, CUnmannedTraderUserInfoCompleteUpdateState66_next);
         };
-        void CUnmannedTraderUserInfoCountRegistItem68_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoCountRegistItem68_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoCountRegistItem68_user(_this, CUnmannedTraderUserInfoCountRegistItem68_next);
         };
-        struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFind70_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result, unsigned int dwRegistSerial)
+        static struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFind70_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result, unsigned int dwRegistSerial)
         {
            return CUnmannedTraderUserInfoFind70_user(_this, result, dwRegistSerial, CUnmannedTraderUserInfoFind70_next);
         };
-        struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFindEmpty72_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result)
+        static struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFindEmpty72_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result)
         {
            return CUnmannedTraderUserInfoFindEmpty72_user(_this, result, CUnmannedTraderUserInfoFindEmpty72_next);
         };
-        struct CPlayer* CUnmannedTraderUserInfoFindOwner74_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static struct CPlayer* CUnmannedTraderUserInfoFindOwner74_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoFindOwner74_user(_this, CUnmannedTraderUserInfoFindOwner74_next);
         };
-        struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFindRegist76_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> > iterStart)
+        static struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* CUnmannedTraderUserInfoFindRegist76_wrapper(struct CUnmannedTraderUserInfo* _this, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> >* result, struct std::_Vector_iterator<CUnmannedTraderRegistItemInfo,std::allocator<CUnmannedTraderRegistItemInfo> > iterStart)
         {
            return CUnmannedTraderUserInfoFindRegist76_user(_this, result, iterStart, CUnmannedTraderUserInfoFindRegist76_next);
         };
-        CUnmannedTraderItemState::STATE CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, struct CPlayer** pkOwner)
+        static CUnmannedTraderItemState::STATE CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwRegistSerial, struct CPlayer** pkOwner)
         {
            return CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_user(_this, dwRegistSerial, pkOwner, CUnmannedTraderUserInfoGetCloseItemForPassTimeUpdateInfo78_next);
         };
-        void CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_wrapper(struct CUnmannedTraderUserInfo* _this, char* szStateStr, int iBuffSize)
+        static void CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_wrapper(struct CUnmannedTraderUserInfo* _this, char* szStateStr, int iBuffSize)
         {
            CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_user(_this, szStateStr, iBuffSize, CUnmannedTraderUserInfoGetCurrentRegItemStateStr80_next);
         };
-        uint16_t CUnmannedTraderUserInfoGetIndex82_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static uint16_t CUnmannedTraderUserInfoGetIndex82_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoGetIndex82_user(_this, CUnmannedTraderUserInfoGetIndex82_next);
         };
-        char CUnmannedTraderUserInfoGetMaxRegistCnt84_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static char CUnmannedTraderUserInfoGetMaxRegistCnt84_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoGetMaxRegistCnt84_user(_this, CUnmannedTraderUserInfoGetMaxRegistCnt84_next);
         };
-        struct CUnmannedTraderRegistItemInfo* CUnmannedTraderUserInfoGetRegItemInfo86_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static struct CUnmannedTraderRegistItemInfo* CUnmannedTraderUserInfoGetRegItemInfo86_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoGetRegItemInfo86_user(_this, CUnmannedTraderUserInfoGetRegItemInfo86_next);
         };
-        unsigned int CUnmannedTraderUserInfoGetSerial88_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static unsigned int CUnmannedTraderUserInfoGetSerial88_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoGetSerial88_user(_this, CUnmannedTraderUserInfoGetSerial88_next);
         };
-        bool CUnmannedTraderUserInfoInit90_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx)
+        static bool CUnmannedTraderUserInfoInit90_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx)
         {
            return CUnmannedTraderUserInfoInit90_user(_this, wInx, CUnmannedTraderUserInfoInit90_next);
         };
-        bool CUnmannedTraderUserInfoIsLogInState92_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static bool CUnmannedTraderUserInfoIsLogInState92_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoIsLogInState92_user(_this, CUnmannedTraderUserInfoIsLogInState92_next);
         };
-        bool CUnmannedTraderUserInfoIsNull94_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static bool CUnmannedTraderUserInfoIsNull94_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            return CUnmannedTraderUserInfoIsNull94_user(_this, CUnmannedTraderUserInfoIsNull94_next);
         };
-        bool CUnmannedTraderUserInfoLoad96_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, uint16_t wInx, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderUserInfoLoad96_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, uint16_t wInx, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoLoad96_user(_this, byType, wInx, dwSerial, kInfo, pkLogger, CUnmannedTraderUserInfoLoad96_next);
         };
-        void CUnmannedTraderUserInfoLogOut98_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwSerial, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoLogOut98_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwSerial, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoLogOut98_user(_this, dwSerial, pkLogger, CUnmannedTraderUserInfoLogOut98_next);
         };
-        void CUnmannedTraderUserInfoModifyPrice100_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_adjust_price_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoModifyPrice100_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_adjust_price_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoModifyPrice100_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoModifyPrice100_next);
         };
-        void CUnmannedTraderUserInfoNotifyCloseItem102_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoNotifyCloseItem102_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoNotifyCloseItem102_user(_this, pkResult, pkLogger, CUnmannedTraderUserInfoNotifyCloseItem102_next);
         };
-        void CUnmannedTraderUserInfoNotifyRegistItem104_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfoNotifyRegistItem104_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfoNotifyRegistItem104_user(_this, CUnmannedTraderUserInfoNotifyRegistItem104_next);
         };
-        void CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, char byGroupType, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, char byGroupType, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_user(_this, pkResult, byGroupType, pkLogger, CUnmannedTraderUserInfoPrcoSellUpdateWaitItem106_next);
         };
-        void CUnmannedTraderUserInfoProcSellWaitItem108_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, char byGroupType, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoProcSellWaitItem108_wrapper(struct CUnmannedTraderUserInfo* _this, struct _qry_case_unmandtrader_log_in_proc_update_complete* pkResult, char byGroupType, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoProcSellWaitItem108_user(_this, pkResult, byGroupType, pkLogger, CUnmannedTraderUserInfoProcSellWaitItem108_next);
         };
-        void CUnmannedTraderUserInfoReRegist110_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_re_regist_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoReRegist110_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_re_regist_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoReRegist110_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoReRegist110_next);
         };
-        void CUnmannedTraderUserInfoRegist112_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoRegist112_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoRegist112_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoRegist112_next);
         };
-        char CUnmannedTraderUserInfoRegistItem114_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, char byTempSlotIndex, char byDivision, char byClass, char bySubClass, unsigned int dwListIndex, unsigned int dwTax)
+        static char CUnmannedTraderUserInfoRegistItem114_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _a_trade_reg_item_request_clzo* pRequest, char byTempSlotIndex, char byDivision, char byClass, char bySubClass, unsigned int dwListIndex, unsigned int dwTax)
         {
            return CUnmannedTraderUserInfoRegistItem114_user(_this, byType, pRequest, byTempSlotIndex, byDivision, byClass, bySubClass, dwListIndex, dwTax, CUnmannedTraderUserInfoRegistItem114_next);
         };
-        void CUnmannedTraderUserInfoSearch116_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_search_list_request_clzo* pRequest, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoSearch116_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, struct _unmannedtrader_search_list_request_clzo* pRequest, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoSearch116_user(_this, byType, pRequest, pkLogger, CUnmannedTraderUserInfoSearch116_next);
         };
-        char CUnmannedTraderUserInfoSellComplete118_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkSellPlayer, struct CPlayer* pkBuyer, unsigned int dwOriPrice, unsigned int dwRealPrice, unsigned int dwTax, unsigned int dwRegistSerial, int64_t tResultTime, struct CLogFile* pkLogger)
+        static char CUnmannedTraderUserInfoSellComplete118_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pkSellPlayer, struct CPlayer* pkBuyer, unsigned int dwOriPrice, unsigned int dwRealPrice, unsigned int dwTax, unsigned int dwRegistSerial, int64_t tResultTime, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoSellComplete118_user(_this, pkSellPlayer, pkBuyer, dwOriPrice, dwRealPrice, dwTax, dwRegistSerial, tResultTime, pkLogger, CUnmannedTraderUserInfoSellComplete118_next);
         };
-        void CUnmannedTraderUserInfoSendBuyErrorResult120_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
+        static void CUnmannedTraderUserInfoSendBuyErrorResult120_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
         {
            CUnmannedTraderUserInfoSendBuyErrorResult120_user(_this, wInx, byRet, CUnmannedTraderUserInfoSendBuyErrorResult120_next);
         };
-        void CUnmannedTraderUserInfoSendCancelRegistErrorResult122_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
+        static void CUnmannedTraderUserInfoSendCancelRegistErrorResult122_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
         {
            CUnmannedTraderUserInfoSendCancelRegistErrorResult122_user(_this, wInx, byRet, CUnmannedTraderUserInfoSendCancelRegistErrorResult122_next);
         };
-        void CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwRegistSerial)
+        static void CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwRegistSerial)
         {
            CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_user(_this, wInx, wItemSerial, dwRegistSerial, CUnmannedTraderUserInfoSendCancelRegistSuccessResult124_next);
         };
-        void CUnmannedTraderUserInfoSendNotifyCloseItem126_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwRegistSerial, unsigned int dwPrice, char byTax)
+        static void CUnmannedTraderUserInfoSendNotifyCloseItem126_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwRegistSerial, unsigned int dwPrice, char byTax)
         {
            CUnmannedTraderUserInfoSendNotifyCloseItem126_user(_this, wInx, wItemSerial, dwRegistSerial, dwPrice, byTax, CUnmannedTraderUserInfoSendNotifyCloseItem126_next);
         };
-        void CUnmannedTraderUserInfoSendRegistItemErrorResult128_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet, uint16_t wItemSerial, unsigned int dwRetParam1)
+        static void CUnmannedTraderUserInfoSendRegistItemErrorResult128_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet, uint16_t wItemSerial, unsigned int dwRetParam1)
         {
            CUnmannedTraderUserInfoSendRegistItemErrorResult128_user(_this, wInx, byRet, wItemSerial, dwRetParam1, CUnmannedTraderUserInfoSendRegistItemErrorResult128_next);
         };
-        void CUnmannedTraderUserInfoSendRegistItemSuccessResult130_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwLeftDalant, uint16_t wInx, char* pLoadData)
+        static void CUnmannedTraderUserInfoSendRegistItemSuccessResult130_wrapper(struct CUnmannedTraderUserInfo* _this, unsigned int dwLeftDalant, uint16_t wInx, char* pLoadData)
         {
            CUnmannedTraderUserInfoSendRegistItemSuccessResult130_user(_this, dwLeftDalant, wInx, pLoadData, CUnmannedTraderUserInfoSendRegistItemSuccessResult130_next);
         };
-        void CUnmannedTraderUserInfoSendRepriceErrorResult132_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pReceiver, char byRet)
+        static void CUnmannedTraderUserInfoSendRepriceErrorResult132_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pReceiver, char byRet)
         {
            CUnmannedTraderUserInfoSendRepriceErrorResult132_user(_this, pReceiver, byRet, CUnmannedTraderUserInfoSendRepriceErrorResult132_next);
         };
-        void CUnmannedTraderUserInfoSendRepriceSuccessResult134_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pReceiver, uint16_t wItemSerial, unsigned int dwNewPrice, unsigned int dwRegistSerial, unsigned int dwTax)
+        static void CUnmannedTraderUserInfoSendRepriceSuccessResult134_wrapper(struct CUnmannedTraderUserInfo* _this, struct CPlayer* pReceiver, uint16_t wItemSerial, unsigned int dwNewPrice, unsigned int dwRegistSerial, unsigned int dwTax)
         {
            CUnmannedTraderUserInfoSendRepriceSuccessResult134_user(_this, pReceiver, wItemSerial, dwNewPrice, dwRegistSerial, dwTax, CUnmannedTraderUserInfoSendRepriceSuccessResult134_next);
         };
-        void CUnmannedTraderUserInfoSendSearchErrorResult136_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
+        static void CUnmannedTraderUserInfoSendSearchErrorResult136_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char byRet)
         {
            CUnmannedTraderUserInfoSendSearchErrorResult136_user(_this, wInx, byRet, CUnmannedTraderUserInfoSendSearchErrorResult136_next);
         };
-        void CUnmannedTraderUserInfoSendSearchResult138_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char* pLoadData)
+        static void CUnmannedTraderUserInfoSendSearchResult138_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, char* pLoadData)
         {
            CUnmannedTraderUserInfoSendSearchResult138_user(_this, wInx, pLoadData, CUnmannedTraderUserInfoSendSearchResult138_next);
         };
-        void CUnmannedTraderUserInfoSendSellInfom140_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwAddDalant, unsigned int dwTaxDalant, unsigned int dwTotalDalant)
+        static void CUnmannedTraderUserInfoSendSellInfom140_wrapper(struct CUnmannedTraderUserInfo* _this, uint16_t wInx, uint16_t wItemSerial, unsigned int dwAddDalant, unsigned int dwTaxDalant, unsigned int dwTotalDalant)
         {
            CUnmannedTraderUserInfoSendSellInfom140_user(_this, wInx, wItemSerial, dwAddDalant, dwTaxDalant, dwTotalDalant, CUnmannedTraderUserInfoSendSellInfom140_next);
         };
-        void CUnmannedTraderUserInfoSetAllItemState142_wrapper(struct CUnmannedTraderUserInfo* _this, char byState, char byMaxCnt)
+        static void CUnmannedTraderUserInfoSetAllItemState142_wrapper(struct CUnmannedTraderUserInfo* _this, char byState, char byMaxCnt)
         {
            CUnmannedTraderUserInfoSetAllItemState142_user(_this, byState, byMaxCnt, CUnmannedTraderUserInfoSetAllItemState142_next);
         };
-        void CUnmannedTraderUserInfoSetCompleteInfo144_wrapper(struct CUnmannedTraderUserInfo* _this, struct CLogFile* pkLogger)
+        static void CUnmannedTraderUserInfoSetCompleteInfo144_wrapper(struct CUnmannedTraderUserInfo* _this, struct CLogFile* pkLogger)
         {
            CUnmannedTraderUserInfoSetCompleteInfo144_user(_this, pkLogger, CUnmannedTraderUserInfoSetCompleteInfo144_next);
         };
-        bool CUnmannedTraderUserInfoSetLoadInfo146_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderUserInfoSetLoadInfo146_wrapper(struct CUnmannedTraderUserInfo* _this, char byType, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderUserInfoSetLoadInfo146_user(_this, byType, dwSerial, kInfo, pkLogger, CUnmannedTraderUserInfoSetLoadInfo146_next);
         };
-        void CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_wrapper(struct CUnmannedTraderUserInfo* _this)
+        static void CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_wrapper(struct CUnmannedTraderUserInfo* _this)
         {
            CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_user(_this, CUnmannedTraderUserInfodtor_CUnmannedTraderUserInfo154_next);
         };
         
-        hook_record CUnmannedTraderUserInfo_functions[] = {
+        static hook_record CUnmannedTraderUserInfo_functions[] = {
         {   (LPVOID)0x140353e80L,
             (LPVOID *)&CUnmannedTraderUserInfoBuy2_user,
             (LPVOID *)&CUnmannedTraderUserInfoBuy2_next,
@@ -828,5 +828,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

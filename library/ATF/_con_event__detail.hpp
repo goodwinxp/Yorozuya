@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_con_event_ctor__con_event_2_ptr _con_event_ctor__con_event_2_next(nullptr);
-        info::_con_event_ctor__con_event_2_clbk _con_event_ctor__con_event_2_user(nullptr);
-        info::_con_event_dtor__con_event_4_ptr _con_event_dtor__con_event_4_next(nullptr);
-        info::_con_event_dtor__con_event_4_clbk _con_event_dtor__con_event_4_user(nullptr);
+        static info::_con_event_ctor__con_event_2_ptr _con_event_ctor__con_event_2_next(nullptr);
+        static info::_con_event_ctor__con_event_2_clbk _con_event_ctor__con_event_2_user(nullptr);
+        static info::_con_event_dtor__con_event_4_ptr _con_event_dtor__con_event_4_next(nullptr);
+        static info::_con_event_dtor__con_event_4_clbk _con_event_dtor__con_event_4_user(nullptr);
         
-        void _con_event_ctor__con_event_2_wrapper(struct _con_event_* _this)
+        static void _con_event_ctor__con_event_2_wrapper(struct _con_event_* _this)
         {
            _con_event_ctor__con_event_2_user(_this, _con_event_ctor__con_event_2_next);
         };
-        void _con_event_dtor__con_event_4_wrapper(struct _con_event_* _this)
+        static void _con_event_dtor__con_event_4_wrapper(struct _con_event_* _this)
         {
            _con_event_dtor__con_event_4_user(_this, _con_event_dtor__con_event_4_next);
         };
         
-        hook_record _con_event__functions[] = {
+        static hook_record _con_event__functions[] = {
         {   (LPVOID)0x140304660L,
             (LPVOID *)&_con_event_ctor__con_event_2_user,
             (LPVOID *)&_con_event_ctor__con_event_2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

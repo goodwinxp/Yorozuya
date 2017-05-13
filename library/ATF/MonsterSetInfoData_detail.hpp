@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::MonsterSetInfoDataGetLevelContSFTime2_ptr MonsterSetInfoDataGetLevelContSFTime2_next(nullptr);
-        info::MonsterSetInfoDataGetLevelContSFTime2_clbk MonsterSetInfoDataGetLevelContSFTime2_user(nullptr);
-        info::MonsterSetInfoDataGetLostMonsterTargetDistance4_ptr MonsterSetInfoDataGetLostMonsterTargetDistance4_next(nullptr);
-        info::MonsterSetInfoDataGetLostMonsterTargetDistance4_clbk MonsterSetInfoDataGetLostMonsterTargetDistance4_user(nullptr);
-        info::MonsterSetInfoDataGetMaxToleranceProbMax6_ptr MonsterSetInfoDataGetMaxToleranceProbMax6_next(nullptr);
-        info::MonsterSetInfoDataGetMaxToleranceProbMax6_clbk MonsterSetInfoDataGetMaxToleranceProbMax6_user(nullptr);
-        info::MonsterSetInfoDataGetMonsterDropRate8_ptr MonsterSetInfoDataGetMonsterDropRate8_next(nullptr);
-        info::MonsterSetInfoDataGetMonsterDropRate8_clbk MonsterSetInfoDataGetMonsterDropRate8_user(nullptr);
-        info::MonsterSetInfoDataGetMonsterForcePowerRate10_ptr MonsterSetInfoDataGetMonsterForcePowerRate10_next(nullptr);
-        info::MonsterSetInfoDataGetMonsterForcePowerRate10_clbk MonsterSetInfoDataGetMonsterForcePowerRate10_user(nullptr);
-        info::MonsterSetInfoDataInit12_ptr MonsterSetInfoDataInit12_next(nullptr);
-        info::MonsterSetInfoDataInit12_clbk MonsterSetInfoDataInit12_user(nullptr);
-        info::MonsterSetInfoDataIsRotateBlock14_ptr MonsterSetInfoDataIsRotateBlock14_next(nullptr);
-        info::MonsterSetInfoDataIsRotateBlock14_clbk MonsterSetInfoDataIsRotateBlock14_user(nullptr);
-        info::MonsterSetInfoDataLoad16_ptr MonsterSetInfoDataLoad16_next(nullptr);
-        info::MonsterSetInfoDataLoad16_clbk MonsterSetInfoDataLoad16_user(nullptr);
-        info::MonsterSetInfoDatactor_MonsterSetInfoData18_ptr MonsterSetInfoDatactor_MonsterSetInfoData18_next(nullptr);
-        info::MonsterSetInfoDatactor_MonsterSetInfoData18_clbk MonsterSetInfoDatactor_MonsterSetInfoData18_user(nullptr);
+        static info::MonsterSetInfoDataGetLevelContSFTime2_ptr MonsterSetInfoDataGetLevelContSFTime2_next(nullptr);
+        static info::MonsterSetInfoDataGetLevelContSFTime2_clbk MonsterSetInfoDataGetLevelContSFTime2_user(nullptr);
+        static info::MonsterSetInfoDataGetLostMonsterTargetDistance4_ptr MonsterSetInfoDataGetLostMonsterTargetDistance4_next(nullptr);
+        static info::MonsterSetInfoDataGetLostMonsterTargetDistance4_clbk MonsterSetInfoDataGetLostMonsterTargetDistance4_user(nullptr);
+        static info::MonsterSetInfoDataGetMaxToleranceProbMax6_ptr MonsterSetInfoDataGetMaxToleranceProbMax6_next(nullptr);
+        static info::MonsterSetInfoDataGetMaxToleranceProbMax6_clbk MonsterSetInfoDataGetMaxToleranceProbMax6_user(nullptr);
+        static info::MonsterSetInfoDataGetMonsterDropRate8_ptr MonsterSetInfoDataGetMonsterDropRate8_next(nullptr);
+        static info::MonsterSetInfoDataGetMonsterDropRate8_clbk MonsterSetInfoDataGetMonsterDropRate8_user(nullptr);
+        static info::MonsterSetInfoDataGetMonsterForcePowerRate10_ptr MonsterSetInfoDataGetMonsterForcePowerRate10_next(nullptr);
+        static info::MonsterSetInfoDataGetMonsterForcePowerRate10_clbk MonsterSetInfoDataGetMonsterForcePowerRate10_user(nullptr);
+        static info::MonsterSetInfoDataInit12_ptr MonsterSetInfoDataInit12_next(nullptr);
+        static info::MonsterSetInfoDataInit12_clbk MonsterSetInfoDataInit12_user(nullptr);
+        static info::MonsterSetInfoDataIsRotateBlock14_ptr MonsterSetInfoDataIsRotateBlock14_next(nullptr);
+        static info::MonsterSetInfoDataIsRotateBlock14_clbk MonsterSetInfoDataIsRotateBlock14_user(nullptr);
+        static info::MonsterSetInfoDataLoad16_ptr MonsterSetInfoDataLoad16_next(nullptr);
+        static info::MonsterSetInfoDataLoad16_clbk MonsterSetInfoDataLoad16_user(nullptr);
+        static info::MonsterSetInfoDatactor_MonsterSetInfoData18_ptr MonsterSetInfoDatactor_MonsterSetInfoData18_next(nullptr);
+        static info::MonsterSetInfoDatactor_MonsterSetInfoData18_clbk MonsterSetInfoDatactor_MonsterSetInfoData18_user(nullptr);
         
-        char MonsterSetInfoDataGetLevelContSFTime2_wrapper(struct MonsterSetInfoData* _this, char byEffectCode, char byLevel)
+        static char MonsterSetInfoDataGetLevelContSFTime2_wrapper(struct MonsterSetInfoData* _this, char byEffectCode, char byLevel)
         {
            return MonsterSetInfoDataGetLevelContSFTime2_user(_this, byEffectCode, byLevel, MonsterSetInfoDataGetLevelContSFTime2_next);
         };
-        int MonsterSetInfoDataGetLostMonsterTargetDistance4_wrapper(struct MonsterSetInfoData* _this)
+        static int MonsterSetInfoDataGetLostMonsterTargetDistance4_wrapper(struct MonsterSetInfoData* _this)
         {
            return MonsterSetInfoDataGetLostMonsterTargetDistance4_user(_this, MonsterSetInfoDataGetLostMonsterTargetDistance4_next);
         };
-        float MonsterSetInfoDataGetMaxToleranceProbMax6_wrapper(struct MonsterSetInfoData* _this, int nMonGrade)
+        static float MonsterSetInfoDataGetMaxToleranceProbMax6_wrapper(struct MonsterSetInfoData* _this, int nMonGrade)
         {
            return MonsterSetInfoDataGetMaxToleranceProbMax6_user(_this, nMonGrade, MonsterSetInfoDataGetMaxToleranceProbMax6_next);
         };
-        unsigned int MonsterSetInfoDataGetMonsterDropRate8_wrapper(struct MonsterSetInfoData* _this, int iDiffLevel)
+        static unsigned int MonsterSetInfoDataGetMonsterDropRate8_wrapper(struct MonsterSetInfoData* _this, int iDiffLevel)
         {
            return MonsterSetInfoDataGetMonsterDropRate8_user(_this, iDiffLevel, MonsterSetInfoDataGetMonsterDropRate8_next);
         };
-        float MonsterSetInfoDataGetMonsterForcePowerRate10_wrapper(struct MonsterSetInfoData* _this)
+        static float MonsterSetInfoDataGetMonsterForcePowerRate10_wrapper(struct MonsterSetInfoData* _this)
         {
            return MonsterSetInfoDataGetMonsterForcePowerRate10_user(_this, MonsterSetInfoDataGetMonsterForcePowerRate10_next);
         };
-        void MonsterSetInfoDataInit12_wrapper(struct MonsterSetInfoData* _this)
+        static void MonsterSetInfoDataInit12_wrapper(struct MonsterSetInfoData* _this)
         {
            MonsterSetInfoDataInit12_user(_this, MonsterSetInfoDataInit12_next);
         };
-        bool MonsterSetInfoDataIsRotateBlock14_wrapper(struct MonsterSetInfoData* _this, struct _mon_block* pBlock)
+        static bool MonsterSetInfoDataIsRotateBlock14_wrapper(struct MonsterSetInfoData* _this, struct _mon_block* pBlock)
         {
            return MonsterSetInfoDataIsRotateBlock14_user(_this, pBlock, MonsterSetInfoDataIsRotateBlock14_next);
         };
-        int MonsterSetInfoDataLoad16_wrapper(struct MonsterSetInfoData* _this, char* strFileName)
+        static int MonsterSetInfoDataLoad16_wrapper(struct MonsterSetInfoData* _this, char* strFileName)
         {
            return MonsterSetInfoDataLoad16_user(_this, strFileName, MonsterSetInfoDataLoad16_next);
         };
-        void MonsterSetInfoDatactor_MonsterSetInfoData18_wrapper(struct MonsterSetInfoData* _this)
+        static void MonsterSetInfoDatactor_MonsterSetInfoData18_wrapper(struct MonsterSetInfoData* _this)
         {
            MonsterSetInfoDatactor_MonsterSetInfoData18_user(_this, MonsterSetInfoDatactor_MonsterSetInfoData18_next);
         };
         
-        hook_record MonsterSetInfoData_functions[] = {
+        static hook_record MonsterSetInfoData_functions[] = {
         {   (LPVOID)0x14015d4a0L,
             (LPVOID *)&MonsterSetInfoDataGetLevelContSFTime2_user,
             (LPVOID *)&MonsterSetInfoDataGetLevelContSFTime2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

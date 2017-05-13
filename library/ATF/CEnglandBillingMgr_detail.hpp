@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CEnglandBillingMgrctor_CEnglandBillingMgr2_ptr CEnglandBillingMgrctor_CEnglandBillingMgr2_next(nullptr);
-        info::CEnglandBillingMgrctor_CEnglandBillingMgr2_clbk CEnglandBillingMgrctor_CEnglandBillingMgr2_user(nullptr);
-        info::CEnglandBillingMgrCallFunc_Item_Buy4_ptr CEnglandBillingMgrCallFunc_Item_Buy4_next(nullptr);
-        info::CEnglandBillingMgrCallFunc_Item_Buy4_clbk CEnglandBillingMgrCallFunc_Item_Buy4_user(nullptr);
-        info::CEnglandBillingMgrCallFunc_RFOnline_Auth6_ptr CEnglandBillingMgrCallFunc_RFOnline_Auth6_next(nullptr);
-        info::CEnglandBillingMgrCallFunc_RFOnline_Auth6_clbk CEnglandBillingMgrCallFunc_RFOnline_Auth6_user(nullptr);
-        info::CEnglandBillingMgrFree8_ptr CEnglandBillingMgrFree8_next(nullptr);
-        info::CEnglandBillingMgrFree8_clbk CEnglandBillingMgrFree8_user(nullptr);
-        info::CEnglandBillingMgrMakeConnectionThread10_ptr CEnglandBillingMgrMakeConnectionThread10_next(nullptr);
-        info::CEnglandBillingMgrMakeConnectionThread10_clbk CEnglandBillingMgrMakeConnectionThread10_user(nullptr);
-        info::CEnglandBillingMgrSetPoolPointer12_ptr CEnglandBillingMgrSetPoolPointer12_next(nullptr);
-        info::CEnglandBillingMgrSetPoolPointer12_clbk CEnglandBillingMgrSetPoolPointer12_user(nullptr);
-        info::CEnglandBillingMgrdtor_CEnglandBillingMgr14_ptr CEnglandBillingMgrdtor_CEnglandBillingMgr14_next(nullptr);
-        info::CEnglandBillingMgrdtor_CEnglandBillingMgr14_clbk CEnglandBillingMgrdtor_CEnglandBillingMgr14_user(nullptr);
+        static info::CEnglandBillingMgrctor_CEnglandBillingMgr2_ptr CEnglandBillingMgrctor_CEnglandBillingMgr2_next(nullptr);
+        static info::CEnglandBillingMgrctor_CEnglandBillingMgr2_clbk CEnglandBillingMgrctor_CEnglandBillingMgr2_user(nullptr);
+        static info::CEnglandBillingMgrCallFunc_Item_Buy4_ptr CEnglandBillingMgrCallFunc_Item_Buy4_next(nullptr);
+        static info::CEnglandBillingMgrCallFunc_Item_Buy4_clbk CEnglandBillingMgrCallFunc_Item_Buy4_user(nullptr);
+        static info::CEnglandBillingMgrCallFunc_RFOnline_Auth6_ptr CEnglandBillingMgrCallFunc_RFOnline_Auth6_next(nullptr);
+        static info::CEnglandBillingMgrCallFunc_RFOnline_Auth6_clbk CEnglandBillingMgrCallFunc_RFOnline_Auth6_user(nullptr);
+        static info::CEnglandBillingMgrFree8_ptr CEnglandBillingMgrFree8_next(nullptr);
+        static info::CEnglandBillingMgrFree8_clbk CEnglandBillingMgrFree8_user(nullptr);
+        static info::CEnglandBillingMgrMakeConnectionThread10_ptr CEnglandBillingMgrMakeConnectionThread10_next(nullptr);
+        static info::CEnglandBillingMgrMakeConnectionThread10_clbk CEnglandBillingMgrMakeConnectionThread10_user(nullptr);
+        static info::CEnglandBillingMgrSetPoolPointer12_ptr CEnglandBillingMgrSetPoolPointer12_next(nullptr);
+        static info::CEnglandBillingMgrSetPoolPointer12_clbk CEnglandBillingMgrSetPoolPointer12_user(nullptr);
+        static info::CEnglandBillingMgrdtor_CEnglandBillingMgr14_ptr CEnglandBillingMgrdtor_CEnglandBillingMgr14_next(nullptr);
+        static info::CEnglandBillingMgrdtor_CEnglandBillingMgr14_clbk CEnglandBillingMgrdtor_CEnglandBillingMgr14_user(nullptr);
         
-        void CEnglandBillingMgrctor_CEnglandBillingMgr2_wrapper(struct CEnglandBillingMgr* _this)
+        static void CEnglandBillingMgrctor_CEnglandBillingMgr2_wrapper(struct CEnglandBillingMgr* _this)
         {
            CEnglandBillingMgrctor_CEnglandBillingMgr2_user(_this, CEnglandBillingMgrctor_CEnglandBillingMgr2_next);
         };
-        int CEnglandBillingMgrCallFunc_Item_Buy4_wrapper(struct CEnglandBillingMgr* _this, struct _param_cash_update* rParam, int n, int nIdx)
+        static int CEnglandBillingMgrCallFunc_Item_Buy4_wrapper(struct CEnglandBillingMgr* _this, struct _param_cash_update* rParam, int n, int nIdx)
         {
            return CEnglandBillingMgrCallFunc_Item_Buy4_user(_this, rParam, n, nIdx, CEnglandBillingMgrCallFunc_Item_Buy4_next);
         };
-        int CEnglandBillingMgrCallFunc_RFOnline_Auth6_wrapper(struct CEnglandBillingMgr* _this, struct _param_cash_select* rParam, int nIdx)
+        static int CEnglandBillingMgrCallFunc_RFOnline_Auth6_wrapper(struct CEnglandBillingMgr* _this, struct _param_cash_select* rParam, int nIdx)
         {
            return CEnglandBillingMgrCallFunc_RFOnline_Auth6_user(_this, rParam, nIdx, CEnglandBillingMgrCallFunc_RFOnline_Auth6_next);
         };
-        bool CEnglandBillingMgrFree8_wrapper(struct CEnglandBillingMgr* _this)
+        static bool CEnglandBillingMgrFree8_wrapper(struct CEnglandBillingMgr* _this)
         {
            return CEnglandBillingMgrFree8_user(_this, CEnglandBillingMgrFree8_next);
         };
-        bool CEnglandBillingMgrMakeConnectionThread10_wrapper(struct CEnglandBillingMgr* _this)
+        static bool CEnglandBillingMgrMakeConnectionThread10_wrapper(struct CEnglandBillingMgr* _this)
         {
            return CEnglandBillingMgrMakeConnectionThread10_user(_this, CEnglandBillingMgrMakeConnectionThread10_next);
         };
-        void CEnglandBillingMgrSetPoolPointer12_wrapper(struct CEnglandBillingMgr* _this, struct TaskPool* lpPointer)
+        static void CEnglandBillingMgrSetPoolPointer12_wrapper(struct CEnglandBillingMgr* _this, struct TaskPool* lpPointer)
         {
            CEnglandBillingMgrSetPoolPointer12_user(_this, lpPointer, CEnglandBillingMgrSetPoolPointer12_next);
         };
-        void CEnglandBillingMgrdtor_CEnglandBillingMgr14_wrapper(struct CEnglandBillingMgr* _this)
+        static void CEnglandBillingMgrdtor_CEnglandBillingMgr14_wrapper(struct CEnglandBillingMgr* _this)
         {
            CEnglandBillingMgrdtor_CEnglandBillingMgr14_user(_this, CEnglandBillingMgrdtor_CEnglandBillingMgr14_next);
         };
         
-        hook_record CEnglandBillingMgr_functions[] = {
+        static hook_record CEnglandBillingMgr_functions[] = {
         {   (LPVOID)0x1403196b0L,
             (LPVOID *)&CEnglandBillingMgrctor_CEnglandBillingMgr2_user,
             (LPVOID *)&CEnglandBillingMgrctor_CEnglandBillingMgr2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

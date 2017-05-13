@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::EmotionPresentationCheckerCheckEmotionState2_ptr EmotionPresentationCheckerCheckEmotionState2_next(nullptr);
-        info::EmotionPresentationCheckerCheckEmotionState2_clbk EmotionPresentationCheckerCheckEmotionState2_user(nullptr);
-        info::EmotionPresentationCheckerctor_EmotionPresentationChecker4_ptr EmotionPresentationCheckerctor_EmotionPresentationChecker4_next(nullptr);
-        info::EmotionPresentationCheckerctor_EmotionPresentationChecker4_clbk EmotionPresentationCheckerctor_EmotionPresentationChecker4_user(nullptr);
-        info::EmotionPresentationCheckerReSet6_ptr EmotionPresentationCheckerReSet6_next(nullptr);
-        info::EmotionPresentationCheckerReSet6_clbk EmotionPresentationCheckerReSet6_user(nullptr);
+        static info::EmotionPresentationCheckerCheckEmotionState2_ptr EmotionPresentationCheckerCheckEmotionState2_next(nullptr);
+        static info::EmotionPresentationCheckerCheckEmotionState2_clbk EmotionPresentationCheckerCheckEmotionState2_user(nullptr);
+        static info::EmotionPresentationCheckerctor_EmotionPresentationChecker4_ptr EmotionPresentationCheckerctor_EmotionPresentationChecker4_next(nullptr);
+        static info::EmotionPresentationCheckerctor_EmotionPresentationChecker4_clbk EmotionPresentationCheckerctor_EmotionPresentationChecker4_user(nullptr);
+        static info::EmotionPresentationCheckerReSet6_ptr EmotionPresentationCheckerReSet6_next(nullptr);
+        static info::EmotionPresentationCheckerReSet6_clbk EmotionPresentationCheckerReSet6_user(nullptr);
         
-        bool EmotionPresentationCheckerCheckEmotionState2_wrapper(struct EmotionPresentationChecker* _this, struct CMonster* pThis, char byCheckType, struct CCharacter* pTarget)
+        static bool EmotionPresentationCheckerCheckEmotionState2_wrapper(struct EmotionPresentationChecker* _this, struct CMonster* pThis, char byCheckType, struct CCharacter* pTarget)
         {
            return EmotionPresentationCheckerCheckEmotionState2_user(_this, pThis, byCheckType, pTarget, EmotionPresentationCheckerCheckEmotionState2_next);
         };
-        void EmotionPresentationCheckerctor_EmotionPresentationChecker4_wrapper(struct EmotionPresentationChecker* _this)
+        static void EmotionPresentationCheckerctor_EmotionPresentationChecker4_wrapper(struct EmotionPresentationChecker* _this)
         {
            EmotionPresentationCheckerctor_EmotionPresentationChecker4_user(_this, EmotionPresentationCheckerctor_EmotionPresentationChecker4_next);
         };
-        void EmotionPresentationCheckerReSet6_wrapper(struct EmotionPresentationChecker* _this)
+        static void EmotionPresentationCheckerReSet6_wrapper(struct EmotionPresentationChecker* _this)
         {
            EmotionPresentationCheckerReSet6_user(_this, EmotionPresentationCheckerReSet6_next);
         };
         
-        hook_record EmotionPresentationChecker_functions[] = {
+        static hook_record EmotionPresentationChecker_functions[] = {
         {   (LPVOID)0x14015d250L,
             (LPVOID *)&EmotionPresentationCheckerCheckEmotionState2_user,
             (LPVOID *)&EmotionPresentationCheckerCheckEmotionState2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

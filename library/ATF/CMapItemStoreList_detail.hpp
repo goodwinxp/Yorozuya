@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMapItemStoreListctor_CMapItemStoreList2_ptr CMapItemStoreListctor_CMapItemStoreList2_next(nullptr);
-        info::CMapItemStoreListctor_CMapItemStoreList2_clbk CMapItemStoreListctor_CMapItemStoreList2_user(nullptr);
-        info::CMapItemStoreListCopyItemStoreData4_ptr CMapItemStoreListCopyItemStoreData4_next(nullptr);
-        info::CMapItemStoreListCopyItemStoreData4_clbk CMapItemStoreListCopyItemStoreData4_user(nullptr);
-        info::CMapItemStoreListCreateStores6_ptr CMapItemStoreListCreateStores6_next(nullptr);
-        info::CMapItemStoreListCreateStores6_clbk CMapItemStoreListCreateStores6_user(nullptr);
-        info::CMapItemStoreListGetItemStoreFromRecIndex8_ptr CMapItemStoreListGetItemStoreFromRecIndex8_next(nullptr);
-        info::CMapItemStoreListGetItemStoreFromRecIndex8_clbk CMapItemStoreListGetItemStoreFromRecIndex8_user(nullptr);
-        info::CMapItemStoreListSetItemStores10_ptr CMapItemStoreListSetItemStores10_next(nullptr);
-        info::CMapItemStoreListSetItemStores10_clbk CMapItemStoreListSetItemStores10_user(nullptr);
-        info::CMapItemStoreListSetTypeNSerial12_ptr CMapItemStoreListSetTypeNSerial12_next(nullptr);
-        info::CMapItemStoreListSetTypeNSerial12_clbk CMapItemStoreListSetTypeNSerial12_user(nullptr);
-        info::CMapItemStoreListdtor_CMapItemStoreList16_ptr CMapItemStoreListdtor_CMapItemStoreList16_next(nullptr);
-        info::CMapItemStoreListdtor_CMapItemStoreList16_clbk CMapItemStoreListdtor_CMapItemStoreList16_user(nullptr);
+        static info::CMapItemStoreListctor_CMapItemStoreList2_ptr CMapItemStoreListctor_CMapItemStoreList2_next(nullptr);
+        static info::CMapItemStoreListctor_CMapItemStoreList2_clbk CMapItemStoreListctor_CMapItemStoreList2_user(nullptr);
+        static info::CMapItemStoreListCopyItemStoreData4_ptr CMapItemStoreListCopyItemStoreData4_next(nullptr);
+        static info::CMapItemStoreListCopyItemStoreData4_clbk CMapItemStoreListCopyItemStoreData4_user(nullptr);
+        static info::CMapItemStoreListCreateStores6_ptr CMapItemStoreListCreateStores6_next(nullptr);
+        static info::CMapItemStoreListCreateStores6_clbk CMapItemStoreListCreateStores6_user(nullptr);
+        static info::CMapItemStoreListGetItemStoreFromRecIndex8_ptr CMapItemStoreListGetItemStoreFromRecIndex8_next(nullptr);
+        static info::CMapItemStoreListGetItemStoreFromRecIndex8_clbk CMapItemStoreListGetItemStoreFromRecIndex8_user(nullptr);
+        static info::CMapItemStoreListSetItemStores10_ptr CMapItemStoreListSetItemStores10_next(nullptr);
+        static info::CMapItemStoreListSetItemStores10_clbk CMapItemStoreListSetItemStores10_user(nullptr);
+        static info::CMapItemStoreListSetTypeNSerial12_ptr CMapItemStoreListSetTypeNSerial12_next(nullptr);
+        static info::CMapItemStoreListSetTypeNSerial12_clbk CMapItemStoreListSetTypeNSerial12_user(nullptr);
+        static info::CMapItemStoreListdtor_CMapItemStoreList16_ptr CMapItemStoreListdtor_CMapItemStoreList16_next(nullptr);
+        static info::CMapItemStoreListdtor_CMapItemStoreList16_clbk CMapItemStoreListdtor_CMapItemStoreList16_user(nullptr);
         
-        void CMapItemStoreListctor_CMapItemStoreList2_wrapper(struct CMapItemStoreList* _this)
+        static void CMapItemStoreListctor_CMapItemStoreList2_wrapper(struct CMapItemStoreList* _this)
         {
            CMapItemStoreListctor_CMapItemStoreList2_user(_this, CMapItemStoreListctor_CMapItemStoreList2_next);
         };
-        bool CMapItemStoreListCopyItemStoreData4_wrapper(struct CMapItemStoreList* _this, struct CMapItemStoreList* pDest)
+        static bool CMapItemStoreListCopyItemStoreData4_wrapper(struct CMapItemStoreList* _this, struct CMapItemStoreList* pDest)
         {
            return CMapItemStoreListCopyItemStoreData4_user(_this, pDest, CMapItemStoreListCopyItemStoreData4_next);
         };
-        bool CMapItemStoreListCreateStores6_wrapper(struct CMapItemStoreList* _this, struct CMapData* pMap)
+        static bool CMapItemStoreListCreateStores6_wrapper(struct CMapItemStoreList* _this, struct CMapData* pMap)
         {
            return CMapItemStoreListCreateStores6_user(_this, pMap, CMapItemStoreListCreateStores6_next);
         };
-        struct CItemStore* CMapItemStoreListGetItemStoreFromRecIndex8_wrapper(struct CMapItemStoreList* _this, unsigned int dwRecIndex)
+        static struct CItemStore* CMapItemStoreListGetItemStoreFromRecIndex8_wrapper(struct CMapItemStoreList* _this, unsigned int dwRecIndex)
         {
            return CMapItemStoreListGetItemStoreFromRecIndex8_user(_this, dwRecIndex, CMapItemStoreListGetItemStoreFromRecIndex8_next);
         };
-        bool CMapItemStoreListSetItemStores10_wrapper(struct CMapItemStoreList* _this, struct CMapData* pMap)
+        static bool CMapItemStoreListSetItemStores10_wrapper(struct CMapItemStoreList* _this, struct CMapData* pMap)
         {
            return CMapItemStoreListSetItemStores10_user(_this, pMap, CMapItemStoreListSetItemStores10_next);
         };
-        void CMapItemStoreListSetTypeNSerial12_wrapper(struct CMapItemStoreList* _this, char byType, int nSerial)
+        static void CMapItemStoreListSetTypeNSerial12_wrapper(struct CMapItemStoreList* _this, char byType, int nSerial)
         {
            CMapItemStoreListSetTypeNSerial12_user(_this, byType, nSerial, CMapItemStoreListSetTypeNSerial12_next);
         };
-        void CMapItemStoreListdtor_CMapItemStoreList16_wrapper(struct CMapItemStoreList* _this)
+        static void CMapItemStoreListdtor_CMapItemStoreList16_wrapper(struct CMapItemStoreList* _this)
         {
            CMapItemStoreListdtor_CMapItemStoreList16_user(_this, CMapItemStoreListdtor_CMapItemStoreList16_next);
         };
         
-        hook_record CMapItemStoreList_functions[] = {
+        static hook_record CMapItemStoreList_functions[] = {
         {   (LPVOID)0x14034be20L,
             (LPVOID *)&CMapItemStoreListctor_CMapItemStoreList2_user,
             (LPVOID *)&CMapItemStoreListctor_CMapItemStoreList2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

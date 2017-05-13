@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_ptr _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_next(nullptr);
-        info::_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_clbk _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_user(nullptr);
-        info::_talik_crystal_exchange_zoclsize4_ptr _talik_crystal_exchange_zoclsize4_next(nullptr);
-        info::_talik_crystal_exchange_zoclsize4_clbk _talik_crystal_exchange_zoclsize4_user(nullptr);
+        static info::_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_ptr _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_next(nullptr);
+        static info::_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_clbk _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_user(nullptr);
+        static info::_talik_crystal_exchange_zoclsize4_ptr _talik_crystal_exchange_zoclsize4_next(nullptr);
+        static info::_talik_crystal_exchange_zoclsize4_clbk _talik_crystal_exchange_zoclsize4_user(nullptr);
         
-        void _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_wrapper(struct _talik_crystal_exchange_zocl* _this)
+        static void _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_wrapper(struct _talik_crystal_exchange_zocl* _this)
         {
            _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_user(_this, _talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_next);
         };
-        int _talik_crystal_exchange_zoclsize4_wrapper(struct _talik_crystal_exchange_zocl* _this)
+        static int _talik_crystal_exchange_zoclsize4_wrapper(struct _talik_crystal_exchange_zocl* _this)
         {
            return _talik_crystal_exchange_zoclsize4_user(_this, _talik_crystal_exchange_zoclsize4_next);
         };
         
-        hook_record _talik_crystal_exchange_zocl_functions[] = {
+        static hook_record _talik_crystal_exchange_zocl_functions[] = {
         {   (LPVOID)0x140432230L,
             (LPVOID *)&_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_user,
             (LPVOID *)&_talik_crystal_exchange_zoclctor__talik_crystal_exchange_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

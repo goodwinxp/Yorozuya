@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_RENAME_POTION_USE_INFOInit2_ptr _RENAME_POTION_USE_INFOInit2_next(nullptr);
-        info::_RENAME_POTION_USE_INFOInit2_clbk _RENAME_POTION_USE_INFOInit2_user(nullptr);
-        info::_RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_ptr _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_next(nullptr);
-        info::_RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_clbk _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_user(nullptr);
+        static info::_RENAME_POTION_USE_INFOInit2_ptr _RENAME_POTION_USE_INFOInit2_next(nullptr);
+        static info::_RENAME_POTION_USE_INFOInit2_clbk _RENAME_POTION_USE_INFOInit2_user(nullptr);
+        static info::_RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_ptr _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_next(nullptr);
+        static info::_RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_clbk _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_user(nullptr);
         
-        void _RENAME_POTION_USE_INFOInit2_wrapper(struct _RENAME_POTION_USE_INFO* _this)
+        static void _RENAME_POTION_USE_INFOInit2_wrapper(struct _RENAME_POTION_USE_INFO* _this)
         {
            _RENAME_POTION_USE_INFOInit2_user(_this, _RENAME_POTION_USE_INFOInit2_next);
         };
-        void _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_wrapper(struct _RENAME_POTION_USE_INFO* _this)
+        static void _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_wrapper(struct _RENAME_POTION_USE_INFO* _this)
         {
            _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_user(_this, _RENAME_POTION_USE_INFOctor__RENAME_POTION_USE_INFO4_next);
         };
         
-        hook_record _RENAME_POTION_USE_INFO_functions[] = {
+        static hook_record _RENAME_POTION_USE_INFO_functions[] = {
         {   (LPVOID)0x140073dd0L,
             (LPVOID *)&_RENAME_POTION_USE_INFOInit2_user,
             (LPVOID *)&_RENAME_POTION_USE_INFOInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

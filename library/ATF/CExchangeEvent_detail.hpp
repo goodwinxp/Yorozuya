@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CExchangeEventctor_CExchangeEvent2_ptr CExchangeEventctor_CExchangeEvent2_next(nullptr);
-        info::CExchangeEventctor_CExchangeEvent2_clbk CExchangeEventctor_CExchangeEvent2_user(nullptr);
-        info::CExchangeEventChangeData4_ptr CExchangeEventChangeData4_next(nullptr);
-        info::CExchangeEventChangeData4_clbk CExchangeEventChangeData4_user(nullptr);
-        info::CExchangeEventCheckBuddhaEventData6_ptr CExchangeEventCheckBuddhaEventData6_next(nullptr);
-        info::CExchangeEventCheckBuddhaEventData6_clbk CExchangeEventCheckBuddhaEventData6_user(nullptr);
-        info::CExchangeEventDeleteExchangeEventItem8_ptr CExchangeEventDeleteExchangeEventItem8_next(nullptr);
-        info::CExchangeEventDeleteExchangeEventItem8_clbk CExchangeEventDeleteExchangeEventItem8_user(nullptr);
-        info::CExchangeEventDestroy10_ptr CExchangeEventDestroy10_next(nullptr);
-        info::CExchangeEventDestroy10_clbk CExchangeEventDestroy10_user(nullptr);
-        info::CExchangeEventGetEventItemInfo12_ptr CExchangeEventGetEventItemInfo12_next(nullptr);
-        info::CExchangeEventGetEventItemInfo12_clbk CExchangeEventGetEventItemInfo12_user(nullptr);
-        info::CExchangeEventGiveEventItem14_ptr CExchangeEventGiveEventItem14_next(nullptr);
-        info::CExchangeEventGiveEventItem14_clbk CExchangeEventGiveEventItem14_user(nullptr);
-        info::CExchangeEventInitialzie16_ptr CExchangeEventInitialzie16_next(nullptr);
-        info::CExchangeEventInitialzie16_clbk CExchangeEventInitialzie16_user(nullptr);
-        info::CExchangeEventInstance18_ptr CExchangeEventInstance18_next(nullptr);
-        info::CExchangeEventInstance18_clbk CExchangeEventInstance18_user(nullptr);
-        info::CExchangeEventIsDelete20_ptr CExchangeEventIsDelete20_next(nullptr);
-        info::CExchangeEventIsDelete20_clbk CExchangeEventIsDelete20_user(nullptr);
-        info::CExchangeEventIsEnable22_ptr CExchangeEventIsEnable22_next(nullptr);
-        info::CExchangeEventIsEnable22_clbk CExchangeEventIsEnable22_user(nullptr);
-        info::CExchangeEventIsWait24_ptr CExchangeEventIsWait24_next(nullptr);
-        info::CExchangeEventIsWait24_clbk CExchangeEventIsWait24_user(nullptr);
-        info::CExchangeEventLoop26_ptr CExchangeEventLoop26_next(nullptr);
-        info::CExchangeEventLoop26_clbk CExchangeEventLoop26_user(nullptr);
-        info::CExchangeEventReadBuddhaEventInfo28_ptr CExchangeEventReadBuddhaEventInfo28_next(nullptr);
-        info::CExchangeEventReadBuddhaEventInfo28_clbk CExchangeEventReadBuddhaEventInfo28_user(nullptr);
-        info::CExchangeEventdtor_CExchangeEvent33_ptr CExchangeEventdtor_CExchangeEvent33_next(nullptr);
-        info::CExchangeEventdtor_CExchangeEvent33_clbk CExchangeEventdtor_CExchangeEvent33_user(nullptr);
+        static info::CExchangeEventctor_CExchangeEvent2_ptr CExchangeEventctor_CExchangeEvent2_next(nullptr);
+        static info::CExchangeEventctor_CExchangeEvent2_clbk CExchangeEventctor_CExchangeEvent2_user(nullptr);
+        static info::CExchangeEventChangeData4_ptr CExchangeEventChangeData4_next(nullptr);
+        static info::CExchangeEventChangeData4_clbk CExchangeEventChangeData4_user(nullptr);
+        static info::CExchangeEventCheckBuddhaEventData6_ptr CExchangeEventCheckBuddhaEventData6_next(nullptr);
+        static info::CExchangeEventCheckBuddhaEventData6_clbk CExchangeEventCheckBuddhaEventData6_user(nullptr);
+        static info::CExchangeEventDeleteExchangeEventItem8_ptr CExchangeEventDeleteExchangeEventItem8_next(nullptr);
+        static info::CExchangeEventDeleteExchangeEventItem8_clbk CExchangeEventDeleteExchangeEventItem8_user(nullptr);
+        static info::CExchangeEventDestroy10_ptr CExchangeEventDestroy10_next(nullptr);
+        static info::CExchangeEventDestroy10_clbk CExchangeEventDestroy10_user(nullptr);
+        static info::CExchangeEventGetEventItemInfo12_ptr CExchangeEventGetEventItemInfo12_next(nullptr);
+        static info::CExchangeEventGetEventItemInfo12_clbk CExchangeEventGetEventItemInfo12_user(nullptr);
+        static info::CExchangeEventGiveEventItem14_ptr CExchangeEventGiveEventItem14_next(nullptr);
+        static info::CExchangeEventGiveEventItem14_clbk CExchangeEventGiveEventItem14_user(nullptr);
+        static info::CExchangeEventInitialzie16_ptr CExchangeEventInitialzie16_next(nullptr);
+        static info::CExchangeEventInitialzie16_clbk CExchangeEventInitialzie16_user(nullptr);
+        static info::CExchangeEventInstance18_ptr CExchangeEventInstance18_next(nullptr);
+        static info::CExchangeEventInstance18_clbk CExchangeEventInstance18_user(nullptr);
+        static info::CExchangeEventIsDelete20_ptr CExchangeEventIsDelete20_next(nullptr);
+        static info::CExchangeEventIsDelete20_clbk CExchangeEventIsDelete20_user(nullptr);
+        static info::CExchangeEventIsEnable22_ptr CExchangeEventIsEnable22_next(nullptr);
+        static info::CExchangeEventIsEnable22_clbk CExchangeEventIsEnable22_user(nullptr);
+        static info::CExchangeEventIsWait24_ptr CExchangeEventIsWait24_next(nullptr);
+        static info::CExchangeEventIsWait24_clbk CExchangeEventIsWait24_user(nullptr);
+        static info::CExchangeEventLoop26_ptr CExchangeEventLoop26_next(nullptr);
+        static info::CExchangeEventLoop26_clbk CExchangeEventLoop26_user(nullptr);
+        static info::CExchangeEventReadBuddhaEventInfo28_ptr CExchangeEventReadBuddhaEventInfo28_next(nullptr);
+        static info::CExchangeEventReadBuddhaEventInfo28_clbk CExchangeEventReadBuddhaEventInfo28_user(nullptr);
+        static info::CExchangeEventdtor_CExchangeEvent33_ptr CExchangeEventdtor_CExchangeEvent33_next(nullptr);
+        static info::CExchangeEventdtor_CExchangeEvent33_clbk CExchangeEventdtor_CExchangeEvent33_user(nullptr);
         
-        void CExchangeEventctor_CExchangeEvent2_wrapper(struct CExchangeEvent* _this)
+        static void CExchangeEventctor_CExchangeEvent2_wrapper(struct CExchangeEvent* _this)
         {
            CExchangeEventctor_CExchangeEvent2_user(_this, CExchangeEventctor_CExchangeEvent2_next);
         };
-        void CExchangeEventChangeData4_wrapper(struct CExchangeEvent* _this)
+        static void CExchangeEventChangeData4_wrapper(struct CExchangeEvent* _this)
         {
            CExchangeEventChangeData4_user(_this, CExchangeEventChangeData4_next);
         };
-        bool CExchangeEventCheckBuddhaEventData6_wrapper(struct CExchangeEvent* _this, bool* pbDelete)
+        static bool CExchangeEventCheckBuddhaEventData6_wrapper(struct CExchangeEvent* _this, bool* pbDelete)
         {
            return CExchangeEventCheckBuddhaEventData6_user(_this, pbDelete, CExchangeEventCheckBuddhaEventData6_next);
         };
-        void CExchangeEventDeleteExchangeEventItem8_wrapper(struct CExchangeEvent* _this, struct CPlayer* pOne)
+        static void CExchangeEventDeleteExchangeEventItem8_wrapper(struct CExchangeEvent* _this, struct CPlayer* pOne)
         {
            CExchangeEventDeleteExchangeEventItem8_user(_this, pOne, CExchangeEventDeleteExchangeEventItem8_next);
         };
-        void CExchangeEventDestroy10_wrapper()
+        static void CExchangeEventDestroy10_wrapper()
         {
            CExchangeEventDestroy10_user(CExchangeEventDestroy10_next);
         };
-        struct EventItemInfo* CExchangeEventGetEventItemInfo12_wrapper(struct CExchangeEvent* _this, int nInfoType)
+        static struct EventItemInfo* CExchangeEventGetEventItemInfo12_wrapper(struct CExchangeEvent* _this, int nInfoType)
         {
            return CExchangeEventGetEventItemInfo12_user(_this, nInfoType, CExchangeEventGetEventItemInfo12_next);
         };
-        void CExchangeEventGiveEventItem14_wrapper(struct CExchangeEvent* _this, struct CPlayer* pOne)
+        static void CExchangeEventGiveEventItem14_wrapper(struct CExchangeEvent* _this, struct CPlayer* pOne)
         {
            CExchangeEventGiveEventItem14_user(_this, pOne, CExchangeEventGiveEventItem14_next);
         };
-        bool CExchangeEventInitialzie16_wrapper(struct CExchangeEvent* _this)
+        static bool CExchangeEventInitialzie16_wrapper(struct CExchangeEvent* _this)
         {
            return CExchangeEventInitialzie16_user(_this, CExchangeEventInitialzie16_next);
         };
-        struct CExchangeEvent* CExchangeEventInstance18_wrapper()
+        static struct CExchangeEvent* CExchangeEventInstance18_wrapper()
         {
            return CExchangeEventInstance18_user(CExchangeEventInstance18_next);
         };
-        bool CExchangeEventIsDelete20_wrapper(struct CExchangeEvent* _this)
+        static bool CExchangeEventIsDelete20_wrapper(struct CExchangeEvent* _this)
         {
            return CExchangeEventIsDelete20_user(_this, CExchangeEventIsDelete20_next);
         };
-        bool CExchangeEventIsEnable22_wrapper(struct CExchangeEvent* _this)
+        static bool CExchangeEventIsEnable22_wrapper(struct CExchangeEvent* _this)
         {
            return CExchangeEventIsEnable22_user(_this, CExchangeEventIsEnable22_next);
         };
-        bool CExchangeEventIsWait24_wrapper(struct CExchangeEvent* _this)
+        static bool CExchangeEventIsWait24_wrapper(struct CExchangeEvent* _this)
         {
            return CExchangeEventIsWait24_user(_this, CExchangeEventIsWait24_next);
         };
-        void CExchangeEventLoop26_wrapper(struct CExchangeEvent* _this)
+        static void CExchangeEventLoop26_wrapper(struct CExchangeEvent* _this)
         {
            CExchangeEventLoop26_user(_this, CExchangeEventLoop26_next);
         };
-        void CExchangeEventReadBuddhaEventInfo28_wrapper(struct CExchangeEvent* _this)
+        static void CExchangeEventReadBuddhaEventInfo28_wrapper(struct CExchangeEvent* _this)
         {
            CExchangeEventReadBuddhaEventInfo28_user(_this, CExchangeEventReadBuddhaEventInfo28_next);
         };
-        void CExchangeEventdtor_CExchangeEvent33_wrapper(struct CExchangeEvent* _this)
+        static void CExchangeEventdtor_CExchangeEvent33_wrapper(struct CExchangeEvent* _this)
         {
            CExchangeEventdtor_CExchangeEvent33_user(_this, CExchangeEventdtor_CExchangeEvent33_next);
         };
         
-        hook_record CExchangeEvent_functions[] = {
+        static hook_record CExchangeEvent_functions[] = {
         {   (LPVOID)0x140329780L,
             (LPVOID *)&CExchangeEventctor_CExchangeEvent2_user,
             (LPVOID *)&CExchangeEventctor_CExchangeEvent2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

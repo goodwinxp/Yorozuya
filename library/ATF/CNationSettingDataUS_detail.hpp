@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataUSctor_CNationSettingDataUS2_ptr CNationSettingDataUSctor_CNationSettingDataUS2_next(nullptr);
-        info::CNationSettingDataUSctor_CNationSettingDataUS2_clbk CNationSettingDataUSctor_CNationSettingDataUS2_user(nullptr);
-        info::CNationSettingDataUSCreateWorker4_ptr CNationSettingDataUSCreateWorker4_next(nullptr);
-        info::CNationSettingDataUSCreateWorker4_clbk CNationSettingDataUSCreateWorker4_user(nullptr);
-        info::CNationSettingDataUSGetCashItemPrice6_ptr CNationSettingDataUSGetCashItemPrice6_next(nullptr);
-        info::CNationSettingDataUSGetCashItemPrice6_clbk CNationSettingDataUSGetCashItemPrice6_user(nullptr);
-        info::CNationSettingDataUSGetItemName8_ptr CNationSettingDataUSGetItemName8_next(nullptr);
-        info::CNationSettingDataUSGetItemName8_clbk CNationSettingDataUSGetItemName8_user(nullptr);
-        info::CNationSettingDataUSInit10_ptr CNationSettingDataUSInit10_next(nullptr);
-        info::CNationSettingDataUSInit10_clbk CNationSettingDataUSInit10_user(nullptr);
-        info::CNationSettingDataUSReadSystemPass12_ptr CNationSettingDataUSReadSystemPass12_next(nullptr);
-        info::CNationSettingDataUSReadSystemPass12_clbk CNationSettingDataUSReadSystemPass12_user(nullptr);
+        static info::CNationSettingDataUSctor_CNationSettingDataUS2_ptr CNationSettingDataUSctor_CNationSettingDataUS2_next(nullptr);
+        static info::CNationSettingDataUSctor_CNationSettingDataUS2_clbk CNationSettingDataUSctor_CNationSettingDataUS2_user(nullptr);
+        static info::CNationSettingDataUSCreateWorker4_ptr CNationSettingDataUSCreateWorker4_next(nullptr);
+        static info::CNationSettingDataUSCreateWorker4_clbk CNationSettingDataUSCreateWorker4_user(nullptr);
+        static info::CNationSettingDataUSGetCashItemPrice6_ptr CNationSettingDataUSGetCashItemPrice6_next(nullptr);
+        static info::CNationSettingDataUSGetCashItemPrice6_clbk CNationSettingDataUSGetCashItemPrice6_user(nullptr);
+        static info::CNationSettingDataUSGetItemName8_ptr CNationSettingDataUSGetItemName8_next(nullptr);
+        static info::CNationSettingDataUSGetItemName8_clbk CNationSettingDataUSGetItemName8_user(nullptr);
+        static info::CNationSettingDataUSInit10_ptr CNationSettingDataUSInit10_next(nullptr);
+        static info::CNationSettingDataUSInit10_clbk CNationSettingDataUSInit10_user(nullptr);
+        static info::CNationSettingDataUSReadSystemPass12_ptr CNationSettingDataUSReadSystemPass12_next(nullptr);
+        static info::CNationSettingDataUSReadSystemPass12_clbk CNationSettingDataUSReadSystemPass12_user(nullptr);
         
-        void CNationSettingDataUSctor_CNationSettingDataUS2_wrapper(struct CNationSettingDataUS* _this)
+        static void CNationSettingDataUSctor_CNationSettingDataUS2_wrapper(struct CNationSettingDataUS* _this)
         {
            CNationSettingDataUSctor_CNationSettingDataUS2_user(_this, CNationSettingDataUSctor_CNationSettingDataUS2_next);
         };
-        struct CashDbWorker* CNationSettingDataUSCreateWorker4_wrapper(struct CNationSettingDataUS* _this)
+        static struct CashDbWorker* CNationSettingDataUSCreateWorker4_wrapper(struct CNationSettingDataUS* _this)
         {
            return CNationSettingDataUSCreateWorker4_user(_this, CNationSettingDataUSCreateWorker4_next);
         };
-        int CNationSettingDataUSGetCashItemPrice6_wrapper(struct CNationSettingDataUS* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataUSGetCashItemPrice6_wrapper(struct CNationSettingDataUS* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataUSGetCashItemPrice6_user(_this, pFld, CNationSettingDataUSGetCashItemPrice6_next);
         };
-        char* CNationSettingDataUSGetItemName8_wrapper(struct CNationSettingDataUS* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataUSGetItemName8_wrapper(struct CNationSettingDataUS* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataUSGetItemName8_user(_this, pFld, CNationSettingDataUSGetItemName8_next);
         };
-        int CNationSettingDataUSInit10_wrapper(struct CNationSettingDataUS* _this)
+        static int CNationSettingDataUSInit10_wrapper(struct CNationSettingDataUS* _this)
         {
            return CNationSettingDataUSInit10_user(_this, CNationSettingDataUSInit10_next);
         };
-        bool CNationSettingDataUSReadSystemPass12_wrapper(struct CNationSettingDataUS* _this)
+        static bool CNationSettingDataUSReadSystemPass12_wrapper(struct CNationSettingDataUS* _this)
         {
            return CNationSettingDataUSReadSystemPass12_user(_this, CNationSettingDataUSReadSystemPass12_next);
         };
         
-        hook_record CNationSettingDataUS_functions[] = {
+        static hook_record CNationSettingDataUS_functions[] = {
         {   (LPVOID)0x1402311d0L,
             (LPVOID *)&CNationSettingDataUSctor_CNationSettingDataUS2_user,
             (LPVOID *)&CNationSettingDataUSctor_CNationSettingDataUS2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

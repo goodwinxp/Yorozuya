@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_ptr CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_next(nullptr);
-        info::CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_clbk CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_user(nullptr);
-        info::CMoveMapLimitInfoPortalInit4_ptr CMoveMapLimitInfoPortalInit4_next(nullptr);
-        info::CMoveMapLimitInfoPortalInit4_clbk CMoveMapLimitInfoPortalInit4_user(nullptr);
-        info::CMoveMapLimitInfoPortalLoad6_ptr CMoveMapLimitInfoPortalLoad6_next(nullptr);
-        info::CMoveMapLimitInfoPortalLoad6_clbk CMoveMapLimitInfoPortalLoad6_user(nullptr);
-        info::CMoveMapLimitInfoPortalLoadINI8_ptr CMoveMapLimitInfoPortalLoadINI8_next(nullptr);
-        info::CMoveMapLimitInfoPortalLoadINI8_clbk CMoveMapLimitInfoPortalLoadINI8_user(nullptr);
-        info::CMoveMapLimitInfoPortalLoop10_ptr CMoveMapLimitInfoPortalLoop10_next(nullptr);
-        info::CMoveMapLimitInfoPortalLoop10_clbk CMoveMapLimitInfoPortalLoop10_user(nullptr);
-        info::CMoveMapLimitInfoPortalProcForceMoveHQ12_ptr CMoveMapLimitInfoPortalProcForceMoveHQ12_next(nullptr);
-        info::CMoveMapLimitInfoPortalProcForceMoveHQ12_clbk CMoveMapLimitInfoPortalProcForceMoveHQ12_user(nullptr);
-        info::CMoveMapLimitInfoPortalProcGotoLimitZone14_ptr CMoveMapLimitInfoPortalProcGotoLimitZone14_next(nullptr);
-        info::CMoveMapLimitInfoPortalProcGotoLimitZone14_clbk CMoveMapLimitInfoPortalProcGotoLimitZone14_user(nullptr);
-        info::CMoveMapLimitInfoPortalProcUseMoveScroll16_ptr CMoveMapLimitInfoPortalProcUseMoveScroll16_next(nullptr);
-        info::CMoveMapLimitInfoPortalProcUseMoveScroll16_clbk CMoveMapLimitInfoPortalProcUseMoveScroll16_user(nullptr);
-        info::CMoveMapLimitInfoPortalRequest18_ptr CMoveMapLimitInfoPortalRequest18_next(nullptr);
-        info::CMoveMapLimitInfoPortalRequest18_clbk CMoveMapLimitInfoPortalRequest18_user(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcForceMoveHQ20_ptr CMoveMapLimitInfoPortalSubProcForceMoveHQ20_next(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcForceMoveHQ20_clbk CMoveMapLimitInfoPortalSubProcForceMoveHQ20_user(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcGotoLimitZone22_ptr CMoveMapLimitInfoPortalSubProcGotoLimitZone22_next(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcGotoLimitZone22_clbk CMoveMapLimitInfoPortalSubProcGotoLimitZone22_user(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_ptr CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_next(nullptr);
-        info::CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_clbk CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_user(nullptr);
-        info::CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_ptr CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_next(nullptr);
-        info::CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_clbk CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_user(nullptr);
+        static info::CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_ptr CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_next(nullptr);
+        static info::CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_clbk CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_user(nullptr);
+        static info::CMoveMapLimitInfoPortalInit4_ptr CMoveMapLimitInfoPortalInit4_next(nullptr);
+        static info::CMoveMapLimitInfoPortalInit4_clbk CMoveMapLimitInfoPortalInit4_user(nullptr);
+        static info::CMoveMapLimitInfoPortalLoad6_ptr CMoveMapLimitInfoPortalLoad6_next(nullptr);
+        static info::CMoveMapLimitInfoPortalLoad6_clbk CMoveMapLimitInfoPortalLoad6_user(nullptr);
+        static info::CMoveMapLimitInfoPortalLoadINI8_ptr CMoveMapLimitInfoPortalLoadINI8_next(nullptr);
+        static info::CMoveMapLimitInfoPortalLoadINI8_clbk CMoveMapLimitInfoPortalLoadINI8_user(nullptr);
+        static info::CMoveMapLimitInfoPortalLoop10_ptr CMoveMapLimitInfoPortalLoop10_next(nullptr);
+        static info::CMoveMapLimitInfoPortalLoop10_clbk CMoveMapLimitInfoPortalLoop10_user(nullptr);
+        static info::CMoveMapLimitInfoPortalProcForceMoveHQ12_ptr CMoveMapLimitInfoPortalProcForceMoveHQ12_next(nullptr);
+        static info::CMoveMapLimitInfoPortalProcForceMoveHQ12_clbk CMoveMapLimitInfoPortalProcForceMoveHQ12_user(nullptr);
+        static info::CMoveMapLimitInfoPortalProcGotoLimitZone14_ptr CMoveMapLimitInfoPortalProcGotoLimitZone14_next(nullptr);
+        static info::CMoveMapLimitInfoPortalProcGotoLimitZone14_clbk CMoveMapLimitInfoPortalProcGotoLimitZone14_user(nullptr);
+        static info::CMoveMapLimitInfoPortalProcUseMoveScroll16_ptr CMoveMapLimitInfoPortalProcUseMoveScroll16_next(nullptr);
+        static info::CMoveMapLimitInfoPortalProcUseMoveScroll16_clbk CMoveMapLimitInfoPortalProcUseMoveScroll16_user(nullptr);
+        static info::CMoveMapLimitInfoPortalRequest18_ptr CMoveMapLimitInfoPortalRequest18_next(nullptr);
+        static info::CMoveMapLimitInfoPortalRequest18_clbk CMoveMapLimitInfoPortalRequest18_user(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcForceMoveHQ20_ptr CMoveMapLimitInfoPortalSubProcForceMoveHQ20_next(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcForceMoveHQ20_clbk CMoveMapLimitInfoPortalSubProcForceMoveHQ20_user(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcGotoLimitZone22_ptr CMoveMapLimitInfoPortalSubProcGotoLimitZone22_next(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcGotoLimitZone22_clbk CMoveMapLimitInfoPortalSubProcGotoLimitZone22_user(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_ptr CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_next(nullptr);
+        static info::CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_clbk CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_user(nullptr);
+        static info::CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_ptr CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_next(nullptr);
+        static info::CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_clbk CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_user(nullptr);
         
-        void CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_wrapper(struct CMoveMapLimitInfoPortal* _this, unsigned int uiInx, int iType)
+        static void CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_wrapper(struct CMoveMapLimitInfoPortal* _this, unsigned int uiInx, int iType)
         {
            CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_user(_this, uiInx, iType, CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_next);
         };
-        bool CMoveMapLimitInfoPortalInit4_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static bool CMoveMapLimitInfoPortalInit4_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            return CMoveMapLimitInfoPortalInit4_user(_this, CMoveMapLimitInfoPortalInit4_next);
         };
-        void CMoveMapLimitInfoPortalLoad6_wrapper(struct CMoveMapLimitInfoPortal* _this, struct CPlayer* pkPlayer, struct CMoveMapLimitRightInfo* pkRight)
+        static void CMoveMapLimitInfoPortalLoad6_wrapper(struct CMoveMapLimitInfoPortal* _this, struct CPlayer* pkPlayer, struct CMoveMapLimitRightInfo* pkRight)
         {
            CMoveMapLimitInfoPortalLoad6_user(_this, pkPlayer, pkRight, CMoveMapLimitInfoPortalLoad6_next);
         };
-        bool CMoveMapLimitInfoPortalLoadINI8_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static bool CMoveMapLimitInfoPortalLoadINI8_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            return CMoveMapLimitInfoPortalLoadINI8_user(_this, CMoveMapLimitInfoPortalLoadINI8_next);
         };
-        void CMoveMapLimitInfoPortalLoop10_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static void CMoveMapLimitInfoPortalLoop10_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            CMoveMapLimitInfoPortalLoop10_user(_this, CMoveMapLimitInfoPortalLoop10_next);
         };
-        char CMoveMapLimitInfoPortalProcForceMoveHQ12_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
+        static char CMoveMapLimitInfoPortalProcForceMoveHQ12_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
         {
            return CMoveMapLimitInfoPortalProcForceMoveHQ12_user(_this, iUserInx, pRequest, pkRight, CMoveMapLimitInfoPortalProcForceMoveHQ12_next);
         };
-        char CMoveMapLimitInfoPortalProcGotoLimitZone14_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
+        static char CMoveMapLimitInfoPortalProcGotoLimitZone14_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
         {
            return CMoveMapLimitInfoPortalProcGotoLimitZone14_user(_this, iUserInx, pRequest, pkRight, CMoveMapLimitInfoPortalProcGotoLimitZone14_next);
         };
-        char CMoveMapLimitInfoPortalProcUseMoveScroll16_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
+        static char CMoveMapLimitInfoPortalProcUseMoveScroll16_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
         {
            return CMoveMapLimitInfoPortalProcUseMoveScroll16_user(_this, iUserInx, pRequest, pkRight, CMoveMapLimitInfoPortalProcUseMoveScroll16_next);
         };
-        char CMoveMapLimitInfoPortalRequest18_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, int iRequetType, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
+        static char CMoveMapLimitInfoPortalRequest18_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, int iRequetType, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
         {
            return CMoveMapLimitInfoPortalRequest18_user(_this, iUserInx, iRequetType, pRequest, pkRight, CMoveMapLimitInfoPortalRequest18_next);
         };
-        void CMoveMapLimitInfoPortalSubProcForceMoveHQ20_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static void CMoveMapLimitInfoPortalSubProcForceMoveHQ20_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            CMoveMapLimitInfoPortalSubProcForceMoveHQ20_user(_this, CMoveMapLimitInfoPortalSubProcForceMoveHQ20_next);
         };
-        char CMoveMapLimitInfoPortalSubProcGotoLimitZone22_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
+        static char CMoveMapLimitInfoPortalSubProcGotoLimitZone22_wrapper(struct CMoveMapLimitInfoPortal* _this, int iUserInx, char* pRequest, struct CMoveMapLimitRightInfo* pkRight)
         {
            return CMoveMapLimitInfoPortalSubProcGotoLimitZone22_user(_this, iUserInx, pRequest, pkRight, CMoveMapLimitInfoPortalSubProcGotoLimitZone22_next);
         };
-        void CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static void CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_user(_this, CMoveMapLimitInfoPortalSubProcNotifyForceMoveHQ24_next);
         };
-        void CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_wrapper(struct CMoveMapLimitInfoPortal* _this)
+        static void CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_wrapper(struct CMoveMapLimitInfoPortal* _this)
         {
            CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_user(_this, CMoveMapLimitInfoPortaldtor_CMoveMapLimitInfoPortal26_next);
         };
         
-        hook_record CMoveMapLimitInfoPortal_functions[] = {
+        static hook_record CMoveMapLimitInfoPortal_functions[] = {
         {   (LPVOID)0x1403a3ee0L,
             (LPVOID *)&CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_user,
             (LPVOID *)&CMoveMapLimitInfoPortalctor_CMoveMapLimitInfoPortal2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

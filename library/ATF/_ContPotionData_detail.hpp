@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ContPotionDataGetEffectIndex2_ptr _ContPotionDataGetEffectIndex2_next(nullptr);
-        info::_ContPotionDataGetEffectIndex2_clbk _ContPotionDataGetEffectIndex2_user(nullptr);
-        info::_ContPotionDataInit4_ptr _ContPotionDataInit4_next(nullptr);
-        info::_ContPotionDataInit4_clbk _ContPotionDataInit4_user(nullptr);
-        info::_ContPotionDataIsLive6_ptr _ContPotionDataIsLive6_next(nullptr);
-        info::_ContPotionDataIsLive6_clbk _ContPotionDataIsLive6_user(nullptr);
-        info::_ContPotionDataSet8_ptr _ContPotionDataSet8_next(nullptr);
-        info::_ContPotionDataSet8_clbk _ContPotionDataSet8_user(nullptr);
-        info::_ContPotionDatactor__ContPotionData10_ptr _ContPotionDatactor__ContPotionData10_next(nullptr);
-        info::_ContPotionDatactor__ContPotionData10_clbk _ContPotionDatactor__ContPotionData10_user(nullptr);
+        static info::_ContPotionDataGetEffectIndex2_ptr _ContPotionDataGetEffectIndex2_next(nullptr);
+        static info::_ContPotionDataGetEffectIndex2_clbk _ContPotionDataGetEffectIndex2_user(nullptr);
+        static info::_ContPotionDataInit4_ptr _ContPotionDataInit4_next(nullptr);
+        static info::_ContPotionDataInit4_clbk _ContPotionDataInit4_user(nullptr);
+        static info::_ContPotionDataIsLive6_ptr _ContPotionDataIsLive6_next(nullptr);
+        static info::_ContPotionDataIsLive6_clbk _ContPotionDataIsLive6_user(nullptr);
+        static info::_ContPotionDataSet8_ptr _ContPotionDataSet8_next(nullptr);
+        static info::_ContPotionDataSet8_clbk _ContPotionDataSet8_user(nullptr);
+        static info::_ContPotionDatactor__ContPotionData10_ptr _ContPotionDatactor__ContPotionData10_next(nullptr);
+        static info::_ContPotionDatactor__ContPotionData10_clbk _ContPotionDatactor__ContPotionData10_user(nullptr);
         
-        unsigned int _ContPotionDataGetEffectIndex2_wrapper(struct _ContPotionData* _this)
+        static unsigned int _ContPotionDataGetEffectIndex2_wrapper(struct _ContPotionData* _this)
         {
            return _ContPotionDataGetEffectIndex2_user(_this, _ContPotionDataGetEffectIndex2_next);
         };
-        void _ContPotionDataInit4_wrapper(struct _ContPotionData* _this)
+        static void _ContPotionDataInit4_wrapper(struct _ContPotionData* _this)
         {
            _ContPotionDataInit4_user(_this, _ContPotionDataInit4_next);
         };
-        bool _ContPotionDataIsLive6_wrapper(struct _ContPotionData* _this)
+        static bool _ContPotionDataIsLive6_wrapper(struct _ContPotionData* _this)
         {
            return _ContPotionDataIsLive6_user(_this, _ContPotionDataIsLive6_next);
         };
-        void _ContPotionDataSet8_wrapper(struct _ContPotionData* _this, unsigned int dwPotionIndex, unsigned int dwStartTime, unsigned int wDurCapSec)
+        static void _ContPotionDataSet8_wrapper(struct _ContPotionData* _this, unsigned int dwPotionIndex, unsigned int dwStartTime, unsigned int wDurCapSec)
         {
            _ContPotionDataSet8_user(_this, dwPotionIndex, dwStartTime, wDurCapSec, _ContPotionDataSet8_next);
         };
-        void _ContPotionDatactor__ContPotionData10_wrapper(struct _ContPotionData* _this)
+        static void _ContPotionDatactor__ContPotionData10_wrapper(struct _ContPotionData* _this)
         {
            _ContPotionDatactor__ContPotionData10_user(_this, _ContPotionDatactor__ContPotionData10_next);
         };
         
-        hook_record _ContPotionData_functions[] = {
+        static hook_record _ContPotionData_functions[] = {
         {   (LPVOID)0x1403a1010L,
             (LPVOID *)&_ContPotionDataGetEffectIndex2_user,
             (LPVOID *)&_ContPotionDataGetEffectIndex2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

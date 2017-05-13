@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetTimerBeginTimer2_ptr CNetTimerBeginTimer2_next(nullptr);
-        info::CNetTimerBeginTimer2_clbk CNetTimerBeginTimer2_user(nullptr);
-        info::CNetTimerctor_CNetTimer4_ptr CNetTimerctor_CNetTimer4_next(nullptr);
-        info::CNetTimerctor_CNetTimer4_clbk CNetTimerctor_CNetTimer4_user(nullptr);
-        info::CNetTimerCountingTimer6_ptr CNetTimerCountingTimer6_next(nullptr);
-        info::CNetTimerCountingTimer6_clbk CNetTimerCountingTimer6_user(nullptr);
+        static info::CNetTimerBeginTimer2_ptr CNetTimerBeginTimer2_next(nullptr);
+        static info::CNetTimerBeginTimer2_clbk CNetTimerBeginTimer2_user(nullptr);
+        static info::CNetTimerctor_CNetTimer4_ptr CNetTimerctor_CNetTimer4_next(nullptr);
+        static info::CNetTimerctor_CNetTimer4_clbk CNetTimerctor_CNetTimer4_user(nullptr);
+        static info::CNetTimerCountingTimer6_ptr CNetTimerCountingTimer6_next(nullptr);
+        static info::CNetTimerCountingTimer6_clbk CNetTimerCountingTimer6_user(nullptr);
         
-        void CNetTimerBeginTimer2_wrapper(struct CNetTimer* _this, unsigned int dwTerm)
+        static void CNetTimerBeginTimer2_wrapper(struct CNetTimer* _this, unsigned int dwTerm)
         {
            CNetTimerBeginTimer2_user(_this, dwTerm, CNetTimerBeginTimer2_next);
         };
-        void CNetTimerctor_CNetTimer4_wrapper(struct CNetTimer* _this)
+        static void CNetTimerctor_CNetTimer4_wrapper(struct CNetTimer* _this)
         {
            CNetTimerctor_CNetTimer4_user(_this, CNetTimerctor_CNetTimer4_next);
         };
-        bool CNetTimerCountingTimer6_wrapper(struct CNetTimer* _this)
+        static bool CNetTimerCountingTimer6_wrapper(struct CNetTimer* _this)
         {
            return CNetTimerCountingTimer6_user(_this, CNetTimerCountingTimer6_next);
         };
         
-        hook_record CNetTimer_functions[] = {
+        static hook_record CNetTimer_functions[] = {
         {   (LPVOID)0x140304b40L,
             (LPVOID *)&CNetTimerBeginTimer2_user,
             (LPVOID *)&CNetTimerBeginTimer2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

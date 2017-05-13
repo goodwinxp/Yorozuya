@@ -8,53 +8,53 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaScriptctor_CLuaScript2_ptr CLuaScriptctor_CLuaScript2_next(nullptr);
-        info::CLuaScriptctor_CLuaScript2_clbk CLuaScriptctor_CLuaScript2_user(nullptr);
-        info::CLuaScriptGetLuaState4_ptr CLuaScriptGetLuaState4_next(nullptr);
-        info::CLuaScriptGetLuaState4_clbk CLuaScriptGetLuaState4_user(nullptr);
-        info::CLuaScriptGetName6_ptr CLuaScriptGetName6_next(nullptr);
-        info::CLuaScriptGetName6_clbk CLuaScriptGetName6_user(nullptr);
-        info::CLuaScriptRunCommand8_ptr CLuaScriptRunCommand8_next(nullptr);
-        info::CLuaScriptRunCommand8_clbk CLuaScriptRunCommand8_user(nullptr);
-        info::CLuaScriptSetName10_ptr CLuaScriptSetName10_next(nullptr);
-        info::CLuaScriptSetName10_clbk CLuaScriptSetName10_user(nullptr);
-        info::CLuaScriptdtor_CLuaScript14_ptr CLuaScriptdtor_CLuaScript14_next(nullptr);
-        info::CLuaScriptdtor_CLuaScript14_clbk CLuaScriptdtor_CLuaScript14_user(nullptr);
+        static info::CLuaScriptctor_CLuaScript2_ptr CLuaScriptctor_CLuaScript2_next(nullptr);
+        static info::CLuaScriptctor_CLuaScript2_clbk CLuaScriptctor_CLuaScript2_user(nullptr);
+        static info::CLuaScriptGetLuaState4_ptr CLuaScriptGetLuaState4_next(nullptr);
+        static info::CLuaScriptGetLuaState4_clbk CLuaScriptGetLuaState4_user(nullptr);
+        static info::CLuaScriptGetName6_ptr CLuaScriptGetName6_next(nullptr);
+        static info::CLuaScriptGetName6_clbk CLuaScriptGetName6_user(nullptr);
+        static info::CLuaScriptRunCommand8_ptr CLuaScriptRunCommand8_next(nullptr);
+        static info::CLuaScriptRunCommand8_clbk CLuaScriptRunCommand8_user(nullptr);
+        static info::CLuaScriptSetName10_ptr CLuaScriptSetName10_next(nullptr);
+        static info::CLuaScriptSetName10_clbk CLuaScriptSetName10_user(nullptr);
+        static info::CLuaScriptdtor_CLuaScript14_ptr CLuaScriptdtor_CLuaScript14_next(nullptr);
+        static info::CLuaScriptdtor_CLuaScript14_clbk CLuaScriptdtor_CLuaScript14_user(nullptr);
         
-        info::CLuaScript___Statector__State2_ptr CLuaScript___Statector__State2_next(nullptr);
-        info::CLuaScript___Statector__State2_clbk CLuaScript___Statector__State2_user(nullptr);
+        static info::CLuaScript___Statector__State2_ptr CLuaScript___Statector__State2_next(nullptr);
+        static info::CLuaScript___Statector__State2_clbk CLuaScript___Statector__State2_user(nullptr);
         
-        void CLuaScriptctor_CLuaScript2_wrapper(struct CLuaScript* _this)
+        static void CLuaScriptctor_CLuaScript2_wrapper(struct CLuaScript* _this)
         {
            CLuaScriptctor_CLuaScript2_user(_this, CLuaScriptctor_CLuaScript2_next);
         };
-        lua_State* CLuaScriptGetLuaState4_wrapper(struct CLuaScript* _this)
+        static lua_State* CLuaScriptGetLuaState4_wrapper(struct CLuaScript* _this)
         {
            return CLuaScriptGetLuaState4_user(_this, CLuaScriptGetLuaState4_next);
         };
-        char* CLuaScriptGetName6_wrapper(struct CLuaScript* _this)
+        static char* CLuaScriptGetName6_wrapper(struct CLuaScript* _this)
         {
            return CLuaScriptGetName6_user(_this, CLuaScriptGetName6_next);
         };
-        bool CLuaScriptRunCommand8_wrapper(struct CLuaScript* _this, struct CLuaCommand* pCommand)
+        static bool CLuaScriptRunCommand8_wrapper(struct CLuaScript* _this, struct CLuaCommand* pCommand)
         {
            return CLuaScriptRunCommand8_user(_this, pCommand, CLuaScriptRunCommand8_next);
         };
-        void CLuaScriptSetName10_wrapper(struct CLuaScript* _this, char* strName)
+        static void CLuaScriptSetName10_wrapper(struct CLuaScript* _this, char* strName)
         {
            CLuaScriptSetName10_user(_this, strName, CLuaScriptSetName10_next);
         };
-        void CLuaScriptdtor_CLuaScript14_wrapper(struct CLuaScript* _this)
+        static void CLuaScriptdtor_CLuaScript14_wrapper(struct CLuaScript* _this)
         {
            CLuaScriptdtor_CLuaScript14_user(_this, CLuaScriptdtor_CLuaScript14_next);
         };
         
-        void CLuaScript___Statector__State2_wrapper(struct CLuaScript::_State* _this)
+        static void CLuaScript___Statector__State2_wrapper(struct CLuaScript::_State* _this)
         {
            CLuaScript___Statector__State2_user(_this, CLuaScript___Statector__State2_next);
         };
         
-        hook_record CLuaScript_functions[] = {
+        static hook_record CLuaScript_functions[] = {
         {   (LPVOID)0x140401ed0L,
             (LPVOID *)&CLuaScriptctor_CLuaScript2_user,
             (LPVOID *)&CLuaScriptctor_CLuaScript2_next,
@@ -94,5 +94,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

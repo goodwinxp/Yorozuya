@@ -8,195 +8,195 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSpritector_CSprite1_ptr CSpritector_CSprite1_next(nullptr);
-        info::CSpritector_CSprite1_clbk CSpritector_CSprite1_user(nullptr);
-        info::CSpriteDrawSprite2_ptr CSpriteDrawSprite2_next(nullptr);
-        info::CSpriteDrawSprite2_clbk CSpriteDrawSprite2_user(nullptr);
-        info::CSpriteDrawSprite3D3_ptr CSpriteDrawSprite3D3_next(nullptr);
-        info::CSpriteDrawSprite3D3_clbk CSpriteDrawSprite3D3_user(nullptr);
-        info::CSpriteDrawSpriteRot4_ptr CSpriteDrawSpriteRot4_next(nullptr);
-        info::CSpriteDrawSpriteRot4_clbk CSpriteDrawSpriteRot4_user(nullptr);
-        info::CSpriteDrawSpriteRot3D5_ptr CSpriteDrawSpriteRot3D5_next(nullptr);
-        info::CSpriteDrawSpriteRot3D5_clbk CSpriteDrawSpriteRot3D5_user(nullptr);
-        info::CSpriteDrawSpriteRotUV6_ptr CSpriteDrawSpriteRotUV6_next(nullptr);
-        info::CSpriteDrawSpriteRotUV6_clbk CSpriteDrawSpriteRotUV6_user(nullptr);
-        info::CSpriteDrawSpriteRotUV3D7_ptr CSpriteDrawSpriteRotUV3D7_next(nullptr);
-        info::CSpriteDrawSpriteRotUV3D7_clbk CSpriteDrawSpriteRotUV3D7_user(nullptr);
-        info::CSpriteDrawSpriteUV8_ptr CSpriteDrawSpriteUV8_next(nullptr);
-        info::CSpriteDrawSpriteUV8_clbk CSpriteDrawSpriteUV8_user(nullptr);
-        info::CSpriteDrawSpriteUV3D9_ptr CSpriteDrawSpriteUV3D9_next(nullptr);
-        info::CSpriteDrawSpriteUV3D9_clbk CSpriteDrawSpriteUV3D9_user(nullptr);
-        info::CSpriteDrawSpriteVertex10_ptr CSpriteDrawSpriteVertex10_next(nullptr);
-        info::CSpriteDrawSpriteVertex10_clbk CSpriteDrawSpriteVertex10_user(nullptr);
-        info::CSpriteGetD3D8TexPtr11_ptr CSpriteGetD3D8TexPtr11_next(nullptr);
-        info::CSpriteGetD3D8TexPtr11_clbk CSpriteGetD3D8TexPtr11_user(nullptr);
-        info::CSpriteGetFileName12_ptr CSpriteGetFileName12_next(nullptr);
-        info::CSpriteGetFileName12_clbk CSpriteGetFileName12_user(nullptr);
-        info::CSpriteGetMaxActions13_ptr CSpriteGetMaxActions13_next(nullptr);
-        info::CSpriteGetMaxActions13_clbk CSpriteGetMaxActions13_user(nullptr);
-        info::CSpriteGetMaxFrames14_ptr CSpriteGetMaxFrames14_next(nullptr);
-        info::CSpriteGetMaxFrames14_clbk CSpriteGetMaxFrames14_user(nullptr);
-        info::CSpriteGetNowActions15_ptr CSpriteGetNowActions15_next(nullptr);
-        info::CSpriteGetNowActions15_clbk CSpriteGetNowActions15_user(nullptr);
-        info::CSpriteGetNowFrames16_ptr CSpriteGetNowFrames16_next(nullptr);
-        info::CSpriteGetNowFrames16_clbk CSpriteGetNowFrames16_user(nullptr);
-        info::CSpriteGetSpriteOrgXL17_ptr CSpriteGetSpriteOrgXL17_next(nullptr);
-        info::CSpriteGetSpriteOrgXL17_clbk CSpriteGetSpriteOrgXL17_user(nullptr);
-        info::CSpriteGetSpriteOrgYL18_ptr CSpriteGetSpriteOrgYL18_next(nullptr);
-        info::CSpriteGetSpriteOrgYL18_clbk CSpriteGetSpriteOrgYL18_user(nullptr);
-        info::CSpriteGetSpriteXL19_ptr CSpriteGetSpriteXL19_next(nullptr);
-        info::CSpriteGetSpriteXL19_clbk CSpriteGetSpriteXL19_user(nullptr);
-        info::CSpriteGetSpriteYL20_ptr CSpriteGetSpriteYL20_next(nullptr);
-        info::CSpriteGetSpriteYL20_clbk CSpriteGetSpriteYL20_user(nullptr);
-        info::CSpriteInitPageSprite21_ptr CSpriteInitPageSprite21_next(nullptr);
-        info::CSpriteInitPageSprite21_clbk CSpriteInitPageSprite21_user(nullptr);
-        info::CSpriteLoadSprite22_ptr CSpriteLoadSprite22_next(nullptr);
-        info::CSpriteLoadSprite22_clbk CSpriteLoadSprite22_user(nullptr);
-        info::CSpriteReleaseSprite23_ptr CSpriteReleaseSprite23_next(nullptr);
-        info::CSpriteReleaseSprite23_clbk CSpriteReleaseSprite23_user(nullptr);
-        info::CSpriteReleaseTexMemSprite24_ptr CSpriteReleaseTexMemSprite24_next(nullptr);
-        info::CSpriteReleaseTexMemSprite24_clbk CSpriteReleaseTexMemSprite24_user(nullptr);
-        info::CSpriteRestoreTexMemSprite25_ptr CSpriteRestoreTexMemSprite25_next(nullptr);
-        info::CSpriteRestoreTexMemSprite25_clbk CSpriteRestoreTexMemSprite25_user(nullptr);
-        info::CSpriteRunAnimation26_ptr CSpriteRunAnimation26_next(nullptr);
-        info::CSpriteRunAnimation26_clbk CSpriteRunAnimation26_user(nullptr);
-        info::CSpriteSetAction27_ptr CSpriteSetAction27_next(nullptr);
-        info::CSpriteSetAction27_clbk CSpriteSetAction27_user(nullptr);
-        info::CSpriteSetAniAnimationSpeed28_ptr CSpriteSetAniAnimationSpeed28_next(nullptr);
-        info::CSpriteSetAniAnimationSpeed28_clbk CSpriteSetAniAnimationSpeed28_user(nullptr);
-        info::CSpriteSetFrame29_ptr CSpriteSetFrame29_next(nullptr);
-        info::CSpriteSetFrame29_clbk CSpriteSetFrame29_user(nullptr);
-        info::CSpriteSetPage30_ptr CSpriteSetPage30_next(nullptr);
-        info::CSpriteSetPage30_clbk CSpriteSetPage30_user(nullptr);
-        info::CSpritedtor_CSprite31_ptr CSpritedtor_CSprite31_next(nullptr);
-        info::CSpritedtor_CSprite31_clbk CSpritedtor_CSprite31_user(nullptr);
+        static info::CSpritector_CSprite1_ptr CSpritector_CSprite1_next(nullptr);
+        static info::CSpritector_CSprite1_clbk CSpritector_CSprite1_user(nullptr);
+        static info::CSpriteDrawSprite2_ptr CSpriteDrawSprite2_next(nullptr);
+        static info::CSpriteDrawSprite2_clbk CSpriteDrawSprite2_user(nullptr);
+        static info::CSpriteDrawSprite3D3_ptr CSpriteDrawSprite3D3_next(nullptr);
+        static info::CSpriteDrawSprite3D3_clbk CSpriteDrawSprite3D3_user(nullptr);
+        static info::CSpriteDrawSpriteRot4_ptr CSpriteDrawSpriteRot4_next(nullptr);
+        static info::CSpriteDrawSpriteRot4_clbk CSpriteDrawSpriteRot4_user(nullptr);
+        static info::CSpriteDrawSpriteRot3D5_ptr CSpriteDrawSpriteRot3D5_next(nullptr);
+        static info::CSpriteDrawSpriteRot3D5_clbk CSpriteDrawSpriteRot3D5_user(nullptr);
+        static info::CSpriteDrawSpriteRotUV6_ptr CSpriteDrawSpriteRotUV6_next(nullptr);
+        static info::CSpriteDrawSpriteRotUV6_clbk CSpriteDrawSpriteRotUV6_user(nullptr);
+        static info::CSpriteDrawSpriteRotUV3D7_ptr CSpriteDrawSpriteRotUV3D7_next(nullptr);
+        static info::CSpriteDrawSpriteRotUV3D7_clbk CSpriteDrawSpriteRotUV3D7_user(nullptr);
+        static info::CSpriteDrawSpriteUV8_ptr CSpriteDrawSpriteUV8_next(nullptr);
+        static info::CSpriteDrawSpriteUV8_clbk CSpriteDrawSpriteUV8_user(nullptr);
+        static info::CSpriteDrawSpriteUV3D9_ptr CSpriteDrawSpriteUV3D9_next(nullptr);
+        static info::CSpriteDrawSpriteUV3D9_clbk CSpriteDrawSpriteUV3D9_user(nullptr);
+        static info::CSpriteDrawSpriteVertex10_ptr CSpriteDrawSpriteVertex10_next(nullptr);
+        static info::CSpriteDrawSpriteVertex10_clbk CSpriteDrawSpriteVertex10_user(nullptr);
+        static info::CSpriteGetD3D8TexPtr11_ptr CSpriteGetD3D8TexPtr11_next(nullptr);
+        static info::CSpriteGetD3D8TexPtr11_clbk CSpriteGetD3D8TexPtr11_user(nullptr);
+        static info::CSpriteGetFileName12_ptr CSpriteGetFileName12_next(nullptr);
+        static info::CSpriteGetFileName12_clbk CSpriteGetFileName12_user(nullptr);
+        static info::CSpriteGetMaxActions13_ptr CSpriteGetMaxActions13_next(nullptr);
+        static info::CSpriteGetMaxActions13_clbk CSpriteGetMaxActions13_user(nullptr);
+        static info::CSpriteGetMaxFrames14_ptr CSpriteGetMaxFrames14_next(nullptr);
+        static info::CSpriteGetMaxFrames14_clbk CSpriteGetMaxFrames14_user(nullptr);
+        static info::CSpriteGetNowActions15_ptr CSpriteGetNowActions15_next(nullptr);
+        static info::CSpriteGetNowActions15_clbk CSpriteGetNowActions15_user(nullptr);
+        static info::CSpriteGetNowFrames16_ptr CSpriteGetNowFrames16_next(nullptr);
+        static info::CSpriteGetNowFrames16_clbk CSpriteGetNowFrames16_user(nullptr);
+        static info::CSpriteGetSpriteOrgXL17_ptr CSpriteGetSpriteOrgXL17_next(nullptr);
+        static info::CSpriteGetSpriteOrgXL17_clbk CSpriteGetSpriteOrgXL17_user(nullptr);
+        static info::CSpriteGetSpriteOrgYL18_ptr CSpriteGetSpriteOrgYL18_next(nullptr);
+        static info::CSpriteGetSpriteOrgYL18_clbk CSpriteGetSpriteOrgYL18_user(nullptr);
+        static info::CSpriteGetSpriteXL19_ptr CSpriteGetSpriteXL19_next(nullptr);
+        static info::CSpriteGetSpriteXL19_clbk CSpriteGetSpriteXL19_user(nullptr);
+        static info::CSpriteGetSpriteYL20_ptr CSpriteGetSpriteYL20_next(nullptr);
+        static info::CSpriteGetSpriteYL20_clbk CSpriteGetSpriteYL20_user(nullptr);
+        static info::CSpriteInitPageSprite21_ptr CSpriteInitPageSprite21_next(nullptr);
+        static info::CSpriteInitPageSprite21_clbk CSpriteInitPageSprite21_user(nullptr);
+        static info::CSpriteLoadSprite22_ptr CSpriteLoadSprite22_next(nullptr);
+        static info::CSpriteLoadSprite22_clbk CSpriteLoadSprite22_user(nullptr);
+        static info::CSpriteReleaseSprite23_ptr CSpriteReleaseSprite23_next(nullptr);
+        static info::CSpriteReleaseSprite23_clbk CSpriteReleaseSprite23_user(nullptr);
+        static info::CSpriteReleaseTexMemSprite24_ptr CSpriteReleaseTexMemSprite24_next(nullptr);
+        static info::CSpriteReleaseTexMemSprite24_clbk CSpriteReleaseTexMemSprite24_user(nullptr);
+        static info::CSpriteRestoreTexMemSprite25_ptr CSpriteRestoreTexMemSprite25_next(nullptr);
+        static info::CSpriteRestoreTexMemSprite25_clbk CSpriteRestoreTexMemSprite25_user(nullptr);
+        static info::CSpriteRunAnimation26_ptr CSpriteRunAnimation26_next(nullptr);
+        static info::CSpriteRunAnimation26_clbk CSpriteRunAnimation26_user(nullptr);
+        static info::CSpriteSetAction27_ptr CSpriteSetAction27_next(nullptr);
+        static info::CSpriteSetAction27_clbk CSpriteSetAction27_user(nullptr);
+        static info::CSpriteSetAniAnimationSpeed28_ptr CSpriteSetAniAnimationSpeed28_next(nullptr);
+        static info::CSpriteSetAniAnimationSpeed28_clbk CSpriteSetAniAnimationSpeed28_user(nullptr);
+        static info::CSpriteSetFrame29_ptr CSpriteSetFrame29_next(nullptr);
+        static info::CSpriteSetFrame29_clbk CSpriteSetFrame29_user(nullptr);
+        static info::CSpriteSetPage30_ptr CSpriteSetPage30_next(nullptr);
+        static info::CSpriteSetPage30_clbk CSpriteSetPage30_user(nullptr);
+        static info::CSpritedtor_CSprite31_ptr CSpritedtor_CSprite31_next(nullptr);
+        static info::CSpritedtor_CSprite31_clbk CSpritedtor_CSprite31_user(nullptr);
         
-        int64_t CSpritector_CSprite1_wrapper(struct CSprite* _this)
+        static int64_t CSpritector_CSprite1_wrapper(struct CSprite* _this)
         {
            return CSpritector_CSprite1_user(_this, CSpritector_CSprite1_next);
         };
-        void CSpriteDrawSprite2_wrapper(struct CSprite* _this, int32_t arg_0, uint32_t arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
+        static void CSpriteDrawSprite2_wrapper(struct CSprite* _this, int32_t arg_0, uint32_t arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
         {
            CSpriteDrawSprite2_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CSpriteDrawSprite2_next);
         };
-        void CSpriteDrawSprite3D3_wrapper(struct CSprite* _this, float* arg_0, int32_t arg_1, int32_t arg_2, uint32_t arg_3)
+        static void CSpriteDrawSprite3D3_wrapper(struct CSprite* _this, float* arg_0, int32_t arg_1, int32_t arg_2, uint32_t arg_3)
         {
            CSpriteDrawSprite3D3_user(_this, arg_0, arg_1, arg_2, arg_3, CSpriteDrawSprite3D3_next);
         };
-        void CSpriteDrawSpriteRot4_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float arg_2, uint32_t arg_3, int32_t arg_4, uint32_t arg_5)
+        static void CSpriteDrawSpriteRot4_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float arg_2, uint32_t arg_3, int32_t arg_4, uint32_t arg_5)
         {
            CSpriteDrawSpriteRot4_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CSpriteDrawSpriteRot4_next);
         };
-        void CSpriteDrawSpriteRot3D5_wrapper(struct CSprite* _this, float* arg_0, float arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
+        static void CSpriteDrawSpriteRot3D5_wrapper(struct CSprite* _this, float* arg_0, float arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
         {
            CSpriteDrawSpriteRot3D5_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CSpriteDrawSpriteRot3D5_next);
         };
-        void CSpriteDrawSpriteRotUV6_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float arg_2, float** arg_3, uint32_t arg_4, int32_t arg_5, uint32_t arg_6)
+        static void CSpriteDrawSpriteRotUV6_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float arg_2, float** arg_3, uint32_t arg_4, int32_t arg_5, uint32_t arg_6)
         {
            CSpriteDrawSpriteRotUV6_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, CSpriteDrawSpriteRotUV6_next);
         };
-        void CSpriteDrawSpriteRotUV3D7_wrapper(struct CSprite* _this, float* arg_0, float arg_1, float** arg_2, int32_t arg_3, int32_t arg_4, uint32_t arg_5)
+        static void CSpriteDrawSpriteRotUV3D7_wrapper(struct CSprite* _this, float* arg_0, float arg_1, float** arg_2, int32_t arg_3, int32_t arg_4, uint32_t arg_5)
         {
            CSpriteDrawSpriteRotUV3D7_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CSpriteDrawSpriteRotUV3D7_next);
         };
-        void CSpriteDrawSpriteUV8_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float** arg_2, uint32_t arg_3, int32_t arg_4, uint32_t arg_5)
+        static void CSpriteDrawSpriteUV8_wrapper(struct CSprite* _this, int32_t arg_0, int32_t arg_1, float** arg_2, uint32_t arg_3, int32_t arg_4, uint32_t arg_5)
         {
            CSpriteDrawSpriteUV8_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CSpriteDrawSpriteUV8_next);
         };
-        void CSpriteDrawSpriteUV3D9_wrapper(struct CSprite* _this, float* arg_0, float** arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
+        static void CSpriteDrawSpriteUV3D9_wrapper(struct CSprite* _this, float* arg_0, float** arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
         {
            CSpriteDrawSpriteUV3D9_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CSpriteDrawSpriteUV3D9_next);
         };
-        void CSpriteDrawSpriteVertex10_wrapper(struct CSprite* _this, struct _D3DR3TLVERTEX_TEX1* arg_0, int arg_1)
+        static void CSpriteDrawSpriteVertex10_wrapper(struct CSprite* _this, struct _D3DR3TLVERTEX_TEX1* arg_0, int arg_1)
         {
            CSpriteDrawSpriteVertex10_user(_this, arg_0, arg_1, CSpriteDrawSpriteVertex10_next);
         };
-        void* CSpriteGetD3D8TexPtr11_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
+        static void* CSpriteGetD3D8TexPtr11_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
         {
            return CSpriteGetD3D8TexPtr11_user(_this, arg_0, arg_1, CSpriteGetD3D8TexPtr11_next);
         };
-        char* CSpriteGetFileName12_wrapper(struct CSprite* _this)
+        static char* CSpriteGetFileName12_wrapper(struct CSprite* _this)
         {
            return CSpriteGetFileName12_user(_this, CSpriteGetFileName12_next);
         };
-        uint32_t CSpriteGetMaxActions13_wrapper(struct CSprite* _this)
+        static uint32_t CSpriteGetMaxActions13_wrapper(struct CSprite* _this)
         {
            return CSpriteGetMaxActions13_user(_this, CSpriteGetMaxActions13_next);
         };
-        uint32_t CSpriteGetMaxFrames14_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static uint32_t CSpriteGetMaxFrames14_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            return CSpriteGetMaxFrames14_user(_this, arg_0, CSpriteGetMaxFrames14_next);
         };
-        uint32_t CSpriteGetNowActions15_wrapper(struct CSprite* _this)
+        static uint32_t CSpriteGetNowActions15_wrapper(struct CSprite* _this)
         {
            return CSpriteGetNowActions15_user(_this, CSpriteGetNowActions15_next);
         };
-        uint32_t CSpriteGetNowFrames16_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static uint32_t CSpriteGetNowFrames16_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            return CSpriteGetNowFrames16_user(_this, arg_0, CSpriteGetNowFrames16_next);
         };
-        uint16_t CSpriteGetSpriteOrgXL17_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
+        static uint16_t CSpriteGetSpriteOrgXL17_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
         {
            return CSpriteGetSpriteOrgXL17_user(_this, arg_0, arg_1, CSpriteGetSpriteOrgXL17_next);
         };
-        uint16_t CSpriteGetSpriteOrgYL18_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
+        static uint16_t CSpriteGetSpriteOrgYL18_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
         {
            return CSpriteGetSpriteOrgYL18_user(_this, arg_0, arg_1, CSpriteGetSpriteOrgYL18_next);
         };
-        uint16_t CSpriteGetSpriteXL19_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
+        static uint16_t CSpriteGetSpriteXL19_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
         {
            return CSpriteGetSpriteXL19_user(_this, arg_0, arg_1, CSpriteGetSpriteXL19_next);
         };
-        uint16_t CSpriteGetSpriteYL20_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
+        static uint16_t CSpriteGetSpriteYL20_wrapper(struct CSprite* _this, uint32_t arg_0, uint32_t arg_1)
         {
            return CSpriteGetSpriteYL20_user(_this, arg_0, arg_1, CSpriteGetSpriteYL20_next);
         };
-        void CSpriteInitPageSprite21_wrapper(struct CSprite* _this, uint16_t arg_0, uint16_t arg_1)
+        static void CSpriteInitPageSprite21_wrapper(struct CSprite* _this, uint16_t arg_0, uint16_t arg_1)
         {
            CSpriteInitPageSprite21_user(_this, arg_0, arg_1, CSpriteInitPageSprite21_next);
         };
-        void CSpriteLoadSprite22_wrapper(struct CSprite* _this, char* arg_0)
+        static void CSpriteLoadSprite22_wrapper(struct CSprite* _this, char* arg_0)
         {
            CSpriteLoadSprite22_user(_this, arg_0, CSpriteLoadSprite22_next);
         };
-        void CSpriteReleaseSprite23_wrapper(struct CSprite* _this)
+        static void CSpriteReleaseSprite23_wrapper(struct CSprite* _this)
         {
            CSpriteReleaseSprite23_user(_this, CSpriteReleaseSprite23_next);
         };
-        void CSpriteReleaseTexMemSprite24_wrapper(struct CSprite* _this)
+        static void CSpriteReleaseTexMemSprite24_wrapper(struct CSprite* _this)
         {
            CSpriteReleaseTexMemSprite24_user(_this, CSpriteReleaseTexMemSprite24_next);
         };
-        void CSpriteRestoreTexMemSprite25_wrapper(struct CSprite* _this)
+        static void CSpriteRestoreTexMemSprite25_wrapper(struct CSprite* _this)
         {
            CSpriteRestoreTexMemSprite25_user(_this, CSpriteRestoreTexMemSprite25_next);
         };
-        void CSpriteRunAnimation26_wrapper(struct CSprite* _this)
+        static void CSpriteRunAnimation26_wrapper(struct CSprite* _this)
         {
            CSpriteRunAnimation26_user(_this, CSpriteRunAnimation26_next);
         };
-        void CSpriteSetAction27_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static void CSpriteSetAction27_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            CSpriteSetAction27_user(_this, arg_0, CSpriteSetAction27_next);
         };
-        void CSpriteSetAniAnimationSpeed28_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static void CSpriteSetAniAnimationSpeed28_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            CSpriteSetAniAnimationSpeed28_user(_this, arg_0, CSpriteSetAniAnimationSpeed28_next);
         };
-        void CSpriteSetFrame29_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static void CSpriteSetFrame29_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            CSpriteSetFrame29_user(_this, arg_0, CSpriteSetFrame29_next);
         };
-        void CSpriteSetPage30_wrapper(struct CSprite* _this, uint32_t arg_0)
+        static void CSpriteSetPage30_wrapper(struct CSprite* _this, uint32_t arg_0)
         {
            CSpriteSetPage30_user(_this, arg_0, CSpriteSetPage30_next);
         };
-        int64_t CSpritedtor_CSprite31_wrapper(struct CSprite* _this)
+        static int64_t CSpritedtor_CSprite31_wrapper(struct CSprite* _this)
         {
            return CSpritedtor_CSprite31_user(_this, CSpritedtor_CSprite31_next);
         };
         
-        hook_record CSprite_functions[] = {
+        static hook_record CSprite_functions[] = {
         {   (LPVOID)0x140520670L,
             (LPVOID *)&CSpritector_CSprite1_user,
             (LPVOID *)&CSpritector_CSprite1_next,
@@ -355,5 +355,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

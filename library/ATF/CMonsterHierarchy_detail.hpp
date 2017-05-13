@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterHierarchyctor_CMonsterHierarchy2_ptr CMonsterHierarchyctor_CMonsterHierarchy2_next(nullptr);
-        info::CMonsterHierarchyctor_CMonsterHierarchy2_clbk CMonsterHierarchyctor_CMonsterHierarchy2_user(nullptr);
-        info::CMonsterHierarchyChildKindCount4_ptr CMonsterHierarchyChildKindCount4_next(nullptr);
-        info::CMonsterHierarchyChildKindCount4_clbk CMonsterHierarchyChildKindCount4_user(nullptr);
-        info::CMonsterHierarchyGetChild6_ptr CMonsterHierarchyGetChild6_next(nullptr);
-        info::CMonsterHierarchyGetChild6_clbk CMonsterHierarchyGetChild6_user(nullptr);
-        info::CMonsterHierarchyGetChildCount8_ptr CMonsterHierarchyGetChildCount8_next(nullptr);
-        info::CMonsterHierarchyGetChildCount8_clbk CMonsterHierarchyGetChildCount8_user(nullptr);
-        info::CMonsterHierarchyGetParent10_ptr CMonsterHierarchyGetParent10_next(nullptr);
-        info::CMonsterHierarchyGetParent10_clbk CMonsterHierarchyGetParent10_user(nullptr);
-        info::CMonsterHierarchyInit12_ptr CMonsterHierarchyInit12_next(nullptr);
-        info::CMonsterHierarchyInit12_clbk CMonsterHierarchyInit12_user(nullptr);
-        info::CMonsterHierarchyOnChildMonsterCreate14_ptr CMonsterHierarchyOnChildMonsterCreate14_next(nullptr);
-        info::CMonsterHierarchyOnChildMonsterCreate14_clbk CMonsterHierarchyOnChildMonsterCreate14_user(nullptr);
-        info::CMonsterHierarchyOnChildMonsterDestroy16_ptr CMonsterHierarchyOnChildMonsterDestroy16_next(nullptr);
-        info::CMonsterHierarchyOnChildMonsterDestroy16_clbk CMonsterHierarchyOnChildMonsterDestroy16_user(nullptr);
-        info::CMonsterHierarchyOnChildRegenLoop18_ptr CMonsterHierarchyOnChildRegenLoop18_next(nullptr);
-        info::CMonsterHierarchyOnChildRegenLoop18_clbk CMonsterHierarchyOnChildRegenLoop18_user(nullptr);
-        info::CMonsterHierarchyOnlyOnceInit20_ptr CMonsterHierarchyOnlyOnceInit20_next(nullptr);
-        info::CMonsterHierarchyOnlyOnceInit20_clbk CMonsterHierarchyOnlyOnceInit20_user(nullptr);
-        info::CMonsterHierarchyPopChildMon22_ptr CMonsterHierarchyPopChildMon22_next(nullptr);
-        info::CMonsterHierarchyPopChildMon22_clbk CMonsterHierarchyPopChildMon22_user(nullptr);
-        info::CMonsterHierarchyPopChildMonAll24_ptr CMonsterHierarchyPopChildMonAll24_next(nullptr);
-        info::CMonsterHierarchyPopChildMonAll24_clbk CMonsterHierarchyPopChildMonAll24_user(nullptr);
-        info::CMonsterHierarchyPushChildMon26_ptr CMonsterHierarchyPushChildMon26_next(nullptr);
-        info::CMonsterHierarchyPushChildMon26_clbk CMonsterHierarchyPushChildMon26_user(nullptr);
-        info::CMonsterHierarchySearchChildMon28_ptr CMonsterHierarchySearchChildMon28_next(nullptr);
-        info::CMonsterHierarchySearchChildMon28_clbk CMonsterHierarchySearchChildMon28_user(nullptr);
-        info::CMonsterHierarchySetParent30_ptr CMonsterHierarchySetParent30_next(nullptr);
-        info::CMonsterHierarchySetParent30_clbk CMonsterHierarchySetParent30_user(nullptr);
-        info::CMonsterHierarchydtor_CMonsterHierarchy35_ptr CMonsterHierarchydtor_CMonsterHierarchy35_next(nullptr);
-        info::CMonsterHierarchydtor_CMonsterHierarchy35_clbk CMonsterHierarchydtor_CMonsterHierarchy35_user(nullptr);
+        static info::CMonsterHierarchyctor_CMonsterHierarchy2_ptr CMonsterHierarchyctor_CMonsterHierarchy2_next(nullptr);
+        static info::CMonsterHierarchyctor_CMonsterHierarchy2_clbk CMonsterHierarchyctor_CMonsterHierarchy2_user(nullptr);
+        static info::CMonsterHierarchyChildKindCount4_ptr CMonsterHierarchyChildKindCount4_next(nullptr);
+        static info::CMonsterHierarchyChildKindCount4_clbk CMonsterHierarchyChildKindCount4_user(nullptr);
+        static info::CMonsterHierarchyGetChild6_ptr CMonsterHierarchyGetChild6_next(nullptr);
+        static info::CMonsterHierarchyGetChild6_clbk CMonsterHierarchyGetChild6_user(nullptr);
+        static info::CMonsterHierarchyGetChildCount8_ptr CMonsterHierarchyGetChildCount8_next(nullptr);
+        static info::CMonsterHierarchyGetChildCount8_clbk CMonsterHierarchyGetChildCount8_user(nullptr);
+        static info::CMonsterHierarchyGetParent10_ptr CMonsterHierarchyGetParent10_next(nullptr);
+        static info::CMonsterHierarchyGetParent10_clbk CMonsterHierarchyGetParent10_user(nullptr);
+        static info::CMonsterHierarchyInit12_ptr CMonsterHierarchyInit12_next(nullptr);
+        static info::CMonsterHierarchyInit12_clbk CMonsterHierarchyInit12_user(nullptr);
+        static info::CMonsterHierarchyOnChildMonsterCreate14_ptr CMonsterHierarchyOnChildMonsterCreate14_next(nullptr);
+        static info::CMonsterHierarchyOnChildMonsterCreate14_clbk CMonsterHierarchyOnChildMonsterCreate14_user(nullptr);
+        static info::CMonsterHierarchyOnChildMonsterDestroy16_ptr CMonsterHierarchyOnChildMonsterDestroy16_next(nullptr);
+        static info::CMonsterHierarchyOnChildMonsterDestroy16_clbk CMonsterHierarchyOnChildMonsterDestroy16_user(nullptr);
+        static info::CMonsterHierarchyOnChildRegenLoop18_ptr CMonsterHierarchyOnChildRegenLoop18_next(nullptr);
+        static info::CMonsterHierarchyOnChildRegenLoop18_clbk CMonsterHierarchyOnChildRegenLoop18_user(nullptr);
+        static info::CMonsterHierarchyOnlyOnceInit20_ptr CMonsterHierarchyOnlyOnceInit20_next(nullptr);
+        static info::CMonsterHierarchyOnlyOnceInit20_clbk CMonsterHierarchyOnlyOnceInit20_user(nullptr);
+        static info::CMonsterHierarchyPopChildMon22_ptr CMonsterHierarchyPopChildMon22_next(nullptr);
+        static info::CMonsterHierarchyPopChildMon22_clbk CMonsterHierarchyPopChildMon22_user(nullptr);
+        static info::CMonsterHierarchyPopChildMonAll24_ptr CMonsterHierarchyPopChildMonAll24_next(nullptr);
+        static info::CMonsterHierarchyPopChildMonAll24_clbk CMonsterHierarchyPopChildMonAll24_user(nullptr);
+        static info::CMonsterHierarchyPushChildMon26_ptr CMonsterHierarchyPushChildMon26_next(nullptr);
+        static info::CMonsterHierarchyPushChildMon26_clbk CMonsterHierarchyPushChildMon26_user(nullptr);
+        static info::CMonsterHierarchySearchChildMon28_ptr CMonsterHierarchySearchChildMon28_next(nullptr);
+        static info::CMonsterHierarchySearchChildMon28_clbk CMonsterHierarchySearchChildMon28_user(nullptr);
+        static info::CMonsterHierarchySetParent30_ptr CMonsterHierarchySetParent30_next(nullptr);
+        static info::CMonsterHierarchySetParent30_clbk CMonsterHierarchySetParent30_user(nullptr);
+        static info::CMonsterHierarchydtor_CMonsterHierarchy35_ptr CMonsterHierarchydtor_CMonsterHierarchy35_next(nullptr);
+        static info::CMonsterHierarchydtor_CMonsterHierarchy35_clbk CMonsterHierarchydtor_CMonsterHierarchy35_user(nullptr);
         
-        void CMonsterHierarchyctor_CMonsterHierarchy2_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchyctor_CMonsterHierarchy2_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchyctor_CMonsterHierarchy2_user(_this, CMonsterHierarchyctor_CMonsterHierarchy2_next);
         };
-        char CMonsterHierarchyChildKindCount4_wrapper(struct CMonsterHierarchy* _this)
+        static char CMonsterHierarchyChildKindCount4_wrapper(struct CMonsterHierarchy* _this)
         {
            return CMonsterHierarchyChildKindCount4_user(_this, CMonsterHierarchyChildKindCount4_next);
         };
-        struct CMonster* CMonsterHierarchyGetChild6_wrapper(struct CMonsterHierarchy* _this, int nKind, int nIndex)
+        static struct CMonster* CMonsterHierarchyGetChild6_wrapper(struct CMonsterHierarchy* _this, int nKind, int nIndex)
         {
            return CMonsterHierarchyGetChild6_user(_this, nKind, nIndex, CMonsterHierarchyGetChild6_next);
         };
-        unsigned int CMonsterHierarchyGetChildCount8_wrapper(struct CMonsterHierarchy* _this, int nKindIndex)
+        static unsigned int CMonsterHierarchyGetChildCount8_wrapper(struct CMonsterHierarchy* _this, int nKindIndex)
         {
            return CMonsterHierarchyGetChildCount8_user(_this, nKindIndex, CMonsterHierarchyGetChildCount8_next);
         };
-        struct CMonster* CMonsterHierarchyGetParent10_wrapper(struct CMonsterHierarchy* _this)
+        static struct CMonster* CMonsterHierarchyGetParent10_wrapper(struct CMonsterHierarchy* _this)
         {
            return CMonsterHierarchyGetParent10_user(_this, CMonsterHierarchyGetParent10_next);
         };
-        void CMonsterHierarchyInit12_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchyInit12_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchyInit12_user(_this, CMonsterHierarchyInit12_next);
         };
-        void CMonsterHierarchyOnChildMonsterCreate14_wrapper(struct CMonsterHierarchy* _this, struct _monster_create_setdata* pData)
+        static void CMonsterHierarchyOnChildMonsterCreate14_wrapper(struct CMonsterHierarchy* _this, struct _monster_create_setdata* pData)
         {
            CMonsterHierarchyOnChildMonsterCreate14_user(_this, pData, CMonsterHierarchyOnChildMonsterCreate14_next);
         };
-        void CMonsterHierarchyOnChildMonsterDestroy16_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchyOnChildMonsterDestroy16_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchyOnChildMonsterDestroy16_user(_this, CMonsterHierarchyOnChildMonsterDestroy16_next);
         };
-        void CMonsterHierarchyOnChildRegenLoop18_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchyOnChildRegenLoop18_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchyOnChildRegenLoop18_user(_this, CMonsterHierarchyOnChildRegenLoop18_next);
         };
-        void CMonsterHierarchyOnlyOnceInit20_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pThis)
+        static void CMonsterHierarchyOnlyOnceInit20_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pThis)
         {
            CMonsterHierarchyOnlyOnceInit20_user(_this, pThis, CMonsterHierarchyOnlyOnceInit20_next);
         };
-        int CMonsterHierarchyPopChildMon22_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
+        static int CMonsterHierarchyPopChildMon22_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
         {
            return CMonsterHierarchyPopChildMon22_user(_this, pMon, CMonsterHierarchyPopChildMon22_next);
         };
-        void CMonsterHierarchyPopChildMonAll24_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchyPopChildMonAll24_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchyPopChildMonAll24_user(_this, CMonsterHierarchyPopChildMonAll24_next);
         };
-        int CMonsterHierarchyPushChildMon26_wrapper(struct CMonsterHierarchy* _this, int nKind, struct CMonster* pMon)
+        static int CMonsterHierarchyPushChildMon26_wrapper(struct CMonsterHierarchy* _this, int nKind, struct CMonster* pMon)
         {
            return CMonsterHierarchyPushChildMon26_user(_this, nKind, pMon, CMonsterHierarchyPushChildMon26_next);
         };
-        int CMonsterHierarchySearchChildMon28_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
+        static int CMonsterHierarchySearchChildMon28_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
         {
            return CMonsterHierarchySearchChildMon28_user(_this, pMon, CMonsterHierarchySearchChildMon28_next);
         };
-        int CMonsterHierarchySetParent30_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
+        static int CMonsterHierarchySetParent30_wrapper(struct CMonsterHierarchy* _this, struct CMonster* pMon)
         {
            return CMonsterHierarchySetParent30_user(_this, pMon, CMonsterHierarchySetParent30_next);
         };
-        void CMonsterHierarchydtor_CMonsterHierarchy35_wrapper(struct CMonsterHierarchy* _this)
+        static void CMonsterHierarchydtor_CMonsterHierarchy35_wrapper(struct CMonsterHierarchy* _this)
         {
            CMonsterHierarchydtor_CMonsterHierarchy35_user(_this, CMonsterHierarchydtor_CMonsterHierarchy35_next);
         };
         
-        hook_record CMonsterHierarchy_functions[] = {
+        static hook_record CMonsterHierarchy_functions[] = {
         {   (LPVOID)0x14014b660L,
             (LPVOID *)&CMonsterHierarchyctor_CMonsterHierarchy2_user,
             (LPVOID *)&CMonsterHierarchyctor_CMonsterHierarchy2_next,
@@ -190,5 +190,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

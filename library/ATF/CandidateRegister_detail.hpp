@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CandidateRegisterctor_CandidateRegister2_ptr CandidateRegisterctor_CandidateRegister2_next(nullptr);
-        info::CandidateRegisterctor_CandidateRegister2_clbk CandidateRegisterctor_CandidateRegister2_user(nullptr);
-        info::CandidateRegisterDoit4_ptr CandidateRegisterDoit4_next(nullptr);
-        info::CandidateRegisterDoit4_clbk CandidateRegisterDoit4_user(nullptr);
-        info::CandidateRegisterInitialize6_ptr CandidateRegisterInitialize6_next(nullptr);
-        info::CandidateRegisterInitialize6_clbk CandidateRegisterInitialize6_user(nullptr);
-        info::CandidateRegister_AddToPacket8_ptr CandidateRegister_AddToPacket8_next(nullptr);
-        info::CandidateRegister_AddToPacket8_clbk CandidateRegister_AddToPacket8_user(nullptr);
-        info::CandidateRegister_CheckPlayerInfo10_ptr CandidateRegister_CheckPlayerInfo10_next(nullptr);
-        info::CandidateRegister_CheckPlayerInfo10_clbk CandidateRegister_CheckPlayerInfo10_user(nullptr);
-        info::CandidateRegister_InitCandidate12_ptr CandidateRegister_InitCandidate12_next(nullptr);
-        info::CandidateRegister_InitCandidate12_clbk CandidateRegister_InitCandidate12_user(nullptr);
-        info::CandidateRegister_Regist14_ptr CandidateRegister_Regist14_next(nullptr);
-        info::CandidateRegister_Regist14_clbk CandidateRegister_Regist14_user(nullptr);
-        info::CandidateRegister_SendList16_ptr CandidateRegister_SendList16_next(nullptr);
-        info::CandidateRegister_SendList16_clbk CandidateRegister_SendList16_user(nullptr);
-        info::CandidateRegister_SortCandidacyByPvpPoint18_ptr CandidateRegister_SortCandidacyByPvpPoint18_next(nullptr);
-        info::CandidateRegister_SortCandidacyByPvpPoint18_clbk CandidateRegister_SortCandidacyByPvpPoint18_user(nullptr);
-        info::CandidateRegister_UpdatePacketWin20_ptr CandidateRegister_UpdatePacketWin20_next(nullptr);
-        info::CandidateRegister_UpdatePacketWin20_clbk CandidateRegister_UpdatePacketWin20_user(nullptr);
-        info::CandidateRegisterdtor_CandidateRegister25_ptr CandidateRegisterdtor_CandidateRegister25_next(nullptr);
-        info::CandidateRegisterdtor_CandidateRegister25_clbk CandidateRegisterdtor_CandidateRegister25_user(nullptr);
+        static info::CandidateRegisterctor_CandidateRegister2_ptr CandidateRegisterctor_CandidateRegister2_next(nullptr);
+        static info::CandidateRegisterctor_CandidateRegister2_clbk CandidateRegisterctor_CandidateRegister2_user(nullptr);
+        static info::CandidateRegisterDoit4_ptr CandidateRegisterDoit4_next(nullptr);
+        static info::CandidateRegisterDoit4_clbk CandidateRegisterDoit4_user(nullptr);
+        static info::CandidateRegisterInitialize6_ptr CandidateRegisterInitialize6_next(nullptr);
+        static info::CandidateRegisterInitialize6_clbk CandidateRegisterInitialize6_user(nullptr);
+        static info::CandidateRegister_AddToPacket8_ptr CandidateRegister_AddToPacket8_next(nullptr);
+        static info::CandidateRegister_AddToPacket8_clbk CandidateRegister_AddToPacket8_user(nullptr);
+        static info::CandidateRegister_CheckPlayerInfo10_ptr CandidateRegister_CheckPlayerInfo10_next(nullptr);
+        static info::CandidateRegister_CheckPlayerInfo10_clbk CandidateRegister_CheckPlayerInfo10_user(nullptr);
+        static info::CandidateRegister_InitCandidate12_ptr CandidateRegister_InitCandidate12_next(nullptr);
+        static info::CandidateRegister_InitCandidate12_clbk CandidateRegister_InitCandidate12_user(nullptr);
+        static info::CandidateRegister_Regist14_ptr CandidateRegister_Regist14_next(nullptr);
+        static info::CandidateRegister_Regist14_clbk CandidateRegister_Regist14_user(nullptr);
+        static info::CandidateRegister_SendList16_ptr CandidateRegister_SendList16_next(nullptr);
+        static info::CandidateRegister_SendList16_clbk CandidateRegister_SendList16_user(nullptr);
+        static info::CandidateRegister_SortCandidacyByPvpPoint18_ptr CandidateRegister_SortCandidacyByPvpPoint18_next(nullptr);
+        static info::CandidateRegister_SortCandidacyByPvpPoint18_clbk CandidateRegister_SortCandidacyByPvpPoint18_user(nullptr);
+        static info::CandidateRegister_UpdatePacketWin20_ptr CandidateRegister_UpdatePacketWin20_next(nullptr);
+        static info::CandidateRegister_UpdatePacketWin20_clbk CandidateRegister_UpdatePacketWin20_user(nullptr);
+        static info::CandidateRegisterdtor_CandidateRegister25_ptr CandidateRegisterdtor_CandidateRegister25_next(nullptr);
+        static info::CandidateRegisterdtor_CandidateRegister25_clbk CandidateRegisterdtor_CandidateRegister25_user(nullptr);
         
-        void CandidateRegisterctor_CandidateRegister2_wrapper(struct CandidateRegister* _this)
+        static void CandidateRegisterctor_CandidateRegister2_wrapper(struct CandidateRegister* _this)
         {
            CandidateRegisterctor_CandidateRegister2_user(_this, CandidateRegisterctor_CandidateRegister2_next);
         };
-        int CandidateRegisterDoit4_wrapper(struct CandidateRegister* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int CandidateRegisterDoit4_wrapper(struct CandidateRegister* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return CandidateRegisterDoit4_user(_this, eCmd, pOne, pdata, CandidateRegisterDoit4_next);
         };
-        bool CandidateRegisterInitialize6_wrapper(struct CandidateRegister* _this)
+        static bool CandidateRegisterInitialize6_wrapper(struct CandidateRegister* _this)
         {
            return CandidateRegisterInitialize6_user(_this, CandidateRegisterInitialize6_next);
         };
-        bool CandidateRegister_AddToPacket8_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne, unsigned int dwWinCnt)
+        static bool CandidateRegister_AddToPacket8_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne, unsigned int dwWinCnt)
         {
            return CandidateRegister_AddToPacket8_user(_this, pOne, dwWinCnt, CandidateRegister_AddToPacket8_next);
         };
-        int CandidateRegister_CheckPlayerInfo10_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne)
+        static int CandidateRegister_CheckPlayerInfo10_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne)
         {
            return CandidateRegister_CheckPlayerInfo10_user(_this, pOne, CandidateRegister_CheckPlayerInfo10_next);
         };
-        void CandidateRegister_InitCandidate12_wrapper(struct CandidateRegister* _this)
+        static void CandidateRegister_InitCandidate12_wrapper(struct CandidateRegister* _this)
         {
            CandidateRegister_InitCandidate12_user(_this, CandidateRegister_InitCandidate12_next);
         };
-        int CandidateRegister_Regist14_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne, char* pdata)
+        static int CandidateRegister_Regist14_wrapper(struct CandidateRegister* _this, struct CPlayer* pOne, char* pdata)
         {
            return CandidateRegister_Regist14_user(_this, pOne, pdata, CandidateRegister_Regist14_next);
         };
-        int CandidateRegister_SendList16_wrapper(struct CandidateRegister* _this, uint16_t wSock, char byRace)
+        static int CandidateRegister_SendList16_wrapper(struct CandidateRegister* _this, uint16_t wSock, char byRace)
         {
            return CandidateRegister_SendList16_user(_this, wSock, byRace, CandidateRegister_SendList16_next);
         };
-        void CandidateRegister_SortCandidacyByPvpPoint18_wrapper(struct CandidateRegister* _this, char byRace)
+        static void CandidateRegister_SortCandidacyByPvpPoint18_wrapper(struct CandidateRegister* _this, char byRace)
         {
            CandidateRegister_SortCandidacyByPvpPoint18_user(_this, byRace, CandidateRegister_SortCandidacyByPvpPoint18_next);
         };
-        void CandidateRegister_UpdatePacketWin20_wrapper(struct CandidateRegister* _this, char byRace, char* wszName, unsigned int dwWinCnt)
+        static void CandidateRegister_UpdatePacketWin20_wrapper(struct CandidateRegister* _this, char byRace, char* wszName, unsigned int dwWinCnt)
         {
            CandidateRegister_UpdatePacketWin20_user(_this, byRace, wszName, dwWinCnt, CandidateRegister_UpdatePacketWin20_next);
         };
-        void CandidateRegisterdtor_CandidateRegister25_wrapper(struct CandidateRegister* _this)
+        static void CandidateRegisterdtor_CandidateRegister25_wrapper(struct CandidateRegister* _this)
         {
            CandidateRegisterdtor_CandidateRegister25_user(_this, CandidateRegisterdtor_CandidateRegister25_next);
         };
         
-        hook_record CandidateRegister_functions[] = {
+        static hook_record CandidateRegister_functions[] = {
         {   (LPVOID)0x1402b6720L,
             (LPVOID *)&CandidateRegisterctor_CandidateRegister2_user,
             (LPVOID *)&CandidateRegisterctor_CandidateRegister2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

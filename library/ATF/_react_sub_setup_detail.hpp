@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_react_sub_setupctor__react_sub_setup2_ptr _react_sub_setupctor__react_sub_setup2_next(nullptr);
-        info::_react_sub_setupctor__react_sub_setup2_clbk _react_sub_setupctor__react_sub_setup2_user(nullptr);
+        static info::_react_sub_setupctor__react_sub_setup2_ptr _react_sub_setupctor__react_sub_setup2_next(nullptr);
+        static info::_react_sub_setupctor__react_sub_setup2_clbk _react_sub_setupctor__react_sub_setup2_user(nullptr);
         
-        void _react_sub_setupctor__react_sub_setup2_wrapper(struct _react_sub_setup* _this)
+        static void _react_sub_setupctor__react_sub_setup2_wrapper(struct _react_sub_setup* _this)
         {
            _react_sub_setupctor__react_sub_setup2_user(_this, _react_sub_setupctor__react_sub_setup2_next);
         };
         
-        hook_record _react_sub_setup_functions[] = {
+        static hook_record _react_sub_setup_functions[] = {
         {   (LPVOID)0x14027a680L,
             (LPVOID *)&_react_sub_setupctor__react_sub_setup2_user,
             (LPVOID *)&_react_sub_setupctor__react_sub_setup2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

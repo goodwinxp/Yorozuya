@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_ptr _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_next(nullptr);
-        info::_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_clbk _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_user(nullptr);
-        info::_possible_battle_guild_list_result_zoclsize4_ptr _possible_battle_guild_list_result_zoclsize4_next(nullptr);
-        info::_possible_battle_guild_list_result_zoclsize4_clbk _possible_battle_guild_list_result_zoclsize4_user(nullptr);
+        static info::_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_ptr _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_next(nullptr);
+        static info::_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_clbk _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_user(nullptr);
+        static info::_possible_battle_guild_list_result_zoclsize4_ptr _possible_battle_guild_list_result_zoclsize4_next(nullptr);
+        static info::_possible_battle_guild_list_result_zoclsize4_clbk _possible_battle_guild_list_result_zoclsize4_user(nullptr);
         
-        void _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_wrapper(struct _possible_battle_guild_list_result_zocl* _this)
+        static void _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_wrapper(struct _possible_battle_guild_list_result_zocl* _this)
         {
            _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_user(_this, _possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_next);
         };
-        int _possible_battle_guild_list_result_zoclsize4_wrapper(struct _possible_battle_guild_list_result_zocl* _this)
+        static int _possible_battle_guild_list_result_zoclsize4_wrapper(struct _possible_battle_guild_list_result_zocl* _this)
         {
            return _possible_battle_guild_list_result_zoclsize4_user(_this, _possible_battle_guild_list_result_zoclsize4_next);
         };
         
-        hook_record _possible_battle_guild_list_result_zocl_functions[] = {
+        static hook_record _possible_battle_guild_list_result_zocl_functions[] = {
         {   (LPVOID)0x1403d07e0L,
             (LPVOID *)&_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_user,
             (LPVOID *)&_possible_battle_guild_list_result_zoclctor__possible_battle_guild_list_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

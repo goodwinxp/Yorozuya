@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_target_monster_contsf_allinform_zoclInit2_ptr _target_monster_contsf_allinform_zoclInit2_next(nullptr);
-        info::_target_monster_contsf_allinform_zoclInit2_clbk _target_monster_contsf_allinform_zoclInit2_user(nullptr);
-        info::_target_monster_contsf_allinform_zoclIsSame4_ptr _target_monster_contsf_allinform_zoclIsSame4_next(nullptr);
-        info::_target_monster_contsf_allinform_zoclIsSame4_clbk _target_monster_contsf_allinform_zoclIsSame4_user(nullptr);
-        info::_target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_ptr _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_next(nullptr);
-        info::_target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_clbk _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_user(nullptr);
-        info::_target_monster_contsf_allinform_zoclsize8_ptr _target_monster_contsf_allinform_zoclsize8_next(nullptr);
-        info::_target_monster_contsf_allinform_zoclsize8_clbk _target_monster_contsf_allinform_zoclsize8_user(nullptr);
+        static info::_target_monster_contsf_allinform_zoclInit2_ptr _target_monster_contsf_allinform_zoclInit2_next(nullptr);
+        static info::_target_monster_contsf_allinform_zoclInit2_clbk _target_monster_contsf_allinform_zoclInit2_user(nullptr);
+        static info::_target_monster_contsf_allinform_zoclIsSame4_ptr _target_monster_contsf_allinform_zoclIsSame4_next(nullptr);
+        static info::_target_monster_contsf_allinform_zoclIsSame4_clbk _target_monster_contsf_allinform_zoclIsSame4_user(nullptr);
+        static info::_target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_ptr _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_next(nullptr);
+        static info::_target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_clbk _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_user(nullptr);
+        static info::_target_monster_contsf_allinform_zoclsize8_ptr _target_monster_contsf_allinform_zoclsize8_next(nullptr);
+        static info::_target_monster_contsf_allinform_zoclsize8_clbk _target_monster_contsf_allinform_zoclsize8_user(nullptr);
         
-        void _target_monster_contsf_allinform_zoclInit2_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
+        static void _target_monster_contsf_allinform_zoclInit2_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
         {
            _target_monster_contsf_allinform_zoclInit2_user(_this, _target_monster_contsf_allinform_zoclInit2_next);
         };
-        bool _target_monster_contsf_allinform_zoclIsSame4_wrapper(struct _target_monster_contsf_allinform_zocl* src1, struct _target_monster_contsf_allinform_zocl* src2)
+        static bool _target_monster_contsf_allinform_zoclIsSame4_wrapper(struct _target_monster_contsf_allinform_zocl* src1, struct _target_monster_contsf_allinform_zocl* src2)
         {
            return _target_monster_contsf_allinform_zoclIsSame4_user(src1, src2, _target_monster_contsf_allinform_zoclIsSame4_next);
         };
-        void _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
+        static void _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
         {
            _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_user(_this, _target_monster_contsf_allinform_zoclctor__target_monster_contsf_allinform_zocl6_next);
         };
-        int _target_monster_contsf_allinform_zoclsize8_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
+        static int _target_monster_contsf_allinform_zoclsize8_wrapper(struct _target_monster_contsf_allinform_zocl* _this)
         {
            return _target_monster_contsf_allinform_zoclsize8_user(_this, _target_monster_contsf_allinform_zoclsize8_next);
         };
         
-        hook_record _target_monster_contsf_allinform_zocl_functions[] = {
+        static hook_record _target_monster_contsf_allinform_zocl_functions[] = {
         {   (LPVOID)0x140074040L,
             (LPVOID *)&_target_monster_contsf_allinform_zoclInit2_user,
             (LPVOID *)&_target_monster_contsf_allinform_zoclInit2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::LuaParam3ctor_LuaParam32_ptr LuaParam3ctor_LuaParam32_next(nullptr);
-        info::LuaParam3ctor_LuaParam32_clbk LuaParam3ctor_LuaParam32_user(nullptr);
+        static info::LuaParam3ctor_LuaParam32_ptr LuaParam3ctor_LuaParam32_next(nullptr);
+        static info::LuaParam3ctor_LuaParam32_clbk LuaParam3ctor_LuaParam32_user(nullptr);
         
-        void LuaParam3ctor_LuaParam32_wrapper(struct LuaParam3* _this, int n1, int n2, int n3)
+        static void LuaParam3ctor_LuaParam32_wrapper(struct LuaParam3* _this, int n1, int n2, int n3)
         {
            LuaParam3ctor_LuaParam32_user(_this, n1, n2, n3, LuaParam3ctor_LuaParam32_next);
         };
         
-        hook_record LuaParam3_functions[] = {
+        static hook_record LuaParam3_functions[] = {
         {   (LPVOID)0x140409f00L,
             (LPVOID *)&LuaParam3ctor_LuaParam32_user,
             (LPVOID *)&LuaParam3ctor_LuaParam32_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

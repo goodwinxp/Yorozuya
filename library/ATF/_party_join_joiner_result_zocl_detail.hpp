@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_ptr _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_next(nullptr);
-        info::_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_clbk _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_user(nullptr);
-        info::_party_join_joiner_result_zoclsize4_ptr _party_join_joiner_result_zoclsize4_next(nullptr);
-        info::_party_join_joiner_result_zoclsize4_clbk _party_join_joiner_result_zoclsize4_user(nullptr);
+        static info::_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_ptr _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_next(nullptr);
+        static info::_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_clbk _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_user(nullptr);
+        static info::_party_join_joiner_result_zoclsize4_ptr _party_join_joiner_result_zoclsize4_next(nullptr);
+        static info::_party_join_joiner_result_zoclsize4_clbk _party_join_joiner_result_zoclsize4_user(nullptr);
         
-        void _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_wrapper(struct _party_join_joiner_result_zocl* _this)
+        static void _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_wrapper(struct _party_join_joiner_result_zocl* _this)
         {
            _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_user(_this, _party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_next);
         };
-        int _party_join_joiner_result_zoclsize4_wrapper(struct _party_join_joiner_result_zocl* _this)
+        static int _party_join_joiner_result_zoclsize4_wrapper(struct _party_join_joiner_result_zocl* _this)
         {
            return _party_join_joiner_result_zoclsize4_user(_this, _party_join_joiner_result_zoclsize4_next);
         };
         
-        hook_record _party_join_joiner_result_zocl_functions[] = {
+        static hook_record _party_join_joiner_result_zocl_functions[] = {
         {   (LPVOID)0x1400efad0L,
             (LPVOID *)&_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_user,
             (LPVOID *)&_party_join_joiner_result_zoclctor__party_join_joiner_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

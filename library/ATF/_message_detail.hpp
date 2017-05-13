@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_messageGetKey12_ptr _messageGetKey12_next(nullptr);
-        info::_messageGetKey12_clbk _messageGetKey12_user(nullptr);
-        info::_messageGetMessageA4_ptr _messageGetMessageA4_next(nullptr);
-        info::_messageGetMessageA4_clbk _messageGetMessageA4_user(nullptr);
-        info::_messageSetMsg6_ptr _messageSetMsg6_next(nullptr);
-        info::_messageSetMsg6_clbk _messageSetMsg6_user(nullptr);
-        info::_messagector__message8_ptr _messagector__message8_next(nullptr);
-        info::_messagector__message8_clbk _messagector__message8_user(nullptr);
-        info::_messagedtor__message12_ptr _messagedtor__message12_next(nullptr);
-        info::_messagedtor__message12_clbk _messagedtor__message12_user(nullptr);
+        static info::_messageGetKey12_ptr _messageGetKey12_next(nullptr);
+        static info::_messageGetKey12_clbk _messageGetKey12_user(nullptr);
+        static info::_messageGetMessageA4_ptr _messageGetMessageA4_next(nullptr);
+        static info::_messageGetMessageA4_clbk _messageGetMessageA4_user(nullptr);
+        static info::_messageSetMsg6_ptr _messageSetMsg6_next(nullptr);
+        static info::_messageSetMsg6_clbk _messageSetMsg6_user(nullptr);
+        static info::_messagector__message8_ptr _messagector__message8_next(nullptr);
+        static info::_messagector__message8_clbk _messagector__message8_user(nullptr);
+        static info::_messagedtor__message12_ptr _messagedtor__message12_next(nullptr);
+        static info::_messagedtor__message12_clbk _messagedtor__message12_user(nullptr);
         
-        unsigned int _messageGetKey12_wrapper(struct _message* _this)
+        static unsigned int _messageGetKey12_wrapper(struct _message* _this)
         {
            return _messageGetKey12_user(_this, _messageGetKey12_next);
         };
-        unsigned int _messageGetMessageA4_wrapper(struct _message* _this)
+        static unsigned int _messageGetMessageA4_wrapper(struct _message* _this)
         {
            return _messageGetMessageA4_user(_this, _messageGetMessageA4_next);
         };
-        void _messageSetMsg6_wrapper(struct _message* _this, unsigned int message, unsigned int key1, unsigned int key2, unsigned int key3)
+        static void _messageSetMsg6_wrapper(struct _message* _this, unsigned int message, unsigned int key1, unsigned int key2, unsigned int key3)
         {
            _messageSetMsg6_user(_this, message, key1, key2, key3, _messageSetMsg6_next);
         };
-        void _messagector__message8_wrapper(struct _message* _this)
+        static void _messagector__message8_wrapper(struct _message* _this)
         {
            _messagector__message8_user(_this, _messagector__message8_next);
         };
-        void _messagedtor__message12_wrapper(struct _message* _this)
+        static void _messagedtor__message12_wrapper(struct _message* _this)
         {
            _messagedtor__message12_user(_this, _messagedtor__message12_next);
         };
         
-        hook_record _message_functions[] = {
+        static hook_record _message_functions[] = {
         {   (LPVOID)0x1401c0320L,
             (LPVOID *)&_messageGetKey12_user,
             (LPVOID *)&_messageGetKey12_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

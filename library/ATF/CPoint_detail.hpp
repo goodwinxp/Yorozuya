@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPointctor_CPoint1_ptr CPointctor_CPoint1_next(nullptr);
-        info::CPointctor_CPoint1_clbk CPointctor_CPoint1_user(nullptr);
-        info::CPointctor_CPoint2_ptr CPointctor_CPoint2_next(nullptr);
-        info::CPointctor_CPoint2_clbk CPointctor_CPoint2_user(nullptr);
-        info::CPointctor_CPoint3_ptr CPointctor_CPoint3_next(nullptr);
-        info::CPointctor_CPoint3_clbk CPointctor_CPoint3_user(nullptr);
-        info::CPointctor_CPoint4_ptr CPointctor_CPoint4_next(nullptr);
-        info::CPointctor_CPoint4_clbk CPointctor_CPoint4_user(nullptr);
-        info::CPointctor_CPoint5_ptr CPointctor_CPoint5_next(nullptr);
-        info::CPointctor_CPoint5_clbk CPointctor_CPoint5_user(nullptr);
-        info::CPointOffset6_ptr CPointOffset6_next(nullptr);
-        info::CPointOffset6_clbk CPointOffset6_user(nullptr);
-        info::CPointOffset7_ptr CPointOffset7_next(nullptr);
-        info::CPointOffset7_clbk CPointOffset7_user(nullptr);
-        info::CPointOffset8_ptr CPointOffset8_next(nullptr);
-        info::CPointOffset8_clbk CPointOffset8_user(nullptr);
-        info::CPointSetPoint9_ptr CPointSetPoint9_next(nullptr);
-        info::CPointSetPoint9_clbk CPointSetPoint9_user(nullptr);
+        static info::CPointctor_CPoint1_ptr CPointctor_CPoint1_next(nullptr);
+        static info::CPointctor_CPoint1_clbk CPointctor_CPoint1_user(nullptr);
+        static info::CPointctor_CPoint2_ptr CPointctor_CPoint2_next(nullptr);
+        static info::CPointctor_CPoint2_clbk CPointctor_CPoint2_user(nullptr);
+        static info::CPointctor_CPoint3_ptr CPointctor_CPoint3_next(nullptr);
+        static info::CPointctor_CPoint3_clbk CPointctor_CPoint3_user(nullptr);
+        static info::CPointctor_CPoint4_ptr CPointctor_CPoint4_next(nullptr);
+        static info::CPointctor_CPoint4_clbk CPointctor_CPoint4_user(nullptr);
+        static info::CPointctor_CPoint5_ptr CPointctor_CPoint5_next(nullptr);
+        static info::CPointctor_CPoint5_clbk CPointctor_CPoint5_user(nullptr);
+        static info::CPointOffset6_ptr CPointOffset6_next(nullptr);
+        static info::CPointOffset6_clbk CPointOffset6_user(nullptr);
+        static info::CPointOffset7_ptr CPointOffset7_next(nullptr);
+        static info::CPointOffset7_clbk CPointOffset7_user(nullptr);
+        static info::CPointOffset8_ptr CPointOffset8_next(nullptr);
+        static info::CPointOffset8_clbk CPointOffset8_user(nullptr);
+        static info::CPointSetPoint9_ptr CPointSetPoint9_next(nullptr);
+        static info::CPointSetPoint9_clbk CPointSetPoint9_user(nullptr);
         
-        void CPointctor_CPoint1_wrapper(struct CPoint* _this, int64_t dwPoint)
+        static void CPointctor_CPoint1_wrapper(struct CPoint* _this, int64_t dwPoint)
         {
            CPointctor_CPoint1_user(_this, dwPoint, CPointctor_CPoint1_next);
         };
-        void CPointctor_CPoint2_wrapper(struct CPoint* _this, int initX, int initY)
+        static void CPointctor_CPoint2_wrapper(struct CPoint* _this, int initX, int initY)
         {
            CPointctor_CPoint2_user(_this, initX, initY, CPointctor_CPoint2_next);
         };
-        void CPointctor_CPoint3_wrapper(struct CPoint* _this, struct tagPOINT initPt)
+        static void CPointctor_CPoint3_wrapper(struct CPoint* _this, struct tagPOINT initPt)
         {
            CPointctor_CPoint3_user(_this, initPt, CPointctor_CPoint3_next);
         };
-        void CPointctor_CPoint4_wrapper(struct CPoint* _this, struct tagSIZE initSize)
+        static void CPointctor_CPoint4_wrapper(struct CPoint* _this, struct tagSIZE initSize)
         {
            CPointctor_CPoint4_user(_this, initSize, CPointctor_CPoint4_next);
         };
-        void CPointctor_CPoint5_wrapper(struct CPoint* _this)
+        static void CPointctor_CPoint5_wrapper(struct CPoint* _this)
         {
            CPointctor_CPoint5_user(_this, CPointctor_CPoint5_next);
         };
-        void CPointOffset6_wrapper(struct CPoint* _this, int xOffset, int yOffset)
+        static void CPointOffset6_wrapper(struct CPoint* _this, int xOffset, int yOffset)
         {
            CPointOffset6_user(_this, xOffset, yOffset, CPointOffset6_next);
         };
-        void CPointOffset7_wrapper(struct CPoint* _this, struct tagPOINT point)
+        static void CPointOffset7_wrapper(struct CPoint* _this, struct tagPOINT point)
         {
            CPointOffset7_user(_this, point, CPointOffset7_next);
         };
-        void CPointOffset8_wrapper(struct CPoint* _this, struct tagSIZE size)
+        static void CPointOffset8_wrapper(struct CPoint* _this, struct tagSIZE size)
         {
            CPointOffset8_user(_this, size, CPointOffset8_next);
         };
-        void CPointSetPoint9_wrapper(struct CPoint* _this, int X, int Y)
+        static void CPointSetPoint9_wrapper(struct CPoint* _this, int X, int Y)
         {
            CPointSetPoint9_user(_this, X, Y, CPointSetPoint9_next);
         };
         
-        hook_record CPoint_functions[] = {
+        static hook_record CPoint_functions[] = {
         {   (LPVOID)0x140670b20L,
             (LPVOID *)&CPointctor_CPoint1_user,
             (LPVOID *)&CPointctor_CPoint1_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

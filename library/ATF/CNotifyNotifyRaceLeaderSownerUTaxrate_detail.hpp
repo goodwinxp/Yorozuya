@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_ptr CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_clbk CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateInit4_ptr CNotifyNotifyRaceLeaderSownerUTaxrateInit4_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateInit4_clbk CNotifyNotifyRaceLeaderSownerUTaxrateInit4_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_ptr CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_clbk CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_ptr CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_clbk CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_user(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_next(nullptr);
-        info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_ptr CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_clbk CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateInit4_ptr CNotifyNotifyRaceLeaderSownerUTaxrateInit4_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateInit4_clbk CNotifyNotifyRaceLeaderSownerUTaxrateInit4_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_ptr CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_clbk CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_ptr CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_clbk CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_user(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_ptr CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_next(nullptr);
+        static info::CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_clbk CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_user(nullptr);
         
-        void CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this)
+        static void CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this)
         {
            CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_user(_this, CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateInit4_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateInit4_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateInit4_user(_this, CNotifyNotifyRaceLeaderSownerUTaxrateInit4_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_user(_this, byRace, CNotifyNotifyRaceLeaderSownerUTaxrateNotify6_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, uint16_t wIndex)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, uint16_t wIndex)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_user(_this, byRace, wIndex, CNotifyNotifyRaceLeaderSownerUTaxrateNotify8_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, char byNth, char* wszLeaderName)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, char byNth, char* wszLeaderName)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_user(_this, byRace, byNth, wszLeaderName, CNotifyNotifyRaceLeaderSownerUTaxrateUpdateRaceLeader10_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, unsigned int dw1ThGuildSerial, unsigned int dw2ThGuildSerial)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, unsigned int dw1ThGuildSerial, unsigned int dw2ThGuildSerial)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_user(_this, byRace, dw1ThGuildSerial, dw2ThGuildSerial, CNotifyNotifyRaceLeaderSownerUTaxrateUpdateSettlementOwner12_next);
         };
-        void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, char byTaxRate)
+        static void CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_wrapper(struct CNotifyNotifyRaceLeaderSownerUTaxrate* _this, char byRace, char byTaxRate)
         {
            CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_user(_this, byRace, byTaxRate, CNotifyNotifyRaceLeaderSownerUTaxrateUpdateTaxRate14_next);
         };
         
-        hook_record CNotifyNotifyRaceLeaderSownerUTaxrate_functions[] = {
+        static hook_record CNotifyNotifyRaceLeaderSownerUTaxrate_functions[] = {
         {   (LPVOID)0x1401219a0L,
             (LPVOID *)&CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_user,
             (LPVOID *)&CNotifyNotifyRaceLeaderSownerUTaxratector_CNotifyNotifyRaceLeaderSownerUTaxrate2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

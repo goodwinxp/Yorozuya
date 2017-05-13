@@ -1,33 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Main">
+      <UniqueIdentifier>{d7ab938b-d0c0-44f1-bd44-e07251ecea41}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{db776c93-4053-4da3-8610-2ae5306bd331}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Implementation\Modules">
+      <UniqueIdentifier>{984002e2-c9d4-4d3d-9849-93949cda1a8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes">
+      <UniqueIdentifier>{8b9b2f5e-2631-49b7-bd7a-62c95af4320c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{338e16ac-dc29-4c25-8903-b8f673b31143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Helpers">
+      <UniqueIdentifier>{152c40a1-e427-4431-aa94-8dcbd471d82c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Interfaces">
+      <UniqueIdentifier>{84729fe2-b8d5-4ddb-bbac-8c5a47e2cb76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Addons">
+      <UniqueIdentifier>{bb0a8c58-6179-4c9e-855d-999f09ea6bfc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Yorozuya.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+      <Filter>Main</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Yorozuya.h">
+      <Filter>Implementation</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

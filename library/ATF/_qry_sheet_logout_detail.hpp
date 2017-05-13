@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_sheet_logoutctor__qry_sheet_logout2_ptr _qry_sheet_logoutctor__qry_sheet_logout2_next(nullptr);
-        info::_qry_sheet_logoutctor__qry_sheet_logout2_clbk _qry_sheet_logoutctor__qry_sheet_logout2_user(nullptr);
-        info::_qry_sheet_logoutsize4_ptr _qry_sheet_logoutsize4_next(nullptr);
-        info::_qry_sheet_logoutsize4_clbk _qry_sheet_logoutsize4_user(nullptr);
-        info::_qry_sheet_logoutdtor__qry_sheet_logout6_ptr _qry_sheet_logoutdtor__qry_sheet_logout6_next(nullptr);
-        info::_qry_sheet_logoutdtor__qry_sheet_logout6_clbk _qry_sheet_logoutdtor__qry_sheet_logout6_user(nullptr);
+        static info::_qry_sheet_logoutctor__qry_sheet_logout2_ptr _qry_sheet_logoutctor__qry_sheet_logout2_next(nullptr);
+        static info::_qry_sheet_logoutctor__qry_sheet_logout2_clbk _qry_sheet_logoutctor__qry_sheet_logout2_user(nullptr);
+        static info::_qry_sheet_logoutsize4_ptr _qry_sheet_logoutsize4_next(nullptr);
+        static info::_qry_sheet_logoutsize4_clbk _qry_sheet_logoutsize4_user(nullptr);
+        static info::_qry_sheet_logoutdtor__qry_sheet_logout6_ptr _qry_sheet_logoutdtor__qry_sheet_logout6_next(nullptr);
+        static info::_qry_sheet_logoutdtor__qry_sheet_logout6_clbk _qry_sheet_logoutdtor__qry_sheet_logout6_user(nullptr);
         
-        void _qry_sheet_logoutctor__qry_sheet_logout2_wrapper(struct _qry_sheet_logout* _this)
+        static void _qry_sheet_logoutctor__qry_sheet_logout2_wrapper(struct _qry_sheet_logout* _this)
         {
            _qry_sheet_logoutctor__qry_sheet_logout2_user(_this, _qry_sheet_logoutctor__qry_sheet_logout2_next);
         };
-        int _qry_sheet_logoutsize4_wrapper(struct _qry_sheet_logout* _this)
+        static int _qry_sheet_logoutsize4_wrapper(struct _qry_sheet_logout* _this)
         {
            return _qry_sheet_logoutsize4_user(_this, _qry_sheet_logoutsize4_next);
         };
-        void _qry_sheet_logoutdtor__qry_sheet_logout6_wrapper(struct _qry_sheet_logout* _this)
+        static void _qry_sheet_logoutdtor__qry_sheet_logout6_wrapper(struct _qry_sheet_logout* _this)
         {
            _qry_sheet_logoutdtor__qry_sheet_logout6_user(_this, _qry_sheet_logoutdtor__qry_sheet_logout6_next);
         };
         
-        hook_record _qry_sheet_logout_functions[] = {
+        static hook_record _qry_sheet_logout_functions[] = {
         {   (LPVOID)0x14011f3a0L,
             (LPVOID *)&_qry_sheet_logoutctor__qry_sheet_logout2_user,
             (LPVOID *)&_qry_sheet_logoutctor__qry_sheet_logout2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

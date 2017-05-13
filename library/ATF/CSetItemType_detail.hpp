@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSetItemTypector_CSetItemType2_ptr CSetItemTypector_CSetItemType2_next(nullptr);
-        info::CSetItemTypector_CSetItemType2_clbk CSetItemTypector_CSetItemType2_user(nullptr);
-        info::CSetItemTypeClass_Init4_ptr CSetItemTypeClass_Init4_next(nullptr);
-        info::CSetItemTypeClass_Init4_clbk CSetItemTypeClass_Init4_user(nullptr);
-        info::CSetItemTypeGetEffectTypeCount6_ptr CSetItemTypeGetEffectTypeCount6_next(nullptr);
-        info::CSetItemTypeGetEffectTypeCount6_clbk CSetItemTypeGetEffectTypeCount6_user(nullptr);
-        info::CSetItemTypeGetsi_interpret8_ptr CSetItemTypeGetsi_interpret8_next(nullptr);
-        info::CSetItemTypeGetsi_interpret8_clbk CSetItemTypeGetsi_interpret8_user(nullptr);
-        info::CSetItemTypeSetItemType_Init10_ptr CSetItemTypeSetItemType_Init10_next(nullptr);
-        info::CSetItemTypeSetItemType_Init10_clbk CSetItemTypeSetItemType_Init10_user(nullptr);
-        info::CSetItemTypeSetItemType_UnInit12_ptr CSetItemTypeSetItemType_UnInit12_next(nullptr);
-        info::CSetItemTypeSetItemType_UnInit12_clbk CSetItemTypeSetItemType_UnInit12_user(nullptr);
-        info::CSetItemTypedtor_CSetItemType14_ptr CSetItemTypedtor_CSetItemType14_next(nullptr);
-        info::CSetItemTypedtor_CSetItemType14_clbk CSetItemTypedtor_CSetItemType14_user(nullptr);
+        static info::CSetItemTypector_CSetItemType2_ptr CSetItemTypector_CSetItemType2_next(nullptr);
+        static info::CSetItemTypector_CSetItemType2_clbk CSetItemTypector_CSetItemType2_user(nullptr);
+        static info::CSetItemTypeClass_Init4_ptr CSetItemTypeClass_Init4_next(nullptr);
+        static info::CSetItemTypeClass_Init4_clbk CSetItemTypeClass_Init4_user(nullptr);
+        static info::CSetItemTypeGetEffectTypeCount6_ptr CSetItemTypeGetEffectTypeCount6_next(nullptr);
+        static info::CSetItemTypeGetEffectTypeCount6_clbk CSetItemTypeGetEffectTypeCount6_user(nullptr);
+        static info::CSetItemTypeGetsi_interpret8_ptr CSetItemTypeGetsi_interpret8_next(nullptr);
+        static info::CSetItemTypeGetsi_interpret8_clbk CSetItemTypeGetsi_interpret8_user(nullptr);
+        static info::CSetItemTypeSetItemType_Init10_ptr CSetItemTypeSetItemType_Init10_next(nullptr);
+        static info::CSetItemTypeSetItemType_Init10_clbk CSetItemTypeSetItemType_Init10_user(nullptr);
+        static info::CSetItemTypeSetItemType_UnInit12_ptr CSetItemTypeSetItemType_UnInit12_next(nullptr);
+        static info::CSetItemTypeSetItemType_UnInit12_clbk CSetItemTypeSetItemType_UnInit12_user(nullptr);
+        static info::CSetItemTypedtor_CSetItemType14_ptr CSetItemTypedtor_CSetItemType14_next(nullptr);
+        static info::CSetItemTypedtor_CSetItemType14_clbk CSetItemTypedtor_CSetItemType14_user(nullptr);
         
-        void CSetItemTypector_CSetItemType2_wrapper(struct CSetItemType* _this)
+        static void CSetItemTypector_CSetItemType2_wrapper(struct CSetItemType* _this)
         {
            CSetItemTypector_CSetItemType2_user(_this, CSetItemTypector_CSetItemType2_next);
         };
-        void CSetItemTypeClass_Init4_wrapper(struct CSetItemType* _this)
+        static void CSetItemTypeClass_Init4_wrapper(struct CSetItemType* _this)
         {
            CSetItemTypeClass_Init4_user(_this, CSetItemTypeClass_Init4_next);
         };
-        int CSetItemTypeGetEffectTypeCount6_wrapper(struct CSetItemType* _this)
+        static int CSetItemTypeGetEffectTypeCount6_wrapper(struct CSetItemType* _this)
         {
            return CSetItemTypeGetEffectTypeCount6_user(_this, CSetItemTypeGetEffectTypeCount6_next);
         };
-        struct si_interpret* CSetItemTypeGetsi_interpret8_wrapper(struct CSetItemType* _this, int set_pos)
+        static struct si_interpret* CSetItemTypeGetsi_interpret8_wrapper(struct CSetItemType* _this, int set_pos)
         {
            return CSetItemTypeGetsi_interpret8_user(_this, set_pos, CSetItemTypeGetsi_interpret8_next);
         };
-        bool CSetItemTypeSetItemType_Init10_wrapper(struct CSetItemType* _this, struct CRecordData* prd)
+        static bool CSetItemTypeSetItemType_Init10_wrapper(struct CSetItemType* _this, struct CRecordData* prd)
         {
            return CSetItemTypeSetItemType_Init10_user(_this, prd, CSetItemTypeSetItemType_Init10_next);
         };
-        bool CSetItemTypeSetItemType_UnInit12_wrapper(struct CSetItemType* _this)
+        static bool CSetItemTypeSetItemType_UnInit12_wrapper(struct CSetItemType* _this)
         {
            return CSetItemTypeSetItemType_UnInit12_user(_this, CSetItemTypeSetItemType_UnInit12_next);
         };
-        void CSetItemTypedtor_CSetItemType14_wrapper(struct CSetItemType* _this)
+        static void CSetItemTypedtor_CSetItemType14_wrapper(struct CSetItemType* _this)
         {
            CSetItemTypedtor_CSetItemType14_user(_this, CSetItemTypedtor_CSetItemType14_next);
         };
         
-        hook_record CSetItemType_functions[] = {
+        static hook_record CSetItemType_functions[] = {
         {   (LPVOID)0x1402e1cb0L,
             (LPVOID *)&CSetItemTypector_CSetItemType2_user,
             (LPVOID *)&CSetItemTypector_CSetItemType2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

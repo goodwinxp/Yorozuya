@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CTracector_CTrace1_ptr ATL__CTracector_CTrace1_next(nullptr);
-            info::ATL__CTracector_CTrace1_clbk ATL__CTracector_CTrace1_user(nullptr);
-            info::ATL__CTraceChangeCategory2_ptr ATL__CTraceChangeCategory2_next(nullptr);
-            info::ATL__CTraceChangeCategory2_clbk ATL__CTraceChangeCategory2_user(nullptr);
-            info::ATL__CTraceRegisterCategory3_ptr ATL__CTraceRegisterCategory3_next(nullptr);
-            info::ATL__CTraceRegisterCategory3_clbk ATL__CTraceRegisterCategory3_user(nullptr);
-            info::ATL__CTraceTraceV5_ptr ATL__CTraceTraceV5_next(nullptr);
-            info::ATL__CTraceTraceV5_clbk ATL__CTraceTraceV5_user(nullptr);
-            info::ATL__CTracedtor_CTrace6_ptr ATL__CTracedtor_CTrace6_next(nullptr);
-            info::ATL__CTracedtor_CTrace6_clbk ATL__CTracedtor_CTrace6_user(nullptr);
+            static info::ATL__CTracector_CTrace1_ptr ATL__CTracector_CTrace1_next(nullptr);
+            static info::ATL__CTracector_CTrace1_clbk ATL__CTracector_CTrace1_user(nullptr);
+            static info::ATL__CTraceChangeCategory2_ptr ATL__CTraceChangeCategory2_next(nullptr);
+            static info::ATL__CTraceChangeCategory2_clbk ATL__CTraceChangeCategory2_user(nullptr);
+            static info::ATL__CTraceRegisterCategory3_ptr ATL__CTraceRegisterCategory3_next(nullptr);
+            static info::ATL__CTraceRegisterCategory3_clbk ATL__CTraceRegisterCategory3_user(nullptr);
+            static info::ATL__CTraceTraceV5_ptr ATL__CTraceTraceV5_next(nullptr);
+            static info::ATL__CTraceTraceV5_clbk ATL__CTraceTraceV5_user(nullptr);
+            static info::ATL__CTracedtor_CTrace6_ptr ATL__CTracedtor_CTrace6_next(nullptr);
+            static info::ATL__CTracedtor_CTrace6_clbk ATL__CTracedtor_CTrace6_user(nullptr);
             
-            void ATL__CTracector_CTrace1_wrapper(struct ATL::CTrace* _this, int (WINAPIV* pfnCrtDbgReport)(int, char*, int, char*, char*))
+            static void ATL__CTracector_CTrace1_wrapper(struct ATL::CTrace* _this, int (WINAPIV* pfnCrtDbgReport)(int, char*, int, char*, char*))
             {
                ATL__CTracector_CTrace1_user(_this, pfnCrtDbgReport, ATL__CTracector_CTrace1_next);
             };
-            bool ATL__CTraceChangeCategory2_wrapper(struct ATL::CTrace* _this, uint64_t dwCategory, unsigned int nLevel, ATLTRACESTATUS eStatus)
+            static bool ATL__CTraceChangeCategory2_wrapper(struct ATL::CTrace* _this, uint64_t dwCategory, unsigned int nLevel, ATLTRACESTATUS eStatus)
             {
                return ATL__CTraceChangeCategory2_user(_this, dwCategory, nLevel, eStatus, ATL__CTraceChangeCategory2_next);
             };
-            uint64_t ATL__CTraceRegisterCategory3_wrapper(struct ATL::CTrace* _this, char* pszCategory)
+            static uint64_t ATL__CTraceRegisterCategory3_wrapper(struct ATL::CTrace* _this, char* pszCategory)
             {
                return ATL__CTraceRegisterCategory3_user(_this, pszCategory, ATL__CTraceRegisterCategory3_next);
             };
-            void ATL__CTraceTraceV5_wrapper(struct ATL::CTrace* _this, char* pszFileName, int nLine, uint64_t dwCategory, unsigned int nLevel, char* pszFmt, char* args)
+            static void ATL__CTraceTraceV5_wrapper(struct ATL::CTrace* _this, char* pszFileName, int nLine, uint64_t dwCategory, unsigned int nLevel, char* pszFmt, char* args)
             {
                ATL__CTraceTraceV5_user(_this, pszFileName, nLine, dwCategory, nLevel, pszFmt, args, ATL__CTraceTraceV5_next);
             };
-            void ATL__CTracedtor_CTrace6_wrapper(struct ATL::CTrace* _this)
+            static void ATL__CTracedtor_CTrace6_wrapper(struct ATL::CTrace* _this)
             {
                ATL__CTracedtor_CTrace6_user(_this, ATL__CTracedtor_CTrace6_next);
             };
             
-            hook_record CTrace_functions[] = {
+            static hook_record CTrace_functions[] = {
             {   (LPVOID)0x14066ddd0L,
                 (LPVOID *)&ATL__CTracector_CTrace1_user,
                 (LPVOID *)&ATL__CTracector_CTrace1_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

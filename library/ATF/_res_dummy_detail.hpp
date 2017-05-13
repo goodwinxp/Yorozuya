@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_res_dummyGetDelay2_ptr _res_dummyGetDelay2_next(nullptr);
-        info::_res_dummyGetDelay2_clbk _res_dummyGetDelay2_user(nullptr);
-        info::_res_dummyGetQualityGrade4_ptr _res_dummyGetQualityGrade4_next(nullptr);
-        info::_res_dummyGetQualityGrade4_clbk _res_dummyGetQualityGrade4_user(nullptr);
-        info::_res_dummySetDummy6_ptr _res_dummySetDummy6_next(nullptr);
-        info::_res_dummySetDummy6_clbk _res_dummySetDummy6_user(nullptr);
-        info::_res_dummySetRangeGrade8_ptr _res_dummySetRangeGrade8_next(nullptr);
-        info::_res_dummySetRangeGrade8_clbk _res_dummySetRangeGrade8_user(nullptr);
-        info::_res_dummyctor__res_dummy10_ptr _res_dummyctor__res_dummy10_next(nullptr);
-        info::_res_dummyctor__res_dummy10_clbk _res_dummyctor__res_dummy10_user(nullptr);
+        static info::_res_dummyGetDelay2_ptr _res_dummyGetDelay2_next(nullptr);
+        static info::_res_dummyGetDelay2_clbk _res_dummyGetDelay2_user(nullptr);
+        static info::_res_dummyGetQualityGrade4_ptr _res_dummyGetQualityGrade4_next(nullptr);
+        static info::_res_dummyGetQualityGrade4_clbk _res_dummyGetQualityGrade4_user(nullptr);
+        static info::_res_dummySetDummy6_ptr _res_dummySetDummy6_next(nullptr);
+        static info::_res_dummySetDummy6_clbk _res_dummySetDummy6_user(nullptr);
+        static info::_res_dummySetRangeGrade8_ptr _res_dummySetRangeGrade8_next(nullptr);
+        static info::_res_dummySetRangeGrade8_clbk _res_dummySetRangeGrade8_user(nullptr);
+        static info::_res_dummyctor__res_dummy10_ptr _res_dummyctor__res_dummy10_next(nullptr);
+        static info::_res_dummyctor__res_dummy10_clbk _res_dummyctor__res_dummy10_user(nullptr);
         
-        int _res_dummyGetDelay2_wrapper(struct _res_dummy* _this, char bySector, bool bIsPcbang)
+        static int _res_dummyGetDelay2_wrapper(struct _res_dummy* _this, char bySector, bool bIsPcbang)
         {
            return _res_dummyGetDelay2_user(_this, bySector, bIsPcbang, _res_dummyGetDelay2_next);
         };
-        char _res_dummyGetQualityGrade4_wrapper(struct _res_dummy* _this)
+        static char _res_dummyGetQualityGrade4_wrapper(struct _res_dummy* _this)
         {
            return _res_dummyGetQualityGrade4_user(_this, _res_dummyGetQualityGrade4_next);
         };
-        bool _res_dummySetDummy6_wrapper(struct _res_dummy* _this, struct _dummy_position* pDumPos, char byQualityGrade)
+        static bool _res_dummySetDummy6_wrapper(struct _res_dummy* _this, struct _dummy_position* pDumPos, char byQualityGrade)
         {
            return _res_dummySetDummy6_user(_this, pDumPos, byQualityGrade, _res_dummySetDummy6_next);
         };
-        void _res_dummySetRangeGrade8_wrapper(struct _res_dummy* _this)
+        static void _res_dummySetRangeGrade8_wrapper(struct _res_dummy* _this)
         {
            _res_dummySetRangeGrade8_user(_this, _res_dummySetRangeGrade8_next);
         };
-        void _res_dummyctor__res_dummy10_wrapper(struct _res_dummy* _this)
+        static void _res_dummyctor__res_dummy10_wrapper(struct _res_dummy* _this)
         {
            _res_dummyctor__res_dummy10_user(_this, _res_dummyctor__res_dummy10_next);
         };
         
-        hook_record _res_dummy_functions[] = {
+        static hook_record _res_dummy_functions[] = {
         {   (LPVOID)0x1400d3c70L,
             (LPVOID *)&_res_dummyGetDelay2_user,
             (LPVOID *)&_res_dummyGetDelay2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

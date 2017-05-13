@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCheckSumCharacTrunkConverterConvert2_ptr CCheckSumCharacTrunkConverterConvert2_next(nullptr);
-        info::CCheckSumCharacTrunkConverterConvert2_clbk CCheckSumCharacTrunkConverterConvert2_user(nullptr);
-        info::CCheckSumCharacTrunkConverterConvertTrunk4_ptr CCheckSumCharacTrunkConverterConvertTrunk4_next(nullptr);
-        info::CCheckSumCharacTrunkConverterConvertTrunk4_clbk CCheckSumCharacTrunkConverterConvertTrunk4_user(nullptr);
+        static info::CCheckSumCharacTrunkConverterConvert2_ptr CCheckSumCharacTrunkConverterConvert2_next(nullptr);
+        static info::CCheckSumCharacTrunkConverterConvert2_clbk CCheckSumCharacTrunkConverterConvert2_user(nullptr);
+        static info::CCheckSumCharacTrunkConverterConvertTrunk4_ptr CCheckSumCharacTrunkConverterConvertTrunk4_next(nullptr);
+        static info::CCheckSumCharacTrunkConverterConvertTrunk4_clbk CCheckSumCharacTrunkConverterConvertTrunk4_user(nullptr);
         
-        void CCheckSumCharacTrunkConverterConvert2_wrapper(struct CCheckSumCharacTrunkConverter* _this, struct _AVATOR_DATA* pAvator, struct CCheckSumCharacAccountTrunkData* pkCheckSum)
+        static void CCheckSumCharacTrunkConverterConvert2_wrapper(struct CCheckSumCharacTrunkConverter* _this, struct _AVATOR_DATA* pAvator, struct CCheckSumCharacAccountTrunkData* pkCheckSum)
         {
            CCheckSumCharacTrunkConverterConvert2_user(_this, pAvator, pkCheckSum, CCheckSumCharacTrunkConverterConvert2_next);
         };
-        void CCheckSumCharacTrunkConverterConvertTrunk4_wrapper(struct CCheckSumCharacTrunkConverter* _this, unsigned int dwSerial, long double* pVal)
+        static void CCheckSumCharacTrunkConverterConvertTrunk4_wrapper(struct CCheckSumCharacTrunkConverter* _this, unsigned int dwSerial, long double* pVal)
         {
            CCheckSumCharacTrunkConverterConvertTrunk4_user(_this, dwSerial, pVal, CCheckSumCharacTrunkConverterConvertTrunk4_next);
         };
         
-        hook_record CCheckSumCharacTrunkConverter_functions[] = {
+        static hook_record CCheckSumCharacTrunkConverter_functions[] = {
         {   (LPVOID)0x1402c14d0L,
             (LPVOID *)&CCheckSumCharacTrunkConverterConvert2_user,
             (LPVOID *)&CCheckSumCharacTrunkConverterConvert2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

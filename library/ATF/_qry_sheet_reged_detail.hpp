@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_sheet_regedctor__qry_sheet_reged2_ptr _qry_sheet_regedctor__qry_sheet_reged2_next(nullptr);
-        info::_qry_sheet_regedctor__qry_sheet_reged2_clbk _qry_sheet_regedctor__qry_sheet_reged2_user(nullptr);
-        info::_qry_sheet_regedsize4_ptr _qry_sheet_regedsize4_next(nullptr);
-        info::_qry_sheet_regedsize4_clbk _qry_sheet_regedsize4_user(nullptr);
+        static info::_qry_sheet_regedctor__qry_sheet_reged2_ptr _qry_sheet_regedctor__qry_sheet_reged2_next(nullptr);
+        static info::_qry_sheet_regedctor__qry_sheet_reged2_clbk _qry_sheet_regedctor__qry_sheet_reged2_user(nullptr);
+        static info::_qry_sheet_regedsize4_ptr _qry_sheet_regedsize4_next(nullptr);
+        static info::_qry_sheet_regedsize4_clbk _qry_sheet_regedsize4_user(nullptr);
         
-        void _qry_sheet_regedctor__qry_sheet_reged2_wrapper(struct _qry_sheet_reged* _this)
+        static void _qry_sheet_regedctor__qry_sheet_reged2_wrapper(struct _qry_sheet_reged* _this)
         {
            _qry_sheet_regedctor__qry_sheet_reged2_user(_this, _qry_sheet_regedctor__qry_sheet_reged2_next);
         };
-        int _qry_sheet_regedsize4_wrapper(struct _qry_sheet_reged* _this)
+        static int _qry_sheet_regedsize4_wrapper(struct _qry_sheet_reged* _this)
         {
            return _qry_sheet_regedsize4_user(_this, _qry_sheet_regedsize4_next);
         };
         
-        hook_record _qry_sheet_reged_functions[] = {
+        static hook_record _qry_sheet_reged_functions[] = {
         {   (LPVOID)0x14011f550L,
             (LPVOID *)&_qry_sheet_regedctor__qry_sheet_reged2_user,
             (LPVOID *)&_qry_sheet_regedctor__qry_sheet_reged2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

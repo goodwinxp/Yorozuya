@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CToolCollisionFaceDrawCollisionPoint1_ptr CToolCollisionFaceDrawCollisionPoint1_next(nullptr);
-        info::CToolCollisionFaceDrawCollisionPoint1_clbk CToolCollisionFaceDrawCollisionPoint1_user(nullptr);
-        info::CToolCollisionFaceDrawCollisionPoly2_ptr CToolCollisionFaceDrawCollisionPoly2_next(nullptr);
-        info::CToolCollisionFaceDrawCollisionPoly2_clbk CToolCollisionFaceDrawCollisionPoly2_user(nullptr);
+        static info::CToolCollisionFaceDrawCollisionPoint1_ptr CToolCollisionFaceDrawCollisionPoint1_next(nullptr);
+        static info::CToolCollisionFaceDrawCollisionPoint1_clbk CToolCollisionFaceDrawCollisionPoint1_user(nullptr);
+        static info::CToolCollisionFaceDrawCollisionPoly2_ptr CToolCollisionFaceDrawCollisionPoly2_next(nullptr);
+        static info::CToolCollisionFaceDrawCollisionPoly2_clbk CToolCollisionFaceDrawCollisionPoly2_user(nullptr);
         
-        void CToolCollisionFaceDrawCollisionPoint1_wrapper(struct CToolCollisionFace* _this)
+        static void CToolCollisionFaceDrawCollisionPoint1_wrapper(struct CToolCollisionFace* _this)
         {
            CToolCollisionFaceDrawCollisionPoint1_user(_this, CToolCollisionFaceDrawCollisionPoint1_next);
         };
-        void CToolCollisionFaceDrawCollisionPoly2_wrapper(struct CToolCollisionFace* _this)
+        static void CToolCollisionFaceDrawCollisionPoly2_wrapper(struct CToolCollisionFace* _this)
         {
            CToolCollisionFaceDrawCollisionPoly2_user(_this, CToolCollisionFaceDrawCollisionPoly2_next);
         };
         
-        hook_record CToolCollisionFace_functions[] = {
+        static hook_record CToolCollisionFace_functions[] = {
         {   (LPVOID)0x1404f1b50L,
             (LPVOID *)&CToolCollisionFaceDrawCollisionPoint1_user,
             (LPVOID *)&CToolCollisionFaceDrawCollisionPoint1_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

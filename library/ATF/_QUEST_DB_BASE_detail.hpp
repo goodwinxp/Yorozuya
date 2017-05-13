@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_QUEST_DB_BASEInit2_ptr _QUEST_DB_BASEInit2_next(nullptr);
-        info::_QUEST_DB_BASEInit2_clbk _QUEST_DB_BASEInit2_user(nullptr);
-        info::_QUEST_DB_BASEctor__QUEST_DB_BASE4_ptr _QUEST_DB_BASEctor__QUEST_DB_BASE4_next(nullptr);
-        info::_QUEST_DB_BASEctor__QUEST_DB_BASE4_clbk _QUEST_DB_BASEctor__QUEST_DB_BASE4_user(nullptr);
+        static info::_QUEST_DB_BASEInit2_ptr _QUEST_DB_BASEInit2_next(nullptr);
+        static info::_QUEST_DB_BASEInit2_clbk _QUEST_DB_BASEInit2_user(nullptr);
+        static info::_QUEST_DB_BASEctor__QUEST_DB_BASE4_ptr _QUEST_DB_BASEctor__QUEST_DB_BASE4_next(nullptr);
+        static info::_QUEST_DB_BASEctor__QUEST_DB_BASE4_clbk _QUEST_DB_BASEctor__QUEST_DB_BASE4_user(nullptr);
         
-        info::_QUEST_DB_BASE___LISTInit2_ptr _QUEST_DB_BASE___LISTInit2_next(nullptr);
-        info::_QUEST_DB_BASE___LISTInit2_clbk _QUEST_DB_BASE___LISTInit2_user(nullptr);
-        info::_QUEST_DB_BASE___LISTctor__LIST4_ptr _QUEST_DB_BASE___LISTctor__LIST4_next(nullptr);
-        info::_QUEST_DB_BASE___LISTctor__LIST4_clbk _QUEST_DB_BASE___LISTctor__LIST4_user(nullptr);
+        static info::_QUEST_DB_BASE___LISTInit2_ptr _QUEST_DB_BASE___LISTInit2_next(nullptr);
+        static info::_QUEST_DB_BASE___LISTInit2_clbk _QUEST_DB_BASE___LISTInit2_user(nullptr);
+        static info::_QUEST_DB_BASE___LISTctor__LIST4_ptr _QUEST_DB_BASE___LISTctor__LIST4_next(nullptr);
+        static info::_QUEST_DB_BASE___LISTctor__LIST4_clbk _QUEST_DB_BASE___LISTctor__LIST4_user(nullptr);
         
-        info::_QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_ptr _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_next(nullptr);
-        info::_QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_clbk _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_user(nullptr);
-        info::_QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_ptr _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_next(nullptr);
-        info::_QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_clbk _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_user(nullptr);
+        static info::_QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_ptr _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_next(nullptr);
+        static info::_QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_clbk _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_user(nullptr);
+        static info::_QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_ptr _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_next(nullptr);
+        static info::_QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_clbk _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_user(nullptr);
         
-        info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_ptr _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_next(nullptr);
-        info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_clbk _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_user(nullptr);
-        info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_ptr _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_next(nullptr);
-        info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_clbk _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_user(nullptr);
+        static info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_ptr _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_next(nullptr);
+        static info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_clbk _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_user(nullptr);
+        static info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_ptr _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_next(nullptr);
+        static info::_QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_clbk _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_user(nullptr);
         
-        void _QUEST_DB_BASEInit2_wrapper(struct _QUEST_DB_BASE* _this)
+        static void _QUEST_DB_BASEInit2_wrapper(struct _QUEST_DB_BASE* _this)
         {
            _QUEST_DB_BASEInit2_user(_this, _QUEST_DB_BASEInit2_next);
         };
-        void _QUEST_DB_BASEctor__QUEST_DB_BASE4_wrapper(struct _QUEST_DB_BASE* _this)
+        static void _QUEST_DB_BASEctor__QUEST_DB_BASE4_wrapper(struct _QUEST_DB_BASE* _this)
         {
            _QUEST_DB_BASEctor__QUEST_DB_BASE4_user(_this, _QUEST_DB_BASEctor__QUEST_DB_BASE4_next);
         };
         
-        void _QUEST_DB_BASE___LISTInit2_wrapper(struct _QUEST_DB_BASE::_LIST* _this)
+        static void _QUEST_DB_BASE___LISTInit2_wrapper(struct _QUEST_DB_BASE::_LIST* _this)
         {
            _QUEST_DB_BASE___LISTInit2_user(_this, _QUEST_DB_BASE___LISTInit2_next);
         };
-        void _QUEST_DB_BASE___LISTctor__LIST4_wrapper(struct _QUEST_DB_BASE::_LIST* _this)
+        static void _QUEST_DB_BASE___LISTctor__LIST4_wrapper(struct _QUEST_DB_BASE::_LIST* _this)
         {
            _QUEST_DB_BASE___LISTctor__LIST4_user(_this, _QUEST_DB_BASE___LISTctor__LIST4_next);
         };
         
-        void _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_wrapper(struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* _this)
+        static void _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_wrapper(struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* _this)
         {
            _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_user(_this, _QUEST_DB_BASE___NPC_QUEST_HISTORYInit2_next);
         };
-        void _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_wrapper(struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* _this)
+        static void _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_wrapper(struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* _this)
         {
            _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_user(_this, _QUEST_DB_BASE___NPC_QUEST_HISTORYctor__NPC_QUEST_HISTORY4_next);
         };
         
-        void _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_wrapper(struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* _this)
+        static void _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_wrapper(struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* _this)
         {
            _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_user(_this, _QUEST_DB_BASE___START_NPC_QUEST_HISTORYInit2_next);
         };
-        void _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_wrapper(struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* _this)
+        static void _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_wrapper(struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* _this)
         {
            _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_user(_this, _QUEST_DB_BASE___START_NPC_QUEST_HISTORYctor__START_NPC_QUEST_HISTORY4_next);
         };
         
-        hook_record _QUEST_DB_BASE_functions[] = {
+        static hook_record _QUEST_DB_BASE_functions[] = {
         {   (LPVOID)0x140076a30L,
             (LPVOID *)&_QUEST_DB_BASEInit2_user,
             (LPVOID *)&_QUEST_DB_BASEInit2_next,
@@ -111,5 +111,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

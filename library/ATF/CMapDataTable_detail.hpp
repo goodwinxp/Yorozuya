@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMapDataTablector_CMapDataTable2_ptr CMapDataTablector_CMapDataTable2_next(nullptr);
-        info::CMapDataTablector_CMapDataTable2_clbk CMapDataTablector_CMapDataTable2_user(nullptr);
-        info::CMapDataTableGetRecord4_ptr CMapDataTableGetRecord4_next(nullptr);
-        info::CMapDataTableGetRecord4_clbk CMapDataTableGetRecord4_user(nullptr);
-        info::CMapDataTableGetRecordNum6_ptr CMapDataTableGetRecordNum6_next(nullptr);
-        info::CMapDataTableGetRecordNum6_clbk CMapDataTableGetRecordNum6_user(nullptr);
-        info::CMapDataTableReadScript8_ptr CMapDataTableReadScript8_next(nullptr);
-        info::CMapDataTableReadScript8_clbk CMapDataTableReadScript8_user(nullptr);
-        info::CMapDataTabledtor_CMapDataTable13_ptr CMapDataTabledtor_CMapDataTable13_next(nullptr);
-        info::CMapDataTabledtor_CMapDataTable13_clbk CMapDataTabledtor_CMapDataTable13_user(nullptr);
+        static info::CMapDataTablector_CMapDataTable2_ptr CMapDataTablector_CMapDataTable2_next(nullptr);
+        static info::CMapDataTablector_CMapDataTable2_clbk CMapDataTablector_CMapDataTable2_user(nullptr);
+        static info::CMapDataTableGetRecord4_ptr CMapDataTableGetRecord4_next(nullptr);
+        static info::CMapDataTableGetRecord4_clbk CMapDataTableGetRecord4_user(nullptr);
+        static info::CMapDataTableGetRecordNum6_ptr CMapDataTableGetRecordNum6_next(nullptr);
+        static info::CMapDataTableGetRecordNum6_clbk CMapDataTableGetRecordNum6_user(nullptr);
+        static info::CMapDataTableReadScript8_ptr CMapDataTableReadScript8_next(nullptr);
+        static info::CMapDataTableReadScript8_clbk CMapDataTableReadScript8_user(nullptr);
+        static info::CMapDataTabledtor_CMapDataTable13_ptr CMapDataTabledtor_CMapDataTable13_next(nullptr);
+        static info::CMapDataTabledtor_CMapDataTable13_clbk CMapDataTabledtor_CMapDataTable13_user(nullptr);
         
-        void CMapDataTablector_CMapDataTable2_wrapper(struct CMapDataTable* _this)
+        static void CMapDataTablector_CMapDataTable2_wrapper(struct CMapDataTable* _this)
         {
            CMapDataTablector_CMapDataTable2_user(_this, CMapDataTablector_CMapDataTable2_next);
         };
-        struct _map_fld* CMapDataTableGetRecord4_wrapper(struct CMapDataTable* _this, unsigned int dwIndex)
+        static struct _map_fld* CMapDataTableGetRecord4_wrapper(struct CMapDataTable* _this, unsigned int dwIndex)
         {
            return CMapDataTableGetRecord4_user(_this, dwIndex, CMapDataTableGetRecord4_next);
         };
-        int CMapDataTableGetRecordNum6_wrapper(struct CMapDataTable* _this)
+        static int CMapDataTableGetRecordNum6_wrapper(struct CMapDataTable* _this)
         {
            return CMapDataTableGetRecordNum6_user(_this, CMapDataTableGetRecordNum6_next);
         };
-        bool CMapDataTableReadScript8_wrapper(struct CMapDataTable* _this, char* szFileName)
+        static bool CMapDataTableReadScript8_wrapper(struct CMapDataTable* _this, char* szFileName)
         {
            return CMapDataTableReadScript8_user(_this, szFileName, CMapDataTableReadScript8_next);
         };
-        void CMapDataTabledtor_CMapDataTable13_wrapper(struct CMapDataTable* _this)
+        static void CMapDataTabledtor_CMapDataTable13_wrapper(struct CMapDataTable* _this)
         {
            CMapDataTabledtor_CMapDataTable13_user(_this, CMapDataTabledtor_CMapDataTable13_next);
         };
         
-        hook_record CMapDataTable_functions[] = {
+        static hook_record CMapDataTable_functions[] = {
         {   (LPVOID)0x140198740L,
             (LPVOID *)&CMapDataTablector_CMapDataTable2_user,
             (LPVOID *)&CMapDataTablector_CMapDataTable2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

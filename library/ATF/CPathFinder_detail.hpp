@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPathFinderAddPath1_ptr CPathFinderAddPath1_next(nullptr);
-        info::CPathFinderAddPath1_clbk CPathFinderAddPath1_user(nullptr);
-        info::CPathFinderCompletePath2_ptr CPathFinderCompletePath2_next(nullptr);
-        info::CPathFinderCompletePath2_clbk CPathFinderCompletePath2_user(nullptr);
-        info::CPathFinderGetBackLineId3_ptr CPathFinderGetBackLineId3_next(nullptr);
-        info::CPathFinderGetBackLineId3_clbk CPathFinderGetBackLineId3_user(nullptr);
-        info::CPathFinderGetFrontLineId4_ptr CPathFinderGetFrontLineId4_next(nullptr);
-        info::CPathFinderGetFrontLineId4_clbk CPathFinderGetFrontLineId4_user(nullptr);
-        info::CPathFinderGetPathCnt5_ptr CPathFinderGetPathCnt5_next(nullptr);
-        info::CPathFinderGetPathCnt5_clbk CPathFinderGetPathCnt5_user(nullptr);
-        info::CPathFinderGetPathDirection6_ptr CPathFinderGetPathDirection6_next(nullptr);
-        info::CPathFinderGetPathDirection6_clbk CPathFinderGetPathDirection6_user(nullptr);
-        info::CPathFinderPopPathStack7_ptr CPathFinderPopPathStack7_next(nullptr);
-        info::CPathFinderPopPathStack7_clbk CPathFinderPopPathStack7_user(nullptr);
-        info::CPathFinderPushPathStack8_ptr CPathFinderPushPathStack8_next(nullptr);
-        info::CPathFinderPushPathStack8_clbk CPathFinderPushPathStack8_user(nullptr);
-        info::CPathFinderSetBackLineId9_ptr CPathFinderSetBackLineId9_next(nullptr);
-        info::CPathFinderSetBackLineId9_clbk CPathFinderSetBackLineId9_user(nullptr);
-        info::CPathFinderSetFrontLineId10_ptr CPathFinderSetFrontLineId10_next(nullptr);
-        info::CPathFinderSetFrontLineId10_clbk CPathFinderSetFrontLineId10_user(nullptr);
-        info::CPathFinderSetPathDirection11_ptr CPathFinderSetPathDirection11_next(nullptr);
-        info::CPathFinderSetPathDirection11_clbk CPathFinderSetPathDirection11_user(nullptr);
+        static info::CPathFinderAddPath1_ptr CPathFinderAddPath1_next(nullptr);
+        static info::CPathFinderAddPath1_clbk CPathFinderAddPath1_user(nullptr);
+        static info::CPathFinderCompletePath2_ptr CPathFinderCompletePath2_next(nullptr);
+        static info::CPathFinderCompletePath2_clbk CPathFinderCompletePath2_user(nullptr);
+        static info::CPathFinderGetBackLineId3_ptr CPathFinderGetBackLineId3_next(nullptr);
+        static info::CPathFinderGetBackLineId3_clbk CPathFinderGetBackLineId3_user(nullptr);
+        static info::CPathFinderGetFrontLineId4_ptr CPathFinderGetFrontLineId4_next(nullptr);
+        static info::CPathFinderGetFrontLineId4_clbk CPathFinderGetFrontLineId4_user(nullptr);
+        static info::CPathFinderGetPathCnt5_ptr CPathFinderGetPathCnt5_next(nullptr);
+        static info::CPathFinderGetPathCnt5_clbk CPathFinderGetPathCnt5_user(nullptr);
+        static info::CPathFinderGetPathDirection6_ptr CPathFinderGetPathDirection6_next(nullptr);
+        static info::CPathFinderGetPathDirection6_clbk CPathFinderGetPathDirection6_user(nullptr);
+        static info::CPathFinderPopPathStack7_ptr CPathFinderPopPathStack7_next(nullptr);
+        static info::CPathFinderPopPathStack7_clbk CPathFinderPopPathStack7_user(nullptr);
+        static info::CPathFinderPushPathStack8_ptr CPathFinderPushPathStack8_next(nullptr);
+        static info::CPathFinderPushPathStack8_clbk CPathFinderPushPathStack8_user(nullptr);
+        static info::CPathFinderSetBackLineId9_ptr CPathFinderSetBackLineId9_next(nullptr);
+        static info::CPathFinderSetBackLineId9_clbk CPathFinderSetBackLineId9_user(nullptr);
+        static info::CPathFinderSetFrontLineId10_ptr CPathFinderSetFrontLineId10_next(nullptr);
+        static info::CPathFinderSetFrontLineId10_clbk CPathFinderSetFrontLineId10_user(nullptr);
+        static info::CPathFinderSetPathDirection11_ptr CPathFinderSetPathDirection11_next(nullptr);
+        static info::CPathFinderSetPathDirection11_clbk CPathFinderSetPathDirection11_user(nullptr);
         
-        int64_t CPathFinderAddPath1_wrapper(struct CPathFinder* _this, float* arg_0, int arg_1)
+        static int64_t CPathFinderAddPath1_wrapper(struct CPathFinder* _this, float* arg_0, int arg_1)
         {
            return CPathFinderAddPath1_user(_this, arg_0, arg_1, CPathFinderAddPath1_next);
         };
-        void CPathFinderCompletePath2_wrapper(struct CPathFinder* _this, int arg_0)
+        static void CPathFinderCompletePath2_wrapper(struct CPathFinder* _this, int arg_0)
         {
            CPathFinderCompletePath2_user(_this, arg_0, CPathFinderCompletePath2_next);
         };
-        uint16_t CPathFinderGetBackLineId3_wrapper(struct CPathFinder* _this, int arg_0)
+        static uint16_t CPathFinderGetBackLineId3_wrapper(struct CPathFinder* _this, int arg_0)
         {
            return CPathFinderGetBackLineId3_user(_this, arg_0, CPathFinderGetBackLineId3_next);
         };
-        uint16_t CPathFinderGetFrontLineId4_wrapper(struct CPathFinder* _this, int arg_0)
+        static uint16_t CPathFinderGetFrontLineId4_wrapper(struct CPathFinder* _this, int arg_0)
         {
            return CPathFinderGetFrontLineId4_user(_this, arg_0, CPathFinderGetFrontLineId4_next);
         };
-        int64_t CPathFinderGetPathCnt5_wrapper(struct CPathFinder* _this, int arg_0)
+        static int64_t CPathFinderGetPathCnt5_wrapper(struct CPathFinder* _this, int arg_0)
         {
            return CPathFinderGetPathCnt5_user(_this, arg_0, CPathFinderGetPathCnt5_next);
         };
-        int64_t CPathFinderGetPathDirection6_wrapper(struct CPathFinder* _this, int arg_0)
+        static int64_t CPathFinderGetPathDirection6_wrapper(struct CPathFinder* _this, int arg_0)
         {
            return CPathFinderGetPathDirection6_user(_this, arg_0, CPathFinderGetPathDirection6_next);
         };
-        void CPathFinderPopPathStack7_wrapper(struct CPathFinder* _this, int arg_0)
+        static void CPathFinderPopPathStack7_wrapper(struct CPathFinder* _this, int arg_0)
         {
            CPathFinderPopPathStack7_user(_this, arg_0, CPathFinderPopPathStack7_next);
         };
-        void CPathFinderPushPathStack8_wrapper(struct CPathFinder* _this, int arg_0)
+        static void CPathFinderPushPathStack8_wrapper(struct CPathFinder* _this, int arg_0)
         {
            CPathFinderPushPathStack8_user(_this, arg_0, CPathFinderPushPathStack8_next);
         };
-        void CPathFinderSetBackLineId9_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
+        static void CPathFinderSetBackLineId9_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
         {
            CPathFinderSetBackLineId9_user(_this, arg_0, arg_1, CPathFinderSetBackLineId9_next);
         };
-        void CPathFinderSetFrontLineId10_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
+        static void CPathFinderSetFrontLineId10_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
         {
            CPathFinderSetFrontLineId10_user(_this, arg_0, arg_1, CPathFinderSetFrontLineId10_next);
         };
-        void CPathFinderSetPathDirection11_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
+        static void CPathFinderSetPathDirection11_wrapper(struct CPathFinder* _this, int arg_0, int arg_1)
         {
            CPathFinderSetPathDirection11_user(_this, arg_0, arg_1, CPathFinderSetPathDirection11_next);
         };
         
-        hook_record CPathFinder_functions[] = {
+        static hook_record CPathFinder_functions[] = {
         {   (LPVOID)0x14050c710L,
             (LPVOID *)&CPathFinderAddPath1_user,
             (LPVOID *)&CPathFinderAddPath1_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

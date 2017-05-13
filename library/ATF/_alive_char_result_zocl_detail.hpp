@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_alive_char_result_zoclctor__alive_char_result_zocl2_ptr _alive_char_result_zoclctor__alive_char_result_zocl2_next(nullptr);
-        info::_alive_char_result_zoclctor__alive_char_result_zocl2_clbk _alive_char_result_zoclctor__alive_char_result_zocl2_user(nullptr);
+        static info::_alive_char_result_zoclctor__alive_char_result_zocl2_ptr _alive_char_result_zoclctor__alive_char_result_zocl2_next(nullptr);
+        static info::_alive_char_result_zoclctor__alive_char_result_zocl2_clbk _alive_char_result_zoclctor__alive_char_result_zocl2_user(nullptr);
         
-        void _alive_char_result_zoclctor__alive_char_result_zocl2_wrapper(struct _alive_char_result_zocl* _this)
+        static void _alive_char_result_zoclctor__alive_char_result_zocl2_wrapper(struct _alive_char_result_zocl* _this)
         {
            _alive_char_result_zoclctor__alive_char_result_zocl2_user(_this, _alive_char_result_zoclctor__alive_char_result_zocl2_next);
         };
         
-        hook_record _alive_char_result_zocl_functions[] = {
+        static hook_record _alive_char_result_zocl_functions[] = {
         {   (LPVOID)0x140120dd0L,
             (LPVOID *)&_alive_char_result_zoclctor__alive_char_result_zocl2_user,
             (LPVOID *)&_alive_char_result_zoclctor__alive_char_result_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

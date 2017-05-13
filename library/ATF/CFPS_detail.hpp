@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CFPSctor_CFPS2_ptr CFPSctor_CFPS2_next(nullptr);
-        info::CFPSctor_CFPS2_clbk CFPSctor_CFPS2_user(nullptr);
-        info::CFPSCalcFPS4_ptr CFPSCalcFPS4_next(nullptr);
-        info::CFPSCalcFPS4_clbk CFPSCalcFPS4_user(nullptr);
-        info::CFPSGetFPS6_ptr CFPSGetFPS6_next(nullptr);
-        info::CFPSGetFPS6_clbk CFPSGetFPS6_user(nullptr);
-        info::CFPSdtor_CFPS11_ptr CFPSdtor_CFPS11_next(nullptr);
-        info::CFPSdtor_CFPS11_clbk CFPSdtor_CFPS11_user(nullptr);
+        static info::CFPSctor_CFPS2_ptr CFPSctor_CFPS2_next(nullptr);
+        static info::CFPSctor_CFPS2_clbk CFPSctor_CFPS2_user(nullptr);
+        static info::CFPSCalcFPS4_ptr CFPSCalcFPS4_next(nullptr);
+        static info::CFPSCalcFPS4_clbk CFPSCalcFPS4_user(nullptr);
+        static info::CFPSGetFPS6_ptr CFPSGetFPS6_next(nullptr);
+        static info::CFPSGetFPS6_clbk CFPSGetFPS6_user(nullptr);
+        static info::CFPSdtor_CFPS11_ptr CFPSdtor_CFPS11_next(nullptr);
+        static info::CFPSdtor_CFPS11_clbk CFPSdtor_CFPS11_user(nullptr);
         
-        void CFPSctor_CFPS2_wrapper(struct CFPS* _this)
+        static void CFPSctor_CFPS2_wrapper(struct CFPS* _this)
         {
            CFPSctor_CFPS2_user(_this, CFPSctor_CFPS2_next);
         };
-        void CFPSCalcFPS4_wrapper(struct CFPS* _this)
+        static void CFPSCalcFPS4_wrapper(struct CFPS* _this)
         {
            CFPSCalcFPS4_user(_this, CFPSCalcFPS4_next);
         };
-        unsigned int CFPSGetFPS6_wrapper(struct CFPS* _this)
+        static unsigned int CFPSGetFPS6_wrapper(struct CFPS* _this)
         {
            return CFPSGetFPS6_user(_this, CFPSGetFPS6_next);
         };
-        void CFPSdtor_CFPS11_wrapper(struct CFPS* _this)
+        static void CFPSdtor_CFPS11_wrapper(struct CFPS* _this)
         {
            CFPSdtor_CFPS11_user(_this, CFPSdtor_CFPS11_next);
         };
         
-        hook_record CFPS_functions[] = {
+        static hook_record CFPS_functions[] = {
         {   (LPVOID)0x140438f50L,
             (LPVOID *)&CFPSctor_CFPS2_user,
             (LPVOID *)&CFPSctor_CFPS2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

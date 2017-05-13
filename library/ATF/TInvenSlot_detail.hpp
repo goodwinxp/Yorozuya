@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TInvenSlotctor_TInvenSlot2_ptr TInvenSlotctor_TInvenSlot2_next(nullptr);
-        info::TInvenSlotctor_TInvenSlot2_clbk TInvenSlotctor_TInvenSlot2_user(nullptr);
-        info::TInvenSlotctor_TInvenSlot4_ptr TInvenSlotctor_TInvenSlot4_next(nullptr);
-        info::TInvenSlotctor_TInvenSlot4_clbk TInvenSlotctor_TInvenSlot4_user(nullptr);
-        info::TInvenSlotable_overlap8_ptr TInvenSlotable_overlap8_next(nullptr);
-        info::TInvenSlotable_overlap8_clbk TInvenSlotable_overlap8_user(nullptr);
-        info::TInvenSlotclear10_ptr TInvenSlotclear10_next(nullptr);
-        info::TInvenSlotclear10_clbk TInvenSlotclear10_user(nullptr);
-        info::TInvenSlotget_overlapnum12_ptr TInvenSlotget_overlapnum12_next(nullptr);
-        info::TInvenSlotget_overlapnum12_clbk TInvenSlotget_overlapnum12_user(nullptr);
-        info::TInvenSlotget_pitem14_ptr TInvenSlotget_pitem14_next(nullptr);
-        info::TInvenSlotget_pitem14_clbk TInvenSlotget_pitem14_user(nullptr);
-        info::TInvenSlotis_empty16_ptr TInvenSlotis_empty16_next(nullptr);
-        info::TInvenSlotis_empty16_clbk TInvenSlotis_empty16_user(nullptr);
-        info::TInvenSlotpop20_ptr TInvenSlotpop20_next(nullptr);
-        info::TInvenSlotpop20_clbk TInvenSlotpop20_user(nullptr);
-        info::TInvenSlotpush22_ptr TInvenSlotpush22_next(nullptr);
-        info::TInvenSlotpush22_clbk TInvenSlotpush22_user(nullptr);
-        info::TInvenSlotset_overlapnum24_ptr TInvenSlotset_overlapnum24_next(nullptr);
-        info::TInvenSlotset_overlapnum24_clbk TInvenSlotset_overlapnum24_user(nullptr);
-        info::TInvenSlotdtor_TInvenSlot26_ptr TInvenSlotdtor_TInvenSlot26_next(nullptr);
-        info::TInvenSlotdtor_TInvenSlot26_clbk TInvenSlotdtor_TInvenSlot26_user(nullptr);
+        static info::TInvenSlotctor_TInvenSlot2_ptr TInvenSlotctor_TInvenSlot2_next(nullptr);
+        static info::TInvenSlotctor_TInvenSlot2_clbk TInvenSlotctor_TInvenSlot2_user(nullptr);
+        static info::TInvenSlotctor_TInvenSlot4_ptr TInvenSlotctor_TInvenSlot4_next(nullptr);
+        static info::TInvenSlotctor_TInvenSlot4_clbk TInvenSlotctor_TInvenSlot4_user(nullptr);
+        static info::TInvenSlotable_overlap8_ptr TInvenSlotable_overlap8_next(nullptr);
+        static info::TInvenSlotable_overlap8_clbk TInvenSlotable_overlap8_user(nullptr);
+        static info::TInvenSlotclear10_ptr TInvenSlotclear10_next(nullptr);
+        static info::TInvenSlotclear10_clbk TInvenSlotclear10_user(nullptr);
+        static info::TInvenSlotget_overlapnum12_ptr TInvenSlotget_overlapnum12_next(nullptr);
+        static info::TInvenSlotget_overlapnum12_clbk TInvenSlotget_overlapnum12_user(nullptr);
+        static info::TInvenSlotget_pitem14_ptr TInvenSlotget_pitem14_next(nullptr);
+        static info::TInvenSlotget_pitem14_clbk TInvenSlotget_pitem14_user(nullptr);
+        static info::TInvenSlotis_empty16_ptr TInvenSlotis_empty16_next(nullptr);
+        static info::TInvenSlotis_empty16_clbk TInvenSlotis_empty16_user(nullptr);
+        static info::TInvenSlotpop20_ptr TInvenSlotpop20_next(nullptr);
+        static info::TInvenSlotpop20_clbk TInvenSlotpop20_user(nullptr);
+        static info::TInvenSlotpush22_ptr TInvenSlotpush22_next(nullptr);
+        static info::TInvenSlotpush22_clbk TInvenSlotpush22_user(nullptr);
+        static info::TInvenSlotset_overlapnum24_ptr TInvenSlotset_overlapnum24_next(nullptr);
+        static info::TInvenSlotset_overlapnum24_clbk TInvenSlotset_overlapnum24_user(nullptr);
+        static info::TInvenSlotdtor_TInvenSlot26_ptr TInvenSlotdtor_TInvenSlot26_next(nullptr);
+        static info::TInvenSlotdtor_TInvenSlot26_clbk TInvenSlotdtor_TInvenSlot26_user(nullptr);
         
-        void TInvenSlotctor_TInvenSlot2_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct TInvenSlot<_INVENKEY>* rhs)
+        static void TInvenSlotctor_TInvenSlot2_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct TInvenSlot<_INVENKEY>* rhs)
         {
            TInvenSlotctor_TInvenSlot2_user(_this, rhs);
         };
-        void TInvenSlotctor_TInvenSlot4_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static void TInvenSlotctor_TInvenSlot4_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            TInvenSlotctor_TInvenSlot4_user(_this);
         };
-        bool TInvenSlotable_overlap8_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
+        static bool TInvenSlotable_overlap8_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
         {
            return TInvenSlotable_overlap8_user(_this, pItem, nNum);
         };
-        void TInvenSlotclear10_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static void TInvenSlotclear10_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            TInvenSlotclear10_user(_this);
         };
-        unsigned int TInvenSlotget_overlapnum12_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static unsigned int TInvenSlotget_overlapnum12_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            return TInvenSlotget_overlapnum12_user(_this);
         };
-        struct _INVENKEY* TInvenSlotget_pitem14_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static struct _INVENKEY* TInvenSlotget_pitem14_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            return TInvenSlotget_pitem14_user(_this);
         };
-        bool TInvenSlotis_empty16_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static bool TInvenSlotis_empty16_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            return TInvenSlotis_empty16_user(_this);
         };
-        int TInvenSlotpop20_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
+        static int TInvenSlotpop20_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
         {
            return TInvenSlotpop20_user(_this, pItem, nNum);
         };
-        int TInvenSlotpush22_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
+        static int TInvenSlotpush22_wrapper(struct TInvenSlot<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
         {
            return TInvenSlotpush22_user(_this, pItem, nNum);
         };
-        void TInvenSlotset_overlapnum24_wrapper(struct TInvenSlot<_INVENKEY>* _this, int n)
+        static void TInvenSlotset_overlapnum24_wrapper(struct TInvenSlot<_INVENKEY>* _this, int n)
         {
            TInvenSlotset_overlapnum24_user(_this, n);
         };
-        void TInvenSlotdtor_TInvenSlot26_wrapper(struct TInvenSlot<_INVENKEY>* _this)
+        static void TInvenSlotdtor_TInvenSlot26_wrapper(struct TInvenSlot<_INVENKEY>* _this)
         {
            TInvenSlotdtor_TInvenSlot26_user(_this);
         };
         
-        hook_record TInvenSlot<_INVENKEY>_functions[] = {
+        static hook_record TInvenSlot<_INVENKEY>_functions[] = {
         {   (LPVOID)0x1402d4ee0L,
             (LPVOID *)&TInvenSlotctor_TInvenSlot2_user,
             (LPVOID *)&TInvenSlotctor_TInvenSlot2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

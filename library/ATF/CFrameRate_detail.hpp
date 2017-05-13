@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CFrameRatector_CFrameRate2_ptr CFrameRatector_CFrameRate2_next(nullptr);
-        info::CFrameRatector_CFrameRate2_clbk CFrameRatector_CFrameRate2_user(nullptr);
-        info::CFrameRateCalcSpeedPerFrame4_ptr CFrameRateCalcSpeedPerFrame4_next(nullptr);
-        info::CFrameRateCalcSpeedPerFrame4_clbk CFrameRateCalcSpeedPerFrame4_user(nullptr);
-        info::CFrameRateGetFPS6_ptr CFrameRateGetFPS6_next(nullptr);
-        info::CFrameRateGetFPS6_clbk CFrameRateGetFPS6_user(nullptr);
-        info::CFrameRateGetSpeedPerFrame8_ptr CFrameRateGetSpeedPerFrame8_next(nullptr);
-        info::CFrameRateGetSpeedPerFrame8_clbk CFrameRateGetSpeedPerFrame8_user(nullptr);
-        info::CFrameRatedtor_CFrameRate13_ptr CFrameRatedtor_CFrameRate13_next(nullptr);
-        info::CFrameRatedtor_CFrameRate13_clbk CFrameRatedtor_CFrameRate13_user(nullptr);
+        static info::CFrameRatector_CFrameRate2_ptr CFrameRatector_CFrameRate2_next(nullptr);
+        static info::CFrameRatector_CFrameRate2_clbk CFrameRatector_CFrameRate2_user(nullptr);
+        static info::CFrameRateCalcSpeedPerFrame4_ptr CFrameRateCalcSpeedPerFrame4_next(nullptr);
+        static info::CFrameRateCalcSpeedPerFrame4_clbk CFrameRateCalcSpeedPerFrame4_user(nullptr);
+        static info::CFrameRateGetFPS6_ptr CFrameRateGetFPS6_next(nullptr);
+        static info::CFrameRateGetFPS6_clbk CFrameRateGetFPS6_user(nullptr);
+        static info::CFrameRateGetSpeedPerFrame8_ptr CFrameRateGetSpeedPerFrame8_next(nullptr);
+        static info::CFrameRateGetSpeedPerFrame8_clbk CFrameRateGetSpeedPerFrame8_user(nullptr);
+        static info::CFrameRatedtor_CFrameRate13_ptr CFrameRatedtor_CFrameRate13_next(nullptr);
+        static info::CFrameRatedtor_CFrameRate13_clbk CFrameRatedtor_CFrameRate13_user(nullptr);
         
-        void CFrameRatector_CFrameRate2_wrapper(struct CFrameRate* _this)
+        static void CFrameRatector_CFrameRate2_wrapper(struct CFrameRate* _this)
         {
            CFrameRatector_CFrameRate2_user(_this, CFrameRatector_CFrameRate2_next);
         };
-        void CFrameRateCalcSpeedPerFrame4_wrapper(struct CFrameRate* _this)
+        static void CFrameRateCalcSpeedPerFrame4_wrapper(struct CFrameRate* _this)
         {
            CFrameRateCalcSpeedPerFrame4_user(_this, CFrameRateCalcSpeedPerFrame4_next);
         };
-        unsigned int CFrameRateGetFPS6_wrapper(struct CFrameRate* _this)
+        static unsigned int CFrameRateGetFPS6_wrapper(struct CFrameRate* _this)
         {
            return CFrameRateGetFPS6_user(_this, CFrameRateGetFPS6_next);
         };
-        float CFrameRateGetSpeedPerFrame8_wrapper(struct CFrameRate* _this)
+        static float CFrameRateGetSpeedPerFrame8_wrapper(struct CFrameRate* _this)
         {
            return CFrameRateGetSpeedPerFrame8_user(_this, CFrameRateGetSpeedPerFrame8_next);
         };
-        void CFrameRatedtor_CFrameRate13_wrapper(struct CFrameRate* _this)
+        static void CFrameRatedtor_CFrameRate13_wrapper(struct CFrameRate* _this)
         {
            CFrameRatedtor_CFrameRate13_user(_this, CFrameRatedtor_CFrameRate13_next);
         };
         
-        hook_record CFrameRate_functions[] = {
+        static hook_record CFrameRate_functions[] = {
         {   (LPVOID)0x140438d80L,
             (LPVOID *)&CFrameRatector_CFrameRate2_user,
             (LPVOID *)&CFrameRatector_CFrameRate2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

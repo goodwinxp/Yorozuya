@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_ptr _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_next(nullptr);
-        info::_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_clbk _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_user(nullptr);
-        info::_qry_case_update_data_for_post_sendsize4_ptr _qry_case_update_data_for_post_sendsize4_next(nullptr);
-        info::_qry_case_update_data_for_post_sendsize4_clbk _qry_case_update_data_for_post_sendsize4_user(nullptr);
+        static info::_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_ptr _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_next(nullptr);
+        static info::_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_clbk _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_user(nullptr);
+        static info::_qry_case_update_data_for_post_sendsize4_ptr _qry_case_update_data_for_post_sendsize4_next(nullptr);
+        static info::_qry_case_update_data_for_post_sendsize4_clbk _qry_case_update_data_for_post_sendsize4_user(nullptr);
         
-        void _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_wrapper(struct _qry_case_update_data_for_post_send* _this)
+        static void _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_wrapper(struct _qry_case_update_data_for_post_send* _this)
         {
            _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_user(_this, _qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_next);
         };
-        int _qry_case_update_data_for_post_sendsize4_wrapper(struct _qry_case_update_data_for_post_send* _this)
+        static int _qry_case_update_data_for_post_sendsize4_wrapper(struct _qry_case_update_data_for_post_send* _this)
         {
            return _qry_case_update_data_for_post_sendsize4_user(_this, _qry_case_update_data_for_post_sendsize4_next);
         };
         
-        hook_record _qry_case_update_data_for_post_send_functions[] = {
+        static hook_record _qry_case_update_data_for_post_send_functions[] = {
         {   (LPVOID)0x1400ca7e0L,
             (LPVOID *)&_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_user,
             (LPVOID *)&_qry_case_update_data_for_post_sendctor__qry_case_update_data_for_post_send2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

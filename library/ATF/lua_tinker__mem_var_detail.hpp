@@ -10,27 +10,27 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__mem_varget2_ptr lua_tinker__mem_varget2_next(nullptr);
-            info::lua_tinker__mem_varget2_clbk lua_tinker__mem_varget2_user(nullptr);
-            info::lua_tinker__mem_varctor_mem_var4_ptr lua_tinker__mem_varctor_mem_var4_next(nullptr);
-            info::lua_tinker__mem_varctor_mem_var4_clbk lua_tinker__mem_varctor_mem_var4_user(nullptr);
-            info::lua_tinker__mem_varset6_ptr lua_tinker__mem_varset6_next(nullptr);
-            info::lua_tinker__mem_varset6_clbk lua_tinker__mem_varset6_user(nullptr);
+            static info::lua_tinker__mem_varget2_ptr lua_tinker__mem_varget2_next(nullptr);
+            static info::lua_tinker__mem_varget2_clbk lua_tinker__mem_varget2_user(nullptr);
+            static info::lua_tinker__mem_varctor_mem_var4_ptr lua_tinker__mem_varctor_mem_var4_next(nullptr);
+            static info::lua_tinker__mem_varctor_mem_var4_clbk lua_tinker__mem_varctor_mem_var4_user(nullptr);
+            static info::lua_tinker__mem_varset6_ptr lua_tinker__mem_varset6_next(nullptr);
+            static info::lua_tinker__mem_varset6_clbk lua_tinker__mem_varset6_user(nullptr);
             
-            void lua_tinker__mem_varget2_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, lua_State* L)
+            static void lua_tinker__mem_varget2_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, lua_State* L)
             {
                lua_tinker__mem_varget2_user(_this, L);
             };
-            void lua_tinker__mem_varctor_mem_var4_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, int* val)
+            static void lua_tinker__mem_varctor_mem_var4_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, int* val)
             {
                lua_tinker__mem_varctor_mem_var4_user(_this, val);
             };
-            void lua_tinker__mem_varset6_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, lua_State* L)
+            static void lua_tinker__mem_varset6_wrapper(struct lua_tinker::mem_var<LuaParam3,int>* _this, lua_State* L)
             {
                lua_tinker__mem_varset6_user(_this, L);
             };
             
-            hook_record mem_var<LuaParam3,int>_functions[] = {
+            static hook_record mem_var<LuaParam3,int>_functions[] = {
             {   (LPVOID)0x1404080d0L,
                 (LPVOID *)&lua_tinker__mem_varget2_user,
                 (LPVOID *)&lua_tinker__mem_varget2_next,
@@ -49,6 +49,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

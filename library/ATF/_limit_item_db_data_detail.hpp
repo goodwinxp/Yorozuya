@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_limit_item_db_datactor__limit_item_db_data2_ptr _limit_item_db_datactor__limit_item_db_data2_next(nullptr);
-        info::_limit_item_db_datactor__limit_item_db_data2_clbk _limit_item_db_datactor__limit_item_db_data2_user(nullptr);
+        static info::_limit_item_db_datactor__limit_item_db_data2_ptr _limit_item_db_datactor__limit_item_db_data2_next(nullptr);
+        static info::_limit_item_db_datactor__limit_item_db_data2_clbk _limit_item_db_datactor__limit_item_db_data2_user(nullptr);
         
-        void _limit_item_db_datactor__limit_item_db_data2_wrapper(struct _limit_item_db_data* _this)
+        static void _limit_item_db_datactor__limit_item_db_data2_wrapper(struct _limit_item_db_data* _this)
         {
            _limit_item_db_datactor__limit_item_db_data2_user(_this, _limit_item_db_datactor__limit_item_db_data2_next);
         };
         
-        hook_record _limit_item_db_data_functions[] = {
+        static hook_record _limit_item_db_data_functions[] = {
         {   (LPVOID)0x14034bdd0L,
             (LPVOID *)&_limit_item_db_datactor__limit_item_db_data2_user,
             (LPVOID *)&_limit_item_db_datactor__limit_item_db_data2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

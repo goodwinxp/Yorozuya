@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::BossSchedule_TBLctor_BossSchedule_TBL2_ptr BossSchedule_TBLctor_BossSchedule_TBL2_next(nullptr);
-        info::BossSchedule_TBLctor_BossSchedule_TBL2_clbk BossSchedule_TBLctor_BossSchedule_TBL2_user(nullptr);
-        info::BossSchedule_TBLdtor_BossSchedule_TBL6_ptr BossSchedule_TBLdtor_BossSchedule_TBL6_next(nullptr);
-        info::BossSchedule_TBLdtor_BossSchedule_TBL6_clbk BossSchedule_TBLdtor_BossSchedule_TBL6_user(nullptr);
+        static info::BossSchedule_TBLctor_BossSchedule_TBL2_ptr BossSchedule_TBLctor_BossSchedule_TBL2_next(nullptr);
+        static info::BossSchedule_TBLctor_BossSchedule_TBL2_clbk BossSchedule_TBLctor_BossSchedule_TBL2_user(nullptr);
+        static info::BossSchedule_TBLdtor_BossSchedule_TBL6_ptr BossSchedule_TBLdtor_BossSchedule_TBL6_next(nullptr);
+        static info::BossSchedule_TBLdtor_BossSchedule_TBL6_clbk BossSchedule_TBLdtor_BossSchedule_TBL6_user(nullptr);
         
-        void BossSchedule_TBLctor_BossSchedule_TBL2_wrapper(struct BossSchedule_TBL* _this)
+        static void BossSchedule_TBLctor_BossSchedule_TBL2_wrapper(struct BossSchedule_TBL* _this)
         {
            BossSchedule_TBLctor_BossSchedule_TBL2_user(_this, BossSchedule_TBLctor_BossSchedule_TBL2_next);
         };
-        void BossSchedule_TBLdtor_BossSchedule_TBL6_wrapper(struct BossSchedule_TBL* _this)
+        static void BossSchedule_TBLdtor_BossSchedule_TBL6_wrapper(struct BossSchedule_TBL* _this)
         {
            BossSchedule_TBLdtor_BossSchedule_TBL6_user(_this, BossSchedule_TBLdtor_BossSchedule_TBL6_next);
         };
         
-        hook_record BossSchedule_TBL_functions[] = {
+        static hook_record BossSchedule_TBL_functions[] = {
         {   (LPVOID)0x14041b790L,
             (LPVOID *)&BossSchedule_TBLctor_BossSchedule_TBL2_user,
             (LPVOID *)&BossSchedule_TBLctor_BossSchedule_TBL2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_next);
             };
-            bool GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
+            static bool GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundListIsInBattleRegenState4_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundListSetNextState6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundList* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundListdtor_CNormalGuildBattleStateRoundList8_next);
             };
             
-            hook_record CNormalGuildBattleStateRoundList_functions[] = {
+            static hook_record CNormalGuildBattleStateRoundList_functions[] = {
             {   (LPVOID)0x1403f2150L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateRoundListctor_CNormalGuildBattleStateRoundList2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

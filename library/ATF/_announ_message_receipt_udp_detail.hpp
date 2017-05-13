@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_announ_message_receipt_udpctor__announ_message_receipt_udp2_ptr _announ_message_receipt_udpctor__announ_message_receipt_udp2_next(nullptr);
-        info::_announ_message_receipt_udpctor__announ_message_receipt_udp2_clbk _announ_message_receipt_udpctor__announ_message_receipt_udp2_user(nullptr);
-        info::_announ_message_receipt_udpsize4_ptr _announ_message_receipt_udpsize4_next(nullptr);
-        info::_announ_message_receipt_udpsize4_clbk _announ_message_receipt_udpsize4_user(nullptr);
+        static info::_announ_message_receipt_udpctor__announ_message_receipt_udp2_ptr _announ_message_receipt_udpctor__announ_message_receipt_udp2_next(nullptr);
+        static info::_announ_message_receipt_udpctor__announ_message_receipt_udp2_clbk _announ_message_receipt_udpctor__announ_message_receipt_udp2_user(nullptr);
+        static info::_announ_message_receipt_udpsize4_ptr _announ_message_receipt_udpsize4_next(nullptr);
+        static info::_announ_message_receipt_udpsize4_clbk _announ_message_receipt_udpsize4_user(nullptr);
         
-        void _announ_message_receipt_udpctor__announ_message_receipt_udp2_wrapper(struct _announ_message_receipt_udp* _this)
+        static void _announ_message_receipt_udpctor__announ_message_receipt_udp2_wrapper(struct _announ_message_receipt_udp* _this)
         {
            _announ_message_receipt_udpctor__announ_message_receipt_udp2_user(_this, _announ_message_receipt_udpctor__announ_message_receipt_udp2_next);
         };
-        int _announ_message_receipt_udpsize4_wrapper(struct _announ_message_receipt_udp* _this)
+        static int _announ_message_receipt_udpsize4_wrapper(struct _announ_message_receipt_udp* _this)
         {
            return _announ_message_receipt_udpsize4_user(_this, _announ_message_receipt_udpsize4_next);
         };
         
-        hook_record _announ_message_receipt_udp_functions[] = {
+        static hook_record _announ_message_receipt_udp_functions[] = {
         {   (LPVOID)0x140094fe0L,
             (LPVOID *)&_announ_message_receipt_udpctor__announ_message_receipt_udp2_user,
             (LPVOID *)&_announ_message_receipt_udpctor__announ_message_receipt_udp2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -10,7579 +10,7231 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::globalARGBToJpegFile1_ptr globalARGBToJpegFile1_next(nullptr);
-            info::globalARGBToJpegFile1_clbk globalARGBToJpegFile1_user(nullptr);
-            info::globalAddEnvVariable3_ptr globalAddEnvVariable3_next(nullptr);
-            info::globalAddEnvVariable3_clbk globalAddEnvVariable3_user(nullptr);
-            info::globalAdjustIndependenceR3M4_ptr globalAdjustIndependenceR3M4_next(nullptr);
-            info::globalAdjustIndependenceR3M4_clbk globalAdjustIndependenceR3M4_user(nullptr);
-            info::globalAfterRenderOneLayer5_ptr globalAfterRenderOneLayer5_next(nullptr);
-            info::globalAfterRenderOneLayer5_clbk globalAfterRenderOneLayer5_user(nullptr);
-            info::globalAfterRenderSetting6_ptr globalAfterRenderSetting6_next(nullptr);
-            info::globalAfterRenderSetting6_clbk globalAfterRenderSetting6_user(nullptr);
-            info::globalAtoH23_ptr globalAtoH23_next(nullptr);
-            info::globalAtoH23_clbk globalAtoH23_user(nullptr);
-            info::globalAuthorityFilter25_ptr globalAuthorityFilter25_next(nullptr);
-            info::globalAuthorityFilter25_clbk globalAuthorityFilter25_user(nullptr);
-            info::globalBGRFromRGB26_ptr globalBGRFromRGB26_next(nullptr);
-            info::globalBGRFromRGB26_clbk globalBGRFromRGB26_user(nullptr);
-            info::globalBlendOff27_ptr globalBlendOff27_next(nullptr);
-            info::globalBlendOff27_clbk globalBlendOff27_user(nullptr);
-            info::globalBlendOn28_ptr globalBlendOn28_next(nullptr);
-            info::globalBlendOn28_clbk globalBlendOn28_user(nullptr);
-            info::globalBlurFilterShader29_ptr globalBlurFilterShader29_next(nullptr);
-            info::globalBlurFilterShader29_clbk globalBlurFilterShader29_user(nullptr);
-            info::globalBlurFilterSprite30_ptr globalBlurFilterSprite30_next(nullptr);
-            info::globalBlurFilterSprite30_clbk globalBlurFilterSprite30_user(nullptr);
-            info::globalBlurShaderVSPS31_ptr globalBlurShaderVSPS31_next(nullptr);
-            info::globalBlurShaderVSPS31_clbk globalBlurShaderVSPS31_user(nullptr);
-            info::globalBtoH33_ptr globalBtoH33_next(nullptr);
-            info::globalBtoH33_clbk globalBtoH33_user(nullptr);
-            info::globalByteSortForShort34_ptr globalByteSortForShort34_next(nullptr);
-            info::globalByteSortForShort34_clbk globalByteSortForShort34_user(nullptr);
-            info::globalCN_CalculateSunAndFieldColor35_ptr globalCN_CalculateSunAndFieldColor35_next(nullptr);
-            info::globalCN_CalculateSunAndFieldColor35_clbk globalCN_CalculateSunAndFieldColor35_user(nullptr);
-            info::globalCN_GetAccselateTime36_ptr globalCN_GetAccselateTime36_next(nullptr);
-            info::globalCN_GetAccselateTime36_clbk globalCN_GetAccselateTime36_user(nullptr);
-            info::globalCN_GetAtmosphere37_ptr globalCN_GetAtmosphere37_next(nullptr);
-            info::globalCN_GetAtmosphere37_clbk globalCN_GetAtmosphere37_user(nullptr);
-            info::globalCN_GetDayTime38_ptr globalCN_GetDayTime38_next(nullptr);
-            info::globalCN_GetDayTime38_clbk globalCN_GetDayTime38_user(nullptr);
-            info::globalCN_GetDayTime39_ptr globalCN_GetDayTime39_next(nullptr);
-            info::globalCN_GetDayTime39_clbk globalCN_GetDayTime39_user(nullptr);
-            info::globalCN_GetFieldColor40_ptr globalCN_GetFieldColor40_next(nullptr);
-            info::globalCN_GetFieldColor40_clbk globalCN_GetFieldColor40_user(nullptr);
-            info::globalCN_GetFogColor41_ptr globalCN_GetFogColor41_next(nullptr);
-            info::globalCN_GetFogColor41_clbk globalCN_GetFogColor41_user(nullptr);
-            info::globalCN_GetRealDayTime42_ptr globalCN_GetRealDayTime42_next(nullptr);
-            info::globalCN_GetRealDayTime42_clbk globalCN_GetRealDayTime42_user(nullptr);
-            info::globalCN_GetRealDayTime43_ptr globalCN_GetRealDayTime43_next(nullptr);
-            info::globalCN_GetRealDayTime43_clbk globalCN_GetRealDayTime43_user(nullptr);
-            info::globalCN_GetSky44_ptr globalCN_GetSky44_next(nullptr);
-            info::globalCN_GetSky44_clbk globalCN_GetSky44_user(nullptr);
-            info::globalCN_GetSun45_ptr globalCN_GetSun45_next(nullptr);
-            info::globalCN_GetSun45_clbk globalCN_GetSun45_user(nullptr);
-            info::globalCN_GetSunColor46_ptr globalCN_GetSunColor46_next(nullptr);
-            info::globalCN_GetSunColor46_clbk globalCN_GetSunColor46_user(nullptr);
-            info::globalCN_GetSunDirection47_ptr globalCN_GetSunDirection47_next(nullptr);
-            info::globalCN_GetSunDirection47_clbk globalCN_GetSunDirection47_user(nullptr);
-            info::globalCN_GetWeather48_ptr globalCN_GetWeather48_next(nullptr);
-            info::globalCN_GetWeather48_clbk globalCN_GetWeather48_user(nullptr);
-            info::globalCN_InvalidateNature49_ptr globalCN_InvalidateNature49_next(nullptr);
-            info::globalCN_InvalidateNature49_clbk globalCN_InvalidateNature49_user(nullptr);
-            info::globalCN_IsEnableSky50_ptr globalCN_IsEnableSky50_next(nullptr);
-            info::globalCN_IsEnableSky50_clbk globalCN_IsEnableSky50_user(nullptr);
-            info::globalCN_MixDayColor51_ptr globalCN_MixDayColor51_next(nullptr);
-            info::globalCN_MixDayColor51_clbk globalCN_MixDayColor51_user(nullptr);
-            info::globalCN_NatureFrameMove52_ptr globalCN_NatureFrameMove52_next(nullptr);
-            info::globalCN_NatureFrameMove52_clbk globalCN_NatureFrameMove52_user(nullptr);
-            info::globalCN_RenderSky53_ptr globalCN_RenderSky53_next(nullptr);
-            info::globalCN_RenderSky53_clbk globalCN_RenderSky53_user(nullptr);
-            info::globalCN_RestoreNature54_ptr globalCN_RestoreNature54_next(nullptr);
-            info::globalCN_RestoreNature54_clbk globalCN_RestoreNature54_user(nullptr);
-            info::globalCN_SetAccselateTime55_ptr globalCN_SetAccselateTime55_next(nullptr);
-            info::globalCN_SetAccselateTime55_clbk globalCN_SetAccselateTime55_user(nullptr);
-            info::globalCN_SetDayTime56_ptr globalCN_SetDayTime56_next(nullptr);
-            info::globalCN_SetDayTime56_clbk globalCN_SetDayTime56_user(nullptr);
-            info::globalCN_SetDayTime57_ptr globalCN_SetDayTime57_next(nullptr);
-            info::globalCN_SetDayTime57_clbk globalCN_SetDayTime57_user(nullptr);
-            info::globalCN_SetEnableSky58_ptr globalCN_SetEnableSky58_next(nullptr);
-            info::globalCN_SetEnableSky58_clbk globalCN_SetEnableSky58_user(nullptr);
-            info::globalCN_SetRealDayTime59_ptr globalCN_SetRealDayTime59_next(nullptr);
-            info::globalCN_SetRealDayTime59_clbk globalCN_SetRealDayTime59_user(nullptr);
-            info::globalCN_SetRealDayTime60_ptr globalCN_SetRealDayTime60_next(nullptr);
-            info::globalCN_SetRealDayTime60_clbk globalCN_SetRealDayTime60_user(nullptr);
-            info::globalCN_SetWeather61_ptr globalCN_SetWeather61_next(nullptr);
-            info::globalCN_SetWeather61_clbk globalCN_SetWeather61_user(nullptr);
-            info::globalCN_SkyVertexShaderConstants62_ptr globalCN_SkyVertexShaderConstants62_next(nullptr);
-            info::globalCN_SkyVertexShaderConstants62_clbk globalCN_SkyVertexShaderConstants62_user(nullptr);
-            info::globalCalcBi_n63_ptr globalCalcBi_n63_next(nullptr);
-            info::globalCalcBi_n63_clbk globalCalcBi_n63_user(nullptr);
-            info::globalCalcCodeKey65_ptr globalCalcCodeKey65_next(nullptr);
-            info::globalCalcCodeKey65_clbk globalCalcCodeKey65_user(nullptr);
-            info::globalCalcCubicCurve66_ptr globalCalcCubicCurve66_next(nullptr);
-            info::globalCalcCubicCurve66_clbk globalCalcCubicCurve66_user(nullptr);
-            info::globalCalcEvalCubicCurve67_ptr globalCalcEvalCubicCurve67_next(nullptr);
-            info::globalCalcEvalCubicCurve67_clbk globalCalcEvalCubicCurve67_user(nullptr);
-            info::globalCalcFileSize69_ptr globalCalcFileSize69_next(nullptr);
-            info::globalCalcFileSize69_clbk globalCalcFileSize69_user(nullptr);
-            info::globalCalcMastery71_ptr globalCalcMastery71_next(nullptr);
-            info::globalCalcMastery71_clbk globalCalcMastery71_user(nullptr);
-            info::globalCalcRoundUp73_ptr globalCalcRoundUp73_next(nullptr);
-            info::globalCalcRoundUp73_clbk globalCalcRoundUp73_user(nullptr);
-            info::globalCalcSnakeVertexList74_ptr globalCalcSnakeVertexList74_next(nullptr);
-            info::globalCalcSnakeVertexList74_clbk globalCalcSnakeVertexList74_user(nullptr);
-            info::globalCalcSquare76_ptr globalCalcSquare76_next(nullptr);
-            info::globalCalcSquare76_clbk globalCalcSquare76_user(nullptr);
-            info::globalCalculateMoveCamera77_ptr globalCalculateMoveCamera77_next(nullptr);
-            info::globalCalculateMoveCamera77_clbk globalCalculateMoveCamera77_user(nullptr);
-            info::globalCanAddMoneyForMaxLimGold79_ptr globalCanAddMoneyForMaxLimGold79_next(nullptr);
-            info::globalCanAddMoneyForMaxLimGold79_clbk globalCanAddMoneyForMaxLimGold79_user(nullptr);
-            info::globalCanAddMoneyForMaxLimMoney81_ptr globalCanAddMoneyForMaxLimMoney81_next(nullptr);
-            info::globalCanAddMoneyForMaxLimMoney81_clbk globalCanAddMoneyForMaxLimMoney81_user(nullptr);
-            info::globalCcrFgCallback83_ptr globalCcrFgCallback83_next(nullptr);
-            info::globalCcrFgCallback83_clbk globalCcrFgCallback83_user(nullptr);
-            info::globalCheckEdge84_ptr globalCheckEdge84_next(nullptr);
-            info::globalCheckEdge84_clbk globalCheckEdge84_user(nullptr);
-            info::globalCheckEdgeEpsilon85_ptr globalCheckEdgeEpsilon85_next(nullptr);
-            info::globalCheckEdgeEpsilon85_clbk globalCheckEdgeEpsilon85_user(nullptr);
-            info::globalCheckSameItemFromString_CodeIndex87_ptr globalCheckSameItemFromString_CodeIndex87_next(nullptr);
-            info::globalCheckSameItemFromString_CodeIndex87_clbk globalCheckSameItemFromString_CodeIndex87_user(nullptr);
-            info::globalClean2DRectangleZbuffer88_ptr globalClean2DRectangleZbuffer88_next(nullptr);
-            info::globalClean2DRectangleZbuffer88_clbk globalClean2DRectangleZbuffer88_user(nullptr);
-            info::globalCleanViewPortStack89_ptr globalCleanViewPortStack89_next(nullptr);
-            info::globalCleanViewPortStack89_clbk globalCleanViewPortStack89_user(nullptr);
-            info::globalCleanZbuffer90_ptr globalCleanZbuffer90_next(nullptr);
-            info::globalCleanZbuffer90_clbk globalCleanZbuffer90_user(nullptr);
-            info::globalClearDynamicLight91_ptr globalClearDynamicLight91_next(nullptr);
-            info::globalClearDynamicLight91_clbk globalClearDynamicLight91_user(nullptr);
-            info::globalCombineExCheckKeyGen93_ptr globalCombineExCheckKeyGen93_next(nullptr);
-            info::globalCombineExCheckKeyGen93_clbk globalCombineExCheckKeyGen93_user(nullptr);
-            info::globalCompareGradeAndPvpPoint95_ptr globalCompareGradeAndPvpPoint95_next(nullptr);
-            info::globalCompareGradeAndPvpPoint95_clbk globalCompareGradeAndPvpPoint95_user(nullptr);
-            info::globalConvAniObject96_ptr globalConvAniObject96_next(nullptr);
-            info::globalConvAniObject96_clbk globalConvAniObject96_user(nullptr);
-            info::globalConvertCodeIntoItem98_ptr globalConvertCodeIntoItem98_next(nullptr);
-            info::globalConvertCodeIntoItem98_clbk globalConvertCodeIntoItem98_user(nullptr);
-            info::globalConvertErrorCode_Jap100_ptr globalConvertErrorCode_Jap100_next(nullptr);
-            info::globalConvertErrorCode_Jap100_clbk globalConvertErrorCode_Jap100_user(nullptr);
-            info::globalConvertHexa101_ptr globalConvertHexa101_next(nullptr);
-            info::globalConvertHexa101_clbk globalConvertHexa101_user(nullptr);
-            info::globalCosineInterpolate102_ptr globalCosineInterpolate102_next(nullptr);
-            info::globalCosineInterpolate102_clbk globalCosineInterpolate102_user(nullptr);
-            info::globalCountOfImports103_ptr globalCountOfImports103_next(nullptr);
-            info::globalCountOfImports103_clbk globalCountOfImports103_user(nullptr);
-            info::globalCreateAndWriteUVOffsets104_ptr globalCreateAndWriteUVOffsets104_next(nullptr);
-            info::globalCreateAndWriteUVOffsets104_clbk globalCreateAndWriteUVOffsets104_user(nullptr);
-            info::globalCreateAnimus106_ptr globalCreateAnimus106_next(nullptr);
-            info::globalCreateAnimus106_clbk globalCreateAnimus106_user(nullptr);
-            info::globalCreateBlurVBuffer107_ptr globalCreateBlurVBuffer107_next(nullptr);
-            info::globalCreateBlurVBuffer107_clbk globalCreateBlurVBuffer107_user(nullptr);
-            info::globalCreateGuardTower109_ptr globalCreateGuardTower109_next(nullptr);
-            info::globalCreateGuardTower109_clbk globalCreateGuardTower109_user(nullptr);
-            info::globalCreateItemBox111_ptr globalCreateItemBox111_next(nullptr);
-            info::globalCreateItemBox111_clbk globalCreateItemBox111_user(nullptr);
-            info::globalCreateItemBox113_ptr globalCreateItemBox113_next(nullptr);
-            info::globalCreateItemBox113_clbk globalCreateItemBox113_user(nullptr);
-            info::globalCreateRepMonster115_ptr globalCreateRepMonster115_next(nullptr);
-            info::globalCreateRepMonster115_clbk globalCreateRepMonster115_user(nullptr);
-            info::globalCreateRespawnMonster117_ptr globalCreateRespawnMonster117_next(nullptr);
-            info::globalCreateRespawnMonster117_clbk globalCreateRespawnMonster117_user(nullptr);
-            info::globalCreateSystemTower119_ptr globalCreateSystemTower119_next(nullptr);
-            info::globalCreateSystemTower119_clbk globalCreateSystemTower119_user(nullptr);
-            info::globalCreateTrap121_ptr globalCreateTrap121_next(nullptr);
-            info::globalCreateTrap121_clbk globalCreateTrap121_user(nullptr);
-            info::globalCrossVector122_ptr globalCrossVector122_next(nullptr);
-            info::globalCrossVector122_clbk globalCrossVector122_user(nullptr);
-            info::globalCubicInterpolate123_ptr globalCubicInterpolate123_next(nullptr);
-            info::globalCubicInterpolate123_clbk globalCubicInterpolate123_user(nullptr);
-            info::globalD3DUtil_CreateTexture124_ptr globalD3DUtil_CreateTexture124_next(nullptr);
-            info::globalD3DUtil_CreateTexture124_clbk globalD3DUtil_CreateTexture124_user(nullptr);
-            info::globalD3DUtil_CreateVertexShader125_ptr globalD3DUtil_CreateVertexShader125_next(nullptr);
-            info::globalD3DUtil_CreateVertexShader125_clbk globalD3DUtil_CreateVertexShader125_user(nullptr);
-            info::globalD3DUtil_GetCubeMapViewMatrix126_ptr globalD3DUtil_GetCubeMapViewMatrix126_next(nullptr);
-            info::globalD3DUtil_GetCubeMapViewMatrix126_clbk globalD3DUtil_GetCubeMapViewMatrix126_user(nullptr);
-            info::globalD3DUtil_GetRotationFromCursor127_ptr globalD3DUtil_GetRotationFromCursor127_next(nullptr);
-            info::globalD3DUtil_GetRotationFromCursor127_clbk globalD3DUtil_GetRotationFromCursor127_user(nullptr);
-            info::globalD3DUtil_InitLight128_ptr globalD3DUtil_InitLight128_next(nullptr);
-            info::globalD3DUtil_InitLight128_clbk globalD3DUtil_InitLight128_user(nullptr);
-            info::globalD3DUtil_InitMaterial129_ptr globalD3DUtil_InitMaterial129_next(nullptr);
-            info::globalD3DUtil_InitMaterial129_clbk globalD3DUtil_InitMaterial129_user(nullptr);
-            info::globalD3DUtil_SetColorKey130_ptr globalD3DUtil_SetColorKey130_next(nullptr);
-            info::globalD3DUtil_SetColorKey130_clbk globalD3DUtil_SetColorKey130_user(nullptr);
-            info::globalD3DUtil_SetDeviceCursor131_ptr globalD3DUtil_SetDeviceCursor131_next(nullptr);
-            info::globalD3DUtil_SetDeviceCursor131_clbk globalD3DUtil_SetDeviceCursor131_user(nullptr);
-            info::globalD3DUtil_SetDeviceCursor132_ptr globalD3DUtil_SetDeviceCursor132_next(nullptr);
-            info::globalD3DUtil_SetDeviceCursor132_clbk globalD3DUtil_SetDeviceCursor132_user(nullptr);
-            info::globalD3DXMatrixIdentity133_ptr globalD3DXMatrixIdentity133_next(nullptr);
-            info::globalD3DXMatrixIdentity133_clbk globalD3DXMatrixIdentity133_user(nullptr);
-            info::globalD3DXQuaternionAxisToAxis134_ptr globalD3DXQuaternionAxisToAxis134_next(nullptr);
-            info::globalD3DXQuaternionAxisToAxis134_clbk globalD3DXQuaternionAxisToAxis134_user(nullptr);
-            info::globalD3DXQuaternionIdentity135_ptr globalD3DXQuaternionIdentity135_next(nullptr);
-            info::globalD3DXQuaternionIdentity135_clbk globalD3DXQuaternionIdentity135_user(nullptr);
-            info::globalD3DXQuaternionUnitAxisToUnitAxis2136_ptr globalD3DXQuaternionUnitAxisToUnitAxis2136_next(nullptr);
-            info::globalD3DXQuaternionUnitAxisToUnitAxis2136_clbk globalD3DXQuaternionUnitAxisToUnitAxis2136_user(nullptr);
-            info::globalD3DXVec2Dot138_ptr globalD3DXVec2Dot138_next(nullptr);
-            info::globalD3DXVec2Dot138_clbk globalD3DXVec2Dot138_user(nullptr);
-            info::globalD3DXVec3Cross139_ptr globalD3DXVec3Cross139_next(nullptr);
-            info::globalD3DXVec3Cross139_clbk globalD3DXVec3Cross139_user(nullptr);
-            info::globalD3DXVec3Dot140_ptr globalD3DXVec3Dot140_next(nullptr);
-            info::globalD3DXVec3Dot140_clbk globalD3DXVec3Dot140_user(nullptr);
-            info::globalD3DXVec3Length141_ptr globalD3DXVec3Length141_next(nullptr);
-            info::globalD3DXVec3Length141_clbk globalD3DXVec3Length141_user(nullptr);
-            info::globalD3D_R3ConfirmDevice142_ptr globalD3D_R3ConfirmDevice142_next(nullptr);
-            info::globalD3D_R3ConfirmDevice142_clbk globalD3D_R3ConfirmDevice142_user(nullptr);
-            info::globalD3D_R3DeleteDevice143_ptr globalD3D_R3DeleteDevice143_next(nullptr);
-            info::globalD3D_R3DeleteDevice143_clbk globalD3D_R3DeleteDevice143_user(nullptr);
-            info::globalD3D_R3InitDevice144_ptr globalD3D_R3InitDevice144_next(nullptr);
-            info::globalD3D_R3InitDevice144_clbk globalD3D_R3InitDevice144_user(nullptr);
-            info::globalD3D_R3InvalidateDevice145_ptr globalD3D_R3InvalidateDevice145_next(nullptr);
-            info::globalD3D_R3InvalidateDevice145_clbk globalD3D_R3InvalidateDevice145_user(nullptr);
-            info::globalD3D_R3MsgProc146_ptr globalD3D_R3MsgProc146_next(nullptr);
-            info::globalD3D_R3MsgProc146_clbk globalD3D_R3MsgProc146_user(nullptr);
-            info::globalD3D_R3RestoreDevice147_ptr globalD3D_R3RestoreDevice147_next(nullptr);
-            info::globalD3D_R3RestoreDevice147_clbk globalD3D_R3RestoreDevice147_user(nullptr);
-            info::globalDDX_Control148_ptr globalDDX_Control148_next(nullptr);
-            info::globalDDX_Control148_clbk globalDDX_Control148_user(nullptr);
-            info::globalDDX_Text149_ptr globalDDX_Text149_next(nullptr);
-            info::globalDDX_Text149_clbk globalDDX_Text149_user(nullptr);
-            info::globalDDX_Text150_ptr globalDDX_Text150_next(nullptr);
-            info::globalDDX_Text150_clbk globalDDX_Text150_user(nullptr);
-            info::globalDE_AllContDamageForceRemove152_ptr globalDE_AllContDamageForceRemove152_next(nullptr);
-            info::globalDE_AllContDamageForceRemove152_clbk globalDE_AllContDamageForceRemove152_user(nullptr);
-            info::globalDE_AllContHelpForceRemove154_ptr globalDE_AllContHelpForceRemove154_next(nullptr);
-            info::globalDE_AllContHelpForceRemove154_clbk globalDE_AllContHelpForceRemove154_user(nullptr);
-            info::globalDE_AllContHelpSkillRemove156_ptr globalDE_AllContHelpSkillRemove156_next(nullptr);
-            info::globalDE_AllContHelpSkillRemove156_clbk globalDE_AllContHelpSkillRemove156_user(nullptr);
-            info::globalDE_AttHPtoDstFP158_ptr globalDE_AttHPtoDstFP158_next(nullptr);
-            info::globalDE_AttHPtoDstFP158_clbk globalDE_AttHPtoDstFP158_user(nullptr);
-            info::globalDE_BattleMode_RecallCommonPlayer160_ptr globalDE_BattleMode_RecallCommonPlayer160_next(nullptr);
-            info::globalDE_BattleMode_RecallCommonPlayer160_clbk globalDE_BattleMode_RecallCommonPlayer160_user(nullptr);
-            info::globalDE_ContDamageTimeInc162_ptr globalDE_ContDamageTimeInc162_next(nullptr);
-            info::globalDE_ContDamageTimeInc162_clbk globalDE_ContDamageTimeInc162_user(nullptr);
-            info::globalDE_ContHelpTimeInc164_ptr globalDE_ContHelpTimeInc164_next(nullptr);
-            info::globalDE_ContHelpTimeInc164_clbk globalDE_ContHelpTimeInc164_user(nullptr);
-            info::globalDE_ConvertMonsterTarget166_ptr globalDE_ConvertMonsterTarget166_next(nullptr);
-            info::globalDE_ConvertMonsterTarget166_clbk globalDE_ConvertMonsterTarget166_user(nullptr);
-            info::globalDE_ConvertTargetDest168_ptr globalDE_ConvertTargetDest168_next(nullptr);
-            info::globalDE_ConvertTargetDest168_clbk globalDE_ConvertTargetDest168_user(nullptr);
-            info::globalDE_DamStun170_ptr globalDE_DamStun170_next(nullptr);
-            info::globalDE_DamStun170_clbk globalDE_DamStun170_user(nullptr);
-            info::globalDE_DetectTrap172_ptr globalDE_DetectTrap172_next(nullptr);
-            info::globalDE_DetectTrap172_clbk globalDE_DetectTrap172_user(nullptr);
-            info::globalDE_FPDec174_ptr globalDE_FPDec174_next(nullptr);
-            info::globalDE_FPDec174_clbk globalDE_FPDec174_user(nullptr);
-            info::globalDE_HPInc176_ptr globalDE_HPInc176_next(nullptr);
-            info::globalDE_HPInc176_clbk globalDE_HPInc176_user(nullptr);
-            info::globalDE_IncHPCircleParty178_ptr globalDE_IncHPCircleParty178_next(nullptr);
-            info::globalDE_IncHPCircleParty178_clbk globalDE_IncHPCircleParty178_user(nullptr);
-            info::globalDE_IncreaseDP180_ptr globalDE_IncreaseDP180_next(nullptr);
-            info::globalDE_IncreaseDP180_clbk globalDE_IncreaseDP180_user(nullptr);
-            info::globalDE_LateContDamageRemove182_ptr globalDE_LateContDamageRemove182_next(nullptr);
-            info::globalDE_LateContDamageRemove182_clbk globalDE_LateContDamageRemove182_user(nullptr);
-            info::globalDE_LateContHelpForceRemove184_ptr globalDE_LateContHelpForceRemove184_next(nullptr);
-            info::globalDE_LateContHelpForceRemove184_clbk globalDE_LateContHelpForceRemove184_user(nullptr);
-            info::globalDE_LateContHelpSkillRemove186_ptr globalDE_LateContHelpSkillRemove186_next(nullptr);
-            info::globalDE_LateContHelpSkillRemove186_clbk globalDE_LateContHelpSkillRemove186_user(nullptr);
-            info::globalDE_LayTrap188_ptr globalDE_LayTrap188_next(nullptr);
-            info::globalDE_LayTrap188_clbk globalDE_LayTrap188_user(nullptr);
-            info::globalDE_MakeGuardTower190_ptr globalDE_MakeGuardTower190_next(nullptr);
-            info::globalDE_MakeGuardTower190_clbk globalDE_MakeGuardTower190_user(nullptr);
-            info::globalDE_MakePortalReturnBindPositionPartyMember192_ptr globalDE_MakePortalReturnBindPositionPartyMember192_next(nullptr);
-            info::globalDE_MakePortalReturnBindPositionPartyMember192_clbk globalDE_MakePortalReturnBindPositionPartyMember192_user(nullptr);
-            info::globalDE_MakeZeroAnimusRecallTimeOnce194_ptr globalDE_MakeZeroAnimusRecallTimeOnce194_next(nullptr);
-            info::globalDE_MakeZeroAnimusRecallTimeOnce194_clbk globalDE_MakeZeroAnimusRecallTimeOnce194_user(nullptr);
-            info::globalDE_OthersContHelpSFRemove196_ptr globalDE_OthersContHelpSFRemove196_next(nullptr);
-            info::globalDE_OthersContHelpSFRemove196_clbk globalDE_OthersContHelpSFRemove196_user(nullptr);
-            info::globalDE_OverHealing198_ptr globalDE_OverHealing198_next(nullptr);
-            info::globalDE_OverHealing198_clbk globalDE_OverHealing198_user(nullptr);
-            info::globalDE_Potion_AllContHelpSkillRemove_Once200_ptr globalDE_Potion_AllContHelpSkillRemove_Once200_next(nullptr);
-            info::globalDE_Potion_AllContHelpSkillRemove_Once200_clbk globalDE_Potion_AllContHelpSkillRemove_Once200_user(nullptr);
-            info::globalDE_Potion_Buf_Extend202_ptr globalDE_Potion_Buf_Extend202_next(nullptr);
-            info::globalDE_Potion_Buf_Extend202_clbk globalDE_Potion_Buf_Extend202_user(nullptr);
-            info::globalDE_Potion_Chaos_Dec_Time204_ptr globalDE_Potion_Chaos_Dec_Time204_next(nullptr);
-            info::globalDE_Potion_Chaos_Dec_Time204_clbk globalDE_Potion_Chaos_Dec_Time204_user(nullptr);
-            info::globalDE_Potion_Chaos_Inc_Time206_ptr globalDE_Potion_Chaos_Inc_Time206_next(nullptr);
-            info::globalDE_Potion_Chaos_Inc_Time206_clbk globalDE_Potion_Chaos_Inc_Time206_user(nullptr);
-            info::globalDE_Potion_CharReName208_ptr globalDE_Potion_CharReName208_next(nullptr);
-            info::globalDE_Potion_CharReName208_clbk globalDE_Potion_CharReName208_user(nullptr);
-            info::globalDE_Potion_Class_Refine210_ptr globalDE_Potion_Class_Refine210_next(nullptr);
-            info::globalDE_Potion_Class_Refine210_clbk globalDE_Potion_Class_Refine210_user(nullptr);
-            info::globalDE_Potion_Cont_Damage_Remove212_ptr globalDE_Potion_Cont_Damage_Remove212_next(nullptr);
-            info::globalDE_Potion_Cont_Damage_Remove212_clbk globalDE_Potion_Cont_Damage_Remove212_user(nullptr);
-            info::globalDE_Potion_DecHalfSFContDam214_ptr globalDE_Potion_DecHalfSFContDam214_next(nullptr);
-            info::globalDE_Potion_DecHalfSFContDam214_clbk globalDE_Potion_DecHalfSFContDam214_user(nullptr);
-            info::globalDE_Potion_Exp_Increase_Absolute216_ptr globalDE_Potion_Exp_Increase_Absolute216_next(nullptr);
-            info::globalDE_Potion_Exp_Increase_Absolute216_clbk globalDE_Potion_Exp_Increase_Absolute216_user(nullptr);
-            info::globalDE_Potion_Exp_Increase_Percentage218_ptr globalDE_Potion_Exp_Increase_Percentage218_next(nullptr);
-            info::globalDE_Potion_Exp_Increase_Percentage218_clbk globalDE_Potion_Exp_Increase_Percentage218_user(nullptr);
-            info::globalDE_Potion_FP_In_Value220_ptr globalDE_Potion_FP_In_Value220_next(nullptr);
-            info::globalDE_Potion_FP_In_Value220_clbk globalDE_Potion_FP_In_Value220_user(nullptr);
-            info::globalDE_Potion_Gold_Point222_ptr globalDE_Potion_Gold_Point222_next(nullptr);
-            info::globalDE_Potion_Gold_Point222_clbk globalDE_Potion_Gold_Point222_user(nullptr);
-            info::globalDE_Potion_HFP_Full_Recover224_ptr globalDE_Potion_HFP_Full_Recover224_next(nullptr);
-            info::globalDE_Potion_HFP_Full_Recover224_clbk globalDE_Potion_HFP_Full_Recover224_user(nullptr);
-            info::globalDE_Potion_HP_In_Value226_ptr globalDE_Potion_HP_In_Value226_next(nullptr);
-            info::globalDE_Potion_HP_In_Value226_clbk globalDE_Potion_HP_In_Value226_user(nullptr);
-            info::globalDE_Potion_Race_Debuff_Clear_One228_ptr globalDE_Potion_Race_Debuff_Clear_One228_next(nullptr);
-            info::globalDE_Potion_Race_Debuff_Clear_One228_clbk globalDE_Potion_Race_Debuff_Clear_One228_user(nullptr);
-            info::globalDE_Potion_Race_Debuff_Clear_Two230_ptr globalDE_Potion_Race_Debuff_Clear_Two230_next(nullptr);
-            info::globalDE_Potion_Race_Debuff_Clear_Two230_clbk globalDE_Potion_Race_Debuff_Clear_Two230_user(nullptr);
-            info::globalDE_Potion_RemoveAfterEffect232_ptr globalDE_Potion_RemoveAfterEffect232_next(nullptr);
-            info::globalDE_Potion_RemoveAfterEffect232_clbk globalDE_Potion_RemoveAfterEffect232_user(nullptr);
-            info::globalDE_Potion_RemoveAllContinousEffect234_ptr globalDE_Potion_RemoveAllContinousEffect234_next(nullptr);
-            info::globalDE_Potion_RemoveAllContinousEffect234_clbk globalDE_Potion_RemoveAllContinousEffect234_user(nullptr);
-            info::globalDE_Potion_Revival_Die_Position236_ptr globalDE_Potion_Revival_Die_Position236_next(nullptr);
-            info::globalDE_Potion_Revival_Die_Position236_clbk globalDE_Potion_Revival_Die_Position236_user(nullptr);
-            info::globalDE_Potion_SP_In_Value238_ptr globalDE_Potion_SP_In_Value238_next(nullptr);
-            info::globalDE_Potion_SP_In_Value238_clbk globalDE_Potion_SP_In_Value238_user(nullptr);
-            info::globalDE_Potion_Trunk_Extend240_ptr globalDE_Potion_Trunk_Extend240_next(nullptr);
-            info::globalDE_Potion_Trunk_Extend240_clbk globalDE_Potion_Trunk_Extend240_user(nullptr);
-            info::globalDE_Quick_Revival_Die_Position242_ptr globalDE_Quick_Revival_Die_Position242_next(nullptr);
-            info::globalDE_Quick_Revival_Die_Position242_clbk globalDE_Quick_Revival_Die_Position242_user(nullptr);
-            info::globalDE_RecallCommonPlayer244_ptr globalDE_RecallCommonPlayer244_next(nullptr);
-            info::globalDE_RecallCommonPlayer244_clbk globalDE_RecallCommonPlayer244_user(nullptr);
-            info::globalDE_RecallPartyMember246_ptr globalDE_RecallPartyMember246_next(nullptr);
-            info::globalDE_RecallPartyMember246_clbk globalDE_RecallPartyMember246_user(nullptr);
-            info::globalDE_Recall_After_Stone248_ptr globalDE_Recall_After_Stone248_next(nullptr);
-            info::globalDE_Recall_After_Stone248_clbk globalDE_Recall_After_Stone248_user(nullptr);
-            info::globalDE_RecoverAllReturnStateAnimusHPFull250_ptr globalDE_RecoverAllReturnStateAnimusHPFull250_next(nullptr);
-            info::globalDE_RecoverAllReturnStateAnimusHPFull250_clbk globalDE_RecoverAllReturnStateAnimusHPFull250_user(nullptr);
-            info::globalDE_Recovery252_ptr globalDE_Recovery252_next(nullptr);
-            info::globalDE_Recovery252_clbk globalDE_Recovery252_user(nullptr);
-            info::globalDE_ReleaseMonsterTarget254_ptr globalDE_ReleaseMonsterTarget254_next(nullptr);
-            info::globalDE_ReleaseMonsterTarget254_clbk globalDE_ReleaseMonsterTarget254_user(nullptr);
-            info::globalDE_RemoveAllContHelp256_ptr globalDE_RemoveAllContHelp256_next(nullptr);
-            info::globalDE_RemoveAllContHelp256_clbk globalDE_RemoveAllContHelp256_user(nullptr);
-            info::globalDE_ReturnBindPosition258_ptr globalDE_ReturnBindPosition258_next(nullptr);
-            info::globalDE_ReturnBindPosition258_clbk globalDE_ReturnBindPosition258_user(nullptr);
-            info::globalDE_SPDec260_ptr globalDE_SPDec260_next(nullptr);
-            info::globalDE_SPDec260_clbk globalDE_SPDec260_user(nullptr);
-            info::globalDE_STInc262_ptr globalDE_STInc262_next(nullptr);
-            info::globalDE_STInc262_clbk globalDE_STInc262_user(nullptr);
-            info::globalDE_SelfDestruction264_ptr globalDE_SelfDestruction264_next(nullptr);
-            info::globalDE_SelfDestruction264_clbk globalDE_SelfDestruction264_user(nullptr);
-            info::globalDE_SkillContHelpTimeInc266_ptr globalDE_SkillContHelpTimeInc266_next(nullptr);
-            info::globalDE_SkillContHelpTimeInc266_clbk globalDE_SkillContHelpTimeInc266_user(nullptr);
-            info::globalDE_Stun268_ptr globalDE_Stun268_next(nullptr);
-            info::globalDE_Stun268_clbk globalDE_Stun268_user(nullptr);
-            info::globalDE_TeleportCommonPlayer270_ptr globalDE_TeleportCommonPlayer270_next(nullptr);
-            info::globalDE_TeleportCommonPlayer270_clbk globalDE_TeleportCommonPlayer270_user(nullptr);
-            info::globalDE_Teleport_After_Stone272_ptr globalDE_Teleport_After_Stone272_next(nullptr);
-            info::globalDE_Teleport_After_Stone272_clbk globalDE_Teleport_After_Stone272_user(nullptr);
-            info::globalDE_TransDestHP274_ptr globalDE_TransDestHP274_next(nullptr);
-            info::globalDE_TransDestHP274_clbk globalDE_TransDestHP274_user(nullptr);
-            info::globalDE_TransMonsterHP276_ptr globalDE_TransMonsterHP276_next(nullptr);
-            info::globalDE_TransMonsterHP276_clbk globalDE_TransMonsterHP276_user(nullptr);
-            info::globalDE_ViewWeakPoint278_ptr globalDE_ViewWeakPoint278_next(nullptr);
-            info::globalDE_ViewWeakPoint278_clbk globalDE_ViewWeakPoint278_user(nullptr);
-            info::globalDTradeEqualPerson280_ptr globalDTradeEqualPerson280_next(nullptr);
-            info::globalDTradeEqualPerson280_clbk globalDTradeEqualPerson280_user(nullptr);
-            info::globalDXUtil_ConvertAnsiStringToGeneric282_ptr globalDXUtil_ConvertAnsiStringToGeneric282_next(nullptr);
-            info::globalDXUtil_ConvertAnsiStringToGeneric282_clbk globalDXUtil_ConvertAnsiStringToGeneric282_user(nullptr);
-            info::globalDXUtil_ConvertAnsiStringToWide284_ptr globalDXUtil_ConvertAnsiStringToWide284_next(nullptr);
-            info::globalDXUtil_ConvertAnsiStringToWide284_clbk globalDXUtil_ConvertAnsiStringToWide284_user(nullptr);
-            info::globalDXUtil_ConvertGenericStringToAnsi286_ptr globalDXUtil_ConvertGenericStringToAnsi286_next(nullptr);
-            info::globalDXUtil_ConvertGenericStringToAnsi286_clbk globalDXUtil_ConvertGenericStringToAnsi286_user(nullptr);
-            info::globalDXUtil_ConvertGenericStringToWide288_ptr globalDXUtil_ConvertGenericStringToWide288_next(nullptr);
-            info::globalDXUtil_ConvertGenericStringToWide288_clbk globalDXUtil_ConvertGenericStringToWide288_user(nullptr);
-            info::globalDXUtil_ConvertWideStringToAnsi290_ptr globalDXUtil_ConvertWideStringToAnsi290_next(nullptr);
-            info::globalDXUtil_ConvertWideStringToAnsi290_clbk globalDXUtil_ConvertWideStringToAnsi290_user(nullptr);
-            info::globalDXUtil_ConvertWideStringToGeneric292_ptr globalDXUtil_ConvertWideStringToGeneric292_next(nullptr);
-            info::globalDXUtil_ConvertWideStringToGeneric292_clbk globalDXUtil_ConvertWideStringToGeneric292_user(nullptr);
-            info::globalDXUtil_FindMediaFile294_ptr globalDXUtil_FindMediaFile294_next(nullptr);
-            info::globalDXUtil_FindMediaFile294_clbk globalDXUtil_FindMediaFile294_user(nullptr);
-            info::globalDXUtil_GetDXSDKMediaPath296_ptr globalDXUtil_GetDXSDKMediaPath296_next(nullptr);
-            info::globalDXUtil_GetDXSDKMediaPath296_clbk globalDXUtil_GetDXSDKMediaPath296_user(nullptr);
-            info::globalDXUtil_ReadBoolRegKey298_ptr globalDXUtil_ReadBoolRegKey298_next(nullptr);
-            info::globalDXUtil_ReadBoolRegKey298_clbk globalDXUtil_ReadBoolRegKey298_user(nullptr);
-            info::globalDXUtil_ReadGuidRegKey300_ptr globalDXUtil_ReadGuidRegKey300_next(nullptr);
-            info::globalDXUtil_ReadGuidRegKey300_clbk globalDXUtil_ReadGuidRegKey300_user(nullptr);
-            info::globalDXUtil_ReadIntRegKey302_ptr globalDXUtil_ReadIntRegKey302_next(nullptr);
-            info::globalDXUtil_ReadIntRegKey302_clbk globalDXUtil_ReadIntRegKey302_user(nullptr);
-            info::globalDXUtil_ReadStringRegKey304_ptr globalDXUtil_ReadStringRegKey304_next(nullptr);
-            info::globalDXUtil_ReadStringRegKey304_clbk globalDXUtil_ReadStringRegKey304_user(nullptr);
-            info::globalDXUtil_Timer306_ptr globalDXUtil_Timer306_next(nullptr);
-            info::globalDXUtil_Timer306_clbk globalDXUtil_Timer306_user(nullptr);
-            info::globalDXUtil_Trace308_ptr globalDXUtil_Trace308_next(nullptr);
-            info::globalDXUtil_Trace308_clbk globalDXUtil_Trace308_user(nullptr);
-            info::globalDXUtil_WriteBoolRegKey310_ptr globalDXUtil_WriteBoolRegKey310_next(nullptr);
-            info::globalDXUtil_WriteBoolRegKey310_clbk globalDXUtil_WriteBoolRegKey310_user(nullptr);
-            info::globalDXUtil_WriteGuidRegKey312_ptr globalDXUtil_WriteGuidRegKey312_next(nullptr);
-            info::globalDXUtil_WriteGuidRegKey312_clbk globalDXUtil_WriteGuidRegKey312_user(nullptr);
-            info::globalDXUtil_WriteIntRegKey314_ptr globalDXUtil_WriteIntRegKey314_next(nullptr);
-            info::globalDXUtil_WriteIntRegKey314_clbk globalDXUtil_WriteIntRegKey314_user(nullptr);
-            info::globalDXUtil_WriteStringRegKey316_ptr globalDXUtil_WriteStringRegKey316_next(nullptr);
-            info::globalDXUtil_WriteStringRegKey316_clbk globalDXUtil_WriteStringRegKey316_user(nullptr);
-            info::globalDeCryptString318_ptr globalDeCryptString318_next(nullptr);
-            info::globalDeCryptString318_clbk globalDeCryptString318_user(nullptr);
-            info::globalDeCrypt_Move320_ptr globalDeCrypt_Move320_next(nullptr);
-            info::globalDeCrypt_Move320_clbk globalDeCrypt_Move320_user(nullptr);
-            info::globalDebugDrawIndexedPrimitiveTLTex1321_ptr globalDebugDrawIndexedPrimitiveTLTex1321_next(nullptr);
-            info::globalDebugDrawIndexedPrimitiveTLTex1321_clbk globalDebugDrawIndexedPrimitiveTLTex1321_user(nullptr);
-            info::globalDebugDrawIndexedPrimitiveUPTex1322_ptr globalDebugDrawIndexedPrimitiveUPTex1322_next(nullptr);
-            info::globalDebugDrawIndexedPrimitiveUPTex1322_clbk globalDebugDrawIndexedPrimitiveUPTex1322_user(nullptr);
-            info::globalDebugPushEntityNum323_ptr globalDebugPushEntityNum323_next(nullptr);
-            info::globalDebugPushEntityNum323_clbk globalDebugPushEntityNum323_user(nullptr);
-            info::globalDebugPushMagicNum324_ptr globalDebugPushMagicNum324_next(nullptr);
-            info::globalDebugPushMagicNum324_clbk globalDebugPushMagicNum324_user(nullptr);
-            info::globalDetailTextureOffStage2325_ptr globalDetailTextureOffStage2325_next(nullptr);
-            info::globalDetailTextureOffStage2325_clbk globalDetailTextureOffStage2325_user(nullptr);
-            info::globalDetailTextureOnStage2326_ptr globalDetailTextureOnStage2326_next(nullptr);
-            info::globalDetailTextureOnStage2326_clbk globalDetailTextureOnStage2326_user(nullptr);
-            info::globalDfree327_ptr globalDfree327_next(nullptr);
-            info::globalDfree327_clbk globalDfree327_user(nullptr);
-            info::globalDisplayANSICodePageStrOutputDebug329_ptr globalDisplayANSICodePageStrOutputDebug329_next(nullptr);
-            info::globalDisplayANSICodePageStrOutputDebug329_clbk globalDisplayANSICodePageStrOutputDebug329_user(nullptr);
-            info::globalDisplayItemUpgInfo331_ptr globalDisplayItemUpgInfo331_next(nullptr);
-            info::globalDisplayItemUpgInfo331_clbk globalDisplayItemUpgInfo331_user(nullptr);
-            info::globalDmalloc332_ptr globalDmalloc332_next(nullptr);
-            info::globalDmalloc332_clbk globalDmalloc332_user(nullptr);
-            info::globalDotProduct333_ptr globalDotProduct333_next(nullptr);
-            info::globalDotProduct333_clbk globalDotProduct333_user(nullptr);
-            info::globalDraw2DLine334_ptr globalDraw2DLine334_next(nullptr);
-            info::globalDraw2DLine334_clbk globalDraw2DLine334_user(nullptr);
-            info::globalDraw2DLineList335_ptr globalDraw2DLineList335_next(nullptr);
-            info::globalDraw2DLineList335_clbk globalDraw2DLineList335_user(nullptr);
-            info::globalDraw2DRectangle336_ptr globalDraw2DRectangle336_next(nullptr);
-            info::globalDraw2DRectangle336_clbk globalDraw2DRectangle336_user(nullptr);
-            info::globalDraw2DSprite337_ptr globalDraw2DSprite337_next(nullptr);
-            info::globalDraw2DSprite337_clbk globalDraw2DSprite337_user(nullptr);
-            info::globalDraw2DSprite338_ptr globalDraw2DSprite338_next(nullptr);
-            info::globalDraw2DSprite338_clbk globalDraw2DSprite338_user(nullptr);
-            info::globalDraw2DSprite339_ptr globalDraw2DSprite339_next(nullptr);
-            info::globalDraw2DSprite339_clbk globalDraw2DSprite339_user(nullptr);
-            info::globalDraw2DSprite340_ptr globalDraw2DSprite340_next(nullptr);
-            info::globalDraw2DSprite340_clbk globalDraw2DSprite340_user(nullptr);
-            info::globalDraw2DSprite3D341_ptr globalDraw2DSprite3D341_next(nullptr);
-            info::globalDraw2DSprite3D341_clbk globalDraw2DSprite3D341_user(nullptr);
-            info::globalDraw2DSprite3D342_ptr globalDraw2DSprite3D342_next(nullptr);
-            info::globalDraw2DSprite3D342_clbk globalDraw2DSprite3D342_user(nullptr);
-            info::globalDraw2DSpriteRot343_ptr globalDraw2DSpriteRot343_next(nullptr);
-            info::globalDraw2DSpriteRot343_clbk globalDraw2DSpriteRot343_user(nullptr);
-            info::globalDraw2DSpriteRot344_ptr globalDraw2DSpriteRot344_next(nullptr);
-            info::globalDraw2DSpriteRot344_clbk globalDraw2DSpriteRot344_user(nullptr);
-            info::globalDraw2DSpriteRot3D345_ptr globalDraw2DSpriteRot3D345_next(nullptr);
-            info::globalDraw2DSpriteRot3D345_clbk globalDraw2DSpriteRot3D345_user(nullptr);
-            info::globalDraw2DSpriteRot3D346_ptr globalDraw2DSpriteRot3D346_next(nullptr);
-            info::globalDraw2DSpriteRot3D346_clbk globalDraw2DSpriteRot3D346_user(nullptr);
-            info::globalDraw2DSpriteSub347_ptr globalDraw2DSpriteSub347_next(nullptr);
-            info::globalDraw2DSpriteSub347_clbk globalDraw2DSpriteSub347_user(nullptr);
-            info::globalDraw2DTexture348_ptr globalDraw2DTexture348_next(nullptr);
-            info::globalDraw2DTexture348_clbk globalDraw2DTexture348_user(nullptr);
-            info::globalDraw3DSprite349_ptr globalDraw3DSprite349_next(nullptr);
-            info::globalDraw3DSprite349_clbk globalDraw3DSprite349_user(nullptr);
-            info::globalDrawAlphaStack350_ptr globalDrawAlphaStack350_next(nullptr);
-            info::globalDrawAlphaStack350_clbk globalDrawAlphaStack350_user(nullptr);
-            info::globalDrawBlurRect351_ptr globalDrawBlurRect351_next(nullptr);
-            info::globalDrawBlurRect351_clbk globalDrawBlurRect351_user(nullptr);
-            info::globalDrawBlurVBuffer352_ptr globalDrawBlurVBuffer352_next(nullptr);
-            info::globalDrawBlurVBuffer352_clbk globalDrawBlurVBuffer352_user(nullptr);
-            info::globalDrawCParticle353_ptr globalDrawCParticle353_next(nullptr);
-            info::globalDrawCParticle353_clbk globalDrawCParticle353_user(nullptr);
-            info::globalDrawEtcPrint354_ptr globalDrawEtcPrint354_next(nullptr);
-            info::globalDrawEtcPrint354_clbk globalDrawEtcPrint354_user(nullptr);
-            info::globalDrawFadeSKy355_ptr globalDrawFadeSKy355_next(nullptr);
-            info::globalDrawFadeSKy355_clbk globalDrawFadeSKy355_user(nullptr);
-            info::globalDrawFadeScreen356_ptr globalDrawFadeScreen356_next(nullptr);
-            info::globalDrawFadeScreen356_clbk globalDrawFadeScreen356_user(nullptr);
-            info::globalDrawFadeTex357_ptr globalDrawFadeTex357_next(nullptr);
-            info::globalDrawFadeTex357_clbk globalDrawFadeTex357_user(nullptr);
-            info::globalDrawFullScreenLava358_ptr globalDrawFullScreenLava358_next(nullptr);
-            info::globalDrawFullScreenLava358_clbk globalDrawFullScreenLava358_user(nullptr);
-            info::globalDrawIndexedPrimitiveTLTex1359_ptr globalDrawIndexedPrimitiveTLTex1359_next(nullptr);
-            info::globalDrawIndexedPrimitiveTLTex1359_clbk globalDrawIndexedPrimitiveTLTex1359_user(nullptr);
-            info::globalDrawIndexedPrimitiveUPTex1360_ptr globalDrawIndexedPrimitiveUPTex1360_next(nullptr);
-            info::globalDrawIndexedPrimitiveUPTex1360_clbk globalDrawIndexedPrimitiveUPTex1360_user(nullptr);
-            info::globalDrawIndexedTLVertex361_ptr globalDrawIndexedTLVertex361_next(nullptr);
-            info::globalDrawIndexedTLVertex361_clbk globalDrawIndexedTLVertex361_user(nullptr);
-            info::globalDrawIndexedTex1VertexUP362_ptr globalDrawIndexedTex1VertexUP362_next(nullptr);
-            info::globalDrawIndexedTex1VertexUP362_clbk globalDrawIndexedTex1VertexUP362_user(nullptr);
-            info::globalDrawLensFlare363_ptr globalDrawLensFlare363_next(nullptr);
-            info::globalDrawLensFlare363_clbk globalDrawLensFlare363_user(nullptr);
-            info::globalDrawLightMapGroup364_ptr globalDrawLightMapGroup364_next(nullptr);
-            info::globalDrawLightMapGroup364_clbk globalDrawLightMapGroup364_user(nullptr);
-            info::globalDrawLogo365_ptr globalDrawLogo365_next(nullptr);
-            info::globalDrawLogo365_clbk globalDrawLogo365_user(nullptr);
-            info::globalDrawOneMatGroup366_ptr globalDrawOneMatGroup366_next(nullptr);
-            info::globalDrawOneMatGroup366_clbk globalDrawOneMatGroup366_user(nullptr);
-            info::globalDrawOneMatGroup367_ptr globalDrawOneMatGroup367_next(nullptr);
-            info::globalDrawOneMatGroup367_clbk globalDrawOneMatGroup367_user(nullptr);
-            info::globalDrawParticlePointSprite368_ptr globalDrawParticlePointSprite368_next(nullptr);
-            info::globalDrawParticlePointSprite368_clbk globalDrawParticlePointSprite368_user(nullptr);
-            info::globalDrawParticlePolygon369_ptr globalDrawParticlePolygon369_next(nullptr);
-            info::globalDrawParticlePolygon369_clbk globalDrawParticlePolygon369_user(nullptr);
-            info::globalDrawPrimitiveTLTex1370_ptr globalDrawPrimitiveTLTex1370_next(nullptr);
-            info::globalDrawPrimitiveTLTex1370_clbk globalDrawPrimitiveTLTex1370_user(nullptr);
-            info::globalDrawPrimitiveUPLine371_ptr globalDrawPrimitiveUPLine371_next(nullptr);
-            info::globalDrawPrimitiveUPLine371_clbk globalDrawPrimitiveUPLine371_user(nullptr);
-            info::globalDrawPrimitiveUPPoint372_ptr globalDrawPrimitiveUPPoint372_next(nullptr);
-            info::globalDrawPrimitiveUPPoint372_clbk globalDrawPrimitiveUPPoint372_user(nullptr);
-            info::globalDrawPrimitiveUPPoly373_ptr globalDrawPrimitiveUPPoly373_next(nullptr);
-            info::globalDrawPrimitiveUPPoly373_clbk globalDrawPrimitiveUPPoly373_user(nullptr);
-            info::globalDrawPrimitiveUPTLLine374_ptr globalDrawPrimitiveUPTLLine374_next(nullptr);
-            info::globalDrawPrimitiveUPTLLine374_clbk globalDrawPrimitiveUPTLLine374_user(nullptr);
-            info::globalDrawPrimitiveUPTex1375_ptr globalDrawPrimitiveUPTex1375_next(nullptr);
-            info::globalDrawPrimitiveUPTex1375_clbk globalDrawPrimitiveUPTex1375_user(nullptr);
-            info::globalDrawPrimitiveUPTex1376_ptr globalDrawPrimitiveUPTex1376_next(nullptr);
-            info::globalDrawPrimitiveUPTex1376_clbk globalDrawPrimitiveUPTex1376_user(nullptr);
-            info::globalDrawPrimitiveUPTex1Strip377_ptr globalDrawPrimitiveUPTex1Strip377_next(nullptr);
-            info::globalDrawPrimitiveUPTex1Strip377_clbk globalDrawPrimitiveUPTex1Strip377_user(nullptr);
-            info::globalDrawPrimitiveUPTex2378_ptr globalDrawPrimitiveUPTex2378_next(nullptr);
-            info::globalDrawPrimitiveUPTex2378_clbk globalDrawPrimitiveUPTex2378_user(nullptr);
-            info::globalDrawR3Hangul3DA379_ptr globalDrawR3Hangul3DA379_next(nullptr);
-            info::globalDrawR3Hangul3DA379_clbk globalDrawR3Hangul3DA379_user(nullptr);
-            info::globalDrawR3Hangul3DW380_ptr globalDrawR3Hangul3DW380_next(nullptr);
-            info::globalDrawR3Hangul3DW380_clbk globalDrawR3Hangul3DW380_user(nullptr);
-            info::globalDrawR3HangulA381_ptr globalDrawR3HangulA381_next(nullptr);
-            info::globalDrawR3HangulA381_clbk globalDrawR3HangulA381_user(nullptr);
-            info::globalDrawR3HangulA382_ptr globalDrawR3HangulA382_next(nullptr);
-            info::globalDrawR3HangulA382_clbk globalDrawR3HangulA382_user(nullptr);
-            info::globalDrawR3HangulW383_ptr globalDrawR3HangulW383_next(nullptr);
-            info::globalDrawR3HangulW383_clbk globalDrawR3HangulW383_user(nullptr);
-            info::globalDrawR3HangulW384_ptr globalDrawR3HangulW384_next(nullptr);
-            info::globalDrawR3HangulW384_clbk globalDrawR3HangulW384_user(nullptr);
-            info::globalDrawRect385_ptr globalDrawRect385_next(nullptr);
-            info::globalDrawRect385_clbk globalDrawRect385_user(nullptr);
-            info::globalDrawReflectionOneMatGroup386_ptr globalDrawReflectionOneMatGroup386_next(nullptr);
-            info::globalDrawReflectionOneMatGroup386_clbk globalDrawReflectionOneMatGroup386_user(nullptr);
-            info::globalDrawShadow387_ptr globalDrawShadow387_next(nullptr);
-            info::globalDrawShadow387_clbk globalDrawShadow387_user(nullptr);
-            info::globalDrawSpectialParticle388_ptr globalDrawSpectialParticle388_next(nullptr);
-            info::globalDrawSpectialParticle388_clbk globalDrawSpectialParticle388_user(nullptr);
-            info::globalDrawSpectialParticle1389_ptr globalDrawSpectialParticle1389_next(nullptr);
-            info::globalDrawSpectialParticle1389_clbk globalDrawSpectialParticle1389_user(nullptr);
-            info::globalDrawStripOneMatGroup390_ptr globalDrawStripOneMatGroup390_next(nullptr);
-            info::globalDrawStripOneMatGroup390_clbk globalDrawStripOneMatGroup390_user(nullptr);
-            info::globalDrawTLVertex391_ptr globalDrawTLVertex391_next(nullptr);
-            info::globalDrawTLVertex391_clbk globalDrawTLVertex391_user(nullptr);
-            info::globalDrawTLVertex392_ptr globalDrawTLVertex392_next(nullptr);
-            info::globalDrawTLVertex392_clbk globalDrawTLVertex392_user(nullptr);
-            info::globalDrawTestBox393_ptr globalDrawTestBox393_next(nullptr);
-            info::globalDrawTestBox393_clbk globalDrawTestBox393_user(nullptr);
-            info::globalEnCryptString395_ptr globalEnCryptString395_next(nullptr);
-            info::globalEnCryptString395_clbk globalEnCryptString395_user(nullptr);
-            info::globalEnCrypt_Move397_ptr globalEnCrypt_Move397_next(nullptr);
-            info::globalEnCrypt_Move397_clbk globalEnCrypt_Move397_user(nullptr);
-            info::globalError398_ptr globalError398_next(nullptr);
-            info::globalError398_clbk globalError398_user(nullptr);
-            info::globalErrorButRun399_ptr globalErrorButRun399_next(nullptr);
-            info::globalErrorButRun399_clbk globalErrorButRun399_user(nullptr);
-            info::globalExtractVertex400_ptr globalExtractVertex400_next(nullptr);
-            info::globalExtractVertex400_clbk globalExtractVertex400_user(nullptr);
-            info::globalF402_ptr globalF402_next(nullptr);
-            info::globalF402_clbk globalF402_user(nullptr);
-            info::globalF2DW403_ptr globalF2DW403_next(nullptr);
-            info::globalF2DW403_clbk globalF2DW403_user(nullptr);
-            info::globalFastBBoShasiToFrameBuffer404_ptr globalFastBBoShasiToFrameBuffer404_next(nullptr);
-            info::globalFastBBoShasiToFrameBuffer404_clbk globalFastBBoShasiToFrameBuffer404_user(nullptr);
-            info::globalFastCmp405_ptr globalFastCmp405_next(nullptr);
-            info::globalFastCmp405_clbk globalFastCmp405_user(nullptr);
-            info::globalFatalError406_ptr globalFatalError406_next(nullptr);
-            info::globalFatalError406_clbk globalFatalError406_user(nullptr);
-            info::globalFindAllFile408_ptr globalFindAllFile408_next(nullptr);
-            info::globalFindAllFile408_clbk globalFindAllFile408_user(nullptr);
-            info::globalFindEmptyAnimus410_ptr globalFindEmptyAnimus410_next(nullptr);
-            info::globalFindEmptyAnimus410_clbk globalFindEmptyAnimus410_user(nullptr);
-            info::globalFindEmptyNPC412_ptr globalFindEmptyNPC412_next(nullptr);
-            info::globalFindEmptyNPC412_clbk globalFindEmptyNPC412_user(nullptr);
-            info::globalFindEmptyParkingUnit414_ptr globalFindEmptyParkingUnit414_next(nullptr);
-            info::globalFindEmptyParkingUnit414_clbk globalFindEmptyParkingUnit414_user(nullptr);
-            info::globalFixTalikItemIndex416_ptr globalFixTalikItemIndex416_next(nullptr);
-            info::globalFixTalikItemIndex416_clbk globalFixTalikItemIndex416_user(nullptr);
-            info::globalFloatToShort418_ptr globalFloatToShort418_next(nullptr);
-            info::globalFloatToShort418_clbk globalFloatToShort418_user(nullptr);
-            info::globalForce32BitRendering419_ptr globalForce32BitRendering419_next(nullptr);
-            info::globalForce32BitRendering419_clbk globalForce32BitRendering419_user(nullptr);
-            info::globalForceFullScreen420_ptr globalForceFullScreen420_next(nullptr);
-            info::globalForceFullScreen420_clbk globalForceFullScreen420_user(nullptr);
-            info::globalFramebufferToBMP421_ptr globalFramebufferToBMP421_next(nullptr);
-            info::globalFramebufferToBMP421_clbk globalFramebufferToBMP421_user(nullptr);
-            info::globalFramebufferToJPG422_ptr globalFramebufferToJPG422_next(nullptr);
-            info::globalFramebufferToJPG422_clbk globalFramebufferToJPG422_user(nullptr);
-            info::globalFreePointer423_ptr globalFreePointer423_next(nullptr);
-            info::globalFreePointer423_clbk globalFreePointer423_user(nullptr);
-            info::globalFtoDW424_ptr globalFtoDW424_next(nullptr);
-            info::globalFtoDW424_clbk globalFtoDW424_user(nullptr);
-            info::globalFullScreenEffect425_ptr globalFullScreenEffect425_next(nullptr);
-            info::globalFullScreenEffect425_clbk globalFullScreenEffect425_user(nullptr);
-            info::globalG427_ptr globalG427_next(nullptr);
-            info::globalG427_clbk globalG427_user(nullptr);
-            info::globalGet1st1024x1024TexRender428_ptr globalGet1st1024x1024TexRender428_next(nullptr);
-            info::globalGet1st1024x1024TexRender428_clbk globalGet1st1024x1024TexRender428_user(nullptr);
-            info::globalGet1st256x256TexRender429_ptr globalGet1st256x256TexRender429_next(nullptr);
-            info::globalGet1st256x256TexRender429_clbk globalGet1st256x256TexRender429_user(nullptr);
-            info::globalGet1st512x512TexRender430_ptr globalGet1st512x512TexRender430_next(nullptr);
-            info::globalGet1st512x512TexRender430_clbk globalGet1st512x512TexRender430_user(nullptr);
-            info::globalGet2DTo3DTranslation431_ptr globalGet2DTo3DTranslation431_next(nullptr);
-            info::globalGet2DTo3DTranslation431_clbk globalGet2DTo3DTranslation431_user(nullptr);
-            info::globalGet2nd256x256TexRender432_ptr globalGet2nd256x256TexRender432_next(nullptr);
-            info::globalGet2nd256x256TexRender432_clbk globalGet2nd256x256TexRender432_user(nullptr);
-            info::globalGet2nd512x512TexRender433_ptr globalGet2nd512x512TexRender433_next(nullptr);
-            info::globalGet2nd512x512TexRender433_clbk globalGet2nd512x512TexRender433_user(nullptr);
-            info::globalGet3DSqrt435_ptr globalGet3DSqrt435_next(nullptr);
-            info::globalGet3DSqrt435_clbk globalGet3DSqrt435_user(nullptr);
-            info::globalGetAddrString437_ptr globalGetAddrString437_next(nullptr);
-            info::globalGetAddrString437_clbk globalGetAddrString437_user(nullptr);
-            info::globalGetAllPlayingWaves438_ptr globalGetAllPlayingWaves438_next(nullptr);
-            info::globalGetAllPlayingWaves438_clbk globalGetAllPlayingWaves438_user(nullptr);
-            info::globalGetAngle440_ptr globalGetAngle440_next(nullptr);
-            info::globalGetAngle440_clbk globalGetAngle440_user(nullptr);
-            info::globalGetAniMatrix441_ptr globalGetAniMatrix441_next(nullptr);
-            info::globalGetAniMatrix441_clbk globalGetAniMatrix441_user(nullptr);
-            info::globalGetAnimusFldFromExp443_ptr globalGetAnimusFldFromExp443_next(nullptr);
-            info::globalGetAnimusFldFromExp443_clbk globalGetAnimusFldFromExp443_user(nullptr);
-            info::globalGetAnimusFldFromLv445_ptr globalGetAnimusFldFromLv445_next(nullptr);
-            info::globalGetAnimusFldFromLv445_clbk globalGetAnimusFldFromLv445_user(nullptr);
-            info::globalGetAvailableVidMem446_ptr globalGetAvailableVidMem446_next(nullptr);
-            info::globalGetAvailableVidMem446_clbk globalGetAvailableVidMem446_user(nullptr);
-            info::globalGetBBoxRotate447_ptr globalGetBBoxRotate447_next(nullptr);
-            info::globalGetBBoxRotate447_clbk globalGetBBoxRotate447_user(nullptr);
-            info::globalGetBezierPoint448_ptr globalGetBezierPoint448_next(nullptr);
-            info::globalGetBezierPoint448_clbk globalGetBezierPoint448_user(nullptr);
-            info::globalGetBillboardMatrix449_ptr globalGetBillboardMatrix449_next(nullptr);
-            info::globalGetBillboardMatrix449_clbk globalGetBillboardMatrix449_user(nullptr);
-            info::globalGetBitAfterDowngrade451_ptr globalGetBitAfterDowngrade451_next(nullptr);
-            info::globalGetBitAfterDowngrade451_clbk globalGetBitAfterDowngrade451_user(nullptr);
-            info::globalGetBitAfterSetLimSocket453_ptr globalGetBitAfterSetLimSocket453_next(nullptr);
-            info::globalGetBitAfterSetLimSocket453_clbk globalGetBitAfterSetLimSocket453_user(nullptr);
-            info::globalGetBitAfterUpgrade455_ptr globalGetBitAfterUpgrade455_next(nullptr);
-            info::globalGetBitAfterUpgrade455_clbk globalGetBitAfterUpgrade455_user(nullptr);
-            info::globalGetBoldSubLeng456_ptr globalGetBoldSubLeng456_next(nullptr);
-            info::globalGetBoldSubLeng456_clbk globalGetBoldSubLeng456_user(nullptr);
-            info::globalGetBumpFactor457_ptr globalGetBumpFactor457_next(nullptr);
-            info::globalGetBumpFactor457_clbk globalGetBumpFactor457_user(nullptr);
-            info::globalGetCameraPos458_ptr globalGetCameraPos458_next(nullptr);
-            info::globalGetCameraPos458_clbk globalGetCameraPos458_user(nullptr);
-            info::globalGetCharFromKey459_ptr globalGetCharFromKey459_next(nullptr);
-            info::globalGetCharFromKey459_clbk globalGetCharFromKey459_user(nullptr);
-            info::globalGetCheckTimeFromCombineExCheckKey461_ptr globalGetCheckTimeFromCombineExCheckKey461_next(nullptr);
-            info::globalGetCheckTimeFromCombineExCheckKey461_clbk globalGetCheckTimeFromCombineExCheckKey461_user(nullptr);
-            info::globalGetColorToColorAlpha462_ptr globalGetColorToColorAlpha462_next(nullptr);
-            info::globalGetColorToColorAlpha462_clbk globalGetColorToColorAlpha462_user(nullptr);
-            info::globalGetConnectTime_AddBySec464_ptr globalGetConnectTime_AddBySec464_next(nullptr);
-            info::globalGetConnectTime_AddBySec464_clbk globalGetConnectTime_AddBySec464_user(nullptr);
-            info::globalGetConsoleStateB465_ptr globalGetConsoleStateB465_next(nullptr);
-            info::globalGetConsoleStateB465_clbk globalGetConsoleStateB465_user(nullptr);
-            info::globalGetContrast466_ptr globalGetContrast466_next(nullptr);
-            info::globalGetContrast466_clbk globalGetContrast466_user(nullptr);
-            info::globalGetCurDay468_ptr globalGetCurDay468_next(nullptr);
-            info::globalGetCurDay468_clbk globalGetCurDay468_user(nullptr);
-            info::globalGetCurHour470_ptr globalGetCurHour470_next(nullptr);
-            info::globalGetCurHour470_clbk globalGetCurHour470_user(nullptr);
-            info::globalGetCurrentDay472_ptr globalGetCurrentDay472_next(nullptr);
-            info::globalGetCurrentDay472_clbk globalGetCurrentDay472_user(nullptr);
-            info::globalGetCurrentHour474_ptr globalGetCurrentHour474_next(nullptr);
-            info::globalGetCurrentHour474_clbk globalGetCurrentHour474_user(nullptr);
-            info::globalGetCurrentMin476_ptr globalGetCurrentMin476_next(nullptr);
-            info::globalGetCurrentMin476_clbk globalGetCurrentMin476_user(nullptr);
-            info::globalGetCurrentMonth478_ptr globalGetCurrentMonth478_next(nullptr);
-            info::globalGetCurrentMonth478_clbk globalGetCurrentMonth478_user(nullptr);
-            info::globalGetCurrentSec480_ptr globalGetCurrentSec480_next(nullptr);
-            info::globalGetCurrentSec480_clbk globalGetCurrentSec480_user(nullptr);
-            info::globalGetCurrentYear482_ptr globalGetCurrentYear482_next(nullptr);
-            info::globalGetCurrentYear482_clbk globalGetCurrentYear482_user(nullptr);
-            info::globalGetCurwDay484_ptr globalGetCurwDay484_next(nullptr);
-            info::globalGetCurwDay484_clbk globalGetCurwDay484_user(nullptr);
-            info::globalGetD3DTexture485_ptr globalGetD3DTexture485_next(nullptr);
-            info::globalGetD3DTexture485_clbk globalGetD3DTexture485_user(nullptr);
-            info::globalGetD3DTextureFromBuffer486_ptr globalGetD3DTextureFromBuffer486_next(nullptr);
-            info::globalGetD3DTextureFromBuffer486_clbk globalGetD3DTextureFromBuffer486_user(nullptr);
-            info::globalGetD3dDevice487_ptr globalGetD3dDevice487_next(nullptr);
-            info::globalGetD3dDevice487_clbk globalGetD3dDevice487_user(nullptr);
-            info::globalGetDDSTexFromBuffer488_ptr globalGetDDSTexFromBuffer488_next(nullptr);
-            info::globalGetDDSTexFromBuffer488_clbk globalGetDDSTexFromBuffer488_user(nullptr);
-            info::globalGetDateStrAfterDay490_ptr globalGetDateStrAfterDay490_next(nullptr);
-            info::globalGetDateStrAfterDay490_clbk globalGetDateStrAfterDay490_user(nullptr);
-            info::globalGetDateTimeStr492_ptr globalGetDateTimeStr492_next(nullptr);
-            info::globalGetDateTimeStr492_clbk globalGetDateTimeStr492_user(nullptr);
-            info::globalGetDefItemUpgSocketNum494_ptr globalGetDefItemUpgSocketNum494_next(nullptr);
-            info::globalGetDefItemUpgSocketNum494_clbk globalGetDefItemUpgSocketNum494_user(nullptr);
-            info::globalGetDensityFromPos495_ptr globalGetDensityFromPos495_next(nullptr);
-            info::globalGetDensityFromPos495_clbk globalGetDensityFromPos495_user(nullptr);
-            info::globalGetDirection497_ptr globalGetDirection497_next(nullptr);
-            info::globalGetDirection497_clbk globalGetDirection497_user(nullptr);
-            info::globalGetDist498_ptr globalGetDist498_next(nullptr);
-            info::globalGetDist498_clbk globalGetDist498_user(nullptr);
-            info::globalGetDmallocCnt499_ptr globalGetDmallocCnt499_next(nullptr);
-            info::globalGetDmallocCnt499_clbk globalGetDmallocCnt499_user(nullptr);
-            info::globalGetDmallocSize500_ptr globalGetDmallocSize500_next(nullptr);
-            info::globalGetDmallocSize500_clbk globalGetDmallocSize500_user(nullptr);
-            info::globalGetDuration501_ptr globalGetDuration501_next(nullptr);
-            info::globalGetDuration501_clbk globalGetDuration501_user(nullptr);
-            info::globalGetDynamicLight502_ptr globalGetDynamicLight502_next(nullptr);
-            info::globalGetDynamicLight502_clbk globalGetDynamicLight502_user(nullptr);
-            info::globalGetDynamicLightBBox503_ptr globalGetDynamicLightBBox503_next(nullptr);
-            info::globalGetDynamicLightBBox503_clbk globalGetDynamicLightBBox503_user(nullptr);
-            info::globalGetDynamicLightNum504_ptr globalGetDynamicLightNum504_next(nullptr);
-            info::globalGetDynamicLightNum504_clbk globalGetDynamicLightNum504_user(nullptr);
-            info::globalGetEXT505_ptr globalGetEXT505_next(nullptr);
-            info::globalGetEXT505_clbk globalGetEXT505_user(nullptr);
-            info::globalGetEmptyGuildData507_ptr globalGetEmptyGuildData507_next(nullptr);
-            info::globalGetEmptyGuildData507_clbk globalGetEmptyGuildData507_user(nullptr);
-            info::globalGetEntityAnimationPos508_ptr globalGetEntityAnimationPos508_next(nullptr);
-            info::globalGetEntityAnimationPos508_clbk globalGetEntityAnimationPos508_user(nullptr);
-            info::globalGetExcelIndexFromCombineExCheckKey510_ptr globalGetExcelIndexFromCombineExCheckKey510_next(nullptr);
-            info::globalGetExcelIndexFromCombineExCheckKey510_clbk globalGetExcelIndexFromCombineExCheckKey510_user(nullptr);
-            info::globalGetFPS511_ptr globalGetFPS511_next(nullptr);
-            info::globalGetFPS511_clbk globalGetFPS511_user(nullptr);
-            info::globalGetFileSize512_ptr globalGetFileSize512_next(nullptr);
-            info::globalGetFileSize512_clbk globalGetFileSize512_user(nullptr);
-            info::globalGetFileSizeAndMergeFile513_ptr globalGetFileSizeAndMergeFile513_next(nullptr);
-            info::globalGetFileSizeAndMergeFile513_clbk globalGetFileSizeAndMergeFile513_user(nullptr);
-            info::globalGetFinalBilloardMatrix514_ptr globalGetFinalBilloardMatrix514_next(nullptr);
-            info::globalGetFinalBilloardMatrix514_clbk globalGetFinalBilloardMatrix514_user(nullptr);
-            info::globalGetFinalPath515_ptr globalGetFinalPath515_next(nullptr);
-            info::globalGetFinalPath515_clbk globalGetFinalPath515_user(nullptr);
-            info::globalGetFloatMod516_ptr globalGetFloatMod516_next(nullptr);
-            info::globalGetFloatMod516_clbk globalGetFloatMod516_user(nullptr);
-            info::globalGetFogColor517_ptr globalGetFogColor517_next(nullptr);
-            info::globalGetFogColor517_clbk globalGetFogColor517_user(nullptr);
-            info::globalGetFrustumNormalPlane518_ptr globalGetFrustumNormalPlane518_next(nullptr);
-            info::globalGetFrustumNormalPlane518_clbk globalGetFrustumNormalPlane518_user(nullptr);
-            info::globalGetGlobalMusicVolume519_ptr globalGetGlobalMusicVolume519_next(nullptr);
-            info::globalGetGlobalMusicVolume519_clbk globalGetGlobalMusicVolume519_user(nullptr);
-            info::globalGetGlobalWavVolume520_ptr globalGetGlobalWavVolume520_next(nullptr);
-            info::globalGetGlobalWavVolume520_clbk globalGetGlobalWavVolume520_user(nullptr);
-            info::globalGetGravity521_ptr globalGetGravity521_next(nullptr);
-            info::globalGetGravity521_clbk globalGetGravity521_user(nullptr);
-            info::globalGetGuildDataFromSerial523_ptr globalGetGuildDataFromSerial523_next(nullptr);
-            info::globalGetGuildDataFromSerial523_clbk globalGetGuildDataFromSerial523_user(nullptr);
-            info::globalGetGuildPtrFromName525_ptr globalGetGuildPtrFromName525_next(nullptr);
-            info::globalGetGuildPtrFromName525_clbk globalGetGuildPtrFromName525_user(nullptr);
-            info::globalGetHeadMatrix526_ptr globalGetHeadMatrix526_next(nullptr);
-            info::globalGetHeadMatrix526_clbk globalGetHeadMatrix526_user(nullptr);
-            info::globalGetIPAddress528_ptr globalGetIPAddress528_next(nullptr);
-            info::globalGetIPAddress528_clbk globalGetIPAddress528_user(nullptr);
-            info::globalGetIPAddress530_ptr globalGetIPAddress530_next(nullptr);
-            info::globalGetIPAddress530_clbk globalGetIPAddress530_user(nullptr);
-            info::globalGetIPAddress532_ptr globalGetIPAddress532_next(nullptr);
-            info::globalGetIPAddress532_clbk globalGetIPAddress532_user(nullptr);
-            info::globalGetInverseTransformVertex533_ptr globalGetInverseTransformVertex533_next(nullptr);
-            info::globalGetInverseTransformVertex533_clbk globalGetInverseTransformVertex533_user(nullptr);
-            info::globalGetItemDurPoint535_ptr globalGetItemDurPoint535_next(nullptr);
-            info::globalGetItemDurPoint535_clbk globalGetItemDurPoint535_user(nullptr);
-            info::globalGetItemEquipCivil537_ptr globalGetItemEquipCivil537_next(nullptr);
-            info::globalGetItemEquipCivil537_clbk globalGetItemEquipCivil537_user(nullptr);
-            info::globalGetItemEquipGrade539_ptr globalGetItemEquipGrade539_next(nullptr);
-            info::globalGetItemEquipGrade539_clbk globalGetItemEquipGrade539_user(nullptr);
-            info::globalGetItemEquipGrade541_ptr globalGetItemEquipGrade541_next(nullptr);
-            info::globalGetItemEquipGrade541_clbk globalGetItemEquipGrade541_user(nullptr);
-            info::globalGetItemEquipLevel543_ptr globalGetItemEquipLevel543_next(nullptr);
-            info::globalGetItemEquipLevel543_clbk globalGetItemEquipLevel543_user(nullptr);
-            info::globalGetItemEquipMastery545_ptr globalGetItemEquipMastery545_next(nullptr);
-            info::globalGetItemEquipMastery545_clbk globalGetItemEquipMastery545_user(nullptr);
-            info::globalGetItemEquipUpLevel547_ptr globalGetItemEquipUpLevel547_next(nullptr);
-            info::globalGetItemEquipUpLevel547_clbk globalGetItemEquipUpLevel547_user(nullptr);
-            info::globalGetItemGoldPoint549_ptr globalGetItemGoldPoint549_next(nullptr);
-            info::globalGetItemGoldPoint549_clbk globalGetItemGoldPoint549_user(nullptr);
-            info::globalGetItemGrade551_ptr globalGetItemGrade551_next(nullptr);
-            info::globalGetItemGrade551_clbk globalGetItemGrade551_user(nullptr);
-            info::globalGetItemKillPoint553_ptr globalGetItemKillPoint553_next(nullptr);
-            info::globalGetItemKillPoint553_clbk globalGetItemKillPoint553_user(nullptr);
-            info::globalGetItemKindCode555_ptr globalGetItemKindCode555_next(nullptr);
-            info::globalGetItemKindCode555_clbk globalGetItemKindCode555_user(nullptr);
-            info::globalGetItemKorName557_ptr globalGetItemKorName557_next(nullptr);
-            info::globalGetItemKorName557_clbk globalGetItemKorName557_user(nullptr);
-            info::globalGetItemProcPoint559_ptr globalGetItemProcPoint559_next(nullptr);
-            info::globalGetItemProcPoint559_clbk globalGetItemProcPoint559_user(nullptr);
-            info::globalGetItemStdPoint561_ptr globalGetItemStdPoint561_next(nullptr);
-            info::globalGetItemStdPoint561_clbk globalGetItemStdPoint561_user(nullptr);
-            info::globalGetItemStdPrice563_ptr globalGetItemStdPrice563_next(nullptr);
-            info::globalGetItemStdPrice563_clbk globalGetItemStdPrice563_user(nullptr);
-            info::globalGetItemStoragePrice565_ptr globalGetItemStoragePrice565_next(nullptr);
-            info::globalGetItemStoragePrice565_clbk globalGetItemStoragePrice565_user(nullptr);
-            info::globalGetItemTableCode567_ptr globalGetItemTableCode567_next(nullptr);
-            info::globalGetItemTableCode567_clbk globalGetItemTableCode567_user(nullptr);
-            info::globalGetItemUpgLimSocket569_ptr globalGetItemUpgLimSocket569_next(nullptr);
-            info::globalGetItemUpgLimSocket569_clbk globalGetItemUpgLimSocket569_user(nullptr);
-            info::globalGetItemUpgedLv571_ptr globalGetItemUpgedLv571_next(nullptr);
-            info::globalGetItemUpgedLv571_clbk globalGetItemUpgedLv571_user(nullptr);
-            info::globalGetJPGDimensions572_ptr globalGetJPGDimensions572_next(nullptr);
-            info::globalGetJPGDimensions572_clbk globalGetJPGDimensions572_user(nullptr);
-            info::globalGetKorLocalTime574_ptr globalGetKorLocalTime574_next(nullptr);
-            info::globalGetKorLocalTime574_clbk globalGetKorLocalTime574_user(nullptr);
-            info::globalGetLastWriteFileTime576_ptr globalGetLastWriteFileTime576_next(nullptr);
-            info::globalGetLastWriteFileTime576_clbk globalGetLastWriteFileTime576_user(nullptr);
-            info::globalGetLightMapColor577_ptr globalGetLightMapColor577_next(nullptr);
-            info::globalGetLightMapColor577_clbk globalGetLightMapColor577_user(nullptr);
-            info::globalGetLightMapSurface578_ptr globalGetLightMapSurface578_next(nullptr);
-            info::globalGetLightMapSurface578_clbk globalGetLightMapSurface578_user(nullptr);
-            info::globalGetLightMapTexSize579_ptr globalGetLightMapTexSize579_next(nullptr);
-            info::globalGetLightMapTexSize579_clbk globalGetLightMapTexSize579_user(nullptr);
-            info::globalGetLocalDate581_ptr globalGetLocalDate581_next(nullptr);
-            info::globalGetLocalDate581_clbk globalGetLocalDate581_user(nullptr);
-            info::globalGetLoopTime583_ptr globalGetLoopTime583_next(nullptr);
-            info::globalGetLoopTime583_clbk globalGetLoopTime583_user(nullptr);
-            info::globalGetMacAddrString585_ptr globalGetMacAddrString585_next(nullptr);
-            info::globalGetMacAddrString585_clbk globalGetMacAddrString585_user(nullptr);
-            info::globalGetMainMaterial586_ptr globalGetMainMaterial586_next(nullptr);
-            info::globalGetMainMaterial586_clbk globalGetMainMaterial586_user(nullptr);
-            info::globalGetMainMaterialNum587_ptr globalGetMainMaterialNum587_next(nullptr);
-            info::globalGetMainMaterialNum587_clbk globalGetMainMaterialNum587_user(nullptr);
-            info::globalGetMatLightFromColor588_ptr globalGetMatLightFromColor588_next(nullptr);
-            info::globalGetMatLightFromColor588_clbk globalGetMatLightFromColor588_user(nullptr);
-            info::globalGetMaterialNameNum589_ptr globalGetMaterialNameNum589_next(nullptr);
-            info::globalGetMaterialNameNum589_clbk globalGetMaterialNameNum589_user(nullptr);
-            info::globalGetMatrixFrom3DSMAXMatrix590_ptr globalGetMatrixFrom3DSMAXMatrix590_next(nullptr);
-            info::globalGetMatrixFrom3DSMAXMatrix590_clbk globalGetMatrixFrom3DSMAXMatrix590_user(nullptr);
-            info::globalGetMatrixFromAtoB591_ptr globalGetMatrixFromAtoB591_next(nullptr);
-            info::globalGetMatrixFromAtoB591_clbk globalGetMatrixFromAtoB591_user(nullptr);
-            info::globalGetMatrixFromAtoB2592_ptr globalGetMatrixFromAtoB2592_next(nullptr);
-            info::globalGetMatrixFromAtoB2592_clbk globalGetMatrixFromAtoB2592_user(nullptr);
-            info::globalGetMatrixFromVector593_ptr globalGetMatrixFromVector593_next(nullptr);
-            info::globalGetMatrixFromVector593_clbk globalGetMatrixFromVector593_user(nullptr);
-            info::globalGetMaxParamFromExp595_ptr globalGetMaxParamFromExp595_next(nullptr);
-            info::globalGetMaxParamFromExp595_clbk globalGetMaxParamFromExp595_user(nullptr);
-            info::globalGetMaxResKind597_ptr globalGetMaxResKind597_next(nullptr);
-            info::globalGetMaxResKind597_clbk globalGetMaxResKind597_user(nullptr);
-            info::globalGetMergeFileManager598_ptr globalGetMergeFileManager598_next(nullptr);
-            info::globalGetMergeFileManager598_clbk globalGetMergeFileManager598_user(nullptr);
-            info::globalGetMipMapSkipSize599_ptr globalGetMipMapSkipSize599_next(nullptr);
-            info::globalGetMipMapSkipSize599_clbk globalGetMipMapSkipSize599_user(nullptr);
-            info::globalGetMotionBlurLength600_ptr globalGetMotionBlurLength600_next(nullptr);
-            info::globalGetMotionBlurLength600_clbk globalGetMotionBlurLength600_user(nullptr);
-            info::globalGetMultiLayerTime601_ptr globalGetMultiLayerTime601_next(nullptr);
-            info::globalGetMultiLayerTime601_clbk globalGetMultiLayerTime601_user(nullptr);
-            info::globalGetNextDay603_ptr globalGetNextDay603_next(nullptr);
-            info::globalGetNextDay603_clbk globalGetNextDay603_user(nullptr);
-            info::globalGetNormal604_ptr globalGetNormal604_next(nullptr);
-            info::globalGetNormal604_clbk globalGetNormal604_user(nullptr);
-            info::globalGetNowDateTime606_ptr globalGetNowDateTime606_next(nullptr);
-            info::globalGetNowDateTime606_clbk globalGetNowDateTime606_user(nullptr);
-            info::globalGetNowFrame607_ptr globalGetNowFrame607_next(nullptr);
-            info::globalGetNowFrame607_clbk globalGetNowFrame607_user(nullptr);
-            info::globalGetNowFreeJmallocSize608_ptr globalGetNowFreeJmallocSize608_next(nullptr);
-            info::globalGetNowFreeJmallocSize608_clbk globalGetNowFreeJmallocSize608_user(nullptr);
-            info::globalGetNowHWnd609_ptr globalGetNowHWnd609_next(nullptr);
-            info::globalGetNowHWnd609_clbk globalGetNowHWnd609_user(nullptr);
-            info::globalGetNowJmallocSize610_ptr globalGetNowJmallocSize610_next(nullptr);
-            info::globalGetNowJmallocSize610_clbk globalGetNowJmallocSize610_user(nullptr);
-            info::globalGetNowPath611_ptr globalGetNowPath611_next(nullptr);
-            info::globalGetNowPath611_clbk globalGetNowPath611_user(nullptr);
-            info::globalGetNowR3D3DTexCnt612_ptr globalGetNowR3D3DTexCnt612_next(nullptr);
-            info::globalGetNowR3D3DTexCnt612_clbk globalGetNowR3D3DTexCnt612_user(nullptr);
-            info::globalGetNowR3TexCnt613_ptr globalGetNowR3TexCnt613_next(nullptr);
-            info::globalGetNowR3TexCnt613_clbk globalGetNowR3TexCnt613_user(nullptr);
-            info::globalGetNowTexMemSize614_ptr globalGetNowTexMemSize614_next(nullptr);
-            info::globalGetNowTexMemSize614_clbk globalGetNowTexMemSize614_user(nullptr);
-            info::globalGetNumAllFile616_ptr globalGetNumAllFile616_next(nullptr);
-            info::globalGetNumAllFile616_clbk globalGetNumAllFile616_user(nullptr);
-            info::globalGetObjectMatrix617_ptr globalGetObjectMatrix617_next(nullptr);
-            info::globalGetObjectMatrix617_clbk globalGetObjectMatrix617_user(nullptr);
-            info::globalGetOldRenderTarget618_ptr globalGetOldRenderTarget618_next(nullptr);
-            info::globalGetOldRenderTarget618_clbk globalGetOldRenderTarget618_user(nullptr);
-            info::globalGetOldStencilZ619_ptr globalGetOldStencilZ619_next(nullptr);
-            info::globalGetOldStencilZ619_clbk globalGetOldStencilZ619_user(nullptr);
-            info::globalGetOneNameFromPath620_ptr globalGetOneNameFromPath620_next(nullptr);
-            info::globalGetOneNameFromPath620_clbk globalGetOneNameFromPath620_user(nullptr);
-            info::globalGetOutLineColor621_ptr globalGetOutLineColor621_next(nullptr);
-            info::globalGetOutLineColor621_clbk globalGetOutLineColor621_user(nullptr);
-            info::globalGetOutLineColorFont16622_ptr globalGetOutLineColorFont16622_next(nullptr);
-            info::globalGetOutLineColorFont16622_clbk globalGetOutLineColorFont16622_user(nullptr);
-            info::globalGetOutLineColorFont24623_ptr globalGetOutLineColorFont24623_next(nullptr);
-            info::globalGetOutLineColorFont24623_clbk globalGetOutLineColorFont24623_user(nullptr);
-            info::globalGetPlaneCrossPoint624_ptr globalGetPlaneCrossPoint624_next(nullptr);
-            info::globalGetPlaneCrossPoint624_clbk globalGetPlaneCrossPoint624_user(nullptr);
-            info::globalGetPlaneCrossPoint625_ptr globalGetPlaneCrossPoint625_next(nullptr);
-            info::globalGetPlaneCrossPoint625_clbk globalGetPlaneCrossPoint625_user(nullptr);
-            info::globalGetPointCamera626_ptr globalGetPointCamera626_next(nullptr);
-            info::globalGetPointCamera626_clbk globalGetPointCamera626_user(nullptr);
-            info::globalGetPosByDistFromATOB627_ptr globalGetPosByDistFromATOB627_next(nullptr);
-            info::globalGetPosByDistFromATOB627_clbk globalGetPosByDistFromATOB627_user(nullptr);
-            info::globalGetPreParticleList628_ptr globalGetPreParticleList628_next(nullptr);
-            info::globalGetPreParticleList628_clbk globalGetPreParticleList628_user(nullptr);
-            info::globalGetPreParticleListNum629_ptr globalGetPreParticleListNum629_next(nullptr);
-            info::globalGetPreParticleListNum629_clbk globalGetPreParticleListNum629_user(nullptr);
-            info::globalGetPrevDay631_ptr globalGetPrevDay631_next(nullptr);
-            info::globalGetPrevDay631_clbk globalGetPrevDay631_user(nullptr);
-            info::globalGetProjectMatrix632_ptr globalGetProjectMatrix632_next(nullptr);
-            info::globalGetProjectMatrix632_clbk globalGetProjectMatrix632_user(nullptr);
-            info::globalGetPtrPlayerFromAccount634_ptr globalGetPtrPlayerFromAccount634_next(nullptr);
-            info::globalGetPtrPlayerFromAccount634_clbk globalGetPtrPlayerFromAccount634_user(nullptr);
-            info::globalGetPtrPlayerFromAccountSerial636_ptr globalGetPtrPlayerFromAccountSerial636_next(nullptr);
-            info::globalGetPtrPlayerFromAccountSerial636_clbk globalGetPtrPlayerFromAccountSerial636_user(nullptr);
-            info::globalGetPtrPlayerFromCharSerial638_ptr globalGetPtrPlayerFromCharSerial638_next(nullptr);
-            info::globalGetPtrPlayerFromCharSerial638_clbk globalGetPtrPlayerFromCharSerial638_user(nullptr);
-            info::globalGetPtrPlayerFromName640_ptr globalGetPtrPlayerFromName640_next(nullptr);
-            info::globalGetPtrPlayerFromName640_clbk globalGetPtrPlayerFromName640_user(nullptr);
-            info::globalGetPtrPlayerFromSerial642_ptr globalGetPtrPlayerFromSerial642_next(nullptr);
-            info::globalGetPtrPlayerFromSerial642_clbk globalGetPtrPlayerFromSerial642_user(nullptr);
-            info::globalGetQLen644_ptr globalGetQLen644_next(nullptr);
-            info::globalGetQLen644_clbk globalGetQLen644_user(nullptr);
-            info::globalGetQuaternionFromVector645_ptr globalGetQuaternionFromVector645_next(nullptr);
-            info::globalGetQuaternionFromVector645_clbk globalGetQuaternionFromVector645_user(nullptr);
-            info::globalGetQuaternionFromVector646_ptr globalGetQuaternionFromVector646_next(nullptr);
-            info::globalGetQuaternionFromVector646_clbk globalGetQuaternionFromVector646_user(nullptr);
-            info::globalGetR3TexManageFlag647_ptr globalGetR3TexManageFlag647_next(nullptr);
-            info::globalGetR3TexManageFlag647_clbk globalGetR3TexManageFlag647_user(nullptr);
-            info::globalGetRandOrNum648_ptr globalGetRandOrNum648_next(nullptr);
-            info::globalGetRandOrNum648_clbk globalGetRandOrNum648_user(nullptr);
-            info::globalGetReactArea650_ptr globalGetReactArea650_next(nullptr);
-            info::globalGetReactArea650_clbk globalGetReactArea650_user(nullptr);
-            info::globalGetReactObject652_ptr globalGetReactObject652_next(nullptr);
-            info::globalGetReactObject652_clbk globalGetReactObject652_user(nullptr);
-            info::globalGetReflectionState653_ptr globalGetReflectionState653_next(nullptr);
-            info::globalGetReflectionState653_clbk globalGetReflectionState653_user(nullptr);
-            info::globalGetRegionIndex655_ptr globalGetRegionIndex655_next(nullptr);
-            info::globalGetRegionIndex655_clbk globalGetRegionIndex655_user(nullptr);
-            info::globalGetRegionName657_ptr globalGetRegionName657_next(nullptr);
-            info::globalGetRegionName657_clbk globalGetRegionName657_user(nullptr);
-            info::globalGetRewardItemNumChangeClass659_ptr globalGetRewardItemNumChangeClass659_next(nullptr);
-            info::globalGetRewardItemNumChangeClass659_clbk globalGetRewardItemNumChangeClass659_user(nullptr);
-            info::globalGetSFLevel661_ptr globalGetSFLevel661_next(nullptr);
-            info::globalGetSFLevel661_clbk globalGetSFLevel661_user(nullptr);
-            info::globalGetShadowRenderTexture662_ptr globalGetShadowRenderTexture662_next(nullptr);
-            info::globalGetShadowRenderTexture662_clbk globalGetShadowRenderTexture662_user(nullptr);
-            info::globalGetShadowTexture663_ptr globalGetShadowTexture663_next(nullptr);
-            info::globalGetShadowTexture663_clbk globalGetShadowTexture663_user(nullptr);
-            info::globalGetSocketName665_ptr globalGetSocketName665_next(nullptr);
-            info::globalGetSocketName665_clbk globalGetSocketName665_user(nullptr);
-            info::globalGetSqrt667_ptr globalGetSqrt667_next(nullptr);
-            info::globalGetSqrt667_clbk globalGetSqrt667_user(nullptr);
-            info::globalGetStaffMastery669_ptr globalGetStaffMastery669_next(nullptr);
-            info::globalGetStaffMastery669_clbk globalGetStaffMastery669_user(nullptr);
-            info::globalGetStateFullScreenEffect670_ptr globalGetStateFullScreenEffect670_next(nullptr);
-            info::globalGetStateFullScreenEffect670_clbk globalGetStateFullScreenEffect670_user(nullptr);
-            info::globalGetSubDayStr672_ptr globalGetSubDayStr672_next(nullptr);
-            info::globalGetSubDayStr672_clbk globalGetSubDayStr672_user(nullptr);
-            info::globalGetSwimU673_ptr globalGetSwimU673_next(nullptr);
-            info::globalGetSwimU673_clbk globalGetSwimU673_user(nullptr);
-            info::globalGetSwimV674_ptr globalGetSwimV674_next(nullptr);
-            info::globalGetSwimV674_clbk globalGetSwimV674_user(nullptr);
-            info::globalGetTalikFromSocket676_ptr globalGetTalikFromSocket676_next(nullptr);
-            info::globalGetTalikFromSocket676_clbk globalGetTalikFromSocket676_user(nullptr);
-            info::globalGetTempBuffer677_ptr globalGetTempBuffer677_next(nullptr);
-            info::globalGetTempBuffer677_clbk globalGetTempBuffer677_user(nullptr);
-            info::globalGetTempBufferSize678_ptr globalGetTempBufferSize678_next(nullptr);
-            info::globalGetTempBufferSize678_clbk globalGetTempBufferSize678_user(nullptr);
-            info::globalGetTextureMatrix679_ptr globalGetTextureMatrix679_next(nullptr);
-            info::globalGetTextureMatrix679_clbk globalGetTextureMatrix679_user(nullptr);
-            info::globalGetTileAniTextureAddId680_ptr globalGetTileAniTextureAddId680_next(nullptr);
-            info::globalGetTileAniTextureAddId680_clbk globalGetTileAniTextureAddId680_user(nullptr);
-            info::globalGetTodayStr682_ptr globalGetTodayStr682_next(nullptr);
-            info::globalGetTodayStr682_clbk globalGetTodayStr682_user(nullptr);
-            info::globalGetTokenFloat683_ptr globalGetTokenFloat683_next(nullptr);
-            info::globalGetTokenFloat683_clbk globalGetTokenFloat683_user(nullptr);
-            info::globalGetTotalFrame684_ptr globalGetTotalFrame684_next(nullptr);
-            info::globalGetTotalFrame684_clbk globalGetTotalFrame684_user(nullptr);
-            info::globalGetTotalFreeJmallocSize685_ptr globalGetTotalFreeJmallocSize685_next(nullptr);
-            info::globalGetTotalFreeJmallocSize685_clbk globalGetTotalFreeJmallocSize685_user(nullptr);
-            info::globalGetTotalVertexBufferCnt686_ptr globalGetTotalVertexBufferCnt686_next(nullptr);
-            info::globalGetTotalVertexBufferCnt686_clbk globalGetTotalVertexBufferCnt686_user(nullptr);
-            info::globalGetTotalVertexBufferSize687_ptr globalGetTotalVertexBufferSize687_next(nullptr);
-            info::globalGetTotalVertexBufferSize687_clbk globalGetTotalVertexBufferSize687_user(nullptr);
-            info::globalGetTransformVertex688_ptr globalGetTransformVertex688_next(nullptr);
-            info::globalGetTransformVertex688_clbk globalGetTransformVertex688_user(nullptr);
-            info::globalGetUsePcCashType690_ptr globalGetUsePcCashType690_next(nullptr);
-            info::globalGetUsePcCashType690_clbk globalGetUsePcCashType690_user(nullptr);
-            info::globalGetVertexFromBVertex691_ptr globalGetVertexFromBVertex691_next(nullptr);
-            info::globalGetVertexFromBVertex691_clbk globalGetVertexFromBVertex691_user(nullptr);
-            info::globalGetVertexFromFVertex692_ptr globalGetVertexFromFVertex692_next(nullptr);
-            info::globalGetVertexFromFVertex692_clbk globalGetVertexFromFVertex692_user(nullptr);
-            info::globalGetVertexFromWVertex693_ptr globalGetVertexFromWVertex693_next(nullptr);
-            info::globalGetVertexFromWVertex693_clbk globalGetVertexFromWVertex693_user(nullptr);
-            info::globalGetViewMatrix694_ptr globalGetViewMatrix694_next(nullptr);
-            info::globalGetViewMatrix694_clbk globalGetViewMatrix694_user(nullptr);
-            info::globalGetViewVector695_ptr globalGetViewVector695_next(nullptr);
-            info::globalGetViewVector695_clbk globalGetViewVector695_user(nullptr);
-            info::globalGetWeaponClass697_ptr globalGetWeaponClass697_next(nullptr);
-            info::globalGetWeaponClass697_clbk globalGetWeaponClass697_user(nullptr);
-            info::globalGetWebBrowserRect698_ptr globalGetWebBrowserRect698_next(nullptr);
-            info::globalGetWebBrowserRect698_clbk globalGetWebBrowserRect698_user(nullptr);
-            info::globalGetXAngle699_ptr globalGetXAngle699_next(nullptr);
-            info::globalGetXAngle699_clbk globalGetXAngle699_user(nullptr);
-            info::globalGetYAngle700_ptr globalGetYAngle700_next(nullptr);
-            info::globalGetYAngle700_clbk globalGetYAngle700_user(nullptr);
-            info::globalGetYAngle701_ptr globalGetYAngle701_next(nullptr);
-            info::globalGetYAngle701_clbk globalGetYAngle701_user(nullptr);
-            info::globalGetYAngle703_ptr globalGetYAngle703_next(nullptr);
-            info::globalGetYAngle703_clbk globalGetYAngle703_user(nullptr);
-            info::globalGetYBillboardMatrix704_ptr globalGetYBillboardMatrix704_next(nullptr);
-            info::globalGetYBillboardMatrix704_clbk globalGetYBillboardMatrix704_user(nullptr);
-            info::globalGetYBillboardMatrix705_ptr globalGetYBillboardMatrix705_next(nullptr);
-            info::globalGetYBillboardMatrix705_clbk globalGetYBillboardMatrix705_user(nullptr);
-            info::globalGetZBillboardMatrix706_ptr globalGetZBillboardMatrix706_next(nullptr);
-            info::globalGetZBillboardMatrix706_clbk globalGetZBillboardMatrix706_user(nullptr);
-            info::globalGet_CashEvent_Name708_ptr globalGet_CashEvent_Name708_next(nullptr);
-            info::globalGet_CashEvent_Name708_clbk globalGet_CashEvent_Name708_user(nullptr);
-            info::globalH710_ptr globalH710_next(nullptr);
-            info::globalH710_clbk globalH710_user(nullptr);
-            info::globalHtoA712_ptr globalHtoA712_next(nullptr);
-            info::globalHtoA712_clbk globalHtoA712_user(nullptr);
-            info::globalHtoB714_ptr globalHtoB714_next(nullptr);
-            info::globalHtoB714_clbk globalHtoB714_user(nullptr);
-            info::globalI716_ptr globalI716_next(nullptr);
-            info::globalI716_clbk globalI716_user(nullptr);
-            info::globalIM_LoadWave717_ptr globalIM_LoadWave717_next(nullptr);
-            info::globalIM_LoadWave717_clbk globalIM_LoadWave717_user(nullptr);
-            info::globalIM_PlayWave718_ptr globalIM_PlayWave718_next(nullptr);
-            info::globalIM_PlayWave718_clbk globalIM_PlayWave718_user(nullptr);
-            info::globalIM_ReleaseAllWaves719_ptr globalIM_ReleaseAllWaves719_next(nullptr);
-            info::globalIM_ReleaseAllWaves719_clbk globalIM_ReleaseAllWaves719_user(nullptr);
-            info::globalIM_ReleaseWave720_ptr globalIM_ReleaseWave720_next(nullptr);
-            info::globalIM_ReleaseWave720_clbk globalIM_ReleaseWave720_user(nullptr);
-            info::globalIM_SetLoopCntWave721_ptr globalIM_SetLoopCntWave721_next(nullptr);
-            info::globalIM_SetLoopCntWave721_clbk globalIM_SetLoopCntWave721_user(nullptr);
-            info::globalIM_SetWaveVolumeAndPan722_ptr globalIM_SetWaveVolumeAndPan722_next(nullptr);
-            info::globalIM_SetWaveVolumeAndPan722_clbk globalIM_SetWaveVolumeAndPan722_user(nullptr);
-            info::globalIM_StopWave723_ptr globalIM_StopWave723_next(nullptr);
-            info::globalIM_StopWave723_clbk globalIM_StopWave723_user(nullptr);
-            info::globalIPConvertingStringToByte725_ptr globalIPConvertingStringToByte725_next(nullptr);
-            info::globalIPConvertingStringToByte725_clbk globalIPConvertingStringToByte725_user(nullptr);
-            info::globalIndexFromPImgThunkData726_ptr globalIndexFromPImgThunkData726_next(nullptr);
-            info::globalIndexFromPImgThunkData726_clbk globalIndexFromPImgThunkData726_user(nullptr);
-            info::globalInitBlurShader727_ptr globalInitBlurShader727_next(nullptr);
-            info::globalInitBlurShader727_clbk globalInitBlurShader727_user(nullptr);
-            info::globalInitCheatCommand729_ptr globalInitCheatCommand729_next(nullptr);
-            info::globalInitCheatCommand729_clbk globalInitCheatCommand729_user(nullptr);
-            info::globalInitConsole730_ptr globalInitConsole730_next(nullptr);
-            info::globalInitConsole730_clbk globalInitConsole730_user(nullptr);
-            info::globalInitCore731_ptr globalInitCore731_next(nullptr);
-            info::globalInitCore731_clbk globalInitCore731_user(nullptr);
-            info::globalInitFullScreenEffect732_ptr globalInitFullScreenEffect732_next(nullptr);
-            info::globalInitFullScreenEffect732_clbk globalInitFullScreenEffect732_user(nullptr);
-            info::globalInitFunctionKey733_ptr globalInitFunctionKey733_next(nullptr);
-            info::globalInitFunctionKey733_clbk globalInitFunctionKey733_user(nullptr);
-            info::globalInitJmalloc734_ptr globalInitJmalloc734_next(nullptr);
-            info::globalInitJmalloc734_clbk globalInitJmalloc734_user(nullptr);
-            info::globalInitMasteryFormula736_ptr globalInitMasteryFormula736_next(nullptr);
-            info::globalInitMasteryFormula736_clbk globalInitMasteryFormula736_user(nullptr);
-            info::globalInitR3Engine737_ptr globalInitR3Engine737_next(nullptr);
-            info::globalInitR3Engine737_clbk globalInitR3Engine737_user(nullptr);
-            info::globalInitR3Particle738_ptr globalInitR3Particle738_next(nullptr);
-            info::globalInitR3Particle738_clbk globalInitR3Particle738_user(nullptr);
-            info::globalInitR3SoundSystem739_ptr globalInitR3SoundSystem739_next(nullptr);
-            info::globalInitR3SoundSystem739_clbk globalInitR3SoundSystem739_user(nullptr);
-            info::globalInitR3Text740_ptr globalInitR3Text740_next(nullptr);
-            info::globalInitR3Text740_clbk globalInitR3Text740_user(nullptr);
-            info::globalInitSpriteManager741_ptr globalInitSpriteManager741_next(nullptr);
-            info::globalInitSpriteManager741_clbk globalInitSpriteManager741_user(nullptr);
-            info::globalInitWebBrowser742_ptr globalInitWebBrowser742_next(nullptr);
-            info::globalInitWebBrowser742_clbk globalInitWebBrowser742_user(nullptr);
-            info::globalInsertConsoleStringQ743_ptr globalInsertConsoleStringQ743_next(nullptr);
-            info::globalInsertConsoleStringQ743_clbk globalInsertConsoleStringQ743_user(nullptr);
-            info::globalInsertDynamicLight744_ptr globalInsertDynamicLight744_next(nullptr);
-            info::globalInsertDynamicLight744_clbk globalInsertDynamicLight744_user(nullptr);
-            info::globalInterpolatedNoise_1745_ptr globalInterpolatedNoise_1745_next(nullptr);
-            info::globalInterpolatedNoise_1745_clbk globalInterpolatedNoise_1745_user(nullptr);
-            info::globalInterpolatedNoise_1746_ptr globalInterpolatedNoise_1746_next(nullptr);
-            info::globalInterpolatedNoise_1746_clbk globalInterpolatedNoise_1746_user(nullptr);
-            info::globalIsAbrItem748_ptr globalIsAbrItem748_next(nullptr);
-            info::globalIsAbrItem748_clbk globalIsAbrItem748_user(nullptr);
-            info::globalIsAddAbleTalikToItem750_ptr globalIsAddAbleTalikToItem750_next(nullptr);
-            info::globalIsAddAbleTalikToItem750_clbk globalIsAddAbleTalikToItem750_user(nullptr);
-            info::globalIsAniTex751_ptr globalIsAniTex751_next(nullptr);
-            info::globalIsAniTex751_clbk globalIsAniTex751_user(nullptr);
-            info::globalIsBBoxInFrustum752_ptr globalIsBBoxInFrustum752_next(nullptr);
-            info::globalIsBBoxInFrustum752_clbk globalIsBBoxInFrustum752_user(nullptr);
-            info::globalIsBBoxInFrustum753_ptr globalIsBBoxInFrustum753_next(nullptr);
-            info::globalIsBBoxInFrustum753_clbk globalIsBBoxInFrustum753_user(nullptr);
-            info::globalIsBeNearStore755_ptr globalIsBeNearStore755_next(nullptr);
-            info::globalIsBeNearStore755_clbk globalIsBeNearStore755_user(nullptr);
-            info::globalIsBothRayAABB756_ptr globalIsBothRayAABB756_next(nullptr);
-            info::globalIsBothRayAABB756_clbk globalIsBothRayAABB756_user(nullptr);
-            info::globalIsBothRayAABB757_ptr globalIsBothRayAABB757_next(nullptr);
-            info::globalIsBothRayAABB757_clbk globalIsBothRayAABB757_user(nullptr);
-            info::globalIsCashItem759_ptr globalIsCashItem759_next(nullptr);
-            info::globalIsCashItem759_clbk globalIsCashItem759_user(nullptr);
-            info::globalIsCollisionBBox760_ptr globalIsCollisionBBox760_next(nullptr);
-            info::globalIsCollisionBBox760_clbk globalIsCollisionBBox760_user(nullptr);
-            info::globalIsCollisionBBox761_ptr globalIsCollisionBBox761_next(nullptr);
-            info::globalIsCollisionBBox761_clbk globalIsCollisionBBox761_user(nullptr);
-            info::globalIsCollisionBBox762_ptr globalIsCollisionBBox762_next(nullptr);
-            info::globalIsCollisionBBox762_clbk globalIsCollisionBBox762_user(nullptr);
-            info::globalIsCollisionBBoxPoint763_ptr globalIsCollisionBBoxPoint763_next(nullptr);
-            info::globalIsCollisionBBoxPoint763_clbk globalIsCollisionBBoxPoint763_user(nullptr);
-            info::globalIsCollisionBBoxPoint764_ptr globalIsCollisionBBoxPoint764_next(nullptr);
-            info::globalIsCollisionBBoxPoint764_clbk globalIsCollisionBBoxPoint764_user(nullptr);
-            info::globalIsCollisionBBoxToFace765_ptr globalIsCollisionBBoxToFace765_next(nullptr);
-            info::globalIsCollisionBBoxToFace765_clbk globalIsCollisionBBoxToFace765_user(nullptr);
-            info::globalIsDayChanged767_ptr globalIsDayChanged767_next(nullptr);
-            info::globalIsDayChanged767_clbk globalIsDayChanged767_user(nullptr);
-            info::globalIsEnableBBoShasiShader768_ptr globalIsEnableBBoShasiShader768_next(nullptr);
-            info::globalIsEnableBBoShasiShader768_clbk globalIsEnableBBoShasiShader768_user(nullptr);
-            info::globalIsEnableShader769_ptr globalIsEnableShader769_next(nullptr);
-            info::globalIsEnableShader769_clbk globalIsEnableShader769_user(nullptr);
-            info::globalIsExchangeItem771_ptr globalIsExchangeItem771_next(nullptr);
-            info::globalIsExchangeItem771_clbk globalIsExchangeItem771_user(nullptr);
-            info::globalIsExistDarkHoleOpenGate773_ptr globalIsExistDarkHoleOpenGate773_next(nullptr);
-            info::globalIsExistDarkHoleOpenGate773_clbk globalIsExistDarkHoleOpenGate773_user(nullptr);
-            info::globalIsExistFile774_ptr globalIsExistFile774_next(nullptr);
-            info::globalIsExistFile774_clbk globalIsExistFile774_user(nullptr);
-            info::globalIsExistFileAndMergeFile775_ptr globalIsExistFileAndMergeFile775_next(nullptr);
-            info::globalIsExistFileAndMergeFile775_clbk globalIsExistFileAndMergeFile775_user(nullptr);
-            info::globalIsExistFromSoundSpt776_ptr globalIsExistFromSoundSpt776_next(nullptr);
-            info::globalIsExistFromSoundSpt776_clbk globalIsExistFromSoundSpt776_user(nullptr);
-            info::globalIsExistItem778_ptr globalIsExistItem778_next(nullptr);
-            info::globalIsExistItem778_clbk globalIsExistItem778_user(nullptr);
-            info::globalIsFadeIn779_ptr globalIsFadeIn779_next(nullptr);
-            info::globalIsFadeIn779_clbk globalIsFadeIn779_user(nullptr);
-            info::globalIsFadeOut780_ptr globalIsFadeOut780_next(nullptr);
-            info::globalIsFadeOut780_clbk globalIsFadeOut780_user(nullptr);
-            info::globalIsFading781_ptr globalIsFading781_next(nullptr);
-            info::globalIsFading781_clbk globalIsFading781_user(nullptr);
-            info::globalIsFarDistance782_ptr globalIsFarDistance782_next(nullptr);
-            info::globalIsFarDistance782_clbk globalIsFarDistance782_user(nullptr);
-            info::globalIsGroundableItem784_ptr globalIsGroundableItem784_next(nullptr);
-            info::globalIsGroundableItem784_clbk globalIsGroundableItem784_user(nullptr);
-            info::globalIsInitCore785_ptr globalIsInitCore785_next(nullptr);
-            info::globalIsInitCore785_clbk globalIsInitCore785_user(nullptr);
-            info::globalIsInitR3Engine786_ptr globalIsInitR3Engine786_next(nullptr);
-            info::globalIsInitR3Engine786_clbk globalIsInitR3Engine786_user(nullptr);
-            info::globalIsItemCombineExKind788_ptr globalIsItemCombineExKind788_next(nullptr);
-            info::globalIsItemCombineExKind788_clbk globalIsItemCombineExKind788_user(nullptr);
-            info::globalIsItemEquipCivil790_ptr globalIsItemEquipCivil790_next(nullptr);
-            info::globalIsItemEquipCivil790_clbk globalIsItemEquipCivil790_user(nullptr);
-            info::globalIsItemSerialNum792_ptr globalIsItemSerialNum792_next(nullptr);
-            info::globalIsItemSerialNum792_clbk globalIsItemSerialNum792_user(nullptr);
-            info::globalIsLoadedMaterial793_ptr globalIsLoadedMaterial793_next(nullptr);
-            info::globalIsLoadedMaterial793_clbk globalIsLoadedMaterial793_user(nullptr);
-            info::globalIsLoadedRTCamera794_ptr globalIsLoadedRTCamera794_next(nullptr);
-            info::globalIsLoadedRTCamera794_clbk globalIsLoadedRTCamera794_user(nullptr);
-            info::globalIsLoadedRTMovie795_ptr globalIsLoadedRTMovie795_next(nullptr);
-            info::globalIsLoadedRTMovie795_clbk globalIsLoadedRTMovie795_user(nullptr);
-            info::globalIsMagicLight796_ptr globalIsMagicLight796_next(nullptr);
-            info::globalIsMagicLight796_clbk globalIsMagicLight796_user(nullptr);
-            info::globalIsNormalAccountUsable798_ptr globalIsNormalAccountUsable798_next(nullptr);
-            info::globalIsNormalAccountUsable798_clbk globalIsNormalAccountUsable798_user(nullptr);
-            info::globalIsOneBackCollision799_ptr globalIsOneBackCollision799_next(nullptr);
-            info::globalIsOneBackCollision799_clbk globalIsOneBackCollision799_user(nullptr);
-            info::globalIsOtherInvalidObjNear801_ptr globalIsOtherInvalidObjNear801_next(nullptr);
-            info::globalIsOtherInvalidObjNear801_clbk globalIsOtherInvalidObjNear801_user(nullptr);
-            info::globalIsOtherTowerNear803_ptr globalIsOtherTowerNear803_next(nullptr);
-            info::globalIsOtherTowerNear803_clbk globalIsOtherTowerNear803_user(nullptr);
-            info::globalIsOverLapItem805_ptr globalIsOverLapItem805_next(nullptr);
-            info::globalIsOverLapItem805_clbk globalIsOverLapItem805_user(nullptr);
-            info::globalIsParticle806_ptr globalIsParticle806_next(nullptr);
-            info::globalIsParticle806_clbk globalIsParticle806_user(nullptr);
-            info::globalIsPlayMP3807_ptr globalIsPlayMP3807_next(nullptr);
-            info::globalIsPlayMP3807_clbk globalIsPlayMP3807_user(nullptr);
-            info::globalIsProtectItem809_ptr globalIsProtectItem809_next(nullptr);
-            info::globalIsProtectItem809_clbk globalIsProtectItem809_user(nullptr);
-            info::globalIsRTMoviePlaying810_ptr globalIsRTMoviePlaying810_next(nullptr);
-            info::globalIsRTMoviePlaying810_clbk globalIsRTMoviePlaying810_user(nullptr);
-            info::globalIsRayAABB811_ptr globalIsRayAABB811_next(nullptr);
-            info::globalIsRayAABB811_clbk globalIsRayAABB811_user(nullptr);
-            info::globalIsRayAABB812_ptr globalIsRayAABB812_next(nullptr);
-            info::globalIsRayAABB812_clbk globalIsRayAABB812_user(nullptr);
-            info::globalIsRenderTargetFrameBuffer813_ptr globalIsRenderTargetFrameBuffer813_next(nullptr);
-            info::globalIsRenderTargetFrameBuffer813_clbk globalIsRenderTargetFrameBuffer813_user(nullptr);
-            info::globalIsRepairableItem815_ptr globalIsRepairableItem815_next(nullptr);
-            info::globalIsRepairableItem815_clbk globalIsRepairableItem815_user(nullptr);
-            info::globalIsRightIndexedUP816_ptr globalIsRightIndexedUP816_next(nullptr);
-            info::globalIsRightIndexedUP816_clbk globalIsRightIndexedUP816_user(nullptr);
-            info::globalIsSQLValidString818_ptr globalIsSQLValidString818_next(nullptr);
-            info::globalIsSQLValidString818_clbk globalIsSQLValidString818_user(nullptr);
-            info::globalIsSaveItem820_ptr globalIsSaveItem820_next(nullptr);
-            info::globalIsSaveItem820_clbk globalIsSaveItem820_user(nullptr);
-            info::globalIsSellItem822_ptr globalIsSellItem822_next(nullptr);
-            info::globalIsSellItem822_clbk globalIsSellItem822_user(nullptr);
-            info::globalIsServerMode823_ptr globalIsServerMode823_next(nullptr);
-            info::globalIsServerMode823_clbk globalIsServerMode823_user(nullptr);
-            info::globalIsStorageCodeWithItemKind825_ptr globalIsStorageCodeWithItemKind825_next(nullptr);
-            info::globalIsStorageCodeWithItemKind825_clbk globalIsStorageCodeWithItemKind825_user(nullptr);
-            info::globalIsStorageRange827_ptr globalIsStorageRange827_next(nullptr);
-            info::globalIsStorageRange827_clbk globalIsStorageRange827_user(nullptr);
-            info::globalIsTalikAboutTol829_ptr globalIsTalikAboutTol829_next(nullptr);
-            info::globalIsTalikAboutTol829_clbk globalIsTalikAboutTol829_user(nullptr);
-            info::globalIsTargeting831_ptr globalIsTargeting831_next(nullptr);
-            info::globalIsTargeting831_clbk globalIsTargeting831_user(nullptr);
-            info::globalIsTextureFormatOk832_ptr globalIsTextureFormatOk832_next(nullptr);
-            info::globalIsTextureFormatOk832_clbk globalIsTextureFormatOk832_user(nullptr);
-            info::globalIsTimeItem834_ptr globalIsTimeItem834_next(nullptr);
-            info::globalIsTimeItem834_clbk globalIsTimeItem834_user(nullptr);
-            info::globalIsTrunkIOAble836_ptr globalIsTrunkIOAble836_next(nullptr);
-            info::globalIsTrunkIOAble836_clbk globalIsTrunkIOAble836_user(nullptr);
-            info::globalIsUsableTempEffectAtStoneState838_ptr globalIsUsableTempEffectAtStoneState838_next(nullptr);
-            info::globalIsUsableTempEffectAtStoneState838_clbk globalIsUsableTempEffectAtStoneState838_user(nullptr);
-            info::globalIsWebBrowserMode839_ptr globalIsWebBrowserMode839_next(nullptr);
-            info::globalIsWebBrowserMode839_clbk globalIsWebBrowserMode839_user(nullptr);
-            info::globalJmalloc840_ptr globalJmalloc840_next(nullptr);
-            info::globalJmalloc840_clbk globalJmalloc840_user(nullptr);
-            info::globalJpegFileToRGB841_ptr globalJpegFileToRGB841_next(nullptr);
-            info::globalJpegFileToRGB841_clbk globalJpegFileToRGB841_user(nullptr);
-            info::globalLightMappingTex1842_ptr globalLightMappingTex1842_next(nullptr);
-            info::globalLightMappingTex1842_clbk globalLightMappingTex1842_user(nullptr);
-            info::globalLinearInterpolate843_ptr globalLinearInterpolate843_next(nullptr);
-            info::globalLinearInterpolate843_clbk globalLinearInterpolate843_user(nullptr);
-            info::globalLoadAndCreateShader844_ptr globalLoadAndCreateShader844_next(nullptr);
-            info::globalLoadAndCreateShader844_clbk globalLoadAndCreateShader844_user(nullptr);
-            info::globalLoadBmp845_ptr globalLoadBmp845_next(nullptr);
-            info::globalLoadBmp845_clbk globalLoadBmp845_user(nullptr);
-            info::globalLoadCreateShader846_ptr globalLoadCreateShader846_next(nullptr);
-            info::globalLoadCreateShader846_clbk globalLoadCreateShader846_user(nullptr);
-            info::globalLoadIndependenceR3M847_ptr globalLoadIndependenceR3M847_next(nullptr);
-            info::globalLoadIndependenceR3M847_clbk globalLoadIndependenceR3M847_user(nullptr);
-            info::globalLoadLightMap848_ptr globalLoadLightMap848_next(nullptr);
-            info::globalLoadLightMap848_clbk globalLoadLightMap848_user(nullptr);
-            info::globalLoadMainMaterial849_ptr globalLoadMainMaterial849_next(nullptr);
-            info::globalLoadMainMaterial849_clbk globalLoadMainMaterial849_user(nullptr);
-            info::globalLoadMainR3M850_ptr globalLoadMainR3M850_next(nullptr);
-            info::globalLoadMainR3M850_clbk globalLoadMainR3M850_user(nullptr);
-            info::globalLoadMasteryLimFile852_ptr globalLoadMasteryLimFile852_next(nullptr);
-            info::globalLoadMasteryLimFile852_clbk globalLoadMasteryLimFile852_user(nullptr);
-            info::globalLoadR3MP3853_ptr globalLoadR3MP3853_next(nullptr);
-            info::globalLoadR3MP3853_clbk globalLoadR3MP3853_user(nullptr);
-            info::globalLoadR3T854_ptr globalLoadR3T854_next(nullptr);
-            info::globalLoadR3T854_clbk globalLoadR3T854_user(nullptr);
-            info::globalLoadR3TLightMap855_ptr globalLoadR3TLightMap855_next(nullptr);
-            info::globalLoadR3TLightMap855_clbk globalLoadR3TLightMap855_user(nullptr);
-            info::globalLoadR3X856_ptr globalLoadR3X856_next(nullptr);
-            info::globalLoadR3X856_clbk globalLoadR3X856_user(nullptr);
-            info::globalLoadRegionData858_ptr globalLoadRegionData858_next(nullptr);
-            info::globalLoadRegionData858_clbk globalLoadRegionData858_user(nullptr);
-            info::globalLoadStreamR3MP3859_ptr globalLoadStreamR3MP3859_next(nullptr);
-            info::globalLoadStreamR3MP3859_clbk globalLoadStreamR3MP3859_user(nullptr);
-            info::globalLoadSubMaterial860_ptr globalLoadSubMaterial860_next(nullptr);
-            info::globalLoadSubMaterial860_clbk globalLoadSubMaterial860_user(nullptr);
-            info::globalLoadSubR3M862_ptr globalLoadSubR3M862_next(nullptr);
-            info::globalLoadSubR3M862_clbk globalLoadSubR3M862_user(nullptr);
-            info::globalLoadVertexShaderList863_ptr globalLoadVertexShaderList863_next(nullptr);
-            info::globalLoadVertexShaderList863_clbk globalLoadVertexShaderList863_user(nullptr);
-            info::globalLoadWaveList864_ptr globalLoadWaveList864_next(nullptr);
-            info::globalLoadWaveList864_clbk globalLoadWaveList864_user(nullptr);
-            info::globalLuaScripAlert866_ptr globalLuaScripAlert866_next(nullptr);
-            info::globalLuaScripAlert866_clbk globalLuaScripAlert866_user(nullptr);
-            info::globalM2W868_ptr globalM2W868_next(nullptr);
-            info::globalM2W868_clbk globalM2W868_user(nullptr);
-            info::globalMakeBinaryStr870_ptr globalMakeBinaryStr870_next(nullptr);
-            info::globalMakeBinaryStr870_clbk globalMakeBinaryStr870_user(nullptr);
-            info::globalMakeDwordAlignedBuf871_ptr globalMakeDwordAlignedBuf871_next(nullptr);
-            info::globalMakeDwordAlignedBuf871_clbk globalMakeDwordAlignedBuf871_user(nullptr);
-            info::globalMakeGrayScale872_ptr globalMakeGrayScale872_next(nullptr);
-            info::globalMakeGrayScale872_clbk globalMakeGrayScale872_user(nullptr);
-            info::globalMakeLoot874_ptr globalMakeLoot874_next(nullptr);
-            info::globalMakeLoot874_clbk globalMakeLoot874_user(nullptr);
-            info::globalMakeMipMap875_ptr globalMakeMipMap875_next(nullptr);
-            info::globalMakeMipMap875_clbk globalMakeMipMap875_user(nullptr);
-            info::globalMakeMipMap876_ptr globalMakeMipMap876_next(nullptr);
-            info::globalMakeMipMap876_clbk globalMakeMipMap876_user(nullptr);
-            info::globalMakeUV877_ptr globalMakeUV877_next(nullptr);
-            info::globalMakeUV877_clbk globalMakeUV877_user(nullptr);
-            info::globalMakeUV878_ptr globalMakeUV878_next(nullptr);
-            info::globalMakeUV878_clbk globalMakeUV878_user(nullptr);
-            info::globalMakeUVExt879_ptr globalMakeUVExt879_next(nullptr);
-            info::globalMakeUVExt879_clbk globalMakeUVExt879_user(nullptr);
-            info::globalMatrixCopy880_ptr globalMatrixCopy880_next(nullptr);
-            info::globalMatrixCopy880_clbk globalMatrixCopy880_user(nullptr);
-            info::globalMatrixFromQuaternion881_ptr globalMatrixFromQuaternion881_next(nullptr);
-            info::globalMatrixFromQuaternion881_clbk globalMatrixFromQuaternion881_user(nullptr);
-            info::globalMatrixIdentity882_ptr globalMatrixIdentity882_next(nullptr);
-            info::globalMatrixIdentity882_clbk globalMatrixIdentity882_user(nullptr);
-            info::globalMatrixInvert883_ptr globalMatrixInvert883_next(nullptr);
-            info::globalMatrixInvert883_clbk globalMatrixInvert883_user(nullptr);
-            info::globalMatrixMultiply884_ptr globalMatrixMultiply884_next(nullptr);
-            info::globalMatrixMultiply884_clbk globalMatrixMultiply884_user(nullptr);
-            info::globalMatrixRotate885_ptr globalMatrixRotate885_next(nullptr);
-            info::globalMatrixRotate885_clbk globalMatrixRotate885_user(nullptr);
-            info::globalMatrixRotateX886_ptr globalMatrixRotateX886_next(nullptr);
-            info::globalMatrixRotateX886_clbk globalMatrixRotateX886_user(nullptr);
-            info::globalMatrixRotateY887_ptr globalMatrixRotateY887_next(nullptr);
-            info::globalMatrixRotateY887_clbk globalMatrixRotateY887_user(nullptr);
-            info::globalMatrixRotateZ888_ptr globalMatrixRotateZ888_next(nullptr);
-            info::globalMatrixRotateZ888_clbk globalMatrixRotateZ888_user(nullptr);
-            info::globalMatrixScale889_ptr globalMatrixScale889_next(nullptr);
-            info::globalMatrixScale889_clbk globalMatrixScale889_user(nullptr);
-            info::globalMaxFixFloatToInt890_ptr globalMaxFixFloatToInt890_next(nullptr);
-            info::globalMaxFixFloatToInt890_clbk globalMaxFixFloatToInt890_user(nullptr);
-            info::globalMinFixFloatToInt891_ptr globalMinFixFloatToInt891_next(nullptr);
-            info::globalMinFixFloatToInt891_clbk globalMinFixFloatToInt891_user(nullptr);
-            info::globalMultiTexOff892_ptr globalMultiTexOff892_next(nullptr);
-            info::globalMultiTexOff892_clbk globalMultiTexOff892_user(nullptr);
-            info::globalMultiTexOn893_ptr globalMultiTexOn893_next(nullptr);
-            info::globalMultiTexOn893_clbk globalMultiTexOn893_user(nullptr);
-            info::globalMyCrtDebugReportHook895_ptr globalMyCrtDebugReportHook895_next(nullptr);
-            info::globalMyCrtDebugReportHook895_clbk globalMyCrtDebugReportHook895_user(nullptr);
-            info::globalMyMessageBox897_ptr globalMyMessageBox897_next(nullptr);
-            info::globalMyMessageBox897_clbk globalMyMessageBox897_user(nullptr);
-            info::globalNetTrace899_ptr globalNetTrace899_next(nullptr);
-            info::globalNetTrace899_clbk globalNetTrace899_user(nullptr);
-            info::globalNoise900_ptr globalNoise900_next(nullptr);
-            info::globalNoise900_clbk globalNoise900_user(nullptr);
-            info::globalNoise1901_ptr globalNoise1901_next(nullptr);
-            info::globalNoise1901_clbk globalNoise1901_user(nullptr);
-            info::globalNormalize903_ptr globalNormalize903_next(nullptr);
-            info::globalNormalize903_clbk globalNormalize903_user(nullptr);
-            info::globalOnLoop_GuildSystem905_ptr globalOnLoop_GuildSystem905_next(nullptr);
-            info::globalOnLoop_GuildSystem905_clbk globalOnLoop_GuildSystem905_user(nullptr);
-            info::globalOnLoop_VoteSystem907_ptr globalOnLoop_VoteSystem907_next(nullptr);
-            info::globalOnLoop_VoteSystem907_clbk globalOnLoop_VoteSystem907_user(nullptr);
-            info::globalOutputDebugLog909_ptr globalOutputDebugLog909_next(nullptr);
-            info::globalOutputDebugLog909_clbk globalOutputDebugLog909_user(nullptr);
-            info::globalPFromRva910_ptr globalPFromRva910_next(nullptr);
-            info::globalPFromRva910_clbk globalPFromRva910_user(nullptr);
-            info::globalPFromRva911_ptr globalPFromRva911_next(nullptr);
-            info::globalPFromRva911_clbk globalPFromRva911_user(nullptr);
-            info::globalPFromRva912_ptr globalPFromRva912_next(nullptr);
-            info::globalPFromRva912_clbk globalPFromRva912_user(nullptr);
-            info::globalPFromRva913_ptr globalPFromRva913_next(nullptr);
-            info::globalPFromRva913_clbk globalPFromRva913_user(nullptr);
-            info::globalPFromRva914_ptr globalPFromRva914_next(nullptr);
-            info::globalPFromRva914_clbk globalPFromRva914_user(nullptr);
-            info::globalPFromRva915_ptr globalPFromRva915_next(nullptr);
-            info::globalPFromRva915_clbk globalPFromRva915_user(nullptr);
-            info::globalPFromRva916_ptr globalPFromRva916_next(nullptr);
-            info::globalPFromRva916_clbk globalPFromRva916_user(nullptr);
-            info::globalParsingCommandA918_ptr globalParsingCommandA918_next(nullptr);
-            info::globalParsingCommandA918_clbk globalParsingCommandA918_user(nullptr);
-            info::globalParsingCommandW920_ptr globalParsingCommandW920_next(nullptr);
-            info::globalParsingCommandW920_clbk globalParsingCommandW920_user(nullptr);
-            info::globalPerlinNoise_1D921_ptr globalPerlinNoise_1D921_next(nullptr);
-            info::globalPerlinNoise_1D921_clbk globalPerlinNoise_1D921_user(nullptr);
-            info::globalPerlinNoise_2D922_ptr globalPerlinNoise_2D922_next(nullptr);
-            info::globalPerlinNoise_2D922_clbk globalPerlinNoise_2D922_user(nullptr);
-            info::globalPixelFromFramebuffer923_ptr globalPixelFromFramebuffer923_next(nullptr);
-            info::globalPixelFromFramebuffer923_clbk globalPixelFromFramebuffer923_user(nullptr);
-            info::globalPlayR3MP3924_ptr globalPlayR3MP3924_next(nullptr);
-            info::globalPlayR3MP3924_clbk globalPlayR3MP3924_user(nullptr);
-            info::globalPlayStreamR3MP3925_ptr globalPlayStreamR3MP3925_next(nullptr);
-            info::globalPlayStreamR3MP3925_clbk globalPlayStreamR3MP3925_user(nullptr);
-            info::globalPlayWave926_ptr globalPlayWave926_next(nullptr);
-            info::globalPlayWave926_clbk globalPlayWave926_user(nullptr);
-            info::globalPopViewPortArea927_ptr globalPopViewPortArea927_next(nullptr);
-            info::globalPopViewPortArea927_clbk globalPopViewPortArea927_user(nullptr);
-            info::globalPowInterpolate928_ptr globalPowInterpolate928_next(nullptr);
-            info::globalPowInterpolate928_clbk globalPowInterpolate928_user(nullptr);
-            info::globalPreRenderOneLayer929_ptr globalPreRenderOneLayer929_next(nullptr);
-            info::globalPreRenderOneLayer929_clbk globalPreRenderOneLayer929_user(nullptr);
-            info::globalPreRenderSetting930_ptr globalPreRenderSetting930_next(nullptr);
-            info::globalPreRenderSetting930_clbk globalPreRenderSetting930_user(nullptr);
-            info::globalPrepareAllShadow931_ptr globalPrepareAllShadow931_next(nullptr);
-            info::globalPrepareAllShadow931_clbk globalPrepareAllShadow931_user(nullptr);
-            info::globalProcessCheatCommand933_ptr globalProcessCheatCommand933_next(nullptr);
-            info::globalProcessCheatCommand933_clbk globalProcessCheatCommand933_user(nullptr);
-            info::globalProgressConsole934_ptr globalProgressConsole934_next(nullptr);
-            info::globalProgressConsole934_clbk globalProgressConsole934_user(nullptr);
-            info::globalProgressFunctionKey935_ptr globalProgressFunctionKey935_next(nullptr);
-            info::globalProgressFunctionKey935_clbk globalProgressFunctionKey935_user(nullptr);
-            info::globalPushViewPortArea936_ptr globalPushViewPortArea936_next(nullptr);
-            info::globalPushViewPortArea936_clbk globalPushViewPortArea936_user(nullptr);
-            info::globalPutMessage937_ptr globalPutMessage937_next(nullptr);
-            info::globalPutMessage937_clbk globalPutMessage937_user(nullptr);
-            info::globalQuaternionFromRotation938_ptr globalQuaternionFromRotation938_next(nullptr);
-            info::globalQuaternionFromRotation938_clbk globalQuaternionFromRotation938_user(nullptr);
-            info::globalQuaternionSlerp939_ptr globalQuaternionSlerp939_next(nullptr);
-            info::globalQuaternionSlerp939_clbk globalQuaternionSlerp939_user(nullptr);
-            info::globalR3BeginScene940_ptr globalR3BeginScene940_next(nullptr);
-            info::globalR3BeginScene940_clbk globalR3BeginScene940_user(nullptr);
-            info::globalR3CalcStrIndexPitInWidthA941_ptr globalR3CalcStrIndexPitInWidthA941_next(nullptr);
-            info::globalR3CalcStrIndexPitInWidthA941_clbk globalR3CalcStrIndexPitInWidthA941_user(nullptr);
-            info::globalR3CalcStrIndexPitInWidthW942_ptr globalR3CalcStrIndexPitInWidthW942_next(nullptr);
-            info::globalR3CalcStrIndexPitInWidthW942_clbk globalR3CalcStrIndexPitInWidthW942_user(nullptr);
-            info::globalR3CalcStrPixelSizeA943_ptr globalR3CalcStrPixelSizeA943_next(nullptr);
-            info::globalR3CalcStrPixelSizeA943_clbk globalR3CalcStrPixelSizeA943_user(nullptr);
-            info::globalR3CalcStrPixelSizeW944_ptr globalR3CalcStrPixelSizeW944_next(nullptr);
-            info::globalR3CalcStrPixelSizeW944_clbk globalR3CalcStrPixelSizeW944_user(nullptr);
-            info::globalR3CalculateTime945_ptr globalR3CalculateTime945_next(nullptr);
-            info::globalR3CalculateTime945_clbk globalR3CalculateTime945_user(nullptr);
-            info::globalR3ClearFrameBuffer946_ptr globalR3ClearFrameBuffer946_next(nullptr);
-            info::globalR3ClearFrameBuffer946_clbk globalR3ClearFrameBuffer946_user(nullptr);
-            info::globalR3ConfirmDevice947_ptr globalR3ConfirmDevice947_next(nullptr);
-            info::globalR3ConfirmDevice947_clbk globalR3ConfirmDevice947_user(nullptr);
-            info::globalR3DeleteDevice948_ptr globalR3DeleteDevice948_next(nullptr);
-            info::globalR3DeleteDevice948_clbk globalR3DeleteDevice948_user(nullptr);
-            info::globalR3Draw2DLine949_ptr globalR3Draw2DLine949_next(nullptr);
-            info::globalR3Draw2DLine949_clbk globalR3Draw2DLine949_user(nullptr);
-            info::globalR3Draw2DLineList950_ptr globalR3Draw2DLineList950_next(nullptr);
-            info::globalR3Draw2DLineList950_clbk globalR3Draw2DLineList950_user(nullptr);
-            info::globalR3DrawLine951_ptr globalR3DrawLine951_next(nullptr);
-            info::globalR3DrawLine951_clbk globalR3DrawLine951_user(nullptr);
-            info::globalR3EndScene952_ptr globalR3EndScene952_next(nullptr);
-            info::globalR3EndScene952_clbk globalR3EndScene952_user(nullptr);
-            info::globalR3EnvironmentQuake953_ptr globalR3EnvironmentQuake953_next(nullptr);
-            info::globalR3EnvironmentQuake953_clbk globalR3EnvironmentQuake953_user(nullptr);
-            info::globalR3EnvironmentShake954_ptr globalR3EnvironmentShake954_next(nullptr);
-            info::globalR3EnvironmentShake954_clbk globalR3EnvironmentShake954_user(nullptr);
-            info::globalR3EnvironmentShakeOff955_ptr globalR3EnvironmentShakeOff955_next(nullptr);
-            info::globalR3EnvironmentShakeOff955_clbk globalR3EnvironmentShakeOff955_user(nullptr);
-            info::globalR3EnvironmentShakeState956_ptr globalR3EnvironmentShakeState956_next(nullptr);
-            info::globalR3EnvironmentShakeState956_clbk globalR3EnvironmentShakeState956_user(nullptr);
-            info::globalR3FlyMove957_ptr globalR3FlyMove957_next(nullptr);
-            info::globalR3FlyMove957_clbk globalR3FlyMove957_user(nullptr);
-            info::globalR3FlyMoveSetPos958_ptr globalR3FlyMoveSetPos958_next(nullptr);
-            info::globalR3FlyMoveSetPos958_clbk globalR3FlyMoveSetPos958_user(nullptr);
-            info::globalR3GetLoopTime959_ptr globalR3GetLoopTime959_next(nullptr);
-            info::globalR3GetLoopTime959_clbk globalR3GetLoopTime959_user(nullptr);
-            info::globalR3GetPreAniTextureId960_ptr globalR3GetPreAniTextureId960_next(nullptr);
-            info::globalR3GetPreAniTextureId960_clbk globalR3GetPreAniTextureId960_user(nullptr);
-            info::globalR3GetPreTextureId961_ptr globalR3GetPreTextureId961_next(nullptr);
-            info::globalR3GetPreTextureId961_clbk globalR3GetPreTextureId961_user(nullptr);
-            info::globalR3GetQuakeMatrix962_ptr globalR3GetQuakeMatrix962_next(nullptr);
-            info::globalR3GetQuakeMatrix962_clbk globalR3GetQuakeMatrix962_user(nullptr);
-            info::globalR3GetQuakeVector963_ptr globalR3GetQuakeVector963_next(nullptr);
-            info::globalR3GetQuakeVector963_clbk globalR3GetQuakeVector963_user(nullptr);
-            info::globalR3GetShakeVector964_ptr globalR3GetShakeVector964_next(nullptr);
-            info::globalR3GetShakeVector964_clbk globalR3GetShakeVector964_user(nullptr);
-            info::globalR3GetSurface965_ptr globalR3GetSurface965_next(nullptr);
-            info::globalR3GetSurface965_clbk globalR3GetSurface965_user(nullptr);
-            info::globalR3GetTexInfoR3T966_ptr globalR3GetTexInfoR3T966_next(nullptr);
-            info::globalR3GetTexInfoR3T966_clbk globalR3GetTexInfoR3T966_user(nullptr);
-            info::globalR3GetTexName967_ptr globalR3GetTexName967_next(nullptr);
-            info::globalR3GetTexName967_clbk globalR3GetTexName967_user(nullptr);
-            info::globalR3GetTime968_ptr globalR3GetTime968_next(nullptr);
-            info::globalR3GetTime968_clbk globalR3GetTime968_user(nullptr);
-            info::globalR3GetToggle15fps969_ptr globalR3GetToggle15fps969_next(nullptr);
-            info::globalR3GetToggle15fps969_clbk globalR3GetToggle15fps969_user(nullptr);
-            info::globalR3GetToggle30fps970_ptr globalR3GetToggle30fps970_next(nullptr);
-            info::globalR3GetToggle30fps970_clbk globalR3GetToggle30fps970_user(nullptr);
-            info::globalR3GetToggle7fps971_ptr globalR3GetToggle7fps971_next(nullptr);
-            info::globalR3GetToggle7fps971_clbk globalR3GetToggle7fps971_user(nullptr);
-            info::globalR3GetViewPort972_ptr globalR3GetViewPort972_next(nullptr);
-            info::globalR3GetViewPort972_clbk globalR3GetViewPort972_user(nullptr);
-            info::globalR3InitDevice973_ptr globalR3InitDevice973_next(nullptr);
-            info::globalR3InitDevice973_clbk globalR3InitDevice973_user(nullptr);
-            info::globalR3InvalidateDevice974_ptr globalR3InvalidateDevice974_next(nullptr);
-            info::globalR3InvalidateDevice974_clbk globalR3InvalidateDevice974_user(nullptr);
-            info::globalR3LoadDDS975_ptr globalR3LoadDDS975_next(nullptr);
-            info::globalR3LoadDDS975_clbk globalR3LoadDDS975_user(nullptr);
-            info::globalR3LoadDDSAndTextureMem976_ptr globalR3LoadDDSAndTextureMem976_next(nullptr);
-            info::globalR3LoadDDSAndTextureMem976_clbk globalR3LoadDDSAndTextureMem976_user(nullptr);
-            info::globalR3LoadDDSFromFP977_ptr globalR3LoadDDSFromFP977_next(nullptr);
-            info::globalR3LoadDDSFromFP977_clbk globalR3LoadDDSFromFP977_user(nullptr);
-            info::globalR3LoadTextTexture978_ptr globalR3LoadTextTexture978_next(nullptr);
-            info::globalR3LoadTextTexture978_clbk globalR3LoadTextTexture978_user(nullptr);
-            info::globalR3LoadTextureMem979_ptr globalR3LoadTextureMem979_next(nullptr);
-            info::globalR3LoadTextureMem979_clbk globalR3LoadTextureMem979_user(nullptr);
-            info::globalR3MouseInput980_ptr globalR3MouseInput980_next(nullptr);
-            info::globalR3MouseInput980_clbk globalR3MouseInput980_user(nullptr);
-            info::globalR3MoveGetViewMatrix981_ptr globalR3MoveGetViewMatrix981_next(nullptr);
-            info::globalR3MoveGetViewMatrix981_clbk globalR3MoveGetViewMatrix981_user(nullptr);
-            info::globalR3MsgProc982_ptr globalR3MsgProc982_next(nullptr);
-            info::globalR3MsgProc982_clbk globalR3MsgProc982_user(nullptr);
-            info::globalR3ReleaseAllTextures983_ptr globalR3ReleaseAllTextures983_next(nullptr);
-            info::globalR3ReleaseAllTextures983_clbk globalR3ReleaseAllTextures983_user(nullptr);
-            info::globalR3ReleasePreTextures984_ptr globalR3ReleasePreTextures984_next(nullptr);
-            info::globalR3ReleasePreTextures984_clbk globalR3ReleasePreTextures984_user(nullptr);
-            info::globalR3ReleaseTextTexture985_ptr globalR3ReleaseTextTexture985_next(nullptr);
-            info::globalR3ReleaseTextTexture985_clbk globalR3ReleaseTextTexture985_user(nullptr);
-            info::globalR3ReleaseTextureMem986_ptr globalR3ReleaseTextureMem986_next(nullptr);
-            info::globalR3ReleaseTextureMem986_clbk globalR3ReleaseTextureMem986_user(nullptr);
-            info::globalR3RestoreAllTextures987_ptr globalR3RestoreAllTextures987_next(nullptr);
-            info::globalR3RestoreAllTextures987_clbk globalR3RestoreAllTextures987_user(nullptr);
-            info::globalR3RestoreDevice988_ptr globalR3RestoreDevice988_next(nullptr);
-            info::globalR3RestoreDevice988_clbk globalR3RestoreDevice988_user(nullptr);
-            info::globalR3SetCameraMatrix989_ptr globalR3SetCameraMatrix989_next(nullptr);
-            info::globalR3SetCameraMatrix989_clbk globalR3SetCameraMatrix989_user(nullptr);
-            info::globalR3SetLoopTime990_ptr globalR3SetLoopTime990_next(nullptr);
-            info::globalR3SetLoopTime990_clbk globalR3SetLoopTime990_user(nullptr);
-            info::globalR3SetMinFPS991_ptr globalR3SetMinFPS991_next(nullptr);
-            info::globalR3SetMinFPS991_clbk globalR3SetMinFPS991_user(nullptr);
-            info::globalR3SetTime992_ptr globalR3SetTime992_next(nullptr);
-            info::globalR3SetTime992_clbk globalR3SetTime992_user(nullptr);
-            info::globalR3SetViewPort993_ptr globalR3SetViewPort993_next(nullptr);
-            info::globalR3SetViewPort993_clbk globalR3SetViewPort993_user(nullptr);
-            info::globalRGBFromDWORDAligned994_ptr globalRGBFromDWORDAligned994_next(nullptr);
-            info::globalRGBFromDWORDAligned994_clbk globalRGBFromDWORDAligned994_user(nullptr);
-            info::globalRGBToJpegFile995_ptr globalRGBToJpegFile995_next(nullptr);
-            info::globalRGBToJpegFile995_clbk globalRGBToJpegFile995_user(nullptr);
-            info::globalRTMoiveGetCameraMatrix996_ptr globalRTMoiveGetCameraMatrix996_next(nullptr);
-            info::globalRTMoiveGetCameraMatrix996_clbk globalRTMoiveGetCameraMatrix996_user(nullptr);
-            info::globalRTMoiveGetCameraPos997_ptr globalRTMoiveGetCameraPos997_next(nullptr);
-            info::globalRTMoiveGetCameraPos997_clbk globalRTMoiveGetCameraPos997_user(nullptr);
-            info::globalRTMovieAddState998_ptr globalRTMovieAddState998_next(nullptr);
-            info::globalRTMovieAddState998_clbk globalRTMovieAddState998_user(nullptr);
-            info::globalRTMovieCreate999_ptr globalRTMovieCreate999_next(nullptr);
-            info::globalRTMovieCreate999_clbk globalRTMovieCreate999_user(nullptr);
-            info::globalRTMovieFrameMove1000_ptr globalRTMovieFrameMove1000_next(nullptr);
-            info::globalRTMovieFrameMove1000_clbk globalRTMovieFrameMove1000_user(nullptr);
-            info::globalRTMovieGetState1001_ptr globalRTMovieGetState1001_next(nullptr);
-            info::globalRTMovieGetState1001_clbk globalRTMovieGetState1001_user(nullptr);
-            info::globalRTMoviePause1002_ptr globalRTMoviePause1002_next(nullptr);
-            info::globalRTMoviePause1002_clbk globalRTMoviePause1002_user(nullptr);
-            info::globalRTMovieRelease1003_ptr globalRTMovieRelease1003_next(nullptr);
-            info::globalRTMovieRelease1003_clbk globalRTMovieRelease1003_user(nullptr);
-            info::globalRTMovieRender1004_ptr globalRTMovieRender1004_next(nullptr);
-            info::globalRTMovieRender1004_clbk globalRTMovieRender1004_user(nullptr);
-            info::globalRTMovieSetState1005_ptr globalRTMovieSetState1005_next(nullptr);
-            info::globalRTMovieSetState1005_clbk globalRTMovieSetState1005_user(nullptr);
-            info::globalRTMovieSkipShadowState1006_ptr globalRTMovieSkipShadowState1006_next(nullptr);
-            info::globalRTMovieSkipShadowState1006_clbk globalRTMovieSkipShadowState1006_user(nullptr);
-            info::globalRTMovieStartPlay1007_ptr globalRTMovieStartPlay1007_next(nullptr);
-            info::globalRTMovieStartPlay1007_clbk globalRTMovieStartPlay1007_user(nullptr);
-            info::globalRTMovieSubState1008_ptr globalRTMovieSubState1008_next(nullptr);
-            info::globalRTMovieSubState1008_clbk globalRTMovieSubState1008_user(nullptr);
-            info::globalReAlloc1009_ptr globalReAlloc1009_next(nullptr);
-            info::globalReAlloc1009_clbk globalReAlloc1009_user(nullptr);
-            info::globalReLoadMaterial1010_ptr globalReLoadMaterial1010_next(nullptr);
-            info::globalReLoadMaterial1010_clbk globalReLoadMaterial1010_user(nullptr);
-            info::globalReMoveCamera1011_ptr globalReMoveCamera1011_next(nullptr);
-            info::globalReMoveCamera1011_clbk globalReMoveCamera1011_user(nullptr);
-            info::globalReleaesR3MP31012_ptr globalReleaesR3MP31012_next(nullptr);
-            info::globalReleaesR3MP31012_clbk globalReleaesR3MP31012_user(nullptr);
-            info::globalReleaesStreamR3MP31013_ptr globalReleaesStreamR3MP31013_next(nullptr);
-            info::globalReleaesStreamR3MP31013_clbk globalReleaesStreamR3MP31013_user(nullptr);
-            info::globalReleaseAllSpriteTexMem1014_ptr globalReleaseAllSpriteTexMem1014_next(nullptr);
-            info::globalReleaseAllSpriteTexMem1014_clbk globalReleaseAllSpriteTexMem1014_user(nullptr);
-            info::globalReleaseBlurShader1015_ptr globalReleaseBlurShader1015_next(nullptr);
-            info::globalReleaseBlurShader1015_clbk globalReleaseBlurShader1015_user(nullptr);
-            info::globalReleaseBlurVBuffer1016_ptr globalReleaseBlurVBuffer1016_next(nullptr);
-            info::globalReleaseBlurVBuffer1016_clbk globalReleaseBlurVBuffer1016_user(nullptr);
-            info::globalReleaseConsole1017_ptr globalReleaseConsole1017_next(nullptr);
-            info::globalReleaseConsole1017_clbk globalReleaseConsole1017_user(nullptr);
-            info::globalReleaseCore1018_ptr globalReleaseCore1018_next(nullptr);
-            info::globalReleaseCore1018_clbk globalReleaseCore1018_user(nullptr);
-            info::globalReleaseFullScreenEffect1019_ptr globalReleaseFullScreenEffect1019_next(nullptr);
-            info::globalReleaseFullScreenEffect1019_clbk globalReleaseFullScreenEffect1019_user(nullptr);
-            info::globalReleaseFunctionKey1020_ptr globalReleaseFunctionKey1020_next(nullptr);
-            info::globalReleaseFunctionKey1020_clbk globalReleaseFunctionKey1020_user(nullptr);
-            info::globalReleaseJmalloc1021_ptr globalReleaseJmalloc1021_next(nullptr);
-            info::globalReleaseJmalloc1021_clbk globalReleaseJmalloc1021_user(nullptr);
-            info::globalReleaseLightMap1022_ptr globalReleaseLightMap1022_next(nullptr);
-            info::globalReleaseLightMap1022_clbk globalReleaseLightMap1022_user(nullptr);
-            info::globalReleaseMainMaterial1023_ptr globalReleaseMainMaterial1023_next(nullptr);
-            info::globalReleaseMainMaterial1023_clbk globalReleaseMainMaterial1023_user(nullptr);
-            info::globalReleaseR3Engine1024_ptr globalReleaseR3Engine1024_next(nullptr);
-            info::globalReleaseR3Engine1024_clbk globalReleaseR3Engine1024_user(nullptr);
-            info::globalReleaseR3Particle1025_ptr globalReleaseR3Particle1025_next(nullptr);
-            info::globalReleaseR3Particle1025_clbk globalReleaseR3Particle1025_user(nullptr);
-            info::globalReleaseR3SoundSystem1026_ptr globalReleaseR3SoundSystem1026_next(nullptr);
-            info::globalReleaseR3SoundSystem1026_clbk globalReleaseR3SoundSystem1026_user(nullptr);
-            info::globalReleaseR3Text1027_ptr globalReleaseR3Text1027_next(nullptr);
-            info::globalReleaseR3Text1027_clbk globalReleaseR3Text1027_user(nullptr);
-            info::globalReleaseSpriteManager1028_ptr globalReleaseSpriteManager1028_next(nullptr);
-            info::globalReleaseSpriteManager1028_clbk globalReleaseSpriteManager1028_user(nullptr);
-            info::globalReleaseSpriteManager1029_ptr globalReleaseSpriteManager1029_next(nullptr);
-            info::globalReleaseSpriteManager1029_clbk globalReleaseSpriteManager1029_user(nullptr);
-            info::globalReleaseSubMaterial1030_ptr globalReleaseSubMaterial1030_next(nullptr);
-            info::globalReleaseSubMaterial1030_clbk globalReleaseSubMaterial1030_user(nullptr);
-            info::globalReleaseSystemTexture1031_ptr globalReleaseSystemTexture1031_next(nullptr);
-            info::globalReleaseSystemTexture1031_clbk globalReleaseSystemTexture1031_user(nullptr);
-            info::globalReleaseVertexShaderList1032_ptr globalReleaseVertexShaderList1032_next(nullptr);
-            info::globalReleaseVertexShaderList1032_clbk globalReleaseVertexShaderList1032_user(nullptr);
-            info::globalReleaseWaveList1033_ptr globalReleaseWaveList1033_next(nullptr);
-            info::globalReleaseWaveList1033_clbk globalReleaseWaveList1033_user(nullptr);
-            info::globalReleaseWebBrowser1034_ptr globalReleaseWebBrowser1034_next(nullptr);
-            info::globalReleaseWebBrowser1034_clbk globalReleaseWebBrowser1034_user(nullptr);
-            info::globalResetTexMemSize1035_ptr globalResetTexMemSize1035_next(nullptr);
-            info::globalResetTexMemSize1035_clbk globalResetTexMemSize1035_user(nullptr);
-            info::globalResetTotalVertexBufferInfo1036_ptr globalResetTotalVertexBufferInfo1036_next(nullptr);
-            info::globalResetTotalVertexBufferInfo1036_clbk globalResetTotalVertexBufferInfo1036_user(nullptr);
-            info::globalResetVertexBufferCache1037_ptr globalResetVertexBufferCache1037_next(nullptr);
-            info::globalResetVertexBufferCache1037_clbk globalResetVertexBufferCache1037_user(nullptr);
-            info::globalRestoreAllSpriteTexMem1038_ptr globalRestoreAllSpriteTexMem1038_next(nullptr);
-            info::globalRestoreAllSpriteTexMem1038_clbk globalRestoreAllSpriteTexMem1038_user(nullptr);
-            info::globalRestoreSpriteManager1039_ptr globalRestoreSpriteManager1039_next(nullptr);
-            info::globalRestoreSpriteManager1039_clbk globalRestoreSpriteManager1039_user(nullptr);
-            info::globalRestoreSystemTexture1040_ptr globalRestoreSystemTexture1040_next(nullptr);
-            info::globalRestoreSystemTexture1040_clbk globalRestoreSystemTexture1040_user(nullptr);
-            info::globalRijndael_VC60Workaround1041_ptr globalRijndael_VC60Workaround1041_next(nullptr);
-            info::globalRijndael_VC60Workaround1041_clbk globalRijndael_VC60Workaround1041_user(nullptr);
-            info::globalRotateLeftBits1043_ptr globalRotateLeftBits1043_next(nullptr);
-            info::globalRotateLeftBits1043_clbk globalRotateLeftBits1043_user(nullptr);
-            info::globalRound11045_ptr globalRound11045_next(nullptr);
-            info::globalRound11045_clbk globalRound11045_user(nullptr);
-            info::globalRound21047_ptr globalRound21047_next(nullptr);
-            info::globalRound21047_clbk globalRound21047_user(nullptr);
-            info::globalRound31049_ptr globalRound31049_next(nullptr);
-            info::globalRound31049_clbk globalRound31049_user(nullptr);
-            info::globalRound41051_ptr globalRound41051_next(nullptr);
-            info::globalRound41051_clbk globalRound41051_user(nullptr);
-            info::globalSaveBMP1052_ptr globalSaveBMP1052_next(nullptr);
-            info::globalSaveBMP1052_clbk globalSaveBMP1052_user(nullptr);
-            info::globalSaveJPG1053_ptr globalSaveJPG1053_next(nullptr);
-            info::globalSaveJPG1053_clbk globalSaveJPG1053_user(nullptr);
-            info::globalScanCodeToVKCode1054_ptr globalScanCodeToVKCode1054_next(nullptr);
-            info::globalScanCodeToVKCode1054_clbk globalScanCodeToVKCode1054_user(nullptr);
-            info::globalSearchAvatorWithCMS1056_ptr globalSearchAvatorWithCMS1056_next(nullptr);
-            info::globalSearchAvatorWithCMS1056_clbk globalSearchAvatorWithCMS1056_user(nullptr);
-            info::globalSearchAvatorWithName1058_ptr globalSearchAvatorWithName1058_next(nullptr);
-            info::globalSearchAvatorWithName1058_clbk globalSearchAvatorWithName1058_user(nullptr);
-            info::globalSearchEmptyMonster1060_ptr globalSearchEmptyMonster1060_next(nullptr);
-            info::globalSearchEmptyMonster1060_clbk globalSearchEmptyMonster1060_user(nullptr);
-            info::globalSearchJobCommandFn1062_ptr globalSearchJobCommandFn1062_next(nullptr);
-            info::globalSearchJobCommandFn1062_clbk globalSearchJobCommandFn1062_user(nullptr);
-            info::globalSearchMissionCommandFn1064_ptr globalSearchMissionCommandFn1064_next(nullptr);
-            info::globalSearchMissionCommandFn1064_clbk globalSearchMissionCommandFn1064_user(nullptr);
-            info::globalSearchQuestCommandFn1066_ptr globalSearchQuestCommandFn1066_next(nullptr);
-            info::globalSearchQuestCommandFn1066_clbk globalSearchQuestCommandFn1066_user(nullptr);
-            info::globalSendLoop1068_ptr globalSendLoop1068_next(nullptr);
-            info::globalSendLoop1068_clbk globalSendLoop1068_user(nullptr);
-            info::globalSendMsg_EconomyDataToWeb1070_ptr globalSendMsg_EconomyDataToWeb1070_next(nullptr);
-            info::globalSendMsg_EconomyDataToWeb1070_clbk globalSendMsg_EconomyDataToWeb1070_user(nullptr);
-            info::globalSerarchEmptyDarkHole1072_ptr globalSerarchEmptyDarkHole1072_next(nullptr);
-            info::globalSerarchEmptyDarkHole1072_clbk globalSerarchEmptyDarkHole1072_user(nullptr);
-            info::globalServerProgramExit1074_ptr globalServerProgramExit1074_next(nullptr);
-            info::globalServerProgramExit1074_clbk globalServerProgramExit1074_user(nullptr);
-            info::globalSetConsoleStateB1075_ptr globalSetConsoleStateB1075_next(nullptr);
-            info::globalSetConsoleStateB1075_clbk globalSetConsoleStateB1075_user(nullptr);
-            info::globalSetContrast1076_ptr globalSetContrast1076_next(nullptr);
-            info::globalSetContrast1076_clbk globalSetContrast1076_user(nullptr);
-            info::globalSetContrast1077_ptr globalSetContrast1077_next(nullptr);
-            info::globalSetContrast1077_clbk globalSetContrast1077_user(nullptr);
-            info::globalSetDDSTexNameDebug1078_ptr globalSetDDSTexNameDebug1078_next(nullptr);
-            info::globalSetDDSTexNameDebug1078_clbk globalSetDDSTexNameDebug1078_user(nullptr);
-            info::globalSetDDSTexSizeDebug1079_ptr globalSetDDSTexSizeDebug1079_next(nullptr);
-            info::globalSetDDSTexSizeDebug1079_clbk globalSetDDSTexSizeDebug1079_user(nullptr);
-            info::globalSetDefaultFlags1080_ptr globalSetDefaultFlags1080_next(nullptr);
-            info::globalSetDefaultFlags1080_clbk globalSetDefaultFlags1080_user(nullptr);
-            info::globalSetDefaultFov1081_ptr globalSetDefaultFov1081_next(nullptr);
-            info::globalSetDefaultFov1081_clbk globalSetDefaultFov1081_user(nullptr);
-            info::globalSetDetailTexVS1082_ptr globalSetDetailTexVS1082_next(nullptr);
-            info::globalSetDetailTexVS1082_clbk globalSetDetailTexVS1082_user(nullptr);
-            info::globalSetDynamicLight1083_ptr globalSetDynamicLight1083_next(nullptr);
-            info::globalSetDynamicLight1083_clbk globalSetDynamicLight1083_user(nullptr);
-            info::globalSetErrorButRunMessageProc1084_ptr globalSetErrorButRunMessageProc1084_next(nullptr);
-            info::globalSetErrorButRunMessageProc1084_clbk globalSetErrorButRunMessageProc1084_user(nullptr);
-            info::globalSetErrorMessageProc1085_ptr globalSetErrorMessageProc1085_next(nullptr);
-            info::globalSetErrorMessageProc1085_clbk globalSetErrorMessageProc1085_user(nullptr);
-            info::globalSetFadeFactor1086_ptr globalSetFadeFactor1086_next(nullptr);
-            info::globalSetFadeFactor1086_clbk globalSetFadeFactor1086_user(nullptr);
-            info::globalSetFadeIn1087_ptr globalSetFadeIn1087_next(nullptr);
-            info::globalSetFadeIn1087_clbk globalSetFadeIn1087_user(nullptr);
-            info::globalSetFadeOut1088_ptr globalSetFadeOut1088_next(nullptr);
-            info::globalSetFadeOut1088_clbk globalSetFadeOut1088_user(nullptr);
-            info::globalSetFadeSky1089_ptr globalSetFadeSky1089_next(nullptr);
-            info::globalSetFadeSky1089_clbk globalSetFadeSky1089_user(nullptr);
-            info::globalSetFadeTex1090_ptr globalSetFadeTex1090_next(nullptr);
-            info::globalSetFadeTex1090_clbk globalSetFadeTex1090_user(nullptr);
-            info::globalSetFov1091_ptr globalSetFov1091_next(nullptr);
-            info::globalSetFov1091_clbk globalSetFov1091_user(nullptr);
-            info::globalSetFreePointer1092_ptr globalSetFreePointer1092_next(nullptr);
-            info::globalSetFreePointer1092_clbk globalSetFreePointer1092_user(nullptr);
-            info::globalSetFrustumNormalPlane1093_ptr globalSetFrustumNormalPlane1093_next(nullptr);
-            info::globalSetFrustumNormalPlane1093_clbk globalSetFrustumNormalPlane1093_user(nullptr);
-            info::globalSetGamma1094_ptr globalSetGamma1094_next(nullptr);
-            info::globalSetGamma1094_clbk globalSetGamma1094_user(nullptr);
-            info::globalSetGlobalMusicVolume1095_ptr globalSetGlobalMusicVolume1095_next(nullptr);
-            info::globalSetGlobalMusicVolume1095_clbk globalSetGlobalMusicVolume1095_user(nullptr);
-            info::globalSetGlobalWavVolume1096_ptr globalSetGlobalWavVolume1096_next(nullptr);
-            info::globalSetGlobalWavVolume1096_clbk globalSetGlobalWavVolume1096_user(nullptr);
-            info::globalSetGrassVS1097_ptr globalSetGrassVS1097_next(nullptr);
-            info::globalSetGrassVS1097_clbk globalSetGrassVS1097_user(nullptr);
-            info::globalSetLightMap1098_ptr globalSetLightMap1098_next(nullptr);
-            info::globalSetLightMap1098_clbk globalSetLightMap1098_user(nullptr);
-            info::globalSetLitGrassVS1099_ptr globalSetLitGrassVS1099_next(nullptr);
-            info::globalSetLitGrassVS1099_clbk globalSetLitGrassVS1099_user(nullptr);
-            info::globalSetMainLight1100_ptr globalSetMainLight1100_next(nullptr);
-            info::globalSetMainLight1100_clbk globalSetMainLight1100_user(nullptr);
-            info::globalSetMatAlphaColor1101_ptr globalSetMatAlphaColor1101_next(nullptr);
-            info::globalSetMatAlphaColor1101_clbk globalSetMatAlphaColor1101_user(nullptr);
-            info::globalSetMergeFileManager1102_ptr globalSetMergeFileManager1102_next(nullptr);
-            info::globalSetMergeFileManager1102_clbk globalSetMergeFileManager1102_user(nullptr);
-            info::globalSetMotionBlurLength1103_ptr globalSetMotionBlurLength1103_next(nullptr);
-            info::globalSetMotionBlurLength1103_clbk globalSetMotionBlurLength1103_user(nullptr);
-            info::globalSetMultiLayerCamera1104_ptr globalSetMultiLayerCamera1104_next(nullptr);
-            info::globalSetMultiLayerCamera1104_clbk globalSetMultiLayerCamera1104_user(nullptr);
-            info::globalSetMultiLayerTime1105_ptr globalSetMultiLayerTime1105_next(nullptr);
-            info::globalSetMultiLayerTime1105_clbk globalSetMultiLayerTime1105_user(nullptr);
-            info::globalSetNoLodTextere1106_ptr globalSetNoLodTextere1106_next(nullptr);
-            info::globalSetNoLodTextere1106_clbk globalSetNoLodTextere1106_user(nullptr);
-            info::globalSetNowR3D3DTexCnt1107_ptr globalSetNowR3D3DTexCnt1107_next(nullptr);
-            info::globalSetNowR3D3DTexCnt1107_clbk globalSetNowR3D3DTexCnt1107_user(nullptr);
-            info::globalSetNowR3TexCnt1108_ptr globalSetNowR3TexCnt1108_next(nullptr);
-            info::globalSetNowR3TexCnt1108_clbk globalSetNowR3TexCnt1108_user(nullptr);
-            info::globalSetOpStack1109_ptr globalSetOpStack1109_next(nullptr);
-            info::globalSetOpStack1109_clbk globalSetOpStack1109_user(nullptr);
-            info::globalSetOutLineColor1110_ptr globalSetOutLineColor1110_next(nullptr);
-            info::globalSetOutLineColor1110_clbk globalSetOutLineColor1110_user(nullptr);
-            info::globalSetOutLineColorFont161111_ptr globalSetOutLineColorFont161111_next(nullptr);
-            info::globalSetOutLineColorFont161111_clbk globalSetOutLineColorFont161111_user(nullptr);
-            info::globalSetOutLineColorFont241112_ptr globalSetOutLineColorFont241112_next(nullptr);
-            info::globalSetOutLineColorFont241112_clbk globalSetOutLineColorFont241112_user(nullptr);
-            info::globalSetPlayMusicState1113_ptr globalSetPlayMusicState1113_next(nullptr);
-            info::globalSetPlayMusicState1113_clbk globalSetPlayMusicState1113_user(nullptr);
-            info::globalSetPlayWaveState1114_ptr globalSetPlayWaveState1114_next(nullptr);
-            info::globalSetPlayWaveState1114_clbk globalSetPlayWaveState1114_user(nullptr);
-            info::globalSetProjectShadow1115_ptr globalSetProjectShadow1115_next(nullptr);
-            info::globalSetProjectShadow1115_clbk globalSetProjectShadow1115_user(nullptr);
-            info::globalSetR3D3DTexture1116_ptr globalSetR3D3DTexture1116_next(nullptr);
-            info::globalSetR3D3DTexture1116_clbk globalSetR3D3DTexture1116_user(nullptr);
-            info::globalSetR3TexManageFlag1117_ptr globalSetR3TexManageFlag1117_next(nullptr);
-            info::globalSetR3TexManageFlag1117_clbk globalSetR3TexManageFlag1117_user(nullptr);
-            info::globalSetR3TextFont1118_ptr globalSetR3TextFont1118_next(nullptr);
-            info::globalSetR3TextFont1118_clbk globalSetR3TextFont1118_user(nullptr);
-            info::globalSetReLoadState1119_ptr globalSetReLoadState1119_next(nullptr);
-            info::globalSetReLoadState1119_clbk globalSetReLoadState1119_user(nullptr);
-            info::globalSetReflectionState1120_ptr globalSetReflectionState1120_next(nullptr);
-            info::globalSetReflectionState1120_clbk globalSetReflectionState1120_user(nullptr);
-            info::globalSetReflectionVS1121_ptr globalSetReflectionVS1121_next(nullptr);
-            info::globalSetReflectionVS1121_clbk globalSetReflectionVS1121_user(nullptr);
-            info::globalSetSkipOneBboShasi11122_ptr globalSetSkipOneBboShasi11122_next(nullptr);
-            info::globalSetSkipOneBboShasi11122_clbk globalSetSkipOneBboShasi11122_user(nullptr);
-            info::globalSetSkyVS1123_ptr globalSetSkyVS1123_next(nullptr);
-            info::globalSetSkyVS1123_clbk globalSetSkyVS1123_user(nullptr);
-            info::globalSetStateFullScreenEffect1124_ptr globalSetStateFullScreenEffect1124_next(nullptr);
-            info::globalSetStateFullScreenEffect1124_clbk globalSetStateFullScreenEffect1124_user(nullptr);
-            info::globalSetTextureRenderTargetFrameBuffer1125_ptr globalSetTextureRenderTargetFrameBuffer1125_next(nullptr);
-            info::globalSetTextureRenderTargetFrameBuffer1125_clbk globalSetTextureRenderTargetFrameBuffer1125_user(nullptr);
-            info::globalSetTimerRate1126_ptr globalSetTimerRate1126_next(nullptr);
-            info::globalSetTimerRate1126_clbk globalSetTimerRate1126_user(nullptr);
-            info::globalSetTransformClipInfo1127_ptr globalSetTransformClipInfo1127_next(nullptr);
-            info::globalSetTransformClipInfo1127_clbk globalSetTransformClipInfo1127_user(nullptr);
-            info::globalSetVPIPTex11128_ptr globalSetVPIPTex11128_next(nullptr);
-            info::globalSetVPIPTex11128_clbk globalSetVPIPTex11128_user(nullptr);
-            info::globalSetVPIPTex1IndexPrimitive1129_ptr globalSetVPIPTex1IndexPrimitive1129_next(nullptr);
-            info::globalSetVPIPTex1IndexPrimitive1129_clbk globalSetVPIPTex1IndexPrimitive1129_user(nullptr);
-            info::globalSetVPIPTex1IndexPrimitiveTL1130_ptr globalSetVPIPTex1IndexPrimitiveTL1130_next(nullptr);
-            info::globalSetVPIPTex1IndexPrimitiveTL1130_clbk globalSetVPIPTex1IndexPrimitiveTL1130_user(nullptr);
-            info::globalSetVPIPTex21131_ptr globalSetVPIPTex21131_next(nullptr);
-            info::globalSetVPIPTex21131_clbk globalSetVPIPTex21131_user(nullptr);
-            info::globalSetViewPortArea1132_ptr globalSetViewPortArea1132_next(nullptr);
-            info::globalSetViewPortArea1132_clbk globalSetViewPortArea1132_user(nullptr);
-            info::globalSetVolumeMP31133_ptr globalSetVolumeMP31133_next(nullptr);
-            info::globalSetVolumeMP31133_clbk globalSetVolumeMP31133_user(nullptr);
-            info::globalSetVolumeStreamMP31134_ptr globalSetVolumeStreamMP31134_next(nullptr);
-            info::globalSetVolumeStreamMP31134_clbk globalSetVolumeStreamMP31134_user(nullptr);
-            info::globalSetWarningMessageProc1135_ptr globalSetWarningMessageProc1135_next(nullptr);
-            info::globalSetWarningMessageProc1135_clbk globalSetWarningMessageProc1135_user(nullptr);
-            info::globalSetWaveVolAndPan1136_ptr globalSetWaveVolAndPan1136_next(nullptr);
-            info::globalSetWaveVolAndPan1136_clbk globalSetWaveVolAndPan1136_user(nullptr);
-            info::globalSetWorldViewMatrixVS1137_ptr globalSetWorldViewMatrixVS1137_next(nullptr);
-            info::globalSetWorldViewMatrixVS1137_clbk globalSetWorldViewMatrixVS1137_user(nullptr);
-            info::globalShadowBeginScene1138_ptr globalShadowBeginScene1138_next(nullptr);
-            info::globalShadowBeginScene1138_clbk globalShadowBeginScene1138_user(nullptr);
-            info::globalShadowEndScene1139_ptr globalShadowEndScene1139_next(nullptr);
-            info::globalShadowEndScene1139_clbk globalShadowEndScene1139_user(nullptr);
-            info::globalShortToFloat1141_ptr globalShortToFloat1141_next(nullptr);
-            info::globalShortToFloat1141_clbk globalShortToFloat1141_user(nullptr);
-            info::globalSmoothedNoise11142_ptr globalSmoothedNoise11142_next(nullptr);
-            info::globalSmoothedNoise11142_clbk globalSmoothedNoise11142_user(nullptr);
-            info::globalSmoothedNoise11143_ptr globalSmoothedNoise11143_next(nullptr);
-            info::globalSmoothedNoise11143_clbk globalSmoothedNoise11143_user(nullptr);
-            info::globalSplitString1145_ptr globalSplitString1145_next(nullptr);
-            info::globalSplitString1145_clbk globalSplitString1145_user(nullptr);
-            info::globalStopR3MP31146_ptr globalStopR3MP31146_next(nullptr);
-            info::globalStopR3MP31146_clbk globalStopR3MP31146_user(nullptr);
-            info::globalStopStreamR3MP31147_ptr globalStopStreamR3MP31147_next(nullptr);
-            info::globalStopStreamR3MP31147_clbk globalStopStreamR3MP31147_user(nullptr);
-            info::globalStopWave1148_ptr globalStopWave1148_next(nullptr);
-            info::globalStopWave1148_clbk globalStopWave1148_user(nullptr);
-            info::globalStripEXT1149_ptr globalStripEXT1149_next(nullptr);
-            info::globalStripEXT1149_clbk globalStripEXT1149_user(nullptr);
-            info::globalStripFinalPath1150_ptr globalStripFinalPath1150_next(nullptr);
-            info::globalStripFinalPath1150_clbk globalStripFinalPath1150_user(nullptr);
-            info::globalStripName1151_ptr globalStripName1151_next(nullptr);
-            info::globalStripName1151_clbk globalStripName1151_user(nullptr);
-            info::globalStripPath1152_ptr globalStripPath1152_next(nullptr);
-            info::globalStripPath1152_clbk globalStripPath1152_user(nullptr);
-            info::globalTestAllGroup1153_ptr globalTestAllGroup1153_next(nullptr);
-            info::globalTestAllGroup1153_clbk globalTestAllGroup1153_user(nullptr);
-            info::globalTestWriteFile1154_ptr globalTestWriteFile1154_next(nullptr);
-            info::globalTestWriteFile1154_clbk globalTestWriteFile1154_user(nullptr);
-            info::globalTextureCopy1155_ptr globalTextureCopy1155_next(nullptr);
-            info::globalTextureCopy1155_clbk globalTextureCopy1155_user(nullptr);
-            info::globalTextureSplatting1156_ptr globalTextureSplatting1156_next(nullptr);
-            info::globalTextureSplatting1156_clbk globalTextureSplatting1156_user(nullptr);
-            info::globalTransformVertex1157_ptr globalTransformVertex1157_next(nullptr);
-            info::globalTransformVertex1157_clbk globalTransformVertex1157_user(nullptr);
-            info::globalTransformVertex1158_ptr globalTransformVertex1158_next(nullptr);
-            info::globalTransformVertex1158_clbk globalTransformVertex1158_user(nullptr);
-            info::globalUnLightMappingTex11159_ptr globalUnLightMappingTex11159_next(nullptr);
-            info::globalUnLightMappingTex11159_clbk globalUnLightMappingTex11159_user(nullptr);
-            info::globalUnSetDynamicLight1160_ptr globalUnSetDynamicLight1160_next(nullptr);
-            info::globalUnSetDynamicLight1160_clbk globalUnSetDynamicLight1160_user(nullptr);
-            info::globalUnSetMatAlphaColor1161_ptr globalUnSetMatAlphaColor1161_next(nullptr);
-            info::globalUnSetMatAlphaColor1161_clbk globalUnSetMatAlphaColor1161_user(nullptr);
-            info::globalUnSetProjectedShadow1162_ptr globalUnSetProjectedShadow1162_next(nullptr);
-            info::globalUnSetProjectedShadow1162_clbk globalUnSetProjectedShadow1162_user(nullptr);
-            info::globalUnTextureSplatting1163_ptr globalUnTextureSplatting1163_next(nullptr);
-            info::globalUnTextureSplatting1163_clbk globalUnTextureSplatting1163_user(nullptr);
-            info::globalUpdateStreamMP31164_ptr globalUpdateStreamMP31164_next(nullptr);
-            info::globalUpdateStreamMP31164_clbk globalUpdateStreamMP31164_user(nullptr);
-            info::globalVector3fTransform1165_ptr globalVector3fTransform1165_next(nullptr);
-            info::globalVector3fTransform1165_clbk globalVector3fTransform1165_user(nullptr);
-            info::globalVertFlipBuf1166_ptr globalVertFlipBuf1166_next(nullptr);
-            info::globalVertFlipBuf1166_clbk globalVertFlipBuf1166_user(nullptr);
-            info::globalW2M1168_ptr globalW2M1168_next(nullptr);
-            info::globalW2M1168_clbk globalW2M1168_user(nullptr);
-            info::globalWCHARTOMULTI1170_ptr globalWCHARTOMULTI1170_next(nullptr);
-            info::globalWCHARTOMULTI1170_clbk globalWCHARTOMULTI1170_user(nullptr);
-            info::globalWarning1171_ptr globalWarning1171_next(nullptr);
-            info::globalWarning1171_clbk globalWarning1171_user(nullptr);
-            info::globalWndProc1172_ptr globalWndProc1172_next(nullptr);
-            info::globalWndProc1172_clbk globalWndProc1172_user(nullptr);
-            info::globalWriteCheatLog1174_ptr globalWriteCheatLog1174_next(nullptr);
-            info::globalWriteCheatLog1174_clbk globalWriteCheatLog1174_user(nullptr);
-            info::globalWriteLogFileLong1176_ptr globalWriteLogFileLong1176_next(nullptr);
-            info::globalWriteLogFileLong1176_clbk globalWriteLogFileLong1176_user(nullptr);
-            info::globalWriteServerStartHistory1178_ptr globalWriteServerStartHistory1178_next(nullptr);
-            info::globalWriteServerStartHistory1178_clbk globalWriteServerStartHistory1178_user(nullptr);
-            info::globalWriteTableData1180_ptr globalWriteTableData1180_next(nullptr);
-            info::globalWriteTableData1180_clbk globalWriteTableData1180_user(nullptr);
-            info::globalWriteTableDataPart1182_ptr globalWriteTableDataPart1182_next(nullptr);
-            info::globalWriteTableDataPart1182_clbk globalWriteTableDataPart1182_user(nullptr);
-            info::global_CalcPayExgRatePerRace1186_ptr global_CalcPayExgRatePerRace1186_next(nullptr);
-            info::global_CalcPayExgRatePerRace1186_clbk global_CalcPayExgRatePerRace1186_user(nullptr);
-            info::global_CcrFG_rs_CloseUserContext1187_ptr global_CcrFG_rs_CloseUserContext1187_next(nullptr);
-            info::global_CcrFG_rs_CloseUserContext1187_clbk global_CcrFG_rs_CloseUserContext1187_user(nullptr);
-            info::global_CcrFG_rs_CreateUserContext1188_ptr global_CcrFG_rs_CreateUserContext1188_next(nullptr);
-            info::global_CcrFG_rs_CreateUserContext1188_clbk global_CcrFG_rs_CreateUserContext1188_user(nullptr);
-            info::global_CcrFG_rs_DecryptPacket1189_ptr global_CcrFG_rs_DecryptPacket1189_next(nullptr);
-            info::global_CcrFG_rs_DecryptPacket1189_clbk global_CcrFG_rs_DecryptPacket1189_user(nullptr);
-            info::global_CcrFG_rs_EncryptPacket1190_ptr global_CcrFG_rs_EncryptPacket1190_next(nullptr);
-            info::global_CcrFG_rs_EncryptPacket1190_clbk global_CcrFG_rs_EncryptPacket1190_user(nullptr);
-            info::global_CcrFG_rs_GetLastError1191_ptr global_CcrFG_rs_GetLastError1191_next(nullptr);
-            info::global_CcrFG_rs_GetLastError1191_clbk global_CcrFG_rs_GetLastError1191_user(nullptr);
-            info::global_CcrFG_rs_Initialize1192_ptr global_CcrFG_rs_Initialize1192_next(nullptr);
-            info::global_CcrFG_rs_Initialize1192_clbk global_CcrFG_rs_Initialize1192_user(nullptr);
-            info::global_CcrFG_rs_Uninitialize1193_ptr global_CcrFG_rs_Uninitialize1193_next(nullptr);
-            info::global_CcrFG_rs_Uninitialize1193_clbk global_CcrFG_rs_Uninitialize1193_user(nullptr);
-            info::global_CheckCumulativeSF1195_ptr global_CheckCumulativeSF1195_next(nullptr);
-            info::global_CheckCumulativeSF1195_clbk global_CheckCumulativeSF1195_user(nullptr);
-            info::global_CheckDestMonsterLimitLv1197_ptr global_CheckDestMonsterLimitLv1197_next(nullptr);
-            info::global_CheckDestMonsterLimitLv1197_clbk global_CheckDestMonsterLimitLv1197_user(nullptr);
-            info::global_CheckPotionData1199_ptr global_CheckPotionData1199_next(nullptr);
-            info::global_CheckPotionData1199_clbk global_CheckPotionData1199_user(nullptr);
-            info::global_CheckSameItem1201_ptr global_CheckSameItem1201_next(nullptr);
-            info::global_CheckSameItem1201_clbk global_CheckSameItem1201_user(nullptr);
-            info::global_Check_SF_UseType1203_ptr global_Check_SF_UseType1203_next(nullptr);
-            info::global_Check_SF_UseType1203_clbk global_Check_SF_UseType1203_user(nullptr);
-            info::global_CreateLootingNovusItem1205_ptr global_CreateLootingNovusItem1205_next(nullptr);
-            info::global_CreateLootingNovusItem1205_clbk global_CreateLootingNovusItem1205_user(nullptr);
-            info::global_CreateMon1207_ptr global_CreateMon1207_next(nullptr);
-            info::global_CreateMon1207_clbk global_CreateMon1207_user(nullptr);
-            info::global_DbgOut1209_ptr global_DbgOut1209_next(nullptr);
-            info::global_DbgOut1209_clbk global_DbgOut1209_user(nullptr);
-            info::global_FailItemShortBuffer1212_ptr global_FailItemShortBuffer1212_next(nullptr);
-            info::global_FailItemShortBuffer1212_clbk global_FailItemShortBuffer1212_user(nullptr);
-            info::global_GetLuaEventMgr1214_ptr global_GetLuaEventMgr1214_next(nullptr);
-            info::global_GetLuaEventMgr1214_clbk global_GetLuaEventMgr1214_user(nullptr);
-            info::global_GetMonsterContTime1216_ptr global_GetMonsterContTime1216_next(nullptr);
-            info::global_GetMonsterContTime1216_clbk global_GetMonsterContTime1216_user(nullptr);
-            info::global_GetTempEffectValue1218_ptr global_GetTempEffectValue1218_next(nullptr);
-            info::global_GetTempEffectValue1218_clbk global_GetTempEffectValue1218_user(nullptr);
-            info::global_GetTransTBL1220_ptr global_GetTransTBL1220_next(nullptr);
-            info::global_GetTransTBL1220_clbk global_GetTransTBL1220_user(nullptr);
-            info::global_IsXmasSnowEffect1222_ptr global_IsXmasSnowEffect1222_next(nullptr);
-            info::global_IsXmasSnowEffect1222_clbk global_IsXmasSnowEffect1222_user(nullptr);
-            info::global_KickReason1224_ptr global_KickReason1224_next(nullptr);
-            info::global_KickReason1224_clbk global_KickReason1224_user(nullptr);
-            info::global_Pow_int1226_ptr global_Pow_int1226_next(nullptr);
-            info::global_Pow_int1226_clbk global_Pow_int1226_user(nullptr);
-            info::global_Pow_int1228_ptr global_Pow_int1228_next(nullptr);
-            info::global_Pow_int1228_clbk global_Pow_int1228_user(nullptr);
-            info::global_RTC_AllocaFailure1229_ptr global_RTC_AllocaFailure1229_next(nullptr);
-            info::global_RTC_AllocaFailure1229_clbk global_RTC_AllocaFailure1229_user(nullptr);
-            info::global_RTC_Failure1230_ptr global_RTC_Failure1230_next(nullptr);
-            info::global_RTC_Failure1230_clbk global_RTC_Failure1230_user(nullptr);
-            info::global_RTC_GetErrorFunc1231_ptr global_RTC_GetErrorFunc1231_next(nullptr);
-            info::global_RTC_GetErrorFunc1231_clbk global_RTC_GetErrorFunc1231_user(nullptr);
-            info::global_RTC_GetErrorFuncW1232_ptr global_RTC_GetErrorFuncW1232_next(nullptr);
-            info::global_RTC_GetErrorFuncW1232_clbk global_RTC_GetErrorFuncW1232_user(nullptr);
-            info::global_RTC_GetSrcLine1233_ptr global_RTC_GetSrcLine1233_next(nullptr);
-            info::global_RTC_GetSrcLine1233_clbk global_RTC_GetSrcLine1233_user(nullptr);
-            info::global_RTC_StackFailure1234_ptr global_RTC_StackFailure1234_next(nullptr);
-            info::global_RTC_StackFailure1234_clbk global_RTC_StackFailure1234_user(nullptr);
-            info::global_ReadEconomyIniFile1236_ptr global_ReadEconomyIniFile1236_next(nullptr);
-            info::global_ReadEconomyIniFile1236_clbk global_ReadEconomyIniFile1236_user(nullptr);
-            info::global_SearchPlayer1238_ptr global_SearchPlayer1238_next(nullptr);
-            info::global_SearchPlayer1238_clbk global_SearchPlayer1238_user(nullptr);
-            info::global_UpdateNewEconomy1240_ptr global_UpdateNewEconomy1240_next(nullptr);
-            info::global_UpdateNewEconomy1240_clbk global_UpdateNewEconomy1240_user(nullptr);
-            info::global_UpdateRateSendToAllPlayer1242_ptr global_UpdateRateSendToAllPlayer1242_next(nullptr);
-            info::global_UpdateRateSendToAllPlayer1242_clbk global_UpdateRateSendToAllPlayer1242_user(nullptr);
-            info::global__ArrayUnwind1243_ptr global__ArrayUnwind1243_next(nullptr);
-            info::global__ArrayUnwind1243_clbk global__ArrayUnwind1243_user(nullptr);
-            info::global__CxxUnhandledExceptionFilter1244_ptr global__CxxUnhandledExceptionFilter1244_next(nullptr);
-            info::global__CxxUnhandledExceptionFilter1244_clbk global__CxxUnhandledExceptionFilter1244_user(nullptr);
-            info::global__destroy_item1246_ptr global__destroy_item1246_next(nullptr);
-            info::global__destroy_item1246_clbk global__destroy_item1246_user(nullptr);
-            info::global__make_item1248_ptr global__make_item1248_next(nullptr);
-            info::global__make_item1248_clbk global__make_item1248_user(nullptr);
-            info::global__trace1250_ptr global__trace1250_next(nullptr);
-            info::global__trace1250_clbk global__trace1250_user(nullptr);
-            info::global_false1252_ptr global_false1252_next(nullptr);
-            info::global_false1252_clbk global_false1252_user(nullptr);
-            info::global_mbschr1254_ptr global_mbschr1254_next(nullptr);
-            info::global_mbschr1254_clbk global_mbschr1254_user(nullptr);
-            info::global_tcsrchr1256_ptr global_tcsrchr1256_next(nullptr);
-            info::global_tcsrchr1256_clbk global_tcsrchr1256_user(nullptr);
-            info::globalabs1262_ptr globalabs1262_next(nullptr);
-            info::globalabs1262_clbk globalabs1262_user(nullptr);
-            info::globalabs1264_ptr globalabs1264_next(nullptr);
-            info::globalabs1264_clbk globalabs1264_user(nullptr);
-            info::globalacos1266_ptr globalacos1266_next(nullptr);
-            info::globalacos1266_clbk globalacos1266_user(nullptr);
-            info::globalatan21267_ptr globalatan21267_next(nullptr);
-            info::globalatan21267_clbk globalatan21267_user(nullptr);
-            info::globalclear_file1269_ptr globalclear_file1269_next(nullptr);
-            info::globalclear_file1269_clbk globalclear_file1269_user(nullptr);
-            info::globalcos1271_ptr globalcos1271_next(nullptr);
-            info::globalcos1271_clbk globalcos1271_user(nullptr);
-            info::globalct_CashEventStart1273_ptr globalct_CashEventStart1273_next(nullptr);
-            info::globalct_CashEventStart1273_clbk globalct_CashEventStart1273_user(nullptr);
-            info::globalct_CdeEndup1275_ptr globalct_CdeEndup1275_next(nullptr);
-            info::globalct_CdeEndup1275_clbk globalct_CdeEndup1275_user(nullptr);
-            info::globalct_CdeStart1277_ptr globalct_CdeStart1277_next(nullptr);
-            info::globalct_CdeStart1277_clbk globalct_CdeStart1277_user(nullptr);
-            info::globalct_ClassRefineEvent1279_ptr globalct_ClassRefineEvent1279_next(nullptr);
-            info::globalct_ClassRefineEvent1279_clbk globalct_ClassRefineEvent1279_user(nullptr);
-            info::globalct_ClearSettleOwnerGuild1281_ptr globalct_ClearSettleOwnerGuild1281_next(nullptr);
-            info::globalct_ClearSettleOwnerGuild1281_clbk globalct_ClearSettleOwnerGuild1281_user(nullptr);
-            info::globalct_ConEventStart1283_ptr globalct_ConEventStart1283_next(nullptr);
-            info::globalct_ConEventStart1283_clbk globalct_ConEventStart1283_user(nullptr);
-            info::globalct_Gold_Age_Event_Status1285_ptr globalct_Gold_Age_Event_Status1285_next(nullptr);
-            info::globalct_Gold_Age_Event_Status1285_clbk globalct_Gold_Age_Event_Status1285_user(nullptr);
-            info::globalct_Gold_Age_Get_Box_Cnt1287_ptr globalct_Gold_Age_Get_Box_Cnt1287_next(nullptr);
-            info::globalct_Gold_Age_Get_Box_Cnt1287_clbk globalct_Gold_Age_Get_Box_Cnt1287_user(nullptr);
-            info::globalct_Gold_Age_Set_Event_Status1289_ptr globalct_Gold_Age_Set_Event_Status1289_next(nullptr);
-            info::globalct_Gold_Age_Set_Event_Status1289_clbk globalct_Gold_Age_Set_Event_Status1289_user(nullptr);
-            info::globalct_HolyKeeperAttack1291_ptr globalct_HolyKeeperAttack1291_next(nullptr);
-            info::globalct_HolyKeeperAttack1291_clbk globalct_HolyKeeperAttack1291_user(nullptr);
-            info::globalct_HolySystem1293_ptr globalct_HolySystem1293_next(nullptr);
-            info::globalct_HolySystem1293_clbk globalct_HolySystem1293_user(nullptr);
-            info::globalct_HolySystem_Jp1295_ptr globalct_HolySystem_Jp1295_next(nullptr);
-            info::globalct_HolySystem_Jp1295_clbk globalct_HolySystem_Jp1295_user(nullptr);
-            info::globalct_InformCristalBattleBeforeAnHour1297_ptr globalct_InformCristalBattleBeforeAnHour1297_next(nullptr);
-            info::globalct_InformCristalBattleBeforeAnHour1297_clbk globalct_InformCristalBattleBeforeAnHour1297_user(nullptr);
-            info::globalct_InformPatriarchProcessor1299_ptr globalct_InformPatriarchProcessor1299_next(nullptr);
-            info::globalct_InformPatriarchProcessor1299_clbk globalct_InformPatriarchProcessor1299_user(nullptr);
-            info::globalct_NuAfterEffect1301_ptr globalct_NuAfterEffect1301_next(nullptr);
-            info::globalct_NuAfterEffect1301_clbk globalct_NuAfterEffect1301_user(nullptr);
-            info::globalct_PcBandPrimium1303_ptr globalct_PcBandPrimium1303_next(nullptr);
-            info::globalct_PcBandPrimium1303_clbk globalct_PcBandPrimium1303_user(nullptr);
-            info::globalct_PvpLimitInit1305_ptr globalct_PvpLimitInit1305_next(nullptr);
-            info::globalct_PvpLimitInit1305_clbk globalct_PvpLimitInit1305_user(nullptr);
-            info::globalct_ReqChangeHonorGuild1307_ptr globalct_ReqChangeHonorGuild1307_next(nullptr);
-            info::globalct_ReqChangeHonorGuild1307_clbk globalct_ReqChangeHonorGuild1307_user(nullptr);
-            info::globalct_ReqPunishment1309_ptr globalct_ReqPunishment1309_next(nullptr);
-            info::globalct_ReqPunishment1309_clbk globalct_ReqPunishment1309_user(nullptr);
-            info::globalct_SetGuildGrade1311_ptr globalct_SetGuildGrade1311_next(nullptr);
-            info::globalct_SetGuildGrade1311_clbk globalct_SetGuildGrade1311_user(nullptr);
-            info::globalct_SetGuildGradeByGuildSerial1313_ptr globalct_SetGuildGradeByGuildSerial1313_next(nullptr);
-            info::globalct_SetGuildGradeByGuildSerial1313_clbk globalct_SetGuildGradeByGuildSerial1313_user(nullptr);
-            info::globalct_SetGuildGradeByName1315_ptr globalct_SetGuildGradeByName1315_next(nullptr);
-            info::globalct_SetGuildGradeByName1315_clbk globalct_SetGuildGradeByName1315_user(nullptr);
-            info::globalct_SetGuildMaster1317_ptr globalct_SetGuildMaster1317_next(nullptr);
-            info::globalct_SetGuildMaster1317_clbk globalct_SetGuildMaster1317_user(nullptr);
-            info::globalct_SetMaxLevelLimit1319_ptr globalct_SetMaxLevelLimit1319_next(nullptr);
-            info::globalct_SetMaxLevelLimit1319_clbk globalct_SetMaxLevelLimit1319_user(nullptr);
-            info::globalct_SetPatriarchAuto1321_ptr globalct_SetPatriarchAuto1321_next(nullptr);
-            info::globalct_SetPatriarchAuto1321_clbk globalct_SetPatriarchAuto1321_user(nullptr);
-            info::globalct_SetPatriarchClear1323_ptr globalct_SetPatriarchClear1323_next(nullptr);
-            info::globalct_SetPatriarchClear1323_clbk globalct_SetPatriarchClear1323_user(nullptr);
-            info::globalct_SetPatriarchGroup1325_ptr globalct_SetPatriarchGroup1325_next(nullptr);
-            info::globalct_SetPatriarchGroup1325_clbk globalct_SetPatriarchGroup1325_user(nullptr);
-            info::globalct_SetPatriarchProcessor1327_ptr globalct_SetPatriarchProcessor1327_next(nullptr);
-            info::globalct_SetPatriarchProcessor1327_clbk globalct_SetPatriarchProcessor1327_user(nullptr);
-            info::globalct_SetSettleOwnerGuild1329_ptr globalct_SetSettleOwnerGuild1329_next(nullptr);
-            info::globalct_SetSettleOwnerGuild1329_clbk globalct_SetSettleOwnerGuild1329_user(nullptr);
-            info::globalct_Win_RaceWar1331_ptr globalct_Win_RaceWar1331_next(nullptr);
-            info::globalct_Win_RaceWar1331_clbk globalct_Win_RaceWar1331_user(nullptr);
-            info::globalct_action_point_set1333_ptr globalct_action_point_set1333_next(nullptr);
-            info::globalct_action_point_set1333_clbk globalct_action_point_set1333_user(nullptr);
-            info::globalct_add_guild_schedule1335_ptr globalct_add_guild_schedule1335_next(nullptr);
-            info::globalct_add_guild_schedule1335_clbk globalct_add_guild_schedule1335_user(nullptr);
-            info::globalct_add_one_day_guild_schedule1337_ptr globalct_add_one_day_guild_schedule1337_next(nullptr);
-            info::globalct_add_one_day_guild_schedule1337_clbk globalct_add_one_day_guild_schedule1337_user(nullptr);
-            info::globalct_all_item_muzi1339_ptr globalct_all_item_muzi1339_next(nullptr);
-            info::globalct_all_item_muzi1339_clbk globalct_all_item_muzi1339_user(nullptr);
-            info::globalct_all_map1341_ptr globalct_all_map1341_next(nullptr);
-            info::globalct_all_map1341_clbk globalct_all_map1341_user(nullptr);
-            info::globalct_alter_cashbag1343_ptr globalct_alter_cashbag1343_next(nullptr);
-            info::globalct_alter_cashbag1343_clbk globalct_alter_cashbag1343_user(nullptr);
-            info::globalct_alter_dalant1345_ptr globalct_alter_dalant1345_next(nullptr);
-            info::globalct_alter_dalant1345_clbk globalct_alter_dalant1345_user(nullptr);
-            info::globalct_alter_exp1347_ptr globalct_alter_exp1347_next(nullptr);
-            info::globalct_alter_exp1347_clbk globalct_alter_exp1347_user(nullptr);
-            info::globalct_alter_gold1349_ptr globalct_alter_gold1349_next(nullptr);
-            info::globalct_alter_gold1349_clbk globalct_alter_gold1349_user(nullptr);
-            info::globalct_alter_inven_dur1351_ptr globalct_alter_inven_dur1351_next(nullptr);
-            info::globalct_alter_inven_dur1351_clbk globalct_alter_inven_dur1351_user(nullptr);
-            info::globalct_alter_lv1353_ptr globalct_alter_lv1353_next(nullptr);
-            info::globalct_alter_lv1353_clbk globalct_alter_lv1353_user(nullptr);
-            info::globalct_alter_pvp1355_ptr globalct_alter_pvp1355_next(nullptr);
-            info::globalct_alter_pvp1355_clbk globalct_alter_pvp1355_user(nullptr);
-            info::globalct_amp_full1357_ptr globalct_amp_full1357_next(nullptr);
-            info::globalct_amp_full1357_clbk globalct_amp_full1357_user(nullptr);
-            info::globalct_amp_set1359_ptr globalct_amp_set1359_next(nullptr);
-            info::globalct_amp_set1359_clbk globalct_amp_set1359_user(nullptr);
-            info::globalct_animus_attack_grade1361_ptr globalct_animus_attack_grade1361_next(nullptr);
-            info::globalct_animus_attack_grade1361_clbk globalct_animus_attack_grade1361_user(nullptr);
-            info::globalct_animus_recall_term1363_ptr globalct_animus_recall_term1363_next(nullptr);
-            info::globalct_animus_recall_term1363_clbk globalct_animus_recall_term1363_user(nullptr);
-            info::globalct_animusexp1365_ptr globalct_animusexp1365_next(nullptr);
-            info::globalct_animusexp1365_clbk globalct_animusexp1365_user(nullptr);
-            info::globalct_basemastery1367_ptr globalct_basemastery1367_next(nullptr);
-            info::globalct_basemastery1367_clbk globalct_basemastery1367_user(nullptr);
-            info::globalct_boss_sms_cancel1369_ptr globalct_boss_sms_cancel1369_next(nullptr);
-            info::globalct_boss_sms_cancel1369_clbk globalct_boss_sms_cancel1369_user(nullptr);
-            info::globalct_buf_potion_use1371_ptr globalct_buf_potion_use1371_next(nullptr);
-            info::globalct_buf_potion_use1371_clbk globalct_buf_potion_use1371_user(nullptr);
-            info::globalct_cashitembuy1373_ptr globalct_cashitembuy1373_next(nullptr);
-            info::globalct_cashitembuy1373_clbk globalct_cashitembuy1373_user(nullptr);
-            info::globalct_change_class1375_ptr globalct_change_class1375_next(nullptr);
-            info::globalct_change_class1375_clbk globalct_change_class1375_user(nullptr);
-            info::globalct_change_degree1377_ptr globalct_change_degree1377_next(nullptr);
-            info::globalct_change_degree1377_clbk globalct_change_degree1377_user(nullptr);
-            info::globalct_change_master_elect1379_ptr globalct_change_master_elect1379_next(nullptr);
-            info::globalct_change_master_elect1379_clbk globalct_change_master_elect1379_user(nullptr);
-            info::globalct_change_mastery1381_ptr globalct_change_mastery1381_next(nullptr);
-            info::globalct_change_mastery1381_clbk globalct_change_mastery1381_user(nullptr);
-            info::globalct_chatsave1383_ptr globalct_chatsave1383_next(nullptr);
-            info::globalct_chatsave1383_clbk globalct_chatsave1383_user(nullptr);
-            info::globalct_check_guild_batlle_goal1385_ptr globalct_check_guild_batlle_goal1385_next(nullptr);
-            info::globalct_check_guild_batlle_goal1385_clbk globalct_check_guild_batlle_goal1385_user(nullptr);
-            info::globalct_circle_mon_kill1387_ptr globalct_circle_mon_kill1387_next(nullptr);
-            info::globalct_circle_mon_kill1387_clbk globalct_circle_mon_kill1387_user(nullptr);
-            info::globalct_circle_user_num1389_ptr globalct_circle_user_num1389_next(nullptr);
-            info::globalct_circle_user_num1389_clbk globalct_circle_user_num1389_user(nullptr);
-            info::globalct_combine_ex_result1391_ptr globalct_combine_ex_result1391_next(nullptr);
-            info::globalct_combine_ex_result1391_clbk globalct_combine_ex_result1391_user(nullptr);
-            info::globalct_complete_quest1393_ptr globalct_complete_quest1393_next(nullptr);
-            info::globalct_complete_quest1393_clbk globalct_complete_quest1393_user(nullptr);
-            info::globalct_complete_quest_other1395_ptr globalct_complete_quest_other1395_next(nullptr);
-            info::globalct_complete_quest_other1395_clbk globalct_complete_quest_other1395_user(nullptr);
-            info::globalct_cont_effet_clear1397_ptr globalct_cont_effet_clear1397_next(nullptr);
-            info::globalct_cont_effet_clear1397_clbk globalct_cont_effet_clear1397_user(nullptr);
-            info::globalct_cont_effet_time1399_ptr globalct_cont_effet_time1399_next(nullptr);
-            info::globalct_cont_effet_time1399_clbk globalct_cont_effet_time1399_user(nullptr);
-            info::globalct_continue_palytime_inc1401_ptr globalct_continue_palytime_inc1401_next(nullptr);
-            info::globalct_continue_palytime_inc1401_clbk globalct_continue_palytime_inc1401_user(nullptr);
-            info::globalct_copy_avator1403_ptr globalct_copy_avator1403_next(nullptr);
-            info::globalct_copy_avator1403_clbk globalct_copy_avator1403_user(nullptr);
-            info::globalct_create_guildbattle_field_object1405_ptr globalct_create_guildbattle_field_object1405_next(nullptr);
-            info::globalct_create_guildbattle_field_object1405_clbk globalct_create_guildbattle_field_object1405_user(nullptr);
-            info::globalct_cur_guildbattle_color1407_ptr globalct_cur_guildbattle_color1407_next(nullptr);
-            info::globalct_cur_guildbattle_color1407_clbk globalct_cur_guildbattle_color1407_user(nullptr);
-            info::globalct_darkholereward1409_ptr globalct_darkholereward1409_next(nullptr);
-            info::globalct_darkholereward1409_clbk globalct_darkholereward1409_user(nullptr);
-            info::globalct_defense_item_grace1411_ptr globalct_defense_item_grace1411_next(nullptr);
-            info::globalct_defense_item_grace1411_clbk globalct_defense_item_grace1411_user(nullptr);
-            info::globalct_defense_item_grace_Jp1413_ptr globalct_defense_item_grace_Jp1413_next(nullptr);
-            info::globalct_defense_item_grace_Jp1413_clbk globalct_defense_item_grace_Jp1413_user(nullptr);
-            info::globalct_destroy_gravitystone1415_ptr globalct_destroy_gravitystone1415_next(nullptr);
-            info::globalct_destroy_gravitystone1415_clbk globalct_destroy_gravitystone1415_user(nullptr);
-            info::globalct_destroy_guildbattle_field_object1417_ptr globalct_destroy_guildbattle_field_object1417_next(nullptr);
-            info::globalct_destroy_guildbattle_field_object1417_clbk globalct_destroy_guildbattle_field_object1417_user(nullptr);
-            info::globalct_destroy_system_tower1419_ptr globalct_destroy_system_tower1419_next(nullptr);
-            info::globalct_destroy_system_tower1419_clbk globalct_destroy_system_tower1419_user(nullptr);
-            info::globalct_die1421_ptr globalct_die1421_next(nullptr);
-            info::globalct_die1421_clbk globalct_die1421_user(nullptr);
-            info::globalct_drop_gravitystone1423_ptr globalct_drop_gravitystone1423_next(nullptr);
-            info::globalct_drop_gravitystone1423_clbk globalct_drop_gravitystone1423_user(nullptr);
-            info::globalct_drop_jade1425_ptr globalct_drop_jade1425_next(nullptr);
-            info::globalct_drop_jade1425_clbk globalct_drop_jade1425_user(nullptr);
-            info::globalct_elect_info_player1427_ptr globalct_elect_info_player1427_next(nullptr);
-            info::globalct_elect_info_player1427_clbk globalct_elect_info_player1427_user(nullptr);
-            info::globalct_elect_set_env1429_ptr globalct_elect_set_env1429_next(nullptr);
-            info::globalct_elect_set_env1429_clbk globalct_elect_set_env1429_user(nullptr);
-            info::globalct_elect_set_player1431_ptr globalct_elect_set_player1431_next(nullptr);
-            info::globalct_elect_set_player1431_clbk globalct_elect_set_player1431_user(nullptr);
-            info::globalct_eventset_start1433_ptr globalct_eventset_start1433_next(nullptr);
-            info::globalct_eventset_start1433_clbk globalct_eventset_start1433_user(nullptr);
-            info::globalct_eventset_stop1435_ptr globalct_eventset_stop1435_next(nullptr);
-            info::globalct_eventset_stop1435_clbk globalct_eventset_stop1435_user(nullptr);
-            info::globalct_exception1437_ptr globalct_exception1437_next(nullptr);
-            info::globalct_exception1437_clbk globalct_exception1437_user(nullptr);
-            info::globalct_exip_keeper1439_ptr globalct_exip_keeper1439_next(nullptr);
-            info::globalct_exip_keeper1439_clbk globalct_exip_keeper1439_user(nullptr);
-            info::globalct_exit_stone1441_ptr globalct_exit_stone1441_next(nullptr);
-            info::globalct_exit_stone1441_clbk globalct_exit_stone1441_user(nullptr);
-            info::globalct_expire_pcbang1443_ptr globalct_expire_pcbang1443_next(nullptr);
-            info::globalct_expire_pcbang1443_clbk globalct_expire_pcbang1443_user(nullptr);
-            info::globalct_free_ride_ship1445_ptr globalct_free_ride_ship1445_next(nullptr);
-            info::globalct_free_ride_ship1445_clbk globalct_free_ride_ship1445_user(nullptr);
-            info::globalct_free_sf_by_class1447_ptr globalct_free_sf_by_class1447_next(nullptr);
-            info::globalct_free_sf_by_class1447_clbk globalct_free_sf_by_class1447_user(nullptr);
-            info::globalct_full_animus_gauge1449_ptr globalct_full_animus_gauge1449_next(nullptr);
-            info::globalct_full_animus_gauge1449_clbk globalct_full_animus_gauge1449_user(nullptr);
-            info::globalct_full_force1451_ptr globalct_full_force1451_next(nullptr);
-            info::globalct_full_force1451_clbk globalct_full_force1451_user(nullptr);
-            info::globalct_full_gauge1453_ptr globalct_full_gauge1453_next(nullptr);
-            info::globalct_full_gauge1453_clbk globalct_full_gauge1453_user(nullptr);
-            info::globalct_fullset1455_ptr globalct_fullset1455_next(nullptr);
-            info::globalct_fullset1455_clbk globalct_fullset1455_user(nullptr);
-            info::globalct_get_gravitystone1457_ptr globalct_get_gravitystone1457_next(nullptr);
-            info::globalct_get_gravitystone1457_clbk globalct_get_gravitystone1457_user(nullptr);
-            info::globalct_goto_char1459_ptr globalct_goto_char1459_next(nullptr);
-            info::globalct_goto_char1459_clbk globalct_goto_char1459_user(nullptr);
-            info::globalct_goto_mine1461_ptr globalct_goto_mine1461_next(nullptr);
-            info::globalct_goto_mine1461_clbk globalct_goto_mine1461_user(nullptr);
-            info::globalct_goto_monster1463_ptr globalct_goto_monster1463_next(nullptr);
-            info::globalct_goto_monster1463_clbk globalct_goto_monster1463_user(nullptr);
-            info::globalct_goto_npc1465_ptr globalct_goto_npc1465_next(nullptr);
-            info::globalct_goto_npc1465_clbk globalct_goto_npc1465_user(nullptr);
-            info::globalct_goto_shipport_eder1467_ptr globalct_goto_shipport_eder1467_next(nullptr);
-            info::globalct_goto_shipport_eder1467_clbk globalct_goto_shipport_eder1467_user(nullptr);
-            info::globalct_goto_shipport_town1469_ptr globalct_goto_shipport_town1469_next(nullptr);
-            info::globalct_goto_shipport_town1469_clbk globalct_goto_shipport_town1469_user(nullptr);
-            info::globalct_goto_stone1471_ptr globalct_goto_stone1471_next(nullptr);
-            info::globalct_goto_stone1471_clbk globalct_goto_stone1471_user(nullptr);
-            info::globalct_guild_battle_force_stone1473_ptr globalct_guild_battle_force_stone1473_next(nullptr);
-            info::globalct_guild_battle_force_stone1473_clbk globalct_guild_battle_force_stone1473_user(nullptr);
-            info::globalct_guild_call1475_ptr globalct_guild_call1475_next(nullptr);
-            info::globalct_guild_call1475_clbk globalct_guild_call1475_user(nullptr);
-            info::globalct_guild_info1477_ptr globalct_guild_info1477_next(nullptr);
-            info::globalct_guild_info1477_clbk globalct_guild_info1477_user(nullptr);
-            info::globalct_guild_suggest1479_ptr globalct_guild_suggest1479_next(nullptr);
-            info::globalct_guild_suggest1479_clbk globalct_guild_suggest1479_user(nullptr);
-            info::globalct_half_gauge1481_ptr globalct_half_gauge1481_next(nullptr);
-            info::globalct_half_gauge1481_clbk globalct_half_gauge1481_user(nullptr);
-            info::globalct_init_monster1483_ptr globalct_init_monster1483_next(nullptr);
-            info::globalct_init_monster1483_clbk globalct_init_monster1483_user(nullptr);
-            info::globalct_inven_empty1485_ptr globalct_inven_empty1485_next(nullptr);
-            info::globalct_inven_empty1485_clbk globalct_inven_empty1485_user(nullptr);
-            info::globalct_itemloot1487_ptr globalct_itemloot1487_next(nullptr);
-            info::globalct_itemloot1487_clbk globalct_itemloot1487_user(nullptr);
-            info::globalct_jump_to_pos1489_ptr globalct_jump_to_pos1489_next(nullptr);
-            info::globalct_jump_to_pos1489_clbk globalct_jump_to_pos1489_user(nullptr);
-            info::globalct_kick_player1491_ptr globalct_kick_player1491_next(nullptr);
-            info::globalct_kick_player1491_clbk globalct_kick_player1491_user(nullptr);
-            info::globalct_loadcashamount1493_ptr globalct_loadcashamount1493_next(nullptr);
-            info::globalct_loadcashamount1493_clbk globalct_loadcashamount1493_user(nullptr);
-            info::globalct_look_like_boss1495_ptr globalct_look_like_boss1495_next(nullptr);
-            info::globalct_look_like_boss1495_clbk globalct_look_like_boss1495_user(nullptr);
-            info::globalct_loot_bag1497_ptr globalct_loot_bag1497_next(nullptr);
-            info::globalct_loot_bag1497_clbk globalct_loot_bag1497_user(nullptr);
-            info::globalct_loot_dungeon1499_ptr globalct_loot_dungeon1499_next(nullptr);
-            info::globalct_loot_dungeon1499_clbk globalct_loot_dungeon1499_user(nullptr);
-            info::globalct_loot_item1501_ptr globalct_loot_item1501_next(nullptr);
-            info::globalct_loot_item1501_clbk globalct_loot_item1501_user(nullptr);
-            info::globalct_loot_material1503_ptr globalct_loot_material1503_next(nullptr);
-            info::globalct_loot_material1503_clbk globalct_loot_material1503_user(nullptr);
-            info::globalct_loot_mine1505_ptr globalct_loot_mine1505_next(nullptr);
-            info::globalct_loot_mine1505_clbk globalct_loot_mine1505_user(nullptr);
-            info::globalct_loot_tower1507_ptr globalct_loot_tower1507_next(nullptr);
-            info::globalct_loot_tower1507_clbk globalct_loot_tower1507_user(nullptr);
-            info::globalct_loot_upgrade1509_ptr globalct_loot_upgrade1509_next(nullptr);
-            info::globalct_loot_upgrade1509_clbk globalct_loot_upgrade1509_user(nullptr);
-            info::globalct_loot_upgrade_item1511_ptr globalct_loot_upgrade_item1511_next(nullptr);
-            info::globalct_loot_upgrade_item1511_clbk globalct_loot_upgrade_item1511_user(nullptr);
-            info::globalct_lua_command1513_ptr globalct_lua_command1513_next(nullptr);
-            info::globalct_lua_command1513_clbk globalct_lua_command1513_user(nullptr);
-            info::globalct_make_system_tower1515_ptr globalct_make_system_tower1515_next(nullptr);
-            info::globalct_make_system_tower1515_clbk globalct_make_system_tower1515_user(nullptr);
-            info::globalct_makeitem_need_matrial1517_ptr globalct_makeitem_need_matrial1517_next(nullptr);
-            info::globalct_makeitem_need_matrial1517_clbk globalct_makeitem_need_matrial1517_user(nullptr);
-            info::globalct_makeitem_no_matrial1519_ptr globalct_makeitem_no_matrial1519_next(nullptr);
-            info::globalct_makeitem_no_matrial1519_clbk globalct_makeitem_no_matrial1519_user(nullptr);
-            info::globalct_manage_guild1521_ptr globalct_manage_guild1521_next(nullptr);
-            info::globalct_manage_guild1521_clbk globalct_manage_guild1521_user(nullptr);
-            info::globalct_max_attack1523_ptr globalct_max_attack1523_next(nullptr);
-            info::globalct_max_attack1523_clbk globalct_max_attack1523_user(nullptr);
-            info::globalct_mepcbang1525_ptr globalct_mepcbang1525_next(nullptr);
-            info::globalct_mepcbang1525_clbk globalct_mepcbang1525_user(nullptr);
-            info::globalct_min_attack1527_ptr globalct_min_attack1527_next(nullptr);
-            info::globalct_min_attack1527_clbk globalct_min_attack1527_user(nullptr);
-            info::globalct_minespeed1529_ptr globalct_minespeed1529_next(nullptr);
-            info::globalct_minespeed1529_clbk globalct_minespeed1529_user(nullptr);
-            info::globalct_mormal_attack1531_ptr globalct_mormal_attack1531_next(nullptr);
-            info::globalct_mormal_attack1531_clbk globalct_mormal_attack1531_user(nullptr);
-            info::globalct_party_call1533_ptr globalct_party_call1533_next(nullptr);
-            info::globalct_party_call1533_clbk globalct_party_call1533_user(nullptr);
-            info::globalct_pass_dungeon1535_ptr globalct_pass_dungeon1535_next(nullptr);
-            info::globalct_pass_dungeon1535_clbk globalct_pass_dungeon1535_user(nullptr);
-            info::globalct_pass_sch1537_ptr globalct_pass_sch1537_next(nullptr);
-            info::globalct_pass_sch1537_clbk globalct_pass_sch1537_user(nullptr);
-            info::globalct_pcanimusexp1539_ptr globalct_pcanimusexp1539_next(nullptr);
-            info::globalct_pcanimusexp1539_clbk globalct_pcanimusexp1539_user(nullptr);
-            info::globalct_pcbangitemget1541_ptr globalct_pcbangitemget1541_next(nullptr);
-            info::globalct_pcbangitemget1541_clbk globalct_pcbangitemget1541_user(nullptr);
-            info::globalct_pcbasemastery1543_ptr globalct_pcbasemastery1543_next(nullptr);
-            info::globalct_pcbasemastery1543_clbk globalct_pcbasemastery1543_user(nullptr);
-            info::globalct_pcitemloot1545_ptr globalct_pcitemloot1545_next(nullptr);
-            info::globalct_pcitemloot1545_clbk globalct_pcitemloot1545_user(nullptr);
-            info::globalct_pcminespeed1547_ptr globalct_pcminespeed1547_next(nullptr);
-            info::globalct_pcminespeed1547_clbk globalct_pcminespeed1547_user(nullptr);
-            info::globalct_pcplayerexp1549_ptr globalct_pcplayerexp1549_next(nullptr);
-            info::globalct_pcplayerexp1549_clbk globalct_pcplayerexp1549_user(nullptr);
-            info::globalct_pcroom_premium1551_ptr globalct_pcroom_premium1551_next(nullptr);
-            info::globalct_pcroom_premium1551_clbk globalct_pcroom_premium1551_user(nullptr);
-            info::globalct_pcsfmastery1553_ptr globalct_pcsfmastery1553_next(nullptr);
-            info::globalct_pcsfmastery1553_clbk globalct_pcsfmastery1553_user(nullptr);
-            info::globalct_period_time_set1555_ptr globalct_period_time_set1555_next(nullptr);
-            info::globalct_period_time_set1555_clbk globalct_period_time_set1555_user(nullptr);
-            info::globalct_playerexp1557_ptr globalct_playerexp1557_next(nullptr);
-            info::globalct_playerexp1557_clbk globalct_playerexp1557_user(nullptr);
-            info::globalct_premium_rate1559_ptr globalct_premium_rate1559_next(nullptr);
-            info::globalct_premium_rate1559_clbk globalct_premium_rate1559_user(nullptr);
-            info::globalct_query_remain_ore1561_ptr globalct_query_remain_ore1561_next(nullptr);
-            info::globalct_query_remain_ore1561_clbk globalct_query_remain_ore1561_user(nullptr);
-            info::globalct_recall_monster1563_ptr globalct_recall_monster1563_next(nullptr);
-            info::globalct_recall_monster1563_clbk globalct_recall_monster1563_user(nullptr);
-            info::globalct_recall_player1565_ptr globalct_recall_player1565_next(nullptr);
-            info::globalct_recall_player1565_clbk globalct_recall_player1565_user(nullptr);
-            info::globalct_recv_change_atrad_taxrate1567_ptr globalct_recv_change_atrad_taxrate1567_next(nullptr);
-            info::globalct_recv_change_atrad_taxrate1567_clbk globalct_recv_change_atrad_taxrate1567_user(nullptr);
-            info::globalct_recv_current_battle_info1569_ptr globalct_recv_current_battle_info1569_next(nullptr);
-            info::globalct_recv_current_battle_info1569_clbk globalct_recv_current_battle_info1569_user(nullptr);
-            info::globalct_recv_pvp_guild_rank1571_ptr globalct_recv_pvp_guild_rank1571_next(nullptr);
-            info::globalct_recv_pvp_guild_rank1571_clbk globalct_recv_pvp_guild_rank1571_user(nullptr);
-            info::globalct_recv_reserved_schedulelist1573_ptr globalct_recv_reserved_schedulelist1573_next(nullptr);
-            info::globalct_recv_reserved_schedulelist1573_clbk globalct_recv_reserved_schedulelist1573_user(nullptr);
-            info::globalct_recv_total_guild_rank1575_ptr globalct_recv_total_guild_rank1575_next(nullptr);
-            info::globalct_recv_total_guild_rank1575_clbk globalct_recv_total_guild_rank1575_user(nullptr);
-            info::globalct_regen_gravitystone1577_ptr globalct_regen_gravitystone1577_next(nullptr);
-            info::globalct_regen_gravitystone1577_clbk globalct_regen_gravitystone1577_user(nullptr);
-            info::globalct_release_loot_free1579_ptr globalct_release_loot_free1579_next(nullptr);
-            info::globalct_release_loot_free1579_clbk globalct_release_loot_free1579_user(nullptr);
-            info::globalct_release_make_succ1581_ptr globalct_release_make_succ1581_next(nullptr);
-            info::globalct_release_make_succ1581_clbk globalct_release_make_succ1581_user(nullptr);
-            info::globalct_release_matchless1583_ptr globalct_release_matchless1583_next(nullptr);
-            info::globalct_release_matchless1583_clbk globalct_release_matchless1583_user(nullptr);
-            info::globalct_release_never_die1585_ptr globalct_release_never_die1585_next(nullptr);
-            info::globalct_release_never_die1585_clbk globalct_release_never_die1585_user(nullptr);
-            info::globalct_release_punishment1587_ptr globalct_release_punishment1587_next(nullptr);
-            info::globalct_release_punishment1587_clbk globalct_release_punishment1587_user(nullptr);
-            info::globalct_remove_sf_delay1589_ptr globalct_remove_sf_delay1589_next(nullptr);
-            info::globalct_remove_sf_delay1589_clbk globalct_remove_sf_delay1589_user(nullptr);
-            info::globalct_report_cri_hp1591_ptr globalct_report_cri_hp1591_next(nullptr);
-            info::globalct_report_cri_hp1591_clbk globalct_report_cri_hp1591_user(nullptr);
-            info::globalct_report_position1593_ptr globalct_report_position1593_next(nullptr);
-            info::globalct_report_position1593_clbk globalct_report_position1593_user(nullptr);
-            info::globalct_request_delete_quest1595_ptr globalct_request_delete_quest1595_next(nullptr);
-            info::globalct_request_delete_quest1595_clbk globalct_request_delete_quest1595_user(nullptr);
-            info::globalct_request_npc_quest1597_ptr globalct_request_npc_quest1597_next(nullptr);
-            info::globalct_request_npc_quest1597_clbk globalct_request_npc_quest1597_user(nullptr);
-            info::globalct_respawn_start1599_ptr globalct_respawn_start1599_next(nullptr);
-            info::globalct_respawn_start1599_clbk globalct_respawn_start1599_user(nullptr);
-            info::globalct_respawn_stop1601_ptr globalct_respawn_stop1601_next(nullptr);
-            info::globalct_respawn_stop1601_clbk globalct_respawn_stop1601_user(nullptr);
-            info::globalct_resurrect_player1603_ptr globalct_resurrect_player1603_next(nullptr);
-            info::globalct_resurrect_player1603_clbk globalct_resurrect_player1603_user(nullptr);
-            info::globalct_server_rate1605_ptr globalct_server_rate1605_next(nullptr);
-            info::globalct_server_rate1605_clbk globalct_server_rate1605_user(nullptr);
-            info::globalct_server_time1607_ptr globalct_server_time1607_next(nullptr);
-            info::globalct_server_time1607_clbk globalct_server_time1607_user(nullptr);
-            info::globalct_set_animus_exp1609_ptr globalct_set_animus_exp1609_next(nullptr);
-            info::globalct_set_animus_exp1609_clbk globalct_set_animus_exp1609_user(nullptr);
-            info::globalct_set_animus_lv1611_ptr globalct_set_animus_lv1611_next(nullptr);
-            info::globalct_set_animus_lv1611_clbk globalct_set_animus_lv1611_user(nullptr);
-            info::globalct_set_damage_part1613_ptr globalct_set_damage_part1613_next(nullptr);
-            info::globalct_set_damage_part1613_clbk globalct_set_damage_part1613_user(nullptr);
-            info::globalct_set_exp_rate1615_ptr globalct_set_exp_rate1615_next(nullptr);
-            info::globalct_set_exp_rate1615_clbk globalct_set_exp_rate1615_user(nullptr);
-            info::globalct_set_guildbattle_color1617_ptr globalct_set_guildbattle_color1617_next(nullptr);
-            info::globalct_set_guildbattle_color1617_clbk globalct_set_guildbattle_color1617_user(nullptr);
-            info::globalct_set_hfs_full1619_ptr globalct_set_hfs_full1619_next(nullptr);
-            info::globalct_set_hfs_full1619_clbk globalct_set_hfs_full1619_user(nullptr);
-            info::globalct_set_hp1621_ptr globalct_set_hp1621_next(nullptr);
-            info::globalct_set_hp1621_clbk globalct_set_hp1621_user(nullptr);
-            info::globalct_set_jade_effect1623_ptr globalct_set_jade_effect1623_next(nullptr);
-            info::globalct_set_jade_effect1623_clbk globalct_set_jade_effect1623_user(nullptr);
-            info::globalct_set_kill_list_init1625_ptr globalct_set_kill_list_init1625_next(nullptr);
-            info::globalct_set_kill_list_init1625_clbk globalct_set_kill_list_init1625_user(nullptr);
-            info::globalct_set_loot_free1627_ptr globalct_set_loot_free1627_next(nullptr);
-            info::globalct_set_loot_free1627_clbk globalct_set_loot_free1627_user(nullptr);
-            info::globalct_set_make_succ1629_ptr globalct_set_make_succ1629_next(nullptr);
-            info::globalct_set_make_succ1629_clbk globalct_set_make_succ1629_user(nullptr);
-            info::globalct_set_matchless1631_ptr globalct_set_matchless1631_next(nullptr);
-            info::globalct_set_matchless1631_clbk globalct_set_matchless1631_user(nullptr);
-            info::globalct_set_never_die1633_ptr globalct_set_never_die1633_next(nullptr);
-            info::globalct_set_never_die1633_clbk globalct_set_never_die1633_user(nullptr);
-            info::globalct_set_ore_amount1635_ptr globalct_set_ore_amount1635_next(nullptr);
-            info::globalct_set_ore_amount1635_clbk globalct_set_ore_amount1635_user(nullptr);
-            info::globalct_set_temp_cash_point1637_ptr globalct_set_temp_cash_point1637_next(nullptr);
-            info::globalct_set_temp_cash_point1637_clbk globalct_set_temp_cash_point1637_user(nullptr);
-            info::globalct_sfmastery1639_ptr globalct_sfmastery1639_next(nullptr);
-            info::globalct_sfmastery1639_clbk globalct_sfmastery1639_user(nullptr);
-            info::globalct_start_cri1641_ptr globalct_start_cri1641_next(nullptr);
-            info::globalct_start_cri1641_clbk globalct_start_cri1641_user(nullptr);
-            info::globalct_start_keeper1643_ptr globalct_start_keeper1643_next(nullptr);
-            info::globalct_start_keeper1643_clbk globalct_start_keeper1643_user(nullptr);
-            info::globalct_take_gravitystone1645_ptr globalct_take_gravitystone1645_next(nullptr);
-            info::globalct_take_gravitystone1645_clbk globalct_take_gravitystone1645_user(nullptr);
-            info::globalct_takeholymental1647_ptr globalct_takeholymental1647_next(nullptr);
-            info::globalct_takeholymental1647_clbk globalct_takeholymental1647_user(nullptr);
-            info::globalct_telekinesis1649_ptr globalct_telekinesis1649_next(nullptr);
-            info::globalct_telekinesis1649_clbk globalct_telekinesis1649_user(nullptr);
-            info::globalct_tl_info_set1651_ptr globalct_tl_info_set1651_next(nullptr);
-            info::globalct_tl_info_set1651_clbk globalct_tl_info_set1651_user(nullptr);
-            info::globalct_tl_info_view1653_ptr globalct_tl_info_view1653_next(nullptr);
-            info::globalct_tl_info_view1653_clbk globalct_tl_info_view1653_user(nullptr);
-            info::globalct_tl_system_setting1655_ptr globalct_tl_system_setting1655_next(nullptr);
-            info::globalct_tl_system_setting1655_clbk globalct_tl_system_setting1655_user(nullptr);
-            info::globalct_tracing_hide1657_ptr globalct_tracing_hide1657_next(nullptr);
-            info::globalct_tracing_hide1657_clbk globalct_tracing_hide1657_user(nullptr);
-            info::globalct_tracing_show1659_ptr globalct_tracing_show1659_next(nullptr);
-            info::globalct_tracing_show1659_clbk globalct_tracing_show1659_user(nullptr);
-            info::globalct_trap_attack_grade1661_ptr globalct_trap_attack_grade1661_next(nullptr);
-            info::globalct_trap_attack_grade1661_clbk globalct_trap_attack_grade1661_user(nullptr);
-            info::globalct_trunk_init1663_ptr globalct_trunk_init1663_next(nullptr);
-            info::globalct_trunk_init1663_clbk globalct_trunk_init1663_user(nullptr);
-            info::globalct_up_allskill1665_ptr globalct_up_allskill1665_next(nullptr);
-            info::globalct_up_allskill1665_clbk globalct_up_allskill1665_user(nullptr);
-            info::globalct_up_allskill_pt1667_ptr globalct_up_allskill_pt1667_next(nullptr);
-            info::globalct_up_allskill_pt1667_clbk globalct_up_allskill_pt1667_user(nullptr);
-            info::globalct_up_forceitem1669_ptr globalct_up_forceitem1669_next(nullptr);
-            info::globalct_up_forceitem1669_clbk globalct_up_forceitem1669_user(nullptr);
-            info::globalct_up_forcemastery1671_ptr globalct_up_forcemastery1671_next(nullptr);
-            info::globalct_up_forcemastery1671_clbk globalct_up_forcemastery1671_user(nullptr);
-            info::globalct_up_skill1673_ptr globalct_up_skill1673_next(nullptr);
-            info::globalct_up_skill1673_clbk globalct_up_skill1673_user(nullptr);
-            info::globalct_user_num1675_ptr globalct_user_num1675_next(nullptr);
-            info::globalct_user_num1675_clbk globalct_user_num1675_user(nullptr);
-            info::globalct_userchatban1677_ptr globalct_userchatban1677_next(nullptr);
-            info::globalct_userchatban1677_clbk globalct_userchatban1677_user(nullptr);
-            info::globalct_ut_cancel_regist1679_ptr globalct_ut_cancel_regist1679_next(nullptr);
-            info::globalct_ut_cancel_regist1679_clbk globalct_ut_cancel_regist1679_user(nullptr);
-            info::globalct_ut_cancel_registlogout1681_ptr globalct_ut_cancel_registlogout1681_next(nullptr);
-            info::globalct_ut_cancel_registlogout1681_clbk globalct_ut_cancel_registlogout1681_user(nullptr);
-            info::globalct_view_method1683_ptr globalct_view_method1683_next(nullptr);
-            info::globalct_view_method1683_clbk globalct_view_method1683_user(nullptr);
-            info::globalct_vote_enable1685_ptr globalct_vote_enable1685_next(nullptr);
-            info::globalct_vote_enable1685_clbk globalct_vote_enable1685_user(nullptr);
-            info::globalct_whoami1687_ptr globalct_whoami1687_next(nullptr);
-            info::globalct_whoami1687_clbk globalct_whoami1687_user(nullptr);
-            info::globalcvt_string1689_ptr globalcvt_string1689_next(nullptr);
-            info::globalcvt_string1689_clbk globalcvt_string1689_user(nullptr);
-            info::globaleAddCutOre1691_ptr globaleAddCutOre1691_next(nullptr);
-            info::globaleAddCutOre1691_clbk globaleAddCutOre1691_user(nullptr);
-            info::globaleAddDalant1693_ptr globaleAddDalant1693_next(nullptr);
-            info::globaleAddDalant1693_clbk globaleAddDalant1693_user(nullptr);
-            info::globaleAddGold1695_ptr globaleAddGold1695_next(nullptr);
-            info::globaleAddGold1695_clbk globaleAddGold1695_user(nullptr);
-            info::globaleAddMineOre1697_ptr globaleAddMineOre1697_next(nullptr);
-            info::globaleAddMineOre1697_clbk globaleAddMineOre1697_user(nullptr);
-            info::globaleGetCutOre1699_ptr globaleGetCutOre1699_next(nullptr);
-            info::globaleGetCutOre1699_clbk globaleGetCutOre1699_user(nullptr);
-            info::globaleGetDalant1701_ptr globaleGetDalant1701_next(nullptr);
-            info::globaleGetDalant1701_clbk globaleGetDalant1701_user(nullptr);
-            info::globaleGetGold1703_ptr globaleGetGold1703_next(nullptr);
-            info::globaleGetGold1703_clbk globaleGetGold1703_user(nullptr);
-            info::globaleGetGuide1705_ptr globaleGetGuide1705_next(nullptr);
-            info::globaleGetGuide1705_clbk globaleGetGuide1705_user(nullptr);
-            info::globaleGetGuideHistory1707_ptr globaleGetGuideHistory1707_next(nullptr);
-            info::globaleGetGuideHistory1707_clbk globaleGetGuideHistory1707_user(nullptr);
-            info::globaleGetLocalDate1709_ptr globaleGetLocalDate1709_next(nullptr);
-            info::globaleGetLocalDate1709_clbk globaleGetLocalDate1709_user(nullptr);
-            info::globaleGetMgrValue1711_ptr globaleGetMgrValue1711_next(nullptr);
-            info::globaleGetMgrValue1711_clbk globaleGetMgrValue1711_user(nullptr);
-            info::globaleGetMineOre1713_ptr globaleGetMineOre1713_next(nullptr);
-            info::globaleGetMineOre1713_clbk globaleGetMineOre1713_user(nullptr);
-            info::globaleGetOldCutOre1715_ptr globaleGetOldCutOre1715_next(nullptr);
-            info::globaleGetOldCutOre1715_clbk globaleGetOldCutOre1715_user(nullptr);
-            info::globaleGetOldDalant1717_ptr globaleGetOldDalant1717_next(nullptr);
-            info::globaleGetOldDalant1717_clbk globaleGetOldDalant1717_user(nullptr);
-            info::globaleGetOldGold1719_ptr globaleGetOldGold1719_next(nullptr);
-            info::globaleGetOldGold1719_clbk globaleGetOldGold1719_user(nullptr);
-            info::globaleGetOldMineOre1721_ptr globaleGetOldMineOre1721_next(nullptr);
-            info::globaleGetOldMineOre1721_clbk globaleGetOldMineOre1721_user(nullptr);
-            info::globaleGetOreRate1723_ptr globaleGetOreRate1723_next(nullptr);
-            info::globaleGetOreRate1723_clbk globaleGetOreRate1723_user(nullptr);
-            info::globaleGetRate1725_ptr globaleGetRate1725_next(nullptr);
-            info::globaleGetRate1725_clbk globaleGetRate1725_user(nullptr);
-            info::globaleGetTex1727_ptr globaleGetTex1727_next(nullptr);
-            info::globaleGetTex1727_clbk globaleGetTex1727_user(nullptr);
-            info::globaleGetTexRate1729_ptr globaleGetTexRate1729_next(nullptr);
-            info::globaleGetTexRate1729_clbk globaleGetTexRate1729_user(nullptr);
-            info::globaleInitEconomySystem1731_ptr globaleInitEconomySystem1731_next(nullptr);
-            info::globaleInitEconomySystem1731_clbk globaleInitEconomySystem1731_user(nullptr);
-            info::globaleUpdateEconomySystem1733_ptr globaleUpdateEconomySystem1733_next(nullptr);
-            info::globaleUpdateEconomySystem1733_clbk globaleUpdateEconomySystem1733_user(nullptr);
-            info::globalerror_fatal_printf1734_ptr globalerror_fatal_printf1734_next(nullptr);
-            info::globalerror_fatal_printf1734_clbk globalerror_fatal_printf1734_user(nullptr);
-            info::globalerror_malloc1735_ptr globalerror_malloc1735_next(nullptr);
-            info::globalerror_malloc1735_clbk globalerror_malloc1735_user(nullptr);
-            info::globalexp1736_ptr globalexp1736_next(nullptr);
-            info::globalexp1736_clbk globalexp1736_user(nullptr);
-            info::globalfabs1737_ptr globalfabs1737_next(nullptr);
-            info::globalfabs1737_clbk globalfabs1737_user(nullptr);
-            info::globalfopenMFM1738_ptr globalfopenMFM1738_next(nullptr);
-            info::globalfopenMFM1738_clbk globalfopenMFM1738_user(nullptr);
-            info::globalisalnumstr1740_ptr globalisalnumstr1740_next(nullptr);
-            info::globalisalnumstr1740_clbk globalisalnumstr1740_user(nullptr);
-            info::globalisalphastr1742_ptr globalisalphastr1742_next(nullptr);
-            info::globalisalphastr1742_clbk globalisalphastr1742_user(nullptr);
-            info::globalisdigitstr1744_ptr globalisdigitstr1744_next(nullptr);
-            info::globalisdigitstr1744_clbk globalisdigitstr1744_user(nullptr);
-            info::globaljc_Contents1746_ptr globaljc_Contents1746_next(nullptr);
-            info::globaljc_Contents1746_clbk globaljc_Contents1746_user(nullptr);
-            info::globaljc_Count1748_ptr globaljc_Count1748_next(nullptr);
-            info::globaljc_Count1748_clbk globaljc_Count1748_user(nullptr);
-            info::globaljc_Description1750_ptr globaljc_Description1750_next(nullptr);
-            info::globaljc_Description1750_clbk globaljc_Description1750_user(nullptr);
-            info::globaljc_ReactContents1752_ptr globaljc_ReactContents1752_next(nullptr);
-            info::globaljc_ReactContents1752_clbk globaljc_ReactContents1752_user(nullptr);
-            info::globaljc_ReactType1754_ptr globaljc_ReactType1754_next(nullptr);
-            info::globaljc_ReactType1754_clbk globaljc_ReactType1754_user(nullptr);
-            info::globaljc_Type1756_ptr globaljc_Type1756_next(nullptr);
-            info::globaljc_Type1756_clbk globaljc_Type1756_user(nullptr);
-            info::globallog1757_ptr globallog1757_next(nullptr);
-            info::globallog1757_clbk globallog1757_user(nullptr);
-            info::globallua_my_open1759_ptr globallua_my_open1759_next(nullptr);
-            info::globallua_my_open1759_clbk globallua_my_open1759_user(nullptr);
-            info::globalmc_AddMonster1761_ptr globalmc_AddMonster1761_next(nullptr);
-            info::globalmc_AddMonster1761_clbk globalmc_AddMonster1761_user(nullptr);
-            info::globalmc_AddTime1763_ptr globalmc_AddTime1763_next(nullptr);
-            info::globalmc_AddTime1763_clbk globalmc_AddTime1763_user(nullptr);
-            info::globalmc_Area1765_ptr globalmc_Area1765_next(nullptr);
-            info::globalmc_Area1765_clbk globalmc_Area1765_user(nullptr);
-            info::globalmc_ChangeMonster1767_ptr globalmc_ChangeMonster1767_next(nullptr);
-            info::globalmc_ChangeMonster1767_clbk globalmc_ChangeMonster1767_user(nullptr);
-            info::globalmc_CompleteMsg1769_ptr globalmc_CompleteMsg1769_next(nullptr);
-            info::globalmc_CompleteMsg1769_clbk globalmc_CompleteMsg1769_user(nullptr);
-            info::globalmc_Description1771_ptr globalmc_Description1771_next(nullptr);
-            info::globalmc_Description1771_clbk globalmc_Description1771_user(nullptr);
-            info::globalmc_GatePos1773_ptr globalmc_GatePos1773_next(nullptr);
-            info::globalmc_GatePos1773_clbk globalmc_GatePos1773_user(nullptr);
-            info::globalmc_If1775_ptr globalmc_If1775_next(nullptr);
-            info::globalmc_If1775_clbk globalmc_If1775_user(nullptr);
-            info::globalmc_Inner1777_ptr globalmc_Inner1777_next(nullptr);
-            info::globalmc_Inner1777_clbk globalmc_Inner1777_user(nullptr);
-            info::globalmc_JobOrder1779_ptr globalmc_JobOrder1779_next(nullptr);
-            info::globalmc_JobOrder1779_clbk globalmc_JobOrder1779_user(nullptr);
-            info::globalmc_LimTimeSec1781_ptr globalmc_LimTimeSec1781_next(nullptr);
-            info::globalmc_LimTimeSec1781_clbk globalmc_LimTimeSec1781_user(nullptr);
-            info::globalmc_LootItem1783_ptr globalmc_LootItem1783_next(nullptr);
-            info::globalmc_LootItem1783_clbk globalmc_LootItem1783_user(nullptr);
-            info::globalmc_RespawnMonster1785_ptr globalmc_RespawnMonster1785_next(nullptr);
-            info::globalmc_RespawnMonster1785_clbk globalmc_RespawnMonster1785_user(nullptr);
-            info::globalmc_RespawnMonsterOption1787_ptr globalmc_RespawnMonsterOption1787_next(nullptr);
-            info::globalmc_RespawnMonsterOption1787_clbk globalmc_RespawnMonsterOption1787_user(nullptr);
-            info::globalmc_ResultContents1789_ptr globalmc_ResultContents1789_next(nullptr);
-            info::globalmc_ResultContents1789_clbk globalmc_ResultContents1789_user(nullptr);
-            info::globalmc_ResultType1791_ptr globalmc_ResultType1791_next(nullptr);
-            info::globalmc_ResultType1791_clbk globalmc_ResultType1791_user(nullptr);
-            info::globalmc_StartPos1793_ptr globalmc_StartPos1793_next(nullptr);
-            info::globalmc_StartPos1793_clbk globalmc_StartPos1793_user(nullptr);
-            info::globalmc_respond1795_ptr globalmc_respond1795_next(nullptr);
-            info::globalmc_respond1795_clbk globalmc_respond1795_user(nullptr);
-            info::globalpow1814_ptr globalpow1814_next(nullptr);
-            info::globalpow1814_clbk globalpow1814_user(nullptr);
-            info::globalpow1815_ptr globalpow1815_next(nullptr);
-            info::globalpow1815_clbk globalpow1815_user(nullptr);
-            info::globalpow1817_ptr globalpow1817_next(nullptr);
-            info::globalpow1817_clbk globalpow1817_user(nullptr);
-            info::globalqc_Dalant1819_ptr globalqc_Dalant1819_next(nullptr);
-            info::globalqc_Dalant1819_clbk globalqc_Dalant1819_user(nullptr);
-            info::globalqc_Description1821_ptr globalqc_Description1821_next(nullptr);
-            info::globalqc_Description1821_clbk globalqc_Description1821_user(nullptr);
-            info::globalqc_DummyBlock1823_ptr globalqc_DummyBlock1823_next(nullptr);
-            info::globalqc_DummyBlock1823_clbk globalqc_DummyBlock1823_user(nullptr);
-            info::globalqc_LimitLvMax1825_ptr globalqc_LimitLvMax1825_next(nullptr);
-            info::globalqc_LimitLvMax1825_clbk globalqc_LimitLvMax1825_user(nullptr);
-            info::globalqc_LimitLvMin1827_ptr globalqc_LimitLvMin1827_next(nullptr);
-            info::globalqc_LimitLvMin1827_clbk globalqc_LimitLvMin1827_user(nullptr);
-            info::globalqc_MemberNum1829_ptr globalqc_MemberNum1829_next(nullptr);
-            info::globalqc_MemberNum1829_clbk globalqc_MemberNum1829_user(nullptr);
-            info::globalqc_MembershipParty1831_ptr globalqc_MembershipParty1831_next(nullptr);
-            info::globalqc_MembershipParty1831_clbk globalqc_MembershipParty1831_user(nullptr);
-            info::globalqc_RewardExp1833_ptr globalqc_RewardExp1833_next(nullptr);
-            info::globalqc_RewardExp1833_clbk globalqc_RewardExp1833_user(nullptr);
-            info::globalqc_RewardItem1835_ptr globalqc_RewardItem1835_next(nullptr);
-            info::globalqc_RewardItem1835_clbk globalqc_RewardItem1835_user(nullptr);
-            info::globalqc_RewardPvp1837_ptr globalqc_RewardPvp1837_next(nullptr);
-            info::globalqc_RewardPvp1837_clbk globalqc_RewardPvp1837_user(nullptr);
-            info::globalqc_StartMission1839_ptr globalqc_StartMission1839_next(nullptr);
-            info::globalqc_StartMission1839_clbk globalqc_StartMission1839_user(nullptr);
-            info::globalqc_UseMap1841_ptr globalqc_UseMap1841_next(nullptr);
-            info::globalqc_UseMap1841_clbk globalqc_UseMap1841_user(nullptr);
-            info::globalqc_monsterGroup1843_ptr globalqc_monsterGroup1843_next(nullptr);
-            info::globalqc_monsterGroup1843_clbk globalqc_monsterGroup1843_user(nullptr);
-            info::globalsin1845_ptr globalsin1845_next(nullptr);
-            info::globalsin1845_clbk globalsin1845_user(nullptr);
-            info::globalsprintf_s1847_ptr globalsprintf_s1847_next(nullptr);
-            info::globalsprintf_s1847_clbk globalsprintf_s1847_user(nullptr);
-            info::globalsprintf_s1849_ptr globalsprintf_s1849_next(nullptr);
-            info::globalsprintf_s1849_clbk globalsprintf_s1849_user(nullptr);
-            info::globalsprintf_s1851_ptr globalsprintf_s1851_next(nullptr);
-            info::globalsprintf_s1851_clbk globalsprintf_s1851_user(nullptr);
-            info::globalsprintf_s1853_ptr globalsprintf_s1853_next(nullptr);
-            info::globalsprintf_s1853_clbk globalsprintf_s1853_user(nullptr);
-            info::globalsprintf_s1855_ptr globalsprintf_s1855_next(nullptr);
-            info::globalsprintf_s1855_clbk globalsprintf_s1855_user(nullptr);
-            info::globalsprintf_s1857_ptr globalsprintf_s1857_next(nullptr);
-            info::globalsprintf_s1857_clbk globalsprintf_s1857_user(nullptr);
-            info::globalsprintf_s1859_ptr globalsprintf_s1859_next(nullptr);
-            info::globalsprintf_s1859_clbk globalsprintf_s1859_user(nullptr);
-            info::globalsprintf_s1861_ptr globalsprintf_s1861_next(nullptr);
-            info::globalsprintf_s1861_clbk globalsprintf_s1861_user(nullptr);
-            info::globalsprintf_s1863_ptr globalsprintf_s1863_next(nullptr);
-            info::globalsprintf_s1863_clbk globalsprintf_s1863_user(nullptr);
-            info::globalsprintf_s1865_ptr globalsprintf_s1865_next(nullptr);
-            info::globalsprintf_s1865_clbk globalsprintf_s1865_user(nullptr);
-            info::globalsprintf_s1867_ptr globalsprintf_s1867_next(nullptr);
-            info::globalsprintf_s1867_clbk globalsprintf_s1867_user(nullptr);
-            info::globalsprintf_s1869_ptr globalsprintf_s1869_next(nullptr);
-            info::globalsprintf_s1869_clbk globalsprintf_s1869_user(nullptr);
-            info::globalsprintf_s1871_ptr globalsprintf_s1871_next(nullptr);
-            info::globalsprintf_s1871_clbk globalsprintf_s1871_user(nullptr);
-            info::globalsprintf_s1873_ptr globalsprintf_s1873_next(nullptr);
-            info::globalsprintf_s1873_clbk globalsprintf_s1873_user(nullptr);
-            info::globalsprintf_s1875_ptr globalsprintf_s1875_next(nullptr);
-            info::globalsprintf_s1875_clbk globalsprintf_s1875_user(nullptr);
-            info::globalsprintf_s1877_ptr globalsprintf_s1877_next(nullptr);
-            info::globalsprintf_s1877_clbk globalsprintf_s1877_user(nullptr);
-            info::globalsprintf_s1879_ptr globalsprintf_s1879_next(nullptr);
-            info::globalsprintf_s1879_clbk globalsprintf_s1879_user(nullptr);
-            info::globalsqrt1881_ptr globalsqrt1881_next(nullptr);
-            info::globalsqrt1881_clbk globalsqrt1881_user(nullptr);
-            info::globalstrcat_s1883_ptr globalstrcat_s1883_next(nullptr);
-            info::globalstrcat_s1883_clbk globalstrcat_s1883_user(nullptr);
-            info::globalstrcat_s1885_ptr globalstrcat_s1885_next(nullptr);
-            info::globalstrcat_s1885_clbk globalstrcat_s1885_user(nullptr);
-            info::globalstrcat_s1887_ptr globalstrcat_s1887_next(nullptr);
-            info::globalstrcat_s1887_clbk globalstrcat_s1887_user(nullptr);
-            info::globalstrchr1889_ptr globalstrchr1889_next(nullptr);
-            info::globalstrchr1889_clbk globalstrchr1889_user(nullptr);
-            info::globalstrcpy_s1891_ptr globalstrcpy_s1891_next(nullptr);
-            info::globalstrcpy_s1891_clbk globalstrcpy_s1891_user(nullptr);
-            info::globalstrcpy_s1893_ptr globalstrcpy_s1893_next(nullptr);
-            info::globalstrcpy_s1893_clbk globalstrcpy_s1893_user(nullptr);
-            info::globalstrcpy_s1895_ptr globalstrcpy_s1895_next(nullptr);
-            info::globalstrcpy_s1895_clbk globalstrcpy_s1895_user(nullptr);
-            info::globalstrcpy_s1897_ptr globalstrcpy_s1897_next(nullptr);
-            info::globalstrcpy_s1897_clbk globalstrcpy_s1897_user(nullptr);
-            info::globalstrcpy_s1899_ptr globalstrcpy_s1899_next(nullptr);
-            info::globalstrcpy_s1899_clbk globalstrcpy_s1899_user(nullptr);
-            info::globalstrcpy_s1901_ptr globalstrcpy_s1901_next(nullptr);
-            info::globalstrcpy_s1901_clbk globalstrcpy_s1901_user(nullptr);
-            info::globalstrcpy_s1903_ptr globalstrcpy_s1903_next(nullptr);
-            info::globalstrcpy_s1903_clbk globalstrcpy_s1903_user(nullptr);
-            info::globalstrncpy_s1905_ptr globalstrncpy_s1905_next(nullptr);
-            info::globalstrncpy_s1905_clbk globalstrncpy_s1905_user(nullptr);
-            info::globalstrncpy_s1907_ptr globalstrncpy_s1907_next(nullptr);
-            info::globalstrncpy_s1907_clbk globalstrncpy_s1907_user(nullptr);
-            info::globalstrrchr1908_ptr globalstrrchr1908_next(nullptr);
-            info::globalstrrchr1908_clbk globalstrrchr1908_user(nullptr);
-            info::globalstrstr1910_ptr globalstrstr1910_next(nullptr);
-            info::globalstrstr1910_clbk globalstrstr1910_user(nullptr);
-            info::globalswprintf1912_ptr globalswprintf1912_next(nullptr);
-            info::globalswprintf1912_clbk globalswprintf1912_user(nullptr);
-            info::globaltan1913_ptr globaltan1913_next(nullptr);
-            info::globaltan1913_clbk globaltan1913_user(nullptr);
-            info::globalterminate1914_ptr globalterminate1914_next(nullptr);
-            info::globalterminate1914_clbk globalterminate1914_user(nullptr);
-            info::globalwa_EnterWorld1916_ptr globalwa_EnterWorld1916_next(nullptr);
-            info::globalwa_EnterWorld1916_clbk globalwa_EnterWorld1916_user(nullptr);
-            info::globalwa_ExitWorld1918_ptr globalwa_ExitWorld1918_next(nullptr);
-            info::globalwa_ExitWorld1918_clbk globalwa_ExitWorld1918_user(nullptr);
-            info::globalwa_PartyDisjoint1920_ptr globalwa_PartyDisjoint1920_next(nullptr);
-            info::globalwa_PartyDisjoint1920_clbk globalwa_PartyDisjoint1920_user(nullptr);
-            info::globalwa_PartyForceLeave1922_ptr globalwa_PartyForceLeave1922_next(nullptr);
-            info::globalwa_PartyForceLeave1922_clbk globalwa_PartyForceLeave1922_user(nullptr);
-            info::globalwa_PartyJoin1924_ptr globalwa_PartyJoin1924_next(nullptr);
-            info::globalwa_PartyJoin1924_clbk globalwa_PartyJoin1924_user(nullptr);
-            info::globalwa_PartyLock1926_ptr globalwa_PartyLock1926_next(nullptr);
-            info::globalwa_PartyLock1926_clbk globalwa_PartyLock1926_user(nullptr);
-            info::globalwa_PartyLootShareSystem1928_ptr globalwa_PartyLootShareSystem1928_next(nullptr);
-            info::globalwa_PartyLootShareSystem1928_clbk globalwa_PartyLootShareSystem1928_user(nullptr);
-            info::globalwa_PartySelfLeave1930_ptr globalwa_PartySelfLeave1930_next(nullptr);
-            info::globalwa_PartySelfLeave1930_clbk globalwa_PartySelfLeave1930_user(nullptr);
-            info::globalwa_PartySuccession1932_ptr globalwa_PartySuccession1932_next(nullptr);
-            info::globalwa_PartySuccession1932_clbk globalwa_PartySuccession1932_user(nullptr);
-            info::globalwcsstr1934_ptr globalwcsstr1934_next(nullptr);
-            info::globalwcsstr1934_clbk globalwcsstr1934_user(nullptr);
+            static info::globalARGBToJpegFile1_ptr globalARGBToJpegFile1_next(nullptr);
+            static info::globalARGBToJpegFile1_clbk globalARGBToJpegFile1_user(nullptr);
+            static info::globalAddEnvVariable3_ptr globalAddEnvVariable3_next(nullptr);
+            static info::globalAddEnvVariable3_clbk globalAddEnvVariable3_user(nullptr);
+            static info::globalAdjustIndependenceR3M4_ptr globalAdjustIndependenceR3M4_next(nullptr);
+            static info::globalAdjustIndependenceR3M4_clbk globalAdjustIndependenceR3M4_user(nullptr);
+            static info::globalAfterRenderOneLayer5_ptr globalAfterRenderOneLayer5_next(nullptr);
+            static info::globalAfterRenderOneLayer5_clbk globalAfterRenderOneLayer5_user(nullptr);
+            static info::globalAfterRenderSetting6_ptr globalAfterRenderSetting6_next(nullptr);
+            static info::globalAfterRenderSetting6_clbk globalAfterRenderSetting6_user(nullptr);
+            static info::globalAtoH23_ptr globalAtoH23_next(nullptr);
+            static info::globalAtoH23_clbk globalAtoH23_user(nullptr);
+            static info::globalAuthorityFilter25_ptr globalAuthorityFilter25_next(nullptr);
+            static info::globalAuthorityFilter25_clbk globalAuthorityFilter25_user(nullptr);
+            static info::globalBGRFromRGB26_ptr globalBGRFromRGB26_next(nullptr);
+            static info::globalBGRFromRGB26_clbk globalBGRFromRGB26_user(nullptr);
+            static info::globalBlendOff27_ptr globalBlendOff27_next(nullptr);
+            static info::globalBlendOff27_clbk globalBlendOff27_user(nullptr);
+            static info::globalBlendOn28_ptr globalBlendOn28_next(nullptr);
+            static info::globalBlendOn28_clbk globalBlendOn28_user(nullptr);
+            static info::globalBlurFilterShader29_ptr globalBlurFilterShader29_next(nullptr);
+            static info::globalBlurFilterShader29_clbk globalBlurFilterShader29_user(nullptr);
+            static info::globalBlurFilterSprite30_ptr globalBlurFilterSprite30_next(nullptr);
+            static info::globalBlurFilterSprite30_clbk globalBlurFilterSprite30_user(nullptr);
+            static info::globalBlurShaderVSPS31_ptr globalBlurShaderVSPS31_next(nullptr);
+            static info::globalBlurShaderVSPS31_clbk globalBlurShaderVSPS31_user(nullptr);
+            static info::globalBtoH33_ptr globalBtoH33_next(nullptr);
+            static info::globalBtoH33_clbk globalBtoH33_user(nullptr);
+            static info::globalByteSortForShort34_ptr globalByteSortForShort34_next(nullptr);
+            static info::globalByteSortForShort34_clbk globalByteSortForShort34_user(nullptr);
+            static info::globalCN_CalculateSunAndFieldColor35_ptr globalCN_CalculateSunAndFieldColor35_next(nullptr);
+            static info::globalCN_CalculateSunAndFieldColor35_clbk globalCN_CalculateSunAndFieldColor35_user(nullptr);
+            static info::globalCN_GetAccselateTime36_ptr globalCN_GetAccselateTime36_next(nullptr);
+            static info::globalCN_GetAccselateTime36_clbk globalCN_GetAccselateTime36_user(nullptr);
+            static info::globalCN_GetAtmosphere37_ptr globalCN_GetAtmosphere37_next(nullptr);
+            static info::globalCN_GetAtmosphere37_clbk globalCN_GetAtmosphere37_user(nullptr);
+            static info::globalCN_GetDayTime38_ptr globalCN_GetDayTime38_next(nullptr);
+            static info::globalCN_GetDayTime38_clbk globalCN_GetDayTime38_user(nullptr);
+            static info::globalCN_GetDayTime39_ptr globalCN_GetDayTime39_next(nullptr);
+            static info::globalCN_GetDayTime39_clbk globalCN_GetDayTime39_user(nullptr);
+            static info::globalCN_GetFieldColor40_ptr globalCN_GetFieldColor40_next(nullptr);
+            static info::globalCN_GetFieldColor40_clbk globalCN_GetFieldColor40_user(nullptr);
+            static info::globalCN_GetFogColor41_ptr globalCN_GetFogColor41_next(nullptr);
+            static info::globalCN_GetFogColor41_clbk globalCN_GetFogColor41_user(nullptr);
+            static info::globalCN_GetRealDayTime42_ptr globalCN_GetRealDayTime42_next(nullptr);
+            static info::globalCN_GetRealDayTime42_clbk globalCN_GetRealDayTime42_user(nullptr);
+            static info::globalCN_GetRealDayTime43_ptr globalCN_GetRealDayTime43_next(nullptr);
+            static info::globalCN_GetRealDayTime43_clbk globalCN_GetRealDayTime43_user(nullptr);
+            static info::globalCN_GetSky44_ptr globalCN_GetSky44_next(nullptr);
+            static info::globalCN_GetSky44_clbk globalCN_GetSky44_user(nullptr);
+            static info::globalCN_GetSun45_ptr globalCN_GetSun45_next(nullptr);
+            static info::globalCN_GetSun45_clbk globalCN_GetSun45_user(nullptr);
+            static info::globalCN_GetSunColor46_ptr globalCN_GetSunColor46_next(nullptr);
+            static info::globalCN_GetSunColor46_clbk globalCN_GetSunColor46_user(nullptr);
+            static info::globalCN_GetSunDirection47_ptr globalCN_GetSunDirection47_next(nullptr);
+            static info::globalCN_GetSunDirection47_clbk globalCN_GetSunDirection47_user(nullptr);
+            static info::globalCN_GetWeather48_ptr globalCN_GetWeather48_next(nullptr);
+            static info::globalCN_GetWeather48_clbk globalCN_GetWeather48_user(nullptr);
+            static info::globalCN_InvalidateNature49_ptr globalCN_InvalidateNature49_next(nullptr);
+            static info::globalCN_InvalidateNature49_clbk globalCN_InvalidateNature49_user(nullptr);
+            static info::globalCN_IsEnableSky50_ptr globalCN_IsEnableSky50_next(nullptr);
+            static info::globalCN_IsEnableSky50_clbk globalCN_IsEnableSky50_user(nullptr);
+            static info::globalCN_MixDayColor51_ptr globalCN_MixDayColor51_next(nullptr);
+            static info::globalCN_MixDayColor51_clbk globalCN_MixDayColor51_user(nullptr);
+            static info::globalCN_NatureFrameMove52_ptr globalCN_NatureFrameMove52_next(nullptr);
+            static info::globalCN_NatureFrameMove52_clbk globalCN_NatureFrameMove52_user(nullptr);
+            static info::globalCN_RenderSky53_ptr globalCN_RenderSky53_next(nullptr);
+            static info::globalCN_RenderSky53_clbk globalCN_RenderSky53_user(nullptr);
+            static info::globalCN_RestoreNature54_ptr globalCN_RestoreNature54_next(nullptr);
+            static info::globalCN_RestoreNature54_clbk globalCN_RestoreNature54_user(nullptr);
+            static info::globalCN_SetAccselateTime55_ptr globalCN_SetAccselateTime55_next(nullptr);
+            static info::globalCN_SetAccselateTime55_clbk globalCN_SetAccselateTime55_user(nullptr);
+            static info::globalCN_SetDayTime56_ptr globalCN_SetDayTime56_next(nullptr);
+            static info::globalCN_SetDayTime56_clbk globalCN_SetDayTime56_user(nullptr);
+            static info::globalCN_SetDayTime57_ptr globalCN_SetDayTime57_next(nullptr);
+            static info::globalCN_SetDayTime57_clbk globalCN_SetDayTime57_user(nullptr);
+            static info::globalCN_SetEnableSky58_ptr globalCN_SetEnableSky58_next(nullptr);
+            static info::globalCN_SetEnableSky58_clbk globalCN_SetEnableSky58_user(nullptr);
+            static info::globalCN_SetRealDayTime59_ptr globalCN_SetRealDayTime59_next(nullptr);
+            static info::globalCN_SetRealDayTime59_clbk globalCN_SetRealDayTime59_user(nullptr);
+            static info::globalCN_SetRealDayTime60_ptr globalCN_SetRealDayTime60_next(nullptr);
+            static info::globalCN_SetRealDayTime60_clbk globalCN_SetRealDayTime60_user(nullptr);
+            static info::globalCN_SetWeather61_ptr globalCN_SetWeather61_next(nullptr);
+            static info::globalCN_SetWeather61_clbk globalCN_SetWeather61_user(nullptr);
+            static info::globalCN_SkyVertexShaderConstants62_ptr globalCN_SkyVertexShaderConstants62_next(nullptr);
+            static info::globalCN_SkyVertexShaderConstants62_clbk globalCN_SkyVertexShaderConstants62_user(nullptr);
+            static info::globalCalcBi_n63_ptr globalCalcBi_n63_next(nullptr);
+            static info::globalCalcBi_n63_clbk globalCalcBi_n63_user(nullptr);
+            static info::globalCalcCodeKey65_ptr globalCalcCodeKey65_next(nullptr);
+            static info::globalCalcCodeKey65_clbk globalCalcCodeKey65_user(nullptr);
+            static info::globalCalcCubicCurve66_ptr globalCalcCubicCurve66_next(nullptr);
+            static info::globalCalcCubicCurve66_clbk globalCalcCubicCurve66_user(nullptr);
+            static info::globalCalcEvalCubicCurve67_ptr globalCalcEvalCubicCurve67_next(nullptr);
+            static info::globalCalcEvalCubicCurve67_clbk globalCalcEvalCubicCurve67_user(nullptr);
+            static info::globalCalcFileSize69_ptr globalCalcFileSize69_next(nullptr);
+            static info::globalCalcFileSize69_clbk globalCalcFileSize69_user(nullptr);
+            static info::globalCalcMastery71_ptr globalCalcMastery71_next(nullptr);
+            static info::globalCalcMastery71_clbk globalCalcMastery71_user(nullptr);
+            static info::globalCalcRoundUp73_ptr globalCalcRoundUp73_next(nullptr);
+            static info::globalCalcRoundUp73_clbk globalCalcRoundUp73_user(nullptr);
+            static info::globalCalcSnakeVertexList74_ptr globalCalcSnakeVertexList74_next(nullptr);
+            static info::globalCalcSnakeVertexList74_clbk globalCalcSnakeVertexList74_user(nullptr);
+            static info::globalCalcSquare76_ptr globalCalcSquare76_next(nullptr);
+            static info::globalCalcSquare76_clbk globalCalcSquare76_user(nullptr);
+            static info::globalCalculateMoveCamera77_ptr globalCalculateMoveCamera77_next(nullptr);
+            static info::globalCalculateMoveCamera77_clbk globalCalculateMoveCamera77_user(nullptr);
+            static info::globalCanAddMoneyForMaxLimGold79_ptr globalCanAddMoneyForMaxLimGold79_next(nullptr);
+            static info::globalCanAddMoneyForMaxLimGold79_clbk globalCanAddMoneyForMaxLimGold79_user(nullptr);
+            static info::globalCanAddMoneyForMaxLimMoney81_ptr globalCanAddMoneyForMaxLimMoney81_next(nullptr);
+            static info::globalCanAddMoneyForMaxLimMoney81_clbk globalCanAddMoneyForMaxLimMoney81_user(nullptr);
+            static info::globalCcrFgCallback83_ptr globalCcrFgCallback83_next(nullptr);
+            static info::globalCcrFgCallback83_clbk globalCcrFgCallback83_user(nullptr);
+            static info::globalCheckEdge84_ptr globalCheckEdge84_next(nullptr);
+            static info::globalCheckEdge84_clbk globalCheckEdge84_user(nullptr);
+            static info::globalCheckEdgeEpsilon85_ptr globalCheckEdgeEpsilon85_next(nullptr);
+            static info::globalCheckEdgeEpsilon85_clbk globalCheckEdgeEpsilon85_user(nullptr);
+            static info::globalCheckSameItemFromString_CodeIndex87_ptr globalCheckSameItemFromString_CodeIndex87_next(nullptr);
+            static info::globalCheckSameItemFromString_CodeIndex87_clbk globalCheckSameItemFromString_CodeIndex87_user(nullptr);
+            static info::globalClean2DRectangleZbuffer88_ptr globalClean2DRectangleZbuffer88_next(nullptr);
+            static info::globalClean2DRectangleZbuffer88_clbk globalClean2DRectangleZbuffer88_user(nullptr);
+            static info::globalCleanViewPortStack89_ptr globalCleanViewPortStack89_next(nullptr);
+            static info::globalCleanViewPortStack89_clbk globalCleanViewPortStack89_user(nullptr);
+            static info::globalCleanZbuffer90_ptr globalCleanZbuffer90_next(nullptr);
+            static info::globalCleanZbuffer90_clbk globalCleanZbuffer90_user(nullptr);
+            static info::globalClearDynamicLight91_ptr globalClearDynamicLight91_next(nullptr);
+            static info::globalClearDynamicLight91_clbk globalClearDynamicLight91_user(nullptr);
+            static info::globalCombineExCheckKeyGen93_ptr globalCombineExCheckKeyGen93_next(nullptr);
+            static info::globalCombineExCheckKeyGen93_clbk globalCombineExCheckKeyGen93_user(nullptr);
+            static info::globalCompareGradeAndPvpPoint95_ptr globalCompareGradeAndPvpPoint95_next(nullptr);
+            static info::globalCompareGradeAndPvpPoint95_clbk globalCompareGradeAndPvpPoint95_user(nullptr);
+            static info::globalConvAniObject96_ptr globalConvAniObject96_next(nullptr);
+            static info::globalConvAniObject96_clbk globalConvAniObject96_user(nullptr);
+            static info::globalConvertCodeIntoItem98_ptr globalConvertCodeIntoItem98_next(nullptr);
+            static info::globalConvertCodeIntoItem98_clbk globalConvertCodeIntoItem98_user(nullptr);
+            static info::globalConvertErrorCode_Jap100_ptr globalConvertErrorCode_Jap100_next(nullptr);
+            static info::globalConvertErrorCode_Jap100_clbk globalConvertErrorCode_Jap100_user(nullptr);
+            static info::globalConvertHexa101_ptr globalConvertHexa101_next(nullptr);
+            static info::globalConvertHexa101_clbk globalConvertHexa101_user(nullptr);
+            static info::globalCosineInterpolate102_ptr globalCosineInterpolate102_next(nullptr);
+            static info::globalCosineInterpolate102_clbk globalCosineInterpolate102_user(nullptr);
+            static info::globalCountOfImports103_ptr globalCountOfImports103_next(nullptr);
+            static info::globalCountOfImports103_clbk globalCountOfImports103_user(nullptr);
+            static info::globalCreateAndWriteUVOffsets104_ptr globalCreateAndWriteUVOffsets104_next(nullptr);
+            static info::globalCreateAndWriteUVOffsets104_clbk globalCreateAndWriteUVOffsets104_user(nullptr);
+            static info::globalCreateAnimus106_ptr globalCreateAnimus106_next(nullptr);
+            static info::globalCreateAnimus106_clbk globalCreateAnimus106_user(nullptr);
+            static info::globalCreateBlurVBuffer107_ptr globalCreateBlurVBuffer107_next(nullptr);
+            static info::globalCreateBlurVBuffer107_clbk globalCreateBlurVBuffer107_user(nullptr);
+            static info::globalCreateGuardTower109_ptr globalCreateGuardTower109_next(nullptr);
+            static info::globalCreateGuardTower109_clbk globalCreateGuardTower109_user(nullptr);
+            static info::globalCreateItemBox111_ptr globalCreateItemBox111_next(nullptr);
+            static info::globalCreateItemBox111_clbk globalCreateItemBox111_user(nullptr);
+            static info::globalCreateItemBox113_ptr globalCreateItemBox113_next(nullptr);
+            static info::globalCreateItemBox113_clbk globalCreateItemBox113_user(nullptr);
+            static info::globalCreateRepMonster115_ptr globalCreateRepMonster115_next(nullptr);
+            static info::globalCreateRepMonster115_clbk globalCreateRepMonster115_user(nullptr);
+            static info::globalCreateRespawnMonster117_ptr globalCreateRespawnMonster117_next(nullptr);
+            static info::globalCreateRespawnMonster117_clbk globalCreateRespawnMonster117_user(nullptr);
+            static info::globalCreateSystemTower119_ptr globalCreateSystemTower119_next(nullptr);
+            static info::globalCreateSystemTower119_clbk globalCreateSystemTower119_user(nullptr);
+            static info::globalCreateTrap121_ptr globalCreateTrap121_next(nullptr);
+            static info::globalCreateTrap121_clbk globalCreateTrap121_user(nullptr);
+            static info::globalCrossVector122_ptr globalCrossVector122_next(nullptr);
+            static info::globalCrossVector122_clbk globalCrossVector122_user(nullptr);
+            static info::globalCubicInterpolate123_ptr globalCubicInterpolate123_next(nullptr);
+            static info::globalCubicInterpolate123_clbk globalCubicInterpolate123_user(nullptr);
+            static info::globalD3DUtil_CreateTexture124_ptr globalD3DUtil_CreateTexture124_next(nullptr);
+            static info::globalD3DUtil_CreateTexture124_clbk globalD3DUtil_CreateTexture124_user(nullptr);
+            static info::globalD3DUtil_CreateVertexShader125_ptr globalD3DUtil_CreateVertexShader125_next(nullptr);
+            static info::globalD3DUtil_CreateVertexShader125_clbk globalD3DUtil_CreateVertexShader125_user(nullptr);
+            static info::globalD3DUtil_GetCubeMapViewMatrix126_ptr globalD3DUtil_GetCubeMapViewMatrix126_next(nullptr);
+            static info::globalD3DUtil_GetCubeMapViewMatrix126_clbk globalD3DUtil_GetCubeMapViewMatrix126_user(nullptr);
+            static info::globalD3DUtil_GetRotationFromCursor127_ptr globalD3DUtil_GetRotationFromCursor127_next(nullptr);
+            static info::globalD3DUtil_GetRotationFromCursor127_clbk globalD3DUtil_GetRotationFromCursor127_user(nullptr);
+            static info::globalD3DUtil_InitLight128_ptr globalD3DUtil_InitLight128_next(nullptr);
+            static info::globalD3DUtil_InitLight128_clbk globalD3DUtil_InitLight128_user(nullptr);
+            static info::globalD3DUtil_InitMaterial129_ptr globalD3DUtil_InitMaterial129_next(nullptr);
+            static info::globalD3DUtil_InitMaterial129_clbk globalD3DUtil_InitMaterial129_user(nullptr);
+            static info::globalD3DUtil_SetColorKey130_ptr globalD3DUtil_SetColorKey130_next(nullptr);
+            static info::globalD3DUtil_SetColorKey130_clbk globalD3DUtil_SetColorKey130_user(nullptr);
+            static info::globalD3DUtil_SetDeviceCursor131_ptr globalD3DUtil_SetDeviceCursor131_next(nullptr);
+            static info::globalD3DUtil_SetDeviceCursor131_clbk globalD3DUtil_SetDeviceCursor131_user(nullptr);
+            static info::globalD3DUtil_SetDeviceCursor132_ptr globalD3DUtil_SetDeviceCursor132_next(nullptr);
+            static info::globalD3DUtil_SetDeviceCursor132_clbk globalD3DUtil_SetDeviceCursor132_user(nullptr);
+            static info::globalD3DXMatrixIdentity133_ptr globalD3DXMatrixIdentity133_next(nullptr);
+            static info::globalD3DXMatrixIdentity133_clbk globalD3DXMatrixIdentity133_user(nullptr);
+            static info::globalD3DXQuaternionAxisToAxis134_ptr globalD3DXQuaternionAxisToAxis134_next(nullptr);
+            static info::globalD3DXQuaternionAxisToAxis134_clbk globalD3DXQuaternionAxisToAxis134_user(nullptr);
+            static info::globalD3DXQuaternionIdentity135_ptr globalD3DXQuaternionIdentity135_next(nullptr);
+            static info::globalD3DXQuaternionIdentity135_clbk globalD3DXQuaternionIdentity135_user(nullptr);
+            static info::globalD3DXQuaternionUnitAxisToUnitAxis2136_ptr globalD3DXQuaternionUnitAxisToUnitAxis2136_next(nullptr);
+            static info::globalD3DXQuaternionUnitAxisToUnitAxis2136_clbk globalD3DXQuaternionUnitAxisToUnitAxis2136_user(nullptr);
+            static info::globalD3DXVec2Dot138_ptr globalD3DXVec2Dot138_next(nullptr);
+            static info::globalD3DXVec2Dot138_clbk globalD3DXVec2Dot138_user(nullptr);
+            static info::globalD3DXVec3Cross139_ptr globalD3DXVec3Cross139_next(nullptr);
+            static info::globalD3DXVec3Cross139_clbk globalD3DXVec3Cross139_user(nullptr);
+            static info::globalD3DXVec3Dot140_ptr globalD3DXVec3Dot140_next(nullptr);
+            static info::globalD3DXVec3Dot140_clbk globalD3DXVec3Dot140_user(nullptr);
+            static info::globalD3DXVec3Length141_ptr globalD3DXVec3Length141_next(nullptr);
+            static info::globalD3DXVec3Length141_clbk globalD3DXVec3Length141_user(nullptr);
+            static info::globalD3D_R3ConfirmDevice142_ptr globalD3D_R3ConfirmDevice142_next(nullptr);
+            static info::globalD3D_R3ConfirmDevice142_clbk globalD3D_R3ConfirmDevice142_user(nullptr);
+            static info::globalD3D_R3DeleteDevice143_ptr globalD3D_R3DeleteDevice143_next(nullptr);
+            static info::globalD3D_R3DeleteDevice143_clbk globalD3D_R3DeleteDevice143_user(nullptr);
+            static info::globalD3D_R3InitDevice144_ptr globalD3D_R3InitDevice144_next(nullptr);
+            static info::globalD3D_R3InitDevice144_clbk globalD3D_R3InitDevice144_user(nullptr);
+            static info::globalD3D_R3InvalidateDevice145_ptr globalD3D_R3InvalidateDevice145_next(nullptr);
+            static info::globalD3D_R3InvalidateDevice145_clbk globalD3D_R3InvalidateDevice145_user(nullptr);
+            static info::globalD3D_R3MsgProc146_ptr globalD3D_R3MsgProc146_next(nullptr);
+            static info::globalD3D_R3MsgProc146_clbk globalD3D_R3MsgProc146_user(nullptr);
+            static info::globalD3D_R3RestoreDevice147_ptr globalD3D_R3RestoreDevice147_next(nullptr);
+            static info::globalD3D_R3RestoreDevice147_clbk globalD3D_R3RestoreDevice147_user(nullptr);
+            static info::globalDDX_Control148_ptr globalDDX_Control148_next(nullptr);
+            static info::globalDDX_Control148_clbk globalDDX_Control148_user(nullptr);
+            static info::globalDDX_Text149_ptr globalDDX_Text149_next(nullptr);
+            static info::globalDDX_Text149_clbk globalDDX_Text149_user(nullptr);
+            static info::globalDDX_Text150_ptr globalDDX_Text150_next(nullptr);
+            static info::globalDDX_Text150_clbk globalDDX_Text150_user(nullptr);
+            static info::globalDE_AllContDamageForceRemove152_ptr globalDE_AllContDamageForceRemove152_next(nullptr);
+            static info::globalDE_AllContDamageForceRemove152_clbk globalDE_AllContDamageForceRemove152_user(nullptr);
+            static info::globalDE_AllContHelpForceRemove154_ptr globalDE_AllContHelpForceRemove154_next(nullptr);
+            static info::globalDE_AllContHelpForceRemove154_clbk globalDE_AllContHelpForceRemove154_user(nullptr);
+            static info::globalDE_AllContHelpSkillRemove156_ptr globalDE_AllContHelpSkillRemove156_next(nullptr);
+            static info::globalDE_AllContHelpSkillRemove156_clbk globalDE_AllContHelpSkillRemove156_user(nullptr);
+            static info::globalDE_AttHPtoDstFP158_ptr globalDE_AttHPtoDstFP158_next(nullptr);
+            static info::globalDE_AttHPtoDstFP158_clbk globalDE_AttHPtoDstFP158_user(nullptr);
+            static info::globalDE_BattleMode_RecallCommonPlayer160_ptr globalDE_BattleMode_RecallCommonPlayer160_next(nullptr);
+            static info::globalDE_BattleMode_RecallCommonPlayer160_clbk globalDE_BattleMode_RecallCommonPlayer160_user(nullptr);
+            static info::globalDE_ContDamageTimeInc162_ptr globalDE_ContDamageTimeInc162_next(nullptr);
+            static info::globalDE_ContDamageTimeInc162_clbk globalDE_ContDamageTimeInc162_user(nullptr);
+            static info::globalDE_ContHelpTimeInc164_ptr globalDE_ContHelpTimeInc164_next(nullptr);
+            static info::globalDE_ContHelpTimeInc164_clbk globalDE_ContHelpTimeInc164_user(nullptr);
+            static info::globalDE_ConvertMonsterTarget166_ptr globalDE_ConvertMonsterTarget166_next(nullptr);
+            static info::globalDE_ConvertMonsterTarget166_clbk globalDE_ConvertMonsterTarget166_user(nullptr);
+            static info::globalDE_ConvertTargetDest168_ptr globalDE_ConvertTargetDest168_next(nullptr);
+            static info::globalDE_ConvertTargetDest168_clbk globalDE_ConvertTargetDest168_user(nullptr);
+            static info::globalDE_DamStun170_ptr globalDE_DamStun170_next(nullptr);
+            static info::globalDE_DamStun170_clbk globalDE_DamStun170_user(nullptr);
+            static info::globalDE_DetectTrap172_ptr globalDE_DetectTrap172_next(nullptr);
+            static info::globalDE_DetectTrap172_clbk globalDE_DetectTrap172_user(nullptr);
+            static info::globalDE_FPDec174_ptr globalDE_FPDec174_next(nullptr);
+            static info::globalDE_FPDec174_clbk globalDE_FPDec174_user(nullptr);
+            static info::globalDE_HPInc176_ptr globalDE_HPInc176_next(nullptr);
+            static info::globalDE_HPInc176_clbk globalDE_HPInc176_user(nullptr);
+            static info::globalDE_IncHPCircleParty178_ptr globalDE_IncHPCircleParty178_next(nullptr);
+            static info::globalDE_IncHPCircleParty178_clbk globalDE_IncHPCircleParty178_user(nullptr);
+            static info::globalDE_IncreaseDP180_ptr globalDE_IncreaseDP180_next(nullptr);
+            static info::globalDE_IncreaseDP180_clbk globalDE_IncreaseDP180_user(nullptr);
+            static info::globalDE_LateContDamageRemove182_ptr globalDE_LateContDamageRemove182_next(nullptr);
+            static info::globalDE_LateContDamageRemove182_clbk globalDE_LateContDamageRemove182_user(nullptr);
+            static info::globalDE_LateContHelpForceRemove184_ptr globalDE_LateContHelpForceRemove184_next(nullptr);
+            static info::globalDE_LateContHelpForceRemove184_clbk globalDE_LateContHelpForceRemove184_user(nullptr);
+            static info::globalDE_LateContHelpSkillRemove186_ptr globalDE_LateContHelpSkillRemove186_next(nullptr);
+            static info::globalDE_LateContHelpSkillRemove186_clbk globalDE_LateContHelpSkillRemove186_user(nullptr);
+            static info::globalDE_LayTrap188_ptr globalDE_LayTrap188_next(nullptr);
+            static info::globalDE_LayTrap188_clbk globalDE_LayTrap188_user(nullptr);
+            static info::globalDE_MakeGuardTower190_ptr globalDE_MakeGuardTower190_next(nullptr);
+            static info::globalDE_MakeGuardTower190_clbk globalDE_MakeGuardTower190_user(nullptr);
+            static info::globalDE_MakePortalReturnBindPositionPartyMember192_ptr globalDE_MakePortalReturnBindPositionPartyMember192_next(nullptr);
+            static info::globalDE_MakePortalReturnBindPositionPartyMember192_clbk globalDE_MakePortalReturnBindPositionPartyMember192_user(nullptr);
+            static info::globalDE_MakeZeroAnimusRecallTimeOnce194_ptr globalDE_MakeZeroAnimusRecallTimeOnce194_next(nullptr);
+            static info::globalDE_MakeZeroAnimusRecallTimeOnce194_clbk globalDE_MakeZeroAnimusRecallTimeOnce194_user(nullptr);
+            static info::globalDE_OthersContHelpSFRemove196_ptr globalDE_OthersContHelpSFRemove196_next(nullptr);
+            static info::globalDE_OthersContHelpSFRemove196_clbk globalDE_OthersContHelpSFRemove196_user(nullptr);
+            static info::globalDE_OverHealing198_ptr globalDE_OverHealing198_next(nullptr);
+            static info::globalDE_OverHealing198_clbk globalDE_OverHealing198_user(nullptr);
+            static info::globalDE_Potion_AllContHelpSkillRemove_Once200_ptr globalDE_Potion_AllContHelpSkillRemove_Once200_next(nullptr);
+            static info::globalDE_Potion_AllContHelpSkillRemove_Once200_clbk globalDE_Potion_AllContHelpSkillRemove_Once200_user(nullptr);
+            static info::globalDE_Potion_Buf_Extend202_ptr globalDE_Potion_Buf_Extend202_next(nullptr);
+            static info::globalDE_Potion_Buf_Extend202_clbk globalDE_Potion_Buf_Extend202_user(nullptr);
+            static info::globalDE_Potion_Chaos_Dec_Time204_ptr globalDE_Potion_Chaos_Dec_Time204_next(nullptr);
+            static info::globalDE_Potion_Chaos_Dec_Time204_clbk globalDE_Potion_Chaos_Dec_Time204_user(nullptr);
+            static info::globalDE_Potion_Chaos_Inc_Time206_ptr globalDE_Potion_Chaos_Inc_Time206_next(nullptr);
+            static info::globalDE_Potion_Chaos_Inc_Time206_clbk globalDE_Potion_Chaos_Inc_Time206_user(nullptr);
+            static info::globalDE_Potion_CharReName208_ptr globalDE_Potion_CharReName208_next(nullptr);
+            static info::globalDE_Potion_CharReName208_clbk globalDE_Potion_CharReName208_user(nullptr);
+            static info::globalDE_Potion_Class_Refine210_ptr globalDE_Potion_Class_Refine210_next(nullptr);
+            static info::globalDE_Potion_Class_Refine210_clbk globalDE_Potion_Class_Refine210_user(nullptr);
+            static info::globalDE_Potion_Cont_Damage_Remove212_ptr globalDE_Potion_Cont_Damage_Remove212_next(nullptr);
+            static info::globalDE_Potion_Cont_Damage_Remove212_clbk globalDE_Potion_Cont_Damage_Remove212_user(nullptr);
+            static info::globalDE_Potion_DecHalfSFContDam214_ptr globalDE_Potion_DecHalfSFContDam214_next(nullptr);
+            static info::globalDE_Potion_DecHalfSFContDam214_clbk globalDE_Potion_DecHalfSFContDam214_user(nullptr);
+            static info::globalDE_Potion_Exp_Increase_Absolute216_ptr globalDE_Potion_Exp_Increase_Absolute216_next(nullptr);
+            static info::globalDE_Potion_Exp_Increase_Absolute216_clbk globalDE_Potion_Exp_Increase_Absolute216_user(nullptr);
+            static info::globalDE_Potion_Exp_Increase_Percentage218_ptr globalDE_Potion_Exp_Increase_Percentage218_next(nullptr);
+            static info::globalDE_Potion_Exp_Increase_Percentage218_clbk globalDE_Potion_Exp_Increase_Percentage218_user(nullptr);
+            static info::globalDE_Potion_FP_In_Value220_ptr globalDE_Potion_FP_In_Value220_next(nullptr);
+            static info::globalDE_Potion_FP_In_Value220_clbk globalDE_Potion_FP_In_Value220_user(nullptr);
+            static info::globalDE_Potion_Gold_Point222_ptr globalDE_Potion_Gold_Point222_next(nullptr);
+            static info::globalDE_Potion_Gold_Point222_clbk globalDE_Potion_Gold_Point222_user(nullptr);
+            static info::globalDE_Potion_HFP_Full_Recover224_ptr globalDE_Potion_HFP_Full_Recover224_next(nullptr);
+            static info::globalDE_Potion_HFP_Full_Recover224_clbk globalDE_Potion_HFP_Full_Recover224_user(nullptr);
+            static info::globalDE_Potion_HP_In_Value226_ptr globalDE_Potion_HP_In_Value226_next(nullptr);
+            static info::globalDE_Potion_HP_In_Value226_clbk globalDE_Potion_HP_In_Value226_user(nullptr);
+            static info::globalDE_Potion_Race_Debuff_Clear_One228_ptr globalDE_Potion_Race_Debuff_Clear_One228_next(nullptr);
+            static info::globalDE_Potion_Race_Debuff_Clear_One228_clbk globalDE_Potion_Race_Debuff_Clear_One228_user(nullptr);
+            static info::globalDE_Potion_Race_Debuff_Clear_Two230_ptr globalDE_Potion_Race_Debuff_Clear_Two230_next(nullptr);
+            static info::globalDE_Potion_Race_Debuff_Clear_Two230_clbk globalDE_Potion_Race_Debuff_Clear_Two230_user(nullptr);
+            static info::globalDE_Potion_RemoveAfterEffect232_ptr globalDE_Potion_RemoveAfterEffect232_next(nullptr);
+            static info::globalDE_Potion_RemoveAfterEffect232_clbk globalDE_Potion_RemoveAfterEffect232_user(nullptr);
+            static info::globalDE_Potion_RemoveAllContinousEffect234_ptr globalDE_Potion_RemoveAllContinousEffect234_next(nullptr);
+            static info::globalDE_Potion_RemoveAllContinousEffect234_clbk globalDE_Potion_RemoveAllContinousEffect234_user(nullptr);
+            static info::globalDE_Potion_Revival_Die_Position236_ptr globalDE_Potion_Revival_Die_Position236_next(nullptr);
+            static info::globalDE_Potion_Revival_Die_Position236_clbk globalDE_Potion_Revival_Die_Position236_user(nullptr);
+            static info::globalDE_Potion_SP_In_Value238_ptr globalDE_Potion_SP_In_Value238_next(nullptr);
+            static info::globalDE_Potion_SP_In_Value238_clbk globalDE_Potion_SP_In_Value238_user(nullptr);
+            static info::globalDE_Potion_Trunk_Extend240_ptr globalDE_Potion_Trunk_Extend240_next(nullptr);
+            static info::globalDE_Potion_Trunk_Extend240_clbk globalDE_Potion_Trunk_Extend240_user(nullptr);
+            static info::globalDE_Quick_Revival_Die_Position242_ptr globalDE_Quick_Revival_Die_Position242_next(nullptr);
+            static info::globalDE_Quick_Revival_Die_Position242_clbk globalDE_Quick_Revival_Die_Position242_user(nullptr);
+            static info::globalDE_RecallCommonPlayer244_ptr globalDE_RecallCommonPlayer244_next(nullptr);
+            static info::globalDE_RecallCommonPlayer244_clbk globalDE_RecallCommonPlayer244_user(nullptr);
+            static info::globalDE_RecallPartyMember246_ptr globalDE_RecallPartyMember246_next(nullptr);
+            static info::globalDE_RecallPartyMember246_clbk globalDE_RecallPartyMember246_user(nullptr);
+            static info::globalDE_Recall_After_Stone248_ptr globalDE_Recall_After_Stone248_next(nullptr);
+            static info::globalDE_Recall_After_Stone248_clbk globalDE_Recall_After_Stone248_user(nullptr);
+            static info::globalDE_RecoverAllReturnStateAnimusHPFull250_ptr globalDE_RecoverAllReturnStateAnimusHPFull250_next(nullptr);
+            static info::globalDE_RecoverAllReturnStateAnimusHPFull250_clbk globalDE_RecoverAllReturnStateAnimusHPFull250_user(nullptr);
+            static info::globalDE_Recovery252_ptr globalDE_Recovery252_next(nullptr);
+            static info::globalDE_Recovery252_clbk globalDE_Recovery252_user(nullptr);
+            static info::globalDE_ReleaseMonsterTarget254_ptr globalDE_ReleaseMonsterTarget254_next(nullptr);
+            static info::globalDE_ReleaseMonsterTarget254_clbk globalDE_ReleaseMonsterTarget254_user(nullptr);
+            static info::globalDE_RemoveAllContHelp256_ptr globalDE_RemoveAllContHelp256_next(nullptr);
+            static info::globalDE_RemoveAllContHelp256_clbk globalDE_RemoveAllContHelp256_user(nullptr);
+            static info::globalDE_ReturnBindPosition258_ptr globalDE_ReturnBindPosition258_next(nullptr);
+            static info::globalDE_ReturnBindPosition258_clbk globalDE_ReturnBindPosition258_user(nullptr);
+            static info::globalDE_SPDec260_ptr globalDE_SPDec260_next(nullptr);
+            static info::globalDE_SPDec260_clbk globalDE_SPDec260_user(nullptr);
+            static info::globalDE_STInc262_ptr globalDE_STInc262_next(nullptr);
+            static info::globalDE_STInc262_clbk globalDE_STInc262_user(nullptr);
+            static info::globalDE_SelfDestruction264_ptr globalDE_SelfDestruction264_next(nullptr);
+            static info::globalDE_SelfDestruction264_clbk globalDE_SelfDestruction264_user(nullptr);
+            static info::globalDE_SkillContHelpTimeInc266_ptr globalDE_SkillContHelpTimeInc266_next(nullptr);
+            static info::globalDE_SkillContHelpTimeInc266_clbk globalDE_SkillContHelpTimeInc266_user(nullptr);
+            static info::globalDE_Stun268_ptr globalDE_Stun268_next(nullptr);
+            static info::globalDE_Stun268_clbk globalDE_Stun268_user(nullptr);
+            static info::globalDE_TeleportCommonPlayer270_ptr globalDE_TeleportCommonPlayer270_next(nullptr);
+            static info::globalDE_TeleportCommonPlayer270_clbk globalDE_TeleportCommonPlayer270_user(nullptr);
+            static info::globalDE_Teleport_After_Stone272_ptr globalDE_Teleport_After_Stone272_next(nullptr);
+            static info::globalDE_Teleport_After_Stone272_clbk globalDE_Teleport_After_Stone272_user(nullptr);
+            static info::globalDE_TransDestHP274_ptr globalDE_TransDestHP274_next(nullptr);
+            static info::globalDE_TransDestHP274_clbk globalDE_TransDestHP274_user(nullptr);
+            static info::globalDE_TransMonsterHP276_ptr globalDE_TransMonsterHP276_next(nullptr);
+            static info::globalDE_TransMonsterHP276_clbk globalDE_TransMonsterHP276_user(nullptr);
+            static info::globalDE_ViewWeakPoint278_ptr globalDE_ViewWeakPoint278_next(nullptr);
+            static info::globalDE_ViewWeakPoint278_clbk globalDE_ViewWeakPoint278_user(nullptr);
+            static info::globalDTradeEqualPerson280_ptr globalDTradeEqualPerson280_next(nullptr);
+            static info::globalDTradeEqualPerson280_clbk globalDTradeEqualPerson280_user(nullptr);
+            static info::globalDXUtil_ConvertAnsiStringToGeneric282_ptr globalDXUtil_ConvertAnsiStringToGeneric282_next(nullptr);
+            static info::globalDXUtil_ConvertAnsiStringToGeneric282_clbk globalDXUtil_ConvertAnsiStringToGeneric282_user(nullptr);
+            static info::globalDXUtil_ConvertAnsiStringToWide284_ptr globalDXUtil_ConvertAnsiStringToWide284_next(nullptr);
+            static info::globalDXUtil_ConvertAnsiStringToWide284_clbk globalDXUtil_ConvertAnsiStringToWide284_user(nullptr);
+            static info::globalDXUtil_ConvertGenericStringToAnsi286_ptr globalDXUtil_ConvertGenericStringToAnsi286_next(nullptr);
+            static info::globalDXUtil_ConvertGenericStringToAnsi286_clbk globalDXUtil_ConvertGenericStringToAnsi286_user(nullptr);
+            static info::globalDXUtil_ConvertGenericStringToWide288_ptr globalDXUtil_ConvertGenericStringToWide288_next(nullptr);
+            static info::globalDXUtil_ConvertGenericStringToWide288_clbk globalDXUtil_ConvertGenericStringToWide288_user(nullptr);
+            static info::globalDXUtil_ConvertWideStringToAnsi290_ptr globalDXUtil_ConvertWideStringToAnsi290_next(nullptr);
+            static info::globalDXUtil_ConvertWideStringToAnsi290_clbk globalDXUtil_ConvertWideStringToAnsi290_user(nullptr);
+            static info::globalDXUtil_ConvertWideStringToGeneric292_ptr globalDXUtil_ConvertWideStringToGeneric292_next(nullptr);
+            static info::globalDXUtil_ConvertWideStringToGeneric292_clbk globalDXUtil_ConvertWideStringToGeneric292_user(nullptr);
+            static info::globalDXUtil_FindMediaFile294_ptr globalDXUtil_FindMediaFile294_next(nullptr);
+            static info::globalDXUtil_FindMediaFile294_clbk globalDXUtil_FindMediaFile294_user(nullptr);
+            static info::globalDXUtil_GetDXSDKMediaPath296_ptr globalDXUtil_GetDXSDKMediaPath296_next(nullptr);
+            static info::globalDXUtil_GetDXSDKMediaPath296_clbk globalDXUtil_GetDXSDKMediaPath296_user(nullptr);
+            static info::globalDXUtil_ReadBoolRegKey298_ptr globalDXUtil_ReadBoolRegKey298_next(nullptr);
+            static info::globalDXUtil_ReadBoolRegKey298_clbk globalDXUtil_ReadBoolRegKey298_user(nullptr);
+            static info::globalDXUtil_ReadGuidRegKey300_ptr globalDXUtil_ReadGuidRegKey300_next(nullptr);
+            static info::globalDXUtil_ReadGuidRegKey300_clbk globalDXUtil_ReadGuidRegKey300_user(nullptr);
+            static info::globalDXUtil_ReadIntRegKey302_ptr globalDXUtil_ReadIntRegKey302_next(nullptr);
+            static info::globalDXUtil_ReadIntRegKey302_clbk globalDXUtil_ReadIntRegKey302_user(nullptr);
+            static info::globalDXUtil_ReadStringRegKey304_ptr globalDXUtil_ReadStringRegKey304_next(nullptr);
+            static info::globalDXUtil_ReadStringRegKey304_clbk globalDXUtil_ReadStringRegKey304_user(nullptr);
+            static info::globalDXUtil_Timer306_ptr globalDXUtil_Timer306_next(nullptr);
+            static info::globalDXUtil_Timer306_clbk globalDXUtil_Timer306_user(nullptr);
+            static info::globalDXUtil_Trace308_ptr globalDXUtil_Trace308_next(nullptr);
+            static info::globalDXUtil_Trace308_clbk globalDXUtil_Trace308_user(nullptr);
+            static info::globalDXUtil_WriteBoolRegKey310_ptr globalDXUtil_WriteBoolRegKey310_next(nullptr);
+            static info::globalDXUtil_WriteBoolRegKey310_clbk globalDXUtil_WriteBoolRegKey310_user(nullptr);
+            static info::globalDXUtil_WriteGuidRegKey312_ptr globalDXUtil_WriteGuidRegKey312_next(nullptr);
+            static info::globalDXUtil_WriteGuidRegKey312_clbk globalDXUtil_WriteGuidRegKey312_user(nullptr);
+            static info::globalDXUtil_WriteIntRegKey314_ptr globalDXUtil_WriteIntRegKey314_next(nullptr);
+            static info::globalDXUtil_WriteIntRegKey314_clbk globalDXUtil_WriteIntRegKey314_user(nullptr);
+            static info::globalDXUtil_WriteStringRegKey316_ptr globalDXUtil_WriteStringRegKey316_next(nullptr);
+            static info::globalDXUtil_WriteStringRegKey316_clbk globalDXUtil_WriteStringRegKey316_user(nullptr);
+            static info::globalDeCryptString318_ptr globalDeCryptString318_next(nullptr);
+            static info::globalDeCryptString318_clbk globalDeCryptString318_user(nullptr);
+            static info::globalDeCrypt_Move320_ptr globalDeCrypt_Move320_next(nullptr);
+            static info::globalDeCrypt_Move320_clbk globalDeCrypt_Move320_user(nullptr);
+            static info::globalDebugDrawIndexedPrimitiveTLTex1321_ptr globalDebugDrawIndexedPrimitiveTLTex1321_next(nullptr);
+            static info::globalDebugDrawIndexedPrimitiveTLTex1321_clbk globalDebugDrawIndexedPrimitiveTLTex1321_user(nullptr);
+            static info::globalDebugDrawIndexedPrimitiveUPTex1322_ptr globalDebugDrawIndexedPrimitiveUPTex1322_next(nullptr);
+            static info::globalDebugDrawIndexedPrimitiveUPTex1322_clbk globalDebugDrawIndexedPrimitiveUPTex1322_user(nullptr);
+            static info::globalDebugPushEntityNum323_ptr globalDebugPushEntityNum323_next(nullptr);
+            static info::globalDebugPushEntityNum323_clbk globalDebugPushEntityNum323_user(nullptr);
+            static info::globalDebugPushMagicNum324_ptr globalDebugPushMagicNum324_next(nullptr);
+            static info::globalDebugPushMagicNum324_clbk globalDebugPushMagicNum324_user(nullptr);
+            static info::globalDetailTextureOffStage2325_ptr globalDetailTextureOffStage2325_next(nullptr);
+            static info::globalDetailTextureOffStage2325_clbk globalDetailTextureOffStage2325_user(nullptr);
+            static info::globalDetailTextureOnStage2326_ptr globalDetailTextureOnStage2326_next(nullptr);
+            static info::globalDetailTextureOnStage2326_clbk globalDetailTextureOnStage2326_user(nullptr);
+            static info::globalDfree327_ptr globalDfree327_next(nullptr);
+            static info::globalDfree327_clbk globalDfree327_user(nullptr);
+            static info::globalDisplayANSICodePageStrOutputDebug329_ptr globalDisplayANSICodePageStrOutputDebug329_next(nullptr);
+            static info::globalDisplayANSICodePageStrOutputDebug329_clbk globalDisplayANSICodePageStrOutputDebug329_user(nullptr);
+            static info::globalDisplayItemUpgInfo331_ptr globalDisplayItemUpgInfo331_next(nullptr);
+            static info::globalDisplayItemUpgInfo331_clbk globalDisplayItemUpgInfo331_user(nullptr);
+            static info::globalDmalloc332_ptr globalDmalloc332_next(nullptr);
+            static info::globalDmalloc332_clbk globalDmalloc332_user(nullptr);
+            static info::globalDotProduct333_ptr globalDotProduct333_next(nullptr);
+            static info::globalDotProduct333_clbk globalDotProduct333_user(nullptr);
+            static info::globalDraw2DLine334_ptr globalDraw2DLine334_next(nullptr);
+            static info::globalDraw2DLine334_clbk globalDraw2DLine334_user(nullptr);
+            static info::globalDraw2DLineList335_ptr globalDraw2DLineList335_next(nullptr);
+            static info::globalDraw2DLineList335_clbk globalDraw2DLineList335_user(nullptr);
+            static info::globalDraw2DRectangle336_ptr globalDraw2DRectangle336_next(nullptr);
+            static info::globalDraw2DRectangle336_clbk globalDraw2DRectangle336_user(nullptr);
+            static info::globalDraw2DSprite337_ptr globalDraw2DSprite337_next(nullptr);
+            static info::globalDraw2DSprite337_clbk globalDraw2DSprite337_user(nullptr);
+            static info::globalDraw2DSprite338_ptr globalDraw2DSprite338_next(nullptr);
+            static info::globalDraw2DSprite338_clbk globalDraw2DSprite338_user(nullptr);
+            static info::globalDraw2DSprite339_ptr globalDraw2DSprite339_next(nullptr);
+            static info::globalDraw2DSprite339_clbk globalDraw2DSprite339_user(nullptr);
+            static info::globalDraw2DSprite340_ptr globalDraw2DSprite340_next(nullptr);
+            static info::globalDraw2DSprite340_clbk globalDraw2DSprite340_user(nullptr);
+            static info::globalDraw2DSprite3D341_ptr globalDraw2DSprite3D341_next(nullptr);
+            static info::globalDraw2DSprite3D341_clbk globalDraw2DSprite3D341_user(nullptr);
+            static info::globalDraw2DSprite3D342_ptr globalDraw2DSprite3D342_next(nullptr);
+            static info::globalDraw2DSprite3D342_clbk globalDraw2DSprite3D342_user(nullptr);
+            static info::globalDraw2DSpriteRot343_ptr globalDraw2DSpriteRot343_next(nullptr);
+            static info::globalDraw2DSpriteRot343_clbk globalDraw2DSpriteRot343_user(nullptr);
+            static info::globalDraw2DSpriteRot344_ptr globalDraw2DSpriteRot344_next(nullptr);
+            static info::globalDraw2DSpriteRot344_clbk globalDraw2DSpriteRot344_user(nullptr);
+            static info::globalDraw2DSpriteRot3D345_ptr globalDraw2DSpriteRot3D345_next(nullptr);
+            static info::globalDraw2DSpriteRot3D345_clbk globalDraw2DSpriteRot3D345_user(nullptr);
+            static info::globalDraw2DSpriteRot3D346_ptr globalDraw2DSpriteRot3D346_next(nullptr);
+            static info::globalDraw2DSpriteRot3D346_clbk globalDraw2DSpriteRot3D346_user(nullptr);
+            static info::globalDraw2DSpriteSub347_ptr globalDraw2DSpriteSub347_next(nullptr);
+            static info::globalDraw2DSpriteSub347_clbk globalDraw2DSpriteSub347_user(nullptr);
+            static info::globalDraw2DTexture348_ptr globalDraw2DTexture348_next(nullptr);
+            static info::globalDraw2DTexture348_clbk globalDraw2DTexture348_user(nullptr);
+            static info::globalDraw3DSprite349_ptr globalDraw3DSprite349_next(nullptr);
+            static info::globalDraw3DSprite349_clbk globalDraw3DSprite349_user(nullptr);
+            static info::globalDrawAlphaStack350_ptr globalDrawAlphaStack350_next(nullptr);
+            static info::globalDrawAlphaStack350_clbk globalDrawAlphaStack350_user(nullptr);
+            static info::globalDrawBlurRect351_ptr globalDrawBlurRect351_next(nullptr);
+            static info::globalDrawBlurRect351_clbk globalDrawBlurRect351_user(nullptr);
+            static info::globalDrawBlurVBuffer352_ptr globalDrawBlurVBuffer352_next(nullptr);
+            static info::globalDrawBlurVBuffer352_clbk globalDrawBlurVBuffer352_user(nullptr);
+            static info::globalDrawCParticle353_ptr globalDrawCParticle353_next(nullptr);
+            static info::globalDrawCParticle353_clbk globalDrawCParticle353_user(nullptr);
+            static info::globalDrawEtcPrint354_ptr globalDrawEtcPrint354_next(nullptr);
+            static info::globalDrawEtcPrint354_clbk globalDrawEtcPrint354_user(nullptr);
+            static info::globalDrawFadeSKy355_ptr globalDrawFadeSKy355_next(nullptr);
+            static info::globalDrawFadeSKy355_clbk globalDrawFadeSKy355_user(nullptr);
+            static info::globalDrawFadeScreen356_ptr globalDrawFadeScreen356_next(nullptr);
+            static info::globalDrawFadeScreen356_clbk globalDrawFadeScreen356_user(nullptr);
+            static info::globalDrawFadeTex357_ptr globalDrawFadeTex357_next(nullptr);
+            static info::globalDrawFadeTex357_clbk globalDrawFadeTex357_user(nullptr);
+            static info::globalDrawFullScreenLava358_ptr globalDrawFullScreenLava358_next(nullptr);
+            static info::globalDrawFullScreenLava358_clbk globalDrawFullScreenLava358_user(nullptr);
+            static info::globalDrawIndexedPrimitiveTLTex1359_ptr globalDrawIndexedPrimitiveTLTex1359_next(nullptr);
+            static info::globalDrawIndexedPrimitiveTLTex1359_clbk globalDrawIndexedPrimitiveTLTex1359_user(nullptr);
+            static info::globalDrawIndexedPrimitiveUPTex1360_ptr globalDrawIndexedPrimitiveUPTex1360_next(nullptr);
+            static info::globalDrawIndexedPrimitiveUPTex1360_clbk globalDrawIndexedPrimitiveUPTex1360_user(nullptr);
+            static info::globalDrawIndexedTLVertex361_ptr globalDrawIndexedTLVertex361_next(nullptr);
+            static info::globalDrawIndexedTLVertex361_clbk globalDrawIndexedTLVertex361_user(nullptr);
+            static info::globalDrawIndexedTex1VertexUP362_ptr globalDrawIndexedTex1VertexUP362_next(nullptr);
+            static info::globalDrawIndexedTex1VertexUP362_clbk globalDrawIndexedTex1VertexUP362_user(nullptr);
+            static info::globalDrawLensFlare363_ptr globalDrawLensFlare363_next(nullptr);
+            static info::globalDrawLensFlare363_clbk globalDrawLensFlare363_user(nullptr);
+            static info::globalDrawLightMapGroup364_ptr globalDrawLightMapGroup364_next(nullptr);
+            static info::globalDrawLightMapGroup364_clbk globalDrawLightMapGroup364_user(nullptr);
+            static info::globalDrawLogo365_ptr globalDrawLogo365_next(nullptr);
+            static info::globalDrawLogo365_clbk globalDrawLogo365_user(nullptr);
+            static info::globalDrawOneMatGroup366_ptr globalDrawOneMatGroup366_next(nullptr);
+            static info::globalDrawOneMatGroup366_clbk globalDrawOneMatGroup366_user(nullptr);
+            static info::globalDrawOneMatGroup367_ptr globalDrawOneMatGroup367_next(nullptr);
+            static info::globalDrawOneMatGroup367_clbk globalDrawOneMatGroup367_user(nullptr);
+            static info::globalDrawParticlePointSprite368_ptr globalDrawParticlePointSprite368_next(nullptr);
+            static info::globalDrawParticlePointSprite368_clbk globalDrawParticlePointSprite368_user(nullptr);
+            static info::globalDrawParticlePolygon369_ptr globalDrawParticlePolygon369_next(nullptr);
+            static info::globalDrawParticlePolygon369_clbk globalDrawParticlePolygon369_user(nullptr);
+            static info::globalDrawPrimitiveTLTex1370_ptr globalDrawPrimitiveTLTex1370_next(nullptr);
+            static info::globalDrawPrimitiveTLTex1370_clbk globalDrawPrimitiveTLTex1370_user(nullptr);
+            static info::globalDrawPrimitiveUPLine371_ptr globalDrawPrimitiveUPLine371_next(nullptr);
+            static info::globalDrawPrimitiveUPLine371_clbk globalDrawPrimitiveUPLine371_user(nullptr);
+            static info::globalDrawPrimitiveUPPoint372_ptr globalDrawPrimitiveUPPoint372_next(nullptr);
+            static info::globalDrawPrimitiveUPPoint372_clbk globalDrawPrimitiveUPPoint372_user(nullptr);
+            static info::globalDrawPrimitiveUPPoly373_ptr globalDrawPrimitiveUPPoly373_next(nullptr);
+            static info::globalDrawPrimitiveUPPoly373_clbk globalDrawPrimitiveUPPoly373_user(nullptr);
+            static info::globalDrawPrimitiveUPTLLine374_ptr globalDrawPrimitiveUPTLLine374_next(nullptr);
+            static info::globalDrawPrimitiveUPTLLine374_clbk globalDrawPrimitiveUPTLLine374_user(nullptr);
+            static info::globalDrawPrimitiveUPTex1375_ptr globalDrawPrimitiveUPTex1375_next(nullptr);
+            static info::globalDrawPrimitiveUPTex1375_clbk globalDrawPrimitiveUPTex1375_user(nullptr);
+            static info::globalDrawPrimitiveUPTex1376_ptr globalDrawPrimitiveUPTex1376_next(nullptr);
+            static info::globalDrawPrimitiveUPTex1376_clbk globalDrawPrimitiveUPTex1376_user(nullptr);
+            static info::globalDrawPrimitiveUPTex1Strip377_ptr globalDrawPrimitiveUPTex1Strip377_next(nullptr);
+            static info::globalDrawPrimitiveUPTex1Strip377_clbk globalDrawPrimitiveUPTex1Strip377_user(nullptr);
+            static info::globalDrawPrimitiveUPTex2378_ptr globalDrawPrimitiveUPTex2378_next(nullptr);
+            static info::globalDrawPrimitiveUPTex2378_clbk globalDrawPrimitiveUPTex2378_user(nullptr);
+            static info::globalDrawR3Hangul3DA379_ptr globalDrawR3Hangul3DA379_next(nullptr);
+            static info::globalDrawR3Hangul3DA379_clbk globalDrawR3Hangul3DA379_user(nullptr);
+            static info::globalDrawR3Hangul3DW380_ptr globalDrawR3Hangul3DW380_next(nullptr);
+            static info::globalDrawR3Hangul3DW380_clbk globalDrawR3Hangul3DW380_user(nullptr);
+            static info::globalDrawR3HangulA381_ptr globalDrawR3HangulA381_next(nullptr);
+            static info::globalDrawR3HangulA381_clbk globalDrawR3HangulA381_user(nullptr);
+            static info::globalDrawR3HangulA382_ptr globalDrawR3HangulA382_next(nullptr);
+            static info::globalDrawR3HangulA382_clbk globalDrawR3HangulA382_user(nullptr);
+            static info::globalDrawR3HangulW383_ptr globalDrawR3HangulW383_next(nullptr);
+            static info::globalDrawR3HangulW383_clbk globalDrawR3HangulW383_user(nullptr);
+            static info::globalDrawR3HangulW384_ptr globalDrawR3HangulW384_next(nullptr);
+            static info::globalDrawR3HangulW384_clbk globalDrawR3HangulW384_user(nullptr);
+            static info::globalDrawRect385_ptr globalDrawRect385_next(nullptr);
+            static info::globalDrawRect385_clbk globalDrawRect385_user(nullptr);
+            static info::globalDrawReflectionOneMatGroup386_ptr globalDrawReflectionOneMatGroup386_next(nullptr);
+            static info::globalDrawReflectionOneMatGroup386_clbk globalDrawReflectionOneMatGroup386_user(nullptr);
+            static info::globalDrawShadow387_ptr globalDrawShadow387_next(nullptr);
+            static info::globalDrawShadow387_clbk globalDrawShadow387_user(nullptr);
+            static info::globalDrawSpectialParticle388_ptr globalDrawSpectialParticle388_next(nullptr);
+            static info::globalDrawSpectialParticle388_clbk globalDrawSpectialParticle388_user(nullptr);
+            static info::globalDrawSpectialParticle1389_ptr globalDrawSpectialParticle1389_next(nullptr);
+            static info::globalDrawSpectialParticle1389_clbk globalDrawSpectialParticle1389_user(nullptr);
+            static info::globalDrawStripOneMatGroup390_ptr globalDrawStripOneMatGroup390_next(nullptr);
+            static info::globalDrawStripOneMatGroup390_clbk globalDrawStripOneMatGroup390_user(nullptr);
+            static info::globalDrawTLVertex391_ptr globalDrawTLVertex391_next(nullptr);
+            static info::globalDrawTLVertex391_clbk globalDrawTLVertex391_user(nullptr);
+            static info::globalDrawTLVertex392_ptr globalDrawTLVertex392_next(nullptr);
+            static info::globalDrawTLVertex392_clbk globalDrawTLVertex392_user(nullptr);
+            static info::globalDrawTestBox393_ptr globalDrawTestBox393_next(nullptr);
+            static info::globalDrawTestBox393_clbk globalDrawTestBox393_user(nullptr);
+            static info::globalEnCryptString395_ptr globalEnCryptString395_next(nullptr);
+            static info::globalEnCryptString395_clbk globalEnCryptString395_user(nullptr);
+            static info::globalEnCrypt_Move397_ptr globalEnCrypt_Move397_next(nullptr);
+            static info::globalEnCrypt_Move397_clbk globalEnCrypt_Move397_user(nullptr);
+            static info::globalError398_ptr globalError398_next(nullptr);
+            static info::globalError398_clbk globalError398_user(nullptr);
+            static info::globalErrorButRun399_ptr globalErrorButRun399_next(nullptr);
+            static info::globalErrorButRun399_clbk globalErrorButRun399_user(nullptr);
+            static info::globalExtractVertex400_ptr globalExtractVertex400_next(nullptr);
+            static info::globalExtractVertex400_clbk globalExtractVertex400_user(nullptr);
+            static info::globalF402_ptr globalF402_next(nullptr);
+            static info::globalF402_clbk globalF402_user(nullptr);
+            static info::globalF2DW403_ptr globalF2DW403_next(nullptr);
+            static info::globalF2DW403_clbk globalF2DW403_user(nullptr);
+            static info::globalFastBBoShasiToFrameBuffer404_ptr globalFastBBoShasiToFrameBuffer404_next(nullptr);
+            static info::globalFastBBoShasiToFrameBuffer404_clbk globalFastBBoShasiToFrameBuffer404_user(nullptr);
+            static info::globalFastCmp405_ptr globalFastCmp405_next(nullptr);
+            static info::globalFastCmp405_clbk globalFastCmp405_user(nullptr);
+            static info::globalFatalError406_ptr globalFatalError406_next(nullptr);
+            static info::globalFatalError406_clbk globalFatalError406_user(nullptr);
+            static info::globalFindAllFile408_ptr globalFindAllFile408_next(nullptr);
+            static info::globalFindAllFile408_clbk globalFindAllFile408_user(nullptr);
+            static info::globalFindEmptyAnimus410_ptr globalFindEmptyAnimus410_next(nullptr);
+            static info::globalFindEmptyAnimus410_clbk globalFindEmptyAnimus410_user(nullptr);
+            static info::globalFindEmptyNPC412_ptr globalFindEmptyNPC412_next(nullptr);
+            static info::globalFindEmptyNPC412_clbk globalFindEmptyNPC412_user(nullptr);
+            static info::globalFindEmptyParkingUnit414_ptr globalFindEmptyParkingUnit414_next(nullptr);
+            static info::globalFindEmptyParkingUnit414_clbk globalFindEmptyParkingUnit414_user(nullptr);
+            static info::globalFixTalikItemIndex416_ptr globalFixTalikItemIndex416_next(nullptr);
+            static info::globalFixTalikItemIndex416_clbk globalFixTalikItemIndex416_user(nullptr);
+            static info::globalFloatToShort418_ptr globalFloatToShort418_next(nullptr);
+            static info::globalFloatToShort418_clbk globalFloatToShort418_user(nullptr);
+            static info::globalForce32BitRendering419_ptr globalForce32BitRendering419_next(nullptr);
+            static info::globalForce32BitRendering419_clbk globalForce32BitRendering419_user(nullptr);
+            static info::globalForceFullScreen420_ptr globalForceFullScreen420_next(nullptr);
+            static info::globalForceFullScreen420_clbk globalForceFullScreen420_user(nullptr);
+            static info::globalFramebufferToBMP421_ptr globalFramebufferToBMP421_next(nullptr);
+            static info::globalFramebufferToBMP421_clbk globalFramebufferToBMP421_user(nullptr);
+            static info::globalFramebufferToJPG422_ptr globalFramebufferToJPG422_next(nullptr);
+            static info::globalFramebufferToJPG422_clbk globalFramebufferToJPG422_user(nullptr);
+            static info::globalFreePointer423_ptr globalFreePointer423_next(nullptr);
+            static info::globalFreePointer423_clbk globalFreePointer423_user(nullptr);
+            static info::globalFtoDW424_ptr globalFtoDW424_next(nullptr);
+            static info::globalFtoDW424_clbk globalFtoDW424_user(nullptr);
+            static info::globalFullScreenEffect425_ptr globalFullScreenEffect425_next(nullptr);
+            static info::globalFullScreenEffect425_clbk globalFullScreenEffect425_user(nullptr);
+            static info::globalG427_ptr globalG427_next(nullptr);
+            static info::globalG427_clbk globalG427_user(nullptr);
+            static info::globalGet1st1024x1024TexRender428_ptr globalGet1st1024x1024TexRender428_next(nullptr);
+            static info::globalGet1st1024x1024TexRender428_clbk globalGet1st1024x1024TexRender428_user(nullptr);
+            static info::globalGet1st256x256TexRender429_ptr globalGet1st256x256TexRender429_next(nullptr);
+            static info::globalGet1st256x256TexRender429_clbk globalGet1st256x256TexRender429_user(nullptr);
+            static info::globalGet1st512x512TexRender430_ptr globalGet1st512x512TexRender430_next(nullptr);
+            static info::globalGet1st512x512TexRender430_clbk globalGet1st512x512TexRender430_user(nullptr);
+            static info::globalGet2DTo3DTranslation431_ptr globalGet2DTo3DTranslation431_next(nullptr);
+            static info::globalGet2DTo3DTranslation431_clbk globalGet2DTo3DTranslation431_user(nullptr);
+            static info::globalGet2nd256x256TexRender432_ptr globalGet2nd256x256TexRender432_next(nullptr);
+            static info::globalGet2nd256x256TexRender432_clbk globalGet2nd256x256TexRender432_user(nullptr);
+            static info::globalGet2nd512x512TexRender433_ptr globalGet2nd512x512TexRender433_next(nullptr);
+            static info::globalGet2nd512x512TexRender433_clbk globalGet2nd512x512TexRender433_user(nullptr);
+            static info::globalGet3DSqrt435_ptr globalGet3DSqrt435_next(nullptr);
+            static info::globalGet3DSqrt435_clbk globalGet3DSqrt435_user(nullptr);
+            static info::globalGetAddrString437_ptr globalGetAddrString437_next(nullptr);
+            static info::globalGetAddrString437_clbk globalGetAddrString437_user(nullptr);
+            static info::globalGetAllPlayingWaves438_ptr globalGetAllPlayingWaves438_next(nullptr);
+            static info::globalGetAllPlayingWaves438_clbk globalGetAllPlayingWaves438_user(nullptr);
+            static info::globalGetAngle440_ptr globalGetAngle440_next(nullptr);
+            static info::globalGetAngle440_clbk globalGetAngle440_user(nullptr);
+            static info::globalGetAniMatrix441_ptr globalGetAniMatrix441_next(nullptr);
+            static info::globalGetAniMatrix441_clbk globalGetAniMatrix441_user(nullptr);
+            static info::globalGetAnimusFldFromExp443_ptr globalGetAnimusFldFromExp443_next(nullptr);
+            static info::globalGetAnimusFldFromExp443_clbk globalGetAnimusFldFromExp443_user(nullptr);
+            static info::globalGetAnimusFldFromLv445_ptr globalGetAnimusFldFromLv445_next(nullptr);
+            static info::globalGetAnimusFldFromLv445_clbk globalGetAnimusFldFromLv445_user(nullptr);
+            static info::globalGetAvailableVidMem446_ptr globalGetAvailableVidMem446_next(nullptr);
+            static info::globalGetAvailableVidMem446_clbk globalGetAvailableVidMem446_user(nullptr);
+            static info::globalGetBBoxRotate447_ptr globalGetBBoxRotate447_next(nullptr);
+            static info::globalGetBBoxRotate447_clbk globalGetBBoxRotate447_user(nullptr);
+            static info::globalGetBezierPoint448_ptr globalGetBezierPoint448_next(nullptr);
+            static info::globalGetBezierPoint448_clbk globalGetBezierPoint448_user(nullptr);
+            static info::globalGetBillboardMatrix449_ptr globalGetBillboardMatrix449_next(nullptr);
+            static info::globalGetBillboardMatrix449_clbk globalGetBillboardMatrix449_user(nullptr);
+            static info::globalGetBitAfterDowngrade451_ptr globalGetBitAfterDowngrade451_next(nullptr);
+            static info::globalGetBitAfterDowngrade451_clbk globalGetBitAfterDowngrade451_user(nullptr);
+            static info::globalGetBitAfterSetLimSocket453_ptr globalGetBitAfterSetLimSocket453_next(nullptr);
+            static info::globalGetBitAfterSetLimSocket453_clbk globalGetBitAfterSetLimSocket453_user(nullptr);
+            static info::globalGetBitAfterUpgrade455_ptr globalGetBitAfterUpgrade455_next(nullptr);
+            static info::globalGetBitAfterUpgrade455_clbk globalGetBitAfterUpgrade455_user(nullptr);
+            static info::globalGetBoldSubLeng456_ptr globalGetBoldSubLeng456_next(nullptr);
+            static info::globalGetBoldSubLeng456_clbk globalGetBoldSubLeng456_user(nullptr);
+            static info::globalGetBumpFactor457_ptr globalGetBumpFactor457_next(nullptr);
+            static info::globalGetBumpFactor457_clbk globalGetBumpFactor457_user(nullptr);
+            static info::globalGetCameraPos458_ptr globalGetCameraPos458_next(nullptr);
+            static info::globalGetCameraPos458_clbk globalGetCameraPos458_user(nullptr);
+            static info::globalGetCharFromKey459_ptr globalGetCharFromKey459_next(nullptr);
+            static info::globalGetCharFromKey459_clbk globalGetCharFromKey459_user(nullptr);
+            static info::globalGetCheckTimeFromCombineExCheckKey461_ptr globalGetCheckTimeFromCombineExCheckKey461_next(nullptr);
+            static info::globalGetCheckTimeFromCombineExCheckKey461_clbk globalGetCheckTimeFromCombineExCheckKey461_user(nullptr);
+            static info::globalGetColorToColorAlpha462_ptr globalGetColorToColorAlpha462_next(nullptr);
+            static info::globalGetColorToColorAlpha462_clbk globalGetColorToColorAlpha462_user(nullptr);
+            static info::globalGetConnectTime_AddBySec464_ptr globalGetConnectTime_AddBySec464_next(nullptr);
+            static info::globalGetConnectTime_AddBySec464_clbk globalGetConnectTime_AddBySec464_user(nullptr);
+            static info::globalGetConsoleStateB465_ptr globalGetConsoleStateB465_next(nullptr);
+            static info::globalGetConsoleStateB465_clbk globalGetConsoleStateB465_user(nullptr);
+            static info::globalGetContrast466_ptr globalGetContrast466_next(nullptr);
+            static info::globalGetContrast466_clbk globalGetContrast466_user(nullptr);
+            static info::globalGetCurDay468_ptr globalGetCurDay468_next(nullptr);
+            static info::globalGetCurDay468_clbk globalGetCurDay468_user(nullptr);
+            static info::globalGetCurHour470_ptr globalGetCurHour470_next(nullptr);
+            static info::globalGetCurHour470_clbk globalGetCurHour470_user(nullptr);
+            static info::globalGetCurrentDay472_ptr globalGetCurrentDay472_next(nullptr);
+            static info::globalGetCurrentDay472_clbk globalGetCurrentDay472_user(nullptr);
+            static info::globalGetCurrentHour474_ptr globalGetCurrentHour474_next(nullptr);
+            static info::globalGetCurrentHour474_clbk globalGetCurrentHour474_user(nullptr);
+            static info::globalGetCurrentMin476_ptr globalGetCurrentMin476_next(nullptr);
+            static info::globalGetCurrentMin476_clbk globalGetCurrentMin476_user(nullptr);
+            static info::globalGetCurrentMonth478_ptr globalGetCurrentMonth478_next(nullptr);
+            static info::globalGetCurrentMonth478_clbk globalGetCurrentMonth478_user(nullptr);
+            static info::globalGetCurrentSec480_ptr globalGetCurrentSec480_next(nullptr);
+            static info::globalGetCurrentSec480_clbk globalGetCurrentSec480_user(nullptr);
+            static info::globalGetCurrentYear482_ptr globalGetCurrentYear482_next(nullptr);
+            static info::globalGetCurrentYear482_clbk globalGetCurrentYear482_user(nullptr);
+            static info::globalGetCurwDay484_ptr globalGetCurwDay484_next(nullptr);
+            static info::globalGetCurwDay484_clbk globalGetCurwDay484_user(nullptr);
+            static info::globalGetD3DTexture485_ptr globalGetD3DTexture485_next(nullptr);
+            static info::globalGetD3DTexture485_clbk globalGetD3DTexture485_user(nullptr);
+            static info::globalGetD3DTextureFromBuffer486_ptr globalGetD3DTextureFromBuffer486_next(nullptr);
+            static info::globalGetD3DTextureFromBuffer486_clbk globalGetD3DTextureFromBuffer486_user(nullptr);
+            static info::globalGetD3dDevice487_ptr globalGetD3dDevice487_next(nullptr);
+            static info::globalGetD3dDevice487_clbk globalGetD3dDevice487_user(nullptr);
+            static info::globalGetDDSTexFromBuffer488_ptr globalGetDDSTexFromBuffer488_next(nullptr);
+            static info::globalGetDDSTexFromBuffer488_clbk globalGetDDSTexFromBuffer488_user(nullptr);
+            static info::globalGetDateStrAfterDay490_ptr globalGetDateStrAfterDay490_next(nullptr);
+            static info::globalGetDateStrAfterDay490_clbk globalGetDateStrAfterDay490_user(nullptr);
+            static info::globalGetDateTimeStr492_ptr globalGetDateTimeStr492_next(nullptr);
+            static info::globalGetDateTimeStr492_clbk globalGetDateTimeStr492_user(nullptr);
+            static info::globalGetDefItemUpgSocketNum494_ptr globalGetDefItemUpgSocketNum494_next(nullptr);
+            static info::globalGetDefItemUpgSocketNum494_clbk globalGetDefItemUpgSocketNum494_user(nullptr);
+            static info::globalGetDensityFromPos495_ptr globalGetDensityFromPos495_next(nullptr);
+            static info::globalGetDensityFromPos495_clbk globalGetDensityFromPos495_user(nullptr);
+            static info::globalGetDirection497_ptr globalGetDirection497_next(nullptr);
+            static info::globalGetDirection497_clbk globalGetDirection497_user(nullptr);
+            static info::globalGetDist498_ptr globalGetDist498_next(nullptr);
+            static info::globalGetDist498_clbk globalGetDist498_user(nullptr);
+            static info::globalGetDmallocCnt499_ptr globalGetDmallocCnt499_next(nullptr);
+            static info::globalGetDmallocCnt499_clbk globalGetDmallocCnt499_user(nullptr);
+            static info::globalGetDmallocSize500_ptr globalGetDmallocSize500_next(nullptr);
+            static info::globalGetDmallocSize500_clbk globalGetDmallocSize500_user(nullptr);
+            static info::globalGetDuration501_ptr globalGetDuration501_next(nullptr);
+            static info::globalGetDuration501_clbk globalGetDuration501_user(nullptr);
+            static info::globalGetDynamicLight502_ptr globalGetDynamicLight502_next(nullptr);
+            static info::globalGetDynamicLight502_clbk globalGetDynamicLight502_user(nullptr);
+            static info::globalGetDynamicLightBBox503_ptr globalGetDynamicLightBBox503_next(nullptr);
+            static info::globalGetDynamicLightBBox503_clbk globalGetDynamicLightBBox503_user(nullptr);
+            static info::globalGetDynamicLightNum504_ptr globalGetDynamicLightNum504_next(nullptr);
+            static info::globalGetDynamicLightNum504_clbk globalGetDynamicLightNum504_user(nullptr);
+            static info::globalGetEXT505_ptr globalGetEXT505_next(nullptr);
+            static info::globalGetEXT505_clbk globalGetEXT505_user(nullptr);
+            static info::globalGetEmptyGuildData507_ptr globalGetEmptyGuildData507_next(nullptr);
+            static info::globalGetEmptyGuildData507_clbk globalGetEmptyGuildData507_user(nullptr);
+            static info::globalGetEntityAnimationPos508_ptr globalGetEntityAnimationPos508_next(nullptr);
+            static info::globalGetEntityAnimationPos508_clbk globalGetEntityAnimationPos508_user(nullptr);
+            static info::globalGetExcelIndexFromCombineExCheckKey510_ptr globalGetExcelIndexFromCombineExCheckKey510_next(nullptr);
+            static info::globalGetExcelIndexFromCombineExCheckKey510_clbk globalGetExcelIndexFromCombineExCheckKey510_user(nullptr);
+            static info::globalGetFPS511_ptr globalGetFPS511_next(nullptr);
+            static info::globalGetFPS511_clbk globalGetFPS511_user(nullptr);
+            static info::globalGetFileSize512_ptr globalGetFileSize512_next(nullptr);
+            static info::globalGetFileSize512_clbk globalGetFileSize512_user(nullptr);
+            static info::globalGetFileSizeAndMergeFile513_ptr globalGetFileSizeAndMergeFile513_next(nullptr);
+            static info::globalGetFileSizeAndMergeFile513_clbk globalGetFileSizeAndMergeFile513_user(nullptr);
+            static info::globalGetFinalBilloardMatrix514_ptr globalGetFinalBilloardMatrix514_next(nullptr);
+            static info::globalGetFinalBilloardMatrix514_clbk globalGetFinalBilloardMatrix514_user(nullptr);
+            static info::globalGetFinalPath515_ptr globalGetFinalPath515_next(nullptr);
+            static info::globalGetFinalPath515_clbk globalGetFinalPath515_user(nullptr);
+            static info::globalGetFloatMod516_ptr globalGetFloatMod516_next(nullptr);
+            static info::globalGetFloatMod516_clbk globalGetFloatMod516_user(nullptr);
+            static info::globalGetFogColor517_ptr globalGetFogColor517_next(nullptr);
+            static info::globalGetFogColor517_clbk globalGetFogColor517_user(nullptr);
+            static info::globalGetFrustumNormalPlane518_ptr globalGetFrustumNormalPlane518_next(nullptr);
+            static info::globalGetFrustumNormalPlane518_clbk globalGetFrustumNormalPlane518_user(nullptr);
+            static info::globalGetGlobalMusicVolume519_ptr globalGetGlobalMusicVolume519_next(nullptr);
+            static info::globalGetGlobalMusicVolume519_clbk globalGetGlobalMusicVolume519_user(nullptr);
+            static info::globalGetGlobalWavVolume520_ptr globalGetGlobalWavVolume520_next(nullptr);
+            static info::globalGetGlobalWavVolume520_clbk globalGetGlobalWavVolume520_user(nullptr);
+            static info::globalGetGravity521_ptr globalGetGravity521_next(nullptr);
+            static info::globalGetGravity521_clbk globalGetGravity521_user(nullptr);
+            static info::globalGetGuildDataFromSerial523_ptr globalGetGuildDataFromSerial523_next(nullptr);
+            static info::globalGetGuildDataFromSerial523_clbk globalGetGuildDataFromSerial523_user(nullptr);
+            static info::globalGetGuildPtrFromName525_ptr globalGetGuildPtrFromName525_next(nullptr);
+            static info::globalGetGuildPtrFromName525_clbk globalGetGuildPtrFromName525_user(nullptr);
+            static info::globalGetHeadMatrix526_ptr globalGetHeadMatrix526_next(nullptr);
+            static info::globalGetHeadMatrix526_clbk globalGetHeadMatrix526_user(nullptr);
+            static info::globalGetIPAddress528_ptr globalGetIPAddress528_next(nullptr);
+            static info::globalGetIPAddress528_clbk globalGetIPAddress528_user(nullptr);
+            static info::globalGetIPAddress530_ptr globalGetIPAddress530_next(nullptr);
+            static info::globalGetIPAddress530_clbk globalGetIPAddress530_user(nullptr);
+            static info::globalGetIPAddress532_ptr globalGetIPAddress532_next(nullptr);
+            static info::globalGetIPAddress532_clbk globalGetIPAddress532_user(nullptr);
+            static info::globalGetInverseTransformVertex533_ptr globalGetInverseTransformVertex533_next(nullptr);
+            static info::globalGetInverseTransformVertex533_clbk globalGetInverseTransformVertex533_user(nullptr);
+            static info::globalGetItemDurPoint535_ptr globalGetItemDurPoint535_next(nullptr);
+            static info::globalGetItemDurPoint535_clbk globalGetItemDurPoint535_user(nullptr);
+            static info::globalGetItemEquipCivil537_ptr globalGetItemEquipCivil537_next(nullptr);
+            static info::globalGetItemEquipCivil537_clbk globalGetItemEquipCivil537_user(nullptr);
+            static info::globalGetItemEquipGrade539_ptr globalGetItemEquipGrade539_next(nullptr);
+            static info::globalGetItemEquipGrade539_clbk globalGetItemEquipGrade539_user(nullptr);
+            static info::globalGetItemEquipGrade541_ptr globalGetItemEquipGrade541_next(nullptr);
+            static info::globalGetItemEquipGrade541_clbk globalGetItemEquipGrade541_user(nullptr);
+            static info::globalGetItemEquipLevel543_ptr globalGetItemEquipLevel543_next(nullptr);
+            static info::globalGetItemEquipLevel543_clbk globalGetItemEquipLevel543_user(nullptr);
+            static info::globalGetItemEquipMastery545_ptr globalGetItemEquipMastery545_next(nullptr);
+            static info::globalGetItemEquipMastery545_clbk globalGetItemEquipMastery545_user(nullptr);
+            static info::globalGetItemEquipUpLevel547_ptr globalGetItemEquipUpLevel547_next(nullptr);
+            static info::globalGetItemEquipUpLevel547_clbk globalGetItemEquipUpLevel547_user(nullptr);
+            static info::globalGetItemGoldPoint549_ptr globalGetItemGoldPoint549_next(nullptr);
+            static info::globalGetItemGoldPoint549_clbk globalGetItemGoldPoint549_user(nullptr);
+            static info::globalGetItemGrade551_ptr globalGetItemGrade551_next(nullptr);
+            static info::globalGetItemGrade551_clbk globalGetItemGrade551_user(nullptr);
+            static info::globalGetItemKillPoint553_ptr globalGetItemKillPoint553_next(nullptr);
+            static info::globalGetItemKillPoint553_clbk globalGetItemKillPoint553_user(nullptr);
+            static info::globalGetItemKindCode555_ptr globalGetItemKindCode555_next(nullptr);
+            static info::globalGetItemKindCode555_clbk globalGetItemKindCode555_user(nullptr);
+            static info::globalGetItemKorName557_ptr globalGetItemKorName557_next(nullptr);
+            static info::globalGetItemKorName557_clbk globalGetItemKorName557_user(nullptr);
+            static info::globalGetItemProcPoint559_ptr globalGetItemProcPoint559_next(nullptr);
+            static info::globalGetItemProcPoint559_clbk globalGetItemProcPoint559_user(nullptr);
+            static info::globalGetItemStdPoint561_ptr globalGetItemStdPoint561_next(nullptr);
+            static info::globalGetItemStdPoint561_clbk globalGetItemStdPoint561_user(nullptr);
+            static info::globalGetItemStdPrice563_ptr globalGetItemStdPrice563_next(nullptr);
+            static info::globalGetItemStdPrice563_clbk globalGetItemStdPrice563_user(nullptr);
+            static info::globalGetItemStoragePrice565_ptr globalGetItemStoragePrice565_next(nullptr);
+            static info::globalGetItemStoragePrice565_clbk globalGetItemStoragePrice565_user(nullptr);
+            static info::globalGetItemTableCode567_ptr globalGetItemTableCode567_next(nullptr);
+            static info::globalGetItemTableCode567_clbk globalGetItemTableCode567_user(nullptr);
+            static info::globalGetItemUpgLimSocket569_ptr globalGetItemUpgLimSocket569_next(nullptr);
+            static info::globalGetItemUpgLimSocket569_clbk globalGetItemUpgLimSocket569_user(nullptr);
+            static info::globalGetItemUpgedLv571_ptr globalGetItemUpgedLv571_next(nullptr);
+            static info::globalGetItemUpgedLv571_clbk globalGetItemUpgedLv571_user(nullptr);
+            static info::globalGetJPGDimensions572_ptr globalGetJPGDimensions572_next(nullptr);
+            static info::globalGetJPGDimensions572_clbk globalGetJPGDimensions572_user(nullptr);
+            static info::globalGetKorLocalTime574_ptr globalGetKorLocalTime574_next(nullptr);
+            static info::globalGetKorLocalTime574_clbk globalGetKorLocalTime574_user(nullptr);
+            static info::globalGetLastWriteFileTime576_ptr globalGetLastWriteFileTime576_next(nullptr);
+            static info::globalGetLastWriteFileTime576_clbk globalGetLastWriteFileTime576_user(nullptr);
+            static info::globalGetLightMapColor577_ptr globalGetLightMapColor577_next(nullptr);
+            static info::globalGetLightMapColor577_clbk globalGetLightMapColor577_user(nullptr);
+            static info::globalGetLightMapSurface578_ptr globalGetLightMapSurface578_next(nullptr);
+            static info::globalGetLightMapSurface578_clbk globalGetLightMapSurface578_user(nullptr);
+            static info::globalGetLightMapTexSize579_ptr globalGetLightMapTexSize579_next(nullptr);
+            static info::globalGetLightMapTexSize579_clbk globalGetLightMapTexSize579_user(nullptr);
+            static info::globalGetLocalDate581_ptr globalGetLocalDate581_next(nullptr);
+            static info::globalGetLocalDate581_clbk globalGetLocalDate581_user(nullptr);
+            static info::globalGetLoopTime583_ptr globalGetLoopTime583_next(nullptr);
+            static info::globalGetLoopTime583_clbk globalGetLoopTime583_user(nullptr);
+            static info::globalGetMacAddrString585_ptr globalGetMacAddrString585_next(nullptr);
+            static info::globalGetMacAddrString585_clbk globalGetMacAddrString585_user(nullptr);
+            static info::globalGetMainMaterial586_ptr globalGetMainMaterial586_next(nullptr);
+            static info::globalGetMainMaterial586_clbk globalGetMainMaterial586_user(nullptr);
+            static info::globalGetMainMaterialNum587_ptr globalGetMainMaterialNum587_next(nullptr);
+            static info::globalGetMainMaterialNum587_clbk globalGetMainMaterialNum587_user(nullptr);
+            static info::globalGetMatLightFromColor588_ptr globalGetMatLightFromColor588_next(nullptr);
+            static info::globalGetMatLightFromColor588_clbk globalGetMatLightFromColor588_user(nullptr);
+            static info::globalGetMaterialNameNum589_ptr globalGetMaterialNameNum589_next(nullptr);
+            static info::globalGetMaterialNameNum589_clbk globalGetMaterialNameNum589_user(nullptr);
+            static info::globalGetMatrixFrom3DSMAXMatrix590_ptr globalGetMatrixFrom3DSMAXMatrix590_next(nullptr);
+            static info::globalGetMatrixFrom3DSMAXMatrix590_clbk globalGetMatrixFrom3DSMAXMatrix590_user(nullptr);
+            static info::globalGetMatrixFromAtoB591_ptr globalGetMatrixFromAtoB591_next(nullptr);
+            static info::globalGetMatrixFromAtoB591_clbk globalGetMatrixFromAtoB591_user(nullptr);
+            static info::globalGetMatrixFromAtoB2592_ptr globalGetMatrixFromAtoB2592_next(nullptr);
+            static info::globalGetMatrixFromAtoB2592_clbk globalGetMatrixFromAtoB2592_user(nullptr);
+            static info::globalGetMatrixFromVector593_ptr globalGetMatrixFromVector593_next(nullptr);
+            static info::globalGetMatrixFromVector593_clbk globalGetMatrixFromVector593_user(nullptr);
+            static info::globalGetMaxParamFromExp595_ptr globalGetMaxParamFromExp595_next(nullptr);
+            static info::globalGetMaxParamFromExp595_clbk globalGetMaxParamFromExp595_user(nullptr);
+            static info::globalGetMaxResKind597_ptr globalGetMaxResKind597_next(nullptr);
+            static info::globalGetMaxResKind597_clbk globalGetMaxResKind597_user(nullptr);
+            static info::globalGetMergeFileManager598_ptr globalGetMergeFileManager598_next(nullptr);
+            static info::globalGetMergeFileManager598_clbk globalGetMergeFileManager598_user(nullptr);
+            static info::globalGetMipMapSkipSize599_ptr globalGetMipMapSkipSize599_next(nullptr);
+            static info::globalGetMipMapSkipSize599_clbk globalGetMipMapSkipSize599_user(nullptr);
+            static info::globalGetMotionBlurLength600_ptr globalGetMotionBlurLength600_next(nullptr);
+            static info::globalGetMotionBlurLength600_clbk globalGetMotionBlurLength600_user(nullptr);
+            static info::globalGetMultiLayerTime601_ptr globalGetMultiLayerTime601_next(nullptr);
+            static info::globalGetMultiLayerTime601_clbk globalGetMultiLayerTime601_user(nullptr);
+            static info::globalGetNextDay603_ptr globalGetNextDay603_next(nullptr);
+            static info::globalGetNextDay603_clbk globalGetNextDay603_user(nullptr);
+            static info::globalGetNormal604_ptr globalGetNormal604_next(nullptr);
+            static info::globalGetNormal604_clbk globalGetNormal604_user(nullptr);
+            static info::globalGetNowDateTime606_ptr globalGetNowDateTime606_next(nullptr);
+            static info::globalGetNowDateTime606_clbk globalGetNowDateTime606_user(nullptr);
+            static info::globalGetNowFrame607_ptr globalGetNowFrame607_next(nullptr);
+            static info::globalGetNowFrame607_clbk globalGetNowFrame607_user(nullptr);
+            static info::globalGetNowFreeJmallocSize608_ptr globalGetNowFreeJmallocSize608_next(nullptr);
+            static info::globalGetNowFreeJmallocSize608_clbk globalGetNowFreeJmallocSize608_user(nullptr);
+            static info::globalGetNowHWnd609_ptr globalGetNowHWnd609_next(nullptr);
+            static info::globalGetNowHWnd609_clbk globalGetNowHWnd609_user(nullptr);
+            static info::globalGetNowJmallocSize610_ptr globalGetNowJmallocSize610_next(nullptr);
+            static info::globalGetNowJmallocSize610_clbk globalGetNowJmallocSize610_user(nullptr);
+            static info::globalGetNowPath611_ptr globalGetNowPath611_next(nullptr);
+            static info::globalGetNowPath611_clbk globalGetNowPath611_user(nullptr);
+            static info::globalGetNowR3D3DTexCnt612_ptr globalGetNowR3D3DTexCnt612_next(nullptr);
+            static info::globalGetNowR3D3DTexCnt612_clbk globalGetNowR3D3DTexCnt612_user(nullptr);
+            static info::globalGetNowR3TexCnt613_ptr globalGetNowR3TexCnt613_next(nullptr);
+            static info::globalGetNowR3TexCnt613_clbk globalGetNowR3TexCnt613_user(nullptr);
+            static info::globalGetNowTexMemSize614_ptr globalGetNowTexMemSize614_next(nullptr);
+            static info::globalGetNowTexMemSize614_clbk globalGetNowTexMemSize614_user(nullptr);
+            static info::globalGetNumAllFile616_ptr globalGetNumAllFile616_next(nullptr);
+            static info::globalGetNumAllFile616_clbk globalGetNumAllFile616_user(nullptr);
+            static info::globalGetObjectMatrix617_ptr globalGetObjectMatrix617_next(nullptr);
+            static info::globalGetObjectMatrix617_clbk globalGetObjectMatrix617_user(nullptr);
+            static info::globalGetOldRenderTarget618_ptr globalGetOldRenderTarget618_next(nullptr);
+            static info::globalGetOldRenderTarget618_clbk globalGetOldRenderTarget618_user(nullptr);
+            static info::globalGetOldStencilZ619_ptr globalGetOldStencilZ619_next(nullptr);
+            static info::globalGetOldStencilZ619_clbk globalGetOldStencilZ619_user(nullptr);
+            static info::globalGetOneNameFromPath620_ptr globalGetOneNameFromPath620_next(nullptr);
+            static info::globalGetOneNameFromPath620_clbk globalGetOneNameFromPath620_user(nullptr);
+            static info::globalGetOutLineColor621_ptr globalGetOutLineColor621_next(nullptr);
+            static info::globalGetOutLineColor621_clbk globalGetOutLineColor621_user(nullptr);
+            static info::globalGetOutLineColorFont16622_ptr globalGetOutLineColorFont16622_next(nullptr);
+            static info::globalGetOutLineColorFont16622_clbk globalGetOutLineColorFont16622_user(nullptr);
+            static info::globalGetOutLineColorFont24623_ptr globalGetOutLineColorFont24623_next(nullptr);
+            static info::globalGetOutLineColorFont24623_clbk globalGetOutLineColorFont24623_user(nullptr);
+            static info::globalGetPlaneCrossPoint624_ptr globalGetPlaneCrossPoint624_next(nullptr);
+            static info::globalGetPlaneCrossPoint624_clbk globalGetPlaneCrossPoint624_user(nullptr);
+            static info::globalGetPlaneCrossPoint625_ptr globalGetPlaneCrossPoint625_next(nullptr);
+            static info::globalGetPlaneCrossPoint625_clbk globalGetPlaneCrossPoint625_user(nullptr);
+            static info::globalGetPointCamera626_ptr globalGetPointCamera626_next(nullptr);
+            static info::globalGetPointCamera626_clbk globalGetPointCamera626_user(nullptr);
+            static info::globalGetPosByDistFromATOB627_ptr globalGetPosByDistFromATOB627_next(nullptr);
+            static info::globalGetPosByDistFromATOB627_clbk globalGetPosByDistFromATOB627_user(nullptr);
+            static info::globalGetPreParticleList628_ptr globalGetPreParticleList628_next(nullptr);
+            static info::globalGetPreParticleList628_clbk globalGetPreParticleList628_user(nullptr);
+            static info::globalGetPreParticleListNum629_ptr globalGetPreParticleListNum629_next(nullptr);
+            static info::globalGetPreParticleListNum629_clbk globalGetPreParticleListNum629_user(nullptr);
+            static info::globalGetPrevDay631_ptr globalGetPrevDay631_next(nullptr);
+            static info::globalGetPrevDay631_clbk globalGetPrevDay631_user(nullptr);
+            static info::globalGetProjectMatrix632_ptr globalGetProjectMatrix632_next(nullptr);
+            static info::globalGetProjectMatrix632_clbk globalGetProjectMatrix632_user(nullptr);
+            static info::globalGetPtrPlayerFromAccount634_ptr globalGetPtrPlayerFromAccount634_next(nullptr);
+            static info::globalGetPtrPlayerFromAccount634_clbk globalGetPtrPlayerFromAccount634_user(nullptr);
+            static info::globalGetPtrPlayerFromAccountSerial636_ptr globalGetPtrPlayerFromAccountSerial636_next(nullptr);
+            static info::globalGetPtrPlayerFromAccountSerial636_clbk globalGetPtrPlayerFromAccountSerial636_user(nullptr);
+            static info::globalGetPtrPlayerFromCharSerial638_ptr globalGetPtrPlayerFromCharSerial638_next(nullptr);
+            static info::globalGetPtrPlayerFromCharSerial638_clbk globalGetPtrPlayerFromCharSerial638_user(nullptr);
+            static info::globalGetPtrPlayerFromName640_ptr globalGetPtrPlayerFromName640_next(nullptr);
+            static info::globalGetPtrPlayerFromName640_clbk globalGetPtrPlayerFromName640_user(nullptr);
+            static info::globalGetPtrPlayerFromSerial642_ptr globalGetPtrPlayerFromSerial642_next(nullptr);
+            static info::globalGetPtrPlayerFromSerial642_clbk globalGetPtrPlayerFromSerial642_user(nullptr);
+            static info::globalGetQLen644_ptr globalGetQLen644_next(nullptr);
+            static info::globalGetQLen644_clbk globalGetQLen644_user(nullptr);
+            static info::globalGetQuaternionFromVector645_ptr globalGetQuaternionFromVector645_next(nullptr);
+            static info::globalGetQuaternionFromVector645_clbk globalGetQuaternionFromVector645_user(nullptr);
+            static info::globalGetQuaternionFromVector646_ptr globalGetQuaternionFromVector646_next(nullptr);
+            static info::globalGetQuaternionFromVector646_clbk globalGetQuaternionFromVector646_user(nullptr);
+            static info::globalGetR3TexManageFlag647_ptr globalGetR3TexManageFlag647_next(nullptr);
+            static info::globalGetR3TexManageFlag647_clbk globalGetR3TexManageFlag647_user(nullptr);
+            static info::globalGetRandOrNum648_ptr globalGetRandOrNum648_next(nullptr);
+            static info::globalGetRandOrNum648_clbk globalGetRandOrNum648_user(nullptr);
+            static info::globalGetReactArea650_ptr globalGetReactArea650_next(nullptr);
+            static info::globalGetReactArea650_clbk globalGetReactArea650_user(nullptr);
+            static info::globalGetReactObject652_ptr globalGetReactObject652_next(nullptr);
+            static info::globalGetReactObject652_clbk globalGetReactObject652_user(nullptr);
+            static info::globalGetReflectionState653_ptr globalGetReflectionState653_next(nullptr);
+            static info::globalGetReflectionState653_clbk globalGetReflectionState653_user(nullptr);
+            static info::globalGetRegionIndex655_ptr globalGetRegionIndex655_next(nullptr);
+            static info::globalGetRegionIndex655_clbk globalGetRegionIndex655_user(nullptr);
+            static info::globalGetRegionName657_ptr globalGetRegionName657_next(nullptr);
+            static info::globalGetRegionName657_clbk globalGetRegionName657_user(nullptr);
+            static info::globalGetRewardItemNumChangeClass659_ptr globalGetRewardItemNumChangeClass659_next(nullptr);
+            static info::globalGetRewardItemNumChangeClass659_clbk globalGetRewardItemNumChangeClass659_user(nullptr);
+            static info::globalGetSFLevel661_ptr globalGetSFLevel661_next(nullptr);
+            static info::globalGetSFLevel661_clbk globalGetSFLevel661_user(nullptr);
+            static info::globalGetShadowRenderTexture662_ptr globalGetShadowRenderTexture662_next(nullptr);
+            static info::globalGetShadowRenderTexture662_clbk globalGetShadowRenderTexture662_user(nullptr);
+            static info::globalGetShadowTexture663_ptr globalGetShadowTexture663_next(nullptr);
+            static info::globalGetShadowTexture663_clbk globalGetShadowTexture663_user(nullptr);
+            static info::globalGetSocketName665_ptr globalGetSocketName665_next(nullptr);
+            static info::globalGetSocketName665_clbk globalGetSocketName665_user(nullptr);
+            static info::globalGetSqrt667_ptr globalGetSqrt667_next(nullptr);
+            static info::globalGetSqrt667_clbk globalGetSqrt667_user(nullptr);
+            static info::globalGetStaffMastery669_ptr globalGetStaffMastery669_next(nullptr);
+            static info::globalGetStaffMastery669_clbk globalGetStaffMastery669_user(nullptr);
+            static info::globalGetStateFullScreenEffect670_ptr globalGetStateFullScreenEffect670_next(nullptr);
+            static info::globalGetStateFullScreenEffect670_clbk globalGetStateFullScreenEffect670_user(nullptr);
+            static info::globalGetSubDayStr672_ptr globalGetSubDayStr672_next(nullptr);
+            static info::globalGetSubDayStr672_clbk globalGetSubDayStr672_user(nullptr);
+            static info::globalGetSwimU673_ptr globalGetSwimU673_next(nullptr);
+            static info::globalGetSwimU673_clbk globalGetSwimU673_user(nullptr);
+            static info::globalGetSwimV674_ptr globalGetSwimV674_next(nullptr);
+            static info::globalGetSwimV674_clbk globalGetSwimV674_user(nullptr);
+            static info::globalGetTalikFromSocket676_ptr globalGetTalikFromSocket676_next(nullptr);
+            static info::globalGetTalikFromSocket676_clbk globalGetTalikFromSocket676_user(nullptr);
+            static info::globalGetTempBuffer677_ptr globalGetTempBuffer677_next(nullptr);
+            static info::globalGetTempBuffer677_clbk globalGetTempBuffer677_user(nullptr);
+            static info::globalGetTempBufferSize678_ptr globalGetTempBufferSize678_next(nullptr);
+            static info::globalGetTempBufferSize678_clbk globalGetTempBufferSize678_user(nullptr);
+            static info::globalGetTextureMatrix679_ptr globalGetTextureMatrix679_next(nullptr);
+            static info::globalGetTextureMatrix679_clbk globalGetTextureMatrix679_user(nullptr);
+            static info::globalGetTileAniTextureAddId680_ptr globalGetTileAniTextureAddId680_next(nullptr);
+            static info::globalGetTileAniTextureAddId680_clbk globalGetTileAniTextureAddId680_user(nullptr);
+            static info::globalGetTodayStr682_ptr globalGetTodayStr682_next(nullptr);
+            static info::globalGetTodayStr682_clbk globalGetTodayStr682_user(nullptr);
+            static info::globalGetTokenFloat683_ptr globalGetTokenFloat683_next(nullptr);
+            static info::globalGetTokenFloat683_clbk globalGetTokenFloat683_user(nullptr);
+            static info::globalGetTotalFrame684_ptr globalGetTotalFrame684_next(nullptr);
+            static info::globalGetTotalFrame684_clbk globalGetTotalFrame684_user(nullptr);
+            static info::globalGetTotalFreeJmallocSize685_ptr globalGetTotalFreeJmallocSize685_next(nullptr);
+            static info::globalGetTotalFreeJmallocSize685_clbk globalGetTotalFreeJmallocSize685_user(nullptr);
+            static info::globalGetTotalVertexBufferCnt686_ptr globalGetTotalVertexBufferCnt686_next(nullptr);
+            static info::globalGetTotalVertexBufferCnt686_clbk globalGetTotalVertexBufferCnt686_user(nullptr);
+            static info::globalGetTotalVertexBufferSize687_ptr globalGetTotalVertexBufferSize687_next(nullptr);
+            static info::globalGetTotalVertexBufferSize687_clbk globalGetTotalVertexBufferSize687_user(nullptr);
+            static info::globalGetTransformVertex688_ptr globalGetTransformVertex688_next(nullptr);
+            static info::globalGetTransformVertex688_clbk globalGetTransformVertex688_user(nullptr);
+            static info::globalGetUsePcCashType690_ptr globalGetUsePcCashType690_next(nullptr);
+            static info::globalGetUsePcCashType690_clbk globalGetUsePcCashType690_user(nullptr);
+            static info::globalGetVertexFromBVertex691_ptr globalGetVertexFromBVertex691_next(nullptr);
+            static info::globalGetVertexFromBVertex691_clbk globalGetVertexFromBVertex691_user(nullptr);
+            static info::globalGetVertexFromFVertex692_ptr globalGetVertexFromFVertex692_next(nullptr);
+            static info::globalGetVertexFromFVertex692_clbk globalGetVertexFromFVertex692_user(nullptr);
+            static info::globalGetVertexFromWVertex693_ptr globalGetVertexFromWVertex693_next(nullptr);
+            static info::globalGetVertexFromWVertex693_clbk globalGetVertexFromWVertex693_user(nullptr);
+            static info::globalGetViewMatrix694_ptr globalGetViewMatrix694_next(nullptr);
+            static info::globalGetViewMatrix694_clbk globalGetViewMatrix694_user(nullptr);
+            static info::globalGetViewVector695_ptr globalGetViewVector695_next(nullptr);
+            static info::globalGetViewVector695_clbk globalGetViewVector695_user(nullptr);
+            static info::globalGetWeaponClass697_ptr globalGetWeaponClass697_next(nullptr);
+            static info::globalGetWeaponClass697_clbk globalGetWeaponClass697_user(nullptr);
+            static info::globalGetWebBrowserRect698_ptr globalGetWebBrowserRect698_next(nullptr);
+            static info::globalGetWebBrowserRect698_clbk globalGetWebBrowserRect698_user(nullptr);
+            static info::globalGetXAngle699_ptr globalGetXAngle699_next(nullptr);
+            static info::globalGetXAngle699_clbk globalGetXAngle699_user(nullptr);
+            static info::globalGetYAngle700_ptr globalGetYAngle700_next(nullptr);
+            static info::globalGetYAngle700_clbk globalGetYAngle700_user(nullptr);
+            static info::globalGetYAngle701_ptr globalGetYAngle701_next(nullptr);
+            static info::globalGetYAngle701_clbk globalGetYAngle701_user(nullptr);
+            static info::globalGetYAngle703_ptr globalGetYAngle703_next(nullptr);
+            static info::globalGetYAngle703_clbk globalGetYAngle703_user(nullptr);
+            static info::globalGetYBillboardMatrix704_ptr globalGetYBillboardMatrix704_next(nullptr);
+            static info::globalGetYBillboardMatrix704_clbk globalGetYBillboardMatrix704_user(nullptr);
+            static info::globalGetYBillboardMatrix705_ptr globalGetYBillboardMatrix705_next(nullptr);
+            static info::globalGetYBillboardMatrix705_clbk globalGetYBillboardMatrix705_user(nullptr);
+            static info::globalGetZBillboardMatrix706_ptr globalGetZBillboardMatrix706_next(nullptr);
+            static info::globalGetZBillboardMatrix706_clbk globalGetZBillboardMatrix706_user(nullptr);
+            static info::globalGet_CashEvent_Name708_ptr globalGet_CashEvent_Name708_next(nullptr);
+            static info::globalGet_CashEvent_Name708_clbk globalGet_CashEvent_Name708_user(nullptr);
+            static info::globalH710_ptr globalH710_next(nullptr);
+            static info::globalH710_clbk globalH710_user(nullptr);
+            static info::globalHtoA712_ptr globalHtoA712_next(nullptr);
+            static info::globalHtoA712_clbk globalHtoA712_user(nullptr);
+            static info::globalHtoB714_ptr globalHtoB714_next(nullptr);
+            static info::globalHtoB714_clbk globalHtoB714_user(nullptr);
+            static info::globalI716_ptr globalI716_next(nullptr);
+            static info::globalI716_clbk globalI716_user(nullptr);
+            static info::globalIM_LoadWave717_ptr globalIM_LoadWave717_next(nullptr);
+            static info::globalIM_LoadWave717_clbk globalIM_LoadWave717_user(nullptr);
+            static info::globalIM_PlayWave718_ptr globalIM_PlayWave718_next(nullptr);
+            static info::globalIM_PlayWave718_clbk globalIM_PlayWave718_user(nullptr);
+            static info::globalIM_ReleaseAllWaves719_ptr globalIM_ReleaseAllWaves719_next(nullptr);
+            static info::globalIM_ReleaseAllWaves719_clbk globalIM_ReleaseAllWaves719_user(nullptr);
+            static info::globalIM_ReleaseWave720_ptr globalIM_ReleaseWave720_next(nullptr);
+            static info::globalIM_ReleaseWave720_clbk globalIM_ReleaseWave720_user(nullptr);
+            static info::globalIM_SetLoopCntWave721_ptr globalIM_SetLoopCntWave721_next(nullptr);
+            static info::globalIM_SetLoopCntWave721_clbk globalIM_SetLoopCntWave721_user(nullptr);
+            static info::globalIM_SetWaveVolumeAndPan722_ptr globalIM_SetWaveVolumeAndPan722_next(nullptr);
+            static info::globalIM_SetWaveVolumeAndPan722_clbk globalIM_SetWaveVolumeAndPan722_user(nullptr);
+            static info::globalIM_StopWave723_ptr globalIM_StopWave723_next(nullptr);
+            static info::globalIM_StopWave723_clbk globalIM_StopWave723_user(nullptr);
+            static info::globalIPConvertingStringToByte725_ptr globalIPConvertingStringToByte725_next(nullptr);
+            static info::globalIPConvertingStringToByte725_clbk globalIPConvertingStringToByte725_user(nullptr);
+            static info::globalIndexFromPImgThunkData726_ptr globalIndexFromPImgThunkData726_next(nullptr);
+            static info::globalIndexFromPImgThunkData726_clbk globalIndexFromPImgThunkData726_user(nullptr);
+            static info::globalInitBlurShader727_ptr globalInitBlurShader727_next(nullptr);
+            static info::globalInitBlurShader727_clbk globalInitBlurShader727_user(nullptr);
+            static info::globalInitCheatCommand729_ptr globalInitCheatCommand729_next(nullptr);
+            static info::globalInitCheatCommand729_clbk globalInitCheatCommand729_user(nullptr);
+            static info::globalInitConsole730_ptr globalInitConsole730_next(nullptr);
+            static info::globalInitConsole730_clbk globalInitConsole730_user(nullptr);
+            static info::globalInitCore731_ptr globalInitCore731_next(nullptr);
+            static info::globalInitCore731_clbk globalInitCore731_user(nullptr);
+            static info::globalInitFullScreenEffect732_ptr globalInitFullScreenEffect732_next(nullptr);
+            static info::globalInitFullScreenEffect732_clbk globalInitFullScreenEffect732_user(nullptr);
+            static info::globalInitFunctionKey733_ptr globalInitFunctionKey733_next(nullptr);
+            static info::globalInitFunctionKey733_clbk globalInitFunctionKey733_user(nullptr);
+            static info::globalInitJmalloc734_ptr globalInitJmalloc734_next(nullptr);
+            static info::globalInitJmalloc734_clbk globalInitJmalloc734_user(nullptr);
+            static info::globalInitMasteryFormula736_ptr globalInitMasteryFormula736_next(nullptr);
+            static info::globalInitMasteryFormula736_clbk globalInitMasteryFormula736_user(nullptr);
+            static info::globalInitR3Engine737_ptr globalInitR3Engine737_next(nullptr);
+            static info::globalInitR3Engine737_clbk globalInitR3Engine737_user(nullptr);
+            static info::globalInitR3Particle738_ptr globalInitR3Particle738_next(nullptr);
+            static info::globalInitR3Particle738_clbk globalInitR3Particle738_user(nullptr);
+            static info::globalInitR3SoundSystem739_ptr globalInitR3SoundSystem739_next(nullptr);
+            static info::globalInitR3SoundSystem739_clbk globalInitR3SoundSystem739_user(nullptr);
+            static info::globalInitR3Text740_ptr globalInitR3Text740_next(nullptr);
+            static info::globalInitR3Text740_clbk globalInitR3Text740_user(nullptr);
+            static info::globalInitSpriteManager741_ptr globalInitSpriteManager741_next(nullptr);
+            static info::globalInitSpriteManager741_clbk globalInitSpriteManager741_user(nullptr);
+            static info::globalInitWebBrowser742_ptr globalInitWebBrowser742_next(nullptr);
+            static info::globalInitWebBrowser742_clbk globalInitWebBrowser742_user(nullptr);
+            static info::globalInsertConsoleStringQ743_ptr globalInsertConsoleStringQ743_next(nullptr);
+            static info::globalInsertConsoleStringQ743_clbk globalInsertConsoleStringQ743_user(nullptr);
+            static info::globalInsertDynamicLight744_ptr globalInsertDynamicLight744_next(nullptr);
+            static info::globalInsertDynamicLight744_clbk globalInsertDynamicLight744_user(nullptr);
+            static info::globalInterpolatedNoise_1745_ptr globalInterpolatedNoise_1745_next(nullptr);
+            static info::globalInterpolatedNoise_1745_clbk globalInterpolatedNoise_1745_user(nullptr);
+            static info::globalInterpolatedNoise_1746_ptr globalInterpolatedNoise_1746_next(nullptr);
+            static info::globalInterpolatedNoise_1746_clbk globalInterpolatedNoise_1746_user(nullptr);
+            static info::globalIsAbrItem748_ptr globalIsAbrItem748_next(nullptr);
+            static info::globalIsAbrItem748_clbk globalIsAbrItem748_user(nullptr);
+            static info::globalIsAddAbleTalikToItem750_ptr globalIsAddAbleTalikToItem750_next(nullptr);
+            static info::globalIsAddAbleTalikToItem750_clbk globalIsAddAbleTalikToItem750_user(nullptr);
+            static info::globalIsAniTex751_ptr globalIsAniTex751_next(nullptr);
+            static info::globalIsAniTex751_clbk globalIsAniTex751_user(nullptr);
+            static info::globalIsBBoxInFrustum752_ptr globalIsBBoxInFrustum752_next(nullptr);
+            static info::globalIsBBoxInFrustum752_clbk globalIsBBoxInFrustum752_user(nullptr);
+            static info::globalIsBBoxInFrustum753_ptr globalIsBBoxInFrustum753_next(nullptr);
+            static info::globalIsBBoxInFrustum753_clbk globalIsBBoxInFrustum753_user(nullptr);
+            static info::globalIsBeNearStore755_ptr globalIsBeNearStore755_next(nullptr);
+            static info::globalIsBeNearStore755_clbk globalIsBeNearStore755_user(nullptr);
+            static info::globalIsBothRayAABB756_ptr globalIsBothRayAABB756_next(nullptr);
+            static info::globalIsBothRayAABB756_clbk globalIsBothRayAABB756_user(nullptr);
+            static info::globalIsBothRayAABB757_ptr globalIsBothRayAABB757_next(nullptr);
+            static info::globalIsBothRayAABB757_clbk globalIsBothRayAABB757_user(nullptr);
+            static info::globalIsCashItem759_ptr globalIsCashItem759_next(nullptr);
+            static info::globalIsCashItem759_clbk globalIsCashItem759_user(nullptr);
+            static info::globalIsCollisionBBox760_ptr globalIsCollisionBBox760_next(nullptr);
+            static info::globalIsCollisionBBox760_clbk globalIsCollisionBBox760_user(nullptr);
+            static info::globalIsCollisionBBox761_ptr globalIsCollisionBBox761_next(nullptr);
+            static info::globalIsCollisionBBox761_clbk globalIsCollisionBBox761_user(nullptr);
+            static info::globalIsCollisionBBox762_ptr globalIsCollisionBBox762_next(nullptr);
+            static info::globalIsCollisionBBox762_clbk globalIsCollisionBBox762_user(nullptr);
+            static info::globalIsCollisionBBoxPoint763_ptr globalIsCollisionBBoxPoint763_next(nullptr);
+            static info::globalIsCollisionBBoxPoint763_clbk globalIsCollisionBBoxPoint763_user(nullptr);
+            static info::globalIsCollisionBBoxPoint764_ptr globalIsCollisionBBoxPoint764_next(nullptr);
+            static info::globalIsCollisionBBoxPoint764_clbk globalIsCollisionBBoxPoint764_user(nullptr);
+            static info::globalIsCollisionBBoxToFace765_ptr globalIsCollisionBBoxToFace765_next(nullptr);
+            static info::globalIsCollisionBBoxToFace765_clbk globalIsCollisionBBoxToFace765_user(nullptr);
+            static info::globalIsDayChanged767_ptr globalIsDayChanged767_next(nullptr);
+            static info::globalIsDayChanged767_clbk globalIsDayChanged767_user(nullptr);
+            static info::globalIsEnableBBoShasiShader768_ptr globalIsEnableBBoShasiShader768_next(nullptr);
+            static info::globalIsEnableBBoShasiShader768_clbk globalIsEnableBBoShasiShader768_user(nullptr);
+            static info::globalIsEnableShader769_ptr globalIsEnableShader769_next(nullptr);
+            static info::globalIsEnableShader769_clbk globalIsEnableShader769_user(nullptr);
+            static info::globalIsExchangeItem771_ptr globalIsExchangeItem771_next(nullptr);
+            static info::globalIsExchangeItem771_clbk globalIsExchangeItem771_user(nullptr);
+            static info::globalIsExistDarkHoleOpenGate773_ptr globalIsExistDarkHoleOpenGate773_next(nullptr);
+            static info::globalIsExistDarkHoleOpenGate773_clbk globalIsExistDarkHoleOpenGate773_user(nullptr);
+            static info::globalIsExistFile774_ptr globalIsExistFile774_next(nullptr);
+            static info::globalIsExistFile774_clbk globalIsExistFile774_user(nullptr);
+            static info::globalIsExistFileAndMergeFile775_ptr globalIsExistFileAndMergeFile775_next(nullptr);
+            static info::globalIsExistFileAndMergeFile775_clbk globalIsExistFileAndMergeFile775_user(nullptr);
+            static info::globalIsExistFromSoundSpt776_ptr globalIsExistFromSoundSpt776_next(nullptr);
+            static info::globalIsExistFromSoundSpt776_clbk globalIsExistFromSoundSpt776_user(nullptr);
+            static info::globalIsExistItem778_ptr globalIsExistItem778_next(nullptr);
+            static info::globalIsExistItem778_clbk globalIsExistItem778_user(nullptr);
+            static info::globalIsFadeIn779_ptr globalIsFadeIn779_next(nullptr);
+            static info::globalIsFadeIn779_clbk globalIsFadeIn779_user(nullptr);
+            static info::globalIsFadeOut780_ptr globalIsFadeOut780_next(nullptr);
+            static info::globalIsFadeOut780_clbk globalIsFadeOut780_user(nullptr);
+            static info::globalIsFading781_ptr globalIsFading781_next(nullptr);
+            static info::globalIsFading781_clbk globalIsFading781_user(nullptr);
+            static info::globalIsFarDistance782_ptr globalIsFarDistance782_next(nullptr);
+            static info::globalIsFarDistance782_clbk globalIsFarDistance782_user(nullptr);
+            static info::globalIsGroundableItem784_ptr globalIsGroundableItem784_next(nullptr);
+            static info::globalIsGroundableItem784_clbk globalIsGroundableItem784_user(nullptr);
+            static info::globalIsInitCore785_ptr globalIsInitCore785_next(nullptr);
+            static info::globalIsInitCore785_clbk globalIsInitCore785_user(nullptr);
+            static info::globalIsInitR3Engine786_ptr globalIsInitR3Engine786_next(nullptr);
+            static info::globalIsInitR3Engine786_clbk globalIsInitR3Engine786_user(nullptr);
+            static info::globalIsItemCombineExKind788_ptr globalIsItemCombineExKind788_next(nullptr);
+            static info::globalIsItemCombineExKind788_clbk globalIsItemCombineExKind788_user(nullptr);
+            static info::globalIsItemEquipCivil790_ptr globalIsItemEquipCivil790_next(nullptr);
+            static info::globalIsItemEquipCivil790_clbk globalIsItemEquipCivil790_user(nullptr);
+            static info::globalIsItemSerialNum792_ptr globalIsItemSerialNum792_next(nullptr);
+            static info::globalIsItemSerialNum792_clbk globalIsItemSerialNum792_user(nullptr);
+            static info::globalIsLoadedMaterial793_ptr globalIsLoadedMaterial793_next(nullptr);
+            static info::globalIsLoadedMaterial793_clbk globalIsLoadedMaterial793_user(nullptr);
+            static info::globalIsLoadedRTCamera794_ptr globalIsLoadedRTCamera794_next(nullptr);
+            static info::globalIsLoadedRTCamera794_clbk globalIsLoadedRTCamera794_user(nullptr);
+            static info::globalIsLoadedRTMovie795_ptr globalIsLoadedRTMovie795_next(nullptr);
+            static info::globalIsLoadedRTMovie795_clbk globalIsLoadedRTMovie795_user(nullptr);
+            static info::globalIsMagicLight796_ptr globalIsMagicLight796_next(nullptr);
+            static info::globalIsMagicLight796_clbk globalIsMagicLight796_user(nullptr);
+            static info::globalIsNormalAccountUsable798_ptr globalIsNormalAccountUsable798_next(nullptr);
+            static info::globalIsNormalAccountUsable798_clbk globalIsNormalAccountUsable798_user(nullptr);
+            static info::globalIsOneBackCollision799_ptr globalIsOneBackCollision799_next(nullptr);
+            static info::globalIsOneBackCollision799_clbk globalIsOneBackCollision799_user(nullptr);
+            static info::globalIsOtherInvalidObjNear801_ptr globalIsOtherInvalidObjNear801_next(nullptr);
+            static info::globalIsOtherInvalidObjNear801_clbk globalIsOtherInvalidObjNear801_user(nullptr);
+            static info::globalIsOtherTowerNear803_ptr globalIsOtherTowerNear803_next(nullptr);
+            static info::globalIsOtherTowerNear803_clbk globalIsOtherTowerNear803_user(nullptr);
+            static info::globalIsOverLapItem805_ptr globalIsOverLapItem805_next(nullptr);
+            static info::globalIsOverLapItem805_clbk globalIsOverLapItem805_user(nullptr);
+            static info::globalIsParticle806_ptr globalIsParticle806_next(nullptr);
+            static info::globalIsParticle806_clbk globalIsParticle806_user(nullptr);
+            static info::globalIsPlayMP3807_ptr globalIsPlayMP3807_next(nullptr);
+            static info::globalIsPlayMP3807_clbk globalIsPlayMP3807_user(nullptr);
+            static info::globalIsProtectItem809_ptr globalIsProtectItem809_next(nullptr);
+            static info::globalIsProtectItem809_clbk globalIsProtectItem809_user(nullptr);
+            static info::globalIsRTMoviePlaying810_ptr globalIsRTMoviePlaying810_next(nullptr);
+            static info::globalIsRTMoviePlaying810_clbk globalIsRTMoviePlaying810_user(nullptr);
+            static info::globalIsRayAABB811_ptr globalIsRayAABB811_next(nullptr);
+            static info::globalIsRayAABB811_clbk globalIsRayAABB811_user(nullptr);
+            static info::globalIsRayAABB812_ptr globalIsRayAABB812_next(nullptr);
+            static info::globalIsRayAABB812_clbk globalIsRayAABB812_user(nullptr);
+            static info::globalIsRenderTargetFrameBuffer813_ptr globalIsRenderTargetFrameBuffer813_next(nullptr);
+            static info::globalIsRenderTargetFrameBuffer813_clbk globalIsRenderTargetFrameBuffer813_user(nullptr);
+            static info::globalIsRepairableItem815_ptr globalIsRepairableItem815_next(nullptr);
+            static info::globalIsRepairableItem815_clbk globalIsRepairableItem815_user(nullptr);
+            static info::globalIsRightIndexedUP816_ptr globalIsRightIndexedUP816_next(nullptr);
+            static info::globalIsRightIndexedUP816_clbk globalIsRightIndexedUP816_user(nullptr);
+            static info::globalIsSQLValidString818_ptr globalIsSQLValidString818_next(nullptr);
+            static info::globalIsSQLValidString818_clbk globalIsSQLValidString818_user(nullptr);
+            static info::globalIsSaveItem820_ptr globalIsSaveItem820_next(nullptr);
+            static info::globalIsSaveItem820_clbk globalIsSaveItem820_user(nullptr);
+            static info::globalIsSellItem822_ptr globalIsSellItem822_next(nullptr);
+            static info::globalIsSellItem822_clbk globalIsSellItem822_user(nullptr);
+            static info::globalIsServerMode823_ptr globalIsServerMode823_next(nullptr);
+            static info::globalIsServerMode823_clbk globalIsServerMode823_user(nullptr);
+            static info::globalIsStorageCodeWithItemKind825_ptr globalIsStorageCodeWithItemKind825_next(nullptr);
+            static info::globalIsStorageCodeWithItemKind825_clbk globalIsStorageCodeWithItemKind825_user(nullptr);
+            static info::globalIsStorageRange827_ptr globalIsStorageRange827_next(nullptr);
+            static info::globalIsStorageRange827_clbk globalIsStorageRange827_user(nullptr);
+            static info::globalIsTalikAboutTol829_ptr globalIsTalikAboutTol829_next(nullptr);
+            static info::globalIsTalikAboutTol829_clbk globalIsTalikAboutTol829_user(nullptr);
+            static info::globalIsTargeting831_ptr globalIsTargeting831_next(nullptr);
+            static info::globalIsTargeting831_clbk globalIsTargeting831_user(nullptr);
+            static info::globalIsTextureFormatOk832_ptr globalIsTextureFormatOk832_next(nullptr);
+            static info::globalIsTextureFormatOk832_clbk globalIsTextureFormatOk832_user(nullptr);
+            static info::globalIsTimeItem834_ptr globalIsTimeItem834_next(nullptr);
+            static info::globalIsTimeItem834_clbk globalIsTimeItem834_user(nullptr);
+            static info::globalIsTrunkIOAble836_ptr globalIsTrunkIOAble836_next(nullptr);
+            static info::globalIsTrunkIOAble836_clbk globalIsTrunkIOAble836_user(nullptr);
+            static info::globalIsUsableTempEffectAtStoneState838_ptr globalIsUsableTempEffectAtStoneState838_next(nullptr);
+            static info::globalIsUsableTempEffectAtStoneState838_clbk globalIsUsableTempEffectAtStoneState838_user(nullptr);
+            static info::globalIsWebBrowserMode839_ptr globalIsWebBrowserMode839_next(nullptr);
+            static info::globalIsWebBrowserMode839_clbk globalIsWebBrowserMode839_user(nullptr);
+            static info::globalJmalloc840_ptr globalJmalloc840_next(nullptr);
+            static info::globalJmalloc840_clbk globalJmalloc840_user(nullptr);
+            static info::globalJpegFileToRGB841_ptr globalJpegFileToRGB841_next(nullptr);
+            static info::globalJpegFileToRGB841_clbk globalJpegFileToRGB841_user(nullptr);
+            static info::globalLightMappingTex1842_ptr globalLightMappingTex1842_next(nullptr);
+            static info::globalLightMappingTex1842_clbk globalLightMappingTex1842_user(nullptr);
+            static info::globalLinearInterpolate843_ptr globalLinearInterpolate843_next(nullptr);
+            static info::globalLinearInterpolate843_clbk globalLinearInterpolate843_user(nullptr);
+            static info::globalLoadAndCreateShader844_ptr globalLoadAndCreateShader844_next(nullptr);
+            static info::globalLoadAndCreateShader844_clbk globalLoadAndCreateShader844_user(nullptr);
+            static info::globalLoadBmp845_ptr globalLoadBmp845_next(nullptr);
+            static info::globalLoadBmp845_clbk globalLoadBmp845_user(nullptr);
+            static info::globalLoadCreateShader846_ptr globalLoadCreateShader846_next(nullptr);
+            static info::globalLoadCreateShader846_clbk globalLoadCreateShader846_user(nullptr);
+            static info::globalLoadIndependenceR3M847_ptr globalLoadIndependenceR3M847_next(nullptr);
+            static info::globalLoadIndependenceR3M847_clbk globalLoadIndependenceR3M847_user(nullptr);
+            static info::globalLoadLightMap848_ptr globalLoadLightMap848_next(nullptr);
+            static info::globalLoadLightMap848_clbk globalLoadLightMap848_user(nullptr);
+            static info::globalLoadMainMaterial849_ptr globalLoadMainMaterial849_next(nullptr);
+            static info::globalLoadMainMaterial849_clbk globalLoadMainMaterial849_user(nullptr);
+            static info::globalLoadMainR3M850_ptr globalLoadMainR3M850_next(nullptr);
+            static info::globalLoadMainR3M850_clbk globalLoadMainR3M850_user(nullptr);
+            static info::globalLoadMasteryLimFile852_ptr globalLoadMasteryLimFile852_next(nullptr);
+            static info::globalLoadMasteryLimFile852_clbk globalLoadMasteryLimFile852_user(nullptr);
+            static info::globalLoadR3MP3853_ptr globalLoadR3MP3853_next(nullptr);
+            static info::globalLoadR3MP3853_clbk globalLoadR3MP3853_user(nullptr);
+            static info::globalLoadR3T854_ptr globalLoadR3T854_next(nullptr);
+            static info::globalLoadR3T854_clbk globalLoadR3T854_user(nullptr);
+            static info::globalLoadR3TLightMap855_ptr globalLoadR3TLightMap855_next(nullptr);
+            static info::globalLoadR3TLightMap855_clbk globalLoadR3TLightMap855_user(nullptr);
+            static info::globalLoadR3X856_ptr globalLoadR3X856_next(nullptr);
+            static info::globalLoadR3X856_clbk globalLoadR3X856_user(nullptr);
+            static info::globalLoadRegionData858_ptr globalLoadRegionData858_next(nullptr);
+            static info::globalLoadRegionData858_clbk globalLoadRegionData858_user(nullptr);
+            static info::globalLoadStreamR3MP3859_ptr globalLoadStreamR3MP3859_next(nullptr);
+            static info::globalLoadStreamR3MP3859_clbk globalLoadStreamR3MP3859_user(nullptr);
+            static info::globalLoadSubMaterial860_ptr globalLoadSubMaterial860_next(nullptr);
+            static info::globalLoadSubMaterial860_clbk globalLoadSubMaterial860_user(nullptr);
+            static info::globalLoadSubR3M862_ptr globalLoadSubR3M862_next(nullptr);
+            static info::globalLoadSubR3M862_clbk globalLoadSubR3M862_user(nullptr);
+            static info::globalLoadVertexShaderList863_ptr globalLoadVertexShaderList863_next(nullptr);
+            static info::globalLoadVertexShaderList863_clbk globalLoadVertexShaderList863_user(nullptr);
+            static info::globalLoadWaveList864_ptr globalLoadWaveList864_next(nullptr);
+            static info::globalLoadWaveList864_clbk globalLoadWaveList864_user(nullptr);
+            static info::globalLuaScripAlert866_ptr globalLuaScripAlert866_next(nullptr);
+            static info::globalLuaScripAlert866_clbk globalLuaScripAlert866_user(nullptr);
+            static info::globalM2W868_ptr globalM2W868_next(nullptr);
+            static info::globalM2W868_clbk globalM2W868_user(nullptr);
+            static info::globalMakeBinaryStr870_ptr globalMakeBinaryStr870_next(nullptr);
+            static info::globalMakeBinaryStr870_clbk globalMakeBinaryStr870_user(nullptr);
+            static info::globalMakeDwordAlignedBuf871_ptr globalMakeDwordAlignedBuf871_next(nullptr);
+            static info::globalMakeDwordAlignedBuf871_clbk globalMakeDwordAlignedBuf871_user(nullptr);
+            static info::globalMakeGrayScale872_ptr globalMakeGrayScale872_next(nullptr);
+            static info::globalMakeGrayScale872_clbk globalMakeGrayScale872_user(nullptr);
+            static info::globalMakeLoot874_ptr globalMakeLoot874_next(nullptr);
+            static info::globalMakeLoot874_clbk globalMakeLoot874_user(nullptr);
+            static info::globalMakeMipMap875_ptr globalMakeMipMap875_next(nullptr);
+            static info::globalMakeMipMap875_clbk globalMakeMipMap875_user(nullptr);
+            static info::globalMakeMipMap876_ptr globalMakeMipMap876_next(nullptr);
+            static info::globalMakeMipMap876_clbk globalMakeMipMap876_user(nullptr);
+            static info::globalMakeUV877_ptr globalMakeUV877_next(nullptr);
+            static info::globalMakeUV877_clbk globalMakeUV877_user(nullptr);
+            static info::globalMakeUV878_ptr globalMakeUV878_next(nullptr);
+            static info::globalMakeUV878_clbk globalMakeUV878_user(nullptr);
+            static info::globalMakeUVExt879_ptr globalMakeUVExt879_next(nullptr);
+            static info::globalMakeUVExt879_clbk globalMakeUVExt879_user(nullptr);
+            static info::globalMatrixCopy880_ptr globalMatrixCopy880_next(nullptr);
+            static info::globalMatrixCopy880_clbk globalMatrixCopy880_user(nullptr);
+            static info::globalMatrixFromQuaternion881_ptr globalMatrixFromQuaternion881_next(nullptr);
+            static info::globalMatrixFromQuaternion881_clbk globalMatrixFromQuaternion881_user(nullptr);
+            static info::globalMatrixIdentity882_ptr globalMatrixIdentity882_next(nullptr);
+            static info::globalMatrixIdentity882_clbk globalMatrixIdentity882_user(nullptr);
+            static info::globalMatrixInvert883_ptr globalMatrixInvert883_next(nullptr);
+            static info::globalMatrixInvert883_clbk globalMatrixInvert883_user(nullptr);
+            static info::globalMatrixMultiply884_ptr globalMatrixMultiply884_next(nullptr);
+            static info::globalMatrixMultiply884_clbk globalMatrixMultiply884_user(nullptr);
+            static info::globalMatrixRotate885_ptr globalMatrixRotate885_next(nullptr);
+            static info::globalMatrixRotate885_clbk globalMatrixRotate885_user(nullptr);
+            static info::globalMatrixRotateX886_ptr globalMatrixRotateX886_next(nullptr);
+            static info::globalMatrixRotateX886_clbk globalMatrixRotateX886_user(nullptr);
+            static info::globalMatrixRotateY887_ptr globalMatrixRotateY887_next(nullptr);
+            static info::globalMatrixRotateY887_clbk globalMatrixRotateY887_user(nullptr);
+            static info::globalMatrixRotateZ888_ptr globalMatrixRotateZ888_next(nullptr);
+            static info::globalMatrixRotateZ888_clbk globalMatrixRotateZ888_user(nullptr);
+            static info::globalMatrixScale889_ptr globalMatrixScale889_next(nullptr);
+            static info::globalMatrixScale889_clbk globalMatrixScale889_user(nullptr);
+            static info::globalMaxFixFloatToInt890_ptr globalMaxFixFloatToInt890_next(nullptr);
+            static info::globalMaxFixFloatToInt890_clbk globalMaxFixFloatToInt890_user(nullptr);
+            static info::globalMinFixFloatToInt891_ptr globalMinFixFloatToInt891_next(nullptr);
+            static info::globalMinFixFloatToInt891_clbk globalMinFixFloatToInt891_user(nullptr);
+            static info::globalMultiTexOff892_ptr globalMultiTexOff892_next(nullptr);
+            static info::globalMultiTexOff892_clbk globalMultiTexOff892_user(nullptr);
+            static info::globalMultiTexOn893_ptr globalMultiTexOn893_next(nullptr);
+            static info::globalMultiTexOn893_clbk globalMultiTexOn893_user(nullptr);
+            static info::globalMyCrtDebugReportHook895_ptr globalMyCrtDebugReportHook895_next(nullptr);
+            static info::globalMyCrtDebugReportHook895_clbk globalMyCrtDebugReportHook895_user(nullptr);
+            static info::globalMyMessageBox897_ptr globalMyMessageBox897_next(nullptr);
+            static info::globalMyMessageBox897_clbk globalMyMessageBox897_user(nullptr);
+            static info::globalNetTrace899_ptr globalNetTrace899_next(nullptr);
+            static info::globalNetTrace899_clbk globalNetTrace899_user(nullptr);
+            static info::globalNoise900_ptr globalNoise900_next(nullptr);
+            static info::globalNoise900_clbk globalNoise900_user(nullptr);
+            static info::globalNoise1901_ptr globalNoise1901_next(nullptr);
+            static info::globalNoise1901_clbk globalNoise1901_user(nullptr);
+            static info::globalNormalize903_ptr globalNormalize903_next(nullptr);
+            static info::globalNormalize903_clbk globalNormalize903_user(nullptr);
+            static info::globalOnLoop_GuildSystem905_ptr globalOnLoop_GuildSystem905_next(nullptr);
+            static info::globalOnLoop_GuildSystem905_clbk globalOnLoop_GuildSystem905_user(nullptr);
+            static info::globalOnLoop_VoteSystem907_ptr globalOnLoop_VoteSystem907_next(nullptr);
+            static info::globalOnLoop_VoteSystem907_clbk globalOnLoop_VoteSystem907_user(nullptr);
+            static info::globalOutputDebugLog909_ptr globalOutputDebugLog909_next(nullptr);
+            static info::globalOutputDebugLog909_clbk globalOutputDebugLog909_user(nullptr);
+            static info::globalPFromRva910_ptr globalPFromRva910_next(nullptr);
+            static info::globalPFromRva910_clbk globalPFromRva910_user(nullptr);
+            static info::globalPFromRva911_ptr globalPFromRva911_next(nullptr);
+            static info::globalPFromRva911_clbk globalPFromRva911_user(nullptr);
+            static info::globalPFromRva912_ptr globalPFromRva912_next(nullptr);
+            static info::globalPFromRva912_clbk globalPFromRva912_user(nullptr);
+            static info::globalPFromRva913_ptr globalPFromRva913_next(nullptr);
+            static info::globalPFromRva913_clbk globalPFromRva913_user(nullptr);
+            static info::globalPFromRva914_ptr globalPFromRva914_next(nullptr);
+            static info::globalPFromRva914_clbk globalPFromRva914_user(nullptr);
+            static info::globalPFromRva915_ptr globalPFromRva915_next(nullptr);
+            static info::globalPFromRva915_clbk globalPFromRva915_user(nullptr);
+            static info::globalPFromRva916_ptr globalPFromRva916_next(nullptr);
+            static info::globalPFromRva916_clbk globalPFromRva916_user(nullptr);
+            static info::globalParsingCommandA918_ptr globalParsingCommandA918_next(nullptr);
+            static info::globalParsingCommandA918_clbk globalParsingCommandA918_user(nullptr);
+            static info::globalParsingCommandW920_ptr globalParsingCommandW920_next(nullptr);
+            static info::globalParsingCommandW920_clbk globalParsingCommandW920_user(nullptr);
+            static info::globalPerlinNoise_1D921_ptr globalPerlinNoise_1D921_next(nullptr);
+            static info::globalPerlinNoise_1D921_clbk globalPerlinNoise_1D921_user(nullptr);
+            static info::globalPerlinNoise_2D922_ptr globalPerlinNoise_2D922_next(nullptr);
+            static info::globalPerlinNoise_2D922_clbk globalPerlinNoise_2D922_user(nullptr);
+            static info::globalPixelFromFramebuffer923_ptr globalPixelFromFramebuffer923_next(nullptr);
+            static info::globalPixelFromFramebuffer923_clbk globalPixelFromFramebuffer923_user(nullptr);
+            static info::globalPlayR3MP3924_ptr globalPlayR3MP3924_next(nullptr);
+            static info::globalPlayR3MP3924_clbk globalPlayR3MP3924_user(nullptr);
+            static info::globalPlayStreamR3MP3925_ptr globalPlayStreamR3MP3925_next(nullptr);
+            static info::globalPlayStreamR3MP3925_clbk globalPlayStreamR3MP3925_user(nullptr);
+            static info::globalPlayWave926_ptr globalPlayWave926_next(nullptr);
+            static info::globalPlayWave926_clbk globalPlayWave926_user(nullptr);
+            static info::globalPopViewPortArea927_ptr globalPopViewPortArea927_next(nullptr);
+            static info::globalPopViewPortArea927_clbk globalPopViewPortArea927_user(nullptr);
+            static info::globalPowInterpolate928_ptr globalPowInterpolate928_next(nullptr);
+            static info::globalPowInterpolate928_clbk globalPowInterpolate928_user(nullptr);
+            static info::globalPreRenderOneLayer929_ptr globalPreRenderOneLayer929_next(nullptr);
+            static info::globalPreRenderOneLayer929_clbk globalPreRenderOneLayer929_user(nullptr);
+            static info::globalPreRenderSetting930_ptr globalPreRenderSetting930_next(nullptr);
+            static info::globalPreRenderSetting930_clbk globalPreRenderSetting930_user(nullptr);
+            static info::globalPrepareAllShadow931_ptr globalPrepareAllShadow931_next(nullptr);
+            static info::globalPrepareAllShadow931_clbk globalPrepareAllShadow931_user(nullptr);
+            static info::globalProcessCheatCommand933_ptr globalProcessCheatCommand933_next(nullptr);
+            static info::globalProcessCheatCommand933_clbk globalProcessCheatCommand933_user(nullptr);
+            static info::globalProgressConsole934_ptr globalProgressConsole934_next(nullptr);
+            static info::globalProgressConsole934_clbk globalProgressConsole934_user(nullptr);
+            static info::globalProgressFunctionKey935_ptr globalProgressFunctionKey935_next(nullptr);
+            static info::globalProgressFunctionKey935_clbk globalProgressFunctionKey935_user(nullptr);
+            static info::globalPushViewPortArea936_ptr globalPushViewPortArea936_next(nullptr);
+            static info::globalPushViewPortArea936_clbk globalPushViewPortArea936_user(nullptr);
+            static info::globalPutMessage937_ptr globalPutMessage937_next(nullptr);
+            static info::globalPutMessage937_clbk globalPutMessage937_user(nullptr);
+            static info::globalQuaternionFromRotation938_ptr globalQuaternionFromRotation938_next(nullptr);
+            static info::globalQuaternionFromRotation938_clbk globalQuaternionFromRotation938_user(nullptr);
+            static info::globalQuaternionSlerp939_ptr globalQuaternionSlerp939_next(nullptr);
+            static info::globalQuaternionSlerp939_clbk globalQuaternionSlerp939_user(nullptr);
+            static info::globalR3BeginScene940_ptr globalR3BeginScene940_next(nullptr);
+            static info::globalR3BeginScene940_clbk globalR3BeginScene940_user(nullptr);
+            static info::globalR3CalcStrIndexPitInWidthA941_ptr globalR3CalcStrIndexPitInWidthA941_next(nullptr);
+            static info::globalR3CalcStrIndexPitInWidthA941_clbk globalR3CalcStrIndexPitInWidthA941_user(nullptr);
+            static info::globalR3CalcStrIndexPitInWidthW942_ptr globalR3CalcStrIndexPitInWidthW942_next(nullptr);
+            static info::globalR3CalcStrIndexPitInWidthW942_clbk globalR3CalcStrIndexPitInWidthW942_user(nullptr);
+            static info::globalR3CalcStrPixelSizeA943_ptr globalR3CalcStrPixelSizeA943_next(nullptr);
+            static info::globalR3CalcStrPixelSizeA943_clbk globalR3CalcStrPixelSizeA943_user(nullptr);
+            static info::globalR3CalcStrPixelSizeW944_ptr globalR3CalcStrPixelSizeW944_next(nullptr);
+            static info::globalR3CalcStrPixelSizeW944_clbk globalR3CalcStrPixelSizeW944_user(nullptr);
+            static info::globalR3CalculateTime945_ptr globalR3CalculateTime945_next(nullptr);
+            static info::globalR3CalculateTime945_clbk globalR3CalculateTime945_user(nullptr);
+            static info::globalR3ClearFrameBuffer946_ptr globalR3ClearFrameBuffer946_next(nullptr);
+            static info::globalR3ClearFrameBuffer946_clbk globalR3ClearFrameBuffer946_user(nullptr);
+            static info::globalR3ConfirmDevice947_ptr globalR3ConfirmDevice947_next(nullptr);
+            static info::globalR3ConfirmDevice947_clbk globalR3ConfirmDevice947_user(nullptr);
+            static info::globalR3DeleteDevice948_ptr globalR3DeleteDevice948_next(nullptr);
+            static info::globalR3DeleteDevice948_clbk globalR3DeleteDevice948_user(nullptr);
+            static info::globalR3Draw2DLine949_ptr globalR3Draw2DLine949_next(nullptr);
+            static info::globalR3Draw2DLine949_clbk globalR3Draw2DLine949_user(nullptr);
+            static info::globalR3Draw2DLineList950_ptr globalR3Draw2DLineList950_next(nullptr);
+            static info::globalR3Draw2DLineList950_clbk globalR3Draw2DLineList950_user(nullptr);
+            static info::globalR3DrawLine951_ptr globalR3DrawLine951_next(nullptr);
+            static info::globalR3DrawLine951_clbk globalR3DrawLine951_user(nullptr);
+            static info::globalR3EndScene952_ptr globalR3EndScene952_next(nullptr);
+            static info::globalR3EndScene952_clbk globalR3EndScene952_user(nullptr);
+            static info::globalR3EnvironmentQuake953_ptr globalR3EnvironmentQuake953_next(nullptr);
+            static info::globalR3EnvironmentQuake953_clbk globalR3EnvironmentQuake953_user(nullptr);
+            static info::globalR3EnvironmentShake954_ptr globalR3EnvironmentShake954_next(nullptr);
+            static info::globalR3EnvironmentShake954_clbk globalR3EnvironmentShake954_user(nullptr);
+            static info::globalR3EnvironmentShakeOff955_ptr globalR3EnvironmentShakeOff955_next(nullptr);
+            static info::globalR3EnvironmentShakeOff955_clbk globalR3EnvironmentShakeOff955_user(nullptr);
+            static info::globalR3EnvironmentShakeState956_ptr globalR3EnvironmentShakeState956_next(nullptr);
+            static info::globalR3EnvironmentShakeState956_clbk globalR3EnvironmentShakeState956_user(nullptr);
+            static info::globalR3FlyMove957_ptr globalR3FlyMove957_next(nullptr);
+            static info::globalR3FlyMove957_clbk globalR3FlyMove957_user(nullptr);
+            static info::globalR3FlyMoveSetPos958_ptr globalR3FlyMoveSetPos958_next(nullptr);
+            static info::globalR3FlyMoveSetPos958_clbk globalR3FlyMoveSetPos958_user(nullptr);
+            static info::globalR3GetLoopTime959_ptr globalR3GetLoopTime959_next(nullptr);
+            static info::globalR3GetLoopTime959_clbk globalR3GetLoopTime959_user(nullptr);
+            static info::globalR3GetPreAniTextureId960_ptr globalR3GetPreAniTextureId960_next(nullptr);
+            static info::globalR3GetPreAniTextureId960_clbk globalR3GetPreAniTextureId960_user(nullptr);
+            static info::globalR3GetPreTextureId961_ptr globalR3GetPreTextureId961_next(nullptr);
+            static info::globalR3GetPreTextureId961_clbk globalR3GetPreTextureId961_user(nullptr);
+            static info::globalR3GetQuakeMatrix962_ptr globalR3GetQuakeMatrix962_next(nullptr);
+            static info::globalR3GetQuakeMatrix962_clbk globalR3GetQuakeMatrix962_user(nullptr);
+            static info::globalR3GetQuakeVector963_ptr globalR3GetQuakeVector963_next(nullptr);
+            static info::globalR3GetQuakeVector963_clbk globalR3GetQuakeVector963_user(nullptr);
+            static info::globalR3GetShakeVector964_ptr globalR3GetShakeVector964_next(nullptr);
+            static info::globalR3GetShakeVector964_clbk globalR3GetShakeVector964_user(nullptr);
+            static info::globalR3GetSurface965_ptr globalR3GetSurface965_next(nullptr);
+            static info::globalR3GetSurface965_clbk globalR3GetSurface965_user(nullptr);
+            static info::globalR3GetTexInfoR3T966_ptr globalR3GetTexInfoR3T966_next(nullptr);
+            static info::globalR3GetTexInfoR3T966_clbk globalR3GetTexInfoR3T966_user(nullptr);
+            static info::globalR3GetTexName967_ptr globalR3GetTexName967_next(nullptr);
+            static info::globalR3GetTexName967_clbk globalR3GetTexName967_user(nullptr);
+            static info::globalR3GetTime968_ptr globalR3GetTime968_next(nullptr);
+            static info::globalR3GetTime968_clbk globalR3GetTime968_user(nullptr);
+            static info::globalR3GetToggle15fps969_ptr globalR3GetToggle15fps969_next(nullptr);
+            static info::globalR3GetToggle15fps969_clbk globalR3GetToggle15fps969_user(nullptr);
+            static info::globalR3GetToggle30fps970_ptr globalR3GetToggle30fps970_next(nullptr);
+            static info::globalR3GetToggle30fps970_clbk globalR3GetToggle30fps970_user(nullptr);
+            static info::globalR3GetToggle7fps971_ptr globalR3GetToggle7fps971_next(nullptr);
+            static info::globalR3GetToggle7fps971_clbk globalR3GetToggle7fps971_user(nullptr);
+            static info::globalR3GetViewPort972_ptr globalR3GetViewPort972_next(nullptr);
+            static info::globalR3GetViewPort972_clbk globalR3GetViewPort972_user(nullptr);
+            static info::globalR3InitDevice973_ptr globalR3InitDevice973_next(nullptr);
+            static info::globalR3InitDevice973_clbk globalR3InitDevice973_user(nullptr);
+            static info::globalR3InvalidateDevice974_ptr globalR3InvalidateDevice974_next(nullptr);
+            static info::globalR3InvalidateDevice974_clbk globalR3InvalidateDevice974_user(nullptr);
+            static info::globalR3LoadDDS975_ptr globalR3LoadDDS975_next(nullptr);
+            static info::globalR3LoadDDS975_clbk globalR3LoadDDS975_user(nullptr);
+            static info::globalR3LoadDDSAndTextureMem976_ptr globalR3LoadDDSAndTextureMem976_next(nullptr);
+            static info::globalR3LoadDDSAndTextureMem976_clbk globalR3LoadDDSAndTextureMem976_user(nullptr);
+            static info::globalR3LoadDDSFromFP977_ptr globalR3LoadDDSFromFP977_next(nullptr);
+            static info::globalR3LoadDDSFromFP977_clbk globalR3LoadDDSFromFP977_user(nullptr);
+            static info::globalR3LoadTextTexture978_ptr globalR3LoadTextTexture978_next(nullptr);
+            static info::globalR3LoadTextTexture978_clbk globalR3LoadTextTexture978_user(nullptr);
+            static info::globalR3LoadTextureMem979_ptr globalR3LoadTextureMem979_next(nullptr);
+            static info::globalR3LoadTextureMem979_clbk globalR3LoadTextureMem979_user(nullptr);
+            static info::globalR3MouseInput980_ptr globalR3MouseInput980_next(nullptr);
+            static info::globalR3MouseInput980_clbk globalR3MouseInput980_user(nullptr);
+            static info::globalR3MoveGetViewMatrix981_ptr globalR3MoveGetViewMatrix981_next(nullptr);
+            static info::globalR3MoveGetViewMatrix981_clbk globalR3MoveGetViewMatrix981_user(nullptr);
+            static info::globalR3MsgProc982_ptr globalR3MsgProc982_next(nullptr);
+            static info::globalR3MsgProc982_clbk globalR3MsgProc982_user(nullptr);
+            static info::globalR3ReleaseAllTextures983_ptr globalR3ReleaseAllTextures983_next(nullptr);
+            static info::globalR3ReleaseAllTextures983_clbk globalR3ReleaseAllTextures983_user(nullptr);
+            static info::globalR3ReleasePreTextures984_ptr globalR3ReleasePreTextures984_next(nullptr);
+            static info::globalR3ReleasePreTextures984_clbk globalR3ReleasePreTextures984_user(nullptr);
+            static info::globalR3ReleaseTextTexture985_ptr globalR3ReleaseTextTexture985_next(nullptr);
+            static info::globalR3ReleaseTextTexture985_clbk globalR3ReleaseTextTexture985_user(nullptr);
+            static info::globalR3ReleaseTextureMem986_ptr globalR3ReleaseTextureMem986_next(nullptr);
+            static info::globalR3ReleaseTextureMem986_clbk globalR3ReleaseTextureMem986_user(nullptr);
+            static info::globalR3RestoreAllTextures987_ptr globalR3RestoreAllTextures987_next(nullptr);
+            static info::globalR3RestoreAllTextures987_clbk globalR3RestoreAllTextures987_user(nullptr);
+            static info::globalR3RestoreDevice988_ptr globalR3RestoreDevice988_next(nullptr);
+            static info::globalR3RestoreDevice988_clbk globalR3RestoreDevice988_user(nullptr);
+            static info::globalR3SetCameraMatrix989_ptr globalR3SetCameraMatrix989_next(nullptr);
+            static info::globalR3SetCameraMatrix989_clbk globalR3SetCameraMatrix989_user(nullptr);
+            static info::globalR3SetLoopTime990_ptr globalR3SetLoopTime990_next(nullptr);
+            static info::globalR3SetLoopTime990_clbk globalR3SetLoopTime990_user(nullptr);
+            static info::globalR3SetMinFPS991_ptr globalR3SetMinFPS991_next(nullptr);
+            static info::globalR3SetMinFPS991_clbk globalR3SetMinFPS991_user(nullptr);
+            static info::globalR3SetTime992_ptr globalR3SetTime992_next(nullptr);
+            static info::globalR3SetTime992_clbk globalR3SetTime992_user(nullptr);
+            static info::globalR3SetViewPort993_ptr globalR3SetViewPort993_next(nullptr);
+            static info::globalR3SetViewPort993_clbk globalR3SetViewPort993_user(nullptr);
+            static info::globalRGBFromDWORDAligned994_ptr globalRGBFromDWORDAligned994_next(nullptr);
+            static info::globalRGBFromDWORDAligned994_clbk globalRGBFromDWORDAligned994_user(nullptr);
+            static info::globalRGBToJpegFile995_ptr globalRGBToJpegFile995_next(nullptr);
+            static info::globalRGBToJpegFile995_clbk globalRGBToJpegFile995_user(nullptr);
+            static info::globalRTMoiveGetCameraMatrix996_ptr globalRTMoiveGetCameraMatrix996_next(nullptr);
+            static info::globalRTMoiveGetCameraMatrix996_clbk globalRTMoiveGetCameraMatrix996_user(nullptr);
+            static info::globalRTMoiveGetCameraPos997_ptr globalRTMoiveGetCameraPos997_next(nullptr);
+            static info::globalRTMoiveGetCameraPos997_clbk globalRTMoiveGetCameraPos997_user(nullptr);
+            static info::globalRTMovieAddState998_ptr globalRTMovieAddState998_next(nullptr);
+            static info::globalRTMovieAddState998_clbk globalRTMovieAddState998_user(nullptr);
+            static info::globalRTMovieCreate999_ptr globalRTMovieCreate999_next(nullptr);
+            static info::globalRTMovieCreate999_clbk globalRTMovieCreate999_user(nullptr);
+            static info::globalRTMovieFrameMove1000_ptr globalRTMovieFrameMove1000_next(nullptr);
+            static info::globalRTMovieFrameMove1000_clbk globalRTMovieFrameMove1000_user(nullptr);
+            static info::globalRTMovieGetState1001_ptr globalRTMovieGetState1001_next(nullptr);
+            static info::globalRTMovieGetState1001_clbk globalRTMovieGetState1001_user(nullptr);
+            static info::globalRTMoviePause1002_ptr globalRTMoviePause1002_next(nullptr);
+            static info::globalRTMoviePause1002_clbk globalRTMoviePause1002_user(nullptr);
+            static info::globalRTMovieRelease1003_ptr globalRTMovieRelease1003_next(nullptr);
+            static info::globalRTMovieRelease1003_clbk globalRTMovieRelease1003_user(nullptr);
+            static info::globalRTMovieRender1004_ptr globalRTMovieRender1004_next(nullptr);
+            static info::globalRTMovieRender1004_clbk globalRTMovieRender1004_user(nullptr);
+            static info::globalRTMovieSetState1005_ptr globalRTMovieSetState1005_next(nullptr);
+            static info::globalRTMovieSetState1005_clbk globalRTMovieSetState1005_user(nullptr);
+            static info::globalRTMovieSkipShadowState1006_ptr globalRTMovieSkipShadowState1006_next(nullptr);
+            static info::globalRTMovieSkipShadowState1006_clbk globalRTMovieSkipShadowState1006_user(nullptr);
+            static info::globalRTMovieStartPlay1007_ptr globalRTMovieStartPlay1007_next(nullptr);
+            static info::globalRTMovieStartPlay1007_clbk globalRTMovieStartPlay1007_user(nullptr);
+            static info::globalRTMovieSubState1008_ptr globalRTMovieSubState1008_next(nullptr);
+            static info::globalRTMovieSubState1008_clbk globalRTMovieSubState1008_user(nullptr);
+            static info::globalReAlloc1009_ptr globalReAlloc1009_next(nullptr);
+            static info::globalReAlloc1009_clbk globalReAlloc1009_user(nullptr);
+            static info::globalReLoadMaterial1010_ptr globalReLoadMaterial1010_next(nullptr);
+            static info::globalReLoadMaterial1010_clbk globalReLoadMaterial1010_user(nullptr);
+            static info::globalReMoveCamera1011_ptr globalReMoveCamera1011_next(nullptr);
+            static info::globalReMoveCamera1011_clbk globalReMoveCamera1011_user(nullptr);
+            static info::globalReleaesR3MP31012_ptr globalReleaesR3MP31012_next(nullptr);
+            static info::globalReleaesR3MP31012_clbk globalReleaesR3MP31012_user(nullptr);
+            static info::globalReleaesStreamR3MP31013_ptr globalReleaesStreamR3MP31013_next(nullptr);
+            static info::globalReleaesStreamR3MP31013_clbk globalReleaesStreamR3MP31013_user(nullptr);
+            static info::globalReleaseAllSpriteTexMem1014_ptr globalReleaseAllSpriteTexMem1014_next(nullptr);
+            static info::globalReleaseAllSpriteTexMem1014_clbk globalReleaseAllSpriteTexMem1014_user(nullptr);
+            static info::globalReleaseBlurShader1015_ptr globalReleaseBlurShader1015_next(nullptr);
+            static info::globalReleaseBlurShader1015_clbk globalReleaseBlurShader1015_user(nullptr);
+            static info::globalReleaseBlurVBuffer1016_ptr globalReleaseBlurVBuffer1016_next(nullptr);
+            static info::globalReleaseBlurVBuffer1016_clbk globalReleaseBlurVBuffer1016_user(nullptr);
+            static info::globalReleaseConsole1017_ptr globalReleaseConsole1017_next(nullptr);
+            static info::globalReleaseConsole1017_clbk globalReleaseConsole1017_user(nullptr);
+            static info::globalReleaseCore1018_ptr globalReleaseCore1018_next(nullptr);
+            static info::globalReleaseCore1018_clbk globalReleaseCore1018_user(nullptr);
+            static info::globalReleaseFullScreenEffect1019_ptr globalReleaseFullScreenEffect1019_next(nullptr);
+            static info::globalReleaseFullScreenEffect1019_clbk globalReleaseFullScreenEffect1019_user(nullptr);
+            static info::globalReleaseFunctionKey1020_ptr globalReleaseFunctionKey1020_next(nullptr);
+            static info::globalReleaseFunctionKey1020_clbk globalReleaseFunctionKey1020_user(nullptr);
+            static info::globalReleaseJmalloc1021_ptr globalReleaseJmalloc1021_next(nullptr);
+            static info::globalReleaseJmalloc1021_clbk globalReleaseJmalloc1021_user(nullptr);
+            static info::globalReleaseLightMap1022_ptr globalReleaseLightMap1022_next(nullptr);
+            static info::globalReleaseLightMap1022_clbk globalReleaseLightMap1022_user(nullptr);
+            static info::globalReleaseMainMaterial1023_ptr globalReleaseMainMaterial1023_next(nullptr);
+            static info::globalReleaseMainMaterial1023_clbk globalReleaseMainMaterial1023_user(nullptr);
+            static info::globalReleaseR3Engine1024_ptr globalReleaseR3Engine1024_next(nullptr);
+            static info::globalReleaseR3Engine1024_clbk globalReleaseR3Engine1024_user(nullptr);
+            static info::globalReleaseR3Particle1025_ptr globalReleaseR3Particle1025_next(nullptr);
+            static info::globalReleaseR3Particle1025_clbk globalReleaseR3Particle1025_user(nullptr);
+            static info::globalReleaseR3SoundSystem1026_ptr globalReleaseR3SoundSystem1026_next(nullptr);
+            static info::globalReleaseR3SoundSystem1026_clbk globalReleaseR3SoundSystem1026_user(nullptr);
+            static info::globalReleaseR3Text1027_ptr globalReleaseR3Text1027_next(nullptr);
+            static info::globalReleaseR3Text1027_clbk globalReleaseR3Text1027_user(nullptr);
+            static info::globalReleaseSpriteManager1028_ptr globalReleaseSpriteManager1028_next(nullptr);
+            static info::globalReleaseSpriteManager1028_clbk globalReleaseSpriteManager1028_user(nullptr);
+            static info::globalReleaseSpriteManager1029_ptr globalReleaseSpriteManager1029_next(nullptr);
+            static info::globalReleaseSpriteManager1029_clbk globalReleaseSpriteManager1029_user(nullptr);
+            static info::globalReleaseSubMaterial1030_ptr globalReleaseSubMaterial1030_next(nullptr);
+            static info::globalReleaseSubMaterial1030_clbk globalReleaseSubMaterial1030_user(nullptr);
+            static info::globalReleaseSystemTexture1031_ptr globalReleaseSystemTexture1031_next(nullptr);
+            static info::globalReleaseSystemTexture1031_clbk globalReleaseSystemTexture1031_user(nullptr);
+            static info::globalReleaseVertexShaderList1032_ptr globalReleaseVertexShaderList1032_next(nullptr);
+            static info::globalReleaseVertexShaderList1032_clbk globalReleaseVertexShaderList1032_user(nullptr);
+            static info::globalReleaseWaveList1033_ptr globalReleaseWaveList1033_next(nullptr);
+            static info::globalReleaseWaveList1033_clbk globalReleaseWaveList1033_user(nullptr);
+            static info::globalReleaseWebBrowser1034_ptr globalReleaseWebBrowser1034_next(nullptr);
+            static info::globalReleaseWebBrowser1034_clbk globalReleaseWebBrowser1034_user(nullptr);
+            static info::globalResetTexMemSize1035_ptr globalResetTexMemSize1035_next(nullptr);
+            static info::globalResetTexMemSize1035_clbk globalResetTexMemSize1035_user(nullptr);
+            static info::globalResetTotalVertexBufferInfo1036_ptr globalResetTotalVertexBufferInfo1036_next(nullptr);
+            static info::globalResetTotalVertexBufferInfo1036_clbk globalResetTotalVertexBufferInfo1036_user(nullptr);
+            static info::globalResetVertexBufferCache1037_ptr globalResetVertexBufferCache1037_next(nullptr);
+            static info::globalResetVertexBufferCache1037_clbk globalResetVertexBufferCache1037_user(nullptr);
+            static info::globalRestoreAllSpriteTexMem1038_ptr globalRestoreAllSpriteTexMem1038_next(nullptr);
+            static info::globalRestoreAllSpriteTexMem1038_clbk globalRestoreAllSpriteTexMem1038_user(nullptr);
+            static info::globalRestoreSpriteManager1039_ptr globalRestoreSpriteManager1039_next(nullptr);
+            static info::globalRestoreSpriteManager1039_clbk globalRestoreSpriteManager1039_user(nullptr);
+            static info::globalRestoreSystemTexture1040_ptr globalRestoreSystemTexture1040_next(nullptr);
+            static info::globalRestoreSystemTexture1040_clbk globalRestoreSystemTexture1040_user(nullptr);
+            static info::globalRijndael_VC60Workaround1041_ptr globalRijndael_VC60Workaround1041_next(nullptr);
+            static info::globalRijndael_VC60Workaround1041_clbk globalRijndael_VC60Workaround1041_user(nullptr);
+            static info::globalRotateLeftBits1043_ptr globalRotateLeftBits1043_next(nullptr);
+            static info::globalRotateLeftBits1043_clbk globalRotateLeftBits1043_user(nullptr);
+            static info::globalRound11045_ptr globalRound11045_next(nullptr);
+            static info::globalRound11045_clbk globalRound11045_user(nullptr);
+            static info::globalRound21047_ptr globalRound21047_next(nullptr);
+            static info::globalRound21047_clbk globalRound21047_user(nullptr);
+            static info::globalRound31049_ptr globalRound31049_next(nullptr);
+            static info::globalRound31049_clbk globalRound31049_user(nullptr);
+            static info::globalRound41051_ptr globalRound41051_next(nullptr);
+            static info::globalRound41051_clbk globalRound41051_user(nullptr);
+            static info::globalSaveBMP1052_ptr globalSaveBMP1052_next(nullptr);
+            static info::globalSaveBMP1052_clbk globalSaveBMP1052_user(nullptr);
+            static info::globalSaveJPG1053_ptr globalSaveJPG1053_next(nullptr);
+            static info::globalSaveJPG1053_clbk globalSaveJPG1053_user(nullptr);
+            static info::globalScanCodeToVKCode1054_ptr globalScanCodeToVKCode1054_next(nullptr);
+            static info::globalScanCodeToVKCode1054_clbk globalScanCodeToVKCode1054_user(nullptr);
+            static info::globalSearchAvatorWithCMS1056_ptr globalSearchAvatorWithCMS1056_next(nullptr);
+            static info::globalSearchAvatorWithCMS1056_clbk globalSearchAvatorWithCMS1056_user(nullptr);
+            static info::globalSearchAvatorWithName1058_ptr globalSearchAvatorWithName1058_next(nullptr);
+            static info::globalSearchAvatorWithName1058_clbk globalSearchAvatorWithName1058_user(nullptr);
+            static info::globalSearchEmptyMonster1060_ptr globalSearchEmptyMonster1060_next(nullptr);
+            static info::globalSearchEmptyMonster1060_clbk globalSearchEmptyMonster1060_user(nullptr);
+            static info::globalSearchJobCommandFn1062_ptr globalSearchJobCommandFn1062_next(nullptr);
+            static info::globalSearchJobCommandFn1062_clbk globalSearchJobCommandFn1062_user(nullptr);
+            static info::globalSearchMissionCommandFn1064_ptr globalSearchMissionCommandFn1064_next(nullptr);
+            static info::globalSearchMissionCommandFn1064_clbk globalSearchMissionCommandFn1064_user(nullptr);
+            static info::globalSearchQuestCommandFn1066_ptr globalSearchQuestCommandFn1066_next(nullptr);
+            static info::globalSearchQuestCommandFn1066_clbk globalSearchQuestCommandFn1066_user(nullptr);
+            static info::globalSendLoop1068_ptr globalSendLoop1068_next(nullptr);
+            static info::globalSendLoop1068_clbk globalSendLoop1068_user(nullptr);
+            static info::globalSendMsg_EconomyDataToWeb1070_ptr globalSendMsg_EconomyDataToWeb1070_next(nullptr);
+            static info::globalSendMsg_EconomyDataToWeb1070_clbk globalSendMsg_EconomyDataToWeb1070_user(nullptr);
+            static info::globalSerarchEmptyDarkHole1072_ptr globalSerarchEmptyDarkHole1072_next(nullptr);
+            static info::globalSerarchEmptyDarkHole1072_clbk globalSerarchEmptyDarkHole1072_user(nullptr);
+            static info::globalServerProgramExit1074_ptr globalServerProgramExit1074_next(nullptr);
+            static info::globalServerProgramExit1074_clbk globalServerProgramExit1074_user(nullptr);
+            static info::globalSetConsoleStateB1075_ptr globalSetConsoleStateB1075_next(nullptr);
+            static info::globalSetConsoleStateB1075_clbk globalSetConsoleStateB1075_user(nullptr);
+            static info::globalSetContrast1076_ptr globalSetContrast1076_next(nullptr);
+            static info::globalSetContrast1076_clbk globalSetContrast1076_user(nullptr);
+            static info::globalSetContrast1077_ptr globalSetContrast1077_next(nullptr);
+            static info::globalSetContrast1077_clbk globalSetContrast1077_user(nullptr);
+            static info::globalSetDDSTexNameDebug1078_ptr globalSetDDSTexNameDebug1078_next(nullptr);
+            static info::globalSetDDSTexNameDebug1078_clbk globalSetDDSTexNameDebug1078_user(nullptr);
+            static info::globalSetDDSTexSizeDebug1079_ptr globalSetDDSTexSizeDebug1079_next(nullptr);
+            static info::globalSetDDSTexSizeDebug1079_clbk globalSetDDSTexSizeDebug1079_user(nullptr);
+            static info::globalSetDefaultFlags1080_ptr globalSetDefaultFlags1080_next(nullptr);
+            static info::globalSetDefaultFlags1080_clbk globalSetDefaultFlags1080_user(nullptr);
+            static info::globalSetDefaultFov1081_ptr globalSetDefaultFov1081_next(nullptr);
+            static info::globalSetDefaultFov1081_clbk globalSetDefaultFov1081_user(nullptr);
+            static info::globalSetDetailTexVS1082_ptr globalSetDetailTexVS1082_next(nullptr);
+            static info::globalSetDetailTexVS1082_clbk globalSetDetailTexVS1082_user(nullptr);
+            static info::globalSetDynamicLight1083_ptr globalSetDynamicLight1083_next(nullptr);
+            static info::globalSetDynamicLight1083_clbk globalSetDynamicLight1083_user(nullptr);
+            static info::globalSetErrorButRunMessageProc1084_ptr globalSetErrorButRunMessageProc1084_next(nullptr);
+            static info::globalSetErrorButRunMessageProc1084_clbk globalSetErrorButRunMessageProc1084_user(nullptr);
+            static info::globalSetErrorMessageProc1085_ptr globalSetErrorMessageProc1085_next(nullptr);
+            static info::globalSetErrorMessageProc1085_clbk globalSetErrorMessageProc1085_user(nullptr);
+            static info::globalSetFadeFactor1086_ptr globalSetFadeFactor1086_next(nullptr);
+            static info::globalSetFadeFactor1086_clbk globalSetFadeFactor1086_user(nullptr);
+            static info::globalSetFadeIn1087_ptr globalSetFadeIn1087_next(nullptr);
+            static info::globalSetFadeIn1087_clbk globalSetFadeIn1087_user(nullptr);
+            static info::globalSetFadeOut1088_ptr globalSetFadeOut1088_next(nullptr);
+            static info::globalSetFadeOut1088_clbk globalSetFadeOut1088_user(nullptr);
+            static info::globalSetFadeSky1089_ptr globalSetFadeSky1089_next(nullptr);
+            static info::globalSetFadeSky1089_clbk globalSetFadeSky1089_user(nullptr);
+            static info::globalSetFadeTex1090_ptr globalSetFadeTex1090_next(nullptr);
+            static info::globalSetFadeTex1090_clbk globalSetFadeTex1090_user(nullptr);
+            static info::globalSetFov1091_ptr globalSetFov1091_next(nullptr);
+            static info::globalSetFov1091_clbk globalSetFov1091_user(nullptr);
+            static info::globalSetFreePointer1092_ptr globalSetFreePointer1092_next(nullptr);
+            static info::globalSetFreePointer1092_clbk globalSetFreePointer1092_user(nullptr);
+            static info::globalSetFrustumNormalPlane1093_ptr globalSetFrustumNormalPlane1093_next(nullptr);
+            static info::globalSetFrustumNormalPlane1093_clbk globalSetFrustumNormalPlane1093_user(nullptr);
+            static info::globalSetGamma1094_ptr globalSetGamma1094_next(nullptr);
+            static info::globalSetGamma1094_clbk globalSetGamma1094_user(nullptr);
+            static info::globalSetGlobalMusicVolume1095_ptr globalSetGlobalMusicVolume1095_next(nullptr);
+            static info::globalSetGlobalMusicVolume1095_clbk globalSetGlobalMusicVolume1095_user(nullptr);
+            static info::globalSetGlobalWavVolume1096_ptr globalSetGlobalWavVolume1096_next(nullptr);
+            static info::globalSetGlobalWavVolume1096_clbk globalSetGlobalWavVolume1096_user(nullptr);
+            static info::globalSetGrassVS1097_ptr globalSetGrassVS1097_next(nullptr);
+            static info::globalSetGrassVS1097_clbk globalSetGrassVS1097_user(nullptr);
+            static info::globalSetLightMap1098_ptr globalSetLightMap1098_next(nullptr);
+            static info::globalSetLightMap1098_clbk globalSetLightMap1098_user(nullptr);
+            static info::globalSetLitGrassVS1099_ptr globalSetLitGrassVS1099_next(nullptr);
+            static info::globalSetLitGrassVS1099_clbk globalSetLitGrassVS1099_user(nullptr);
+            static info::globalSetMainLight1100_ptr globalSetMainLight1100_next(nullptr);
+            static info::globalSetMainLight1100_clbk globalSetMainLight1100_user(nullptr);
+            static info::globalSetMatAlphaColor1101_ptr globalSetMatAlphaColor1101_next(nullptr);
+            static info::globalSetMatAlphaColor1101_clbk globalSetMatAlphaColor1101_user(nullptr);
+            static info::globalSetMergeFileManager1102_ptr globalSetMergeFileManager1102_next(nullptr);
+            static info::globalSetMergeFileManager1102_clbk globalSetMergeFileManager1102_user(nullptr);
+            static info::globalSetMotionBlurLength1103_ptr globalSetMotionBlurLength1103_next(nullptr);
+            static info::globalSetMotionBlurLength1103_clbk globalSetMotionBlurLength1103_user(nullptr);
+            static info::globalSetMultiLayerCamera1104_ptr globalSetMultiLayerCamera1104_next(nullptr);
+            static info::globalSetMultiLayerCamera1104_clbk globalSetMultiLayerCamera1104_user(nullptr);
+            static info::globalSetMultiLayerTime1105_ptr globalSetMultiLayerTime1105_next(nullptr);
+            static info::globalSetMultiLayerTime1105_clbk globalSetMultiLayerTime1105_user(nullptr);
+            static info::globalSetNoLodTextere1106_ptr globalSetNoLodTextere1106_next(nullptr);
+            static info::globalSetNoLodTextere1106_clbk globalSetNoLodTextere1106_user(nullptr);
+            static info::globalSetNowR3D3DTexCnt1107_ptr globalSetNowR3D3DTexCnt1107_next(nullptr);
+            static info::globalSetNowR3D3DTexCnt1107_clbk globalSetNowR3D3DTexCnt1107_user(nullptr);
+            static info::globalSetNowR3TexCnt1108_ptr globalSetNowR3TexCnt1108_next(nullptr);
+            static info::globalSetNowR3TexCnt1108_clbk globalSetNowR3TexCnt1108_user(nullptr);
+            static info::globalSetOpStack1109_ptr globalSetOpStack1109_next(nullptr);
+            static info::globalSetOpStack1109_clbk globalSetOpStack1109_user(nullptr);
+            static info::globalSetOutLineColor1110_ptr globalSetOutLineColor1110_next(nullptr);
+            static info::globalSetOutLineColor1110_clbk globalSetOutLineColor1110_user(nullptr);
+            static info::globalSetOutLineColorFont161111_ptr globalSetOutLineColorFont161111_next(nullptr);
+            static info::globalSetOutLineColorFont161111_clbk globalSetOutLineColorFont161111_user(nullptr);
+            static info::globalSetOutLineColorFont241112_ptr globalSetOutLineColorFont241112_next(nullptr);
+            static info::globalSetOutLineColorFont241112_clbk globalSetOutLineColorFont241112_user(nullptr);
+            static info::globalSetPlayMusicState1113_ptr globalSetPlayMusicState1113_next(nullptr);
+            static info::globalSetPlayMusicState1113_clbk globalSetPlayMusicState1113_user(nullptr);
+            static info::globalSetPlayWaveState1114_ptr globalSetPlayWaveState1114_next(nullptr);
+            static info::globalSetPlayWaveState1114_clbk globalSetPlayWaveState1114_user(nullptr);
+            static info::globalSetProjectShadow1115_ptr globalSetProjectShadow1115_next(nullptr);
+            static info::globalSetProjectShadow1115_clbk globalSetProjectShadow1115_user(nullptr);
+            static info::globalSetR3D3DTexture1116_ptr globalSetR3D3DTexture1116_next(nullptr);
+            static info::globalSetR3D3DTexture1116_clbk globalSetR3D3DTexture1116_user(nullptr);
+            static info::globalSetR3TexManageFlag1117_ptr globalSetR3TexManageFlag1117_next(nullptr);
+            static info::globalSetR3TexManageFlag1117_clbk globalSetR3TexManageFlag1117_user(nullptr);
+            static info::globalSetR3TextFont1118_ptr globalSetR3TextFont1118_next(nullptr);
+            static info::globalSetR3TextFont1118_clbk globalSetR3TextFont1118_user(nullptr);
+            static info::globalSetReLoadState1119_ptr globalSetReLoadState1119_next(nullptr);
+            static info::globalSetReLoadState1119_clbk globalSetReLoadState1119_user(nullptr);
+            static info::globalSetReflectionState1120_ptr globalSetReflectionState1120_next(nullptr);
+            static info::globalSetReflectionState1120_clbk globalSetReflectionState1120_user(nullptr);
+            static info::globalSetReflectionVS1121_ptr globalSetReflectionVS1121_next(nullptr);
+            static info::globalSetReflectionVS1121_clbk globalSetReflectionVS1121_user(nullptr);
+            static info::globalSetSkipOneBboShasi11122_ptr globalSetSkipOneBboShasi11122_next(nullptr);
+            static info::globalSetSkipOneBboShasi11122_clbk globalSetSkipOneBboShasi11122_user(nullptr);
+            static info::globalSetSkyVS1123_ptr globalSetSkyVS1123_next(nullptr);
+            static info::globalSetSkyVS1123_clbk globalSetSkyVS1123_user(nullptr);
+            static info::globalSetStateFullScreenEffect1124_ptr globalSetStateFullScreenEffect1124_next(nullptr);
+            static info::globalSetStateFullScreenEffect1124_clbk globalSetStateFullScreenEffect1124_user(nullptr);
+            static info::globalSetTextureRenderTargetFrameBuffer1125_ptr globalSetTextureRenderTargetFrameBuffer1125_next(nullptr);
+            static info::globalSetTextureRenderTargetFrameBuffer1125_clbk globalSetTextureRenderTargetFrameBuffer1125_user(nullptr);
+            static info::globalSetTimerRate1126_ptr globalSetTimerRate1126_next(nullptr);
+            static info::globalSetTimerRate1126_clbk globalSetTimerRate1126_user(nullptr);
+            static info::globalSetTransformClipInfo1127_ptr globalSetTransformClipInfo1127_next(nullptr);
+            static info::globalSetTransformClipInfo1127_clbk globalSetTransformClipInfo1127_user(nullptr);
+            static info::globalSetVPIPTex11128_ptr globalSetVPIPTex11128_next(nullptr);
+            static info::globalSetVPIPTex11128_clbk globalSetVPIPTex11128_user(nullptr);
+            static info::globalSetVPIPTex1IndexPrimitive1129_ptr globalSetVPIPTex1IndexPrimitive1129_next(nullptr);
+            static info::globalSetVPIPTex1IndexPrimitive1129_clbk globalSetVPIPTex1IndexPrimitive1129_user(nullptr);
+            static info::globalSetVPIPTex1IndexPrimitiveTL1130_ptr globalSetVPIPTex1IndexPrimitiveTL1130_next(nullptr);
+            static info::globalSetVPIPTex1IndexPrimitiveTL1130_clbk globalSetVPIPTex1IndexPrimitiveTL1130_user(nullptr);
+            static info::globalSetVPIPTex21131_ptr globalSetVPIPTex21131_next(nullptr);
+            static info::globalSetVPIPTex21131_clbk globalSetVPIPTex21131_user(nullptr);
+            static info::globalSetViewPortArea1132_ptr globalSetViewPortArea1132_next(nullptr);
+            static info::globalSetViewPortArea1132_clbk globalSetViewPortArea1132_user(nullptr);
+            static info::globalSetVolumeMP31133_ptr globalSetVolumeMP31133_next(nullptr);
+            static info::globalSetVolumeMP31133_clbk globalSetVolumeMP31133_user(nullptr);
+            static info::globalSetVolumeStreamMP31134_ptr globalSetVolumeStreamMP31134_next(nullptr);
+            static info::globalSetVolumeStreamMP31134_clbk globalSetVolumeStreamMP31134_user(nullptr);
+            static info::globalSetWarningMessageProc1135_ptr globalSetWarningMessageProc1135_next(nullptr);
+            static info::globalSetWarningMessageProc1135_clbk globalSetWarningMessageProc1135_user(nullptr);
+            static info::globalSetWaveVolAndPan1136_ptr globalSetWaveVolAndPan1136_next(nullptr);
+            static info::globalSetWaveVolAndPan1136_clbk globalSetWaveVolAndPan1136_user(nullptr);
+            static info::globalSetWorldViewMatrixVS1137_ptr globalSetWorldViewMatrixVS1137_next(nullptr);
+            static info::globalSetWorldViewMatrixVS1137_clbk globalSetWorldViewMatrixVS1137_user(nullptr);
+            static info::globalShadowBeginScene1138_ptr globalShadowBeginScene1138_next(nullptr);
+            static info::globalShadowBeginScene1138_clbk globalShadowBeginScene1138_user(nullptr);
+            static info::globalShadowEndScene1139_ptr globalShadowEndScene1139_next(nullptr);
+            static info::globalShadowEndScene1139_clbk globalShadowEndScene1139_user(nullptr);
+            static info::globalShortToFloat1141_ptr globalShortToFloat1141_next(nullptr);
+            static info::globalShortToFloat1141_clbk globalShortToFloat1141_user(nullptr);
+            static info::globalSmoothedNoise11142_ptr globalSmoothedNoise11142_next(nullptr);
+            static info::globalSmoothedNoise11142_clbk globalSmoothedNoise11142_user(nullptr);
+            static info::globalSmoothedNoise11143_ptr globalSmoothedNoise11143_next(nullptr);
+            static info::globalSmoothedNoise11143_clbk globalSmoothedNoise11143_user(nullptr);
+            static info::globalSplitString1145_ptr globalSplitString1145_next(nullptr);
+            static info::globalSplitString1145_clbk globalSplitString1145_user(nullptr);
+            static info::globalStopR3MP31146_ptr globalStopR3MP31146_next(nullptr);
+            static info::globalStopR3MP31146_clbk globalStopR3MP31146_user(nullptr);
+            static info::globalStopStreamR3MP31147_ptr globalStopStreamR3MP31147_next(nullptr);
+            static info::globalStopStreamR3MP31147_clbk globalStopStreamR3MP31147_user(nullptr);
+            static info::globalStopWave1148_ptr globalStopWave1148_next(nullptr);
+            static info::globalStopWave1148_clbk globalStopWave1148_user(nullptr);
+            static info::globalStripEXT1149_ptr globalStripEXT1149_next(nullptr);
+            static info::globalStripEXT1149_clbk globalStripEXT1149_user(nullptr);
+            static info::globalStripFinalPath1150_ptr globalStripFinalPath1150_next(nullptr);
+            static info::globalStripFinalPath1150_clbk globalStripFinalPath1150_user(nullptr);
+            static info::globalStripName1151_ptr globalStripName1151_next(nullptr);
+            static info::globalStripName1151_clbk globalStripName1151_user(nullptr);
+            static info::globalStripPath1152_ptr globalStripPath1152_next(nullptr);
+            static info::globalStripPath1152_clbk globalStripPath1152_user(nullptr);
+            static info::globalTestAllGroup1153_ptr globalTestAllGroup1153_next(nullptr);
+            static info::globalTestAllGroup1153_clbk globalTestAllGroup1153_user(nullptr);
+            static info::globalTestWriteFile1154_ptr globalTestWriteFile1154_next(nullptr);
+            static info::globalTestWriteFile1154_clbk globalTestWriteFile1154_user(nullptr);
+            static info::globalTextureCopy1155_ptr globalTextureCopy1155_next(nullptr);
+            static info::globalTextureCopy1155_clbk globalTextureCopy1155_user(nullptr);
+            static info::globalTextureSplatting1156_ptr globalTextureSplatting1156_next(nullptr);
+            static info::globalTextureSplatting1156_clbk globalTextureSplatting1156_user(nullptr);
+            static info::globalTransformVertex1157_ptr globalTransformVertex1157_next(nullptr);
+            static info::globalTransformVertex1157_clbk globalTransformVertex1157_user(nullptr);
+            static info::globalTransformVertex1158_ptr globalTransformVertex1158_next(nullptr);
+            static info::globalTransformVertex1158_clbk globalTransformVertex1158_user(nullptr);
+            static info::globalUnLightMappingTex11159_ptr globalUnLightMappingTex11159_next(nullptr);
+            static info::globalUnLightMappingTex11159_clbk globalUnLightMappingTex11159_user(nullptr);
+            static info::globalUnSetDynamicLight1160_ptr globalUnSetDynamicLight1160_next(nullptr);
+            static info::globalUnSetDynamicLight1160_clbk globalUnSetDynamicLight1160_user(nullptr);
+            static info::globalUnSetMatAlphaColor1161_ptr globalUnSetMatAlphaColor1161_next(nullptr);
+            static info::globalUnSetMatAlphaColor1161_clbk globalUnSetMatAlphaColor1161_user(nullptr);
+            static info::globalUnSetProjectedShadow1162_ptr globalUnSetProjectedShadow1162_next(nullptr);
+            static info::globalUnSetProjectedShadow1162_clbk globalUnSetProjectedShadow1162_user(nullptr);
+            static info::globalUnTextureSplatting1163_ptr globalUnTextureSplatting1163_next(nullptr);
+            static info::globalUnTextureSplatting1163_clbk globalUnTextureSplatting1163_user(nullptr);
+            static info::globalUpdateStreamMP31164_ptr globalUpdateStreamMP31164_next(nullptr);
+            static info::globalUpdateStreamMP31164_clbk globalUpdateStreamMP31164_user(nullptr);
+            static info::globalVector3fTransform1165_ptr globalVector3fTransform1165_next(nullptr);
+            static info::globalVector3fTransform1165_clbk globalVector3fTransform1165_user(nullptr);
+            static info::globalVertFlipBuf1166_ptr globalVertFlipBuf1166_next(nullptr);
+            static info::globalVertFlipBuf1166_clbk globalVertFlipBuf1166_user(nullptr);
+            static info::globalW2M1168_ptr globalW2M1168_next(nullptr);
+            static info::globalW2M1168_clbk globalW2M1168_user(nullptr);
+            static info::globalWCHARTOMULTI1170_ptr globalWCHARTOMULTI1170_next(nullptr);
+            static info::globalWCHARTOMULTI1170_clbk globalWCHARTOMULTI1170_user(nullptr);
+            static info::globalWarning1171_ptr globalWarning1171_next(nullptr);
+            static info::globalWarning1171_clbk globalWarning1171_user(nullptr);
+            static info::globalWndProc1172_ptr globalWndProc1172_next(nullptr);
+            static info::globalWndProc1172_clbk globalWndProc1172_user(nullptr);
+            static info::globalWriteCheatLog1174_ptr globalWriteCheatLog1174_next(nullptr);
+            static info::globalWriteCheatLog1174_clbk globalWriteCheatLog1174_user(nullptr);
+            static info::globalWriteLogFileLong1176_ptr globalWriteLogFileLong1176_next(nullptr);
+            static info::globalWriteLogFileLong1176_clbk globalWriteLogFileLong1176_user(nullptr);
+            static info::globalWriteServerStartHistory1178_ptr globalWriteServerStartHistory1178_next(nullptr);
+            static info::globalWriteServerStartHistory1178_clbk globalWriteServerStartHistory1178_user(nullptr);
+            static info::globalWriteTableData1180_ptr globalWriteTableData1180_next(nullptr);
+            static info::globalWriteTableData1180_clbk globalWriteTableData1180_user(nullptr);
+            static info::globalWriteTableDataPart1182_ptr globalWriteTableDataPart1182_next(nullptr);
+            static info::globalWriteTableDataPart1182_clbk globalWriteTableDataPart1182_user(nullptr);
+            static info::global_CalcPayExgRatePerRace1186_ptr global_CalcPayExgRatePerRace1186_next(nullptr);
+            static info::global_CalcPayExgRatePerRace1186_clbk global_CalcPayExgRatePerRace1186_user(nullptr);
+            static info::global_CcrFG_rs_CloseUserContext1187_ptr global_CcrFG_rs_CloseUserContext1187_next(nullptr);
+            static info::global_CcrFG_rs_CloseUserContext1187_clbk global_CcrFG_rs_CloseUserContext1187_user(nullptr);
+            static info::global_CcrFG_rs_CreateUserContext1188_ptr global_CcrFG_rs_CreateUserContext1188_next(nullptr);
+            static info::global_CcrFG_rs_CreateUserContext1188_clbk global_CcrFG_rs_CreateUserContext1188_user(nullptr);
+            static info::global_CcrFG_rs_DecryptPacket1189_ptr global_CcrFG_rs_DecryptPacket1189_next(nullptr);
+            static info::global_CcrFG_rs_DecryptPacket1189_clbk global_CcrFG_rs_DecryptPacket1189_user(nullptr);
+            static info::global_CcrFG_rs_EncryptPacket1190_ptr global_CcrFG_rs_EncryptPacket1190_next(nullptr);
+            static info::global_CcrFG_rs_EncryptPacket1190_clbk global_CcrFG_rs_EncryptPacket1190_user(nullptr);
+            static info::global_CcrFG_rs_GetLastError1191_ptr global_CcrFG_rs_GetLastError1191_next(nullptr);
+            static info::global_CcrFG_rs_GetLastError1191_clbk global_CcrFG_rs_GetLastError1191_user(nullptr);
+            static info::global_CcrFG_rs_Initialize1192_ptr global_CcrFG_rs_Initialize1192_next(nullptr);
+            static info::global_CcrFG_rs_Initialize1192_clbk global_CcrFG_rs_Initialize1192_user(nullptr);
+            static info::global_CcrFG_rs_Uninitialize1193_ptr global_CcrFG_rs_Uninitialize1193_next(nullptr);
+            static info::global_CcrFG_rs_Uninitialize1193_clbk global_CcrFG_rs_Uninitialize1193_user(nullptr);
+            static info::global_CheckCumulativeSF1195_ptr global_CheckCumulativeSF1195_next(nullptr);
+            static info::global_CheckCumulativeSF1195_clbk global_CheckCumulativeSF1195_user(nullptr);
+            static info::global_CheckDestMonsterLimitLv1197_ptr global_CheckDestMonsterLimitLv1197_next(nullptr);
+            static info::global_CheckDestMonsterLimitLv1197_clbk global_CheckDestMonsterLimitLv1197_user(nullptr);
+            static info::global_CheckPotionData1199_ptr global_CheckPotionData1199_next(nullptr);
+            static info::global_CheckPotionData1199_clbk global_CheckPotionData1199_user(nullptr);
+            static info::global_CheckSameItem1201_ptr global_CheckSameItem1201_next(nullptr);
+            static info::global_CheckSameItem1201_clbk global_CheckSameItem1201_user(nullptr);
+            static info::global_Check_SF_UseType1203_ptr global_Check_SF_UseType1203_next(nullptr);
+            static info::global_Check_SF_UseType1203_clbk global_Check_SF_UseType1203_user(nullptr);
+            static info::global_CreateLootingNovusItem1205_ptr global_CreateLootingNovusItem1205_next(nullptr);
+            static info::global_CreateLootingNovusItem1205_clbk global_CreateLootingNovusItem1205_user(nullptr);
+            static info::global_CreateMon1207_ptr global_CreateMon1207_next(nullptr);
+            static info::global_CreateMon1207_clbk global_CreateMon1207_user(nullptr);
+            static info::global_DbgOut1209_ptr global_DbgOut1209_next(nullptr);
+            static info::global_DbgOut1209_clbk global_DbgOut1209_user(nullptr);
+            static info::global_FailItemShortBuffer1212_ptr global_FailItemShortBuffer1212_next(nullptr);
+            static info::global_FailItemShortBuffer1212_clbk global_FailItemShortBuffer1212_user(nullptr);
+            static info::global_GetLuaEventMgr1214_ptr global_GetLuaEventMgr1214_next(nullptr);
+            static info::global_GetLuaEventMgr1214_clbk global_GetLuaEventMgr1214_user(nullptr);
+            static info::global_GetMonsterContTime1216_ptr global_GetMonsterContTime1216_next(nullptr);
+            static info::global_GetMonsterContTime1216_clbk global_GetMonsterContTime1216_user(nullptr);
+            static info::global_GetTempEffectValue1218_ptr global_GetTempEffectValue1218_next(nullptr);
+            static info::global_GetTempEffectValue1218_clbk global_GetTempEffectValue1218_user(nullptr);
+            static info::global_GetTransTBL1220_ptr global_GetTransTBL1220_next(nullptr);
+            static info::global_GetTransTBL1220_clbk global_GetTransTBL1220_user(nullptr);
+            static info::global_IsXmasSnowEffect1222_ptr global_IsXmasSnowEffect1222_next(nullptr);
+            static info::global_IsXmasSnowEffect1222_clbk global_IsXmasSnowEffect1222_user(nullptr);
+            static info::global_KickReason1224_ptr global_KickReason1224_next(nullptr);
+            static info::global_KickReason1224_clbk global_KickReason1224_user(nullptr);
+            static info::global_Pow_int1226_ptr global_Pow_int1226_next(nullptr);
+            static info::global_Pow_int1226_clbk global_Pow_int1226_user(nullptr);
+            static info::global_Pow_int1228_ptr global_Pow_int1228_next(nullptr);
+            static info::global_Pow_int1228_clbk global_Pow_int1228_user(nullptr);
+            static info::global_RTC_AllocaFailure1229_ptr global_RTC_AllocaFailure1229_next(nullptr);
+            static info::global_RTC_AllocaFailure1229_clbk global_RTC_AllocaFailure1229_user(nullptr);
+            static info::global_RTC_Failure1230_ptr global_RTC_Failure1230_next(nullptr);
+            static info::global_RTC_Failure1230_clbk global_RTC_Failure1230_user(nullptr);
+            static info::global_RTC_GetErrorFunc1231_ptr global_RTC_GetErrorFunc1231_next(nullptr);
+            static info::global_RTC_GetErrorFunc1231_clbk global_RTC_GetErrorFunc1231_user(nullptr);
+            static info::global_RTC_GetErrorFuncW1232_ptr global_RTC_GetErrorFuncW1232_next(nullptr);
+            static info::global_RTC_GetErrorFuncW1232_clbk global_RTC_GetErrorFuncW1232_user(nullptr);
+            static info::global_RTC_GetSrcLine1233_ptr global_RTC_GetSrcLine1233_next(nullptr);
+            static info::global_RTC_GetSrcLine1233_clbk global_RTC_GetSrcLine1233_user(nullptr);
+            static info::global_RTC_StackFailure1234_ptr global_RTC_StackFailure1234_next(nullptr);
+            static info::global_RTC_StackFailure1234_clbk global_RTC_StackFailure1234_user(nullptr);
+            static info::global_ReadEconomyIniFile1236_ptr global_ReadEconomyIniFile1236_next(nullptr);
+            static info::global_ReadEconomyIniFile1236_clbk global_ReadEconomyIniFile1236_user(nullptr);
+            static info::global_SearchPlayer1238_ptr global_SearchPlayer1238_next(nullptr);
+            static info::global_SearchPlayer1238_clbk global_SearchPlayer1238_user(nullptr);
+            static info::global_UpdateNewEconomy1240_ptr global_UpdateNewEconomy1240_next(nullptr);
+            static info::global_UpdateNewEconomy1240_clbk global_UpdateNewEconomy1240_user(nullptr);
+            static info::global_UpdateRateSendToAllPlayer1242_ptr global_UpdateRateSendToAllPlayer1242_next(nullptr);
+            static info::global_UpdateRateSendToAllPlayer1242_clbk global_UpdateRateSendToAllPlayer1242_user(nullptr);
+            static info::global__ArrayUnwind1243_ptr global__ArrayUnwind1243_next(nullptr);
+            static info::global__ArrayUnwind1243_clbk global__ArrayUnwind1243_user(nullptr);
+            static info::global__CxxUnhandledExceptionFilter1244_ptr global__CxxUnhandledExceptionFilter1244_next(nullptr);
+            static info::global__CxxUnhandledExceptionFilter1244_clbk global__CxxUnhandledExceptionFilter1244_user(nullptr);
+            static info::global__destroy_item1246_ptr global__destroy_item1246_next(nullptr);
+            static info::global__destroy_item1246_clbk global__destroy_item1246_user(nullptr);
+            static info::global__make_item1248_ptr global__make_item1248_next(nullptr);
+            static info::global__make_item1248_clbk global__make_item1248_user(nullptr);
+            static info::global__trace1250_ptr global__trace1250_next(nullptr);
+            static info::global__trace1250_clbk global__trace1250_user(nullptr);
+            static info::global_false1252_ptr global_false1252_next(nullptr);
+            static info::global_false1252_clbk global_false1252_user(nullptr);
+            static info::global_mbschr1254_ptr global_mbschr1254_next(nullptr);
+            static info::global_mbschr1254_clbk global_mbschr1254_user(nullptr);
+            static info::global_tcsrchr1256_ptr global_tcsrchr1256_next(nullptr);
+            static info::global_tcsrchr1256_clbk global_tcsrchr1256_user(nullptr);
+            static info::globalabs1262_ptr globalabs1262_next(nullptr);
+            static info::globalabs1262_clbk globalabs1262_user(nullptr);
+            static info::globalabs1264_ptr globalabs1264_next(nullptr);
+            static info::globalabs1264_clbk globalabs1264_user(nullptr);
+            static info::globalacos1266_ptr globalacos1266_next(nullptr);
+            static info::globalacos1266_clbk globalacos1266_user(nullptr);
+            static info::globalatan21267_ptr globalatan21267_next(nullptr);
+            static info::globalatan21267_clbk globalatan21267_user(nullptr);
+            static info::globalclear_file1269_ptr globalclear_file1269_next(nullptr);
+            static info::globalclear_file1269_clbk globalclear_file1269_user(nullptr);
+            static info::globalcos1271_ptr globalcos1271_next(nullptr);
+            static info::globalcos1271_clbk globalcos1271_user(nullptr);
+            static info::globalct_CashEventStart1273_ptr globalct_CashEventStart1273_next(nullptr);
+            static info::globalct_CashEventStart1273_clbk globalct_CashEventStart1273_user(nullptr);
+            static info::globalct_CdeEndup1275_ptr globalct_CdeEndup1275_next(nullptr);
+            static info::globalct_CdeEndup1275_clbk globalct_CdeEndup1275_user(nullptr);
+            static info::globalct_CdeStart1277_ptr globalct_CdeStart1277_next(nullptr);
+            static info::globalct_CdeStart1277_clbk globalct_CdeStart1277_user(nullptr);
+            static info::globalct_ClassRefineEvent1279_ptr globalct_ClassRefineEvent1279_next(nullptr);
+            static info::globalct_ClassRefineEvent1279_clbk globalct_ClassRefineEvent1279_user(nullptr);
+            static info::globalct_ClearSettleOwnerGuild1281_ptr globalct_ClearSettleOwnerGuild1281_next(nullptr);
+            static info::globalct_ClearSettleOwnerGuild1281_clbk globalct_ClearSettleOwnerGuild1281_user(nullptr);
+            static info::globalct_ConEventStart1283_ptr globalct_ConEventStart1283_next(nullptr);
+            static info::globalct_ConEventStart1283_clbk globalct_ConEventStart1283_user(nullptr);
+            static info::globalct_Gold_Age_Event_Status1285_ptr globalct_Gold_Age_Event_Status1285_next(nullptr);
+            static info::globalct_Gold_Age_Event_Status1285_clbk globalct_Gold_Age_Event_Status1285_user(nullptr);
+            static info::globalct_Gold_Age_Get_Box_Cnt1287_ptr globalct_Gold_Age_Get_Box_Cnt1287_next(nullptr);
+            static info::globalct_Gold_Age_Get_Box_Cnt1287_clbk globalct_Gold_Age_Get_Box_Cnt1287_user(nullptr);
+            static info::globalct_Gold_Age_Set_Event_Status1289_ptr globalct_Gold_Age_Set_Event_Status1289_next(nullptr);
+            static info::globalct_Gold_Age_Set_Event_Status1289_clbk globalct_Gold_Age_Set_Event_Status1289_user(nullptr);
+            static info::globalct_HolyKeeperAttack1291_ptr globalct_HolyKeeperAttack1291_next(nullptr);
+            static info::globalct_HolyKeeperAttack1291_clbk globalct_HolyKeeperAttack1291_user(nullptr);
+            static info::globalct_HolySystem1293_ptr globalct_HolySystem1293_next(nullptr);
+            static info::globalct_HolySystem1293_clbk globalct_HolySystem1293_user(nullptr);
+            static info::globalct_HolySystem_Jp1295_ptr globalct_HolySystem_Jp1295_next(nullptr);
+            static info::globalct_HolySystem_Jp1295_clbk globalct_HolySystem_Jp1295_user(nullptr);
+            static info::globalct_InformCristalBattleBeforeAnHour1297_ptr globalct_InformCristalBattleBeforeAnHour1297_next(nullptr);
+            static info::globalct_InformCristalBattleBeforeAnHour1297_clbk globalct_InformCristalBattleBeforeAnHour1297_user(nullptr);
+            static info::globalct_InformPatriarchProcessor1299_ptr globalct_InformPatriarchProcessor1299_next(nullptr);
+            static info::globalct_InformPatriarchProcessor1299_clbk globalct_InformPatriarchProcessor1299_user(nullptr);
+            static info::globalct_NuAfterEffect1301_ptr globalct_NuAfterEffect1301_next(nullptr);
+            static info::globalct_NuAfterEffect1301_clbk globalct_NuAfterEffect1301_user(nullptr);
+            static info::globalct_PcBandPrimium1303_ptr globalct_PcBandPrimium1303_next(nullptr);
+            static info::globalct_PcBandPrimium1303_clbk globalct_PcBandPrimium1303_user(nullptr);
+            static info::globalct_PvpLimitInit1305_ptr globalct_PvpLimitInit1305_next(nullptr);
+            static info::globalct_PvpLimitInit1305_clbk globalct_PvpLimitInit1305_user(nullptr);
+            static info::globalct_ReqChangeHonorGuild1307_ptr globalct_ReqChangeHonorGuild1307_next(nullptr);
+            static info::globalct_ReqChangeHonorGuild1307_clbk globalct_ReqChangeHonorGuild1307_user(nullptr);
+            static info::globalct_ReqPunishment1309_ptr globalct_ReqPunishment1309_next(nullptr);
+            static info::globalct_ReqPunishment1309_clbk globalct_ReqPunishment1309_user(nullptr);
+            static info::globalct_SetGuildGrade1311_ptr globalct_SetGuildGrade1311_next(nullptr);
+            static info::globalct_SetGuildGrade1311_clbk globalct_SetGuildGrade1311_user(nullptr);
+            static info::globalct_SetGuildGradeByGuildSerial1313_ptr globalct_SetGuildGradeByGuildSerial1313_next(nullptr);
+            static info::globalct_SetGuildGradeByGuildSerial1313_clbk globalct_SetGuildGradeByGuildSerial1313_user(nullptr);
+            static info::globalct_SetGuildGradeByName1315_ptr globalct_SetGuildGradeByName1315_next(nullptr);
+            static info::globalct_SetGuildGradeByName1315_clbk globalct_SetGuildGradeByName1315_user(nullptr);
+            static info::globalct_SetGuildMaster1317_ptr globalct_SetGuildMaster1317_next(nullptr);
+            static info::globalct_SetGuildMaster1317_clbk globalct_SetGuildMaster1317_user(nullptr);
+            static info::globalct_SetMaxLevelLimit1319_ptr globalct_SetMaxLevelLimit1319_next(nullptr);
+            static info::globalct_SetMaxLevelLimit1319_clbk globalct_SetMaxLevelLimit1319_user(nullptr);
+            static info::globalct_SetPatriarchAuto1321_ptr globalct_SetPatriarchAuto1321_next(nullptr);
+            static info::globalct_SetPatriarchAuto1321_clbk globalct_SetPatriarchAuto1321_user(nullptr);
+            static info::globalct_SetPatriarchClear1323_ptr globalct_SetPatriarchClear1323_next(nullptr);
+            static info::globalct_SetPatriarchClear1323_clbk globalct_SetPatriarchClear1323_user(nullptr);
+            static info::globalct_SetPatriarchGroup1325_ptr globalct_SetPatriarchGroup1325_next(nullptr);
+            static info::globalct_SetPatriarchGroup1325_clbk globalct_SetPatriarchGroup1325_user(nullptr);
+            static info::globalct_SetPatriarchProcessor1327_ptr globalct_SetPatriarchProcessor1327_next(nullptr);
+            static info::globalct_SetPatriarchProcessor1327_clbk globalct_SetPatriarchProcessor1327_user(nullptr);
+            static info::globalct_SetSettleOwnerGuild1329_ptr globalct_SetSettleOwnerGuild1329_next(nullptr);
+            static info::globalct_SetSettleOwnerGuild1329_clbk globalct_SetSettleOwnerGuild1329_user(nullptr);
+            static info::globalct_Win_RaceWar1331_ptr globalct_Win_RaceWar1331_next(nullptr);
+            static info::globalct_Win_RaceWar1331_clbk globalct_Win_RaceWar1331_user(nullptr);
+            static info::globalct_action_point_set1333_ptr globalct_action_point_set1333_next(nullptr);
+            static info::globalct_action_point_set1333_clbk globalct_action_point_set1333_user(nullptr);
+            static info::globalct_add_guild_schedule1335_ptr globalct_add_guild_schedule1335_next(nullptr);
+            static info::globalct_add_guild_schedule1335_clbk globalct_add_guild_schedule1335_user(nullptr);
+            static info::globalct_add_one_day_guild_schedule1337_ptr globalct_add_one_day_guild_schedule1337_next(nullptr);
+            static info::globalct_add_one_day_guild_schedule1337_clbk globalct_add_one_day_guild_schedule1337_user(nullptr);
+            static info::globalct_all_item_muzi1339_ptr globalct_all_item_muzi1339_next(nullptr);
+            static info::globalct_all_item_muzi1339_clbk globalct_all_item_muzi1339_user(nullptr);
+            static info::globalct_all_map1341_ptr globalct_all_map1341_next(nullptr);
+            static info::globalct_all_map1341_clbk globalct_all_map1341_user(nullptr);
+            static info::globalct_alter_cashbag1343_ptr globalct_alter_cashbag1343_next(nullptr);
+            static info::globalct_alter_cashbag1343_clbk globalct_alter_cashbag1343_user(nullptr);
+            static info::globalct_alter_dalant1345_ptr globalct_alter_dalant1345_next(nullptr);
+            static info::globalct_alter_dalant1345_clbk globalct_alter_dalant1345_user(nullptr);
+            static info::globalct_alter_exp1347_ptr globalct_alter_exp1347_next(nullptr);
+            static info::globalct_alter_exp1347_clbk globalct_alter_exp1347_user(nullptr);
+            static info::globalct_alter_gold1349_ptr globalct_alter_gold1349_next(nullptr);
+            static info::globalct_alter_gold1349_clbk globalct_alter_gold1349_user(nullptr);
+            static info::globalct_alter_inven_dur1351_ptr globalct_alter_inven_dur1351_next(nullptr);
+            static info::globalct_alter_inven_dur1351_clbk globalct_alter_inven_dur1351_user(nullptr);
+            static info::globalct_alter_lv1353_ptr globalct_alter_lv1353_next(nullptr);
+            static info::globalct_alter_lv1353_clbk globalct_alter_lv1353_user(nullptr);
+            static info::globalct_alter_pvp1355_ptr globalct_alter_pvp1355_next(nullptr);
+            static info::globalct_alter_pvp1355_clbk globalct_alter_pvp1355_user(nullptr);
+            static info::globalct_amp_full1357_ptr globalct_amp_full1357_next(nullptr);
+            static info::globalct_amp_full1357_clbk globalct_amp_full1357_user(nullptr);
+            static info::globalct_amp_set1359_ptr globalct_amp_set1359_next(nullptr);
+            static info::globalct_amp_set1359_clbk globalct_amp_set1359_user(nullptr);
+            static info::globalct_animus_attack_grade1361_ptr globalct_animus_attack_grade1361_next(nullptr);
+            static info::globalct_animus_attack_grade1361_clbk globalct_animus_attack_grade1361_user(nullptr);
+            static info::globalct_animus_recall_term1363_ptr globalct_animus_recall_term1363_next(nullptr);
+            static info::globalct_animus_recall_term1363_clbk globalct_animus_recall_term1363_user(nullptr);
+            static info::globalct_animusexp1365_ptr globalct_animusexp1365_next(nullptr);
+            static info::globalct_animusexp1365_clbk globalct_animusexp1365_user(nullptr);
+            static info::globalct_basemastery1367_ptr globalct_basemastery1367_next(nullptr);
+            static info::globalct_basemastery1367_clbk globalct_basemastery1367_user(nullptr);
+            static info::globalct_boss_sms_cancel1369_ptr globalct_boss_sms_cancel1369_next(nullptr);
+            static info::globalct_boss_sms_cancel1369_clbk globalct_boss_sms_cancel1369_user(nullptr);
+            static info::globalct_buf_potion_use1371_ptr globalct_buf_potion_use1371_next(nullptr);
+            static info::globalct_buf_potion_use1371_clbk globalct_buf_potion_use1371_user(nullptr);
+            static info::globalct_cashitembuy1373_ptr globalct_cashitembuy1373_next(nullptr);
+            static info::globalct_cashitembuy1373_clbk globalct_cashitembuy1373_user(nullptr);
+            static info::globalct_change_class1375_ptr globalct_change_class1375_next(nullptr);
+            static info::globalct_change_class1375_clbk globalct_change_class1375_user(nullptr);
+            static info::globalct_change_degree1377_ptr globalct_change_degree1377_next(nullptr);
+            static info::globalct_change_degree1377_clbk globalct_change_degree1377_user(nullptr);
+            static info::globalct_change_master_elect1379_ptr globalct_change_master_elect1379_next(nullptr);
+            static info::globalct_change_master_elect1379_clbk globalct_change_master_elect1379_user(nullptr);
+            static info::globalct_change_mastery1381_ptr globalct_change_mastery1381_next(nullptr);
+            static info::globalct_change_mastery1381_clbk globalct_change_mastery1381_user(nullptr);
+            static info::globalct_chatsave1383_ptr globalct_chatsave1383_next(nullptr);
+            static info::globalct_chatsave1383_clbk globalct_chatsave1383_user(nullptr);
+            static info::globalct_check_guild_batlle_goal1385_ptr globalct_check_guild_batlle_goal1385_next(nullptr);
+            static info::globalct_check_guild_batlle_goal1385_clbk globalct_check_guild_batlle_goal1385_user(nullptr);
+            static info::globalct_circle_mon_kill1387_ptr globalct_circle_mon_kill1387_next(nullptr);
+            static info::globalct_circle_mon_kill1387_clbk globalct_circle_mon_kill1387_user(nullptr);
+            static info::globalct_circle_user_num1389_ptr globalct_circle_user_num1389_next(nullptr);
+            static info::globalct_circle_user_num1389_clbk globalct_circle_user_num1389_user(nullptr);
+            static info::globalct_combine_ex_result1391_ptr globalct_combine_ex_result1391_next(nullptr);
+            static info::globalct_combine_ex_result1391_clbk globalct_combine_ex_result1391_user(nullptr);
+            static info::globalct_complete_quest1393_ptr globalct_complete_quest1393_next(nullptr);
+            static info::globalct_complete_quest1393_clbk globalct_complete_quest1393_user(nullptr);
+            static info::globalct_complete_quest_other1395_ptr globalct_complete_quest_other1395_next(nullptr);
+            static info::globalct_complete_quest_other1395_clbk globalct_complete_quest_other1395_user(nullptr);
+            static info::globalct_cont_effet_clear1397_ptr globalct_cont_effet_clear1397_next(nullptr);
+            static info::globalct_cont_effet_clear1397_clbk globalct_cont_effet_clear1397_user(nullptr);
+            static info::globalct_cont_effet_time1399_ptr globalct_cont_effet_time1399_next(nullptr);
+            static info::globalct_cont_effet_time1399_clbk globalct_cont_effet_time1399_user(nullptr);
+            static info::globalct_continue_palytime_inc1401_ptr globalct_continue_palytime_inc1401_next(nullptr);
+            static info::globalct_continue_palytime_inc1401_clbk globalct_continue_palytime_inc1401_user(nullptr);
+            static info::globalct_copy_avator1403_ptr globalct_copy_avator1403_next(nullptr);
+            static info::globalct_copy_avator1403_clbk globalct_copy_avator1403_user(nullptr);
+            static info::globalct_create_guildbattle_field_object1405_ptr globalct_create_guildbattle_field_object1405_next(nullptr);
+            static info::globalct_create_guildbattle_field_object1405_clbk globalct_create_guildbattle_field_object1405_user(nullptr);
+            static info::globalct_cur_guildbattle_color1407_ptr globalct_cur_guildbattle_color1407_next(nullptr);
+            static info::globalct_cur_guildbattle_color1407_clbk globalct_cur_guildbattle_color1407_user(nullptr);
+            static info::globalct_darkholereward1409_ptr globalct_darkholereward1409_next(nullptr);
+            static info::globalct_darkholereward1409_clbk globalct_darkholereward1409_user(nullptr);
+            static info::globalct_defense_item_grace1411_ptr globalct_defense_item_grace1411_next(nullptr);
+            static info::globalct_defense_item_grace1411_clbk globalct_defense_item_grace1411_user(nullptr);
+            static info::globalct_defense_item_grace_Jp1413_ptr globalct_defense_item_grace_Jp1413_next(nullptr);
+            static info::globalct_defense_item_grace_Jp1413_clbk globalct_defense_item_grace_Jp1413_user(nullptr);
+            static info::globalct_destroy_gravitystone1415_ptr globalct_destroy_gravitystone1415_next(nullptr);
+            static info::globalct_destroy_gravitystone1415_clbk globalct_destroy_gravitystone1415_user(nullptr);
+            static info::globalct_destroy_guildbattle_field_object1417_ptr globalct_destroy_guildbattle_field_object1417_next(nullptr);
+            static info::globalct_destroy_guildbattle_field_object1417_clbk globalct_destroy_guildbattle_field_object1417_user(nullptr);
+            static info::globalct_destroy_system_tower1419_ptr globalct_destroy_system_tower1419_next(nullptr);
+            static info::globalct_destroy_system_tower1419_clbk globalct_destroy_system_tower1419_user(nullptr);
+            static info::globalct_die1421_ptr globalct_die1421_next(nullptr);
+            static info::globalct_die1421_clbk globalct_die1421_user(nullptr);
+            static info::globalct_drop_gravitystone1423_ptr globalct_drop_gravitystone1423_next(nullptr);
+            static info::globalct_drop_gravitystone1423_clbk globalct_drop_gravitystone1423_user(nullptr);
+            static info::globalct_drop_jade1425_ptr globalct_drop_jade1425_next(nullptr);
+            static info::globalct_drop_jade1425_clbk globalct_drop_jade1425_user(nullptr);
+            static info::globalct_elect_info_player1427_ptr globalct_elect_info_player1427_next(nullptr);
+            static info::globalct_elect_info_player1427_clbk globalct_elect_info_player1427_user(nullptr);
+            static info::globalct_elect_set_env1429_ptr globalct_elect_set_env1429_next(nullptr);
+            static info::globalct_elect_set_env1429_clbk globalct_elect_set_env1429_user(nullptr);
+            static info::globalct_elect_set_player1431_ptr globalct_elect_set_player1431_next(nullptr);
+            static info::globalct_elect_set_player1431_clbk globalct_elect_set_player1431_user(nullptr);
+            static info::globalct_eventset_start1433_ptr globalct_eventset_start1433_next(nullptr);
+            static info::globalct_eventset_start1433_clbk globalct_eventset_start1433_user(nullptr);
+            static info::globalct_eventset_stop1435_ptr globalct_eventset_stop1435_next(nullptr);
+            static info::globalct_eventset_stop1435_clbk globalct_eventset_stop1435_user(nullptr);
+            static info::globalct_exception1437_ptr globalct_exception1437_next(nullptr);
+            static info::globalct_exception1437_clbk globalct_exception1437_user(nullptr);
+            static info::globalct_exip_keeper1439_ptr globalct_exip_keeper1439_next(nullptr);
+            static info::globalct_exip_keeper1439_clbk globalct_exip_keeper1439_user(nullptr);
+            static info::globalct_exit_stone1441_ptr globalct_exit_stone1441_next(nullptr);
+            static info::globalct_exit_stone1441_clbk globalct_exit_stone1441_user(nullptr);
+            static info::globalct_expire_pcbang1443_ptr globalct_expire_pcbang1443_next(nullptr);
+            static info::globalct_expire_pcbang1443_clbk globalct_expire_pcbang1443_user(nullptr);
+            static info::globalct_free_ride_ship1445_ptr globalct_free_ride_ship1445_next(nullptr);
+            static info::globalct_free_ride_ship1445_clbk globalct_free_ride_ship1445_user(nullptr);
+            static info::globalct_free_sf_by_class1447_ptr globalct_free_sf_by_class1447_next(nullptr);
+            static info::globalct_free_sf_by_class1447_clbk globalct_free_sf_by_class1447_user(nullptr);
+            static info::globalct_full_animus_gauge1449_ptr globalct_full_animus_gauge1449_next(nullptr);
+            static info::globalct_full_animus_gauge1449_clbk globalct_full_animus_gauge1449_user(nullptr);
+            static info::globalct_full_force1451_ptr globalct_full_force1451_next(nullptr);
+            static info::globalct_full_force1451_clbk globalct_full_force1451_user(nullptr);
+            static info::globalct_full_gauge1453_ptr globalct_full_gauge1453_next(nullptr);
+            static info::globalct_full_gauge1453_clbk globalct_full_gauge1453_user(nullptr);
+            static info::globalct_fullset1455_ptr globalct_fullset1455_next(nullptr);
+            static info::globalct_fullset1455_clbk globalct_fullset1455_user(nullptr);
+            static info::globalct_get_gravitystone1457_ptr globalct_get_gravitystone1457_next(nullptr);
+            static info::globalct_get_gravitystone1457_clbk globalct_get_gravitystone1457_user(nullptr);
+            static info::globalct_goto_char1459_ptr globalct_goto_char1459_next(nullptr);
+            static info::globalct_goto_char1459_clbk globalct_goto_char1459_user(nullptr);
+            static info::globalct_goto_mine1461_ptr globalct_goto_mine1461_next(nullptr);
+            static info::globalct_goto_mine1461_clbk globalct_goto_mine1461_user(nullptr);
+            static info::globalct_goto_monster1463_ptr globalct_goto_monster1463_next(nullptr);
+            static info::globalct_goto_monster1463_clbk globalct_goto_monster1463_user(nullptr);
+            static info::globalct_goto_npc1465_ptr globalct_goto_npc1465_next(nullptr);
+            static info::globalct_goto_npc1465_clbk globalct_goto_npc1465_user(nullptr);
+            static info::globalct_goto_shipport_eder1467_ptr globalct_goto_shipport_eder1467_next(nullptr);
+            static info::globalct_goto_shipport_eder1467_clbk globalct_goto_shipport_eder1467_user(nullptr);
+            static info::globalct_goto_shipport_town1469_ptr globalct_goto_shipport_town1469_next(nullptr);
+            static info::globalct_goto_shipport_town1469_clbk globalct_goto_shipport_town1469_user(nullptr);
+            static info::globalct_goto_stone1471_ptr globalct_goto_stone1471_next(nullptr);
+            static info::globalct_goto_stone1471_clbk globalct_goto_stone1471_user(nullptr);
+            static info::globalct_guild_battle_force_stone1473_ptr globalct_guild_battle_force_stone1473_next(nullptr);
+            static info::globalct_guild_battle_force_stone1473_clbk globalct_guild_battle_force_stone1473_user(nullptr);
+            static info::globalct_guild_call1475_ptr globalct_guild_call1475_next(nullptr);
+            static info::globalct_guild_call1475_clbk globalct_guild_call1475_user(nullptr);
+            static info::globalct_guild_info1477_ptr globalct_guild_info1477_next(nullptr);
+            static info::globalct_guild_info1477_clbk globalct_guild_info1477_user(nullptr);
+            static info::globalct_guild_suggest1479_ptr globalct_guild_suggest1479_next(nullptr);
+            static info::globalct_guild_suggest1479_clbk globalct_guild_suggest1479_user(nullptr);
+            static info::globalct_half_gauge1481_ptr globalct_half_gauge1481_next(nullptr);
+            static info::globalct_half_gauge1481_clbk globalct_half_gauge1481_user(nullptr);
+            static info::globalct_init_monster1483_ptr globalct_init_monster1483_next(nullptr);
+            static info::globalct_init_monster1483_clbk globalct_init_monster1483_user(nullptr);
+            static info::globalct_inven_empty1485_ptr globalct_inven_empty1485_next(nullptr);
+            static info::globalct_inven_empty1485_clbk globalct_inven_empty1485_user(nullptr);
+            static info::globalct_itemloot1487_ptr globalct_itemloot1487_next(nullptr);
+            static info::globalct_itemloot1487_clbk globalct_itemloot1487_user(nullptr);
+            static info::globalct_jump_to_pos1489_ptr globalct_jump_to_pos1489_next(nullptr);
+            static info::globalct_jump_to_pos1489_clbk globalct_jump_to_pos1489_user(nullptr);
+            static info::globalct_kick_player1491_ptr globalct_kick_player1491_next(nullptr);
+            static info::globalct_kick_player1491_clbk globalct_kick_player1491_user(nullptr);
+            static info::globalct_loadcashamount1493_ptr globalct_loadcashamount1493_next(nullptr);
+            static info::globalct_loadcashamount1493_clbk globalct_loadcashamount1493_user(nullptr);
+            static info::globalct_look_like_boss1495_ptr globalct_look_like_boss1495_next(nullptr);
+            static info::globalct_look_like_boss1495_clbk globalct_look_like_boss1495_user(nullptr);
+            static info::globalct_loot_bag1497_ptr globalct_loot_bag1497_next(nullptr);
+            static info::globalct_loot_bag1497_clbk globalct_loot_bag1497_user(nullptr);
+            static info::globalct_loot_dungeon1499_ptr globalct_loot_dungeon1499_next(nullptr);
+            static info::globalct_loot_dungeon1499_clbk globalct_loot_dungeon1499_user(nullptr);
+            static info::globalct_loot_item1501_ptr globalct_loot_item1501_next(nullptr);
+            static info::globalct_loot_item1501_clbk globalct_loot_item1501_user(nullptr);
+            static info::globalct_loot_material1503_ptr globalct_loot_material1503_next(nullptr);
+            static info::globalct_loot_material1503_clbk globalct_loot_material1503_user(nullptr);
+            static info::globalct_loot_mine1505_ptr globalct_loot_mine1505_next(nullptr);
+            static info::globalct_loot_mine1505_clbk globalct_loot_mine1505_user(nullptr);
+            static info::globalct_loot_tower1507_ptr globalct_loot_tower1507_next(nullptr);
+            static info::globalct_loot_tower1507_clbk globalct_loot_tower1507_user(nullptr);
+            static info::globalct_loot_upgrade1509_ptr globalct_loot_upgrade1509_next(nullptr);
+            static info::globalct_loot_upgrade1509_clbk globalct_loot_upgrade1509_user(nullptr);
+            static info::globalct_loot_upgrade_item1511_ptr globalct_loot_upgrade_item1511_next(nullptr);
+            static info::globalct_loot_upgrade_item1511_clbk globalct_loot_upgrade_item1511_user(nullptr);
+            static info::globalct_lua_command1513_ptr globalct_lua_command1513_next(nullptr);
+            static info::globalct_lua_command1513_clbk globalct_lua_command1513_user(nullptr);
+            static info::globalct_make_system_tower1515_ptr globalct_make_system_tower1515_next(nullptr);
+            static info::globalct_make_system_tower1515_clbk globalct_make_system_tower1515_user(nullptr);
+            static info::globalct_makeitem_need_matrial1517_ptr globalct_makeitem_need_matrial1517_next(nullptr);
+            static info::globalct_makeitem_need_matrial1517_clbk globalct_makeitem_need_matrial1517_user(nullptr);
+            static info::globalct_makeitem_no_matrial1519_ptr globalct_makeitem_no_matrial1519_next(nullptr);
+            static info::globalct_makeitem_no_matrial1519_clbk globalct_makeitem_no_matrial1519_user(nullptr);
+            static info::globalct_manage_guild1521_ptr globalct_manage_guild1521_next(nullptr);
+            static info::globalct_manage_guild1521_clbk globalct_manage_guild1521_user(nullptr);
+            static info::globalct_max_attack1523_ptr globalct_max_attack1523_next(nullptr);
+            static info::globalct_max_attack1523_clbk globalct_max_attack1523_user(nullptr);
+            static info::globalct_mepcbang1525_ptr globalct_mepcbang1525_next(nullptr);
+            static info::globalct_mepcbang1525_clbk globalct_mepcbang1525_user(nullptr);
+            static info::globalct_min_attack1527_ptr globalct_min_attack1527_next(nullptr);
+            static info::globalct_min_attack1527_clbk globalct_min_attack1527_user(nullptr);
+            static info::globalct_minespeed1529_ptr globalct_minespeed1529_next(nullptr);
+            static info::globalct_minespeed1529_clbk globalct_minespeed1529_user(nullptr);
+            static info::globalct_mormal_attack1531_ptr globalct_mormal_attack1531_next(nullptr);
+            static info::globalct_mormal_attack1531_clbk globalct_mormal_attack1531_user(nullptr);
+            static info::globalct_party_call1533_ptr globalct_party_call1533_next(nullptr);
+            static info::globalct_party_call1533_clbk globalct_party_call1533_user(nullptr);
+            static info::globalct_pass_dungeon1535_ptr globalct_pass_dungeon1535_next(nullptr);
+            static info::globalct_pass_dungeon1535_clbk globalct_pass_dungeon1535_user(nullptr);
+            static info::globalct_pass_sch1537_ptr globalct_pass_sch1537_next(nullptr);
+            static info::globalct_pass_sch1537_clbk globalct_pass_sch1537_user(nullptr);
+            static info::globalct_pcanimusexp1539_ptr globalct_pcanimusexp1539_next(nullptr);
+            static info::globalct_pcanimusexp1539_clbk globalct_pcanimusexp1539_user(nullptr);
+            static info::globalct_pcbangitemget1541_ptr globalct_pcbangitemget1541_next(nullptr);
+            static info::globalct_pcbangitemget1541_clbk globalct_pcbangitemget1541_user(nullptr);
+            static info::globalct_pcbasemastery1543_ptr globalct_pcbasemastery1543_next(nullptr);
+            static info::globalct_pcbasemastery1543_clbk globalct_pcbasemastery1543_user(nullptr);
+            static info::globalct_pcitemloot1545_ptr globalct_pcitemloot1545_next(nullptr);
+            static info::globalct_pcitemloot1545_clbk globalct_pcitemloot1545_user(nullptr);
+            static info::globalct_pcminespeed1547_ptr globalct_pcminespeed1547_next(nullptr);
+            static info::globalct_pcminespeed1547_clbk globalct_pcminespeed1547_user(nullptr);
+            static info::globalct_pcplayerexp1549_ptr globalct_pcplayerexp1549_next(nullptr);
+            static info::globalct_pcplayerexp1549_clbk globalct_pcplayerexp1549_user(nullptr);
+            static info::globalct_pcroom_premium1551_ptr globalct_pcroom_premium1551_next(nullptr);
+            static info::globalct_pcroom_premium1551_clbk globalct_pcroom_premium1551_user(nullptr);
+            static info::globalct_pcsfmastery1553_ptr globalct_pcsfmastery1553_next(nullptr);
+            static info::globalct_pcsfmastery1553_clbk globalct_pcsfmastery1553_user(nullptr);
+            static info::globalct_period_time_set1555_ptr globalct_period_time_set1555_next(nullptr);
+            static info::globalct_period_time_set1555_clbk globalct_period_time_set1555_user(nullptr);
+            static info::globalct_playerexp1557_ptr globalct_playerexp1557_next(nullptr);
+            static info::globalct_playerexp1557_clbk globalct_playerexp1557_user(nullptr);
+            static info::globalct_premium_rate1559_ptr globalct_premium_rate1559_next(nullptr);
+            static info::globalct_premium_rate1559_clbk globalct_premium_rate1559_user(nullptr);
+            static info::globalct_query_remain_ore1561_ptr globalct_query_remain_ore1561_next(nullptr);
+            static info::globalct_query_remain_ore1561_clbk globalct_query_remain_ore1561_user(nullptr);
+            static info::globalct_recall_monster1563_ptr globalct_recall_monster1563_next(nullptr);
+            static info::globalct_recall_monster1563_clbk globalct_recall_monster1563_user(nullptr);
+            static info::globalct_recall_player1565_ptr globalct_recall_player1565_next(nullptr);
+            static info::globalct_recall_player1565_clbk globalct_recall_player1565_user(nullptr);
+            static info::globalct_recv_change_atrad_taxrate1567_ptr globalct_recv_change_atrad_taxrate1567_next(nullptr);
+            static info::globalct_recv_change_atrad_taxrate1567_clbk globalct_recv_change_atrad_taxrate1567_user(nullptr);
+            static info::globalct_recv_current_battle_info1569_ptr globalct_recv_current_battle_info1569_next(nullptr);
+            static info::globalct_recv_current_battle_info1569_clbk globalct_recv_current_battle_info1569_user(nullptr);
+            static info::globalct_recv_pvp_guild_rank1571_ptr globalct_recv_pvp_guild_rank1571_next(nullptr);
+            static info::globalct_recv_pvp_guild_rank1571_clbk globalct_recv_pvp_guild_rank1571_user(nullptr);
+            static info::globalct_recv_reserved_schedulelist1573_ptr globalct_recv_reserved_schedulelist1573_next(nullptr);
+            static info::globalct_recv_reserved_schedulelist1573_clbk globalct_recv_reserved_schedulelist1573_user(nullptr);
+            static info::globalct_recv_total_guild_rank1575_ptr globalct_recv_total_guild_rank1575_next(nullptr);
+            static info::globalct_recv_total_guild_rank1575_clbk globalct_recv_total_guild_rank1575_user(nullptr);
+            static info::globalct_regen_gravitystone1577_ptr globalct_regen_gravitystone1577_next(nullptr);
+            static info::globalct_regen_gravitystone1577_clbk globalct_regen_gravitystone1577_user(nullptr);
+            static info::globalct_release_loot_free1579_ptr globalct_release_loot_free1579_next(nullptr);
+            static info::globalct_release_loot_free1579_clbk globalct_release_loot_free1579_user(nullptr);
+            static info::globalct_release_make_succ1581_ptr globalct_release_make_succ1581_next(nullptr);
+            static info::globalct_release_make_succ1581_clbk globalct_release_make_succ1581_user(nullptr);
+            static info::globalct_release_matchless1583_ptr globalct_release_matchless1583_next(nullptr);
+            static info::globalct_release_matchless1583_clbk globalct_release_matchless1583_user(nullptr);
+            static info::globalct_release_never_die1585_ptr globalct_release_never_die1585_next(nullptr);
+            static info::globalct_release_never_die1585_clbk globalct_release_never_die1585_user(nullptr);
+            static info::globalct_release_punishment1587_ptr globalct_release_punishment1587_next(nullptr);
+            static info::globalct_release_punishment1587_clbk globalct_release_punishment1587_user(nullptr);
+            static info::globalct_remove_sf_delay1589_ptr globalct_remove_sf_delay1589_next(nullptr);
+            static info::globalct_remove_sf_delay1589_clbk globalct_remove_sf_delay1589_user(nullptr);
+            static info::globalct_report_cri_hp1591_ptr globalct_report_cri_hp1591_next(nullptr);
+            static info::globalct_report_cri_hp1591_clbk globalct_report_cri_hp1591_user(nullptr);
+            static info::globalct_report_position1593_ptr globalct_report_position1593_next(nullptr);
+            static info::globalct_report_position1593_clbk globalct_report_position1593_user(nullptr);
+            static info::globalct_request_delete_quest1595_ptr globalct_request_delete_quest1595_next(nullptr);
+            static info::globalct_request_delete_quest1595_clbk globalct_request_delete_quest1595_user(nullptr);
+            static info::globalct_request_npc_quest1597_ptr globalct_request_npc_quest1597_next(nullptr);
+            static info::globalct_request_npc_quest1597_clbk globalct_request_npc_quest1597_user(nullptr);
+            static info::globalct_respawn_start1599_ptr globalct_respawn_start1599_next(nullptr);
+            static info::globalct_respawn_start1599_clbk globalct_respawn_start1599_user(nullptr);
+            static info::globalct_respawn_stop1601_ptr globalct_respawn_stop1601_next(nullptr);
+            static info::globalct_respawn_stop1601_clbk globalct_respawn_stop1601_user(nullptr);
+            static info::globalct_resurrect_player1603_ptr globalct_resurrect_player1603_next(nullptr);
+            static info::globalct_resurrect_player1603_clbk globalct_resurrect_player1603_user(nullptr);
+            static info::globalct_server_rate1605_ptr globalct_server_rate1605_next(nullptr);
+            static info::globalct_server_rate1605_clbk globalct_server_rate1605_user(nullptr);
+            static info::globalct_server_time1607_ptr globalct_server_time1607_next(nullptr);
+            static info::globalct_server_time1607_clbk globalct_server_time1607_user(nullptr);
+            static info::globalct_set_animus_exp1609_ptr globalct_set_animus_exp1609_next(nullptr);
+            static info::globalct_set_animus_exp1609_clbk globalct_set_animus_exp1609_user(nullptr);
+            static info::globalct_set_animus_lv1611_ptr globalct_set_animus_lv1611_next(nullptr);
+            static info::globalct_set_animus_lv1611_clbk globalct_set_animus_lv1611_user(nullptr);
+            static info::globalct_set_damage_part1613_ptr globalct_set_damage_part1613_next(nullptr);
+            static info::globalct_set_damage_part1613_clbk globalct_set_damage_part1613_user(nullptr);
+            static info::globalct_set_exp_rate1615_ptr globalct_set_exp_rate1615_next(nullptr);
+            static info::globalct_set_exp_rate1615_clbk globalct_set_exp_rate1615_user(nullptr);
+            static info::globalct_set_guildbattle_color1617_ptr globalct_set_guildbattle_color1617_next(nullptr);
+            static info::globalct_set_guildbattle_color1617_clbk globalct_set_guildbattle_color1617_user(nullptr);
+            static info::globalct_set_hfs_full1619_ptr globalct_set_hfs_full1619_next(nullptr);
+            static info::globalct_set_hfs_full1619_clbk globalct_set_hfs_full1619_user(nullptr);
+            static info::globalct_set_hp1621_ptr globalct_set_hp1621_next(nullptr);
+            static info::globalct_set_hp1621_clbk globalct_set_hp1621_user(nullptr);
+            static info::globalct_set_jade_effect1623_ptr globalct_set_jade_effect1623_next(nullptr);
+            static info::globalct_set_jade_effect1623_clbk globalct_set_jade_effect1623_user(nullptr);
+            static info::globalct_set_kill_list_init1625_ptr globalct_set_kill_list_init1625_next(nullptr);
+            static info::globalct_set_kill_list_init1625_clbk globalct_set_kill_list_init1625_user(nullptr);
+            static info::globalct_set_loot_free1627_ptr globalct_set_loot_free1627_next(nullptr);
+            static info::globalct_set_loot_free1627_clbk globalct_set_loot_free1627_user(nullptr);
+            static info::globalct_set_make_succ1629_ptr globalct_set_make_succ1629_next(nullptr);
+            static info::globalct_set_make_succ1629_clbk globalct_set_make_succ1629_user(nullptr);
+            static info::globalct_set_matchless1631_ptr globalct_set_matchless1631_next(nullptr);
+            static info::globalct_set_matchless1631_clbk globalct_set_matchless1631_user(nullptr);
+            static info::globalct_set_never_die1633_ptr globalct_set_never_die1633_next(nullptr);
+            static info::globalct_set_never_die1633_clbk globalct_set_never_die1633_user(nullptr);
+            static info::globalct_set_ore_amount1635_ptr globalct_set_ore_amount1635_next(nullptr);
+            static info::globalct_set_ore_amount1635_clbk globalct_set_ore_amount1635_user(nullptr);
+            static info::globalct_set_temp_cash_point1637_ptr globalct_set_temp_cash_point1637_next(nullptr);
+            static info::globalct_set_temp_cash_point1637_clbk globalct_set_temp_cash_point1637_user(nullptr);
+            static info::globalct_sfmastery1639_ptr globalct_sfmastery1639_next(nullptr);
+            static info::globalct_sfmastery1639_clbk globalct_sfmastery1639_user(nullptr);
+            static info::globalct_start_cri1641_ptr globalct_start_cri1641_next(nullptr);
+            static info::globalct_start_cri1641_clbk globalct_start_cri1641_user(nullptr);
+            static info::globalct_start_keeper1643_ptr globalct_start_keeper1643_next(nullptr);
+            static info::globalct_start_keeper1643_clbk globalct_start_keeper1643_user(nullptr);
+            static info::globalct_take_gravitystone1645_ptr globalct_take_gravitystone1645_next(nullptr);
+            static info::globalct_take_gravitystone1645_clbk globalct_take_gravitystone1645_user(nullptr);
+            static info::globalct_takeholymental1647_ptr globalct_takeholymental1647_next(nullptr);
+            static info::globalct_takeholymental1647_clbk globalct_takeholymental1647_user(nullptr);
+            static info::globalct_telekinesis1649_ptr globalct_telekinesis1649_next(nullptr);
+            static info::globalct_telekinesis1649_clbk globalct_telekinesis1649_user(nullptr);
+            static info::globalct_tl_info_set1651_ptr globalct_tl_info_set1651_next(nullptr);
+            static info::globalct_tl_info_set1651_clbk globalct_tl_info_set1651_user(nullptr);
+            static info::globalct_tl_info_view1653_ptr globalct_tl_info_view1653_next(nullptr);
+            static info::globalct_tl_info_view1653_clbk globalct_tl_info_view1653_user(nullptr);
+            static info::globalct_tl_system_setting1655_ptr globalct_tl_system_setting1655_next(nullptr);
+            static info::globalct_tl_system_setting1655_clbk globalct_tl_system_setting1655_user(nullptr);
+            static info::globalct_tracing_hide1657_ptr globalct_tracing_hide1657_next(nullptr);
+            static info::globalct_tracing_hide1657_clbk globalct_tracing_hide1657_user(nullptr);
+            static info::globalct_tracing_show1659_ptr globalct_tracing_show1659_next(nullptr);
+            static info::globalct_tracing_show1659_clbk globalct_tracing_show1659_user(nullptr);
+            static info::globalct_trap_attack_grade1661_ptr globalct_trap_attack_grade1661_next(nullptr);
+            static info::globalct_trap_attack_grade1661_clbk globalct_trap_attack_grade1661_user(nullptr);
+            static info::globalct_trunk_init1663_ptr globalct_trunk_init1663_next(nullptr);
+            static info::globalct_trunk_init1663_clbk globalct_trunk_init1663_user(nullptr);
+            static info::globalct_up_allskill1665_ptr globalct_up_allskill1665_next(nullptr);
+            static info::globalct_up_allskill1665_clbk globalct_up_allskill1665_user(nullptr);
+            static info::globalct_up_allskill_pt1667_ptr globalct_up_allskill_pt1667_next(nullptr);
+            static info::globalct_up_allskill_pt1667_clbk globalct_up_allskill_pt1667_user(nullptr);
+            static info::globalct_up_forceitem1669_ptr globalct_up_forceitem1669_next(nullptr);
+            static info::globalct_up_forceitem1669_clbk globalct_up_forceitem1669_user(nullptr);
+            static info::globalct_up_forcemastery1671_ptr globalct_up_forcemastery1671_next(nullptr);
+            static info::globalct_up_forcemastery1671_clbk globalct_up_forcemastery1671_user(nullptr);
+            static info::globalct_up_skill1673_ptr globalct_up_skill1673_next(nullptr);
+            static info::globalct_up_skill1673_clbk globalct_up_skill1673_user(nullptr);
+            static info::globalct_user_num1675_ptr globalct_user_num1675_next(nullptr);
+            static info::globalct_user_num1675_clbk globalct_user_num1675_user(nullptr);
+            static info::globalct_userchatban1677_ptr globalct_userchatban1677_next(nullptr);
+            static info::globalct_userchatban1677_clbk globalct_userchatban1677_user(nullptr);
+            static info::globalct_ut_cancel_regist1679_ptr globalct_ut_cancel_regist1679_next(nullptr);
+            static info::globalct_ut_cancel_regist1679_clbk globalct_ut_cancel_regist1679_user(nullptr);
+            static info::globalct_ut_cancel_registlogout1681_ptr globalct_ut_cancel_registlogout1681_next(nullptr);
+            static info::globalct_ut_cancel_registlogout1681_clbk globalct_ut_cancel_registlogout1681_user(nullptr);
+            static info::globalct_view_method1683_ptr globalct_view_method1683_next(nullptr);
+            static info::globalct_view_method1683_clbk globalct_view_method1683_user(nullptr);
+            static info::globalct_vote_enable1685_ptr globalct_vote_enable1685_next(nullptr);
+            static info::globalct_vote_enable1685_clbk globalct_vote_enable1685_user(nullptr);
+            static info::globalct_whoami1687_ptr globalct_whoami1687_next(nullptr);
+            static info::globalct_whoami1687_clbk globalct_whoami1687_user(nullptr);
+            static info::globalcvt_string1689_ptr globalcvt_string1689_next(nullptr);
+            static info::globalcvt_string1689_clbk globalcvt_string1689_user(nullptr);
+            static info::globaleAddCutOre1691_ptr globaleAddCutOre1691_next(nullptr);
+            static info::globaleAddCutOre1691_clbk globaleAddCutOre1691_user(nullptr);
+            static info::globaleAddDalant1693_ptr globaleAddDalant1693_next(nullptr);
+            static info::globaleAddDalant1693_clbk globaleAddDalant1693_user(nullptr);
+            static info::globaleAddGold1695_ptr globaleAddGold1695_next(nullptr);
+            static info::globaleAddGold1695_clbk globaleAddGold1695_user(nullptr);
+            static info::globaleAddMineOre1697_ptr globaleAddMineOre1697_next(nullptr);
+            static info::globaleAddMineOre1697_clbk globaleAddMineOre1697_user(nullptr);
+            static info::globaleGetCutOre1699_ptr globaleGetCutOre1699_next(nullptr);
+            static info::globaleGetCutOre1699_clbk globaleGetCutOre1699_user(nullptr);
+            static info::globaleGetDalant1701_ptr globaleGetDalant1701_next(nullptr);
+            static info::globaleGetDalant1701_clbk globaleGetDalant1701_user(nullptr);
+            static info::globaleGetGold1703_ptr globaleGetGold1703_next(nullptr);
+            static info::globaleGetGold1703_clbk globaleGetGold1703_user(nullptr);
+            static info::globaleGetGuide1705_ptr globaleGetGuide1705_next(nullptr);
+            static info::globaleGetGuide1705_clbk globaleGetGuide1705_user(nullptr);
+            static info::globaleGetGuideHistory1707_ptr globaleGetGuideHistory1707_next(nullptr);
+            static info::globaleGetGuideHistory1707_clbk globaleGetGuideHistory1707_user(nullptr);
+            static info::globaleGetLocalDate1709_ptr globaleGetLocalDate1709_next(nullptr);
+            static info::globaleGetLocalDate1709_clbk globaleGetLocalDate1709_user(nullptr);
+            static info::globaleGetMgrValue1711_ptr globaleGetMgrValue1711_next(nullptr);
+            static info::globaleGetMgrValue1711_clbk globaleGetMgrValue1711_user(nullptr);
+            static info::globaleGetMineOre1713_ptr globaleGetMineOre1713_next(nullptr);
+            static info::globaleGetMineOre1713_clbk globaleGetMineOre1713_user(nullptr);
+            static info::globaleGetOldCutOre1715_ptr globaleGetOldCutOre1715_next(nullptr);
+            static info::globaleGetOldCutOre1715_clbk globaleGetOldCutOre1715_user(nullptr);
+            static info::globaleGetOldDalant1717_ptr globaleGetOldDalant1717_next(nullptr);
+            static info::globaleGetOldDalant1717_clbk globaleGetOldDalant1717_user(nullptr);
+            static info::globaleGetOldGold1719_ptr globaleGetOldGold1719_next(nullptr);
+            static info::globaleGetOldGold1719_clbk globaleGetOldGold1719_user(nullptr);
+            static info::globaleGetOldMineOre1721_ptr globaleGetOldMineOre1721_next(nullptr);
+            static info::globaleGetOldMineOre1721_clbk globaleGetOldMineOre1721_user(nullptr);
+            static info::globaleGetOreRate1723_ptr globaleGetOreRate1723_next(nullptr);
+            static info::globaleGetOreRate1723_clbk globaleGetOreRate1723_user(nullptr);
+            static info::globaleGetRate1725_ptr globaleGetRate1725_next(nullptr);
+            static info::globaleGetRate1725_clbk globaleGetRate1725_user(nullptr);
+            static info::globaleGetTex1727_ptr globaleGetTex1727_next(nullptr);
+            static info::globaleGetTex1727_clbk globaleGetTex1727_user(nullptr);
+            static info::globaleGetTexRate1729_ptr globaleGetTexRate1729_next(nullptr);
+            static info::globaleGetTexRate1729_clbk globaleGetTexRate1729_user(nullptr);
+            static info::globaleInitEconomySystem1731_ptr globaleInitEconomySystem1731_next(nullptr);
+            static info::globaleInitEconomySystem1731_clbk globaleInitEconomySystem1731_user(nullptr);
+            static info::globaleUpdateEconomySystem1733_ptr globaleUpdateEconomySystem1733_next(nullptr);
+            static info::globaleUpdateEconomySystem1733_clbk globaleUpdateEconomySystem1733_user(nullptr);
+            static info::globalerror_fatal_printf1734_ptr globalerror_fatal_printf1734_next(nullptr);
+            static info::globalerror_fatal_printf1734_clbk globalerror_fatal_printf1734_user(nullptr);
+            static info::globalerror_malloc1735_ptr globalerror_malloc1735_next(nullptr);
+            static info::globalerror_malloc1735_clbk globalerror_malloc1735_user(nullptr);
+            static info::globalexp1736_ptr globalexp1736_next(nullptr);
+            static info::globalexp1736_clbk globalexp1736_user(nullptr);
+            static info::globalfabs1737_ptr globalfabs1737_next(nullptr);
+            static info::globalfabs1737_clbk globalfabs1737_user(nullptr);
+            static info::globalfopenMFM1738_ptr globalfopenMFM1738_next(nullptr);
+            static info::globalfopenMFM1738_clbk globalfopenMFM1738_user(nullptr);
+            static info::globalisalnumstr1740_ptr globalisalnumstr1740_next(nullptr);
+            static info::globalisalnumstr1740_clbk globalisalnumstr1740_user(nullptr);
+            static info::globalisalphastr1742_ptr globalisalphastr1742_next(nullptr);
+            static info::globalisalphastr1742_clbk globalisalphastr1742_user(nullptr);
+            static info::globalisdigitstr1744_ptr globalisdigitstr1744_next(nullptr);
+            static info::globalisdigitstr1744_clbk globalisdigitstr1744_user(nullptr);
+            static info::globaljc_Contents1746_ptr globaljc_Contents1746_next(nullptr);
+            static info::globaljc_Contents1746_clbk globaljc_Contents1746_user(nullptr);
+            static info::globaljc_Count1748_ptr globaljc_Count1748_next(nullptr);
+            static info::globaljc_Count1748_clbk globaljc_Count1748_user(nullptr);
+            static info::globaljc_Description1750_ptr globaljc_Description1750_next(nullptr);
+            static info::globaljc_Description1750_clbk globaljc_Description1750_user(nullptr);
+            static info::globaljc_ReactContents1752_ptr globaljc_ReactContents1752_next(nullptr);
+            static info::globaljc_ReactContents1752_clbk globaljc_ReactContents1752_user(nullptr);
+            static info::globaljc_ReactType1754_ptr globaljc_ReactType1754_next(nullptr);
+            static info::globaljc_ReactType1754_clbk globaljc_ReactType1754_user(nullptr);
+            static info::globaljc_Type1756_ptr globaljc_Type1756_next(nullptr);
+            static info::globaljc_Type1756_clbk globaljc_Type1756_user(nullptr);
+            static info::globallog1757_ptr globallog1757_next(nullptr);
+            static info::globallog1757_clbk globallog1757_user(nullptr);
+            static info::globallua_my_open1759_ptr globallua_my_open1759_next(nullptr);
+            static info::globallua_my_open1759_clbk globallua_my_open1759_user(nullptr);
+            static info::globalmc_AddMonster1761_ptr globalmc_AddMonster1761_next(nullptr);
+            static info::globalmc_AddMonster1761_clbk globalmc_AddMonster1761_user(nullptr);
+            static info::globalmc_AddTime1763_ptr globalmc_AddTime1763_next(nullptr);
+            static info::globalmc_AddTime1763_clbk globalmc_AddTime1763_user(nullptr);
+            static info::globalmc_Area1765_ptr globalmc_Area1765_next(nullptr);
+            static info::globalmc_Area1765_clbk globalmc_Area1765_user(nullptr);
+            static info::globalmc_ChangeMonster1767_ptr globalmc_ChangeMonster1767_next(nullptr);
+            static info::globalmc_ChangeMonster1767_clbk globalmc_ChangeMonster1767_user(nullptr);
+            static info::globalmc_CompleteMsg1769_ptr globalmc_CompleteMsg1769_next(nullptr);
+            static info::globalmc_CompleteMsg1769_clbk globalmc_CompleteMsg1769_user(nullptr);
+            static info::globalmc_Description1771_ptr globalmc_Description1771_next(nullptr);
+            static info::globalmc_Description1771_clbk globalmc_Description1771_user(nullptr);
+            static info::globalmc_GatePos1773_ptr globalmc_GatePos1773_next(nullptr);
+            static info::globalmc_GatePos1773_clbk globalmc_GatePos1773_user(nullptr);
+            static info::globalmc_If1775_ptr globalmc_If1775_next(nullptr);
+            static info::globalmc_If1775_clbk globalmc_If1775_user(nullptr);
+            static info::globalmc_Inner1777_ptr globalmc_Inner1777_next(nullptr);
+            static info::globalmc_Inner1777_clbk globalmc_Inner1777_user(nullptr);
+            static info::globalmc_JobOrder1779_ptr globalmc_JobOrder1779_next(nullptr);
+            static info::globalmc_JobOrder1779_clbk globalmc_JobOrder1779_user(nullptr);
+            static info::globalmc_LimTimeSec1781_ptr globalmc_LimTimeSec1781_next(nullptr);
+            static info::globalmc_LimTimeSec1781_clbk globalmc_LimTimeSec1781_user(nullptr);
+            static info::globalmc_LootItem1783_ptr globalmc_LootItem1783_next(nullptr);
+            static info::globalmc_LootItem1783_clbk globalmc_LootItem1783_user(nullptr);
+            static info::globalmc_RespawnMonster1785_ptr globalmc_RespawnMonster1785_next(nullptr);
+            static info::globalmc_RespawnMonster1785_clbk globalmc_RespawnMonster1785_user(nullptr);
+            static info::globalmc_RespawnMonsterOption1787_ptr globalmc_RespawnMonsterOption1787_next(nullptr);
+            static info::globalmc_RespawnMonsterOption1787_clbk globalmc_RespawnMonsterOption1787_user(nullptr);
+            static info::globalmc_ResultContents1789_ptr globalmc_ResultContents1789_next(nullptr);
+            static info::globalmc_ResultContents1789_clbk globalmc_ResultContents1789_user(nullptr);
+            static info::globalmc_ResultType1791_ptr globalmc_ResultType1791_next(nullptr);
+            static info::globalmc_ResultType1791_clbk globalmc_ResultType1791_user(nullptr);
+            static info::globalmc_StartPos1793_ptr globalmc_StartPos1793_next(nullptr);
+            static info::globalmc_StartPos1793_clbk globalmc_StartPos1793_user(nullptr);
+            static info::globalmc_respond1795_ptr globalmc_respond1795_next(nullptr);
+            static info::globalmc_respond1795_clbk globalmc_respond1795_user(nullptr);
+            static info::globalpow1814_ptr globalpow1814_next(nullptr);
+            static info::globalpow1814_clbk globalpow1814_user(nullptr);
+            static info::globalpow1815_ptr globalpow1815_next(nullptr);
+            static info::globalpow1815_clbk globalpow1815_user(nullptr);
+            static info::globalpow1817_ptr globalpow1817_next(nullptr);
+            static info::globalpow1817_clbk globalpow1817_user(nullptr);
+            static info::globalqc_Dalant1819_ptr globalqc_Dalant1819_next(nullptr);
+            static info::globalqc_Dalant1819_clbk globalqc_Dalant1819_user(nullptr);
+            static info::globalqc_Description1821_ptr globalqc_Description1821_next(nullptr);
+            static info::globalqc_Description1821_clbk globalqc_Description1821_user(nullptr);
+            static info::globalqc_DummyBlock1823_ptr globalqc_DummyBlock1823_next(nullptr);
+            static info::globalqc_DummyBlock1823_clbk globalqc_DummyBlock1823_user(nullptr);
+            static info::globalqc_LimitLvMax1825_ptr globalqc_LimitLvMax1825_next(nullptr);
+            static info::globalqc_LimitLvMax1825_clbk globalqc_LimitLvMax1825_user(nullptr);
+            static info::globalqc_LimitLvMin1827_ptr globalqc_LimitLvMin1827_next(nullptr);
+            static info::globalqc_LimitLvMin1827_clbk globalqc_LimitLvMin1827_user(nullptr);
+            static info::globalqc_MemberNum1829_ptr globalqc_MemberNum1829_next(nullptr);
+            static info::globalqc_MemberNum1829_clbk globalqc_MemberNum1829_user(nullptr);
+            static info::globalqc_MembershipParty1831_ptr globalqc_MembershipParty1831_next(nullptr);
+            static info::globalqc_MembershipParty1831_clbk globalqc_MembershipParty1831_user(nullptr);
+            static info::globalqc_RewardExp1833_ptr globalqc_RewardExp1833_next(nullptr);
+            static info::globalqc_RewardExp1833_clbk globalqc_RewardExp1833_user(nullptr);
+            static info::globalqc_RewardItem1835_ptr globalqc_RewardItem1835_next(nullptr);
+            static info::globalqc_RewardItem1835_clbk globalqc_RewardItem1835_user(nullptr);
+            static info::globalqc_RewardPvp1837_ptr globalqc_RewardPvp1837_next(nullptr);
+            static info::globalqc_RewardPvp1837_clbk globalqc_RewardPvp1837_user(nullptr);
+            static info::globalqc_StartMission1839_ptr globalqc_StartMission1839_next(nullptr);
+            static info::globalqc_StartMission1839_clbk globalqc_StartMission1839_user(nullptr);
+            static info::globalqc_UseMap1841_ptr globalqc_UseMap1841_next(nullptr);
+            static info::globalqc_UseMap1841_clbk globalqc_UseMap1841_user(nullptr);
+            static info::globalqc_monsterGroup1843_ptr globalqc_monsterGroup1843_next(nullptr);
+            static info::globalqc_monsterGroup1843_clbk globalqc_monsterGroup1843_user(nullptr);
+            static info::globalsin1845_ptr globalsin1845_next(nullptr);
+            static info::globalsin1845_clbk globalsin1845_user(nullptr);
+            static info::globalsprintf_s1847_ptr globalsprintf_s1847_next(nullptr);
+            static info::globalsprintf_s1847_clbk globalsprintf_s1847_user(nullptr);
+            static info::globalsprintf_s1849_ptr globalsprintf_s1849_next(nullptr);
+            static info::globalsprintf_s1849_clbk globalsprintf_s1849_user(nullptr);
+            static info::globalsprintf_s1851_ptr globalsprintf_s1851_next(nullptr);
+            static info::globalsprintf_s1851_clbk globalsprintf_s1851_user(nullptr);
+            static info::globalsprintf_s1853_ptr globalsprintf_s1853_next(nullptr);
+            static info::globalsprintf_s1853_clbk globalsprintf_s1853_user(nullptr);
+            static info::globalsprintf_s1855_ptr globalsprintf_s1855_next(nullptr);
+            static info::globalsprintf_s1855_clbk globalsprintf_s1855_user(nullptr);
+            static info::globalsprintf_s1857_ptr globalsprintf_s1857_next(nullptr);
+            static info::globalsprintf_s1857_clbk globalsprintf_s1857_user(nullptr);
+            static info::globalsprintf_s1859_ptr globalsprintf_s1859_next(nullptr);
+            static info::globalsprintf_s1859_clbk globalsprintf_s1859_user(nullptr);
+            static info::globalsprintf_s1861_ptr globalsprintf_s1861_next(nullptr);
+            static info::globalsprintf_s1861_clbk globalsprintf_s1861_user(nullptr);
+            static info::globalsprintf_s1863_ptr globalsprintf_s1863_next(nullptr);
+            static info::globalsprintf_s1863_clbk globalsprintf_s1863_user(nullptr);
+            static info::globalsprintf_s1865_ptr globalsprintf_s1865_next(nullptr);
+            static info::globalsprintf_s1865_clbk globalsprintf_s1865_user(nullptr);
+            static info::globalsprintf_s1867_ptr globalsprintf_s1867_next(nullptr);
+            static info::globalsprintf_s1867_clbk globalsprintf_s1867_user(nullptr);
+            static info::globalsprintf_s1869_ptr globalsprintf_s1869_next(nullptr);
+            static info::globalsprintf_s1869_clbk globalsprintf_s1869_user(nullptr);
+            static info::globalsprintf_s1871_ptr globalsprintf_s1871_next(nullptr);
+            static info::globalsprintf_s1871_clbk globalsprintf_s1871_user(nullptr);
+            static info::globalsprintf_s1873_ptr globalsprintf_s1873_next(nullptr);
+            static info::globalsprintf_s1873_clbk globalsprintf_s1873_user(nullptr);
+            static info::globalsprintf_s1875_ptr globalsprintf_s1875_next(nullptr);
+            static info::globalsprintf_s1875_clbk globalsprintf_s1875_user(nullptr);
+            static info::globalsprintf_s1877_ptr globalsprintf_s1877_next(nullptr);
+            static info::globalsprintf_s1877_clbk globalsprintf_s1877_user(nullptr);
+            static info::globalsprintf_s1879_ptr globalsprintf_s1879_next(nullptr);
+            static info::globalsprintf_s1879_clbk globalsprintf_s1879_user(nullptr);
+            static info::globalsqrt1881_ptr globalsqrt1881_next(nullptr);
+            static info::globalsqrt1881_clbk globalsqrt1881_user(nullptr);
+            static info::globalstrcat_s1883_ptr globalstrcat_s1883_next(nullptr);
+            static info::globalstrcat_s1883_clbk globalstrcat_s1883_user(nullptr);
+            static info::globalstrcat_s1885_ptr globalstrcat_s1885_next(nullptr);
+            static info::globalstrcat_s1885_clbk globalstrcat_s1885_user(nullptr);
+            static info::globalstrcat_s1887_ptr globalstrcat_s1887_next(nullptr);
+            static info::globalstrcat_s1887_clbk globalstrcat_s1887_user(nullptr);
+            static info::globalstrchr1889_ptr globalstrchr1889_next(nullptr);
+            static info::globalstrchr1889_clbk globalstrchr1889_user(nullptr);
+            static info::globalstrcpy_s1891_ptr globalstrcpy_s1891_next(nullptr);
+            static info::globalstrcpy_s1891_clbk globalstrcpy_s1891_user(nullptr);
+            static info::globalstrcpy_s1893_ptr globalstrcpy_s1893_next(nullptr);
+            static info::globalstrcpy_s1893_clbk globalstrcpy_s1893_user(nullptr);
+            static info::globalstrcpy_s1895_ptr globalstrcpy_s1895_next(nullptr);
+            static info::globalstrcpy_s1895_clbk globalstrcpy_s1895_user(nullptr);
+            static info::globalstrcpy_s1897_ptr globalstrcpy_s1897_next(nullptr);
+            static info::globalstrcpy_s1897_clbk globalstrcpy_s1897_user(nullptr);
+            static info::globalstrcpy_s1899_ptr globalstrcpy_s1899_next(nullptr);
+            static info::globalstrcpy_s1899_clbk globalstrcpy_s1899_user(nullptr);
+            static info::globalstrcpy_s1901_ptr globalstrcpy_s1901_next(nullptr);
+            static info::globalstrcpy_s1901_clbk globalstrcpy_s1901_user(nullptr);
+            static info::globalstrcpy_s1903_ptr globalstrcpy_s1903_next(nullptr);
+            static info::globalstrcpy_s1903_clbk globalstrcpy_s1903_user(nullptr);
+            static info::globalstrncpy_s1905_ptr globalstrncpy_s1905_next(nullptr);
+            static info::globalstrncpy_s1905_clbk globalstrncpy_s1905_user(nullptr);
+            static info::globalstrncpy_s1907_ptr globalstrncpy_s1907_next(nullptr);
+            static info::globalstrncpy_s1907_clbk globalstrncpy_s1907_user(nullptr);
+            static info::globalstrrchr1908_ptr globalstrrchr1908_next(nullptr);
+            static info::globalstrrchr1908_clbk globalstrrchr1908_user(nullptr);
+            static info::globalstrstr1910_ptr globalstrstr1910_next(nullptr);
+            static info::globalstrstr1910_clbk globalstrstr1910_user(nullptr);
+            static info::globalswprintf1912_ptr globalswprintf1912_next(nullptr);
+            static info::globalswprintf1912_clbk globalswprintf1912_user(nullptr);
+            static info::globaltan1913_ptr globaltan1913_next(nullptr);
+            static info::globaltan1913_clbk globaltan1913_user(nullptr);
+            static info::globalterminate1914_ptr globalterminate1914_next(nullptr);
+            static info::globalterminate1914_clbk globalterminate1914_user(nullptr);
+            static info::globalwa_EnterWorld1916_ptr globalwa_EnterWorld1916_next(nullptr);
+            static info::globalwa_EnterWorld1916_clbk globalwa_EnterWorld1916_user(nullptr);
+            static info::globalwa_ExitWorld1918_ptr globalwa_ExitWorld1918_next(nullptr);
+            static info::globalwa_ExitWorld1918_clbk globalwa_ExitWorld1918_user(nullptr);
+            static info::globalwa_PartyDisjoint1920_ptr globalwa_PartyDisjoint1920_next(nullptr);
+            static info::globalwa_PartyDisjoint1920_clbk globalwa_PartyDisjoint1920_user(nullptr);
+            static info::globalwa_PartyForceLeave1922_ptr globalwa_PartyForceLeave1922_next(nullptr);
+            static info::globalwa_PartyForceLeave1922_clbk globalwa_PartyForceLeave1922_user(nullptr);
+            static info::globalwa_PartyJoin1924_ptr globalwa_PartyJoin1924_next(nullptr);
+            static info::globalwa_PartyJoin1924_clbk globalwa_PartyJoin1924_user(nullptr);
+            static info::globalwa_PartyLock1926_ptr globalwa_PartyLock1926_next(nullptr);
+            static info::globalwa_PartyLock1926_clbk globalwa_PartyLock1926_user(nullptr);
+            static info::globalwa_PartyLootShareSystem1928_ptr globalwa_PartyLootShareSystem1928_next(nullptr);
+            static info::globalwa_PartyLootShareSystem1928_clbk globalwa_PartyLootShareSystem1928_user(nullptr);
+            static info::globalwa_PartySelfLeave1930_ptr globalwa_PartySelfLeave1930_next(nullptr);
+            static info::globalwa_PartySelfLeave1930_clbk globalwa_PartySelfLeave1930_user(nullptr);
+            static info::globalwa_PartySuccession1932_ptr globalwa_PartySuccession1932_next(nullptr);
+            static info::globalwa_PartySuccession1932_clbk globalwa_PartySuccession1932_user(nullptr);
+            static info::globalwcsstr1934_ptr globalwcsstr1934_next(nullptr);
+            static info::globalwcsstr1934_clbk globalwcsstr1934_user(nullptr);
             
-            int64_t globalARGBToJpegFile1_wrapper(char* arg_0, uint8_t* arg_1, unsigned int arg_2, unsigned int arg_3, unsigned int arg_4, int arg_5, int arg_6)
+            static int64_t globalARGBToJpegFile1_wrapper(char* arg_0, uint8_t* arg_1, unsigned int arg_2, unsigned int arg_3, unsigned int arg_4, int arg_5, int arg_6)
             {
                return globalARGBToJpegFile1_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalARGBToJpegFile1_next);
             };
-            int globalAddEnvVariable3_wrapper(char* lpName, char* lpValue, int nValueLen)
+            static int globalAddEnvVariable3_wrapper(char* lpName, char* lpValue, int nValueLen)
             {
                return globalAddEnvVariable3_user(lpName, lpValue, nValueLen, globalAddEnvVariable3_next);
             };
-            void globalAdjustIndependenceR3M4_wrapper(struct _R3MATERIAL* arg_0, int32_t arg_1, int32_t arg_2)
+            static void globalAdjustIndependenceR3M4_wrapper(struct _R3MATERIAL* arg_0, int32_t arg_1, int32_t arg_2)
             {
                globalAdjustIndependenceR3M4_user(arg_0, arg_1, arg_2, globalAdjustIndependenceR3M4_next);
             };
-            void globalAfterRenderOneLayer5_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
+            static void globalAfterRenderOneLayer5_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
             {
                globalAfterRenderOneLayer5_user(arg_0, arg_1, globalAfterRenderOneLayer5_next);
             };
-            void globalAfterRenderSetting6_wrapper(int arg_0, struct CVertexBuffer* arg_1, struct _BSP_MAT_GROUP* arg_2)
+            static void globalAfterRenderSetting6_wrapper(int arg_0, struct CVertexBuffer* arg_1, struct _BSP_MAT_GROUP* arg_2)
             {
                globalAfterRenderSetting6_user(arg_0, arg_1, arg_2, globalAfterRenderSetting6_next);
             };
-            void globalAtoH23_wrapper(char* src, char* dest, int destlen)
-            {
-               globalAtoH23_user(src, dest, destlen, globalAtoH23_next);
-            };
-            bool globalAuthorityFilter25_wrapper(struct CHEAT_COMMAND* pCmd, struct CPlayer* pOne)
+            static bool globalAuthorityFilter25_wrapper(struct CHEAT_COMMAND* pCmd, struct CPlayer* pOne)
             {
                return globalAuthorityFilter25_user(pCmd, pOne, globalAuthorityFilter25_next);
             };
-            int64_t globalBGRFromRGB26_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2)
+            static int64_t globalBGRFromRGB26_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2)
             {
                return globalBGRFromRGB26_user(arg_0, arg_1, arg_2, globalBGRFromRGB26_next);
             };
-            void globalBlendOff27_wrapper()
+            static void globalBlendOff27_wrapper()
             {
                globalBlendOff27_user(globalBlendOff27_next);
             };
-            void globalBlendOn28_wrapper(int arg_0)
+            static void globalBlendOn28_wrapper(int arg_0)
             {
                globalBlendOn28_user(arg_0, globalBlendOn28_next);
             };
-            void globalBlurFilterShader29_wrapper(uint32_t arg_0, struct CTextureRender* arg_1, struct CTextureRender* arg_2)
+            static void globalBlurFilterShader29_wrapper(uint32_t arg_0, struct CTextureRender* arg_1, struct CTextureRender* arg_2)
             {
                globalBlurFilterShader29_user(arg_0, arg_1, arg_2, globalBlurFilterShader29_next);
             };
-            void globalBlurFilterSprite30_wrapper(struct CTextureRender* _this, uint32_t arg_0, void* arg_1)
+            static void globalBlurFilterSprite30_wrapper(struct CTextureRender* _this, uint32_t arg_0, void* arg_1)
             {
                globalBlurFilterSprite30_user(_this, arg_0, arg_1, globalBlurFilterSprite30_next);
             };
-            int32_t globalBlurShaderVSPS31_wrapper(uint32_t arg_0, struct CTextureRender* arg_1, struct CTextureRender* arg_2)
+            static int32_t globalBlurShaderVSPS31_wrapper(uint32_t arg_0, struct CTextureRender* arg_1, struct CTextureRender* arg_2)
             {
                return globalBlurShaderVSPS31_user(arg_0, arg_1, arg_2, globalBlurShaderVSPS31_next);
             };
-            char globalBtoH33_wrapper(char ch)
-            {
-               return globalBtoH33_user(ch, globalBtoH33_next);
-            };
-            void globalByteSortForShort34_wrapper(uint32_t arg_0, uint32_t* arg_1, int16_t* arg_2, uint32_t* arg_3, int16_t* arg_4)
-            {
-               globalByteSortForShort34_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalByteSortForShort34_next);
-            };
-            void globalCN_CalculateSunAndFieldColor35_wrapper(float arg_0)
+            static void globalCN_CalculateSunAndFieldColor35_wrapper(float arg_0)
             {
                globalCN_CalculateSunAndFieldColor35_user(arg_0, globalCN_CalculateSunAndFieldColor35_next);
             };
-            float globalCN_GetAccselateTime36_wrapper()
+            static float globalCN_GetAccselateTime36_wrapper()
             {
                return globalCN_GetAccselateTime36_user(globalCN_GetAccselateTime36_next);
             };
-            struct Atmosphere* globalCN_GetAtmosphere37_wrapper()
+            static struct Atmosphere* globalCN_GetAtmosphere37_wrapper()
             {
                return globalCN_GetAtmosphere37_user(globalCN_GetAtmosphere37_next);
             };
-            void globalCN_GetDayTime38_wrapper(uint32_t* arg_0, uint32_t* arg_1, uint32_t* arg_2)
+            static void globalCN_GetDayTime38_wrapper(uint32_t* arg_0, uint32_t* arg_1, uint32_t* arg_2)
             {
                globalCN_GetDayTime38_user(arg_0, arg_1, arg_2, globalCN_GetDayTime38_next);
             };
-            float globalCN_GetDayTime39_wrapper()
+            static float globalCN_GetDayTime39_wrapper()
             {
                return globalCN_GetDayTime39_user(globalCN_GetDayTime39_next);
             };
-            uint32_t globalCN_GetFieldColor40_wrapper()
+            static uint32_t globalCN_GetFieldColor40_wrapper()
             {
                return globalCN_GetFieldColor40_user(globalCN_GetFieldColor40_next);
             };
-            uint32_t globalCN_GetFogColor41_wrapper(float* arg_0)
+            static uint32_t globalCN_GetFogColor41_wrapper(float* arg_0)
             {
                return globalCN_GetFogColor41_user(arg_0, globalCN_GetFogColor41_next);
             };
-            void globalCN_GetRealDayTime42_wrapper(uint32_t* arg_0, uint32_t* arg_1, uint32_t* arg_2)
+            static void globalCN_GetRealDayTime42_wrapper(uint32_t* arg_0, uint32_t* arg_1, uint32_t* arg_2)
             {
                globalCN_GetRealDayTime42_user(arg_0, arg_1, arg_2, globalCN_GetRealDayTime42_next);
             };
-            float globalCN_GetRealDayTime43_wrapper()
+            static float globalCN_GetRealDayTime43_wrapper()
             {
                return globalCN_GetRealDayTime43_user(globalCN_GetRealDayTime43_next);
             };
-            Sky* globalCN_GetSky44_wrapper()
+            static Sky* globalCN_GetSky44_wrapper()
             {
                return globalCN_GetSky44_user(globalCN_GetSky44_next);
             };
-            struct Sun* globalCN_GetSun45_wrapper()
+            static struct Sun* globalCN_GetSun45_wrapper()
             {
                return globalCN_GetSun45_user(globalCN_GetSun45_next);
             };
-            uint32_t globalCN_GetSunColor46_wrapper()
+            static uint32_t globalCN_GetSunColor46_wrapper()
             {
                return globalCN_GetSunColor46_user(globalCN_GetSunColor46_next);
             };
-            void globalCN_GetSunDirection47_wrapper(float* arg_0)
+            static void globalCN_GetSunDirection47_wrapper(float* arg_0)
             {
                globalCN_GetSunDirection47_user(arg_0, globalCN_GetSunDirection47_next);
             };
-            float globalCN_GetWeather48_wrapper()
+            static float globalCN_GetWeather48_wrapper()
             {
                return globalCN_GetWeather48_user(globalCN_GetWeather48_next);
             };
-            void globalCN_InvalidateNature49_wrapper()
+            static void globalCN_InvalidateNature49_wrapper()
             {
                globalCN_InvalidateNature49_user(globalCN_InvalidateNature49_next);
             };
-            int64_t globalCN_IsEnableSky50_wrapper()
+            static int64_t globalCN_IsEnableSky50_wrapper()
             {
                return globalCN_IsEnableSky50_user(globalCN_IsEnableSky50_next);
             };
-            uint32_t globalCN_MixDayColor51_wrapper(uint32_t arg_0)
+            static uint32_t globalCN_MixDayColor51_wrapper(uint32_t arg_0)
             {
                return globalCN_MixDayColor51_user(arg_0, globalCN_MixDayColor51_next);
             };
-            void globalCN_NatureFrameMove52_wrapper()
+            static void globalCN_NatureFrameMove52_wrapper()
             {
                globalCN_NatureFrameMove52_user(globalCN_NatureFrameMove52_next);
             };
-            void globalCN_RenderSky53_wrapper()
+            static void globalCN_RenderSky53_wrapper()
             {
                globalCN_RenderSky53_user(globalCN_RenderSky53_next);
             };
-            void globalCN_RestoreNature54_wrapper()
+            static void globalCN_RestoreNature54_wrapper()
             {
                globalCN_RestoreNature54_user(globalCN_RestoreNature54_next);
             };
-            void globalCN_SetAccselateTime55_wrapper(float arg_0)
+            static void globalCN_SetAccselateTime55_wrapper(float arg_0)
             {
                globalCN_SetAccselateTime55_user(arg_0, globalCN_SetAccselateTime55_next);
             };
-            void globalCN_SetDayTime56_wrapper(float arg_0)
+            static void globalCN_SetDayTime56_wrapper(float arg_0)
             {
                globalCN_SetDayTime56_user(arg_0, globalCN_SetDayTime56_next);
             };
-            void globalCN_SetDayTime57_wrapper(uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
+            static void globalCN_SetDayTime57_wrapper(uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                globalCN_SetDayTime57_user(arg_0, arg_1, arg_2, globalCN_SetDayTime57_next);
             };
-            void globalCN_SetEnableSky58_wrapper(int arg_0)
+            static void globalCN_SetEnableSky58_wrapper(int arg_0)
             {
                globalCN_SetEnableSky58_user(arg_0, globalCN_SetEnableSky58_next);
             };
-            void globalCN_SetRealDayTime59_wrapper(float arg_0)
+            static void globalCN_SetRealDayTime59_wrapper(float arg_0)
             {
                globalCN_SetRealDayTime59_user(arg_0, globalCN_SetRealDayTime59_next);
             };
-            void globalCN_SetRealDayTime60_wrapper(uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
+            static void globalCN_SetRealDayTime60_wrapper(uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                globalCN_SetRealDayTime60_user(arg_0, arg_1, arg_2, globalCN_SetRealDayTime60_next);
             };
-            void globalCN_SetWeather61_wrapper(float arg_0)
+            static void globalCN_SetWeather61_wrapper(float arg_0)
             {
                globalCN_SetWeather61_user(arg_0, globalCN_SetWeather61_next);
             };
-            void globalCN_SkyVertexShaderConstants62_wrapper()
+            static void globalCN_SkyVertexShaderConstants62_wrapper()
             {
                globalCN_SkyVertexShaderConstants62_user(globalCN_SkyVertexShaderConstants62_next);
             };
-            float globalCalcBi_n63_wrapper(int arg_0, int arg_1, double arg_2)
+            static float globalCalcBi_n63_wrapper(int arg_0, int arg_1, double arg_2)
             {
                return globalCalcBi_n63_user(arg_0, arg_1, arg_2, globalCalcBi_n63_next);
             };
-            unsigned int* globalCalcCodeKey65_wrapper(unsigned int* pdwCode)
+            static unsigned int* globalCalcCodeKey65_wrapper(unsigned int* pdwCode)
             {
                return globalCalcCodeKey65_user(pdwCode, globalCalcCodeKey65_next);
             };
-            void globalCalcCubicCurve66_wrapper(float** arg_0, int arg_1, float* arg_2)
+            static void globalCalcCubicCurve66_wrapper(float** arg_0, int arg_1, float* arg_2)
             {
                globalCalcCubicCurve66_user(arg_0, arg_1, arg_2, globalCalcCubicCurve66_next);
             };
-            float globalCalcEvalCubicCurve67_wrapper(float* arg_0, float arg_1)
+            static float globalCalcEvalCubicCurve67_wrapper(float* arg_0, float arg_1)
             {
                return globalCalcEvalCubicCurve67_user(arg_0, arg_1, globalCalcEvalCubicCurve67_next);
             };
-            int globalCalcFileSize69_wrapper(char* pszFileName)
+            static int globalCalcFileSize69_wrapper(char* pszFileName)
             {
                return globalCalcFileSize69_user(pszFileName, globalCalcFileSize69_next);
             };
-            int globalCalcMastery71_wrapper(int nMasteryCode, int nMasteryIndex, unsigned int dwMasteryCum, int nRaceCode)
+            static int globalCalcMastery71_wrapper(int nMasteryCode, int nMasteryIndex, unsigned int dwMasteryCum, int nRaceCode)
             {
                return globalCalcMastery71_user(nMasteryCode, nMasteryIndex, dwMasteryCum, nRaceCode, globalCalcMastery71_next);
             };
-            int globalCalcRoundUp73_wrapper(float fVal)
+            static int globalCalcRoundUp73_wrapper(float fVal)
             {
                return globalCalcRoundUp73_user(fVal, globalCalcRoundUp73_next);
             };
-            uint32_t globalCalcSnakeVertexList74_wrapper(struct _D3DR3VERTEX_TEX1* arg_0, float** arg_1, uint32_t arg_2, float arg_3, uint32_t arg_4)
+            static uint32_t globalCalcSnakeVertexList74_wrapper(struct _D3DR3VERTEX_TEX1* arg_0, float** arg_1, uint32_t arg_2, float arg_3, uint32_t arg_4)
             {
                return globalCalcSnakeVertexList74_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalCalcSnakeVertexList74_next);
             };
-            int globalCalcSquare76_wrapper(int nLoot, int nMulti)
+            static int globalCalcSquare76_wrapper(int nLoot, int nMulti)
             {
                return globalCalcSquare76_user(nLoot, nMulti, globalCalcSquare76_next);
             };
-            void globalCalculateMoveCamera77_wrapper(_MOVE_CAMERA* arg_0)
+            static void globalCalculateMoveCamera77_wrapper(_MOVE_CAMERA* arg_0)
             {
                globalCalculateMoveCamera77_user(arg_0, globalCalculateMoveCamera77_next);
             };
-            bool globalCanAddMoneyForMaxLimGold79_wrapper(uint64_t ui64AddGold, uint64_t ui64HasGold)
+            static bool globalCanAddMoneyForMaxLimGold79_wrapper(uint64_t ui64AddGold, uint64_t ui64HasGold)
             {
                return globalCanAddMoneyForMaxLimGold79_user(ui64AddGold, ui64HasGold, globalCanAddMoneyForMaxLimGold79_next);
             };
-            bool globalCanAddMoneyForMaxLimMoney81_wrapper(uint64_t ui64AddMoney, uint64_t ui64HasMoney)
+            static bool globalCanAddMoneyForMaxLimMoney81_wrapper(uint64_t ui64AddMoney, uint64_t ui64HasMoney)
             {
                return globalCanAddMoneyForMaxLimMoney81_user(ui64AddMoney, ui64HasMoney, globalCanAddMoneyForMaxLimMoney81_next);
             };
-            int globalCcrFgCallback83_wrapper(int lCallbackCode, void* hUserContext, void* pCallbackParameter, int nParameterSize, void* pReservedParameter)
+            static int globalCcrFgCallback83_wrapper(int lCallbackCode, void* hUserContext, void* pCallbackParameter, int nParameterSize, void* pReservedParameter)
             {
                return globalCcrFgCallback83_user(lCallbackCode, hUserContext, pCallbackParameter, nParameterSize, pReservedParameter, globalCcrFgCallback83_next);
             };
-            int64_t globalCheckEdge84_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
+            static int64_t globalCheckEdge84_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
             {
                return globalCheckEdge84_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalCheckEdge84_next);
             };
-            int64_t globalCheckEdgeEpsilon85_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
+            static int64_t globalCheckEdgeEpsilon85_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
             {
                return globalCheckEdgeEpsilon85_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalCheckEdgeEpsilon85_next);
             };
-            bool globalCheckSameItemFromString_CodeIndex87_wrapper(char* psItemCode, char byTableCode, uint16_t wIndex)
+            static bool globalCheckSameItemFromString_CodeIndex87_wrapper(char* psItemCode, char byTableCode, uint16_t wIndex)
             {
                return globalCheckSameItemFromString_CodeIndex87_user(psItemCode, byTableCode, wIndex, globalCheckSameItemFromString_CodeIndex87_next);
             };
-            void globalClean2DRectangleZbuffer88_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
+            static void globalClean2DRectangleZbuffer88_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
             {
                globalClean2DRectangleZbuffer88_user(arg_0, arg_1, arg_2, arg_3, globalClean2DRectangleZbuffer88_next);
             };
-            void globalCleanViewPortStack89_wrapper()
+            static void globalCleanViewPortStack89_wrapper()
             {
                globalCleanViewPortStack89_user(globalCleanViewPortStack89_next);
             };
-            void globalCleanZbuffer90_wrapper(float arg_0, float arg_1, float arg_2, float arg_3)
+            static void globalCleanZbuffer90_wrapper(float arg_0, float arg_1, float arg_2, float arg_3)
             {
                globalCleanZbuffer90_user(arg_0, arg_1, arg_2, arg_3, globalCleanZbuffer90_next);
             };
-            void globalClearDynamicLight91_wrapper()
+            static void globalClearDynamicLight91_wrapper()
             {
                globalClearDynamicLight91_user(globalClearDynamicLight91_next);
             };
-            unsigned int globalCombineExCheckKeyGen93_wrapper(unsigned int dwtimeGetTime, unsigned int dwCombineExcelRecordIndex)
+            static unsigned int globalCombineExCheckKeyGen93_wrapper(unsigned int dwtimeGetTime, unsigned int dwCombineExcelRecordIndex)
             {
                return globalCombineExCheckKeyGen93_user(dwtimeGetTime, dwCombineExcelRecordIndex, globalCombineExCheckKeyGen93_next);
             };
-            int globalCompareGradeAndPvpPoint95_wrapper(void* arg1, void* arg2)
+            static int globalCompareGradeAndPvpPoint95_wrapper(void* arg1, void* arg2)
             {
                return globalCompareGradeAndPvpPoint95_user(arg1, arg2, globalCompareGradeAndPvpPoint95_next);
             };
-            void globalConvAniObject96_wrapper(int arg_0, uint8_t* arg_1, _READ_ANI_OBJECT* arg_2, struct _ANI_OBJECT* arg_3)
+            static void globalConvAniObject96_wrapper(int arg_0, uint8_t* arg_1, _READ_ANI_OBJECT* arg_2, struct _ANI_OBJECT* arg_3)
             {
                globalConvAniObject96_user(arg_0, arg_1, arg_2, arg_3, globalConvAniObject96_next);
             };
-            struct _STORAGE_LIST::_db_con* globalConvertCodeIntoItem98_wrapper(char* pszItemCode, char byOverlapNum, char bySocketConfig)
+            static struct _STORAGE_LIST::_db_con* globalConvertCodeIntoItem98_wrapper(char* pszItemCode, char byOverlapNum, char bySocketConfig)
             {
                return globalConvertCodeIntoItem98_user(pszItemCode, byOverlapNum, bySocketConfig, globalConvertCodeIntoItem98_next);
             };
-            int globalConvertErrorCode_Jap100_wrapper(char state)
+            static int globalConvertErrorCode_Jap100_wrapper(char state)
             {
                return globalConvertErrorCode_Jap100_user(state, globalConvertErrorCode_Jap100_next);
             };
-            uint32_t globalConvertHexa101_wrapper(char* arg_0)
+            static uint32_t globalConvertHexa101_wrapper(char* arg_0)
             {
                return globalConvertHexa101_user(arg_0, globalConvertHexa101_next);
             };
-            float globalCosineInterpolate102_wrapper(float arg_0, float arg_1, float arg_2)
+            static float globalCosineInterpolate102_wrapper(float arg_0, float arg_1, float arg_2)
             {
                return globalCosineInterpolate102_user(arg_0, arg_1, arg_2, globalCosineInterpolate102_next);
             };
-            unsigned int globalCountOfImports103_wrapper(struct _IMAGE_THUNK_DATA64* pitdBase)
+            static unsigned int globalCountOfImports103_wrapper(struct _IMAGE_THUNK_DATA64* pitdBase)
             {
                return globalCountOfImports103_user(pitdBase, globalCountOfImports103_next);
             };
-            void globalCreateAndWriteUVOffsets104_wrapper(int arg_0, int arg_1)
+            static void globalCreateAndWriteUVOffsets104_wrapper(int arg_0, int arg_1)
             {
                globalCreateAndWriteUVOffsets104_user(arg_0, arg_1, globalCreateAndWriteUVOffsets104_next);
             };
-            bool globalCreateAnimus106_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, char byClass, int nHP, int nFP, unsigned int dwExp, struct CPlayer* pMaster)
+            static bool globalCreateAnimus106_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, char byClass, int nHP, int nFP, unsigned int dwExp, struct CPlayer* pMaster)
             {
                return globalCreateAnimus106_user(pMap, wLayer, fPos, byClass, nHP, nFP, dwExp, pMaster, globalCreateAnimus106_next);
             };
-            void globalCreateBlurVBuffer107_wrapper(uint32_t arg_0, uint32_t arg_1)
+            static void globalCreateBlurVBuffer107_wrapper(uint32_t arg_0, uint32_t arg_1)
             {
                globalCreateBlurVBuffer107_user(arg_0, arg_1, globalCreateBlurVBuffer107_next);
             };
-            struct CGuardTower* globalCreateGuardTower109_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, struct _STORAGE_LIST::_db_con* pItem, struct CPlayer* pMaster, char byRaceCode, bool bQuick)
+            static struct CGuardTower* globalCreateGuardTower109_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, struct _STORAGE_LIST::_db_con* pItem, struct CPlayer* pMaster, char byRaceCode, bool bQuick)
             {
                return globalCreateGuardTower109_user(pMap, wLayer, fPos, pItem, pMaster, byRaceCode, bQuick, globalCreateGuardTower109_next);
             };
-            struct CItemBox* globalCreateItemBox111_wrapper(struct _STORAGE_LIST::_db_con* pItem, struct CPlayer* pOwner, unsigned int dwPartyBossSerial, bool bPartyShare, struct CCharacter* pThrower, char byCreateCode, struct CMapData* pMap, uint16_t wLayerIndex, float* pStdPos, bool bHide)
+            static struct CItemBox* globalCreateItemBox111_wrapper(struct _STORAGE_LIST::_db_con* pItem, struct CPlayer* pOwner, unsigned int dwPartyBossSerial, bool bPartyShare, struct CCharacter* pThrower, char byCreateCode, struct CMapData* pMap, uint16_t wLayerIndex, float* pStdPos, bool bHide)
             {
                return globalCreateItemBox111_user(pItem, pOwner, dwPartyBossSerial, bPartyShare, pThrower, byCreateCode, pMap, wLayerIndex, pStdPos, bHide, globalCreateItemBox111_next);
             };
-            struct CItemBox* globalCreateItemBox113_wrapper(struct _STORAGE_LIST::_db_con* pItem, char byCreateCode, struct CMapData* pMap, uint16_t wLayerIndex, float* pStdPos, bool bHide, struct CPlayer* pAttacker, int bHolyScanner, char byEventItemLootAuth)
+            static struct CItemBox* globalCreateItemBox113_wrapper(struct _STORAGE_LIST::_db_con* pItem, char byCreateCode, struct CMapData* pMap, uint16_t wLayerIndex, float* pStdPos, bool bHide, struct CPlayer* pAttacker, int bHolyScanner, char byEventItemLootAuth)
             {
                return globalCreateItemBox113_user(pItem, byCreateCode, pMap, wLayerIndex, pStdPos, bHide, pAttacker, bHolyScanner, byEventItemLootAuth, globalCreateItemBox113_next);
             };
-            struct CMonster* globalCreateRepMonster115_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, char* pszMonsterCode, struct CMonster* pParent, bool bRobExp, bool bRewardExp, bool bDungeon, bool bWithoutFail, bool bApplyRopExpField)
+            static struct CMonster* globalCreateRepMonster115_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, char* pszMonsterCode, struct CMonster* pParent, bool bRobExp, bool bRewardExp, bool bDungeon, bool bWithoutFail, bool bApplyRopExpField)
             {
                return globalCreateRepMonster115_user(pMap, wLayer, fPos, pszMonsterCode, pParent, bRobExp, bRewardExp, bDungeon, bWithoutFail, bApplyRopExpField, globalCreateRepMonster115_next);
             };
-            struct CMonster* globalCreateRespawnMonster117_wrapper(struct CMapData* pMap, uint16_t wLayer, int nMonsterIndex, struct _mon_active* pActiveRec, struct _dummy_position* pDumPosition, bool bRobExp, bool bRewardExp, bool bDungeon, bool bWithoutFail, bool bApplyRopExpField)
+            static struct CMonster* globalCreateRespawnMonster117_wrapper(struct CMapData* pMap, uint16_t wLayer, int nMonsterIndex, struct _mon_active* pActiveRec, struct _dummy_position* pDumPosition, bool bRobExp, bool bRewardExp, bool bDungeon, bool bWithoutFail, bool bApplyRopExpField)
             {
                return globalCreateRespawnMonster117_user(pMap, wLayer, nMonsterIndex, pActiveRec, pDumPosition, bRobExp, bRewardExp, bDungeon, bWithoutFail, bApplyRopExpField, globalCreateRespawnMonster117_next);
             };
-            struct CGuardTower* globalCreateSystemTower119_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, int nTowerIndex, char byRaceCode, int nIniIndex)
+            static struct CGuardTower* globalCreateSystemTower119_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, int nTowerIndex, char byRaceCode, int nIniIndex)
             {
                return globalCreateSystemTower119_user(pMap, wLayer, fPos, nTowerIndex, byRaceCode, nIniIndex, globalCreateSystemTower119_next);
             };
-            struct CTrap* globalCreateTrap121_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, struct CPlayer* pMaster, int nTrapItemIndex)
+            static struct CTrap* globalCreateTrap121_wrapper(struct CMapData* pMap, uint16_t wLayer, float* fPos, struct CPlayer* pMaster, int nTrapItemIndex)
             {
                return globalCreateTrap121_user(pMap, wLayer, fPos, pMaster, nTrapItemIndex, globalCreateTrap121_next);
             };
-            void globalCrossVector122_wrapper(float* arg_0, float* arg_1, float* arg_2)
+            static void globalCrossVector122_wrapper(float* arg_0, float* arg_1, float* arg_2)
             {
                globalCrossVector122_user(arg_0, arg_1, arg_2, globalCrossVector122_next);
             };
-            float globalCubicInterpolate123_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
+            static float globalCubicInterpolate123_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
             {
                return globalCubicInterpolate123_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalCubicInterpolate123_next);
             };
-            int32_t globalD3DUtil_CreateTexture124_wrapper(struct IDirect3DDevice8* arg_0, char* arg_1, struct IDirect3DTexture8** arg_2, _D3DFORMAT arg_3)
+            static int32_t globalD3DUtil_CreateTexture124_wrapper(struct IDirect3DDevice8* arg_0, char* arg_1, struct IDirect3DTexture8** arg_2, _D3DFORMAT arg_3)
             {
                return globalD3DUtil_CreateTexture124_user(arg_0, arg_1, arg_2, arg_3, globalD3DUtil_CreateTexture124_next);
             };
-            int32_t globalD3DUtil_CreateVertexShader125_wrapper(struct IDirect3DDevice8* arg_0, char* arg_1, uint32_t* arg_2, uint32_t* arg_3)
+            static int32_t globalD3DUtil_CreateVertexShader125_wrapper(struct IDirect3DDevice8* arg_0, char* arg_1, uint32_t* arg_2, uint32_t* arg_3)
             {
                return globalD3DUtil_CreateVertexShader125_user(arg_0, arg_1, arg_2, arg_3, globalD3DUtil_CreateVertexShader125_next);
             };
-            struct D3DXMATRIX* globalD3DUtil_GetCubeMapViewMatrix126_wrapper(short retstr, struct D3DXMATRIX* arg_0)
+            static struct D3DXMATRIX* globalD3DUtil_GetCubeMapViewMatrix126_wrapper(short retstr, struct D3DXMATRIX* arg_0)
             {
                return globalD3DUtil_GetCubeMapViewMatrix126_user(retstr, arg_0, globalD3DUtil_GetCubeMapViewMatrix126_next);
             };
-            struct D3DXQUATERNION* globalD3DUtil_GetRotationFromCursor127_wrapper(short retstr, struct D3DXQUATERNION* arg_0, HWND arg_1)
+            static struct D3DXQUATERNION* globalD3DUtil_GetRotationFromCursor127_wrapper(short retstr, struct D3DXQUATERNION* arg_0, HWND arg_1)
             {
                return globalD3DUtil_GetRotationFromCursor127_user(retstr, arg_0, arg_1, globalD3DUtil_GetRotationFromCursor127_next);
             };
-            void globalD3DUtil_InitLight128_wrapper(struct _D3DLIGHT8* arg_0, _D3DLIGHTTYPE arg_1, float arg_2, float arg_3, float arg_4)
+            static void globalD3DUtil_InitLight128_wrapper(struct _D3DLIGHT8* arg_0, _D3DLIGHTTYPE arg_1, float arg_2, float arg_3, float arg_4)
             {
                globalD3DUtil_InitLight128_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalD3DUtil_InitLight128_next);
             };
-            void globalD3DUtil_InitMaterial129_wrapper(struct _D3DMATERIAL8* arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
+            static void globalD3DUtil_InitMaterial129_wrapper(struct _D3DMATERIAL8* arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
             {
                globalD3DUtil_InitMaterial129_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalD3DUtil_InitMaterial129_next);
             };
-            int32_t globalD3DUtil_SetColorKey130_wrapper(struct IDirect3DTexture8* arg_0, uint32_t arg_1)
+            static int32_t globalD3DUtil_SetColorKey130_wrapper(struct IDirect3DTexture8* arg_0, uint32_t arg_1)
             {
                return globalD3DUtil_SetColorKey130_user(arg_0, arg_1, globalD3DUtil_SetColorKey130_next);
             };
-            int32_t globalD3DUtil_SetDeviceCursor131_wrapper(struct IDirect3DDevice8* arg_0, HICON arg_1, int arg_2)
+            static int32_t globalD3DUtil_SetDeviceCursor131_wrapper(struct IDirect3DDevice8* arg_0, HICON arg_1, int arg_2)
             {
                return globalD3DUtil_SetDeviceCursor131_user(arg_0, arg_1, arg_2, globalD3DUtil_SetDeviceCursor131_next);
             };
-            int32_t globalD3DUtil_SetDeviceCursor132_wrapper(struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, struct IDirect3DTexture8* arg_3)
+            static int32_t globalD3DUtil_SetDeviceCursor132_wrapper(struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, struct IDirect3DTexture8* arg_3)
             {
                return globalD3DUtil_SetDeviceCursor132_user(arg_0, arg_1, arg_2, arg_3, globalD3DUtil_SetDeviceCursor132_next);
             };
-            struct D3DXMATRIX* globalD3DXMatrixIdentity133_wrapper(struct D3DXMATRIX* arg_0)
+            static struct D3DXMATRIX* globalD3DXMatrixIdentity133_wrapper(struct D3DXMATRIX* arg_0)
             {
                return globalD3DXMatrixIdentity133_user(arg_0, globalD3DXMatrixIdentity133_next);
             };
-            struct D3DXQUATERNION* globalD3DXQuaternionAxisToAxis134_wrapper(struct D3DXQUATERNION* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
+            static struct D3DXQUATERNION* globalD3DXQuaternionAxisToAxis134_wrapper(struct D3DXQUATERNION* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
             {
                return globalD3DXQuaternionAxisToAxis134_user(arg_0, arg_1, arg_2, globalD3DXQuaternionAxisToAxis134_next);
             };
-            struct D3DXQUATERNION* globalD3DXQuaternionIdentity135_wrapper(struct D3DXQUATERNION* arg_0)
+            static struct D3DXQUATERNION* globalD3DXQuaternionIdentity135_wrapper(struct D3DXQUATERNION* arg_0)
             {
                return globalD3DXQuaternionIdentity135_user(arg_0, globalD3DXQuaternionIdentity135_next);
             };
-            struct D3DXQUATERNION* globalD3DXQuaternionUnitAxisToUnitAxis2136_wrapper(struct D3DXQUATERNION* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
+            static struct D3DXQUATERNION* globalD3DXQuaternionUnitAxisToUnitAxis2136_wrapper(struct D3DXQUATERNION* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
             {
                return globalD3DXQuaternionUnitAxisToUnitAxis2136_user(arg_0, arg_1, arg_2, globalD3DXQuaternionUnitAxisToUnitAxis2136_next);
             };
-            float globalD3DXVec2Dot138_wrapper(struct D3DXVECTOR2* pV1, struct D3DXVECTOR2* pV2)
+            static float globalD3DXVec2Dot138_wrapper(struct D3DXVECTOR2* pV1, struct D3DXVECTOR2* pV2)
             {
                return globalD3DXVec2Dot138_user(pV1, pV2, globalD3DXVec2Dot138_next);
             };
-            struct D3DXVECTOR3* globalD3DXVec3Cross139_wrapper(struct D3DXVECTOR3* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
+            static struct D3DXVECTOR3* globalD3DXVec3Cross139_wrapper(struct D3DXVECTOR3* arg_0, struct D3DXVECTOR3* arg_1, struct D3DXVECTOR3* arg_2)
             {
                return globalD3DXVec3Cross139_user(arg_0, arg_1, arg_2, globalD3DXVec3Cross139_next);
             };
-            float globalD3DXVec3Dot140_wrapper(struct D3DXVECTOR3* arg_0, struct D3DXVECTOR3* arg_1)
+            static float globalD3DXVec3Dot140_wrapper(struct D3DXVECTOR3* arg_0, struct D3DXVECTOR3* arg_1)
             {
                return globalD3DXVec3Dot140_user(arg_0, arg_1, globalD3DXVec3Dot140_next);
             };
-            float globalD3DXVec3Length141_wrapper(struct D3DXVECTOR3* arg_0)
+            static float globalD3DXVec3Length141_wrapper(struct D3DXVECTOR3* arg_0)
             {
                return globalD3DXVec3Length141_user(arg_0, globalD3DXVec3Length141_next);
             };
-            int32_t globalD3D_R3ConfirmDevice142_wrapper(struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
+            static int32_t globalD3D_R3ConfirmDevice142_wrapper(struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
             {
                return globalD3D_R3ConfirmDevice142_user(arg_0, arg_1, arg_2, globalD3D_R3ConfirmDevice142_next);
             };
-            int32_t globalD3D_R3DeleteDevice143_wrapper()
+            static int32_t globalD3D_R3DeleteDevice143_wrapper()
             {
                return globalD3D_R3DeleteDevice143_user(globalD3D_R3DeleteDevice143_next);
             };
-            int32_t globalD3D_R3InitDevice144_wrapper(struct IDirect3DDevice8* arg_0)
+            static int32_t globalD3D_R3InitDevice144_wrapper(struct IDirect3DDevice8* arg_0)
             {
                return globalD3D_R3InitDevice144_user(arg_0, globalD3D_R3InitDevice144_next);
             };
-            int32_t globalD3D_R3InvalidateDevice145_wrapper()
+            static int32_t globalD3D_R3InvalidateDevice145_wrapper()
             {
                return globalD3D_R3InvalidateDevice145_user(globalD3D_R3InvalidateDevice145_next);
             };
-            void globalD3D_R3MsgProc146_wrapper(HWND hWnd, unsigned int arg_0, uint64_t arg_1, int64_t arg_2)
+            static void globalD3D_R3MsgProc146_wrapper(HWND hWnd, unsigned int arg_0, uint64_t arg_1, int64_t arg_2)
             {
                globalD3D_R3MsgProc146_user(hWnd, arg_0, arg_1, arg_2, globalD3D_R3MsgProc146_next);
             };
-            int32_t globalD3D_R3RestoreDevice147_wrapper()
+            static int32_t globalD3D_R3RestoreDevice147_wrapper()
             {
                return globalD3D_R3RestoreDevice147_user(globalD3D_R3RestoreDevice147_next);
             };
-            void globalDDX_Control148_wrapper(struct CDataExchange* arg_0, int arg_1, struct CWnd* arg_2)
+            static void globalDDX_Control148_wrapper(struct CDataExchange* arg_0, int arg_1, struct CWnd* arg_2)
             {
                globalDDX_Control148_user(arg_0, arg_1, arg_2, globalDDX_Control148_next);
             };
-            void globalDDX_Text149_wrapper(struct CDataExchange* arg_0, int arg_1, int* arg_2)
+            static void globalDDX_Text149_wrapper(struct CDataExchange* arg_0, int arg_1, int* arg_2)
             {
                globalDDX_Text149_user(arg_0, arg_1, arg_2, globalDDX_Text149_next);
             };
-            void globalDDX_Text150_wrapper(struct CDataExchange* arg_0, int arg_1, unsigned int* arg_2)
+            static void globalDDX_Text150_wrapper(struct CDataExchange* arg_0, int arg_1, unsigned int* arg_2)
             {
                globalDDX_Text150_user(arg_0, arg_1, arg_2, globalDDX_Text150_next);
             };
-            bool globalDE_AllContDamageForceRemove152_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_AllContDamageForceRemove152_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_AllContDamageForceRemove152_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_AllContDamageForceRemove152_next);
             };
-            bool globalDE_AllContHelpForceRemove154_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_AllContHelpForceRemove154_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_AllContHelpForceRemove154_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_AllContHelpForceRemove154_next);
             };
-            bool globalDE_AllContHelpSkillRemove156_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_AllContHelpSkillRemove156_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_AllContHelpSkillRemove156_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_AllContHelpSkillRemove156_next);
             };
-            bool globalDE_AttHPtoDstFP158_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_AttHPtoDstFP158_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_AttHPtoDstFP158_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_AttHPtoDstFP158_next);
             };
-            bool globalDE_BattleMode_RecallCommonPlayer160_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_BattleMode_RecallCommonPlayer160_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_BattleMode_RecallCommonPlayer160_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_BattleMode_RecallCommonPlayer160_next);
             };
-            bool globalDE_ContDamageTimeInc162_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ContDamageTimeInc162_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ContDamageTimeInc162_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ContDamageTimeInc162_next);
             };
-            bool globalDE_ContHelpTimeInc164_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ContHelpTimeInc164_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ContHelpTimeInc164_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ContHelpTimeInc164_next);
             };
-            bool globalDE_ConvertMonsterTarget166_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ConvertMonsterTarget166_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ConvertMonsterTarget166_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ConvertMonsterTarget166_next);
             };
-            bool globalDE_ConvertTargetDest168_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ConvertTargetDest168_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ConvertTargetDest168_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ConvertTargetDest168_next);
             };
-            bool globalDE_DamStun170_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_DamStun170_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_DamStun170_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_DamStun170_next);
             };
-            bool globalDE_DetectTrap172_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_DetectTrap172_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_DetectTrap172_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_DetectTrap172_next);
             };
-            bool globalDE_FPDec174_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_FPDec174_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_FPDec174_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_FPDec174_next);
             };
-            bool globalDE_HPInc176_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_HPInc176_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_HPInc176_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_HPInc176_next);
             };
-            bool globalDE_IncHPCircleParty178_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_IncHPCircleParty178_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_IncHPCircleParty178_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_IncHPCircleParty178_next);
             };
-            bool globalDE_IncreaseDP180_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_IncreaseDP180_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_IncreaseDP180_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_IncreaseDP180_next);
             };
-            bool globalDE_LateContDamageRemove182_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_LateContDamageRemove182_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_LateContDamageRemove182_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_LateContDamageRemove182_next);
             };
-            bool globalDE_LateContHelpForceRemove184_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_LateContHelpForceRemove184_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_LateContHelpForceRemove184_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_LateContHelpForceRemove184_next);
             };
-            bool globalDE_LateContHelpSkillRemove186_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_LateContHelpSkillRemove186_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_LateContHelpSkillRemove186_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_LateContHelpSkillRemove186_next);
             };
-            bool globalDE_LayTrap188_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_LayTrap188_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_LayTrap188_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_LayTrap188_next);
             };
-            bool globalDE_MakeGuardTower190_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_MakeGuardTower190_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_MakeGuardTower190_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_MakeGuardTower190_next);
             };
-            bool globalDE_MakePortalReturnBindPositionPartyMember192_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_MakePortalReturnBindPositionPartyMember192_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_MakePortalReturnBindPositionPartyMember192_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_MakePortalReturnBindPositionPartyMember192_next);
             };
-            bool globalDE_MakeZeroAnimusRecallTimeOnce194_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_MakeZeroAnimusRecallTimeOnce194_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_MakeZeroAnimusRecallTimeOnce194_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_MakeZeroAnimusRecallTimeOnce194_next);
             };
-            bool globalDE_OthersContHelpSFRemove196_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_OthersContHelpSFRemove196_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_OthersContHelpSFRemove196_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_OthersContHelpSFRemove196_next);
             };
-            bool globalDE_OverHealing198_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_OverHealing198_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_OverHealing198_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_OverHealing198_next);
             };
-            bool globalDE_Potion_AllContHelpSkillRemove_Once200_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_AllContHelpSkillRemove_Once200_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_AllContHelpSkillRemove_Once200_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_AllContHelpSkillRemove_Once200_next);
             };
-            bool globalDE_Potion_Buf_Extend202_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Buf_Extend202_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Buf_Extend202_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Buf_Extend202_next);
             };
-            bool globalDE_Potion_Chaos_Dec_Time204_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Chaos_Dec_Time204_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Chaos_Dec_Time204_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Chaos_Dec_Time204_next);
             };
-            bool globalDE_Potion_Chaos_Inc_Time206_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Chaos_Inc_Time206_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Chaos_Inc_Time206_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Chaos_Inc_Time206_next);
             };
-            bool globalDE_Potion_CharReName208_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_CharReName208_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_CharReName208_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_CharReName208_next);
             };
-            bool globalDE_Potion_Class_Refine210_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Class_Refine210_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Class_Refine210_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Class_Refine210_next);
             };
-            bool globalDE_Potion_Cont_Damage_Remove212_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Cont_Damage_Remove212_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Cont_Damage_Remove212_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Cont_Damage_Remove212_next);
             };
-            bool globalDE_Potion_DecHalfSFContDam214_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_DecHalfSFContDam214_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_DecHalfSFContDam214_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_DecHalfSFContDam214_next);
             };
-            bool globalDE_Potion_Exp_Increase_Absolute216_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Exp_Increase_Absolute216_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Exp_Increase_Absolute216_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Exp_Increase_Absolute216_next);
             };
-            bool globalDE_Potion_Exp_Increase_Percentage218_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Exp_Increase_Percentage218_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Exp_Increase_Percentage218_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Exp_Increase_Percentage218_next);
             };
-            bool globalDE_Potion_FP_In_Value220_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_FP_In_Value220_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_FP_In_Value220_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_FP_In_Value220_next);
             };
-            bool globalDE_Potion_Gold_Point222_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Gold_Point222_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Gold_Point222_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Gold_Point222_next);
             };
-            bool globalDE_Potion_HFP_Full_Recover224_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_HFP_Full_Recover224_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_HFP_Full_Recover224_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_HFP_Full_Recover224_next);
             };
-            bool globalDE_Potion_HP_In_Value226_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_HP_In_Value226_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_HP_In_Value226_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_HP_In_Value226_next);
             };
-            bool globalDE_Potion_Race_Debuff_Clear_One228_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Race_Debuff_Clear_One228_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Race_Debuff_Clear_One228_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Race_Debuff_Clear_One228_next);
             };
-            bool globalDE_Potion_Race_Debuff_Clear_Two230_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Race_Debuff_Clear_Two230_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Race_Debuff_Clear_Two230_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Race_Debuff_Clear_Two230_next);
             };
-            bool globalDE_Potion_RemoveAfterEffect232_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_RemoveAfterEffect232_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_RemoveAfterEffect232_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_RemoveAfterEffect232_next);
             };
-            bool globalDE_Potion_RemoveAllContinousEffect234_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_RemoveAllContinousEffect234_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_RemoveAllContinousEffect234_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_RemoveAllContinousEffect234_next);
             };
-            bool globalDE_Potion_Revival_Die_Position236_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Revival_Die_Position236_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Revival_Die_Position236_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Revival_Die_Position236_next);
             };
-            bool globalDE_Potion_SP_In_Value238_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_SP_In_Value238_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_SP_In_Value238_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_SP_In_Value238_next);
             };
-            bool globalDE_Potion_Trunk_Extend240_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Potion_Trunk_Extend240_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Potion_Trunk_Extend240_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Potion_Trunk_Extend240_next);
             };
-            bool globalDE_Quick_Revival_Die_Position242_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Quick_Revival_Die_Position242_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Quick_Revival_Die_Position242_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Quick_Revival_Die_Position242_next);
             };
-            bool globalDE_RecallCommonPlayer244_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_RecallCommonPlayer244_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_RecallCommonPlayer244_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_RecallCommonPlayer244_next);
             };
-            bool globalDE_RecallPartyMember246_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_RecallPartyMember246_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_RecallPartyMember246_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_RecallPartyMember246_next);
             };
-            bool globalDE_Recall_After_Stone248_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Recall_After_Stone248_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Recall_After_Stone248_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Recall_After_Stone248_next);
             };
-            bool globalDE_RecoverAllReturnStateAnimusHPFull250_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_RecoverAllReturnStateAnimusHPFull250_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_RecoverAllReturnStateAnimusHPFull250_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_RecoverAllReturnStateAnimusHPFull250_next);
             };
-            bool globalDE_Recovery252_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Recovery252_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Recovery252_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Recovery252_next);
             };
-            bool globalDE_ReleaseMonsterTarget254_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ReleaseMonsterTarget254_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ReleaseMonsterTarget254_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ReleaseMonsterTarget254_next);
             };
-            bool globalDE_RemoveAllContHelp256_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_RemoveAllContHelp256_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_RemoveAllContHelp256_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_RemoveAllContHelp256_next);
             };
-            bool globalDE_ReturnBindPosition258_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ReturnBindPosition258_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ReturnBindPosition258_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ReturnBindPosition258_next);
             };
-            bool globalDE_SPDec260_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_SPDec260_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_SPDec260_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_SPDec260_next);
             };
-            bool globalDE_STInc262_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_STInc262_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_STInc262_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_STInc262_next);
             };
-            bool globalDE_SelfDestruction264_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_SelfDestruction264_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_SelfDestruction264_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_SelfDestruction264_next);
             };
-            bool globalDE_SkillContHelpTimeInc266_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_SkillContHelpTimeInc266_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_SkillContHelpTimeInc266_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_SkillContHelpTimeInc266_next);
             };
-            bool globalDE_Stun268_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Stun268_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Stun268_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Stun268_next);
             };
-            bool globalDE_TeleportCommonPlayer270_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_TeleportCommonPlayer270_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_TeleportCommonPlayer270_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_TeleportCommonPlayer270_next);
             };
-            bool globalDE_Teleport_After_Stone272_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_Teleport_After_Stone272_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_Teleport_After_Stone272_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_Teleport_After_Stone272_next);
             };
-            bool globalDE_TransDestHP274_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_TransDestHP274_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_TransDestHP274_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_TransDestHP274_next);
             };
-            bool globalDE_TransMonsterHP276_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_TransMonsterHP276_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_TransMonsterHP276_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_TransMonsterHP276_next);
             };
-            bool globalDE_ViewWeakPoint278_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
+            static bool globalDE_ViewWeakPoint278_wrapper(struct CCharacter* pActChar, struct CCharacter* pTargetChar, float fEffectValue, char* byRet)
             {
                return globalDE_ViewWeakPoint278_user(pActChar, pTargetChar, fEffectValue, byRet, globalDE_ViewWeakPoint278_next);
             };
-            bool globalDTradeEqualPerson280_wrapper(struct CPlayer* lp_pOne, struct CPlayer** lpp_pDst)
+            static bool globalDTradeEqualPerson280_wrapper(struct CPlayer* lp_pOne, struct CPlayer** lpp_pDst)
             {
                return globalDTradeEqualPerson280_user(lp_pOne, lpp_pDst, globalDTradeEqualPerson280_next);
             };
-            void globalDXUtil_ConvertAnsiStringToGeneric282_wrapper(char* tstrDestination, char* strSource, int cchDestChar)
+            static void globalDXUtil_ConvertAnsiStringToGeneric282_wrapper(char* tstrDestination, char* strSource, int cchDestChar)
             {
                globalDXUtil_ConvertAnsiStringToGeneric282_user(tstrDestination, strSource, cchDestChar, globalDXUtil_ConvertAnsiStringToGeneric282_next);
             };
-            void globalDXUtil_ConvertAnsiStringToWide284_wrapper(wchar_t* wstrDestination, char* strSource, int cchDestChar)
+            static void globalDXUtil_ConvertAnsiStringToWide284_wrapper(wchar_t* wstrDestination, char* strSource, int cchDestChar)
             {
                globalDXUtil_ConvertAnsiStringToWide284_user(wstrDestination, strSource, cchDestChar, globalDXUtil_ConvertAnsiStringToWide284_next);
             };
-            void globalDXUtil_ConvertGenericStringToAnsi286_wrapper(char* strDestination, char* tstrSource, int cchDestChar)
+            static void globalDXUtil_ConvertGenericStringToAnsi286_wrapper(char* strDestination, char* tstrSource, int cchDestChar)
             {
                globalDXUtil_ConvertGenericStringToAnsi286_user(strDestination, tstrSource, cchDestChar, globalDXUtil_ConvertGenericStringToAnsi286_next);
             };
-            void globalDXUtil_ConvertGenericStringToWide288_wrapper(wchar_t* wstrDestination, char* tstrSource, int cchDestChar)
+            static void globalDXUtil_ConvertGenericStringToWide288_wrapper(wchar_t* wstrDestination, char* tstrSource, int cchDestChar)
             {
                globalDXUtil_ConvertGenericStringToWide288_user(wstrDestination, tstrSource, cchDestChar, globalDXUtil_ConvertGenericStringToWide288_next);
             };
-            void globalDXUtil_ConvertWideStringToAnsi290_wrapper(char* strDestination, wchar_t* wstrSource, int cchDestChar)
+            static void globalDXUtil_ConvertWideStringToAnsi290_wrapper(char* strDestination, wchar_t* wstrSource, int cchDestChar)
             {
                globalDXUtil_ConvertWideStringToAnsi290_user(strDestination, wstrSource, cchDestChar, globalDXUtil_ConvertWideStringToAnsi290_next);
             };
-            void globalDXUtil_ConvertWideStringToGeneric292_wrapper(char* tstrDestination, wchar_t* wstrSource, int cchDestChar)
+            static void globalDXUtil_ConvertWideStringToGeneric292_wrapper(char* tstrDestination, wchar_t* wstrSource, int cchDestChar)
             {
                globalDXUtil_ConvertWideStringToGeneric292_user(tstrDestination, wstrSource, cchDestChar, globalDXUtil_ConvertWideStringToGeneric292_next);
             };
-            HRESULT globalDXUtil_FindMediaFile294_wrapper(char* strPath, char* strFilename)
+            static HRESULT globalDXUtil_FindMediaFile294_wrapper(char* strPath, char* strFilename)
             {
                return globalDXUtil_FindMediaFile294_user(strPath, strFilename, globalDXUtil_FindMediaFile294_next);
             };
-            char* globalDXUtil_GetDXSDKMediaPath296_wrapper()
+            static char* globalDXUtil_GetDXSDKMediaPath296_wrapper()
             {
                return globalDXUtil_GetDXSDKMediaPath296_user(globalDXUtil_GetDXSDKMediaPath296_next);
             };
-            HRESULT globalDXUtil_ReadBoolRegKey298_wrapper(struct HKEY__* hKey, char* strRegName, int* pbValue, int bDefault)
+            static HRESULT globalDXUtil_ReadBoolRegKey298_wrapper(struct HKEY__* hKey, char* strRegName, int* pbValue, int bDefault)
             {
                return globalDXUtil_ReadBoolRegKey298_user(hKey, strRegName, pbValue, bDefault, globalDXUtil_ReadBoolRegKey298_next);
             };
-            HRESULT globalDXUtil_ReadGuidRegKey300_wrapper(struct HKEY__* hKey, char* strRegName, struct _GUID* pGuidValue, struct _GUID* guidDefault)
+            static HRESULT globalDXUtil_ReadGuidRegKey300_wrapper(struct HKEY__* hKey, char* strRegName, struct _GUID* pGuidValue, struct _GUID* guidDefault)
             {
                return globalDXUtil_ReadGuidRegKey300_user(hKey, strRegName, pGuidValue, guidDefault, globalDXUtil_ReadGuidRegKey300_next);
             };
-            HRESULT globalDXUtil_ReadIntRegKey302_wrapper(struct HKEY__* hKey, char* strRegName, unsigned int* pdwValue, unsigned int dwDefault)
+            static HRESULT globalDXUtil_ReadIntRegKey302_wrapper(struct HKEY__* hKey, char* strRegName, unsigned int* pdwValue, unsigned int dwDefault)
             {
                return globalDXUtil_ReadIntRegKey302_user(hKey, strRegName, pdwValue, dwDefault, globalDXUtil_ReadIntRegKey302_next);
             };
-            HRESULT globalDXUtil_ReadStringRegKey304_wrapper(struct HKEY__* hKey, char* strRegName, char* strValue, unsigned int dwLength, char* strDefault)
+            static HRESULT globalDXUtil_ReadStringRegKey304_wrapper(struct HKEY__* hKey, char* strRegName, char* strValue, unsigned int dwLength, char* strDefault)
             {
                return globalDXUtil_ReadStringRegKey304_user(hKey, strRegName, strValue, dwLength, strDefault, globalDXUtil_ReadStringRegKey304_next);
             };
-            float globalDXUtil_Timer306_wrapper(TIMER_COMMAND command)
+            static float globalDXUtil_Timer306_wrapper(TIMER_COMMAND command)
             {
                return globalDXUtil_Timer306_user(command, globalDXUtil_Timer306_next);
             };
-            void globalDXUtil_Trace308_wrapper(char* strMsg)
+            static void globalDXUtil_Trace308_wrapper(char* strMsg)
             {
                globalDXUtil_Trace308_user(strMsg, globalDXUtil_Trace308_next);
             };
-            HRESULT globalDXUtil_WriteBoolRegKey310_wrapper(struct HKEY__* hKey, char* strRegName, int bValue)
+            static HRESULT globalDXUtil_WriteBoolRegKey310_wrapper(struct HKEY__* hKey, char* strRegName, int bValue)
             {
                return globalDXUtil_WriteBoolRegKey310_user(hKey, strRegName, bValue, globalDXUtil_WriteBoolRegKey310_next);
             };
-            HRESULT globalDXUtil_WriteGuidRegKey312_wrapper(struct HKEY__* hKey, char* strRegName, struct _GUID guidValue)
+            static HRESULT globalDXUtil_WriteGuidRegKey312_wrapper(struct HKEY__* hKey, char* strRegName, struct _GUID guidValue)
             {
                return globalDXUtil_WriteGuidRegKey312_user(hKey, strRegName, guidValue, globalDXUtil_WriteGuidRegKey312_next);
             };
-            HRESULT globalDXUtil_WriteIntRegKey314_wrapper(struct HKEY__* hKey, char* strRegName, unsigned int dwValue)
+            static HRESULT globalDXUtil_WriteIntRegKey314_wrapper(struct HKEY__* hKey, char* strRegName, unsigned int dwValue)
             {
                return globalDXUtil_WriteIntRegKey314_user(hKey, strRegName, dwValue, globalDXUtil_WriteIntRegKey314_next);
             };
-            HRESULT globalDXUtil_WriteStringRegKey316_wrapper(struct HKEY__* hKey, char* strRegName, char* strValue)
+            static HRESULT globalDXUtil_WriteStringRegKey316_wrapper(struct HKEY__* hKey, char* strRegName, char* strValue)
             {
                return globalDXUtil_WriteStringRegKey316_user(hKey, strRegName, strValue, globalDXUtil_WriteStringRegKey316_next);
             };
-            void globalDeCryptString318_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
+            static void globalDeCryptString318_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
             {
                globalDeCryptString318_user(pStr, nSize, byPlus, wCryptKey, globalDeCryptString318_next);
             };
-            void globalDeCrypt_Move320_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
+            static void globalDeCrypt_Move320_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
             {
                globalDeCrypt_Move320_user(pStr, nSize, byPlus, wCryptKey, globalDeCrypt_Move320_next);
             };
-            void globalDebugDrawIndexedPrimitiveTLTex1321_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
+            static void globalDebugDrawIndexedPrimitiveTLTex1321_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
             {
                globalDebugDrawIndexedPrimitiveTLTex1321_user(arg_0, arg_1, arg_2, arg_3, globalDebugDrawIndexedPrimitiveTLTex1321_next);
             };
-            void globalDebugDrawIndexedPrimitiveUPTex1322_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
+            static void globalDebugDrawIndexedPrimitiveUPTex1322_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
             {
                globalDebugDrawIndexedPrimitiveUPTex1322_user(arg_0, arg_1, arg_2, arg_3, globalDebugDrawIndexedPrimitiveUPTex1322_next);
             };
-            void globalDebugPushEntityNum323_wrapper(uint32_t arg_0)
+            static void globalDebugPushEntityNum323_wrapper(uint32_t arg_0)
             {
                globalDebugPushEntityNum323_user(arg_0, globalDebugPushEntityNum323_next);
             };
-            void globalDebugPushMagicNum324_wrapper(uint32_t arg_0)
+            static void globalDebugPushMagicNum324_wrapper(uint32_t arg_0)
             {
                globalDebugPushMagicNum324_user(arg_0, globalDebugPushMagicNum324_next);
             };
-            void globalDetailTextureOffStage2325_wrapper()
+            static void globalDetailTextureOffStage2325_wrapper()
             {
                globalDetailTextureOffStage2325_user(globalDetailTextureOffStage2325_next);
             };
-            void globalDetailTextureOnStage2326_wrapper(struct _R3MATERIAL* arg_0)
+            static void globalDetailTextureOnStage2326_wrapper(struct _R3MATERIAL* arg_0)
             {
                globalDetailTextureOnStage2326_user(arg_0, globalDetailTextureOnStage2326_next);
             };
-            void globalDfree327_wrapper(void* arg_0)
-            {
-               globalDfree327_user(arg_0, globalDfree327_next);
-            };
-            void globalDisplayANSICodePageStrOutputDebug329_wrapper()
+            static void globalDisplayANSICodePageStrOutputDebug329_wrapper()
             {
                globalDisplayANSICodePageStrOutputDebug329_user(globalDisplayANSICodePageStrOutputDebug329_next);
             };
-            char* globalDisplayItemUpgInfo331_wrapper(int nTableCode, unsigned int dwLvBit)
+            static char* globalDisplayItemUpgInfo331_wrapper(int nTableCode, unsigned int dwLvBit)
             {
                return globalDisplayItemUpgInfo331_user(nTableCode, dwLvBit, globalDisplayItemUpgInfo331_next);
             };
-            void* globalDmalloc332_wrapper(int arg_0)
-            {
-               return globalDmalloc332_user(arg_0, globalDmalloc332_next);
-            };
-            float globalDotProduct333_wrapper(float* arg_0, float* arg_1)
+            static float globalDotProduct333_wrapper(float* arg_0, float* arg_1)
             {
                return globalDotProduct333_user(arg_0, arg_1, globalDotProduct333_next);
             };
-            void globalDraw2DLine334_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
+            static void globalDraw2DLine334_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
             {
                globalDraw2DLine334_user(arg_0, arg_1, arg_2, globalDraw2DLine334_next);
             };
-            void globalDraw2DLineList335_wrapper(float** arg_0, uint32_t arg_1, uint32_t arg_2)
+            static void globalDraw2DLineList335_wrapper(float** arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                globalDraw2DLineList335_user(arg_0, arg_1, arg_2, globalDraw2DLineList335_next);
             };
-            void globalDraw2DRectangle336_wrapper(uint32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
+            static void globalDraw2DRectangle336_wrapper(uint32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3, uint32_t arg_4)
             {
                globalDraw2DRectangle336_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDraw2DRectangle336_next);
             };
-            void globalDraw2DSprite337_wrapper(_D3DR3TLVERTEX_TEX1* arg_0, int arg_1, void* arg_2)
+            static void globalDraw2DSprite337_wrapper(_D3DR3TLVERTEX_TEX1* arg_0, int arg_1, void* arg_2)
             {
                globalDraw2DSprite337_user(arg_0, arg_1, arg_2, globalDraw2DSprite337_next);
             };
-            void globalDraw2DSprite338_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
+            static void globalDraw2DSprite338_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
             {
                globalDraw2DSprite338_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, globalDraw2DSprite338_next);
             };
-            void globalDraw2DSprite339_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, int arg_4, uint32_t arg_5)
+            static void globalDraw2DSprite339_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, int arg_4, uint32_t arg_5)
             {
                globalDraw2DSprite339_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDraw2DSprite339_next);
             };
-            void globalDraw2DSprite340_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, uint32_t arg_5)
+            static void globalDraw2DSprite340_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, uint32_t arg_5)
             {
                globalDraw2DSprite340_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDraw2DSprite340_next);
             };
-            void globalDraw2DSprite3D341_wrapper(float* arg_0, float arg_1, float arg_2, float* arg_3, float* arg_4, void* arg_5, uint32_t arg_6)
+            static void globalDraw2DSprite3D341_wrapper(float* arg_0, float arg_1, float arg_2, float* arg_3, float* arg_4, void* arg_5, uint32_t arg_6)
             {
                globalDraw2DSprite3D341_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalDraw2DSprite3D341_next);
             };
-            void globalDraw2DSprite3D342_wrapper(float* arg_0, float arg_1, float arg_2, void* arg_3, uint32_t arg_4)
+            static void globalDraw2DSprite3D342_wrapper(float* arg_0, float arg_1, float arg_2, void* arg_3, uint32_t arg_4)
             {
                globalDraw2DSprite3D342_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDraw2DSprite3D342_next);
             };
-            void globalDraw2DSpriteRot343_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, float* arg_5, float* arg_6, void* arg_7, uint32_t arg_8)
+            static void globalDraw2DSpriteRot343_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, float* arg_5, float* arg_6, void* arg_7, uint32_t arg_8)
             {
                globalDraw2DSpriteRot343_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8, globalDraw2DSpriteRot343_next);
             };
-            void globalDraw2DSpriteRot344_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float arg_4, void* arg_5, uint32_t arg_6)
+            static void globalDraw2DSpriteRot344_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float arg_4, void* arg_5, uint32_t arg_6)
             {
                globalDraw2DSpriteRot344_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalDraw2DSpriteRot344_next);
             };
-            void globalDraw2DSpriteRot3D345_wrapper(float* arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
+            static void globalDraw2DSpriteRot3D345_wrapper(float* arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
             {
                globalDraw2DSpriteRot3D345_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, globalDraw2DSpriteRot3D345_next);
             };
-            void globalDraw2DSpriteRot3D346_wrapper(float* arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, uint32_t arg_5)
+            static void globalDraw2DSpriteRot3D346_wrapper(float* arg_0, float arg_1, float arg_2, float arg_3, void* arg_4, uint32_t arg_5)
             {
                globalDraw2DSpriteRot3D346_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDraw2DSpriteRot3D346_next);
             };
-            void globalDraw2DSpriteSub347_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, int arg_4, uint32_t arg_5)
+            static void globalDraw2DSpriteSub347_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, int arg_4, uint32_t arg_5)
             {
                globalDraw2DSpriteSub347_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDraw2DSpriteSub347_next);
             };
-            void globalDraw2DTexture348_wrapper(uint32_t arg_0, int32_t arg_1, void* arg_2, int32_t arg_3, uint32_t arg_4, void* arg_5)
+            static void globalDraw2DTexture348_wrapper(uint32_t arg_0, int32_t arg_1, void* arg_2, int32_t arg_3, uint32_t arg_4, void* arg_5)
             {
                globalDraw2DTexture348_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDraw2DTexture348_next);
             };
-            void globalDraw3DSprite349_wrapper(float* arg_0, float** arg_1, float arg_2, void* arg_3)
+            static void globalDraw3DSprite349_wrapper(float* arg_0, float** arg_1, float arg_2, void* arg_3)
             {
                globalDraw3DSprite349_user(arg_0, arg_1, arg_2, arg_3, globalDraw3DSprite349_next);
             };
-            void globalDrawAlphaStack350_wrapper(struct CBsp* arg_0, float* arg_1)
+            static void globalDrawAlphaStack350_wrapper(struct CBsp* arg_0, float* arg_1)
             {
                globalDrawAlphaStack350_user(arg_0, arg_1, globalDrawAlphaStack350_next);
             };
-            void globalDrawBlurRect351_wrapper(uint32_t arg_0, float arg_1, float arg_2, void* arg_3)
+            static void globalDrawBlurRect351_wrapper(uint32_t arg_0, float arg_1, float arg_2, void* arg_3)
             {
                globalDrawBlurRect351_user(arg_0, arg_1, arg_2, arg_3, globalDrawBlurRect351_next);
             };
-            void globalDrawBlurVBuffer352_wrapper(uint32_t arg_0)
+            static void globalDrawBlurVBuffer352_wrapper(uint32_t arg_0)
             {
                globalDrawBlurVBuffer352_user(arg_0, globalDrawBlurVBuffer352_next);
             };
-            void globalDrawCParticle353_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
+            static void globalDrawCParticle353_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
             {
                globalDrawCParticle353_user(arg_0, arg_1, arg_2, arg_3, globalDrawCParticle353_next);
             };
-            void globalDrawEtcPrint354_wrapper()
+            static void globalDrawEtcPrint354_wrapper()
             {
                globalDrawEtcPrint354_user(globalDrawEtcPrint354_next);
             };
-            int64_t globalDrawFadeSKy355_wrapper()
+            static int64_t globalDrawFadeSKy355_wrapper()
             {
                return globalDrawFadeSKy355_user(globalDrawFadeSKy355_next);
             };
-            int64_t globalDrawFadeScreen356_wrapper()
+            static int64_t globalDrawFadeScreen356_wrapper()
             {
                return globalDrawFadeScreen356_user(globalDrawFadeScreen356_next);
             };
-            int64_t globalDrawFadeTex357_wrapper()
+            static int64_t globalDrawFadeTex357_wrapper()
             {
                return globalDrawFadeTex357_user(globalDrawFadeTex357_next);
             };
-            void globalDrawFullScreenLava358_wrapper(uint32_t arg_0, uint32_t arg_1, void* arg_2, uint32_t arg_3, float arg_4, float arg_5)
+            static void globalDrawFullScreenLava358_wrapper(uint32_t arg_0, uint32_t arg_1, void* arg_2, uint32_t arg_3, float arg_4, float arg_5)
             {
                globalDrawFullScreenLava358_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawFullScreenLava358_next);
             };
-            void globalDrawIndexedPrimitiveTLTex1359_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
+            static void globalDrawIndexedPrimitiveTLTex1359_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
             {
                globalDrawIndexedPrimitiveTLTex1359_user(arg_0, arg_1, arg_2, arg_3, globalDrawIndexedPrimitiveTLTex1359_next);
             };
-            void globalDrawIndexedPrimitiveUPTex1360_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
+            static void globalDrawIndexedPrimitiveUPTex1360_wrapper(int arg_0, int arg_1, uint16_t* arg_2, void* arg_3)
             {
                globalDrawIndexedPrimitiveUPTex1360_user(arg_0, arg_1, arg_2, arg_3, globalDrawIndexedPrimitiveUPTex1360_next);
             };
-            void globalDrawIndexedTLVertex361_wrapper(void* arg_0, int arg_1, int arg_2, uint32_t arg_3, uint16_t* arg_4, void* arg_5)
+            static void globalDrawIndexedTLVertex361_wrapper(void* arg_0, int arg_1, int arg_2, uint32_t arg_3, uint16_t* arg_4, void* arg_5)
             {
                globalDrawIndexedTLVertex361_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawIndexedTLVertex361_next);
             };
-            void globalDrawIndexedTex1VertexUP362_wrapper(void* arg_0, int arg_1, int arg_2, uint32_t arg_3, uint16_t* arg_4, void* arg_5)
+            static void globalDrawIndexedTex1VertexUP362_wrapper(void* arg_0, int arg_1, int arg_2, uint32_t arg_3, uint16_t* arg_4, void* arg_5)
             {
                globalDrawIndexedTex1VertexUP362_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawIndexedTex1VertexUP362_next);
             };
-            void globalDrawLensFlare363_wrapper(struct CBsp* arg_0)
+            static void globalDrawLensFlare363_wrapper(struct CBsp* arg_0)
             {
                globalDrawLensFlare363_user(arg_0, globalDrawLensFlare363_next);
             };
-            void globalDrawLightMapGroup364_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
+            static void globalDrawLightMapGroup364_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
             {
                globalDrawLightMapGroup364_user(arg_0, arg_1, globalDrawLightMapGroup364_next);
             };
-            void globalDrawLogo365_wrapper()
+            static void globalDrawLogo365_wrapper()
             {
                globalDrawLogo365_user(globalDrawLogo365_next);
             };
-            void globalDrawOneMatGroup366_wrapper(struct CVertexBuffer* arg_0, struct CIndexBuffer* arg_1, int arg_2, int arg_3, int arg_4, int arg_5)
+            static void globalDrawOneMatGroup366_wrapper(struct CVertexBuffer* arg_0, struct CIndexBuffer* arg_1, int arg_2, int arg_3, int arg_4, int arg_5)
             {
                globalDrawOneMatGroup366_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawOneMatGroup366_next);
             };
-            void globalDrawOneMatGroup367_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
+            static void globalDrawOneMatGroup367_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
             {
                globalDrawOneMatGroup367_user(arg_0, arg_1, globalDrawOneMatGroup367_next);
             };
-            void globalDrawParticlePointSprite368_wrapper(struct CParticle* arg_0)
+            static void globalDrawParticlePointSprite368_wrapper(struct CParticle* arg_0)
             {
                globalDrawParticlePointSprite368_user(arg_0, globalDrawParticlePointSprite368_next);
             };
-            void globalDrawParticlePolygon369_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
+            static void globalDrawParticlePolygon369_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
             {
                globalDrawParticlePolygon369_user(arg_0, arg_1, arg_2, arg_3, globalDrawParticlePolygon369_next);
             };
-            void globalDrawPrimitiveTLTex1370_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveTLTex1370_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveTLTex1370_user(arg_0, arg_1, globalDrawPrimitiveTLTex1370_next);
             };
-            void globalDrawPrimitiveUPLine371_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPLine371_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPLine371_user(arg_0, arg_1, globalDrawPrimitiveUPLine371_next);
             };
-            void globalDrawPrimitiveUPPoint372_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPPoint372_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPPoint372_user(arg_0, arg_1, globalDrawPrimitiveUPPoint372_next);
             };
-            void globalDrawPrimitiveUPPoly373_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPPoly373_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPPoly373_user(arg_0, arg_1, globalDrawPrimitiveUPPoly373_next);
             };
-            void globalDrawPrimitiveUPTLLine374_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPTLLine374_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPTLLine374_user(arg_0, arg_1, globalDrawPrimitiveUPTLLine374_next);
             };
-            void globalDrawPrimitiveUPTex1375_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPTex1375_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPTex1375_user(arg_0, arg_1, globalDrawPrimitiveUPTex1375_next);
             };
-            void globalDrawPrimitiveUPTex1376_wrapper(void* arg_0, int arg_1, uint32_t arg_2, void* arg_3, uint32_t arg_4)
+            static void globalDrawPrimitiveUPTex1376_wrapper(void* arg_0, int arg_1, uint32_t arg_2, void* arg_3, uint32_t arg_4)
             {
                globalDrawPrimitiveUPTex1376_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDrawPrimitiveUPTex1376_next);
             };
-            void globalDrawPrimitiveUPTex1Strip377_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPTex1Strip377_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPTex1Strip377_user(arg_0, arg_1, globalDrawPrimitiveUPTex1Strip377_next);
             };
-            void globalDrawPrimitiveUPTex2378_wrapper(int arg_0, void* arg_1)
+            static void globalDrawPrimitiveUPTex2378_wrapper(int arg_0, void* arg_1)
             {
                globalDrawPrimitiveUPTex2378_user(arg_0, arg_1, globalDrawPrimitiveUPTex2378_next);
             };
-            void globalDrawR3Hangul3DA379_wrapper(float* arg_0, char* arg_1, uint32_t arg_2, uint32_t arg_3, float arg_4)
+            static void globalDrawR3Hangul3DA379_wrapper(float* arg_0, char* arg_1, uint32_t arg_2, uint32_t arg_3, float arg_4)
             {
                globalDrawR3Hangul3DA379_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDrawR3Hangul3DA379_next);
             };
-            void globalDrawR3Hangul3DW380_wrapper(float* arg_0, wchar_t* arg_1, uint32_t arg_2, uint32_t arg_3, float arg_4)
+            static void globalDrawR3Hangul3DW380_wrapper(float* arg_0, wchar_t* arg_1, uint32_t arg_2, uint32_t arg_3, float arg_4)
             {
                globalDrawR3Hangul3DW380_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDrawR3Hangul3DW380_next);
             };
-            void globalDrawR3HangulA381_wrapper(int32_t arg_0, int32_t arg_1, char* arg_2, uint32_t arg_3, float** arg_4, uint32_t arg_5, float arg_6)
+            static void globalDrawR3HangulA381_wrapper(int32_t arg_0, int32_t arg_1, char* arg_2, uint32_t arg_3, float** arg_4, uint32_t arg_5, float arg_6)
             {
                globalDrawR3HangulA381_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalDrawR3HangulA381_next);
             };
-            void globalDrawR3HangulA382_wrapper(int32_t arg_0, int32_t arg_1, char* arg_2, uint32_t arg_3, uint32_t arg_4, float arg_5)
+            static void globalDrawR3HangulA382_wrapper(int32_t arg_0, int32_t arg_1, char* arg_2, uint32_t arg_3, uint32_t arg_4, float arg_5)
             {
                globalDrawR3HangulA382_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawR3HangulA382_next);
             };
-            void globalDrawR3HangulW383_wrapper(int32_t arg_0, int32_t arg_1, wchar_t* arg_2, uint32_t arg_3, float** arg_4, uint32_t arg_5, float arg_6)
+            static void globalDrawR3HangulW383_wrapper(int32_t arg_0, int32_t arg_1, wchar_t* arg_2, uint32_t arg_3, float** arg_4, uint32_t arg_5, float arg_6)
             {
                globalDrawR3HangulW383_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalDrawR3HangulW383_next);
             };
-            void globalDrawR3HangulW384_wrapper(int32_t arg_0, int32_t arg_1, wchar_t* arg_2, uint32_t arg_3, uint32_t arg_4, float arg_5)
+            static void globalDrawR3HangulW384_wrapper(int32_t arg_0, int32_t arg_1, wchar_t* arg_2, uint32_t arg_3, uint32_t arg_4, float arg_5)
             {
                globalDrawR3HangulW384_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalDrawR3HangulW384_next);
             };
-            void globalDrawRect385_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
+            static void globalDrawRect385_wrapper(float arg_0, float arg_1, float arg_2, float arg_3, float* arg_4, float* arg_5, void* arg_6, uint32_t arg_7)
             {
                globalDrawRect385_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, globalDrawRect385_next);
             };
-            void globalDrawReflectionOneMatGroup386_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
+            static void globalDrawReflectionOneMatGroup386_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
             {
                globalDrawReflectionOneMatGroup386_user(arg_0, arg_1, globalDrawReflectionOneMatGroup386_next);
             };
-            void globalDrawShadow387_wrapper(struct _BSP_MAT_GROUP* arg_0)
+            static void globalDrawShadow387_wrapper(struct _BSP_MAT_GROUP* arg_0)
             {
                globalDrawShadow387_user(arg_0, globalDrawShadow387_next);
             };
-            void globalDrawSpectialParticle388_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
+            static void globalDrawSpectialParticle388_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
             {
                globalDrawSpectialParticle388_user(arg_0, arg_1, arg_2, arg_3, globalDrawSpectialParticle388_next);
             };
-            void globalDrawSpectialParticle1389_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
+            static void globalDrawSpectialParticle1389_wrapper(struct CParticle* arg_0, struct CEntity* arg_1, float** arg_2, uint32_t arg_3)
             {
                globalDrawSpectialParticle1389_user(arg_0, arg_1, arg_2, arg_3, globalDrawSpectialParticle1389_next);
             };
-            void globalDrawStripOneMatGroup390_wrapper(struct _BSP_MAT_GROUP* arg_0)
+            static void globalDrawStripOneMatGroup390_wrapper(struct _BSP_MAT_GROUP* arg_0)
             {
                globalDrawStripOneMatGroup390_user(arg_0, globalDrawStripOneMatGroup390_next);
             };
-            void globalDrawTLVertex391_wrapper(int arg_0, int arg_1, uint32_t arg_2, void** arg_3)
+            static void globalDrawTLVertex391_wrapper(int arg_0, int arg_1, uint32_t arg_2, void** arg_3)
             {
                globalDrawTLVertex391_user(arg_0, arg_1, arg_2, arg_3, globalDrawTLVertex391_next);
             };
-            void globalDrawTLVertex392_wrapper(void* arg_0, int arg_1, uint32_t arg_2, void* arg_3, uint32_t arg_4)
+            static void globalDrawTLVertex392_wrapper(void* arg_0, int arg_1, uint32_t arg_2, void* arg_3, uint32_t arg_4)
             {
                globalDrawTLVertex392_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalDrawTLVertex392_next);
             };
-            void globalDrawTestBox393_wrapper(float arg_0, float arg_1, float arg_2, uint32_t arg_3)
+            static void globalDrawTestBox393_wrapper(float arg_0, float arg_1, float arg_2, uint32_t arg_3)
             {
                globalDrawTestBox393_user(arg_0, arg_1, arg_2, arg_3, globalDrawTestBox393_next);
             };
-            void globalEnCryptString395_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
+            static void globalEnCryptString395_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
             {
                globalEnCryptString395_user(pStr, nSize, byPlus, wCryptKey, globalEnCryptString395_next);
             };
-            void globalEnCrypt_Move397_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
+            static void globalEnCrypt_Move397_wrapper(char* pStr, int nSize, char byPlus, uint16_t wCryptKey)
             {
                globalEnCrypt_Move397_user(pStr, nSize, byPlus, wCryptKey, globalEnCrypt_Move397_next);
             };
-            void globalError398_wrapper(char* arg_0, char* arg_1)
-            {
-               globalError398_user(arg_0, arg_1, globalError398_next);
-            };
-            void globalErrorButRun399_wrapper(char* arg_0, char* arg_1)
-            {
-               globalErrorButRun399_user(arg_0, arg_1, globalErrorButRun399_next);
-            };
-            void globalExtractVertex400_wrapper(uint16_t arg_0, int arg_1, float** arg_2, void* arg_3, float* arg_4, float arg_5)
+            static void globalExtractVertex400_wrapper(uint16_t arg_0, int arg_1, float** arg_2, void* arg_3, float* arg_4, float arg_5)
             {
                globalExtractVertex400_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalExtractVertex400_next);
             };
-            unsigned int globalF402_wrapper(unsigned int x, unsigned int y, unsigned int z)
+            static unsigned int globalF402_wrapper(unsigned int x, unsigned int y, unsigned int z)
             {
                return globalF402_user(x, y, z, globalF402_next);
             };
-            uint32_t globalF2DW403_wrapper(float arg_0)
+            static uint32_t globalF2DW403_wrapper(float arg_0)
             {
                return globalF2DW403_user(arg_0, globalF2DW403_next);
             };
-            void globalFastBBoShasiToFrameBuffer404_wrapper(struct CLevel* arg_0, uint32_t arg_1)
+            static void globalFastBBoShasiToFrameBuffer404_wrapper(struct CLevel* arg_0, uint32_t arg_1)
             {
                globalFastBBoShasiToFrameBuffer404_user(arg_0, arg_1, globalFastBBoShasiToFrameBuffer404_next);
             };
-            int64_t globalFastCmp405_wrapper(uint32_t* arg_0, uint32_t* arg_1, uint32_t arg_2)
-            {
-               return globalFastCmp405_user(arg_0, arg_1, arg_2, globalFastCmp405_next);
-            };
-            void globalFatalError406_wrapper(char* arg_0, char* arg_1)
-            {
-               globalFatalError406_user(arg_0, arg_1, globalFatalError406_next);
-            };
-            int globalFindAllFile408_wrapper(char* pszDirectory, char** ppszFileName, int nMax)
+            static int globalFindAllFile408_wrapper(char* pszDirectory, char** ppszFileName, int nMax)
             {
                return globalFindAllFile408_user(pszDirectory, ppszFileName, nMax, globalFindAllFile408_next);
             };
-            struct CAnimus* globalFindEmptyAnimus410_wrapper(struct CAnimus* pObjArray, int nMax)
+            static struct CAnimus* globalFindEmptyAnimus410_wrapper(struct CAnimus* pObjArray, int nMax)
             {
                return globalFindEmptyAnimus410_user(pObjArray, nMax, globalFindEmptyAnimus410_next);
             };
-            struct CMerchant* globalFindEmptyNPC412_wrapper(struct CMerchant* pList, int nMax)
+            static struct CMerchant* globalFindEmptyNPC412_wrapper(struct CMerchant* pList, int nMax)
             {
                return globalFindEmptyNPC412_user(pList, nMax, globalFindEmptyNPC412_next);
             };
-            struct CParkingUnit* globalFindEmptyParkingUnit414_wrapper(struct CParkingUnit* pItem, int nMax)
+            static struct CParkingUnit* globalFindEmptyParkingUnit414_wrapper(struct CParkingUnit* pItem, int nMax)
             {
                return globalFindEmptyParkingUnit414_user(pItem, nMax, globalFindEmptyParkingUnit414_next);
             };
-            int globalFixTalikItemIndex416_wrapper(char byTalikEffectNum)
+            static int globalFixTalikItemIndex416_wrapper(char byTalikEffectNum)
             {
                return globalFixTalikItemIndex416_user(byTalikEffectNum, globalFixTalikItemIndex416_next);
             };
-            void globalFloatToShort418_wrapper(float* pFloat, int16_t* pShort, int size)
+            static void globalFloatToShort418_wrapper(float* pFloat, int16_t* pShort, int size)
             {
                globalFloatToShort418_user(pFloat, pShort, size, globalFloatToShort418_next);
             };
-            void globalForce32BitRendering419_wrapper()
+            static void globalForce32BitRendering419_wrapper()
             {
                globalForce32BitRendering419_user(globalForce32BitRendering419_next);
             };
-            void globalForceFullScreen420_wrapper()
+            static void globalForceFullScreen420_wrapper()
             {
                globalForceFullScreen420_user(globalForceFullScreen420_next);
             };
-            void globalFramebufferToBMP421_wrapper(char* Filename)
+            static void globalFramebufferToBMP421_wrapper(char* Filename)
             {
                globalFramebufferToBMP421_user(Filename, globalFramebufferToBMP421_next);
             };
-            void globalFramebufferToJPG422_wrapper(char* arg_0)
+            static void globalFramebufferToJPG422_wrapper(char* arg_0)
             {
                globalFramebufferToJPG422_user(arg_0, globalFramebufferToJPG422_next);
             };
-            void globalFreePointer423_wrapper(void* arg_0)
+            static void globalFreePointer423_wrapper(void* arg_0)
             {
                globalFreePointer423_user(arg_0, globalFreePointer423_next);
             };
-            uint32_t globalFtoDW424_wrapper(float arg_0)
+            static uint32_t globalFtoDW424_wrapper(float arg_0)
             {
                return globalFtoDW424_user(arg_0, globalFtoDW424_next);
             };
-            void globalFullScreenEffect425_wrapper()
+            static void globalFullScreenEffect425_wrapper()
             {
                globalFullScreenEffect425_user(globalFullScreenEffect425_next);
             };
-            unsigned int globalG427_wrapper(unsigned int x, unsigned int y, unsigned int z)
+            static unsigned int globalG427_wrapper(unsigned int x, unsigned int y, unsigned int z)
             {
                return globalG427_user(x, y, z, globalG427_next);
             };
-            struct CTextureRender* globalGet1st1024x1024TexRender428_wrapper()
+            static struct CTextureRender* globalGet1st1024x1024TexRender428_wrapper()
             {
                return globalGet1st1024x1024TexRender428_user(globalGet1st1024x1024TexRender428_next);
             };
-            struct CTextureRender* globalGet1st256x256TexRender429_wrapper()
+            static struct CTextureRender* globalGet1st256x256TexRender429_wrapper()
             {
                return globalGet1st256x256TexRender429_user(globalGet1st256x256TexRender429_next);
             };
-            struct CTextureRender* globalGet1st512x512TexRender430_wrapper()
+            static struct CTextureRender* globalGet1st512x512TexRender430_wrapper()
             {
                return globalGet1st512x512TexRender430_user(globalGet1st512x512TexRender430_next);
             };
-            void globalGet2DTo3DTranslation431_wrapper(float** arg_0, float* arg_1, float* arg_2, float arg_3, float arg_4, float arg_5, float arg_6, float arg_7)
+            static void globalGet2DTo3DTranslation431_wrapper(float** arg_0, float* arg_1, float* arg_2, float arg_3, float arg_4, float arg_5, float arg_6, float arg_7)
             {
                globalGet2DTo3DTranslation431_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, globalGet2DTo3DTranslation431_next);
             };
-            struct CTextureRender* globalGet2nd256x256TexRender432_wrapper()
+            static struct CTextureRender* globalGet2nd256x256TexRender432_wrapper()
             {
                return globalGet2nd256x256TexRender432_user(globalGet2nd256x256TexRender432_next);
             };
-            struct CTextureRender* globalGet2nd512x512TexRender433_wrapper()
+            static struct CTextureRender* globalGet2nd512x512TexRender433_wrapper()
             {
                return globalGet2nd512x512TexRender433_user(globalGet2nd512x512TexRender433_next);
             };
-            float globalGet3DSqrt435_wrapper(float* Pos, float* Tar)
+            static float globalGet3DSqrt435_wrapper(float* Pos, float* Tar)
             {
                return globalGet3DSqrt435_user(Pos, Tar, globalGet3DSqrt435_next);
             };
-            void globalGetAddrString437_wrapper(struct sockaddr_ipx* pSAddr, char* dest)
+            static void globalGetAddrString437_wrapper(struct sockaddr_ipx* pSAddr, char* dest)
             {
                globalGetAddrString437_user(pSAddr, dest, globalGetAddrString437_next);
             };
-            uint32_t globalGetAllPlayingWaves438_wrapper()
+            static uint32_t globalGetAllPlayingWaves438_wrapper()
             {
                return globalGetAllPlayingWaves438_user(globalGetAllPlayingWaves438_next);
             };
-            float globalGetAngle440_wrapper(float* mon, float* plr)
+            static float globalGetAngle440_wrapper(float* mon, float* plr)
             {
                return globalGetAngle440_user(mon, plr, globalGetAngle440_next);
             };
-            void globalGetAniMatrix441_wrapper(float** arg_0, struct _ANI_OBJECT* arg_1, float arg_2)
+            static void globalGetAniMatrix441_wrapper(float** arg_0, struct _ANI_OBJECT* arg_1, float arg_2)
             {
                globalGetAniMatrix441_user(arg_0, arg_1, arg_2, globalGetAniMatrix441_next);
             };
-            struct _animus_fld* globalGetAnimusFldFromExp443_wrapper(int nAnimusClass, uint64_t dwExp)
+            static struct _animus_fld* globalGetAnimusFldFromExp443_wrapper(int nAnimusClass, uint64_t dwExp)
             {
                return globalGetAnimusFldFromExp443_user(nAnimusClass, dwExp, globalGetAnimusFldFromExp443_next);
             };
-            struct _animus_fld* globalGetAnimusFldFromLv445_wrapper(int nAnimusClass, unsigned int dwLv)
+            static struct _animus_fld* globalGetAnimusFldFromLv445_wrapper(int nAnimusClass, unsigned int dwLv)
             {
                return globalGetAnimusFldFromLv445_user(nAnimusClass, dwLv, globalGetAnimusFldFromLv445_next);
             };
-            uint32_t globalGetAvailableVidMem446_wrapper()
+            static uint32_t globalGetAvailableVidMem446_wrapper()
             {
                return globalGetAvailableVidMem446_user(globalGetAvailableVidMem446_next);
             };
-            void globalGetBBoxRotate447_wrapper(float** arg_0, float** arg_1, float* arg_2, float* arg_3, float arg_4)
+            static void globalGetBBoxRotate447_wrapper(float** arg_0, float** arg_1, float* arg_2, float* arg_3, float arg_4)
             {
                globalGetBBoxRotate447_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalGetBBoxRotate447_next);
             };
-            void globalGetBezierPoint448_wrapper(float** arg_0, float** arg_1, uint32_t arg_2, float arg_3)
+            static void globalGetBezierPoint448_wrapper(float** arg_0, float** arg_1, uint32_t arg_2, float arg_3)
             {
                globalGetBezierPoint448_user(arg_0, arg_1, arg_2, arg_3, globalGetBezierPoint448_next);
             };
-            void globalGetBillboardMatrix449_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
+            static void globalGetBillboardMatrix449_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
             {
                globalGetBillboardMatrix449_user(arg_0, arg_1, arg_2, globalGetBillboardMatrix449_next);
             };
-            unsigned int globalGetBitAfterDowngrade451_wrapper(unsigned int dwCurBit, char byCurLv)
+            static unsigned int globalGetBitAfterDowngrade451_wrapper(unsigned int dwCurBit, char byCurLv)
             {
                return globalGetBitAfterDowngrade451_user(dwCurBit, byCurLv, globalGetBitAfterDowngrade451_next);
             };
-            unsigned int globalGetBitAfterSetLimSocket453_wrapper(char byLimSocketNum)
+            static unsigned int globalGetBitAfterSetLimSocket453_wrapper(char byLimSocketNum)
             {
                return globalGetBitAfterSetLimSocket453_user(byLimSocketNum, globalGetBitAfterSetLimSocket453_next);
             };
-            unsigned int globalGetBitAfterUpgrade455_wrapper(unsigned int dwCurBit, unsigned int dwTalikCode, char byCurLv)
+            static unsigned int globalGetBitAfterUpgrade455_wrapper(unsigned int dwCurBit, unsigned int dwTalikCode, char byCurLv)
             {
                return globalGetBitAfterUpgrade455_user(dwCurBit, dwTalikCode, byCurLv, globalGetBitAfterUpgrade455_next);
             };
-            int32_t globalGetBoldSubLeng456_wrapper(char* arg_0)
+            static int32_t globalGetBoldSubLeng456_wrapper(char* arg_0)
             {
                return globalGetBoldSubLeng456_user(arg_0, globalGetBoldSubLeng456_next);
             };
-            void globalGetBumpFactor457_wrapper(float* arg_0)
+            static void globalGetBumpFactor457_wrapper(float* arg_0)
             {
                globalGetBumpFactor457_user(arg_0, globalGetBumpFactor457_next);
             };
-            void globalGetCameraPos458_wrapper(float** arg_0)
+            static void globalGetCameraPos458_wrapper(float** arg_0)
             {
                globalGetCameraPos458_user(arg_0, globalGetCameraPos458_next);
             };
-            int64_t globalGetCharFromKey459_wrapper()
+            static int64_t globalGetCharFromKey459_wrapper()
             {
                return globalGetCharFromKey459_user(globalGetCharFromKey459_next);
             };
-            unsigned int globalGetCheckTimeFromCombineExCheckKey461_wrapper(unsigned int dwCombineExCheckKey)
+            static unsigned int globalGetCheckTimeFromCombineExCheckKey461_wrapper(unsigned int dwCombineExCheckKey)
             {
                return globalGetCheckTimeFromCombineExCheckKey461_user(dwCombineExCheckKey, globalGetCheckTimeFromCombineExCheckKey461_next);
             };
-            uint32_t globalGetColorToColorAlpha462_wrapper(uint32_t arg_0, uint32_t arg_1, float arg_2)
+            static uint32_t globalGetColorToColorAlpha462_wrapper(uint32_t arg_0, uint32_t arg_1, float arg_2)
             {
                return globalGetColorToColorAlpha462_user(arg_0, arg_1, arg_2, globalGetColorToColorAlpha462_next);
             };
-            unsigned int globalGetConnectTime_AddBySec464_wrapper(int iSec)
+            static unsigned int globalGetConnectTime_AddBySec464_wrapper(int iSec)
             {
                return globalGetConnectTime_AddBySec464_user(iSec, globalGetConnectTime_AddBySec464_next);
             };
-            int64_t globalGetConsoleStateB465_wrapper(int arg_0)
+            static int64_t globalGetConsoleStateB465_wrapper(int arg_0)
             {
                return globalGetConsoleStateB465_user(arg_0, globalGetConsoleStateB465_next);
             };
-            void globalGetContrast466_wrapper(uint8_t* arg_0)
+            static void globalGetContrast466_wrapper(uint8_t* arg_0)
             {
                globalGetContrast466_user(arg_0, globalGetContrast466_next);
             };
-            int globalGetCurDay468_wrapper()
+            static int globalGetCurDay468_wrapper()
             {
                return globalGetCurDay468_user(globalGetCurDay468_next);
             };
-            int globalGetCurHour470_wrapper()
+            static int globalGetCurHour470_wrapper()
             {
                return globalGetCurHour470_user(globalGetCurHour470_next);
             };
-            int globalGetCurrentDay472_wrapper()
+            static int globalGetCurrentDay472_wrapper()
             {
                return globalGetCurrentDay472_user(globalGetCurrentDay472_next);
             };
-            int globalGetCurrentHour474_wrapper()
+            static int globalGetCurrentHour474_wrapper()
             {
                return globalGetCurrentHour474_user(globalGetCurrentHour474_next);
             };
-            int globalGetCurrentMin476_wrapper()
+            static int globalGetCurrentMin476_wrapper()
             {
                return globalGetCurrentMin476_user(globalGetCurrentMin476_next);
             };
-            int globalGetCurrentMonth478_wrapper()
+            static int globalGetCurrentMonth478_wrapper()
             {
                return globalGetCurrentMonth478_user(globalGetCurrentMonth478_next);
             };
-            int globalGetCurrentSec480_wrapper()
+            static int globalGetCurrentSec480_wrapper()
             {
                return globalGetCurrentSec480_user(globalGetCurrentSec480_next);
             };
-            int globalGetCurrentYear482_wrapper()
+            static int globalGetCurrentYear482_wrapper()
             {
                return globalGetCurrentYear482_user(globalGetCurrentYear482_next);
             };
-            int globalGetCurwDay484_wrapper()
+            static int globalGetCurwDay484_wrapper()
             {
                return globalGetCurwDay484_user(globalGetCurwDay484_next);
             };
-            struct IDirect3DTexture8* globalGetD3DTexture485_wrapper(uint16_t arg_0, uint16_t arg_1, _D3DFORMAT arg_2, uint16_t arg_3, uint16_t arg_4, _D3DFORMAT arg_5, uint8_t* arg_6, uint32_t arg_7)
+            static struct IDirect3DTexture8* globalGetD3DTexture485_wrapper(uint16_t arg_0, uint16_t arg_1, _D3DFORMAT arg_2, uint16_t arg_3, uint16_t arg_4, _D3DFORMAT arg_5, uint8_t* arg_6, uint32_t arg_7)
             {
                return globalGetD3DTexture485_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, globalGetD3DTexture485_next);
             };
-            struct IDirect3DTexture8* globalGetD3DTextureFromBuffer486_wrapper(uint8_t* arg_0, uint32_t arg_1, uint32_t arg_2)
+            static struct IDirect3DTexture8* globalGetD3DTextureFromBuffer486_wrapper(uint8_t* arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                return globalGetD3DTextureFromBuffer486_user(arg_0, arg_1, arg_2, globalGetD3DTextureFromBuffer486_next);
             };
-            struct IDirect3DDevice8* globalGetD3dDevice487_wrapper()
+            static struct IDirect3DDevice8* globalGetD3dDevice487_wrapper()
             {
                return globalGetD3dDevice487_user(globalGetD3dDevice487_next);
             };
-            void* globalGetDDSTexFromBuffer488_wrapper(uint16_t arg_0, uint16_t arg_1, uint32_t arg_2, uint8_t* arg_3)
+            static void* globalGetDDSTexFromBuffer488_wrapper(uint16_t arg_0, uint16_t arg_1, uint32_t arg_2, uint8_t* arg_3)
             {
                return globalGetDDSTexFromBuffer488_user(arg_0, arg_1, arg_2, arg_3, globalGetDDSTexFromBuffer488_next);
             };
-            bool globalGetDateStrAfterDay490_wrapper(char* szDate, int iBuffSize, uint16_t wDayAfter)
+            static bool globalGetDateStrAfterDay490_wrapper(char* szDate, int iBuffSize, uint16_t wDayAfter)
             {
                return globalGetDateStrAfterDay490_user(szDate, iBuffSize, wDayAfter, globalGetDateStrAfterDay490_next);
             };
-            bool globalGetDateTimeStr492_wrapper(char* szTime)
+            static bool globalGetDateTimeStr492_wrapper(char* szTime)
             {
                return globalGetDateTimeStr492_user(szTime, globalGetDateTimeStr492_next);
             };
-            char globalGetDefItemUpgSocketNum494_wrapper(int nTableCode, int nItemIndex)
+            static char globalGetDefItemUpgSocketNum494_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetDefItemUpgSocketNum494_user(nTableCode, nItemIndex, globalGetDefItemUpgSocketNum494_next);
             };
-            float globalGetDensityFromPos495_wrapper(float* arg_0)
+            static float globalGetDensityFromPos495_wrapper(float* arg_0)
             {
                return globalGetDensityFromPos495_user(arg_0, globalGetDensityFromPos495_next);
             };
-            void globalGetDirection497_wrapper(float** cur, float** tar, float** out, float deg)
+            static void globalGetDirection497_wrapper(float** cur, float** tar, float** out, float deg)
             {
                globalGetDirection497_user(cur, tar, out, deg, globalGetDirection497_next);
             };
-            float globalGetDist498_wrapper(float* arg_0, float* arg_1)
+            static float globalGetDist498_wrapper(float* arg_0, float* arg_1)
             {
                return globalGetDist498_user(arg_0, arg_1, globalGetDist498_next);
             };
-            uint32_t globalGetDmallocCnt499_wrapper()
+            static uint32_t globalGetDmallocCnt499_wrapper()
             {
                return globalGetDmallocCnt499_user(globalGetDmallocCnt499_next);
             };
-            int64_t globalGetDmallocSize500_wrapper()
+            static int64_t globalGetDmallocSize500_wrapper()
             {
                return globalGetDmallocSize500_user(globalGetDmallocSize500_next);
             };
-            float globalGetDuration501_wrapper()
+            static float globalGetDuration501_wrapper()
             {
                return globalGetDuration501_user(globalGetDuration501_next);
             };
-            void globalGetDynamicLight502_wrapper(uint32_t arg_0, float* arg_1, float* arg_2, uint32_t* arg_3, void** arg_4, uint32_t* arg_5)
+            static void globalGetDynamicLight502_wrapper(uint32_t arg_0, float* arg_1, float* arg_2, uint32_t* arg_3, void** arg_4, uint32_t* arg_5)
             {
                globalGetDynamicLight502_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalGetDynamicLight502_next);
             };
-            void globalGetDynamicLightBBox503_wrapper(uint32_t arg_0, float** arg_1, float** arg_2)
+            static void globalGetDynamicLightBBox503_wrapper(uint32_t arg_0, float** arg_1, float** arg_2)
             {
                globalGetDynamicLightBBox503_user(arg_0, arg_1, arg_2, globalGetDynamicLightBBox503_next);
             };
-            uint32_t globalGetDynamicLightNum504_wrapper()
+            static uint32_t globalGetDynamicLightNum504_wrapper()
             {
                return globalGetDynamicLightNum504_user(globalGetDynamicLightNum504_next);
             };
-            void globalGetEXT505_wrapper(char* arg_0, char* arg_1)
+            static void globalGetEXT505_wrapper(char* arg_0, char* arg_1)
             {
                globalGetEXT505_user(arg_0, arg_1, globalGetEXT505_next);
             };
-            struct CGuild* globalGetEmptyGuildData507_wrapper(struct CGuild* pData, int nNum)
+            static struct CGuild* globalGetEmptyGuildData507_wrapper(struct CGuild* pData, int nNum)
             {
                return globalGetEmptyGuildData507_user(pData, nNum, globalGetEmptyGuildData507_next);
             };
-            void globalGetEntityAnimationPos508_wrapper(float* arg_0, struct CParticle* arg_1)
+            static void globalGetEntityAnimationPos508_wrapper(float* arg_0, struct CParticle* arg_1)
             {
                globalGetEntityAnimationPos508_user(arg_0, arg_1, globalGetEntityAnimationPos508_next);
             };
-            uint16_t globalGetExcelIndexFromCombineExCheckKey510_wrapper(unsigned int dwCombineExCheckKey)
+            static uint16_t globalGetExcelIndexFromCombineExCheckKey510_wrapper(unsigned int dwCombineExCheckKey)
             {
                return globalGetExcelIndexFromCombineExCheckKey510_user(dwCombineExCheckKey, globalGetExcelIndexFromCombineExCheckKey510_next);
             };
-            float globalGetFPS511_wrapper()
+            static float globalGetFPS511_wrapper()
             {
                return globalGetFPS511_user(globalGetFPS511_next);
             };
-            int64_t globalGetFileSize512_wrapper(char* arg_0)
+            static int64_t globalGetFileSize512_wrapper(char* arg_0)
             {
                return globalGetFileSize512_user(arg_0, globalGetFileSize512_next);
             };
-            uint32_t globalGetFileSizeAndMergeFile513_wrapper(char* arg_0)
+            static uint32_t globalGetFileSizeAndMergeFile513_wrapper(char* arg_0)
             {
                return globalGetFileSizeAndMergeFile513_user(arg_0, globalGetFileSizeAndMergeFile513_next);
             };
-            void globalGetFinalBilloardMatrix514_wrapper(float** arg_0, float** arg_1, struct CParticle* arg_2, uint32_t arg_3)
+            static void globalGetFinalBilloardMatrix514_wrapper(float** arg_0, float** arg_1, struct CParticle* arg_2, uint32_t arg_3)
             {
                globalGetFinalBilloardMatrix514_user(arg_0, arg_1, arg_2, arg_3, globalGetFinalBilloardMatrix514_next);
             };
-            void globalGetFinalPath515_wrapper(char* arg_0, char* arg_1)
+            static void globalGetFinalPath515_wrapper(char* arg_0, char* arg_1)
             {
                globalGetFinalPath515_user(arg_0, arg_1, globalGetFinalPath515_next);
             };
-            float globalGetFloatMod516_wrapper(float arg_0, float arg_1)
+            static float globalGetFloatMod516_wrapper(float arg_0, float arg_1)
             {
                return globalGetFloatMod516_user(arg_0, arg_1, globalGetFloatMod516_next);
             };
-            uint32_t globalGetFogColor517_wrapper()
+            static uint32_t globalGetFogColor517_wrapper()
             {
                return globalGetFogColor517_user(globalGetFogColor517_next);
             };
-            void globalGetFrustumNormalPlane518_wrapper(float** arg_0)
+            static void globalGetFrustumNormalPlane518_wrapper(float** arg_0)
             {
                globalGetFrustumNormalPlane518_user(arg_0, globalGetFrustumNormalPlane518_next);
             };
-            float globalGetGlobalMusicVolume519_wrapper()
+            static float globalGetGlobalMusicVolume519_wrapper()
             {
                return globalGetGlobalMusicVolume519_user(globalGetGlobalMusicVolume519_next);
             };
-            float globalGetGlobalWavVolume520_wrapper()
+            static float globalGetGlobalWavVolume520_wrapper()
             {
                return globalGetGlobalWavVolume520_user(globalGetGlobalWavVolume520_next);
             };
-            float globalGetGravity521_wrapper(float arg_0)
+            static float globalGetGravity521_wrapper(float arg_0)
             {
                return globalGetGravity521_user(arg_0, globalGetGravity521_next);
             };
-            struct CGuild* globalGetGuildDataFromSerial523_wrapper(struct CGuild* pData, int nNum, unsigned int dwSerial)
+            static struct CGuild* globalGetGuildDataFromSerial523_wrapper(struct CGuild* pData, int nNum, unsigned int dwSerial)
             {
                return globalGetGuildDataFromSerial523_user(pData, nNum, dwSerial, globalGetGuildDataFromSerial523_next);
             };
-            struct CGuild* globalGetGuildPtrFromName525_wrapper(struct CGuild* pData, int nNum, char* pwszGuildName)
+            static struct CGuild* globalGetGuildPtrFromName525_wrapper(struct CGuild* pData, int nNum, char* pwszGuildName)
             {
                return globalGetGuildPtrFromName525_user(pData, nNum, pwszGuildName, globalGetGuildPtrFromName525_next);
             };
-            void globalGetHeadMatrix526_wrapper(struct D3DXMATRIX* arg_0, struct R3Camera* arg_1, float arg_2, int32_t arg_3, int32_t arg_4)
+            static void globalGetHeadMatrix526_wrapper(struct D3DXMATRIX* arg_0, struct R3Camera* arg_1, float arg_2, int32_t arg_3, int32_t arg_4)
             {
                globalGetHeadMatrix526_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalGetHeadMatrix526_next);
             };
-            int globalGetIPAddress528_wrapper(char* szAddr)
+            static int globalGetIPAddress528_wrapper(char* szAddr)
             {
                return globalGetIPAddress528_user(szAddr, globalGetIPAddress528_next);
             };
-            int globalGetIPAddress530_wrapper(struct sockaddr_in* pAddr)
+            static int globalGetIPAddress530_wrapper(struct sockaddr_in* pAddr)
             {
                return globalGetIPAddress530_user(pAddr, globalGetIPAddress530_next);
             };
-            unsigned int globalGetIPAddress532_wrapper()
+            static unsigned int globalGetIPAddress532_wrapper()
             {
                return globalGetIPAddress532_user(globalGetIPAddress532_next);
             };
-            void globalGetInverseTransformVertex533_wrapper(float* arg_0, float* arg_1)
+            static void globalGetInverseTransformVertex533_wrapper(float* arg_0, float* arg_1)
             {
                globalGetInverseTransformVertex533_user(arg_0, arg_1, globalGetInverseTransformVertex533_next);
             };
-            int globalGetItemDurPoint535_wrapper(int nTableCode, int nIndex)
+            static int globalGetItemDurPoint535_wrapper(int nTableCode, int nIndex)
             {
                return globalGetItemDurPoint535_user(nTableCode, nIndex, globalGetItemDurPoint535_next);
             };
-            char* globalGetItemEquipCivil537_wrapper(int nTableCode, int nItemIndex)
+            static char* globalGetItemEquipCivil537_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemEquipCivil537_user(nTableCode, nItemIndex, globalGetItemEquipCivil537_next);
             };
-            int globalGetItemEquipGrade539_wrapper(int nTableCode, char* szRecordCode)
+            static int globalGetItemEquipGrade539_wrapper(int nTableCode, char* szRecordCode)
             {
                return globalGetItemEquipGrade539_user(nTableCode, szRecordCode, globalGetItemEquipGrade539_next);
             };
-            int globalGetItemEquipGrade541_wrapper(int nTableCode, int nItemIndex)
+            static int globalGetItemEquipGrade541_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemEquipGrade541_user(nTableCode, nItemIndex, globalGetItemEquipGrade541_next);
             };
-            int globalGetItemEquipLevel543_wrapper(int nTableCode, int nItemIndex)
+            static int globalGetItemEquipLevel543_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemEquipLevel543_user(nTableCode, nItemIndex, globalGetItemEquipLevel543_next);
             };
-            struct _EQUIP_MASTERY_LIM* globalGetItemEquipMastery545_wrapper(int nTableCode, int nItemIndex, int* pnLimNum)
+            static struct _EQUIP_MASTERY_LIM* globalGetItemEquipMastery545_wrapper(int nTableCode, int nItemIndex, int* pnLimNum)
             {
                return globalGetItemEquipMastery545_user(nTableCode, nItemIndex, pnLimNum, globalGetItemEquipMastery545_next);
             };
-            int globalGetItemEquipUpLevel547_wrapper(int nTableCode, int nItemIndex)
+            static int globalGetItemEquipUpLevel547_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemEquipUpLevel547_user(nTableCode, nItemIndex, globalGetItemEquipUpLevel547_next);
             };
-            int globalGetItemGoldPoint549_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
+            static int globalGetItemGoldPoint549_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
             {
                return globalGetItemGoldPoint549_user(nTableCode, nItemIndex, nRace, pbyMoneyKind, globalGetItemGoldPoint549_next);
             };
-            char globalGetItemGrade551_wrapper(int nTableCode, int nItemIndex)
+            static char globalGetItemGrade551_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemGrade551_user(nTableCode, nItemIndex, globalGetItemGrade551_next);
             };
-            int globalGetItemKillPoint553_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
+            static int globalGetItemKillPoint553_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
             {
                return globalGetItemKillPoint553_user(nTableCode, nItemIndex, nRace, pbyMoneyKind, globalGetItemKillPoint553_next);
             };
-            char globalGetItemKindCode555_wrapper(int nTableCode)
+            static char globalGetItemKindCode555_wrapper(int nTableCode)
             {
                return globalGetItemKindCode555_user(nTableCode, globalGetItemKindCode555_next);
             };
-            char* globalGetItemKorName557_wrapper(int nTableCode, int nItemIndex)
+            static char* globalGetItemKorName557_wrapper(int nTableCode, int nItemIndex)
             {
                return globalGetItemKorName557_user(nTableCode, nItemIndex, globalGetItemKorName557_next);
             };
-            int globalGetItemProcPoint559_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
+            static int globalGetItemProcPoint559_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
             {
                return globalGetItemProcPoint559_user(nTableCode, nItemIndex, nRace, pbyMoneyKind, globalGetItemProcPoint559_next);
             };
-            int globalGetItemStdPoint561_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
+            static int globalGetItemStdPoint561_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
             {
                return globalGetItemStdPoint561_user(nTableCode, nItemIndex, nRace, pbyMoneyKind, globalGetItemStdPoint561_next);
             };
-            int globalGetItemStdPrice563_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
+            static int globalGetItemStdPrice563_wrapper(int nTableCode, int nItemIndex, int nRace, char* pbyMoneyKind)
             {
                return globalGetItemStdPrice563_user(nTableCode, nItemIndex, nRace, pbyMoneyKind, globalGetItemStdPrice563_next);
             };
-            int globalGetItemStoragePrice565_wrapper(int nTableCode, int nItemIndex, int nRace)
+            static int globalGetItemStoragePrice565_wrapper(int nTableCode, int nItemIndex, int nRace)
             {
                return globalGetItemStoragePrice565_user(nTableCode, nItemIndex, nRace, globalGetItemStoragePrice565_next);
             };
-            int globalGetItemTableCode567_wrapper(char* psItemCode)
+            static int globalGetItemTableCode567_wrapper(char* psItemCode)
             {
                return globalGetItemTableCode567_user(psItemCode, globalGetItemTableCode567_next);
             };
-            char globalGetItemUpgLimSocket569_wrapper(unsigned int dwLvBit)
+            static char globalGetItemUpgLimSocket569_wrapper(unsigned int dwLvBit)
             {
                return globalGetItemUpgLimSocket569_user(dwLvBit, globalGetItemUpgLimSocket569_next);
             };
-            char globalGetItemUpgedLv571_wrapper(unsigned int dwLvBit)
+            static char globalGetItemUpgedLv571_wrapper(unsigned int dwLvBit)
             {
                return globalGetItemUpgedLv571_user(dwLvBit, globalGetItemUpgedLv571_next);
             };
-            int64_t globalGetJPGDimensions572_wrapper(char* arg_0, unsigned int* arg_1, unsigned int* arg_2)
+            static int64_t globalGetJPGDimensions572_wrapper(char* arg_0, unsigned int* arg_1, unsigned int* arg_2)
             {
                return globalGetJPGDimensions572_user(arg_0, arg_1, arg_2, globalGetJPGDimensions572_next);
             };
-            unsigned int globalGetKorLocalTime574_wrapper()
+            static unsigned int globalGetKorLocalTime574_wrapper()
             {
                return globalGetKorLocalTime574_user(globalGetKorLocalTime574_next);
             };
-            bool globalGetLastWriteFileTime576_wrapper(char* szFileName, struct _FILETIME* ftWrite)
+            static bool globalGetLastWriteFileTime576_wrapper(char* szFileName, struct _FILETIME* ftWrite)
             {
                return globalGetLastWriteFileTime576_user(szFileName, ftWrite, globalGetLastWriteFileTime576_next);
             };
-            uint32_t globalGetLightMapColor577_wrapper(float* arg_0, int arg_1)
+            static uint32_t globalGetLightMapColor577_wrapper(float* arg_0, int arg_1)
             {
                return globalGetLightMapColor577_user(arg_0, arg_1, globalGetLightMapColor577_next);
             };
-            void* globalGetLightMapSurface578_wrapper(int arg_0)
+            static void* globalGetLightMapSurface578_wrapper(int arg_0)
             {
                return globalGetLightMapSurface578_user(arg_0, globalGetLightMapSurface578_next);
             };
-            uint32_t globalGetLightMapTexSize579_wrapper()
+            static uint32_t globalGetLightMapTexSize579_wrapper()
             {
                return globalGetLightMapTexSize579_user(globalGetLightMapTexSize579_next);
             };
-            unsigned int globalGetLocalDate581_wrapper()
+            static unsigned int globalGetLocalDate581_wrapper()
             {
                return globalGetLocalDate581_user(globalGetLocalDate581_next);
             };
-            unsigned int globalGetLoopTime583_wrapper()
+            static unsigned int globalGetLoopTime583_wrapper()
             {
                return globalGetLoopTime583_user(globalGetLoopTime583_next);
             };
-            void globalGetMacAddrString585_wrapper(char* szMac, uint64_t tBuffSize)
+            static void globalGetMacAddrString585_wrapper(char* szMac, uint64_t tBuffSize)
             {
                globalGetMacAddrString585_user(szMac, tBuffSize, globalGetMacAddrString585_next);
             };
-            struct _R3MATERIAL* globalGetMainMaterial586_wrapper()
+            static struct _R3MATERIAL* globalGetMainMaterial586_wrapper()
             {
                return globalGetMainMaterial586_user(globalGetMainMaterial586_next);
             };
-            uint32_t globalGetMainMaterialNum587_wrapper()
+            static uint32_t globalGetMainMaterialNum587_wrapper()
             {
                return globalGetMainMaterialNum587_user(globalGetMainMaterialNum587_next);
             };
-            void globalGetMatLightFromColor588_wrapper(struct _D3DLIGHT8* DstLight, struct _D3DMATERIAL8* Dst, uint32_t arg_0, float arg_1)
+            static void globalGetMatLightFromColor588_wrapper(struct _D3DLIGHT8* DstLight, struct _D3DMATERIAL8* Dst, uint32_t arg_0, float arg_1)
             {
                globalGetMatLightFromColor588_user(DstLight, Dst, arg_0, arg_1, globalGetMatLightFromColor588_next);
             };
-            int64_t globalGetMaterialNameNum589_wrapper(struct _R3MATERIAL* arg_0)
+            static int64_t globalGetMaterialNameNum589_wrapper(struct _R3MATERIAL* arg_0)
             {
                return globalGetMaterialNameNum589_user(arg_0, globalGetMaterialNameNum589_next);
             };
-            void globalGetMatrixFrom3DSMAXMatrix590_wrapper(float** arg_0)
+            static void globalGetMatrixFrom3DSMAXMatrix590_wrapper(float** arg_0)
             {
                globalGetMatrixFrom3DSMAXMatrix590_user(arg_0, globalGetMatrixFrom3DSMAXMatrix590_next);
             };
-            void globalGetMatrixFromAtoB591_wrapper(float** arg_0, float* arg_1, float* arg_2)
+            static void globalGetMatrixFromAtoB591_wrapper(float** arg_0, float* arg_1, float* arg_2)
             {
                globalGetMatrixFromAtoB591_user(arg_0, arg_1, arg_2, globalGetMatrixFromAtoB591_next);
             };
-            void globalGetMatrixFromAtoB2592_wrapper(float** arg_0, float* arg_1, float* arg_2)
+            static void globalGetMatrixFromAtoB2592_wrapper(float** arg_0, float* arg_1, float* arg_2)
             {
                globalGetMatrixFromAtoB2592_user(arg_0, arg_1, arg_2, globalGetMatrixFromAtoB2592_next);
             };
-            void globalGetMatrixFromVector593_wrapper(float** arg_0, float* arg_1, float* arg_2)
+            static void globalGetMatrixFromVector593_wrapper(float** arg_0, float* arg_1, float* arg_2)
             {
                globalGetMatrixFromVector593_user(arg_0, arg_1, arg_2, globalGetMatrixFromVector593_next);
             };
-            unsigned int globalGetMaxParamFromExp595_wrapper(int nAnimusClass, uint64_t dwExp)
+            static unsigned int globalGetMaxParamFromExp595_wrapper(int nAnimusClass, uint64_t dwExp)
             {
                return globalGetMaxParamFromExp595_user(nAnimusClass, dwExp, globalGetMaxParamFromExp595_next);
             };
-            int globalGetMaxResKind597_wrapper()
+            static int globalGetMaxResKind597_wrapper()
             {
                return globalGetMaxResKind597_user(globalGetMaxResKind597_next);
             };
-            struct CMergeFileManager* globalGetMergeFileManager598_wrapper()
+            static struct CMergeFileManager* globalGetMergeFileManager598_wrapper()
             {
                return globalGetMergeFileManager598_user(globalGetMergeFileManager598_next);
             };
-            int64_t globalGetMipMapSkipSize599_wrapper(struct _DDSURFACEDESC2* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
+            static int64_t globalGetMipMapSkipSize599_wrapper(struct _DDSURFACEDESC2* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
             {
                return globalGetMipMapSkipSize599_user(arg_0, arg_1, arg_2, arg_3, globalGetMipMapSkipSize599_next);
             };
-            float globalGetMotionBlurLength600_wrapper()
+            static float globalGetMotionBlurLength600_wrapper()
             {
                return globalGetMotionBlurLength600_user(globalGetMotionBlurLength600_next);
             };
-            float globalGetMultiLayerTime601_wrapper()
+            static float globalGetMultiLayerTime601_wrapper()
             {
                return globalGetMultiLayerTime601_user(globalGetMultiLayerTime601_next);
             };
-            int globalGetNextDay603_wrapper()
+            static int globalGetNextDay603_wrapper()
             {
                return globalGetNextDay603_user(globalGetNextDay603_next);
             };
-            void globalGetNormal604_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
+            static void globalGetNormal604_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
             {
                globalGetNormal604_user(arg_0, arg_1, arg_2, arg_3, globalGetNormal604_next);
             };
-            void globalGetNowDateTime606_wrapper(char* szDateTime)
+            static void globalGetNowDateTime606_wrapper(char* szDateTime)
             {
                globalGetNowDateTime606_user(szDateTime, globalGetNowDateTime606_next);
             };
-            float globalGetNowFrame607_wrapper()
+            static float globalGetNowFrame607_wrapper()
             {
                return globalGetNowFrame607_user(globalGetNowFrame607_next);
             };
-            int64_t globalGetNowFreeJmallocSize608_wrapper()
+            static int64_t globalGetNowFreeJmallocSize608_wrapper()
             {
                return globalGetNowFreeJmallocSize608_user(globalGetNowFreeJmallocSize608_next);
             };
-            HWND globalGetNowHWnd609_wrapper()
+            static HWND globalGetNowHWnd609_wrapper()
             {
                return globalGetNowHWnd609_user(globalGetNowHWnd609_next);
             };
-            int64_t globalGetNowJmallocSize610_wrapper()
+            static int64_t globalGetNowJmallocSize610_wrapper()
             {
                return globalGetNowJmallocSize610_user(globalGetNowJmallocSize610_next);
             };
-            int64_t globalGetNowPath611_wrapper(char* arg_0)
+            static int64_t globalGetNowPath611_wrapper(char* arg_0)
             {
                return globalGetNowPath611_user(arg_0, globalGetNowPath611_next);
             };
-            int64_t globalGetNowR3D3DTexCnt612_wrapper()
+            static int64_t globalGetNowR3D3DTexCnt612_wrapper()
             {
                return globalGetNowR3D3DTexCnt612_user(globalGetNowR3D3DTexCnt612_next);
             };
-            int64_t globalGetNowR3TexCnt613_wrapper()
+            static int64_t globalGetNowR3TexCnt613_wrapper()
             {
                return globalGetNowR3TexCnt613_user(globalGetNowR3TexCnt613_next);
             };
-            uint32_t globalGetNowTexMemSize614_wrapper()
+            static uint32_t globalGetNowTexMemSize614_wrapper()
             {
                return globalGetNowTexMemSize614_user(globalGetNowTexMemSize614_next);
             };
-            int globalGetNumAllFile616_wrapper(char* pszDirectory)
+            static int globalGetNumAllFile616_wrapper(char* pszDirectory)
             {
                return globalGetNumAllFile616_user(pszDirectory, globalGetNumAllFile616_next);
             };
-            void globalGetObjectMatrix617_wrapper(float** arg_0, uint16_t arg_1, struct _ANI_OBJECT* arg_2, float arg_3)
+            static void globalGetObjectMatrix617_wrapper(float** arg_0, uint16_t arg_1, struct _ANI_OBJECT* arg_2, float arg_3)
             {
                globalGetObjectMatrix617_user(arg_0, arg_1, arg_2, arg_3, globalGetObjectMatrix617_next);
             };
-            struct IDirect3DSurface8* globalGetOldRenderTarget618_wrapper()
+            static struct IDirect3DSurface8* globalGetOldRenderTarget618_wrapper()
             {
                return globalGetOldRenderTarget618_user(globalGetOldRenderTarget618_next);
             };
-            struct IDirect3DSurface8* globalGetOldStencilZ619_wrapper()
+            static struct IDirect3DSurface8* globalGetOldStencilZ619_wrapper()
             {
                return globalGetOldStencilZ619_user(globalGetOldStencilZ619_next);
             };
-            uint32_t globalGetOneNameFromPath620_wrapper(char* arg_0, char* arg_1, uint32_t* arg_2)
+            static uint32_t globalGetOneNameFromPath620_wrapper(char* arg_0, char* arg_1, uint32_t* arg_2)
             {
                return globalGetOneNameFromPath620_user(arg_0, arg_1, arg_2, globalGetOneNameFromPath620_next);
             };
-            uint32_t globalGetOutLineColor621_wrapper()
+            static uint32_t globalGetOutLineColor621_wrapper()
             {
                return globalGetOutLineColor621_user(globalGetOutLineColor621_next);
             };
-            uint32_t globalGetOutLineColorFont16622_wrapper()
+            static uint32_t globalGetOutLineColorFont16622_wrapper()
             {
                return globalGetOutLineColorFont16622_user(globalGetOutLineColorFont16622_next);
             };
-            uint32_t globalGetOutLineColorFont24623_wrapper()
+            static uint32_t globalGetOutLineColorFont24623_wrapper()
             {
                return globalGetOutLineColorFont24623_user(globalGetOutLineColorFont24623_next);
             };
-            uint32_t globalGetPlaneCrossPoint624_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
+            static uint32_t globalGetPlaneCrossPoint624_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4)
             {
                return globalGetPlaneCrossPoint624_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalGetPlaneCrossPoint624_next);
             };
-            int64_t globalGetPlaneCrossPoint625_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4, float arg_5)
+            static int64_t globalGetPlaneCrossPoint625_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4, float arg_5)
             {
                return globalGetPlaneCrossPoint625_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalGetPlaneCrossPoint625_next);
             };
-            void globalGetPointCamera626_wrapper(float** arg_0)
+            static void globalGetPointCamera626_wrapper(float** arg_0)
             {
                globalGetPointCamera626_user(arg_0, globalGetPointCamera626_next);
             };
-            void globalGetPosByDistFromATOB627_wrapper(float** arg_0, float* arg_1, float* arg_2, float arg_3)
+            static void globalGetPosByDistFromATOB627_wrapper(float** arg_0, float* arg_1, float* arg_2, float arg_3)
             {
                globalGetPosByDistFromATOB627_user(arg_0, arg_1, arg_2, arg_3, globalGetPosByDistFromATOB627_next);
             };
-            _PRE_PARTICLE_LIST* globalGetPreParticleList628_wrapper(int arg_0)
+            static _PRE_PARTICLE_LIST* globalGetPreParticleList628_wrapper(int arg_0)
             {
                return globalGetPreParticleList628_user(arg_0, globalGetPreParticleList628_next);
             };
-            int64_t globalGetPreParticleListNum629_wrapper()
+            static int64_t globalGetPreParticleListNum629_wrapper()
             {
                return globalGetPreParticleListNum629_user(globalGetPreParticleListNum629_next);
             };
-            int globalGetPrevDay631_wrapper()
+            static int globalGetPrevDay631_wrapper()
             {
                return globalGetPrevDay631_user(globalGetPrevDay631_next);
             };
-            void globalGetProjectMatrix632_wrapper(struct D3DXMATRIX* arg_0)
+            static void globalGetProjectMatrix632_wrapper(struct D3DXMATRIX* arg_0)
             {
                globalGetProjectMatrix632_user(arg_0, globalGetProjectMatrix632_next);
             };
-            struct CPlayer* globalGetPtrPlayerFromAccount634_wrapper(struct CPlayer* pData, int nNum, char* szAccount)
+            static struct CPlayer* globalGetPtrPlayerFromAccount634_wrapper(struct CPlayer* pData, int nNum, char* szAccount)
             {
                return globalGetPtrPlayerFromAccount634_user(pData, nNum, szAccount, globalGetPtrPlayerFromAccount634_next);
             };
-            struct CPlayer* globalGetPtrPlayerFromAccountSerial636_wrapper(struct CPlayer* pData, int nNum, unsigned int dwSerial)
+            static struct CPlayer* globalGetPtrPlayerFromAccountSerial636_wrapper(struct CPlayer* pData, int nNum, unsigned int dwSerial)
             {
                return globalGetPtrPlayerFromAccountSerial636_user(pData, nNum, dwSerial, globalGetPtrPlayerFromAccountSerial636_next);
             };
-            struct CPlayer* globalGetPtrPlayerFromCharSerial638_wrapper(int nNum, unsigned int dwSerial)
+            static struct CPlayer* globalGetPtrPlayerFromCharSerial638_wrapper(int nNum, unsigned int dwSerial)
             {
                return globalGetPtrPlayerFromCharSerial638_user(nNum, dwSerial, globalGetPtrPlayerFromCharSerial638_next);
             };
-            struct CPlayer* globalGetPtrPlayerFromName640_wrapper(struct CPlayer* pData, int nNum, char* pwszName)
+            static struct CPlayer* globalGetPtrPlayerFromName640_wrapper(struct CPlayer* pData, int nNum, char* pwszName)
             {
                return globalGetPtrPlayerFromName640_user(pData, nNum, pwszName, globalGetPtrPlayerFromName640_next);
             };
-            struct CPlayer* globalGetPtrPlayerFromSerial642_wrapper(struct CPlayer* pData, int nNum, unsigned int dwSerial)
+            static struct CPlayer* globalGetPtrPlayerFromSerial642_wrapper(struct CPlayer* pData, int nNum, unsigned int dwSerial)
             {
                return globalGetPtrPlayerFromSerial642_user(pData, nNum, dwSerial, globalGetPtrPlayerFromSerial642_next);
             };
-            int globalGetQLen644_wrapper(float* fPos, float* fTar)
+            static int globalGetQLen644_wrapper(float* fPos, float* fTar)
             {
                return globalGetQLen644_user(fPos, fTar, globalGetQLen644_next);
             };
-            void globalGetQuaternionFromVector645_wrapper(float* arg_0, float* arg_1)
+            static void globalGetQuaternionFromVector645_wrapper(float* arg_0, float* arg_1)
             {
                globalGetQuaternionFromVector645_user(arg_0, arg_1, globalGetQuaternionFromVector645_next);
             };
-            void globalGetQuaternionFromVector646_wrapper(float* arg_0, float* arg_1, float* arg_2)
+            static void globalGetQuaternionFromVector646_wrapper(float* arg_0, float* arg_1, float* arg_2)
             {
                globalGetQuaternionFromVector646_user(arg_0, arg_1, arg_2, globalGetQuaternionFromVector646_next);
             };
-            uint32_t globalGetR3TexManageFlag647_wrapper()
+            static uint32_t globalGetR3TexManageFlag647_wrapper()
             {
                return globalGetR3TexManageFlag647_user(globalGetR3TexManageFlag647_next);
             };
-            int64_t globalGetRandOrNum648_wrapper(FILE* File, float* arg_0, float* arg_1)
+            static int64_t globalGetRandOrNum648_wrapper(FILE* File, float* arg_0, float* arg_1)
             {
                return globalGetRandOrNum648_user(File, arg_0, arg_1, globalGetRandOrNum648_next);
             };
-            bool globalGetReactArea650_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, struct _react_area* poutReactArea, unsigned int dwDesiredApply, char* pszoutErrMsg, char* pszoutEventCode)
+            static bool globalGetReactArea650_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, struct _react_area* poutReactArea, unsigned int dwDesiredApply, char* pszoutErrMsg, char* pszoutEventCode)
             {
                return globalGetReactArea650_user(fstr, pSetup, poutReactArea, dwDesiredApply, pszoutErrMsg, pszoutEventCode, globalGetReactArea650_next);
             };
-            bool globalGetReactObject652_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, struct _react_obj* poutReactObject, bool bReadCnt, unsigned int dwDesiredApply, char* pszoutErrMsg, char* pszoutEventCode)
+            static bool globalGetReactObject652_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, struct _react_obj* poutReactObject, bool bReadCnt, unsigned int dwDesiredApply, char* pszoutErrMsg, char* pszoutEventCode)
             {
                return globalGetReactObject652_user(fstr, pSetup, poutReactObject, bReadCnt, dwDesiredApply, pszoutErrMsg, pszoutEventCode, globalGetReactObject652_next);
             };
-            int64_t globalGetReflectionState653_wrapper()
+            static int64_t globalGetReflectionState653_wrapper()
             {
                return globalGetReflectionState653_user(globalGetReflectionState653_next);
             };
-            int globalGetRegionIndex655_wrapper(int nMapIndex, unsigned int x, unsigned int y, unsigned int dwMaxX, unsigned int dwMaxY)
+            static int globalGetRegionIndex655_wrapper(int nMapIndex, unsigned int x, unsigned int y, unsigned int dwMaxX, unsigned int dwMaxY)
             {
                return globalGetRegionIndex655_user(nMapIndex, x, y, dwMaxX, dwMaxY, globalGetRegionIndex655_next);
             };
-            char* globalGetRegionName657_wrapper(int nMapIndex, unsigned int x, unsigned int y, unsigned int dwMaxX, unsigned int dwMaxY)
+            static char* globalGetRegionName657_wrapper(int nMapIndex, unsigned int x, unsigned int y, unsigned int dwMaxX, unsigned int dwMaxY)
             {
                return globalGetRegionName657_user(nMapIndex, x, y, dwMaxX, dwMaxY, globalGetRegionName657_next);
             };
-            int globalGetRewardItemNumChangeClass659_wrapper(struct _class_fld* pClassFld)
+            static int globalGetRewardItemNumChangeClass659_wrapper(struct _class_fld* pClassFld)
             {
                return globalGetRewardItemNumChangeClass659_user(pClassFld, globalGetRewardItemNumChangeClass659_next);
             };
-            int globalGetSFLevel661_wrapper(int nLv, unsigned int dwHitCount)
+            static int globalGetSFLevel661_wrapper(int nLv, unsigned int dwHitCount)
             {
                return globalGetSFLevel661_user(nLv, dwHitCount, globalGetSFLevel661_next);
             };
-            struct CTextureRender* globalGetShadowRenderTexture662_wrapper()
+            static struct CTextureRender* globalGetShadowRenderTexture662_wrapper()
             {
                return globalGetShadowRenderTexture662_user(globalGetShadowRenderTexture662_next);
             };
-            struct IDirect3DTexture8* globalGetShadowTexture663_wrapper()
+            static struct IDirect3DTexture8* globalGetShadowTexture663_wrapper()
             {
                return globalGetShadowTexture663_user(globalGetShadowTexture663_next);
             };
-            bool globalGetSocketName665_wrapper(uint64_t socket, char* pOut)
+            static bool globalGetSocketName665_wrapper(uint64_t socket, char* pOut)
             {
                return globalGetSocketName665_user(socket, pOut, globalGetSocketName665_next);
             };
-            float globalGetSqrt667_wrapper(float* fPos, float* fTar)
+            static float globalGetSqrt667_wrapper(float* fPos, float* fTar)
             {
                return globalGetSqrt667_user(fPos, fTar, globalGetSqrt667_next);
             };
-            int globalGetStaffMastery669_wrapper(unsigned int* pdwForceLvCum)
+            static int globalGetStaffMastery669_wrapper(unsigned int* pdwForceLvCum)
             {
                return globalGetStaffMastery669_user(pdwForceLvCum, globalGetStaffMastery669_next);
             };
-            uint32_t globalGetStateFullScreenEffect670_wrapper()
+            static uint32_t globalGetStateFullScreenEffect670_wrapper()
             {
                return globalGetStateFullScreenEffect670_user(globalGetStateFullScreenEffect670_next);
             };
-            void globalGetSubDayStr672_wrapper(int nSubDay, char* szOutDay)
+            static void globalGetSubDayStr672_wrapper(int nSubDay, char* szOutDay)
             {
                globalGetSubDayStr672_user(nSubDay, szOutDay, globalGetSubDayStr672_next);
             };
-            float globalGetSwimU673_wrapper(float arg_0)
+            static float globalGetSwimU673_wrapper(float arg_0)
             {
                return globalGetSwimU673_user(arg_0, globalGetSwimU673_next);
             };
-            float globalGetSwimV674_wrapper(float arg_0)
+            static float globalGetSwimV674_wrapper(float arg_0)
             {
                return globalGetSwimV674_user(arg_0, globalGetSwimV674_next);
             };
-            char globalGetTalikFromSocket676_wrapper(unsigned int dwLvBit, char bySocketIndex)
+            static char globalGetTalikFromSocket676_wrapper(unsigned int dwLvBit, char bySocketIndex)
             {
                return globalGetTalikFromSocket676_user(dwLvBit, bySocketIndex, globalGetTalikFromSocket676_next);
             };
-            void* globalGetTempBuffer677_wrapper()
+            static void* globalGetTempBuffer677_wrapper()
             {
                return globalGetTempBuffer677_user(globalGetTempBuffer677_next);
             };
-            uint32_t globalGetTempBufferSize678_wrapper()
+            static uint32_t globalGetTempBufferSize678_wrapper()
             {
                return globalGetTempBufferSize678_user(globalGetTempBufferSize678_next);
             };
-            int globalGetTextureMatrix679_wrapper(struct _R3MATERIAL* arg_0, int arg_1, struct D3DXMATRIX* arg_2, float arg_3)
+            static int globalGetTextureMatrix679_wrapper(struct _R3MATERIAL* arg_0, int arg_1, struct D3DXMATRIX* arg_2, float arg_3)
             {
                return globalGetTextureMatrix679_user(arg_0, arg_1, arg_2, arg_3, globalGetTextureMatrix679_next);
             };
-            int64_t globalGetTileAniTextureAddId680_wrapper(struct _R3MATERIAL* arg_0, int arg_1, float arg_2)
+            static int64_t globalGetTileAniTextureAddId680_wrapper(struct _R3MATERIAL* arg_0, int arg_1, float arg_2)
             {
                return globalGetTileAniTextureAddId680_user(arg_0, arg_1, arg_2, globalGetTileAniTextureAddId680_next);
             };
-            void globalGetTodayStr682_wrapper(char* szToday)
+            static void globalGetTodayStr682_wrapper(char* szToday)
             {
                globalGetTodayStr682_user(szToday, globalGetTodayStr682_next);
             };
-            uint32_t globalGetTokenFloat683_wrapper(char* arg_0, float* arg_1)
+            static uint32_t globalGetTokenFloat683_wrapper(char* arg_0, float* arg_1)
             {
                return globalGetTokenFloat683_user(arg_0, arg_1, globalGetTokenFloat683_next);
             };
-            uint32_t globalGetTotalFrame684_wrapper()
+            static uint32_t globalGetTotalFrame684_wrapper()
             {
                return globalGetTotalFrame684_user(globalGetTotalFrame684_next);
             };
-            int64_t globalGetTotalFreeJmallocSize685_wrapper()
+            static int64_t globalGetTotalFreeJmallocSize685_wrapper()
             {
                return globalGetTotalFreeJmallocSize685_user(globalGetTotalFreeJmallocSize685_next);
             };
-            uint32_t globalGetTotalVertexBufferCnt686_wrapper()
+            static uint32_t globalGetTotalVertexBufferCnt686_wrapper()
             {
                return globalGetTotalVertexBufferCnt686_user(globalGetTotalVertexBufferCnt686_next);
             };
-            uint32_t globalGetTotalVertexBufferSize687_wrapper()
+            static uint32_t globalGetTotalVertexBufferSize687_wrapper()
             {
                return globalGetTotalVertexBufferSize687_user(globalGetTotalVertexBufferSize687_next);
             };
-            int64_t globalGetTransformVertex688_wrapper(float** arg_0, float* arg_1)
+            static int64_t globalGetTransformVertex688_wrapper(float** arg_0, float* arg_1)
             {
                return globalGetTransformVertex688_user(arg_0, arg_1, globalGetTransformVertex688_next);
             };
-            int globalGetUsePcCashType690_wrapper(char byTblCode, int nIndex)
+            static int globalGetUsePcCashType690_wrapper(char byTblCode, int nIndex)
             {
                return globalGetUsePcCashType690_user(byTblCode, nIndex, globalGetUsePcCashType690_next);
             };
-            void globalGetVertexFromBVertex691_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
+            static void globalGetVertexFromBVertex691_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
             {
                globalGetVertexFromBVertex691_user(arg_0, arg_1, arg_2, globalGetVertexFromBVertex691_next);
             };
-            void globalGetVertexFromFVertex692_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
+            static void globalGetVertexFromFVertex692_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
             {
                globalGetVertexFromFVertex692_user(arg_0, arg_1, arg_2, globalGetVertexFromFVertex692_next);
             };
-            void globalGetVertexFromWVertex693_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
+            static void globalGetVertexFromWVertex693_wrapper(float* arg_0, void* arg_1, struct _BSP_READ_M_GROUP* arg_2)
             {
                globalGetVertexFromWVertex693_user(arg_0, arg_1, arg_2, globalGetVertexFromWVertex693_next);
             };
-            void globalGetViewMatrix694_wrapper(struct D3DXMATRIX* arg_0)
+            static void globalGetViewMatrix694_wrapper(struct D3DXMATRIX* arg_0)
             {
                globalGetViewMatrix694_user(arg_0, globalGetViewMatrix694_next);
             };
-            void globalGetViewVector695_wrapper(float* arg_0)
+            static void globalGetViewVector695_wrapper(float* arg_0)
             {
                globalGetViewVector695_user(arg_0, globalGetViewVector695_next);
             };
-            char globalGetWeaponClass697_wrapper(int nItemIndex)
+            static char globalGetWeaponClass697_wrapper(int nItemIndex)
             {
                return globalGetWeaponClass697_user(nItemIndex, globalGetWeaponClass697_next);
             };
-            void globalGetWebBrowserRect698_wrapper(struct tagRECT* arg_0)
+            static void globalGetWebBrowserRect698_wrapper(struct tagRECT* arg_0)
             {
                globalGetWebBrowserRect698_user(arg_0, globalGetWebBrowserRect698_next);
             };
-            float globalGetXAngle699_wrapper(float* arg_0, float* arg_1)
+            static float globalGetXAngle699_wrapper(float* arg_0, float* arg_1)
             {
                return globalGetXAngle699_user(arg_0, arg_1, globalGetXAngle699_next);
             };
-            float globalGetYAngle700_wrapper(float* arg_0, float* arg_1)
+            static float globalGetYAngle700_wrapper(float* arg_0, float* arg_1)
             {
                return globalGetYAngle700_user(arg_0, arg_1, globalGetYAngle700_next);
             };
-            int globalGetYAngle701_wrapper(float* arg_0, float* arg_1, float* arg_2)
+            static int globalGetYAngle701_wrapper(float* arg_0, float* arg_1, float* arg_2)
             {
                return globalGetYAngle701_user(arg_0, arg_1, arg_2, globalGetYAngle701_next);
             };
-            float globalGetYAngle703_wrapper(float* Pos, float* Tar)
+            static float globalGetYAngle703_wrapper(float* Pos, float* Tar)
             {
                return globalGetYAngle703_user(Pos, Tar, globalGetYAngle703_next);
             };
-            void globalGetYBillboardMatrix704_wrapper(struct D3DXMATRIX* arg_0, int32_t arg_1, struct D3DXVECTOR3* arg_2)
+            static void globalGetYBillboardMatrix704_wrapper(struct D3DXMATRIX* arg_0, int32_t arg_1, struct D3DXVECTOR3* arg_2)
             {
                globalGetYBillboardMatrix704_user(arg_0, arg_1, arg_2, globalGetYBillboardMatrix704_next);
             };
-            void globalGetYBillboardMatrix705_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
+            static void globalGetYBillboardMatrix705_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
             {
                globalGetYBillboardMatrix705_user(arg_0, arg_1, arg_2, globalGetYBillboardMatrix705_next);
             };
-            void globalGetZBillboardMatrix706_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
+            static void globalGetZBillboardMatrix706_wrapper(struct D3DXMATRIX* arg_0, float* arg_1, float* arg_2)
             {
                globalGetZBillboardMatrix706_user(arg_0, arg_1, arg_2, globalGetZBillboardMatrix706_next);
             };
-            void globalGet_CashEvent_Name708_wrapper(char byEventType, char* szEventName)
+            static void globalGet_CashEvent_Name708_wrapper(char byEventType, char* szEventName)
             {
                globalGet_CashEvent_Name708_user(byEventType, szEventName, globalGet_CashEvent_Name708_next);
             };
-            unsigned int globalH710_wrapper(unsigned int x, unsigned int y, unsigned int z)
+            static unsigned int globalH710_wrapper(unsigned int x, unsigned int y, unsigned int z)
             {
                return globalH710_user(x, y, z, globalH710_next);
             };
-            void globalHtoA712_wrapper(char* src, char* dest, int srclen)
+            static void globalHtoA712_wrapper(char* src, char* dest, int srclen)
             {
                globalHtoA712_user(src, dest, srclen, globalHtoA712_next);
             };
-            char globalHtoB714_wrapper(char ch)
+            static char globalHtoB714_wrapper(char ch)
             {
                return globalHtoB714_user(ch, globalHtoB714_next);
             };
-            unsigned int globalI716_wrapper(unsigned int x, unsigned int y, unsigned int z)
+            static unsigned int globalI716_wrapper(unsigned int x, unsigned int y, unsigned int z)
             {
                return globalI716_user(x, y, z, globalI716_next);
             };
-            uint32_t globalIM_LoadWave717_wrapper(char* arg_0, uint32_t arg_1)
+            static uint32_t globalIM_LoadWave717_wrapper(char* arg_0, uint32_t arg_1)
             {
                return globalIM_LoadWave717_user(arg_0, arg_1, globalIM_LoadWave717_next);
             };
-            void globalIM_PlayWave718_wrapper(uint32_t arg_0, float arg_1, float arg_2)
+            static void globalIM_PlayWave718_wrapper(uint32_t arg_0, float arg_1, float arg_2)
             {
                globalIM_PlayWave718_user(arg_0, arg_1, arg_2, globalIM_PlayWave718_next);
             };
-            void globalIM_ReleaseAllWaves719_wrapper()
+            static void globalIM_ReleaseAllWaves719_wrapper()
             {
                globalIM_ReleaseAllWaves719_user(globalIM_ReleaseAllWaves719_next);
             };
-            void globalIM_ReleaseWave720_wrapper(uint32_t arg_0)
+            static void globalIM_ReleaseWave720_wrapper(uint32_t arg_0)
             {
                globalIM_ReleaseWave720_user(arg_0, globalIM_ReleaseWave720_next);
             };
-            void globalIM_SetLoopCntWave721_wrapper(uint32_t arg_0, uint32_t arg_1)
+            static void globalIM_SetLoopCntWave721_wrapper(uint32_t arg_0, uint32_t arg_1)
             {
                globalIM_SetLoopCntWave721_user(arg_0, arg_1, globalIM_SetLoopCntWave721_next);
             };
-            void globalIM_SetWaveVolumeAndPan722_wrapper(uint32_t arg_0, float arg_1, float arg_2)
+            static void globalIM_SetWaveVolumeAndPan722_wrapper(uint32_t arg_0, float arg_1, float arg_2)
             {
                globalIM_SetWaveVolumeAndPan722_user(arg_0, arg_1, arg_2, globalIM_SetWaveVolumeAndPan722_next);
             };
-            void globalIM_StopWave723_wrapper(uint32_t arg_0)
+            static void globalIM_StopWave723_wrapper(uint32_t arg_0)
             {
                globalIM_StopWave723_user(arg_0, globalIM_StopWave723_next);
             };
-            bool globalIPConvertingStringToByte725_wrapper(char* szIP, char* pbyIP)
+            static bool globalIPConvertingStringToByte725_wrapper(char* szIP, char* pbyIP)
             {
                return globalIPConvertingStringToByte725_user(szIP, pbyIP, globalIPConvertingStringToByte725_next);
             };
-            unsigned int globalIndexFromPImgThunkData726_wrapper(struct _IMAGE_THUNK_DATA64* pitdCur, struct _IMAGE_THUNK_DATA64* pitdBase)
+            static unsigned int globalIndexFromPImgThunkData726_wrapper(struct _IMAGE_THUNK_DATA64* pitdCur, struct _IMAGE_THUNK_DATA64* pitdBase)
             {
                return globalIndexFromPImgThunkData726_user(pitdCur, pitdBase, globalIndexFromPImgThunkData726_next);
             };
-            int64_t globalInitBlurShader727_wrapper()
+            static int64_t globalInitBlurShader727_wrapper()
             {
                return globalInitBlurShader727_user(globalInitBlurShader727_next);
             };
-            void globalInitCheatCommand729_wrapper(struct CHEAT_COMMAND* pCmdList, char* byCommandSizeList)
+            static void globalInitCheatCommand729_wrapper(struct CHEAT_COMMAND* pCmdList, char* byCommandSizeList)
             {
                globalInitCheatCommand729_user(pCmdList, byCommandSizeList, globalInitCheatCommand729_next);
             };
-            void globalInitConsole730_wrapper()
+            static void globalInitConsole730_wrapper()
             {
                globalInitConsole730_user(globalInitConsole730_next);
             };
-            void globalInitCore731_wrapper()
+            static void globalInitCore731_wrapper()
             {
                globalInitCore731_user(globalInitCore731_next);
             };
-            void globalInitFullScreenEffect732_wrapper()
+            static void globalInitFullScreenEffect732_wrapper()
             {
                globalInitFullScreenEffect732_user(globalInitFullScreenEffect732_next);
             };
-            void globalInitFunctionKey733_wrapper(char* arg_0)
+            static void globalInitFunctionKey733_wrapper(char* arg_0)
             {
                globalInitFunctionKey733_user(arg_0, globalInitFunctionKey733_next);
             };
-            int64_t globalInitJmalloc734_wrapper(int arg_0)
+            static int64_t globalInitJmalloc734_wrapper(int arg_0)
             {
                return globalInitJmalloc734_user(arg_0, globalInitJmalloc734_next);
             };
-            void globalInitMasteryFormula736_wrapper(struct CRecordData* pSkillData, struct CRecordData* pForceData)
+            static void globalInitMasteryFormula736_wrapper(struct CRecordData* pSkillData, struct CRecordData* pForceData)
             {
                globalInitMasteryFormula736_user(pSkillData, pForceData, globalInitMasteryFormula736_next);
             };
-            void globalInitR3Engine737_wrapper(int arg_0)
+            static void globalInitR3Engine737_wrapper(int arg_0)
             {
                globalInitR3Engine737_user(arg_0, globalInitR3Engine737_next);
             };
-            void globalInitR3Particle738_wrapper()
+            static void globalInitR3Particle738_wrapper()
             {
                globalInitR3Particle738_user(globalInitR3Particle738_next);
             };
-            int64_t globalInitR3SoundSystem739_wrapper(char* arg_0)
+            static int64_t globalInitR3SoundSystem739_wrapper(char* arg_0)
             {
                return globalInitR3SoundSystem739_user(arg_0, globalInitR3SoundSystem739_next);
             };
-            void globalInitR3Text740_wrapper()
+            static void globalInitR3Text740_wrapper()
             {
                globalInitR3Text740_user(globalInitR3Text740_next);
             };
-            void globalInitSpriteManager741_wrapper()
+            static void globalInitSpriteManager741_wrapper()
             {
                globalInitSpriteManager741_user(globalInitSpriteManager741_next);
             };
-            void globalInitWebBrowser742_wrapper(int32_t arg_0)
+            static void globalInitWebBrowser742_wrapper(int32_t arg_0)
             {
                globalInitWebBrowser742_user(arg_0, globalInitWebBrowser742_next);
             };
-            void globalInsertConsoleStringQ743_wrapper(char* Src)
+            static void globalInsertConsoleStringQ743_wrapper(char* Src)
             {
                globalInsertConsoleStringQ743_user(Src, globalInsertConsoleStringQ743_next);
             };
-            int64_t globalInsertDynamicLight744_wrapper(float* arg_0, float arg_1, uint32_t arg_2, void* arg_3, int arg_4, uint32_t arg_5)
+            static int64_t globalInsertDynamicLight744_wrapper(float* arg_0, float arg_1, uint32_t arg_2, void* arg_3, int arg_4, uint32_t arg_5)
             {
                return globalInsertDynamicLight744_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalInsertDynamicLight744_next);
             };
-            float globalInterpolatedNoise_1745_wrapper(float arg_0)
+            static float globalInterpolatedNoise_1745_wrapper(float arg_0)
             {
                return globalInterpolatedNoise_1745_user(arg_0, globalInterpolatedNoise_1745_next);
             };
-            float globalInterpolatedNoise_1746_wrapper(float arg_0, float arg_1)
+            static float globalInterpolatedNoise_1746_wrapper(float arg_0, float arg_1)
             {
                return globalInterpolatedNoise_1746_user(arg_0, arg_1, globalInterpolatedNoise_1746_next);
             };
-            int globalIsAbrItem748_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsAbrItem748_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsAbrItem748_user(nTableCode, nItemIndex, globalIsAbrItem748_next);
             };
-            bool globalIsAddAbleTalikToItem750_wrapper(char byItemTableCode, uint16_t wItemIndex, unsigned int dwItemCurLv, uint16_t wTalikIndex, int* pnTalikLim)
+            static bool globalIsAddAbleTalikToItem750_wrapper(char byItemTableCode, uint16_t wItemIndex, unsigned int dwItemCurLv, uint16_t wTalikIndex, int* pnTalikLim)
             {
                return globalIsAddAbleTalikToItem750_user(byItemTableCode, wItemIndex, dwItemCurLv, wTalikIndex, pnTalikLim, globalIsAddAbleTalikToItem750_next);
             };
-            int64_t globalIsAniTex751_wrapper(char* arg_0)
+            static int64_t globalIsAniTex751_wrapper(char* arg_0)
             {
                return globalIsAniTex751_user(arg_0, globalIsAniTex751_next);
             };
-            int64_t globalIsBBoxInFrustum752_wrapper(float* arg_0, float* arg_1)
+            static int64_t globalIsBBoxInFrustum752_wrapper(float* arg_0, float* arg_1)
             {
                return globalIsBBoxInFrustum752_user(arg_0, arg_1, globalIsBBoxInFrustum752_next);
             };
-            int64_t globalIsBBoxInFrustum753_wrapper(int16_t* arg_0, int16_t* arg_1)
+            static int64_t globalIsBBoxInFrustum753_wrapper(int16_t* arg_0, int16_t* arg_1)
             {
                return globalIsBBoxInFrustum753_user(arg_0, arg_1, globalIsBBoxInFrustum753_next);
             };
-            struct CItemStore* globalIsBeNearStore755_wrapper(struct CPlayer* p, int nStoreCode)
+            static struct CItemStore* globalIsBeNearStore755_wrapper(struct CPlayer* p, int nStoreCode)
             {
                return globalIsBeNearStore755_user(p, nStoreCode, globalIsBeNearStore755_next);
             };
-            int64_t globalIsBothRayAABB756_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
+            static int64_t globalIsBothRayAABB756_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
             {
                return globalIsBothRayAABB756_user(arg_0, arg_1, arg_2, arg_3, globalIsBothRayAABB756_next);
             };
-            int globalIsBothRayAABB757_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2, float* arg_3)
+            static int globalIsBothRayAABB757_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2, float* arg_3)
             {
                return globalIsBothRayAABB757_user(arg_0, arg_1, arg_2, arg_3, globalIsBothRayAABB757_next);
             };
-            int globalIsCashItem759_wrapper(char byTblCode, unsigned int dwIndex)
+            static int globalIsCashItem759_wrapper(char byTblCode, unsigned int dwIndex)
             {
                return globalIsCashItem759_user(byTblCode, dwIndex, globalIsCashItem759_next);
             };
-            int64_t globalIsCollisionBBox760_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
+            static int64_t globalIsCollisionBBox760_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3)
             {
                return globalIsCollisionBBox760_user(arg_0, arg_1, arg_2, arg_3, globalIsCollisionBBox760_next);
             };
-            int64_t globalIsCollisionBBox761_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2, float* arg_3)
+            static int64_t globalIsCollisionBBox761_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2, float* arg_3)
             {
                return globalIsCollisionBBox761_user(arg_0, arg_1, arg_2, arg_3, globalIsCollisionBBox761_next);
             };
-            int64_t globalIsCollisionBBox762_wrapper(int16_t* arg_0, int16_t* arg_1, int16_t* arg_2, int16_t* arg_3)
+            static int64_t globalIsCollisionBBox762_wrapper(int16_t* arg_0, int16_t* arg_1, int16_t* arg_2, int16_t* arg_3)
             {
                return globalIsCollisionBBox762_user(arg_0, arg_1, arg_2, arg_3, globalIsCollisionBBox762_next);
             };
-            int64_t globalIsCollisionBBoxPoint763_wrapper(float* arg_0, float* arg_1, float* arg_2)
+            static int64_t globalIsCollisionBBoxPoint763_wrapper(float* arg_0, float* arg_1, float* arg_2)
             {
                return globalIsCollisionBBoxPoint763_user(arg_0, arg_1, arg_2, globalIsCollisionBBoxPoint763_next);
             };
-            int64_t globalIsCollisionBBoxPoint764_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2)
+            static int64_t globalIsCollisionBBoxPoint764_wrapper(int16_t* arg_0, int16_t* arg_1, float* arg_2)
             {
                return globalIsCollisionBBoxPoint764_user(arg_0, arg_1, arg_2, globalIsCollisionBBoxPoint764_next);
             };
-            int64_t globalIsCollisionBBoxToFace765_wrapper(float** arg_0, float* arg_1, float* arg_2, float* arg_3)
+            static int64_t globalIsCollisionBBoxToFace765_wrapper(float** arg_0, float* arg_1, float* arg_2, float* arg_3)
             {
                return globalIsCollisionBBoxToFace765_user(arg_0, arg_1, arg_2, arg_3, globalIsCollisionBBoxToFace765_next);
             };
-            bool globalIsDayChanged767_wrapper(int* iOldDay)
+            static bool globalIsDayChanged767_wrapper(int* iOldDay)
             {
                return globalIsDayChanged767_user(iOldDay, globalIsDayChanged767_next);
             };
-            int64_t globalIsEnableBBoShasiShader768_wrapper()
+            static int64_t globalIsEnableBBoShasiShader768_wrapper()
             {
                return globalIsEnableBBoShasiShader768_user(globalIsEnableBBoShasiShader768_next);
             };
-            int64_t globalIsEnableShader769_wrapper(uint32_t arg_0)
+            static int64_t globalIsEnableShader769_wrapper(uint32_t arg_0)
             {
                return globalIsEnableShader769_user(arg_0, globalIsEnableShader769_next);
             };
-            int globalIsExchangeItem771_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsExchangeItem771_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsExchangeItem771_user(nTableCode, nItemIndex, globalIsExchangeItem771_next);
             };
-            bool globalIsExistDarkHoleOpenGate773_wrapper()
+            static bool globalIsExistDarkHoleOpenGate773_wrapper()
             {
                return globalIsExistDarkHoleOpenGate773_user(globalIsExistDarkHoleOpenGate773_next);
             };
-            int64_t globalIsExistFile774_wrapper(char* arg_0)
+            static int64_t globalIsExistFile774_wrapper(char* arg_0)
             {
                return globalIsExistFile774_user(arg_0, globalIsExistFile774_next);
             };
-            int64_t globalIsExistFileAndMergeFile775_wrapper(char* arg_0)
+            static int64_t globalIsExistFileAndMergeFile775_wrapper(char* arg_0)
             {
                return globalIsExistFileAndMergeFile775_user(arg_0, globalIsExistFileAndMergeFile775_next);
             };
-            int64_t globalIsExistFromSoundSpt776_wrapper(uint32_t arg_0)
+            static int64_t globalIsExistFromSoundSpt776_wrapper(uint32_t arg_0)
             {
                return globalIsExistFromSoundSpt776_user(arg_0, globalIsExistFromSoundSpt776_next);
             };
-            int globalIsExistItem778_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsExistItem778_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsExistItem778_user(nTableCode, nItemIndex, globalIsExistItem778_next);
             };
-            int64_t globalIsFadeIn779_wrapper()
+            static int64_t globalIsFadeIn779_wrapper()
             {
                return globalIsFadeIn779_user(globalIsFadeIn779_next);
             };
-            int64_t globalIsFadeOut780_wrapper()
+            static int64_t globalIsFadeOut780_wrapper()
             {
                return globalIsFadeOut780_user(globalIsFadeOut780_next);
             };
-            int64_t globalIsFading781_wrapper()
+            static int64_t globalIsFading781_wrapper()
             {
                return globalIsFading781_user(globalIsFading781_next);
             };
-            int64_t globalIsFarDistance782_wrapper(struct _BSP_LEAF* arg_0)
+            static int64_t globalIsFarDistance782_wrapper(struct _BSP_LEAF* arg_0)
             {
                return globalIsFarDistance782_user(arg_0, globalIsFarDistance782_next);
             };
-            int globalIsGroundableItem784_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsGroundableItem784_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsGroundableItem784_user(nTableCode, nItemIndex, globalIsGroundableItem784_next);
             };
-            int64_t globalIsInitCore785_wrapper()
+            static int64_t globalIsInitCore785_wrapper()
             {
                return globalIsInitCore785_user(globalIsInitCore785_next);
             };
-            int64_t globalIsInitR3Engine786_wrapper()
+            static int64_t globalIsInitR3Engine786_wrapper()
             {
                return globalIsInitR3Engine786_user(globalIsInitR3Engine786_next);
             };
-            int globalIsItemCombineExKind788_wrapper(int nTableCode)
+            static int globalIsItemCombineExKind788_wrapper(int nTableCode)
             {
                return globalIsItemCombineExKind788_user(nTableCode, globalIsItemCombineExKind788_next);
             };
-            int globalIsItemEquipCivil790_wrapper(int nTableCode, int nItemIndex, char byRaceSex)
+            static int globalIsItemEquipCivil790_wrapper(int nTableCode, int nItemIndex, char byRaceSex)
             {
                return globalIsItemEquipCivil790_user(nTableCode, nItemIndex, byRaceSex, globalIsItemEquipCivil790_next);
             };
-            int globalIsItemSerialNum792_wrapper(int nTableCode)
+            static int globalIsItemSerialNum792_wrapper(int nTableCode)
             {
                return globalIsItemSerialNum792_user(nTableCode, globalIsItemSerialNum792_next);
             };
-            int64_t globalIsLoadedMaterial793_wrapper()
+            static int64_t globalIsLoadedMaterial793_wrapper()
             {
                return globalIsLoadedMaterial793_user(globalIsLoadedMaterial793_next);
             };
-            int64_t globalIsLoadedRTCamera794_wrapper()
+            static int64_t globalIsLoadedRTCamera794_wrapper()
             {
                return globalIsLoadedRTCamera794_user(globalIsLoadedRTCamera794_next);
             };
-            int64_t globalIsLoadedRTMovie795_wrapper()
+            static int64_t globalIsLoadedRTMovie795_wrapper()
             {
                return globalIsLoadedRTMovie795_user(globalIsLoadedRTMovie795_next);
             };
-            int64_t globalIsMagicLight796_wrapper(uint32_t arg_0)
+            static int64_t globalIsMagicLight796_wrapper(uint32_t arg_0)
             {
                return globalIsMagicLight796_user(arg_0, globalIsMagicLight796_next);
             };
-            int globalIsNormalAccountUsable798_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsNormalAccountUsable798_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsNormalAccountUsable798_user(nTableCode, nItemIndex, globalIsNormalAccountUsable798_next);
             };
-            int64_t globalIsOneBackCollision799_wrapper()
+            static int64_t globalIsOneBackCollision799_wrapper()
             {
                return globalIsOneBackCollision799_user(globalIsOneBackCollision799_next);
             };
-            char globalIsOtherInvalidObjNear801_wrapper(struct CGameObject* pEster, float* pfEstPos, struct CTrap* pEstObj, struct _TrapItem_fld* pEstTrapItemInfo)
+            static char globalIsOtherInvalidObjNear801_wrapper(struct CGameObject* pEster, float* pfEstPos, struct CTrap* pEstObj, struct _TrapItem_fld* pEstTrapItemInfo)
             {
                return globalIsOtherInvalidObjNear801_user(pEster, pfEstPos, pEstObj, pEstTrapItemInfo, globalIsOtherInvalidObjNear801_next);
             };
-            bool globalIsOtherTowerNear803_wrapper(struct CGameObject* pEster, float* pfEstPos, struct CGuardTower* pEstObj)
+            static bool globalIsOtherTowerNear803_wrapper(struct CGameObject* pEster, float* pfEstPos, struct CGuardTower* pEstObj)
             {
                return globalIsOtherTowerNear803_user(pEster, pfEstPos, pEstObj, globalIsOtherTowerNear803_next);
             };
-            int globalIsOverLapItem805_wrapper(int nTableCode)
+            static int globalIsOverLapItem805_wrapper(int nTableCode)
             {
                return globalIsOverLapItem805_user(nTableCode, globalIsOverLapItem805_next);
             };
-            int64_t globalIsParticle806_wrapper(char* arg_0)
+            static int64_t globalIsParticle806_wrapper(char* arg_0)
             {
                return globalIsParticle806_user(arg_0, globalIsParticle806_next);
             };
-            int64_t globalIsPlayMP3807_wrapper()
+            static int64_t globalIsPlayMP3807_wrapper()
             {
                return globalIsPlayMP3807_user(globalIsPlayMP3807_next);
             };
-            int globalIsProtectItem809_wrapper(int nTableCode)
+            static int globalIsProtectItem809_wrapper(int nTableCode)
             {
                return globalIsProtectItem809_user(nTableCode, globalIsProtectItem809_next);
             };
-            int64_t globalIsRTMoviePlaying810_wrapper()
+            static int64_t globalIsRTMoviePlaying810_wrapper()
             {
                return globalIsRTMoviePlaying810_user(globalIsRTMoviePlaying810_next);
             };
-            int64_t globalIsRayAABB811_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float** arg_4)
+            static int64_t globalIsRayAABB811_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float** arg_4)
             {
                return globalIsRayAABB811_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalIsRayAABB811_next);
             };
-            int64_t globalIsRayAABB812_wrapper(float** arg_0, int16_t* arg_1, float* arg_2, float* arg_3, float** arg_4)
+            static int64_t globalIsRayAABB812_wrapper(float** arg_0, int16_t* arg_1, float* arg_2, float* arg_3, float** arg_4)
             {
                return globalIsRayAABB812_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalIsRayAABB812_next);
             };
-            int64_t globalIsRenderTargetFrameBuffer813_wrapper()
+            static int64_t globalIsRenderTargetFrameBuffer813_wrapper()
             {
                return globalIsRenderTargetFrameBuffer813_user(globalIsRenderTargetFrameBuffer813_next);
             };
-            int globalIsRepairableItem815_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsRepairableItem815_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsRepairableItem815_user(nTableCode, nItemIndex, globalIsRepairableItem815_next);
             };
-            int64_t globalIsRightIndexedUP816_wrapper(int arg_0, uint16_t* arg_1, int arg_2)
+            static int64_t globalIsRightIndexedUP816_wrapper(int arg_0, uint16_t* arg_1, int arg_2)
             {
                return globalIsRightIndexedUP816_user(arg_0, arg_1, arg_2, globalIsRightIndexedUP816_next);
             };
-            bool globalIsSQLValidString818_wrapper(char* wszStr)
+            static bool globalIsSQLValidString818_wrapper(char* wszStr)
             {
                return globalIsSQLValidString818_user(wszStr, globalIsSQLValidString818_next);
             };
-            int globalIsSaveItem820_wrapper(int nTableCode)
+            static int globalIsSaveItem820_wrapper(int nTableCode)
             {
                return globalIsSaveItem820_user(nTableCode, globalIsSaveItem820_next);
             };
-            int globalIsSellItem822_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsSellItem822_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsSellItem822_user(nTableCode, nItemIndex, globalIsSellItem822_next);
             };
-            int64_t globalIsServerMode823_wrapper()
+            static int64_t globalIsServerMode823_wrapper()
             {
                return globalIsServerMode823_user(globalIsServerMode823_next);
             };
-            int globalIsStorageCodeWithItemKind825_wrapper(int nTableCode, int nStorageCode)
+            static int globalIsStorageCodeWithItemKind825_wrapper(int nTableCode, int nStorageCode)
             {
                return globalIsStorageCodeWithItemKind825_user(nTableCode, nStorageCode, globalIsStorageCodeWithItemKind825_next);
             };
-            int globalIsStorageRange827_wrapper(char byStorageCode, char byStorageIndex)
+            static int globalIsStorageRange827_wrapper(char byStorageCode, char byStorageIndex)
             {
                return globalIsStorageRange827_user(byStorageCode, byStorageIndex, globalIsStorageRange827_next);
             };
-            int globalIsTalikAboutTol829_wrapper(int nTalikIndex)
+            static int globalIsTalikAboutTol829_wrapper(int nTalikIndex)
             {
                return globalIsTalikAboutTol829_user(nTalikIndex, globalIsTalikAboutTol829_next);
             };
-            bool globalIsTargeting831_wrapper(struct CGameObject* pTar)
+            static bool globalIsTargeting831_wrapper(struct CGameObject* pTar)
             {
                return globalIsTargeting831_user(pTar, globalIsTargeting831_next);
             };
-            int64_t globalIsTextureFormatOk832_wrapper(_D3DFORMAT arg_0, _D3DFORMAT arg_1)
+            static int64_t globalIsTextureFormatOk832_wrapper(_D3DFORMAT arg_0, _D3DFORMAT arg_1)
             {
                return globalIsTextureFormatOk832_user(arg_0, arg_1, globalIsTextureFormatOk832_next);
             };
-            int globalIsTimeItem834_wrapper(char byTblCode, unsigned int dwIndex)
+            static int globalIsTimeItem834_wrapper(char byTblCode, unsigned int dwIndex)
             {
                return globalIsTimeItem834_user(byTblCode, dwIndex, globalIsTimeItem834_next);
             };
-            int globalIsTrunkIOAble836_wrapper(int nTableCode, int nItemIndex)
+            static int globalIsTrunkIOAble836_wrapper(int nTableCode, int nItemIndex)
             {
                return globalIsTrunkIOAble836_user(nTableCode, nItemIndex, globalIsTrunkIOAble836_next);
             };
-            bool globalIsUsableTempEffectAtStoneState838_wrapper(int nTempEffectType)
+            static bool globalIsUsableTempEffectAtStoneState838_wrapper(int nTempEffectType)
             {
                return globalIsUsableTempEffectAtStoneState838_user(nTempEffectType, globalIsUsableTempEffectAtStoneState838_next);
             };
-            int64_t globalIsWebBrowserMode839_wrapper()
+            static int64_t globalIsWebBrowserMode839_wrapper()
             {
                return globalIsWebBrowserMode839_user(globalIsWebBrowserMode839_next);
             };
-            uint8_t* globalJmalloc840_wrapper(int arg_0)
+            static uint8_t* globalJmalloc840_wrapper(int arg_0)
             {
                return globalJmalloc840_user(arg_0, globalJmalloc840_next);
             };
-            uint8_t* globalJpegFileToRGB841_wrapper(char* arg_0, unsigned int* arg_1, unsigned int* arg_2)
+            static uint8_t* globalJpegFileToRGB841_wrapper(char* arg_0, unsigned int* arg_1, unsigned int* arg_2)
             {
                return globalJpegFileToRGB841_user(arg_0, arg_1, arg_2, globalJpegFileToRGB841_next);
             };
-            void globalLightMappingTex1842_wrapper(struct _BSP_MAT_GROUP* arg_0)
+            static void globalLightMappingTex1842_wrapper(struct _BSP_MAT_GROUP* arg_0)
             {
                globalLightMappingTex1842_user(arg_0, globalLightMappingTex1842_next);
             };
-            float globalLinearInterpolate843_wrapper(float arg_0, float arg_1, float arg_2)
+            static float globalLinearInterpolate843_wrapper(float arg_0, float arg_1, float arg_2)
             {
                return globalLinearInterpolate843_user(arg_0, arg_1, arg_2, globalLinearInterpolate843_next);
             };
-            int32_t globalLoadAndCreateShader844_wrapper(char* arg_0, uint32_t* arg_1, uint32_t arg_2, int arg_3, uint32_t* arg_4)
+            static int32_t globalLoadAndCreateShader844_wrapper(char* arg_0, uint32_t* arg_1, uint32_t arg_2, int arg_3, uint32_t* arg_4)
             {
                return globalLoadAndCreateShader844_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalLoadAndCreateShader844_next);
             };
-            uint8_t* globalLoadBmp845_wrapper(char* arg_0, int* arg_1, int* arg_2)
+            static uint8_t* globalLoadBmp845_wrapper(char* arg_0, int* arg_1, int* arg_2)
             {
                return globalLoadBmp845_user(arg_0, arg_1, arg_2, globalLoadBmp845_next);
             };
-            int32_t globalLoadCreateShader846_wrapper(char* arg_0, uint32_t* arg_1, uint32_t arg_2, int arg_3, uint32_t* arg_4)
+            static int32_t globalLoadCreateShader846_wrapper(char* arg_0, uint32_t* arg_1, uint32_t arg_2, int arg_3, uint32_t* arg_4)
             {
                return globalLoadCreateShader846_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalLoadCreateShader846_next);
             };
-            struct _R3MATERIAL* globalLoadIndependenceR3M847_wrapper(char* arg_0)
+            static struct _R3MATERIAL* globalLoadIndependenceR3M847_wrapper(char* arg_0)
             {
                return globalLoadIndependenceR3M847_user(arg_0, globalLoadIndependenceR3M847_next);
             };
-            void globalLoadLightMap848_wrapper(char* arg_0)
+            static void globalLoadLightMap848_wrapper(char* arg_0)
             {
                globalLoadLightMap848_user(arg_0, globalLoadLightMap848_next);
             };
-            struct _R3MATERIAL* globalLoadMainMaterial849_wrapper(char* arg_0)
+            static struct _R3MATERIAL* globalLoadMainMaterial849_wrapper(char* arg_0)
             {
                return globalLoadMainMaterial849_user(arg_0, globalLoadMainMaterial849_next);
             };
-            struct _R3MATERIAL* globalLoadMainR3M850_wrapper(char* arg_0)
+            static struct _R3MATERIAL* globalLoadMainR3M850_wrapper(char* arg_0)
             {
                return globalLoadMainR3M850_user(arg_0, globalLoadMainR3M850_next);
             };
-            bool globalLoadMasteryLimFile852_wrapper(char* pszErrMsg)
+            static bool globalLoadMasteryLimFile852_wrapper(char* pszErrMsg)
             {
                return globalLoadMasteryLimFile852_user(pszErrMsg, globalLoadMasteryLimFile852_next);
             };
-            int64_t globalLoadR3MP3853_wrapper(char* arg_0, uint32_t arg_1)
+            static int64_t globalLoadR3MP3853_wrapper(char* arg_0, uint32_t arg_1)
             {
                return globalLoadR3MP3853_user(arg_0, arg_1, globalLoadR3MP3853_next);
             };
-            void globalLoadR3T854_wrapper(R3Texture* arg_0)
+            static void globalLoadR3T854_wrapper(R3Texture* arg_0)
             {
                globalLoadR3T854_user(arg_0, globalLoadR3T854_next);
             };
-            _LIGHTMAP** globalLoadR3TLightMap855_wrapper(R3Texture* arg_0, _D3DFORMAT arg_1)
+            static _LIGHTMAP** globalLoadR3TLightMap855_wrapper(R3Texture* arg_0, _D3DFORMAT arg_1)
             {
                return globalLoadR3TLightMap855_user(arg_0, arg_1, globalLoadR3TLightMap855_next);
             };
-            void globalLoadR3X856_wrapper(char* arg_0)
+            static void globalLoadR3X856_wrapper(char* arg_0)
             {
                globalLoadR3X856_user(arg_0, globalLoadR3X856_next);
             };
-            bool globalLoadRegionData858_wrapper(int nMapNum, char** ppszMapNameList, char* pszErrMsg)
+            static bool globalLoadRegionData858_wrapper(int nMapNum, char** ppszMapNameList, char* pszErrMsg)
             {
                return globalLoadRegionData858_user(nMapNum, ppszMapNameList, pszErrMsg, globalLoadRegionData858_next);
             };
-            int64_t globalLoadStreamR3MP3859_wrapper(char* arg_0, uint32_t arg_1)
+            static int64_t globalLoadStreamR3MP3859_wrapper(char* arg_0, uint32_t arg_1)
             {
                return globalLoadStreamR3MP3859_user(arg_0, arg_1, globalLoadStreamR3MP3859_next);
             };
-            struct _R3MATERIAL* globalLoadSubMaterial860_wrapper(char* arg_0)
+            static struct _R3MATERIAL* globalLoadSubMaterial860_wrapper(char* arg_0)
             {
                return globalLoadSubMaterial860_user(arg_0, globalLoadSubMaterial860_next);
             };
-            struct _R3MATERIAL* globalLoadSubR3M862_wrapper(char* arg_0)
+            static struct _R3MATERIAL* globalLoadSubR3M862_wrapper(char* arg_0)
             {
                return globalLoadSubR3M862_user(arg_0, globalLoadSubR3M862_next);
             };
-            void globalLoadVertexShaderList863_wrapper()
+            static void globalLoadVertexShaderList863_wrapper()
             {
                globalLoadVertexShaderList863_user(globalLoadVertexShaderList863_next);
             };
-            void globalLoadWaveList864_wrapper(char* arg_0)
+            static void globalLoadWaveList864_wrapper(char* arg_0)
             {
                globalLoadWaveList864_user(arg_0, globalLoadWaveList864_next);
             };
-            int globalLuaScripAlert866_wrapper(lua_State* L)
+            static int globalLuaScripAlert866_wrapper(lua_State* L)
             {
                return globalLuaScripAlert866_user(L, globalLuaScripAlert866_next);
             };
-            bool globalM2W868_wrapper(char* lpStr, char* wszTran, unsigned int wTranBuffSize)
+            static bool globalM2W868_wrapper(char* lpStr, char* wszTran, unsigned int wTranBuffSize)
             {
                return globalM2W868_user(lpStr, wszTran, wTranBuffSize, globalM2W868_next);
             };
-            void globalMakeBinaryStr870_wrapper(char* pBuff, uint64_t tBufSize, char* pOut, uint64_t tOutSize)
+            static void globalMakeBinaryStr870_wrapper(char* pBuff, uint64_t tBufSize, char* pOut, uint64_t tOutSize)
             {
                globalMakeBinaryStr870_user(pBuff, tBufSize, pOut, tOutSize, globalMakeBinaryStr870_next);
             };
-            uint8_t* globalMakeDwordAlignedBuf871_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2, unsigned int* arg_3)
+            static uint8_t* globalMakeDwordAlignedBuf871_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2, unsigned int* arg_3)
             {
                return globalMakeDwordAlignedBuf871_user(arg_0, arg_1, arg_2, arg_3, globalMakeDwordAlignedBuf871_next);
             };
-            int64_t globalMakeGrayScale872_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2)
+            static int64_t globalMakeGrayScale872_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2)
             {
                return globalMakeGrayScale872_user(arg_0, arg_1, arg_2, globalMakeGrayScale872_next);
             };
-            struct _STORAGE_LIST::_db_con* globalMakeLoot874_wrapper(char byTableCode, uint16_t wItemIndex)
+            static struct _STORAGE_LIST::_db_con* globalMakeLoot874_wrapper(char byTableCode, uint16_t wItemIndex)
             {
                return globalMakeLoot874_user(byTableCode, wItemIndex, globalMakeLoot874_next);
             };
-            void globalMakeMipMap875_wrapper(uint16_t arg_0, uint16_t arg_1, uint16_t* arg_2, uint8_t* arg_3)
+            static void globalMakeMipMap875_wrapper(uint16_t arg_0, uint16_t arg_1, uint16_t* arg_2, uint8_t* arg_3)
             {
                globalMakeMipMap875_user(arg_0, arg_1, arg_2, arg_3, globalMakeMipMap875_next);
             };
-            void globalMakeMipMap876_wrapper(uint16_t arg_0, uint16_t arg_1, uint16_t* arg_2, uint16_t* arg_3)
+            static void globalMakeMipMap876_wrapper(uint16_t arg_0, uint16_t arg_1, uint16_t* arg_2, uint16_t* arg_3)
             {
                globalMakeMipMap876_user(arg_0, arg_1, arg_2, arg_3, globalMakeMipMap876_next);
             };
-            void globalMakeUV877_wrapper(struct _D3DR3VERTEX_TEX1* arg_0, int arg_1, void* arg_2, struct _R3MATERIAL* arg_3, int arg_4)
+            static void globalMakeUV877_wrapper(struct _D3DR3VERTEX_TEX1* arg_0, int arg_1, void* arg_2, struct _R3MATERIAL* arg_3, int arg_4)
             {
                globalMakeUV877_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalMakeUV877_next);
             };
-            void globalMakeUV878_wrapper(struct _D3DR3VERTEX_TEX2* arg_0, int arg_1, void* arg_2, void* arg_3, struct _R3MATERIAL* arg_4, int arg_5, float arg_6)
+            static void globalMakeUV878_wrapper(struct _D3DR3VERTEX_TEX2* arg_0, int arg_1, void* arg_2, void* arg_3, struct _R3MATERIAL* arg_4, int arg_5, float arg_6)
             {
                globalMakeUV878_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalMakeUV878_next);
             };
-            void globalMakeUVExt879_wrapper(struct _D3DR3VERTEX_TEX2* arg_0, int arg_1, void* arg_2, void* arg_3, struct _R3MATERIAL* arg_4, int arg_5, float arg_6)
+            static void globalMakeUVExt879_wrapper(struct _D3DR3VERTEX_TEX2* arg_0, int arg_1, void* arg_2, void* arg_3, struct _R3MATERIAL* arg_4, int arg_5, float arg_6)
             {
                globalMakeUVExt879_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, globalMakeUVExt879_next);
             };
-            void globalMatrixCopy880_wrapper(float** arg_0, float** arg_1)
+            static void globalMatrixCopy880_wrapper(float** arg_0, float** arg_1)
             {
                globalMatrixCopy880_user(arg_0, arg_1, globalMatrixCopy880_next);
             };
-            void globalMatrixFromQuaternion881_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
+            static void globalMatrixFromQuaternion881_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3, float arg_4)
             {
                globalMatrixFromQuaternion881_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalMatrixFromQuaternion881_next);
             };
-            void globalMatrixIdentity882_wrapper(float** arg_0)
+            static void globalMatrixIdentity882_wrapper(float** arg_0)
             {
                globalMatrixIdentity882_user(arg_0, globalMatrixIdentity882_next);
             };
-            int64_t globalMatrixInvert883_wrapper(float** arg_0, float** arg_1)
+            static int64_t globalMatrixInvert883_wrapper(float** arg_0, float** arg_1)
             {
                return globalMatrixInvert883_user(arg_0, arg_1, globalMatrixInvert883_next);
             };
-            void globalMatrixMultiply884_wrapper(float** arg_0, float** arg_1, float** arg_2)
+            static void globalMatrixMultiply884_wrapper(float** arg_0, float** arg_1, float** arg_2)
             {
                globalMatrixMultiply884_user(arg_0, arg_1, arg_2, globalMatrixMultiply884_next);
             };
-            void globalMatrixRotate885_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3)
+            static void globalMatrixRotate885_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3)
             {
                globalMatrixRotate885_user(arg_0, arg_1, arg_2, arg_3, globalMatrixRotate885_next);
             };
-            void globalMatrixRotateX886_wrapper(float** arg_0, float arg_1)
+            static void globalMatrixRotateX886_wrapper(float** arg_0, float arg_1)
             {
                globalMatrixRotateX886_user(arg_0, arg_1, globalMatrixRotateX886_next);
             };
-            void globalMatrixRotateY887_wrapper(float** arg_0, float arg_1)
+            static void globalMatrixRotateY887_wrapper(float** arg_0, float arg_1)
             {
                globalMatrixRotateY887_user(arg_0, arg_1, globalMatrixRotateY887_next);
             };
-            void globalMatrixRotateZ888_wrapper(float** arg_0, float arg_1)
+            static void globalMatrixRotateZ888_wrapper(float** arg_0, float arg_1)
             {
                globalMatrixRotateZ888_user(arg_0, arg_1, globalMatrixRotateZ888_next);
             };
-            void globalMatrixScale889_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3)
+            static void globalMatrixScale889_wrapper(float** arg_0, float arg_1, float arg_2, float arg_3)
             {
                globalMatrixScale889_user(arg_0, arg_1, arg_2, arg_3, globalMatrixScale889_next);
             };
-            int64_t globalMaxFixFloatToInt890_wrapper(float arg_0)
+            static int64_t globalMaxFixFloatToInt890_wrapper(float arg_0)
             {
                return globalMaxFixFloatToInt890_user(arg_0, globalMaxFixFloatToInt890_next);
             };
-            int64_t globalMinFixFloatToInt891_wrapper(float arg_0)
+            static int64_t globalMinFixFloatToInt891_wrapper(float arg_0)
             {
                return globalMinFixFloatToInt891_user(arg_0, globalMinFixFloatToInt891_next);
             };
-            void globalMultiTexOff892_wrapper()
+            static void globalMultiTexOff892_wrapper()
             {
                globalMultiTexOff892_user(globalMultiTexOff892_next);
             };
-            void globalMultiTexOn893_wrapper()
+            static void globalMultiTexOn893_wrapper()
             {
                globalMultiTexOn893_user(globalMultiTexOn893_next);
             };
-            int globalMyCrtDebugReportHook895_wrapper(int nRptType, char* szMsg, int* retVal)
+            static int globalMyCrtDebugReportHook895_wrapper(int nRptType, char* szMsg, int* retVal)
             {
                return globalMyCrtDebugReportHook895_user(nRptType, szMsg, retVal, globalMyCrtDebugReportHook895_next);
             };
-            void globalMyMessageBox897_wrapper(char* szTitle, char* szMessage)
+            static void globalMyMessageBox897_wrapper(char* szTitle, char* szMessage)
             {
                globalMyMessageBox897_user(szTitle, szMessage, globalMyMessageBox897_next);
             };
-            void globalNetTrace899_wrapper(char* fmt)
+            static void globalNetTrace899_wrapper(char* fmt)
             {
                globalNetTrace899_user(fmt, globalNetTrace899_next);
             };
-            float globalNoise900_wrapper(int32_t arg_0, int32_t arg_1)
+            static float globalNoise900_wrapper(int32_t arg_0, int32_t arg_1)
             {
                return globalNoise900_user(arg_0, arg_1, globalNoise900_next);
             };
-            float globalNoise1901_wrapper(int32_t arg_0)
+            static float globalNoise1901_wrapper(int32_t arg_0)
             {
                return globalNoise1901_user(arg_0, globalNoise1901_next);
             };
-            void globalNormalize903_wrapper(float* v)
+            static void globalNormalize903_wrapper(float* v)
             {
                globalNormalize903_user(v, globalNormalize903_next);
             };
-            void globalOnLoop_GuildSystem905_wrapper(bool bChangeDay)
+            static void globalOnLoop_GuildSystem905_wrapper(bool bChangeDay)
             {
                globalOnLoop_GuildSystem905_user(bChangeDay, globalOnLoop_GuildSystem905_next);
             };
-            void globalOnLoop_VoteSystem907_wrapper()
+            static void globalOnLoop_VoteSystem907_wrapper()
             {
                globalOnLoop_VoteSystem907_user(globalOnLoop_VoteSystem907_next);
             };
-            void globalOutputDebugLog909_wrapper(char* szFormat)
+            static void globalOutputDebugLog909_wrapper(char* szFormat)
             {
                globalOutputDebugLog909_user(szFormat, globalOutputDebugLog909_next);
             };
-            HINSTANCE__** globalPFromRva910_wrapper(unsigned int rva)
-            {
-               return globalPFromRva910_user(rva, globalPFromRva910_next);
-            };
-            struct ImgDelayDescr* globalPFromRva911_wrapper(unsigned int rva)
-            {
-               return globalPFromRva911_user(rva, globalPFromRva911_next);
-            };
-            struct _IMAGE_IMPORT_BY_NAME* globalPFromRva912_wrapper(unsigned int rva)
-            {
-               return globalPFromRva912_user(rva, globalPFromRva912_next);
-            };
-            struct _IMAGE_THUNK_DATA64* globalPFromRva913_wrapper(unsigned int rva)
-            {
-               return globalPFromRva913_user(rva, globalPFromRva913_next);
-            };
-            struct _IMAGE_THUNK_DATA64* globalPFromRva914_wrapper(unsigned int rva)
-            {
-               return globalPFromRva914_user(rva, globalPFromRva914_next);
-            };
-			info::globalPFromRva915_ret globalPFromRva915_wrapper(unsigned int rva)
-            {
-               return globalPFromRva915_user(rva, globalPFromRva915_next);
-            };
-            char* globalPFromRva916_wrapper(unsigned int rva)
-            {
-               return globalPFromRva916_user(rva, globalPFromRva916_next);
-            };
-            int globalParsingCommandA918_wrapper(char* pszSrc, int nMaxWordNum, char** ppszDst, int nMaxWordSize)
+            static int globalParsingCommandA918_wrapper(char* pszSrc, int nMaxWordNum, char** ppszDst, int nMaxWordSize)
             {
                return globalParsingCommandA918_user(pszSrc, nMaxWordNum, ppszDst, nMaxWordSize, globalParsingCommandA918_next);
             };
-            int globalParsingCommandW920_wrapper(char* pwszSrc, int nMaxWordNum, char** ppwszDst, int nMaxWordSize)
+            static int globalParsingCommandW920_wrapper(char* pwszSrc, int nMaxWordNum, char** ppwszDst, int nMaxWordSize)
             {
                return globalParsingCommandW920_user(pwszSrc, nMaxWordNum, ppwszDst, nMaxWordSize, globalParsingCommandW920_next);
             };
-            float globalPerlinNoise_1D921_wrapper(float arg_0, float arg_1, uint32_t arg_2)
+            static float globalPerlinNoise_1D921_wrapper(float arg_0, float arg_1, uint32_t arg_2)
             {
                return globalPerlinNoise_1D921_user(arg_0, arg_1, arg_2, globalPerlinNoise_1D921_next);
             };
-            float globalPerlinNoise_2D922_wrapper(float arg_0, float arg_1, float arg_2, uint32_t arg_3)
+            static float globalPerlinNoise_2D922_wrapper(float arg_0, float arg_1, float arg_2, uint32_t arg_3)
             {
                return globalPerlinNoise_2D922_user(arg_0, arg_1, arg_2, arg_3, globalPerlinNoise_2D922_next);
             };
-            uint32_t globalPixelFromFramebuffer923_wrapper(int16_t arg_0, int16_t arg_1)
+            static uint32_t globalPixelFromFramebuffer923_wrapper(int16_t arg_0, int16_t arg_1)
             {
                return globalPixelFromFramebuffer923_user(arg_0, arg_1, globalPixelFromFramebuffer923_next);
             };
-            void globalPlayR3MP3924_wrapper()
+            static void globalPlayR3MP3924_wrapper()
             {
                globalPlayR3MP3924_user(globalPlayR3MP3924_next);
             };
-            void globalPlayStreamR3MP3925_wrapper()
+            static void globalPlayStreamR3MP3925_wrapper()
             {
                globalPlayStreamR3MP3925_user(globalPlayStreamR3MP3925_next);
             };
-            void globalPlayWave926_wrapper(uint32_t arg_0, uint32_t arg_1, float arg_2, float arg_3)
+            static void globalPlayWave926_wrapper(uint32_t arg_0, uint32_t arg_1, float arg_2, float arg_3)
             {
                globalPlayWave926_user(arg_0, arg_1, arg_2, arg_3, globalPlayWave926_next);
             };
-            void globalPopViewPortArea927_wrapper()
+            static void globalPopViewPortArea927_wrapper()
             {
                globalPopViewPortArea927_user(globalPopViewPortArea927_next);
             };
-            float globalPowInterpolate928_wrapper(float arg_0, float arg_1, float arg_2)
+            static float globalPowInterpolate928_wrapper(float arg_0, float arg_1, float arg_2)
             {
                return globalPowInterpolate928_user(arg_0, arg_1, arg_2, globalPowInterpolate928_next);
             };
-            void globalPreRenderOneLayer929_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
+            static void globalPreRenderOneLayer929_wrapper(struct CVertexBuffer* arg_0, struct _BSP_MAT_GROUP* arg_1)
             {
                globalPreRenderOneLayer929_user(arg_0, arg_1, globalPreRenderOneLayer929_next);
             };
-            void globalPreRenderSetting930_wrapper(int arg_0, struct CVertexBuffer* arg_1, struct _BSP_MAT_GROUP* arg_2)
+            static void globalPreRenderSetting930_wrapper(int arg_0, struct CVertexBuffer* arg_1, struct _BSP_MAT_GROUP* arg_2)
             {
                globalPreRenderSetting930_user(arg_0, arg_1, arg_2, globalPreRenderSetting930_next);
             };
-            void globalPrepareAllShadow931_wrapper()
+            static void globalPrepareAllShadow931_wrapper()
             {
                globalPrepareAllShadow931_user(globalPrepareAllShadow931_next);
             };
-            bool globalProcessCheatCommand933_wrapper(struct CPlayer* pOne, char* pwszCommand)
+            static bool globalProcessCheatCommand933_wrapper(struct CPlayer* pOne, char* pwszCommand)
             {
                return globalProcessCheatCommand933_user(pOne, pwszCommand, globalProcessCheatCommand933_next);
             };
-            void globalProgressConsole934_wrapper(struct CLevel* arg_0)
+            static void globalProgressConsole934_wrapper(struct CLevel* arg_0)
             {
                globalProgressConsole934_user(arg_0, globalProgressConsole934_next);
             };
-            void globalProgressFunctionKey935_wrapper()
+            static void globalProgressFunctionKey935_wrapper()
             {
                globalProgressFunctionKey935_user(globalProgressFunctionKey935_next);
             };
-            void globalPushViewPortArea936_wrapper()
+            static void globalPushViewPortArea936_wrapper()
             {
                globalPushViewPortArea936_user(globalPushViewPortArea936_next);
             };
-            void globalPutMessage937_wrapper(char* arg_0, char* arg_1)
+            static void globalPutMessage937_wrapper(char* arg_0, char* arg_1)
             {
                globalPutMessage937_user(arg_0, arg_1, globalPutMessage937_next);
             };
-            void globalQuaternionFromRotation938_wrapper(float* arg_0, float* arg_1, float arg_2)
+            static void globalQuaternionFromRotation938_wrapper(float* arg_0, float* arg_1, float arg_2)
             {
                globalQuaternionFromRotation938_user(arg_0, arg_1, arg_2, globalQuaternionFromRotation938_next);
             };
-            void globalQuaternionSlerp939_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4, float arg_5, float arg_6, float arg_7, float arg_8, float arg_9, float arg_10, float arg_11, float arg_12)
+            static void globalQuaternionSlerp939_wrapper(float* arg_0, float* arg_1, float* arg_2, float* arg_3, float arg_4, float arg_5, float arg_6, float arg_7, float arg_8, float arg_9, float arg_10, float arg_11, float arg_12)
             {
                globalQuaternionSlerp939_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8, arg_9, arg_10, arg_11, arg_12, globalQuaternionSlerp939_next);
             };
-            int64_t globalR3BeginScene940_wrapper()
+            static int64_t globalR3BeginScene940_wrapper()
             {
                return globalR3BeginScene940_user(globalR3BeginScene940_next);
             };
-            int64_t globalR3CalcStrIndexPitInWidthA941_wrapper(char* arg_0, int arg_1, int arg_2, uint32_t arg_3)
+            static int64_t globalR3CalcStrIndexPitInWidthA941_wrapper(char* arg_0, int arg_1, int arg_2, uint32_t arg_3)
             {
                return globalR3CalcStrIndexPitInWidthA941_user(arg_0, arg_1, arg_2, arg_3, globalR3CalcStrIndexPitInWidthA941_next);
             };
-            int64_t globalR3CalcStrIndexPitInWidthW942_wrapper(wchar_t* arg_0, int arg_1, int arg_2, uint32_t arg_3)
+            static int64_t globalR3CalcStrIndexPitInWidthW942_wrapper(wchar_t* arg_0, int arg_1, int arg_2, uint32_t arg_3)
             {
                return globalR3CalcStrIndexPitInWidthW942_user(arg_0, arg_1, arg_2, arg_3, globalR3CalcStrIndexPitInWidthW942_next);
             };
-            int64_t globalR3CalcStrPixelSizeA943_wrapper(char* arg_0, struct tagSIZE* arg_1, int arg_2, uint32_t arg_3)
+            static int64_t globalR3CalcStrPixelSizeA943_wrapper(char* arg_0, struct tagSIZE* arg_1, int arg_2, uint32_t arg_3)
             {
                return globalR3CalcStrPixelSizeA943_user(arg_0, arg_1, arg_2, arg_3, globalR3CalcStrPixelSizeA943_next);
             };
-            int64_t globalR3CalcStrPixelSizeW944_wrapper(wchar_t* arg_0, struct tagSIZE* arg_1, int arg_2, uint32_t arg_3)
+            static int64_t globalR3CalcStrPixelSizeW944_wrapper(wchar_t* arg_0, struct tagSIZE* arg_1, int arg_2, uint32_t arg_3)
             {
                return globalR3CalcStrPixelSizeW944_user(arg_0, arg_1, arg_2, arg_3, globalR3CalcStrPixelSizeW944_next);
             };
-            void globalR3CalculateTime945_wrapper()
+            static void globalR3CalculateTime945_wrapper()
             {
                globalR3CalculateTime945_user(globalR3CalculateTime945_next);
             };
-            void globalR3ClearFrameBuffer946_wrapper()
+            static void globalR3ClearFrameBuffer946_wrapper()
             {
                globalR3ClearFrameBuffer946_user(globalR3ClearFrameBuffer946_next);
             };
-            int32_t globalR3ConfirmDevice947_wrapper(struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
+            static int32_t globalR3ConfirmDevice947_wrapper(struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
             {
                return globalR3ConfirmDevice947_user(arg_0, arg_1, arg_2, globalR3ConfirmDevice947_next);
             };
-            int32_t globalR3DeleteDevice948_wrapper()
+            static int32_t globalR3DeleteDevice948_wrapper()
             {
                return globalR3DeleteDevice948_user(globalR3DeleteDevice948_next);
             };
-            void globalR3Draw2DLine949_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
+            static void globalR3Draw2DLine949_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
             {
                globalR3Draw2DLine949_user(arg_0, arg_1, arg_2, globalR3Draw2DLine949_next);
             };
-            void globalR3Draw2DLineList950_wrapper(float** arg_0, uint32_t arg_1, uint32_t arg_2)
+            static void globalR3Draw2DLineList950_wrapper(float** arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                globalR3Draw2DLineList950_user(arg_0, arg_1, arg_2, globalR3Draw2DLineList950_next);
             };
-            void globalR3DrawLine951_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
+            static void globalR3DrawLine951_wrapper(float* arg_0, float* arg_1, uint32_t arg_2)
             {
                globalR3DrawLine951_user(arg_0, arg_1, arg_2, globalR3DrawLine951_next);
             };
-            void globalR3EndScene952_wrapper()
+            static void globalR3EndScene952_wrapper()
             {
                globalR3EndScene952_user(globalR3EndScene952_next);
             };
-            void globalR3EnvironmentQuake953_wrapper(float arg_0, float arg_1)
+            static void globalR3EnvironmentQuake953_wrapper(float arg_0, float arg_1)
             {
                globalR3EnvironmentQuake953_user(arg_0, arg_1, globalR3EnvironmentQuake953_next);
             };
-            void globalR3EnvironmentShake954_wrapper(float arg_0, float arg_1)
+            static void globalR3EnvironmentShake954_wrapper(float arg_0, float arg_1)
             {
                globalR3EnvironmentShake954_user(arg_0, arg_1, globalR3EnvironmentShake954_next);
             };
-            void globalR3EnvironmentShakeOff955_wrapper()
+            static void globalR3EnvironmentShakeOff955_wrapper()
             {
                globalR3EnvironmentShakeOff955_user(globalR3EnvironmentShakeOff955_next);
             };
-            int64_t globalR3EnvironmentShakeState956_wrapper()
+            static int64_t globalR3EnvironmentShakeState956_wrapper()
             {
                return globalR3EnvironmentShakeState956_user(globalR3EnvironmentShakeState956_next);
             };
-            void globalR3FlyMove957_wrapper(float arg_0, float* arg_1)
+            static void globalR3FlyMove957_wrapper(float arg_0, float* arg_1)
             {
                globalR3FlyMove957_user(arg_0, arg_1, globalR3FlyMove957_next);
             };
-            void globalR3FlyMoveSetPos958_wrapper(float* arg_0)
+            static void globalR3FlyMoveSetPos958_wrapper(float* arg_0)
             {
                globalR3FlyMoveSetPos958_user(arg_0, globalR3FlyMoveSetPos958_next);
             };
-            float globalR3GetLoopTime959_wrapper()
+            static float globalR3GetLoopTime959_wrapper()
             {
                return globalR3GetLoopTime959_user(globalR3GetLoopTime959_next);
             };
-            void globalR3GetPreAniTextureId960_wrapper(char* arg_0, char* arg_1, int32_t* arg_2, int32_t* arg_3)
+            static void globalR3GetPreAniTextureId960_wrapper(char* arg_0, char* arg_1, int32_t* arg_2, int32_t* arg_3)
             {
                globalR3GetPreAniTextureId960_user(arg_0, arg_1, arg_2, arg_3, globalR3GetPreAniTextureId960_next);
             };
-            int64_t globalR3GetPreTextureId961_wrapper(char* arg_0)
+            static int64_t globalR3GetPreTextureId961_wrapper(char* arg_0)
             {
                return globalR3GetPreTextureId961_user(arg_0, globalR3GetPreTextureId961_next);
             };
-            void globalR3GetQuakeMatrix962_wrapper(float** arg_0)
+            static void globalR3GetQuakeMatrix962_wrapper(float** arg_0)
             {
                globalR3GetQuakeMatrix962_user(arg_0, globalR3GetQuakeMatrix962_next);
             };
-            void globalR3GetQuakeVector963_wrapper(float* arg_0)
+            static void globalR3GetQuakeVector963_wrapper(float* arg_0)
             {
                globalR3GetQuakeVector963_user(arg_0, globalR3GetQuakeVector963_next);
             };
-            void globalR3GetShakeVector964_wrapper(float* arg_0)
+            static void globalR3GetShakeVector964_wrapper(float* arg_0)
             {
                globalR3GetShakeVector964_user(arg_0, globalR3GetShakeVector964_next);
             };
-            struct IDirect3DTexture8* globalR3GetSurface965_wrapper(int arg_0)
+            static struct IDirect3DTexture8* globalR3GetSurface965_wrapper(int arg_0)
             {
                return globalR3GetSurface965_user(arg_0, globalR3GetSurface965_next);
             };
-            R3Texture* globalR3GetTexInfoR3T966_wrapper(char* arg_0, uint32_t arg_1)
+            static R3Texture* globalR3GetTexInfoR3T966_wrapper(char* arg_0, uint32_t arg_1)
             {
                return globalR3GetTexInfoR3T966_user(arg_0, arg_1, globalR3GetTexInfoR3T966_next);
             };
-            char* globalR3GetTexName967_wrapper(int arg_0)
+            static char* globalR3GetTexName967_wrapper(int arg_0)
             {
                return globalR3GetTexName967_user(arg_0, globalR3GetTexName967_next);
             };
-            float globalR3GetTime968_wrapper()
+            static float globalR3GetTime968_wrapper()
             {
                return globalR3GetTime968_user(globalR3GetTime968_next);
             };
-            int32_t globalR3GetToggle15fps969_wrapper()
+            static int32_t globalR3GetToggle15fps969_wrapper()
             {
                return globalR3GetToggle15fps969_user(globalR3GetToggle15fps969_next);
             };
-            int32_t globalR3GetToggle30fps970_wrapper()
+            static int32_t globalR3GetToggle30fps970_wrapper()
             {
                return globalR3GetToggle30fps970_user(globalR3GetToggle30fps970_next);
             };
-            int32_t globalR3GetToggle7fps971_wrapper()
+            static int32_t globalR3GetToggle7fps971_wrapper()
             {
                return globalR3GetToggle7fps971_user(globalR3GetToggle7fps971_next);
             };
-            void globalR3GetViewPort972_wrapper(int32_t* arg_0, int32_t* arg_1, int32_t* arg_2, int32_t* arg_3)
+            static void globalR3GetViewPort972_wrapper(int32_t* arg_0, int32_t* arg_1, int32_t* arg_2, int32_t* arg_3)
             {
                globalR3GetViewPort972_user(arg_0, arg_1, arg_2, arg_3, globalR3GetViewPort972_next);
             };
-            int32_t globalR3InitDevice973_wrapper(struct IDirect3DDevice8* arg_0, int arg_1, int arg_2)
+            static int32_t globalR3InitDevice973_wrapper(struct IDirect3DDevice8* arg_0, int arg_1, int arg_2)
             {
                return globalR3InitDevice973_user(arg_0, arg_1, arg_2, globalR3InitDevice973_next);
             };
-            int32_t globalR3InvalidateDevice974_wrapper()
+            static int32_t globalR3InvalidateDevice974_wrapper()
             {
                return globalR3InvalidateDevice974_user(globalR3InvalidateDevice974_next);
             };
-            struct IDirect3DTexture8* globalR3LoadDDS975_wrapper(char* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
+            static struct IDirect3DTexture8* globalR3LoadDDS975_wrapper(char* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
             {
                return globalR3LoadDDS975_user(arg_0, arg_1, arg_2, arg_3, globalR3LoadDDS975_next);
             };
-            struct IDirect3DTexture8* globalR3LoadDDSAndTextureMem976_wrapper(char* arg_0, uint32_t arg_1)
+            static struct IDirect3DTexture8* globalR3LoadDDSAndTextureMem976_wrapper(char* arg_0, uint32_t arg_1)
             {
                return globalR3LoadDDSAndTextureMem976_user(arg_0, arg_1, globalR3LoadDDSAndTextureMem976_next);
             };
-            struct IDirect3DTexture8* globalR3LoadDDSFromFP977_wrapper(FILE* File, size_t Size, uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
+            static struct IDirect3DTexture8* globalR3LoadDDSFromFP977_wrapper(FILE* File, size_t Size, uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                return globalR3LoadDDSFromFP977_user(File, Size, arg_0, arg_1, arg_2, globalR3LoadDDSFromFP977_next);
             };
-            void globalR3LoadTextTexture978_wrapper()
+            static void globalR3LoadTextTexture978_wrapper()
             {
                globalR3LoadTextTexture978_user(globalR3LoadTextTexture978_next);
             };
-            void globalR3LoadTextureMem979_wrapper(int arg_0)
+            static void globalR3LoadTextureMem979_wrapper(int arg_0)
             {
                globalR3LoadTextureMem979_user(arg_0, globalR3LoadTextureMem979_next);
             };
-            void globalR3MouseInput980_wrapper()
+            static void globalR3MouseInput980_wrapper()
             {
                globalR3MouseInput980_user(globalR3MouseInput980_next);
             };
-            struct D3DXMATRIX* globalR3MoveGetViewMatrix981_wrapper()
+            static struct D3DXMATRIX* globalR3MoveGetViewMatrix981_wrapper()
             {
                return globalR3MoveGetViewMatrix981_user(globalR3MoveGetViewMatrix981_next);
             };
-            void globalR3MsgProc982_wrapper(HWND arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
+            static void globalR3MsgProc982_wrapper(HWND arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
             {
                globalR3MsgProc982_user(arg_0, arg_1, arg_2, arg_3, globalR3MsgProc982_next);
             };
-            void globalR3ReleaseAllTextures983_wrapper()
+            static void globalR3ReleaseAllTextures983_wrapper()
             {
                globalR3ReleaseAllTextures983_user(globalR3ReleaseAllTextures983_next);
             };
-            void globalR3ReleasePreTextures984_wrapper()
+            static void globalR3ReleasePreTextures984_wrapper()
             {
                globalR3ReleasePreTextures984_user(globalR3ReleasePreTextures984_next);
             };
-            void globalR3ReleaseTextTexture985_wrapper()
+            static void globalR3ReleaseTextTexture985_wrapper()
             {
                globalR3ReleaseTextTexture985_user(globalR3ReleaseTextTexture985_next);
             };
-            void globalR3ReleaseTextureMem986_wrapper(int arg_0)
+            static void globalR3ReleaseTextureMem986_wrapper(int arg_0)
             {
                globalR3ReleaseTextureMem986_user(arg_0, globalR3ReleaseTextureMem986_next);
             };
-            void globalR3RestoreAllTextures987_wrapper()
+            static void globalR3RestoreAllTextures987_wrapper()
             {
                globalR3RestoreAllTextures987_user(globalR3RestoreAllTextures987_next);
             };
-            int32_t globalR3RestoreDevice988_wrapper()
+            static int32_t globalR3RestoreDevice988_wrapper()
             {
                return globalR3RestoreDevice988_user(globalR3RestoreDevice988_next);
             };
-            void globalR3SetCameraMatrix989_wrapper(float* arg_0, float** arg_1)
+            static void globalR3SetCameraMatrix989_wrapper(float* arg_0, float** arg_1)
             {
                globalR3SetCameraMatrix989_user(arg_0, arg_1, globalR3SetCameraMatrix989_next);
             };
-            void globalR3SetLoopTime990_wrapper(float arg_0)
+            static void globalR3SetLoopTime990_wrapper(float arg_0)
             {
                globalR3SetLoopTime990_user(arg_0, globalR3SetLoopTime990_next);
             };
-            void globalR3SetMinFPS991_wrapper(float arg_0)
+            static void globalR3SetMinFPS991_wrapper(float arg_0)
             {
                globalR3SetMinFPS991_user(arg_0, globalR3SetMinFPS991_next);
             };
-            void globalR3SetTime992_wrapper(float arg_0)
+            static void globalR3SetTime992_wrapper(float arg_0)
             {
                globalR3SetTime992_user(arg_0, globalR3SetTime992_next);
             };
-            void globalR3SetViewPort993_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
+            static void globalR3SetViewPort993_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
             {
                globalR3SetViewPort993_user(arg_0, arg_1, arg_2, arg_3, globalR3SetViewPort993_next);
             };
-            uint8_t* globalRGBFromDWORDAligned994_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2, unsigned int arg_3)
+            static uint8_t* globalRGBFromDWORDAligned994_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2, unsigned int arg_3)
             {
                return globalRGBFromDWORDAligned994_user(arg_0, arg_1, arg_2, arg_3, globalRGBFromDWORDAligned994_next);
             };
-            int64_t globalRGBToJpegFile995_wrapper(char* arg_0, uint8_t* arg_1, unsigned int arg_2, unsigned int arg_3, int arg_4, int arg_5)
+            static int64_t globalRGBToJpegFile995_wrapper(char* arg_0, uint8_t* arg_1, unsigned int arg_2, unsigned int arg_3, int arg_4, int arg_5)
             {
                return globalRGBToJpegFile995_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalRGBToJpegFile995_next);
             };
-            void globalRTMoiveGetCameraMatrix996_wrapper(float** arg_0)
+            static void globalRTMoiveGetCameraMatrix996_wrapper(float** arg_0)
             {
                globalRTMoiveGetCameraMatrix996_user(arg_0, globalRTMoiveGetCameraMatrix996_next);
             };
-            void globalRTMoiveGetCameraPos997_wrapper(float* arg_0)
+            static void globalRTMoiveGetCameraPos997_wrapper(float* arg_0)
             {
                globalRTMoiveGetCameraPos997_user(arg_0, globalRTMoiveGetCameraPos997_next);
             };
-            void globalRTMovieAddState998_wrapper(uint32_t arg_0)
+            static void globalRTMovieAddState998_wrapper(uint32_t arg_0)
             {
                globalRTMovieAddState998_user(arg_0, globalRTMovieAddState998_next);
             };
-            void globalRTMovieCreate999_wrapper(char* arg_0, struct CLevel* arg_1)
+            static void globalRTMovieCreate999_wrapper(char* arg_0, struct CLevel* arg_1)
             {
                globalRTMovieCreate999_user(arg_0, arg_1, globalRTMovieCreate999_next);
             };
-            void globalRTMovieFrameMove1000_wrapper()
+            static void globalRTMovieFrameMove1000_wrapper()
             {
                globalRTMovieFrameMove1000_user(globalRTMovieFrameMove1000_next);
             };
-            uint32_t globalRTMovieGetState1001_wrapper()
+            static uint32_t globalRTMovieGetState1001_wrapper()
             {
                return globalRTMovieGetState1001_user(globalRTMovieGetState1001_next);
             };
-            void globalRTMoviePause1002_wrapper(int arg_0)
+            static void globalRTMoviePause1002_wrapper(int arg_0)
             {
                globalRTMoviePause1002_user(arg_0, globalRTMoviePause1002_next);
             };
-            void globalRTMovieRelease1003_wrapper()
+            static void globalRTMovieRelease1003_wrapper()
             {
                globalRTMovieRelease1003_user(globalRTMovieRelease1003_next);
             };
-            void globalRTMovieRender1004_wrapper()
+            static void globalRTMovieRender1004_wrapper()
             {
                globalRTMovieRender1004_user(globalRTMovieRender1004_next);
             };
-            void globalRTMovieSetState1005_wrapper(uint32_t arg_0)
+            static void globalRTMovieSetState1005_wrapper(uint32_t arg_0)
             {
                globalRTMovieSetState1005_user(arg_0, globalRTMovieSetState1005_next);
             };
-            void globalRTMovieSkipShadowState1006_wrapper(int arg_0)
+            static void globalRTMovieSkipShadowState1006_wrapper(int arg_0)
             {
                globalRTMovieSkipShadowState1006_user(arg_0, globalRTMovieSkipShadowState1006_next);
             };
-            void globalRTMovieStartPlay1007_wrapper(int arg_0)
+            static void globalRTMovieStartPlay1007_wrapper(int arg_0)
             {
                globalRTMovieStartPlay1007_user(arg_0, globalRTMovieStartPlay1007_next);
             };
-            void globalRTMovieSubState1008_wrapper(uint32_t arg_0)
+            static void globalRTMovieSubState1008_wrapper(uint32_t arg_0)
             {
                globalRTMovieSubState1008_user(arg_0, globalRTMovieSubState1008_next);
             };
-            void* globalReAlloc1009_wrapper(void* arg_0, int arg_1, int arg_2)
+            static void* globalReAlloc1009_wrapper(void* arg_0, int arg_1, int arg_2)
             {
                return globalReAlloc1009_user(arg_0, arg_1, arg_2, globalReAlloc1009_next);
             };
-            void globalReLoadMaterial1010_wrapper(char* arg_0, struct _R3MATERIAL* arg_1)
+            static void globalReLoadMaterial1010_wrapper(char* arg_0, struct _R3MATERIAL* arg_1)
             {
                globalReLoadMaterial1010_user(arg_0, arg_1, globalReLoadMaterial1010_next);
             };
-            void globalReMoveCamera1011_wrapper(_MOVE_CAMERA* arg_0)
+            static void globalReMoveCamera1011_wrapper(_MOVE_CAMERA* arg_0)
             {
                globalReMoveCamera1011_user(arg_0, globalReMoveCamera1011_next);
             };
-            void globalReleaesR3MP31012_wrapper()
+            static void globalReleaesR3MP31012_wrapper()
             {
                globalReleaesR3MP31012_user(globalReleaesR3MP31012_next);
             };
-            void globalReleaesStreamR3MP31013_wrapper()
+            static void globalReleaesStreamR3MP31013_wrapper()
             {
                globalReleaesStreamR3MP31013_user(globalReleaesStreamR3MP31013_next);
             };
-            void globalReleaseAllSpriteTexMem1014_wrapper()
+            static void globalReleaseAllSpriteTexMem1014_wrapper()
             {
                globalReleaseAllSpriteTexMem1014_user(globalReleaseAllSpriteTexMem1014_next);
             };
-            void globalReleaseBlurShader1015_wrapper()
+            static void globalReleaseBlurShader1015_wrapper()
             {
                globalReleaseBlurShader1015_user(globalReleaseBlurShader1015_next);
             };
-            void globalReleaseBlurVBuffer1016_wrapper()
+            static void globalReleaseBlurVBuffer1016_wrapper()
             {
                globalReleaseBlurVBuffer1016_user(globalReleaseBlurVBuffer1016_next);
             };
-            void globalReleaseConsole1017_wrapper()
+            static void globalReleaseConsole1017_wrapper()
             {
                globalReleaseConsole1017_user(globalReleaseConsole1017_next);
             };
-            void globalReleaseCore1018_wrapper()
+            static void globalReleaseCore1018_wrapper()
             {
                globalReleaseCore1018_user(globalReleaseCore1018_next);
             };
-            void globalReleaseFullScreenEffect1019_wrapper()
+            static void globalReleaseFullScreenEffect1019_wrapper()
             {
                globalReleaseFullScreenEffect1019_user(globalReleaseFullScreenEffect1019_next);
             };
-            void globalReleaseFunctionKey1020_wrapper()
+            static void globalReleaseFunctionKey1020_wrapper()
             {
                globalReleaseFunctionKey1020_user(globalReleaseFunctionKey1020_next);
             };
-            void globalReleaseJmalloc1021_wrapper()
+            static void globalReleaseJmalloc1021_wrapper()
             {
                globalReleaseJmalloc1021_user(globalReleaseJmalloc1021_next);
             };
-            void globalReleaseLightMap1022_wrapper()
+            static void globalReleaseLightMap1022_wrapper()
             {
                globalReleaseLightMap1022_user(globalReleaseLightMap1022_next);
             };
-            void globalReleaseMainMaterial1023_wrapper()
+            static void globalReleaseMainMaterial1023_wrapper()
             {
                globalReleaseMainMaterial1023_user(globalReleaseMainMaterial1023_next);
             };
-            void globalReleaseR3Engine1024_wrapper()
+            static void globalReleaseR3Engine1024_wrapper()
             {
                globalReleaseR3Engine1024_user(globalReleaseR3Engine1024_next);
             };
-            void globalReleaseR3Particle1025_wrapper()
+            static void globalReleaseR3Particle1025_wrapper()
             {
                globalReleaseR3Particle1025_user(globalReleaseR3Particle1025_next);
             };
-            void globalReleaseR3SoundSystem1026_wrapper()
+            static void globalReleaseR3SoundSystem1026_wrapper()
             {
                globalReleaseR3SoundSystem1026_user(globalReleaseR3SoundSystem1026_next);
             };
-            void globalReleaseR3Text1027_wrapper()
+            static void globalReleaseR3Text1027_wrapper()
             {
                globalReleaseR3Text1027_user(globalReleaseR3Text1027_next);
             };
-            void globalReleaseSpriteManager1028_wrapper(CSprite* arg_0)
+            static void globalReleaseSpriteManager1028_wrapper(CSprite* arg_0)
             {
                globalReleaseSpriteManager1028_user(arg_0, globalReleaseSpriteManager1028_next);
             };
-            void globalReleaseSpriteManager1029_wrapper()
+            static void globalReleaseSpriteManager1029_wrapper()
             {
                globalReleaseSpriteManager1029_user(globalReleaseSpriteManager1029_next);
             };
-            void globalReleaseSubMaterial1030_wrapper(struct _R3MATERIAL* arg_0)
+            static void globalReleaseSubMaterial1030_wrapper(struct _R3MATERIAL* arg_0)
             {
                globalReleaseSubMaterial1030_user(arg_0, globalReleaseSubMaterial1030_next);
             };
-            void globalReleaseSystemTexture1031_wrapper()
+            static void globalReleaseSystemTexture1031_wrapper()
             {
                globalReleaseSystemTexture1031_user(globalReleaseSystemTexture1031_next);
             };
-            void globalReleaseVertexShaderList1032_wrapper()
+            static void globalReleaseVertexShaderList1032_wrapper()
             {
                globalReleaseVertexShaderList1032_user(globalReleaseVertexShaderList1032_next);
             };
-            void globalReleaseWaveList1033_wrapper()
+            static void globalReleaseWaveList1033_wrapper()
             {
                globalReleaseWaveList1033_user(globalReleaseWaveList1033_next);
             };
-            void globalReleaseWebBrowser1034_wrapper()
+            static void globalReleaseWebBrowser1034_wrapper()
             {
                globalReleaseWebBrowser1034_user(globalReleaseWebBrowser1034_next);
             };
-            void globalResetTexMemSize1035_wrapper()
+            static void globalResetTexMemSize1035_wrapper()
             {
                globalResetTexMemSize1035_user(globalResetTexMemSize1035_next);
             };
-            void globalResetTotalVertexBufferInfo1036_wrapper()
+            static void globalResetTotalVertexBufferInfo1036_wrapper()
             {
                globalResetTotalVertexBufferInfo1036_user(globalResetTotalVertexBufferInfo1036_next);
             };
-            void globalResetVertexBufferCache1037_wrapper()
+            static void globalResetVertexBufferCache1037_wrapper()
             {
                globalResetVertexBufferCache1037_user(globalResetVertexBufferCache1037_next);
             };
-            void globalRestoreAllSpriteTexMem1038_wrapper()
+            static void globalRestoreAllSpriteTexMem1038_wrapper()
             {
                globalRestoreAllSpriteTexMem1038_user(globalRestoreAllSpriteTexMem1038_next);
             };
-            void globalRestoreSpriteManager1039_wrapper(struct CSprite* arg_0)
+            static void globalRestoreSpriteManager1039_wrapper(struct CSprite* arg_0)
             {
                globalRestoreSpriteManager1039_user(arg_0, globalRestoreSpriteManager1039_next);
             };
-            void globalRestoreSystemTexture1040_wrapper()
+            static void globalRestoreSystemTexture1040_wrapper()
             {
                globalRestoreSystemTexture1040_user(globalRestoreSystemTexture1040_next);
             };
-            void globalRijndael_VC60Workaround1041_wrapper()
+            static void globalRijndael_VC60Workaround1041_wrapper()
             {
                globalRijndael_VC60Workaround1041_user(globalRijndael_VC60Workaround1041_next);
             };
-            unsigned int globalRotateLeftBits1043_wrapper(unsigned int x, unsigned int n)
+            static unsigned int globalRotateLeftBits1043_wrapper(unsigned int x, unsigned int n)
             {
                return globalRotateLeftBits1043_user(x, n, globalRotateLeftBits1043_next);
             };
-            void globalRound11045_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
+            static void globalRound11045_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
             {
                globalRound11045_user(output, x, y, z, decode, bits, AC, globalRound11045_next);
             };
-            void globalRound21047_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
+            static void globalRound21047_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
             {
                globalRound21047_user(output, x, y, z, decode, bits, AC, globalRound21047_next);
             };
-            void globalRound31049_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
+            static void globalRound31049_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
             {
                globalRound31049_user(output, x, y, z, decode, bits, AC, globalRound31049_next);
             };
-            void globalRound41051_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
+            static void globalRound41051_wrapper(unsigned int* output, unsigned int x, unsigned int y, unsigned int z, unsigned int decode, unsigned int bits, unsigned int AC)
             {
                globalRound41051_user(output, x, y, z, decode, bits, AC, globalRound41051_next);
             };
-            void globalSaveBMP1052_wrapper(char* Filename, int64_t arg_0, int arg_1, int arg_2, uint8_t* arg_3)
+            static void globalSaveBMP1052_wrapper(char* Filename, int64_t arg_0, int arg_1, int arg_2, uint8_t* arg_3)
             {
                globalSaveBMP1052_user(Filename, arg_0, arg_1, arg_2, arg_3, globalSaveBMP1052_next);
             };
-            void globalSaveJPG1053_wrapper(char* arg_0, int arg_1, int arg_2, int arg_3, uint8_t* arg_4)
+            static void globalSaveJPG1053_wrapper(char* arg_0, int arg_1, int arg_2, int arg_3, uint8_t* arg_4)
             {
                globalSaveJPG1053_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalSaveJPG1053_next);
             };
-            int64_t globalScanCodeToVKCode1054_wrapper(int arg_0)
+            static int64_t globalScanCodeToVKCode1054_wrapper(int arg_0)
             {
                return globalScanCodeToVKCode1054_user(arg_0, globalScanCodeToVKCode1054_next);
             };
-            struct CUserDB* globalSearchAvatorWithCMS1056_wrapper(struct CUserDB* pList, int nMax, char* pCMS)
+            static struct CUserDB* globalSearchAvatorWithCMS1056_wrapper(struct CUserDB* pList, int nMax, char* pCMS)
             {
                return globalSearchAvatorWithCMS1056_user(pList, nMax, pCMS, globalSearchAvatorWithCMS1056_next);
             };
-            struct CUserDB* globalSearchAvatorWithName1058_wrapper(struct CUserDB* pList, int nMax, char* pwszName)
+            static struct CUserDB* globalSearchAvatorWithName1058_wrapper(struct CUserDB* pList, int nMax, char* pwszName)
             {
                return globalSearchAvatorWithName1058_user(pList, nMax, pwszName, globalSearchAvatorWithName1058_next);
             };
-            struct CMonster* globalSearchEmptyMonster1060_wrapper(bool bWithoutFail)
+            static struct CMonster* globalSearchEmptyMonster1060_wrapper(bool bWithoutFail)
             {
                return globalSearchEmptyMonster1060_user(bWithoutFail, globalSearchEmptyMonster1060_next);
             };
-            SearchJobCommandFn_ret  globalSearchJobCommandFn1062_wrapper(char* pszCommand)
+            static SearchJobCommandFn_ret  globalSearchJobCommandFn1062_wrapper(char* pszCommand)
             {
                return globalSearchJobCommandFn1062_user(pszCommand, globalSearchJobCommandFn1062_next);
             };
-            SearchMissionCommandFn_ret  globalSearchMissionCommandFn1064_wrapper(char* pszCommand)
+            static SearchMissionCommandFn_ret  globalSearchMissionCommandFn1064_wrapper(char* pszCommand)
             {
                return globalSearchMissionCommandFn1064_user(pszCommand, globalSearchMissionCommandFn1064_next);
             };
-            SearchQuestCommandFn_ret  globalSearchQuestCommandFn1066_wrapper(char* pszCommand)
+            static SearchQuestCommandFn_ret  globalSearchQuestCommandFn1066_wrapper(char* pszCommand)
             {
                return globalSearchQuestCommandFn1066_user(pszCommand, globalSearchQuestCommandFn1066_next);
             };
-            unsigned int globalSendLoop1068_wrapper(void* pVoid)
+            static unsigned int globalSendLoop1068_wrapper(void* pVoid)
             {
                return globalSendLoop1068_user(pVoid, globalSendLoop1068_next);
             };
-            void globalSendMsg_EconomyDataToWeb1070_wrapper()
+            static void globalSendMsg_EconomyDataToWeb1070_wrapper()
             {
                globalSendMsg_EconomyDataToWeb1070_user(globalSendMsg_EconomyDataToWeb1070_next);
             };
-            struct CDarkHole* globalSerarchEmptyDarkHole1072_wrapper()
+            static struct CDarkHole* globalSerarchEmptyDarkHole1072_wrapper()
             {
                return globalSerarchEmptyDarkHole1072_user(globalSerarchEmptyDarkHole1072_next);
             };
-            void globalServerProgramExit1074_wrapper(char* pszCall, bool bSave)
+            static void globalServerProgramExit1074_wrapper(char* pszCall, bool bSave)
             {
                globalServerProgramExit1074_user(pszCall, bSave, globalServerProgramExit1074_next);
             };
-            void globalSetConsoleStateB1075_wrapper(int arg_0, int arg_1)
+            static void globalSetConsoleStateB1075_wrapper(int arg_0, int arg_1)
             {
                globalSetConsoleStateB1075_user(arg_0, arg_1, globalSetConsoleStateB1075_next);
             };
-            void globalSetContrast1076_wrapper(float* arg_0)
+            static void globalSetContrast1076_wrapper(float* arg_0)
             {
                globalSetContrast1076_user(arg_0, globalSetContrast1076_next);
             };
-            void globalSetContrast1077_wrapper(uint8_t* Src)
+            static void globalSetContrast1077_wrapper(uint8_t* Src)
             {
                globalSetContrast1077_user(Src, globalSetContrast1077_next);
             };
-            void globalSetDDSTexNameDebug1078_wrapper(char* arg_0)
+            static void globalSetDDSTexNameDebug1078_wrapper(char* arg_0)
             {
                globalSetDDSTexNameDebug1078_user(arg_0, globalSetDDSTexNameDebug1078_next);
             };
-            void globalSetDDSTexSizeDebug1079_wrapper(uint32_t arg_0)
+            static void globalSetDDSTexSizeDebug1079_wrapper(uint32_t arg_0)
             {
                globalSetDDSTexSizeDebug1079_user(arg_0, globalSetDDSTexSizeDebug1079_next);
             };
-            void globalSetDefaultFlags1080_wrapper()
+            static void globalSetDefaultFlags1080_wrapper()
             {
                globalSetDefaultFlags1080_user(globalSetDefaultFlags1080_next);
             };
-            void globalSetDefaultFov1081_wrapper()
+            static void globalSetDefaultFov1081_wrapper()
             {
                globalSetDefaultFov1081_user(globalSetDefaultFov1081_next);
             };
-            void globalSetDetailTexVS1082_wrapper(struct D3DXMATRIX* arg_0)
+            static void globalSetDetailTexVS1082_wrapper(struct D3DXMATRIX* arg_0)
             {
                globalSetDetailTexVS1082_user(arg_0, globalSetDetailTexVS1082_next);
             };
-            void globalSetDynamicLight1083_wrapper(float* arg_0, float arg_1, uint32_t arg_2, void* arg_3, int arg_4, uint32_t arg_5)
+            static void globalSetDynamicLight1083_wrapper(float* arg_0, float arg_1, uint32_t arg_2, void* arg_3, int arg_4, uint32_t arg_5)
             {
                globalSetDynamicLight1083_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalSetDynamicLight1083_next);
             };
-            void globalSetErrorButRunMessageProc1084_wrapper(void (WINAPIV* arg_0)(char*))
+            static void globalSetErrorButRunMessageProc1084_wrapper(void (WINAPIV* arg_0)(char*))
             {
                globalSetErrorButRunMessageProc1084_user(arg_0, globalSetErrorButRunMessageProc1084_next);
             };
-            void globalSetErrorMessageProc1085_wrapper(void (WINAPIV* arg_0)(char*))
+            static void globalSetErrorMessageProc1085_wrapper(void (WINAPIV* arg_0)(char*))
             {
                globalSetErrorMessageProc1085_user(arg_0, globalSetErrorMessageProc1085_next);
             };
-            void globalSetFadeFactor1086_wrapper(uint32_t arg_0, float arg_1, void* arg_2)
+            static void globalSetFadeFactor1086_wrapper(uint32_t arg_0, float arg_1, void* arg_2)
             {
                globalSetFadeFactor1086_user(arg_0, arg_1, arg_2, globalSetFadeFactor1086_next);
             };
-            void globalSetFadeIn1087_wrapper(uint32_t arg_0, float arg_1, float arg_2)
+            static void globalSetFadeIn1087_wrapper(uint32_t arg_0, float arg_1, float arg_2)
             {
                globalSetFadeIn1087_user(arg_0, arg_1, arg_2, globalSetFadeIn1087_next);
             };
-            void globalSetFadeOut1088_wrapper(uint32_t arg_0, float arg_1, float arg_2)
+            static void globalSetFadeOut1088_wrapper(uint32_t arg_0, float arg_1, float arg_2)
             {
                globalSetFadeOut1088_user(arg_0, arg_1, arg_2, globalSetFadeOut1088_next);
             };
-            void globalSetFadeSky1089_wrapper(uint32_t arg_0, float arg_1)
+            static void globalSetFadeSky1089_wrapper(uint32_t arg_0, float arg_1)
             {
                globalSetFadeSky1089_user(arg_0, arg_1, globalSetFadeSky1089_next);
             };
-            void globalSetFadeTex1090_wrapper(uint32_t arg_0, float arg_1, void* arg_2)
+            static void globalSetFadeTex1090_wrapper(uint32_t arg_0, float arg_1, void* arg_2)
             {
                globalSetFadeTex1090_user(arg_0, arg_1, arg_2, globalSetFadeTex1090_next);
             };
-            void globalSetFov1091_wrapper(float arg_0)
+            static void globalSetFov1091_wrapper(float arg_0)
             {
                globalSetFov1091_user(arg_0, globalSetFov1091_next);
             };
-            void globalSetFreePointer1092_wrapper()
+            static void globalSetFreePointer1092_wrapper()
             {
                globalSetFreePointer1092_user(globalSetFreePointer1092_next);
             };
-            void globalSetFrustumNormalPlane1093_wrapper()
+            static void globalSetFrustumNormalPlane1093_wrapper()
             {
                globalSetFrustumNormalPlane1093_user(globalSetFrustumNormalPlane1093_next);
             };
-            void globalSetGamma1094_wrapper(float arg_0, int arg_1)
+            static void globalSetGamma1094_wrapper(float arg_0, int arg_1)
             {
                globalSetGamma1094_user(arg_0, arg_1, globalSetGamma1094_next);
             };
-            int64_t globalSetGlobalMusicVolume1095_wrapper(float arg_0)
+            static int64_t globalSetGlobalMusicVolume1095_wrapper(float arg_0)
             {
                return globalSetGlobalMusicVolume1095_user(arg_0, globalSetGlobalMusicVolume1095_next);
             };
-            int64_t globalSetGlobalWavVolume1096_wrapper(float arg_0)
+            static int64_t globalSetGlobalWavVolume1096_wrapper(float arg_0)
             {
                return globalSetGlobalWavVolume1096_user(arg_0, globalSetGlobalWavVolume1096_next);
             };
-            void globalSetGrassVS1097_wrapper(float arg_0, float* arg_1, float arg_2, uint32_t arg_3)
+            static void globalSetGrassVS1097_wrapper(float arg_0, float* arg_1, float arg_2, uint32_t arg_3)
             {
                globalSetGrassVS1097_user(arg_0, arg_1, arg_2, arg_3, globalSetGrassVS1097_next);
             };
-            void globalSetLightMap1098_wrapper(int32_t arg_0)
+            static void globalSetLightMap1098_wrapper(int32_t arg_0)
             {
                globalSetLightMap1098_user(arg_0, globalSetLightMap1098_next);
             };
-            void globalSetLitGrassVS1099_wrapper(float arg_0, float* arg_1, float arg_2, uint32_t arg_3, float* arg_4)
+            static void globalSetLitGrassVS1099_wrapper(float arg_0, float* arg_1, float arg_2, uint32_t arg_3, float* arg_4)
             {
                globalSetLitGrassVS1099_user(arg_0, arg_1, arg_2, arg_3, arg_4, globalSetLitGrassVS1099_next);
             };
-            void globalSetMainLight1100_wrapper(float* arg_0)
+            static void globalSetMainLight1100_wrapper(float* arg_0)
             {
                globalSetMainLight1100_user(arg_0, globalSetMainLight1100_next);
             };
-            void globalSetMatAlphaColor1101_wrapper(uint32_t arg_0)
+            static void globalSetMatAlphaColor1101_wrapper(uint32_t arg_0)
             {
                globalSetMatAlphaColor1101_user(arg_0, globalSetMatAlphaColor1101_next);
             };
-            void globalSetMergeFileManager1102_wrapper(struct CMergeFileManager* arg_0)
+            static void globalSetMergeFileManager1102_wrapper(struct CMergeFileManager* arg_0)
             {
                globalSetMergeFileManager1102_user(arg_0, globalSetMergeFileManager1102_next);
             };
-            void globalSetMotionBlurLength1103_wrapper(float arg_0)
+            static void globalSetMotionBlurLength1103_wrapper(float arg_0)
             {
                globalSetMotionBlurLength1103_user(arg_0, globalSetMotionBlurLength1103_next);
             };
-            void globalSetMultiLayerCamera1104_wrapper(float* arg_0)
+            static void globalSetMultiLayerCamera1104_wrapper(float* arg_0)
             {
                globalSetMultiLayerCamera1104_user(arg_0, globalSetMultiLayerCamera1104_next);
             };
-            void globalSetMultiLayerTime1105_wrapper(float arg_0)
+            static void globalSetMultiLayerTime1105_wrapper(float arg_0)
             {
                globalSetMultiLayerTime1105_user(arg_0, globalSetMultiLayerTime1105_next);
             };
-            void globalSetNoLodTextere1106_wrapper()
+            static void globalSetNoLodTextere1106_wrapper()
             {
                globalSetNoLodTextere1106_user(globalSetNoLodTextere1106_next);
             };
-            void globalSetNowR3D3DTexCnt1107_wrapper(int arg_0)
+            static void globalSetNowR3D3DTexCnt1107_wrapper(int arg_0)
             {
                globalSetNowR3D3DTexCnt1107_user(arg_0, globalSetNowR3D3DTexCnt1107_next);
             };
-            void globalSetNowR3TexCnt1108_wrapper(int arg_0)
+            static void globalSetNowR3TexCnt1108_wrapper(int arg_0)
             {
                globalSetNowR3TexCnt1108_user(arg_0, globalSetNowR3TexCnt1108_next);
             };
-            void globalSetOpStack1109_wrapper(int arg_0)
+            static void globalSetOpStack1109_wrapper(int arg_0)
             {
                globalSetOpStack1109_user(arg_0, globalSetOpStack1109_next);
             };
-            void globalSetOutLineColor1110_wrapper(uint32_t arg_0)
+            static void globalSetOutLineColor1110_wrapper(uint32_t arg_0)
             {
                globalSetOutLineColor1110_user(arg_0, globalSetOutLineColor1110_next);
             };
-            void globalSetOutLineColorFont161111_wrapper(uint32_t arg_0)
+            static void globalSetOutLineColorFont161111_wrapper(uint32_t arg_0)
             {
                globalSetOutLineColorFont161111_user(arg_0, globalSetOutLineColorFont161111_next);
             };
-            void globalSetOutLineColorFont241112_wrapper(uint32_t arg_0)
+            static void globalSetOutLineColorFont241112_wrapper(uint32_t arg_0)
             {
                globalSetOutLineColorFont241112_user(arg_0, globalSetOutLineColorFont241112_next);
             };
-            void globalSetPlayMusicState1113_wrapper(int arg_0)
+            static void globalSetPlayMusicState1113_wrapper(int arg_0)
             {
                globalSetPlayMusicState1113_user(arg_0, globalSetPlayMusicState1113_next);
             };
-            void globalSetPlayWaveState1114_wrapper(int arg_0)
+            static void globalSetPlayWaveState1114_wrapper(int arg_0)
             {
                globalSetPlayWaveState1114_user(arg_0, globalSetPlayWaveState1114_next);
             };
-            void globalSetProjectShadow1115_wrapper(float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
+            static void globalSetProjectShadow1115_wrapper(float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
             {
                globalSetProjectShadow1115_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, globalSetProjectShadow1115_next);
             };
-            void globalSetR3D3DTexture1116_wrapper(uint32_t arg_0, uint32_t arg_1)
+            static void globalSetR3D3DTexture1116_wrapper(uint32_t arg_0, uint32_t arg_1)
             {
                globalSetR3D3DTexture1116_user(arg_0, arg_1, globalSetR3D3DTexture1116_next);
             };
-            void globalSetR3TexManageFlag1117_wrapper(uint32_t arg_0)
+            static void globalSetR3TexManageFlag1117_wrapper(uint32_t arg_0)
             {
                globalSetR3TexManageFlag1117_user(arg_0, globalSetR3TexManageFlag1117_next);
             };
-            void globalSetR3TextFont1118_wrapper(char* Source, uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
+            static void globalSetR3TextFont1118_wrapper(char* Source, uint32_t arg_0, uint32_t arg_1, uint32_t arg_2)
             {
                globalSetR3TextFont1118_user(Source, arg_0, arg_1, arg_2, globalSetR3TextFont1118_next);
             };
-            void globalSetReLoadState1119_wrapper(int arg_0)
+            static void globalSetReLoadState1119_wrapper(int arg_0)
             {
                globalSetReLoadState1119_user(arg_0, globalSetReLoadState1119_next);
             };
-            void globalSetReflectionState1120_wrapper(int arg_0)
+            static void globalSetReflectionState1120_wrapper(int arg_0)
             {
                globalSetReflectionState1120_user(arg_0, globalSetReflectionState1120_next);
             };
-            void globalSetReflectionVS1121_wrapper()
+            static void globalSetReflectionVS1121_wrapper()
             {
                globalSetReflectionVS1121_user(globalSetReflectionVS1121_next);
             };
-            void globalSetSkipOneBboShasi11122_wrapper(int arg_0)
+            static void globalSetSkipOneBboShasi11122_wrapper(int arg_0)
             {
                globalSetSkipOneBboShasi11122_user(arg_0, globalSetSkipOneBboShasi11122_next);
             };
-            int64_t globalSetSkyVS1123_wrapper()
+            static int64_t globalSetSkyVS1123_wrapper()
             {
                return globalSetSkyVS1123_user(globalSetSkyVS1123_next);
             };
-            void globalSetStateFullScreenEffect1124_wrapper(uint32_t arg_0)
+            static void globalSetStateFullScreenEffect1124_wrapper(uint32_t arg_0)
             {
                globalSetStateFullScreenEffect1124_user(arg_0, globalSetStateFullScreenEffect1124_next);
             };
-            void globalSetTextureRenderTargetFrameBuffer1125_wrapper(int arg_0)
+            static void globalSetTextureRenderTargetFrameBuffer1125_wrapper(int arg_0)
             {
                globalSetTextureRenderTargetFrameBuffer1125_user(arg_0, globalSetTextureRenderTargetFrameBuffer1125_next);
             };
-            void globalSetTimerRate1126_wrapper(float arg_0)
+            static void globalSetTimerRate1126_wrapper(float arg_0)
             {
                globalSetTimerRate1126_user(arg_0, globalSetTimerRate1126_next);
             };
-            void globalSetTransformClipInfo1127_wrapper(float arg_0, float arg_1, float arg_2, float arg_3)
+            static void globalSetTransformClipInfo1127_wrapper(float arg_0, float arg_1, float arg_2, float arg_3)
             {
                globalSetTransformClipInfo1127_user(arg_0, arg_1, arg_2, arg_3, globalSetTransformClipInfo1127_next);
             };
-            void globalSetVPIPTex11128_wrapper(void* arg_0, void* arg_1)
+            static void globalSetVPIPTex11128_wrapper(void* arg_0, void* arg_1)
             {
                globalSetVPIPTex11128_user(arg_0, arg_1, globalSetVPIPTex11128_next);
             };
-            void globalSetVPIPTex1IndexPrimitive1129_wrapper(void* arg_0, void* arg_1)
+            static void globalSetVPIPTex1IndexPrimitive1129_wrapper(void* arg_0, void* arg_1)
             {
                globalSetVPIPTex1IndexPrimitive1129_user(arg_0, arg_1, globalSetVPIPTex1IndexPrimitive1129_next);
             };
-            void globalSetVPIPTex1IndexPrimitiveTL1130_wrapper(void* arg_0, void* arg_1)
+            static void globalSetVPIPTex1IndexPrimitiveTL1130_wrapper(void* arg_0, void* arg_1)
             {
                globalSetVPIPTex1IndexPrimitiveTL1130_user(arg_0, arg_1, globalSetVPIPTex1IndexPrimitiveTL1130_next);
             };
-            void globalSetVPIPTex21131_wrapper(void* arg_0, void* arg_1)
+            static void globalSetVPIPTex21131_wrapper(void* arg_0, void* arg_1)
             {
                globalSetVPIPTex21131_user(arg_0, arg_1, globalSetVPIPTex21131_next);
             };
-            void globalSetViewPortArea1132_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
+            static void globalSetViewPortArea1132_wrapper(int32_t arg_0, int32_t arg_1, int32_t arg_2, int32_t arg_3)
             {
                globalSetViewPortArea1132_user(arg_0, arg_1, arg_2, arg_3, globalSetViewPortArea1132_next);
             };
-            int64_t globalSetVolumeMP31133_wrapper(float arg_0)
+            static int64_t globalSetVolumeMP31133_wrapper(float arg_0)
             {
                return globalSetVolumeMP31133_user(arg_0, globalSetVolumeMP31133_next);
             };
-            int64_t globalSetVolumeStreamMP31134_wrapper(float arg_0)
+            static int64_t globalSetVolumeStreamMP31134_wrapper(float arg_0)
             {
                return globalSetVolumeStreamMP31134_user(arg_0, globalSetVolumeStreamMP31134_next);
             };
-            void globalSetWarningMessageProc1135_wrapper(void (WINAPIV* arg_0)(char*))
+            static void globalSetWarningMessageProc1135_wrapper(void (WINAPIV* arg_0)(char*))
             {
                globalSetWarningMessageProc1135_user(arg_0, globalSetWarningMessageProc1135_next);
             };
-            void globalSetWaveVolAndPan1136_wrapper(uint32_t arg_0, float arg_1, float arg_2)
+            static void globalSetWaveVolAndPan1136_wrapper(uint32_t arg_0, float arg_1, float arg_2)
             {
                globalSetWaveVolAndPan1136_user(arg_0, arg_1, arg_2, globalSetWaveVolAndPan1136_next);
             };
-            void globalSetWorldViewMatrixVS1137_wrapper(float** arg_0)
+            static void globalSetWorldViewMatrixVS1137_wrapper(float** arg_0)
             {
                globalSetWorldViewMatrixVS1137_user(arg_0, globalSetWorldViewMatrixVS1137_next);
             };
-            void globalShadowBeginScene1138_wrapper()
+            static void globalShadowBeginScene1138_wrapper()
             {
                globalShadowBeginScene1138_user(globalShadowBeginScene1138_next);
             };
-            void globalShadowEndScene1139_wrapper()
+            static void globalShadowEndScene1139_wrapper()
             {
                globalShadowEndScene1139_user(globalShadowEndScene1139_next);
             };
-            void globalShortToFloat1141_wrapper(int16_t* pShort, float* pFloat, int size)
+            static void globalShortToFloat1141_wrapper(int16_t* pShort, float* pFloat, int size)
             {
                globalShortToFloat1141_user(pShort, pFloat, size, globalShortToFloat1141_next);
             };
-            float globalSmoothedNoise11142_wrapper(int32_t arg_0)
+            static float globalSmoothedNoise11142_wrapper(int32_t arg_0)
             {
                return globalSmoothedNoise11142_user(arg_0, globalSmoothedNoise11142_next);
             };
-            float globalSmoothedNoise11143_wrapper(int32_t arg_0, int32_t arg_1)
+            static float globalSmoothedNoise11143_wrapper(int32_t arg_0, int32_t arg_1)
             {
                return globalSmoothedNoise11143_user(arg_0, arg_1, globalSmoothedNoise11143_next);
             };
-            uint64_t globalSplitString1145_wrapper(char* strSrc, char* _Delim, struct std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >* stringlist)
-            {
-               return globalSplitString1145_user(strSrc, _Delim, stringlist, globalSplitString1145_next);
-            };
-            void globalStopR3MP31146_wrapper()
+            static void globalStopR3MP31146_wrapper()
             {
                globalStopR3MP31146_user(globalStopR3MP31146_next);
             };
-            void globalStopStreamR3MP31147_wrapper()
+            static void globalStopStreamR3MP31147_wrapper()
             {
                globalStopStreamR3MP31147_user(globalStopStreamR3MP31147_next);
             };
-            void globalStopWave1148_wrapper(uint32_t arg_0)
+            static void globalStopWave1148_wrapper(uint32_t arg_0)
             {
                globalStopWave1148_user(arg_0, globalStopWave1148_next);
             };
-            void globalStripEXT1149_wrapper(char* arg_0)
+            static void globalStripEXT1149_wrapper(char* arg_0)
             {
                globalStripEXT1149_user(arg_0, globalStripEXT1149_next);
             };
-            void globalStripFinalPath1150_wrapper(char* arg_0)
+            static void globalStripFinalPath1150_wrapper(char* arg_0)
             {
                globalStripFinalPath1150_user(arg_0, globalStripFinalPath1150_next);
             };
-            void globalStripName1151_wrapper(char* arg_0)
+            static void globalStripName1151_wrapper(char* arg_0)
             {
                globalStripName1151_user(arg_0, globalStripName1151_next);
             };
-            void globalStripPath1152_wrapper(char* arg_0)
+            static void globalStripPath1152_wrapper(char* arg_0)
             {
                globalStripPath1152_user(arg_0, globalStripPath1152_next);
             };
-            void globalTestAllGroup1153_wrapper(void* arg_0, void* arg_1, int arg_2, int arg_3)
+            static void globalTestAllGroup1153_wrapper(void* arg_0, void* arg_1, int arg_2, int arg_3)
             {
                globalTestAllGroup1153_user(arg_0, arg_1, arg_2, arg_3, globalTestAllGroup1153_next);
             };
-            void globalTestWriteFile1154_wrapper(char* arg_0, char* arg_1)
+            static void globalTestWriteFile1154_wrapper(char* arg_0, char* arg_1)
             {
                globalTestWriteFile1154_user(arg_0, arg_1, globalTestWriteFile1154_next);
             };
-            void globalTextureCopy1155_wrapper(struct CTextureRender* _this, void* arg_0)
+            static void globalTextureCopy1155_wrapper(struct CTextureRender* _this, void* arg_0)
             {
                globalTextureCopy1155_user(_this, arg_0, globalTextureCopy1155_next);
             };
-            void globalTextureSplatting1156_wrapper(struct _BSP_MAT_GROUP* arg_0, int arg_1)
+            static void globalTextureSplatting1156_wrapper(struct _BSP_MAT_GROUP* arg_0, int arg_1)
             {
                globalTextureSplatting1156_user(arg_0, arg_1, globalTextureSplatting1156_next);
             };
-            int64_t globalTransformVertex1157_wrapper(float* arg_0, float** arg_1, float* arg_2)
+            static int64_t globalTransformVertex1157_wrapper(float* arg_0, float** arg_1, float* arg_2)
             {
                return globalTransformVertex1157_user(arg_0, arg_1, arg_2, globalTransformVertex1157_next);
             };
-            int64_t globalTransformVertex1158_wrapper(float* arg_0, float** arg_1, float* arg_2, float* arg_3)
+            static int64_t globalTransformVertex1158_wrapper(float* arg_0, float** arg_1, float* arg_2, float* arg_3)
             {
                return globalTransformVertex1158_user(arg_0, arg_1, arg_2, arg_3, globalTransformVertex1158_next);
             };
-            void globalUnLightMappingTex11159_wrapper()
+            static void globalUnLightMappingTex11159_wrapper()
             {
                globalUnLightMappingTex11159_user(globalUnLightMappingTex11159_next);
             };
-            void globalUnSetDynamicLight1160_wrapper()
+            static void globalUnSetDynamicLight1160_wrapper()
             {
                globalUnSetDynamicLight1160_user(globalUnSetDynamicLight1160_next);
             };
-            void globalUnSetMatAlphaColor1161_wrapper()
+            static void globalUnSetMatAlphaColor1161_wrapper()
             {
                globalUnSetMatAlphaColor1161_user(globalUnSetMatAlphaColor1161_next);
             };
-            void globalUnSetProjectedShadow1162_wrapper()
+            static void globalUnSetProjectedShadow1162_wrapper()
             {
                globalUnSetProjectedShadow1162_user(globalUnSetProjectedShadow1162_next);
             };
-            void globalUnTextureSplatting1163_wrapper()
+            static void globalUnTextureSplatting1163_wrapper()
             {
                globalUnTextureSplatting1163_user(globalUnTextureSplatting1163_next);
             };
-            void globalUpdateStreamMP31164_wrapper()
+            static void globalUpdateStreamMP31164_wrapper()
             {
                globalUpdateStreamMP31164_user(globalUpdateStreamMP31164_next);
             };
-            void globalVector3fTransform1165_wrapper(float* arg_0, float* arg_1, float** arg_2)
+            static void globalVector3fTransform1165_wrapper(float* arg_0, float* arg_1, float** arg_2)
             {
                globalVector3fTransform1165_user(arg_0, arg_1, arg_2, globalVector3fTransform1165_next);
             };
-            int64_t globalVertFlipBuf1166_wrapper(uint8_t* arg_0, unsigned int arg_1, unsigned int arg_2)
-            {
-               return globalVertFlipBuf1166_user(arg_0, arg_1, arg_2, globalVertFlipBuf1166_next);
-            };
-            bool globalW2M1168_wrapper(char* lpwStr, char* szTran, unsigned int wTranBuffSize)
-            {
-               return globalW2M1168_user(lpwStr, szTran, wTranBuffSize, globalW2M1168_next);
-            };
-            bool globalWCHARTOMULTI1170_wrapper(wchar_t* lpwStr, char* szTran, unsigned int wTranBuffSize)
-            {
-               return globalWCHARTOMULTI1170_user(lpwStr, szTran, wTranBuffSize, globalWCHARTOMULTI1170_next);
-            };
-            void globalWarning1171_wrapper(char* arg_0, char* arg_1)
-            {
-               globalWarning1171_user(arg_0, arg_1, globalWarning1171_next);
-            };
-            int64_t globalWndProc1172_wrapper(HWND arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
-            {
-               return globalWndProc1172_user(arg_0, arg_1, arg_2, arg_3, globalWndProc1172_next);
-            };
-            void globalWriteCheatLog1174_wrapper(char* pwszCommand, struct CPlayer* pOne)
+            static void globalWriteCheatLog1174_wrapper(char* pwszCommand, struct CPlayer* pOne)
             {
                globalWriteCheatLog1174_user(pwszCommand, pOne, globalWriteCheatLog1174_next);
             };
-            bool globalWriteLogFileLong1176_wrapper(char* pszFileName, char* log)
+            static bool globalWriteLogFileLong1176_wrapper(char* pszFileName, char* log)
             {
                return globalWriteLogFileLong1176_user(pszFileName, log, globalWriteLogFileLong1176_next);
             };
-            void globalWriteServerStartHistory1178_wrapper(char* fmt)
+            static void globalWriteServerStartHistory1178_wrapper(char* fmt)
             {
                globalWriteServerStartHistory1178_user(fmt, globalWriteServerStartHistory1178_next);
             };
-            bool globalWriteTableData1180_wrapper(int nItemNum, struct CRecordData* pItemData, bool bUseHash, char* szErrCode)
+            static bool globalWriteTableData1180_wrapper(int nItemNum, struct CRecordData* pItemData, bool bUseHash, char* szErrCode)
             {
                return globalWriteTableData1180_user(nItemNum, pItemData, bUseHash, szErrCode, globalWriteTableData1180_next);
             };
-            bool globalWriteTableDataPart1182_wrapper(int nTableCode, struct CRecordData* pItemData, char* szErrCode)
+            static bool globalWriteTableDataPart1182_wrapper(int nTableCode, struct CRecordData* pItemData, char* szErrCode)
             {
                return globalWriteTableDataPart1182_user(nTableCode, pItemData, szErrCode, globalWriteTableDataPart1182_next);
             };
-            int global_CalcPayExgRatePerRace1186_wrapper(float* pfAvrTradeMoney, int nRaceCode)
+            static int global_CalcPayExgRatePerRace1186_wrapper(float* pfAvrTradeMoney, int nRaceCode)
             {
                return global_CalcPayExgRatePerRace1186_user(pfAvrTradeMoney, nRaceCode, global_CalcPayExgRatePerRace1186_next);
             };
-            void global_CcrFG_rs_CloseUserContext1187_wrapper(void** arg_0)
+            static void global_CcrFG_rs_CloseUserContext1187_wrapper(void** arg_0)
             {
                global_CcrFG_rs_CloseUserContext1187_user(arg_0, global_CcrFG_rs_CloseUserContext1187_next);
             };
-            void* global_CcrFG_rs_CreateUserContext1188_wrapper(uint32_t arg_0, uint8_t* arg_1, uint32_t arg_2, uint8_t* arg_3, uint32_t arg_4, uint32_t arg_5, void* arg_6)
+            static void* global_CcrFG_rs_CreateUserContext1188_wrapper(uint32_t arg_0, uint8_t* arg_1, uint32_t arg_2, uint8_t* arg_3, uint32_t arg_4, uint32_t arg_5, void* arg_6)
             {
                return global_CcrFG_rs_CreateUserContext1188_user(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, global_CcrFG_rs_CreateUserContext1188_next);
             };
-            int global_CcrFG_rs_DecryptPacket1189_wrapper(void* arg_0, uint8_t* arg_1, int arg_2)
+            static int global_CcrFG_rs_DecryptPacket1189_wrapper(void* arg_0, uint8_t* arg_1, int arg_2)
             {
                return global_CcrFG_rs_DecryptPacket1189_user(arg_0, arg_1, arg_2, global_CcrFG_rs_DecryptPacket1189_next);
             };
-            int global_CcrFG_rs_EncryptPacket1190_wrapper(void* arg_0, uint8_t* arg_1, int arg_2)
+            static int global_CcrFG_rs_EncryptPacket1190_wrapper(void* arg_0, uint8_t* arg_1, int arg_2)
             {
                return global_CcrFG_rs_EncryptPacket1190_user(arg_0, arg_1, arg_2, global_CcrFG_rs_EncryptPacket1190_next);
             };
-            uint32_t global_CcrFG_rs_GetLastError1191_wrapper()
+            static uint32_t global_CcrFG_rs_GetLastError1191_wrapper()
             {
                return global_CcrFG_rs_GetLastError1191_user(global_CcrFG_rs_GetLastError1191_next);
             };
-            int global_CcrFG_rs_Initialize1192_wrapper(int (WINAPIV* arg_0)(int32_t, void*, void*, int, void*), uint8_t* arg_1, uint32_t arg_2)
+            static int global_CcrFG_rs_Initialize1192_wrapper(int (WINAPIV* arg_0)(int32_t, void*, void*, int, void*), uint8_t* arg_1, uint32_t arg_2)
             {
                return global_CcrFG_rs_Initialize1192_user(arg_0, arg_1, arg_2, global_CcrFG_rs_Initialize1192_next);
             };
-            void global_CcrFG_rs_Uninitialize1193_wrapper()
+            static void global_CcrFG_rs_Uninitialize1193_wrapper()
             {
                global_CcrFG_rs_Uninitialize1193_user(global_CcrFG_rs_Uninitialize1193_next);
             };
-            int global_CheckCumulativeSF1195_wrapper(char byEffectCode, unsigned int dwEffectIndex, int* nCumulMax, int* nEffectCount, char** pstrLinkCode)
+            static int global_CheckCumulativeSF1195_wrapper(char byEffectCode, unsigned int dwEffectIndex, int* nCumulMax, int* nEffectCount, char** pstrLinkCode)
             {
                return global_CheckCumulativeSF1195_user(byEffectCode, dwEffectIndex, nCumulMax, nEffectCount, pstrLinkCode, global_CheckCumulativeSF1195_next);
             };
-            bool global_CheckDestMonsterLimitLv1197_wrapper(int MyLevel, int iDstLevel, char byID)
+            static bool global_CheckDestMonsterLimitLv1197_wrapper(int MyLevel, int iDstLevel, char byID)
             {
                return global_CheckDestMonsterLimitLv1197_user(MyLevel, iDstLevel, byID, global_CheckDestMonsterLimitLv1197_next);
             };
-            bool global_CheckPotionData1199_wrapper(struct _CheckPotion_fld::_CheckEffectCode* CheckEffectNode, struct CPlayer* pApplyPlayer)
+            static bool global_CheckPotionData1199_wrapper(struct _CheckPotion_fld::_CheckEffectCode* CheckEffectNode, struct CPlayer* pApplyPlayer)
             {
                return global_CheckPotionData1199_user(CheckEffectNode, pApplyPlayer, global_CheckPotionData1199_next);
             };
-            bool global_CheckSameItem1201_wrapper(char* strLinkItem, char* strDst, char* bySelectLinkIndex, bool bStuff)
+            static bool global_CheckSameItem1201_wrapper(char* strLinkItem, char* strDst, char* bySelectLinkIndex, bool bStuff)
             {
                return global_CheckSameItem1201_user(strLinkItem, strDst, bySelectLinkIndex, bStuff, global_CheckSameItem1201_next);
             };
-            int global_Check_SF_UseType1203_wrapper(struct _base_fld* pFld, int nEffectType)
+            static int global_Check_SF_UseType1203_wrapper(struct _base_fld* pFld, int nEffectType)
             {
                return global_Check_SF_UseType1203_user(pFld, nEffectType, global_Check_SF_UseType1203_next);
             };
-            void global_CreateLootingNovusItem1205_wrapper(char* strItemCode, char* strMapName, struct LuaParam3 Pos, struct LuaParam3 vParam)
+            static void global_CreateLootingNovusItem1205_wrapper(char* strItemCode, char* strMapName, struct LuaParam3 Pos, struct LuaParam3 vParam)
             {
                global_CreateLootingNovusItem1205_user(strItemCode, strMapName, Pos, vParam, global_CreateLootingNovusItem1205_next);
             };
-            struct CMonster* global_CreateMon1207_wrapper(char* strMapName, char* MonCode, float fX, float fY, float fZ)
+            static struct CMonster* global_CreateMon1207_wrapper(char* strMapName, char* MonCode, float fX, float fY, float fZ)
             {
                return global_CreateMon1207_user(strMapName, MonCode, fX, fY, fZ, global_CreateMon1207_next);
             };
-            HRESULT global_DbgOut1209_wrapper(char* strFile, unsigned int dwLine, HRESULT hr, char* strMsg)
-            {
-               return global_DbgOut1209_user(strFile, dwLine, hr, strMsg, global_DbgOut1209_next);
-            };
-            bool global_FailItemShortBuffer1212_wrapper(int* nBuffer, char byMtSlotNum, struct _ItemCombine_exp_fld::_material* pMtlList, struct _STORAGE_LIST::_db_con** pMt_Sv_Inv)
+            static bool global_FailItemShortBuffer1212_wrapper(int* nBuffer, char byMtSlotNum, struct _ItemCombine_exp_fld::_material* pMtlList, struct _STORAGE_LIST::_db_con** pMt_Sv_Inv)
             {
                return global_FailItemShortBuffer1212_user(nBuffer, byMtSlotNum, pMtlList, pMt_Sv_Inv, global_FailItemShortBuffer1212_next);
             };
-            struct CLuaEventMgr* global_GetLuaEventMgr1214_wrapper()
+            static struct CLuaEventMgr* global_GetLuaEventMgr1214_wrapper()
             {
                return global_GetLuaEventMgr1214_user(global_GetLuaEventMgr1214_next);
             };
-            uint16_t global_GetMonsterContTime1216_wrapper(char byEffectCode, char byLv)
+            static uint16_t global_GetMonsterContTime1216_wrapper(char byEffectCode, char byLv)
             {
                return global_GetMonsterContTime1216_user(byEffectCode, byLv, global_GetMonsterContTime1216_next);
             };
-            bool global_GetTempEffectValue1218_wrapper(struct _skill_fld* pEffectFld, int nTempEffectType, float* fValue)
+            static bool global_GetTempEffectValue1218_wrapper(struct _skill_fld* pEffectFld, int nTempEffectType, float* fValue)
             {
                return global_GetTempEffectValue1218_user(pEffectFld, nTempEffectType, fValue, global_GetTempEffectValue1218_next);
             };
-            struct _trand_tbl* global_GetTransTBL1220_wrapper(int nState)
+            static struct _trand_tbl* global_GetTransTBL1220_wrapper(int nState)
             {
                return global_GetTransTBL1220_user(nState, global_GetTransTBL1220_next);
             };
-            bool global_IsXmasSnowEffect1222_wrapper(struct _sf_continous* pSFCont)
+            static bool global_IsXmasSnowEffect1222_wrapper(struct _sf_continous* pSFCont)
             {
                return global_IsXmasSnowEffect1222_user(pSFCont, global_IsXmasSnowEffect1222_next);
             };
-            char* global_KickReason1224_wrapper(char byReason)
+            static char* global_KickReason1224_wrapper(char byReason)
             {
                return global_KickReason1224_user(byReason, global_KickReason1224_next);
             };
-            long double global_Pow_int1226_wrapper(long double _X, int _Y)
-            {
-               return global_Pow_int1226_user(_X, _Y, global_Pow_int1226_next);
-            };
-            float global_Pow_int1228_wrapper(float _X, int _Y)
-            {
-               return global_Pow_int1228_user(_X, _Y, global_Pow_int1228_next);
-            };
-            void global_RTC_AllocaFailure1229_wrapper(void* retaddr, struct _RTC_ALLOCA_NODE* pn, int num)
-            {
-               global_RTC_AllocaFailure1229_user(retaddr, pn, num, global_RTC_AllocaFailure1229_next);
-            };
-            void global_RTC_Failure1230_wrapper(void* retaddr, int errnum)
-            {
-               global_RTC_Failure1230_user(retaddr, errnum, global_RTC_Failure1230_next);
-            };
-            int global_RTC_GetSrcLine1233_wrapper(char* address, wchar_t* source, unsigned int sourcelen, int* pline, wchar_t* moduleName, unsigned int modulelen)
-            {
-               return global_RTC_GetSrcLine1233_user(address, source, sourcelen, pline, moduleName, modulelen, global_RTC_GetSrcLine1233_next);
-            };
-            void global_RTC_StackFailure1234_wrapper(void* retaddr, char* varname)
-            {
-               global_RTC_StackFailure1234_user(retaddr, varname, global_RTC_StackFailure1234_next);
-            };
-            bool global_ReadEconomyIniFile1236_wrapper()
+            static bool global_ReadEconomyIniFile1236_wrapper()
             {
                return global_ReadEconomyIniFile1236_user(global_ReadEconomyIniFile1236_next);
             };
-            unsigned int global_SearchPlayer1238_wrapper(char* szCharName)
+            static unsigned int global_SearchPlayer1238_wrapper(char* szCharName)
             {
                return global_SearchPlayer1238_user(szCharName, global_SearchPlayer1238_next);
             };
-            void global_UpdateNewEconomy1240_wrapper(struct _economy_calc_data* pData)
+            static void global_UpdateNewEconomy1240_wrapper(struct _economy_calc_data* pData)
             {
                global_UpdateNewEconomy1240_user(pData, global_UpdateNewEconomy1240_next);
             };
-            void global_UpdateRateSendToAllPlayer1242_wrapper()
+            static void global_UpdateRateSendToAllPlayer1242_wrapper()
             {
                global_UpdateRateSendToAllPlayer1242_user(global_UpdateRateSendToAllPlayer1242_next);
             };
-            void global__ArrayUnwind1243_wrapper(void* ptr, uint64_t size, int count, void (WINAPIV* pDtor)(void*))
+            static void global__ArrayUnwind1243_wrapper(void* ptr, uint64_t size, int count, void (WINAPIV* pDtor)(void*))
             {
                global__ArrayUnwind1243_user(ptr, size, count, pDtor, global__ArrayUnwind1243_next);
             };
-            int global__CxxUnhandledExceptionFilter1244_wrapper(struct _EXCEPTION_POINTERS* pPtrs)
-            {
-               return global__CxxUnhandledExceptionFilter1244_user(pPtrs, global__CxxUnhandledExceptionFilter1244_next);
-            };
-            bool global__destroy_item1246_wrapper(struct CPlayer* pMaster, struct _combine_ex_item_result_zocl::__item* pItem, struct _STORAGE_LIST::_db_con* pSvItem, struct _combine_ex_item_request_clzo::_list* pMeterial, int nSocketIndex)
+            static bool global__destroy_item1246_wrapper(struct CPlayer* pMaster, struct _combine_ex_item_result_zocl::__item* pItem, struct _STORAGE_LIST::_db_con* pSvItem, struct _combine_ex_item_request_clzo::_list* pMeterial, int nSocketIndex)
             {
                return global__destroy_item1246_user(pMaster, pItem, pSvItem, pMeterial, nSocketIndex, global__destroy_item1246_next);
             };
-            char global__make_item1248_wrapper(struct CPlayer* pMaster, struct _combine_ex_item_result_zocl::__item* pItem, struct _ItemCombine_exp_fld* pfld, int nIndex, char byLinkTableIndex)
+            static char global__make_item1248_wrapper(struct CPlayer* pMaster, struct _combine_ex_item_result_zocl::__item* pItem, struct _ItemCombine_exp_fld* pfld, int nIndex, char byLinkTableIndex)
             {
                return global__make_item1248_user(pMaster, pItem, pfld, nIndex, byLinkTableIndex, global__make_item1248_next);
             };
-            void global__trace1250_wrapper(char* fmt)
-            {
-               global__trace1250_user(fmt, global__trace1250_next);
-            };
-            bool global_false1252_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup)
+            static bool global_false1252_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup)
             {
                return global_false1252_user(fstr, pSetup, global_false1252_next);
             };
-            char* global_mbschr1254_wrapper(char* _String, unsigned int _Char)
-            {
-               return global_mbschr1254_user(_String, _Char, global_mbschr1254_next);
-            };
-            char* global_tcsrchr1256_wrapper(char* _S, unsigned int _C)
-            {
-               return global_tcsrchr1256_user(_S, _C, global_tcsrchr1256_next);
-            };
-            long double globalabs1262_wrapper(long double _X)
-            {
-               return globalabs1262_user(_X, globalabs1262_next);
-            };
-            float globalabs1264_wrapper(float _X)
-            {
-               return globalabs1264_user(_X, globalabs1264_next);
-            };
-            float globalacos1266_wrapper(float _X)
-            {
-               return globalacos1266_user(_X, globalacos1266_next);
-            };
-            float globalatan21267_wrapper(float Y, float X)
-            {
-               return globalatan21267_user(Y, X, globalatan21267_next);
-            };
-            void globalclear_file1269_wrapper(char* pszDir, unsigned int dwCutDay)
-            {
-               globalclear_file1269_user(pszDir, dwCutDay, globalclear_file1269_next);
-            };
-            float globalcos1271_wrapper(float _X)
-            {
-               return globalcos1271_user(_X, globalcos1271_next);
-            };
-            bool globalct_CashEventStart1273_wrapper(struct CPlayer* pOne)
+            static bool globalct_CashEventStart1273_wrapper(struct CPlayer* pOne)
             {
                return globalct_CashEventStart1273_user(pOne, globalct_CashEventStart1273_next);
             };
-            bool globalct_CdeEndup1275_wrapper(struct CPlayer* pOne)
+            static bool globalct_CdeEndup1275_wrapper(struct CPlayer* pOne)
             {
                return globalct_CdeEndup1275_user(pOne, globalct_CdeEndup1275_next);
             };
-            bool globalct_CdeStart1277_wrapper(struct CPlayer* pOne)
+            static bool globalct_CdeStart1277_wrapper(struct CPlayer* pOne)
             {
                return globalct_CdeStart1277_user(pOne, globalct_CdeStart1277_next);
             };
-            bool globalct_ClassRefineEvent1279_wrapper(struct CPlayer* pOne)
+            static bool globalct_ClassRefineEvent1279_wrapper(struct CPlayer* pOne)
             {
                return globalct_ClassRefineEvent1279_user(pOne, globalct_ClassRefineEvent1279_next);
             };
-            bool globalct_ClearSettleOwnerGuild1281_wrapper(struct CPlayer* pOne)
+            static bool globalct_ClearSettleOwnerGuild1281_wrapper(struct CPlayer* pOne)
             {
                return globalct_ClearSettleOwnerGuild1281_user(pOne, globalct_ClearSettleOwnerGuild1281_next);
             };
-            bool globalct_ConEventStart1283_wrapper(struct CPlayer* pOne)
+            static bool globalct_ConEventStart1283_wrapper(struct CPlayer* pOne)
             {
                return globalct_ConEventStart1283_user(pOne, globalct_ConEventStart1283_next);
             };
-            bool globalct_Gold_Age_Event_Status1285_wrapper(struct CPlayer* pOne)
+            static bool globalct_Gold_Age_Event_Status1285_wrapper(struct CPlayer* pOne)
             {
                return globalct_Gold_Age_Event_Status1285_user(pOne, globalct_Gold_Age_Event_Status1285_next);
             };
-            bool globalct_Gold_Age_Get_Box_Cnt1287_wrapper(struct CPlayer* pOne)
+            static bool globalct_Gold_Age_Get_Box_Cnt1287_wrapper(struct CPlayer* pOne)
             {
                return globalct_Gold_Age_Get_Box_Cnt1287_user(pOne, globalct_Gold_Age_Get_Box_Cnt1287_next);
             };
-            bool globalct_Gold_Age_Set_Event_Status1289_wrapper(struct CPlayer* pOne)
+            static bool globalct_Gold_Age_Set_Event_Status1289_wrapper(struct CPlayer* pOne)
             {
                return globalct_Gold_Age_Set_Event_Status1289_user(pOne, globalct_Gold_Age_Set_Event_Status1289_next);
             };
-            bool globalct_HolyKeeperAttack1291_wrapper(struct CPlayer* pOne)
+            static bool globalct_HolyKeeperAttack1291_wrapper(struct CPlayer* pOne)
             {
                return globalct_HolyKeeperAttack1291_user(pOne, globalct_HolyKeeperAttack1291_next);
             };
-            bool globalct_HolySystem1293_wrapper(struct CPlayer* pOne)
+            static bool globalct_HolySystem1293_wrapper(struct CPlayer* pOne)
             {
                return globalct_HolySystem1293_user(pOne, globalct_HolySystem1293_next);
             };
-            bool globalct_HolySystem_Jp1295_wrapper(struct CPlayer* pOne)
+            static bool globalct_HolySystem_Jp1295_wrapper(struct CPlayer* pOne)
             {
                return globalct_HolySystem_Jp1295_user(pOne, globalct_HolySystem_Jp1295_next);
             };
-            bool globalct_InformCristalBattleBeforeAnHour1297_wrapper(struct CPlayer* pOne)
+            static bool globalct_InformCristalBattleBeforeAnHour1297_wrapper(struct CPlayer* pOne)
             {
                return globalct_InformCristalBattleBeforeAnHour1297_user(pOne, globalct_InformCristalBattleBeforeAnHour1297_next);
             };
-            bool globalct_InformPatriarchProcessor1299_wrapper(struct CPlayer* pOne)
+            static bool globalct_InformPatriarchProcessor1299_wrapper(struct CPlayer* pOne)
             {
                return globalct_InformPatriarchProcessor1299_user(pOne, globalct_InformPatriarchProcessor1299_next);
             };
-            bool globalct_NuAfterEffect1301_wrapper(struct CPlayer* pOne)
+            static bool globalct_NuAfterEffect1301_wrapper(struct CPlayer* pOne)
             {
                return globalct_NuAfterEffect1301_user(pOne, globalct_NuAfterEffect1301_next);
             };
-            bool globalct_PcBandPrimium1303_wrapper(struct CPlayer* pOne)
+            static bool globalct_PcBandPrimium1303_wrapper(struct CPlayer* pOne)
             {
                return globalct_PcBandPrimium1303_user(pOne, globalct_PcBandPrimium1303_next);
             };
-            bool globalct_PvpLimitInit1305_wrapper(struct CPlayer* pOne)
+            static bool globalct_PvpLimitInit1305_wrapper(struct CPlayer* pOne)
             {
                return globalct_PvpLimitInit1305_user(pOne, globalct_PvpLimitInit1305_next);
             };
-            bool globalct_ReqChangeHonorGuild1307_wrapper(struct CPlayer* pOne)
+            static bool globalct_ReqChangeHonorGuild1307_wrapper(struct CPlayer* pOne)
             {
                return globalct_ReqChangeHonorGuild1307_user(pOne, globalct_ReqChangeHonorGuild1307_next);
             };
-            bool globalct_ReqPunishment1309_wrapper(struct CPlayer* pOne)
+            static bool globalct_ReqPunishment1309_wrapper(struct CPlayer* pOne)
             {
                return globalct_ReqPunishment1309_user(pOne, globalct_ReqPunishment1309_next);
             };
-            bool globalct_SetGuildGrade1311_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetGuildGrade1311_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetGuildGrade1311_user(pOne, globalct_SetGuildGrade1311_next);
             };
-            bool globalct_SetGuildGradeByGuildSerial1313_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetGuildGradeByGuildSerial1313_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetGuildGradeByGuildSerial1313_user(pOne, globalct_SetGuildGradeByGuildSerial1313_next);
             };
-            bool globalct_SetGuildGradeByName1315_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetGuildGradeByName1315_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetGuildGradeByName1315_user(pOne, globalct_SetGuildGradeByName1315_next);
             };
-            bool globalct_SetGuildMaster1317_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetGuildMaster1317_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetGuildMaster1317_user(pOne, globalct_SetGuildMaster1317_next);
             };
-            bool globalct_SetMaxLevelLimit1319_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetMaxLevelLimit1319_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetMaxLevelLimit1319_user(pOne, globalct_SetMaxLevelLimit1319_next);
             };
-            bool globalct_SetPatriarchAuto1321_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetPatriarchAuto1321_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetPatriarchAuto1321_user(pOne, globalct_SetPatriarchAuto1321_next);
             };
-            bool globalct_SetPatriarchClear1323_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetPatriarchClear1323_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetPatriarchClear1323_user(pOne, globalct_SetPatriarchClear1323_next);
             };
-            bool globalct_SetPatriarchGroup1325_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetPatriarchGroup1325_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetPatriarchGroup1325_user(pOne, globalct_SetPatriarchGroup1325_next);
             };
-            bool globalct_SetPatriarchProcessor1327_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetPatriarchProcessor1327_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetPatriarchProcessor1327_user(pOne, globalct_SetPatriarchProcessor1327_next);
             };
-            bool globalct_SetSettleOwnerGuild1329_wrapper(struct CPlayer* pOne)
+            static bool globalct_SetSettleOwnerGuild1329_wrapper(struct CPlayer* pOne)
             {
                return globalct_SetSettleOwnerGuild1329_user(pOne, globalct_SetSettleOwnerGuild1329_next);
             };
-            bool globalct_Win_RaceWar1331_wrapper(struct CPlayer* pOne)
+            static bool globalct_Win_RaceWar1331_wrapper(struct CPlayer* pOne)
             {
                return globalct_Win_RaceWar1331_user(pOne, globalct_Win_RaceWar1331_next);
             };
-            bool globalct_action_point_set1333_wrapper(struct CPlayer* pOne)
+            static bool globalct_action_point_set1333_wrapper(struct CPlayer* pOne)
             {
                return globalct_action_point_set1333_user(pOne, globalct_action_point_set1333_next);
             };
-            bool globalct_add_guild_schedule1335_wrapper(struct CPlayer* pOne)
+            static bool globalct_add_guild_schedule1335_wrapper(struct CPlayer* pOne)
             {
                return globalct_add_guild_schedule1335_user(pOne, globalct_add_guild_schedule1335_next);
             };
-            bool globalct_add_one_day_guild_schedule1337_wrapper(struct CPlayer* pOne)
+            static bool globalct_add_one_day_guild_schedule1337_wrapper(struct CPlayer* pOne)
             {
                return globalct_add_one_day_guild_schedule1337_user(pOne, globalct_add_one_day_guild_schedule1337_next);
             };
-            bool globalct_all_item_muzi1339_wrapper(struct CPlayer* pOne)
+            static bool globalct_all_item_muzi1339_wrapper(struct CPlayer* pOne)
             {
                return globalct_all_item_muzi1339_user(pOne, globalct_all_item_muzi1339_next);
             };
-            bool globalct_all_map1341_wrapper(struct CPlayer* pOne)
+            static bool globalct_all_map1341_wrapper(struct CPlayer* pOne)
             {
                return globalct_all_map1341_user(pOne, globalct_all_map1341_next);
             };
-            bool globalct_alter_cashbag1343_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_cashbag1343_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_cashbag1343_user(pOne, globalct_alter_cashbag1343_next);
             };
-            bool globalct_alter_dalant1345_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_dalant1345_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_dalant1345_user(pOne, globalct_alter_dalant1345_next);
             };
-            bool globalct_alter_exp1347_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_exp1347_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_exp1347_user(pOne, globalct_alter_exp1347_next);
             };
-            bool globalct_alter_gold1349_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_gold1349_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_gold1349_user(pOne, globalct_alter_gold1349_next);
             };
-            bool globalct_alter_inven_dur1351_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_inven_dur1351_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_inven_dur1351_user(pOne, globalct_alter_inven_dur1351_next);
             };
-            bool globalct_alter_lv1353_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_lv1353_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_lv1353_user(pOne, globalct_alter_lv1353_next);
             };
-            bool globalct_alter_pvp1355_wrapper(struct CPlayer* pOne)
+            static bool globalct_alter_pvp1355_wrapper(struct CPlayer* pOne)
             {
                return globalct_alter_pvp1355_user(pOne, globalct_alter_pvp1355_next);
             };
-            bool globalct_amp_full1357_wrapper(struct CPlayer* pOne)
+            static bool globalct_amp_full1357_wrapper(struct CPlayer* pOne)
             {
                return globalct_amp_full1357_user(pOne, globalct_amp_full1357_next);
             };
-            bool globalct_amp_set1359_wrapper(struct CPlayer* pOne)
+            static bool globalct_amp_set1359_wrapper(struct CPlayer* pOne)
             {
                return globalct_amp_set1359_user(pOne, globalct_amp_set1359_next);
             };
-            bool globalct_animus_attack_grade1361_wrapper(struct CPlayer* pOne)
+            static bool globalct_animus_attack_grade1361_wrapper(struct CPlayer* pOne)
             {
                return globalct_animus_attack_grade1361_user(pOne, globalct_animus_attack_grade1361_next);
             };
-            bool globalct_animus_recall_term1363_wrapper(struct CPlayer* pOne)
+            static bool globalct_animus_recall_term1363_wrapper(struct CPlayer* pOne)
             {
                return globalct_animus_recall_term1363_user(pOne, globalct_animus_recall_term1363_next);
             };
-            bool globalct_animusexp1365_wrapper(struct CPlayer* pOne)
+            static bool globalct_animusexp1365_wrapper(struct CPlayer* pOne)
             {
                return globalct_animusexp1365_user(pOne, globalct_animusexp1365_next);
             };
-            bool globalct_basemastery1367_wrapper(struct CPlayer* pOne)
+            static bool globalct_basemastery1367_wrapper(struct CPlayer* pOne)
             {
                return globalct_basemastery1367_user(pOne, globalct_basemastery1367_next);
             };
-            bool globalct_boss_sms_cancel1369_wrapper(struct CPlayer* pOne)
+            static bool globalct_boss_sms_cancel1369_wrapper(struct CPlayer* pOne)
             {
                return globalct_boss_sms_cancel1369_user(pOne, globalct_boss_sms_cancel1369_next);
             };
-            bool globalct_buf_potion_use1371_wrapper(struct CPlayer* pOne)
+            static bool globalct_buf_potion_use1371_wrapper(struct CPlayer* pOne)
             {
                return globalct_buf_potion_use1371_user(pOne, globalct_buf_potion_use1371_next);
             };
-            bool globalct_cashitembuy1373_wrapper(struct CPlayer* pOne)
+            static bool globalct_cashitembuy1373_wrapper(struct CPlayer* pOne)
             {
                return globalct_cashitembuy1373_user(pOne, globalct_cashitembuy1373_next);
             };
-            bool globalct_change_class1375_wrapper(struct CPlayer* pOne)
+            static bool globalct_change_class1375_wrapper(struct CPlayer* pOne)
             {
                return globalct_change_class1375_user(pOne, globalct_change_class1375_next);
             };
-            bool globalct_change_degree1377_wrapper(struct CPlayer* pOne)
+            static bool globalct_change_degree1377_wrapper(struct CPlayer* pOne)
             {
                return globalct_change_degree1377_user(pOne, globalct_change_degree1377_next);
             };
-            bool globalct_change_master_elect1379_wrapper(struct CPlayer* pOne)
+            static bool globalct_change_master_elect1379_wrapper(struct CPlayer* pOne)
             {
                return globalct_change_master_elect1379_user(pOne, globalct_change_master_elect1379_next);
             };
-            bool globalct_change_mastery1381_wrapper(struct CPlayer* pOne)
+            static bool globalct_change_mastery1381_wrapper(struct CPlayer* pOne)
             {
                return globalct_change_mastery1381_user(pOne, globalct_change_mastery1381_next);
             };
-            bool globalct_chatsave1383_wrapper(struct CPlayer* pOne)
+            static bool globalct_chatsave1383_wrapper(struct CPlayer* pOne)
             {
                return globalct_chatsave1383_user(pOne, globalct_chatsave1383_next);
             };
-            bool globalct_check_guild_batlle_goal1385_wrapper(struct CPlayer* pOne)
+            static bool globalct_check_guild_batlle_goal1385_wrapper(struct CPlayer* pOne)
             {
                return globalct_check_guild_batlle_goal1385_user(pOne, globalct_check_guild_batlle_goal1385_next);
             };
-            bool globalct_circle_mon_kill1387_wrapper(struct CPlayer* pOne)
+            static bool globalct_circle_mon_kill1387_wrapper(struct CPlayer* pOne)
             {
                return globalct_circle_mon_kill1387_user(pOne, globalct_circle_mon_kill1387_next);
             };
-            bool globalct_circle_user_num1389_wrapper(struct CPlayer* pOne)
+            static bool globalct_circle_user_num1389_wrapper(struct CPlayer* pOne)
             {
                return globalct_circle_user_num1389_user(pOne, globalct_circle_user_num1389_next);
             };
-            bool globalct_combine_ex_result1391_wrapper(struct CPlayer* pOne)
+            static bool globalct_combine_ex_result1391_wrapper(struct CPlayer* pOne)
             {
                return globalct_combine_ex_result1391_user(pOne, globalct_combine_ex_result1391_next);
             };
-            bool globalct_complete_quest1393_wrapper(struct CPlayer* pOne)
+            static bool globalct_complete_quest1393_wrapper(struct CPlayer* pOne)
             {
                return globalct_complete_quest1393_user(pOne, globalct_complete_quest1393_next);
             };
-            bool globalct_complete_quest_other1395_wrapper(struct CPlayer* pOne)
+            static bool globalct_complete_quest_other1395_wrapper(struct CPlayer* pOne)
             {
                return globalct_complete_quest_other1395_user(pOne, globalct_complete_quest_other1395_next);
             };
-            bool globalct_cont_effet_clear1397_wrapper(struct CPlayer* pOne)
+            static bool globalct_cont_effet_clear1397_wrapper(struct CPlayer* pOne)
             {
                return globalct_cont_effet_clear1397_user(pOne, globalct_cont_effet_clear1397_next);
             };
-            bool globalct_cont_effet_time1399_wrapper(struct CPlayer* pOne)
+            static bool globalct_cont_effet_time1399_wrapper(struct CPlayer* pOne)
             {
                return globalct_cont_effet_time1399_user(pOne, globalct_cont_effet_time1399_next);
             };
-            bool globalct_continue_palytime_inc1401_wrapper(struct CPlayer* pOne)
+            static bool globalct_continue_palytime_inc1401_wrapper(struct CPlayer* pOne)
             {
                return globalct_continue_palytime_inc1401_user(pOne, globalct_continue_palytime_inc1401_next);
             };
-            bool globalct_copy_avator1403_wrapper(struct CPlayer* pOne)
+            static bool globalct_copy_avator1403_wrapper(struct CPlayer* pOne)
             {
                return globalct_copy_avator1403_user(pOne, globalct_copy_avator1403_next);
             };
-            bool globalct_create_guildbattle_field_object1405_wrapper(struct CPlayer* pOne)
+            static bool globalct_create_guildbattle_field_object1405_wrapper(struct CPlayer* pOne)
             {
                return globalct_create_guildbattle_field_object1405_user(pOne, globalct_create_guildbattle_field_object1405_next);
             };
-            bool globalct_cur_guildbattle_color1407_wrapper(struct CPlayer* pOne)
+            static bool globalct_cur_guildbattle_color1407_wrapper(struct CPlayer* pOne)
             {
                return globalct_cur_guildbattle_color1407_user(pOne, globalct_cur_guildbattle_color1407_next);
             };
-            bool globalct_darkholereward1409_wrapper(struct CPlayer* pOne)
+            static bool globalct_darkholereward1409_wrapper(struct CPlayer* pOne)
             {
                return globalct_darkholereward1409_user(pOne, globalct_darkholereward1409_next);
             };
-            bool globalct_defense_item_grace1411_wrapper(struct CPlayer* pOne)
+            static bool globalct_defense_item_grace1411_wrapper(struct CPlayer* pOne)
             {
                return globalct_defense_item_grace1411_user(pOne, globalct_defense_item_grace1411_next);
             };
-            bool globalct_defense_item_grace_Jp1413_wrapper(struct CPlayer* pOne)
+            static bool globalct_defense_item_grace_Jp1413_wrapper(struct CPlayer* pOne)
             {
                return globalct_defense_item_grace_Jp1413_user(pOne, globalct_defense_item_grace_Jp1413_next);
             };
-            bool globalct_destroy_gravitystone1415_wrapper(struct CPlayer* pOne)
+            static bool globalct_destroy_gravitystone1415_wrapper(struct CPlayer* pOne)
             {
                return globalct_destroy_gravitystone1415_user(pOne, globalct_destroy_gravitystone1415_next);
             };
-            bool globalct_destroy_guildbattle_field_object1417_wrapper(struct CPlayer* pOne)
+            static bool globalct_destroy_guildbattle_field_object1417_wrapper(struct CPlayer* pOne)
             {
                return globalct_destroy_guildbattle_field_object1417_user(pOne, globalct_destroy_guildbattle_field_object1417_next);
             };
-            bool globalct_destroy_system_tower1419_wrapper(struct CPlayer* pOne)
+            static bool globalct_destroy_system_tower1419_wrapper(struct CPlayer* pOne)
             {
                return globalct_destroy_system_tower1419_user(pOne, globalct_destroy_system_tower1419_next);
             };
-            bool globalct_die1421_wrapper(struct CPlayer* pOne)
+            static bool globalct_die1421_wrapper(struct CPlayer* pOne)
             {
                return globalct_die1421_user(pOne, globalct_die1421_next);
             };
-            bool globalct_drop_gravitystone1423_wrapper(struct CPlayer* pOne)
+            static bool globalct_drop_gravitystone1423_wrapper(struct CPlayer* pOne)
             {
                return globalct_drop_gravitystone1423_user(pOne, globalct_drop_gravitystone1423_next);
             };
-            bool globalct_drop_jade1425_wrapper(struct CPlayer* pOne)
+            static bool globalct_drop_jade1425_wrapper(struct CPlayer* pOne)
             {
                return globalct_drop_jade1425_user(pOne, globalct_drop_jade1425_next);
             };
-            bool globalct_elect_info_player1427_wrapper(struct CPlayer* pOne)
+            static bool globalct_elect_info_player1427_wrapper(struct CPlayer* pOne)
             {
                return globalct_elect_info_player1427_user(pOne, globalct_elect_info_player1427_next);
             };
-            bool globalct_elect_set_env1429_wrapper(struct CPlayer* pOne)
+            static bool globalct_elect_set_env1429_wrapper(struct CPlayer* pOne)
             {
                return globalct_elect_set_env1429_user(pOne, globalct_elect_set_env1429_next);
             };
-            bool globalct_elect_set_player1431_wrapper(struct CPlayer* pOne)
+            static bool globalct_elect_set_player1431_wrapper(struct CPlayer* pOne)
             {
                return globalct_elect_set_player1431_user(pOne, globalct_elect_set_player1431_next);
             };
-            bool globalct_eventset_start1433_wrapper(struct CPlayer* pOne)
+            static bool globalct_eventset_start1433_wrapper(struct CPlayer* pOne)
             {
                return globalct_eventset_start1433_user(pOne, globalct_eventset_start1433_next);
             };
-            bool globalct_eventset_stop1435_wrapper(struct CPlayer* pOne)
+            static bool globalct_eventset_stop1435_wrapper(struct CPlayer* pOne)
             {
                return globalct_eventset_stop1435_user(pOne, globalct_eventset_stop1435_next);
             };
-            bool globalct_exception1437_wrapper(struct CPlayer* pOne)
+            static bool globalct_exception1437_wrapper(struct CPlayer* pOne)
             {
                return globalct_exception1437_user(pOne, globalct_exception1437_next);
             };
-            bool globalct_exip_keeper1439_wrapper(struct CPlayer* pOne)
+            static bool globalct_exip_keeper1439_wrapper(struct CPlayer* pOne)
             {
                return globalct_exip_keeper1439_user(pOne, globalct_exip_keeper1439_next);
             };
-            bool globalct_exit_stone1441_wrapper(struct CPlayer* pOne)
+            static bool globalct_exit_stone1441_wrapper(struct CPlayer* pOne)
             {
                return globalct_exit_stone1441_user(pOne, globalct_exit_stone1441_next);
             };
-            bool globalct_expire_pcbang1443_wrapper(struct CPlayer* pOne)
+            static bool globalct_expire_pcbang1443_wrapper(struct CPlayer* pOne)
             {
                return globalct_expire_pcbang1443_user(pOne, globalct_expire_pcbang1443_next);
             };
-            bool globalct_free_ride_ship1445_wrapper(struct CPlayer* pOne)
+            static bool globalct_free_ride_ship1445_wrapper(struct CPlayer* pOne)
             {
                return globalct_free_ride_ship1445_user(pOne, globalct_free_ride_ship1445_next);
             };
-            bool globalct_free_sf_by_class1447_wrapper(struct CPlayer* pOne)
+            static bool globalct_free_sf_by_class1447_wrapper(struct CPlayer* pOne)
             {
                return globalct_free_sf_by_class1447_user(pOne, globalct_free_sf_by_class1447_next);
             };
-            bool globalct_full_animus_gauge1449_wrapper(struct CPlayer* pOne)
+            static bool globalct_full_animus_gauge1449_wrapper(struct CPlayer* pOne)
             {
                return globalct_full_animus_gauge1449_user(pOne, globalct_full_animus_gauge1449_next);
             };
-            bool globalct_full_force1451_wrapper(struct CPlayer* pOne)
+            static bool globalct_full_force1451_wrapper(struct CPlayer* pOne)
             {
                return globalct_full_force1451_user(pOne, globalct_full_force1451_next);
             };
-            bool globalct_full_gauge1453_wrapper(struct CPlayer* pOne)
+            static bool globalct_full_gauge1453_wrapper(struct CPlayer* pOne)
             {
                return globalct_full_gauge1453_user(pOne, globalct_full_gauge1453_next);
             };
-            bool globalct_fullset1455_wrapper(struct CPlayer* pOne)
+            static bool globalct_fullset1455_wrapper(struct CPlayer* pOne)
             {
                return globalct_fullset1455_user(pOne, globalct_fullset1455_next);
             };
-            bool globalct_get_gravitystone1457_wrapper(struct CPlayer* pOne)
+            static bool globalct_get_gravitystone1457_wrapper(struct CPlayer* pOne)
             {
                return globalct_get_gravitystone1457_user(pOne, globalct_get_gravitystone1457_next);
             };
-            bool globalct_goto_char1459_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_char1459_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_char1459_user(pOne, globalct_goto_char1459_next);
             };
-            bool globalct_goto_mine1461_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_mine1461_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_mine1461_user(pOne, globalct_goto_mine1461_next);
             };
-            bool globalct_goto_monster1463_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_monster1463_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_monster1463_user(pOne, globalct_goto_monster1463_next);
             };
-            bool globalct_goto_npc1465_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_npc1465_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_npc1465_user(pOne, globalct_goto_npc1465_next);
             };
-            bool globalct_goto_shipport_eder1467_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_shipport_eder1467_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_shipport_eder1467_user(pOne, globalct_goto_shipport_eder1467_next);
             };
-            bool globalct_goto_shipport_town1469_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_shipport_town1469_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_shipport_town1469_user(pOne, globalct_goto_shipport_town1469_next);
             };
-            bool globalct_goto_stone1471_wrapper(struct CPlayer* pOne)
+            static bool globalct_goto_stone1471_wrapper(struct CPlayer* pOne)
             {
                return globalct_goto_stone1471_user(pOne, globalct_goto_stone1471_next);
             };
-            bool globalct_guild_battle_force_stone1473_wrapper(struct CPlayer* pOne)
+            static bool globalct_guild_battle_force_stone1473_wrapper(struct CPlayer* pOne)
             {
                return globalct_guild_battle_force_stone1473_user(pOne, globalct_guild_battle_force_stone1473_next);
             };
-            bool globalct_guild_call1475_wrapper(struct CPlayer* pOne)
+            static bool globalct_guild_call1475_wrapper(struct CPlayer* pOne)
             {
                return globalct_guild_call1475_user(pOne, globalct_guild_call1475_next);
             };
-            bool globalct_guild_info1477_wrapper(struct CPlayer* pOne)
+            static bool globalct_guild_info1477_wrapper(struct CPlayer* pOne)
             {
                return globalct_guild_info1477_user(pOne, globalct_guild_info1477_next);
             };
-            bool globalct_guild_suggest1479_wrapper(struct CPlayer* pOne)
+            static bool globalct_guild_suggest1479_wrapper(struct CPlayer* pOne)
             {
                return globalct_guild_suggest1479_user(pOne, globalct_guild_suggest1479_next);
             };
-            bool globalct_half_gauge1481_wrapper(struct CPlayer* pOne)
+            static bool globalct_half_gauge1481_wrapper(struct CPlayer* pOne)
             {
                return globalct_half_gauge1481_user(pOne, globalct_half_gauge1481_next);
             };
-            bool globalct_init_monster1483_wrapper(struct CPlayer* pOne)
+            static bool globalct_init_monster1483_wrapper(struct CPlayer* pOne)
             {
                return globalct_init_monster1483_user(pOne, globalct_init_monster1483_next);
             };
-            bool globalct_inven_empty1485_wrapper(struct CPlayer* pOne)
+            static bool globalct_inven_empty1485_wrapper(struct CPlayer* pOne)
             {
                return globalct_inven_empty1485_user(pOne, globalct_inven_empty1485_next);
             };
-            bool globalct_itemloot1487_wrapper(struct CPlayer* pOne)
+            static bool globalct_itemloot1487_wrapper(struct CPlayer* pOne)
             {
                return globalct_itemloot1487_user(pOne, globalct_itemloot1487_next);
             };
-            bool globalct_jump_to_pos1489_wrapper(struct CPlayer* pOne)
+            static bool globalct_jump_to_pos1489_wrapper(struct CPlayer* pOne)
             {
                return globalct_jump_to_pos1489_user(pOne, globalct_jump_to_pos1489_next);
             };
-            bool globalct_kick_player1491_wrapper(struct CPlayer* pOne)
+            static bool globalct_kick_player1491_wrapper(struct CPlayer* pOne)
             {
                return globalct_kick_player1491_user(pOne, globalct_kick_player1491_next);
             };
-            bool globalct_loadcashamount1493_wrapper(struct CPlayer* pOne)
+            static bool globalct_loadcashamount1493_wrapper(struct CPlayer* pOne)
             {
                return globalct_loadcashamount1493_user(pOne, globalct_loadcashamount1493_next);
             };
-            bool globalct_look_like_boss1495_wrapper(struct CPlayer* pOne)
+            static bool globalct_look_like_boss1495_wrapper(struct CPlayer* pOne)
             {
                return globalct_look_like_boss1495_user(pOne, globalct_look_like_boss1495_next);
             };
-            bool globalct_loot_bag1497_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_bag1497_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_bag1497_user(pOne, globalct_loot_bag1497_next);
             };
-            bool globalct_loot_dungeon1499_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_dungeon1499_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_dungeon1499_user(pOne, globalct_loot_dungeon1499_next);
             };
-            bool globalct_loot_item1501_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_item1501_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_item1501_user(pOne, globalct_loot_item1501_next);
             };
-            bool globalct_loot_material1503_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_material1503_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_material1503_user(pOne, globalct_loot_material1503_next);
             };
-            bool globalct_loot_mine1505_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_mine1505_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_mine1505_user(pOne, globalct_loot_mine1505_next);
             };
-            bool globalct_loot_tower1507_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_tower1507_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_tower1507_user(pOne, globalct_loot_tower1507_next);
             };
-            bool globalct_loot_upgrade1509_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_upgrade1509_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_upgrade1509_user(pOne, globalct_loot_upgrade1509_next);
             };
-            bool globalct_loot_upgrade_item1511_wrapper(struct CPlayer* pOne)
+            static bool globalct_loot_upgrade_item1511_wrapper(struct CPlayer* pOne)
             {
                return globalct_loot_upgrade_item1511_user(pOne, globalct_loot_upgrade_item1511_next);
             };
-            bool globalct_lua_command1513_wrapper(struct CPlayer* pOne)
+            static bool globalct_lua_command1513_wrapper(struct CPlayer* pOne)
             {
                return globalct_lua_command1513_user(pOne, globalct_lua_command1513_next);
             };
-            bool globalct_make_system_tower1515_wrapper(struct CPlayer* pOne)
+            static bool globalct_make_system_tower1515_wrapper(struct CPlayer* pOne)
             {
                return globalct_make_system_tower1515_user(pOne, globalct_make_system_tower1515_next);
             };
-            bool globalct_makeitem_need_matrial1517_wrapper(struct CPlayer* pOne)
+            static bool globalct_makeitem_need_matrial1517_wrapper(struct CPlayer* pOne)
             {
                return globalct_makeitem_need_matrial1517_user(pOne, globalct_makeitem_need_matrial1517_next);
             };
-            bool globalct_makeitem_no_matrial1519_wrapper(struct CPlayer* pOne)
+            static bool globalct_makeitem_no_matrial1519_wrapper(struct CPlayer* pOne)
             {
                return globalct_makeitem_no_matrial1519_user(pOne, globalct_makeitem_no_matrial1519_next);
             };
-            bool globalct_manage_guild1521_wrapper(struct CPlayer* pOne)
+            static bool globalct_manage_guild1521_wrapper(struct CPlayer* pOne)
             {
                return globalct_manage_guild1521_user(pOne, globalct_manage_guild1521_next);
             };
-            bool globalct_max_attack1523_wrapper(struct CPlayer* pOne)
+            static bool globalct_max_attack1523_wrapper(struct CPlayer* pOne)
             {
                return globalct_max_attack1523_user(pOne, globalct_max_attack1523_next);
             };
-            bool globalct_mepcbang1525_wrapper(struct CPlayer* pOne)
+            static bool globalct_mepcbang1525_wrapper(struct CPlayer* pOne)
             {
                return globalct_mepcbang1525_user(pOne, globalct_mepcbang1525_next);
             };
-            bool globalct_min_attack1527_wrapper(struct CPlayer* pOne)
+            static bool globalct_min_attack1527_wrapper(struct CPlayer* pOne)
             {
                return globalct_min_attack1527_user(pOne, globalct_min_attack1527_next);
             };
-            bool globalct_minespeed1529_wrapper(struct CPlayer* pOne)
+            static bool globalct_minespeed1529_wrapper(struct CPlayer* pOne)
             {
                return globalct_minespeed1529_user(pOne, globalct_minespeed1529_next);
             };
-            bool globalct_mormal_attack1531_wrapper(struct CPlayer* pOne)
+            static bool globalct_mormal_attack1531_wrapper(struct CPlayer* pOne)
             {
                return globalct_mormal_attack1531_user(pOne, globalct_mormal_attack1531_next);
             };
-            bool globalct_party_call1533_wrapper(struct CPlayer* pOne)
+            static bool globalct_party_call1533_wrapper(struct CPlayer* pOne)
             {
                return globalct_party_call1533_user(pOne, globalct_party_call1533_next);
             };
-            bool globalct_pass_dungeon1535_wrapper(struct CPlayer* pOne)
+            static bool globalct_pass_dungeon1535_wrapper(struct CPlayer* pOne)
             {
                return globalct_pass_dungeon1535_user(pOne, globalct_pass_dungeon1535_next);
             };
-            bool globalct_pass_sch1537_wrapper(struct CPlayer* pOne)
+            static bool globalct_pass_sch1537_wrapper(struct CPlayer* pOne)
             {
                return globalct_pass_sch1537_user(pOne, globalct_pass_sch1537_next);
             };
-            bool globalct_pcanimusexp1539_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcanimusexp1539_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcanimusexp1539_user(pOne, globalct_pcanimusexp1539_next);
             };
-            bool globalct_pcbangitemget1541_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcbangitemget1541_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcbangitemget1541_user(pOne, globalct_pcbangitemget1541_next);
             };
-            bool globalct_pcbasemastery1543_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcbasemastery1543_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcbasemastery1543_user(pOne, globalct_pcbasemastery1543_next);
             };
-            bool globalct_pcitemloot1545_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcitemloot1545_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcitemloot1545_user(pOne, globalct_pcitemloot1545_next);
             };
-            bool globalct_pcminespeed1547_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcminespeed1547_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcminespeed1547_user(pOne, globalct_pcminespeed1547_next);
             };
-            bool globalct_pcplayerexp1549_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcplayerexp1549_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcplayerexp1549_user(pOne, globalct_pcplayerexp1549_next);
             };
-            bool globalct_pcroom_premium1551_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcroom_premium1551_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcroom_premium1551_user(pOne, globalct_pcroom_premium1551_next);
             };
-            bool globalct_pcsfmastery1553_wrapper(struct CPlayer* pOne)
+            static bool globalct_pcsfmastery1553_wrapper(struct CPlayer* pOne)
             {
                return globalct_pcsfmastery1553_user(pOne, globalct_pcsfmastery1553_next);
             };
-            bool globalct_period_time_set1555_wrapper(struct CPlayer* pOne)
+            static bool globalct_period_time_set1555_wrapper(struct CPlayer* pOne)
             {
                return globalct_period_time_set1555_user(pOne, globalct_period_time_set1555_next);
             };
-            bool globalct_playerexp1557_wrapper(struct CPlayer* pOne)
+            static bool globalct_playerexp1557_wrapper(struct CPlayer* pOne)
             {
                return globalct_playerexp1557_user(pOne, globalct_playerexp1557_next);
             };
-            bool globalct_premium_rate1559_wrapper(struct CPlayer* pOne)
+            static bool globalct_premium_rate1559_wrapper(struct CPlayer* pOne)
             {
                return globalct_premium_rate1559_user(pOne, globalct_premium_rate1559_next);
             };
-            bool globalct_query_remain_ore1561_wrapper(struct CPlayer* pOne)
+            static bool globalct_query_remain_ore1561_wrapper(struct CPlayer* pOne)
             {
                return globalct_query_remain_ore1561_user(pOne, globalct_query_remain_ore1561_next);
             };
-            bool globalct_recall_monster1563_wrapper(struct CPlayer* pOne)
+            static bool globalct_recall_monster1563_wrapper(struct CPlayer* pOne)
             {
                return globalct_recall_monster1563_user(pOne, globalct_recall_monster1563_next);
             };
-            bool globalct_recall_player1565_wrapper(struct CPlayer* pOne)
+            static bool globalct_recall_player1565_wrapper(struct CPlayer* pOne)
             {
                return globalct_recall_player1565_user(pOne, globalct_recall_player1565_next);
             };
-            bool globalct_recv_change_atrad_taxrate1567_wrapper(struct CPlayer* pOne)
+            static bool globalct_recv_change_atrad_taxrate1567_wrapper(struct CPlayer* pOne)
             {
                return globalct_recv_change_atrad_taxrate1567_user(pOne, globalct_recv_change_atrad_taxrate1567_next);
             };
-            bool globalct_recv_current_battle_info1569_wrapper(struct CPlayer* pOne)
+            static bool globalct_recv_current_battle_info1569_wrapper(struct CPlayer* pOne)
             {
                return globalct_recv_current_battle_info1569_user(pOne, globalct_recv_current_battle_info1569_next);
             };
-            bool globalct_recv_pvp_guild_rank1571_wrapper(struct CPlayer* pOne)
+            static bool globalct_recv_pvp_guild_rank1571_wrapper(struct CPlayer* pOne)
             {
                return globalct_recv_pvp_guild_rank1571_user(pOne, globalct_recv_pvp_guild_rank1571_next);
             };
-            bool globalct_recv_reserved_schedulelist1573_wrapper(struct CPlayer* pOne)
+            static bool globalct_recv_reserved_schedulelist1573_wrapper(struct CPlayer* pOne)
             {
                return globalct_recv_reserved_schedulelist1573_user(pOne, globalct_recv_reserved_schedulelist1573_next);
             };
-            bool globalct_recv_total_guild_rank1575_wrapper(struct CPlayer* pOne)
+            static bool globalct_recv_total_guild_rank1575_wrapper(struct CPlayer* pOne)
             {
                return globalct_recv_total_guild_rank1575_user(pOne, globalct_recv_total_guild_rank1575_next);
             };
-            bool globalct_regen_gravitystone1577_wrapper(struct CPlayer* pOne)
+            static bool globalct_regen_gravitystone1577_wrapper(struct CPlayer* pOne)
             {
                return globalct_regen_gravitystone1577_user(pOne, globalct_regen_gravitystone1577_next);
             };
-            bool globalct_release_loot_free1579_wrapper(struct CPlayer* pOne)
+            static bool globalct_release_loot_free1579_wrapper(struct CPlayer* pOne)
             {
                return globalct_release_loot_free1579_user(pOne, globalct_release_loot_free1579_next);
             };
-            bool globalct_release_make_succ1581_wrapper(struct CPlayer* pOne)
+            static bool globalct_release_make_succ1581_wrapper(struct CPlayer* pOne)
             {
                return globalct_release_make_succ1581_user(pOne, globalct_release_make_succ1581_next);
             };
-            bool globalct_release_matchless1583_wrapper(struct CPlayer* pOne)
+            static bool globalct_release_matchless1583_wrapper(struct CPlayer* pOne)
             {
                return globalct_release_matchless1583_user(pOne, globalct_release_matchless1583_next);
             };
-            bool globalct_release_never_die1585_wrapper(struct CPlayer* pOne)
+            static bool globalct_release_never_die1585_wrapper(struct CPlayer* pOne)
             {
                return globalct_release_never_die1585_user(pOne, globalct_release_never_die1585_next);
             };
-            bool globalct_release_punishment1587_wrapper(struct CPlayer* pOne)
+            static bool globalct_release_punishment1587_wrapper(struct CPlayer* pOne)
             {
                return globalct_release_punishment1587_user(pOne, globalct_release_punishment1587_next);
             };
-            bool globalct_remove_sf_delay1589_wrapper(struct CPlayer* pOne)
+            static bool globalct_remove_sf_delay1589_wrapper(struct CPlayer* pOne)
             {
                return globalct_remove_sf_delay1589_user(pOne, globalct_remove_sf_delay1589_next);
             };
-            bool globalct_report_cri_hp1591_wrapper(struct CPlayer* pOne)
+            static bool globalct_report_cri_hp1591_wrapper(struct CPlayer* pOne)
             {
                return globalct_report_cri_hp1591_user(pOne, globalct_report_cri_hp1591_next);
             };
-            bool globalct_report_position1593_wrapper(struct CPlayer* pOne)
+            static bool globalct_report_position1593_wrapper(struct CPlayer* pOne)
             {
                return globalct_report_position1593_user(pOne, globalct_report_position1593_next);
             };
-            bool globalct_request_delete_quest1595_wrapper(struct CPlayer* pOne)
+            static bool globalct_request_delete_quest1595_wrapper(struct CPlayer* pOne)
             {
                return globalct_request_delete_quest1595_user(pOne, globalct_request_delete_quest1595_next);
             };
-            bool globalct_request_npc_quest1597_wrapper(struct CPlayer* pOne)
+            static bool globalct_request_npc_quest1597_wrapper(struct CPlayer* pOne)
             {
                return globalct_request_npc_quest1597_user(pOne, globalct_request_npc_quest1597_next);
             };
-            bool globalct_respawn_start1599_wrapper(struct CPlayer* pOne)
+            static bool globalct_respawn_start1599_wrapper(struct CPlayer* pOne)
             {
                return globalct_respawn_start1599_user(pOne, globalct_respawn_start1599_next);
             };
-            bool globalct_respawn_stop1601_wrapper(struct CPlayer* pOne)
+            static bool globalct_respawn_stop1601_wrapper(struct CPlayer* pOne)
             {
                return globalct_respawn_stop1601_user(pOne, globalct_respawn_stop1601_next);
             };
-            bool globalct_resurrect_player1603_wrapper(struct CPlayer* pOne)
+            static bool globalct_resurrect_player1603_wrapper(struct CPlayer* pOne)
             {
                return globalct_resurrect_player1603_user(pOne, globalct_resurrect_player1603_next);
             };
-            bool globalct_server_rate1605_wrapper(struct CPlayer* pOne)
+            static bool globalct_server_rate1605_wrapper(struct CPlayer* pOne)
             {
                return globalct_server_rate1605_user(pOne, globalct_server_rate1605_next);
             };
-            bool globalct_server_time1607_wrapper(struct CPlayer* pOne)
+            static bool globalct_server_time1607_wrapper(struct CPlayer* pOne)
             {
                return globalct_server_time1607_user(pOne, globalct_server_time1607_next);
             };
-            bool globalct_set_animus_exp1609_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_animus_exp1609_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_animus_exp1609_user(pOne, globalct_set_animus_exp1609_next);
             };
-            bool globalct_set_animus_lv1611_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_animus_lv1611_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_animus_lv1611_user(pOne, globalct_set_animus_lv1611_next);
             };
-            bool globalct_set_damage_part1613_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_damage_part1613_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_damage_part1613_user(pOne, globalct_set_damage_part1613_next);
             };
-            bool globalct_set_exp_rate1615_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_exp_rate1615_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_exp_rate1615_user(pOne, globalct_set_exp_rate1615_next);
             };
-            bool globalct_set_guildbattle_color1617_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_guildbattle_color1617_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_guildbattle_color1617_user(pOne, globalct_set_guildbattle_color1617_next);
             };
-            bool globalct_set_hfs_full1619_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_hfs_full1619_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_hfs_full1619_user(pOne, globalct_set_hfs_full1619_next);
             };
-            bool globalct_set_hp1621_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_hp1621_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_hp1621_user(pOne, globalct_set_hp1621_next);
             };
-            bool globalct_set_jade_effect1623_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_jade_effect1623_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_jade_effect1623_user(pOne, globalct_set_jade_effect1623_next);
             };
-            bool globalct_set_kill_list_init1625_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_kill_list_init1625_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_kill_list_init1625_user(pOne, globalct_set_kill_list_init1625_next);
             };
-            bool globalct_set_loot_free1627_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_loot_free1627_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_loot_free1627_user(pOne, globalct_set_loot_free1627_next);
             };
-            bool globalct_set_make_succ1629_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_make_succ1629_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_make_succ1629_user(pOne, globalct_set_make_succ1629_next);
             };
-            bool globalct_set_matchless1631_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_matchless1631_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_matchless1631_user(pOne, globalct_set_matchless1631_next);
             };
-            bool globalct_set_never_die1633_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_never_die1633_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_never_die1633_user(pOne, globalct_set_never_die1633_next);
             };
-            bool globalct_set_ore_amount1635_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_ore_amount1635_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_ore_amount1635_user(pOne, globalct_set_ore_amount1635_next);
             };
-            bool globalct_set_temp_cash_point1637_wrapper(struct CPlayer* pOne)
+            static bool globalct_set_temp_cash_point1637_wrapper(struct CPlayer* pOne)
             {
                return globalct_set_temp_cash_point1637_user(pOne, globalct_set_temp_cash_point1637_next);
             };
-            bool globalct_sfmastery1639_wrapper(struct CPlayer* pOne)
+            static bool globalct_sfmastery1639_wrapper(struct CPlayer* pOne)
             {
                return globalct_sfmastery1639_user(pOne, globalct_sfmastery1639_next);
             };
-            bool globalct_start_cri1641_wrapper(struct CPlayer* pOne)
+            static bool globalct_start_cri1641_wrapper(struct CPlayer* pOne)
             {
                return globalct_start_cri1641_user(pOne, globalct_start_cri1641_next);
             };
-            bool globalct_start_keeper1643_wrapper(struct CPlayer* pOne)
+            static bool globalct_start_keeper1643_wrapper(struct CPlayer* pOne)
             {
                return globalct_start_keeper1643_user(pOne, globalct_start_keeper1643_next);
             };
-            bool globalct_take_gravitystone1645_wrapper(struct CPlayer* pOne)
+            static bool globalct_take_gravitystone1645_wrapper(struct CPlayer* pOne)
             {
                return globalct_take_gravitystone1645_user(pOne, globalct_take_gravitystone1645_next);
             };
-            bool globalct_takeholymental1647_wrapper(struct CPlayer* pOne)
+            static bool globalct_takeholymental1647_wrapper(struct CPlayer* pOne)
             {
                return globalct_takeholymental1647_user(pOne, globalct_takeholymental1647_next);
             };
-            bool globalct_telekinesis1649_wrapper(struct CPlayer* pOne)
+            static bool globalct_telekinesis1649_wrapper(struct CPlayer* pOne)
             {
                return globalct_telekinesis1649_user(pOne, globalct_telekinesis1649_next);
             };
-            bool globalct_tl_info_set1651_wrapper(struct CPlayer* pOne)
+            static bool globalct_tl_info_set1651_wrapper(struct CPlayer* pOne)
             {
                return globalct_tl_info_set1651_user(pOne, globalct_tl_info_set1651_next);
             };
-            bool globalct_tl_info_view1653_wrapper(struct CPlayer* pOne)
+            static bool globalct_tl_info_view1653_wrapper(struct CPlayer* pOne)
             {
                return globalct_tl_info_view1653_user(pOne, globalct_tl_info_view1653_next);
             };
-            bool globalct_tl_system_setting1655_wrapper(struct CPlayer* pOne)
+            static bool globalct_tl_system_setting1655_wrapper(struct CPlayer* pOne)
             {
                return globalct_tl_system_setting1655_user(pOne, globalct_tl_system_setting1655_next);
             };
-            bool globalct_tracing_hide1657_wrapper(struct CPlayer* pOne)
+            static bool globalct_tracing_hide1657_wrapper(struct CPlayer* pOne)
             {
                return globalct_tracing_hide1657_user(pOne, globalct_tracing_hide1657_next);
             };
-            bool globalct_tracing_show1659_wrapper(struct CPlayer* pOne)
+            static bool globalct_tracing_show1659_wrapper(struct CPlayer* pOne)
             {
                return globalct_tracing_show1659_user(pOne, globalct_tracing_show1659_next);
             };
-            bool globalct_trap_attack_grade1661_wrapper(struct CPlayer* pOne)
+            static bool globalct_trap_attack_grade1661_wrapper(struct CPlayer* pOne)
             {
                return globalct_trap_attack_grade1661_user(pOne, globalct_trap_attack_grade1661_next);
             };
-            bool globalct_trunk_init1663_wrapper(struct CPlayer* pOne)
+            static bool globalct_trunk_init1663_wrapper(struct CPlayer* pOne)
             {
                return globalct_trunk_init1663_user(pOne, globalct_trunk_init1663_next);
             };
-            bool globalct_up_allskill1665_wrapper(struct CPlayer* pOne)
+            static bool globalct_up_allskill1665_wrapper(struct CPlayer* pOne)
             {
                return globalct_up_allskill1665_user(pOne, globalct_up_allskill1665_next);
             };
-            bool globalct_up_allskill_pt1667_wrapper(struct CPlayer* pOne)
+            static bool globalct_up_allskill_pt1667_wrapper(struct CPlayer* pOne)
             {
                return globalct_up_allskill_pt1667_user(pOne, globalct_up_allskill_pt1667_next);
             };
-            bool globalct_up_forceitem1669_wrapper(struct CPlayer* pOne)
+            static bool globalct_up_forceitem1669_wrapper(struct CPlayer* pOne)
             {
                return globalct_up_forceitem1669_user(pOne, globalct_up_forceitem1669_next);
             };
-            bool globalct_up_forcemastery1671_wrapper(struct CPlayer* pOne)
+            static bool globalct_up_forcemastery1671_wrapper(struct CPlayer* pOne)
             {
                return globalct_up_forcemastery1671_user(pOne, globalct_up_forcemastery1671_next);
             };
-            bool globalct_up_skill1673_wrapper(struct CPlayer* pOne)
+            static bool globalct_up_skill1673_wrapper(struct CPlayer* pOne)
             {
                return globalct_up_skill1673_user(pOne, globalct_up_skill1673_next);
             };
-            bool globalct_user_num1675_wrapper(struct CPlayer* pOne)
+            static bool globalct_user_num1675_wrapper(struct CPlayer* pOne)
             {
                return globalct_user_num1675_user(pOne, globalct_user_num1675_next);
             };
-            bool globalct_userchatban1677_wrapper(struct CPlayer* pOne)
+            static bool globalct_userchatban1677_wrapper(struct CPlayer* pOne)
             {
                return globalct_userchatban1677_user(pOne, globalct_userchatban1677_next);
             };
-            bool globalct_ut_cancel_regist1679_wrapper(struct CPlayer* pOne)
+            static bool globalct_ut_cancel_regist1679_wrapper(struct CPlayer* pOne)
             {
                return globalct_ut_cancel_regist1679_user(pOne, globalct_ut_cancel_regist1679_next);
             };
-            bool globalct_ut_cancel_registlogout1681_wrapper(struct CPlayer* pOne)
+            static bool globalct_ut_cancel_registlogout1681_wrapper(struct CPlayer* pOne)
             {
                return globalct_ut_cancel_registlogout1681_user(pOne, globalct_ut_cancel_registlogout1681_next);
             };
-            bool globalct_view_method1683_wrapper(struct CPlayer* pOne)
+            static bool globalct_view_method1683_wrapper(struct CPlayer* pOne)
             {
                return globalct_view_method1683_user(pOne, globalct_view_method1683_next);
             };
-            bool globalct_vote_enable1685_wrapper(struct CPlayer* pOne)
+            static bool globalct_vote_enable1685_wrapper(struct CPlayer* pOne)
             {
                return globalct_vote_enable1685_user(pOne, globalct_vote_enable1685_next);
             };
-            bool globalct_whoami1687_wrapper(struct CPlayer* pOne)
+            static bool globalct_whoami1687_wrapper(struct CPlayer* pOne)
             {
                return globalct_whoami1687_user(pOne, globalct_whoami1687_next);
             };
-            char* globalcvt_string1689_wrapper(int nVal)
+            static char* globalcvt_string1689_wrapper(int nVal)
             {
                return globalcvt_string1689_user(nVal, globalcvt_string1689_next);
             };
-            void globaleAddCutOre1691_wrapper(int nRaceCode, char byKind, int nAdd)
+            static void globaleAddCutOre1691_wrapper(int nRaceCode, char byKind, int nAdd)
             {
                globaleAddCutOre1691_user(nRaceCode, byKind, nAdd, globaleAddCutOre1691_next);
             };
-            void globaleAddDalant1693_wrapper(int nRaceCode, int nAdd)
+            static void globaleAddDalant1693_wrapper(int nRaceCode, int nAdd)
             {
                globaleAddDalant1693_user(nRaceCode, nAdd, globaleAddDalant1693_next);
             };
-            void globaleAddGold1695_wrapper(int nRaceCode, int nAdd)
+            static void globaleAddGold1695_wrapper(int nRaceCode, int nAdd)
             {
                globaleAddGold1695_user(nRaceCode, nAdd, globaleAddGold1695_next);
             };
-            void globaleAddMineOre1697_wrapper(int nRaceCode, char byKind, int nAdd)
+            static void globaleAddMineOre1697_wrapper(int nRaceCode, char byKind, int nAdd)
             {
                globaleAddMineOre1697_user(nRaceCode, byKind, nAdd, globaleAddMineOre1697_next);
             };
-            long double globaleGetCutOre1699_wrapper(int nRaceCode, char byKind)
+            static long double globaleGetCutOre1699_wrapper(int nRaceCode, char byKind)
             {
                return globaleGetCutOre1699_user(nRaceCode, byKind, globaleGetCutOre1699_next);
             };
-            long double globaleGetDalant1701_wrapper(int nRaceCode)
+            static long double globaleGetDalant1701_wrapper(int nRaceCode)
             {
                return globaleGetDalant1701_user(nRaceCode, globaleGetDalant1701_next);
             };
-            long double globaleGetGold1703_wrapper(int nRaceCode)
+            static long double globaleGetGold1703_wrapper(int nRaceCode)
             {
                return globaleGetGold1703_user(nRaceCode, globaleGetGold1703_next);
             };
-            uint16_t globaleGetGuide1705_wrapper(int nRaceCode)
+            static uint16_t globaleGetGuide1705_wrapper(int nRaceCode)
             {
                return globaleGetGuide1705_user(nRaceCode, globaleGetGuide1705_next);
             };
-            struct _economy_history_data* globaleGetGuideHistory1707_wrapper()
+            static struct _economy_history_data* globaleGetGuideHistory1707_wrapper()
             {
                return globaleGetGuideHistory1707_user(globaleGetGuideHistory1707_next);
             };
-            unsigned int globaleGetLocalDate1709_wrapper()
+            static unsigned int globaleGetLocalDate1709_wrapper()
             {
                return globaleGetLocalDate1709_user(globaleGetLocalDate1709_next);
             };
-            int globaleGetMgrValue1711_wrapper()
+            static int globaleGetMgrValue1711_wrapper()
             {
                return globaleGetMgrValue1711_user(globaleGetMgrValue1711_next);
             };
-            long double globaleGetMineOre1713_wrapper(int nRaceCode, char byKind)
+            static long double globaleGetMineOre1713_wrapper(int nRaceCode, char byKind)
             {
                return globaleGetMineOre1713_user(nRaceCode, byKind, globaleGetMineOre1713_next);
             };
-            long double globaleGetOldCutOre1715_wrapper(int nRaceCode, char byKind)
+            static long double globaleGetOldCutOre1715_wrapper(int nRaceCode, char byKind)
             {
                return globaleGetOldCutOre1715_user(nRaceCode, byKind, globaleGetOldCutOre1715_next);
             };
-            long double globaleGetOldDalant1717_wrapper(int nRaceCode)
+            static long double globaleGetOldDalant1717_wrapper(int nRaceCode)
             {
                return globaleGetOldDalant1717_user(nRaceCode, globaleGetOldDalant1717_next);
             };
-            long double globaleGetOldGold1719_wrapper(int nRaceCode)
+            static long double globaleGetOldGold1719_wrapper(int nRaceCode)
             {
                return globaleGetOldGold1719_user(nRaceCode, globaleGetOldGold1719_next);
             };
-            long double globaleGetOldMineOre1721_wrapper(int nRaceCode, char byKind)
+            static long double globaleGetOldMineOre1721_wrapper(int nRaceCode, char byKind)
             {
                return globaleGetOldMineOre1721_user(nRaceCode, byKind, globaleGetOldMineOre1721_next);
             };
-            float globaleGetOreRate1723_wrapper(int nRaceCode)
+            static float globaleGetOreRate1723_wrapper(int nRaceCode)
             {
                return globaleGetOreRate1723_user(nRaceCode, globaleGetOreRate1723_next);
             };
-            int globaleGetRate1725_wrapper(int nRaceCode)
+            static int globaleGetRate1725_wrapper(int nRaceCode)
             {
                return globaleGetRate1725_user(nRaceCode, globaleGetRate1725_next);
             };
-            float globaleGetTex1727_wrapper(int nRaceCode)
+            static float globaleGetTex1727_wrapper(int nRaceCode)
             {
                return globaleGetTex1727_user(nRaceCode, globaleGetTex1727_next);
             };
-            unsigned int globaleGetTexRate1729_wrapper(int nRaceCode)
+            static unsigned int globaleGetTexRate1729_wrapper(int nRaceCode)
             {
                return globaleGetTexRate1729_user(nRaceCode, globaleGetTexRate1729_next);
             };
-            bool globaleInitEconomySystem1731_wrapper(int nCurMgrValue, int nNextMgrValue, struct _economy_history_data* pData, int nHisNum, struct _economy_history_data* pCurData)
+            static bool globaleInitEconomySystem1731_wrapper(int nCurMgrValue, int nNextMgrValue, struct _economy_history_data* pData, int nHisNum, struct _economy_history_data* pCurData)
             {
                return globaleInitEconomySystem1731_user(nCurMgrValue, nNextMgrValue, pData, nHisNum, pCurData, globaleInitEconomySystem1731_next);
             };
-            void globaleUpdateEconomySystem1733_wrapper(bool* pbChangeDay)
+            static void globaleUpdateEconomySystem1733_wrapper(bool* pbChangeDay)
             {
                globaleUpdateEconomySystem1733_user(pbChangeDay, globaleUpdateEconomySystem1733_next);
             };
-            void globalerror_fatal_printf1734_wrapper(char* arg_0, char* arg_1)
-            {
-               globalerror_fatal_printf1734_user(arg_0, arg_1, globalerror_fatal_printf1734_next);
-            };
-            void globalerror_malloc1735_wrapper(char* arg_0)
-            {
-               globalerror_malloc1735_user(arg_0, globalerror_malloc1735_next);
-            };
-            float globalexp1736_wrapper(float X)
-            {
-               return globalexp1736_user(X, globalexp1736_next);
-            };
-            float globalfabs1737_wrapper(float arg_0)
-            {
-               return globalfabs1737_user(arg_0, globalfabs1737_next);
-            };
-            struct _iobuf* globalfopenMFM1738_wrapper(char* Mode, char* arg_0)
-            {
-               return globalfopenMFM1738_user(Mode, arg_0, globalfopenMFM1738_next);
-            };
-            bool globalisalnumstr1740_wrapper(char* uszStr)
-            {
-               return globalisalnumstr1740_user(uszStr, globalisalnumstr1740_next);
-            };
-            bool globalisalphastr1742_wrapper(char* uszStr)
-            {
-               return globalisalphastr1742_user(uszStr, globalisalphastr1742_next);
-            };
-            bool globalisdigitstr1744_wrapper(char* uszStr)
-            {
-               return globalisdigitstr1744_user(uszStr, globalisdigitstr1744_next);
-            };
-            bool globaljc_Contents1746_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_Contents1746_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_Contents1746_user(fstr, pSetup, pszoutErrMsg, globaljc_Contents1746_next);
             };
-            bool globaljc_Count1748_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_Count1748_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_Count1748_user(fstr, pSetup, pszoutErrMsg, globaljc_Count1748_next);
             };
-            bool globaljc_Description1750_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_Description1750_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_Description1750_user(fstr, pSetup, pszoutErrMsg, globaljc_Description1750_next);
             };
-            bool globaljc_ReactContents1752_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_ReactContents1752_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_ReactContents1752_user(fstr, pSetup, pszoutErrMsg, globaljc_ReactContents1752_next);
             };
-            bool globaljc_ReactType1754_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_ReactType1754_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_ReactType1754_user(fstr, pSetup, pszoutErrMsg, globaljc_ReactType1754_next);
             };
-            bool globaljc_Type1756_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globaljc_Type1756_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globaljc_Type1756_user(fstr, pSetup, pszoutErrMsg, globaljc_Type1756_next);
             };
-            float globallog1757_wrapper(float X)
-            {
-               return globallog1757_user(X, globallog1757_next);
-            };
-            lua_State* globallua_my_open1759_wrapper()
+            static lua_State* globallua_my_open1759_wrapper()
             {
                return globallua_my_open1759_user(globallua_my_open1759_next);
             };
-            bool globalmc_AddMonster1761_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_AddMonster1761_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_AddMonster1761_user(fstr, pSetup, pszoutErrMsg, globalmc_AddMonster1761_next);
             };
-            bool globalmc_AddTime1763_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_AddTime1763_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_AddTime1763_user(fstr, pSetup, pszoutErrMsg, globalmc_AddTime1763_next);
             };
-            bool globalmc_Area1765_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_Area1765_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_Area1765_user(fstr, pSetup, pszoutErrMsg, globalmc_Area1765_next);
             };
-            bool globalmc_ChangeMonster1767_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_ChangeMonster1767_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_ChangeMonster1767_user(fstr, pSetup, pszoutErrMsg, globalmc_ChangeMonster1767_next);
             };
-            bool globalmc_CompleteMsg1769_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_CompleteMsg1769_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_CompleteMsg1769_user(fstr, pSetup, pszoutErrMsg, globalmc_CompleteMsg1769_next);
             };
-            bool globalmc_Description1771_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_Description1771_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_Description1771_user(fstr, pSetup, pszoutErrMsg, globalmc_Description1771_next);
             };
-            bool globalmc_GatePos1773_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_GatePos1773_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_GatePos1773_user(fstr, pSetup, pszoutErrMsg, globalmc_GatePos1773_next);
             };
-            bool globalmc_If1775_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_If1775_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_If1775_user(fstr, pSetup, pszoutErrMsg, globalmc_If1775_next);
             };
-            bool globalmc_Inner1777_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_Inner1777_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_Inner1777_user(fstr, pSetup, pszoutErrMsg, globalmc_Inner1777_next);
             };
-            bool globalmc_JobOrder1779_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_JobOrder1779_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_JobOrder1779_user(fstr, pSetup, pszoutErrMsg, globalmc_JobOrder1779_next);
             };
-            bool globalmc_LimTimeSec1781_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_LimTimeSec1781_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_LimTimeSec1781_user(fstr, pSetup, pszoutErrMsg, globalmc_LimTimeSec1781_next);
             };
-            bool globalmc_LootItem1783_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_LootItem1783_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_LootItem1783_user(fstr, pSetup, pszoutErrMsg, globalmc_LootItem1783_next);
             };
-            bool globalmc_RespawnMonster1785_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_RespawnMonster1785_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_RespawnMonster1785_user(fstr, pSetup, pszoutErrMsg, globalmc_RespawnMonster1785_next);
             };
-            bool globalmc_RespawnMonsterOption1787_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_RespawnMonsterOption1787_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_RespawnMonsterOption1787_user(fstr, pSetup, pszoutErrMsg, globalmc_RespawnMonsterOption1787_next);
             };
-            bool globalmc_ResultContents1789_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_ResultContents1789_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_ResultContents1789_user(fstr, pSetup, pszoutErrMsg, globalmc_ResultContents1789_next);
             };
-            bool globalmc_ResultType1791_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_ResultType1791_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_ResultType1791_user(fstr, pSetup, pszoutErrMsg, globalmc_ResultType1791_next);
             };
-            bool globalmc_StartPos1793_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_StartPos1793_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_StartPos1793_user(fstr, pSetup, pszoutErrMsg, globalmc_StartPos1793_next);
             };
-            bool globalmc_respond1795_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalmc_respond1795_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalmc_respond1795_user(fstr, pSetup, pszoutErrMsg, globalmc_respond1795_next);
             };
-            long double globalpow1814_wrapper(long double _X, int _Y)
-            {
-               return globalpow1814_user(_X, _Y, globalpow1814_next);
-            };
-            float globalpow1815_wrapper(float X, float Y)
-            {
-               return globalpow1815_user(X, Y, globalpow1815_next);
-            };
-            float globalpow1817_wrapper(float _X, int _Y)
-            {
-               return globalpow1817_user(_X, _Y, globalpow1817_next);
-            };
-            bool globalqc_Dalant1819_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_Dalant1819_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_Dalant1819_user(fstr, pSetup, pszoutErrMsg, globalqc_Dalant1819_next);
             };
-            bool globalqc_Description1821_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_Description1821_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_Description1821_user(fstr, pSetup, pszoutErrMsg, globalqc_Description1821_next);
             };
-            bool globalqc_DummyBlock1823_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_DummyBlock1823_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_DummyBlock1823_user(fstr, pSetup, pszoutErrMsg, globalqc_DummyBlock1823_next);
             };
-            bool globalqc_LimitLvMax1825_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_LimitLvMax1825_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_LimitLvMax1825_user(fstr, pSetup, pszoutErrMsg, globalqc_LimitLvMax1825_next);
             };
-            bool globalqc_LimitLvMin1827_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_LimitLvMin1827_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_LimitLvMin1827_user(fstr, pSetup, pszoutErrMsg, globalqc_LimitLvMin1827_next);
             };
-            bool globalqc_MemberNum1829_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_MemberNum1829_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_MemberNum1829_user(fstr, pSetup, pszoutErrMsg, globalqc_MemberNum1829_next);
             };
-            bool globalqc_MembershipParty1831_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_MembershipParty1831_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_MembershipParty1831_user(fstr, pSetup, pszoutErrMsg, globalqc_MembershipParty1831_next);
             };
-            bool globalqc_RewardExp1833_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_RewardExp1833_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_RewardExp1833_user(fstr, pSetup, pszoutErrMsg, globalqc_RewardExp1833_next);
             };
-            bool globalqc_RewardItem1835_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_RewardItem1835_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_RewardItem1835_user(fstr, pSetup, pszoutErrMsg, globalqc_RewardItem1835_next);
             };
-            bool globalqc_RewardPvp1837_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_RewardPvp1837_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_RewardPvp1837_user(fstr, pSetup, pszoutErrMsg, globalqc_RewardPvp1837_next);
             };
-            bool globalqc_StartMission1839_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_StartMission1839_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_StartMission1839_user(fstr, pSetup, pszoutErrMsg, globalqc_StartMission1839_next);
             };
-            bool globalqc_UseMap1841_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_UseMap1841_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_UseMap1841_user(fstr, pSetup, pszoutErrMsg, globalqc_UseMap1841_next);
             };
-            bool globalqc_monsterGroup1843_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
+            static bool globalqc_monsterGroup1843_wrapper(struct strFILE* fstr, struct CDarkHoleDungeonQuestSetup* pSetup, char* pszoutErrMsg)
             {
                return globalqc_monsterGroup1843_user(fstr, pSetup, pszoutErrMsg, globalqc_monsterGroup1843_next);
             };
-            float globalsin1845_wrapper(float _X)
-            {
-               return globalsin1845_user(_X, globalsin1845_next);
-            };
-            int globalsprintf_s1847_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1847_user(_Dest, _Format, globalsprintf_s1847_next);
-            };
-            int globalsprintf_s1849_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1849_user(_Dest, _Format, globalsprintf_s1849_next);
-            };
-            int globalsprintf_s1851_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1851_user(_Dest, _Format, globalsprintf_s1851_next);
-            };
-            int globalsprintf_s1853_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1853_user(_Dest, _Format, globalsprintf_s1853_next);
-            };
-            int globalsprintf_s1855_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1855_user(_Dest, _Format, globalsprintf_s1855_next);
-            };
-            int globalsprintf_s1857_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1857_user(_Dest, _Format, globalsprintf_s1857_next);
-            };
-            int globalsprintf_s1859_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1859_user(_Dest, _Format, globalsprintf_s1859_next);
-            };
-            int globalsprintf_s1861_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1861_user(_Dest, _Format, globalsprintf_s1861_next);
-            };
-            int globalsprintf_s1863_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1863_user(_Dest, _Format, globalsprintf_s1863_next);
-            };
-            int globalsprintf_s1865_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1865_user(_Dest, _Format, globalsprintf_s1865_next);
-            };
-            int globalsprintf_s1867_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1867_user(_Dest, _Format, globalsprintf_s1867_next);
-            };
-            int globalsprintf_s1869_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1869_user(_Dest, _Format, globalsprintf_s1869_next);
-            };
-            int globalsprintf_s1871_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1871_user(_Dest, _Format, globalsprintf_s1871_next);
-            };
-            int globalsprintf_s1873_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1873_user(_Dest, _Format, globalsprintf_s1873_next);
-            };
-            int globalsprintf_s1875_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1875_user(_Dest, _Format, globalsprintf_s1875_next);
-            };
-            int globalsprintf_s1877_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1877_user(_Dest, _Format, globalsprintf_s1877_next);
-            };
-            int globalsprintf_s1879_wrapper(char** _Dest, char* _Format)
-            {
-               return globalsprintf_s1879_user(_Dest, _Format, globalsprintf_s1879_next);
-            };
-            float globalsqrt1881_wrapper(float _X)
-            {
-               return globalsqrt1881_user(_X, globalsqrt1881_next);
-            };
-            int globalstrcat_s1883_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcat_s1883_user(_Dest, _Source, globalstrcat_s1883_next);
-            };
-            int globalstrcat_s1885_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcat_s1885_user(_Dest, _Source, globalstrcat_s1885_next);
-            };
-            int globalstrcat_s1887_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcat_s1887_user(_Dest, _Source, globalstrcat_s1887_next);
-            };
-            char* globalstrchr1889_wrapper(char* _Str, int _Ch)
-            {
-               return globalstrchr1889_user(_Str, _Ch, globalstrchr1889_next);
-            };
-            int globalstrcpy_s1891_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1891_user(_Dest, _Source, globalstrcpy_s1891_next);
-            };
-            int globalstrcpy_s1893_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1893_user(_Dest, _Source, globalstrcpy_s1893_next);
-            };
-            int globalstrcpy_s1895_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1895_user(_Dest, _Source, globalstrcpy_s1895_next);
-            };
-            int globalstrcpy_s1897_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1897_user(_Dest, _Source, globalstrcpy_s1897_next);
-            };
-            int globalstrcpy_s1899_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1899_user(_Dest, _Source, globalstrcpy_s1899_next);
-            };
-            int globalstrcpy_s1901_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1901_user(_Dest, _Source, globalstrcpy_s1901_next);
-            };
-            int globalstrcpy_s1903_wrapper(char** _Dest, char* _Source)
-            {
-               return globalstrcpy_s1903_user(_Dest, _Source, globalstrcpy_s1903_next);
-            };
-            int globalstrncpy_s1905_wrapper(char** _Dest, char* _Source, uint64_t _Count)
-            {
-               return globalstrncpy_s1905_user(_Dest, _Source, _Count, globalstrncpy_s1905_next);
-            };
-            int globalstrncpy_s1907_wrapper(char** _Dest, char* _Source, uint64_t _Count)
-            {
-               return globalstrncpy_s1907_user(_Dest, _Source, _Count, globalstrncpy_s1907_next);
-            };
-            char* globalstrrchr1908_wrapper(char* Str, int Ch)
-            {
-               return globalstrrchr1908_user(Str, Ch, globalstrrchr1908_next);
-            };
-            char* globalstrstr1910_wrapper(char* _Str, char* _SubStr)
-            {
-               return globalstrstr1910_user(_Str, _SubStr, globalstrstr1910_next);
-            };
-            int globalswprintf1912_wrapper(wchar_t* _String, wchar_t* _Format)
-            {
-               return globalswprintf1912_user(_String, _Format, globalswprintf1912_next);
-            };
-            float globaltan1913_wrapper(float X)
+            static float globaltan1913_wrapper(float X)
             {
                return globaltan1913_user(X, globaltan1913_next);
             };
-            void globalterminate1914_wrapper()
+            static void globalterminate1914_wrapper()
             {
                globalterminate1914_user(globalterminate1914_next);
             };
-            void globalwa_EnterWorld1916_wrapper(struct _WA_AVATOR_CODE* pData, uint16_t wZoneIndex)
+            static void globalwa_EnterWorld1916_wrapper(struct _WA_AVATOR_CODE* pData, uint16_t wZoneIndex)
             {
                globalwa_EnterWorld1916_user(pData, wZoneIndex, globalwa_EnterWorld1916_next);
             };
-            void globalwa_ExitWorld1918_wrapper(struct _CLID* pidWorld)
+            static void globalwa_ExitWorld1918_wrapper(struct _CLID* pidWorld)
             {
                globalwa_ExitWorld1918_user(pidWorld, globalwa_ExitWorld1918_next);
             };
-            void globalwa_PartyDisjoint1920_wrapper(struct _CLID* pidBoss)
+            static void globalwa_PartyDisjoint1920_wrapper(struct _CLID* pidBoss)
             {
                globalwa_PartyDisjoint1920_user(pidBoss, globalwa_PartyDisjoint1920_next);
             };
-            void globalwa_PartyForceLeave1922_wrapper(struct _CLID* pidBoss, struct _CLID* pidLeaver)
+            static void globalwa_PartyForceLeave1922_wrapper(struct _CLID* pidBoss, struct _CLID* pidLeaver)
             {
                globalwa_PartyForceLeave1922_user(pidBoss, pidLeaver, globalwa_PartyForceLeave1922_next);
             };
-            void globalwa_PartyJoin1924_wrapper(struct _CLID* pidBoss, struct _CLID* pidJoiner)
+            static void globalwa_PartyJoin1924_wrapper(struct _CLID* pidBoss, struct _CLID* pidJoiner)
             {
                globalwa_PartyJoin1924_user(pidBoss, pidJoiner, globalwa_PartyJoin1924_next);
             };
-            void globalwa_PartyLock1926_wrapper(struct _CLID* pidBoss, bool bLock)
+            static void globalwa_PartyLock1926_wrapper(struct _CLID* pidBoss, bool bLock)
             {
                globalwa_PartyLock1926_user(pidBoss, bLock, globalwa_PartyLock1926_next);
             };
-            void globalwa_PartyLootShareSystem1928_wrapper(struct _CLID* pidBoss, char byLootShareMode)
+            static void globalwa_PartyLootShareSystem1928_wrapper(struct _CLID* pidBoss, char byLootShareMode)
             {
                globalwa_PartyLootShareSystem1928_user(pidBoss, byLootShareMode, globalwa_PartyLootShareSystem1928_next);
             };
-            void globalwa_PartySelfLeave1930_wrapper(struct _CLID* pidLeaver)
+            static void globalwa_PartySelfLeave1930_wrapper(struct _CLID* pidLeaver)
             {
                globalwa_PartySelfLeave1930_user(pidLeaver, globalwa_PartySelfLeave1930_next);
             };
-            void globalwa_PartySuccession1932_wrapper(struct _CLID* pidBoss, struct _CLID* pidSuccessor)
+            static void globalwa_PartySuccession1932_wrapper(struct _CLID* pidBoss, struct _CLID* pidSuccessor)
             {
                globalwa_PartySuccession1932_user(pidBoss, pidSuccessor, globalwa_PartySuccession1932_next);
             };
-            wchar_t* globalwcsstr1934_wrapper(wchar_t* _Str, wchar_t* _SubStr)
-            {
-               return globalwcsstr1934_user(_Str, _SubStr, globalwcsstr1934_next);
-            };
             
-            hook_record global_functions[] = {
+            static hook_record global_functions[] = {
             {   (LPVOID)0x140510bb0L,
                 (LPVOID *)&globalARGBToJpegFile1_user,
                 (LPVOID *)&globalARGBToJpegFile1_next,
@@ -13455,6 +13107,6 @@ START_ATF_NAMESPACE
                 (LPVOID)cast_pointer_function((void(*)(struct _CLID*, struct _CLID*))&wa_PartySuccession) },           
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace global
 END_ATF_NAMESPACE

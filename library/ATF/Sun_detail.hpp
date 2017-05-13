@@ -8,141 +8,141 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::SunComputeAttenuation1_ptr SunComputeAttenuation1_next(nullptr);
-        info::SunComputeAttenuation1_clbk SunComputeAttenuation1_user(nullptr);
-        info::SunDump22_ptr SunDump22_next(nullptr);
-        info::SunDump22_clbk SunDump22_user(nullptr);
-        info::SunFrameMove3_ptr SunFrameMove3_next(nullptr);
-        info::SunFrameMove3_clbk SunFrameMove3_user(nullptr);
-        info::SunGetAlpha4_ptr SunGetAlpha4_next(nullptr);
-        info::SunGetAlpha4_clbk SunGetAlpha4_user(nullptr);
-        info::SunGetColor5_ptr SunGetColor5_next(nullptr);
-        info::SunGetColor5_clbk SunGetColor5_user(nullptr);
-        info::SunGetColorAndIntensity6_ptr SunGetColorAndIntensity6_next(nullptr);
-        info::SunGetColorAndIntensity6_clbk SunGetColorAndIntensity6_user(nullptr);
-        info::SunGetColorWithIntensity7_ptr SunGetColorWithIntensity7_next(nullptr);
-        info::SunGetColorWithIntensity7_clbk SunGetColorWithIntensity7_user(nullptr);
-        info::SunGetDirection8_ptr SunGetDirection8_next(nullptr);
-        info::SunGetDirection8_clbk SunGetDirection8_user(nullptr);
-        info::SunGetDirection9_ptr SunGetDirection9_next(nullptr);
-        info::SunGetDirection9_clbk SunGetDirection9_user(nullptr);
-        info::SunGetIntensity10_ptr SunGetIntensity10_next(nullptr);
-        info::SunGetIntensity10_clbk SunGetIntensity10_user(nullptr);
-        info::SunGetNightAlpha11_ptr SunGetNightAlpha11_next(nullptr);
-        info::SunGetNightAlpha11_clbk SunGetNightAlpha11_user(nullptr);
-        info::SunInterpolate12_ptr SunInterpolate12_next(nullptr);
-        info::SunInterpolate12_clbk SunInterpolate12_user(nullptr);
-        info::SunInvalidateSun13_ptr SunInvalidateSun13_next(nullptr);
-        info::SunInvalidateSun13_clbk SunInvalidateSun13_user(nullptr);
-        info::SunRead214_ptr SunRead214_next(nullptr);
-        info::SunRead214_clbk SunRead214_user(nullptr);
-        info::SunRender15_ptr SunRender15_next(nullptr);
-        info::SunRender15_clbk SunRender15_user(nullptr);
-        info::SunRestoreSun16_ptr SunRestoreSun16_next(nullptr);
-        info::SunRestoreSun16_clbk SunRestoreSun16_user(nullptr);
-        info::SunSetAlpha17_ptr SunSetAlpha17_next(nullptr);
-        info::SunSetAlpha17_clbk SunSetAlpha17_user(nullptr);
-        info::SunSetNightAlpha18_ptr SunSetNightAlpha18_next(nullptr);
-        info::SunSetNightAlpha18_clbk SunSetNightAlpha18_user(nullptr);
-        info::SunSetScale19_ptr SunSetScale19_next(nullptr);
-        info::SunSetScale19_clbk SunSetScale19_user(nullptr);
-        info::SunSetSunThetaPhi20_ptr SunSetSunThetaPhi20_next(nullptr);
-        info::SunSetSunThetaPhi20_clbk SunSetSunThetaPhi20_user(nullptr);
-        info::SunSetTime21_ptr SunSetTime21_next(nullptr);
-        info::SunSetTime21_clbk SunSetTime21_user(nullptr);
-        info::Sundtor_Sun22_ptr Sundtor_Sun22_next(nullptr);
-        info::Sundtor_Sun22_clbk Sundtor_Sun22_user(nullptr);
+        static info::SunComputeAttenuation1_ptr SunComputeAttenuation1_next(nullptr);
+        static info::SunComputeAttenuation1_clbk SunComputeAttenuation1_user(nullptr);
+        static info::SunDump22_ptr SunDump22_next(nullptr);
+        static info::SunDump22_clbk SunDump22_user(nullptr);
+        static info::SunFrameMove3_ptr SunFrameMove3_next(nullptr);
+        static info::SunFrameMove3_clbk SunFrameMove3_user(nullptr);
+        static info::SunGetAlpha4_ptr SunGetAlpha4_next(nullptr);
+        static info::SunGetAlpha4_clbk SunGetAlpha4_user(nullptr);
+        static info::SunGetColor5_ptr SunGetColor5_next(nullptr);
+        static info::SunGetColor5_clbk SunGetColor5_user(nullptr);
+        static info::SunGetColorAndIntensity6_ptr SunGetColorAndIntensity6_next(nullptr);
+        static info::SunGetColorAndIntensity6_clbk SunGetColorAndIntensity6_user(nullptr);
+        static info::SunGetColorWithIntensity7_ptr SunGetColorWithIntensity7_next(nullptr);
+        static info::SunGetColorWithIntensity7_clbk SunGetColorWithIntensity7_user(nullptr);
+        static info::SunGetDirection8_ptr SunGetDirection8_next(nullptr);
+        static info::SunGetDirection8_clbk SunGetDirection8_user(nullptr);
+        static info::SunGetDirection9_ptr SunGetDirection9_next(nullptr);
+        static info::SunGetDirection9_clbk SunGetDirection9_user(nullptr);
+        static info::SunGetIntensity10_ptr SunGetIntensity10_next(nullptr);
+        static info::SunGetIntensity10_clbk SunGetIntensity10_user(nullptr);
+        static info::SunGetNightAlpha11_ptr SunGetNightAlpha11_next(nullptr);
+        static info::SunGetNightAlpha11_clbk SunGetNightAlpha11_user(nullptr);
+        static info::SunInterpolate12_ptr SunInterpolate12_next(nullptr);
+        static info::SunInterpolate12_clbk SunInterpolate12_user(nullptr);
+        static info::SunInvalidateSun13_ptr SunInvalidateSun13_next(nullptr);
+        static info::SunInvalidateSun13_clbk SunInvalidateSun13_user(nullptr);
+        static info::SunRead214_ptr SunRead214_next(nullptr);
+        static info::SunRead214_clbk SunRead214_user(nullptr);
+        static info::SunRender15_ptr SunRender15_next(nullptr);
+        static info::SunRender15_clbk SunRender15_user(nullptr);
+        static info::SunRestoreSun16_ptr SunRestoreSun16_next(nullptr);
+        static info::SunRestoreSun16_clbk SunRestoreSun16_user(nullptr);
+        static info::SunSetAlpha17_ptr SunSetAlpha17_next(nullptr);
+        static info::SunSetAlpha17_clbk SunSetAlpha17_user(nullptr);
+        static info::SunSetNightAlpha18_ptr SunSetNightAlpha18_next(nullptr);
+        static info::SunSetNightAlpha18_clbk SunSetNightAlpha18_user(nullptr);
+        static info::SunSetScale19_ptr SunSetScale19_next(nullptr);
+        static info::SunSetScale19_clbk SunSetScale19_user(nullptr);
+        static info::SunSetSunThetaPhi20_ptr SunSetSunThetaPhi20_next(nullptr);
+        static info::SunSetSunThetaPhi20_clbk SunSetSunThetaPhi20_user(nullptr);
+        static info::SunSetTime21_ptr SunSetTime21_next(nullptr);
+        static info::SunSetTime21_clbk SunSetTime21_user(nullptr);
+        static info::Sundtor_Sun22_ptr Sundtor_Sun22_next(nullptr);
+        static info::Sundtor_Sun22_clbk Sundtor_Sun22_user(nullptr);
         
-        struct D3DXVECTOR4* SunComputeAttenuation1_wrapper(struct Sun* _this, short retstr, struct D3DXVECTOR4* arg_0, float arg_1)
+        static struct D3DXVECTOR4* SunComputeAttenuation1_wrapper(struct Sun* _this, short retstr, struct D3DXVECTOR4* arg_0, float arg_1)
         {
            return SunComputeAttenuation1_user(_this, retstr, arg_0, arg_1, SunComputeAttenuation1_next);
         };
-        void SunDump22_wrapper(struct Sun* _this, struct _iobuf* arg_0)
+        static void SunDump22_wrapper(struct Sun* _this, struct _iobuf* arg_0)
         {
            SunDump22_user(_this, arg_0, SunDump22_next);
         };
-        void SunFrameMove3_wrapper(struct Sun* _this)
+        static void SunFrameMove3_wrapper(struct Sun* _this)
         {
            SunFrameMove3_user(_this, SunFrameMove3_next);
         };
-        float SunGetAlpha4_wrapper(struct Sun* _this)
+        static float SunGetAlpha4_wrapper(struct Sun* _this)
         {
            return SunGetAlpha4_user(_this, SunGetAlpha4_next);
         };
-        struct D3DXVECTOR4* SunGetColor5_wrapper(struct Sun* _this, short retstr)
+        static struct D3DXVECTOR4* SunGetColor5_wrapper(struct Sun* _this, short retstr)
         {
            return SunGetColor5_user(_this, retstr, SunGetColor5_next);
         };
-        struct D3DXVECTOR4* SunGetColorAndIntensity6_wrapper(struct Sun* _this, short retstr)
+        static struct D3DXVECTOR4* SunGetColorAndIntensity6_wrapper(struct Sun* _this, short retstr)
         {
            return SunGetColorAndIntensity6_user(_this, retstr, SunGetColorAndIntensity6_next);
         };
-        struct D3DXVECTOR4* SunGetColorWithIntensity7_wrapper(struct Sun* _this, short retstr)
+        static struct D3DXVECTOR4* SunGetColorWithIntensity7_wrapper(struct Sun* _this, short retstr)
         {
            return SunGetColorWithIntensity7_user(_this, retstr, SunGetColorWithIntensity7_next);
         };
-        void SunGetDirection8_wrapper(struct Sun* _this, float* arg_0)
+        static void SunGetDirection8_wrapper(struct Sun* _this, float* arg_0)
         {
            SunGetDirection8_user(_this, arg_0, SunGetDirection8_next);
         };
-        struct D3DXVECTOR4* SunGetDirection9_wrapper(struct Sun* _this, short retstr)
+        static struct D3DXVECTOR4* SunGetDirection9_wrapper(struct Sun* _this, short retstr)
         {
            return SunGetDirection9_user(_this, retstr, SunGetDirection9_next);
         };
-        float SunGetIntensity10_wrapper(struct Sun* _this)
+        static float SunGetIntensity10_wrapper(struct Sun* _this)
         {
            return SunGetIntensity10_user(_this, SunGetIntensity10_next);
         };
-        float SunGetNightAlpha11_wrapper(struct Sun* _this)
+        static float SunGetNightAlpha11_wrapper(struct Sun* _this)
         {
            return SunGetNightAlpha11_user(_this, SunGetNightAlpha11_next);
         };
-        void SunInterpolate12_wrapper(struct Sun* _this, struct Sun* arg_0, struct Sun* arg_1, float arg_2)
+        static void SunInterpolate12_wrapper(struct Sun* _this, struct Sun* arg_0, struct Sun* arg_1, float arg_2)
         {
            SunInterpolate12_user(_this, arg_0, arg_1, arg_2, SunInterpolate12_next);
         };
-        void SunInvalidateSun13_wrapper(struct Sun* _this)
+        static void SunInvalidateSun13_wrapper(struct Sun* _this)
         {
            SunInvalidateSun13_user(_this, SunInvalidateSun13_next);
         };
-        void SunRead214_wrapper(struct Sun* _this, struct _iobuf* arg_0)
+        static void SunRead214_wrapper(struct Sun* _this, struct _iobuf* arg_0)
         {
            SunRead214_user(_this, arg_0, SunRead214_next);
         };
-        void SunRender15_wrapper(struct Sun* _this)
+        static void SunRender15_wrapper(struct Sun* _this)
         {
            SunRender15_user(_this, SunRender15_next);
         };
-        void SunRestoreSun16_wrapper(struct Sun* _this)
+        static void SunRestoreSun16_wrapper(struct Sun* _this)
         {
            SunRestoreSun16_user(_this, SunRestoreSun16_next);
         };
-        void SunSetAlpha17_wrapper(struct Sun* _this, float arg_0)
+        static void SunSetAlpha17_wrapper(struct Sun* _this, float arg_0)
         {
            SunSetAlpha17_user(_this, arg_0, SunSetAlpha17_next);
         };
-        void SunSetNightAlpha18_wrapper(struct Sun* _this, float arg_0)
+        static void SunSetNightAlpha18_wrapper(struct Sun* _this, float arg_0)
         {
            SunSetNightAlpha18_user(_this, arg_0, SunSetNightAlpha18_next);
         };
-        void SunSetScale19_wrapper(struct Sun* _this, float arg_0)
+        static void SunSetScale19_wrapper(struct Sun* _this, float arg_0)
         {
            SunSetScale19_user(_this, arg_0, SunSetScale19_next);
         };
-        void SunSetSunThetaPhi20_wrapper(struct Sun* _this, float arg_0, float arg_1)
+        static void SunSetSunThetaPhi20_wrapper(struct Sun* _this, float arg_0, float arg_1)
         {
            SunSetSunThetaPhi20_user(_this, arg_0, arg_1, SunSetSunThetaPhi20_next);
         };
-        void SunSetTime21_wrapper(struct Sun* _this, float arg_0)
+        static void SunSetTime21_wrapper(struct Sun* _this, float arg_0)
         {
            SunSetTime21_user(_this, arg_0, SunSetTime21_next);
         };
-        int64_t Sundtor_Sun22_wrapper(struct Sun* _this)
+        static int64_t Sundtor_Sun22_wrapper(struct Sun* _this)
         {
            return Sundtor_Sun22_user(_this, Sundtor_Sun22_next);
         };
         
-        hook_record Sun_functions[] = {
+        static hook_record Sun_functions[] = {
         {   (LPVOID)0x140521fb0L,
             (LPVOID *)&SunComputeAttenuation1_user,
             (LPVOID *)&SunComputeAttenuation1_next,
@@ -256,5 +256,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

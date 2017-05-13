@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_AVATOR_DB_BASEInit2_ptr _AVATOR_DB_BASEInit2_next(nullptr);
-        info::_AVATOR_DB_BASEInit2_clbk _AVATOR_DB_BASEInit2_user(nullptr);
-        info::_AVATOR_DB_BASEctor__AVATOR_DB_BASE4_ptr _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_next(nullptr);
-        info::_AVATOR_DB_BASEctor__AVATOR_DB_BASE4_clbk _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_user(nullptr);
+        static info::_AVATOR_DB_BASEInit2_ptr _AVATOR_DB_BASEInit2_next(nullptr);
+        static info::_AVATOR_DB_BASEInit2_clbk _AVATOR_DB_BASEInit2_user(nullptr);
+        static info::_AVATOR_DB_BASEctor__AVATOR_DB_BASE4_ptr _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_next(nullptr);
+        static info::_AVATOR_DB_BASEctor__AVATOR_DB_BASE4_clbk _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_user(nullptr);
         
-        void _AVATOR_DB_BASEInit2_wrapper(struct _AVATOR_DB_BASE* _this)
+        static void _AVATOR_DB_BASEInit2_wrapper(struct _AVATOR_DB_BASE* _this)
         {
            _AVATOR_DB_BASEInit2_user(_this, _AVATOR_DB_BASEInit2_next);
         };
-        void _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_wrapper(struct _AVATOR_DB_BASE* _this)
+        static void _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_wrapper(struct _AVATOR_DB_BASE* _this)
         {
            _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_user(_this, _AVATOR_DB_BASEctor__AVATOR_DB_BASE4_next);
         };
         
-        hook_record _AVATOR_DB_BASE_functions[] = {
+        static hook_record _AVATOR_DB_BASE_functions[] = {
         {   (LPVOID)0x1400756a0L,
             (LPVOID *)&_AVATOR_DB_BASEInit2_user,
             (LPVOID *)&_AVATOR_DB_BASEInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

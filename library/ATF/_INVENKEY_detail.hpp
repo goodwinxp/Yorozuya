@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_INVENKEYCovDBKey2_ptr _INVENKEYCovDBKey2_next(nullptr);
-        info::_INVENKEYCovDBKey2_clbk _INVENKEYCovDBKey2_user(nullptr);
-        info::_INVENKEYIsFilled4_ptr _INVENKEYIsFilled4_next(nullptr);
-        info::_INVENKEYIsFilled4_clbk _INVENKEYIsFilled4_user(nullptr);
-        info::_INVENKEYIsOverlapItem6_ptr _INVENKEYIsOverlapItem6_next(nullptr);
-        info::_INVENKEYIsOverlapItem6_clbk _INVENKEYIsOverlapItem6_user(nullptr);
-        info::_INVENKEYLoadDBKey8_ptr _INVENKEYLoadDBKey8_next(nullptr);
-        info::_INVENKEYLoadDBKey8_clbk _INVENKEYLoadDBKey8_user(nullptr);
-        info::_INVENKEYSetRelease10_ptr _INVENKEYSetRelease10_next(nullptr);
-        info::_INVENKEYSetRelease10_clbk _INVENKEYSetRelease10_user(nullptr);
-        info::_INVENKEYctor__INVENKEY12_ptr _INVENKEYctor__INVENKEY12_next(nullptr);
-        info::_INVENKEYctor__INVENKEY12_clbk _INVENKEYctor__INVENKEY12_user(nullptr);
-        info::_INVENKEYctor__INVENKEY14_ptr _INVENKEYctor__INVENKEY14_next(nullptr);
-        info::_INVENKEYctor__INVENKEY14_clbk _INVENKEYctor__INVENKEY14_user(nullptr);
+        static info::_INVENKEYCovDBKey2_ptr _INVENKEYCovDBKey2_next(nullptr);
+        static info::_INVENKEYCovDBKey2_clbk _INVENKEYCovDBKey2_user(nullptr);
+        static info::_INVENKEYIsFilled4_ptr _INVENKEYIsFilled4_next(nullptr);
+        static info::_INVENKEYIsFilled4_clbk _INVENKEYIsFilled4_user(nullptr);
+        static info::_INVENKEYIsOverlapItem6_ptr _INVENKEYIsOverlapItem6_next(nullptr);
+        static info::_INVENKEYIsOverlapItem6_clbk _INVENKEYIsOverlapItem6_user(nullptr);
+        static info::_INVENKEYLoadDBKey8_ptr _INVENKEYLoadDBKey8_next(nullptr);
+        static info::_INVENKEYLoadDBKey8_clbk _INVENKEYLoadDBKey8_user(nullptr);
+        static info::_INVENKEYSetRelease10_ptr _INVENKEYSetRelease10_next(nullptr);
+        static info::_INVENKEYSetRelease10_clbk _INVENKEYSetRelease10_user(nullptr);
+        static info::_INVENKEYctor__INVENKEY12_ptr _INVENKEYctor__INVENKEY12_next(nullptr);
+        static info::_INVENKEYctor__INVENKEY12_clbk _INVENKEYctor__INVENKEY12_user(nullptr);
+        static info::_INVENKEYctor__INVENKEY14_ptr _INVENKEYctor__INVENKEY14_next(nullptr);
+        static info::_INVENKEYctor__INVENKEY14_clbk _INVENKEYctor__INVENKEY14_user(nullptr);
         
-        int _INVENKEYCovDBKey2_wrapper(struct _INVENKEY* _this)
+        static int _INVENKEYCovDBKey2_wrapper(struct _INVENKEY* _this)
         {
            return _INVENKEYCovDBKey2_user(_this, _INVENKEYCovDBKey2_next);
         };
-        bool _INVENKEYIsFilled4_wrapper(struct _INVENKEY* _this)
+        static bool _INVENKEYIsFilled4_wrapper(struct _INVENKEY* _this)
         {
            return _INVENKEYIsFilled4_user(_this, _INVENKEYIsFilled4_next);
         };
-        int _INVENKEYIsOverlapItem6_wrapper(struct _INVENKEY* _this)
+        static int _INVENKEYIsOverlapItem6_wrapper(struct _INVENKEY* _this)
         {
            return _INVENKEYIsOverlapItem6_user(_this, _INVENKEYIsOverlapItem6_next);
         };
-        void _INVENKEYLoadDBKey8_wrapper(struct _INVENKEY* _this, int pl_nKey)
+        static void _INVENKEYLoadDBKey8_wrapper(struct _INVENKEY* _this, int pl_nKey)
         {
            _INVENKEYLoadDBKey8_user(_this, pl_nKey, _INVENKEYLoadDBKey8_next);
         };
-        void _INVENKEYSetRelease10_wrapper(struct _INVENKEY* _this)
+        static void _INVENKEYSetRelease10_wrapper(struct _INVENKEY* _this)
         {
            _INVENKEYSetRelease10_user(_this, _INVENKEYSetRelease10_next);
         };
-        void _INVENKEYctor__INVENKEY12_wrapper(struct _INVENKEY* _this, char byInSlotIndex, char byInTableCode, uint16_t wInItemIndex)
+        static void _INVENKEYctor__INVENKEY12_wrapper(struct _INVENKEY* _this, char byInSlotIndex, char byInTableCode, uint16_t wInItemIndex)
         {
            _INVENKEYctor__INVENKEY12_user(_this, byInSlotIndex, byInTableCode, wInItemIndex, _INVENKEYctor__INVENKEY12_next);
         };
-        void _INVENKEYctor__INVENKEY14_wrapper(struct _INVENKEY* _this)
+        static void _INVENKEYctor__INVENKEY14_wrapper(struct _INVENKEY* _this)
         {
            _INVENKEYctor__INVENKEY14_user(_this, _INVENKEYctor__INVENKEY14_next);
         };
         
-        hook_record _INVENKEY_functions[] = {
+        static hook_record _INVENKEY_functions[] = {
         {   (LPVOID)0x1400ca7b0L,
             (LPVOID *)&_INVENKEYCovDBKey2_user,
             (LPVOID *)&_INVENKEYCovDBKey2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

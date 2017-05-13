@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_ptr CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_next(nullptr);
-        info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_clbk CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_user(nullptr);
-        info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_ptr CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_next(nullptr);
-        info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_clbk CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_user(nullptr);
-        info::CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_ptr CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_next(nullptr);
-        info::CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_clbk CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_user(nullptr);
+        static info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_ptr CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_next(nullptr);
+        static info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_clbk CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_user(nullptr);
+        static info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_ptr CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_next(nullptr);
+        static info::CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_clbk CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_user(nullptr);
+        static info::CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_ptr CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_next(nullptr);
+        static info::CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_clbk CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_user(nullptr);
         
-        void CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_wrapper(struct CUnmannedTraderItemCodeInfo* _this, struct CUnmannedTraderItemCodeInfo* lhs)
+        static void CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_wrapper(struct CUnmannedTraderItemCodeInfo* _this, struct CUnmannedTraderItemCodeInfo* lhs)
         {
            CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_user(_this, lhs, CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_next);
         };
-        void CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_wrapper(struct CUnmannedTraderItemCodeInfo* _this, char* szCode, unsigned int dwStartIndex, unsigned int dwEndIndex)
+        static void CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_wrapper(struct CUnmannedTraderItemCodeInfo* _this, char* szCode, unsigned int dwStartIndex, unsigned int dwEndIndex)
         {
            CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_user(_this, szCode, dwStartIndex, dwEndIndex, CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo4_next);
         };
-        void CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_wrapper(struct CUnmannedTraderItemCodeInfo* _this)
+        static void CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_wrapper(struct CUnmannedTraderItemCodeInfo* _this)
         {
            CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_user(_this, CUnmannedTraderItemCodeInfodtor_CUnmannedTraderItemCodeInfo12_next);
         };
         
-        hook_record CUnmannedTraderItemCodeInfo_functions[] = {
+        static hook_record CUnmannedTraderItemCodeInfo_functions[] = {
         {   (LPVOID)0x140379990L,
             (LPVOID *)&CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_user,
             (LPVOID *)&CUnmannedTraderItemCodeInfoctor_CUnmannedTraderItemCodeInfo2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

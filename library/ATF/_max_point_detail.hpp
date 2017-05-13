@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_max_pointctor__max_point2_ptr _max_pointctor__max_point2_next(nullptr);
-        info::_max_pointctor__max_point2_clbk _max_pointctor__max_point2_user(nullptr);
-        info::_max_pointinit4_ptr _max_pointinit4_next(nullptr);
-        info::_max_pointinit4_clbk _max_pointinit4_user(nullptr);
-        info::_max_pointsize6_ptr _max_pointsize6_next(nullptr);
-        info::_max_pointsize6_clbk _max_pointsize6_user(nullptr);
+        static info::_max_pointctor__max_point2_ptr _max_pointctor__max_point2_next(nullptr);
+        static info::_max_pointctor__max_point2_clbk _max_pointctor__max_point2_user(nullptr);
+        static info::_max_pointinit4_ptr _max_pointinit4_next(nullptr);
+        static info::_max_pointinit4_clbk _max_pointinit4_user(nullptr);
+        static info::_max_pointsize6_ptr _max_pointsize6_next(nullptr);
+        static info::_max_pointsize6_clbk _max_pointsize6_user(nullptr);
         
-        void _max_pointctor__max_point2_wrapper(struct _max_point* _this)
+        static void _max_pointctor__max_point2_wrapper(struct _max_point* _this)
         {
            _max_pointctor__max_point2_user(_this, _max_pointctor__max_point2_next);
         };
-        void _max_pointinit4_wrapper(struct _max_point* _this)
+        static void _max_pointinit4_wrapper(struct _max_point* _this)
         {
            _max_pointinit4_user(_this, _max_pointinit4_next);
         };
-        int _max_pointsize6_wrapper(struct _max_point* _this)
+        static int _max_pointsize6_wrapper(struct _max_point* _this)
         {
            return _max_pointsize6_user(_this, _max_pointsize6_next);
         };
         
-        hook_record _max_point_functions[] = {
+        static hook_record _max_point_functions[] = {
         {   (LPVOID)0x1403f7040L,
             (LPVOID *)&_max_pointctor__max_point2_user,
             (LPVOID *)&_max_pointctor__max_point2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

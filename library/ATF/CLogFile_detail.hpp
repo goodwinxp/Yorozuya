@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLogFilector_CLogFile2_ptr CLogFilector_CLogFile2_next(nullptr);
-        info::CLogFilector_CLogFile2_clbk CLogFilector_CLogFile2_user(nullptr);
-        info::CLogFileSetWriteAble4_ptr CLogFileSetWriteAble4_next(nullptr);
-        info::CLogFileSetWriteAble4_clbk CLogFileSetWriteAble4_user(nullptr);
-        info::CLogFileSetWriteLogFile6_ptr CLogFileSetWriteLogFile6_next(nullptr);
-        info::CLogFileSetWriteLogFile6_clbk CLogFileSetWriteLogFile6_user(nullptr);
-        info::CLogFileWrite8_ptr CLogFileWrite8_next(nullptr);
-        info::CLogFileWrite8_clbk CLogFileWrite8_user(nullptr);
-        info::CLogFileWriteFromArg10_ptr CLogFileWriteFromArg10_next(nullptr);
-        info::CLogFileWriteFromArg10_clbk CLogFileWriteFromArg10_user(nullptr);
-        info::CLogFileWriteFromArg12_ptr CLogFileWriteFromArg12_next(nullptr);
-        info::CLogFileWriteFromArg12_clbk CLogFileWriteFromArg12_user(nullptr);
-        info::CLogFileWriteString14_ptr CLogFileWriteString14_next(nullptr);
-        info::CLogFileWriteString14_clbk CLogFileWriteString14_user(nullptr);
-        info::CLogFiledtor_CLogFile18_ptr CLogFiledtor_CLogFile18_next(nullptr);
-        info::CLogFiledtor_CLogFile18_clbk CLogFiledtor_CLogFile18_user(nullptr);
+        static info::CLogFilector_CLogFile2_ptr CLogFilector_CLogFile2_next(nullptr);
+        static info::CLogFilector_CLogFile2_clbk CLogFilector_CLogFile2_user(nullptr);
+        static info::CLogFileSetWriteAble4_ptr CLogFileSetWriteAble4_next(nullptr);
+        static info::CLogFileSetWriteAble4_clbk CLogFileSetWriteAble4_user(nullptr);
+        static info::CLogFileSetWriteLogFile6_ptr CLogFileSetWriteLogFile6_next(nullptr);
+        static info::CLogFileSetWriteLogFile6_clbk CLogFileSetWriteLogFile6_user(nullptr);
+        static info::CLogFileWrite8_ptr CLogFileWrite8_next(nullptr);
+        static info::CLogFileWrite8_clbk CLogFileWrite8_user(nullptr);
+        static info::CLogFileWriteFromArg10_ptr CLogFileWriteFromArg10_next(nullptr);
+        static info::CLogFileWriteFromArg10_clbk CLogFileWriteFromArg10_user(nullptr);
+        static info::CLogFileWriteFromArg12_ptr CLogFileWriteFromArg12_next(nullptr);
+        static info::CLogFileWriteFromArg12_clbk CLogFileWriteFromArg12_user(nullptr);
+        static info::CLogFileWriteString14_ptr CLogFileWriteString14_next(nullptr);
+        static info::CLogFileWriteString14_clbk CLogFileWriteString14_user(nullptr);
+        static info::CLogFiledtor_CLogFile18_ptr CLogFiledtor_CLogFile18_next(nullptr);
+        static info::CLogFiledtor_CLogFile18_clbk CLogFiledtor_CLogFile18_user(nullptr);
         
-        void CLogFilector_CLogFile2_wrapper(struct CLogFile* _this)
+        static void CLogFilector_CLogFile2_wrapper(struct CLogFile* _this)
         {
            CLogFilector_CLogFile2_user(_this, CLogFilector_CLogFile2_next);
         };
-        void CLogFileSetWriteAble4_wrapper(struct CLogFile* _this, bool bAble)
+        static void CLogFileSetWriteAble4_wrapper(struct CLogFile* _this, bool bAble)
         {
            CLogFileSetWriteAble4_user(_this, bAble, CLogFileSetWriteAble4_next);
         };
-        void CLogFileSetWriteLogFile6_wrapper(struct CLogFile* _this, char* szFileName, int bWriteAble, bool bTrace, bool bDate, bool bAddCount)
+        static void CLogFileSetWriteLogFile6_wrapper(struct CLogFile* _this, char* szFileName, int bWriteAble, bool bTrace, bool bDate, bool bAddCount)
         {
            CLogFileSetWriteLogFile6_user(_this, szFileName, bWriteAble, bTrace, bDate, bAddCount, CLogFileSetWriteLogFile6_next);
         };
-        void CLogFileWrite8_wrapper(struct CLogFile* _this, char* fmt)
+        static void CLogFileWrite8_wrapper(struct CLogFile* _this, char* fmt)
         {
            CLogFileWrite8_user(_this, fmt, CLogFileWrite8_next);
         };
-        void CLogFileWriteFromArg10_wrapper(struct CLogFile* _this, char* fmt, char* arg)
+        static void CLogFileWriteFromArg10_wrapper(struct CLogFile* _this, char* fmt, char* arg)
         {
            CLogFileWriteFromArg10_user(_this, fmt, arg, CLogFileWriteFromArg10_next);
         };
-        void CLogFileWriteFromArg12_wrapper(struct CLogFile* _this, wchar_t* lpcwFmt, char* arg)
+        static void CLogFileWriteFromArg12_wrapper(struct CLogFile* _this, wchar_t* lpcwFmt, char* arg)
         {
            CLogFileWriteFromArg12_user(_this, lpcwFmt, arg, CLogFileWriteFromArg12_next);
         };
-        void CLogFileWriteString14_wrapper(struct CLogFile* _this, char* fmt)
+        static void CLogFileWriteString14_wrapper(struct CLogFile* _this, char* fmt)
         {
            CLogFileWriteString14_user(_this, fmt, CLogFileWriteString14_next);
         };
-        void CLogFiledtor_CLogFile18_wrapper(struct CLogFile* _this)
+        static void CLogFiledtor_CLogFile18_wrapper(struct CLogFile* _this)
         {
            CLogFiledtor_CLogFile18_user(_this, CLogFiledtor_CLogFile18_next);
         };
         
-        hook_record CLogFile_functions[] = {
+        static hook_record CLogFile_functions[] = {
         {   (LPVOID)0x140074ff0L,
             (LPVOID *)&CLogFilector_CLogFile2_user,
             (LPVOID *)&CLogFilector_CLogFile2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

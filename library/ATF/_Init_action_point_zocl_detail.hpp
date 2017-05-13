@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_Init_action_point_zoclctor__Init_action_point_zocl2_ptr _Init_action_point_zoclctor__Init_action_point_zocl2_next(nullptr);
-        info::_Init_action_point_zoclctor__Init_action_point_zocl2_clbk _Init_action_point_zoclctor__Init_action_point_zocl2_user(nullptr);
+        static info::_Init_action_point_zoclctor__Init_action_point_zocl2_ptr _Init_action_point_zoclctor__Init_action_point_zocl2_next(nullptr);
+        static info::_Init_action_point_zoclctor__Init_action_point_zocl2_clbk _Init_action_point_zoclctor__Init_action_point_zocl2_user(nullptr);
         
-        void _Init_action_point_zoclctor__Init_action_point_zocl2_wrapper(struct _Init_action_point_zocl* _this)
+        static void _Init_action_point_zoclctor__Init_action_point_zocl2_wrapper(struct _Init_action_point_zocl* _this)
         {
            _Init_action_point_zoclctor__Init_action_point_zocl2_user(_this, _Init_action_point_zoclctor__Init_action_point_zocl2_next);
         };
         
-        hook_record _Init_action_point_zocl_functions[] = {
+        static hook_record _Init_action_point_zocl_functions[] = {
         {   (LPVOID)0x1400f07f0L,
             (LPVOID *)&_Init_action_point_zoclctor__Init_action_point_zocl2_user,
             (LPVOID *)&_Init_action_point_zoclctor__Init_action_point_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

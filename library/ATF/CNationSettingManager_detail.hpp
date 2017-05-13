@@ -8,243 +8,243 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingManagerctor_CNationSettingManager2_ptr CNationSettingManagerctor_CNationSettingManager2_next(nullptr);
-        info::CNationSettingManagerctor_CNationSettingManager2_clbk CNationSettingManagerctor_CNationSettingManager2_user(nullptr);
-        info::CNationSettingManagerCheckEnterWorldRequest4_ptr CNationSettingManagerCheckEnterWorldRequest4_next(nullptr);
-        info::CNationSettingManagerCheckEnterWorldRequest4_clbk CNationSettingManagerCheckEnterWorldRequest4_user(nullptr);
-        info::CNationSettingManagerCreateBilling6_ptr CNationSettingManagerCreateBilling6_next(nullptr);
-        info::CNationSettingManagerCreateBilling6_clbk CNationSettingManagerCreateBilling6_user(nullptr);
-        info::CNationSettingManagerCreateComplete8_ptr CNationSettingManagerCreateComplete8_next(nullptr);
-        info::CNationSettingManagerCreateComplete8_clbk CNationSettingManagerCreateComplete8_user(nullptr);
-        info::CNationSettingManagerCreateWorker10_ptr CNationSettingManagerCreateWorker10_next(nullptr);
-        info::CNationSettingManagerCreateWorker10_clbk CNationSettingManagerCreateWorker10_user(nullptr);
-        info::CNationSettingManagerGetBillingForceCloseDelay12_ptr CNationSettingManagerGetBillingForceCloseDelay12_next(nullptr);
-        info::CNationSettingManagerGetBillingForceCloseDelay12_clbk CNationSettingManagerGetBillingForceCloseDelay12_user(nullptr);
-        info::CNationSettingManagerGetCashDBDBIP14_ptr CNationSettingManagerGetCashDBDBIP14_next(nullptr);
-        info::CNationSettingManagerGetCashDBDBIP14_clbk CNationSettingManagerGetCashDBDBIP14_user(nullptr);
-        info::CNationSettingManagerGetCashDBID16_ptr CNationSettingManagerGetCashDBID16_next(nullptr);
-        info::CNationSettingManagerGetCashDBID16_clbk CNationSettingManagerGetCashDBID16_user(nullptr);
-        info::CNationSettingManagerGetCashDBName18_ptr CNationSettingManagerGetCashDBName18_next(nullptr);
-        info::CNationSettingManagerGetCashDBName18_clbk CNationSettingManagerGetCashDBName18_user(nullptr);
-        info::CNationSettingManagerGetCashDBPW20_ptr CNationSettingManagerGetCashDBPW20_next(nullptr);
-        info::CNationSettingManagerGetCashDBPW20_clbk CNationSettingManagerGetCashDBPW20_user(nullptr);
-        info::CNationSettingManagerGetCashDBPort22_ptr CNationSettingManagerGetCashDBPort22_next(nullptr);
-        info::CNationSettingManagerGetCashDBPort22_clbk CNationSettingManagerGetCashDBPort22_user(nullptr);
-        info::CNationSettingManagerGetCashItemPrice24_ptr CNationSettingManagerGetCashItemPrice24_next(nullptr);
-        info::CNationSettingManagerGetCashItemPrice24_clbk CNationSettingManagerGetCashItemPrice24_user(nullptr);
-        info::CNationSettingManagerGetCheatTable26_ptr CNationSettingManagerGetCheatTable26_next(nullptr);
-        info::CNationSettingManagerGetCheatTable26_clbk CNationSettingManagerGetCheatTable26_user(nullptr);
-        info::CNationSettingManagerGetItemName28_ptr CNationSettingManagerGetItemName28_next(nullptr);
-        info::CNationSettingManagerGetItemName28_clbk CNationSettingManagerGetItemName28_user(nullptr);
-        info::CNationSettingManagerGetNationCode30_ptr CNationSettingManagerGetNationCode30_next(nullptr);
-        info::CNationSettingManagerGetNationCode30_clbk CNationSettingManagerGetNationCode30_user(nullptr);
-        info::CNationSettingManagerGetNationCodeStr32_ptr CNationSettingManagerGetNationCodeStr32_next(nullptr);
-        info::CNationSettingManagerGetNationCodeStr32_clbk CNationSettingManagerGetNationCodeStr32_user(nullptr);
-        info::CNationSettingManagerGetNoneString34_ptr CNationSettingManagerGetNoneString34_next(nullptr);
-        info::CNationSettingManagerGetNoneString34_clbk CNationSettingManagerGetNoneString34_user(nullptr);
-        info::CNationSettingManagerGetServerVaildKey36_ptr CNationSettingManagerGetServerVaildKey36_next(nullptr);
-        info::CNationSettingManagerGetServerVaildKey36_clbk CNationSettingManagerGetServerVaildKey36_user(nullptr);
-        info::CNationSettingManagerGetWorldDBID38_ptr CNationSettingManagerGetWorldDBID38_next(nullptr);
-        info::CNationSettingManagerGetWorldDBID38_clbk CNationSettingManagerGetWorldDBID38_user(nullptr);
-        info::CNationSettingManagerGetWorldDBPW40_ptr CNationSettingManagerGetWorldDBPW40_next(nullptr);
-        info::CNationSettingManagerGetWorldDBPW40_clbk CNationSettingManagerGetWorldDBPW40_user(nullptr);
-        info::CNationSettingManagerInit42_ptr CNationSettingManagerInit42_next(nullptr);
-        info::CNationSettingManagerInit42_clbk CNationSettingManagerInit42_user(nullptr);
-        info::CNationSettingManagerIsApplyPcbangPrimium44_ptr CNationSettingManagerIsApplyPcbangPrimium44_next(nullptr);
-        info::CNationSettingManagerIsApplyPcbangPrimium44_clbk CNationSettingManagerIsApplyPcbangPrimium44_user(nullptr);
-        info::CNationSettingManagerIsCashDBDSNSetted46_ptr CNationSettingManagerIsCashDBDSNSetted46_next(nullptr);
-        info::CNationSettingManagerIsCashDBDSNSetted46_clbk CNationSettingManagerIsCashDBDSNSetted46_user(nullptr);
-        info::CNationSettingManagerIsCashDBInit48_ptr CNationSettingManagerIsCashDBInit48_next(nullptr);
-        info::CNationSettingManagerIsCashDBInit48_clbk CNationSettingManagerIsCashDBInit48_user(nullptr);
-        info::CNationSettingManagerIsCashDBUseExtRef50_ptr CNationSettingManagerIsCashDBUseExtRef50_next(nullptr);
-        info::CNationSettingManagerIsCashDBUseExtRef50_clbk CNationSettingManagerIsCashDBUseExtRef50_user(nullptr);
-        info::CNationSettingManagerIsNormalString52_ptr CNationSettingManagerIsNormalString52_next(nullptr);
-        info::CNationSettingManagerIsNormalString52_clbk CNationSettingManagerIsNormalString52_user(nullptr);
-        info::CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_ptr CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_next(nullptr);
-        info::CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_clbk CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_user(nullptr);
-        info::CNationSettingManagerLoop56_ptr CNationSettingManagerLoop56_next(nullptr);
-        info::CNationSettingManagerLoop56_clbk CNationSettingManagerLoop56_user(nullptr);
-        info::CNationSettingManagerNetClose58_ptr CNationSettingManagerNetClose58_next(nullptr);
-        info::CNationSettingManagerNetClose58_clbk CNationSettingManagerNetClose58_user(nullptr);
-        info::CNationSettingManagerOnCheckSession_FirstVerify60_ptr CNationSettingManagerOnCheckSession_FirstVerify60_next(nullptr);
-        info::CNationSettingManagerOnCheckSession_FirstVerify60_clbk CNationSettingManagerOnCheckSession_FirstVerify60_user(nullptr);
-        info::CNationSettingManagerOnConnectSession62_ptr CNationSettingManagerOnConnectSession62_next(nullptr);
-        info::CNationSettingManagerOnConnectSession62_clbk CNationSettingManagerOnConnectSession62_user(nullptr);
-        info::CNationSettingManagerOnDisConnectSession64_ptr CNationSettingManagerOnDisConnectSession64_next(nullptr);
-        info::CNationSettingManagerOnDisConnectSession64_clbk CNationSettingManagerOnDisConnectSession64_user(nullptr);
-        info::CNationSettingManagerRecvGameGuardData66_ptr CNationSettingManagerRecvGameGuardData66_next(nullptr);
-        info::CNationSettingManagerRecvGameGuardData66_clbk CNationSettingManagerRecvGameGuardData66_user(nullptr);
-        info::CNationSettingManagerSendCashDBDSNRequest68_ptr CNationSettingManagerSendCashDBDSNRequest68_next(nullptr);
-        info::CNationSettingManagerSendCashDBDSNRequest68_clbk CNationSettingManagerSendCashDBDSNRequest68_user(nullptr);
-        info::CNationSettingManagerSetCashDBDSN70_ptr CNationSettingManagerSetCashDBDSN70_next(nullptr);
-        info::CNationSettingManagerSetCashDBDSN70_clbk CNationSettingManagerSetCashDBDSN70_user(nullptr);
-        info::CNationSettingManagerSetCashDBInitState72_ptr CNationSettingManagerSetCashDBInitState72_next(nullptr);
-        info::CNationSettingManagerSetCashDBInitState72_clbk CNationSettingManagerSetCashDBInitState72_user(nullptr);
-        info::CNationSettingManagerSetUnitPassiveValue74_ptr CNationSettingManagerSetUnitPassiveValue74_next(nullptr);
-        info::CNationSettingManagerSetUnitPassiveValue74_clbk CNationSettingManagerSetUnitPassiveValue74_user(nullptr);
-        info::CNationSettingManagerValidMacAddress76_ptr CNationSettingManagerValidMacAddress76_next(nullptr);
-        info::CNationSettingManagerValidMacAddress76_clbk CNationSettingManagerValidMacAddress76_user(nullptr);
-        info::CNationSettingManagerdtor_CNationSettingManager81_ptr CNationSettingManagerdtor_CNationSettingManager81_next(nullptr);
-        info::CNationSettingManagerdtor_CNationSettingManager81_clbk CNationSettingManagerdtor_CNationSettingManager81_user(nullptr);
+        static info::CNationSettingManagerctor_CNationSettingManager2_ptr CNationSettingManagerctor_CNationSettingManager2_next(nullptr);
+        static info::CNationSettingManagerctor_CNationSettingManager2_clbk CNationSettingManagerctor_CNationSettingManager2_user(nullptr);
+        static info::CNationSettingManagerCheckEnterWorldRequest4_ptr CNationSettingManagerCheckEnterWorldRequest4_next(nullptr);
+        static info::CNationSettingManagerCheckEnterWorldRequest4_clbk CNationSettingManagerCheckEnterWorldRequest4_user(nullptr);
+        static info::CNationSettingManagerCreateBilling6_ptr CNationSettingManagerCreateBilling6_next(nullptr);
+        static info::CNationSettingManagerCreateBilling6_clbk CNationSettingManagerCreateBilling6_user(nullptr);
+        static info::CNationSettingManagerCreateComplete8_ptr CNationSettingManagerCreateComplete8_next(nullptr);
+        static info::CNationSettingManagerCreateComplete8_clbk CNationSettingManagerCreateComplete8_user(nullptr);
+        static info::CNationSettingManagerCreateWorker10_ptr CNationSettingManagerCreateWorker10_next(nullptr);
+        static info::CNationSettingManagerCreateWorker10_clbk CNationSettingManagerCreateWorker10_user(nullptr);
+        static info::CNationSettingManagerGetBillingForceCloseDelay12_ptr CNationSettingManagerGetBillingForceCloseDelay12_next(nullptr);
+        static info::CNationSettingManagerGetBillingForceCloseDelay12_clbk CNationSettingManagerGetBillingForceCloseDelay12_user(nullptr);
+        static info::CNationSettingManagerGetCashDBDBIP14_ptr CNationSettingManagerGetCashDBDBIP14_next(nullptr);
+        static info::CNationSettingManagerGetCashDBDBIP14_clbk CNationSettingManagerGetCashDBDBIP14_user(nullptr);
+        static info::CNationSettingManagerGetCashDBID16_ptr CNationSettingManagerGetCashDBID16_next(nullptr);
+        static info::CNationSettingManagerGetCashDBID16_clbk CNationSettingManagerGetCashDBID16_user(nullptr);
+        static info::CNationSettingManagerGetCashDBName18_ptr CNationSettingManagerGetCashDBName18_next(nullptr);
+        static info::CNationSettingManagerGetCashDBName18_clbk CNationSettingManagerGetCashDBName18_user(nullptr);
+        static info::CNationSettingManagerGetCashDBPW20_ptr CNationSettingManagerGetCashDBPW20_next(nullptr);
+        static info::CNationSettingManagerGetCashDBPW20_clbk CNationSettingManagerGetCashDBPW20_user(nullptr);
+        static info::CNationSettingManagerGetCashDBPort22_ptr CNationSettingManagerGetCashDBPort22_next(nullptr);
+        static info::CNationSettingManagerGetCashDBPort22_clbk CNationSettingManagerGetCashDBPort22_user(nullptr);
+        static info::CNationSettingManagerGetCashItemPrice24_ptr CNationSettingManagerGetCashItemPrice24_next(nullptr);
+        static info::CNationSettingManagerGetCashItemPrice24_clbk CNationSettingManagerGetCashItemPrice24_user(nullptr);
+        static info::CNationSettingManagerGetCheatTable26_ptr CNationSettingManagerGetCheatTable26_next(nullptr);
+        static info::CNationSettingManagerGetCheatTable26_clbk CNationSettingManagerGetCheatTable26_user(nullptr);
+        static info::CNationSettingManagerGetItemName28_ptr CNationSettingManagerGetItemName28_next(nullptr);
+        static info::CNationSettingManagerGetItemName28_clbk CNationSettingManagerGetItemName28_user(nullptr);
+        static info::CNationSettingManagerGetNationCode30_ptr CNationSettingManagerGetNationCode30_next(nullptr);
+        static info::CNationSettingManagerGetNationCode30_clbk CNationSettingManagerGetNationCode30_user(nullptr);
+        static info::CNationSettingManagerGetNationCodeStr32_ptr CNationSettingManagerGetNationCodeStr32_next(nullptr);
+        static info::CNationSettingManagerGetNationCodeStr32_clbk CNationSettingManagerGetNationCodeStr32_user(nullptr);
+        static info::CNationSettingManagerGetNoneString34_ptr CNationSettingManagerGetNoneString34_next(nullptr);
+        static info::CNationSettingManagerGetNoneString34_clbk CNationSettingManagerGetNoneString34_user(nullptr);
+        static info::CNationSettingManagerGetServerVaildKey36_ptr CNationSettingManagerGetServerVaildKey36_next(nullptr);
+        static info::CNationSettingManagerGetServerVaildKey36_clbk CNationSettingManagerGetServerVaildKey36_user(nullptr);
+        static info::CNationSettingManagerGetWorldDBID38_ptr CNationSettingManagerGetWorldDBID38_next(nullptr);
+        static info::CNationSettingManagerGetWorldDBID38_clbk CNationSettingManagerGetWorldDBID38_user(nullptr);
+        static info::CNationSettingManagerGetWorldDBPW40_ptr CNationSettingManagerGetWorldDBPW40_next(nullptr);
+        static info::CNationSettingManagerGetWorldDBPW40_clbk CNationSettingManagerGetWorldDBPW40_user(nullptr);
+        static info::CNationSettingManagerInit42_ptr CNationSettingManagerInit42_next(nullptr);
+        static info::CNationSettingManagerInit42_clbk CNationSettingManagerInit42_user(nullptr);
+        static info::CNationSettingManagerIsApplyPcbangPrimium44_ptr CNationSettingManagerIsApplyPcbangPrimium44_next(nullptr);
+        static info::CNationSettingManagerIsApplyPcbangPrimium44_clbk CNationSettingManagerIsApplyPcbangPrimium44_user(nullptr);
+        static info::CNationSettingManagerIsCashDBDSNSetted46_ptr CNationSettingManagerIsCashDBDSNSetted46_next(nullptr);
+        static info::CNationSettingManagerIsCashDBDSNSetted46_clbk CNationSettingManagerIsCashDBDSNSetted46_user(nullptr);
+        static info::CNationSettingManagerIsCashDBInit48_ptr CNationSettingManagerIsCashDBInit48_next(nullptr);
+        static info::CNationSettingManagerIsCashDBInit48_clbk CNationSettingManagerIsCashDBInit48_user(nullptr);
+        static info::CNationSettingManagerIsCashDBUseExtRef50_ptr CNationSettingManagerIsCashDBUseExtRef50_next(nullptr);
+        static info::CNationSettingManagerIsCashDBUseExtRef50_clbk CNationSettingManagerIsCashDBUseExtRef50_user(nullptr);
+        static info::CNationSettingManagerIsNormalString52_ptr CNationSettingManagerIsNormalString52_next(nullptr);
+        static info::CNationSettingManagerIsNormalString52_clbk CNationSettingManagerIsNormalString52_user(nullptr);
+        static info::CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_ptr CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_next(nullptr);
+        static info::CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_clbk CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_user(nullptr);
+        static info::CNationSettingManagerLoop56_ptr CNationSettingManagerLoop56_next(nullptr);
+        static info::CNationSettingManagerLoop56_clbk CNationSettingManagerLoop56_user(nullptr);
+        static info::CNationSettingManagerNetClose58_ptr CNationSettingManagerNetClose58_next(nullptr);
+        static info::CNationSettingManagerNetClose58_clbk CNationSettingManagerNetClose58_user(nullptr);
+        static info::CNationSettingManagerOnCheckSession_FirstVerify60_ptr CNationSettingManagerOnCheckSession_FirstVerify60_next(nullptr);
+        static info::CNationSettingManagerOnCheckSession_FirstVerify60_clbk CNationSettingManagerOnCheckSession_FirstVerify60_user(nullptr);
+        static info::CNationSettingManagerOnConnectSession62_ptr CNationSettingManagerOnConnectSession62_next(nullptr);
+        static info::CNationSettingManagerOnConnectSession62_clbk CNationSettingManagerOnConnectSession62_user(nullptr);
+        static info::CNationSettingManagerOnDisConnectSession64_ptr CNationSettingManagerOnDisConnectSession64_next(nullptr);
+        static info::CNationSettingManagerOnDisConnectSession64_clbk CNationSettingManagerOnDisConnectSession64_user(nullptr);
+        static info::CNationSettingManagerRecvGameGuardData66_ptr CNationSettingManagerRecvGameGuardData66_next(nullptr);
+        static info::CNationSettingManagerRecvGameGuardData66_clbk CNationSettingManagerRecvGameGuardData66_user(nullptr);
+        static info::CNationSettingManagerSendCashDBDSNRequest68_ptr CNationSettingManagerSendCashDBDSNRequest68_next(nullptr);
+        static info::CNationSettingManagerSendCashDBDSNRequest68_clbk CNationSettingManagerSendCashDBDSNRequest68_user(nullptr);
+        static info::CNationSettingManagerSetCashDBDSN70_ptr CNationSettingManagerSetCashDBDSN70_next(nullptr);
+        static info::CNationSettingManagerSetCashDBDSN70_clbk CNationSettingManagerSetCashDBDSN70_user(nullptr);
+        static info::CNationSettingManagerSetCashDBInitState72_ptr CNationSettingManagerSetCashDBInitState72_next(nullptr);
+        static info::CNationSettingManagerSetCashDBInitState72_clbk CNationSettingManagerSetCashDBInitState72_user(nullptr);
+        static info::CNationSettingManagerSetUnitPassiveValue74_ptr CNationSettingManagerSetUnitPassiveValue74_next(nullptr);
+        static info::CNationSettingManagerSetUnitPassiveValue74_clbk CNationSettingManagerSetUnitPassiveValue74_user(nullptr);
+        static info::CNationSettingManagerValidMacAddress76_ptr CNationSettingManagerValidMacAddress76_next(nullptr);
+        static info::CNationSettingManagerValidMacAddress76_clbk CNationSettingManagerValidMacAddress76_user(nullptr);
+        static info::CNationSettingManagerdtor_CNationSettingManager81_ptr CNationSettingManagerdtor_CNationSettingManager81_next(nullptr);
+        static info::CNationSettingManagerdtor_CNationSettingManager81_clbk CNationSettingManagerdtor_CNationSettingManager81_user(nullptr);
         
-        void CNationSettingManagerctor_CNationSettingManager2_wrapper(struct CNationSettingManager* _this)
+        static void CNationSettingManagerctor_CNationSettingManager2_wrapper(struct CNationSettingManager* _this)
         {
            CNationSettingManagerctor_CNationSettingManager2_user(_this, CNationSettingManagerctor_CNationSettingManager2_next);
         };
-        bool CNationSettingManagerCheckEnterWorldRequest4_wrapper(struct CNationSettingManager* _this, int n, char* pBuf)
+        static bool CNationSettingManagerCheckEnterWorldRequest4_wrapper(struct CNationSettingManager* _this, int n, char* pBuf)
         {
            return CNationSettingManagerCheckEnterWorldRequest4_user(_this, n, pBuf, CNationSettingManagerCheckEnterWorldRequest4_next);
         };
-        struct CBilling* CNationSettingManagerCreateBilling6_wrapper(struct CNationSettingManager* _this)
+        static struct CBilling* CNationSettingManagerCreateBilling6_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerCreateBilling6_user(_this, CNationSettingManagerCreateBilling6_next);
         };
-        void CNationSettingManagerCreateComplete8_wrapper(struct CNationSettingManager* _this, struct CPlayer* pOne)
+        static void CNationSettingManagerCreateComplete8_wrapper(struct CNationSettingManager* _this, struct CPlayer* pOne)
         {
            CNationSettingManagerCreateComplete8_user(_this, pOne, CNationSettingManagerCreateComplete8_next);
         };
-        struct CashDbWorker* CNationSettingManagerCreateWorker10_wrapper(struct CNationSettingManager* _this)
+        static struct CashDbWorker* CNationSettingManagerCreateWorker10_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerCreateWorker10_user(_this, CNationSettingManagerCreateWorker10_next);
         };
-        uint16_t CNationSettingManagerGetBillingForceCloseDelay12_wrapper(struct CNationSettingManager* _this)
+        static uint16_t CNationSettingManagerGetBillingForceCloseDelay12_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetBillingForceCloseDelay12_user(_this, CNationSettingManagerGetBillingForceCloseDelay12_next);
         };
-        char* CNationSettingManagerGetCashDBDBIP14_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetCashDBDBIP14_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCashDBDBIP14_user(_this, CNationSettingManagerGetCashDBDBIP14_next);
         };
-        char* CNationSettingManagerGetCashDBID16_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetCashDBID16_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCashDBID16_user(_this, CNationSettingManagerGetCashDBID16_next);
         };
-        char* CNationSettingManagerGetCashDBName18_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetCashDBName18_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCashDBName18_user(_this, CNationSettingManagerGetCashDBName18_next);
         };
-        char* CNationSettingManagerGetCashDBPW20_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetCashDBPW20_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCashDBPW20_user(_this, CNationSettingManagerGetCashDBPW20_next);
         };
-        uint16_t CNationSettingManagerGetCashDBPort22_wrapper(struct CNationSettingManager* _this)
+        static uint16_t CNationSettingManagerGetCashDBPort22_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCashDBPort22_user(_this, CNationSettingManagerGetCashDBPort22_next);
         };
-        int CNationSettingManagerGetCashItemPrice24_wrapper(struct CNationSettingManager* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingManagerGetCashItemPrice24_wrapper(struct CNationSettingManager* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingManagerGetCashItemPrice24_user(_this, pFld, CNationSettingManagerGetCashItemPrice24_next);
         };
-        struct CHEAT_COMMAND* CNationSettingManagerGetCheatTable26_wrapper(struct CNationSettingManager* _this)
+        static struct CHEAT_COMMAND* CNationSettingManagerGetCheatTable26_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetCheatTable26_user(_this, CNationSettingManagerGetCheatTable26_next);
         };
-        char* CNationSettingManagerGetItemName28_wrapper(struct CNationSettingManager* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingManagerGetItemName28_wrapper(struct CNationSettingManager* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingManagerGetItemName28_user(_this, pFld, CNationSettingManagerGetItemName28_next);
         };
-        int CNationSettingManagerGetNationCode30_wrapper(struct CNationSettingManager* _this)
+        static int CNationSettingManagerGetNationCode30_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetNationCode30_user(_this, CNationSettingManagerGetNationCode30_next);
         };
-        char* CNationSettingManagerGetNationCodeStr32_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetNationCodeStr32_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetNationCodeStr32_user(_this, CNationSettingManagerGetNationCodeStr32_next);
         };
-        char* CNationSettingManagerGetNoneString34_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetNoneString34_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetNoneString34_user(_this, CNationSettingManagerGetNoneString34_next);
         };
-        char* CNationSettingManagerGetServerVaildKey36_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetServerVaildKey36_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetServerVaildKey36_user(_this, CNationSettingManagerGetServerVaildKey36_next);
         };
-        char* CNationSettingManagerGetWorldDBID38_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetWorldDBID38_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetWorldDBID38_user(_this, CNationSettingManagerGetWorldDBID38_next);
         };
-        char* CNationSettingManagerGetWorldDBPW40_wrapper(struct CNationSettingManager* _this)
+        static char* CNationSettingManagerGetWorldDBPW40_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerGetWorldDBPW40_user(_this, CNationSettingManagerGetWorldDBPW40_next);
         };
-        int CNationSettingManagerInit42_wrapper(struct CNationSettingManager* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
+        static int CNationSettingManagerInit42_wrapper(struct CNationSettingManager* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
         {
            return CNationSettingManagerInit42_user(_this, iNationCode, szNationCodeStr, bServiceMode, CNationSettingManagerInit42_next);
         };
-        bool CNationSettingManagerIsApplyPcbangPrimium44_wrapper(struct CNationSettingManager* _this, struct CPlayer* pUser)
+        static bool CNationSettingManagerIsApplyPcbangPrimium44_wrapper(struct CNationSettingManager* _this, struct CPlayer* pUser)
         {
            return CNationSettingManagerIsApplyPcbangPrimium44_user(_this, pUser, CNationSettingManagerIsApplyPcbangPrimium44_next);
         };
-        bool CNationSettingManagerIsCashDBDSNSetted46_wrapper(struct CNationSettingManager* _this)
+        static bool CNationSettingManagerIsCashDBDSNSetted46_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerIsCashDBDSNSetted46_user(_this, CNationSettingManagerIsCashDBDSNSetted46_next);
         };
-        bool CNationSettingManagerIsCashDBInit48_wrapper(struct CNationSettingManager* _this)
+        static bool CNationSettingManagerIsCashDBInit48_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerIsCashDBInit48_user(_this, CNationSettingManagerIsCashDBInit48_next);
         };
-        bool CNationSettingManagerIsCashDBUseExtRef50_wrapper(struct CNationSettingManager* _this)
+        static bool CNationSettingManagerIsCashDBUseExtRef50_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerIsCashDBUseExtRef50_user(_this, CNationSettingManagerIsCashDBUseExtRef50_next);
         };
-        bool CNationSettingManagerIsNormalString52_wrapper(struct CNationSettingManager* _this, char* szString)
+        static bool CNationSettingManagerIsNormalString52_wrapper(struct CNationSettingManager* _this, char* szString)
         {
            return CNationSettingManagerIsNormalString52_user(_this, szString, CNationSettingManagerIsNormalString52_next);
         };
-        bool CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_wrapper(struct CNationSettingManager* _this, int16_t* pDest1, int16_t* pDest2)
+        static bool CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_wrapper(struct CNationSettingManager* _this, int16_t* pDest1, int16_t* pDest2)
         {
            return CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_user(_this, pDest1, pDest2, CNationSettingManagerIsPersonalFreeFixedAmountBillingType54_next);
         };
-        void CNationSettingManagerLoop56_wrapper(struct CNationSettingManager* _this)
+        static void CNationSettingManagerLoop56_wrapper(struct CNationSettingManager* _this)
         {
            CNationSettingManagerLoop56_user(_this, CNationSettingManagerLoop56_next);
         };
-        void CNationSettingManagerNetClose58_wrapper(struct CNationSettingManager* _this, struct CPlayer* pOne)
+        static void CNationSettingManagerNetClose58_wrapper(struct CNationSettingManager* _this, struct CPlayer* pOne)
         {
            CNationSettingManagerNetClose58_user(_this, pOne, CNationSettingManagerNetClose58_next);
         };
-        bool CNationSettingManagerOnCheckSession_FirstVerify60_wrapper(struct CNationSettingManager* _this, int n)
+        static bool CNationSettingManagerOnCheckSession_FirstVerify60_wrapper(struct CNationSettingManager* _this, int n)
         {
            return CNationSettingManagerOnCheckSession_FirstVerify60_user(_this, n, CNationSettingManagerOnCheckSession_FirstVerify60_next);
         };
-        void CNationSettingManagerOnConnectSession62_wrapper(struct CNationSettingManager* _this, int n)
+        static void CNationSettingManagerOnConnectSession62_wrapper(struct CNationSettingManager* _this, int n)
         {
            CNationSettingManagerOnConnectSession62_user(_this, n, CNationSettingManagerOnConnectSession62_next);
         };
-        void CNationSettingManagerOnDisConnectSession64_wrapper(struct CNationSettingManager* _this, int n)
+        static void CNationSettingManagerOnDisConnectSession64_wrapper(struct CNationSettingManager* _this, int n)
         {
            CNationSettingManagerOnDisConnectSession64_user(_this, n, CNationSettingManagerOnDisConnectSession64_next);
         };
-        bool CNationSettingManagerRecvGameGuardData66_wrapper(struct CNationSettingManager* _this, int n, struct _MSG_HEADER* pHeader, char* pBuff)
+        static bool CNationSettingManagerRecvGameGuardData66_wrapper(struct CNationSettingManager* _this, int n, struct _MSG_HEADER* pHeader, char* pBuff)
         {
            return CNationSettingManagerRecvGameGuardData66_user(_this, n, pHeader, pBuff, CNationSettingManagerRecvGameGuardData66_next);
         };
-        void CNationSettingManagerSendCashDBDSNRequest68_wrapper(struct CNationSettingManager* _this)
+        static void CNationSettingManagerSendCashDBDSNRequest68_wrapper(struct CNationSettingManager* _this)
         {
            CNationSettingManagerSendCashDBDSNRequest68_user(_this, CNationSettingManagerSendCashDBDSNRequest68_next);
         };
-        void CNationSettingManagerSetCashDBDSN70_wrapper(struct CNationSettingManager* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
+        static void CNationSettingManagerSetCashDBDSN70_wrapper(struct CNationSettingManager* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
         {
            CNationSettingManagerSetCashDBDSN70_user(_this, szIP, szDBName, szAccount, szPassword, dwPort, CNationSettingManagerSetCashDBDSN70_next);
         };
-        void CNationSettingManagerSetCashDBInitState72_wrapper(struct CNationSettingManager* _this)
+        static void CNationSettingManagerSetCashDBInitState72_wrapper(struct CNationSettingManager* _this)
         {
            CNationSettingManagerSetCashDBInitState72_user(_this, CNationSettingManagerSetCashDBInitState72_next);
         };
-        void CNationSettingManagerSetUnitPassiveValue74_wrapper(struct CNationSettingManager* _this, float* fUnitPv_DefFc)
+        static void CNationSettingManagerSetUnitPassiveValue74_wrapper(struct CNationSettingManager* _this, float* fUnitPv_DefFc)
         {
            CNationSettingManagerSetUnitPassiveValue74_user(_this, fUnitPv_DefFc, CNationSettingManagerSetUnitPassiveValue74_next);
         };
-        bool CNationSettingManagerValidMacAddress76_wrapper(struct CNationSettingManager* _this)
+        static bool CNationSettingManagerValidMacAddress76_wrapper(struct CNationSettingManager* _this)
         {
            return CNationSettingManagerValidMacAddress76_user(_this, CNationSettingManagerValidMacAddress76_next);
         };
-        void CNationSettingManagerdtor_CNationSettingManager81_wrapper(struct CNationSettingManager* _this)
+        static void CNationSettingManagerdtor_CNationSettingManager81_wrapper(struct CNationSettingManager* _this)
         {
            CNationSettingManagerdtor_CNationSettingManager81_user(_this, CNationSettingManagerdtor_CNationSettingManager81_next);
         };
         
-        hook_record CNationSettingManager_functions[] = {
+        static hook_record CNationSettingManager_functions[] = {
         {   (LPVOID)0x140229190L,
             (LPVOID *)&CNationSettingManagerctor_CNationSettingManager2_user,
             (LPVOID *)&CNationSettingManagerctor_CNationSettingManager2_next,
@@ -443,5 +443,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

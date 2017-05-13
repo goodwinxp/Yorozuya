@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::strFILEload5_ptr strFILEload5_next(nullptr);
-        info::strFILEload5_clbk strFILEload5_user(nullptr);
-        info::strFILEread_line_count7_ptr strFILEread_line_count7_next(nullptr);
-        info::strFILEread_line_count7_clbk strFILEread_line_count7_user(nullptr);
-        info::strFILEctor_strFILE9_ptr strFILEctor_strFILE9_next(nullptr);
-        info::strFILEctor_strFILE9_clbk strFILEctor_strFILE9_user(nullptr);
-        info::strFILEword11_ptr strFILEword11_next(nullptr);
-        info::strFILEword11_clbk strFILEword11_user(nullptr);
-        info::strFILEword13_ptr strFILEword13_next(nullptr);
-        info::strFILEword13_clbk strFILEword13_user(nullptr);
-        info::strFILEword15_ptr strFILEword15_next(nullptr);
-        info::strFILEword15_clbk strFILEword15_user(nullptr);
-        info::strFILEword17_ptr strFILEword17_next(nullptr);
-        info::strFILEword17_clbk strFILEword17_user(nullptr);
-        info::strFILEdtor_strFILE19_ptr strFILEdtor_strFILE19_next(nullptr);
-        info::strFILEdtor_strFILE19_clbk strFILEdtor_strFILE19_user(nullptr);
+        static info::strFILEload5_ptr strFILEload5_next(nullptr);
+        static info::strFILEload5_clbk strFILEload5_user(nullptr);
+        static info::strFILEread_line_count7_ptr strFILEread_line_count7_next(nullptr);
+        static info::strFILEread_line_count7_clbk strFILEread_line_count7_user(nullptr);
+        static info::strFILEctor_strFILE9_ptr strFILEctor_strFILE9_next(nullptr);
+        static info::strFILEctor_strFILE9_clbk strFILEctor_strFILE9_user(nullptr);
+        static info::strFILEword11_ptr strFILEword11_next(nullptr);
+        static info::strFILEword11_clbk strFILEword11_user(nullptr);
+        static info::strFILEword13_ptr strFILEword13_next(nullptr);
+        static info::strFILEword13_clbk strFILEword13_user(nullptr);
+        static info::strFILEword15_ptr strFILEword15_next(nullptr);
+        static info::strFILEword15_clbk strFILEword15_user(nullptr);
+        static info::strFILEword17_ptr strFILEword17_next(nullptr);
+        static info::strFILEword17_clbk strFILEword17_user(nullptr);
+        static info::strFILEdtor_strFILE19_ptr strFILEdtor_strFILE19_next(nullptr);
+        static info::strFILEdtor_strFILE19_clbk strFILEdtor_strFILE19_user(nullptr);
         
-        bool strFILEload5_wrapper(struct strFILE* _this, char* pszFileName)
+        static bool strFILEload5_wrapper(struct strFILE* _this, char* pszFileName)
         {
            return strFILEload5_user(_this, pszFileName, strFILEload5_next);
         };
-        int strFILEread_line_count7_wrapper(struct strFILE* _this)
+        static int strFILEread_line_count7_wrapper(struct strFILE* _this)
         {
            return strFILEread_line_count7_user(_this, strFILEread_line_count7_next);
         };
-        void strFILEctor_strFILE9_wrapper(struct strFILE* _this)
+        static void strFILEctor_strFILE9_wrapper(struct strFILE* _this)
         {
            strFILEctor_strFILE9_user(_this, strFILEctor_strFILE9_next);
         };
-        bool strFILEword11_wrapper(struct strFILE* _this, char* poutszWord)
+        static bool strFILEword11_wrapper(struct strFILE* _this, char* poutszWord)
         {
            return strFILEword11_user(_this, poutszWord, strFILEword11_next);
         };
-        bool strFILEword13_wrapper(struct strFILE* _this, long double* pdoutVal)
+        static bool strFILEword13_wrapper(struct strFILE* _this, long double* pdoutVal)
         {
            return strFILEword13_user(_this, pdoutVal, strFILEword13_next);
         };
-        bool strFILEword15_wrapper(struct strFILE* _this, float* pfoutVal)
+        static bool strFILEword15_wrapper(struct strFILE* _this, float* pfoutVal)
         {
            return strFILEword15_user(_this, pfoutVal, strFILEword15_next);
         };
-        bool strFILEword17_wrapper(struct strFILE* _this, int* pnoutVal)
+        static bool strFILEword17_wrapper(struct strFILE* _this, int* pnoutVal)
         {
            return strFILEword17_user(_this, pnoutVal, strFILEword17_next);
         };
-        void strFILEdtor_strFILE19_wrapper(struct strFILE* _this)
+        static void strFILEdtor_strFILE19_wrapper(struct strFILE* _this)
         {
            strFILEdtor_strFILE19_user(_this, strFILEdtor_strFILE19_next);
         };
         
-        hook_record strFILE_functions[] = {
+        static hook_record strFILE_functions[] = {
         {   (LPVOID)0x140271e20L,
             (LPVOID *)&strFILEload5_user,
             (LPVOID *)&strFILEload5_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

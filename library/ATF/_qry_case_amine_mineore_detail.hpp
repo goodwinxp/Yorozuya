@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_mineorector__qry_case_amine_mineore2_ptr _qry_case_amine_mineorector__qry_case_amine_mineore2_next(nullptr);
-        info::_qry_case_amine_mineorector__qry_case_amine_mineore2_clbk _qry_case_amine_mineorector__qry_case_amine_mineore2_user(nullptr);
-        info::_qry_case_amine_mineoresize4_ptr _qry_case_amine_mineoresize4_next(nullptr);
-        info::_qry_case_amine_mineoresize4_clbk _qry_case_amine_mineoresize4_user(nullptr);
+        static info::_qry_case_amine_mineorector__qry_case_amine_mineore2_ptr _qry_case_amine_mineorector__qry_case_amine_mineore2_next(nullptr);
+        static info::_qry_case_amine_mineorector__qry_case_amine_mineore2_clbk _qry_case_amine_mineorector__qry_case_amine_mineore2_user(nullptr);
+        static info::_qry_case_amine_mineoresize4_ptr _qry_case_amine_mineoresize4_next(nullptr);
+        static info::_qry_case_amine_mineoresize4_clbk _qry_case_amine_mineoresize4_user(nullptr);
         
-        void _qry_case_amine_mineorector__qry_case_amine_mineore2_wrapper(struct _qry_case_amine_mineore* _this)
+        static void _qry_case_amine_mineorector__qry_case_amine_mineore2_wrapper(struct _qry_case_amine_mineore* _this)
         {
            _qry_case_amine_mineorector__qry_case_amine_mineore2_user(_this, _qry_case_amine_mineorector__qry_case_amine_mineore2_next);
         };
-        int _qry_case_amine_mineoresize4_wrapper(struct _qry_case_amine_mineore* _this)
+        static int _qry_case_amine_mineoresize4_wrapper(struct _qry_case_amine_mineore* _this)
         {
            return _qry_case_amine_mineoresize4_user(_this, _qry_case_amine_mineoresize4_next);
         };
         
-        hook_record _qry_case_amine_mineore_functions[] = {
+        static hook_record _qry_case_amine_mineore_functions[] = {
         {   (LPVOID)0x1402d4320L,
             (LPVOID *)&_qry_case_amine_mineorector__qry_case_amine_mineore2_user,
             (LPVOID *)&_qry_case_amine_mineorector__qry_case_amine_mineore2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

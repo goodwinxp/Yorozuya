@@ -8,189 +8,189 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CD3DApplicationAdjustWindowForChange1_ptr CD3DApplicationAdjustWindowForChange1_next(nullptr);
-        info::CD3DApplicationAdjustWindowForChange1_clbk CD3DApplicationAdjustWindowForChange1_user(nullptr);
-        info::CD3DApplicationBuildDeviceList2_ptr CD3DApplicationBuildDeviceList2_next(nullptr);
-        info::CD3DApplicationBuildDeviceList2_clbk CD3DApplicationBuildDeviceList2_user(nullptr);
-        info::CD3DApplicationctor_CD3DApplication3_ptr CD3DApplicationctor_CD3DApplication3_next(nullptr);
-        info::CD3DApplicationctor_CD3DApplication3_clbk CD3DApplicationctor_CD3DApplication3_user(nullptr);
-        info::CD3DApplicationCleanup3DEnvironment4_ptr CD3DApplicationCleanup3DEnvironment4_next(nullptr);
-        info::CD3DApplicationCleanup3DEnvironment4_clbk CD3DApplicationCleanup3DEnvironment4_user(nullptr);
-        info::CD3DApplicationConfirmDevice5_ptr CD3DApplicationConfirmDevice5_next(nullptr);
-        info::CD3DApplicationConfirmDevice5_clbk CD3DApplicationConfirmDevice5_user(nullptr);
-        info::CD3DApplicationCreate6_ptr CD3DApplicationCreate6_next(nullptr);
-        info::CD3DApplicationCreate6_clbk CD3DApplicationCreate6_user(nullptr);
-        info::CD3DApplicationCreateDirect3D7_ptr CD3DApplicationCreateDirect3D7_next(nullptr);
-        info::CD3DApplicationCreateDirect3D7_clbk CD3DApplicationCreateDirect3D7_user(nullptr);
-        info::CD3DApplicationDeleteDeviceObjects8_ptr CD3DApplicationDeleteDeviceObjects8_next(nullptr);
-        info::CD3DApplicationDeleteDeviceObjects8_clbk CD3DApplicationDeleteDeviceObjects8_user(nullptr);
-        info::CD3DApplicationDisplayErrorMsg9_ptr CD3DApplicationDisplayErrorMsg9_next(nullptr);
-        info::CD3DApplicationDisplayErrorMsg9_clbk CD3DApplicationDisplayErrorMsg9_user(nullptr);
-        info::CD3DApplicationEndLoop10_ptr CD3DApplicationEndLoop10_next(nullptr);
-        info::CD3DApplicationEndLoop10_clbk CD3DApplicationEndLoop10_user(nullptr);
-        info::CD3DApplicationFinalCleanup11_ptr CD3DApplicationFinalCleanup11_next(nullptr);
-        info::CD3DApplicationFinalCleanup11_clbk CD3DApplicationFinalCleanup11_user(nullptr);
-        info::CD3DApplicationFindDepthStencilFormat12_ptr CD3DApplicationFindDepthStencilFormat12_next(nullptr);
-        info::CD3DApplicationFindDepthStencilFormat12_clbk CD3DApplicationFindDepthStencilFormat12_user(nullptr);
-        info::CD3DApplicationForceWindowed13_ptr CD3DApplicationForceWindowed13_next(nullptr);
-        info::CD3DApplicationForceWindowed13_clbk CD3DApplicationForceWindowed13_user(nullptr);
-        info::CD3DApplicationFrameMove14_ptr CD3DApplicationFrameMove14_next(nullptr);
-        info::CD3DApplicationFrameMove14_clbk CD3DApplicationFrameMove14_user(nullptr);
-        info::CD3DApplicationInitDeviceObjects15_ptr CD3DApplicationInitDeviceObjects15_next(nullptr);
-        info::CD3DApplicationInitDeviceObjects15_clbk CD3DApplicationInitDeviceObjects15_user(nullptr);
-        info::CD3DApplicationInitialize3DEnvironment16_ptr CD3DApplicationInitialize3DEnvironment16_next(nullptr);
-        info::CD3DApplicationInitialize3DEnvironment16_clbk CD3DApplicationInitialize3DEnvironment16_user(nullptr);
-        info::CD3DApplicationInvalidateDeviceObjects17_ptr CD3DApplicationInvalidateDeviceObjects17_next(nullptr);
-        info::CD3DApplicationInvalidateDeviceObjects17_clbk CD3DApplicationInvalidateDeviceObjects17_user(nullptr);
-        info::CD3DApplicationMsgProc18_ptr CD3DApplicationMsgProc18_next(nullptr);
-        info::CD3DApplicationMsgProc18_clbk CD3DApplicationMsgProc18_user(nullptr);
-        info::CD3DApplicationOneTimeSceneInit19_ptr CD3DApplicationOneTimeSceneInit19_next(nullptr);
-        info::CD3DApplicationOneTimeSceneInit19_clbk CD3DApplicationOneTimeSceneInit19_user(nullptr);
-        info::CD3DApplicationPause20_ptr CD3DApplicationPause20_next(nullptr);
-        info::CD3DApplicationPause20_clbk CD3DApplicationPause20_user(nullptr);
-        info::CD3DApplicationPrepareLoop21_ptr CD3DApplicationPrepareLoop21_next(nullptr);
-        info::CD3DApplicationPrepareLoop21_clbk CD3DApplicationPrepareLoop21_user(nullptr);
-        info::CD3DApplicationRelease22_ptr CD3DApplicationRelease22_next(nullptr);
-        info::CD3DApplicationRelease22_clbk CD3DApplicationRelease22_user(nullptr);
-        info::CD3DApplicationRender23_ptr CD3DApplicationRender23_next(nullptr);
-        info::CD3DApplicationRender23_clbk CD3DApplicationRender23_user(nullptr);
-        info::CD3DApplicationRender3DEnvironment24_ptr CD3DApplicationRender3DEnvironment24_next(nullptr);
-        info::CD3DApplicationRender3DEnvironment24_clbk CD3DApplicationRender3DEnvironment24_user(nullptr);
-        info::CD3DApplicationResize3DEnvironment25_ptr CD3DApplicationResize3DEnvironment25_next(nullptr);
-        info::CD3DApplicationResize3DEnvironment25_clbk CD3DApplicationResize3DEnvironment25_user(nullptr);
-        info::CD3DApplicationRestoreDeviceObjects26_ptr CD3DApplicationRestoreDeviceObjects26_next(nullptr);
-        info::CD3DApplicationRestoreDeviceObjects26_clbk CD3DApplicationRestoreDeviceObjects26_user(nullptr);
-        info::CD3DApplicationRun27_ptr CD3DApplicationRun27_next(nullptr);
-        info::CD3DApplicationRun27_clbk CD3DApplicationRun27_user(nullptr);
-        info::CD3DApplicationSelectDeviceProc28_ptr CD3DApplicationSelectDeviceProc28_next(nullptr);
-        info::CD3DApplicationSelectDeviceProc28_clbk CD3DApplicationSelectDeviceProc28_user(nullptr);
-        info::CD3DApplicationToggleFullscreen29_ptr CD3DApplicationToggleFullscreen29_next(nullptr);
-        info::CD3DApplicationToggleFullscreen29_clbk CD3DApplicationToggleFullscreen29_user(nullptr);
-        info::CD3DApplicationUserSelectNewDevice30_ptr CD3DApplicationUserSelectNewDevice30_next(nullptr);
-        info::CD3DApplicationUserSelectNewDevice30_clbk CD3DApplicationUserSelectNewDevice30_user(nullptr);
+        static info::CD3DApplicationAdjustWindowForChange1_ptr CD3DApplicationAdjustWindowForChange1_next(nullptr);
+        static info::CD3DApplicationAdjustWindowForChange1_clbk CD3DApplicationAdjustWindowForChange1_user(nullptr);
+        static info::CD3DApplicationBuildDeviceList2_ptr CD3DApplicationBuildDeviceList2_next(nullptr);
+        static info::CD3DApplicationBuildDeviceList2_clbk CD3DApplicationBuildDeviceList2_user(nullptr);
+        static info::CD3DApplicationctor_CD3DApplication3_ptr CD3DApplicationctor_CD3DApplication3_next(nullptr);
+        static info::CD3DApplicationctor_CD3DApplication3_clbk CD3DApplicationctor_CD3DApplication3_user(nullptr);
+        static info::CD3DApplicationCleanup3DEnvironment4_ptr CD3DApplicationCleanup3DEnvironment4_next(nullptr);
+        static info::CD3DApplicationCleanup3DEnvironment4_clbk CD3DApplicationCleanup3DEnvironment4_user(nullptr);
+        static info::CD3DApplicationConfirmDevice5_ptr CD3DApplicationConfirmDevice5_next(nullptr);
+        static info::CD3DApplicationConfirmDevice5_clbk CD3DApplicationConfirmDevice5_user(nullptr);
+        static info::CD3DApplicationCreate6_ptr CD3DApplicationCreate6_next(nullptr);
+        static info::CD3DApplicationCreate6_clbk CD3DApplicationCreate6_user(nullptr);
+        static info::CD3DApplicationCreateDirect3D7_ptr CD3DApplicationCreateDirect3D7_next(nullptr);
+        static info::CD3DApplicationCreateDirect3D7_clbk CD3DApplicationCreateDirect3D7_user(nullptr);
+        static info::CD3DApplicationDeleteDeviceObjects8_ptr CD3DApplicationDeleteDeviceObjects8_next(nullptr);
+        static info::CD3DApplicationDeleteDeviceObjects8_clbk CD3DApplicationDeleteDeviceObjects8_user(nullptr);
+        static info::CD3DApplicationDisplayErrorMsg9_ptr CD3DApplicationDisplayErrorMsg9_next(nullptr);
+        static info::CD3DApplicationDisplayErrorMsg9_clbk CD3DApplicationDisplayErrorMsg9_user(nullptr);
+        static info::CD3DApplicationEndLoop10_ptr CD3DApplicationEndLoop10_next(nullptr);
+        static info::CD3DApplicationEndLoop10_clbk CD3DApplicationEndLoop10_user(nullptr);
+        static info::CD3DApplicationFinalCleanup11_ptr CD3DApplicationFinalCleanup11_next(nullptr);
+        static info::CD3DApplicationFinalCleanup11_clbk CD3DApplicationFinalCleanup11_user(nullptr);
+        static info::CD3DApplicationFindDepthStencilFormat12_ptr CD3DApplicationFindDepthStencilFormat12_next(nullptr);
+        static info::CD3DApplicationFindDepthStencilFormat12_clbk CD3DApplicationFindDepthStencilFormat12_user(nullptr);
+        static info::CD3DApplicationForceWindowed13_ptr CD3DApplicationForceWindowed13_next(nullptr);
+        static info::CD3DApplicationForceWindowed13_clbk CD3DApplicationForceWindowed13_user(nullptr);
+        static info::CD3DApplicationFrameMove14_ptr CD3DApplicationFrameMove14_next(nullptr);
+        static info::CD3DApplicationFrameMove14_clbk CD3DApplicationFrameMove14_user(nullptr);
+        static info::CD3DApplicationInitDeviceObjects15_ptr CD3DApplicationInitDeviceObjects15_next(nullptr);
+        static info::CD3DApplicationInitDeviceObjects15_clbk CD3DApplicationInitDeviceObjects15_user(nullptr);
+        static info::CD3DApplicationInitialize3DEnvironment16_ptr CD3DApplicationInitialize3DEnvironment16_next(nullptr);
+        static info::CD3DApplicationInitialize3DEnvironment16_clbk CD3DApplicationInitialize3DEnvironment16_user(nullptr);
+        static info::CD3DApplicationInvalidateDeviceObjects17_ptr CD3DApplicationInvalidateDeviceObjects17_next(nullptr);
+        static info::CD3DApplicationInvalidateDeviceObjects17_clbk CD3DApplicationInvalidateDeviceObjects17_user(nullptr);
+        static info::CD3DApplicationMsgProc18_ptr CD3DApplicationMsgProc18_next(nullptr);
+        static info::CD3DApplicationMsgProc18_clbk CD3DApplicationMsgProc18_user(nullptr);
+        static info::CD3DApplicationOneTimeSceneInit19_ptr CD3DApplicationOneTimeSceneInit19_next(nullptr);
+        static info::CD3DApplicationOneTimeSceneInit19_clbk CD3DApplicationOneTimeSceneInit19_user(nullptr);
+        static info::CD3DApplicationPause20_ptr CD3DApplicationPause20_next(nullptr);
+        static info::CD3DApplicationPause20_clbk CD3DApplicationPause20_user(nullptr);
+        static info::CD3DApplicationPrepareLoop21_ptr CD3DApplicationPrepareLoop21_next(nullptr);
+        static info::CD3DApplicationPrepareLoop21_clbk CD3DApplicationPrepareLoop21_user(nullptr);
+        static info::CD3DApplicationRelease22_ptr CD3DApplicationRelease22_next(nullptr);
+        static info::CD3DApplicationRelease22_clbk CD3DApplicationRelease22_user(nullptr);
+        static info::CD3DApplicationRender23_ptr CD3DApplicationRender23_next(nullptr);
+        static info::CD3DApplicationRender23_clbk CD3DApplicationRender23_user(nullptr);
+        static info::CD3DApplicationRender3DEnvironment24_ptr CD3DApplicationRender3DEnvironment24_next(nullptr);
+        static info::CD3DApplicationRender3DEnvironment24_clbk CD3DApplicationRender3DEnvironment24_user(nullptr);
+        static info::CD3DApplicationResize3DEnvironment25_ptr CD3DApplicationResize3DEnvironment25_next(nullptr);
+        static info::CD3DApplicationResize3DEnvironment25_clbk CD3DApplicationResize3DEnvironment25_user(nullptr);
+        static info::CD3DApplicationRestoreDeviceObjects26_ptr CD3DApplicationRestoreDeviceObjects26_next(nullptr);
+        static info::CD3DApplicationRestoreDeviceObjects26_clbk CD3DApplicationRestoreDeviceObjects26_user(nullptr);
+        static info::CD3DApplicationRun27_ptr CD3DApplicationRun27_next(nullptr);
+        static info::CD3DApplicationRun27_clbk CD3DApplicationRun27_user(nullptr);
+        static info::CD3DApplicationSelectDeviceProc28_ptr CD3DApplicationSelectDeviceProc28_next(nullptr);
+        static info::CD3DApplicationSelectDeviceProc28_clbk CD3DApplicationSelectDeviceProc28_user(nullptr);
+        static info::CD3DApplicationToggleFullscreen29_ptr CD3DApplicationToggleFullscreen29_next(nullptr);
+        static info::CD3DApplicationToggleFullscreen29_clbk CD3DApplicationToggleFullscreen29_user(nullptr);
+        static info::CD3DApplicationUserSelectNewDevice30_ptr CD3DApplicationUserSelectNewDevice30_next(nullptr);
+        static info::CD3DApplicationUserSelectNewDevice30_clbk CD3DApplicationUserSelectNewDevice30_user(nullptr);
         
-        int32_t CD3DApplicationAdjustWindowForChange1_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationAdjustWindowForChange1_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationAdjustWindowForChange1_user(_this, CD3DApplicationAdjustWindowForChange1_next);
         };
-        int32_t CD3DApplicationBuildDeviceList2_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationBuildDeviceList2_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationBuildDeviceList2_user(_this, CD3DApplicationBuildDeviceList2_next);
         };
-        int64_t CD3DApplicationctor_CD3DApplication3_wrapper(struct CD3DApplication* _this)
+        static int64_t CD3DApplicationctor_CD3DApplication3_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationctor_CD3DApplication3_user(_this, CD3DApplicationctor_CD3DApplication3_next);
         };
-        void CD3DApplicationCleanup3DEnvironment4_wrapper(struct CD3DApplication* _this)
+        static void CD3DApplicationCleanup3DEnvironment4_wrapper(struct CD3DApplication* _this)
         {
            CD3DApplicationCleanup3DEnvironment4_user(_this, CD3DApplicationCleanup3DEnvironment4_next);
         };
-        int32_t CD3DApplicationConfirmDevice5_wrapper(struct CD3DApplication* _this, struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
+        static int32_t CD3DApplicationConfirmDevice5_wrapper(struct CD3DApplication* _this, struct _D3DCAPS8* arg_0, uint32_t arg_1, _D3DFORMAT arg_2)
         {
            return CD3DApplicationConfirmDevice5_user(_this, arg_0, arg_1, arg_2, CD3DApplicationConfirmDevice5_next);
         };
-        int32_t CD3DApplicationCreate6_wrapper(struct CD3DApplication* _this, HINSTANCE arg_0)
+        static int32_t CD3DApplicationCreate6_wrapper(struct CD3DApplication* _this, HINSTANCE arg_0)
         {
            return CD3DApplicationCreate6_user(_this, arg_0, CD3DApplicationCreate6_next);
         };
-        int32_t CD3DApplicationCreateDirect3D7_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationCreateDirect3D7_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationCreateDirect3D7_user(_this, CD3DApplicationCreateDirect3D7_next);
         };
-        int32_t CD3DApplicationDeleteDeviceObjects8_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationDeleteDeviceObjects8_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationDeleteDeviceObjects8_user(_this, CD3DApplicationDeleteDeviceObjects8_next);
         };
-        int32_t CD3DApplicationDisplayErrorMsg9_wrapper(struct CD3DApplication* _this, int32_t arg_0, uint32_t arg_1)
+        static int32_t CD3DApplicationDisplayErrorMsg9_wrapper(struct CD3DApplication* _this, int32_t arg_0, uint32_t arg_1)
         {
            return CD3DApplicationDisplayErrorMsg9_user(_this, arg_0, arg_1, CD3DApplicationDisplayErrorMsg9_next);
         };
-        int32_t CD3DApplicationEndLoop10_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationEndLoop10_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationEndLoop10_user(_this, CD3DApplicationEndLoop10_next);
         };
-        int32_t CD3DApplicationFinalCleanup11_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationFinalCleanup11_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationFinalCleanup11_user(_this, CD3DApplicationFinalCleanup11_next);
         };
-        int64_t CD3DApplicationFindDepthStencilFormat12_wrapper(struct CD3DApplication* _this, unsigned int arg_0, CD3DApplication::_D3DDEVTYPE arg_1, _D3DFORMAT arg_2, _D3DFORMAT* arg_3)
+        static int64_t CD3DApplicationFindDepthStencilFormat12_wrapper(struct CD3DApplication* _this, unsigned int arg_0, CD3DApplication::_D3DDEVTYPE arg_1, _D3DFORMAT arg_2, _D3DFORMAT* arg_3)
         {
            return CD3DApplicationFindDepthStencilFormat12_user(_this, arg_0, arg_1, arg_2, arg_3, CD3DApplicationFindDepthStencilFormat12_next);
         };
-        int32_t CD3DApplicationForceWindowed13_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationForceWindowed13_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationForceWindowed13_user(_this, CD3DApplicationForceWindowed13_next);
         };
-        int32_t CD3DApplicationFrameMove14_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationFrameMove14_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationFrameMove14_user(_this, CD3DApplicationFrameMove14_next);
         };
-        int32_t CD3DApplicationInitDeviceObjects15_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationInitDeviceObjects15_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationInitDeviceObjects15_user(_this, CD3DApplicationInitDeviceObjects15_next);
         };
-        int32_t CD3DApplicationInitialize3DEnvironment16_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationInitialize3DEnvironment16_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationInitialize3DEnvironment16_user(_this, CD3DApplicationInitialize3DEnvironment16_next);
         };
-        int32_t CD3DApplicationInvalidateDeviceObjects17_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationInvalidateDeviceObjects17_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationInvalidateDeviceObjects17_user(_this, CD3DApplicationInvalidateDeviceObjects17_next);
         };
-        int64_t CD3DApplicationMsgProc18_wrapper(struct CD3DApplication* _this, HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
+        static int64_t CD3DApplicationMsgProc18_wrapper(struct CD3DApplication* _this, HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
         {
            return CD3DApplicationMsgProc18_user(_this, hWnd, Msg, wParam, lParam, CD3DApplicationMsgProc18_next);
         };
-        int32_t CD3DApplicationOneTimeSceneInit19_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationOneTimeSceneInit19_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationOneTimeSceneInit19_user(_this, CD3DApplicationOneTimeSceneInit19_next);
         };
-        void CD3DApplicationPause20_wrapper(struct CD3DApplication* _this, int arg_0)
+        static void CD3DApplicationPause20_wrapper(struct CD3DApplication* _this, int arg_0)
         {
            CD3DApplicationPause20_user(_this, arg_0, CD3DApplicationPause20_next);
         };
-        int32_t CD3DApplicationPrepareLoop21_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationPrepareLoop21_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationPrepareLoop21_user(_this, CD3DApplicationPrepareLoop21_next);
         };
-        int32_t CD3DApplicationRelease22_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationRelease22_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationRelease22_user(_this, CD3DApplicationRelease22_next);
         };
-        int32_t CD3DApplicationRender23_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationRender23_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationRender23_user(_this, CD3DApplicationRender23_next);
         };
-        int32_t CD3DApplicationRender3DEnvironment24_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationRender3DEnvironment24_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationRender3DEnvironment24_user(_this, CD3DApplicationRender3DEnvironment24_next);
         };
-        int32_t CD3DApplicationResize3DEnvironment25_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationResize3DEnvironment25_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationResize3DEnvironment25_user(_this, CD3DApplicationResize3DEnvironment25_next);
         };
-        int32_t CD3DApplicationRestoreDeviceObjects26_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationRestoreDeviceObjects26_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationRestoreDeviceObjects26_user(_this, CD3DApplicationRestoreDeviceObjects26_next);
         };
-        int64_t CD3DApplicationRun27_wrapper(struct CD3DApplication* _this)
+        static int64_t CD3DApplicationRun27_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationRun27_user(_this, CD3DApplicationRun27_next);
         };
-        int64_t CD3DApplicationSelectDeviceProc28_wrapper(HWND__* arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
+        static int64_t CD3DApplicationSelectDeviceProc28_wrapper(HWND__* arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
         {
            return CD3DApplicationSelectDeviceProc28_user(arg_0, arg_1, arg_2, arg_3, CD3DApplicationSelectDeviceProc28_next);
         };
-        int32_t CD3DApplicationToggleFullscreen29_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationToggleFullscreen29_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationToggleFullscreen29_user(_this, CD3DApplicationToggleFullscreen29_next);
         };
-        int32_t CD3DApplicationUserSelectNewDevice30_wrapper(struct CD3DApplication* _this)
+        static int32_t CD3DApplicationUserSelectNewDevice30_wrapper(struct CD3DApplication* _this)
         {
            return CD3DApplicationUserSelectNewDevice30_user(_this, CD3DApplicationUserSelectNewDevice30_next);
         };
         
-        hook_record CD3DApplication_functions[] = {
+        static hook_record CD3DApplication_functions[] = {
         {   (LPVOID)0x140523fe0L,
             (LPVOID *)&CD3DApplicationAdjustWindowForChange1_user,
             (LPVOID *)&CD3DApplicationAdjustWindowForChange1_next,
@@ -344,5 +344,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

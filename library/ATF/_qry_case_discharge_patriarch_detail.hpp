@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_ptr _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_next(nullptr);
-        info::_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_clbk _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_user(nullptr);
-        info::_qry_case_discharge_patriarchsize4_ptr _qry_case_discharge_patriarchsize4_next(nullptr);
-        info::_qry_case_discharge_patriarchsize4_clbk _qry_case_discharge_patriarchsize4_user(nullptr);
+        static info::_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_ptr _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_next(nullptr);
+        static info::_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_clbk _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_user(nullptr);
+        static info::_qry_case_discharge_patriarchsize4_ptr _qry_case_discharge_patriarchsize4_next(nullptr);
+        static info::_qry_case_discharge_patriarchsize4_clbk _qry_case_discharge_patriarchsize4_user(nullptr);
         
-        void _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_wrapper(struct _qry_case_discharge_patriarch* _this, char byR, unsigned int dwS, unsigned int dwE)
+        static void _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_wrapper(struct _qry_case_discharge_patriarch* _this, char byR, unsigned int dwS, unsigned int dwE)
         {
            _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_user(_this, byR, dwS, dwE, _qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_next);
         };
-        int _qry_case_discharge_patriarchsize4_wrapper(struct _qry_case_discharge_patriarch* _this)
+        static int _qry_case_discharge_patriarchsize4_wrapper(struct _qry_case_discharge_patriarch* _this)
         {
            return _qry_case_discharge_patriarchsize4_user(_this, _qry_case_discharge_patriarchsize4_next);
         };
         
-        hook_record _qry_case_discharge_patriarch_functions[] = {
+        static hook_record _qry_case_discharge_patriarch_functions[] = {
         {   (LPVOID)0x1402b6630L,
             (LPVOID *)&_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_user,
             (LPVOID *)&_qry_case_discharge_patriarchctor__qry_case_discharge_patriarch2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

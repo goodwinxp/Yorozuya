@@ -8,205 +8,205 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_STORAGE_LISTAlterCurDur2_ptr _STORAGE_LISTAlterCurDur2_next(nullptr);
-        info::_STORAGE_LISTAlterCurDur2_clbk _STORAGE_LISTAlterCurDur2_user(nullptr);
-        info::_STORAGE_LISTEmptyCon4_ptr _STORAGE_LISTEmptyCon4_next(nullptr);
-        info::_STORAGE_LISTEmptyCon4_clbk _STORAGE_LISTEmptyCon4_user(nullptr);
-        info::_STORAGE_LISTGetIndexEmptyCon6_ptr _STORAGE_LISTGetIndexEmptyCon6_next(nullptr);
-        info::_STORAGE_LISTGetIndexEmptyCon6_clbk _STORAGE_LISTGetIndexEmptyCon6_user(nullptr);
-        info::_STORAGE_LISTGetIndexFromSerial8_ptr _STORAGE_LISTGetIndexFromSerial8_next(nullptr);
-        info::_STORAGE_LISTGetIndexFromSerial8_clbk _STORAGE_LISTGetIndexFromSerial8_user(nullptr);
-        info::_STORAGE_LISTGetNumEmptyCon10_ptr _STORAGE_LISTGetNumEmptyCon10_next(nullptr);
-        info::_STORAGE_LISTGetNumEmptyCon10_clbk _STORAGE_LISTGetNumEmptyCon10_user(nullptr);
-        info::_STORAGE_LISTGetNumUseCon12_ptr _STORAGE_LISTGetNumUseCon12_next(nullptr);
-        info::_STORAGE_LISTGetNumUseCon12_clbk _STORAGE_LISTGetNumUseCon12_user(nullptr);
-        info::_STORAGE_LISTGetPtrFromItemCode14_ptr _STORAGE_LISTGetPtrFromItemCode14_next(nullptr);
-        info::_STORAGE_LISTGetPtrFromItemCode14_clbk _STORAGE_LISTGetPtrFromItemCode14_user(nullptr);
-        info::_STORAGE_LISTGetPtrFromItemInfo16_ptr _STORAGE_LISTGetPtrFromItemInfo16_next(nullptr);
-        info::_STORAGE_LISTGetPtrFromItemInfo16_clbk _STORAGE_LISTGetPtrFromItemInfo16_user(nullptr);
-        info::_STORAGE_LISTGetPtrFromSerial18_ptr _STORAGE_LISTGetPtrFromSerial18_next(nullptr);
-        info::_STORAGE_LISTGetPtrFromSerial18_clbk _STORAGE_LISTGetPtrFromSerial18_user(nullptr);
-        info::_STORAGE_LISTGetRemainLendTime20_ptr _STORAGE_LISTGetRemainLendTime20_next(nullptr);
-        info::_STORAGE_LISTGetRemainLendTime20_clbk _STORAGE_LISTGetRemainLendTime20_user(nullptr);
-        info::_STORAGE_LISTGradeDown22_ptr _STORAGE_LISTGradeDown22_next(nullptr);
-        info::_STORAGE_LISTGradeDown22_clbk _STORAGE_LISTGradeDown22_user(nullptr);
-        info::_STORAGE_LISTGradeUp24_ptr _STORAGE_LISTGradeUp24_next(nullptr);
-        info::_STORAGE_LISTGradeUp24_clbk _STORAGE_LISTGradeUp24_user(nullptr);
-        info::_STORAGE_LISTSetAllEmpty26_ptr _STORAGE_LISTSetAllEmpty26_next(nullptr);
-        info::_STORAGE_LISTSetAllEmpty26_clbk _STORAGE_LISTSetAllEmpty26_user(nullptr);
-        info::_STORAGE_LISTSetClientIndexFromSerial28_ptr _STORAGE_LISTSetClientIndexFromSerial28_next(nullptr);
-        info::_STORAGE_LISTSetClientIndexFromSerial28_clbk _STORAGE_LISTSetClientIndexFromSerial28_user(nullptr);
-        info::_STORAGE_LISTSetGrade30_ptr _STORAGE_LISTSetGrade30_next(nullptr);
-        info::_STORAGE_LISTSetGrade30_clbk _STORAGE_LISTSetGrade30_user(nullptr);
-        info::_STORAGE_LISTSetLimCurDur32_ptr _STORAGE_LISTSetLimCurDur32_next(nullptr);
-        info::_STORAGE_LISTSetLimCurDur32_clbk _STORAGE_LISTSetLimCurDur32_user(nullptr);
-        info::_STORAGE_LISTSetLock34_ptr _STORAGE_LISTSetLock34_next(nullptr);
-        info::_STORAGE_LISTSetLock34_clbk _STORAGE_LISTSetLock34_user(nullptr);
-        info::_STORAGE_LISTSetMemory36_ptr _STORAGE_LISTSetMemory36_next(nullptr);
-        info::_STORAGE_LISTSetMemory36_clbk _STORAGE_LISTSetMemory36_user(nullptr);
-        info::_STORAGE_LISTSetUseListNum38_ptr _STORAGE_LISTSetUseListNum38_next(nullptr);
-        info::_STORAGE_LISTSetUseListNum38_clbk _STORAGE_LISTSetUseListNum38_user(nullptr);
-        info::_STORAGE_LISTTransInCon40_ptr _STORAGE_LISTTransInCon40_next(nullptr);
-        info::_STORAGE_LISTTransInCon40_clbk _STORAGE_LISTTransInCon40_user(nullptr);
-        info::_STORAGE_LISTUpdateCurDur42_ptr _STORAGE_LISTUpdateCurDur42_next(nullptr);
-        info::_STORAGE_LISTUpdateCurDur42_clbk _STORAGE_LISTUpdateCurDur42_user(nullptr);
-        info::_STORAGE_LISTctor__STORAGE_LIST44_ptr _STORAGE_LISTctor__STORAGE_LIST44_next(nullptr);
-        info::_STORAGE_LISTctor__STORAGE_LIST44_clbk _STORAGE_LISTctor__STORAGE_LIST44_user(nullptr);
+        static info::_STORAGE_LISTAlterCurDur2_ptr _STORAGE_LISTAlterCurDur2_next(nullptr);
+        static info::_STORAGE_LISTAlterCurDur2_clbk _STORAGE_LISTAlterCurDur2_user(nullptr);
+        static info::_STORAGE_LISTEmptyCon4_ptr _STORAGE_LISTEmptyCon4_next(nullptr);
+        static info::_STORAGE_LISTEmptyCon4_clbk _STORAGE_LISTEmptyCon4_user(nullptr);
+        static info::_STORAGE_LISTGetIndexEmptyCon6_ptr _STORAGE_LISTGetIndexEmptyCon6_next(nullptr);
+        static info::_STORAGE_LISTGetIndexEmptyCon6_clbk _STORAGE_LISTGetIndexEmptyCon6_user(nullptr);
+        static info::_STORAGE_LISTGetIndexFromSerial8_ptr _STORAGE_LISTGetIndexFromSerial8_next(nullptr);
+        static info::_STORAGE_LISTGetIndexFromSerial8_clbk _STORAGE_LISTGetIndexFromSerial8_user(nullptr);
+        static info::_STORAGE_LISTGetNumEmptyCon10_ptr _STORAGE_LISTGetNumEmptyCon10_next(nullptr);
+        static info::_STORAGE_LISTGetNumEmptyCon10_clbk _STORAGE_LISTGetNumEmptyCon10_user(nullptr);
+        static info::_STORAGE_LISTGetNumUseCon12_ptr _STORAGE_LISTGetNumUseCon12_next(nullptr);
+        static info::_STORAGE_LISTGetNumUseCon12_clbk _STORAGE_LISTGetNumUseCon12_user(nullptr);
+        static info::_STORAGE_LISTGetPtrFromItemCode14_ptr _STORAGE_LISTGetPtrFromItemCode14_next(nullptr);
+        static info::_STORAGE_LISTGetPtrFromItemCode14_clbk _STORAGE_LISTGetPtrFromItemCode14_user(nullptr);
+        static info::_STORAGE_LISTGetPtrFromItemInfo16_ptr _STORAGE_LISTGetPtrFromItemInfo16_next(nullptr);
+        static info::_STORAGE_LISTGetPtrFromItemInfo16_clbk _STORAGE_LISTGetPtrFromItemInfo16_user(nullptr);
+        static info::_STORAGE_LISTGetPtrFromSerial18_ptr _STORAGE_LISTGetPtrFromSerial18_next(nullptr);
+        static info::_STORAGE_LISTGetPtrFromSerial18_clbk _STORAGE_LISTGetPtrFromSerial18_user(nullptr);
+        static info::_STORAGE_LISTGetRemainLendTime20_ptr _STORAGE_LISTGetRemainLendTime20_next(nullptr);
+        static info::_STORAGE_LISTGetRemainLendTime20_clbk _STORAGE_LISTGetRemainLendTime20_user(nullptr);
+        static info::_STORAGE_LISTGradeDown22_ptr _STORAGE_LISTGradeDown22_next(nullptr);
+        static info::_STORAGE_LISTGradeDown22_clbk _STORAGE_LISTGradeDown22_user(nullptr);
+        static info::_STORAGE_LISTGradeUp24_ptr _STORAGE_LISTGradeUp24_next(nullptr);
+        static info::_STORAGE_LISTGradeUp24_clbk _STORAGE_LISTGradeUp24_user(nullptr);
+        static info::_STORAGE_LISTSetAllEmpty26_ptr _STORAGE_LISTSetAllEmpty26_next(nullptr);
+        static info::_STORAGE_LISTSetAllEmpty26_clbk _STORAGE_LISTSetAllEmpty26_user(nullptr);
+        static info::_STORAGE_LISTSetClientIndexFromSerial28_ptr _STORAGE_LISTSetClientIndexFromSerial28_next(nullptr);
+        static info::_STORAGE_LISTSetClientIndexFromSerial28_clbk _STORAGE_LISTSetClientIndexFromSerial28_user(nullptr);
+        static info::_STORAGE_LISTSetGrade30_ptr _STORAGE_LISTSetGrade30_next(nullptr);
+        static info::_STORAGE_LISTSetGrade30_clbk _STORAGE_LISTSetGrade30_user(nullptr);
+        static info::_STORAGE_LISTSetLimCurDur32_ptr _STORAGE_LISTSetLimCurDur32_next(nullptr);
+        static info::_STORAGE_LISTSetLimCurDur32_clbk _STORAGE_LISTSetLimCurDur32_user(nullptr);
+        static info::_STORAGE_LISTSetLock34_ptr _STORAGE_LISTSetLock34_next(nullptr);
+        static info::_STORAGE_LISTSetLock34_clbk _STORAGE_LISTSetLock34_user(nullptr);
+        static info::_STORAGE_LISTSetMemory36_ptr _STORAGE_LISTSetMemory36_next(nullptr);
+        static info::_STORAGE_LISTSetMemory36_clbk _STORAGE_LISTSetMemory36_user(nullptr);
+        static info::_STORAGE_LISTSetUseListNum38_ptr _STORAGE_LISTSetUseListNum38_next(nullptr);
+        static info::_STORAGE_LISTSetUseListNum38_clbk _STORAGE_LISTSetUseListNum38_user(nullptr);
+        static info::_STORAGE_LISTTransInCon40_ptr _STORAGE_LISTTransInCon40_next(nullptr);
+        static info::_STORAGE_LISTTransInCon40_clbk _STORAGE_LISTTransInCon40_user(nullptr);
+        static info::_STORAGE_LISTUpdateCurDur42_ptr _STORAGE_LISTUpdateCurDur42_next(nullptr);
+        static info::_STORAGE_LISTUpdateCurDur42_clbk _STORAGE_LISTUpdateCurDur42_user(nullptr);
+        static info::_STORAGE_LISTctor__STORAGE_LIST44_ptr _STORAGE_LISTctor__STORAGE_LIST44_next(nullptr);
+        static info::_STORAGE_LISTctor__STORAGE_LIST44_clbk _STORAGE_LISTctor__STORAGE_LIST44_user(nullptr);
         
-        info::_STORAGE_LIST___storage_conInit2_ptr _STORAGE_LIST___storage_conInit2_next(nullptr);
-        info::_STORAGE_LIST___storage_conInit2_clbk _STORAGE_LIST___storage_conInit2_user(nullptr);
-        info::_STORAGE_LIST___storage_conctor__storage_con4_ptr _STORAGE_LIST___storage_conctor__storage_con4_next(nullptr);
-        info::_STORAGE_LIST___storage_conctor__storage_con4_clbk _STORAGE_LIST___storage_conctor__storage_con4_user(nullptr);
-        info::_STORAGE_LIST___storage_conctor__storage_con6_ptr _STORAGE_LIST___storage_conctor__storage_con6_next(nullptr);
-        info::_STORAGE_LIST___storage_conctor__storage_con6_clbk _STORAGE_LIST___storage_conctor__storage_con6_user(nullptr);
-        info::_STORAGE_LIST___storage_conempty8_ptr _STORAGE_LIST___storage_conempty8_next(nullptr);
-        info::_STORAGE_LIST___storage_conempty8_clbk _STORAGE_LIST___storage_conempty8_user(nullptr);
-        info::_STORAGE_LIST___storage_conlock10_ptr _STORAGE_LIST___storage_conlock10_next(nullptr);
-        info::_STORAGE_LIST___storage_conlock10_clbk _STORAGE_LIST___storage_conlock10_user(nullptr);
+        static info::_STORAGE_LIST___storage_conInit2_ptr _STORAGE_LIST___storage_conInit2_next(nullptr);
+        static info::_STORAGE_LIST___storage_conInit2_clbk _STORAGE_LIST___storage_conInit2_user(nullptr);
+        static info::_STORAGE_LIST___storage_conctor__storage_con4_ptr _STORAGE_LIST___storage_conctor__storage_con4_next(nullptr);
+        static info::_STORAGE_LIST___storage_conctor__storage_con4_clbk _STORAGE_LIST___storage_conctor__storage_con4_user(nullptr);
+        static info::_STORAGE_LIST___storage_conctor__storage_con6_ptr _STORAGE_LIST___storage_conctor__storage_con6_next(nullptr);
+        static info::_STORAGE_LIST___storage_conctor__storage_con6_clbk _STORAGE_LIST___storage_conctor__storage_con6_user(nullptr);
+        static info::_STORAGE_LIST___storage_conempty8_ptr _STORAGE_LIST___storage_conempty8_next(nullptr);
+        static info::_STORAGE_LIST___storage_conempty8_clbk _STORAGE_LIST___storage_conempty8_user(nullptr);
+        static info::_STORAGE_LIST___storage_conlock10_ptr _STORAGE_LIST___storage_conlock10_next(nullptr);
+        static info::_STORAGE_LIST___storage_conlock10_clbk _STORAGE_LIST___storage_conlock10_user(nullptr);
         
-        info::_STORAGE_LIST___db_conCalcNewSerialNumber2_ptr _STORAGE_LIST___db_conCalcNewSerialNumber2_next(nullptr);
-        info::_STORAGE_LIST___db_conCalcNewSerialNumber2_clbk _STORAGE_LIST___db_conCalcNewSerialNumber2_user(nullptr);
-        info::_STORAGE_LIST___db_conGetSerialNumber4_ptr _STORAGE_LIST___db_conGetSerialNumber4_next(nullptr);
-        info::_STORAGE_LIST___db_conGetSerialNumber4_clbk _STORAGE_LIST___db_conGetSerialNumber4_user(nullptr);
-        info::_STORAGE_LIST___db_conInit6_ptr _STORAGE_LIST___db_conInit6_next(nullptr);
-        info::_STORAGE_LIST___db_conInit6_clbk _STORAGE_LIST___db_conInit6_user(nullptr);
-        info::_STORAGE_LIST___db_conSetSerialNumber8_ptr _STORAGE_LIST___db_conSetSerialNumber8_next(nullptr);
-        info::_STORAGE_LIST___db_conSetSerialNumber8_clbk _STORAGE_LIST___db_conSetSerialNumber8_user(nullptr);
-        info::_STORAGE_LIST___db_conctor__db_con10_ptr _STORAGE_LIST___db_conctor__db_con10_next(nullptr);
-        info::_STORAGE_LIST___db_conctor__db_con10_clbk _STORAGE_LIST___db_conctor__db_con10_user(nullptr);
+        static info::_STORAGE_LIST___db_conCalcNewSerialNumber2_ptr _STORAGE_LIST___db_conCalcNewSerialNumber2_next(nullptr);
+        static info::_STORAGE_LIST___db_conCalcNewSerialNumber2_clbk _STORAGE_LIST___db_conCalcNewSerialNumber2_user(nullptr);
+        static info::_STORAGE_LIST___db_conGetSerialNumber4_ptr _STORAGE_LIST___db_conGetSerialNumber4_next(nullptr);
+        static info::_STORAGE_LIST___db_conGetSerialNumber4_clbk _STORAGE_LIST___db_conGetSerialNumber4_user(nullptr);
+        static info::_STORAGE_LIST___db_conInit6_ptr _STORAGE_LIST___db_conInit6_next(nullptr);
+        static info::_STORAGE_LIST___db_conInit6_clbk _STORAGE_LIST___db_conInit6_user(nullptr);
+        static info::_STORAGE_LIST___db_conSetSerialNumber8_ptr _STORAGE_LIST___db_conSetSerialNumber8_next(nullptr);
+        static info::_STORAGE_LIST___db_conSetSerialNumber8_clbk _STORAGE_LIST___db_conSetSerialNumber8_user(nullptr);
+        static info::_STORAGE_LIST___db_conctor__db_con10_ptr _STORAGE_LIST___db_conctor__db_con10_next(nullptr);
+        static info::_STORAGE_LIST___db_conctor__db_con10_clbk _STORAGE_LIST___db_conctor__db_con10_user(nullptr);
         
-        bool _STORAGE_LISTAlterCurDur2_wrapper(struct _STORAGE_LIST* _this, int n, int nAlter, uint64_t* pdwLeftDur)
+        static bool _STORAGE_LISTAlterCurDur2_wrapper(struct _STORAGE_LIST* _this, int n, int nAlter, uint64_t* pdwLeftDur)
         {
            return _STORAGE_LISTAlterCurDur2_user(_this, n, nAlter, pdwLeftDur, _STORAGE_LISTAlterCurDur2_next);
         };
-        bool _STORAGE_LISTEmptyCon4_wrapper(struct _STORAGE_LIST* _this, int n)
+        static bool _STORAGE_LISTEmptyCon4_wrapper(struct _STORAGE_LIST* _this, int n)
         {
            return _STORAGE_LISTEmptyCon4_user(_this, n, _STORAGE_LISTEmptyCon4_next);
         };
-        int _STORAGE_LISTGetIndexEmptyCon6_wrapper(struct _STORAGE_LIST* _this)
+        static int _STORAGE_LISTGetIndexEmptyCon6_wrapper(struct _STORAGE_LIST* _this)
         {
            return _STORAGE_LISTGetIndexEmptyCon6_user(_this, _STORAGE_LISTGetIndexEmptyCon6_next);
         };
-        int _STORAGE_LISTGetIndexFromSerial8_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial)
+        static int _STORAGE_LISTGetIndexFromSerial8_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial)
         {
            return _STORAGE_LISTGetIndexFromSerial8_user(_this, wSerial, _STORAGE_LISTGetIndexFromSerial8_next);
         };
-        int _STORAGE_LISTGetNumEmptyCon10_wrapper(struct _STORAGE_LIST* _this)
+        static int _STORAGE_LISTGetNumEmptyCon10_wrapper(struct _STORAGE_LIST* _this)
         {
            return _STORAGE_LISTGetNumEmptyCon10_user(_this, _STORAGE_LISTGetNumEmptyCon10_next);
         };
-        int _STORAGE_LISTGetNumUseCon12_wrapper(struct _STORAGE_LIST* _this)
+        static int _STORAGE_LISTGetNumUseCon12_wrapper(struct _STORAGE_LIST* _this)
         {
            return _STORAGE_LISTGetNumUseCon12_user(_this, _STORAGE_LISTGetNumUseCon12_next);
         };
-        struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromItemCode14_wrapper(struct _STORAGE_LIST* _this, char* pwszItemCode)
+        static struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromItemCode14_wrapper(struct _STORAGE_LIST* _this, char* pwszItemCode)
         {
            return _STORAGE_LISTGetPtrFromItemCode14_user(_this, pwszItemCode, _STORAGE_LISTGetPtrFromItemCode14_next);
         };
-        struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromItemInfo16_wrapper(struct _STORAGE_LIST* _this, char byTableCode, uint16_t ItemIndex)
+        static struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromItemInfo16_wrapper(struct _STORAGE_LIST* _this, char byTableCode, uint16_t ItemIndex)
         {
            return _STORAGE_LISTGetPtrFromItemInfo16_user(_this, byTableCode, ItemIndex, _STORAGE_LISTGetPtrFromItemInfo16_next);
         };
-        struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromSerial18_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial)
+        static struct _STORAGE_LIST::_db_con* _STORAGE_LISTGetPtrFromSerial18_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial)
         {
            return _STORAGE_LISTGetPtrFromSerial18_user(_this, wSerial, _STORAGE_LISTGetPtrFromSerial18_next);
         };
-        unsigned int _STORAGE_LISTGetRemainLendTime20_wrapper(struct _STORAGE_LIST* _this, int n, int tmCur)
+        static unsigned int _STORAGE_LISTGetRemainLendTime20_wrapper(struct _STORAGE_LIST* _this, int n, int tmCur)
         {
            return _STORAGE_LISTGetRemainLendTime20_user(_this, n, tmCur, _STORAGE_LISTGetRemainLendTime20_next);
         };
-        bool _STORAGE_LISTGradeDown22_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwUptInfo)
+        static bool _STORAGE_LISTGradeDown22_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwUptInfo)
         {
            return _STORAGE_LISTGradeDown22_user(_this, n, dwUptInfo, _STORAGE_LISTGradeDown22_next);
         };
-        bool _STORAGE_LISTGradeUp24_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwUptInfo)
+        static bool _STORAGE_LISTGradeUp24_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwUptInfo)
         {
            return _STORAGE_LISTGradeUp24_user(_this, n, dwUptInfo, _STORAGE_LISTGradeUp24_next);
         };
-        void _STORAGE_LISTSetAllEmpty26_wrapper(struct _STORAGE_LIST* _this)
+        static void _STORAGE_LISTSetAllEmpty26_wrapper(struct _STORAGE_LIST* _this)
         {
            _STORAGE_LISTSetAllEmpty26_user(_this, _STORAGE_LISTSetAllEmpty26_next);
         };
-        char _STORAGE_LISTSetClientIndexFromSerial28_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial, char byClientIndex, char* pbyoutOldClientIndex)
+        static char _STORAGE_LISTSetClientIndexFromSerial28_wrapper(struct _STORAGE_LIST* _this, uint16_t wSerial, char byClientIndex, char* pbyoutOldClientIndex)
         {
            return _STORAGE_LISTSetClientIndexFromSerial28_user(_this, wSerial, byClientIndex, pbyoutOldClientIndex, _STORAGE_LISTSetClientIndexFromSerial28_next);
         };
-        bool _STORAGE_LISTSetGrade30_wrapper(struct _STORAGE_LIST* _this, int n, char byLv, unsigned int dwUptInfo)
+        static bool _STORAGE_LISTSetGrade30_wrapper(struct _STORAGE_LIST* _this, int n, char byLv, unsigned int dwUptInfo)
         {
            return _STORAGE_LISTSetGrade30_user(_this, n, byLv, dwUptInfo, _STORAGE_LISTSetGrade30_next);
         };
-        void _STORAGE_LISTSetLimCurDur32_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwSetDur)
+        static void _STORAGE_LISTSetLimCurDur32_wrapper(struct _STORAGE_LIST* _this, int n, unsigned int dwSetDur)
         {
            _STORAGE_LISTSetLimCurDur32_user(_this, n, dwSetDur, _STORAGE_LISTSetLimCurDur32_next);
         };
-        void _STORAGE_LISTSetLock34_wrapper(struct _STORAGE_LIST* _this, int n, bool bLock)
+        static void _STORAGE_LISTSetLock34_wrapper(struct _STORAGE_LIST* _this, int n, bool bLock)
         {
            _STORAGE_LISTSetLock34_user(_this, n, bLock, _STORAGE_LISTSetLock34_next);
         };
-        void _STORAGE_LISTSetMemory36_wrapper(struct _STORAGE_LIST* _this, struct _STORAGE_LIST::_db_con* pList, int nListName, int nListNum, int nUsedNum)
+        static void _STORAGE_LISTSetMemory36_wrapper(struct _STORAGE_LIST* _this, struct _STORAGE_LIST::_db_con* pList, int nListName, int nListNum, int nUsedNum)
         {
            _STORAGE_LISTSetMemory36_user(_this, pList, nListName, nListNum, nUsedNum, _STORAGE_LISTSetMemory36_next);
         };
-        bool _STORAGE_LISTSetUseListNum38_wrapper(struct _STORAGE_LIST* _this, int nUsedNum)
+        static bool _STORAGE_LISTSetUseListNum38_wrapper(struct _STORAGE_LIST* _this, int nUsedNum)
         {
            return _STORAGE_LISTSetUseListNum38_user(_this, nUsedNum, _STORAGE_LISTSetUseListNum38_next);
         };
-        unsigned int _STORAGE_LISTTransInCon40_wrapper(struct _STORAGE_LIST* _this, struct _STORAGE_LIST::_storage_con* pCon)
+        static unsigned int _STORAGE_LISTTransInCon40_wrapper(struct _STORAGE_LIST* _this, struct _STORAGE_LIST::_storage_con* pCon)
         {
            return _STORAGE_LISTTransInCon40_user(_this, pCon, _STORAGE_LISTTransInCon40_next);
         };
-        bool _STORAGE_LISTUpdateCurDur42_wrapper(struct _STORAGE_LIST* _this, int n, int nUpdate)
+        static bool _STORAGE_LISTUpdateCurDur42_wrapper(struct _STORAGE_LIST* _this, int n, int nUpdate)
         {
            return _STORAGE_LISTUpdateCurDur42_user(_this, n, nUpdate, _STORAGE_LISTUpdateCurDur42_next);
         };
-        void _STORAGE_LISTctor__STORAGE_LIST44_wrapper(struct _STORAGE_LIST* _this)
+        static void _STORAGE_LISTctor__STORAGE_LIST44_wrapper(struct _STORAGE_LIST* _this)
         {
            _STORAGE_LISTctor__STORAGE_LIST44_user(_this, _STORAGE_LISTctor__STORAGE_LIST44_next);
         };
         
-        void _STORAGE_LIST___storage_conInit2_wrapper(struct _STORAGE_LIST::_storage_con* _this)
+        static void _STORAGE_LIST___storage_conInit2_wrapper(struct _STORAGE_LIST::_storage_con* _this)
         {
            _STORAGE_LIST___storage_conInit2_user(_this, _STORAGE_LIST___storage_conInit2_next);
         };
-        void _STORAGE_LIST___storage_conctor__storage_con4_wrapper(struct _STORAGE_LIST::_storage_con* _this, char byTableCode, uint16_t wItemIndex, unsigned int dwDur, unsigned int dwLv, uint16_t wSerial)
+        static void _STORAGE_LIST___storage_conctor__storage_con4_wrapper(struct _STORAGE_LIST::_storage_con* _this, char byTableCode, uint16_t wItemIndex, unsigned int dwDur, unsigned int dwLv, uint16_t wSerial)
         {
            _STORAGE_LIST___storage_conctor__storage_con4_user(_this, byTableCode, wItemIndex, dwDur, dwLv, wSerial, _STORAGE_LIST___storage_conctor__storage_con4_next);
         };
-        void _STORAGE_LIST___storage_conctor__storage_con6_wrapper(struct _STORAGE_LIST::_storage_con* _this)
+        static void _STORAGE_LIST___storage_conctor__storage_con6_wrapper(struct _STORAGE_LIST::_storage_con* _this)
         {
            _STORAGE_LIST___storage_conctor__storage_con6_user(_this, _STORAGE_LIST___storage_conctor__storage_con6_next);
         };
-        void _STORAGE_LIST___storage_conempty8_wrapper(struct _STORAGE_LIST::_storage_con* _this)
+        static void _STORAGE_LIST___storage_conempty8_wrapper(struct _STORAGE_LIST::_storage_con* _this)
         {
            _STORAGE_LIST___storage_conempty8_user(_this, _STORAGE_LIST___storage_conempty8_next);
         };
-        void _STORAGE_LIST___storage_conlock10_wrapper(struct _STORAGE_LIST::_storage_con* _this, bool bLock)
+        static void _STORAGE_LIST___storage_conlock10_wrapper(struct _STORAGE_LIST::_storage_con* _this, bool bLock)
         {
            _STORAGE_LIST___storage_conlock10_user(_this, bLock, _STORAGE_LIST___storage_conlock10_next);
         };
         
-        unsigned int _STORAGE_LIST___db_conCalcNewSerialNumber2_wrapper()
+        static unsigned int _STORAGE_LIST___db_conCalcNewSerialNumber2_wrapper()
         {
            return _STORAGE_LIST___db_conCalcNewSerialNumber2_user(_STORAGE_LIST___db_conCalcNewSerialNumber2_next);
         };
-        unsigned int _STORAGE_LIST___db_conGetSerialNumber4_wrapper(struct _STORAGE_LIST::_db_con* _this)
+        static unsigned int _STORAGE_LIST___db_conGetSerialNumber4_wrapper(struct _STORAGE_LIST::_db_con* _this)
         {
            return _STORAGE_LIST___db_conGetSerialNumber4_user(_this, _STORAGE_LIST___db_conGetSerialNumber4_next);
         };
-        void _STORAGE_LIST___db_conInit6_wrapper(struct _STORAGE_LIST::_db_con* _this)
+        static void _STORAGE_LIST___db_conInit6_wrapper(struct _STORAGE_LIST::_db_con* _this)
         {
            _STORAGE_LIST___db_conInit6_user(_this, _STORAGE_LIST___db_conInit6_next);
         };
-        void _STORAGE_LIST___db_conSetSerialNumber8_wrapper(struct _STORAGE_LIST::_db_con* _this, unsigned int dwSN)
+        static void _STORAGE_LIST___db_conSetSerialNumber8_wrapper(struct _STORAGE_LIST::_db_con* _this, unsigned int dwSN)
         {
            _STORAGE_LIST___db_conSetSerialNumber8_user(_this, dwSN, _STORAGE_LIST___db_conSetSerialNumber8_next);
         };
-        void _STORAGE_LIST___db_conctor__db_con10_wrapper(struct _STORAGE_LIST::_db_con* _this)
+        static void _STORAGE_LIST___db_conctor__db_con10_wrapper(struct _STORAGE_LIST::_db_con* _this)
         {
            _STORAGE_LIST___db_conctor__db_con10_user(_this, _STORAGE_LIST___db_conctor__db_con10_next);
         };
         
-        hook_record _STORAGE_LIST_functions[] = {
+        static hook_record _STORAGE_LIST_functions[] = {
         {   (LPVOID)0x14010f090L,
             (LPVOID *)&_STORAGE_LISTAlterCurDur2_user,
             (LPVOID *)&_STORAGE_LISTAlterCurDur2_next,
@@ -372,5 +372,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

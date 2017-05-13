@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBuffInfoByHolyQuestListApply2_ptr CRaceBuffInfoByHolyQuestListApply2_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListApply2_clbk CRaceBuffInfoByHolyQuestListApply2_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_ptr CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_clbk CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListCreateComplete6_ptr CRaceBuffInfoByHolyQuestListCreateComplete6_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListCreateComplete6_clbk CRaceBuffInfoByHolyQuestListCreateComplete6_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListGetMaxThCnt8_ptr CRaceBuffInfoByHolyQuestListGetMaxThCnt8_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListGetMaxThCnt8_clbk CRaceBuffInfoByHolyQuestListGetMaxThCnt8_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListInit10_ptr CRaceBuffInfoByHolyQuestListInit10_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListInit10_clbk CRaceBuffInfoByHolyQuestListInit10_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListRelease12_ptr CRaceBuffInfoByHolyQuestListRelease12_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListRelease12_clbk CRaceBuffInfoByHolyQuestListRelease12_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_ptr CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_clbk CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListApply2_ptr CRaceBuffInfoByHolyQuestListApply2_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListApply2_clbk CRaceBuffInfoByHolyQuestListApply2_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_ptr CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_clbk CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListCreateComplete6_ptr CRaceBuffInfoByHolyQuestListCreateComplete6_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListCreateComplete6_clbk CRaceBuffInfoByHolyQuestListCreateComplete6_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListGetMaxThCnt8_ptr CRaceBuffInfoByHolyQuestListGetMaxThCnt8_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListGetMaxThCnt8_clbk CRaceBuffInfoByHolyQuestListGetMaxThCnt8_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListInit10_ptr CRaceBuffInfoByHolyQuestListInit10_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListInit10_clbk CRaceBuffInfoByHolyQuestListInit10_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListRelease12_ptr CRaceBuffInfoByHolyQuestListRelease12_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListRelease12_clbk CRaceBuffInfoByHolyQuestListRelease12_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_ptr CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_clbk CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_user(nullptr);
         
-        bool CRaceBuffInfoByHolyQuestListApply2_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestListApply2_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestListApply2_user(_this, uiContinueCnt, iResultType, pkDest, CRaceBuffInfoByHolyQuestListApply2_next);
         };
-        void CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
+        static void CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
         {
            CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_user(_this, CRaceBuffInfoByHolyQuestListctor_CRaceBuffInfoByHolyQuestList4_next);
         };
-        bool CRaceBuffInfoByHolyQuestListCreateComplete6_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestListCreateComplete6_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestListCreateComplete6_user(_this, uiContinueCnt, iResultType, pkDest, CRaceBuffInfoByHolyQuestListCreateComplete6_next);
         };
-        unsigned int CRaceBuffInfoByHolyQuestListGetMaxThCnt8_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
+        static unsigned int CRaceBuffInfoByHolyQuestListGetMaxThCnt8_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
         {
            return CRaceBuffInfoByHolyQuestListGetMaxThCnt8_user(_this, CRaceBuffInfoByHolyQuestListGetMaxThCnt8_next);
         };
-        bool CRaceBuffInfoByHolyQuestListInit10_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
+        static bool CRaceBuffInfoByHolyQuestListInit10_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
         {
            return CRaceBuffInfoByHolyQuestListInit10_user(_this, CRaceBuffInfoByHolyQuestListInit10_next);
         };
-        bool CRaceBuffInfoByHolyQuestListRelease12_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestListRelease12_wrapper(struct CRaceBuffInfoByHolyQuestList* _this, unsigned int uiContinueCnt, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestListRelease12_user(_this, uiContinueCnt, iResultType, pkDest, CRaceBuffInfoByHolyQuestListRelease12_next);
         };
-        void CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
+        static void CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_wrapper(struct CRaceBuffInfoByHolyQuestList* _this)
         {
            CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_user(_this, CRaceBuffInfoByHolyQuestListdtor_CRaceBuffInfoByHolyQuestList14_next);
         };
         
-        hook_record CRaceBuffInfoByHolyQuestList_functions[] = {
+        static hook_record CRaceBuffInfoByHolyQuestList_functions[] = {
         {   (LPVOID)0x1403b52b0L,
             (LPVOID *)&CRaceBuffInfoByHolyQuestListApply2_user,
             (LPVOID *)&CRaceBuffInfoByHolyQuestListApply2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

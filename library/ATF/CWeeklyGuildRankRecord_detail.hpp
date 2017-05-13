@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_ptr CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_next(nullptr);
-        info::CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_clbk CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_user(nullptr);
-        info::CWeeklyGuildRankRecordClear4_ptr CWeeklyGuildRankRecordClear4_next(nullptr);
-        info::CWeeklyGuildRankRecordClear4_clbk CWeeklyGuildRankRecordClear4_user(nullptr);
-        info::CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_ptr CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_next(nullptr);
-        info::CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_clbk CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_user(nullptr);
+        static info::CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_ptr CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_next(nullptr);
+        static info::CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_clbk CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_user(nullptr);
+        static info::CWeeklyGuildRankRecordClear4_ptr CWeeklyGuildRankRecordClear4_next(nullptr);
+        static info::CWeeklyGuildRankRecordClear4_clbk CWeeklyGuildRankRecordClear4_user(nullptr);
+        static info::CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_ptr CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_next(nullptr);
+        static info::CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_clbk CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_user(nullptr);
         
-        void CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_wrapper(struct CWeeklyGuildRankRecord* _this)
+        static void CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_wrapper(struct CWeeklyGuildRankRecord* _this)
         {
            CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_user(_this, CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_next);
         };
-        void CWeeklyGuildRankRecordClear4_wrapper(struct CWeeklyGuildRankRecord* _this)
+        static void CWeeklyGuildRankRecordClear4_wrapper(struct CWeeklyGuildRankRecord* _this)
         {
            CWeeklyGuildRankRecordClear4_user(_this, CWeeklyGuildRankRecordClear4_next);
         };
-        void CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_wrapper(struct CWeeklyGuildRankRecord* _this)
+        static void CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_wrapper(struct CWeeklyGuildRankRecord* _this)
         {
            CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_user(_this, CWeeklyGuildRankRecorddtor_CWeeklyGuildRankRecord8_next);
         };
         
-        hook_record CWeeklyGuildRankRecord_functions[] = {
+        static hook_record CWeeklyGuildRankRecord_functions[] = {
         {   (LPVOID)0x1402cf910L,
             (LPVOID *)&CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_user,
             (LPVOID *)&CWeeklyGuildRankRecordctor_CWeeklyGuildRankRecord2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

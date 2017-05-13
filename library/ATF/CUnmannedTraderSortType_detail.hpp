@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderSortTypector_CUnmannedTraderSortType2_ptr CUnmannedTraderSortTypector_CUnmannedTraderSortType2_next(nullptr);
-        info::CUnmannedTraderSortTypector_CUnmannedTraderSortType2_clbk CUnmannedTraderSortTypector_CUnmannedTraderSortType2_user(nullptr);
-        info::CUnmannedTraderSortTypeGetID4_ptr CUnmannedTraderSortTypeGetID4_next(nullptr);
-        info::CUnmannedTraderSortTypeGetID4_clbk CUnmannedTraderSortTypeGetID4_user(nullptr);
-        info::CUnmannedTraderSortTypeGetQuery6_ptr CUnmannedTraderSortTypeGetQuery6_next(nullptr);
-        info::CUnmannedTraderSortTypeGetQuery6_clbk CUnmannedTraderSortTypeGetQuery6_user(nullptr);
-        info::CUnmannedTraderSortTypeLoadXML8_ptr CUnmannedTraderSortTypeLoadXML8_next(nullptr);
-        info::CUnmannedTraderSortTypeLoadXML8_clbk CUnmannedTraderSortTypeLoadXML8_user(nullptr);
-        info::CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_ptr CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_next(nullptr);
-        info::CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_clbk CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_user(nullptr);
+        static info::CUnmannedTraderSortTypector_CUnmannedTraderSortType2_ptr CUnmannedTraderSortTypector_CUnmannedTraderSortType2_next(nullptr);
+        static info::CUnmannedTraderSortTypector_CUnmannedTraderSortType2_clbk CUnmannedTraderSortTypector_CUnmannedTraderSortType2_user(nullptr);
+        static info::CUnmannedTraderSortTypeGetID4_ptr CUnmannedTraderSortTypeGetID4_next(nullptr);
+        static info::CUnmannedTraderSortTypeGetID4_clbk CUnmannedTraderSortTypeGetID4_user(nullptr);
+        static info::CUnmannedTraderSortTypeGetQuery6_ptr CUnmannedTraderSortTypeGetQuery6_next(nullptr);
+        static info::CUnmannedTraderSortTypeGetQuery6_clbk CUnmannedTraderSortTypeGetQuery6_user(nullptr);
+        static info::CUnmannedTraderSortTypeLoadXML8_ptr CUnmannedTraderSortTypeLoadXML8_next(nullptr);
+        static info::CUnmannedTraderSortTypeLoadXML8_clbk CUnmannedTraderSortTypeLoadXML8_user(nullptr);
+        static info::CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_ptr CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_next(nullptr);
+        static info::CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_clbk CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_user(nullptr);
         
-        void CUnmannedTraderSortTypector_CUnmannedTraderSortType2_wrapper(struct CUnmannedTraderSortType* _this, unsigned int dwID)
+        static void CUnmannedTraderSortTypector_CUnmannedTraderSortType2_wrapper(struct CUnmannedTraderSortType* _this, unsigned int dwID)
         {
            CUnmannedTraderSortTypector_CUnmannedTraderSortType2_user(_this, dwID, CUnmannedTraderSortTypector_CUnmannedTraderSortType2_next);
         };
-        unsigned int CUnmannedTraderSortTypeGetID4_wrapper(struct CUnmannedTraderSortType* _this)
+        static unsigned int CUnmannedTraderSortTypeGetID4_wrapper(struct CUnmannedTraderSortType* _this)
         {
            return CUnmannedTraderSortTypeGetID4_user(_this, CUnmannedTraderSortTypeGetID4_next);
         };
-        char* CUnmannedTraderSortTypeGetQuery6_wrapper(struct CUnmannedTraderSortType* _this)
+        static char* CUnmannedTraderSortTypeGetQuery6_wrapper(struct CUnmannedTraderSortType* _this)
         {
            return CUnmannedTraderSortTypeGetQuery6_user(_this, CUnmannedTraderSortTypeGetQuery6_next);
         };
-        bool CUnmannedTraderSortTypeLoadXML8_wrapper(struct CUnmannedTraderSortType* _this, struct TiXmlElement* pkElemSortType, struct CLogFile* kLogger, unsigned int dwDivisionID)
+        static bool CUnmannedTraderSortTypeLoadXML8_wrapper(struct CUnmannedTraderSortType* _this, struct TiXmlElement* pkElemSortType, struct CLogFile* kLogger, unsigned int dwDivisionID)
         {
            return CUnmannedTraderSortTypeLoadXML8_user(_this, pkElemSortType, kLogger, dwDivisionID, CUnmannedTraderSortTypeLoadXML8_next);
         };
-        void CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_wrapper(struct CUnmannedTraderSortType* _this)
+        static void CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_wrapper(struct CUnmannedTraderSortType* _this)
         {
            CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_user(_this, CUnmannedTraderSortTypedtor_CUnmannedTraderSortType14_next);
         };
         
-        hook_record CUnmannedTraderSortType_functions[] = {
+        static hook_record CUnmannedTraderSortType_functions[] = {
         {   (LPVOID)0x140376c90L,
             (LPVOID *)&CUnmannedTraderSortTypector_CUnmannedTraderSortType2_user,
             (LPVOID *)&CUnmannedTraderSortTypector_CUnmannedTraderSortType2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

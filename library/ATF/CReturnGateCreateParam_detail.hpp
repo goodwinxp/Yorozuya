@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CReturnGateCreateParamctor_CReturnGateCreateParam2_ptr CReturnGateCreateParamctor_CReturnGateCreateParam2_next(nullptr);
-        info::CReturnGateCreateParamctor_CReturnGateCreateParam2_clbk CReturnGateCreateParamctor_CReturnGateCreateParam2_user(nullptr);
-        info::CReturnGateCreateParamGetOwner4_ptr CReturnGateCreateParamGetOwner4_next(nullptr);
-        info::CReturnGateCreateParamGetOwner4_clbk CReturnGateCreateParamGetOwner4_user(nullptr);
-        info::CReturnGateCreateParamdtor_CReturnGateCreateParam6_ptr CReturnGateCreateParamdtor_CReturnGateCreateParam6_next(nullptr);
-        info::CReturnGateCreateParamdtor_CReturnGateCreateParam6_clbk CReturnGateCreateParamdtor_CReturnGateCreateParam6_user(nullptr);
+        static info::CReturnGateCreateParamctor_CReturnGateCreateParam2_ptr CReturnGateCreateParamctor_CReturnGateCreateParam2_next(nullptr);
+        static info::CReturnGateCreateParamctor_CReturnGateCreateParam2_clbk CReturnGateCreateParamctor_CReturnGateCreateParam2_user(nullptr);
+        static info::CReturnGateCreateParamGetOwner4_ptr CReturnGateCreateParamGetOwner4_next(nullptr);
+        static info::CReturnGateCreateParamGetOwner4_clbk CReturnGateCreateParamGetOwner4_user(nullptr);
+        static info::CReturnGateCreateParamdtor_CReturnGateCreateParam6_ptr CReturnGateCreateParamdtor_CReturnGateCreateParam6_next(nullptr);
+        static info::CReturnGateCreateParamdtor_CReturnGateCreateParam6_clbk CReturnGateCreateParamdtor_CReturnGateCreateParam6_user(nullptr);
         
-        void CReturnGateCreateParamctor_CReturnGateCreateParam2_wrapper(struct CReturnGateCreateParam* _this, struct CPlayer* pkOwner)
+        static void CReturnGateCreateParamctor_CReturnGateCreateParam2_wrapper(struct CReturnGateCreateParam* _this, struct CPlayer* pkOwner)
         {
            CReturnGateCreateParamctor_CReturnGateCreateParam2_user(_this, pkOwner, CReturnGateCreateParamctor_CReturnGateCreateParam2_next);
         };
-        struct CPlayer* CReturnGateCreateParamGetOwner4_wrapper(struct CReturnGateCreateParam* _this)
+        static struct CPlayer* CReturnGateCreateParamGetOwner4_wrapper(struct CReturnGateCreateParam* _this)
         {
            return CReturnGateCreateParamGetOwner4_user(_this, CReturnGateCreateParamGetOwner4_next);
         };
-        void CReturnGateCreateParamdtor_CReturnGateCreateParam6_wrapper(struct CReturnGateCreateParam* _this)
+        static void CReturnGateCreateParamdtor_CReturnGateCreateParam6_wrapper(struct CReturnGateCreateParam* _this)
         {
            CReturnGateCreateParamdtor_CReturnGateCreateParam6_user(_this, CReturnGateCreateParamdtor_CReturnGateCreateParam6_next);
         };
         
-        hook_record CReturnGateCreateParam_functions[] = {
+        static hook_record CReturnGateCreateParam_functions[] = {
         {   (LPVOID)0x1401684e0L,
             (LPVOID *)&CReturnGateCreateParamctor_CReturnGateCreateParam2_user,
             (LPVOID *)&CReturnGateCreateParamctor_CReturnGateCreateParam2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

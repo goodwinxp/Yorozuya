@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_log_sheet_economysize2_ptr _log_sheet_economysize2_next(nullptr);
-        info::_log_sheet_economysize2_clbk _log_sheet_economysize2_user(nullptr);
+        static info::_log_sheet_economysize2_ptr _log_sheet_economysize2_next(nullptr);
+        static info::_log_sheet_economysize2_clbk _log_sheet_economysize2_user(nullptr);
         
-        int _log_sheet_economysize2_wrapper(struct _log_sheet_economy* _this)
+        static int _log_sheet_economysize2_wrapper(struct _log_sheet_economy* _this)
         {
            return _log_sheet_economysize2_user(_this, _log_sheet_economysize2_next);
         };
         
-        hook_record _log_sheet_economy_functions[] = {
+        static hook_record _log_sheet_economy_functions[] = {
         {   (LPVOID)0x1402a5ce0L,
             (LPVOID *)&_log_sheet_economysize2_user,
             (LPVOID *)&_log_sheet_economysize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

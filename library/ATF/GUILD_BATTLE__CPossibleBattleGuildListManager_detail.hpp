@@ -10,93 +10,93 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_user(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_next(nullptr);
-            info::GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_user(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_ptr GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_next(nullptr);
+            static info::GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_clbk GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_user(nullptr);
             
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerClear4_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_wrapper()
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_wrapper()
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_user(GUILD_BATTLE__CPossibleBattleGuildListManagerDestroy6_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerDoDayChangedWork8_next);
             };
-            bool GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static bool GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                return GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerInit10_next);
             };
-            struct GUILD_BATTLE::CPossibleBattleGuildListManager* GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_wrapper()
+            static struct GUILD_BATTLE::CPossibleBattleGuildListManager* GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_wrapper()
             {
                return GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_user(GUILD_BATTLE__CPossibleBattleGuildListManagerInstance12_next);
             };
-            bool GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static bool GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                return GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerLoad14_next);
             };
-            bool GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, char byRace, char ucPage, uint16_t* wLastGuildInx)
+            static bool GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, char byRace, char ucPage, uint16_t* wLastGuildInx)
             {
                return GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_user(_this, byRace, ucPage, wLastGuildInx, GUILD_BATTLE__CPossibleBattleGuildListManagerMakePage16_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace, char byPage, unsigned int dwVer)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace, char byPage, unsigned int dwVer)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_user(_this, n, byRace, byPage, dwVer, GUILD_BATTLE__CPossibleBattleGuildListManagerSend18_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRet)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRet)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_user(_this, n, byRet, GUILD_BATTLE__CPossibleBattleGuildListManagerSendErrorResult20_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_user(_this, n, byRace, GUILD_BATTLE__CPossibleBattleGuildListManagerSendFirst22_next);
             };
-            char GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace, char byPage, unsigned int dwVer)
+            static char GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this, int n, char byRace, char byPage, unsigned int dwVer)
             {
                return GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_user(_this, n, byRace, byPage, dwVer, GUILD_BATTLE__CPossibleBattleGuildListManagerSendInfo24_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerUpdateGuildList26_next);
             };
-            void GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
+            static void GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_wrapper(struct GUILD_BATTLE::CPossibleBattleGuildListManager* _this)
             {
                GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_user(_this, GUILD_BATTLE__CPossibleBattleGuildListManagerdtor_CPossibleBattleGuildListManager30_next);
             };
             
-            hook_record CPossibleBattleGuildListManager_functions[] = {
+            static hook_record CPossibleBattleGuildListManager_functions[] = {
             {   (LPVOID)0x1403c9530L,
                 (LPVOID *)&GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_user,
                 (LPVOID *)&GUILD_BATTLE__CPossibleBattleGuildListManagerctor_CPossibleBattleGuildListManager2_next,
@@ -170,6 +170,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

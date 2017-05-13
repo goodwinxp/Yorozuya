@@ -8,675 +8,675 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGameObjectAlterSec2_ptr CGameObjectAlterSec2_next(nullptr);
-        info::CGameObjectAlterSec2_clbk CGameObjectAlterSec2_user(nullptr);
-        info::CGameObjectAttackableHeight4_ptr CGameObjectAttackableHeight4_next(nullptr);
-        info::CGameObjectAttackableHeight4_clbk CGameObjectAttackableHeight4_user(nullptr);
-        info::CGameObjectBeTargeted6_ptr CGameObjectBeTargeted6_next(nullptr);
-        info::CGameObjectBeTargeted6_clbk CGameObjectBeTargeted6_user(nullptr);
-        info::CGameObjectctor_CGameObject8_ptr CGameObjectctor_CGameObject8_next(nullptr);
-        info::CGameObjectctor_CGameObject8_clbk CGameObjectctor_CGameObject8_user(nullptr);
-        info::CGameObjectCalcAbsPos10_ptr CGameObjectCalcAbsPos10_next(nullptr);
-        info::CGameObjectCalcAbsPos10_clbk CGameObjectCalcAbsPos10_user(nullptr);
-        info::CGameObjectCalcCirclePlayerNum12_ptr CGameObjectCalcCirclePlayerNum12_next(nullptr);
-        info::CGameObjectCalcCirclePlayerNum12_clbk CGameObjectCalcCirclePlayerNum12_user(nullptr);
-        info::CGameObjectCalcCirclePlayerNum14_ptr CGameObjectCalcCirclePlayerNum14_next(nullptr);
-        info::CGameObjectCalcCirclePlayerNum14_clbk CGameObjectCalcCirclePlayerNum14_user(nullptr);
-        info::CGameObjectCalcCurHPRate16_ptr CGameObjectCalcCurHPRate16_next(nullptr);
-        info::CGameObjectCalcCurHPRate16_clbk CGameObjectCalcCurHPRate16_user(nullptr);
-        info::CGameObjectCalcScrExtendPoint18_ptr CGameObjectCalcScrExtendPoint18_next(nullptr);
-        info::CGameObjectCalcScrExtendPoint18_clbk CGameObjectCalcScrExtendPoint18_user(nullptr);
-        info::CGameObjectCalcScrNormalPoint20_ptr CGameObjectCalcScrNormalPoint20_next(nullptr);
-        info::CGameObjectCalcScrNormalPoint20_clbk CGameObjectCalcScrNormalPoint20_user(nullptr);
-        info::CGameObjectCalcSecIndex22_ptr CGameObjectCalcSecIndex22_next(nullptr);
-        info::CGameObjectCalcSecIndex22_clbk CGameObjectCalcSecIndex22_user(nullptr);
-        info::CGameObjectCircleReport24_ptr CGameObjectCircleReport24_next(nullptr);
-        info::CGameObjectCircleReport24_clbk CGameObjectCircleReport24_user(nullptr);
-        info::CGameObjectCircleReport26_ptr CGameObjectCircleReport26_next(nullptr);
-        info::CGameObjectCircleReport26_clbk CGameObjectCircleReport26_user(nullptr);
-        info::CGameObjectCreate28_ptr CGameObjectCreate28_next(nullptr);
-        info::CGameObjectCreate28_clbk CGameObjectCreate28_user(nullptr);
-        info::CGameObjectDestroy30_ptr CGameObjectDestroy30_next(nullptr);
-        info::CGameObjectDestroy30_clbk CGameObjectDestroy30_user(nullptr);
-        info::CGameObjectFixTargetWhile32_ptr CGameObjectFixTargetWhile32_next(nullptr);
-        info::CGameObjectFixTargetWhile32_clbk CGameObjectFixTargetWhile32_user(nullptr);
-        info::CGameObjectGetAttackDP34_ptr CGameObjectGetAttackDP34_next(nullptr);
-        info::CGameObjectGetAttackDP34_clbk CGameObjectGetAttackDP34_user(nullptr);
-        info::CGameObjectGetAttackLevel36_ptr CGameObjectGetAttackLevel36_next(nullptr);
-        info::CGameObjectGetAttackLevel36_clbk CGameObjectGetAttackLevel36_user(nullptr);
-        info::CGameObjectGetAttackRange38_ptr CGameObjectGetAttackRange38_next(nullptr);
-        info::CGameObjectGetAttackRange38_clbk CGameObjectGetAttackRange38_user(nullptr);
-        info::CGameObjectGetAvoidRate40_ptr CGameObjectGetAvoidRate40_next(nullptr);
-        info::CGameObjectGetAvoidRate40_clbk CGameObjectGetAvoidRate40_user(nullptr);
-        info::CGameObjectGetCurSecNum42_ptr CGameObjectGetCurSecNum42_next(nullptr);
-        info::CGameObjectGetCurSecNum42_clbk CGameObjectGetCurSecNum42_user(nullptr);
-        info::CGameObjectGetDefFC44_ptr CGameObjectGetDefFC44_next(nullptr);
-        info::CGameObjectGetDefFC44_clbk CGameObjectGetDefFC44_user(nullptr);
-        info::CGameObjectGetDefFacing46_ptr CGameObjectGetDefFacing46_next(nullptr);
-        info::CGameObjectGetDefFacing46_clbk CGameObjectGetDefFacing46_user(nullptr);
-        info::CGameObjectGetDefGap48_ptr CGameObjectGetDefGap48_next(nullptr);
-        info::CGameObjectGetDefGap48_clbk CGameObjectGetDefGap48_user(nullptr);
-        info::CGameObjectGetDefSkill50_ptr CGameObjectGetDefSkill50_next(nullptr);
-        info::CGameObjectGetDefSkill50_clbk CGameObjectGetDefSkill50_user(nullptr);
-        info::CGameObjectGetFireTol52_ptr CGameObjectGetFireTol52_next(nullptr);
-        info::CGameObjectGetFireTol52_clbk CGameObjectGetFireTol52_user(nullptr);
-        info::CGameObjectGetGenAttackProb54_ptr CGameObjectGetGenAttackProb54_next(nullptr);
-        info::CGameObjectGetGenAttackProb54_clbk CGameObjectGetGenAttackProb54_user(nullptr);
-        info::CGameObjectGetHP56_ptr CGameObjectGetHP56_next(nullptr);
-        info::CGameObjectGetHP56_clbk CGameObjectGetHP56_user(nullptr);
-        info::CGameObjectGetLevel58_ptr CGameObjectGetLevel58_next(nullptr);
-        info::CGameObjectGetLevel58_clbk CGameObjectGetLevel58_user(nullptr);
-        info::CGameObjectGetMaxHP60_ptr CGameObjectGetMaxHP60_next(nullptr);
-        info::CGameObjectGetMaxHP60_clbk CGameObjectGetMaxHP60_user(nullptr);
-        info::CGameObjectGetObjName62_ptr CGameObjectGetObjName62_next(nullptr);
-        info::CGameObjectGetObjName62_clbk CGameObjectGetObjName62_user(nullptr);
-        info::CGameObjectGetObjRace64_ptr CGameObjectGetObjRace64_next(nullptr);
-        info::CGameObjectGetObjRace64_clbk CGameObjectGetObjRace64_user(nullptr);
-        info::CGameObjectGetSoilTol66_ptr CGameObjectGetSoilTol66_next(nullptr);
-        info::CGameObjectGetSoilTol66_clbk CGameObjectGetSoilTol66_user(nullptr);
-        info::CGameObjectGetStun68_ptr CGameObjectGetStun68_next(nullptr);
-        info::CGameObjectGetStun68_clbk CGameObjectGetStun68_user(nullptr);
-        info::CGameObjectGetUseSectorRange70_ptr CGameObjectGetUseSectorRange70_next(nullptr);
-        info::CGameObjectGetUseSectorRange70_clbk CGameObjectGetUseSectorRange70_user(nullptr);
-        info::CGameObjectGetWaterTol72_ptr CGameObjectGetWaterTol72_next(nullptr);
-        info::CGameObjectGetWaterTol72_clbk CGameObjectGetWaterTol72_user(nullptr);
-        info::CGameObjectGetWeaponAdjust74_ptr CGameObjectGetWeaponAdjust74_next(nullptr);
-        info::CGameObjectGetWeaponAdjust74_clbk CGameObjectGetWeaponAdjust74_user(nullptr);
-        info::CGameObjectGetWeaponClass76_ptr CGameObjectGetWeaponClass76_next(nullptr);
-        info::CGameObjectGetWeaponClass76_clbk CGameObjectGetWeaponClass76_user(nullptr);
-        info::CGameObjectGetWidth78_ptr CGameObjectGetWidth78_next(nullptr);
-        info::CGameObjectGetWidth78_clbk CGameObjectGetWidth78_user(nullptr);
-        info::CGameObjectGetWindTol80_ptr CGameObjectGetWindTol80_next(nullptr);
-        info::CGameObjectGetWindTol80_clbk CGameObjectGetWindTol80_user(nullptr);
-        info::CGameObjectInit82_ptr CGameObjectInit82_next(nullptr);
-        info::CGameObjectInit82_clbk CGameObjectInit82_user(nullptr);
-        info::CGameObjectIsAttackableInTown84_ptr CGameObjectIsAttackableInTown84_next(nullptr);
-        info::CGameObjectIsAttackableInTown84_clbk CGameObjectIsAttackableInTown84_user(nullptr);
-        info::CGameObjectIsBeAttackedAble86_ptr CGameObjectIsBeAttackedAble86_next(nullptr);
-        info::CGameObjectIsBeAttackedAble86_clbk CGameObjectIsBeAttackedAble86_user(nullptr);
-        info::CGameObjectIsBeCirclePlayer88_ptr CGameObjectIsBeCirclePlayer88_next(nullptr);
-        info::CGameObjectIsBeCirclePlayer88_clbk CGameObjectIsBeCirclePlayer88_user(nullptr);
-        info::CGameObjectIsBeDamagedAble90_ptr CGameObjectIsBeDamagedAble90_next(nullptr);
-        info::CGameObjectIsBeDamagedAble90_clbk CGameObjectIsBeDamagedAble90_user(nullptr);
-        info::CGameObjectIsCircleObject92_ptr CGameObjectIsCircleObject92_next(nullptr);
-        info::CGameObjectIsCircleObject92_clbk CGameObjectIsCircleObject92_user(nullptr);
-        info::CGameObjectIsInTown94_ptr CGameObjectIsInTown94_next(nullptr);
-        info::CGameObjectIsInTown94_clbk CGameObjectIsInTown94_user(nullptr);
-        info::CGameObjectIsRecvableContEffect96_ptr CGameObjectIsRecvableContEffect96_next(nullptr);
-        info::CGameObjectIsRecvableContEffect96_clbk CGameObjectIsRecvableContEffect96_user(nullptr);
-        info::CGameObjectIsRewardExp98_ptr CGameObjectIsRewardExp98_next(nullptr);
-        info::CGameObjectIsRewardExp98_clbk CGameObjectIsRewardExp98_user(nullptr);
-        info::CGameObjectIs_Battle_Mode100_ptr CGameObjectIs_Battle_Mode100_next(nullptr);
-        info::CGameObjectIs_Battle_Mode100_clbk CGameObjectIs_Battle_Mode100_user(nullptr);
-        info::CGameObjectLoop102_ptr CGameObjectLoop102_next(nullptr);
-        info::CGameObjectLoop102_clbk CGameObjectLoop102_user(nullptr);
-        info::CGameObjectOnLoop104_ptr CGameObjectOnLoop104_next(nullptr);
-        info::CGameObjectOnLoop104_clbk CGameObjectOnLoop104_user(nullptr);
-        info::CGameObjectOutOfSec106_ptr CGameObjectOutOfSec106_next(nullptr);
-        info::CGameObjectOutOfSec106_clbk CGameObjectOutOfSec106_user(nullptr);
-        info::CGameObjectRecvKillMessage108_ptr CGameObjectRecvKillMessage108_next(nullptr);
-        info::CGameObjectRecvKillMessage108_clbk CGameObjectRecvKillMessage108_user(nullptr);
-        info::CGameObjectRerangeSecIndex110_ptr CGameObjectRerangeSecIndex110_next(nullptr);
-        info::CGameObjectRerangeSecIndex110_clbk CGameObjectRerangeSecIndex110_user(nullptr);
-        info::CGameObjectResetSector112_ptr CGameObjectResetSector112_next(nullptr);
-        info::CGameObjectResetSector112_clbk CGameObjectResetSector112_user(nullptr);
-        info::CGameObjectRobbedHP114_ptr CGameObjectRobbedHP114_next(nullptr);
-        info::CGameObjectRobbedHP114_clbk CGameObjectRobbedHP114_user(nullptr);
-        info::CGameObjectSFContDelMessage116_ptr CGameObjectSFContDelMessage116_next(nullptr);
-        info::CGameObjectSFContDelMessage116_clbk CGameObjectSFContDelMessage116_user(nullptr);
-        info::CGameObjectSFContInsertMessage118_ptr CGameObjectSFContInsertMessage118_next(nullptr);
-        info::CGameObjectSFContInsertMessage118_clbk CGameObjectSFContInsertMessage118_user(nullptr);
-        info::CGameObjectSFContUpdateTimeMessage120_ptr CGameObjectSFContUpdateTimeMessage120_next(nullptr);
-        info::CGameObjectSFContUpdateTimeMessage120_clbk CGameObjectSFContUpdateTimeMessage120_user(nullptr);
-        info::CGameObjectSF_AllContDamageForceRemove_Once122_ptr CGameObjectSF_AllContDamageForceRemove_Once122_next(nullptr);
-        info::CGameObjectSF_AllContDamageForceRemove_Once122_clbk CGameObjectSF_AllContDamageForceRemove_Once122_user(nullptr);
-        info::CGameObjectSF_AllContHelpForceRemove_Once124_ptr CGameObjectSF_AllContHelpForceRemove_Once124_next(nullptr);
-        info::CGameObjectSF_AllContHelpForceRemove_Once124_clbk CGameObjectSF_AllContHelpForceRemove_Once124_user(nullptr);
-        info::CGameObjectSF_AllContHelpSkillRemove_Once126_ptr CGameObjectSF_AllContHelpSkillRemove_Once126_next(nullptr);
-        info::CGameObjectSF_AllContHelpSkillRemove_Once126_clbk CGameObjectSF_AllContHelpSkillRemove_Once126_user(nullptr);
-        info::CGameObjectSF_AttHPtoDstFP_Once128_ptr CGameObjectSF_AttHPtoDstFP_Once128_next(nullptr);
-        info::CGameObjectSF_AttHPtoDstFP_Once128_clbk CGameObjectSF_AttHPtoDstFP_Once128_user(nullptr);
-        info::CGameObjectSF_ContDamageTimeInc_Once130_ptr CGameObjectSF_ContDamageTimeInc_Once130_next(nullptr);
-        info::CGameObjectSF_ContDamageTimeInc_Once130_clbk CGameObjectSF_ContDamageTimeInc_Once130_user(nullptr);
-        info::CGameObjectSF_ContHelpTimeInc_Once132_ptr CGameObjectSF_ContHelpTimeInc_Once132_next(nullptr);
-        info::CGameObjectSF_ContHelpTimeInc_Once132_clbk CGameObjectSF_ContHelpTimeInc_Once132_user(nullptr);
-        info::CGameObjectSF_ConvertMonsterTarget134_ptr CGameObjectSF_ConvertMonsterTarget134_next(nullptr);
-        info::CGameObjectSF_ConvertMonsterTarget134_clbk CGameObjectSF_ConvertMonsterTarget134_user(nullptr);
-        info::CGameObjectSF_ConvertTargetDest136_ptr CGameObjectSF_ConvertTargetDest136_next(nullptr);
-        info::CGameObjectSF_ConvertTargetDest136_clbk CGameObjectSF_ConvertTargetDest136_user(nullptr);
-        info::CGameObjectSF_DamageAndStun138_ptr CGameObjectSF_DamageAndStun138_next(nullptr);
-        info::CGameObjectSF_DamageAndStun138_clbk CGameObjectSF_DamageAndStun138_user(nullptr);
-        info::CGameObjectSF_FPDec140_ptr CGameObjectSF_FPDec140_next(nullptr);
-        info::CGameObjectSF_FPDec140_clbk CGameObjectSF_FPDec140_user(nullptr);
-        info::CGameObjectSF_HPInc_Once142_ptr CGameObjectSF_HPInc_Once142_next(nullptr);
-        info::CGameObjectSF_HPInc_Once142_clbk CGameObjectSF_HPInc_Once142_user(nullptr);
-        info::CGameObjectSF_IncHPCircleParty144_ptr CGameObjectSF_IncHPCircleParty144_next(nullptr);
-        info::CGameObjectSF_IncHPCircleParty144_clbk CGameObjectSF_IncHPCircleParty144_user(nullptr);
-        info::CGameObjectSF_IncreaseDP146_ptr CGameObjectSF_IncreaseDP146_next(nullptr);
-        info::CGameObjectSF_IncreaseDP146_clbk CGameObjectSF_IncreaseDP146_user(nullptr);
-        info::CGameObjectSF_LateContDamageRemove_Once148_ptr CGameObjectSF_LateContDamageRemove_Once148_next(nullptr);
-        info::CGameObjectSF_LateContDamageRemove_Once148_clbk CGameObjectSF_LateContDamageRemove_Once148_user(nullptr);
-        info::CGameObjectSF_LateContHelpForceRemove_Once150_ptr CGameObjectSF_LateContHelpForceRemove_Once150_next(nullptr);
-        info::CGameObjectSF_LateContHelpForceRemove_Once150_clbk CGameObjectSF_LateContHelpForceRemove_Once150_user(nullptr);
-        info::CGameObjectSF_LateContHelpSkillRemove_Once152_ptr CGameObjectSF_LateContHelpSkillRemove_Once152_next(nullptr);
-        info::CGameObjectSF_LateContHelpSkillRemove_Once152_clbk CGameObjectSF_LateContHelpSkillRemove_Once152_user(nullptr);
-        info::CGameObjectSF_MakePortalReturnBindPositionPartyMember154_ptr CGameObjectSF_MakePortalReturnBindPositionPartyMember154_next(nullptr);
-        info::CGameObjectSF_MakePortalReturnBindPositionPartyMember154_clbk CGameObjectSF_MakePortalReturnBindPositionPartyMember154_user(nullptr);
-        info::CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_ptr CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_next(nullptr);
-        info::CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_clbk CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_user(nullptr);
-        info::CGameObjectSF_OthersContHelpSFRemove_Once158_ptr CGameObjectSF_OthersContHelpSFRemove_Once158_next(nullptr);
-        info::CGameObjectSF_OthersContHelpSFRemove_Once158_clbk CGameObjectSF_OthersContHelpSFRemove_Once158_user(nullptr);
-        info::CGameObjectSF_OverHealing_Once160_ptr CGameObjectSF_OverHealing_Once160_next(nullptr);
-        info::CGameObjectSF_OverHealing_Once160_clbk CGameObjectSF_OverHealing_Once160_user(nullptr);
-        info::CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_ptr CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_next(nullptr);
-        info::CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_clbk CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_user(nullptr);
-        info::CGameObjectSF_ReleaseMonsterTarget164_ptr CGameObjectSF_ReleaseMonsterTarget164_next(nullptr);
-        info::CGameObjectSF_ReleaseMonsterTarget164_clbk CGameObjectSF_ReleaseMonsterTarget164_user(nullptr);
-        info::CGameObjectSF_RemoveAllContHelp_Once166_ptr CGameObjectSF_RemoveAllContHelp_Once166_next(nullptr);
-        info::CGameObjectSF_RemoveAllContHelp_Once166_clbk CGameObjectSF_RemoveAllContHelp_Once166_user(nullptr);
-        info::CGameObjectSF_Resurrect_Once168_ptr CGameObjectSF_Resurrect_Once168_next(nullptr);
-        info::CGameObjectSF_Resurrect_Once168_clbk CGameObjectSF_Resurrect_Once168_user(nullptr);
-        info::CGameObjectSF_ReturnBindPosition170_ptr CGameObjectSF_ReturnBindPosition170_next(nullptr);
-        info::CGameObjectSF_ReturnBindPosition170_clbk CGameObjectSF_ReturnBindPosition170_user(nullptr);
-        info::CGameObjectSF_SPDec172_ptr CGameObjectSF_SPDec172_next(nullptr);
-        info::CGameObjectSF_SPDec172_clbk CGameObjectSF_SPDec172_user(nullptr);
-        info::CGameObjectSF_STInc_Once174_ptr CGameObjectSF_STInc_Once174_next(nullptr);
-        info::CGameObjectSF_STInc_Once174_clbk CGameObjectSF_STInc_Once174_user(nullptr);
-        info::CGameObjectSF_SelfDestruction176_ptr CGameObjectSF_SelfDestruction176_next(nullptr);
-        info::CGameObjectSF_SelfDestruction176_clbk CGameObjectSF_SelfDestruction176_user(nullptr);
-        info::CGameObjectSF_SkillContHelpTimeInc_Once178_ptr CGameObjectSF_SkillContHelpTimeInc_Once178_next(nullptr);
-        info::CGameObjectSF_SkillContHelpTimeInc_Once178_clbk CGameObjectSF_SkillContHelpTimeInc_Once178_user(nullptr);
-        info::CGameObjectSF_Stun180_ptr CGameObjectSF_Stun180_next(nullptr);
-        info::CGameObjectSF_Stun180_clbk CGameObjectSF_Stun180_user(nullptr);
-        info::CGameObjectSF_TeleportToDestination182_ptr CGameObjectSF_TeleportToDestination182_next(nullptr);
-        info::CGameObjectSF_TeleportToDestination182_clbk CGameObjectSF_TeleportToDestination182_user(nullptr);
-        info::CGameObjectSF_TransDestHP184_ptr CGameObjectSF_TransDestHP184_next(nullptr);
-        info::CGameObjectSF_TransDestHP184_clbk CGameObjectSF_TransDestHP184_user(nullptr);
-        info::CGameObjectSF_TransMonsterHP186_ptr CGameObjectSF_TransMonsterHP186_next(nullptr);
-        info::CGameObjectSF_TransMonsterHP186_clbk CGameObjectSF_TransMonsterHP186_user(nullptr);
-        info::CGameObjectSendMsg_BreakStop188_ptr CGameObjectSendMsg_BreakStop188_next(nullptr);
-        info::CGameObjectSendMsg_BreakStop188_clbk CGameObjectSendMsg_BreakStop188_user(nullptr);
-        info::CGameObjectSendMsg_FixPosition190_ptr CGameObjectSendMsg_FixPosition190_next(nullptr);
-        info::CGameObjectSendMsg_FixPosition190_clbk CGameObjectSendMsg_FixPosition190_user(nullptr);
-        info::CGameObjectSendMsg_RealFixPosition192_ptr CGameObjectSendMsg_RealFixPosition192_next(nullptr);
-        info::CGameObjectSendMsg_RealFixPosition192_clbk CGameObjectSendMsg_RealFixPosition192_user(nullptr);
-        info::CGameObjectSendMsg_RealMovePoint194_ptr CGameObjectSendMsg_RealMovePoint194_next(nullptr);
-        info::CGameObjectSendMsg_RealMovePoint194_clbk CGameObjectSendMsg_RealMovePoint194_user(nullptr);
-        info::CGameObjectSendMsg_SetHPInform196_ptr CGameObjectSendMsg_SetHPInform196_next(nullptr);
-        info::CGameObjectSendMsg_SetHPInform196_clbk CGameObjectSendMsg_SetHPInform196_user(nullptr);
-        info::CGameObjectSendMsg_StunInform198_ptr CGameObjectSendMsg_StunInform198_next(nullptr);
-        info::CGameObjectSendMsg_StunInform198_clbk CGameObjectSendMsg_StunInform198_user(nullptr);
-        info::CGameObjectSetAttackPart200_ptr CGameObjectSetAttackPart200_next(nullptr);
-        info::CGameObjectSetAttackPart200_clbk CGameObjectSetAttackPart200_user(nullptr);
-        info::CGameObjectSetBreakTranspar202_ptr CGameObjectSetBreakTranspar202_next(nullptr);
-        info::CGameObjectSetBreakTranspar202_clbk CGameObjectSetBreakTranspar202_user(nullptr);
-        info::CGameObjectSetCurBspMap204_ptr CGameObjectSetCurBspMap204_next(nullptr);
-        info::CGameObjectSetCurBspMap204_clbk CGameObjectSetCurBspMap204_user(nullptr);
-        info::CGameObjectSetCurPos206_ptr CGameObjectSetCurPos206_next(nullptr);
-        info::CGameObjectSetCurPos206_clbk CGameObjectSetCurPos206_user(nullptr);
-        info::CGameObjectSetCurSecNum208_ptr CGameObjectSetCurSecNum208_next(nullptr);
-        info::CGameObjectSetCurSecNum208_clbk CGameObjectSetCurSecNum208_user(nullptr);
-        info::CGameObjectSetDamage210_ptr CGameObjectSetDamage210_next(nullptr);
-        info::CGameObjectSetDamage210_clbk CGameObjectSetDamage210_user(nullptr);
-        info::CGameObjectSetHP212_ptr CGameObjectSetHP212_next(nullptr);
-        info::CGameObjectSetHP212_clbk CGameObjectSetHP212_user(nullptr);
-        info::CGameObjectSetMaxVersion214_ptr CGameObjectSetMaxVersion214_next(nullptr);
-        info::CGameObjectSetMaxVersion214_clbk CGameObjectSetMaxVersion214_user(nullptr);
-        info::CGameObjectSetStun216_ptr CGameObjectSetStun216_next(nullptr);
-        info::CGameObjectSetStun216_clbk CGameObjectSetStun216_user(nullptr);
-        info::CGameObjectUpdateSecList218_ptr CGameObjectUpdateSecList218_next(nullptr);
-        info::CGameObjectUpdateSecList218_clbk CGameObjectUpdateSecList218_user(nullptr);
-        info::CGameObject_ResetCirclePlayer220_ptr CGameObject_ResetCirclePlayer220_next(nullptr);
-        info::CGameObject_ResetCirclePlayer220_clbk CGameObject_ResetCirclePlayer220_user(nullptr);
-        info::CGameObjectdtor_CGameObject225_ptr CGameObjectdtor_CGameObject225_next(nullptr);
-        info::CGameObjectdtor_CGameObject225_clbk CGameObjectdtor_CGameObject225_user(nullptr);
+        static info::CGameObjectAlterSec2_ptr CGameObjectAlterSec2_next(nullptr);
+        static info::CGameObjectAlterSec2_clbk CGameObjectAlterSec2_user(nullptr);
+        static info::CGameObjectAttackableHeight4_ptr CGameObjectAttackableHeight4_next(nullptr);
+        static info::CGameObjectAttackableHeight4_clbk CGameObjectAttackableHeight4_user(nullptr);
+        static info::CGameObjectBeTargeted6_ptr CGameObjectBeTargeted6_next(nullptr);
+        static info::CGameObjectBeTargeted6_clbk CGameObjectBeTargeted6_user(nullptr);
+        static info::CGameObjectctor_CGameObject8_ptr CGameObjectctor_CGameObject8_next(nullptr);
+        static info::CGameObjectctor_CGameObject8_clbk CGameObjectctor_CGameObject8_user(nullptr);
+        static info::CGameObjectCalcAbsPos10_ptr CGameObjectCalcAbsPos10_next(nullptr);
+        static info::CGameObjectCalcAbsPos10_clbk CGameObjectCalcAbsPos10_user(nullptr);
+        static info::CGameObjectCalcCirclePlayerNum12_ptr CGameObjectCalcCirclePlayerNum12_next(nullptr);
+        static info::CGameObjectCalcCirclePlayerNum12_clbk CGameObjectCalcCirclePlayerNum12_user(nullptr);
+        static info::CGameObjectCalcCirclePlayerNum14_ptr CGameObjectCalcCirclePlayerNum14_next(nullptr);
+        static info::CGameObjectCalcCirclePlayerNum14_clbk CGameObjectCalcCirclePlayerNum14_user(nullptr);
+        static info::CGameObjectCalcCurHPRate16_ptr CGameObjectCalcCurHPRate16_next(nullptr);
+        static info::CGameObjectCalcCurHPRate16_clbk CGameObjectCalcCurHPRate16_user(nullptr);
+        static info::CGameObjectCalcScrExtendPoint18_ptr CGameObjectCalcScrExtendPoint18_next(nullptr);
+        static info::CGameObjectCalcScrExtendPoint18_clbk CGameObjectCalcScrExtendPoint18_user(nullptr);
+        static info::CGameObjectCalcScrNormalPoint20_ptr CGameObjectCalcScrNormalPoint20_next(nullptr);
+        static info::CGameObjectCalcScrNormalPoint20_clbk CGameObjectCalcScrNormalPoint20_user(nullptr);
+        static info::CGameObjectCalcSecIndex22_ptr CGameObjectCalcSecIndex22_next(nullptr);
+        static info::CGameObjectCalcSecIndex22_clbk CGameObjectCalcSecIndex22_user(nullptr);
+        static info::CGameObjectCircleReport24_ptr CGameObjectCircleReport24_next(nullptr);
+        static info::CGameObjectCircleReport24_clbk CGameObjectCircleReport24_user(nullptr);
+        static info::CGameObjectCircleReport26_ptr CGameObjectCircleReport26_next(nullptr);
+        static info::CGameObjectCircleReport26_clbk CGameObjectCircleReport26_user(nullptr);
+        static info::CGameObjectCreate28_ptr CGameObjectCreate28_next(nullptr);
+        static info::CGameObjectCreate28_clbk CGameObjectCreate28_user(nullptr);
+        static info::CGameObjectDestroy30_ptr CGameObjectDestroy30_next(nullptr);
+        static info::CGameObjectDestroy30_clbk CGameObjectDestroy30_user(nullptr);
+        static info::CGameObjectFixTargetWhile32_ptr CGameObjectFixTargetWhile32_next(nullptr);
+        static info::CGameObjectFixTargetWhile32_clbk CGameObjectFixTargetWhile32_user(nullptr);
+        static info::CGameObjectGetAttackDP34_ptr CGameObjectGetAttackDP34_next(nullptr);
+        static info::CGameObjectGetAttackDP34_clbk CGameObjectGetAttackDP34_user(nullptr);
+        static info::CGameObjectGetAttackLevel36_ptr CGameObjectGetAttackLevel36_next(nullptr);
+        static info::CGameObjectGetAttackLevel36_clbk CGameObjectGetAttackLevel36_user(nullptr);
+        static info::CGameObjectGetAttackRange38_ptr CGameObjectGetAttackRange38_next(nullptr);
+        static info::CGameObjectGetAttackRange38_clbk CGameObjectGetAttackRange38_user(nullptr);
+        static info::CGameObjectGetAvoidRate40_ptr CGameObjectGetAvoidRate40_next(nullptr);
+        static info::CGameObjectGetAvoidRate40_clbk CGameObjectGetAvoidRate40_user(nullptr);
+        static info::CGameObjectGetCurSecNum42_ptr CGameObjectGetCurSecNum42_next(nullptr);
+        static info::CGameObjectGetCurSecNum42_clbk CGameObjectGetCurSecNum42_user(nullptr);
+        static info::CGameObjectGetDefFC44_ptr CGameObjectGetDefFC44_next(nullptr);
+        static info::CGameObjectGetDefFC44_clbk CGameObjectGetDefFC44_user(nullptr);
+        static info::CGameObjectGetDefFacing46_ptr CGameObjectGetDefFacing46_next(nullptr);
+        static info::CGameObjectGetDefFacing46_clbk CGameObjectGetDefFacing46_user(nullptr);
+        static info::CGameObjectGetDefGap48_ptr CGameObjectGetDefGap48_next(nullptr);
+        static info::CGameObjectGetDefGap48_clbk CGameObjectGetDefGap48_user(nullptr);
+        static info::CGameObjectGetDefSkill50_ptr CGameObjectGetDefSkill50_next(nullptr);
+        static info::CGameObjectGetDefSkill50_clbk CGameObjectGetDefSkill50_user(nullptr);
+        static info::CGameObjectGetFireTol52_ptr CGameObjectGetFireTol52_next(nullptr);
+        static info::CGameObjectGetFireTol52_clbk CGameObjectGetFireTol52_user(nullptr);
+        static info::CGameObjectGetGenAttackProb54_ptr CGameObjectGetGenAttackProb54_next(nullptr);
+        static info::CGameObjectGetGenAttackProb54_clbk CGameObjectGetGenAttackProb54_user(nullptr);
+        static info::CGameObjectGetHP56_ptr CGameObjectGetHP56_next(nullptr);
+        static info::CGameObjectGetHP56_clbk CGameObjectGetHP56_user(nullptr);
+        static info::CGameObjectGetLevel58_ptr CGameObjectGetLevel58_next(nullptr);
+        static info::CGameObjectGetLevel58_clbk CGameObjectGetLevel58_user(nullptr);
+        static info::CGameObjectGetMaxHP60_ptr CGameObjectGetMaxHP60_next(nullptr);
+        static info::CGameObjectGetMaxHP60_clbk CGameObjectGetMaxHP60_user(nullptr);
+        static info::CGameObjectGetObjName62_ptr CGameObjectGetObjName62_next(nullptr);
+        static info::CGameObjectGetObjName62_clbk CGameObjectGetObjName62_user(nullptr);
+        static info::CGameObjectGetObjRace64_ptr CGameObjectGetObjRace64_next(nullptr);
+        static info::CGameObjectGetObjRace64_clbk CGameObjectGetObjRace64_user(nullptr);
+        static info::CGameObjectGetSoilTol66_ptr CGameObjectGetSoilTol66_next(nullptr);
+        static info::CGameObjectGetSoilTol66_clbk CGameObjectGetSoilTol66_user(nullptr);
+        static info::CGameObjectGetStun68_ptr CGameObjectGetStun68_next(nullptr);
+        static info::CGameObjectGetStun68_clbk CGameObjectGetStun68_user(nullptr);
+        static info::CGameObjectGetUseSectorRange70_ptr CGameObjectGetUseSectorRange70_next(nullptr);
+        static info::CGameObjectGetUseSectorRange70_clbk CGameObjectGetUseSectorRange70_user(nullptr);
+        static info::CGameObjectGetWaterTol72_ptr CGameObjectGetWaterTol72_next(nullptr);
+        static info::CGameObjectGetWaterTol72_clbk CGameObjectGetWaterTol72_user(nullptr);
+        static info::CGameObjectGetWeaponAdjust74_ptr CGameObjectGetWeaponAdjust74_next(nullptr);
+        static info::CGameObjectGetWeaponAdjust74_clbk CGameObjectGetWeaponAdjust74_user(nullptr);
+        static info::CGameObjectGetWeaponClass76_ptr CGameObjectGetWeaponClass76_next(nullptr);
+        static info::CGameObjectGetWeaponClass76_clbk CGameObjectGetWeaponClass76_user(nullptr);
+        static info::CGameObjectGetWidth78_ptr CGameObjectGetWidth78_next(nullptr);
+        static info::CGameObjectGetWidth78_clbk CGameObjectGetWidth78_user(nullptr);
+        static info::CGameObjectGetWindTol80_ptr CGameObjectGetWindTol80_next(nullptr);
+        static info::CGameObjectGetWindTol80_clbk CGameObjectGetWindTol80_user(nullptr);
+        static info::CGameObjectInit82_ptr CGameObjectInit82_next(nullptr);
+        static info::CGameObjectInit82_clbk CGameObjectInit82_user(nullptr);
+        static info::CGameObjectIsAttackableInTown84_ptr CGameObjectIsAttackableInTown84_next(nullptr);
+        static info::CGameObjectIsAttackableInTown84_clbk CGameObjectIsAttackableInTown84_user(nullptr);
+        static info::CGameObjectIsBeAttackedAble86_ptr CGameObjectIsBeAttackedAble86_next(nullptr);
+        static info::CGameObjectIsBeAttackedAble86_clbk CGameObjectIsBeAttackedAble86_user(nullptr);
+        static info::CGameObjectIsBeCirclePlayer88_ptr CGameObjectIsBeCirclePlayer88_next(nullptr);
+        static info::CGameObjectIsBeCirclePlayer88_clbk CGameObjectIsBeCirclePlayer88_user(nullptr);
+        static info::CGameObjectIsBeDamagedAble90_ptr CGameObjectIsBeDamagedAble90_next(nullptr);
+        static info::CGameObjectIsBeDamagedAble90_clbk CGameObjectIsBeDamagedAble90_user(nullptr);
+        static info::CGameObjectIsCircleObject92_ptr CGameObjectIsCircleObject92_next(nullptr);
+        static info::CGameObjectIsCircleObject92_clbk CGameObjectIsCircleObject92_user(nullptr);
+        static info::CGameObjectIsInTown94_ptr CGameObjectIsInTown94_next(nullptr);
+        static info::CGameObjectIsInTown94_clbk CGameObjectIsInTown94_user(nullptr);
+        static info::CGameObjectIsRecvableContEffect96_ptr CGameObjectIsRecvableContEffect96_next(nullptr);
+        static info::CGameObjectIsRecvableContEffect96_clbk CGameObjectIsRecvableContEffect96_user(nullptr);
+        static info::CGameObjectIsRewardExp98_ptr CGameObjectIsRewardExp98_next(nullptr);
+        static info::CGameObjectIsRewardExp98_clbk CGameObjectIsRewardExp98_user(nullptr);
+        static info::CGameObjectIs_Battle_Mode100_ptr CGameObjectIs_Battle_Mode100_next(nullptr);
+        static info::CGameObjectIs_Battle_Mode100_clbk CGameObjectIs_Battle_Mode100_user(nullptr);
+        static info::CGameObjectLoop102_ptr CGameObjectLoop102_next(nullptr);
+        static info::CGameObjectLoop102_clbk CGameObjectLoop102_user(nullptr);
+        static info::CGameObjectOnLoop104_ptr CGameObjectOnLoop104_next(nullptr);
+        static info::CGameObjectOnLoop104_clbk CGameObjectOnLoop104_user(nullptr);
+        static info::CGameObjectOutOfSec106_ptr CGameObjectOutOfSec106_next(nullptr);
+        static info::CGameObjectOutOfSec106_clbk CGameObjectOutOfSec106_user(nullptr);
+        static info::CGameObjectRecvKillMessage108_ptr CGameObjectRecvKillMessage108_next(nullptr);
+        static info::CGameObjectRecvKillMessage108_clbk CGameObjectRecvKillMessage108_user(nullptr);
+        static info::CGameObjectRerangeSecIndex110_ptr CGameObjectRerangeSecIndex110_next(nullptr);
+        static info::CGameObjectRerangeSecIndex110_clbk CGameObjectRerangeSecIndex110_user(nullptr);
+        static info::CGameObjectResetSector112_ptr CGameObjectResetSector112_next(nullptr);
+        static info::CGameObjectResetSector112_clbk CGameObjectResetSector112_user(nullptr);
+        static info::CGameObjectRobbedHP114_ptr CGameObjectRobbedHP114_next(nullptr);
+        static info::CGameObjectRobbedHP114_clbk CGameObjectRobbedHP114_user(nullptr);
+        static info::CGameObjectSFContDelMessage116_ptr CGameObjectSFContDelMessage116_next(nullptr);
+        static info::CGameObjectSFContDelMessage116_clbk CGameObjectSFContDelMessage116_user(nullptr);
+        static info::CGameObjectSFContInsertMessage118_ptr CGameObjectSFContInsertMessage118_next(nullptr);
+        static info::CGameObjectSFContInsertMessage118_clbk CGameObjectSFContInsertMessage118_user(nullptr);
+        static info::CGameObjectSFContUpdateTimeMessage120_ptr CGameObjectSFContUpdateTimeMessage120_next(nullptr);
+        static info::CGameObjectSFContUpdateTimeMessage120_clbk CGameObjectSFContUpdateTimeMessage120_user(nullptr);
+        static info::CGameObjectSF_AllContDamageForceRemove_Once122_ptr CGameObjectSF_AllContDamageForceRemove_Once122_next(nullptr);
+        static info::CGameObjectSF_AllContDamageForceRemove_Once122_clbk CGameObjectSF_AllContDamageForceRemove_Once122_user(nullptr);
+        static info::CGameObjectSF_AllContHelpForceRemove_Once124_ptr CGameObjectSF_AllContHelpForceRemove_Once124_next(nullptr);
+        static info::CGameObjectSF_AllContHelpForceRemove_Once124_clbk CGameObjectSF_AllContHelpForceRemove_Once124_user(nullptr);
+        static info::CGameObjectSF_AllContHelpSkillRemove_Once126_ptr CGameObjectSF_AllContHelpSkillRemove_Once126_next(nullptr);
+        static info::CGameObjectSF_AllContHelpSkillRemove_Once126_clbk CGameObjectSF_AllContHelpSkillRemove_Once126_user(nullptr);
+        static info::CGameObjectSF_AttHPtoDstFP_Once128_ptr CGameObjectSF_AttHPtoDstFP_Once128_next(nullptr);
+        static info::CGameObjectSF_AttHPtoDstFP_Once128_clbk CGameObjectSF_AttHPtoDstFP_Once128_user(nullptr);
+        static info::CGameObjectSF_ContDamageTimeInc_Once130_ptr CGameObjectSF_ContDamageTimeInc_Once130_next(nullptr);
+        static info::CGameObjectSF_ContDamageTimeInc_Once130_clbk CGameObjectSF_ContDamageTimeInc_Once130_user(nullptr);
+        static info::CGameObjectSF_ContHelpTimeInc_Once132_ptr CGameObjectSF_ContHelpTimeInc_Once132_next(nullptr);
+        static info::CGameObjectSF_ContHelpTimeInc_Once132_clbk CGameObjectSF_ContHelpTimeInc_Once132_user(nullptr);
+        static info::CGameObjectSF_ConvertMonsterTarget134_ptr CGameObjectSF_ConvertMonsterTarget134_next(nullptr);
+        static info::CGameObjectSF_ConvertMonsterTarget134_clbk CGameObjectSF_ConvertMonsterTarget134_user(nullptr);
+        static info::CGameObjectSF_ConvertTargetDest136_ptr CGameObjectSF_ConvertTargetDest136_next(nullptr);
+        static info::CGameObjectSF_ConvertTargetDest136_clbk CGameObjectSF_ConvertTargetDest136_user(nullptr);
+        static info::CGameObjectSF_DamageAndStun138_ptr CGameObjectSF_DamageAndStun138_next(nullptr);
+        static info::CGameObjectSF_DamageAndStun138_clbk CGameObjectSF_DamageAndStun138_user(nullptr);
+        static info::CGameObjectSF_FPDec140_ptr CGameObjectSF_FPDec140_next(nullptr);
+        static info::CGameObjectSF_FPDec140_clbk CGameObjectSF_FPDec140_user(nullptr);
+        static info::CGameObjectSF_HPInc_Once142_ptr CGameObjectSF_HPInc_Once142_next(nullptr);
+        static info::CGameObjectSF_HPInc_Once142_clbk CGameObjectSF_HPInc_Once142_user(nullptr);
+        static info::CGameObjectSF_IncHPCircleParty144_ptr CGameObjectSF_IncHPCircleParty144_next(nullptr);
+        static info::CGameObjectSF_IncHPCircleParty144_clbk CGameObjectSF_IncHPCircleParty144_user(nullptr);
+        static info::CGameObjectSF_IncreaseDP146_ptr CGameObjectSF_IncreaseDP146_next(nullptr);
+        static info::CGameObjectSF_IncreaseDP146_clbk CGameObjectSF_IncreaseDP146_user(nullptr);
+        static info::CGameObjectSF_LateContDamageRemove_Once148_ptr CGameObjectSF_LateContDamageRemove_Once148_next(nullptr);
+        static info::CGameObjectSF_LateContDamageRemove_Once148_clbk CGameObjectSF_LateContDamageRemove_Once148_user(nullptr);
+        static info::CGameObjectSF_LateContHelpForceRemove_Once150_ptr CGameObjectSF_LateContHelpForceRemove_Once150_next(nullptr);
+        static info::CGameObjectSF_LateContHelpForceRemove_Once150_clbk CGameObjectSF_LateContHelpForceRemove_Once150_user(nullptr);
+        static info::CGameObjectSF_LateContHelpSkillRemove_Once152_ptr CGameObjectSF_LateContHelpSkillRemove_Once152_next(nullptr);
+        static info::CGameObjectSF_LateContHelpSkillRemove_Once152_clbk CGameObjectSF_LateContHelpSkillRemove_Once152_user(nullptr);
+        static info::CGameObjectSF_MakePortalReturnBindPositionPartyMember154_ptr CGameObjectSF_MakePortalReturnBindPositionPartyMember154_next(nullptr);
+        static info::CGameObjectSF_MakePortalReturnBindPositionPartyMember154_clbk CGameObjectSF_MakePortalReturnBindPositionPartyMember154_user(nullptr);
+        static info::CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_ptr CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_next(nullptr);
+        static info::CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_clbk CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_user(nullptr);
+        static info::CGameObjectSF_OthersContHelpSFRemove_Once158_ptr CGameObjectSF_OthersContHelpSFRemove_Once158_next(nullptr);
+        static info::CGameObjectSF_OthersContHelpSFRemove_Once158_clbk CGameObjectSF_OthersContHelpSFRemove_Once158_user(nullptr);
+        static info::CGameObjectSF_OverHealing_Once160_ptr CGameObjectSF_OverHealing_Once160_next(nullptr);
+        static info::CGameObjectSF_OverHealing_Once160_clbk CGameObjectSF_OverHealing_Once160_user(nullptr);
+        static info::CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_ptr CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_next(nullptr);
+        static info::CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_clbk CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_user(nullptr);
+        static info::CGameObjectSF_ReleaseMonsterTarget164_ptr CGameObjectSF_ReleaseMonsterTarget164_next(nullptr);
+        static info::CGameObjectSF_ReleaseMonsterTarget164_clbk CGameObjectSF_ReleaseMonsterTarget164_user(nullptr);
+        static info::CGameObjectSF_RemoveAllContHelp_Once166_ptr CGameObjectSF_RemoveAllContHelp_Once166_next(nullptr);
+        static info::CGameObjectSF_RemoveAllContHelp_Once166_clbk CGameObjectSF_RemoveAllContHelp_Once166_user(nullptr);
+        static info::CGameObjectSF_Resurrect_Once168_ptr CGameObjectSF_Resurrect_Once168_next(nullptr);
+        static info::CGameObjectSF_Resurrect_Once168_clbk CGameObjectSF_Resurrect_Once168_user(nullptr);
+        static info::CGameObjectSF_ReturnBindPosition170_ptr CGameObjectSF_ReturnBindPosition170_next(nullptr);
+        static info::CGameObjectSF_ReturnBindPosition170_clbk CGameObjectSF_ReturnBindPosition170_user(nullptr);
+        static info::CGameObjectSF_SPDec172_ptr CGameObjectSF_SPDec172_next(nullptr);
+        static info::CGameObjectSF_SPDec172_clbk CGameObjectSF_SPDec172_user(nullptr);
+        static info::CGameObjectSF_STInc_Once174_ptr CGameObjectSF_STInc_Once174_next(nullptr);
+        static info::CGameObjectSF_STInc_Once174_clbk CGameObjectSF_STInc_Once174_user(nullptr);
+        static info::CGameObjectSF_SelfDestruction176_ptr CGameObjectSF_SelfDestruction176_next(nullptr);
+        static info::CGameObjectSF_SelfDestruction176_clbk CGameObjectSF_SelfDestruction176_user(nullptr);
+        static info::CGameObjectSF_SkillContHelpTimeInc_Once178_ptr CGameObjectSF_SkillContHelpTimeInc_Once178_next(nullptr);
+        static info::CGameObjectSF_SkillContHelpTimeInc_Once178_clbk CGameObjectSF_SkillContHelpTimeInc_Once178_user(nullptr);
+        static info::CGameObjectSF_Stun180_ptr CGameObjectSF_Stun180_next(nullptr);
+        static info::CGameObjectSF_Stun180_clbk CGameObjectSF_Stun180_user(nullptr);
+        static info::CGameObjectSF_TeleportToDestination182_ptr CGameObjectSF_TeleportToDestination182_next(nullptr);
+        static info::CGameObjectSF_TeleportToDestination182_clbk CGameObjectSF_TeleportToDestination182_user(nullptr);
+        static info::CGameObjectSF_TransDestHP184_ptr CGameObjectSF_TransDestHP184_next(nullptr);
+        static info::CGameObjectSF_TransDestHP184_clbk CGameObjectSF_TransDestHP184_user(nullptr);
+        static info::CGameObjectSF_TransMonsterHP186_ptr CGameObjectSF_TransMonsterHP186_next(nullptr);
+        static info::CGameObjectSF_TransMonsterHP186_clbk CGameObjectSF_TransMonsterHP186_user(nullptr);
+        static info::CGameObjectSendMsg_BreakStop188_ptr CGameObjectSendMsg_BreakStop188_next(nullptr);
+        static info::CGameObjectSendMsg_BreakStop188_clbk CGameObjectSendMsg_BreakStop188_user(nullptr);
+        static info::CGameObjectSendMsg_FixPosition190_ptr CGameObjectSendMsg_FixPosition190_next(nullptr);
+        static info::CGameObjectSendMsg_FixPosition190_clbk CGameObjectSendMsg_FixPosition190_user(nullptr);
+        static info::CGameObjectSendMsg_RealFixPosition192_ptr CGameObjectSendMsg_RealFixPosition192_next(nullptr);
+        static info::CGameObjectSendMsg_RealFixPosition192_clbk CGameObjectSendMsg_RealFixPosition192_user(nullptr);
+        static info::CGameObjectSendMsg_RealMovePoint194_ptr CGameObjectSendMsg_RealMovePoint194_next(nullptr);
+        static info::CGameObjectSendMsg_RealMovePoint194_clbk CGameObjectSendMsg_RealMovePoint194_user(nullptr);
+        static info::CGameObjectSendMsg_SetHPInform196_ptr CGameObjectSendMsg_SetHPInform196_next(nullptr);
+        static info::CGameObjectSendMsg_SetHPInform196_clbk CGameObjectSendMsg_SetHPInform196_user(nullptr);
+        static info::CGameObjectSendMsg_StunInform198_ptr CGameObjectSendMsg_StunInform198_next(nullptr);
+        static info::CGameObjectSendMsg_StunInform198_clbk CGameObjectSendMsg_StunInform198_user(nullptr);
+        static info::CGameObjectSetAttackPart200_ptr CGameObjectSetAttackPart200_next(nullptr);
+        static info::CGameObjectSetAttackPart200_clbk CGameObjectSetAttackPart200_user(nullptr);
+        static info::CGameObjectSetBreakTranspar202_ptr CGameObjectSetBreakTranspar202_next(nullptr);
+        static info::CGameObjectSetBreakTranspar202_clbk CGameObjectSetBreakTranspar202_user(nullptr);
+        static info::CGameObjectSetCurBspMap204_ptr CGameObjectSetCurBspMap204_next(nullptr);
+        static info::CGameObjectSetCurBspMap204_clbk CGameObjectSetCurBspMap204_user(nullptr);
+        static info::CGameObjectSetCurPos206_ptr CGameObjectSetCurPos206_next(nullptr);
+        static info::CGameObjectSetCurPos206_clbk CGameObjectSetCurPos206_user(nullptr);
+        static info::CGameObjectSetCurSecNum208_ptr CGameObjectSetCurSecNum208_next(nullptr);
+        static info::CGameObjectSetCurSecNum208_clbk CGameObjectSetCurSecNum208_user(nullptr);
+        static info::CGameObjectSetDamage210_ptr CGameObjectSetDamage210_next(nullptr);
+        static info::CGameObjectSetDamage210_clbk CGameObjectSetDamage210_user(nullptr);
+        static info::CGameObjectSetHP212_ptr CGameObjectSetHP212_next(nullptr);
+        static info::CGameObjectSetHP212_clbk CGameObjectSetHP212_user(nullptr);
+        static info::CGameObjectSetMaxVersion214_ptr CGameObjectSetMaxVersion214_next(nullptr);
+        static info::CGameObjectSetMaxVersion214_clbk CGameObjectSetMaxVersion214_user(nullptr);
+        static info::CGameObjectSetStun216_ptr CGameObjectSetStun216_next(nullptr);
+        static info::CGameObjectSetStun216_clbk CGameObjectSetStun216_user(nullptr);
+        static info::CGameObjectUpdateSecList218_ptr CGameObjectUpdateSecList218_next(nullptr);
+        static info::CGameObjectUpdateSecList218_clbk CGameObjectUpdateSecList218_user(nullptr);
+        static info::CGameObject_ResetCirclePlayer220_ptr CGameObject_ResetCirclePlayer220_next(nullptr);
+        static info::CGameObject_ResetCirclePlayer220_clbk CGameObject_ResetCirclePlayer220_user(nullptr);
+        static info::CGameObjectdtor_CGameObject225_ptr CGameObjectdtor_CGameObject225_next(nullptr);
+        static info::CGameObjectdtor_CGameObject225_clbk CGameObjectdtor_CGameObject225_user(nullptr);
         
-        void CGameObjectAlterSec2_wrapper(struct CGameObject* _this)
+        static void CGameObjectAlterSec2_wrapper(struct CGameObject* _this)
         {
            CGameObjectAlterSec2_user(_this, CGameObjectAlterSec2_next);
         };
-        int CGameObjectAttackableHeight4_wrapper(struct CGameObject* _this)
+        static int CGameObjectAttackableHeight4_wrapper(struct CGameObject* _this)
         {
            return CGameObjectAttackableHeight4_user(_this, CGameObjectAttackableHeight4_next);
         };
-        void CGameObjectBeTargeted6_wrapper(struct CGameObject* _this, struct CCharacter* pSeacher)
+        static void CGameObjectBeTargeted6_wrapper(struct CGameObject* _this, struct CCharacter* pSeacher)
         {
            CGameObjectBeTargeted6_user(_this, pSeacher, CGameObjectBeTargeted6_next);
         };
-        void CGameObjectctor_CGameObject8_wrapper(struct CGameObject* _this)
+        static void CGameObjectctor_CGameObject8_wrapper(struct CGameObject* _this)
         {
            CGameObjectctor_CGameObject8_user(_this, CGameObjectctor_CGameObject8_next);
         };
-        void CGameObjectCalcAbsPos10_wrapper(struct CGameObject* _this)
+        static void CGameObjectCalcAbsPos10_wrapper(struct CGameObject* _this)
         {
            CGameObjectCalcAbsPos10_user(_this, CGameObjectCalcAbsPos10_next);
         };
-        int CGameObjectCalcCirclePlayerNum12_wrapper(struct CGameObject* _this, int nRange)
+        static int CGameObjectCalcCirclePlayerNum12_wrapper(struct CGameObject* _this, int nRange)
         {
            return CGameObjectCalcCirclePlayerNum12_user(_this, nRange, CGameObjectCalcCirclePlayerNum12_next);
         };
-        int CGameObjectCalcCirclePlayerNum14_wrapper(struct CGameObject* _this, int nRange, bool (WINAPIV* fnComp)(struct CGameObject*))
+        static int CGameObjectCalcCirclePlayerNum14_wrapper(struct CGameObject* _this, int nRange, bool (WINAPIV* fnComp)(struct CGameObject*))
         {
            return CGameObjectCalcCirclePlayerNum14_user(_this, nRange, fnComp, CGameObjectCalcCirclePlayerNum14_next);
         };
-        uint16_t CGameObjectCalcCurHPRate16_wrapper(struct CGameObject* _this)
+        static uint16_t CGameObjectCalcCurHPRate16_wrapper(struct CGameObject* _this)
         {
            return CGameObjectCalcCurHPRate16_user(_this, CGameObjectCalcCurHPRate16_next);
         };
-        void CGameObjectCalcScrExtendPoint18_wrapper(struct CGameObject* _this, struct CRect* prcWnd, struct CRect* prcExtend)
+        static void CGameObjectCalcScrExtendPoint18_wrapper(struct CGameObject* _this, struct CRect* prcWnd, struct CRect* prcExtend)
         {
            CGameObjectCalcScrExtendPoint18_user(_this, prcWnd, prcExtend, CGameObjectCalcScrExtendPoint18_next);
         };
-        void CGameObjectCalcScrNormalPoint20_wrapper(struct CGameObject* _this, struct CRect* prcWnd)
+        static void CGameObjectCalcScrNormalPoint20_wrapper(struct CGameObject* _this, struct CRect* prcWnd)
         {
            CGameObjectCalcScrNormalPoint20_user(_this, prcWnd, CGameObjectCalcScrNormalPoint20_next);
         };
-        unsigned int CGameObjectCalcSecIndex22_wrapper(struct CGameObject* _this)
+        static unsigned int CGameObjectCalcSecIndex22_wrapper(struct CGameObject* _this)
         {
            return CGameObjectCalcSecIndex22_user(_this, CGameObjectCalcSecIndex22_next);
         };
-        void CGameObjectCircleReport24_wrapper(struct CGameObject* _this, char* pbyType, char* szMsg, int nMsgSize, bool bToOne)
+        static void CGameObjectCircleReport24_wrapper(struct CGameObject* _this, char* pbyType, char* szMsg, int nMsgSize, bool bToOne)
         {
            CGameObjectCircleReport24_user(_this, pbyType, szMsg, nMsgSize, bToOne, CGameObjectCircleReport24_next);
         };
-        void CGameObjectCircleReport26_wrapper(struct CGameObject* _this, char* pbyType, char* szMsg, int nMsgSize, unsigned int dwPassObjSerial, bool bToOne)
+        static void CGameObjectCircleReport26_wrapper(struct CGameObject* _this, char* pbyType, char* szMsg, int nMsgSize, unsigned int dwPassObjSerial, bool bToOne)
         {
            CGameObjectCircleReport26_user(_this, pbyType, szMsg, nMsgSize, dwPassObjSerial, bToOne, CGameObjectCircleReport26_next);
         };
-        bool CGameObjectCreate28_wrapper(struct CGameObject* _this, struct _object_create_setdata* pData)
+        static bool CGameObjectCreate28_wrapper(struct CGameObject* _this, struct _object_create_setdata* pData)
         {
            return CGameObjectCreate28_user(_this, pData, CGameObjectCreate28_next);
         };
-        bool CGameObjectDestroy30_wrapper(struct CGameObject* _this)
+        static bool CGameObjectDestroy30_wrapper(struct CGameObject* _this)
         {
            return CGameObjectDestroy30_user(_this, CGameObjectDestroy30_next);
         };
-        bool CGameObjectFixTargetWhile32_wrapper(struct CGameObject* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
+        static bool CGameObjectFixTargetWhile32_wrapper(struct CGameObject* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
         {
            return CGameObjectFixTargetWhile32_user(_this, pkTarget, dwMiliSecond, CGameObjectFixTargetWhile32_next);
         };
-        int CGameObjectGetAttackDP34_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetAttackDP34_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetAttackDP34_user(_this, CGameObjectGetAttackDP34_next);
         };
-        int CGameObjectGetAttackLevel36_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetAttackLevel36_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetAttackLevel36_user(_this, CGameObjectGetAttackLevel36_next);
         };
-        float CGameObjectGetAttackRange38_wrapper(struct CGameObject* _this)
+        static float CGameObjectGetAttackRange38_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetAttackRange38_user(_this, CGameObjectGetAttackRange38_next);
         };
-        int CGameObjectGetAvoidRate40_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetAvoidRate40_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetAvoidRate40_user(_this, CGameObjectGetAvoidRate40_next);
         };
-        unsigned int CGameObjectGetCurSecNum42_wrapper(struct CGameObject* _this)
+        static unsigned int CGameObjectGetCurSecNum42_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetCurSecNum42_user(_this, CGameObjectGetCurSecNum42_next);
         };
-        int CGameObjectGetDefFC44_wrapper(struct CGameObject* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CGameObjectGetDefFC44_wrapper(struct CGameObject* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CGameObjectGetDefFC44_user(_this, nAttactPart, pAttChar, pnConvertPart, CGameObjectGetDefFC44_next);
         };
-        float CGameObjectGetDefFacing46_wrapper(struct CGameObject* _this, int nPart)
+        static float CGameObjectGetDefFacing46_wrapper(struct CGameObject* _this, int nPart)
         {
            return CGameObjectGetDefFacing46_user(_this, nPart, CGameObjectGetDefFacing46_next);
         };
-        float CGameObjectGetDefGap48_wrapper(struct CGameObject* _this, int nPart)
+        static float CGameObjectGetDefGap48_wrapper(struct CGameObject* _this, int nPart)
         {
            return CGameObjectGetDefGap48_user(_this, nPart, CGameObjectGetDefGap48_next);
         };
-        int CGameObjectGetDefSkill50_wrapper(struct CGameObject* _this, bool bBackAttackDamage)
+        static int CGameObjectGetDefSkill50_wrapper(struct CGameObject* _this, bool bBackAttackDamage)
         {
            return CGameObjectGetDefSkill50_user(_this, bBackAttackDamage, CGameObjectGetDefSkill50_next);
         };
-        int CGameObjectGetFireTol52_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetFireTol52_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetFireTol52_user(_this, CGameObjectGetFireTol52_next);
         };
-        int CGameObjectGetGenAttackProb54_wrapper(struct CGameObject* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CGameObjectGetGenAttackProb54_wrapper(struct CGameObject* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CGameObjectGetGenAttackProb54_user(_this, pDst, nPart, bBackAttack, CGameObjectGetGenAttackProb54_next);
         };
-        int CGameObjectGetHP56_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetHP56_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetHP56_user(_this, CGameObjectGetHP56_next);
         };
-        int CGameObjectGetLevel58_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetLevel58_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetLevel58_user(_this, CGameObjectGetLevel58_next);
         };
-        int CGameObjectGetMaxHP60_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetMaxHP60_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetMaxHP60_user(_this, CGameObjectGetMaxHP60_next);
         };
-        char* CGameObjectGetObjName62_wrapper(struct CGameObject* _this)
+        static char* CGameObjectGetObjName62_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetObjName62_user(_this, CGameObjectGetObjName62_next);
         };
-        int CGameObjectGetObjRace64_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetObjRace64_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetObjRace64_user(_this, CGameObjectGetObjRace64_next);
         };
-        int CGameObjectGetSoilTol66_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetSoilTol66_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetSoilTol66_user(_this, CGameObjectGetSoilTol66_next);
         };
-        bool CGameObjectGetStun68_wrapper(struct CGameObject* _this)
+        static bool CGameObjectGetStun68_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetStun68_user(_this, CGameObjectGetStun68_next);
         };
-        int CGameObjectGetUseSectorRange70_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetUseSectorRange70_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetUseSectorRange70_user(_this, CGameObjectGetUseSectorRange70_next);
         };
-        int CGameObjectGetWaterTol72_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetWaterTol72_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetWaterTol72_user(_this, CGameObjectGetWaterTol72_next);
         };
-        float CGameObjectGetWeaponAdjust74_wrapper(struct CGameObject* _this)
+        static float CGameObjectGetWeaponAdjust74_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetWeaponAdjust74_user(_this, CGameObjectGetWeaponAdjust74_next);
         };
-        int CGameObjectGetWeaponClass76_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetWeaponClass76_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetWeaponClass76_user(_this, CGameObjectGetWeaponClass76_next);
         };
-        float CGameObjectGetWidth78_wrapper(struct CGameObject* _this)
+        static float CGameObjectGetWidth78_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetWidth78_user(_this, CGameObjectGetWidth78_next);
         };
-        int CGameObjectGetWindTol80_wrapper(struct CGameObject* _this)
+        static int CGameObjectGetWindTol80_wrapper(struct CGameObject* _this)
         {
            return CGameObjectGetWindTol80_user(_this, CGameObjectGetWindTol80_next);
         };
-        void CGameObjectInit82_wrapper(struct CGameObject* _this, struct _object_id* pID)
+        static void CGameObjectInit82_wrapper(struct CGameObject* _this, struct _object_id* pID)
         {
            CGameObjectInit82_user(_this, pID, CGameObjectInit82_next);
         };
-        bool CGameObjectIsAttackableInTown84_wrapper(struct CGameObject* _this)
+        static bool CGameObjectIsAttackableInTown84_wrapper(struct CGameObject* _this)
         {
            return CGameObjectIsAttackableInTown84_user(_this, CGameObjectIsAttackableInTown84_next);
         };
-        bool CGameObjectIsBeAttackedAble86_wrapper(struct CGameObject* _this, bool bFirst)
+        static bool CGameObjectIsBeAttackedAble86_wrapper(struct CGameObject* _this, bool bFirst)
         {
            return CGameObjectIsBeAttackedAble86_user(_this, bFirst, CGameObjectIsBeAttackedAble86_next);
         };
-        bool CGameObjectIsBeCirclePlayer88_wrapper(struct CGameObject* _this, int nRange)
+        static bool CGameObjectIsBeCirclePlayer88_wrapper(struct CGameObject* _this, int nRange)
         {
            return CGameObjectIsBeCirclePlayer88_user(_this, nRange, CGameObjectIsBeCirclePlayer88_next);
         };
-        bool CGameObjectIsBeDamagedAble90_wrapper(struct CGameObject* _this, struct CCharacter* pAtter)
+        static bool CGameObjectIsBeDamagedAble90_wrapper(struct CGameObject* _this, struct CCharacter* pAtter)
         {
            return CGameObjectIsBeDamagedAble90_user(_this, pAtter, CGameObjectIsBeDamagedAble90_next);
         };
-        bool CGameObjectIsCircleObject92_wrapper(struct CGameObject* _this, int nRange, struct CGameObject* pObject)
+        static bool CGameObjectIsCircleObject92_wrapper(struct CGameObject* _this, int nRange, struct CGameObject* pObject)
         {
            return CGameObjectIsCircleObject92_user(_this, nRange, pObject, CGameObjectIsCircleObject92_next);
         };
-        bool CGameObjectIsInTown94_wrapper(struct CGameObject* _this)
+        static bool CGameObjectIsInTown94_wrapper(struct CGameObject* _this)
         {
            return CGameObjectIsInTown94_user(_this, CGameObjectIsInTown94_next);
         };
-        bool CGameObjectIsRecvableContEffect96_wrapper(struct CGameObject* _this)
+        static bool CGameObjectIsRecvableContEffect96_wrapper(struct CGameObject* _this)
         {
            return CGameObjectIsRecvableContEffect96_user(_this, CGameObjectIsRecvableContEffect96_next);
         };
-        bool CGameObjectIsRewardExp98_wrapper(struct CGameObject* _this)
+        static bool CGameObjectIsRewardExp98_wrapper(struct CGameObject* _this)
         {
            return CGameObjectIsRewardExp98_user(_this, CGameObjectIsRewardExp98_next);
         };
-        bool CGameObjectIs_Battle_Mode100_wrapper(struct CGameObject* _this)
+        static bool CGameObjectIs_Battle_Mode100_wrapper(struct CGameObject* _this)
         {
            return CGameObjectIs_Battle_Mode100_user(_this, CGameObjectIs_Battle_Mode100_next);
         };
-        void CGameObjectLoop102_wrapper(struct CGameObject* _this)
+        static void CGameObjectLoop102_wrapper(struct CGameObject* _this)
         {
            CGameObjectLoop102_user(_this, CGameObjectLoop102_next);
         };
-        void CGameObjectOnLoop104_wrapper(struct CGameObject* _this)
+        static void CGameObjectOnLoop104_wrapper(struct CGameObject* _this)
         {
            CGameObjectOnLoop104_user(_this, CGameObjectOnLoop104_next);
         };
-        void CGameObjectOutOfSec106_wrapper(struct CGameObject* _this)
+        static void CGameObjectOutOfSec106_wrapper(struct CGameObject* _this)
         {
            CGameObjectOutOfSec106_user(_this, CGameObjectOutOfSec106_next);
         };
-        void CGameObjectRecvKillMessage108_wrapper(struct CGameObject* _this, struct CCharacter* pDier)
+        static void CGameObjectRecvKillMessage108_wrapper(struct CGameObject* _this, struct CCharacter* pDier)
         {
            CGameObjectRecvKillMessage108_user(_this, pDier, CGameObjectRecvKillMessage108_next);
         };
-        unsigned int CGameObjectRerangeSecIndex110_wrapper(struct CGameObject* _this, unsigned int dwOld, unsigned int dwNew)
+        static unsigned int CGameObjectRerangeSecIndex110_wrapper(struct CGameObject* _this, unsigned int dwOld, unsigned int dwNew)
         {
            return CGameObjectRerangeSecIndex110_user(_this, dwOld, dwNew, CGameObjectRerangeSecIndex110_next);
         };
-        void CGameObjectResetSector112_wrapper(struct CGameObject* _this, unsigned int dwOldSec, unsigned int dwNewSec)
+        static void CGameObjectResetSector112_wrapper(struct CGameObject* _this, unsigned int dwOldSec, unsigned int dwNewSec)
         {
            CGameObjectResetSector112_user(_this, dwOldSec, dwNewSec, CGameObjectResetSector112_next);
         };
-        bool CGameObjectRobbedHP114_wrapper(struct CGameObject* _this, struct CCharacter* pDst, int nDecHP)
+        static bool CGameObjectRobbedHP114_wrapper(struct CGameObject* _this, struct CCharacter* pDst, int nDecHP)
         {
            return CGameObjectRobbedHP114_user(_this, pDst, nDecHP, CGameObjectRobbedHP114_next);
         };
-        void CGameObjectSFContDelMessage116_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, bool bSend, bool bAura)
+        static void CGameObjectSFContDelMessage116_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, bool bSend, bool bAura)
         {
            CGameObjectSFContDelMessage116_user(_this, byContCode, byListIndex, bSend, bAura, CGameObjectSFContDelMessage116_next);
         };
-        void CGameObjectSFContInsertMessage118_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, bool bAura, struct CPlayer* pPlayerAct)
+        static void CGameObjectSFContInsertMessage118_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, bool bAura, struct CPlayer* pPlayerAct)
         {
            CGameObjectSFContInsertMessage118_user(_this, byContCode, byListIndex, bAura, pPlayerAct, CGameObjectSFContInsertMessage118_next);
         };
-        void CGameObjectSFContUpdateTimeMessage120_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, int nLeftTime)
+        static void CGameObjectSFContUpdateTimeMessage120_wrapper(struct CGameObject* _this, char byContCode, char byListIndex, int nLeftTime)
         {
            CGameObjectSFContUpdateTimeMessage120_user(_this, byContCode, byListIndex, nLeftTime, CGameObjectSFContUpdateTimeMessage120_next);
         };
-        bool CGameObjectSF_AllContDamageForceRemove_Once122_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_AllContDamageForceRemove_Once122_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_AllContDamageForceRemove_Once122_user(_this, pDstObj, CGameObjectSF_AllContDamageForceRemove_Once122_next);
         };
-        bool CGameObjectSF_AllContHelpForceRemove_Once124_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_AllContHelpForceRemove_Once124_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_AllContHelpForceRemove_Once124_user(_this, pDstObj, CGameObjectSF_AllContHelpForceRemove_Once124_next);
         };
-        bool CGameObjectSF_AllContHelpSkillRemove_Once126_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_AllContHelpSkillRemove_Once126_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_AllContHelpSkillRemove_Once126_user(_this, pDstObj, CGameObjectSF_AllContHelpSkillRemove_Once126_next);
         };
-        bool CGameObjectSF_AttHPtoDstFP_Once128_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_AttHPtoDstFP_Once128_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_AttHPtoDstFP_Once128_user(_this, pDstObj, fEffectValue, CGameObjectSF_AttHPtoDstFP_Once128_next);
         };
-        bool CGameObjectSF_ContDamageTimeInc_Once130_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ContDamageTimeInc_Once130_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ContDamageTimeInc_Once130_user(_this, pDstObj, fEffectValue, CGameObjectSF_ContDamageTimeInc_Once130_next);
         };
-        bool CGameObjectSF_ContHelpTimeInc_Once132_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ContHelpTimeInc_Once132_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ContHelpTimeInc_Once132_user(_this, pDstObj, fEffectValue, CGameObjectSF_ContHelpTimeInc_Once132_next);
         };
-        bool CGameObjectSF_ConvertMonsterTarget134_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ConvertMonsterTarget134_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ConvertMonsterTarget134_user(_this, pDstObj, fEffectValue, CGameObjectSF_ConvertMonsterTarget134_next);
         };
-        bool CGameObjectSF_ConvertTargetDest136_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ConvertTargetDest136_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ConvertTargetDest136_user(_this, pDstObj, fEffectValue, CGameObjectSF_ConvertTargetDest136_next);
         };
-        bool CGameObjectSF_DamageAndStun138_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_DamageAndStun138_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_DamageAndStun138_user(_this, pDstObj, fEffectValue, CGameObjectSF_DamageAndStun138_next);
         };
-        bool CGameObjectSF_FPDec140_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_FPDec140_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_FPDec140_user(_this, pDstObj, fEffectValue, CGameObjectSF_FPDec140_next);
         };
-        bool CGameObjectSF_HPInc_Once142_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_HPInc_Once142_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_HPInc_Once142_user(_this, pDstObj, fEffectValue, CGameObjectSF_HPInc_Once142_next);
         };
-        bool CGameObjectSF_IncHPCircleParty144_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_IncHPCircleParty144_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_IncHPCircleParty144_user(_this, pDstObj, fEffectValue, CGameObjectSF_IncHPCircleParty144_next);
         };
-        bool CGameObjectSF_IncreaseDP146_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_IncreaseDP146_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_IncreaseDP146_user(_this, pDstObj, fEffectValue, CGameObjectSF_IncreaseDP146_next);
         };
-        bool CGameObjectSF_LateContDamageRemove_Once148_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_LateContDamageRemove_Once148_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_LateContDamageRemove_Once148_user(_this, pDstObj, CGameObjectSF_LateContDamageRemove_Once148_next);
         };
-        bool CGameObjectSF_LateContHelpForceRemove_Once150_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_LateContHelpForceRemove_Once150_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_LateContHelpForceRemove_Once150_user(_this, pDstObj, CGameObjectSF_LateContHelpForceRemove_Once150_next);
         };
-        bool CGameObjectSF_LateContHelpSkillRemove_Once152_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_LateContHelpSkillRemove_Once152_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_LateContHelpSkillRemove_Once152_user(_this, pDstObj, CGameObjectSF_LateContHelpSkillRemove_Once152_next);
         };
-        bool CGameObjectSF_MakePortalReturnBindPositionPartyMember154_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
+        static bool CGameObjectSF_MakePortalReturnBindPositionPartyMember154_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
         {
            return CGameObjectSF_MakePortalReturnBindPositionPartyMember154_user(_this, pDstObj, fEffectValue, byRet, CGameObjectSF_MakePortalReturnBindPositionPartyMember154_next);
         };
-        bool CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_user(_this, pDstObj, fEffectValue, CGameObjectSF_MakeZeroAnimusRecallTimeOnce156_next);
         };
-        bool CGameObjectSF_OthersContHelpSFRemove_Once158_wrapper(struct CGameObject* _this, float fEffectValue)
+        static bool CGameObjectSF_OthersContHelpSFRemove_Once158_wrapper(struct CGameObject* _this, float fEffectValue)
         {
            return CGameObjectSF_OthersContHelpSFRemove_Once158_user(_this, fEffectValue, CGameObjectSF_OthersContHelpSFRemove_Once158_next);
         };
-        bool CGameObjectSF_OverHealing_Once160_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_OverHealing_Once160_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_OverHealing_Once160_user(_this, pDstObj, fEffectValue, CGameObjectSF_OverHealing_Once160_next);
         };
-        bool CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_user(_this, pDstObj, fEffectValue, CGameObjectSF_RecoverAllReturnStateAnimusHPFull162_next);
         };
-        bool CGameObjectSF_ReleaseMonsterTarget164_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ReleaseMonsterTarget164_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ReleaseMonsterTarget164_user(_this, pDstObj, fEffectValue, CGameObjectSF_ReleaseMonsterTarget164_next);
         };
-        bool CGameObjectSF_RemoveAllContHelp_Once166_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_RemoveAllContHelp_Once166_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_RemoveAllContHelp_Once166_user(_this, pDstObj, fEffectValue, CGameObjectSF_RemoveAllContHelp_Once166_next);
         };
-        bool CGameObjectSF_Resurrect_Once168_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
+        static bool CGameObjectSF_Resurrect_Once168_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj)
         {
            return CGameObjectSF_Resurrect_Once168_user(_this, pDstObj, CGameObjectSF_Resurrect_Once168_next);
         };
-        bool CGameObjectSF_ReturnBindPosition170_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_ReturnBindPosition170_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_ReturnBindPosition170_user(_this, pDstObj, fEffectValue, CGameObjectSF_ReturnBindPosition170_next);
         };
-        bool CGameObjectSF_SPDec172_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_SPDec172_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_SPDec172_user(_this, pDstObj, fEffectValue, CGameObjectSF_SPDec172_next);
         };
-        bool CGameObjectSF_STInc_Once174_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_STInc_Once174_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_STInc_Once174_user(_this, pDstObj, fEffectValue, CGameObjectSF_STInc_Once174_next);
         };
-        bool CGameObjectSF_SelfDestruction176_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_SelfDestruction176_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_SelfDestruction176_user(_this, pDstObj, fEffectValue, CGameObjectSF_SelfDestruction176_next);
         };
-        bool CGameObjectSF_SkillContHelpTimeInc_Once178_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_SkillContHelpTimeInc_Once178_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_SkillContHelpTimeInc_Once178_user(_this, pDstObj, fEffectValue, CGameObjectSF_SkillContHelpTimeInc_Once178_next);
         };
-        bool CGameObjectSF_Stun180_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_Stun180_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_Stun180_user(_this, pDstObj, fEffectValue, CGameObjectSF_Stun180_next);
         };
-        bool CGameObjectSF_TeleportToDestination182_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, bool bStone)
+        static bool CGameObjectSF_TeleportToDestination182_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, bool bStone)
         {
            return CGameObjectSF_TeleportToDestination182_user(_this, pDstObj, bStone, CGameObjectSF_TeleportToDestination182_next);
         };
-        bool CGameObjectSF_TransDestHP184_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
+        static bool CGameObjectSF_TransDestHP184_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
         {
            return CGameObjectSF_TransDestHP184_user(_this, pDstObj, fEffectValue, byRet, CGameObjectSF_TransDestHP184_next);
         };
-        bool CGameObjectSF_TransMonsterHP186_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CGameObjectSF_TransMonsterHP186_wrapper(struct CGameObject* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CGameObjectSF_TransMonsterHP186_user(_this, pDstObj, fEffectValue, CGameObjectSF_TransMonsterHP186_next);
         };
-        void CGameObjectSendMsg_BreakStop188_wrapper(struct CGameObject* _this)
+        static void CGameObjectSendMsg_BreakStop188_wrapper(struct CGameObject* _this)
         {
            CGameObjectSendMsg_BreakStop188_user(_this, CGameObjectSendMsg_BreakStop188_next);
         };
-        void CGameObjectSendMsg_FixPosition190_wrapper(struct CGameObject* _this, int n)
+        static void CGameObjectSendMsg_FixPosition190_wrapper(struct CGameObject* _this, int n)
         {
            CGameObjectSendMsg_FixPosition190_user(_this, n, CGameObjectSendMsg_FixPosition190_next);
         };
-        void CGameObjectSendMsg_RealFixPosition192_wrapper(struct CGameObject* _this, bool bCircle)
+        static void CGameObjectSendMsg_RealFixPosition192_wrapper(struct CGameObject* _this, bool bCircle)
         {
            CGameObjectSendMsg_RealFixPosition192_user(_this, bCircle, CGameObjectSendMsg_RealFixPosition192_next);
         };
-        void CGameObjectSendMsg_RealMovePoint194_wrapper(struct CGameObject* _this, int n)
+        static void CGameObjectSendMsg_RealMovePoint194_wrapper(struct CGameObject* _this, int n)
         {
            CGameObjectSendMsg_RealMovePoint194_user(_this, n, CGameObjectSendMsg_RealMovePoint194_next);
         };
-        void CGameObjectSendMsg_SetHPInform196_wrapper(struct CGameObject* _this)
+        static void CGameObjectSendMsg_SetHPInform196_wrapper(struct CGameObject* _this)
         {
            CGameObjectSendMsg_SetHPInform196_user(_this, CGameObjectSendMsg_SetHPInform196_next);
         };
-        void CGameObjectSendMsg_StunInform198_wrapper(struct CGameObject* _this)
+        static void CGameObjectSendMsg_StunInform198_wrapper(struct CGameObject* _this)
         {
            CGameObjectSendMsg_StunInform198_user(_this, CGameObjectSendMsg_StunInform198_next);
         };
-        void CGameObjectSetAttackPart200_wrapper(struct CGameObject* _this, int nAttactPart)
+        static void CGameObjectSetAttackPart200_wrapper(struct CGameObject* _this, int nAttactPart)
         {
            CGameObjectSetAttackPart200_user(_this, nAttactPart, CGameObjectSetAttackPart200_next);
         };
-        void CGameObjectSetBreakTranspar202_wrapper(struct CGameObject* _this, bool bBreak)
+        static void CGameObjectSetBreakTranspar202_wrapper(struct CGameObject* _this, bool bBreak)
         {
            CGameObjectSetBreakTranspar202_user(_this, bBreak, CGameObjectSetBreakTranspar202_next);
         };
-        bool CGameObjectSetCurBspMap204_wrapper(struct CGameObject* _this, struct CMapData* pMap)
+        static bool CGameObjectSetCurBspMap204_wrapper(struct CGameObject* _this, struct CMapData* pMap)
         {
            return CGameObjectSetCurBspMap204_user(_this, pMap, CGameObjectSetCurBspMap204_next);
         };
-        bool CGameObjectSetCurPos206_wrapper(struct CGameObject* _this, float* pPos)
+        static bool CGameObjectSetCurPos206_wrapper(struct CGameObject* _this, float* pPos)
         {
            return CGameObjectSetCurPos206_user(_this, pPos, CGameObjectSetCurPos206_next);
         };
-        void CGameObjectSetCurSecNum208_wrapper(struct CGameObject* _this, unsigned int dwNewSecNum)
+        static void CGameObjectSetCurSecNum208_wrapper(struct CGameObject* _this, unsigned int dwNewSecNum)
         {
            CGameObjectSetCurSecNum208_user(_this, dwNewSecNum, CGameObjectSetCurSecNum208_next);
         };
-        int CGameObjectSetDamage210_wrapper(struct CGameObject* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CGameObjectSetDamage210_wrapper(struct CGameObject* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CGameObjectSetDamage210_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CGameObjectSetDamage210_next);
         };
-        bool CGameObjectSetHP212_wrapper(struct CGameObject* _this, int nHP, bool bOver)
+        static bool CGameObjectSetHP212_wrapper(struct CGameObject* _this, int nHP, bool bOver)
         {
            return CGameObjectSetHP212_user(_this, nHP, bOver, CGameObjectSetHP212_next);
         };
-        void CGameObjectSetMaxVersion214_wrapper(struct CGameObject* _this)
+        static void CGameObjectSetMaxVersion214_wrapper(struct CGameObject* _this)
         {
            CGameObjectSetMaxVersion214_user(_this, CGameObjectSetMaxVersion214_next);
         };
-        void CGameObjectSetStun216_wrapper(struct CGameObject* _this, bool bStun)
+        static void CGameObjectSetStun216_wrapper(struct CGameObject* _this, bool bStun)
         {
            CGameObjectSetStun216_user(_this, bStun, CGameObjectSetStun216_next);
         };
-        bool CGameObjectUpdateSecList218_wrapper(struct CGameObject* _this)
+        static bool CGameObjectUpdateSecList218_wrapper(struct CGameObject* _this)
         {
            return CGameObjectUpdateSecList218_user(_this, CGameObjectUpdateSecList218_next);
         };
-        void CGameObject_ResetCirclePlayer220_wrapper(struct CGameObject* _this)
+        static void CGameObject_ResetCirclePlayer220_wrapper(struct CGameObject* _this)
         {
            CGameObject_ResetCirclePlayer220_user(_this, CGameObject_ResetCirclePlayer220_next);
         };
-        void CGameObjectdtor_CGameObject225_wrapper(struct CGameObject* _this)
+        static void CGameObjectdtor_CGameObject225_wrapper(struct CGameObject* _this)
         {
            CGameObjectdtor_CGameObject225_user(_this, CGameObjectdtor_CGameObject225_next);
         };
         
-        hook_record CGameObject_functions[] = {
+        static hook_record CGameObject_functions[] = {
         {   (LPVOID)0x14012c640L,
             (LPVOID *)&CGameObjectAlterSec2_user,
             (LPVOID *)&CGameObjectAlterSec2_next,
@@ -1235,5 +1235,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

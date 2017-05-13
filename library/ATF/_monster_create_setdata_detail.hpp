@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_monster_create_setdatactor__monster_create_setdata2_ptr _monster_create_setdatactor__monster_create_setdata2_next(nullptr);
-        info::_monster_create_setdatactor__monster_create_setdata2_clbk _monster_create_setdatactor__monster_create_setdata2_user(nullptr);
+        static info::_monster_create_setdatactor__monster_create_setdata2_ptr _monster_create_setdatactor__monster_create_setdata2_next(nullptr);
+        static info::_monster_create_setdatactor__monster_create_setdata2_clbk _monster_create_setdatactor__monster_create_setdata2_user(nullptr);
         
-        void _monster_create_setdatactor__monster_create_setdata2_wrapper(struct _monster_create_setdata* _this)
+        static void _monster_create_setdatactor__monster_create_setdata2_wrapper(struct _monster_create_setdata* _this)
         {
            _monster_create_setdatactor__monster_create_setdata2_user(_this, _monster_create_setdatactor__monster_create_setdata2_next);
         };
         
-        hook_record _monster_create_setdata_functions[] = {
+        static hook_record _monster_create_setdata_functions[] = {
         {   (LPVOID)0x14014c340L,
             (LPVOID *)&_monster_create_setdatactor__monster_create_setdata2_user,
             (LPVOID *)&_monster_create_setdatactor__monster_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

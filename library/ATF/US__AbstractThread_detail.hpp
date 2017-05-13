@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__AbstractThreadctor_AbstractThread2_ptr US__AbstractThreadctor_AbstractThread2_next(nullptr);
-            info::US__AbstractThreadctor_AbstractThread2_clbk US__AbstractThreadctor_AbstractThread2_user(nullptr);
-            info::US__AbstractThreaddtor_AbstractThread7_ptr US__AbstractThreaddtor_AbstractThread7_next(nullptr);
-            info::US__AbstractThreaddtor_AbstractThread7_clbk US__AbstractThreaddtor_AbstractThread7_user(nullptr);
+            static info::US__AbstractThreadctor_AbstractThread2_ptr US__AbstractThreadctor_AbstractThread2_next(nullptr);
+            static info::US__AbstractThreadctor_AbstractThread2_clbk US__AbstractThreadctor_AbstractThread2_user(nullptr);
+            static info::US__AbstractThreaddtor_AbstractThread7_ptr US__AbstractThreaddtor_AbstractThread7_next(nullptr);
+            static info::US__AbstractThreaddtor_AbstractThread7_clbk US__AbstractThreaddtor_AbstractThread7_user(nullptr);
             
-            void US__AbstractThreadctor_AbstractThread2_wrapper(struct US::AbstractThread* _this)
+            static void US__AbstractThreadctor_AbstractThread2_wrapper(struct US::AbstractThread* _this)
             {
                US__AbstractThreadctor_AbstractThread2_user(_this, US__AbstractThreadctor_AbstractThread2_next);
             };
-            void US__AbstractThreaddtor_AbstractThread7_wrapper(struct US::AbstractThread* _this)
+            static void US__AbstractThreaddtor_AbstractThread7_wrapper(struct US::AbstractThread* _this)
             {
                US__AbstractThreaddtor_AbstractThread7_user(_this, US__AbstractThreaddtor_AbstractThread7_next);
             };
             
-            hook_record AbstractThread_functions[] = {
+            static hook_record AbstractThread_functions[] = {
             {   (LPVOID)0x14041d660L,
                 (LPVOID *)&US__AbstractThreadctor_AbstractThread2_user,
                 (LPVOID *)&US__AbstractThreadctor_AbstractThread2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE

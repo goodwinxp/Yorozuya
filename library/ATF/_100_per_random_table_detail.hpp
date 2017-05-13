@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_100_per_random_tableGetRand2_ptr _100_per_random_tableGetRand2_next(nullptr);
-        info::_100_per_random_tableGetRand2_clbk _100_per_random_tableGetRand2_user(nullptr);
-        info::_100_per_random_tablector__100_per_random_table4_ptr _100_per_random_tablector__100_per_random_table4_next(nullptr);
-        info::_100_per_random_tablector__100_per_random_table4_clbk _100_per_random_tablector__100_per_random_table4_user(nullptr);
-        info::_100_per_random_tablereset6_ptr _100_per_random_tablereset6_next(nullptr);
-        info::_100_per_random_tablereset6_clbk _100_per_random_tablereset6_user(nullptr);
+        static info::_100_per_random_tableGetRand2_ptr _100_per_random_tableGetRand2_next(nullptr);
+        static info::_100_per_random_tableGetRand2_clbk _100_per_random_tableGetRand2_user(nullptr);
+        static info::_100_per_random_tablector__100_per_random_table4_ptr _100_per_random_tablector__100_per_random_table4_next(nullptr);
+        static info::_100_per_random_tablector__100_per_random_table4_clbk _100_per_random_tablector__100_per_random_table4_user(nullptr);
+        static info::_100_per_random_tablereset6_ptr _100_per_random_tablereset6_next(nullptr);
+        static info::_100_per_random_tablereset6_clbk _100_per_random_tablereset6_user(nullptr);
         
-        uint16_t _100_per_random_tableGetRand2_wrapper(struct _100_per_random_table* _this)
+        static uint16_t _100_per_random_tableGetRand2_wrapper(struct _100_per_random_table* _this)
         {
            return _100_per_random_tableGetRand2_user(_this, _100_per_random_tableGetRand2_next);
         };
-        void _100_per_random_tablector__100_per_random_table4_wrapper(struct _100_per_random_table* _this)
+        static void _100_per_random_tablector__100_per_random_table4_wrapper(struct _100_per_random_table* _this)
         {
            _100_per_random_tablector__100_per_random_table4_user(_this, _100_per_random_tablector__100_per_random_table4_next);
         };
-        void _100_per_random_tablereset6_wrapper(struct _100_per_random_table* _this)
+        static void _100_per_random_tablereset6_wrapper(struct _100_per_random_table* _this)
         {
            _100_per_random_tablereset6_user(_this, _100_per_random_tablereset6_next);
         };
         
-        hook_record _100_per_random_table_functions[] = {
+        static hook_record _100_per_random_table_functions[] = {
         {   (LPVOID)0x1400b81d0L,
             (LPVOID *)&_100_per_random_tableGetRand2_user,
             (LPVOID *)&_100_per_random_tableGetRand2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

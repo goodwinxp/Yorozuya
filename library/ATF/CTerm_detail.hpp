@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTermctor_CTerm2_ptr CTermctor_CTerm2_next(nullptr);
-        info::CTermctor_CTerm2_clbk CTermctor_CTerm2_user(nullptr);
-        info::CTermGetTerm4_ptr CTermGetTerm4_next(nullptr);
-        info::CTermGetTerm4_clbk CTermGetTerm4_user(nullptr);
+        static info::CTermctor_CTerm2_ptr CTermctor_CTerm2_next(nullptr);
+        static info::CTermctor_CTerm2_clbk CTermctor_CTerm2_user(nullptr);
+        static info::CTermGetTerm4_ptr CTermGetTerm4_next(nullptr);
+        static info::CTermGetTerm4_clbk CTermGetTerm4_user(nullptr);
         
-        void CTermctor_CTerm2_wrapper(struct CTerm* _this)
+        static void CTermctor_CTerm2_wrapper(struct CTerm* _this)
         {
            CTermctor_CTerm2_user(_this, CTermctor_CTerm2_next);
         };
-        unsigned int CTermGetTerm4_wrapper(struct CTerm* _this)
+        static unsigned int CTermGetTerm4_wrapper(struct CTerm* _this)
         {
            return CTermGetTerm4_user(_this, CTermGetTerm4_next);
         };
         
-        hook_record CTerm_functions[] = {
+        static hook_record CTerm_functions[] = {
         {   (LPVOID)0x1404390a0L,
             (LPVOID *)&CTermctor_CTerm2_user,
             (LPVOID *)&CTermctor_CTerm2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

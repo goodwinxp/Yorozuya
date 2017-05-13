@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_ptr CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_next(nullptr);
-        info::CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_clbk CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_user(nullptr);
-        info::CNationSettingFactoryGroupCreate4_ptr CNationSettingFactoryGroupCreate4_next(nullptr);
-        info::CNationSettingFactoryGroupCreate4_clbk CNationSettingFactoryGroupCreate4_user(nullptr);
-        info::CNationSettingFactoryGroupInit6_ptr CNationSettingFactoryGroupInit6_next(nullptr);
-        info::CNationSettingFactoryGroupInit6_clbk CNationSettingFactoryGroupInit6_user(nullptr);
-        info::CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_ptr CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_next(nullptr);
-        info::CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_clbk CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_user(nullptr);
+        static info::CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_ptr CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_next(nullptr);
+        static info::CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_clbk CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_user(nullptr);
+        static info::CNationSettingFactoryGroupCreate4_ptr CNationSettingFactoryGroupCreate4_next(nullptr);
+        static info::CNationSettingFactoryGroupCreate4_clbk CNationSettingFactoryGroupCreate4_user(nullptr);
+        static info::CNationSettingFactoryGroupInit6_ptr CNationSettingFactoryGroupInit6_next(nullptr);
+        static info::CNationSettingFactoryGroupInit6_clbk CNationSettingFactoryGroupInit6_user(nullptr);
+        static info::CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_ptr CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_next(nullptr);
+        static info::CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_clbk CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_user(nullptr);
         
-        void CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_wrapper(struct CNationSettingFactoryGroup* _this)
+        static void CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_wrapper(struct CNationSettingFactoryGroup* _this)
         {
            CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_user(_this, CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_next);
         };
-        struct CNationSettingData* CNationSettingFactoryGroupCreate4_wrapper(struct CNationSettingFactoryGroup* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
+        static struct CNationSettingData* CNationSettingFactoryGroupCreate4_wrapper(struct CNationSettingFactoryGroup* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
         {
            return CNationSettingFactoryGroupCreate4_user(_this, iNationCode, szNationCodeStr, bServiceMode, CNationSettingFactoryGroupCreate4_next);
         };
-        int CNationSettingFactoryGroupInit6_wrapper(struct CNationSettingFactoryGroup* _this)
+        static int CNationSettingFactoryGroupInit6_wrapper(struct CNationSettingFactoryGroup* _this)
         {
            return CNationSettingFactoryGroupInit6_user(_this, CNationSettingFactoryGroupInit6_next);
         };
-        void CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_wrapper(struct CNationSettingFactoryGroup* _this)
+        static void CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_wrapper(struct CNationSettingFactoryGroup* _this)
         {
            CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_user(_this, CNationSettingFactoryGroupdtor_CNationSettingFactoryGroup8_next);
         };
         
-        hook_record CNationSettingFactoryGroup_functions[] = {
+        static hook_record CNationSettingFactoryGroup_functions[] = {
         {   (LPVOID)0x140229810L,
             (LPVOID *)&CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_user,
             (LPVOID *)&CNationSettingFactoryGroupctor_CNationSettingFactoryGroup2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

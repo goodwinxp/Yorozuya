@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::qry_case_golden_box_itemctor_qry_case_golden_box_item2_ptr qry_case_golden_box_itemctor_qry_case_golden_box_item2_next(nullptr);
-        info::qry_case_golden_box_itemctor_qry_case_golden_box_item2_clbk qry_case_golden_box_itemctor_qry_case_golden_box_item2_user(nullptr);
-        info::qry_case_golden_box_itemsize4_ptr qry_case_golden_box_itemsize4_next(nullptr);
-        info::qry_case_golden_box_itemsize4_clbk qry_case_golden_box_itemsize4_user(nullptr);
+        static info::qry_case_golden_box_itemctor_qry_case_golden_box_item2_ptr qry_case_golden_box_itemctor_qry_case_golden_box_item2_next(nullptr);
+        static info::qry_case_golden_box_itemctor_qry_case_golden_box_item2_clbk qry_case_golden_box_itemctor_qry_case_golden_box_item2_user(nullptr);
+        static info::qry_case_golden_box_itemsize4_ptr qry_case_golden_box_itemsize4_next(nullptr);
+        static info::qry_case_golden_box_itemsize4_clbk qry_case_golden_box_itemsize4_user(nullptr);
         
-        void qry_case_golden_box_itemctor_qry_case_golden_box_item2_wrapper(struct qry_case_golden_box_item* _this)
+        static void qry_case_golden_box_itemctor_qry_case_golden_box_item2_wrapper(struct qry_case_golden_box_item* _this)
         {
            qry_case_golden_box_itemctor_qry_case_golden_box_item2_user(_this, qry_case_golden_box_itemctor_qry_case_golden_box_item2_next);
         };
-        int qry_case_golden_box_itemsize4_wrapper(struct qry_case_golden_box_item* _this)
+        static int qry_case_golden_box_itemsize4_wrapper(struct qry_case_golden_box_item* _this)
         {
            return qry_case_golden_box_itemsize4_user(_this, qry_case_golden_box_itemsize4_next);
         };
         
-        hook_record qry_case_golden_box_item_functions[] = {
+        static hook_record qry_case_golden_box_item_functions[] = {
         {   (LPVOID)0x140416bc0L,
             (LPVOID *)&qry_case_golden_box_itemctor_qry_case_golden_box_item2_user,
             (LPVOID *)&qry_case_golden_box_itemctor_qry_case_golden_box_item2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

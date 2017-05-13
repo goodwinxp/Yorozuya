@@ -8,35 +8,35 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_ptr _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_next(nullptr);
-        info::_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_clbk _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_user(nullptr);
-        info::_personal_amine_mineore_zoclclear4_ptr _personal_amine_mineore_zoclclear4_next(nullptr);
-        info::_personal_amine_mineore_zoclclear4_clbk _personal_amine_mineore_zoclclear4_user(nullptr);
-        info::_personal_amine_mineore_zoclsize6_ptr _personal_amine_mineore_zoclsize6_next(nullptr);
-        info::_personal_amine_mineore_zoclsize6_clbk _personal_amine_mineore_zoclsize6_user(nullptr);
+        static info::_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_ptr _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_next(nullptr);
+        static info::_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_clbk _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_user(nullptr);
+        static info::_personal_amine_mineore_zoclclear4_ptr _personal_amine_mineore_zoclclear4_next(nullptr);
+        static info::_personal_amine_mineore_zoclclear4_clbk _personal_amine_mineore_zoclclear4_user(nullptr);
+        static info::_personal_amine_mineore_zoclsize6_ptr _personal_amine_mineore_zoclsize6_next(nullptr);
+        static info::_personal_amine_mineore_zoclsize6_clbk _personal_amine_mineore_zoclsize6_user(nullptr);
         
-        info::_personal_amine_mineore_zocl____changedctor___changed2_ptr _personal_amine_mineore_zocl____changedctor___changed2_next(nullptr);
-        info::_personal_amine_mineore_zocl____changedctor___changed2_clbk _personal_amine_mineore_zocl____changedctor___changed2_user(nullptr);
+        static info::_personal_amine_mineore_zocl____changedctor___changed2_ptr _personal_amine_mineore_zocl____changedctor___changed2_next(nullptr);
+        static info::_personal_amine_mineore_zocl____changedctor___changed2_clbk _personal_amine_mineore_zocl____changedctor___changed2_user(nullptr);
         
-        void _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_wrapper(struct _personal_amine_mineore_zocl* _this)
+        static void _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_wrapper(struct _personal_amine_mineore_zocl* _this)
         {
            _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_user(_this, _personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_next);
         };
-        void _personal_amine_mineore_zoclclear4_wrapper(struct _personal_amine_mineore_zocl* _this)
+        static void _personal_amine_mineore_zoclclear4_wrapper(struct _personal_amine_mineore_zocl* _this)
         {
            _personal_amine_mineore_zoclclear4_user(_this, _personal_amine_mineore_zoclclear4_next);
         };
-        int _personal_amine_mineore_zoclsize6_wrapper(struct _personal_amine_mineore_zocl* _this)
+        static int _personal_amine_mineore_zoclsize6_wrapper(struct _personal_amine_mineore_zocl* _this)
         {
            return _personal_amine_mineore_zoclsize6_user(_this, _personal_amine_mineore_zoclsize6_next);
         };
         
-        void _personal_amine_mineore_zocl____changedctor___changed2_wrapper(struct _personal_amine_mineore_zocl::__changed* _this)
+        static void _personal_amine_mineore_zocl____changedctor___changed2_wrapper(struct _personal_amine_mineore_zocl::__changed* _this)
         {
            _personal_amine_mineore_zocl____changedctor___changed2_user(_this, _personal_amine_mineore_zocl____changedctor___changed2_next);
         };
         
-        hook_record _personal_amine_mineore_zocl_functions[] = {
+        static hook_record _personal_amine_mineore_zocl_functions[] = {
         {   (LPVOID)0x14029d5a0L,
             (LPVOID *)&_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_user,
             (LPVOID *)&_personal_amine_mineore_zoclctor__personal_amine_mineore_zocl2_next,
@@ -61,5 +61,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

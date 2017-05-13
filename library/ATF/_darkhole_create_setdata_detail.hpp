@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_darkhole_create_setdatactor__darkhole_create_setdata2_ptr _darkhole_create_setdatactor__darkhole_create_setdata2_next(nullptr);
-        info::_darkhole_create_setdatactor__darkhole_create_setdata2_clbk _darkhole_create_setdatactor__darkhole_create_setdata2_user(nullptr);
+        static info::_darkhole_create_setdatactor__darkhole_create_setdata2_ptr _darkhole_create_setdatactor__darkhole_create_setdata2_next(nullptr);
+        static info::_darkhole_create_setdatactor__darkhole_create_setdata2_clbk _darkhole_create_setdatactor__darkhole_create_setdata2_user(nullptr);
         
-        void _darkhole_create_setdatactor__darkhole_create_setdata2_wrapper(struct _darkhole_create_setdata* _this)
+        static void _darkhole_create_setdatactor__darkhole_create_setdata2_wrapper(struct _darkhole_create_setdata* _this)
         {
            _darkhole_create_setdatactor__darkhole_create_setdata2_user(_this, _darkhole_create_setdatactor__darkhole_create_setdata2_next);
         };
         
-        hook_record _darkhole_create_setdata_functions[] = {
+        static hook_record _darkhole_create_setdata_functions[] = {
         {   (LPVOID)0x140099470L,
             (LPVOID *)&_darkhole_create_setdatactor__darkhole_create_setdata2_user,
             (LPVOID *)&_darkhole_create_setdatactor__darkhole_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

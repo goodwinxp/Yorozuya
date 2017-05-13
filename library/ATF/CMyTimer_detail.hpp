@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMyTimerBeginTimer2_ptr CMyTimerBeginTimer2_next(nullptr);
-        info::CMyTimerBeginTimer2_clbk CMyTimerBeginTimer2_user(nullptr);
-        info::CMyTimerBeginTimerAddLapse4_ptr CMyTimerBeginTimerAddLapse4_next(nullptr);
-        info::CMyTimerBeginTimerAddLapse4_clbk CMyTimerBeginTimerAddLapse4_user(nullptr);
-        info::CMyTimerctor_CMyTimer6_ptr CMyTimerctor_CMyTimer6_next(nullptr);
-        info::CMyTimerctor_CMyTimer6_clbk CMyTimerctor_CMyTimer6_user(nullptr);
-        info::CMyTimerCountingAddTickOld8_ptr CMyTimerCountingAddTickOld8_next(nullptr);
-        info::CMyTimerCountingAddTickOld8_clbk CMyTimerCountingAddTickOld8_user(nullptr);
-        info::CMyTimerCountingTimer10_ptr CMyTimerCountingTimer10_next(nullptr);
-        info::CMyTimerCountingTimer10_clbk CMyTimerCountingTimer10_user(nullptr);
-        info::CMyTimerGetTerm12_ptr CMyTimerGetTerm12_next(nullptr);
-        info::CMyTimerGetTerm12_clbk CMyTimerGetTerm12_user(nullptr);
-        info::CMyTimerNextTimeRun14_ptr CMyTimerNextTimeRun14_next(nullptr);
-        info::CMyTimerNextTimeRun14_clbk CMyTimerNextTimeRun14_user(nullptr);
-        info::CMyTimerStopTimer16_ptr CMyTimerStopTimer16_next(nullptr);
-        info::CMyTimerStopTimer16_clbk CMyTimerStopTimer16_user(nullptr);
-        info::CMyTimerTermTimeRun18_ptr CMyTimerTermTimeRun18_next(nullptr);
-        info::CMyTimerTermTimeRun18_clbk CMyTimerTermTimeRun18_user(nullptr);
-        info::CMyTimerdtor_CMyTimer23_ptr CMyTimerdtor_CMyTimer23_next(nullptr);
-        info::CMyTimerdtor_CMyTimer23_clbk CMyTimerdtor_CMyTimer23_user(nullptr);
+        static info::CMyTimerBeginTimer2_ptr CMyTimerBeginTimer2_next(nullptr);
+        static info::CMyTimerBeginTimer2_clbk CMyTimerBeginTimer2_user(nullptr);
+        static info::CMyTimerBeginTimerAddLapse4_ptr CMyTimerBeginTimerAddLapse4_next(nullptr);
+        static info::CMyTimerBeginTimerAddLapse4_clbk CMyTimerBeginTimerAddLapse4_user(nullptr);
+        static info::CMyTimerctor_CMyTimer6_ptr CMyTimerctor_CMyTimer6_next(nullptr);
+        static info::CMyTimerctor_CMyTimer6_clbk CMyTimerctor_CMyTimer6_user(nullptr);
+        static info::CMyTimerCountingAddTickOld8_ptr CMyTimerCountingAddTickOld8_next(nullptr);
+        static info::CMyTimerCountingAddTickOld8_clbk CMyTimerCountingAddTickOld8_user(nullptr);
+        static info::CMyTimerCountingTimer10_ptr CMyTimerCountingTimer10_next(nullptr);
+        static info::CMyTimerCountingTimer10_clbk CMyTimerCountingTimer10_user(nullptr);
+        static info::CMyTimerGetTerm12_ptr CMyTimerGetTerm12_next(nullptr);
+        static info::CMyTimerGetTerm12_clbk CMyTimerGetTerm12_user(nullptr);
+        static info::CMyTimerNextTimeRun14_ptr CMyTimerNextTimeRun14_next(nullptr);
+        static info::CMyTimerNextTimeRun14_clbk CMyTimerNextTimeRun14_user(nullptr);
+        static info::CMyTimerStopTimer16_ptr CMyTimerStopTimer16_next(nullptr);
+        static info::CMyTimerStopTimer16_clbk CMyTimerStopTimer16_user(nullptr);
+        static info::CMyTimerTermTimeRun18_ptr CMyTimerTermTimeRun18_next(nullptr);
+        static info::CMyTimerTermTimeRun18_clbk CMyTimerTermTimeRun18_user(nullptr);
+        static info::CMyTimerdtor_CMyTimer23_ptr CMyTimerdtor_CMyTimer23_next(nullptr);
+        static info::CMyTimerdtor_CMyTimer23_clbk CMyTimerdtor_CMyTimer23_user(nullptr);
         
-        void CMyTimerBeginTimer2_wrapper(struct CMyTimer* _this, unsigned int dwTerm)
+        static void CMyTimerBeginTimer2_wrapper(struct CMyTimer* _this, unsigned int dwTerm)
         {
            CMyTimerBeginTimer2_user(_this, dwTerm, CMyTimerBeginTimer2_next);
         };
-        void CMyTimerBeginTimerAddLapse4_wrapper(struct CMyTimer* _this, unsigned int dwTerm, unsigned int dwAddLapse)
+        static void CMyTimerBeginTimerAddLapse4_wrapper(struct CMyTimer* _this, unsigned int dwTerm, unsigned int dwAddLapse)
         {
            CMyTimerBeginTimerAddLapse4_user(_this, dwTerm, dwAddLapse, CMyTimerBeginTimerAddLapse4_next);
         };
-        void CMyTimerctor_CMyTimer6_wrapper(struct CMyTimer* _this)
+        static void CMyTimerctor_CMyTimer6_wrapper(struct CMyTimer* _this)
         {
            CMyTimerctor_CMyTimer6_user(_this, CMyTimerctor_CMyTimer6_next);
         };
-        void CMyTimerCountingAddTickOld8_wrapper(struct CMyTimer* _this, unsigned int dwAddGap)
+        static void CMyTimerCountingAddTickOld8_wrapper(struct CMyTimer* _this, unsigned int dwAddGap)
         {
            CMyTimerCountingAddTickOld8_user(_this, dwAddGap, CMyTimerCountingAddTickOld8_next);
         };
-        bool CMyTimerCountingTimer10_wrapper(struct CMyTimer* _this)
+        static bool CMyTimerCountingTimer10_wrapper(struct CMyTimer* _this)
         {
            return CMyTimerCountingTimer10_user(_this, CMyTimerCountingTimer10_next);
         };
-        unsigned int CMyTimerGetTerm12_wrapper(struct CMyTimer* _this)
+        static unsigned int CMyTimerGetTerm12_wrapper(struct CMyTimer* _this)
         {
            return CMyTimerGetTerm12_user(_this, CMyTimerGetTerm12_next);
         };
-        void CMyTimerNextTimeRun14_wrapper(struct CMyTimer* _this)
+        static void CMyTimerNextTimeRun14_wrapper(struct CMyTimer* _this)
         {
            CMyTimerNextTimeRun14_user(_this, CMyTimerNextTimeRun14_next);
         };
-        void CMyTimerStopTimer16_wrapper(struct CMyTimer* _this)
+        static void CMyTimerStopTimer16_wrapper(struct CMyTimer* _this)
         {
            CMyTimerStopTimer16_user(_this, CMyTimerStopTimer16_next);
         };
-        void CMyTimerTermTimeRun18_wrapper(struct CMyTimer* _this)
+        static void CMyTimerTermTimeRun18_wrapper(struct CMyTimer* _this)
         {
            CMyTimerTermTimeRun18_user(_this, CMyTimerTermTimeRun18_next);
         };
-        void CMyTimerdtor_CMyTimer23_wrapper(struct CMyTimer* _this)
+        static void CMyTimerdtor_CMyTimer23_wrapper(struct CMyTimer* _this)
         {
            CMyTimerdtor_CMyTimer23_user(_this, CMyTimerdtor_CMyTimer23_next);
         };
         
-        hook_record CMyTimer_functions[] = {
+        static hook_record CMyTimer_functions[] = {
         {   (LPVOID)0x1404389d0L,
             (LPVOID *)&CMyTimerBeginTimer2_user,
             (LPVOID *)&CMyTimerBeginTimer2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

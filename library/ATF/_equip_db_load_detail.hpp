@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_equip_db_loadctor__equip_db_load2_ptr _equip_db_loadctor__equip_db_load2_next(nullptr);
-        info::_equip_db_loadctor__equip_db_load2_clbk _equip_db_loadctor__equip_db_load2_user(nullptr);
+        static info::_equip_db_loadctor__equip_db_load2_ptr _equip_db_loadctor__equip_db_load2_next(nullptr);
+        static info::_equip_db_loadctor__equip_db_load2_clbk _equip_db_loadctor__equip_db_load2_user(nullptr);
         
-        void _equip_db_loadctor__equip_db_load2_wrapper(struct _equip_db_load* _this)
+        static void _equip_db_loadctor__equip_db_load2_wrapper(struct _equip_db_load* _this)
         {
            _equip_db_loadctor__equip_db_load2_user(_this, _equip_db_loadctor__equip_db_load2_next);
         };
         
-        hook_record _equip_db_load_functions[] = {
+        static hook_record _equip_db_load_functions[] = {
         {   (LPVOID)0x14010db40L,
             (LPVOID *)&_equip_db_loadctor__equip_db_load2_user,
             (LPVOID *)&_equip_db_loadctor__equip_db_load2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_contsavector__qry_case_contsave2_ptr _qry_case_contsavector__qry_case_contsave2_next(nullptr);
-        info::_qry_case_contsavector__qry_case_contsave2_clbk _qry_case_contsavector__qry_case_contsave2_user(nullptr);
-        info::_qry_case_contsavesize4_ptr _qry_case_contsavesize4_next(nullptr);
-        info::_qry_case_contsavesize4_clbk _qry_case_contsavesize4_user(nullptr);
-        info::_qry_case_contsavedtor__qry_case_contsave6_ptr _qry_case_contsavedtor__qry_case_contsave6_next(nullptr);
-        info::_qry_case_contsavedtor__qry_case_contsave6_clbk _qry_case_contsavedtor__qry_case_contsave6_user(nullptr);
+        static info::_qry_case_contsavector__qry_case_contsave2_ptr _qry_case_contsavector__qry_case_contsave2_next(nullptr);
+        static info::_qry_case_contsavector__qry_case_contsave2_clbk _qry_case_contsavector__qry_case_contsave2_user(nullptr);
+        static info::_qry_case_contsavesize4_ptr _qry_case_contsavesize4_next(nullptr);
+        static info::_qry_case_contsavesize4_clbk _qry_case_contsavesize4_user(nullptr);
+        static info::_qry_case_contsavedtor__qry_case_contsave6_ptr _qry_case_contsavedtor__qry_case_contsave6_next(nullptr);
+        static info::_qry_case_contsavedtor__qry_case_contsave6_clbk _qry_case_contsavedtor__qry_case_contsave6_user(nullptr);
         
-        void _qry_case_contsavector__qry_case_contsave2_wrapper(struct _qry_case_contsave* _this)
+        static void _qry_case_contsavector__qry_case_contsave2_wrapper(struct _qry_case_contsave* _this)
         {
            _qry_case_contsavector__qry_case_contsave2_user(_this, _qry_case_contsavector__qry_case_contsave2_next);
         };
-        int _qry_case_contsavesize4_wrapper(struct _qry_case_contsave* _this)
+        static int _qry_case_contsavesize4_wrapper(struct _qry_case_contsave* _this)
         {
            return _qry_case_contsavesize4_user(_this, _qry_case_contsavesize4_next);
         };
-        void _qry_case_contsavedtor__qry_case_contsave6_wrapper(struct _qry_case_contsave* _this)
+        static void _qry_case_contsavedtor__qry_case_contsave6_wrapper(struct _qry_case_contsave* _this)
         {
            _qry_case_contsavedtor__qry_case_contsave6_user(_this, _qry_case_contsavedtor__qry_case_contsave6_next);
         };
         
-        hook_record _qry_case_contsave_functions[] = {
+        static hook_record _qry_case_contsave_functions[] = {
         {   (LPVOID)0x14011fd90L,
             (LPVOID *)&_qry_case_contsavector__qry_case_contsave2_user,
             (LPVOID *)&_qry_case_contsavector__qry_case_contsave2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

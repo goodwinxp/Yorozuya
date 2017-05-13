@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBossWinRatector_CRaceBossWinRate2_ptr CRaceBossWinRatector_CRaceBossWinRate2_next(nullptr);
-        info::CRaceBossWinRatector_CRaceBossWinRate2_clbk CRaceBossWinRatector_CRaceBossWinRate2_user(nullptr);
-        info::CRaceBossWinRateCompleteBossAccmulationWinRate4_ptr CRaceBossWinRateCompleteBossAccmulationWinRate4_next(nullptr);
-        info::CRaceBossWinRateCompleteBossAccmulationWinRate4_clbk CRaceBossWinRateCompleteBossAccmulationWinRate4_user(nullptr);
-        info::CRaceBossWinRateDestroy6_ptr CRaceBossWinRateDestroy6_next(nullptr);
-        info::CRaceBossWinRateDestroy6_clbk CRaceBossWinRateDestroy6_user(nullptr);
-        info::CRaceBossWinRateInstance8_ptr CRaceBossWinRateInstance8_next(nullptr);
-        info::CRaceBossWinRateInstance8_clbk CRaceBossWinRateInstance8_user(nullptr);
-        info::CRaceBossWinRateLoadBossAccmulationWinRate10_ptr CRaceBossWinRateLoadBossAccmulationWinRate10_next(nullptr);
-        info::CRaceBossWinRateLoadBossAccmulationWinRate10_clbk CRaceBossWinRateLoadBossAccmulationWinRate10_user(nullptr);
-        info::CRaceBossWinRateLoadBossCurrentWinRate12_ptr CRaceBossWinRateLoadBossCurrentWinRate12_next(nullptr);
-        info::CRaceBossWinRateLoadBossCurrentWinRate12_clbk CRaceBossWinRateLoadBossCurrentWinRate12_user(nullptr);
-        info::CRaceBossWinRateLoadDB14_ptr CRaceBossWinRateLoadDB14_next(nullptr);
-        info::CRaceBossWinRateLoadDB14_clbk CRaceBossWinRateLoadDB14_user(nullptr);
-        info::CRaceBossWinRateLoadINI16_ptr CRaceBossWinRateLoadINI16_next(nullptr);
-        info::CRaceBossWinRateLoadINI16_clbk CRaceBossWinRateLoadINI16_user(nullptr);
-        info::CRaceBossWinRateNotify18_ptr CRaceBossWinRateNotify18_next(nullptr);
-        info::CRaceBossWinRateNotify18_clbk CRaceBossWinRateNotify18_user(nullptr);
-        info::CRaceBossWinRateNotify20_ptr CRaceBossWinRateNotify20_next(nullptr);
-        info::CRaceBossWinRateNotify20_clbk CRaceBossWinRateNotify20_user(nullptr);
-        info::CRaceBossWinRateNotify22_ptr CRaceBossWinRateNotify22_next(nullptr);
-        info::CRaceBossWinRateNotify22_clbk CRaceBossWinRateNotify22_user(nullptr);
-        info::CRaceBossWinRateSaveINI24_ptr CRaceBossWinRateSaveINI24_next(nullptr);
-        info::CRaceBossWinRateSaveINI24_clbk CRaceBossWinRateSaveINI24_user(nullptr);
-        info::CRaceBossWinRateUpdateRaceBossWinRate26_ptr CRaceBossWinRateUpdateRaceBossWinRate26_next(nullptr);
-        info::CRaceBossWinRateUpdateRaceBossWinRate26_clbk CRaceBossWinRateUpdateRaceBossWinRate26_user(nullptr);
-        info::CRaceBossWinRateUpdateRaceBossWinRate28_ptr CRaceBossWinRateUpdateRaceBossWinRate28_next(nullptr);
-        info::CRaceBossWinRateUpdateRaceBossWinRate28_clbk CRaceBossWinRateUpdateRaceBossWinRate28_user(nullptr);
-        info::CRaceBossWinRateUpdateTotalCnt30_ptr CRaceBossWinRateUpdateTotalCnt30_next(nullptr);
-        info::CRaceBossWinRateUpdateTotalCnt30_clbk CRaceBossWinRateUpdateTotalCnt30_user(nullptr);
-        info::CRaceBossWinRateUpdateWinCnt32_ptr CRaceBossWinRateUpdateWinCnt32_next(nullptr);
-        info::CRaceBossWinRateUpdateWinCnt32_clbk CRaceBossWinRateUpdateWinCnt32_user(nullptr);
-        info::CRaceBossWinRatedtor_CRaceBossWinRate36_ptr CRaceBossWinRatedtor_CRaceBossWinRate36_next(nullptr);
-        info::CRaceBossWinRatedtor_CRaceBossWinRate36_clbk CRaceBossWinRatedtor_CRaceBossWinRate36_user(nullptr);
+        static info::CRaceBossWinRatector_CRaceBossWinRate2_ptr CRaceBossWinRatector_CRaceBossWinRate2_next(nullptr);
+        static info::CRaceBossWinRatector_CRaceBossWinRate2_clbk CRaceBossWinRatector_CRaceBossWinRate2_user(nullptr);
+        static info::CRaceBossWinRateCompleteBossAccmulationWinRate4_ptr CRaceBossWinRateCompleteBossAccmulationWinRate4_next(nullptr);
+        static info::CRaceBossWinRateCompleteBossAccmulationWinRate4_clbk CRaceBossWinRateCompleteBossAccmulationWinRate4_user(nullptr);
+        static info::CRaceBossWinRateDestroy6_ptr CRaceBossWinRateDestroy6_next(nullptr);
+        static info::CRaceBossWinRateDestroy6_clbk CRaceBossWinRateDestroy6_user(nullptr);
+        static info::CRaceBossWinRateInstance8_ptr CRaceBossWinRateInstance8_next(nullptr);
+        static info::CRaceBossWinRateInstance8_clbk CRaceBossWinRateInstance8_user(nullptr);
+        static info::CRaceBossWinRateLoadBossAccmulationWinRate10_ptr CRaceBossWinRateLoadBossAccmulationWinRate10_next(nullptr);
+        static info::CRaceBossWinRateLoadBossAccmulationWinRate10_clbk CRaceBossWinRateLoadBossAccmulationWinRate10_user(nullptr);
+        static info::CRaceBossWinRateLoadBossCurrentWinRate12_ptr CRaceBossWinRateLoadBossCurrentWinRate12_next(nullptr);
+        static info::CRaceBossWinRateLoadBossCurrentWinRate12_clbk CRaceBossWinRateLoadBossCurrentWinRate12_user(nullptr);
+        static info::CRaceBossWinRateLoadDB14_ptr CRaceBossWinRateLoadDB14_next(nullptr);
+        static info::CRaceBossWinRateLoadDB14_clbk CRaceBossWinRateLoadDB14_user(nullptr);
+        static info::CRaceBossWinRateLoadINI16_ptr CRaceBossWinRateLoadINI16_next(nullptr);
+        static info::CRaceBossWinRateLoadINI16_clbk CRaceBossWinRateLoadINI16_user(nullptr);
+        static info::CRaceBossWinRateNotify18_ptr CRaceBossWinRateNotify18_next(nullptr);
+        static info::CRaceBossWinRateNotify18_clbk CRaceBossWinRateNotify18_user(nullptr);
+        static info::CRaceBossWinRateNotify20_ptr CRaceBossWinRateNotify20_next(nullptr);
+        static info::CRaceBossWinRateNotify20_clbk CRaceBossWinRateNotify20_user(nullptr);
+        static info::CRaceBossWinRateNotify22_ptr CRaceBossWinRateNotify22_next(nullptr);
+        static info::CRaceBossWinRateNotify22_clbk CRaceBossWinRateNotify22_user(nullptr);
+        static info::CRaceBossWinRateSaveINI24_ptr CRaceBossWinRateSaveINI24_next(nullptr);
+        static info::CRaceBossWinRateSaveINI24_clbk CRaceBossWinRateSaveINI24_user(nullptr);
+        static info::CRaceBossWinRateUpdateRaceBossWinRate26_ptr CRaceBossWinRateUpdateRaceBossWinRate26_next(nullptr);
+        static info::CRaceBossWinRateUpdateRaceBossWinRate26_clbk CRaceBossWinRateUpdateRaceBossWinRate26_user(nullptr);
+        static info::CRaceBossWinRateUpdateRaceBossWinRate28_ptr CRaceBossWinRateUpdateRaceBossWinRate28_next(nullptr);
+        static info::CRaceBossWinRateUpdateRaceBossWinRate28_clbk CRaceBossWinRateUpdateRaceBossWinRate28_user(nullptr);
+        static info::CRaceBossWinRateUpdateTotalCnt30_ptr CRaceBossWinRateUpdateTotalCnt30_next(nullptr);
+        static info::CRaceBossWinRateUpdateTotalCnt30_clbk CRaceBossWinRateUpdateTotalCnt30_user(nullptr);
+        static info::CRaceBossWinRateUpdateWinCnt32_ptr CRaceBossWinRateUpdateWinCnt32_next(nullptr);
+        static info::CRaceBossWinRateUpdateWinCnt32_clbk CRaceBossWinRateUpdateWinCnt32_user(nullptr);
+        static info::CRaceBossWinRatedtor_CRaceBossWinRate36_ptr CRaceBossWinRatedtor_CRaceBossWinRate36_next(nullptr);
+        static info::CRaceBossWinRatedtor_CRaceBossWinRate36_clbk CRaceBossWinRatedtor_CRaceBossWinRate36_user(nullptr);
         
-        void CRaceBossWinRatector_CRaceBossWinRate2_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRatector_CRaceBossWinRate2_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRatector_CRaceBossWinRate2_user(_this, CRaceBossWinRatector_CRaceBossWinRate2_next);
         };
-        void CRaceBossWinRateCompleteBossAccmulationWinRate4_wrapper(struct CRaceBossWinRate* _this, struct _qry_case_raceboss_accumulation_winrate* pData)
+        static void CRaceBossWinRateCompleteBossAccmulationWinRate4_wrapper(struct CRaceBossWinRate* _this, struct _qry_case_raceboss_accumulation_winrate* pData)
         {
            CRaceBossWinRateCompleteBossAccmulationWinRate4_user(_this, pData, CRaceBossWinRateCompleteBossAccmulationWinRate4_next);
         };
-        void CRaceBossWinRateDestroy6_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRateDestroy6_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRateDestroy6_user(_this, CRaceBossWinRateDestroy6_next);
         };
-        struct CRaceBossWinRate* CRaceBossWinRateInstance8_wrapper()
+        static struct CRaceBossWinRate* CRaceBossWinRateInstance8_wrapper()
         {
            return CRaceBossWinRateInstance8_user(CRaceBossWinRateInstance8_next);
         };
-        char CRaceBossWinRateLoadBossAccmulationWinRate10_wrapper(struct CRaceBossWinRate* _this, struct _qry_case_raceboss_accumulation_winrate* pData)
+        static char CRaceBossWinRateLoadBossAccmulationWinRate10_wrapper(struct CRaceBossWinRate* _this, struct _qry_case_raceboss_accumulation_winrate* pData)
         {
            return CRaceBossWinRateLoadBossAccmulationWinRate10_user(_this, pData, CRaceBossWinRateLoadBossAccmulationWinRate10_next);
         };
-        bool CRaceBossWinRateLoadBossCurrentWinRate12_wrapper(struct CRaceBossWinRate* _this)
+        static bool CRaceBossWinRateLoadBossCurrentWinRate12_wrapper(struct CRaceBossWinRate* _this)
         {
            return CRaceBossWinRateLoadBossCurrentWinRate12_user(_this, CRaceBossWinRateLoadBossCurrentWinRate12_next);
         };
-        bool CRaceBossWinRateLoadDB14_wrapper(struct CRaceBossWinRate* _this)
+        static bool CRaceBossWinRateLoadDB14_wrapper(struct CRaceBossWinRate* _this)
         {
            return CRaceBossWinRateLoadDB14_user(_this, CRaceBossWinRateLoadDB14_next);
         };
-        bool CRaceBossWinRateLoadINI16_wrapper(struct CRaceBossWinRate* _this)
+        static bool CRaceBossWinRateLoadINI16_wrapper(struct CRaceBossWinRate* _this)
         {
            return CRaceBossWinRateLoadINI16_user(_this, CRaceBossWinRateLoadINI16_next);
         };
-        void CRaceBossWinRateNotify18_wrapper(struct CRaceBossWinRate* _this, char byRace)
+        static void CRaceBossWinRateNotify18_wrapper(struct CRaceBossWinRate* _this, char byRace)
         {
            CRaceBossWinRateNotify18_user(_this, byRace, CRaceBossWinRateNotify18_next);
         };
-        void CRaceBossWinRateNotify20_wrapper(struct CRaceBossWinRate* _this, char byRace, uint16_t wIndex)
+        static void CRaceBossWinRateNotify20_wrapper(struct CRaceBossWinRate* _this, char byRace, uint16_t wIndex)
         {
            CRaceBossWinRateNotify20_user(_this, byRace, wIndex, CRaceBossWinRateNotify20_next);
         };
-        void CRaceBossWinRateNotify22_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRateNotify22_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRateNotify22_user(_this, CRaceBossWinRateNotify22_next);
         };
-        bool CRaceBossWinRateSaveINI24_wrapper(struct CRaceBossWinRate* _this)
+        static bool CRaceBossWinRateSaveINI24_wrapper(struct CRaceBossWinRate* _this)
         {
            return CRaceBossWinRateSaveINI24_user(_this, CRaceBossWinRateSaveINI24_next);
         };
-        void CRaceBossWinRateUpdateRaceBossWinRate26_wrapper(struct CRaceBossWinRate* _this, char byRace)
+        static void CRaceBossWinRateUpdateRaceBossWinRate26_wrapper(struct CRaceBossWinRate* _this, char byRace)
         {
            CRaceBossWinRateUpdateRaceBossWinRate26_user(_this, byRace, CRaceBossWinRateUpdateRaceBossWinRate26_next);
         };
-        void CRaceBossWinRateUpdateRaceBossWinRate28_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRateUpdateRaceBossWinRate28_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRateUpdateRaceBossWinRate28_user(_this, CRaceBossWinRateUpdateRaceBossWinRate28_next);
         };
-        void CRaceBossWinRateUpdateTotalCnt30_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRateUpdateTotalCnt30_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRateUpdateTotalCnt30_user(_this, CRaceBossWinRateUpdateTotalCnt30_next);
         };
-        void CRaceBossWinRateUpdateWinCnt32_wrapper(struct CRaceBossWinRate* _this, char byRace)
+        static void CRaceBossWinRateUpdateWinCnt32_wrapper(struct CRaceBossWinRate* _this, char byRace)
         {
            CRaceBossWinRateUpdateWinCnt32_user(_this, byRace, CRaceBossWinRateUpdateWinCnt32_next);
         };
-        void CRaceBossWinRatedtor_CRaceBossWinRate36_wrapper(struct CRaceBossWinRate* _this)
+        static void CRaceBossWinRatedtor_CRaceBossWinRate36_wrapper(struct CRaceBossWinRate* _this)
         {
            CRaceBossWinRatedtor_CRaceBossWinRate36_user(_this, CRaceBossWinRatedtor_CRaceBossWinRate36_next);
         };
         
-        hook_record CRaceBossWinRate_functions[] = {
+        static hook_record CRaceBossWinRate_functions[] = {
         {   (LPVOID)0x14024d390L,
             (LPVOID *)&CRaceBossWinRatector_CRaceBossWinRate2_user,
             (LPVOID *)&CRaceBossWinRatector_CRaceBossWinRate2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

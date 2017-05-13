@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_ptr _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_next(nullptr);
-        info::_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_clbk _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_user(nullptr);
+        static info::_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_ptr _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_next(nullptr);
+        static info::_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_clbk _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_user(nullptr);
         
-        void _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_wrapper(struct _npc_quest_list_result_zocl* _this)
+        static void _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_wrapper(struct _npc_quest_list_result_zocl* _this)
         {
            _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_user(_this, _npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_next);
         };
         
-        hook_record _npc_quest_list_result_zocl_functions[] = {
+        static hook_record _npc_quest_list_result_zocl_functions[] = {
         {   (LPVOID)0x1400efd20L,
             (LPVOID *)&_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_user,
             (LPVOID *)&_npc_quest_list_result_zoclctor__npc_quest_list_result_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

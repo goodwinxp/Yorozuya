@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CDummyDrawctor_CDummyDraw2_ptr CDummyDrawctor_CDummyDraw2_next(nullptr);
-        info::CDummyDrawctor_CDummyDraw2_clbk CDummyDrawctor_CDummyDraw2_user(nullptr);
-        info::CDummyDrawCalcAbsExt4_ptr CDummyDrawCalcAbsExt4_next(nullptr);
-        info::CDummyDrawCalcAbsExt4_clbk CDummyDrawCalcAbsExt4_user(nullptr);
-        info::CDummyDrawCalcScrExt6_ptr CDummyDrawCalcScrExt6_next(nullptr);
-        info::CDummyDrawCalcScrExt6_clbk CDummyDrawCalcScrExt6_user(nullptr);
-        info::CDummyDrawDeletePen8_ptr CDummyDrawDeletePen8_next(nullptr);
-        info::CDummyDrawDeletePen8_clbk CDummyDrawDeletePen8_user(nullptr);
-        info::CDummyDrawctor_Draw10_ptr CDummyDrawctor_Draw10_next(nullptr);
-        info::CDummyDrawctor_Draw10_clbk CDummyDrawctor_Draw10_user(nullptr);
-        info::CDummyDrawInitPen12_ptr CDummyDrawInitPen12_next(nullptr);
-        info::CDummyDrawInitPen12_clbk CDummyDrawInitPen12_user(nullptr);
-        info::CDummyDrawSetDummyPoint14_ptr CDummyDrawSetDummyPoint14_next(nullptr);
-        info::CDummyDrawSetDummyPoint14_clbk CDummyDrawSetDummyPoint14_user(nullptr);
-        info::CDummyDrawSetDummyRange16_ptr CDummyDrawSetDummyRange16_next(nullptr);
-        info::CDummyDrawSetDummyRange16_clbk CDummyDrawSetDummyRange16_user(nullptr);
-        info::CDummyDrawdtor_CDummyDraw22_ptr CDummyDrawdtor_CDummyDraw22_next(nullptr);
-        info::CDummyDrawdtor_CDummyDraw22_clbk CDummyDrawdtor_CDummyDraw22_user(nullptr);
+        static info::CDummyDrawctor_CDummyDraw2_ptr CDummyDrawctor_CDummyDraw2_next(nullptr);
+        static info::CDummyDrawctor_CDummyDraw2_clbk CDummyDrawctor_CDummyDraw2_user(nullptr);
+        static info::CDummyDrawCalcAbsExt4_ptr CDummyDrawCalcAbsExt4_next(nullptr);
+        static info::CDummyDrawCalcAbsExt4_clbk CDummyDrawCalcAbsExt4_user(nullptr);
+        static info::CDummyDrawCalcScrExt6_ptr CDummyDrawCalcScrExt6_next(nullptr);
+        static info::CDummyDrawCalcScrExt6_clbk CDummyDrawCalcScrExt6_user(nullptr);
+        static info::CDummyDrawDeletePen8_ptr CDummyDrawDeletePen8_next(nullptr);
+        static info::CDummyDrawDeletePen8_clbk CDummyDrawDeletePen8_user(nullptr);
+        static info::CDummyDrawctor_Draw10_ptr CDummyDrawctor_Draw10_next(nullptr);
+        static info::CDummyDrawctor_Draw10_clbk CDummyDrawctor_Draw10_user(nullptr);
+        static info::CDummyDrawInitPen12_ptr CDummyDrawInitPen12_next(nullptr);
+        static info::CDummyDrawInitPen12_clbk CDummyDrawInitPen12_user(nullptr);
+        static info::CDummyDrawSetDummyPoint14_ptr CDummyDrawSetDummyPoint14_next(nullptr);
+        static info::CDummyDrawSetDummyPoint14_clbk CDummyDrawSetDummyPoint14_user(nullptr);
+        static info::CDummyDrawSetDummyRange16_ptr CDummyDrawSetDummyRange16_next(nullptr);
+        static info::CDummyDrawSetDummyRange16_clbk CDummyDrawSetDummyRange16_user(nullptr);
+        static info::CDummyDrawdtor_CDummyDraw22_ptr CDummyDrawdtor_CDummyDraw22_next(nullptr);
+        static info::CDummyDrawdtor_CDummyDraw22_clbk CDummyDrawdtor_CDummyDraw22_user(nullptr);
         
-        void CDummyDrawctor_CDummyDraw2_wrapper(struct CDummyDraw* _this)
+        static void CDummyDrawctor_CDummyDraw2_wrapper(struct CDummyDraw* _this)
         {
            CDummyDrawctor_CDummyDraw2_user(_this, CDummyDrawctor_CDummyDraw2_next);
         };
-        bool CDummyDrawCalcAbsExt4_wrapper(struct CDummyDraw* _this, struct CRect* prcArea)
+        static bool CDummyDrawCalcAbsExt4_wrapper(struct CDummyDraw* _this, struct CRect* prcArea)
         {
            return CDummyDrawCalcAbsExt4_user(_this, prcArea, CDummyDrawCalcAbsExt4_next);
         };
-        void CDummyDrawCalcScrExt6_wrapper(struct CDummyDraw* _this, struct CRect* prcArea, struct CRect* prcWnd)
+        static void CDummyDrawCalcScrExt6_wrapper(struct CDummyDraw* _this, struct CRect* prcArea, struct CRect* prcWnd)
         {
            CDummyDrawCalcScrExt6_user(_this, prcArea, prcWnd, CDummyDrawCalcScrExt6_next);
         };
-        void CDummyDrawDeletePen8_wrapper()
+        static void CDummyDrawDeletePen8_wrapper()
         {
            CDummyDrawDeletePen8_user(CDummyDrawDeletePen8_next);
         };
-        HRESULT CDummyDrawctor_Draw10_wrapper(struct CDummyDraw* _this, struct CSurface* pSF, struct CRect* prcArea)
+        static HRESULT CDummyDrawctor_Draw10_wrapper(struct CDummyDraw* _this, struct CSurface* pSF, struct CRect* prcArea)
         {
            return CDummyDrawctor_Draw10_user(_this, pSF, prcArea, CDummyDrawctor_Draw10_next);
         };
-        void CDummyDrawInitPen12_wrapper()
+        static void CDummyDrawInitPen12_wrapper()
         {
            CDummyDrawInitPen12_user(CDummyDrawInitPen12_next);
         };
-        void CDummyDrawSetDummyPoint14_wrapper(struct CDummyDraw* _this, struct CMapData* pMap, float* pCenterPos, int nType, struct CRect* prcWnd)
+        static void CDummyDrawSetDummyPoint14_wrapper(struct CDummyDraw* _this, struct CMapData* pMap, float* pCenterPos, int nType, struct CRect* prcWnd)
         {
            CDummyDrawSetDummyPoint14_user(_this, pMap, pCenterPos, nType, prcWnd, CDummyDrawSetDummyPoint14_next);
         };
-        void CDummyDrawSetDummyRange16_wrapper(struct CDummyDraw* _this, struct CMapData* pMap, float* pLT, float* pRB, float* pRT, float* pLB, int nType, struct CRect* prcWnd)
+        static void CDummyDrawSetDummyRange16_wrapper(struct CDummyDraw* _this, struct CMapData* pMap, float* pLT, float* pRB, float* pRT, float* pLB, int nType, struct CRect* prcWnd)
         {
            CDummyDrawSetDummyRange16_user(_this, pMap, pLT, pRB, pRT, pLB, nType, prcWnd, CDummyDrawSetDummyRange16_next);
         };
-        void CDummyDrawdtor_CDummyDraw22_wrapper(struct CDummyDraw* _this)
+        static void CDummyDrawdtor_CDummyDraw22_wrapper(struct CDummyDraw* _this)
         {
            CDummyDrawdtor_CDummyDraw22_user(_this, CDummyDrawdtor_CDummyDraw22_next);
         };
         
-        hook_record CDummyDraw_functions[] = {
+        static hook_record CDummyDraw_functions[] = {
         {   (LPVOID)0x14019c510L,
             (LPVOID *)&CDummyDrawctor_CDummyDraw2_user,
             (LPVOID *)&CDummyDrawctor_CDummyDraw2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

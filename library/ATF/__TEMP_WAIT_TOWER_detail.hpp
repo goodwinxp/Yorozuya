@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_ptr __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_next(nullptr);
-        info::__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_clbk __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_user(nullptr);
+        static info::__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_ptr __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_next(nullptr);
+        static info::__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_clbk __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_user(nullptr);
         
-        void __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_wrapper(struct __TEMP_WAIT_TOWER* _this)
+        static void __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_wrapper(struct __TEMP_WAIT_TOWER* _this)
         {
            __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_user(_this, __TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_next);
         };
         
-        hook_record __TEMP_WAIT_TOWER_functions[] = {
+        static hook_record __TEMP_WAIT_TOWER_functions[] = {
         {   (LPVOID)0x140132ae0L,
             (LPVOID *)&__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_user,
             (LPVOID *)&__TEMP_WAIT_TOWERctor___TEMP_WAIT_TOWER2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

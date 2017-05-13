@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::BossSchedule_Mapctor_BossSchedule_Map2_ptr BossSchedule_Mapctor_BossSchedule_Map2_next(nullptr);
-        info::BossSchedule_Mapctor_BossSchedule_Map2_clbk BossSchedule_Mapctor_BossSchedule_Map2_user(nullptr);
-        info::BossSchedule_MapClear4_ptr BossSchedule_MapClear4_next(nullptr);
-        info::BossSchedule_MapClear4_clbk BossSchedule_MapClear4_user(nullptr);
-        info::BossSchedule_MapLoadAll6_ptr BossSchedule_MapLoadAll6_next(nullptr);
-        info::BossSchedule_MapLoadAll6_clbk BossSchedule_MapLoadAll6_user(nullptr);
-        info::BossSchedule_MapSaveAll8_ptr BossSchedule_MapSaveAll8_next(nullptr);
-        info::BossSchedule_MapSaveAll8_clbk BossSchedule_MapSaveAll8_user(nullptr);
-        info::BossSchedule_Mapdtor_BossSchedule_Map12_ptr BossSchedule_Mapdtor_BossSchedule_Map12_next(nullptr);
-        info::BossSchedule_Mapdtor_BossSchedule_Map12_clbk BossSchedule_Mapdtor_BossSchedule_Map12_user(nullptr);
+        static info::BossSchedule_Mapctor_BossSchedule_Map2_ptr BossSchedule_Mapctor_BossSchedule_Map2_next(nullptr);
+        static info::BossSchedule_Mapctor_BossSchedule_Map2_clbk BossSchedule_Mapctor_BossSchedule_Map2_user(nullptr);
+        static info::BossSchedule_MapClear4_ptr BossSchedule_MapClear4_next(nullptr);
+        static info::BossSchedule_MapClear4_clbk BossSchedule_MapClear4_user(nullptr);
+        static info::BossSchedule_MapLoadAll6_ptr BossSchedule_MapLoadAll6_next(nullptr);
+        static info::BossSchedule_MapLoadAll6_clbk BossSchedule_MapLoadAll6_user(nullptr);
+        static info::BossSchedule_MapSaveAll8_ptr BossSchedule_MapSaveAll8_next(nullptr);
+        static info::BossSchedule_MapSaveAll8_clbk BossSchedule_MapSaveAll8_user(nullptr);
+        static info::BossSchedule_Mapdtor_BossSchedule_Map12_ptr BossSchedule_Mapdtor_BossSchedule_Map12_next(nullptr);
+        static info::BossSchedule_Mapdtor_BossSchedule_Map12_clbk BossSchedule_Mapdtor_BossSchedule_Map12_user(nullptr);
         
-        void BossSchedule_Mapctor_BossSchedule_Map2_wrapper(struct BossSchedule_Map* _this)
+        static void BossSchedule_Mapctor_BossSchedule_Map2_wrapper(struct BossSchedule_Map* _this)
         {
            BossSchedule_Mapctor_BossSchedule_Map2_user(_this, BossSchedule_Mapctor_BossSchedule_Map2_next);
         };
-        void BossSchedule_MapClear4_wrapper(struct BossSchedule_Map* _this)
+        static void BossSchedule_MapClear4_wrapper(struct BossSchedule_Map* _this)
         {
            BossSchedule_MapClear4_user(_this, BossSchedule_MapClear4_next);
         };
-        bool BossSchedule_MapLoadAll6_wrapper(struct BossSchedule_Map* _this)
+        static bool BossSchedule_MapLoadAll6_wrapper(struct BossSchedule_Map* _this)
         {
            return BossSchedule_MapLoadAll6_user(_this, BossSchedule_MapLoadAll6_next);
         };
-        bool BossSchedule_MapSaveAll8_wrapper(struct BossSchedule_Map* _this)
+        static bool BossSchedule_MapSaveAll8_wrapper(struct BossSchedule_Map* _this)
         {
            return BossSchedule_MapSaveAll8_user(_this, BossSchedule_MapSaveAll8_next);
         };
-        void BossSchedule_Mapdtor_BossSchedule_Map12_wrapper(struct BossSchedule_Map* _this)
+        static void BossSchedule_Mapdtor_BossSchedule_Map12_wrapper(struct BossSchedule_Map* _this)
         {
            BossSchedule_Mapdtor_BossSchedule_Map12_user(_this, BossSchedule_Mapdtor_BossSchedule_Map12_next);
         };
         
-        hook_record BossSchedule_Map_functions[] = {
+        static hook_record BossSchedule_Map_functions[] = {
         {   (LPVOID)0x14041b720L,
             (LPVOID *)&BossSchedule_Mapctor_BossSchedule_Map2_user,
             (LPVOID *)&BossSchedule_Mapctor_BossSchedule_Map2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

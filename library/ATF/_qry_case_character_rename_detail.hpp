@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_character_renamector__qry_case_character_rename2_ptr _qry_case_character_renamector__qry_case_character_rename2_next(nullptr);
-        info::_qry_case_character_renamector__qry_case_character_rename2_clbk _qry_case_character_renamector__qry_case_character_rename2_user(nullptr);
-        info::_qry_case_character_renamesize4_ptr _qry_case_character_renamesize4_next(nullptr);
-        info::_qry_case_character_renamesize4_clbk _qry_case_character_renamesize4_user(nullptr);
+        static info::_qry_case_character_renamector__qry_case_character_rename2_ptr _qry_case_character_renamector__qry_case_character_rename2_next(nullptr);
+        static info::_qry_case_character_renamector__qry_case_character_rename2_clbk _qry_case_character_renamector__qry_case_character_rename2_user(nullptr);
+        static info::_qry_case_character_renamesize4_ptr _qry_case_character_renamesize4_next(nullptr);
+        static info::_qry_case_character_renamesize4_clbk _qry_case_character_renamesize4_user(nullptr);
         
-        void _qry_case_character_renamector__qry_case_character_rename2_wrapper(struct _qry_case_character_rename* _this)
+        static void _qry_case_character_renamector__qry_case_character_rename2_wrapper(struct _qry_case_character_rename* _this)
         {
            _qry_case_character_renamector__qry_case_character_rename2_user(_this, _qry_case_character_renamector__qry_case_character_rename2_next);
         };
-        int _qry_case_character_renamesize4_wrapper(struct _qry_case_character_rename* _this)
+        static int _qry_case_character_renamesize4_wrapper(struct _qry_case_character_rename* _this)
         {
            return _qry_case_character_renamesize4_user(_this, _qry_case_character_renamesize4_next);
         };
         
-        hook_record _qry_case_character_rename_functions[] = {
+        static hook_record _qry_case_character_rename_functions[] = {
         {   (LPVOID)0x1400b85b0L,
             (LPVOID *)&_qry_case_character_renamector__qry_case_character_rename2_user,
             (LPVOID *)&_qry_case_character_renamector__qry_case_character_rename2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TimeItemCheckGoods2_ptr TimeItemCheckGoods2_next(nullptr);
-        info::TimeItemCheckGoods2_clbk TimeItemCheckGoods2_user(nullptr);
-        info::TimeItemFindTimeRec4_ptr TimeItemFindTimeRec4_next(nullptr);
-        info::TimeItemFindTimeRec4_clbk TimeItemFindTimeRec4_user(nullptr);
-        info::TimeItemInit6_ptr TimeItemInit6_next(nullptr);
-        info::TimeItemInit6_clbk TimeItemInit6_user(nullptr);
-        info::TimeItemInstance8_ptr TimeItemInstance8_next(nullptr);
-        info::TimeItemInstance8_clbk TimeItemInstance8_user(nullptr);
-        info::TimeItemMakeLinkTable10_ptr TimeItemMakeLinkTable10_next(nullptr);
-        info::TimeItemMakeLinkTable10_clbk TimeItemMakeLinkTable10_user(nullptr);
-        info::TimeItemReadGoods12_ptr TimeItemReadGoods12_next(nullptr);
-        info::TimeItemReadGoods12_clbk TimeItemReadGoods12_user(nullptr);
-        info::TimeItemctor_TimeItem14_ptr TimeItemctor_TimeItem14_next(nullptr);
-        info::TimeItemctor_TimeItem14_clbk TimeItemctor_TimeItem14_user(nullptr);
+        static info::TimeItemCheckGoods2_ptr TimeItemCheckGoods2_next(nullptr);
+        static info::TimeItemCheckGoods2_clbk TimeItemCheckGoods2_user(nullptr);
+        static info::TimeItemFindTimeRec4_ptr TimeItemFindTimeRec4_next(nullptr);
+        static info::TimeItemFindTimeRec4_clbk TimeItemFindTimeRec4_user(nullptr);
+        static info::TimeItemInit6_ptr TimeItemInit6_next(nullptr);
+        static info::TimeItemInit6_clbk TimeItemInit6_user(nullptr);
+        static info::TimeItemInstance8_ptr TimeItemInstance8_next(nullptr);
+        static info::TimeItemInstance8_clbk TimeItemInstance8_user(nullptr);
+        static info::TimeItemMakeLinkTable10_ptr TimeItemMakeLinkTable10_next(nullptr);
+        static info::TimeItemMakeLinkTable10_clbk TimeItemMakeLinkTable10_user(nullptr);
+        static info::TimeItemReadGoods12_ptr TimeItemReadGoods12_next(nullptr);
+        static info::TimeItemReadGoods12_clbk TimeItemReadGoods12_user(nullptr);
+        static info::TimeItemctor_TimeItem14_ptr TimeItemctor_TimeItem14_next(nullptr);
+        static info::TimeItemctor_TimeItem14_clbk TimeItemctor_TimeItem14_user(nullptr);
         
-        bool TimeItemCheckGoods2_wrapper(struct TimeItem* _this)
+        static bool TimeItemCheckGoods2_wrapper(struct TimeItem* _this)
         {
            return TimeItemCheckGoods2_user(_this, TimeItemCheckGoods2_next);
         };
-        struct _TimeItem_fld* TimeItemFindTimeRec4_wrapper(int nTbl, int nIdx)
+        static struct _TimeItem_fld* TimeItemFindTimeRec4_wrapper(int nTbl, int nIdx)
         {
            return TimeItemFindTimeRec4_user(nTbl, nIdx, TimeItemFindTimeRec4_next);
         };
-        bool TimeItemInit6_wrapper(struct TimeItem* _this)
+        static bool TimeItemInit6_wrapper(struct TimeItem* _this)
         {
            return TimeItemInit6_user(_this, TimeItemInit6_next);
         };
-        struct TimeItem* TimeItemInstance8_wrapper()
+        static struct TimeItem* TimeItemInstance8_wrapper()
         {
            return TimeItemInstance8_user(TimeItemInstance8_next);
         };
-        bool TimeItemMakeLinkTable10_wrapper(struct TimeItem* _this, char* szMsg, int nSize)
+        static bool TimeItemMakeLinkTable10_wrapper(struct TimeItem* _this, char* szMsg, int nSize)
         {
            return TimeItemMakeLinkTable10_user(_this, szMsg, nSize, TimeItemMakeLinkTable10_next);
         };
-        bool TimeItemReadGoods12_wrapper(struct TimeItem* _this)
+        static bool TimeItemReadGoods12_wrapper(struct TimeItem* _this)
         {
            return TimeItemReadGoods12_user(_this, TimeItemReadGoods12_next);
         };
-        void TimeItemctor_TimeItem14_wrapper(struct TimeItem* _this)
+        static void TimeItemctor_TimeItem14_wrapper(struct TimeItem* _this)
         {
            TimeItemctor_TimeItem14_user(_this, TimeItemctor_TimeItem14_next);
         };
         
-        hook_record TimeItem_functions[] = {
+        static hook_record TimeItem_functions[] = {
         {   (LPVOID)0x14030e7d0L,
             (LPVOID *)&TimeItemCheckGoods2_user,
             (LPVOID *)&TimeItemCheckGoods2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

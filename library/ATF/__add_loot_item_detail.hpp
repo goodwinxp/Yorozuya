@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__add_loot_itemctor___add_loot_item2_ptr __add_loot_itemctor___add_loot_item2_next(nullptr);
-        info::__add_loot_itemctor___add_loot_item2_clbk __add_loot_itemctor___add_loot_item2_user(nullptr);
+        static info::__add_loot_itemctor___add_loot_item2_ptr __add_loot_itemctor___add_loot_item2_next(nullptr);
+        static info::__add_loot_itemctor___add_loot_item2_clbk __add_loot_itemctor___add_loot_item2_user(nullptr);
         
-        void __add_loot_itemctor___add_loot_item2_wrapper(struct __add_loot_item* _this)
+        static void __add_loot_itemctor___add_loot_item2_wrapper(struct __add_loot_item* _this)
         {
            __add_loot_itemctor___add_loot_item2_user(_this, __add_loot_itemctor___add_loot_item2_next);
         };
         
-        hook_record __add_loot_item_functions[] = {
+        static hook_record __add_loot_item_functions[] = {
         {   (LPVOID)0x14027a2e0L,
             (LPVOID *)&__add_loot_itemctor___add_loot_item2_user,
             (LPVOID *)&__add_loot_itemctor___add_loot_item2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

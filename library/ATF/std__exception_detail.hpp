@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__exceptionctor_exception1_ptr std__exceptionctor_exception1_next(nullptr);
-            info::std__exceptionctor_exception1_clbk std__exceptionctor_exception1_user(nullptr);
-            info::std__exceptionctor_exception2_ptr std__exceptionctor_exception2_next(nullptr);
-            info::std__exceptionctor_exception2_clbk std__exceptionctor_exception2_user(nullptr);
-            info::std__exceptionctor_exception3_ptr std__exceptionctor_exception3_next(nullptr);
-            info::std__exceptionctor_exception3_clbk std__exceptionctor_exception3_user(nullptr);
-            info::std__exceptionctor_exception4_ptr std__exceptionctor_exception4_next(nullptr);
-            info::std__exceptionctor_exception4_clbk std__exceptionctor_exception4_user(nullptr);
-            info::std__exceptionwhat5_ptr std__exceptionwhat5_next(nullptr);
-            info::std__exceptionwhat5_clbk std__exceptionwhat5_user(nullptr);
+            static info::std__exceptionctor_exception1_ptr std__exceptionctor_exception1_next(nullptr);
+            static info::std__exceptionctor_exception1_clbk std__exceptionctor_exception1_user(nullptr);
+            static info::std__exceptionctor_exception2_ptr std__exceptionctor_exception2_next(nullptr);
+            static info::std__exceptionctor_exception2_clbk std__exceptionctor_exception2_user(nullptr);
+            static info::std__exceptionctor_exception3_ptr std__exceptionctor_exception3_next(nullptr);
+            static info::std__exceptionctor_exception3_clbk std__exceptionctor_exception3_user(nullptr);
+            static info::std__exceptionctor_exception4_ptr std__exceptionctor_exception4_next(nullptr);
+            static info::std__exceptionctor_exception4_clbk std__exceptionctor_exception4_user(nullptr);
+            static info::std__exceptionwhat5_ptr std__exceptionwhat5_next(nullptr);
+            static info::std__exceptionwhat5_clbk std__exceptionwhat5_user(nullptr);
             
-            int64_t std__exceptionctor_exception1_wrapper(struct std::exception* _this, char** arg_0)
+            static int64_t std__exceptionctor_exception1_wrapper(struct std::exception* _this, char** arg_0)
             {
                return std__exceptionctor_exception1_user(_this, arg_0, std__exceptionctor_exception1_next);
             };
-            int64_t std__exceptionctor_exception2_wrapper(struct std::exception* _this, char** arg_0, int arg_1)
+            static int64_t std__exceptionctor_exception2_wrapper(struct std::exception* _this, char** arg_0, int arg_1)
             {
                return std__exceptionctor_exception2_user(_this, arg_0, arg_1, std__exceptionctor_exception2_next);
             };
-            int64_t std__exceptionctor_exception3_wrapper(struct std::exception* _this, struct std::exception* arg_0)
+            static int64_t std__exceptionctor_exception3_wrapper(struct std::exception* _this, struct std::exception* arg_0)
             {
                return std__exceptionctor_exception3_user(_this, arg_0, std__exceptionctor_exception3_next);
             };
-            int64_t std__exceptionctor_exception4_wrapper(struct std::exception* _this)
+            static int64_t std__exceptionctor_exception4_wrapper(struct std::exception* _this)
             {
                return std__exceptionctor_exception4_user(_this, std__exceptionctor_exception4_next);
             };
-            char* std__exceptionwhat5_wrapper(struct std::exception* _this)
+            static char* std__exceptionwhat5_wrapper(struct std::exception* _this)
             {
                return std__exceptionwhat5_user(_this, std__exceptionwhat5_next);
             };
             
-            hook_record exception_functions[] = {
+            static hook_record exception_functions[] = {
             {   (LPVOID)0x1404dcea2L,
                 (LPVOID *)&std__exceptionctor_exception1_user,
                 (LPVOID *)&std__exceptionctor_exception1_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_money_supply_gatering_inform_zowbinit2_ptr _money_supply_gatering_inform_zowbinit2_next(nullptr);
-        info::_money_supply_gatering_inform_zowbinit2_clbk _money_supply_gatering_inform_zowbinit2_user(nullptr);
+        static info::_money_supply_gatering_inform_zowbinit2_ptr _money_supply_gatering_inform_zowbinit2_next(nullptr);
+        static info::_money_supply_gatering_inform_zowbinit2_clbk _money_supply_gatering_inform_zowbinit2_user(nullptr);
         
-        void _money_supply_gatering_inform_zowbinit2_wrapper(struct _money_supply_gatering_inform_zowb* _this)
+        static void _money_supply_gatering_inform_zowbinit2_wrapper(struct _money_supply_gatering_inform_zowb* _this)
         {
            _money_supply_gatering_inform_zowbinit2_user(_this, _money_supply_gatering_inform_zowbinit2_next);
         };
         
-        hook_record _money_supply_gatering_inform_zowb_functions[] = {
+        static hook_record _money_supply_gatering_inform_zowb_functions[] = {
         {   (LPVOID)0x1404307a0L,
             (LPVOID *)&_money_supply_gatering_inform_zowbinit2_user,
             (LPVOID *)&_money_supply_gatering_inform_zowbinit2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

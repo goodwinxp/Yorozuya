@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_ptr GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_clbk GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_user(_this, GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateCountDownEnter4_next);
             };
-            struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this, struct ATL::CTimeSpan* result)
+            static struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this, struct ATL::CTimeSpan* result)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_user(_this, result, GUILD_BATTLE__CNormalGuildBattleStateCountDownGetTerm6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateCountDown* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_user(_this, GUILD_BATTLE__CNormalGuildBattleStateCountDowndtor_CNormalGuildBattleStateCountDown8_next);
             };
             
-            hook_record CNormalGuildBattleStateCountDown_functions[] = {
+            static hook_record CNormalGuildBattleStateCountDown_functions[] = {
             {   (LPVOID)0x1403f0820L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateCountDownctor_CNormalGuildBattleStateCountDown2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

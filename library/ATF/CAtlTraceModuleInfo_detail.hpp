@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_ptr CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_next(nullptr);
-        info::CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_clbk CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_user(nullptr);
-        info::CAtlTraceModuleInfoName2_ptr CAtlTraceModuleInfoName2_next(nullptr);
-        info::CAtlTraceModuleInfoName2_clbk CAtlTraceModuleInfoName2_user(nullptr);
-        info::CAtlTraceModuleInfoPath3_ptr CAtlTraceModuleInfoPath3_next(nullptr);
-        info::CAtlTraceModuleInfoPath3_clbk CAtlTraceModuleInfoPath3_user(nullptr);
-        info::CAtlTraceModuleInfoReset4_ptr CAtlTraceModuleInfoReset4_next(nullptr);
-        info::CAtlTraceModuleInfoReset4_clbk CAtlTraceModuleInfoReset4_user(nullptr);
+        static info::CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_ptr CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_next(nullptr);
+        static info::CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_clbk CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_user(nullptr);
+        static info::CAtlTraceModuleInfoName2_ptr CAtlTraceModuleInfoName2_next(nullptr);
+        static info::CAtlTraceModuleInfoName2_clbk CAtlTraceModuleInfoName2_user(nullptr);
+        static info::CAtlTraceModuleInfoPath3_ptr CAtlTraceModuleInfoPath3_next(nullptr);
+        static info::CAtlTraceModuleInfoPath3_clbk CAtlTraceModuleInfoPath3_user(nullptr);
+        static info::CAtlTraceModuleInfoReset4_ptr CAtlTraceModuleInfoReset4_next(nullptr);
+        static info::CAtlTraceModuleInfoReset4_clbk CAtlTraceModuleInfoReset4_user(nullptr);
         
-        void CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_wrapper(struct CAtlTraceModuleInfo* _this)
+        static void CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_wrapper(struct CAtlTraceModuleInfo* _this)
         {
            CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_user(_this, CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_next);
         };
-        wchar_t* CAtlTraceModuleInfoName2_wrapper(struct CAtlTraceModuleInfo* _this)
+        static wchar_t* CAtlTraceModuleInfoName2_wrapper(struct CAtlTraceModuleInfo* _this)
         {
            return CAtlTraceModuleInfoName2_user(_this, CAtlTraceModuleInfoName2_next);
         };
-        wchar_t* CAtlTraceModuleInfoPath3_wrapper(struct CAtlTraceModuleInfo* _this)
+        static wchar_t* CAtlTraceModuleInfoPath3_wrapper(struct CAtlTraceModuleInfo* _this)
         {
            return CAtlTraceModuleInfoPath3_user(_this, CAtlTraceModuleInfoPath3_next);
         };
-        void CAtlTraceModuleInfoReset4_wrapper(struct CAtlTraceModuleInfo* _this, struct HINSTANCE__* hInst)
+        static void CAtlTraceModuleInfoReset4_wrapper(struct CAtlTraceModuleInfo* _this, struct HINSTANCE__* hInst)
         {
            CAtlTraceModuleInfoReset4_user(_this, hInst, CAtlTraceModuleInfoReset4_next);
         };
         
-        hook_record CAtlTraceModuleInfo_functions[] = {
+        static hook_record CAtlTraceModuleInfo_functions[] = {
         {   (LPVOID)0x140675cb0L,
             (LPVOID *)&CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_user,
             (LPVOID *)&CAtlTraceModuleInfoctor_CAtlTraceModuleInfo1_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

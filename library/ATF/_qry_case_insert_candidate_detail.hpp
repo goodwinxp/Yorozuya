@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_insert_candidatector__qry_case_insert_candidate2_ptr _qry_case_insert_candidatector__qry_case_insert_candidate2_next(nullptr);
-        info::_qry_case_insert_candidatector__qry_case_insert_candidate2_clbk _qry_case_insert_candidatector__qry_case_insert_candidate2_user(nullptr);
-        info::_qry_case_insert_candidatesize4_ptr _qry_case_insert_candidatesize4_next(nullptr);
-        info::_qry_case_insert_candidatesize4_clbk _qry_case_insert_candidatesize4_user(nullptr);
+        static info::_qry_case_insert_candidatector__qry_case_insert_candidate2_ptr _qry_case_insert_candidatector__qry_case_insert_candidate2_next(nullptr);
+        static info::_qry_case_insert_candidatector__qry_case_insert_candidate2_clbk _qry_case_insert_candidatector__qry_case_insert_candidate2_user(nullptr);
+        static info::_qry_case_insert_candidatesize4_ptr _qry_case_insert_candidatesize4_next(nullptr);
+        static info::_qry_case_insert_candidatesize4_clbk _qry_case_insert_candidatesize4_user(nullptr);
         
-        void _qry_case_insert_candidatector__qry_case_insert_candidate2_wrapper(struct _qry_case_insert_candidate* _this, char byR, uint16_t wIdx, unsigned int dwE, unsigned int dwS)
+        static void _qry_case_insert_candidatector__qry_case_insert_candidate2_wrapper(struct _qry_case_insert_candidate* _this, char byR, uint16_t wIdx, unsigned int dwE, unsigned int dwS)
         {
            _qry_case_insert_candidatector__qry_case_insert_candidate2_user(_this, byR, wIdx, dwE, dwS, _qry_case_insert_candidatector__qry_case_insert_candidate2_next);
         };
-        int _qry_case_insert_candidatesize4_wrapper(struct _qry_case_insert_candidate* _this)
+        static int _qry_case_insert_candidatesize4_wrapper(struct _qry_case_insert_candidate* _this)
         {
            return _qry_case_insert_candidatesize4_user(_this, _qry_case_insert_candidatesize4_next);
         };
         
-        hook_record _qry_case_insert_candidate_functions[] = {
+        static hook_record _qry_case_insert_candidate_functions[] = {
         {   (LPVOID)0x1402b6400L,
             (LPVOID *)&_qry_case_insert_candidatector__qry_case_insert_candidate2_user,
             (LPVOID *)&_qry_case_insert_candidatector__qry_case_insert_candidate2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

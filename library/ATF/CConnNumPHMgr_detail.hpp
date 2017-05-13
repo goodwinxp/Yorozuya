@@ -8,53 +8,53 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CConnNumPHMgrctor_CConnNumPHMgr2_ptr CConnNumPHMgrctor_CConnNumPHMgr2_next(nullptr);
-        info::CConnNumPHMgrctor_CConnNumPHMgr2_clbk CConnNumPHMgrctor_CConnNumPHMgr2_user(nullptr);
-        info::CConnNumPHMgrCheck4_ptr CConnNumPHMgrCheck4_next(nullptr);
-        info::CConnNumPHMgrCheck4_clbk CConnNumPHMgrCheck4_user(nullptr);
-        info::CConnNumPHMgrGetCurHour6_ptr CConnNumPHMgrGetCurHour6_next(nullptr);
-        info::CConnNumPHMgrGetCurHour6_clbk CConnNumPHMgrGetCurHour6_user(nullptr);
-        info::CConnNumPHMgrInit8_ptr CConnNumPHMgrInit8_next(nullptr);
-        info::CConnNumPHMgrInit8_clbk CConnNumPHMgrInit8_user(nullptr);
+        static info::CConnNumPHMgrctor_CConnNumPHMgr2_ptr CConnNumPHMgrctor_CConnNumPHMgr2_next(nullptr);
+        static info::CConnNumPHMgrctor_CConnNumPHMgr2_clbk CConnNumPHMgrctor_CConnNumPHMgr2_user(nullptr);
+        static info::CConnNumPHMgrCheck4_ptr CConnNumPHMgrCheck4_next(nullptr);
+        static info::CConnNumPHMgrCheck4_clbk CConnNumPHMgrCheck4_user(nullptr);
+        static info::CConnNumPHMgrGetCurHour6_ptr CConnNumPHMgrGetCurHour6_next(nullptr);
+        static info::CConnNumPHMgrGetCurHour6_clbk CConnNumPHMgrGetCurHour6_user(nullptr);
+        static info::CConnNumPHMgrInit8_ptr CConnNumPHMgrInit8_next(nullptr);
+        static info::CConnNumPHMgrInit8_clbk CConnNumPHMgrInit8_user(nullptr);
         
-        info::CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_ptr CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_next(nullptr);
-        info::CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_clbk CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_user(nullptr);
-        info::CConnNumPHMgr____cnt_per_hInit4_ptr CConnNumPHMgr____cnt_per_hInit4_next(nullptr);
-        info::CConnNumPHMgr____cnt_per_hInit4_clbk CConnNumPHMgr____cnt_per_hInit4_user(nullptr);
-        info::CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_ptr CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_next(nullptr);
-        info::CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_clbk CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_user(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_ptr CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_next(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_clbk CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_user(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hInit4_ptr CConnNumPHMgr____cnt_per_hInit4_next(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hInit4_clbk CConnNumPHMgr____cnt_per_hInit4_user(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_ptr CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_next(nullptr);
+        static info::CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_clbk CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_user(nullptr);
         
-        void CConnNumPHMgrctor_CConnNumPHMgr2_wrapper(struct CConnNumPHMgr* _this)
+        static void CConnNumPHMgrctor_CConnNumPHMgr2_wrapper(struct CConnNumPHMgr* _this)
         {
            CConnNumPHMgrctor_CConnNumPHMgr2_user(_this, CConnNumPHMgrctor_CConnNumPHMgr2_next);
         };
-        struct _USER_NUM_SHEET* CConnNumPHMgrCheck4_wrapper(struct CConnNumPHMgr* _this, int nLoginNum)
+        static struct _USER_NUM_SHEET* CConnNumPHMgrCheck4_wrapper(struct CConnNumPHMgr* _this, int nLoginNum)
         {
            return CConnNumPHMgrCheck4_user(_this, nLoginNum, CConnNumPHMgrCheck4_next);
         };
-        int CConnNumPHMgrGetCurHour6_wrapper(struct CConnNumPHMgr* _this)
+        static int CConnNumPHMgrGetCurHour6_wrapper(struct CConnNumPHMgr* _this)
         {
            return CConnNumPHMgrGetCurHour6_user(_this, CConnNumPHMgrGetCurHour6_next);
         };
-        void CConnNumPHMgrInit8_wrapper(struct CConnNumPHMgr* _this)
+        static void CConnNumPHMgrInit8_wrapper(struct CConnNumPHMgr* _this)
         {
            CConnNumPHMgrInit8_user(_this, CConnNumPHMgrInit8_next);
         };
         
-        int CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
+        static int CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
         {
            return CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_user(_this, CConnNumPHMgr____cnt_per_hGetAverageUserNumPerHour2_next);
         };
-        void CConnNumPHMgr____cnt_per_hInit4_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
+        static void CConnNumPHMgr____cnt_per_hInit4_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
         {
            CConnNumPHMgr____cnt_per_hInit4_user(_this, CConnNumPHMgr____cnt_per_hInit4_next);
         };
-        void CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
+        static void CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_wrapper(struct CConnNumPHMgr::__cnt_per_h* _this)
         {
            CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_user(_this, CConnNumPHMgr____cnt_per_hctor___cnt_per_h6_next);
         };
         
-        hook_record CConnNumPHMgr_functions[] = {
+        static hook_record CConnNumPHMgr_functions[] = {
         {   (LPVOID)0x140202d70L,
             (LPVOID *)&CConnNumPHMgrctor_CConnNumPHMgr2_user,
             (LPVOID *)&CConnNumPHMgrctor_CConnNumPHMgr2_next,
@@ -94,5 +94,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

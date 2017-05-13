@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_force_db_loadctor__force_db_load2_ptr _force_db_loadctor__force_db_load2_next(nullptr);
-        info::_force_db_loadctor__force_db_load2_clbk _force_db_loadctor__force_db_load2_user(nullptr);
+        static info::_force_db_loadctor__force_db_load2_ptr _force_db_loadctor__force_db_load2_next(nullptr);
+        static info::_force_db_loadctor__force_db_load2_clbk _force_db_loadctor__force_db_load2_user(nullptr);
         
-        void _force_db_loadctor__force_db_load2_wrapper(struct _force_db_load* _this)
+        static void _force_db_loadctor__force_db_load2_wrapper(struct _force_db_load* _this)
         {
            _force_db_loadctor__force_db_load2_user(_this, _force_db_loadctor__force_db_load2_next);
         };
         
-        hook_record _force_db_load_functions[] = {
+        static hook_record _force_db_load_functions[] = {
         {   (LPVOID)0x14010dca0L,
             (LPVOID *)&_force_db_loadctor__force_db_load2_user,
             (LPVOID *)&_force_db_loadctor__force_db_load2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

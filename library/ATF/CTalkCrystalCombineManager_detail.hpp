@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_ptr CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_next(nullptr);
-        info::CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_clbk CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_user(nullptr);
-        info::CTalkCrystalCombineManagerCheckMixItem4_ptr CTalkCrystalCombineManagerCheckMixItem4_next(nullptr);
-        info::CTalkCrystalCombineManagerCheckMixItem4_clbk CTalkCrystalCombineManagerCheckMixItem4_user(nullptr);
-        info::CTalkCrystalCombineManagerCombinePreProcess6_ptr CTalkCrystalCombineManagerCombinePreProcess6_next(nullptr);
-        info::CTalkCrystalCombineManagerCombinePreProcess6_clbk CTalkCrystalCombineManagerCombinePreProcess6_user(nullptr);
-        info::CTalkCrystalCombineManagerCombineProcess8_ptr CTalkCrystalCombineManagerCombineProcess8_next(nullptr);
-        info::CTalkCrystalCombineManagerCombineProcess8_clbk CTalkCrystalCombineManagerCombineProcess8_user(nullptr);
-        info::CTalkCrystalCombineManagerDestory10_ptr CTalkCrystalCombineManagerDestory10_next(nullptr);
-        info::CTalkCrystalCombineManagerDestory10_clbk CTalkCrystalCombineManagerDestory10_user(nullptr);
-        info::CTalkCrystalCombineManagerDoit12_ptr CTalkCrystalCombineManagerDoit12_next(nullptr);
-        info::CTalkCrystalCombineManagerDoit12_clbk CTalkCrystalCombineManagerDoit12_user(nullptr);
-        info::CTalkCrystalCombineManagerGetMixNode14_ptr CTalkCrystalCombineManagerGetMixNode14_next(nullptr);
-        info::CTalkCrystalCombineManagerGetMixNode14_clbk CTalkCrystalCombineManagerGetMixNode14_user(nullptr);
-        info::CTalkCrystalCombineManagerInit16_ptr CTalkCrystalCombineManagerInit16_next(nullptr);
-        info::CTalkCrystalCombineManagerInit16_clbk CTalkCrystalCombineManagerInit16_user(nullptr);
-        info::CTalkCrystalCombineManagerInstance18_ptr CTalkCrystalCombineManagerInstance18_next(nullptr);
-        info::CTalkCrystalCombineManagerInstance18_clbk CTalkCrystalCombineManagerInstance18_user(nullptr);
-        info::CTalkCrystalCombineManagerMakeMixNode20_ptr CTalkCrystalCombineManagerMakeMixNode20_next(nullptr);
-        info::CTalkCrystalCombineManagerMakeMixNode20_clbk CTalkCrystalCombineManagerMakeMixNode20_user(nullptr);
-        info::CTalkCrystalCombineManagerPush22_ptr CTalkCrystalCombineManagerPush22_next(nullptr);
-        info::CTalkCrystalCombineManagerPush22_clbk CTalkCrystalCombineManagerPush22_user(nullptr);
+        static info::CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_ptr CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_next(nullptr);
+        static info::CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_clbk CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_user(nullptr);
+        static info::CTalkCrystalCombineManagerCheckMixItem4_ptr CTalkCrystalCombineManagerCheckMixItem4_next(nullptr);
+        static info::CTalkCrystalCombineManagerCheckMixItem4_clbk CTalkCrystalCombineManagerCheckMixItem4_user(nullptr);
+        static info::CTalkCrystalCombineManagerCombinePreProcess6_ptr CTalkCrystalCombineManagerCombinePreProcess6_next(nullptr);
+        static info::CTalkCrystalCombineManagerCombinePreProcess6_clbk CTalkCrystalCombineManagerCombinePreProcess6_user(nullptr);
+        static info::CTalkCrystalCombineManagerCombineProcess8_ptr CTalkCrystalCombineManagerCombineProcess8_next(nullptr);
+        static info::CTalkCrystalCombineManagerCombineProcess8_clbk CTalkCrystalCombineManagerCombineProcess8_user(nullptr);
+        static info::CTalkCrystalCombineManagerDestory10_ptr CTalkCrystalCombineManagerDestory10_next(nullptr);
+        static info::CTalkCrystalCombineManagerDestory10_clbk CTalkCrystalCombineManagerDestory10_user(nullptr);
+        static info::CTalkCrystalCombineManagerDoit12_ptr CTalkCrystalCombineManagerDoit12_next(nullptr);
+        static info::CTalkCrystalCombineManagerDoit12_clbk CTalkCrystalCombineManagerDoit12_user(nullptr);
+        static info::CTalkCrystalCombineManagerGetMixNode14_ptr CTalkCrystalCombineManagerGetMixNode14_next(nullptr);
+        static info::CTalkCrystalCombineManagerGetMixNode14_clbk CTalkCrystalCombineManagerGetMixNode14_user(nullptr);
+        static info::CTalkCrystalCombineManagerInit16_ptr CTalkCrystalCombineManagerInit16_next(nullptr);
+        static info::CTalkCrystalCombineManagerInit16_clbk CTalkCrystalCombineManagerInit16_user(nullptr);
+        static info::CTalkCrystalCombineManagerInstance18_ptr CTalkCrystalCombineManagerInstance18_next(nullptr);
+        static info::CTalkCrystalCombineManagerInstance18_clbk CTalkCrystalCombineManagerInstance18_user(nullptr);
+        static info::CTalkCrystalCombineManagerMakeMixNode20_ptr CTalkCrystalCombineManagerMakeMixNode20_next(nullptr);
+        static info::CTalkCrystalCombineManagerMakeMixNode20_clbk CTalkCrystalCombineManagerMakeMixNode20_user(nullptr);
+        static info::CTalkCrystalCombineManagerPush22_ptr CTalkCrystalCombineManagerPush22_next(nullptr);
+        static info::CTalkCrystalCombineManagerPush22_clbk CTalkCrystalCombineManagerPush22_user(nullptr);
         
-        void CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_wrapper(struct CTalkCrystalCombineManager* _this)
+        static void CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_wrapper(struct CTalkCrystalCombineManager* _this)
         {
            CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_user(_this, CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_next);
         };
-        char CTalkCrystalCombineManagerCheckMixItem4_wrapper(struct CTalkCrystalCombineManager* _this, struct _STORAGE_LIST::_db_con* pItem, int* pMixIndex, char* pbyTableCode, uint16_t* pwItemIndex, int* pnNeedItemCount)
+        static char CTalkCrystalCombineManagerCheckMixItem4_wrapper(struct CTalkCrystalCombineManager* _this, struct _STORAGE_LIST::_db_con* pItem, int* pMixIndex, char* pbyTableCode, uint16_t* pwItemIndex, int* pnNeedItemCount)
         {
            return CTalkCrystalCombineManagerCheckMixItem4_user(_this, pItem, pMixIndex, pbyTableCode, pwItemIndex, pnNeedItemCount, CTalkCrystalCombineManagerCheckMixItem4_next);
         };
-        char CTalkCrystalCombineManagerCombinePreProcess6_wrapper(struct CTalkCrystalCombineManager* _this, struct CPlayer* pPlayer, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
+        static char CTalkCrystalCombineManagerCombinePreProcess6_wrapper(struct CTalkCrystalCombineManager* _this, struct CPlayer* pPlayer, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
         {
            return CTalkCrystalCombineManagerCombinePreProcess6_user(_this, pPlayer, byExchangeNum, pList, CTalkCrystalCombineManagerCombinePreProcess6_next);
         };
-        char CTalkCrystalCombineManagerCombineProcess8_wrapper(struct CTalkCrystalCombineManager* _this)
+        static char CTalkCrystalCombineManagerCombineProcess8_wrapper(struct CTalkCrystalCombineManager* _this)
         {
            return CTalkCrystalCombineManagerCombineProcess8_user(_this, CTalkCrystalCombineManagerCombineProcess8_next);
         };
-        void CTalkCrystalCombineManagerDestory10_wrapper()
+        static void CTalkCrystalCombineManagerDestory10_wrapper()
         {
            CTalkCrystalCombineManagerDestory10_user(CTalkCrystalCombineManagerDestory10_next);
         };
-        bool CTalkCrystalCombineManagerDoit12_wrapper(struct CTalkCrystalCombineManager* _this, struct CPlayer* pPlayer, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
+        static bool CTalkCrystalCombineManagerDoit12_wrapper(struct CTalkCrystalCombineManager* _this, struct CPlayer* pPlayer, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
         {
            return CTalkCrystalCombineManagerDoit12_user(_this, pPlayer, byExchangeNum, pList, CTalkCrystalCombineManagerDoit12_next);
         };
-        struct _talk_crystal_matrial_combine_node* CTalkCrystalCombineManagerGetMixNode14_wrapper(struct CTalkCrystalCombineManager* _this, int nMixIndex)
+        static struct _talk_crystal_matrial_combine_node* CTalkCrystalCombineManagerGetMixNode14_wrapper(struct CTalkCrystalCombineManager* _this, int nMixIndex)
         {
            return CTalkCrystalCombineManagerGetMixNode14_user(_this, nMixIndex, CTalkCrystalCombineManagerGetMixNode14_next);
         };
-        void CTalkCrystalCombineManagerInit16_wrapper(struct CTalkCrystalCombineManager* _this)
+        static void CTalkCrystalCombineManagerInit16_wrapper(struct CTalkCrystalCombineManager* _this)
         {
            CTalkCrystalCombineManagerInit16_user(_this, CTalkCrystalCombineManagerInit16_next);
         };
-        struct CTalkCrystalCombineManager* CTalkCrystalCombineManagerInstance18_wrapper()
+        static struct CTalkCrystalCombineManager* CTalkCrystalCombineManagerInstance18_wrapper()
         {
            return CTalkCrystalCombineManagerInstance18_user(CTalkCrystalCombineManagerInstance18_next);
         };
-        struct _talk_crystal_matrial_combine_node* CTalkCrystalCombineManagerMakeMixNode20_wrapper(struct CTalkCrystalCombineManager* _this, int nMixIndex, int nNeedItemNum, char byTableCode, uint16_t wItemIndex)
+        static struct _talk_crystal_matrial_combine_node* CTalkCrystalCombineManagerMakeMixNode20_wrapper(struct CTalkCrystalCombineManager* _this, int nMixIndex, int nNeedItemNum, char byTableCode, uint16_t wItemIndex)
         {
            return CTalkCrystalCombineManagerMakeMixNode20_user(_this, nMixIndex, nNeedItemNum, byTableCode, wItemIndex, CTalkCrystalCombineManagerMakeMixNode20_next);
         };
-        char CTalkCrystalCombineManagerPush22_wrapper(struct CTalkCrystalCombineManager* _this, struct _STORAGE_LIST::_db_con* pItem, char byUseCount, char byClientIndex)
+        static char CTalkCrystalCombineManagerPush22_wrapper(struct CTalkCrystalCombineManager* _this, struct _STORAGE_LIST::_db_con* pItem, char byUseCount, char byClientIndex)
         {
            return CTalkCrystalCombineManagerPush22_user(_this, pItem, byUseCount, byClientIndex, CTalkCrystalCombineManagerPush22_next);
         };
         
-        hook_record CTalkCrystalCombineManager_functions[] = {
+        static hook_record CTalkCrystalCombineManager_functions[] = {
         {   (LPVOID)0x1404320b0L,
             (LPVOID *)&CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_user,
             (LPVOID *)&CTalkCrystalCombineManagerctor_CTalkCrystalCombineManager2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

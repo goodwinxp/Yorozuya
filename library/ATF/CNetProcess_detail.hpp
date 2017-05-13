@@ -8,249 +8,249 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetProcessAcceptThread2_ptr CNetProcessAcceptThread2_next(nullptr);
-        info::CNetProcessAcceptThread2_clbk CNetProcessAcceptThread2_user(nullptr);
-        info::CNetProcessctor_CNetProcess4_ptr CNetProcessctor_CNetProcess4_next(nullptr);
-        info::CNetProcessctor_CNetProcess4_clbk CNetProcessctor_CNetProcess4_user(nullptr);
-        info::CNetProcessCloseAll6_ptr CNetProcessCloseAll6_next(nullptr);
-        info::CNetProcessCloseAll6_clbk CNetProcessCloseAll6_user(nullptr);
-        info::CNetProcessCloseSocket8_ptr CNetProcessCloseSocket8_next(nullptr);
-        info::CNetProcessCloseSocket8_clbk CNetProcessCloseSocket8_user(nullptr);
-        info::CNetProcessCompleteAnsyncConnect10_ptr CNetProcessCompleteAnsyncConnect10_next(nullptr);
-        info::CNetProcessCompleteAnsyncConnect10_clbk CNetProcessCompleteAnsyncConnect10_user(nullptr);
-        info::CNetProcessConnectThread12_ptr CNetProcessConnectThread12_next(nullptr);
-        info::CNetProcessConnectThread12_clbk CNetProcessConnectThread12_user(nullptr);
-        info::CNetProcessFindKeyFromWaitList14_ptr CNetProcessFindKeyFromWaitList14_next(nullptr);
-        info::CNetProcessFindKeyFromWaitList14_clbk CNetProcessFindKeyFromWaitList14_user(nullptr);
-        info::CNetProcessGetContextHandle16_ptr CNetProcessGetContextHandle16_next(nullptr);
-        info::CNetProcessGetContextHandle16_clbk CNetProcessGetContextHandle16_user(nullptr);
-        info::CNetProcessGetSendThreadFrame18_ptr CNetProcessGetSendThreadFrame18_next(nullptr);
-        info::CNetProcessGetSendThreadFrame18_clbk CNetProcessGetSendThreadFrame18_user(nullptr);
-        info::CNetProcessIOLogFileOperSetting20_ptr CNetProcessIOLogFileOperSetting20_next(nullptr);
-        info::CNetProcessIOLogFileOperSetting20_clbk CNetProcessIOLogFileOperSetting20_user(nullptr);
-        info::CNetProcessLoadSendMsg22_ptr CNetProcessLoadSendMsg22_next(nullptr);
-        info::CNetProcessLoadSendMsg22_clbk CNetProcessLoadSendMsg22_user(nullptr);
-        info::CNetProcessLoadSendMsg24_ptr CNetProcessLoadSendMsg24_next(nullptr);
-        info::CNetProcessLoadSendMsg24_clbk CNetProcessLoadSendMsg24_user(nullptr);
-        info::CNetProcessLogFileOperSetting26_ptr CNetProcessLogFileOperSetting26_next(nullptr);
-        info::CNetProcessLogFileOperSetting26_clbk CNetProcessLogFileOperSetting26_user(nullptr);
-        info::CNetProcessNetEventThread28_ptr CNetProcessNetEventThread28_next(nullptr);
-        info::CNetProcessNetEventThread28_clbk CNetProcessNetEventThread28_user(nullptr);
-        info::CNetProcessOnLoop30_ptr CNetProcessOnLoop30_next(nullptr);
-        info::CNetProcessOnLoop30_clbk CNetProcessOnLoop30_user(nullptr);
-        info::CNetProcessOnLoop_Receipt32_ptr CNetProcessOnLoop_Receipt32_next(nullptr);
-        info::CNetProcessOnLoop_Receipt32_clbk CNetProcessOnLoop_Receipt32_user(nullptr);
-        info::CNetProcessPushAnsyncConnect34_ptr CNetProcessPushAnsyncConnect34_next(nullptr);
-        info::CNetProcessPushAnsyncConnect34_clbk CNetProcessPushAnsyncConnect34_user(nullptr);
-        info::CNetProcessPushCloseNode36_ptr CNetProcessPushCloseNode36_next(nullptr);
-        info::CNetProcessPushCloseNode36_clbk CNetProcessPushCloseNode36_user(nullptr);
-        info::CNetProcessPushKeyCheckList38_ptr CNetProcessPushKeyCheckList38_next(nullptr);
-        info::CNetProcessPushKeyCheckList38_clbk CNetProcessPushKeyCheckList38_user(nullptr);
-        info::CNetProcessRecvThread40_ptr CNetProcessRecvThread40_next(nullptr);
-        info::CNetProcessRecvThread40_clbk CNetProcessRecvThread40_user(nullptr);
-        info::CNetProcessRelease42_ptr CNetProcessRelease42_next(nullptr);
-        info::CNetProcessRelease42_clbk CNetProcessRelease42_user(nullptr);
-        info::CNetProcessSendThread44_ptr CNetProcessSendThread44_next(nullptr);
-        info::CNetProcessSendThread44_clbk CNetProcessSendThread44_user(nullptr);
-        info::CNetProcessSetContextHandle46_ptr CNetProcessSetContextHandle46_next(nullptr);
-        info::CNetProcessSetContextHandle46_clbk CNetProcessSetContextHandle46_user(nullptr);
-        info::CNetProcessSetProcess48_ptr CNetProcessSetProcess48_next(nullptr);
-        info::CNetProcessSetProcess48_clbk CNetProcessSetProcess48_user(nullptr);
-        info::CNetProcessStartSpeedHackCheck50_ptr CNetProcessStartSpeedHackCheck50_next(nullptr);
-        info::CNetProcessStartSpeedHackCheck50_clbk CNetProcessStartSpeedHackCheck50_user(nullptr);
-        info::CNetProcess_CheckSend52_ptr CNetProcess_CheckSend52_next(nullptr);
-        info::CNetProcess_CheckSend52_clbk CNetProcess_CheckSend52_user(nullptr);
-        info::CNetProcess_CheckWaitKey54_ptr CNetProcess_CheckWaitKey54_next(nullptr);
-        info::CNetProcess_CheckWaitKey54_clbk CNetProcess_CheckWaitKey54_user(nullptr);
-        info::CNetProcess_CkeckKeyCertifyDeley56_ptr CNetProcess_CkeckKeyCertifyDeley56_next(nullptr);
-        info::CNetProcess_CkeckKeyCertifyDeley56_clbk CNetProcess_CkeckKeyCertifyDeley56_user(nullptr);
-        info::CNetProcess_CkeckRecvBreak58_ptr CNetProcess_CkeckRecvBreak58_next(nullptr);
-        info::CNetProcess_CkeckRecvBreak58_clbk CNetProcess_CkeckRecvBreak58_user(nullptr);
-        info::CNetProcess_CkeckSpeedHackDeley60_ptr CNetProcess_CkeckSpeedHackDeley60_next(nullptr);
-        info::CNetProcess_CkeckSpeedHackDeley60_clbk CNetProcess_CkeckSpeedHackDeley60_user(nullptr);
-        info::CNetProcess_ForceCloseLoop62_ptr CNetProcess_ForceCloseLoop62_next(nullptr);
-        info::CNetProcess_ForceCloseLoop62_clbk CNetProcess_ForceCloseLoop62_user(nullptr);
-        info::CNetProcess_InternalPacketProcess64_ptr CNetProcess_InternalPacketProcess64_next(nullptr);
-        info::CNetProcess_InternalPacketProcess64_clbk CNetProcess_InternalPacketProcess64_user(nullptr);
-        info::CNetProcess_PopRecvMsg66_ptr CNetProcess_PopRecvMsg66_next(nullptr);
-        info::CNetProcess_PopRecvMsg66_clbk CNetProcess_PopRecvMsg66_user(nullptr);
-        info::CNetProcess_Receipt68_ptr CNetProcess_Receipt68_next(nullptr);
-        info::CNetProcess_Receipt68_clbk CNetProcess_Receipt68_user(nullptr);
-        info::CNetProcess_ResponSpeedHack70_ptr CNetProcess_ResponSpeedHack70_next(nullptr);
-        info::CNetProcess_ResponSpeedHack70_clbk CNetProcess_ResponSpeedHack70_user(nullptr);
-        info::CNetProcess_SendLoop72_ptr CNetProcess_SendLoop72_next(nullptr);
-        info::CNetProcess_SendLoop72_clbk CNetProcess_SendLoop72_user(nullptr);
-        info::CNetProcess_SendSpeedHackCheckMsg74_ptr CNetProcess_SendSpeedHackCheckMsg74_next(nullptr);
-        info::CNetProcess_SendSpeedHackCheckMsg74_clbk CNetProcess_SendSpeedHackCheckMsg74_user(nullptr);
-        info::CNetProcesswt_AcceptClient79_ptr CNetProcesswt_AcceptClient79_next(nullptr);
-        info::CNetProcesswt_AcceptClient79_clbk CNetProcesswt_AcceptClient79_user(nullptr);
-        info::CNetProcesswt_CloseClient81_ptr CNetProcesswt_CloseClient81_next(nullptr);
-        info::CNetProcesswt_CloseClient81_clbk CNetProcesswt_CloseClient81_user(nullptr);
-        info::CNetProcessdtor_CNetProcess83_ptr CNetProcessdtor_CNetProcess83_next(nullptr);
-        info::CNetProcessdtor_CNetProcess83_clbk CNetProcessdtor_CNetProcess83_user(nullptr);
+        static info::CNetProcessAcceptThread2_ptr CNetProcessAcceptThread2_next(nullptr);
+        static info::CNetProcessAcceptThread2_clbk CNetProcessAcceptThread2_user(nullptr);
+        static info::CNetProcessctor_CNetProcess4_ptr CNetProcessctor_CNetProcess4_next(nullptr);
+        static info::CNetProcessctor_CNetProcess4_clbk CNetProcessctor_CNetProcess4_user(nullptr);
+        static info::CNetProcessCloseAll6_ptr CNetProcessCloseAll6_next(nullptr);
+        static info::CNetProcessCloseAll6_clbk CNetProcessCloseAll6_user(nullptr);
+        static info::CNetProcessCloseSocket8_ptr CNetProcessCloseSocket8_next(nullptr);
+        static info::CNetProcessCloseSocket8_clbk CNetProcessCloseSocket8_user(nullptr);
+        static info::CNetProcessCompleteAnsyncConnect10_ptr CNetProcessCompleteAnsyncConnect10_next(nullptr);
+        static info::CNetProcessCompleteAnsyncConnect10_clbk CNetProcessCompleteAnsyncConnect10_user(nullptr);
+        static info::CNetProcessConnectThread12_ptr CNetProcessConnectThread12_next(nullptr);
+        static info::CNetProcessConnectThread12_clbk CNetProcessConnectThread12_user(nullptr);
+        static info::CNetProcessFindKeyFromWaitList14_ptr CNetProcessFindKeyFromWaitList14_next(nullptr);
+        static info::CNetProcessFindKeyFromWaitList14_clbk CNetProcessFindKeyFromWaitList14_user(nullptr);
+        static info::CNetProcessGetContextHandle16_ptr CNetProcessGetContextHandle16_next(nullptr);
+        static info::CNetProcessGetContextHandle16_clbk CNetProcessGetContextHandle16_user(nullptr);
+        static info::CNetProcessGetSendThreadFrame18_ptr CNetProcessGetSendThreadFrame18_next(nullptr);
+        static info::CNetProcessGetSendThreadFrame18_clbk CNetProcessGetSendThreadFrame18_user(nullptr);
+        static info::CNetProcessIOLogFileOperSetting20_ptr CNetProcessIOLogFileOperSetting20_next(nullptr);
+        static info::CNetProcessIOLogFileOperSetting20_clbk CNetProcessIOLogFileOperSetting20_user(nullptr);
+        static info::CNetProcessLoadSendMsg22_ptr CNetProcessLoadSendMsg22_next(nullptr);
+        static info::CNetProcessLoadSendMsg22_clbk CNetProcessLoadSendMsg22_user(nullptr);
+        static info::CNetProcessLoadSendMsg24_ptr CNetProcessLoadSendMsg24_next(nullptr);
+        static info::CNetProcessLoadSendMsg24_clbk CNetProcessLoadSendMsg24_user(nullptr);
+        static info::CNetProcessLogFileOperSetting26_ptr CNetProcessLogFileOperSetting26_next(nullptr);
+        static info::CNetProcessLogFileOperSetting26_clbk CNetProcessLogFileOperSetting26_user(nullptr);
+        static info::CNetProcessNetEventThread28_ptr CNetProcessNetEventThread28_next(nullptr);
+        static info::CNetProcessNetEventThread28_clbk CNetProcessNetEventThread28_user(nullptr);
+        static info::CNetProcessOnLoop30_ptr CNetProcessOnLoop30_next(nullptr);
+        static info::CNetProcessOnLoop30_clbk CNetProcessOnLoop30_user(nullptr);
+        static info::CNetProcessOnLoop_Receipt32_ptr CNetProcessOnLoop_Receipt32_next(nullptr);
+        static info::CNetProcessOnLoop_Receipt32_clbk CNetProcessOnLoop_Receipt32_user(nullptr);
+        static info::CNetProcessPushAnsyncConnect34_ptr CNetProcessPushAnsyncConnect34_next(nullptr);
+        static info::CNetProcessPushAnsyncConnect34_clbk CNetProcessPushAnsyncConnect34_user(nullptr);
+        static info::CNetProcessPushCloseNode36_ptr CNetProcessPushCloseNode36_next(nullptr);
+        static info::CNetProcessPushCloseNode36_clbk CNetProcessPushCloseNode36_user(nullptr);
+        static info::CNetProcessPushKeyCheckList38_ptr CNetProcessPushKeyCheckList38_next(nullptr);
+        static info::CNetProcessPushKeyCheckList38_clbk CNetProcessPushKeyCheckList38_user(nullptr);
+        static info::CNetProcessRecvThread40_ptr CNetProcessRecvThread40_next(nullptr);
+        static info::CNetProcessRecvThread40_clbk CNetProcessRecvThread40_user(nullptr);
+        static info::CNetProcessRelease42_ptr CNetProcessRelease42_next(nullptr);
+        static info::CNetProcessRelease42_clbk CNetProcessRelease42_user(nullptr);
+        static info::CNetProcessSendThread44_ptr CNetProcessSendThread44_next(nullptr);
+        static info::CNetProcessSendThread44_clbk CNetProcessSendThread44_user(nullptr);
+        static info::CNetProcessSetContextHandle46_ptr CNetProcessSetContextHandle46_next(nullptr);
+        static info::CNetProcessSetContextHandle46_clbk CNetProcessSetContextHandle46_user(nullptr);
+        static info::CNetProcessSetProcess48_ptr CNetProcessSetProcess48_next(nullptr);
+        static info::CNetProcessSetProcess48_clbk CNetProcessSetProcess48_user(nullptr);
+        static info::CNetProcessStartSpeedHackCheck50_ptr CNetProcessStartSpeedHackCheck50_next(nullptr);
+        static info::CNetProcessStartSpeedHackCheck50_clbk CNetProcessStartSpeedHackCheck50_user(nullptr);
+        static info::CNetProcess_CheckSend52_ptr CNetProcess_CheckSend52_next(nullptr);
+        static info::CNetProcess_CheckSend52_clbk CNetProcess_CheckSend52_user(nullptr);
+        static info::CNetProcess_CheckWaitKey54_ptr CNetProcess_CheckWaitKey54_next(nullptr);
+        static info::CNetProcess_CheckWaitKey54_clbk CNetProcess_CheckWaitKey54_user(nullptr);
+        static info::CNetProcess_CkeckKeyCertifyDeley56_ptr CNetProcess_CkeckKeyCertifyDeley56_next(nullptr);
+        static info::CNetProcess_CkeckKeyCertifyDeley56_clbk CNetProcess_CkeckKeyCertifyDeley56_user(nullptr);
+        static info::CNetProcess_CkeckRecvBreak58_ptr CNetProcess_CkeckRecvBreak58_next(nullptr);
+        static info::CNetProcess_CkeckRecvBreak58_clbk CNetProcess_CkeckRecvBreak58_user(nullptr);
+        static info::CNetProcess_CkeckSpeedHackDeley60_ptr CNetProcess_CkeckSpeedHackDeley60_next(nullptr);
+        static info::CNetProcess_CkeckSpeedHackDeley60_clbk CNetProcess_CkeckSpeedHackDeley60_user(nullptr);
+        static info::CNetProcess_ForceCloseLoop62_ptr CNetProcess_ForceCloseLoop62_next(nullptr);
+        static info::CNetProcess_ForceCloseLoop62_clbk CNetProcess_ForceCloseLoop62_user(nullptr);
+        static info::CNetProcess_InternalPacketProcess64_ptr CNetProcess_InternalPacketProcess64_next(nullptr);
+        static info::CNetProcess_InternalPacketProcess64_clbk CNetProcess_InternalPacketProcess64_user(nullptr);
+        static info::CNetProcess_PopRecvMsg66_ptr CNetProcess_PopRecvMsg66_next(nullptr);
+        static info::CNetProcess_PopRecvMsg66_clbk CNetProcess_PopRecvMsg66_user(nullptr);
+        static info::CNetProcess_Receipt68_ptr CNetProcess_Receipt68_next(nullptr);
+        static info::CNetProcess_Receipt68_clbk CNetProcess_Receipt68_user(nullptr);
+        static info::CNetProcess_ResponSpeedHack70_ptr CNetProcess_ResponSpeedHack70_next(nullptr);
+        static info::CNetProcess_ResponSpeedHack70_clbk CNetProcess_ResponSpeedHack70_user(nullptr);
+        static info::CNetProcess_SendLoop72_ptr CNetProcess_SendLoop72_next(nullptr);
+        static info::CNetProcess_SendLoop72_clbk CNetProcess_SendLoop72_user(nullptr);
+        static info::CNetProcess_SendSpeedHackCheckMsg74_ptr CNetProcess_SendSpeedHackCheckMsg74_next(nullptr);
+        static info::CNetProcess_SendSpeedHackCheckMsg74_clbk CNetProcess_SendSpeedHackCheckMsg74_user(nullptr);
+        static info::CNetProcesswt_AcceptClient79_ptr CNetProcesswt_AcceptClient79_next(nullptr);
+        static info::CNetProcesswt_AcceptClient79_clbk CNetProcesswt_AcceptClient79_user(nullptr);
+        static info::CNetProcesswt_CloseClient81_ptr CNetProcesswt_CloseClient81_next(nullptr);
+        static info::CNetProcesswt_CloseClient81_clbk CNetProcesswt_CloseClient81_user(nullptr);
+        static info::CNetProcessdtor_CNetProcess83_ptr CNetProcessdtor_CNetProcess83_next(nullptr);
+        static info::CNetProcessdtor_CNetProcess83_clbk CNetProcessdtor_CNetProcess83_user(nullptr);
         
-        void CNetProcessAcceptThread2_wrapper(void* pv)
+        static void CNetProcessAcceptThread2_wrapper(void* pv)
         {
            CNetProcessAcceptThread2_user(pv, CNetProcessAcceptThread2_next);
         };
-        void CNetProcessctor_CNetProcess4_wrapper(struct CNetProcess* _this)
+        static void CNetProcessctor_CNetProcess4_wrapper(struct CNetProcess* _this)
         {
            CNetProcessctor_CNetProcess4_user(_this, CNetProcessctor_CNetProcess4_next);
         };
-        void CNetProcessCloseAll6_wrapper(struct CNetProcess* _this)
+        static void CNetProcessCloseAll6_wrapper(struct CNetProcess* _this)
         {
            CNetProcessCloseAll6_user(_this, CNetProcessCloseAll6_next);
         };
-        void CNetProcessCloseSocket8_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, bool bSlowClose)
+        static void CNetProcessCloseSocket8_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, bool bSlowClose)
         {
            CNetProcessCloseSocket8_user(_this, dwSocketIndex, bSlowClose, CNetProcessCloseSocket8_next);
         };
-        void CNetProcessCompleteAnsyncConnect10_wrapper(struct CNetProcess* _this)
+        static void CNetProcessCompleteAnsyncConnect10_wrapper(struct CNetProcess* _this)
         {
            CNetProcessCompleteAnsyncConnect10_user(_this, CNetProcessCompleteAnsyncConnect10_next);
         };
-        void CNetProcessConnectThread12_wrapper(void* pv)
+        static void CNetProcessConnectThread12_wrapper(void* pv)
         {
            CNetProcessConnectThread12_user(pv, CNetProcessConnectThread12_next);
         };
-        bool CNetProcessFindKeyFromWaitList14_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, unsigned int dwSerial, unsigned int* pdwKey, int nUseKeyNum)
+        static bool CNetProcessFindKeyFromWaitList14_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, unsigned int dwSerial, unsigned int* pdwKey, int nUseKeyNum)
         {
            return CNetProcessFindKeyFromWaitList14_user(_this, dwSocketIndex, dwSerial, pdwKey, nUseKeyNum, CNetProcessFindKeyFromWaitList14_next);
         };
-        void* CNetProcessGetContextHandle16_wrapper(struct CNetProcess* _this, uint16_t wIndex)
+        static void* CNetProcessGetContextHandle16_wrapper(struct CNetProcess* _this, uint16_t wIndex)
         {
            return CNetProcessGetContextHandle16_user(_this, wIndex, CNetProcessGetContextHandle16_next);
         };
-        unsigned int CNetProcessGetSendThreadFrame18_wrapper(struct CNetProcess* _this)
+        static unsigned int CNetProcessGetSendThreadFrame18_wrapper(struct CNetProcess* _this)
         {
            return CNetProcessGetSendThreadFrame18_user(_this, CNetProcessGetSendThreadFrame18_next);
         };
-        void CNetProcessIOLogFileOperSetting20_wrapper(struct CNetProcess* _this, bool bOper)
+        static void CNetProcessIOLogFileOperSetting20_wrapper(struct CNetProcess* _this, bool bOper)
         {
            CNetProcessIOLogFileOperSetting20_user(_this, bOper, CNetProcessIOLogFileOperSetting20_next);
         };
-        int CNetProcessLoadSendMsg22_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, char* pbyType, char* szMsg, uint16_t nLen)
+        static int CNetProcessLoadSendMsg22_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, char* pbyType, char* szMsg, uint16_t nLen)
         {
            return CNetProcessLoadSendMsg22_user(_this, dwClientIndex, pbyType, szMsg, nLen, CNetProcessLoadSendMsg22_next);
         };
-        int CNetProcessLoadSendMsg24_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, uint16_t wType, char* szMsg, uint16_t nLen)
+        static int CNetProcessLoadSendMsg24_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, uint16_t wType, char* szMsg, uint16_t nLen)
         {
            return CNetProcessLoadSendMsg24_user(_this, dwClientIndex, wType, szMsg, nLen, CNetProcessLoadSendMsg24_next);
         };
-        void CNetProcessLogFileOperSetting26_wrapper(struct CNetProcess* _this, bool bRecv, bool bSend, bool bSystem)
+        static void CNetProcessLogFileOperSetting26_wrapper(struct CNetProcess* _this, bool bRecv, bool bSend, bool bSystem)
         {
            CNetProcessLogFileOperSetting26_user(_this, bRecv, bSend, bSystem, CNetProcessLogFileOperSetting26_next);
         };
-        void CNetProcessNetEventThread28_wrapper(void* pv)
+        static void CNetProcessNetEventThread28_wrapper(void* pv)
         {
            CNetProcessNetEventThread28_user(pv, CNetProcessNetEventThread28_next);
         };
-        void CNetProcessOnLoop30_wrapper(struct CNetProcess* _this)
+        static void CNetProcessOnLoop30_wrapper(struct CNetProcess* _this)
         {
            CNetProcessOnLoop30_user(_this, CNetProcessOnLoop30_next);
         };
-        void CNetProcessOnLoop_Receipt32_wrapper(struct CNetProcess* _this)
+        static void CNetProcessOnLoop_Receipt32_wrapper(struct CNetProcess* _this)
         {
            CNetProcessOnLoop_Receipt32_user(_this, CNetProcessOnLoop_Receipt32_next);
         };
-        bool CNetProcessPushAnsyncConnect34_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, struct sockaddr_in* pAddr)
+        static bool CNetProcessPushAnsyncConnect34_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, struct sockaddr_in* pAddr)
         {
            return CNetProcessPushAnsyncConnect34_user(_this, dwSocketIndex, pAddr, CNetProcessPushAnsyncConnect34_next);
         };
-        void CNetProcessPushCloseNode36_wrapper(struct CNetProcess* _this, int nIndex)
+        static void CNetProcessPushCloseNode36_wrapper(struct CNetProcess* _this, int nIndex)
         {
            CNetProcessPushCloseNode36_user(_this, nIndex, CNetProcessPushCloseNode36_next);
         };
-        bool CNetProcessPushKeyCheckList38_wrapper(struct CNetProcess* _this, unsigned int dwSerial, unsigned int dwIP, unsigned int* pdwKey, int nUseKeyNum)
+        static bool CNetProcessPushKeyCheckList38_wrapper(struct CNetProcess* _this, unsigned int dwSerial, unsigned int dwIP, unsigned int* pdwKey, int nUseKeyNum)
         {
            return CNetProcessPushKeyCheckList38_user(_this, dwSerial, dwIP, pdwKey, nUseKeyNum, CNetProcessPushKeyCheckList38_next);
         };
-        void CNetProcessRecvThread40_wrapper(void* pv)
+        static void CNetProcessRecvThread40_wrapper(void* pv)
         {
            CNetProcessRecvThread40_user(pv, CNetProcessRecvThread40_next);
         };
-        void CNetProcessRelease42_wrapper(struct CNetProcess* _this)
+        static void CNetProcessRelease42_wrapper(struct CNetProcess* _this)
         {
            CNetProcessRelease42_user(_this, CNetProcessRelease42_next);
         };
-        void CNetProcessSendThread44_wrapper(void* pv)
+        static void CNetProcessSendThread44_wrapper(void* pv)
         {
            CNetProcessSendThread44_user(pv, CNetProcessSendThread44_next);
         };
-        void CNetProcessSetContextHandle46_wrapper(struct CNetProcess* _this, void* hContextHandle, uint16_t wIndex)
+        static void CNetProcessSetContextHandle46_wrapper(struct CNetProcess* _this, void* hContextHandle, uint16_t wIndex)
         {
            CNetProcessSetContextHandle46_user(_this, hContextHandle, wIndex, CNetProcessSetContextHandle46_next);
         };
-        bool CNetProcessSetProcess48_wrapper(struct CNetProcess* _this, int nIndex, struct _NET_TYPE_PARAM* pType, struct CNetWorking* pNetwork, bool bUseFG)
+        static bool CNetProcessSetProcess48_wrapper(struct CNetProcess* _this, int nIndex, struct _NET_TYPE_PARAM* pType, struct CNetWorking* pNetwork, bool bUseFG)
         {
            return CNetProcessSetProcess48_user(_this, nIndex, pType, pNetwork, bUseFG, CNetProcessSetProcess48_next);
         };
-        bool CNetProcessStartSpeedHackCheck50_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, char* pszID)
+        static bool CNetProcessStartSpeedHackCheck50_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex, char* pszID)
         {
            return CNetProcessStartSpeedHackCheck50_user(_this, dwClientIndex, pszID, CNetProcessStartSpeedHackCheck50_next);
         };
-        void CNetProcess_CheckSend52_wrapper(struct CNetProcess* _this, uint16_t wSocketIndex)
+        static void CNetProcess_CheckSend52_wrapper(struct CNetProcess* _this, uint16_t wSocketIndex)
         {
            CNetProcess_CheckSend52_user(_this, wSocketIndex, CNetProcess_CheckSend52_next);
         };
-        void CNetProcess_CheckWaitKey54_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_CheckWaitKey54_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_CheckWaitKey54_user(_this, CNetProcess_CheckWaitKey54_next);
         };
-        void CNetProcess_CkeckKeyCertifyDeley56_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_CkeckKeyCertifyDeley56_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_CkeckKeyCertifyDeley56_user(_this, CNetProcess_CkeckKeyCertifyDeley56_next);
         };
-        void CNetProcess_CkeckRecvBreak58_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_CkeckRecvBreak58_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_CkeckRecvBreak58_user(_this, CNetProcess_CkeckRecvBreak58_next);
         };
-        void CNetProcess_CkeckSpeedHackDeley60_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_CkeckSpeedHackDeley60_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_CkeckSpeedHackDeley60_user(_this, CNetProcess_CkeckSpeedHackDeley60_next);
         };
-        void CNetProcess_ForceCloseLoop62_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_ForceCloseLoop62_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_ForceCloseLoop62_user(_this, CNetProcess_ForceCloseLoop62_next);
         };
-        bool CNetProcess_InternalPacketProcess64_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetProcess_InternalPacketProcess64_wrapper(struct CNetProcess* _this, unsigned int dwSocketIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetProcess_InternalPacketProcess64_user(_this, dwSocketIndex, pMsgHeader, pMsg, CNetProcess_InternalPacketProcess64_next);
         };
-        void CNetProcess_PopRecvMsg66_wrapper(struct CNetProcess* _this, uint16_t wSocketIndex)
+        static void CNetProcess_PopRecvMsg66_wrapper(struct CNetProcess* _this, uint16_t wSocketIndex)
         {
            CNetProcess_PopRecvMsg66_user(_this, wSocketIndex, CNetProcess_PopRecvMsg66_next);
         };
-        void CNetProcess_Receipt68_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_Receipt68_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_Receipt68_user(_this, CNetProcess_Receipt68_next);
         };
-        void CNetProcess_ResponSpeedHack70_wrapper(struct CNetProcess* _this)
+        static void CNetProcess_ResponSpeedHack70_wrapper(struct CNetProcess* _this)
         {
            CNetProcess_ResponSpeedHack70_user(_this, CNetProcess_ResponSpeedHack70_next);
         };
-        void CNetProcess_SendLoop72_wrapper(struct CNetProcess* _this, unsigned int n)
+        static void CNetProcess_SendLoop72_wrapper(struct CNetProcess* _this, unsigned int n)
         {
            CNetProcess_SendLoop72_user(_this, n, CNetProcess_SendLoop72_next);
         };
-        void CNetProcess_SendSpeedHackCheckMsg74_wrapper(struct CNetProcess* _this, int n)
+        static void CNetProcess_SendSpeedHackCheckMsg74_wrapper(struct CNetProcess* _this, int n)
         {
            CNetProcess_SendSpeedHackCheckMsg74_user(_this, n, CNetProcess_SendSpeedHackCheckMsg74_next);
         };
-        bool CNetProcesswt_AcceptClient79_wrapper(struct CNetProcess* _this, unsigned int* pdwClientIndex)
+        static bool CNetProcesswt_AcceptClient79_wrapper(struct CNetProcess* _this, unsigned int* pdwClientIndex)
         {
            return CNetProcesswt_AcceptClient79_user(_this, pdwClientIndex, CNetProcesswt_AcceptClient79_next);
         };
-        bool CNetProcesswt_CloseClient81_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex)
+        static bool CNetProcesswt_CloseClient81_wrapper(struct CNetProcess* _this, unsigned int dwClientIndex)
         {
            return CNetProcesswt_CloseClient81_user(_this, dwClientIndex, CNetProcesswt_CloseClient81_next);
         };
-        void CNetProcessdtor_CNetProcess83_wrapper(struct CNetProcess* _this)
+        static void CNetProcessdtor_CNetProcess83_wrapper(struct CNetProcess* _this)
         {
            CNetProcessdtor_CNetProcess83_user(_this, CNetProcessdtor_CNetProcess83_next);
         };
         
-        hook_record CNetProcess_functions[] = {
+        static hook_record CNetProcess_functions[] = {
         {   (LPVOID)0x140477fb0L,
             (LPVOID *)&CNetProcessAcceptThread2_user,
             (LPVOID *)&CNetProcessAcceptThread2_next,
@@ -454,5 +454,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

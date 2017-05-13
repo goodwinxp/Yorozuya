@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCircleZonector_CCircleZone2_ptr CCircleZonector_CCircleZone2_next(nullptr);
-        info::CCircleZonector_CCircleZone2_clbk CCircleZonector_CCircleZone2_user(nullptr);
-        info::CCircleZoneCreate4_ptr CCircleZoneCreate4_next(nullptr);
-        info::CCircleZoneCreate4_clbk CCircleZoneCreate4_user(nullptr);
-        info::CCircleZoneDestroy6_ptr CCircleZoneDestroy6_next(nullptr);
-        info::CCircleZoneDestroy6_clbk CCircleZoneDestroy6_user(nullptr);
-        info::CCircleZoneGetColor8_ptr CCircleZoneGetColor8_next(nullptr);
-        info::CCircleZoneGetColor8_clbk CCircleZoneGetColor8_user(nullptr);
-        info::CCircleZoneGetPortalInx10_ptr CCircleZoneGetPortalInx10_next(nullptr);
-        info::CCircleZoneGetPortalInx10_clbk CCircleZoneGetPortalInx10_user(nullptr);
-        info::CCircleZoneGoal12_ptr CCircleZoneGoal12_next(nullptr);
-        info::CCircleZoneGoal12_clbk CCircleZoneGoal12_user(nullptr);
-        info::CCircleZoneInit14_ptr CCircleZoneInit14_next(nullptr);
-        info::CCircleZoneInit14_clbk CCircleZoneInit14_user(nullptr);
-        info::CCircleZoneIsNearPosition16_ptr CCircleZoneIsNearPosition16_next(nullptr);
-        info::CCircleZoneIsNearPosition16_clbk CCircleZoneIsNearPosition16_user(nullptr);
-        info::CCircleZoneSendMsgCreate18_ptr CCircleZoneSendMsgCreate18_next(nullptr);
-        info::CCircleZoneSendMsgCreate18_clbk CCircleZoneSendMsgCreate18_user(nullptr);
-        info::CCircleZoneSendMsgGoal20_ptr CCircleZoneSendMsgGoal20_next(nullptr);
-        info::CCircleZoneSendMsgGoal20_clbk CCircleZoneSendMsgGoal20_user(nullptr);
-        info::CCircleZoneSendMsg_FixPosition22_ptr CCircleZoneSendMsg_FixPosition22_next(nullptr);
-        info::CCircleZoneSendMsg_FixPosition22_clbk CCircleZoneSendMsg_FixPosition22_user(nullptr);
-        info::CCircleZonedtor_CCircleZone28_ptr CCircleZonedtor_CCircleZone28_next(nullptr);
-        info::CCircleZonedtor_CCircleZone28_clbk CCircleZonedtor_CCircleZone28_user(nullptr);
+        static info::CCircleZonector_CCircleZone2_ptr CCircleZonector_CCircleZone2_next(nullptr);
+        static info::CCircleZonector_CCircleZone2_clbk CCircleZonector_CCircleZone2_user(nullptr);
+        static info::CCircleZoneCreate4_ptr CCircleZoneCreate4_next(nullptr);
+        static info::CCircleZoneCreate4_clbk CCircleZoneCreate4_user(nullptr);
+        static info::CCircleZoneDestroy6_ptr CCircleZoneDestroy6_next(nullptr);
+        static info::CCircleZoneDestroy6_clbk CCircleZoneDestroy6_user(nullptr);
+        static info::CCircleZoneGetColor8_ptr CCircleZoneGetColor8_next(nullptr);
+        static info::CCircleZoneGetColor8_clbk CCircleZoneGetColor8_user(nullptr);
+        static info::CCircleZoneGetPortalInx10_ptr CCircleZoneGetPortalInx10_next(nullptr);
+        static info::CCircleZoneGetPortalInx10_clbk CCircleZoneGetPortalInx10_user(nullptr);
+        static info::CCircleZoneGoal12_ptr CCircleZoneGoal12_next(nullptr);
+        static info::CCircleZoneGoal12_clbk CCircleZoneGoal12_user(nullptr);
+        static info::CCircleZoneInit14_ptr CCircleZoneInit14_next(nullptr);
+        static info::CCircleZoneInit14_clbk CCircleZoneInit14_user(nullptr);
+        static info::CCircleZoneIsNearPosition16_ptr CCircleZoneIsNearPosition16_next(nullptr);
+        static info::CCircleZoneIsNearPosition16_clbk CCircleZoneIsNearPosition16_user(nullptr);
+        static info::CCircleZoneSendMsgCreate18_ptr CCircleZoneSendMsgCreate18_next(nullptr);
+        static info::CCircleZoneSendMsgCreate18_clbk CCircleZoneSendMsgCreate18_user(nullptr);
+        static info::CCircleZoneSendMsgGoal20_ptr CCircleZoneSendMsgGoal20_next(nullptr);
+        static info::CCircleZoneSendMsgGoal20_clbk CCircleZoneSendMsgGoal20_user(nullptr);
+        static info::CCircleZoneSendMsg_FixPosition22_ptr CCircleZoneSendMsg_FixPosition22_next(nullptr);
+        static info::CCircleZoneSendMsg_FixPosition22_clbk CCircleZoneSendMsg_FixPosition22_user(nullptr);
+        static info::CCircleZonedtor_CCircleZone28_ptr CCircleZonedtor_CCircleZone28_next(nullptr);
+        static info::CCircleZonedtor_CCircleZone28_clbk CCircleZonedtor_CCircleZone28_user(nullptr);
         
-        void CCircleZonector_CCircleZone2_wrapper(struct CCircleZone* _this)
+        static void CCircleZonector_CCircleZone2_wrapper(struct CCircleZone* _this)
         {
            CCircleZonector_CCircleZone2_user(_this, CCircleZonector_CCircleZone2_next);
         };
-        bool CCircleZoneCreate4_wrapper(struct CCircleZone* _this, struct CMapData* pkMap, char byColor)
+        static bool CCircleZoneCreate4_wrapper(struct CCircleZone* _this, struct CMapData* pkMap, char byColor)
         {
            return CCircleZoneCreate4_user(_this, pkMap, byColor, CCircleZoneCreate4_next);
         };
-        void CCircleZoneDestroy6_wrapper(struct CCircleZone* _this)
+        static void CCircleZoneDestroy6_wrapper(struct CCircleZone* _this)
         {
            CCircleZoneDestroy6_user(_this, CCircleZoneDestroy6_next);
         };
-        char CCircleZoneGetColor8_wrapper(struct CCircleZone* _this)
+        static char CCircleZoneGetColor8_wrapper(struct CCircleZone* _this)
         {
            return CCircleZoneGetColor8_user(_this, CCircleZoneGetColor8_next);
         };
-        int CCircleZoneGetPortalInx10_wrapper(struct CCircleZone* _this)
+        static int CCircleZoneGetPortalInx10_wrapper(struct CCircleZone* _this)
         {
            return CCircleZoneGetPortalInx10_user(_this, CCircleZoneGetPortalInx10_next);
         };
-        char CCircleZoneGoal12_wrapper(struct CCircleZone* _this, struct CMapData* pkMap, float* pfCurPos)
+        static char CCircleZoneGoal12_wrapper(struct CCircleZone* _this, struct CMapData* pkMap, float* pfCurPos)
         {
            return CCircleZoneGoal12_user(_this, pkMap, pfCurPos, CCircleZoneGoal12_next);
         };
-        bool CCircleZoneInit14_wrapper(struct CCircleZone* _this, unsigned int uiMapInx, int iPlayerInx, int iNth, uint16_t wInx, struct CMapData* pkMap)
+        static bool CCircleZoneInit14_wrapper(struct CCircleZone* _this, unsigned int uiMapInx, int iPlayerInx, int iNth, uint16_t wInx, struct CMapData* pkMap)
         {
            return CCircleZoneInit14_user(_this, uiMapInx, iPlayerInx, iNth, wInx, pkMap, CCircleZoneInit14_next);
         };
-        bool CCircleZoneIsNearPosition16_wrapper(struct CCircleZone* _this, float* pfCurPos)
+        static bool CCircleZoneIsNearPosition16_wrapper(struct CCircleZone* _this, float* pfCurPos)
         {
            return CCircleZoneIsNearPosition16_user(_this, pfCurPos, CCircleZoneIsNearPosition16_next);
         };
-        void CCircleZoneSendMsgCreate18_wrapper(struct CCircleZone* _this)
+        static void CCircleZoneSendMsgCreate18_wrapper(struct CCircleZone* _this)
         {
            CCircleZoneSendMsgCreate18_user(_this, CCircleZoneSendMsgCreate18_next);
         };
-        void CCircleZoneSendMsgGoal20_wrapper(struct CCircleZone* _this)
+        static void CCircleZoneSendMsgGoal20_wrapper(struct CCircleZone* _this)
         {
            CCircleZoneSendMsgGoal20_user(_this, CCircleZoneSendMsgGoal20_next);
         };
-        void CCircleZoneSendMsg_FixPosition22_wrapper(struct CCircleZone* _this, int n)
+        static void CCircleZoneSendMsg_FixPosition22_wrapper(struct CCircleZone* _this, int n)
         {
            CCircleZoneSendMsg_FixPosition22_user(_this, n, CCircleZoneSendMsg_FixPosition22_next);
         };
-        void CCircleZonedtor_CCircleZone28_wrapper(struct CCircleZone* _this)
+        static void CCircleZonedtor_CCircleZone28_wrapper(struct CCircleZone* _this)
         {
            CCircleZonedtor_CCircleZone28_user(_this, CCircleZonedtor_CCircleZone28_next);
         };
         
-        hook_record CCircleZone_functions[] = {
+        static hook_record CCircleZone_functions[] = {
         {   (LPVOID)0x14012d660L,
             (LPVOID *)&CCircleZonector_CCircleZone2_user,
             (LPVOID *)&CCircleZonector_CCircleZone2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_ptr CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_next(nullptr);
-        info::CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_clbk CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_user(nullptr);
-        info::CRealMoveRequestDelayCheckerCheck4_ptr CRealMoveRequestDelayCheckerCheck4_next(nullptr);
-        info::CRealMoveRequestDelayCheckerCheck4_clbk CRealMoveRequestDelayCheckerCheck4_user(nullptr);
-        info::CRealMoveRequestDelayCheckerCheckDelay6_ptr CRealMoveRequestDelayCheckerCheckDelay6_next(nullptr);
-        info::CRealMoveRequestDelayCheckerCheckDelay6_clbk CRealMoveRequestDelayCheckerCheckDelay6_user(nullptr);
-        info::CRealMoveRequestDelayCheckerGetCurInx8_ptr CRealMoveRequestDelayCheckerGetCurInx8_next(nullptr);
-        info::CRealMoveRequestDelayCheckerGetCurInx8_clbk CRealMoveRequestDelayCheckerGetCurInx8_user(nullptr);
-        info::CRealMoveRequestDelayCheckerIncNodeIndex10_ptr CRealMoveRequestDelayCheckerIncNodeIndex10_next(nullptr);
-        info::CRealMoveRequestDelayCheckerIncNodeIndex10_clbk CRealMoveRequestDelayCheckerIncNodeIndex10_user(nullptr);
-        info::CRealMoveRequestDelayCheckerInit12_ptr CRealMoveRequestDelayCheckerInit12_next(nullptr);
-        info::CRealMoveRequestDelayCheckerInit12_clbk CRealMoveRequestDelayCheckerInit12_user(nullptr);
-        info::CRealMoveRequestDelayCheckerReset14_ptr CRealMoveRequestDelayCheckerReset14_next(nullptr);
-        info::CRealMoveRequestDelayCheckerReset14_clbk CRealMoveRequestDelayCheckerReset14_user(nullptr);
-        info::CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_ptr CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_next(nullptr);
-        info::CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_clbk CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_ptr CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_clbk CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerCheck4_ptr CRealMoveRequestDelayCheckerCheck4_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerCheck4_clbk CRealMoveRequestDelayCheckerCheck4_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerCheckDelay6_ptr CRealMoveRequestDelayCheckerCheckDelay6_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerCheckDelay6_clbk CRealMoveRequestDelayCheckerCheckDelay6_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerGetCurInx8_ptr CRealMoveRequestDelayCheckerGetCurInx8_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerGetCurInx8_clbk CRealMoveRequestDelayCheckerGetCurInx8_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerIncNodeIndex10_ptr CRealMoveRequestDelayCheckerIncNodeIndex10_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerIncNodeIndex10_clbk CRealMoveRequestDelayCheckerIncNodeIndex10_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerInit12_ptr CRealMoveRequestDelayCheckerInit12_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerInit12_clbk CRealMoveRequestDelayCheckerInit12_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerReset14_ptr CRealMoveRequestDelayCheckerReset14_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerReset14_clbk CRealMoveRequestDelayCheckerReset14_user(nullptr);
+        static info::CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_ptr CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_next(nullptr);
+        static info::CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_clbk CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_user(nullptr);
         
-        void CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_wrapper(struct CRealMoveRequestDelayChecker* _this)
+        static void CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_wrapper(struct CRealMoveRequestDelayChecker* _this)
         {
            CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_user(_this, CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_next);
         };
-        bool CRealMoveRequestDelayCheckerCheck4_wrapper(struct CRealMoveRequestDelayChecker* _this, struct CPlayer* pkUser)
+        static bool CRealMoveRequestDelayCheckerCheck4_wrapper(struct CRealMoveRequestDelayChecker* _this, struct CPlayer* pkUser)
         {
            return CRealMoveRequestDelayCheckerCheck4_user(_this, pkUser, CRealMoveRequestDelayCheckerCheck4_next);
         };
-        bool CRealMoveRequestDelayCheckerCheckDelay6_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int dwCurTime, unsigned int dwIndex)
+        static bool CRealMoveRequestDelayCheckerCheckDelay6_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int dwCurTime, unsigned int dwIndex)
         {
            return CRealMoveRequestDelayCheckerCheckDelay6_user(_this, dwCurTime, dwIndex, CRealMoveRequestDelayCheckerCheckDelay6_next);
         };
-        bool CRealMoveRequestDelayCheckerGetCurInx8_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int* pInx)
+        static bool CRealMoveRequestDelayCheckerGetCurInx8_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int* pInx)
         {
            return CRealMoveRequestDelayCheckerGetCurInx8_user(_this, pInx, CRealMoveRequestDelayCheckerGetCurInx8_next);
         };
-        void CRealMoveRequestDelayCheckerIncNodeIndex10_wrapper(struct CRealMoveRequestDelayChecker* _this)
+        static void CRealMoveRequestDelayCheckerIncNodeIndex10_wrapper(struct CRealMoveRequestDelayChecker* _this)
         {
            CRealMoveRequestDelayCheckerIncNodeIndex10_user(_this, CRealMoveRequestDelayCheckerIncNodeIndex10_next);
         };
-        bool CRealMoveRequestDelayCheckerInit12_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int dwListCnt)
+        static bool CRealMoveRequestDelayCheckerInit12_wrapper(struct CRealMoveRequestDelayChecker* _this, unsigned int dwListCnt)
         {
            return CRealMoveRequestDelayCheckerInit12_user(_this, dwListCnt, CRealMoveRequestDelayCheckerInit12_next);
         };
-        void CRealMoveRequestDelayCheckerReset14_wrapper(struct CRealMoveRequestDelayChecker* _this)
+        static void CRealMoveRequestDelayCheckerReset14_wrapper(struct CRealMoveRequestDelayChecker* _this)
         {
            CRealMoveRequestDelayCheckerReset14_user(_this, CRealMoveRequestDelayCheckerReset14_next);
         };
-        void CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_wrapper(struct CRealMoveRequestDelayChecker* _this)
+        static void CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_wrapper(struct CRealMoveRequestDelayChecker* _this)
         {
            CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_user(_this, CRealMoveRequestDelayCheckerdtor_CRealMoveRequestDelayChecker16_next);
         };
         
-        hook_record CRealMoveRequestDelayChecker_functions[] = {
+        static hook_record CRealMoveRequestDelayChecker_functions[] = {
         {   (LPVOID)0x140073be0L,
             (LPVOID *)&CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_user,
             (LPVOID *)&CRealMoveRequestDelayCheckerctor_CRealMoveRequestDelayChecker2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

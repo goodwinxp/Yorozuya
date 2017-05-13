@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__ios_baseeof1_ptr std__ios_baseeof1_next(nullptr);
-            info::std__ios_baseeof1_clbk std__ios_baseeof1_user(nullptr);
-            info::std__ios_baseflags2_ptr std__ios_baseflags2_next(nullptr);
-            info::std__ios_baseflags2_clbk std__ios_baseflags2_user(nullptr);
-            info::std__ios_basegood3_ptr std__ios_basegood3_next(nullptr);
-            info::std__ios_basegood3_clbk std__ios_basegood3_user(nullptr);
-            info::std__ios_basewidth4_ptr std__ios_basewidth4_next(nullptr);
-            info::std__ios_basewidth4_clbk std__ios_basewidth4_user(nullptr);
-            info::std__ios_basewidth5_ptr std__ios_basewidth5_next(nullptr);
-            info::std__ios_basewidth5_clbk std__ios_basewidth5_user(nullptr);
+            static info::std__ios_baseeof1_ptr std__ios_baseeof1_next(nullptr);
+            static info::std__ios_baseeof1_clbk std__ios_baseeof1_user(nullptr);
+            static info::std__ios_baseflags2_ptr std__ios_baseflags2_next(nullptr);
+            static info::std__ios_baseflags2_clbk std__ios_baseflags2_user(nullptr);
+            static info::std__ios_basegood3_ptr std__ios_basegood3_next(nullptr);
+            static info::std__ios_basegood3_clbk std__ios_basegood3_user(nullptr);
+            static info::std__ios_basewidth4_ptr std__ios_basewidth4_next(nullptr);
+            static info::std__ios_basewidth4_clbk std__ios_basewidth4_user(nullptr);
+            static info::std__ios_basewidth5_ptr std__ios_basewidth5_next(nullptr);
+            static info::std__ios_basewidth5_clbk std__ios_basewidth5_user(nullptr);
             
-            bool std__ios_baseeof1_wrapper(struct std::ios_base* _this)
+            static bool std__ios_baseeof1_wrapper(struct std::ios_base* _this)
             {
                return std__ios_baseeof1_user(_this, std__ios_baseeof1_next);
             };
-            int64_t std__ios_baseflags2_wrapper(struct std::ios_base* _this)
+            static int64_t std__ios_baseflags2_wrapper(struct std::ios_base* _this)
             {
                return std__ios_baseflags2_user(_this, std__ios_baseflags2_next);
             };
-            bool std__ios_basegood3_wrapper(struct std::ios_base* _this)
+            static bool std__ios_basegood3_wrapper(struct std::ios_base* _this)
             {
                return std__ios_basegood3_user(_this, std__ios_basegood3_next);
             };
-            int64_t std__ios_basewidth4_wrapper(struct std::ios_base* _this, int64_t arg_0)
+            static int64_t std__ios_basewidth4_wrapper(struct std::ios_base* _this, int64_t arg_0)
             {
                return std__ios_basewidth4_user(_this, arg_0, std__ios_basewidth4_next);
             };
-            int64_t std__ios_basewidth5_wrapper(struct std::ios_base* _this)
+            static int64_t std__ios_basewidth5_wrapper(struct std::ios_base* _this)
             {
                return std__ios_basewidth5_user(_this, std__ios_basewidth5_next);
             };
             
-            hook_record ios_base_functions[] = {
+            static hook_record ios_base_functions[] = {
             {   (LPVOID)0x140676356L,
                 (LPVOID *)&std__ios_baseeof1_user,
                 (LPVOID *)&std__ios_baseeof1_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

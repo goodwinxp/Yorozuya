@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::UIDGeneratorgetuid2_ptr UIDGeneratorgetuid2_next(nullptr);
-        info::UIDGeneratorgetuid2_clbk UIDGeneratorgetuid2_user(nullptr);
-        info::UIDGeneratorgetuid4_ptr UIDGeneratorgetuid4_next(nullptr);
-        info::UIDGeneratorgetuid4_clbk UIDGeneratorgetuid4_user(nullptr);
-        info::UIDGeneratortmuid6_ptr UIDGeneratortmuid6_next(nullptr);
-        info::UIDGeneratortmuid6_clbk UIDGeneratortmuid6_user(nullptr);
+        static info::UIDGeneratorgetuid2_ptr UIDGeneratorgetuid2_next(nullptr);
+        static info::UIDGeneratorgetuid2_clbk UIDGeneratorgetuid2_user(nullptr);
+        static info::UIDGeneratorgetuid4_ptr UIDGeneratorgetuid4_next(nullptr);
+        static info::UIDGeneratorgetuid4_clbk UIDGeneratorgetuid4_user(nullptr);
+        static info::UIDGeneratortmuid6_ptr UIDGeneratortmuid6_next(nullptr);
+        static info::UIDGeneratortmuid6_clbk UIDGeneratortmuid6_user(nullptr);
         
-        uint64_t UIDGeneratorgetuid2_wrapper(char n)
+        static uint64_t UIDGeneratorgetuid2_wrapper(char n)
         {
            return UIDGeneratorgetuid2_user(n, UIDGeneratorgetuid2_next);
         };
-        uint64_t UIDGeneratorgetuid4_wrapper(char n, char ncode)
+        static uint64_t UIDGeneratorgetuid4_wrapper(char n, char ncode)
         {
            return UIDGeneratorgetuid4_user(n, ncode, UIDGeneratorgetuid4_next);
         };
-        void UIDGeneratortmuid6_wrapper(uint64_t uid, char* szBuf)
+        static void UIDGeneratortmuid6_wrapper(uint64_t uid, char* szBuf)
         {
            UIDGeneratortmuid6_user(uid, szBuf, UIDGeneratortmuid6_next);
         };
         
-        hook_record UIDGenerator_functions[] = {
+        static hook_record UIDGenerator_functions[] = {
         {   (LPVOID)0x14043f130L,
             (LPVOID *)&UIDGeneratorgetuid2_user,
             (LPVOID *)&UIDGeneratorgetuid2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

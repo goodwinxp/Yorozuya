@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::INationGameGuardSystemctor_INationGameGuardSystem2_ptr INationGameGuardSystemctor_INationGameGuardSystem2_next(nullptr);
-        info::INationGameGuardSystemctor_INationGameGuardSystem2_clbk INationGameGuardSystemctor_INationGameGuardSystem2_user(nullptr);
-        info::INationGameGuardSystemdtor_INationGameGuardSystem7_ptr INationGameGuardSystemdtor_INationGameGuardSystem7_next(nullptr);
-        info::INationGameGuardSystemdtor_INationGameGuardSystem7_clbk INationGameGuardSystemdtor_INationGameGuardSystem7_user(nullptr);
+        static info::INationGameGuardSystemctor_INationGameGuardSystem2_ptr INationGameGuardSystemctor_INationGameGuardSystem2_next(nullptr);
+        static info::INationGameGuardSystemctor_INationGameGuardSystem2_clbk INationGameGuardSystemctor_INationGameGuardSystem2_user(nullptr);
+        static info::INationGameGuardSystemdtor_INationGameGuardSystem7_ptr INationGameGuardSystemdtor_INationGameGuardSystem7_next(nullptr);
+        static info::INationGameGuardSystemdtor_INationGameGuardSystem7_clbk INationGameGuardSystemdtor_INationGameGuardSystem7_user(nullptr);
         
-        void INationGameGuardSystemctor_INationGameGuardSystem2_wrapper(struct INationGameGuardSystem* _this)
+        static void INationGameGuardSystemctor_INationGameGuardSystem2_wrapper(struct INationGameGuardSystem* _this)
         {
            INationGameGuardSystemctor_INationGameGuardSystem2_user(_this, INationGameGuardSystemctor_INationGameGuardSystem2_next);
         };
-        void INationGameGuardSystemdtor_INationGameGuardSystem7_wrapper(struct INationGameGuardSystem* _this)
+        static void INationGameGuardSystemdtor_INationGameGuardSystem7_wrapper(struct INationGameGuardSystem* _this)
         {
            INationGameGuardSystemdtor_INationGameGuardSystem7_user(_this, INationGameGuardSystemdtor_INationGameGuardSystem7_next);
         };
         
-        hook_record INationGameGuardSystem_functions[] = {
+        static hook_record INationGameGuardSystem_functions[] = {
         {   (LPVOID)0x140417660L,
             (LPVOID *)&INationGameGuardSystemctor_INationGameGuardSystem2_user,
             (LPVOID *)&INationGameGuardSystemctor_INationGameGuardSystem2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

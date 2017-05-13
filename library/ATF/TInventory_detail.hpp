@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TInventoryctor_TInventory2_ptr TInventoryctor_TInventory2_next(nullptr);
-        info::TInventoryctor_TInventory2_clbk TInventoryctor_TInventory2_user(nullptr);
-        info::TInventoryclear4_ptr TInventoryclear4_next(nullptr);
-        info::TInventoryclear4_clbk TInventoryclear4_user(nullptr);
-        info::TInventorycreate6_ptr TInventorycreate6_next(nullptr);
-        info::TInventorycreate6_clbk TInventorycreate6_user(nullptr);
-        info::TInventoryfind_empty8_ptr TInventoryfind_empty8_next(nullptr);
-        info::TInventoryfind_empty8_clbk TInventoryfind_empty8_user(nullptr);
-        info::TInventoryget_slot10_ptr TInventoryget_slot10_next(nullptr);
-        info::TInventoryget_slot10_clbk TInventoryget_slot10_user(nullptr);
-        info::TInventorypop12_ptr TInventorypop12_next(nullptr);
-        info::TInventorypop12_clbk TInventorypop12_user(nullptr);
-        info::TInventorypush14_ptr TInventorypush14_next(nullptr);
-        info::TInventorypush14_clbk TInventorypush14_user(nullptr);
-        info::TInventoryswap16_ptr TInventoryswap16_next(nullptr);
-        info::TInventoryswap16_clbk TInventoryswap16_user(nullptr);
-        info::TInventorydtor_TInventory18_ptr TInventorydtor_TInventory18_next(nullptr);
-        info::TInventorydtor_TInventory18_clbk TInventorydtor_TInventory18_user(nullptr);
+        static info::TInventoryctor_TInventory2_ptr TInventoryctor_TInventory2_next(nullptr);
+        static info::TInventoryctor_TInventory2_clbk TInventoryctor_TInventory2_user(nullptr);
+        static info::TInventoryclear4_ptr TInventoryclear4_next(nullptr);
+        static info::TInventoryclear4_clbk TInventoryclear4_user(nullptr);
+        static info::TInventorycreate6_ptr TInventorycreate6_next(nullptr);
+        static info::TInventorycreate6_clbk TInventorycreate6_user(nullptr);
+        static info::TInventoryfind_empty8_ptr TInventoryfind_empty8_next(nullptr);
+        static info::TInventoryfind_empty8_clbk TInventoryfind_empty8_user(nullptr);
+        static info::TInventoryget_slot10_ptr TInventoryget_slot10_next(nullptr);
+        static info::TInventoryget_slot10_clbk TInventoryget_slot10_user(nullptr);
+        static info::TInventorypop12_ptr TInventorypop12_next(nullptr);
+        static info::TInventorypop12_clbk TInventorypop12_user(nullptr);
+        static info::TInventorypush14_ptr TInventorypush14_next(nullptr);
+        static info::TInventorypush14_clbk TInventorypush14_user(nullptr);
+        static info::TInventoryswap16_ptr TInventoryswap16_next(nullptr);
+        static info::TInventoryswap16_clbk TInventoryswap16_user(nullptr);
+        static info::TInventorydtor_TInventory18_ptr TInventorydtor_TInventory18_next(nullptr);
+        static info::TInventorydtor_TInventory18_clbk TInventorydtor_TInventory18_user(nullptr);
         
-        void TInventoryctor_TInventory2_wrapper(struct TInventory<_INVENKEY>* _this)
+        static void TInventoryctor_TInventory2_wrapper(struct TInventory<_INVENKEY>* _this)
         {
            TInventoryctor_TInventory2_user(_this);
         };
-        void TInventoryclear4_wrapper(struct TInventory<_INVENKEY>* _this)
+        static void TInventoryclear4_wrapper(struct TInventory<_INVENKEY>* _this)
         {
            TInventoryclear4_user(_this);
         };
-        bool TInventorycreate6_wrapper(struct TInventory<_INVENKEY>* _this, int nMaxPage, int nMaxSlot, int nMaxOverlap)
+        static bool TInventorycreate6_wrapper(struct TInventory<_INVENKEY>* _this, int nMaxPage, int nMaxSlot, int nMaxOverlap)
         {
            return TInventorycreate6_user(_this, nMaxPage, nMaxSlot, nMaxOverlap);
         };
-        bool TInventoryfind_empty8_wrapper(struct TInventory<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum, int* nP, int* nS)
+        static bool TInventoryfind_empty8_wrapper(struct TInventory<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum, int* nP, int* nS)
         {
            return TInventoryfind_empty8_user(_this, pItem, nNum, nP, nS);
         };
-        struct TInvenSlot<_INVENKEY>* TInventoryget_slot10_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS)
+        static struct TInvenSlot<_INVENKEY>* TInventoryget_slot10_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS)
         {
            return TInventoryget_slot10_user(_this, nP, nS);
         };
-        int TInventorypop12_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS, struct _INVENKEY* pItem, int nNum)
+        static int TInventorypop12_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS, struct _INVENKEY* pItem, int nNum)
         {
            return TInventorypop12_user(_this, nP, nS, pItem, nNum);
         };
-        int TInventorypush14_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS, struct _INVENKEY* pItem, int nNum)
+        static int TInventorypush14_wrapper(struct TInventory<_INVENKEY>* _this, int nP, int nS, struct _INVENKEY* pItem, int nNum)
         {
            return TInventorypush14_user(_this, nP, nS, pItem, nNum);
         };
-        void TInventoryswap16_wrapper(struct TInventory<_INVENKEY>* _this, struct TInvenSlot<_INVENKEY>* pSrc, struct TInvenSlot<_INVENKEY>* pDst)
+        static void TInventoryswap16_wrapper(struct TInventory<_INVENKEY>* _this, struct TInvenSlot<_INVENKEY>* pSrc, struct TInvenSlot<_INVENKEY>* pDst)
         {
            TInventoryswap16_user(_this, pSrc, pDst);
         };
-        void TInventorydtor_TInventory18_wrapper(struct TInventory<_INVENKEY>* _this)
+        static void TInventorydtor_TInventory18_wrapper(struct TInventory<_INVENKEY>* _this)
         {
            TInventorydtor_TInventory18_user(_this);
         };
         
-        hook_record TInventory<_INVENKEY>_functions[] = {
+        static hook_record TInventory<_INVENKEY>_functions[] = {
         {   (LPVOID)0x1402d43e0L,
             (LPVOID *)&TInventoryctor_TInventory2_user,
             (LPVOID *)&TInventoryctor_TInventory2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

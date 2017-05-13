@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_ptr CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_next(nullptr);
-        info::CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_clbk CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_user(nullptr);
-        info::CMgrAvatorQuestHistoryGetNewFileName4_ptr CMgrAvatorQuestHistoryGetNewFileName4_next(nullptr);
-        info::CMgrAvatorQuestHistoryGetNewFileName4_clbk CMgrAvatorQuestHistoryGetNewFileName4_user(nullptr);
-        info::CMgrAvatorQuestHistoryGetTotalWaitSize6_ptr CMgrAvatorQuestHistoryGetTotalWaitSize6_next(nullptr);
-        info::CMgrAvatorQuestHistoryGetTotalWaitSize6_clbk CMgrAvatorQuestHistoryGetTotalWaitSize6_user(nullptr);
-        info::CMgrAvatorQuestHistoryIOThread8_ptr CMgrAvatorQuestHistoryIOThread8_next(nullptr);
-        info::CMgrAvatorQuestHistoryIOThread8_clbk CMgrAvatorQuestHistoryIOThread8_user(nullptr);
-        info::CMgrAvatorQuestHistoryOnLoop10_ptr CMgrAvatorQuestHistoryOnLoop10_next(nullptr);
-        info::CMgrAvatorQuestHistoryOnLoop10_clbk CMgrAvatorQuestHistoryOnLoop10_user(nullptr);
-        info::CMgrAvatorQuestHistoryWriteFile12_ptr CMgrAvatorQuestHistoryWriteFile12_next(nullptr);
-        info::CMgrAvatorQuestHistoryWriteFile12_clbk CMgrAvatorQuestHistoryWriteFile12_user(nullptr);
-        info::CMgrAvatorQuestHistorychar_copy14_ptr CMgrAvatorQuestHistorychar_copy14_next(nullptr);
-        info::CMgrAvatorQuestHistorychar_copy14_clbk CMgrAvatorQuestHistorychar_copy14_user(nullptr);
-        info::CMgrAvatorQuestHistorycomplete_quest16_ptr CMgrAvatorQuestHistorycomplete_quest16_next(nullptr);
-        info::CMgrAvatorQuestHistorycomplete_quest16_clbk CMgrAvatorQuestHistorycomplete_quest16_user(nullptr);
-        info::CMgrAvatorQuestHistoryfail_quest18_ptr CMgrAvatorQuestHistoryfail_quest18_next(nullptr);
-        info::CMgrAvatorQuestHistoryfail_quest18_clbk CMgrAvatorQuestHistoryfail_quest18_user(nullptr);
-        info::CMgrAvatorQuestHistoryinit_quest20_ptr CMgrAvatorQuestHistoryinit_quest20_next(nullptr);
-        info::CMgrAvatorQuestHistoryinit_quest20_clbk CMgrAvatorQuestHistoryinit_quest20_user(nullptr);
-        info::CMgrAvatorQuestHistoryinsert_quest22_ptr CMgrAvatorQuestHistoryinsert_quest22_next(nullptr);
-        info::CMgrAvatorQuestHistoryinsert_quest22_clbk CMgrAvatorQuestHistoryinsert_quest22_user(nullptr);
-        info::CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_ptr CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_next(nullptr);
-        info::CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_clbk CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_user(nullptr);
+        static info::CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_ptr CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_next(nullptr);
+        static info::CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_clbk CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_user(nullptr);
+        static info::CMgrAvatorQuestHistoryGetNewFileName4_ptr CMgrAvatorQuestHistoryGetNewFileName4_next(nullptr);
+        static info::CMgrAvatorQuestHistoryGetNewFileName4_clbk CMgrAvatorQuestHistoryGetNewFileName4_user(nullptr);
+        static info::CMgrAvatorQuestHistoryGetTotalWaitSize6_ptr CMgrAvatorQuestHistoryGetTotalWaitSize6_next(nullptr);
+        static info::CMgrAvatorQuestHistoryGetTotalWaitSize6_clbk CMgrAvatorQuestHistoryGetTotalWaitSize6_user(nullptr);
+        static info::CMgrAvatorQuestHistoryIOThread8_ptr CMgrAvatorQuestHistoryIOThread8_next(nullptr);
+        static info::CMgrAvatorQuestHistoryIOThread8_clbk CMgrAvatorQuestHistoryIOThread8_user(nullptr);
+        static info::CMgrAvatorQuestHistoryOnLoop10_ptr CMgrAvatorQuestHistoryOnLoop10_next(nullptr);
+        static info::CMgrAvatorQuestHistoryOnLoop10_clbk CMgrAvatorQuestHistoryOnLoop10_user(nullptr);
+        static info::CMgrAvatorQuestHistoryWriteFile12_ptr CMgrAvatorQuestHistoryWriteFile12_next(nullptr);
+        static info::CMgrAvatorQuestHistoryWriteFile12_clbk CMgrAvatorQuestHistoryWriteFile12_user(nullptr);
+        static info::CMgrAvatorQuestHistorychar_copy14_ptr CMgrAvatorQuestHistorychar_copy14_next(nullptr);
+        static info::CMgrAvatorQuestHistorychar_copy14_clbk CMgrAvatorQuestHistorychar_copy14_user(nullptr);
+        static info::CMgrAvatorQuestHistorycomplete_quest16_ptr CMgrAvatorQuestHistorycomplete_quest16_next(nullptr);
+        static info::CMgrAvatorQuestHistorycomplete_quest16_clbk CMgrAvatorQuestHistorycomplete_quest16_user(nullptr);
+        static info::CMgrAvatorQuestHistoryfail_quest18_ptr CMgrAvatorQuestHistoryfail_quest18_next(nullptr);
+        static info::CMgrAvatorQuestHistoryfail_quest18_clbk CMgrAvatorQuestHistoryfail_quest18_user(nullptr);
+        static info::CMgrAvatorQuestHistoryinit_quest20_ptr CMgrAvatorQuestHistoryinit_quest20_next(nullptr);
+        static info::CMgrAvatorQuestHistoryinit_quest20_clbk CMgrAvatorQuestHistoryinit_quest20_user(nullptr);
+        static info::CMgrAvatorQuestHistoryinsert_quest22_ptr CMgrAvatorQuestHistoryinsert_quest22_next(nullptr);
+        static info::CMgrAvatorQuestHistoryinsert_quest22_clbk CMgrAvatorQuestHistoryinsert_quest22_user(nullptr);
+        static info::CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_ptr CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_next(nullptr);
+        static info::CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_clbk CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_user(nullptr);
         
-        void CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_wrapper(struct CMgrAvatorQuestHistory* _this)
+        static void CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_wrapper(struct CMgrAvatorQuestHistory* _this)
         {
            CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_user(_this, CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_next);
         };
-        void CMgrAvatorQuestHistoryGetNewFileName4_wrapper(struct CMgrAvatorQuestHistory* _this, unsigned int dwAvatorSerial, char* pszFileName)
+        static void CMgrAvatorQuestHistoryGetNewFileName4_wrapper(struct CMgrAvatorQuestHistory* _this, unsigned int dwAvatorSerial, char* pszFileName)
         {
            CMgrAvatorQuestHistoryGetNewFileName4_user(_this, dwAvatorSerial, pszFileName, CMgrAvatorQuestHistoryGetNewFileName4_next);
         };
-        int CMgrAvatorQuestHistoryGetTotalWaitSize6_wrapper(struct CMgrAvatorQuestHistory* _this)
+        static int CMgrAvatorQuestHistoryGetTotalWaitSize6_wrapper(struct CMgrAvatorQuestHistory* _this)
         {
            return CMgrAvatorQuestHistoryGetTotalWaitSize6_user(_this, CMgrAvatorQuestHistoryGetTotalWaitSize6_next);
         };
-        void CMgrAvatorQuestHistoryIOThread8_wrapper(void* pv)
+        static void CMgrAvatorQuestHistoryIOThread8_wrapper(void* pv)
         {
            CMgrAvatorQuestHistoryIOThread8_user(pv, CMgrAvatorQuestHistoryIOThread8_next);
         };
-        void CMgrAvatorQuestHistoryOnLoop10_wrapper(struct CMgrAvatorQuestHistory* _this)
+        static void CMgrAvatorQuestHistoryOnLoop10_wrapper(struct CMgrAvatorQuestHistory* _this)
         {
            CMgrAvatorQuestHistoryOnLoop10_user(_this, CMgrAvatorQuestHistoryOnLoop10_next);
         };
-        void CMgrAvatorQuestHistoryWriteFile12_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszFileName, char* pszLog)
+        static void CMgrAvatorQuestHistoryWriteFile12_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszFileName, char* pszLog)
         {
            CMgrAvatorQuestHistoryWriteFile12_user(_this, pszFileName, pszLog, CMgrAvatorQuestHistoryWriteFile12_next);
         };
-        void CMgrAvatorQuestHistorychar_copy14_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszDstName, unsigned int dwDstSerial, char* pszFileName)
+        static void CMgrAvatorQuestHistorychar_copy14_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszDstName, unsigned int dwDstSerial, char* pszFileName)
         {
            CMgrAvatorQuestHistorychar_copy14_user(_this, pszDstName, dwDstSerial, pszFileName, CMgrAvatorQuestHistorychar_copy14_next);
         };
-        void CMgrAvatorQuestHistorycomplete_quest16_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFileName)
+        static void CMgrAvatorQuestHistorycomplete_quest16_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFileName)
         {
            CMgrAvatorQuestHistorycomplete_quest16_user(_this, nSlot, pszQuestCode, pszFileName, CMgrAvatorQuestHistorycomplete_quest16_next);
         };
-        void CMgrAvatorQuestHistoryfail_quest18_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFailCode, char* pszFileName)
+        static void CMgrAvatorQuestHistoryfail_quest18_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFailCode, char* pszFileName)
         {
            CMgrAvatorQuestHistoryfail_quest18_user(_this, nSlot, pszQuestCode, pszFailCode, pszFileName, CMgrAvatorQuestHistoryfail_quest18_next);
         };
-        void CMgrAvatorQuestHistoryinit_quest20_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszAvatorName, struct _QUEST_DB_BASE* pQuestDB, char* pszFileName)
+        static void CMgrAvatorQuestHistoryinit_quest20_wrapper(struct CMgrAvatorQuestHistory* _this, char* pszAvatorName, struct _QUEST_DB_BASE* pQuestDB, char* pszFileName)
         {
            CMgrAvatorQuestHistoryinit_quest20_user(_this, pszAvatorName, pQuestDB, pszFileName, CMgrAvatorQuestHistoryinit_quest20_next);
         };
-        void CMgrAvatorQuestHistoryinsert_quest22_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFileName)
+        static void CMgrAvatorQuestHistoryinsert_quest22_wrapper(struct CMgrAvatorQuestHistory* _this, int nSlot, char* pszQuestCode, char* pszFileName)
         {
            CMgrAvatorQuestHistoryinsert_quest22_user(_this, nSlot, pszQuestCode, pszFileName, CMgrAvatorQuestHistoryinsert_quest22_next);
         };
-        void CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_wrapper(struct CMgrAvatorQuestHistory* _this)
+        static void CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_wrapper(struct CMgrAvatorQuestHistory* _this)
         {
            CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_user(_this, CMgrAvatorQuestHistorydtor_CMgrAvatorQuestHistory24_next);
         };
         
-        hook_record CMgrAvatorQuestHistory_functions[] = {
+        static hook_record CMgrAvatorQuestHistory_functions[] = {
         {   (LPVOID)0x140247280L,
             (LPVOID *)&CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_user,
             (LPVOID *)&CMgrAvatorQuestHistoryctor_CMgrAvatorQuestHistory2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -10,99 +10,99 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_ptr RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_clbk RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCancel4_ptr RACE_BOSS_MSG__CMsgListManagerCancel4_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCancel4_clbk RACE_BOSS_MSG__CMsgListManagerCancel4_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCleanUp6_ptr RACE_BOSS_MSG__CMsgListManagerCleanUp6_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCleanUp6_clbk RACE_BOSS_MSG__CMsgListManagerCleanUp6_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_ptr RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_clbk RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_ptr RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_clbk RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_ptr RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_clbk RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerInit14_ptr RACE_BOSS_MSG__CMsgListManagerInit14_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerInit14_clbk RACE_BOSS_MSG__CMsgListManagerInit14_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_ptr RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_clbk RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerLoad18_ptr RACE_BOSS_MSG__CMsgListManagerLoad18_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerLoad18_clbk RACE_BOSS_MSG__CMsgListManagerLoad18_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerRefresh20_ptr RACE_BOSS_MSG__CMsgListManagerRefresh20_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerRefresh20_clbk RACE_BOSS_MSG__CMsgListManagerRefresh20_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerRelease22_ptr RACE_BOSS_MSG__CMsgListManagerRelease22_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerRelease22_clbk RACE_BOSS_MSG__CMsgListManagerRelease22_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSave24_ptr RACE_BOSS_MSG__CMsgListManagerSave24_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSave24_clbk RACE_BOSS_MSG__CMsgListManagerSave24_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSave26_ptr RACE_BOSS_MSG__CMsgListManagerSave26_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSave26_clbk RACE_BOSS_MSG__CMsgListManagerSave26_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSend28_ptr RACE_BOSS_MSG__CMsgListManagerSend28_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerSend28_clbk RACE_BOSS_MSG__CMsgListManagerSend28_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_ptr RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_clbk RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_ptr RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_clbk RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCancel4_ptr RACE_BOSS_MSG__CMsgListManagerCancel4_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCancel4_clbk RACE_BOSS_MSG__CMsgListManagerCancel4_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCleanUp6_ptr RACE_BOSS_MSG__CMsgListManagerCleanUp6_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCleanUp6_clbk RACE_BOSS_MSG__CMsgListManagerCleanUp6_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_ptr RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_clbk RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_ptr RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_clbk RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_ptr RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_clbk RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerInit14_ptr RACE_BOSS_MSG__CMsgListManagerInit14_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerInit14_clbk RACE_BOSS_MSG__CMsgListManagerInit14_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_ptr RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_clbk RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerLoad18_ptr RACE_BOSS_MSG__CMsgListManagerLoad18_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerLoad18_clbk RACE_BOSS_MSG__CMsgListManagerLoad18_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerRefresh20_ptr RACE_BOSS_MSG__CMsgListManagerRefresh20_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerRefresh20_clbk RACE_BOSS_MSG__CMsgListManagerRefresh20_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerRelease22_ptr RACE_BOSS_MSG__CMsgListManagerRelease22_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerRelease22_clbk RACE_BOSS_MSG__CMsgListManagerRelease22_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSave24_ptr RACE_BOSS_MSG__CMsgListManagerSave24_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSave24_clbk RACE_BOSS_MSG__CMsgListManagerSave24_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSave26_ptr RACE_BOSS_MSG__CMsgListManagerSave26_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSave26_clbk RACE_BOSS_MSG__CMsgListManagerSave26_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSend28_ptr RACE_BOSS_MSG__CMsgListManagerSend28_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerSend28_clbk RACE_BOSS_MSG__CMsgListManagerSend28_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_ptr RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_clbk RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_user(nullptr);
             
-            void RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static void RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_user(_this, RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_next);
             };
-            int RACE_BOSS_MSG__CMsgListManagerCancel4_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, unsigned int dwMsgID, struct RACE_BOSS_MSG::CMsg** pkMsg)
+            static int RACE_BOSS_MSG__CMsgListManagerCancel4_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, unsigned int dwMsgID, struct RACE_BOSS_MSG::CMsg** pkMsg)
             {
                return RACE_BOSS_MSG__CMsgListManagerCancel4_user(_this, ucRace, dwMsgID, pkMsg, RACE_BOSS_MSG__CMsgListManagerCancel4_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerCleanUp6_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static void RACE_BOSS_MSG__CMsgListManagerCleanUp6_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                RACE_BOSS_MSG__CMsgListManagerCleanUp6_user(_this, RACE_BOSS_MSG__CMsgListManagerCleanUp6_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+            static void RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
             {
                RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_user(_this, ucRace, pkMsg, RACE_BOSS_MSG__CMsgListManagerCleanUpCancel8_next);
             };
-            char RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace)
+            static char RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace)
             {
                return RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_user(_this, ucRace, RACE_BOSS_MSG__CMsgListManagerGetRemainCnt10_next);
             };
-            struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char* ucRace)
+            static struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char* ucRace)
             {
                return RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_user(_this, ucRace, RACE_BOSS_MSG__CMsgListManagerGetSendMsg12_next);
             };
-            bool RACE_BOSS_MSG__CMsgListManagerInit14_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static bool RACE_BOSS_MSG__CMsgListManagerInit14_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                return RACE_BOSS_MSG__CMsgListManagerInit14_user(_this, RACE_BOSS_MSG__CMsgListManagerInit14_next);
             };
-            bool RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static bool RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                return RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_user(_this, RACE_BOSS_MSG__CMsgListManagerIsHaveBeenSave16_next);
             };
-            bool RACE_BOSS_MSG__CMsgListManagerLoad18_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, unsigned int dwCurTime)
+            static bool RACE_BOSS_MSG__CMsgListManagerLoad18_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, unsigned int dwCurTime)
             {
                return RACE_BOSS_MSG__CMsgListManagerLoad18_user(_this, dwCurTime, RACE_BOSS_MSG__CMsgListManagerLoad18_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerRefresh20_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static void RACE_BOSS_MSG__CMsgListManagerRefresh20_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                RACE_BOSS_MSG__CMsgListManagerRefresh20_user(_this, RACE_BOSS_MSG__CMsgListManagerRefresh20_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerRelease22_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+            static void RACE_BOSS_MSG__CMsgListManagerRelease22_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
             {
                RACE_BOSS_MSG__CMsgListManagerRelease22_user(_this, ucRace, pkMsg, RACE_BOSS_MSG__CMsgListManagerRelease22_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerSave24_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace)
+            static void RACE_BOSS_MSG__CMsgListManagerSave24_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace)
             {
                RACE_BOSS_MSG__CMsgListManagerSave24_user(_this, ucRace, RACE_BOSS_MSG__CMsgListManagerSave24_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerSave26_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static void RACE_BOSS_MSG__CMsgListManagerSave26_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                RACE_BOSS_MSG__CMsgListManagerSave26_user(_this, RACE_BOSS_MSG__CMsgListManagerSave26_next);
             };
-            int RACE_BOSS_MSG__CMsgListManagerSend28_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, unsigned int dwSerial, char* pwszName, char* pwszMsg, struct RACE_BOSS_MSG::CMsg** pkSend, unsigned int dbWebSendDBID)
+            static int RACE_BOSS_MSG__CMsgListManagerSend28_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this, char ucRace, unsigned int dwSerial, char* pwszName, char* pwszMsg, struct RACE_BOSS_MSG::CMsg** pkSend, unsigned int dbWebSendDBID)
             {
                return RACE_BOSS_MSG__CMsgListManagerSend28_user(_this, ucRace, dwSerial, pwszName, pwszMsg, pkSend, dbWebSendDBID, RACE_BOSS_MSG__CMsgListManagerSend28_next);
             };
-            void RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
+            static void RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_wrapper(struct RACE_BOSS_MSG::CMsgListManager* _this)
             {
                RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_user(_this, RACE_BOSS_MSG__CMsgListManagerdtor_CMsgListManager30_next);
             };
             
-            hook_record CMsgListManager_functions[] = {
+            static hook_record CMsgListManager_functions[] = {
             {   (LPVOID)0x14029f880L,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_user,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgListManagerctor_CMsgListManager2_next,
@@ -181,6 +181,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace RACE_BOSS_MSG
 END_ATF_NAMESPACE

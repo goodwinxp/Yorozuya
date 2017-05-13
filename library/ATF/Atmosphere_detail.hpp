@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AtmosphereCalculateScatteringConstants1_ptr AtmosphereCalculateScatteringConstants1_next(nullptr);
-        info::AtmosphereCalculateScatteringConstants1_clbk AtmosphereCalculateScatteringConstants1_user(nullptr);
-        info::AtmosphereDump22_ptr AtmosphereDump22_next(nullptr);
-        info::AtmosphereDump22_clbk AtmosphereDump22_user(nullptr);
-        info::AtmosphereGetBetaDashMie3_ptr AtmosphereGetBetaDashMie3_next(nullptr);
-        info::AtmosphereGetBetaDashMie3_clbk AtmosphereGetBetaDashMie3_user(nullptr);
-        info::AtmosphereGetBetaDashRayleigh4_ptr AtmosphereGetBetaDashRayleigh4_next(nullptr);
-        info::AtmosphereGetBetaDashRayleigh4_clbk AtmosphereGetBetaDashRayleigh4_user(nullptr);
-        info::AtmosphereGetBetaMie5_ptr AtmosphereGetBetaMie5_next(nullptr);
-        info::AtmosphereGetBetaMie5_clbk AtmosphereGetBetaMie5_user(nullptr);
-        info::AtmosphereGetBetaRayleigh6_ptr AtmosphereGetBetaRayleigh6_next(nullptr);
-        info::AtmosphereGetBetaRayleigh6_clbk AtmosphereGetBetaRayleigh6_user(nullptr);
-        info::AtmosphereInterpolate7_ptr AtmosphereInterpolate7_next(nullptr);
-        info::AtmosphereInterpolate7_clbk AtmosphereInterpolate7_user(nullptr);
-        info::AtmosphereRead28_ptr AtmosphereRead28_next(nullptr);
-        info::AtmosphereRead28_clbk AtmosphereRead28_user(nullptr);
-        info::Atmospheredtor_Atmosphere9_ptr Atmospheredtor_Atmosphere9_next(nullptr);
-        info::Atmospheredtor_Atmosphere9_clbk Atmospheredtor_Atmosphere9_user(nullptr);
+        static info::AtmosphereCalculateScatteringConstants1_ptr AtmosphereCalculateScatteringConstants1_next(nullptr);
+        static info::AtmosphereCalculateScatteringConstants1_clbk AtmosphereCalculateScatteringConstants1_user(nullptr);
+        static info::AtmosphereDump22_ptr AtmosphereDump22_next(nullptr);
+        static info::AtmosphereDump22_clbk AtmosphereDump22_user(nullptr);
+        static info::AtmosphereGetBetaDashMie3_ptr AtmosphereGetBetaDashMie3_next(nullptr);
+        static info::AtmosphereGetBetaDashMie3_clbk AtmosphereGetBetaDashMie3_user(nullptr);
+        static info::AtmosphereGetBetaDashRayleigh4_ptr AtmosphereGetBetaDashRayleigh4_next(nullptr);
+        static info::AtmosphereGetBetaDashRayleigh4_clbk AtmosphereGetBetaDashRayleigh4_user(nullptr);
+        static info::AtmosphereGetBetaMie5_ptr AtmosphereGetBetaMie5_next(nullptr);
+        static info::AtmosphereGetBetaMie5_clbk AtmosphereGetBetaMie5_user(nullptr);
+        static info::AtmosphereGetBetaRayleigh6_ptr AtmosphereGetBetaRayleigh6_next(nullptr);
+        static info::AtmosphereGetBetaRayleigh6_clbk AtmosphereGetBetaRayleigh6_user(nullptr);
+        static info::AtmosphereInterpolate7_ptr AtmosphereInterpolate7_next(nullptr);
+        static info::AtmosphereInterpolate7_clbk AtmosphereInterpolate7_user(nullptr);
+        static info::AtmosphereRead28_ptr AtmosphereRead28_next(nullptr);
+        static info::AtmosphereRead28_clbk AtmosphereRead28_user(nullptr);
+        static info::Atmospheredtor_Atmosphere9_ptr Atmospheredtor_Atmosphere9_next(nullptr);
+        static info::Atmospheredtor_Atmosphere9_clbk Atmospheredtor_Atmosphere9_user(nullptr);
         
-        void AtmosphereCalculateScatteringConstants1_wrapper(struct Atmosphere* _this)
+        static void AtmosphereCalculateScatteringConstants1_wrapper(struct Atmosphere* _this)
         {
            AtmosphereCalculateScatteringConstants1_user(_this, AtmosphereCalculateScatteringConstants1_next);
         };
-        void AtmosphereDump22_wrapper(struct Atmosphere* _this, struct _iobuf* arg_0)
+        static void AtmosphereDump22_wrapper(struct Atmosphere* _this, struct _iobuf* arg_0)
         {
            AtmosphereDump22_user(_this, arg_0, AtmosphereDump22_next);
         };
-        struct D3DXVECTOR3* AtmosphereGetBetaDashMie3_wrapper(struct Atmosphere* _this, short retstr)
+        static struct D3DXVECTOR3* AtmosphereGetBetaDashMie3_wrapper(struct Atmosphere* _this, short retstr)
         {
            return AtmosphereGetBetaDashMie3_user(_this, retstr, AtmosphereGetBetaDashMie3_next);
         };
-        struct D3DXVECTOR3* AtmosphereGetBetaDashRayleigh4_wrapper(struct Atmosphere* _this, short retstr)
+        static struct D3DXVECTOR3* AtmosphereGetBetaDashRayleigh4_wrapper(struct Atmosphere* _this, short retstr)
         {
            return AtmosphereGetBetaDashRayleigh4_user(_this, retstr, AtmosphereGetBetaDashRayleigh4_next);
         };
-        struct D3DXVECTOR3* AtmosphereGetBetaMie5_wrapper(struct Atmosphere* _this, short retstr)
+        static struct D3DXVECTOR3* AtmosphereGetBetaMie5_wrapper(struct Atmosphere* _this, short retstr)
         {
            return AtmosphereGetBetaMie5_user(_this, retstr, AtmosphereGetBetaMie5_next);
         };
-        struct D3DXVECTOR3* AtmosphereGetBetaRayleigh6_wrapper(struct Atmosphere* _this, short retstr)
+        static struct D3DXVECTOR3* AtmosphereGetBetaRayleigh6_wrapper(struct Atmosphere* _this, short retstr)
         {
            return AtmosphereGetBetaRayleigh6_user(_this, retstr, AtmosphereGetBetaRayleigh6_next);
         };
-        void AtmosphereInterpolate7_wrapper(struct Atmosphere* _this, struct Atmosphere* arg_0, struct Atmosphere* arg_1, float arg_2)
+        static void AtmosphereInterpolate7_wrapper(struct Atmosphere* _this, struct Atmosphere* arg_0, struct Atmosphere* arg_1, float arg_2)
         {
            AtmosphereInterpolate7_user(_this, arg_0, arg_1, arg_2, AtmosphereInterpolate7_next);
         };
-        void AtmosphereRead28_wrapper(struct Atmosphere* _this, struct _iobuf* arg_0)
+        static void AtmosphereRead28_wrapper(struct Atmosphere* _this, struct _iobuf* arg_0)
         {
            AtmosphereRead28_user(_this, arg_0, AtmosphereRead28_next);
         };
-        int64_t Atmospheredtor_Atmosphere9_wrapper(struct Atmosphere* _this)
+        static int64_t Atmospheredtor_Atmosphere9_wrapper(struct Atmosphere* _this)
         {
            return Atmospheredtor_Atmosphere9_user(_this, Atmospheredtor_Atmosphere9_next);
         };
         
-        hook_record Atmosphere_functions[] = {
+        static hook_record Atmosphere_functions[] = {
         {   (LPVOID)0x140522fd0L,
             (LPVOID *)&AtmosphereCalculateScatteringConstants1_user,
             (LPVOID *)&AtmosphereCalculateScatteringConstants1_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SRANDctor__SRAND2_ptr _SRANDctor__SRAND2_next(nullptr);
-        info::_SRANDctor__SRAND2_clbk _SRANDctor__SRAND2_user(nullptr);
+        static info::_SRANDctor__SRAND2_ptr _SRANDctor__SRAND2_next(nullptr);
+        static info::_SRANDctor__SRAND2_clbk _SRANDctor__SRAND2_user(nullptr);
         
-        void _SRANDctor__SRAND2_wrapper(struct _SRAND* _this)
+        static void _SRANDctor__SRAND2_wrapper(struct _SRAND* _this)
         {
            _SRANDctor__SRAND2_user(_this, _SRANDctor__SRAND2_next);
         };
         
-        hook_record _SRAND_functions[] = {
+        static hook_record _SRAND_functions[] = {
         {   (LPVOID)0x140202390L,
             (LPVOID *)&_SRANDctor__SRAND2_user,
             (LPVOID *)&_SRANDctor__SRAND2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHashMapPtrPoolctor_CHashMapPtrPool2_ptr CHashMapPtrPoolctor_CHashMapPtrPool2_next(nullptr);
-        info::CHashMapPtrPoolctor_CHashMapPtrPool2_clbk CHashMapPtrPoolctor_CHashMapPtrPool2_user(nullptr);
-        info::CHashMapPtrPoolcleanup4_ptr CHashMapPtrPoolcleanup4_next(nullptr);
-        info::CHashMapPtrPoolcleanup4_clbk CHashMapPtrPoolcleanup4_user(nullptr);
-        info::CHashMapPtrPoolfindkey6_ptr CHashMapPtrPoolfindkey6_next(nullptr);
-        info::CHashMapPtrPoolfindkey6_clbk CHashMapPtrPoolfindkey6_user(nullptr);
-        info::CHashMapPtrPoolget8_ptr CHashMapPtrPoolget8_next(nullptr);
-        info::CHashMapPtrPoolget8_clbk CHashMapPtrPoolget8_user(nullptr);
-        info::CHashMapPtrPoolregist10_ptr CHashMapPtrPoolregist10_next(nullptr);
-        info::CHashMapPtrPoolregist10_clbk CHashMapPtrPoolregist10_user(nullptr);
-        info::CHashMapPtrPooldtor_CHashMapPtrPool12_ptr CHashMapPtrPooldtor_CHashMapPtrPool12_next(nullptr);
-        info::CHashMapPtrPooldtor_CHashMapPtrPool12_clbk CHashMapPtrPooldtor_CHashMapPtrPool12_user(nullptr);
+        static info::CHashMapPtrPoolctor_CHashMapPtrPool2_ptr CHashMapPtrPoolctor_CHashMapPtrPool2_next(nullptr);
+        static info::CHashMapPtrPoolctor_CHashMapPtrPool2_clbk CHashMapPtrPoolctor_CHashMapPtrPool2_user(nullptr);
+        static info::CHashMapPtrPoolcleanup4_ptr CHashMapPtrPoolcleanup4_next(nullptr);
+        static info::CHashMapPtrPoolcleanup4_clbk CHashMapPtrPoolcleanup4_user(nullptr);
+        static info::CHashMapPtrPoolfindkey6_ptr CHashMapPtrPoolfindkey6_next(nullptr);
+        static info::CHashMapPtrPoolfindkey6_clbk CHashMapPtrPoolfindkey6_user(nullptr);
+        static info::CHashMapPtrPoolget8_ptr CHashMapPtrPoolget8_next(nullptr);
+        static info::CHashMapPtrPoolget8_clbk CHashMapPtrPoolget8_user(nullptr);
+        static info::CHashMapPtrPoolregist10_ptr CHashMapPtrPoolregist10_next(nullptr);
+        static info::CHashMapPtrPoolregist10_clbk CHashMapPtrPoolregist10_user(nullptr);
+        static info::CHashMapPtrPooldtor_CHashMapPtrPool12_ptr CHashMapPtrPooldtor_CHashMapPtrPool12_next(nullptr);
+        static info::CHashMapPtrPooldtor_CHashMapPtrPool12_clbk CHashMapPtrPooldtor_CHashMapPtrPool12_user(nullptr);
         
-        void CHashMapPtrPoolctor_CHashMapPtrPool2_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
+        static void CHashMapPtrPoolctor_CHashMapPtrPool2_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
         {
            CHashMapPtrPoolctor_CHashMapPtrPool2_user(_this);
         };
-        void CHashMapPtrPoolcleanup4_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
+        static void CHashMapPtrPoolcleanup4_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
         {
            CHashMapPtrPoolcleanup4_user(_this);
         };
-        bool CHashMapPtrPoolfindkey6_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, struct CNationCodeStr* pkData, int* kKey)
+        static bool CHashMapPtrPoolfindkey6_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, struct CNationCodeStr* pkData, int* kKey)
         {
            return CHashMapPtrPoolfindkey6_user(_this, pkData, kKey);
         };
-        bool CHashMapPtrPoolget8_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, int kKey, struct CNationCodeStr** pData)
+        static bool CHashMapPtrPoolget8_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, int kKey, struct CNationCodeStr** pData)
         {
            return CHashMapPtrPoolget8_user(_this, kKey, pData);
         };
-        int CHashMapPtrPoolregist10_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, struct CNationCodeStr* pData)
+        static int CHashMapPtrPoolregist10_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this, struct CNationCodeStr* pData)
         {
            return CHashMapPtrPoolregist10_user(_this, pData);
         };
-        void CHashMapPtrPooldtor_CHashMapPtrPool12_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
+        static void CHashMapPtrPooldtor_CHashMapPtrPool12_wrapper(struct CHashMapPtrPool<int,CNationCodeStr>* _this)
         {
            CHashMapPtrPooldtor_CHashMapPtrPool12_user(_this);
         };
         
-        hook_record CHashMapPtrPool<int,CNationCodeStr>_functions[] = {
+        static hook_record CHashMapPtrPool<int,CNationCodeStr>_functions[] = {
         {   (LPVOID)0x140208370L,
             (LPVOID *)&CHashMapPtrPoolctor_CHashMapPtrPool2_user,
             (LPVOID *)&CHashMapPtrPoolctor_CHashMapPtrPool2_next,
@@ -80,7 +80,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "CHashMapPtrPool_info.hpp"
 
@@ -88,39 +88,39 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHashMapPtrPoolctor_CHashMapPtrPool2_ptr CHashMapPtrPoolctor_CHashMapPtrPool2_next(nullptr);
-        info::CHashMapPtrPoolctor_CHashMapPtrPool2_clbk CHashMapPtrPoolctor_CHashMapPtrPool2_user(nullptr);
-        info::CHashMapPtrPoolcleanup4_ptr CHashMapPtrPoolcleanup4_next(nullptr);
-        info::CHashMapPtrPoolcleanup4_clbk CHashMapPtrPoolcleanup4_user(nullptr);
-        info::CHashMapPtrPoolget6_ptr CHashMapPtrPoolget6_next(nullptr);
-        info::CHashMapPtrPoolget6_clbk CHashMapPtrPoolget6_user(nullptr);
-        info::CHashMapPtrPoolregist8_ptr CHashMapPtrPoolregist8_next(nullptr);
-        info::CHashMapPtrPoolregist8_clbk CHashMapPtrPoolregist8_user(nullptr);
-        info::CHashMapPtrPooldtor_CHashMapPtrPool10_ptr CHashMapPtrPooldtor_CHashMapPtrPool10_next(nullptr);
-        info::CHashMapPtrPooldtor_CHashMapPtrPool10_clbk CHashMapPtrPooldtor_CHashMapPtrPool10_user(nullptr);
+        static info::CHashMapPtrPoolctor_CHashMapPtrPool2_ptr CHashMapPtrPoolctor_CHashMapPtrPool2_next(nullptr);
+        static info::CHashMapPtrPoolctor_CHashMapPtrPool2_clbk CHashMapPtrPoolctor_CHashMapPtrPool2_user(nullptr);
+        static info::CHashMapPtrPoolcleanup4_ptr CHashMapPtrPoolcleanup4_next(nullptr);
+        static info::CHashMapPtrPoolcleanup4_clbk CHashMapPtrPoolcleanup4_user(nullptr);
+        static info::CHashMapPtrPoolget6_ptr CHashMapPtrPoolget6_next(nullptr);
+        static info::CHashMapPtrPoolget6_clbk CHashMapPtrPoolget6_user(nullptr);
+        static info::CHashMapPtrPoolregist8_ptr CHashMapPtrPoolregist8_next(nullptr);
+        static info::CHashMapPtrPoolregist8_clbk CHashMapPtrPoolregist8_user(nullptr);
+        static info::CHashMapPtrPooldtor_CHashMapPtrPool10_ptr CHashMapPtrPooldtor_CHashMapPtrPool10_next(nullptr);
+        static info::CHashMapPtrPooldtor_CHashMapPtrPool10_clbk CHashMapPtrPooldtor_CHashMapPtrPool10_user(nullptr);
         
-        void CHashMapPtrPoolctor_CHashMapPtrPool2_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
+        static void CHashMapPtrPoolctor_CHashMapPtrPool2_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
         {
            CHashMapPtrPoolctor_CHashMapPtrPool2_user(_this);
         };
-        void CHashMapPtrPoolcleanup4_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
+        static void CHashMapPtrPoolcleanup4_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
         {
            CHashMapPtrPoolcleanup4_user(_this);
         };
-        bool CHashMapPtrPoolget6_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this, int kKey, struct CNationSettingFactory** pData)
+        static bool CHashMapPtrPoolget6_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this, int kKey, struct CNationSettingFactory** pData)
         {
            return CHashMapPtrPoolget6_user(_this, kKey, pData);
         };
-        int CHashMapPtrPoolregist8_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this, struct CNationSettingFactory* pData)
+        static int CHashMapPtrPoolregist8_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this, struct CNationSettingFactory* pData)
         {
            return CHashMapPtrPoolregist8_user(_this, pData);
         };
-        void CHashMapPtrPooldtor_CHashMapPtrPool10_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
+        static void CHashMapPtrPooldtor_CHashMapPtrPool10_wrapper(struct CHashMapPtrPool<int,CNationSettingFactory>* _this)
         {
            CHashMapPtrPooldtor_CHashMapPtrPool10_user(_this);
         };
         
-        hook_record CHashMapPtrPool<int,CNationSettingFactory>_functions[] = {
+        static hook_record CHashMapPtrPool<int,CNationSettingFactory>_functions[] = {
         {   (LPVOID)0x1402299f0L,
             (LPVOID *)&CHashMapPtrPoolctor_CHashMapPtrPool2_user,
             (LPVOID *)&CHashMapPtrPoolctor_CHashMapPtrPool2_next,
@@ -149,5 +149,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCollLineDrawctor_CCollLineDraw2_ptr CCollLineDrawctor_CCollLineDraw2_next(nullptr);
-        info::CCollLineDrawctor_CCollLineDraw2_clbk CCollLineDrawctor_CCollLineDraw2_user(nullptr);
-        info::CCollLineDrawDeletePen4_ptr CCollLineDrawDeletePen4_next(nullptr);
-        info::CCollLineDrawDeletePen4_clbk CCollLineDrawDeletePen4_user(nullptr);
-        info::CCollLineDrawctor_Draw6_ptr CCollLineDrawctor_Draw6_next(nullptr);
-        info::CCollLineDrawctor_Draw6_clbk CCollLineDrawctor_Draw6_user(nullptr);
-        info::CCollLineDrawDrawEx8_ptr CCollLineDrawDrawEx8_next(nullptr);
-        info::CCollLineDrawDrawEx8_clbk CCollLineDrawDrawEx8_user(nullptr);
-        info::CCollLineDrawInitLine10_ptr CCollLineDrawInitLine10_next(nullptr);
-        info::CCollLineDrawInitLine10_clbk CCollLineDrawInitLine10_user(nullptr);
-        info::CCollLineDrawInitPen12_ptr CCollLineDrawInitPen12_next(nullptr);
-        info::CCollLineDrawInitPen12_clbk CCollLineDrawInitPen12_user(nullptr);
-        info::CCollLineDrawdtor_CCollLineDraw17_ptr CCollLineDrawdtor_CCollLineDraw17_next(nullptr);
-        info::CCollLineDrawdtor_CCollLineDraw17_clbk CCollLineDrawdtor_CCollLineDraw17_user(nullptr);
+        static info::CCollLineDrawctor_CCollLineDraw2_ptr CCollLineDrawctor_CCollLineDraw2_next(nullptr);
+        static info::CCollLineDrawctor_CCollLineDraw2_clbk CCollLineDrawctor_CCollLineDraw2_user(nullptr);
+        static info::CCollLineDrawDeletePen4_ptr CCollLineDrawDeletePen4_next(nullptr);
+        static info::CCollLineDrawDeletePen4_clbk CCollLineDrawDeletePen4_user(nullptr);
+        static info::CCollLineDrawctor_Draw6_ptr CCollLineDrawctor_Draw6_next(nullptr);
+        static info::CCollLineDrawctor_Draw6_clbk CCollLineDrawctor_Draw6_user(nullptr);
+        static info::CCollLineDrawDrawEx8_ptr CCollLineDrawDrawEx8_next(nullptr);
+        static info::CCollLineDrawDrawEx8_clbk CCollLineDrawDrawEx8_user(nullptr);
+        static info::CCollLineDrawInitLine10_ptr CCollLineDrawInitLine10_next(nullptr);
+        static info::CCollLineDrawInitLine10_clbk CCollLineDrawInitLine10_user(nullptr);
+        static info::CCollLineDrawInitPen12_ptr CCollLineDrawInitPen12_next(nullptr);
+        static info::CCollLineDrawInitPen12_clbk CCollLineDrawInitPen12_user(nullptr);
+        static info::CCollLineDrawdtor_CCollLineDraw17_ptr CCollLineDrawdtor_CCollLineDraw17_next(nullptr);
+        static info::CCollLineDrawdtor_CCollLineDraw17_clbk CCollLineDrawdtor_CCollLineDraw17_user(nullptr);
         
-        void CCollLineDrawctor_CCollLineDraw2_wrapper(struct CCollLineDraw* _this)
+        static void CCollLineDrawctor_CCollLineDraw2_wrapper(struct CCollLineDraw* _this)
         {
            CCollLineDrawctor_CCollLineDraw2_user(_this, CCollLineDrawctor_CCollLineDraw2_next);
         };
-        void CCollLineDrawDeletePen4_wrapper()
+        static void CCollLineDrawDeletePen4_wrapper()
         {
            CCollLineDrawDeletePen4_user(CCollLineDrawDeletePen4_next);
         };
-        bool CCollLineDrawctor_Draw6_wrapper(struct CCollLineDraw* _this, struct CSurface* pSF, struct CRect* prcArea)
+        static bool CCollLineDrawctor_Draw6_wrapper(struct CCollLineDraw* _this, struct CSurface* pSF, struct CRect* prcArea)
         {
            return CCollLineDrawctor_Draw6_user(_this, pSF, prcArea, CCollLineDrawctor_Draw6_next);
         };
-        bool CCollLineDrawDrawEx8_wrapper(struct CCollLineDraw* _this, int nLineIndex, struct HDC__** pDC, struct CRect* prcArea)
+        static bool CCollLineDrawDrawEx8_wrapper(struct CCollLineDraw* _this, int nLineIndex, struct HDC__** pDC, struct CRect* prcArea)
         {
            return CCollLineDrawDrawEx8_user(_this, nLineIndex, pDC, prcArea, CCollLineDrawDrawEx8_next);
         };
-        bool CCollLineDrawInitLine10_wrapper(struct CCollLineDraw* _this, struct CMapData* pMap, struct CRect* prcWnd)
+        static bool CCollLineDrawInitLine10_wrapper(struct CCollLineDraw* _this, struct CMapData* pMap, struct CRect* prcWnd)
         {
            return CCollLineDrawInitLine10_user(_this, pMap, prcWnd, CCollLineDrawInitLine10_next);
         };
-        void CCollLineDrawInitPen12_wrapper()
+        static void CCollLineDrawInitPen12_wrapper()
         {
            CCollLineDrawInitPen12_user(CCollLineDrawInitPen12_next);
         };
-        void CCollLineDrawdtor_CCollLineDraw17_wrapper(struct CCollLineDraw* _this)
+        static void CCollLineDrawdtor_CCollLineDraw17_wrapper(struct CCollLineDraw* _this)
         {
            CCollLineDrawdtor_CCollLineDraw17_user(_this, CCollLineDrawdtor_CCollLineDraw17_next);
         };
         
-        hook_record CCollLineDraw_functions[] = {
+        static hook_record CCollLineDraw_functions[] = {
         {   (LPVOID)0x14019b850L,
             (LPVOID *)&CCollLineDrawctor_CCollLineDraw2_user,
             (LPVOID *)&CCollLineDrawctor_CCollLineDraw2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

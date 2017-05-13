@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSetItemEffectAttach_Set2_ptr CSetItemEffectAttach_Set2_next(nullptr);
-        info::CSetItemEffectAttach_Set2_clbk CSetItemEffectAttach_Set2_user(nullptr);
-        info::CSetItemEffectctor_CSetItemEffect4_ptr CSetItemEffectctor_CSetItemEffect4_next(nullptr);
-        info::CSetItemEffectctor_CSetItemEffect4_clbk CSetItemEffectctor_CSetItemEffect4_user(nullptr);
-        info::CSetItemEffectCheck_Base_EquipItem6_ptr CSetItemEffectCheck_Base_EquipItem6_next(nullptr);
-        info::CSetItemEffectCheck_Base_EquipItem6_clbk CSetItemEffectCheck_Base_EquipItem6_user(nullptr);
-        info::CSetItemEffectCheck_EquipItem8_ptr CSetItemEffectCheck_EquipItem8_next(nullptr);
-        info::CSetItemEffectCheck_EquipItem8_clbk CSetItemEffectCheck_EquipItem8_user(nullptr);
-        info::CSetItemEffectCheck_Other_EquipItem10_ptr CSetItemEffectCheck_Other_EquipItem10_next(nullptr);
-        info::CSetItemEffectCheck_Other_EquipItem10_clbk CSetItemEffectCheck_Other_EquipItem10_user(nullptr);
-        info::CSetItemEffectDetach_Set12_ptr CSetItemEffectDetach_Set12_next(nullptr);
-        info::CSetItemEffectDetach_Set12_clbk CSetItemEffectDetach_Set12_user(nullptr);
-        info::CSetItemEffectGetResetEffectNum14_ptr CSetItemEffectGetResetEffectNum14_next(nullptr);
-        info::CSetItemEffectGetResetEffectNum14_clbk CSetItemEffectGetResetEffectNum14_user(nullptr);
-        info::CSetItemEffectGetResetIdx16_ptr CSetItemEffectGetResetIdx16_next(nullptr);
-        info::CSetItemEffectGetResetIdx16_clbk CSetItemEffectGetResetIdx16_user(nullptr);
-        info::CSetItemEffectGetResetItemNum18_ptr CSetItemEffectGetResetItemNum18_next(nullptr);
-        info::CSetItemEffectGetResetItemNum18_clbk CSetItemEffectGetResetItemNum18_user(nullptr);
-        info::CSetItemEffectInit_Data20_ptr CSetItemEffectInit_Data20_next(nullptr);
-        info::CSetItemEffectInit_Data20_clbk CSetItemEffectInit_Data20_user(nullptr);
-        info::CSetItemEffectInit_Info22_ptr CSetItemEffectInit_Info22_next(nullptr);
-        info::CSetItemEffectInit_Info22_clbk CSetItemEffectInit_Info22_user(nullptr);
-        info::CSetItemEffectIsSetOn24_ptr CSetItemEffectIsSetOn24_next(nullptr);
-        info::CSetItemEffectIsSetOn24_clbk CSetItemEffectIsSetOn24_user(nullptr);
-        info::CSetItemEffectIsSetOnComplete26_ptr CSetItemEffectIsSetOnComplete26_next(nullptr);
-        info::CSetItemEffectIsSetOnComplete26_clbk CSetItemEffectIsSetOnComplete26_user(nullptr);
-        info::CSetItemEffectReset_Set28_ptr CSetItemEffectReset_Set28_next(nullptr);
-        info::CSetItemEffectReset_Set28_clbk CSetItemEffectReset_Set28_user(nullptr);
-        info::CSetItemEffectSetOffEffect30_ptr CSetItemEffectSetOffEffect30_next(nullptr);
-        info::CSetItemEffectSetOffEffect30_clbk CSetItemEffectSetOffEffect30_user(nullptr);
-        info::CSetItemEffectSetOnEffect32_ptr CSetItemEffectSetOnEffect32_next(nullptr);
-        info::CSetItemEffectSetOnEffect32_clbk CSetItemEffectSetOnEffect32_user(nullptr);
-        info::CSetItemEffectSetResetInfo34_ptr CSetItemEffectSetResetInfo34_next(nullptr);
-        info::CSetItemEffectSetResetInfo34_clbk CSetItemEffectSetResetInfo34_user(nullptr);
-        info::CSetItemEffectdtor_CSetItemEffect36_ptr CSetItemEffectdtor_CSetItemEffect36_next(nullptr);
-        info::CSetItemEffectdtor_CSetItemEffect36_clbk CSetItemEffectdtor_CSetItemEffect36_user(nullptr);
+        static info::CSetItemEffectAttach_Set2_ptr CSetItemEffectAttach_Set2_next(nullptr);
+        static info::CSetItemEffectAttach_Set2_clbk CSetItemEffectAttach_Set2_user(nullptr);
+        static info::CSetItemEffectctor_CSetItemEffect4_ptr CSetItemEffectctor_CSetItemEffect4_next(nullptr);
+        static info::CSetItemEffectctor_CSetItemEffect4_clbk CSetItemEffectctor_CSetItemEffect4_user(nullptr);
+        static info::CSetItemEffectCheck_Base_EquipItem6_ptr CSetItemEffectCheck_Base_EquipItem6_next(nullptr);
+        static info::CSetItemEffectCheck_Base_EquipItem6_clbk CSetItemEffectCheck_Base_EquipItem6_user(nullptr);
+        static info::CSetItemEffectCheck_EquipItem8_ptr CSetItemEffectCheck_EquipItem8_next(nullptr);
+        static info::CSetItemEffectCheck_EquipItem8_clbk CSetItemEffectCheck_EquipItem8_user(nullptr);
+        static info::CSetItemEffectCheck_Other_EquipItem10_ptr CSetItemEffectCheck_Other_EquipItem10_next(nullptr);
+        static info::CSetItemEffectCheck_Other_EquipItem10_clbk CSetItemEffectCheck_Other_EquipItem10_user(nullptr);
+        static info::CSetItemEffectDetach_Set12_ptr CSetItemEffectDetach_Set12_next(nullptr);
+        static info::CSetItemEffectDetach_Set12_clbk CSetItemEffectDetach_Set12_user(nullptr);
+        static info::CSetItemEffectGetResetEffectNum14_ptr CSetItemEffectGetResetEffectNum14_next(nullptr);
+        static info::CSetItemEffectGetResetEffectNum14_clbk CSetItemEffectGetResetEffectNum14_user(nullptr);
+        static info::CSetItemEffectGetResetIdx16_ptr CSetItemEffectGetResetIdx16_next(nullptr);
+        static info::CSetItemEffectGetResetIdx16_clbk CSetItemEffectGetResetIdx16_user(nullptr);
+        static info::CSetItemEffectGetResetItemNum18_ptr CSetItemEffectGetResetItemNum18_next(nullptr);
+        static info::CSetItemEffectGetResetItemNum18_clbk CSetItemEffectGetResetItemNum18_user(nullptr);
+        static info::CSetItemEffectInit_Data20_ptr CSetItemEffectInit_Data20_next(nullptr);
+        static info::CSetItemEffectInit_Data20_clbk CSetItemEffectInit_Data20_user(nullptr);
+        static info::CSetItemEffectInit_Info22_ptr CSetItemEffectInit_Info22_next(nullptr);
+        static info::CSetItemEffectInit_Info22_clbk CSetItemEffectInit_Info22_user(nullptr);
+        static info::CSetItemEffectIsSetOn24_ptr CSetItemEffectIsSetOn24_next(nullptr);
+        static info::CSetItemEffectIsSetOn24_clbk CSetItemEffectIsSetOn24_user(nullptr);
+        static info::CSetItemEffectIsSetOnComplete26_ptr CSetItemEffectIsSetOnComplete26_next(nullptr);
+        static info::CSetItemEffectIsSetOnComplete26_clbk CSetItemEffectIsSetOnComplete26_user(nullptr);
+        static info::CSetItemEffectReset_Set28_ptr CSetItemEffectReset_Set28_next(nullptr);
+        static info::CSetItemEffectReset_Set28_clbk CSetItemEffectReset_Set28_user(nullptr);
+        static info::CSetItemEffectSetOffEffect30_ptr CSetItemEffectSetOffEffect30_next(nullptr);
+        static info::CSetItemEffectSetOffEffect30_clbk CSetItemEffectSetOffEffect30_user(nullptr);
+        static info::CSetItemEffectSetOnEffect32_ptr CSetItemEffectSetOnEffect32_next(nullptr);
+        static info::CSetItemEffectSetOnEffect32_clbk CSetItemEffectSetOnEffect32_user(nullptr);
+        static info::CSetItemEffectSetResetInfo34_ptr CSetItemEffectSetResetInfo34_next(nullptr);
+        static info::CSetItemEffectSetResetInfo34_clbk CSetItemEffectSetResetInfo34_user(nullptr);
+        static info::CSetItemEffectdtor_CSetItemEffect36_ptr CSetItemEffectdtor_CSetItemEffect36_next(nullptr);
+        static info::CSetItemEffectdtor_CSetItemEffect36_clbk CSetItemEffectdtor_CSetItemEffect36_user(nullptr);
         
-        bool CSetItemEffectAttach_Set2_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static bool CSetItemEffectAttach_Set2_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            return CSetItemEffectAttach_Set2_user(_this, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectAttach_Set2_next);
         };
-        void CSetItemEffectctor_CSetItemEffect4_wrapper(struct CSetItemEffect* _this)
+        static void CSetItemEffectctor_CSetItemEffect4_wrapper(struct CSetItemEffect* _this)
         {
            CSetItemEffectctor_CSetItemEffect4_user(_this, CSetItemEffectctor_CSetItemEffect4_next);
         };
-        char CSetItemEffectCheck_Base_EquipItem6_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
+        static char CSetItemEffectCheck_Base_EquipItem6_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
         {
            return CSetItemEffectCheck_Base_EquipItem6_user(_this, pData, pSetFld, CSetItemEffectCheck_Base_EquipItem6_next);
         };
-        char CSetItemEffectCheck_EquipItem8_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
+        static char CSetItemEffectCheck_EquipItem8_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
         {
            return CSetItemEffectCheck_EquipItem8_user(_this, pData, pSetFld, CSetItemEffectCheck_EquipItem8_next);
         };
-        char CSetItemEffectCheck_Other_EquipItem10_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
+        static char CSetItemEffectCheck_Other_EquipItem10_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, struct _SetItemEff_fld* pSetFld)
         {
            return CSetItemEffectCheck_Other_EquipItem10_user(_this, pData, pSetFld, CSetItemEffectCheck_Other_EquipItem10_next);
         };
-        bool CSetItemEffectDetach_Set12_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem)
+        static bool CSetItemEffectDetach_Set12_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem)
         {
            return CSetItemEffectDetach_Set12_user(_this, dwSetItem, CSetItemEffectDetach_Set12_next);
         };
-        char CSetItemEffectGetResetEffectNum14_wrapper(struct CSetItemEffect* _this)
+        static char CSetItemEffectGetResetEffectNum14_wrapper(struct CSetItemEffect* _this)
         {
            return CSetItemEffectGetResetEffectNum14_user(_this, CSetItemEffectGetResetEffectNum14_next);
         };
-        unsigned int CSetItemEffectGetResetIdx16_wrapper(struct CSetItemEffect* _this)
+        static unsigned int CSetItemEffectGetResetIdx16_wrapper(struct CSetItemEffect* _this)
         {
            return CSetItemEffectGetResetIdx16_user(_this, CSetItemEffectGetResetIdx16_next);
         };
-        char CSetItemEffectGetResetItemNum18_wrapper(struct CSetItemEffect* _this)
+        static char CSetItemEffectGetResetItemNum18_wrapper(struct CSetItemEffect* _this)
         {
            return CSetItemEffectGetResetItemNum18_user(_this, CSetItemEffectGetResetItemNum18_next);
         };
-        void CSetItemEffectInit_Data20_wrapper(struct CSetItemEffect* _this, char byIdx)
+        static void CSetItemEffectInit_Data20_wrapper(struct CSetItemEffect* _this, char byIdx)
         {
            CSetItemEffectInit_Data20_user(_this, byIdx, CSetItemEffectInit_Data20_next);
         };
-        void CSetItemEffectInit_Info22_wrapper(struct CSetItemEffect* _this)
+        static void CSetItemEffectInit_Info22_wrapper(struct CSetItemEffect* _this)
         {
            CSetItemEffectInit_Info22_user(_this, CSetItemEffectInit_Info22_next);
         };
-        bool CSetItemEffectIsSetOn24_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem)
+        static bool CSetItemEffectIsSetOn24_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem)
         {
            return CSetItemEffectIsSetOn24_user(_this, dwSetItem, CSetItemEffectIsSetOn24_next);
         };
-        bool CSetItemEffectIsSetOnComplete26_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static bool CSetItemEffectIsSetOnComplete26_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            return CSetItemEffectIsSetOnComplete26_user(_this, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectIsSetOnComplete26_next);
         };
-        bool CSetItemEffectReset_Set28_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static bool CSetItemEffectReset_Set28_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            return CSetItemEffectReset_Set28_user(_this, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectReset_Set28_next);
         };
-        int CSetItemEffectSetOffEffect30_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static int CSetItemEffectSetOffEffect30_wrapper(struct CSetItemEffect* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            return CSetItemEffectSetOffEffect30_user(_this, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectSetOffEffect30_next);
         };
-        int CSetItemEffectSetOnEffect32_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static int CSetItemEffectSetOnEffect32_wrapper(struct CSetItemEffect* _this, struct _AVATOR_DATA* pData, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            return CSetItemEffectSetOnEffect32_user(_this, pData, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectSetOnEffect32_next);
         };
-        void CSetItemEffectSetResetInfo34_wrapper(struct CSetItemEffect* _this, bool bSet, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
+        static void CSetItemEffectSetResetInfo34_wrapper(struct CSetItemEffect* _this, bool bSet, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum)
         {
            CSetItemEffectSetResetInfo34_user(_this, bSet, dwSetItem, bySetItemNum, bySetEffectNum, CSetItemEffectSetResetInfo34_next);
         };
-        void CSetItemEffectdtor_CSetItemEffect36_wrapper(struct CSetItemEffect* _this)
+        static void CSetItemEffectdtor_CSetItemEffect36_wrapper(struct CSetItemEffect* _this)
         {
            CSetItemEffectdtor_CSetItemEffect36_user(_this, CSetItemEffectdtor_CSetItemEffect36_next);
         };
         
-        hook_record CSetItemEffect_functions[] = {
+        static hook_record CSetItemEffect_functions[] = {
         {   (LPVOID)0x1402e2c80L,
             (LPVOID *)&CSetItemEffectAttach_Set2_user,
             (LPVOID *)&CSetItemEffectAttach_Set2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

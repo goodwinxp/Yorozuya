@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_safe_dummySetDummy2_ptr _safe_dummySetDummy2_next(nullptr);
-        info::_safe_dummySetDummy2_clbk _safe_dummySetDummy2_user(nullptr);
-        info::_safe_dummyctor__safe_dummy4_ptr _safe_dummyctor__safe_dummy4_next(nullptr);
-        info::_safe_dummyctor__safe_dummy4_clbk _safe_dummyctor__safe_dummy4_user(nullptr);
+        static info::_safe_dummySetDummy2_ptr _safe_dummySetDummy2_next(nullptr);
+        static info::_safe_dummySetDummy2_clbk _safe_dummySetDummy2_user(nullptr);
+        static info::_safe_dummyctor__safe_dummy4_ptr _safe_dummyctor__safe_dummy4_next(nullptr);
+        static info::_safe_dummyctor__safe_dummy4_clbk _safe_dummyctor__safe_dummy4_user(nullptr);
         
-        bool _safe_dummySetDummy2_wrapper(struct _safe_dummy* _this, struct _dummy_position* pDumPos)
+        static bool _safe_dummySetDummy2_wrapper(struct _safe_dummy* _this, struct _dummy_position* pDumPos)
         {
            return _safe_dummySetDummy2_user(_this, pDumPos, _safe_dummySetDummy2_next);
         };
-        void _safe_dummyctor__safe_dummy4_wrapper(struct _safe_dummy* _this)
+        static void _safe_dummyctor__safe_dummy4_wrapper(struct _safe_dummy* _this)
         {
            _safe_dummyctor__safe_dummy4_user(_this, _safe_dummyctor__safe_dummy4_next);
         };
         
-        hook_record _safe_dummy_functions[] = {
+        static hook_record _safe_dummy_functions[] = {
         {   (LPVOID)0x140189bf0L,
             (LPVOID *)&_safe_dummySetDummy2_user,
             (LPVOID *)&_safe_dummySetDummy2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

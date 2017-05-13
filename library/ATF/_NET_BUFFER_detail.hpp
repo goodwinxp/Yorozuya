@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_NET_BUFFERAddPopPos2_ptr _NET_BUFFERAddPopPos2_next(nullptr);
-        info::_NET_BUFFERAddPopPos2_clbk _NET_BUFFERAddPopPos2_user(nullptr);
-        info::_NET_BUFFERAddPushPos4_ptr _NET_BUFFERAddPushPos4_next(nullptr);
-        info::_NET_BUFFERAddPushPos4_clbk _NET_BUFFERAddPushPos4_user(nullptr);
-        info::_NET_BUFFERAllocBuffer6_ptr _NET_BUFFERAllocBuffer6_next(nullptr);
-        info::_NET_BUFFERAllocBuffer6_clbk _NET_BUFFERAllocBuffer6_user(nullptr);
-        info::_NET_BUFFERGetLeftLoadSize8_ptr _NET_BUFFERGetLeftLoadSize8_next(nullptr);
-        info::_NET_BUFFERGetLeftLoadSize8_clbk _NET_BUFFERGetLeftLoadSize8_user(nullptr);
-        info::_NET_BUFFERGetPopPoint10_ptr _NET_BUFFERGetPopPoint10_next(nullptr);
-        info::_NET_BUFFERGetPopPoint10_clbk _NET_BUFFERGetPopPoint10_user(nullptr);
-        info::_NET_BUFFERGetPushPos12_ptr _NET_BUFFERGetPushPos12_next(nullptr);
-        info::_NET_BUFFERGetPushPos12_clbk _NET_BUFFERGetPushPos12_user(nullptr);
-        info::_NET_BUFFERGetSendPoint14_ptr _NET_BUFFERGetSendPoint14_next(nullptr);
-        info::_NET_BUFFERGetSendPoint14_clbk _NET_BUFFERGetSendPoint14_user(nullptr);
-        info::_NET_BUFFERInit16_ptr _NET_BUFFERInit16_next(nullptr);
-        info::_NET_BUFFERInit16_clbk _NET_BUFFERInit16_user(nullptr);
-        info::_NET_BUFFERctor__NET_BUFFER18_ptr _NET_BUFFERctor__NET_BUFFER18_next(nullptr);
-        info::_NET_BUFFERctor__NET_BUFFER18_clbk _NET_BUFFERctor__NET_BUFFER18_user(nullptr);
-        info::_NET_BUFFERdtor__NET_BUFFER22_ptr _NET_BUFFERdtor__NET_BUFFER22_next(nullptr);
-        info::_NET_BUFFERdtor__NET_BUFFER22_clbk _NET_BUFFERdtor__NET_BUFFER22_user(nullptr);
+        static info::_NET_BUFFERAddPopPos2_ptr _NET_BUFFERAddPopPos2_next(nullptr);
+        static info::_NET_BUFFERAddPopPos2_clbk _NET_BUFFERAddPopPos2_user(nullptr);
+        static info::_NET_BUFFERAddPushPos4_ptr _NET_BUFFERAddPushPos4_next(nullptr);
+        static info::_NET_BUFFERAddPushPos4_clbk _NET_BUFFERAddPushPos4_user(nullptr);
+        static info::_NET_BUFFERAllocBuffer6_ptr _NET_BUFFERAllocBuffer6_next(nullptr);
+        static info::_NET_BUFFERAllocBuffer6_clbk _NET_BUFFERAllocBuffer6_user(nullptr);
+        static info::_NET_BUFFERGetLeftLoadSize8_ptr _NET_BUFFERGetLeftLoadSize8_next(nullptr);
+        static info::_NET_BUFFERGetLeftLoadSize8_clbk _NET_BUFFERGetLeftLoadSize8_user(nullptr);
+        static info::_NET_BUFFERGetPopPoint10_ptr _NET_BUFFERGetPopPoint10_next(nullptr);
+        static info::_NET_BUFFERGetPopPoint10_clbk _NET_BUFFERGetPopPoint10_user(nullptr);
+        static info::_NET_BUFFERGetPushPos12_ptr _NET_BUFFERGetPushPos12_next(nullptr);
+        static info::_NET_BUFFERGetPushPos12_clbk _NET_BUFFERGetPushPos12_user(nullptr);
+        static info::_NET_BUFFERGetSendPoint14_ptr _NET_BUFFERGetSendPoint14_next(nullptr);
+        static info::_NET_BUFFERGetSendPoint14_clbk _NET_BUFFERGetSendPoint14_user(nullptr);
+        static info::_NET_BUFFERInit16_ptr _NET_BUFFERInit16_next(nullptr);
+        static info::_NET_BUFFERInit16_clbk _NET_BUFFERInit16_user(nullptr);
+        static info::_NET_BUFFERctor__NET_BUFFER18_ptr _NET_BUFFERctor__NET_BUFFER18_next(nullptr);
+        static info::_NET_BUFFERctor__NET_BUFFER18_clbk _NET_BUFFERctor__NET_BUFFER18_user(nullptr);
+        static info::_NET_BUFFERdtor__NET_BUFFER22_ptr _NET_BUFFERdtor__NET_BUFFER22_next(nullptr);
+        static info::_NET_BUFFERdtor__NET_BUFFER22_clbk _NET_BUFFERdtor__NET_BUFFER22_user(nullptr);
         
-        void _NET_BUFFERAddPopPos2_wrapper(struct _NET_BUFFER* _this, unsigned int dwAddSize)
+        static void _NET_BUFFERAddPopPos2_wrapper(struct _NET_BUFFER* _this, unsigned int dwAddSize)
         {
            _NET_BUFFERAddPopPos2_user(_this, dwAddSize, _NET_BUFFERAddPopPos2_next);
         };
-        void _NET_BUFFERAddPushPos4_wrapper(struct _NET_BUFFER* _this, unsigned int dwAddSize)
+        static void _NET_BUFFERAddPushPos4_wrapper(struct _NET_BUFFER* _this, unsigned int dwAddSize)
         {
            _NET_BUFFERAddPushPos4_user(_this, dwAddSize, _NET_BUFFERAddPushPos4_next);
         };
-        bool _NET_BUFFERAllocBuffer6_wrapper(struct _NET_BUFFER* _this, int nMaxSize, int nEtrSize, char* pTemp)
+        static bool _NET_BUFFERAllocBuffer6_wrapper(struct _NET_BUFFER* _this, int nMaxSize, int nEtrSize, char* pTemp)
         {
            return _NET_BUFFERAllocBuffer6_user(_this, nMaxSize, nEtrSize, pTemp, _NET_BUFFERAllocBuffer6_next);
         };
-        int _NET_BUFFERGetLeftLoadSize8_wrapper(struct _NET_BUFFER* _this)
+        static int _NET_BUFFERGetLeftLoadSize8_wrapper(struct _NET_BUFFER* _this)
         {
            return _NET_BUFFERGetLeftLoadSize8_user(_this, _NET_BUFFERGetLeftLoadSize8_next);
         };
-        char* _NET_BUFFERGetPopPoint10_wrapper(struct _NET_BUFFER* _this, bool* pbMiss)
+        static char* _NET_BUFFERGetPopPoint10_wrapper(struct _NET_BUFFER* _this, bool* pbMiss)
         {
            return _NET_BUFFERGetPopPoint10_user(_this, pbMiss, _NET_BUFFERGetPopPoint10_next);
         };
-        char* _NET_BUFFERGetPushPos12_wrapper(struct _NET_BUFFER* _this)
+        static char* _NET_BUFFERGetPushPos12_wrapper(struct _NET_BUFFER* _this)
         {
            return _NET_BUFFERGetPushPos12_user(_this, _NET_BUFFERGetPushPos12_next);
         };
-        char* _NET_BUFFERGetSendPoint14_wrapper(struct _NET_BUFFER* _this, int* pnSendSize, bool* pMiss)
+        static char* _NET_BUFFERGetSendPoint14_wrapper(struct _NET_BUFFER* _this, int* pnSendSize, bool* pMiss)
         {
            return _NET_BUFFERGetSendPoint14_user(_this, pnSendSize, pMiss, _NET_BUFFERGetSendPoint14_next);
         };
-        void _NET_BUFFERInit16_wrapper(struct _NET_BUFFER* _this)
+        static void _NET_BUFFERInit16_wrapper(struct _NET_BUFFER* _this)
         {
            _NET_BUFFERInit16_user(_this, _NET_BUFFERInit16_next);
         };
-        void _NET_BUFFERctor__NET_BUFFER18_wrapper(struct _NET_BUFFER* _this)
+        static void _NET_BUFFERctor__NET_BUFFER18_wrapper(struct _NET_BUFFER* _this)
         {
            _NET_BUFFERctor__NET_BUFFER18_user(_this, _NET_BUFFERctor__NET_BUFFER18_next);
         };
-        void _NET_BUFFERdtor__NET_BUFFER22_wrapper(struct _NET_BUFFER* _this)
+        static void _NET_BUFFERdtor__NET_BUFFER22_wrapper(struct _NET_BUFFER* _this)
         {
            _NET_BUFFERdtor__NET_BUFFER22_user(_this, _NET_BUFFERdtor__NET_BUFFER22_next);
         };
         
-        hook_record _NET_BUFFER_functions[] = {
+        static hook_record _NET_BUFFER_functions[] = {
         {   (LPVOID)0x14047d5c0L,
             (LPVOID *)&_NET_BUFFERAddPopPos2_user,
             (LPVOID *)&_NET_BUFFERAddPopPos2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

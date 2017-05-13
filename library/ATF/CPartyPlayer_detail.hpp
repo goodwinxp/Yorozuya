@@ -8,141 +8,141 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPartyPlayerctor_CPartyPlayer2_ptr CPartyPlayerctor_CPartyPlayer2_next(nullptr);
-        info::CPartyPlayerctor_CPartyPlayer2_clbk CPartyPlayerctor_CPartyPlayer2_user(nullptr);
-        info::CPartyPlayerDisjointParty4_ptr CPartyPlayerDisjointParty4_next(nullptr);
-        info::CPartyPlayerDisjointParty4_clbk CPartyPlayerDisjointParty4_user(nullptr);
-        info::CPartyPlayerEnterWorld6_ptr CPartyPlayerEnterWorld6_next(nullptr);
-        info::CPartyPlayerEnterWorld6_clbk CPartyPlayerEnterWorld6_user(nullptr);
-        info::CPartyPlayerExitWorld8_ptr CPartyPlayerExitWorld8_next(nullptr);
-        info::CPartyPlayerExitWorld8_clbk CPartyPlayerExitWorld8_user(nullptr);
-        info::CPartyPlayerFoundParty10_ptr CPartyPlayerFoundParty10_next(nullptr);
-        info::CPartyPlayerFoundParty10_clbk CPartyPlayerFoundParty10_user(nullptr);
-        info::CPartyPlayerGetLootAuthor12_ptr CPartyPlayerGetLootAuthor12_next(nullptr);
-        info::CPartyPlayerGetLootAuthor12_clbk CPartyPlayerGetLootAuthor12_user(nullptr);
-        info::CPartyPlayerGetPopPartyMember14_ptr CPartyPlayerGetPopPartyMember14_next(nullptr);
-        info::CPartyPlayerGetPopPartyMember14_clbk CPartyPlayerGetPopPartyMember14_user(nullptr);
-        info::CPartyPlayerGetPtrFromSerial16_ptr CPartyPlayerGetPtrFromSerial16_next(nullptr);
-        info::CPartyPlayerGetPtrFromSerial16_clbk CPartyPlayerGetPtrFromSerial16_user(nullptr);
-        info::CPartyPlayerGetPtrPartyMember18_ptr CPartyPlayerGetPtrPartyMember18_next(nullptr);
-        info::CPartyPlayerGetPtrPartyMember18_clbk CPartyPlayerGetPtrPartyMember18_user(nullptr);
-        info::CPartyPlayerInheritBoss20_ptr CPartyPlayerInheritBoss20_next(nullptr);
-        info::CPartyPlayerInheritBoss20_clbk CPartyPlayerInheritBoss20_user(nullptr);
-        info::CPartyPlayerInit22_ptr CPartyPlayerInit22_next(nullptr);
-        info::CPartyPlayerInit22_clbk CPartyPlayerInit22_user(nullptr);
-        info::CPartyPlayerInsertPartyMember24_ptr CPartyPlayerInsertPartyMember24_next(nullptr);
-        info::CPartyPlayerInsertPartyMember24_clbk CPartyPlayerInsertPartyMember24_user(nullptr);
-        info::CPartyPlayerIsJoinPartyLevel26_ptr CPartyPlayerIsJoinPartyLevel26_next(nullptr);
-        info::CPartyPlayerIsJoinPartyLevel26_clbk CPartyPlayerIsJoinPartyLevel26_user(nullptr);
-        info::CPartyPlayerIsPartyBoss28_ptr CPartyPlayerIsPartyBoss28_next(nullptr);
-        info::CPartyPlayerIsPartyBoss28_clbk CPartyPlayerIsPartyBoss28_user(nullptr);
-        info::CPartyPlayerIsPartyLock30_ptr CPartyPlayerIsPartyLock30_next(nullptr);
-        info::CPartyPlayerIsPartyLock30_clbk CPartyPlayerIsPartyLock30_user(nullptr);
-        info::CPartyPlayerIsPartyMember32_ptr CPartyPlayerIsPartyMember32_next(nullptr);
-        info::CPartyPlayerIsPartyMember32_clbk CPartyPlayerIsPartyMember32_user(nullptr);
-        info::CPartyPlayerIsPartyMode34_ptr CPartyPlayerIsPartyMode34_next(nullptr);
-        info::CPartyPlayerIsPartyMode34_clbk CPartyPlayerIsPartyMode34_user(nullptr);
-        info::CPartyPlayerPartyListInit36_ptr CPartyPlayerPartyListInit36_next(nullptr);
-        info::CPartyPlayerPartyListInit36_clbk CPartyPlayerPartyListInit36_user(nullptr);
-        info::CPartyPlayerRemovePartyMember38_ptr CPartyPlayerRemovePartyMember38_next(nullptr);
-        info::CPartyPlayerRemovePartyMember38_clbk CPartyPlayerRemovePartyMember38_user(nullptr);
-        info::CPartyPlayerSetLockMode40_ptr CPartyPlayerSetLockMode40_next(nullptr);
-        info::CPartyPlayerSetLockMode40_clbk CPartyPlayerSetLockMode40_user(nullptr);
-        info::CPartyPlayerSetLootShareMode42_ptr CPartyPlayerSetLootShareMode42_next(nullptr);
-        info::CPartyPlayerSetLootShareMode42_clbk CPartyPlayerSetLootShareMode42_user(nullptr);
-        info::CPartyPlayerSetNextLootAuthor44_ptr CPartyPlayerSetNextLootAuthor44_next(nullptr);
-        info::CPartyPlayerSetNextLootAuthor44_clbk CPartyPlayerSetNextLootAuthor44_user(nullptr);
+        static info::CPartyPlayerctor_CPartyPlayer2_ptr CPartyPlayerctor_CPartyPlayer2_next(nullptr);
+        static info::CPartyPlayerctor_CPartyPlayer2_clbk CPartyPlayerctor_CPartyPlayer2_user(nullptr);
+        static info::CPartyPlayerDisjointParty4_ptr CPartyPlayerDisjointParty4_next(nullptr);
+        static info::CPartyPlayerDisjointParty4_clbk CPartyPlayerDisjointParty4_user(nullptr);
+        static info::CPartyPlayerEnterWorld6_ptr CPartyPlayerEnterWorld6_next(nullptr);
+        static info::CPartyPlayerEnterWorld6_clbk CPartyPlayerEnterWorld6_user(nullptr);
+        static info::CPartyPlayerExitWorld8_ptr CPartyPlayerExitWorld8_next(nullptr);
+        static info::CPartyPlayerExitWorld8_clbk CPartyPlayerExitWorld8_user(nullptr);
+        static info::CPartyPlayerFoundParty10_ptr CPartyPlayerFoundParty10_next(nullptr);
+        static info::CPartyPlayerFoundParty10_clbk CPartyPlayerFoundParty10_user(nullptr);
+        static info::CPartyPlayerGetLootAuthor12_ptr CPartyPlayerGetLootAuthor12_next(nullptr);
+        static info::CPartyPlayerGetLootAuthor12_clbk CPartyPlayerGetLootAuthor12_user(nullptr);
+        static info::CPartyPlayerGetPopPartyMember14_ptr CPartyPlayerGetPopPartyMember14_next(nullptr);
+        static info::CPartyPlayerGetPopPartyMember14_clbk CPartyPlayerGetPopPartyMember14_user(nullptr);
+        static info::CPartyPlayerGetPtrFromSerial16_ptr CPartyPlayerGetPtrFromSerial16_next(nullptr);
+        static info::CPartyPlayerGetPtrFromSerial16_clbk CPartyPlayerGetPtrFromSerial16_user(nullptr);
+        static info::CPartyPlayerGetPtrPartyMember18_ptr CPartyPlayerGetPtrPartyMember18_next(nullptr);
+        static info::CPartyPlayerGetPtrPartyMember18_clbk CPartyPlayerGetPtrPartyMember18_user(nullptr);
+        static info::CPartyPlayerInheritBoss20_ptr CPartyPlayerInheritBoss20_next(nullptr);
+        static info::CPartyPlayerInheritBoss20_clbk CPartyPlayerInheritBoss20_user(nullptr);
+        static info::CPartyPlayerInit22_ptr CPartyPlayerInit22_next(nullptr);
+        static info::CPartyPlayerInit22_clbk CPartyPlayerInit22_user(nullptr);
+        static info::CPartyPlayerInsertPartyMember24_ptr CPartyPlayerInsertPartyMember24_next(nullptr);
+        static info::CPartyPlayerInsertPartyMember24_clbk CPartyPlayerInsertPartyMember24_user(nullptr);
+        static info::CPartyPlayerIsJoinPartyLevel26_ptr CPartyPlayerIsJoinPartyLevel26_next(nullptr);
+        static info::CPartyPlayerIsJoinPartyLevel26_clbk CPartyPlayerIsJoinPartyLevel26_user(nullptr);
+        static info::CPartyPlayerIsPartyBoss28_ptr CPartyPlayerIsPartyBoss28_next(nullptr);
+        static info::CPartyPlayerIsPartyBoss28_clbk CPartyPlayerIsPartyBoss28_user(nullptr);
+        static info::CPartyPlayerIsPartyLock30_ptr CPartyPlayerIsPartyLock30_next(nullptr);
+        static info::CPartyPlayerIsPartyLock30_clbk CPartyPlayerIsPartyLock30_user(nullptr);
+        static info::CPartyPlayerIsPartyMember32_ptr CPartyPlayerIsPartyMember32_next(nullptr);
+        static info::CPartyPlayerIsPartyMember32_clbk CPartyPlayerIsPartyMember32_user(nullptr);
+        static info::CPartyPlayerIsPartyMode34_ptr CPartyPlayerIsPartyMode34_next(nullptr);
+        static info::CPartyPlayerIsPartyMode34_clbk CPartyPlayerIsPartyMode34_user(nullptr);
+        static info::CPartyPlayerPartyListInit36_ptr CPartyPlayerPartyListInit36_next(nullptr);
+        static info::CPartyPlayerPartyListInit36_clbk CPartyPlayerPartyListInit36_user(nullptr);
+        static info::CPartyPlayerRemovePartyMember38_ptr CPartyPlayerRemovePartyMember38_next(nullptr);
+        static info::CPartyPlayerRemovePartyMember38_clbk CPartyPlayerRemovePartyMember38_user(nullptr);
+        static info::CPartyPlayerSetLockMode40_ptr CPartyPlayerSetLockMode40_next(nullptr);
+        static info::CPartyPlayerSetLockMode40_clbk CPartyPlayerSetLockMode40_user(nullptr);
+        static info::CPartyPlayerSetLootShareMode42_ptr CPartyPlayerSetLootShareMode42_next(nullptr);
+        static info::CPartyPlayerSetLootShareMode42_clbk CPartyPlayerSetLootShareMode42_user(nullptr);
+        static info::CPartyPlayerSetNextLootAuthor44_ptr CPartyPlayerSetNextLootAuthor44_next(nullptr);
+        static info::CPartyPlayerSetNextLootAuthor44_clbk CPartyPlayerSetNextLootAuthor44_user(nullptr);
         
-        void CPartyPlayerctor_CPartyPlayer2_wrapper(struct CPartyPlayer* _this)
+        static void CPartyPlayerctor_CPartyPlayer2_wrapper(struct CPartyPlayer* _this)
         {
            CPartyPlayerctor_CPartyPlayer2_user(_this, CPartyPlayerctor_CPartyPlayer2_next);
         };
-        bool CPartyPlayerDisjointParty4_wrapper(struct CPartyPlayer* _this)
+        static bool CPartyPlayerDisjointParty4_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerDisjointParty4_user(_this, CPartyPlayerDisjointParty4_next);
         };
-        void CPartyPlayerEnterWorld6_wrapper(struct CPartyPlayer* _this, struct _WA_AVATOR_CODE* pData, uint16_t wZoneIndex)
+        static void CPartyPlayerEnterWorld6_wrapper(struct CPartyPlayer* _this, struct _WA_AVATOR_CODE* pData, uint16_t wZoneIndex)
         {
            CPartyPlayerEnterWorld6_user(_this, pData, wZoneIndex, CPartyPlayerEnterWorld6_next);
         };
-        void CPartyPlayerExitWorld8_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer** ppoutNewBoss)
+        static void CPartyPlayerExitWorld8_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer** ppoutNewBoss)
         {
            CPartyPlayerExitWorld8_user(_this, ppoutNewBoss, CPartyPlayerExitWorld8_next);
         };
-        bool CPartyPlayerFoundParty10_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pParticiper)
+        static bool CPartyPlayerFoundParty10_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pParticiper)
         {
            return CPartyPlayerFoundParty10_user(_this, pParticiper, CPartyPlayerFoundParty10_next);
         };
-        struct CPlayer* CPartyPlayerGetLootAuthor12_wrapper(struct CPartyPlayer* _this)
+        static struct CPlayer* CPartyPlayerGetLootAuthor12_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerGetLootAuthor12_user(_this, CPartyPlayerGetLootAuthor12_next);
         };
-        int CPartyPlayerGetPopPartyMember14_wrapper(struct CPartyPlayer* _this)
+        static int CPartyPlayerGetPopPartyMember14_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerGetPopPartyMember14_user(_this, CPartyPlayerGetPopPartyMember14_next);
         };
-        struct CPartyPlayer* CPartyPlayerGetPtrFromSerial16_wrapper(struct CPartyPlayer* _this, unsigned int dwWorldSerial)
+        static struct CPartyPlayer* CPartyPlayerGetPtrFromSerial16_wrapper(struct CPartyPlayer* _this, unsigned int dwWorldSerial)
         {
            return CPartyPlayerGetPtrFromSerial16_user(_this, dwWorldSerial, CPartyPlayerGetPtrFromSerial16_next);
         };
-        struct CPartyPlayer** CPartyPlayerGetPtrPartyMember18_wrapper(struct CPartyPlayer* _this)
+        static struct CPartyPlayer** CPartyPlayerGetPtrPartyMember18_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerGetPtrPartyMember18_user(_this, CPartyPlayerGetPtrPartyMember18_next);
         };
-        bool CPartyPlayerInheritBoss20_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pSuccessor)
+        static bool CPartyPlayerInheritBoss20_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pSuccessor)
         {
            return CPartyPlayerInheritBoss20_user(_this, pSuccessor, CPartyPlayerInheritBoss20_next);
         };
-        void CPartyPlayerInit22_wrapper(struct CPartyPlayer* _this, uint16_t wIndex)
+        static void CPartyPlayerInit22_wrapper(struct CPartyPlayer* _this, uint16_t wIndex)
         {
            CPartyPlayerInit22_user(_this, wIndex, CPartyPlayerInit22_next);
         };
-        bool CPartyPlayerInsertPartyMember24_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pJoiner)
+        static bool CPartyPlayerInsertPartyMember24_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pJoiner)
         {
            return CPartyPlayerInsertPartyMember24_user(_this, pJoiner, CPartyPlayerInsertPartyMember24_next);
         };
-        bool CPartyPlayerIsJoinPartyLevel26_wrapper(struct CPartyPlayer* _this, int nJoinerLevel, float fProf)
+        static bool CPartyPlayerIsJoinPartyLevel26_wrapper(struct CPartyPlayer* _this, int nJoinerLevel, float fProf)
         {
            return CPartyPlayerIsJoinPartyLevel26_user(_this, nJoinerLevel, fProf, CPartyPlayerIsJoinPartyLevel26_next);
         };
-        bool CPartyPlayerIsPartyBoss28_wrapper(struct CPartyPlayer* _this)
+        static bool CPartyPlayerIsPartyBoss28_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerIsPartyBoss28_user(_this, CPartyPlayerIsPartyBoss28_next);
         };
-        bool CPartyPlayerIsPartyLock30_wrapper(struct CPartyPlayer* _this)
+        static bool CPartyPlayerIsPartyLock30_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerIsPartyLock30_user(_this, CPartyPlayerIsPartyLock30_next);
         };
-        bool CPartyPlayerIsPartyMember32_wrapper(struct CPartyPlayer* _this, struct CPlayer* pkObj)
+        static bool CPartyPlayerIsPartyMember32_wrapper(struct CPartyPlayer* _this, struct CPlayer* pkObj)
         {
            return CPartyPlayerIsPartyMember32_user(_this, pkObj, CPartyPlayerIsPartyMember32_next);
         };
-        bool CPartyPlayerIsPartyMode34_wrapper(struct CPartyPlayer* _this)
+        static bool CPartyPlayerIsPartyMode34_wrapper(struct CPartyPlayer* _this)
         {
            return CPartyPlayerIsPartyMode34_user(_this, CPartyPlayerIsPartyMode34_next);
         };
-        void CPartyPlayerPartyListInit36_wrapper(struct CPartyPlayer* _this)
+        static void CPartyPlayerPartyListInit36_wrapper(struct CPartyPlayer* _this)
         {
            CPartyPlayerPartyListInit36_user(_this, CPartyPlayerPartyListInit36_next);
         };
-        bool CPartyPlayerRemovePartyMember38_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pExiter, struct CPartyPlayer** ppoutNewBoss)
+        static bool CPartyPlayerRemovePartyMember38_wrapper(struct CPartyPlayer* _this, struct CPartyPlayer* pExiter, struct CPartyPlayer** ppoutNewBoss)
         {
            return CPartyPlayerRemovePartyMember38_user(_this, pExiter, ppoutNewBoss, CPartyPlayerRemovePartyMember38_next);
         };
-        bool CPartyPlayerSetLockMode40_wrapper(struct CPartyPlayer* _this, bool bLock)
+        static bool CPartyPlayerSetLockMode40_wrapper(struct CPartyPlayer* _this, bool bLock)
         {
            return CPartyPlayerSetLockMode40_user(_this, bLock, CPartyPlayerSetLockMode40_next);
         };
-        bool CPartyPlayerSetLootShareMode42_wrapper(struct CPartyPlayer* _this, char byLootShareMode)
+        static bool CPartyPlayerSetLootShareMode42_wrapper(struct CPartyPlayer* _this, char byLootShareMode)
         {
            return CPartyPlayerSetLootShareMode42_user(_this, byLootShareMode, CPartyPlayerSetLootShareMode42_next);
         };
-        void CPartyPlayerSetNextLootAuthor44_wrapper(struct CPartyPlayer* _this)
+        static void CPartyPlayerSetNextLootAuthor44_wrapper(struct CPartyPlayer* _this)
         {
            CPartyPlayerSetNextLootAuthor44_user(_this, CPartyPlayerSetNextLootAuthor44_next);
         };
         
-        hook_record CPartyPlayer_functions[] = {
+        static hook_record CPartyPlayer_functions[] = {
         {   (LPVOID)0x140044c10L,
             (LPVOID *)&CPartyPlayerctor_CPartyPlayer2_user,
             (LPVOID *)&CPartyPlayerctor_CPartyPlayer2_next,
@@ -256,5 +256,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

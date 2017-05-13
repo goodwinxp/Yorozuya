@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMoveMapLimitEnviromentValuesInit2_ptr CMoveMapLimitEnviromentValuesInit2_next(nullptr);
-        info::CMoveMapLimitEnviromentValuesInit2_clbk CMoveMapLimitEnviromentValuesInit2_user(nullptr);
+        static info::CMoveMapLimitEnviromentValuesInit2_ptr CMoveMapLimitEnviromentValuesInit2_next(nullptr);
+        static info::CMoveMapLimitEnviromentValuesInit2_clbk CMoveMapLimitEnviromentValuesInit2_user(nullptr);
         
-        bool CMoveMapLimitEnviromentValuesInit2_wrapper()
+        static bool CMoveMapLimitEnviromentValuesInit2_wrapper()
         {
            return CMoveMapLimitEnviromentValuesInit2_user(CMoveMapLimitEnviromentValuesInit2_next);
         };
         
-        hook_record CMoveMapLimitEnviromentValues_functions[] = {
+        static hook_record CMoveMapLimitEnviromentValues_functions[] = {
         {   (LPVOID)0x1403a1550L,
             (LPVOID *)&CMoveMapLimitEnviromentValuesInit2_user,
             (LPVOID *)&CMoveMapLimitEnviromentValuesInit2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,129 +8,129 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHonorGuildctor_CHonorGuild2_ptr CHonorGuildctor_CHonorGuild2_next(nullptr);
-        info::CHonorGuildctor_CHonorGuild2_clbk CHonorGuildctor_CHonorGuild2_user(nullptr);
-        info::CHonorGuildChangeHonorGuild4_ptr CHonorGuildChangeHonorGuild4_next(nullptr);
-        info::CHonorGuildChangeHonorGuild4_clbk CHonorGuildChangeHonorGuild4_user(nullptr);
-        info::CHonorGuildCheckHonorGuild6_ptr CHonorGuildCheckHonorGuild6_next(nullptr);
-        info::CHonorGuildCheckHonorGuild6_clbk CHonorGuildCheckHonorGuild6_user(nullptr);
-        info::CHonorGuildDQSCompleteInAtradTaxMoney8_ptr CHonorGuildDQSCompleteInAtradTaxMoney8_next(nullptr);
-        info::CHonorGuildDQSCompleteInAtradTaxMoney8_clbk CHonorGuildDQSCompleteInAtradTaxMoney8_user(nullptr);
-        info::CHonorGuildDestroy10_ptr CHonorGuildDestroy10_next(nullptr);
-        info::CHonorGuildDestroy10_clbk CHonorGuildDestroy10_user(nullptr);
-        info::CHonorGuildFindHonorGuildRank12_ptr CHonorGuildFindHonorGuildRank12_next(nullptr);
-        info::CHonorGuildFindHonorGuildRank12_clbk CHonorGuildFindHonorGuildRank12_user(nullptr);
-        info::CHonorGuildInit14_ptr CHonorGuildInit14_next(nullptr);
-        info::CHonorGuildInit14_clbk CHonorGuildInit14_user(nullptr);
-        info::CHonorGuildInstance16_ptr CHonorGuildInstance16_next(nullptr);
-        info::CHonorGuildInstance16_clbk CHonorGuildInstance16_user(nullptr);
-        info::CHonorGuildLoadDB18_ptr CHonorGuildLoadDB18_next(nullptr);
-        info::CHonorGuildLoadDB18_clbk CHonorGuildLoadDB18_user(nullptr);
-        info::CHonorGuildLoop20_ptr CHonorGuildLoop20_next(nullptr);
-        info::CHonorGuildLoop20_clbk CHonorGuildLoop20_user(nullptr);
-        info::CHonorGuildLoopSubProcSendInform22_ptr CHonorGuildLoopSubProcSendInform22_next(nullptr);
-        info::CHonorGuildLoopSubProcSendInform22_clbk CHonorGuildLoopSubProcSendInform22_user(nullptr);
-        info::CHonorGuildSendCurrHonorGuildList24_ptr CHonorGuildSendCurrHonorGuildList24_next(nullptr);
-        info::CHonorGuildSendCurrHonorGuildList24_clbk CHonorGuildSendCurrHonorGuildList24_user(nullptr);
-        info::CHonorGuildSendInformChange26_ptr CHonorGuildSendInformChange26_next(nullptr);
-        info::CHonorGuildSendInformChange26_clbk CHonorGuildSendInformChange26_user(nullptr);
-        info::CHonorGuildSendNextHonorGuildList28_ptr CHonorGuildSendNextHonorGuildList28_next(nullptr);
-        info::CHonorGuildSendNextHonorGuildList28_clbk CHonorGuildSendNextHonorGuildList28_user(nullptr);
-        info::CHonorGuildSetGuildMaintainMoney30_ptr CHonorGuildSetGuildMaintainMoney30_next(nullptr);
-        info::CHonorGuildSetGuildMaintainMoney30_clbk CHonorGuildSetGuildMaintainMoney30_user(nullptr);
-        info::CHonorGuildSetNextHonorGuild32_ptr CHonorGuildSetNextHonorGuild32_next(nullptr);
-        info::CHonorGuildSetNextHonorGuild32_clbk CHonorGuildSetNextHonorGuild32_user(nullptr);
-        info::CHonorGuildUpdateChangeHonorGuild34_ptr CHonorGuildUpdateChangeHonorGuild34_next(nullptr);
-        info::CHonorGuildUpdateChangeHonorGuild34_clbk CHonorGuildUpdateChangeHonorGuild34_user(nullptr);
-        info::CHonorGuildUpdateHonorGuildMark36_ptr CHonorGuildUpdateHonorGuildMark36_next(nullptr);
-        info::CHonorGuildUpdateHonorGuildMark36_clbk CHonorGuildUpdateHonorGuildMark36_user(nullptr);
-        info::CHonorGuildUpdateNextHonorGuild38_ptr CHonorGuildUpdateNextHonorGuild38_next(nullptr);
-        info::CHonorGuildUpdateNextHonorGuild38_clbk CHonorGuildUpdateNextHonorGuild38_user(nullptr);
-        info::CHonorGuilddtor_CHonorGuild43_ptr CHonorGuilddtor_CHonorGuild43_next(nullptr);
-        info::CHonorGuilddtor_CHonorGuild43_clbk CHonorGuilddtor_CHonorGuild43_user(nullptr);
+        static info::CHonorGuildctor_CHonorGuild2_ptr CHonorGuildctor_CHonorGuild2_next(nullptr);
+        static info::CHonorGuildctor_CHonorGuild2_clbk CHonorGuildctor_CHonorGuild2_user(nullptr);
+        static info::CHonorGuildChangeHonorGuild4_ptr CHonorGuildChangeHonorGuild4_next(nullptr);
+        static info::CHonorGuildChangeHonorGuild4_clbk CHonorGuildChangeHonorGuild4_user(nullptr);
+        static info::CHonorGuildCheckHonorGuild6_ptr CHonorGuildCheckHonorGuild6_next(nullptr);
+        static info::CHonorGuildCheckHonorGuild6_clbk CHonorGuildCheckHonorGuild6_user(nullptr);
+        static info::CHonorGuildDQSCompleteInAtradTaxMoney8_ptr CHonorGuildDQSCompleteInAtradTaxMoney8_next(nullptr);
+        static info::CHonorGuildDQSCompleteInAtradTaxMoney8_clbk CHonorGuildDQSCompleteInAtradTaxMoney8_user(nullptr);
+        static info::CHonorGuildDestroy10_ptr CHonorGuildDestroy10_next(nullptr);
+        static info::CHonorGuildDestroy10_clbk CHonorGuildDestroy10_user(nullptr);
+        static info::CHonorGuildFindHonorGuildRank12_ptr CHonorGuildFindHonorGuildRank12_next(nullptr);
+        static info::CHonorGuildFindHonorGuildRank12_clbk CHonorGuildFindHonorGuildRank12_user(nullptr);
+        static info::CHonorGuildInit14_ptr CHonorGuildInit14_next(nullptr);
+        static info::CHonorGuildInit14_clbk CHonorGuildInit14_user(nullptr);
+        static info::CHonorGuildInstance16_ptr CHonorGuildInstance16_next(nullptr);
+        static info::CHonorGuildInstance16_clbk CHonorGuildInstance16_user(nullptr);
+        static info::CHonorGuildLoadDB18_ptr CHonorGuildLoadDB18_next(nullptr);
+        static info::CHonorGuildLoadDB18_clbk CHonorGuildLoadDB18_user(nullptr);
+        static info::CHonorGuildLoop20_ptr CHonorGuildLoop20_next(nullptr);
+        static info::CHonorGuildLoop20_clbk CHonorGuildLoop20_user(nullptr);
+        static info::CHonorGuildLoopSubProcSendInform22_ptr CHonorGuildLoopSubProcSendInform22_next(nullptr);
+        static info::CHonorGuildLoopSubProcSendInform22_clbk CHonorGuildLoopSubProcSendInform22_user(nullptr);
+        static info::CHonorGuildSendCurrHonorGuildList24_ptr CHonorGuildSendCurrHonorGuildList24_next(nullptr);
+        static info::CHonorGuildSendCurrHonorGuildList24_clbk CHonorGuildSendCurrHonorGuildList24_user(nullptr);
+        static info::CHonorGuildSendInformChange26_ptr CHonorGuildSendInformChange26_next(nullptr);
+        static info::CHonorGuildSendInformChange26_clbk CHonorGuildSendInformChange26_user(nullptr);
+        static info::CHonorGuildSendNextHonorGuildList28_ptr CHonorGuildSendNextHonorGuildList28_next(nullptr);
+        static info::CHonorGuildSendNextHonorGuildList28_clbk CHonorGuildSendNextHonorGuildList28_user(nullptr);
+        static info::CHonorGuildSetGuildMaintainMoney30_ptr CHonorGuildSetGuildMaintainMoney30_next(nullptr);
+        static info::CHonorGuildSetGuildMaintainMoney30_clbk CHonorGuildSetGuildMaintainMoney30_user(nullptr);
+        static info::CHonorGuildSetNextHonorGuild32_ptr CHonorGuildSetNextHonorGuild32_next(nullptr);
+        static info::CHonorGuildSetNextHonorGuild32_clbk CHonorGuildSetNextHonorGuild32_user(nullptr);
+        static info::CHonorGuildUpdateChangeHonorGuild34_ptr CHonorGuildUpdateChangeHonorGuild34_next(nullptr);
+        static info::CHonorGuildUpdateChangeHonorGuild34_clbk CHonorGuildUpdateChangeHonorGuild34_user(nullptr);
+        static info::CHonorGuildUpdateHonorGuildMark36_ptr CHonorGuildUpdateHonorGuildMark36_next(nullptr);
+        static info::CHonorGuildUpdateHonorGuildMark36_clbk CHonorGuildUpdateHonorGuildMark36_user(nullptr);
+        static info::CHonorGuildUpdateNextHonorGuild38_ptr CHonorGuildUpdateNextHonorGuild38_next(nullptr);
+        static info::CHonorGuildUpdateNextHonorGuild38_clbk CHonorGuildUpdateNextHonorGuild38_user(nullptr);
+        static info::CHonorGuilddtor_CHonorGuild43_ptr CHonorGuilddtor_CHonorGuild43_next(nullptr);
+        static info::CHonorGuilddtor_CHonorGuild43_clbk CHonorGuilddtor_CHonorGuild43_user(nullptr);
         
-        void CHonorGuildctor_CHonorGuild2_wrapper(struct CHonorGuild* _this)
+        static void CHonorGuildctor_CHonorGuild2_wrapper(struct CHonorGuild* _this)
         {
            CHonorGuildctor_CHonorGuild2_user(_this, CHonorGuildctor_CHonorGuild2_next);
         };
-        void CHonorGuildChangeHonorGuild4_wrapper(struct CHonorGuild* _this, char byRace)
+        static void CHonorGuildChangeHonorGuild4_wrapper(struct CHonorGuild* _this, char byRace)
         {
            CHonorGuildChangeHonorGuild4_user(_this, byRace, CHonorGuildChangeHonorGuild4_next);
         };
-        bool CHonorGuildCheckHonorGuild6_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwSerial)
+        static bool CHonorGuildCheckHonorGuild6_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwSerial)
         {
            return CHonorGuildCheckHonorGuild6_user(_this, byRace, dwSerial, CHonorGuildCheckHonorGuild6_next);
         };
-        void CHonorGuildDQSCompleteInAtradTaxMoney8_wrapper(struct CHonorGuild* _this, char* pdata)
+        static void CHonorGuildDQSCompleteInAtradTaxMoney8_wrapper(struct CHonorGuild* _this, char* pdata)
         {
            CHonorGuildDQSCompleteInAtradTaxMoney8_user(_this, pdata, CHonorGuildDQSCompleteInAtradTaxMoney8_next);
         };
-        void CHonorGuildDestroy10_wrapper(struct CHonorGuild* _this)
+        static void CHonorGuildDestroy10_wrapper(struct CHonorGuild* _this)
         {
            CHonorGuildDestroy10_user(_this, CHonorGuildDestroy10_next);
         };
-        char CHonorGuildFindHonorGuildRank12_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwGuildSerial)
+        static char CHonorGuildFindHonorGuildRank12_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwGuildSerial)
         {
            return CHonorGuildFindHonorGuildRank12_user(_this, byRace, dwGuildSerial, CHonorGuildFindHonorGuildRank12_next);
         };
-        bool CHonorGuildInit14_wrapper(struct CHonorGuild* _this)
+        static bool CHonorGuildInit14_wrapper(struct CHonorGuild* _this)
         {
            return CHonorGuildInit14_user(_this, CHonorGuildInit14_next);
         };
-        struct CHonorGuild* CHonorGuildInstance16_wrapper()
+        static struct CHonorGuild* CHonorGuildInstance16_wrapper()
         {
            return CHonorGuildInstance16_user(CHonorGuildInstance16_next);
         };
-        bool CHonorGuildLoadDB18_wrapper(struct CHonorGuild* _this)
+        static bool CHonorGuildLoadDB18_wrapper(struct CHonorGuild* _this)
         {
            return CHonorGuildLoadDB18_user(_this, CHonorGuildLoadDB18_next);
         };
-        void CHonorGuildLoop20_wrapper(struct CHonorGuild* _this)
+        static void CHonorGuildLoop20_wrapper(struct CHonorGuild* _this)
         {
            CHonorGuildLoop20_user(_this, CHonorGuildLoop20_next);
         };
-        void CHonorGuildLoopSubProcSendInform22_wrapper(struct CHonorGuild* _this, char byRace)
+        static void CHonorGuildLoopSubProcSendInform22_wrapper(struct CHonorGuild* _this, char byRace)
         {
            CHonorGuildLoopSubProcSendInform22_user(_this, byRace, CHonorGuildLoopSubProcSendInform22_next);
         };
-        void CHonorGuildSendCurrHonorGuildList24_wrapper(struct CHonorGuild* _this, uint16_t wIndex, char byRace, char byUI)
+        static void CHonorGuildSendCurrHonorGuildList24_wrapper(struct CHonorGuild* _this, uint16_t wIndex, char byRace, char byUI)
         {
            CHonorGuildSendCurrHonorGuildList24_user(_this, wIndex, byRace, byUI, CHonorGuildSendCurrHonorGuildList24_next);
         };
-        void CHonorGuildSendInformChange26_wrapper(struct CHonorGuild* _this, char byRace, uint16_t wIndex)
+        static void CHonorGuildSendInformChange26_wrapper(struct CHonorGuild* _this, char byRace, uint16_t wIndex)
         {
            CHonorGuildSendInformChange26_user(_this, byRace, wIndex, CHonorGuildSendInformChange26_next);
         };
-        void CHonorGuildSendNextHonorGuildList28_wrapper(struct CHonorGuild* _this, uint16_t wIndex, char byRace)
+        static void CHonorGuildSendNextHonorGuildList28_wrapper(struct CHonorGuild* _this, uint16_t wIndex, char byRace)
         {
            CHonorGuildSendNextHonorGuildList28_user(_this, wIndex, byRace, CHonorGuildSendNextHonorGuildList28_next);
         };
-        void CHonorGuildSetGuildMaintainMoney30_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwTax, unsigned int dwSeller)
+        static void CHonorGuildSetGuildMaintainMoney30_wrapper(struct CHonorGuild* _this, char byRace, unsigned int dwTax, unsigned int dwSeller)
         {
            CHonorGuildSetGuildMaintainMoney30_user(_this, byRace, dwTax, dwSeller, CHonorGuildSetGuildMaintainMoney30_next);
         };
-        char CHonorGuildSetNextHonorGuild32_wrapper(struct CHonorGuild* _this, char byRace, struct _guild_honor_set_request_clzo* pRecv)
+        static char CHonorGuildSetNextHonorGuild32_wrapper(struct CHonorGuild* _this, char byRace, struct _guild_honor_set_request_clzo* pRecv)
         {
            return CHonorGuildSetNextHonorGuild32_user(_this, byRace, pRecv, CHonorGuildSetNextHonorGuild32_next);
         };
-        char CHonorGuildUpdateChangeHonorGuild34_wrapper(struct CHonorGuild* _this, char byRace)
+        static char CHonorGuildUpdateChangeHonorGuild34_wrapper(struct CHonorGuild* _this, char byRace)
         {
            return CHonorGuildUpdateChangeHonorGuild34_user(_this, byRace, CHonorGuildUpdateChangeHonorGuild34_next);
         };
-        void CHonorGuildUpdateHonorGuildMark36_wrapper(struct CHonorGuild* _this, struct _guild_honor_list_result_zocl* pList, int bSet)
+        static void CHonorGuildUpdateHonorGuildMark36_wrapper(struct CHonorGuild* _this, struct _guild_honor_list_result_zocl* pList, int bSet)
         {
            CHonorGuildUpdateHonorGuildMark36_user(_this, pList, bSet, CHonorGuildUpdateHonorGuildMark36_next);
         };
-        char CHonorGuildUpdateNextHonorGuild38_wrapper(struct CHonorGuild* _this, char byRace)
+        static char CHonorGuildUpdateNextHonorGuild38_wrapper(struct CHonorGuild* _this, char byRace)
         {
            return CHonorGuildUpdateNextHonorGuild38_user(_this, byRace, CHonorGuildUpdateNextHonorGuild38_next);
         };
-        void CHonorGuilddtor_CHonorGuild43_wrapper(struct CHonorGuild* _this)
+        static void CHonorGuilddtor_CHonorGuild43_wrapper(struct CHonorGuild* _this)
         {
            CHonorGuilddtor_CHonorGuild43_user(_this, CHonorGuilddtor_CHonorGuild43_next);
         };
         
-        hook_record CHonorGuild_functions[] = {
+        static hook_record CHonorGuild_functions[] = {
         {   (LPVOID)0x14025e2a0L,
             (LPVOID *)&CHonorGuildctor_CHonorGuild2_user,
             (LPVOID *)&CHonorGuildctor_CHonorGuild2_next,
@@ -234,5 +234,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

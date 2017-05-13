@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_map_rateSetting2_ptr _map_rateSetting2_next(nullptr);
-        info::_map_rateSetting2_clbk _map_rateSetting2_user(nullptr);
+        static info::_map_rateSetting2_ptr _map_rateSetting2_next(nullptr);
+        static info::_map_rateSetting2_clbk _map_rateSetting2_user(nullptr);
         
-        void _map_rateSetting2_wrapper(struct _map_rate* _this, int x, int y)
+        static void _map_rateSetting2_wrapper(struct _map_rate* _this, int x, int y)
         {
            _map_rateSetting2_user(_this, x, y, _map_rateSetting2_next);
         };
         
-        hook_record _map_rate_functions[] = {
+        static hook_record _map_rate_functions[] = {
         {   (LPVOID)0x1401a2700L,
             (LPVOID *)&_map_rateSetting2_user,
             (LPVOID *)&_map_rateSetting2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

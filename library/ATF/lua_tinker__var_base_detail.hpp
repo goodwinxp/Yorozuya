@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__var_basector_var_base2_ptr lua_tinker__var_basector_var_base2_next(nullptr);
-            info::lua_tinker__var_basector_var_base2_clbk lua_tinker__var_basector_var_base2_user(nullptr);
+            static info::lua_tinker__var_basector_var_base2_ptr lua_tinker__var_basector_var_base2_next(nullptr);
+            static info::lua_tinker__var_basector_var_base2_clbk lua_tinker__var_basector_var_base2_user(nullptr);
             
-            void lua_tinker__var_basector_var_base2_wrapper(struct lua_tinker::var_base* _this)
+            static void lua_tinker__var_basector_var_base2_wrapper(struct lua_tinker::var_base* _this)
             {
                lua_tinker__var_basector_var_base2_user(_this, lua_tinker__var_basector_var_base2_next);
             };
             
-            hook_record var_base_functions[] = {
+            static hook_record var_base_functions[] = {
             {   (LPVOID)0x140408310L,
                 (LPVOID *)&lua_tinker__var_basector_var_base2_user,
                 (LPVOID *)&lua_tinker__var_basector_var_base2_next,
@@ -27,6 +27,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

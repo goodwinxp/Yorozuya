@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_PVP_RANK_REFRESH_USERInit2_ptr _PVP_RANK_REFRESH_USERInit2_next(nullptr);
-        info::_PVP_RANK_REFRESH_USERInit2_clbk _PVP_RANK_REFRESH_USERInit2_user(nullptr);
-        info::_PVP_RANK_REFRESH_USERIsFilled4_ptr _PVP_RANK_REFRESH_USERIsFilled4_next(nullptr);
-        info::_PVP_RANK_REFRESH_USERIsFilled4_clbk _PVP_RANK_REFRESH_USERIsFilled4_user(nullptr);
-        info::_PVP_RANK_REFRESH_USERSetData6_ptr _PVP_RANK_REFRESH_USERSetData6_next(nullptr);
-        info::_PVP_RANK_REFRESH_USERSetData6_clbk _PVP_RANK_REFRESH_USERSetData6_user(nullptr);
+        static info::_PVP_RANK_REFRESH_USERInit2_ptr _PVP_RANK_REFRESH_USERInit2_next(nullptr);
+        static info::_PVP_RANK_REFRESH_USERInit2_clbk _PVP_RANK_REFRESH_USERInit2_user(nullptr);
+        static info::_PVP_RANK_REFRESH_USERIsFilled4_ptr _PVP_RANK_REFRESH_USERIsFilled4_next(nullptr);
+        static info::_PVP_RANK_REFRESH_USERIsFilled4_clbk _PVP_RANK_REFRESH_USERIsFilled4_user(nullptr);
+        static info::_PVP_RANK_REFRESH_USERSetData6_ptr _PVP_RANK_REFRESH_USERSetData6_next(nullptr);
+        static info::_PVP_RANK_REFRESH_USERSetData6_clbk _PVP_RANK_REFRESH_USERSetData6_user(nullptr);
         
-        void _PVP_RANK_REFRESH_USERInit2_wrapper(struct _PVP_RANK_REFRESH_USER* _this)
+        static void _PVP_RANK_REFRESH_USERInit2_wrapper(struct _PVP_RANK_REFRESH_USER* _this)
         {
            _PVP_RANK_REFRESH_USERInit2_user(_this, _PVP_RANK_REFRESH_USERInit2_next);
         };
-        bool _PVP_RANK_REFRESH_USERIsFilled4_wrapper(struct _PVP_RANK_REFRESH_USER* _this)
+        static bool _PVP_RANK_REFRESH_USERIsFilled4_wrapper(struct _PVP_RANK_REFRESH_USER* _this)
         {
            return _PVP_RANK_REFRESH_USERIsFilled4_user(_this, _PVP_RANK_REFRESH_USERIsFilled4_next);
         };
-        void _PVP_RANK_REFRESH_USERSetData6_wrapper(struct _PVP_RANK_REFRESH_USER* _this, unsigned int dwSerialP, char byLvP, char byRaceP)
+        static void _PVP_RANK_REFRESH_USERSetData6_wrapper(struct _PVP_RANK_REFRESH_USER* _this, unsigned int dwSerialP, char byLvP, char byRaceP)
         {
            _PVP_RANK_REFRESH_USERSetData6_user(_this, dwSerialP, byLvP, byRaceP, _PVP_RANK_REFRESH_USERSetData6_next);
         };
         
-        hook_record _PVP_RANK_REFRESH_USER_functions[] = {
+        static hook_record _PVP_RANK_REFRESH_USER_functions[] = {
         {   (LPVOID)0x140336aa0L,
             (LPVOID *)&_PVP_RANK_REFRESH_USERInit2_user,
             (LPVOID *)&_PVP_RANK_REFRESH_USERInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

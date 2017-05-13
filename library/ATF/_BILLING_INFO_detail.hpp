@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_BILLING_INFOIsPcBangType2_ptr _BILLING_INFOIsPcBangType2_next(nullptr);
-        info::_BILLING_INFOIsPcBangType2_clbk _BILLING_INFOIsPcBangType2_user(nullptr);
-        info::_BILLING_INFOctor__BILLING_INFO4_ptr _BILLING_INFOctor__BILLING_INFO4_next(nullptr);
-        info::_BILLING_INFOctor__BILLING_INFO4_clbk _BILLING_INFOctor__BILLING_INFO4_user(nullptr);
+        static info::_BILLING_INFOIsPcBangType2_ptr _BILLING_INFOIsPcBangType2_next(nullptr);
+        static info::_BILLING_INFOIsPcBangType2_clbk _BILLING_INFOIsPcBangType2_user(nullptr);
+        static info::_BILLING_INFOctor__BILLING_INFO4_ptr _BILLING_INFOctor__BILLING_INFO4_next(nullptr);
+        static info::_BILLING_INFOctor__BILLING_INFO4_clbk _BILLING_INFOctor__BILLING_INFO4_user(nullptr);
         
-        bool _BILLING_INFOIsPcBangType2_wrapper(struct _BILLING_INFO* _this)
+        static bool _BILLING_INFOIsPcBangType2_wrapper(struct _BILLING_INFO* _this)
         {
            return _BILLING_INFOIsPcBangType2_user(_this, _BILLING_INFOIsPcBangType2_next);
         };
-        void _BILLING_INFOctor__BILLING_INFO4_wrapper(struct _BILLING_INFO* _this)
+        static void _BILLING_INFOctor__BILLING_INFO4_wrapper(struct _BILLING_INFO* _this)
         {
            _BILLING_INFOctor__BILLING_INFO4_user(_this, _BILLING_INFOctor__BILLING_INFO4_next);
         };
         
-        hook_record _BILLING_INFO_functions[] = {
+        static hook_record _BILLING_INFO_functions[] = {
         {   (LPVOID)0x1400d3c50L,
             (LPVOID *)&_BILLING_INFOIsPcBangType2_user,
             (LPVOID *)&_BILLING_INFOIsPcBangType2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

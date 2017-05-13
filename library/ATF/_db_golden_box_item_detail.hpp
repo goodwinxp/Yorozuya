@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_db_golden_box_itemctor__db_golden_box_item2_ptr _db_golden_box_itemctor__db_golden_box_item2_next(nullptr);
-        info::_db_golden_box_itemctor__db_golden_box_item2_clbk _db_golden_box_itemctor__db_golden_box_item2_user(nullptr);
+        static info::_db_golden_box_itemctor__db_golden_box_item2_ptr _db_golden_box_itemctor__db_golden_box_item2_next(nullptr);
+        static info::_db_golden_box_itemctor__db_golden_box_item2_clbk _db_golden_box_itemctor__db_golden_box_item2_user(nullptr);
         
-        void _db_golden_box_itemctor__db_golden_box_item2_wrapper(struct _db_golden_box_item* _this)
+        static void _db_golden_box_itemctor__db_golden_box_item2_wrapper(struct _db_golden_box_item* _this)
         {
            _db_golden_box_itemctor__db_golden_box_item2_user(_this, _db_golden_box_itemctor__db_golden_box_item2_next);
         };
         
-        hook_record _db_golden_box_item_functions[] = {
+        static hook_record _db_golden_box_item_functions[] = {
         {   (LPVOID)0x140416a60L,
             (LPVOID *)&_db_golden_box_itemctor__db_golden_box_item2_user,
             (LPVOID *)&_db_golden_box_itemctor__db_golden_box_item2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

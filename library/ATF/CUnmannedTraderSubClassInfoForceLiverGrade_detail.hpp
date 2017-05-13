@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_ptr CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_clbk CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_user(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_ptr CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_clbk CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_user(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeCreate6_ptr CUnmannedTraderSubClassInfoForceLiverGradeCreate6_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeCreate6_clbk CUnmannedTraderSubClassInfoForceLiverGradeCreate6_user(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_ptr CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_clbk CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_user(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_ptr CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_clbk CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_user(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_ptr CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_next(nullptr);
-        info::CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_clbk CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_ptr CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_clbk CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_ptr CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_clbk CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeCreate6_ptr CUnmannedTraderSubClassInfoForceLiverGradeCreate6_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeCreate6_clbk CUnmannedTraderSubClassInfoForceLiverGradeCreate6_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_ptr CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_clbk CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_ptr CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_clbk CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_user(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_ptr CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_next(nullptr);
+        static info::CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_clbk CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_user(nullptr);
         
-        void CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, struct CUnmannedTraderSubClassInfoForceLiverGrade* lhs)
+        static void CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, struct CUnmannedTraderSubClassInfoForceLiverGrade* lhs)
         {
            CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_user(_this, lhs, CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_next);
         };
-        void CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, unsigned int dwID)
+        static void CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, unsigned int dwID)
         {
            CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_user(_this, dwID, CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade4_next);
         };
-        struct CUnmannedTraderSubClassInfo* CUnmannedTraderSubClassInfoForceLiverGradeCreate6_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, unsigned int dwID)
+        static struct CUnmannedTraderSubClassInfo* CUnmannedTraderSubClassInfoForceLiverGradeCreate6_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, unsigned int dwID)
         {
            return CUnmannedTraderSubClassInfoForceLiverGradeCreate6_user(_this, dwID, CUnmannedTraderSubClassInfoForceLiverGradeCreate6_next);
         };
-        bool CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, char byTableCode, uint16_t wItemTableIndex, char* bySubClass)
+        static bool CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, char byTableCode, uint16_t wItemTableIndex, char* bySubClass)
         {
            return CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_user(_this, byTableCode, wItemTableIndex, bySubClass, CUnmannedTraderSubClassInfoForceLiverGradeGetGroupID8_next);
         };
-        bool CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, struct TiXmlElement* elemSubClass, struct CLogFile* kLogger, unsigned int dwDivisionID, unsigned int dwClassID)
+        static bool CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this, struct TiXmlElement* elemSubClass, struct CLogFile* kLogger, unsigned int dwDivisionID, unsigned int dwClassID)
         {
            return CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_user(_this, elemSubClass, kLogger, dwDivisionID, dwClassID, CUnmannedTraderSubClassInfoForceLiverGradeLoadXML10_next);
         };
-        void CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this)
+        static void CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_wrapper(struct CUnmannedTraderSubClassInfoForceLiverGrade* _this)
         {
            CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_user(_this, CUnmannedTraderSubClassInfoForceLiverGradedtor_CUnmannedTraderSubClassInfoForceLiverGrade14_next);
         };
         
-        hook_record CUnmannedTraderSubClassInfoForceLiverGrade_functions[] = {
+        static hook_record CUnmannedTraderSubClassInfoForceLiverGrade_functions[] = {
         {   (LPVOID)0x140383bd0L,
             (LPVOID *)&CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_user,
             (LPVOID *)&CUnmannedTraderSubClassInfoForceLiverGradector_CUnmannedTraderSubClassInfoForceLiverGrade2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

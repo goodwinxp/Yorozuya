@@ -8,279 +8,279 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CandidateMgrAddScore2_ptr CandidateMgrAddScore2_next(nullptr);
-        info::CandidateMgrAddScore2_clbk CandidateMgrAddScore2_user(nullptr);
-        info::CandidateMgrApplyPatriarchGroup4_ptr CandidateMgrApplyPatriarchGroup4_next(nullptr);
-        info::CandidateMgrApplyPatriarchGroup4_clbk CandidateMgrApplyPatriarchGroup4_user(nullptr);
-        info::CandidateMgrAppointPatriarchGroup6_ptr CandidateMgrAppointPatriarchGroup6_next(nullptr);
-        info::CandidateMgrAppointPatriarchGroup6_clbk CandidateMgrAppointPatriarchGroup6_user(nullptr);
-        info::CandidateMgrctor_CandidateMgr8_ptr CandidateMgrctor_CandidateMgr8_next(nullptr);
-        info::CandidateMgrctor_CandidateMgr8_clbk CandidateMgrctor_CandidateMgr8_user(nullptr);
-        info::CandidateMgrChangeState_1to210_ptr CandidateMgrChangeState_1to210_next(nullptr);
-        info::CandidateMgrChangeState_1to210_clbk CandidateMgrChangeState_1to210_user(nullptr);
-        info::CandidateMgrCheckDBValidCharacter12_ptr CandidateMgrCheckDBValidCharacter12_next(nullptr);
-        info::CandidateMgrCheckDBValidCharacter12_clbk CandidateMgrCheckDBValidCharacter12_user(nullptr);
-        info::CandidateMgrCompleteInsertCandidate14_ptr CandidateMgrCompleteInsertCandidate14_next(nullptr);
-        info::CandidateMgrCompleteInsertCandidate14_clbk CandidateMgrCompleteInsertCandidate14_user(nullptr);
-        info::CandidateMgrDischargePatriarchGroup16_ptr CandidateMgrDischargePatriarchGroup16_next(nullptr);
-        info::CandidateMgrDischargePatriarchGroup16_clbk CandidateMgrDischargePatriarchGroup16_user(nullptr);
-        info::CandidateMgrFinalDecision18_ptr CandidateMgrFinalDecision18_next(nullptr);
-        info::CandidateMgrFinalDecision18_clbk CandidateMgrFinalDecision18_user(nullptr);
-        info::CandidateMgrGetCandidate20_ptr CandidateMgrGetCandidate20_next(nullptr);
-        info::CandidateMgrGetCandidate20_clbk CandidateMgrGetCandidate20_user(nullptr);
-        info::CandidateMgrGetCandidateBySerial22_ptr CandidateMgrGetCandidateBySerial22_next(nullptr);
-        info::CandidateMgrGetCandidateBySerial22_clbk CandidateMgrGetCandidateBySerial22_user(nullptr);
-        info::CandidateMgrGetCandidateCnt_1st24_ptr CandidateMgrGetCandidateCnt_1st24_next(nullptr);
-        info::CandidateMgrGetCandidateCnt_1st24_clbk CandidateMgrGetCandidateCnt_1st24_user(nullptr);
-        info::CandidateMgrGetCandidateCnt_2st26_ptr CandidateMgrGetCandidateCnt_2st26_next(nullptr);
-        info::CandidateMgrGetCandidateCnt_2st26_clbk CandidateMgrGetCandidateCnt_2st26_user(nullptr);
-        info::CandidateMgrGetCandidate_2st28_ptr CandidateMgrGetCandidate_2st28_next(nullptr);
-        info::CandidateMgrGetCandidate_2st28_clbk CandidateMgrGetCandidate_2st28_user(nullptr);
-        info::CandidateMgrGetEmpty30_ptr CandidateMgrGetEmpty30_next(nullptr);
-        info::CandidateMgrGetEmpty30_clbk CandidateMgrGetEmpty30_user(nullptr);
-        info::CandidateMgrGetEmptyPatriarchGroup32_ptr CandidateMgrGetEmptyPatriarchGroup32_next(nullptr);
-        info::CandidateMgrGetEmptyPatriarchGroup32_clbk CandidateMgrGetEmptyPatriarchGroup32_user(nullptr);
-        info::CandidateMgrGetLeader34_ptr CandidateMgrGetLeader34_next(nullptr);
-        info::CandidateMgrGetLeader34_clbk CandidateMgrGetLeader34_user(nullptr);
-        info::CandidateMgrGetMaxNum36_ptr CandidateMgrGetMaxNum36_next(nullptr);
-        info::CandidateMgrGetMaxNum36_clbk CandidateMgrGetMaxNum36_user(nullptr);
-        info::CandidateMgrGetPatriarchGroup38_ptr CandidateMgrGetPatriarchGroup38_next(nullptr);
-        info::CandidateMgrGetPatriarchGroup38_clbk CandidateMgrGetPatriarchGroup38_user(nullptr);
-        info::CandidateMgrGetPatriarchGroupBySerial40_ptr CandidateMgrGetPatriarchGroupBySerial40_next(nullptr);
-        info::CandidateMgrGetPatriarchGroupBySerial40_clbk CandidateMgrGetPatriarchGroupBySerial40_user(nullptr);
-        info::CandidateMgrGetWinCnt42_ptr CandidateMgrGetWinCnt42_next(nullptr);
-        info::CandidateMgrGetWinCnt42_clbk CandidateMgrGetWinCnt42_user(nullptr);
-        info::CandidateMgrInitCandidate44_ptr CandidateMgrInitCandidate44_next(nullptr);
-        info::CandidateMgrInitCandidate44_clbk CandidateMgrInitCandidate44_user(nullptr);
-        info::CandidateMgrInitialize46_ptr CandidateMgrInitialize46_next(nullptr);
-        info::CandidateMgrInitialize46_clbk CandidateMgrInitialize46_user(nullptr);
-        info::CandidateMgrInsert_Candidate48_ptr CandidateMgrInsert_Candidate48_next(nullptr);
-        info::CandidateMgrInsert_Candidate48_clbk CandidateMgrInsert_Candidate48_user(nullptr);
-        info::CandidateMgrInstance50_ptr CandidateMgrInstance50_next(nullptr);
-        info::CandidateMgrInstance50_clbk CandidateMgrInstance50_user(nullptr);
-        info::CandidateMgrIsRegistedAvator_152_ptr CandidateMgrIsRegistedAvator_152_next(nullptr);
-        info::CandidateMgrIsRegistedAvator_152_clbk CandidateMgrIsRegistedAvator_152_user(nullptr);
-        info::CandidateMgrIsRegistedAvator_254_ptr CandidateMgrIsRegistedAvator_254_next(nullptr);
-        info::CandidateMgrIsRegistedAvator_254_clbk CandidateMgrIsRegistedAvator_254_user(nullptr);
-        info::CandidateMgrIsRegistedAvator_256_ptr CandidateMgrIsRegistedAvator_256_next(nullptr);
-        info::CandidateMgrIsRegistedAvator_256_clbk CandidateMgrIsRegistedAvator_256_user(nullptr);
-        info::CandidateMgrLoadDatabase58_ptr CandidateMgrLoadDatabase58_next(nullptr);
-        info::CandidateMgrLoadDatabase58_clbk CandidateMgrLoadDatabase58_user(nullptr);
-        info::CandidateMgrLoadLeaderPreVersion60_ptr CandidateMgrLoadLeaderPreVersion60_next(nullptr);
-        info::CandidateMgrLoadLeaderPreVersion60_clbk CandidateMgrLoadLeaderPreVersion60_user(nullptr);
-        info::CandidateMgrLoadPatriarchGroup62_ptr CandidateMgrLoadPatriarchGroup62_next(nullptr);
-        info::CandidateMgrLoadPatriarchGroup62_clbk CandidateMgrLoadPatriarchGroup62_user(nullptr);
-        info::CandidateMgrRegist64_ptr CandidateMgrRegist64_next(nullptr);
-        info::CandidateMgrRegist64_clbk CandidateMgrRegist64_user(nullptr);
-        info::CandidateMgrRegist66_ptr CandidateMgrRegist66_next(nullptr);
-        info::CandidateMgrRegist66_clbk CandidateMgrRegist66_user(nullptr);
-        info::CandidateMgrRelease68_ptr CandidateMgrRelease68_next(nullptr);
-        info::CandidateMgrRelease68_clbk CandidateMgrRelease68_user(nullptr);
-        info::CandidateMgrUpdate_ClassType70_ptr CandidateMgrUpdate_ClassType70_next(nullptr);
-        info::CandidateMgrUpdate_ClassType70_clbk CandidateMgrUpdate_ClassType70_user(nullptr);
-        info::CandidateMgrUpdate_DischargePatriarch72_ptr CandidateMgrUpdate_DischargePatriarch72_next(nullptr);
-        info::CandidateMgrUpdate_DischargePatriarch72_clbk CandidateMgrUpdate_DischargePatriarch72_user(nullptr);
-        info::CandidateMgrUpdate_Refund74_ptr CandidateMgrUpdate_Refund74_next(nullptr);
-        info::CandidateMgrUpdate_Refund74_clbk CandidateMgrUpdate_Refund74_user(nullptr);
-        info::CandidateMgrUpdate_RegistCandidate_2st76_ptr CandidateMgrUpdate_RegistCandidate_2st76_next(nullptr);
-        info::CandidateMgrUpdate_RegistCandidate_2st76_clbk CandidateMgrUpdate_RegistCandidate_2st76_user(nullptr);
-        info::CandidateMgrUpdate_Score78_ptr CandidateMgrUpdate_Score78_next(nullptr);
-        info::CandidateMgrUpdate_Score78_clbk CandidateMgrUpdate_Score78_user(nullptr);
-        info::CandidateMgrUpdate_VoteTime80_ptr CandidateMgrUpdate_VoteTime80_next(nullptr);
-        info::CandidateMgrUpdate_VoteTime80_clbk CandidateMgrUpdate_VoteTime80_user(nullptr);
-        info::CandidateMgr__AddWinner82_ptr CandidateMgr__AddWinner82_next(nullptr);
-        info::CandidateMgr__AddWinner82_clbk CandidateMgr__AddWinner82_user(nullptr);
-        info::CandidateMgr__SortByPvpPoint84_ptr CandidateMgr__SortByPvpPoint84_next(nullptr);
-        info::CandidateMgr__SortByPvpPoint84_clbk CandidateMgr__SortByPvpPoint84_user(nullptr);
-        info::CandidateMgr__SortByRank86_ptr CandidateMgr__SortByRank86_next(nullptr);
-        info::CandidateMgr__SortByRank86_clbk CandidateMgr__SortByRank86_user(nullptr);
-        info::CandidateMgr__SortByScore88_ptr CandidateMgr__SortByScore88_next(nullptr);
-        info::CandidateMgr__SortByScore88_clbk CandidateMgr__SortByScore88_user(nullptr);
-        info::CandidateMgrdtor_CandidateMgr90_ptr CandidateMgrdtor_CandidateMgr90_next(nullptr);
-        info::CandidateMgrdtor_CandidateMgr90_clbk CandidateMgrdtor_CandidateMgr90_user(nullptr);
+        static info::CandidateMgrAddScore2_ptr CandidateMgrAddScore2_next(nullptr);
+        static info::CandidateMgrAddScore2_clbk CandidateMgrAddScore2_user(nullptr);
+        static info::CandidateMgrApplyPatriarchGroup4_ptr CandidateMgrApplyPatriarchGroup4_next(nullptr);
+        static info::CandidateMgrApplyPatriarchGroup4_clbk CandidateMgrApplyPatriarchGroup4_user(nullptr);
+        static info::CandidateMgrAppointPatriarchGroup6_ptr CandidateMgrAppointPatriarchGroup6_next(nullptr);
+        static info::CandidateMgrAppointPatriarchGroup6_clbk CandidateMgrAppointPatriarchGroup6_user(nullptr);
+        static info::CandidateMgrctor_CandidateMgr8_ptr CandidateMgrctor_CandidateMgr8_next(nullptr);
+        static info::CandidateMgrctor_CandidateMgr8_clbk CandidateMgrctor_CandidateMgr8_user(nullptr);
+        static info::CandidateMgrChangeState_1to210_ptr CandidateMgrChangeState_1to210_next(nullptr);
+        static info::CandidateMgrChangeState_1to210_clbk CandidateMgrChangeState_1to210_user(nullptr);
+        static info::CandidateMgrCheckDBValidCharacter12_ptr CandidateMgrCheckDBValidCharacter12_next(nullptr);
+        static info::CandidateMgrCheckDBValidCharacter12_clbk CandidateMgrCheckDBValidCharacter12_user(nullptr);
+        static info::CandidateMgrCompleteInsertCandidate14_ptr CandidateMgrCompleteInsertCandidate14_next(nullptr);
+        static info::CandidateMgrCompleteInsertCandidate14_clbk CandidateMgrCompleteInsertCandidate14_user(nullptr);
+        static info::CandidateMgrDischargePatriarchGroup16_ptr CandidateMgrDischargePatriarchGroup16_next(nullptr);
+        static info::CandidateMgrDischargePatriarchGroup16_clbk CandidateMgrDischargePatriarchGroup16_user(nullptr);
+        static info::CandidateMgrFinalDecision18_ptr CandidateMgrFinalDecision18_next(nullptr);
+        static info::CandidateMgrFinalDecision18_clbk CandidateMgrFinalDecision18_user(nullptr);
+        static info::CandidateMgrGetCandidate20_ptr CandidateMgrGetCandidate20_next(nullptr);
+        static info::CandidateMgrGetCandidate20_clbk CandidateMgrGetCandidate20_user(nullptr);
+        static info::CandidateMgrGetCandidateBySerial22_ptr CandidateMgrGetCandidateBySerial22_next(nullptr);
+        static info::CandidateMgrGetCandidateBySerial22_clbk CandidateMgrGetCandidateBySerial22_user(nullptr);
+        static info::CandidateMgrGetCandidateCnt_1st24_ptr CandidateMgrGetCandidateCnt_1st24_next(nullptr);
+        static info::CandidateMgrGetCandidateCnt_1st24_clbk CandidateMgrGetCandidateCnt_1st24_user(nullptr);
+        static info::CandidateMgrGetCandidateCnt_2st26_ptr CandidateMgrGetCandidateCnt_2st26_next(nullptr);
+        static info::CandidateMgrGetCandidateCnt_2st26_clbk CandidateMgrGetCandidateCnt_2st26_user(nullptr);
+        static info::CandidateMgrGetCandidate_2st28_ptr CandidateMgrGetCandidate_2st28_next(nullptr);
+        static info::CandidateMgrGetCandidate_2st28_clbk CandidateMgrGetCandidate_2st28_user(nullptr);
+        static info::CandidateMgrGetEmpty30_ptr CandidateMgrGetEmpty30_next(nullptr);
+        static info::CandidateMgrGetEmpty30_clbk CandidateMgrGetEmpty30_user(nullptr);
+        static info::CandidateMgrGetEmptyPatriarchGroup32_ptr CandidateMgrGetEmptyPatriarchGroup32_next(nullptr);
+        static info::CandidateMgrGetEmptyPatriarchGroup32_clbk CandidateMgrGetEmptyPatriarchGroup32_user(nullptr);
+        static info::CandidateMgrGetLeader34_ptr CandidateMgrGetLeader34_next(nullptr);
+        static info::CandidateMgrGetLeader34_clbk CandidateMgrGetLeader34_user(nullptr);
+        static info::CandidateMgrGetMaxNum36_ptr CandidateMgrGetMaxNum36_next(nullptr);
+        static info::CandidateMgrGetMaxNum36_clbk CandidateMgrGetMaxNum36_user(nullptr);
+        static info::CandidateMgrGetPatriarchGroup38_ptr CandidateMgrGetPatriarchGroup38_next(nullptr);
+        static info::CandidateMgrGetPatriarchGroup38_clbk CandidateMgrGetPatriarchGroup38_user(nullptr);
+        static info::CandidateMgrGetPatriarchGroupBySerial40_ptr CandidateMgrGetPatriarchGroupBySerial40_next(nullptr);
+        static info::CandidateMgrGetPatriarchGroupBySerial40_clbk CandidateMgrGetPatriarchGroupBySerial40_user(nullptr);
+        static info::CandidateMgrGetWinCnt42_ptr CandidateMgrGetWinCnt42_next(nullptr);
+        static info::CandidateMgrGetWinCnt42_clbk CandidateMgrGetWinCnt42_user(nullptr);
+        static info::CandidateMgrInitCandidate44_ptr CandidateMgrInitCandidate44_next(nullptr);
+        static info::CandidateMgrInitCandidate44_clbk CandidateMgrInitCandidate44_user(nullptr);
+        static info::CandidateMgrInitialize46_ptr CandidateMgrInitialize46_next(nullptr);
+        static info::CandidateMgrInitialize46_clbk CandidateMgrInitialize46_user(nullptr);
+        static info::CandidateMgrInsert_Candidate48_ptr CandidateMgrInsert_Candidate48_next(nullptr);
+        static info::CandidateMgrInsert_Candidate48_clbk CandidateMgrInsert_Candidate48_user(nullptr);
+        static info::CandidateMgrInstance50_ptr CandidateMgrInstance50_next(nullptr);
+        static info::CandidateMgrInstance50_clbk CandidateMgrInstance50_user(nullptr);
+        static info::CandidateMgrIsRegistedAvator_152_ptr CandidateMgrIsRegistedAvator_152_next(nullptr);
+        static info::CandidateMgrIsRegistedAvator_152_clbk CandidateMgrIsRegistedAvator_152_user(nullptr);
+        static info::CandidateMgrIsRegistedAvator_254_ptr CandidateMgrIsRegistedAvator_254_next(nullptr);
+        static info::CandidateMgrIsRegistedAvator_254_clbk CandidateMgrIsRegistedAvator_254_user(nullptr);
+        static info::CandidateMgrIsRegistedAvator_256_ptr CandidateMgrIsRegistedAvator_256_next(nullptr);
+        static info::CandidateMgrIsRegistedAvator_256_clbk CandidateMgrIsRegistedAvator_256_user(nullptr);
+        static info::CandidateMgrLoadDatabase58_ptr CandidateMgrLoadDatabase58_next(nullptr);
+        static info::CandidateMgrLoadDatabase58_clbk CandidateMgrLoadDatabase58_user(nullptr);
+        static info::CandidateMgrLoadLeaderPreVersion60_ptr CandidateMgrLoadLeaderPreVersion60_next(nullptr);
+        static info::CandidateMgrLoadLeaderPreVersion60_clbk CandidateMgrLoadLeaderPreVersion60_user(nullptr);
+        static info::CandidateMgrLoadPatriarchGroup62_ptr CandidateMgrLoadPatriarchGroup62_next(nullptr);
+        static info::CandidateMgrLoadPatriarchGroup62_clbk CandidateMgrLoadPatriarchGroup62_user(nullptr);
+        static info::CandidateMgrRegist64_ptr CandidateMgrRegist64_next(nullptr);
+        static info::CandidateMgrRegist64_clbk CandidateMgrRegist64_user(nullptr);
+        static info::CandidateMgrRegist66_ptr CandidateMgrRegist66_next(nullptr);
+        static info::CandidateMgrRegist66_clbk CandidateMgrRegist66_user(nullptr);
+        static info::CandidateMgrRelease68_ptr CandidateMgrRelease68_next(nullptr);
+        static info::CandidateMgrRelease68_clbk CandidateMgrRelease68_user(nullptr);
+        static info::CandidateMgrUpdate_ClassType70_ptr CandidateMgrUpdate_ClassType70_next(nullptr);
+        static info::CandidateMgrUpdate_ClassType70_clbk CandidateMgrUpdate_ClassType70_user(nullptr);
+        static info::CandidateMgrUpdate_DischargePatriarch72_ptr CandidateMgrUpdate_DischargePatriarch72_next(nullptr);
+        static info::CandidateMgrUpdate_DischargePatriarch72_clbk CandidateMgrUpdate_DischargePatriarch72_user(nullptr);
+        static info::CandidateMgrUpdate_Refund74_ptr CandidateMgrUpdate_Refund74_next(nullptr);
+        static info::CandidateMgrUpdate_Refund74_clbk CandidateMgrUpdate_Refund74_user(nullptr);
+        static info::CandidateMgrUpdate_RegistCandidate_2st76_ptr CandidateMgrUpdate_RegistCandidate_2st76_next(nullptr);
+        static info::CandidateMgrUpdate_RegistCandidate_2st76_clbk CandidateMgrUpdate_RegistCandidate_2st76_user(nullptr);
+        static info::CandidateMgrUpdate_Score78_ptr CandidateMgrUpdate_Score78_next(nullptr);
+        static info::CandidateMgrUpdate_Score78_clbk CandidateMgrUpdate_Score78_user(nullptr);
+        static info::CandidateMgrUpdate_VoteTime80_ptr CandidateMgrUpdate_VoteTime80_next(nullptr);
+        static info::CandidateMgrUpdate_VoteTime80_clbk CandidateMgrUpdate_VoteTime80_user(nullptr);
+        static info::CandidateMgr__AddWinner82_ptr CandidateMgr__AddWinner82_next(nullptr);
+        static info::CandidateMgr__AddWinner82_clbk CandidateMgr__AddWinner82_user(nullptr);
+        static info::CandidateMgr__SortByPvpPoint84_ptr CandidateMgr__SortByPvpPoint84_next(nullptr);
+        static info::CandidateMgr__SortByPvpPoint84_clbk CandidateMgr__SortByPvpPoint84_user(nullptr);
+        static info::CandidateMgr__SortByRank86_ptr CandidateMgr__SortByRank86_next(nullptr);
+        static info::CandidateMgr__SortByRank86_clbk CandidateMgr__SortByRank86_user(nullptr);
+        static info::CandidateMgr__SortByScore88_ptr CandidateMgr__SortByScore88_next(nullptr);
+        static info::CandidateMgr__SortByScore88_clbk CandidateMgr__SortByScore88_user(nullptr);
+        static info::CandidateMgrdtor_CandidateMgr90_ptr CandidateMgrdtor_CandidateMgr90_next(nullptr);
+        static info::CandidateMgrdtor_CandidateMgr90_clbk CandidateMgrdtor_CandidateMgr90_user(nullptr);
         
-        void CandidateMgrAddScore2_wrapper(struct CandidateMgr* _this, char byRace, char* wszName, char byScore)
+        static void CandidateMgrAddScore2_wrapper(struct CandidateMgr* _this, char byRace, char* wszName, char byScore)
         {
            CandidateMgrAddScore2_user(_this, byRace, wszName, byScore, CandidateMgrAddScore2_next);
         };
-        void CandidateMgrApplyPatriarchGroup4_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrApplyPatriarchGroup4_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrApplyPatriarchGroup4_user(_this, CandidateMgrApplyPatriarchGroup4_next);
         };
-        bool CandidateMgrAppointPatriarchGroup6_wrapper(struct CandidateMgr* _this, struct CPlayer* pOne, _candidate_info::ClassType eClassType)
+        static bool CandidateMgrAppointPatriarchGroup6_wrapper(struct CandidateMgr* _this, struct CPlayer* pOne, _candidate_info::ClassType eClassType)
         {
            return CandidateMgrAppointPatriarchGroup6_user(_this, pOne, eClassType, CandidateMgrAppointPatriarchGroup6_next);
         };
-        void CandidateMgrctor_CandidateMgr8_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrctor_CandidateMgr8_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrctor_CandidateMgr8_user(_this, CandidateMgrctor_CandidateMgr8_next);
         };
-        void CandidateMgrChangeState_1to210_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrChangeState_1to210_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrChangeState_1to210_user(_this, CandidateMgrChangeState_1to210_next);
         };
-        int CandidateMgrCheckDBValidCharacter12_wrapper(struct CandidateMgr* _this, char byProc)
+        static int CandidateMgrCheckDBValidCharacter12_wrapper(struct CandidateMgr* _this, char byProc)
         {
            return CandidateMgrCheckDBValidCharacter12_user(_this, byProc, CandidateMgrCheckDBValidCharacter12_next);
         };
-        void CandidateMgrCompleteInsertCandidate14_wrapper(struct CandidateMgr* _this, char byRet, char* p)
+        static void CandidateMgrCompleteInsertCandidate14_wrapper(struct CandidateMgr* _this, char byRet, char* p)
         {
            CandidateMgrCompleteInsertCandidate14_user(_this, byRet, p, CandidateMgrCompleteInsertCandidate14_next);
         };
-        bool CandidateMgrDischargePatriarchGroup16_wrapper(struct CandidateMgr* _this, char byRace, _candidate_info::ClassType eClassType)
+        static bool CandidateMgrDischargePatriarchGroup16_wrapper(struct CandidateMgr* _this, char byRace, _candidate_info::ClassType eClassType)
         {
            return CandidateMgrDischargePatriarchGroup16_user(_this, byRace, eClassType, CandidateMgrDischargePatriarchGroup16_next);
         };
-        void CandidateMgrFinalDecision18_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrFinalDecision18_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrFinalDecision18_user(_this, CandidateMgrFinalDecision18_next);
         };
-        struct _candidate_info* CandidateMgrGetCandidate20_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwIdx)
+        static struct _candidate_info* CandidateMgrGetCandidate20_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwIdx)
         {
            return CandidateMgrGetCandidate20_user(_this, byRace, dwIdx, CandidateMgrGetCandidate20_next);
         };
-        struct _candidate_info* CandidateMgrGetCandidateBySerial22_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwASerial)
+        static struct _candidate_info* CandidateMgrGetCandidateBySerial22_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwASerial)
         {
            return CandidateMgrGetCandidateBySerial22_user(_this, byRace, dwASerial, CandidateMgrGetCandidateBySerial22_next);
         };
-        int CandidateMgrGetCandidateCnt_1st24_wrapper(struct CandidateMgr* _this, char byRace)
+        static int CandidateMgrGetCandidateCnt_1st24_wrapper(struct CandidateMgr* _this, char byRace)
         {
            return CandidateMgrGetCandidateCnt_1st24_user(_this, byRace, CandidateMgrGetCandidateCnt_1st24_next);
         };
-        int CandidateMgrGetCandidateCnt_2st26_wrapper(struct CandidateMgr* _this, char byRace)
+        static int CandidateMgrGetCandidateCnt_2st26_wrapper(struct CandidateMgr* _this, char byRace)
         {
            return CandidateMgrGetCandidateCnt_2st26_user(_this, byRace, CandidateMgrGetCandidateCnt_2st26_next);
         };
-        struct _candidate_info* CandidateMgrGetCandidate_2st28_wrapper(struct CandidateMgr* _this, char byRace, int nIdx)
+        static struct _candidate_info* CandidateMgrGetCandidate_2st28_wrapper(struct CandidateMgr* _this, char byRace, int nIdx)
         {
            return CandidateMgrGetCandidate_2st28_user(_this, byRace, nIdx, CandidateMgrGetCandidate_2st28_next);
         };
-        struct _candidate_info* CandidateMgrGetEmpty30_wrapper(struct CandidateMgr* _this, char byRace)
+        static struct _candidate_info* CandidateMgrGetEmpty30_wrapper(struct CandidateMgr* _this, char byRace)
         {
            return CandidateMgrGetEmpty30_user(_this, byRace, CandidateMgrGetEmpty30_next);
         };
-        struct _candidate_info* CandidateMgrGetEmptyPatriarchGroup32_wrapper(struct CandidateMgr* _this, char byRace)
+        static struct _candidate_info* CandidateMgrGetEmptyPatriarchGroup32_wrapper(struct CandidateMgr* _this, char byRace)
         {
            return CandidateMgrGetEmptyPatriarchGroup32_user(_this, byRace, CandidateMgrGetEmptyPatriarchGroup32_next);
         };
-        struct _candidate_info* CandidateMgrGetLeader34_wrapper(struct CandidateMgr* _this, char byRace, int nIdx)
+        static struct _candidate_info* CandidateMgrGetLeader34_wrapper(struct CandidateMgr* _this, char byRace, int nIdx)
         {
            return CandidateMgrGetLeader34_user(_this, byRace, nIdx, CandidateMgrGetLeader34_next);
         };
-        int CandidateMgrGetMaxNum36_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgrGetMaxNum36_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrGetMaxNum36_user(_this, CandidateMgrGetMaxNum36_next);
         };
-        struct _candidate_info* CandidateMgrGetPatriarchGroup38_wrapper(struct CandidateMgr* _this, char byRace, _candidate_info::ClassType eType)
+        static struct _candidate_info* CandidateMgrGetPatriarchGroup38_wrapper(struct CandidateMgr* _this, char byRace, _candidate_info::ClassType eType)
         {
            return CandidateMgrGetPatriarchGroup38_user(_this, byRace, eType, CandidateMgrGetPatriarchGroup38_next);
         };
-        struct _candidate_info* CandidateMgrGetPatriarchGroupBySerial40_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwASerial)
+        static struct _candidate_info* CandidateMgrGetPatriarchGroupBySerial40_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwASerial)
         {
            return CandidateMgrGetPatriarchGroupBySerial40_user(_this, byRace, dwASerial, CandidateMgrGetPatriarchGroupBySerial40_next);
         };
-        unsigned int CandidateMgrGetWinCnt42_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
+        static unsigned int CandidateMgrGetWinCnt42_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
         {
            return CandidateMgrGetWinCnt42_user(_this, byRace, dwAvatorSerial, CandidateMgrGetWinCnt42_next);
         };
-        void CandidateMgrInitCandidate44_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrInitCandidate44_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrInitCandidate44_user(_this, CandidateMgrInitCandidate44_next);
         };
-        bool CandidateMgrInitialize46_wrapper(struct CandidateMgr* _this, int nMaxNum)
+        static bool CandidateMgrInitialize46_wrapper(struct CandidateMgr* _this, int nMaxNum)
         {
            return CandidateMgrInitialize46_user(_this, nMaxNum, CandidateMgrInitialize46_next);
         };
-        int CandidateMgrInsert_Candidate48_wrapper(struct CandidateMgr* _this, char* p)
+        static int CandidateMgrInsert_Candidate48_wrapper(struct CandidateMgr* _this, char* p)
         {
            return CandidateMgrInsert_Candidate48_user(_this, p, CandidateMgrInsert_Candidate48_next);
         };
-        struct CandidateMgr* CandidateMgrInstance50_wrapper()
+        static struct CandidateMgr* CandidateMgrInstance50_wrapper()
         {
            return CandidateMgrInstance50_user(CandidateMgrInstance50_next);
         };
-        bool CandidateMgrIsRegistedAvator_152_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
+        static bool CandidateMgrIsRegistedAvator_152_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
         {
            return CandidateMgrIsRegistedAvator_152_user(_this, byRace, dwAvatorSerial, CandidateMgrIsRegistedAvator_152_next);
         };
-        bool CandidateMgrIsRegistedAvator_254_wrapper(struct CandidateMgr* _this, char byRace, char* wszName)
+        static bool CandidateMgrIsRegistedAvator_254_wrapper(struct CandidateMgr* _this, char byRace, char* wszName)
         {
            return CandidateMgrIsRegistedAvator_254_user(_this, byRace, wszName, CandidateMgrIsRegistedAvator_254_next);
         };
-        bool CandidateMgrIsRegistedAvator_256_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
+        static bool CandidateMgrIsRegistedAvator_256_wrapper(struct CandidateMgr* _this, char byRace, unsigned int dwAvatorSerial)
         {
            return CandidateMgrIsRegistedAvator_256_user(_this, byRace, dwAvatorSerial, CandidateMgrIsRegistedAvator_256_next);
         };
-        bool CandidateMgrLoadDatabase58_wrapper(struct CandidateMgr* _this)
+        static bool CandidateMgrLoadDatabase58_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrLoadDatabase58_user(_this, CandidateMgrLoadDatabase58_next);
         };
-        bool CandidateMgrLoadLeaderPreVersion60_wrapper(struct CandidateMgr* _this, char byRace)
+        static bool CandidateMgrLoadLeaderPreVersion60_wrapper(struct CandidateMgr* _this, char byRace)
         {
            return CandidateMgrLoadLeaderPreVersion60_user(_this, byRace, CandidateMgrLoadLeaderPreVersion60_next);
         };
-        bool CandidateMgrLoadPatriarchGroup62_wrapper(struct CandidateMgr* _this)
+        static bool CandidateMgrLoadPatriarchGroup62_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrLoadPatriarchGroup62_user(_this, CandidateMgrLoadPatriarchGroup62_next);
         };
-        bool CandidateMgrRegist64_wrapper(struct CandidateMgr* _this, struct CPlayer* pOne)
+        static bool CandidateMgrRegist64_wrapper(struct CandidateMgr* _this, struct CPlayer* pOne)
         {
            return CandidateMgrRegist64_user(_this, pOne, CandidateMgrRegist64_next);
         };
-        bool CandidateMgrRegist66_wrapper(struct CandidateMgr* _this, char byRace, struct _PVP_RANK_DATA* pData)
+        static bool CandidateMgrRegist66_wrapper(struct CandidateMgr* _this, char byRace, struct _PVP_RANK_DATA* pData)
         {
            return CandidateMgrRegist66_user(_this, byRace, pData, CandidateMgrRegist66_next);
         };
-        void CandidateMgrRelease68_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrRelease68_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrRelease68_user(_this, CandidateMgrRelease68_next);
         };
-        int CandidateMgrUpdate_ClassType70_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgrUpdate_ClassType70_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrUpdate_ClassType70_user(_this, CandidateMgrUpdate_ClassType70_next);
         };
-        int CandidateMgrUpdate_DischargePatriarch72_wrapper(struct CandidateMgr* _this, char* p)
+        static int CandidateMgrUpdate_DischargePatriarch72_wrapper(struct CandidateMgr* _this, char* p)
         {
            return CandidateMgrUpdate_DischargePatriarch72_user(_this, p, CandidateMgrUpdate_DischargePatriarch72_next);
         };
-        int CandidateMgrUpdate_Refund74_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgrUpdate_Refund74_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrUpdate_Refund74_user(_this, CandidateMgrUpdate_Refund74_next);
         };
-        int CandidateMgrUpdate_RegistCandidate_2st76_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgrUpdate_RegistCandidate_2st76_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrUpdate_RegistCandidate_2st76_user(_this, CandidateMgrUpdate_RegistCandidate_2st76_next);
         };
-        int CandidateMgrUpdate_Score78_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgrUpdate_Score78_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgrUpdate_Score78_user(_this, CandidateMgrUpdate_Score78_next);
         };
-        int CandidateMgrUpdate_VoteTime80_wrapper(struct CandidateMgr* _this, unsigned int dwSerial)
+        static int CandidateMgrUpdate_VoteTime80_wrapper(struct CandidateMgr* _this, unsigned int dwSerial)
         {
            return CandidateMgrUpdate_VoteTime80_user(_this, dwSerial, CandidateMgrUpdate_VoteTime80_next);
         };
-        void CandidateMgr__AddWinner82_wrapper(struct CandidateMgr* _this, char byRace, char byNum)
+        static void CandidateMgr__AddWinner82_wrapper(struct CandidateMgr* _this, char byRace, char byNum)
         {
            CandidateMgr__AddWinner82_user(_this, byRace, byNum, CandidateMgr__AddWinner82_next);
         };
-        int CandidateMgr__SortByPvpPoint84_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgr__SortByPvpPoint84_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgr__SortByPvpPoint84_user(_this, CandidateMgr__SortByPvpPoint84_next);
         };
-        int CandidateMgr__SortByRank86_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgr__SortByRank86_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgr__SortByRank86_user(_this, CandidateMgr__SortByRank86_next);
         };
-        int CandidateMgr__SortByScore88_wrapper(struct CandidateMgr* _this)
+        static int CandidateMgr__SortByScore88_wrapper(struct CandidateMgr* _this)
         {
            return CandidateMgr__SortByScore88_user(_this, CandidateMgr__SortByScore88_next);
         };
-        void CandidateMgrdtor_CandidateMgr90_wrapper(struct CandidateMgr* _this)
+        static void CandidateMgrdtor_CandidateMgr90_wrapper(struct CandidateMgr* _this)
         {
            CandidateMgrdtor_CandidateMgr90_user(_this, CandidateMgrdtor_CandidateMgr90_next);
         };
         
-        hook_record CandidateMgr_functions[] = {
+        static hook_record CandidateMgr_functions[] = {
         {   (LPVOID)0x1402b38a0L,
             (LPVOID *)&CandidateMgrAddScore2_user,
             (LPVOID *)&CandidateMgrAddScore2_next,
@@ -509,5 +509,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

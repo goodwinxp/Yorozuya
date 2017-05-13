@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterEventRespawnctor_CMonsterEventRespawn2_ptr CMonsterEventRespawnctor_CMonsterEventRespawn2_next(nullptr);
-        info::CMonsterEventRespawnctor_CMonsterEventRespawn2_clbk CMonsterEventRespawnctor_CMonsterEventRespawn2_user(nullptr);
-        info::CMonsterEventRespawnCheckRespawnEvent4_ptr CMonsterEventRespawnCheckRespawnEvent4_next(nullptr);
-        info::CMonsterEventRespawnCheckRespawnEvent4_clbk CMonsterEventRespawnCheckRespawnEvent4_user(nullptr);
-        info::CMonsterEventRespawnSetEventRespawn6_ptr CMonsterEventRespawnSetEventRespawn6_next(nullptr);
-        info::CMonsterEventRespawnSetEventRespawn6_clbk CMonsterEventRespawnSetEventRespawn6_user(nullptr);
-        info::CMonsterEventRespawnStartRespawnEvent8_ptr CMonsterEventRespawnStartRespawnEvent8_next(nullptr);
-        info::CMonsterEventRespawnStartRespawnEvent8_clbk CMonsterEventRespawnStartRespawnEvent8_user(nullptr);
-        info::CMonsterEventRespawnStopRespawnEvent10_ptr CMonsterEventRespawnStopRespawnEvent10_next(nullptr);
-        info::CMonsterEventRespawnStopRespawnEvent10_clbk CMonsterEventRespawnStopRespawnEvent10_user(nullptr);
-        info::CMonsterEventRespawndtor_CMonsterEventRespawn15_ptr CMonsterEventRespawndtor_CMonsterEventRespawn15_next(nullptr);
-        info::CMonsterEventRespawndtor_CMonsterEventRespawn15_clbk CMonsterEventRespawndtor_CMonsterEventRespawn15_user(nullptr);
+        static info::CMonsterEventRespawnctor_CMonsterEventRespawn2_ptr CMonsterEventRespawnctor_CMonsterEventRespawn2_next(nullptr);
+        static info::CMonsterEventRespawnctor_CMonsterEventRespawn2_clbk CMonsterEventRespawnctor_CMonsterEventRespawn2_user(nullptr);
+        static info::CMonsterEventRespawnCheckRespawnEvent4_ptr CMonsterEventRespawnCheckRespawnEvent4_next(nullptr);
+        static info::CMonsterEventRespawnCheckRespawnEvent4_clbk CMonsterEventRespawnCheckRespawnEvent4_user(nullptr);
+        static info::CMonsterEventRespawnSetEventRespawn6_ptr CMonsterEventRespawnSetEventRespawn6_next(nullptr);
+        static info::CMonsterEventRespawnSetEventRespawn6_clbk CMonsterEventRespawnSetEventRespawn6_user(nullptr);
+        static info::CMonsterEventRespawnStartRespawnEvent8_ptr CMonsterEventRespawnStartRespawnEvent8_next(nullptr);
+        static info::CMonsterEventRespawnStartRespawnEvent8_clbk CMonsterEventRespawnStartRespawnEvent8_user(nullptr);
+        static info::CMonsterEventRespawnStopRespawnEvent10_ptr CMonsterEventRespawnStopRespawnEvent10_next(nullptr);
+        static info::CMonsterEventRespawnStopRespawnEvent10_clbk CMonsterEventRespawnStopRespawnEvent10_user(nullptr);
+        static info::CMonsterEventRespawndtor_CMonsterEventRespawn15_ptr CMonsterEventRespawndtor_CMonsterEventRespawn15_next(nullptr);
+        static info::CMonsterEventRespawndtor_CMonsterEventRespawn15_clbk CMonsterEventRespawndtor_CMonsterEventRespawn15_user(nullptr);
         
-        void CMonsterEventRespawnctor_CMonsterEventRespawn2_wrapper(struct CMonsterEventRespawn* _this)
+        static void CMonsterEventRespawnctor_CMonsterEventRespawn2_wrapper(struct CMonsterEventRespawn* _this)
         {
            CMonsterEventRespawnctor_CMonsterEventRespawn2_user(_this, CMonsterEventRespawnctor_CMonsterEventRespawn2_next);
         };
-        void CMonsterEventRespawnCheckRespawnEvent4_wrapper(struct CMonsterEventRespawn* _this)
+        static void CMonsterEventRespawnCheckRespawnEvent4_wrapper(struct CMonsterEventRespawn* _this)
         {
            CMonsterEventRespawnCheckRespawnEvent4_user(_this, CMonsterEventRespawnCheckRespawnEvent4_next);
         };
-        bool CMonsterEventRespawnSetEventRespawn6_wrapper(struct CMonsterEventRespawn* _this)
+        static bool CMonsterEventRespawnSetEventRespawn6_wrapper(struct CMonsterEventRespawn* _this)
         {
            return CMonsterEventRespawnSetEventRespawn6_user(_this, CMonsterEventRespawnSetEventRespawn6_next);
         };
-        bool CMonsterEventRespawnStartRespawnEvent8_wrapper(struct CMonsterEventRespawn* _this, char* pszEventCode, char* pwszErrCode)
+        static bool CMonsterEventRespawnStartRespawnEvent8_wrapper(struct CMonsterEventRespawn* _this, char* pszEventCode, char* pwszErrCode)
         {
            return CMonsterEventRespawnStartRespawnEvent8_user(_this, pszEventCode, pwszErrCode, CMonsterEventRespawnStartRespawnEvent8_next);
         };
-        bool CMonsterEventRespawnStopRespawnEvent10_wrapper(struct CMonsterEventRespawn* _this, char* pszEventCode, char* pwszErrCode)
+        static bool CMonsterEventRespawnStopRespawnEvent10_wrapper(struct CMonsterEventRespawn* _this, char* pszEventCode, char* pwszErrCode)
         {
            return CMonsterEventRespawnStopRespawnEvent10_user(_this, pszEventCode, pwszErrCode, CMonsterEventRespawnStopRespawnEvent10_next);
         };
-        void CMonsterEventRespawndtor_CMonsterEventRespawn15_wrapper(struct CMonsterEventRespawn* _this)
+        static void CMonsterEventRespawndtor_CMonsterEventRespawn15_wrapper(struct CMonsterEventRespawn* _this)
         {
            CMonsterEventRespawndtor_CMonsterEventRespawn15_user(_this, CMonsterEventRespawndtor_CMonsterEventRespawn15_next);
         };
         
-        hook_record CMonsterEventRespawn_functions[] = {
+        static hook_record CMonsterEventRespawn_functions[] = {
         {   (LPVOID)0x1402a5d40L,
             (LPVOID *)&CMonsterEventRespawnctor_CMonsterEventRespawn2_user,
             (LPVOID *)&CMonsterEventRespawnctor_CMonsterEventRespawn2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -12,35 +12,35 @@ START_ATF_NAMESPACE
         {
             namespace detail
             {
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_next(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_user(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_next(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_user(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_next(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_user(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_next(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_user(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_next(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_user(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_next(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_user(nullptr);
                 
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_next(nullptr);
-                info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_user(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_ptr ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_next(nullptr);
+                static info::ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_clbk ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_user(nullptr);
                 
-                void* ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this, uint64_t nRequestedSize)
+                static void* ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this, uint64_t nRequestedSize)
                 {
                    return ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_user(_this, nRequestedSize);
                 };
-                void ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this)
+                static void ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this)
                 {
                    ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerctor_CAtlSafeAllocBufferManager4_user(_this);
                 };
-                void ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this)
+                static void ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>* _this)
                 {
                    ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerdtor_CAtlSafeAllocBufferManager6_user(_this);
                 };
                 
-                void* ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>::CAtlSafeAllocBufferNode* _this)
+                static void* ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_wrapper(struct ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>::CAtlSafeAllocBufferNode* _this)
                 {
                    return ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManager__CAtlSafeAllocBufferNodeGetData2_user(_this);
                 };
                 
-                hook_record ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>_functions[] = {
+                static hook_record ATL::_ATL_SAFE_ALLOCA_IMPL::CAtlSafeAllocBufferManager<ATL::CCRTAllocator>_functions[] = {
                 {   (LPVOID)0x140026c30L,
                     (LPVOID *)&ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_user,
                     (LPVOID *)&ATL___ATL_SAFE_ALLOCA_IMPL__CAtlSafeAllocBufferManagerAllocate2_next,
@@ -65,7 +65,7 @@ START_ATF_NAMESPACE
                 
                 };
                 
-            }; // end namespace detail
+            }; // static end namespace detail
         }; // end namespace _ATL_SAFE_ALLOCA_IMPL
     }; // end namespace ATL
 END_ATF_NAMESPACE

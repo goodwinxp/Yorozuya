@@ -8,89 +8,89 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::MiningTicketAuthLastCriTicket2_ptr MiningTicketAuthLastCriTicket2_next(nullptr);
-        info::MiningTicketAuthLastCriTicket2_clbk MiningTicketAuthLastCriTicket2_user(nullptr);
-        info::MiningTicketAuthLastMentalTicket4_ptr MiningTicketAuthLastMentalTicket4_next(nullptr);
-        info::MiningTicketAuthLastMentalTicket4_clbk MiningTicketAuthLastMentalTicket4_user(nullptr);
-        info::MiningTicketGetLastCriTicket6_ptr MiningTicketGetLastCriTicket6_next(nullptr);
-        info::MiningTicketGetLastCriTicket6_clbk MiningTicketGetLastCriTicket6_user(nullptr);
-        info::MiningTicketGetLastMentalTicket8_ptr MiningTicketGetLastMentalTicket8_next(nullptr);
-        info::MiningTicketGetLastMentalTicket8_clbk MiningTicketGetLastMentalTicket8_user(nullptr);
-        info::MiningTicketInit10_ptr MiningTicketInit10_next(nullptr);
-        info::MiningTicketInit10_clbk MiningTicketInit10_user(nullptr);
-        info::MiningTicketctor_MiningTicket12_ptr MiningTicketctor_MiningTicket12_next(nullptr);
-        info::MiningTicketctor_MiningTicket12_clbk MiningTicketctor_MiningTicket12_user(nullptr);
-        info::MiningTicketSetLastCriTicket14_ptr MiningTicketSetLastCriTicket14_next(nullptr);
-        info::MiningTicketSetLastCriTicket14_clbk MiningTicketSetLastCriTicket14_user(nullptr);
-        info::MiningTicketSetLastCriTicket16_ptr MiningTicketSetLastCriTicket16_next(nullptr);
-        info::MiningTicketSetLastCriTicket16_clbk MiningTicketSetLastCriTicket16_user(nullptr);
-        info::MiningTicketSetLastMentalTicket18_ptr MiningTicketSetLastMentalTicket18_next(nullptr);
-        info::MiningTicketSetLastMentalTicket18_clbk MiningTicketSetLastMentalTicket18_user(nullptr);
-        info::MiningTicketSetLastMentalTicket20_ptr MiningTicketSetLastMentalTicket20_next(nullptr);
-        info::MiningTicketSetLastMentalTicket20_clbk MiningTicketSetLastMentalTicket20_user(nullptr);
+        static info::MiningTicketAuthLastCriTicket2_ptr MiningTicketAuthLastCriTicket2_next(nullptr);
+        static info::MiningTicketAuthLastCriTicket2_clbk MiningTicketAuthLastCriTicket2_user(nullptr);
+        static info::MiningTicketAuthLastMentalTicket4_ptr MiningTicketAuthLastMentalTicket4_next(nullptr);
+        static info::MiningTicketAuthLastMentalTicket4_clbk MiningTicketAuthLastMentalTicket4_user(nullptr);
+        static info::MiningTicketGetLastCriTicket6_ptr MiningTicketGetLastCriTicket6_next(nullptr);
+        static info::MiningTicketGetLastCriTicket6_clbk MiningTicketGetLastCriTicket6_user(nullptr);
+        static info::MiningTicketGetLastMentalTicket8_ptr MiningTicketGetLastMentalTicket8_next(nullptr);
+        static info::MiningTicketGetLastMentalTicket8_clbk MiningTicketGetLastMentalTicket8_user(nullptr);
+        static info::MiningTicketInit10_ptr MiningTicketInit10_next(nullptr);
+        static info::MiningTicketInit10_clbk MiningTicketInit10_user(nullptr);
+        static info::MiningTicketctor_MiningTicket12_ptr MiningTicketctor_MiningTicket12_next(nullptr);
+        static info::MiningTicketctor_MiningTicket12_clbk MiningTicketctor_MiningTicket12_user(nullptr);
+        static info::MiningTicketSetLastCriTicket14_ptr MiningTicketSetLastCriTicket14_next(nullptr);
+        static info::MiningTicketSetLastCriTicket14_clbk MiningTicketSetLastCriTicket14_user(nullptr);
+        static info::MiningTicketSetLastCriTicket16_ptr MiningTicketSetLastCriTicket16_next(nullptr);
+        static info::MiningTicketSetLastCriTicket16_clbk MiningTicketSetLastCriTicket16_user(nullptr);
+        static info::MiningTicketSetLastMentalTicket18_ptr MiningTicketSetLastMentalTicket18_next(nullptr);
+        static info::MiningTicketSetLastMentalTicket18_clbk MiningTicketSetLastMentalTicket18_user(nullptr);
+        static info::MiningTicketSetLastMentalTicket20_ptr MiningTicketSetLastMentalTicket20_next(nullptr);
+        static info::MiningTicketSetLastMentalTicket20_clbk MiningTicketSetLastMentalTicket20_user(nullptr);
         
-        info::MiningTicket___AuthKeyTicketInit2_ptr MiningTicket___AuthKeyTicketInit2_next(nullptr);
-        info::MiningTicket___AuthKeyTicketInit2_clbk MiningTicket___AuthKeyTicketInit2_user(nullptr);
-        info::MiningTicket___AuthKeyTicketSet4_ptr MiningTicket___AuthKeyTicketSet4_next(nullptr);
-        info::MiningTicket___AuthKeyTicketSet4_clbk MiningTicket___AuthKeyTicketSet4_user(nullptr);
-        info::MiningTicket___AuthKeyTicketSet6_ptr MiningTicket___AuthKeyTicketSet6_next(nullptr);
-        info::MiningTicket___AuthKeyTicketSet6_clbk MiningTicket___AuthKeyTicketSet6_user(nullptr);
+        static info::MiningTicket___AuthKeyTicketInit2_ptr MiningTicket___AuthKeyTicketInit2_next(nullptr);
+        static info::MiningTicket___AuthKeyTicketInit2_clbk MiningTicket___AuthKeyTicketInit2_user(nullptr);
+        static info::MiningTicket___AuthKeyTicketSet4_ptr MiningTicket___AuthKeyTicketSet4_next(nullptr);
+        static info::MiningTicket___AuthKeyTicketSet4_clbk MiningTicket___AuthKeyTicketSet4_user(nullptr);
+        static info::MiningTicket___AuthKeyTicketSet6_ptr MiningTicket___AuthKeyTicketSet6_next(nullptr);
+        static info::MiningTicket___AuthKeyTicketSet6_clbk MiningTicket___AuthKeyTicketSet6_user(nullptr);
         
-        int MiningTicketAuthLastCriTicket2_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static int MiningTicketAuthLastCriTicket2_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            return MiningTicketAuthLastCriTicket2_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, MiningTicketAuthLastCriTicket2_next);
         };
-        int MiningTicketAuthLastMentalTicket4_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static int MiningTicketAuthLastMentalTicket4_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            return MiningTicketAuthLastMentalTicket4_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, MiningTicketAuthLastMentalTicket4_next);
         };
-        unsigned int MiningTicketGetLastCriTicket6_wrapper(struct MiningTicket* _this)
+        static unsigned int MiningTicketGetLastCriTicket6_wrapper(struct MiningTicket* _this)
         {
            return MiningTicketGetLastCriTicket6_user(_this, MiningTicketGetLastCriTicket6_next);
         };
-        unsigned int MiningTicketGetLastMentalTicket8_wrapper(struct MiningTicket* _this)
+        static unsigned int MiningTicketGetLastMentalTicket8_wrapper(struct MiningTicket* _this)
         {
            return MiningTicketGetLastMentalTicket8_user(_this, MiningTicketGetLastMentalTicket8_next);
         };
-        void MiningTicketInit10_wrapper(struct MiningTicket* _this)
+        static void MiningTicketInit10_wrapper(struct MiningTicket* _this)
         {
            MiningTicketInit10_user(_this, MiningTicketInit10_next);
         };
-        void MiningTicketctor_MiningTicket12_wrapper(struct MiningTicket* _this)
+        static void MiningTicketctor_MiningTicket12_wrapper(struct MiningTicket* _this)
         {
            MiningTicketctor_MiningTicket12_user(_this, MiningTicketctor_MiningTicket12_next);
         };
-        void MiningTicketSetLastCriTicket14_wrapper(struct MiningTicket* _this, unsigned int uiCriTicket)
+        static void MiningTicketSetLastCriTicket14_wrapper(struct MiningTicket* _this, unsigned int uiCriTicket)
         {
            MiningTicketSetLastCriTicket14_user(_this, uiCriTicket, MiningTicketSetLastCriTicket14_next);
         };
-        void MiningTicketSetLastCriTicket16_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static void MiningTicketSetLastCriTicket16_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            MiningTicketSetLastCriTicket16_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, MiningTicketSetLastCriTicket16_next);
         };
-        void MiningTicketSetLastMentalTicket18_wrapper(struct MiningTicket* _this, unsigned int uiMentalTicket)
+        static void MiningTicketSetLastMentalTicket18_wrapper(struct MiningTicket* _this, unsigned int uiMentalTicket)
         {
            MiningTicketSetLastMentalTicket18_user(_this, uiMentalTicket, MiningTicketSetLastMentalTicket18_next);
         };
-        void MiningTicketSetLastMentalTicket20_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static void MiningTicketSetLastMentalTicket20_wrapper(struct MiningTicket* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            MiningTicketSetLastMentalTicket20_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, MiningTicketSetLastMentalTicket20_next);
         };
         
-        void MiningTicket___AuthKeyTicketInit2_wrapper(struct MiningTicket::_AuthKeyTicket* _this)
+        static void MiningTicket___AuthKeyTicketInit2_wrapper(struct MiningTicket::_AuthKeyTicket* _this)
         {
            MiningTicket___AuthKeyTicketInit2_user(_this, MiningTicket___AuthKeyTicketInit2_next);
         };
-        void MiningTicket___AuthKeyTicketSet4_wrapper(struct MiningTicket::_AuthKeyTicket* _this, unsigned int uiSrc)
+        static void MiningTicket___AuthKeyTicketSet4_wrapper(struct MiningTicket::_AuthKeyTicket* _this, unsigned int uiSrc)
         {
            MiningTicket___AuthKeyTicketSet4_user(_this, uiSrc, MiningTicket___AuthKeyTicketSet4_next);
         };
-        void MiningTicket___AuthKeyTicketSet6_wrapper(struct MiningTicket::_AuthKeyTicket* _this, uint16_t byYear, char byMonth, char byDay, char byHour, char byNumofTime)
+        static void MiningTicket___AuthKeyTicketSet6_wrapper(struct MiningTicket::_AuthKeyTicket* _this, uint16_t byYear, char byMonth, char byDay, char byHour, char byNumofTime)
         {
            MiningTicket___AuthKeyTicketSet6_user(_this, byYear, byMonth, byDay, byHour, byNumofTime, MiningTicket___AuthKeyTicketSet6_next);
         };
         
-        hook_record MiningTicket_functions[] = {
+        static hook_record MiningTicket_functions[] = {
         {   (LPVOID)0x1400d01d0L,
             (LPVOID *)&MiningTicketAuthLastCriTicket2_user,
             (LPVOID *)&MiningTicketAuthLastCriTicket2_next,
@@ -160,5 +160,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

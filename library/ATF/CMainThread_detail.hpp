@@ -8,1377 +8,1377 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMainThreadAccountServerLogin2_ptr CMainThreadAccountServerLogin2_next(nullptr);
-        info::CMainThreadAccountServerLogin2_clbk CMainThreadAccountServerLogin2_user(nullptr);
-        info::CMainThreadAddGuildBattleSchdule4_ptr CMainThreadAddGuildBattleSchdule4_next(nullptr);
-        info::CMainThreadAddGuildBattleSchdule4_clbk CMainThreadAddGuildBattleSchdule4_user(nullptr);
-        info::CMainThreadAddPassablePacket6_ptr CMainThreadAddPassablePacket6_next(nullptr);
-        info::CMainThreadAddPassablePacket6_clbk CMainThreadAddPassablePacket6_user(nullptr);
-        info::CMainThreadAlive_Char_Complete8_ptr CMainThreadAlive_Char_Complete8_next(nullptr);
-        info::CMainThreadAlive_Char_Complete8_clbk CMainThreadAlive_Char_Complete8_user(nullptr);
-        info::CMainThreadctor_CMainThread10_ptr CMainThreadctor_CMainThread10_next(nullptr);
-        info::CMainThreadctor_CMainThread10_clbk CMainThreadctor_CMainThread10_user(nullptr);
-        info::CMainThreadCashDBInit12_ptr CMainThreadCashDBInit12_next(nullptr);
-        info::CMainThreadCashDBInit12_clbk CMainThreadCashDBInit12_user(nullptr);
-        info::CMainThreadCheckAccountLineState14_ptr CMainThreadCheckAccountLineState14_next(nullptr);
-        info::CMainThreadCheckAccountLineState14_clbk CMainThreadCheckAccountLineState14_user(nullptr);
-        info::CMainThreadCheckAvatorState16_ptr CMainThreadCheckAvatorState16_next(nullptr);
-        info::CMainThreadCheckAvatorState16_clbk CMainThreadCheckAvatorState16_user(nullptr);
-        info::CMainThreadCheckConnNumLog18_ptr CMainThreadCheckConnNumLog18_next(nullptr);
-        info::CMainThreadCheckConnNumLog18_clbk CMainThreadCheckConnNumLog18_user(nullptr);
-        info::CMainThreadCheckDayChangedPvpPointClear20_ptr CMainThreadCheckDayChangedPvpPointClear20_next(nullptr);
-        info::CMainThreadCheckDayChangedPvpPointClear20_clbk CMainThreadCheckDayChangedPvpPointClear20_user(nullptr);
-        info::CMainThreadCheckDefine22_ptr CMainThreadCheckDefine22_next(nullptr);
-        info::CMainThreadCheckDefine22_clbk CMainThreadCheckDefine22_user(nullptr);
-        info::CMainThreadCheckForceClose24_ptr CMainThreadCheckForceClose24_next(nullptr);
-        info::CMainThreadCheckForceClose24_clbk CMainThreadCheckForceClose24_user(nullptr);
-        info::CMainThreadCheckRadarItemDelay26_ptr CMainThreadCheckRadarItemDelay26_next(nullptr);
-        info::CMainThreadCheckRadarItemDelay26_clbk CMainThreadCheckRadarItemDelay26_user(nullptr);
-        info::CMainThreadCheckServerRateINIFile28_ptr CMainThreadCheckServerRateINIFile28_next(nullptr);
-        info::CMainThreadCheckServerRateINIFile28_clbk CMainThreadCheckServerRateINIFile28_user(nullptr);
-        info::CMainThreadCheckServiceableTime30_ptr CMainThreadCheckServiceableTime30_next(nullptr);
-        info::CMainThreadCheckServiceableTime30_clbk CMainThreadCheckServiceableTime30_user(nullptr);
-        info::CMainThreadCompleteLoadGuildBattleTotalRecord32_ptr CMainThreadCompleteLoadGuildBattleTotalRecord32_next(nullptr);
-        info::CMainThreadCompleteLoadGuildBattleTotalRecord32_clbk CMainThreadCompleteLoadGuildBattleTotalRecord32_user(nullptr);
-        info::CMainThreadCompleteUpdatePlayerVoteInfo34_ptr CMainThreadCompleteUpdatePlayerVoteInfo34_next(nullptr);
-        info::CMainThreadCompleteUpdatePlayerVoteInfo34_clbk CMainThreadCompleteUpdatePlayerVoteInfo34_user(nullptr);
-        info::CMainThreadCompleteUpdateServerToken36_ptr CMainThreadCompleteUpdateServerToken36_next(nullptr);
-        info::CMainThreadCompleteUpdateServerToken36_clbk CMainThreadCompleteUpdateServerToken36_user(nullptr);
-        info::CMainThreadCompleteUpdateSetLimitRun38_ptr CMainThreadCompleteUpdateSetLimitRun38_next(nullptr);
-        info::CMainThreadCompleteUpdateSetLimitRun38_clbk CMainThreadCompleteUpdateSetLimitRun38_user(nullptr);
-        info::CMainThreadCompleteUpdateVoteAvailable40_ptr CMainThreadCompleteUpdateVoteAvailable40_next(nullptr);
-        info::CMainThreadCompleteUpdateVoteAvailable40_clbk CMainThreadCompleteUpdateVoteAvailable40_user(nullptr);
-        info::CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_ptr CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_next(nullptr);
-        info::CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_clbk CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_user(nullptr);
-        info::CMainThreadComplete_db_Update_Data_For_Post_Send44_ptr CMainThreadComplete_db_Update_Data_For_Post_Send44_next(nullptr);
-        info::CMainThreadComplete_db_Update_Data_For_Post_Send44_clbk CMainThreadComplete_db_Update_Data_For_Post_Send44_user(nullptr);
-        info::CMainThreadComplete_db_Update_Data_For_Trade46_ptr CMainThreadComplete_db_Update_Data_For_Trade46_next(nullptr);
-        info::CMainThreadComplete_db_Update_Data_For_Trade46_clbk CMainThreadComplete_db_Update_Data_For_Trade46_user(nullptr);
-        info::CMainThreadContUserSaveJobCheck48_ptr CMainThreadContUserSaveJobCheck48_next(nullptr);
-        info::CMainThreadContUserSaveJobCheck48_clbk CMainThreadContUserSaveJobCheck48_user(nullptr);
-        info::CMainThreadCont_UserSave_Complete50_ptr CMainThreadCont_UserSave_Complete50_next(nullptr);
-        info::CMainThreadCont_UserSave_Complete50_clbk CMainThreadCont_UserSave_Complete50_user(nullptr);
-        info::CMainThreadCreateDataResetToken52_ptr CMainThreadCreateDataResetToken52_next(nullptr);
-        info::CMainThreadCreateDataResetToken52_clbk CMainThreadCreateDataResetToken52_user(nullptr);
-        info::CMainThreadCreateSelectCharacterLogTable54_ptr CMainThreadCreateSelectCharacterLogTable54_next(nullptr);
-        info::CMainThreadCreateSelectCharacterLogTable54_clbk CMainThreadCreateSelectCharacterLogTable54_user(nullptr);
-        info::CMainThreadDQSCompleteProcess56_ptr CMainThreadDQSCompleteProcess56_next(nullptr);
-        info::CMainThreadDQSCompleteProcess56_clbk CMainThreadDQSCompleteProcess56_user(nullptr);
-        info::CMainThreadDQSThread58_ptr CMainThreadDQSThread58_next(nullptr);
-        info::CMainThreadDQSThread58_clbk CMainThreadDQSThread58_user(nullptr);
-        info::CMainThreadDataFileInit60_ptr CMainThreadDataFileInit60_next(nullptr);
-        info::CMainThreadDataFileInit60_clbk CMainThreadDataFileInit60_user(nullptr);
-        info::CMainThreadDatabaseInit62_ptr CMainThreadDatabaseInit62_next(nullptr);
-        info::CMainThreadDatabaseInit62_clbk CMainThreadDatabaseInit62_user(nullptr);
-        info::CMainThreadDelete_Avator_Complete64_ptr CMainThreadDelete_Avator_Complete64_next(nullptr);
-        info::CMainThreadDelete_Avator_Complete64_clbk CMainThreadDelete_Avator_Complete64_user(nullptr);
-        info::CMainThreadEndServer66_ptr CMainThreadEndServer66_next(nullptr);
-        info::CMainThreadEndServer66_clbk CMainThreadEndServer66_user(nullptr);
-        info::CMainThreadForceCloseUserInTiming68_ptr CMainThreadForceCloseUserInTiming68_next(nullptr);
-        info::CMainThreadForceCloseUserInTiming68_clbk CMainThreadForceCloseUserInTiming68_user(nullptr);
-        info::CMainThreadGetChar70_ptr CMainThreadGetChar70_next(nullptr);
-        info::CMainThreadGetChar70_clbk CMainThreadGetChar70_user(nullptr);
-        info::CMainThreadGetCharW72_ptr CMainThreadGetCharW72_next(nullptr);
-        info::CMainThreadGetCharW72_clbk CMainThreadGetCharW72_user(nullptr);
-        info::CMainThreadGetObjectA74_ptr CMainThreadGetObjectA74_next(nullptr);
-        info::CMainThreadGetObjectA74_clbk CMainThreadGetObjectA74_user(nullptr);
-        info::CMainThreadGetObjectA76_ptr CMainThreadGetObjectA76_next(nullptr);
-        info::CMainThreadGetObjectA76_clbk CMainThreadGetObjectA76_user(nullptr);
-        info::CMainThreadGetObjectExpand78_ptr CMainThreadGetObjectExpand78_next(nullptr);
-        info::CMainThreadGetObjectExpand78_clbk CMainThreadGetObjectExpand78_user(nullptr);
-        info::CMainThreadGetTommorrowStr80_ptr CMainThreadGetTommorrowStr80_next(nullptr);
-        info::CMainThreadGetTommorrowStr80_clbk CMainThreadGetTommorrowStr80_user(nullptr);
-        info::CMainThreadInAtradTaxMoney82_ptr CMainThreadInAtradTaxMoney82_next(nullptr);
-        info::CMainThreadInAtradTaxMoney82_clbk CMainThreadInAtradTaxMoney82_user(nullptr);
-        info::CMainThreadInGuildbattleCost84_ptr CMainThreadInGuildbattleCost84_next(nullptr);
-        info::CMainThreadInGuildbattleCost84_clbk CMainThreadInGuildbattleCost84_user(nullptr);
-        info::CMainThreadInGuildbattleRewardMoney86_ptr CMainThreadInGuildbattleRewardMoney86_next(nullptr);
-        info::CMainThreadInGuildbattleRewardMoney86_clbk CMainThreadInGuildbattleRewardMoney86_user(nullptr);
-        info::CMainThreadInit88_ptr CMainThreadInit88_next(nullptr);
-        info::CMainThreadInit88_clbk CMainThreadInit88_user(nullptr);
-        info::CMainThreadInsert_Avator_Complete90_ptr CMainThreadInsert_Avator_Complete90_next(nullptr);
-        info::CMainThreadInsert_Avator_Complete90_clbk CMainThreadInsert_Avator_Complete90_user(nullptr);
-        info::CMainThreadIsExcuteService92_ptr CMainThreadIsExcuteService92_next(nullptr);
-        info::CMainThreadIsExcuteService92_clbk CMainThreadIsExcuteService92_user(nullptr);
-        info::CMainThreadIsReleaseServiceMode94_ptr CMainThreadIsReleaseServiceMode94_next(nullptr);
-        info::CMainThreadIsReleaseServiceMode94_clbk CMainThreadIsReleaseServiceMode94_user(nullptr);
-        info::CMainThreadIsTestServer96_ptr CMainThreadIsTestServer96_next(nullptr);
-        info::CMainThreadIsTestServer96_clbk CMainThreadIsTestServer96_user(nullptr);
-        info::CMainThreadLoadINI98_ptr CMainThreadLoadINI98_next(nullptr);
-        info::CMainThreadLoadINI98_clbk CMainThreadLoadINI98_user(nullptr);
-        info::CMainThreadLoadItemConsumeINI100_ptr CMainThreadLoadItemConsumeINI100_next(nullptr);
-        info::CMainThreadLoadItemConsumeINI100_clbk CMainThreadLoadItemConsumeINI100_user(nullptr);
-        info::CMainThreadLoadLimitInfo102_ptr CMainThreadLoadLimitInfo102_next(nullptr);
-        info::CMainThreadLoadLimitInfo102_clbk CMainThreadLoadLimitInfo102_user(nullptr);
-        info::CMainThreadLoadServerRateINIFile104_ptr CMainThreadLoadServerRateINIFile104_next(nullptr);
-        info::CMainThreadLoadServerRateINIFile104_clbk CMainThreadLoadServerRateINIFile104_user(nullptr);
-        info::CMainThreadLoadWorldInfoINI106_ptr CMainThreadLoadWorldInfoINI106_next(nullptr);
-        info::CMainThreadLoadWorldInfoINI106_clbk CMainThreadLoadWorldInfoINI106_user(nullptr);
-        info::CMainThreadLoadWorldSystemINI108_ptr CMainThreadLoadWorldSystemINI108_next(nullptr);
-        info::CMainThreadLoadWorldSystemINI108_clbk CMainThreadLoadWorldSystemINI108_user(nullptr);
-        info::CMainThreadLoad_Content_Complete110_ptr CMainThreadLoad_Content_Complete110_next(nullptr);
-        info::CMainThreadLoad_Content_Complete110_clbk CMainThreadLoad_Content_Complete110_user(nullptr);
-        info::CMainThreadLoad_PostStorage_Complete112_ptr CMainThreadLoad_PostStorage_Complete112_next(nullptr);
-        info::CMainThreadLoad_PostStorage_Complete112_clbk CMainThreadLoad_PostStorage_Complete112_user(nullptr);
-        info::CMainThreadLoad_ReturnPost_Complete114_ptr CMainThreadLoad_ReturnPost_Complete114_next(nullptr);
-        info::CMainThreadLoad_ReturnPost_Complete114_clbk CMainThreadLoad_ReturnPost_Complete114_user(nullptr);
-        info::CMainThreadLobby_Account_Complete116_ptr CMainThreadLobby_Account_Complete116_next(nullptr);
-        info::CMainThreadLobby_Account_Complete116_clbk CMainThreadLobby_Account_Complete116_user(nullptr);
-        info::CMainThreadLogout_Account_Complete118_ptr CMainThreadLogout_Account_Complete118_next(nullptr);
-        info::CMainThreadLogout_Account_Complete118_clbk CMainThreadLogout_Account_Complete118_user(nullptr);
-        info::CMainThreadMakeSystemTower120_ptr CMainThreadMakeSystemTower120_next(nullptr);
-        info::CMainThreadMakeSystemTower120_clbk CMainThreadMakeSystemTower120_user(nullptr);
-        info::CMainThreadManageClientLimitRunRequest122_ptr CMainThreadManageClientLimitRunRequest122_next(nullptr);
-        info::CMainThreadManageClientLimitRunRequest122_clbk CMainThreadManageClientLimitRunRequest122_user(nullptr);
-        info::CMainThreadNetworkInit124_ptr CMainThreadNetworkInit124_next(nullptr);
-        info::CMainThreadNetworkInit124_clbk CMainThreadNetworkInit124_user(nullptr);
-        info::CMainThreadObjectInit126_ptr CMainThreadObjectInit126_next(nullptr);
-        info::CMainThreadObjectInit126_clbk CMainThreadObjectInit126_user(nullptr);
-        info::CMainThreadOnDQSRun128_ptr CMainThreadOnDQSRun128_next(nullptr);
-        info::CMainThreadOnDQSRun128_clbk CMainThreadOnDQSRun128_user(nullptr);
-        info::CMainThreadOnRun130_ptr CMainThreadOnRun130_next(nullptr);
-        info::CMainThreadOnRun130_clbk CMainThreadOnRun130_user(nullptr);
-        info::CMainThreadOutDestGuildbattleCost132_ptr CMainThreadOutDestGuildbattleCost132_next(nullptr);
-        info::CMainThreadOutDestGuildbattleCost132_clbk CMainThreadOutDestGuildbattleCost132_user(nullptr);
-        info::CMainThreadOutSrcGuildbattleCost134_ptr CMainThreadOutSrcGuildbattleCost134_next(nullptr);
-        info::CMainThreadOutSrcGuildbattleCost134_clbk CMainThreadOutSrcGuildbattleCost134_user(nullptr);
-        info::CMainThreadPingToAccount136_ptr CMainThreadPingToAccount136_next(nullptr);
-        info::CMainThreadPingToAccount136_clbk CMainThreadPingToAccount136_user(nullptr);
-        info::CMainThreadPushDQSData138_ptr CMainThreadPushDQSData138_next(nullptr);
-        info::CMainThreadPushDQSData138_clbk CMainThreadPushDQSData138_user(nullptr);
-        info::CMainThreadPushResetServerToken140_ptr CMainThreadPushResetServerToken140_next(nullptr);
-        info::CMainThreadPushResetServerToken140_clbk CMainThreadPushResetServerToken140_user(nullptr);
-        info::CMainThreadPush_ChargeItem142_ptr CMainThreadPush_ChargeItem142_next(nullptr);
-        info::CMainThreadPush_ChargeItem142_clbk CMainThreadPush_ChargeItem142_user(nullptr);
-        info::CMainThreadQryCaseAddpvppoint144_ptr CMainThreadQryCaseAddpvppoint144_next(nullptr);
-        info::CMainThreadQryCaseAddpvppoint144_clbk CMainThreadQryCaseAddpvppoint144_user(nullptr);
-        info::CMainThreadReged_Avator_Complete146_ptr CMainThreadReged_Avator_Complete146_next(nullptr);
-        info::CMainThreadReged_Avator_Complete146_clbk CMainThreadReged_Avator_Complete146_user(nullptr);
-        info::CMainThreadRelease148_ptr CMainThreadRelease148_next(nullptr);
-        info::CMainThreadRelease148_clbk CMainThreadRelease148_user(nullptr);
-        info::CMainThreadRuleThread150_ptr CMainThreadRuleThread150_next(nullptr);
-        info::CMainThreadRuleThread150_clbk CMainThreadRuleThread150_user(nullptr);
-        info::CMainThreadSelect_Avator_Complete152_ptr CMainThreadSelect_Avator_Complete152_next(nullptr);
-        info::CMainThreadSelect_Avator_Complete152_clbk CMainThreadSelect_Avator_Complete152_user(nullptr);
-        info::CMainThreadSendWebRaceBossSMS154_ptr CMainThreadSendWebRaceBossSMS154_next(nullptr);
-        info::CMainThreadSendWebRaceBossSMS154_clbk CMainThreadSendWebRaceBossSMS154_user(nullptr);
-        info::CMainThreadSerivceForceSet156_ptr CMainThreadSerivceForceSet156_next(nullptr);
-        info::CMainThreadSerivceForceSet156_clbk CMainThreadSerivceForceSet156_user(nullptr);
-        info::CMainThreadSerivceSelfStart158_ptr CMainThreadSerivceSelfStart158_next(nullptr);
-        info::CMainThreadSerivceSelfStart158_clbk CMainThreadSerivceSelfStart158_user(nullptr);
-        info::CMainThreadSerivceSelfStop160_ptr CMainThreadSerivceSelfStop160_next(nullptr);
-        info::CMainThreadSerivceSelfStop160_clbk CMainThreadSerivceSelfStop160_user(nullptr);
-        info::CMainThreadServerStateMsgGotoWebAgent162_ptr CMainThreadServerStateMsgGotoWebAgent162_next(nullptr);
-        info::CMainThreadServerStateMsgGotoWebAgent162_clbk CMainThreadServerStateMsgGotoWebAgent162_user(nullptr);
-        info::CMainThreadSetGlobalDataName164_ptr CMainThreadSetGlobalDataName164_next(nullptr);
-        info::CMainThreadSetGlobalDataName164_clbk CMainThreadSetGlobalDataName164_user(nullptr);
-        info::CMainThreadSetServerRate166_ptr CMainThreadSetServerRate166_next(nullptr);
-        info::CMainThreadSetServerRate166_clbk CMainThreadSetServerRate166_user(nullptr);
-        info::CMainThreadUpdateGuildBattleDrawRankInfo168_ptr CMainThreadUpdateGuildBattleDrawRankInfo168_next(nullptr);
-        info::CMainThreadUpdateGuildBattleDrawRankInfo168_clbk CMainThreadUpdateGuildBattleDrawRankInfo168_user(nullptr);
-        info::CMainThreadUpdateGuildBattleWinLoseRankInfo170_ptr CMainThreadUpdateGuildBattleWinLoseRankInfo170_next(nullptr);
-        info::CMainThreadUpdateGuildBattleWinLoseRankInfo170_clbk CMainThreadUpdateGuildBattleWinLoseRankInfo170_user(nullptr);
-        info::CMainThreadUpdateLoadGuildBattleRank172_ptr CMainThreadUpdateLoadGuildBattleRank172_next(nullptr);
-        info::CMainThreadUpdateLoadGuildBattleRank172_clbk CMainThreadUpdateLoadGuildBattleRank172_user(nullptr);
-        info::CMainThreadUpdateReservedGuildBattleSchedule174_ptr CMainThreadUpdateReservedGuildBattleSchedule174_next(nullptr);
-        info::CMainThreadUpdateReservedGuildBattleSchedule174_clbk CMainThreadUpdateReservedGuildBattleSchedule174_user(nullptr);
-        info::CMainThreadValidMacAddress176_ptr CMainThreadValidMacAddress176_next(nullptr);
-        info::CMainThreadValidMacAddress176_clbk CMainThreadValidMacAddress176_user(nullptr);
-        info::CMainThread_CheckGuildCheckSum178_ptr CMainThread_CheckGuildCheckSum178_next(nullptr);
-        info::CMainThread_CheckGuildCheckSum178_clbk CMainThread_CheckGuildCheckSum178_user(nullptr);
-        info::CMainThread_CheckTotalSales180_ptr CMainThread_CheckTotalSales180_next(nullptr);
-        info::CMainThread_CheckTotalSales180_clbk CMainThread_CheckTotalSales180_user(nullptr);
-        info::CMainThread_GameDataBaseInit182_ptr CMainThread_GameDataBaseInit182_next(nullptr);
-        info::CMainThread_GameDataBaseInit182_clbk CMainThread_GameDataBaseInit182_user(nullptr);
-        info::CMainThread_db_Check_NpcData184_ptr CMainThread_db_Check_NpcData184_next(nullptr);
-        info::CMainThread_db_Check_NpcData184_clbk CMainThread_db_Check_NpcData184_user(nullptr);
-        info::CMainThread_db_GuildRoom_Insert186_ptr CMainThread_db_GuildRoom_Insert186_next(nullptr);
-        info::CMainThread_db_GuildRoom_Insert186_clbk CMainThread_db_GuildRoom_Insert186_user(nullptr);
-        info::CMainThread_db_GuildRoom_Update188_ptr CMainThread_db_GuildRoom_Update188_next(nullptr);
-        info::CMainThread_db_GuildRoom_Update188_clbk CMainThread_db_GuildRoom_Update188_user(nullptr);
-        info::CMainThread_db_Load_Base190_ptr CMainThread_db_Load_Base190_next(nullptr);
-        info::CMainThread_db_Load_Base190_clbk CMainThread_db_Load_Base190_user(nullptr);
-        info::CMainThread_db_Load_BattleTournamentInfo192_ptr CMainThread_db_Load_BattleTournamentInfo192_next(nullptr);
-        info::CMainThread_db_Load_BattleTournamentInfo192_clbk CMainThread_db_Load_BattleTournamentInfo192_user(nullptr);
-        info::CMainThread_db_Load_Buddy194_ptr CMainThread_db_Load_Buddy194_next(nullptr);
-        info::CMainThread_db_Load_Buddy194_clbk CMainThread_db_Load_Buddy194_user(nullptr);
-        info::CMainThread_db_Load_Cash_LimSale196_ptr CMainThread_db_Load_Cash_LimSale196_next(nullptr);
-        info::CMainThread_db_Load_Cash_LimSale196_clbk CMainThread_db_Load_Cash_LimSale196_user(nullptr);
-        info::CMainThread_db_Load_CryMsg198_ptr CMainThread_db_Load_CryMsg198_next(nullptr);
-        info::CMainThread_db_Load_CryMsg198_clbk CMainThread_db_Load_CryMsg198_user(nullptr);
-        info::CMainThread_db_Load_General200_ptr CMainThread_db_Load_General200_next(nullptr);
-        info::CMainThread_db_Load_General200_clbk CMainThread_db_Load_General200_user(nullptr);
-        info::CMainThread_db_Load_GoldBoxItem202_ptr CMainThread_db_Load_GoldBoxItem202_next(nullptr);
-        info::CMainThread_db_Load_GoldBoxItem202_clbk CMainThread_db_Load_GoldBoxItem202_user(nullptr);
-        info::CMainThread_db_Load_Inven204_ptr CMainThread_db_Load_Inven204_next(nullptr);
-        info::CMainThread_db_Load_Inven204_clbk CMainThread_db_Load_Inven204_user(nullptr);
-        info::CMainThread_db_Load_ItemCombineEx206_ptr CMainThread_db_Load_ItemCombineEx206_next(nullptr);
-        info::CMainThread_db_Load_ItemCombineEx206_clbk CMainThread_db_Load_ItemCombineEx206_user(nullptr);
-        info::CMainThread_db_Load_MacroData208_ptr CMainThread_db_Load_MacroData208_next(nullptr);
-        info::CMainThread_db_Load_MacroData208_clbk CMainThread_db_Load_MacroData208_user(nullptr);
-        info::CMainThread_db_Load_NpcQuest_History210_ptr CMainThread_db_Load_NpcQuest_History210_next(nullptr);
-        info::CMainThread_db_Load_NpcQuest_History210_clbk CMainThread_db_Load_NpcQuest_History210_user(nullptr);
-        info::CMainThread_db_Load_OreCutting212_ptr CMainThread_db_Load_OreCutting212_next(nullptr);
-        info::CMainThread_db_Load_OreCutting212_clbk CMainThread_db_Load_OreCutting212_user(nullptr);
-        info::CMainThread_db_Load_PatriarchComm214_ptr CMainThread_db_Load_PatriarchComm214_next(nullptr);
-        info::CMainThread_db_Load_PatriarchComm214_clbk CMainThread_db_Load_PatriarchComm214_user(nullptr);
-        info::CMainThread_db_Load_PcBangFavor216_ptr CMainThread_db_Load_PcBangFavor216_next(nullptr);
-        info::CMainThread_db_Load_PcBangFavor216_clbk CMainThread_db_Load_PcBangFavor216_user(nullptr);
-        info::CMainThread_db_Load_PotionDelay218_ptr CMainThread_db_Load_PotionDelay218_next(nullptr);
-        info::CMainThread_db_Load_PotionDelay218_clbk CMainThread_db_Load_PotionDelay218_user(nullptr);
-        info::CMainThread_db_Load_PrimiumPlayTime220_ptr CMainThread_db_Load_PrimiumPlayTime220_next(nullptr);
-        info::CMainThread_db_Load_PrimiumPlayTime220_clbk CMainThread_db_Load_PrimiumPlayTime220_user(nullptr);
-        info::CMainThread_db_Load_PvpOrderView222_ptr CMainThread_db_Load_PvpOrderView222_next(nullptr);
-        info::CMainThread_db_Load_PvpOrderView222_clbk CMainThread_db_Load_PvpOrderView222_user(nullptr);
-        info::CMainThread_db_Load_PvpPointLimitData224_ptr CMainThread_db_Load_PvpPointLimitData224_next(nullptr);
-        info::CMainThread_db_Load_PvpPointLimitData224_clbk CMainThread_db_Load_PvpPointLimitData224_user(nullptr);
-        info::CMainThread_db_Load_Quest226_ptr CMainThread_db_Load_Quest226_next(nullptr);
-        info::CMainThread_db_Load_Quest226_clbk CMainThread_db_Load_Quest226_user(nullptr);
-        info::CMainThread_db_Load_SFDelayData228_ptr CMainThread_db_Load_SFDelayData228_next(nullptr);
-        info::CMainThread_db_Load_SFDelayData228_clbk CMainThread_db_Load_SFDelayData228_user(nullptr);
-        info::CMainThread_db_Load_Start_NpcQuest_History230_ptr CMainThread_db_Load_Start_NpcQuest_History230_next(nullptr);
-        info::CMainThread_db_Load_Start_NpcQuest_History230_clbk CMainThread_db_Load_Start_NpcQuest_History230_user(nullptr);
-        info::CMainThread_db_Load_Supplement232_ptr CMainThread_db_Load_Supplement232_next(nullptr);
-        info::CMainThread_db_Load_Supplement232_clbk CMainThread_db_Load_Supplement232_user(nullptr);
-        info::CMainThread_db_Load_TimeLimitInfo234_ptr CMainThread_db_Load_TimeLimitInfo234_next(nullptr);
-        info::CMainThread_db_Load_TimeLimitInfo234_clbk CMainThread_db_Load_TimeLimitInfo234_user(nullptr);
-        info::CMainThread_db_Load_Trade236_ptr CMainThread_db_Load_Trade236_next(nullptr);
-        info::CMainThread_db_Load_Trade236_clbk CMainThread_db_Load_Trade236_user(nullptr);
-        info::CMainThread_db_Load_Trunk238_ptr CMainThread_db_Load_Trunk238_next(nullptr);
-        info::CMainThread_db_Load_Trunk238_clbk CMainThread_db_Load_Trunk238_user(nullptr);
-        info::CMainThread_db_Load_UI240_ptr CMainThread_db_Load_UI240_next(nullptr);
-        info::CMainThread_db_Load_UI240_clbk CMainThread_db_Load_UI240_user(nullptr);
-        info::CMainThread_db_Load_Unit242_ptr CMainThread_db_Load_Unit242_next(nullptr);
-        info::CMainThread_db_Load_Unit242_clbk CMainThread_db_Load_Unit242_user(nullptr);
-        info::CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_ptr CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_next(nullptr);
-        info::CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_clbk CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_user(nullptr);
-        info::CMainThread_db_Update_Base246_ptr CMainThread_db_Update_Base246_next(nullptr);
-        info::CMainThread_db_Update_Base246_clbk CMainThread_db_Update_Base246_user(nullptr);
-        info::CMainThread_db_Update_Buddy248_ptr CMainThread_db_Update_Buddy248_next(nullptr);
-        info::CMainThread_db_Update_Buddy248_clbk CMainThread_db_Update_Buddy248_user(nullptr);
-        info::CMainThread_db_Update_Cash_LimSale250_ptr CMainThread_db_Update_Cash_LimSale250_next(nullptr);
-        info::CMainThread_db_Update_Cash_LimSale250_clbk CMainThread_db_Update_Cash_LimSale250_user(nullptr);
-        info::CMainThread_db_Update_CryMsg252_ptr CMainThread_db_Update_CryMsg252_next(nullptr);
-        info::CMainThread_db_Update_CryMsg252_clbk CMainThread_db_Update_CryMsg252_user(nullptr);
-        info::CMainThread_db_Update_Data_For_Post_Send254_ptr CMainThread_db_Update_Data_For_Post_Send254_next(nullptr);
-        info::CMainThread_db_Update_Data_For_Post_Send254_clbk CMainThread_db_Update_Data_For_Post_Send254_user(nullptr);
-        info::CMainThread_db_Update_Data_For_Trade256_ptr CMainThread_db_Update_Data_For_Trade256_next(nullptr);
-        info::CMainThread_db_Update_Data_For_Trade256_clbk CMainThread_db_Update_Data_For_Trade256_user(nullptr);
-        info::CMainThread_db_Update_General258_ptr CMainThread_db_Update_General258_next(nullptr);
-        info::CMainThread_db_Update_General258_clbk CMainThread_db_Update_General258_user(nullptr);
-        info::CMainThread_db_Update_GoldBoxItem260_ptr CMainThread_db_Update_GoldBoxItem260_next(nullptr);
-        info::CMainThread_db_Update_GoldBoxItem260_clbk CMainThread_db_Update_GoldBoxItem260_user(nullptr);
-        info::CMainThread_db_Update_Inven262_ptr CMainThread_db_Update_Inven262_next(nullptr);
-        info::CMainThread_db_Update_Inven262_clbk CMainThread_db_Update_Inven262_user(nullptr);
-        info::CMainThread_db_Update_ItemCombineEx264_ptr CMainThread_db_Update_ItemCombineEx264_next(nullptr);
-        info::CMainThread_db_Update_ItemCombineEx264_clbk CMainThread_db_Update_ItemCombineEx264_user(nullptr);
-        info::CMainThread_db_Update_MacroData266_ptr CMainThread_db_Update_MacroData266_next(nullptr);
-        info::CMainThread_db_Update_MacroData266_clbk CMainThread_db_Update_MacroData266_user(nullptr);
-        info::CMainThread_db_Update_NpcData268_ptr CMainThread_db_Update_NpcData268_next(nullptr);
-        info::CMainThread_db_Update_NpcData268_clbk CMainThread_db_Update_NpcData268_user(nullptr);
-        info::CMainThread_db_Update_NpcQuest_History270_ptr CMainThread_db_Update_NpcQuest_History270_next(nullptr);
-        info::CMainThread_db_Update_NpcQuest_History270_clbk CMainThread_db_Update_NpcQuest_History270_user(nullptr);
-        info::CMainThread_db_Update_OreCutting272_ptr CMainThread_db_Update_OreCutting272_next(nullptr);
-        info::CMainThread_db_Update_OreCutting272_clbk CMainThread_db_Update_OreCutting272_user(nullptr);
-        info::CMainThread_db_Update_PcBangFavor274_ptr CMainThread_db_Update_PcBangFavor274_next(nullptr);
-        info::CMainThread_db_Update_PcBangFavor274_clbk CMainThread_db_Update_PcBangFavor274_user(nullptr);
-        info::CMainThread_db_Update_PotionDelay276_ptr CMainThread_db_Update_PotionDelay276_next(nullptr);
-        info::CMainThread_db_Update_PotionDelay276_clbk CMainThread_db_Update_PotionDelay276_user(nullptr);
-        info::CMainThread_db_Update_PrimiumPlayTime278_ptr CMainThread_db_Update_PrimiumPlayTime278_next(nullptr);
-        info::CMainThread_db_Update_PrimiumPlayTime278_clbk CMainThread_db_Update_PrimiumPlayTime278_user(nullptr);
-        info::CMainThread_db_Update_PvpOrderView280_ptr CMainThread_db_Update_PvpOrderView280_next(nullptr);
-        info::CMainThread_db_Update_PvpOrderView280_clbk CMainThread_db_Update_PvpOrderView280_user(nullptr);
-        info::CMainThread_db_Update_PvpPointLimit282_ptr CMainThread_db_Update_PvpPointLimit282_next(nullptr);
-        info::CMainThread_db_Update_PvpPointLimit282_clbk CMainThread_db_Update_PvpPointLimit282_user(nullptr);
-        info::CMainThread_db_Update_Quest284_ptr CMainThread_db_Update_Quest284_next(nullptr);
-        info::CMainThread_db_Update_Quest284_clbk CMainThread_db_Update_Quest284_user(nullptr);
-        info::CMainThread_db_Update_SFDelayData286_ptr CMainThread_db_Update_SFDelayData286_next(nullptr);
-        info::CMainThread_db_Update_SFDelayData286_clbk CMainThread_db_Update_SFDelayData286_user(nullptr);
-        info::CMainThread_db_Update_Set_Limit_Run288_ptr CMainThread_db_Update_Set_Limit_Run288_next(nullptr);
-        info::CMainThread_db_Update_Set_Limit_Run288_clbk CMainThread_db_Update_Set_Limit_Run288_user(nullptr);
-        info::CMainThread_db_Update_Start_NpcQuest_History290_ptr CMainThread_db_Update_Start_NpcQuest_History290_next(nullptr);
-        info::CMainThread_db_Update_Start_NpcQuest_History290_clbk CMainThread_db_Update_Start_NpcQuest_History290_user(nullptr);
-        info::CMainThread_db_Update_Supplement292_ptr CMainThread_db_Update_Supplement292_next(nullptr);
-        info::CMainThread_db_Update_Supplement292_clbk CMainThread_db_Update_Supplement292_user(nullptr);
-        info::CMainThread_db_Update_TimeLimitInfo294_ptr CMainThread_db_Update_TimeLimitInfo294_next(nullptr);
-        info::CMainThread_db_Update_TimeLimitInfo294_clbk CMainThread_db_Update_TimeLimitInfo294_user(nullptr);
-        info::CMainThread_db_Update_Trunk296_ptr CMainThread_db_Update_Trunk296_next(nullptr);
-        info::CMainThread_db_Update_Trunk296_clbk CMainThread_db_Update_Trunk296_user(nullptr);
-        info::CMainThread_db_Update_Trunk_Extend298_ptr CMainThread_db_Update_Trunk_Extend298_next(nullptr);
-        info::CMainThread_db_Update_Trunk_Extend298_clbk CMainThread_db_Update_Trunk_Extend298_user(nullptr);
-        info::CMainThread_db_Update_UI300_ptr CMainThread_db_Update_UI300_next(nullptr);
-        info::CMainThread_db_Update_UI300_clbk CMainThread_db_Update_UI300_user(nullptr);
-        info::CMainThread_db_Update_Unit302_ptr CMainThread_db_Update_Unit302_next(nullptr);
-        info::CMainThread_db_Update_Unit302_clbk CMainThread_db_Update_Unit302_user(nullptr);
-        info::CMainThread_db_complete_event_classrefine304_ptr CMainThread_db_complete_event_classrefine304_next(nullptr);
-        info::CMainThread_db_complete_event_classrefine304_clbk CMainThread_db_complete_event_classrefine304_user(nullptr);
-        info::CMainThread_db_complete_update_event_classrefine306_ptr CMainThread_db_complete_update_event_classrefine306_next(nullptr);
-        info::CMainThread_db_complete_update_event_classrefine306_clbk CMainThread_db_complete_update_event_classrefine306_user(nullptr);
-        info::CMainThread_db_init_classrefine_count308_ptr CMainThread_db_init_classrefine_count308_next(nullptr);
-        info::CMainThread_db_init_classrefine_count308_clbk CMainThread_db_init_classrefine_count308_user(nullptr);
-        info::CMainThread_db_load_event_classrefine310_ptr CMainThread_db_load_event_classrefine310_next(nullptr);
-        info::CMainThread_db_load_event_classrefine310_clbk CMainThread_db_load_event_classrefine310_user(nullptr);
-        info::CMainThread_db_load_losebattlecount312_ptr CMainThread_db_load_losebattlecount312_next(nullptr);
-        info::CMainThread_db_load_losebattlecount312_clbk CMainThread_db_load_losebattlecount312_user(nullptr);
-        info::CMainThread_db_load_punishment314_ptr CMainThread_db_load_punishment314_next(nullptr);
-        info::CMainThread_db_load_punishment314_clbk CMainThread_db_load_punishment314_user(nullptr);
-        info::CMainThread_db_load_raceboss316_ptr CMainThread_db_load_raceboss316_next(nullptr);
-        info::CMainThread_db_load_raceboss316_clbk CMainThread_db_load_raceboss316_user(nullptr);
-        info::CMainThread_db_update_event_classrefine318_ptr CMainThread_db_update_event_classrefine318_next(nullptr);
-        info::CMainThread_db_update_event_classrefine318_clbk CMainThread_db_update_event_classrefine318_user(nullptr);
-        info::CMainThread_db_update_inven_AMP320_ptr CMainThread_db_update_inven_AMP320_next(nullptr);
-        info::CMainThread_db_update_inven_AMP320_clbk CMainThread_db_update_inven_AMP320_user(nullptr);
-        info::CMainThreadcheck_dbsyn_data_size325_ptr CMainThreadcheck_dbsyn_data_size325_next(nullptr);
-        info::CMainThreadcheck_dbsyn_data_size325_clbk CMainThreadcheck_dbsyn_data_size325_user(nullptr);
-        info::CMainThreadcheck_item_code_index327_ptr CMainThreadcheck_item_code_index327_next(nullptr);
-        info::CMainThreadcheck_item_code_index327_clbk CMainThreadcheck_item_code_index327_user(nullptr);
-        info::CMainThreadcheck_loaded_data329_ptr CMainThreadcheck_loaded_data329_next(nullptr);
-        info::CMainThreadcheck_loaded_data329_clbk CMainThreadcheck_loaded_data329_user(nullptr);
-        info::CMainThreadcheck_min_max_guild_money331_ptr CMainThreadcheck_min_max_guild_money331_next(nullptr);
-        info::CMainThreadcheck_min_max_guild_money331_clbk CMainThreadcheck_min_max_guild_money331_user(nullptr);
-        info::CMainThreaddb_Add_PvpPoint333_ptr CMainThreaddb_Add_PvpPoint333_next(nullptr);
-        info::CMainThreaddb_Add_PvpPoint333_clbk CMainThreaddb_Add_PvpPoint333_user(nullptr);
-        info::CMainThreaddb_Delete_Avator335_ptr CMainThreaddb_Delete_Avator335_next(nullptr);
-        info::CMainThreaddb_Delete_Avator335_clbk CMainThreaddb_Delete_Avator335_user(nullptr);
-        info::CMainThreaddb_GM_GreetingMsg337_ptr CMainThreaddb_GM_GreetingMsg337_next(nullptr);
-        info::CMainThreaddb_GM_GreetingMsg337_clbk CMainThreaddb_GM_GreetingMsg337_user(nullptr);
-        info::CMainThreaddb_GUILD_GreetingMsg339_ptr CMainThreaddb_GUILD_GreetingMsg339_next(nullptr);
-        info::CMainThreaddb_GUILD_GreetingMsg339_clbk CMainThreaddb_GUILD_GreetingMsg339_user(nullptr);
-        info::CMainThreaddb_Insert_Avator341_ptr CMainThreaddb_Insert_Avator341_next(nullptr);
-        info::CMainThreaddb_Insert_Avator341_clbk CMainThreaddb_Insert_Avator341_user(nullptr);
-        info::CMainThreaddb_Insert_ChangeClass_AfterInitClass343_ptr CMainThreaddb_Insert_ChangeClass_AfterInitClass343_next(nullptr);
-        info::CMainThreaddb_Insert_ChangeClass_AfterInitClass343_clbk CMainThreaddb_Insert_ChangeClass_AfterInitClass343_user(nullptr);
-        info::CMainThreaddb_Insert_CharacSelect_Log345_ptr CMainThreaddb_Insert_CharacSelect_Log345_next(nullptr);
-        info::CMainThreaddb_Insert_CharacSelect_Log345_clbk CMainThreaddb_Insert_CharacSelect_Log345_user(nullptr);
-        info::CMainThreaddb_Insert_Economy_History347_ptr CMainThreaddb_Insert_Economy_History347_next(nullptr);
-        info::CMainThreaddb_Insert_Economy_History347_clbk CMainThreaddb_Insert_Economy_History347_user(nullptr);
-        info::CMainThreaddb_Insert_Item349_ptr CMainThreaddb_Insert_Item349_next(nullptr);
-        info::CMainThreaddb_Insert_Item349_clbk CMainThreaddb_Insert_Item349_user(nullptr);
-        info::CMainThreaddb_Insert_guild351_ptr CMainThreaddb_Insert_guild351_next(nullptr);
-        info::CMainThreaddb_Insert_guild351_clbk CMainThreaddb_Insert_guild351_user(nullptr);
-        info::CMainThreaddb_LoadGreetingMsg353_ptr CMainThreaddb_LoadGreetingMsg353_next(nullptr);
-        info::CMainThreaddb_LoadGreetingMsg353_clbk CMainThreaddb_LoadGreetingMsg353_user(nullptr);
-        info::CMainThreaddb_Load_Avator355_ptr CMainThreaddb_Load_Avator355_next(nullptr);
-        info::CMainThreaddb_Load_Avator355_clbk CMainThreaddb_Load_Avator355_user(nullptr);
-        info::CMainThreaddb_Load_Content357_ptr CMainThreaddb_Load_Content357_next(nullptr);
-        info::CMainThreaddb_Load_Content357_clbk CMainThreaddb_Load_Content357_user(nullptr);
-        info::CMainThreaddb_Load_PostStorage359_ptr CMainThreaddb_Load_PostStorage359_next(nullptr);
-        info::CMainThreaddb_Load_PostStorage359_clbk CMainThreaddb_Load_PostStorage359_user(nullptr);
-        info::CMainThreaddb_Load_ReturnPost361_ptr CMainThreaddb_Load_ReturnPost361_next(nullptr);
-        info::CMainThreaddb_Load_ReturnPost361_clbk CMainThreaddb_Load_ReturnPost361_user(nullptr);
-        info::CMainThreaddb_Log_AvatorLevel363_ptr CMainThreaddb_Log_AvatorLevel363_next(nullptr);
-        info::CMainThreaddb_Log_AvatorLevel363_clbk CMainThreaddb_Log_AvatorLevel363_user(nullptr);
-        info::CMainThreaddb_Log_UserNum365_ptr CMainThreaddb_Log_UserNum365_next(nullptr);
-        info::CMainThreaddb_Log_UserNum365_clbk CMainThreaddb_Log_UserNum365_user(nullptr);
-        info::CMainThreaddb_RACE_GreetingMsg367_ptr CMainThreaddb_RACE_GreetingMsg367_next(nullptr);
-        info::CMainThreaddb_RACE_GreetingMsg367_clbk CMainThreaddb_RACE_GreetingMsg367_user(nullptr);
-        info::CMainThreaddb_Reged_Avator369_ptr CMainThreaddb_Reged_Avator369_next(nullptr);
-        info::CMainThreaddb_Reged_Avator369_clbk CMainThreaddb_Reged_Avator369_user(nullptr);
-        info::CMainThreaddb_Select_Economy_History371_ptr CMainThreaddb_Select_Economy_History371_next(nullptr);
-        info::CMainThreaddb_Select_Economy_History371_clbk CMainThreaddb_Select_Economy_History371_user(nullptr);
-        info::CMainThreaddb_Update_Avator373_ptr CMainThreaddb_Update_Avator373_next(nullptr);
-        info::CMainThreaddb_Update_Avator373_clbk CMainThreaddb_Update_Avator373_user(nullptr);
-        info::CMainThreaddb_Update_PostStorage375_ptr CMainThreaddb_Update_PostStorage375_next(nullptr);
-        info::CMainThreaddb_Update_PostStorage375_clbk CMainThreaddb_Update_PostStorage375_user(nullptr);
-        info::CMainThreaddb_Update_PvpInfo377_ptr CMainThreaddb_Update_PvpInfo377_next(nullptr);
-        info::CMainThreaddb_Update_PvpInfo377_clbk CMainThreaddb_Update_PvpInfo377_user(nullptr);
-        info::CMainThreaddb_buy_emblem379_ptr CMainThreaddb_buy_emblem379_next(nullptr);
-        info::CMainThreaddb_buy_emblem379_clbk CMainThreaddb_buy_emblem379_user(nullptr);
-        info::CMainThreaddb_char_set_alive381_ptr CMainThreaddb_char_set_alive381_next(nullptr);
-        info::CMainThreaddb_char_set_alive381_clbk CMainThreaddb_char_set_alive381_user(nullptr);
-        info::CMainThreaddb_disjoint_guild383_ptr CMainThreaddb_disjoint_guild383_next(nullptr);
-        info::CMainThreaddb_disjoint_guild383_clbk CMainThreaddb_disjoint_guild383_user(nullptr);
-        info::CMainThreaddb_input_guild_money385_ptr CMainThreaddb_input_guild_money385_next(nullptr);
-        info::CMainThreaddb_input_guild_money385_clbk CMainThreaddb_input_guild_money385_user(nullptr);
-        info::CMainThreaddb_input_guild_money_atradetax387_ptr CMainThreaddb_input_guild_money_atradetax387_next(nullptr);
-        info::CMainThreaddb_input_guild_money_atradetax387_clbk CMainThreaddb_input_guild_money_atradetax387_user(nullptr);
-        info::CMainThreaddb_output_guild_money389_ptr CMainThreaddb_output_guild_money389_next(nullptr);
-        info::CMainThreaddb_output_guild_money389_clbk CMainThreaddb_output_guild_money389_user(nullptr);
-        info::CMainThreaddb_sendwebracebosssms391_ptr CMainThreaddb_sendwebracebosssms391_next(nullptr);
-        info::CMainThreaddb_sendwebracebosssms391_clbk CMainThreaddb_sendwebracebosssms391_user(nullptr);
-        info::CMainThreaddb_update_guildmaster393_ptr CMainThreaddb_update_guildmaster393_next(nullptr);
-        info::CMainThreaddb_update_guildmaster393_clbk CMainThreaddb_update_guildmaster393_user(nullptr);
-        info::CMainThreaddb_update_guildmember_add395_ptr CMainThreaddb_update_guildmember_add395_next(nullptr);
-        info::CMainThreaddb_update_guildmember_add395_clbk CMainThreaddb_update_guildmember_add395_user(nullptr);
-        info::CMainThreaddb_update_guildmember_del397_ptr CMainThreaddb_update_guildmember_del397_next(nullptr);
-        info::CMainThreaddb_update_guildmember_del397_clbk CMainThreaddb_update_guildmember_del397_user(nullptr);
-        info::CMainThreadgm_DisplayAll399_ptr CMainThreadgm_DisplayAll399_next(nullptr);
-        info::CMainThreadgm_DisplayAll399_clbk CMainThreadgm_DisplayAll399_user(nullptr);
-        info::CMainThreadgm_DisplaymodeChange401_ptr CMainThreadgm_DisplaymodeChange401_next(nullptr);
-        info::CMainThreadgm_DisplaymodeChange401_clbk CMainThreadgm_DisplaymodeChange401_user(nullptr);
-        info::CMainThreadgm_DungeonLoad403_ptr CMainThreadgm_DungeonLoad403_next(nullptr);
-        info::CMainThreadgm_DungeonLoad403_clbk CMainThreadgm_DungeonLoad403_user(nullptr);
-        info::CMainThreadgm_MainThreadControl405_ptr CMainThreadgm_MainThreadControl405_next(nullptr);
-        info::CMainThreadgm_MainThreadControl405_clbk CMainThreadgm_MainThreadControl405_user(nullptr);
-        info::CMainThreadgm_MapChange407_ptr CMainThreadgm_MapChange407_next(nullptr);
-        info::CMainThreadgm_MapChange407_clbk CMainThreadgm_MapChange407_user(nullptr);
-        info::CMainThreadgm_MonsterInit409_ptr CMainThreadgm_MonsterInit409_next(nullptr);
-        info::CMainThreadgm_MonsterInit409_clbk CMainThreadgm_MonsterInit409_user(nullptr);
-        info::CMainThreadgm_ObjectSelect411_ptr CMainThreadgm_ObjectSelect411_next(nullptr);
-        info::CMainThreadgm_ObjectSelect411_clbk CMainThreadgm_ObjectSelect411_user(nullptr);
-        info::CMainThreadgm_PreCloseAnn413_ptr CMainThreadgm_PreCloseAnn413_next(nullptr);
-        info::CMainThreadgm_PreCloseAnn413_clbk CMainThreadgm_PreCloseAnn413_user(nullptr);
-        info::CMainThreadgm_ServerClose415_ptr CMainThreadgm_ServerClose415_next(nullptr);
-        info::CMainThreadgm_ServerClose415_clbk CMainThreadgm_ServerClose415_user(nullptr);
-        info::CMainThreadgm_UpdateMap417_ptr CMainThreadgm_UpdateMap417_next(nullptr);
-        info::CMainThreadgm_UpdateMap417_clbk CMainThreadgm_UpdateMap417_user(nullptr);
-        info::CMainThreadgm_UpdateObject419_ptr CMainThreadgm_UpdateObject419_next(nullptr);
-        info::CMainThreadgm_UpdateObject419_clbk CMainThreadgm_UpdateObject419_user(nullptr);
-        info::CMainThreadgm_UpdateServer421_ptr CMainThreadgm_UpdateServer421_next(nullptr);
-        info::CMainThreadgm_UpdateServer421_clbk CMainThreadgm_UpdateServer421_user(nullptr);
-        info::CMainThreadgm_UserExit423_ptr CMainThreadgm_UserExit423_next(nullptr);
-        info::CMainThreadgm_UserExit423_clbk CMainThreadgm_UserExit423_user(nullptr);
-        info::CMainThreadpc_AllUserGMNoticeInform425_ptr CMainThreadpc_AllUserGMNoticeInform425_next(nullptr);
-        info::CMainThreadpc_AllUserGMNoticeInform425_clbk CMainThreadpc_AllUserGMNoticeInform425_user(nullptr);
-        info::CMainThreadpc_AllUserKickInform427_ptr CMainThreadpc_AllUserKickInform427_next(nullptr);
-        info::CMainThreadpc_AllUserKickInform427_clbk CMainThreadpc_AllUserKickInform427_user(nullptr);
-        info::CMainThreadpc_AllUserMsgInform429_ptr CMainThreadpc_AllUserMsgInform429_next(nullptr);
-        info::CMainThreadpc_AllUserMsgInform429_clbk CMainThreadpc_AllUserMsgInform429_user(nullptr);
-        info::CMainThreadpc_AlterWorldService431_ptr CMainThreadpc_AlterWorldService431_next(nullptr);
-        info::CMainThreadpc_AlterWorldService431_clbk CMainThreadpc_AlterWorldService431_user(nullptr);
-        info::CMainThreadpc_CashDBInfoRecvResult433_ptr CMainThreadpc_CashDBInfoRecvResult433_next(nullptr);
-        info::CMainThreadpc_CashDBInfoRecvResult433_clbk CMainThreadpc_CashDBInfoRecvResult433_user(nullptr);
-        info::CMainThreadpc_ChatLockCommand435_ptr CMainThreadpc_ChatLockCommand435_next(nullptr);
-        info::CMainThreadpc_ChatLockCommand435_clbk CMainThreadpc_ChatLockCommand435_user(nullptr);
-        info::CMainThreadpc_EnterWorldResult437_ptr CMainThreadpc_EnterWorldResult437_next(nullptr);
-        info::CMainThreadpc_EnterWorldResult437_clbk CMainThreadpc_EnterWorldResult437_user(nullptr);
-        info::CMainThreadpc_ForceCloseCommand439_ptr CMainThreadpc_ForceCloseCommand439_next(nullptr);
-        info::CMainThreadpc_ForceCloseCommand439_clbk CMainThreadpc_ForceCloseCommand439_user(nullptr);
-        info::CMainThreadpc_OpenWorldFailureResult441_ptr CMainThreadpc_OpenWorldFailureResult441_next(nullptr);
-        info::CMainThreadpc_OpenWorldFailureResult441_clbk CMainThreadpc_OpenWorldFailureResult441_user(nullptr);
-        info::CMainThreadpc_OpenWorldSuccessResult443_ptr CMainThreadpc_OpenWorldSuccessResult443_next(nullptr);
-        info::CMainThreadpc_OpenWorldSuccessResult443_clbk CMainThreadpc_OpenWorldSuccessResult443_user(nullptr);
-        info::CMainThreadpc_SetMainGreetingMsg445_ptr CMainThreadpc_SetMainGreetingMsg445_next(nullptr);
-        info::CMainThreadpc_SetMainGreetingMsg445_clbk CMainThreadpc_SetMainGreetingMsg445_user(nullptr);
-        info::CMainThreadpc_SetRaceGreetingMsg447_ptr CMainThreadpc_SetRaceGreetingMsg447_next(nullptr);
-        info::CMainThreadpc_SetRaceGreetingMsg447_clbk CMainThreadpc_SetRaceGreetingMsg447_user(nullptr);
-        info::CMainThreadpc_TaiwanBillingUserCertify449_ptr CMainThreadpc_TaiwanBillingUserCertify449_next(nullptr);
-        info::CMainThreadpc_TaiwanBillingUserCertify449_clbk CMainThreadpc_TaiwanBillingUserCertify449_user(nullptr);
-        info::CMainThreadpc_TransIPKeyInform451_ptr CMainThreadpc_TransIPKeyInform451_next(nullptr);
-        info::CMainThreadpc_TransIPKeyInform451_clbk CMainThreadpc_TransIPKeyInform451_user(nullptr);
-        info::CMainThreadpc_UILockInitResult453_ptr CMainThreadpc_UILockInitResult453_next(nullptr);
-        info::CMainThreadpc_UILockInitResult453_clbk CMainThreadpc_UILockInitResult453_user(nullptr);
-        info::CMainThreadpc_UILockUpdateResult455_ptr CMainThreadpc_UILockUpdateResult455_next(nullptr);
-        info::CMainThreadpc_UILockUpdateResult455_clbk CMainThreadpc_UILockUpdateResult455_user(nullptr);
-        info::CMainThreadpc_UserChatBlockResult457_ptr CMainThreadpc_UserChatBlockResult457_next(nullptr);
-        info::CMainThreadpc_UserChatBlockResult457_clbk CMainThreadpc_UserChatBlockResult457_user(nullptr);
-        info::CMainThreaddtor_CMainThread459_ptr CMainThreaddtor_CMainThread459_next(nullptr);
-        info::CMainThreaddtor_CMainThread459_clbk CMainThreaddtor_CMainThread459_user(nullptr);
+        static info::CMainThreadAccountServerLogin2_ptr CMainThreadAccountServerLogin2_next(nullptr);
+        static info::CMainThreadAccountServerLogin2_clbk CMainThreadAccountServerLogin2_user(nullptr);
+        static info::CMainThreadAddGuildBattleSchdule4_ptr CMainThreadAddGuildBattleSchdule4_next(nullptr);
+        static info::CMainThreadAddGuildBattleSchdule4_clbk CMainThreadAddGuildBattleSchdule4_user(nullptr);
+        static info::CMainThreadAddPassablePacket6_ptr CMainThreadAddPassablePacket6_next(nullptr);
+        static info::CMainThreadAddPassablePacket6_clbk CMainThreadAddPassablePacket6_user(nullptr);
+        static info::CMainThreadAlive_Char_Complete8_ptr CMainThreadAlive_Char_Complete8_next(nullptr);
+        static info::CMainThreadAlive_Char_Complete8_clbk CMainThreadAlive_Char_Complete8_user(nullptr);
+        static info::CMainThreadctor_CMainThread10_ptr CMainThreadctor_CMainThread10_next(nullptr);
+        static info::CMainThreadctor_CMainThread10_clbk CMainThreadctor_CMainThread10_user(nullptr);
+        static info::CMainThreadCashDBInit12_ptr CMainThreadCashDBInit12_next(nullptr);
+        static info::CMainThreadCashDBInit12_clbk CMainThreadCashDBInit12_user(nullptr);
+        static info::CMainThreadCheckAccountLineState14_ptr CMainThreadCheckAccountLineState14_next(nullptr);
+        static info::CMainThreadCheckAccountLineState14_clbk CMainThreadCheckAccountLineState14_user(nullptr);
+        static info::CMainThreadCheckAvatorState16_ptr CMainThreadCheckAvatorState16_next(nullptr);
+        static info::CMainThreadCheckAvatorState16_clbk CMainThreadCheckAvatorState16_user(nullptr);
+        static info::CMainThreadCheckConnNumLog18_ptr CMainThreadCheckConnNumLog18_next(nullptr);
+        static info::CMainThreadCheckConnNumLog18_clbk CMainThreadCheckConnNumLog18_user(nullptr);
+        static info::CMainThreadCheckDayChangedPvpPointClear20_ptr CMainThreadCheckDayChangedPvpPointClear20_next(nullptr);
+        static info::CMainThreadCheckDayChangedPvpPointClear20_clbk CMainThreadCheckDayChangedPvpPointClear20_user(nullptr);
+        static info::CMainThreadCheckDefine22_ptr CMainThreadCheckDefine22_next(nullptr);
+        static info::CMainThreadCheckDefine22_clbk CMainThreadCheckDefine22_user(nullptr);
+        static info::CMainThreadCheckForceClose24_ptr CMainThreadCheckForceClose24_next(nullptr);
+        static info::CMainThreadCheckForceClose24_clbk CMainThreadCheckForceClose24_user(nullptr);
+        static info::CMainThreadCheckRadarItemDelay26_ptr CMainThreadCheckRadarItemDelay26_next(nullptr);
+        static info::CMainThreadCheckRadarItemDelay26_clbk CMainThreadCheckRadarItemDelay26_user(nullptr);
+        static info::CMainThreadCheckServerRateINIFile28_ptr CMainThreadCheckServerRateINIFile28_next(nullptr);
+        static info::CMainThreadCheckServerRateINIFile28_clbk CMainThreadCheckServerRateINIFile28_user(nullptr);
+        static info::CMainThreadCheckServiceableTime30_ptr CMainThreadCheckServiceableTime30_next(nullptr);
+        static info::CMainThreadCheckServiceableTime30_clbk CMainThreadCheckServiceableTime30_user(nullptr);
+        static info::CMainThreadCompleteLoadGuildBattleTotalRecord32_ptr CMainThreadCompleteLoadGuildBattleTotalRecord32_next(nullptr);
+        static info::CMainThreadCompleteLoadGuildBattleTotalRecord32_clbk CMainThreadCompleteLoadGuildBattleTotalRecord32_user(nullptr);
+        static info::CMainThreadCompleteUpdatePlayerVoteInfo34_ptr CMainThreadCompleteUpdatePlayerVoteInfo34_next(nullptr);
+        static info::CMainThreadCompleteUpdatePlayerVoteInfo34_clbk CMainThreadCompleteUpdatePlayerVoteInfo34_user(nullptr);
+        static info::CMainThreadCompleteUpdateServerToken36_ptr CMainThreadCompleteUpdateServerToken36_next(nullptr);
+        static info::CMainThreadCompleteUpdateServerToken36_clbk CMainThreadCompleteUpdateServerToken36_user(nullptr);
+        static info::CMainThreadCompleteUpdateSetLimitRun38_ptr CMainThreadCompleteUpdateSetLimitRun38_next(nullptr);
+        static info::CMainThreadCompleteUpdateSetLimitRun38_clbk CMainThreadCompleteUpdateSetLimitRun38_user(nullptr);
+        static info::CMainThreadCompleteUpdateVoteAvailable40_ptr CMainThreadCompleteUpdateVoteAvailable40_next(nullptr);
+        static info::CMainThreadCompleteUpdateVoteAvailable40_clbk CMainThreadCompleteUpdateVoteAvailable40_user(nullptr);
+        static info::CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_ptr CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_next(nullptr);
+        static info::CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_clbk CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_user(nullptr);
+        static info::CMainThreadComplete_db_Update_Data_For_Post_Send44_ptr CMainThreadComplete_db_Update_Data_For_Post_Send44_next(nullptr);
+        static info::CMainThreadComplete_db_Update_Data_For_Post_Send44_clbk CMainThreadComplete_db_Update_Data_For_Post_Send44_user(nullptr);
+        static info::CMainThreadComplete_db_Update_Data_For_Trade46_ptr CMainThreadComplete_db_Update_Data_For_Trade46_next(nullptr);
+        static info::CMainThreadComplete_db_Update_Data_For_Trade46_clbk CMainThreadComplete_db_Update_Data_For_Trade46_user(nullptr);
+        static info::CMainThreadContUserSaveJobCheck48_ptr CMainThreadContUserSaveJobCheck48_next(nullptr);
+        static info::CMainThreadContUserSaveJobCheck48_clbk CMainThreadContUserSaveJobCheck48_user(nullptr);
+        static info::CMainThreadCont_UserSave_Complete50_ptr CMainThreadCont_UserSave_Complete50_next(nullptr);
+        static info::CMainThreadCont_UserSave_Complete50_clbk CMainThreadCont_UserSave_Complete50_user(nullptr);
+        static info::CMainThreadCreateDataResetToken52_ptr CMainThreadCreateDataResetToken52_next(nullptr);
+        static info::CMainThreadCreateDataResetToken52_clbk CMainThreadCreateDataResetToken52_user(nullptr);
+        static info::CMainThreadCreateSelectCharacterLogTable54_ptr CMainThreadCreateSelectCharacterLogTable54_next(nullptr);
+        static info::CMainThreadCreateSelectCharacterLogTable54_clbk CMainThreadCreateSelectCharacterLogTable54_user(nullptr);
+        static info::CMainThreadDQSCompleteProcess56_ptr CMainThreadDQSCompleteProcess56_next(nullptr);
+        static info::CMainThreadDQSCompleteProcess56_clbk CMainThreadDQSCompleteProcess56_user(nullptr);
+        static info::CMainThreadDQSThread58_ptr CMainThreadDQSThread58_next(nullptr);
+        static info::CMainThreadDQSThread58_clbk CMainThreadDQSThread58_user(nullptr);
+        static info::CMainThreadDataFileInit60_ptr CMainThreadDataFileInit60_next(nullptr);
+        static info::CMainThreadDataFileInit60_clbk CMainThreadDataFileInit60_user(nullptr);
+        static info::CMainThreadDatabaseInit62_ptr CMainThreadDatabaseInit62_next(nullptr);
+        static info::CMainThreadDatabaseInit62_clbk CMainThreadDatabaseInit62_user(nullptr);
+        static info::CMainThreadDelete_Avator_Complete64_ptr CMainThreadDelete_Avator_Complete64_next(nullptr);
+        static info::CMainThreadDelete_Avator_Complete64_clbk CMainThreadDelete_Avator_Complete64_user(nullptr);
+        static info::CMainThreadEndServer66_ptr CMainThreadEndServer66_next(nullptr);
+        static info::CMainThreadEndServer66_clbk CMainThreadEndServer66_user(nullptr);
+        static info::CMainThreadForceCloseUserInTiming68_ptr CMainThreadForceCloseUserInTiming68_next(nullptr);
+        static info::CMainThreadForceCloseUserInTiming68_clbk CMainThreadForceCloseUserInTiming68_user(nullptr);
+        static info::CMainThreadGetChar70_ptr CMainThreadGetChar70_next(nullptr);
+        static info::CMainThreadGetChar70_clbk CMainThreadGetChar70_user(nullptr);
+        static info::CMainThreadGetCharW72_ptr CMainThreadGetCharW72_next(nullptr);
+        static info::CMainThreadGetCharW72_clbk CMainThreadGetCharW72_user(nullptr);
+        static info::CMainThreadGetObjectA74_ptr CMainThreadGetObjectA74_next(nullptr);
+        static info::CMainThreadGetObjectA74_clbk CMainThreadGetObjectA74_user(nullptr);
+        static info::CMainThreadGetObjectA76_ptr CMainThreadGetObjectA76_next(nullptr);
+        static info::CMainThreadGetObjectA76_clbk CMainThreadGetObjectA76_user(nullptr);
+        static info::CMainThreadGetObjectExpand78_ptr CMainThreadGetObjectExpand78_next(nullptr);
+        static info::CMainThreadGetObjectExpand78_clbk CMainThreadGetObjectExpand78_user(nullptr);
+        static info::CMainThreadGetTommorrowStr80_ptr CMainThreadGetTommorrowStr80_next(nullptr);
+        static info::CMainThreadGetTommorrowStr80_clbk CMainThreadGetTommorrowStr80_user(nullptr);
+        static info::CMainThreadInAtradTaxMoney82_ptr CMainThreadInAtradTaxMoney82_next(nullptr);
+        static info::CMainThreadInAtradTaxMoney82_clbk CMainThreadInAtradTaxMoney82_user(nullptr);
+        static info::CMainThreadInGuildbattleCost84_ptr CMainThreadInGuildbattleCost84_next(nullptr);
+        static info::CMainThreadInGuildbattleCost84_clbk CMainThreadInGuildbattleCost84_user(nullptr);
+        static info::CMainThreadInGuildbattleRewardMoney86_ptr CMainThreadInGuildbattleRewardMoney86_next(nullptr);
+        static info::CMainThreadInGuildbattleRewardMoney86_clbk CMainThreadInGuildbattleRewardMoney86_user(nullptr);
+        static info::CMainThreadInit88_ptr CMainThreadInit88_next(nullptr);
+        static info::CMainThreadInit88_clbk CMainThreadInit88_user(nullptr);
+        static info::CMainThreadInsert_Avator_Complete90_ptr CMainThreadInsert_Avator_Complete90_next(nullptr);
+        static info::CMainThreadInsert_Avator_Complete90_clbk CMainThreadInsert_Avator_Complete90_user(nullptr);
+        static info::CMainThreadIsExcuteService92_ptr CMainThreadIsExcuteService92_next(nullptr);
+        static info::CMainThreadIsExcuteService92_clbk CMainThreadIsExcuteService92_user(nullptr);
+        static info::CMainThreadIsReleaseServiceMode94_ptr CMainThreadIsReleaseServiceMode94_next(nullptr);
+        static info::CMainThreadIsReleaseServiceMode94_clbk CMainThreadIsReleaseServiceMode94_user(nullptr);
+        static info::CMainThreadIsTestServer96_ptr CMainThreadIsTestServer96_next(nullptr);
+        static info::CMainThreadIsTestServer96_clbk CMainThreadIsTestServer96_user(nullptr);
+        static info::CMainThreadLoadINI98_ptr CMainThreadLoadINI98_next(nullptr);
+        static info::CMainThreadLoadINI98_clbk CMainThreadLoadINI98_user(nullptr);
+        static info::CMainThreadLoadItemConsumeINI100_ptr CMainThreadLoadItemConsumeINI100_next(nullptr);
+        static info::CMainThreadLoadItemConsumeINI100_clbk CMainThreadLoadItemConsumeINI100_user(nullptr);
+        static info::CMainThreadLoadLimitInfo102_ptr CMainThreadLoadLimitInfo102_next(nullptr);
+        static info::CMainThreadLoadLimitInfo102_clbk CMainThreadLoadLimitInfo102_user(nullptr);
+        static info::CMainThreadLoadServerRateINIFile104_ptr CMainThreadLoadServerRateINIFile104_next(nullptr);
+        static info::CMainThreadLoadServerRateINIFile104_clbk CMainThreadLoadServerRateINIFile104_user(nullptr);
+        static info::CMainThreadLoadWorldInfoINI106_ptr CMainThreadLoadWorldInfoINI106_next(nullptr);
+        static info::CMainThreadLoadWorldInfoINI106_clbk CMainThreadLoadWorldInfoINI106_user(nullptr);
+        static info::CMainThreadLoadWorldSystemINI108_ptr CMainThreadLoadWorldSystemINI108_next(nullptr);
+        static info::CMainThreadLoadWorldSystemINI108_clbk CMainThreadLoadWorldSystemINI108_user(nullptr);
+        static info::CMainThreadLoad_Content_Complete110_ptr CMainThreadLoad_Content_Complete110_next(nullptr);
+        static info::CMainThreadLoad_Content_Complete110_clbk CMainThreadLoad_Content_Complete110_user(nullptr);
+        static info::CMainThreadLoad_PostStorage_Complete112_ptr CMainThreadLoad_PostStorage_Complete112_next(nullptr);
+        static info::CMainThreadLoad_PostStorage_Complete112_clbk CMainThreadLoad_PostStorage_Complete112_user(nullptr);
+        static info::CMainThreadLoad_ReturnPost_Complete114_ptr CMainThreadLoad_ReturnPost_Complete114_next(nullptr);
+        static info::CMainThreadLoad_ReturnPost_Complete114_clbk CMainThreadLoad_ReturnPost_Complete114_user(nullptr);
+        static info::CMainThreadLobby_Account_Complete116_ptr CMainThreadLobby_Account_Complete116_next(nullptr);
+        static info::CMainThreadLobby_Account_Complete116_clbk CMainThreadLobby_Account_Complete116_user(nullptr);
+        static info::CMainThreadLogout_Account_Complete118_ptr CMainThreadLogout_Account_Complete118_next(nullptr);
+        static info::CMainThreadLogout_Account_Complete118_clbk CMainThreadLogout_Account_Complete118_user(nullptr);
+        static info::CMainThreadMakeSystemTower120_ptr CMainThreadMakeSystemTower120_next(nullptr);
+        static info::CMainThreadMakeSystemTower120_clbk CMainThreadMakeSystemTower120_user(nullptr);
+        static info::CMainThreadManageClientLimitRunRequest122_ptr CMainThreadManageClientLimitRunRequest122_next(nullptr);
+        static info::CMainThreadManageClientLimitRunRequest122_clbk CMainThreadManageClientLimitRunRequest122_user(nullptr);
+        static info::CMainThreadNetworkInit124_ptr CMainThreadNetworkInit124_next(nullptr);
+        static info::CMainThreadNetworkInit124_clbk CMainThreadNetworkInit124_user(nullptr);
+        static info::CMainThreadObjectInit126_ptr CMainThreadObjectInit126_next(nullptr);
+        static info::CMainThreadObjectInit126_clbk CMainThreadObjectInit126_user(nullptr);
+        static info::CMainThreadOnDQSRun128_ptr CMainThreadOnDQSRun128_next(nullptr);
+        static info::CMainThreadOnDQSRun128_clbk CMainThreadOnDQSRun128_user(nullptr);
+        static info::CMainThreadOnRun130_ptr CMainThreadOnRun130_next(nullptr);
+        static info::CMainThreadOnRun130_clbk CMainThreadOnRun130_user(nullptr);
+        static info::CMainThreadOutDestGuildbattleCost132_ptr CMainThreadOutDestGuildbattleCost132_next(nullptr);
+        static info::CMainThreadOutDestGuildbattleCost132_clbk CMainThreadOutDestGuildbattleCost132_user(nullptr);
+        static info::CMainThreadOutSrcGuildbattleCost134_ptr CMainThreadOutSrcGuildbattleCost134_next(nullptr);
+        static info::CMainThreadOutSrcGuildbattleCost134_clbk CMainThreadOutSrcGuildbattleCost134_user(nullptr);
+        static info::CMainThreadPingToAccount136_ptr CMainThreadPingToAccount136_next(nullptr);
+        static info::CMainThreadPingToAccount136_clbk CMainThreadPingToAccount136_user(nullptr);
+        static info::CMainThreadPushDQSData138_ptr CMainThreadPushDQSData138_next(nullptr);
+        static info::CMainThreadPushDQSData138_clbk CMainThreadPushDQSData138_user(nullptr);
+        static info::CMainThreadPushResetServerToken140_ptr CMainThreadPushResetServerToken140_next(nullptr);
+        static info::CMainThreadPushResetServerToken140_clbk CMainThreadPushResetServerToken140_user(nullptr);
+        static info::CMainThreadPush_ChargeItem142_ptr CMainThreadPush_ChargeItem142_next(nullptr);
+        static info::CMainThreadPush_ChargeItem142_clbk CMainThreadPush_ChargeItem142_user(nullptr);
+        static info::CMainThreadQryCaseAddpvppoint144_ptr CMainThreadQryCaseAddpvppoint144_next(nullptr);
+        static info::CMainThreadQryCaseAddpvppoint144_clbk CMainThreadQryCaseAddpvppoint144_user(nullptr);
+        static info::CMainThreadReged_Avator_Complete146_ptr CMainThreadReged_Avator_Complete146_next(nullptr);
+        static info::CMainThreadReged_Avator_Complete146_clbk CMainThreadReged_Avator_Complete146_user(nullptr);
+        static info::CMainThreadRelease148_ptr CMainThreadRelease148_next(nullptr);
+        static info::CMainThreadRelease148_clbk CMainThreadRelease148_user(nullptr);
+        static info::CMainThreadRuleThread150_ptr CMainThreadRuleThread150_next(nullptr);
+        static info::CMainThreadRuleThread150_clbk CMainThreadRuleThread150_user(nullptr);
+        static info::CMainThreadSelect_Avator_Complete152_ptr CMainThreadSelect_Avator_Complete152_next(nullptr);
+        static info::CMainThreadSelect_Avator_Complete152_clbk CMainThreadSelect_Avator_Complete152_user(nullptr);
+        static info::CMainThreadSendWebRaceBossSMS154_ptr CMainThreadSendWebRaceBossSMS154_next(nullptr);
+        static info::CMainThreadSendWebRaceBossSMS154_clbk CMainThreadSendWebRaceBossSMS154_user(nullptr);
+        static info::CMainThreadSerivceForceSet156_ptr CMainThreadSerivceForceSet156_next(nullptr);
+        static info::CMainThreadSerivceForceSet156_clbk CMainThreadSerivceForceSet156_user(nullptr);
+        static info::CMainThreadSerivceSelfStart158_ptr CMainThreadSerivceSelfStart158_next(nullptr);
+        static info::CMainThreadSerivceSelfStart158_clbk CMainThreadSerivceSelfStart158_user(nullptr);
+        static info::CMainThreadSerivceSelfStop160_ptr CMainThreadSerivceSelfStop160_next(nullptr);
+        static info::CMainThreadSerivceSelfStop160_clbk CMainThreadSerivceSelfStop160_user(nullptr);
+        static info::CMainThreadServerStateMsgGotoWebAgent162_ptr CMainThreadServerStateMsgGotoWebAgent162_next(nullptr);
+        static info::CMainThreadServerStateMsgGotoWebAgent162_clbk CMainThreadServerStateMsgGotoWebAgent162_user(nullptr);
+        static info::CMainThreadSetGlobalDataName164_ptr CMainThreadSetGlobalDataName164_next(nullptr);
+        static info::CMainThreadSetGlobalDataName164_clbk CMainThreadSetGlobalDataName164_user(nullptr);
+        static info::CMainThreadSetServerRate166_ptr CMainThreadSetServerRate166_next(nullptr);
+        static info::CMainThreadSetServerRate166_clbk CMainThreadSetServerRate166_user(nullptr);
+        static info::CMainThreadUpdateGuildBattleDrawRankInfo168_ptr CMainThreadUpdateGuildBattleDrawRankInfo168_next(nullptr);
+        static info::CMainThreadUpdateGuildBattleDrawRankInfo168_clbk CMainThreadUpdateGuildBattleDrawRankInfo168_user(nullptr);
+        static info::CMainThreadUpdateGuildBattleWinLoseRankInfo170_ptr CMainThreadUpdateGuildBattleWinLoseRankInfo170_next(nullptr);
+        static info::CMainThreadUpdateGuildBattleWinLoseRankInfo170_clbk CMainThreadUpdateGuildBattleWinLoseRankInfo170_user(nullptr);
+        static info::CMainThreadUpdateLoadGuildBattleRank172_ptr CMainThreadUpdateLoadGuildBattleRank172_next(nullptr);
+        static info::CMainThreadUpdateLoadGuildBattleRank172_clbk CMainThreadUpdateLoadGuildBattleRank172_user(nullptr);
+        static info::CMainThreadUpdateReservedGuildBattleSchedule174_ptr CMainThreadUpdateReservedGuildBattleSchedule174_next(nullptr);
+        static info::CMainThreadUpdateReservedGuildBattleSchedule174_clbk CMainThreadUpdateReservedGuildBattleSchedule174_user(nullptr);
+        static info::CMainThreadValidMacAddress176_ptr CMainThreadValidMacAddress176_next(nullptr);
+        static info::CMainThreadValidMacAddress176_clbk CMainThreadValidMacAddress176_user(nullptr);
+        static info::CMainThread_CheckGuildCheckSum178_ptr CMainThread_CheckGuildCheckSum178_next(nullptr);
+        static info::CMainThread_CheckGuildCheckSum178_clbk CMainThread_CheckGuildCheckSum178_user(nullptr);
+        static info::CMainThread_CheckTotalSales180_ptr CMainThread_CheckTotalSales180_next(nullptr);
+        static info::CMainThread_CheckTotalSales180_clbk CMainThread_CheckTotalSales180_user(nullptr);
+        static info::CMainThread_GameDataBaseInit182_ptr CMainThread_GameDataBaseInit182_next(nullptr);
+        static info::CMainThread_GameDataBaseInit182_clbk CMainThread_GameDataBaseInit182_user(nullptr);
+        static info::CMainThread_db_Check_NpcData184_ptr CMainThread_db_Check_NpcData184_next(nullptr);
+        static info::CMainThread_db_Check_NpcData184_clbk CMainThread_db_Check_NpcData184_user(nullptr);
+        static info::CMainThread_db_GuildRoom_Insert186_ptr CMainThread_db_GuildRoom_Insert186_next(nullptr);
+        static info::CMainThread_db_GuildRoom_Insert186_clbk CMainThread_db_GuildRoom_Insert186_user(nullptr);
+        static info::CMainThread_db_GuildRoom_Update188_ptr CMainThread_db_GuildRoom_Update188_next(nullptr);
+        static info::CMainThread_db_GuildRoom_Update188_clbk CMainThread_db_GuildRoom_Update188_user(nullptr);
+        static info::CMainThread_db_Load_Base190_ptr CMainThread_db_Load_Base190_next(nullptr);
+        static info::CMainThread_db_Load_Base190_clbk CMainThread_db_Load_Base190_user(nullptr);
+        static info::CMainThread_db_Load_BattleTournamentInfo192_ptr CMainThread_db_Load_BattleTournamentInfo192_next(nullptr);
+        static info::CMainThread_db_Load_BattleTournamentInfo192_clbk CMainThread_db_Load_BattleTournamentInfo192_user(nullptr);
+        static info::CMainThread_db_Load_Buddy194_ptr CMainThread_db_Load_Buddy194_next(nullptr);
+        static info::CMainThread_db_Load_Buddy194_clbk CMainThread_db_Load_Buddy194_user(nullptr);
+        static info::CMainThread_db_Load_Cash_LimSale196_ptr CMainThread_db_Load_Cash_LimSale196_next(nullptr);
+        static info::CMainThread_db_Load_Cash_LimSale196_clbk CMainThread_db_Load_Cash_LimSale196_user(nullptr);
+        static info::CMainThread_db_Load_CryMsg198_ptr CMainThread_db_Load_CryMsg198_next(nullptr);
+        static info::CMainThread_db_Load_CryMsg198_clbk CMainThread_db_Load_CryMsg198_user(nullptr);
+        static info::CMainThread_db_Load_General200_ptr CMainThread_db_Load_General200_next(nullptr);
+        static info::CMainThread_db_Load_General200_clbk CMainThread_db_Load_General200_user(nullptr);
+        static info::CMainThread_db_Load_GoldBoxItem202_ptr CMainThread_db_Load_GoldBoxItem202_next(nullptr);
+        static info::CMainThread_db_Load_GoldBoxItem202_clbk CMainThread_db_Load_GoldBoxItem202_user(nullptr);
+        static info::CMainThread_db_Load_Inven204_ptr CMainThread_db_Load_Inven204_next(nullptr);
+        static info::CMainThread_db_Load_Inven204_clbk CMainThread_db_Load_Inven204_user(nullptr);
+        static info::CMainThread_db_Load_ItemCombineEx206_ptr CMainThread_db_Load_ItemCombineEx206_next(nullptr);
+        static info::CMainThread_db_Load_ItemCombineEx206_clbk CMainThread_db_Load_ItemCombineEx206_user(nullptr);
+        static info::CMainThread_db_Load_MacroData208_ptr CMainThread_db_Load_MacroData208_next(nullptr);
+        static info::CMainThread_db_Load_MacroData208_clbk CMainThread_db_Load_MacroData208_user(nullptr);
+        static info::CMainThread_db_Load_NpcQuest_History210_ptr CMainThread_db_Load_NpcQuest_History210_next(nullptr);
+        static info::CMainThread_db_Load_NpcQuest_History210_clbk CMainThread_db_Load_NpcQuest_History210_user(nullptr);
+        static info::CMainThread_db_Load_OreCutting212_ptr CMainThread_db_Load_OreCutting212_next(nullptr);
+        static info::CMainThread_db_Load_OreCutting212_clbk CMainThread_db_Load_OreCutting212_user(nullptr);
+        static info::CMainThread_db_Load_PatriarchComm214_ptr CMainThread_db_Load_PatriarchComm214_next(nullptr);
+        static info::CMainThread_db_Load_PatriarchComm214_clbk CMainThread_db_Load_PatriarchComm214_user(nullptr);
+        static info::CMainThread_db_Load_PcBangFavor216_ptr CMainThread_db_Load_PcBangFavor216_next(nullptr);
+        static info::CMainThread_db_Load_PcBangFavor216_clbk CMainThread_db_Load_PcBangFavor216_user(nullptr);
+        static info::CMainThread_db_Load_PotionDelay218_ptr CMainThread_db_Load_PotionDelay218_next(nullptr);
+        static info::CMainThread_db_Load_PotionDelay218_clbk CMainThread_db_Load_PotionDelay218_user(nullptr);
+        static info::CMainThread_db_Load_PrimiumPlayTime220_ptr CMainThread_db_Load_PrimiumPlayTime220_next(nullptr);
+        static info::CMainThread_db_Load_PrimiumPlayTime220_clbk CMainThread_db_Load_PrimiumPlayTime220_user(nullptr);
+        static info::CMainThread_db_Load_PvpOrderView222_ptr CMainThread_db_Load_PvpOrderView222_next(nullptr);
+        static info::CMainThread_db_Load_PvpOrderView222_clbk CMainThread_db_Load_PvpOrderView222_user(nullptr);
+        static info::CMainThread_db_Load_PvpPointLimitData224_ptr CMainThread_db_Load_PvpPointLimitData224_next(nullptr);
+        static info::CMainThread_db_Load_PvpPointLimitData224_clbk CMainThread_db_Load_PvpPointLimitData224_user(nullptr);
+        static info::CMainThread_db_Load_Quest226_ptr CMainThread_db_Load_Quest226_next(nullptr);
+        static info::CMainThread_db_Load_Quest226_clbk CMainThread_db_Load_Quest226_user(nullptr);
+        static info::CMainThread_db_Load_SFDelayData228_ptr CMainThread_db_Load_SFDelayData228_next(nullptr);
+        static info::CMainThread_db_Load_SFDelayData228_clbk CMainThread_db_Load_SFDelayData228_user(nullptr);
+        static info::CMainThread_db_Load_Start_NpcQuest_History230_ptr CMainThread_db_Load_Start_NpcQuest_History230_next(nullptr);
+        static info::CMainThread_db_Load_Start_NpcQuest_History230_clbk CMainThread_db_Load_Start_NpcQuest_History230_user(nullptr);
+        static info::CMainThread_db_Load_Supplement232_ptr CMainThread_db_Load_Supplement232_next(nullptr);
+        static info::CMainThread_db_Load_Supplement232_clbk CMainThread_db_Load_Supplement232_user(nullptr);
+        static info::CMainThread_db_Load_TimeLimitInfo234_ptr CMainThread_db_Load_TimeLimitInfo234_next(nullptr);
+        static info::CMainThread_db_Load_TimeLimitInfo234_clbk CMainThread_db_Load_TimeLimitInfo234_user(nullptr);
+        static info::CMainThread_db_Load_Trade236_ptr CMainThread_db_Load_Trade236_next(nullptr);
+        static info::CMainThread_db_Load_Trade236_clbk CMainThread_db_Load_Trade236_user(nullptr);
+        static info::CMainThread_db_Load_Trunk238_ptr CMainThread_db_Load_Trunk238_next(nullptr);
+        static info::CMainThread_db_Load_Trunk238_clbk CMainThread_db_Load_Trunk238_user(nullptr);
+        static info::CMainThread_db_Load_UI240_ptr CMainThread_db_Load_UI240_next(nullptr);
+        static info::CMainThread_db_Load_UI240_clbk CMainThread_db_Load_UI240_user(nullptr);
+        static info::CMainThread_db_Load_Unit242_ptr CMainThread_db_Load_Unit242_next(nullptr);
+        static info::CMainThread_db_Load_Unit242_clbk CMainThread_db_Load_Unit242_user(nullptr);
+        static info::CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_ptr CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_next(nullptr);
+        static info::CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_clbk CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_user(nullptr);
+        static info::CMainThread_db_Update_Base246_ptr CMainThread_db_Update_Base246_next(nullptr);
+        static info::CMainThread_db_Update_Base246_clbk CMainThread_db_Update_Base246_user(nullptr);
+        static info::CMainThread_db_Update_Buddy248_ptr CMainThread_db_Update_Buddy248_next(nullptr);
+        static info::CMainThread_db_Update_Buddy248_clbk CMainThread_db_Update_Buddy248_user(nullptr);
+        static info::CMainThread_db_Update_Cash_LimSale250_ptr CMainThread_db_Update_Cash_LimSale250_next(nullptr);
+        static info::CMainThread_db_Update_Cash_LimSale250_clbk CMainThread_db_Update_Cash_LimSale250_user(nullptr);
+        static info::CMainThread_db_Update_CryMsg252_ptr CMainThread_db_Update_CryMsg252_next(nullptr);
+        static info::CMainThread_db_Update_CryMsg252_clbk CMainThread_db_Update_CryMsg252_user(nullptr);
+        static info::CMainThread_db_Update_Data_For_Post_Send254_ptr CMainThread_db_Update_Data_For_Post_Send254_next(nullptr);
+        static info::CMainThread_db_Update_Data_For_Post_Send254_clbk CMainThread_db_Update_Data_For_Post_Send254_user(nullptr);
+        static info::CMainThread_db_Update_Data_For_Trade256_ptr CMainThread_db_Update_Data_For_Trade256_next(nullptr);
+        static info::CMainThread_db_Update_Data_For_Trade256_clbk CMainThread_db_Update_Data_For_Trade256_user(nullptr);
+        static info::CMainThread_db_Update_General258_ptr CMainThread_db_Update_General258_next(nullptr);
+        static info::CMainThread_db_Update_General258_clbk CMainThread_db_Update_General258_user(nullptr);
+        static info::CMainThread_db_Update_GoldBoxItem260_ptr CMainThread_db_Update_GoldBoxItem260_next(nullptr);
+        static info::CMainThread_db_Update_GoldBoxItem260_clbk CMainThread_db_Update_GoldBoxItem260_user(nullptr);
+        static info::CMainThread_db_Update_Inven262_ptr CMainThread_db_Update_Inven262_next(nullptr);
+        static info::CMainThread_db_Update_Inven262_clbk CMainThread_db_Update_Inven262_user(nullptr);
+        static info::CMainThread_db_Update_ItemCombineEx264_ptr CMainThread_db_Update_ItemCombineEx264_next(nullptr);
+        static info::CMainThread_db_Update_ItemCombineEx264_clbk CMainThread_db_Update_ItemCombineEx264_user(nullptr);
+        static info::CMainThread_db_Update_MacroData266_ptr CMainThread_db_Update_MacroData266_next(nullptr);
+        static info::CMainThread_db_Update_MacroData266_clbk CMainThread_db_Update_MacroData266_user(nullptr);
+        static info::CMainThread_db_Update_NpcData268_ptr CMainThread_db_Update_NpcData268_next(nullptr);
+        static info::CMainThread_db_Update_NpcData268_clbk CMainThread_db_Update_NpcData268_user(nullptr);
+        static info::CMainThread_db_Update_NpcQuest_History270_ptr CMainThread_db_Update_NpcQuest_History270_next(nullptr);
+        static info::CMainThread_db_Update_NpcQuest_History270_clbk CMainThread_db_Update_NpcQuest_History270_user(nullptr);
+        static info::CMainThread_db_Update_OreCutting272_ptr CMainThread_db_Update_OreCutting272_next(nullptr);
+        static info::CMainThread_db_Update_OreCutting272_clbk CMainThread_db_Update_OreCutting272_user(nullptr);
+        static info::CMainThread_db_Update_PcBangFavor274_ptr CMainThread_db_Update_PcBangFavor274_next(nullptr);
+        static info::CMainThread_db_Update_PcBangFavor274_clbk CMainThread_db_Update_PcBangFavor274_user(nullptr);
+        static info::CMainThread_db_Update_PotionDelay276_ptr CMainThread_db_Update_PotionDelay276_next(nullptr);
+        static info::CMainThread_db_Update_PotionDelay276_clbk CMainThread_db_Update_PotionDelay276_user(nullptr);
+        static info::CMainThread_db_Update_PrimiumPlayTime278_ptr CMainThread_db_Update_PrimiumPlayTime278_next(nullptr);
+        static info::CMainThread_db_Update_PrimiumPlayTime278_clbk CMainThread_db_Update_PrimiumPlayTime278_user(nullptr);
+        static info::CMainThread_db_Update_PvpOrderView280_ptr CMainThread_db_Update_PvpOrderView280_next(nullptr);
+        static info::CMainThread_db_Update_PvpOrderView280_clbk CMainThread_db_Update_PvpOrderView280_user(nullptr);
+        static info::CMainThread_db_Update_PvpPointLimit282_ptr CMainThread_db_Update_PvpPointLimit282_next(nullptr);
+        static info::CMainThread_db_Update_PvpPointLimit282_clbk CMainThread_db_Update_PvpPointLimit282_user(nullptr);
+        static info::CMainThread_db_Update_Quest284_ptr CMainThread_db_Update_Quest284_next(nullptr);
+        static info::CMainThread_db_Update_Quest284_clbk CMainThread_db_Update_Quest284_user(nullptr);
+        static info::CMainThread_db_Update_SFDelayData286_ptr CMainThread_db_Update_SFDelayData286_next(nullptr);
+        static info::CMainThread_db_Update_SFDelayData286_clbk CMainThread_db_Update_SFDelayData286_user(nullptr);
+        static info::CMainThread_db_Update_Set_Limit_Run288_ptr CMainThread_db_Update_Set_Limit_Run288_next(nullptr);
+        static info::CMainThread_db_Update_Set_Limit_Run288_clbk CMainThread_db_Update_Set_Limit_Run288_user(nullptr);
+        static info::CMainThread_db_Update_Start_NpcQuest_History290_ptr CMainThread_db_Update_Start_NpcQuest_History290_next(nullptr);
+        static info::CMainThread_db_Update_Start_NpcQuest_History290_clbk CMainThread_db_Update_Start_NpcQuest_History290_user(nullptr);
+        static info::CMainThread_db_Update_Supplement292_ptr CMainThread_db_Update_Supplement292_next(nullptr);
+        static info::CMainThread_db_Update_Supplement292_clbk CMainThread_db_Update_Supplement292_user(nullptr);
+        static info::CMainThread_db_Update_TimeLimitInfo294_ptr CMainThread_db_Update_TimeLimitInfo294_next(nullptr);
+        static info::CMainThread_db_Update_TimeLimitInfo294_clbk CMainThread_db_Update_TimeLimitInfo294_user(nullptr);
+        static info::CMainThread_db_Update_Trunk296_ptr CMainThread_db_Update_Trunk296_next(nullptr);
+        static info::CMainThread_db_Update_Trunk296_clbk CMainThread_db_Update_Trunk296_user(nullptr);
+        static info::CMainThread_db_Update_Trunk_Extend298_ptr CMainThread_db_Update_Trunk_Extend298_next(nullptr);
+        static info::CMainThread_db_Update_Trunk_Extend298_clbk CMainThread_db_Update_Trunk_Extend298_user(nullptr);
+        static info::CMainThread_db_Update_UI300_ptr CMainThread_db_Update_UI300_next(nullptr);
+        static info::CMainThread_db_Update_UI300_clbk CMainThread_db_Update_UI300_user(nullptr);
+        static info::CMainThread_db_Update_Unit302_ptr CMainThread_db_Update_Unit302_next(nullptr);
+        static info::CMainThread_db_Update_Unit302_clbk CMainThread_db_Update_Unit302_user(nullptr);
+        static info::CMainThread_db_complete_event_classrefine304_ptr CMainThread_db_complete_event_classrefine304_next(nullptr);
+        static info::CMainThread_db_complete_event_classrefine304_clbk CMainThread_db_complete_event_classrefine304_user(nullptr);
+        static info::CMainThread_db_complete_update_event_classrefine306_ptr CMainThread_db_complete_update_event_classrefine306_next(nullptr);
+        static info::CMainThread_db_complete_update_event_classrefine306_clbk CMainThread_db_complete_update_event_classrefine306_user(nullptr);
+        static info::CMainThread_db_init_classrefine_count308_ptr CMainThread_db_init_classrefine_count308_next(nullptr);
+        static info::CMainThread_db_init_classrefine_count308_clbk CMainThread_db_init_classrefine_count308_user(nullptr);
+        static info::CMainThread_db_load_event_classrefine310_ptr CMainThread_db_load_event_classrefine310_next(nullptr);
+        static info::CMainThread_db_load_event_classrefine310_clbk CMainThread_db_load_event_classrefine310_user(nullptr);
+        static info::CMainThread_db_load_losebattlecount312_ptr CMainThread_db_load_losebattlecount312_next(nullptr);
+        static info::CMainThread_db_load_losebattlecount312_clbk CMainThread_db_load_losebattlecount312_user(nullptr);
+        static info::CMainThread_db_load_punishment314_ptr CMainThread_db_load_punishment314_next(nullptr);
+        static info::CMainThread_db_load_punishment314_clbk CMainThread_db_load_punishment314_user(nullptr);
+        static info::CMainThread_db_load_raceboss316_ptr CMainThread_db_load_raceboss316_next(nullptr);
+        static info::CMainThread_db_load_raceboss316_clbk CMainThread_db_load_raceboss316_user(nullptr);
+        static info::CMainThread_db_update_event_classrefine318_ptr CMainThread_db_update_event_classrefine318_next(nullptr);
+        static info::CMainThread_db_update_event_classrefine318_clbk CMainThread_db_update_event_classrefine318_user(nullptr);
+        static info::CMainThread_db_update_inven_AMP320_ptr CMainThread_db_update_inven_AMP320_next(nullptr);
+        static info::CMainThread_db_update_inven_AMP320_clbk CMainThread_db_update_inven_AMP320_user(nullptr);
+        static info::CMainThreadcheck_dbsyn_data_size325_ptr CMainThreadcheck_dbsyn_data_size325_next(nullptr);
+        static info::CMainThreadcheck_dbsyn_data_size325_clbk CMainThreadcheck_dbsyn_data_size325_user(nullptr);
+        static info::CMainThreadcheck_item_code_index327_ptr CMainThreadcheck_item_code_index327_next(nullptr);
+        static info::CMainThreadcheck_item_code_index327_clbk CMainThreadcheck_item_code_index327_user(nullptr);
+        static info::CMainThreadcheck_loaded_data329_ptr CMainThreadcheck_loaded_data329_next(nullptr);
+        static info::CMainThreadcheck_loaded_data329_clbk CMainThreadcheck_loaded_data329_user(nullptr);
+        static info::CMainThreadcheck_min_max_guild_money331_ptr CMainThreadcheck_min_max_guild_money331_next(nullptr);
+        static info::CMainThreadcheck_min_max_guild_money331_clbk CMainThreadcheck_min_max_guild_money331_user(nullptr);
+        static info::CMainThreaddb_Add_PvpPoint333_ptr CMainThreaddb_Add_PvpPoint333_next(nullptr);
+        static info::CMainThreaddb_Add_PvpPoint333_clbk CMainThreaddb_Add_PvpPoint333_user(nullptr);
+        static info::CMainThreaddb_Delete_Avator335_ptr CMainThreaddb_Delete_Avator335_next(nullptr);
+        static info::CMainThreaddb_Delete_Avator335_clbk CMainThreaddb_Delete_Avator335_user(nullptr);
+        static info::CMainThreaddb_GM_GreetingMsg337_ptr CMainThreaddb_GM_GreetingMsg337_next(nullptr);
+        static info::CMainThreaddb_GM_GreetingMsg337_clbk CMainThreaddb_GM_GreetingMsg337_user(nullptr);
+        static info::CMainThreaddb_GUILD_GreetingMsg339_ptr CMainThreaddb_GUILD_GreetingMsg339_next(nullptr);
+        static info::CMainThreaddb_GUILD_GreetingMsg339_clbk CMainThreaddb_GUILD_GreetingMsg339_user(nullptr);
+        static info::CMainThreaddb_Insert_Avator341_ptr CMainThreaddb_Insert_Avator341_next(nullptr);
+        static info::CMainThreaddb_Insert_Avator341_clbk CMainThreaddb_Insert_Avator341_user(nullptr);
+        static info::CMainThreaddb_Insert_ChangeClass_AfterInitClass343_ptr CMainThreaddb_Insert_ChangeClass_AfterInitClass343_next(nullptr);
+        static info::CMainThreaddb_Insert_ChangeClass_AfterInitClass343_clbk CMainThreaddb_Insert_ChangeClass_AfterInitClass343_user(nullptr);
+        static info::CMainThreaddb_Insert_CharacSelect_Log345_ptr CMainThreaddb_Insert_CharacSelect_Log345_next(nullptr);
+        static info::CMainThreaddb_Insert_CharacSelect_Log345_clbk CMainThreaddb_Insert_CharacSelect_Log345_user(nullptr);
+        static info::CMainThreaddb_Insert_Economy_History347_ptr CMainThreaddb_Insert_Economy_History347_next(nullptr);
+        static info::CMainThreaddb_Insert_Economy_History347_clbk CMainThreaddb_Insert_Economy_History347_user(nullptr);
+        static info::CMainThreaddb_Insert_Item349_ptr CMainThreaddb_Insert_Item349_next(nullptr);
+        static info::CMainThreaddb_Insert_Item349_clbk CMainThreaddb_Insert_Item349_user(nullptr);
+        static info::CMainThreaddb_Insert_guild351_ptr CMainThreaddb_Insert_guild351_next(nullptr);
+        static info::CMainThreaddb_Insert_guild351_clbk CMainThreaddb_Insert_guild351_user(nullptr);
+        static info::CMainThreaddb_LoadGreetingMsg353_ptr CMainThreaddb_LoadGreetingMsg353_next(nullptr);
+        static info::CMainThreaddb_LoadGreetingMsg353_clbk CMainThreaddb_LoadGreetingMsg353_user(nullptr);
+        static info::CMainThreaddb_Load_Avator355_ptr CMainThreaddb_Load_Avator355_next(nullptr);
+        static info::CMainThreaddb_Load_Avator355_clbk CMainThreaddb_Load_Avator355_user(nullptr);
+        static info::CMainThreaddb_Load_Content357_ptr CMainThreaddb_Load_Content357_next(nullptr);
+        static info::CMainThreaddb_Load_Content357_clbk CMainThreaddb_Load_Content357_user(nullptr);
+        static info::CMainThreaddb_Load_PostStorage359_ptr CMainThreaddb_Load_PostStorage359_next(nullptr);
+        static info::CMainThreaddb_Load_PostStorage359_clbk CMainThreaddb_Load_PostStorage359_user(nullptr);
+        static info::CMainThreaddb_Load_ReturnPost361_ptr CMainThreaddb_Load_ReturnPost361_next(nullptr);
+        static info::CMainThreaddb_Load_ReturnPost361_clbk CMainThreaddb_Load_ReturnPost361_user(nullptr);
+        static info::CMainThreaddb_Log_AvatorLevel363_ptr CMainThreaddb_Log_AvatorLevel363_next(nullptr);
+        static info::CMainThreaddb_Log_AvatorLevel363_clbk CMainThreaddb_Log_AvatorLevel363_user(nullptr);
+        static info::CMainThreaddb_Log_UserNum365_ptr CMainThreaddb_Log_UserNum365_next(nullptr);
+        static info::CMainThreaddb_Log_UserNum365_clbk CMainThreaddb_Log_UserNum365_user(nullptr);
+        static info::CMainThreaddb_RACE_GreetingMsg367_ptr CMainThreaddb_RACE_GreetingMsg367_next(nullptr);
+        static info::CMainThreaddb_RACE_GreetingMsg367_clbk CMainThreaddb_RACE_GreetingMsg367_user(nullptr);
+        static info::CMainThreaddb_Reged_Avator369_ptr CMainThreaddb_Reged_Avator369_next(nullptr);
+        static info::CMainThreaddb_Reged_Avator369_clbk CMainThreaddb_Reged_Avator369_user(nullptr);
+        static info::CMainThreaddb_Select_Economy_History371_ptr CMainThreaddb_Select_Economy_History371_next(nullptr);
+        static info::CMainThreaddb_Select_Economy_History371_clbk CMainThreaddb_Select_Economy_History371_user(nullptr);
+        static info::CMainThreaddb_Update_Avator373_ptr CMainThreaddb_Update_Avator373_next(nullptr);
+        static info::CMainThreaddb_Update_Avator373_clbk CMainThreaddb_Update_Avator373_user(nullptr);
+        static info::CMainThreaddb_Update_PostStorage375_ptr CMainThreaddb_Update_PostStorage375_next(nullptr);
+        static info::CMainThreaddb_Update_PostStorage375_clbk CMainThreaddb_Update_PostStorage375_user(nullptr);
+        static info::CMainThreaddb_Update_PvpInfo377_ptr CMainThreaddb_Update_PvpInfo377_next(nullptr);
+        static info::CMainThreaddb_Update_PvpInfo377_clbk CMainThreaddb_Update_PvpInfo377_user(nullptr);
+        static info::CMainThreaddb_buy_emblem379_ptr CMainThreaddb_buy_emblem379_next(nullptr);
+        static info::CMainThreaddb_buy_emblem379_clbk CMainThreaddb_buy_emblem379_user(nullptr);
+        static info::CMainThreaddb_char_set_alive381_ptr CMainThreaddb_char_set_alive381_next(nullptr);
+        static info::CMainThreaddb_char_set_alive381_clbk CMainThreaddb_char_set_alive381_user(nullptr);
+        static info::CMainThreaddb_disjoint_guild383_ptr CMainThreaddb_disjoint_guild383_next(nullptr);
+        static info::CMainThreaddb_disjoint_guild383_clbk CMainThreaddb_disjoint_guild383_user(nullptr);
+        static info::CMainThreaddb_input_guild_money385_ptr CMainThreaddb_input_guild_money385_next(nullptr);
+        static info::CMainThreaddb_input_guild_money385_clbk CMainThreaddb_input_guild_money385_user(nullptr);
+        static info::CMainThreaddb_input_guild_money_atradetax387_ptr CMainThreaddb_input_guild_money_atradetax387_next(nullptr);
+        static info::CMainThreaddb_input_guild_money_atradetax387_clbk CMainThreaddb_input_guild_money_atradetax387_user(nullptr);
+        static info::CMainThreaddb_output_guild_money389_ptr CMainThreaddb_output_guild_money389_next(nullptr);
+        static info::CMainThreaddb_output_guild_money389_clbk CMainThreaddb_output_guild_money389_user(nullptr);
+        static info::CMainThreaddb_sendwebracebosssms391_ptr CMainThreaddb_sendwebracebosssms391_next(nullptr);
+        static info::CMainThreaddb_sendwebracebosssms391_clbk CMainThreaddb_sendwebracebosssms391_user(nullptr);
+        static info::CMainThreaddb_update_guildmaster393_ptr CMainThreaddb_update_guildmaster393_next(nullptr);
+        static info::CMainThreaddb_update_guildmaster393_clbk CMainThreaddb_update_guildmaster393_user(nullptr);
+        static info::CMainThreaddb_update_guildmember_add395_ptr CMainThreaddb_update_guildmember_add395_next(nullptr);
+        static info::CMainThreaddb_update_guildmember_add395_clbk CMainThreaddb_update_guildmember_add395_user(nullptr);
+        static info::CMainThreaddb_update_guildmember_del397_ptr CMainThreaddb_update_guildmember_del397_next(nullptr);
+        static info::CMainThreaddb_update_guildmember_del397_clbk CMainThreaddb_update_guildmember_del397_user(nullptr);
+        static info::CMainThreadgm_DisplayAll399_ptr CMainThreadgm_DisplayAll399_next(nullptr);
+        static info::CMainThreadgm_DisplayAll399_clbk CMainThreadgm_DisplayAll399_user(nullptr);
+        static info::CMainThreadgm_DisplaymodeChange401_ptr CMainThreadgm_DisplaymodeChange401_next(nullptr);
+        static info::CMainThreadgm_DisplaymodeChange401_clbk CMainThreadgm_DisplaymodeChange401_user(nullptr);
+        static info::CMainThreadgm_DungeonLoad403_ptr CMainThreadgm_DungeonLoad403_next(nullptr);
+        static info::CMainThreadgm_DungeonLoad403_clbk CMainThreadgm_DungeonLoad403_user(nullptr);
+        static info::CMainThreadgm_MainThreadControl405_ptr CMainThreadgm_MainThreadControl405_next(nullptr);
+        static info::CMainThreadgm_MainThreadControl405_clbk CMainThreadgm_MainThreadControl405_user(nullptr);
+        static info::CMainThreadgm_MapChange407_ptr CMainThreadgm_MapChange407_next(nullptr);
+        static info::CMainThreadgm_MapChange407_clbk CMainThreadgm_MapChange407_user(nullptr);
+        static info::CMainThreadgm_MonsterInit409_ptr CMainThreadgm_MonsterInit409_next(nullptr);
+        static info::CMainThreadgm_MonsterInit409_clbk CMainThreadgm_MonsterInit409_user(nullptr);
+        static info::CMainThreadgm_ObjectSelect411_ptr CMainThreadgm_ObjectSelect411_next(nullptr);
+        static info::CMainThreadgm_ObjectSelect411_clbk CMainThreadgm_ObjectSelect411_user(nullptr);
+        static info::CMainThreadgm_PreCloseAnn413_ptr CMainThreadgm_PreCloseAnn413_next(nullptr);
+        static info::CMainThreadgm_PreCloseAnn413_clbk CMainThreadgm_PreCloseAnn413_user(nullptr);
+        static info::CMainThreadgm_ServerClose415_ptr CMainThreadgm_ServerClose415_next(nullptr);
+        static info::CMainThreadgm_ServerClose415_clbk CMainThreadgm_ServerClose415_user(nullptr);
+        static info::CMainThreadgm_UpdateMap417_ptr CMainThreadgm_UpdateMap417_next(nullptr);
+        static info::CMainThreadgm_UpdateMap417_clbk CMainThreadgm_UpdateMap417_user(nullptr);
+        static info::CMainThreadgm_UpdateObject419_ptr CMainThreadgm_UpdateObject419_next(nullptr);
+        static info::CMainThreadgm_UpdateObject419_clbk CMainThreadgm_UpdateObject419_user(nullptr);
+        static info::CMainThreadgm_UpdateServer421_ptr CMainThreadgm_UpdateServer421_next(nullptr);
+        static info::CMainThreadgm_UpdateServer421_clbk CMainThreadgm_UpdateServer421_user(nullptr);
+        static info::CMainThreadgm_UserExit423_ptr CMainThreadgm_UserExit423_next(nullptr);
+        static info::CMainThreadgm_UserExit423_clbk CMainThreadgm_UserExit423_user(nullptr);
+        static info::CMainThreadpc_AllUserGMNoticeInform425_ptr CMainThreadpc_AllUserGMNoticeInform425_next(nullptr);
+        static info::CMainThreadpc_AllUserGMNoticeInform425_clbk CMainThreadpc_AllUserGMNoticeInform425_user(nullptr);
+        static info::CMainThreadpc_AllUserKickInform427_ptr CMainThreadpc_AllUserKickInform427_next(nullptr);
+        static info::CMainThreadpc_AllUserKickInform427_clbk CMainThreadpc_AllUserKickInform427_user(nullptr);
+        static info::CMainThreadpc_AllUserMsgInform429_ptr CMainThreadpc_AllUserMsgInform429_next(nullptr);
+        static info::CMainThreadpc_AllUserMsgInform429_clbk CMainThreadpc_AllUserMsgInform429_user(nullptr);
+        static info::CMainThreadpc_AlterWorldService431_ptr CMainThreadpc_AlterWorldService431_next(nullptr);
+        static info::CMainThreadpc_AlterWorldService431_clbk CMainThreadpc_AlterWorldService431_user(nullptr);
+        static info::CMainThreadpc_CashDBInfoRecvResult433_ptr CMainThreadpc_CashDBInfoRecvResult433_next(nullptr);
+        static info::CMainThreadpc_CashDBInfoRecvResult433_clbk CMainThreadpc_CashDBInfoRecvResult433_user(nullptr);
+        static info::CMainThreadpc_ChatLockCommand435_ptr CMainThreadpc_ChatLockCommand435_next(nullptr);
+        static info::CMainThreadpc_ChatLockCommand435_clbk CMainThreadpc_ChatLockCommand435_user(nullptr);
+        static info::CMainThreadpc_EnterWorldResult437_ptr CMainThreadpc_EnterWorldResult437_next(nullptr);
+        static info::CMainThreadpc_EnterWorldResult437_clbk CMainThreadpc_EnterWorldResult437_user(nullptr);
+        static info::CMainThreadpc_ForceCloseCommand439_ptr CMainThreadpc_ForceCloseCommand439_next(nullptr);
+        static info::CMainThreadpc_ForceCloseCommand439_clbk CMainThreadpc_ForceCloseCommand439_user(nullptr);
+        static info::CMainThreadpc_OpenWorldFailureResult441_ptr CMainThreadpc_OpenWorldFailureResult441_next(nullptr);
+        static info::CMainThreadpc_OpenWorldFailureResult441_clbk CMainThreadpc_OpenWorldFailureResult441_user(nullptr);
+        static info::CMainThreadpc_OpenWorldSuccessResult443_ptr CMainThreadpc_OpenWorldSuccessResult443_next(nullptr);
+        static info::CMainThreadpc_OpenWorldSuccessResult443_clbk CMainThreadpc_OpenWorldSuccessResult443_user(nullptr);
+        static info::CMainThreadpc_SetMainGreetingMsg445_ptr CMainThreadpc_SetMainGreetingMsg445_next(nullptr);
+        static info::CMainThreadpc_SetMainGreetingMsg445_clbk CMainThreadpc_SetMainGreetingMsg445_user(nullptr);
+        static info::CMainThreadpc_SetRaceGreetingMsg447_ptr CMainThreadpc_SetRaceGreetingMsg447_next(nullptr);
+        static info::CMainThreadpc_SetRaceGreetingMsg447_clbk CMainThreadpc_SetRaceGreetingMsg447_user(nullptr);
+        static info::CMainThreadpc_TaiwanBillingUserCertify449_ptr CMainThreadpc_TaiwanBillingUserCertify449_next(nullptr);
+        static info::CMainThreadpc_TaiwanBillingUserCertify449_clbk CMainThreadpc_TaiwanBillingUserCertify449_user(nullptr);
+        static info::CMainThreadpc_TransIPKeyInform451_ptr CMainThreadpc_TransIPKeyInform451_next(nullptr);
+        static info::CMainThreadpc_TransIPKeyInform451_clbk CMainThreadpc_TransIPKeyInform451_user(nullptr);
+        static info::CMainThreadpc_UILockInitResult453_ptr CMainThreadpc_UILockInitResult453_next(nullptr);
+        static info::CMainThreadpc_UILockInitResult453_clbk CMainThreadpc_UILockInitResult453_user(nullptr);
+        static info::CMainThreadpc_UILockUpdateResult455_ptr CMainThreadpc_UILockUpdateResult455_next(nullptr);
+        static info::CMainThreadpc_UILockUpdateResult455_clbk CMainThreadpc_UILockUpdateResult455_user(nullptr);
+        static info::CMainThreadpc_UserChatBlockResult457_ptr CMainThreadpc_UserChatBlockResult457_next(nullptr);
+        static info::CMainThreadpc_UserChatBlockResult457_clbk CMainThreadpc_UserChatBlockResult457_user(nullptr);
+        static info::CMainThreaddtor_CMainThread459_ptr CMainThreaddtor_CMainThread459_next(nullptr);
+        static info::CMainThreaddtor_CMainThread459_clbk CMainThreaddtor_CMainThread459_user(nullptr);
         
-        void CMainThreadAccountServerLogin2_wrapper(struct CMainThread* _this)
+        static void CMainThreadAccountServerLogin2_wrapper(struct CMainThread* _this)
         {
            CMainThreadAccountServerLogin2_user(_this, CMainThreadAccountServerLogin2_next);
         };
-        void CMainThreadAddGuildBattleSchdule4_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadAddGuildBattleSchdule4_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadAddGuildBattleSchdule4_user(_this, pData, CMainThreadAddGuildBattleSchdule4_next);
         };
-        void CMainThreadAddPassablePacket6_wrapper(struct CMainThread* _this)
+        static void CMainThreadAddPassablePacket6_wrapper(struct CMainThread* _this)
         {
            CMainThreadAddPassablePacket6_user(_this, CMainThreadAddPassablePacket6_next);
         };
-        void CMainThreadAlive_Char_Complete8_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadAlive_Char_Complete8_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadAlive_Char_Complete8_user(_this, pData, CMainThreadAlive_Char_Complete8_next);
         };
-        void CMainThreadctor_CMainThread10_wrapper(struct CMainThread* _this)
+        static void CMainThreadctor_CMainThread10_wrapper(struct CMainThread* _this)
         {
            CMainThreadctor_CMainThread10_user(_this, CMainThreadctor_CMainThread10_next);
         };
-        bool CMainThreadCashDBInit12_wrapper(struct CMainThread* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
+        static bool CMainThreadCashDBInit12_wrapper(struct CMainThread* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
         {
            return CMainThreadCashDBInit12_user(_this, szIP, szDBName, szAccount, szPassword, dwPort, CMainThreadCashDBInit12_next);
         };
-        void CMainThreadCheckAccountLineState14_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckAccountLineState14_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckAccountLineState14_user(_this, CMainThreadCheckAccountLineState14_next);
         };
-        void CMainThreadCheckAvatorState16_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckAvatorState16_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckAvatorState16_user(_this, CMainThreadCheckAvatorState16_next);
         };
-        void CMainThreadCheckConnNumLog18_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckConnNumLog18_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckConnNumLog18_user(_this, CMainThreadCheckConnNumLog18_next);
         };
-        void CMainThreadCheckDayChangedPvpPointClear20_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckDayChangedPvpPointClear20_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckDayChangedPvpPointClear20_user(_this, CMainThreadCheckDayChangedPvpPointClear20_next);
         };
-        bool CMainThreadCheckDefine22_wrapper(struct CMainThread* _this)
+        static bool CMainThreadCheckDefine22_wrapper(struct CMainThread* _this)
         {
            return CMainThreadCheckDefine22_user(_this, CMainThreadCheckDefine22_next);
         };
-        void CMainThreadCheckForceClose24_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckForceClose24_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckForceClose24_user(_this, CMainThreadCheckForceClose24_next);
         };
-        void CMainThreadCheckRadarItemDelay26_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckRadarItemDelay26_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckRadarItemDelay26_user(_this, CMainThreadCheckRadarItemDelay26_next);
         };
-        void CMainThreadCheckServerRateINIFile28_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckServerRateINIFile28_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckServerRateINIFile28_user(_this, CMainThreadCheckServerRateINIFile28_next);
         };
-        void CMainThreadCheckServiceableTime30_wrapper(struct CMainThread* _this)
+        static void CMainThreadCheckServiceableTime30_wrapper(struct CMainThread* _this)
         {
            CMainThreadCheckServiceableTime30_user(_this, CMainThreadCheckServiceableTime30_next);
         };
-        void CMainThreadCompleteLoadGuildBattleTotalRecord32_wrapper(struct CMainThread* _this, char byRet, char* pLoadData)
+        static void CMainThreadCompleteLoadGuildBattleTotalRecord32_wrapper(struct CMainThread* _this, char byRet, char* pLoadData)
         {
            CMainThreadCompleteLoadGuildBattleTotalRecord32_user(_this, byRet, pLoadData, CMainThreadCompleteLoadGuildBattleTotalRecord32_next);
         };
-        void CMainThreadCompleteUpdatePlayerVoteInfo34_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadCompleteUpdatePlayerVoteInfo34_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadCompleteUpdatePlayerVoteInfo34_user(_this, pData, CMainThreadCompleteUpdatePlayerVoteInfo34_next);
         };
-        void CMainThreadCompleteUpdateServerToken36_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadCompleteUpdateServerToken36_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadCompleteUpdateServerToken36_user(_this, pData, CMainThreadCompleteUpdateServerToken36_next);
         };
-        void CMainThreadCompleteUpdateSetLimitRun38_wrapper(struct CMainThread* _this, char byRet, char* pData)
+        static void CMainThreadCompleteUpdateSetLimitRun38_wrapper(struct CMainThread* _this, char byRet, char* pData)
         {
            CMainThreadCompleteUpdateSetLimitRun38_user(_this, byRet, pData, CMainThreadCompleteUpdateSetLimitRun38_next);
         };
-        void CMainThreadCompleteUpdateVoteAvailable40_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadCompleteUpdateVoteAvailable40_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadCompleteUpdateVoteAvailable40_user(_this, pData, CMainThreadCompleteUpdateVoteAvailable40_next);
         };
-        void CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_wrapper(struct CMainThread* _this, char* pSheet)
+        static void CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_wrapper(struct CMainThread* _this, char* pSheet)
         {
            CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_user(_this, pSheet, CMainThreadComplete_Select_RegeAvator_For_Lobby_Logout42_next);
         };
-        void CMainThreadComplete_db_Update_Data_For_Post_Send44_wrapper(struct CMainThread* _this, char* pSheet)
+        static void CMainThreadComplete_db_Update_Data_For_Post_Send44_wrapper(struct CMainThread* _this, char* pSheet)
         {
            CMainThreadComplete_db_Update_Data_For_Post_Send44_user(_this, pSheet, CMainThreadComplete_db_Update_Data_For_Post_Send44_next);
         };
-        void CMainThreadComplete_db_Update_Data_For_Trade46_wrapper(struct CMainThread* _this, char* pSheet)
+        static void CMainThreadComplete_db_Update_Data_For_Trade46_wrapper(struct CMainThread* _this, char* pSheet)
         {
            CMainThreadComplete_db_Update_Data_For_Trade46_user(_this, pSheet, CMainThreadComplete_db_Update_Data_For_Trade46_next);
         };
-        void CMainThreadContUserSaveJobCheck48_wrapper(struct CMainThread* _this)
+        static void CMainThreadContUserSaveJobCheck48_wrapper(struct CMainThread* _this)
         {
            CMainThreadContUserSaveJobCheck48_user(_this, CMainThreadContUserSaveJobCheck48_next);
         };
-        void CMainThreadCont_UserSave_Complete50_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadCont_UserSave_Complete50_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadCont_UserSave_Complete50_user(_this, pData, CMainThreadCont_UserSave_Complete50_next);
         };
-        unsigned int CMainThreadCreateDataResetToken52_wrapper(struct CMainThread* _this, struct _SYSTEMTIME* tm)
+        static unsigned int CMainThreadCreateDataResetToken52_wrapper(struct CMainThread* _this, struct _SYSTEMTIME* tm)
         {
            return CMainThreadCreateDataResetToken52_user(_this, tm, CMainThreadCreateDataResetToken52_next);
         };
-        void CMainThreadCreateSelectCharacterLogTable54_wrapper(struct CMainThread* _this, char byMonth)
+        static void CMainThreadCreateSelectCharacterLogTable54_wrapper(struct CMainThread* _this, char byMonth)
         {
            CMainThreadCreateSelectCharacterLogTable54_user(_this, byMonth, CMainThreadCreateSelectCharacterLogTable54_next);
         };
-        void CMainThreadDQSCompleteProcess56_wrapper(struct CMainThread* _this)
+        static void CMainThreadDQSCompleteProcess56_wrapper(struct CMainThread* _this)
         {
            CMainThreadDQSCompleteProcess56_user(_this, CMainThreadDQSCompleteProcess56_next);
         };
-        void CMainThreadDQSThread58_wrapper(void* pv)
+        static void CMainThreadDQSThread58_wrapper(void* pv)
         {
            CMainThreadDQSThread58_user(pv, CMainThreadDQSThread58_next);
         };
-        bool CMainThreadDataFileInit60_wrapper(struct CMainThread* _this)
+        static bool CMainThreadDataFileInit60_wrapper(struct CMainThread* _this)
         {
            return CMainThreadDataFileInit60_user(_this, CMainThreadDataFileInit60_next);
         };
-        bool CMainThreadDatabaseInit62_wrapper(struct CMainThread* _this, char* pszDBName, char* pszDBIP)
+        static bool CMainThreadDatabaseInit62_wrapper(struct CMainThread* _this, char* pszDBName, char* pszDBIP)
         {
            return CMainThreadDatabaseInit62_user(_this, pszDBName, pszDBIP, CMainThreadDatabaseInit62_next);
         };
-        void CMainThreadDelete_Avator_Complete64_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadDelete_Avator_Complete64_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadDelete_Avator_Complete64_user(_this, pData, CMainThreadDelete_Avator_Complete64_next);
         };
-        void CMainThreadEndServer66_wrapper(struct CMainThread* _this)
+        static void CMainThreadEndServer66_wrapper(struct CMainThread* _this)
         {
            CMainThreadEndServer66_user(_this, CMainThreadEndServer66_next);
         };
-        void CMainThreadForceCloseUserInTiming68_wrapper(struct CMainThread* _this)
+        static void CMainThreadForceCloseUserInTiming68_wrapper(struct CMainThread* _this)
         {
            CMainThreadForceCloseUserInTiming68_user(_this, CMainThreadForceCloseUserInTiming68_next);
         };
-        struct CGameObject* CMainThreadGetChar70_wrapper(struct CMainThread* _this, char* pszCharName)
+        static struct CGameObject* CMainThreadGetChar70_wrapper(struct CMainThread* _this, char* pszCharName)
         {
            return CMainThreadGetChar70_user(_this, pszCharName, CMainThreadGetChar70_next);
         };
-        struct CGameObject* CMainThreadGetCharW72_wrapper(struct CMainThread* _this, char* wpszCharName)
+        static struct CGameObject* CMainThreadGetCharW72_wrapper(struct CMainThread* _this, char* wpszCharName)
         {
            return CMainThreadGetCharW72_user(_this, wpszCharName, CMainThreadGetCharW72_next);
         };
-        struct CGameObject* CMainThreadGetObjectA74_wrapper(struct CMainThread* _this, struct _object_id* pObjID)
+        static struct CGameObject* CMainThreadGetObjectA74_wrapper(struct CMainThread* _this, struct _object_id* pObjID)
         {
            return CMainThreadGetObjectA74_user(_this, pObjID, CMainThreadGetObjectA74_next);
         };
-        struct CGameObject* CMainThreadGetObjectA76_wrapper(struct CMainThread* _this, int kind, int id, int index)
+        static struct CGameObject* CMainThreadGetObjectA76_wrapper(struct CMainThread* _this, int kind, int id, int index)
         {
            return CMainThreadGetObjectA76_user(_this, kind, id, index, CMainThreadGetObjectA76_next);
         };
-        struct CGameObject* CMainThreadGetObjectExpand78_wrapper(struct CMainThread* _this, struct _object_id* pObjID, char* szCharName, uint16_t wSearchIndex)
+        static struct CGameObject* CMainThreadGetObjectExpand78_wrapper(struct CMainThread* _this, struct _object_id* pObjID, char* szCharName, uint16_t wSearchIndex)
         {
            return CMainThreadGetObjectExpand78_user(_this, pObjID, szCharName, wSearchIndex, CMainThreadGetObjectExpand78_next);
         };
-        void CMainThreadGetTommorrowStr80_wrapper(struct CMainThread* _this, char* szTommorrow)
+        static void CMainThreadGetTommorrowStr80_wrapper(struct CMainThread* _this, char* szTommorrow)
         {
            CMainThreadGetTommorrowStr80_user(_this, szTommorrow, CMainThreadGetTommorrowStr80_next);
         };
-        void CMainThreadInAtradTaxMoney82_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* p)
+        static void CMainThreadInAtradTaxMoney82_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* p)
         {
            CMainThreadInAtradTaxMoney82_user(_this, p, CMainThreadInAtradTaxMoney82_next);
         };
-        void CMainThreadInGuildbattleCost84_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadInGuildbattleCost84_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadInGuildbattleCost84_user(_this, pData, CMainThreadInGuildbattleCost84_next);
         };
-        void CMainThreadInGuildbattleRewardMoney86_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadInGuildbattleRewardMoney86_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadInGuildbattleRewardMoney86_user(_this, pData, CMainThreadInGuildbattleRewardMoney86_next);
         };
-        bool CMainThreadInit88_wrapper(struct CMainThread* _this)
+        static bool CMainThreadInit88_wrapper(struct CMainThread* _this)
         {
            return CMainThreadInit88_user(_this, CMainThreadInit88_next);
         };
-        void CMainThreadInsert_Avator_Complete90_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadInsert_Avator_Complete90_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadInsert_Avator_Complete90_user(_this, pData, CMainThreadInsert_Avator_Complete90_next);
         };
-        bool CMainThreadIsExcuteService92_wrapper(struct CMainThread* _this)
+        static bool CMainThreadIsExcuteService92_wrapper(struct CMainThread* _this)
         {
            return CMainThreadIsExcuteService92_user(_this, CMainThreadIsExcuteService92_next);
         };
-        bool CMainThreadIsReleaseServiceMode94_wrapper(struct CMainThread* _this)
+        static bool CMainThreadIsReleaseServiceMode94_wrapper(struct CMainThread* _this)
         {
            return CMainThreadIsReleaseServiceMode94_user(_this, CMainThreadIsReleaseServiceMode94_next);
         };
-        bool CMainThreadIsTestServer96_wrapper(struct CMainThread* _this)
+        static bool CMainThreadIsTestServer96_wrapper(struct CMainThread* _this)
         {
            return CMainThreadIsTestServer96_user(_this, CMainThreadIsTestServer96_next);
         };
-        int CMainThreadLoadINI98_wrapper(struct CMainThread* _this)
+        static int CMainThreadLoadINI98_wrapper(struct CMainThread* _this)
         {
            return CMainThreadLoadINI98_user(_this, CMainThreadLoadINI98_next);
         };
-        void CMainThreadLoadItemConsumeINI100_wrapper(struct CMainThread* _this)
+        static void CMainThreadLoadItemConsumeINI100_wrapper(struct CMainThread* _this)
         {
            CMainThreadLoadItemConsumeINI100_user(_this, CMainThreadLoadItemConsumeINI100_next);
         };
-        bool CMainThreadLoadLimitInfo102_wrapper(struct CMainThread* _this)
+        static bool CMainThreadLoadLimitInfo102_wrapper(struct CMainThread* _this)
         {
            return CMainThreadLoadLimitInfo102_user(_this, CMainThreadLoadLimitInfo102_next);
         };
-        bool CMainThreadLoadServerRateINIFile104_wrapper(struct CMainThread* _this)
+        static bool CMainThreadLoadServerRateINIFile104_wrapper(struct CMainThread* _this)
         {
            return CMainThreadLoadServerRateINIFile104_user(_this, CMainThreadLoadServerRateINIFile104_next);
         };
-        int CMainThreadLoadWorldInfoINI106_wrapper(struct CMainThread* _this)
+        static int CMainThreadLoadWorldInfoINI106_wrapper(struct CMainThread* _this)
         {
            return CMainThreadLoadWorldInfoINI106_user(_this, CMainThreadLoadWorldInfoINI106_next);
         };
-        int CMainThreadLoadWorldSystemINI108_wrapper(struct CMainThread* _this)
+        static int CMainThreadLoadWorldSystemINI108_wrapper(struct CMainThread* _this)
         {
            return CMainThreadLoadWorldSystemINI108_user(_this, CMainThreadLoadWorldSystemINI108_next);
         };
-        void CMainThreadLoad_Content_Complete110_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadLoad_Content_Complete110_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadLoad_Content_Complete110_user(_this, pData, CMainThreadLoad_Content_Complete110_next);
         };
-        void CMainThreadLoad_PostStorage_Complete112_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadLoad_PostStorage_Complete112_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadLoad_PostStorage_Complete112_user(_this, pData, CMainThreadLoad_PostStorage_Complete112_next);
         };
-        void CMainThreadLoad_ReturnPost_Complete114_wrapper(struct CMainThread* _this, char* pData)
+        static void CMainThreadLoad_ReturnPost_Complete114_wrapper(struct CMainThread* _this, char* pData)
         {
            CMainThreadLoad_ReturnPost_Complete114_user(_this, pData, CMainThreadLoad_ReturnPost_Complete114_next);
         };
-        void CMainThreadLobby_Account_Complete116_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadLobby_Account_Complete116_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadLobby_Account_Complete116_user(_this, pData, CMainThreadLobby_Account_Complete116_next);
         };
-        void CMainThreadLogout_Account_Complete118_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadLogout_Account_Complete118_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadLogout_Account_Complete118_user(_this, pData, CMainThreadLogout_Account_Complete118_next);
         };
-        void CMainThreadMakeSystemTower120_wrapper(struct CMainThread* _this)
+        static void CMainThreadMakeSystemTower120_wrapper(struct CMainThread* _this)
         {
            CMainThreadMakeSystemTower120_user(_this, CMainThreadMakeSystemTower120_next);
         };
-        void CMainThreadManageClientLimitRunRequest122_wrapper(struct CMainThread* _this, char* pBuf)
+        static void CMainThreadManageClientLimitRunRequest122_wrapper(struct CMainThread* _this, char* pBuf)
         {
            CMainThreadManageClientLimitRunRequest122_user(_this, pBuf, CMainThreadManageClientLimitRunRequest122_next);
         };
-        bool CMainThreadNetworkInit124_wrapper(struct CMainThread* _this)
+        static bool CMainThreadNetworkInit124_wrapper(struct CMainThread* _this)
         {
            return CMainThreadNetworkInit124_user(_this, CMainThreadNetworkInit124_next);
         };
-        bool CMainThreadObjectInit126_wrapper(struct CMainThread* _this)
+        static bool CMainThreadObjectInit126_wrapper(struct CMainThread* _this)
         {
            return CMainThreadObjectInit126_user(_this, CMainThreadObjectInit126_next);
         };
-        void CMainThreadOnDQSRun128_wrapper(struct CMainThread* _this)
+        static void CMainThreadOnDQSRun128_wrapper(struct CMainThread* _this)
         {
            CMainThreadOnDQSRun128_user(_this, CMainThreadOnDQSRun128_next);
         };
-        void CMainThreadOnRun130_wrapper(struct CMainThread* _this)
+        static void CMainThreadOnRun130_wrapper(struct CMainThread* _this)
         {
            CMainThreadOnRun130_user(_this, CMainThreadOnRun130_next);
         };
-        void CMainThreadOutDestGuildbattleCost132_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadOutDestGuildbattleCost132_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadOutDestGuildbattleCost132_user(_this, pData, CMainThreadOutDestGuildbattleCost132_next);
         };
-        void CMainThreadOutSrcGuildbattleCost134_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadOutSrcGuildbattleCost134_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadOutSrcGuildbattleCost134_user(_this, pData, CMainThreadOutSrcGuildbattleCost134_next);
         };
-        void CMainThreadPingToAccount136_wrapper(struct CMainThread* _this)
+        static void CMainThreadPingToAccount136_wrapper(struct CMainThread* _this)
         {
            CMainThreadPingToAccount136_user(_this, CMainThreadPingToAccount136_next);
         };
-        struct _DB_QRY_SYN_DATA* CMainThreadPushDQSData138_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _CLID* pidWorld, char byQryCase, char* pQryData, int nSize)
+        static struct _DB_QRY_SYN_DATA* CMainThreadPushDQSData138_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _CLID* pidWorld, char byQryCase, char* pQryData, int nSize)
         {
            return CMainThreadPushDQSData138_user(_this, dwAccountSerial, pidWorld, byQryCase, pQryData, nSize, CMainThreadPushDQSData138_next);
         };
-        void CMainThreadPushResetServerToken140_wrapper(struct CMainThread* _this)
+        static void CMainThreadPushResetServerToken140_wrapper(struct CMainThread* _this)
         {
            CMainThreadPushResetServerToken140_user(_this, CMainThreadPushResetServerToken140_next);
         };
-        bool CMainThreadPush_ChargeItem142_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwK, unsigned int dwD, unsigned int dwU, char byType)
+        static bool CMainThreadPush_ChargeItem142_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwK, unsigned int dwD, unsigned int dwU, char byType)
         {
            return CMainThreadPush_ChargeItem142_user(_this, dwSerial, dwK, dwD, dwU, byType, CMainThreadPush_ChargeItem142_next);
         };
-        void CMainThreadQryCaseAddpvppoint144_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadQryCaseAddpvppoint144_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadQryCaseAddpvppoint144_user(_this, pData, CMainThreadQryCaseAddpvppoint144_next);
         };
-        void CMainThreadReged_Avator_Complete146_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadReged_Avator_Complete146_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadReged_Avator_Complete146_user(_this, pData, CMainThreadReged_Avator_Complete146_next);
         };
-        void CMainThreadRelease148_wrapper(struct CMainThread* _this)
+        static void CMainThreadRelease148_wrapper(struct CMainThread* _this)
         {
            CMainThreadRelease148_user(_this, CMainThreadRelease148_next);
         };
-        void CMainThreadRuleThread150_wrapper(void* pv)
+        static void CMainThreadRuleThread150_wrapper(void* pv)
         {
            CMainThreadRuleThread150_user(pv, CMainThreadRuleThread150_next);
         };
-        void CMainThreadSelect_Avator_Complete152_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadSelect_Avator_Complete152_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadSelect_Avator_Complete152_user(_this, pData, CMainThreadSelect_Avator_Complete152_next);
         };
-        void CMainThreadSendWebRaceBossSMS154_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadSendWebRaceBossSMS154_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadSendWebRaceBossSMS154_user(_this, pData, CMainThreadSendWebRaceBossSMS154_next);
         };
-        void CMainThreadSerivceForceSet156_wrapper(struct CMainThread* _this, bool bService)
+        static void CMainThreadSerivceForceSet156_wrapper(struct CMainThread* _this, bool bService)
         {
            CMainThreadSerivceForceSet156_user(_this, bService, CMainThreadSerivceForceSet156_next);
         };
-        void CMainThreadSerivceSelfStart158_wrapper(struct CMainThread* _this)
+        static void CMainThreadSerivceSelfStart158_wrapper(struct CMainThread* _this)
         {
            CMainThreadSerivceSelfStart158_user(_this, CMainThreadSerivceSelfStart158_next);
         };
-        void CMainThreadSerivceSelfStop160_wrapper(struct CMainThread* _this)
+        static void CMainThreadSerivceSelfStop160_wrapper(struct CMainThread* _this)
         {
            CMainThreadSerivceSelfStop160_user(_this, CMainThreadSerivceSelfStop160_next);
         };
-        void CMainThreadServerStateMsgGotoWebAgent162_wrapper(struct CMainThread* _this)
+        static void CMainThreadServerStateMsgGotoWebAgent162_wrapper(struct CMainThread* _this)
         {
            CMainThreadServerStateMsgGotoWebAgent162_user(_this, CMainThreadServerStateMsgGotoWebAgent162_next);
         };
-        bool CMainThreadSetGlobalDataName164_wrapper(struct CMainThread* _this)
+        static bool CMainThreadSetGlobalDataName164_wrapper(struct CMainThread* _this)
         {
            return CMainThreadSetGlobalDataName164_user(_this, CMainThreadSetGlobalDataName164_next);
         };
-        void CMainThreadSetServerRate166_wrapper(struct CMainThread* _this)
+        static void CMainThreadSetServerRate166_wrapper(struct CMainThread* _this)
         {
            CMainThreadSetServerRate166_user(_this, CMainThreadSetServerRate166_next);
         };
-        void CMainThreadUpdateGuildBattleDrawRankInfo168_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadUpdateGuildBattleDrawRankInfo168_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadUpdateGuildBattleDrawRankInfo168_user(_this, pData, CMainThreadUpdateGuildBattleDrawRankInfo168_next);
         };
-        void CMainThreadUpdateGuildBattleWinLoseRankInfo170_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadUpdateGuildBattleWinLoseRankInfo170_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadUpdateGuildBattleWinLoseRankInfo170_user(_this, pData, CMainThreadUpdateGuildBattleWinLoseRankInfo170_next);
         };
-        void CMainThreadUpdateLoadGuildBattleRank172_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadUpdateLoadGuildBattleRank172_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadUpdateLoadGuildBattleRank172_user(_this, pData, CMainThreadUpdateLoadGuildBattleRank172_next);
         };
-        void CMainThreadUpdateReservedGuildBattleSchedule174_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
+        static void CMainThreadUpdateReservedGuildBattleSchedule174_wrapper(struct CMainThread* _this, struct _DB_QRY_SYN_DATA* pData)
         {
            CMainThreadUpdateReservedGuildBattleSchedule174_user(_this, pData, CMainThreadUpdateReservedGuildBattleSchedule174_next);
         };
-        bool CMainThreadValidMacAddress176_wrapper(struct CMainThread* _this)
+        static bool CMainThreadValidMacAddress176_wrapper(struct CMainThread* _this)
         {
            return CMainThreadValidMacAddress176_user(_this, CMainThreadValidMacAddress176_next);
         };
-        bool CMainThread_CheckGuildCheckSum178_wrapper(struct CMainThread* _this, unsigned int dwSerial, char* wszGuildName, long double* dDalant, long double* dGold)
+        static bool CMainThread_CheckGuildCheckSum178_wrapper(struct CMainThread* _this, unsigned int dwSerial, char* wszGuildName, long double* dDalant, long double* dGold)
         {
            return CMainThread_CheckGuildCheckSum178_user(_this, dwSerial, wszGuildName, dDalant, dGold, CMainThread_CheckGuildCheckSum178_next);
         };
-        bool CMainThread_CheckTotalSales180_wrapper(struct CMainThread* _this)
+        static bool CMainThread_CheckTotalSales180_wrapper(struct CMainThread* _this)
         {
            return CMainThread_CheckTotalSales180_user(_this, CMainThread_CheckTotalSales180_next);
         };
-        bool CMainThread_GameDataBaseInit182_wrapper(struct CMainThread* _this)
+        static bool CMainThread_GameDataBaseInit182_wrapper(struct CMainThread* _this)
         {
            return CMainThread_GameDataBaseInit182_user(_this, CMainThread_GameDataBaseInit182_next);
         };
-        char CMainThread_db_Check_NpcData184_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pAvatorData)
+        static char CMainThread_db_Check_NpcData184_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pAvatorData)
         {
            return CMainThread_db_Check_NpcData184_user(_this, dwSerial, pAvatorData, CMainThread_db_Check_NpcData184_next);
         };
-        char CMainThread_db_GuildRoom_Insert186_wrapper(struct CMainThread* _this, struct _qry_case_guildroom_insert* pSheet)
+        static char CMainThread_db_GuildRoom_Insert186_wrapper(struct CMainThread* _this, struct _qry_case_guildroom_insert* pSheet)
         {
            return CMainThread_db_GuildRoom_Insert186_user(_this, pSheet, CMainThread_db_GuildRoom_Insert186_next);
         };
-        bool CMainThread_db_GuildRoom_Update188_wrapper(struct CMainThread* _this, struct _qry_case_guildroom_update* pSheet)
+        static bool CMainThread_db_GuildRoom_Update188_wrapper(struct CMainThread* _this, struct _qry_case_guildroom_update* pSheet)
         {
            return CMainThread_db_GuildRoom_Update188_user(_this, pSheet, CMainThread_db_GuildRoom_Update188_next);
         };
-        char CMainThread_db_Load_Base190_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
+        static char CMainThread_db_Load_Base190_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
         {
            return CMainThread_db_Load_Base190_user(_this, dwSerial, pCon, CMainThread_db_Load_Base190_next);
         };
-        void CMainThread_db_Load_BattleTournamentInfo192_wrapper(struct CMainThread* _this)
+        static void CMainThread_db_Load_BattleTournamentInfo192_wrapper(struct CMainThread* _this)
         {
            CMainThread_db_Load_BattleTournamentInfo192_user(_this, CMainThread_db_Load_BattleTournamentInfo192_next);
         };
-        char CMainThread_db_Load_Buddy194_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _BUDDY_DB_BASE* pBuddy)
+        static char CMainThread_db_Load_Buddy194_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _BUDDY_DB_BASE* pBuddy)
         {
            return CMainThread_db_Load_Buddy194_user(_this, dwSerial, pBuddy, CMainThread_db_Load_Buddy194_next);
         };
-        char CMainThread_db_Load_Cash_LimSale196_wrapper(struct CMainThread* _this, struct qry_case_cash_limsale* pDbLimitedSale)
+        static char CMainThread_db_Load_Cash_LimSale196_wrapper(struct CMainThread* _this, struct qry_case_cash_limsale* pDbLimitedSale)
         {
            return CMainThread_db_Load_Cash_LimSale196_user(_this, pDbLimitedSale, CMainThread_db_Load_Cash_LimSale196_next);
         };
-        char CMainThread_db_Load_CryMsg198_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _CRYMSG_DB_BASE* pBossCry)
+        static char CMainThread_db_Load_CryMsg198_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _CRYMSG_DB_BASE* pBossCry)
         {
            return CMainThread_db_Load_CryMsg198_user(_this, dwSerial, pBossCry, CMainThread_db_Load_CryMsg198_next);
         };
-        char CMainThread_db_Load_General200_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode, struct _AVATOR_DATA* pCon)
+        static char CMainThread_db_Load_General200_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode, struct _AVATOR_DATA* pCon)
         {
            return CMainThread_db_Load_General200_user(_this, dwSerial, byRaceCode, pCon, CMainThread_db_Load_General200_next);
         };
-        char CMainThread_db_Load_GoldBoxItem202_wrapper(struct CMainThread* _this, struct qry_case_select_golden_box_item* pDbGoldenboxitem, int* pnDBSerial)
+        static char CMainThread_db_Load_GoldBoxItem202_wrapper(struct CMainThread* _this, struct qry_case_select_golden_box_item* pDbGoldenboxitem, int* pnDBSerial)
         {
            return CMainThread_db_Load_GoldBoxItem202_user(_this, pDbGoldenboxitem, pnDBSerial, CMainThread_db_Load_GoldBoxItem202_next);
         };
-        char CMainThread_db_Load_Inven204_wrapper(struct CMainThread* _this, unsigned int dwSerial, int nBagNum, struct _INVEN_DB_BASE* pCon)
+        static char CMainThread_db_Load_Inven204_wrapper(struct CMainThread* _this, unsigned int dwSerial, int nBagNum, struct _INVEN_DB_BASE* pCon)
         {
            return CMainThread_db_Load_Inven204_user(_this, dwSerial, nBagNum, pCon, CMainThread_db_Load_Inven204_next);
         };
-        char CMainThread_db_Load_ItemCombineEx206_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _ITEMCOMBINE_DB_BASE* pCombineEx)
+        static char CMainThread_db_Load_ItemCombineEx206_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _ITEMCOMBINE_DB_BASE* pCombineEx)
         {
            return CMainThread_db_Load_ItemCombineEx206_user(_this, dwSerial, pCombineEx, CMainThread_db_Load_ItemCombineEx206_next);
         };
-        char CMainThread_db_Load_MacroData208_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
+        static char CMainThread_db_Load_MacroData208_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
         {
            return CMainThread_db_Load_MacroData208_user(_this, dwSerial, pMacro, CMainThread_db_Load_MacroData208_next);
         };
-        char CMainThread_db_Load_NpcQuest_History210_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _QUEST_DB_BASE* pCon)
+        static char CMainThread_db_Load_NpcQuest_History210_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _QUEST_DB_BASE* pCon)
         {
            return CMainThread_db_Load_NpcQuest_History210_user(_this, dwSerial, pCon, CMainThread_db_Load_NpcQuest_History210_next);
         };
-        char CMainThread_db_Load_OreCutting212_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _CUTTING_DB_BASE* pDbCutting)
+        static char CMainThread_db_Load_OreCutting212_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _CUTTING_DB_BASE* pDbCutting)
         {
            return CMainThread_db_Load_OreCutting212_user(_this, dwSerial, pDbCutting, CMainThread_db_Load_OreCutting212_next);
         };
-        int CMainThread_db_Load_PatriarchComm214_wrapper(struct CMainThread* _this, char* pData)
+        static int CMainThread_db_Load_PatriarchComm214_wrapper(struct CMainThread* _this, char* pData)
         {
            return CMainThread_db_Load_PatriarchComm214_user(_this, pData, CMainThread_db_Load_PatriarchComm214_next);
         };
-        char CMainThread_db_Load_PcBangFavor216_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PCBANG_FAVOR_ITEM_DB_BASE* pDbPcBangFavor)
+        static char CMainThread_db_Load_PcBangFavor216_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PCBANG_FAVOR_ITEM_DB_BASE* pDbPcBangFavor)
         {
            return CMainThread_db_Load_PcBangFavor216_user(_this, dwSerial, pDbPcBangFavor, CMainThread_db_Load_PcBangFavor216_next);
         };
-        char CMainThread_db_Load_PotionDelay218_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _POTION_NEXT_USE_TIME_DB_BASE* pDbPotionDelay)
+        static char CMainThread_db_Load_PotionDelay218_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _POTION_NEXT_USE_TIME_DB_BASE* pDbPotionDelay)
         {
            return CMainThread_db_Load_PotionDelay218_user(_this, dwSerial, pDbPotionDelay, CMainThread_db_Load_PotionDelay218_next);
         };
-        char CMainThread_db_Load_PrimiumPlayTime220_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _PCBANG_PLAY_TIME* kData)
+        static char CMainThread_db_Load_PrimiumPlayTime220_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _PCBANG_PLAY_TIME* kData)
         {
            return CMainThread_db_Load_PrimiumPlayTime220_user(_this, dwAccSerial, kData, CMainThread_db_Load_PrimiumPlayTime220_next);
         };
-        char CMainThread_db_Load_PvpOrderView222_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PVP_ORDER_VIEW_DB_BASE* kData)
+        static char CMainThread_db_Load_PvpOrderView222_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PVP_ORDER_VIEW_DB_BASE* kData)
         {
            return CMainThread_db_Load_PvpOrderView222_user(_this, dwSerial, kData, CMainThread_db_Load_PvpOrderView222_next);
         };
-        char CMainThread_db_Load_PvpPointLimitData224_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PVPPOINT_LIMIT_DB_BASE* kData)
+        static char CMainThread_db_Load_PvpPointLimitData224_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _PVPPOINT_LIMIT_DB_BASE* kData)
         {
            return CMainThread_db_Load_PvpPointLimitData224_user(_this, dwSerial, kData, CMainThread_db_Load_PvpPointLimitData224_next);
         };
-        char CMainThread_db_Load_Quest226_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _QUEST_DB_BASE* pCon)
+        static char CMainThread_db_Load_Quest226_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _QUEST_DB_BASE* pCon)
         {
            return CMainThread_db_Load_Quest226_user(_this, dwSerial, pCon, CMainThread_db_Load_Quest226_next);
         };
-        char CMainThread_db_Load_SFDelayData228_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pDbSFDelayInfo)
+        static char CMainThread_db_Load_SFDelayData228_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pDbSFDelayInfo)
         {
            return CMainThread_db_Load_SFDelayData228_user(_this, dwSerial, pDbSFDelayInfo, CMainThread_db_Load_SFDelayData228_next);
         };
-        char CMainThread_db_Load_Start_NpcQuest_History230_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode, struct _QUEST_DB_BASE* pCon)
+        static char CMainThread_db_Load_Start_NpcQuest_History230_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode, struct _QUEST_DB_BASE* pCon)
         {
            return CMainThread_db_Load_Start_NpcQuest_History230_user(_this, dwSerial, byRaceCode, pCon, CMainThread_db_Load_Start_NpcQuest_History230_next);
         };
-        char CMainThread_db_Load_Supplement232_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _SUPPLEMENT_DB_BASE* pDbSupplement)
+        static char CMainThread_db_Load_Supplement232_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _SUPPLEMENT_DB_BASE* pDbSupplement)
         {
            return CMainThread_db_Load_Supplement232_user(_this, dwSerial, pDbSupplement, CMainThread_db_Load_Supplement232_next);
         };
-        char CMainThread_db_Load_TimeLimitInfo234_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _TIMELIMITINFO_DB_BASE* pDbTimeLimitInfo)
+        static char CMainThread_db_Load_TimeLimitInfo234_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _TIMELIMITINFO_DB_BASE* pDbTimeLimitInfo)
         {
            return CMainThread_db_Load_TimeLimitInfo234_user(_this, dwAccSerial, pDbTimeLimitInfo, CMainThread_db_Load_TimeLimitInfo234_next);
         };
-        char CMainThread_db_Load_Trade236_wrapper(struct CMainThread* _this, char byRace, unsigned int dwSerial, struct _TRADE_DB_BASE* pTrade)
+        static char CMainThread_db_Load_Trade236_wrapper(struct CMainThread* _this, char byRace, unsigned int dwSerial, struct _TRADE_DB_BASE* pTrade)
         {
            return CMainThread_db_Load_Trade236_user(_this, byRace, dwSerial, pTrade, CMainThread_db_Load_Trade236_next);
         };
-        char CMainThread_db_Load_Trunk238_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwAccountSerial, char byRace, struct _TRUNK_DB_BASE* pTrunk)
+        static char CMainThread_db_Load_Trunk238_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwAccountSerial, char byRace, struct _TRUNK_DB_BASE* pTrunk)
         {
            return CMainThread_db_Load_Trunk238_user(_this, dwSerial, dwAccountSerial, byRace, pTrunk, CMainThread_db_Load_Trunk238_next);
         };
-        char CMainThread_db_Load_UI240_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _LINK_DB_BASE* pLink, struct _SFCONT_DB_BASE* pSfcont)
+        static char CMainThread_db_Load_UI240_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _LINK_DB_BASE* pLink, struct _SFCONT_DB_BASE* pSfcont)
         {
            return CMainThread_db_Load_UI240_user(_this, dwSerial, pLink, pSfcont, CMainThread_db_Load_UI240_next);
         };
-        char CMainThread_db_Load_Unit242_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _UNIT_DB_BASE* pCon)
+        static char CMainThread_db_Load_Unit242_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _UNIT_DB_BASE* pCon)
         {
            return CMainThread_db_Load_Unit242_user(_this, dwSerial, pCon, CMainThread_db_Load_Unit242_next);
         };
-        char CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_wrapper(struct CMainThread* _this, char* pSheet)
+        static char CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_wrapper(struct CMainThread* _this, char* pSheet)
         {
            return CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_user(_this, pSheet, CMainThread_db_Select_RegeAvator_For_Lobby_Logout244_next);
         };
-        bool CMainThread_db_Update_Base246_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery, bool bCheckLowHigh)
+        static bool CMainThread_db_Update_Base246_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery, bool bCheckLowHigh)
         {
            return CMainThread_db_Update_Base246_user(_this, dwSerial, pNewData, pOldData, pSzQuery, bCheckLowHigh, CMainThread_db_Update_Base246_next);
         };
-        bool CMainThread_db_Update_Buddy248_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
+        static bool CMainThread_db_Update_Buddy248_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
         {
            return CMainThread_db_Update_Buddy248_user(_this, dwSerial, pNewData, pOldData, pwszQuery, CMainThread_db_Update_Buddy248_next);
         };
-        char CMainThread_db_Update_Cash_LimSale250_wrapper(struct CMainThread* _this, struct _db_cash_limited_sale* pNewData, struct _db_cash_limited_sale* pOldData)
+        static char CMainThread_db_Update_Cash_LimSale250_wrapper(struct CMainThread* _this, struct _db_cash_limited_sale* pNewData, struct _db_cash_limited_sale* pOldData)
         {
            return CMainThread_db_Update_Cash_LimSale250_user(_this, pNewData, pOldData, CMainThread_db_Update_Cash_LimSale250_next);
         };
-        bool CMainThread_db_Update_CryMsg252_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
+        static bool CMainThread_db_Update_CryMsg252_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
         {
            return CMainThread_db_Update_CryMsg252_user(_this, dwSerial, pNewData, pOldData, pwszQuery, CMainThread_db_Update_CryMsg252_next);
         };
-        char CMainThread_db_Update_Data_For_Post_Send254_wrapper(struct CMainThread* _this, char* pSheet)
+        static char CMainThread_db_Update_Data_For_Post_Send254_wrapper(struct CMainThread* _this, char* pSheet)
         {
            return CMainThread_db_Update_Data_For_Post_Send254_user(_this, pSheet, CMainThread_db_Update_Data_For_Post_Send254_next);
         };
-        char CMainThread_db_Update_Data_For_Trade256_wrapper(struct CMainThread* _this, char* pSheet)
+        static char CMainThread_db_Update_Data_For_Trade256_wrapper(struct CMainThread* _this, char* pSheet)
         {
            return CMainThread_db_Update_Data_For_Trade256_user(_this, pSheet, CMainThread_db_Update_Data_For_Trade256_next);
         };
-        bool CMainThread_db_Update_General258_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery, bool bCheckLowHigh)
+        static bool CMainThread_db_Update_General258_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery, bool bCheckLowHigh)
         {
            return CMainThread_db_Update_General258_user(_this, dwSerial, pNewData, pOldData, pSzQuery, bCheckLowHigh, CMainThread_db_Update_General258_next);
         };
-        char CMainThread_db_Update_GoldBoxItem260_wrapper(struct CMainThread* _this, int nDBSerial, struct _db_golden_box_item* pNewData, struct _db_golden_box_item* pOldData)
+        static char CMainThread_db_Update_GoldBoxItem260_wrapper(struct CMainThread* _this, int nDBSerial, struct _db_golden_box_item* pNewData, struct _db_golden_box_item* pOldData)
         {
            return CMainThread_db_Update_GoldBoxItem260_user(_this, nDBSerial, pNewData, pOldData, CMainThread_db_Update_GoldBoxItem260_next);
         };
-        bool CMainThread_db_Update_Inven262_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_Inven262_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_Inven262_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_Inven262_next);
         };
-        bool CMainThread_db_Update_ItemCombineEx264_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_ItemCombineEx264_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_ItemCombineEx264_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_ItemCombineEx264_next);
         };
-        bool CMainThread_db_Update_MacroData266_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro, struct _AIOC_A_MACRODATA* pOldMacro)
+        static bool CMainThread_db_Update_MacroData266_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro, struct _AIOC_A_MACRODATA* pOldMacro)
         {
            return CMainThread_db_Update_MacroData266_user(_this, dwSerial, pMacro, pOldMacro, CMainThread_db_Update_MacroData266_next);
         };
-        bool CMainThread_db_Update_NpcData268_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pAvatorData, char* pSzNpcQuery)
+        static bool CMainThread_db_Update_NpcData268_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pAvatorData, char* pSzNpcQuery)
         {
            return CMainThread_db_Update_NpcData268_user(_this, dwSerial, pAvatorData, pSzNpcQuery, CMainThread_db_Update_NpcData268_next);
         };
-        bool CMainThread_db_Update_NpcQuest_History270_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_NpcQuest_History270_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_NpcQuest_History270_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_NpcQuest_History270_next);
         };
-        bool CMainThread_db_Update_OreCutting272_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szOreCuttingQuery, int nSize)
+        static bool CMainThread_db_Update_OreCutting272_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szOreCuttingQuery, int nSize)
         {
            return CMainThread_db_Update_OreCutting272_user(_this, dwSerial, pNewData, pOldData, szOreCuttingQuery, nSize, CMainThread_db_Update_OreCutting272_next);
         };
-        bool CMainThread_db_Update_PcBangFavor274_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szPcBangFavorQuery, int nSize)
+        static bool CMainThread_db_Update_PcBangFavor274_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szPcBangFavorQuery, int nSize)
         {
            return CMainThread_db_Update_PcBangFavor274_user(_this, dwSerial, pNewData, pOldData, szPcBangFavorQuery, nSize, CMainThread_db_Update_PcBangFavor274_next);
         };
-        bool CMainThread_db_Update_PotionDelay276_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szPotionDelayQuery, int nSize)
+        static bool CMainThread_db_Update_PotionDelay276_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szPotionDelayQuery, int nSize)
         {
            return CMainThread_db_Update_PotionDelay276_user(_this, dwSerial, pNewData, pOldData, szPotionDelayQuery, nSize, CMainThread_db_Update_PotionDelay276_next);
         };
-        bool CMainThread_db_Update_PrimiumPlayTime278_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
+        static bool CMainThread_db_Update_PrimiumPlayTime278_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
         {
            return CMainThread_db_Update_PrimiumPlayTime278_user(_this, dwAccSerial, pNewData, pOldData, szQuery, szError, CMainThread_db_Update_PrimiumPlayTime278_next);
         };
-        bool CMainThread_db_Update_PvpOrderView280_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
+        static bool CMainThread_db_Update_PvpOrderView280_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
         {
            return CMainThread_db_Update_PvpOrderView280_user(_this, dwSerial, pNewData, pOldData, szQuery, szError, CMainThread_db_Update_PvpOrderView280_next);
         };
-        bool CMainThread_db_Update_PvpPointLimit282_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
+        static bool CMainThread_db_Update_PvpPointLimit282_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szQuery, char* szError)
         {
            return CMainThread_db_Update_PvpPointLimit282_user(_this, dwSerial, pNewData, pOldData, szQuery, szError, CMainThread_db_Update_PvpPointLimit282_next);
         };
-        bool CMainThread_db_Update_Quest284_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_Quest284_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_Quest284_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_Quest284_next);
         };
-        bool CMainThread_db_Update_SFDelayData286_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData)
+        static bool CMainThread_db_Update_SFDelayData286_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData)
         {
            return CMainThread_db_Update_SFDelayData286_user(_this, dwSerial, pNewData, CMainThread_db_Update_SFDelayData286_next);
         };
-        char CMainThread_db_Update_Set_Limit_Run288_wrapper(struct CMainThread* _this)
+        static char CMainThread_db_Update_Set_Limit_Run288_wrapper(struct CMainThread* _this)
         {
            return CMainThread_db_Update_Set_Limit_Run288_user(_this, CMainThread_db_Update_Set_Limit_Run288_next);
         };
-        bool CMainThread_db_Update_Start_NpcQuest_History290_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData)
+        static bool CMainThread_db_Update_Start_NpcQuest_History290_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData)
         {
            return CMainThread_db_Update_Start_NpcQuest_History290_user(_this, dwSerial, pNewData, pOldData, CMainThread_db_Update_Start_NpcQuest_History290_next);
         };
-        bool CMainThread_db_Update_Supplement292_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szSupplementQuery, int nSize)
+        static bool CMainThread_db_Update_Supplement292_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szSupplementQuery, int nSize)
         {
            return CMainThread_db_Update_Supplement292_user(_this, dwSerial, pNewData, pOldData, szSupplementQuery, nSize, CMainThread_db_Update_Supplement292_next);
         };
-        char CMainThread_db_Update_TimeLimitInfo294_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szTimeLimitInfoQuery, int nSize)
+        static char CMainThread_db_Update_TimeLimitInfo294_wrapper(struct CMainThread* _this, unsigned int dwAccSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* szTimeLimitInfoQuery, int nSize)
         {
            return CMainThread_db_Update_TimeLimitInfo294_user(_this, dwAccSerial, pNewData, pOldData, szTimeLimitInfoQuery, nSize, CMainThread_db_Update_TimeLimitInfo294_next);
         };
-        bool CMainThread_db_Update_Trunk296_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
+        static bool CMainThread_db_Update_Trunk296_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
         {
            return CMainThread_db_Update_Trunk296_user(_this, dwAccountSerial, pNewData, pOldData, pwszQuery, CMainThread_db_Update_Trunk296_next);
         };
-        bool CMainThread_db_Update_Trunk_Extend298_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
+        static bool CMainThread_db_Update_Trunk_Extend298_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pwszQuery)
         {
            return CMainThread_db_Update_Trunk_Extend298_user(_this, dwAccountSerial, pNewData, pOldData, pwszQuery, CMainThread_db_Update_Trunk_Extend298_next);
         };
-        bool CMainThread_db_Update_UI300_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_UI300_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_UI300_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_UI300_next);
         };
-        bool CMainThread_db_Update_Unit302_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
+        static bool CMainThread_db_Update_Unit302_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pSzQuery)
         {
            return CMainThread_db_Update_Unit302_user(_this, dwSerial, pNewData, pOldData, pSzQuery, CMainThread_db_Update_Unit302_next);
         };
-        void CMainThread_db_complete_event_classrefine304_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial, char byRefinedCnt, unsigned int dwRefineDate)
+        static void CMainThread_db_complete_event_classrefine304_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial, char byRefinedCnt, unsigned int dwRefineDate)
         {
            CMainThread_db_complete_event_classrefine304_user(_this, wSock, dwAvatorSerial, byRefinedCnt, dwRefineDate, CMainThread_db_complete_event_classrefine304_next);
         };
-        void CMainThread_db_complete_update_event_classrefine306_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial)
+        static void CMainThread_db_complete_update_event_classrefine306_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial)
         {
            CMainThread_db_complete_update_event_classrefine306_user(_this, wSock, dwAvatorSerial, CMainThread_db_complete_update_event_classrefine306_next);
         };
-        int CMainThread_db_init_classrefine_count308_wrapper(struct CMainThread* _this)
+        static int CMainThread_db_init_classrefine_count308_wrapper(struct CMainThread* _this)
         {
            return CMainThread_db_init_classrefine_count308_user(_this, CMainThread_db_init_classrefine_count308_next);
         };
-        char CMainThread_db_load_event_classrefine310_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, char* byRefinedCnt, unsigned int* dwRefineDate)
+        static char CMainThread_db_load_event_classrefine310_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, char* byRefinedCnt, unsigned int* dwRefineDate)
         {
            return CMainThread_db_load_event_classrefine310_user(_this, dwAvatorSerial, byRefinedCnt, dwRefineDate, CMainThread_db_load_event_classrefine310_next);
         };
-        char CMainThread_db_load_losebattlecount312_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
+        static char CMainThread_db_load_losebattlecount312_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
         {
            return CMainThread_db_load_losebattlecount312_user(_this, dwSerial, pCon, CMainThread_db_load_losebattlecount312_next);
         };
-        char CMainThread_db_load_punishment314_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
+        static char CMainThread_db_load_punishment314_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
         {
            return CMainThread_db_load_punishment314_user(_this, dwSerial, pCon, CMainThread_db_load_punishment314_next);
         };
-        char CMainThread_db_load_raceboss316_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
+        static char CMainThread_db_load_raceboss316_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pCon)
         {
            return CMainThread_db_load_raceboss316_user(_this, dwSerial, pCon, CMainThread_db_load_raceboss316_next);
         };
-        char CMainThread_db_update_event_classrefine318_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial, char byRefinedCnt, unsigned int dwRefineDate)
+        static char CMainThread_db_update_event_classrefine318_wrapper(struct CMainThread* _this, uint16_t wSock, unsigned int dwAvatorSerial, char byRefinedCnt, unsigned int dwRefineDate)
         {
            return CMainThread_db_update_event_classrefine318_user(_this, wSock, dwAvatorSerial, byRefinedCnt, dwRefineDate, CMainThread_db_update_event_classrefine318_next);
         };
-        bool CMainThread_db_update_inven_AMP320_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pszQuery)
+        static bool CMainThread_db_update_inven_AMP320_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, char* pszQuery)
         {
            return CMainThread_db_update_inven_AMP320_user(_this, dwAvatorSerial, pNewData, pOldData, pszQuery, CMainThread_db_update_inven_AMP320_next);
         };
-        bool CMainThreadcheck_dbsyn_data_size325_wrapper(struct CMainThread* _this)
+        static bool CMainThreadcheck_dbsyn_data_size325_wrapper(struct CMainThread* _this)
         {
            return CMainThreadcheck_dbsyn_data_size325_user(_this, CMainThreadcheck_dbsyn_data_size325_next);
         };
-        bool CMainThreadcheck_item_code_index327_wrapper(struct CMainThread* _this)
+        static bool CMainThreadcheck_item_code_index327_wrapper(struct CMainThread* _this)
         {
            return CMainThreadcheck_item_code_index327_user(_this, CMainThreadcheck_item_code_index327_next);
         };
-        bool CMainThreadcheck_loaded_data329_wrapper(struct CMainThread* _this)
+        static bool CMainThreadcheck_loaded_data329_wrapper(struct CMainThread* _this)
         {
            return CMainThreadcheck_loaded_data329_user(_this, CMainThreadcheck_loaded_data329_next);
         };
-        char CMainThreadcheck_min_max_guild_money331_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial, long double* pdDalant, long double* pdGold)
+        static char CMainThreadcheck_min_max_guild_money331_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial, long double* pdDalant, long double* pdGold)
         {
            return CMainThreadcheck_min_max_guild_money331_user(_this, dwGuildSerial, pdDalant, pdGold, CMainThreadcheck_min_max_guild_money331_next);
         };
-        char CMainThreaddb_Add_PvpPoint333_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwPoint, unsigned int dwCashBag)
+        static char CMainThreaddb_Add_PvpPoint333_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwPoint, unsigned int dwCashBag)
         {
            return CMainThreaddb_Add_PvpPoint333_user(_this, dwSerial, dwPoint, dwCashBag, CMainThreaddb_Add_PvpPoint333_next);
         };
-        char CMainThreaddb_Delete_Avator335_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode)
+        static char CMainThreaddb_Delete_Avator335_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byRaceCode)
         {
            return CMainThreaddb_Delete_Avator335_user(_this, dwSerial, byRaceCode, CMainThreaddb_Delete_Avator335_next);
         };
-        char CMainThreaddb_GM_GreetingMsg337_wrapper(struct CMainThread* _this, struct _qry_case_gm_greetingmsg* pSheet)
+        static char CMainThreaddb_GM_GreetingMsg337_wrapper(struct CMainThread* _this, struct _qry_case_gm_greetingmsg* pSheet)
         {
            return CMainThreaddb_GM_GreetingMsg337_user(_this, pSheet, CMainThreaddb_GM_GreetingMsg337_next);
         };
-        char CMainThreaddb_GUILD_GreetingMsg339_wrapper(struct CMainThread* _this, struct _qry_case_guild_greetingmsg* pSheet)
+        static char CMainThreaddb_GUILD_GreetingMsg339_wrapper(struct CMainThread* _this, struct _qry_case_guild_greetingmsg* pSheet)
         {
            return CMainThreaddb_GUILD_GreetingMsg339_user(_this, pSheet, CMainThreaddb_GUILD_GreetingMsg339_next);
         };
-        char CMainThreaddb_Insert_Avator341_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* pszAccount, struct _REGED_AVATOR_DB* pCharDB, unsigned int* pdwAvatorSerial)
+        static char CMainThreaddb_Insert_Avator341_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* pszAccount, struct _REGED_AVATOR_DB* pCharDB, unsigned int* pdwAvatorSerial)
         {
            return CMainThreaddb_Insert_Avator341_user(_this, dwAccountSerial, pszAccount, pCharDB, pdwAvatorSerial, CMainThreaddb_Insert_Avator341_next);
         };
-        char CMainThreaddb_Insert_ChangeClass_AfterInitClass343_wrapper(struct CMainThread* _this, unsigned int dwCharacSerial, char byType, char* szPrevClassCode, char* szNextClassCode, int nClassInitCnt, char byLastClassGrade, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
+        static char CMainThreaddb_Insert_ChangeClass_AfterInitClass343_wrapper(struct CMainThread* _this, unsigned int dwCharacSerial, char byType, char* szPrevClassCode, char* szNextClassCode, int nClassInitCnt, char byLastClassGrade, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
         {
            return CMainThreaddb_Insert_ChangeClass_AfterInitClass343_user(_this, dwCharacSerial, byType, szPrevClassCode, szNextClassCode, nClassInitCnt, byLastClassGrade, dwYear, byMonth, byDay, byHour, byMin, bySec, CMainThreaddb_Insert_ChangeClass_AfterInitClass343_next);
         };
-        char CMainThreaddb_Insert_CharacSelect_Log345_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* szAccount, unsigned int dwCharacSerial, char* pwszCharacName, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
+        static char CMainThreaddb_Insert_CharacSelect_Log345_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* szAccount, unsigned int dwCharacSerial, char* pwszCharacName, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
         {
            return CMainThreaddb_Insert_CharacSelect_Log345_user(_this, dwAccountSerial, szAccount, dwCharacSerial, pwszCharacName, dwYear, byMonth, byDay, byHour, byMin, bySec, CMainThreaddb_Insert_CharacSelect_Log345_next);
         };
-        char CMainThreaddb_Insert_Economy_History347_wrapper(struct CMainThread* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
+        static char CMainThreaddb_Insert_Economy_History347_wrapper(struct CMainThread* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
         {
            return CMainThreaddb_Insert_Economy_History347_user(_this, dwDate, pEconomyData, CMainThreaddb_Insert_Economy_History347_next);
         };
-        char CMainThreaddb_Insert_Item349_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwItemCodeK, unsigned int dwItemCodeD, unsigned int dwItemCodeU, char byType)
+        static char CMainThreaddb_Insert_Item349_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwItemCodeK, unsigned int dwItemCodeD, unsigned int dwItemCodeU, char byType)
         {
            return CMainThreaddb_Insert_Item349_user(_this, dwSerial, dwItemCodeK, dwItemCodeD, dwItemCodeU, byType, CMainThreaddb_Insert_Item349_next);
         };
-        char CMainThreaddb_Insert_guild351_wrapper(struct CMainThread* _this, unsigned int* dwSerial, char* pwszGuildName, char byRace, unsigned int* dwGuildSerial)
+        static char CMainThreaddb_Insert_guild351_wrapper(struct CMainThread* _this, unsigned int* dwSerial, char* pwszGuildName, char byRace, unsigned int* dwGuildSerial)
         {
            return CMainThreaddb_Insert_guild351_user(_this, dwSerial, pwszGuildName, byRace, dwGuildSerial, CMainThreaddb_Insert_guild351_next);
         };
-        bool CMainThreaddb_LoadGreetingMsg353_wrapper(struct CMainThread* _this)
+        static bool CMainThreaddb_LoadGreetingMsg353_wrapper(struct CMainThread* _this)
         {
            return CMainThreaddb_LoadGreetingMsg353_user(_this, CMainThreaddb_LoadGreetingMsg353_next);
         };
-        char CMainThreaddb_Load_Avator355_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwAccountSerial, struct _AVATOR_DATA* pData, bool* pbAddItem, unsigned int* pdwAddDalant, unsigned int* pdwAddGold, bool* pbTrunkAddItem, char* pbyTrunkOldSlot, long double* pdTrunkOldDalant, long double* pdTrunkOldGold, bool* pbCreateTrunkFree, bool* pbExtTrunkAddItem, char* pbyExtTrunkOldSlot, bool bAll, unsigned int* pdwCheckSum)
+        static char CMainThreaddb_Load_Avator355_wrapper(struct CMainThread* _this, unsigned int dwSerial, unsigned int dwAccountSerial, struct _AVATOR_DATA* pData, bool* pbAddItem, unsigned int* pdwAddDalant, unsigned int* pdwAddGold, bool* pbTrunkAddItem, char* pbyTrunkOldSlot, long double* pdTrunkOldDalant, long double* pdTrunkOldGold, bool* pbCreateTrunkFree, bool* pbExtTrunkAddItem, char* pbyExtTrunkOldSlot, bool bAll, unsigned int* pdwCheckSum)
         {
            return CMainThreaddb_Load_Avator355_user(_this, dwSerial, dwAccountSerial, pData, pbAddItem, pdwAddDalant, pdwAddGold, pbTrunkAddItem, pbyTrunkOldSlot, pdTrunkOldDalant, pdTrunkOldGold, pbCreateTrunkFree, pbExtTrunkAddItem, pbyExtTrunkOldSlot, bAll, pdwCheckSum, CMainThreaddb_Load_Avator355_next);
         };
-        char CMainThreaddb_Load_Content357_wrapper(struct CMainThread* _this, char* pData)
+        static char CMainThreaddb_Load_Content357_wrapper(struct CMainThread* _this, char* pData)
         {
            return CMainThreaddb_Load_Content357_user(_this, pData, CMainThreaddb_Load_Content357_next);
         };
-        char CMainThreaddb_Load_PostStorage359_wrapper(struct CMainThread* _this, char* pData)
+        static char CMainThreaddb_Load_PostStorage359_wrapper(struct CMainThread* _this, char* pData)
         {
            return CMainThreaddb_Load_PostStorage359_user(_this, pData, CMainThreaddb_Load_PostStorage359_next);
         };
-        char CMainThreaddb_Load_ReturnPost361_wrapper(struct CMainThread* _this, char* pData)
+        static char CMainThreaddb_Load_ReturnPost361_wrapper(struct CMainThread* _this, char* pData)
         {
            return CMainThreaddb_Load_ReturnPost361_user(_this, pData, CMainThreaddb_Load_ReturnPost361_next);
         };
-        char CMainThreaddb_Log_AvatorLevel363_wrapper(struct CMainThread* _this, unsigned int dwTotalPlayMin, unsigned int dwSerial, char byLv)
+        static char CMainThreaddb_Log_AvatorLevel363_wrapper(struct CMainThread* _this, unsigned int dwTotalPlayMin, unsigned int dwSerial, char byLv)
         {
            return CMainThreaddb_Log_AvatorLevel363_user(_this, dwTotalPlayMin, dwSerial, byLv, CMainThreaddb_Log_AvatorLevel363_next);
         };
-        char CMainThreaddb_Log_UserNum365_wrapper(struct CMainThread* _this, int nAveragePerHour, int nMaxPerHour)
+        static char CMainThreaddb_Log_UserNum365_wrapper(struct CMainThread* _this, int nAveragePerHour, int nMaxPerHour)
         {
            return CMainThreaddb_Log_UserNum365_user(_this, nAveragePerHour, nMaxPerHour, CMainThreaddb_Log_UserNum365_next);
         };
-        char CMainThreaddb_RACE_GreetingMsg367_wrapper(struct CMainThread* _this, struct _qry_case_race_greetingmsg* pSheet)
+        static char CMainThreaddb_RACE_GreetingMsg367_wrapper(struct CMainThread* _this, struct _qry_case_race_greetingmsg* pSheet)
         {
            return CMainThreaddb_RACE_GreetingMsg367_user(_this, pSheet, CMainThreaddb_RACE_GreetingMsg367_next);
         };
-        char CMainThreaddb_Reged_Avator369_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _REGED* pRegedList, struct _NOT_ARRANGED_AVATOR_DB* pArrangedList, char* pszIP)
+        static char CMainThreaddb_Reged_Avator369_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, struct _REGED* pRegedList, struct _NOT_ARRANGED_AVATOR_DB* pArrangedList, char* pszIP)
         {
            return CMainThreaddb_Reged_Avator369_user(_this, dwAccountSerial, pRegedList, pArrangedList, pszIP, CMainThreaddb_Reged_Avator369_next);
         };
-        char CMainThreaddb_Select_Economy_History371_wrapper(struct CMainThread* _this, struct _economy_history_data* pCurData, int* pnCurMgrValue, int* pnNextMgrValue, struct _economy_history_data* pHisData, int* pHistoryNum, unsigned int dwDate)
+        static char CMainThreaddb_Select_Economy_History371_wrapper(struct CMainThread* _this, struct _economy_history_data* pCurData, int* pnCurMgrValue, int* pnNextMgrValue, struct _economy_history_data* pHisData, int* pHistoryNum, unsigned int dwDate)
         {
            return CMainThreaddb_Select_Economy_History371_user(_this, pCurData, pnCurMgrValue, pnNextMgrValue, pHisData, pHistoryNum, dwDate, CMainThreaddb_Select_Economy_History371_next);
         };
-        char CMainThreaddb_Update_Avator373_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, bool bCheckLowHigh)
+        static char CMainThreaddb_Update_Avator373_wrapper(struct CMainThread* _this, unsigned int dwSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData, bool bCheckLowHigh)
         {
            return CMainThreaddb_Update_Avator373_user(_this, dwSerial, pNewData, pOldData, bCheckLowHigh, CMainThreaddb_Update_Avator373_next);
         };
-        char CMainThreaddb_Update_PostStorage375_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData)
+        static char CMainThreaddb_Update_PostStorage375_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, struct _AVATOR_DATA* pNewData, struct _AVATOR_DATA* pOldData)
         {
            return CMainThreaddb_Update_PostStorage375_user(_this, dwAvatorSerial, pNewData, pOldData, CMainThreaddb_Update_PostStorage375_next);
         };
-        char CMainThreaddb_Update_PvpInfo377_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byLevel, int16_t* pzClassHistory, long double dPvpPoint)
+        static char CMainThreaddb_Update_PvpInfo377_wrapper(struct CMainThread* _this, unsigned int dwSerial, char byLevel, int16_t* pzClassHistory, long double dPvpPoint)
         {
            return CMainThreaddb_Update_PvpInfo377_user(_this, dwSerial, byLevel, pzClassHistory, dPvpPoint, CMainThreaddb_Update_PvpInfo377_next);
         };
-        char CMainThreaddb_buy_emblem379_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial, int nEmblemDalant, unsigned int dwEmblemBack, unsigned int dwEmblemMark, unsigned int dwSuggestorSerial, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName, char* pbyProcRet)
+        static char CMainThreaddb_buy_emblem379_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial, int nEmblemDalant, unsigned int dwEmblemBack, unsigned int dwEmblemMark, unsigned int dwSuggestorSerial, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName, char* pbyProcRet)
         {
            return CMainThreaddb_buy_emblem379_user(_this, dwGuildSerial, nEmblemDalant, dwEmblemBack, dwEmblemMark, dwSuggestorSerial, dTotalDalant, dTotalGold, byDate, pwszName, pbyProcRet, CMainThreaddb_buy_emblem379_next);
         };
-        char CMainThreaddb_char_set_alive381_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char byCase, unsigned int dwSerial, char* pwszName, char bySlot, struct _REGED* pAliveAvator)
+        static char CMainThreaddb_char_set_alive381_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char byCase, unsigned int dwSerial, char* pwszName, char bySlot, struct _REGED* pAliveAvator)
         {
            return CMainThreaddb_char_set_alive381_user(_this, dwAccountSerial, byCase, dwSerial, pwszName, bySlot, pAliveAvator, CMainThreaddb_char_set_alive381_next);
         };
-        char CMainThreaddb_disjoint_guild383_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial)
+        static char CMainThreaddb_disjoint_guild383_wrapper(struct CMainThread* _this, unsigned int dwGuildSerial)
         {
            return CMainThreaddb_disjoint_guild383_user(_this, dwGuildSerial, CMainThreaddb_disjoint_guild383_next);
         };
-        char CMainThreaddb_input_guild_money385_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwAddDalant, unsigned int dwAddGold, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName)
+        static char CMainThreaddb_input_guild_money385_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwAddDalant, unsigned int dwAddGold, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName)
         {
            return CMainThreaddb_input_guild_money385_user(_this, dwPusherSerial, dwGuildSerial, dwAddDalant, dwAddGold, dTotalDalant, dTotalGold, byDate, pwszName, CMainThreaddb_input_guild_money385_next);
         };
-        char CMainThreaddb_input_guild_money_atradetax387_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwAddDalant, long double* dTotalDalant, long double* dTotalGold, char* byDate)
+        static char CMainThreaddb_input_guild_money_atradetax387_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwAddDalant, long double* dTotalDalant, long double* dTotalGold, char* byDate)
         {
            return CMainThreaddb_input_guild_money_atradetax387_user(_this, dwPusherSerial, dwGuildSerial, dwAddDalant, dTotalDalant, dTotalGold, byDate, CMainThreaddb_input_guild_money_atradetax387_next);
         };
-        char CMainThreaddb_output_guild_money389_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwSubDalant, unsigned int dwSubGold, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName, char* pbyProcRet)
+        static char CMainThreaddb_output_guild_money389_wrapper(struct CMainThread* _this, unsigned int dwPusherSerial, unsigned int dwGuildSerial, unsigned int dwSubDalant, unsigned int dwSubGold, long double* dTotalDalant, long double* dTotalGold, char* byDate, char* pwszName, char* pbyProcRet)
         {
            return CMainThreaddb_output_guild_money389_user(_this, dwPusherSerial, dwGuildSerial, dwSubDalant, dwSubGold, dTotalDalant, dTotalGold, byDate, pwszName, pbyProcRet, CMainThreaddb_output_guild_money389_next);
         };
-        char CMainThreaddb_sendwebracebosssms391_wrapper(struct CMainThread* _this, struct _qry_case_sendwebracebosssms* pSheet)
+        static char CMainThreaddb_sendwebracebosssms391_wrapper(struct CMainThread* _this, struct _qry_case_sendwebracebosssms* pSheet)
         {
            return CMainThreaddb_sendwebracebosssms391_user(_this, pSheet, CMainThreaddb_sendwebracebosssms391_next);
         };
-        char CMainThreaddb_update_guildmaster393_wrapper(struct CMainThread* _this, struct _qry_case_update_guildmaster* pSheet)
+        static char CMainThreaddb_update_guildmaster393_wrapper(struct CMainThread* _this, struct _qry_case_update_guildmaster* pSheet)
         {
            return CMainThreaddb_update_guildmaster393_user(_this, pSheet, CMainThreaddb_update_guildmaster393_next);
         };
-        char CMainThreaddb_update_guildmember_add395_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, char byGrade, int nMemberNum)
+        static char CMainThreaddb_update_guildmember_add395_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, char byGrade, int nMemberNum)
         {
            return CMainThreaddb_update_guildmember_add395_user(_this, dwAvatorSerial, dwGuildSerial, byGrade, nMemberNum, CMainThreaddb_update_guildmember_add395_next);
         };
-        char CMainThreaddb_update_guildmember_del397_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, int nMemberNum)
+        static char CMainThreaddb_update_guildmember_del397_wrapper(struct CMainThread* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, int nMemberNum)
         {
            return CMainThreaddb_update_guildmember_del397_user(_this, dwAvatorSerial, dwGuildSerial, nMemberNum, CMainThreaddb_update_guildmember_del397_next);
         };
-        void CMainThreadgm_DisplayAll399_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_DisplayAll399_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_DisplayAll399_user(_this, CMainThreadgm_DisplayAll399_next);
         };
-        void CMainThreadgm_DisplaymodeChange401_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_DisplaymodeChange401_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_DisplaymodeChange401_user(_this, CMainThreadgm_DisplaymodeChange401_next);
         };
-        void CMainThreadgm_DungeonLoad403_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_DungeonLoad403_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_DungeonLoad403_user(_this, CMainThreadgm_DungeonLoad403_next);
         };
-        void CMainThreadgm_MainThreadControl405_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_MainThreadControl405_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_MainThreadControl405_user(_this, CMainThreadgm_MainThreadControl405_next);
         };
-        void CMainThreadgm_MapChange407_wrapper(struct CMainThread* _this, struct CMapData* pMap)
+        static void CMainThreadgm_MapChange407_wrapper(struct CMainThread* _this, struct CMapData* pMap)
         {
            CMainThreadgm_MapChange407_user(_this, pMap, CMainThreadgm_MapChange407_next);
         };
-        bool CMainThreadgm_MonsterInit409_wrapper(struct CMainThread* _this, struct CCharacter* pExt)
+        static bool CMainThreadgm_MonsterInit409_wrapper(struct CMainThread* _this, struct CCharacter* pExt)
         {
            return CMainThreadgm_MonsterInit409_user(_this, pExt, CMainThreadgm_MonsterInit409_next);
         };
-        void CMainThreadgm_ObjectSelect411_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_ObjectSelect411_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_ObjectSelect411_user(_this, CMainThreadgm_ObjectSelect411_next);
         };
-        void CMainThreadgm_PreCloseAnn413_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_PreCloseAnn413_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_PreCloseAnn413_user(_this, CMainThreadgm_PreCloseAnn413_next);
         };
-        void CMainThreadgm_ServerClose415_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_ServerClose415_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_ServerClose415_user(_this, CMainThreadgm_ServerClose415_next);
         };
-        void CMainThreadgm_UpdateMap417_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_UpdateMap417_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_UpdateMap417_user(_this, CMainThreadgm_UpdateMap417_next);
         };
-        void CMainThreadgm_UpdateObject419_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_UpdateObject419_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_UpdateObject419_user(_this, CMainThreadgm_UpdateObject419_next);
         };
-        void CMainThreadgm_UpdateServer421_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_UpdateServer421_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_UpdateServer421_user(_this, CMainThreadgm_UpdateServer421_next);
         };
-        void CMainThreadgm_UserExit423_wrapper(struct CMainThread* _this)
+        static void CMainThreadgm_UserExit423_wrapper(struct CMainThread* _this)
         {
            CMainThreadgm_UserExit423_user(_this, CMainThreadgm_UserExit423_next);
         };
-        void CMainThreadpc_AllUserGMNoticeInform425_wrapper(struct CMainThread* _this, char* pwszMsg)
+        static void CMainThreadpc_AllUserGMNoticeInform425_wrapper(struct CMainThread* _this, char* pwszMsg)
         {
            CMainThreadpc_AllUserGMNoticeInform425_user(_this, pwszMsg, CMainThreadpc_AllUserGMNoticeInform425_next);
         };
-        void CMainThreadpc_AllUserKickInform427_wrapper(struct CMainThread* _this)
+        static void CMainThreadpc_AllUserKickInform427_wrapper(struct CMainThread* _this)
         {
            CMainThreadpc_AllUserKickInform427_user(_this, CMainThreadpc_AllUserKickInform427_next);
         };
-        void CMainThreadpc_AllUserMsgInform429_wrapper(struct CMainThread* _this, char* pwszMsg)
+        static void CMainThreadpc_AllUserMsgInform429_wrapper(struct CMainThread* _this, char* pwszMsg)
         {
            CMainThreadpc_AllUserMsgInform429_user(_this, pwszMsg, CMainThreadpc_AllUserMsgInform429_next);
         };
-        void CMainThreadpc_AlterWorldService431_wrapper(struct CMainThread* _this, bool bSerivce)
+        static void CMainThreadpc_AlterWorldService431_wrapper(struct CMainThread* _this, bool bSerivce)
         {
            CMainThreadpc_AlterWorldService431_user(_this, bSerivce, CMainThreadpc_AlterWorldService431_next);
         };
-        void CMainThreadpc_CashDBInfoRecvResult433_wrapper(struct CMainThread* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
+        static void CMainThreadpc_CashDBInfoRecvResult433_wrapper(struct CMainThread* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
         {
            CMainThreadpc_CashDBInfoRecvResult433_user(_this, szIP, szDBName, szAccount, szPassword, dwPort, CMainThreadpc_CashDBInfoRecvResult433_next);
         };
-        void CMainThreadpc_ChatLockCommand435_wrapper(struct CMainThread* _this, struct _CLID* pidLocal, uint16_t wBlockTimeH)
+        static void CMainThreadpc_ChatLockCommand435_wrapper(struct CMainThread* _this, struct _CLID* pidLocal, uint16_t wBlockTimeH)
         {
            CMainThreadpc_ChatLockCommand435_user(_this, pidLocal, wBlockTimeH, CMainThreadpc_ChatLockCommand435_next);
         };
-        void CMainThreadpc_EnterWorldResult437_wrapper(struct CMainThread* _this, char byRetCode, struct _CLID* pidWorld)
+        static void CMainThreadpc_EnterWorldResult437_wrapper(struct CMainThread* _this, char byRetCode, struct _CLID* pidWorld)
         {
            CMainThreadpc_EnterWorldResult437_user(_this, byRetCode, pidWorld, CMainThreadpc_EnterWorldResult437_next);
         };
-        void CMainThreadpc_ForceCloseCommand439_wrapper(struct CMainThread* _this, struct _CLID* pidWorld, bool bDirectly, char byKickType, unsigned int dwPushIP)
+        static void CMainThreadpc_ForceCloseCommand439_wrapper(struct CMainThread* _this, struct _CLID* pidWorld, bool bDirectly, char byKickType, unsigned int dwPushIP)
         {
            CMainThreadpc_ForceCloseCommand439_user(_this, pidWorld, bDirectly, byKickType, dwPushIP, CMainThreadpc_ForceCloseCommand439_next);
         };
-        void CMainThreadpc_OpenWorldFailureResult441_wrapper(struct CMainThread* _this, char* szMsg)
+        static void CMainThreadpc_OpenWorldFailureResult441_wrapper(struct CMainThread* _this, char* szMsg)
         {
            CMainThreadpc_OpenWorldFailureResult441_user(_this, szMsg, CMainThreadpc_OpenWorldFailureResult441_next);
         };
-        void CMainThreadpc_OpenWorldSuccessResult443_wrapper(struct CMainThread* _this, char byWorldCode, char* pszDBName, char* pszDBIP)
+        static void CMainThreadpc_OpenWorldSuccessResult443_wrapper(struct CMainThread* _this, char byWorldCode, char* pszDBName, char* pszDBIP)
         {
            CMainThreadpc_OpenWorldSuccessResult443_user(_this, byWorldCode, pszDBName, pszDBIP, CMainThreadpc_OpenWorldSuccessResult443_next);
         };
-        void CMainThreadpc_SetMainGreetingMsg445_wrapper(struct CMainThread* _this, char* pwszGMName, char* pwszMsg)
+        static void CMainThreadpc_SetMainGreetingMsg445_wrapper(struct CMainThread* _this, char* pwszGMName, char* pwszMsg)
         {
            CMainThreadpc_SetMainGreetingMsg445_user(_this, pwszGMName, pwszMsg, CMainThreadpc_SetMainGreetingMsg445_next);
         };
-        void CMainThreadpc_SetRaceGreetingMsg447_wrapper(struct CMainThread* _this, int racenum, char* pwszBossName, char* pwszMsg)
+        static void CMainThreadpc_SetRaceGreetingMsg447_wrapper(struct CMainThread* _this, int racenum, char* pwszBossName, char* pwszMsg)
         {
            CMainThreadpc_SetRaceGreetingMsg447_user(_this, racenum, pwszBossName, pwszMsg, CMainThreadpc_SetRaceGreetingMsg447_next);
         };
-        void CMainThreadpc_TaiwanBillingUserCertify449_wrapper(struct CMainThread* _this, char* szAccount, char byCertify)
+        static void CMainThreadpc_TaiwanBillingUserCertify449_wrapper(struct CMainThread* _this, char* szAccount, char byCertify)
         {
            CMainThreadpc_TaiwanBillingUserCertify449_user(_this, szAccount, byCertify, CMainThreadpc_TaiwanBillingUserCertify449_next);
         };
-        void CMainThreadpc_TransIPKeyInform451_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* pszAccountID, char byUserDgr, char bySubDgr, unsigned int* pdwKey, struct _GLBID* pgidGlobal, unsigned int dwClientIP, bool bChatLock, int16_t iType, char* szCMS, struct _SYSTEMTIME* pstEndDate, int lRemainTime, char byUILock, char* szUILockPW, char byUILockFailCnt, char* szAccountPW, char byUILock_HintIndex, char* uszUILock_HintAnswer, char byUILockFindPassFailCount, bool bIsPcBang, int nTrans, bool bAgeLimit, unsigned int* pdwRequestMoveCharacterSerialList, unsigned int* pdwTournamentCharacterSerialList)
+        static void CMainThreadpc_TransIPKeyInform451_wrapper(struct CMainThread* _this, unsigned int dwAccountSerial, char* pszAccountID, char byUserDgr, char bySubDgr, unsigned int* pdwKey, struct _GLBID* pgidGlobal, unsigned int dwClientIP, bool bChatLock, int16_t iType, char* szCMS, struct _SYSTEMTIME* pstEndDate, int lRemainTime, char byUILock, char* szUILockPW, char byUILockFailCnt, char* szAccountPW, char byUILock_HintIndex, char* uszUILock_HintAnswer, char byUILockFindPassFailCount, bool bIsPcBang, int nTrans, bool bAgeLimit, unsigned int* pdwRequestMoveCharacterSerialList, unsigned int* pdwTournamentCharacterSerialList)
         {
            CMainThreadpc_TransIPKeyInform451_user(_this, dwAccountSerial, pszAccountID, byUserDgr, bySubDgr, pdwKey, pgidGlobal, dwClientIP, bChatLock, iType, szCMS, pstEndDate, lRemainTime, byUILock, szUILockPW, byUILockFailCnt, szAccountPW, byUILock_HintIndex, uszUILock_HintAnswer, byUILockFindPassFailCount, bIsPcBang, nTrans, bAgeLimit, pdwRequestMoveCharacterSerialList, pdwTournamentCharacterSerialList, CMainThreadpc_TransIPKeyInform451_next);
         };
-        void CMainThreadpc_UILockInitResult453_wrapper(struct CMainThread* _this, char* pMsg)
+        static void CMainThreadpc_UILockInitResult453_wrapper(struct CMainThread* _this, char* pMsg)
         {
            CMainThreadpc_UILockInitResult453_user(_this, pMsg, CMainThreadpc_UILockInitResult453_next);
         };
-        void CMainThreadpc_UILockUpdateResult455_wrapper(struct CMainThread* _this, char* pMsg)
+        static void CMainThreadpc_UILockUpdateResult455_wrapper(struct CMainThread* _this, char* pMsg)
         {
            CMainThreadpc_UILockUpdateResult455_user(_this, pMsg, CMainThreadpc_UILockUpdateResult455_next);
         };
-        void CMainThreadpc_UserChatBlockResult457_wrapper(struct CMainThread* _this, char byBlockResult, struct _CLID* pcidTarget, struct _CLID* pcidGM, int bLogin)
+        static void CMainThreadpc_UserChatBlockResult457_wrapper(struct CMainThread* _this, char byBlockResult, struct _CLID* pcidTarget, struct _CLID* pcidGM, int bLogin)
         {
            CMainThreadpc_UserChatBlockResult457_user(_this, byBlockResult, pcidTarget, pcidGM, bLogin, CMainThreadpc_UserChatBlockResult457_next);
         };
-        void CMainThreaddtor_CMainThread459_wrapper(struct CMainThread* _this)
+        static void CMainThreaddtor_CMainThread459_wrapper(struct CMainThread* _this)
         {
            CMainThreaddtor_CMainThread459_user(_this, CMainThreaddtor_CMainThread459_next);
         };
         
-        hook_record CMainThread_functions[] = {
+        static hook_record CMainThread_functions[] = {
         {   (LPVOID)0x1401f8140L,
             (LPVOID *)&CMainThreadAccountServerLogin2_user,
             (LPVOID *)&CMainThreadAccountServerLogin2_next,
@@ -2522,5 +2522,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

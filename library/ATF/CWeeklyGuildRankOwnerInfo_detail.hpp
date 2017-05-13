@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_ptr CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_next(nullptr);
-        info::CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_clbk CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_user(nullptr);
-        info::CWeeklyGuildRankOwnerInfoClear4_ptr CWeeklyGuildRankOwnerInfoClear4_next(nullptr);
-        info::CWeeklyGuildRankOwnerInfoClear4_clbk CWeeklyGuildRankOwnerInfoClear4_user(nullptr);
-        info::CWeeklyGuildRankOwnerInfoIsEmpty6_ptr CWeeklyGuildRankOwnerInfoIsEmpty6_next(nullptr);
-        info::CWeeklyGuildRankOwnerInfoIsEmpty6_clbk CWeeklyGuildRankOwnerInfoIsEmpty6_user(nullptr);
-        info::CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_ptr CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_next(nullptr);
-        info::CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_clbk CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_user(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_ptr CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_next(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_clbk CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_user(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoClear4_ptr CWeeklyGuildRankOwnerInfoClear4_next(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoClear4_clbk CWeeklyGuildRankOwnerInfoClear4_user(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoIsEmpty6_ptr CWeeklyGuildRankOwnerInfoIsEmpty6_next(nullptr);
+        static info::CWeeklyGuildRankOwnerInfoIsEmpty6_clbk CWeeklyGuildRankOwnerInfoIsEmpty6_user(nullptr);
+        static info::CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_ptr CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_next(nullptr);
+        static info::CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_clbk CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_user(nullptr);
         
-        void CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
+        static void CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
         {
            CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_user(_this, CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_next);
         };
-        void CWeeklyGuildRankOwnerInfoClear4_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
+        static void CWeeklyGuildRankOwnerInfoClear4_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
         {
            CWeeklyGuildRankOwnerInfoClear4_user(_this, CWeeklyGuildRankOwnerInfoClear4_next);
         };
-        bool CWeeklyGuildRankOwnerInfoIsEmpty6_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
+        static bool CWeeklyGuildRankOwnerInfoIsEmpty6_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
         {
            return CWeeklyGuildRankOwnerInfoIsEmpty6_user(_this, CWeeklyGuildRankOwnerInfoIsEmpty6_next);
         };
-        void CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
+        static void CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_wrapper(struct CWeeklyGuildRankOwnerInfo* _this)
         {
            CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_user(_this, CWeeklyGuildRankOwnerInfodtor_CWeeklyGuildRankOwnerInfo8_next);
         };
         
-        hook_record CWeeklyGuildRankOwnerInfo_functions[] = {
+        static hook_record CWeeklyGuildRankOwnerInfo_functions[] = {
         {   (LPVOID)0x1402cf7c0L,
             (LPVOID *)&CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_user,
             (LPVOID *)&CWeeklyGuildRankOwnerInfoctor_CWeeklyGuildRankOwnerInfo2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

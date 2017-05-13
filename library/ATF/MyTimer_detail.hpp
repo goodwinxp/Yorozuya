@@ -8,23 +8,23 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::MyTimerGetTime2_ptr MyTimerGetTime2_next(nullptr);
-        info::MyTimerGetTime2_clbk MyTimerGetTime2_user(nullptr);
+        static info::MyTimerGetTime2_ptr MyTimerGetTime2_next(nullptr);
+        static info::MyTimerGetTime2_clbk MyTimerGetTime2_user(nullptr);
         
-        info::MyTimer__TIMEctor_TIME2_ptr MyTimer__TIMEctor_TIME2_next(nullptr);
-        info::MyTimer__TIMEctor_TIME2_clbk MyTimer__TIMEctor_TIME2_user(nullptr);
+        static info::MyTimer__TIMEctor_TIME2_ptr MyTimer__TIMEctor_TIME2_next(nullptr);
+        static info::MyTimer__TIMEctor_TIME2_clbk MyTimer__TIMEctor_TIME2_user(nullptr);
         
-        struct MyTimer::TIME* MyTimerGetTime2_wrapper()
+        static struct MyTimer::TIME* MyTimerGetTime2_wrapper()
         {
            return MyTimerGetTime2_user(MyTimerGetTime2_next);
         };
         
-        void MyTimer__TIMEctor_TIME2_wrapper(struct MyTimer::TIME* _this)
+        static void MyTimer__TIMEctor_TIME2_wrapper(struct MyTimer::TIME* _this)
         {
            MyTimer__TIMEctor_TIME2_user(_this, MyTimer__TIMEctor_TIME2_next);
         };
         
-        hook_record MyTimer_functions[] = {
+        static hook_record MyTimer_functions[] = {
         {   (LPVOID)0x1402f2500L,
             (LPVOID *)&MyTimerGetTime2_user,
             (LPVOID *)&MyTimerGetTime2_next,
@@ -39,5 +39,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

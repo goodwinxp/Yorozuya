@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::INI_SectionGetKey2_ptr INI_SectionGetKey2_next(nullptr);
-        info::INI_SectionGetKey2_clbk INI_SectionGetKey2_user(nullptr);
-        info::INI_Sectionctor_INI_Section4_ptr INI_Sectionctor_INI_Section4_next(nullptr);
-        info::INI_Sectionctor_INI_Section4_clbk INI_Sectionctor_INI_Section4_user(nullptr);
-        info::INI_Sectiondtor_INI_Section8_ptr INI_Sectiondtor_INI_Section8_next(nullptr);
-        info::INI_Sectiondtor_INI_Section8_clbk INI_Sectiondtor_INI_Section8_user(nullptr);
+        static info::INI_SectionGetKey2_ptr INI_SectionGetKey2_next(nullptr);
+        static info::INI_SectionGetKey2_clbk INI_SectionGetKey2_user(nullptr);
+        static info::INI_Sectionctor_INI_Section4_ptr INI_Sectionctor_INI_Section4_next(nullptr);
+        static info::INI_Sectionctor_INI_Section4_clbk INI_Sectionctor_INI_Section4_user(nullptr);
+        static info::INI_Sectiondtor_INI_Section8_ptr INI_Sectiondtor_INI_Section8_next(nullptr);
+        static info::INI_Sectiondtor_INI_Section8_clbk INI_Sectiondtor_INI_Section8_user(nullptr);
         
-        struct INI_Key* INI_SectionGetKey2_wrapper(struct INI_Section* _this, char* strKey)
+        static struct INI_Key* INI_SectionGetKey2_wrapper(struct INI_Section* _this, char* strKey)
         {
            return INI_SectionGetKey2_user(_this, strKey, INI_SectionGetKey2_next);
         };
-        void INI_Sectionctor_INI_Section4_wrapper(struct INI_Section* _this)
+        static void INI_Sectionctor_INI_Section4_wrapper(struct INI_Section* _this)
         {
            INI_Sectionctor_INI_Section4_user(_this, INI_Sectionctor_INI_Section4_next);
         };
-        void INI_Sectiondtor_INI_Section8_wrapper(struct INI_Section* _this)
+        static void INI_Sectiondtor_INI_Section8_wrapper(struct INI_Section* _this)
         {
            INI_Sectiondtor_INI_Section8_user(_this, INI_Sectiondtor_INI_Section8_next);
         };
         
-        hook_record INI_Section_functions[] = {
+        static hook_record INI_Section_functions[] = {
         {   (LPVOID)0x14046c270L,
             (LPVOID *)&INI_SectionGetKey2_user,
             (LPVOID *)&INI_SectionGetKey2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

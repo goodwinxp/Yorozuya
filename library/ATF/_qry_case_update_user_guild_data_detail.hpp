@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_update_user_guild_datasize2_ptr _qry_case_update_user_guild_datasize2_next(nullptr);
-        info::_qry_case_update_user_guild_datasize2_clbk _qry_case_update_user_guild_datasize2_user(nullptr);
+        static info::_qry_case_update_user_guild_datasize2_ptr _qry_case_update_user_guild_datasize2_next(nullptr);
+        static info::_qry_case_update_user_guild_datasize2_clbk _qry_case_update_user_guild_datasize2_user(nullptr);
         
-        int _qry_case_update_user_guild_datasize2_wrapper(struct _qry_case_update_user_guild_data* _this)
+        static int _qry_case_update_user_guild_datasize2_wrapper(struct _qry_case_update_user_guild_data* _this)
         {
            return _qry_case_update_user_guild_datasize2_user(_this, _qry_case_update_user_guild_datasize2_next);
         };
         
-        hook_record _qry_case_update_user_guild_data_functions[] = {
+        static hook_record _qry_case_update_user_guild_data_functions[] = {
         {   (LPVOID)0x14025d670L,
             (LPVOID *)&_qry_case_update_user_guild_datasize2_user,
             (LPVOID *)&_qry_case_update_user_guild_datasize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

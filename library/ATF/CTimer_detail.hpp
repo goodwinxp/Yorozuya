@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTimerCalculateTime1_ptr CTimerCalculateTime1_next(nullptr);
-        info::CTimerCalculateTime1_clbk CTimerCalculateTime1_user(nullptr);
-        info::CTimerGetDuration2_ptr CTimerGetDuration2_next(nullptr);
-        info::CTimerGetDuration2_clbk CTimerGetDuration2_user(nullptr);
-        info::CTimerGetLoopTime3_ptr CTimerGetLoopTime3_next(nullptr);
-        info::CTimerGetLoopTime3_clbk CTimerGetLoopTime3_user(nullptr);
-        info::CTimerGetTicks4_ptr CTimerGetTicks4_next(nullptr);
-        info::CTimerGetTicks4_clbk CTimerGetTicks4_user(nullptr);
-        info::CTimerGetTime5_ptr CTimerGetTime5_next(nullptr);
-        info::CTimerGetTime5_clbk CTimerGetTime5_user(nullptr);
-        info::CTimerSetMinFPS6_ptr CTimerSetMinFPS6_next(nullptr);
-        info::CTimerSetMinFPS6_clbk CTimerSetMinFPS6_user(nullptr);
-        info::CTimerSetTime7_ptr CTimerSetTime7_next(nullptr);
-        info::CTimerSetTime7_clbk CTimerSetTime7_user(nullptr);
+        static info::CTimerCalculateTime1_ptr CTimerCalculateTime1_next(nullptr);
+        static info::CTimerCalculateTime1_clbk CTimerCalculateTime1_user(nullptr);
+        static info::CTimerGetDuration2_ptr CTimerGetDuration2_next(nullptr);
+        static info::CTimerGetDuration2_clbk CTimerGetDuration2_user(nullptr);
+        static info::CTimerGetLoopTime3_ptr CTimerGetLoopTime3_next(nullptr);
+        static info::CTimerGetLoopTime3_clbk CTimerGetLoopTime3_user(nullptr);
+        static info::CTimerGetTicks4_ptr CTimerGetTicks4_next(nullptr);
+        static info::CTimerGetTicks4_clbk CTimerGetTicks4_user(nullptr);
+        static info::CTimerGetTime5_ptr CTimerGetTime5_next(nullptr);
+        static info::CTimerGetTime5_clbk CTimerGetTime5_user(nullptr);
+        static info::CTimerSetMinFPS6_ptr CTimerSetMinFPS6_next(nullptr);
+        static info::CTimerSetMinFPS6_clbk CTimerSetMinFPS6_user(nullptr);
+        static info::CTimerSetTime7_ptr CTimerSetTime7_next(nullptr);
+        static info::CTimerSetTime7_clbk CTimerSetTime7_user(nullptr);
         
-        void CTimerCalculateTime1_wrapper(struct CTimer* _this)
+        static void CTimerCalculateTime1_wrapper(struct CTimer* _this)
         {
            CTimerCalculateTime1_user(_this, CTimerCalculateTime1_next);
         };
-        float CTimerGetDuration2_wrapper(struct CTimer* _this)
+        static float CTimerGetDuration2_wrapper(struct CTimer* _this)
         {
            return CTimerGetDuration2_user(_this, CTimerGetDuration2_next);
         };
-        float CTimerGetLoopTime3_wrapper(struct CTimer* _this)
+        static float CTimerGetLoopTime3_wrapper(struct CTimer* _this)
         {
            return CTimerGetLoopTime3_user(_this, CTimerGetLoopTime3_next);
         };
-        uint64_t CTimerGetTicks4_wrapper(struct CTimer* _this)
+        static uint64_t CTimerGetTicks4_wrapper(struct CTimer* _this)
         {
            return CTimerGetTicks4_user(_this, CTimerGetTicks4_next);
         };
-        float CTimerGetTime5_wrapper(struct CTimer* _this)
+        static float CTimerGetTime5_wrapper(struct CTimer* _this)
         {
            return CTimerGetTime5_user(_this, CTimerGetTime5_next);
         };
-        void CTimerSetMinFPS6_wrapper(struct CTimer* _this, float arg_0)
+        static void CTimerSetMinFPS6_wrapper(struct CTimer* _this, float arg_0)
         {
            CTimerSetMinFPS6_user(_this, arg_0, CTimerSetMinFPS6_next);
         };
-        void CTimerSetTime7_wrapper(struct CTimer* _this, float arg_0)
+        static void CTimerSetTime7_wrapper(struct CTimer* _this, float arg_0)
         {
            CTimerSetTime7_user(_this, arg_0, CTimerSetTime7_next);
         };
         
-        hook_record CTimer_functions[] = {
+        static hook_record CTimer_functions[] = {
         {   (LPVOID)0x1404e2aa0L,
             (LPVOID *)&CTimerCalculateTime1_user,
             (LPVOID *)&CTimerCalculateTime1_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::si_interpretGetCountOfEffect2_ptr si_interpretGetCountOfEffect2_next(nullptr);
-        info::si_interpretGetCountOfEffect2_clbk si_interpretGetCountOfEffect2_user(nullptr);
-        info::si_interpretGetCountOfItem4_ptr si_interpretGetCountOfItem4_next(nullptr);
-        info::si_interpretGetCountOfItem4_clbk si_interpretGetCountOfItem4_user(nullptr);
-        info::si_interpretGetEffectCode6_ptr si_interpretGetEffectCode6_next(nullptr);
-        info::si_interpretGetEffectCode6_clbk si_interpretGetEffectCode6_user(nullptr);
-        info::si_interpretGetEffectTypeCount8_ptr si_interpretGetEffectTypeCount8_next(nullptr);
-        info::si_interpretGetEffectTypeCount8_clbk si_interpretGetEffectTypeCount8_user(nullptr);
-        info::si_interpretGetEffectValue10_ptr si_interpretGetEffectValue10_next(nullptr);
-        info::si_interpretGetEffectValue10_clbk si_interpretGetEffectValue10_user(nullptr);
-        info::si_interpretinit12_ptr si_interpretinit12_next(nullptr);
-        info::si_interpretinit12_clbk si_interpretinit12_user(nullptr);
-        info::si_interpretset_effect_interpret14_ptr si_interpretset_effect_interpret14_next(nullptr);
-        info::si_interpretset_effect_interpret14_clbk si_interpretset_effect_interpret14_user(nullptr);
-        info::si_interpretctor_si_interpret16_ptr si_interpretctor_si_interpret16_next(nullptr);
-        info::si_interpretctor_si_interpret16_clbk si_interpretctor_si_interpret16_user(nullptr);
+        static info::si_interpretGetCountOfEffect2_ptr si_interpretGetCountOfEffect2_next(nullptr);
+        static info::si_interpretGetCountOfEffect2_clbk si_interpretGetCountOfEffect2_user(nullptr);
+        static info::si_interpretGetCountOfItem4_ptr si_interpretGetCountOfItem4_next(nullptr);
+        static info::si_interpretGetCountOfItem4_clbk si_interpretGetCountOfItem4_user(nullptr);
+        static info::si_interpretGetEffectCode6_ptr si_interpretGetEffectCode6_next(nullptr);
+        static info::si_interpretGetEffectCode6_clbk si_interpretGetEffectCode6_user(nullptr);
+        static info::si_interpretGetEffectTypeCount8_ptr si_interpretGetEffectTypeCount8_next(nullptr);
+        static info::si_interpretGetEffectTypeCount8_clbk si_interpretGetEffectTypeCount8_user(nullptr);
+        static info::si_interpretGetEffectValue10_ptr si_interpretGetEffectValue10_next(nullptr);
+        static info::si_interpretGetEffectValue10_clbk si_interpretGetEffectValue10_user(nullptr);
+        static info::si_interpretinit12_ptr si_interpretinit12_next(nullptr);
+        static info::si_interpretinit12_clbk si_interpretinit12_user(nullptr);
+        static info::si_interpretset_effect_interpret14_ptr si_interpretset_effect_interpret14_next(nullptr);
+        static info::si_interpretset_effect_interpret14_clbk si_interpretset_effect_interpret14_user(nullptr);
+        static info::si_interpretctor_si_interpret16_ptr si_interpretctor_si_interpret16_next(nullptr);
+        static info::si_interpretctor_si_interpret16_clbk si_interpretctor_si_interpret16_user(nullptr);
         
-        char si_interpretGetCountOfEffect2_wrapper(struct si_interpret* _this, int idx)
+        static char si_interpretGetCountOfEffect2_wrapper(struct si_interpret* _this, int idx)
         {
            return si_interpretGetCountOfEffect2_user(_this, idx, si_interpretGetCountOfEffect2_next);
         };
-        char si_interpretGetCountOfItem4_wrapper(struct si_interpret* _this, int idx)
+        static char si_interpretGetCountOfItem4_wrapper(struct si_interpret* _this, int idx)
         {
            return si_interpretGetCountOfItem4_user(_this, idx, si_interpretGetCountOfItem4_next);
         };
-        int si_interpretGetEffectCode6_wrapper(struct si_interpret* _this, int idx)
+        static int si_interpretGetEffectCode6_wrapper(struct si_interpret* _this, int idx)
         {
            return si_interpretGetEffectCode6_user(_this, idx, si_interpretGetEffectCode6_next);
         };
-        char si_interpretGetEffectTypeCount8_wrapper(struct si_interpret* _this)
+        static char si_interpretGetEffectTypeCount8_wrapper(struct si_interpret* _this)
         {
            return si_interpretGetEffectTypeCount8_user(_this, si_interpretGetEffectTypeCount8_next);
         };
-        float si_interpretGetEffectValue10_wrapper(struct si_interpret* _this, int idx)
+        static float si_interpretGetEffectValue10_wrapper(struct si_interpret* _this, int idx)
         {
            return si_interpretGetEffectValue10_user(_this, idx, si_interpretGetEffectValue10_next);
         };
-        void si_interpretinit12_wrapper(struct si_interpret* _this)
+        static void si_interpretinit12_wrapper(struct si_interpret* _this)
         {
            si_interpretinit12_user(_this, si_interpretinit12_next);
         };
-        bool si_interpretset_effect_interpret14_wrapper(struct si_interpret* _this, struct _SetItemEff_fld* pFld)
+        static bool si_interpretset_effect_interpret14_wrapper(struct si_interpret* _this, struct _SetItemEff_fld* pFld)
         {
            return si_interpretset_effect_interpret14_user(_this, pFld, si_interpretset_effect_interpret14_next);
         };
-        void si_interpretctor_si_interpret16_wrapper(struct si_interpret* _this)
+        static void si_interpretctor_si_interpret16_wrapper(struct si_interpret* _this)
         {
            si_interpretctor_si_interpret16_user(_this, si_interpretctor_si_interpret16_next);
         };
         
-        hook_record si_interpret_functions[] = {
+        static hook_record si_interpret_functions[] = {
         {   (LPVOID)0x1402e3c20L,
             (LPVOID *)&si_interpretGetCountOfEffect2_user,
             (LPVOID *)&si_interpretGetCountOfEffect2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

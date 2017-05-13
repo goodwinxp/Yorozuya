@@ -8,441 +8,441 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAnimusAIInit2_ptr CAnimusAIInit2_next(nullptr);
-        info::CAnimusAIInit2_clbk CAnimusAIInit2_user(nullptr);
-        info::CAnimusAction4_ptr CAnimusAction4_next(nullptr);
-        info::CAnimusAction4_clbk CAnimusAction4_user(nullptr);
-        info::CAnimusAlterExp6_ptr CAnimusAlterExp6_next(nullptr);
-        info::CAnimusAlterExp6_clbk CAnimusAlterExp6_user(nullptr);
-        info::CAnimusAlterExp_MasterReport8_ptr CAnimusAlterExp_MasterReport8_next(nullptr);
-        info::CAnimusAlterExp_MasterReport8_clbk CAnimusAlterExp_MasterReport8_user(nullptr);
-        info::CAnimusAlterFP_MasterReport10_ptr CAnimusAlterFP_MasterReport10_next(nullptr);
-        info::CAnimusAlterFP_MasterReport10_clbk CAnimusAlterFP_MasterReport10_user(nullptr);
-        info::CAnimusAlterHP_MasterReport12_ptr CAnimusAlterHP_MasterReport12_next(nullptr);
-        info::CAnimusAlterHP_MasterReport12_clbk CAnimusAlterHP_MasterReport12_user(nullptr);
-        info::CAnimusAlterMode_MasterReport14_ptr CAnimusAlterMode_MasterReport14_next(nullptr);
-        info::CAnimusAlterMode_MasterReport14_clbk CAnimusAlterMode_MasterReport14_user(nullptr);
-        info::CAnimusAttack16_ptr CAnimusAttack16_next(nullptr);
-        info::CAnimusAttack16_clbk CAnimusAttack16_user(nullptr);
-        info::CAnimusAttackableHeight18_ptr CAnimusAttackableHeight18_next(nullptr);
-        info::CAnimusAttackableHeight18_clbk CAnimusAttackableHeight18_user(nullptr);
-        info::CAnimusctor_CAnimus20_ptr CAnimusctor_CAnimus20_next(nullptr);
-        info::CAnimusctor_CAnimus20_clbk CAnimusctor_CAnimus20_user(nullptr);
-        info::CAnimusCalcAttExp22_ptr CAnimusCalcAttExp22_next(nullptr);
-        info::CAnimusCalcAttExp22_clbk CAnimusCalcAttExp22_user(nullptr);
-        info::CAnimusCalcDefExp24_ptr CAnimusCalcDefExp24_next(nullptr);
-        info::CAnimusCalcDefExp24_clbk CAnimusCalcDefExp24_user(nullptr);
-        info::CAnimusChangeMode26_ptr CAnimusChangeMode26_next(nullptr);
-        info::CAnimusChangeMode26_clbk CAnimusChangeMode26_user(nullptr);
-        info::CAnimusChangeMode_MasterCommand28_ptr CAnimusChangeMode_MasterCommand28_next(nullptr);
-        info::CAnimusChangeMode_MasterCommand28_clbk CAnimusChangeMode_MasterCommand28_user(nullptr);
-        info::CAnimusChangeTarget_MasterCommand30_ptr CAnimusChangeTarget_MasterCommand30_next(nullptr);
-        info::CAnimusChangeTarget_MasterCommand30_clbk CAnimusChangeTarget_MasterCommand30_user(nullptr);
-        info::CAnimusCheckPosInTown32_ptr CAnimusCheckPosInTown32_next(nullptr);
-        info::CAnimusCheckPosInTown32_clbk CAnimusCheckPosInTown32_user(nullptr);
-        info::CAnimusCreate34_ptr CAnimusCreate34_next(nullptr);
-        info::CAnimusCreate34_clbk CAnimusCreate34_user(nullptr);
-        info::CAnimusDestroy36_ptr CAnimusDestroy36_next(nullptr);
-        info::CAnimusDestroy36_clbk CAnimusDestroy36_user(nullptr);
-        info::CAnimusGetAttackDP38_ptr CAnimusGetAttackDP38_next(nullptr);
-        info::CAnimusGetAttackDP38_clbk CAnimusGetAttackDP38_user(nullptr);
-        info::CAnimusGetAttackPart40_ptr CAnimusGetAttackPart40_next(nullptr);
-        info::CAnimusGetAttackPart40_clbk CAnimusGetAttackPart40_user(nullptr);
-        info::CAnimusGetAttackRange42_ptr CAnimusGetAttackRange42_next(nullptr);
-        info::CAnimusGetAttackRange42_clbk CAnimusGetAttackRange42_user(nullptr);
-        info::CAnimusGetDefFC44_ptr CAnimusGetDefFC44_next(nullptr);
-        info::CAnimusGetDefFC44_clbk CAnimusGetDefFC44_user(nullptr);
-        info::CAnimusGetDefFacing46_ptr CAnimusGetDefFacing46_next(nullptr);
-        info::CAnimusGetDefFacing46_clbk CAnimusGetDefFacing46_user(nullptr);
-        info::CAnimusGetDefGap48_ptr CAnimusGetDefGap48_next(nullptr);
-        info::CAnimusGetDefGap48_clbk CAnimusGetDefGap48_user(nullptr);
-        info::CAnimusGetDefSkill50_ptr CAnimusGetDefSkill50_next(nullptr);
-        info::CAnimusGetDefSkill50_clbk CAnimusGetDefSkill50_user(nullptr);
-        info::CAnimusGetFireTol52_ptr CAnimusGetFireTol52_next(nullptr);
-        info::CAnimusGetFireTol52_clbk CAnimusGetFireTol52_user(nullptr);
-        info::CAnimusGetGenAttackProb54_ptr CAnimusGetGenAttackProb54_next(nullptr);
-        info::CAnimusGetGenAttackProb54_clbk CAnimusGetGenAttackProb54_user(nullptr);
-        info::CAnimusGetHP56_ptr CAnimusGetHP56_next(nullptr);
-        info::CAnimusGetHP56_clbk CAnimusGetHP56_user(nullptr);
-        info::CAnimusGetLevel58_ptr CAnimusGetLevel58_next(nullptr);
-        info::CAnimusGetLevel58_clbk CAnimusGetLevel58_user(nullptr);
-        info::CAnimusGetMaxHP60_ptr CAnimusGetMaxHP60_next(nullptr);
-        info::CAnimusGetMaxHP60_clbk CAnimusGetMaxHP60_user(nullptr);
-        info::CAnimusGetMaxLevel62_ptr CAnimusGetMaxLevel62_next(nullptr);
-        info::CAnimusGetMaxLevel62_clbk CAnimusGetMaxLevel62_user(nullptr);
-        info::CAnimusGetMoveTarget64_ptr CAnimusGetMoveTarget64_next(nullptr);
-        info::CAnimusGetMoveTarget64_clbk CAnimusGetMoveTarget64_user(nullptr);
-        info::CAnimusGetNewMonSerial66_ptr CAnimusGetNewMonSerial66_next(nullptr);
-        info::CAnimusGetNewMonSerial66_clbk CAnimusGetNewMonSerial66_user(nullptr);
-        info::CAnimusGetObjName68_ptr CAnimusGetObjName68_next(nullptr);
-        info::CAnimusGetObjName68_clbk CAnimusGetObjName68_user(nullptr);
-        info::CAnimusGetObjRace70_ptr CAnimusGetObjRace70_next(nullptr);
-        info::CAnimusGetObjRace70_clbk CAnimusGetObjRace70_user(nullptr);
-        info::CAnimusGetSoilTol72_ptr CAnimusGetSoilTol72_next(nullptr);
-        info::CAnimusGetSoilTol72_clbk CAnimusGetSoilTol72_user(nullptr);
-        info::CAnimusGetTarget74_ptr CAnimusGetTarget74_next(nullptr);
-        info::CAnimusGetTarget74_clbk CAnimusGetTarget74_user(nullptr);
-        info::CAnimusGetWaterTol76_ptr CAnimusGetWaterTol76_next(nullptr);
-        info::CAnimusGetWaterTol76_clbk CAnimusGetWaterTol76_user(nullptr);
-        info::CAnimusGetWeaponAdjust78_ptr CAnimusGetWeaponAdjust78_next(nullptr);
-        info::CAnimusGetWeaponAdjust78_clbk CAnimusGetWeaponAdjust78_user(nullptr);
-        info::CAnimusGetWeaponClass80_ptr CAnimusGetWeaponClass80_next(nullptr);
-        info::CAnimusGetWeaponClass80_clbk CAnimusGetWeaponClass80_user(nullptr);
-        info::CAnimusGetWidth82_ptr CAnimusGetWidth82_next(nullptr);
-        info::CAnimusGetWidth82_clbk CAnimusGetWidth82_user(nullptr);
-        info::CAnimusGetWindTol84_ptr CAnimusGetWindTol84_next(nullptr);
-        info::CAnimusGetWindTol84_clbk CAnimusGetWindTol84_user(nullptr);
-        info::CAnimusHeal86_ptr CAnimusHeal86_next(nullptr);
-        info::CAnimusHeal86_clbk CAnimusHeal86_user(nullptr);
-        info::CAnimusInit88_ptr CAnimusInit88_next(nullptr);
-        info::CAnimusInit88_clbk CAnimusInit88_user(nullptr);
-        info::CAnimusIsBeAttackedAble90_ptr CAnimusIsBeAttackedAble90_next(nullptr);
-        info::CAnimusIsBeAttackedAble90_clbk CAnimusIsBeAttackedAble90_user(nullptr);
-        info::CAnimusIsInTown92_ptr CAnimusIsInTown92_next(nullptr);
-        info::CAnimusIsInTown92_clbk CAnimusIsInTown92_user(nullptr);
-        info::CAnimusIsValidTarget94_ptr CAnimusIsValidTarget94_next(nullptr);
-        info::CAnimusIsValidTarget94_clbk CAnimusIsValidTarget94_user(nullptr);
-        info::CAnimusLifeTimeCheck96_ptr CAnimusLifeTimeCheck96_next(nullptr);
-        info::CAnimusLifeTimeCheck96_clbk CAnimusLifeTimeCheck96_user(nullptr);
-        info::CAnimusLoop98_ptr CAnimusLoop98_next(nullptr);
-        info::CAnimusLoop98_clbk CAnimusLoop98_user(nullptr);
-        info::CAnimusMasterAttack_MasterInform100_ptr CAnimusMasterAttack_MasterInform100_next(nullptr);
-        info::CAnimusMasterAttack_MasterInform100_clbk CAnimusMasterAttack_MasterInform100_user(nullptr);
-        info::CAnimusMasterBeAttacked_MasterInform102_ptr CAnimusMasterBeAttacked_MasterInform102_next(nullptr);
-        info::CAnimusMasterBeAttacked_MasterInform102_clbk CAnimusMasterBeAttacked_MasterInform102_user(nullptr);
-        info::CAnimusOutOfSec104_ptr CAnimusOutOfSec104_next(nullptr);
-        info::CAnimusOutOfSec104_clbk CAnimusOutOfSec104_user(nullptr);
-        info::CAnimusProcess106_ptr CAnimusProcess106_next(nullptr);
-        info::CAnimusProcess106_clbk CAnimusProcess106_user(nullptr);
-        info::CAnimusRecvKillMessage108_ptr CAnimusRecvKillMessage108_next(nullptr);
-        info::CAnimusRecvKillMessage108_clbk CAnimusRecvKillMessage108_user(nullptr);
-        info::CAnimusReturn_MasterRequest110_ptr CAnimusReturn_MasterRequest110_next(nullptr);
-        info::CAnimusReturn_MasterRequest110_clbk CAnimusReturn_MasterRequest110_user(nullptr);
-        info::CAnimusRobbedHP112_ptr CAnimusRobbedHP112_next(nullptr);
-        info::CAnimusRobbedHP112_clbk CAnimusRobbedHP112_user(nullptr);
-        info::CAnimusSearchNearEnemy114_ptr CAnimusSearchNearEnemy114_next(nullptr);
-        info::CAnimusSearchNearEnemy114_clbk CAnimusSearchNearEnemy114_user(nullptr);
-        info::CAnimusSearchNearPlayerAttack116_ptr CAnimusSearchNearPlayerAttack116_next(nullptr);
-        info::CAnimusSearchNearPlayerAttack116_clbk CAnimusSearchNearPlayerAttack116_user(nullptr);
-        info::CAnimusSendMsg_AnimusActHealInform118_ptr CAnimusSendMsg_AnimusActHealInform118_next(nullptr);
-        info::CAnimusSendMsg_AnimusActHealInform118_clbk CAnimusSendMsg_AnimusActHealInform118_user(nullptr);
-        info::CAnimusSendMsg_Attack_Gen120_ptr CAnimusSendMsg_Attack_Gen120_next(nullptr);
-        info::CAnimusSendMsg_Attack_Gen120_clbk CAnimusSendMsg_Attack_Gen120_user(nullptr);
-        info::CAnimusSendMsg_Create122_ptr CAnimusSendMsg_Create122_next(nullptr);
-        info::CAnimusSendMsg_Create122_clbk CAnimusSendMsg_Create122_user(nullptr);
-        info::CAnimusSendMsg_Destroy124_ptr CAnimusSendMsg_Destroy124_next(nullptr);
-        info::CAnimusSendMsg_Destroy124_clbk CAnimusSendMsg_Destroy124_user(nullptr);
-        info::CAnimusSendMsg_FixPosition126_ptr CAnimusSendMsg_FixPosition126_next(nullptr);
-        info::CAnimusSendMsg_FixPosition126_clbk CAnimusSendMsg_FixPosition126_user(nullptr);
-        info::CAnimusSendMsg_LevelUp128_ptr CAnimusSendMsg_LevelUp128_next(nullptr);
-        info::CAnimusSendMsg_LevelUp128_clbk CAnimusSendMsg_LevelUp128_user(nullptr);
-        info::CAnimusSendMsg_Move130_ptr CAnimusSendMsg_Move130_next(nullptr);
-        info::CAnimusSendMsg_Move130_clbk CAnimusSendMsg_Move130_user(nullptr);
-        info::CAnimusSendMsg_RealMovePoint132_ptr CAnimusSendMsg_RealMovePoint132_next(nullptr);
-        info::CAnimusSendMsg_RealMovePoint132_clbk CAnimusSendMsg_RealMovePoint132_user(nullptr);
-        info::CAnimusSetDamage134_ptr CAnimusSetDamage134_next(nullptr);
-        info::CAnimusSetDamage134_clbk CAnimusSetDamage134_user(nullptr);
-        info::CAnimusSetStaticMember136_ptr CAnimusSetStaticMember136_next(nullptr);
-        info::CAnimusSetStaticMember136_clbk CAnimusSetStaticMember136_user(nullptr);
-        info::CAnimusTransPoToMaster138_ptr CAnimusTransPoToMaster138_next(nullptr);
-        info::CAnimusTransPoToMaster138_clbk CAnimusTransPoToMaster138_user(nullptr);
-        info::CAnimus_ProcComsumeMaterFP140_ptr CAnimus_ProcComsumeMaterFP140_next(nullptr);
-        info::CAnimus_ProcComsumeMaterFP140_clbk CAnimus_ProcComsumeMaterFP140_user(nullptr);
-        info::CAnimusmake_gen_attack_param146_ptr CAnimusmake_gen_attack_param146_next(nullptr);
-        info::CAnimusmake_gen_attack_param146_clbk CAnimusmake_gen_attack_param146_user(nullptr);
-        info::CAnimusdtor_CAnimus148_ptr CAnimusdtor_CAnimus148_next(nullptr);
-        info::CAnimusdtor_CAnimus148_clbk CAnimusdtor_CAnimus148_user(nullptr);
+        static info::CAnimusAIInit2_ptr CAnimusAIInit2_next(nullptr);
+        static info::CAnimusAIInit2_clbk CAnimusAIInit2_user(nullptr);
+        static info::CAnimusAction4_ptr CAnimusAction4_next(nullptr);
+        static info::CAnimusAction4_clbk CAnimusAction4_user(nullptr);
+        static info::CAnimusAlterExp6_ptr CAnimusAlterExp6_next(nullptr);
+        static info::CAnimusAlterExp6_clbk CAnimusAlterExp6_user(nullptr);
+        static info::CAnimusAlterExp_MasterReport8_ptr CAnimusAlterExp_MasterReport8_next(nullptr);
+        static info::CAnimusAlterExp_MasterReport8_clbk CAnimusAlterExp_MasterReport8_user(nullptr);
+        static info::CAnimusAlterFP_MasterReport10_ptr CAnimusAlterFP_MasterReport10_next(nullptr);
+        static info::CAnimusAlterFP_MasterReport10_clbk CAnimusAlterFP_MasterReport10_user(nullptr);
+        static info::CAnimusAlterHP_MasterReport12_ptr CAnimusAlterHP_MasterReport12_next(nullptr);
+        static info::CAnimusAlterHP_MasterReport12_clbk CAnimusAlterHP_MasterReport12_user(nullptr);
+        static info::CAnimusAlterMode_MasterReport14_ptr CAnimusAlterMode_MasterReport14_next(nullptr);
+        static info::CAnimusAlterMode_MasterReport14_clbk CAnimusAlterMode_MasterReport14_user(nullptr);
+        static info::CAnimusAttack16_ptr CAnimusAttack16_next(nullptr);
+        static info::CAnimusAttack16_clbk CAnimusAttack16_user(nullptr);
+        static info::CAnimusAttackableHeight18_ptr CAnimusAttackableHeight18_next(nullptr);
+        static info::CAnimusAttackableHeight18_clbk CAnimusAttackableHeight18_user(nullptr);
+        static info::CAnimusctor_CAnimus20_ptr CAnimusctor_CAnimus20_next(nullptr);
+        static info::CAnimusctor_CAnimus20_clbk CAnimusctor_CAnimus20_user(nullptr);
+        static info::CAnimusCalcAttExp22_ptr CAnimusCalcAttExp22_next(nullptr);
+        static info::CAnimusCalcAttExp22_clbk CAnimusCalcAttExp22_user(nullptr);
+        static info::CAnimusCalcDefExp24_ptr CAnimusCalcDefExp24_next(nullptr);
+        static info::CAnimusCalcDefExp24_clbk CAnimusCalcDefExp24_user(nullptr);
+        static info::CAnimusChangeMode26_ptr CAnimusChangeMode26_next(nullptr);
+        static info::CAnimusChangeMode26_clbk CAnimusChangeMode26_user(nullptr);
+        static info::CAnimusChangeMode_MasterCommand28_ptr CAnimusChangeMode_MasterCommand28_next(nullptr);
+        static info::CAnimusChangeMode_MasterCommand28_clbk CAnimusChangeMode_MasterCommand28_user(nullptr);
+        static info::CAnimusChangeTarget_MasterCommand30_ptr CAnimusChangeTarget_MasterCommand30_next(nullptr);
+        static info::CAnimusChangeTarget_MasterCommand30_clbk CAnimusChangeTarget_MasterCommand30_user(nullptr);
+        static info::CAnimusCheckPosInTown32_ptr CAnimusCheckPosInTown32_next(nullptr);
+        static info::CAnimusCheckPosInTown32_clbk CAnimusCheckPosInTown32_user(nullptr);
+        static info::CAnimusCreate34_ptr CAnimusCreate34_next(nullptr);
+        static info::CAnimusCreate34_clbk CAnimusCreate34_user(nullptr);
+        static info::CAnimusDestroy36_ptr CAnimusDestroy36_next(nullptr);
+        static info::CAnimusDestroy36_clbk CAnimusDestroy36_user(nullptr);
+        static info::CAnimusGetAttackDP38_ptr CAnimusGetAttackDP38_next(nullptr);
+        static info::CAnimusGetAttackDP38_clbk CAnimusGetAttackDP38_user(nullptr);
+        static info::CAnimusGetAttackPart40_ptr CAnimusGetAttackPart40_next(nullptr);
+        static info::CAnimusGetAttackPart40_clbk CAnimusGetAttackPart40_user(nullptr);
+        static info::CAnimusGetAttackRange42_ptr CAnimusGetAttackRange42_next(nullptr);
+        static info::CAnimusGetAttackRange42_clbk CAnimusGetAttackRange42_user(nullptr);
+        static info::CAnimusGetDefFC44_ptr CAnimusGetDefFC44_next(nullptr);
+        static info::CAnimusGetDefFC44_clbk CAnimusGetDefFC44_user(nullptr);
+        static info::CAnimusGetDefFacing46_ptr CAnimusGetDefFacing46_next(nullptr);
+        static info::CAnimusGetDefFacing46_clbk CAnimusGetDefFacing46_user(nullptr);
+        static info::CAnimusGetDefGap48_ptr CAnimusGetDefGap48_next(nullptr);
+        static info::CAnimusGetDefGap48_clbk CAnimusGetDefGap48_user(nullptr);
+        static info::CAnimusGetDefSkill50_ptr CAnimusGetDefSkill50_next(nullptr);
+        static info::CAnimusGetDefSkill50_clbk CAnimusGetDefSkill50_user(nullptr);
+        static info::CAnimusGetFireTol52_ptr CAnimusGetFireTol52_next(nullptr);
+        static info::CAnimusGetFireTol52_clbk CAnimusGetFireTol52_user(nullptr);
+        static info::CAnimusGetGenAttackProb54_ptr CAnimusGetGenAttackProb54_next(nullptr);
+        static info::CAnimusGetGenAttackProb54_clbk CAnimusGetGenAttackProb54_user(nullptr);
+        static info::CAnimusGetHP56_ptr CAnimusGetHP56_next(nullptr);
+        static info::CAnimusGetHP56_clbk CAnimusGetHP56_user(nullptr);
+        static info::CAnimusGetLevel58_ptr CAnimusGetLevel58_next(nullptr);
+        static info::CAnimusGetLevel58_clbk CAnimusGetLevel58_user(nullptr);
+        static info::CAnimusGetMaxHP60_ptr CAnimusGetMaxHP60_next(nullptr);
+        static info::CAnimusGetMaxHP60_clbk CAnimusGetMaxHP60_user(nullptr);
+        static info::CAnimusGetMaxLevel62_ptr CAnimusGetMaxLevel62_next(nullptr);
+        static info::CAnimusGetMaxLevel62_clbk CAnimusGetMaxLevel62_user(nullptr);
+        static info::CAnimusGetMoveTarget64_ptr CAnimusGetMoveTarget64_next(nullptr);
+        static info::CAnimusGetMoveTarget64_clbk CAnimusGetMoveTarget64_user(nullptr);
+        static info::CAnimusGetNewMonSerial66_ptr CAnimusGetNewMonSerial66_next(nullptr);
+        static info::CAnimusGetNewMonSerial66_clbk CAnimusGetNewMonSerial66_user(nullptr);
+        static info::CAnimusGetObjName68_ptr CAnimusGetObjName68_next(nullptr);
+        static info::CAnimusGetObjName68_clbk CAnimusGetObjName68_user(nullptr);
+        static info::CAnimusGetObjRace70_ptr CAnimusGetObjRace70_next(nullptr);
+        static info::CAnimusGetObjRace70_clbk CAnimusGetObjRace70_user(nullptr);
+        static info::CAnimusGetSoilTol72_ptr CAnimusGetSoilTol72_next(nullptr);
+        static info::CAnimusGetSoilTol72_clbk CAnimusGetSoilTol72_user(nullptr);
+        static info::CAnimusGetTarget74_ptr CAnimusGetTarget74_next(nullptr);
+        static info::CAnimusGetTarget74_clbk CAnimusGetTarget74_user(nullptr);
+        static info::CAnimusGetWaterTol76_ptr CAnimusGetWaterTol76_next(nullptr);
+        static info::CAnimusGetWaterTol76_clbk CAnimusGetWaterTol76_user(nullptr);
+        static info::CAnimusGetWeaponAdjust78_ptr CAnimusGetWeaponAdjust78_next(nullptr);
+        static info::CAnimusGetWeaponAdjust78_clbk CAnimusGetWeaponAdjust78_user(nullptr);
+        static info::CAnimusGetWeaponClass80_ptr CAnimusGetWeaponClass80_next(nullptr);
+        static info::CAnimusGetWeaponClass80_clbk CAnimusGetWeaponClass80_user(nullptr);
+        static info::CAnimusGetWidth82_ptr CAnimusGetWidth82_next(nullptr);
+        static info::CAnimusGetWidth82_clbk CAnimusGetWidth82_user(nullptr);
+        static info::CAnimusGetWindTol84_ptr CAnimusGetWindTol84_next(nullptr);
+        static info::CAnimusGetWindTol84_clbk CAnimusGetWindTol84_user(nullptr);
+        static info::CAnimusHeal86_ptr CAnimusHeal86_next(nullptr);
+        static info::CAnimusHeal86_clbk CAnimusHeal86_user(nullptr);
+        static info::CAnimusInit88_ptr CAnimusInit88_next(nullptr);
+        static info::CAnimusInit88_clbk CAnimusInit88_user(nullptr);
+        static info::CAnimusIsBeAttackedAble90_ptr CAnimusIsBeAttackedAble90_next(nullptr);
+        static info::CAnimusIsBeAttackedAble90_clbk CAnimusIsBeAttackedAble90_user(nullptr);
+        static info::CAnimusIsInTown92_ptr CAnimusIsInTown92_next(nullptr);
+        static info::CAnimusIsInTown92_clbk CAnimusIsInTown92_user(nullptr);
+        static info::CAnimusIsValidTarget94_ptr CAnimusIsValidTarget94_next(nullptr);
+        static info::CAnimusIsValidTarget94_clbk CAnimusIsValidTarget94_user(nullptr);
+        static info::CAnimusLifeTimeCheck96_ptr CAnimusLifeTimeCheck96_next(nullptr);
+        static info::CAnimusLifeTimeCheck96_clbk CAnimusLifeTimeCheck96_user(nullptr);
+        static info::CAnimusLoop98_ptr CAnimusLoop98_next(nullptr);
+        static info::CAnimusLoop98_clbk CAnimusLoop98_user(nullptr);
+        static info::CAnimusMasterAttack_MasterInform100_ptr CAnimusMasterAttack_MasterInform100_next(nullptr);
+        static info::CAnimusMasterAttack_MasterInform100_clbk CAnimusMasterAttack_MasterInform100_user(nullptr);
+        static info::CAnimusMasterBeAttacked_MasterInform102_ptr CAnimusMasterBeAttacked_MasterInform102_next(nullptr);
+        static info::CAnimusMasterBeAttacked_MasterInform102_clbk CAnimusMasterBeAttacked_MasterInform102_user(nullptr);
+        static info::CAnimusOutOfSec104_ptr CAnimusOutOfSec104_next(nullptr);
+        static info::CAnimusOutOfSec104_clbk CAnimusOutOfSec104_user(nullptr);
+        static info::CAnimusProcess106_ptr CAnimusProcess106_next(nullptr);
+        static info::CAnimusProcess106_clbk CAnimusProcess106_user(nullptr);
+        static info::CAnimusRecvKillMessage108_ptr CAnimusRecvKillMessage108_next(nullptr);
+        static info::CAnimusRecvKillMessage108_clbk CAnimusRecvKillMessage108_user(nullptr);
+        static info::CAnimusReturn_MasterRequest110_ptr CAnimusReturn_MasterRequest110_next(nullptr);
+        static info::CAnimusReturn_MasterRequest110_clbk CAnimusReturn_MasterRequest110_user(nullptr);
+        static info::CAnimusRobbedHP112_ptr CAnimusRobbedHP112_next(nullptr);
+        static info::CAnimusRobbedHP112_clbk CAnimusRobbedHP112_user(nullptr);
+        static info::CAnimusSearchNearEnemy114_ptr CAnimusSearchNearEnemy114_next(nullptr);
+        static info::CAnimusSearchNearEnemy114_clbk CAnimusSearchNearEnemy114_user(nullptr);
+        static info::CAnimusSearchNearPlayerAttack116_ptr CAnimusSearchNearPlayerAttack116_next(nullptr);
+        static info::CAnimusSearchNearPlayerAttack116_clbk CAnimusSearchNearPlayerAttack116_user(nullptr);
+        static info::CAnimusSendMsg_AnimusActHealInform118_ptr CAnimusSendMsg_AnimusActHealInform118_next(nullptr);
+        static info::CAnimusSendMsg_AnimusActHealInform118_clbk CAnimusSendMsg_AnimusActHealInform118_user(nullptr);
+        static info::CAnimusSendMsg_Attack_Gen120_ptr CAnimusSendMsg_Attack_Gen120_next(nullptr);
+        static info::CAnimusSendMsg_Attack_Gen120_clbk CAnimusSendMsg_Attack_Gen120_user(nullptr);
+        static info::CAnimusSendMsg_Create122_ptr CAnimusSendMsg_Create122_next(nullptr);
+        static info::CAnimusSendMsg_Create122_clbk CAnimusSendMsg_Create122_user(nullptr);
+        static info::CAnimusSendMsg_Destroy124_ptr CAnimusSendMsg_Destroy124_next(nullptr);
+        static info::CAnimusSendMsg_Destroy124_clbk CAnimusSendMsg_Destroy124_user(nullptr);
+        static info::CAnimusSendMsg_FixPosition126_ptr CAnimusSendMsg_FixPosition126_next(nullptr);
+        static info::CAnimusSendMsg_FixPosition126_clbk CAnimusSendMsg_FixPosition126_user(nullptr);
+        static info::CAnimusSendMsg_LevelUp128_ptr CAnimusSendMsg_LevelUp128_next(nullptr);
+        static info::CAnimusSendMsg_LevelUp128_clbk CAnimusSendMsg_LevelUp128_user(nullptr);
+        static info::CAnimusSendMsg_Move130_ptr CAnimusSendMsg_Move130_next(nullptr);
+        static info::CAnimusSendMsg_Move130_clbk CAnimusSendMsg_Move130_user(nullptr);
+        static info::CAnimusSendMsg_RealMovePoint132_ptr CAnimusSendMsg_RealMovePoint132_next(nullptr);
+        static info::CAnimusSendMsg_RealMovePoint132_clbk CAnimusSendMsg_RealMovePoint132_user(nullptr);
+        static info::CAnimusSetDamage134_ptr CAnimusSetDamage134_next(nullptr);
+        static info::CAnimusSetDamage134_clbk CAnimusSetDamage134_user(nullptr);
+        static info::CAnimusSetStaticMember136_ptr CAnimusSetStaticMember136_next(nullptr);
+        static info::CAnimusSetStaticMember136_clbk CAnimusSetStaticMember136_user(nullptr);
+        static info::CAnimusTransPoToMaster138_ptr CAnimusTransPoToMaster138_next(nullptr);
+        static info::CAnimusTransPoToMaster138_clbk CAnimusTransPoToMaster138_user(nullptr);
+        static info::CAnimus_ProcComsumeMaterFP140_ptr CAnimus_ProcComsumeMaterFP140_next(nullptr);
+        static info::CAnimus_ProcComsumeMaterFP140_clbk CAnimus_ProcComsumeMaterFP140_user(nullptr);
+        static info::CAnimusmake_gen_attack_param146_ptr CAnimusmake_gen_attack_param146_next(nullptr);
+        static info::CAnimusmake_gen_attack_param146_clbk CAnimusmake_gen_attack_param146_user(nullptr);
+        static info::CAnimusdtor_CAnimus148_ptr CAnimusdtor_CAnimus148_next(nullptr);
+        static info::CAnimusdtor_CAnimus148_clbk CAnimusdtor_CAnimus148_user(nullptr);
         
-        void CAnimusAIInit2_wrapper(struct CAnimus* _this)
+        static void CAnimusAIInit2_wrapper(struct CAnimus* _this)
         {
            CAnimusAIInit2_user(_this, CAnimusAIInit2_next);
         };
-        void CAnimusAction4_wrapper(struct CAnimus* _this)
+        static void CAnimusAction4_wrapper(struct CAnimus* _this)
         {
            CAnimusAction4_user(_this, CAnimusAction4_next);
         };
-        void CAnimusAlterExp6_wrapper(struct CAnimus* _this, int64_t nAddExp)
+        static void CAnimusAlterExp6_wrapper(struct CAnimus* _this, int64_t nAddExp)
         {
            CAnimusAlterExp6_user(_this, nAddExp, CAnimusAlterExp6_next);
         };
-        void CAnimusAlterExp_MasterReport8_wrapper(struct CAnimus* _this, int64_t nAlterExp)
+        static void CAnimusAlterExp_MasterReport8_wrapper(struct CAnimus* _this, int64_t nAlterExp)
         {
            CAnimusAlterExp_MasterReport8_user(_this, nAlterExp, CAnimusAlterExp_MasterReport8_next);
         };
-        void CAnimusAlterFP_MasterReport10_wrapper(struct CAnimus* _this)
+        static void CAnimusAlterFP_MasterReport10_wrapper(struct CAnimus* _this)
         {
            CAnimusAlterFP_MasterReport10_user(_this, CAnimusAlterFP_MasterReport10_next);
         };
-        void CAnimusAlterHP_MasterReport12_wrapper(struct CAnimus* _this)
+        static void CAnimusAlterHP_MasterReport12_wrapper(struct CAnimus* _this)
         {
            CAnimusAlterHP_MasterReport12_user(_this, CAnimusAlterHP_MasterReport12_next);
         };
-        void CAnimusAlterMode_MasterReport14_wrapper(struct CAnimus* _this, char byMode)
+        static void CAnimusAlterMode_MasterReport14_wrapper(struct CAnimus* _this, char byMode)
         {
            CAnimusAlterMode_MasterReport14_user(_this, byMode, CAnimusAlterMode_MasterReport14_next);
         };
-        bool CAnimusAttack16_wrapper(struct CAnimus* _this, unsigned int skill)
+        static bool CAnimusAttack16_wrapper(struct CAnimus* _this, unsigned int skill)
         {
            return CAnimusAttack16_user(_this, skill, CAnimusAttack16_next);
         };
-        int CAnimusAttackableHeight18_wrapper(struct CAnimus* _this)
+        static int CAnimusAttackableHeight18_wrapper(struct CAnimus* _this)
         {
            return CAnimusAttackableHeight18_user(_this, CAnimusAttackableHeight18_next);
         };
-        void CAnimusctor_CAnimus20_wrapper(struct CAnimus* _this)
+        static void CAnimusctor_CAnimus20_wrapper(struct CAnimus* _this)
         {
            CAnimusctor_CAnimus20_user(_this, CAnimusctor_CAnimus20_next);
         };
-        void CAnimusCalcAttExp22_wrapper(struct CAnimus* _this, struct CAttack* pAT)
+        static void CAnimusCalcAttExp22_wrapper(struct CAnimus* _this, struct CAttack* pAT)
         {
            CAnimusCalcAttExp22_user(_this, pAT, CAnimusCalcAttExp22_next);
         };
-        void CAnimusCalcDefExp24_wrapper(struct CAnimus* _this, struct CCharacter* pAttackObj, int nDamage)
+        static void CAnimusCalcDefExp24_wrapper(struct CAnimus* _this, struct CCharacter* pAttackObj, int nDamage)
         {
            CAnimusCalcDefExp24_user(_this, pAttackObj, nDamage, CAnimusCalcDefExp24_next);
         };
-        void CAnimusChangeMode26_wrapper(struct CAnimus* _this, unsigned int mode)
+        static void CAnimusChangeMode26_wrapper(struct CAnimus* _this, unsigned int mode)
         {
            CAnimusChangeMode26_user(_this, mode, CAnimusChangeMode26_next);
         };
-        void CAnimusChangeMode_MasterCommand28_wrapper(struct CAnimus* _this, int nMode)
+        static void CAnimusChangeMode_MasterCommand28_wrapper(struct CAnimus* _this, int nMode)
         {
            CAnimusChangeMode_MasterCommand28_user(_this, nMode, CAnimusChangeMode_MasterCommand28_next);
         };
-        bool CAnimusChangeTarget_MasterCommand30_wrapper(struct CAnimus* _this, struct CCharacter* pTarget)
+        static bool CAnimusChangeTarget_MasterCommand30_wrapper(struct CAnimus* _this, struct CCharacter* pTarget)
         {
            return CAnimusChangeTarget_MasterCommand30_user(_this, pTarget, CAnimusChangeTarget_MasterCommand30_next);
         };
-        void CAnimusCheckPosInTown32_wrapper(struct CAnimus* _this)
+        static void CAnimusCheckPosInTown32_wrapper(struct CAnimus* _this)
         {
            CAnimusCheckPosInTown32_user(_this, CAnimusCheckPosInTown32_next);
         };
-        bool CAnimusCreate34_wrapper(struct CAnimus* _this, struct _animus_create_setdata* pData)
+        static bool CAnimusCreate34_wrapper(struct CAnimus* _this, struct _animus_create_setdata* pData)
         {
            return CAnimusCreate34_user(_this, pData, CAnimusCreate34_next);
         };
-        bool CAnimusDestroy36_wrapper(struct CAnimus* _this)
+        static bool CAnimusDestroy36_wrapper(struct CAnimus* _this)
         {
            return CAnimusDestroy36_user(_this, CAnimusDestroy36_next);
         };
-        int CAnimusGetAttackDP38_wrapper(struct CAnimus* _this)
+        static int CAnimusGetAttackDP38_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetAttackDP38_user(_this, CAnimusGetAttackDP38_next);
         };
-        int CAnimusGetAttackPart40_wrapper(struct CAnimus* _this)
+        static int CAnimusGetAttackPart40_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetAttackPart40_user(_this, CAnimusGetAttackPart40_next);
         };
-        float CAnimusGetAttackRange42_wrapper(struct CAnimus* _this)
+        static float CAnimusGetAttackRange42_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetAttackRange42_user(_this, CAnimusGetAttackRange42_next);
         };
-        int CAnimusGetDefFC44_wrapper(struct CAnimus* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CAnimusGetDefFC44_wrapper(struct CAnimus* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CAnimusGetDefFC44_user(_this, nAttactPart, pAttChar, pnConvertPart, CAnimusGetDefFC44_next);
         };
-        float CAnimusGetDefFacing46_wrapper(struct CAnimus* _this, int nPart)
+        static float CAnimusGetDefFacing46_wrapper(struct CAnimus* _this, int nPart)
         {
            return CAnimusGetDefFacing46_user(_this, nPart, CAnimusGetDefFacing46_next);
         };
-        float CAnimusGetDefGap48_wrapper(struct CAnimus* _this, int nPart)
+        static float CAnimusGetDefGap48_wrapper(struct CAnimus* _this, int nPart)
         {
            return CAnimusGetDefGap48_user(_this, nPart, CAnimusGetDefGap48_next);
         };
-        int CAnimusGetDefSkill50_wrapper(struct CAnimus* _this, bool bBackAttackDamage)
+        static int CAnimusGetDefSkill50_wrapper(struct CAnimus* _this, bool bBackAttackDamage)
         {
            return CAnimusGetDefSkill50_user(_this, bBackAttackDamage, CAnimusGetDefSkill50_next);
         };
-        int CAnimusGetFireTol52_wrapper(struct CAnimus* _this)
+        static int CAnimusGetFireTol52_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetFireTol52_user(_this, CAnimusGetFireTol52_next);
         };
-        int CAnimusGetGenAttackProb54_wrapper(struct CAnimus* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CAnimusGetGenAttackProb54_wrapper(struct CAnimus* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CAnimusGetGenAttackProb54_user(_this, pDst, nPart, bBackAttack, CAnimusGetGenAttackProb54_next);
         };
-        int CAnimusGetHP56_wrapper(struct CAnimus* _this)
+        static int CAnimusGetHP56_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetHP56_user(_this, CAnimusGetHP56_next);
         };
-        int CAnimusGetLevel58_wrapper(struct CAnimus* _this)
+        static int CAnimusGetLevel58_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetLevel58_user(_this, CAnimusGetLevel58_next);
         };
-        int CAnimusGetMaxHP60_wrapper(struct CAnimus* _this)
+        static int CAnimusGetMaxHP60_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetMaxHP60_user(_this, CAnimusGetMaxHP60_next);
         };
-        char CAnimusGetMaxLevel62_wrapper(struct CAnimus* _this)
+        static char CAnimusGetMaxLevel62_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetMaxLevel62_user(_this, CAnimusGetMaxLevel62_next);
         };
-        bool CAnimusGetMoveTarget64_wrapper(struct CAnimus* _this, struct CCharacter* target, float fMoveSpeed, char byMoveMode)
+        static bool CAnimusGetMoveTarget64_wrapper(struct CAnimus* _this, struct CCharacter* target, float fMoveSpeed, char byMoveMode)
         {
            return CAnimusGetMoveTarget64_user(_this, target, fMoveSpeed, byMoveMode, CAnimusGetMoveTarget64_next);
         };
-        unsigned int CAnimusGetNewMonSerial66_wrapper()
+        static unsigned int CAnimusGetNewMonSerial66_wrapper()
         {
            return CAnimusGetNewMonSerial66_user(CAnimusGetNewMonSerial66_next);
         };
-        char* CAnimusGetObjName68_wrapper(struct CAnimus* _this)
+        static char* CAnimusGetObjName68_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetObjName68_user(_this, CAnimusGetObjName68_next);
         };
-        int CAnimusGetObjRace70_wrapper(struct CAnimus* _this)
+        static int CAnimusGetObjRace70_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetObjRace70_user(_this, CAnimusGetObjRace70_next);
         };
-        int CAnimusGetSoilTol72_wrapper(struct CAnimus* _this)
+        static int CAnimusGetSoilTol72_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetSoilTol72_user(_this, CAnimusGetSoilTol72_next);
         };
-        void CAnimusGetTarget74_wrapper(struct CAnimus* _this)
+        static void CAnimusGetTarget74_wrapper(struct CAnimus* _this)
         {
            CAnimusGetTarget74_user(_this, CAnimusGetTarget74_next);
         };
-        int CAnimusGetWaterTol76_wrapper(struct CAnimus* _this)
+        static int CAnimusGetWaterTol76_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetWaterTol76_user(_this, CAnimusGetWaterTol76_next);
         };
-        float CAnimusGetWeaponAdjust78_wrapper(struct CAnimus* _this)
+        static float CAnimusGetWeaponAdjust78_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetWeaponAdjust78_user(_this, CAnimusGetWeaponAdjust78_next);
         };
-        int CAnimusGetWeaponClass80_wrapper(struct CAnimus* _this)
+        static int CAnimusGetWeaponClass80_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetWeaponClass80_user(_this, CAnimusGetWeaponClass80_next);
         };
-        float CAnimusGetWidth82_wrapper(struct CAnimus* _this)
+        static float CAnimusGetWidth82_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetWidth82_user(_this, CAnimusGetWidth82_next);
         };
-        int CAnimusGetWindTol84_wrapper(struct CAnimus* _this)
+        static int CAnimusGetWindTol84_wrapper(struct CAnimus* _this)
         {
            return CAnimusGetWindTol84_user(_this, CAnimusGetWindTol84_next);
         };
-        bool CAnimusHeal86_wrapper(struct CAnimus* _this, unsigned int skill)
+        static bool CAnimusHeal86_wrapper(struct CAnimus* _this, unsigned int skill)
         {
            return CAnimusHeal86_user(_this, skill, CAnimusHeal86_next);
         };
-        bool CAnimusInit88_wrapper(struct CAnimus* _this, struct _object_id* pID)
+        static bool CAnimusInit88_wrapper(struct CAnimus* _this, struct _object_id* pID)
         {
            return CAnimusInit88_user(_this, pID, CAnimusInit88_next);
         };
-        bool CAnimusIsBeAttackedAble90_wrapper(struct CAnimus* _this, bool bFirst)
+        static bool CAnimusIsBeAttackedAble90_wrapper(struct CAnimus* _this, bool bFirst)
         {
            return CAnimusIsBeAttackedAble90_user(_this, bFirst, CAnimusIsBeAttackedAble90_next);
         };
-        bool CAnimusIsInTown92_wrapper(struct CAnimus* _this)
+        static bool CAnimusIsInTown92_wrapper(struct CAnimus* _this)
         {
            return CAnimusIsInTown92_user(_this, CAnimusIsInTown92_next);
         };
-        bool CAnimusIsValidTarget94_wrapper(struct CAnimus* _this)
+        static bool CAnimusIsValidTarget94_wrapper(struct CAnimus* _this)
         {
            return CAnimusIsValidTarget94_user(_this, CAnimusIsValidTarget94_next);
         };
-        void CAnimusLifeTimeCheck96_wrapper(struct CAnimus* _this)
+        static void CAnimusLifeTimeCheck96_wrapper(struct CAnimus* _this)
         {
            CAnimusLifeTimeCheck96_user(_this, CAnimusLifeTimeCheck96_next);
         };
-        void CAnimusLoop98_wrapper(struct CAnimus* _this)
+        static void CAnimusLoop98_wrapper(struct CAnimus* _this)
         {
            CAnimusLoop98_user(_this, CAnimusLoop98_next);
         };
-        void CAnimusMasterAttack_MasterInform100_wrapper(struct CAnimus* _this, struct CCharacter* pDst)
+        static void CAnimusMasterAttack_MasterInform100_wrapper(struct CAnimus* _this, struct CCharacter* pDst)
         {
            CAnimusMasterAttack_MasterInform100_user(_this, pDst, CAnimusMasterAttack_MasterInform100_next);
         };
-        void CAnimusMasterBeAttacked_MasterInform102_wrapper(struct CAnimus* _this, struct CCharacter* pDst)
+        static void CAnimusMasterBeAttacked_MasterInform102_wrapper(struct CAnimus* _this, struct CCharacter* pDst)
         {
            CAnimusMasterBeAttacked_MasterInform102_user(_this, pDst, CAnimusMasterBeAttacked_MasterInform102_next);
         };
-        void CAnimusOutOfSec104_wrapper(struct CAnimus* _this)
+        static void CAnimusOutOfSec104_wrapper(struct CAnimus* _this)
         {
            CAnimusOutOfSec104_user(_this, CAnimusOutOfSec104_next);
         };
-        void CAnimusProcess106_wrapper(struct CAnimus* _this)
+        static void CAnimusProcess106_wrapper(struct CAnimus* _this)
         {
            CAnimusProcess106_user(_this, CAnimusProcess106_next);
         };
-        void CAnimusRecvKillMessage108_wrapper(struct CAnimus* _this, struct CCharacter* pDier)
+        static void CAnimusRecvKillMessage108_wrapper(struct CAnimus* _this, struct CCharacter* pDier)
         {
            CAnimusRecvKillMessage108_user(_this, pDier, CAnimusRecvKillMessage108_next);
         };
-        void CAnimusReturn_MasterRequest110_wrapper(struct CAnimus* _this, char byReturnType)
+        static void CAnimusReturn_MasterRequest110_wrapper(struct CAnimus* _this, char byReturnType)
         {
            CAnimusReturn_MasterRequest110_user(_this, byReturnType, CAnimusReturn_MasterRequest110_next);
         };
-        bool CAnimusRobbedHP112_wrapper(struct CAnimus* _this, struct CCharacter* pDst, int nDecHP)
+        static bool CAnimusRobbedHP112_wrapper(struct CAnimus* _this, struct CCharacter* pDst, int nDecHP)
         {
            return CAnimusRobbedHP112_user(_this, pDst, nDecHP, CAnimusRobbedHP112_next);
         };
-        struct CCharacter* CAnimusSearchNearEnemy114_wrapper(struct CAnimus* _this)
+        static struct CCharacter* CAnimusSearchNearEnemy114_wrapper(struct CAnimus* _this)
         {
            return CAnimusSearchNearEnemy114_user(_this, CAnimusSearchNearEnemy114_next);
         };
-        struct CCharacter* CAnimusSearchNearPlayerAttack116_wrapper(struct CAnimus* _this)
+        static struct CCharacter* CAnimusSearchNearPlayerAttack116_wrapper(struct CAnimus* _this)
         {
            return CAnimusSearchNearPlayerAttack116_user(_this, CAnimusSearchNearPlayerAttack116_next);
         };
-        void CAnimusSendMsg_AnimusActHealInform118_wrapper(struct CAnimus* _this, unsigned int dwDstSerial, int nAddHP)
+        static void CAnimusSendMsg_AnimusActHealInform118_wrapper(struct CAnimus* _this, unsigned int dwDstSerial, int nAddHP)
         {
            CAnimusSendMsg_AnimusActHealInform118_user(_this, dwDstSerial, nAddHP, CAnimusSendMsg_AnimusActHealInform118_next);
         };
-        void CAnimusSendMsg_Attack_Gen120_wrapper(struct CAnimus* _this, struct CAttack* pAT)
+        static void CAnimusSendMsg_Attack_Gen120_wrapper(struct CAnimus* _this, struct CAttack* pAT)
         {
            CAnimusSendMsg_Attack_Gen120_user(_this, pAT, CAnimusSendMsg_Attack_Gen120_next);
         };
-        void CAnimusSendMsg_Create122_wrapper(struct CAnimus* _this)
+        static void CAnimusSendMsg_Create122_wrapper(struct CAnimus* _this)
         {
            CAnimusSendMsg_Create122_user(_this, CAnimusSendMsg_Create122_next);
         };
-        void CAnimusSendMsg_Destroy124_wrapper(struct CAnimus* _this)
+        static void CAnimusSendMsg_Destroy124_wrapper(struct CAnimus* _this)
         {
            CAnimusSendMsg_Destroy124_user(_this, CAnimusSendMsg_Destroy124_next);
         };
-        void CAnimusSendMsg_FixPosition126_wrapper(struct CAnimus* _this, int n)
+        static void CAnimusSendMsg_FixPosition126_wrapper(struct CAnimus* _this, int n)
         {
            CAnimusSendMsg_FixPosition126_user(_this, n, CAnimusSendMsg_FixPosition126_next);
         };
-        void CAnimusSendMsg_LevelUp128_wrapper(struct CAnimus* _this)
+        static void CAnimusSendMsg_LevelUp128_wrapper(struct CAnimus* _this)
         {
            CAnimusSendMsg_LevelUp128_user(_this, CAnimusSendMsg_LevelUp128_next);
         };
-        void CAnimusSendMsg_Move130_wrapper(struct CAnimus* _this)
+        static void CAnimusSendMsg_Move130_wrapper(struct CAnimus* _this)
         {
            CAnimusSendMsg_Move130_user(_this, CAnimusSendMsg_Move130_next);
         };
-        void CAnimusSendMsg_RealMovePoint132_wrapper(struct CAnimus* _this, int n)
+        static void CAnimusSendMsg_RealMovePoint132_wrapper(struct CAnimus* _this, int n)
         {
            CAnimusSendMsg_RealMovePoint132_user(_this, n, CAnimusSendMsg_RealMovePoint132_next);
         };
-        int CAnimusSetDamage134_wrapper(struct CAnimus* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CAnimusSetDamage134_wrapper(struct CAnimus* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CAnimusSetDamage134_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CAnimusSetDamage134_next);
         };
-        bool CAnimusSetStaticMember136_wrapper()
+        static bool CAnimusSetStaticMember136_wrapper()
         {
            return CAnimusSetStaticMember136_user(CAnimusSetStaticMember136_next);
         };
-        void CAnimusTransPoToMaster138_wrapper(struct CAnimus* _this)
+        static void CAnimusTransPoToMaster138_wrapper(struct CAnimus* _this)
         {
            CAnimusTransPoToMaster138_user(_this, CAnimusTransPoToMaster138_next);
         };
-        void CAnimus_ProcComsumeMaterFP140_wrapper(struct CAnimus* _this)
+        static void CAnimus_ProcComsumeMaterFP140_wrapper(struct CAnimus* _this)
         {
            CAnimus_ProcComsumeMaterFP140_user(_this, CAnimus_ProcComsumeMaterFP140_next);
         };
-        void CAnimusmake_gen_attack_param146_wrapper(struct CAnimus* _this, struct CCharacter* pDst, char byPart, struct _attack_param* pAP, int nSkillIndex)
+        static void CAnimusmake_gen_attack_param146_wrapper(struct CAnimus* _this, struct CCharacter* pDst, char byPart, struct _attack_param* pAP, int nSkillIndex)
         {
            CAnimusmake_gen_attack_param146_user(_this, pDst, byPart, pAP, nSkillIndex, CAnimusmake_gen_attack_param146_next);
         };
-        void CAnimusdtor_CAnimus148_wrapper(struct CAnimus* _this)
+        static void CAnimusdtor_CAnimus148_wrapper(struct CAnimus* _this)
         {
            CAnimusdtor_CAnimus148_user(_this, CAnimusdtor_CAnimus148_next);
         };
         
-        hook_record CAnimus_functions[] = {
+        static hook_record CAnimus_functions[] = {
         {   (LPVOID)0x140125fc0L,
             (LPVOID *)&CAnimusAIInit2_user,
             (LPVOID *)&CAnimusAIInit2_next,
@@ -806,5 +806,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

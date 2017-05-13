@@ -8,213 +8,213 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CR3FontCalcStrIndexPitInWidthA1_ptr CR3FontCalcStrIndexPitInWidthA1_next(nullptr);
-        info::CR3FontCalcStrIndexPitInWidthA1_clbk CR3FontCalcStrIndexPitInWidthA1_user(nullptr);
-        info::CR3FontCalcStrIndexPitInWidthW2_ptr CR3FontCalcStrIndexPitInWidthW2_next(nullptr);
-        info::CR3FontCalcStrIndexPitInWidthW2_clbk CR3FontCalcStrIndexPitInWidthW2_user(nullptr);
-        info::CR3FontCalcStrPixelSizeA3_ptr CR3FontCalcStrPixelSizeA3_next(nullptr);
-        info::CR3FontCalcStrPixelSizeA3_clbk CR3FontCalcStrPixelSizeA3_user(nullptr);
-        info::CR3FontCalcStrPixelSizeW4_ptr CR3FontCalcStrPixelSizeW4_next(nullptr);
-        info::CR3FontCalcStrPixelSizeW4_clbk CR3FontCalcStrPixelSizeW4_user(nullptr);
-        info::CR3FontClearCache5_ptr CR3FontClearCache5_next(nullptr);
-        info::CR3FontClearCache5_clbk CR3FontClearCache5_user(nullptr);
-        info::CR3FontDeleteDeviceObjects6_ptr CR3FontDeleteDeviceObjects6_next(nullptr);
-        info::CR3FontDeleteDeviceObjects6_clbk CR3FontDeleteDeviceObjects6_user(nullptr);
-        info::CR3FontDrawFullText7_ptr CR3FontDrawFullText7_next(nullptr);
-        info::CR3FontDrawFullText7_clbk CR3FontDrawFullText7_user(nullptr);
-        info::CR3FontDrawTextA8_ptr CR3FontDrawTextA8_next(nullptr);
-        info::CR3FontDrawTextA8_clbk CR3FontDrawTextA8_user(nullptr);
-        info::CR3FontDrawTextA9_ptr CR3FontDrawTextA9_next(nullptr);
-        info::CR3FontDrawTextA9_clbk CR3FontDrawTextA9_user(nullptr);
-        info::CR3FontDrawTextA10_ptr CR3FontDrawTextA10_next(nullptr);
-        info::CR3FontDrawTextA10_clbk CR3FontDrawTextA10_user(nullptr);
-        info::CR3FontDrawTextW11_ptr CR3FontDrawTextW11_next(nullptr);
-        info::CR3FontDrawTextW11_clbk CR3FontDrawTextW11_user(nullptr);
-        info::CR3FontDrawTextW12_ptr CR3FontDrawTextW12_next(nullptr);
-        info::CR3FontDrawTextW12_clbk CR3FontDrawTextW12_user(nullptr);
-        info::CR3FontDrawTextW13_ptr CR3FontDrawTextW13_next(nullptr);
-        info::CR3FontDrawTextW13_clbk CR3FontDrawTextW13_user(nullptr);
-        info::CR3FontFillItA14_ptr CR3FontFillItA14_next(nullptr);
-        info::CR3FontFillItA14_clbk CR3FontFillItA14_user(nullptr);
-        info::CR3FontFillItW15_ptr CR3FontFillItW15_next(nullptr);
-        info::CR3FontFillItW15_clbk CR3FontFillItW15_user(nullptr);
-        info::CR3FontGetBestPosCacheA16_ptr CR3FontGetBestPosCacheA16_next(nullptr);
-        info::CR3FontGetBestPosCacheA16_clbk CR3FontGetBestPosCacheA16_user(nullptr);
-        info::CR3FontGetBestPosCacheW17_ptr CR3FontGetBestPosCacheW17_next(nullptr);
-        info::CR3FontGetBestPosCacheW17_clbk CR3FontGetBestPosCacheW17_user(nullptr);
-        info::CR3FontGetOutLineColor18_ptr CR3FontGetOutLineColor18_next(nullptr);
-        info::CR3FontGetOutLineColor18_clbk CR3FontGetOutLineColor18_user(nullptr);
-        info::CR3FontInitDeviceObjects19_ptr CR3FontInitDeviceObjects19_next(nullptr);
-        info::CR3FontInitDeviceObjects19_clbk CR3FontInitDeviceObjects19_user(nullptr);
-        info::CR3FontInvalidateDeviceObjects20_ptr CR3FontInvalidateDeviceObjects20_next(nullptr);
-        info::CR3FontInvalidateDeviceObjects20_clbk CR3FontInvalidateDeviceObjects20_user(nullptr);
-        info::CR3FontIsExistCacheA21_ptr CR3FontIsExistCacheA21_next(nullptr);
-        info::CR3FontIsExistCacheA21_clbk CR3FontIsExistCacheA21_user(nullptr);
-        info::CR3FontIsExistCacheW22_ptr CR3FontIsExistCacheW22_next(nullptr);
-        info::CR3FontIsExistCacheW22_clbk CR3FontIsExistCacheW22_user(nullptr);
-        info::CR3FontMemAllocate23_ptr CR3FontMemAllocate23_next(nullptr);
-        info::CR3FontMemAllocate23_clbk CR3FontMemAllocate23_user(nullptr);
-        info::CR3FontMemFree24_ptr CR3FontMemFree24_next(nullptr);
-        info::CR3FontMemFree24_clbk CR3FontMemFree24_user(nullptr);
-        info::CR3FontPrepareDrawText25_ptr CR3FontPrepareDrawText25_next(nullptr);
-        info::CR3FontPrepareDrawText25_clbk CR3FontPrepareDrawText25_user(nullptr);
-        info::CR3FontPrivateInit26_ptr CR3FontPrivateInit26_next(nullptr);
-        info::CR3FontPrivateInit26_clbk CR3FontPrivateInit26_user(nullptr);
-        info::CR3FontPrivateRelease27_ptr CR3FontPrivateRelease27_next(nullptr);
-        info::CR3FontPrivateRelease27_clbk CR3FontPrivateRelease27_user(nullptr);
-        info::CR3FontRestoreDeviceObjects28_ptr CR3FontRestoreDeviceObjects28_next(nullptr);
-        info::CR3FontRestoreDeviceObjects28_clbk CR3FontRestoreDeviceObjects28_user(nullptr);
-        info::CR3FontSetCacheA29_ptr CR3FontSetCacheA29_next(nullptr);
-        info::CR3FontSetCacheA29_clbk CR3FontSetCacheA29_user(nullptr);
-        info::CR3FontSetCacheW30_ptr CR3FontSetCacheW30_next(nullptr);
-        info::CR3FontSetCacheW30_clbk CR3FontSetCacheW30_user(nullptr);
-        info::CR3FontSetCharSet31_ptr CR3FontSetCharSet31_next(nullptr);
-        info::CR3FontSetCharSet31_clbk CR3FontSetCharSet31_user(nullptr);
-        info::CR3FontSetFont32_ptr CR3FontSetFont32_next(nullptr);
-        info::CR3FontSetFont32_clbk CR3FontSetFont32_user(nullptr);
-        info::CR3FontSetOutLineColor33_ptr CR3FontSetOutLineColor33_next(nullptr);
-        info::CR3FontSetOutLineColor33_clbk CR3FontSetOutLineColor33_user(nullptr);
-        info::CR3Fontdtor_CR3Font34_ptr CR3Fontdtor_CR3Font34_next(nullptr);
-        info::CR3Fontdtor_CR3Font34_clbk CR3Fontdtor_CR3Font34_user(nullptr);
+        static info::CR3FontCalcStrIndexPitInWidthA1_ptr CR3FontCalcStrIndexPitInWidthA1_next(nullptr);
+        static info::CR3FontCalcStrIndexPitInWidthA1_clbk CR3FontCalcStrIndexPitInWidthA1_user(nullptr);
+        static info::CR3FontCalcStrIndexPitInWidthW2_ptr CR3FontCalcStrIndexPitInWidthW2_next(nullptr);
+        static info::CR3FontCalcStrIndexPitInWidthW2_clbk CR3FontCalcStrIndexPitInWidthW2_user(nullptr);
+        static info::CR3FontCalcStrPixelSizeA3_ptr CR3FontCalcStrPixelSizeA3_next(nullptr);
+        static info::CR3FontCalcStrPixelSizeA3_clbk CR3FontCalcStrPixelSizeA3_user(nullptr);
+        static info::CR3FontCalcStrPixelSizeW4_ptr CR3FontCalcStrPixelSizeW4_next(nullptr);
+        static info::CR3FontCalcStrPixelSizeW4_clbk CR3FontCalcStrPixelSizeW4_user(nullptr);
+        static info::CR3FontClearCache5_ptr CR3FontClearCache5_next(nullptr);
+        static info::CR3FontClearCache5_clbk CR3FontClearCache5_user(nullptr);
+        static info::CR3FontDeleteDeviceObjects6_ptr CR3FontDeleteDeviceObjects6_next(nullptr);
+        static info::CR3FontDeleteDeviceObjects6_clbk CR3FontDeleteDeviceObjects6_user(nullptr);
+        static info::CR3FontDrawFullText7_ptr CR3FontDrawFullText7_next(nullptr);
+        static info::CR3FontDrawFullText7_clbk CR3FontDrawFullText7_user(nullptr);
+        static info::CR3FontDrawTextA8_ptr CR3FontDrawTextA8_next(nullptr);
+        static info::CR3FontDrawTextA8_clbk CR3FontDrawTextA8_user(nullptr);
+        static info::CR3FontDrawTextA9_ptr CR3FontDrawTextA9_next(nullptr);
+        static info::CR3FontDrawTextA9_clbk CR3FontDrawTextA9_user(nullptr);
+        static info::CR3FontDrawTextA10_ptr CR3FontDrawTextA10_next(nullptr);
+        static info::CR3FontDrawTextA10_clbk CR3FontDrawTextA10_user(nullptr);
+        static info::CR3FontDrawTextW11_ptr CR3FontDrawTextW11_next(nullptr);
+        static info::CR3FontDrawTextW11_clbk CR3FontDrawTextW11_user(nullptr);
+        static info::CR3FontDrawTextW12_ptr CR3FontDrawTextW12_next(nullptr);
+        static info::CR3FontDrawTextW12_clbk CR3FontDrawTextW12_user(nullptr);
+        static info::CR3FontDrawTextW13_ptr CR3FontDrawTextW13_next(nullptr);
+        static info::CR3FontDrawTextW13_clbk CR3FontDrawTextW13_user(nullptr);
+        static info::CR3FontFillItA14_ptr CR3FontFillItA14_next(nullptr);
+        static info::CR3FontFillItA14_clbk CR3FontFillItA14_user(nullptr);
+        static info::CR3FontFillItW15_ptr CR3FontFillItW15_next(nullptr);
+        static info::CR3FontFillItW15_clbk CR3FontFillItW15_user(nullptr);
+        static info::CR3FontGetBestPosCacheA16_ptr CR3FontGetBestPosCacheA16_next(nullptr);
+        static info::CR3FontGetBestPosCacheA16_clbk CR3FontGetBestPosCacheA16_user(nullptr);
+        static info::CR3FontGetBestPosCacheW17_ptr CR3FontGetBestPosCacheW17_next(nullptr);
+        static info::CR3FontGetBestPosCacheW17_clbk CR3FontGetBestPosCacheW17_user(nullptr);
+        static info::CR3FontGetOutLineColor18_ptr CR3FontGetOutLineColor18_next(nullptr);
+        static info::CR3FontGetOutLineColor18_clbk CR3FontGetOutLineColor18_user(nullptr);
+        static info::CR3FontInitDeviceObjects19_ptr CR3FontInitDeviceObjects19_next(nullptr);
+        static info::CR3FontInitDeviceObjects19_clbk CR3FontInitDeviceObjects19_user(nullptr);
+        static info::CR3FontInvalidateDeviceObjects20_ptr CR3FontInvalidateDeviceObjects20_next(nullptr);
+        static info::CR3FontInvalidateDeviceObjects20_clbk CR3FontInvalidateDeviceObjects20_user(nullptr);
+        static info::CR3FontIsExistCacheA21_ptr CR3FontIsExistCacheA21_next(nullptr);
+        static info::CR3FontIsExistCacheA21_clbk CR3FontIsExistCacheA21_user(nullptr);
+        static info::CR3FontIsExistCacheW22_ptr CR3FontIsExistCacheW22_next(nullptr);
+        static info::CR3FontIsExistCacheW22_clbk CR3FontIsExistCacheW22_user(nullptr);
+        static info::CR3FontMemAllocate23_ptr CR3FontMemAllocate23_next(nullptr);
+        static info::CR3FontMemAllocate23_clbk CR3FontMemAllocate23_user(nullptr);
+        static info::CR3FontMemFree24_ptr CR3FontMemFree24_next(nullptr);
+        static info::CR3FontMemFree24_clbk CR3FontMemFree24_user(nullptr);
+        static info::CR3FontPrepareDrawText25_ptr CR3FontPrepareDrawText25_next(nullptr);
+        static info::CR3FontPrepareDrawText25_clbk CR3FontPrepareDrawText25_user(nullptr);
+        static info::CR3FontPrivateInit26_ptr CR3FontPrivateInit26_next(nullptr);
+        static info::CR3FontPrivateInit26_clbk CR3FontPrivateInit26_user(nullptr);
+        static info::CR3FontPrivateRelease27_ptr CR3FontPrivateRelease27_next(nullptr);
+        static info::CR3FontPrivateRelease27_clbk CR3FontPrivateRelease27_user(nullptr);
+        static info::CR3FontRestoreDeviceObjects28_ptr CR3FontRestoreDeviceObjects28_next(nullptr);
+        static info::CR3FontRestoreDeviceObjects28_clbk CR3FontRestoreDeviceObjects28_user(nullptr);
+        static info::CR3FontSetCacheA29_ptr CR3FontSetCacheA29_next(nullptr);
+        static info::CR3FontSetCacheA29_clbk CR3FontSetCacheA29_user(nullptr);
+        static info::CR3FontSetCacheW30_ptr CR3FontSetCacheW30_next(nullptr);
+        static info::CR3FontSetCacheW30_clbk CR3FontSetCacheW30_user(nullptr);
+        static info::CR3FontSetCharSet31_ptr CR3FontSetCharSet31_next(nullptr);
+        static info::CR3FontSetCharSet31_clbk CR3FontSetCharSet31_user(nullptr);
+        static info::CR3FontSetFont32_ptr CR3FontSetFont32_next(nullptr);
+        static info::CR3FontSetFont32_clbk CR3FontSetFont32_user(nullptr);
+        static info::CR3FontSetOutLineColor33_ptr CR3FontSetOutLineColor33_next(nullptr);
+        static info::CR3FontSetOutLineColor33_clbk CR3FontSetOutLineColor33_user(nullptr);
+        static info::CR3Fontdtor_CR3Font34_ptr CR3Fontdtor_CR3Font34_next(nullptr);
+        static info::CR3Fontdtor_CR3Font34_clbk CR3Fontdtor_CR3Font34_user(nullptr);
         
-        int CR3FontCalcStrIndexPitInWidthA1_wrapper(struct CR3Font* _this, char* arg_0, int arg_1, int arg_2)
+        static int CR3FontCalcStrIndexPitInWidthA1_wrapper(struct CR3Font* _this, char* arg_0, int arg_1, int arg_2)
         {
            return CR3FontCalcStrIndexPitInWidthA1_user(_this, arg_0, arg_1, arg_2, CR3FontCalcStrIndexPitInWidthA1_next);
         };
-        int CR3FontCalcStrIndexPitInWidthW2_wrapper(struct CR3Font* _this, wchar_t* arg_0, int arg_1, int arg_2)
+        static int CR3FontCalcStrIndexPitInWidthW2_wrapper(struct CR3Font* _this, wchar_t* arg_0, int arg_1, int arg_2)
         {
            return CR3FontCalcStrIndexPitInWidthW2_user(_this, arg_0, arg_1, arg_2, CR3FontCalcStrIndexPitInWidthW2_next);
         };
-        void CR3FontCalcStrPixelSizeA3_wrapper(struct CR3Font* _this, char* arg_0, struct tagSIZE* arg_1, int arg_2)
+        static void CR3FontCalcStrPixelSizeA3_wrapper(struct CR3Font* _this, char* arg_0, struct tagSIZE* arg_1, int arg_2)
         {
            CR3FontCalcStrPixelSizeA3_user(_this, arg_0, arg_1, arg_2, CR3FontCalcStrPixelSizeA3_next);
         };
-        void CR3FontCalcStrPixelSizeW4_wrapper(struct CR3Font* _this, wchar_t* arg_0, struct tagSIZE* arg_1, int arg_2)
+        static void CR3FontCalcStrPixelSizeW4_wrapper(struct CR3Font* _this, wchar_t* arg_0, struct tagSIZE* arg_1, int arg_2)
         {
            CR3FontCalcStrPixelSizeW4_user(_this, arg_0, arg_1, arg_2, CR3FontCalcStrPixelSizeW4_next);
         };
-        void CR3FontClearCache5_wrapper(struct CR3Font* _this)
+        static void CR3FontClearCache5_wrapper(struct CR3Font* _this)
         {
            CR3FontClearCache5_user(_this, CR3FontClearCache5_next);
         };
-        int32_t CR3FontDeleteDeviceObjects6_wrapper(struct CR3Font* _this)
+        static int32_t CR3FontDeleteDeviceObjects6_wrapper(struct CR3Font* _this)
         {
            return CR3FontDeleteDeviceObjects6_user(_this, CR3FontDeleteDeviceObjects6_next);
         };
-        void CR3FontDrawFullText7_wrapper(struct CR3Font* _this, struct FONT2DVERTEX* arg_0)
+        static void CR3FontDrawFullText7_wrapper(struct CR3Font* _this, struct FONT2DVERTEX* arg_0)
         {
            CR3FontDrawFullText7_user(_this, arg_0, CR3FontDrawFullText7_next);
         };
-        int32_t CR3FontDrawTextA8_wrapper(struct CR3Font* _this, float* arg_0, uint32_t arg_1, char* arg_2, uint32_t arg_3, float arg_4)
+        static int32_t CR3FontDrawTextA8_wrapper(struct CR3Font* _this, float* arg_0, uint32_t arg_1, char* arg_2, uint32_t arg_3, float arg_4)
         {
            return CR3FontDrawTextA8_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CR3FontDrawTextA8_next);
         };
-        int32_t CR3FontDrawTextA9_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, char* arg_3, float** arg_4, uint32_t arg_5, float arg_6)
+        static int32_t CR3FontDrawTextA9_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, char* arg_3, float** arg_4, uint32_t arg_5, float arg_6)
         {
            return CR3FontDrawTextA9_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, CR3FontDrawTextA9_next);
         };
-        int32_t CR3FontDrawTextA10_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, char* arg_3, uint32_t arg_4, float arg_5)
+        static int32_t CR3FontDrawTextA10_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, char* arg_3, uint32_t arg_4, float arg_5)
         {
            return CR3FontDrawTextA10_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontDrawTextA10_next);
         };
-        int32_t CR3FontDrawTextW11_wrapper(struct CR3Font* _this, float* arg_0, uint32_t arg_1, wchar_t* arg_2, uint32_t arg_3, float arg_4)
+        static int32_t CR3FontDrawTextW11_wrapper(struct CR3Font* _this, float* arg_0, uint32_t arg_1, wchar_t* arg_2, uint32_t arg_3, float arg_4)
         {
            return CR3FontDrawTextW11_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CR3FontDrawTextW11_next);
         };
-        int32_t CR3FontDrawTextW12_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, wchar_t* arg_3, float** arg_4, uint32_t arg_5, float arg_6)
+        static int32_t CR3FontDrawTextW12_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, wchar_t* arg_3, float** arg_4, uint32_t arg_5, float arg_6)
         {
            return CR3FontDrawTextW12_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, CR3FontDrawTextW12_next);
         };
-        int32_t CR3FontDrawTextW13_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, wchar_t* arg_3, uint32_t arg_4, float arg_5)
+        static int32_t CR3FontDrawTextW13_wrapper(struct CR3Font* _this, float arg_0, float arg_1, uint32_t arg_2, wchar_t* arg_3, uint32_t arg_4, float arg_5)
         {
            return CR3FontDrawTextW13_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontDrawTextW13_next);
         };
-        int32_t CR3FontFillItA14_wrapper(struct CR3Font* _this, struct FONT2DVERTEX* arg_0, float* arg_1, uint32_t arg_2, char* arg_3, uint32_t arg_4, float arg_5)
+        static int32_t CR3FontFillItA14_wrapper(struct CR3Font* _this, struct FONT2DVERTEX* arg_0, float* arg_1, uint32_t arg_2, char* arg_3, uint32_t arg_4, float arg_5)
         {
            return CR3FontFillItA14_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontFillItA14_next);
         };
-        int32_t CR3FontFillItW15_wrapper(struct CR3Font* _this, wchar_t* arg_0, float* arg_1, uint32_t arg_2, wchar_t* arg_3, uint32_t arg_4, float arg_5)
+        static int32_t CR3FontFillItW15_wrapper(struct CR3Font* _this, wchar_t* arg_0, float* arg_1, uint32_t arg_2, wchar_t* arg_3, uint32_t arg_4, float arg_5)
         {
            return CR3FontFillItW15_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontFillItW15_next);
         };
-        void CR3FontGetBestPosCacheA16_wrapper(struct CR3Font* _this, uint32_t arg_0, uint32_t* arg_1, uint32_t* arg_2, uint32_t* arg_3)
+        static void CR3FontGetBestPosCacheA16_wrapper(struct CR3Font* _this, uint32_t arg_0, uint32_t* arg_1, uint32_t* arg_2, uint32_t* arg_3)
         {
            CR3FontGetBestPosCacheA16_user(_this, arg_0, arg_1, arg_2, arg_3, CR3FontGetBestPosCacheA16_next);
         };
-        void CR3FontGetBestPosCacheW17_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int* arg_2, int* arg_3, int* arg_4, int* arg_5)
+        static void CR3FontGetBestPosCacheW17_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int* arg_2, int* arg_3, int* arg_4, int* arg_5)
         {
            CR3FontGetBestPosCacheW17_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontGetBestPosCacheW17_next);
         };
-        uint32_t CR3FontGetOutLineColor18_wrapper(struct CR3Font* _this)
+        static uint32_t CR3FontGetOutLineColor18_wrapper(struct CR3Font* _this)
         {
            return CR3FontGetOutLineColor18_user(_this, CR3FontGetOutLineColor18_next);
         };
-        int32_t CR3FontInitDeviceObjects19_wrapper(struct CR3Font* _this, struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
+        static int32_t CR3FontInitDeviceObjects19_wrapper(struct CR3Font* _this, struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3)
         {
            return CR3FontInitDeviceObjects19_user(_this, arg_0, arg_1, arg_2, arg_3, CR3FontInitDeviceObjects19_next);
         };
-        int32_t CR3FontInvalidateDeviceObjects20_wrapper(struct CR3Font* _this)
+        static int32_t CR3FontInvalidateDeviceObjects20_wrapper(struct CR3Font* _this)
         {
            return CR3FontInvalidateDeviceObjects20_user(_this, CR3FontInvalidateDeviceObjects20_next);
         };
-        int64_t CR3FontIsExistCacheA21_wrapper(struct CR3Font* _this, char* arg_0, uint32_t arg_1, uint32_t* arg_2, uint32_t* arg_3)
+        static int64_t CR3FontIsExistCacheA21_wrapper(struct CR3Font* _this, char* arg_0, uint32_t arg_1, uint32_t* arg_2, uint32_t* arg_3)
         {
            return CR3FontIsExistCacheA21_user(_this, arg_0, arg_1, arg_2, arg_3, CR3FontIsExistCacheA21_next);
         };
-        int64_t CR3FontIsExistCacheW22_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int* arg_2, int* arg_3)
+        static int64_t CR3FontIsExistCacheW22_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int* arg_2, int* arg_3)
         {
            return CR3FontIsExistCacheW22_user(_this, arg_0, arg_1, arg_2, arg_3, CR3FontIsExistCacheW22_next);
         };
-        void CR3FontMemAllocate23_wrapper(struct CR3Font* _this)
+        static void CR3FontMemAllocate23_wrapper(struct CR3Font* _this)
         {
            CR3FontMemAllocate23_user(_this, CR3FontMemAllocate23_next);
         };
-        void CR3FontMemFree24_wrapper(struct CR3Font* _this)
+        static void CR3FontMemFree24_wrapper(struct CR3Font* _this)
         {
            CR3FontMemFree24_user(_this, CR3FontMemFree24_next);
         };
-        void CR3FontPrepareDrawText25_wrapper(struct CR3Font* _this)
+        static void CR3FontPrepareDrawText25_wrapper(struct CR3Font* _this)
         {
            CR3FontPrepareDrawText25_user(_this, CR3FontPrepareDrawText25_next);
         };
-        void CR3FontPrivateInit26_wrapper(struct CR3Font* _this)
+        static void CR3FontPrivateInit26_wrapper(struct CR3Font* _this)
         {
            CR3FontPrivateInit26_user(_this, CR3FontPrivateInit26_next);
         };
-        void CR3FontPrivateRelease27_wrapper(struct CR3Font* _this)
+        static void CR3FontPrivateRelease27_wrapper(struct CR3Font* _this)
         {
            CR3FontPrivateRelease27_user(_this, CR3FontPrivateRelease27_next);
         };
-        int32_t CR3FontRestoreDeviceObjects28_wrapper(struct CR3Font* _this)
+        static int32_t CR3FontRestoreDeviceObjects28_wrapper(struct CR3Font* _this)
         {
            return CR3FontRestoreDeviceObjects28_user(_this, CR3FontRestoreDeviceObjects28_next);
         };
-        void CR3FontSetCacheA29_wrapper(struct CR3Font* _this, char* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3, uint32_t arg_4)
+        static void CR3FontSetCacheA29_wrapper(struct CR3Font* _this, char* arg_0, uint32_t arg_1, uint32_t arg_2, uint32_t arg_3, uint32_t arg_4)
         {
            CR3FontSetCacheA29_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CR3FontSetCacheA29_next);
         };
-        void CR3FontSetCacheW30_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int arg_2, int arg_3, int arg_4, int arg_5)
+        static void CR3FontSetCacheW30_wrapper(struct CR3Font* _this, wchar_t* arg_0, uint32_t arg_1, int arg_2, int arg_3, int arg_4, int arg_5)
         {
            CR3FontSetCacheW30_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CR3FontSetCacheW30_next);
         };
-        void CR3FontSetCharSet31_wrapper(struct CR3Font* _this, uint32_t arg_0)
+        static void CR3FontSetCharSet31_wrapper(struct CR3Font* _this, uint32_t arg_0)
         {
            CR3FontSetCharSet31_user(_this, arg_0, CR3FontSetCharSet31_next);
         };
-        void CR3FontSetFont32_wrapper(struct CR3Font* _this, char* arg_0)
+        static void CR3FontSetFont32_wrapper(struct CR3Font* _this, char* arg_0)
         {
            CR3FontSetFont32_user(_this, arg_0, CR3FontSetFont32_next);
         };
-        void CR3FontSetOutLineColor33_wrapper(struct CR3Font* _this, uint32_t arg_0)
+        static void CR3FontSetOutLineColor33_wrapper(struct CR3Font* _this, uint32_t arg_0)
         {
            CR3FontSetOutLineColor33_user(_this, arg_0, CR3FontSetOutLineColor33_next);
         };
-        int64_t CR3Fontdtor_CR3Font34_wrapper(struct CR3Font* _this)
+        static int64_t CR3Fontdtor_CR3Font34_wrapper(struct CR3Font* _this)
         {
            return CR3Fontdtor_CR3Font34_user(_this, CR3Fontdtor_CR3Font34_next);
         };
         
-        hook_record CR3Font_functions[] = {
+        static hook_record CR3Font_functions[] = {
         {   (LPVOID)0x140527dd0L,
             (LPVOID *)&CR3FontCalcStrIndexPitInWidthA1_user,
             (LPVOID *)&CR3FontCalcStrIndexPitInWidthA1_next,
@@ -388,5 +388,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

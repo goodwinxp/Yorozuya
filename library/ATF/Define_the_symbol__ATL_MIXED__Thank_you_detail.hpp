@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_ptr Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_next(nullptr);
-            info::Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_clbk Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_user(nullptr);
-            info::Define_the_symbol__ATL_MIXED__Thank_youone4_ptr Define_the_symbol__ATL_MIXED__Thank_youone4_next(nullptr);
-            info::Define_the_symbol__ATL_MIXED__Thank_youone4_clbk Define_the_symbol__ATL_MIXED__Thank_youone4_user(nullptr);
+            static info::Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_ptr Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_next(nullptr);
+            static info::Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_clbk Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_user(nullptr);
+            static info::Define_the_symbol__ATL_MIXED__Thank_youone4_ptr Define_the_symbol__ATL_MIXED__Thank_youone4_next(nullptr);
+            static info::Define_the_symbol__ATL_MIXED__Thank_youone4_clbk Define_the_symbol__ATL_MIXED__Thank_youone4_user(nullptr);
             
-            void Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_wrapper(struct Define_the_symbol__ATL_MIXED::Thank_you* _this)
+            static void Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_wrapper(struct Define_the_symbol__ATL_MIXED::Thank_you* _this)
             {
                Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_user(_this, Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_next);
             };
-            void Define_the_symbol__ATL_MIXED__Thank_youone4_wrapper(struct Define_the_symbol__ATL_MIXED::Thank_you* _this)
+            static void Define_the_symbol__ATL_MIXED__Thank_youone4_wrapper(struct Define_the_symbol__ATL_MIXED::Thank_you* _this)
             {
                Define_the_symbol__ATL_MIXED__Thank_youone4_user(_this, Define_the_symbol__ATL_MIXED__Thank_youone4_next);
             };
             
-            hook_record Thank_you_functions[] = {
+            static hook_record Thank_you_functions[] = {
             {   (LPVOID)0x1400279e0L,
                 (LPVOID *)&Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_user,
                 (LPVOID *)&Define_the_symbol__ATL_MIXED__Thank_youctor_Thank_you2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace Define_the_symbol__ATL_MIXED
 END_ATF_NAMESPACE

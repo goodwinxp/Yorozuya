@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataTHctor_CNationSettingDataTH2_ptr CNationSettingDataTHctor_CNationSettingDataTH2_next(nullptr);
-        info::CNationSettingDataTHctor_CNationSettingDataTH2_clbk CNationSettingDataTHctor_CNationSettingDataTH2_user(nullptr);
-        info::CNationSettingDataTHCreateWorker4_ptr CNationSettingDataTHCreateWorker4_next(nullptr);
-        info::CNationSettingDataTHCreateWorker4_clbk CNationSettingDataTHCreateWorker4_user(nullptr);
-        info::CNationSettingDataTHGetCashItemPrice6_ptr CNationSettingDataTHGetCashItemPrice6_next(nullptr);
-        info::CNationSettingDataTHGetCashItemPrice6_clbk CNationSettingDataTHGetCashItemPrice6_user(nullptr);
-        info::CNationSettingDataTHGetItemName8_ptr CNationSettingDataTHGetItemName8_next(nullptr);
-        info::CNationSettingDataTHGetItemName8_clbk CNationSettingDataTHGetItemName8_user(nullptr);
-        info::CNationSettingDataTHInit10_ptr CNationSettingDataTHInit10_next(nullptr);
-        info::CNationSettingDataTHInit10_clbk CNationSettingDataTHInit10_user(nullptr);
-        info::CNationSettingDataTHLoop12_ptr CNationSettingDataTHLoop12_next(nullptr);
-        info::CNationSettingDataTHLoop12_clbk CNationSettingDataTHLoop12_user(nullptr);
-        info::CNationSettingDataTHReadSystemPass14_ptr CNationSettingDataTHReadSystemPass14_next(nullptr);
-        info::CNationSettingDataTHReadSystemPass14_clbk CNationSettingDataTHReadSystemPass14_user(nullptr);
-        info::CNationSettingDataTHSetUnitPassiveValue16_ptr CNationSettingDataTHSetUnitPassiveValue16_next(nullptr);
-        info::CNationSettingDataTHSetUnitPassiveValue16_clbk CNationSettingDataTHSetUnitPassiveValue16_user(nullptr);
+        static info::CNationSettingDataTHctor_CNationSettingDataTH2_ptr CNationSettingDataTHctor_CNationSettingDataTH2_next(nullptr);
+        static info::CNationSettingDataTHctor_CNationSettingDataTH2_clbk CNationSettingDataTHctor_CNationSettingDataTH2_user(nullptr);
+        static info::CNationSettingDataTHCreateWorker4_ptr CNationSettingDataTHCreateWorker4_next(nullptr);
+        static info::CNationSettingDataTHCreateWorker4_clbk CNationSettingDataTHCreateWorker4_user(nullptr);
+        static info::CNationSettingDataTHGetCashItemPrice6_ptr CNationSettingDataTHGetCashItemPrice6_next(nullptr);
+        static info::CNationSettingDataTHGetCashItemPrice6_clbk CNationSettingDataTHGetCashItemPrice6_user(nullptr);
+        static info::CNationSettingDataTHGetItemName8_ptr CNationSettingDataTHGetItemName8_next(nullptr);
+        static info::CNationSettingDataTHGetItemName8_clbk CNationSettingDataTHGetItemName8_user(nullptr);
+        static info::CNationSettingDataTHInit10_ptr CNationSettingDataTHInit10_next(nullptr);
+        static info::CNationSettingDataTHInit10_clbk CNationSettingDataTHInit10_user(nullptr);
+        static info::CNationSettingDataTHLoop12_ptr CNationSettingDataTHLoop12_next(nullptr);
+        static info::CNationSettingDataTHLoop12_clbk CNationSettingDataTHLoop12_user(nullptr);
+        static info::CNationSettingDataTHReadSystemPass14_ptr CNationSettingDataTHReadSystemPass14_next(nullptr);
+        static info::CNationSettingDataTHReadSystemPass14_clbk CNationSettingDataTHReadSystemPass14_user(nullptr);
+        static info::CNationSettingDataTHSetUnitPassiveValue16_ptr CNationSettingDataTHSetUnitPassiveValue16_next(nullptr);
+        static info::CNationSettingDataTHSetUnitPassiveValue16_clbk CNationSettingDataTHSetUnitPassiveValue16_user(nullptr);
         
-        void CNationSettingDataTHctor_CNationSettingDataTH2_wrapper(struct CNationSettingDataTH* _this)
+        static void CNationSettingDataTHctor_CNationSettingDataTH2_wrapper(struct CNationSettingDataTH* _this)
         {
            CNationSettingDataTHctor_CNationSettingDataTH2_user(_this, CNationSettingDataTHctor_CNationSettingDataTH2_next);
         };
-        struct CashDbWorker* CNationSettingDataTHCreateWorker4_wrapper(struct CNationSettingDataTH* _this)
+        static struct CashDbWorker* CNationSettingDataTHCreateWorker4_wrapper(struct CNationSettingDataTH* _this)
         {
            return CNationSettingDataTHCreateWorker4_user(_this, CNationSettingDataTHCreateWorker4_next);
         };
-        int CNationSettingDataTHGetCashItemPrice6_wrapper(struct CNationSettingDataTH* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataTHGetCashItemPrice6_wrapper(struct CNationSettingDataTH* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataTHGetCashItemPrice6_user(_this, pFld, CNationSettingDataTHGetCashItemPrice6_next);
         };
-        char* CNationSettingDataTHGetItemName8_wrapper(struct CNationSettingDataTH* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataTHGetItemName8_wrapper(struct CNationSettingDataTH* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataTHGetItemName8_user(_this, pFld, CNationSettingDataTHGetItemName8_next);
         };
-        int CNationSettingDataTHInit10_wrapper(struct CNationSettingDataTH* _this)
+        static int CNationSettingDataTHInit10_wrapper(struct CNationSettingDataTH* _this)
         {
            return CNationSettingDataTHInit10_user(_this, CNationSettingDataTHInit10_next);
         };
-        void CNationSettingDataTHLoop12_wrapper(struct CNationSettingDataTH* _this)
+        static void CNationSettingDataTHLoop12_wrapper(struct CNationSettingDataTH* _this)
         {
            CNationSettingDataTHLoop12_user(_this, CNationSettingDataTHLoop12_next);
         };
-        bool CNationSettingDataTHReadSystemPass14_wrapper(struct CNationSettingDataTH* _this)
+        static bool CNationSettingDataTHReadSystemPass14_wrapper(struct CNationSettingDataTH* _this)
         {
            return CNationSettingDataTHReadSystemPass14_user(_this, CNationSettingDataTHReadSystemPass14_next);
         };
-        void CNationSettingDataTHSetUnitPassiveValue16_wrapper(struct CNationSettingDataTH* _this, float* fUnitPv_DefFc)
+        static void CNationSettingDataTHSetUnitPassiveValue16_wrapper(struct CNationSettingDataTH* _this, float* fUnitPv_DefFc)
         {
            CNationSettingDataTHSetUnitPassiveValue16_user(_this, fUnitPv_DefFc, CNationSettingDataTHSetUnitPassiveValue16_next);
         };
         
-        hook_record CNationSettingDataTH_functions[] = {
+        static hook_record CNationSettingDataTH_functions[] = {
         {   (LPVOID)0x140232000L,
             (LPVOID *)&CNationSettingDataTHctor_CNationSettingDataTH2_user,
             (LPVOID *)&CNationSettingDataTHctor_CNationSettingDataTH2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

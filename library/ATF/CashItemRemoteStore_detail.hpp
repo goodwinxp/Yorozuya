@@ -8,647 +8,647 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CashItemRemoteStoreBuy2_ptr CashItemRemoteStoreBuy2_next(nullptr);
-        info::CashItemRemoteStoreBuy2_clbk CashItemRemoteStoreBuy2_user(nullptr);
-        info::CashItemRemoteStoreBuyByCash4_ptr CashItemRemoteStoreBuyByCash4_next(nullptr);
-        info::CashItemRemoteStoreBuyByCash4_clbk CashItemRemoteStoreBuyByCash4_user(nullptr);
-        info::CashItemRemoteStoreBuyByGold6_ptr CashItemRemoteStoreBuyByGold6_next(nullptr);
-        info::CashItemRemoteStoreBuyByGold6_clbk CashItemRemoteStoreBuyByGold6_user(nullptr);
-        info::CashItemRemoteStoreBuyLimSale8_ptr CashItemRemoteStoreBuyLimSale8_next(nullptr);
-        info::CashItemRemoteStoreBuyLimSale8_clbk CashItemRemoteStoreBuyLimSale8_user(nullptr);
-        info::CashItemRemoteStorector_CashItemRemoteStore10_ptr CashItemRemoteStorector_CashItemRemoteStore10_next(nullptr);
-        info::CashItemRemoteStorector_CashItemRemoteStore10_clbk CashItemRemoteStorector_CashItemRemoteStore10_user(nullptr);
-        info::CashItemRemoteStoreChangeDiscountEventTime12_ptr CashItemRemoteStoreChangeDiscountEventTime12_next(nullptr);
-        info::CashItemRemoteStoreChangeDiscountEventTime12_clbk CashItemRemoteStoreChangeDiscountEventTime12_user(nullptr);
-        info::CashItemRemoteStoreChangeEventTime14_ptr CashItemRemoteStoreChangeEventTime14_next(nullptr);
-        info::CashItemRemoteStoreChangeEventTime14_clbk CashItemRemoteStoreChangeEventTime14_user(nullptr);
-        info::CashItemRemoteStoreChange_Conditional_Event_Status16_ptr CashItemRemoteStoreChange_Conditional_Event_Status16_next(nullptr);
-        info::CashItemRemoteStoreChange_Conditional_Event_Status16_clbk CashItemRemoteStoreChange_Conditional_Event_Status16_user(nullptr);
-        info::CashItemRemoteStoreCheatBuy18_ptr CashItemRemoteStoreCheatBuy18_next(nullptr);
-        info::CashItemRemoteStoreCheatBuy18_clbk CashItemRemoteStoreCheatBuy18_user(nullptr);
-        info::CashItemRemoteStoreCheatLoadCashAmount20_ptr CashItemRemoteStoreCheatLoadCashAmount20_next(nullptr);
-        info::CashItemRemoteStoreCheatLoadCashAmount20_clbk CashItemRemoteStoreCheatLoadCashAmount20_user(nullptr);
-        info::CashItemRemoteStoreCheckCouponType22_ptr CashItemRemoteStoreCheckCouponType22_next(nullptr);
-        info::CashItemRemoteStoreCheckCouponType22_clbk CashItemRemoteStoreCheckCouponType22_user(nullptr);
-        info::CashItemRemoteStoreCheck_CashEvent_INI24_ptr CashItemRemoteStoreCheck_CashEvent_INI24_next(nullptr);
-        info::CashItemRemoteStoreCheck_CashEvent_INI24_clbk CashItemRemoteStoreCheck_CashEvent_INI24_user(nullptr);
-        info::CashItemRemoteStoreCheck_CashEvent_Status26_ptr CashItemRemoteStoreCheck_CashEvent_Status26_next(nullptr);
-        info::CashItemRemoteStoreCheck_CashEvent_Status26_clbk CashItemRemoteStoreCheck_CashEvent_Status26_user(nullptr);
-        info::CashItemRemoteStoreCheck_Conditional_Event_INI28_ptr CashItemRemoteStoreCheck_Conditional_Event_INI28_next(nullptr);
-        info::CashItemRemoteStoreCheck_Conditional_Event_INI28_clbk CashItemRemoteStoreCheck_Conditional_Event_INI28_user(nullptr);
-        info::CashItemRemoteStoreCheck_Conditional_Event_Status30_ptr CashItemRemoteStoreCheck_Conditional_Event_Status30_next(nullptr);
-        info::CashItemRemoteStoreCheck_Conditional_Event_Status30_clbk CashItemRemoteStoreCheck_Conditional_Event_Status30_user(nullptr);
-        info::CashItemRemoteStoreCheck_Grosssales32_ptr CashItemRemoteStoreCheck_Grosssales32_next(nullptr);
-        info::CashItemRemoteStoreCheck_Grosssales32_clbk CashItemRemoteStoreCheck_Grosssales32_user(nullptr);
-        info::CashItemRemoteStoreCheck_Loaded_Event_Status34_ptr CashItemRemoteStoreCheck_Loaded_Event_Status34_next(nullptr);
-        info::CashItemRemoteStoreCheck_Loaded_Event_Status34_clbk CashItemRemoteStoreCheck_Loaded_Event_Status34_user(nullptr);
-        info::CashItemRemoteStoreCheck_Total_Selling36_ptr CashItemRemoteStoreCheck_Total_Selling36_next(nullptr);
-        info::CashItemRemoteStoreCheck_Total_Selling36_clbk CashItemRemoteStoreCheck_Total_Selling36_user(nullptr);
-        info::CashItemRemoteStoreFindCashRec38_ptr CashItemRemoteStoreFindCashRec38_next(nullptr);
-        info::CashItemRemoteStoreFindCashRec38_clbk CashItemRemoteStoreFindCashRec38_user(nullptr);
-        info::CashItemRemoteStoreGetEvnetTime40_ptr CashItemRemoteStoreGetEvnetTime40_next(nullptr);
-        info::CashItemRemoteStoreGetEvnetTime40_clbk CashItemRemoteStoreGetEvnetTime40_user(nullptr);
-        info::CashItemRemoteStoreGetLimDiscout42_ptr CashItemRemoteStoreGetLimDiscout42_next(nullptr);
-        info::CashItemRemoteStoreGetLimDiscout42_clbk CashItemRemoteStoreGetLimDiscout42_user(nullptr);
-        info::CashItemRemoteStoreGetRemainNumOfGood44_ptr CashItemRemoteStoreGetRemainNumOfGood44_next(nullptr);
-        info::CashItemRemoteStoreGetRemainNumOfGood44_clbk CashItemRemoteStoreGetRemainNumOfGood44_user(nullptr);
-        info::CashItemRemoteStoreGetRemainNumOfGood46_ptr CashItemRemoteStoreGetRemainNumOfGood46_next(nullptr);
-        info::CashItemRemoteStoreGetRemainNumOfGood46_clbk CashItemRemoteStoreGetRemainNumOfGood46_user(nullptr);
-        info::CashItemRemoteStoreGetSetDiscout48_ptr CashItemRemoteStoreGetSetDiscout48_next(nullptr);
-        info::CashItemRemoteStoreGetSetDiscout48_clbk CashItemRemoteStoreGetSetDiscout48_user(nullptr);
-        info::CashItemRemoteStoreGet_CashEvent_Status50_ptr CashItemRemoteStoreGet_CashEvent_Status50_next(nullptr);
-        info::CashItemRemoteStoreGet_CashEvent_Status50_clbk CashItemRemoteStoreGet_CashEvent_Status50_user(nullptr);
-        info::CashItemRemoteStoreGet_Conditional_Event_Name52_ptr CashItemRemoteStoreGet_Conditional_Event_Name52_next(nullptr);
-        info::CashItemRemoteStoreGet_Conditional_Event_Name52_clbk CashItemRemoteStoreGet_Conditional_Event_Name52_user(nullptr);
-        info::CashItemRemoteStoreGet_Conditional_Event_Status54_ptr CashItemRemoteStoreGet_Conditional_Event_Status54_next(nullptr);
-        info::CashItemRemoteStoreGet_Conditional_Event_Status54_clbk CashItemRemoteStoreGet_Conditional_Event_Status54_user(nullptr);
-        info::CashItemRemoteStoreGoodsList56_ptr CashItemRemoteStoreGoodsList56_next(nullptr);
-        info::CashItemRemoteStoreGoodsList56_clbk CashItemRemoteStoreGoodsList56_user(nullptr);
-        info::CashItemRemoteStoreGoodsListBuyByCash58_ptr CashItemRemoteStoreGoodsListBuyByCash58_next(nullptr);
-        info::CashItemRemoteStoreGoodsListBuyByCash58_clbk CashItemRemoteStoreGoodsListBuyByCash58_user(nullptr);
-        info::CashItemRemoteStoreGoodsListBuyByGold60_ptr CashItemRemoteStoreGoodsListBuyByGold60_next(nullptr);
-        info::CashItemRemoteStoreGoodsListBuyByGold60_clbk CashItemRemoteStoreGoodsListBuyByGold60_user(nullptr);
-        info::CashItemRemoteStoreInform_CashEvent62_ptr CashItemRemoteStoreInform_CashEvent62_next(nullptr);
-        info::CashItemRemoteStoreInform_CashEvent62_clbk CashItemRemoteStoreInform_CashEvent62_user(nullptr);
-        info::CashItemRemoteStoreInform_CashEvent_Status_All64_ptr CashItemRemoteStoreInform_CashEvent_Status_All64_next(nullptr);
-        info::CashItemRemoteStoreInform_CashEvent_Status_All64_clbk CashItemRemoteStoreInform_CashEvent_Status_All64_user(nullptr);
-        info::CashItemRemoteStoreInform_ConditionalEvent66_ptr CashItemRemoteStoreInform_ConditionalEvent66_next(nullptr);
-        info::CashItemRemoteStoreInform_ConditionalEvent66_clbk CashItemRemoteStoreInform_ConditionalEvent66_user(nullptr);
-        info::CashItemRemoteStoreInform_ConditionalEvent_Status_All68_ptr CashItemRemoteStoreInform_ConditionalEvent_Status_All68_next(nullptr);
-        info::CashItemRemoteStoreInform_ConditionalEvent_Status_All68_clbk CashItemRemoteStoreInform_ConditionalEvent_Status_All68_user(nullptr);
-        info::CashItemRemoteStoreInitialize70_ptr CashItemRemoteStoreInitialize70_next(nullptr);
-        info::CashItemRemoteStoreInitialize70_clbk CashItemRemoteStoreInitialize70_user(nullptr);
-        info::CashItemRemoteStoreInstance72_ptr CashItemRemoteStoreInstance72_next(nullptr);
-        info::CashItemRemoteStoreInstance72_clbk CashItemRemoteStoreInstance72_user(nullptr);
-        info::CashItemRemoteStoreIsBuyCashItemByGold74_ptr CashItemRemoteStoreIsBuyCashItemByGold74_next(nullptr);
-        info::CashItemRemoteStoreIsBuyCashItemByGold74_clbk CashItemRemoteStoreIsBuyCashItemByGold74_user(nullptr);
-        info::CashItemRemoteStoreIsEventTime76_ptr CashItemRemoteStoreIsEventTime76_next(nullptr);
-        info::CashItemRemoteStoreIsEventTime76_clbk CashItemRemoteStoreIsEventTime76_user(nullptr);
-        info::CashItemRemoteStoreIsUsableCoupon78_ptr CashItemRemoteStoreIsUsableCoupon78_next(nullptr);
-        info::CashItemRemoteStoreIsUsableCoupon78_clbk CashItemRemoteStoreIsUsableCoupon78_user(nullptr);
-        info::CashItemRemoteStoreLimitedSale_check_count80_ptr CashItemRemoteStoreLimitedSale_check_count80_next(nullptr);
-        info::CashItemRemoteStoreLimitedSale_check_count80_clbk CashItemRemoteStoreLimitedSale_check_count80_user(nullptr);
-        info::CashItemRemoteStoreLoadBuyCashMode82_ptr CashItemRemoteStoreLoadBuyCashMode82_next(nullptr);
-        info::CashItemRemoteStoreLoadBuyCashMode82_clbk CashItemRemoteStoreLoadBuyCashMode82_user(nullptr);
-        info::CashItemRemoteStoreLoadNationalPrice84_ptr CashItemRemoteStoreLoadNationalPrice84_next(nullptr);
-        info::CashItemRemoteStoreLoadNationalPrice84_clbk CashItemRemoteStoreLoadNationalPrice84_user(nullptr);
-        info::CashItemRemoteStoreLoad_Cash_Event86_ptr CashItemRemoteStoreLoad_Cash_Event86_next(nullptr);
-        info::CashItemRemoteStoreLoad_Cash_Event86_clbk CashItemRemoteStoreLoad_Cash_Event86_user(nullptr);
-        info::CashItemRemoteStoreLoad_Conditional_Event88_ptr CashItemRemoteStoreLoad_Conditional_Event88_next(nullptr);
-        info::CashItemRemoteStoreLoad_Conditional_Event88_clbk CashItemRemoteStoreLoad_Conditional_Event88_user(nullptr);
-        info::CashItemRemoteStoreLoad_Event_INI90_ptr CashItemRemoteStoreLoad_Event_INI90_next(nullptr);
-        info::CashItemRemoteStoreLoad_Event_INI90_clbk CashItemRemoteStoreLoad_Event_INI90_user(nullptr);
-        info::CashItemRemoteStoreLoad_LimitedSale_Event_INI92_ptr CashItemRemoteStoreLoad_LimitedSale_Event_INI92_next(nullptr);
-        info::CashItemRemoteStoreLoad_LimitedSale_Event_INI92_clbk CashItemRemoteStoreLoad_LimitedSale_Event_INI92_user(nullptr);
-        info::CashItemRemoteStoreLoop_Cash_Event94_ptr CashItemRemoteStoreLoop_Cash_Event94_next(nullptr);
-        info::CashItemRemoteStoreLoop_Cash_Event94_clbk CashItemRemoteStoreLoop_Cash_Event94_user(nullptr);
-        info::CashItemRemoteStoreLoop_Check_Total_Selling96_ptr CashItemRemoteStoreLoop_Check_Total_Selling96_next(nullptr);
-        info::CashItemRemoteStoreLoop_Check_Total_Selling96_clbk CashItemRemoteStoreLoop_Check_Total_Selling96_user(nullptr);
-        info::CashItemRemoteStoreLoop_ContEvent98_ptr CashItemRemoteStoreLoop_ContEvent98_next(nullptr);
-        info::CashItemRemoteStoreLoop_ContEvent98_clbk CashItemRemoteStoreLoop_ContEvent98_user(nullptr);
-        info::CashItemRemoteStoreLoop_TatalCashEvent100_ptr CashItemRemoteStoreLoop_TatalCashEvent100_next(nullptr);
-        info::CashItemRemoteStoreLoop_TatalCashEvent100_clbk CashItemRemoteStoreLoop_TatalCashEvent100_user(nullptr);
-        info::CashItemRemoteStoreSell102_ptr CashItemRemoteStoreSell102_next(nullptr);
-        info::CashItemRemoteStoreSell102_clbk CashItemRemoteStoreSell102_user(nullptr);
-        info::CashItemRemoteStoreSetNextDiscountEventTime104_ptr CashItemRemoteStoreSetNextDiscountEventTime104_next(nullptr);
-        info::CashItemRemoteStoreSetNextDiscountEventTime104_clbk CashItemRemoteStoreSetNextDiscountEventTime104_user(nullptr);
-        info::CashItemRemoteStoreSetNextEventTime106_ptr CashItemRemoteStoreSetNextEventTime106_next(nullptr);
-        info::CashItemRemoteStoreSetNextEventTime106_clbk CashItemRemoteStoreSetNextEventTime106_user(nullptr);
-        info::CashItemRemoteStoreSet_CashEvent_Status108_ptr CashItemRemoteStoreSet_CashEvent_Status108_next(nullptr);
-        info::CashItemRemoteStoreSet_CashEvent_Status108_clbk CashItemRemoteStoreSet_CashEvent_Status108_user(nullptr);
-        info::CashItemRemoteStoreSet_Conditional_Evnet_Status110_ptr CashItemRemoteStoreSet_Conditional_Evnet_Status110_next(nullptr);
-        info::CashItemRemoteStoreSet_Conditional_Evnet_Status110_clbk CashItemRemoteStoreSet_Conditional_Evnet_Status110_user(nullptr);
-        info::CashItemRemoteStoreSet_DB_LimitedSale_Event112_ptr CashItemRemoteStoreSet_DB_LimitedSale_Event112_next(nullptr);
-        info::CashItemRemoteStoreSet_DB_LimitedSale_Event112_clbk CashItemRemoteStoreSet_DB_LimitedSale_Event112_user(nullptr);
-        info::CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_ptr CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_next(nullptr);
-        info::CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_clbk CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_user(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_DCK116_ptr CashItemRemoteStoreSet_LimitedSale_DCK116_next(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_DCK116_clbk CashItemRemoteStoreSet_LimitedSale_DCK116_user(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_Event118_ptr CashItemRemoteStoreSet_LimitedSale_Event118_next(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_Event118_clbk CashItemRemoteStoreSet_LimitedSale_Event118_user(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_Event_Ini120_ptr CashItemRemoteStoreSet_LimitedSale_Event_Ini120_next(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_Event_Ini120_clbk CashItemRemoteStoreSet_LimitedSale_Event_Ini120_user(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_count122_ptr CashItemRemoteStoreSet_LimitedSale_count122_next(nullptr);
-        info::CashItemRemoteStoreSet_LimitedSale_count122_clbk CashItemRemoteStoreSet_LimitedSale_count122_user(nullptr);
-        info::CashItemRemoteStoreUpdate_INI124_ptr CashItemRemoteStoreUpdate_INI124_next(nullptr);
-        info::CashItemRemoteStoreUpdate_INI124_clbk CashItemRemoteStoreUpdate_INI124_user(nullptr);
-        info::CashItemRemoteStoreUseDiscountCoupon126_ptr CashItemRemoteStoreUseDiscountCoupon126_next(nullptr);
-        info::CashItemRemoteStoreUseDiscountCoupon126_clbk CashItemRemoteStoreUseDiscountCoupon126_user(nullptr);
-        info::CashItemRemoteStore_InitLoggers128_ptr CashItemRemoteStore_InitLoggers128_next(nullptr);
-        info::CashItemRemoteStore_InitLoggers128_clbk CashItemRemoteStore_InitLoggers128_user(nullptr);
-        info::CashItemRemoteStore_MakeLinkTable130_ptr CashItemRemoteStore_MakeLinkTable130_next(nullptr);
-        info::CashItemRemoteStore_MakeLinkTable130_clbk CashItemRemoteStore_MakeLinkTable130_user(nullptr);
-        info::CashItemRemoteStore_ReadGoods132_ptr CashItemRemoteStore_ReadGoods132_next(nullptr);
-        info::CashItemRemoteStore_ReadGoods132_clbk CashItemRemoteStore_ReadGoods132_user(nullptr);
-        info::CashItemRemoteStore__CheckGoods134_ptr CashItemRemoteStore__CheckGoods134_next(nullptr);
-        info::CashItemRemoteStore__CheckGoods134_clbk CashItemRemoteStore__CheckGoods134_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item136_ptr CashItemRemoteStore_buybygold_buy_single_item136_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item136_clbk CashItemRemoteStore_buybygold_buy_single_item136_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_additional_process138_ptr CashItemRemoteStore_buybygold_buy_single_item_additional_process138_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_additional_process138_clbk CashItemRemoteStore_buybygold_buy_single_item_additional_process138_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price140_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price140_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price140_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price140_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_check_item150_ptr CashItemRemoteStore_buybygold_buy_single_item_check_item150_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_check_item150_clbk CashItemRemoteStore_buybygold_buy_single_item_check_item150_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_give_item152_ptr CashItemRemoteStore_buybygold_buy_single_item_give_item152_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_give_item152_clbk CashItemRemoteStore_buybygold_buy_single_item_give_item152_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_ptr CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_clbk CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_proc_price156_ptr CashItemRemoteStore_buybygold_buy_single_item_proc_price156_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_proc_price156_clbk CashItemRemoteStore_buybygold_buy_single_item_proc_price156_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_ptr CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_clbk CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_user(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_ptr CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_next(nullptr);
-        info::CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_clbk CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_user(nullptr);
-        info::CashItemRemoteStore_buybygold_check_coupon162_ptr CashItemRemoteStore_buybygold_check_coupon162_next(nullptr);
-        info::CashItemRemoteStore_buybygold_check_coupon162_clbk CashItemRemoteStore_buybygold_check_coupon162_user(nullptr);
-        info::CashItemRemoteStore_buybygold_check_valid164_ptr CashItemRemoteStore_buybygold_check_valid164_next(nullptr);
-        info::CashItemRemoteStore_buybygold_check_valid164_clbk CashItemRemoteStore_buybygold_check_valid164_user(nullptr);
-        info::CashItemRemoteStore_buybygold_complete166_ptr CashItemRemoteStore_buybygold_complete166_next(nullptr);
-        info::CashItemRemoteStore_buybygold_complete166_clbk CashItemRemoteStore_buybygold_complete166_user(nullptr);
-        info::CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_ptr CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_next(nullptr);
-        info::CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_clbk CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_user(nullptr);
-        info::CashItemRemoteStore_check_buyitem170_ptr CashItemRemoteStore_check_buyitem170_next(nullptr);
-        info::CashItemRemoteStore_check_buyitem170_clbk CashItemRemoteStore_check_buyitem170_user(nullptr);
-        info::CashItemRemoteStorecheck_cash_discount_ini172_ptr CashItemRemoteStorecheck_cash_discount_ini172_next(nullptr);
-        info::CashItemRemoteStorecheck_cash_discount_ini172_clbk CashItemRemoteStorecheck_cash_discount_ini172_user(nullptr);
-        info::CashItemRemoteStorecheck_cash_discount_status174_ptr CashItemRemoteStorecheck_cash_discount_status174_next(nullptr);
-        info::CashItemRemoteStorecheck_cash_discount_status174_clbk CashItemRemoteStorecheck_cash_discount_status174_user(nullptr);
-        info::CashItemRemoteStorecheck_loaded_cde_status176_ptr CashItemRemoteStorecheck_loaded_cde_status176_next(nullptr);
-        info::CashItemRemoteStorecheck_loaded_cde_status176_clbk CashItemRemoteStorecheck_loaded_cde_status176_user(nullptr);
-        info::CashItemRemoteStoreforce_endup_cash_discount_event178_ptr CashItemRemoteStoreforce_endup_cash_discount_event178_next(nullptr);
-        info::CashItemRemoteStoreforce_endup_cash_discount_event178_clbk CashItemRemoteStoreforce_endup_cash_discount_event178_user(nullptr);
-        info::CashItemRemoteStoreget_cde_status180_ptr CashItemRemoteStoreget_cde_status180_next(nullptr);
-        info::CashItemRemoteStoreget_cde_status180_clbk CashItemRemoteStoreget_cde_status180_user(nullptr);
-        info::CashItemRemoteStoreinform_cashdiscount_event182_ptr CashItemRemoteStoreinform_cashdiscount_event182_next(nullptr);
-        info::CashItemRemoteStoreinform_cashdiscount_event182_clbk CashItemRemoteStoreinform_cashdiscount_event182_user(nullptr);
-        info::CashItemRemoteStoreinform_cashdiscount_status_all184_ptr CashItemRemoteStoreinform_cashdiscount_status_all184_next(nullptr);
-        info::CashItemRemoteStoreinform_cashdiscount_status_all184_clbk CashItemRemoteStoreinform_cashdiscount_status_all184_user(nullptr);
-        info::CashItemRemoteStoreisConEventTime186_ptr CashItemRemoteStoreisConEventTime186_next(nullptr);
-        info::CashItemRemoteStoreisConEventTime186_clbk CashItemRemoteStoreisConEventTime186_user(nullptr);
-        info::CashItemRemoteStoreis_cde_time188_ptr CashItemRemoteStoreis_cde_time188_next(nullptr);
-        info::CashItemRemoteStoreis_cde_time188_clbk CashItemRemoteStoreis_cde_time188_user(nullptr);
-        info::CashItemRemoteStoreload_cash_discount_event190_ptr CashItemRemoteStoreload_cash_discount_event190_next(nullptr);
-        info::CashItemRemoteStoreload_cash_discount_event190_clbk CashItemRemoteStoreload_cash_discount_event190_user(nullptr);
-        info::CashItemRemoteStoreload_cde_ini192_ptr CashItemRemoteStoreload_cde_ini192_next(nullptr);
-        info::CashItemRemoteStoreload_cde_ini192_clbk CashItemRemoteStoreload_cde_ini192_user(nullptr);
-        info::CashItemRemoteStoreload_con_event_ini194_ptr CashItemRemoteStoreload_con_event_ini194_next(nullptr);
-        info::CashItemRemoteStoreload_con_event_ini194_clbk CashItemRemoteStoreload_con_event_ini194_user(nullptr);
-        info::CashItemRemoteStorelog_about_cash_event196_ptr CashItemRemoteStorelog_about_cash_event196_next(nullptr);
-        info::CashItemRemoteStorelog_about_cash_event196_clbk CashItemRemoteStorelog_about_cash_event196_user(nullptr);
-        info::CashItemRemoteStoreloop_cash_discount_event198_ptr CashItemRemoteStoreloop_cash_discount_event198_next(nullptr);
-        info::CashItemRemoteStoreloop_cash_discount_event198_clbk CashItemRemoteStoreloop_cash_discount_event198_user(nullptr);
-        info::CashItemRemoteStoreset_cde_status200_ptr CashItemRemoteStoreset_cde_status200_next(nullptr);
-        info::CashItemRemoteStoreset_cde_status200_clbk CashItemRemoteStoreset_cde_status200_user(nullptr);
-        info::CashItemRemoteStorestart_cashevent202_ptr CashItemRemoteStorestart_cashevent202_next(nullptr);
-        info::CashItemRemoteStorestart_cashevent202_clbk CashItemRemoteStorestart_cashevent202_user(nullptr);
-        info::CashItemRemoteStorestart_cde204_ptr CashItemRemoteStorestart_cde204_next(nullptr);
-        info::CashItemRemoteStorestart_cde204_clbk CashItemRemoteStorestart_cde204_user(nullptr);
-        info::CashItemRemoteStorestart_conevent206_ptr CashItemRemoteStorestart_conevent206_next(nullptr);
-        info::CashItemRemoteStorestart_conevent206_clbk CashItemRemoteStorestart_conevent206_user(nullptr);
-        info::CashItemRemoteStoreupdate_ini208_ptr CashItemRemoteStoreupdate_ini208_next(nullptr);
-        info::CashItemRemoteStoreupdate_ini208_clbk CashItemRemoteStoreupdate_ini208_user(nullptr);
-        info::CashItemRemoteStoredtor_CashItemRemoteStore210_ptr CashItemRemoteStoredtor_CashItemRemoteStore210_next(nullptr);
-        info::CashItemRemoteStoredtor_CashItemRemoteStore210_clbk CashItemRemoteStoredtor_CashItemRemoteStore210_user(nullptr);
+        static info::CashItemRemoteStoreBuy2_ptr CashItemRemoteStoreBuy2_next(nullptr);
+        static info::CashItemRemoteStoreBuy2_clbk CashItemRemoteStoreBuy2_user(nullptr);
+        static info::CashItemRemoteStoreBuyByCash4_ptr CashItemRemoteStoreBuyByCash4_next(nullptr);
+        static info::CashItemRemoteStoreBuyByCash4_clbk CashItemRemoteStoreBuyByCash4_user(nullptr);
+        static info::CashItemRemoteStoreBuyByGold6_ptr CashItemRemoteStoreBuyByGold6_next(nullptr);
+        static info::CashItemRemoteStoreBuyByGold6_clbk CashItemRemoteStoreBuyByGold6_user(nullptr);
+        static info::CashItemRemoteStoreBuyLimSale8_ptr CashItemRemoteStoreBuyLimSale8_next(nullptr);
+        static info::CashItemRemoteStoreBuyLimSale8_clbk CashItemRemoteStoreBuyLimSale8_user(nullptr);
+        static info::CashItemRemoteStorector_CashItemRemoteStore10_ptr CashItemRemoteStorector_CashItemRemoteStore10_next(nullptr);
+        static info::CashItemRemoteStorector_CashItemRemoteStore10_clbk CashItemRemoteStorector_CashItemRemoteStore10_user(nullptr);
+        static info::CashItemRemoteStoreChangeDiscountEventTime12_ptr CashItemRemoteStoreChangeDiscountEventTime12_next(nullptr);
+        static info::CashItemRemoteStoreChangeDiscountEventTime12_clbk CashItemRemoteStoreChangeDiscountEventTime12_user(nullptr);
+        static info::CashItemRemoteStoreChangeEventTime14_ptr CashItemRemoteStoreChangeEventTime14_next(nullptr);
+        static info::CashItemRemoteStoreChangeEventTime14_clbk CashItemRemoteStoreChangeEventTime14_user(nullptr);
+        static info::CashItemRemoteStoreChange_Conditional_Event_Status16_ptr CashItemRemoteStoreChange_Conditional_Event_Status16_next(nullptr);
+        static info::CashItemRemoteStoreChange_Conditional_Event_Status16_clbk CashItemRemoteStoreChange_Conditional_Event_Status16_user(nullptr);
+        static info::CashItemRemoteStoreCheatBuy18_ptr CashItemRemoteStoreCheatBuy18_next(nullptr);
+        static info::CashItemRemoteStoreCheatBuy18_clbk CashItemRemoteStoreCheatBuy18_user(nullptr);
+        static info::CashItemRemoteStoreCheatLoadCashAmount20_ptr CashItemRemoteStoreCheatLoadCashAmount20_next(nullptr);
+        static info::CashItemRemoteStoreCheatLoadCashAmount20_clbk CashItemRemoteStoreCheatLoadCashAmount20_user(nullptr);
+        static info::CashItemRemoteStoreCheckCouponType22_ptr CashItemRemoteStoreCheckCouponType22_next(nullptr);
+        static info::CashItemRemoteStoreCheckCouponType22_clbk CashItemRemoteStoreCheckCouponType22_user(nullptr);
+        static info::CashItemRemoteStoreCheck_CashEvent_INI24_ptr CashItemRemoteStoreCheck_CashEvent_INI24_next(nullptr);
+        static info::CashItemRemoteStoreCheck_CashEvent_INI24_clbk CashItemRemoteStoreCheck_CashEvent_INI24_user(nullptr);
+        static info::CashItemRemoteStoreCheck_CashEvent_Status26_ptr CashItemRemoteStoreCheck_CashEvent_Status26_next(nullptr);
+        static info::CashItemRemoteStoreCheck_CashEvent_Status26_clbk CashItemRemoteStoreCheck_CashEvent_Status26_user(nullptr);
+        static info::CashItemRemoteStoreCheck_Conditional_Event_INI28_ptr CashItemRemoteStoreCheck_Conditional_Event_INI28_next(nullptr);
+        static info::CashItemRemoteStoreCheck_Conditional_Event_INI28_clbk CashItemRemoteStoreCheck_Conditional_Event_INI28_user(nullptr);
+        static info::CashItemRemoteStoreCheck_Conditional_Event_Status30_ptr CashItemRemoteStoreCheck_Conditional_Event_Status30_next(nullptr);
+        static info::CashItemRemoteStoreCheck_Conditional_Event_Status30_clbk CashItemRemoteStoreCheck_Conditional_Event_Status30_user(nullptr);
+        static info::CashItemRemoteStoreCheck_Grosssales32_ptr CashItemRemoteStoreCheck_Grosssales32_next(nullptr);
+        static info::CashItemRemoteStoreCheck_Grosssales32_clbk CashItemRemoteStoreCheck_Grosssales32_user(nullptr);
+        static info::CashItemRemoteStoreCheck_Loaded_Event_Status34_ptr CashItemRemoteStoreCheck_Loaded_Event_Status34_next(nullptr);
+        static info::CashItemRemoteStoreCheck_Loaded_Event_Status34_clbk CashItemRemoteStoreCheck_Loaded_Event_Status34_user(nullptr);
+        static info::CashItemRemoteStoreCheck_Total_Selling36_ptr CashItemRemoteStoreCheck_Total_Selling36_next(nullptr);
+        static info::CashItemRemoteStoreCheck_Total_Selling36_clbk CashItemRemoteStoreCheck_Total_Selling36_user(nullptr);
+        static info::CashItemRemoteStoreFindCashRec38_ptr CashItemRemoteStoreFindCashRec38_next(nullptr);
+        static info::CashItemRemoteStoreFindCashRec38_clbk CashItemRemoteStoreFindCashRec38_user(nullptr);
+        static info::CashItemRemoteStoreGetEvnetTime40_ptr CashItemRemoteStoreGetEvnetTime40_next(nullptr);
+        static info::CashItemRemoteStoreGetEvnetTime40_clbk CashItemRemoteStoreGetEvnetTime40_user(nullptr);
+        static info::CashItemRemoteStoreGetLimDiscout42_ptr CashItemRemoteStoreGetLimDiscout42_next(nullptr);
+        static info::CashItemRemoteStoreGetLimDiscout42_clbk CashItemRemoteStoreGetLimDiscout42_user(nullptr);
+        static info::CashItemRemoteStoreGetRemainNumOfGood44_ptr CashItemRemoteStoreGetRemainNumOfGood44_next(nullptr);
+        static info::CashItemRemoteStoreGetRemainNumOfGood44_clbk CashItemRemoteStoreGetRemainNumOfGood44_user(nullptr);
+        static info::CashItemRemoteStoreGetRemainNumOfGood46_ptr CashItemRemoteStoreGetRemainNumOfGood46_next(nullptr);
+        static info::CashItemRemoteStoreGetRemainNumOfGood46_clbk CashItemRemoteStoreGetRemainNumOfGood46_user(nullptr);
+        static info::CashItemRemoteStoreGetSetDiscout48_ptr CashItemRemoteStoreGetSetDiscout48_next(nullptr);
+        static info::CashItemRemoteStoreGetSetDiscout48_clbk CashItemRemoteStoreGetSetDiscout48_user(nullptr);
+        static info::CashItemRemoteStoreGet_CashEvent_Status50_ptr CashItemRemoteStoreGet_CashEvent_Status50_next(nullptr);
+        static info::CashItemRemoteStoreGet_CashEvent_Status50_clbk CashItemRemoteStoreGet_CashEvent_Status50_user(nullptr);
+        static info::CashItemRemoteStoreGet_Conditional_Event_Name52_ptr CashItemRemoteStoreGet_Conditional_Event_Name52_next(nullptr);
+        static info::CashItemRemoteStoreGet_Conditional_Event_Name52_clbk CashItemRemoteStoreGet_Conditional_Event_Name52_user(nullptr);
+        static info::CashItemRemoteStoreGet_Conditional_Event_Status54_ptr CashItemRemoteStoreGet_Conditional_Event_Status54_next(nullptr);
+        static info::CashItemRemoteStoreGet_Conditional_Event_Status54_clbk CashItemRemoteStoreGet_Conditional_Event_Status54_user(nullptr);
+        static info::CashItemRemoteStoreGoodsList56_ptr CashItemRemoteStoreGoodsList56_next(nullptr);
+        static info::CashItemRemoteStoreGoodsList56_clbk CashItemRemoteStoreGoodsList56_user(nullptr);
+        static info::CashItemRemoteStoreGoodsListBuyByCash58_ptr CashItemRemoteStoreGoodsListBuyByCash58_next(nullptr);
+        static info::CashItemRemoteStoreGoodsListBuyByCash58_clbk CashItemRemoteStoreGoodsListBuyByCash58_user(nullptr);
+        static info::CashItemRemoteStoreGoodsListBuyByGold60_ptr CashItemRemoteStoreGoodsListBuyByGold60_next(nullptr);
+        static info::CashItemRemoteStoreGoodsListBuyByGold60_clbk CashItemRemoteStoreGoodsListBuyByGold60_user(nullptr);
+        static info::CashItemRemoteStoreInform_CashEvent62_ptr CashItemRemoteStoreInform_CashEvent62_next(nullptr);
+        static info::CashItemRemoteStoreInform_CashEvent62_clbk CashItemRemoteStoreInform_CashEvent62_user(nullptr);
+        static info::CashItemRemoteStoreInform_CashEvent_Status_All64_ptr CashItemRemoteStoreInform_CashEvent_Status_All64_next(nullptr);
+        static info::CashItemRemoteStoreInform_CashEvent_Status_All64_clbk CashItemRemoteStoreInform_CashEvent_Status_All64_user(nullptr);
+        static info::CashItemRemoteStoreInform_ConditionalEvent66_ptr CashItemRemoteStoreInform_ConditionalEvent66_next(nullptr);
+        static info::CashItemRemoteStoreInform_ConditionalEvent66_clbk CashItemRemoteStoreInform_ConditionalEvent66_user(nullptr);
+        static info::CashItemRemoteStoreInform_ConditionalEvent_Status_All68_ptr CashItemRemoteStoreInform_ConditionalEvent_Status_All68_next(nullptr);
+        static info::CashItemRemoteStoreInform_ConditionalEvent_Status_All68_clbk CashItemRemoteStoreInform_ConditionalEvent_Status_All68_user(nullptr);
+        static info::CashItemRemoteStoreInitialize70_ptr CashItemRemoteStoreInitialize70_next(nullptr);
+        static info::CashItemRemoteStoreInitialize70_clbk CashItemRemoteStoreInitialize70_user(nullptr);
+        static info::CashItemRemoteStoreInstance72_ptr CashItemRemoteStoreInstance72_next(nullptr);
+        static info::CashItemRemoteStoreInstance72_clbk CashItemRemoteStoreInstance72_user(nullptr);
+        static info::CashItemRemoteStoreIsBuyCashItemByGold74_ptr CashItemRemoteStoreIsBuyCashItemByGold74_next(nullptr);
+        static info::CashItemRemoteStoreIsBuyCashItemByGold74_clbk CashItemRemoteStoreIsBuyCashItemByGold74_user(nullptr);
+        static info::CashItemRemoteStoreIsEventTime76_ptr CashItemRemoteStoreIsEventTime76_next(nullptr);
+        static info::CashItemRemoteStoreIsEventTime76_clbk CashItemRemoteStoreIsEventTime76_user(nullptr);
+        static info::CashItemRemoteStoreIsUsableCoupon78_ptr CashItemRemoteStoreIsUsableCoupon78_next(nullptr);
+        static info::CashItemRemoteStoreIsUsableCoupon78_clbk CashItemRemoteStoreIsUsableCoupon78_user(nullptr);
+        static info::CashItemRemoteStoreLimitedSale_check_count80_ptr CashItemRemoteStoreLimitedSale_check_count80_next(nullptr);
+        static info::CashItemRemoteStoreLimitedSale_check_count80_clbk CashItemRemoteStoreLimitedSale_check_count80_user(nullptr);
+        static info::CashItemRemoteStoreLoadBuyCashMode82_ptr CashItemRemoteStoreLoadBuyCashMode82_next(nullptr);
+        static info::CashItemRemoteStoreLoadBuyCashMode82_clbk CashItemRemoteStoreLoadBuyCashMode82_user(nullptr);
+        static info::CashItemRemoteStoreLoadNationalPrice84_ptr CashItemRemoteStoreLoadNationalPrice84_next(nullptr);
+        static info::CashItemRemoteStoreLoadNationalPrice84_clbk CashItemRemoteStoreLoadNationalPrice84_user(nullptr);
+        static info::CashItemRemoteStoreLoad_Cash_Event86_ptr CashItemRemoteStoreLoad_Cash_Event86_next(nullptr);
+        static info::CashItemRemoteStoreLoad_Cash_Event86_clbk CashItemRemoteStoreLoad_Cash_Event86_user(nullptr);
+        static info::CashItemRemoteStoreLoad_Conditional_Event88_ptr CashItemRemoteStoreLoad_Conditional_Event88_next(nullptr);
+        static info::CashItemRemoteStoreLoad_Conditional_Event88_clbk CashItemRemoteStoreLoad_Conditional_Event88_user(nullptr);
+        static info::CashItemRemoteStoreLoad_Event_INI90_ptr CashItemRemoteStoreLoad_Event_INI90_next(nullptr);
+        static info::CashItemRemoteStoreLoad_Event_INI90_clbk CashItemRemoteStoreLoad_Event_INI90_user(nullptr);
+        static info::CashItemRemoteStoreLoad_LimitedSale_Event_INI92_ptr CashItemRemoteStoreLoad_LimitedSale_Event_INI92_next(nullptr);
+        static info::CashItemRemoteStoreLoad_LimitedSale_Event_INI92_clbk CashItemRemoteStoreLoad_LimitedSale_Event_INI92_user(nullptr);
+        static info::CashItemRemoteStoreLoop_Cash_Event94_ptr CashItemRemoteStoreLoop_Cash_Event94_next(nullptr);
+        static info::CashItemRemoteStoreLoop_Cash_Event94_clbk CashItemRemoteStoreLoop_Cash_Event94_user(nullptr);
+        static info::CashItemRemoteStoreLoop_Check_Total_Selling96_ptr CashItemRemoteStoreLoop_Check_Total_Selling96_next(nullptr);
+        static info::CashItemRemoteStoreLoop_Check_Total_Selling96_clbk CashItemRemoteStoreLoop_Check_Total_Selling96_user(nullptr);
+        static info::CashItemRemoteStoreLoop_ContEvent98_ptr CashItemRemoteStoreLoop_ContEvent98_next(nullptr);
+        static info::CashItemRemoteStoreLoop_ContEvent98_clbk CashItemRemoteStoreLoop_ContEvent98_user(nullptr);
+        static info::CashItemRemoteStoreLoop_TatalCashEvent100_ptr CashItemRemoteStoreLoop_TatalCashEvent100_next(nullptr);
+        static info::CashItemRemoteStoreLoop_TatalCashEvent100_clbk CashItemRemoteStoreLoop_TatalCashEvent100_user(nullptr);
+        static info::CashItemRemoteStoreSell102_ptr CashItemRemoteStoreSell102_next(nullptr);
+        static info::CashItemRemoteStoreSell102_clbk CashItemRemoteStoreSell102_user(nullptr);
+        static info::CashItemRemoteStoreSetNextDiscountEventTime104_ptr CashItemRemoteStoreSetNextDiscountEventTime104_next(nullptr);
+        static info::CashItemRemoteStoreSetNextDiscountEventTime104_clbk CashItemRemoteStoreSetNextDiscountEventTime104_user(nullptr);
+        static info::CashItemRemoteStoreSetNextEventTime106_ptr CashItemRemoteStoreSetNextEventTime106_next(nullptr);
+        static info::CashItemRemoteStoreSetNextEventTime106_clbk CashItemRemoteStoreSetNextEventTime106_user(nullptr);
+        static info::CashItemRemoteStoreSet_CashEvent_Status108_ptr CashItemRemoteStoreSet_CashEvent_Status108_next(nullptr);
+        static info::CashItemRemoteStoreSet_CashEvent_Status108_clbk CashItemRemoteStoreSet_CashEvent_Status108_user(nullptr);
+        static info::CashItemRemoteStoreSet_Conditional_Evnet_Status110_ptr CashItemRemoteStoreSet_Conditional_Evnet_Status110_next(nullptr);
+        static info::CashItemRemoteStoreSet_Conditional_Evnet_Status110_clbk CashItemRemoteStoreSet_Conditional_Evnet_Status110_user(nullptr);
+        static info::CashItemRemoteStoreSet_DB_LimitedSale_Event112_ptr CashItemRemoteStoreSet_DB_LimitedSale_Event112_next(nullptr);
+        static info::CashItemRemoteStoreSet_DB_LimitedSale_Event112_clbk CashItemRemoteStoreSet_DB_LimitedSale_Event112_user(nullptr);
+        static info::CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_ptr CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_next(nullptr);
+        static info::CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_clbk CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_user(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_DCK116_ptr CashItemRemoteStoreSet_LimitedSale_DCK116_next(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_DCK116_clbk CashItemRemoteStoreSet_LimitedSale_DCK116_user(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_Event118_ptr CashItemRemoteStoreSet_LimitedSale_Event118_next(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_Event118_clbk CashItemRemoteStoreSet_LimitedSale_Event118_user(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_Event_Ini120_ptr CashItemRemoteStoreSet_LimitedSale_Event_Ini120_next(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_Event_Ini120_clbk CashItemRemoteStoreSet_LimitedSale_Event_Ini120_user(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_count122_ptr CashItemRemoteStoreSet_LimitedSale_count122_next(nullptr);
+        static info::CashItemRemoteStoreSet_LimitedSale_count122_clbk CashItemRemoteStoreSet_LimitedSale_count122_user(nullptr);
+        static info::CashItemRemoteStoreUpdate_INI124_ptr CashItemRemoteStoreUpdate_INI124_next(nullptr);
+        static info::CashItemRemoteStoreUpdate_INI124_clbk CashItemRemoteStoreUpdate_INI124_user(nullptr);
+        static info::CashItemRemoteStoreUseDiscountCoupon126_ptr CashItemRemoteStoreUseDiscountCoupon126_next(nullptr);
+        static info::CashItemRemoteStoreUseDiscountCoupon126_clbk CashItemRemoteStoreUseDiscountCoupon126_user(nullptr);
+        static info::CashItemRemoteStore_InitLoggers128_ptr CashItemRemoteStore_InitLoggers128_next(nullptr);
+        static info::CashItemRemoteStore_InitLoggers128_clbk CashItemRemoteStore_InitLoggers128_user(nullptr);
+        static info::CashItemRemoteStore_MakeLinkTable130_ptr CashItemRemoteStore_MakeLinkTable130_next(nullptr);
+        static info::CashItemRemoteStore_MakeLinkTable130_clbk CashItemRemoteStore_MakeLinkTable130_user(nullptr);
+        static info::CashItemRemoteStore_ReadGoods132_ptr CashItemRemoteStore_ReadGoods132_next(nullptr);
+        static info::CashItemRemoteStore_ReadGoods132_clbk CashItemRemoteStore_ReadGoods132_user(nullptr);
+        static info::CashItemRemoteStore__CheckGoods134_ptr CashItemRemoteStore__CheckGoods134_next(nullptr);
+        static info::CashItemRemoteStore__CheckGoods134_clbk CashItemRemoteStore__CheckGoods134_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item136_ptr CashItemRemoteStore_buybygold_buy_single_item136_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item136_clbk CashItemRemoteStore_buybygold_buy_single_item136_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_additional_process138_ptr CashItemRemoteStore_buybygold_buy_single_item_additional_process138_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_additional_process138_clbk CashItemRemoteStore_buybygold_buy_single_item_additional_process138_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price140_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price140_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price140_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price140_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_ptr CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_clbk CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_check_item150_ptr CashItemRemoteStore_buybygold_buy_single_item_check_item150_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_check_item150_clbk CashItemRemoteStore_buybygold_buy_single_item_check_item150_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_give_item152_ptr CashItemRemoteStore_buybygold_buy_single_item_give_item152_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_give_item152_clbk CashItemRemoteStore_buybygold_buy_single_item_give_item152_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_ptr CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_clbk CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_proc_price156_ptr CashItemRemoteStore_buybygold_buy_single_item_proc_price156_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_proc_price156_clbk CashItemRemoteStore_buybygold_buy_single_item_proc_price156_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_ptr CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_clbk CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_ptr CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_clbk CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_check_coupon162_ptr CashItemRemoteStore_buybygold_check_coupon162_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_check_coupon162_clbk CashItemRemoteStore_buybygold_check_coupon162_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_check_valid164_ptr CashItemRemoteStore_buybygold_check_valid164_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_check_valid164_clbk CashItemRemoteStore_buybygold_check_valid164_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_complete166_ptr CashItemRemoteStore_buybygold_complete166_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_complete166_clbk CashItemRemoteStore_buybygold_complete166_user(nullptr);
+        static info::CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_ptr CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_next(nullptr);
+        static info::CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_clbk CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_user(nullptr);
+        static info::CashItemRemoteStore_check_buyitem170_ptr CashItemRemoteStore_check_buyitem170_next(nullptr);
+        static info::CashItemRemoteStore_check_buyitem170_clbk CashItemRemoteStore_check_buyitem170_user(nullptr);
+        static info::CashItemRemoteStorecheck_cash_discount_ini172_ptr CashItemRemoteStorecheck_cash_discount_ini172_next(nullptr);
+        static info::CashItemRemoteStorecheck_cash_discount_ini172_clbk CashItemRemoteStorecheck_cash_discount_ini172_user(nullptr);
+        static info::CashItemRemoteStorecheck_cash_discount_status174_ptr CashItemRemoteStorecheck_cash_discount_status174_next(nullptr);
+        static info::CashItemRemoteStorecheck_cash_discount_status174_clbk CashItemRemoteStorecheck_cash_discount_status174_user(nullptr);
+        static info::CashItemRemoteStorecheck_loaded_cde_status176_ptr CashItemRemoteStorecheck_loaded_cde_status176_next(nullptr);
+        static info::CashItemRemoteStorecheck_loaded_cde_status176_clbk CashItemRemoteStorecheck_loaded_cde_status176_user(nullptr);
+        static info::CashItemRemoteStoreforce_endup_cash_discount_event178_ptr CashItemRemoteStoreforce_endup_cash_discount_event178_next(nullptr);
+        static info::CashItemRemoteStoreforce_endup_cash_discount_event178_clbk CashItemRemoteStoreforce_endup_cash_discount_event178_user(nullptr);
+        static info::CashItemRemoteStoreget_cde_status180_ptr CashItemRemoteStoreget_cde_status180_next(nullptr);
+        static info::CashItemRemoteStoreget_cde_status180_clbk CashItemRemoteStoreget_cde_status180_user(nullptr);
+        static info::CashItemRemoteStoreinform_cashdiscount_event182_ptr CashItemRemoteStoreinform_cashdiscount_event182_next(nullptr);
+        static info::CashItemRemoteStoreinform_cashdiscount_event182_clbk CashItemRemoteStoreinform_cashdiscount_event182_user(nullptr);
+        static info::CashItemRemoteStoreinform_cashdiscount_status_all184_ptr CashItemRemoteStoreinform_cashdiscount_status_all184_next(nullptr);
+        static info::CashItemRemoteStoreinform_cashdiscount_status_all184_clbk CashItemRemoteStoreinform_cashdiscount_status_all184_user(nullptr);
+        static info::CashItemRemoteStoreisConEventTime186_ptr CashItemRemoteStoreisConEventTime186_next(nullptr);
+        static info::CashItemRemoteStoreisConEventTime186_clbk CashItemRemoteStoreisConEventTime186_user(nullptr);
+        static info::CashItemRemoteStoreis_cde_time188_ptr CashItemRemoteStoreis_cde_time188_next(nullptr);
+        static info::CashItemRemoteStoreis_cde_time188_clbk CashItemRemoteStoreis_cde_time188_user(nullptr);
+        static info::CashItemRemoteStoreload_cash_discount_event190_ptr CashItemRemoteStoreload_cash_discount_event190_next(nullptr);
+        static info::CashItemRemoteStoreload_cash_discount_event190_clbk CashItemRemoteStoreload_cash_discount_event190_user(nullptr);
+        static info::CashItemRemoteStoreload_cde_ini192_ptr CashItemRemoteStoreload_cde_ini192_next(nullptr);
+        static info::CashItemRemoteStoreload_cde_ini192_clbk CashItemRemoteStoreload_cde_ini192_user(nullptr);
+        static info::CashItemRemoteStoreload_con_event_ini194_ptr CashItemRemoteStoreload_con_event_ini194_next(nullptr);
+        static info::CashItemRemoteStoreload_con_event_ini194_clbk CashItemRemoteStoreload_con_event_ini194_user(nullptr);
+        static info::CashItemRemoteStorelog_about_cash_event196_ptr CashItemRemoteStorelog_about_cash_event196_next(nullptr);
+        static info::CashItemRemoteStorelog_about_cash_event196_clbk CashItemRemoteStorelog_about_cash_event196_user(nullptr);
+        static info::CashItemRemoteStoreloop_cash_discount_event198_ptr CashItemRemoteStoreloop_cash_discount_event198_next(nullptr);
+        static info::CashItemRemoteStoreloop_cash_discount_event198_clbk CashItemRemoteStoreloop_cash_discount_event198_user(nullptr);
+        static info::CashItemRemoteStoreset_cde_status200_ptr CashItemRemoteStoreset_cde_status200_next(nullptr);
+        static info::CashItemRemoteStoreset_cde_status200_clbk CashItemRemoteStoreset_cde_status200_user(nullptr);
+        static info::CashItemRemoteStorestart_cashevent202_ptr CashItemRemoteStorestart_cashevent202_next(nullptr);
+        static info::CashItemRemoteStorestart_cashevent202_clbk CashItemRemoteStorestart_cashevent202_user(nullptr);
+        static info::CashItemRemoteStorestart_cde204_ptr CashItemRemoteStorestart_cde204_next(nullptr);
+        static info::CashItemRemoteStorestart_cde204_clbk CashItemRemoteStorestart_cde204_user(nullptr);
+        static info::CashItemRemoteStorestart_conevent206_ptr CashItemRemoteStorestart_conevent206_next(nullptr);
+        static info::CashItemRemoteStorestart_conevent206_clbk CashItemRemoteStorestart_conevent206_user(nullptr);
+        static info::CashItemRemoteStoreupdate_ini208_ptr CashItemRemoteStoreupdate_ini208_next(nullptr);
+        static info::CashItemRemoteStoreupdate_ini208_clbk CashItemRemoteStoreupdate_ini208_user(nullptr);
+        static info::CashItemRemoteStoredtor_CashItemRemoteStore210_ptr CashItemRemoteStoredtor_CashItemRemoteStore210_next(nullptr);
+        static info::CashItemRemoteStoredtor_CashItemRemoteStore210_clbk CashItemRemoteStoredtor_CashItemRemoteStore210_user(nullptr);
         
-        info::CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_ptr CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_next(nullptr);
-        info::CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_clbk CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_user(nullptr);
+        static info::CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_ptr CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_next(nullptr);
+        static info::CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_clbk CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_user(nullptr);
         
-        bool CashItemRemoteStoreBuy2_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreBuy2_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreBuy2_user(_this, wSock, pPacket, CashItemRemoteStoreBuy2_next);
         };
-        bool CashItemRemoteStoreBuyByCash4_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreBuyByCash4_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreBuyByCash4_user(_this, wSock, pPacket, CashItemRemoteStoreBuyByCash4_next);
         };
-        bool CashItemRemoteStoreBuyByGold6_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreBuyByGold6_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreBuyByGold6_user(_this, wSock, pPacket, CashItemRemoteStoreBuyByGold6_next);
         };
-        uint16_t CashItemRemoteStoreBuyLimSale8_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
+        static uint16_t CashItemRemoteStoreBuyLimSale8_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
         {
            return CashItemRemoteStoreBuyLimSale8_user(_this, byTableCode, dwIndex, CashItemRemoteStoreBuyLimSale8_next);
         };
-        void CashItemRemoteStorector_CashItemRemoteStore10_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStorector_CashItemRemoteStore10_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStorector_CashItemRemoteStore10_user(_this, CashItemRemoteStorector_CashItemRemoteStore10_next);
         };
-        bool CashItemRemoteStoreChangeDiscountEventTime12_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreChangeDiscountEventTime12_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreChangeDiscountEventTime12_user(_this, CashItemRemoteStoreChangeDiscountEventTime12_next);
         };
-        bool CashItemRemoteStoreChangeEventTime14_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static bool CashItemRemoteStoreChangeEventTime14_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            return CashItemRemoteStoreChangeEventTime14_user(_this, byEventType, CashItemRemoteStoreChangeEventTime14_next);
         };
-        void CashItemRemoteStoreChange_Conditional_Event_Status16_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreChange_Conditional_Event_Status16_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreChange_Conditional_Event_Status16_user(_this, CashItemRemoteStoreChange_Conditional_Event_Status16_next);
         };
-        bool CashItemRemoteStoreCheatBuy18_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* szItemCode, int nNum)
+        static bool CashItemRemoteStoreCheatBuy18_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* szItemCode, int nNum)
         {
            return CashItemRemoteStoreCheatBuy18_user(_this, wSock, szItemCode, nNum, CashItemRemoteStoreCheatBuy18_next);
         };
-        bool CashItemRemoteStoreCheatLoadCashAmount20_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, int nNum)
+        static bool CashItemRemoteStoreCheatLoadCashAmount20_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, int nNum)
         {
            return CashItemRemoteStoreCheatLoadCashAmount20_user(_this, wSock, nNum, CashItemRemoteStoreCheatLoadCashAmount20_next);
         };
-        int CashItemRemoteStoreCheckCouponType22_wrapper(struct CashItemRemoteStore* _this, struct _STORAGE_POS_INDIV* pCoupon, struct CPlayer* pOne, char byCouponNum)
+        static int CashItemRemoteStoreCheckCouponType22_wrapper(struct CashItemRemoteStore* _this, struct _STORAGE_POS_INDIV* pCoupon, struct CPlayer* pOne, char byCouponNum)
         {
            return CashItemRemoteStoreCheckCouponType22_user(_this, pCoupon, pOne, byCouponNum, CashItemRemoteStoreCheckCouponType22_next);
         };
-        bool CashItemRemoteStoreCheck_CashEvent_INI24_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static bool CashItemRemoteStoreCheck_CashEvent_INI24_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            return CashItemRemoteStoreCheck_CashEvent_INI24_user(_this, byEventType, CashItemRemoteStoreCheck_CashEvent_INI24_next);
         };
-        void CashItemRemoteStoreCheck_CashEvent_Status26_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static void CashItemRemoteStoreCheck_CashEvent_Status26_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            CashItemRemoteStoreCheck_CashEvent_Status26_user(_this, byEventType, CashItemRemoteStoreCheck_CashEvent_Status26_next);
         };
-        void CashItemRemoteStoreCheck_Conditional_Event_INI28_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreCheck_Conditional_Event_INI28_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreCheck_Conditional_Event_INI28_user(_this, CashItemRemoteStoreCheck_Conditional_Event_INI28_next);
         };
-        void CashItemRemoteStoreCheck_Conditional_Event_Status30_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreCheck_Conditional_Event_Status30_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreCheck_Conditional_Event_Status30_user(_this, CashItemRemoteStoreCheck_Conditional_Event_Status30_next);
         };
-        void CashItemRemoteStoreCheck_Grosssales32_wrapper(struct CashItemRemoteStore* _this, unsigned int dwTotalSellCash)
+        static void CashItemRemoteStoreCheck_Grosssales32_wrapper(struct CashItemRemoteStore* _this, unsigned int dwTotalSellCash)
         {
            CashItemRemoteStoreCheck_Grosssales32_user(_this, dwTotalSellCash, CashItemRemoteStoreCheck_Grosssales32_next);
         };
-        void CashItemRemoteStoreCheck_Loaded_Event_Status34_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static void CashItemRemoteStoreCheck_Loaded_Event_Status34_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            CashItemRemoteStoreCheck_Loaded_Event_Status34_user(_this, byEventType, CashItemRemoteStoreCheck_Loaded_Event_Status34_next);
         };
-        void CashItemRemoteStoreCheck_Total_Selling36_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreCheck_Total_Selling36_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreCheck_Total_Selling36_user(_this, CashItemRemoteStoreCheck_Total_Selling36_next);
         };
-        struct _CashShop_fld* CashItemRemoteStoreFindCashRec38_wrapper(int nTbl, int nIdx)
+        static struct _CashShop_fld* CashItemRemoteStoreFindCashRec38_wrapper(int nTbl, int nIdx)
         {
            return CashItemRemoteStoreFindCashRec38_user(nTbl, nIdx, CashItemRemoteStoreFindCashRec38_next);
         };
-        void CashItemRemoteStoreGetEvnetTime40_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_time* pETime, int itime)
+        static void CashItemRemoteStoreGetEvnetTime40_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_time* pETime, int itime)
         {
            CashItemRemoteStoreGetEvnetTime40_user(_this, pETime, itime, CashItemRemoteStoreGetEvnetTime40_next);
         };
-        char CashItemRemoteStoreGetLimDiscout42_wrapper(struct CashItemRemoteStore* _this)
+        static char CashItemRemoteStoreGetLimDiscout42_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreGetLimDiscout42_user(_this, CashItemRemoteStoreGetLimDiscout42_next);
         };
-        int CashItemRemoteStoreGetRemainNumOfGood44_wrapper(struct CashItemRemoteStore* _this, char* strCode)
+        static int CashItemRemoteStoreGetRemainNumOfGood44_wrapper(struct CashItemRemoteStore* _this, char* strCode)
         {
            return CashItemRemoteStoreGetRemainNumOfGood44_user(_this, strCode, CashItemRemoteStoreGetRemainNumOfGood44_next);
         };
-        int CashItemRemoteStoreGetRemainNumOfGood46_wrapper(struct CashItemRemoteStore* _this, uint16_t wStoreIndex)
+        static int CashItemRemoteStoreGetRemainNumOfGood46_wrapper(struct CashItemRemoteStore* _this, uint16_t wStoreIndex)
         {
            return CashItemRemoteStoreGetRemainNumOfGood46_user(_this, wStoreIndex, CashItemRemoteStoreGetRemainNumOfGood46_next);
         };
-        char CashItemRemoteStoreGetSetDiscout48_wrapper(struct CashItemRemoteStore* _this, char bySetKind)
+        static char CashItemRemoteStoreGetSetDiscout48_wrapper(struct CashItemRemoteStore* _this, char bySetKind)
         {
            return CashItemRemoteStoreGetSetDiscout48_user(_this, bySetKind, CashItemRemoteStoreGetSetDiscout48_next);
         };
-        char CashItemRemoteStoreGet_CashEvent_Status50_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static char CashItemRemoteStoreGet_CashEvent_Status50_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            return CashItemRemoteStoreGet_CashEvent_Status50_user(_this, byEventType, CashItemRemoteStoreGet_CashEvent_Status50_next);
         };
-        void CashItemRemoteStoreGet_Conditional_Event_Name52_wrapper(struct CashItemRemoteStore* _this, char byEventType, char* szEventName)
+        static void CashItemRemoteStoreGet_Conditional_Event_Name52_wrapper(struct CashItemRemoteStore* _this, char byEventType, char* szEventName)
         {
            CashItemRemoteStoreGet_Conditional_Event_Name52_user(_this, byEventType, szEventName, CashItemRemoteStoreGet_Conditional_Event_Name52_next);
         };
-        char CashItemRemoteStoreGet_Conditional_Event_Status54_wrapper(struct CashItemRemoteStore* _this)
+        static char CashItemRemoteStoreGet_Conditional_Event_Status54_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreGet_Conditional_Event_Status54_user(_this, CashItemRemoteStoreGet_Conditional_Event_Status54_next);
         };
-        bool CashItemRemoteStoreGoodsList56_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreGoodsList56_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreGoodsList56_user(_this, wSock, pPacket, CashItemRemoteStoreGoodsList56_next);
         };
-        bool CashItemRemoteStoreGoodsListBuyByCash58_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreGoodsListBuyByCash58_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreGoodsListBuyByCash58_user(_this, wSock, pPacket, CashItemRemoteStoreGoodsListBuyByCash58_next);
         };
-        bool CashItemRemoteStoreGoodsListBuyByGold60_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreGoodsListBuyByGold60_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreGoodsListBuyByGold60_user(_this, wSock, pPacket, CashItemRemoteStoreGoodsListBuyByGold60_next);
         };
-        void CashItemRemoteStoreInform_CashEvent62_wrapper(struct CashItemRemoteStore* _this, uint16_t wIndex)
+        static void CashItemRemoteStoreInform_CashEvent62_wrapper(struct CashItemRemoteStore* _this, uint16_t wIndex)
         {
            CashItemRemoteStoreInform_CashEvent62_user(_this, wIndex, CashItemRemoteStoreInform_CashEvent62_next);
         };
-        void CashItemRemoteStoreInform_CashEvent_Status_All64_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus, struct _cash_event_ini* pIni)
+        static void CashItemRemoteStoreInform_CashEvent_Status_All64_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus, struct _cash_event_ini* pIni)
         {
            CashItemRemoteStoreInform_CashEvent_Status_All64_user(_this, byEventType, byStatus, pIni, CashItemRemoteStoreInform_CashEvent_Status_All64_next);
         };
-        void CashItemRemoteStoreInform_ConditionalEvent66_wrapper(struct CashItemRemoteStore* _this, uint16_t wIndex)
+        static void CashItemRemoteStoreInform_ConditionalEvent66_wrapper(struct CashItemRemoteStore* _this, uint16_t wIndex)
         {
            CashItemRemoteStoreInform_ConditionalEvent66_user(_this, wIndex, CashItemRemoteStoreInform_ConditionalEvent66_next);
         };
-        void CashItemRemoteStoreInform_ConditionalEvent_Status_All68_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus, char* pszMsg)
+        static void CashItemRemoteStoreInform_ConditionalEvent_Status_All68_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus, char* pszMsg)
         {
            CashItemRemoteStoreInform_ConditionalEvent_Status_All68_user(_this, byEventType, byStatus, pszMsg, CashItemRemoteStoreInform_ConditionalEvent_Status_All68_next);
         };
-        bool CashItemRemoteStoreInitialize70_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreInitialize70_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreInitialize70_user(_this, CashItemRemoteStoreInitialize70_next);
         };
-        struct CashItemRemoteStore* CashItemRemoteStoreInstance72_wrapper()
+        static struct CashItemRemoteStore* CashItemRemoteStoreInstance72_wrapper()
         {
            return CashItemRemoteStoreInstance72_user(CashItemRemoteStoreInstance72_next);
         };
-        bool CashItemRemoteStoreIsBuyCashItemByGold74_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreIsBuyCashItemByGold74_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreIsBuyCashItemByGold74_user(_this, CashItemRemoteStoreIsBuyCashItemByGold74_next);
         };
-        bool CashItemRemoteStoreIsEventTime76_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static bool CashItemRemoteStoreIsEventTime76_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            return CashItemRemoteStoreIsEventTime76_user(_this, byEventType, CashItemRemoteStoreIsEventTime76_next);
         };
-        bool CashItemRemoteStoreIsUsableCoupon78_wrapper(struct CashItemRemoteStore* _this, struct _request_csi_buy_clzo* pBuyList, struct _STORAGE_POS_INDIV pCoupon, struct CPlayer* pOne, bool* bCheck)
+        static bool CashItemRemoteStoreIsUsableCoupon78_wrapper(struct CashItemRemoteStore* _this, struct _request_csi_buy_clzo* pBuyList, struct _STORAGE_POS_INDIV pCoupon, struct CPlayer* pOne, bool* bCheck)
         {
            return CashItemRemoteStoreIsUsableCoupon78_user(_this, pBuyList, pCoupon, pOne, bCheck, CashItemRemoteStoreIsUsableCoupon78_next);
         };
-        bool CashItemRemoteStoreLimitedSale_check_count80_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
+        static bool CashItemRemoteStoreLimitedSale_check_count80_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
         {
            return CashItemRemoteStoreLimitedSale_check_count80_user(_this, byTableCode, dwIndex, CashItemRemoteStoreLimitedSale_check_count80_next);
         };
-        bool CashItemRemoteStoreLoadBuyCashMode82_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreLoadBuyCashMode82_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreLoadBuyCashMode82_user(_this, CashItemRemoteStoreLoadBuyCashMode82_next);
         };
-        bool CashItemRemoteStoreLoadNationalPrice84_wrapper(struct CashItemRemoteStore* _this, struct CRecordData* krecPrice)
+        static bool CashItemRemoteStoreLoadNationalPrice84_wrapper(struct CashItemRemoteStore* _this, struct CRecordData* krecPrice)
         {
            return CashItemRemoteStoreLoadNationalPrice84_user(_this, krecPrice, CashItemRemoteStoreLoadNationalPrice84_next);
         };
-        void CashItemRemoteStoreLoad_Cash_Event86_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoad_Cash_Event86_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoad_Cash_Event86_user(_this, CashItemRemoteStoreLoad_Cash_Event86_next);
         };
-        void CashItemRemoteStoreLoad_Conditional_Event88_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoad_Conditional_Event88_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoad_Conditional_Event88_user(_this, CashItemRemoteStoreLoad_Conditional_Event88_next);
         };
-        void CashItemRemoteStoreLoad_Event_INI90_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni, struct _FILETIME* pft, char* pEventType)
+        static void CashItemRemoteStoreLoad_Event_INI90_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni, struct _FILETIME* pft, char* pEventType)
         {
            CashItemRemoteStoreLoad_Event_INI90_user(_this, pIni, pft, pEventType, CashItemRemoteStoreLoad_Event_INI90_next);
         };
-        void CashItemRemoteStoreLoad_LimitedSale_Event_INI92_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni, struct _FILETIME* pft, char* pEventType)
+        static void CashItemRemoteStoreLoad_LimitedSale_Event_INI92_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni, struct _FILETIME* pft, char* pEventType)
         {
            CashItemRemoteStoreLoad_LimitedSale_Event_INI92_user(_this, pIni, pft, pEventType, CashItemRemoteStoreLoad_LimitedSale_Event_INI92_next);
         };
-        void CashItemRemoteStoreLoop_Cash_Event94_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoop_Cash_Event94_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoop_Cash_Event94_user(_this, CashItemRemoteStoreLoop_Cash_Event94_next);
         };
-        void CashItemRemoteStoreLoop_Check_Total_Selling96_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoop_Check_Total_Selling96_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoop_Check_Total_Selling96_user(_this, CashItemRemoteStoreLoop_Check_Total_Selling96_next);
         };
-        void CashItemRemoteStoreLoop_ContEvent98_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoop_ContEvent98_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoop_ContEvent98_user(_this, CashItemRemoteStoreLoop_ContEvent98_next);
         };
-        void CashItemRemoteStoreLoop_TatalCashEvent100_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreLoop_TatalCashEvent100_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreLoop_TatalCashEvent100_user(_this, CashItemRemoteStoreLoop_TatalCashEvent100_next);
         };
-        bool CashItemRemoteStoreSell102_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
+        static bool CashItemRemoteStoreSell102_wrapper(struct CashItemRemoteStore* _this, uint16_t wSock, char* pPacket)
         {
            return CashItemRemoteStoreSell102_user(_this, wSock, pPacket, CashItemRemoteStoreSell102_next);
         };
-        bool CashItemRemoteStoreSetNextDiscountEventTime104_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreSetNextDiscountEventTime104_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreSetNextDiscountEventTime104_user(_this, CashItemRemoteStoreSetNextDiscountEventTime104_next);
         };
-        bool CashItemRemoteStoreSetNextEventTime106_wrapper(struct CashItemRemoteStore* _this, char byEventType)
+        static bool CashItemRemoteStoreSetNextEventTime106_wrapper(struct CashItemRemoteStore* _this, char byEventType)
         {
            return CashItemRemoteStoreSetNextEventTime106_user(_this, byEventType, CashItemRemoteStoreSetNextEventTime106_next);
         };
-        void CashItemRemoteStoreSet_CashEvent_Status108_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus)
+        static void CashItemRemoteStoreSet_CashEvent_Status108_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byStatus)
         {
            CashItemRemoteStoreSet_CashEvent_Status108_user(_this, byEventType, byStatus, CashItemRemoteStoreSet_CashEvent_Status108_next);
         };
-        void CashItemRemoteStoreSet_Conditional_Evnet_Status110_wrapper(struct CashItemRemoteStore* _this, char byStatus)
+        static void CashItemRemoteStoreSet_Conditional_Evnet_Status110_wrapper(struct CashItemRemoteStore* _this, char byStatus)
         {
            CashItemRemoteStoreSet_Conditional_Evnet_Status110_user(_this, byStatus, CashItemRemoteStoreSet_Conditional_Evnet_Status110_next);
         };
-        void CashItemRemoteStoreSet_DB_LimitedSale_Event112_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreSet_DB_LimitedSale_Event112_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreSet_DB_LimitedSale_Event112_user(_this, CashItemRemoteStoreSet_DB_LimitedSale_Event112_next);
         };
-        void CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_wrapper(struct CashItemRemoteStore* _this, struct _db_cash_limited_sale* Sheet)
+        static void CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_wrapper(struct CashItemRemoteStore* _this, struct _db_cash_limited_sale* Sheet)
         {
            CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_user(_this, Sheet, CashItemRemoteStoreSet_FROMDB_LimitedSale_Event114_next);
         };
-        void CashItemRemoteStoreSet_LimitedSale_DCK116_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byDCK)
+        static void CashItemRemoteStoreSet_LimitedSale_DCK116_wrapper(struct CashItemRemoteStore* _this, char byEventType, char byDCK)
         {
            CashItemRemoteStoreSet_LimitedSale_DCK116_user(_this, byEventType, byDCK, CashItemRemoteStoreSet_LimitedSale_DCK116_next);
         };
-        void CashItemRemoteStoreSet_LimitedSale_Event118_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreSet_LimitedSale_Event118_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreSet_LimitedSale_Event118_user(_this, CashItemRemoteStoreSet_LimitedSale_Event118_next);
         };
-        void CashItemRemoteStoreSet_LimitedSale_Event_Ini120_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni)
+        static void CashItemRemoteStoreSet_LimitedSale_Event_Ini120_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pIni)
         {
            CashItemRemoteStoreSet_LimitedSale_Event_Ini120_user(_this, pIni, CashItemRemoteStoreSet_LimitedSale_Event_Ini120_next);
         };
-        void CashItemRemoteStoreSet_LimitedSale_count122_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
+        static void CashItemRemoteStoreSet_LimitedSale_count122_wrapper(struct CashItemRemoteStore* _this, char byTableCode, unsigned int dwIndex)
         {
            CashItemRemoteStoreSet_LimitedSale_count122_user(_this, byTableCode, dwIndex, CashItemRemoteStoreSet_LimitedSale_count122_next);
         };
-        void CashItemRemoteStoreUpdate_INI124_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pNewIni, char byEventType)
+        static void CashItemRemoteStoreUpdate_INI124_wrapper(struct CashItemRemoteStore* _this, struct _cash_event_ini* pNewIni, char byEventType)
         {
            CashItemRemoteStoreUpdate_INI124_user(_this, pNewIni, byEventType, CashItemRemoteStoreUpdate_INI124_next);
         };
-        bool CashItemRemoteStoreUseDiscountCoupon126_wrapper(struct CashItemRemoteStore* _this, struct _param_cash_update* pBuyList, struct _STORAGE_POS_INDIV pCoupon, struct CPlayer* pOne)
+        static bool CashItemRemoteStoreUseDiscountCoupon126_wrapper(struct CashItemRemoteStore* _this, struct _param_cash_update* pBuyList, struct _STORAGE_POS_INDIV pCoupon, struct CPlayer* pOne)
         {
            return CashItemRemoteStoreUseDiscountCoupon126_user(_this, pBuyList, pCoupon, pOne, CashItemRemoteStoreUseDiscountCoupon126_next);
         };
-        bool CashItemRemoteStore_InitLoggers128_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStore_InitLoggers128_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStore_InitLoggers128_user(_this, CashItemRemoteStore_InitLoggers128_next);
         };
-        bool CashItemRemoteStore_MakeLinkTable130_wrapper(struct CashItemRemoteStore* _this, char* szMsg, int nSize)
+        static bool CashItemRemoteStore_MakeLinkTable130_wrapper(struct CashItemRemoteStore* _this, char* szMsg, int nSize)
         {
            return CashItemRemoteStore_MakeLinkTable130_user(_this, szMsg, nSize, CashItemRemoteStore_MakeLinkTable130_next);
         };
-        bool CashItemRemoteStore_ReadGoods132_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStore_ReadGoods132_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStore_ReadGoods132_user(_this, CashItemRemoteStore_ReadGoods132_next);
         };
-        bool CashItemRemoteStore__CheckGoods134_wrapper(struct CashItemRemoteStore* _this, struct CRecordData* krecPrice)
+        static bool CashItemRemoteStore__CheckGoods134_wrapper(struct CashItemRemoteStore* _this, struct CRecordData* krecPrice)
         {
            return CashItemRemoteStore__CheckGoods134_user(_this, krecPrice, CashItemRemoteStore__CheckGoods134_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_buy_single_item136_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, bool* bCouponUse, struct _result_csi_buy_zocl* Send)
+        static CS_RCODE CashItemRemoteStore_buybygold_buy_single_item136_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, bool* bCouponUse, struct _result_csi_buy_zocl* Send)
         {
            return CashItemRemoteStore_buybygold_buy_single_item136_user(_this, pOne, pRecv, pSrc, pSheet, bCouponUse, Send, CashItemRemoteStore_buybygold_buy_single_item136_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_additional_process138_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _result_csi_buy_zocl* Send)
+        static CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_additional_process138_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _result_csi_buy_zocl* Send)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_additional_process138_user(_this, pOne, pSrc, pSheet, Send, CashItemRemoteStore_buybygold_buy_single_item_additional_process138_next);
         };
-        unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price140_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, bool* bCouponUseCheck, struct _result_csi_buy_zocl* Send, unsigned int* dwDiscount)
+        static unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price140_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, bool* bCouponUseCheck, struct _result_csi_buy_zocl* Send, unsigned int* dwDiscount)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_calc_price140_user(_this, pOne, pRecv, pSrc, pSheet, pCsFld, bCouponUseCheck, Send, dwDiscount, CashItemRemoteStore_buybygold_buy_single_item_calc_price140_next);
         };
-        unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, char byOverlapNum, int nCsPrice, bool* bCouponUseCheck, unsigned int* dwDiscount)
+        static unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, char byOverlapNum, int nCsPrice, bool* bCouponUseCheck, unsigned int* dwDiscount)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_user(_this, pOne, pRecv, byOverlapNum, nCsPrice, bCouponUseCheck, dwDiscount, CashItemRemoteStore_buybygold_buy_single_item_calc_price_coupon142_next);
         };
-        unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_wrapper(struct CashItemRemoteStore* _this, struct _CashShop_fld* pCsFld, char byOverlapNum)
+        static unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_wrapper(struct CashItemRemoteStore* _this, struct _CashShop_fld* pCsFld, char byOverlapNum)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_user(_this, pCsFld, byOverlapNum, CashItemRemoteStore_buybygold_buy_single_item_calc_price_discount144_next);
         };
-        unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_wrapper(struct CashItemRemoteStore* _this, int nCsPrice, char byOverlapNum)
+        static unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_wrapper(struct CashItemRemoteStore* _this, int nCsPrice, char byOverlapNum)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_user(_this, nCsPrice, byOverlapNum, CashItemRemoteStore_buybygold_buy_single_item_calc_price_limitsale146_next);
         };
-        unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_wrapper(struct CashItemRemoteStore* _this, char bySetKind, int nCsPrice, char byOverlapNum)
+        static unsigned int CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_wrapper(struct CashItemRemoteStore* _this, char bySetKind, int nCsPrice, char byOverlapNum)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_user(_this, bySetKind, nCsPrice, byOverlapNum, CashItemRemoteStore_buybygold_buy_single_item_calc_price_one_n_one148_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_check_item150_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld** pCsFld)
+        static CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_check_item150_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld** pCsFld)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_check_item150_user(_this, pOne, pSrc, pSheet, pCsFld, CashItemRemoteStore_buybygold_buy_single_item_check_item150_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_give_item152_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _STORAGE_LIST::_db_con* GiveItem)
+        static CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_give_item152_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _STORAGE_LIST::_db_con* GiveItem)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_give_item152_user(_this, pOne, pSrc, GiveItem, CashItemRemoteStore_buybygold_buy_single_item_give_item152_next);
         };
-        void CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, struct _STORAGE_LIST::_db_con* GiveItem, struct _result_csi_buy_zocl* Send, unsigned int dwPrice, unsigned int dwDiscountRate, bool* bCouponUseCheck, bool* bCouponUse)
+        static void CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, struct _STORAGE_LIST::_db_con* GiveItem, struct _result_csi_buy_zocl* Send, unsigned int dwPrice, unsigned int dwDiscountRate, bool* bCouponUseCheck, bool* bCouponUse)
         {
            CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_user(_this, pOne, pSrc, pSheet, pCsFld, GiveItem, Send, dwPrice, dwDiscountRate, bCouponUseCheck, bCouponUse, CashItemRemoteStore_buybygold_buy_single_item_proc_complete154_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_proc_price156_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, bool* bCouponUseCheck, struct _result_csi_buy_zocl* Send, unsigned int* dwPrice, unsigned int* dwDiscountRate)
+        static CS_RCODE CashItemRemoteStore_buybygold_buy_single_item_proc_price156_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, struct _CashShop_fld* pCsFld, bool* bCouponUseCheck, struct _result_csi_buy_zocl* Send, unsigned int* dwPrice, unsigned int* dwDiscountRate)
         {
            return CashItemRemoteStore_buybygold_buy_single_item_proc_price156_user(_this, pOne, pRecv, pSrc, pSheet, pCsFld, bCouponUseCheck, Send, dwPrice, dwDiscountRate, CashItemRemoteStore_buybygold_buy_single_item_proc_price156_next);
         };
-        void CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_wrapper(struct CashItemRemoteStore* _this, struct _param_cashitem_dblog* pSheet, struct _STORAGE_LIST::_db_con* GiveItem, unsigned int dwPrice, unsigned int dwDiscountRate)
+        static void CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_wrapper(struct CashItemRemoteStore* _this, struct _param_cashitem_dblog* pSheet, struct _STORAGE_LIST::_db_con* GiveItem, unsigned int dwPrice, unsigned int dwDiscountRate)
         {
            CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_user(_this, pSheet, GiveItem, dwPrice, dwDiscountRate, CashItemRemoteStore_buybygold_buy_single_item_setbuydblog158_next);
         };
-        void CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_wrapper(struct CashItemRemoteStore* _this, struct _STORAGE_LIST::_db_con* GiveItem, struct _result_csi_buy_zocl* Send)
+        static void CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_wrapper(struct CashItemRemoteStore* _this, struct _STORAGE_LIST::_db_con* GiveItem, struct _result_csi_buy_zocl* Send)
         {
            CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_user(_this, GiveItem, Send, CashItemRemoteStore_buybygold_buy_single_item_setsenddata160_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_check_coupon162_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _param_cashitem_dblog* pSheet)
+        static CS_RCODE CashItemRemoteStore_buybygold_check_coupon162_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _param_cashitem_dblog* pSheet)
         {
            return CashItemRemoteStore_buybygold_check_coupon162_user(_this, pOne, pRecv, pSheet, CashItemRemoteStore_buybygold_check_coupon162_next);
         };
-        CS_RCODE CashItemRemoteStore_buybygold_check_valid164_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _param_cashitem_dblog* pSheet)
+        static CS_RCODE CashItemRemoteStore_buybygold_check_valid164_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _request_csi_buy_clzo* pRecv, struct _param_cashitem_dblog* pSheet)
         {
            return CashItemRemoteStore_buybygold_check_valid164_user(_this, pOne, pRecv, pSheet, CashItemRemoteStore_buybygold_check_valid164_next);
         };
-        void CashItemRemoteStore_buybygold_complete166_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _result_csi_buy_zocl* Send, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, bool bCouponUse)
+        static void CashItemRemoteStore_buybygold_complete166_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _result_csi_buy_zocl* Send, struct _request_csi_buy_clzo* pRecv, struct _request_csi_buy_clzo::__item* pSrc, struct _param_cashitem_dblog* pSheet, bool bCouponUse)
         {
            CashItemRemoteStore_buybygold_complete166_user(_this, pOne, Send, pRecv, pSrc, pSheet, bCouponUse, CashItemRemoteStore_buybygold_complete166_next);
         };
-        void CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _param_cashitem_dblog* pSheet)
+        static void CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_wrapper(struct CashItemRemoteStore* _this, struct CPlayer* pOne, struct _param_cashitem_dblog* pSheet)
         {
            CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_user(_this, pOne, pSheet, CashItemRemoteStore_buybygold_set_cashitem_dblog_sheet168_next);
         };
-        CS_RCODE CashItemRemoteStore_check_buyitem170_wrapper(struct CashItemRemoteStore* _this, char byRaceSex, struct _request_csi_buy_clzo::__item* pCsItem, struct _CashShop_fld* pFld)
+        static CS_RCODE CashItemRemoteStore_check_buyitem170_wrapper(struct CashItemRemoteStore* _this, char byRaceSex, struct _request_csi_buy_clzo::__item* pCsItem, struct _CashShop_fld* pFld)
         {
            return CashItemRemoteStore_check_buyitem170_user(_this, byRaceSex, pCsItem, pFld, CashItemRemoteStore_check_buyitem170_next);
         };
-        void CashItemRemoteStorecheck_cash_discount_ini172_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStorecheck_cash_discount_ini172_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStorecheck_cash_discount_ini172_user(_this, CashItemRemoteStorecheck_cash_discount_ini172_next);
         };
-        void CashItemRemoteStorecheck_cash_discount_status174_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStorecheck_cash_discount_status174_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStorecheck_cash_discount_status174_user(_this, CashItemRemoteStorecheck_cash_discount_status174_next);
         };
-        void CashItemRemoteStorecheck_loaded_cde_status176_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStorecheck_loaded_cde_status176_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStorecheck_loaded_cde_status176_user(_this, CashItemRemoteStorecheck_loaded_cde_status176_next);
         };
-        void CashItemRemoteStoreforce_endup_cash_discount_event178_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreforce_endup_cash_discount_event178_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreforce_endup_cash_discount_event178_user(_this, CashItemRemoteStoreforce_endup_cash_discount_event178_next);
         };
-        char CashItemRemoteStoreget_cde_status180_wrapper(struct CashItemRemoteStore* _this)
+        static char CashItemRemoteStoreget_cde_status180_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreget_cde_status180_user(_this, CashItemRemoteStoreget_cde_status180_next);
         };
-        void CashItemRemoteStoreinform_cashdiscount_event182_wrapper(struct CashItemRemoteStore* _this, uint16_t widx)
+        static void CashItemRemoteStoreinform_cashdiscount_event182_wrapper(struct CashItemRemoteStore* _this, uint16_t widx)
         {
            CashItemRemoteStoreinform_cashdiscount_event182_user(_this, widx, CashItemRemoteStoreinform_cashdiscount_event182_next);
         };
-        void CashItemRemoteStoreinform_cashdiscount_status_all184_wrapper(struct CashItemRemoteStore* _this, char byType, struct _cash_discount_ini_* pIni)
+        static void CashItemRemoteStoreinform_cashdiscount_status_all184_wrapper(struct CashItemRemoteStore* _this, char byType, struct _cash_discount_ini_* pIni)
         {
            CashItemRemoteStoreinform_cashdiscount_status_all184_user(_this, byType, pIni, CashItemRemoteStoreinform_cashdiscount_status_all184_next);
         };
-        bool CashItemRemoteStoreisConEventTime186_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreisConEventTime186_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreisConEventTime186_user(_this, CashItemRemoteStoreisConEventTime186_next);
         };
-        bool CashItemRemoteStoreis_cde_time188_wrapper(struct CashItemRemoteStore* _this)
+        static bool CashItemRemoteStoreis_cde_time188_wrapper(struct CashItemRemoteStore* _this)
         {
            return CashItemRemoteStoreis_cde_time188_user(_this, CashItemRemoteStoreis_cde_time188_next);
         };
-        void CashItemRemoteStoreload_cash_discount_event190_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreload_cash_discount_event190_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreload_cash_discount_event190_user(_this, CashItemRemoteStoreload_cash_discount_event190_next);
         };
-        void CashItemRemoteStoreload_cde_ini192_wrapper(struct CashItemRemoteStore* _this, struct _cash_discount_ini_* pIni, struct _FILETIME* pft)
+        static void CashItemRemoteStoreload_cde_ini192_wrapper(struct CashItemRemoteStore* _this, struct _cash_discount_ini_* pIni, struct _FILETIME* pft)
         {
            CashItemRemoteStoreload_cde_ini192_user(_this, pIni, pft, CashItemRemoteStoreload_cde_ini192_next);
         };
-        void CashItemRemoteStoreload_con_event_ini194_wrapper(struct CashItemRemoteStore* _this, struct _con_event_ini* pIni, struct _FILETIME* pft)
+        static void CashItemRemoteStoreload_con_event_ini194_wrapper(struct CashItemRemoteStore* _this, struct _con_event_ini* pIni, struct _FILETIME* pft)
         {
            CashItemRemoteStoreload_con_event_ini194_user(_this, pIni, pft, CashItemRemoteStoreload_con_event_ini194_next);
         };
-        void CashItemRemoteStorelog_about_cash_event196_wrapper(struct CashItemRemoteStore* _this, char* szLoadInfo, struct _cash_discount_ini_* pIni)
+        static void CashItemRemoteStorelog_about_cash_event196_wrapper(struct CashItemRemoteStore* _this, char* szLoadInfo, struct _cash_discount_ini_* pIni)
         {
            CashItemRemoteStorelog_about_cash_event196_user(_this, szLoadInfo, pIni, CashItemRemoteStorelog_about_cash_event196_next);
         };
-        void CashItemRemoteStoreloop_cash_discount_event198_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoreloop_cash_discount_event198_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoreloop_cash_discount_event198_user(_this, CashItemRemoteStoreloop_cash_discount_event198_next);
         };
-        void CashItemRemoteStoreset_cde_status200_wrapper(struct CashItemRemoteStore* _this, char byStatus)
+        static void CashItemRemoteStoreset_cde_status200_wrapper(struct CashItemRemoteStore* _this, char byStatus)
         {
            CashItemRemoteStoreset_cde_status200_user(_this, byStatus, CashItemRemoteStoreset_cde_status200_next);
         };
-        bool CashItemRemoteStorestart_cashevent202_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iB30_TT, int iB5_TT, int iEnd_TT, char byEventType)
+        static bool CashItemRemoteStorestart_cashevent202_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iB30_TT, int iB5_TT, int iEnd_TT, char byEventType)
         {
            return CashItemRemoteStorestart_cashevent202_user(_this, iBegin_TT, iB30_TT, iB5_TT, iEnd_TT, byEventType, CashItemRemoteStorestart_cashevent202_next);
         };
-        bool CashItemRemoteStorestart_cde204_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iB30_TT, int iB5_TT, int iEnd_TT)
+        static bool CashItemRemoteStorestart_cde204_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iB30_TT, int iB5_TT, int iEnd_TT)
         {
            return CashItemRemoteStorestart_cde204_user(_this, iBegin_TT, iB30_TT, iB5_TT, iEnd_TT, CashItemRemoteStorestart_cde204_next);
         };
-        bool CashItemRemoteStorestart_conevent206_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iEnd_TT, char byEventType)
+        static bool CashItemRemoteStorestart_conevent206_wrapper(struct CashItemRemoteStore* _this, int iBegin_TT, int iEnd_TT, char byEventType)
         {
            return CashItemRemoteStorestart_conevent206_user(_this, iBegin_TT, iEnd_TT, byEventType, CashItemRemoteStorestart_conevent206_next);
         };
-        void CashItemRemoteStoreupdate_ini208_wrapper(struct CashItemRemoteStore* _this, struct _cash_discount_ini_* pNewIni)
+        static void CashItemRemoteStoreupdate_ini208_wrapper(struct CashItemRemoteStore* _this, struct _cash_discount_ini_* pNewIni)
         {
            CashItemRemoteStoreupdate_ini208_user(_this, pNewIni, CashItemRemoteStoreupdate_ini208_next);
         };
-        void CashItemRemoteStoredtor_CashItemRemoteStore210_wrapper(struct CashItemRemoteStore* _this)
+        static void CashItemRemoteStoredtor_CashItemRemoteStore210_wrapper(struct CashItemRemoteStore* _this)
         {
            CashItemRemoteStoredtor_CashItemRemoteStore210_user(_this, CashItemRemoteStoredtor_CashItemRemoteStore210_next);
         };
         
-        void CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_wrapper(struct CashItemRemoteStore::_remain_num_of_good* _this)
+        static void CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_wrapper(struct CashItemRemoteStore::_remain_num_of_good* _this)
         {
            CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_user(_this, CashItemRemoteStore___remain_num_of_goodctor__remain_num_of_good2_next);
         };
         
-        hook_record CashItemRemoteStore_functions[] = {
+        static hook_record CashItemRemoteStore_functions[] = {
         {   (LPVOID)0x1402fe050L,
             (LPVOID *)&CashItemRemoteStoreBuy2_user,
             (LPVOID *)&CashItemRemoteStoreBuy2_next,
@@ -1183,5 +1183,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

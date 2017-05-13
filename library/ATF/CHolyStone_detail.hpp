@@ -8,243 +8,243 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyStoneAutoRecover2_ptr CHolyStoneAutoRecover2_next(nullptr);
-        info::CHolyStoneAutoRecover2_clbk CHolyStoneAutoRecover2_user(nullptr);
-        info::CHolyStonector_CHolyStone4_ptr CHolyStonector_CHolyStone4_next(nullptr);
-        info::CHolyStonector_CHolyStone4_clbk CHolyStonector_CHolyStone4_user(nullptr);
-        info::CHolyStoneCalcCurHPRate6_ptr CHolyStoneCalcCurHPRate6_next(nullptr);
-        info::CHolyStoneCalcCurHPRate6_clbk CHolyStoneCalcCurHPRate6_user(nullptr);
-        info::CHolyStoneCreate8_ptr CHolyStoneCreate8_next(nullptr);
-        info::CHolyStoneCreate8_clbk CHolyStoneCreate8_user(nullptr);
-        info::CHolyStoneDestroy10_ptr CHolyStoneDestroy10_next(nullptr);
-        info::CHolyStoneDestroy10_clbk CHolyStoneDestroy10_user(nullptr);
-        info::CHolyStoneDropItem12_ptr CHolyStoneDropItem12_next(nullptr);
-        info::CHolyStoneDropItem12_clbk CHolyStoneDropItem12_user(nullptr);
-        info::CHolyStoneGetAddCountWithPlayer14_ptr CHolyStoneGetAddCountWithPlayer14_next(nullptr);
-        info::CHolyStoneGetAddCountWithPlayer14_clbk CHolyStoneGetAddCountWithPlayer14_user(nullptr);
-        info::CHolyStoneGetAttackDP16_ptr CHolyStoneGetAttackDP16_next(nullptr);
-        info::CHolyStoneGetAttackDP16_clbk CHolyStoneGetAttackDP16_user(nullptr);
-        info::CHolyStoneGetDefFC18_ptr CHolyStoneGetDefFC18_next(nullptr);
-        info::CHolyStoneGetDefFC18_clbk CHolyStoneGetDefFC18_user(nullptr);
-        info::CHolyStoneGetDefFacing20_ptr CHolyStoneGetDefFacing20_next(nullptr);
-        info::CHolyStoneGetDefFacing20_clbk CHolyStoneGetDefFacing20_user(nullptr);
-        info::CHolyStoneGetDefGap22_ptr CHolyStoneGetDefGap22_next(nullptr);
-        info::CHolyStoneGetDefGap22_clbk CHolyStoneGetDefGap22_user(nullptr);
-        info::CHolyStoneGetDefSkill24_ptr CHolyStoneGetDefSkill24_next(nullptr);
-        info::CHolyStoneGetDefSkill24_clbk CHolyStoneGetDefSkill24_user(nullptr);
-        info::CHolyStoneGetFireTol26_ptr CHolyStoneGetFireTol26_next(nullptr);
-        info::CHolyStoneGetFireTol26_clbk CHolyStoneGetFireTol26_user(nullptr);
-        info::CHolyStoneGetHP28_ptr CHolyStoneGetHP28_next(nullptr);
-        info::CHolyStoneGetHP28_clbk CHolyStoneGetHP28_user(nullptr);
-        info::CHolyStoneGetLevel30_ptr CHolyStoneGetLevel30_next(nullptr);
-        info::CHolyStoneGetLevel30_clbk CHolyStoneGetLevel30_user(nullptr);
-        info::CHolyStoneGetMaxHP32_ptr CHolyStoneGetMaxHP32_next(nullptr);
-        info::CHolyStoneGetMaxHP32_clbk CHolyStoneGetMaxHP32_user(nullptr);
-        info::CHolyStoneGetNewStoneSerial34_ptr CHolyStoneGetNewStoneSerial34_next(nullptr);
-        info::CHolyStoneGetNewStoneSerial34_clbk CHolyStoneGetNewStoneSerial34_user(nullptr);
-        info::CHolyStoneGetObjName36_ptr CHolyStoneGetObjName36_next(nullptr);
-        info::CHolyStoneGetObjName36_clbk CHolyStoneGetObjName36_user(nullptr);
-        info::CHolyStoneGetObjRace38_ptr CHolyStoneGetObjRace38_next(nullptr);
-        info::CHolyStoneGetObjRace38_clbk CHolyStoneGetObjRace38_user(nullptr);
-        info::CHolyStoneGetSoilTol40_ptr CHolyStoneGetSoilTol40_next(nullptr);
-        info::CHolyStoneGetSoilTol40_clbk CHolyStoneGetSoilTol40_user(nullptr);
-        info::CHolyStoneGetWaterTol42_ptr CHolyStoneGetWaterTol42_next(nullptr);
-        info::CHolyStoneGetWaterTol42_clbk CHolyStoneGetWaterTol42_user(nullptr);
-        info::CHolyStoneGetWeaponAdjust44_ptr CHolyStoneGetWeaponAdjust44_next(nullptr);
-        info::CHolyStoneGetWeaponAdjust44_clbk CHolyStoneGetWeaponAdjust44_user(nullptr);
-        info::CHolyStoneGetWidth46_ptr CHolyStoneGetWidth46_next(nullptr);
-        info::CHolyStoneGetWidth46_clbk CHolyStoneGetWidth46_user(nullptr);
-        info::CHolyStoneGetWindTol48_ptr CHolyStoneGetWindTol48_next(nullptr);
-        info::CHolyStoneGetWindTol48_clbk CHolyStoneGetWindTol48_user(nullptr);
-        info::CHolyStoneInit50_ptr CHolyStoneInit50_next(nullptr);
-        info::CHolyStoneInit50_clbk CHolyStoneInit50_user(nullptr);
-        info::CHolyStoneIsBeAttackedAble52_ptr CHolyStoneIsBeAttackedAble52_next(nullptr);
-        info::CHolyStoneIsBeAttackedAble52_clbk CHolyStoneIsBeAttackedAble52_user(nullptr);
-        info::CHolyStoneIsBeDamagedAble54_ptr CHolyStoneIsBeDamagedAble54_next(nullptr);
-        info::CHolyStoneIsBeDamagedAble54_clbk CHolyStoneIsBeDamagedAble54_user(nullptr);
-        info::CHolyStoneIsChangedHP56_ptr CHolyStoneIsChangedHP56_next(nullptr);
-        info::CHolyStoneIsChangedHP56_clbk CHolyStoneIsChangedHP56_user(nullptr);
-        info::CHolyStoneLoop58_ptr CHolyStoneLoop58_next(nullptr);
-        info::CHolyStoneLoop58_clbk CHolyStoneLoop58_user(nullptr);
-        info::CHolyStoneOutOfSec60_ptr CHolyStoneOutOfSec60_next(nullptr);
-        info::CHolyStoneOutOfSec60_clbk CHolyStoneOutOfSec60_user(nullptr);
-        info::CHolyStoneSendMsg_Create62_ptr CHolyStoneSendMsg_Create62_next(nullptr);
-        info::CHolyStoneSendMsg_Create62_clbk CHolyStoneSendMsg_Create62_user(nullptr);
-        info::CHolyStoneSendMsg_Destroy64_ptr CHolyStoneSendMsg_Destroy64_next(nullptr);
-        info::CHolyStoneSendMsg_Destroy64_clbk CHolyStoneSendMsg_Destroy64_user(nullptr);
-        info::CHolyStoneSendMsg_FixPosition66_ptr CHolyStoneSendMsg_FixPosition66_next(nullptr);
-        info::CHolyStoneSendMsg_FixPosition66_clbk CHolyStoneSendMsg_FixPosition66_user(nullptr);
-        info::CHolyStoneSendMsg_StoneAlterOper68_ptr CHolyStoneSendMsg_StoneAlterOper68_next(nullptr);
-        info::CHolyStoneSendMsg_StoneAlterOper68_clbk CHolyStoneSendMsg_StoneAlterOper68_user(nullptr);
-        info::CHolyStoneSetDamage70_ptr CHolyStoneSetDamage70_next(nullptr);
-        info::CHolyStoneSetDamage70_clbk CHolyStoneSetDamage70_user(nullptr);
-        info::CHolyStoneSetDropItem72_ptr CHolyStoneSetDropItem72_next(nullptr);
-        info::CHolyStoneSetDropItem72_clbk CHolyStoneSetDropItem72_user(nullptr);
-        info::CHolyStoneSetHP74_ptr CHolyStoneSetHP74_next(nullptr);
-        info::CHolyStoneSetHP74_clbk CHolyStoneSetHP74_user(nullptr);
-        info::CHolyStoneSetOper76_ptr CHolyStoneSetOper76_next(nullptr);
-        info::CHolyStoneSetOper76_clbk CHolyStoneSetOper76_user(nullptr);
-        info::CHolyStonedtor_CHolyStone82_ptr CHolyStonedtor_CHolyStone82_next(nullptr);
-        info::CHolyStonedtor_CHolyStone82_clbk CHolyStonedtor_CHolyStone82_user(nullptr);
+        static info::CHolyStoneAutoRecover2_ptr CHolyStoneAutoRecover2_next(nullptr);
+        static info::CHolyStoneAutoRecover2_clbk CHolyStoneAutoRecover2_user(nullptr);
+        static info::CHolyStonector_CHolyStone4_ptr CHolyStonector_CHolyStone4_next(nullptr);
+        static info::CHolyStonector_CHolyStone4_clbk CHolyStonector_CHolyStone4_user(nullptr);
+        static info::CHolyStoneCalcCurHPRate6_ptr CHolyStoneCalcCurHPRate6_next(nullptr);
+        static info::CHolyStoneCalcCurHPRate6_clbk CHolyStoneCalcCurHPRate6_user(nullptr);
+        static info::CHolyStoneCreate8_ptr CHolyStoneCreate8_next(nullptr);
+        static info::CHolyStoneCreate8_clbk CHolyStoneCreate8_user(nullptr);
+        static info::CHolyStoneDestroy10_ptr CHolyStoneDestroy10_next(nullptr);
+        static info::CHolyStoneDestroy10_clbk CHolyStoneDestroy10_user(nullptr);
+        static info::CHolyStoneDropItem12_ptr CHolyStoneDropItem12_next(nullptr);
+        static info::CHolyStoneDropItem12_clbk CHolyStoneDropItem12_user(nullptr);
+        static info::CHolyStoneGetAddCountWithPlayer14_ptr CHolyStoneGetAddCountWithPlayer14_next(nullptr);
+        static info::CHolyStoneGetAddCountWithPlayer14_clbk CHolyStoneGetAddCountWithPlayer14_user(nullptr);
+        static info::CHolyStoneGetAttackDP16_ptr CHolyStoneGetAttackDP16_next(nullptr);
+        static info::CHolyStoneGetAttackDP16_clbk CHolyStoneGetAttackDP16_user(nullptr);
+        static info::CHolyStoneGetDefFC18_ptr CHolyStoneGetDefFC18_next(nullptr);
+        static info::CHolyStoneGetDefFC18_clbk CHolyStoneGetDefFC18_user(nullptr);
+        static info::CHolyStoneGetDefFacing20_ptr CHolyStoneGetDefFacing20_next(nullptr);
+        static info::CHolyStoneGetDefFacing20_clbk CHolyStoneGetDefFacing20_user(nullptr);
+        static info::CHolyStoneGetDefGap22_ptr CHolyStoneGetDefGap22_next(nullptr);
+        static info::CHolyStoneGetDefGap22_clbk CHolyStoneGetDefGap22_user(nullptr);
+        static info::CHolyStoneGetDefSkill24_ptr CHolyStoneGetDefSkill24_next(nullptr);
+        static info::CHolyStoneGetDefSkill24_clbk CHolyStoneGetDefSkill24_user(nullptr);
+        static info::CHolyStoneGetFireTol26_ptr CHolyStoneGetFireTol26_next(nullptr);
+        static info::CHolyStoneGetFireTol26_clbk CHolyStoneGetFireTol26_user(nullptr);
+        static info::CHolyStoneGetHP28_ptr CHolyStoneGetHP28_next(nullptr);
+        static info::CHolyStoneGetHP28_clbk CHolyStoneGetHP28_user(nullptr);
+        static info::CHolyStoneGetLevel30_ptr CHolyStoneGetLevel30_next(nullptr);
+        static info::CHolyStoneGetLevel30_clbk CHolyStoneGetLevel30_user(nullptr);
+        static info::CHolyStoneGetMaxHP32_ptr CHolyStoneGetMaxHP32_next(nullptr);
+        static info::CHolyStoneGetMaxHP32_clbk CHolyStoneGetMaxHP32_user(nullptr);
+        static info::CHolyStoneGetNewStoneSerial34_ptr CHolyStoneGetNewStoneSerial34_next(nullptr);
+        static info::CHolyStoneGetNewStoneSerial34_clbk CHolyStoneGetNewStoneSerial34_user(nullptr);
+        static info::CHolyStoneGetObjName36_ptr CHolyStoneGetObjName36_next(nullptr);
+        static info::CHolyStoneGetObjName36_clbk CHolyStoneGetObjName36_user(nullptr);
+        static info::CHolyStoneGetObjRace38_ptr CHolyStoneGetObjRace38_next(nullptr);
+        static info::CHolyStoneGetObjRace38_clbk CHolyStoneGetObjRace38_user(nullptr);
+        static info::CHolyStoneGetSoilTol40_ptr CHolyStoneGetSoilTol40_next(nullptr);
+        static info::CHolyStoneGetSoilTol40_clbk CHolyStoneGetSoilTol40_user(nullptr);
+        static info::CHolyStoneGetWaterTol42_ptr CHolyStoneGetWaterTol42_next(nullptr);
+        static info::CHolyStoneGetWaterTol42_clbk CHolyStoneGetWaterTol42_user(nullptr);
+        static info::CHolyStoneGetWeaponAdjust44_ptr CHolyStoneGetWeaponAdjust44_next(nullptr);
+        static info::CHolyStoneGetWeaponAdjust44_clbk CHolyStoneGetWeaponAdjust44_user(nullptr);
+        static info::CHolyStoneGetWidth46_ptr CHolyStoneGetWidth46_next(nullptr);
+        static info::CHolyStoneGetWidth46_clbk CHolyStoneGetWidth46_user(nullptr);
+        static info::CHolyStoneGetWindTol48_ptr CHolyStoneGetWindTol48_next(nullptr);
+        static info::CHolyStoneGetWindTol48_clbk CHolyStoneGetWindTol48_user(nullptr);
+        static info::CHolyStoneInit50_ptr CHolyStoneInit50_next(nullptr);
+        static info::CHolyStoneInit50_clbk CHolyStoneInit50_user(nullptr);
+        static info::CHolyStoneIsBeAttackedAble52_ptr CHolyStoneIsBeAttackedAble52_next(nullptr);
+        static info::CHolyStoneIsBeAttackedAble52_clbk CHolyStoneIsBeAttackedAble52_user(nullptr);
+        static info::CHolyStoneIsBeDamagedAble54_ptr CHolyStoneIsBeDamagedAble54_next(nullptr);
+        static info::CHolyStoneIsBeDamagedAble54_clbk CHolyStoneIsBeDamagedAble54_user(nullptr);
+        static info::CHolyStoneIsChangedHP56_ptr CHolyStoneIsChangedHP56_next(nullptr);
+        static info::CHolyStoneIsChangedHP56_clbk CHolyStoneIsChangedHP56_user(nullptr);
+        static info::CHolyStoneLoop58_ptr CHolyStoneLoop58_next(nullptr);
+        static info::CHolyStoneLoop58_clbk CHolyStoneLoop58_user(nullptr);
+        static info::CHolyStoneOutOfSec60_ptr CHolyStoneOutOfSec60_next(nullptr);
+        static info::CHolyStoneOutOfSec60_clbk CHolyStoneOutOfSec60_user(nullptr);
+        static info::CHolyStoneSendMsg_Create62_ptr CHolyStoneSendMsg_Create62_next(nullptr);
+        static info::CHolyStoneSendMsg_Create62_clbk CHolyStoneSendMsg_Create62_user(nullptr);
+        static info::CHolyStoneSendMsg_Destroy64_ptr CHolyStoneSendMsg_Destroy64_next(nullptr);
+        static info::CHolyStoneSendMsg_Destroy64_clbk CHolyStoneSendMsg_Destroy64_user(nullptr);
+        static info::CHolyStoneSendMsg_FixPosition66_ptr CHolyStoneSendMsg_FixPosition66_next(nullptr);
+        static info::CHolyStoneSendMsg_FixPosition66_clbk CHolyStoneSendMsg_FixPosition66_user(nullptr);
+        static info::CHolyStoneSendMsg_StoneAlterOper68_ptr CHolyStoneSendMsg_StoneAlterOper68_next(nullptr);
+        static info::CHolyStoneSendMsg_StoneAlterOper68_clbk CHolyStoneSendMsg_StoneAlterOper68_user(nullptr);
+        static info::CHolyStoneSetDamage70_ptr CHolyStoneSetDamage70_next(nullptr);
+        static info::CHolyStoneSetDamage70_clbk CHolyStoneSetDamage70_user(nullptr);
+        static info::CHolyStoneSetDropItem72_ptr CHolyStoneSetDropItem72_next(nullptr);
+        static info::CHolyStoneSetDropItem72_clbk CHolyStoneSetDropItem72_user(nullptr);
+        static info::CHolyStoneSetHP74_ptr CHolyStoneSetHP74_next(nullptr);
+        static info::CHolyStoneSetHP74_clbk CHolyStoneSetHP74_user(nullptr);
+        static info::CHolyStoneSetOper76_ptr CHolyStoneSetOper76_next(nullptr);
+        static info::CHolyStoneSetOper76_clbk CHolyStoneSetOper76_user(nullptr);
+        static info::CHolyStonedtor_CHolyStone82_ptr CHolyStonedtor_CHolyStone82_next(nullptr);
+        static info::CHolyStonedtor_CHolyStone82_clbk CHolyStonedtor_CHolyStone82_user(nullptr);
         
-        void CHolyStoneAutoRecover2_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneAutoRecover2_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneAutoRecover2_user(_this, CHolyStoneAutoRecover2_next);
         };
-        void CHolyStonector_CHolyStone4_wrapper(struct CHolyStone* _this)
+        static void CHolyStonector_CHolyStone4_wrapper(struct CHolyStone* _this)
         {
            CHolyStonector_CHolyStone4_user(_this, CHolyStonector_CHolyStone4_next);
         };
-        uint16_t CHolyStoneCalcCurHPRate6_wrapper(struct CHolyStone* _this)
+        static uint16_t CHolyStoneCalcCurHPRate6_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneCalcCurHPRate6_user(_this, CHolyStoneCalcCurHPRate6_next);
         };
-        bool CHolyStoneCreate8_wrapper(struct CHolyStone* _this, struct _stone_create_setdata* pData)
+        static bool CHolyStoneCreate8_wrapper(struct CHolyStone* _this, struct _stone_create_setdata* pData)
         {
            return CHolyStoneCreate8_user(_this, pData, CHolyStoneCreate8_next);
         };
-        bool CHolyStoneDestroy10_wrapper(struct CHolyStone* _this, char byDestroyCode, struct CCharacter* pAtter)
+        static bool CHolyStoneDestroy10_wrapper(struct CHolyStone* _this, char byDestroyCode, struct CCharacter* pAtter)
         {
            return CHolyStoneDestroy10_user(_this, byDestroyCode, pAtter, CHolyStoneDestroy10_next);
         };
-        void CHolyStoneDropItem12_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneDropItem12_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneDropItem12_user(_this, CHolyStoneDropItem12_next);
         };
-        uint16_t CHolyStoneGetAddCountWithPlayer14_wrapper(struct CHolyStone* _this)
+        static uint16_t CHolyStoneGetAddCountWithPlayer14_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetAddCountWithPlayer14_user(_this, CHolyStoneGetAddCountWithPlayer14_next);
         };
-        int CHolyStoneGetAttackDP16_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetAttackDP16_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetAttackDP16_user(_this, CHolyStoneGetAttackDP16_next);
         };
-        int CHolyStoneGetDefFC18_wrapper(struct CHolyStone* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CHolyStoneGetDefFC18_wrapper(struct CHolyStone* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CHolyStoneGetDefFC18_user(_this, nAttactPart, pAttChar, pnConvertPart, CHolyStoneGetDefFC18_next);
         };
-        float CHolyStoneGetDefFacing20_wrapper(struct CHolyStone* _this, int nPart)
+        static float CHolyStoneGetDefFacing20_wrapper(struct CHolyStone* _this, int nPart)
         {
            return CHolyStoneGetDefFacing20_user(_this, nPart, CHolyStoneGetDefFacing20_next);
         };
-        float CHolyStoneGetDefGap22_wrapper(struct CHolyStone* _this, int nPart)
+        static float CHolyStoneGetDefGap22_wrapper(struct CHolyStone* _this, int nPart)
         {
            return CHolyStoneGetDefGap22_user(_this, nPart, CHolyStoneGetDefGap22_next);
         };
-        int CHolyStoneGetDefSkill24_wrapper(struct CHolyStone* _this, bool bBackAttack)
+        static int CHolyStoneGetDefSkill24_wrapper(struct CHolyStone* _this, bool bBackAttack)
         {
            return CHolyStoneGetDefSkill24_user(_this, bBackAttack, CHolyStoneGetDefSkill24_next);
         };
-        int CHolyStoneGetFireTol26_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetFireTol26_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetFireTol26_user(_this, CHolyStoneGetFireTol26_next);
         };
-        int CHolyStoneGetHP28_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetHP28_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetHP28_user(_this, CHolyStoneGetHP28_next);
         };
-        int CHolyStoneGetLevel30_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetLevel30_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetLevel30_user(_this, CHolyStoneGetLevel30_next);
         };
-        int CHolyStoneGetMaxHP32_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetMaxHP32_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetMaxHP32_user(_this, CHolyStoneGetMaxHP32_next);
         };
-        unsigned int CHolyStoneGetNewStoneSerial34_wrapper()
+        static unsigned int CHolyStoneGetNewStoneSerial34_wrapper()
         {
            return CHolyStoneGetNewStoneSerial34_user(CHolyStoneGetNewStoneSerial34_next);
         };
-        char* CHolyStoneGetObjName36_wrapper(struct CHolyStone* _this)
+        static char* CHolyStoneGetObjName36_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetObjName36_user(_this, CHolyStoneGetObjName36_next);
         };
-        int CHolyStoneGetObjRace38_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetObjRace38_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetObjRace38_user(_this, CHolyStoneGetObjRace38_next);
         };
-        int CHolyStoneGetSoilTol40_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetSoilTol40_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetSoilTol40_user(_this, CHolyStoneGetSoilTol40_next);
         };
-        int CHolyStoneGetWaterTol42_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetWaterTol42_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetWaterTol42_user(_this, CHolyStoneGetWaterTol42_next);
         };
-        float CHolyStoneGetWeaponAdjust44_wrapper(struct CHolyStone* _this)
+        static float CHolyStoneGetWeaponAdjust44_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetWeaponAdjust44_user(_this, CHolyStoneGetWeaponAdjust44_next);
         };
-        float CHolyStoneGetWidth46_wrapper(struct CHolyStone* _this)
+        static float CHolyStoneGetWidth46_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetWidth46_user(_this, CHolyStoneGetWidth46_next);
         };
-        int CHolyStoneGetWindTol48_wrapper(struct CHolyStone* _this)
+        static int CHolyStoneGetWindTol48_wrapper(struct CHolyStone* _this)
         {
            return CHolyStoneGetWindTol48_user(_this, CHolyStoneGetWindTol48_next);
         };
-        bool CHolyStoneInit50_wrapper(struct CHolyStone* _this, struct _object_id* pID)
+        static bool CHolyStoneInit50_wrapper(struct CHolyStone* _this, struct _object_id* pID)
         {
            return CHolyStoneInit50_user(_this, pID, CHolyStoneInit50_next);
         };
-        bool CHolyStoneIsBeAttackedAble52_wrapper(struct CHolyStone* _this, bool bFirst)
+        static bool CHolyStoneIsBeAttackedAble52_wrapper(struct CHolyStone* _this, bool bFirst)
         {
            return CHolyStoneIsBeAttackedAble52_user(_this, bFirst, CHolyStoneIsBeAttackedAble52_next);
         };
-        bool CHolyStoneIsBeDamagedAble54_wrapper(struct CHolyStone* _this, struct CCharacter* pAtter)
+        static bool CHolyStoneIsBeDamagedAble54_wrapper(struct CHolyStone* _this, struct CCharacter* pAtter)
         {
            return CHolyStoneIsBeDamagedAble54_user(_this, pAtter, CHolyStoneIsBeDamagedAble54_next);
         };
-        bool CHolyStoneIsChangedHP56_wrapper(struct CHolyStone* _this, uint16_t wAlterRate)
+        static bool CHolyStoneIsChangedHP56_wrapper(struct CHolyStone* _this, uint16_t wAlterRate)
         {
            return CHolyStoneIsChangedHP56_user(_this, wAlterRate, CHolyStoneIsChangedHP56_next);
         };
-        void CHolyStoneLoop58_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneLoop58_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneLoop58_user(_this, CHolyStoneLoop58_next);
         };
-        void CHolyStoneOutOfSec60_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneOutOfSec60_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneOutOfSec60_user(_this, CHolyStoneOutOfSec60_next);
         };
-        void CHolyStoneSendMsg_Create62_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneSendMsg_Create62_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneSendMsg_Create62_user(_this, CHolyStoneSendMsg_Create62_next);
         };
-        void CHolyStoneSendMsg_Destroy64_wrapper(struct CHolyStone* _this, char byDestroyCode, unsigned int dwDestroySerial)
+        static void CHolyStoneSendMsg_Destroy64_wrapper(struct CHolyStone* _this, char byDestroyCode, unsigned int dwDestroySerial)
         {
            CHolyStoneSendMsg_Destroy64_user(_this, byDestroyCode, dwDestroySerial, CHolyStoneSendMsg_Destroy64_next);
         };
-        void CHolyStoneSendMsg_FixPosition66_wrapper(struct CHolyStone* _this, int n)
+        static void CHolyStoneSendMsg_FixPosition66_wrapper(struct CHolyStone* _this, int n)
         {
            CHolyStoneSendMsg_FixPosition66_user(_this, n, CHolyStoneSendMsg_FixPosition66_next);
         };
-        void CHolyStoneSendMsg_StoneAlterOper68_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneSendMsg_StoneAlterOper68_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneSendMsg_StoneAlterOper68_user(_this, CHolyStoneSendMsg_StoneAlterOper68_next);
         };
-        int CHolyStoneSetDamage70_wrapper(struct CHolyStone* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CHolyStoneSetDamage70_wrapper(struct CHolyStone* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CHolyStoneSetDamage70_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CHolyStoneSetDamage70_next);
         };
-        void CHolyStoneSetDropItem72_wrapper(struct CHolyStone* _this)
+        static void CHolyStoneSetDropItem72_wrapper(struct CHolyStone* _this)
         {
            CHolyStoneSetDropItem72_user(_this, CHolyStoneSetDropItem72_next);
         };
-        bool CHolyStoneSetHP74_wrapper(struct CHolyStone* _this, int nHP, bool bOver)
+        static bool CHolyStoneSetHP74_wrapper(struct CHolyStone* _this, int nHP, bool bOver)
         {
            return CHolyStoneSetHP74_user(_this, nHP, bOver, CHolyStoneSetHP74_next);
         };
-        void CHolyStoneSetOper76_wrapper(struct CHolyStone* _this, bool bOper, float fHPRate)
+        static void CHolyStoneSetOper76_wrapper(struct CHolyStone* _this, bool bOper, float fHPRate)
         {
            CHolyStoneSetOper76_user(_this, bOper, fHPRate, CHolyStoneSetOper76_next);
         };
-        void CHolyStonedtor_CHolyStone82_wrapper(struct CHolyStone* _this)
+        static void CHolyStonedtor_CHolyStone82_wrapper(struct CHolyStone* _this)
         {
            CHolyStonedtor_CHolyStone82_user(_this, CHolyStonedtor_CHolyStone82_next);
         };
         
-        hook_record CHolyStone_functions[] = {
+        static hook_record CHolyStone_functions[] = {
         {   (LPVOID)0x1401373d0L,
             (LPVOID *)&CHolyStoneAutoRecover2_user,
             (LPVOID *)&CHolyStoneAutoRecover2_next,
@@ -443,5 +443,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

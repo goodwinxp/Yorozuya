@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingFactoryGBctor_CNationSettingFactoryGB2_ptr CNationSettingFactoryGBctor_CNationSettingFactoryGB2_next(nullptr);
-        info::CNationSettingFactoryGBctor_CNationSettingFactoryGB2_clbk CNationSettingFactoryGBctor_CNationSettingFactoryGB2_user(nullptr);
-        info::CNationSettingFactoryGBCreate4_ptr CNationSettingFactoryGBCreate4_next(nullptr);
-        info::CNationSettingFactoryGBCreate4_clbk CNationSettingFactoryGBCreate4_user(nullptr);
+        static info::CNationSettingFactoryGBctor_CNationSettingFactoryGB2_ptr CNationSettingFactoryGBctor_CNationSettingFactoryGB2_next(nullptr);
+        static info::CNationSettingFactoryGBctor_CNationSettingFactoryGB2_clbk CNationSettingFactoryGBctor_CNationSettingFactoryGB2_user(nullptr);
+        static info::CNationSettingFactoryGBCreate4_ptr CNationSettingFactoryGBCreate4_next(nullptr);
+        static info::CNationSettingFactoryGBCreate4_clbk CNationSettingFactoryGBCreate4_user(nullptr);
         
-        void CNationSettingFactoryGBctor_CNationSettingFactoryGB2_wrapper(struct CNationSettingFactoryGB* _this)
+        static void CNationSettingFactoryGBctor_CNationSettingFactoryGB2_wrapper(struct CNationSettingFactoryGB* _this)
         {
            CNationSettingFactoryGBctor_CNationSettingFactoryGB2_user(_this, CNationSettingFactoryGBctor_CNationSettingFactoryGB2_next);
         };
-        struct CNationSettingData* CNationSettingFactoryGBCreate4_wrapper(struct CNationSettingFactoryGB* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
+        static struct CNationSettingData* CNationSettingFactoryGBCreate4_wrapper(struct CNationSettingFactoryGB* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
         {
            return CNationSettingFactoryGBCreate4_user(_this, iNationCode, szNationCodeStr, bServiceMode, CNationSettingFactoryGBCreate4_next);
         };
         
-        hook_record CNationSettingFactoryGB_functions[] = {
+        static hook_record CNationSettingFactoryGB_functions[] = {
         {   (LPVOID)0x140219520L,
             (LPVOID *)&CNationSettingFactoryGBctor_CNationSettingFactoryGB2_user,
             (LPVOID *)&CNationSettingFactoryGBctor_CNationSettingFactoryGB2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

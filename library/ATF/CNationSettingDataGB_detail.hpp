@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataGBctor_CNationSettingDataGB2_ptr CNationSettingDataGBctor_CNationSettingDataGB2_next(nullptr);
-        info::CNationSettingDataGBctor_CNationSettingDataGB2_clbk CNationSettingDataGBctor_CNationSettingDataGB2_user(nullptr);
-        info::CNationSettingDataGBCreateWorker4_ptr CNationSettingDataGBCreateWorker4_next(nullptr);
-        info::CNationSettingDataGBCreateWorker4_clbk CNationSettingDataGBCreateWorker4_user(nullptr);
-        info::CNationSettingDataGBGetCashItemPrice6_ptr CNationSettingDataGBGetCashItemPrice6_next(nullptr);
-        info::CNationSettingDataGBGetCashItemPrice6_clbk CNationSettingDataGBGetCashItemPrice6_user(nullptr);
-        info::CNationSettingDataGBGetItemName8_ptr CNationSettingDataGBGetItemName8_next(nullptr);
-        info::CNationSettingDataGBGetItemName8_clbk CNationSettingDataGBGetItemName8_user(nullptr);
-        info::CNationSettingDataGBInit10_ptr CNationSettingDataGBInit10_next(nullptr);
-        info::CNationSettingDataGBInit10_clbk CNationSettingDataGBInit10_user(nullptr);
-        info::CNationSettingDataGBLoop12_ptr CNationSettingDataGBLoop12_next(nullptr);
-        info::CNationSettingDataGBLoop12_clbk CNationSettingDataGBLoop12_user(nullptr);
-        info::CNationSettingDataGBReadSystemPass14_ptr CNationSettingDataGBReadSystemPass14_next(nullptr);
-        info::CNationSettingDataGBReadSystemPass14_clbk CNationSettingDataGBReadSystemPass14_user(nullptr);
-        info::CNationSettingDataGBSendCashDBDSNRequest16_ptr CNationSettingDataGBSendCashDBDSNRequest16_next(nullptr);
-        info::CNationSettingDataGBSendCashDBDSNRequest16_clbk CNationSettingDataGBSendCashDBDSNRequest16_user(nullptr);
+        static info::CNationSettingDataGBctor_CNationSettingDataGB2_ptr CNationSettingDataGBctor_CNationSettingDataGB2_next(nullptr);
+        static info::CNationSettingDataGBctor_CNationSettingDataGB2_clbk CNationSettingDataGBctor_CNationSettingDataGB2_user(nullptr);
+        static info::CNationSettingDataGBCreateWorker4_ptr CNationSettingDataGBCreateWorker4_next(nullptr);
+        static info::CNationSettingDataGBCreateWorker4_clbk CNationSettingDataGBCreateWorker4_user(nullptr);
+        static info::CNationSettingDataGBGetCashItemPrice6_ptr CNationSettingDataGBGetCashItemPrice6_next(nullptr);
+        static info::CNationSettingDataGBGetCashItemPrice6_clbk CNationSettingDataGBGetCashItemPrice6_user(nullptr);
+        static info::CNationSettingDataGBGetItemName8_ptr CNationSettingDataGBGetItemName8_next(nullptr);
+        static info::CNationSettingDataGBGetItemName8_clbk CNationSettingDataGBGetItemName8_user(nullptr);
+        static info::CNationSettingDataGBInit10_ptr CNationSettingDataGBInit10_next(nullptr);
+        static info::CNationSettingDataGBInit10_clbk CNationSettingDataGBInit10_user(nullptr);
+        static info::CNationSettingDataGBLoop12_ptr CNationSettingDataGBLoop12_next(nullptr);
+        static info::CNationSettingDataGBLoop12_clbk CNationSettingDataGBLoop12_user(nullptr);
+        static info::CNationSettingDataGBReadSystemPass14_ptr CNationSettingDataGBReadSystemPass14_next(nullptr);
+        static info::CNationSettingDataGBReadSystemPass14_clbk CNationSettingDataGBReadSystemPass14_user(nullptr);
+        static info::CNationSettingDataGBSendCashDBDSNRequest16_ptr CNationSettingDataGBSendCashDBDSNRequest16_next(nullptr);
+        static info::CNationSettingDataGBSendCashDBDSNRequest16_clbk CNationSettingDataGBSendCashDBDSNRequest16_user(nullptr);
         
-        void CNationSettingDataGBctor_CNationSettingDataGB2_wrapper(struct CNationSettingDataGB* _this)
+        static void CNationSettingDataGBctor_CNationSettingDataGB2_wrapper(struct CNationSettingDataGB* _this)
         {
            CNationSettingDataGBctor_CNationSettingDataGB2_user(_this, CNationSettingDataGBctor_CNationSettingDataGB2_next);
         };
-        struct CashDbWorker* CNationSettingDataGBCreateWorker4_wrapper(struct CNationSettingDataGB* _this)
+        static struct CashDbWorker* CNationSettingDataGBCreateWorker4_wrapper(struct CNationSettingDataGB* _this)
         {
            return CNationSettingDataGBCreateWorker4_user(_this, CNationSettingDataGBCreateWorker4_next);
         };
-        int CNationSettingDataGBGetCashItemPrice6_wrapper(struct CNationSettingDataGB* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataGBGetCashItemPrice6_wrapper(struct CNationSettingDataGB* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataGBGetCashItemPrice6_user(_this, pFld, CNationSettingDataGBGetCashItemPrice6_next);
         };
-        char* CNationSettingDataGBGetItemName8_wrapper(struct CNationSettingDataGB* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataGBGetItemName8_wrapper(struct CNationSettingDataGB* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataGBGetItemName8_user(_this, pFld, CNationSettingDataGBGetItemName8_next);
         };
-        int CNationSettingDataGBInit10_wrapper(struct CNationSettingDataGB* _this)
+        static int CNationSettingDataGBInit10_wrapper(struct CNationSettingDataGB* _this)
         {
            return CNationSettingDataGBInit10_user(_this, CNationSettingDataGBInit10_next);
         };
-        void CNationSettingDataGBLoop12_wrapper(struct CNationSettingDataGB* _this)
+        static void CNationSettingDataGBLoop12_wrapper(struct CNationSettingDataGB* _this)
         {
            CNationSettingDataGBLoop12_user(_this, CNationSettingDataGBLoop12_next);
         };
-        bool CNationSettingDataGBReadSystemPass14_wrapper(struct CNationSettingDataGB* _this)
+        static bool CNationSettingDataGBReadSystemPass14_wrapper(struct CNationSettingDataGB* _this)
         {
            return CNationSettingDataGBReadSystemPass14_user(_this, CNationSettingDataGBReadSystemPass14_next);
         };
-        void CNationSettingDataGBSendCashDBDSNRequest16_wrapper(struct CNationSettingDataGB* _this)
+        static void CNationSettingDataGBSendCashDBDSNRequest16_wrapper(struct CNationSettingDataGB* _this)
         {
            CNationSettingDataGBSendCashDBDSNRequest16_user(_this, CNationSettingDataGBSendCashDBDSNRequest16_next);
         };
         
-        hook_record CNationSettingDataGB_functions[] = {
+        static hook_record CNationSettingDataGB_functions[] = {
         {   (LPVOID)0x14022be10L,
             (LPVOID *)&CNationSettingDataGBctor_CNationSettingDataGB2_user,
             (LPVOID *)&CNationSettingDataGBctor_CNationSettingDataGB2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

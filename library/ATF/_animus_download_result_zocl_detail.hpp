@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_animus_download_result_zoclctor__animus_download_result_zocl2_ptr _animus_download_result_zoclctor__animus_download_result_zocl2_next(nullptr);
-        info::_animus_download_result_zoclctor__animus_download_result_zocl2_clbk _animus_download_result_zoclctor__animus_download_result_zocl2_user(nullptr);
-        info::_animus_download_result_zoclsize4_ptr _animus_download_result_zoclsize4_next(nullptr);
-        info::_animus_download_result_zoclsize4_clbk _animus_download_result_zoclsize4_user(nullptr);
+        static info::_animus_download_result_zoclctor__animus_download_result_zocl2_ptr _animus_download_result_zoclctor__animus_download_result_zocl2_next(nullptr);
+        static info::_animus_download_result_zoclctor__animus_download_result_zocl2_clbk _animus_download_result_zoclctor__animus_download_result_zocl2_user(nullptr);
+        static info::_animus_download_result_zoclsize4_ptr _animus_download_result_zoclsize4_next(nullptr);
+        static info::_animus_download_result_zoclsize4_clbk _animus_download_result_zoclsize4_user(nullptr);
         
-        void _animus_download_result_zoclctor__animus_download_result_zocl2_wrapper(struct _animus_download_result_zocl* _this)
+        static void _animus_download_result_zoclctor__animus_download_result_zocl2_wrapper(struct _animus_download_result_zocl* _this)
         {
            _animus_download_result_zoclctor__animus_download_result_zocl2_user(_this, _animus_download_result_zoclctor__animus_download_result_zocl2_next);
         };
-        int _animus_download_result_zoclsize4_wrapper(struct _animus_download_result_zocl* _this)
+        static int _animus_download_result_zoclsize4_wrapper(struct _animus_download_result_zocl* _this)
         {
            return _animus_download_result_zoclsize4_user(_this, _animus_download_result_zoclsize4_next);
         };
         
-        hook_record _animus_download_result_zocl_functions[] = {
+        static hook_record _animus_download_result_zocl_functions[] = {
         {   (LPVOID)0x1400ef840L,
             (LPVOID *)&_animus_download_result_zoclctor__animus_download_result_zocl2_user,
             (LPVOID *)&_animus_download_result_zoclctor__animus_download_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

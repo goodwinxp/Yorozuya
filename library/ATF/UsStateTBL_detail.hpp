@@ -8,115 +8,115 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::UsStateTBLAdd2_ptr UsStateTBLAdd2_next(nullptr);
-        info::UsStateTBLAdd2_clbk UsStateTBLAdd2_user(nullptr);
-        info::UsStateTBLAlloc4_ptr UsStateTBLAlloc4_next(nullptr);
-        info::UsStateTBLAlloc4_clbk UsStateTBLAlloc4_user(nullptr);
-        info::UsStateTBLCleanUp6_ptr UsStateTBLCleanUp6_next(nullptr);
-        info::UsStateTBLCleanUp6_clbk UsStateTBLCleanUp6_user(nullptr);
-        info::UsStateTBLGetHSFMSize8_ptr UsStateTBLGetHSFMSize8_next(nullptr);
-        info::UsStateTBLGetHSFMSize8_clbk UsStateTBLGetHSFMSize8_user(nullptr);
-        info::UsStateTBLGetTransState10_ptr UsStateTBLGetTransState10_next(nullptr);
-        info::UsStateTBLGetTransState10_clbk UsStateTBLGetTransState10_user(nullptr);
-        info::UsStateTBLOnMsgProc12_ptr UsStateTBLOnMsgProc12_next(nullptr);
-        info::UsStateTBLOnMsgProc12_clbk UsStateTBLOnMsgProc12_user(nullptr);
-        info::UsStateTBLSetCallFunction14_ptr UsStateTBLSetCallFunction14_next(nullptr);
-        info::UsStateTBLSetCallFunction14_clbk UsStateTBLSetCallFunction14_user(nullptr);
-        info::UsStateTBLSetExternCallFunction16_ptr UsStateTBLSetExternCallFunction16_next(nullptr);
-        info::UsStateTBLSetExternCallFunction16_clbk UsStateTBLSetExternCallFunction16_user(nullptr);
-        info::UsStateTBLSetHFSM18_ptr UsStateTBLSetHFSM18_next(nullptr);
-        info::UsStateTBLSetHFSM18_clbk UsStateTBLSetHFSM18_user(nullptr);
-        info::UsStateTBLSetHFSMNode20_ptr UsStateTBLSetHFSMNode20_next(nullptr);
-        info::UsStateTBLSetHFSMNode20_clbk UsStateTBLSetHFSMNode20_user(nullptr);
-        info::UsStateTBLSetInitFunction22_ptr UsStateTBLSetInitFunction22_next(nullptr);
-        info::UsStateTBLSetInitFunction22_clbk UsStateTBLSetInitFunction22_user(nullptr);
-        info::UsStateTBLctor_UsStateTBL24_ptr UsStateTBLctor_UsStateTBL24_next(nullptr);
-        info::UsStateTBLctor_UsStateTBL24_clbk UsStateTBLctor_UsStateTBL24_user(nullptr);
-        info::UsStateTBLdtor_UsStateTBL29_ptr UsStateTBLdtor_UsStateTBL29_next(nullptr);
-        info::UsStateTBLdtor_UsStateTBL29_clbk UsStateTBLdtor_UsStateTBL29_user(nullptr);
+        static info::UsStateTBLAdd2_ptr UsStateTBLAdd2_next(nullptr);
+        static info::UsStateTBLAdd2_clbk UsStateTBLAdd2_user(nullptr);
+        static info::UsStateTBLAlloc4_ptr UsStateTBLAlloc4_next(nullptr);
+        static info::UsStateTBLAlloc4_clbk UsStateTBLAlloc4_user(nullptr);
+        static info::UsStateTBLCleanUp6_ptr UsStateTBLCleanUp6_next(nullptr);
+        static info::UsStateTBLCleanUp6_clbk UsStateTBLCleanUp6_user(nullptr);
+        static info::UsStateTBLGetHSFMSize8_ptr UsStateTBLGetHSFMSize8_next(nullptr);
+        static info::UsStateTBLGetHSFMSize8_clbk UsStateTBLGetHSFMSize8_user(nullptr);
+        static info::UsStateTBLGetTransState10_ptr UsStateTBLGetTransState10_next(nullptr);
+        static info::UsStateTBLGetTransState10_clbk UsStateTBLGetTransState10_user(nullptr);
+        static info::UsStateTBLOnMsgProc12_ptr UsStateTBLOnMsgProc12_next(nullptr);
+        static info::UsStateTBLOnMsgProc12_clbk UsStateTBLOnMsgProc12_user(nullptr);
+        static info::UsStateTBLSetCallFunction14_ptr UsStateTBLSetCallFunction14_next(nullptr);
+        static info::UsStateTBLSetCallFunction14_clbk UsStateTBLSetCallFunction14_user(nullptr);
+        static info::UsStateTBLSetExternCallFunction16_ptr UsStateTBLSetExternCallFunction16_next(nullptr);
+        static info::UsStateTBLSetExternCallFunction16_clbk UsStateTBLSetExternCallFunction16_user(nullptr);
+        static info::UsStateTBLSetHFSM18_ptr UsStateTBLSetHFSM18_next(nullptr);
+        static info::UsStateTBLSetHFSM18_clbk UsStateTBLSetHFSM18_user(nullptr);
+        static info::UsStateTBLSetHFSMNode20_ptr UsStateTBLSetHFSMNode20_next(nullptr);
+        static info::UsStateTBLSetHFSMNode20_clbk UsStateTBLSetHFSMNode20_user(nullptr);
+        static info::UsStateTBLSetInitFunction22_ptr UsStateTBLSetInitFunction22_next(nullptr);
+        static info::UsStateTBLSetInitFunction22_clbk UsStateTBLSetInitFunction22_user(nullptr);
+        static info::UsStateTBLctor_UsStateTBL24_ptr UsStateTBLctor_UsStateTBL24_next(nullptr);
+        static info::UsStateTBLctor_UsStateTBL24_clbk UsStateTBLctor_UsStateTBL24_user(nullptr);
+        static info::UsStateTBLdtor_UsStateTBL29_ptr UsStateTBLdtor_UsStateTBL29_next(nullptr);
+        static info::UsStateTBLdtor_UsStateTBL29_clbk UsStateTBLdtor_UsStateTBL29_user(nullptr);
         
-        info::UsStateTBL___TBLDataInit2_ptr UsStateTBL___TBLDataInit2_next(nullptr);
-        info::UsStateTBL___TBLDataInit2_clbk UsStateTBL___TBLDataInit2_user(nullptr);
-        info::UsStateTBL___TBLDatactor__TBLData4_ptr UsStateTBL___TBLDatactor__TBLData4_next(nullptr);
-        info::UsStateTBL___TBLDatactor__TBLData4_clbk UsStateTBL___TBLDatactor__TBLData4_user(nullptr);
+        static info::UsStateTBL___TBLDataInit2_ptr UsStateTBL___TBLDataInit2_next(nullptr);
+        static info::UsStateTBL___TBLDataInit2_clbk UsStateTBL___TBLDataInit2_user(nullptr);
+        static info::UsStateTBL___TBLDatactor__TBLData4_ptr UsStateTBL___TBLDatactor__TBLData4_next(nullptr);
+        static info::UsStateTBL___TBLDatactor__TBLData4_clbk UsStateTBL___TBLDatactor__TBLData4_user(nullptr);
         
-        info::UsStateTBL___HFSM_Node_InfoInit2_ptr UsStateTBL___HFSM_Node_InfoInit2_next(nullptr);
-        info::UsStateTBL___HFSM_Node_InfoInit2_clbk UsStateTBL___HFSM_Node_InfoInit2_user(nullptr);
-        info::UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_ptr UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_next(nullptr);
-        info::UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_clbk UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_user(nullptr);
+        static info::UsStateTBL___HFSM_Node_InfoInit2_ptr UsStateTBL___HFSM_Node_InfoInit2_next(nullptr);
+        static info::UsStateTBL___HFSM_Node_InfoInit2_clbk UsStateTBL___HFSM_Node_InfoInit2_user(nullptr);
+        static info::UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_ptr UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_next(nullptr);
+        static info::UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_clbk UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_user(nullptr);
         
-        int UsStateTBLAdd2_wrapper(struct UsStateTBL* _this, char byHFSMIndex, char byCurrState, char byEvent_IN, char byNextState_OUT, void (WINAPIV* pEvnetFun)(struct Us_HFSM*, unsigned int, void*))
+        static int UsStateTBLAdd2_wrapper(struct UsStateTBL* _this, char byHFSMIndex, char byCurrState, char byEvent_IN, char byNextState_OUT, void (WINAPIV* pEvnetFun)(struct Us_HFSM*, unsigned int, void*))
         {
            return UsStateTBLAdd2_user(_this, byHFSMIndex, byCurrState, byEvent_IN, byNextState_OUT, pEvnetFun, UsStateTBLAdd2_next);
         };
-        void UsStateTBLAlloc4_wrapper(struct UsStateTBL* _this, char byHFSMSize, char byStateSize, char byMessageSize)
+        static void UsStateTBLAlloc4_wrapper(struct UsStateTBL* _this, char byHFSMSize, char byStateSize, char byMessageSize)
         {
            UsStateTBLAlloc4_user(_this, byHFSMSize, byStateSize, byMessageSize, UsStateTBLAlloc4_next);
         };
-        void UsStateTBLCleanUp6_wrapper(struct UsStateTBL* _this)
+        static void UsStateTBLCleanUp6_wrapper(struct UsStateTBL* _this)
         {
            UsStateTBLCleanUp6_user(_this, UsStateTBLCleanUp6_next);
         };
-        char UsStateTBLGetHSFMSize8_wrapper(struct UsStateTBL* _this)
+        static char UsStateTBLGetHSFMSize8_wrapper(struct UsStateTBL* _this)
         {
            return UsStateTBLGetHSFMSize8_user(_this, UsStateTBLGetHSFMSize8_next);
         };
-        struct UsStateTBL::_TBLData* UsStateTBLGetTransState10_wrapper(struct UsStateTBL* _this, char byState, char byMessage)
+        static struct UsStateTBL::_TBLData* UsStateTBLGetTransState10_wrapper(struct UsStateTBL* _this, char byState, char byMessage)
         {
            return UsStateTBLGetTransState10_user(_this, byState, byMessage, UsStateTBLGetTransState10_next);
         };
-        void UsStateTBLOnMsgProc12_wrapper(struct Us_HFSM* pHFS, unsigned int dwFSMIndex, unsigned int dwMSG, void* lpParam)
+        static void UsStateTBLOnMsgProc12_wrapper(struct Us_HFSM* pHFS, unsigned int dwFSMIndex, unsigned int dwMSG, void* lpParam)
         {
            UsStateTBLOnMsgProc12_user(pHFS, dwFSMIndex, dwMSG, lpParam, UsStateTBLOnMsgProc12_next);
         };
-        void UsStateTBLSetCallFunction14_wrapper(struct UsStateTBL* _this, void (WINAPIV* pFun)(struct Us_HFSM*, unsigned int, unsigned int, void*))
+        static void UsStateTBLSetCallFunction14_wrapper(struct UsStateTBL* _this, void (WINAPIV* pFun)(struct Us_HFSM*, unsigned int, unsigned int, void*))
         {
            UsStateTBLSetCallFunction14_user(_this, pFun, UsStateTBLSetCallFunction14_next);
         };
-        void UsStateTBLSetExternCallFunction16_wrapper(struct UsStateTBL* _this, void (WINAPIV* pExternFun)(struct Us_HFSM*, unsigned int, void*, int))
+        static void UsStateTBLSetExternCallFunction16_wrapper(struct UsStateTBL* _this, void (WINAPIV* pExternFun)(struct Us_HFSM*, unsigned int, void*, int))
         {
            UsStateTBLSetExternCallFunction16_user(_this, pExternFun, UsStateTBLSetExternCallFunction16_next);
         };
-        int UsStateTBLSetHFSM18_wrapper(struct UsStateTBL* _this, struct Us_HFSM* pHFSM, void* pObject)
+        static int UsStateTBLSetHFSM18_wrapper(struct UsStateTBL* _this, struct Us_HFSM* pHFSM, void* pObject)
         {
            return UsStateTBLSetHFSM18_user(_this, pHFSM, pObject, UsStateTBLSetHFSM18_next);
         };
-        void UsStateTBLSetHFSMNode20_wrapper(struct UsStateTBL* _this, int nNodeIndex, unsigned int dwStartState, unsigned int dwLoopTime, int ParentData, int bUsed)
+        static void UsStateTBLSetHFSMNode20_wrapper(struct UsStateTBL* _this, int nNodeIndex, unsigned int dwStartState, unsigned int dwLoopTime, int ParentData, int bUsed)
         {
            UsStateTBLSetHFSMNode20_user(_this, nNodeIndex, dwStartState, dwLoopTime, ParentData, bUsed, UsStateTBLSetHFSMNode20_next);
         };
-        void UsStateTBLSetInitFunction22_wrapper(struct UsStateTBL* _this, int (WINAPIV* pInitFun)(struct UsStateTBL*, struct Us_HFSM*))
+        static void UsStateTBLSetInitFunction22_wrapper(struct UsStateTBL* _this, int (WINAPIV* pInitFun)(struct UsStateTBL*, struct Us_HFSM*))
         {
            UsStateTBLSetInitFunction22_user(_this, pInitFun, UsStateTBLSetInitFunction22_next);
         };
-        void UsStateTBLctor_UsStateTBL24_wrapper(struct UsStateTBL* _this)
+        static void UsStateTBLctor_UsStateTBL24_wrapper(struct UsStateTBL* _this)
         {
            UsStateTBLctor_UsStateTBL24_user(_this, UsStateTBLctor_UsStateTBL24_next);
         };
-        void UsStateTBLdtor_UsStateTBL29_wrapper(struct UsStateTBL* _this)
+        static void UsStateTBLdtor_UsStateTBL29_wrapper(struct UsStateTBL* _this)
         {
            UsStateTBLdtor_UsStateTBL29_user(_this, UsStateTBLdtor_UsStateTBL29_next);
         };
         
-        void UsStateTBL___TBLDataInit2_wrapper(struct UsStateTBL::_TBLData* _this)
+        static void UsStateTBL___TBLDataInit2_wrapper(struct UsStateTBL::_TBLData* _this)
         {
            UsStateTBL___TBLDataInit2_user(_this, UsStateTBL___TBLDataInit2_next);
         };
-        void UsStateTBL___TBLDatactor__TBLData4_wrapper(struct UsStateTBL::_TBLData* _this)
+        static void UsStateTBL___TBLDatactor__TBLData4_wrapper(struct UsStateTBL::_TBLData* _this)
         {
            UsStateTBL___TBLDatactor__TBLData4_user(_this, UsStateTBL___TBLDatactor__TBLData4_next);
         };
         
-        void UsStateTBL___HFSM_Node_InfoInit2_wrapper(struct UsStateTBL::_HFSM_Node_Info* _this)
+        static void UsStateTBL___HFSM_Node_InfoInit2_wrapper(struct UsStateTBL::_HFSM_Node_Info* _this)
         {
            UsStateTBL___HFSM_Node_InfoInit2_user(_this, UsStateTBL___HFSM_Node_InfoInit2_next);
         };
-        void UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_wrapper(struct UsStateTBL::_HFSM_Node_Info* _this)
+        static void UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_wrapper(struct UsStateTBL::_HFSM_Node_Info* _this)
         {
            UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_user(_this, UsStateTBL___HFSM_Node_Infoctor__HFSM_Node_Info4_next);
         };
         
-        hook_record UsStateTBL_functions[] = {
+        static hook_record UsStateTBL_functions[] = {
         {   (LPVOID)0x140161ea0L,
             (LPVOID *)&UsStateTBLAdd2_user,
             (LPVOID *)&UsStateTBLAdd2_next,
@@ -207,5 +207,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyScheduleDatactor_CHolyScheduleData2_ptr CHolyScheduleDatactor_CHolyScheduleData2_next(nullptr);
-        info::CHolyScheduleDatactor_CHolyScheduleData2_clbk CHolyScheduleDatactor_CHolyScheduleData2_user(nullptr);
-        info::CHolyScheduleDataGetIndex4_ptr CHolyScheduleDataGetIndex4_next(nullptr);
-        info::CHolyScheduleDataGetIndex4_clbk CHolyScheduleDataGetIndex4_user(nullptr);
-        info::CHolyScheduleDataGetTotalSceduleTerm6_ptr CHolyScheduleDataGetTotalSceduleTerm6_next(nullptr);
-        info::CHolyScheduleDataGetTotalSceduleTerm6_clbk CHolyScheduleDataGetTotalSceduleTerm6_user(nullptr);
-        info::CHolyScheduleDataInit8_ptr CHolyScheduleDataInit8_next(nullptr);
-        info::CHolyScheduleDataInit8_clbk CHolyScheduleDataInit8_user(nullptr);
-        info::CHolyScheduleDatadtor_CHolyScheduleData10_ptr CHolyScheduleDatadtor_CHolyScheduleData10_next(nullptr);
-        info::CHolyScheduleDatadtor_CHolyScheduleData10_clbk CHolyScheduleDatadtor_CHolyScheduleData10_user(nullptr);
+        static info::CHolyScheduleDatactor_CHolyScheduleData2_ptr CHolyScheduleDatactor_CHolyScheduleData2_next(nullptr);
+        static info::CHolyScheduleDatactor_CHolyScheduleData2_clbk CHolyScheduleDatactor_CHolyScheduleData2_user(nullptr);
+        static info::CHolyScheduleDataGetIndex4_ptr CHolyScheduleDataGetIndex4_next(nullptr);
+        static info::CHolyScheduleDataGetIndex4_clbk CHolyScheduleDataGetIndex4_user(nullptr);
+        static info::CHolyScheduleDataGetTotalSceduleTerm6_ptr CHolyScheduleDataGetTotalSceduleTerm6_next(nullptr);
+        static info::CHolyScheduleDataGetTotalSceduleTerm6_clbk CHolyScheduleDataGetTotalSceduleTerm6_user(nullptr);
+        static info::CHolyScheduleDataInit8_ptr CHolyScheduleDataInit8_next(nullptr);
+        static info::CHolyScheduleDataInit8_clbk CHolyScheduleDataInit8_user(nullptr);
+        static info::CHolyScheduleDatadtor_CHolyScheduleData10_ptr CHolyScheduleDatadtor_CHolyScheduleData10_next(nullptr);
+        static info::CHolyScheduleDatadtor_CHolyScheduleData10_clbk CHolyScheduleDatadtor_CHolyScheduleData10_user(nullptr);
         
-        void CHolyScheduleDatactor_CHolyScheduleData2_wrapper(struct CHolyScheduleData* _this)
+        static void CHolyScheduleDatactor_CHolyScheduleData2_wrapper(struct CHolyScheduleData* _this)
         {
            CHolyScheduleDatactor_CHolyScheduleData2_user(_this, CHolyScheduleDatactor_CHolyScheduleData2_next);
         };
-        struct CHolyScheduleData::__HolyScheduleNode* CHolyScheduleDataGetIndex4_wrapper(struct CHolyScheduleData* _this, int nNumOfTime)
+        static struct CHolyScheduleData::__HolyScheduleNode* CHolyScheduleDataGetIndex4_wrapper(struct CHolyScheduleData* _this, int nNumOfTime)
         {
            return CHolyScheduleDataGetIndex4_user(_this, nNumOfTime, CHolyScheduleDataGetIndex4_next);
         };
-        unsigned int CHolyScheduleDataGetTotalSceduleTerm6_wrapper(struct CHolyScheduleData* _this, int nNumOfTime)
+        static unsigned int CHolyScheduleDataGetTotalSceduleTerm6_wrapper(struct CHolyScheduleData* _this, int nNumOfTime)
         {
            return CHolyScheduleDataGetTotalSceduleTerm6_user(_this, nNumOfTime, CHolyScheduleDataGetTotalSceduleTerm6_next);
         };
-        void CHolyScheduleDataInit8_wrapper(struct CHolyScheduleData* _this)
+        static void CHolyScheduleDataInit8_wrapper(struct CHolyScheduleData* _this)
         {
            CHolyScheduleDataInit8_user(_this, CHolyScheduleDataInit8_next);
         };
-        void CHolyScheduleDatadtor_CHolyScheduleData10_wrapper(struct CHolyScheduleData* _this)
+        static void CHolyScheduleDatadtor_CHolyScheduleData10_wrapper(struct CHolyScheduleData* _this)
         {
            CHolyScheduleDatadtor_CHolyScheduleData10_user(_this, CHolyScheduleDatadtor_CHolyScheduleData10_next);
         };
         
-        hook_record CHolyScheduleData_functions[] = {
+        static hook_record CHolyScheduleData_functions[] = {
         {   (LPVOID)0x140284100L,
             (LPVOID *)&CHolyScheduleDatactor_CHolyScheduleData2_user,
             (LPVOID *)&CHolyScheduleDatactor_CHolyScheduleData2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

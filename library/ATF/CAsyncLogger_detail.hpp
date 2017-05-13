@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAsyncLoggerctor_CAsyncLogger2_ptr CAsyncLoggerctor_CAsyncLogger2_next(nullptr);
-        info::CAsyncLoggerctor_CAsyncLogger2_clbk CAsyncLoggerctor_CAsyncLogger2_user(nullptr);
-        info::CAsyncLoggerDestroy4_ptr CAsyncLoggerDestroy4_next(nullptr);
-        info::CAsyncLoggerDestroy4_clbk CAsyncLoggerDestroy4_user(nullptr);
-        info::CAsyncLoggerFormatLog6_ptr CAsyncLoggerFormatLog6_next(nullptr);
-        info::CAsyncLoggerFormatLog6_clbk CAsyncLoggerFormatLog6_user(nullptr);
-        info::CAsyncLoggerGetTotalWaitSize8_ptr CAsyncLoggerGetTotalWaitSize8_next(nullptr);
-        info::CAsyncLoggerGetTotalWaitSize8_clbk CAsyncLoggerGetTotalWaitSize8_user(nullptr);
-        info::CAsyncLoggerInit10_ptr CAsyncLoggerInit10_next(nullptr);
-        info::CAsyncLoggerInit10_clbk CAsyncLoggerInit10_user(nullptr);
-        info::CAsyncLoggerInstance12_ptr CAsyncLoggerInstance12_next(nullptr);
-        info::CAsyncLoggerInstance12_clbk CAsyncLoggerInstance12_user(nullptr);
-        info::CAsyncLoggerLog14_ptr CAsyncLoggerLog14_next(nullptr);
-        info::CAsyncLoggerLog14_clbk CAsyncLoggerLog14_user(nullptr);
-        info::CAsyncLoggerLog16_ptr CAsyncLoggerLog16_next(nullptr);
-        info::CAsyncLoggerLog16_clbk CAsyncLoggerLog16_user(nullptr);
-        info::CAsyncLoggerLogFromArg18_ptr CAsyncLoggerLogFromArg18_next(nullptr);
-        info::CAsyncLoggerLogFromArg18_clbk CAsyncLoggerLogFromArg18_user(nullptr);
-        info::CAsyncLoggerLoop20_ptr CAsyncLoggerLoop20_next(nullptr);
-        info::CAsyncLoggerLoop20_clbk CAsyncLoggerLoop20_user(nullptr);
-        info::CAsyncLoggerProcThread22_ptr CAsyncLoggerProcThread22_next(nullptr);
-        info::CAsyncLoggerProcThread22_clbk CAsyncLoggerProcThread22_user(nullptr);
-        info::CAsyncLoggerProcWrite24_ptr CAsyncLoggerProcWrite24_next(nullptr);
-        info::CAsyncLoggerProcWrite24_clbk CAsyncLoggerProcWrite24_user(nullptr);
-        info::CAsyncLoggerRegist26_ptr CAsyncLoggerRegist26_next(nullptr);
-        info::CAsyncLoggerRegist26_clbk CAsyncLoggerRegist26_user(nullptr);
-        info::CAsyncLoggerSystemLog28_ptr CAsyncLoggerSystemLog28_next(nullptr);
-        info::CAsyncLoggerSystemLog28_clbk CAsyncLoggerSystemLog28_user(nullptr);
-        info::CAsyncLoggerdtor_CAsyncLogger32_ptr CAsyncLoggerdtor_CAsyncLogger32_next(nullptr);
-        info::CAsyncLoggerdtor_CAsyncLogger32_clbk CAsyncLoggerdtor_CAsyncLogger32_user(nullptr);
+        static info::CAsyncLoggerctor_CAsyncLogger2_ptr CAsyncLoggerctor_CAsyncLogger2_next(nullptr);
+        static info::CAsyncLoggerctor_CAsyncLogger2_clbk CAsyncLoggerctor_CAsyncLogger2_user(nullptr);
+        static info::CAsyncLoggerDestroy4_ptr CAsyncLoggerDestroy4_next(nullptr);
+        static info::CAsyncLoggerDestroy4_clbk CAsyncLoggerDestroy4_user(nullptr);
+        static info::CAsyncLoggerFormatLog6_ptr CAsyncLoggerFormatLog6_next(nullptr);
+        static info::CAsyncLoggerFormatLog6_clbk CAsyncLoggerFormatLog6_user(nullptr);
+        static info::CAsyncLoggerGetTotalWaitSize8_ptr CAsyncLoggerGetTotalWaitSize8_next(nullptr);
+        static info::CAsyncLoggerGetTotalWaitSize8_clbk CAsyncLoggerGetTotalWaitSize8_user(nullptr);
+        static info::CAsyncLoggerInit10_ptr CAsyncLoggerInit10_next(nullptr);
+        static info::CAsyncLoggerInit10_clbk CAsyncLoggerInit10_user(nullptr);
+        static info::CAsyncLoggerInstance12_ptr CAsyncLoggerInstance12_next(nullptr);
+        static info::CAsyncLoggerInstance12_clbk CAsyncLoggerInstance12_user(nullptr);
+        static info::CAsyncLoggerLog14_ptr CAsyncLoggerLog14_next(nullptr);
+        static info::CAsyncLoggerLog14_clbk CAsyncLoggerLog14_user(nullptr);
+        static info::CAsyncLoggerLog16_ptr CAsyncLoggerLog16_next(nullptr);
+        static info::CAsyncLoggerLog16_clbk CAsyncLoggerLog16_user(nullptr);
+        static info::CAsyncLoggerLogFromArg18_ptr CAsyncLoggerLogFromArg18_next(nullptr);
+        static info::CAsyncLoggerLogFromArg18_clbk CAsyncLoggerLogFromArg18_user(nullptr);
+        static info::CAsyncLoggerLoop20_ptr CAsyncLoggerLoop20_next(nullptr);
+        static info::CAsyncLoggerLoop20_clbk CAsyncLoggerLoop20_user(nullptr);
+        static info::CAsyncLoggerProcThread22_ptr CAsyncLoggerProcThread22_next(nullptr);
+        static info::CAsyncLoggerProcThread22_clbk CAsyncLoggerProcThread22_user(nullptr);
+        static info::CAsyncLoggerProcWrite24_ptr CAsyncLoggerProcWrite24_next(nullptr);
+        static info::CAsyncLoggerProcWrite24_clbk CAsyncLoggerProcWrite24_user(nullptr);
+        static info::CAsyncLoggerRegist26_ptr CAsyncLoggerRegist26_next(nullptr);
+        static info::CAsyncLoggerRegist26_clbk CAsyncLoggerRegist26_user(nullptr);
+        static info::CAsyncLoggerSystemLog28_ptr CAsyncLoggerSystemLog28_next(nullptr);
+        static info::CAsyncLoggerSystemLog28_clbk CAsyncLoggerSystemLog28_user(nullptr);
+        static info::CAsyncLoggerdtor_CAsyncLogger32_ptr CAsyncLoggerdtor_CAsyncLogger32_next(nullptr);
+        static info::CAsyncLoggerdtor_CAsyncLogger32_clbk CAsyncLoggerdtor_CAsyncLogger32_user(nullptr);
         
-        void CAsyncLoggerctor_CAsyncLogger2_wrapper(struct CAsyncLogger* _this)
+        static void CAsyncLoggerctor_CAsyncLogger2_wrapper(struct CAsyncLogger* _this)
         {
            CAsyncLoggerctor_CAsyncLogger2_user(_this, CAsyncLoggerctor_CAsyncLogger2_next);
         };
-        void CAsyncLoggerDestroy4_wrapper()
+        static void CAsyncLoggerDestroy4_wrapper()
         {
            CAsyncLoggerDestroy4_user(CAsyncLoggerDestroy4_next);
         };
-        bool CAsyncLoggerFormatLog6_wrapper(struct CAsyncLogger* _this, int iType, char* fmt)
+        static bool CAsyncLoggerFormatLog6_wrapper(struct CAsyncLogger* _this, int iType, char* fmt)
         {
            return CAsyncLoggerFormatLog6_user(_this, iType, fmt, CAsyncLoggerFormatLog6_next);
         };
-        int CAsyncLoggerGetTotalWaitSize8_wrapper(struct CAsyncLogger* _this)
+        static int CAsyncLoggerGetTotalWaitSize8_wrapper(struct CAsyncLogger* _this)
         {
            return CAsyncLoggerGetTotalWaitSize8_user(_this, CAsyncLoggerGetTotalWaitSize8_next);
         };
-        int CAsyncLoggerInit10_wrapper(struct CAsyncLogger* _this)
+        static int CAsyncLoggerInit10_wrapper(struct CAsyncLogger* _this)
         {
            return CAsyncLoggerInit10_user(_this, CAsyncLoggerInit10_next);
         };
-        struct CAsyncLogger* CAsyncLoggerInstance12_wrapper()
+        static struct CAsyncLogger* CAsyncLoggerInstance12_wrapper()
         {
            return CAsyncLoggerInstance12_user(CAsyncLoggerInstance12_next);
         };
-        void CAsyncLoggerLog14_wrapper(struct CAsyncLogger* _this, char* szFileName, char* szLog, int iLenStr)
+        static void CAsyncLoggerLog14_wrapper(struct CAsyncLogger* _this, char* szFileName, char* szLog, int iLenStr)
         {
            CAsyncLoggerLog14_user(_this, szFileName, szLog, iLenStr, CAsyncLoggerLog14_next);
         };
-        bool CAsyncLoggerLog16_wrapper(struct CAsyncLogger* _this, int iType, char* szLog)
+        static bool CAsyncLoggerLog16_wrapper(struct CAsyncLogger* _this, int iType, char* szLog)
         {
            return CAsyncLoggerLog16_user(_this, iType, szLog, CAsyncLoggerLog16_next);
         };
-        bool CAsyncLoggerLogFromArg18_wrapper(struct CAsyncLogger* _this, int iType, char* fmt, char* arg_ptr)
+        static bool CAsyncLoggerLogFromArg18_wrapper(struct CAsyncLogger* _this, int iType, char* fmt, char* arg_ptr)
         {
            return CAsyncLoggerLogFromArg18_user(_this, iType, fmt, arg_ptr, CAsyncLoggerLogFromArg18_next);
         };
-        void CAsyncLoggerLoop20_wrapper(struct CAsyncLogger* _this)
+        static void CAsyncLoggerLoop20_wrapper(struct CAsyncLogger* _this)
         {
            CAsyncLoggerLoop20_user(_this, CAsyncLoggerLoop20_next);
         };
-        void CAsyncLoggerProcThread22_wrapper(void* p)
+        static void CAsyncLoggerProcThread22_wrapper(void* p)
         {
            CAsyncLoggerProcThread22_user(p, CAsyncLoggerProcThread22_next);
         };
-        void CAsyncLoggerProcWrite24_wrapper(struct CAsyncLogger* _this)
+        static void CAsyncLoggerProcWrite24_wrapper(struct CAsyncLogger* _this)
         {
            CAsyncLoggerProcWrite24_user(_this, CAsyncLoggerProcWrite24_next);
         };
-        bool CAsyncLoggerRegist26_wrapper(struct CAsyncLogger* _this, ASYNC_LOG_TYPE eType, char* szDirPath, char* szTypeName, bool bAddDateFileName, unsigned int dwUpdateFileNameDelay)
+        static bool CAsyncLoggerRegist26_wrapper(struct CAsyncLogger* _this, ASYNC_LOG_TYPE eType, char* szDirPath, char* szTypeName, bool bAddDateFileName, unsigned int dwUpdateFileNameDelay)
         {
            return CAsyncLoggerRegist26_user(_this, eType, szDirPath, szTypeName, bAddDateFileName, dwUpdateFileNameDelay, CAsyncLoggerRegist26_next);
         };
-        void CAsyncLoggerSystemLog28_wrapper(struct CAsyncLogger* _this, char* fmt)
+        static void CAsyncLoggerSystemLog28_wrapper(struct CAsyncLogger* _this, char* fmt)
         {
            CAsyncLoggerSystemLog28_user(_this, fmt, CAsyncLoggerSystemLog28_next);
         };
-        void CAsyncLoggerdtor_CAsyncLogger32_wrapper(struct CAsyncLogger* _this)
+        static void CAsyncLoggerdtor_CAsyncLogger32_wrapper(struct CAsyncLogger* _this)
         {
            CAsyncLoggerdtor_CAsyncLogger32_user(_this, CAsyncLoggerdtor_CAsyncLogger32_next);
         };
         
-        hook_record CAsyncLogger_functions[] = {
+        static hook_record CAsyncLogger_functions[] = {
         {   (LPVOID)0x1403bda40L,
             (LPVOID *)&CAsyncLoggerctor_CAsyncLogger2_user,
             (LPVOID *)&CAsyncLoggerctor_CAsyncLogger2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

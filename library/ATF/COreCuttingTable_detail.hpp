@@ -8,47 +8,47 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::COreCuttingTablector_COreCuttingTable2_ptr COreCuttingTablector_COreCuttingTable2_next(nullptr);
-        info::COreCuttingTablector_COreCuttingTable2_clbk COreCuttingTablector_COreCuttingTable2_user(nullptr);
-        info::COreCuttingTableGetOreIndexFromRate4_ptr COreCuttingTableGetOreIndexFromRate4_next(nullptr);
-        info::COreCuttingTableGetOreIndexFromRate4_clbk COreCuttingTableGetOreIndexFromRate4_user(nullptr);
-        info::COreCuttingTableIndexing6_ptr COreCuttingTableIndexing6_next(nullptr);
-        info::COreCuttingTableIndexing6_clbk COreCuttingTableIndexing6_user(nullptr);
-        info::COreCuttingTableReadRecord8_ptr COreCuttingTableReadRecord8_next(nullptr);
-        info::COreCuttingTableReadRecord8_clbk COreCuttingTableReadRecord8_user(nullptr);
-        info::COreCuttingTabledtor_COreCuttingTable13_ptr COreCuttingTabledtor_COreCuttingTable13_next(nullptr);
-        info::COreCuttingTabledtor_COreCuttingTable13_clbk COreCuttingTabledtor_COreCuttingTable13_user(nullptr);
+        static info::COreCuttingTablector_COreCuttingTable2_ptr COreCuttingTablector_COreCuttingTable2_next(nullptr);
+        static info::COreCuttingTablector_COreCuttingTable2_clbk COreCuttingTablector_COreCuttingTable2_user(nullptr);
+        static info::COreCuttingTableGetOreIndexFromRate4_ptr COreCuttingTableGetOreIndexFromRate4_next(nullptr);
+        static info::COreCuttingTableGetOreIndexFromRate4_clbk COreCuttingTableGetOreIndexFromRate4_user(nullptr);
+        static info::COreCuttingTableIndexing6_ptr COreCuttingTableIndexing6_next(nullptr);
+        static info::COreCuttingTableIndexing6_clbk COreCuttingTableIndexing6_user(nullptr);
+        static info::COreCuttingTableReadRecord8_ptr COreCuttingTableReadRecord8_next(nullptr);
+        static info::COreCuttingTableReadRecord8_clbk COreCuttingTableReadRecord8_user(nullptr);
+        static info::COreCuttingTabledtor_COreCuttingTable13_ptr COreCuttingTabledtor_COreCuttingTable13_next(nullptr);
+        static info::COreCuttingTabledtor_COreCuttingTable13_clbk COreCuttingTabledtor_COreCuttingTable13_user(nullptr);
         
-        info::COreCuttingTable___ore_cut_listctor__ore_cut_list2_ptr COreCuttingTable___ore_cut_listctor__ore_cut_list2_next(nullptr);
-        info::COreCuttingTable___ore_cut_listctor__ore_cut_list2_clbk COreCuttingTable___ore_cut_listctor__ore_cut_list2_user(nullptr);
+        static info::COreCuttingTable___ore_cut_listctor__ore_cut_list2_ptr COreCuttingTable___ore_cut_listctor__ore_cut_list2_next(nullptr);
+        static info::COreCuttingTable___ore_cut_listctor__ore_cut_list2_clbk COreCuttingTable___ore_cut_listctor__ore_cut_list2_user(nullptr);
         
-        void COreCuttingTablector_COreCuttingTable2_wrapper(struct COreCuttingTable* _this)
+        static void COreCuttingTablector_COreCuttingTable2_wrapper(struct COreCuttingTable* _this)
         {
            COreCuttingTablector_COreCuttingTable2_user(_this, COreCuttingTablector_COreCuttingTable2_next);
         };
-        unsigned int COreCuttingTableGetOreIndexFromRate4_wrapper(struct COreCuttingTable* _this, unsigned int dwOreIndex, unsigned int dwRate)
+        static unsigned int COreCuttingTableGetOreIndexFromRate4_wrapper(struct COreCuttingTable* _this, unsigned int dwOreIndex, unsigned int dwRate)
         {
            return COreCuttingTableGetOreIndexFromRate4_user(_this, dwOreIndex, dwRate, COreCuttingTableGetOreIndexFromRate4_next);
         };
-        bool COreCuttingTableIndexing6_wrapper(struct COreCuttingTable* _this, struct CRecordData* pOreRec, struct CRecordData* pResRec, char* pszErrMsg)
+        static bool COreCuttingTableIndexing6_wrapper(struct COreCuttingTable* _this, struct CRecordData* pOreRec, struct CRecordData* pResRec, char* pszErrMsg)
         {
            return COreCuttingTableIndexing6_user(_this, pOreRec, pResRec, pszErrMsg, COreCuttingTableIndexing6_next);
         };
-        bool COreCuttingTableReadRecord8_wrapper(struct COreCuttingTable* _this, char* szFile, struct CRecordData* pOreRec, struct CRecordData* pResRec, char* pszErrMsg)
+        static bool COreCuttingTableReadRecord8_wrapper(struct COreCuttingTable* _this, char* szFile, struct CRecordData* pOreRec, struct CRecordData* pResRec, char* pszErrMsg)
         {
            return COreCuttingTableReadRecord8_user(_this, szFile, pOreRec, pResRec, pszErrMsg, COreCuttingTableReadRecord8_next);
         };
-        void COreCuttingTabledtor_COreCuttingTable13_wrapper(struct COreCuttingTable* _this)
+        static void COreCuttingTabledtor_COreCuttingTable13_wrapper(struct COreCuttingTable* _this)
         {
            COreCuttingTabledtor_COreCuttingTable13_user(_this, COreCuttingTabledtor_COreCuttingTable13_next);
         };
         
-        void COreCuttingTable___ore_cut_listctor__ore_cut_list2_wrapper(struct COreCuttingTable::_ore_cut_list* _this)
+        static void COreCuttingTable___ore_cut_listctor__ore_cut_list2_wrapper(struct COreCuttingTable::_ore_cut_list* _this)
         {
            COreCuttingTable___ore_cut_listctor__ore_cut_list2_user(_this, COreCuttingTable___ore_cut_listctor__ore_cut_list2_next);
         };
         
-        hook_record COreCuttingTable_functions[] = {
+        static hook_record COreCuttingTable_functions[] = {
         {   (LPVOID)0x140202a10L,
             (LPVOID *)&COreCuttingTablector_COreCuttingTable2_user,
             (LPVOID *)&COreCuttingTablector_COreCuttingTable2_next,
@@ -83,5 +83,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_object_list_pointInitLink2_ptr _object_list_pointInitLink2_next(nullptr);
-        info::_object_list_pointInitLink2_clbk _object_list_pointInitLink2_user(nullptr);
-        info::_object_list_pointSetPoint4_ptr _object_list_pointSetPoint4_next(nullptr);
-        info::_object_list_pointSetPoint4_clbk _object_list_pointSetPoint4_user(nullptr);
-        info::_object_list_pointctor__object_list_point6_ptr _object_list_pointctor__object_list_point6_next(nullptr);
-        info::_object_list_pointctor__object_list_point6_clbk _object_list_pointctor__object_list_point6_user(nullptr);
+        static info::_object_list_pointInitLink2_ptr _object_list_pointInitLink2_next(nullptr);
+        static info::_object_list_pointInitLink2_clbk _object_list_pointInitLink2_user(nullptr);
+        static info::_object_list_pointSetPoint4_ptr _object_list_pointSetPoint4_next(nullptr);
+        static info::_object_list_pointSetPoint4_clbk _object_list_pointSetPoint4_user(nullptr);
+        static info::_object_list_pointctor__object_list_point6_ptr _object_list_pointctor__object_list_point6_next(nullptr);
+        static info::_object_list_pointctor__object_list_point6_clbk _object_list_pointctor__object_list_point6_user(nullptr);
         
-        void _object_list_pointInitLink2_wrapper(struct _object_list_point* _this)
+        static void _object_list_pointInitLink2_wrapper(struct _object_list_point* _this)
         {
            _object_list_pointInitLink2_user(_this, _object_list_pointInitLink2_next);
         };
-        void _object_list_pointSetPoint4_wrapper(struct _object_list_point* _this, struct CGameObject* pItem)
+        static void _object_list_pointSetPoint4_wrapper(struct _object_list_point* _this, struct CGameObject* pItem)
         {
            _object_list_pointSetPoint4_user(_this, pItem, _object_list_pointSetPoint4_next);
         };
-        void _object_list_pointctor__object_list_point6_wrapper(struct _object_list_point* _this)
+        static void _object_list_pointctor__object_list_point6_wrapper(struct _object_list_point* _this)
         {
            _object_list_pointctor__object_list_point6_user(_this, _object_list_pointctor__object_list_point6_next);
         };
         
-        hook_record _object_list_point_functions[] = {
+        static hook_record _object_list_point_functions[] = {
         {   (LPVOID)0x14017d5a0L,
             (LPVOID *)&_object_list_pointInitLink2_user,
             (LPVOID *)&_object_list_pointInitLink2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

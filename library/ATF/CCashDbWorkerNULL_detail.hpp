@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCashDbWorkerNULLctor_CCashDbWorkerNULL2_ptr CCashDbWorkerNULLctor_CCashDbWorkerNULL2_next(nullptr);
-        info::CCashDbWorkerNULLctor_CCashDbWorkerNULL2_clbk CCashDbWorkerNULLctor_CCashDbWorkerNULL2_user(nullptr);
-        info::CCashDbWorkerNULLCompleteWork4_ptr CCashDbWorkerNULLCompleteWork4_next(nullptr);
-        info::CCashDbWorkerNULLCompleteWork4_clbk CCashDbWorkerNULLCompleteWork4_user(nullptr);
-        info::CCashDbWorkerNULLConvertErrorCode6_ptr CCashDbWorkerNULLConvertErrorCode6_next(nullptr);
-        info::CCashDbWorkerNULLConvertErrorCode6_clbk CCashDbWorkerNULLConvertErrorCode6_user(nullptr);
-        info::CCashDbWorkerNULLDoWork8_ptr CCashDbWorkerNULLDoWork8_next(nullptr);
-        info::CCashDbWorkerNULLDoWork8_clbk CCashDbWorkerNULLDoWork8_user(nullptr);
-        info::CCashDbWorkerNULLGetUseCashQueryStr10_ptr CCashDbWorkerNULLGetUseCashQueryStr10_next(nullptr);
-        info::CCashDbWorkerNULLGetUseCashQueryStr10_clbk CCashDbWorkerNULLGetUseCashQueryStr10_user(nullptr);
-        info::CCashDbWorkerNULLInitialize12_ptr CCashDbWorkerNULLInitialize12_next(nullptr);
-        info::CCashDbWorkerNULLInitialize12_clbk CCashDbWorkerNULLInitialize12_user(nullptr);
-        info::CCashDbWorkerNULLRelease14_ptr CCashDbWorkerNULLRelease14_next(nullptr);
-        info::CCashDbWorkerNULLRelease14_clbk CCashDbWorkerNULLRelease14_user(nullptr);
-        info::CCashDbWorkerNULL_all_rollback16_ptr CCashDbWorkerNULL_all_rollback16_next(nullptr);
-        info::CCashDbWorkerNULL_all_rollback16_clbk CCashDbWorkerNULL_all_rollback16_user(nullptr);
-        info::CCashDbWorkerNULL_init_database18_ptr CCashDbWorkerNULL_init_database18_next(nullptr);
-        info::CCashDbWorkerNULL_init_database18_clbk CCashDbWorkerNULL_init_database18_user(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_ptr CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_next(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_clbk CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_user(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_rollback22_ptr CCashDbWorkerNULL_wait_tsk_cash_rollback22_next(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_rollback22_clbk CCashDbWorkerNULL_wait_tsk_cash_rollback22_user(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_select24_ptr CCashDbWorkerNULL_wait_tsk_cash_select24_next(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_select24_clbk CCashDbWorkerNULL_wait_tsk_cash_select24_user(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_update26_ptr CCashDbWorkerNULL_wait_tsk_cash_update26_next(nullptr);
-        info::CCashDbWorkerNULL_wait_tsk_cash_update26_clbk CCashDbWorkerNULL_wait_tsk_cash_update26_user(nullptr);
-        info::CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_ptr CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_next(nullptr);
-        info::CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_clbk CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_user(nullptr);
-        info::CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_ptr CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_next(nullptr);
-        info::CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_clbk CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_user(nullptr);
+        static info::CCashDbWorkerNULLctor_CCashDbWorkerNULL2_ptr CCashDbWorkerNULLctor_CCashDbWorkerNULL2_next(nullptr);
+        static info::CCashDbWorkerNULLctor_CCashDbWorkerNULL2_clbk CCashDbWorkerNULLctor_CCashDbWorkerNULL2_user(nullptr);
+        static info::CCashDbWorkerNULLCompleteWork4_ptr CCashDbWorkerNULLCompleteWork4_next(nullptr);
+        static info::CCashDbWorkerNULLCompleteWork4_clbk CCashDbWorkerNULLCompleteWork4_user(nullptr);
+        static info::CCashDbWorkerNULLConvertErrorCode6_ptr CCashDbWorkerNULLConvertErrorCode6_next(nullptr);
+        static info::CCashDbWorkerNULLConvertErrorCode6_clbk CCashDbWorkerNULLConvertErrorCode6_user(nullptr);
+        static info::CCashDbWorkerNULLDoWork8_ptr CCashDbWorkerNULLDoWork8_next(nullptr);
+        static info::CCashDbWorkerNULLDoWork8_clbk CCashDbWorkerNULLDoWork8_user(nullptr);
+        static info::CCashDbWorkerNULLGetUseCashQueryStr10_ptr CCashDbWorkerNULLGetUseCashQueryStr10_next(nullptr);
+        static info::CCashDbWorkerNULLGetUseCashQueryStr10_clbk CCashDbWorkerNULLGetUseCashQueryStr10_user(nullptr);
+        static info::CCashDbWorkerNULLInitialize12_ptr CCashDbWorkerNULLInitialize12_next(nullptr);
+        static info::CCashDbWorkerNULLInitialize12_clbk CCashDbWorkerNULLInitialize12_user(nullptr);
+        static info::CCashDbWorkerNULLRelease14_ptr CCashDbWorkerNULLRelease14_next(nullptr);
+        static info::CCashDbWorkerNULLRelease14_clbk CCashDbWorkerNULLRelease14_user(nullptr);
+        static info::CCashDbWorkerNULL_all_rollback16_ptr CCashDbWorkerNULL_all_rollback16_next(nullptr);
+        static info::CCashDbWorkerNULL_all_rollback16_clbk CCashDbWorkerNULL_all_rollback16_user(nullptr);
+        static info::CCashDbWorkerNULL_init_database18_ptr CCashDbWorkerNULL_init_database18_next(nullptr);
+        static info::CCashDbWorkerNULL_init_database18_clbk CCashDbWorkerNULL_init_database18_user(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_ptr CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_next(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_clbk CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_user(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_rollback22_ptr CCashDbWorkerNULL_wait_tsk_cash_rollback22_next(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_rollback22_clbk CCashDbWorkerNULL_wait_tsk_cash_rollback22_user(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_select24_ptr CCashDbWorkerNULL_wait_tsk_cash_select24_next(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_select24_clbk CCashDbWorkerNULL_wait_tsk_cash_select24_user(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_update26_ptr CCashDbWorkerNULL_wait_tsk_cash_update26_next(nullptr);
+        static info::CCashDbWorkerNULL_wait_tsk_cash_update26_clbk CCashDbWorkerNULL_wait_tsk_cash_update26_user(nullptr);
+        static info::CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_ptr CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_next(nullptr);
+        static info::CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_clbk CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_user(nullptr);
+        static info::CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_ptr CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_next(nullptr);
+        static info::CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_clbk CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_user(nullptr);
         
-        void CCashDbWorkerNULLctor_CCashDbWorkerNULL2_wrapper(struct CCashDbWorkerNULL* _this)
+        static void CCashDbWorkerNULLctor_CCashDbWorkerNULL2_wrapper(struct CCashDbWorkerNULL* _this)
         {
            CCashDbWorkerNULLctor_CCashDbWorkerNULL2_user(_this, CCashDbWorkerNULLctor_CCashDbWorkerNULL2_next);
         };
-        void CCashDbWorkerNULLCompleteWork4_wrapper(struct CCashDbWorkerNULL* _this)
+        static void CCashDbWorkerNULLCompleteWork4_wrapper(struct CCashDbWorkerNULL* _this)
         {
            CCashDbWorkerNULLCompleteWork4_user(_this, CCashDbWorkerNULLCompleteWork4_next);
         };
-        int CCashDbWorkerNULLConvertErrorCode6_wrapper(struct CCashDbWorkerNULL* _this, char state)
+        static int CCashDbWorkerNULLConvertErrorCode6_wrapper(struct CCashDbWorkerNULL* _this, char state)
         {
            return CCashDbWorkerNULLConvertErrorCode6_user(_this, state, CCashDbWorkerNULLConvertErrorCode6_next);
         };
-        void CCashDbWorkerNULLDoWork8_wrapper(struct CCashDbWorkerNULL* _this)
+        static void CCashDbWorkerNULLDoWork8_wrapper(struct CCashDbWorkerNULL* _this)
         {
            CCashDbWorkerNULLDoWork8_user(_this, CCashDbWorkerNULLDoWork8_next);
         };
-        void CCashDbWorkerNULLGetUseCashQueryStr10_wrapper(struct CCashDbWorkerNULL* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
+        static void CCashDbWorkerNULLGetUseCashQueryStr10_wrapper(struct CCashDbWorkerNULL* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
         {
            CCashDbWorkerNULLGetUseCashQueryStr10_user(_this, rParam, nIdx, wszQuery, tBufferSize, CCashDbWorkerNULLGetUseCashQueryStr10_next);
         };
-        bool CCashDbWorkerNULLInitialize12_wrapper(struct CCashDbWorkerNULL* _this)
+        static bool CCashDbWorkerNULLInitialize12_wrapper(struct CCashDbWorkerNULL* _this)
         {
            return CCashDbWorkerNULLInitialize12_user(_this, CCashDbWorkerNULLInitialize12_next);
         };
-        void CCashDbWorkerNULLRelease14_wrapper(struct CCashDbWorkerNULL* _this)
+        static void CCashDbWorkerNULLRelease14_wrapper(struct CCashDbWorkerNULL* _this)
         {
            CCashDbWorkerNULLRelease14_user(_this, CCashDbWorkerNULLRelease14_next);
         };
-        void CCashDbWorkerNULL_all_rollback16_wrapper(struct CCashDbWorkerNULL* _this, struct _param_cash_update* psheet)
+        static void CCashDbWorkerNULL_all_rollback16_wrapper(struct CCashDbWorkerNULL* _this, struct _param_cash_update* psheet)
         {
            CCashDbWorkerNULL_all_rollback16_user(_this, psheet, CCashDbWorkerNULL_all_rollback16_next);
         };
-        bool CCashDbWorkerNULL_init_database18_wrapper(struct CCashDbWorkerNULL* _this)
+        static bool CCashDbWorkerNULL_init_database18_wrapper(struct CCashDbWorkerNULL* _this)
         {
            return CCashDbWorkerNULL_init_database18_user(_this, CCashDbWorkerNULL_init_database18_next);
         };
-        int CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
+        static int CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
         {
            return CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_user(_this, pkTsk, CCashDbWorkerNULL_wait_tsk_cash_buy_dblog20_next);
         };
-        int CCashDbWorkerNULL_wait_tsk_cash_rollback22_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
+        static int CCashDbWorkerNULL_wait_tsk_cash_rollback22_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
         {
            return CCashDbWorkerNULL_wait_tsk_cash_rollback22_user(_this, pkTsk, CCashDbWorkerNULL_wait_tsk_cash_rollback22_next);
         };
-        int CCashDbWorkerNULL_wait_tsk_cash_select24_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
+        static int CCashDbWorkerNULL_wait_tsk_cash_select24_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
         {
            return CCashDbWorkerNULL_wait_tsk_cash_select24_user(_this, pkTsk, CCashDbWorkerNULL_wait_tsk_cash_select24_next);
         };
-        int CCashDbWorkerNULL_wait_tsk_cash_update26_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
+        static int CCashDbWorkerNULL_wait_tsk_cash_update26_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
         {
            return CCashDbWorkerNULL_wait_tsk_cash_update26_user(_this, pkTsk, CCashDbWorkerNULL_wait_tsk_cash_update26_next);
         };
-        int CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
+        static int CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_wrapper(struct CCashDbWorkerNULL* _this, struct Task* pkTsk)
         {
            return CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_user(_this, pkTsk, CCashDbWorkerNULL_wait_tst_cash_total_selling_select28_next);
         };
-        void CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_wrapper(struct CCashDbWorkerNULL* _this)
+        static void CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_wrapper(struct CCashDbWorkerNULL* _this)
         {
            CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_user(_this, CCashDbWorkerNULLdtor_CCashDbWorkerNULL33_next);
         };
         
-        hook_record CCashDbWorkerNULL_functions[] = {
+        static hook_record CCashDbWorkerNULL_functions[] = {
         {   (LPVOID)0x1402f3020L,
             (LPVOID *)&CCashDbWorkerNULLctor_CCashDbWorkerNULL2_user,
             (LPVOID *)&CCashDbWorkerNULLctor_CCashDbWorkerNULL2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

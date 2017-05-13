@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_FORCEKEYCovDBKey2_ptr _FORCEKEYCovDBKey2_next(nullptr);
-        info::_FORCEKEYCovDBKey2_clbk _FORCEKEYCovDBKey2_user(nullptr);
-        info::_FORCEKEYGetIndex4_ptr _FORCEKEYGetIndex4_next(nullptr);
-        info::_FORCEKEYGetIndex4_clbk _FORCEKEYGetIndex4_user(nullptr);
-        info::_FORCEKEYGetStat6_ptr _FORCEKEYGetStat6_next(nullptr);
-        info::_FORCEKEYGetStat6_clbk _FORCEKEYGetStat6_user(nullptr);
-        info::_FORCEKEYIsFilled8_ptr _FORCEKEYIsFilled8_next(nullptr);
-        info::_FORCEKEYIsFilled8_clbk _FORCEKEYIsFilled8_user(nullptr);
-        info::_FORCEKEYLoadDBKey10_ptr _FORCEKEYLoadDBKey10_next(nullptr);
-        info::_FORCEKEYLoadDBKey10_clbk _FORCEKEYLoadDBKey10_user(nullptr);
-        info::_FORCEKEYSetKey12_ptr _FORCEKEYSetKey12_next(nullptr);
-        info::_FORCEKEYSetKey12_clbk _FORCEKEYSetKey12_user(nullptr);
-        info::_FORCEKEYSetRelease14_ptr _FORCEKEYSetRelease14_next(nullptr);
-        info::_FORCEKEYSetRelease14_clbk _FORCEKEYSetRelease14_user(nullptr);
-        info::_FORCEKEYSetStat16_ptr _FORCEKEYSetStat16_next(nullptr);
-        info::_FORCEKEYSetStat16_clbk _FORCEKEYSetStat16_user(nullptr);
+        static info::_FORCEKEYCovDBKey2_ptr _FORCEKEYCovDBKey2_next(nullptr);
+        static info::_FORCEKEYCovDBKey2_clbk _FORCEKEYCovDBKey2_user(nullptr);
+        static info::_FORCEKEYGetIndex4_ptr _FORCEKEYGetIndex4_next(nullptr);
+        static info::_FORCEKEYGetIndex4_clbk _FORCEKEYGetIndex4_user(nullptr);
+        static info::_FORCEKEYGetStat6_ptr _FORCEKEYGetStat6_next(nullptr);
+        static info::_FORCEKEYGetStat6_clbk _FORCEKEYGetStat6_user(nullptr);
+        static info::_FORCEKEYIsFilled8_ptr _FORCEKEYIsFilled8_next(nullptr);
+        static info::_FORCEKEYIsFilled8_clbk _FORCEKEYIsFilled8_user(nullptr);
+        static info::_FORCEKEYLoadDBKey10_ptr _FORCEKEYLoadDBKey10_next(nullptr);
+        static info::_FORCEKEYLoadDBKey10_clbk _FORCEKEYLoadDBKey10_user(nullptr);
+        static info::_FORCEKEYSetKey12_ptr _FORCEKEYSetKey12_next(nullptr);
+        static info::_FORCEKEYSetKey12_clbk _FORCEKEYSetKey12_user(nullptr);
+        static info::_FORCEKEYSetRelease14_ptr _FORCEKEYSetRelease14_next(nullptr);
+        static info::_FORCEKEYSetRelease14_clbk _FORCEKEYSetRelease14_user(nullptr);
+        static info::_FORCEKEYSetStat16_ptr _FORCEKEYSetStat16_next(nullptr);
+        static info::_FORCEKEYSetStat16_clbk _FORCEKEYSetStat16_user(nullptr);
         
-        int _FORCEKEYCovDBKey2_wrapper(struct _FORCEKEY* _this)
+        static int _FORCEKEYCovDBKey2_wrapper(struct _FORCEKEY* _this)
         {
            return _FORCEKEYCovDBKey2_user(_this, _FORCEKEYCovDBKey2_next);
         };
-        char _FORCEKEYGetIndex4_wrapper(struct _FORCEKEY* _this)
+        static char _FORCEKEYGetIndex4_wrapper(struct _FORCEKEY* _this)
         {
            return _FORCEKEYGetIndex4_user(_this, _FORCEKEYGetIndex4_next);
         };
-        unsigned int _FORCEKEYGetStat6_wrapper(struct _FORCEKEY* _this)
+        static unsigned int _FORCEKEYGetStat6_wrapper(struct _FORCEKEY* _this)
         {
            return _FORCEKEYGetStat6_user(_this, _FORCEKEYGetStat6_next);
         };
-        bool _FORCEKEYIsFilled8_wrapper(struct _FORCEKEY* _this)
+        static bool _FORCEKEYIsFilled8_wrapper(struct _FORCEKEY* _this)
         {
            return _FORCEKEYIsFilled8_user(_this, _FORCEKEYIsFilled8_next);
         };
-        void _FORCEKEYLoadDBKey10_wrapper(struct _FORCEKEY* _this, int pl_nKey)
+        static void _FORCEKEYLoadDBKey10_wrapper(struct _FORCEKEY* _this, int pl_nKey)
         {
            _FORCEKEYLoadDBKey10_user(_this, pl_nKey, _FORCEKEYLoadDBKey10_next);
         };
-        void _FORCEKEYSetKey12_wrapper(struct _FORCEKEY* _this, char pl_byItemIndex, unsigned int pl_dwStat)
+        static void _FORCEKEYSetKey12_wrapper(struct _FORCEKEY* _this, char pl_byItemIndex, unsigned int pl_dwStat)
         {
            _FORCEKEYSetKey12_user(_this, pl_byItemIndex, pl_dwStat, _FORCEKEYSetKey12_next);
         };
-        void _FORCEKEYSetRelease14_wrapper(struct _FORCEKEY* _this)
+        static void _FORCEKEYSetRelease14_wrapper(struct _FORCEKEY* _this)
         {
            _FORCEKEYSetRelease14_user(_this, _FORCEKEYSetRelease14_next);
         };
-        void _FORCEKEYSetStat16_wrapper(struct _FORCEKEY* _this, unsigned int pl_dwStat)
+        static void _FORCEKEYSetStat16_wrapper(struct _FORCEKEY* _this, unsigned int pl_dwStat)
         {
            _FORCEKEYSetStat16_user(_this, pl_dwStat, _FORCEKEYSetStat16_next);
         };
         
-        hook_record _FORCEKEY_functions[] = {
+        static hook_record _FORCEKEY_functions[] = {
         {   (LPVOID)0x1401bf2c0L,
             (LPVOID *)&_FORCEKEYCovDBKey2_user,
             (LPVOID *)&_FORCEKEYCovDBKey2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

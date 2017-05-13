@@ -10,65 +10,65 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
-            info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
-            info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
-            info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
-            info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
-            info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
-            info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
-            info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
-            info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
-            info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
-            info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
-            info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
-            info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
-            info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
+            static info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
+            static info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
+            static info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
+            static info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
+            static info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
+            static info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
+            static info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
+            static info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
             
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
             
-            void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwCount)
+            static void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwCount)
             {
                US__CArrayExAlloc2_user(_this, dwCount);
             };
-            void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
+            static void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
             {
                US__CArrayExctor_CArrayEx4_user(_this);
             };
-            struct CLuaScript* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwIndex)
+            static struct CLuaScript* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetAtPtr6_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, struct CLuaScript* pData)
+            static unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, struct CLuaScript* pData)
             {
                return US__CArrayExGetIndex8_user(_this, pData);
             };
-            unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
+            static unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
             {
                return US__CArrayExGetSize10_user(_this);
             };
-            struct CLuaScript::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwIndex)
+            static struct CLuaScript::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetStateAtPtr12_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, struct CLuaScript::_State* state)
+            static unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this, struct CLuaScript::_State* state)
             {
                return US__CArrayExSearchSlotIndex14_user(_this, state);
             };
-            void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
+            static void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* _this)
             {
                US__CArrayExdtor_CArrayEx16_user(_this);
             };
             
-            unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* p, struct CLuaScript::_State* state)
+            static unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaScript,CLuaScript::_State>* p, struct CLuaScript::_State* state)
             {
                return US__CArrayEx__ORDER_INCSearchSlotIndex2_user(p, state);
             };
             
-            hook_record CArrayEx<CLuaScript,CLuaScript::_State>_functions[] = {
+            static hook_record CArrayEx<CLuaScript,CLuaScript::_State>_functions[] = {
             {   (LPVOID)0x1404013c0L,
                 (LPVOID *)&US__CArrayExAlloc2_user,
                 (LPVOID *)&US__CArrayExAlloc2_next,
@@ -118,7 +118,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE
 #include "US__CArrayEx_info.hpp"
@@ -129,65 +129,65 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
-            info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
-            info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
-            info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
-            info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
-            info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
-            info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
-            info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
-            info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
-            info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
-            info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
-            info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
-            info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
-            info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
+            static info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
+            static info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
+            static info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
+            static info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
+            static info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
+            static info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
+            static info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
+            static info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
             
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
             
-            void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwCount)
+            static void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwCount)
             {
                US__CArrayExAlloc2_user(_this, dwCount);
             };
-            void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
+            static void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
             {
                US__CArrayExctor_CArrayEx4_user(_this);
             };
-            struct CLuaCommandEx* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwIndex)
+            static struct CLuaCommandEx* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetAtPtr6_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, struct CLuaCommandEx* pData)
+            static unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, struct CLuaCommandEx* pData)
             {
                return US__CArrayExGetIndex8_user(_this, pData);
             };
-            unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
+            static unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
             {
                return US__CArrayExGetSize10_user(_this);
             };
-            struct CLuaCommandEx::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwIndex)
+            static struct CLuaCommandEx::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetStateAtPtr12_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, struct CLuaCommandEx::_State* state)
+            static unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this, struct CLuaCommandEx::_State* state)
             {
                return US__CArrayExSearchSlotIndex14_user(_this, state);
             };
-            void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
+            static void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* _this)
             {
                US__CArrayExdtor_CArrayEx16_user(_this);
             };
             
-            unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* p, struct CLuaCommandEx::_State* state)
+            static unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>* p, struct CLuaCommandEx::_State* state)
             {
                return US__CArrayEx__ORDER_INCSearchSlotIndex2_user(p, state);
             };
             
-            hook_record CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>_functions[] = {
+            static hook_record CArrayEx<CLuaCommandEx,CLuaCommandEx::_State>_functions[] = {
             {   (LPVOID)0x140401830L,
                 (LPVOID *)&US__CArrayExAlloc2_user,
                 (LPVOID *)&US__CArrayExAlloc2_next,
@@ -237,7 +237,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE
 #include "US__CArrayEx_info.hpp"
@@ -248,59 +248,59 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
-            info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
-            info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
-            info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
-            info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
-            info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
-            info::US__CArrayExGetSize8_ptr US__CArrayExGetSize8_next(nullptr);
-            info::US__CArrayExGetSize8_clbk US__CArrayExGetSize8_user(nullptr);
-            info::US__CArrayExGetStateAtPtr10_ptr US__CArrayExGetStateAtPtr10_next(nullptr);
-            info::US__CArrayExGetStateAtPtr10_clbk US__CArrayExGetStateAtPtr10_user(nullptr);
-            info::US__CArrayExSearchSlotIndex12_ptr US__CArrayExSearchSlotIndex12_next(nullptr);
-            info::US__CArrayExSearchSlotIndex12_clbk US__CArrayExSearchSlotIndex12_user(nullptr);
-            info::US__CArrayExdtor_CArrayEx14_ptr US__CArrayExdtor_CArrayEx14_next(nullptr);
-            info::US__CArrayExdtor_CArrayEx14_clbk US__CArrayExdtor_CArrayEx14_user(nullptr);
+            static info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
+            static info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
+            static info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
+            static info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
+            static info::US__CArrayExGetSize8_ptr US__CArrayExGetSize8_next(nullptr);
+            static info::US__CArrayExGetSize8_clbk US__CArrayExGetSize8_user(nullptr);
+            static info::US__CArrayExGetStateAtPtr10_ptr US__CArrayExGetStateAtPtr10_next(nullptr);
+            static info::US__CArrayExGetStateAtPtr10_clbk US__CArrayExGetStateAtPtr10_user(nullptr);
+            static info::US__CArrayExSearchSlotIndex12_ptr US__CArrayExSearchSlotIndex12_next(nullptr);
+            static info::US__CArrayExSearchSlotIndex12_clbk US__CArrayExSearchSlotIndex12_user(nullptr);
+            static info::US__CArrayExdtor_CArrayEx14_ptr US__CArrayExdtor_CArrayEx14_next(nullptr);
+            static info::US__CArrayExdtor_CArrayEx14_clbk US__CArrayExdtor_CArrayEx14_user(nullptr);
             
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
             
-            void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwCount)
+            static void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwCount)
             {
                US__CArrayExAlloc2_user(_this, dwCount);
             };
-            void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
+            static void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
             {
                US__CArrayExctor_CArrayEx4_user(_this);
             };
-            struct CLuaLooting_Novus_Item* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwIndex)
+            static struct CLuaLooting_Novus_Item* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetAtPtr6_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExGetSize8_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
+            static unsigned int US__CArrayExGetSize8_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
             {
                return US__CArrayExGetSize8_user(_this);
             };
-            struct CLuaLooting_Novus_Item::_State* US__CArrayExGetStateAtPtr10_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwIndex)
+            static struct CLuaLooting_Novus_Item::_State* US__CArrayExGetStateAtPtr10_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetStateAtPtr10_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExSearchSlotIndex12_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, struct CLuaLooting_Novus_Item::_State* state)
+            static unsigned int US__CArrayExSearchSlotIndex12_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this, struct CLuaLooting_Novus_Item::_State* state)
             {
                return US__CArrayExSearchSlotIndex12_user(_this, state);
             };
-            void US__CArrayExdtor_CArrayEx14_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
+            static void US__CArrayExdtor_CArrayEx14_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* _this)
             {
                US__CArrayExdtor_CArrayEx14_user(_this);
             };
             
-            unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* p, struct CLuaLooting_Novus_Item::_State* state)
+            static unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>* p, struct CLuaLooting_Novus_Item::_State* state)
             {
                return US__CArrayEx__ORDER_INCSearchSlotIndex2_user(p, state);
             };
             
-            hook_record CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>_functions[] = {
+            static hook_record CArrayEx<CLuaLooting_Novus_Item,CLuaLooting_Novus_Item::_State>_functions[] = {
             {   (LPVOID)0x140405690L,
                 (LPVOID *)&US__CArrayExAlloc2_user,
                 (LPVOID *)&US__CArrayExAlloc2_next,
@@ -345,7 +345,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE
 #include "US__CArrayEx_info.hpp"
@@ -356,65 +356,65 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
-            info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
-            info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
-            info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
-            info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
-            info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
-            info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
-            info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
-            info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
-            info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
-            info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
-            info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
-            info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
-            info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
-            info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
+            static info::US__CArrayExAlloc2_ptr US__CArrayExAlloc2_next(nullptr);
+            static info::US__CArrayExAlloc2_clbk US__CArrayExAlloc2_user(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_ptr US__CArrayExctor_CArrayEx4_next(nullptr);
+            static info::US__CArrayExctor_CArrayEx4_clbk US__CArrayExctor_CArrayEx4_user(nullptr);
+            static info::US__CArrayExGetAtPtr6_ptr US__CArrayExGetAtPtr6_next(nullptr);
+            static info::US__CArrayExGetAtPtr6_clbk US__CArrayExGetAtPtr6_user(nullptr);
+            static info::US__CArrayExGetIndex8_ptr US__CArrayExGetIndex8_next(nullptr);
+            static info::US__CArrayExGetIndex8_clbk US__CArrayExGetIndex8_user(nullptr);
+            static info::US__CArrayExGetSize10_ptr US__CArrayExGetSize10_next(nullptr);
+            static info::US__CArrayExGetSize10_clbk US__CArrayExGetSize10_user(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_ptr US__CArrayExGetStateAtPtr12_next(nullptr);
+            static info::US__CArrayExGetStateAtPtr12_clbk US__CArrayExGetStateAtPtr12_user(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_ptr US__CArrayExSearchSlotIndex14_next(nullptr);
+            static info::US__CArrayExSearchSlotIndex14_clbk US__CArrayExSearchSlotIndex14_user(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_ptr US__CArrayExdtor_CArrayEx16_next(nullptr);
+            static info::US__CArrayExdtor_CArrayEx16_clbk US__CArrayExdtor_CArrayEx16_user(nullptr);
             
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
-            info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_ptr US__CArrayEx__ORDER_INCSearchSlotIndex2_next(nullptr);
+            static info::US__CArrayEx__ORDER_INCSearchSlotIndex2_clbk US__CArrayEx__ORDER_INCSearchSlotIndex2_user(nullptr);
             
-            void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwCount)
+            static void US__CArrayExAlloc2_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwCount)
             {
                US__CArrayExAlloc2_user(_this, dwCount);
             };
-            void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
+            static void US__CArrayExctor_CArrayEx4_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
             {
                US__CArrayExctor_CArrayEx4_user(_this);
             };
-            struct CLuaEventNode* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwIndex)
+            static struct CLuaEventNode* US__CArrayExGetAtPtr6_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetAtPtr6_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, struct CLuaEventNode* pData)
+            static unsigned int US__CArrayExGetIndex8_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, struct CLuaEventNode* pData)
             {
                return US__CArrayExGetIndex8_user(_this, pData);
             };
-            unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
+            static unsigned int US__CArrayExGetSize10_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
             {
                return US__CArrayExGetSize10_user(_this);
             };
-            struct CLuaEventNode::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwIndex)
+            static struct CLuaEventNode::_State* US__CArrayExGetStateAtPtr12_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, unsigned int dwIndex)
             {
                return US__CArrayExGetStateAtPtr12_user(_this, dwIndex);
             };
-            unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, struct CLuaEventNode::_State* state)
+            static unsigned int US__CArrayExSearchSlotIndex14_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this, struct CLuaEventNode::_State* state)
             {
                return US__CArrayExSearchSlotIndex14_user(_this, state);
             };
-            void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
+            static void US__CArrayExdtor_CArrayEx16_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* _this)
             {
                US__CArrayExdtor_CArrayEx16_user(_this);
             };
             
-            unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* p, struct CLuaEventNode::_State* state)
+            static unsigned int US__CArrayEx__ORDER_INCSearchSlotIndex2_wrapper(struct US::CArrayEx<CLuaEventNode,CLuaEventNode::_State>* p, struct CLuaEventNode::_State* state)
             {
                return US__CArrayEx__ORDER_INCSearchSlotIndex2_user(p, state);
             };
             
-            hook_record CArrayEx<CLuaEventNode,CLuaEventNode::_State>_functions[] = {
+            static hook_record CArrayEx<CLuaEventNode,CLuaEventNode::_State>_functions[] = {
             {   (LPVOID)0x140403d40L,
                 (LPVOID *)&US__CArrayExAlloc2_user,
                 (LPVOID *)&US__CArrayExAlloc2_next,
@@ -464,6 +464,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE

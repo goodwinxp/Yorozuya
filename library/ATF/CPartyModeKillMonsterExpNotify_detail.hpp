@@ -8,65 +8,65 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPartyModeKillMonsterExpNotifyAdd2_ptr CPartyModeKillMonsterExpNotifyAdd2_next(nullptr);
-        info::CPartyModeKillMonsterExpNotifyAdd2_clbk CPartyModeKillMonsterExpNotifyAdd2_user(nullptr);
-        info::CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_ptr CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_next(nullptr);
-        info::CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_clbk CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_user(nullptr);
-        info::CPartyModeKillMonsterExpNotifyctor_Notify6_ptr CPartyModeKillMonsterExpNotifyctor_Notify6_next(nullptr);
-        info::CPartyModeKillMonsterExpNotifyctor_Notify6_clbk CPartyModeKillMonsterExpNotifyctor_Notify6_user(nullptr);
-        info::CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_ptr CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_next(nullptr);
-        info::CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_clbk CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_user(nullptr);
-        info::CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_ptr CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_next(nullptr);
-        info::CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_clbk CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyAdd2_ptr CPartyModeKillMonsterExpNotifyAdd2_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyAdd2_clbk CPartyModeKillMonsterExpNotifyAdd2_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_ptr CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_clbk CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyctor_Notify6_ptr CPartyModeKillMonsterExpNotifyctor_Notify6_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotifyctor_Notify6_clbk CPartyModeKillMonsterExpNotifyctor_Notify6_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_ptr CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_clbk CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_ptr CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_clbk CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_user(nullptr);
         
-        info::CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_ptr CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_next(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_clbk CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_user(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfoNotify4_ptr CPartyModeKillMonsterExpNotify__CExpInfoNotify4_next(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfoNotify4_clbk CPartyModeKillMonsterExpNotify__CExpInfoNotify4_user(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_ptr CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_next(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_clbk CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_user(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_ptr CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_next(nullptr);
-        info::CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_clbk CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_ptr CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_clbk CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoNotify4_ptr CPartyModeKillMonsterExpNotify__CExpInfoNotify4_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoNotify4_clbk CPartyModeKillMonsterExpNotify__CExpInfoNotify4_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_ptr CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_clbk CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_user(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_ptr CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_next(nullptr);
+        static info::CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_clbk CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_user(nullptr);
         
-        bool CPartyModeKillMonsterExpNotifyAdd2_wrapper(struct CPartyModeKillMonsterExpNotify* _this, struct CPlayer* pkMember, float fExp)
+        static bool CPartyModeKillMonsterExpNotifyAdd2_wrapper(struct CPartyModeKillMonsterExpNotify* _this, struct CPlayer* pkMember, float fExp)
         {
            return CPartyModeKillMonsterExpNotifyAdd2_user(_this, pkMember, fExp, CPartyModeKillMonsterExpNotifyAdd2_next);
         };
-        void CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
+        static void CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
         {
            CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_user(_this, CPartyModeKillMonsterExpNotifyctor_CPartyModeKillMonsterExpNotify4_next);
         };
-        void CPartyModeKillMonsterExpNotifyctor_Notify6_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
+        static void CPartyModeKillMonsterExpNotifyctor_Notify6_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
         {
            CPartyModeKillMonsterExpNotifyctor_Notify6_user(_this, CPartyModeKillMonsterExpNotifyctor_Notify6_next);
         };
-        void CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
+        static void CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
         {
            CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_user(_this, CPartyModeKillMonsterExpNotifySetKillMonsterFlag8_next);
         };
-        void CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
+        static void CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_wrapper(struct CPartyModeKillMonsterExpNotify* _this)
         {
            CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_user(_this, CPartyModeKillMonsterExpNotifydtor_CPartyModeKillMonsterExpNotify10_next);
         };
         
-        void CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
+        static void CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
         {
            CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_user(_this, CPartyModeKillMonsterExpNotify__CExpInfoctor_CExpInfo2_next);
         };
-        void CPartyModeKillMonsterExpNotify__CExpInfoNotify4_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
+        static void CPartyModeKillMonsterExpNotify__CExpInfoNotify4_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
         {
            CPartyModeKillMonsterExpNotify__CExpInfoNotify4_user(_this, CPartyModeKillMonsterExpNotify__CExpInfoNotify4_next);
         };
-        void CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this, struct CPlayer* pkMember, float fExp)
+        static void CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this, struct CPlayer* pkMember, float fExp)
         {
            CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_user(_this, pkMember, fExp, CPartyModeKillMonsterExpNotify__CExpInfoSetGetExp6_next);
         };
-        void CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
+        static void CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_wrapper(struct CPartyModeKillMonsterExpNotify::CExpInfo* _this)
         {
            CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_user(_this, CPartyModeKillMonsterExpNotify__CExpInfodtor_CExpInfo8_next);
         };
         
-        hook_record CPartyModeKillMonsterExpNotify_functions[] = {
+        static hook_record CPartyModeKillMonsterExpNotify_functions[] = {
         {   (LPVOID)0x1401692f0L,
             (LPVOID *)&CPartyModeKillMonsterExpNotifyAdd2_user,
             (LPVOID *)&CPartyModeKillMonsterExpNotifyAdd2_next,
@@ -116,5 +116,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

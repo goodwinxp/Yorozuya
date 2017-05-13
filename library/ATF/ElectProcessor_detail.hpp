@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ElectProcessorDoit2_ptr ElectProcessorDoit2_next(nullptr);
-        info::ElectProcessorDoit2_clbk ElectProcessorDoit2_user(nullptr);
-        info::ElectProcessorctor_ElectProcessor4_ptr ElectProcessorctor_ElectProcessor4_next(nullptr);
-        info::ElectProcessorctor_ElectProcessor4_clbk ElectProcessorctor_ElectProcessor4_user(nullptr);
-        info::ElectProcessorGetProcessorType6_ptr ElectProcessorGetProcessorType6_next(nullptr);
-        info::ElectProcessorGetProcessorType6_clbk ElectProcessorGetProcessorType6_user(nullptr);
-        info::ElectProcessorInitialize8_ptr ElectProcessorInitialize8_next(nullptr);
-        info::ElectProcessorInitialize8_clbk ElectProcessorInitialize8_user(nullptr);
-        info::ElectProcessordtor_ElectProcessor13_ptr ElectProcessordtor_ElectProcessor13_next(nullptr);
-        info::ElectProcessordtor_ElectProcessor13_clbk ElectProcessordtor_ElectProcessor13_user(nullptr);
+        static info::ElectProcessorDoit2_ptr ElectProcessorDoit2_next(nullptr);
+        static info::ElectProcessorDoit2_clbk ElectProcessorDoit2_user(nullptr);
+        static info::ElectProcessorctor_ElectProcessor4_ptr ElectProcessorctor_ElectProcessor4_next(nullptr);
+        static info::ElectProcessorctor_ElectProcessor4_clbk ElectProcessorctor_ElectProcessor4_user(nullptr);
+        static info::ElectProcessorGetProcessorType6_ptr ElectProcessorGetProcessorType6_next(nullptr);
+        static info::ElectProcessorGetProcessorType6_clbk ElectProcessorGetProcessorType6_user(nullptr);
+        static info::ElectProcessorInitialize8_ptr ElectProcessorInitialize8_next(nullptr);
+        static info::ElectProcessorInitialize8_clbk ElectProcessorInitialize8_user(nullptr);
+        static info::ElectProcessordtor_ElectProcessor13_ptr ElectProcessordtor_ElectProcessor13_next(nullptr);
+        static info::ElectProcessordtor_ElectProcessor13_clbk ElectProcessordtor_ElectProcessor13_user(nullptr);
         
-        int ElectProcessorDoit2_wrapper(struct ElectProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int ElectProcessorDoit2_wrapper(struct ElectProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return ElectProcessorDoit2_user(_this, eCmd, pOne, pdata, ElectProcessorDoit2_next);
         };
-        void ElectProcessorctor_ElectProcessor4_wrapper(struct ElectProcessor* _this, ElectProcessor::ProcessorType nProcessorType)
+        static void ElectProcessorctor_ElectProcessor4_wrapper(struct ElectProcessor* _this, ElectProcessor::ProcessorType nProcessorType)
         {
            ElectProcessorctor_ElectProcessor4_user(_this, nProcessorType, ElectProcessorctor_ElectProcessor4_next);
         };
-        ElectProcessor::ProcessorType ElectProcessorGetProcessorType6_wrapper(struct ElectProcessor* _this)
+        static ElectProcessor::ProcessorType ElectProcessorGetProcessorType6_wrapper(struct ElectProcessor* _this)
         {
            return ElectProcessorGetProcessorType6_user(_this, ElectProcessorGetProcessorType6_next);
         };
-        bool ElectProcessorInitialize8_wrapper(struct ElectProcessor* _this)
+        static bool ElectProcessorInitialize8_wrapper(struct ElectProcessor* _this)
         {
            return ElectProcessorInitialize8_user(_this, ElectProcessorInitialize8_next);
         };
-        void ElectProcessordtor_ElectProcessor13_wrapper(struct ElectProcessor* _this)
+        static void ElectProcessordtor_ElectProcessor13_wrapper(struct ElectProcessor* _this)
         {
            ElectProcessordtor_ElectProcessor13_user(_this, ElectProcessordtor_ElectProcessor13_next);
         };
         
-        hook_record ElectProcessor_functions[] = {
+        static hook_record ElectProcessor_functions[] = {
         {   (LPVOID)0x1402b7c20L,
             (LPVOID *)&ElectProcessorDoit2_user,
             (LPVOID *)&ElectProcessorDoit2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

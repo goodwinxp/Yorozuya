@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<CLuaEventNode>_functions[] = {
+            static hook_record class_name<CLuaEventNode>_functions[] = {
             {   (LPVOID)0x140404c40L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -27,7 +27,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__class_name_info.hpp"
@@ -38,15 +38,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<LuaParam3>_functions[] = {
+            static hook_record class_name<LuaParam3>_functions[] = {
             {   (LPVOID)0x140407ff0L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -55,7 +55,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__class_name_info.hpp"
@@ -66,15 +66,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<CLuaEventMgr>_functions[] = {
+            static hook_record class_name<CLuaEventMgr>_functions[] = {
             {   (LPVOID)0x1404081c0L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -83,7 +83,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__class_name_info.hpp"
@@ -94,15 +94,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<CMonster>_functions[] = {
+            static hook_record class_name<CMonster>_functions[] = {
             {   (LPVOID)0x1404082a0L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -111,7 +111,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__class_name_info.hpp"
@@ -122,15 +122,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<CLuaScript>_functions[] = {
+            static hook_record class_name<CLuaScript>_functions[] = {
             {   (LPVOID)0x140403160L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -139,7 +139,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__class_name_info.hpp"
@@ -150,15 +150,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
-            info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
+            static info::lua_tinker__class_namector_name2_ptr lua_tinker__class_namector_name2_next(nullptr);
+            static info::lua_tinker__class_namector_name2_clbk lua_tinker__class_namector_name2_user(nullptr);
             
-            char* lua_tinker__class_namector_name2_wrapper(char* name)
+            static char* lua_tinker__class_namector_name2_wrapper(char* name)
             {
                return lua_tinker__class_namector_name2_user(name);
             };
             
-            hook_record class_name<CLuaSignalReActor>_functions[] = {
+            static hook_record class_name<CLuaSignalReActor>_functions[] = {
             {   (LPVOID)0x140408230L,
                 (LPVOID *)&lua_tinker__class_namector_name2_user,
                 (LPVOID *)&lua_tinker__class_namector_name2_next,
@@ -167,6 +167,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

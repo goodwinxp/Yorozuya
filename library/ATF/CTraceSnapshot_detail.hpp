@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTraceSnapshotctor_CTraceSnapshot1_ptr CTraceSnapshotctor_CTraceSnapshot1_next(nullptr);
-        info::CTraceSnapshotctor_CTraceSnapshot1_clbk CTraceSnapshotctor_CTraceSnapshot1_user(nullptr);
-        info::CTraceSnapshotdtor_CTraceSnapshot2_ptr CTraceSnapshotdtor_CTraceSnapshot2_next(nullptr);
-        info::CTraceSnapshotdtor_CTraceSnapshot2_clbk CTraceSnapshotdtor_CTraceSnapshot2_user(nullptr);
+        static info::CTraceSnapshotctor_CTraceSnapshot1_ptr CTraceSnapshotctor_CTraceSnapshot1_next(nullptr);
+        static info::CTraceSnapshotctor_CTraceSnapshot1_clbk CTraceSnapshotctor_CTraceSnapshot1_user(nullptr);
+        static info::CTraceSnapshotdtor_CTraceSnapshot2_ptr CTraceSnapshotdtor_CTraceSnapshot2_next(nullptr);
+        static info::CTraceSnapshotdtor_CTraceSnapshot2_clbk CTraceSnapshotdtor_CTraceSnapshot2_user(nullptr);
         
-        void CTraceSnapshotctor_CTraceSnapshot1_wrapper(struct CTraceSnapshot* _this)
+        static void CTraceSnapshotctor_CTraceSnapshot1_wrapper(struct CTraceSnapshot* _this)
         {
            CTraceSnapshotctor_CTraceSnapshot1_user(_this, CTraceSnapshotctor_CTraceSnapshot1_next);
         };
-        void CTraceSnapshotdtor_CTraceSnapshot2_wrapper(struct CTraceSnapshot* _this)
+        static void CTraceSnapshotdtor_CTraceSnapshot2_wrapper(struct CTraceSnapshot* _this)
         {
            CTraceSnapshotdtor_CTraceSnapshot2_user(_this, CTraceSnapshotdtor_CTraceSnapshot2_next);
         };
         
-        hook_record CTraceSnapshot_functions[] = {
+        static hook_record CTraceSnapshot_functions[] = {
         {   (LPVOID)0x14066db40L,
             (LPVOID *)&CTraceSnapshotctor_CTraceSnapshot1_user,
             (LPVOID *)&CTraceSnapshotctor_CTraceSnapshot1_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

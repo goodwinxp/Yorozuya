@@ -8,201 +8,201 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuildRankingApplyGuildGrade2_ptr CGuildRankingApplyGuildGrade2_next(nullptr);
-        info::CGuildRankingApplyGuildGrade2_clbk CGuildRankingApplyGuildGrade2_user(nullptr);
-        info::CGuildRankingApplyRankInGuild4_ptr CGuildRankingApplyRankInGuild4_next(nullptr);
-        info::CGuildRankingApplyRankInGuild4_clbk CGuildRankingApplyRankInGuild4_user(nullptr);
-        info::CGuildRankingctor_CGuildRanking6_ptr CGuildRankingctor_CGuildRanking6_next(nullptr);
-        info::CGuildRankingctor_CGuildRanking6_clbk CGuildRankingctor_CGuildRanking6_user(nullptr);
-        info::CGuildRankingCheckAndCreateTodayGuildRankTable8_ptr CGuildRankingCheckAndCreateTodayGuildRankTable8_next(nullptr);
-        info::CGuildRankingCheckAndCreateTodayGuildRankTable8_clbk CGuildRankingCheckAndCreateTodayGuildRankTable8_user(nullptr);
-        info::CGuildRankingCheckGuildCheckSum10_ptr CGuildRankingCheckGuildCheckSum10_next(nullptr);
-        info::CGuildRankingCheckGuildCheckSum10_clbk CGuildRankingCheckGuildCheckSum10_user(nullptr);
-        info::CGuildRankingCheckMaxGuildMoney12_ptr CGuildRankingCheckMaxGuildMoney12_next(nullptr);
-        info::CGuildRankingCheckMaxGuildMoney12_clbk CGuildRankingCheckMaxGuildMoney12_user(nullptr);
-        info::CGuildRankingClearApplyRankInGuildJobOffset14_ptr CGuildRankingClearApplyRankInGuildJobOffset14_next(nullptr);
-        info::CGuildRankingClearApplyRankInGuildJobOffset14_clbk CGuildRankingClearApplyRankInGuildJobOffset14_user(nullptr);
-        info::CGuildRankingClearGuildGrade16_ptr CGuildRankingClearGuildGrade16_next(nullptr);
-        info::CGuildRankingClearGuildGrade16_clbk CGuildRankingClearGuildGrade16_user(nullptr);
-        info::CGuildRankingClearGuildSerial18_ptr CGuildRankingClearGuildSerial18_next(nullptr);
-        info::CGuildRankingClearGuildSerial18_clbk CGuildRankingClearGuildSerial18_user(nullptr);
-        info::CGuildRankingClearRefreshData20_ptr CGuildRankingClearRefreshData20_next(nullptr);
-        info::CGuildRankingClearRefreshData20_clbk CGuildRankingClearRefreshData20_user(nullptr);
-        info::CGuildRankingGetNextGuildSerial22_ptr CGuildRankingGetNextGuildSerial22_next(nullptr);
-        info::CGuildRankingGetNextGuildSerial22_clbk CGuildRankingGetNextGuildSerial22_user(nullptr);
-        info::CGuildRankingGetRankInGuildJobOffset24_ptr CGuildRankingGetRankInGuildJobOffset24_next(nullptr);
-        info::CGuildRankingGetRankInGuildJobOffset24_clbk CGuildRankingGetRankInGuildJobOffset24_user(nullptr);
-        info::CGuildRankingInit26_ptr CGuildRankingInit26_next(nullptr);
-        info::CGuildRankingInit26_clbk CGuildRankingInit26_user(nullptr);
-        info::CGuildRankingLoad28_ptr CGuildRankingLoad28_next(nullptr);
-        info::CGuildRankingLoad28_clbk CGuildRankingLoad28_user(nullptr);
-        info::CGuildRankingLoadAllGuildData30_ptr CGuildRankingLoadAllGuildData30_next(nullptr);
-        info::CGuildRankingLoadAllGuildData30_clbk CGuildRankingLoadAllGuildData30_user(nullptr);
-        info::CGuildRankingLoadGuildMoneyIOInfo32_ptr CGuildRankingLoadGuildMoneyIOInfo32_next(nullptr);
-        info::CGuildRankingLoadGuildMoneyIOInfo32_clbk CGuildRankingLoadGuildMoneyIOInfo32_user(nullptr);
-        info::CGuildRankingLoadMemberInfo34_ptr CGuildRankingLoadMemberInfo34_next(nullptr);
-        info::CGuildRankingLoadMemberInfo34_clbk CGuildRankingLoadMemberInfo34_user(nullptr);
-        info::CGuildRankingSetLoadAllGuildInfo36_ptr CGuildRankingSetLoadAllGuildInfo36_next(nullptr);
-        info::CGuildRankingSetLoadAllGuildInfo36_clbk CGuildRankingSetLoadAllGuildInfo36_user(nullptr);
-        info::CGuildRankingSetLogger38_ptr CGuildRankingSetLogger38_next(nullptr);
-        info::CGuildRankingSetLogger38_clbk CGuildRankingSetLogger38_user(nullptr);
-        info::CGuildRankingUpdateAndSelectGuildGrade40_ptr CGuildRankingUpdateAndSelectGuildGrade40_next(nullptr);
-        info::CGuildRankingUpdateAndSelectGuildGrade40_clbk CGuildRankingUpdateAndSelectGuildGrade40_user(nullptr);
-        info::CGuildRankingUpdateGuildRankStep142_ptr CGuildRankingUpdateGuildRankStep142_next(nullptr);
-        info::CGuildRankingUpdateGuildRankStep142_clbk CGuildRankingUpdateGuildRankStep142_user(nullptr);
-        info::CGuildRankingUpdateGuildRankStep244_ptr CGuildRankingUpdateGuildRankStep244_next(nullptr);
-        info::CGuildRankingUpdateGuildRankStep244_clbk CGuildRankingUpdateGuildRankStep244_user(nullptr);
-        info::CGuildRankingUpdateGuildRankStep346_ptr CGuildRankingUpdateGuildRankStep346_next(nullptr);
-        info::CGuildRankingUpdateGuildRankStep346_clbk CGuildRankingUpdateGuildRankStep346_user(nullptr);
-        info::CGuildRankingUpdateGuildRankStep448_ptr CGuildRankingUpdateGuildRankStep448_next(nullptr);
-        info::CGuildRankingUpdateGuildRankStep448_clbk CGuildRankingUpdateGuildRankStep448_user(nullptr);
-        info::CGuildRankingUpdateRankAndGrade50_ptr CGuildRankingUpdateRankAndGrade50_next(nullptr);
-        info::CGuildRankingUpdateRankAndGrade50_clbk CGuildRankingUpdateRankAndGrade50_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep152_ptr CGuildRankingUpdateRankinGuildStep152_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep152_clbk CGuildRankingUpdateRankinGuildStep152_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep254_ptr CGuildRankingUpdateRankinGuildStep254_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep254_clbk CGuildRankingUpdateRankinGuildStep254_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep356_ptr CGuildRankingUpdateRankinGuildStep356_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep356_clbk CGuildRankingUpdateRankinGuildStep356_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep458_ptr CGuildRankingUpdateRankinGuildStep458_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep458_clbk CGuildRankingUpdateRankinGuildStep458_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep560_ptr CGuildRankingUpdateRankinGuildStep560_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep560_clbk CGuildRankingUpdateRankinGuildStep560_user(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep662_ptr CGuildRankingUpdateRankinGuildStep662_next(nullptr);
-        info::CGuildRankingUpdateRankinGuildStep662_clbk CGuildRankingUpdateRankinGuildStep662_user(nullptr);
-        info::CGuildRankingdtor_CGuildRanking64_ptr CGuildRankingdtor_CGuildRanking64_next(nullptr);
-        info::CGuildRankingdtor_CGuildRanking64_clbk CGuildRankingdtor_CGuildRanking64_user(nullptr);
+        static info::CGuildRankingApplyGuildGrade2_ptr CGuildRankingApplyGuildGrade2_next(nullptr);
+        static info::CGuildRankingApplyGuildGrade2_clbk CGuildRankingApplyGuildGrade2_user(nullptr);
+        static info::CGuildRankingApplyRankInGuild4_ptr CGuildRankingApplyRankInGuild4_next(nullptr);
+        static info::CGuildRankingApplyRankInGuild4_clbk CGuildRankingApplyRankInGuild4_user(nullptr);
+        static info::CGuildRankingctor_CGuildRanking6_ptr CGuildRankingctor_CGuildRanking6_next(nullptr);
+        static info::CGuildRankingctor_CGuildRanking6_clbk CGuildRankingctor_CGuildRanking6_user(nullptr);
+        static info::CGuildRankingCheckAndCreateTodayGuildRankTable8_ptr CGuildRankingCheckAndCreateTodayGuildRankTable8_next(nullptr);
+        static info::CGuildRankingCheckAndCreateTodayGuildRankTable8_clbk CGuildRankingCheckAndCreateTodayGuildRankTable8_user(nullptr);
+        static info::CGuildRankingCheckGuildCheckSum10_ptr CGuildRankingCheckGuildCheckSum10_next(nullptr);
+        static info::CGuildRankingCheckGuildCheckSum10_clbk CGuildRankingCheckGuildCheckSum10_user(nullptr);
+        static info::CGuildRankingCheckMaxGuildMoney12_ptr CGuildRankingCheckMaxGuildMoney12_next(nullptr);
+        static info::CGuildRankingCheckMaxGuildMoney12_clbk CGuildRankingCheckMaxGuildMoney12_user(nullptr);
+        static info::CGuildRankingClearApplyRankInGuildJobOffset14_ptr CGuildRankingClearApplyRankInGuildJobOffset14_next(nullptr);
+        static info::CGuildRankingClearApplyRankInGuildJobOffset14_clbk CGuildRankingClearApplyRankInGuildJobOffset14_user(nullptr);
+        static info::CGuildRankingClearGuildGrade16_ptr CGuildRankingClearGuildGrade16_next(nullptr);
+        static info::CGuildRankingClearGuildGrade16_clbk CGuildRankingClearGuildGrade16_user(nullptr);
+        static info::CGuildRankingClearGuildSerial18_ptr CGuildRankingClearGuildSerial18_next(nullptr);
+        static info::CGuildRankingClearGuildSerial18_clbk CGuildRankingClearGuildSerial18_user(nullptr);
+        static info::CGuildRankingClearRefreshData20_ptr CGuildRankingClearRefreshData20_next(nullptr);
+        static info::CGuildRankingClearRefreshData20_clbk CGuildRankingClearRefreshData20_user(nullptr);
+        static info::CGuildRankingGetNextGuildSerial22_ptr CGuildRankingGetNextGuildSerial22_next(nullptr);
+        static info::CGuildRankingGetNextGuildSerial22_clbk CGuildRankingGetNextGuildSerial22_user(nullptr);
+        static info::CGuildRankingGetRankInGuildJobOffset24_ptr CGuildRankingGetRankInGuildJobOffset24_next(nullptr);
+        static info::CGuildRankingGetRankInGuildJobOffset24_clbk CGuildRankingGetRankInGuildJobOffset24_user(nullptr);
+        static info::CGuildRankingInit26_ptr CGuildRankingInit26_next(nullptr);
+        static info::CGuildRankingInit26_clbk CGuildRankingInit26_user(nullptr);
+        static info::CGuildRankingLoad28_ptr CGuildRankingLoad28_next(nullptr);
+        static info::CGuildRankingLoad28_clbk CGuildRankingLoad28_user(nullptr);
+        static info::CGuildRankingLoadAllGuildData30_ptr CGuildRankingLoadAllGuildData30_next(nullptr);
+        static info::CGuildRankingLoadAllGuildData30_clbk CGuildRankingLoadAllGuildData30_user(nullptr);
+        static info::CGuildRankingLoadGuildMoneyIOInfo32_ptr CGuildRankingLoadGuildMoneyIOInfo32_next(nullptr);
+        static info::CGuildRankingLoadGuildMoneyIOInfo32_clbk CGuildRankingLoadGuildMoneyIOInfo32_user(nullptr);
+        static info::CGuildRankingLoadMemberInfo34_ptr CGuildRankingLoadMemberInfo34_next(nullptr);
+        static info::CGuildRankingLoadMemberInfo34_clbk CGuildRankingLoadMemberInfo34_user(nullptr);
+        static info::CGuildRankingSetLoadAllGuildInfo36_ptr CGuildRankingSetLoadAllGuildInfo36_next(nullptr);
+        static info::CGuildRankingSetLoadAllGuildInfo36_clbk CGuildRankingSetLoadAllGuildInfo36_user(nullptr);
+        static info::CGuildRankingSetLogger38_ptr CGuildRankingSetLogger38_next(nullptr);
+        static info::CGuildRankingSetLogger38_clbk CGuildRankingSetLogger38_user(nullptr);
+        static info::CGuildRankingUpdateAndSelectGuildGrade40_ptr CGuildRankingUpdateAndSelectGuildGrade40_next(nullptr);
+        static info::CGuildRankingUpdateAndSelectGuildGrade40_clbk CGuildRankingUpdateAndSelectGuildGrade40_user(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep142_ptr CGuildRankingUpdateGuildRankStep142_next(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep142_clbk CGuildRankingUpdateGuildRankStep142_user(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep244_ptr CGuildRankingUpdateGuildRankStep244_next(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep244_clbk CGuildRankingUpdateGuildRankStep244_user(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep346_ptr CGuildRankingUpdateGuildRankStep346_next(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep346_clbk CGuildRankingUpdateGuildRankStep346_user(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep448_ptr CGuildRankingUpdateGuildRankStep448_next(nullptr);
+        static info::CGuildRankingUpdateGuildRankStep448_clbk CGuildRankingUpdateGuildRankStep448_user(nullptr);
+        static info::CGuildRankingUpdateRankAndGrade50_ptr CGuildRankingUpdateRankAndGrade50_next(nullptr);
+        static info::CGuildRankingUpdateRankAndGrade50_clbk CGuildRankingUpdateRankAndGrade50_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep152_ptr CGuildRankingUpdateRankinGuildStep152_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep152_clbk CGuildRankingUpdateRankinGuildStep152_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep254_ptr CGuildRankingUpdateRankinGuildStep254_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep254_clbk CGuildRankingUpdateRankinGuildStep254_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep356_ptr CGuildRankingUpdateRankinGuildStep356_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep356_clbk CGuildRankingUpdateRankinGuildStep356_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep458_ptr CGuildRankingUpdateRankinGuildStep458_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep458_clbk CGuildRankingUpdateRankinGuildStep458_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep560_ptr CGuildRankingUpdateRankinGuildStep560_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep560_clbk CGuildRankingUpdateRankinGuildStep560_user(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep662_ptr CGuildRankingUpdateRankinGuildStep662_next(nullptr);
+        static info::CGuildRankingUpdateRankinGuildStep662_clbk CGuildRankingUpdateRankinGuildStep662_user(nullptr);
+        static info::CGuildRankingdtor_CGuildRanking64_ptr CGuildRankingdtor_CGuildRanking64_next(nullptr);
+        static info::CGuildRankingdtor_CGuildRanking64_clbk CGuildRankingdtor_CGuildRanking64_user(nullptr);
         
-        void CGuildRankingApplyGuildGrade2_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingApplyGuildGrade2_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingApplyGuildGrade2_user(_this, CGuildRankingApplyGuildGrade2_next);
         };
-        bool CGuildRankingApplyRankInGuild4_wrapper(struct CGuildRanking* _this)
+        static bool CGuildRankingApplyRankInGuild4_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingApplyRankInGuild4_user(_this, CGuildRankingApplyRankInGuild4_next);
         };
-        void CGuildRankingctor_CGuildRanking6_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingctor_CGuildRanking6_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingctor_CGuildRanking6_user(_this, CGuildRankingctor_CGuildRanking6_next);
         };
-        bool CGuildRankingCheckAndCreateTodayGuildRankTable8_wrapper(struct CGuildRanking* _this, char* szDate)
+        static bool CGuildRankingCheckAndCreateTodayGuildRankTable8_wrapper(struct CGuildRanking* _this, char* szDate)
         {
            return CGuildRankingCheckAndCreateTodayGuildRankTable8_user(_this, szDate, CGuildRankingCheckAndCreateTodayGuildRankTable8_next);
         };
-        bool CGuildRankingCheckGuildCheckSum10_wrapper(struct CGuildRanking* _this, unsigned int dwSerial, char* wszGuildName, long double* dDalant, long double* dGold)
+        static bool CGuildRankingCheckGuildCheckSum10_wrapper(struct CGuildRanking* _this, unsigned int dwSerial, char* wszGuildName, long double* dDalant, long double* dGold)
         {
            return CGuildRankingCheckGuildCheckSum10_user(_this, dwSerial, wszGuildName, dDalant, dGold, CGuildRankingCheckGuildCheckSum10_next);
         };
-        void CGuildRankingCheckMaxGuildMoney12_wrapper(struct CGuildRanking* _this, unsigned int dwGuildSerial, char* wszGuildName, long double* pdDalant, long double* pdGold)
+        static void CGuildRankingCheckMaxGuildMoney12_wrapper(struct CGuildRanking* _this, unsigned int dwGuildSerial, char* wszGuildName, long double* pdDalant, long double* pdGold)
         {
            CGuildRankingCheckMaxGuildMoney12_user(_this, dwGuildSerial, wszGuildName, pdDalant, pdGold, CGuildRankingCheckMaxGuildMoney12_next);
         };
-        void CGuildRankingClearApplyRankInGuildJobOffset14_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingClearApplyRankInGuildJobOffset14_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingClearApplyRankInGuildJobOffset14_user(_this, CGuildRankingClearApplyRankInGuildJobOffset14_next);
         };
-        void CGuildRankingClearGuildGrade16_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingClearGuildGrade16_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingClearGuildGrade16_user(_this, CGuildRankingClearGuildGrade16_next);
         };
-        void CGuildRankingClearGuildSerial18_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingClearGuildSerial18_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingClearGuildSerial18_user(_this, CGuildRankingClearGuildSerial18_next);
         };
-        void CGuildRankingClearRefreshData20_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingClearRefreshData20_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingClearRefreshData20_user(_this, CGuildRankingClearRefreshData20_next);
         };
-        unsigned int CGuildRankingGetNextGuildSerial22_wrapper(struct CGuildRanking* _this)
+        static unsigned int CGuildRankingGetNextGuildSerial22_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingGetNextGuildSerial22_user(_this, CGuildRankingGetNextGuildSerial22_next);
         };
-        int CGuildRankingGetRankInGuildJobOffset24_wrapper(struct CGuildRanking* _this)
+        static int CGuildRankingGetRankInGuildJobOffset24_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingGetRankInGuildJobOffset24_user(_this, CGuildRankingGetRankInGuildJobOffset24_next);
         };
-        bool CGuildRankingInit26_wrapper(struct CGuildRanking* _this)
+        static bool CGuildRankingInit26_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingInit26_user(_this, CGuildRankingInit26_next);
         };
-        bool CGuildRankingLoad28_wrapper(struct CGuildRanking* _this)
+        static bool CGuildRankingLoad28_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingLoad28_user(_this, CGuildRankingLoad28_next);
         };
-        bool CGuildRankingLoadAllGuildData30_wrapper(struct CGuildRanking* _this, struct _worlddb_guild_info* pkInfo)
+        static bool CGuildRankingLoadAllGuildData30_wrapper(struct CGuildRanking* _this, struct _worlddb_guild_info* pkInfo)
         {
            return CGuildRankingLoadAllGuildData30_user(_this, pkInfo, CGuildRankingLoadAllGuildData30_next);
         };
-        bool CGuildRankingLoadGuildMoneyIOInfo32_wrapper(struct CGuildRanking* _this, unsigned int dwGuildSerial, struct _io_money_data* pkIOInfo, int* pnIOMonHisNum)
+        static bool CGuildRankingLoadGuildMoneyIOInfo32_wrapper(struct CGuildRanking* _this, unsigned int dwGuildSerial, struct _io_money_data* pkIOInfo, int* pnIOMonHisNum)
         {
            return CGuildRankingLoadGuildMoneyIOInfo32_user(_this, dwGuildSerial, pkIOInfo, pnIOMonHisNum, CGuildRankingLoadGuildMoneyIOInfo32_next);
         };
-        bool CGuildRankingLoadMemberInfo34_wrapper(struct CGuildRanking* _this, unsigned int dwMasterSerial, unsigned int dwGuildSerial, struct _guild_member_info* pkMemberInfo, uint16_t* pwMemberCnt)
+        static bool CGuildRankingLoadMemberInfo34_wrapper(struct CGuildRanking* _this, unsigned int dwMasterSerial, unsigned int dwGuildSerial, struct _guild_member_info* pkMemberInfo, uint16_t* pwMemberCnt)
         {
            return CGuildRankingLoadMemberInfo34_user(_this, dwMasterSerial, dwGuildSerial, pkMemberInfo, pwMemberCnt, CGuildRankingLoadMemberInfo34_next);
         };
-        bool CGuildRankingSetLoadAllGuildInfo36_wrapper(struct CGuildRanking* _this, struct _worlddb_guild_info* pkInfo)
+        static bool CGuildRankingSetLoadAllGuildInfo36_wrapper(struct CGuildRanking* _this, struct _worlddb_guild_info* pkInfo)
         {
            return CGuildRankingSetLoadAllGuildInfo36_user(_this, pkInfo, CGuildRankingSetLoadAllGuildInfo36_next);
         };
-        void CGuildRankingSetLogger38_wrapper(struct CGuildRanking* _this, struct CLogFile* pkLogger)
+        static void CGuildRankingSetLogger38_wrapper(struct CGuildRanking* _this, struct CLogFile* pkLogger)
         {
            CGuildRankingSetLogger38_user(_this, pkLogger, CGuildRankingSetLogger38_next);
         };
-        char CGuildRankingUpdateAndSelectGuildGrade40_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateAndSelectGuildGrade40_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateAndSelectGuildGrade40_user(_this, szData, CGuildRankingUpdateAndSelectGuildGrade40_next);
         };
-        char CGuildRankingUpdateGuildRankStep142_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateGuildRankStep142_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateGuildRankStep142_user(_this, szData, CGuildRankingUpdateGuildRankStep142_next);
         };
-        char CGuildRankingUpdateGuildRankStep244_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateGuildRankStep244_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateGuildRankStep244_user(_this, szData, CGuildRankingUpdateGuildRankStep244_next);
         };
-        char CGuildRankingUpdateGuildRankStep346_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateGuildRankStep346_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateGuildRankStep346_user(_this, szData, CGuildRankingUpdateGuildRankStep346_next);
         };
-        char CGuildRankingUpdateGuildRankStep448_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateGuildRankStep448_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateGuildRankStep448_user(_this, szData, CGuildRankingUpdateGuildRankStep448_next);
         };
-        bool CGuildRankingUpdateRankAndGrade50_wrapper(struct CGuildRanking* _this)
+        static bool CGuildRankingUpdateRankAndGrade50_wrapper(struct CGuildRanking* _this)
         {
            return CGuildRankingUpdateRankAndGrade50_user(_this, CGuildRankingUpdateRankAndGrade50_next);
         };
-        char CGuildRankingUpdateRankinGuildStep152_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep152_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep152_user(_this, szData, CGuildRankingUpdateRankinGuildStep152_next);
         };
-        char CGuildRankingUpdateRankinGuildStep254_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep254_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep254_user(_this, szData, CGuildRankingUpdateRankinGuildStep254_next);
         };
-        char CGuildRankingUpdateRankinGuildStep356_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep356_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep356_user(_this, szData, CGuildRankingUpdateRankinGuildStep356_next);
         };
-        char CGuildRankingUpdateRankinGuildStep458_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep458_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep458_user(_this, szData, CGuildRankingUpdateRankinGuildStep458_next);
         };
-        char CGuildRankingUpdateRankinGuildStep560_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep560_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep560_user(_this, szData, CGuildRankingUpdateRankinGuildStep560_next);
         };
-        char CGuildRankingUpdateRankinGuildStep662_wrapper(struct CGuildRanking* _this, char* szData)
+        static char CGuildRankingUpdateRankinGuildStep662_wrapper(struct CGuildRanking* _this, char* szData)
         {
            return CGuildRankingUpdateRankinGuildStep662_user(_this, szData, CGuildRankingUpdateRankinGuildStep662_next);
         };
-        void CGuildRankingdtor_CGuildRanking64_wrapper(struct CGuildRanking* _this)
+        static void CGuildRankingdtor_CGuildRanking64_wrapper(struct CGuildRanking* _this)
         {
            CGuildRankingdtor_CGuildRanking64_user(_this, CGuildRankingdtor_CGuildRanking64_next);
         };
         
-        hook_record CGuildRanking_functions[] = {
+        static hook_record CGuildRanking_functions[] = {
         {   (LPVOID)0x140339500L,
             (LPVOID *)&CGuildRankingApplyGuildGrade2_user,
             (LPVOID *)&CGuildRankingApplyGuildGrade2_next,
@@ -366,5 +366,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

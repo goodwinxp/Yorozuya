@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_cum_download_result_zoclctor__cum_download_result_zocl2_ptr _cum_download_result_zoclctor__cum_download_result_zocl2_next(nullptr);
-        info::_cum_download_result_zoclctor__cum_download_result_zocl2_clbk _cum_download_result_zoclctor__cum_download_result_zocl2_user(nullptr);
-        info::_cum_download_result_zoclsize4_ptr _cum_download_result_zoclsize4_next(nullptr);
-        info::_cum_download_result_zoclsize4_clbk _cum_download_result_zoclsize4_user(nullptr);
+        static info::_cum_download_result_zoclctor__cum_download_result_zocl2_ptr _cum_download_result_zoclctor__cum_download_result_zocl2_next(nullptr);
+        static info::_cum_download_result_zoclctor__cum_download_result_zocl2_clbk _cum_download_result_zoclctor__cum_download_result_zocl2_user(nullptr);
+        static info::_cum_download_result_zoclsize4_ptr _cum_download_result_zoclsize4_next(nullptr);
+        static info::_cum_download_result_zoclsize4_clbk _cum_download_result_zoclsize4_user(nullptr);
         
-        void _cum_download_result_zoclctor__cum_download_result_zocl2_wrapper(struct _cum_download_result_zocl* _this)
+        static void _cum_download_result_zoclctor__cum_download_result_zocl2_wrapper(struct _cum_download_result_zocl* _this)
         {
            _cum_download_result_zoclctor__cum_download_result_zocl2_user(_this, _cum_download_result_zoclctor__cum_download_result_zocl2_next);
         };
-        int _cum_download_result_zoclsize4_wrapper(struct _cum_download_result_zocl* _this)
+        static int _cum_download_result_zoclsize4_wrapper(struct _cum_download_result_zocl* _this)
         {
            return _cum_download_result_zoclsize4_user(_this, _cum_download_result_zoclsize4_next);
         };
         
-        hook_record _cum_download_result_zocl_functions[] = {
+        static hook_record _cum_download_result_zocl_functions[] = {
         {   (LPVOID)0x1400ef420L,
             (LPVOID *)&_cum_download_result_zoclctor__cum_download_result_zocl2_user,
             (LPVOID *)&_cum_download_result_zoclctor__cum_download_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

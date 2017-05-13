@@ -10,45 +10,45 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CTempBufferAllocate2_ptr ATL__CTempBufferAllocate2_next(nullptr);
-            info::ATL__CTempBufferAllocate2_clbk ATL__CTempBufferAllocate2_user(nullptr);
-            info::ATL__CTempBufferAllocateBytes4_ptr ATL__CTempBufferAllocateBytes4_next(nullptr);
-            info::ATL__CTempBufferAllocateBytes4_clbk ATL__CTempBufferAllocateBytes4_user(nullptr);
-            info::ATL__CTempBufferAllocateHeap6_ptr ATL__CTempBufferAllocateHeap6_next(nullptr);
-            info::ATL__CTempBufferAllocateHeap6_clbk ATL__CTempBufferAllocateHeap6_user(nullptr);
-            info::ATL__CTempBufferctor_CTempBuffer8_ptr ATL__CTempBufferctor_CTempBuffer8_next(nullptr);
-            info::ATL__CTempBufferctor_CTempBuffer8_clbk ATL__CTempBufferctor_CTempBuffer8_user(nullptr);
-            info::ATL__CTempBufferFreeHeap10_ptr ATL__CTempBufferFreeHeap10_next(nullptr);
-            info::ATL__CTempBufferFreeHeap10_clbk ATL__CTempBufferFreeHeap10_user(nullptr);
-            info::ATL__CTempBufferdtor_CTempBuffer14_ptr ATL__CTempBufferdtor_CTempBuffer14_next(nullptr);
-            info::ATL__CTempBufferdtor_CTempBuffer14_clbk ATL__CTempBufferdtor_CTempBuffer14_user(nullptr);
+            static info::ATL__CTempBufferAllocate2_ptr ATL__CTempBufferAllocate2_next(nullptr);
+            static info::ATL__CTempBufferAllocate2_clbk ATL__CTempBufferAllocate2_user(nullptr);
+            static info::ATL__CTempBufferAllocateBytes4_ptr ATL__CTempBufferAllocateBytes4_next(nullptr);
+            static info::ATL__CTempBufferAllocateBytes4_clbk ATL__CTempBufferAllocateBytes4_user(nullptr);
+            static info::ATL__CTempBufferAllocateHeap6_ptr ATL__CTempBufferAllocateHeap6_next(nullptr);
+            static info::ATL__CTempBufferAllocateHeap6_clbk ATL__CTempBufferAllocateHeap6_user(nullptr);
+            static info::ATL__CTempBufferctor_CTempBuffer8_ptr ATL__CTempBufferctor_CTempBuffer8_next(nullptr);
+            static info::ATL__CTempBufferctor_CTempBuffer8_clbk ATL__CTempBufferctor_CTempBuffer8_user(nullptr);
+            static info::ATL__CTempBufferFreeHeap10_ptr ATL__CTempBufferFreeHeap10_next(nullptr);
+            static info::ATL__CTempBufferFreeHeap10_clbk ATL__CTempBufferFreeHeap10_user(nullptr);
+            static info::ATL__CTempBufferdtor_CTempBuffer14_ptr ATL__CTempBufferdtor_CTempBuffer14_next(nullptr);
+            static info::ATL__CTempBufferdtor_CTempBuffer14_clbk ATL__CTempBufferdtor_CTempBuffer14_user(nullptr);
             
-            char* ATL__CTempBufferAllocate2_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nElements)
+            static char* ATL__CTempBufferAllocate2_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nElements)
             {
                return ATL__CTempBufferAllocate2_user(_this, nElements);
             };
-            char* ATL__CTempBufferAllocateBytes4_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nBytes)
+            static char* ATL__CTempBufferAllocateBytes4_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nBytes)
             {
                return ATL__CTempBufferAllocateBytes4_user(_this, nBytes);
             };
-            void ATL__CTempBufferAllocateHeap6_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nBytes)
+            static void ATL__CTempBufferAllocateHeap6_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this, uint64_t nBytes)
             {
                ATL__CTempBufferAllocateHeap6_user(_this, nBytes);
             };
-            void ATL__CTempBufferctor_CTempBuffer8_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
+            static void ATL__CTempBufferctor_CTempBuffer8_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
             {
                ATL__CTempBufferctor_CTempBuffer8_user(_this);
             };
-            void ATL__CTempBufferFreeHeap10_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
+            static void ATL__CTempBufferFreeHeap10_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
             {
                ATL__CTempBufferFreeHeap10_user(_this);
             };
-            void ATL__CTempBufferdtor_CTempBuffer14_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
+            static void ATL__CTempBufferdtor_CTempBuffer14_wrapper(struct ATL::CTempBuffer<char,128,ATL::CCRTAllocator>* _this)
             {
                ATL__CTempBufferdtor_CTempBuffer14_user(_this);
             };
             
-            hook_record ATL::CTempBuffer<char,128,ATL::CCRTAllocator>_functions[] = {
+            static hook_record ATL::CTempBuffer<char,128,ATL::CCRTAllocator>_functions[] = {
             {   (LPVOID)0x140026e90L,
                 (LPVOID *)&ATL__CTempBufferAllocate2_user,
                 (LPVOID *)&ATL__CTempBufferAllocate2_next,
@@ -82,6 +82,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

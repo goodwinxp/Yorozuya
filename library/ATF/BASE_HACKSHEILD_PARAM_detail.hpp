@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_ptr BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_next(nullptr);
-        info::BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_clbk BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_user(nullptr);
+        static info::BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_ptr BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_next(nullptr);
+        static info::BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_clbk BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_user(nullptr);
         
-        void BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_wrapper(struct BASE_HACKSHEILD_PARAM* _this)
+        static void BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_wrapper(struct BASE_HACKSHEILD_PARAM* _this)
         {
            BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_user(_this, BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_next);
         };
         
-        hook_record BASE_HACKSHEILD_PARAM_functions[] = {
+        static hook_record BASE_HACKSHEILD_PARAM_functions[] = {
         {   (LPVOID)0x140417930L,
             (LPVOID *)&BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_user,
             (LPVOID *)&BASE_HACKSHEILD_PARAMctor_BASE_HACKSHEILD_PARAM2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataCNctor_CNationSettingDataCN2_ptr CNationSettingDataCNctor_CNationSettingDataCN2_next(nullptr);
-        info::CNationSettingDataCNctor_CNationSettingDataCN2_clbk CNationSettingDataCNctor_CNationSettingDataCN2_user(nullptr);
-        info::CNationSettingDataCNCreateBilling4_ptr CNationSettingDataCNCreateBilling4_next(nullptr);
-        info::CNationSettingDataCNCreateBilling4_clbk CNationSettingDataCNCreateBilling4_user(nullptr);
-        info::CNationSettingDataCNCreateComplete6_ptr CNationSettingDataCNCreateComplete6_next(nullptr);
-        info::CNationSettingDataCNCreateComplete6_clbk CNationSettingDataCNCreateComplete6_user(nullptr);
-        info::CNationSettingDataCNCreateWorker8_ptr CNationSettingDataCNCreateWorker8_next(nullptr);
-        info::CNationSettingDataCNCreateWorker8_clbk CNationSettingDataCNCreateWorker8_user(nullptr);
-        info::CNationSettingDataCNGetCashItemPrice10_ptr CNationSettingDataCNGetCashItemPrice10_next(nullptr);
-        info::CNationSettingDataCNGetCashItemPrice10_clbk CNationSettingDataCNGetCashItemPrice10_user(nullptr);
-        info::CNationSettingDataCNGetItemName12_ptr CNationSettingDataCNGetItemName12_next(nullptr);
-        info::CNationSettingDataCNGetItemName12_clbk CNationSettingDataCNGetItemName12_user(nullptr);
-        info::CNationSettingDataCNInit14_ptr CNationSettingDataCNInit14_next(nullptr);
-        info::CNationSettingDataCNInit14_clbk CNationSettingDataCNInit14_user(nullptr);
-        info::CNationSettingDataCNLoop16_ptr CNationSettingDataCNLoop16_next(nullptr);
-        info::CNationSettingDataCNLoop16_clbk CNationSettingDataCNLoop16_user(nullptr);
-        info::CNationSettingDataCNNetClose18_ptr CNationSettingDataCNNetClose18_next(nullptr);
-        info::CNationSettingDataCNNetClose18_clbk CNationSettingDataCNNetClose18_user(nullptr);
-        info::CNationSettingDataCNReadSystemPass20_ptr CNationSettingDataCNReadSystemPass20_next(nullptr);
-        info::CNationSettingDataCNReadSystemPass20_clbk CNationSettingDataCNReadSystemPass20_user(nullptr);
+        static info::CNationSettingDataCNctor_CNationSettingDataCN2_ptr CNationSettingDataCNctor_CNationSettingDataCN2_next(nullptr);
+        static info::CNationSettingDataCNctor_CNationSettingDataCN2_clbk CNationSettingDataCNctor_CNationSettingDataCN2_user(nullptr);
+        static info::CNationSettingDataCNCreateBilling4_ptr CNationSettingDataCNCreateBilling4_next(nullptr);
+        static info::CNationSettingDataCNCreateBilling4_clbk CNationSettingDataCNCreateBilling4_user(nullptr);
+        static info::CNationSettingDataCNCreateComplete6_ptr CNationSettingDataCNCreateComplete6_next(nullptr);
+        static info::CNationSettingDataCNCreateComplete6_clbk CNationSettingDataCNCreateComplete6_user(nullptr);
+        static info::CNationSettingDataCNCreateWorker8_ptr CNationSettingDataCNCreateWorker8_next(nullptr);
+        static info::CNationSettingDataCNCreateWorker8_clbk CNationSettingDataCNCreateWorker8_user(nullptr);
+        static info::CNationSettingDataCNGetCashItemPrice10_ptr CNationSettingDataCNGetCashItemPrice10_next(nullptr);
+        static info::CNationSettingDataCNGetCashItemPrice10_clbk CNationSettingDataCNGetCashItemPrice10_user(nullptr);
+        static info::CNationSettingDataCNGetItemName12_ptr CNationSettingDataCNGetItemName12_next(nullptr);
+        static info::CNationSettingDataCNGetItemName12_clbk CNationSettingDataCNGetItemName12_user(nullptr);
+        static info::CNationSettingDataCNInit14_ptr CNationSettingDataCNInit14_next(nullptr);
+        static info::CNationSettingDataCNInit14_clbk CNationSettingDataCNInit14_user(nullptr);
+        static info::CNationSettingDataCNLoop16_ptr CNationSettingDataCNLoop16_next(nullptr);
+        static info::CNationSettingDataCNLoop16_clbk CNationSettingDataCNLoop16_user(nullptr);
+        static info::CNationSettingDataCNNetClose18_ptr CNationSettingDataCNNetClose18_next(nullptr);
+        static info::CNationSettingDataCNNetClose18_clbk CNationSettingDataCNNetClose18_user(nullptr);
+        static info::CNationSettingDataCNReadSystemPass20_ptr CNationSettingDataCNReadSystemPass20_next(nullptr);
+        static info::CNationSettingDataCNReadSystemPass20_clbk CNationSettingDataCNReadSystemPass20_user(nullptr);
         
-        void CNationSettingDataCNctor_CNationSettingDataCN2_wrapper(struct CNationSettingDataCN* _this)
+        static void CNationSettingDataCNctor_CNationSettingDataCN2_wrapper(struct CNationSettingDataCN* _this)
         {
            CNationSettingDataCNctor_CNationSettingDataCN2_user(_this, CNationSettingDataCNctor_CNationSettingDataCN2_next);
         };
-        struct CBilling* CNationSettingDataCNCreateBilling4_wrapper(struct CNationSettingDataCN* _this)
+        static struct CBilling* CNationSettingDataCNCreateBilling4_wrapper(struct CNationSettingDataCN* _this)
         {
            return CNationSettingDataCNCreateBilling4_user(_this, CNationSettingDataCNCreateBilling4_next);
         };
-        void CNationSettingDataCNCreateComplete6_wrapper(struct CNationSettingDataCN* _this, struct CPlayer* pOne)
+        static void CNationSettingDataCNCreateComplete6_wrapper(struct CNationSettingDataCN* _this, struct CPlayer* pOne)
         {
            CNationSettingDataCNCreateComplete6_user(_this, pOne, CNationSettingDataCNCreateComplete6_next);
         };
-        struct CashDbWorker* CNationSettingDataCNCreateWorker8_wrapper(struct CNationSettingDataCN* _this)
+        static struct CashDbWorker* CNationSettingDataCNCreateWorker8_wrapper(struct CNationSettingDataCN* _this)
         {
            return CNationSettingDataCNCreateWorker8_user(_this, CNationSettingDataCNCreateWorker8_next);
         };
-        int CNationSettingDataCNGetCashItemPrice10_wrapper(struct CNationSettingDataCN* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataCNGetCashItemPrice10_wrapper(struct CNationSettingDataCN* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataCNGetCashItemPrice10_user(_this, pFld, CNationSettingDataCNGetCashItemPrice10_next);
         };
-        char* CNationSettingDataCNGetItemName12_wrapper(struct CNationSettingDataCN* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataCNGetItemName12_wrapper(struct CNationSettingDataCN* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataCNGetItemName12_user(_this, pFld, CNationSettingDataCNGetItemName12_next);
         };
-        int CNationSettingDataCNInit14_wrapper(struct CNationSettingDataCN* _this)
+        static int CNationSettingDataCNInit14_wrapper(struct CNationSettingDataCN* _this)
         {
            return CNationSettingDataCNInit14_user(_this, CNationSettingDataCNInit14_next);
         };
-        void CNationSettingDataCNLoop16_wrapper(struct CNationSettingDataCN* _this)
+        static void CNationSettingDataCNLoop16_wrapper(struct CNationSettingDataCN* _this)
         {
            CNationSettingDataCNLoop16_user(_this, CNationSettingDataCNLoop16_next);
         };
-        void CNationSettingDataCNNetClose18_wrapper(struct CNationSettingDataCN* _this, struct CPlayer* pOne)
+        static void CNationSettingDataCNNetClose18_wrapper(struct CNationSettingDataCN* _this, struct CPlayer* pOne)
         {
            CNationSettingDataCNNetClose18_user(_this, pOne, CNationSettingDataCNNetClose18_next);
         };
-        bool CNationSettingDataCNReadSystemPass20_wrapper(struct CNationSettingDataCN* _this)
+        static bool CNationSettingDataCNReadSystemPass20_wrapper(struct CNationSettingDataCN* _this)
         {
            return CNationSettingDataCNReadSystemPass20_user(_this, CNationSettingDataCNReadSystemPass20_next);
         };
         
-        hook_record CNationSettingDataCN_functions[] = {
+        static hook_record CNationSettingDataCN_functions[] = {
         {   (LPVOID)0x140230fc0L,
             (LPVOID *)&CNationSettingDataCNctor_CNationSettingDataCN2_user,
             (LPVOID *)&CNationSettingDataCNctor_CNationSettingDataCN2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

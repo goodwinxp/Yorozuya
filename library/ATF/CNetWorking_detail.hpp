@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetWorkingAcceptClientCheck2_ptr CNetWorkingAcceptClientCheck2_next(nullptr);
-        info::CNetWorkingAcceptClientCheck2_clbk CNetWorkingAcceptClientCheck2_user(nullptr);
-        info::CNetWorkingAnsyncConnectComplete4_ptr CNetWorkingAnsyncConnectComplete4_next(nullptr);
-        info::CNetWorkingAnsyncConnectComplete4_clbk CNetWorkingAnsyncConnectComplete4_user(nullptr);
-        info::CNetWorkingctor_CNetWorking6_ptr CNetWorkingctor_CNetWorking6_next(nullptr);
-        info::CNetWorkingctor_CNetWorking6_clbk CNetWorkingctor_CNetWorking6_user(nullptr);
-        info::CNetWorkingCloseClientCheck8_ptr CNetWorkingCloseClientCheck8_next(nullptr);
-        info::CNetWorkingCloseClientCheck8_clbk CNetWorkingCloseClientCheck8_user(nullptr);
-        info::CNetWorkingCloseSocket10_ptr CNetWorkingCloseSocket10_next(nullptr);
-        info::CNetWorkingCloseSocket10_clbk CNetWorkingCloseSocket10_user(nullptr);
-        info::CNetWorkingConnect12_ptr CNetWorkingConnect12_next(nullptr);
-        info::CNetWorkingConnect12_clbk CNetWorkingConnect12_user(nullptr);
-        info::CNetWorkingDataAnalysis14_ptr CNetWorkingDataAnalysis14_next(nullptr);
-        info::CNetWorkingDataAnalysis14_clbk CNetWorkingDataAnalysis14_user(nullptr);
-        info::CNetWorkingExpulsionSocket16_ptr CNetWorkingExpulsionSocket16_next(nullptr);
-        info::CNetWorkingExpulsionSocket16_clbk CNetWorkingExpulsionSocket16_user(nullptr);
-        info::CNetWorkingGetCheckRecvTime18_ptr CNetWorkingGetCheckRecvTime18_next(nullptr);
-        info::CNetWorkingGetCheckRecvTime18_clbk CNetWorkingGetCheckRecvTime18_user(nullptr);
-        info::CNetWorkingGetSocket20_ptr CNetWorkingGetSocket20_next(nullptr);
-        info::CNetWorkingGetSocket20_clbk CNetWorkingGetSocket20_user(nullptr);
-        info::CNetWorkingOnLoop22_ptr CNetWorkingOnLoop22_next(nullptr);
-        info::CNetWorkingOnLoop22_clbk CNetWorkingOnLoop22_user(nullptr);
-        info::CNetWorkingOnLoop_Receipt24_ptr CNetWorkingOnLoop_Receipt24_next(nullptr);
-        info::CNetWorkingOnLoop_Receipt24_clbk CNetWorkingOnLoop_Receipt24_user(nullptr);
-        info::CNetWorkingProcessLogFile26_ptr CNetWorkingProcessLogFile26_next(nullptr);
-        info::CNetWorkingProcessLogFile26_clbk CNetWorkingProcessLogFile26_user(nullptr);
-        info::CNetWorkingRelease28_ptr CNetWorkingRelease28_next(nullptr);
-        info::CNetWorkingRelease28_clbk CNetWorkingRelease28_user(nullptr);
-        info::CNetWorkingSetNetSystem30_ptr CNetWorkingSetNetSystem30_next(nullptr);
-        info::CNetWorkingSetNetSystem30_clbk CNetWorkingSetNetSystem30_user(nullptr);
-        info::CNetWorkingUserLoop32_ptr CNetWorkingUserLoop32_next(nullptr);
-        info::CNetWorkingUserLoop32_clbk CNetWorkingUserLoop32_user(nullptr);
-        info::CNetWorkingdtor_CNetWorking37_ptr CNetWorkingdtor_CNetWorking37_next(nullptr);
-        info::CNetWorkingdtor_CNetWorking37_clbk CNetWorkingdtor_CNetWorking37_user(nullptr);
+        static info::CNetWorkingAcceptClientCheck2_ptr CNetWorkingAcceptClientCheck2_next(nullptr);
+        static info::CNetWorkingAcceptClientCheck2_clbk CNetWorkingAcceptClientCheck2_user(nullptr);
+        static info::CNetWorkingAnsyncConnectComplete4_ptr CNetWorkingAnsyncConnectComplete4_next(nullptr);
+        static info::CNetWorkingAnsyncConnectComplete4_clbk CNetWorkingAnsyncConnectComplete4_user(nullptr);
+        static info::CNetWorkingctor_CNetWorking6_ptr CNetWorkingctor_CNetWorking6_next(nullptr);
+        static info::CNetWorkingctor_CNetWorking6_clbk CNetWorkingctor_CNetWorking6_user(nullptr);
+        static info::CNetWorkingCloseClientCheck8_ptr CNetWorkingCloseClientCheck8_next(nullptr);
+        static info::CNetWorkingCloseClientCheck8_clbk CNetWorkingCloseClientCheck8_user(nullptr);
+        static info::CNetWorkingCloseSocket10_ptr CNetWorkingCloseSocket10_next(nullptr);
+        static info::CNetWorkingCloseSocket10_clbk CNetWorkingCloseSocket10_user(nullptr);
+        static info::CNetWorkingConnect12_ptr CNetWorkingConnect12_next(nullptr);
+        static info::CNetWorkingConnect12_clbk CNetWorkingConnect12_user(nullptr);
+        static info::CNetWorkingDataAnalysis14_ptr CNetWorkingDataAnalysis14_next(nullptr);
+        static info::CNetWorkingDataAnalysis14_clbk CNetWorkingDataAnalysis14_user(nullptr);
+        static info::CNetWorkingExpulsionSocket16_ptr CNetWorkingExpulsionSocket16_next(nullptr);
+        static info::CNetWorkingExpulsionSocket16_clbk CNetWorkingExpulsionSocket16_user(nullptr);
+        static info::CNetWorkingGetCheckRecvTime18_ptr CNetWorkingGetCheckRecvTime18_next(nullptr);
+        static info::CNetWorkingGetCheckRecvTime18_clbk CNetWorkingGetCheckRecvTime18_user(nullptr);
+        static info::CNetWorkingGetSocket20_ptr CNetWorkingGetSocket20_next(nullptr);
+        static info::CNetWorkingGetSocket20_clbk CNetWorkingGetSocket20_user(nullptr);
+        static info::CNetWorkingOnLoop22_ptr CNetWorkingOnLoop22_next(nullptr);
+        static info::CNetWorkingOnLoop22_clbk CNetWorkingOnLoop22_user(nullptr);
+        static info::CNetWorkingOnLoop_Receipt24_ptr CNetWorkingOnLoop_Receipt24_next(nullptr);
+        static info::CNetWorkingOnLoop_Receipt24_clbk CNetWorkingOnLoop_Receipt24_user(nullptr);
+        static info::CNetWorkingProcessLogFile26_ptr CNetWorkingProcessLogFile26_next(nullptr);
+        static info::CNetWorkingProcessLogFile26_clbk CNetWorkingProcessLogFile26_user(nullptr);
+        static info::CNetWorkingRelease28_ptr CNetWorkingRelease28_next(nullptr);
+        static info::CNetWorkingRelease28_clbk CNetWorkingRelease28_user(nullptr);
+        static info::CNetWorkingSetNetSystem30_ptr CNetWorkingSetNetSystem30_next(nullptr);
+        static info::CNetWorkingSetNetSystem30_clbk CNetWorkingSetNetSystem30_user(nullptr);
+        static info::CNetWorkingUserLoop32_ptr CNetWorkingUserLoop32_next(nullptr);
+        static info::CNetWorkingUserLoop32_clbk CNetWorkingUserLoop32_user(nullptr);
+        static info::CNetWorkingdtor_CNetWorking37_ptr CNetWorkingdtor_CNetWorking37_next(nullptr);
+        static info::CNetWorkingdtor_CNetWorking37_clbk CNetWorkingdtor_CNetWorking37_user(nullptr);
         
-        void CNetWorkingAcceptClientCheck2_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CNetWorkingAcceptClientCheck2_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CNetWorkingAcceptClientCheck2_user(_this, dwProID, dwIndex, dwSerial, CNetWorkingAcceptClientCheck2_next);
         };
-        void CNetWorkingAnsyncConnectComplete4_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, int nResult)
+        static void CNetWorkingAnsyncConnectComplete4_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, int nResult)
         {
            CNetWorkingAnsyncConnectComplete4_user(_this, dwProID, dwIndex, nResult, CNetWorkingAnsyncConnectComplete4_next);
         };
-        void CNetWorkingctor_CNetWorking6_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingctor_CNetWorking6_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingctor_CNetWorking6_user(_this, CNetWorkingctor_CNetWorking6_next);
         };
-        void CNetWorkingCloseClientCheck8_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CNetWorkingCloseClientCheck8_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CNetWorkingCloseClientCheck8_user(_this, dwProID, dwIndex, dwSerial, CNetWorkingCloseClientCheck8_next);
         };
-        void CNetWorkingCloseSocket10_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex, bool bSlowClose)
+        static void CNetWorkingCloseSocket10_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex, bool bSlowClose)
         {
            CNetWorkingCloseSocket10_user(_this, dwProID, dwSocketIndex, bSlowClose, CNetWorkingCloseSocket10_next);
         };
-        int CNetWorkingConnect12_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex, unsigned int dwIP, uint16_t wPort)
+        static int CNetWorkingConnect12_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex, unsigned int dwIP, uint16_t wPort)
         {
            return CNetWorkingConnect12_user(_this, dwProID, dwSocketIndex, dwIP, wPort, CNetWorkingConnect12_next);
         };
-        bool CNetWorkingDataAnalysis14_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetWorkingDataAnalysis14_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetWorkingDataAnalysis14_user(_this, dwProID, dwClientIndex, pMsgHeader, pMsg, CNetWorkingDataAnalysis14_next);
         };
-        bool CNetWorkingExpulsionSocket16_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, char byReason, void* pvInfo)
+        static bool CNetWorkingExpulsionSocket16_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwIndex, char byReason, void* pvInfo)
         {
            return CNetWorkingExpulsionSocket16_user(_this, dwProID, dwIndex, byReason, pvInfo, CNetWorkingExpulsionSocket16_next);
         };
-        unsigned int CNetWorkingGetCheckRecvTime18_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex)
+        static unsigned int CNetWorkingGetCheckRecvTime18_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex)
         {
            return CNetWorkingGetCheckRecvTime18_user(_this, dwProID, dwSocketIndex, CNetWorkingGetCheckRecvTime18_next);
         };
-        struct _socket* CNetWorkingGetSocket20_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex)
+        static struct _socket* CNetWorkingGetSocket20_wrapper(struct CNetWorking* _this, unsigned int dwProID, unsigned int dwSocketIndex)
         {
            return CNetWorkingGetSocket20_user(_this, dwProID, dwSocketIndex, CNetWorkingGetSocket20_next);
         };
-        void CNetWorkingOnLoop22_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingOnLoop22_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingOnLoop22_user(_this, CNetWorkingOnLoop22_next);
         };
-        void CNetWorkingOnLoop_Receipt24_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingOnLoop_Receipt24_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingOnLoop_Receipt24_user(_this, CNetWorkingOnLoop_Receipt24_next);
         };
-        void CNetWorkingProcessLogFile26_wrapper(struct CNetWorking* _this, unsigned int dwProID, bool bRecv, bool bSend, bool bSystem)
+        static void CNetWorkingProcessLogFile26_wrapper(struct CNetWorking* _this, unsigned int dwProID, bool bRecv, bool bSend, bool bSystem)
         {
            CNetWorkingProcessLogFile26_user(_this, dwProID, bRecv, bSend, bSystem, CNetWorkingProcessLogFile26_next);
         };
-        void CNetWorkingRelease28_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingRelease28_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingRelease28_user(_this, CNetWorkingRelease28_next);
         };
-        bool CNetWorkingSetNetSystem30_wrapper(struct CNetWorking* _this, unsigned int dwUseProcessNum, struct _NET_TYPE_PARAM* pType, char* szSystemName, char* pszLogPath)
+        static bool CNetWorkingSetNetSystem30_wrapper(struct CNetWorking* _this, unsigned int dwUseProcessNum, struct _NET_TYPE_PARAM* pType, char* szSystemName, char* pszLogPath)
         {
            return CNetWorkingSetNetSystem30_user(_this, dwUseProcessNum, pType, szSystemName, pszLogPath, CNetWorkingSetNetSystem30_next);
         };
-        void CNetWorkingUserLoop32_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingUserLoop32_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingUserLoop32_user(_this, CNetWorkingUserLoop32_next);
         };
-        void CNetWorkingdtor_CNetWorking37_wrapper(struct CNetWorking* _this)
+        static void CNetWorkingdtor_CNetWorking37_wrapper(struct CNetWorking* _this)
         {
            CNetWorkingdtor_CNetWorking37_user(_this, CNetWorkingdtor_CNetWorking37_next);
         };
         
-        hook_record CNetWorking_functions[] = {
+        static hook_record CNetWorking_functions[] = {
         {   (LPVOID)0x140482160L,
             (LPVOID *)&CNetWorkingAcceptClientCheck2_user,
             (LPVOID *)&CNetWorkingAcceptClientCheck2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

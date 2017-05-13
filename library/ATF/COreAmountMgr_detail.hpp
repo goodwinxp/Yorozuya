@@ -8,165 +8,165 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::COreAmountMgrctor_COreAmountMgr2_ptr COreAmountMgrctor_COreAmountMgr2_next(nullptr);
-        info::COreAmountMgrctor_COreAmountMgr2_clbk COreAmountMgrctor_COreAmountMgr2_user(nullptr);
-        info::COreAmountMgrCheatOreAmount4_ptr COreAmountMgrCheatOreAmount4_next(nullptr);
-        info::COreAmountMgrCheatOreAmount4_clbk COreAmountMgrCheatOreAmount4_user(nullptr);
-        info::COreAmountMgrDecreaseOre6_ptr COreAmountMgrDecreaseOre6_next(nullptr);
-        info::COreAmountMgrDecreaseOre6_clbk COreAmountMgrDecreaseOre6_user(nullptr);
-        info::COreAmountMgrGetDepositRate8_ptr COreAmountMgrGetDepositRate8_next(nullptr);
-        info::COreAmountMgrGetDepositRate8_clbk COreAmountMgrGetDepositRate8_user(nullptr);
-        info::COreAmountMgrGetMultipleRate10_ptr COreAmountMgrGetMultipleRate10_next(nullptr);
-        info::COreAmountMgrGetMultipleRate10_clbk COreAmountMgrGetMultipleRate10_user(nullptr);
-        info::COreAmountMgrGetOreTransferAmount12_ptr COreAmountMgrGetOreTransferAmount12_next(nullptr);
-        info::COreAmountMgrGetOreTransferAmount12_clbk COreAmountMgrGetOreTransferAmount12_user(nullptr);
-        info::COreAmountMgrGetOreTransferCount14_ptr COreAmountMgrGetOreTransferCount14_next(nullptr);
-        info::COreAmountMgrGetOreTransferCount14_clbk COreAmountMgrGetOreTransferCount14_user(nullptr);
-        info::COreAmountMgrGetRemainOre16_ptr COreAmountMgrGetRemainOre16_next(nullptr);
-        info::COreAmountMgrGetRemainOre16_clbk COreAmountMgrGetRemainOre16_user(nullptr);
-        info::COreAmountMgrGetTotalOre18_ptr COreAmountMgrGetTotalOre18_next(nullptr);
-        info::COreAmountMgrGetTotalOre18_clbk COreAmountMgrGetTotalOre18_user(nullptr);
-        info::COreAmountMgrIncreaseOreAmount20_ptr COreAmountMgrIncreaseOreAmount20_next(nullptr);
-        info::COreAmountMgrIncreaseOreAmount20_clbk COreAmountMgrIncreaseOreAmount20_user(nullptr);
-        info::COreAmountMgrIncreaseOreCount22_ptr COreAmountMgrIncreaseOreCount22_next(nullptr);
-        info::COreAmountMgrIncreaseOreCount22_clbk COreAmountMgrIncreaseOreCount22_user(nullptr);
-        info::COreAmountMgrInitRemainOreAmount24_ptr COreAmountMgrInitRemainOreAmount24_next(nullptr);
-        info::COreAmountMgrInitRemainOreAmount24_clbk COreAmountMgrInitRemainOreAmount24_user(nullptr);
-        info::COreAmountMgrInitTransferOre26_ptr COreAmountMgrInitTransferOre26_next(nullptr);
-        info::COreAmountMgrInitTransferOre26_clbk COreAmountMgrInitTransferOre26_user(nullptr);
-        info::COreAmountMgrInsertOreLog28_ptr COreAmountMgrInsertOreLog28_next(nullptr);
-        info::COreAmountMgrInsertOreLog28_clbk COreAmountMgrInsertOreLog28_user(nullptr);
-        info::COreAmountMgrInstance30_ptr COreAmountMgrInstance30_next(nullptr);
-        info::COreAmountMgrInstance30_clbk COreAmountMgrInstance30_user(nullptr);
-        info::COreAmountMgrIsINIFileChanged32_ptr COreAmountMgrIsINIFileChanged32_next(nullptr);
-        info::COreAmountMgrIsINIFileChanged32_clbk COreAmountMgrIsINIFileChanged32_user(nullptr);
-        info::COreAmountMgrIsOreRemain34_ptr COreAmountMgrIsOreRemain34_next(nullptr);
-        info::COreAmountMgrIsOreRemain34_clbk COreAmountMgrIsOreRemain34_user(nullptr);
-        info::COreAmountMgrLoadINI36_ptr COreAmountMgrLoadINI36_next(nullptr);
-        info::COreAmountMgrLoadINI36_clbk COreAmountMgrLoadINI36_user(nullptr);
-        info::COreAmountMgrLoop38_ptr COreAmountMgrLoop38_next(nullptr);
-        info::COreAmountMgrLoop38_clbk COreAmountMgrLoop38_user(nullptr);
-        info::COreAmountMgrLoopSubProcSendInform40_ptr COreAmountMgrLoopSubProcSendInform40_next(nullptr);
-        info::COreAmountMgrLoopSubProcSendInform40_clbk COreAmountMgrLoopSubProcSendInform40_user(nullptr);
-        info::COreAmountMgrReLoad42_ptr COreAmountMgrReLoad42_next(nullptr);
-        info::COreAmountMgrReLoad42_clbk COreAmountMgrReLoad42_user(nullptr);
-        info::COreAmountMgrRelease44_ptr COreAmountMgrRelease44_next(nullptr);
-        info::COreAmountMgrRelease44_clbk COreAmountMgrRelease44_user(nullptr);
-        info::COreAmountMgrSetOreTransferAmount46_ptr COreAmountMgrSetOreTransferAmount46_next(nullptr);
-        info::COreAmountMgrSetOreTransferAmount46_clbk COreAmountMgrSetOreTransferAmount46_user(nullptr);
-        info::COreAmountMgrUpdateDepositeRate48_ptr COreAmountMgrUpdateDepositeRate48_next(nullptr);
-        info::COreAmountMgrUpdateDepositeRate48_clbk COreAmountMgrUpdateDepositeRate48_user(nullptr);
-        info::COreAmountMgrUpdateForce50_ptr COreAmountMgrUpdateForce50_next(nullptr);
-        info::COreAmountMgrUpdateForce50_clbk COreAmountMgrUpdateForce50_user(nullptr);
-        info::COreAmountMgrdtor_COreAmountMgr55_ptr COreAmountMgrdtor_COreAmountMgr55_next(nullptr);
-        info::COreAmountMgrdtor_COreAmountMgr55_clbk COreAmountMgrdtor_COreAmountMgr55_user(nullptr);
+        static info::COreAmountMgrctor_COreAmountMgr2_ptr COreAmountMgrctor_COreAmountMgr2_next(nullptr);
+        static info::COreAmountMgrctor_COreAmountMgr2_clbk COreAmountMgrctor_COreAmountMgr2_user(nullptr);
+        static info::COreAmountMgrCheatOreAmount4_ptr COreAmountMgrCheatOreAmount4_next(nullptr);
+        static info::COreAmountMgrCheatOreAmount4_clbk COreAmountMgrCheatOreAmount4_user(nullptr);
+        static info::COreAmountMgrDecreaseOre6_ptr COreAmountMgrDecreaseOre6_next(nullptr);
+        static info::COreAmountMgrDecreaseOre6_clbk COreAmountMgrDecreaseOre6_user(nullptr);
+        static info::COreAmountMgrGetDepositRate8_ptr COreAmountMgrGetDepositRate8_next(nullptr);
+        static info::COreAmountMgrGetDepositRate8_clbk COreAmountMgrGetDepositRate8_user(nullptr);
+        static info::COreAmountMgrGetMultipleRate10_ptr COreAmountMgrGetMultipleRate10_next(nullptr);
+        static info::COreAmountMgrGetMultipleRate10_clbk COreAmountMgrGetMultipleRate10_user(nullptr);
+        static info::COreAmountMgrGetOreTransferAmount12_ptr COreAmountMgrGetOreTransferAmount12_next(nullptr);
+        static info::COreAmountMgrGetOreTransferAmount12_clbk COreAmountMgrGetOreTransferAmount12_user(nullptr);
+        static info::COreAmountMgrGetOreTransferCount14_ptr COreAmountMgrGetOreTransferCount14_next(nullptr);
+        static info::COreAmountMgrGetOreTransferCount14_clbk COreAmountMgrGetOreTransferCount14_user(nullptr);
+        static info::COreAmountMgrGetRemainOre16_ptr COreAmountMgrGetRemainOre16_next(nullptr);
+        static info::COreAmountMgrGetRemainOre16_clbk COreAmountMgrGetRemainOre16_user(nullptr);
+        static info::COreAmountMgrGetTotalOre18_ptr COreAmountMgrGetTotalOre18_next(nullptr);
+        static info::COreAmountMgrGetTotalOre18_clbk COreAmountMgrGetTotalOre18_user(nullptr);
+        static info::COreAmountMgrIncreaseOreAmount20_ptr COreAmountMgrIncreaseOreAmount20_next(nullptr);
+        static info::COreAmountMgrIncreaseOreAmount20_clbk COreAmountMgrIncreaseOreAmount20_user(nullptr);
+        static info::COreAmountMgrIncreaseOreCount22_ptr COreAmountMgrIncreaseOreCount22_next(nullptr);
+        static info::COreAmountMgrIncreaseOreCount22_clbk COreAmountMgrIncreaseOreCount22_user(nullptr);
+        static info::COreAmountMgrInitRemainOreAmount24_ptr COreAmountMgrInitRemainOreAmount24_next(nullptr);
+        static info::COreAmountMgrInitRemainOreAmount24_clbk COreAmountMgrInitRemainOreAmount24_user(nullptr);
+        static info::COreAmountMgrInitTransferOre26_ptr COreAmountMgrInitTransferOre26_next(nullptr);
+        static info::COreAmountMgrInitTransferOre26_clbk COreAmountMgrInitTransferOre26_user(nullptr);
+        static info::COreAmountMgrInsertOreLog28_ptr COreAmountMgrInsertOreLog28_next(nullptr);
+        static info::COreAmountMgrInsertOreLog28_clbk COreAmountMgrInsertOreLog28_user(nullptr);
+        static info::COreAmountMgrInstance30_ptr COreAmountMgrInstance30_next(nullptr);
+        static info::COreAmountMgrInstance30_clbk COreAmountMgrInstance30_user(nullptr);
+        static info::COreAmountMgrIsINIFileChanged32_ptr COreAmountMgrIsINIFileChanged32_next(nullptr);
+        static info::COreAmountMgrIsINIFileChanged32_clbk COreAmountMgrIsINIFileChanged32_user(nullptr);
+        static info::COreAmountMgrIsOreRemain34_ptr COreAmountMgrIsOreRemain34_next(nullptr);
+        static info::COreAmountMgrIsOreRemain34_clbk COreAmountMgrIsOreRemain34_user(nullptr);
+        static info::COreAmountMgrLoadINI36_ptr COreAmountMgrLoadINI36_next(nullptr);
+        static info::COreAmountMgrLoadINI36_clbk COreAmountMgrLoadINI36_user(nullptr);
+        static info::COreAmountMgrLoop38_ptr COreAmountMgrLoop38_next(nullptr);
+        static info::COreAmountMgrLoop38_clbk COreAmountMgrLoop38_user(nullptr);
+        static info::COreAmountMgrLoopSubProcSendInform40_ptr COreAmountMgrLoopSubProcSendInform40_next(nullptr);
+        static info::COreAmountMgrLoopSubProcSendInform40_clbk COreAmountMgrLoopSubProcSendInform40_user(nullptr);
+        static info::COreAmountMgrReLoad42_ptr COreAmountMgrReLoad42_next(nullptr);
+        static info::COreAmountMgrReLoad42_clbk COreAmountMgrReLoad42_user(nullptr);
+        static info::COreAmountMgrRelease44_ptr COreAmountMgrRelease44_next(nullptr);
+        static info::COreAmountMgrRelease44_clbk COreAmountMgrRelease44_user(nullptr);
+        static info::COreAmountMgrSetOreTransferAmount46_ptr COreAmountMgrSetOreTransferAmount46_next(nullptr);
+        static info::COreAmountMgrSetOreTransferAmount46_clbk COreAmountMgrSetOreTransferAmount46_user(nullptr);
+        static info::COreAmountMgrUpdateDepositeRate48_ptr COreAmountMgrUpdateDepositeRate48_next(nullptr);
+        static info::COreAmountMgrUpdateDepositeRate48_clbk COreAmountMgrUpdateDepositeRate48_user(nullptr);
+        static info::COreAmountMgrUpdateForce50_ptr COreAmountMgrUpdateForce50_next(nullptr);
+        static info::COreAmountMgrUpdateForce50_clbk COreAmountMgrUpdateForce50_user(nullptr);
+        static info::COreAmountMgrdtor_COreAmountMgr55_ptr COreAmountMgrdtor_COreAmountMgr55_next(nullptr);
+        static info::COreAmountMgrdtor_COreAmountMgr55_clbk COreAmountMgrdtor_COreAmountMgr55_user(nullptr);
         
-        void COreAmountMgrctor_COreAmountMgr2_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrctor_COreAmountMgr2_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrctor_COreAmountMgr2_user(_this, COreAmountMgrctor_COreAmountMgr2_next);
         };
-        bool COreAmountMgrCheatOreAmount4_wrapper(struct COreAmountMgr* _this, unsigned int dwTot, unsigned int dwRemain)
+        static bool COreAmountMgrCheatOreAmount4_wrapper(struct COreAmountMgr* _this, unsigned int dwTot, unsigned int dwRemain)
         {
            return COreAmountMgrCheatOreAmount4_user(_this, dwTot, dwRemain, COreAmountMgrCheatOreAmount4_next);
         };
-        void COreAmountMgrDecreaseOre6_wrapper(struct COreAmountMgr* _this, unsigned int dwAlt)
+        static void COreAmountMgrDecreaseOre6_wrapper(struct COreAmountMgr* _this, unsigned int dwAlt)
         {
            COreAmountMgrDecreaseOre6_user(_this, dwAlt, COreAmountMgrDecreaseOre6_next);
         };
-        char COreAmountMgrGetDepositRate8_wrapper(struct COreAmountMgr* _this)
+        static char COreAmountMgrGetDepositRate8_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetDepositRate8_user(_this, COreAmountMgrGetDepositRate8_next);
         };
-        float* COreAmountMgrGetMultipleRate10_wrapper(struct COreAmountMgr* _this)
+        static float* COreAmountMgrGetMultipleRate10_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetMultipleRate10_user(_this, COreAmountMgrGetMultipleRate10_next);
         };
-        unsigned int COreAmountMgrGetOreTransferAmount12_wrapper(struct COreAmountMgr* _this)
+        static unsigned int COreAmountMgrGetOreTransferAmount12_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetOreTransferAmount12_user(_this, COreAmountMgrGetOreTransferAmount12_next);
         };
-        char COreAmountMgrGetOreTransferCount14_wrapper(struct COreAmountMgr* _this)
+        static char COreAmountMgrGetOreTransferCount14_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetOreTransferCount14_user(_this, COreAmountMgrGetOreTransferCount14_next);
         };
-        unsigned int COreAmountMgrGetRemainOre16_wrapper(struct COreAmountMgr* _this)
+        static unsigned int COreAmountMgrGetRemainOre16_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetRemainOre16_user(_this, COreAmountMgrGetRemainOre16_next);
         };
-        unsigned int COreAmountMgrGetTotalOre18_wrapper(struct COreAmountMgr* _this)
+        static unsigned int COreAmountMgrGetTotalOre18_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrGetTotalOre18_user(_this, COreAmountMgrGetTotalOre18_next);
         };
-        void COreAmountMgrIncreaseOreAmount20_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrIncreaseOreAmount20_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrIncreaseOreAmount20_user(_this, COreAmountMgrIncreaseOreAmount20_next);
         };
-        void COreAmountMgrIncreaseOreCount22_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrIncreaseOreCount22_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrIncreaseOreCount22_user(_this, COreAmountMgrIncreaseOreCount22_next);
         };
-        void COreAmountMgrInitRemainOreAmount24_wrapper(struct COreAmountMgr* _this, unsigned int dwRemain, unsigned int dwTotal)
+        static void COreAmountMgrInitRemainOreAmount24_wrapper(struct COreAmountMgr* _this, unsigned int dwRemain, unsigned int dwTotal)
         {
            COreAmountMgrInitRemainOreAmount24_user(_this, dwRemain, dwTotal, COreAmountMgrInitRemainOreAmount24_next);
         };
-        void COreAmountMgrInitTransferOre26_wrapper(struct COreAmountMgr* _this, unsigned int dwTransAmount, char byTransCount)
+        static void COreAmountMgrInitTransferOre26_wrapper(struct COreAmountMgr* _this, unsigned int dwTransAmount, char byTransCount)
         {
            COreAmountMgrInitTransferOre26_user(_this, dwTransAmount, byTransCount, COreAmountMgrInitTransferOre26_next);
         };
-        void COreAmountMgrInsertOreLog28_wrapper(struct COreAmountMgr* _this, char byType)
+        static void COreAmountMgrInsertOreLog28_wrapper(struct COreAmountMgr* _this, char byType)
         {
            COreAmountMgrInsertOreLog28_user(_this, byType, COreAmountMgrInsertOreLog28_next);
         };
-        struct COreAmountMgr* COreAmountMgrInstance30_wrapper()
+        static struct COreAmountMgr* COreAmountMgrInstance30_wrapper()
         {
            return COreAmountMgrInstance30_user(COreAmountMgrInstance30_next);
         };
-        bool COreAmountMgrIsINIFileChanged32_wrapper(struct COreAmountMgr* _this)
+        static bool COreAmountMgrIsINIFileChanged32_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrIsINIFileChanged32_user(_this, COreAmountMgrIsINIFileChanged32_next);
         };
-        int COreAmountMgrIsOreRemain34_wrapper(struct COreAmountMgr* _this)
+        static int COreAmountMgrIsOreRemain34_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrIsOreRemain34_user(_this, COreAmountMgrIsOreRemain34_next);
         };
-        int COreAmountMgrLoadINI36_wrapper(struct COreAmountMgr* _this)
+        static int COreAmountMgrLoadINI36_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrLoadINI36_user(_this, COreAmountMgrLoadINI36_next);
         };
-        void COreAmountMgrLoop38_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrLoop38_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrLoop38_user(_this, COreAmountMgrLoop38_next);
         };
-        void COreAmountMgrLoopSubProcSendInform40_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrLoopSubProcSendInform40_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrLoopSubProcSendInform40_user(_this, COreAmountMgrLoopSubProcSendInform40_next);
         };
-        bool COreAmountMgrReLoad42_wrapper(struct COreAmountMgr* _this)
+        static bool COreAmountMgrReLoad42_wrapper(struct COreAmountMgr* _this)
         {
            return COreAmountMgrReLoad42_user(_this, COreAmountMgrReLoad42_next);
         };
-        void COreAmountMgrRelease44_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrRelease44_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrRelease44_user(_this, COreAmountMgrRelease44_next);
         };
-        void COreAmountMgrSetOreTransferAmount46_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrSetOreTransferAmount46_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrSetOreTransferAmount46_user(_this, COreAmountMgrSetOreTransferAmount46_next);
         };
-        void COreAmountMgrUpdateDepositeRate48_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrUpdateDepositeRate48_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrUpdateDepositeRate48_user(_this, COreAmountMgrUpdateDepositeRate48_next);
         };
-        void COreAmountMgrUpdateForce50_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrUpdateForce50_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrUpdateForce50_user(_this, COreAmountMgrUpdateForce50_next);
         };
-        void COreAmountMgrdtor_COreAmountMgr55_wrapper(struct COreAmountMgr* _this)
+        static void COreAmountMgrdtor_COreAmountMgr55_wrapper(struct COreAmountMgr* _this)
         {
            COreAmountMgrdtor_COreAmountMgr55_user(_this, COreAmountMgrdtor_COreAmountMgr55_next);
         };
         
-        hook_record COreAmountMgr_functions[] = {
+        static hook_record COreAmountMgr_functions[] = {
         {   (LPVOID)0x1403f8da0L,
             (LPVOID *)&COreAmountMgrctor_COreAmountMgr2_user,
             (LPVOID *)&COreAmountMgrctor_COreAmountMgr2_next,
@@ -300,5 +300,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_limit_item_infoctor__limit_item_info2_ptr _limit_item_infoctor__limit_item_info2_next(nullptr);
-        info::_limit_item_infoctor__limit_item_info2_clbk _limit_item_infoctor__limit_item_info2_user(nullptr);
-        info::_limit_item_infoinit4_ptr _limit_item_infoinit4_next(nullptr);
-        info::_limit_item_infoinit4_clbk _limit_item_infoinit4_user(nullptr);
+        static info::_limit_item_infoctor__limit_item_info2_ptr _limit_item_infoctor__limit_item_info2_next(nullptr);
+        static info::_limit_item_infoctor__limit_item_info2_clbk _limit_item_infoctor__limit_item_info2_user(nullptr);
+        static info::_limit_item_infoinit4_ptr _limit_item_infoinit4_next(nullptr);
+        static info::_limit_item_infoinit4_clbk _limit_item_infoinit4_user(nullptr);
         
-        void _limit_item_infoctor__limit_item_info2_wrapper(struct _limit_item_info* _this)
+        static void _limit_item_infoctor__limit_item_info2_wrapper(struct _limit_item_info* _this)
         {
            _limit_item_infoctor__limit_item_info2_user(_this, _limit_item_infoctor__limit_item_info2_next);
         };
-        void _limit_item_infoinit4_wrapper(struct _limit_item_info* _this)
+        static void _limit_item_infoinit4_wrapper(struct _limit_item_info* _this)
         {
            _limit_item_infoinit4_user(_this, _limit_item_infoinit4_next);
         };
         
-        hook_record _limit_item_info_functions[] = {
+        static hook_record _limit_item_info_functions[] = {
         {   (LPVOID)0x140263760L,
             (LPVOID *)&_limit_item_infoctor__limit_item_info2_user,
             (LPVOID *)&_limit_item_infoctor__limit_item_info2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

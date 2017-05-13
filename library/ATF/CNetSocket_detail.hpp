@@ -8,129 +8,129 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetSocketAccept_Client2_ptr CNetSocketAccept_Client2_next(nullptr);
-        info::CNetSocketAccept_Client2_clbk CNetSocketAccept_Client2_user(nullptr);
-        info::CNetSocketAccept_Server4_ptr CNetSocketAccept_Server4_next(nullptr);
-        info::CNetSocketAccept_Server4_clbk CNetSocketAccept_Server4_user(nullptr);
-        info::CNetSocketctor_CNetSocket6_ptr CNetSocketctor_CNetSocket6_next(nullptr);
-        info::CNetSocketctor_CNetSocket6_clbk CNetSocketctor_CNetSocket6_user(nullptr);
-        info::CNetSocketCloseAll8_ptr CNetSocketCloseAll8_next(nullptr);
-        info::CNetSocketCloseAll8_clbk CNetSocketCloseAll8_user(nullptr);
-        info::CNetSocketCloseSocket10_ptr CNetSocketCloseSocket10_next(nullptr);
-        info::CNetSocketCloseSocket10_clbk CNetSocketCloseSocket10_user(nullptr);
-        info::CNetSocketConnect12_ptr CNetSocketConnect12_next(nullptr);
-        info::CNetSocketConnect12_clbk CNetSocketConnect12_user(nullptr);
-        info::CNetSocketEmptySocketBuffer14_ptr CNetSocketEmptySocketBuffer14_next(nullptr);
-        info::CNetSocketEmptySocketBuffer14_clbk CNetSocketEmptySocketBuffer14_user(nullptr);
-        info::CNetSocketFindEmptySocket16_ptr CNetSocketFindEmptySocket16_next(nullptr);
-        info::CNetSocketFindEmptySocket16_clbk CNetSocketFindEmptySocket16_user(nullptr);
-        info::CNetSocketGetSocket18_ptr CNetSocketGetSocket18_next(nullptr);
-        info::CNetSocketGetSocket18_clbk CNetSocketGetSocket18_user(nullptr);
-        info::CNetSocketGetSocketIPAddress20_ptr CNetSocketGetSocketIPAddress20_next(nullptr);
-        info::CNetSocketGetSocketIPAddress20_clbk CNetSocketGetSocketIPAddress20_user(nullptr);
-        info::CNetSocketGetSocketType22_ptr CNetSocketGetSocketType22_next(nullptr);
-        info::CNetSocketGetSocketType22_clbk CNetSocketGetSocketType22_user(nullptr);
-        info::CNetSocketGetTotalCount24_ptr CNetSocketGetTotalCount24_next(nullptr);
-        info::CNetSocketGetTotalCount24_clbk CNetSocketGetTotalCount24_user(nullptr);
-        info::CNetSocketInitAcceptSocket26_ptr CNetSocketInitAcceptSocket26_next(nullptr);
-        info::CNetSocketInitAcceptSocket26_clbk CNetSocketInitAcceptSocket26_user(nullptr);
-        info::CNetSocketOnLoop28_ptr CNetSocketOnLoop28_next(nullptr);
-        info::CNetSocketOnLoop28_clbk CNetSocketOnLoop28_user(nullptr);
-        info::CNetSocketPushIPCheckList30_ptr CNetSocketPushIPCheckList30_next(nullptr);
-        info::CNetSocketPushIPCheckList30_clbk CNetSocketPushIPCheckList30_user(nullptr);
-        info::CNetSocketRecv32_ptr CNetSocketRecv32_next(nullptr);
-        info::CNetSocketRecv32_clbk CNetSocketRecv32_user(nullptr);
-        info::CNetSocketRelease34_ptr CNetSocketRelease34_next(nullptr);
-        info::CNetSocketRelease34_clbk CNetSocketRelease34_user(nullptr);
-        info::CNetSocketSend36_ptr CNetSocketSend36_next(nullptr);
-        info::CNetSocketSend36_clbk CNetSocketSend36_user(nullptr);
-        info::CNetSocketSetSocket38_ptr CNetSocketSetSocket38_next(nullptr);
-        info::CNetSocketSetSocket38_clbk CNetSocketSetSocket38_user(nullptr);
-        info::CNetSocketdtor_CNetSocket43_ptr CNetSocketdtor_CNetSocket43_next(nullptr);
-        info::CNetSocketdtor_CNetSocket43_clbk CNetSocketdtor_CNetSocket43_user(nullptr);
+        static info::CNetSocketAccept_Client2_ptr CNetSocketAccept_Client2_next(nullptr);
+        static info::CNetSocketAccept_Client2_clbk CNetSocketAccept_Client2_user(nullptr);
+        static info::CNetSocketAccept_Server4_ptr CNetSocketAccept_Server4_next(nullptr);
+        static info::CNetSocketAccept_Server4_clbk CNetSocketAccept_Server4_user(nullptr);
+        static info::CNetSocketctor_CNetSocket6_ptr CNetSocketctor_CNetSocket6_next(nullptr);
+        static info::CNetSocketctor_CNetSocket6_clbk CNetSocketctor_CNetSocket6_user(nullptr);
+        static info::CNetSocketCloseAll8_ptr CNetSocketCloseAll8_next(nullptr);
+        static info::CNetSocketCloseAll8_clbk CNetSocketCloseAll8_user(nullptr);
+        static info::CNetSocketCloseSocket10_ptr CNetSocketCloseSocket10_next(nullptr);
+        static info::CNetSocketCloseSocket10_clbk CNetSocketCloseSocket10_user(nullptr);
+        static info::CNetSocketConnect12_ptr CNetSocketConnect12_next(nullptr);
+        static info::CNetSocketConnect12_clbk CNetSocketConnect12_user(nullptr);
+        static info::CNetSocketEmptySocketBuffer14_ptr CNetSocketEmptySocketBuffer14_next(nullptr);
+        static info::CNetSocketEmptySocketBuffer14_clbk CNetSocketEmptySocketBuffer14_user(nullptr);
+        static info::CNetSocketFindEmptySocket16_ptr CNetSocketFindEmptySocket16_next(nullptr);
+        static info::CNetSocketFindEmptySocket16_clbk CNetSocketFindEmptySocket16_user(nullptr);
+        static info::CNetSocketGetSocket18_ptr CNetSocketGetSocket18_next(nullptr);
+        static info::CNetSocketGetSocket18_clbk CNetSocketGetSocket18_user(nullptr);
+        static info::CNetSocketGetSocketIPAddress20_ptr CNetSocketGetSocketIPAddress20_next(nullptr);
+        static info::CNetSocketGetSocketIPAddress20_clbk CNetSocketGetSocketIPAddress20_user(nullptr);
+        static info::CNetSocketGetSocketType22_ptr CNetSocketGetSocketType22_next(nullptr);
+        static info::CNetSocketGetSocketType22_clbk CNetSocketGetSocketType22_user(nullptr);
+        static info::CNetSocketGetTotalCount24_ptr CNetSocketGetTotalCount24_next(nullptr);
+        static info::CNetSocketGetTotalCount24_clbk CNetSocketGetTotalCount24_user(nullptr);
+        static info::CNetSocketInitAcceptSocket26_ptr CNetSocketInitAcceptSocket26_next(nullptr);
+        static info::CNetSocketInitAcceptSocket26_clbk CNetSocketInitAcceptSocket26_user(nullptr);
+        static info::CNetSocketOnLoop28_ptr CNetSocketOnLoop28_next(nullptr);
+        static info::CNetSocketOnLoop28_clbk CNetSocketOnLoop28_user(nullptr);
+        static info::CNetSocketPushIPCheckList30_ptr CNetSocketPushIPCheckList30_next(nullptr);
+        static info::CNetSocketPushIPCheckList30_clbk CNetSocketPushIPCheckList30_user(nullptr);
+        static info::CNetSocketRecv32_ptr CNetSocketRecv32_next(nullptr);
+        static info::CNetSocketRecv32_clbk CNetSocketRecv32_user(nullptr);
+        static info::CNetSocketRelease34_ptr CNetSocketRelease34_next(nullptr);
+        static info::CNetSocketRelease34_clbk CNetSocketRelease34_user(nullptr);
+        static info::CNetSocketSend36_ptr CNetSocketSend36_next(nullptr);
+        static info::CNetSocketSend36_clbk CNetSocketSend36_user(nullptr);
+        static info::CNetSocketSetSocket38_ptr CNetSocketSetSocket38_next(nullptr);
+        static info::CNetSocketSetSocket38_clbk CNetSocketSetSocket38_user(nullptr);
+        static info::CNetSocketdtor_CNetSocket43_ptr CNetSocketdtor_CNetSocket43_next(nullptr);
+        static info::CNetSocketdtor_CNetSocket43_clbk CNetSocketdtor_CNetSocket43_user(nullptr);
         
-        bool CNetSocketAccept_Client2_wrapper(struct CNetSocket* _this, unsigned int dwSocketIndex)
+        static bool CNetSocketAccept_Client2_wrapper(struct CNetSocket* _this, unsigned int dwSocketIndex)
         {
            return CNetSocketAccept_Client2_user(_this, dwSocketIndex, CNetSocketAccept_Client2_next);
         };
-        unsigned int CNetSocketAccept_Server4_wrapper(struct CNetSocket* _this)
+        static unsigned int CNetSocketAccept_Server4_wrapper(struct CNetSocket* _this)
         {
            return CNetSocketAccept_Server4_user(_this, CNetSocketAccept_Server4_next);
         };
-        void CNetSocketctor_CNetSocket6_wrapper(struct CNetSocket* _this)
+        static void CNetSocketctor_CNetSocket6_wrapper(struct CNetSocket* _this)
         {
            CNetSocketctor_CNetSocket6_user(_this, CNetSocketctor_CNetSocket6_next);
         };
-        void CNetSocketCloseAll8_wrapper(struct CNetSocket* _this)
+        static void CNetSocketCloseAll8_wrapper(struct CNetSocket* _this)
         {
            CNetSocketCloseAll8_user(_this, CNetSocketCloseAll8_next);
         };
-        bool CNetSocketCloseSocket10_wrapper(struct CNetSocket* _this, unsigned int n)
+        static bool CNetSocketCloseSocket10_wrapper(struct CNetSocket* _this, unsigned int n)
         {
            return CNetSocketCloseSocket10_user(_this, n, CNetSocketCloseSocket10_next);
         };
-        int CNetSocketConnect12_wrapper(struct CNetSocket* _this, unsigned int n, struct sockaddr_in* pAddr)
+        static int CNetSocketConnect12_wrapper(struct CNetSocket* _this, unsigned int n, struct sockaddr_in* pAddr)
         {
            return CNetSocketConnect12_user(_this, n, pAddr, CNetSocketConnect12_next);
         };
-        void CNetSocketEmptySocketBuffer14_wrapper(struct CNetSocket* _this, unsigned int n)
+        static void CNetSocketEmptySocketBuffer14_wrapper(struct CNetSocket* _this, unsigned int n)
         {
            CNetSocketEmptySocketBuffer14_user(_this, n, CNetSocketEmptySocketBuffer14_next);
         };
-        unsigned int CNetSocketFindEmptySocket16_wrapper(struct CNetSocket* _this)
+        static unsigned int CNetSocketFindEmptySocket16_wrapper(struct CNetSocket* _this)
         {
            return CNetSocketFindEmptySocket16_user(_this, CNetSocketFindEmptySocket16_next);
         };
-        struct _socket* CNetSocketGetSocket18_wrapper(struct CNetSocket* _this, unsigned int dwIndex)
+        static struct _socket* CNetSocketGetSocket18_wrapper(struct CNetSocket* _this, unsigned int dwIndex)
         {
            return CNetSocketGetSocket18_user(_this, dwIndex, CNetSocketGetSocket18_next);
         };
-        unsigned int CNetSocketGetSocketIPAddress20_wrapper(struct CNetSocket* _this, unsigned int dwIndex)
+        static unsigned int CNetSocketGetSocketIPAddress20_wrapper(struct CNetSocket* _this, unsigned int dwIndex)
         {
            return CNetSocketGetSocketIPAddress20_user(_this, dwIndex, CNetSocketGetSocketIPAddress20_next);
         };
-        struct _SOCK_TYPE_PARAM* CNetSocketGetSocketType22_wrapper(struct CNetSocket* _this)
+        static struct _SOCK_TYPE_PARAM* CNetSocketGetSocketType22_wrapper(struct CNetSocket* _this)
         {
            return CNetSocketGetSocketType22_user(_this, CNetSocketGetSocketType22_next);
         };
-        struct _total_count* CNetSocketGetTotalCount24_wrapper(struct CNetSocket* _this)
+        static struct _total_count* CNetSocketGetTotalCount24_wrapper(struct CNetSocket* _this)
         {
            return CNetSocketGetTotalCount24_user(_this, CNetSocketGetTotalCount24_next);
         };
-        bool CNetSocketInitAcceptSocket26_wrapper(struct CNetSocket* _this, char* pszErrMsg)
+        static bool CNetSocketInitAcceptSocket26_wrapper(struct CNetSocket* _this, char* pszErrMsg)
         {
            return CNetSocketInitAcceptSocket26_user(_this, pszErrMsg, CNetSocketInitAcceptSocket26_next);
         };
-        void CNetSocketOnLoop28_wrapper(struct CNetSocket* _this)
+        static void CNetSocketOnLoop28_wrapper(struct CNetSocket* _this)
         {
            CNetSocketOnLoop28_user(_this, CNetSocketOnLoop28_next);
         };
-        bool CNetSocketPushIPCheckList30_wrapper(struct CNetSocket* _this, unsigned int dwIP)
+        static bool CNetSocketPushIPCheckList30_wrapper(struct CNetSocket* _this, unsigned int dwIP)
         {
            return CNetSocketPushIPCheckList30_user(_this, dwIP, CNetSocketPushIPCheckList30_next);
         };
-        bool CNetSocketRecv32_wrapper(struct CNetSocket* _this, unsigned int n, char* pBuf, int nBufMaxSize, int* pnRet)
+        static bool CNetSocketRecv32_wrapper(struct CNetSocket* _this, unsigned int n, char* pBuf, int nBufMaxSize, int* pnRet)
         {
            return CNetSocketRecv32_user(_this, n, pBuf, nBufMaxSize, pnRet, CNetSocketRecv32_next);
         };
-        void CNetSocketRelease34_wrapper(struct CNetSocket* _this)
+        static void CNetSocketRelease34_wrapper(struct CNetSocket* _this)
         {
            CNetSocketRelease34_user(_this, CNetSocketRelease34_next);
         };
-        bool CNetSocketSend36_wrapper(struct CNetSocket* _this, unsigned int n, char* pBuf, int nSize, int* pnRet)
+        static bool CNetSocketSend36_wrapper(struct CNetSocket* _this, unsigned int n, char* pBuf, int nSize, int* pnRet)
         {
            return CNetSocketSend36_user(_this, n, pBuf, nSize, pnRet, CNetSocketSend36_next);
         };
-        bool CNetSocketSetSocket38_wrapper(struct CNetSocket* _this, struct _SOCK_TYPE_PARAM* pType, char* pszErrMsg)
+        static bool CNetSocketSetSocket38_wrapper(struct CNetSocket* _this, struct _SOCK_TYPE_PARAM* pType, char* pszErrMsg)
         {
            return CNetSocketSetSocket38_user(_this, pType, pszErrMsg, CNetSocketSetSocket38_next);
         };
-        void CNetSocketdtor_CNetSocket43_wrapper(struct CNetSocket* _this)
+        static void CNetSocketdtor_CNetSocket43_wrapper(struct CNetSocket* _this)
         {
            CNetSocketdtor_CNetSocket43_user(_this, CNetSocketdtor_CNetSocket43_next);
         };
         
-        hook_record CNetSocket_functions[] = {
+        static hook_record CNetSocket_functions[] = {
         {   (LPVOID)0x14047e750L,
             (LPVOID *)&CNetSocketAccept_Client2_user,
             (LPVOID *)&CNetSocketAccept_Client2_next,
@@ -234,5 +234,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

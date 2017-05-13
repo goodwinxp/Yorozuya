@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ClassOrderProcessorctor_ClassOrderProcessor2_ptr ClassOrderProcessorctor_ClassOrderProcessor2_next(nullptr);
-        info::ClassOrderProcessorctor_ClassOrderProcessor2_clbk ClassOrderProcessorctor_ClassOrderProcessor2_user(nullptr);
-        info::ClassOrderProcessorDoit4_ptr ClassOrderProcessorDoit4_next(nullptr);
-        info::ClassOrderProcessorDoit4_clbk ClassOrderProcessorDoit4_user(nullptr);
-        info::ClassOrderProcessorInitialize6_ptr ClassOrderProcessorInitialize6_next(nullptr);
-        info::ClassOrderProcessorInitialize6_clbk ClassOrderProcessorInitialize6_user(nullptr);
-        info::ClassOrderProcessorInstance8_ptr ClassOrderProcessorInstance8_next(nullptr);
-        info::ClassOrderProcessorInstance8_clbk ClassOrderProcessorInstance8_user(nullptr);
-        info::ClassOrderProcessorSendMsg_PatriarchInform10_ptr ClassOrderProcessorSendMsg_PatriarchInform10_next(nullptr);
-        info::ClassOrderProcessorSendMsg_PatriarchInform10_clbk ClassOrderProcessorSendMsg_PatriarchInform10_user(nullptr);
-        info::ClassOrderProcessorSendMsg_QueryAppointResult12_ptr ClassOrderProcessorSendMsg_QueryAppointResult12_next(nullptr);
-        info::ClassOrderProcessorSendMsg_QueryAppointResult12_clbk ClassOrderProcessorSendMsg_QueryAppointResult12_user(nullptr);
-        info::ClassOrderProcessorUpdatePacket14_ptr ClassOrderProcessorUpdatePacket14_next(nullptr);
-        info::ClassOrderProcessorUpdatePacket14_clbk ClassOrderProcessorUpdatePacket14_user(nullptr);
-        info::ClassOrderProcessor_CheckUserInfo16_ptr ClassOrderProcessor_CheckUserInfo16_next(nullptr);
-        info::ClassOrderProcessor_CheckUserInfo16_clbk ClassOrderProcessor_CheckUserInfo16_user(nullptr);
-        info::ClassOrderProcessor_QueryAppoint18_ptr ClassOrderProcessor_QueryAppoint18_next(nullptr);
-        info::ClassOrderProcessor_QueryAppoint18_clbk ClassOrderProcessor_QueryAppoint18_user(nullptr);
-        info::ClassOrderProcessor_RequestAppoint20_ptr ClassOrderProcessor_RequestAppoint20_next(nullptr);
-        info::ClassOrderProcessor_RequestAppoint20_clbk ClassOrderProcessor_RequestAppoint20_user(nullptr);
-        info::ClassOrderProcessor_RequestDischarge22_ptr ClassOrderProcessor_RequestDischarge22_next(nullptr);
-        info::ClassOrderProcessor_RequestDischarge22_clbk ClassOrderProcessor_RequestDischarge22_user(nullptr);
-        info::ClassOrderProcessor_ResponseAppoint24_ptr ClassOrderProcessor_ResponseAppoint24_next(nullptr);
-        info::ClassOrderProcessor_ResponseAppoint24_clbk ClassOrderProcessor_ResponseAppoint24_user(nullptr);
-        info::ClassOrderProcessordtor_ClassOrderProcessor29_ptr ClassOrderProcessordtor_ClassOrderProcessor29_next(nullptr);
-        info::ClassOrderProcessordtor_ClassOrderProcessor29_clbk ClassOrderProcessordtor_ClassOrderProcessor29_user(nullptr);
+        static info::ClassOrderProcessorctor_ClassOrderProcessor2_ptr ClassOrderProcessorctor_ClassOrderProcessor2_next(nullptr);
+        static info::ClassOrderProcessorctor_ClassOrderProcessor2_clbk ClassOrderProcessorctor_ClassOrderProcessor2_user(nullptr);
+        static info::ClassOrderProcessorDoit4_ptr ClassOrderProcessorDoit4_next(nullptr);
+        static info::ClassOrderProcessorDoit4_clbk ClassOrderProcessorDoit4_user(nullptr);
+        static info::ClassOrderProcessorInitialize6_ptr ClassOrderProcessorInitialize6_next(nullptr);
+        static info::ClassOrderProcessorInitialize6_clbk ClassOrderProcessorInitialize6_user(nullptr);
+        static info::ClassOrderProcessorInstance8_ptr ClassOrderProcessorInstance8_next(nullptr);
+        static info::ClassOrderProcessorInstance8_clbk ClassOrderProcessorInstance8_user(nullptr);
+        static info::ClassOrderProcessorSendMsg_PatriarchInform10_ptr ClassOrderProcessorSendMsg_PatriarchInform10_next(nullptr);
+        static info::ClassOrderProcessorSendMsg_PatriarchInform10_clbk ClassOrderProcessorSendMsg_PatriarchInform10_user(nullptr);
+        static info::ClassOrderProcessorSendMsg_QueryAppointResult12_ptr ClassOrderProcessorSendMsg_QueryAppointResult12_next(nullptr);
+        static info::ClassOrderProcessorSendMsg_QueryAppointResult12_clbk ClassOrderProcessorSendMsg_QueryAppointResult12_user(nullptr);
+        static info::ClassOrderProcessorUpdatePacket14_ptr ClassOrderProcessorUpdatePacket14_next(nullptr);
+        static info::ClassOrderProcessorUpdatePacket14_clbk ClassOrderProcessorUpdatePacket14_user(nullptr);
+        static info::ClassOrderProcessor_CheckUserInfo16_ptr ClassOrderProcessor_CheckUserInfo16_next(nullptr);
+        static info::ClassOrderProcessor_CheckUserInfo16_clbk ClassOrderProcessor_CheckUserInfo16_user(nullptr);
+        static info::ClassOrderProcessor_QueryAppoint18_ptr ClassOrderProcessor_QueryAppoint18_next(nullptr);
+        static info::ClassOrderProcessor_QueryAppoint18_clbk ClassOrderProcessor_QueryAppoint18_user(nullptr);
+        static info::ClassOrderProcessor_RequestAppoint20_ptr ClassOrderProcessor_RequestAppoint20_next(nullptr);
+        static info::ClassOrderProcessor_RequestAppoint20_clbk ClassOrderProcessor_RequestAppoint20_user(nullptr);
+        static info::ClassOrderProcessor_RequestDischarge22_ptr ClassOrderProcessor_RequestDischarge22_next(nullptr);
+        static info::ClassOrderProcessor_RequestDischarge22_clbk ClassOrderProcessor_RequestDischarge22_user(nullptr);
+        static info::ClassOrderProcessor_ResponseAppoint24_ptr ClassOrderProcessor_ResponseAppoint24_next(nullptr);
+        static info::ClassOrderProcessor_ResponseAppoint24_clbk ClassOrderProcessor_ResponseAppoint24_user(nullptr);
+        static info::ClassOrderProcessordtor_ClassOrderProcessor29_ptr ClassOrderProcessordtor_ClassOrderProcessor29_next(nullptr);
+        static info::ClassOrderProcessordtor_ClassOrderProcessor29_clbk ClassOrderProcessordtor_ClassOrderProcessor29_user(nullptr);
         
-        void ClassOrderProcessorctor_ClassOrderProcessor2_wrapper(struct ClassOrderProcessor* _this)
+        static void ClassOrderProcessorctor_ClassOrderProcessor2_wrapper(struct ClassOrderProcessor* _this)
         {
            ClassOrderProcessorctor_ClassOrderProcessor2_user(_this, ClassOrderProcessorctor_ClassOrderProcessor2_next);
         };
-        int ClassOrderProcessorDoit4_wrapper(struct ClassOrderProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int ClassOrderProcessorDoit4_wrapper(struct ClassOrderProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return ClassOrderProcessorDoit4_user(_this, eCmd, pOne, pdata, ClassOrderProcessorDoit4_next);
         };
-        bool ClassOrderProcessorInitialize6_wrapper(struct ClassOrderProcessor* _this)
+        static bool ClassOrderProcessorInitialize6_wrapper(struct ClassOrderProcessor* _this)
         {
            return ClassOrderProcessorInitialize6_user(_this, ClassOrderProcessorInitialize6_next);
         };
-        struct ClassOrderProcessor* ClassOrderProcessorInstance8_wrapper()
+        static struct ClassOrderProcessor* ClassOrderProcessorInstance8_wrapper()
         {
            return ClassOrderProcessorInstance8_user(ClassOrderProcessorInstance8_next);
         };
-        void ClassOrderProcessorSendMsg_PatriarchInform10_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne)
+        static void ClassOrderProcessorSendMsg_PatriarchInform10_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne)
         {
            ClassOrderProcessorSendMsg_PatriarchInform10_user(_this, pOne, ClassOrderProcessorSendMsg_PatriarchInform10_next);
         };
-        void ClassOrderProcessorSendMsg_QueryAppointResult12_wrapper(struct ClassOrderProcessor* _this, uint16_t wIndex, char byRet, char byClassType, char* pwszAvatorName)
+        static void ClassOrderProcessorSendMsg_QueryAppointResult12_wrapper(struct ClassOrderProcessor* _this, uint16_t wIndex, char byRet, char byClassType, char* pwszAvatorName)
         {
            ClassOrderProcessorSendMsg_QueryAppointResult12_user(_this, wIndex, byRet, byClassType, pwszAvatorName, ClassOrderProcessorSendMsg_QueryAppointResult12_next);
         };
-        void ClassOrderProcessorUpdatePacket14_wrapper(struct ClassOrderProcessor* _this, char byRace, char byClassType)
+        static void ClassOrderProcessorUpdatePacket14_wrapper(struct ClassOrderProcessor* _this, char byRace, char byClassType)
         {
            ClassOrderProcessorUpdatePacket14_user(_this, byRace, byClassType, ClassOrderProcessorUpdatePacket14_next);
         };
-        int ClassOrderProcessor_CheckUserInfo16_wrapper(struct ClassOrderProcessor* _this, char byRace, char byClassType, struct CPlayer* pUser)
+        static int ClassOrderProcessor_CheckUserInfo16_wrapper(struct ClassOrderProcessor* _this, char byRace, char byClassType, struct CPlayer* pUser)
         {
            return ClassOrderProcessor_CheckUserInfo16_user(_this, byRace, byClassType, pUser, ClassOrderProcessor_CheckUserInfo16_next);
         };
-        int ClassOrderProcessor_QueryAppoint18_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
+        static int ClassOrderProcessor_QueryAppoint18_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
         {
            return ClassOrderProcessor_QueryAppoint18_user(_this, pOne, pData, ClassOrderProcessor_QueryAppoint18_next);
         };
-        int ClassOrderProcessor_RequestAppoint20_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
+        static int ClassOrderProcessor_RequestAppoint20_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
         {
            return ClassOrderProcessor_RequestAppoint20_user(_this, pOne, pData, ClassOrderProcessor_RequestAppoint20_next);
         };
-        int ClassOrderProcessor_RequestDischarge22_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
+        static int ClassOrderProcessor_RequestDischarge22_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
         {
            return ClassOrderProcessor_RequestDischarge22_user(_this, pOne, pData, ClassOrderProcessor_RequestDischarge22_next);
         };
-        int ClassOrderProcessor_ResponseAppoint24_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
+        static int ClassOrderProcessor_ResponseAppoint24_wrapper(struct ClassOrderProcessor* _this, struct CPlayer* pOne, char* pData)
         {
            return ClassOrderProcessor_ResponseAppoint24_user(_this, pOne, pData, ClassOrderProcessor_ResponseAppoint24_next);
         };
-        void ClassOrderProcessordtor_ClassOrderProcessor29_wrapper(struct ClassOrderProcessor* _this)
+        static void ClassOrderProcessordtor_ClassOrderProcessor29_wrapper(struct ClassOrderProcessor* _this)
         {
            ClassOrderProcessordtor_ClassOrderProcessor29_user(_this, ClassOrderProcessordtor_ClassOrderProcessor29_next);
         };
         
-        hook_record ClassOrderProcessor_functions[] = {
+        static hook_record ClassOrderProcessor_functions[] = {
         {   (LPVOID)0x1402b8010L,
             (LPVOID *)&ClassOrderProcessorctor_ClassOrderProcessor2_user,
             (LPVOID *)&ClassOrderProcessorctor_ClassOrderProcessor2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

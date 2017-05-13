@@ -8,261 +8,261 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGoldenBoxItemMgrBoxItemDataCopy2_ptr CGoldenBoxItemMgrBoxItemDataCopy2_next(nullptr);
-        info::CGoldenBoxItemMgrBoxItemDataCopy2_clbk CGoldenBoxItemMgrBoxItemDataCopy2_user(nullptr);
-        info::CGoldenBoxItemMgrBoxItemOpen4_ptr CGoldenBoxItemMgrBoxItemOpen4_next(nullptr);
-        info::CGoldenBoxItemMgrBoxItemOpen4_clbk CGoldenBoxItemMgrBoxItemOpen4_user(nullptr);
-        info::CGoldenBoxItemMgrBoxItemOpenEffectType6_ptr CGoldenBoxItemMgrBoxItemOpenEffectType6_next(nullptr);
-        info::CGoldenBoxItemMgrBoxItemOpenEffectType6_clbk CGoldenBoxItemMgrBoxItemOpenEffectType6_user(nullptr);
-        info::CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_ptr CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_next(nullptr);
-        info::CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_clbk CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_user(nullptr);
-        info::CGoldenBoxItemMgrCheck_Event_Status10_ptr CGoldenBoxItemMgrCheck_Event_Status10_next(nullptr);
-        info::CGoldenBoxItemMgrCheck_Event_Status10_clbk CGoldenBoxItemMgrCheck_Event_Status10_user(nullptr);
-        info::CGoldenBoxItemMgrCheck_Loaded_Event_Status12_ptr CGoldenBoxItemMgrCheck_Loaded_Event_Status12_next(nullptr);
-        info::CGoldenBoxItemMgrCheck_Loaded_Event_Status12_clbk CGoldenBoxItemMgrCheck_Loaded_Event_Status12_user(nullptr);
-        info::CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_ptr CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_next(nullptr);
-        info::CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_clbk CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_user(nullptr);
-        info::CGoldenBoxItemMgrGetGoldBoxItemIndex16_ptr CGoldenBoxItemMgrGetGoldBoxItemIndex16_next(nullptr);
-        info::CGoldenBoxItemMgrGetGoldBoxItemIndex16_clbk CGoldenBoxItemMgrGetGoldBoxItemIndex16_user(nullptr);
-        info::CGoldenBoxItemMgrGetGoldBoxItemPtr18_ptr CGoldenBoxItemMgrGetGoldBoxItemPtr18_next(nullptr);
-        info::CGoldenBoxItemMgrGetGoldBoxItemPtr18_clbk CGoldenBoxItemMgrGetGoldBoxItemPtr18_user(nullptr);
-        info::CGoldenBoxItemMgrGetLoopCount20_ptr CGoldenBoxItemMgrGetLoopCount20_next(nullptr);
-        info::CGoldenBoxItemMgrGetLoopCount20_clbk CGoldenBoxItemMgrGetLoopCount20_user(nullptr);
-        info::CGoldenBoxItemMgrGetOreItemTotalCnt22_ptr CGoldenBoxItemMgrGetOreItemTotalCnt22_next(nullptr);
-        info::CGoldenBoxItemMgrGetOreItemTotalCnt22_clbk CGoldenBoxItemMgrGetOreItemTotalCnt22_user(nullptr);
-        info::CGoldenBoxItemMgrGetStarterBoxCode24_ptr CGoldenBoxItemMgrGetStarterBoxCode24_next(nullptr);
-        info::CGoldenBoxItemMgrGetStarterBoxCode24_clbk CGoldenBoxItemMgrGetStarterBoxCode24_user(nullptr);
-        info::CGoldenBoxItemMgrGet_BoxItem_Count26_ptr CGoldenBoxItemMgrGet_BoxItem_Count26_next(nullptr);
-        info::CGoldenBoxItemMgrGet_BoxItem_Count26_clbk CGoldenBoxItemMgrGet_BoxItem_Count26_user(nullptr);
-        info::CGoldenBoxItemMgrGet_Box_Count28_ptr CGoldenBoxItemMgrGet_Box_Count28_next(nullptr);
-        info::CGoldenBoxItemMgrGet_Box_Count28_clbk CGoldenBoxItemMgrGet_Box_Count28_user(nullptr);
-        info::CGoldenBoxItemMgrGet_Event_Status30_ptr CGoldenBoxItemMgrGet_Event_Status30_next(nullptr);
-        info::CGoldenBoxItemMgrGet_Event_Status30_clbk CGoldenBoxItemMgrGet_Event_Status30_user(nullptr);
-        info::CGoldenBoxItemMgrGet_StarterBox_Count32_ptr CGoldenBoxItemMgrGet_StarterBox_Count32_next(nullptr);
-        info::CGoldenBoxItemMgrGet_StarterBox_Count32_clbk CGoldenBoxItemMgrGet_StarterBox_Count32_user(nullptr);
-        info::CGoldenBoxItemMgrInitialize34_ptr CGoldenBoxItemMgrInitialize34_next(nullptr);
-        info::CGoldenBoxItemMgrInitialize34_clbk CGoldenBoxItemMgrInitialize34_user(nullptr);
-        info::CGoldenBoxItemMgrInstance36_ptr CGoldenBoxItemMgrInstance36_next(nullptr);
-        info::CGoldenBoxItemMgrInstance36_clbk CGoldenBoxItemMgrInstance36_user(nullptr);
-        info::CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_ptr CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_next(nullptr);
-        info::CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_clbk CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_user(nullptr);
-        info::CGoldenBoxItemMgrLoad_Event_INI40_ptr CGoldenBoxItemMgrLoad_Event_INI40_next(nullptr);
-        info::CGoldenBoxItemMgrLoad_Event_INI40_clbk CGoldenBoxItemMgrLoad_Event_INI40_user(nullptr);
-        info::CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_ptr CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_next(nullptr);
-        info::CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_clbk CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_user(nullptr);
-        info::CGoldenBoxItemMgrLoop_Event44_ptr CGoldenBoxItemMgrLoop_Event44_next(nullptr);
-        info::CGoldenBoxItemMgrLoop_Event44_clbk CGoldenBoxItemMgrLoop_Event44_user(nullptr);
-        info::CGoldenBoxItemMgrPushDQSUpdate46_ptr CGoldenBoxItemMgrPushDQSUpdate46_next(nullptr);
-        info::CGoldenBoxItemMgrPushDQSUpdate46_clbk CGoldenBoxItemMgrPushDQSUpdate46_user(nullptr);
-        info::CGoldenBoxItemMgrRateCheck48_ptr CGoldenBoxItemMgrRateCheck48_next(nullptr);
-        info::CGoldenBoxItemMgrRateCheck48_clbk CGoldenBoxItemMgrRateCheck48_user(nullptr);
-        info::CGoldenBoxItemMgrSendMsg_RaceChat50_ptr CGoldenBoxItemMgrSendMsg_RaceChat50_next(nullptr);
-        info::CGoldenBoxItemMgrSendMsg_RaceChat50_clbk CGoldenBoxItemMgrSendMsg_RaceChat50_user(nullptr);
-        info::CGoldenBoxItemMgrSetDBSerial52_ptr CGoldenBoxItemMgrSetDBSerial52_next(nullptr);
-        info::CGoldenBoxItemMgrSetDBSerial52_clbk CGoldenBoxItemMgrSetDBSerial52_user(nullptr);
-        info::CGoldenBoxItemMgrSetGoldBoxItemIndex54_ptr CGoldenBoxItemMgrSetGoldBoxItemIndex54_next(nullptr);
-        info::CGoldenBoxItemMgrSetGoldBoxItemIndex54_clbk CGoldenBoxItemMgrSetGoldBoxItemIndex54_user(nullptr);
-        info::CGoldenBoxItemMgrSet_BoxItem_Count56_ptr CGoldenBoxItemMgrSet_BoxItem_Count56_next(nullptr);
-        info::CGoldenBoxItemMgrSet_BoxItem_Count56_clbk CGoldenBoxItemMgrSet_BoxItem_Count56_user(nullptr);
-        info::CGoldenBoxItemMgrSet_Box_Count58_ptr CGoldenBoxItemMgrSet_Box_Count58_next(nullptr);
-        info::CGoldenBoxItemMgrSet_Box_Count58_clbk CGoldenBoxItemMgrSet_Box_Count58_user(nullptr);
-        info::CGoldenBoxItemMgrSet_DCK60_ptr CGoldenBoxItemMgrSet_DCK60_next(nullptr);
-        info::CGoldenBoxItemMgrSet_DCK60_clbk CGoldenBoxItemMgrSet_DCK60_user(nullptr);
-        info::CGoldenBoxItemMgrSet_Event_Status62_ptr CGoldenBoxItemMgrSet_Event_Status62_next(nullptr);
-        info::CGoldenBoxItemMgrSet_Event_Status62_clbk CGoldenBoxItemMgrSet_Event_Status62_user(nullptr);
-        info::CGoldenBoxItemMgrSet_FromINIToStruct64_ptr CGoldenBoxItemMgrSet_FromINIToStruct64_next(nullptr);
-        info::CGoldenBoxItemMgrSet_FromINIToStruct64_clbk CGoldenBoxItemMgrSet_FromINIToStruct64_user(nullptr);
-        info::CGoldenBoxItemMgrSet_FromStruct66_ptr CGoldenBoxItemMgrSet_FromStruct66_next(nullptr);
-        info::CGoldenBoxItemMgrSet_FromStruct66_clbk CGoldenBoxItemMgrSet_FromStruct66_user(nullptr);
-        info::CGoldenBoxItemMgrSet_StarterBox_Count68_ptr CGoldenBoxItemMgrSet_StarterBox_Count68_next(nullptr);
-        info::CGoldenBoxItemMgrSet_StarterBox_Count68_clbk CGoldenBoxItemMgrSet_StarterBox_Count68_user(nullptr);
-        info::CGoldenBoxItemMgrSet_ToStruct70_ptr CGoldenBoxItemMgrSet_ToStruct70_next(nullptr);
-        info::CGoldenBoxItemMgrSet_ToStruct70_clbk CGoldenBoxItemMgrSet_ToStruct70_user(nullptr);
-        info::CGoldenBoxItemMgrStarterBox_InsertToInven72_ptr CGoldenBoxItemMgrStarterBox_InsertToInven72_next(nullptr);
-        info::CGoldenBoxItemMgrStarterBox_InsertToInven72_clbk CGoldenBoxItemMgrStarterBox_InsertToInven72_user(nullptr);
-        info::CGoldenBoxItemMgrSynchINIANDDB74_ptr CGoldenBoxItemMgrSynchINIANDDB74_next(nullptr);
-        info::CGoldenBoxItemMgrSynchINIANDDB74_clbk CGoldenBoxItemMgrSynchINIANDDB74_user(nullptr);
-        info::CGoldenBoxItemMgrWriteEventCouponLog76_ptr CGoldenBoxItemMgrWriteEventCouponLog76_next(nullptr);
-        info::CGoldenBoxItemMgrWriteEventCouponLog76_clbk CGoldenBoxItemMgrWriteEventCouponLog76_user(nullptr);
-        info::CGoldenBoxItemMgrWriteGetGoldBarLog78_ptr CGoldenBoxItemMgrWriteGetGoldBarLog78_next(nullptr);
-        info::CGoldenBoxItemMgrWriteGetGoldBarLog78_clbk CGoldenBoxItemMgrWriteGetGoldBarLog78_user(nullptr);
-        info::CGoldenBoxItemMgr_init_loggers80_ptr CGoldenBoxItemMgr_init_loggers80_next(nullptr);
-        info::CGoldenBoxItemMgr_init_loggers80_clbk CGoldenBoxItemMgr_init_loggers80_user(nullptr);
-        info::CGoldenBoxItemMgr_insert_to_inven82_ptr CGoldenBoxItemMgr_insert_to_inven82_next(nullptr);
-        info::CGoldenBoxItemMgr_insert_to_inven82_clbk CGoldenBoxItemMgr_insert_to_inven82_user(nullptr);
-        info::CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_ptr CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_next(nullptr);
-        info::CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_clbk CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_user(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemDataCopy2_ptr CGoldenBoxItemMgrBoxItemDataCopy2_next(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemDataCopy2_clbk CGoldenBoxItemMgrBoxItemDataCopy2_user(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemOpen4_ptr CGoldenBoxItemMgrBoxItemOpen4_next(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemOpen4_clbk CGoldenBoxItemMgrBoxItemOpen4_user(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemOpenEffectType6_ptr CGoldenBoxItemMgrBoxItemOpenEffectType6_next(nullptr);
+        static info::CGoldenBoxItemMgrBoxItemOpenEffectType6_clbk CGoldenBoxItemMgrBoxItemOpenEffectType6_user(nullptr);
+        static info::CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_ptr CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_next(nullptr);
+        static info::CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_clbk CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_user(nullptr);
+        static info::CGoldenBoxItemMgrCheck_Event_Status10_ptr CGoldenBoxItemMgrCheck_Event_Status10_next(nullptr);
+        static info::CGoldenBoxItemMgrCheck_Event_Status10_clbk CGoldenBoxItemMgrCheck_Event_Status10_user(nullptr);
+        static info::CGoldenBoxItemMgrCheck_Loaded_Event_Status12_ptr CGoldenBoxItemMgrCheck_Loaded_Event_Status12_next(nullptr);
+        static info::CGoldenBoxItemMgrCheck_Loaded_Event_Status12_clbk CGoldenBoxItemMgrCheck_Loaded_Event_Status12_user(nullptr);
+        static info::CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_ptr CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_next(nullptr);
+        static info::CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_clbk CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_user(nullptr);
+        static info::CGoldenBoxItemMgrGetGoldBoxItemIndex16_ptr CGoldenBoxItemMgrGetGoldBoxItemIndex16_next(nullptr);
+        static info::CGoldenBoxItemMgrGetGoldBoxItemIndex16_clbk CGoldenBoxItemMgrGetGoldBoxItemIndex16_user(nullptr);
+        static info::CGoldenBoxItemMgrGetGoldBoxItemPtr18_ptr CGoldenBoxItemMgrGetGoldBoxItemPtr18_next(nullptr);
+        static info::CGoldenBoxItemMgrGetGoldBoxItemPtr18_clbk CGoldenBoxItemMgrGetGoldBoxItemPtr18_user(nullptr);
+        static info::CGoldenBoxItemMgrGetLoopCount20_ptr CGoldenBoxItemMgrGetLoopCount20_next(nullptr);
+        static info::CGoldenBoxItemMgrGetLoopCount20_clbk CGoldenBoxItemMgrGetLoopCount20_user(nullptr);
+        static info::CGoldenBoxItemMgrGetOreItemTotalCnt22_ptr CGoldenBoxItemMgrGetOreItemTotalCnt22_next(nullptr);
+        static info::CGoldenBoxItemMgrGetOreItemTotalCnt22_clbk CGoldenBoxItemMgrGetOreItemTotalCnt22_user(nullptr);
+        static info::CGoldenBoxItemMgrGetStarterBoxCode24_ptr CGoldenBoxItemMgrGetStarterBoxCode24_next(nullptr);
+        static info::CGoldenBoxItemMgrGetStarterBoxCode24_clbk CGoldenBoxItemMgrGetStarterBoxCode24_user(nullptr);
+        static info::CGoldenBoxItemMgrGet_BoxItem_Count26_ptr CGoldenBoxItemMgrGet_BoxItem_Count26_next(nullptr);
+        static info::CGoldenBoxItemMgrGet_BoxItem_Count26_clbk CGoldenBoxItemMgrGet_BoxItem_Count26_user(nullptr);
+        static info::CGoldenBoxItemMgrGet_Box_Count28_ptr CGoldenBoxItemMgrGet_Box_Count28_next(nullptr);
+        static info::CGoldenBoxItemMgrGet_Box_Count28_clbk CGoldenBoxItemMgrGet_Box_Count28_user(nullptr);
+        static info::CGoldenBoxItemMgrGet_Event_Status30_ptr CGoldenBoxItemMgrGet_Event_Status30_next(nullptr);
+        static info::CGoldenBoxItemMgrGet_Event_Status30_clbk CGoldenBoxItemMgrGet_Event_Status30_user(nullptr);
+        static info::CGoldenBoxItemMgrGet_StarterBox_Count32_ptr CGoldenBoxItemMgrGet_StarterBox_Count32_next(nullptr);
+        static info::CGoldenBoxItemMgrGet_StarterBox_Count32_clbk CGoldenBoxItemMgrGet_StarterBox_Count32_user(nullptr);
+        static info::CGoldenBoxItemMgrInitialize34_ptr CGoldenBoxItemMgrInitialize34_next(nullptr);
+        static info::CGoldenBoxItemMgrInitialize34_clbk CGoldenBoxItemMgrInitialize34_user(nullptr);
+        static info::CGoldenBoxItemMgrInstance36_ptr CGoldenBoxItemMgrInstance36_next(nullptr);
+        static info::CGoldenBoxItemMgrInstance36_clbk CGoldenBoxItemMgrInstance36_user(nullptr);
+        static info::CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_ptr CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_next(nullptr);
+        static info::CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_clbk CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_user(nullptr);
+        static info::CGoldenBoxItemMgrLoad_Event_INI40_ptr CGoldenBoxItemMgrLoad_Event_INI40_next(nullptr);
+        static info::CGoldenBoxItemMgrLoad_Event_INI40_clbk CGoldenBoxItemMgrLoad_Event_INI40_user(nullptr);
+        static info::CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_ptr CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_next(nullptr);
+        static info::CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_clbk CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_user(nullptr);
+        static info::CGoldenBoxItemMgrLoop_Event44_ptr CGoldenBoxItemMgrLoop_Event44_next(nullptr);
+        static info::CGoldenBoxItemMgrLoop_Event44_clbk CGoldenBoxItemMgrLoop_Event44_user(nullptr);
+        static info::CGoldenBoxItemMgrPushDQSUpdate46_ptr CGoldenBoxItemMgrPushDQSUpdate46_next(nullptr);
+        static info::CGoldenBoxItemMgrPushDQSUpdate46_clbk CGoldenBoxItemMgrPushDQSUpdate46_user(nullptr);
+        static info::CGoldenBoxItemMgrRateCheck48_ptr CGoldenBoxItemMgrRateCheck48_next(nullptr);
+        static info::CGoldenBoxItemMgrRateCheck48_clbk CGoldenBoxItemMgrRateCheck48_user(nullptr);
+        static info::CGoldenBoxItemMgrSendMsg_RaceChat50_ptr CGoldenBoxItemMgrSendMsg_RaceChat50_next(nullptr);
+        static info::CGoldenBoxItemMgrSendMsg_RaceChat50_clbk CGoldenBoxItemMgrSendMsg_RaceChat50_user(nullptr);
+        static info::CGoldenBoxItemMgrSetDBSerial52_ptr CGoldenBoxItemMgrSetDBSerial52_next(nullptr);
+        static info::CGoldenBoxItemMgrSetDBSerial52_clbk CGoldenBoxItemMgrSetDBSerial52_user(nullptr);
+        static info::CGoldenBoxItemMgrSetGoldBoxItemIndex54_ptr CGoldenBoxItemMgrSetGoldBoxItemIndex54_next(nullptr);
+        static info::CGoldenBoxItemMgrSetGoldBoxItemIndex54_clbk CGoldenBoxItemMgrSetGoldBoxItemIndex54_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_BoxItem_Count56_ptr CGoldenBoxItemMgrSet_BoxItem_Count56_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_BoxItem_Count56_clbk CGoldenBoxItemMgrSet_BoxItem_Count56_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_Box_Count58_ptr CGoldenBoxItemMgrSet_Box_Count58_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_Box_Count58_clbk CGoldenBoxItemMgrSet_Box_Count58_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_DCK60_ptr CGoldenBoxItemMgrSet_DCK60_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_DCK60_clbk CGoldenBoxItemMgrSet_DCK60_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_Event_Status62_ptr CGoldenBoxItemMgrSet_Event_Status62_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_Event_Status62_clbk CGoldenBoxItemMgrSet_Event_Status62_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_FromINIToStruct64_ptr CGoldenBoxItemMgrSet_FromINIToStruct64_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_FromINIToStruct64_clbk CGoldenBoxItemMgrSet_FromINIToStruct64_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_FromStruct66_ptr CGoldenBoxItemMgrSet_FromStruct66_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_FromStruct66_clbk CGoldenBoxItemMgrSet_FromStruct66_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_StarterBox_Count68_ptr CGoldenBoxItemMgrSet_StarterBox_Count68_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_StarterBox_Count68_clbk CGoldenBoxItemMgrSet_StarterBox_Count68_user(nullptr);
+        static info::CGoldenBoxItemMgrSet_ToStruct70_ptr CGoldenBoxItemMgrSet_ToStruct70_next(nullptr);
+        static info::CGoldenBoxItemMgrSet_ToStruct70_clbk CGoldenBoxItemMgrSet_ToStruct70_user(nullptr);
+        static info::CGoldenBoxItemMgrStarterBox_InsertToInven72_ptr CGoldenBoxItemMgrStarterBox_InsertToInven72_next(nullptr);
+        static info::CGoldenBoxItemMgrStarterBox_InsertToInven72_clbk CGoldenBoxItemMgrStarterBox_InsertToInven72_user(nullptr);
+        static info::CGoldenBoxItemMgrSynchINIANDDB74_ptr CGoldenBoxItemMgrSynchINIANDDB74_next(nullptr);
+        static info::CGoldenBoxItemMgrSynchINIANDDB74_clbk CGoldenBoxItemMgrSynchINIANDDB74_user(nullptr);
+        static info::CGoldenBoxItemMgrWriteEventCouponLog76_ptr CGoldenBoxItemMgrWriteEventCouponLog76_next(nullptr);
+        static info::CGoldenBoxItemMgrWriteEventCouponLog76_clbk CGoldenBoxItemMgrWriteEventCouponLog76_user(nullptr);
+        static info::CGoldenBoxItemMgrWriteGetGoldBarLog78_ptr CGoldenBoxItemMgrWriteGetGoldBarLog78_next(nullptr);
+        static info::CGoldenBoxItemMgrWriteGetGoldBarLog78_clbk CGoldenBoxItemMgrWriteGetGoldBarLog78_user(nullptr);
+        static info::CGoldenBoxItemMgr_init_loggers80_ptr CGoldenBoxItemMgr_init_loggers80_next(nullptr);
+        static info::CGoldenBoxItemMgr_init_loggers80_clbk CGoldenBoxItemMgr_init_loggers80_user(nullptr);
+        static info::CGoldenBoxItemMgr_insert_to_inven82_ptr CGoldenBoxItemMgr_insert_to_inven82_next(nullptr);
+        static info::CGoldenBoxItemMgr_insert_to_inven82_clbk CGoldenBoxItemMgr_insert_to_inven82_user(nullptr);
+        static info::CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_ptr CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_next(nullptr);
+        static info::CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_clbk CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_user(nullptr);
         
-        void CGoldenBoxItemMgrBoxItemDataCopy2_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrBoxItemDataCopy2_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrBoxItemDataCopy2_user(_this, CGoldenBoxItemMgrBoxItemDataCopy2_next);
         };
-        struct _ItemExchange_fld::_output* CGoldenBoxItemMgrBoxItemOpen4_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
+        static struct _ItemExchange_fld::_output* CGoldenBoxItemMgrBoxItemOpen4_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
         {
            return CGoldenBoxItemMgrBoxItemOpen4_user(_this, byIndex, CGoldenBoxItemMgrBoxItemOpen4_next);
         };
-        void CGoldenBoxItemMgrBoxItemOpenEffectType6_wrapper(struct CGoldenBoxItemMgr* _this, char* szUseItem, char* szNewItem, char* pbyType, bool* bCircle)
+        static void CGoldenBoxItemMgrBoxItemOpenEffectType6_wrapper(struct CGoldenBoxItemMgr* _this, char* szUseItem, char* szNewItem, char* pbyType, bool* bCircle)
         {
            CGoldenBoxItemMgrBoxItemOpenEffectType6_user(_this, szUseItem, szNewItem, pbyType, bCircle, CGoldenBoxItemMgrBoxItemOpenEffectType6_next);
         };
-        void CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_user(_this, CGoldenBoxItemMgrctor_CGoldenBoxItemMgr8_next);
         };
-        void CGoldenBoxItemMgrCheck_Event_Status10_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrCheck_Event_Status10_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrCheck_Event_Status10_user(_this, CGoldenBoxItemMgrCheck_Event_Status10_next);
         };
-        void CGoldenBoxItemMgrCheck_Loaded_Event_Status12_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrCheck_Loaded_Event_Status12_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrCheck_Loaded_Event_Status12_user(_this, CGoldenBoxItemMgrCheck_Loaded_Event_Status12_next);
         };
-        struct _db_golden_box_item* CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_wrapper(struct CGoldenBoxItemMgr* _this)
+        static struct _db_golden_box_item* CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_user(_this, CGoldenBoxItemMgrGetGodBoxItemInfoPtr14_next);
         };
-        uint16_t CGoldenBoxItemMgrGetGoldBoxItemIndex16_wrapper(struct CGoldenBoxItemMgr* _this, uint16_t wIndex)
+        static uint16_t CGoldenBoxItemMgrGetGoldBoxItemIndex16_wrapper(struct CGoldenBoxItemMgr* _this, uint16_t wIndex)
         {
            return CGoldenBoxItemMgrGetGoldBoxItemIndex16_user(_this, wIndex, CGoldenBoxItemMgrGetGoldBoxItemIndex16_next);
         };
-        char* CGoldenBoxItemMgrGetGoldBoxItemPtr18_wrapper(struct CGoldenBoxItemMgr* _this)
+        static char* CGoldenBoxItemMgrGetGoldBoxItemPtr18_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGetGoldBoxItemPtr18_user(_this, CGoldenBoxItemMgrGetGoldBoxItemPtr18_next);
         };
-        char CGoldenBoxItemMgrGetLoopCount20_wrapper(struct CGoldenBoxItemMgr* _this)
+        static char CGoldenBoxItemMgrGetLoopCount20_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGetLoopCount20_user(_this, CGoldenBoxItemMgrGetLoopCount20_next);
         };
-        uint16_t CGoldenBoxItemMgrGetOreItemTotalCnt22_wrapper(struct CGoldenBoxItemMgr* _this)
+        static uint16_t CGoldenBoxItemMgrGetOreItemTotalCnt22_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGetOreItemTotalCnt22_user(_this, CGoldenBoxItemMgrGetOreItemTotalCnt22_next);
         };
-        char* CGoldenBoxItemMgrGetStarterBoxCode24_wrapper(struct CGoldenBoxItemMgr* _this, uint16_t wIndex)
+        static char* CGoldenBoxItemMgrGetStarterBoxCode24_wrapper(struct CGoldenBoxItemMgr* _this, uint16_t wIndex)
         {
            return CGoldenBoxItemMgrGetStarterBoxCode24_user(_this, wIndex, CGoldenBoxItemMgrGetStarterBoxCode24_next);
         };
-        uint16_t CGoldenBoxItemMgrGet_BoxItem_Count26_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex, unsigned int dwIndex)
+        static uint16_t CGoldenBoxItemMgrGet_BoxItem_Count26_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex, unsigned int dwIndex)
         {
            return CGoldenBoxItemMgrGet_BoxItem_Count26_user(_this, byIndex, dwIndex, CGoldenBoxItemMgrGet_BoxItem_Count26_next);
         };
-        uint16_t CGoldenBoxItemMgrGet_Box_Count28_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
+        static uint16_t CGoldenBoxItemMgrGet_Box_Count28_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
         {
            return CGoldenBoxItemMgrGet_Box_Count28_user(_this, byIndex, CGoldenBoxItemMgrGet_Box_Count28_next);
         };
-        char CGoldenBoxItemMgrGet_Event_Status30_wrapper(struct CGoldenBoxItemMgr* _this)
+        static char CGoldenBoxItemMgrGet_Event_Status30_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGet_Event_Status30_user(_this, CGoldenBoxItemMgrGet_Event_Status30_next);
         };
-        uint16_t CGoldenBoxItemMgrGet_StarterBox_Count32_wrapper(struct CGoldenBoxItemMgr* _this)
+        static uint16_t CGoldenBoxItemMgrGet_StarterBox_Count32_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrGet_StarterBox_Count32_user(_this, CGoldenBoxItemMgrGet_StarterBox_Count32_next);
         };
-        bool CGoldenBoxItemMgrInitialize34_wrapper(struct CGoldenBoxItemMgr* _this)
+        static bool CGoldenBoxItemMgrInitialize34_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrInitialize34_user(_this, CGoldenBoxItemMgrInitialize34_next);
         };
-        struct CGoldenBoxItemMgr* CGoldenBoxItemMgrInstance36_wrapper()
+        static struct CGoldenBoxItemMgr* CGoldenBoxItemMgrInstance36_wrapper()
         {
            return CGoldenBoxItemMgrInstance36_user(CGoldenBoxItemMgrInstance36_next);
         };
-        char CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne)
+        static char CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne)
         {
            return CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_user(_this, pOne, CGoldenBoxItemMgrIsBuyRaceBossGoldBox38_next);
         };
-        bool CGoldenBoxItemMgrLoad_Event_INI40_wrapper(struct CGoldenBoxItemMgr* _this, struct _golden_box_item_ini* pIni)
+        static bool CGoldenBoxItemMgrLoad_Event_INI40_wrapper(struct CGoldenBoxItemMgr* _this, struct _golden_box_item_ini* pIni)
         {
            return CGoldenBoxItemMgrLoad_Event_INI40_user(_this, pIni, CGoldenBoxItemMgrLoad_Event_INI40_next);
         };
-        bool CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_wrapper(struct CGoldenBoxItemMgr* _this)
+        static bool CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_user(_this, CGoldenBoxItemMgrLoad_Golden_Box_Item_Event42_next);
         };
-        void CGoldenBoxItemMgrLoop_Event44_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrLoop_Event44_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrLoop_Event44_user(_this, CGoldenBoxItemMgrLoop_Event44_next);
         };
-        void CGoldenBoxItemMgrPushDQSUpdate46_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrPushDQSUpdate46_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrPushDQSUpdate46_user(_this, CGoldenBoxItemMgrPushDQSUpdate46_next);
         };
-        void CGoldenBoxItemMgrRateCheck48_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
+        static void CGoldenBoxItemMgrRateCheck48_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
         {
            CGoldenBoxItemMgrRateCheck48_user(_this, byIndex, CGoldenBoxItemMgrRateCheck48_next);
         };
-        void CGoldenBoxItemMgrSendMsg_RaceChat50_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char* pwszChatData)
+        static void CGoldenBoxItemMgrSendMsg_RaceChat50_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char* pwszChatData)
         {
            CGoldenBoxItemMgrSendMsg_RaceChat50_user(_this, pOne, pwszChatData, CGoldenBoxItemMgrSendMsg_RaceChat50_next);
         };
-        void CGoldenBoxItemMgrSetDBSerial52_wrapper(struct CGoldenBoxItemMgr* _this, int nDBSerial)
+        static void CGoldenBoxItemMgrSetDBSerial52_wrapper(struct CGoldenBoxItemMgr* _this, int nDBSerial)
         {
            CGoldenBoxItemMgrSetDBSerial52_user(_this, nDBSerial, CGoldenBoxItemMgrSetDBSerial52_next);
         };
-        bool CGoldenBoxItemMgrSetGoldBoxItemIndex54_wrapper(struct CGoldenBoxItemMgr* _this)
+        static bool CGoldenBoxItemMgrSetGoldBoxItemIndex54_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrSetGoldBoxItemIndex54_user(_this, CGoldenBoxItemMgrSetGoldBoxItemIndex54_next);
         };
-        void CGoldenBoxItemMgrSet_BoxItem_Count56_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex, unsigned int dwIndex)
+        static void CGoldenBoxItemMgrSet_BoxItem_Count56_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex, unsigned int dwIndex)
         {
            CGoldenBoxItemMgrSet_BoxItem_Count56_user(_this, byIndex, dwIndex, CGoldenBoxItemMgrSet_BoxItem_Count56_next);
         };
-        void CGoldenBoxItemMgrSet_Box_Count58_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
+        static void CGoldenBoxItemMgrSet_Box_Count58_wrapper(struct CGoldenBoxItemMgr* _this, char byIndex)
         {
            CGoldenBoxItemMgrSet_Box_Count58_user(_this, byIndex, CGoldenBoxItemMgrSet_Box_Count58_next);
         };
-        void CGoldenBoxItemMgrSet_DCK60_wrapper(struct CGoldenBoxItemMgr* _this, char byDCK)
+        static void CGoldenBoxItemMgrSet_DCK60_wrapper(struct CGoldenBoxItemMgr* _this, char byDCK)
         {
            CGoldenBoxItemMgrSet_DCK60_user(_this, byDCK, CGoldenBoxItemMgrSet_DCK60_next);
         };
-        void CGoldenBoxItemMgrSet_Event_Status62_wrapper(struct CGoldenBoxItemMgr* _this, char byStatus)
+        static void CGoldenBoxItemMgrSet_Event_Status62_wrapper(struct CGoldenBoxItemMgr* _this, char byStatus)
         {
            CGoldenBoxItemMgrSet_Event_Status62_user(_this, byStatus, CGoldenBoxItemMgrSet_Event_Status62_next);
         };
-        void CGoldenBoxItemMgrSet_FromINIToStruct64_wrapper(struct CGoldenBoxItemMgr* _this, struct _golden_box_item_ini* pIni)
+        static void CGoldenBoxItemMgrSet_FromINIToStruct64_wrapper(struct CGoldenBoxItemMgr* _this, struct _golden_box_item_ini* pIni)
         {
            CGoldenBoxItemMgrSet_FromINIToStruct64_user(_this, pIni, CGoldenBoxItemMgrSet_FromINIToStruct64_next);
         };
-        void CGoldenBoxItemMgrSet_FromStruct66_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrSet_FromStruct66_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrSet_FromStruct66_user(_this, CGoldenBoxItemMgrSet_FromStruct66_next);
         };
-        void CGoldenBoxItemMgrSet_StarterBox_Count68_wrapper(struct CGoldenBoxItemMgr* _this, unsigned int dwNum, bool bAdd)
+        static void CGoldenBoxItemMgrSet_StarterBox_Count68_wrapper(struct CGoldenBoxItemMgr* _this, unsigned int dwNum, bool bAdd)
         {
            CGoldenBoxItemMgrSet_StarterBox_Count68_user(_this, dwNum, bAdd, CGoldenBoxItemMgrSet_StarterBox_Count68_next);
         };
-        void CGoldenBoxItemMgrSet_ToStruct70_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrSet_ToStruct70_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrSet_ToStruct70_user(_this, CGoldenBoxItemMgrSet_ToStruct70_next);
         };
-        bool CGoldenBoxItemMgrStarterBox_InsertToInven72_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char* szItemCode)
+        static bool CGoldenBoxItemMgrStarterBox_InsertToInven72_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char* szItemCode)
         {
            return CGoldenBoxItemMgrStarterBox_InsertToInven72_user(_this, pOne, szItemCode, CGoldenBoxItemMgrStarterBox_InsertToInven72_next);
         };
-        bool CGoldenBoxItemMgrSynchINIANDDB74_wrapper(struct CGoldenBoxItemMgr* _this)
+        static bool CGoldenBoxItemMgrSynchINIANDDB74_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgrSynchINIANDDB74_user(_this, CGoldenBoxItemMgrSynchINIANDDB74_next);
         };
-        void CGoldenBoxItemMgrWriteEventCouponLog76_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pItem)
+        static void CGoldenBoxItemMgrWriteEventCouponLog76_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pItem)
         {
            CGoldenBoxItemMgrWriteEventCouponLog76_user(_this, pOne, pItem, CGoldenBoxItemMgrWriteEventCouponLog76_next);
         };
-        void CGoldenBoxItemMgrWriteGetGoldBarLog78_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pItem)
+        static void CGoldenBoxItemMgrWriteGetGoldBarLog78_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pItem)
         {
            CGoldenBoxItemMgrWriteGetGoldBarLog78_user(_this, pOne, pItem, CGoldenBoxItemMgrWriteGetGoldBarLog78_next);
         };
-        bool CGoldenBoxItemMgr_init_loggers80_wrapper(struct CGoldenBoxItemMgr* _this)
+        static bool CGoldenBoxItemMgr_init_loggers80_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            return CGoldenBoxItemMgr_init_loggers80_user(_this, CGoldenBoxItemMgr_init_loggers80_next);
         };
-        bool CGoldenBoxItemMgr_insert_to_inven82_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char byTableCode, uint16_t wItemIndex)
+        static bool CGoldenBoxItemMgr_insert_to_inven82_wrapper(struct CGoldenBoxItemMgr* _this, struct CPlayer* pOne, char byTableCode, uint16_t wItemIndex)
         {
            return CGoldenBoxItemMgr_insert_to_inven82_user(_this, pOne, byTableCode, wItemIndex, CGoldenBoxItemMgr_insert_to_inven82_next);
         };
-        void CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_wrapper(struct CGoldenBoxItemMgr* _this)
+        static void CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_wrapper(struct CGoldenBoxItemMgr* _this)
         {
            CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_user(_this, CGoldenBoxItemMgrdtor_CGoldenBoxItemMgr84_next);
         };
         
-        hook_record CGoldenBoxItemMgr_functions[] = {
+        static hook_record CGoldenBoxItemMgr_functions[] = {
         {   (LPVOID)0x140415500L,
             (LPVOID *)&CGoldenBoxItemMgrBoxItemDataCopy2_user,
             (LPVOID *)&CGoldenBoxItemMgrBoxItemDataCopy2_next,
@@ -476,5 +476,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

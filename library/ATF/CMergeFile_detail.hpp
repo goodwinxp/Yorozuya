@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMergeFileGetFileOffset1_ptr CMergeFileGetFileOffset1_next(nullptr);
-        info::CMergeFileGetFileOffset1_clbk CMergeFileGetFileOffset1_user(nullptr);
-        info::CMergeFileGetFileSize2_ptr CMergeFileGetFileSize2_next(nullptr);
-        info::CMergeFileGetFileSize2_clbk CMergeFileGetFileSize2_user(nullptr);
-        info::CMergeFileIsExistFile3_ptr CMergeFileIsExistFile3_next(nullptr);
-        info::CMergeFileIsExistFile3_clbk CMergeFileIsExistFile3_user(nullptr);
-        info::CMergeFileLoadFileOffset4_ptr CMergeFileLoadFileOffset4_next(nullptr);
-        info::CMergeFileLoadFileOffset4_clbk CMergeFileLoadFileOffset4_user(nullptr);
-        info::CMergeFileLoadMergeFileHeader5_ptr CMergeFileLoadMergeFileHeader5_next(nullptr);
-        info::CMergeFileLoadMergeFileHeader5_clbk CMergeFileLoadMergeFileHeader5_user(nullptr);
-        info::CMergeFileReleaseMergeFileHeader6_ptr CMergeFileReleaseMergeFileHeader6_next(nullptr);
-        info::CMergeFileReleaseMergeFileHeader6_clbk CMergeFileReleaseMergeFileHeader6_user(nullptr);
+        static info::CMergeFileGetFileOffset1_ptr CMergeFileGetFileOffset1_next(nullptr);
+        static info::CMergeFileGetFileOffset1_clbk CMergeFileGetFileOffset1_user(nullptr);
+        static info::CMergeFileGetFileSize2_ptr CMergeFileGetFileSize2_next(nullptr);
+        static info::CMergeFileGetFileSize2_clbk CMergeFileGetFileSize2_user(nullptr);
+        static info::CMergeFileIsExistFile3_ptr CMergeFileIsExistFile3_next(nullptr);
+        static info::CMergeFileIsExistFile3_clbk CMergeFileIsExistFile3_user(nullptr);
+        static info::CMergeFileLoadFileOffset4_ptr CMergeFileLoadFileOffset4_next(nullptr);
+        static info::CMergeFileLoadFileOffset4_clbk CMergeFileLoadFileOffset4_user(nullptr);
+        static info::CMergeFileLoadMergeFileHeader5_ptr CMergeFileLoadMergeFileHeader5_next(nullptr);
+        static info::CMergeFileLoadMergeFileHeader5_clbk CMergeFileLoadMergeFileHeader5_user(nullptr);
+        static info::CMergeFileReleaseMergeFileHeader6_ptr CMergeFileReleaseMergeFileHeader6_next(nullptr);
+        static info::CMergeFileReleaseMergeFileHeader6_clbk CMergeFileReleaseMergeFileHeader6_user(nullptr);
         
-        uint32_t CMergeFileGetFileOffset1_wrapper(struct CMergeFile* _this, uint32_t arg_0, char* arg_1)
+        static uint32_t CMergeFileGetFileOffset1_wrapper(struct CMergeFile* _this, uint32_t arg_0, char* arg_1)
         {
            return CMergeFileGetFileOffset1_user(_this, arg_0, arg_1, CMergeFileGetFileOffset1_next);
         };
-        uint32_t CMergeFileGetFileSize2_wrapper(struct CMergeFile* _this, uint32_t arg_0, char* arg_1)
+        static uint32_t CMergeFileGetFileSize2_wrapper(struct CMergeFile* _this, uint32_t arg_0, char* arg_1)
         {
            return CMergeFileGetFileSize2_user(_this, arg_0, arg_1, CMergeFileGetFileSize2_next);
         };
-        int CMergeFileIsExistFile3_wrapper(struct CMergeFile* _this, char* arg_0)
+        static int CMergeFileIsExistFile3_wrapper(struct CMergeFile* _this, char* arg_0)
         {
            return CMergeFileIsExistFile3_user(_this, arg_0, CMergeFileIsExistFile3_next);
         };
-        struct _iobuf* CMergeFileLoadFileOffset4_wrapper(struct CMergeFile* _this, char* Mode, char* arg_0)
+        static struct _iobuf* CMergeFileLoadFileOffset4_wrapper(struct CMergeFile* _this, char* Mode, char* arg_0)
         {
            return CMergeFileLoadFileOffset4_user(_this, Mode, arg_0, CMergeFileLoadFileOffset4_next);
         };
-        int64_t CMergeFileLoadMergeFileHeader5_wrapper(struct CMergeFile* _this, char* arg_0)
+        static int64_t CMergeFileLoadMergeFileHeader5_wrapper(struct CMergeFile* _this, char* arg_0)
         {
            return CMergeFileLoadMergeFileHeader5_user(_this, arg_0, CMergeFileLoadMergeFileHeader5_next);
         };
-        void CMergeFileReleaseMergeFileHeader6_wrapper(struct CMergeFile* _this)
+        static void CMergeFileReleaseMergeFileHeader6_wrapper(struct CMergeFile* _this)
         {
            CMergeFileReleaseMergeFileHeader6_user(_this, CMergeFileReleaseMergeFileHeader6_next);
         };
         
-        hook_record CMergeFile_functions[] = {
+        static hook_record CMergeFile_functions[] = {
         {   (LPVOID)0x14050a060L,
             (LPVOID *)&CMergeFileGetFileOffset1_user,
             (LPVOID *)&CMergeFileGetFileOffset1_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataBRctor_CNationSettingDataBR2_ptr CNationSettingDataBRctor_CNationSettingDataBR2_next(nullptr);
-        info::CNationSettingDataBRctor_CNationSettingDataBR2_clbk CNationSettingDataBRctor_CNationSettingDataBR2_user(nullptr);
-        info::CNationSettingDataBRCheckEnterWorldRequest4_ptr CNationSettingDataBRCheckEnterWorldRequest4_next(nullptr);
-        info::CNationSettingDataBRCheckEnterWorldRequest4_clbk CNationSettingDataBRCheckEnterWorldRequest4_user(nullptr);
-        info::CNationSettingDataBRCreateBilling6_ptr CNationSettingDataBRCreateBilling6_next(nullptr);
-        info::CNationSettingDataBRCreateBilling6_clbk CNationSettingDataBRCreateBilling6_user(nullptr);
-        info::CNationSettingDataBRCreateWorker8_ptr CNationSettingDataBRCreateWorker8_next(nullptr);
-        info::CNationSettingDataBRCreateWorker8_clbk CNationSettingDataBRCreateWorker8_user(nullptr);
-        info::CNationSettingDataBRGetCashItemPrice10_ptr CNationSettingDataBRGetCashItemPrice10_next(nullptr);
-        info::CNationSettingDataBRGetCashItemPrice10_clbk CNationSettingDataBRGetCashItemPrice10_user(nullptr);
-        info::CNationSettingDataBRGetItemName12_ptr CNationSettingDataBRGetItemName12_next(nullptr);
-        info::CNationSettingDataBRGetItemName12_clbk CNationSettingDataBRGetItemName12_user(nullptr);
-        info::CNationSettingDataBRInit14_ptr CNationSettingDataBRInit14_next(nullptr);
-        info::CNationSettingDataBRInit14_clbk CNationSettingDataBRInit14_user(nullptr);
-        info::CNationSettingDataBRLoop16_ptr CNationSettingDataBRLoop16_next(nullptr);
-        info::CNationSettingDataBRLoop16_clbk CNationSettingDataBRLoop16_user(nullptr);
-        info::CNationSettingDataBRReadSystemPass18_ptr CNationSettingDataBRReadSystemPass18_next(nullptr);
-        info::CNationSettingDataBRReadSystemPass18_clbk CNationSettingDataBRReadSystemPass18_user(nullptr);
+        static info::CNationSettingDataBRctor_CNationSettingDataBR2_ptr CNationSettingDataBRctor_CNationSettingDataBR2_next(nullptr);
+        static info::CNationSettingDataBRctor_CNationSettingDataBR2_clbk CNationSettingDataBRctor_CNationSettingDataBR2_user(nullptr);
+        static info::CNationSettingDataBRCheckEnterWorldRequest4_ptr CNationSettingDataBRCheckEnterWorldRequest4_next(nullptr);
+        static info::CNationSettingDataBRCheckEnterWorldRequest4_clbk CNationSettingDataBRCheckEnterWorldRequest4_user(nullptr);
+        static info::CNationSettingDataBRCreateBilling6_ptr CNationSettingDataBRCreateBilling6_next(nullptr);
+        static info::CNationSettingDataBRCreateBilling6_clbk CNationSettingDataBRCreateBilling6_user(nullptr);
+        static info::CNationSettingDataBRCreateWorker8_ptr CNationSettingDataBRCreateWorker8_next(nullptr);
+        static info::CNationSettingDataBRCreateWorker8_clbk CNationSettingDataBRCreateWorker8_user(nullptr);
+        static info::CNationSettingDataBRGetCashItemPrice10_ptr CNationSettingDataBRGetCashItemPrice10_next(nullptr);
+        static info::CNationSettingDataBRGetCashItemPrice10_clbk CNationSettingDataBRGetCashItemPrice10_user(nullptr);
+        static info::CNationSettingDataBRGetItemName12_ptr CNationSettingDataBRGetItemName12_next(nullptr);
+        static info::CNationSettingDataBRGetItemName12_clbk CNationSettingDataBRGetItemName12_user(nullptr);
+        static info::CNationSettingDataBRInit14_ptr CNationSettingDataBRInit14_next(nullptr);
+        static info::CNationSettingDataBRInit14_clbk CNationSettingDataBRInit14_user(nullptr);
+        static info::CNationSettingDataBRLoop16_ptr CNationSettingDataBRLoop16_next(nullptr);
+        static info::CNationSettingDataBRLoop16_clbk CNationSettingDataBRLoop16_user(nullptr);
+        static info::CNationSettingDataBRReadSystemPass18_ptr CNationSettingDataBRReadSystemPass18_next(nullptr);
+        static info::CNationSettingDataBRReadSystemPass18_clbk CNationSettingDataBRReadSystemPass18_user(nullptr);
         
-        void CNationSettingDataBRctor_CNationSettingDataBR2_wrapper(struct CNationSettingDataBR* _this)
+        static void CNationSettingDataBRctor_CNationSettingDataBR2_wrapper(struct CNationSettingDataBR* _this)
         {
            CNationSettingDataBRctor_CNationSettingDataBR2_user(_this, CNationSettingDataBRctor_CNationSettingDataBR2_next);
         };
-        bool CNationSettingDataBRCheckEnterWorldRequest4_wrapper(struct CNationSettingDataBR* _this, int n, char* pBuf)
+        static bool CNationSettingDataBRCheckEnterWorldRequest4_wrapper(struct CNationSettingDataBR* _this, int n, char* pBuf)
         {
            return CNationSettingDataBRCheckEnterWorldRequest4_user(_this, n, pBuf, CNationSettingDataBRCheckEnterWorldRequest4_next);
         };
-        struct CBilling* CNationSettingDataBRCreateBilling6_wrapper(struct CNationSettingDataBR* _this)
+        static struct CBilling* CNationSettingDataBRCreateBilling6_wrapper(struct CNationSettingDataBR* _this)
         {
            return CNationSettingDataBRCreateBilling6_user(_this, CNationSettingDataBRCreateBilling6_next);
         };
-        struct CashDbWorker* CNationSettingDataBRCreateWorker8_wrapper(struct CNationSettingDataBR* _this)
+        static struct CashDbWorker* CNationSettingDataBRCreateWorker8_wrapper(struct CNationSettingDataBR* _this)
         {
            return CNationSettingDataBRCreateWorker8_user(_this, CNationSettingDataBRCreateWorker8_next);
         };
-        int CNationSettingDataBRGetCashItemPrice10_wrapper(struct CNationSettingDataBR* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataBRGetCashItemPrice10_wrapper(struct CNationSettingDataBR* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataBRGetCashItemPrice10_user(_this, pFld, CNationSettingDataBRGetCashItemPrice10_next);
         };
-        char* CNationSettingDataBRGetItemName12_wrapper(struct CNationSettingDataBR* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataBRGetItemName12_wrapper(struct CNationSettingDataBR* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataBRGetItemName12_user(_this, pFld, CNationSettingDataBRGetItemName12_next);
         };
-        int CNationSettingDataBRInit14_wrapper(struct CNationSettingDataBR* _this)
+        static int CNationSettingDataBRInit14_wrapper(struct CNationSettingDataBR* _this)
         {
            return CNationSettingDataBRInit14_user(_this, CNationSettingDataBRInit14_next);
         };
-        void CNationSettingDataBRLoop16_wrapper(struct CNationSettingDataBR* _this)
+        static void CNationSettingDataBRLoop16_wrapper(struct CNationSettingDataBR* _this)
         {
            CNationSettingDataBRLoop16_user(_this, CNationSettingDataBRLoop16_next);
         };
-        bool CNationSettingDataBRReadSystemPass18_wrapper(struct CNationSettingDataBR* _this)
+        static bool CNationSettingDataBRReadSystemPass18_wrapper(struct CNationSettingDataBR* _this)
         {
            return CNationSettingDataBRReadSystemPass18_user(_this, CNationSettingDataBRReadSystemPass18_next);
         };
         
-        hook_record CNationSettingDataBR_functions[] = {
+        static hook_record CNationSettingDataBR_functions[] = {
         {   (LPVOID)0x14022f6a0L,
             (LPVOID *)&CNationSettingDataBRctor_CNationSettingDataBR2_user,
             (LPVOID *)&CNationSettingDataBRctor_CNationSettingDataBR2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

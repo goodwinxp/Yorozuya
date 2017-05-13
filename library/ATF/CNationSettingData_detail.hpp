@@ -8,213 +8,213 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDatactor_CNationSettingData2_ptr CNationSettingDatactor_CNationSettingData2_next(nullptr);
-        info::CNationSettingDatactor_CNationSettingData2_clbk CNationSettingDatactor_CNationSettingData2_user(nullptr);
-        info::CNationSettingDataCheckDBCSCompleteString4_ptr CNationSettingDataCheckDBCSCompleteString4_next(nullptr);
-        info::CNationSettingDataCheckDBCSCompleteString4_clbk CNationSettingDataCheckDBCSCompleteString4_user(nullptr);
-        info::CNationSettingDataCheckEnterWorldRequest6_ptr CNationSettingDataCheckEnterWorldRequest6_next(nullptr);
-        info::CNationSettingDataCheckEnterWorldRequest6_clbk CNationSettingDataCheckEnterWorldRequest6_user(nullptr);
-        info::CNationSettingDataCreateBilling8_ptr CNationSettingDataCreateBilling8_next(nullptr);
-        info::CNationSettingDataCreateBilling8_clbk CNationSettingDataCreateBilling8_user(nullptr);
-        info::CNationSettingDataCreateComplete10_ptr CNationSettingDataCreateComplete10_next(nullptr);
-        info::CNationSettingDataCreateComplete10_clbk CNationSettingDataCreateComplete10_user(nullptr);
-        info::CNationSettingDataCreateWorker12_ptr CNationSettingDataCreateWorker12_next(nullptr);
-        info::CNationSettingDataCreateWorker12_clbk CNationSettingDataCreateWorker12_user(nullptr);
-        info::CNationSettingDataGetCashItemPrice14_ptr CNationSettingDataGetCashItemPrice14_next(nullptr);
-        info::CNationSettingDataGetCashItemPrice14_clbk CNationSettingDataGetCashItemPrice14_user(nullptr);
-        info::CNationSettingDataGetFireGuardEnableSetting16_ptr CNationSettingDataGetFireGuardEnableSetting16_next(nullptr);
-        info::CNationSettingDataGetFireGuardEnableSetting16_clbk CNationSettingDataGetFireGuardEnableSetting16_user(nullptr);
-        info::CNationSettingDataGetGameGuardSystem18_ptr CNationSettingDataGetGameGuardSystem18_next(nullptr);
-        info::CNationSettingDataGetGameGuardSystem18_clbk CNationSettingDataGetGameGuardSystem18_user(nullptr);
-        info::CNationSettingDataGetItemName20_ptr CNationSettingDataGetItemName20_next(nullptr);
-        info::CNationSettingDataGetItemName20_clbk CNationSettingDataGetItemName20_user(nullptr);
-        info::CNationSettingDataGetNoneString22_ptr CNationSettingDataGetNoneString22_next(nullptr);
-        info::CNationSettingDataGetNoneString22_clbk CNationSettingDataGetNoneString22_user(nullptr);
-        info::CNationSettingDataGetTimeLimitEnableSetting24_ptr CNationSettingDataGetTimeLimitEnableSetting24_next(nullptr);
-        info::CNationSettingDataGetTimeLimitEnableSetting24_clbk CNationSettingDataGetTimeLimitEnableSetting24_user(nullptr);
-        info::CNationSettingDataInit26_ptr CNationSettingDataInit26_next(nullptr);
-        info::CNationSettingDataInit26_clbk CNationSettingDataInit26_user(nullptr);
-        info::CNationSettingDataIsApplyPcbangPrimium28_ptr CNationSettingDataIsApplyPcbangPrimium28_next(nullptr);
-        info::CNationSettingDataIsApplyPcbangPrimium28_clbk CNationSettingDataIsApplyPcbangPrimium28_user(nullptr);
-        info::CNationSettingDataIsCashDBDSNSetted30_ptr CNationSettingDataIsCashDBDSNSetted30_next(nullptr);
-        info::CNationSettingDataIsCashDBDSNSetted30_clbk CNationSettingDataIsCashDBDSNSetted30_user(nullptr);
-        info::CNationSettingDataIsCashDBInit32_ptr CNationSettingDataIsCashDBInit32_next(nullptr);
-        info::CNationSettingDataIsCashDBInit32_clbk CNationSettingDataIsCashDBInit32_user(nullptr);
-        info::CNationSettingDataIsCashDBUseExtRef34_ptr CNationSettingDataIsCashDBUseExtRef34_next(nullptr);
-        info::CNationSettingDataIsCashDBUseExtRef34_clbk CNationSettingDataIsCashDBUseExtRef34_user(nullptr);
-        info::CNationSettingDataIsNormalChar36_ptr CNationSettingDataIsNormalChar36_next(nullptr);
-        info::CNationSettingDataIsNormalChar36_clbk CNationSettingDataIsNormalChar36_user(nullptr);
-        info::CNationSettingDataIsNormalString38_ptr CNationSettingDataIsNormalString38_next(nullptr);
-        info::CNationSettingDataIsNormalString38_clbk CNationSettingDataIsNormalString38_user(nullptr);
-        info::CNationSettingDataIsNormalString40_ptr CNationSettingDataIsNormalString40_next(nullptr);
-        info::CNationSettingDataIsNormalString40_clbk CNationSettingDataIsNormalString40_user(nullptr);
-        info::CNationSettingDataIsNormalStringDefProc42_ptr CNationSettingDataIsNormalStringDefProc42_next(nullptr);
-        info::CNationSettingDataIsNormalStringDefProc42_clbk CNationSettingDataIsNormalStringDefProc42_user(nullptr);
-        info::CNationSettingDataIsNormalStringDefProc44_ptr CNationSettingDataIsNormalStringDefProc44_next(nullptr);
-        info::CNationSettingDataIsNormalStringDefProc44_clbk CNationSettingDataIsNormalStringDefProc44_user(nullptr);
-        info::CNationSettingDataIsPersonalFreeFixedAmountBillingType46_ptr CNationSettingDataIsPersonalFreeFixedAmountBillingType46_next(nullptr);
-        info::CNationSettingDataIsPersonalFreeFixedAmountBillingType46_clbk CNationSettingDataIsPersonalFreeFixedAmountBillingType46_user(nullptr);
-        info::CNationSettingDataLoop48_ptr CNationSettingDataLoop48_next(nullptr);
-        info::CNationSettingDataLoop48_clbk CNationSettingDataLoop48_user(nullptr);
-        info::CNationSettingDataNetClose50_ptr CNationSettingDataNetClose50_next(nullptr);
-        info::CNationSettingDataNetClose50_clbk CNationSettingDataNetClose50_user(nullptr);
-        info::CNationSettingDataReadSystemPass52_ptr CNationSettingDataReadSystemPass52_next(nullptr);
-        info::CNationSettingDataReadSystemPass52_clbk CNationSettingDataReadSystemPass52_user(nullptr);
-        info::CNationSettingDataSendCashDBDSNRequest54_ptr CNationSettingDataSendCashDBDSNRequest54_next(nullptr);
-        info::CNationSettingDataSendCashDBDSNRequest54_clbk CNationSettingDataSendCashDBDSNRequest54_user(nullptr);
-        info::CNationSettingDataSetCahsDBUseExtRefFlag56_ptr CNationSettingDataSetCahsDBUseExtRefFlag56_next(nullptr);
-        info::CNationSettingDataSetCahsDBUseExtRefFlag56_clbk CNationSettingDataSetCahsDBUseExtRefFlag56_user(nullptr);
-        info::CNationSettingDataSetCashDBDSN58_ptr CNationSettingDataSetCashDBDSN58_next(nullptr);
-        info::CNationSettingDataSetCashDBDSN58_clbk CNationSettingDataSetCashDBDSN58_user(nullptr);
-        info::CNationSettingDataSetCashDBDSNSetFlag60_ptr CNationSettingDataSetCashDBDSNSetFlag60_next(nullptr);
-        info::CNationSettingDataSetCashDBDSNSetFlag60_clbk CNationSettingDataSetCashDBDSNSetFlag60_user(nullptr);
-        info::CNationSettingDataSetCashDBInitFlag62_ptr CNationSettingDataSetCashDBInitFlag62_next(nullptr);
-        info::CNationSettingDataSetCashDBInitFlag62_clbk CNationSettingDataSetCashDBInitFlag62_user(nullptr);
-        info::CNationSettingDataSetUnitPassiveValue64_ptr CNationSettingDataSetUnitPassiveValue64_next(nullptr);
-        info::CNationSettingDataSetUnitPassiveValue64_clbk CNationSettingDataSetUnitPassiveValue64_user(nullptr);
-        info::CNationSettingDataValidMacAddress66_ptr CNationSettingDataValidMacAddress66_next(nullptr);
-        info::CNationSettingDataValidMacAddress66_clbk CNationSettingDataValidMacAddress66_user(nullptr);
-        info::CNationSettingDatadtor_CNationSettingData70_ptr CNationSettingDatadtor_CNationSettingData70_next(nullptr);
-        info::CNationSettingDatadtor_CNationSettingData70_clbk CNationSettingDatadtor_CNationSettingData70_user(nullptr);
+        static info::CNationSettingDatactor_CNationSettingData2_ptr CNationSettingDatactor_CNationSettingData2_next(nullptr);
+        static info::CNationSettingDatactor_CNationSettingData2_clbk CNationSettingDatactor_CNationSettingData2_user(nullptr);
+        static info::CNationSettingDataCheckDBCSCompleteString4_ptr CNationSettingDataCheckDBCSCompleteString4_next(nullptr);
+        static info::CNationSettingDataCheckDBCSCompleteString4_clbk CNationSettingDataCheckDBCSCompleteString4_user(nullptr);
+        static info::CNationSettingDataCheckEnterWorldRequest6_ptr CNationSettingDataCheckEnterWorldRequest6_next(nullptr);
+        static info::CNationSettingDataCheckEnterWorldRequest6_clbk CNationSettingDataCheckEnterWorldRequest6_user(nullptr);
+        static info::CNationSettingDataCreateBilling8_ptr CNationSettingDataCreateBilling8_next(nullptr);
+        static info::CNationSettingDataCreateBilling8_clbk CNationSettingDataCreateBilling8_user(nullptr);
+        static info::CNationSettingDataCreateComplete10_ptr CNationSettingDataCreateComplete10_next(nullptr);
+        static info::CNationSettingDataCreateComplete10_clbk CNationSettingDataCreateComplete10_user(nullptr);
+        static info::CNationSettingDataCreateWorker12_ptr CNationSettingDataCreateWorker12_next(nullptr);
+        static info::CNationSettingDataCreateWorker12_clbk CNationSettingDataCreateWorker12_user(nullptr);
+        static info::CNationSettingDataGetCashItemPrice14_ptr CNationSettingDataGetCashItemPrice14_next(nullptr);
+        static info::CNationSettingDataGetCashItemPrice14_clbk CNationSettingDataGetCashItemPrice14_user(nullptr);
+        static info::CNationSettingDataGetFireGuardEnableSetting16_ptr CNationSettingDataGetFireGuardEnableSetting16_next(nullptr);
+        static info::CNationSettingDataGetFireGuardEnableSetting16_clbk CNationSettingDataGetFireGuardEnableSetting16_user(nullptr);
+        static info::CNationSettingDataGetGameGuardSystem18_ptr CNationSettingDataGetGameGuardSystem18_next(nullptr);
+        static info::CNationSettingDataGetGameGuardSystem18_clbk CNationSettingDataGetGameGuardSystem18_user(nullptr);
+        static info::CNationSettingDataGetItemName20_ptr CNationSettingDataGetItemName20_next(nullptr);
+        static info::CNationSettingDataGetItemName20_clbk CNationSettingDataGetItemName20_user(nullptr);
+        static info::CNationSettingDataGetNoneString22_ptr CNationSettingDataGetNoneString22_next(nullptr);
+        static info::CNationSettingDataGetNoneString22_clbk CNationSettingDataGetNoneString22_user(nullptr);
+        static info::CNationSettingDataGetTimeLimitEnableSetting24_ptr CNationSettingDataGetTimeLimitEnableSetting24_next(nullptr);
+        static info::CNationSettingDataGetTimeLimitEnableSetting24_clbk CNationSettingDataGetTimeLimitEnableSetting24_user(nullptr);
+        static info::CNationSettingDataInit26_ptr CNationSettingDataInit26_next(nullptr);
+        static info::CNationSettingDataInit26_clbk CNationSettingDataInit26_user(nullptr);
+        static info::CNationSettingDataIsApplyPcbangPrimium28_ptr CNationSettingDataIsApplyPcbangPrimium28_next(nullptr);
+        static info::CNationSettingDataIsApplyPcbangPrimium28_clbk CNationSettingDataIsApplyPcbangPrimium28_user(nullptr);
+        static info::CNationSettingDataIsCashDBDSNSetted30_ptr CNationSettingDataIsCashDBDSNSetted30_next(nullptr);
+        static info::CNationSettingDataIsCashDBDSNSetted30_clbk CNationSettingDataIsCashDBDSNSetted30_user(nullptr);
+        static info::CNationSettingDataIsCashDBInit32_ptr CNationSettingDataIsCashDBInit32_next(nullptr);
+        static info::CNationSettingDataIsCashDBInit32_clbk CNationSettingDataIsCashDBInit32_user(nullptr);
+        static info::CNationSettingDataIsCashDBUseExtRef34_ptr CNationSettingDataIsCashDBUseExtRef34_next(nullptr);
+        static info::CNationSettingDataIsCashDBUseExtRef34_clbk CNationSettingDataIsCashDBUseExtRef34_user(nullptr);
+        static info::CNationSettingDataIsNormalChar36_ptr CNationSettingDataIsNormalChar36_next(nullptr);
+        static info::CNationSettingDataIsNormalChar36_clbk CNationSettingDataIsNormalChar36_user(nullptr);
+        static info::CNationSettingDataIsNormalString38_ptr CNationSettingDataIsNormalString38_next(nullptr);
+        static info::CNationSettingDataIsNormalString38_clbk CNationSettingDataIsNormalString38_user(nullptr);
+        static info::CNationSettingDataIsNormalString40_ptr CNationSettingDataIsNormalString40_next(nullptr);
+        static info::CNationSettingDataIsNormalString40_clbk CNationSettingDataIsNormalString40_user(nullptr);
+        static info::CNationSettingDataIsNormalStringDefProc42_ptr CNationSettingDataIsNormalStringDefProc42_next(nullptr);
+        static info::CNationSettingDataIsNormalStringDefProc42_clbk CNationSettingDataIsNormalStringDefProc42_user(nullptr);
+        static info::CNationSettingDataIsNormalStringDefProc44_ptr CNationSettingDataIsNormalStringDefProc44_next(nullptr);
+        static info::CNationSettingDataIsNormalStringDefProc44_clbk CNationSettingDataIsNormalStringDefProc44_user(nullptr);
+        static info::CNationSettingDataIsPersonalFreeFixedAmountBillingType46_ptr CNationSettingDataIsPersonalFreeFixedAmountBillingType46_next(nullptr);
+        static info::CNationSettingDataIsPersonalFreeFixedAmountBillingType46_clbk CNationSettingDataIsPersonalFreeFixedAmountBillingType46_user(nullptr);
+        static info::CNationSettingDataLoop48_ptr CNationSettingDataLoop48_next(nullptr);
+        static info::CNationSettingDataLoop48_clbk CNationSettingDataLoop48_user(nullptr);
+        static info::CNationSettingDataNetClose50_ptr CNationSettingDataNetClose50_next(nullptr);
+        static info::CNationSettingDataNetClose50_clbk CNationSettingDataNetClose50_user(nullptr);
+        static info::CNationSettingDataReadSystemPass52_ptr CNationSettingDataReadSystemPass52_next(nullptr);
+        static info::CNationSettingDataReadSystemPass52_clbk CNationSettingDataReadSystemPass52_user(nullptr);
+        static info::CNationSettingDataSendCashDBDSNRequest54_ptr CNationSettingDataSendCashDBDSNRequest54_next(nullptr);
+        static info::CNationSettingDataSendCashDBDSNRequest54_clbk CNationSettingDataSendCashDBDSNRequest54_user(nullptr);
+        static info::CNationSettingDataSetCahsDBUseExtRefFlag56_ptr CNationSettingDataSetCahsDBUseExtRefFlag56_next(nullptr);
+        static info::CNationSettingDataSetCahsDBUseExtRefFlag56_clbk CNationSettingDataSetCahsDBUseExtRefFlag56_user(nullptr);
+        static info::CNationSettingDataSetCashDBDSN58_ptr CNationSettingDataSetCashDBDSN58_next(nullptr);
+        static info::CNationSettingDataSetCashDBDSN58_clbk CNationSettingDataSetCashDBDSN58_user(nullptr);
+        static info::CNationSettingDataSetCashDBDSNSetFlag60_ptr CNationSettingDataSetCashDBDSNSetFlag60_next(nullptr);
+        static info::CNationSettingDataSetCashDBDSNSetFlag60_clbk CNationSettingDataSetCashDBDSNSetFlag60_user(nullptr);
+        static info::CNationSettingDataSetCashDBInitFlag62_ptr CNationSettingDataSetCashDBInitFlag62_next(nullptr);
+        static info::CNationSettingDataSetCashDBInitFlag62_clbk CNationSettingDataSetCashDBInitFlag62_user(nullptr);
+        static info::CNationSettingDataSetUnitPassiveValue64_ptr CNationSettingDataSetUnitPassiveValue64_next(nullptr);
+        static info::CNationSettingDataSetUnitPassiveValue64_clbk CNationSettingDataSetUnitPassiveValue64_user(nullptr);
+        static info::CNationSettingDataValidMacAddress66_ptr CNationSettingDataValidMacAddress66_next(nullptr);
+        static info::CNationSettingDataValidMacAddress66_clbk CNationSettingDataValidMacAddress66_user(nullptr);
+        static info::CNationSettingDatadtor_CNationSettingData70_ptr CNationSettingDatadtor_CNationSettingData70_next(nullptr);
+        static info::CNationSettingDatadtor_CNationSettingData70_clbk CNationSettingDatadtor_CNationSettingData70_user(nullptr);
         
-        void CNationSettingDatactor_CNationSettingData2_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDatactor_CNationSettingData2_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDatactor_CNationSettingData2_user(_this, CNationSettingDatactor_CNationSettingData2_next);
         };
-        bool CNationSettingDataCheckDBCSCompleteString4_wrapper(struct CNationSettingData* _this, int nCodePage, char* strData, uint64_t* pCharacterCount)
+        static bool CNationSettingDataCheckDBCSCompleteString4_wrapper(struct CNationSettingData* _this, int nCodePage, char* strData, uint64_t* pCharacterCount)
         {
            return CNationSettingDataCheckDBCSCompleteString4_user(_this, nCodePage, strData, pCharacterCount, CNationSettingDataCheckDBCSCompleteString4_next);
         };
-        bool CNationSettingDataCheckEnterWorldRequest6_wrapper(struct CNationSettingData* _this, int n, char* pBuf)
+        static bool CNationSettingDataCheckEnterWorldRequest6_wrapper(struct CNationSettingData* _this, int n, char* pBuf)
         {
            return CNationSettingDataCheckEnterWorldRequest6_user(_this, n, pBuf, CNationSettingDataCheckEnterWorldRequest6_next);
         };
-        struct CBilling* CNationSettingDataCreateBilling8_wrapper(struct CNationSettingData* _this)
+        static struct CBilling* CNationSettingDataCreateBilling8_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataCreateBilling8_user(_this, CNationSettingDataCreateBilling8_next);
         };
-        void CNationSettingDataCreateComplete10_wrapper(struct CNationSettingData* _this, struct CPlayer* pOne)
+        static void CNationSettingDataCreateComplete10_wrapper(struct CNationSettingData* _this, struct CPlayer* pOne)
         {
            CNationSettingDataCreateComplete10_user(_this, pOne, CNationSettingDataCreateComplete10_next);
         };
-        struct CashDbWorker* CNationSettingDataCreateWorker12_wrapper(struct CNationSettingData* _this)
+        static struct CashDbWorker* CNationSettingDataCreateWorker12_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataCreateWorker12_user(_this, CNationSettingDataCreateWorker12_next);
         };
-        int CNationSettingDataGetCashItemPrice14_wrapper(struct CNationSettingData* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataGetCashItemPrice14_wrapper(struct CNationSettingData* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataGetCashItemPrice14_user(_this, pFld, CNationSettingDataGetCashItemPrice14_next);
         };
-        bool CNationSettingDataGetFireGuardEnableSetting16_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataGetFireGuardEnableSetting16_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataGetFireGuardEnableSetting16_user(_this, CNationSettingDataGetFireGuardEnableSetting16_next);
         };
-        struct INationGameGuardSystem* CNationSettingDataGetGameGuardSystem18_wrapper(struct CNationSettingData* _this)
+        static struct INationGameGuardSystem* CNationSettingDataGetGameGuardSystem18_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataGetGameGuardSystem18_user(_this, CNationSettingDataGetGameGuardSystem18_next);
         };
-        char* CNationSettingDataGetItemName20_wrapper(struct CNationSettingData* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataGetItemName20_wrapper(struct CNationSettingData* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataGetItemName20_user(_this, pFld, CNationSettingDataGetItemName20_next);
         };
-        char* CNationSettingDataGetNoneString22_wrapper(struct CNationSettingData* _this)
+        static char* CNationSettingDataGetNoneString22_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataGetNoneString22_user(_this, CNationSettingDataGetNoneString22_next);
         };
-        bool CNationSettingDataGetTimeLimitEnableSetting24_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataGetTimeLimitEnableSetting24_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataGetTimeLimitEnableSetting24_user(_this, CNationSettingDataGetTimeLimitEnableSetting24_next);
         };
-        int CNationSettingDataInit26_wrapper(struct CNationSettingData* _this)
+        static int CNationSettingDataInit26_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataInit26_user(_this, CNationSettingDataInit26_next);
         };
-        bool CNationSettingDataIsApplyPcbangPrimium28_wrapper(struct CNationSettingData* _this, struct CPlayer* pUser)
+        static bool CNationSettingDataIsApplyPcbangPrimium28_wrapper(struct CNationSettingData* _this, struct CPlayer* pUser)
         {
            return CNationSettingDataIsApplyPcbangPrimium28_user(_this, pUser, CNationSettingDataIsApplyPcbangPrimium28_next);
         };
-        bool CNationSettingDataIsCashDBDSNSetted30_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataIsCashDBDSNSetted30_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataIsCashDBDSNSetted30_user(_this, CNationSettingDataIsCashDBDSNSetted30_next);
         };
-        bool CNationSettingDataIsCashDBInit32_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataIsCashDBInit32_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataIsCashDBInit32_user(_this, CNationSettingDataIsCashDBInit32_next);
         };
-        bool CNationSettingDataIsCashDBUseExtRef34_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataIsCashDBUseExtRef34_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataIsCashDBUseExtRef34_user(_this, CNationSettingDataIsCashDBUseExtRef34_next);
         };
-        bool CNationSettingDataIsNormalChar36_wrapper(struct CNationSettingData* _this, wchar_t wcChar)
+        static bool CNationSettingDataIsNormalChar36_wrapper(struct CNationSettingData* _this, wchar_t wcChar)
         {
            return CNationSettingDataIsNormalChar36_user(_this, wcChar, CNationSettingDataIsNormalChar36_next);
         };
-        bool CNationSettingDataIsNormalString38_wrapper(struct CNationSettingData* _this, char* szString)
+        static bool CNationSettingDataIsNormalString38_wrapper(struct CNationSettingData* _this, char* szString)
         {
            return CNationSettingDataIsNormalString38_user(_this, szString, CNationSettingDataIsNormalString38_next);
         };
-        bool CNationSettingDataIsNormalString40_wrapper(struct CNationSettingData* _this, wchar_t* wszString)
+        static bool CNationSettingDataIsNormalString40_wrapper(struct CNationSettingData* _this, wchar_t* wszString)
         {
            return CNationSettingDataIsNormalString40_user(_this, wszString, CNationSettingDataIsNormalString40_next);
         };
-        bool CNationSettingDataIsNormalStringDefProc42_wrapper(struct CNationSettingData* _this, char* szString, char* szException)
+        static bool CNationSettingDataIsNormalStringDefProc42_wrapper(struct CNationSettingData* _this, char* szString, char* szException)
         {
            return CNationSettingDataIsNormalStringDefProc42_user(_this, szString, szException, CNationSettingDataIsNormalStringDefProc42_next);
         };
-        bool CNationSettingDataIsNormalStringDefProc44_wrapper(struct CNationSettingData* _this, wchar_t* wszString, wchar_t* wszException)
+        static bool CNationSettingDataIsNormalStringDefProc44_wrapper(struct CNationSettingData* _this, wchar_t* wszString, wchar_t* wszException)
         {
            return CNationSettingDataIsNormalStringDefProc44_user(_this, wszString, wszException, CNationSettingDataIsNormalStringDefProc44_next);
         };
-        bool CNationSettingDataIsPersonalFreeFixedAmountBillingType46_wrapper(struct CNationSettingData* _this, int16_t* pDest1, int16_t* pDest2)
+        static bool CNationSettingDataIsPersonalFreeFixedAmountBillingType46_wrapper(struct CNationSettingData* _this, int16_t* pDest1, int16_t* pDest2)
         {
            return CNationSettingDataIsPersonalFreeFixedAmountBillingType46_user(_this, pDest1, pDest2, CNationSettingDataIsPersonalFreeFixedAmountBillingType46_next);
         };
-        void CNationSettingDataLoop48_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDataLoop48_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDataLoop48_user(_this, CNationSettingDataLoop48_next);
         };
-        void CNationSettingDataNetClose50_wrapper(struct CNationSettingData* _this, struct CPlayer* pOne)
+        static void CNationSettingDataNetClose50_wrapper(struct CNationSettingData* _this, struct CPlayer* pOne)
         {
            CNationSettingDataNetClose50_user(_this, pOne, CNationSettingDataNetClose50_next);
         };
-        bool CNationSettingDataReadSystemPass52_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataReadSystemPass52_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataReadSystemPass52_user(_this, CNationSettingDataReadSystemPass52_next);
         };
-        void CNationSettingDataSendCashDBDSNRequest54_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDataSendCashDBDSNRequest54_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDataSendCashDBDSNRequest54_user(_this, CNationSettingDataSendCashDBDSNRequest54_next);
         };
-        void CNationSettingDataSetCahsDBUseExtRefFlag56_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDataSetCahsDBUseExtRefFlag56_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDataSetCahsDBUseExtRefFlag56_user(_this, CNationSettingDataSetCahsDBUseExtRefFlag56_next);
         };
-        void CNationSettingDataSetCashDBDSN58_wrapper(struct CNationSettingData* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
+        static void CNationSettingDataSetCashDBDSN58_wrapper(struct CNationSettingData* _this, char* szIP, char* szDBName, char* szAccount, char* szPassword, unsigned int dwPort)
         {
            CNationSettingDataSetCashDBDSN58_user(_this, szIP, szDBName, szAccount, szPassword, dwPort, CNationSettingDataSetCashDBDSN58_next);
         };
-        void CNationSettingDataSetCashDBDSNSetFlag60_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDataSetCashDBDSNSetFlag60_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDataSetCashDBDSNSetFlag60_user(_this, CNationSettingDataSetCashDBDSNSetFlag60_next);
         };
-        void CNationSettingDataSetCashDBInitFlag62_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDataSetCashDBInitFlag62_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDataSetCashDBInitFlag62_user(_this, CNationSettingDataSetCashDBInitFlag62_next);
         };
-        void CNationSettingDataSetUnitPassiveValue64_wrapper(struct CNationSettingData* _this, float* fUnitPv_DefFc)
+        static void CNationSettingDataSetUnitPassiveValue64_wrapper(struct CNationSettingData* _this, float* fUnitPv_DefFc)
         {
            CNationSettingDataSetUnitPassiveValue64_user(_this, fUnitPv_DefFc, CNationSettingDataSetUnitPassiveValue64_next);
         };
-        bool CNationSettingDataValidMacAddress66_wrapper(struct CNationSettingData* _this)
+        static bool CNationSettingDataValidMacAddress66_wrapper(struct CNationSettingData* _this)
         {
            return CNationSettingDataValidMacAddress66_user(_this, CNationSettingDataValidMacAddress66_next);
         };
-        void CNationSettingDatadtor_CNationSettingData70_wrapper(struct CNationSettingData* _this)
+        static void CNationSettingDatadtor_CNationSettingData70_wrapper(struct CNationSettingData* _this)
         {
            CNationSettingDatadtor_CNationSettingData70_user(_this, CNationSettingDatadtor_CNationSettingData70_next);
         };
         
-        hook_record CNationSettingData_functions[] = {
+        static hook_record CNationSettingData_functions[] = {
         {   (LPVOID)0x1402119c0L,
             (LPVOID *)&CNationSettingDatactor_CNationSettingData2_user,
             (LPVOID *)&CNationSettingDatactor_CNationSettingData2_next,
@@ -388,5 +388,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

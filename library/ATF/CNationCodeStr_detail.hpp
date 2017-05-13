@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationCodeStrctor_CNationCodeStr2_ptr CNationCodeStrctor_CNationCodeStr2_next(nullptr);
-        info::CNationCodeStrctor_CNationCodeStr2_clbk CNationCodeStrctor_CNationCodeStr2_user(nullptr);
-        info::CNationCodeStrGetKey4_ptr CNationCodeStrGetKey4_next(nullptr);
-        info::CNationCodeStrGetKey4_clbk CNationCodeStrGetKey4_user(nullptr);
-        info::CNationCodeStrGetStr6_ptr CNationCodeStrGetStr6_next(nullptr);
-        info::CNationCodeStrGetStr6_clbk CNationCodeStrGetStr6_user(nullptr);
-        info::CNationCodeStrIsNULL8_ptr CNationCodeStrIsNULL8_next(nullptr);
-        info::CNationCodeStrIsNULL8_clbk CNationCodeStrIsNULL8_user(nullptr);
-        info::CNationCodeStrdtor_CNationCodeStr12_ptr CNationCodeStrdtor_CNationCodeStr12_next(nullptr);
-        info::CNationCodeStrdtor_CNationCodeStr12_clbk CNationCodeStrdtor_CNationCodeStr12_user(nullptr);
+        static info::CNationCodeStrctor_CNationCodeStr2_ptr CNationCodeStrctor_CNationCodeStr2_next(nullptr);
+        static info::CNationCodeStrctor_CNationCodeStr2_clbk CNationCodeStrctor_CNationCodeStr2_user(nullptr);
+        static info::CNationCodeStrGetKey4_ptr CNationCodeStrGetKey4_next(nullptr);
+        static info::CNationCodeStrGetKey4_clbk CNationCodeStrGetKey4_user(nullptr);
+        static info::CNationCodeStrGetStr6_ptr CNationCodeStrGetStr6_next(nullptr);
+        static info::CNationCodeStrGetStr6_clbk CNationCodeStrGetStr6_user(nullptr);
+        static info::CNationCodeStrIsNULL8_ptr CNationCodeStrIsNULL8_next(nullptr);
+        static info::CNationCodeStrIsNULL8_clbk CNationCodeStrIsNULL8_user(nullptr);
+        static info::CNationCodeStrdtor_CNationCodeStr12_ptr CNationCodeStrdtor_CNationCodeStr12_next(nullptr);
+        static info::CNationCodeStrdtor_CNationCodeStr12_clbk CNationCodeStrdtor_CNationCodeStr12_user(nullptr);
         
-        void CNationCodeStrctor_CNationCodeStr2_wrapper(struct CNationCodeStr* _this, int iCode, char* szCodeStr)
+        static void CNationCodeStrctor_CNationCodeStr2_wrapper(struct CNationCodeStr* _this, int iCode, char* szCodeStr)
         {
            CNationCodeStrctor_CNationCodeStr2_user(_this, iCode, szCodeStr, CNationCodeStrctor_CNationCodeStr2_next);
         };
-        int CNationCodeStrGetKey4_wrapper(struct CNationCodeStr* _this)
+        static int CNationCodeStrGetKey4_wrapper(struct CNationCodeStr* _this)
         {
            return CNationCodeStrGetKey4_user(_this, CNationCodeStrGetKey4_next);
         };
-        char* CNationCodeStrGetStr6_wrapper(struct CNationCodeStr* _this)
+        static char* CNationCodeStrGetStr6_wrapper(struct CNationCodeStr* _this)
         {
            return CNationCodeStrGetStr6_user(_this, CNationCodeStrGetStr6_next);
         };
-        bool CNationCodeStrIsNULL8_wrapper(struct CNationCodeStr* _this)
+        static bool CNationCodeStrIsNULL8_wrapper(struct CNationCodeStr* _this)
         {
            return CNationCodeStrIsNULL8_user(_this, CNationCodeStrIsNULL8_next);
         };
-        void CNationCodeStrdtor_CNationCodeStr12_wrapper(struct CNationCodeStr* _this)
+        static void CNationCodeStrdtor_CNationCodeStr12_wrapper(struct CNationCodeStr* _this)
         {
            CNationCodeStrdtor_CNationCodeStr12_user(_this, CNationCodeStrdtor_CNationCodeStr12_next);
         };
         
-        hook_record CNationCodeStr_functions[] = {
+        static hook_record CNationCodeStr_functions[] = {
         {   (LPVOID)0x14020abe0L,
             (LPVOID *)&CNationCodeStrctor_CNationCodeStr2_user,
             (LPVOID *)&CNationCodeStrctor_CNationCodeStr2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

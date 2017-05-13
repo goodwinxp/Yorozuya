@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterAggroMgrctor_CMonsterAggroMgr2_ptr CMonsterAggroMgrctor_CMonsterAggroMgr2_next(nullptr);
-        info::CMonsterAggroMgrctor_CMonsterAggroMgr2_clbk CMonsterAggroMgrctor_CMonsterAggroMgr2_user(nullptr);
-        info::CMonsterAggroMgrGetKingPowerDamageCharacter4_ptr CMonsterAggroMgrGetKingPowerDamageCharacter4_next(nullptr);
-        info::CMonsterAggroMgrGetKingPowerDamageCharacter4_clbk CMonsterAggroMgrGetKingPowerDamageCharacter4_user(nullptr);
-        info::CMonsterAggroMgrGetTopAggroCharacter6_ptr CMonsterAggroMgrGetTopAggroCharacter6_next(nullptr);
-        info::CMonsterAggroMgrGetTopAggroCharacter6_clbk CMonsterAggroMgrGetTopAggroCharacter6_user(nullptr);
-        info::CMonsterAggroMgrGetTopDamageCharacter8_ptr CMonsterAggroMgrGetTopDamageCharacter8_next(nullptr);
-        info::CMonsterAggroMgrGetTopDamageCharacter8_clbk CMonsterAggroMgrGetTopDamageCharacter8_user(nullptr);
-        info::CMonsterAggroMgrInit10_ptr CMonsterAggroMgrInit10_next(nullptr);
-        info::CMonsterAggroMgrInit10_clbk CMonsterAggroMgrInit10_user(nullptr);
-        info::CMonsterAggroMgrOnlyOnceInit12_ptr CMonsterAggroMgrOnlyOnceInit12_next(nullptr);
-        info::CMonsterAggroMgrOnlyOnceInit12_clbk CMonsterAggroMgrOnlyOnceInit12_user(nullptr);
-        info::CMonsterAggroMgrProcess14_ptr CMonsterAggroMgrProcess14_next(nullptr);
-        info::CMonsterAggroMgrProcess14_clbk CMonsterAggroMgrProcess14_user(nullptr);
-        info::CMonsterAggroMgrResetAggro16_ptr CMonsterAggroMgrResetAggro16_next(nullptr);
-        info::CMonsterAggroMgrResetAggro16_clbk CMonsterAggroMgrResetAggro16_user(nullptr);
-        info::CMonsterAggroMgrSearchAggroNode18_ptr CMonsterAggroMgrSearchAggroNode18_next(nullptr);
-        info::CMonsterAggroMgrSearchAggroNode18_clbk CMonsterAggroMgrSearchAggroNode18_user(nullptr);
-        info::CMonsterAggroMgrSendChangeAggroData20_ptr CMonsterAggroMgrSendChangeAggroData20_next(nullptr);
-        info::CMonsterAggroMgrSendChangeAggroData20_clbk CMonsterAggroMgrSendChangeAggroData20_user(nullptr);
-        info::CMonsterAggroMgrSetAggro22_ptr CMonsterAggroMgrSetAggro22_next(nullptr);
-        info::CMonsterAggroMgrSetAggro22_clbk CMonsterAggroMgrSetAggro22_user(nullptr);
-        info::CMonsterAggroMgrSetTopAggroCharacter24_ptr CMonsterAggroMgrSetTopAggroCharacter24_next(nullptr);
-        info::CMonsterAggroMgrSetTopAggroCharacter24_clbk CMonsterAggroMgrSetTopAggroCharacter24_user(nullptr);
-        info::CMonsterAggroMgrShortRankDelay26_ptr CMonsterAggroMgrShortRankDelay26_next(nullptr);
-        info::CMonsterAggroMgrShortRankDelay26_clbk CMonsterAggroMgrShortRankDelay26_user(nullptr);
-        info::CMonsterAggroMgr_GetBlinkNode28_ptr CMonsterAggroMgr_GetBlinkNode28_next(nullptr);
-        info::CMonsterAggroMgr_GetBlinkNode28_clbk CMonsterAggroMgr_GetBlinkNode28_user(nullptr);
-        info::CMonsterAggroMgr_SearchAggroNode30_ptr CMonsterAggroMgr_SearchAggroNode30_next(nullptr);
-        info::CMonsterAggroMgr_SearchAggroNode30_clbk CMonsterAggroMgr_SearchAggroNode30_user(nullptr);
-        info::CMonsterAggroMgr_ShortRank32_ptr CMonsterAggroMgr_ShortRank32_next(nullptr);
-        info::CMonsterAggroMgr_ShortRank32_clbk CMonsterAggroMgr_ShortRank32_user(nullptr);
-        info::CMonsterAggroMgrdtor_CMonsterAggroMgr34_ptr CMonsterAggroMgrdtor_CMonsterAggroMgr34_next(nullptr);
-        info::CMonsterAggroMgrdtor_CMonsterAggroMgr34_clbk CMonsterAggroMgrdtor_CMonsterAggroMgr34_user(nullptr);
+        static info::CMonsterAggroMgrctor_CMonsterAggroMgr2_ptr CMonsterAggroMgrctor_CMonsterAggroMgr2_next(nullptr);
+        static info::CMonsterAggroMgrctor_CMonsterAggroMgr2_clbk CMonsterAggroMgrctor_CMonsterAggroMgr2_user(nullptr);
+        static info::CMonsterAggroMgrGetKingPowerDamageCharacter4_ptr CMonsterAggroMgrGetKingPowerDamageCharacter4_next(nullptr);
+        static info::CMonsterAggroMgrGetKingPowerDamageCharacter4_clbk CMonsterAggroMgrGetKingPowerDamageCharacter4_user(nullptr);
+        static info::CMonsterAggroMgrGetTopAggroCharacter6_ptr CMonsterAggroMgrGetTopAggroCharacter6_next(nullptr);
+        static info::CMonsterAggroMgrGetTopAggroCharacter6_clbk CMonsterAggroMgrGetTopAggroCharacter6_user(nullptr);
+        static info::CMonsterAggroMgrGetTopDamageCharacter8_ptr CMonsterAggroMgrGetTopDamageCharacter8_next(nullptr);
+        static info::CMonsterAggroMgrGetTopDamageCharacter8_clbk CMonsterAggroMgrGetTopDamageCharacter8_user(nullptr);
+        static info::CMonsterAggroMgrInit10_ptr CMonsterAggroMgrInit10_next(nullptr);
+        static info::CMonsterAggroMgrInit10_clbk CMonsterAggroMgrInit10_user(nullptr);
+        static info::CMonsterAggroMgrOnlyOnceInit12_ptr CMonsterAggroMgrOnlyOnceInit12_next(nullptr);
+        static info::CMonsterAggroMgrOnlyOnceInit12_clbk CMonsterAggroMgrOnlyOnceInit12_user(nullptr);
+        static info::CMonsterAggroMgrProcess14_ptr CMonsterAggroMgrProcess14_next(nullptr);
+        static info::CMonsterAggroMgrProcess14_clbk CMonsterAggroMgrProcess14_user(nullptr);
+        static info::CMonsterAggroMgrResetAggro16_ptr CMonsterAggroMgrResetAggro16_next(nullptr);
+        static info::CMonsterAggroMgrResetAggro16_clbk CMonsterAggroMgrResetAggro16_user(nullptr);
+        static info::CMonsterAggroMgrSearchAggroNode18_ptr CMonsterAggroMgrSearchAggroNode18_next(nullptr);
+        static info::CMonsterAggroMgrSearchAggroNode18_clbk CMonsterAggroMgrSearchAggroNode18_user(nullptr);
+        static info::CMonsterAggroMgrSendChangeAggroData20_ptr CMonsterAggroMgrSendChangeAggroData20_next(nullptr);
+        static info::CMonsterAggroMgrSendChangeAggroData20_clbk CMonsterAggroMgrSendChangeAggroData20_user(nullptr);
+        static info::CMonsterAggroMgrSetAggro22_ptr CMonsterAggroMgrSetAggro22_next(nullptr);
+        static info::CMonsterAggroMgrSetAggro22_clbk CMonsterAggroMgrSetAggro22_user(nullptr);
+        static info::CMonsterAggroMgrSetTopAggroCharacter24_ptr CMonsterAggroMgrSetTopAggroCharacter24_next(nullptr);
+        static info::CMonsterAggroMgrSetTopAggroCharacter24_clbk CMonsterAggroMgrSetTopAggroCharacter24_user(nullptr);
+        static info::CMonsterAggroMgrShortRankDelay26_ptr CMonsterAggroMgrShortRankDelay26_next(nullptr);
+        static info::CMonsterAggroMgrShortRankDelay26_clbk CMonsterAggroMgrShortRankDelay26_user(nullptr);
+        static info::CMonsterAggroMgr_GetBlinkNode28_ptr CMonsterAggroMgr_GetBlinkNode28_next(nullptr);
+        static info::CMonsterAggroMgr_GetBlinkNode28_clbk CMonsterAggroMgr_GetBlinkNode28_user(nullptr);
+        static info::CMonsterAggroMgr_SearchAggroNode30_ptr CMonsterAggroMgr_SearchAggroNode30_next(nullptr);
+        static info::CMonsterAggroMgr_SearchAggroNode30_clbk CMonsterAggroMgr_SearchAggroNode30_user(nullptr);
+        static info::CMonsterAggroMgr_ShortRank32_ptr CMonsterAggroMgr_ShortRank32_next(nullptr);
+        static info::CMonsterAggroMgr_ShortRank32_clbk CMonsterAggroMgr_ShortRank32_user(nullptr);
+        static info::CMonsterAggroMgrdtor_CMonsterAggroMgr34_ptr CMonsterAggroMgrdtor_CMonsterAggroMgr34_next(nullptr);
+        static info::CMonsterAggroMgrdtor_CMonsterAggroMgr34_clbk CMonsterAggroMgrdtor_CMonsterAggroMgr34_user(nullptr);
         
-        void CMonsterAggroMgrctor_CMonsterAggroMgr2_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrctor_CMonsterAggroMgr2_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrctor_CMonsterAggroMgr2_user(_this, CMonsterAggroMgrctor_CMonsterAggroMgr2_next);
         };
-        struct CCharacter* CMonsterAggroMgrGetKingPowerDamageCharacter4_wrapper(struct CMonsterAggroMgr* _this)
+        static struct CCharacter* CMonsterAggroMgrGetKingPowerDamageCharacter4_wrapper(struct CMonsterAggroMgr* _this)
         {
            return CMonsterAggroMgrGetKingPowerDamageCharacter4_user(_this, CMonsterAggroMgrGetKingPowerDamageCharacter4_next);
         };
-        struct CCharacter* CMonsterAggroMgrGetTopAggroCharacter6_wrapper(struct CMonsterAggroMgr* _this)
+        static struct CCharacter* CMonsterAggroMgrGetTopAggroCharacter6_wrapper(struct CMonsterAggroMgr* _this)
         {
            return CMonsterAggroMgrGetTopAggroCharacter6_user(_this, CMonsterAggroMgrGetTopAggroCharacter6_next);
         };
-        struct CCharacter* CMonsterAggroMgrGetTopDamageCharacter8_wrapper(struct CMonsterAggroMgr* _this)
+        static struct CCharacter* CMonsterAggroMgrGetTopDamageCharacter8_wrapper(struct CMonsterAggroMgr* _this)
         {
            return CMonsterAggroMgrGetTopDamageCharacter8_user(_this, CMonsterAggroMgrGetTopDamageCharacter8_next);
         };
-        void CMonsterAggroMgrInit10_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrInit10_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrInit10_user(_this, CMonsterAggroMgrInit10_next);
         };
-        void CMonsterAggroMgrOnlyOnceInit12_wrapper(struct CMonsterAggroMgr* _this, struct CMonster* pMonster)
+        static void CMonsterAggroMgrOnlyOnceInit12_wrapper(struct CMonsterAggroMgr* _this, struct CMonster* pMonster)
         {
            CMonsterAggroMgrOnlyOnceInit12_user(_this, pMonster, CMonsterAggroMgrOnlyOnceInit12_next);
         };
-        void CMonsterAggroMgrProcess14_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrProcess14_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrProcess14_user(_this, CMonsterAggroMgrProcess14_next);
         };
-        void CMonsterAggroMgrResetAggro16_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrResetAggro16_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrResetAggro16_user(_this, CMonsterAggroMgrResetAggro16_next);
         };
-        struct CAggroNode* CMonsterAggroMgrSearchAggroNode18_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter)
+        static struct CAggroNode* CMonsterAggroMgrSearchAggroNode18_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter)
         {
            return CMonsterAggroMgrSearchAggroNode18_user(_this, pCharacter, CMonsterAggroMgrSearchAggroNode18_next);
         };
-        void CMonsterAggroMgrSendChangeAggroData20_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrSendChangeAggroData20_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrSendChangeAggroData20_user(_this, CMonsterAggroMgrSendChangeAggroData20_next);
         };
-        void CMonsterAggroMgrSetAggro22_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter, int nDam, int nAttackType, unsigned int dwAttackSerial, int bOtherPlayerSupport, int bTempSkill)
+        static void CMonsterAggroMgrSetAggro22_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter, int nDam, int nAttackType, unsigned int dwAttackSerial, int bOtherPlayerSupport, int bTempSkill)
         {
            CMonsterAggroMgrSetAggro22_user(_this, pCharacter, nDam, nAttackType, dwAttackSerial, bOtherPlayerSupport, bTempSkill, CMonsterAggroMgrSetAggro22_next);
         };
-        void CMonsterAggroMgrSetTopAggroCharacter24_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* p)
+        static void CMonsterAggroMgrSetTopAggroCharacter24_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* p)
         {
            CMonsterAggroMgrSetTopAggroCharacter24_user(_this, p, CMonsterAggroMgrSetTopAggroCharacter24_next);
         };
-        void CMonsterAggroMgrShortRankDelay26_wrapper(struct CMonsterAggroMgr* _this, unsigned int dwDelayTime)
+        static void CMonsterAggroMgrShortRankDelay26_wrapper(struct CMonsterAggroMgr* _this, unsigned int dwDelayTime)
         {
            CMonsterAggroMgrShortRankDelay26_user(_this, dwDelayTime, CMonsterAggroMgrShortRankDelay26_next);
         };
-        struct CAggroNode* CMonsterAggroMgr_GetBlinkNode28_wrapper(struct CMonsterAggroMgr* _this)
+        static struct CAggroNode* CMonsterAggroMgr_GetBlinkNode28_wrapper(struct CMonsterAggroMgr* _this)
         {
            return CMonsterAggroMgr_GetBlinkNode28_user(_this, CMonsterAggroMgr_GetBlinkNode28_next);
         };
-        struct CAggroNode* CMonsterAggroMgr_SearchAggroNode30_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter)
+        static struct CAggroNode* CMonsterAggroMgr_SearchAggroNode30_wrapper(struct CMonsterAggroMgr* _this, struct CCharacter* pCharacter)
         {
            return CMonsterAggroMgr_SearchAggroNode30_user(_this, pCharacter, CMonsterAggroMgr_SearchAggroNode30_next);
         };
-        void CMonsterAggroMgr_ShortRank32_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgr_ShortRank32_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgr_ShortRank32_user(_this, CMonsterAggroMgr_ShortRank32_next);
         };
-        void CMonsterAggroMgrdtor_CMonsterAggroMgr34_wrapper(struct CMonsterAggroMgr* _this)
+        static void CMonsterAggroMgrdtor_CMonsterAggroMgr34_wrapper(struct CMonsterAggroMgr* _this)
         {
            CMonsterAggroMgrdtor_CMonsterAggroMgr34_user(_this, CMonsterAggroMgrdtor_CMonsterAggroMgr34_next);
         };
         
-        hook_record CMonsterAggroMgr_functions[] = {
+        static hook_record CMonsterAggroMgr_functions[] = {
         {   (LPVOID)0x14015db60L,
             (LPVOID *)&CMonsterAggroMgrctor_CMonsterAggroMgr2_user,
             (LPVOID *)&CMonsterAggroMgrctor_CMonsterAggroMgr2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

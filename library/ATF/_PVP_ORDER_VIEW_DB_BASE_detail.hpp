@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_PVP_ORDER_VIEW_DB_BASEInit2_ptr _PVP_ORDER_VIEW_DB_BASEInit2_next(nullptr);
-        info::_PVP_ORDER_VIEW_DB_BASEInit2_clbk _PVP_ORDER_VIEW_DB_BASEInit2_user(nullptr);
+        static info::_PVP_ORDER_VIEW_DB_BASEInit2_ptr _PVP_ORDER_VIEW_DB_BASEInit2_next(nullptr);
+        static info::_PVP_ORDER_VIEW_DB_BASEInit2_clbk _PVP_ORDER_VIEW_DB_BASEInit2_user(nullptr);
         
-        void _PVP_ORDER_VIEW_DB_BASEInit2_wrapper(struct _PVP_ORDER_VIEW_DB_BASE* _this)
+        static void _PVP_ORDER_VIEW_DB_BASEInit2_wrapper(struct _PVP_ORDER_VIEW_DB_BASE* _this)
         {
            _PVP_ORDER_VIEW_DB_BASEInit2_user(_this, _PVP_ORDER_VIEW_DB_BASEInit2_next);
         };
         
-        hook_record _PVP_ORDER_VIEW_DB_BASE_functions[] = {
+        static hook_record _PVP_ORDER_VIEW_DB_BASE_functions[] = {
         {   (LPVOID)0x140077d50L,
             (LPVOID *)&_PVP_ORDER_VIEW_DB_BASEInit2_user,
             (LPVOID *)&_PVP_ORDER_VIEW_DB_BASEInit2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

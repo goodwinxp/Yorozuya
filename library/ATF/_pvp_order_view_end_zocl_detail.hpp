@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_pvp_order_view_end_zoclsize2_ptr _pvp_order_view_end_zoclsize2_next(nullptr);
-        info::_pvp_order_view_end_zoclsize2_clbk _pvp_order_view_end_zoclsize2_user(nullptr);
+        static info::_pvp_order_view_end_zoclsize2_ptr _pvp_order_view_end_zoclsize2_next(nullptr);
+        static info::_pvp_order_view_end_zoclsize2_clbk _pvp_order_view_end_zoclsize2_user(nullptr);
         
-        int _pvp_order_view_end_zoclsize2_wrapper(struct _pvp_order_view_end_zocl* _this)
+        static int _pvp_order_view_end_zoclsize2_wrapper(struct _pvp_order_view_end_zocl* _this)
         {
            return _pvp_order_view_end_zoclsize2_user(_this, _pvp_order_view_end_zoclsize2_next);
         };
         
-        hook_record _pvp_order_view_end_zocl_functions[] = {
+        static hook_record _pvp_order_view_end_zocl_functions[] = {
         {   (LPVOID)0x1403f8690L,
             (LPVOID *)&_pvp_order_view_end_zoclsize2_user,
             (LPVOID *)&_pvp_order_view_end_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

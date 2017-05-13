@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_target_monster_aggro_inform_zoclInit2_ptr _target_monster_aggro_inform_zoclInit2_next(nullptr);
-        info::_target_monster_aggro_inform_zoclInit2_clbk _target_monster_aggro_inform_zoclInit2_user(nullptr);
-        info::_target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_ptr _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_next(nullptr);
-        info::_target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_clbk _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_user(nullptr);
+        static info::_target_monster_aggro_inform_zoclInit2_ptr _target_monster_aggro_inform_zoclInit2_next(nullptr);
+        static info::_target_monster_aggro_inform_zoclInit2_clbk _target_monster_aggro_inform_zoclInit2_user(nullptr);
+        static info::_target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_ptr _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_next(nullptr);
+        static info::_target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_clbk _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_user(nullptr);
         
-        void _target_monster_aggro_inform_zoclInit2_wrapper(struct _target_monster_aggro_inform_zocl* _this)
+        static void _target_monster_aggro_inform_zoclInit2_wrapper(struct _target_monster_aggro_inform_zocl* _this)
         {
            _target_monster_aggro_inform_zoclInit2_user(_this, _target_monster_aggro_inform_zoclInit2_next);
         };
-        void _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_wrapper(struct _target_monster_aggro_inform_zocl* _this)
+        static void _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_wrapper(struct _target_monster_aggro_inform_zocl* _this)
         {
            _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_user(_this, _target_monster_aggro_inform_zoclctor__target_monster_aggro_inform_zocl4_next);
         };
         
-        hook_record _target_monster_aggro_inform_zocl_functions[] = {
+        static hook_record _target_monster_aggro_inform_zocl_functions[] = {
         {   (LPVOID)0x1400f0060L,
             (LPVOID *)&_target_monster_aggro_inform_zoclInit2_user,
             (LPVOID *)&_target_monster_aggro_inform_zoclInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

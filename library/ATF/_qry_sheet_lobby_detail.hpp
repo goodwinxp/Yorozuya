@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_sheet_lobbyctor__qry_sheet_lobby2_ptr _qry_sheet_lobbyctor__qry_sheet_lobby2_next(nullptr);
-        info::_qry_sheet_lobbyctor__qry_sheet_lobby2_clbk _qry_sheet_lobbyctor__qry_sheet_lobby2_user(nullptr);
-        info::_qry_sheet_lobbysize4_ptr _qry_sheet_lobbysize4_next(nullptr);
-        info::_qry_sheet_lobbysize4_clbk _qry_sheet_lobbysize4_user(nullptr);
-        info::_qry_sheet_lobbydtor__qry_sheet_lobby6_ptr _qry_sheet_lobbydtor__qry_sheet_lobby6_next(nullptr);
-        info::_qry_sheet_lobbydtor__qry_sheet_lobby6_clbk _qry_sheet_lobbydtor__qry_sheet_lobby6_user(nullptr);
+        static info::_qry_sheet_lobbyctor__qry_sheet_lobby2_ptr _qry_sheet_lobbyctor__qry_sheet_lobby2_next(nullptr);
+        static info::_qry_sheet_lobbyctor__qry_sheet_lobby2_clbk _qry_sheet_lobbyctor__qry_sheet_lobby2_user(nullptr);
+        static info::_qry_sheet_lobbysize4_ptr _qry_sheet_lobbysize4_next(nullptr);
+        static info::_qry_sheet_lobbysize4_clbk _qry_sheet_lobbysize4_user(nullptr);
+        static info::_qry_sheet_lobbydtor__qry_sheet_lobby6_ptr _qry_sheet_lobbydtor__qry_sheet_lobby6_next(nullptr);
+        static info::_qry_sheet_lobbydtor__qry_sheet_lobby6_clbk _qry_sheet_lobbydtor__qry_sheet_lobby6_user(nullptr);
         
-        void _qry_sheet_lobbyctor__qry_sheet_lobby2_wrapper(struct _qry_sheet_lobby* _this)
+        static void _qry_sheet_lobbyctor__qry_sheet_lobby2_wrapper(struct _qry_sheet_lobby* _this)
         {
            _qry_sheet_lobbyctor__qry_sheet_lobby2_user(_this, _qry_sheet_lobbyctor__qry_sheet_lobby2_next);
         };
-        int _qry_sheet_lobbysize4_wrapper(struct _qry_sheet_lobby* _this)
+        static int _qry_sheet_lobbysize4_wrapper(struct _qry_sheet_lobby* _this)
         {
            return _qry_sheet_lobbysize4_user(_this, _qry_sheet_lobbysize4_next);
         };
-        void _qry_sheet_lobbydtor__qry_sheet_lobby6_wrapper(struct _qry_sheet_lobby* _this)
+        static void _qry_sheet_lobbydtor__qry_sheet_lobby6_wrapper(struct _qry_sheet_lobby* _this)
         {
            _qry_sheet_lobbydtor__qry_sheet_lobby6_user(_this, _qry_sheet_lobbydtor__qry_sheet_lobby6_next);
         };
         
-        hook_record _qry_sheet_lobby_functions[] = {
+        static hook_record _qry_sheet_lobby_functions[] = {
         {   (LPVOID)0x14011fa40L,
             (LPVOID *)&_qry_sheet_lobbyctor__qry_sheet_lobby2_user,
             (LPVOID *)&_qry_sheet_lobbyctor__qry_sheet_lobby2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

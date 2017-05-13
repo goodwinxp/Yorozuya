@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_DTRADE_PARAMInit2_ptr _DTRADE_PARAMInit2_next(nullptr);
-        info::_DTRADE_PARAMInit2_clbk _DTRADE_PARAMInit2_user(nullptr);
-        info::_DTRADE_PARAMSetDTradeStart4_ptr _DTRADE_PARAMSetDTradeStart4_next(nullptr);
-        info::_DTRADE_PARAMSetDTradeStart4_clbk _DTRADE_PARAMSetDTradeStart4_user(nullptr);
-        info::_DTRADE_PARAMctor__DTRADE_PARAM6_ptr _DTRADE_PARAMctor__DTRADE_PARAM6_next(nullptr);
-        info::_DTRADE_PARAMctor__DTRADE_PARAM6_clbk _DTRADE_PARAMctor__DTRADE_PARAM6_user(nullptr);
+        static info::_DTRADE_PARAMInit2_ptr _DTRADE_PARAMInit2_next(nullptr);
+        static info::_DTRADE_PARAMInit2_clbk _DTRADE_PARAMInit2_user(nullptr);
+        static info::_DTRADE_PARAMSetDTradeStart4_ptr _DTRADE_PARAMSetDTradeStart4_next(nullptr);
+        static info::_DTRADE_PARAMSetDTradeStart4_clbk _DTRADE_PARAMSetDTradeStart4_user(nullptr);
+        static info::_DTRADE_PARAMctor__DTRADE_PARAM6_ptr _DTRADE_PARAMctor__DTRADE_PARAM6_next(nullptr);
+        static info::_DTRADE_PARAMctor__DTRADE_PARAM6_clbk _DTRADE_PARAMctor__DTRADE_PARAM6_user(nullptr);
         
-        void _DTRADE_PARAMInit2_wrapper(struct _DTRADE_PARAM* _this)
+        static void _DTRADE_PARAMInit2_wrapper(struct _DTRADE_PARAM* _this)
         {
            _DTRADE_PARAMInit2_user(_this, _DTRADE_PARAMInit2_next);
         };
-        void _DTRADE_PARAMSetDTradeStart4_wrapper(struct _DTRADE_PARAM* _this, uint16_t pl_dwDstIndex, unsigned int pl_dwDstSerial, int pl_mEmptyInvenNum, unsigned int* pl_dwKey)
+        static void _DTRADE_PARAMSetDTradeStart4_wrapper(struct _DTRADE_PARAM* _this, uint16_t pl_dwDstIndex, unsigned int pl_dwDstSerial, int pl_mEmptyInvenNum, unsigned int* pl_dwKey)
         {
            _DTRADE_PARAMSetDTradeStart4_user(_this, pl_dwDstIndex, pl_dwDstSerial, pl_mEmptyInvenNum, pl_dwKey, _DTRADE_PARAMSetDTradeStart4_next);
         };
-        void _DTRADE_PARAMctor__DTRADE_PARAM6_wrapper(struct _DTRADE_PARAM* _this)
+        static void _DTRADE_PARAMctor__DTRADE_PARAM6_wrapper(struct _DTRADE_PARAM* _this)
         {
            _DTRADE_PARAMctor__DTRADE_PARAM6_user(_this, _DTRADE_PARAMctor__DTRADE_PARAM6_next);
         };
         
-        hook_record _DTRADE_PARAM_functions[] = {
+        static hook_record _DTRADE_PARAM_functions[] = {
         {   (LPVOID)0x140072c10L,
             (LPVOID *)&_DTRADE_PARAMInit2_user,
             (LPVOID *)&_DTRADE_PARAMInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

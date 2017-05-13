@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::Request_Buy_Itemctor_Request_Buy_Item2_ptr Request_Buy_Itemctor_Request_Buy_Item2_next(nullptr);
-        info::Request_Buy_Itemctor_Request_Buy_Item2_clbk Request_Buy_Itemctor_Request_Buy_Item2_user(nullptr);
+        static info::Request_Buy_Itemctor_Request_Buy_Item2_ptr Request_Buy_Itemctor_Request_Buy_Item2_next(nullptr);
+        static info::Request_Buy_Itemctor_Request_Buy_Item2_clbk Request_Buy_Itemctor_Request_Buy_Item2_user(nullptr);
         
-        void Request_Buy_Itemctor_Request_Buy_Item2_wrapper(struct Request_Buy_Item* _this)
+        static void Request_Buy_Itemctor_Request_Buy_Item2_wrapper(struct Request_Buy_Item* _this)
         {
            Request_Buy_Itemctor_Request_Buy_Item2_user(_this, Request_Buy_Itemctor_Request_Buy_Item2_next);
         };
         
-        hook_record Request_Buy_Item_functions[] = {
+        static hook_record Request_Buy_Item_functions[] = {
         {   (LPVOID)0x14031d420L,
             (LPVOID *)&Request_Buy_Itemctor_Request_Buy_Item2_user,
             (LPVOID *)&Request_Buy_Itemctor_Request_Buy_Item2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

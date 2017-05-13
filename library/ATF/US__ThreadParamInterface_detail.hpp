@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__ThreadParamInterfaceGetMyThreadPool2_ptr US__ThreadParamInterfaceGetMyThreadPool2_next(nullptr);
-            info::US__ThreadParamInterfaceGetMyThreadPool2_clbk US__ThreadParamInterfaceGetMyThreadPool2_user(nullptr);
-            info::US__ThreadParamInterfacector_ThreadParamInterface4_ptr US__ThreadParamInterfacector_ThreadParamInterface4_next(nullptr);
-            info::US__ThreadParamInterfacector_ThreadParamInterface4_clbk US__ThreadParamInterfacector_ThreadParamInterface4_user(nullptr);
+            static info::US__ThreadParamInterfaceGetMyThreadPool2_ptr US__ThreadParamInterfaceGetMyThreadPool2_next(nullptr);
+            static info::US__ThreadParamInterfaceGetMyThreadPool2_clbk US__ThreadParamInterfaceGetMyThreadPool2_user(nullptr);
+            static info::US__ThreadParamInterfacector_ThreadParamInterface4_ptr US__ThreadParamInterfacector_ThreadParamInterface4_next(nullptr);
+            static info::US__ThreadParamInterfacector_ThreadParamInterface4_clbk US__ThreadParamInterfacector_ThreadParamInterface4_user(nullptr);
             
-            struct US::AbstractThreadPool* US__ThreadParamInterfaceGetMyThreadPool2_wrapper(struct US::ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>* _this)
+            static struct US::AbstractThreadPool* US__ThreadParamInterfaceGetMyThreadPool2_wrapper(struct US::ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>* _this)
             {
                return US__ThreadParamInterfaceGetMyThreadPool2_user(_this);
             };
-            void US__ThreadParamInterfacector_ThreadParamInterface4_wrapper(struct US::ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>* _this)
+            static void US__ThreadParamInterfacector_ThreadParamInterface4_wrapper(struct US::ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>* _this)
             {
                US__ThreadParamInterfacector_ThreadParamInterface4_user(_this);
             };
             
-            hook_record ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>_functions[] = {
+            static hook_record ThreadParamInterface<CBossMonsterScheduleSystem,US::AbstractThreadPool>_functions[] = {
             {   (LPVOID)0x14041fa60L,
                 (LPVOID *)&US__ThreadParamInterfaceGetMyThreadPool2_user,
                 (LPVOID *)&US__ThreadParamInterfaceGetMyThreadPool2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE

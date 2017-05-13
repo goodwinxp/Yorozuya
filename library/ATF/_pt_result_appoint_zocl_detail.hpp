@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_ptr _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_next(nullptr);
-        info::_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_clbk _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_user(nullptr);
-        info::_pt_result_appoint_zoclsize4_ptr _pt_result_appoint_zoclsize4_next(nullptr);
-        info::_pt_result_appoint_zoclsize4_clbk _pt_result_appoint_zoclsize4_user(nullptr);
+        static info::_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_ptr _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_next(nullptr);
+        static info::_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_clbk _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_user(nullptr);
+        static info::_pt_result_appoint_zoclsize4_ptr _pt_result_appoint_zoclsize4_next(nullptr);
+        static info::_pt_result_appoint_zoclsize4_clbk _pt_result_appoint_zoclsize4_user(nullptr);
         
-        void _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_wrapper(struct _pt_result_appoint_zocl* _this)
+        static void _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_wrapper(struct _pt_result_appoint_zocl* _this)
         {
            _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_user(_this, _pt_result_appoint_zoclctor__pt_result_appoint_zocl2_next);
         };
-        int _pt_result_appoint_zoclsize4_wrapper(struct _pt_result_appoint_zocl* _this)
+        static int _pt_result_appoint_zoclsize4_wrapper(struct _pt_result_appoint_zocl* _this)
         {
            return _pt_result_appoint_zoclsize4_user(_this, _pt_result_appoint_zoclsize4_next);
         };
         
-        hook_record _pt_result_appoint_zocl_functions[] = {
+        static hook_record _pt_result_appoint_zocl_functions[] = {
         {   (LPVOID)0x1402bd660L,
             (LPVOID *)&_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_user,
             (LPVOID *)&_pt_result_appoint_zoclctor__pt_result_appoint_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

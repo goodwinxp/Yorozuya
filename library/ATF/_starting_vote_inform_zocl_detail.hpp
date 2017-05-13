@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_ptr _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_next(nullptr);
-        info::_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_clbk _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_user(nullptr);
-        info::_starting_vote_inform_zoclsize4_ptr _starting_vote_inform_zoclsize4_next(nullptr);
-        info::_starting_vote_inform_zoclsize4_clbk _starting_vote_inform_zoclsize4_user(nullptr);
+        static info::_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_ptr _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_next(nullptr);
+        static info::_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_clbk _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_user(nullptr);
+        static info::_starting_vote_inform_zoclsize4_ptr _starting_vote_inform_zoclsize4_next(nullptr);
+        static info::_starting_vote_inform_zoclsize4_clbk _starting_vote_inform_zoclsize4_user(nullptr);
         
-        void _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_wrapper(struct _starting_vote_inform_zocl* _this)
+        static void _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_wrapper(struct _starting_vote_inform_zocl* _this)
         {
            _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_user(_this, _starting_vote_inform_zoclctor__starting_vote_inform_zocl2_next);
         };
-        int _starting_vote_inform_zoclsize4_wrapper(struct _starting_vote_inform_zocl* _this)
+        static int _starting_vote_inform_zoclsize4_wrapper(struct _starting_vote_inform_zocl* _this)
         {
            return _starting_vote_inform_zoclsize4_user(_this, _starting_vote_inform_zoclsize4_next);
         };
         
-        hook_record _starting_vote_inform_zocl_functions[] = {
+        static hook_record _starting_vote_inform_zocl_functions[] = {
         {   (LPVOID)0x1402b0ed0L,
             (LPVOID *)&_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_user,
             (LPVOID *)&_starting_vote_inform_zoclctor__starting_vote_inform_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

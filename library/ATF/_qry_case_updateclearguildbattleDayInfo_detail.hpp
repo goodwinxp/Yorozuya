@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_updateclearguildbattleDayInfosize2_ptr _qry_case_updateclearguildbattleDayInfosize2_next(nullptr);
-        info::_qry_case_updateclearguildbattleDayInfosize2_clbk _qry_case_updateclearguildbattleDayInfosize2_user(nullptr);
+        static info::_qry_case_updateclearguildbattleDayInfosize2_ptr _qry_case_updateclearguildbattleDayInfosize2_next(nullptr);
+        static info::_qry_case_updateclearguildbattleDayInfosize2_clbk _qry_case_updateclearguildbattleDayInfosize2_user(nullptr);
         
-        int _qry_case_updateclearguildbattleDayInfosize2_wrapper(struct _qry_case_updateclearguildbattleDayInfo* _this)
+        static int _qry_case_updateclearguildbattleDayInfosize2_wrapper(struct _qry_case_updateclearguildbattleDayInfo* _this)
         {
            return _qry_case_updateclearguildbattleDayInfosize2_user(_this, _qry_case_updateclearguildbattleDayInfosize2_next);
         };
         
-        hook_record _qry_case_updateclearguildbattleDayInfo_functions[] = {
+        static hook_record _qry_case_updateclearguildbattleDayInfo_functions[] = {
         {   (LPVOID)0x1403dece0L,
             (LPVOID *)&_qry_case_updateclearguildbattleDayInfosize2_user,
             (LPVOID *)&_qry_case_updateclearguildbattleDayInfosize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

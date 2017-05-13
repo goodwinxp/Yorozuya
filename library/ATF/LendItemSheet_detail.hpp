@@ -8,65 +8,65 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::LendItemSheetCheckTime2_ptr LendItemSheetCheckTime2_next(nullptr);
-        info::LendItemSheetCheckTime2_clbk LendItemSheetCheckTime2_user(nullptr);
-        info::LendItemSheetDeleteLink4_ptr LendItemSheetDeleteLink4_next(nullptr);
-        info::LendItemSheetDeleteLink4_clbk LendItemSheetDeleteLink4_user(nullptr);
-        info::LendItemSheetInitialzie6_ptr LendItemSheetInitialzie6_next(nullptr);
-        info::LendItemSheetInitialzie6_clbk LendItemSheetInitialzie6_user(nullptr);
-        info::LendItemSheetInsertLink8_ptr LendItemSheetInsertLink8_next(nullptr);
-        info::LendItemSheetInsertLink8_clbk LendItemSheetInsertLink8_user(nullptr);
-        info::LendItemSheetctor_LendItemSheet10_ptr LendItemSheetctor_LendItemSheet10_next(nullptr);
-        info::LendItemSheetctor_LendItemSheet10_clbk LendItemSheetctor_LendItemSheet10_user(nullptr);
-        info::LendItemSheetRelease12_ptr LendItemSheetRelease12_next(nullptr);
-        info::LendItemSheetRelease12_clbk LendItemSheetRelease12_user(nullptr);
-        info::LendItemSheetdtor_LendItemSheet16_ptr LendItemSheetdtor_LendItemSheet16_next(nullptr);
-        info::LendItemSheetdtor_LendItemSheet16_clbk LendItemSheetdtor_LendItemSheet16_user(nullptr);
+        static info::LendItemSheetCheckTime2_ptr LendItemSheetCheckTime2_next(nullptr);
+        static info::LendItemSheetCheckTime2_clbk LendItemSheetCheckTime2_user(nullptr);
+        static info::LendItemSheetDeleteLink4_ptr LendItemSheetDeleteLink4_next(nullptr);
+        static info::LendItemSheetDeleteLink4_clbk LendItemSheetDeleteLink4_user(nullptr);
+        static info::LendItemSheetInitialzie6_ptr LendItemSheetInitialzie6_next(nullptr);
+        static info::LendItemSheetInitialzie6_clbk LendItemSheetInitialzie6_user(nullptr);
+        static info::LendItemSheetInsertLink8_ptr LendItemSheetInsertLink8_next(nullptr);
+        static info::LendItemSheetInsertLink8_clbk LendItemSheetInsertLink8_user(nullptr);
+        static info::LendItemSheetctor_LendItemSheet10_ptr LendItemSheetctor_LendItemSheet10_next(nullptr);
+        static info::LendItemSheetctor_LendItemSheet10_clbk LendItemSheetctor_LendItemSheet10_user(nullptr);
+        static info::LendItemSheetRelease12_ptr LendItemSheetRelease12_next(nullptr);
+        static info::LendItemSheetRelease12_clbk LendItemSheetRelease12_user(nullptr);
+        static info::LendItemSheetdtor_LendItemSheet16_ptr LendItemSheetdtor_LendItemSheet16_next(nullptr);
+        static info::LendItemSheetdtor_LendItemSheet16_clbk LendItemSheetdtor_LendItemSheet16_user(nullptr);
         
-        info::LendItemSheet__Cellctor_Cell2_ptr LendItemSheet__Cellctor_Cell2_next(nullptr);
-        info::LendItemSheet__Cellctor_Cell2_clbk LendItemSheet__Cellctor_Cell2_user(nullptr);
-        info::LendItemSheet__Cellctor_Cell4_ptr LendItemSheet__Cellctor_Cell4_next(nullptr);
-        info::LendItemSheet__Cellctor_Cell4_clbk LendItemSheet__Cellctor_Cell4_user(nullptr);
+        static info::LendItemSheet__Cellctor_Cell2_ptr LendItemSheet__Cellctor_Cell2_next(nullptr);
+        static info::LendItemSheet__Cellctor_Cell2_clbk LendItemSheet__Cellctor_Cell2_user(nullptr);
+        static info::LendItemSheet__Cellctor_Cell4_ptr LendItemSheet__Cellctor_Cell4_next(nullptr);
+        static info::LendItemSheet__Cellctor_Cell4_clbk LendItemSheet__Cellctor_Cell4_user(nullptr);
         
-        int LendItemSheetCheckTime2_wrapper(struct LendItemSheet* _this)
+        static int LendItemSheetCheckTime2_wrapper(struct LendItemSheet* _this)
         {
            return LendItemSheetCheckTime2_user(_this, LendItemSheetCheckTime2_next);
         };
-        bool LendItemSheetDeleteLink4_wrapper(struct LendItemSheet* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pItem)
+        static bool LendItemSheetDeleteLink4_wrapper(struct LendItemSheet* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pItem)
         {
            return LendItemSheetDeleteLink4_user(_this, byStorageCode, pItem, LendItemSheetDeleteLink4_next);
         };
-        bool LendItemSheetInitialzie6_wrapper(struct LendItemSheet* _this)
+        static bool LendItemSheetInitialzie6_wrapper(struct LendItemSheet* _this)
         {
            return LendItemSheetInitialzie6_user(_this, LendItemSheetInitialzie6_next);
         };
-        bool LendItemSheetInsertLink8_wrapper(struct LendItemSheet* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool LendItemSheetInsertLink8_wrapper(struct LendItemSheet* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return LendItemSheetInsertLink8_user(_this, byStorageCode, pkItem, LendItemSheetInsertLink8_next);
         };
-        void LendItemSheetctor_LendItemSheet10_wrapper(struct LendItemSheet* _this, struct CPlayer* p)
+        static void LendItemSheetctor_LendItemSheet10_wrapper(struct LendItemSheet* _this, struct CPlayer* p)
         {
            LendItemSheetctor_LendItemSheet10_user(_this, p, LendItemSheetctor_LendItemSheet10_next);
         };
-        void LendItemSheetRelease12_wrapper(struct LendItemSheet* _this)
+        static void LendItemSheetRelease12_wrapper(struct LendItemSheet* _this)
         {
            LendItemSheetRelease12_user(_this, LendItemSheetRelease12_next);
         };
-        void LendItemSheetdtor_LendItemSheet16_wrapper(struct LendItemSheet* _this)
+        static void LendItemSheetdtor_LendItemSheet16_wrapper(struct LendItemSheet* _this)
         {
            LendItemSheetdtor_LendItemSheet16_user(_this, LendItemSheetdtor_LendItemSheet16_next);
         };
         
-        void LendItemSheet__Cellctor_Cell2_wrapper(struct LendItemSheet::Cell* _this, char byStCode, struct _STORAGE_LIST::_db_con* pItem)
+        static void LendItemSheet__Cellctor_Cell2_wrapper(struct LendItemSheet::Cell* _this, char byStCode, struct _STORAGE_LIST::_db_con* pItem)
         {
            LendItemSheet__Cellctor_Cell2_user(_this, byStCode, pItem, LendItemSheet__Cellctor_Cell2_next);
         };
-        void LendItemSheet__Cellctor_Cell4_wrapper(struct LendItemSheet::Cell* _this)
+        static void LendItemSheet__Cellctor_Cell4_wrapper(struct LendItemSheet::Cell* _this)
         {
            LendItemSheet__Cellctor_Cell4_user(_this, LendItemSheet__Cellctor_Cell4_next);
         };
         
-        hook_record LendItemSheet_functions[] = {
+        static hook_record LendItemSheet_functions[] = {
         {   (LPVOID)0x14030d790L,
             (LPVOID *)&LendItemSheetCheckTime2_user,
             (LPVOID *)&LendItemSheetCheckTime2_next,
@@ -116,5 +116,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

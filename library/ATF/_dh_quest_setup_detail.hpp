@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_dh_quest_setupSearchMissionFromTitle2_ptr _dh_quest_setupSearchMissionFromTitle2_next(nullptr);
-        info::_dh_quest_setupSearchMissionFromTitle2_clbk _dh_quest_setupSearchMissionFromTitle2_user(nullptr);
-        info::_dh_quest_setupSetRealBoss4_ptr _dh_quest_setupSetRealBoss4_next(nullptr);
-        info::_dh_quest_setupSetRealBoss4_clbk _dh_quest_setupSetRealBoss4_user(nullptr);
-        info::_dh_quest_setupctor__dh_quest_setup6_ptr _dh_quest_setupctor__dh_quest_setup6_next(nullptr);
-        info::_dh_quest_setupctor__dh_quest_setup6_clbk _dh_quest_setupctor__dh_quest_setup6_user(nullptr);
-        info::_dh_quest_setupdtor__dh_quest_setup11_ptr _dh_quest_setupdtor__dh_quest_setup11_next(nullptr);
-        info::_dh_quest_setupdtor__dh_quest_setup11_clbk _dh_quest_setupdtor__dh_quest_setup11_user(nullptr);
+        static info::_dh_quest_setupSearchMissionFromTitle2_ptr _dh_quest_setupSearchMissionFromTitle2_next(nullptr);
+        static info::_dh_quest_setupSearchMissionFromTitle2_clbk _dh_quest_setupSearchMissionFromTitle2_user(nullptr);
+        static info::_dh_quest_setupSetRealBoss4_ptr _dh_quest_setupSetRealBoss4_next(nullptr);
+        static info::_dh_quest_setupSetRealBoss4_clbk _dh_quest_setupSetRealBoss4_user(nullptr);
+        static info::_dh_quest_setupctor__dh_quest_setup6_ptr _dh_quest_setupctor__dh_quest_setup6_next(nullptr);
+        static info::_dh_quest_setupctor__dh_quest_setup6_clbk _dh_quest_setupctor__dh_quest_setup6_user(nullptr);
+        static info::_dh_quest_setupdtor__dh_quest_setup11_ptr _dh_quest_setupdtor__dh_quest_setup11_next(nullptr);
+        static info::_dh_quest_setupdtor__dh_quest_setup11_clbk _dh_quest_setupdtor__dh_quest_setup11_user(nullptr);
         
-        struct _dh_mission_setup* _dh_quest_setupSearchMissionFromTitle2_wrapper(struct _dh_quest_setup* _this, char* pszMissionTitle)
+        static struct _dh_mission_setup* _dh_quest_setupSearchMissionFromTitle2_wrapper(struct _dh_quest_setup* _this, char* pszMissionTitle)
         {
            return _dh_quest_setupSearchMissionFromTitle2_user(_this, pszMissionTitle, _dh_quest_setupSearchMissionFromTitle2_next);
         };
-        void _dh_quest_setupSetRealBoss4_wrapper(struct _dh_quest_setup* _this, bool isReal)
+        static void _dh_quest_setupSetRealBoss4_wrapper(struct _dh_quest_setup* _this, bool isReal)
         {
            _dh_quest_setupSetRealBoss4_user(_this, isReal, _dh_quest_setupSetRealBoss4_next);
         };
-        void _dh_quest_setupctor__dh_quest_setup6_wrapper(struct _dh_quest_setup* _this)
+        static void _dh_quest_setupctor__dh_quest_setup6_wrapper(struct _dh_quest_setup* _this)
         {
            _dh_quest_setupctor__dh_quest_setup6_user(_this, _dh_quest_setupctor__dh_quest_setup6_next);
         };
-        void _dh_quest_setupdtor__dh_quest_setup11_wrapper(struct _dh_quest_setup* _this)
+        static void _dh_quest_setupdtor__dh_quest_setup11_wrapper(struct _dh_quest_setup* _this)
         {
            _dh_quest_setupdtor__dh_quest_setup11_user(_this, _dh_quest_setupdtor__dh_quest_setup11_next);
         };
         
-        hook_record _dh_quest_setup_functions[] = {
+        static hook_record _dh_quest_setup_functions[] = {
         {   (LPVOID)0x140272c60L,
             (LPVOID *)&_dh_quest_setupSearchMissionFromTitle2_user,
             (LPVOID *)&_dh_quest_setupSearchMissionFromTitle2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

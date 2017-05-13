@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::GMCallMgrctor_GMCallMgr2_ptr GMCallMgrctor_GMCallMgr2_next(nullptr);
-        info::GMCallMgrctor_GMCallMgr2_clbk GMCallMgrctor_GMCallMgr2_user(nullptr);
-        info::GMCallMgrGetGMRequestDataPtr4_ptr GMCallMgrGetGMRequestDataPtr4_next(nullptr);
-        info::GMCallMgrGetGMRequestDataPtr4_clbk GMCallMgrGetGMRequestDataPtr4_user(nullptr);
-        info::GMCallMgrInit6_ptr GMCallMgrInit6_next(nullptr);
-        info::GMCallMgrInit6_clbk GMCallMgrInit6_user(nullptr);
-        info::GMCallMgrInitReqBuff8_ptr GMCallMgrInitReqBuff8_next(nullptr);
-        info::GMCallMgrInitReqBuff8_clbk GMCallMgrInitReqBuff8_user(nullptr);
-        info::GMCallMgrPopReqEmptNode10_ptr GMCallMgrPopReqEmptNode10_next(nullptr);
-        info::GMCallMgrPopReqEmptNode10_clbk GMCallMgrPopReqEmptNode10_user(nullptr);
-        info::GMCallMgrPushReqNode12_ptr GMCallMgrPushReqNode12_next(nullptr);
-        info::GMCallMgrPushReqNode12_clbk GMCallMgrPushReqNode12_user(nullptr);
-        info::GMCallMgrRequestAcceptGMCall14_ptr GMCallMgrRequestAcceptGMCall14_next(nullptr);
-        info::GMCallMgrRequestAcceptGMCall14_clbk GMCallMgrRequestAcceptGMCall14_user(nullptr);
-        info::GMCallMgrRequestGMCall16_ptr GMCallMgrRequestGMCall16_next(nullptr);
-        info::GMCallMgrRequestGMCall16_clbk GMCallMgrRequestGMCall16_user(nullptr);
-        info::GMCallMgrRequestGMList18_ptr GMCallMgrRequestGMList18_next(nullptr);
-        info::GMCallMgrRequestGMList18_clbk GMCallMgrRequestGMList18_user(nullptr);
-        info::GMCallMgrSendResponseAcceptResult20_ptr GMCallMgrSendResponseAcceptResult20_next(nullptr);
-        info::GMCallMgrSendResponseAcceptResult20_clbk GMCallMgrSendResponseAcceptResult20_user(nullptr);
-        info::GMCallMgrSendResponseGMCall22_ptr GMCallMgrSendResponseGMCall22_next(nullptr);
-        info::GMCallMgrSendResponseGMCall22_clbk GMCallMgrSendResponseGMCall22_user(nullptr);
-        info::GMCallMgrSendResponseGMList24_ptr GMCallMgrSendResponseGMList24_next(nullptr);
-        info::GMCallMgrSendResponseGMList24_clbk GMCallMgrSendResponseGMList24_user(nullptr);
-        info::GMCallMgrdtor_GMCallMgr29_ptr GMCallMgrdtor_GMCallMgr29_next(nullptr);
-        info::GMCallMgrdtor_GMCallMgr29_clbk GMCallMgrdtor_GMCallMgr29_user(nullptr);
+        static info::GMCallMgrctor_GMCallMgr2_ptr GMCallMgrctor_GMCallMgr2_next(nullptr);
+        static info::GMCallMgrctor_GMCallMgr2_clbk GMCallMgrctor_GMCallMgr2_user(nullptr);
+        static info::GMCallMgrGetGMRequestDataPtr4_ptr GMCallMgrGetGMRequestDataPtr4_next(nullptr);
+        static info::GMCallMgrGetGMRequestDataPtr4_clbk GMCallMgrGetGMRequestDataPtr4_user(nullptr);
+        static info::GMCallMgrInit6_ptr GMCallMgrInit6_next(nullptr);
+        static info::GMCallMgrInit6_clbk GMCallMgrInit6_user(nullptr);
+        static info::GMCallMgrInitReqBuff8_ptr GMCallMgrInitReqBuff8_next(nullptr);
+        static info::GMCallMgrInitReqBuff8_clbk GMCallMgrInitReqBuff8_user(nullptr);
+        static info::GMCallMgrPopReqEmptNode10_ptr GMCallMgrPopReqEmptNode10_next(nullptr);
+        static info::GMCallMgrPopReqEmptNode10_clbk GMCallMgrPopReqEmptNode10_user(nullptr);
+        static info::GMCallMgrPushReqNode12_ptr GMCallMgrPushReqNode12_next(nullptr);
+        static info::GMCallMgrPushReqNode12_clbk GMCallMgrPushReqNode12_user(nullptr);
+        static info::GMCallMgrRequestAcceptGMCall14_ptr GMCallMgrRequestAcceptGMCall14_next(nullptr);
+        static info::GMCallMgrRequestAcceptGMCall14_clbk GMCallMgrRequestAcceptGMCall14_user(nullptr);
+        static info::GMCallMgrRequestGMCall16_ptr GMCallMgrRequestGMCall16_next(nullptr);
+        static info::GMCallMgrRequestGMCall16_clbk GMCallMgrRequestGMCall16_user(nullptr);
+        static info::GMCallMgrRequestGMList18_ptr GMCallMgrRequestGMList18_next(nullptr);
+        static info::GMCallMgrRequestGMList18_clbk GMCallMgrRequestGMList18_user(nullptr);
+        static info::GMCallMgrSendResponseAcceptResult20_ptr GMCallMgrSendResponseAcceptResult20_next(nullptr);
+        static info::GMCallMgrSendResponseAcceptResult20_clbk GMCallMgrSendResponseAcceptResult20_user(nullptr);
+        static info::GMCallMgrSendResponseGMCall22_ptr GMCallMgrSendResponseGMCall22_next(nullptr);
+        static info::GMCallMgrSendResponseGMCall22_clbk GMCallMgrSendResponseGMCall22_user(nullptr);
+        static info::GMCallMgrSendResponseGMList24_ptr GMCallMgrSendResponseGMList24_next(nullptr);
+        static info::GMCallMgrSendResponseGMList24_clbk GMCallMgrSendResponseGMList24_user(nullptr);
+        static info::GMCallMgrdtor_GMCallMgr29_ptr GMCallMgrdtor_GMCallMgr29_next(nullptr);
+        static info::GMCallMgrdtor_GMCallMgr29_clbk GMCallMgrdtor_GMCallMgr29_user(nullptr);
         
-        void GMCallMgrctor_GMCallMgr2_wrapper(struct GMCallMgr* _this)
+        static void GMCallMgrctor_GMCallMgr2_wrapper(struct GMCallMgr* _this)
         {
            GMCallMgrctor_GMCallMgr2_user(_this, GMCallMgrctor_GMCallMgr2_next);
         };
-        struct GMRequestData* GMCallMgrGetGMRequestDataPtr4_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne)
+        static struct GMRequestData* GMCallMgrGetGMRequestDataPtr4_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne)
         {
            return GMCallMgrGetGMRequestDataPtr4_user(_this, pOne, GMCallMgrGetGMRequestDataPtr4_next);
         };
-        void GMCallMgrInit6_wrapper(struct GMCallMgr* _this)
+        static void GMCallMgrInit6_wrapper(struct GMCallMgr* _this)
         {
            GMCallMgrInit6_user(_this, GMCallMgrInit6_next);
         };
-        void GMCallMgrInitReqBuff8_wrapper(struct GMCallMgr* _this)
+        static void GMCallMgrInitReqBuff8_wrapper(struct GMCallMgr* _this)
         {
            GMCallMgrInitReqBuff8_user(_this, GMCallMgrInitReqBuff8_next);
         };
-        struct GMRequestData* GMCallMgrPopReqEmptNode10_wrapper(struct GMCallMgr* _this)
+        static struct GMRequestData* GMCallMgrPopReqEmptNode10_wrapper(struct GMCallMgr* _this)
         {
            return GMCallMgrPopReqEmptNode10_user(_this, GMCallMgrPopReqEmptNode10_next);
         };
-        void GMCallMgrPushReqNode12_wrapper(struct GMCallMgr* _this, struct GMRequestData* pInst)
+        static void GMCallMgrPushReqNode12_wrapper(struct GMCallMgr* _this, struct GMRequestData* pInst)
         {
            GMCallMgrPushReqNode12_user(_this, pInst, GMCallMgrPushReqNode12_next);
         };
-        bool GMCallMgrRequestAcceptGMCall14_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, unsigned int dwUserSerial)
+        static bool GMCallMgrRequestAcceptGMCall14_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, unsigned int dwUserSerial)
         {
            return GMCallMgrRequestAcceptGMCall14_user(_this, pOne, dwUserSerial, GMCallMgrRequestAcceptGMCall14_next);
         };
-        bool GMCallMgrRequestGMCall16_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int bCall)
+        static bool GMCallMgrRequestGMCall16_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int bCall)
         {
            return GMCallMgrRequestGMCall16_user(_this, pOne, bCall, GMCallMgrRequestGMCall16_next);
         };
-        bool GMCallMgrRequestGMList18_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int nCurrPageIndex)
+        static bool GMCallMgrRequestGMList18_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int nCurrPageIndex)
         {
            return GMCallMgrRequestGMList18_user(_this, pOne, nCurrPageIndex, GMCallMgrRequestGMList18_next);
         };
-        void GMCallMgrSendResponseAcceptResult20_wrapper(struct GMCallMgr* _this, struct CPlayer* pOneGM, struct CPlayer* pOneUser, int nErrorCode)
+        static void GMCallMgrSendResponseAcceptResult20_wrapper(struct GMCallMgr* _this, struct CPlayer* pOneGM, struct CPlayer* pOneUser, int nErrorCode)
         {
            GMCallMgrSendResponseAcceptResult20_user(_this, pOneGM, pOneUser, nErrorCode, GMCallMgrSendResponseAcceptResult20_next);
         };
-        bool GMCallMgrSendResponseGMCall22_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int bCallState)
+        static bool GMCallMgrSendResponseGMCall22_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int bCallState)
         {
            return GMCallMgrSendResponseGMCall22_user(_this, pOne, bCallState, GMCallMgrSendResponseGMCall22_next);
         };
-        bool GMCallMgrSendResponseGMList24_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int nCurrPageIndex)
+        static bool GMCallMgrSendResponseGMList24_wrapper(struct GMCallMgr* _this, struct CPlayer* pOne, int nCurrPageIndex)
         {
            return GMCallMgrSendResponseGMList24_user(_this, pOne, nCurrPageIndex, GMCallMgrSendResponseGMList24_next);
         };
-        void GMCallMgrdtor_GMCallMgr29_wrapper(struct GMCallMgr* _this)
+        static void GMCallMgrdtor_GMCallMgr29_wrapper(struct GMCallMgr* _this)
         {
            GMCallMgrdtor_GMCallMgr29_user(_this, GMCallMgrdtor_GMCallMgr29_next);
         };
         
-        hook_record GMCallMgr_functions[] = {
+        static hook_record GMCallMgr_functions[] = {
         {   (LPVOID)0x1402aa0b0L,
             (LPVOID *)&GMCallMgrctor_GMCallMgr2_user,
             (LPVOID *)&GMCallMgrctor_GMCallMgr2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AP_BatterySlotctor_AP_BatterySlot2_ptr AP_BatterySlotctor_AP_BatterySlot2_next(nullptr);
-        info::AP_BatterySlotctor_AP_BatterySlot2_clbk AP_BatterySlotctor_AP_BatterySlot2_user(nullptr);
-        info::AP_BatterySlotclear6_ptr AP_BatterySlotclear6_next(nullptr);
-        info::AP_BatterySlotclear6_clbk AP_BatterySlotclear6_user(nullptr);
-        info::AP_BatterySlotextract8_ptr AP_BatterySlotextract8_next(nullptr);
-        info::AP_BatterySlotextract8_clbk AP_BatterySlotextract8_user(nullptr);
-        info::AP_BatterySlotget_battery10_ptr AP_BatterySlotget_battery10_next(nullptr);
-        info::AP_BatterySlotget_battery10_clbk AP_BatterySlotget_battery10_user(nullptr);
-        info::AP_BatterySlotget_dur12_ptr AP_BatterySlotget_dur12_next(nullptr);
-        info::AP_BatterySlotget_dur12_clbk AP_BatterySlotget_dur12_user(nullptr);
-        info::AP_BatterySlotinsert14_ptr AP_BatterySlotinsert14_next(nullptr);
-        info::AP_BatterySlotinsert14_clbk AP_BatterySlotinsert14_user(nullptr);
-        info::AP_BatterySlotis_private_item16_ptr AP_BatterySlotis_private_item16_next(nullptr);
-        info::AP_BatterySlotis_private_item16_clbk AP_BatterySlotis_private_item16_user(nullptr);
-        info::AP_BatterySlotsub_dur18_ptr AP_BatterySlotsub_dur18_next(nullptr);
-        info::AP_BatterySlotsub_dur18_clbk AP_BatterySlotsub_dur18_user(nullptr);
-        info::AP_BatterySlotdtor_AP_BatterySlot20_ptr AP_BatterySlotdtor_AP_BatterySlot20_next(nullptr);
-        info::AP_BatterySlotdtor_AP_BatterySlot20_clbk AP_BatterySlotdtor_AP_BatterySlot20_user(nullptr);
+        static info::AP_BatterySlotctor_AP_BatterySlot2_ptr AP_BatterySlotctor_AP_BatterySlot2_next(nullptr);
+        static info::AP_BatterySlotctor_AP_BatterySlot2_clbk AP_BatterySlotctor_AP_BatterySlot2_user(nullptr);
+        static info::AP_BatterySlotclear6_ptr AP_BatterySlotclear6_next(nullptr);
+        static info::AP_BatterySlotclear6_clbk AP_BatterySlotclear6_user(nullptr);
+        static info::AP_BatterySlotextract8_ptr AP_BatterySlotextract8_next(nullptr);
+        static info::AP_BatterySlotextract8_clbk AP_BatterySlotextract8_user(nullptr);
+        static info::AP_BatterySlotget_battery10_ptr AP_BatterySlotget_battery10_next(nullptr);
+        static info::AP_BatterySlotget_battery10_clbk AP_BatterySlotget_battery10_user(nullptr);
+        static info::AP_BatterySlotget_dur12_ptr AP_BatterySlotget_dur12_next(nullptr);
+        static info::AP_BatterySlotget_dur12_clbk AP_BatterySlotget_dur12_user(nullptr);
+        static info::AP_BatterySlotinsert14_ptr AP_BatterySlotinsert14_next(nullptr);
+        static info::AP_BatterySlotinsert14_clbk AP_BatterySlotinsert14_user(nullptr);
+        static info::AP_BatterySlotis_private_item16_ptr AP_BatterySlotis_private_item16_next(nullptr);
+        static info::AP_BatterySlotis_private_item16_clbk AP_BatterySlotis_private_item16_user(nullptr);
+        static info::AP_BatterySlotsub_dur18_ptr AP_BatterySlotsub_dur18_next(nullptr);
+        static info::AP_BatterySlotsub_dur18_clbk AP_BatterySlotsub_dur18_user(nullptr);
+        static info::AP_BatterySlotdtor_AP_BatterySlot20_ptr AP_BatterySlotdtor_AP_BatterySlot20_next(nullptr);
+        static info::AP_BatterySlotdtor_AP_BatterySlot20_clbk AP_BatterySlotdtor_AP_BatterySlot20_user(nullptr);
         
-        void AP_BatterySlotctor_AP_BatterySlot2_wrapper(struct AP_BatterySlot* _this)
+        static void AP_BatterySlotctor_AP_BatterySlot2_wrapper(struct AP_BatterySlot* _this)
         {
            AP_BatterySlotctor_AP_BatterySlot2_user(_this, AP_BatterySlotctor_AP_BatterySlot2_next);
         };
-        void AP_BatterySlotclear6_wrapper(struct AP_BatterySlot* _this)
+        static void AP_BatterySlotclear6_wrapper(struct AP_BatterySlot* _this)
         {
            AP_BatterySlotclear6_user(_this, AP_BatterySlotclear6_next);
         };
-        bool AP_BatterySlotextract8_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pout_item)
+        static bool AP_BatterySlotextract8_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pout_item)
         {
            return AP_BatterySlotextract8_user(_this, pout_item, AP_BatterySlotextract8_next);
         };
-        struct _STORAGE_LIST::_db_con* AP_BatterySlotget_battery10_wrapper(struct AP_BatterySlot* _this)
+        static struct _STORAGE_LIST::_db_con* AP_BatterySlotget_battery10_wrapper(struct AP_BatterySlot* _this)
         {
            return AP_BatterySlotget_battery10_user(_this, AP_BatterySlotget_battery10_next);
         };
-        unsigned int AP_BatterySlotget_dur12_wrapper(struct AP_BatterySlot* _this)
+        static unsigned int AP_BatterySlotget_dur12_wrapper(struct AP_BatterySlot* _this)
         {
            return AP_BatterySlotget_dur12_user(_this, AP_BatterySlotget_dur12_next);
         };
-        int AP_BatterySlotinsert14_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static int AP_BatterySlotinsert14_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return AP_BatterySlotinsert14_user(_this, pItem, AP_BatterySlotinsert14_next);
         };
-        bool AP_BatterySlotis_private_item16_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static bool AP_BatterySlotis_private_item16_wrapper(struct AP_BatterySlot* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return AP_BatterySlotis_private_item16_user(_this, pItem, AP_BatterySlotis_private_item16_next);
         };
-        unsigned int AP_BatterySlotsub_dur18_wrapper(struct AP_BatterySlot* _this, unsigned int dwSub)
+        static unsigned int AP_BatterySlotsub_dur18_wrapper(struct AP_BatterySlot* _this, unsigned int dwSub)
         {
            return AP_BatterySlotsub_dur18_user(_this, dwSub, AP_BatterySlotsub_dur18_next);
         };
-        void AP_BatterySlotdtor_AP_BatterySlot20_wrapper(struct AP_BatterySlot* _this)
+        static void AP_BatterySlotdtor_AP_BatterySlot20_wrapper(struct AP_BatterySlot* _this)
         {
            AP_BatterySlotdtor_AP_BatterySlot20_user(_this, AP_BatterySlotdtor_AP_BatterySlot20_next);
         };
         
-        hook_record AP_BatterySlot_functions[] = {
+        static hook_record AP_BatterySlot_functions[] = {
         {   (LPVOID)0x1402d9c10L,
             (LPVOID *)&AP_BatterySlotctor_AP_BatterySlot2_user,
             (LPVOID *)&AP_BatterySlotctor_AP_BatterySlot2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

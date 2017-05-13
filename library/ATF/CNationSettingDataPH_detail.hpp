@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataPHctor_CNationSettingDataPH2_ptr CNationSettingDataPHctor_CNationSettingDataPH2_next(nullptr);
-        info::CNationSettingDataPHctor_CNationSettingDataPH2_clbk CNationSettingDataPHctor_CNationSettingDataPH2_user(nullptr);
-        info::CNationSettingDataPHCheckEnterWorldRequest4_ptr CNationSettingDataPHCheckEnterWorldRequest4_next(nullptr);
-        info::CNationSettingDataPHCheckEnterWorldRequest4_clbk CNationSettingDataPHCheckEnterWorldRequest4_user(nullptr);
-        info::CNationSettingDataPHCreateBilling6_ptr CNationSettingDataPHCreateBilling6_next(nullptr);
-        info::CNationSettingDataPHCreateBilling6_clbk CNationSettingDataPHCreateBilling6_user(nullptr);
-        info::CNationSettingDataPHCreateWorker8_ptr CNationSettingDataPHCreateWorker8_next(nullptr);
-        info::CNationSettingDataPHCreateWorker8_clbk CNationSettingDataPHCreateWorker8_user(nullptr);
-        info::CNationSettingDataPHGetCashItemPrice10_ptr CNationSettingDataPHGetCashItemPrice10_next(nullptr);
-        info::CNationSettingDataPHGetCashItemPrice10_clbk CNationSettingDataPHGetCashItemPrice10_user(nullptr);
-        info::CNationSettingDataPHGetItemName12_ptr CNationSettingDataPHGetItemName12_next(nullptr);
-        info::CNationSettingDataPHGetItemName12_clbk CNationSettingDataPHGetItemName12_user(nullptr);
-        info::CNationSettingDataPHInit14_ptr CNationSettingDataPHInit14_next(nullptr);
-        info::CNationSettingDataPHInit14_clbk CNationSettingDataPHInit14_user(nullptr);
-        info::CNationSettingDataPHIsNormalString16_ptr CNationSettingDataPHIsNormalString16_next(nullptr);
-        info::CNationSettingDataPHIsNormalString16_clbk CNationSettingDataPHIsNormalString16_user(nullptr);
-        info::CNationSettingDataPHIsNormalString18_ptr CNationSettingDataPHIsNormalString18_next(nullptr);
-        info::CNationSettingDataPHIsNormalString18_clbk CNationSettingDataPHIsNormalString18_user(nullptr);
-        info::CNationSettingDataPHLoop20_ptr CNationSettingDataPHLoop20_next(nullptr);
-        info::CNationSettingDataPHLoop20_clbk CNationSettingDataPHLoop20_user(nullptr);
-        info::CNationSettingDataPHReadSystemPass22_ptr CNationSettingDataPHReadSystemPass22_next(nullptr);
-        info::CNationSettingDataPHReadSystemPass22_clbk CNationSettingDataPHReadSystemPass22_user(nullptr);
+        static info::CNationSettingDataPHctor_CNationSettingDataPH2_ptr CNationSettingDataPHctor_CNationSettingDataPH2_next(nullptr);
+        static info::CNationSettingDataPHctor_CNationSettingDataPH2_clbk CNationSettingDataPHctor_CNationSettingDataPH2_user(nullptr);
+        static info::CNationSettingDataPHCheckEnterWorldRequest4_ptr CNationSettingDataPHCheckEnterWorldRequest4_next(nullptr);
+        static info::CNationSettingDataPHCheckEnterWorldRequest4_clbk CNationSettingDataPHCheckEnterWorldRequest4_user(nullptr);
+        static info::CNationSettingDataPHCreateBilling6_ptr CNationSettingDataPHCreateBilling6_next(nullptr);
+        static info::CNationSettingDataPHCreateBilling6_clbk CNationSettingDataPHCreateBilling6_user(nullptr);
+        static info::CNationSettingDataPHCreateWorker8_ptr CNationSettingDataPHCreateWorker8_next(nullptr);
+        static info::CNationSettingDataPHCreateWorker8_clbk CNationSettingDataPHCreateWorker8_user(nullptr);
+        static info::CNationSettingDataPHGetCashItemPrice10_ptr CNationSettingDataPHGetCashItemPrice10_next(nullptr);
+        static info::CNationSettingDataPHGetCashItemPrice10_clbk CNationSettingDataPHGetCashItemPrice10_user(nullptr);
+        static info::CNationSettingDataPHGetItemName12_ptr CNationSettingDataPHGetItemName12_next(nullptr);
+        static info::CNationSettingDataPHGetItemName12_clbk CNationSettingDataPHGetItemName12_user(nullptr);
+        static info::CNationSettingDataPHInit14_ptr CNationSettingDataPHInit14_next(nullptr);
+        static info::CNationSettingDataPHInit14_clbk CNationSettingDataPHInit14_user(nullptr);
+        static info::CNationSettingDataPHIsNormalString16_ptr CNationSettingDataPHIsNormalString16_next(nullptr);
+        static info::CNationSettingDataPHIsNormalString16_clbk CNationSettingDataPHIsNormalString16_user(nullptr);
+        static info::CNationSettingDataPHIsNormalString18_ptr CNationSettingDataPHIsNormalString18_next(nullptr);
+        static info::CNationSettingDataPHIsNormalString18_clbk CNationSettingDataPHIsNormalString18_user(nullptr);
+        static info::CNationSettingDataPHLoop20_ptr CNationSettingDataPHLoop20_next(nullptr);
+        static info::CNationSettingDataPHLoop20_clbk CNationSettingDataPHLoop20_user(nullptr);
+        static info::CNationSettingDataPHReadSystemPass22_ptr CNationSettingDataPHReadSystemPass22_next(nullptr);
+        static info::CNationSettingDataPHReadSystemPass22_clbk CNationSettingDataPHReadSystemPass22_user(nullptr);
         
-        void CNationSettingDataPHctor_CNationSettingDataPH2_wrapper(struct CNationSettingDataPH* _this)
+        static void CNationSettingDataPHctor_CNationSettingDataPH2_wrapper(struct CNationSettingDataPH* _this)
         {
            CNationSettingDataPHctor_CNationSettingDataPH2_user(_this, CNationSettingDataPHctor_CNationSettingDataPH2_next);
         };
-        bool CNationSettingDataPHCheckEnterWorldRequest4_wrapper(struct CNationSettingDataPH* _this, int n, char* pBuf)
+        static bool CNationSettingDataPHCheckEnterWorldRequest4_wrapper(struct CNationSettingDataPH* _this, int n, char* pBuf)
         {
            return CNationSettingDataPHCheckEnterWorldRequest4_user(_this, n, pBuf, CNationSettingDataPHCheckEnterWorldRequest4_next);
         };
-        struct CBilling* CNationSettingDataPHCreateBilling6_wrapper(struct CNationSettingDataPH* _this)
+        static struct CBilling* CNationSettingDataPHCreateBilling6_wrapper(struct CNationSettingDataPH* _this)
         {
            return CNationSettingDataPHCreateBilling6_user(_this, CNationSettingDataPHCreateBilling6_next);
         };
-        struct CashDbWorker* CNationSettingDataPHCreateWorker8_wrapper(struct CNationSettingDataPH* _this)
+        static struct CashDbWorker* CNationSettingDataPHCreateWorker8_wrapper(struct CNationSettingDataPH* _this)
         {
            return CNationSettingDataPHCreateWorker8_user(_this, CNationSettingDataPHCreateWorker8_next);
         };
-        int CNationSettingDataPHGetCashItemPrice10_wrapper(struct CNationSettingDataPH* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataPHGetCashItemPrice10_wrapper(struct CNationSettingDataPH* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataPHGetCashItemPrice10_user(_this, pFld, CNationSettingDataPHGetCashItemPrice10_next);
         };
-        char* CNationSettingDataPHGetItemName12_wrapper(struct CNationSettingDataPH* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataPHGetItemName12_wrapper(struct CNationSettingDataPH* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataPHGetItemName12_user(_this, pFld, CNationSettingDataPHGetItemName12_next);
         };
-        int CNationSettingDataPHInit14_wrapper(struct CNationSettingDataPH* _this)
+        static int CNationSettingDataPHInit14_wrapper(struct CNationSettingDataPH* _this)
         {
            return CNationSettingDataPHInit14_user(_this, CNationSettingDataPHInit14_next);
         };
-        bool CNationSettingDataPHIsNormalString16_wrapper(struct CNationSettingDataPH* _this, char* szString)
+        static bool CNationSettingDataPHIsNormalString16_wrapper(struct CNationSettingDataPH* _this, char* szString)
         {
            return CNationSettingDataPHIsNormalString16_user(_this, szString, CNationSettingDataPHIsNormalString16_next);
         };
-        bool CNationSettingDataPHIsNormalString18_wrapper(struct CNationSettingDataPH* _this, wchar_t* wszString)
+        static bool CNationSettingDataPHIsNormalString18_wrapper(struct CNationSettingDataPH* _this, wchar_t* wszString)
         {
            return CNationSettingDataPHIsNormalString18_user(_this, wszString, CNationSettingDataPHIsNormalString18_next);
         };
-        void CNationSettingDataPHLoop20_wrapper(struct CNationSettingDataPH* _this)
+        static void CNationSettingDataPHLoop20_wrapper(struct CNationSettingDataPH* _this)
         {
            CNationSettingDataPHLoop20_user(_this, CNationSettingDataPHLoop20_next);
         };
-        bool CNationSettingDataPHReadSystemPass22_wrapper(struct CNationSettingDataPH* _this)
+        static bool CNationSettingDataPHReadSystemPass22_wrapper(struct CNationSettingDataPH* _this)
         {
            return CNationSettingDataPHReadSystemPass22_user(_this, CNationSettingDataPHReadSystemPass22_next);
         };
         
-        hook_record CNationSettingDataPH_functions[] = {
+        static hook_record CNationSettingDataPH_functions[] = {
         {   (LPVOID)0x14022da40L,
             (LPVOID *)&CNationSettingDataPHctor_CNationSettingDataPH2_user,
             (LPVOID *)&CNationSettingDataPHctor_CNationSettingDataPH2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

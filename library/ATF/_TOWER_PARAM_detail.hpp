@@ -8,41 +8,41 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_TOWER_PARAMInit2_ptr _TOWER_PARAMInit2_next(nullptr);
-        info::_TOWER_PARAMInit2_clbk _TOWER_PARAMInit2_user(nullptr);
-        info::_TOWER_PARAMIsEmpty4_ptr _TOWER_PARAMIsEmpty4_next(nullptr);
-        info::_TOWER_PARAMIsEmpty4_clbk _TOWER_PARAMIsEmpty4_user(nullptr);
-        info::_TOWER_PARAMNotifyOwnerAttackInform6_ptr _TOWER_PARAMNotifyOwnerAttackInform6_next(nullptr);
-        info::_TOWER_PARAMNotifyOwnerAttackInform6_clbk _TOWER_PARAMNotifyOwnerAttackInform6_user(nullptr);
-        info::_TOWER_PARAMPushList8_ptr _TOWER_PARAMPushList8_next(nullptr);
-        info::_TOWER_PARAMPushList8_clbk _TOWER_PARAMPushList8_user(nullptr);
+        static info::_TOWER_PARAMInit2_ptr _TOWER_PARAMInit2_next(nullptr);
+        static info::_TOWER_PARAMInit2_clbk _TOWER_PARAMInit2_user(nullptr);
+        static info::_TOWER_PARAMIsEmpty4_ptr _TOWER_PARAMIsEmpty4_next(nullptr);
+        static info::_TOWER_PARAMIsEmpty4_clbk _TOWER_PARAMIsEmpty4_user(nullptr);
+        static info::_TOWER_PARAMNotifyOwnerAttackInform6_ptr _TOWER_PARAMNotifyOwnerAttackInform6_next(nullptr);
+        static info::_TOWER_PARAMNotifyOwnerAttackInform6_clbk _TOWER_PARAMNotifyOwnerAttackInform6_user(nullptr);
+        static info::_TOWER_PARAMPushList8_ptr _TOWER_PARAMPushList8_next(nullptr);
+        static info::_TOWER_PARAMPushList8_clbk _TOWER_PARAMPushList8_user(nullptr);
         
-        info::_TOWER_PARAM___listinit2_ptr _TOWER_PARAM___listinit2_next(nullptr);
-        info::_TOWER_PARAM___listinit2_clbk _TOWER_PARAM___listinit2_user(nullptr);
+        static info::_TOWER_PARAM___listinit2_ptr _TOWER_PARAM___listinit2_next(nullptr);
+        static info::_TOWER_PARAM___listinit2_clbk _TOWER_PARAM___listinit2_user(nullptr);
         
-        void _TOWER_PARAMInit2_wrapper(struct _TOWER_PARAM* _this)
+        static void _TOWER_PARAMInit2_wrapper(struct _TOWER_PARAM* _this)
         {
            _TOWER_PARAMInit2_user(_this, _TOWER_PARAMInit2_next);
         };
-        bool _TOWER_PARAMIsEmpty4_wrapper(struct _TOWER_PARAM* _this)
+        static bool _TOWER_PARAMIsEmpty4_wrapper(struct _TOWER_PARAM* _this)
         {
            return _TOWER_PARAMIsEmpty4_user(_this, _TOWER_PARAMIsEmpty4_next);
         };
-        void _TOWER_PARAMNotifyOwnerAttackInform6_wrapper(struct _TOWER_PARAM* _this, struct CCharacter* pDst)
+        static void _TOWER_PARAMNotifyOwnerAttackInform6_wrapper(struct _TOWER_PARAM* _this, struct CCharacter* pDst)
         {
            _TOWER_PARAMNotifyOwnerAttackInform6_user(_this, pDst, _TOWER_PARAMNotifyOwnerAttackInform6_next);
         };
-        bool _TOWER_PARAMPushList8_wrapper(struct _TOWER_PARAM* _this, struct _STORAGE_LIST::_db_con* pTowerItem, struct CGuardTower* pTowerObj)
+        static bool _TOWER_PARAMPushList8_wrapper(struct _TOWER_PARAM* _this, struct _STORAGE_LIST::_db_con* pTowerItem, struct CGuardTower* pTowerObj)
         {
            return _TOWER_PARAMPushList8_user(_this, pTowerItem, pTowerObj, _TOWER_PARAMPushList8_next);
         };
         
-        void _TOWER_PARAM___listinit2_wrapper(struct _TOWER_PARAM::_list* _this)
+        static void _TOWER_PARAM___listinit2_wrapper(struct _TOWER_PARAM::_list* _this)
         {
            _TOWER_PARAM___listinit2_user(_this, _TOWER_PARAM___listinit2_next);
         };
         
-        hook_record _TOWER_PARAM_functions[] = {
+        static hook_record _TOWER_PARAM_functions[] = {
         {   (LPVOID)0x140078110L,
             (LPVOID *)&_TOWER_PARAMInit2_user,
             (LPVOID *)&_TOWER_PARAMInit2_next,
@@ -72,5 +72,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

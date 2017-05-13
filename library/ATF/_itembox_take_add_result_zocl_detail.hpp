@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_itembox_take_add_result_zoclsize2_ptr _itembox_take_add_result_zoclsize2_next(nullptr);
-        info::_itembox_take_add_result_zoclsize2_clbk _itembox_take_add_result_zoclsize2_user(nullptr);
+        static info::_itembox_take_add_result_zoclsize2_ptr _itembox_take_add_result_zoclsize2_next(nullptr);
+        static info::_itembox_take_add_result_zoclsize2_clbk _itembox_take_add_result_zoclsize2_user(nullptr);
         
-        int _itembox_take_add_result_zoclsize2_wrapper(struct _itembox_take_add_result_zocl* _this)
+        static int _itembox_take_add_result_zoclsize2_wrapper(struct _itembox_take_add_result_zocl* _this)
         {
            return _itembox_take_add_result_zoclsize2_user(_this, _itembox_take_add_result_zoclsize2_next);
         };
         
-        hook_record _itembox_take_add_result_zocl_functions[] = {
+        static hook_record _itembox_take_add_result_zocl_functions[] = {
         {   (LPVOID)0x1400ef0e0L,
             (LPVOID *)&_itembox_take_add_result_zoclsize2_user,
             (LPVOID *)&_itembox_take_add_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

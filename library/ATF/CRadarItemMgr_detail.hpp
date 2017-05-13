@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRadarItemMgrctor_CRadarItemMgr2_ptr CRadarItemMgrctor_CRadarItemMgr2_next(nullptr);
-        info::CRadarItemMgrctor_CRadarItemMgr2_clbk CRadarItemMgrctor_CRadarItemMgr2_user(nullptr);
-        info::CRadarItemMgrCalcDelay4_ptr CRadarItemMgrCalcDelay4_next(nullptr);
-        info::CRadarItemMgrCalcDelay4_clbk CRadarItemMgrCalcDelay4_user(nullptr);
-        info::CRadarItemMgrGetDelayTime6_ptr CRadarItemMgrGetDelayTime6_next(nullptr);
-        info::CRadarItemMgrGetDelayTime6_clbk CRadarItemMgrGetDelayTime6_user(nullptr);
-        info::CRadarItemMgrGetStartTime8_ptr CRadarItemMgrGetStartTime8_next(nullptr);
-        info::CRadarItemMgrGetStartTime8_clbk CRadarItemMgrGetStartTime8_user(nullptr);
-        info::CRadarItemMgrInit10_ptr CRadarItemMgrInit10_next(nullptr);
-        info::CRadarItemMgrInit10_clbk CRadarItemMgrInit10_user(nullptr);
-        info::CRadarItemMgrInit12_ptr CRadarItemMgrInit12_next(nullptr);
-        info::CRadarItemMgrInit12_clbk CRadarItemMgrInit12_user(nullptr);
-        info::CRadarItemMgrIsRadarUse14_ptr CRadarItemMgrIsRadarUse14_next(nullptr);
-        info::CRadarItemMgrIsRadarUse14_clbk CRadarItemMgrIsRadarUse14_user(nullptr);
-        info::CRadarItemMgrIsUpdate16_ptr CRadarItemMgrIsUpdate16_next(nullptr);
-        info::CRadarItemMgrIsUpdate16_clbk CRadarItemMgrIsUpdate16_user(nullptr);
-        info::CRadarItemMgrIsUse18_ptr CRadarItemMgrIsUse18_next(nullptr);
-        info::CRadarItemMgrIsUse18_clbk CRadarItemMgrIsUse18_user(nullptr);
-        info::CRadarItemMgrRadarProc20_ptr CRadarItemMgrRadarProc20_next(nullptr);
-        info::CRadarItemMgrRadarProc20_clbk CRadarItemMgrRadarProc20_user(nullptr);
-        info::CRadarItemMgrResetFlags22_ptr CRadarItemMgrResetFlags22_next(nullptr);
-        info::CRadarItemMgrResetFlags22_clbk CRadarItemMgrResetFlags22_user(nullptr);
-        info::CRadarItemMgrResetUpdate24_ptr CRadarItemMgrResetUpdate24_next(nullptr);
-        info::CRadarItemMgrResetUpdate24_clbk CRadarItemMgrResetUpdate24_user(nullptr);
-        info::CRadarItemMgrSetUseRadar26_ptr CRadarItemMgrSetUseRadar26_next(nullptr);
-        info::CRadarItemMgrSetUseRadar26_clbk CRadarItemMgrSetUseRadar26_user(nullptr);
-        info::CRadarItemMgrdtor_CRadarItemMgr28_ptr CRadarItemMgrdtor_CRadarItemMgr28_next(nullptr);
-        info::CRadarItemMgrdtor_CRadarItemMgr28_clbk CRadarItemMgrdtor_CRadarItemMgr28_user(nullptr);
+        static info::CRadarItemMgrctor_CRadarItemMgr2_ptr CRadarItemMgrctor_CRadarItemMgr2_next(nullptr);
+        static info::CRadarItemMgrctor_CRadarItemMgr2_clbk CRadarItemMgrctor_CRadarItemMgr2_user(nullptr);
+        static info::CRadarItemMgrCalcDelay4_ptr CRadarItemMgrCalcDelay4_next(nullptr);
+        static info::CRadarItemMgrCalcDelay4_clbk CRadarItemMgrCalcDelay4_user(nullptr);
+        static info::CRadarItemMgrGetDelayTime6_ptr CRadarItemMgrGetDelayTime6_next(nullptr);
+        static info::CRadarItemMgrGetDelayTime6_clbk CRadarItemMgrGetDelayTime6_user(nullptr);
+        static info::CRadarItemMgrGetStartTime8_ptr CRadarItemMgrGetStartTime8_next(nullptr);
+        static info::CRadarItemMgrGetStartTime8_clbk CRadarItemMgrGetStartTime8_user(nullptr);
+        static info::CRadarItemMgrInit10_ptr CRadarItemMgrInit10_next(nullptr);
+        static info::CRadarItemMgrInit10_clbk CRadarItemMgrInit10_user(nullptr);
+        static info::CRadarItemMgrInit12_ptr CRadarItemMgrInit12_next(nullptr);
+        static info::CRadarItemMgrInit12_clbk CRadarItemMgrInit12_user(nullptr);
+        static info::CRadarItemMgrIsRadarUse14_ptr CRadarItemMgrIsRadarUse14_next(nullptr);
+        static info::CRadarItemMgrIsRadarUse14_clbk CRadarItemMgrIsRadarUse14_user(nullptr);
+        static info::CRadarItemMgrIsUpdate16_ptr CRadarItemMgrIsUpdate16_next(nullptr);
+        static info::CRadarItemMgrIsUpdate16_clbk CRadarItemMgrIsUpdate16_user(nullptr);
+        static info::CRadarItemMgrIsUse18_ptr CRadarItemMgrIsUse18_next(nullptr);
+        static info::CRadarItemMgrIsUse18_clbk CRadarItemMgrIsUse18_user(nullptr);
+        static info::CRadarItemMgrRadarProc20_ptr CRadarItemMgrRadarProc20_next(nullptr);
+        static info::CRadarItemMgrRadarProc20_clbk CRadarItemMgrRadarProc20_user(nullptr);
+        static info::CRadarItemMgrResetFlags22_ptr CRadarItemMgrResetFlags22_next(nullptr);
+        static info::CRadarItemMgrResetFlags22_clbk CRadarItemMgrResetFlags22_user(nullptr);
+        static info::CRadarItemMgrResetUpdate24_ptr CRadarItemMgrResetUpdate24_next(nullptr);
+        static info::CRadarItemMgrResetUpdate24_clbk CRadarItemMgrResetUpdate24_user(nullptr);
+        static info::CRadarItemMgrSetUseRadar26_ptr CRadarItemMgrSetUseRadar26_next(nullptr);
+        static info::CRadarItemMgrSetUseRadar26_clbk CRadarItemMgrSetUseRadar26_user(nullptr);
+        static info::CRadarItemMgrdtor_CRadarItemMgr28_ptr CRadarItemMgrdtor_CRadarItemMgr28_next(nullptr);
+        static info::CRadarItemMgrdtor_CRadarItemMgr28_clbk CRadarItemMgrdtor_CRadarItemMgr28_user(nullptr);
         
-        void CRadarItemMgrctor_CRadarItemMgr2_wrapper(struct CRadarItemMgr* _this)
+        static void CRadarItemMgrctor_CRadarItemMgr2_wrapper(struct CRadarItemMgr* _this)
         {
            CRadarItemMgrctor_CRadarItemMgr2_user(_this, CRadarItemMgrctor_CRadarItemMgr2_next);
         };
-        unsigned int CRadarItemMgrCalcDelay4_wrapper(struct CRadarItemMgr* _this)
+        static unsigned int CRadarItemMgrCalcDelay4_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrCalcDelay4_user(_this, CRadarItemMgrCalcDelay4_next);
         };
-        unsigned int CRadarItemMgrGetDelayTime6_wrapper(struct CRadarItemMgr* _this)
+        static unsigned int CRadarItemMgrGetDelayTime6_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrGetDelayTime6_user(_this, CRadarItemMgrGetDelayTime6_next);
         };
-        unsigned int CRadarItemMgrGetStartTime8_wrapper(struct CRadarItemMgr* _this)
+        static unsigned int CRadarItemMgrGetStartTime8_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrGetStartTime8_user(_this, CRadarItemMgrGetStartTime8_next);
         };
-        void CRadarItemMgrInit10_wrapper(struct CRadarItemMgr* _this, unsigned int dwDelayTime)
+        static void CRadarItemMgrInit10_wrapper(struct CRadarItemMgr* _this, unsigned int dwDelayTime)
         {
            CRadarItemMgrInit10_user(_this, dwDelayTime, CRadarItemMgrInit10_next);
         };
-        void CRadarItemMgrInit12_wrapper(struct CRadarItemMgr* _this)
+        static void CRadarItemMgrInit12_wrapper(struct CRadarItemMgr* _this)
         {
            CRadarItemMgrInit12_user(_this, CRadarItemMgrInit12_next);
         };
-        bool CRadarItemMgrIsRadarUse14_wrapper(struct CRadarItemMgr* _this)
+        static bool CRadarItemMgrIsRadarUse14_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrIsRadarUse14_user(_this, CRadarItemMgrIsRadarUse14_next);
         };
-        bool CRadarItemMgrIsUpdate16_wrapper(struct CRadarItemMgr* _this)
+        static bool CRadarItemMgrIsUpdate16_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrIsUpdate16_user(_this, CRadarItemMgrIsUpdate16_next);
         };
-        bool CRadarItemMgrIsUse18_wrapper(struct CRadarItemMgr* _this)
+        static bool CRadarItemMgrIsUse18_wrapper(struct CRadarItemMgr* _this)
         {
            return CRadarItemMgrIsUse18_user(_this, CRadarItemMgrIsUse18_next);
         };
-        bool CRadarItemMgrRadarProc20_wrapper(struct CRadarItemMgr* _this, struct _RadarItem_fld* pRadarFld)
+        static bool CRadarItemMgrRadarProc20_wrapper(struct CRadarItemMgr* _this, struct _RadarItem_fld* pRadarFld)
         {
            return CRadarItemMgrRadarProc20_user(_this, pRadarFld, CRadarItemMgrRadarProc20_next);
         };
-        void CRadarItemMgrResetFlags22_wrapper(struct CRadarItemMgr* _this)
+        static void CRadarItemMgrResetFlags22_wrapper(struct CRadarItemMgr* _this)
         {
            CRadarItemMgrResetFlags22_user(_this, CRadarItemMgrResetFlags22_next);
         };
-        void CRadarItemMgrResetUpdate24_wrapper(struct CRadarItemMgr* _this)
+        static void CRadarItemMgrResetUpdate24_wrapper(struct CRadarItemMgr* _this)
         {
            CRadarItemMgrResetUpdate24_user(_this, CRadarItemMgrResetUpdate24_next);
         };
-        void CRadarItemMgrSetUseRadar26_wrapper(struct CRadarItemMgr* _this, char** strRadarCode, struct CPlayer* pMaster, unsigned int dwDurTime, unsigned int dwDelayTime)
+        static void CRadarItemMgrSetUseRadar26_wrapper(struct CRadarItemMgr* _this, char** strRadarCode, struct CPlayer* pMaster, unsigned int dwDurTime, unsigned int dwDelayTime)
         {
            CRadarItemMgrSetUseRadar26_user(_this, strRadarCode, pMaster, dwDurTime, dwDelayTime, CRadarItemMgrSetUseRadar26_next);
         };
-        void CRadarItemMgrdtor_CRadarItemMgr28_wrapper(struct CRadarItemMgr* _this)
+        static void CRadarItemMgrdtor_CRadarItemMgr28_wrapper(struct CRadarItemMgr* _this)
         {
            CRadarItemMgrdtor_CRadarItemMgr28_user(_this, CRadarItemMgrdtor_CRadarItemMgr28_next);
         };
         
-        hook_record CRadarItemMgr_functions[] = {
+        static hook_record CRadarItemMgr_functions[] = {
         {   (LPVOID)0x1402e49c0L,
             (LPVOID *)&CRadarItemMgrctor_CRadarItemMgr2_user,
             (LPVOID *)&CRadarItemMgrctor_CRadarItemMgr2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

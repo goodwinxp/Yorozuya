@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterSPGroupTablector_CMonsterSPGroupTable2_ptr CMonsterSPGroupTablector_CMonsterSPGroupTable2_next(nullptr);
-        info::CMonsterSPGroupTablector_CMonsterSPGroupTable2_clbk CMonsterSPGroupTablector_CMonsterSPGroupTable2_user(nullptr);
-        info::CMonsterSPGroupTableCreate4_ptr CMonsterSPGroupTableCreate4_next(nullptr);
-        info::CMonsterSPGroupTableCreate4_clbk CMonsterSPGroupTableCreate4_user(nullptr);
-        info::CMonsterSPGroupTableGetRecord6_ptr CMonsterSPGroupTableGetRecord6_next(nullptr);
-        info::CMonsterSPGroupTableGetRecord6_clbk CMonsterSPGroupTableGetRecord6_user(nullptr);
-        info::CMonsterSPGroupTableGetRecord8_ptr CMonsterSPGroupTableGetRecord8_next(nullptr);
-        info::CMonsterSPGroupTableGetRecord8_clbk CMonsterSPGroupTableGetRecord8_user(nullptr);
-        info::CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_ptr CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_next(nullptr);
-        info::CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_clbk CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_user(nullptr);
+        static info::CMonsterSPGroupTablector_CMonsterSPGroupTable2_ptr CMonsterSPGroupTablector_CMonsterSPGroupTable2_next(nullptr);
+        static info::CMonsterSPGroupTablector_CMonsterSPGroupTable2_clbk CMonsterSPGroupTablector_CMonsterSPGroupTable2_user(nullptr);
+        static info::CMonsterSPGroupTableCreate4_ptr CMonsterSPGroupTableCreate4_next(nullptr);
+        static info::CMonsterSPGroupTableCreate4_clbk CMonsterSPGroupTableCreate4_user(nullptr);
+        static info::CMonsterSPGroupTableGetRecord6_ptr CMonsterSPGroupTableGetRecord6_next(nullptr);
+        static info::CMonsterSPGroupTableGetRecord6_clbk CMonsterSPGroupTableGetRecord6_user(nullptr);
+        static info::CMonsterSPGroupTableGetRecord8_ptr CMonsterSPGroupTableGetRecord8_next(nullptr);
+        static info::CMonsterSPGroupTableGetRecord8_clbk CMonsterSPGroupTableGetRecord8_user(nullptr);
+        static info::CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_ptr CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_next(nullptr);
+        static info::CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_clbk CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_user(nullptr);
         
-        void CMonsterSPGroupTablector_CMonsterSPGroupTable2_wrapper(struct CMonsterSPGroupTable* _this)
+        static void CMonsterSPGroupTablector_CMonsterSPGroupTable2_wrapper(struct CMonsterSPGroupTable* _this)
         {
            CMonsterSPGroupTablector_CMonsterSPGroupTable2_user(_this, CMonsterSPGroupTablector_CMonsterSPGroupTable2_next);
         };
-        bool CMonsterSPGroupTableCreate4_wrapper(struct CMonsterSPGroupTable* _this, struct CRecordData* pMonsterRecordData, struct CRecordData* pMonsterSPRecordData, struct CRecordData* pSkillRecordData, struct CRecordData* pForceRecordData, struct CRecordData* pClassSkillRecordData)
+        static bool CMonsterSPGroupTableCreate4_wrapper(struct CMonsterSPGroupTable* _this, struct CRecordData* pMonsterRecordData, struct CRecordData* pMonsterSPRecordData, struct CRecordData* pSkillRecordData, struct CRecordData* pForceRecordData, struct CRecordData* pClassSkillRecordData)
         {
            return CMonsterSPGroupTableCreate4_user(_this, pMonsterRecordData, pMonsterSPRecordData, pSkillRecordData, pForceRecordData, pClassSkillRecordData, CMonsterSPGroupTableCreate4_next);
         };
-        struct _monster_sp_group* CMonsterSPGroupTableGetRecord6_wrapper(struct CMonsterSPGroupTable* _this, char* szCode)
+        static struct _monster_sp_group* CMonsterSPGroupTableGetRecord6_wrapper(struct CMonsterSPGroupTable* _this, char* szCode)
         {
            return CMonsterSPGroupTableGetRecord6_user(_this, szCode, CMonsterSPGroupTableGetRecord6_next);
         };
-        struct _monster_sp_group* CMonsterSPGroupTableGetRecord8_wrapper(struct CMonsterSPGroupTable* _this, unsigned int dwIndex)
+        static struct _monster_sp_group* CMonsterSPGroupTableGetRecord8_wrapper(struct CMonsterSPGroupTable* _this, unsigned int dwIndex)
         {
            return CMonsterSPGroupTableGetRecord8_user(_this, dwIndex, CMonsterSPGroupTableGetRecord8_next);
         };
-        void CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_wrapper(struct CMonsterSPGroupTable* _this)
+        static void CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_wrapper(struct CMonsterSPGroupTable* _this)
         {
            CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_user(_this, CMonsterSPGroupTabledtor_CMonsterSPGroupTable10_next);
         };
         
-        hook_record CMonsterSPGroupTable_functions[] = {
+        static hook_record CMonsterSPGroupTable_functions[] = {
         {   (LPVOID)0x140202470L,
             (LPVOID *)&CMonsterSPGroupTablector_CMonsterSPGroupTable2_user,
             (LPVOID *)&CMonsterSPGroupTablector_CMonsterSPGroupTable2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

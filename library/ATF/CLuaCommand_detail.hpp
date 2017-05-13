@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaCommandctor_CLuaCommand2_ptr CLuaCommandctor_CLuaCommand2_next(nullptr);
-        info::CLuaCommandctor_CLuaCommand2_clbk CLuaCommandctor_CLuaCommand2_user(nullptr);
-        info::CLuaCommandGetBuffer4_ptr CLuaCommandGetBuffer4_next(nullptr);
-        info::CLuaCommandGetBuffer4_clbk CLuaCommandGetBuffer4_user(nullptr);
-        info::CLuaCommandGetType6_ptr CLuaCommandGetType6_next(nullptr);
-        info::CLuaCommandGetType6_clbk CLuaCommandGetType6_user(nullptr);
-        info::CLuaCommandInit8_ptr CLuaCommandInit8_next(nullptr);
-        info::CLuaCommandInit8_clbk CLuaCommandInit8_user(nullptr);
-        info::CLuaCommandSetCmd10_ptr CLuaCommandSetCmd10_next(nullptr);
-        info::CLuaCommandSetCmd10_clbk CLuaCommandSetCmd10_user(nullptr);
-        info::CLuaCommanddtor_CLuaCommand15_ptr CLuaCommanddtor_CLuaCommand15_next(nullptr);
-        info::CLuaCommanddtor_CLuaCommand15_clbk CLuaCommanddtor_CLuaCommand15_user(nullptr);
+        static info::CLuaCommandctor_CLuaCommand2_ptr CLuaCommandctor_CLuaCommand2_next(nullptr);
+        static info::CLuaCommandctor_CLuaCommand2_clbk CLuaCommandctor_CLuaCommand2_user(nullptr);
+        static info::CLuaCommandGetBuffer4_ptr CLuaCommandGetBuffer4_next(nullptr);
+        static info::CLuaCommandGetBuffer4_clbk CLuaCommandGetBuffer4_user(nullptr);
+        static info::CLuaCommandGetType6_ptr CLuaCommandGetType6_next(nullptr);
+        static info::CLuaCommandGetType6_clbk CLuaCommandGetType6_user(nullptr);
+        static info::CLuaCommandInit8_ptr CLuaCommandInit8_next(nullptr);
+        static info::CLuaCommandInit8_clbk CLuaCommandInit8_user(nullptr);
+        static info::CLuaCommandSetCmd10_ptr CLuaCommandSetCmd10_next(nullptr);
+        static info::CLuaCommandSetCmd10_clbk CLuaCommandSetCmd10_user(nullptr);
+        static info::CLuaCommanddtor_CLuaCommand15_ptr CLuaCommanddtor_CLuaCommand15_next(nullptr);
+        static info::CLuaCommanddtor_CLuaCommand15_clbk CLuaCommanddtor_CLuaCommand15_user(nullptr);
         
-        void CLuaCommandctor_CLuaCommand2_wrapper(struct CLuaCommand* _this)
+        static void CLuaCommandctor_CLuaCommand2_wrapper(struct CLuaCommand* _this)
         {
            CLuaCommandctor_CLuaCommand2_user(_this, CLuaCommandctor_CLuaCommand2_next);
         };
-        char* CLuaCommandGetBuffer4_wrapper(struct CLuaCommand* _this)
+        static char* CLuaCommandGetBuffer4_wrapper(struct CLuaCommand* _this)
         {
            return CLuaCommandGetBuffer4_user(_this, CLuaCommandGetBuffer4_next);
         };
-        char CLuaCommandGetType6_wrapper(struct CLuaCommand* _this)
+        static char CLuaCommandGetType6_wrapper(struct CLuaCommand* _this)
         {
            return CLuaCommandGetType6_user(_this, CLuaCommandGetType6_next);
         };
-        void CLuaCommandInit8_wrapper(struct CLuaCommand* _this)
+        static void CLuaCommandInit8_wrapper(struct CLuaCommand* _this)
         {
            CLuaCommandInit8_user(_this, CLuaCommandInit8_next);
         };
-        void CLuaCommandSetCmd10_wrapper(struct CLuaCommand* _this, char byType, char* strName)
+        static void CLuaCommandSetCmd10_wrapper(struct CLuaCommand* _this, char byType, char* strName)
         {
            CLuaCommandSetCmd10_user(_this, byType, strName, CLuaCommandSetCmd10_next);
         };
-        void CLuaCommanddtor_CLuaCommand15_wrapper(struct CLuaCommand* _this)
+        static void CLuaCommanddtor_CLuaCommand15_wrapper(struct CLuaCommand* _this)
         {
            CLuaCommanddtor_CLuaCommand15_user(_this, CLuaCommanddtor_CLuaCommand15_next);
         };
         
-        hook_record CLuaCommand_functions[] = {
+        static hook_record CLuaCommand_functions[] = {
         {   (LPVOID)0x14029d880L,
             (LPVOID *)&CLuaCommandctor_CLuaCommand2_user,
             (LPVOID *)&CLuaCommandctor_CLuaCommand2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

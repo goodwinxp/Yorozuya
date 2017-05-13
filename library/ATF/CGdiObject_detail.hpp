@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGdiObjectDeleteObject1_ptr CGdiObjectDeleteObject1_next(nullptr);
-        info::CGdiObjectDeleteObject1_clbk CGdiObjectDeleteObject1_user(nullptr);
+        static info::CGdiObjectDeleteObject1_ptr CGdiObjectDeleteObject1_next(nullptr);
+        static info::CGdiObjectDeleteObject1_clbk CGdiObjectDeleteObject1_user(nullptr);
         
-        int64_t CGdiObjectDeleteObject1_wrapper(struct CGdiObject* _this)
+        static int64_t CGdiObjectDeleteObject1_wrapper(struct CGdiObject* _this)
         {
            return CGdiObjectDeleteObject1_user(_this, CGdiObjectDeleteObject1_next);
         };
         
-        hook_record CGdiObject_functions[] = {
+        static hook_record CGdiObject_functions[] = {
         {   (LPVOID)0x1404dc3fcL,
             (LPVOID *)&CGdiObjectDeleteObject1_user,
             (LPVOID *)&CGdiObjectDeleteObject1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

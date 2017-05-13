@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ECONOMY_SYSTEMCurTradeMoneyInit2_ptr _ECONOMY_SYSTEMCurTradeMoneyInit2_next(nullptr);
-        info::_ECONOMY_SYSTEMCurTradeMoneyInit2_clbk _ECONOMY_SYSTEMCurTradeMoneyInit2_user(nullptr);
-        info::_ECONOMY_SYSTEMInit4_ptr _ECONOMY_SYSTEMInit4_next(nullptr);
-        info::_ECONOMY_SYSTEMInit4_clbk _ECONOMY_SYSTEMInit4_user(nullptr);
-        info::_ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_ptr _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_next(nullptr);
-        info::_ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_clbk _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_user(nullptr);
+        static info::_ECONOMY_SYSTEMCurTradeMoneyInit2_ptr _ECONOMY_SYSTEMCurTradeMoneyInit2_next(nullptr);
+        static info::_ECONOMY_SYSTEMCurTradeMoneyInit2_clbk _ECONOMY_SYSTEMCurTradeMoneyInit2_user(nullptr);
+        static info::_ECONOMY_SYSTEMInit4_ptr _ECONOMY_SYSTEMInit4_next(nullptr);
+        static info::_ECONOMY_SYSTEMInit4_clbk _ECONOMY_SYSTEMInit4_user(nullptr);
+        static info::_ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_ptr _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_next(nullptr);
+        static info::_ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_clbk _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_user(nullptr);
         
-        void _ECONOMY_SYSTEMCurTradeMoneyInit2_wrapper(struct _ECONOMY_SYSTEM* _this)
+        static void _ECONOMY_SYSTEMCurTradeMoneyInit2_wrapper(struct _ECONOMY_SYSTEM* _this)
         {
            _ECONOMY_SYSTEMCurTradeMoneyInit2_user(_this, _ECONOMY_SYSTEMCurTradeMoneyInit2_next);
         };
-        void _ECONOMY_SYSTEMInit4_wrapper(struct _ECONOMY_SYSTEM* _this)
+        static void _ECONOMY_SYSTEMInit4_wrapper(struct _ECONOMY_SYSTEM* _this)
         {
            _ECONOMY_SYSTEMInit4_user(_this, _ECONOMY_SYSTEMInit4_next);
         };
-        void _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_wrapper(struct _ECONOMY_SYSTEM* _this)
+        static void _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_wrapper(struct _ECONOMY_SYSTEM* _this)
         {
            _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_user(_this, _ECONOMY_SYSTEMctor__ECONOMY_SYSTEM6_next);
         };
         
-        hook_record _ECONOMY_SYSTEM_functions[] = {
+        static hook_record _ECONOMY_SYSTEM_functions[] = {
         {   (LPVOID)0x1402a5bc0L,
             (LPVOID *)&_ECONOMY_SYSTEMCurTradeMoneyInit2_user,
             (LPVOID *)&_ECONOMY_SYSTEMCurTradeMoneyInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

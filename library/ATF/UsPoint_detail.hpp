@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::UsPointctor_UsPoint2_ptr UsPointctor_UsPoint2_next(nullptr);
-        info::UsPointctor_UsPoint2_clbk UsPointctor_UsPoint2_user(nullptr);
-        info::UsPointctor_UsPoint4_ptr UsPointctor_UsPoint4_next(nullptr);
-        info::UsPointctor_UsPoint4_clbk UsPointctor_UsPoint4_user(nullptr);
-        info::UsPointdtor_UsPoint14_ptr UsPointdtor_UsPoint14_next(nullptr);
-        info::UsPointdtor_UsPoint14_clbk UsPointdtor_UsPoint14_user(nullptr);
+        static info::UsPointctor_UsPoint2_ptr UsPointctor_UsPoint2_next(nullptr);
+        static info::UsPointctor_UsPoint2_clbk UsPointctor_UsPoint2_user(nullptr);
+        static info::UsPointctor_UsPoint4_ptr UsPointctor_UsPoint4_next(nullptr);
+        static info::UsPointctor_UsPoint4_clbk UsPointctor_UsPoint4_user(nullptr);
+        static info::UsPointdtor_UsPoint14_ptr UsPointdtor_UsPoint14_next(nullptr);
+        static info::UsPointdtor_UsPoint14_clbk UsPointdtor_UsPoint14_user(nullptr);
         
-        void UsPointctor_UsPoint2_wrapper(struct UsPoint<UsStateTBL>* _this, struct UsPoint<UsStateTBL>* ptr)
+        static void UsPointctor_UsPoint2_wrapper(struct UsPoint<UsStateTBL>* _this, struct UsPoint<UsStateTBL>* ptr)
         {
            UsPointctor_UsPoint2_user(_this, ptr);
         };
-        void UsPointctor_UsPoint4_wrapper(struct UsPoint<UsStateTBL>* _this, struct UsStateTBL* pObject)
+        static void UsPointctor_UsPoint4_wrapper(struct UsPoint<UsStateTBL>* _this, struct UsStateTBL* pObject)
         {
            UsPointctor_UsPoint4_user(_this, pObject);
         };
-        void UsPointdtor_UsPoint14_wrapper(struct UsPoint<UsStateTBL>* _this)
+        static void UsPointdtor_UsPoint14_wrapper(struct UsPoint<UsStateTBL>* _this)
         {
            UsPointdtor_UsPoint14_user(_this);
         };
         
-        hook_record UsPoint<UsStateTBL>_functions[] = {
+        static hook_record UsPoint<UsStateTBL>_functions[] = {
         {   (LPVOID)0x14014cbc0L,
             (LPVOID *)&UsPointctor_UsPoint2_user,
             (LPVOID *)&UsPointctor_UsPoint2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

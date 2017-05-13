@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSyncCSctor_CSyncCS2_ptr CSyncCSctor_CSyncCS2_next(nullptr);
-        info::CSyncCSctor_CSyncCS2_clbk CSyncCSctor_CSyncCS2_user(nullptr);
-        info::CSyncCSIsUse4_ptr CSyncCSIsUse4_next(nullptr);
-        info::CSyncCSIsUse4_clbk CSyncCSIsUse4_user(nullptr);
-        info::CSyncCSLock6_ptr CSyncCSLock6_next(nullptr);
-        info::CSyncCSLock6_clbk CSyncCSLock6_user(nullptr);
-        info::CSyncCSSetUse8_ptr CSyncCSSetUse8_next(nullptr);
-        info::CSyncCSSetUse8_clbk CSyncCSSetUse8_user(nullptr);
-        info::CSyncCSUnlock10_ptr CSyncCSUnlock10_next(nullptr);
-        info::CSyncCSUnlock10_clbk CSyncCSUnlock10_user(nullptr);
-        info::CSyncCSdtor_CSyncCS15_ptr CSyncCSdtor_CSyncCS15_next(nullptr);
-        info::CSyncCSdtor_CSyncCS15_clbk CSyncCSdtor_CSyncCS15_user(nullptr);
+        static info::CSyncCSctor_CSyncCS2_ptr CSyncCSctor_CSyncCS2_next(nullptr);
+        static info::CSyncCSctor_CSyncCS2_clbk CSyncCSctor_CSyncCS2_user(nullptr);
+        static info::CSyncCSIsUse4_ptr CSyncCSIsUse4_next(nullptr);
+        static info::CSyncCSIsUse4_clbk CSyncCSIsUse4_user(nullptr);
+        static info::CSyncCSLock6_ptr CSyncCSLock6_next(nullptr);
+        static info::CSyncCSLock6_clbk CSyncCSLock6_user(nullptr);
+        static info::CSyncCSSetUse8_ptr CSyncCSSetUse8_next(nullptr);
+        static info::CSyncCSSetUse8_clbk CSyncCSSetUse8_user(nullptr);
+        static info::CSyncCSUnlock10_ptr CSyncCSUnlock10_next(nullptr);
+        static info::CSyncCSUnlock10_clbk CSyncCSUnlock10_user(nullptr);
+        static info::CSyncCSdtor_CSyncCS15_ptr CSyncCSdtor_CSyncCS15_next(nullptr);
+        static info::CSyncCSdtor_CSyncCS15_clbk CSyncCSdtor_CSyncCS15_user(nullptr);
         
-        void CSyncCSctor_CSyncCS2_wrapper(struct CSyncCS* _this)
+        static void CSyncCSctor_CSyncCS2_wrapper(struct CSyncCS* _this)
         {
            CSyncCSctor_CSyncCS2_user(_this, CSyncCSctor_CSyncCS2_next);
         };
-        bool CSyncCSIsUse4_wrapper(struct CSyncCS* _this)
+        static bool CSyncCSIsUse4_wrapper(struct CSyncCS* _this)
         {
            return CSyncCSIsUse4_user(_this, CSyncCSIsUse4_next);
         };
-        void CSyncCSLock6_wrapper(struct CSyncCS* _this)
+        static void CSyncCSLock6_wrapper(struct CSyncCS* _this)
         {
            CSyncCSLock6_user(_this, CSyncCSLock6_next);
         };
-        void CSyncCSSetUse8_wrapper(struct CSyncCS* _this, bool bUse)
+        static void CSyncCSSetUse8_wrapper(struct CSyncCS* _this, bool bUse)
         {
            CSyncCSSetUse8_user(_this, bUse, CSyncCSSetUse8_next);
         };
-        void CSyncCSUnlock10_wrapper(struct CSyncCS* _this)
+        static void CSyncCSUnlock10_wrapper(struct CSyncCS* _this)
         {
            CSyncCSUnlock10_user(_this, CSyncCSUnlock10_next);
         };
-        void CSyncCSdtor_CSyncCS15_wrapper(struct CSyncCS* _this)
+        static void CSyncCSdtor_CSyncCS15_wrapper(struct CSyncCS* _this)
         {
            CSyncCSdtor_CSyncCS15_user(_this, CSyncCSdtor_CSyncCS15_next);
         };
         
-        hook_record CSyncCS_functions[] = {
+        static hook_record CSyncCS_functions[] = {
         {   (LPVOID)0x140439140L,
             (LPVOID *)&CSyncCSctor_CSyncCS2_user,
             (LPVOID *)&CSyncCSctor_CSyncCS2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

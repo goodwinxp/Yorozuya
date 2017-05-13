@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::SkyCreateVertexBuffer1_ptr SkyCreateVertexBuffer1_next(nullptr);
-        info::SkyCreateVertexBuffer1_clbk SkyCreateVertexBuffer1_user(nullptr);
-        info::SkyFillupVertexBuffer2_ptr SkyFillupVertexBuffer2_next(nullptr);
-        info::SkyFillupVertexBuffer2_clbk SkyFillupVertexBuffer2_user(nullptr);
-        info::SkyInvalidateSky3_ptr SkyInvalidateSky3_next(nullptr);
-        info::SkyInvalidateSky3_clbk SkyInvalidateSky3_user(nullptr);
-        info::SkyRender4_ptr SkyRender4_next(nullptr);
-        info::SkyRender4_clbk SkyRender4_user(nullptr);
-        info::SkyRestoreSky5_ptr SkyRestoreSky5_next(nullptr);
-        info::SkyRestoreSky5_clbk SkyRestoreSky5_user(nullptr);
-        info::Skyctor_Sky6_ptr Skyctor_Sky6_next(nullptr);
-        info::Skyctor_Sky6_clbk Skyctor_Sky6_user(nullptr);
-        info::Skydtor_Sky7_ptr Skydtor_Sky7_next(nullptr);
-        info::Skydtor_Sky7_clbk Skydtor_Sky7_user(nullptr);
+        static info::SkyCreateVertexBuffer1_ptr SkyCreateVertexBuffer1_next(nullptr);
+        static info::SkyCreateVertexBuffer1_clbk SkyCreateVertexBuffer1_user(nullptr);
+        static info::SkyFillupVertexBuffer2_ptr SkyFillupVertexBuffer2_next(nullptr);
+        static info::SkyFillupVertexBuffer2_clbk SkyFillupVertexBuffer2_user(nullptr);
+        static info::SkyInvalidateSky3_ptr SkyInvalidateSky3_next(nullptr);
+        static info::SkyInvalidateSky3_clbk SkyInvalidateSky3_user(nullptr);
+        static info::SkyRender4_ptr SkyRender4_next(nullptr);
+        static info::SkyRender4_clbk SkyRender4_user(nullptr);
+        static info::SkyRestoreSky5_ptr SkyRestoreSky5_next(nullptr);
+        static info::SkyRestoreSky5_clbk SkyRestoreSky5_user(nullptr);
+        static info::Skyctor_Sky6_ptr Skyctor_Sky6_next(nullptr);
+        static info::Skyctor_Sky6_clbk Skyctor_Sky6_user(nullptr);
+        static info::Skydtor_Sky7_ptr Skydtor_Sky7_next(nullptr);
+        static info::Skydtor_Sky7_clbk Skydtor_Sky7_user(nullptr);
         
-        int32_t SkyCreateVertexBuffer1_wrapper(struct Sky* _this)
+        static int32_t SkyCreateVertexBuffer1_wrapper(struct Sky* _this)
         {
            return SkyCreateVertexBuffer1_user(_this, SkyCreateVertexBuffer1_next);
         };
-        int32_t SkyFillupVertexBuffer2_wrapper(struct Sky* _this)
+        static int32_t SkyFillupVertexBuffer2_wrapper(struct Sky* _this)
         {
            return SkyFillupVertexBuffer2_user(_this, SkyFillupVertexBuffer2_next);
         };
-        void SkyInvalidateSky3_wrapper(struct Sky* _this)
+        static void SkyInvalidateSky3_wrapper(struct Sky* _this)
         {
            SkyInvalidateSky3_user(_this, SkyInvalidateSky3_next);
         };
-        int32_t SkyRender4_wrapper(struct Sky* _this)
+        static int32_t SkyRender4_wrapper(struct Sky* _this)
         {
            return SkyRender4_user(_this, SkyRender4_next);
         };
-        void SkyRestoreSky5_wrapper(struct Sky* _this)
+        static void SkyRestoreSky5_wrapper(struct Sky* _this)
         {
            SkyRestoreSky5_user(_this, SkyRestoreSky5_next);
         };
-        int64_t Skyctor_Sky6_wrapper(struct Sky* _this)
+        static int64_t Skyctor_Sky6_wrapper(struct Sky* _this)
         {
            return Skyctor_Sky6_user(_this, Skyctor_Sky6_next);
         };
-        int64_t Skydtor_Sky7_wrapper(struct Sky* _this)
+        static int64_t Skydtor_Sky7_wrapper(struct Sky* _this)
         {
            return Skydtor_Sky7_user(_this, Skydtor_Sky7_next);
         };
         
-        hook_record Sky_functions[] = {
+        static hook_record Sky_functions[] = {
         {   (LPVOID)0x140522db0L,
             (LPVOID *)&SkyCreateVertexBuffer1_user,
             (LPVOID *)&SkyCreateVertexBuffer1_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

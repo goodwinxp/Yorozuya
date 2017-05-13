@@ -8,47 +8,47 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_TRADE_DB_BASEClear2_ptr _TRADE_DB_BASEClear2_next(nullptr);
-        info::_TRADE_DB_BASEClear2_clbk _TRADE_DB_BASEClear2_user(nullptr);
-        info::_TRADE_DB_BASEInit4_ptr _TRADE_DB_BASEInit4_next(nullptr);
-        info::_TRADE_DB_BASEInit4_clbk _TRADE_DB_BASEInit4_user(nullptr);
-        info::_TRADE_DB_BASEctor__TRADE_DB_BASE6_ptr _TRADE_DB_BASEctor__TRADE_DB_BASE6_next(nullptr);
-        info::_TRADE_DB_BASEctor__TRADE_DB_BASE6_clbk _TRADE_DB_BASEctor__TRADE_DB_BASE6_user(nullptr);
+        static info::_TRADE_DB_BASEClear2_ptr _TRADE_DB_BASEClear2_next(nullptr);
+        static info::_TRADE_DB_BASEClear2_clbk _TRADE_DB_BASEClear2_user(nullptr);
+        static info::_TRADE_DB_BASEInit4_ptr _TRADE_DB_BASEInit4_next(nullptr);
+        static info::_TRADE_DB_BASEInit4_clbk _TRADE_DB_BASEInit4_user(nullptr);
+        static info::_TRADE_DB_BASEctor__TRADE_DB_BASE6_ptr _TRADE_DB_BASEctor__TRADE_DB_BASE6_next(nullptr);
+        static info::_TRADE_DB_BASEctor__TRADE_DB_BASE6_clbk _TRADE_DB_BASEctor__TRADE_DB_BASE6_user(nullptr);
         
-        info::_TRADE_DB_BASE___LISTClear2_ptr _TRADE_DB_BASE___LISTClear2_next(nullptr);
-        info::_TRADE_DB_BASE___LISTClear2_clbk _TRADE_DB_BASE___LISTClear2_user(nullptr);
-        info::_TRADE_DB_BASE___LISTIsEmpty4_ptr _TRADE_DB_BASE___LISTIsEmpty4_next(nullptr);
-        info::_TRADE_DB_BASE___LISTIsEmpty4_clbk _TRADE_DB_BASE___LISTIsEmpty4_user(nullptr);
-        info::_TRADE_DB_BASE___LISTctor__LIST6_ptr _TRADE_DB_BASE___LISTctor__LIST6_next(nullptr);
-        info::_TRADE_DB_BASE___LISTctor__LIST6_clbk _TRADE_DB_BASE___LISTctor__LIST6_user(nullptr);
+        static info::_TRADE_DB_BASE___LISTClear2_ptr _TRADE_DB_BASE___LISTClear2_next(nullptr);
+        static info::_TRADE_DB_BASE___LISTClear2_clbk _TRADE_DB_BASE___LISTClear2_user(nullptr);
+        static info::_TRADE_DB_BASE___LISTIsEmpty4_ptr _TRADE_DB_BASE___LISTIsEmpty4_next(nullptr);
+        static info::_TRADE_DB_BASE___LISTIsEmpty4_clbk _TRADE_DB_BASE___LISTIsEmpty4_user(nullptr);
+        static info::_TRADE_DB_BASE___LISTctor__LIST6_ptr _TRADE_DB_BASE___LISTctor__LIST6_next(nullptr);
+        static info::_TRADE_DB_BASE___LISTctor__LIST6_clbk _TRADE_DB_BASE___LISTctor__LIST6_user(nullptr);
         
-        void _TRADE_DB_BASEClear2_wrapper(struct _TRADE_DB_BASE* _this)
+        static void _TRADE_DB_BASEClear2_wrapper(struct _TRADE_DB_BASE* _this)
         {
            _TRADE_DB_BASEClear2_user(_this, _TRADE_DB_BASEClear2_next);
         };
-        void _TRADE_DB_BASEInit4_wrapper(struct _TRADE_DB_BASE* _this)
+        static void _TRADE_DB_BASEInit4_wrapper(struct _TRADE_DB_BASE* _this)
         {
            _TRADE_DB_BASEInit4_user(_this, _TRADE_DB_BASEInit4_next);
         };
-        void _TRADE_DB_BASEctor__TRADE_DB_BASE6_wrapper(struct _TRADE_DB_BASE* _this)
+        static void _TRADE_DB_BASEctor__TRADE_DB_BASE6_wrapper(struct _TRADE_DB_BASE* _this)
         {
            _TRADE_DB_BASEctor__TRADE_DB_BASE6_user(_this, _TRADE_DB_BASEctor__TRADE_DB_BASE6_next);
         };
         
-        void _TRADE_DB_BASE___LISTClear2_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
+        static void _TRADE_DB_BASE___LISTClear2_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
         {
            _TRADE_DB_BASE___LISTClear2_user(_this, _TRADE_DB_BASE___LISTClear2_next);
         };
-        bool _TRADE_DB_BASE___LISTIsEmpty4_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
+        static bool _TRADE_DB_BASE___LISTIsEmpty4_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
         {
            return _TRADE_DB_BASE___LISTIsEmpty4_user(_this, _TRADE_DB_BASE___LISTIsEmpty4_next);
         };
-        void _TRADE_DB_BASE___LISTctor__LIST6_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
+        static void _TRADE_DB_BASE___LISTctor__LIST6_wrapper(struct _TRADE_DB_BASE::_LIST* _this)
         {
            _TRADE_DB_BASE___LISTctor__LIST6_user(_this, _TRADE_DB_BASE___LISTctor__LIST6_next);
         };
         
-        hook_record _TRADE_DB_BASE_functions[] = {
+        static hook_record _TRADE_DB_BASE_functions[] = {
         {   (LPVOID)0x140076e70L,
             (LPVOID *)&_TRADE_DB_BASEClear2_user,
             (LPVOID *)&_TRADE_DB_BASEClear2_next,
@@ -83,5 +83,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

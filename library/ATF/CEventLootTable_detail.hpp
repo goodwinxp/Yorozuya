@@ -8,47 +8,47 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CEventLootTableAddRecord2_ptr CEventLootTableAddRecord2_next(nullptr);
-        info::CEventLootTableAddRecord2_clbk CEventLootTableAddRecord2_user(nullptr);
-        info::CEventLootTablector_CEventLootTable4_ptr CEventLootTablector_CEventLootTable4_next(nullptr);
-        info::CEventLootTablector_CEventLootTable4_clbk CEventLootTablector_CEventLootTable4_user(nullptr);
-        info::CEventLootTableGetRecord6_ptr CEventLootTableGetRecord6_next(nullptr);
-        info::CEventLootTableGetRecord6_clbk CEventLootTableGetRecord6_user(nullptr);
-        info::CEventLootTableReadRecord8_ptr CEventLootTableReadRecord8_next(nullptr);
-        info::CEventLootTableReadRecord8_clbk CEventLootTableReadRecord8_user(nullptr);
-        info::CEventLootTabledtor_CEventLootTable13_ptr CEventLootTabledtor_CEventLootTable13_next(nullptr);
-        info::CEventLootTabledtor_CEventLootTable13_clbk CEventLootTabledtor_CEventLootTable13_user(nullptr);
+        static info::CEventLootTableAddRecord2_ptr CEventLootTableAddRecord2_next(nullptr);
+        static info::CEventLootTableAddRecord2_clbk CEventLootTableAddRecord2_user(nullptr);
+        static info::CEventLootTablector_CEventLootTable4_ptr CEventLootTablector_CEventLootTable4_next(nullptr);
+        static info::CEventLootTablector_CEventLootTable4_clbk CEventLootTablector_CEventLootTable4_user(nullptr);
+        static info::CEventLootTableGetRecord6_ptr CEventLootTableGetRecord6_next(nullptr);
+        static info::CEventLootTableGetRecord6_clbk CEventLootTableGetRecord6_user(nullptr);
+        static info::CEventLootTableReadRecord8_ptr CEventLootTableReadRecord8_next(nullptr);
+        static info::CEventLootTableReadRecord8_clbk CEventLootTableReadRecord8_user(nullptr);
+        static info::CEventLootTabledtor_CEventLootTable13_ptr CEventLootTabledtor_CEventLootTable13_next(nullptr);
+        static info::CEventLootTabledtor_CEventLootTable13_clbk CEventLootTabledtor_CEventLootTable13_user(nullptr);
         
-        info::CEventLootTable___event_dropctor__event_drop2_ptr CEventLootTable___event_dropctor__event_drop2_next(nullptr);
-        info::CEventLootTable___event_dropctor__event_drop2_clbk CEventLootTable___event_dropctor__event_drop2_user(nullptr);
+        static info::CEventLootTable___event_dropctor__event_drop2_ptr CEventLootTable___event_dropctor__event_drop2_next(nullptr);
+        static info::CEventLootTable___event_dropctor__event_drop2_clbk CEventLootTable___event_dropctor__event_drop2_user(nullptr);
         
-        void CEventLootTableAddRecord2_wrapper(struct CEventLootTable* _this, struct CEventLootTable::_event_drop* pEventDrop)
+        static void CEventLootTableAddRecord2_wrapper(struct CEventLootTable* _this, struct CEventLootTable::_event_drop* pEventDrop)
         {
            CEventLootTableAddRecord2_user(_this, pEventDrop, CEventLootTableAddRecord2_next);
         };
-        void CEventLootTablector_CEventLootTable4_wrapper(struct CEventLootTable* _this)
+        static void CEventLootTablector_CEventLootTable4_wrapper(struct CEventLootTable* _this)
         {
            CEventLootTablector_CEventLootTable4_user(_this, CEventLootTablector_CEventLootTable4_next);
         };
-        struct CEventLootTable::_event_drop* CEventLootTableGetRecord6_wrapper(struct CEventLootTable* _this, char* szRecordCode)
+        static struct CEventLootTable::_event_drop* CEventLootTableGetRecord6_wrapper(struct CEventLootTable* _this, char* szRecordCode)
         {
            return CEventLootTableGetRecord6_user(_this, szRecordCode, CEventLootTableGetRecord6_next);
         };
-        bool CEventLootTableReadRecord8_wrapper(struct CEventLootTable* _this)
+        static bool CEventLootTableReadRecord8_wrapper(struct CEventLootTable* _this)
         {
            return CEventLootTableReadRecord8_user(_this, CEventLootTableReadRecord8_next);
         };
-        void CEventLootTabledtor_CEventLootTable13_wrapper(struct CEventLootTable* _this)
+        static void CEventLootTabledtor_CEventLootTable13_wrapper(struct CEventLootTable* _this)
         {
            CEventLootTabledtor_CEventLootTable13_user(_this, CEventLootTabledtor_CEventLootTable13_next);
         };
         
-        void CEventLootTable___event_dropctor__event_drop2_wrapper(struct CEventLootTable::_event_drop* _this)
+        static void CEventLootTable___event_dropctor__event_drop2_wrapper(struct CEventLootTable::_event_drop* _this)
         {
            CEventLootTable___event_dropctor__event_drop2_user(_this, CEventLootTable___event_dropctor__event_drop2_next);
         };
         
-        hook_record CEventLootTable_functions[] = {
+        static hook_record CEventLootTable_functions[] = {
         {   (LPVOID)0x140203e70L,
             (LPVOID *)&CEventLootTableAddRecord2_user,
             (LPVOID *)&CEventLootTableAddRecord2_next,
@@ -83,5 +83,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

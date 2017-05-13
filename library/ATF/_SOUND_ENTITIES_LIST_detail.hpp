@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SOUND_ENTITIES_LISTGetBoxIntensity1_ptr _SOUND_ENTITIES_LISTGetBoxIntensity1_next(nullptr);
-        info::_SOUND_ENTITIES_LISTGetBoxIntensity1_clbk _SOUND_ENTITIES_LISTGetBoxIntensity1_user(nullptr);
-        info::_SOUND_ENTITIES_LISTGetPan2_ptr _SOUND_ENTITIES_LISTGetPan2_next(nullptr);
-        info::_SOUND_ENTITIES_LISTGetPan2_clbk _SOUND_ENTITIES_LISTGetPan2_user(nullptr);
-        info::_SOUND_ENTITIES_LISTGetVolume3_ptr _SOUND_ENTITIES_LISTGetVolume3_next(nullptr);
-        info::_SOUND_ENTITIES_LISTGetVolume3_clbk _SOUND_ENTITIES_LISTGetVolume3_user(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetBoxIntensity1_ptr _SOUND_ENTITIES_LISTGetBoxIntensity1_next(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetBoxIntensity1_clbk _SOUND_ENTITIES_LISTGetBoxIntensity1_user(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetPan2_ptr _SOUND_ENTITIES_LISTGetPan2_next(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetPan2_clbk _SOUND_ENTITIES_LISTGetPan2_user(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetVolume3_ptr _SOUND_ENTITIES_LISTGetVolume3_next(nullptr);
+        static info::_SOUND_ENTITIES_LISTGetVolume3_clbk _SOUND_ENTITIES_LISTGetVolume3_user(nullptr);
         
-        float _SOUND_ENTITIES_LISTGetBoxIntensity1_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
+        static float _SOUND_ENTITIES_LISTGetBoxIntensity1_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
         {
            return _SOUND_ENTITIES_LISTGetBoxIntensity1_user(_this, arg_0, _SOUND_ENTITIES_LISTGetBoxIntensity1_next);
         };
-        float _SOUND_ENTITIES_LISTGetPan2_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
+        static float _SOUND_ENTITIES_LISTGetPan2_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
         {
            return _SOUND_ENTITIES_LISTGetPan2_user(_this, arg_0, _SOUND_ENTITIES_LISTGetPan2_next);
         };
-        float _SOUND_ENTITIES_LISTGetVolume3_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
+        static float _SOUND_ENTITIES_LISTGetVolume3_wrapper(struct _SOUND_ENTITIES_LIST* _this, float* arg_0)
         {
            return _SOUND_ENTITIES_LISTGetVolume3_user(_this, arg_0, _SOUND_ENTITIES_LISTGetVolume3_next);
         };
         
-        hook_record _SOUND_ENTITIES_LIST_functions[] = {
+        static hook_record _SOUND_ENTITIES_LIST_functions[] = {
         {   (LPVOID)0x140520540L,
             (LPVOID *)&_SOUND_ENTITIES_LISTGetBoxIntensity1_user,
             (LPVOID *)&_SOUND_ENTITIES_LISTGetBoxIntensity1_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

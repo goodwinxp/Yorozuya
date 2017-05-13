@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_param_cash_total_sellingsize2_ptr _param_cash_total_sellingsize2_next(nullptr);
-        info::_param_cash_total_sellingsize2_clbk _param_cash_total_sellingsize2_user(nullptr);
+        static info::_param_cash_total_sellingsize2_ptr _param_cash_total_sellingsize2_next(nullptr);
+        static info::_param_cash_total_sellingsize2_clbk _param_cash_total_sellingsize2_user(nullptr);
         
-        int _param_cash_total_sellingsize2_wrapper(struct _param_cash_total_selling* _this)
+        static int _param_cash_total_sellingsize2_wrapper(struct _param_cash_total_selling* _this)
         {
            return _param_cash_total_sellingsize2_user(_this, _param_cash_total_sellingsize2_next);
         };
         
-        hook_record _param_cash_total_selling_functions[] = {
+        static hook_record _param_cash_total_selling_functions[] = {
         {   (LPVOID)0x140304bb0L,
             (LPVOID *)&_param_cash_total_sellingsize2_user,
             (LPVOID *)&_param_cash_total_sellingsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

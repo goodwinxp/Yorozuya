@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ccrfg_detect_alretsize2_ptr _ccrfg_detect_alretsize2_next(nullptr);
-        info::_ccrfg_detect_alretsize2_clbk _ccrfg_detect_alretsize2_user(nullptr);
+        static info::_ccrfg_detect_alretsize2_ptr _ccrfg_detect_alretsize2_next(nullptr);
+        static info::_ccrfg_detect_alretsize2_clbk _ccrfg_detect_alretsize2_user(nullptr);
         
-        int _ccrfg_detect_alretsize2_wrapper(struct _ccrfg_detect_alret* _this)
+        static int _ccrfg_detect_alretsize2_wrapper(struct _ccrfg_detect_alret* _this)
         {
            return _ccrfg_detect_alretsize2_user(_this, _ccrfg_detect_alretsize2_next);
         };
         
-        hook_record _ccrfg_detect_alret_functions[] = {
+        static hook_record _ccrfg_detect_alret_functions[] = {
         {   (LPVOID)0x1401e13e0L,
             (LPVOID *)&_ccrfg_detect_alretsize2_user,
             (LPVOID *)&_ccrfg_detect_alretsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

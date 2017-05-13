@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SYN_HEADERctor__SYN_HEADER2_ptr _SYN_HEADERctor__SYN_HEADER2_next(nullptr);
-        info::_SYN_HEADERctor__SYN_HEADER2_clbk _SYN_HEADERctor__SYN_HEADER2_user(nullptr);
+        static info::_SYN_HEADERctor__SYN_HEADER2_ptr _SYN_HEADERctor__SYN_HEADER2_next(nullptr);
+        static info::_SYN_HEADERctor__SYN_HEADER2_clbk _SYN_HEADERctor__SYN_HEADER2_user(nullptr);
         
-        void _SYN_HEADERctor__SYN_HEADER2_wrapper(struct _SYN_HEADER* _this)
+        static void _SYN_HEADERctor__SYN_HEADER2_wrapper(struct _SYN_HEADER* _this)
         {
            _SYN_HEADERctor__SYN_HEADER2_user(_this, _SYN_HEADERctor__SYN_HEADER2_next);
         };
         
-        hook_record _SYN_HEADER_functions[] = {
+        static hook_record _SYN_HEADER_functions[] = {
         {   (LPVOID)0x14043ed80L,
             (LPVOID *)&_SYN_HEADERctor__SYN_HEADER2_user,
             (LPVOID *)&_SYN_HEADERctor__SYN_HEADER2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

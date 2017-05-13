@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_ptr CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_next(nullptr);
-        info::CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_clbk CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_user(nullptr);
-        info::CUnmannedTraderLazyCleanerCompleteUpdateClear4_ptr CUnmannedTraderLazyCleanerCompleteUpdateClear4_next(nullptr);
-        info::CUnmannedTraderLazyCleanerCompleteUpdateClear4_clbk CUnmannedTraderLazyCleanerCompleteUpdateClear4_user(nullptr);
-        info::CUnmannedTraderLazyCleanerInit6_ptr CUnmannedTraderLazyCleanerInit6_next(nullptr);
-        info::CUnmannedTraderLazyCleanerInit6_clbk CUnmannedTraderLazyCleanerInit6_user(nullptr);
-        info::CUnmannedTraderLazyCleanerLoop8_ptr CUnmannedTraderLazyCleanerLoop8_next(nullptr);
-        info::CUnmannedTraderLazyCleanerLoop8_clbk CUnmannedTraderLazyCleanerLoop8_user(nullptr);
-        info::CUnmannedTraderLazyCleanerProcUpdate10_ptr CUnmannedTraderLazyCleanerProcUpdate10_next(nullptr);
-        info::CUnmannedTraderLazyCleanerProcUpdate10_clbk CUnmannedTraderLazyCleanerProcUpdate10_user(nullptr);
-        info::CUnmannedTraderLazyCleanerUpdateClear12_ptr CUnmannedTraderLazyCleanerUpdateClear12_next(nullptr);
-        info::CUnmannedTraderLazyCleanerUpdateClear12_clbk CUnmannedTraderLazyCleanerUpdateClear12_user(nullptr);
-        info::CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_ptr CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_next(nullptr);
-        info::CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_clbk CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_ptr CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_clbk CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerCompleteUpdateClear4_ptr CUnmannedTraderLazyCleanerCompleteUpdateClear4_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerCompleteUpdateClear4_clbk CUnmannedTraderLazyCleanerCompleteUpdateClear4_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerInit6_ptr CUnmannedTraderLazyCleanerInit6_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerInit6_clbk CUnmannedTraderLazyCleanerInit6_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerLoop8_ptr CUnmannedTraderLazyCleanerLoop8_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerLoop8_clbk CUnmannedTraderLazyCleanerLoop8_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerProcUpdate10_ptr CUnmannedTraderLazyCleanerProcUpdate10_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerProcUpdate10_clbk CUnmannedTraderLazyCleanerProcUpdate10_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerUpdateClear12_ptr CUnmannedTraderLazyCleanerUpdateClear12_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerUpdateClear12_clbk CUnmannedTraderLazyCleanerUpdateClear12_user(nullptr);
+        static info::CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_ptr CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_next(nullptr);
+        static info::CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_clbk CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_user(nullptr);
         
-        void CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_wrapper(struct CUnmannedTraderLazyCleaner* _this)
+        static void CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_wrapper(struct CUnmannedTraderLazyCleaner* _this)
         {
            CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_user(_this, CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_next);
         };
-        void CUnmannedTraderLazyCleanerCompleteUpdateClear4_wrapper(struct CUnmannedTraderLazyCleaner* _this, char* p)
+        static void CUnmannedTraderLazyCleanerCompleteUpdateClear4_wrapper(struct CUnmannedTraderLazyCleaner* _this, char* p)
         {
            CUnmannedTraderLazyCleanerCompleteUpdateClear4_user(_this, p, CUnmannedTraderLazyCleanerCompleteUpdateClear4_next);
         };
-        bool CUnmannedTraderLazyCleanerInit6_wrapper(struct CUnmannedTraderLazyCleaner* _this)
+        static bool CUnmannedTraderLazyCleanerInit6_wrapper(struct CUnmannedTraderLazyCleaner* _this)
         {
            return CUnmannedTraderLazyCleanerInit6_user(_this, CUnmannedTraderLazyCleanerInit6_next);
         };
-        void CUnmannedTraderLazyCleanerLoop8_wrapper(struct CUnmannedTraderLazyCleaner* _this)
+        static void CUnmannedTraderLazyCleanerLoop8_wrapper(struct CUnmannedTraderLazyCleaner* _this)
         {
            CUnmannedTraderLazyCleanerLoop8_user(_this, CUnmannedTraderLazyCleanerLoop8_next);
         };
-        char CUnmannedTraderLazyCleanerProcUpdate10_wrapper(struct CUnmannedTraderLazyCleaner* _this, char byState, struct _SYSTEMTIME* pCurTime, bool* pbRemain)
+        static char CUnmannedTraderLazyCleanerProcUpdate10_wrapper(struct CUnmannedTraderLazyCleaner* _this, char byState, struct _SYSTEMTIME* pCurTime, bool* pbRemain)
         {
            return CUnmannedTraderLazyCleanerProcUpdate10_user(_this, byState, pCurTime, pbRemain, CUnmannedTraderLazyCleanerProcUpdate10_next);
         };
-        char CUnmannedTraderLazyCleanerUpdateClear12_wrapper(struct CUnmannedTraderLazyCleaner* _this, char* p)
+        static char CUnmannedTraderLazyCleanerUpdateClear12_wrapper(struct CUnmannedTraderLazyCleaner* _this, char* p)
         {
            return CUnmannedTraderLazyCleanerUpdateClear12_user(_this, p, CUnmannedTraderLazyCleanerUpdateClear12_next);
         };
-        void CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_wrapper(struct CUnmannedTraderLazyCleaner* _this)
+        static void CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_wrapper(struct CUnmannedTraderLazyCleaner* _this)
         {
            CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_user(_this, CUnmannedTraderLazyCleanerdtor_CUnmannedTraderLazyCleaner14_next);
         };
         
-        hook_record CUnmannedTraderLazyCleaner_functions[] = {
+        static hook_record CUnmannedTraderLazyCleaner_functions[] = {
         {   (LPVOID)0x140392a50L,
             (LPVOID *)&CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_user,
             (LPVOID *)&CUnmannedTraderLazyCleanerctor_CUnmannedTraderLazyCleaner2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

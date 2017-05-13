@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_ptr _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_next(nullptr);
-        info::_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_clbk _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_user(nullptr);
-        info::_qry_case_amine_batterychargesize4_ptr _qry_case_amine_batterychargesize4_next(nullptr);
-        info::_qry_case_amine_batterychargesize4_clbk _qry_case_amine_batterychargesize4_user(nullptr);
+        static info::_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_ptr _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_next(nullptr);
+        static info::_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_clbk _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_user(nullptr);
+        static info::_qry_case_amine_batterychargesize4_ptr _qry_case_amine_batterychargesize4_next(nullptr);
+        static info::_qry_case_amine_batterychargesize4_clbk _qry_case_amine_batterychargesize4_user(nullptr);
         
-        void _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_wrapper(struct _qry_case_amine_batterycharge* _this)
+        static void _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_wrapper(struct _qry_case_amine_batterycharge* _this)
         {
            _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_user(_this, _qry_case_amine_batterychargector__qry_case_amine_batterycharge2_next);
         };
-        int _qry_case_amine_batterychargesize4_wrapper(struct _qry_case_amine_batterycharge* _this)
+        static int _qry_case_amine_batterychargesize4_wrapper(struct _qry_case_amine_batterycharge* _this)
         {
            return _qry_case_amine_batterychargesize4_user(_this, _qry_case_amine_batterychargesize4_next);
         };
         
-        hook_record _qry_case_amine_batterycharge_functions[] = {
+        static hook_record _qry_case_amine_batterycharge_functions[] = {
         {   (LPVOID)0x1402d4200L,
             (LPVOID *)&_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_user,
             (LPVOID *)&_qry_case_amine_batterychargector__qry_case_amine_batterycharge2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

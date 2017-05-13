@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CTraceCategoryctor_CTraceCategory1_ptr ATL__CTraceCategoryctor_CTraceCategory1_next(nullptr);
-            info::ATL__CTraceCategoryctor_CTraceCategory1_clbk ATL__CTraceCategoryctor_CTraceCategory1_user(nullptr);
+            static info::ATL__CTraceCategoryctor_CTraceCategory1_ptr ATL__CTraceCategoryctor_CTraceCategory1_next(nullptr);
+            static info::ATL__CTraceCategoryctor_CTraceCategory1_clbk ATL__CTraceCategoryctor_CTraceCategory1_user(nullptr);
             
-            void ATL__CTraceCategoryctor_CTraceCategory1_wrapper(struct ATL::CTraceCategory* _this, char* pszCategoryName, unsigned int nStartingLevel)
+            static void ATL__CTraceCategoryctor_CTraceCategory1_wrapper(struct ATL::CTraceCategory* _this, char* pszCategoryName, unsigned int nStartingLevel)
             {
                ATL__CTraceCategoryctor_CTraceCategory1_user(_this, pszCategoryName, nStartingLevel, ATL__CTraceCategoryctor_CTraceCategory1_next);
             };
             
-            hook_record CTraceCategory_functions[] = {
+            static hook_record CTraceCategory_functions[] = {
             {   (LPVOID)0x14066da00L,
                 (LPVOID *)&ATL__CTraceCategoryctor_CTraceCategory1_user,
                 (LPVOID *)&ATL__CTraceCategoryctor_CTraceCategory1_next,
@@ -27,6 +27,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

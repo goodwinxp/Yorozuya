@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_total_countctor__total_count2_ptr _total_countctor__total_count2_next(nullptr);
-        info::_total_countctor__total_count2_clbk _total_countctor__total_count2_user(nullptr);
+        static info::_total_countctor__total_count2_ptr _total_countctor__total_count2_next(nullptr);
+        static info::_total_countctor__total_count2_clbk _total_countctor__total_count2_user(nullptr);
         
-        void _total_countctor__total_count2_wrapper(struct _total_count* _this)
+        static void _total_countctor__total_count2_wrapper(struct _total_count* _this)
         {
            _total_countctor__total_count2_user(_this, _total_countctor__total_count2_next);
         };
         
-        hook_record _total_count_functions[] = {
+        static hook_record _total_count_functions[] = {
         {   (LPVOID)0x14047f7f0L,
             (LPVOID *)&_total_countctor__total_count2_user,
             (LPVOID *)&_total_countctor__total_count2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_THREAD_CONFIGctor__THREAD_CONFIG2_ptr _THREAD_CONFIGctor__THREAD_CONFIG2_next(nullptr);
-        info::_THREAD_CONFIGctor__THREAD_CONFIG2_clbk _THREAD_CONFIGctor__THREAD_CONFIG2_user(nullptr);
+        static info::_THREAD_CONFIGctor__THREAD_CONFIG2_ptr _THREAD_CONFIGctor__THREAD_CONFIG2_next(nullptr);
+        static info::_THREAD_CONFIGctor__THREAD_CONFIG2_clbk _THREAD_CONFIGctor__THREAD_CONFIG2_user(nullptr);
         
-        void _THREAD_CONFIGctor__THREAD_CONFIG2_wrapper(struct _THREAD_CONFIG* _this)
+        static void _THREAD_CONFIGctor__THREAD_CONFIG2_wrapper(struct _THREAD_CONFIG* _this)
         {
            _THREAD_CONFIGctor__THREAD_CONFIG2_user(_this, _THREAD_CONFIGctor__THREAD_CONFIG2_next);
         };
         
-        hook_record _THREAD_CONFIG_functions[] = {
+        static hook_record _THREAD_CONFIG_functions[] = {
         {   (LPVOID)0x14043ea90L,
             (LPVOID *)&_THREAD_CONFIGctor__THREAD_CONFIG2_user,
             (LPVOID *)&_THREAD_CONFIGctor__THREAD_CONFIG2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

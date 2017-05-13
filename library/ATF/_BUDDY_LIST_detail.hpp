@@ -8,113 +8,113 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_BUDDY_LISTGetBuddyNum2_ptr _BUDDY_LISTGetBuddyNum2_next(nullptr);
-        info::_BUDDY_LISTGetBuddyNum2_clbk _BUDDY_LISTGetBuddyNum2_user(nullptr);
-        info::_BUDDY_LISTGetEmptyData4_ptr _BUDDY_LISTGetEmptyData4_next(nullptr);
-        info::_BUDDY_LISTGetEmptyData4_clbk _BUDDY_LISTGetEmptyData4_user(nullptr);
-        info::_BUDDY_LISTInit6_ptr _BUDDY_LISTInit6_next(nullptr);
-        info::_BUDDY_LISTInit6_clbk _BUDDY_LISTInit6_user(nullptr);
-        info::_BUDDY_LISTIsBuddy8_ptr _BUDDY_LISTIsBuddy8_next(nullptr);
-        info::_BUDDY_LISTIsBuddy8_clbk _BUDDY_LISTIsBuddy8_user(nullptr);
-        info::_BUDDY_LISTIsPushLastApply10_ptr _BUDDY_LISTIsPushLastApply10_next(nullptr);
-        info::_BUDDY_LISTIsPushLastApply10_clbk _BUDDY_LISTIsPushLastApply10_user(nullptr);
-        info::_BUDDY_LISTPopBuddy12_ptr _BUDDY_LISTPopBuddy12_next(nullptr);
-        info::_BUDDY_LISTPopBuddy12_clbk _BUDDY_LISTPopBuddy12_user(nullptr);
-        info::_BUDDY_LISTPopLastApplyTemp14_ptr _BUDDY_LISTPopLastApplyTemp14_next(nullptr);
-        info::_BUDDY_LISTPopLastApplyTemp14_clbk _BUDDY_LISTPopLastApplyTemp14_user(nullptr);
-        info::_BUDDY_LISTPushBuddy16_ptr _BUDDY_LISTPushBuddy16_next(nullptr);
-        info::_BUDDY_LISTPushBuddy16_clbk _BUDDY_LISTPushBuddy16_user(nullptr);
-        info::_BUDDY_LISTPushLastApplyTemp18_ptr _BUDDY_LISTPushLastApplyTemp18_next(nullptr);
-        info::_BUDDY_LISTPushLastApplyTemp18_clbk _BUDDY_LISTPushLastApplyTemp18_user(nullptr);
-        info::_BUDDY_LISTSearchBuddyLogin20_ptr _BUDDY_LISTSearchBuddyLogin20_next(nullptr);
-        info::_BUDDY_LISTSearchBuddyLogin20_clbk _BUDDY_LISTSearchBuddyLogin20_user(nullptr);
-        info::_BUDDY_LISTSearchBuddyLogoff22_ptr _BUDDY_LISTSearchBuddyLogoff22_next(nullptr);
-        info::_BUDDY_LISTSearchBuddyLogoff22_clbk _BUDDY_LISTSearchBuddyLogoff22_user(nullptr);
-        info::_BUDDY_LISTctor__BUDDY_LIST24_ptr _BUDDY_LISTctor__BUDDY_LIST24_next(nullptr);
-        info::_BUDDY_LISTctor__BUDDY_LIST24_clbk _BUDDY_LISTctor__BUDDY_LIST24_user(nullptr);
-        info::_BUDDY_LISTdtor__BUDDY_LIST26_ptr _BUDDY_LISTdtor__BUDDY_LIST26_next(nullptr);
-        info::_BUDDY_LISTdtor__BUDDY_LIST26_clbk _BUDDY_LISTdtor__BUDDY_LIST26_user(nullptr);
+        static info::_BUDDY_LISTGetBuddyNum2_ptr _BUDDY_LISTGetBuddyNum2_next(nullptr);
+        static info::_BUDDY_LISTGetBuddyNum2_clbk _BUDDY_LISTGetBuddyNum2_user(nullptr);
+        static info::_BUDDY_LISTGetEmptyData4_ptr _BUDDY_LISTGetEmptyData4_next(nullptr);
+        static info::_BUDDY_LISTGetEmptyData4_clbk _BUDDY_LISTGetEmptyData4_user(nullptr);
+        static info::_BUDDY_LISTInit6_ptr _BUDDY_LISTInit6_next(nullptr);
+        static info::_BUDDY_LISTInit6_clbk _BUDDY_LISTInit6_user(nullptr);
+        static info::_BUDDY_LISTIsBuddy8_ptr _BUDDY_LISTIsBuddy8_next(nullptr);
+        static info::_BUDDY_LISTIsBuddy8_clbk _BUDDY_LISTIsBuddy8_user(nullptr);
+        static info::_BUDDY_LISTIsPushLastApply10_ptr _BUDDY_LISTIsPushLastApply10_next(nullptr);
+        static info::_BUDDY_LISTIsPushLastApply10_clbk _BUDDY_LISTIsPushLastApply10_user(nullptr);
+        static info::_BUDDY_LISTPopBuddy12_ptr _BUDDY_LISTPopBuddy12_next(nullptr);
+        static info::_BUDDY_LISTPopBuddy12_clbk _BUDDY_LISTPopBuddy12_user(nullptr);
+        static info::_BUDDY_LISTPopLastApplyTemp14_ptr _BUDDY_LISTPopLastApplyTemp14_next(nullptr);
+        static info::_BUDDY_LISTPopLastApplyTemp14_clbk _BUDDY_LISTPopLastApplyTemp14_user(nullptr);
+        static info::_BUDDY_LISTPushBuddy16_ptr _BUDDY_LISTPushBuddy16_next(nullptr);
+        static info::_BUDDY_LISTPushBuddy16_clbk _BUDDY_LISTPushBuddy16_user(nullptr);
+        static info::_BUDDY_LISTPushLastApplyTemp18_ptr _BUDDY_LISTPushLastApplyTemp18_next(nullptr);
+        static info::_BUDDY_LISTPushLastApplyTemp18_clbk _BUDDY_LISTPushLastApplyTemp18_user(nullptr);
+        static info::_BUDDY_LISTSearchBuddyLogin20_ptr _BUDDY_LISTSearchBuddyLogin20_next(nullptr);
+        static info::_BUDDY_LISTSearchBuddyLogin20_clbk _BUDDY_LISTSearchBuddyLogin20_user(nullptr);
+        static info::_BUDDY_LISTSearchBuddyLogoff22_ptr _BUDDY_LISTSearchBuddyLogoff22_next(nullptr);
+        static info::_BUDDY_LISTSearchBuddyLogoff22_clbk _BUDDY_LISTSearchBuddyLogoff22_user(nullptr);
+        static info::_BUDDY_LISTctor__BUDDY_LIST24_ptr _BUDDY_LISTctor__BUDDY_LIST24_next(nullptr);
+        static info::_BUDDY_LISTctor__BUDDY_LIST24_clbk _BUDDY_LISTctor__BUDDY_LIST24_user(nullptr);
+        static info::_BUDDY_LISTdtor__BUDDY_LIST26_ptr _BUDDY_LISTdtor__BUDDY_LIST26_next(nullptr);
+        static info::_BUDDY_LISTdtor__BUDDY_LIST26_clbk _BUDDY_LISTdtor__BUDDY_LIST26_user(nullptr);
         
-        info::_BUDDY_LIST____listON2_ptr _BUDDY_LIST____listON2_next(nullptr);
-        info::_BUDDY_LIST____listON2_clbk _BUDDY_LIST____listON2_user(nullptr);
-        info::_BUDDY_LIST____listctor___list4_ptr _BUDDY_LIST____listctor___list4_next(nullptr);
-        info::_BUDDY_LIST____listctor___list4_clbk _BUDDY_LIST____listctor___list4_user(nullptr);
-        info::_BUDDY_LIST____listfill6_ptr _BUDDY_LIST____listfill6_next(nullptr);
-        info::_BUDDY_LIST____listfill6_clbk _BUDDY_LIST____listfill6_user(nullptr);
-        info::_BUDDY_LIST____listinit8_ptr _BUDDY_LIST____listinit8_next(nullptr);
-        info::_BUDDY_LIST____listinit8_clbk _BUDDY_LIST____listinit8_user(nullptr);
+        static info::_BUDDY_LIST____listON2_ptr _BUDDY_LIST____listON2_next(nullptr);
+        static info::_BUDDY_LIST____listON2_clbk _BUDDY_LIST____listON2_user(nullptr);
+        static info::_BUDDY_LIST____listctor___list4_ptr _BUDDY_LIST____listctor___list4_next(nullptr);
+        static info::_BUDDY_LIST____listctor___list4_clbk _BUDDY_LIST____listctor___list4_user(nullptr);
+        static info::_BUDDY_LIST____listfill6_ptr _BUDDY_LIST____listfill6_next(nullptr);
+        static info::_BUDDY_LIST____listfill6_clbk _BUDDY_LIST____listfill6_user(nullptr);
+        static info::_BUDDY_LIST____listinit8_ptr _BUDDY_LIST____listinit8_next(nullptr);
+        static info::_BUDDY_LIST____listinit8_clbk _BUDDY_LIST____listinit8_user(nullptr);
         
-        int _BUDDY_LISTGetBuddyNum2_wrapper(struct _BUDDY_LIST* _this)
+        static int _BUDDY_LISTGetBuddyNum2_wrapper(struct _BUDDY_LIST* _this)
         {
            return _BUDDY_LISTGetBuddyNum2_user(_this, _BUDDY_LISTGetBuddyNum2_next);
         };
-        struct _BUDDY_LIST::__list* _BUDDY_LISTGetEmptyData4_wrapper(struct _BUDDY_LIST* _this)
+        static struct _BUDDY_LIST::__list* _BUDDY_LISTGetEmptyData4_wrapper(struct _BUDDY_LIST* _this)
         {
            return _BUDDY_LISTGetEmptyData4_user(_this, _BUDDY_LISTGetEmptyData4_next);
         };
-        void _BUDDY_LISTInit6_wrapper(struct _BUDDY_LIST* _this)
+        static void _BUDDY_LISTInit6_wrapper(struct _BUDDY_LIST* _this)
         {
            _BUDDY_LISTInit6_user(_this, _BUDDY_LISTInit6_next);
         };
-        bool _BUDDY_LISTIsBuddy8_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial)
+        static bool _BUDDY_LISTIsBuddy8_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial)
         {
            return _BUDDY_LISTIsBuddy8_user(_this, dwSerial, _BUDDY_LISTIsBuddy8_next);
         };
-        bool _BUDDY_LISTIsPushLastApply10_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
+        static bool _BUDDY_LISTIsPushLastApply10_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
         {
            return _BUDDY_LISTIsPushLastApply10_user(_this, dwDstSerial, _BUDDY_LISTIsPushLastApply10_next);
         };
-        int _BUDDY_LISTPopBuddy12_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial, struct CPlayer** ppPoper)
+        static int _BUDDY_LISTPopBuddy12_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial, struct CPlayer** ppPoper)
         {
            return _BUDDY_LISTPopBuddy12_user(_this, dwSerial, ppPoper, _BUDDY_LISTPopBuddy12_next);
         };
-        void _BUDDY_LISTPopLastApplyTemp14_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
+        static void _BUDDY_LISTPopLastApplyTemp14_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
         {
            _BUDDY_LISTPopLastApplyTemp14_user(_this, dwDstSerial, _BUDDY_LISTPopLastApplyTemp14_next);
         };
-        int _BUDDY_LISTPushBuddy16_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial, char* pwszName, struct CPlayer* pPtr)
+        static int _BUDDY_LISTPushBuddy16_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial, char* pwszName, struct CPlayer* pPtr)
         {
            return _BUDDY_LISTPushBuddy16_user(_this, dwSerial, pwszName, pPtr, _BUDDY_LISTPushBuddy16_next);
         };
-        void _BUDDY_LISTPushLastApplyTemp18_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
+        static void _BUDDY_LISTPushLastApplyTemp18_wrapper(struct _BUDDY_LIST* _this, unsigned int dwDstSerial)
         {
            _BUDDY_LISTPushLastApplyTemp18_user(_this, dwDstSerial, _BUDDY_LISTPushLastApplyTemp18_next);
         };
-        bool _BUDDY_LISTSearchBuddyLogin20_wrapper(struct _BUDDY_LIST* _this, struct CPlayer* pLoger, unsigned int dwSerial, char* pwszName)
+        static bool _BUDDY_LISTSearchBuddyLogin20_wrapper(struct _BUDDY_LIST* _this, struct CPlayer* pLoger, unsigned int dwSerial, char* pwszName)
         {
            return _BUDDY_LISTSearchBuddyLogin20_user(_this, pLoger, dwSerial, pwszName, _BUDDY_LISTSearchBuddyLogin20_next);
         };
-        bool _BUDDY_LISTSearchBuddyLogoff22_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial)
+        static bool _BUDDY_LISTSearchBuddyLogoff22_wrapper(struct _BUDDY_LIST* _this, unsigned int dwSerial)
         {
            return _BUDDY_LISTSearchBuddyLogoff22_user(_this, dwSerial, _BUDDY_LISTSearchBuddyLogoff22_next);
         };
-        void _BUDDY_LISTctor__BUDDY_LIST24_wrapper(struct _BUDDY_LIST* _this)
+        static void _BUDDY_LISTctor__BUDDY_LIST24_wrapper(struct _BUDDY_LIST* _this)
         {
            _BUDDY_LISTctor__BUDDY_LIST24_user(_this, _BUDDY_LISTctor__BUDDY_LIST24_next);
         };
-        void _BUDDY_LISTdtor__BUDDY_LIST26_wrapper(struct _BUDDY_LIST* _this)
+        static void _BUDDY_LISTdtor__BUDDY_LIST26_wrapper(struct _BUDDY_LIST* _this)
         {
            _BUDDY_LISTdtor__BUDDY_LIST26_user(_this, _BUDDY_LISTdtor__BUDDY_LIST26_next);
         };
         
-        void _BUDDY_LIST____listON2_wrapper(struct _BUDDY_LIST::__list* _this, char* pwszName, struct CPlayer* ptr)
+        static void _BUDDY_LIST____listON2_wrapper(struct _BUDDY_LIST::__list* _this, char* pwszName, struct CPlayer* ptr)
         {
            _BUDDY_LIST____listON2_user(_this, pwszName, ptr, _BUDDY_LIST____listON2_next);
         };
-        void _BUDDY_LIST____listctor___list4_wrapper(struct _BUDDY_LIST::__list* _this)
+        static void _BUDDY_LIST____listctor___list4_wrapper(struct _BUDDY_LIST::__list* _this)
         {
            _BUDDY_LIST____listctor___list4_user(_this, _BUDDY_LIST____listctor___list4_next);
         };
-        bool _BUDDY_LIST____listfill6_wrapper(struct _BUDDY_LIST::__list* _this)
+        static bool _BUDDY_LIST____listfill6_wrapper(struct _BUDDY_LIST::__list* _this)
         {
            return _BUDDY_LIST____listfill6_user(_this, _BUDDY_LIST____listfill6_next);
         };
-        void _BUDDY_LIST____listinit8_wrapper(struct _BUDDY_LIST::__list* _this)
+        static void _BUDDY_LIST____listinit8_wrapper(struct _BUDDY_LIST::__list* _this)
         {
            _BUDDY_LIST____listinit8_user(_this, _BUDDY_LIST____listinit8_next);
         };
         
-        hook_record _BUDDY_LIST_functions[] = {
+        static hook_record _BUDDY_LIST_functions[] = {
         {   (LPVOID)0x140090a50L,
             (LPVOID *)&_BUDDY_LISTGetBuddyNum2_user,
             (LPVOID *)&_BUDDY_LISTGetBuddyNum2_next,
@@ -204,5 +204,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

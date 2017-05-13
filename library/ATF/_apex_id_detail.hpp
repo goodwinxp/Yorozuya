@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_apex_idctor__apex_id2_ptr _apex_idctor__apex_id2_next(nullptr);
-        info::_apex_idctor__apex_id2_clbk _apex_idctor__apex_id2_user(nullptr);
+        static info::_apex_idctor__apex_id2_ptr _apex_idctor__apex_id2_next(nullptr);
+        static info::_apex_idctor__apex_id2_clbk _apex_idctor__apex_id2_user(nullptr);
         
-        void _apex_idctor__apex_id2_wrapper(struct _apex_id* _this, char byID)
+        static void _apex_idctor__apex_id2_wrapper(struct _apex_id* _this, char byID)
         {
            _apex_idctor__apex_id2_user(_this, byID, _apex_idctor__apex_id2_next);
         };
         
-        hook_record _apex_id_functions[] = {
+        static hook_record _apex_id_functions[] = {
         {   (LPVOID)0x140410bb0L,
             (LPVOID *)&_apex_idctor__apex_id2_user,
             (LPVOID *)&_apex_idctor__apex_id2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

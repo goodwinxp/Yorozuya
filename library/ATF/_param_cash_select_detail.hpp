@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_param_cash_selectctor__param_cash_select2_ptr _param_cash_selectctor__param_cash_select2_next(nullptr);
-        info::_param_cash_selectctor__param_cash_select2_clbk _param_cash_selectctor__param_cash_select2_user(nullptr);
-        info::_param_cash_selectsize4_ptr _param_cash_selectsize4_next(nullptr);
-        info::_param_cash_selectsize4_clbk _param_cash_selectsize4_user(nullptr);
-        info::_param_cash_selectdtor__param_cash_select6_ptr _param_cash_selectdtor__param_cash_select6_next(nullptr);
-        info::_param_cash_selectdtor__param_cash_select6_clbk _param_cash_selectdtor__param_cash_select6_user(nullptr);
+        static info::_param_cash_selectctor__param_cash_select2_ptr _param_cash_selectctor__param_cash_select2_next(nullptr);
+        static info::_param_cash_selectctor__param_cash_select2_clbk _param_cash_selectctor__param_cash_select2_user(nullptr);
+        static info::_param_cash_selectsize4_ptr _param_cash_selectsize4_next(nullptr);
+        static info::_param_cash_selectsize4_clbk _param_cash_selectsize4_user(nullptr);
+        static info::_param_cash_selectdtor__param_cash_select6_ptr _param_cash_selectdtor__param_cash_select6_next(nullptr);
+        static info::_param_cash_selectdtor__param_cash_select6_clbk _param_cash_selectdtor__param_cash_select6_user(nullptr);
         
-        void _param_cash_selectctor__param_cash_select2_wrapper(struct _param_cash_select* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
+        static void _param_cash_selectctor__param_cash_select2_wrapper(struct _param_cash_select* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
         {
            _param_cash_selectctor__param_cash_select2_user(_this, dwAc, dwAv, wSock, _param_cash_selectctor__param_cash_select2_next);
         };
-        int _param_cash_selectsize4_wrapper(struct _param_cash_select* _this)
+        static int _param_cash_selectsize4_wrapper(struct _param_cash_select* _this)
         {
            return _param_cash_selectsize4_user(_this, _param_cash_selectsize4_next);
         };
-        void _param_cash_selectdtor__param_cash_select6_wrapper(struct _param_cash_select* _this)
+        static void _param_cash_selectdtor__param_cash_select6_wrapper(struct _param_cash_select* _this)
         {
            _param_cash_selectdtor__param_cash_select6_user(_this, _param_cash_selectdtor__param_cash_select6_next);
         };
         
-        hook_record _param_cash_select_functions[] = {
+        static hook_record _param_cash_select_functions[] = {
         {   (LPVOID)0x140304a80L,
             (LPVOID *)&_param_cash_selectctor__param_cash_select2_user,
             (LPVOID *)&_param_cash_selectctor__param_cash_select2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

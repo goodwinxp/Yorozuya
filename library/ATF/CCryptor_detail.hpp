@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCryptorctor_CCryptor2_ptr CCryptorctor_CCryptor2_next(nullptr);
-        info::CCryptorctor_CCryptor2_clbk CCryptorctor_CCryptor2_user(nullptr);
-        info::CCryptorCiphertextLength4_ptr CCryptorCiphertextLength4_next(nullptr);
-        info::CCryptorCiphertextLength4_clbk CCryptorCiphertextLength4_user(nullptr);
-        info::CCryptorCreateKey6_ptr CCryptorCreateKey6_next(nullptr);
-        info::CCryptorCreateKey6_clbk CCryptorCreateKey6_user(nullptr);
-        info::CCryptorDecrypt8_ptr CCryptorDecrypt8_next(nullptr);
-        info::CCryptorDecrypt8_clbk CCryptorDecrypt8_user(nullptr);
-        info::CCryptorEncrypt10_ptr CCryptorEncrypt10_next(nullptr);
-        info::CCryptorEncrypt10_clbk CCryptorEncrypt10_user(nullptr);
-        info::CCryptorGenerateBlock12_ptr CCryptorGenerateBlock12_next(nullptr);
-        info::CCryptorGenerateBlock12_clbk CCryptorGenerateBlock12_user(nullptr);
-        info::CCryptorGetKeyStr14_ptr CCryptorGetKeyStr14_next(nullptr);
-        info::CCryptorGetKeyStr14_clbk CCryptorGetKeyStr14_user(nullptr);
-        info::CCryptorInit16_ptr CCryptorInit16_next(nullptr);
-        info::CCryptorInit16_clbk CCryptorInit16_user(nullptr);
-        info::CCryptorMakeHash18_ptr CCryptorMakeHash18_next(nullptr);
-        info::CCryptorMakeHash18_clbk CCryptorMakeHash18_user(nullptr);
-        info::CCryptorMaxPlaintextLength20_ptr CCryptorMaxPlaintextLength20_next(nullptr);
-        info::CCryptorMaxPlaintextLength20_clbk CCryptorMaxPlaintextLength20_user(nullptr);
-        info::CCryptorSaveKey22_ptr CCryptorSaveKey22_next(nullptr);
-        info::CCryptorSaveKey22_clbk CCryptorSaveKey22_user(nullptr);
-        info::CCryptorVerifyHash24_ptr CCryptorVerifyHash24_next(nullptr);
-        info::CCryptorVerifyHash24_clbk CCryptorVerifyHash24_user(nullptr);
-        info::CCryptordtor_CCryptor29_ptr CCryptordtor_CCryptor29_next(nullptr);
-        info::CCryptordtor_CCryptor29_clbk CCryptordtor_CCryptor29_user(nullptr);
+        static info::CCryptorctor_CCryptor2_ptr CCryptorctor_CCryptor2_next(nullptr);
+        static info::CCryptorctor_CCryptor2_clbk CCryptorctor_CCryptor2_user(nullptr);
+        static info::CCryptorCiphertextLength4_ptr CCryptorCiphertextLength4_next(nullptr);
+        static info::CCryptorCiphertextLength4_clbk CCryptorCiphertextLength4_user(nullptr);
+        static info::CCryptorCreateKey6_ptr CCryptorCreateKey6_next(nullptr);
+        static info::CCryptorCreateKey6_clbk CCryptorCreateKey6_user(nullptr);
+        static info::CCryptorDecrypt8_ptr CCryptorDecrypt8_next(nullptr);
+        static info::CCryptorDecrypt8_clbk CCryptorDecrypt8_user(nullptr);
+        static info::CCryptorEncrypt10_ptr CCryptorEncrypt10_next(nullptr);
+        static info::CCryptorEncrypt10_clbk CCryptorEncrypt10_user(nullptr);
+        static info::CCryptorGenerateBlock12_ptr CCryptorGenerateBlock12_next(nullptr);
+        static info::CCryptorGenerateBlock12_clbk CCryptorGenerateBlock12_user(nullptr);
+        static info::CCryptorGetKeyStr14_ptr CCryptorGetKeyStr14_next(nullptr);
+        static info::CCryptorGetKeyStr14_clbk CCryptorGetKeyStr14_user(nullptr);
+        static info::CCryptorInit16_ptr CCryptorInit16_next(nullptr);
+        static info::CCryptorInit16_clbk CCryptorInit16_user(nullptr);
+        static info::CCryptorMakeHash18_ptr CCryptorMakeHash18_next(nullptr);
+        static info::CCryptorMakeHash18_clbk CCryptorMakeHash18_user(nullptr);
+        static info::CCryptorMaxPlaintextLength20_ptr CCryptorMaxPlaintextLength20_next(nullptr);
+        static info::CCryptorMaxPlaintextLength20_clbk CCryptorMaxPlaintextLength20_user(nullptr);
+        static info::CCryptorSaveKey22_ptr CCryptorSaveKey22_next(nullptr);
+        static info::CCryptorSaveKey22_clbk CCryptorSaveKey22_user(nullptr);
+        static info::CCryptorVerifyHash24_ptr CCryptorVerifyHash24_next(nullptr);
+        static info::CCryptorVerifyHash24_clbk CCryptorVerifyHash24_user(nullptr);
+        static info::CCryptordtor_CCryptor29_ptr CCryptordtor_CCryptor29_next(nullptr);
+        static info::CCryptordtor_CCryptor29_clbk CCryptordtor_CCryptor29_user(nullptr);
         
-        void CCryptorctor_CCryptor2_wrapper(struct CCryptor* _this)
+        static void CCryptorctor_CCryptor2_wrapper(struct CCryptor* _this)
         {
            CCryptorctor_CCryptor2_user(_this, CCryptorctor_CCryptor2_next);
         };
-        uint64_t CCryptorCiphertextLength4_wrapper(struct CCryptor* _this, uint64_t tMaxUseSize)
+        static uint64_t CCryptorCiphertextLength4_wrapper(struct CCryptor* _this, uint64_t tMaxUseSize)
         {
            return CCryptorCiphertextLength4_user(_this, tMaxUseSize, CCryptorCiphertextLength4_next);
         };
-        bool CCryptorCreateKey6_wrapper(struct CCryptor* _this)
+        static bool CCryptorCreateKey6_wrapper(struct CCryptor* _this)
         {
            return CCryptorCreateKey6_user(_this, CCryptorCreateKey6_next);
         };
-        bool CCryptorDecrypt8_wrapper(struct CCryptor* _this, char* pCipherText, uint64_t tCipherTextLength, char* pText, uint64_t tLength)
+        static bool CCryptorDecrypt8_wrapper(struct CCryptor* _this, char* pCipherText, uint64_t tCipherTextLength, char* pText, uint64_t tLength)
         {
            return CCryptorDecrypt8_user(_this, pCipherText, tCipherTextLength, pText, tLength, CCryptorDecrypt8_next);
         };
-        bool CCryptorEncrypt10_wrapper(struct CCryptor* _this, char* pText, uint64_t tLength, char* pCipherText, uint64_t tCipherTextLength)
+        static bool CCryptorEncrypt10_wrapper(struct CCryptor* _this, char* pText, uint64_t tLength, char* pCipherText, uint64_t tCipherTextLength)
         {
            return CCryptorEncrypt10_user(_this, pText, tLength, pCipherText, tCipherTextLength, CCryptorEncrypt10_next);
         };
-        void CCryptorGenerateBlock12_wrapper(struct CCryptor* _this, char* output, uint64_t size)
+        static void CCryptorGenerateBlock12_wrapper(struct CCryptor* _this, char* output, uint64_t size)
         {
            CCryptorGenerateBlock12_user(_this, output, size, CCryptorGenerateBlock12_next);
         };
-        bool CCryptorGetKeyStr14_wrapper(struct CCryptor* _this, char* szKeyStr, uint64_t tBuffSize)
+        static bool CCryptorGetKeyStr14_wrapper(struct CCryptor* _this, char* szKeyStr, uint64_t tBuffSize)
         {
            return CCryptorGetKeyStr14_user(_this, szKeyStr, tBuffSize, CCryptorGetKeyStr14_next);
         };
-        bool CCryptorInit16_wrapper(struct CCryptor* _this, char* szKeyPath, bool bUseCreate)
+        static bool CCryptorInit16_wrapper(struct CCryptor* _this, char* szKeyPath, bool bUseCreate)
         {
            return CCryptorInit16_user(_this, szKeyPath, bUseCreate, CCryptorInit16_next);
         };
-        bool CCryptorMakeHash18_wrapper(struct CCryptor* _this, char* pBuff, uint64_t tBufSize, char* pHash, uint64_t tHashSize)
+        static bool CCryptorMakeHash18_wrapper(struct CCryptor* _this, char* pBuff, uint64_t tBufSize, char* pHash, uint64_t tHashSize)
         {
            return CCryptorMakeHash18_user(_this, pBuff, tBufSize, pHash, tHashSize, CCryptorMakeHash18_next);
         };
-        uint64_t CCryptorMaxPlaintextLength20_wrapper(struct CCryptor* _this, uint64_t ciphertextLength)
+        static uint64_t CCryptorMaxPlaintextLength20_wrapper(struct CCryptor* _this, uint64_t ciphertextLength)
         {
            return CCryptorMaxPlaintextLength20_user(_this, ciphertextLength, CCryptorMaxPlaintextLength20_next);
         };
-        bool CCryptorSaveKey22_wrapper(struct CCryptor* _this)
+        static bool CCryptorSaveKey22_wrapper(struct CCryptor* _this)
         {
            return CCryptorSaveKey22_user(_this, CCryptorSaveKey22_next);
         };
-        bool CCryptorVerifyHash24_wrapper(struct CCryptor* _this, char* pBuff, uint64_t tBufSize, char* pHash, uint64_t tHashSize)
+        static bool CCryptorVerifyHash24_wrapper(struct CCryptor* _this, char* pBuff, uint64_t tBufSize, char* pHash, uint64_t tHashSize)
         {
            return CCryptorVerifyHash24_user(_this, pBuff, tBufSize, pHash, tHashSize, CCryptorVerifyHash24_next);
         };
-        void CCryptordtor_CCryptor29_wrapper(struct CCryptor* _this)
+        static void CCryptordtor_CCryptor29_wrapper(struct CCryptor* _this)
         {
            CCryptordtor_CCryptor29_user(_this, CCryptordtor_CCryptor29_next);
         };
         
-        hook_record CCryptor_functions[] = {
+        static hook_record CCryptor_functions[] = {
         {   (LPVOID)0x1401bf910L,
             (LPVOID *)&CCryptorctor_CCryptor2_user,
             (LPVOID *)&CCryptorctor_CCryptor2_next,
@@ -157,6 +157,6 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 */

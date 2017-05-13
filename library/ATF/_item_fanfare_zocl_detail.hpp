@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_item_fanfare_zoclInit2_ptr _item_fanfare_zoclInit2_next(nullptr);
-        info::_item_fanfare_zoclInit2_clbk _item_fanfare_zoclInit2_user(nullptr);
-        info::_item_fanfare_zoclctor__item_fanfare_zocl4_ptr _item_fanfare_zoclctor__item_fanfare_zocl4_next(nullptr);
-        info::_item_fanfare_zoclctor__item_fanfare_zocl4_clbk _item_fanfare_zoclctor__item_fanfare_zocl4_user(nullptr);
+        static info::_item_fanfare_zoclInit2_ptr _item_fanfare_zoclInit2_next(nullptr);
+        static info::_item_fanfare_zoclInit2_clbk _item_fanfare_zoclInit2_user(nullptr);
+        static info::_item_fanfare_zoclctor__item_fanfare_zocl4_ptr _item_fanfare_zoclctor__item_fanfare_zocl4_next(nullptr);
+        static info::_item_fanfare_zoclctor__item_fanfare_zocl4_clbk _item_fanfare_zoclctor__item_fanfare_zocl4_user(nullptr);
         
-        void _item_fanfare_zoclInit2_wrapper(struct _item_fanfare_zocl* _this)
+        static void _item_fanfare_zoclInit2_wrapper(struct _item_fanfare_zocl* _this)
         {
            _item_fanfare_zoclInit2_user(_this, _item_fanfare_zoclInit2_next);
         };
-        void _item_fanfare_zoclctor__item_fanfare_zocl4_wrapper(struct _item_fanfare_zocl* _this)
+        static void _item_fanfare_zoclctor__item_fanfare_zocl4_wrapper(struct _item_fanfare_zocl* _this)
         {
            _item_fanfare_zoclctor__item_fanfare_zocl4_user(_this, _item_fanfare_zoclctor__item_fanfare_zocl4_next);
         };
         
-        hook_record _item_fanfare_zocl_functions[] = {
+        static hook_record _item_fanfare_zocl_functions[] = {
         {   (LPVOID)0x1400f0560L,
             (LPVOID *)&_item_fanfare_zoclInit2_user,
             (LPVOID *)&_item_fanfare_zoclInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

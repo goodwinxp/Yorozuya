@@ -8,35 +8,35 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_CRYMSG_LISTInit2_ptr _CRYMSG_LISTInit2_next(nullptr);
-        info::_CRYMSG_LISTInit2_clbk _CRYMSG_LISTInit2_user(nullptr);
-        info::_CRYMSG_LISTctor__CRYMSG_LIST4_ptr _CRYMSG_LISTctor__CRYMSG_LIST4_next(nullptr);
-        info::_CRYMSG_LISTctor__CRYMSG_LIST4_clbk _CRYMSG_LISTctor__CRYMSG_LIST4_user(nullptr);
+        static info::_CRYMSG_LISTInit2_ptr _CRYMSG_LISTInit2_next(nullptr);
+        static info::_CRYMSG_LISTInit2_clbk _CRYMSG_LISTInit2_user(nullptr);
+        static info::_CRYMSG_LISTctor__CRYMSG_LIST4_ptr _CRYMSG_LISTctor__CRYMSG_LIST4_next(nullptr);
+        static info::_CRYMSG_LISTctor__CRYMSG_LIST4_clbk _CRYMSG_LISTctor__CRYMSG_LIST4_user(nullptr);
         
-        info::_CRYMSG_LIST___LISTInit2_ptr _CRYMSG_LIST___LISTInit2_next(nullptr);
-        info::_CRYMSG_LIST___LISTInit2_clbk _CRYMSG_LIST___LISTInit2_user(nullptr);
-        info::_CRYMSG_LIST___LISTctor__LIST4_ptr _CRYMSG_LIST___LISTctor__LIST4_next(nullptr);
-        info::_CRYMSG_LIST___LISTctor__LIST4_clbk _CRYMSG_LIST___LISTctor__LIST4_user(nullptr);
+        static info::_CRYMSG_LIST___LISTInit2_ptr _CRYMSG_LIST___LISTInit2_next(nullptr);
+        static info::_CRYMSG_LIST___LISTInit2_clbk _CRYMSG_LIST___LISTInit2_user(nullptr);
+        static info::_CRYMSG_LIST___LISTctor__LIST4_ptr _CRYMSG_LIST___LISTctor__LIST4_next(nullptr);
+        static info::_CRYMSG_LIST___LISTctor__LIST4_clbk _CRYMSG_LIST___LISTctor__LIST4_user(nullptr);
         
-        void _CRYMSG_LISTInit2_wrapper(struct _CRYMSG_LIST* _this)
+        static void _CRYMSG_LISTInit2_wrapper(struct _CRYMSG_LIST* _this)
         {
            _CRYMSG_LISTInit2_user(_this, _CRYMSG_LISTInit2_next);
         };
-        void _CRYMSG_LISTctor__CRYMSG_LIST4_wrapper(struct _CRYMSG_LIST* _this)
+        static void _CRYMSG_LISTctor__CRYMSG_LIST4_wrapper(struct _CRYMSG_LIST* _this)
         {
            _CRYMSG_LISTctor__CRYMSG_LIST4_user(_this, _CRYMSG_LISTctor__CRYMSG_LIST4_next);
         };
         
-        void _CRYMSG_LIST___LISTInit2_wrapper(struct _CRYMSG_LIST::_LIST* _this)
+        static void _CRYMSG_LIST___LISTInit2_wrapper(struct _CRYMSG_LIST::_LIST* _this)
         {
            _CRYMSG_LIST___LISTInit2_user(_this, _CRYMSG_LIST___LISTInit2_next);
         };
-        void _CRYMSG_LIST___LISTctor__LIST4_wrapper(struct _CRYMSG_LIST::_LIST* _this)
+        static void _CRYMSG_LIST___LISTctor__LIST4_wrapper(struct _CRYMSG_LIST::_LIST* _this)
         {
            _CRYMSG_LIST___LISTctor__LIST4_user(_this, _CRYMSG_LIST___LISTctor__LIST4_next);
         };
         
-        hook_record _CRYMSG_LIST_functions[] = {
+        static hook_record _CRYMSG_LIST_functions[] = {
         {   (LPVOID)0x140073a80L,
             (LPVOID *)&_CRYMSG_LISTInit2_user,
             (LPVOID *)&_CRYMSG_LISTInit2_next,
@@ -61,5 +61,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

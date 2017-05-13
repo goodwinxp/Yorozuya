@@ -8,183 +8,183 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AutominePersonalMgrctor_AutominePersonalMgr2_ptr AutominePersonalMgrctor_AutominePersonalMgr2_next(nullptr);
-        info::AutominePersonalMgrctor_AutominePersonalMgr2_clbk AutominePersonalMgrctor_AutominePersonalMgr2_user(nullptr);
-        info::AutominePersonalMgrCreateDBTable4_ptr AutominePersonalMgrCreateDBTable4_next(nullptr);
-        info::AutominePersonalMgrCreateDBTable4_clbk AutominePersonalMgrCreateDBTable4_user(nullptr);
-        info::AutominePersonalMgrIs_MineRun6_ptr AutominePersonalMgrIs_MineRun6_next(nullptr);
-        info::AutominePersonalMgrIs_MineRun6_clbk AutominePersonalMgrIs_MineRun6_user(nullptr);
-        info::AutominePersonalMgrOpen_InfoUI8_ptr AutominePersonalMgrOpen_InfoUI8_next(nullptr);
-        info::AutominePersonalMgrOpen_InfoUI8_clbk AutominePersonalMgrOpen_InfoUI8_user(nullptr);
-        info::AutominePersonalMgrOpen_InvenUI10_ptr AutominePersonalMgrOpen_InvenUI10_next(nullptr);
-        info::AutominePersonalMgrOpen_InvenUI10_clbk AutominePersonalMgrOpen_InvenUI10_user(nullptr);
-        info::AutominePersonalMgrcheck_dummy14_ptr AutominePersonalMgrcheck_dummy14_next(nullptr);
-        info::AutominePersonalMgrcheck_dummy14_clbk AutominePersonalMgrcheck_dummy14_user(nullptr);
-        info::AutominePersonalMgrcheck_machine16_ptr AutominePersonalMgrcheck_machine16_next(nullptr);
-        info::AutominePersonalMgrcheck_machine16_clbk AutominePersonalMgrcheck_machine16_user(nullptr);
-        info::AutominePersonalMgrdb_load_inven18_ptr AutominePersonalMgrdb_load_inven18_next(nullptr);
-        info::AutominePersonalMgrdb_load_inven18_clbk AutominePersonalMgrdb_load_inven18_user(nullptr);
-        info::AutominePersonalMgrextract_battery20_ptr AutominePersonalMgrextract_battery20_next(nullptr);
-        info::AutominePersonalMgrextract_battery20_clbk AutominePersonalMgrextract_battery20_user(nullptr);
-        info::AutominePersonalMgrextract_battery22_ptr AutominePersonalMgrextract_battery22_next(nullptr);
-        info::AutominePersonalMgrextract_battery22_clbk AutominePersonalMgrextract_battery22_user(nullptr);
-        info::AutominePersonalMgrget_localitem24_ptr AutominePersonalMgrget_localitem24_next(nullptr);
-        info::AutominePersonalMgrget_localitem24_clbk AutominePersonalMgrget_localitem24_user(nullptr);
-        info::AutominePersonalMgrget_machine26_ptr AutominePersonalMgrget_machine26_next(nullptr);
-        info::AutominePersonalMgrget_machine26_clbk AutominePersonalMgrget_machine26_user(nullptr);
-        info::AutominePersonalMgrinit_objects28_ptr AutominePersonalMgrinit_objects28_next(nullptr);
-        info::AutominePersonalMgrinit_objects28_clbk AutominePersonalMgrinit_objects28_user(nullptr);
-        info::AutominePersonalMgrinitialize30_ptr AutominePersonalMgrinitialize30_next(nullptr);
-        info::AutominePersonalMgrinitialize30_clbk AutominePersonalMgrinitialize30_user(nullptr);
-        info::AutominePersonalMgrinsert_battery32_ptr AutominePersonalMgrinsert_battery32_next(nullptr);
-        info::AutominePersonalMgrinsert_battery32_clbk AutominePersonalMgrinsert_battery32_user(nullptr);
-        info::AutominePersonalMgrinstall34_ptr AutominePersonalMgrinstall34_next(nullptr);
-        info::AutominePersonalMgrinstall34_clbk AutominePersonalMgrinstall34_user(nullptr);
-        info::AutominePersonalMgrinstance36_ptr AutominePersonalMgrinstance36_next(nullptr);
-        info::AutominePersonalMgrinstance36_clbk AutominePersonalMgrinstance36_user(nullptr);
-        info::AutominePersonalMgrmake_storagebox38_ptr AutominePersonalMgrmake_storagebox38_next(nullptr);
-        info::AutominePersonalMgrmake_storagebox38_clbk AutominePersonalMgrmake_storagebox38_user(nullptr);
-        info::AutominePersonalMgrpop_dqs_makestorage40_ptr AutominePersonalMgrpop_dqs_makestorage40_next(nullptr);
-        info::AutominePersonalMgrpop_dqs_makestorage40_clbk AutominePersonalMgrpop_dqs_makestorage40_user(nullptr);
-        info::AutominePersonalMgrpop_ore42_ptr AutominePersonalMgrpop_ore42_next(nullptr);
-        info::AutominePersonalMgrpop_ore42_clbk AutominePersonalMgrpop_ore42_user(nullptr);
-        info::AutominePersonalMgrpush_dqs_makestorage44_ptr AutominePersonalMgrpush_dqs_makestorage44_next(nullptr);
-        info::AutominePersonalMgrpush_dqs_makestorage44_clbk AutominePersonalMgrpush_dqs_makestorage44_user(nullptr);
-        info::AutominePersonalMgrrelease46_ptr AutominePersonalMgrrelease46_next(nullptr);
-        info::AutominePersonalMgrrelease46_clbk AutominePersonalMgrrelease46_user(nullptr);
-        info::AutominePersonalMgrrequest_query48_ptr AutominePersonalMgrrequest_query48_next(nullptr);
-        info::AutominePersonalMgrrequest_query48_clbk AutominePersonalMgrrequest_query48_user(nullptr);
-        info::AutominePersonalMgrresult_query50_ptr AutominePersonalMgrresult_query50_next(nullptr);
-        info::AutominePersonalMgrresult_query50_clbk AutominePersonalMgrresult_query50_user(nullptr);
-        info::AutominePersonalMgrselectore52_ptr AutominePersonalMgrselectore52_next(nullptr);
-        info::AutominePersonalMgrselectore52_clbk AutominePersonalMgrselectore52_user(nullptr);
-        info::AutominePersonalMgrsend_ecode54_ptr AutominePersonalMgrsend_ecode54_next(nullptr);
-        info::AutominePersonalMgrsend_ecode54_clbk AutominePersonalMgrsend_ecode54_user(nullptr);
-        info::AutominePersonalMgruninstall56_ptr AutominePersonalMgruninstall56_next(nullptr);
-        info::AutominePersonalMgruninstall56_clbk AutominePersonalMgruninstall56_user(nullptr);
-        info::AutominePersonalMgruninstall58_ptr AutominePersonalMgruninstall58_next(nullptr);
-        info::AutominePersonalMgruninstall58_clbk AutominePersonalMgruninstall58_user(nullptr);
-        info::AutominePersonalMgrdtor_AutominePersonalMgr60_ptr AutominePersonalMgrdtor_AutominePersonalMgr60_next(nullptr);
-        info::AutominePersonalMgrdtor_AutominePersonalMgr60_clbk AutominePersonalMgrdtor_AutominePersonalMgr60_user(nullptr);
+        static info::AutominePersonalMgrctor_AutominePersonalMgr2_ptr AutominePersonalMgrctor_AutominePersonalMgr2_next(nullptr);
+        static info::AutominePersonalMgrctor_AutominePersonalMgr2_clbk AutominePersonalMgrctor_AutominePersonalMgr2_user(nullptr);
+        static info::AutominePersonalMgrCreateDBTable4_ptr AutominePersonalMgrCreateDBTable4_next(nullptr);
+        static info::AutominePersonalMgrCreateDBTable4_clbk AutominePersonalMgrCreateDBTable4_user(nullptr);
+        static info::AutominePersonalMgrIs_MineRun6_ptr AutominePersonalMgrIs_MineRun6_next(nullptr);
+        static info::AutominePersonalMgrIs_MineRun6_clbk AutominePersonalMgrIs_MineRun6_user(nullptr);
+        static info::AutominePersonalMgrOpen_InfoUI8_ptr AutominePersonalMgrOpen_InfoUI8_next(nullptr);
+        static info::AutominePersonalMgrOpen_InfoUI8_clbk AutominePersonalMgrOpen_InfoUI8_user(nullptr);
+        static info::AutominePersonalMgrOpen_InvenUI10_ptr AutominePersonalMgrOpen_InvenUI10_next(nullptr);
+        static info::AutominePersonalMgrOpen_InvenUI10_clbk AutominePersonalMgrOpen_InvenUI10_user(nullptr);
+        static info::AutominePersonalMgrcheck_dummy14_ptr AutominePersonalMgrcheck_dummy14_next(nullptr);
+        static info::AutominePersonalMgrcheck_dummy14_clbk AutominePersonalMgrcheck_dummy14_user(nullptr);
+        static info::AutominePersonalMgrcheck_machine16_ptr AutominePersonalMgrcheck_machine16_next(nullptr);
+        static info::AutominePersonalMgrcheck_machine16_clbk AutominePersonalMgrcheck_machine16_user(nullptr);
+        static info::AutominePersonalMgrdb_load_inven18_ptr AutominePersonalMgrdb_load_inven18_next(nullptr);
+        static info::AutominePersonalMgrdb_load_inven18_clbk AutominePersonalMgrdb_load_inven18_user(nullptr);
+        static info::AutominePersonalMgrextract_battery20_ptr AutominePersonalMgrextract_battery20_next(nullptr);
+        static info::AutominePersonalMgrextract_battery20_clbk AutominePersonalMgrextract_battery20_user(nullptr);
+        static info::AutominePersonalMgrextract_battery22_ptr AutominePersonalMgrextract_battery22_next(nullptr);
+        static info::AutominePersonalMgrextract_battery22_clbk AutominePersonalMgrextract_battery22_user(nullptr);
+        static info::AutominePersonalMgrget_localitem24_ptr AutominePersonalMgrget_localitem24_next(nullptr);
+        static info::AutominePersonalMgrget_localitem24_clbk AutominePersonalMgrget_localitem24_user(nullptr);
+        static info::AutominePersonalMgrget_machine26_ptr AutominePersonalMgrget_machine26_next(nullptr);
+        static info::AutominePersonalMgrget_machine26_clbk AutominePersonalMgrget_machine26_user(nullptr);
+        static info::AutominePersonalMgrinit_objects28_ptr AutominePersonalMgrinit_objects28_next(nullptr);
+        static info::AutominePersonalMgrinit_objects28_clbk AutominePersonalMgrinit_objects28_user(nullptr);
+        static info::AutominePersonalMgrinitialize30_ptr AutominePersonalMgrinitialize30_next(nullptr);
+        static info::AutominePersonalMgrinitialize30_clbk AutominePersonalMgrinitialize30_user(nullptr);
+        static info::AutominePersonalMgrinsert_battery32_ptr AutominePersonalMgrinsert_battery32_next(nullptr);
+        static info::AutominePersonalMgrinsert_battery32_clbk AutominePersonalMgrinsert_battery32_user(nullptr);
+        static info::AutominePersonalMgrinstall34_ptr AutominePersonalMgrinstall34_next(nullptr);
+        static info::AutominePersonalMgrinstall34_clbk AutominePersonalMgrinstall34_user(nullptr);
+        static info::AutominePersonalMgrinstance36_ptr AutominePersonalMgrinstance36_next(nullptr);
+        static info::AutominePersonalMgrinstance36_clbk AutominePersonalMgrinstance36_user(nullptr);
+        static info::AutominePersonalMgrmake_storagebox38_ptr AutominePersonalMgrmake_storagebox38_next(nullptr);
+        static info::AutominePersonalMgrmake_storagebox38_clbk AutominePersonalMgrmake_storagebox38_user(nullptr);
+        static info::AutominePersonalMgrpop_dqs_makestorage40_ptr AutominePersonalMgrpop_dqs_makestorage40_next(nullptr);
+        static info::AutominePersonalMgrpop_dqs_makestorage40_clbk AutominePersonalMgrpop_dqs_makestorage40_user(nullptr);
+        static info::AutominePersonalMgrpop_ore42_ptr AutominePersonalMgrpop_ore42_next(nullptr);
+        static info::AutominePersonalMgrpop_ore42_clbk AutominePersonalMgrpop_ore42_user(nullptr);
+        static info::AutominePersonalMgrpush_dqs_makestorage44_ptr AutominePersonalMgrpush_dqs_makestorage44_next(nullptr);
+        static info::AutominePersonalMgrpush_dqs_makestorage44_clbk AutominePersonalMgrpush_dqs_makestorage44_user(nullptr);
+        static info::AutominePersonalMgrrelease46_ptr AutominePersonalMgrrelease46_next(nullptr);
+        static info::AutominePersonalMgrrelease46_clbk AutominePersonalMgrrelease46_user(nullptr);
+        static info::AutominePersonalMgrrequest_query48_ptr AutominePersonalMgrrequest_query48_next(nullptr);
+        static info::AutominePersonalMgrrequest_query48_clbk AutominePersonalMgrrequest_query48_user(nullptr);
+        static info::AutominePersonalMgrresult_query50_ptr AutominePersonalMgrresult_query50_next(nullptr);
+        static info::AutominePersonalMgrresult_query50_clbk AutominePersonalMgrresult_query50_user(nullptr);
+        static info::AutominePersonalMgrselectore52_ptr AutominePersonalMgrselectore52_next(nullptr);
+        static info::AutominePersonalMgrselectore52_clbk AutominePersonalMgrselectore52_user(nullptr);
+        static info::AutominePersonalMgrsend_ecode54_ptr AutominePersonalMgrsend_ecode54_next(nullptr);
+        static info::AutominePersonalMgrsend_ecode54_clbk AutominePersonalMgrsend_ecode54_user(nullptr);
+        static info::AutominePersonalMgruninstall56_ptr AutominePersonalMgruninstall56_next(nullptr);
+        static info::AutominePersonalMgruninstall56_clbk AutominePersonalMgruninstall56_user(nullptr);
+        static info::AutominePersonalMgruninstall58_ptr AutominePersonalMgruninstall58_next(nullptr);
+        static info::AutominePersonalMgruninstall58_clbk AutominePersonalMgruninstall58_user(nullptr);
+        static info::AutominePersonalMgrdtor_AutominePersonalMgr60_ptr AutominePersonalMgrdtor_AutominePersonalMgr60_next(nullptr);
+        static info::AutominePersonalMgrdtor_AutominePersonalMgr60_clbk AutominePersonalMgrdtor_AutominePersonalMgr60_user(nullptr);
         
-        void AutominePersonalMgrctor_AutominePersonalMgr2_wrapper(struct AutominePersonalMgr* _this)
+        static void AutominePersonalMgrctor_AutominePersonalMgr2_wrapper(struct AutominePersonalMgr* _this)
         {
            AutominePersonalMgrctor_AutominePersonalMgr2_user(_this, AutominePersonalMgrctor_AutominePersonalMgr2_next);
         };
-        bool AutominePersonalMgrCreateDBTable4_wrapper(struct AutominePersonalMgr* _this)
+        static bool AutominePersonalMgrCreateDBTable4_wrapper(struct AutominePersonalMgr* _this)
         {
            return AutominePersonalMgrCreateDBTable4_user(_this, AutominePersonalMgrCreateDBTable4_next);
         };
-        bool AutominePersonalMgrIs_MineRun6_wrapper(struct AutominePersonalMgr* _this, int n)
+        static bool AutominePersonalMgrIs_MineRun6_wrapper(struct AutominePersonalMgr* _this, int n)
         {
            return AutominePersonalMgrIs_MineRun6_user(_this, n, AutominePersonalMgrIs_MineRun6_next);
         };
-        bool AutominePersonalMgrOpen_InfoUI8_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrOpen_InfoUI8_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrOpen_InfoUI8_user(_this, n, pmsg, AutominePersonalMgrOpen_InfoUI8_next);
         };
-        bool AutominePersonalMgrOpen_InvenUI10_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrOpen_InvenUI10_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrOpen_InvenUI10_user(_this, n, pmsg, AutominePersonalMgrOpen_InvenUI10_next);
         };
-        bool AutominePersonalMgrcheck_dummy14_wrapper(struct AutominePersonalMgr* _this, struct CMapData* pMap, char byCurDummyIndex, float* pfCurPos)
+        static bool AutominePersonalMgrcheck_dummy14_wrapper(struct AutominePersonalMgr* _this, struct CMapData* pMap, char byCurDummyIndex, float* pfCurPos)
         {
            return AutominePersonalMgrcheck_dummy14_user(_this, pMap, byCurDummyIndex, pfCurPos, AutominePersonalMgrcheck_dummy14_next);
         };
-        bool AutominePersonalMgrcheck_machine16_wrapper(struct AutominePersonalMgr* _this, int n, unsigned int dwSerial, struct AutominePersonal* pMachine, struct _STORAGE_LIST::_db_con* pcitem)
+        static bool AutominePersonalMgrcheck_machine16_wrapper(struct AutominePersonalMgr* _this, int n, unsigned int dwSerial, struct AutominePersonal* pMachine, struct _STORAGE_LIST::_db_con* pcitem)
         {
            return AutominePersonalMgrcheck_machine16_user(_this, n, dwSerial, pMachine, pcitem, AutominePersonalMgrcheck_machine16_next);
         };
-        bool AutominePersonalMgrdb_load_inven18_wrapper(struct AutominePersonalMgr* _this, unsigned int dwSerial, struct _PERSONALAMINE_INVEN_DB_BASE* pCon)
+        static bool AutominePersonalMgrdb_load_inven18_wrapper(struct AutominePersonalMgr* _this, unsigned int dwSerial, struct _PERSONALAMINE_INVEN_DB_BASE* pCon)
         {
            return AutominePersonalMgrdb_load_inven18_user(_this, dwSerial, pCon, AutominePersonalMgrdb_load_inven18_next);
         };
-        bool AutominePersonalMgrextract_battery20_wrapper(struct AutominePersonalMgr* _this, int n)
+        static bool AutominePersonalMgrextract_battery20_wrapper(struct AutominePersonalMgr* _this, int n)
         {
            return AutominePersonalMgrextract_battery20_user(_this, n, AutominePersonalMgrextract_battery20_next);
         };
-        bool AutominePersonalMgrextract_battery22_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrextract_battery22_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrextract_battery22_user(_this, n, pmsg, AutominePersonalMgrextract_battery22_next);
         };
-        struct _STORAGE_LIST::_db_con* AutominePersonalMgrget_localitem24_wrapper(struct AutominePersonalMgr* _this, struct CPlayer* pOne, uint16_t wItemSerial)
+        static struct _STORAGE_LIST::_db_con* AutominePersonalMgrget_localitem24_wrapper(struct AutominePersonalMgr* _this, struct CPlayer* pOne, uint16_t wItemSerial)
         {
            return AutominePersonalMgrget_localitem24_user(_this, pOne, wItemSerial, AutominePersonalMgrget_localitem24_next);
         };
-        struct AutominePersonal* AutominePersonalMgrget_machine26_wrapper(struct AutominePersonalMgr* _this, int nIdx)
+        static struct AutominePersonal* AutominePersonalMgrget_machine26_wrapper(struct AutominePersonalMgr* _this, int nIdx)
         {
            return AutominePersonalMgrget_machine26_user(_this, nIdx, AutominePersonalMgrget_machine26_next);
         };
-        bool AutominePersonalMgrinit_objects28_wrapper(struct AutominePersonalMgr* _this)
+        static bool AutominePersonalMgrinit_objects28_wrapper(struct AutominePersonalMgr* _this)
         {
            return AutominePersonalMgrinit_objects28_user(_this, AutominePersonalMgrinit_objects28_next);
         };
-        bool AutominePersonalMgrinitialize30_wrapper(struct AutominePersonalMgr* _this)
+        static bool AutominePersonalMgrinitialize30_wrapper(struct AutominePersonalMgr* _this)
         {
            return AutominePersonalMgrinitialize30_user(_this, AutominePersonalMgrinitialize30_next);
         };
-        bool AutominePersonalMgrinsert_battery32_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrinsert_battery32_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrinsert_battery32_user(_this, n, pmsg, AutominePersonalMgrinsert_battery32_next);
         };
-        bool AutominePersonalMgrinstall34_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrinstall34_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrinstall34_user(_this, n, pmsg, AutominePersonalMgrinstall34_next);
         };
-        struct AutominePersonalMgr* AutominePersonalMgrinstance36_wrapper()
+        static struct AutominePersonalMgr* AutominePersonalMgrinstance36_wrapper()
         {
            return AutominePersonalMgrinstance36_user(AutominePersonalMgrinstance36_next);
         };
-        bool AutominePersonalMgrmake_storagebox38_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrmake_storagebox38_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrmake_storagebox38_user(_this, n, pmsg, AutominePersonalMgrmake_storagebox38_next);
         };
-        void AutominePersonalMgrpop_dqs_makestorage40_wrapper(struct AutominePersonalMgr* _this, char byRet, char* pdata)
+        static void AutominePersonalMgrpop_dqs_makestorage40_wrapper(struct AutominePersonalMgr* _this, char byRet, char* pdata)
         {
            AutominePersonalMgrpop_dqs_makestorage40_user(_this, byRet, pdata, AutominePersonalMgrpop_dqs_makestorage40_next);
         };
-        bool AutominePersonalMgrpop_ore42_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrpop_ore42_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrpop_ore42_user(_this, n, pmsg, AutominePersonalMgrpop_ore42_next);
         };
-        void AutominePersonalMgrpush_dqs_makestorage44_wrapper(struct AutominePersonalMgr* _this, int n, unsigned int dwAvatorSerial, unsigned int dwTotGold)
+        static void AutominePersonalMgrpush_dqs_makestorage44_wrapper(struct AutominePersonalMgr* _this, int n, unsigned int dwAvatorSerial, unsigned int dwTotGold)
         {
            AutominePersonalMgrpush_dqs_makestorage44_user(_this, n, dwAvatorSerial, dwTotGold, AutominePersonalMgrpush_dqs_makestorage44_next);
         };
-        void AutominePersonalMgrrelease46_wrapper()
+        static void AutominePersonalMgrrelease46_wrapper()
         {
            AutominePersonalMgrrelease46_user(AutominePersonalMgrrelease46_next);
         };
-        int AutominePersonalMgrrequest_query48_wrapper(struct AutominePersonalMgr* _this, char* pdata)
+        static int AutominePersonalMgrrequest_query48_wrapper(struct AutominePersonalMgr* _this, char* pdata)
         {
            return AutominePersonalMgrrequest_query48_user(_this, pdata, AutominePersonalMgrrequest_query48_next);
         };
-        void AutominePersonalMgrresult_query50_wrapper(struct AutominePersonalMgr* _this, char byRet, char* pdata)
+        static void AutominePersonalMgrresult_query50_wrapper(struct AutominePersonalMgr* _this, char byRet, char* pdata)
         {
            AutominePersonalMgrresult_query50_user(_this, byRet, pdata, AutominePersonalMgrresult_query50_next);
         };
-        bool AutominePersonalMgrselectore52_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgrselectore52_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgrselectore52_user(_this, n, pmsg, AutominePersonalMgrselectore52_next);
         };
-        void AutominePersonalMgrsend_ecode54_wrapper(struct AutominePersonalMgr* _this, int n, char byCode)
+        static void AutominePersonalMgrsend_ecode54_wrapper(struct AutominePersonalMgr* _this, int n, char byCode)
         {
            AutominePersonalMgrsend_ecode54_user(_this, n, byCode, AutominePersonalMgrsend_ecode54_next);
         };
-        bool AutominePersonalMgruninstall56_wrapper(struct AutominePersonalMgr* _this, int n)
+        static bool AutominePersonalMgruninstall56_wrapper(struct AutominePersonalMgr* _this, int n)
         {
            return AutominePersonalMgruninstall56_user(_this, n, AutominePersonalMgruninstall56_next);
         };
-        bool AutominePersonalMgruninstall58_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
+        static bool AutominePersonalMgruninstall58_wrapper(struct AutominePersonalMgr* _this, int n, char* pmsg)
         {
            return AutominePersonalMgruninstall58_user(_this, n, pmsg, AutominePersonalMgruninstall58_next);
         };
-        void AutominePersonalMgrdtor_AutominePersonalMgr60_wrapper(struct AutominePersonalMgr* _this)
+        static void AutominePersonalMgrdtor_AutominePersonalMgr60_wrapper(struct AutominePersonalMgr* _this)
         {
            AutominePersonalMgrdtor_AutominePersonalMgr60_user(_this, AutominePersonalMgrdtor_AutominePersonalMgr60_next);
         };
         
-        hook_record AutominePersonalMgr_functions[] = {
+        static hook_record AutominePersonalMgr_functions[] = {
         {   (LPVOID)0x1402de440L,
             (LPVOID *)&AutominePersonalMgrctor_AutominePersonalMgr2_user,
             (LPVOID *)&AutominePersonalMgrctor_AutominePersonalMgr2_next,
@@ -333,5 +333,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

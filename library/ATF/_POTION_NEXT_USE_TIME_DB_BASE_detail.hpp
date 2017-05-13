@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_POTION_NEXT_USE_TIME_DB_BASEInit2_ptr _POTION_NEXT_USE_TIME_DB_BASEInit2_next(nullptr);
-        info::_POTION_NEXT_USE_TIME_DB_BASEInit2_clbk _POTION_NEXT_USE_TIME_DB_BASEInit2_user(nullptr);
-        info::_POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_ptr _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_next(nullptr);
-        info::_POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_clbk _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_user(nullptr);
+        static info::_POTION_NEXT_USE_TIME_DB_BASEInit2_ptr _POTION_NEXT_USE_TIME_DB_BASEInit2_next(nullptr);
+        static info::_POTION_NEXT_USE_TIME_DB_BASEInit2_clbk _POTION_NEXT_USE_TIME_DB_BASEInit2_user(nullptr);
+        static info::_POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_ptr _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_next(nullptr);
+        static info::_POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_clbk _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_user(nullptr);
         
-        void _POTION_NEXT_USE_TIME_DB_BASEInit2_wrapper(struct _POTION_NEXT_USE_TIME_DB_BASE* _this)
+        static void _POTION_NEXT_USE_TIME_DB_BASEInit2_wrapper(struct _POTION_NEXT_USE_TIME_DB_BASE* _this)
         {
            _POTION_NEXT_USE_TIME_DB_BASEInit2_user(_this, _POTION_NEXT_USE_TIME_DB_BASEInit2_next);
         };
-        void _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_wrapper(struct _POTION_NEXT_USE_TIME_DB_BASE* _this)
+        static void _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_wrapper(struct _POTION_NEXT_USE_TIME_DB_BASE* _this)
         {
            _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_user(_this, _POTION_NEXT_USE_TIME_DB_BASEctor__POTION_NEXT_USE_TIME_DB_BASE4_next);
         };
         
-        hook_record _POTION_NEXT_USE_TIME_DB_BASE_functions[] = {
+        static hook_record _POTION_NEXT_USE_TIME_DB_BASE_functions[] = {
         {   (LPVOID)0x1400779b0L,
             (LPVOID *)&_POTION_NEXT_USE_TIME_DB_BASEInit2_user,
             (LPVOID *)&_POTION_NEXT_USE_TIME_DB_BASEInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

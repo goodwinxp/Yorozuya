@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_STAT_DB_BASEGetStatIndex2_ptr _STAT_DB_BASEGetStatIndex2_next(nullptr);
-        info::_STAT_DB_BASEGetStatIndex2_clbk _STAT_DB_BASEGetStatIndex2_user(nullptr);
-        info::_STAT_DB_BASEInit4_ptr _STAT_DB_BASEInit4_next(nullptr);
-        info::_STAT_DB_BASEInit4_clbk _STAT_DB_BASEInit4_user(nullptr);
-        info::_STAT_DB_BASEIsRangePerMastery6_ptr _STAT_DB_BASEIsRangePerMastery6_next(nullptr);
-        info::_STAT_DB_BASEIsRangePerMastery6_clbk _STAT_DB_BASEIsRangePerMastery6_user(nullptr);
-        info::_STAT_DB_BASEctor__STAT_DB_BASE8_ptr _STAT_DB_BASEctor__STAT_DB_BASE8_next(nullptr);
-        info::_STAT_DB_BASEctor__STAT_DB_BASE8_clbk _STAT_DB_BASEctor__STAT_DB_BASE8_user(nullptr);
+        static info::_STAT_DB_BASEGetStatIndex2_ptr _STAT_DB_BASEGetStatIndex2_next(nullptr);
+        static info::_STAT_DB_BASEGetStatIndex2_clbk _STAT_DB_BASEGetStatIndex2_user(nullptr);
+        static info::_STAT_DB_BASEInit4_ptr _STAT_DB_BASEInit4_next(nullptr);
+        static info::_STAT_DB_BASEInit4_clbk _STAT_DB_BASEInit4_user(nullptr);
+        static info::_STAT_DB_BASEIsRangePerMastery6_ptr _STAT_DB_BASEIsRangePerMastery6_next(nullptr);
+        static info::_STAT_DB_BASEIsRangePerMastery6_clbk _STAT_DB_BASEIsRangePerMastery6_user(nullptr);
+        static info::_STAT_DB_BASEctor__STAT_DB_BASE8_ptr _STAT_DB_BASEctor__STAT_DB_BASE8_next(nullptr);
+        static info::_STAT_DB_BASEctor__STAT_DB_BASE8_clbk _STAT_DB_BASEctor__STAT_DB_BASE8_user(nullptr);
         
-        int _STAT_DB_BASEGetStatIndex2_wrapper(char byMasteryClass, char byIndex)
+        static int _STAT_DB_BASEGetStatIndex2_wrapper(char byMasteryClass, char byIndex)
         {
            return _STAT_DB_BASEGetStatIndex2_user(byMasteryClass, byIndex, _STAT_DB_BASEGetStatIndex2_next);
         };
-        void _STAT_DB_BASEInit4_wrapper(struct _STAT_DB_BASE* _this)
+        static void _STAT_DB_BASEInit4_wrapper(struct _STAT_DB_BASE* _this)
         {
            _STAT_DB_BASEInit4_user(_this, _STAT_DB_BASEInit4_next);
         };
-        bool _STAT_DB_BASEIsRangePerMastery6_wrapper(char byMasteryClass, char byIndex)
+        static bool _STAT_DB_BASEIsRangePerMastery6_wrapper(char byMasteryClass, char byIndex)
         {
            return _STAT_DB_BASEIsRangePerMastery6_user(byMasteryClass, byIndex, _STAT_DB_BASEIsRangePerMastery6_next);
         };
-        void _STAT_DB_BASEctor__STAT_DB_BASE8_wrapper(struct _STAT_DB_BASE* _this)
+        static void _STAT_DB_BASEctor__STAT_DB_BASE8_wrapper(struct _STAT_DB_BASE* _this)
         {
            _STAT_DB_BASEctor__STAT_DB_BASE8_user(_this, _STAT_DB_BASEctor__STAT_DB_BASE8_next);
         };
         
-        hook_record _STAT_DB_BASE_functions[] = {
+        static hook_record _STAT_DB_BASE_functions[] = {
         {   (LPVOID)0x14007c560L,
             (LPVOID *)&_STAT_DB_BASEGetStatIndex2_user,
             (LPVOID *)&_STAT_DB_BASEGetStatIndex2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

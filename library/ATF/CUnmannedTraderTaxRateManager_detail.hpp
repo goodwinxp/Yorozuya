@@ -8,135 +8,135 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_ptr CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_clbk CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerChangeOwner4_ptr CUnmannedTraderTaxRateManagerChangeOwner4_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerChangeOwner4_clbk CUnmannedTraderTaxRateManagerChangeOwner4_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_ptr CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_clbk CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerCleanUp8_ptr CUnmannedTraderTaxRateManagerCleanUp8_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerCleanUp8_clbk CUnmannedTraderTaxRateManagerCleanUp8_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerCompleteCreate10_ptr CUnmannedTraderTaxRateManagerCompleteCreate10_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerCompleteCreate10_clbk CUnmannedTraderTaxRateManagerCompleteCreate10_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_ptr CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_clbk CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerDestroy14_ptr CUnmannedTraderTaxRateManagerDestroy14_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerDestroy14_clbk CUnmannedTraderTaxRateManagerDestroy14_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetSuggestedTime16_ptr CUnmannedTraderTaxRateManagerGetSuggestedTime16_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetSuggestedTime16_clbk CUnmannedTraderTaxRateManagerGetSuggestedTime16_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetTax18_ptr CUnmannedTraderTaxRateManagerGetTax18_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetTax18_clbk CUnmannedTraderTaxRateManagerGetTax18_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetTaxRate20_ptr CUnmannedTraderTaxRateManagerGetTaxRate20_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerGetTaxRate20_clbk CUnmannedTraderTaxRateManagerGetTaxRate20_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerInit22_ptr CUnmannedTraderTaxRateManagerInit22_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerInit22_clbk CUnmannedTraderTaxRateManagerInit22_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerInstance24_ptr CUnmannedTraderTaxRateManagerInstance24_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerInstance24_clbk CUnmannedTraderTaxRateManagerInstance24_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerIsOwnerGuild26_ptr CUnmannedTraderTaxRateManagerIsOwnerGuild26_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerIsOwnerGuild26_clbk CUnmannedTraderTaxRateManagerIsOwnerGuild26_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerLoad28_ptr CUnmannedTraderTaxRateManagerLoad28_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerLoad28_clbk CUnmannedTraderTaxRateManagerLoad28_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerLoop30_ptr CUnmannedTraderTaxRateManagerLoop30_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerLoop30_clbk CUnmannedTraderTaxRateManagerLoop30_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerSendTaxRate32_ptr CUnmannedTraderTaxRateManagerSendTaxRate32_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerSendTaxRate32_clbk CUnmannedTraderTaxRateManagerSendTaxRate32_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_ptr CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_clbk CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_ptr CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_clbk CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_ptr CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_clbk CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetSuggested40_ptr CUnmannedTraderTaxRateManagerSetSuggested40_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerSetSuggested40_clbk CUnmannedTraderTaxRateManagerSetSuggested40_user(nullptr);
-        info::CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_ptr CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_next(nullptr);
-        info::CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_clbk CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_ptr CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_clbk CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerChangeOwner4_ptr CUnmannedTraderTaxRateManagerChangeOwner4_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerChangeOwner4_clbk CUnmannedTraderTaxRateManagerChangeOwner4_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_ptr CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_clbk CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCleanUp8_ptr CUnmannedTraderTaxRateManagerCleanUp8_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCleanUp8_clbk CUnmannedTraderTaxRateManagerCleanUp8_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCompleteCreate10_ptr CUnmannedTraderTaxRateManagerCompleteCreate10_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerCompleteCreate10_clbk CUnmannedTraderTaxRateManagerCompleteCreate10_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_ptr CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_clbk CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerDestroy14_ptr CUnmannedTraderTaxRateManagerDestroy14_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerDestroy14_clbk CUnmannedTraderTaxRateManagerDestroy14_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetSuggestedTime16_ptr CUnmannedTraderTaxRateManagerGetSuggestedTime16_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetSuggestedTime16_clbk CUnmannedTraderTaxRateManagerGetSuggestedTime16_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetTax18_ptr CUnmannedTraderTaxRateManagerGetTax18_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetTax18_clbk CUnmannedTraderTaxRateManagerGetTax18_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetTaxRate20_ptr CUnmannedTraderTaxRateManagerGetTaxRate20_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerGetTaxRate20_clbk CUnmannedTraderTaxRateManagerGetTaxRate20_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerInit22_ptr CUnmannedTraderTaxRateManagerInit22_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerInit22_clbk CUnmannedTraderTaxRateManagerInit22_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerInstance24_ptr CUnmannedTraderTaxRateManagerInstance24_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerInstance24_clbk CUnmannedTraderTaxRateManagerInstance24_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerIsOwnerGuild26_ptr CUnmannedTraderTaxRateManagerIsOwnerGuild26_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerIsOwnerGuild26_clbk CUnmannedTraderTaxRateManagerIsOwnerGuild26_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerLoad28_ptr CUnmannedTraderTaxRateManagerLoad28_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerLoad28_clbk CUnmannedTraderTaxRateManagerLoad28_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerLoop30_ptr CUnmannedTraderTaxRateManagerLoop30_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerLoop30_clbk CUnmannedTraderTaxRateManagerLoop30_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSendTaxRate32_ptr CUnmannedTraderTaxRateManagerSendTaxRate32_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSendTaxRate32_clbk CUnmannedTraderTaxRateManagerSendTaxRate32_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_ptr CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_clbk CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_ptr CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_clbk CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_ptr CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_clbk CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetSuggested40_ptr CUnmannedTraderTaxRateManagerSetSuggested40_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerSetSuggested40_clbk CUnmannedTraderTaxRateManagerSetSuggested40_user(nullptr);
+        static info::CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_ptr CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_next(nullptr);
+        static info::CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_clbk CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_user(nullptr);
         
-        void CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_wrapper(struct CUnmannedTraderTaxRateManager* _this)
+        static void CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_wrapper(struct CUnmannedTraderTaxRateManager* _this)
         {
            CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_user(_this, CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_next);
         };
-        int CUnmannedTraderTaxRateManagerChangeOwner4_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, struct CGuild* pGuild)
+        static int CUnmannedTraderTaxRateManagerChangeOwner4_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, struct CGuild* pGuild)
         {
            return CUnmannedTraderTaxRateManagerChangeOwner4_user(_this, byRace, pGuild, CUnmannedTraderTaxRateManagerChangeOwner4_next);
         };
-        bool CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwNewTaxRate, char* pCheaterName)
+        static bool CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwNewTaxRate, char* pCheaterName)
         {
            return CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_user(_this, byRace, dwNewTaxRate, pCheaterName, CUnmannedTraderTaxRateManagerCheatChangeTaxRate6_next);
         };
-        void CUnmannedTraderTaxRateManagerCleanUp8_wrapper(struct CUnmannedTraderTaxRateManager* _this)
+        static void CUnmannedTraderTaxRateManagerCleanUp8_wrapper(struct CUnmannedTraderTaxRateManager* _this)
         {
            CUnmannedTraderTaxRateManagerCleanUp8_user(_this, CUnmannedTraderTaxRateManagerCleanUp8_next);
         };
-        void CUnmannedTraderTaxRateManagerCompleteCreate10_wrapper(struct CUnmannedTraderTaxRateManager* _this, uint16_t wInx)
+        static void CUnmannedTraderTaxRateManagerCompleteCreate10_wrapper(struct CUnmannedTraderTaxRateManager* _this, uint16_t wInx)
         {
            CUnmannedTraderTaxRateManagerCompleteCreate10_user(_this, wInx, CUnmannedTraderTaxRateManagerCompleteCreate10_next);
         };
-        void CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, char* pdata)
+        static void CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, char* pdata)
         {
            CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_user(_this, byRace, pdata, CUnmannedTraderTaxRateManagerDQSCompleteInAtradTaxMoney12_next);
         };
-        void CUnmannedTraderTaxRateManagerDestroy14_wrapper()
+        static void CUnmannedTraderTaxRateManagerDestroy14_wrapper()
         {
            CUnmannedTraderTaxRateManagerDestroy14_user(CUnmannedTraderTaxRateManagerDestroy14_next);
         };
-        unsigned int CUnmannedTraderTaxRateManagerGetSuggestedTime16_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace)
+        static unsigned int CUnmannedTraderTaxRateManagerGetSuggestedTime16_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace)
         {
            return CUnmannedTraderTaxRateManagerGetSuggestedTime16_user(_this, byRace, CUnmannedTraderTaxRateManagerGetSuggestedTime16_next);
         };
-        unsigned int CUnmannedTraderTaxRateManagerGetTax18_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwGuildSerial, unsigned int dwPrice)
+        static unsigned int CUnmannedTraderTaxRateManagerGetTax18_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwGuildSerial, unsigned int dwPrice)
         {
            return CUnmannedTraderTaxRateManagerGetTax18_user(_this, byRace, dwGuildSerial, dwPrice, CUnmannedTraderTaxRateManagerGetTax18_next);
         };
-        float CUnmannedTraderTaxRateManagerGetTaxRate20_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace)
+        static float CUnmannedTraderTaxRateManagerGetTaxRate20_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace)
         {
            return CUnmannedTraderTaxRateManagerGetTaxRate20_user(_this, byRace, CUnmannedTraderTaxRateManagerGetTaxRate20_next);
         };
-        bool CUnmannedTraderTaxRateManagerInit22_wrapper(struct CUnmannedTraderTaxRateManager* _this, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderTaxRateManagerInit22_wrapper(struct CUnmannedTraderTaxRateManager* _this, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderTaxRateManagerInit22_user(_this, pkLogger, CUnmannedTraderTaxRateManagerInit22_next);
         };
-        struct CUnmannedTraderTaxRateManager* CUnmannedTraderTaxRateManagerInstance24_wrapper()
+        static struct CUnmannedTraderTaxRateManager* CUnmannedTraderTaxRateManagerInstance24_wrapper()
         {
            return CUnmannedTraderTaxRateManagerInstance24_user(CUnmannedTraderTaxRateManagerInstance24_next);
         };
-        bool CUnmannedTraderTaxRateManagerIsOwnerGuild26_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwGuildSerial)
+        static bool CUnmannedTraderTaxRateManagerIsOwnerGuild26_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwGuildSerial)
         {
            return CUnmannedTraderTaxRateManagerIsOwnerGuild26_user(_this, byRace, dwGuildSerial, CUnmannedTraderTaxRateManagerIsOwnerGuild26_next);
         };
-        bool CUnmannedTraderTaxRateManagerLoad28_wrapper(struct CUnmannedTraderTaxRateManager* _this)
+        static bool CUnmannedTraderTaxRateManagerLoad28_wrapper(struct CUnmannedTraderTaxRateManager* _this)
         {
            return CUnmannedTraderTaxRateManagerLoad28_user(_this, CUnmannedTraderTaxRateManagerLoad28_next);
         };
-        void CUnmannedTraderTaxRateManagerLoop30_wrapper(struct CUnmannedTraderTaxRateManager* _this)
+        static void CUnmannedTraderTaxRateManagerLoop30_wrapper(struct CUnmannedTraderTaxRateManager* _this)
         {
            CUnmannedTraderTaxRateManagerLoop30_user(_this, CUnmannedTraderTaxRateManagerLoop30_next);
         };
-        void CUnmannedTraderTaxRateManagerSendTaxRate32_wrapper(struct CUnmannedTraderTaxRateManager* _this, int n, char byRace)
+        static void CUnmannedTraderTaxRateManagerSendTaxRate32_wrapper(struct CUnmannedTraderTaxRateManager* _this, int n, char byRace)
         {
            CUnmannedTraderTaxRateManagerSendTaxRate32_user(_this, n, byRace, CUnmannedTraderTaxRateManagerSendTaxRate32_next);
         };
-        void CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_wrapper(struct CUnmannedTraderTaxRateManager* _this, int n, char byRace)
+        static void CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_wrapper(struct CUnmannedTraderTaxRateManager* _this, int n, char byRace)
         {
            CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_user(_this, n, byRace, CUnmannedTraderTaxRateManagerSendTaxRatePatriarch34_next);
         };
-        void CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwTax, unsigned int dwSeller)
+        static void CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwTax, unsigned int dwSeller)
         {
            CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_user(_this, byRace, dwTax, dwSeller, CUnmannedTraderTaxRateManagerSetGuildMaintainMoney36_next);
         };
-        void CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwTax)
+        static void CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, unsigned int dwTax)
         {
            CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_user(_this, byRace, dwTax, CUnmannedTraderTaxRateManagerSetPatriarchTaxMoney38_next);
         };
-        void CUnmannedTraderTaxRateManagerSetSuggested40_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, char byMatterType, unsigned int dwMatterDst, char* wszMatterDst, unsigned int dwNext)
+        static void CUnmannedTraderTaxRateManagerSetSuggested40_wrapper(struct CUnmannedTraderTaxRateManager* _this, char byRace, char byMatterType, unsigned int dwMatterDst, char* wszMatterDst, unsigned int dwNext)
         {
            CUnmannedTraderTaxRateManagerSetSuggested40_user(_this, byRace, byMatterType, dwMatterDst, wszMatterDst, dwNext, CUnmannedTraderTaxRateManagerSetSuggested40_next);
         };
-        void CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_wrapper(struct CUnmannedTraderTaxRateManager* _this)
+        static void CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_wrapper(struct CUnmannedTraderTaxRateManager* _this)
         {
            CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_user(_this, CUnmannedTraderTaxRateManagerdtor_CUnmannedTraderTaxRateManager44_next);
         };
         
-        hook_record CUnmannedTraderTaxRateManager_functions[] = {
+        static hook_record CUnmannedTraderTaxRateManager_functions[] = {
         {   (LPVOID)0x14038ecd0L,
             (LPVOID *)&CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_user,
             (LPVOID *)&CUnmannedTraderTaxRateManagerctor_CUnmannedTraderTaxRateManager2_next,
@@ -245,5 +245,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

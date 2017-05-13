@@ -8,201 +8,201 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNuclearBombAttack2_ptr CNuclearBombAttack2_next(nullptr);
-        info::CNuclearBombAttack2_clbk CNuclearBombAttack2_user(nullptr);
-        info::CNuclearBombctor_CNuclearBomb4_ptr CNuclearBombctor_CNuclearBomb4_next(nullptr);
-        info::CNuclearBombctor_CNuclearBomb4_clbk CNuclearBombctor_CNuclearBomb4_user(nullptr);
-        info::CNuclearBombCreate6_ptr CNuclearBombCreate6_next(nullptr);
-        info::CNuclearBombCreate6_clbk CNuclearBombCreate6_user(nullptr);
-        info::CNuclearBombDestroy8_ptr CNuclearBombDestroy8_next(nullptr);
-        info::CNuclearBombDestroy8_clbk CNuclearBombDestroy8_user(nullptr);
-        info::CNuclearBombGetBombStatus10_ptr CNuclearBombGetBombStatus10_next(nullptr);
-        info::CNuclearBombGetBombStatus10_clbk CNuclearBombGetBombStatus10_user(nullptr);
-        info::CNuclearBombGetControlSerial12_ptr CNuclearBombGetControlSerial12_next(nullptr);
-        info::CNuclearBombGetControlSerial12_clbk CNuclearBombGetControlSerial12_user(nullptr);
-        info::CNuclearBombGetDamagedObjNum14_ptr CNuclearBombGetDamagedObjNum14_next(nullptr);
-        info::CNuclearBombGetDamagedObjNum14_clbk CNuclearBombGetDamagedObjNum14_user(nullptr);
-        info::CNuclearBombGetGenAttackProb16_ptr CNuclearBombGetGenAttackProb16_next(nullptr);
-        info::CNuclearBombGetGenAttackProb16_clbk CNuclearBombGetGenAttackProb16_user(nullptr);
-        info::CNuclearBombGetItemIndex18_ptr CNuclearBombGetItemIndex18_next(nullptr);
-        info::CNuclearBombGetItemIndex18_clbk CNuclearBombGetItemIndex18_user(nullptr);
-        info::CNuclearBombGetMasterClass20_ptr CNuclearBombGetMasterClass20_next(nullptr);
-        info::CNuclearBombGetMasterClass20_clbk CNuclearBombGetMasterClass20_user(nullptr);
-        info::CNuclearBombGetMasterRace22_ptr CNuclearBombGetMasterRace22_next(nullptr);
-        info::CNuclearBombGetMasterRace22_clbk CNuclearBombGetMasterRace22_user(nullptr);
-        info::CNuclearBombGetMissilePos24_ptr CNuclearBombGetMissilePos24_next(nullptr);
-        info::CNuclearBombGetMissilePos24_clbk CNuclearBombGetMissilePos24_user(nullptr);
-        info::CNuclearBombGetNewSerial26_ptr CNuclearBombGetNewSerial26_next(nullptr);
-        info::CNuclearBombGetNewSerial26_clbk CNuclearBombGetNewSerial26_user(nullptr);
-        info::CNuclearBombGetShowEffectList28_ptr CNuclearBombGetShowEffectList28_next(nullptr);
-        info::CNuclearBombGetShowEffectList28_clbk CNuclearBombGetShowEffectList28_user(nullptr);
-        info::CNuclearBombGetUse30_ptr CNuclearBombGetUse30_next(nullptr);
-        info::CNuclearBombGetUse30_clbk CNuclearBombGetUse30_user(nullptr);
-        info::CNuclearBombInit32_ptr CNuclearBombInit32_next(nullptr);
-        info::CNuclearBombInit32_clbk CNuclearBombInit32_user(nullptr);
-        info::CNuclearBombLoop34_ptr CNuclearBombLoop34_next(nullptr);
-        info::CNuclearBombLoop34_clbk CNuclearBombLoop34_user(nullptr);
-        info::CNuclearBombNuclearDamege36_ptr CNuclearBombNuclearDamege36_next(nullptr);
-        info::CNuclearBombNuclearDamege36_clbk CNuclearBombNuclearDamege36_user(nullptr);
-        info::CNuclearBombRecvKillMessage38_ptr CNuclearBombRecvKillMessage38_next(nullptr);
-        info::CNuclearBombRecvKillMessage38_clbk CNuclearBombRecvKillMessage38_user(nullptr);
-        info::CNuclearBombSendMsg_AddEffect40_ptr CNuclearBombSendMsg_AddEffect40_next(nullptr);
-        info::CNuclearBombSendMsg_AddEffect40_clbk CNuclearBombSendMsg_AddEffect40_user(nullptr);
-        info::CNuclearBombSendMsg_Attack42_ptr CNuclearBombSendMsg_Attack42_next(nullptr);
-        info::CNuclearBombSendMsg_Attack42_clbk CNuclearBombSendMsg_Attack42_user(nullptr);
-        info::CNuclearBombSendMsg_DropMissile44_ptr CNuclearBombSendMsg_DropMissile44_next(nullptr);
-        info::CNuclearBombSendMsg_DropMissile44_clbk CNuclearBombSendMsg_DropMissile44_user(nullptr);
-        info::CNuclearBombSendMsg_InformAttack46_ptr CNuclearBombSendMsg_InformAttack46_next(nullptr);
-        info::CNuclearBombSendMsg_InformAttack46_clbk CNuclearBombSendMsg_InformAttack46_user(nullptr);
-        info::CNuclearBombSendMsg_InformDropPos48_ptr CNuclearBombSendMsg_InformDropPos48_next(nullptr);
-        info::CNuclearBombSendMsg_InformDropPos48_clbk CNuclearBombSendMsg_InformDropPos48_user(nullptr);
-        info::CNuclearBombSendMsg_MasterDie50_ptr CNuclearBombSendMsg_MasterDie50_next(nullptr);
-        info::CNuclearBombSendMsg_MasterDie50_clbk CNuclearBombSendMsg_MasterDie50_user(nullptr);
-        info::CNuclearBombSendMsg_NuclearFind52_ptr CNuclearBombSendMsg_NuclearFind52_next(nullptr);
-        info::CNuclearBombSendMsg_NuclearFind52_clbk CNuclearBombSendMsg_NuclearFind52_user(nullptr);
-        info::CNuclearBombSendMsg_Result54_ptr CNuclearBombSendMsg_Result54_next(nullptr);
-        info::CNuclearBombSendMsg_Result54_clbk CNuclearBombSendMsg_Result54_user(nullptr);
-        info::CNuclearBombSetBombStatus56_ptr CNuclearBombSetBombStatus56_next(nullptr);
-        info::CNuclearBombSetBombStatus56_clbk CNuclearBombSetBombStatus56_user(nullptr);
-        info::CNuclearBombSetControlSerial58_ptr CNuclearBombSetControlSerial58_next(nullptr);
-        info::CNuclearBombSetControlSerial58_clbk CNuclearBombSetControlSerial58_user(nullptr);
-        info::CNuclearBombSetNuclearIndex60_ptr CNuclearBombSetNuclearIndex60_next(nullptr);
-        info::CNuclearBombSetNuclearIndex60_clbk CNuclearBombSetNuclearIndex60_user(nullptr);
-        info::CNuclearBombWarningToAll62_ptr CNuclearBombWarningToAll62_next(nullptr);
-        info::CNuclearBombWarningToAll62_clbk CNuclearBombWarningToAll62_user(nullptr);
-        info::CNuclearBombdtor_CNuclearBomb67_ptr CNuclearBombdtor_CNuclearBomb67_next(nullptr);
-        info::CNuclearBombdtor_CNuclearBomb67_clbk CNuclearBombdtor_CNuclearBomb67_user(nullptr);
+        static info::CNuclearBombAttack2_ptr CNuclearBombAttack2_next(nullptr);
+        static info::CNuclearBombAttack2_clbk CNuclearBombAttack2_user(nullptr);
+        static info::CNuclearBombctor_CNuclearBomb4_ptr CNuclearBombctor_CNuclearBomb4_next(nullptr);
+        static info::CNuclearBombctor_CNuclearBomb4_clbk CNuclearBombctor_CNuclearBomb4_user(nullptr);
+        static info::CNuclearBombCreate6_ptr CNuclearBombCreate6_next(nullptr);
+        static info::CNuclearBombCreate6_clbk CNuclearBombCreate6_user(nullptr);
+        static info::CNuclearBombDestroy8_ptr CNuclearBombDestroy8_next(nullptr);
+        static info::CNuclearBombDestroy8_clbk CNuclearBombDestroy8_user(nullptr);
+        static info::CNuclearBombGetBombStatus10_ptr CNuclearBombGetBombStatus10_next(nullptr);
+        static info::CNuclearBombGetBombStatus10_clbk CNuclearBombGetBombStatus10_user(nullptr);
+        static info::CNuclearBombGetControlSerial12_ptr CNuclearBombGetControlSerial12_next(nullptr);
+        static info::CNuclearBombGetControlSerial12_clbk CNuclearBombGetControlSerial12_user(nullptr);
+        static info::CNuclearBombGetDamagedObjNum14_ptr CNuclearBombGetDamagedObjNum14_next(nullptr);
+        static info::CNuclearBombGetDamagedObjNum14_clbk CNuclearBombGetDamagedObjNum14_user(nullptr);
+        static info::CNuclearBombGetGenAttackProb16_ptr CNuclearBombGetGenAttackProb16_next(nullptr);
+        static info::CNuclearBombGetGenAttackProb16_clbk CNuclearBombGetGenAttackProb16_user(nullptr);
+        static info::CNuclearBombGetItemIndex18_ptr CNuclearBombGetItemIndex18_next(nullptr);
+        static info::CNuclearBombGetItemIndex18_clbk CNuclearBombGetItemIndex18_user(nullptr);
+        static info::CNuclearBombGetMasterClass20_ptr CNuclearBombGetMasterClass20_next(nullptr);
+        static info::CNuclearBombGetMasterClass20_clbk CNuclearBombGetMasterClass20_user(nullptr);
+        static info::CNuclearBombGetMasterRace22_ptr CNuclearBombGetMasterRace22_next(nullptr);
+        static info::CNuclearBombGetMasterRace22_clbk CNuclearBombGetMasterRace22_user(nullptr);
+        static info::CNuclearBombGetMissilePos24_ptr CNuclearBombGetMissilePos24_next(nullptr);
+        static info::CNuclearBombGetMissilePos24_clbk CNuclearBombGetMissilePos24_user(nullptr);
+        static info::CNuclearBombGetNewSerial26_ptr CNuclearBombGetNewSerial26_next(nullptr);
+        static info::CNuclearBombGetNewSerial26_clbk CNuclearBombGetNewSerial26_user(nullptr);
+        static info::CNuclearBombGetShowEffectList28_ptr CNuclearBombGetShowEffectList28_next(nullptr);
+        static info::CNuclearBombGetShowEffectList28_clbk CNuclearBombGetShowEffectList28_user(nullptr);
+        static info::CNuclearBombGetUse30_ptr CNuclearBombGetUse30_next(nullptr);
+        static info::CNuclearBombGetUse30_clbk CNuclearBombGetUse30_user(nullptr);
+        static info::CNuclearBombInit32_ptr CNuclearBombInit32_next(nullptr);
+        static info::CNuclearBombInit32_clbk CNuclearBombInit32_user(nullptr);
+        static info::CNuclearBombLoop34_ptr CNuclearBombLoop34_next(nullptr);
+        static info::CNuclearBombLoop34_clbk CNuclearBombLoop34_user(nullptr);
+        static info::CNuclearBombNuclearDamege36_ptr CNuclearBombNuclearDamege36_next(nullptr);
+        static info::CNuclearBombNuclearDamege36_clbk CNuclearBombNuclearDamege36_user(nullptr);
+        static info::CNuclearBombRecvKillMessage38_ptr CNuclearBombRecvKillMessage38_next(nullptr);
+        static info::CNuclearBombRecvKillMessage38_clbk CNuclearBombRecvKillMessage38_user(nullptr);
+        static info::CNuclearBombSendMsg_AddEffect40_ptr CNuclearBombSendMsg_AddEffect40_next(nullptr);
+        static info::CNuclearBombSendMsg_AddEffect40_clbk CNuclearBombSendMsg_AddEffect40_user(nullptr);
+        static info::CNuclearBombSendMsg_Attack42_ptr CNuclearBombSendMsg_Attack42_next(nullptr);
+        static info::CNuclearBombSendMsg_Attack42_clbk CNuclearBombSendMsg_Attack42_user(nullptr);
+        static info::CNuclearBombSendMsg_DropMissile44_ptr CNuclearBombSendMsg_DropMissile44_next(nullptr);
+        static info::CNuclearBombSendMsg_DropMissile44_clbk CNuclearBombSendMsg_DropMissile44_user(nullptr);
+        static info::CNuclearBombSendMsg_InformAttack46_ptr CNuclearBombSendMsg_InformAttack46_next(nullptr);
+        static info::CNuclearBombSendMsg_InformAttack46_clbk CNuclearBombSendMsg_InformAttack46_user(nullptr);
+        static info::CNuclearBombSendMsg_InformDropPos48_ptr CNuclearBombSendMsg_InformDropPos48_next(nullptr);
+        static info::CNuclearBombSendMsg_InformDropPos48_clbk CNuclearBombSendMsg_InformDropPos48_user(nullptr);
+        static info::CNuclearBombSendMsg_MasterDie50_ptr CNuclearBombSendMsg_MasterDie50_next(nullptr);
+        static info::CNuclearBombSendMsg_MasterDie50_clbk CNuclearBombSendMsg_MasterDie50_user(nullptr);
+        static info::CNuclearBombSendMsg_NuclearFind52_ptr CNuclearBombSendMsg_NuclearFind52_next(nullptr);
+        static info::CNuclearBombSendMsg_NuclearFind52_clbk CNuclearBombSendMsg_NuclearFind52_user(nullptr);
+        static info::CNuclearBombSendMsg_Result54_ptr CNuclearBombSendMsg_Result54_next(nullptr);
+        static info::CNuclearBombSendMsg_Result54_clbk CNuclearBombSendMsg_Result54_user(nullptr);
+        static info::CNuclearBombSetBombStatus56_ptr CNuclearBombSetBombStatus56_next(nullptr);
+        static info::CNuclearBombSetBombStatus56_clbk CNuclearBombSetBombStatus56_user(nullptr);
+        static info::CNuclearBombSetControlSerial58_ptr CNuclearBombSetControlSerial58_next(nullptr);
+        static info::CNuclearBombSetControlSerial58_clbk CNuclearBombSetControlSerial58_user(nullptr);
+        static info::CNuclearBombSetNuclearIndex60_ptr CNuclearBombSetNuclearIndex60_next(nullptr);
+        static info::CNuclearBombSetNuclearIndex60_clbk CNuclearBombSetNuclearIndex60_user(nullptr);
+        static info::CNuclearBombWarningToAll62_ptr CNuclearBombWarningToAll62_next(nullptr);
+        static info::CNuclearBombWarningToAll62_clbk CNuclearBombWarningToAll62_user(nullptr);
+        static info::CNuclearBombdtor_CNuclearBomb67_ptr CNuclearBombdtor_CNuclearBomb67_next(nullptr);
+        static info::CNuclearBombdtor_CNuclearBomb67_clbk CNuclearBombdtor_CNuclearBomb67_user(nullptr);
         
-        void CNuclearBombAttack2_wrapper(struct CNuclearBomb* _this, int StartNum, int Obj_num)
+        static void CNuclearBombAttack2_wrapper(struct CNuclearBomb* _this, int StartNum, int Obj_num)
         {
            CNuclearBombAttack2_user(_this, StartNum, Obj_num, CNuclearBombAttack2_next);
         };
-        void CNuclearBombctor_CNuclearBomb4_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombctor_CNuclearBomb4_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombctor_CNuclearBomb4_user(_this, CNuclearBombctor_CNuclearBomb4_next);
         };
-        bool CNuclearBombCreate6_wrapper(struct CNuclearBomb* _this, struct _nuclear_create_setdata* pData)
+        static bool CNuclearBombCreate6_wrapper(struct CNuclearBomb* _this, struct _nuclear_create_setdata* pData)
         {
            return CNuclearBombCreate6_user(_this, pData, CNuclearBombCreate6_next);
         };
-        bool CNuclearBombDestroy8_wrapper(struct CNuclearBomb* _this)
+        static bool CNuclearBombDestroy8_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombDestroy8_user(_this, CNuclearBombDestroy8_next);
         };
-        char CNuclearBombGetBombStatus10_wrapper(struct CNuclearBomb* _this)
+        static char CNuclearBombGetBombStatus10_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetBombStatus10_user(_this, CNuclearBombGetBombStatus10_next);
         };
-        uint16_t CNuclearBombGetControlSerial12_wrapper(struct CNuclearBomb* _this)
+        static uint16_t CNuclearBombGetControlSerial12_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetControlSerial12_user(_this, CNuclearBombGetControlSerial12_next);
         };
-        int CNuclearBombGetDamagedObjNum14_wrapper(struct CNuclearBomb* _this)
+        static int CNuclearBombGetDamagedObjNum14_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetDamagedObjNum14_user(_this, CNuclearBombGetDamagedObjNum14_next);
         };
-        int CNuclearBombGetGenAttackProb16_wrapper(struct CNuclearBomb* _this, struct CCharacter* pDst, int nPart)
+        static int CNuclearBombGetGenAttackProb16_wrapper(struct CNuclearBomb* _this, struct CCharacter* pDst, int nPart)
         {
            return CNuclearBombGetGenAttackProb16_user(_this, pDst, nPart, CNuclearBombGetGenAttackProb16_next);
         };
-        uint16_t CNuclearBombGetItemIndex18_wrapper(struct CNuclearBomb* _this)
+        static uint16_t CNuclearBombGetItemIndex18_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetItemIndex18_user(_this, CNuclearBombGetItemIndex18_next);
         };
-        char CNuclearBombGetMasterClass20_wrapper(struct CNuclearBomb* _this)
+        static char CNuclearBombGetMasterClass20_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetMasterClass20_user(_this, CNuclearBombGetMasterClass20_next);
         };
-        char CNuclearBombGetMasterRace22_wrapper(struct CNuclearBomb* _this)
+        static char CNuclearBombGetMasterRace22_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetMasterRace22_user(_this, CNuclearBombGetMasterRace22_next);
         };
-        float* CNuclearBombGetMissilePos24_wrapper(struct CNuclearBomb* _this)
+        static float* CNuclearBombGetMissilePos24_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetMissilePos24_user(_this, CNuclearBombGetMissilePos24_next);
         };
-        unsigned int CNuclearBombGetNewSerial26_wrapper()
+        static unsigned int CNuclearBombGetNewSerial26_wrapper()
         {
            return CNuclearBombGetNewSerial26_user(CNuclearBombGetNewSerial26_next);
         };
-        void CNuclearBombGetShowEffectList28_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombGetShowEffectList28_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombGetShowEffectList28_user(_this, CNuclearBombGetShowEffectList28_next);
         };
-        bool CNuclearBombGetUse30_wrapper(struct CNuclearBomb* _this)
+        static bool CNuclearBombGetUse30_wrapper(struct CNuclearBomb* _this)
         {
            return CNuclearBombGetUse30_user(_this, CNuclearBombGetUse30_next);
         };
-        bool CNuclearBombInit32_wrapper(struct CNuclearBomb* _this, struct _object_id* pID)
+        static bool CNuclearBombInit32_wrapper(struct CNuclearBomb* _this, struct _object_id* pID)
         {
            return CNuclearBombInit32_user(_this, pID, CNuclearBombInit32_next);
         };
-        void CNuclearBombLoop34_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombLoop34_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombLoop34_user(_this, CNuclearBombLoop34_next);
         };
-        void CNuclearBombNuclearDamege36_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombNuclearDamege36_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombNuclearDamege36_user(_this, CNuclearBombNuclearDamege36_next);
         };
-        void CNuclearBombRecvKillMessage38_wrapper(struct CNuclearBomb* _this, struct CCharacter* pDier)
+        static void CNuclearBombRecvKillMessage38_wrapper(struct CNuclearBomb* _this, struct CCharacter* pDier)
         {
            CNuclearBombRecvKillMessage38_user(_this, pDier, CNuclearBombRecvKillMessage38_next);
         };
-        void CNuclearBombSendMsg_AddEffect40_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSendMsg_AddEffect40_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSendMsg_AddEffect40_user(_this, CNuclearBombSendMsg_AddEffect40_next);
         };
-        void CNuclearBombSendMsg_Attack42_wrapper(struct CNuclearBomb* _this, int StartNum, int Obj_Num)
+        static void CNuclearBombSendMsg_Attack42_wrapper(struct CNuclearBomb* _this, int StartNum, int Obj_Num)
         {
            CNuclearBombSendMsg_Attack42_user(_this, StartNum, Obj_Num, CNuclearBombSendMsg_Attack42_next);
         };
-        void CNuclearBombSendMsg_DropMissile44_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSendMsg_DropMissile44_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSendMsg_DropMissile44_user(_this, CNuclearBombSendMsg_DropMissile44_next);
         };
-        void CNuclearBombSendMsg_InformAttack46_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSendMsg_InformAttack46_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSendMsg_InformAttack46_user(_this, CNuclearBombSendMsg_InformAttack46_next);
         };
-        void CNuclearBombSendMsg_InformDropPos48_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSendMsg_InformDropPos48_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSendMsg_InformDropPos48_user(_this, CNuclearBombSendMsg_InformDropPos48_next);
         };
-        void CNuclearBombSendMsg_MasterDie50_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSendMsg_MasterDie50_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSendMsg_MasterDie50_user(_this, CNuclearBombSendMsg_MasterDie50_next);
         };
-        void CNuclearBombSendMsg_NuclearFind52_wrapper(struct CNuclearBomb* _this, int n, char race)
+        static void CNuclearBombSendMsg_NuclearFind52_wrapper(struct CNuclearBomb* _this, int n, char race)
         {
            CNuclearBombSendMsg_NuclearFind52_user(_this, n, race, CNuclearBombSendMsg_NuclearFind52_next);
         };
-        void CNuclearBombSendMsg_Result54_wrapper(struct CNuclearBomb* _this, int n, char byCode)
+        static void CNuclearBombSendMsg_Result54_wrapper(struct CNuclearBomb* _this, int n, char byCode)
         {
            CNuclearBombSendMsg_Result54_user(_this, n, byCode, CNuclearBombSendMsg_Result54_next);
         };
-        void CNuclearBombSetBombStatus56_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombSetBombStatus56_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombSetBombStatus56_user(_this, CNuclearBombSetBombStatus56_next);
         };
-        void CNuclearBombSetControlSerial58_wrapper(struct CNuclearBomb* _this, uint16_t wControlSerial)
+        static void CNuclearBombSetControlSerial58_wrapper(struct CNuclearBomb* _this, uint16_t wControlSerial)
         {
            CNuclearBombSetControlSerial58_user(_this, wControlSerial, CNuclearBombSetControlSerial58_next);
         };
-        void CNuclearBombSetNuclearIndex60_wrapper(struct CNuclearBomb* _this, uint16_t wItemIndex)
+        static void CNuclearBombSetNuclearIndex60_wrapper(struct CNuclearBomb* _this, uint16_t wItemIndex)
         {
            CNuclearBombSetNuclearIndex60_user(_this, wItemIndex, CNuclearBombSetNuclearIndex60_next);
         };
-        void CNuclearBombWarningToAll62_wrapper(struct CNuclearBomb* _this, char byRaceCode)
+        static void CNuclearBombWarningToAll62_wrapper(struct CNuclearBomb* _this, char byRaceCode)
         {
            CNuclearBombWarningToAll62_user(_this, byRaceCode, CNuclearBombWarningToAll62_next);
         };
-        void CNuclearBombdtor_CNuclearBomb67_wrapper(struct CNuclearBomb* _this)
+        static void CNuclearBombdtor_CNuclearBomb67_wrapper(struct CNuclearBomb* _this)
         {
            CNuclearBombdtor_CNuclearBomb67_user(_this, CNuclearBombdtor_CNuclearBomb67_next);
         };
         
-        hook_record CNuclearBomb_functions[] = {
+        static hook_record CNuclearBomb_functions[] = {
         {   (LPVOID)0x14013c4f0L,
             (LPVOID *)&CNuclearBombAttack2_user,
             (LPVOID *)&CNuclearBombAttack2_next,
@@ -366,5 +366,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

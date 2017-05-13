@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std___Iterator_base_Clean_up_iter_debug2_ptr std___Iterator_base_Clean_up_iter_debug2_next(nullptr);
-            info::std___Iterator_base_Clean_up_iter_debug2_clbk std___Iterator_base_Clean_up_iter_debug2_user(nullptr);
-            info::std___Iterator_basector__Iterator_base4_ptr std___Iterator_basector__Iterator_base4_next(nullptr);
-            info::std___Iterator_basector__Iterator_base4_clbk std___Iterator_basector__Iterator_base4_user(nullptr);
-            info::std___Iterator_basector__Iterator_base6_ptr std___Iterator_basector__Iterator_base6_next(nullptr);
-            info::std___Iterator_basector__Iterator_base6_clbk std___Iterator_basector__Iterator_base6_user(nullptr);
-            info::std___Iterator_basedtor__Iterator_base10_ptr std___Iterator_basedtor__Iterator_base10_next(nullptr);
-            info::std___Iterator_basedtor__Iterator_base10_clbk std___Iterator_basedtor__Iterator_base10_user(nullptr);
+            static info::std___Iterator_base_Clean_up_iter_debug2_ptr std___Iterator_base_Clean_up_iter_debug2_next(nullptr);
+            static info::std___Iterator_base_Clean_up_iter_debug2_clbk std___Iterator_base_Clean_up_iter_debug2_user(nullptr);
+            static info::std___Iterator_basector__Iterator_base4_ptr std___Iterator_basector__Iterator_base4_next(nullptr);
+            static info::std___Iterator_basector__Iterator_base4_clbk std___Iterator_basector__Iterator_base4_user(nullptr);
+            static info::std___Iterator_basector__Iterator_base6_ptr std___Iterator_basector__Iterator_base6_next(nullptr);
+            static info::std___Iterator_basector__Iterator_base6_clbk std___Iterator_basector__Iterator_base6_user(nullptr);
+            static info::std___Iterator_basedtor__Iterator_base10_ptr std___Iterator_basedtor__Iterator_base10_next(nullptr);
+            static info::std___Iterator_basedtor__Iterator_base10_clbk std___Iterator_basedtor__Iterator_base10_user(nullptr);
             
-            void std___Iterator_base_Clean_up_iter_debug2_wrapper(struct std::_Iterator_base* _this)
+            static void std___Iterator_base_Clean_up_iter_debug2_wrapper(struct std::_Iterator_base* _this)
             {
                std___Iterator_base_Clean_up_iter_debug2_user(_this, std___Iterator_base_Clean_up_iter_debug2_next);
             };
-            void std___Iterator_basector__Iterator_base4_wrapper(struct std::_Iterator_base* _this, struct std::_Iterator_base* _Right)
+            static void std___Iterator_basector__Iterator_base4_wrapper(struct std::_Iterator_base* _this, struct std::_Iterator_base* _Right)
             {
                std___Iterator_basector__Iterator_base4_user(_this, _Right, std___Iterator_basector__Iterator_base4_next);
             };
-            void std___Iterator_basector__Iterator_base6_wrapper(struct std::_Iterator_base* _this)
+            static void std___Iterator_basector__Iterator_base6_wrapper(struct std::_Iterator_base* _this)
             {
                std___Iterator_basector__Iterator_base6_user(_this, std___Iterator_basector__Iterator_base6_next);
             };
-            void std___Iterator_basedtor__Iterator_base10_wrapper(struct std::_Iterator_base* _this)
+            static void std___Iterator_basedtor__Iterator_base10_wrapper(struct std::_Iterator_base* _this)
             {
                std___Iterator_basedtor__Iterator_base10_user(_this, std___Iterator_basedtor__Iterator_base10_next);
             };
             
-            hook_record _Iterator_base_functions[] = {
+            static hook_record _Iterator_base_functions[] = {
             {   (LPVOID)0x1401234a0L,
                 (LPVOID *)&std___Iterator_base_Clean_up_iter_debug2_user,
                 (LPVOID *)&std___Iterator_base_Clean_up_iter_debug2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

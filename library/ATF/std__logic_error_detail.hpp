@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__logic_errorctor_logic_error5_ptr std__logic_errorctor_logic_error5_next(nullptr);
-            info::std__logic_errorctor_logic_error5_clbk std__logic_errorctor_logic_error5_user(nullptr);
-            info::std__logic_errorctor_logic_error7_ptr std__logic_errorctor_logic_error7_next(nullptr);
-            info::std__logic_errorctor_logic_error7_clbk std__logic_errorctor_logic_error7_user(nullptr);
-            info::std__logic_errorwhat9_ptr std__logic_errorwhat9_next(nullptr);
-            info::std__logic_errorwhat9_clbk std__logic_errorwhat9_user(nullptr);
-            info::std__logic_errordtor_logic_error11_ptr std__logic_errordtor_logic_error11_next(nullptr);
-            info::std__logic_errordtor_logic_error11_clbk std__logic_errordtor_logic_error11_user(nullptr);
+            static info::std__logic_errorctor_logic_error5_ptr std__logic_errorctor_logic_error5_next(nullptr);
+            static info::std__logic_errorctor_logic_error5_clbk std__logic_errorctor_logic_error5_user(nullptr);
+            static info::std__logic_errorctor_logic_error7_ptr std__logic_errorctor_logic_error7_next(nullptr);
+            static info::std__logic_errorctor_logic_error7_clbk std__logic_errorctor_logic_error7_user(nullptr);
+            static info::std__logic_errorwhat9_ptr std__logic_errorwhat9_next(nullptr);
+            static info::std__logic_errorwhat9_clbk std__logic_errorwhat9_user(nullptr);
+            static info::std__logic_errordtor_logic_error11_ptr std__logic_errordtor_logic_error11_next(nullptr);
+            static info::std__logic_errordtor_logic_error11_clbk std__logic_errordtor_logic_error11_user(nullptr);
             
-            void std__logic_errorctor_logic_error5_wrapper(struct std::logic_error* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
+            static void std__logic_errorctor_logic_error5_wrapper(struct std::logic_error* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
             {
                std__logic_errorctor_logic_error5_user(_this, _Message, std__logic_errorctor_logic_error5_next);
             };
-            void std__logic_errorctor_logic_error7_wrapper(struct std::logic_error* _this, struct std::logic_error* __that)
+            static void std__logic_errorctor_logic_error7_wrapper(struct std::logic_error* _this, struct std::logic_error* __that)
             {
                std__logic_errorctor_logic_error7_user(_this, __that, std__logic_errorctor_logic_error7_next);
             };
-            char* std__logic_errorwhat9_wrapper(struct std::logic_error* _this)
+            static char* std__logic_errorwhat9_wrapper(struct std::logic_error* _this)
             {
                return std__logic_errorwhat9_user(_this, std__logic_errorwhat9_next);
             };
-            void std__logic_errordtor_logic_error11_wrapper(struct std::logic_error* _this)
+            static void std__logic_errordtor_logic_error11_wrapper(struct std::logic_error* _this)
             {
                std__logic_errordtor_logic_error11_user(_this, std__logic_errordtor_logic_error11_next);
             };
             
-            hook_record logic_error_functions[] = {
+            static hook_record logic_error_functions[] = {
             {   (LPVOID)0x14007e7f0L,
                 (LPVOID *)&std__logic_errorctor_logic_error5_user,
                 (LPVOID *)&std__logic_errorctor_logic_error5_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRtcctor_CRtc2_ptr CRtcctor_CRtc2_next(nullptr);
-        info::CRtcctor_CRtc2_clbk CRtcctor_CRtc2_user(nullptr);
-        info::CRtcGetIntance4_ptr CRtcGetIntance4_next(nullptr);
-        info::CRtcGetIntance4_clbk CRtcGetIntance4_user(nullptr);
-        info::CRtcRTC_Fn6_ptr CRtcRTC_Fn6_next(nullptr);
-        info::CRtcRTC_Fn6_clbk CRtcRTC_Fn6_user(nullptr);
-        info::CRtcReg_Fn8_ptr CRtcReg_Fn8_next(nullptr);
-        info::CRtcReg_Fn8_clbk CRtcReg_Fn8_user(nullptr);
-        info::CRtcdtor_CRtc10_ptr CRtcdtor_CRtc10_next(nullptr);
-        info::CRtcdtor_CRtc10_clbk CRtcdtor_CRtc10_user(nullptr);
+        static info::CRtcctor_CRtc2_ptr CRtcctor_CRtc2_next(nullptr);
+        static info::CRtcctor_CRtc2_clbk CRtcctor_CRtc2_user(nullptr);
+        static info::CRtcGetIntance4_ptr CRtcGetIntance4_next(nullptr);
+        static info::CRtcGetIntance4_clbk CRtcGetIntance4_user(nullptr);
+        static info::CRtcRTC_Fn6_ptr CRtcRTC_Fn6_next(nullptr);
+        static info::CRtcRTC_Fn6_clbk CRtcRTC_Fn6_user(nullptr);
+        static info::CRtcReg_Fn8_ptr CRtcReg_Fn8_next(nullptr);
+        static info::CRtcReg_Fn8_clbk CRtcReg_Fn8_user(nullptr);
+        static info::CRtcdtor_CRtc10_ptr CRtcdtor_CRtc10_next(nullptr);
+        static info::CRtcdtor_CRtc10_clbk CRtcdtor_CRtc10_user(nullptr);
         
-        void CRtcctor_CRtc2_wrapper(struct CRtc* _this)
+        static void CRtcctor_CRtc2_wrapper(struct CRtc* _this)
         {
            CRtcctor_CRtc2_user(_this, CRtcctor_CRtc2_next);
         };
-        struct CRtc* CRtcGetIntance4_wrapper()
+        static struct CRtc* CRtcGetIntance4_wrapper()
         {
            return CRtcGetIntance4_user(CRtcGetIntance4_next);
         };
-        int CRtcRTC_Fn6_wrapper(int errType, wchar_t* file, int line, wchar_t* module, wchar_t* format)
+        static int CRtcRTC_Fn6_wrapper(int errType, wchar_t* file, int line, wchar_t* module, wchar_t* format)
         {
            return CRtcRTC_Fn6_user(errType, file, line, module, format, CRtcRTC_Fn6_next);
         };
-        void CRtcReg_Fn8_wrapper(struct CRtc* _this)
+        static void CRtcReg_Fn8_wrapper(struct CRtc* _this)
         {
            CRtcReg_Fn8_user(_this, CRtcReg_Fn8_next);
         };
-        void CRtcdtor_CRtc10_wrapper(struct CRtc* _this)
+        static void CRtcdtor_CRtc10_wrapper(struct CRtc* _this)
         {
            CRtcdtor_CRtc10_user(_this, CRtcdtor_CRtc10_next);
         };
         
-        hook_record CRtc_functions[] = {
+        static hook_record CRtc_functions[] = {
         {   (LPVOID)0x14043eda0L,
             (LPVOID *)&CRtcctor_CRtc2_user,
             (LPVOID *)&CRtcctor_CRtc2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

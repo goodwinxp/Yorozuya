@@ -8,1935 +8,1935 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetworkEXAMP_DownloadRequest2_ptr CNetworkEXAMP_DownloadRequest2_next(nullptr);
-        info::CNetworkEXAMP_DownloadRequest2_clbk CNetworkEXAMP_DownloadRequest2_user(nullptr);
-        info::CNetworkEXATradeAdjustPriceRequest4_ptr CNetworkEXATradeAdjustPriceRequest4_next(nullptr);
-        info::CNetworkEXATradeAdjustPriceRequest4_clbk CNetworkEXATradeAdjustPriceRequest4_user(nullptr);
-        info::CNetworkEXATradeBuyItemRequest6_ptr CNetworkEXATradeBuyItemRequest6_next(nullptr);
-        info::CNetworkEXATradeBuyItemRequest6_clbk CNetworkEXATradeBuyItemRequest6_user(nullptr);
-        info::CNetworkEXATradeClearItemRequest8_ptr CNetworkEXATradeClearItemRequest8_next(nullptr);
-        info::CNetworkEXATradeClearItemRequest8_clbk CNetworkEXATradeClearItemRequest8_user(nullptr);
-        info::CNetworkEXATradeReRegistRequest10_ptr CNetworkEXATradeReRegistRequest10_next(nullptr);
-        info::CNetworkEXATradeReRegistRequest10_clbk CNetworkEXATradeReRegistRequest10_user(nullptr);
-        info::CNetworkEXATradeRegItemRequest12_ptr CNetworkEXATradeRegItemRequest12_next(nullptr);
-        info::CNetworkEXATradeRegItemRequest12_clbk CNetworkEXATradeRegItemRequest12_user(nullptr);
-        info::CNetworkEXATradeRegedListRequest14_ptr CNetworkEXATradeRegedListRequest14_next(nullptr);
-        info::CNetworkEXATradeRegedListRequest14_clbk CNetworkEXATradeRegedListRequest14_user(nullptr);
-        info::CNetworkEXATradeTaxRateRequest16_ptr CNetworkEXATradeTaxRateRequest16_next(nullptr);
-        info::CNetworkEXATradeTaxRateRequest16_clbk CNetworkEXATradeTaxRateRequest16_user(nullptr);
-        info::CNetworkEXAcceptClientCheck18_ptr CNetworkEXAcceptClientCheck18_next(nullptr);
-        info::CNetworkEXAcceptClientCheck18_clbk CNetworkEXAcceptClientCheck18_user(nullptr);
-        info::CNetworkEXAccountLineAnalysis20_ptr CNetworkEXAccountLineAnalysis20_next(nullptr);
-        info::CNetworkEXAccountLineAnalysis20_clbk CNetworkEXAccountLineAnalysis20_user(nullptr);
-        info::CNetworkEXAddBagRequest22_ptr CNetworkEXAddBagRequest22_next(nullptr);
-        info::CNetworkEXAddBagRequest22_clbk CNetworkEXAddBagRequest22_user(nullptr);
-        info::CNetworkEXAddCharRequest24_ptr CNetworkEXAddCharRequest24_next(nullptr);
-        info::CNetworkEXAddCharRequest24_clbk CNetworkEXAddCharRequest24_user(nullptr);
-        info::CNetworkEXAliveCharRequest26_ptr CNetworkEXAliveCharRequest26_next(nullptr);
-        info::CNetworkEXAliveCharRequest26_clbk CNetworkEXAliveCharRequest26_user(nullptr);
-        info::CNetworkEXAlterItemSlotRequest28_ptr CNetworkEXAlterItemSlotRequest28_next(nullptr);
-        info::CNetworkEXAlterItemSlotRequest28_clbk CNetworkEXAlterItemSlotRequest28_user(nullptr);
-        info::CNetworkEXAlterLinkBoardSlotRequest30_ptr CNetworkEXAlterLinkBoardSlotRequest30_next(nullptr);
-        info::CNetworkEXAlterLinkBoardSlotRequest30_clbk CNetworkEXAlterLinkBoardSlotRequest30_user(nullptr);
-        info::CNetworkEXAlterPartyLootShareRequest32_ptr CNetworkEXAlterPartyLootShareRequest32_next(nullptr);
-        info::CNetworkEXAlterPartyLootShareRequest32_clbk CNetworkEXAlterPartyLootShareRequest32_user(nullptr);
-        info::CNetworkEXAlterWindowInfoRequest34_ptr CNetworkEXAlterWindowInfoRequest34_next(nullptr);
-        info::CNetworkEXAlterWindowInfoRequest34_clbk CNetworkEXAlterWindowInfoRequest34_user(nullptr);
-        info::CNetworkEXAnimusCommandRequest36_ptr CNetworkEXAnimusCommandRequest36_next(nullptr);
-        info::CNetworkEXAnimusCommandRequest36_clbk CNetworkEXAnimusCommandRequest36_user(nullptr);
-        info::CNetworkEXAnimusInvenChangeRequest38_ptr CNetworkEXAnimusInvenChangeRequest38_next(nullptr);
-        info::CNetworkEXAnimusInvenChangeRequest38_clbk CNetworkEXAnimusInvenChangeRequest38_user(nullptr);
-        info::CNetworkEXAnimusRecallRequest40_ptr CNetworkEXAnimusRecallRequest40_next(nullptr);
-        info::CNetworkEXAnimusRecallRequest40_clbk CNetworkEXAnimusRecallRequest40_user(nullptr);
-        info::CNetworkEXAnimusReturnRequest42_ptr CNetworkEXAnimusReturnRequest42_next(nullptr);
-        info::CNetworkEXAnimusReturnRequest42_clbk CNetworkEXAnimusReturnRequest42_user(nullptr);
-        info::CNetworkEXAnimusTargetRequest44_ptr CNetworkEXAnimusTargetRequest44_next(nullptr);
-        info::CNetworkEXAnimusTargetRequest44_clbk CNetworkEXAnimusTargetRequest44_user(nullptr);
-        info::CNetworkEXAnsyncConnectComplete46_ptr CNetworkEXAnsyncConnectComplete46_next(nullptr);
-        info::CNetworkEXAnsyncConnectComplete46_clbk CNetworkEXAnsyncConnectComplete46_user(nullptr);
-        info::CNetworkEXApex_R48_ptr CNetworkEXApex_R48_next(nullptr);
-        info::CNetworkEXApex_R48_clbk CNetworkEXApex_R48_user(nullptr);
-        info::CNetworkEXApex_T50_ptr CNetworkEXApex_T50_next(nullptr);
-        info::CNetworkEXApex_T50_clbk CNetworkEXApex_T50_user(nullptr);
-        info::CNetworkEXAttackForceRequest52_ptr CNetworkEXAttackForceRequest52_next(nullptr);
-        info::CNetworkEXAttackForceRequest52_clbk CNetworkEXAttackForceRequest52_user(nullptr);
-        info::CNetworkEXAttackPersonalRequest54_ptr CNetworkEXAttackPersonalRequest54_next(nullptr);
-        info::CNetworkEXAttackPersonalRequest54_clbk CNetworkEXAttackPersonalRequest54_user(nullptr);
-        info::CNetworkEXAttackSiegeRequest56_ptr CNetworkEXAttackSiegeRequest56_next(nullptr);
-        info::CNetworkEXAttackSiegeRequest56_clbk CNetworkEXAttackSiegeRequest56_user(nullptr);
-        info::CNetworkEXAttackSkillRequest58_ptr CNetworkEXAttackSkillRequest58_next(nullptr);
-        info::CNetworkEXAttackSkillRequest58_clbk CNetworkEXAttackSkillRequest58_user(nullptr);
-        info::CNetworkEXAttackTestRequest60_ptr CNetworkEXAttackTestRequest60_next(nullptr);
-        info::CNetworkEXAttackTestRequest60_clbk CNetworkEXAttackTestRequest60_user(nullptr);
-        info::CNetworkEXAttackUnitRequest62_ptr CNetworkEXAttackUnitRequest62_next(nullptr);
-        info::CNetworkEXAttackUnitRequest62_clbk CNetworkEXAttackUnitRequest62_user(nullptr);
-        info::CNetworkEXAwayPartyInvitation64_ptr CNetworkEXAwayPartyInvitation64_next(nullptr);
-        info::CNetworkEXAwayPartyInvitation64_clbk CNetworkEXAwayPartyInvitation64_user(nullptr);
-        info::CNetworkEXAwayPartyInvitationAnswer66_ptr CNetworkEXAwayPartyInvitationAnswer66_next(nullptr);
-        info::CNetworkEXAwayPartyInvitationAnswer66_clbk CNetworkEXAwayPartyInvitationAnswer66_user(nullptr);
-        info::CNetworkEXBackTowerRequest68_ptr CNetworkEXBackTowerRequest68_next(nullptr);
-        info::CNetworkEXBackTowerRequest68_clbk CNetworkEXBackTowerRequest68_user(nullptr);
-        info::CNetworkEXBackTrapRequest70_ptr CNetworkEXBackTrapRequest70_next(nullptr);
-        info::CNetworkEXBackTrapRequest70_clbk CNetworkEXBackTrapRequest70_user(nullptr);
-        info::CNetworkEXBaseDownloadRequest72_ptr CNetworkEXBaseDownloadRequest72_next(nullptr);
-        info::CNetworkEXBaseDownloadRequest72_clbk CNetworkEXBaseDownloadRequest72_user(nullptr);
-        info::CNetworkEXBillingChangeType74_ptr CNetworkEXBillingChangeType74_next(nullptr);
-        info::CNetworkEXBillingChangeType74_clbk CNetworkEXBillingChangeType74_user(nullptr);
-        info::CNetworkEXBillingCloseRequest76_ptr CNetworkEXBillingCloseRequest76_next(nullptr);
-        info::CNetworkEXBillingCloseRequest76_clbk CNetworkEXBillingCloseRequest76_user(nullptr);
-        info::CNetworkEXBillingDestroyModule78_ptr CNetworkEXBillingDestroyModule78_next(nullptr);
-        info::CNetworkEXBillingDestroyModule78_clbk CNetworkEXBillingDestroyModule78_user(nullptr);
-        info::CNetworkEXBillingExpireIPOverflow80_ptr CNetworkEXBillingExpireIPOverflow80_next(nullptr);
-        info::CNetworkEXBillingExpireIPOverflow80_clbk CNetworkEXBillingExpireIPOverflow80_user(nullptr);
-        info::CNetworkEXBillingExpirePCBang82_ptr CNetworkEXBillingExpirePCBang82_next(nullptr);
-        info::CNetworkEXBillingExpirePCBang82_clbk CNetworkEXBillingExpirePCBang82_user(nullptr);
-        info::CNetworkEXBillingExpirePersonal84_ptr CNetworkEXBillingExpirePersonal84_next(nullptr);
-        info::CNetworkEXBillingExpirePersonal84_clbk CNetworkEXBillingExpirePersonal84_user(nullptr);
-        info::CNetworkEXBillingInfoRequest86_ptr CNetworkEXBillingInfoRequest86_next(nullptr);
-        info::CNetworkEXBillingInfoRequest86_clbk CNetworkEXBillingInfoRequest86_user(nullptr);
-        info::CNetworkEXBillingLineAnalysis88_ptr CNetworkEXBillingLineAnalysis88_next(nullptr);
-        info::CNetworkEXBillingLineAnalysis88_clbk CNetworkEXBillingLineAnalysis88_user(nullptr);
-        info::CNetworkEXBillingRemaintimePCBang90_ptr CNetworkEXBillingRemaintimePCBang90_next(nullptr);
-        info::CNetworkEXBillingRemaintimePCBang90_clbk CNetworkEXBillingRemaintimePCBang90_user(nullptr);
-        info::CNetworkEXBillingRemaintimePersonal92_ptr CNetworkEXBillingRemaintimePersonal92_next(nullptr);
-        info::CNetworkEXBillingRemaintimePersonal92_clbk CNetworkEXBillingRemaintimePersonal92_user(nullptr);
-        info::CNetworkEXBossSMSMsgRequest94_ptr CNetworkEXBossSMSMsgRequest94_next(nullptr);
-        info::CNetworkEXBossSMSMsgRequest94_clbk CNetworkEXBossSMSMsgRequest94_user(nullptr);
-        info::CNetworkEXBriefPassReport96_ptr CNetworkEXBriefPassReport96_next(nullptr);
-        info::CNetworkEXBriefPassReport96_clbk CNetworkEXBriefPassReport96_user(nullptr);
-        info::CNetworkEXBuddyAddAnswer98_ptr CNetworkEXBuddyAddAnswer98_next(nullptr);
-        info::CNetworkEXBuddyAddAnswer98_clbk CNetworkEXBuddyAddAnswer98_user(nullptr);
-        info::CNetworkEXBuddyAddRequest100_ptr CNetworkEXBuddyAddRequest100_next(nullptr);
-        info::CNetworkEXBuddyAddRequest100_clbk CNetworkEXBuddyAddRequest100_user(nullptr);
-        info::CNetworkEXBuddyDelRequest102_ptr CNetworkEXBuddyDelRequest102_next(nullptr);
-        info::CNetworkEXBuddyDelRequest102_clbk CNetworkEXBuddyDelRequest102_user(nullptr);
-        info::CNetworkEXBuddyDownloadRequest104_ptr CNetworkEXBuddyDownloadRequest104_next(nullptr);
-        info::CNetworkEXBuddyDownloadRequest104_clbk CNetworkEXBuddyDownloadRequest104_user(nullptr);
-        info::CNetworkEXBuyStoreRequest106_ptr CNetworkEXBuyStoreRequest106_next(nullptr);
-        info::CNetworkEXBuyStoreRequest106_clbk CNetworkEXBuyStoreRequest106_user(nullptr);
-        info::CNetworkEXctor_CNetworkEX108_ptr CNetworkEXctor_CNetworkEX108_next(nullptr);
-        info::CNetworkEXctor_CNetworkEX108_clbk CNetworkEXctor_CNetworkEX108_user(nullptr);
-        info::CNetworkEXCanSelectClassRequest110_ptr CNetworkEXCanSelectClassRequest110_next(nullptr);
-        info::CNetworkEXCanSelectClassRequest110_clbk CNetworkEXCanSelectClassRequest110_user(nullptr);
-        info::CNetworkEXCancelRaceBossSMSMsg112_ptr CNetworkEXCancelRaceBossSMSMsg112_next(nullptr);
-        info::CNetworkEXCancelRaceBossSMSMsg112_clbk CNetworkEXCancelRaceBossSMSMsg112_user(nullptr);
-        info::CNetworkEXCashDBInfoRecvResult114_ptr CNetworkEXCashDBInfoRecvResult114_next(nullptr);
-        info::CNetworkEXCashDBInfoRecvResult114_clbk CNetworkEXCashDBInfoRecvResult114_user(nullptr);
-        info::CNetworkEXCastVoteRequest116_ptr CNetworkEXCastVoteRequest116_next(nullptr);
-        info::CNetworkEXCastVoteRequest116_clbk CNetworkEXCastVoteRequest116_user(nullptr);
-        info::CNetworkEXCharacterRenameCash118_ptr CNetworkEXCharacterRenameCash118_next(nullptr);
-        info::CNetworkEXCharacterRenameCash118_clbk CNetworkEXCharacterRenameCash118_user(nullptr);
-        info::CNetworkEXChatAllRecvYesOrNo120_ptr CNetworkEXChatAllRecvYesOrNo120_next(nullptr);
-        info::CNetworkEXChatAllRecvYesOrNo120_clbk CNetworkEXChatAllRecvYesOrNo120_user(nullptr);
-        info::CNetworkEXChatAllRequest122_ptr CNetworkEXChatAllRequest122_next(nullptr);
-        info::CNetworkEXChatAllRequest122_clbk CNetworkEXChatAllRequest122_user(nullptr);
-        info::CNetworkEXChatCheatRequest124_ptr CNetworkEXChatCheatRequest124_next(nullptr);
-        info::CNetworkEXChatCheatRequest124_clbk CNetworkEXChatCheatRequest124_user(nullptr);
-        info::CNetworkEXChatCircleRequest126_ptr CNetworkEXChatCircleRequest126_next(nullptr);
-        info::CNetworkEXChatCircleRequest126_clbk CNetworkEXChatCircleRequest126_user(nullptr);
-        info::CNetworkEXChatFarRequest128_ptr CNetworkEXChatFarRequest128_next(nullptr);
-        info::CNetworkEXChatFarRequest128_clbk CNetworkEXChatFarRequest128_user(nullptr);
-        info::CNetworkEXChatGmNoticeRequest130_ptr CNetworkEXChatGmNoticeRequest130_next(nullptr);
-        info::CNetworkEXChatGmNoticeRequest130_clbk CNetworkEXChatGmNoticeRequest130_user(nullptr);
-        info::CNetworkEXChatGreetingMsg_GM132_ptr CNetworkEXChatGreetingMsg_GM132_next(nullptr);
-        info::CNetworkEXChatGreetingMsg_GM132_clbk CNetworkEXChatGreetingMsg_GM132_user(nullptr);
-        info::CNetworkEXChatGreetingMsg_GUILD134_ptr CNetworkEXChatGreetingMsg_GUILD134_next(nullptr);
-        info::CNetworkEXChatGreetingMsg_GUILD134_clbk CNetworkEXChatGreetingMsg_GUILD134_user(nullptr);
-        info::CNetworkEXChatGreetingMsg_RACE136_ptr CNetworkEXChatGreetingMsg_RACE136_next(nullptr);
-        info::CNetworkEXChatGreetingMsg_RACE136_clbk CNetworkEXChatGreetingMsg_RACE136_user(nullptr);
-        info::CNetworkEXChatGuildEstSenRequest138_ptr CNetworkEXChatGuildEstSenRequest138_next(nullptr);
-        info::CNetworkEXChatGuildEstSenRequest138_clbk CNetworkEXChatGuildEstSenRequest138_user(nullptr);
-        info::CNetworkEXChatGuildRequest140_ptr CNetworkEXChatGuildRequest140_next(nullptr);
-        info::CNetworkEXChatGuildRequest140_clbk CNetworkEXChatGuildRequest140_user(nullptr);
-        info::CNetworkEXChatLockCommand142_ptr CNetworkEXChatLockCommand142_next(nullptr);
-        info::CNetworkEXChatLockCommand142_clbk CNetworkEXChatLockCommand142_user(nullptr);
-        info::CNetworkEXChatManageRequest144_ptr CNetworkEXChatManageRequest144_next(nullptr);
-        info::CNetworkEXChatManageRequest144_clbk CNetworkEXChatManageRequest144_user(nullptr);
-        info::CNetworkEXChatMapRecvYesOrNo146_ptr CNetworkEXChatMapRecvYesOrNo146_next(nullptr);
-        info::CNetworkEXChatMapRecvYesOrNo146_clbk CNetworkEXChatMapRecvYesOrNo146_user(nullptr);
-        info::CNetworkEXChatMapRequest148_ptr CNetworkEXChatMapRequest148_next(nullptr);
-        info::CNetworkEXChatMapRequest148_clbk CNetworkEXChatMapRequest148_user(nullptr);
-        info::CNetworkEXChatMgrWhisperRequest150_ptr CNetworkEXChatMgrWhisperRequest150_next(nullptr);
-        info::CNetworkEXChatMgrWhisperRequest150_clbk CNetworkEXChatMgrWhisperRequest150_user(nullptr);
-        info::CNetworkEXChatMultiFarRequest152_ptr CNetworkEXChatMultiFarRequest152_next(nullptr);
-        info::CNetworkEXChatMultiFarRequest152_clbk CNetworkEXChatMultiFarRequest152_user(nullptr);
-        info::CNetworkEXChatOperatorRequest154_ptr CNetworkEXChatOperatorRequest154_next(nullptr);
-        info::CNetworkEXChatOperatorRequest154_clbk CNetworkEXChatOperatorRequest154_user(nullptr);
-        info::CNetworkEXChatPartyRequest156_ptr CNetworkEXChatPartyRequest156_next(nullptr);
-        info::CNetworkEXChatPartyRequest156_clbk CNetworkEXChatPartyRequest156_user(nullptr);
-        info::CNetworkEXChatRaceBossCryRequest158_ptr CNetworkEXChatRaceBossCryRequest158_next(nullptr);
-        info::CNetworkEXChatRaceBossCryRequest158_clbk CNetworkEXChatRaceBossCryRequest158_user(nullptr);
-        info::CNetworkEXChatRaceBossRequest160_ptr CNetworkEXChatRaceBossRequest160_next(nullptr);
-        info::CNetworkEXChatRaceBossRequest160_clbk CNetworkEXChatRaceBossRequest160_user(nullptr);
-        info::CNetworkEXChatRaceRequest162_ptr CNetworkEXChatRaceRequest162_next(nullptr);
-        info::CNetworkEXChatRaceRequest162_clbk CNetworkEXChatRaceRequest162_user(nullptr);
-        info::CNetworkEXChatRePresentationRequest164_ptr CNetworkEXChatRePresentationRequest164_next(nullptr);
-        info::CNetworkEXChatRePresentationRequest164_clbk CNetworkEXChatRePresentationRequest164_user(nullptr);
-        info::CNetworkEXChatTradeRequestMsg166_ptr CNetworkEXChatTradeRequestMsg166_next(nullptr);
-        info::CNetworkEXChatTradeRequestMsg166_clbk CNetworkEXChatTradeRequestMsg166_user(nullptr);
-        info::CNetworkEXCheckIsBlockIPResult168_ptr CNetworkEXCheckIsBlockIPResult168_next(nullptr);
-        info::CNetworkEXCheckIsBlockIPResult168_clbk CNetworkEXCheckIsBlockIPResult168_user(nullptr);
-        info::CNetworkEXChinaBillingChangePrimium170_ptr CNetworkEXChinaBillingChangePrimium170_next(nullptr);
-        info::CNetworkEXChinaBillingChangePrimium170_clbk CNetworkEXChinaBillingChangePrimium170_user(nullptr);
-        info::CNetworkEXClassSkillRecallTeleportRequest172_ptr CNetworkEXClassSkillRecallTeleportRequest172_next(nullptr);
-        info::CNetworkEXClassSkillRecallTeleportRequest172_clbk CNetworkEXClassSkillRecallTeleportRequest172_user(nullptr);
-        info::CNetworkEXClassSkillRequest174_ptr CNetworkEXClassSkillRequest174_next(nullptr);
-        info::CNetworkEXClassSkillRequest174_clbk CNetworkEXClassSkillRequest174_user(nullptr);
-        info::CNetworkEXClientLineAnalysis176_ptr CNetworkEXClientLineAnalysis176_next(nullptr);
-        info::CNetworkEXClientLineAnalysis176_clbk CNetworkEXClientLineAnalysis176_user(nullptr);
-        info::CNetworkEXClose178_ptr CNetworkEXClose178_next(nullptr);
-        info::CNetworkEXClose178_clbk CNetworkEXClose178_user(nullptr);
-        info::CNetworkEXCloseClientCheck180_ptr CNetworkEXCloseClientCheck180_next(nullptr);
-        info::CNetworkEXCloseClientCheck180_clbk CNetworkEXCloseClientCheck180_user(nullptr);
-        info::CNetworkEXCombineExItemAcceptRequest182_ptr CNetworkEXCombineExItemAcceptRequest182_next(nullptr);
-        info::CNetworkEXCombineExItemAcceptRequest182_clbk CNetworkEXCombineExItemAcceptRequest182_user(nullptr);
-        info::CNetworkEXCombineExItemRequest184_ptr CNetworkEXCombineExItemRequest184_next(nullptr);
-        info::CNetworkEXCombineExItemRequest184_clbk CNetworkEXCombineExItemRequest184_user(nullptr);
-        info::CNetworkEXCombineItemRequest186_ptr CNetworkEXCombineItemRequest186_next(nullptr);
-        info::CNetworkEXCombineItemRequest186_clbk CNetworkEXCombineItemRequest186_user(nullptr);
-        info::CNetworkEXConEventTotalSalesCheck188_ptr CNetworkEXConEventTotalSalesCheck188_next(nullptr);
-        info::CNetworkEXConEventTotalSalesCheck188_clbk CNetworkEXConEventTotalSalesCheck188_user(nullptr);
-        info::CNetworkEXConnectionStatusRequest190_ptr CNetworkEXConnectionStatusRequest190_next(nullptr);
-        info::CNetworkEXConnectionStatusRequest190_clbk CNetworkEXConnectionStatusRequest190_user(nullptr);
-        info::CNetworkEXCumDownloadRequest192_ptr CNetworkEXCumDownloadRequest192_next(nullptr);
-        info::CNetworkEXCumDownloadRequest192_clbk CNetworkEXCumDownloadRequest192_user(nullptr);
-        info::CNetworkEXCuttingCompleteRequest194_ptr CNetworkEXCuttingCompleteRequest194_next(nullptr);
-        info::CNetworkEXCuttingCompleteRequest194_clbk CNetworkEXCuttingCompleteRequest194_user(nullptr);
-        info::CNetworkEXDTradeAddRequest196_ptr CNetworkEXDTradeAddRequest196_next(nullptr);
-        info::CNetworkEXDTradeAddRequest196_clbk CNetworkEXDTradeAddRequest196_user(nullptr);
-        info::CNetworkEXDTradeAnswerRequest198_ptr CNetworkEXDTradeAnswerRequest198_next(nullptr);
-        info::CNetworkEXDTradeAnswerRequest198_clbk CNetworkEXDTradeAnswerRequest198_user(nullptr);
-        info::CNetworkEXDTradeAskRequest200_ptr CNetworkEXDTradeAskRequest200_next(nullptr);
-        info::CNetworkEXDTradeAskRequest200_clbk CNetworkEXDTradeAskRequest200_user(nullptr);
-        info::CNetworkEXDTradeBetRequest202_ptr CNetworkEXDTradeBetRequest202_next(nullptr);
-        info::CNetworkEXDTradeBetRequest202_clbk CNetworkEXDTradeBetRequest202_user(nullptr);
-        info::CNetworkEXDTradeCancleRequest204_ptr CNetworkEXDTradeCancleRequest204_next(nullptr);
-        info::CNetworkEXDTradeCancleRequest204_clbk CNetworkEXDTradeCancleRequest204_user(nullptr);
-        info::CNetworkEXDTradeDelRequest206_ptr CNetworkEXDTradeDelRequest206_next(nullptr);
-        info::CNetworkEXDTradeDelRequest206_clbk CNetworkEXDTradeDelRequest206_user(nullptr);
-        info::CNetworkEXDTradeLockRequest208_ptr CNetworkEXDTradeLockRequest208_next(nullptr);
-        info::CNetworkEXDTradeLockRequest208_clbk CNetworkEXDTradeLockRequest208_user(nullptr);
-        info::CNetworkEXDTradeOKRequest210_ptr CNetworkEXDTradeOKRequest210_next(nullptr);
-        info::CNetworkEXDTradeOKRequest210_clbk CNetworkEXDTradeOKRequest210_user(nullptr);
-        info::CNetworkEXDarkHoleAnswerReenterRequest212_ptr CNetworkEXDarkHoleAnswerReenterRequest212_next(nullptr);
-        info::CNetworkEXDarkHoleAnswerReenterRequest212_clbk CNetworkEXDarkHoleAnswerReenterRequest212_user(nullptr);
-        info::CNetworkEXDarkHoleClearOutRequest214_ptr CNetworkEXDarkHoleClearOutRequest214_next(nullptr);
-        info::CNetworkEXDarkHoleClearOutRequest214_clbk CNetworkEXDarkHoleClearOutRequest214_user(nullptr);
-        info::CNetworkEXDarkHoleEnterRequest216_ptr CNetworkEXDarkHoleEnterRequest216_next(nullptr);
-        info::CNetworkEXDarkHoleEnterRequest216_clbk CNetworkEXDarkHoleEnterRequest216_user(nullptr);
-        info::CNetworkEXDarkHoleGiveupOutRequest218_ptr CNetworkEXDarkHoleGiveupOutRequest218_next(nullptr);
-        info::CNetworkEXDarkHoleGiveupOutRequest218_clbk CNetworkEXDarkHoleGiveupOutRequest218_user(nullptr);
-        info::CNetworkEXDarkHoleOpenRequest220_ptr CNetworkEXDarkHoleOpenRequest220_next(nullptr);
-        info::CNetworkEXDarkHoleOpenRequest220_clbk CNetworkEXDarkHoleOpenRequest220_user(nullptr);
-        info::CNetworkEXDataAnalysis222_ptr CNetworkEXDataAnalysis222_next(nullptr);
-        info::CNetworkEXDataAnalysis222_clbk CNetworkEXDataAnalysis222_user(nullptr);
-        info::CNetworkEXDecideRecallRequest224_ptr CNetworkEXDecideRecallRequest224_next(nullptr);
-        info::CNetworkEXDecideRecallRequest224_clbk CNetworkEXDecideRecallRequest224_user(nullptr);
-        info::CNetworkEXDelCharRequest226_ptr CNetworkEXDelCharRequest226_next(nullptr);
-        info::CNetworkEXDelCharRequest226_clbk CNetworkEXDelCharRequest226_user(nullptr);
-        info::CNetworkEXDisconnectGuildWarCharacterRequest228_ptr CNetworkEXDisconnectGuildWarCharacterRequest228_next(nullptr);
-        info::CNetworkEXDisconnectGuildWarCharacterRequest228_clbk CNetworkEXDisconnectGuildWarCharacterRequest228_user(nullptr);
-        info::CNetworkEXDownGradeItemRequest230_ptr CNetworkEXDownGradeItemRequest230_next(nullptr);
-        info::CNetworkEXDownGradeItemRequest230_clbk CNetworkEXDownGradeItemRequest230_user(nullptr);
-        info::CNetworkEXEmbellishRequest232_ptr CNetworkEXEmbellishRequest232_next(nullptr);
-        info::CNetworkEXEmbellishRequest232_clbk CNetworkEXEmbellishRequest232_user(nullptr);
-        info::CNetworkEXEnterReturnGateRequest234_ptr CNetworkEXEnterReturnGateRequest234_next(nullptr);
-        info::CNetworkEXEnterReturnGateRequest234_clbk CNetworkEXEnterReturnGateRequest234_user(nullptr);
-        info::CNetworkEXEnterWorldRequest236_ptr CNetworkEXEnterWorldRequest236_next(nullptr);
-        info::CNetworkEXEnterWorldRequest236_clbk CNetworkEXEnterWorldRequest236_user(nullptr);
-        info::CNetworkEXEnterWorldResult238_ptr CNetworkEXEnterWorldResult238_next(nullptr);
-        info::CNetworkEXEnterWorldResult238_clbk CNetworkEXEnterWorldResult238_user(nullptr);
-        info::CNetworkEXEquipPartRequest240_ptr CNetworkEXEquipPartRequest240_next(nullptr);
-        info::CNetworkEXEquipPartRequest240_clbk CNetworkEXEquipPartRequest240_user(nullptr);
-        info::CNetworkEXExchangeDalantForGoldRequest242_ptr CNetworkEXExchangeDalantForGoldRequest242_next(nullptr);
-        info::CNetworkEXExchangeDalantForGoldRequest242_clbk CNetworkEXExchangeDalantForGoldRequest242_user(nullptr);
-        info::CNetworkEXExchangeGoldForDalantRequest244_ptr CNetworkEXExchangeGoldForDalantRequest244_next(nullptr);
-        info::CNetworkEXExchangeGoldForDalantRequest244_clbk CNetworkEXExchangeGoldForDalantRequest244_user(nullptr);
-        info::CNetworkEXExchangeGoldForPvPRequest246_ptr CNetworkEXExchangeGoldForPvPRequest246_next(nullptr);
-        info::CNetworkEXExchangeGoldForPvPRequest246_clbk CNetworkEXExchangeGoldForPvPRequest246_user(nullptr);
-        info::CNetworkEXExchangeItemRequest248_ptr CNetworkEXExchangeItemRequest248_next(nullptr);
-        info::CNetworkEXExchangeItemRequest248_clbk CNetworkEXExchangeItemRequest248_user(nullptr);
-        info::CNetworkEXExitWorldRequest250_ptr CNetworkEXExitWorldRequest250_next(nullptr);
-        info::CNetworkEXExitWorldRequest250_clbk CNetworkEXExitWorldRequest250_user(nullptr);
-        info::CNetworkEXExpulsionSocket252_ptr CNetworkEXExpulsionSocket252_next(nullptr);
-        info::CNetworkEXExpulsionSocket252_clbk CNetworkEXExpulsionSocket252_user(nullptr);
-        info::CNetworkEXForceCloseCommand254_ptr CNetworkEXForceCloseCommand254_next(nullptr);
-        info::CNetworkEXForceCloseCommand254_clbk CNetworkEXForceCloseCommand254_user(nullptr);
-        info::CNetworkEXForceDownloadRequest256_ptr CNetworkEXForceDownloadRequest256_next(nullptr);
-        info::CNetworkEXForceDownloadRequest256_clbk CNetworkEXForceDownloadRequest256_user(nullptr);
-        info::CNetworkEXForceInvenChangeRequest258_ptr CNetworkEXForceInvenChangeRequest258_next(nullptr);
-        info::CNetworkEXForceInvenChangeRequest258_clbk CNetworkEXForceInvenChangeRequest258_user(nullptr);
-        info::CNetworkEXForceRecallTeleportRequest260_ptr CNetworkEXForceRecallTeleportRequest260_next(nullptr);
-        info::CNetworkEXForceRecallTeleportRequest260_clbk CNetworkEXForceRecallTeleportRequest260_user(nullptr);
-        info::CNetworkEXForceRequest262_ptr CNetworkEXForceRequest262_next(nullptr);
-        info::CNetworkEXForceRequest262_clbk CNetworkEXForceRequest262_user(nullptr);
-        info::CNetworkEXGotoAvatorRequest264_ptr CNetworkEXGotoAvatorRequest264_next(nullptr);
-        info::CNetworkEXGotoAvatorRequest264_clbk CNetworkEXGotoAvatorRequest264_user(nullptr);
-        info::CNetworkEXGotoBasePortalRequest266_ptr CNetworkEXGotoBasePortalRequest266_next(nullptr);
-        info::CNetworkEXGotoBasePortalRequest266_clbk CNetworkEXGotoBasePortalRequest266_user(nullptr);
-        info::CNetworkEXGuildBattleBlockReport268_ptr CNetworkEXGuildBattleBlockReport268_next(nullptr);
-        info::CNetworkEXGuildBattleBlockReport268_clbk CNetworkEXGuildBattleBlockReport268_user(nullptr);
-        info::CNetworkEXGuildBattleCurrentBattleInfoRequest270_ptr CNetworkEXGuildBattleCurrentBattleInfoRequest270_next(nullptr);
-        info::CNetworkEXGuildBattleCurrentBattleInfoRequest270_clbk CNetworkEXGuildBattleCurrentBattleInfoRequest270_user(nullptr);
-        info::CNetworkEXGuildBattleGetGravityStoneRequest272_ptr CNetworkEXGuildBattleGetGravityStoneRequest272_next(nullptr);
-        info::CNetworkEXGuildBattleGetGravityStoneRequest272_clbk CNetworkEXGuildBattleGetGravityStoneRequest272_user(nullptr);
-        info::CNetworkEXGuildBattleGoalRequest274_ptr CNetworkEXGuildBattleGoalRequest274_next(nullptr);
-        info::CNetworkEXGuildBattleGoalRequest274_clbk CNetworkEXGuildBattleGoalRequest274_user(nullptr);
-        info::CNetworkEXGuildBattleJoinGuildBattleRequest276_ptr CNetworkEXGuildBattleJoinGuildBattleRequest276_next(nullptr);
-        info::CNetworkEXGuildBattleJoinGuildBattleRequest276_clbk CNetworkEXGuildBattleJoinGuildBattleRequest276_user(nullptr);
-        info::CNetworkEXGuildBattlePossibleGuildBattleList278_ptr CNetworkEXGuildBattlePossibleGuildBattleList278_next(nullptr);
-        info::CNetworkEXGuildBattlePossibleGuildBattleList278_clbk CNetworkEXGuildBattlePossibleGuildBattleList278_user(nullptr);
-        info::CNetworkEXGuildBattleRankListRequest280_ptr CNetworkEXGuildBattleRankListRequest280_next(nullptr);
-        info::CNetworkEXGuildBattleRankListRequest280_clbk CNetworkEXGuildBattleRankListRequest280_user(nullptr);
-        info::CNetworkEXGuildBattleReservedScheduleRequest282_ptr CNetworkEXGuildBattleReservedScheduleRequest282_next(nullptr);
-        info::CNetworkEXGuildBattleReservedScheduleRequest282_clbk CNetworkEXGuildBattleReservedScheduleRequest282_user(nullptr);
-        info::CNetworkEXGuildBattleTakeGravityStoneRequest284_ptr CNetworkEXGuildBattleTakeGravityStoneRequest284_next(nullptr);
-        info::CNetworkEXGuildBattleTakeGravityStoneRequest284_clbk CNetworkEXGuildBattleTakeGravityStoneRequest284_user(nullptr);
-        info::CNetworkEXGuildCancelSuggestRequest286_ptr CNetworkEXGuildCancelSuggestRequest286_next(nullptr);
-        info::CNetworkEXGuildCancelSuggestRequest286_clbk CNetworkEXGuildCancelSuggestRequest286_user(nullptr);
-        info::CNetworkEXGuildDownloadRequest288_ptr CNetworkEXGuildDownloadRequest288_next(nullptr);
-        info::CNetworkEXGuildDownloadRequest288_clbk CNetworkEXGuildDownloadRequest288_user(nullptr);
-        info::CNetworkEXGuildEstablishRequest290_ptr CNetworkEXGuildEstablishRequest290_next(nullptr);
-        info::CNetworkEXGuildEstablishRequest290_clbk CNetworkEXGuildEstablishRequest290_user(nullptr);
-        info::CNetworkEXGuildHonorListRequest292_ptr CNetworkEXGuildHonorListRequest292_next(nullptr);
-        info::CNetworkEXGuildHonorListRequest292_clbk CNetworkEXGuildHonorListRequest292_user(nullptr);
-        info::CNetworkEXGuildJoinAcceptRequest294_ptr CNetworkEXGuildJoinAcceptRequest294_next(nullptr);
-        info::CNetworkEXGuildJoinAcceptRequest294_clbk CNetworkEXGuildJoinAcceptRequest294_user(nullptr);
-        info::CNetworkEXGuildJoinApplyCancelRequest296_ptr CNetworkEXGuildJoinApplyCancelRequest296_next(nullptr);
-        info::CNetworkEXGuildJoinApplyCancelRequest296_clbk CNetworkEXGuildJoinApplyCancelRequest296_user(nullptr);
-        info::CNetworkEXGuildJoinApplyRequest298_ptr CNetworkEXGuildJoinApplyRequest298_next(nullptr);
-        info::CNetworkEXGuildJoinApplyRequest298_clbk CNetworkEXGuildJoinApplyRequest298_user(nullptr);
-        info::CNetworkEXGuildListRequest300_ptr CNetworkEXGuildListRequest300_next(nullptr);
-        info::CNetworkEXGuildListRequest300_clbk CNetworkEXGuildListRequest300_user(nullptr);
-        info::CNetworkEXGuildManageRequest302_ptr CNetworkEXGuildManageRequest302_next(nullptr);
-        info::CNetworkEXGuildManageRequest302_clbk CNetworkEXGuildManageRequest302_user(nullptr);
-        info::CNetworkEXGuildNextHonorListRequest304_ptr CNetworkEXGuildNextHonorListRequest304_next(nullptr);
-        info::CNetworkEXGuildNextHonorListRequest304_clbk CNetworkEXGuildNextHonorListRequest304_user(nullptr);
-        info::CNetworkEXGuildOfferSuggestRequest306_ptr CNetworkEXGuildOfferSuggestRequest306_next(nullptr);
-        info::CNetworkEXGuildOfferSuggestRequest306_clbk CNetworkEXGuildOfferSuggestRequest306_user(nullptr);
-        info::CNetworkEXGuildPushMoneyRequest308_ptr CNetworkEXGuildPushMoneyRequest308_next(nullptr);
-        info::CNetworkEXGuildPushMoneyRequest308_clbk CNetworkEXGuildPushMoneyRequest308_user(nullptr);
-        info::CNetworkEXGuildQueryInfoRequest310_ptr CNetworkEXGuildQueryInfoRequest310_next(nullptr);
-        info::CNetworkEXGuildQueryInfoRequest310_clbk CNetworkEXGuildQueryInfoRequest310_user(nullptr);
-        info::CNetworkEXGuildRoomEnterRequest312_ptr CNetworkEXGuildRoomEnterRequest312_next(nullptr);
-        info::CNetworkEXGuildRoomEnterRequest312_clbk CNetworkEXGuildRoomEnterRequest312_user(nullptr);
-        info::CNetworkEXGuildRoomOutRequest314_ptr CNetworkEXGuildRoomOutRequest314_next(nullptr);
-        info::CNetworkEXGuildRoomOutRequest314_clbk CNetworkEXGuildRoomOutRequest314_user(nullptr);
-        info::CNetworkEXGuildRoomRentRequest316_ptr CNetworkEXGuildRoomRentRequest316_next(nullptr);
-        info::CNetworkEXGuildRoomRentRequest316_clbk CNetworkEXGuildRoomRentRequest316_user(nullptr);
-        info::CNetworkEXGuildRoomRestTimeRequest318_ptr CNetworkEXGuildRoomRestTimeRequest318_next(nullptr);
-        info::CNetworkEXGuildRoomRestTimeRequest318_clbk CNetworkEXGuildRoomRestTimeRequest318_user(nullptr);
-        info::CNetworkEXGuildSelfLeaveRequest320_ptr CNetworkEXGuildSelfLeaveRequest320_next(nullptr);
-        info::CNetworkEXGuildSelfLeaveRequest320_clbk CNetworkEXGuildSelfLeaveRequest320_user(nullptr);
-        info::CNetworkEXGuildSetHonorRequest322_ptr CNetworkEXGuildSetHonorRequest322_next(nullptr);
-        info::CNetworkEXGuildSetHonorRequest322_clbk CNetworkEXGuildSetHonorRequest322_user(nullptr);
-        info::CNetworkEXGuildVoteRequest324_ptr CNetworkEXGuildVoteRequest324_next(nullptr);
-        info::CNetworkEXGuildVoteRequest324_clbk CNetworkEXGuildVoteRequest324_user(nullptr);
-        info::CNetworkEXGustureRequest326_ptr CNetworkEXGustureRequest326_next(nullptr);
-        info::CNetworkEXGustureRequest326_clbk CNetworkEXGustureRequest326_user(nullptr);
-        info::CNetworkEXInitClassCostRequest328_ptr CNetworkEXInitClassCostRequest328_next(nullptr);
-        info::CNetworkEXInitClassCostRequest328_clbk CNetworkEXInitClassCostRequest328_user(nullptr);
-        info::CNetworkEXInitClassRequest330_ptr CNetworkEXInitClassRequest330_next(nullptr);
-        info::CNetworkEXInitClassRequest330_clbk CNetworkEXInitClassRequest330_user(nullptr);
-        info::CNetworkEXInvenDownloadRequest332_ptr CNetworkEXInvenDownloadRequest332_next(nullptr);
-        info::CNetworkEXInvenDownloadRequest332_clbk CNetworkEXInvenDownloadRequest332_user(nullptr);
-        info::CNetworkEXItemboxTakeRequest334_ptr CNetworkEXItemboxTakeRequest334_next(nullptr);
-        info::CNetworkEXItemboxTakeRequest334_clbk CNetworkEXItemboxTakeRequest334_user(nullptr);
-        info::CNetworkEXLimitItemNumRequest336_ptr CNetworkEXLimitItemNumRequest336_next(nullptr);
-        info::CNetworkEXLimitItemNumRequest336_clbk CNetworkEXLimitItemNumRequest336_user(nullptr);
-        info::CNetworkEXLinkBoardDownloadRequest338_ptr CNetworkEXLinkBoardDownloadRequest338_next(nullptr);
-        info::CNetworkEXLinkBoardDownloadRequest338_clbk CNetworkEXLinkBoardDownloadRequest338_user(nullptr);
-        info::CNetworkEXLogInControllServer340_ptr CNetworkEXLogInControllServer340_next(nullptr);
-        info::CNetworkEXLogInControllServer340_clbk CNetworkEXLogInControllServer340_user(nullptr);
-        info::CNetworkEXLogInWebAgentServer342_ptr CNetworkEXLogInWebAgentServer342_next(nullptr);
-        info::CNetworkEXLogInWebAgentServer342_clbk CNetworkEXLogInWebAgentServer342_user(nullptr);
-        info::CNetworkEXMacroDownLoadRequest344_ptr CNetworkEXMacroDownLoadRequest344_next(nullptr);
-        info::CNetworkEXMacroDownLoadRequest344_clbk CNetworkEXMacroDownLoadRequest344_user(nullptr);
-        info::CNetworkEXMakeItemRequest346_ptr CNetworkEXMakeItemRequest346_next(nullptr);
-        info::CNetworkEXMakeItemRequest346_clbk CNetworkEXMakeItemRequest346_user(nullptr);
-        info::CNetworkEXMakeTowerRequest348_ptr CNetworkEXMakeTowerRequest348_next(nullptr);
-        info::CNetworkEXMakeTowerRequest348_clbk CNetworkEXMakeTowerRequest348_user(nullptr);
-        info::CNetworkEXMakeTrapRequest350_ptr CNetworkEXMakeTrapRequest350_next(nullptr);
-        info::CNetworkEXMakeTrapRequest350_clbk CNetworkEXMakeTrapRequest350_user(nullptr);
-        info::CNetworkEXManageClientForceExitRequest352_ptr CNetworkEXManageClientForceExitRequest352_next(nullptr);
-        info::CNetworkEXManageClientForceExitRequest352_clbk CNetworkEXManageClientForceExitRequest352_user(nullptr);
-        info::CNetworkEXManageClientLimitRunRequest354_ptr CNetworkEXManageClientLimitRunRequest354_next(nullptr);
-        info::CNetworkEXManageClientLimitRunRequest354_clbk CNetworkEXManageClientLimitRunRequest354_user(nullptr);
-        info::CNetworkEXMineCancleRequest356_ptr CNetworkEXMineCancleRequest356_next(nullptr);
-        info::CNetworkEXMineCancleRequest356_clbk CNetworkEXMineCancleRequest356_user(nullptr);
-        info::CNetworkEXMineStartRequest358_ptr CNetworkEXMineStartRequest358_next(nullptr);
-        info::CNetworkEXMineStartRequest358_clbk CNetworkEXMineStartRequest358_user(nullptr);
-        info::CNetworkEXModeChangeRequest360_ptr CNetworkEXModeChangeRequest360_next(nullptr);
-        info::CNetworkEXModeChangeRequest360_clbk CNetworkEXModeChangeRequest360_user(nullptr);
-        info::CNetworkEXMoveInfoRequeset362_ptr CNetworkEXMoveInfoRequeset362_next(nullptr);
-        info::CNetworkEXMoveInfoRequeset362_clbk CNetworkEXMoveInfoRequeset362_user(nullptr);
-        info::CNetworkEXMoveLobbyRequest364_ptr CNetworkEXMoveLobbyRequest364_next(nullptr);
-        info::CNetworkEXMoveLobbyRequest364_clbk CNetworkEXMoveLobbyRequest364_user(nullptr);
-        info::CNetworkEXMovePortalRequest366_ptr CNetworkEXMovePortalRequest366_next(nullptr);
-        info::CNetworkEXMovePortalRequest366_clbk CNetworkEXMovePortalRequest366_user(nullptr);
-        info::CNetworkEXMoveToOwnStoneMapRequest368_ptr CNetworkEXMoveToOwnStoneMapRequest368_next(nullptr);
-        info::CNetworkEXMoveToOwnStoneMapRequest368_clbk CNetworkEXMoveToOwnStoneMapRequest368_user(nullptr);
-        info::CNetworkEXMoveTypeChangeRequeset370_ptr CNetworkEXMoveTypeChangeRequeset370_next(nullptr);
-        info::CNetworkEXMoveTypeChangeRequeset370_clbk CNetworkEXMoveTypeChangeRequeset370_user(nullptr);
-        info::CNetworkEXNPCDialogRequest372_ptr CNetworkEXNPCDialogRequest372_next(nullptr);
-        info::CNetworkEXNPCDialogRequest372_clbk CNetworkEXNPCDialogRequest372_user(nullptr);
-        info::CNetworkEXNPCLinkCheckItemRequest374_ptr CNetworkEXNPCLinkCheckItemRequest374_next(nullptr);
-        info::CNetworkEXNPCLinkCheckItemRequest374_clbk CNetworkEXNPCLinkCheckItemRequest374_user(nullptr);
-        info::CNetworkEXNPCQuestListRequest376_ptr CNetworkEXNPCQuestListRequest376_next(nullptr);
-        info::CNetworkEXNPCQuestListRequest376_clbk CNetworkEXNPCQuestListRequest376_user(nullptr);
-        info::CNetworkEXNPCQuestRequest378_ptr CNetworkEXNPCQuestRequest378_next(nullptr);
-        info::CNetworkEXNPCQuestRequest378_clbk CNetworkEXNPCQuestRequest378_user(nullptr);
-        info::CNetworkEXNPCWatchingRequest380_ptr CNetworkEXNPCWatchingRequest380_next(nullptr);
-        info::CNetworkEXNPCWatchingRequest380_clbk CNetworkEXNPCWatchingRequest380_user(nullptr);
-        info::CNetworkEXNewPosStartRequest382_ptr CNetworkEXNewPosStartRequest382_next(nullptr);
-        info::CNetworkEXNewPosStartRequest382_clbk CNetworkEXNewPosStartRequest382_user(nullptr);
-        info::CNetworkEXNextPoint384_ptr CNetworkEXNextPoint384_next(nullptr);
-        info::CNetworkEXNextPoint384_clbk CNetworkEXNextPoint384_user(nullptr);
-        info::CNetworkEXNotifyLocalTimeRequest386_ptr CNetworkEXNotifyLocalTimeRequest386_next(nullptr);
-        info::CNetworkEXNotifyLocalTimeRequest386_clbk CNetworkEXNotifyLocalTimeRequest386_user(nullptr);
-        info::CNetworkEXNotifyRaceBossCryMsg388_ptr CNetworkEXNotifyRaceBossCryMsg388_next(nullptr);
-        info::CNetworkEXNotifyRaceBossCryMsg388_clbk CNetworkEXNotifyRaceBossCryMsg388_user(nullptr);
-        info::CNetworkEXObjectServerPosRequest390_ptr CNetworkEXObjectServerPosRequest390_next(nullptr);
-        info::CNetworkEXObjectServerPosRequest390_clbk CNetworkEXObjectServerPosRequest390_user(nullptr);
-        info::CNetworkEXOffPartRequest392_ptr CNetworkEXOffPartRequest392_next(nullptr);
-        info::CNetworkEXOffPartRequest392_clbk CNetworkEXOffPartRequest392_user(nullptr);
-        info::CNetworkEXOpenControlInform394_ptr CNetworkEXOpenControlInform394_next(nullptr);
-        info::CNetworkEXOpenControlInform394_clbk CNetworkEXOpenControlInform394_user(nullptr);
-        info::CNetworkEXOpenWorldFailureResult396_ptr CNetworkEXOpenWorldFailureResult396_next(nullptr);
-        info::CNetworkEXOpenWorldFailureResult396_clbk CNetworkEXOpenWorldFailureResult396_user(nullptr);
-        info::CNetworkEXOpenWorldSuccessResult398_ptr CNetworkEXOpenWorldSuccessResult398_next(nullptr);
-        info::CNetworkEXOpenWorldSuccessResult398_clbk CNetworkEXOpenWorldSuccessResult398_user(nullptr);
-        info::CNetworkEXOreIntoBagRequest400_ptr CNetworkEXOreIntoBagRequest400_next(nullptr);
-        info::CNetworkEXOreIntoBagRequest400_clbk CNetworkEXOreIntoBagRequest400_user(nullptr);
-        info::CNetworkEXOtherShapeRequest402_ptr CNetworkEXOtherShapeRequest402_next(nullptr);
-        info::CNetworkEXOtherShapeRequest402_clbk CNetworkEXOtherShapeRequest402_user(nullptr);
-        info::CNetworkEXPartyDisjointRequest404_ptr CNetworkEXPartyDisjointRequest404_next(nullptr);
-        info::CNetworkEXPartyDisjointRequest404_clbk CNetworkEXPartyDisjointRequest404_user(nullptr);
-        info::CNetworkEXPartyJoinApplicatiohAnswer406_ptr CNetworkEXPartyJoinApplicatiohAnswer406_next(nullptr);
-        info::CNetworkEXPartyJoinApplicatiohAnswer406_clbk CNetworkEXPartyJoinApplicatiohAnswer406_user(nullptr);
-        info::CNetworkEXPartyJoinApplication408_ptr CNetworkEXPartyJoinApplication408_next(nullptr);
-        info::CNetworkEXPartyJoinApplication408_clbk CNetworkEXPartyJoinApplication408_user(nullptr);
-        info::CNetworkEXPartyJoinInvitation410_ptr CNetworkEXPartyJoinInvitation410_next(nullptr);
-        info::CNetworkEXPartyJoinInvitation410_clbk CNetworkEXPartyJoinInvitation410_user(nullptr);
-        info::CNetworkEXPartyJoinInvitationAnswer412_ptr CNetworkEXPartyJoinInvitationAnswer412_next(nullptr);
-        info::CNetworkEXPartyJoinInvitationAnswer412_clbk CNetworkEXPartyJoinInvitationAnswer412_user(nullptr);
-        info::CNetworkEXPartyLeaveCompulsionRequest414_ptr CNetworkEXPartyLeaveCompulsionRequest414_next(nullptr);
-        info::CNetworkEXPartyLeaveCompulsionRequest414_clbk CNetworkEXPartyLeaveCompulsionRequest414_user(nullptr);
-        info::CNetworkEXPartyLeaveSelfRequest416_ptr CNetworkEXPartyLeaveSelfRequest416_next(nullptr);
-        info::CNetworkEXPartyLeaveSelfRequest416_clbk CNetworkEXPartyLeaveSelfRequest416_user(nullptr);
-        info::CNetworkEXPartyLockRequest418_ptr CNetworkEXPartyLockRequest418_next(nullptr);
-        info::CNetworkEXPartyLockRequest418_clbk CNetworkEXPartyLockRequest418_user(nullptr);
-        info::CNetworkEXPartyReqBlockReport420_ptr CNetworkEXPartyReqBlockReport420_next(nullptr);
-        info::CNetworkEXPartyReqBlockReport420_clbk CNetworkEXPartyReqBlockReport420_user(nullptr);
-        info::CNetworkEXPartySuccessionRequest422_ptr CNetworkEXPartySuccessionRequest422_next(nullptr);
-        info::CNetworkEXPartySuccessionRequest422_clbk CNetworkEXPartySuccessionRequest422_user(nullptr);
-        info::CNetworkEXPcBangPrimiumCouponRequest424_ptr CNetworkEXPcBangPrimiumCouponRequest424_next(nullptr);
-        info::CNetworkEXPcBangPrimiumCouponRequest424_clbk CNetworkEXPcBangPrimiumCouponRequest424_user(nullptr);
-        info::CNetworkEXPlayerInfoResult426_ptr CNetworkEXPlayerInfoResult426_next(nullptr);
-        info::CNetworkEXPlayerInfoResult426_clbk CNetworkEXPlayerInfoResult426_user(nullptr);
-        info::CNetworkEXPlayerMacroUpdate428_ptr CNetworkEXPlayerMacroUpdate428_next(nullptr);
-        info::CNetworkEXPlayerMacroUpdate428_clbk CNetworkEXPlayerMacroUpdate428_user(nullptr);
-        info::CNetworkEXPostContentRequest430_ptr CNetworkEXPostContentRequest430_next(nullptr);
-        info::CNetworkEXPostContentRequest430_clbk CNetworkEXPostContentRequest430_user(nullptr);
-        info::CNetworkEXPostDeleteRequest432_ptr CNetworkEXPostDeleteRequest432_next(nullptr);
-        info::CNetworkEXPostDeleteRequest432_clbk CNetworkEXPostDeleteRequest432_user(nullptr);
-        info::CNetworkEXPostItemGoldRequest434_ptr CNetworkEXPostItemGoldRequest434_next(nullptr);
-        info::CNetworkEXPostItemGoldRequest434_clbk CNetworkEXPostItemGoldRequest434_user(nullptr);
-        info::CNetworkEXPostListRequest436_ptr CNetworkEXPostListRequest436_next(nullptr);
-        info::CNetworkEXPostListRequest436_clbk CNetworkEXPostListRequest436_user(nullptr);
-        info::CNetworkEXPostReturnConfirmRequest438_ptr CNetworkEXPostReturnConfirmRequest438_next(nullptr);
-        info::CNetworkEXPostReturnConfirmRequest438_clbk CNetworkEXPostReturnConfirmRequest438_user(nullptr);
-        info::CNetworkEXPostSendRequest440_ptr CNetworkEXPostSendRequest440_next(nullptr);
-        info::CNetworkEXPostSendRequest440_clbk CNetworkEXPostSendRequest440_user(nullptr);
-        info::CNetworkEXPotionSocketDivisionRequest442_ptr CNetworkEXPotionSocketDivisionRequest442_next(nullptr);
-        info::CNetworkEXPotionSocketDivisionRequest442_clbk CNetworkEXPotionSocketDivisionRequest442_user(nullptr);
-        info::CNetworkEXPotionSocketSeparationRequest444_ptr CNetworkEXPotionSocketSeparationRequest444_next(nullptr);
-        info::CNetworkEXPotionSocketSeparationRequest444_clbk CNetworkEXPotionSocketSeparationRequest444_user(nullptr);
-        info::CNetworkEXProposeVoteRequest446_ptr CNetworkEXProposeVoteRequest446_next(nullptr);
-        info::CNetworkEXProposeVoteRequest446_clbk CNetworkEXProposeVoteRequest446_user(nullptr);
-        info::CNetworkEXPvpCashRecorverWithTalik448_ptr CNetworkEXPvpCashRecorverWithTalik448_next(nullptr);
-        info::CNetworkEXPvpCashRecorverWithTalik448_clbk CNetworkEXPvpCashRecorverWithTalik448_user(nullptr);
-        info::CNetworkEXPvpRankListRequest450_ptr CNetworkEXPvpRankListRequest450_next(nullptr);
-        info::CNetworkEXPvpRankListRequest450_clbk CNetworkEXPvpRankListRequest450_user(nullptr);
-        info::CNetworkEXQuestDownloadRequest452_ptr CNetworkEXQuestDownloadRequest452_next(nullptr);
-        info::CNetworkEXQuestDownloadRequest452_clbk CNetworkEXQuestDownloadRequest452_user(nullptr);
-        info::CNetworkEXQuestGiveupRequest454_ptr CNetworkEXQuestGiveupRequest454_next(nullptr);
-        info::CNetworkEXQuestGiveupRequest454_clbk CNetworkEXQuestGiveupRequest454_user(nullptr);
-        info::CNetworkEXQuestSelectRewardReport456_ptr CNetworkEXQuestSelectRewardReport456_next(nullptr);
-        info::CNetworkEXQuestSelectRewardReport456_clbk CNetworkEXQuestSelectRewardReport456_user(nullptr);
-        info::CNetworkEXRadarCharListRequest458_ptr CNetworkEXRadarCharListRequest458_next(nullptr);
-        info::CNetworkEXRadarCharListRequest458_clbk CNetworkEXRadarCharListRequest458_user(nullptr);
-        info::CNetworkEXRealMovPosRequest460_ptr CNetworkEXRealMovPosRequest460_next(nullptr);
-        info::CNetworkEXRealMovPosRequest460_clbk CNetworkEXRealMovPosRequest460_user(nullptr);
-        info::CNetworkEXRegedCharRequest462_ptr CNetworkEXRegedCharRequest462_next(nullptr);
-        info::CNetworkEXRegedCharRequest462_clbk CNetworkEXRegedCharRequest462_user(nullptr);
-        info::CNetworkEXRegistBindRequest464_ptr CNetworkEXRegistBindRequest464_next(nullptr);
-        info::CNetworkEXRegistBindRequest464_clbk CNetworkEXRegistBindRequest464_user(nullptr);
-        info::CNetworkEXReleaseGroupTargetObjectRequest466_ptr CNetworkEXReleaseGroupTargetObjectRequest466_next(nullptr);
-        info::CNetworkEXReleaseGroupTargetObjectRequest466_clbk CNetworkEXReleaseGroupTargetObjectRequest466_user(nullptr);
-        info::CNetworkEXReleaseSiegeModeRequest468_ptr CNetworkEXReleaseSiegeModeRequest468_next(nullptr);
-        info::CNetworkEXReleaseSiegeModeRequest468_clbk CNetworkEXReleaseSiegeModeRequest468_user(nullptr);
-        info::CNetworkEXReleaseTargetObjectRequest470_ptr CNetworkEXReleaseTargetObjectRequest470_next(nullptr);
-        info::CNetworkEXReleaseTargetObjectRequest470_clbk CNetworkEXReleaseTargetObjectRequest470_user(nullptr);
-        info::CNetworkEXRequestChangeTaxRate472_ptr CNetworkEXRequestChangeTaxRate472_next(nullptr);
-        info::CNetworkEXRequestChangeTaxRate472_clbk CNetworkEXRequestChangeTaxRate472_user(nullptr);
-        info::CNetworkEXRequestPatriarchPunishment474_ptr CNetworkEXRequestPatriarchPunishment474_next(nullptr);
-        info::CNetworkEXRequestPatriarchPunishment474_clbk CNetworkEXRequestPatriarchPunishment474_user(nullptr);
-        info::CNetworkEXRequestTLLogoutTime476_ptr CNetworkEXRequestTLLogoutTime476_next(nullptr);
-        info::CNetworkEXRequestTLLogoutTime476_clbk CNetworkEXRequestTLLogoutTime476_user(nullptr);
-        info::CNetworkEXRequestTaxRate478_ptr CNetworkEXRequestTaxRate478_next(nullptr);
-        info::CNetworkEXRequestTaxRate478_clbk CNetworkEXRequestTaxRate478_user(nullptr);
-        info::CNetworkEXRequestUILockFindPW480_ptr CNetworkEXRequestUILockFindPW480_next(nullptr);
-        info::CNetworkEXRequestUILockFindPW480_clbk CNetworkEXRequestUILockFindPW480_user(nullptr);
-        info::CNetworkEXRequestUILockInit482_ptr CNetworkEXRequestUILockInit482_next(nullptr);
-        info::CNetworkEXRequestUILockInit482_clbk CNetworkEXRequestUILockInit482_user(nullptr);
-        info::CNetworkEXRequestUILockUpdateInfo484_ptr CNetworkEXRequestUILockUpdateInfo484_next(nullptr);
-        info::CNetworkEXRequestUILockUpdateInfo484_clbk CNetworkEXRequestUILockUpdateInfo484_user(nullptr);
-        info::CNetworkEXRequestUILockUserCertify486_ptr CNetworkEXRequestUILockUserCertify486_next(nullptr);
-        info::CNetworkEXRequestUILockUserCertify486_clbk CNetworkEXRequestUILockUserCertify486_user(nullptr);
-        info::CNetworkEXResCuttingRequest488_ptr CNetworkEXResCuttingRequest488_next(nullptr);
-        info::CNetworkEXResCuttingRequest488_clbk CNetworkEXResCuttingRequest488_user(nullptr);
-        info::CNetworkEXResDivisionRequest490_ptr CNetworkEXResDivisionRequest490_next(nullptr);
-        info::CNetworkEXResDivisionRequest490_clbk CNetworkEXResDivisionRequest490_user(nullptr);
-        info::CNetworkEXResSeparationRequest492_ptr CNetworkEXResSeparationRequest492_next(nullptr);
-        info::CNetworkEXResSeparationRequest492_clbk CNetworkEXResSeparationRequest492_user(nullptr);
-        info::CNetworkEXRevival494_ptr CNetworkEXRevival494_next(nullptr);
-        info::CNetworkEXRevival494_clbk CNetworkEXRevival494_user(nullptr);
-        info::CNetworkEXSelCharRequest496_ptr CNetworkEXSelCharRequest496_next(nullptr);
-        info::CNetworkEXSelCharRequest496_clbk CNetworkEXSelCharRequest496_user(nullptr);
-        info::CNetworkEXSelectClassRequest498_ptr CNetworkEXSelectClassRequest498_next(nullptr);
-        info::CNetworkEXSelectClassRequest498_clbk CNetworkEXSelectClassRequest498_user(nullptr);
-        info::CNetworkEXSelectPcBangRewardRequest500_ptr CNetworkEXSelectPcBangRewardRequest500_next(nullptr);
-        info::CNetworkEXSelectPcBangRewardRequest500_clbk CNetworkEXSelectPcBangRewardRequest500_user(nullptr);
-        info::CNetworkEXSelectWaitedQuestReport502_ptr CNetworkEXSelectWaitedQuestReport502_next(nullptr);
-        info::CNetworkEXSelectWaitedQuestReport502_clbk CNetworkEXSelectWaitedQuestReport502_user(nullptr);
-        info::CNetworkEXSellStoreRequest504_ptr CNetworkEXSellStoreRequest504_next(nullptr);
-        info::CNetworkEXSellStoreRequest504_clbk CNetworkEXSellStoreRequest504_user(nullptr);
-        info::CNetworkEXSendRaceBossMsgFromWebRequest506_ptr CNetworkEXSendRaceBossMsgFromWebRequest506_next(nullptr);
-        info::CNetworkEXSendRaceBossMsgFromWebRequest506_clbk CNetworkEXSendRaceBossMsgFromWebRequest506_user(nullptr);
-        info::CNetworkEXSetGroupMapPointRequest508_ptr CNetworkEXSetGroupMapPointRequest508_next(nullptr);
-        info::CNetworkEXSetGroupMapPointRequest508_clbk CNetworkEXSetGroupMapPointRequest508_user(nullptr);
-        info::CNetworkEXSetGroupTargetObjectRequest510_ptr CNetworkEXSetGroupTargetObjectRequest510_next(nullptr);
-        info::CNetworkEXSetGroupTargetObjectRequest510_clbk CNetworkEXSetGroupTargetObjectRequest510_user(nullptr);
-        info::CNetworkEXSetItemCheckRequest512_ptr CNetworkEXSetItemCheckRequest512_next(nullptr);
-        info::CNetworkEXSetItemCheckRequest512_clbk CNetworkEXSetItemCheckRequest512_user(nullptr);
-        info::CNetworkEXSetPassablePacket514_ptr CNetworkEXSetPassablePacket514_next(nullptr);
-        info::CNetworkEXSetPassablePacket514_clbk CNetworkEXSetPassablePacket514_user(nullptr);
-        info::CNetworkEXSetRaceBossCryMsgRequest516_ptr CNetworkEXSetRaceBossCryMsgRequest516_next(nullptr);
-        info::CNetworkEXSetRaceBossCryMsgRequest516_clbk CNetworkEXSetRaceBossCryMsgRequest516_user(nullptr);
-        info::CNetworkEXSetTargetObjectRequest518_ptr CNetworkEXSetTargetObjectRequest518_next(nullptr);
-        info::CNetworkEXSetTargetObjectRequest518_clbk CNetworkEXSetTargetObjectRequest518_user(nullptr);
-        info::CNetworkEXSkillRecallTeleportRequest520_ptr CNetworkEXSkillRecallTeleportRequest520_next(nullptr);
-        info::CNetworkEXSkillRecallTeleportRequest520_clbk CNetworkEXSkillRecallTeleportRequest520_user(nullptr);
-        info::CNetworkEXSkillRequest522_ptr CNetworkEXSkillRequest522_next(nullptr);
-        info::CNetworkEXSkillRequest522_clbk CNetworkEXSkillRequest522_user(nullptr);
-        info::CNetworkEXSpecialDownloadRequest524_ptr CNetworkEXSpecialDownloadRequest524_next(nullptr);
-        info::CNetworkEXSpecialDownloadRequest524_clbk CNetworkEXSpecialDownloadRequest524_user(nullptr);
-        info::CNetworkEXStop526_ptr CNetworkEXStop526_next(nullptr);
-        info::CNetworkEXStop526_clbk CNetworkEXStop526_user(nullptr);
-        info::CNetworkEXStoreListRequest528_ptr CNetworkEXStoreListRequest528_next(nullptr);
-        info::CNetworkEXStoreListRequest528_clbk CNetworkEXStoreListRequest528_user(nullptr);
-        info::CNetworkEXTaiwanBillingUserCertify530_ptr CNetworkEXTaiwanBillingUserCertify530_next(nullptr);
-        info::CNetworkEXTaiwanBillingUserCertify530_clbk CNetworkEXTaiwanBillingUserCertify530_user(nullptr);
-        info::CNetworkEXTalikCrystalExchangeRequest532_ptr CNetworkEXTalikCrystalExchangeRequest532_next(nullptr);
-        info::CNetworkEXTalikCrystalExchangeRequest532_clbk CNetworkEXTalikCrystalExchangeRequest532_user(nullptr);
-        info::CNetworkEXTalikRecorverList534_ptr CNetworkEXTalikRecorverList534_next(nullptr);
-        info::CNetworkEXTalikRecorverList534_clbk CNetworkEXTalikRecorverList534_user(nullptr);
-        info::CNetworkEXThrowSkillRequest536_ptr CNetworkEXThrowSkillRequest536_next(nullptr);
-        info::CNetworkEXThrowSkillRequest536_clbk CNetworkEXThrowSkillRequest536_user(nullptr);
-        info::CNetworkEXThrowStorageRequest538_ptr CNetworkEXThrowStorageRequest538_next(nullptr);
-        info::CNetworkEXThrowStorageRequest538_clbk CNetworkEXThrowStorageRequest538_user(nullptr);
-        info::CNetworkEXThrowUnitRequest540_ptr CNetworkEXThrowUnitRequest540_next(nullptr);
-        info::CNetworkEXThrowUnitRequest540_clbk CNetworkEXThrowUnitRequest540_user(nullptr);
-        info::CNetworkEXTotalGuildRankRequest542_ptr CNetworkEXTotalGuildRankRequest542_next(nullptr);
-        info::CNetworkEXTotalGuildRankRequest542_clbk CNetworkEXTotalGuildRankRequest542_user(nullptr);
-        info::CNetworkEXTradeBlockReport544_ptr CNetworkEXTradeBlockReport544_next(nullptr);
-        info::CNetworkEXTradeBlockReport544_clbk CNetworkEXTradeBlockReport544_user(nullptr);
-        info::CNetworkEXTransAccountInform546_ptr CNetworkEXTransAccountInform546_next(nullptr);
-        info::CNetworkEXTransAccountInform546_clbk CNetworkEXTransAccountInform546_user(nullptr);
-        info::CNetworkEXTransShipRenewTicketRequest548_ptr CNetworkEXTransShipRenewTicketRequest548_next(nullptr);
-        info::CNetworkEXTransShipRenewTicketRequest548_clbk CNetworkEXTransShipRenewTicketRequest548_user(nullptr);
-        info::CNetworkEXTransformSiegeModeRequest550_ptr CNetworkEXTransformSiegeModeRequest550_next(nullptr);
-        info::CNetworkEXTransformSiegeModeRequest550_clbk CNetworkEXTransformSiegeModeRequest550_user(nullptr);
-        info::CNetworkEXTrunkAlterItemSlotRequest552_ptr CNetworkEXTrunkAlterItemSlotRequest552_next(nullptr);
-        info::CNetworkEXTrunkAlterItemSlotRequest552_clbk CNetworkEXTrunkAlterItemSlotRequest552_user(nullptr);
-        info::CNetworkEXTrunkChangePasswdRequest554_ptr CNetworkEXTrunkChangePasswdRequest554_next(nullptr);
-        info::CNetworkEXTrunkChangePasswdRequest554_clbk CNetworkEXTrunkChangePasswdRequest554_user(nullptr);
-        info::CNetworkEXTrunkCreateCostIsFreeRequest556_ptr CNetworkEXTrunkCreateCostIsFreeRequest556_next(nullptr);
-        info::CNetworkEXTrunkCreateCostIsFreeRequest556_clbk CNetworkEXTrunkCreateCostIsFreeRequest556_user(nullptr);
-        info::CNetworkEXTrunkDownloadRequest558_ptr CNetworkEXTrunkDownloadRequest558_next(nullptr);
-        info::CNetworkEXTrunkDownloadRequest558_clbk CNetworkEXTrunkDownloadRequest558_user(nullptr);
-        info::CNetworkEXTrunkEstRequest560_ptr CNetworkEXTrunkEstRequest560_next(nullptr);
-        info::CNetworkEXTrunkEstRequest560_clbk CNetworkEXTrunkEstRequest560_user(nullptr);
-        info::CNetworkEXTrunkExtendRequest562_ptr CNetworkEXTrunkExtendRequest562_next(nullptr);
-        info::CNetworkEXTrunkExtendRequest562_clbk CNetworkEXTrunkExtendRequest562_user(nullptr);
-        info::CNetworkEXTrunkHintAnswerRequest564_ptr CNetworkEXTrunkHintAnswerRequest564_next(nullptr);
-        info::CNetworkEXTrunkHintAnswerRequest564_clbk CNetworkEXTrunkHintAnswerRequest564_user(nullptr);
-        info::CNetworkEXTrunkIoMergeRequest566_ptr CNetworkEXTrunkIoMergeRequest566_next(nullptr);
-        info::CNetworkEXTrunkIoMergeRequest566_clbk CNetworkEXTrunkIoMergeRequest566_user(nullptr);
-        info::CNetworkEXTrunkIoMoneyRequest568_ptr CNetworkEXTrunkIoMoneyRequest568_next(nullptr);
-        info::CNetworkEXTrunkIoMoneyRequest568_clbk CNetworkEXTrunkIoMoneyRequest568_user(nullptr);
-        info::CNetworkEXTrunkIoMoveRequest570_ptr CNetworkEXTrunkIoMoveRequest570_next(nullptr);
-        info::CNetworkEXTrunkIoMoveRequest570_clbk CNetworkEXTrunkIoMoveRequest570_user(nullptr);
-        info::CNetworkEXTrunkIoSwapRequest572_ptr CNetworkEXTrunkIoSwapRequest572_next(nullptr);
-        info::CNetworkEXTrunkIoSwapRequest572_clbk CNetworkEXTrunkIoSwapRequest572_user(nullptr);
-        info::CNetworkEXTrunkPotionDivisionRequest574_ptr CNetworkEXTrunkPotionDivisionRequest574_next(nullptr);
-        info::CNetworkEXTrunkPotionDivisionRequest574_clbk CNetworkEXTrunkPotionDivisionRequest574_user(nullptr);
-        info::CNetworkEXTrunkPwHintIndexRequest576_ptr CNetworkEXTrunkPwHintIndexRequest576_next(nullptr);
-        info::CNetworkEXTrunkPwHintIndexRequest576_clbk CNetworkEXTrunkPwHintIndexRequest576_user(nullptr);
-        info::CNetworkEXTrunkResDivisionRequest578_ptr CNetworkEXTrunkResDivisionRequest578_next(nullptr);
-        info::CNetworkEXTrunkResDivisionRequest578_clbk CNetworkEXTrunkResDivisionRequest578_user(nullptr);
-        info::CNetworkEXTutorialProcessReport580_ptr CNetworkEXTutorialProcessReport580_next(nullptr);
-        info::CNetworkEXTutorialProcessReport580_clbk CNetworkEXTutorialProcessReport580_user(nullptr);
-        info::CNetworkEXUILockInitResult582_ptr CNetworkEXUILockInitResult582_next(nullptr);
-        info::CNetworkEXUILockInitResult582_clbk CNetworkEXUILockInitResult582_user(nullptr);
-        info::CNetworkEXUILockRefreshResult584_ptr CNetworkEXUILockRefreshResult584_next(nullptr);
-        info::CNetworkEXUILockRefreshResult584_clbk CNetworkEXUILockRefreshResult584_user(nullptr);
-        info::CNetworkEXUILockUpdateResult586_ptr CNetworkEXUILockUpdateResult586_next(nullptr);
-        info::CNetworkEXUILockUpdateResult586_clbk CNetworkEXUILockUpdateResult586_user(nullptr);
-        info::CNetworkEXUnitBulletFillRequest588_ptr CNetworkEXUnitBulletFillRequest588_next(nullptr);
-        info::CNetworkEXUnitBulletFillRequest588_clbk CNetworkEXUnitBulletFillRequest588_user(nullptr);
-        info::CNetworkEXUnitBulletReplaceRequest590_ptr CNetworkEXUnitBulletReplaceRequest590_next(nullptr);
-        info::CNetworkEXUnitBulletReplaceRequest590_clbk CNetworkEXUnitBulletReplaceRequest590_user(nullptr);
-        info::CNetworkEXUnitDeliveryRequest592_ptr CNetworkEXUnitDeliveryRequest592_next(nullptr);
-        info::CNetworkEXUnitDeliveryRequest592_clbk CNetworkEXUnitDeliveryRequest592_user(nullptr);
-        info::CNetworkEXUnitFrameBuyRequest594_ptr CNetworkEXUnitFrameBuyRequest594_next(nullptr);
-        info::CNetworkEXUnitFrameBuyRequest594_clbk CNetworkEXUnitFrameBuyRequest594_user(nullptr);
-        info::CNetworkEXUnitFrameRepairRequest596_ptr CNetworkEXUnitFrameRepairRequest596_next(nullptr);
-        info::CNetworkEXUnitFrameRepairRequest596_clbk CNetworkEXUnitFrameRepairRequest596_user(nullptr);
-        info::CNetworkEXUnitLeaveRequest598_ptr CNetworkEXUnitLeaveRequest598_next(nullptr);
-        info::CNetworkEXUnitLeaveRequest598_clbk CNetworkEXUnitLeaveRequest598_user(nullptr);
-        info::CNetworkEXUnitPackFillRequest600_ptr CNetworkEXUnitPackFillRequest600_next(nullptr);
-        info::CNetworkEXUnitPackFillRequest600_clbk CNetworkEXUnitPackFillRequest600_user(nullptr);
-        info::CNetworkEXUnitPartTuningRequest602_ptr CNetworkEXUnitPartTuningRequest602_next(nullptr);
-        info::CNetworkEXUnitPartTuningRequest602_clbk CNetworkEXUnitPartTuningRequest602_user(nullptr);
-        info::CNetworkEXUnitReturnRequest604_ptr CNetworkEXUnitReturnRequest604_next(nullptr);
-        info::CNetworkEXUnitReturnRequest604_clbk CNetworkEXUnitReturnRequest604_user(nullptr);
-        info::CNetworkEXUnitSellRequest606_ptr CNetworkEXUnitSellRequest606_next(nullptr);
-        info::CNetworkEXUnitSellRequest606_clbk CNetworkEXUnitSellRequest606_user(nullptr);
-        info::CNetworkEXUnitTakeRequest608_ptr CNetworkEXUnitTakeRequest608_next(nullptr);
-        info::CNetworkEXUnitTakeRequest608_clbk CNetworkEXUnitTakeRequest608_user(nullptr);
-        info::CNetworkEXUpgradeItemRequest610_ptr CNetworkEXUpgradeItemRequest610_next(nullptr);
-        info::CNetworkEXUpgradeItemRequest610_clbk CNetworkEXUpgradeItemRequest610_user(nullptr);
-        info::CNetworkEXUseFireCrackerItemRequest612_ptr CNetworkEXUseFireCrackerItemRequest612_next(nullptr);
-        info::CNetworkEXUseFireCrackerItemRequest612_clbk CNetworkEXUseFireCrackerItemRequest612_user(nullptr);
-        info::CNetworkEXUsePotionRequest614_ptr CNetworkEXUsePotionRequest614_next(nullptr);
-        info::CNetworkEXUsePotionRequest614_clbk CNetworkEXUsePotionRequest614_user(nullptr);
-        info::CNetworkEXUseRadarItemRequest616_ptr CNetworkEXUseRadarItemRequest616_next(nullptr);
-        info::CNetworkEXUseRadarItemRequest616_clbk CNetworkEXUseRadarItemRequest616_user(nullptr);
-        info::CNetworkEXUseRecallTeleportItemRequest618_ptr CNetworkEXUseRecallTeleportItemRequest618_next(nullptr);
-        info::CNetworkEXUseRecallTeleportItemRequest618_clbk CNetworkEXUseRecallTeleportItemRequest618_user(nullptr);
-        info::CNetworkEXUseRecoverLossExpItemRequest620_ptr CNetworkEXUseRecoverLossExpItemRequest620_next(nullptr);
-        info::CNetworkEXUseRecoverLossExpItemRequest620_clbk CNetworkEXUseRecoverLossExpItemRequest620_user(nullptr);
-        info::CNetworkEXUseSoccerBallItemRequest622_ptr CNetworkEXUseSoccerBallItemRequest622_next(nullptr);
-        info::CNetworkEXUseSoccerBallItemRequest622_clbk CNetworkEXUseSoccerBallItemRequest622_user(nullptr);
-        info::CNetworkEXUserBlockResult624_ptr CNetworkEXUserBlockResult624_next(nullptr);
-        info::CNetworkEXUserBlockResult624_clbk CNetworkEXUserBlockResult624_user(nullptr);
-        info::CNetworkEXUserLoop626_ptr CNetworkEXUserLoop626_next(nullptr);
-        info::CNetworkEXUserLoop626_clbk CNetworkEXUserLoop626_user(nullptr);
-        info::CNetworkEXWebAgentLineAnalysis628_ptr CNetworkEXWebAgentLineAnalysis628_next(nullptr);
-        info::CNetworkEXWebAgentLineAnalysis628_clbk CNetworkEXWebAgentLineAnalysis628_user(nullptr);
-        info::CNetworkEXWeeklyGuildRankRequest630_ptr CNetworkEXWeeklyGuildRankRequest630_next(nullptr);
-        info::CNetworkEXWeeklyGuildRankRequest630_clbk CNetworkEXWeeklyGuildRankRequest630_user(nullptr);
-        info::CNetworkEXWhisperBlockReport632_ptr CNetworkEXWhisperBlockReport632_next(nullptr);
-        info::CNetworkEXWhisperBlockReport632_clbk CNetworkEXWhisperBlockReport632_user(nullptr);
-        info::CNetworkEXWorldExitInform634_ptr CNetworkEXWorldExitInform634_next(nullptr);
-        info::CNetworkEXWorldExitInform634_clbk CNetworkEXWorldExitInform634_user(nullptr);
-        info::CNetworkEXWorldMsgInform636_ptr CNetworkEXWorldMsgInform636_next(nullptr);
-        info::CNetworkEXWorldMsgInform636_clbk CNetworkEXWorldMsgInform636_user(nullptr);
-        info::CNetworkEXWorldServiceInform638_ptr CNetworkEXWorldServiceInform638_next(nullptr);
-        info::CNetworkEXWorldServiceInform638_clbk CNetworkEXWorldServiceInform638_user(nullptr);
-        info::CNetworkEXZoneAliveCheckRequest640_ptr CNetworkEXZoneAliveCheckRequest640_next(nullptr);
-        info::CNetworkEXZoneAliveCheckRequest640_clbk CNetworkEXZoneAliveCheckRequest640_user(nullptr);
-        info::CNetworkEXdtor_CNetworkEX645_ptr CNetworkEXdtor_CNetworkEX645_next(nullptr);
-        info::CNetworkEXdtor_CNetworkEX645_clbk CNetworkEXdtor_CNetworkEX645_user(nullptr);
+        static info::CNetworkEXAMP_DownloadRequest2_ptr CNetworkEXAMP_DownloadRequest2_next(nullptr);
+        static info::CNetworkEXAMP_DownloadRequest2_clbk CNetworkEXAMP_DownloadRequest2_user(nullptr);
+        static info::CNetworkEXATradeAdjustPriceRequest4_ptr CNetworkEXATradeAdjustPriceRequest4_next(nullptr);
+        static info::CNetworkEXATradeAdjustPriceRequest4_clbk CNetworkEXATradeAdjustPriceRequest4_user(nullptr);
+        static info::CNetworkEXATradeBuyItemRequest6_ptr CNetworkEXATradeBuyItemRequest6_next(nullptr);
+        static info::CNetworkEXATradeBuyItemRequest6_clbk CNetworkEXATradeBuyItemRequest6_user(nullptr);
+        static info::CNetworkEXATradeClearItemRequest8_ptr CNetworkEXATradeClearItemRequest8_next(nullptr);
+        static info::CNetworkEXATradeClearItemRequest8_clbk CNetworkEXATradeClearItemRequest8_user(nullptr);
+        static info::CNetworkEXATradeReRegistRequest10_ptr CNetworkEXATradeReRegistRequest10_next(nullptr);
+        static info::CNetworkEXATradeReRegistRequest10_clbk CNetworkEXATradeReRegistRequest10_user(nullptr);
+        static info::CNetworkEXATradeRegItemRequest12_ptr CNetworkEXATradeRegItemRequest12_next(nullptr);
+        static info::CNetworkEXATradeRegItemRequest12_clbk CNetworkEXATradeRegItemRequest12_user(nullptr);
+        static info::CNetworkEXATradeRegedListRequest14_ptr CNetworkEXATradeRegedListRequest14_next(nullptr);
+        static info::CNetworkEXATradeRegedListRequest14_clbk CNetworkEXATradeRegedListRequest14_user(nullptr);
+        static info::CNetworkEXATradeTaxRateRequest16_ptr CNetworkEXATradeTaxRateRequest16_next(nullptr);
+        static info::CNetworkEXATradeTaxRateRequest16_clbk CNetworkEXATradeTaxRateRequest16_user(nullptr);
+        static info::CNetworkEXAcceptClientCheck18_ptr CNetworkEXAcceptClientCheck18_next(nullptr);
+        static info::CNetworkEXAcceptClientCheck18_clbk CNetworkEXAcceptClientCheck18_user(nullptr);
+        static info::CNetworkEXAccountLineAnalysis20_ptr CNetworkEXAccountLineAnalysis20_next(nullptr);
+        static info::CNetworkEXAccountLineAnalysis20_clbk CNetworkEXAccountLineAnalysis20_user(nullptr);
+        static info::CNetworkEXAddBagRequest22_ptr CNetworkEXAddBagRequest22_next(nullptr);
+        static info::CNetworkEXAddBagRequest22_clbk CNetworkEXAddBagRequest22_user(nullptr);
+        static info::CNetworkEXAddCharRequest24_ptr CNetworkEXAddCharRequest24_next(nullptr);
+        static info::CNetworkEXAddCharRequest24_clbk CNetworkEXAddCharRequest24_user(nullptr);
+        static info::CNetworkEXAliveCharRequest26_ptr CNetworkEXAliveCharRequest26_next(nullptr);
+        static info::CNetworkEXAliveCharRequest26_clbk CNetworkEXAliveCharRequest26_user(nullptr);
+        static info::CNetworkEXAlterItemSlotRequest28_ptr CNetworkEXAlterItemSlotRequest28_next(nullptr);
+        static info::CNetworkEXAlterItemSlotRequest28_clbk CNetworkEXAlterItemSlotRequest28_user(nullptr);
+        static info::CNetworkEXAlterLinkBoardSlotRequest30_ptr CNetworkEXAlterLinkBoardSlotRequest30_next(nullptr);
+        static info::CNetworkEXAlterLinkBoardSlotRequest30_clbk CNetworkEXAlterLinkBoardSlotRequest30_user(nullptr);
+        static info::CNetworkEXAlterPartyLootShareRequest32_ptr CNetworkEXAlterPartyLootShareRequest32_next(nullptr);
+        static info::CNetworkEXAlterPartyLootShareRequest32_clbk CNetworkEXAlterPartyLootShareRequest32_user(nullptr);
+        static info::CNetworkEXAlterWindowInfoRequest34_ptr CNetworkEXAlterWindowInfoRequest34_next(nullptr);
+        static info::CNetworkEXAlterWindowInfoRequest34_clbk CNetworkEXAlterWindowInfoRequest34_user(nullptr);
+        static info::CNetworkEXAnimusCommandRequest36_ptr CNetworkEXAnimusCommandRequest36_next(nullptr);
+        static info::CNetworkEXAnimusCommandRequest36_clbk CNetworkEXAnimusCommandRequest36_user(nullptr);
+        static info::CNetworkEXAnimusInvenChangeRequest38_ptr CNetworkEXAnimusInvenChangeRequest38_next(nullptr);
+        static info::CNetworkEXAnimusInvenChangeRequest38_clbk CNetworkEXAnimusInvenChangeRequest38_user(nullptr);
+        static info::CNetworkEXAnimusRecallRequest40_ptr CNetworkEXAnimusRecallRequest40_next(nullptr);
+        static info::CNetworkEXAnimusRecallRequest40_clbk CNetworkEXAnimusRecallRequest40_user(nullptr);
+        static info::CNetworkEXAnimusReturnRequest42_ptr CNetworkEXAnimusReturnRequest42_next(nullptr);
+        static info::CNetworkEXAnimusReturnRequest42_clbk CNetworkEXAnimusReturnRequest42_user(nullptr);
+        static info::CNetworkEXAnimusTargetRequest44_ptr CNetworkEXAnimusTargetRequest44_next(nullptr);
+        static info::CNetworkEXAnimusTargetRequest44_clbk CNetworkEXAnimusTargetRequest44_user(nullptr);
+        static info::CNetworkEXAnsyncConnectComplete46_ptr CNetworkEXAnsyncConnectComplete46_next(nullptr);
+        static info::CNetworkEXAnsyncConnectComplete46_clbk CNetworkEXAnsyncConnectComplete46_user(nullptr);
+        static info::CNetworkEXApex_R48_ptr CNetworkEXApex_R48_next(nullptr);
+        static info::CNetworkEXApex_R48_clbk CNetworkEXApex_R48_user(nullptr);
+        static info::CNetworkEXApex_T50_ptr CNetworkEXApex_T50_next(nullptr);
+        static info::CNetworkEXApex_T50_clbk CNetworkEXApex_T50_user(nullptr);
+        static info::CNetworkEXAttackForceRequest52_ptr CNetworkEXAttackForceRequest52_next(nullptr);
+        static info::CNetworkEXAttackForceRequest52_clbk CNetworkEXAttackForceRequest52_user(nullptr);
+        static info::CNetworkEXAttackPersonalRequest54_ptr CNetworkEXAttackPersonalRequest54_next(nullptr);
+        static info::CNetworkEXAttackPersonalRequest54_clbk CNetworkEXAttackPersonalRequest54_user(nullptr);
+        static info::CNetworkEXAttackSiegeRequest56_ptr CNetworkEXAttackSiegeRequest56_next(nullptr);
+        static info::CNetworkEXAttackSiegeRequest56_clbk CNetworkEXAttackSiegeRequest56_user(nullptr);
+        static info::CNetworkEXAttackSkillRequest58_ptr CNetworkEXAttackSkillRequest58_next(nullptr);
+        static info::CNetworkEXAttackSkillRequest58_clbk CNetworkEXAttackSkillRequest58_user(nullptr);
+        static info::CNetworkEXAttackTestRequest60_ptr CNetworkEXAttackTestRequest60_next(nullptr);
+        static info::CNetworkEXAttackTestRequest60_clbk CNetworkEXAttackTestRequest60_user(nullptr);
+        static info::CNetworkEXAttackUnitRequest62_ptr CNetworkEXAttackUnitRequest62_next(nullptr);
+        static info::CNetworkEXAttackUnitRequest62_clbk CNetworkEXAttackUnitRequest62_user(nullptr);
+        static info::CNetworkEXAwayPartyInvitation64_ptr CNetworkEXAwayPartyInvitation64_next(nullptr);
+        static info::CNetworkEXAwayPartyInvitation64_clbk CNetworkEXAwayPartyInvitation64_user(nullptr);
+        static info::CNetworkEXAwayPartyInvitationAnswer66_ptr CNetworkEXAwayPartyInvitationAnswer66_next(nullptr);
+        static info::CNetworkEXAwayPartyInvitationAnswer66_clbk CNetworkEXAwayPartyInvitationAnswer66_user(nullptr);
+        static info::CNetworkEXBackTowerRequest68_ptr CNetworkEXBackTowerRequest68_next(nullptr);
+        static info::CNetworkEXBackTowerRequest68_clbk CNetworkEXBackTowerRequest68_user(nullptr);
+        static info::CNetworkEXBackTrapRequest70_ptr CNetworkEXBackTrapRequest70_next(nullptr);
+        static info::CNetworkEXBackTrapRequest70_clbk CNetworkEXBackTrapRequest70_user(nullptr);
+        static info::CNetworkEXBaseDownloadRequest72_ptr CNetworkEXBaseDownloadRequest72_next(nullptr);
+        static info::CNetworkEXBaseDownloadRequest72_clbk CNetworkEXBaseDownloadRequest72_user(nullptr);
+        static info::CNetworkEXBillingChangeType74_ptr CNetworkEXBillingChangeType74_next(nullptr);
+        static info::CNetworkEXBillingChangeType74_clbk CNetworkEXBillingChangeType74_user(nullptr);
+        static info::CNetworkEXBillingCloseRequest76_ptr CNetworkEXBillingCloseRequest76_next(nullptr);
+        static info::CNetworkEXBillingCloseRequest76_clbk CNetworkEXBillingCloseRequest76_user(nullptr);
+        static info::CNetworkEXBillingDestroyModule78_ptr CNetworkEXBillingDestroyModule78_next(nullptr);
+        static info::CNetworkEXBillingDestroyModule78_clbk CNetworkEXBillingDestroyModule78_user(nullptr);
+        static info::CNetworkEXBillingExpireIPOverflow80_ptr CNetworkEXBillingExpireIPOverflow80_next(nullptr);
+        static info::CNetworkEXBillingExpireIPOverflow80_clbk CNetworkEXBillingExpireIPOverflow80_user(nullptr);
+        static info::CNetworkEXBillingExpirePCBang82_ptr CNetworkEXBillingExpirePCBang82_next(nullptr);
+        static info::CNetworkEXBillingExpirePCBang82_clbk CNetworkEXBillingExpirePCBang82_user(nullptr);
+        static info::CNetworkEXBillingExpirePersonal84_ptr CNetworkEXBillingExpirePersonal84_next(nullptr);
+        static info::CNetworkEXBillingExpirePersonal84_clbk CNetworkEXBillingExpirePersonal84_user(nullptr);
+        static info::CNetworkEXBillingInfoRequest86_ptr CNetworkEXBillingInfoRequest86_next(nullptr);
+        static info::CNetworkEXBillingInfoRequest86_clbk CNetworkEXBillingInfoRequest86_user(nullptr);
+        static info::CNetworkEXBillingLineAnalysis88_ptr CNetworkEXBillingLineAnalysis88_next(nullptr);
+        static info::CNetworkEXBillingLineAnalysis88_clbk CNetworkEXBillingLineAnalysis88_user(nullptr);
+        static info::CNetworkEXBillingRemaintimePCBang90_ptr CNetworkEXBillingRemaintimePCBang90_next(nullptr);
+        static info::CNetworkEXBillingRemaintimePCBang90_clbk CNetworkEXBillingRemaintimePCBang90_user(nullptr);
+        static info::CNetworkEXBillingRemaintimePersonal92_ptr CNetworkEXBillingRemaintimePersonal92_next(nullptr);
+        static info::CNetworkEXBillingRemaintimePersonal92_clbk CNetworkEXBillingRemaintimePersonal92_user(nullptr);
+        static info::CNetworkEXBossSMSMsgRequest94_ptr CNetworkEXBossSMSMsgRequest94_next(nullptr);
+        static info::CNetworkEXBossSMSMsgRequest94_clbk CNetworkEXBossSMSMsgRequest94_user(nullptr);
+        static info::CNetworkEXBriefPassReport96_ptr CNetworkEXBriefPassReport96_next(nullptr);
+        static info::CNetworkEXBriefPassReport96_clbk CNetworkEXBriefPassReport96_user(nullptr);
+        static info::CNetworkEXBuddyAddAnswer98_ptr CNetworkEXBuddyAddAnswer98_next(nullptr);
+        static info::CNetworkEXBuddyAddAnswer98_clbk CNetworkEXBuddyAddAnswer98_user(nullptr);
+        static info::CNetworkEXBuddyAddRequest100_ptr CNetworkEXBuddyAddRequest100_next(nullptr);
+        static info::CNetworkEXBuddyAddRequest100_clbk CNetworkEXBuddyAddRequest100_user(nullptr);
+        static info::CNetworkEXBuddyDelRequest102_ptr CNetworkEXBuddyDelRequest102_next(nullptr);
+        static info::CNetworkEXBuddyDelRequest102_clbk CNetworkEXBuddyDelRequest102_user(nullptr);
+        static info::CNetworkEXBuddyDownloadRequest104_ptr CNetworkEXBuddyDownloadRequest104_next(nullptr);
+        static info::CNetworkEXBuddyDownloadRequest104_clbk CNetworkEXBuddyDownloadRequest104_user(nullptr);
+        static info::CNetworkEXBuyStoreRequest106_ptr CNetworkEXBuyStoreRequest106_next(nullptr);
+        static info::CNetworkEXBuyStoreRequest106_clbk CNetworkEXBuyStoreRequest106_user(nullptr);
+        static info::CNetworkEXctor_CNetworkEX108_ptr CNetworkEXctor_CNetworkEX108_next(nullptr);
+        static info::CNetworkEXctor_CNetworkEX108_clbk CNetworkEXctor_CNetworkEX108_user(nullptr);
+        static info::CNetworkEXCanSelectClassRequest110_ptr CNetworkEXCanSelectClassRequest110_next(nullptr);
+        static info::CNetworkEXCanSelectClassRequest110_clbk CNetworkEXCanSelectClassRequest110_user(nullptr);
+        static info::CNetworkEXCancelRaceBossSMSMsg112_ptr CNetworkEXCancelRaceBossSMSMsg112_next(nullptr);
+        static info::CNetworkEXCancelRaceBossSMSMsg112_clbk CNetworkEXCancelRaceBossSMSMsg112_user(nullptr);
+        static info::CNetworkEXCashDBInfoRecvResult114_ptr CNetworkEXCashDBInfoRecvResult114_next(nullptr);
+        static info::CNetworkEXCashDBInfoRecvResult114_clbk CNetworkEXCashDBInfoRecvResult114_user(nullptr);
+        static info::CNetworkEXCastVoteRequest116_ptr CNetworkEXCastVoteRequest116_next(nullptr);
+        static info::CNetworkEXCastVoteRequest116_clbk CNetworkEXCastVoteRequest116_user(nullptr);
+        static info::CNetworkEXCharacterRenameCash118_ptr CNetworkEXCharacterRenameCash118_next(nullptr);
+        static info::CNetworkEXCharacterRenameCash118_clbk CNetworkEXCharacterRenameCash118_user(nullptr);
+        static info::CNetworkEXChatAllRecvYesOrNo120_ptr CNetworkEXChatAllRecvYesOrNo120_next(nullptr);
+        static info::CNetworkEXChatAllRecvYesOrNo120_clbk CNetworkEXChatAllRecvYesOrNo120_user(nullptr);
+        static info::CNetworkEXChatAllRequest122_ptr CNetworkEXChatAllRequest122_next(nullptr);
+        static info::CNetworkEXChatAllRequest122_clbk CNetworkEXChatAllRequest122_user(nullptr);
+        static info::CNetworkEXChatCheatRequest124_ptr CNetworkEXChatCheatRequest124_next(nullptr);
+        static info::CNetworkEXChatCheatRequest124_clbk CNetworkEXChatCheatRequest124_user(nullptr);
+        static info::CNetworkEXChatCircleRequest126_ptr CNetworkEXChatCircleRequest126_next(nullptr);
+        static info::CNetworkEXChatCircleRequest126_clbk CNetworkEXChatCircleRequest126_user(nullptr);
+        static info::CNetworkEXChatFarRequest128_ptr CNetworkEXChatFarRequest128_next(nullptr);
+        static info::CNetworkEXChatFarRequest128_clbk CNetworkEXChatFarRequest128_user(nullptr);
+        static info::CNetworkEXChatGmNoticeRequest130_ptr CNetworkEXChatGmNoticeRequest130_next(nullptr);
+        static info::CNetworkEXChatGmNoticeRequest130_clbk CNetworkEXChatGmNoticeRequest130_user(nullptr);
+        static info::CNetworkEXChatGreetingMsg_GM132_ptr CNetworkEXChatGreetingMsg_GM132_next(nullptr);
+        static info::CNetworkEXChatGreetingMsg_GM132_clbk CNetworkEXChatGreetingMsg_GM132_user(nullptr);
+        static info::CNetworkEXChatGreetingMsg_GUILD134_ptr CNetworkEXChatGreetingMsg_GUILD134_next(nullptr);
+        static info::CNetworkEXChatGreetingMsg_GUILD134_clbk CNetworkEXChatGreetingMsg_GUILD134_user(nullptr);
+        static info::CNetworkEXChatGreetingMsg_RACE136_ptr CNetworkEXChatGreetingMsg_RACE136_next(nullptr);
+        static info::CNetworkEXChatGreetingMsg_RACE136_clbk CNetworkEXChatGreetingMsg_RACE136_user(nullptr);
+        static info::CNetworkEXChatGuildEstSenRequest138_ptr CNetworkEXChatGuildEstSenRequest138_next(nullptr);
+        static info::CNetworkEXChatGuildEstSenRequest138_clbk CNetworkEXChatGuildEstSenRequest138_user(nullptr);
+        static info::CNetworkEXChatGuildRequest140_ptr CNetworkEXChatGuildRequest140_next(nullptr);
+        static info::CNetworkEXChatGuildRequest140_clbk CNetworkEXChatGuildRequest140_user(nullptr);
+        static info::CNetworkEXChatLockCommand142_ptr CNetworkEXChatLockCommand142_next(nullptr);
+        static info::CNetworkEXChatLockCommand142_clbk CNetworkEXChatLockCommand142_user(nullptr);
+        static info::CNetworkEXChatManageRequest144_ptr CNetworkEXChatManageRequest144_next(nullptr);
+        static info::CNetworkEXChatManageRequest144_clbk CNetworkEXChatManageRequest144_user(nullptr);
+        static info::CNetworkEXChatMapRecvYesOrNo146_ptr CNetworkEXChatMapRecvYesOrNo146_next(nullptr);
+        static info::CNetworkEXChatMapRecvYesOrNo146_clbk CNetworkEXChatMapRecvYesOrNo146_user(nullptr);
+        static info::CNetworkEXChatMapRequest148_ptr CNetworkEXChatMapRequest148_next(nullptr);
+        static info::CNetworkEXChatMapRequest148_clbk CNetworkEXChatMapRequest148_user(nullptr);
+        static info::CNetworkEXChatMgrWhisperRequest150_ptr CNetworkEXChatMgrWhisperRequest150_next(nullptr);
+        static info::CNetworkEXChatMgrWhisperRequest150_clbk CNetworkEXChatMgrWhisperRequest150_user(nullptr);
+        static info::CNetworkEXChatMultiFarRequest152_ptr CNetworkEXChatMultiFarRequest152_next(nullptr);
+        static info::CNetworkEXChatMultiFarRequest152_clbk CNetworkEXChatMultiFarRequest152_user(nullptr);
+        static info::CNetworkEXChatOperatorRequest154_ptr CNetworkEXChatOperatorRequest154_next(nullptr);
+        static info::CNetworkEXChatOperatorRequest154_clbk CNetworkEXChatOperatorRequest154_user(nullptr);
+        static info::CNetworkEXChatPartyRequest156_ptr CNetworkEXChatPartyRequest156_next(nullptr);
+        static info::CNetworkEXChatPartyRequest156_clbk CNetworkEXChatPartyRequest156_user(nullptr);
+        static info::CNetworkEXChatRaceBossCryRequest158_ptr CNetworkEXChatRaceBossCryRequest158_next(nullptr);
+        static info::CNetworkEXChatRaceBossCryRequest158_clbk CNetworkEXChatRaceBossCryRequest158_user(nullptr);
+        static info::CNetworkEXChatRaceBossRequest160_ptr CNetworkEXChatRaceBossRequest160_next(nullptr);
+        static info::CNetworkEXChatRaceBossRequest160_clbk CNetworkEXChatRaceBossRequest160_user(nullptr);
+        static info::CNetworkEXChatRaceRequest162_ptr CNetworkEXChatRaceRequest162_next(nullptr);
+        static info::CNetworkEXChatRaceRequest162_clbk CNetworkEXChatRaceRequest162_user(nullptr);
+        static info::CNetworkEXChatRePresentationRequest164_ptr CNetworkEXChatRePresentationRequest164_next(nullptr);
+        static info::CNetworkEXChatRePresentationRequest164_clbk CNetworkEXChatRePresentationRequest164_user(nullptr);
+        static info::CNetworkEXChatTradeRequestMsg166_ptr CNetworkEXChatTradeRequestMsg166_next(nullptr);
+        static info::CNetworkEXChatTradeRequestMsg166_clbk CNetworkEXChatTradeRequestMsg166_user(nullptr);
+        static info::CNetworkEXCheckIsBlockIPResult168_ptr CNetworkEXCheckIsBlockIPResult168_next(nullptr);
+        static info::CNetworkEXCheckIsBlockIPResult168_clbk CNetworkEXCheckIsBlockIPResult168_user(nullptr);
+        static info::CNetworkEXChinaBillingChangePrimium170_ptr CNetworkEXChinaBillingChangePrimium170_next(nullptr);
+        static info::CNetworkEXChinaBillingChangePrimium170_clbk CNetworkEXChinaBillingChangePrimium170_user(nullptr);
+        static info::CNetworkEXClassSkillRecallTeleportRequest172_ptr CNetworkEXClassSkillRecallTeleportRequest172_next(nullptr);
+        static info::CNetworkEXClassSkillRecallTeleportRequest172_clbk CNetworkEXClassSkillRecallTeleportRequest172_user(nullptr);
+        static info::CNetworkEXClassSkillRequest174_ptr CNetworkEXClassSkillRequest174_next(nullptr);
+        static info::CNetworkEXClassSkillRequest174_clbk CNetworkEXClassSkillRequest174_user(nullptr);
+        static info::CNetworkEXClientLineAnalysis176_ptr CNetworkEXClientLineAnalysis176_next(nullptr);
+        static info::CNetworkEXClientLineAnalysis176_clbk CNetworkEXClientLineAnalysis176_user(nullptr);
+        static info::CNetworkEXClose178_ptr CNetworkEXClose178_next(nullptr);
+        static info::CNetworkEXClose178_clbk CNetworkEXClose178_user(nullptr);
+        static info::CNetworkEXCloseClientCheck180_ptr CNetworkEXCloseClientCheck180_next(nullptr);
+        static info::CNetworkEXCloseClientCheck180_clbk CNetworkEXCloseClientCheck180_user(nullptr);
+        static info::CNetworkEXCombineExItemAcceptRequest182_ptr CNetworkEXCombineExItemAcceptRequest182_next(nullptr);
+        static info::CNetworkEXCombineExItemAcceptRequest182_clbk CNetworkEXCombineExItemAcceptRequest182_user(nullptr);
+        static info::CNetworkEXCombineExItemRequest184_ptr CNetworkEXCombineExItemRequest184_next(nullptr);
+        static info::CNetworkEXCombineExItemRequest184_clbk CNetworkEXCombineExItemRequest184_user(nullptr);
+        static info::CNetworkEXCombineItemRequest186_ptr CNetworkEXCombineItemRequest186_next(nullptr);
+        static info::CNetworkEXCombineItemRequest186_clbk CNetworkEXCombineItemRequest186_user(nullptr);
+        static info::CNetworkEXConEventTotalSalesCheck188_ptr CNetworkEXConEventTotalSalesCheck188_next(nullptr);
+        static info::CNetworkEXConEventTotalSalesCheck188_clbk CNetworkEXConEventTotalSalesCheck188_user(nullptr);
+        static info::CNetworkEXConnectionStatusRequest190_ptr CNetworkEXConnectionStatusRequest190_next(nullptr);
+        static info::CNetworkEXConnectionStatusRequest190_clbk CNetworkEXConnectionStatusRequest190_user(nullptr);
+        static info::CNetworkEXCumDownloadRequest192_ptr CNetworkEXCumDownloadRequest192_next(nullptr);
+        static info::CNetworkEXCumDownloadRequest192_clbk CNetworkEXCumDownloadRequest192_user(nullptr);
+        static info::CNetworkEXCuttingCompleteRequest194_ptr CNetworkEXCuttingCompleteRequest194_next(nullptr);
+        static info::CNetworkEXCuttingCompleteRequest194_clbk CNetworkEXCuttingCompleteRequest194_user(nullptr);
+        static info::CNetworkEXDTradeAddRequest196_ptr CNetworkEXDTradeAddRequest196_next(nullptr);
+        static info::CNetworkEXDTradeAddRequest196_clbk CNetworkEXDTradeAddRequest196_user(nullptr);
+        static info::CNetworkEXDTradeAnswerRequest198_ptr CNetworkEXDTradeAnswerRequest198_next(nullptr);
+        static info::CNetworkEXDTradeAnswerRequest198_clbk CNetworkEXDTradeAnswerRequest198_user(nullptr);
+        static info::CNetworkEXDTradeAskRequest200_ptr CNetworkEXDTradeAskRequest200_next(nullptr);
+        static info::CNetworkEXDTradeAskRequest200_clbk CNetworkEXDTradeAskRequest200_user(nullptr);
+        static info::CNetworkEXDTradeBetRequest202_ptr CNetworkEXDTradeBetRequest202_next(nullptr);
+        static info::CNetworkEXDTradeBetRequest202_clbk CNetworkEXDTradeBetRequest202_user(nullptr);
+        static info::CNetworkEXDTradeCancleRequest204_ptr CNetworkEXDTradeCancleRequest204_next(nullptr);
+        static info::CNetworkEXDTradeCancleRequest204_clbk CNetworkEXDTradeCancleRequest204_user(nullptr);
+        static info::CNetworkEXDTradeDelRequest206_ptr CNetworkEXDTradeDelRequest206_next(nullptr);
+        static info::CNetworkEXDTradeDelRequest206_clbk CNetworkEXDTradeDelRequest206_user(nullptr);
+        static info::CNetworkEXDTradeLockRequest208_ptr CNetworkEXDTradeLockRequest208_next(nullptr);
+        static info::CNetworkEXDTradeLockRequest208_clbk CNetworkEXDTradeLockRequest208_user(nullptr);
+        static info::CNetworkEXDTradeOKRequest210_ptr CNetworkEXDTradeOKRequest210_next(nullptr);
+        static info::CNetworkEXDTradeOKRequest210_clbk CNetworkEXDTradeOKRequest210_user(nullptr);
+        static info::CNetworkEXDarkHoleAnswerReenterRequest212_ptr CNetworkEXDarkHoleAnswerReenterRequest212_next(nullptr);
+        static info::CNetworkEXDarkHoleAnswerReenterRequest212_clbk CNetworkEXDarkHoleAnswerReenterRequest212_user(nullptr);
+        static info::CNetworkEXDarkHoleClearOutRequest214_ptr CNetworkEXDarkHoleClearOutRequest214_next(nullptr);
+        static info::CNetworkEXDarkHoleClearOutRequest214_clbk CNetworkEXDarkHoleClearOutRequest214_user(nullptr);
+        static info::CNetworkEXDarkHoleEnterRequest216_ptr CNetworkEXDarkHoleEnterRequest216_next(nullptr);
+        static info::CNetworkEXDarkHoleEnterRequest216_clbk CNetworkEXDarkHoleEnterRequest216_user(nullptr);
+        static info::CNetworkEXDarkHoleGiveupOutRequest218_ptr CNetworkEXDarkHoleGiveupOutRequest218_next(nullptr);
+        static info::CNetworkEXDarkHoleGiveupOutRequest218_clbk CNetworkEXDarkHoleGiveupOutRequest218_user(nullptr);
+        static info::CNetworkEXDarkHoleOpenRequest220_ptr CNetworkEXDarkHoleOpenRequest220_next(nullptr);
+        static info::CNetworkEXDarkHoleOpenRequest220_clbk CNetworkEXDarkHoleOpenRequest220_user(nullptr);
+        static info::CNetworkEXDataAnalysis222_ptr CNetworkEXDataAnalysis222_next(nullptr);
+        static info::CNetworkEXDataAnalysis222_clbk CNetworkEXDataAnalysis222_user(nullptr);
+        static info::CNetworkEXDecideRecallRequest224_ptr CNetworkEXDecideRecallRequest224_next(nullptr);
+        static info::CNetworkEXDecideRecallRequest224_clbk CNetworkEXDecideRecallRequest224_user(nullptr);
+        static info::CNetworkEXDelCharRequest226_ptr CNetworkEXDelCharRequest226_next(nullptr);
+        static info::CNetworkEXDelCharRequest226_clbk CNetworkEXDelCharRequest226_user(nullptr);
+        static info::CNetworkEXDisconnectGuildWarCharacterRequest228_ptr CNetworkEXDisconnectGuildWarCharacterRequest228_next(nullptr);
+        static info::CNetworkEXDisconnectGuildWarCharacterRequest228_clbk CNetworkEXDisconnectGuildWarCharacterRequest228_user(nullptr);
+        static info::CNetworkEXDownGradeItemRequest230_ptr CNetworkEXDownGradeItemRequest230_next(nullptr);
+        static info::CNetworkEXDownGradeItemRequest230_clbk CNetworkEXDownGradeItemRequest230_user(nullptr);
+        static info::CNetworkEXEmbellishRequest232_ptr CNetworkEXEmbellishRequest232_next(nullptr);
+        static info::CNetworkEXEmbellishRequest232_clbk CNetworkEXEmbellishRequest232_user(nullptr);
+        static info::CNetworkEXEnterReturnGateRequest234_ptr CNetworkEXEnterReturnGateRequest234_next(nullptr);
+        static info::CNetworkEXEnterReturnGateRequest234_clbk CNetworkEXEnterReturnGateRequest234_user(nullptr);
+        static info::CNetworkEXEnterWorldRequest236_ptr CNetworkEXEnterWorldRequest236_next(nullptr);
+        static info::CNetworkEXEnterWorldRequest236_clbk CNetworkEXEnterWorldRequest236_user(nullptr);
+        static info::CNetworkEXEnterWorldResult238_ptr CNetworkEXEnterWorldResult238_next(nullptr);
+        static info::CNetworkEXEnterWorldResult238_clbk CNetworkEXEnterWorldResult238_user(nullptr);
+        static info::CNetworkEXEquipPartRequest240_ptr CNetworkEXEquipPartRequest240_next(nullptr);
+        static info::CNetworkEXEquipPartRequest240_clbk CNetworkEXEquipPartRequest240_user(nullptr);
+        static info::CNetworkEXExchangeDalantForGoldRequest242_ptr CNetworkEXExchangeDalantForGoldRequest242_next(nullptr);
+        static info::CNetworkEXExchangeDalantForGoldRequest242_clbk CNetworkEXExchangeDalantForGoldRequest242_user(nullptr);
+        static info::CNetworkEXExchangeGoldForDalantRequest244_ptr CNetworkEXExchangeGoldForDalantRequest244_next(nullptr);
+        static info::CNetworkEXExchangeGoldForDalantRequest244_clbk CNetworkEXExchangeGoldForDalantRequest244_user(nullptr);
+        static info::CNetworkEXExchangeGoldForPvPRequest246_ptr CNetworkEXExchangeGoldForPvPRequest246_next(nullptr);
+        static info::CNetworkEXExchangeGoldForPvPRequest246_clbk CNetworkEXExchangeGoldForPvPRequest246_user(nullptr);
+        static info::CNetworkEXExchangeItemRequest248_ptr CNetworkEXExchangeItemRequest248_next(nullptr);
+        static info::CNetworkEXExchangeItemRequest248_clbk CNetworkEXExchangeItemRequest248_user(nullptr);
+        static info::CNetworkEXExitWorldRequest250_ptr CNetworkEXExitWorldRequest250_next(nullptr);
+        static info::CNetworkEXExitWorldRequest250_clbk CNetworkEXExitWorldRequest250_user(nullptr);
+        static info::CNetworkEXExpulsionSocket252_ptr CNetworkEXExpulsionSocket252_next(nullptr);
+        static info::CNetworkEXExpulsionSocket252_clbk CNetworkEXExpulsionSocket252_user(nullptr);
+        static info::CNetworkEXForceCloseCommand254_ptr CNetworkEXForceCloseCommand254_next(nullptr);
+        static info::CNetworkEXForceCloseCommand254_clbk CNetworkEXForceCloseCommand254_user(nullptr);
+        static info::CNetworkEXForceDownloadRequest256_ptr CNetworkEXForceDownloadRequest256_next(nullptr);
+        static info::CNetworkEXForceDownloadRequest256_clbk CNetworkEXForceDownloadRequest256_user(nullptr);
+        static info::CNetworkEXForceInvenChangeRequest258_ptr CNetworkEXForceInvenChangeRequest258_next(nullptr);
+        static info::CNetworkEXForceInvenChangeRequest258_clbk CNetworkEXForceInvenChangeRequest258_user(nullptr);
+        static info::CNetworkEXForceRecallTeleportRequest260_ptr CNetworkEXForceRecallTeleportRequest260_next(nullptr);
+        static info::CNetworkEXForceRecallTeleportRequest260_clbk CNetworkEXForceRecallTeleportRequest260_user(nullptr);
+        static info::CNetworkEXForceRequest262_ptr CNetworkEXForceRequest262_next(nullptr);
+        static info::CNetworkEXForceRequest262_clbk CNetworkEXForceRequest262_user(nullptr);
+        static info::CNetworkEXGotoAvatorRequest264_ptr CNetworkEXGotoAvatorRequest264_next(nullptr);
+        static info::CNetworkEXGotoAvatorRequest264_clbk CNetworkEXGotoAvatorRequest264_user(nullptr);
+        static info::CNetworkEXGotoBasePortalRequest266_ptr CNetworkEXGotoBasePortalRequest266_next(nullptr);
+        static info::CNetworkEXGotoBasePortalRequest266_clbk CNetworkEXGotoBasePortalRequest266_user(nullptr);
+        static info::CNetworkEXGuildBattleBlockReport268_ptr CNetworkEXGuildBattleBlockReport268_next(nullptr);
+        static info::CNetworkEXGuildBattleBlockReport268_clbk CNetworkEXGuildBattleBlockReport268_user(nullptr);
+        static info::CNetworkEXGuildBattleCurrentBattleInfoRequest270_ptr CNetworkEXGuildBattleCurrentBattleInfoRequest270_next(nullptr);
+        static info::CNetworkEXGuildBattleCurrentBattleInfoRequest270_clbk CNetworkEXGuildBattleCurrentBattleInfoRequest270_user(nullptr);
+        static info::CNetworkEXGuildBattleGetGravityStoneRequest272_ptr CNetworkEXGuildBattleGetGravityStoneRequest272_next(nullptr);
+        static info::CNetworkEXGuildBattleGetGravityStoneRequest272_clbk CNetworkEXGuildBattleGetGravityStoneRequest272_user(nullptr);
+        static info::CNetworkEXGuildBattleGoalRequest274_ptr CNetworkEXGuildBattleGoalRequest274_next(nullptr);
+        static info::CNetworkEXGuildBattleGoalRequest274_clbk CNetworkEXGuildBattleGoalRequest274_user(nullptr);
+        static info::CNetworkEXGuildBattleJoinGuildBattleRequest276_ptr CNetworkEXGuildBattleJoinGuildBattleRequest276_next(nullptr);
+        static info::CNetworkEXGuildBattleJoinGuildBattleRequest276_clbk CNetworkEXGuildBattleJoinGuildBattleRequest276_user(nullptr);
+        static info::CNetworkEXGuildBattlePossibleGuildBattleList278_ptr CNetworkEXGuildBattlePossibleGuildBattleList278_next(nullptr);
+        static info::CNetworkEXGuildBattlePossibleGuildBattleList278_clbk CNetworkEXGuildBattlePossibleGuildBattleList278_user(nullptr);
+        static info::CNetworkEXGuildBattleRankListRequest280_ptr CNetworkEXGuildBattleRankListRequest280_next(nullptr);
+        static info::CNetworkEXGuildBattleRankListRequest280_clbk CNetworkEXGuildBattleRankListRequest280_user(nullptr);
+        static info::CNetworkEXGuildBattleReservedScheduleRequest282_ptr CNetworkEXGuildBattleReservedScheduleRequest282_next(nullptr);
+        static info::CNetworkEXGuildBattleReservedScheduleRequest282_clbk CNetworkEXGuildBattleReservedScheduleRequest282_user(nullptr);
+        static info::CNetworkEXGuildBattleTakeGravityStoneRequest284_ptr CNetworkEXGuildBattleTakeGravityStoneRequest284_next(nullptr);
+        static info::CNetworkEXGuildBattleTakeGravityStoneRequest284_clbk CNetworkEXGuildBattleTakeGravityStoneRequest284_user(nullptr);
+        static info::CNetworkEXGuildCancelSuggestRequest286_ptr CNetworkEXGuildCancelSuggestRequest286_next(nullptr);
+        static info::CNetworkEXGuildCancelSuggestRequest286_clbk CNetworkEXGuildCancelSuggestRequest286_user(nullptr);
+        static info::CNetworkEXGuildDownloadRequest288_ptr CNetworkEXGuildDownloadRequest288_next(nullptr);
+        static info::CNetworkEXGuildDownloadRequest288_clbk CNetworkEXGuildDownloadRequest288_user(nullptr);
+        static info::CNetworkEXGuildEstablishRequest290_ptr CNetworkEXGuildEstablishRequest290_next(nullptr);
+        static info::CNetworkEXGuildEstablishRequest290_clbk CNetworkEXGuildEstablishRequest290_user(nullptr);
+        static info::CNetworkEXGuildHonorListRequest292_ptr CNetworkEXGuildHonorListRequest292_next(nullptr);
+        static info::CNetworkEXGuildHonorListRequest292_clbk CNetworkEXGuildHonorListRequest292_user(nullptr);
+        static info::CNetworkEXGuildJoinAcceptRequest294_ptr CNetworkEXGuildJoinAcceptRequest294_next(nullptr);
+        static info::CNetworkEXGuildJoinAcceptRequest294_clbk CNetworkEXGuildJoinAcceptRequest294_user(nullptr);
+        static info::CNetworkEXGuildJoinApplyCancelRequest296_ptr CNetworkEXGuildJoinApplyCancelRequest296_next(nullptr);
+        static info::CNetworkEXGuildJoinApplyCancelRequest296_clbk CNetworkEXGuildJoinApplyCancelRequest296_user(nullptr);
+        static info::CNetworkEXGuildJoinApplyRequest298_ptr CNetworkEXGuildJoinApplyRequest298_next(nullptr);
+        static info::CNetworkEXGuildJoinApplyRequest298_clbk CNetworkEXGuildJoinApplyRequest298_user(nullptr);
+        static info::CNetworkEXGuildListRequest300_ptr CNetworkEXGuildListRequest300_next(nullptr);
+        static info::CNetworkEXGuildListRequest300_clbk CNetworkEXGuildListRequest300_user(nullptr);
+        static info::CNetworkEXGuildManageRequest302_ptr CNetworkEXGuildManageRequest302_next(nullptr);
+        static info::CNetworkEXGuildManageRequest302_clbk CNetworkEXGuildManageRequest302_user(nullptr);
+        static info::CNetworkEXGuildNextHonorListRequest304_ptr CNetworkEXGuildNextHonorListRequest304_next(nullptr);
+        static info::CNetworkEXGuildNextHonorListRequest304_clbk CNetworkEXGuildNextHonorListRequest304_user(nullptr);
+        static info::CNetworkEXGuildOfferSuggestRequest306_ptr CNetworkEXGuildOfferSuggestRequest306_next(nullptr);
+        static info::CNetworkEXGuildOfferSuggestRequest306_clbk CNetworkEXGuildOfferSuggestRequest306_user(nullptr);
+        static info::CNetworkEXGuildPushMoneyRequest308_ptr CNetworkEXGuildPushMoneyRequest308_next(nullptr);
+        static info::CNetworkEXGuildPushMoneyRequest308_clbk CNetworkEXGuildPushMoneyRequest308_user(nullptr);
+        static info::CNetworkEXGuildQueryInfoRequest310_ptr CNetworkEXGuildQueryInfoRequest310_next(nullptr);
+        static info::CNetworkEXGuildQueryInfoRequest310_clbk CNetworkEXGuildQueryInfoRequest310_user(nullptr);
+        static info::CNetworkEXGuildRoomEnterRequest312_ptr CNetworkEXGuildRoomEnterRequest312_next(nullptr);
+        static info::CNetworkEXGuildRoomEnterRequest312_clbk CNetworkEXGuildRoomEnterRequest312_user(nullptr);
+        static info::CNetworkEXGuildRoomOutRequest314_ptr CNetworkEXGuildRoomOutRequest314_next(nullptr);
+        static info::CNetworkEXGuildRoomOutRequest314_clbk CNetworkEXGuildRoomOutRequest314_user(nullptr);
+        static info::CNetworkEXGuildRoomRentRequest316_ptr CNetworkEXGuildRoomRentRequest316_next(nullptr);
+        static info::CNetworkEXGuildRoomRentRequest316_clbk CNetworkEXGuildRoomRentRequest316_user(nullptr);
+        static info::CNetworkEXGuildRoomRestTimeRequest318_ptr CNetworkEXGuildRoomRestTimeRequest318_next(nullptr);
+        static info::CNetworkEXGuildRoomRestTimeRequest318_clbk CNetworkEXGuildRoomRestTimeRequest318_user(nullptr);
+        static info::CNetworkEXGuildSelfLeaveRequest320_ptr CNetworkEXGuildSelfLeaveRequest320_next(nullptr);
+        static info::CNetworkEXGuildSelfLeaveRequest320_clbk CNetworkEXGuildSelfLeaveRequest320_user(nullptr);
+        static info::CNetworkEXGuildSetHonorRequest322_ptr CNetworkEXGuildSetHonorRequest322_next(nullptr);
+        static info::CNetworkEXGuildSetHonorRequest322_clbk CNetworkEXGuildSetHonorRequest322_user(nullptr);
+        static info::CNetworkEXGuildVoteRequest324_ptr CNetworkEXGuildVoteRequest324_next(nullptr);
+        static info::CNetworkEXGuildVoteRequest324_clbk CNetworkEXGuildVoteRequest324_user(nullptr);
+        static info::CNetworkEXGustureRequest326_ptr CNetworkEXGustureRequest326_next(nullptr);
+        static info::CNetworkEXGustureRequest326_clbk CNetworkEXGustureRequest326_user(nullptr);
+        static info::CNetworkEXInitClassCostRequest328_ptr CNetworkEXInitClassCostRequest328_next(nullptr);
+        static info::CNetworkEXInitClassCostRequest328_clbk CNetworkEXInitClassCostRequest328_user(nullptr);
+        static info::CNetworkEXInitClassRequest330_ptr CNetworkEXInitClassRequest330_next(nullptr);
+        static info::CNetworkEXInitClassRequest330_clbk CNetworkEXInitClassRequest330_user(nullptr);
+        static info::CNetworkEXInvenDownloadRequest332_ptr CNetworkEXInvenDownloadRequest332_next(nullptr);
+        static info::CNetworkEXInvenDownloadRequest332_clbk CNetworkEXInvenDownloadRequest332_user(nullptr);
+        static info::CNetworkEXItemboxTakeRequest334_ptr CNetworkEXItemboxTakeRequest334_next(nullptr);
+        static info::CNetworkEXItemboxTakeRequest334_clbk CNetworkEXItemboxTakeRequest334_user(nullptr);
+        static info::CNetworkEXLimitItemNumRequest336_ptr CNetworkEXLimitItemNumRequest336_next(nullptr);
+        static info::CNetworkEXLimitItemNumRequest336_clbk CNetworkEXLimitItemNumRequest336_user(nullptr);
+        static info::CNetworkEXLinkBoardDownloadRequest338_ptr CNetworkEXLinkBoardDownloadRequest338_next(nullptr);
+        static info::CNetworkEXLinkBoardDownloadRequest338_clbk CNetworkEXLinkBoardDownloadRequest338_user(nullptr);
+        static info::CNetworkEXLogInControllServer340_ptr CNetworkEXLogInControllServer340_next(nullptr);
+        static info::CNetworkEXLogInControllServer340_clbk CNetworkEXLogInControllServer340_user(nullptr);
+        static info::CNetworkEXLogInWebAgentServer342_ptr CNetworkEXLogInWebAgentServer342_next(nullptr);
+        static info::CNetworkEXLogInWebAgentServer342_clbk CNetworkEXLogInWebAgentServer342_user(nullptr);
+        static info::CNetworkEXMacroDownLoadRequest344_ptr CNetworkEXMacroDownLoadRequest344_next(nullptr);
+        static info::CNetworkEXMacroDownLoadRequest344_clbk CNetworkEXMacroDownLoadRequest344_user(nullptr);
+        static info::CNetworkEXMakeItemRequest346_ptr CNetworkEXMakeItemRequest346_next(nullptr);
+        static info::CNetworkEXMakeItemRequest346_clbk CNetworkEXMakeItemRequest346_user(nullptr);
+        static info::CNetworkEXMakeTowerRequest348_ptr CNetworkEXMakeTowerRequest348_next(nullptr);
+        static info::CNetworkEXMakeTowerRequest348_clbk CNetworkEXMakeTowerRequest348_user(nullptr);
+        static info::CNetworkEXMakeTrapRequest350_ptr CNetworkEXMakeTrapRequest350_next(nullptr);
+        static info::CNetworkEXMakeTrapRequest350_clbk CNetworkEXMakeTrapRequest350_user(nullptr);
+        static info::CNetworkEXManageClientForceExitRequest352_ptr CNetworkEXManageClientForceExitRequest352_next(nullptr);
+        static info::CNetworkEXManageClientForceExitRequest352_clbk CNetworkEXManageClientForceExitRequest352_user(nullptr);
+        static info::CNetworkEXManageClientLimitRunRequest354_ptr CNetworkEXManageClientLimitRunRequest354_next(nullptr);
+        static info::CNetworkEXManageClientLimitRunRequest354_clbk CNetworkEXManageClientLimitRunRequest354_user(nullptr);
+        static info::CNetworkEXMineCancleRequest356_ptr CNetworkEXMineCancleRequest356_next(nullptr);
+        static info::CNetworkEXMineCancleRequest356_clbk CNetworkEXMineCancleRequest356_user(nullptr);
+        static info::CNetworkEXMineStartRequest358_ptr CNetworkEXMineStartRequest358_next(nullptr);
+        static info::CNetworkEXMineStartRequest358_clbk CNetworkEXMineStartRequest358_user(nullptr);
+        static info::CNetworkEXModeChangeRequest360_ptr CNetworkEXModeChangeRequest360_next(nullptr);
+        static info::CNetworkEXModeChangeRequest360_clbk CNetworkEXModeChangeRequest360_user(nullptr);
+        static info::CNetworkEXMoveInfoRequeset362_ptr CNetworkEXMoveInfoRequeset362_next(nullptr);
+        static info::CNetworkEXMoveInfoRequeset362_clbk CNetworkEXMoveInfoRequeset362_user(nullptr);
+        static info::CNetworkEXMoveLobbyRequest364_ptr CNetworkEXMoveLobbyRequest364_next(nullptr);
+        static info::CNetworkEXMoveLobbyRequest364_clbk CNetworkEXMoveLobbyRequest364_user(nullptr);
+        static info::CNetworkEXMovePortalRequest366_ptr CNetworkEXMovePortalRequest366_next(nullptr);
+        static info::CNetworkEXMovePortalRequest366_clbk CNetworkEXMovePortalRequest366_user(nullptr);
+        static info::CNetworkEXMoveToOwnStoneMapRequest368_ptr CNetworkEXMoveToOwnStoneMapRequest368_next(nullptr);
+        static info::CNetworkEXMoveToOwnStoneMapRequest368_clbk CNetworkEXMoveToOwnStoneMapRequest368_user(nullptr);
+        static info::CNetworkEXMoveTypeChangeRequeset370_ptr CNetworkEXMoveTypeChangeRequeset370_next(nullptr);
+        static info::CNetworkEXMoveTypeChangeRequeset370_clbk CNetworkEXMoveTypeChangeRequeset370_user(nullptr);
+        static info::CNetworkEXNPCDialogRequest372_ptr CNetworkEXNPCDialogRequest372_next(nullptr);
+        static info::CNetworkEXNPCDialogRequest372_clbk CNetworkEXNPCDialogRequest372_user(nullptr);
+        static info::CNetworkEXNPCLinkCheckItemRequest374_ptr CNetworkEXNPCLinkCheckItemRequest374_next(nullptr);
+        static info::CNetworkEXNPCLinkCheckItemRequest374_clbk CNetworkEXNPCLinkCheckItemRequest374_user(nullptr);
+        static info::CNetworkEXNPCQuestListRequest376_ptr CNetworkEXNPCQuestListRequest376_next(nullptr);
+        static info::CNetworkEXNPCQuestListRequest376_clbk CNetworkEXNPCQuestListRequest376_user(nullptr);
+        static info::CNetworkEXNPCQuestRequest378_ptr CNetworkEXNPCQuestRequest378_next(nullptr);
+        static info::CNetworkEXNPCQuestRequest378_clbk CNetworkEXNPCQuestRequest378_user(nullptr);
+        static info::CNetworkEXNPCWatchingRequest380_ptr CNetworkEXNPCWatchingRequest380_next(nullptr);
+        static info::CNetworkEXNPCWatchingRequest380_clbk CNetworkEXNPCWatchingRequest380_user(nullptr);
+        static info::CNetworkEXNewPosStartRequest382_ptr CNetworkEXNewPosStartRequest382_next(nullptr);
+        static info::CNetworkEXNewPosStartRequest382_clbk CNetworkEXNewPosStartRequest382_user(nullptr);
+        static info::CNetworkEXNextPoint384_ptr CNetworkEXNextPoint384_next(nullptr);
+        static info::CNetworkEXNextPoint384_clbk CNetworkEXNextPoint384_user(nullptr);
+        static info::CNetworkEXNotifyLocalTimeRequest386_ptr CNetworkEXNotifyLocalTimeRequest386_next(nullptr);
+        static info::CNetworkEXNotifyLocalTimeRequest386_clbk CNetworkEXNotifyLocalTimeRequest386_user(nullptr);
+        static info::CNetworkEXNotifyRaceBossCryMsg388_ptr CNetworkEXNotifyRaceBossCryMsg388_next(nullptr);
+        static info::CNetworkEXNotifyRaceBossCryMsg388_clbk CNetworkEXNotifyRaceBossCryMsg388_user(nullptr);
+        static info::CNetworkEXObjectServerPosRequest390_ptr CNetworkEXObjectServerPosRequest390_next(nullptr);
+        static info::CNetworkEXObjectServerPosRequest390_clbk CNetworkEXObjectServerPosRequest390_user(nullptr);
+        static info::CNetworkEXOffPartRequest392_ptr CNetworkEXOffPartRequest392_next(nullptr);
+        static info::CNetworkEXOffPartRequest392_clbk CNetworkEXOffPartRequest392_user(nullptr);
+        static info::CNetworkEXOpenControlInform394_ptr CNetworkEXOpenControlInform394_next(nullptr);
+        static info::CNetworkEXOpenControlInform394_clbk CNetworkEXOpenControlInform394_user(nullptr);
+        static info::CNetworkEXOpenWorldFailureResult396_ptr CNetworkEXOpenWorldFailureResult396_next(nullptr);
+        static info::CNetworkEXOpenWorldFailureResult396_clbk CNetworkEXOpenWorldFailureResult396_user(nullptr);
+        static info::CNetworkEXOpenWorldSuccessResult398_ptr CNetworkEXOpenWorldSuccessResult398_next(nullptr);
+        static info::CNetworkEXOpenWorldSuccessResult398_clbk CNetworkEXOpenWorldSuccessResult398_user(nullptr);
+        static info::CNetworkEXOreIntoBagRequest400_ptr CNetworkEXOreIntoBagRequest400_next(nullptr);
+        static info::CNetworkEXOreIntoBagRequest400_clbk CNetworkEXOreIntoBagRequest400_user(nullptr);
+        static info::CNetworkEXOtherShapeRequest402_ptr CNetworkEXOtherShapeRequest402_next(nullptr);
+        static info::CNetworkEXOtherShapeRequest402_clbk CNetworkEXOtherShapeRequest402_user(nullptr);
+        static info::CNetworkEXPartyDisjointRequest404_ptr CNetworkEXPartyDisjointRequest404_next(nullptr);
+        static info::CNetworkEXPartyDisjointRequest404_clbk CNetworkEXPartyDisjointRequest404_user(nullptr);
+        static info::CNetworkEXPartyJoinApplicatiohAnswer406_ptr CNetworkEXPartyJoinApplicatiohAnswer406_next(nullptr);
+        static info::CNetworkEXPartyJoinApplicatiohAnswer406_clbk CNetworkEXPartyJoinApplicatiohAnswer406_user(nullptr);
+        static info::CNetworkEXPartyJoinApplication408_ptr CNetworkEXPartyJoinApplication408_next(nullptr);
+        static info::CNetworkEXPartyJoinApplication408_clbk CNetworkEXPartyJoinApplication408_user(nullptr);
+        static info::CNetworkEXPartyJoinInvitation410_ptr CNetworkEXPartyJoinInvitation410_next(nullptr);
+        static info::CNetworkEXPartyJoinInvitation410_clbk CNetworkEXPartyJoinInvitation410_user(nullptr);
+        static info::CNetworkEXPartyJoinInvitationAnswer412_ptr CNetworkEXPartyJoinInvitationAnswer412_next(nullptr);
+        static info::CNetworkEXPartyJoinInvitationAnswer412_clbk CNetworkEXPartyJoinInvitationAnswer412_user(nullptr);
+        static info::CNetworkEXPartyLeaveCompulsionRequest414_ptr CNetworkEXPartyLeaveCompulsionRequest414_next(nullptr);
+        static info::CNetworkEXPartyLeaveCompulsionRequest414_clbk CNetworkEXPartyLeaveCompulsionRequest414_user(nullptr);
+        static info::CNetworkEXPartyLeaveSelfRequest416_ptr CNetworkEXPartyLeaveSelfRequest416_next(nullptr);
+        static info::CNetworkEXPartyLeaveSelfRequest416_clbk CNetworkEXPartyLeaveSelfRequest416_user(nullptr);
+        static info::CNetworkEXPartyLockRequest418_ptr CNetworkEXPartyLockRequest418_next(nullptr);
+        static info::CNetworkEXPartyLockRequest418_clbk CNetworkEXPartyLockRequest418_user(nullptr);
+        static info::CNetworkEXPartyReqBlockReport420_ptr CNetworkEXPartyReqBlockReport420_next(nullptr);
+        static info::CNetworkEXPartyReqBlockReport420_clbk CNetworkEXPartyReqBlockReport420_user(nullptr);
+        static info::CNetworkEXPartySuccessionRequest422_ptr CNetworkEXPartySuccessionRequest422_next(nullptr);
+        static info::CNetworkEXPartySuccessionRequest422_clbk CNetworkEXPartySuccessionRequest422_user(nullptr);
+        static info::CNetworkEXPcBangPrimiumCouponRequest424_ptr CNetworkEXPcBangPrimiumCouponRequest424_next(nullptr);
+        static info::CNetworkEXPcBangPrimiumCouponRequest424_clbk CNetworkEXPcBangPrimiumCouponRequest424_user(nullptr);
+        static info::CNetworkEXPlayerInfoResult426_ptr CNetworkEXPlayerInfoResult426_next(nullptr);
+        static info::CNetworkEXPlayerInfoResult426_clbk CNetworkEXPlayerInfoResult426_user(nullptr);
+        static info::CNetworkEXPlayerMacroUpdate428_ptr CNetworkEXPlayerMacroUpdate428_next(nullptr);
+        static info::CNetworkEXPlayerMacroUpdate428_clbk CNetworkEXPlayerMacroUpdate428_user(nullptr);
+        static info::CNetworkEXPostContentRequest430_ptr CNetworkEXPostContentRequest430_next(nullptr);
+        static info::CNetworkEXPostContentRequest430_clbk CNetworkEXPostContentRequest430_user(nullptr);
+        static info::CNetworkEXPostDeleteRequest432_ptr CNetworkEXPostDeleteRequest432_next(nullptr);
+        static info::CNetworkEXPostDeleteRequest432_clbk CNetworkEXPostDeleteRequest432_user(nullptr);
+        static info::CNetworkEXPostItemGoldRequest434_ptr CNetworkEXPostItemGoldRequest434_next(nullptr);
+        static info::CNetworkEXPostItemGoldRequest434_clbk CNetworkEXPostItemGoldRequest434_user(nullptr);
+        static info::CNetworkEXPostListRequest436_ptr CNetworkEXPostListRequest436_next(nullptr);
+        static info::CNetworkEXPostListRequest436_clbk CNetworkEXPostListRequest436_user(nullptr);
+        static info::CNetworkEXPostReturnConfirmRequest438_ptr CNetworkEXPostReturnConfirmRequest438_next(nullptr);
+        static info::CNetworkEXPostReturnConfirmRequest438_clbk CNetworkEXPostReturnConfirmRequest438_user(nullptr);
+        static info::CNetworkEXPostSendRequest440_ptr CNetworkEXPostSendRequest440_next(nullptr);
+        static info::CNetworkEXPostSendRequest440_clbk CNetworkEXPostSendRequest440_user(nullptr);
+        static info::CNetworkEXPotionSocketDivisionRequest442_ptr CNetworkEXPotionSocketDivisionRequest442_next(nullptr);
+        static info::CNetworkEXPotionSocketDivisionRequest442_clbk CNetworkEXPotionSocketDivisionRequest442_user(nullptr);
+        static info::CNetworkEXPotionSocketSeparationRequest444_ptr CNetworkEXPotionSocketSeparationRequest444_next(nullptr);
+        static info::CNetworkEXPotionSocketSeparationRequest444_clbk CNetworkEXPotionSocketSeparationRequest444_user(nullptr);
+        static info::CNetworkEXProposeVoteRequest446_ptr CNetworkEXProposeVoteRequest446_next(nullptr);
+        static info::CNetworkEXProposeVoteRequest446_clbk CNetworkEXProposeVoteRequest446_user(nullptr);
+        static info::CNetworkEXPvpCashRecorverWithTalik448_ptr CNetworkEXPvpCashRecorverWithTalik448_next(nullptr);
+        static info::CNetworkEXPvpCashRecorverWithTalik448_clbk CNetworkEXPvpCashRecorverWithTalik448_user(nullptr);
+        static info::CNetworkEXPvpRankListRequest450_ptr CNetworkEXPvpRankListRequest450_next(nullptr);
+        static info::CNetworkEXPvpRankListRequest450_clbk CNetworkEXPvpRankListRequest450_user(nullptr);
+        static info::CNetworkEXQuestDownloadRequest452_ptr CNetworkEXQuestDownloadRequest452_next(nullptr);
+        static info::CNetworkEXQuestDownloadRequest452_clbk CNetworkEXQuestDownloadRequest452_user(nullptr);
+        static info::CNetworkEXQuestGiveupRequest454_ptr CNetworkEXQuestGiveupRequest454_next(nullptr);
+        static info::CNetworkEXQuestGiveupRequest454_clbk CNetworkEXQuestGiveupRequest454_user(nullptr);
+        static info::CNetworkEXQuestSelectRewardReport456_ptr CNetworkEXQuestSelectRewardReport456_next(nullptr);
+        static info::CNetworkEXQuestSelectRewardReport456_clbk CNetworkEXQuestSelectRewardReport456_user(nullptr);
+        static info::CNetworkEXRadarCharListRequest458_ptr CNetworkEXRadarCharListRequest458_next(nullptr);
+        static info::CNetworkEXRadarCharListRequest458_clbk CNetworkEXRadarCharListRequest458_user(nullptr);
+        static info::CNetworkEXRealMovPosRequest460_ptr CNetworkEXRealMovPosRequest460_next(nullptr);
+        static info::CNetworkEXRealMovPosRequest460_clbk CNetworkEXRealMovPosRequest460_user(nullptr);
+        static info::CNetworkEXRegedCharRequest462_ptr CNetworkEXRegedCharRequest462_next(nullptr);
+        static info::CNetworkEXRegedCharRequest462_clbk CNetworkEXRegedCharRequest462_user(nullptr);
+        static info::CNetworkEXRegistBindRequest464_ptr CNetworkEXRegistBindRequest464_next(nullptr);
+        static info::CNetworkEXRegistBindRequest464_clbk CNetworkEXRegistBindRequest464_user(nullptr);
+        static info::CNetworkEXReleaseGroupTargetObjectRequest466_ptr CNetworkEXReleaseGroupTargetObjectRequest466_next(nullptr);
+        static info::CNetworkEXReleaseGroupTargetObjectRequest466_clbk CNetworkEXReleaseGroupTargetObjectRequest466_user(nullptr);
+        static info::CNetworkEXReleaseSiegeModeRequest468_ptr CNetworkEXReleaseSiegeModeRequest468_next(nullptr);
+        static info::CNetworkEXReleaseSiegeModeRequest468_clbk CNetworkEXReleaseSiegeModeRequest468_user(nullptr);
+        static info::CNetworkEXReleaseTargetObjectRequest470_ptr CNetworkEXReleaseTargetObjectRequest470_next(nullptr);
+        static info::CNetworkEXReleaseTargetObjectRequest470_clbk CNetworkEXReleaseTargetObjectRequest470_user(nullptr);
+        static info::CNetworkEXRequestChangeTaxRate472_ptr CNetworkEXRequestChangeTaxRate472_next(nullptr);
+        static info::CNetworkEXRequestChangeTaxRate472_clbk CNetworkEXRequestChangeTaxRate472_user(nullptr);
+        static info::CNetworkEXRequestPatriarchPunishment474_ptr CNetworkEXRequestPatriarchPunishment474_next(nullptr);
+        static info::CNetworkEXRequestPatriarchPunishment474_clbk CNetworkEXRequestPatriarchPunishment474_user(nullptr);
+        static info::CNetworkEXRequestTLLogoutTime476_ptr CNetworkEXRequestTLLogoutTime476_next(nullptr);
+        static info::CNetworkEXRequestTLLogoutTime476_clbk CNetworkEXRequestTLLogoutTime476_user(nullptr);
+        static info::CNetworkEXRequestTaxRate478_ptr CNetworkEXRequestTaxRate478_next(nullptr);
+        static info::CNetworkEXRequestTaxRate478_clbk CNetworkEXRequestTaxRate478_user(nullptr);
+        static info::CNetworkEXRequestUILockFindPW480_ptr CNetworkEXRequestUILockFindPW480_next(nullptr);
+        static info::CNetworkEXRequestUILockFindPW480_clbk CNetworkEXRequestUILockFindPW480_user(nullptr);
+        static info::CNetworkEXRequestUILockInit482_ptr CNetworkEXRequestUILockInit482_next(nullptr);
+        static info::CNetworkEXRequestUILockInit482_clbk CNetworkEXRequestUILockInit482_user(nullptr);
+        static info::CNetworkEXRequestUILockUpdateInfo484_ptr CNetworkEXRequestUILockUpdateInfo484_next(nullptr);
+        static info::CNetworkEXRequestUILockUpdateInfo484_clbk CNetworkEXRequestUILockUpdateInfo484_user(nullptr);
+        static info::CNetworkEXRequestUILockUserCertify486_ptr CNetworkEXRequestUILockUserCertify486_next(nullptr);
+        static info::CNetworkEXRequestUILockUserCertify486_clbk CNetworkEXRequestUILockUserCertify486_user(nullptr);
+        static info::CNetworkEXResCuttingRequest488_ptr CNetworkEXResCuttingRequest488_next(nullptr);
+        static info::CNetworkEXResCuttingRequest488_clbk CNetworkEXResCuttingRequest488_user(nullptr);
+        static info::CNetworkEXResDivisionRequest490_ptr CNetworkEXResDivisionRequest490_next(nullptr);
+        static info::CNetworkEXResDivisionRequest490_clbk CNetworkEXResDivisionRequest490_user(nullptr);
+        static info::CNetworkEXResSeparationRequest492_ptr CNetworkEXResSeparationRequest492_next(nullptr);
+        static info::CNetworkEXResSeparationRequest492_clbk CNetworkEXResSeparationRequest492_user(nullptr);
+        static info::CNetworkEXRevival494_ptr CNetworkEXRevival494_next(nullptr);
+        static info::CNetworkEXRevival494_clbk CNetworkEXRevival494_user(nullptr);
+        static info::CNetworkEXSelCharRequest496_ptr CNetworkEXSelCharRequest496_next(nullptr);
+        static info::CNetworkEXSelCharRequest496_clbk CNetworkEXSelCharRequest496_user(nullptr);
+        static info::CNetworkEXSelectClassRequest498_ptr CNetworkEXSelectClassRequest498_next(nullptr);
+        static info::CNetworkEXSelectClassRequest498_clbk CNetworkEXSelectClassRequest498_user(nullptr);
+        static info::CNetworkEXSelectPcBangRewardRequest500_ptr CNetworkEXSelectPcBangRewardRequest500_next(nullptr);
+        static info::CNetworkEXSelectPcBangRewardRequest500_clbk CNetworkEXSelectPcBangRewardRequest500_user(nullptr);
+        static info::CNetworkEXSelectWaitedQuestReport502_ptr CNetworkEXSelectWaitedQuestReport502_next(nullptr);
+        static info::CNetworkEXSelectWaitedQuestReport502_clbk CNetworkEXSelectWaitedQuestReport502_user(nullptr);
+        static info::CNetworkEXSellStoreRequest504_ptr CNetworkEXSellStoreRequest504_next(nullptr);
+        static info::CNetworkEXSellStoreRequest504_clbk CNetworkEXSellStoreRequest504_user(nullptr);
+        static info::CNetworkEXSendRaceBossMsgFromWebRequest506_ptr CNetworkEXSendRaceBossMsgFromWebRequest506_next(nullptr);
+        static info::CNetworkEXSendRaceBossMsgFromWebRequest506_clbk CNetworkEXSendRaceBossMsgFromWebRequest506_user(nullptr);
+        static info::CNetworkEXSetGroupMapPointRequest508_ptr CNetworkEXSetGroupMapPointRequest508_next(nullptr);
+        static info::CNetworkEXSetGroupMapPointRequest508_clbk CNetworkEXSetGroupMapPointRequest508_user(nullptr);
+        static info::CNetworkEXSetGroupTargetObjectRequest510_ptr CNetworkEXSetGroupTargetObjectRequest510_next(nullptr);
+        static info::CNetworkEXSetGroupTargetObjectRequest510_clbk CNetworkEXSetGroupTargetObjectRequest510_user(nullptr);
+        static info::CNetworkEXSetItemCheckRequest512_ptr CNetworkEXSetItemCheckRequest512_next(nullptr);
+        static info::CNetworkEXSetItemCheckRequest512_clbk CNetworkEXSetItemCheckRequest512_user(nullptr);
+        static info::CNetworkEXSetPassablePacket514_ptr CNetworkEXSetPassablePacket514_next(nullptr);
+        static info::CNetworkEXSetPassablePacket514_clbk CNetworkEXSetPassablePacket514_user(nullptr);
+        static info::CNetworkEXSetRaceBossCryMsgRequest516_ptr CNetworkEXSetRaceBossCryMsgRequest516_next(nullptr);
+        static info::CNetworkEXSetRaceBossCryMsgRequest516_clbk CNetworkEXSetRaceBossCryMsgRequest516_user(nullptr);
+        static info::CNetworkEXSetTargetObjectRequest518_ptr CNetworkEXSetTargetObjectRequest518_next(nullptr);
+        static info::CNetworkEXSetTargetObjectRequest518_clbk CNetworkEXSetTargetObjectRequest518_user(nullptr);
+        static info::CNetworkEXSkillRecallTeleportRequest520_ptr CNetworkEXSkillRecallTeleportRequest520_next(nullptr);
+        static info::CNetworkEXSkillRecallTeleportRequest520_clbk CNetworkEXSkillRecallTeleportRequest520_user(nullptr);
+        static info::CNetworkEXSkillRequest522_ptr CNetworkEXSkillRequest522_next(nullptr);
+        static info::CNetworkEXSkillRequest522_clbk CNetworkEXSkillRequest522_user(nullptr);
+        static info::CNetworkEXSpecialDownloadRequest524_ptr CNetworkEXSpecialDownloadRequest524_next(nullptr);
+        static info::CNetworkEXSpecialDownloadRequest524_clbk CNetworkEXSpecialDownloadRequest524_user(nullptr);
+        static info::CNetworkEXStop526_ptr CNetworkEXStop526_next(nullptr);
+        static info::CNetworkEXStop526_clbk CNetworkEXStop526_user(nullptr);
+        static info::CNetworkEXStoreListRequest528_ptr CNetworkEXStoreListRequest528_next(nullptr);
+        static info::CNetworkEXStoreListRequest528_clbk CNetworkEXStoreListRequest528_user(nullptr);
+        static info::CNetworkEXTaiwanBillingUserCertify530_ptr CNetworkEXTaiwanBillingUserCertify530_next(nullptr);
+        static info::CNetworkEXTaiwanBillingUserCertify530_clbk CNetworkEXTaiwanBillingUserCertify530_user(nullptr);
+        static info::CNetworkEXTalikCrystalExchangeRequest532_ptr CNetworkEXTalikCrystalExchangeRequest532_next(nullptr);
+        static info::CNetworkEXTalikCrystalExchangeRequest532_clbk CNetworkEXTalikCrystalExchangeRequest532_user(nullptr);
+        static info::CNetworkEXTalikRecorverList534_ptr CNetworkEXTalikRecorverList534_next(nullptr);
+        static info::CNetworkEXTalikRecorverList534_clbk CNetworkEXTalikRecorverList534_user(nullptr);
+        static info::CNetworkEXThrowSkillRequest536_ptr CNetworkEXThrowSkillRequest536_next(nullptr);
+        static info::CNetworkEXThrowSkillRequest536_clbk CNetworkEXThrowSkillRequest536_user(nullptr);
+        static info::CNetworkEXThrowStorageRequest538_ptr CNetworkEXThrowStorageRequest538_next(nullptr);
+        static info::CNetworkEXThrowStorageRequest538_clbk CNetworkEXThrowStorageRequest538_user(nullptr);
+        static info::CNetworkEXThrowUnitRequest540_ptr CNetworkEXThrowUnitRequest540_next(nullptr);
+        static info::CNetworkEXThrowUnitRequest540_clbk CNetworkEXThrowUnitRequest540_user(nullptr);
+        static info::CNetworkEXTotalGuildRankRequest542_ptr CNetworkEXTotalGuildRankRequest542_next(nullptr);
+        static info::CNetworkEXTotalGuildRankRequest542_clbk CNetworkEXTotalGuildRankRequest542_user(nullptr);
+        static info::CNetworkEXTradeBlockReport544_ptr CNetworkEXTradeBlockReport544_next(nullptr);
+        static info::CNetworkEXTradeBlockReport544_clbk CNetworkEXTradeBlockReport544_user(nullptr);
+        static info::CNetworkEXTransAccountInform546_ptr CNetworkEXTransAccountInform546_next(nullptr);
+        static info::CNetworkEXTransAccountInform546_clbk CNetworkEXTransAccountInform546_user(nullptr);
+        static info::CNetworkEXTransShipRenewTicketRequest548_ptr CNetworkEXTransShipRenewTicketRequest548_next(nullptr);
+        static info::CNetworkEXTransShipRenewTicketRequest548_clbk CNetworkEXTransShipRenewTicketRequest548_user(nullptr);
+        static info::CNetworkEXTransformSiegeModeRequest550_ptr CNetworkEXTransformSiegeModeRequest550_next(nullptr);
+        static info::CNetworkEXTransformSiegeModeRequest550_clbk CNetworkEXTransformSiegeModeRequest550_user(nullptr);
+        static info::CNetworkEXTrunkAlterItemSlotRequest552_ptr CNetworkEXTrunkAlterItemSlotRequest552_next(nullptr);
+        static info::CNetworkEXTrunkAlterItemSlotRequest552_clbk CNetworkEXTrunkAlterItemSlotRequest552_user(nullptr);
+        static info::CNetworkEXTrunkChangePasswdRequest554_ptr CNetworkEXTrunkChangePasswdRequest554_next(nullptr);
+        static info::CNetworkEXTrunkChangePasswdRequest554_clbk CNetworkEXTrunkChangePasswdRequest554_user(nullptr);
+        static info::CNetworkEXTrunkCreateCostIsFreeRequest556_ptr CNetworkEXTrunkCreateCostIsFreeRequest556_next(nullptr);
+        static info::CNetworkEXTrunkCreateCostIsFreeRequest556_clbk CNetworkEXTrunkCreateCostIsFreeRequest556_user(nullptr);
+        static info::CNetworkEXTrunkDownloadRequest558_ptr CNetworkEXTrunkDownloadRequest558_next(nullptr);
+        static info::CNetworkEXTrunkDownloadRequest558_clbk CNetworkEXTrunkDownloadRequest558_user(nullptr);
+        static info::CNetworkEXTrunkEstRequest560_ptr CNetworkEXTrunkEstRequest560_next(nullptr);
+        static info::CNetworkEXTrunkEstRequest560_clbk CNetworkEXTrunkEstRequest560_user(nullptr);
+        static info::CNetworkEXTrunkExtendRequest562_ptr CNetworkEXTrunkExtendRequest562_next(nullptr);
+        static info::CNetworkEXTrunkExtendRequest562_clbk CNetworkEXTrunkExtendRequest562_user(nullptr);
+        static info::CNetworkEXTrunkHintAnswerRequest564_ptr CNetworkEXTrunkHintAnswerRequest564_next(nullptr);
+        static info::CNetworkEXTrunkHintAnswerRequest564_clbk CNetworkEXTrunkHintAnswerRequest564_user(nullptr);
+        static info::CNetworkEXTrunkIoMergeRequest566_ptr CNetworkEXTrunkIoMergeRequest566_next(nullptr);
+        static info::CNetworkEXTrunkIoMergeRequest566_clbk CNetworkEXTrunkIoMergeRequest566_user(nullptr);
+        static info::CNetworkEXTrunkIoMoneyRequest568_ptr CNetworkEXTrunkIoMoneyRequest568_next(nullptr);
+        static info::CNetworkEXTrunkIoMoneyRequest568_clbk CNetworkEXTrunkIoMoneyRequest568_user(nullptr);
+        static info::CNetworkEXTrunkIoMoveRequest570_ptr CNetworkEXTrunkIoMoveRequest570_next(nullptr);
+        static info::CNetworkEXTrunkIoMoveRequest570_clbk CNetworkEXTrunkIoMoveRequest570_user(nullptr);
+        static info::CNetworkEXTrunkIoSwapRequest572_ptr CNetworkEXTrunkIoSwapRequest572_next(nullptr);
+        static info::CNetworkEXTrunkIoSwapRequest572_clbk CNetworkEXTrunkIoSwapRequest572_user(nullptr);
+        static info::CNetworkEXTrunkPotionDivisionRequest574_ptr CNetworkEXTrunkPotionDivisionRequest574_next(nullptr);
+        static info::CNetworkEXTrunkPotionDivisionRequest574_clbk CNetworkEXTrunkPotionDivisionRequest574_user(nullptr);
+        static info::CNetworkEXTrunkPwHintIndexRequest576_ptr CNetworkEXTrunkPwHintIndexRequest576_next(nullptr);
+        static info::CNetworkEXTrunkPwHintIndexRequest576_clbk CNetworkEXTrunkPwHintIndexRequest576_user(nullptr);
+        static info::CNetworkEXTrunkResDivisionRequest578_ptr CNetworkEXTrunkResDivisionRequest578_next(nullptr);
+        static info::CNetworkEXTrunkResDivisionRequest578_clbk CNetworkEXTrunkResDivisionRequest578_user(nullptr);
+        static info::CNetworkEXTutorialProcessReport580_ptr CNetworkEXTutorialProcessReport580_next(nullptr);
+        static info::CNetworkEXTutorialProcessReport580_clbk CNetworkEXTutorialProcessReport580_user(nullptr);
+        static info::CNetworkEXUILockInitResult582_ptr CNetworkEXUILockInitResult582_next(nullptr);
+        static info::CNetworkEXUILockInitResult582_clbk CNetworkEXUILockInitResult582_user(nullptr);
+        static info::CNetworkEXUILockRefreshResult584_ptr CNetworkEXUILockRefreshResult584_next(nullptr);
+        static info::CNetworkEXUILockRefreshResult584_clbk CNetworkEXUILockRefreshResult584_user(nullptr);
+        static info::CNetworkEXUILockUpdateResult586_ptr CNetworkEXUILockUpdateResult586_next(nullptr);
+        static info::CNetworkEXUILockUpdateResult586_clbk CNetworkEXUILockUpdateResult586_user(nullptr);
+        static info::CNetworkEXUnitBulletFillRequest588_ptr CNetworkEXUnitBulletFillRequest588_next(nullptr);
+        static info::CNetworkEXUnitBulletFillRequest588_clbk CNetworkEXUnitBulletFillRequest588_user(nullptr);
+        static info::CNetworkEXUnitBulletReplaceRequest590_ptr CNetworkEXUnitBulletReplaceRequest590_next(nullptr);
+        static info::CNetworkEXUnitBulletReplaceRequest590_clbk CNetworkEXUnitBulletReplaceRequest590_user(nullptr);
+        static info::CNetworkEXUnitDeliveryRequest592_ptr CNetworkEXUnitDeliveryRequest592_next(nullptr);
+        static info::CNetworkEXUnitDeliveryRequest592_clbk CNetworkEXUnitDeliveryRequest592_user(nullptr);
+        static info::CNetworkEXUnitFrameBuyRequest594_ptr CNetworkEXUnitFrameBuyRequest594_next(nullptr);
+        static info::CNetworkEXUnitFrameBuyRequest594_clbk CNetworkEXUnitFrameBuyRequest594_user(nullptr);
+        static info::CNetworkEXUnitFrameRepairRequest596_ptr CNetworkEXUnitFrameRepairRequest596_next(nullptr);
+        static info::CNetworkEXUnitFrameRepairRequest596_clbk CNetworkEXUnitFrameRepairRequest596_user(nullptr);
+        static info::CNetworkEXUnitLeaveRequest598_ptr CNetworkEXUnitLeaveRequest598_next(nullptr);
+        static info::CNetworkEXUnitLeaveRequest598_clbk CNetworkEXUnitLeaveRequest598_user(nullptr);
+        static info::CNetworkEXUnitPackFillRequest600_ptr CNetworkEXUnitPackFillRequest600_next(nullptr);
+        static info::CNetworkEXUnitPackFillRequest600_clbk CNetworkEXUnitPackFillRequest600_user(nullptr);
+        static info::CNetworkEXUnitPartTuningRequest602_ptr CNetworkEXUnitPartTuningRequest602_next(nullptr);
+        static info::CNetworkEXUnitPartTuningRequest602_clbk CNetworkEXUnitPartTuningRequest602_user(nullptr);
+        static info::CNetworkEXUnitReturnRequest604_ptr CNetworkEXUnitReturnRequest604_next(nullptr);
+        static info::CNetworkEXUnitReturnRequest604_clbk CNetworkEXUnitReturnRequest604_user(nullptr);
+        static info::CNetworkEXUnitSellRequest606_ptr CNetworkEXUnitSellRequest606_next(nullptr);
+        static info::CNetworkEXUnitSellRequest606_clbk CNetworkEXUnitSellRequest606_user(nullptr);
+        static info::CNetworkEXUnitTakeRequest608_ptr CNetworkEXUnitTakeRequest608_next(nullptr);
+        static info::CNetworkEXUnitTakeRequest608_clbk CNetworkEXUnitTakeRequest608_user(nullptr);
+        static info::CNetworkEXUpgradeItemRequest610_ptr CNetworkEXUpgradeItemRequest610_next(nullptr);
+        static info::CNetworkEXUpgradeItemRequest610_clbk CNetworkEXUpgradeItemRequest610_user(nullptr);
+        static info::CNetworkEXUseFireCrackerItemRequest612_ptr CNetworkEXUseFireCrackerItemRequest612_next(nullptr);
+        static info::CNetworkEXUseFireCrackerItemRequest612_clbk CNetworkEXUseFireCrackerItemRequest612_user(nullptr);
+        static info::CNetworkEXUsePotionRequest614_ptr CNetworkEXUsePotionRequest614_next(nullptr);
+        static info::CNetworkEXUsePotionRequest614_clbk CNetworkEXUsePotionRequest614_user(nullptr);
+        static info::CNetworkEXUseRadarItemRequest616_ptr CNetworkEXUseRadarItemRequest616_next(nullptr);
+        static info::CNetworkEXUseRadarItemRequest616_clbk CNetworkEXUseRadarItemRequest616_user(nullptr);
+        static info::CNetworkEXUseRecallTeleportItemRequest618_ptr CNetworkEXUseRecallTeleportItemRequest618_next(nullptr);
+        static info::CNetworkEXUseRecallTeleportItemRequest618_clbk CNetworkEXUseRecallTeleportItemRequest618_user(nullptr);
+        static info::CNetworkEXUseRecoverLossExpItemRequest620_ptr CNetworkEXUseRecoverLossExpItemRequest620_next(nullptr);
+        static info::CNetworkEXUseRecoverLossExpItemRequest620_clbk CNetworkEXUseRecoverLossExpItemRequest620_user(nullptr);
+        static info::CNetworkEXUseSoccerBallItemRequest622_ptr CNetworkEXUseSoccerBallItemRequest622_next(nullptr);
+        static info::CNetworkEXUseSoccerBallItemRequest622_clbk CNetworkEXUseSoccerBallItemRequest622_user(nullptr);
+        static info::CNetworkEXUserBlockResult624_ptr CNetworkEXUserBlockResult624_next(nullptr);
+        static info::CNetworkEXUserBlockResult624_clbk CNetworkEXUserBlockResult624_user(nullptr);
+        static info::CNetworkEXUserLoop626_ptr CNetworkEXUserLoop626_next(nullptr);
+        static info::CNetworkEXUserLoop626_clbk CNetworkEXUserLoop626_user(nullptr);
+        static info::CNetworkEXWebAgentLineAnalysis628_ptr CNetworkEXWebAgentLineAnalysis628_next(nullptr);
+        static info::CNetworkEXWebAgentLineAnalysis628_clbk CNetworkEXWebAgentLineAnalysis628_user(nullptr);
+        static info::CNetworkEXWeeklyGuildRankRequest630_ptr CNetworkEXWeeklyGuildRankRequest630_next(nullptr);
+        static info::CNetworkEXWeeklyGuildRankRequest630_clbk CNetworkEXWeeklyGuildRankRequest630_user(nullptr);
+        static info::CNetworkEXWhisperBlockReport632_ptr CNetworkEXWhisperBlockReport632_next(nullptr);
+        static info::CNetworkEXWhisperBlockReport632_clbk CNetworkEXWhisperBlockReport632_user(nullptr);
+        static info::CNetworkEXWorldExitInform634_ptr CNetworkEXWorldExitInform634_next(nullptr);
+        static info::CNetworkEXWorldExitInform634_clbk CNetworkEXWorldExitInform634_user(nullptr);
+        static info::CNetworkEXWorldMsgInform636_ptr CNetworkEXWorldMsgInform636_next(nullptr);
+        static info::CNetworkEXWorldMsgInform636_clbk CNetworkEXWorldMsgInform636_user(nullptr);
+        static info::CNetworkEXWorldServiceInform638_ptr CNetworkEXWorldServiceInform638_next(nullptr);
+        static info::CNetworkEXWorldServiceInform638_clbk CNetworkEXWorldServiceInform638_user(nullptr);
+        static info::CNetworkEXZoneAliveCheckRequest640_ptr CNetworkEXZoneAliveCheckRequest640_next(nullptr);
+        static info::CNetworkEXZoneAliveCheckRequest640_clbk CNetworkEXZoneAliveCheckRequest640_user(nullptr);
+        static info::CNetworkEXdtor_CNetworkEX645_ptr CNetworkEXdtor_CNetworkEX645_next(nullptr);
+        static info::CNetworkEXdtor_CNetworkEX645_clbk CNetworkEXdtor_CNetworkEX645_user(nullptr);
         
-        bool CNetworkEXAMP_DownloadRequest2_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAMP_DownloadRequest2_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAMP_DownloadRequest2_user(_this, n, pBuf, CNetworkEXAMP_DownloadRequest2_next);
         };
-        bool CNetworkEXATradeAdjustPriceRequest4_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeAdjustPriceRequest4_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeAdjustPriceRequest4_user(_this, n, pBuf, CNetworkEXATradeAdjustPriceRequest4_next);
         };
-        bool CNetworkEXATradeBuyItemRequest6_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeBuyItemRequest6_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeBuyItemRequest6_user(_this, n, pBuf, CNetworkEXATradeBuyItemRequest6_next);
         };
-        bool CNetworkEXATradeClearItemRequest8_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeClearItemRequest8_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeClearItemRequest8_user(_this, n, pBuf, CNetworkEXATradeClearItemRequest8_next);
         };
-        bool CNetworkEXATradeReRegistRequest10_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeReRegistRequest10_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeReRegistRequest10_user(_this, n, pBuf, CNetworkEXATradeReRegistRequest10_next);
         };
-        bool CNetworkEXATradeRegItemRequest12_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeRegItemRequest12_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeRegItemRequest12_user(_this, n, pBuf, CNetworkEXATradeRegItemRequest12_next);
         };
-        bool CNetworkEXATradeRegedListRequest14_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeRegedListRequest14_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeRegedListRequest14_user(_this, n, pBuf, CNetworkEXATradeRegedListRequest14_next);
         };
-        bool CNetworkEXATradeTaxRateRequest16_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXATradeTaxRateRequest16_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXATradeTaxRateRequest16_user(_this, n, pBuf, CNetworkEXATradeTaxRateRequest16_next);
         };
-        void CNetworkEXAcceptClientCheck18_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CNetworkEXAcceptClientCheck18_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CNetworkEXAcceptClientCheck18_user(_this, dwProID, dwIndex, dwSerial, CNetworkEXAcceptClientCheck18_next);
         };
-        bool CNetworkEXAccountLineAnalysis20_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetworkEXAccountLineAnalysis20_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetworkEXAccountLineAnalysis20_user(_this, n, pMsgHeader, pMsg, CNetworkEXAccountLineAnalysis20_next);
         };
-        bool CNetworkEXAddBagRequest22_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAddBagRequest22_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAddBagRequest22_user(_this, n, pBuf, CNetworkEXAddBagRequest22_next);
         };
-        bool CNetworkEXAddCharRequest24_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAddCharRequest24_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAddCharRequest24_user(_this, n, pBuf, CNetworkEXAddCharRequest24_next);
         };
-        bool CNetworkEXAliveCharRequest26_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAliveCharRequest26_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAliveCharRequest26_user(_this, n, pBuf, CNetworkEXAliveCharRequest26_next);
         };
-        bool CNetworkEXAlterItemSlotRequest28_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAlterItemSlotRequest28_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAlterItemSlotRequest28_user(_this, n, pBuf, CNetworkEXAlterItemSlotRequest28_next);
         };
-        bool CNetworkEXAlterLinkBoardSlotRequest30_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAlterLinkBoardSlotRequest30_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAlterLinkBoardSlotRequest30_user(_this, n, pBuf, CNetworkEXAlterLinkBoardSlotRequest30_next);
         };
-        bool CNetworkEXAlterPartyLootShareRequest32_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAlterPartyLootShareRequest32_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAlterPartyLootShareRequest32_user(_this, n, pBuf, CNetworkEXAlterPartyLootShareRequest32_next);
         };
-        bool CNetworkEXAlterWindowInfoRequest34_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAlterWindowInfoRequest34_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAlterWindowInfoRequest34_user(_this, n, pBuf, CNetworkEXAlterWindowInfoRequest34_next);
         };
-        bool CNetworkEXAnimusCommandRequest36_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAnimusCommandRequest36_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAnimusCommandRequest36_user(_this, n, pBuf, CNetworkEXAnimusCommandRequest36_next);
         };
-        bool CNetworkEXAnimusInvenChangeRequest38_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAnimusInvenChangeRequest38_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAnimusInvenChangeRequest38_user(_this, n, pBuf, CNetworkEXAnimusInvenChangeRequest38_next);
         };
-        bool CNetworkEXAnimusRecallRequest40_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAnimusRecallRequest40_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAnimusRecallRequest40_user(_this, n, pBuf, CNetworkEXAnimusRecallRequest40_next);
         };
-        bool CNetworkEXAnimusReturnRequest42_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAnimusReturnRequest42_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAnimusReturnRequest42_user(_this, n, pBuf, CNetworkEXAnimusReturnRequest42_next);
         };
-        bool CNetworkEXAnimusTargetRequest44_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAnimusTargetRequest44_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAnimusTargetRequest44_user(_this, n, pBuf, CNetworkEXAnimusTargetRequest44_next);
         };
-        void CNetworkEXAnsyncConnectComplete46_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, int nResult)
+        static void CNetworkEXAnsyncConnectComplete46_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, int nResult)
         {
            CNetworkEXAnsyncConnectComplete46_user(_this, dwProID, dwIndex, nResult, CNetworkEXAnsyncConnectComplete46_next);
         };
-        bool CNetworkEXApex_R48_wrapper(struct CNetworkEX* _this, int n, uint16_t wSize, char* pBuf)
+        static bool CNetworkEXApex_R48_wrapper(struct CNetworkEX* _this, int n, uint16_t wSize, char* pBuf)
         {
            return CNetworkEXApex_R48_user(_this, n, wSize, pBuf, CNetworkEXApex_R48_next);
         };
-        bool CNetworkEXApex_T50_wrapper(struct CNetworkEX* _this, int n, uint16_t wSize, char* pBuf)
+        static bool CNetworkEXApex_T50_wrapper(struct CNetworkEX* _this, int n, uint16_t wSize, char* pBuf)
         {
            return CNetworkEXApex_T50_user(_this, n, wSize, pBuf, CNetworkEXApex_T50_next);
         };
-        bool CNetworkEXAttackForceRequest52_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackForceRequest52_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackForceRequest52_user(_this, n, pBuf, CNetworkEXAttackForceRequest52_next);
         };
-        bool CNetworkEXAttackPersonalRequest54_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackPersonalRequest54_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackPersonalRequest54_user(_this, n, pBuf, CNetworkEXAttackPersonalRequest54_next);
         };
-        bool CNetworkEXAttackSiegeRequest56_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackSiegeRequest56_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackSiegeRequest56_user(_this, n, pBuf, CNetworkEXAttackSiegeRequest56_next);
         };
-        bool CNetworkEXAttackSkillRequest58_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackSkillRequest58_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackSkillRequest58_user(_this, n, pBuf, CNetworkEXAttackSkillRequest58_next);
         };
-        bool CNetworkEXAttackTestRequest60_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackTestRequest60_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackTestRequest60_user(_this, n, pBuf, CNetworkEXAttackTestRequest60_next);
         };
-        bool CNetworkEXAttackUnitRequest62_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAttackUnitRequest62_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAttackUnitRequest62_user(_this, n, pBuf, CNetworkEXAttackUnitRequest62_next);
         };
-        bool CNetworkEXAwayPartyInvitation64_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAwayPartyInvitation64_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAwayPartyInvitation64_user(_this, n, pBuf, CNetworkEXAwayPartyInvitation64_next);
         };
-        bool CNetworkEXAwayPartyInvitationAnswer66_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXAwayPartyInvitationAnswer66_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXAwayPartyInvitationAnswer66_user(_this, n, pBuf, CNetworkEXAwayPartyInvitationAnswer66_next);
         };
-        bool CNetworkEXBackTowerRequest68_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBackTowerRequest68_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBackTowerRequest68_user(_this, n, pBuf, CNetworkEXBackTowerRequest68_next);
         };
-        bool CNetworkEXBackTrapRequest70_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBackTrapRequest70_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBackTrapRequest70_user(_this, n, pBuf, CNetworkEXBackTrapRequest70_next);
         };
-        bool CNetworkEXBaseDownloadRequest72_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBaseDownloadRequest72_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBaseDownloadRequest72_user(_this, n, pBuf, CNetworkEXBaseDownloadRequest72_next);
         };
-        bool CNetworkEXBillingChangeType74_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingChangeType74_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingChangeType74_user(_this, n, pBuf, CNetworkEXBillingChangeType74_next);
         };
-        bool CNetworkEXBillingCloseRequest76_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingCloseRequest76_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingCloseRequest76_user(_this, n, pBuf, CNetworkEXBillingCloseRequest76_next);
         };
-        bool CNetworkEXBillingDestroyModule78_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingDestroyModule78_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingDestroyModule78_user(_this, n, pBuf, CNetworkEXBillingDestroyModule78_next);
         };
-        bool CNetworkEXBillingExpireIPOverflow80_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingExpireIPOverflow80_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingExpireIPOverflow80_user(_this, n, pBuf, CNetworkEXBillingExpireIPOverflow80_next);
         };
-        bool CNetworkEXBillingExpirePCBang82_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingExpirePCBang82_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingExpirePCBang82_user(_this, n, pBuf, CNetworkEXBillingExpirePCBang82_next);
         };
-        bool CNetworkEXBillingExpirePersonal84_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingExpirePersonal84_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingExpirePersonal84_user(_this, n, pBuf, CNetworkEXBillingExpirePersonal84_next);
         };
-        bool CNetworkEXBillingInfoRequest86_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingInfoRequest86_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingInfoRequest86_user(_this, n, pBuf, CNetworkEXBillingInfoRequest86_next);
         };
-        bool CNetworkEXBillingLineAnalysis88_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetworkEXBillingLineAnalysis88_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetworkEXBillingLineAnalysis88_user(_this, n, pMsgHeader, pMsg, CNetworkEXBillingLineAnalysis88_next);
         };
-        bool CNetworkEXBillingRemaintimePCBang90_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingRemaintimePCBang90_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingRemaintimePCBang90_user(_this, n, pBuf, CNetworkEXBillingRemaintimePCBang90_next);
         };
-        bool CNetworkEXBillingRemaintimePersonal92_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBillingRemaintimePersonal92_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBillingRemaintimePersonal92_user(_this, n, pBuf, CNetworkEXBillingRemaintimePersonal92_next);
         };
-        bool CNetworkEXBossSMSMsgRequest94_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBossSMSMsgRequest94_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBossSMSMsgRequest94_user(_this, n, pBuf, CNetworkEXBossSMSMsgRequest94_next);
         };
-        bool CNetworkEXBriefPassReport96_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBriefPassReport96_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBriefPassReport96_user(_this, n, pBuf, CNetworkEXBriefPassReport96_next);
         };
-        bool CNetworkEXBuddyAddAnswer98_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBuddyAddAnswer98_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBuddyAddAnswer98_user(_this, n, pBuf, CNetworkEXBuddyAddAnswer98_next);
         };
-        bool CNetworkEXBuddyAddRequest100_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBuddyAddRequest100_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBuddyAddRequest100_user(_this, n, pBuf, CNetworkEXBuddyAddRequest100_next);
         };
-        bool CNetworkEXBuddyDelRequest102_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBuddyDelRequest102_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBuddyDelRequest102_user(_this, n, pBuf, CNetworkEXBuddyDelRequest102_next);
         };
-        bool CNetworkEXBuddyDownloadRequest104_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBuddyDownloadRequest104_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBuddyDownloadRequest104_user(_this, n, pBuf, CNetworkEXBuddyDownloadRequest104_next);
         };
-        bool CNetworkEXBuyStoreRequest106_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXBuyStoreRequest106_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXBuyStoreRequest106_user(_this, n, pBuf, CNetworkEXBuyStoreRequest106_next);
         };
-        void CNetworkEXctor_CNetworkEX108_wrapper(struct CNetworkEX* _this)
+        static void CNetworkEXctor_CNetworkEX108_wrapper(struct CNetworkEX* _this)
         {
            CNetworkEXctor_CNetworkEX108_user(_this, CNetworkEXctor_CNetworkEX108_next);
         };
-        bool CNetworkEXCanSelectClassRequest110_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCanSelectClassRequest110_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCanSelectClassRequest110_user(_this, n, pBuf, CNetworkEXCanSelectClassRequest110_next);
         };
-        bool CNetworkEXCancelRaceBossSMSMsg112_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCancelRaceBossSMSMsg112_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCancelRaceBossSMSMsg112_user(_this, n, pBuf, CNetworkEXCancelRaceBossSMSMsg112_next);
         };
-        bool CNetworkEXCashDBInfoRecvResult114_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCashDBInfoRecvResult114_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCashDBInfoRecvResult114_user(_this, n, pBuf, CNetworkEXCashDBInfoRecvResult114_next);
         };
-        bool CNetworkEXCastVoteRequest116_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCastVoteRequest116_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCastVoteRequest116_user(_this, n, pBuf, CNetworkEXCastVoteRequest116_next);
         };
-        bool CNetworkEXCharacterRenameCash118_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCharacterRenameCash118_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCharacterRenameCash118_user(_this, n, pBuf, CNetworkEXCharacterRenameCash118_next);
         };
-        bool CNetworkEXChatAllRecvYesOrNo120_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatAllRecvYesOrNo120_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatAllRecvYesOrNo120_user(_this, n, pBuf, CNetworkEXChatAllRecvYesOrNo120_next);
         };
-        bool CNetworkEXChatAllRequest122_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatAllRequest122_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatAllRequest122_user(_this, n, pBuf, CNetworkEXChatAllRequest122_next);
         };
-        bool CNetworkEXChatCheatRequest124_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatCheatRequest124_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatCheatRequest124_user(_this, n, pBuf, CNetworkEXChatCheatRequest124_next);
         };
-        bool CNetworkEXChatCircleRequest126_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatCircleRequest126_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatCircleRequest126_user(_this, n, pBuf, CNetworkEXChatCircleRequest126_next);
         };
-        bool CNetworkEXChatFarRequest128_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatFarRequest128_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatFarRequest128_user(_this, n, pBuf, CNetworkEXChatFarRequest128_next);
         };
-        bool CNetworkEXChatGmNoticeRequest130_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGmNoticeRequest130_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGmNoticeRequest130_user(_this, n, pBuf, CNetworkEXChatGmNoticeRequest130_next);
         };
-        bool CNetworkEXChatGreetingMsg_GM132_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGreetingMsg_GM132_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGreetingMsg_GM132_user(_this, n, pBuf, CNetworkEXChatGreetingMsg_GM132_next);
         };
-        bool CNetworkEXChatGreetingMsg_GUILD134_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGreetingMsg_GUILD134_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGreetingMsg_GUILD134_user(_this, n, pBuf, CNetworkEXChatGreetingMsg_GUILD134_next);
         };
-        bool CNetworkEXChatGreetingMsg_RACE136_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGreetingMsg_RACE136_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGreetingMsg_RACE136_user(_this, n, pBuf, CNetworkEXChatGreetingMsg_RACE136_next);
         };
-        bool CNetworkEXChatGuildEstSenRequest138_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGuildEstSenRequest138_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGuildEstSenRequest138_user(_this, n, pBuf, CNetworkEXChatGuildEstSenRequest138_next);
         };
-        bool CNetworkEXChatGuildRequest140_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatGuildRequest140_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatGuildRequest140_user(_this, n, pBuf, CNetworkEXChatGuildRequest140_next);
         };
-        bool CNetworkEXChatLockCommand142_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXChatLockCommand142_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXChatLockCommand142_user(_this, n, pMsg, CNetworkEXChatLockCommand142_next);
         };
-        bool CNetworkEXChatManageRequest144_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatManageRequest144_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatManageRequest144_user(_this, n, pBuf, CNetworkEXChatManageRequest144_next);
         };
-        bool CNetworkEXChatMapRecvYesOrNo146_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatMapRecvYesOrNo146_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatMapRecvYesOrNo146_user(_this, n, pBuf, CNetworkEXChatMapRecvYesOrNo146_next);
         };
-        bool CNetworkEXChatMapRequest148_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatMapRequest148_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatMapRequest148_user(_this, n, pBuf, CNetworkEXChatMapRequest148_next);
         };
-        bool CNetworkEXChatMgrWhisperRequest150_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatMgrWhisperRequest150_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatMgrWhisperRequest150_user(_this, n, pBuf, CNetworkEXChatMgrWhisperRequest150_next);
         };
-        bool CNetworkEXChatMultiFarRequest152_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatMultiFarRequest152_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatMultiFarRequest152_user(_this, n, pBuf, CNetworkEXChatMultiFarRequest152_next);
         };
-        bool CNetworkEXChatOperatorRequest154_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatOperatorRequest154_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatOperatorRequest154_user(_this, n, pBuf, CNetworkEXChatOperatorRequest154_next);
         };
-        bool CNetworkEXChatPartyRequest156_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatPartyRequest156_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatPartyRequest156_user(_this, n, pBuf, CNetworkEXChatPartyRequest156_next);
         };
-        bool CNetworkEXChatRaceBossCryRequest158_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatRaceBossCryRequest158_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatRaceBossCryRequest158_user(_this, n, pBuf, CNetworkEXChatRaceBossCryRequest158_next);
         };
-        bool CNetworkEXChatRaceBossRequest160_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatRaceBossRequest160_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatRaceBossRequest160_user(_this, n, pBuf, CNetworkEXChatRaceBossRequest160_next);
         };
-        bool CNetworkEXChatRaceRequest162_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatRaceRequest162_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatRaceRequest162_user(_this, n, pBuf, CNetworkEXChatRaceRequest162_next);
         };
-        bool CNetworkEXChatRePresentationRequest164_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatRePresentationRequest164_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatRePresentationRequest164_user(_this, n, pBuf, CNetworkEXChatRePresentationRequest164_next);
         };
-        bool CNetworkEXChatTradeRequestMsg166_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChatTradeRequestMsg166_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChatTradeRequestMsg166_user(_this, n, pBuf, CNetworkEXChatTradeRequestMsg166_next);
         };
-        bool CNetworkEXCheckIsBlockIPResult168_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXCheckIsBlockIPResult168_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXCheckIsBlockIPResult168_user(_this, n, pMsg, CNetworkEXCheckIsBlockIPResult168_next);
         };
-        bool CNetworkEXChinaBillingChangePrimium170_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXChinaBillingChangePrimium170_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXChinaBillingChangePrimium170_user(_this, n, pBuf, CNetworkEXChinaBillingChangePrimium170_next);
         };
-        bool CNetworkEXClassSkillRecallTeleportRequest172_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXClassSkillRecallTeleportRequest172_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXClassSkillRecallTeleportRequest172_user(_this, n, pBuf, CNetworkEXClassSkillRecallTeleportRequest172_next);
         };
-        bool CNetworkEXClassSkillRequest174_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXClassSkillRequest174_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXClassSkillRequest174_user(_this, n, pBuf, CNetworkEXClassSkillRequest174_next);
         };
-        bool CNetworkEXClientLineAnalysis176_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetworkEXClientLineAnalysis176_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetworkEXClientLineAnalysis176_user(_this, n, pMsgHeader, pMsg, CNetworkEXClientLineAnalysis176_next);
         };
-        void CNetworkEXClose178_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwSocketIndex, bool bSlowClose, char* pszLog)
+        static void CNetworkEXClose178_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwSocketIndex, bool bSlowClose, char* pszLog)
         {
            CNetworkEXClose178_user(_this, dwProID, dwSocketIndex, bSlowClose, pszLog, CNetworkEXClose178_next);
         };
-        void CNetworkEXCloseClientCheck180_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CNetworkEXCloseClientCheck180_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CNetworkEXCloseClientCheck180_user(_this, dwProID, dwIndex, dwSerial, CNetworkEXCloseClientCheck180_next);
         };
-        bool CNetworkEXCombineExItemAcceptRequest182_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCombineExItemAcceptRequest182_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCombineExItemAcceptRequest182_user(_this, n, pBuf, CNetworkEXCombineExItemAcceptRequest182_next);
         };
-        bool CNetworkEXCombineExItemRequest184_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCombineExItemRequest184_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCombineExItemRequest184_user(_this, n, pBuf, CNetworkEXCombineExItemRequest184_next);
         };
-        bool CNetworkEXCombineItemRequest186_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCombineItemRequest186_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCombineItemRequest186_user(_this, n, pBuf, CNetworkEXCombineItemRequest186_next);
         };
-        bool CNetworkEXConEventTotalSalesCheck188_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXConEventTotalSalesCheck188_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXConEventTotalSalesCheck188_user(_this, n, pBuf, CNetworkEXConEventTotalSalesCheck188_next);
         };
-        bool CNetworkEXConnectionStatusRequest190_wrapper(struct CNetworkEX* _this, int n)
+        static bool CNetworkEXConnectionStatusRequest190_wrapper(struct CNetworkEX* _this, int n)
         {
            return CNetworkEXConnectionStatusRequest190_user(_this, n, CNetworkEXConnectionStatusRequest190_next);
         };
-        bool CNetworkEXCumDownloadRequest192_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCumDownloadRequest192_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCumDownloadRequest192_user(_this, n, pBuf, CNetworkEXCumDownloadRequest192_next);
         };
-        bool CNetworkEXCuttingCompleteRequest194_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXCuttingCompleteRequest194_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXCuttingCompleteRequest194_user(_this, n, pBuf, CNetworkEXCuttingCompleteRequest194_next);
         };
-        bool CNetworkEXDTradeAddRequest196_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeAddRequest196_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeAddRequest196_user(_this, n, pBuf, CNetworkEXDTradeAddRequest196_next);
         };
-        bool CNetworkEXDTradeAnswerRequest198_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeAnswerRequest198_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeAnswerRequest198_user(_this, n, pBuf, CNetworkEXDTradeAnswerRequest198_next);
         };
-        bool CNetworkEXDTradeAskRequest200_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeAskRequest200_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeAskRequest200_user(_this, n, pBuf, CNetworkEXDTradeAskRequest200_next);
         };
-        bool CNetworkEXDTradeBetRequest202_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeBetRequest202_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeBetRequest202_user(_this, n, pBuf, CNetworkEXDTradeBetRequest202_next);
         };
-        bool CNetworkEXDTradeCancleRequest204_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeCancleRequest204_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeCancleRequest204_user(_this, n, pBuf, CNetworkEXDTradeCancleRequest204_next);
         };
-        bool CNetworkEXDTradeDelRequest206_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeDelRequest206_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeDelRequest206_user(_this, n, pBuf, CNetworkEXDTradeDelRequest206_next);
         };
-        bool CNetworkEXDTradeLockRequest208_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeLockRequest208_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeLockRequest208_user(_this, n, pBuf, CNetworkEXDTradeLockRequest208_next);
         };
-        bool CNetworkEXDTradeOKRequest210_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDTradeOKRequest210_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDTradeOKRequest210_user(_this, n, pBuf, CNetworkEXDTradeOKRequest210_next);
         };
-        bool CNetworkEXDarkHoleAnswerReenterRequest212_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDarkHoleAnswerReenterRequest212_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDarkHoleAnswerReenterRequest212_user(_this, n, pBuf, CNetworkEXDarkHoleAnswerReenterRequest212_next);
         };
-        bool CNetworkEXDarkHoleClearOutRequest214_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDarkHoleClearOutRequest214_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDarkHoleClearOutRequest214_user(_this, n, pBuf, CNetworkEXDarkHoleClearOutRequest214_next);
         };
-        bool CNetworkEXDarkHoleEnterRequest216_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDarkHoleEnterRequest216_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDarkHoleEnterRequest216_user(_this, n, pBuf, CNetworkEXDarkHoleEnterRequest216_next);
         };
-        bool CNetworkEXDarkHoleGiveupOutRequest218_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDarkHoleGiveupOutRequest218_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDarkHoleGiveupOutRequest218_user(_this, n, pBuf, CNetworkEXDarkHoleGiveupOutRequest218_next);
         };
-        bool CNetworkEXDarkHoleOpenRequest220_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDarkHoleOpenRequest220_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDarkHoleOpenRequest220_user(_this, n, pBuf, CNetworkEXDarkHoleOpenRequest220_next);
         };
-        bool CNetworkEXDataAnalysis222_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetworkEXDataAnalysis222_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetworkEXDataAnalysis222_user(_this, dwProID, dwClientIndex, pMsgHeader, pMsg, CNetworkEXDataAnalysis222_next);
         };
-        bool CNetworkEXDecideRecallRequest224_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDecideRecallRequest224_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDecideRecallRequest224_user(_this, n, pBuf, CNetworkEXDecideRecallRequest224_next);
         };
-        bool CNetworkEXDelCharRequest226_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDelCharRequest226_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDelCharRequest226_user(_this, n, pBuf, CNetworkEXDelCharRequest226_next);
         };
-        bool CNetworkEXDisconnectGuildWarCharacterRequest228_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDisconnectGuildWarCharacterRequest228_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDisconnectGuildWarCharacterRequest228_user(_this, n, pBuf, CNetworkEXDisconnectGuildWarCharacterRequest228_next);
         };
-        bool CNetworkEXDownGradeItemRequest230_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXDownGradeItemRequest230_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXDownGradeItemRequest230_user(_this, n, pBuf, CNetworkEXDownGradeItemRequest230_next);
         };
-        bool CNetworkEXEmbellishRequest232_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXEmbellishRequest232_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXEmbellishRequest232_user(_this, n, pBuf, CNetworkEXEmbellishRequest232_next);
         };
-        bool CNetworkEXEnterReturnGateRequest234_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXEnterReturnGateRequest234_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXEnterReturnGateRequest234_user(_this, n, pBuf, CNetworkEXEnterReturnGateRequest234_next);
         };
-        bool CNetworkEXEnterWorldRequest236_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pBuf)
+        static bool CNetworkEXEnterWorldRequest236_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pBuf)
         {
            return CNetworkEXEnterWorldRequest236_user(_this, n, pMsgHeader, pBuf, CNetworkEXEnterWorldRequest236_next);
         };
-        bool CNetworkEXEnterWorldResult238_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXEnterWorldResult238_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXEnterWorldResult238_user(_this, n, pMsg, CNetworkEXEnterWorldResult238_next);
         };
-        bool CNetworkEXEquipPartRequest240_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXEquipPartRequest240_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXEquipPartRequest240_user(_this, n, pBuf, CNetworkEXEquipPartRequest240_next);
         };
-        bool CNetworkEXExchangeDalantForGoldRequest242_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXExchangeDalantForGoldRequest242_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXExchangeDalantForGoldRequest242_user(_this, n, pBuf, CNetworkEXExchangeDalantForGoldRequest242_next);
         };
-        bool CNetworkEXExchangeGoldForDalantRequest244_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXExchangeGoldForDalantRequest244_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXExchangeGoldForDalantRequest244_user(_this, n, pBuf, CNetworkEXExchangeGoldForDalantRequest244_next);
         };
-        bool CNetworkEXExchangeGoldForPvPRequest246_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXExchangeGoldForPvPRequest246_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXExchangeGoldForPvPRequest246_user(_this, n, pBuf, CNetworkEXExchangeGoldForPvPRequest246_next);
         };
-        bool CNetworkEXExchangeItemRequest248_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXExchangeItemRequest248_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXExchangeItemRequest248_user(_this, n, pBuf, CNetworkEXExchangeItemRequest248_next);
         };
-        bool CNetworkEXExitWorldRequest250_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXExitWorldRequest250_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXExitWorldRequest250_user(_this, n, pBuf, CNetworkEXExitWorldRequest250_next);
         };
-        bool CNetworkEXExpulsionSocket252_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, char byReason, void* pvInfo)
+        static bool CNetworkEXExpulsionSocket252_wrapper(struct CNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, char byReason, void* pvInfo)
         {
            return CNetworkEXExpulsionSocket252_user(_this, dwProID, dwIndex, byReason, pvInfo, CNetworkEXExpulsionSocket252_next);
         };
-        bool CNetworkEXForceCloseCommand254_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXForceCloseCommand254_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXForceCloseCommand254_user(_this, n, pMsg, CNetworkEXForceCloseCommand254_next);
         };
-        bool CNetworkEXForceDownloadRequest256_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXForceDownloadRequest256_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXForceDownloadRequest256_user(_this, n, pBuf, CNetworkEXForceDownloadRequest256_next);
         };
-        bool CNetworkEXForceInvenChangeRequest258_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXForceInvenChangeRequest258_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXForceInvenChangeRequest258_user(_this, n, pBuf, CNetworkEXForceInvenChangeRequest258_next);
         };
-        bool CNetworkEXForceRecallTeleportRequest260_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXForceRecallTeleportRequest260_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXForceRecallTeleportRequest260_user(_this, n, pBuf, CNetworkEXForceRecallTeleportRequest260_next);
         };
-        bool CNetworkEXForceRequest262_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXForceRequest262_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXForceRequest262_user(_this, n, pBuf, CNetworkEXForceRequest262_next);
         };
-        bool CNetworkEXGotoAvatorRequest264_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGotoAvatorRequest264_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGotoAvatorRequest264_user(_this, n, pBuf, CNetworkEXGotoAvatorRequest264_next);
         };
-        bool CNetworkEXGotoBasePortalRequest266_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGotoBasePortalRequest266_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGotoBasePortalRequest266_user(_this, n, pBuf, CNetworkEXGotoBasePortalRequest266_next);
         };
-        bool CNetworkEXGuildBattleBlockReport268_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleBlockReport268_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleBlockReport268_user(_this, n, pBuf, CNetworkEXGuildBattleBlockReport268_next);
         };
-        bool CNetworkEXGuildBattleCurrentBattleInfoRequest270_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleCurrentBattleInfoRequest270_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleCurrentBattleInfoRequest270_user(_this, n, pBuf, CNetworkEXGuildBattleCurrentBattleInfoRequest270_next);
         };
-        bool CNetworkEXGuildBattleGetGravityStoneRequest272_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleGetGravityStoneRequest272_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleGetGravityStoneRequest272_user(_this, n, pBuf, CNetworkEXGuildBattleGetGravityStoneRequest272_next);
         };
-        bool CNetworkEXGuildBattleGoalRequest274_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleGoalRequest274_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleGoalRequest274_user(_this, n, pBuf, CNetworkEXGuildBattleGoalRequest274_next);
         };
-        bool CNetworkEXGuildBattleJoinGuildBattleRequest276_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleJoinGuildBattleRequest276_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleJoinGuildBattleRequest276_user(_this, n, pBuf, CNetworkEXGuildBattleJoinGuildBattleRequest276_next);
         };
-        bool CNetworkEXGuildBattlePossibleGuildBattleList278_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattlePossibleGuildBattleList278_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattlePossibleGuildBattleList278_user(_this, n, pBuf, CNetworkEXGuildBattlePossibleGuildBattleList278_next);
         };
-        bool CNetworkEXGuildBattleRankListRequest280_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleRankListRequest280_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleRankListRequest280_user(_this, n, pBuf, CNetworkEXGuildBattleRankListRequest280_next);
         };
-        bool CNetworkEXGuildBattleReservedScheduleRequest282_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleReservedScheduleRequest282_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleReservedScheduleRequest282_user(_this, n, pBuf, CNetworkEXGuildBattleReservedScheduleRequest282_next);
         };
-        bool CNetworkEXGuildBattleTakeGravityStoneRequest284_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildBattleTakeGravityStoneRequest284_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildBattleTakeGravityStoneRequest284_user(_this, n, pBuf, CNetworkEXGuildBattleTakeGravityStoneRequest284_next);
         };
-        bool CNetworkEXGuildCancelSuggestRequest286_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildCancelSuggestRequest286_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildCancelSuggestRequest286_user(_this, n, pBuf, CNetworkEXGuildCancelSuggestRequest286_next);
         };
-        bool CNetworkEXGuildDownloadRequest288_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildDownloadRequest288_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildDownloadRequest288_user(_this, n, pBuf, CNetworkEXGuildDownloadRequest288_next);
         };
-        bool CNetworkEXGuildEstablishRequest290_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildEstablishRequest290_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildEstablishRequest290_user(_this, n, pBuf, CNetworkEXGuildEstablishRequest290_next);
         };
-        bool CNetworkEXGuildHonorListRequest292_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildHonorListRequest292_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildHonorListRequest292_user(_this, n, pBuf, CNetworkEXGuildHonorListRequest292_next);
         };
-        bool CNetworkEXGuildJoinAcceptRequest294_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildJoinAcceptRequest294_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildJoinAcceptRequest294_user(_this, n, pBuf, CNetworkEXGuildJoinAcceptRequest294_next);
         };
-        bool CNetworkEXGuildJoinApplyCancelRequest296_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildJoinApplyCancelRequest296_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildJoinApplyCancelRequest296_user(_this, n, pBuf, CNetworkEXGuildJoinApplyCancelRequest296_next);
         };
-        bool CNetworkEXGuildJoinApplyRequest298_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildJoinApplyRequest298_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildJoinApplyRequest298_user(_this, n, pBuf, CNetworkEXGuildJoinApplyRequest298_next);
         };
-        bool CNetworkEXGuildListRequest300_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildListRequest300_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildListRequest300_user(_this, n, pBuf, CNetworkEXGuildListRequest300_next);
         };
-        bool CNetworkEXGuildManageRequest302_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildManageRequest302_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildManageRequest302_user(_this, n, pBuf, CNetworkEXGuildManageRequest302_next);
         };
-        bool CNetworkEXGuildNextHonorListRequest304_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildNextHonorListRequest304_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildNextHonorListRequest304_user(_this, n, pBuf, CNetworkEXGuildNextHonorListRequest304_next);
         };
-        bool CNetworkEXGuildOfferSuggestRequest306_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildOfferSuggestRequest306_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildOfferSuggestRequest306_user(_this, n, pBuf, CNetworkEXGuildOfferSuggestRequest306_next);
         };
-        bool CNetworkEXGuildPushMoneyRequest308_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildPushMoneyRequest308_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildPushMoneyRequest308_user(_this, n, pBuf, CNetworkEXGuildPushMoneyRequest308_next);
         };
-        bool CNetworkEXGuildQueryInfoRequest310_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildQueryInfoRequest310_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildQueryInfoRequest310_user(_this, n, pBuf, CNetworkEXGuildQueryInfoRequest310_next);
         };
-        bool CNetworkEXGuildRoomEnterRequest312_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildRoomEnterRequest312_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildRoomEnterRequest312_user(_this, n, pBuf, CNetworkEXGuildRoomEnterRequest312_next);
         };
-        bool CNetworkEXGuildRoomOutRequest314_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildRoomOutRequest314_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildRoomOutRequest314_user(_this, n, pBuf, CNetworkEXGuildRoomOutRequest314_next);
         };
-        bool CNetworkEXGuildRoomRentRequest316_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildRoomRentRequest316_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildRoomRentRequest316_user(_this, n, pBuf, CNetworkEXGuildRoomRentRequest316_next);
         };
-        bool CNetworkEXGuildRoomRestTimeRequest318_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildRoomRestTimeRequest318_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildRoomRestTimeRequest318_user(_this, n, pBuf, CNetworkEXGuildRoomRestTimeRequest318_next);
         };
-        bool CNetworkEXGuildSelfLeaveRequest320_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildSelfLeaveRequest320_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildSelfLeaveRequest320_user(_this, n, pBuf, CNetworkEXGuildSelfLeaveRequest320_next);
         };
-        bool CNetworkEXGuildSetHonorRequest322_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildSetHonorRequest322_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildSetHonorRequest322_user(_this, n, pBuf, CNetworkEXGuildSetHonorRequest322_next);
         };
-        bool CNetworkEXGuildVoteRequest324_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGuildVoteRequest324_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGuildVoteRequest324_user(_this, n, pBuf, CNetworkEXGuildVoteRequest324_next);
         };
-        bool CNetworkEXGustureRequest326_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXGustureRequest326_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXGustureRequest326_user(_this, n, pBuf, CNetworkEXGustureRequest326_next);
         };
-        bool CNetworkEXInitClassCostRequest328_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXInitClassCostRequest328_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXInitClassCostRequest328_user(_this, n, pBuf, CNetworkEXInitClassCostRequest328_next);
         };
-        bool CNetworkEXInitClassRequest330_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXInitClassRequest330_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXInitClassRequest330_user(_this, n, pBuf, CNetworkEXInitClassRequest330_next);
         };
-        bool CNetworkEXInvenDownloadRequest332_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXInvenDownloadRequest332_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXInvenDownloadRequest332_user(_this, n, pBuf, CNetworkEXInvenDownloadRequest332_next);
         };
-        bool CNetworkEXItemboxTakeRequest334_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXItemboxTakeRequest334_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXItemboxTakeRequest334_user(_this, n, pBuf, CNetworkEXItemboxTakeRequest334_next);
         };
-        bool CNetworkEXLimitItemNumRequest336_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXLimitItemNumRequest336_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXLimitItemNumRequest336_user(_this, n, pBuf, CNetworkEXLimitItemNumRequest336_next);
         };
-        bool CNetworkEXLinkBoardDownloadRequest338_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXLinkBoardDownloadRequest338_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXLinkBoardDownloadRequest338_user(_this, n, pBuf, CNetworkEXLinkBoardDownloadRequest338_next);
         };
-        bool CNetworkEXLogInControllServer340_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXLogInControllServer340_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXLogInControllServer340_user(_this, n, pBuf, CNetworkEXLogInControllServer340_next);
         };
-        bool CNetworkEXLogInWebAgentServer342_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXLogInWebAgentServer342_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXLogInWebAgentServer342_user(_this, n, pBuf, CNetworkEXLogInWebAgentServer342_next);
         };
-        bool CNetworkEXMacroDownLoadRequest344_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMacroDownLoadRequest344_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMacroDownLoadRequest344_user(_this, n, pBuf, CNetworkEXMacroDownLoadRequest344_next);
         };
-        bool CNetworkEXMakeItemRequest346_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMakeItemRequest346_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMakeItemRequest346_user(_this, n, pBuf, CNetworkEXMakeItemRequest346_next);
         };
-        bool CNetworkEXMakeTowerRequest348_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMakeTowerRequest348_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMakeTowerRequest348_user(_this, n, pBuf, CNetworkEXMakeTowerRequest348_next);
         };
-        bool CNetworkEXMakeTrapRequest350_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMakeTrapRequest350_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMakeTrapRequest350_user(_this, n, pBuf, CNetworkEXMakeTrapRequest350_next);
         };
-        bool CNetworkEXManageClientForceExitRequest352_wrapper(struct CNetworkEX* _this)
+        static bool CNetworkEXManageClientForceExitRequest352_wrapper(struct CNetworkEX* _this)
         {
            return CNetworkEXManageClientForceExitRequest352_user(_this, CNetworkEXManageClientForceExitRequest352_next);
         };
-        bool CNetworkEXManageClientLimitRunRequest354_wrapper(struct CNetworkEX* _this, char* pBuf)
+        static bool CNetworkEXManageClientLimitRunRequest354_wrapper(struct CNetworkEX* _this, char* pBuf)
         {
            return CNetworkEXManageClientLimitRunRequest354_user(_this, pBuf, CNetworkEXManageClientLimitRunRequest354_next);
         };
-        bool CNetworkEXMineCancleRequest356_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMineCancleRequest356_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMineCancleRequest356_user(_this, n, pBuf, CNetworkEXMineCancleRequest356_next);
         };
-        bool CNetworkEXMineStartRequest358_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMineStartRequest358_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMineStartRequest358_user(_this, n, pBuf, CNetworkEXMineStartRequest358_next);
         };
-        bool CNetworkEXModeChangeRequest360_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXModeChangeRequest360_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXModeChangeRequest360_user(_this, n, pBuf, CNetworkEXModeChangeRequest360_next);
         };
-        bool CNetworkEXMoveInfoRequeset362_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMoveInfoRequeset362_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMoveInfoRequeset362_user(_this, n, pBuf, CNetworkEXMoveInfoRequeset362_next);
         };
-        bool CNetworkEXMoveLobbyRequest364_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMoveLobbyRequest364_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMoveLobbyRequest364_user(_this, n, pBuf, CNetworkEXMoveLobbyRequest364_next);
         };
-        bool CNetworkEXMovePortalRequest366_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMovePortalRequest366_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMovePortalRequest366_user(_this, n, pBuf, CNetworkEXMovePortalRequest366_next);
         };
-        bool CNetworkEXMoveToOwnStoneMapRequest368_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMoveToOwnStoneMapRequest368_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMoveToOwnStoneMapRequest368_user(_this, n, pBuf, CNetworkEXMoveToOwnStoneMapRequest368_next);
         };
-        bool CNetworkEXMoveTypeChangeRequeset370_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXMoveTypeChangeRequeset370_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXMoveTypeChangeRequeset370_user(_this, n, pBuf, CNetworkEXMoveTypeChangeRequeset370_next);
         };
-        bool CNetworkEXNPCDialogRequest372_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNPCDialogRequest372_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNPCDialogRequest372_user(_this, n, pBuf, CNetworkEXNPCDialogRequest372_next);
         };
-        bool CNetworkEXNPCLinkCheckItemRequest374_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNPCLinkCheckItemRequest374_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNPCLinkCheckItemRequest374_user(_this, n, pBuf, CNetworkEXNPCLinkCheckItemRequest374_next);
         };
-        bool CNetworkEXNPCQuestListRequest376_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNPCQuestListRequest376_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNPCQuestListRequest376_user(_this, n, pBuf, CNetworkEXNPCQuestListRequest376_next);
         };
-        bool CNetworkEXNPCQuestRequest378_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNPCQuestRequest378_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNPCQuestRequest378_user(_this, n, pBuf, CNetworkEXNPCQuestRequest378_next);
         };
-        bool CNetworkEXNPCWatchingRequest380_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNPCWatchingRequest380_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNPCWatchingRequest380_user(_this, n, pBuf, CNetworkEXNPCWatchingRequest380_next);
         };
-        bool CNetworkEXNewPosStartRequest382_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNewPosStartRequest382_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNewPosStartRequest382_user(_this, n, pBuf, CNetworkEXNewPosStartRequest382_next);
         };
-        bool CNetworkEXNextPoint384_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNextPoint384_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNextPoint384_user(_this, n, pBuf, CNetworkEXNextPoint384_next);
         };
-        bool CNetworkEXNotifyLocalTimeRequest386_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNotifyLocalTimeRequest386_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNotifyLocalTimeRequest386_user(_this, n, pBuf, CNetworkEXNotifyLocalTimeRequest386_next);
         };
-        bool CNetworkEXNotifyRaceBossCryMsg388_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXNotifyRaceBossCryMsg388_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXNotifyRaceBossCryMsg388_user(_this, n, pBuf, CNetworkEXNotifyRaceBossCryMsg388_next);
         };
-        bool CNetworkEXObjectServerPosRequest390_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXObjectServerPosRequest390_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXObjectServerPosRequest390_user(_this, n, pBuf, CNetworkEXObjectServerPosRequest390_next);
         };
-        bool CNetworkEXOffPartRequest392_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXOffPartRequest392_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXOffPartRequest392_user(_this, n, pBuf, CNetworkEXOffPartRequest392_next);
         };
-        bool CNetworkEXOpenControlInform394_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXOpenControlInform394_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXOpenControlInform394_user(_this, n, pMsg, CNetworkEXOpenControlInform394_next);
         };
-        bool CNetworkEXOpenWorldFailureResult396_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXOpenWorldFailureResult396_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXOpenWorldFailureResult396_user(_this, n, pMsg, CNetworkEXOpenWorldFailureResult396_next);
         };
-        bool CNetworkEXOpenWorldSuccessResult398_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXOpenWorldSuccessResult398_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXOpenWorldSuccessResult398_user(_this, n, pMsg, CNetworkEXOpenWorldSuccessResult398_next);
         };
-        bool CNetworkEXOreIntoBagRequest400_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXOreIntoBagRequest400_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXOreIntoBagRequest400_user(_this, n, pBuf, CNetworkEXOreIntoBagRequest400_next);
         };
-        bool CNetworkEXOtherShapeRequest402_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXOtherShapeRequest402_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXOtherShapeRequest402_user(_this, n, pBuf, CNetworkEXOtherShapeRequest402_next);
         };
-        bool CNetworkEXPartyDisjointRequest404_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyDisjointRequest404_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyDisjointRequest404_user(_this, n, pBuf, CNetworkEXPartyDisjointRequest404_next);
         };
-        bool CNetworkEXPartyJoinApplicatiohAnswer406_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyJoinApplicatiohAnswer406_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyJoinApplicatiohAnswer406_user(_this, n, pBuf, CNetworkEXPartyJoinApplicatiohAnswer406_next);
         };
-        bool CNetworkEXPartyJoinApplication408_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyJoinApplication408_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyJoinApplication408_user(_this, n, pBuf, CNetworkEXPartyJoinApplication408_next);
         };
-        bool CNetworkEXPartyJoinInvitation410_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyJoinInvitation410_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyJoinInvitation410_user(_this, n, pBuf, CNetworkEXPartyJoinInvitation410_next);
         };
-        bool CNetworkEXPartyJoinInvitationAnswer412_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyJoinInvitationAnswer412_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyJoinInvitationAnswer412_user(_this, n, pBuf, CNetworkEXPartyJoinInvitationAnswer412_next);
         };
-        bool CNetworkEXPartyLeaveCompulsionRequest414_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyLeaveCompulsionRequest414_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyLeaveCompulsionRequest414_user(_this, n, pBuf, CNetworkEXPartyLeaveCompulsionRequest414_next);
         };
-        bool CNetworkEXPartyLeaveSelfRequest416_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyLeaveSelfRequest416_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyLeaveSelfRequest416_user(_this, n, pBuf, CNetworkEXPartyLeaveSelfRequest416_next);
         };
-        bool CNetworkEXPartyLockRequest418_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyLockRequest418_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyLockRequest418_user(_this, n, pBuf, CNetworkEXPartyLockRequest418_next);
         };
-        bool CNetworkEXPartyReqBlockReport420_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartyReqBlockReport420_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartyReqBlockReport420_user(_this, n, pBuf, CNetworkEXPartyReqBlockReport420_next);
         };
-        bool CNetworkEXPartySuccessionRequest422_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPartySuccessionRequest422_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPartySuccessionRequest422_user(_this, n, pBuf, CNetworkEXPartySuccessionRequest422_next);
         };
-        bool CNetworkEXPcBangPrimiumCouponRequest424_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPcBangPrimiumCouponRequest424_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPcBangPrimiumCouponRequest424_user(_this, n, pBuf, CNetworkEXPcBangPrimiumCouponRequest424_next);
         };
-        bool CNetworkEXPlayerInfoResult426_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPlayerInfoResult426_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPlayerInfoResult426_user(_this, n, pBuf, CNetworkEXPlayerInfoResult426_next);
         };
-        bool CNetworkEXPlayerMacroUpdate428_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPlayerMacroUpdate428_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPlayerMacroUpdate428_user(_this, n, pBuf, CNetworkEXPlayerMacroUpdate428_next);
         };
-        bool CNetworkEXPostContentRequest430_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostContentRequest430_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostContentRequest430_user(_this, n, pBuf, CNetworkEXPostContentRequest430_next);
         };
-        bool CNetworkEXPostDeleteRequest432_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostDeleteRequest432_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostDeleteRequest432_user(_this, n, pBuf, CNetworkEXPostDeleteRequest432_next);
         };
-        bool CNetworkEXPostItemGoldRequest434_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostItemGoldRequest434_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostItemGoldRequest434_user(_this, n, pBuf, CNetworkEXPostItemGoldRequest434_next);
         };
-        bool CNetworkEXPostListRequest436_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostListRequest436_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostListRequest436_user(_this, n, pBuf, CNetworkEXPostListRequest436_next);
         };
-        bool CNetworkEXPostReturnConfirmRequest438_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostReturnConfirmRequest438_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostReturnConfirmRequest438_user(_this, n, pBuf, CNetworkEXPostReturnConfirmRequest438_next);
         };
-        bool CNetworkEXPostSendRequest440_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPostSendRequest440_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPostSendRequest440_user(_this, n, pBuf, CNetworkEXPostSendRequest440_next);
         };
-        bool CNetworkEXPotionSocketDivisionRequest442_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPotionSocketDivisionRequest442_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPotionSocketDivisionRequest442_user(_this, n, pBuf, CNetworkEXPotionSocketDivisionRequest442_next);
         };
-        bool CNetworkEXPotionSocketSeparationRequest444_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPotionSocketSeparationRequest444_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPotionSocketSeparationRequest444_user(_this, n, pBuf, CNetworkEXPotionSocketSeparationRequest444_next);
         };
-        bool CNetworkEXProposeVoteRequest446_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXProposeVoteRequest446_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXProposeVoteRequest446_user(_this, n, pBuf, CNetworkEXProposeVoteRequest446_next);
         };
-        bool CNetworkEXPvpCashRecorverWithTalik448_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPvpCashRecorverWithTalik448_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPvpCashRecorverWithTalik448_user(_this, n, pBuf, CNetworkEXPvpCashRecorverWithTalik448_next);
         };
-        bool CNetworkEXPvpRankListRequest450_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXPvpRankListRequest450_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXPvpRankListRequest450_user(_this, n, pBuf, CNetworkEXPvpRankListRequest450_next);
         };
-        bool CNetworkEXQuestDownloadRequest452_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXQuestDownloadRequest452_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXQuestDownloadRequest452_user(_this, n, pBuf, CNetworkEXQuestDownloadRequest452_next);
         };
-        bool CNetworkEXQuestGiveupRequest454_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXQuestGiveupRequest454_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXQuestGiveupRequest454_user(_this, n, pBuf, CNetworkEXQuestGiveupRequest454_next);
         };
-        bool CNetworkEXQuestSelectRewardReport456_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXQuestSelectRewardReport456_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXQuestSelectRewardReport456_user(_this, n, pBuf, CNetworkEXQuestSelectRewardReport456_next);
         };
-        bool CNetworkEXRadarCharListRequest458_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRadarCharListRequest458_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRadarCharListRequest458_user(_this, n, pBuf, CNetworkEXRadarCharListRequest458_next);
         };
-        bool CNetworkEXRealMovPosRequest460_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRealMovPosRequest460_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRealMovPosRequest460_user(_this, n, pBuf, CNetworkEXRealMovPosRequest460_next);
         };
-        bool CNetworkEXRegedCharRequest462_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRegedCharRequest462_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRegedCharRequest462_user(_this, n, pBuf, CNetworkEXRegedCharRequest462_next);
         };
-        bool CNetworkEXRegistBindRequest464_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRegistBindRequest464_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRegistBindRequest464_user(_this, n, pBuf, CNetworkEXRegistBindRequest464_next);
         };
-        bool CNetworkEXReleaseGroupTargetObjectRequest466_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXReleaseGroupTargetObjectRequest466_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXReleaseGroupTargetObjectRequest466_user(_this, n, pBuf, CNetworkEXReleaseGroupTargetObjectRequest466_next);
         };
-        bool CNetworkEXReleaseSiegeModeRequest468_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXReleaseSiegeModeRequest468_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXReleaseSiegeModeRequest468_user(_this, n, pBuf, CNetworkEXReleaseSiegeModeRequest468_next);
         };
-        bool CNetworkEXReleaseTargetObjectRequest470_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXReleaseTargetObjectRequest470_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXReleaseTargetObjectRequest470_user(_this, n, pBuf, CNetworkEXReleaseTargetObjectRequest470_next);
         };
-        bool CNetworkEXRequestChangeTaxRate472_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestChangeTaxRate472_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestChangeTaxRate472_user(_this, n, pBuf, CNetworkEXRequestChangeTaxRate472_next);
         };
-        bool CNetworkEXRequestPatriarchPunishment474_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestPatriarchPunishment474_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestPatriarchPunishment474_user(_this, n, pBuf, CNetworkEXRequestPatriarchPunishment474_next);
         };
-        bool CNetworkEXRequestTLLogoutTime476_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestTLLogoutTime476_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestTLLogoutTime476_user(_this, n, pBuf, CNetworkEXRequestTLLogoutTime476_next);
         };
-        bool CNetworkEXRequestTaxRate478_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestTaxRate478_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestTaxRate478_user(_this, n, pBuf, CNetworkEXRequestTaxRate478_next);
         };
-        bool CNetworkEXRequestUILockFindPW480_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestUILockFindPW480_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestUILockFindPW480_user(_this, n, pBuf, CNetworkEXRequestUILockFindPW480_next);
         };
-        bool CNetworkEXRequestUILockInit482_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestUILockInit482_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestUILockInit482_user(_this, n, pBuf, CNetworkEXRequestUILockInit482_next);
         };
-        bool CNetworkEXRequestUILockUpdateInfo484_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestUILockUpdateInfo484_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestUILockUpdateInfo484_user(_this, n, pBuf, CNetworkEXRequestUILockUpdateInfo484_next);
         };
-        bool CNetworkEXRequestUILockUserCertify486_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRequestUILockUserCertify486_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRequestUILockUserCertify486_user(_this, n, pBuf, CNetworkEXRequestUILockUserCertify486_next);
         };
-        bool CNetworkEXResCuttingRequest488_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXResCuttingRequest488_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXResCuttingRequest488_user(_this, n, pBuf, CNetworkEXResCuttingRequest488_next);
         };
-        bool CNetworkEXResDivisionRequest490_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXResDivisionRequest490_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXResDivisionRequest490_user(_this, n, pBuf, CNetworkEXResDivisionRequest490_next);
         };
-        bool CNetworkEXResSeparationRequest492_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXResSeparationRequest492_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXResSeparationRequest492_user(_this, n, pBuf, CNetworkEXResSeparationRequest492_next);
         };
-        bool CNetworkEXRevival494_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXRevival494_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXRevival494_user(_this, n, pBuf, CNetworkEXRevival494_next);
         };
-        bool CNetworkEXSelCharRequest496_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSelCharRequest496_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSelCharRequest496_user(_this, n, pBuf, CNetworkEXSelCharRequest496_next);
         };
-        bool CNetworkEXSelectClassRequest498_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSelectClassRequest498_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSelectClassRequest498_user(_this, n, pBuf, CNetworkEXSelectClassRequest498_next);
         };
-        bool CNetworkEXSelectPcBangRewardRequest500_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSelectPcBangRewardRequest500_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSelectPcBangRewardRequest500_user(_this, n, pBuf, CNetworkEXSelectPcBangRewardRequest500_next);
         };
-        bool CNetworkEXSelectWaitedQuestReport502_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSelectWaitedQuestReport502_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSelectWaitedQuestReport502_user(_this, n, pBuf, CNetworkEXSelectWaitedQuestReport502_next);
         };
-        bool CNetworkEXSellStoreRequest504_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSellStoreRequest504_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSellStoreRequest504_user(_this, n, pBuf, CNetworkEXSellStoreRequest504_next);
         };
-        bool CNetworkEXSendRaceBossMsgFromWebRequest506_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSendRaceBossMsgFromWebRequest506_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSendRaceBossMsgFromWebRequest506_user(_this, n, pBuf, CNetworkEXSendRaceBossMsgFromWebRequest506_next);
         };
-        bool CNetworkEXSetGroupMapPointRequest508_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSetGroupMapPointRequest508_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSetGroupMapPointRequest508_user(_this, n, pBuf, CNetworkEXSetGroupMapPointRequest508_next);
         };
-        bool CNetworkEXSetGroupTargetObjectRequest510_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSetGroupTargetObjectRequest510_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSetGroupTargetObjectRequest510_user(_this, n, pBuf, CNetworkEXSetGroupTargetObjectRequest510_next);
         };
-        bool CNetworkEXSetItemCheckRequest512_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSetItemCheckRequest512_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSetItemCheckRequest512_user(_this, n, pBuf, CNetworkEXSetItemCheckRequest512_next);
         };
-        void CNetworkEXSetPassablePacket514_wrapper(struct CNetworkEX* _this, unsigned int dwProID, char byHeader1, char byHeader2)
+        static void CNetworkEXSetPassablePacket514_wrapper(struct CNetworkEX* _this, unsigned int dwProID, char byHeader1, char byHeader2)
         {
            CNetworkEXSetPassablePacket514_user(_this, dwProID, byHeader1, byHeader2, CNetworkEXSetPassablePacket514_next);
         };
-        bool CNetworkEXSetRaceBossCryMsgRequest516_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSetRaceBossCryMsgRequest516_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSetRaceBossCryMsgRequest516_user(_this, n, pBuf, CNetworkEXSetRaceBossCryMsgRequest516_next);
         };
-        bool CNetworkEXSetTargetObjectRequest518_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSetTargetObjectRequest518_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSetTargetObjectRequest518_user(_this, n, pBuf, CNetworkEXSetTargetObjectRequest518_next);
         };
-        bool CNetworkEXSkillRecallTeleportRequest520_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSkillRecallTeleportRequest520_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSkillRecallTeleportRequest520_user(_this, n, pBuf, CNetworkEXSkillRecallTeleportRequest520_next);
         };
-        bool CNetworkEXSkillRequest522_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSkillRequest522_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSkillRequest522_user(_this, n, pBuf, CNetworkEXSkillRequest522_next);
         };
-        bool CNetworkEXSpecialDownloadRequest524_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXSpecialDownloadRequest524_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXSpecialDownloadRequest524_user(_this, n, pBuf, CNetworkEXSpecialDownloadRequest524_next);
         };
-        bool CNetworkEXStop526_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXStop526_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXStop526_user(_this, n, pBuf, CNetworkEXStop526_next);
         };
-        bool CNetworkEXStoreListRequest528_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXStoreListRequest528_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXStoreListRequest528_user(_this, n, pBuf, CNetworkEXStoreListRequest528_next);
         };
-        bool CNetworkEXTaiwanBillingUserCertify530_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTaiwanBillingUserCertify530_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTaiwanBillingUserCertify530_user(_this, n, pBuf, CNetworkEXTaiwanBillingUserCertify530_next);
         };
-        bool CNetworkEXTalikCrystalExchangeRequest532_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pHeader, char* pBuf)
+        static bool CNetworkEXTalikCrystalExchangeRequest532_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pHeader, char* pBuf)
         {
            return CNetworkEXTalikCrystalExchangeRequest532_user(_this, n, pHeader, pBuf, CNetworkEXTalikCrystalExchangeRequest532_next);
         };
-        bool CNetworkEXTalikRecorverList534_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTalikRecorverList534_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTalikRecorverList534_user(_this, n, pBuf, CNetworkEXTalikRecorverList534_next);
         };
-        bool CNetworkEXThrowSkillRequest536_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXThrowSkillRequest536_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXThrowSkillRequest536_user(_this, n, pBuf, CNetworkEXThrowSkillRequest536_next);
         };
-        bool CNetworkEXThrowStorageRequest538_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXThrowStorageRequest538_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXThrowStorageRequest538_user(_this, n, pBuf, CNetworkEXThrowStorageRequest538_next);
         };
-        bool CNetworkEXThrowUnitRequest540_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXThrowUnitRequest540_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXThrowUnitRequest540_user(_this, n, pBuf, CNetworkEXThrowUnitRequest540_next);
         };
-        bool CNetworkEXTotalGuildRankRequest542_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTotalGuildRankRequest542_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTotalGuildRankRequest542_user(_this, n, pBuf, CNetworkEXTotalGuildRankRequest542_next);
         };
-        bool CNetworkEXTradeBlockReport544_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTradeBlockReport544_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTradeBlockReport544_user(_this, n, pBuf, CNetworkEXTradeBlockReport544_next);
         };
-        bool CNetworkEXTransAccountInform546_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXTransAccountInform546_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXTransAccountInform546_user(_this, n, pMsg, CNetworkEXTransAccountInform546_next);
         };
-        bool CNetworkEXTransShipRenewTicketRequest548_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTransShipRenewTicketRequest548_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTransShipRenewTicketRequest548_user(_this, n, pBuf, CNetworkEXTransShipRenewTicketRequest548_next);
         };
-        bool CNetworkEXTransformSiegeModeRequest550_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTransformSiegeModeRequest550_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTransformSiegeModeRequest550_user(_this, n, pBuf, CNetworkEXTransformSiegeModeRequest550_next);
         };
-        bool CNetworkEXTrunkAlterItemSlotRequest552_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkAlterItemSlotRequest552_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkAlterItemSlotRequest552_user(_this, n, pBuf, CNetworkEXTrunkAlterItemSlotRequest552_next);
         };
-        bool CNetworkEXTrunkChangePasswdRequest554_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkChangePasswdRequest554_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkChangePasswdRequest554_user(_this, n, pBuf, CNetworkEXTrunkChangePasswdRequest554_next);
         };
-        bool CNetworkEXTrunkCreateCostIsFreeRequest556_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkCreateCostIsFreeRequest556_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkCreateCostIsFreeRequest556_user(_this, n, pBuf, CNetworkEXTrunkCreateCostIsFreeRequest556_next);
         };
-        bool CNetworkEXTrunkDownloadRequest558_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkDownloadRequest558_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkDownloadRequest558_user(_this, n, pBuf, CNetworkEXTrunkDownloadRequest558_next);
         };
-        bool CNetworkEXTrunkEstRequest560_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkEstRequest560_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkEstRequest560_user(_this, n, pBuf, CNetworkEXTrunkEstRequest560_next);
         };
-        bool CNetworkEXTrunkExtendRequest562_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkExtendRequest562_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkExtendRequest562_user(_this, n, pBuf, CNetworkEXTrunkExtendRequest562_next);
         };
-        bool CNetworkEXTrunkHintAnswerRequest564_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkHintAnswerRequest564_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkHintAnswerRequest564_user(_this, n, pBuf, CNetworkEXTrunkHintAnswerRequest564_next);
         };
-        bool CNetworkEXTrunkIoMergeRequest566_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkIoMergeRequest566_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkIoMergeRequest566_user(_this, n, pBuf, CNetworkEXTrunkIoMergeRequest566_next);
         };
-        bool CNetworkEXTrunkIoMoneyRequest568_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkIoMoneyRequest568_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkIoMoneyRequest568_user(_this, n, pBuf, CNetworkEXTrunkIoMoneyRequest568_next);
         };
-        bool CNetworkEXTrunkIoMoveRequest570_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkIoMoveRequest570_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkIoMoveRequest570_user(_this, n, pBuf, CNetworkEXTrunkIoMoveRequest570_next);
         };
-        bool CNetworkEXTrunkIoSwapRequest572_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkIoSwapRequest572_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkIoSwapRequest572_user(_this, n, pBuf, CNetworkEXTrunkIoSwapRequest572_next);
         };
-        bool CNetworkEXTrunkPotionDivisionRequest574_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkPotionDivisionRequest574_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkPotionDivisionRequest574_user(_this, n, pBuf, CNetworkEXTrunkPotionDivisionRequest574_next);
         };
-        bool CNetworkEXTrunkPwHintIndexRequest576_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkPwHintIndexRequest576_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkPwHintIndexRequest576_user(_this, n, pBuf, CNetworkEXTrunkPwHintIndexRequest576_next);
         };
-        bool CNetworkEXTrunkResDivisionRequest578_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTrunkResDivisionRequest578_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTrunkResDivisionRequest578_user(_this, n, pBuf, CNetworkEXTrunkResDivisionRequest578_next);
         };
-        bool CNetworkEXTutorialProcessReport580_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXTutorialProcessReport580_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXTutorialProcessReport580_user(_this, n, pBuf, CNetworkEXTutorialProcessReport580_next);
         };
-        bool CNetworkEXUILockInitResult582_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXUILockInitResult582_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXUILockInitResult582_user(_this, n, pMsg, CNetworkEXUILockInitResult582_next);
         };
-        bool CNetworkEXUILockRefreshResult584_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXUILockRefreshResult584_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXUILockRefreshResult584_user(_this, n, pMsg, CNetworkEXUILockRefreshResult584_next);
         };
-        bool CNetworkEXUILockUpdateResult586_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXUILockUpdateResult586_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXUILockUpdateResult586_user(_this, n, pMsg, CNetworkEXUILockUpdateResult586_next);
         };
-        bool CNetworkEXUnitBulletFillRequest588_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitBulletFillRequest588_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitBulletFillRequest588_user(_this, n, pBuf, CNetworkEXUnitBulletFillRequest588_next);
         };
-        bool CNetworkEXUnitBulletReplaceRequest590_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitBulletReplaceRequest590_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitBulletReplaceRequest590_user(_this, n, pBuf, CNetworkEXUnitBulletReplaceRequest590_next);
         };
-        bool CNetworkEXUnitDeliveryRequest592_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitDeliveryRequest592_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitDeliveryRequest592_user(_this, n, pBuf, CNetworkEXUnitDeliveryRequest592_next);
         };
-        bool CNetworkEXUnitFrameBuyRequest594_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitFrameBuyRequest594_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitFrameBuyRequest594_user(_this, n, pBuf, CNetworkEXUnitFrameBuyRequest594_next);
         };
-        bool CNetworkEXUnitFrameRepairRequest596_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitFrameRepairRequest596_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitFrameRepairRequest596_user(_this, n, pBuf, CNetworkEXUnitFrameRepairRequest596_next);
         };
-        bool CNetworkEXUnitLeaveRequest598_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitLeaveRequest598_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitLeaveRequest598_user(_this, n, pBuf, CNetworkEXUnitLeaveRequest598_next);
         };
-        bool CNetworkEXUnitPackFillRequest600_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitPackFillRequest600_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitPackFillRequest600_user(_this, n, pBuf, CNetworkEXUnitPackFillRequest600_next);
         };
-        bool CNetworkEXUnitPartTuningRequest602_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitPartTuningRequest602_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitPartTuningRequest602_user(_this, n, pBuf, CNetworkEXUnitPartTuningRequest602_next);
         };
-        bool CNetworkEXUnitReturnRequest604_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitReturnRequest604_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitReturnRequest604_user(_this, n, pBuf, CNetworkEXUnitReturnRequest604_next);
         };
-        bool CNetworkEXUnitSellRequest606_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitSellRequest606_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitSellRequest606_user(_this, n, pBuf, CNetworkEXUnitSellRequest606_next);
         };
-        bool CNetworkEXUnitTakeRequest608_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUnitTakeRequest608_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUnitTakeRequest608_user(_this, n, pBuf, CNetworkEXUnitTakeRequest608_next);
         };
-        bool CNetworkEXUpgradeItemRequest610_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUpgradeItemRequest610_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUpgradeItemRequest610_user(_this, n, pBuf, CNetworkEXUpgradeItemRequest610_next);
         };
-        bool CNetworkEXUseFireCrackerItemRequest612_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUseFireCrackerItemRequest612_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUseFireCrackerItemRequest612_user(_this, n, pBuf, CNetworkEXUseFireCrackerItemRequest612_next);
         };
-        bool CNetworkEXUsePotionRequest614_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUsePotionRequest614_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUsePotionRequest614_user(_this, n, pBuf, CNetworkEXUsePotionRequest614_next);
         };
-        bool CNetworkEXUseRadarItemRequest616_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUseRadarItemRequest616_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUseRadarItemRequest616_user(_this, n, pBuf, CNetworkEXUseRadarItemRequest616_next);
         };
-        bool CNetworkEXUseRecallTeleportItemRequest618_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUseRecallTeleportItemRequest618_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUseRecallTeleportItemRequest618_user(_this, n, pBuf, CNetworkEXUseRecallTeleportItemRequest618_next);
         };
-        bool CNetworkEXUseRecoverLossExpItemRequest620_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUseRecoverLossExpItemRequest620_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUseRecoverLossExpItemRequest620_user(_this, n, pBuf, CNetworkEXUseRecoverLossExpItemRequest620_next);
         };
-        bool CNetworkEXUseSoccerBallItemRequest622_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXUseSoccerBallItemRequest622_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXUseSoccerBallItemRequest622_user(_this, n, pBuf, CNetworkEXUseSoccerBallItemRequest622_next);
         };
-        bool CNetworkEXUserBlockResult624_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXUserBlockResult624_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXUserBlockResult624_user(_this, n, pMsg, CNetworkEXUserBlockResult624_next);
         };
-        void CNetworkEXUserLoop626_wrapper(struct CNetworkEX* _this)
+        static void CNetworkEXUserLoop626_wrapper(struct CNetworkEX* _this)
         {
            CNetworkEXUserLoop626_user(_this, CNetworkEXUserLoop626_next);
         };
-        bool CNetworkEXWebAgentLineAnalysis628_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CNetworkEXWebAgentLineAnalysis628_wrapper(struct CNetworkEX* _this, int n, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CNetworkEXWebAgentLineAnalysis628_user(_this, n, pMsgHeader, pMsg, CNetworkEXWebAgentLineAnalysis628_next);
         };
-        bool CNetworkEXWeeklyGuildRankRequest630_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXWeeklyGuildRankRequest630_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXWeeklyGuildRankRequest630_user(_this, n, pBuf, CNetworkEXWeeklyGuildRankRequest630_next);
         };
-        bool CNetworkEXWhisperBlockReport632_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXWhisperBlockReport632_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXWhisperBlockReport632_user(_this, n, pBuf, CNetworkEXWhisperBlockReport632_next);
         };
-        bool CNetworkEXWorldExitInform634_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXWorldExitInform634_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXWorldExitInform634_user(_this, n, pMsg, CNetworkEXWorldExitInform634_next);
         };
-        bool CNetworkEXWorldMsgInform636_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXWorldMsgInform636_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXWorldMsgInform636_user(_this, n, pMsg, CNetworkEXWorldMsgInform636_next);
         };
-        bool CNetworkEXWorldServiceInform638_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
+        static bool CNetworkEXWorldServiceInform638_wrapper(struct CNetworkEX* _this, unsigned int n, char* pMsg)
         {
            return CNetworkEXWorldServiceInform638_user(_this, n, pMsg, CNetworkEXWorldServiceInform638_next);
         };
-        bool CNetworkEXZoneAliveCheckRequest640_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
+        static bool CNetworkEXZoneAliveCheckRequest640_wrapper(struct CNetworkEX* _this, int n, char* pBuf)
         {
            return CNetworkEXZoneAliveCheckRequest640_user(_this, n, pBuf, CNetworkEXZoneAliveCheckRequest640_next);
         };
-        void CNetworkEXdtor_CNetworkEX645_wrapper(struct CNetworkEX* _this)
+        static void CNetworkEXdtor_CNetworkEX645_wrapper(struct CNetworkEX* _this)
         {
            CNetworkEXdtor_CNetworkEX645_user(_this, CNetworkEXdtor_CNetworkEX645_next);
         };
         
-        hook_record CNetworkEX_functions[] = {
+        static hook_record CNetworkEX_functions[] = {
         {   (LPVOID)0x1401c9ef0L,
             (LPVOID *)&CNetworkEXAMP_DownloadRequest2_user,
             (LPVOID *)&CNetworkEXAMP_DownloadRequest2_next,
@@ -3545,5 +3545,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

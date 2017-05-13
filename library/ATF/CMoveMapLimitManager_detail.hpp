@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMoveMapLimitManagerctor_CMoveMapLimitManager2_ptr CMoveMapLimitManagerctor_CMoveMapLimitManager2_next(nullptr);
-        info::CMoveMapLimitManagerctor_CMoveMapLimitManager2_clbk CMoveMapLimitManagerctor_CMoveMapLimitManager2_user(nullptr);
-        info::CMoveMapLimitManagerCreateComplete4_ptr CMoveMapLimitManagerCreateComplete4_next(nullptr);
-        info::CMoveMapLimitManagerCreateComplete4_clbk CMoveMapLimitManagerCreateComplete4_user(nullptr);
-        info::CMoveMapLimitManagerDestroy6_ptr CMoveMapLimitManagerDestroy6_next(nullptr);
-        info::CMoveMapLimitManagerDestroy6_clbk CMoveMapLimitManagerDestroy6_user(nullptr);
-        info::CMoveMapLimitManagerInit8_ptr CMoveMapLimitManagerInit8_next(nullptr);
-        info::CMoveMapLimitManagerInit8_clbk CMoveMapLimitManagerInit8_user(nullptr);
-        info::CMoveMapLimitManagerInstance10_ptr CMoveMapLimitManagerInstance10_next(nullptr);
-        info::CMoveMapLimitManagerInstance10_clbk CMoveMapLimitManagerInstance10_user(nullptr);
-        info::CMoveMapLimitManagerLoad12_ptr CMoveMapLimitManagerLoad12_next(nullptr);
-        info::CMoveMapLimitManagerLoad12_clbk CMoveMapLimitManagerLoad12_user(nullptr);
-        info::CMoveMapLimitManagerLogIn14_ptr CMoveMapLimitManagerLogIn14_next(nullptr);
-        info::CMoveMapLimitManagerLogIn14_clbk CMoveMapLimitManagerLogIn14_user(nullptr);
-        info::CMoveMapLimitManagerLogOut16_ptr CMoveMapLimitManagerLogOut16_next(nullptr);
-        info::CMoveMapLimitManagerLogOut16_clbk CMoveMapLimitManagerLogOut16_user(nullptr);
-        info::CMoveMapLimitManagerLoop18_ptr CMoveMapLimitManagerLoop18_next(nullptr);
-        info::CMoveMapLimitManagerLoop18_clbk CMoveMapLimitManagerLoop18_user(nullptr);
-        info::CMoveMapLimitManagerMoveLimitMapZoneRequest20_ptr CMoveMapLimitManagerMoveLimitMapZoneRequest20_next(nullptr);
-        info::CMoveMapLimitManagerMoveLimitMapZoneRequest20_clbk CMoveMapLimitManagerMoveLimitMapZoneRequest20_user(nullptr);
-        info::CMoveMapLimitManagerRequest22_ptr CMoveMapLimitManagerRequest22_next(nullptr);
-        info::CMoveMapLimitManagerRequest22_clbk CMoveMapLimitManagerRequest22_user(nullptr);
-        info::CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_ptr CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_next(nullptr);
-        info::CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_clbk CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_user(nullptr);
-        info::CMoveMapLimitManagerdtor_CMoveMapLimitManager28_ptr CMoveMapLimitManagerdtor_CMoveMapLimitManager28_next(nullptr);
-        info::CMoveMapLimitManagerdtor_CMoveMapLimitManager28_clbk CMoveMapLimitManagerdtor_CMoveMapLimitManager28_user(nullptr);
+        static info::CMoveMapLimitManagerctor_CMoveMapLimitManager2_ptr CMoveMapLimitManagerctor_CMoveMapLimitManager2_next(nullptr);
+        static info::CMoveMapLimitManagerctor_CMoveMapLimitManager2_clbk CMoveMapLimitManagerctor_CMoveMapLimitManager2_user(nullptr);
+        static info::CMoveMapLimitManagerCreateComplete4_ptr CMoveMapLimitManagerCreateComplete4_next(nullptr);
+        static info::CMoveMapLimitManagerCreateComplete4_clbk CMoveMapLimitManagerCreateComplete4_user(nullptr);
+        static info::CMoveMapLimitManagerDestroy6_ptr CMoveMapLimitManagerDestroy6_next(nullptr);
+        static info::CMoveMapLimitManagerDestroy6_clbk CMoveMapLimitManagerDestroy6_user(nullptr);
+        static info::CMoveMapLimitManagerInit8_ptr CMoveMapLimitManagerInit8_next(nullptr);
+        static info::CMoveMapLimitManagerInit8_clbk CMoveMapLimitManagerInit8_user(nullptr);
+        static info::CMoveMapLimitManagerInstance10_ptr CMoveMapLimitManagerInstance10_next(nullptr);
+        static info::CMoveMapLimitManagerInstance10_clbk CMoveMapLimitManagerInstance10_user(nullptr);
+        static info::CMoveMapLimitManagerLoad12_ptr CMoveMapLimitManagerLoad12_next(nullptr);
+        static info::CMoveMapLimitManagerLoad12_clbk CMoveMapLimitManagerLoad12_user(nullptr);
+        static info::CMoveMapLimitManagerLogIn14_ptr CMoveMapLimitManagerLogIn14_next(nullptr);
+        static info::CMoveMapLimitManagerLogIn14_clbk CMoveMapLimitManagerLogIn14_user(nullptr);
+        static info::CMoveMapLimitManagerLogOut16_ptr CMoveMapLimitManagerLogOut16_next(nullptr);
+        static info::CMoveMapLimitManagerLogOut16_clbk CMoveMapLimitManagerLogOut16_user(nullptr);
+        static info::CMoveMapLimitManagerLoop18_ptr CMoveMapLimitManagerLoop18_next(nullptr);
+        static info::CMoveMapLimitManagerLoop18_clbk CMoveMapLimitManagerLoop18_user(nullptr);
+        static info::CMoveMapLimitManagerMoveLimitMapZoneRequest20_ptr CMoveMapLimitManagerMoveLimitMapZoneRequest20_next(nullptr);
+        static info::CMoveMapLimitManagerMoveLimitMapZoneRequest20_clbk CMoveMapLimitManagerMoveLimitMapZoneRequest20_user(nullptr);
+        static info::CMoveMapLimitManagerRequest22_ptr CMoveMapLimitManagerRequest22_next(nullptr);
+        static info::CMoveMapLimitManagerRequest22_clbk CMoveMapLimitManagerRequest22_user(nullptr);
+        static info::CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_ptr CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_next(nullptr);
+        static info::CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_clbk CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_user(nullptr);
+        static info::CMoveMapLimitManagerdtor_CMoveMapLimitManager28_ptr CMoveMapLimitManagerdtor_CMoveMapLimitManager28_next(nullptr);
+        static info::CMoveMapLimitManagerdtor_CMoveMapLimitManager28_clbk CMoveMapLimitManagerdtor_CMoveMapLimitManager28_user(nullptr);
         
-        void CMoveMapLimitManagerctor_CMoveMapLimitManager2_wrapper(struct CMoveMapLimitManager* _this)
+        static void CMoveMapLimitManagerctor_CMoveMapLimitManager2_wrapper(struct CMoveMapLimitManager* _this)
         {
            CMoveMapLimitManagerctor_CMoveMapLimitManager2_user(_this, CMoveMapLimitManagerctor_CMoveMapLimitManager2_next);
         };
-        void CMoveMapLimitManagerCreateComplete4_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitManagerCreateComplete4_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitManagerCreateComplete4_user(_this, pkPlayer, CMoveMapLimitManagerCreateComplete4_next);
         };
-        void CMoveMapLimitManagerDestroy6_wrapper()
+        static void CMoveMapLimitManagerDestroy6_wrapper()
         {
            CMoveMapLimitManagerDestroy6_user(CMoveMapLimitManagerDestroy6_next);
         };
-        bool CMoveMapLimitManagerInit8_wrapper(struct CMoveMapLimitManager* _this)
+        static bool CMoveMapLimitManagerInit8_wrapper(struct CMoveMapLimitManager* _this)
         {
            return CMoveMapLimitManagerInit8_user(_this, CMoveMapLimitManagerInit8_next);
         };
-        struct CMoveMapLimitManager* CMoveMapLimitManagerInstance10_wrapper()
+        static struct CMoveMapLimitManager* CMoveMapLimitManagerInstance10_wrapper()
         {
            return CMoveMapLimitManagerInstance10_user(CMoveMapLimitManagerInstance10_next);
         };
-        void CMoveMapLimitManagerLoad12_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitManagerLoad12_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitManagerLoad12_user(_this, pkPlayer, CMoveMapLimitManagerLoad12_next);
         };
-        void CMoveMapLimitManagerLogIn14_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitManagerLogIn14_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitManagerLogIn14_user(_this, pkPlayer, CMoveMapLimitManagerLogIn14_next);
         };
-        void CMoveMapLimitManagerLogOut16_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitManagerLogOut16_wrapper(struct CMoveMapLimitManager* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitManagerLogOut16_user(_this, pkPlayer, CMoveMapLimitManagerLogOut16_next);
         };
-        void CMoveMapLimitManagerLoop18_wrapper(struct CMoveMapLimitManager* _this)
+        static void CMoveMapLimitManagerLoop18_wrapper(struct CMoveMapLimitManager* _this)
         {
            CMoveMapLimitManagerLoop18_user(_this, CMoveMapLimitManagerLoop18_next);
         };
-        bool CMoveMapLimitManagerMoveLimitMapZoneRequest20_wrapper(struct CMoveMapLimitManager* _this, int iUserInx, char* pRequest)
+        static bool CMoveMapLimitManagerMoveLimitMapZoneRequest20_wrapper(struct CMoveMapLimitManager* _this, int iUserInx, char* pRequest)
         {
            return CMoveMapLimitManagerMoveLimitMapZoneRequest20_user(_this, iUserInx, pRequest, CMoveMapLimitManagerMoveLimitMapZoneRequest20_next);
         };
-        char CMoveMapLimitManagerRequest22_wrapper(struct CMoveMapLimitManager* _this, int iLimitType, int iRequetType, int iMapInx, unsigned int dwStoreRecordIndex, int iUserInx, char* pRequest)
+        static char CMoveMapLimitManagerRequest22_wrapper(struct CMoveMapLimitManager* _this, int iLimitType, int iRequetType, int iMapInx, unsigned int dwStoreRecordIndex, int iUserInx, char* pRequest)
         {
            return CMoveMapLimitManagerRequest22_user(_this, iLimitType, iRequetType, iMapInx, dwStoreRecordIndex, iUserInx, pRequest, CMoveMapLimitManagerRequest22_next);
         };
-        char CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_wrapper(struct CMoveMapLimitManager* _this)
+        static char CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_wrapper(struct CMoveMapLimitManager* _this)
         {
            return CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_user(_this, CMoveMapLimitManagerRequestElanMapUserForceMoveHQ24_next);
         };
-        void CMoveMapLimitManagerdtor_CMoveMapLimitManager28_wrapper(struct CMoveMapLimitManager* _this)
+        static void CMoveMapLimitManagerdtor_CMoveMapLimitManager28_wrapper(struct CMoveMapLimitManager* _this)
         {
            CMoveMapLimitManagerdtor_CMoveMapLimitManager28_user(_this, CMoveMapLimitManagerdtor_CMoveMapLimitManager28_next);
         };
         
-        hook_record CMoveMapLimitManager_functions[] = {
+        static hook_record CMoveMapLimitManager_functions[] = {
         {   (LPVOID)0x1403a1d10L,
             (LPVOID *)&CMoveMapLimitManagerctor_CMoveMapLimitManager2_user,
             (LPVOID *)&CMoveMapLimitManagerctor_CMoveMapLimitManager2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

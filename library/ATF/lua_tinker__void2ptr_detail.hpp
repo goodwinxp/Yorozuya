@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct lua_tinker::var_base* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct lua_tinker::var_base* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<lua_tinker::var_base>_functions[] = {
+            static hook_record void2ptr<lua_tinker::var_base>_functions[] = {
             {   (LPVOID)0x1404472e0L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -27,7 +27,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -38,15 +38,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct CLuaSignalReActor* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct CLuaSignalReActor* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<CLuaSignalReActor>_functions[] = {
+            static hook_record void2ptr<CLuaSignalReActor>_functions[] = {
             {   (LPVOID)0x14040b780L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -55,7 +55,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -66,15 +66,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct CLuaEventMgr* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct CLuaEventMgr* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<CLuaEventMgr>_functions[] = {
+            static hook_record void2ptr<CLuaEventMgr>_functions[] = {
             {   (LPVOID)0x14040af10L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -83,7 +83,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -94,15 +94,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct LuaParam3* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct LuaParam3* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<LuaParam3>_functions[] = {
+            static hook_record void2ptr<LuaParam3>_functions[] = {
             {   (LPVOID)0x140409d00L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -111,7 +111,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -122,15 +122,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct lua_tinker::user* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct lua_tinker::user* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<lua_tinker::user>_functions[] = {
+            static hook_record void2ptr<lua_tinker::user>_functions[] = {
             {   (LPVOID)0x140409de0L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -139,7 +139,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -150,15 +150,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct CMonster* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct CMonster* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<CMonster>_functions[] = {
+            static hook_record void2ptr<CMonster>_functions[] = {
             {   (LPVOID)0x14040b790L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -167,7 +167,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -178,15 +178,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct CLuaEventNode* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct CLuaEventNode* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<CLuaEventNode>_functions[] = {
+            static hook_record void2ptr<CLuaEventNode>_functions[] = {
             {   (LPVOID)0x14040aef0L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -195,7 +195,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__void2ptr_info.hpp"
@@ -206,15 +206,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
-            info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_ptr lua_tinker__void2ptrinvoke2_next(nullptr);
+            static info::lua_tinker__void2ptrinvoke2_clbk lua_tinker__void2ptrinvoke2_user(nullptr);
             
-            struct CLuaScript* lua_tinker__void2ptrinvoke2_wrapper(void* input)
+            static struct CLuaScript* lua_tinker__void2ptrinvoke2_wrapper(void* input)
             {
                return lua_tinker__void2ptrinvoke2_user(input);
             };
             
-            hook_record void2ptr<CLuaScript>_functions[] = {
+            static hook_record void2ptr<CLuaScript>_functions[] = {
             {   (LPVOID)0x14040af00L,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_user,
                 (LPVOID *)&lua_tinker__void2ptrinvoke2_next,
@@ -223,6 +223,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

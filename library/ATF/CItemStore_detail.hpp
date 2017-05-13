@@ -8,147 +8,147 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CItemStorector_CItemStore2_ptr CItemStorector_CItemStore2_next(nullptr);
-        info::CItemStorector_CItemStore2_clbk CItemStorector_CItemStore2_user(nullptr);
-        info::CItemStoreCalcBuyPrice4_ptr CItemStoreCalcBuyPrice4_next(nullptr);
-        info::CItemStoreCalcBuyPrice4_clbk CItemStoreCalcBuyPrice4_user(nullptr);
-        info::CItemStoreCalcSecIndex6_ptr CItemStoreCalcSecIndex6_next(nullptr);
-        info::CItemStoreCalcSecIndex6_clbk CItemStoreCalcSecIndex6_user(nullptr);
-        info::CItemStoreCalcSellPrice8_ptr CItemStoreCalcSellPrice8_next(nullptr);
-        info::CItemStoreCalcSellPrice8_clbk CItemStoreCalcSellPrice8_user(nullptr);
-        info::CItemStoreGetLastTradeActPoint10_ptr CItemStoreGetLastTradeActPoint10_next(nullptr);
-        info::CItemStoreGetLastTradeActPoint10_clbk CItemStoreGetLastTradeActPoint10_user(nullptr);
-        info::CItemStoreGetLastTradeDalant12_ptr CItemStoreGetLastTradeDalant12_next(nullptr);
-        info::CItemStoreGetLastTradeDalant12_clbk CItemStoreGetLastTradeDalant12_user(nullptr);
-        info::CItemStoreGetLastTradeGold14_ptr CItemStoreGetLastTradeGold14_next(nullptr);
-        info::CItemStoreGetLastTradeGold14_clbk CItemStoreGetLastTradeGold14_user(nullptr);
-        info::CItemStoreGetLastTradePoint16_ptr CItemStoreGetLastTradePoint16_next(nullptr);
-        info::CItemStoreGetLastTradePoint16_clbk CItemStoreGetLastTradePoint16_user(nullptr);
-        info::CItemStoreGetLimitItem18_ptr CItemStoreGetLimitItem18_next(nullptr);
-        info::CItemStoreGetLimitItem18_clbk CItemStoreGetLimitItem18_user(nullptr);
-        info::CItemStoreGetLimitItemAmount20_ptr CItemStoreGetLimitItemAmount20_next(nullptr);
-        info::CItemStoreGetLimitItemAmount20_clbk CItemStoreGetLimitItemAmount20_user(nullptr);
-        info::CItemStoreGetNpcCode22_ptr CItemStoreGetNpcCode22_next(nullptr);
-        info::CItemStoreGetNpcCode22_clbk CItemStoreGetNpcCode22_user(nullptr);
-        info::CItemStoreGetNpcRaceCode24_ptr CItemStoreGetNpcRaceCode24_next(nullptr);
-        info::CItemStoreGetNpcRaceCode24_clbk CItemStoreGetNpcRaceCode24_user(nullptr);
-        info::CItemStoreGetNpcRecord26_ptr CItemStoreGetNpcRecord26_next(nullptr);
-        info::CItemStoreGetNpcRecord26_clbk CItemStoreGetNpcRecord26_user(nullptr);
-        info::CItemStoreGetStorePos28_ptr CItemStoreGetStorePos28_next(nullptr);
-        info::CItemStoreGetStorePos28_clbk CItemStoreGetStorePos28_user(nullptr);
-        info::CItemStoreInit30_ptr CItemStoreInit30_next(nullptr);
-        info::CItemStoreInit30_clbk CItemStoreInit30_user(nullptr);
-        info::CItemStoreInitLimitItemInfo32_ptr CItemStoreInitLimitItemInfo32_next(nullptr);
-        info::CItemStoreInitLimitItemInfo32_clbk CItemStoreInitLimitItemInfo32_user(nullptr);
-        info::CItemStoreIsBuy34_ptr CItemStoreIsBuy34_next(nullptr);
-        info::CItemStoreIsBuy34_clbk CItemStoreIsBuy34_user(nullptr);
-        info::CItemStoreIsSell36_ptr CItemStoreIsSell36_next(nullptr);
-        info::CItemStoreIsSell36_clbk CItemStoreIsSell36_user(nullptr);
-        info::CItemStoreSetLimitItemInitTime38_ptr CItemStoreSetLimitItemInitTime38_next(nullptr);
-        info::CItemStoreSetLimitItemInitTime38_clbk CItemStoreSetLimitItemInitTime38_user(nullptr);
-        info::CItemStoreSetZeroTradeMoney40_ptr CItemStoreSetZeroTradeMoney40_next(nullptr);
-        info::CItemStoreSetZeroTradeMoney40_clbk CItemStoreSetZeroTradeMoney40_user(nullptr);
-        info::CItemStoreSubLimitItemNum42_ptr CItemStoreSubLimitItemNum42_next(nullptr);
-        info::CItemStoreSubLimitItemNum42_clbk CItemStoreSubLimitItemNum42_user(nullptr);
-        info::CItemStoreUpdateLimitItemNum44_ptr CItemStoreUpdateLimitItemNum44_next(nullptr);
-        info::CItemStoreUpdateLimitItemNum44_clbk CItemStoreUpdateLimitItemNum44_user(nullptr);
-        info::CItemStoredtor_CItemStore48_ptr CItemStoredtor_CItemStore48_next(nullptr);
-        info::CItemStoredtor_CItemStore48_clbk CItemStoredtor_CItemStore48_user(nullptr);
+        static info::CItemStorector_CItemStore2_ptr CItemStorector_CItemStore2_next(nullptr);
+        static info::CItemStorector_CItemStore2_clbk CItemStorector_CItemStore2_user(nullptr);
+        static info::CItemStoreCalcBuyPrice4_ptr CItemStoreCalcBuyPrice4_next(nullptr);
+        static info::CItemStoreCalcBuyPrice4_clbk CItemStoreCalcBuyPrice4_user(nullptr);
+        static info::CItemStoreCalcSecIndex6_ptr CItemStoreCalcSecIndex6_next(nullptr);
+        static info::CItemStoreCalcSecIndex6_clbk CItemStoreCalcSecIndex6_user(nullptr);
+        static info::CItemStoreCalcSellPrice8_ptr CItemStoreCalcSellPrice8_next(nullptr);
+        static info::CItemStoreCalcSellPrice8_clbk CItemStoreCalcSellPrice8_user(nullptr);
+        static info::CItemStoreGetLastTradeActPoint10_ptr CItemStoreGetLastTradeActPoint10_next(nullptr);
+        static info::CItemStoreGetLastTradeActPoint10_clbk CItemStoreGetLastTradeActPoint10_user(nullptr);
+        static info::CItemStoreGetLastTradeDalant12_ptr CItemStoreGetLastTradeDalant12_next(nullptr);
+        static info::CItemStoreGetLastTradeDalant12_clbk CItemStoreGetLastTradeDalant12_user(nullptr);
+        static info::CItemStoreGetLastTradeGold14_ptr CItemStoreGetLastTradeGold14_next(nullptr);
+        static info::CItemStoreGetLastTradeGold14_clbk CItemStoreGetLastTradeGold14_user(nullptr);
+        static info::CItemStoreGetLastTradePoint16_ptr CItemStoreGetLastTradePoint16_next(nullptr);
+        static info::CItemStoreGetLastTradePoint16_clbk CItemStoreGetLastTradePoint16_user(nullptr);
+        static info::CItemStoreGetLimitItem18_ptr CItemStoreGetLimitItem18_next(nullptr);
+        static info::CItemStoreGetLimitItem18_clbk CItemStoreGetLimitItem18_user(nullptr);
+        static info::CItemStoreGetLimitItemAmount20_ptr CItemStoreGetLimitItemAmount20_next(nullptr);
+        static info::CItemStoreGetLimitItemAmount20_clbk CItemStoreGetLimitItemAmount20_user(nullptr);
+        static info::CItemStoreGetNpcCode22_ptr CItemStoreGetNpcCode22_next(nullptr);
+        static info::CItemStoreGetNpcCode22_clbk CItemStoreGetNpcCode22_user(nullptr);
+        static info::CItemStoreGetNpcRaceCode24_ptr CItemStoreGetNpcRaceCode24_next(nullptr);
+        static info::CItemStoreGetNpcRaceCode24_clbk CItemStoreGetNpcRaceCode24_user(nullptr);
+        static info::CItemStoreGetNpcRecord26_ptr CItemStoreGetNpcRecord26_next(nullptr);
+        static info::CItemStoreGetNpcRecord26_clbk CItemStoreGetNpcRecord26_user(nullptr);
+        static info::CItemStoreGetStorePos28_ptr CItemStoreGetStorePos28_next(nullptr);
+        static info::CItemStoreGetStorePos28_clbk CItemStoreGetStorePos28_user(nullptr);
+        static info::CItemStoreInit30_ptr CItemStoreInit30_next(nullptr);
+        static info::CItemStoreInit30_clbk CItemStoreInit30_user(nullptr);
+        static info::CItemStoreInitLimitItemInfo32_ptr CItemStoreInitLimitItemInfo32_next(nullptr);
+        static info::CItemStoreInitLimitItemInfo32_clbk CItemStoreInitLimitItemInfo32_user(nullptr);
+        static info::CItemStoreIsBuy34_ptr CItemStoreIsBuy34_next(nullptr);
+        static info::CItemStoreIsBuy34_clbk CItemStoreIsBuy34_user(nullptr);
+        static info::CItemStoreIsSell36_ptr CItemStoreIsSell36_next(nullptr);
+        static info::CItemStoreIsSell36_clbk CItemStoreIsSell36_user(nullptr);
+        static info::CItemStoreSetLimitItemInitTime38_ptr CItemStoreSetLimitItemInitTime38_next(nullptr);
+        static info::CItemStoreSetLimitItemInitTime38_clbk CItemStoreSetLimitItemInitTime38_user(nullptr);
+        static info::CItemStoreSetZeroTradeMoney40_ptr CItemStoreSetZeroTradeMoney40_next(nullptr);
+        static info::CItemStoreSetZeroTradeMoney40_clbk CItemStoreSetZeroTradeMoney40_user(nullptr);
+        static info::CItemStoreSubLimitItemNum42_ptr CItemStoreSubLimitItemNum42_next(nullptr);
+        static info::CItemStoreSubLimitItemNum42_clbk CItemStoreSubLimitItemNum42_user(nullptr);
+        static info::CItemStoreUpdateLimitItemNum44_ptr CItemStoreUpdateLimitItemNum44_next(nullptr);
+        static info::CItemStoreUpdateLimitItemNum44_clbk CItemStoreUpdateLimitItemNum44_user(nullptr);
+        static info::CItemStoredtor_CItemStore48_ptr CItemStoredtor_CItemStore48_next(nullptr);
+        static info::CItemStoredtor_CItemStore48_clbk CItemStoredtor_CItemStore48_user(nullptr);
         
-        void CItemStorector_CItemStore2_wrapper(struct CItemStore* _this)
+        static void CItemStorector_CItemStore2_wrapper(struct CItemStore* _this)
         {
            CItemStorector_CItemStore2_user(_this, CItemStorector_CItemStore2_next);
         };
-        float CItemStoreCalcBuyPrice4_wrapper(struct CItemStore* _this, char byTableCode, uint16_t wItemIndex, char* pbyMoneyUnit)
+        static float CItemStoreCalcBuyPrice4_wrapper(struct CItemStore* _this, char byTableCode, uint16_t wItemIndex, char* pbyMoneyUnit)
         {
            return CItemStoreCalcBuyPrice4_user(_this, byTableCode, wItemIndex, pbyMoneyUnit, CItemStoreCalcBuyPrice4_next);
         };
-        int CItemStoreCalcSecIndex6_wrapper(struct CItemStore* _this, float x, float z)
+        static int CItemStoreCalcSecIndex6_wrapper(struct CItemStore* _this, float x, float z)
         {
            return CItemStoreCalcSecIndex6_user(_this, x, z, CItemStoreCalcSecIndex6_next);
         };
-        int CItemStoreCalcSellPrice8_wrapper(struct CItemStore* _this, int nGoodIndex, char* pbyMoneyUnit)
+        static int CItemStoreCalcSellPrice8_wrapper(struct CItemStore* _this, int nGoodIndex, char* pbyMoneyUnit)
         {
            return CItemStoreCalcSellPrice8_user(_this, nGoodIndex, pbyMoneyUnit, CItemStoreCalcSellPrice8_next);
         };
-        int CItemStoreGetLastTradeActPoint10_wrapper(struct CItemStore* _this, char byActCode)
+        static int CItemStoreGetLastTradeActPoint10_wrapper(struct CItemStore* _this, char byActCode)
         {
            return CItemStoreGetLastTradeActPoint10_user(_this, byActCode, CItemStoreGetLastTradeActPoint10_next);
         };
-        int CItemStoreGetLastTradeDalant12_wrapper(struct CItemStore* _this)
+        static int CItemStoreGetLastTradeDalant12_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetLastTradeDalant12_user(_this, CItemStoreGetLastTradeDalant12_next);
         };
-        int CItemStoreGetLastTradeGold14_wrapper(struct CItemStore* _this)
+        static int CItemStoreGetLastTradeGold14_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetLastTradeGold14_user(_this, CItemStoreGetLastTradeGold14_next);
         };
-        int CItemStoreGetLastTradePoint16_wrapper(struct CItemStore* _this)
+        static int CItemStoreGetLastTradePoint16_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetLastTradePoint16_user(_this, CItemStoreGetLastTradePoint16_next);
         };
-        struct _limit_item_info* CItemStoreGetLimitItem18_wrapper(struct CItemStore* _this, int nIndex)
+        static struct _limit_item_info* CItemStoreGetLimitItem18_wrapper(struct CItemStore* _this, int nIndex)
         {
            return CItemStoreGetLimitItem18_user(_this, nIndex, CItemStoreGetLimitItem18_next);
         };
-        void CItemStoreGetLimitItemAmount20_wrapper(struct CItemStore* _this, struct _limit_amount_info* pAmountInfo)
+        static void CItemStoreGetLimitItemAmount20_wrapper(struct CItemStore* _this, struct _limit_amount_info* pAmountInfo)
         {
            CItemStoreGetLimitItemAmount20_user(_this, pAmountInfo, CItemStoreGetLimitItemAmount20_next);
         };
-        char* CItemStoreGetNpcCode22_wrapper(struct CItemStore* _this)
+        static char* CItemStoreGetNpcCode22_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetNpcCode22_user(_this, CItemStoreGetNpcCode22_next);
         };
-        bool CItemStoreGetNpcRaceCode24_wrapper(struct CItemStore* _this, char* pbyRaceCode)
+        static bool CItemStoreGetNpcRaceCode24_wrapper(struct CItemStore* _this, char* pbyRaceCode)
         {
            return CItemStoreGetNpcRaceCode24_user(_this, pbyRaceCode, CItemStoreGetNpcRaceCode24_next);
         };
-        struct _base_fld* CItemStoreGetNpcRecord26_wrapper(struct CItemStore* _this)
+        static struct _base_fld* CItemStoreGetNpcRecord26_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetNpcRecord26_user(_this, CItemStoreGetNpcRecord26_next);
         };
-        float* CItemStoreGetStorePos28_wrapper(struct CItemStore* _this)
+        static float* CItemStoreGetStorePos28_wrapper(struct CItemStore* _this)
         {
            return CItemStoreGetStorePos28_user(_this, CItemStoreGetStorePos28_next);
         };
-        bool CItemStoreInit30_wrapper(struct CItemStore* _this, int nIndex, struct CMapData* pExistMap, struct _store_dummy* pDum, struct _base_fld* pRec)
+        static bool CItemStoreInit30_wrapper(struct CItemStore* _this, int nIndex, struct CMapData* pExistMap, struct _store_dummy* pDum, struct _base_fld* pRec)
         {
            return CItemStoreInit30_user(_this, nIndex, pExistMap, pDum, pRec, CItemStoreInit30_next);
         };
-        void CItemStoreInitLimitItemInfo32_wrapper(struct CItemStore* _this)
+        static void CItemStoreInitLimitItemInfo32_wrapper(struct CItemStore* _this)
         {
            CItemStoreInitLimitItemInfo32_user(_this, CItemStoreInitLimitItemInfo32_next);
         };
-        char CItemStoreIsBuy34_wrapper(struct CItemStore* _this, char byOfferNum, struct _sell_offer* pOffer, float fDiscountRate, char byRace)
+        static char CItemStoreIsBuy34_wrapper(struct CItemStore* _this, char byOfferNum, struct _sell_offer* pOffer, float fDiscountRate, char byRace)
         {
            return CItemStoreIsBuy34_user(_this, byOfferNum, pOffer, fDiscountRate, byRace, CItemStoreIsBuy34_next);
         };
-        char CItemStoreIsSell36_wrapper(struct CItemStore* _this, char byOfferNum, struct _buy_offer* pOffer, unsigned int dwHasDalant, unsigned int dwHasGold, long double dHasPoint, unsigned int* dwHasActPoint, char* pbyActCode, float fDiscountRate, char byRace, char byGrade)
+        static char CItemStoreIsSell36_wrapper(struct CItemStore* _this, char byOfferNum, struct _buy_offer* pOffer, unsigned int dwHasDalant, unsigned int dwHasGold, long double dHasPoint, unsigned int* dwHasActPoint, char* pbyActCode, float fDiscountRate, char byRace, char byGrade)
         {
            return CItemStoreIsSell36_user(_this, byOfferNum, pOffer, dwHasDalant, dwHasGold, dHasPoint, dwHasActPoint, pbyActCode, fDiscountRate, byRace, byGrade, CItemStoreIsSell36_next);
         };
-        void CItemStoreSetLimitItemInitTime38_wrapper(struct CItemStore* _this)
+        static void CItemStoreSetLimitItemInitTime38_wrapper(struct CItemStore* _this)
         {
            CItemStoreSetLimitItemInitTime38_user(_this, CItemStoreSetLimitItemInitTime38_next);
         };
-        void CItemStoreSetZeroTradeMoney40_wrapper(struct CItemStore* _this)
+        static void CItemStoreSetZeroTradeMoney40_wrapper(struct CItemStore* _this)
         {
            CItemStoreSetZeroTradeMoney40_user(_this, CItemStoreSetZeroTradeMoney40_next);
         };
-        void CItemStoreSubLimitItemNum42_wrapper(struct CItemStore* _this, int nLimitItemIndex, int nSubNum)
+        static void CItemStoreSubLimitItemNum42_wrapper(struct CItemStore* _this, int nLimitItemIndex, int nSubNum)
         {
            CItemStoreSubLimitItemNum42_user(_this, nLimitItemIndex, nSubNum, CItemStoreSubLimitItemNum42_next);
         };
-        void CItemStoreUpdateLimitItemNum44_wrapper(struct CItemStore* _this, bool bUpdate)
+        static void CItemStoreUpdateLimitItemNum44_wrapper(struct CItemStore* _this, bool bUpdate)
         {
            CItemStoreUpdateLimitItemNum44_user(_this, bUpdate, CItemStoreUpdateLimitItemNum44_next);
         };
-        void CItemStoredtor_CItemStore48_wrapper(struct CItemStore* _this)
+        static void CItemStoredtor_CItemStore48_wrapper(struct CItemStore* _this)
         {
            CItemStoredtor_CItemStore48_user(_this, CItemStoredtor_CItemStore48_next);
         };
         
-        hook_record CItemStore_functions[] = {
+        static hook_record CItemStore_functions[] = {
         {   (LPVOID)0x140260630L,
             (LPVOID *)&CItemStorector_CItemStore2_user,
             (LPVOID *)&CItemStorector_CItemStore2_next,
@@ -267,5 +267,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

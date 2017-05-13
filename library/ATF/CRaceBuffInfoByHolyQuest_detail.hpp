@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBuffInfoByHolyQuestApply2_ptr CRaceBuffInfoByHolyQuestApply2_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestApply2_clbk CRaceBuffInfoByHolyQuestApply2_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestApplyEffect4_ptr CRaceBuffInfoByHolyQuestApplyEffect4_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestApplyEffect4_clbk CRaceBuffInfoByHolyQuestApplyEffect4_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_ptr CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_clbk CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestCreate8_ptr CRaceBuffInfoByHolyQuestCreate8_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestCreate8_clbk CRaceBuffInfoByHolyQuestCreate8_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestCreateComplete10_ptr CRaceBuffInfoByHolyQuestCreateComplete10_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestCreateComplete10_clbk CRaceBuffInfoByHolyQuestCreateComplete10_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_ptr CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_clbk CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_ptr CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_clbk CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_ptr CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_clbk CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifySetBuff18_ptr CRaceBuffInfoByHolyQuestNotifySetBuff18_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestNotifySetBuff18_clbk CRaceBuffInfoByHolyQuestNotifySetBuff18_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestRelease20_ptr CRaceBuffInfoByHolyQuestRelease20_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestRelease20_clbk CRaceBuffInfoByHolyQuestRelease20_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_ptr CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_clbk CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestApply2_ptr CRaceBuffInfoByHolyQuestApply2_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestApply2_clbk CRaceBuffInfoByHolyQuestApply2_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestApplyEffect4_ptr CRaceBuffInfoByHolyQuestApplyEffect4_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestApplyEffect4_clbk CRaceBuffInfoByHolyQuestApplyEffect4_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_ptr CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_clbk CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestCreate8_ptr CRaceBuffInfoByHolyQuestCreate8_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestCreate8_clbk CRaceBuffInfoByHolyQuestCreate8_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestCreateComplete10_ptr CRaceBuffInfoByHolyQuestCreateComplete10_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestCreateComplete10_clbk CRaceBuffInfoByHolyQuestCreateComplete10_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_ptr CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_clbk CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_ptr CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_clbk CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_ptr CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_clbk CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifySetBuff18_ptr CRaceBuffInfoByHolyQuestNotifySetBuff18_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestNotifySetBuff18_clbk CRaceBuffInfoByHolyQuestNotifySetBuff18_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestRelease20_ptr CRaceBuffInfoByHolyQuestRelease20_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestRelease20_clbk CRaceBuffInfoByHolyQuestRelease20_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_ptr CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_clbk CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_user(nullptr);
         
-        bool CRaceBuffInfoByHolyQuestApply2_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestApply2_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestApply2_user(_this, pkDest, CRaceBuffInfoByHolyQuestApply2_next);
         };
-        bool CRaceBuffInfoByHolyQuestApplyEffect4_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest, bool bAdd)
+        static bool CRaceBuffInfoByHolyQuestApplyEffect4_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest, bool bAdd)
         {
            return CRaceBuffInfoByHolyQuestApplyEffect4_user(_this, pkDest, bAdd, CRaceBuffInfoByHolyQuestApplyEffect4_next);
         };
-        void CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct _skill_fld* pFld, char byLv)
+        static void CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct _skill_fld* pFld, char byLv)
         {
            CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_user(_this, pFld, byLv, CRaceBuffInfoByHolyQuestctor_CRaceBuffInfoByHolyQuest6_next);
         };
-        struct CRaceBuffInfoByHolyQuest* CRaceBuffInfoByHolyQuestCreate8_wrapper(unsigned int uiNTh, char* szItemName)
+        static struct CRaceBuffInfoByHolyQuest* CRaceBuffInfoByHolyQuestCreate8_wrapper(unsigned int uiNTh, char* szItemName)
         {
            return CRaceBuffInfoByHolyQuestCreate8_user(uiNTh, szItemName, CRaceBuffInfoByHolyQuestCreate8_next);
         };
-        bool CRaceBuffInfoByHolyQuestCreateComplete10_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestCreateComplete10_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestCreateComplete10_user(_this, pkDest, CRaceBuffInfoByHolyQuestCreateComplete10_next);
         };
-        bool CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_wrapper(unsigned int uiTh, char* szItemName, struct _skill_fld** ppFld, char* byLv)
+        static bool CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_wrapper(unsigned int uiTh, char* szItemName, struct _skill_fld** ppFld, char* byLv)
         {
            return CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_user(uiTh, szItemName, ppFld, byLv, CRaceBuffInfoByHolyQuestLoadINISubProcLoadCode12_next);
         };
-        void CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_wrapper(struct CRaceBuffInfoByHolyQuest* _this, uint16_t wUserInx)
+        static void CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_wrapper(struct CRaceBuffInfoByHolyQuest* _this, uint16_t wUserInx)
         {
            CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_user(_this, wUserInx, CRaceBuffInfoByHolyQuestNotifyLogInSetBuff14_next);
         };
-        void CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_wrapper(struct CRaceBuffInfoByHolyQuest* _this, uint16_t wUserInx)
+        static void CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_wrapper(struct CRaceBuffInfoByHolyQuest* _this, uint16_t wUserInx)
         {
            CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_user(_this, wUserInx, CRaceBuffInfoByHolyQuestNotifyReleaseBuff16_next);
         };
-        void CRaceBuffInfoByHolyQuestNotifySetBuff18_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
+        static void CRaceBuffInfoByHolyQuestNotifySetBuff18_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
         {
            CRaceBuffInfoByHolyQuestNotifySetBuff18_user(_this, pkDest, CRaceBuffInfoByHolyQuestNotifySetBuff18_next);
         };
-        bool CRaceBuffInfoByHolyQuestRelease20_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestRelease20_wrapper(struct CRaceBuffInfoByHolyQuest* _this, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestRelease20_user(_this, pkDest, CRaceBuffInfoByHolyQuestRelease20_next);
         };
-        void CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_wrapper(struct CRaceBuffInfoByHolyQuest* _this)
+        static void CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_wrapper(struct CRaceBuffInfoByHolyQuest* _this)
         {
            CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_user(_this, CRaceBuffInfoByHolyQuestdtor_CRaceBuffInfoByHolyQuest24_next);
         };
         
-        hook_record CRaceBuffInfoByHolyQuest_functions[] = {
+        static hook_record CRaceBuffInfoByHolyQuest_functions[] = {
         {   (LPVOID)0x1403b4080L,
             (LPVOID *)&CRaceBuffInfoByHolyQuestApply2_user,
             (LPVOID *)&CRaceBuffInfoByHolyQuestApply2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

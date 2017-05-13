@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRecallRequestctor_CRecallRequest2_ptr CRecallRequestctor_CRecallRequest2_next(nullptr);
-        info::CRecallRequestctor_CRecallRequest2_clbk CRecallRequestctor_CRecallRequest2_user(nullptr);
-        info::CRecallRequestClear4_ptr CRecallRequestClear4_next(nullptr);
-        info::CRecallRequestClear4_clbk CRecallRequestClear4_user(nullptr);
-        info::CRecallRequestClose6_ptr CRecallRequestClose6_next(nullptr);
-        info::CRecallRequestClose6_clbk CRecallRequestClose6_user(nullptr);
-        info::CRecallRequestGetID8_ptr CRecallRequestGetID8_next(nullptr);
-        info::CRecallRequestGetID8_clbk CRecallRequestGetID8_user(nullptr);
-        info::CRecallRequestGetOwner10_ptr CRecallRequestGetOwner10_next(nullptr);
-        info::CRecallRequestGetOwner10_clbk CRecallRequestGetOwner10_user(nullptr);
-        info::CRecallRequestIsBattleModeUse12_ptr CRecallRequestIsBattleModeUse12_next(nullptr);
-        info::CRecallRequestIsBattleModeUse12_clbk CRecallRequestIsBattleModeUse12_user(nullptr);
-        info::CRecallRequestIsClose14_ptr CRecallRequestIsClose14_next(nullptr);
-        info::CRecallRequestIsClose14_clbk CRecallRequestIsClose14_user(nullptr);
-        info::CRecallRequestIsRecallAfterStoneState16_ptr CRecallRequestIsRecallAfterStoneState16_next(nullptr);
-        info::CRecallRequestIsRecallAfterStoneState16_clbk CRecallRequestIsRecallAfterStoneState16_user(nullptr);
-        info::CRecallRequestIsRecallParty18_ptr CRecallRequestIsRecallParty18_next(nullptr);
-        info::CRecallRequestIsRecallParty18_clbk CRecallRequestIsRecallParty18_user(nullptr);
-        info::CRecallRequestIsTimeOut20_ptr CRecallRequestIsTimeOut20_next(nullptr);
-        info::CRecallRequestIsTimeOut20_clbk CRecallRequestIsTimeOut20_user(nullptr);
-        info::CRecallRequestIsWait22_ptr CRecallRequestIsWait22_next(nullptr);
-        info::CRecallRequestIsWait22_clbk CRecallRequestIsWait22_user(nullptr);
-        info::CRecallRequestRecall24_ptr CRecallRequestRecall24_next(nullptr);
-        info::CRecallRequestRecall24_clbk CRecallRequestRecall24_user(nullptr);
-        info::CRecallRequestRegist26_ptr CRecallRequestRegist26_next(nullptr);
-        info::CRecallRequestRegist26_clbk CRecallRequestRegist26_user(nullptr);
-        info::CRecallRequestdtor_CRecallRequest30_ptr CRecallRequestdtor_CRecallRequest30_next(nullptr);
-        info::CRecallRequestdtor_CRecallRequest30_clbk CRecallRequestdtor_CRecallRequest30_user(nullptr);
+        static info::CRecallRequestctor_CRecallRequest2_ptr CRecallRequestctor_CRecallRequest2_next(nullptr);
+        static info::CRecallRequestctor_CRecallRequest2_clbk CRecallRequestctor_CRecallRequest2_user(nullptr);
+        static info::CRecallRequestClear4_ptr CRecallRequestClear4_next(nullptr);
+        static info::CRecallRequestClear4_clbk CRecallRequestClear4_user(nullptr);
+        static info::CRecallRequestClose6_ptr CRecallRequestClose6_next(nullptr);
+        static info::CRecallRequestClose6_clbk CRecallRequestClose6_user(nullptr);
+        static info::CRecallRequestGetID8_ptr CRecallRequestGetID8_next(nullptr);
+        static info::CRecallRequestGetID8_clbk CRecallRequestGetID8_user(nullptr);
+        static info::CRecallRequestGetOwner10_ptr CRecallRequestGetOwner10_next(nullptr);
+        static info::CRecallRequestGetOwner10_clbk CRecallRequestGetOwner10_user(nullptr);
+        static info::CRecallRequestIsBattleModeUse12_ptr CRecallRequestIsBattleModeUse12_next(nullptr);
+        static info::CRecallRequestIsBattleModeUse12_clbk CRecallRequestIsBattleModeUse12_user(nullptr);
+        static info::CRecallRequestIsClose14_ptr CRecallRequestIsClose14_next(nullptr);
+        static info::CRecallRequestIsClose14_clbk CRecallRequestIsClose14_user(nullptr);
+        static info::CRecallRequestIsRecallAfterStoneState16_ptr CRecallRequestIsRecallAfterStoneState16_next(nullptr);
+        static info::CRecallRequestIsRecallAfterStoneState16_clbk CRecallRequestIsRecallAfterStoneState16_user(nullptr);
+        static info::CRecallRequestIsRecallParty18_ptr CRecallRequestIsRecallParty18_next(nullptr);
+        static info::CRecallRequestIsRecallParty18_clbk CRecallRequestIsRecallParty18_user(nullptr);
+        static info::CRecallRequestIsTimeOut20_ptr CRecallRequestIsTimeOut20_next(nullptr);
+        static info::CRecallRequestIsTimeOut20_clbk CRecallRequestIsTimeOut20_user(nullptr);
+        static info::CRecallRequestIsWait22_ptr CRecallRequestIsWait22_next(nullptr);
+        static info::CRecallRequestIsWait22_clbk CRecallRequestIsWait22_user(nullptr);
+        static info::CRecallRequestRecall24_ptr CRecallRequestRecall24_next(nullptr);
+        static info::CRecallRequestRecall24_clbk CRecallRequestRecall24_user(nullptr);
+        static info::CRecallRequestRegist26_ptr CRecallRequestRegist26_next(nullptr);
+        static info::CRecallRequestRegist26_clbk CRecallRequestRegist26_user(nullptr);
+        static info::CRecallRequestdtor_CRecallRequest30_ptr CRecallRequestdtor_CRecallRequest30_next(nullptr);
+        static info::CRecallRequestdtor_CRecallRequest30_clbk CRecallRequestdtor_CRecallRequest30_user(nullptr);
         
-        void CRecallRequestctor_CRecallRequest2_wrapper(struct CRecallRequest* _this, uint16_t usID)
+        static void CRecallRequestctor_CRecallRequest2_wrapper(struct CRecallRequest* _this, uint16_t usID)
         {
            CRecallRequestctor_CRecallRequest2_user(_this, usID, CRecallRequestctor_CRecallRequest2_next);
         };
-        void CRecallRequestClear4_wrapper(struct CRecallRequest* _this)
+        static void CRecallRequestClear4_wrapper(struct CRecallRequest* _this)
         {
            CRecallRequestClear4_user(_this, CRecallRequestClear4_next);
         };
-        void CRecallRequestClose6_wrapper(struct CRecallRequest* _this, bool bDone)
+        static void CRecallRequestClose6_wrapper(struct CRecallRequest* _this, bool bDone)
         {
            CRecallRequestClose6_user(_this, bDone, CRecallRequestClose6_next);
         };
-        uint16_t CRecallRequestGetID8_wrapper(struct CRecallRequest* _this)
+        static uint16_t CRecallRequestGetID8_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestGetID8_user(_this, CRecallRequestGetID8_next);
         };
-        struct CPlayer* CRecallRequestGetOwner10_wrapper(struct CRecallRequest* _this)
+        static struct CPlayer* CRecallRequestGetOwner10_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestGetOwner10_user(_this, CRecallRequestGetOwner10_next);
         };
-        bool CRecallRequestIsBattleModeUse12_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsBattleModeUse12_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsBattleModeUse12_user(_this, CRecallRequestIsBattleModeUse12_next);
         };
-        bool CRecallRequestIsClose14_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsClose14_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsClose14_user(_this, CRecallRequestIsClose14_next);
         };
-        bool CRecallRequestIsRecallAfterStoneState16_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsRecallAfterStoneState16_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsRecallAfterStoneState16_user(_this, CRecallRequestIsRecallAfterStoneState16_next);
         };
-        bool CRecallRequestIsRecallParty18_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsRecallParty18_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsRecallParty18_user(_this, CRecallRequestIsRecallParty18_next);
         };
-        bool CRecallRequestIsTimeOut20_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsTimeOut20_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsTimeOut20_user(_this, CRecallRequestIsTimeOut20_next);
         };
-        bool CRecallRequestIsWait22_wrapper(struct CRecallRequest* _this)
+        static bool CRecallRequestIsWait22_wrapper(struct CRecallRequest* _this)
         {
            return CRecallRequestIsWait22_user(_this, CRecallRequestIsWait22_next);
         };
-        char CRecallRequestRecall24_wrapper(struct CRecallRequest* _this, struct CPlayer* pkDest, bool bStone)
+        static char CRecallRequestRecall24_wrapper(struct CRecallRequest* _this, struct CPlayer* pkDest, bool bStone)
         {
            return CRecallRequestRecall24_user(_this, pkDest, bStone, CRecallRequestRecall24_next);
         };
-        char CRecallRequestRegist26_wrapper(struct CRecallRequest* _this, struct CPlayer* pkObj, struct CCharacter* pkDest, bool bRecallParty, bool bStone, bool bBattleModeUse)
+        static char CRecallRequestRegist26_wrapper(struct CRecallRequest* _this, struct CPlayer* pkObj, struct CCharacter* pkDest, bool bRecallParty, bool bStone, bool bBattleModeUse)
         {
            return CRecallRequestRegist26_user(_this, pkObj, pkDest, bRecallParty, bStone, bBattleModeUse, CRecallRequestRegist26_next);
         };
-        void CRecallRequestdtor_CRecallRequest30_wrapper(struct CRecallRequest* _this)
+        static void CRecallRequestdtor_CRecallRequest30_wrapper(struct CRecallRequest* _this)
         {
            CRecallRequestdtor_CRecallRequest30_user(_this, CRecallRequestdtor_CRecallRequest30_next);
         };
         
-        hook_record CRecallRequest_functions[] = {
+        static hook_record CRecallRequest_functions[] = {
         {   (LPVOID)0x14024d4d0L,
             (LPVOID *)&CRecallRequestctor_CRecallRequest2_user,
             (LPVOID *)&CRecallRequestctor_CRecallRequest2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

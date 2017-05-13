@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CVertexBufferctor_CVertexBuffer1_ptr CVertexBufferctor_CVertexBuffer1_next(nullptr);
-        info::CVertexBufferctor_CVertexBuffer1_clbk CVertexBufferctor_CVertexBuffer1_user(nullptr);
-        info::CVertexBufferInitVertexBuffer2_ptr CVertexBufferInitVertexBuffer2_next(nullptr);
-        info::CVertexBufferInitVertexBuffer2_clbk CVertexBufferInitVertexBuffer2_user(nullptr);
-        info::CVertexBufferReleaseVertexBuffer3_ptr CVertexBufferReleaseVertexBuffer3_next(nullptr);
-        info::CVertexBufferReleaseVertexBuffer3_clbk CVertexBufferReleaseVertexBuffer3_user(nullptr);
-        info::CVertexBufferVPLock4_ptr CVertexBufferVPLock4_next(nullptr);
-        info::CVertexBufferVPLock4_clbk CVertexBufferVPLock4_user(nullptr);
-        info::CVertexBufferVPUnLock5_ptr CVertexBufferVPUnLock5_next(nullptr);
-        info::CVertexBufferVPUnLock5_clbk CVertexBufferVPUnLock5_user(nullptr);
-        info::CVertexBufferdtor_CVertexBuffer6_ptr CVertexBufferdtor_CVertexBuffer6_next(nullptr);
-        info::CVertexBufferdtor_CVertexBuffer6_clbk CVertexBufferdtor_CVertexBuffer6_user(nullptr);
+        static info::CVertexBufferctor_CVertexBuffer1_ptr CVertexBufferctor_CVertexBuffer1_next(nullptr);
+        static info::CVertexBufferctor_CVertexBuffer1_clbk CVertexBufferctor_CVertexBuffer1_user(nullptr);
+        static info::CVertexBufferInitVertexBuffer2_ptr CVertexBufferInitVertexBuffer2_next(nullptr);
+        static info::CVertexBufferInitVertexBuffer2_clbk CVertexBufferInitVertexBuffer2_user(nullptr);
+        static info::CVertexBufferReleaseVertexBuffer3_ptr CVertexBufferReleaseVertexBuffer3_next(nullptr);
+        static info::CVertexBufferReleaseVertexBuffer3_clbk CVertexBufferReleaseVertexBuffer3_user(nullptr);
+        static info::CVertexBufferVPLock4_ptr CVertexBufferVPLock4_next(nullptr);
+        static info::CVertexBufferVPLock4_clbk CVertexBufferVPLock4_user(nullptr);
+        static info::CVertexBufferVPUnLock5_ptr CVertexBufferVPUnLock5_next(nullptr);
+        static info::CVertexBufferVPUnLock5_clbk CVertexBufferVPUnLock5_user(nullptr);
+        static info::CVertexBufferdtor_CVertexBuffer6_ptr CVertexBufferdtor_CVertexBuffer6_next(nullptr);
+        static info::CVertexBufferdtor_CVertexBuffer6_clbk CVertexBufferdtor_CVertexBuffer6_user(nullptr);
         
-        void CVertexBufferctor_CVertexBuffer1_wrapper(void* arg_0)
+        static void CVertexBufferctor_CVertexBuffer1_wrapper(void* arg_0)
         {
            CVertexBufferctor_CVertexBuffer1_user(arg_0, CVertexBufferctor_CVertexBuffer1_next);
         };
-        void CVertexBufferInitVertexBuffer2_wrapper(struct CVertexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
+        static void CVertexBufferInitVertexBuffer2_wrapper(struct CVertexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
         {
            CVertexBufferInitVertexBuffer2_user(_this, arg_0, arg_1, arg_2, CVertexBufferInitVertexBuffer2_next);
         };
-        void CVertexBufferReleaseVertexBuffer3_wrapper(struct CVertexBuffer* _this)
+        static void CVertexBufferReleaseVertexBuffer3_wrapper(struct CVertexBuffer* _this)
         {
            CVertexBufferReleaseVertexBuffer3_user(_this, CVertexBufferReleaseVertexBuffer3_next);
         };
-        uint8_t* CVertexBufferVPLock4_wrapper(struct CVertexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
+        static uint8_t* CVertexBufferVPLock4_wrapper(struct CVertexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
         {
            return CVertexBufferVPLock4_user(_this, arg_0, arg_1, arg_2, CVertexBufferVPLock4_next);
         };
-        void CVertexBufferVPUnLock5_wrapper(struct CVertexBuffer* _this)
+        static void CVertexBufferVPUnLock5_wrapper(struct CVertexBuffer* _this)
         {
            CVertexBufferVPUnLock5_user(_this, CVertexBufferVPUnLock5_next);
         };
-        void CVertexBufferdtor_CVertexBuffer6_wrapper(void* arg_0)
+        static void CVertexBufferdtor_CVertexBuffer6_wrapper(void* arg_0)
         {
            CVertexBufferdtor_CVertexBuffer6_user(arg_0, CVertexBufferdtor_CVertexBuffer6_next);
         };
         
-        hook_record CVertexBuffer_functions[] = {
+        static hook_record CVertexBuffer_functions[] = {
         {   (LPVOID)0x14050c180L,
             (LPVOID *)&CVertexBufferctor_CVertexBuffer1_user,
             (LPVOID *)&CVertexBufferctor_CVertexBuffer1_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

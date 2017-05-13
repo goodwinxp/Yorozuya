@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_pt_notify_final_decisionctor__pt_notify_final_decision2_ptr _pt_notify_final_decisionctor__pt_notify_final_decision2_next(nullptr);
-        info::_pt_notify_final_decisionctor__pt_notify_final_decision2_clbk _pt_notify_final_decisionctor__pt_notify_final_decision2_user(nullptr);
-        info::_pt_notify_final_decisionsize4_ptr _pt_notify_final_decisionsize4_next(nullptr);
-        info::_pt_notify_final_decisionsize4_clbk _pt_notify_final_decisionsize4_user(nullptr);
+        static info::_pt_notify_final_decisionctor__pt_notify_final_decision2_ptr _pt_notify_final_decisionctor__pt_notify_final_decision2_next(nullptr);
+        static info::_pt_notify_final_decisionctor__pt_notify_final_decision2_clbk _pt_notify_final_decisionctor__pt_notify_final_decision2_user(nullptr);
+        static info::_pt_notify_final_decisionsize4_ptr _pt_notify_final_decisionsize4_next(nullptr);
+        static info::_pt_notify_final_decisionsize4_clbk _pt_notify_final_decisionsize4_user(nullptr);
         
-        void _pt_notify_final_decisionctor__pt_notify_final_decision2_wrapper(struct _pt_notify_final_decision* _this)
+        static void _pt_notify_final_decisionctor__pt_notify_final_decision2_wrapper(struct _pt_notify_final_decision* _this)
         {
            _pt_notify_final_decisionctor__pt_notify_final_decision2_user(_this, _pt_notify_final_decisionctor__pt_notify_final_decision2_next);
         };
-        int _pt_notify_final_decisionsize4_wrapper(struct _pt_notify_final_decision* _this)
+        static int _pt_notify_final_decisionsize4_wrapper(struct _pt_notify_final_decision* _this)
         {
            return _pt_notify_final_decisionsize4_user(_this, _pt_notify_final_decisionsize4_next);
         };
         
-        hook_record _pt_notify_final_decision_functions[] = {
+        static hook_record _pt_notify_final_decision_functions[] = {
         {   (LPVOID)0x1402be420L,
             (LPVOID *)&_pt_notify_final_decisionctor__pt_notify_final_decision2_user,
             (LPVOID *)&_pt_notify_final_decisionctor__pt_notify_final_decision2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

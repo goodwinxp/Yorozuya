@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_ptr _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_next(nullptr);
-        info::_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_clbk _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_user(nullptr);
-        info::_DB_LOAD_AUTOMINE_MACHINEsize4_ptr _DB_LOAD_AUTOMINE_MACHINEsize4_next(nullptr);
-        info::_DB_LOAD_AUTOMINE_MACHINEsize4_clbk _DB_LOAD_AUTOMINE_MACHINEsize4_user(nullptr);
+        static info::_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_ptr _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_next(nullptr);
+        static info::_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_clbk _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_user(nullptr);
+        static info::_DB_LOAD_AUTOMINE_MACHINEsize4_ptr _DB_LOAD_AUTOMINE_MACHINEsize4_next(nullptr);
+        static info::_DB_LOAD_AUTOMINE_MACHINEsize4_clbk _DB_LOAD_AUTOMINE_MACHINEsize4_user(nullptr);
         
-        void _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_wrapper(struct _DB_LOAD_AUTOMINE_MACHINE* _this)
+        static void _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_wrapper(struct _DB_LOAD_AUTOMINE_MACHINE* _this)
         {
            _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_user(_this, _DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_next);
         };
-        int _DB_LOAD_AUTOMINE_MACHINEsize4_wrapper(struct _DB_LOAD_AUTOMINE_MACHINE* _this)
+        static int _DB_LOAD_AUTOMINE_MACHINEsize4_wrapper(struct _DB_LOAD_AUTOMINE_MACHINE* _this)
         {
            return _DB_LOAD_AUTOMINE_MACHINEsize4_user(_this, _DB_LOAD_AUTOMINE_MACHINEsize4_next);
         };
         
-        hook_record _DB_LOAD_AUTOMINE_MACHINE_functions[] = {
+        static hook_record _DB_LOAD_AUTOMINE_MACHINE_functions[] = {
         {   (LPVOID)0x1402d4100L,
             (LPVOID *)&_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_user,
             (LPVOID *)&_DB_LOAD_AUTOMINE_MACHINEctor__DB_LOAD_AUTOMINE_MACHINE2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

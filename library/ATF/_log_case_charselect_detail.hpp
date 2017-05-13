@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_log_case_charselectsize2_ptr _log_case_charselectsize2_next(nullptr);
-        info::_log_case_charselectsize2_clbk _log_case_charselectsize2_user(nullptr);
+        static info::_log_case_charselectsize2_ptr _log_case_charselectsize2_next(nullptr);
+        static info::_log_case_charselectsize2_clbk _log_case_charselectsize2_user(nullptr);
         
-        int _log_case_charselectsize2_wrapper(struct _log_case_charselect* _this)
+        static int _log_case_charselectsize2_wrapper(struct _log_case_charselect* _this)
         {
            return _log_case_charselectsize2_user(_this, _log_case_charselectsize2_next);
         };
         
-        hook_record _log_case_charselect_functions[] = {
+        static hook_record _log_case_charselect_functions[] = {
         {   (LPVOID)0x14011fbf0L,
             (LPVOID *)&_log_case_charselectsize2_user,
             (LPVOID *)&_log_case_charselectsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

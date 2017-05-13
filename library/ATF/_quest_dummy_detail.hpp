@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_quest_dummySetDummy2_ptr _quest_dummySetDummy2_next(nullptr);
-        info::_quest_dummySetDummy2_clbk _quest_dummySetDummy2_user(nullptr);
-        info::_quest_dummyctor__quest_dummy4_ptr _quest_dummyctor__quest_dummy4_next(nullptr);
-        info::_quest_dummyctor__quest_dummy4_clbk _quest_dummyctor__quest_dummy4_user(nullptr);
+        static info::_quest_dummySetDummy2_ptr _quest_dummySetDummy2_next(nullptr);
+        static info::_quest_dummySetDummy2_clbk _quest_dummySetDummy2_user(nullptr);
+        static info::_quest_dummyctor__quest_dummy4_ptr _quest_dummyctor__quest_dummy4_next(nullptr);
+        static info::_quest_dummyctor__quest_dummy4_clbk _quest_dummyctor__quest_dummy4_user(nullptr);
         
-        bool _quest_dummySetDummy2_wrapper(struct _quest_dummy* _this, struct _dummy_position* pDumPos)
+        static bool _quest_dummySetDummy2_wrapper(struct _quest_dummy* _this, struct _dummy_position* pDumPos)
         {
            return _quest_dummySetDummy2_user(_this, pDumPos, _quest_dummySetDummy2_next);
         };
-        void _quest_dummyctor__quest_dummy4_wrapper(struct _quest_dummy* _this)
+        static void _quest_dummyctor__quest_dummy4_wrapper(struct _quest_dummy* _this)
         {
            _quest_dummyctor__quest_dummy4_user(_this, _quest_dummyctor__quest_dummy4_next);
         };
         
-        hook_record _quest_dummy_functions[] = {
+        static hook_record _quest_dummy_functions[] = {
         {   (LPVOID)0x140189b90L,
             (LPVOID *)&_quest_dummySetDummy2_user,
             (LPVOID *)&_quest_dummySetDummy2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

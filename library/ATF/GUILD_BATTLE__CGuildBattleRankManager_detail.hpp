@@ -10,123 +10,123 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_ptr GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_clbk GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_ptr GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_clbk GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_ptr GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_clbk GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerClear8_ptr GUILD_BATTLE__CGuildBattleRankManagerClear8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerClear8_clbk GUILD_BATTLE__CGuildBattleRankManagerClear8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerClear10_ptr GUILD_BATTLE__CGuildBattleRankManagerClear10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerClear10_clbk GUILD_BATTLE__CGuildBattleRankManagerClear10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerDestroy12_ptr GUILD_BATTLE__CGuildBattleRankManagerDestroy12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerDestroy12_clbk GUILD_BATTLE__CGuildBattleRankManagerDestroy12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerFind14_ptr GUILD_BATTLE__CGuildBattleRankManagerFind14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerFind14_clbk GUILD_BATTLE__CGuildBattleRankManagerFind14_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerInit16_ptr GUILD_BATTLE__CGuildBattleRankManagerInit16_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerInit16_clbk GUILD_BATTLE__CGuildBattleRankManagerInit16_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerInstance18_ptr GUILD_BATTLE__CGuildBattleRankManagerInstance18_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerInstance18_clbk GUILD_BATTLE__CGuildBattleRankManagerInstance18_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerLoad20_ptr GUILD_BATTLE__CGuildBattleRankManagerLoad20_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerLoad20_clbk GUILD_BATTLE__CGuildBattleRankManagerLoad20_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerLoad22_ptr GUILD_BATTLE__CGuildBattleRankManagerLoad22_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerLoad22_clbk GUILD_BATTLE__CGuildBattleRankManagerLoad22_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_ptr GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_clbk GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_ptr GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_clbk GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_ptr GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_clbk GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerSend30_ptr GUILD_BATTLE__CGuildBattleRankManagerSend30_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerSend30_clbk GUILD_BATTLE__CGuildBattleRankManagerSend30_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdate32_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdate32_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdate32_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdate32_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_ptr GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_clbk GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_ptr GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_clbk GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_ptr GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_clbk GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_ptr GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_clbk GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerClear8_ptr GUILD_BATTLE__CGuildBattleRankManagerClear8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerClear8_clbk GUILD_BATTLE__CGuildBattleRankManagerClear8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerClear10_ptr GUILD_BATTLE__CGuildBattleRankManagerClear10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerClear10_clbk GUILD_BATTLE__CGuildBattleRankManagerClear10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerDestroy12_ptr GUILD_BATTLE__CGuildBattleRankManagerDestroy12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerDestroy12_clbk GUILD_BATTLE__CGuildBattleRankManagerDestroy12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerFind14_ptr GUILD_BATTLE__CGuildBattleRankManagerFind14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerFind14_clbk GUILD_BATTLE__CGuildBattleRankManagerFind14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerInit16_ptr GUILD_BATTLE__CGuildBattleRankManagerInit16_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerInit16_clbk GUILD_BATTLE__CGuildBattleRankManagerInit16_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerInstance18_ptr GUILD_BATTLE__CGuildBattleRankManagerInstance18_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerInstance18_clbk GUILD_BATTLE__CGuildBattleRankManagerInstance18_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerLoad20_ptr GUILD_BATTLE__CGuildBattleRankManagerLoad20_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerLoad20_clbk GUILD_BATTLE__CGuildBattleRankManagerLoad20_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerLoad22_ptr GUILD_BATTLE__CGuildBattleRankManagerLoad22_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerLoad22_clbk GUILD_BATTLE__CGuildBattleRankManagerLoad22_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_ptr GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_clbk GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_ptr GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_clbk GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_ptr GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_clbk GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerSend30_ptr GUILD_BATTLE__CGuildBattleRankManagerSend30_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerSend30_clbk GUILD_BATTLE__CGuildBattleRankManagerSend30_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdate32_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdate32_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdate32_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdate32_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_ptr GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_clbk GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_ptr GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_clbk GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_user(_this, GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, unsigned int dwGuildSerial)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, unsigned int dwGuildSerial)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_user(_this, dwGuildSerial, GUILD_BATTLE__CGuildBattleRankManagerCheckRecord4_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_user(_this, GUILD_BATTLE__CGuildBattleRankManagerCleanUp6_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerClear8_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace)
+            static void GUILD_BATTLE__CGuildBattleRankManagerClear8_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace)
             {
                GUILD_BATTLE__CGuildBattleRankManagerClear8_user(_this, byRace, GUILD_BATTLE__CGuildBattleRankManagerClear8_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerClear10_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerClear10_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerClear10_user(_this, GUILD_BATTLE__CGuildBattleRankManagerClear10_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerDestroy12_wrapper()
+            static void GUILD_BATTLE__CGuildBattleRankManagerDestroy12_wrapper()
             {
                GUILD_BATTLE__CGuildBattleRankManagerDestroy12_user(GUILD_BATTLE__CGuildBattleRankManagerDestroy12_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerFind14_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, unsigned int dwGuildSerial, int* iFindInx, char* byFindPage)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerFind14_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, unsigned int dwGuildSerial, int* iFindInx, char* byFindPage)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerFind14_user(_this, byRace, dwGuildSerial, iFindInx, byFindPage, GUILD_BATTLE__CGuildBattleRankManagerFind14_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerInit16_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerInit16_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerInit16_user(_this, GUILD_BATTLE__CGuildBattleRankManagerInit16_next);
             };
-            struct GUILD_BATTLE::CGuildBattleRankManager* GUILD_BATTLE__CGuildBattleRankManagerInstance18_wrapper()
+            static struct GUILD_BATTLE::CGuildBattleRankManager* GUILD_BATTLE__CGuildBattleRankManagerInstance18_wrapper()
             {
                return GUILD_BATTLE__CGuildBattleRankManagerInstance18_user(GUILD_BATTLE__CGuildBattleRankManagerInstance18_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerLoad20_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerLoad20_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerLoad20_user(_this, byRace, GUILD_BATTLE__CGuildBattleRankManagerLoad20_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerLoad22_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerLoad22_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerLoad22_user(_this, GUILD_BATTLE__CGuildBattleRankManagerLoad22_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_user(_this, GUILD_BATTLE__CGuildBattleRankManagerPushClearGuildBattleRank24_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_user(_this, GUILD_BATTLE__CGuildBattleRankManagerPushCreateGuildBattleRankTable26_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, char* pOutData)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, char* pOutData)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_user(_this, byRace, pOutData, GUILD_BATTLE__CGuildBattleRankManagerSelectGuildBattleRankList28_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerSend30_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, int n, char bySelfRace, unsigned int dwCurVer, char byTabRace, char byPage, unsigned int dwGuildSerial)
+            static void GUILD_BATTLE__CGuildBattleRankManagerSend30_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, int n, char bySelfRace, unsigned int dwCurVer, char byTabRace, char byPage, unsigned int dwGuildSerial)
             {
                GUILD_BATTLE__CGuildBattleRankManagerSend30_user(_this, n, bySelfRace, dwCurVer, byTabRace, byPage, dwGuildSerial, GUILD_BATTLE__CGuildBattleRankManagerSend30_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerUpdate32_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, char* pLoadData)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerUpdate32_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byRace, char* pLoadData)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerUpdate32_user(_this, byRace, pLoadData, GUILD_BATTLE__CGuildBattleRankManagerUpdate32_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char by1PRace, unsigned int dw1PGuildSerial, char by2PRace, unsigned int dw2PGuildSerial)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char by1PRace, unsigned int dw1PGuildSerial, char by2PRace, unsigned int dw2PGuildSerial)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_user(_this, by1PRace, dw1PGuildSerial, by2PRace, dw2PGuildSerial, GUILD_BATTLE__CGuildBattleRankManagerUpdateDraw34_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byWinRace, unsigned int dwWinGuildSerial, char byLoseRace, unsigned int dwLoseGuildSerial)
+            static bool GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this, char byWinRace, unsigned int dwWinGuildSerial, char byLoseRace, unsigned int dwLoseGuildSerial)
             {
                return GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_user(_this, byWinRace, dwWinGuildSerial, byLoseRace, dwLoseGuildSerial, GUILD_BATTLE__CGuildBattleRankManagerUpdateWinLose36_next);
             };
-            void GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
+            static void GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_wrapper(struct GUILD_BATTLE::CGuildBattleRankManager* _this)
             {
                GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_user(_this, GUILD_BATTLE__CGuildBattleRankManagerdtor_CGuildBattleRankManager40_next);
             };
             
-            hook_record CGuildBattleRankManager_functions[] = {
+            static hook_record CGuildBattleRankManager_functions[] = {
             {   (LPVOID)0x1403ca2f0L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleRankManagerctor_CGuildBattleRankManager2_next,
@@ -225,6 +225,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

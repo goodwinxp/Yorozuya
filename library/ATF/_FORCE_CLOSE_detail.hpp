@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_FORCE_CLOSEInit2_ptr _FORCE_CLOSEInit2_next(nullptr);
-        info::_FORCE_CLOSEInit2_clbk _FORCE_CLOSEInit2_user(nullptr);
-        info::_FORCE_CLOSEPushNode4_ptr _FORCE_CLOSEPushNode4_next(nullptr);
-        info::_FORCE_CLOSEPushNode4_clbk _FORCE_CLOSEPushNode4_user(nullptr);
-        info::_FORCE_CLOSEctor__FORCE_CLOSE6_ptr _FORCE_CLOSEctor__FORCE_CLOSE6_next(nullptr);
-        info::_FORCE_CLOSEctor__FORCE_CLOSE6_clbk _FORCE_CLOSEctor__FORCE_CLOSE6_user(nullptr);
-        info::_FORCE_CLOSEdtor__FORCE_CLOSE8_ptr _FORCE_CLOSEdtor__FORCE_CLOSE8_next(nullptr);
-        info::_FORCE_CLOSEdtor__FORCE_CLOSE8_clbk _FORCE_CLOSEdtor__FORCE_CLOSE8_user(nullptr);
+        static info::_FORCE_CLOSEInit2_ptr _FORCE_CLOSEInit2_next(nullptr);
+        static info::_FORCE_CLOSEInit2_clbk _FORCE_CLOSEInit2_user(nullptr);
+        static info::_FORCE_CLOSEPushNode4_ptr _FORCE_CLOSEPushNode4_next(nullptr);
+        static info::_FORCE_CLOSEPushNode4_clbk _FORCE_CLOSEPushNode4_user(nullptr);
+        static info::_FORCE_CLOSEctor__FORCE_CLOSE6_ptr _FORCE_CLOSEctor__FORCE_CLOSE6_next(nullptr);
+        static info::_FORCE_CLOSEctor__FORCE_CLOSE6_clbk _FORCE_CLOSEctor__FORCE_CLOSE6_user(nullptr);
+        static info::_FORCE_CLOSEdtor__FORCE_CLOSE8_ptr _FORCE_CLOSEdtor__FORCE_CLOSE8_next(nullptr);
+        static info::_FORCE_CLOSEdtor__FORCE_CLOSE8_clbk _FORCE_CLOSEdtor__FORCE_CLOSE8_user(nullptr);
         
-        bool _FORCE_CLOSEInit2_wrapper(struct _FORCE_CLOSE* _this, unsigned int dwNodeNum)
+        static bool _FORCE_CLOSEInit2_wrapper(struct _FORCE_CLOSE* _this, unsigned int dwNodeNum)
         {
            return _FORCE_CLOSEInit2_user(_this, dwNodeNum, _FORCE_CLOSEInit2_next);
         };
-        bool _FORCE_CLOSEPushNode4_wrapper(struct _FORCE_CLOSE* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static bool _FORCE_CLOSEPushNode4_wrapper(struct _FORCE_CLOSE* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            return _FORCE_CLOSEPushNode4_user(_this, dwIndex, dwSerial, _FORCE_CLOSEPushNode4_next);
         };
-        void _FORCE_CLOSEctor__FORCE_CLOSE6_wrapper(struct _FORCE_CLOSE* _this)
+        static void _FORCE_CLOSEctor__FORCE_CLOSE6_wrapper(struct _FORCE_CLOSE* _this)
         {
            _FORCE_CLOSEctor__FORCE_CLOSE6_user(_this, _FORCE_CLOSEctor__FORCE_CLOSE6_next);
         };
-        void _FORCE_CLOSEdtor__FORCE_CLOSE8_wrapper(struct _FORCE_CLOSE* _this)
+        static void _FORCE_CLOSEdtor__FORCE_CLOSE8_wrapper(struct _FORCE_CLOSE* _this)
         {
            _FORCE_CLOSEdtor__FORCE_CLOSE8_user(_this, _FORCE_CLOSEdtor__FORCE_CLOSE8_next);
         };
         
-        hook_record _FORCE_CLOSE_functions[] = {
+        static hook_record _FORCE_CLOSE_functions[] = {
         {   (LPVOID)0x14047ccd0L,
             (LPVOID *)&_FORCE_CLOSEInit2_user,
             (LPVOID *)&_FORCE_CLOSEInit2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

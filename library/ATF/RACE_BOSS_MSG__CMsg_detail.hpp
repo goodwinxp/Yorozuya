@@ -10,111 +10,111 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::RACE_BOSS_MSG__CMsgctor_CMsg2_ptr RACE_BOSS_MSG__CMsgctor_CMsg2_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgctor_CMsg2_clbk RACE_BOSS_MSG__CMsgctor_CMsg2_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgClear4_ptr RACE_BOSS_MSG__CMsgClear4_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgClear4_clbk RACE_BOSS_MSG__CMsgClear4_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetBossName6_ptr RACE_BOSS_MSG__CMsgGetBossName6_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetBossName6_clbk RACE_BOSS_MSG__CMsgGetBossName6_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetID8_ptr RACE_BOSS_MSG__CMsgGetID8_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetID8_clbk RACE_BOSS_MSG__CMsgGetID8_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetMsg10_ptr RACE_BOSS_MSG__CMsgGetMsg10_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetMsg10_clbk RACE_BOSS_MSG__CMsgGetMsg10_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetSerial12_ptr RACE_BOSS_MSG__CMsgGetSerial12_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetSerial12_clbk RACE_BOSS_MSG__CMsgGetSerial12_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetWebDBID14_ptr RACE_BOSS_MSG__CMsgGetWebDBID14_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgGetWebDBID14_clbk RACE_BOSS_MSG__CMsgGetWebDBID14_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsDayChanged16_ptr RACE_BOSS_MSG__CMsgIsDayChanged16_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsDayChanged16_clbk RACE_BOSS_MSG__CMsgIsDayChanged16_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsSendFromWeb18_ptr RACE_BOSS_MSG__CMsgIsSendFromWeb18_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsSendFromWeb18_clbk RACE_BOSS_MSG__CMsgIsSendFromWeb18_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsSendTime20_ptr RACE_BOSS_MSG__CMsgIsSendTime20_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsSendTime20_clbk RACE_BOSS_MSG__CMsgIsSendTime20_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsWait22_ptr RACE_BOSS_MSG__CMsgIsWait22_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgIsWait22_clbk RACE_BOSS_MSG__CMsgIsWait22_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgLoad24_ptr RACE_BOSS_MSG__CMsgLoad24_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgLoad24_clbk RACE_BOSS_MSG__CMsgLoad24_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgSave26_ptr RACE_BOSS_MSG__CMsgSave26_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgSave26_clbk RACE_BOSS_MSG__CMsgSave26_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgSet28_ptr RACE_BOSS_MSG__CMsgSet28_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgSet28_clbk RACE_BOSS_MSG__CMsgSet28_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgSetDayChanged30_ptr RACE_BOSS_MSG__CMsgSetDayChanged30_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgSetDayChanged30_clbk RACE_BOSS_MSG__CMsgSetDayChanged30_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgSetDone32_ptr RACE_BOSS_MSG__CMsgSetDone32_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgSetDone32_clbk RACE_BOSS_MSG__CMsgSetDone32_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgdtor_CMsg36_ptr RACE_BOSS_MSG__CMsgdtor_CMsg36_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgdtor_CMsg36_clbk RACE_BOSS_MSG__CMsgdtor_CMsg36_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgctor_CMsg2_ptr RACE_BOSS_MSG__CMsgctor_CMsg2_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgctor_CMsg2_clbk RACE_BOSS_MSG__CMsgctor_CMsg2_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgClear4_ptr RACE_BOSS_MSG__CMsgClear4_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgClear4_clbk RACE_BOSS_MSG__CMsgClear4_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetBossName6_ptr RACE_BOSS_MSG__CMsgGetBossName6_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetBossName6_clbk RACE_BOSS_MSG__CMsgGetBossName6_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetID8_ptr RACE_BOSS_MSG__CMsgGetID8_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetID8_clbk RACE_BOSS_MSG__CMsgGetID8_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetMsg10_ptr RACE_BOSS_MSG__CMsgGetMsg10_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetMsg10_clbk RACE_BOSS_MSG__CMsgGetMsg10_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetSerial12_ptr RACE_BOSS_MSG__CMsgGetSerial12_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetSerial12_clbk RACE_BOSS_MSG__CMsgGetSerial12_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetWebDBID14_ptr RACE_BOSS_MSG__CMsgGetWebDBID14_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgGetWebDBID14_clbk RACE_BOSS_MSG__CMsgGetWebDBID14_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsDayChanged16_ptr RACE_BOSS_MSG__CMsgIsDayChanged16_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsDayChanged16_clbk RACE_BOSS_MSG__CMsgIsDayChanged16_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsSendFromWeb18_ptr RACE_BOSS_MSG__CMsgIsSendFromWeb18_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsSendFromWeb18_clbk RACE_BOSS_MSG__CMsgIsSendFromWeb18_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsSendTime20_ptr RACE_BOSS_MSG__CMsgIsSendTime20_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsSendTime20_clbk RACE_BOSS_MSG__CMsgIsSendTime20_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsWait22_ptr RACE_BOSS_MSG__CMsgIsWait22_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgIsWait22_clbk RACE_BOSS_MSG__CMsgIsWait22_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgLoad24_ptr RACE_BOSS_MSG__CMsgLoad24_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgLoad24_clbk RACE_BOSS_MSG__CMsgLoad24_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSave26_ptr RACE_BOSS_MSG__CMsgSave26_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSave26_clbk RACE_BOSS_MSG__CMsgSave26_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSet28_ptr RACE_BOSS_MSG__CMsgSet28_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSet28_clbk RACE_BOSS_MSG__CMsgSet28_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSetDayChanged30_ptr RACE_BOSS_MSG__CMsgSetDayChanged30_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSetDayChanged30_clbk RACE_BOSS_MSG__CMsgSetDayChanged30_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSetDone32_ptr RACE_BOSS_MSG__CMsgSetDone32_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgSetDone32_clbk RACE_BOSS_MSG__CMsgSetDone32_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgdtor_CMsg36_ptr RACE_BOSS_MSG__CMsgdtor_CMsg36_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgdtor_CMsg36_clbk RACE_BOSS_MSG__CMsgdtor_CMsg36_user(nullptr);
             
-            void RACE_BOSS_MSG__CMsgctor_CMsg2_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace, unsigned int dwID)
+            static void RACE_BOSS_MSG__CMsgctor_CMsg2_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace, unsigned int dwID)
             {
                RACE_BOSS_MSG__CMsgctor_CMsg2_user(_this, ucRace, dwID, RACE_BOSS_MSG__CMsgctor_CMsg2_next);
             };
-            void RACE_BOSS_MSG__CMsgClear4_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static void RACE_BOSS_MSG__CMsgClear4_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                RACE_BOSS_MSG__CMsgClear4_user(_this, RACE_BOSS_MSG__CMsgClear4_next);
             };
-            char* RACE_BOSS_MSG__CMsgGetBossName6_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static char* RACE_BOSS_MSG__CMsgGetBossName6_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgGetBossName6_user(_this, RACE_BOSS_MSG__CMsgGetBossName6_next);
             };
-            unsigned int RACE_BOSS_MSG__CMsgGetID8_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static unsigned int RACE_BOSS_MSG__CMsgGetID8_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgGetID8_user(_this, RACE_BOSS_MSG__CMsgGetID8_next);
             };
-            char* RACE_BOSS_MSG__CMsgGetMsg10_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static char* RACE_BOSS_MSG__CMsgGetMsg10_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgGetMsg10_user(_this, RACE_BOSS_MSG__CMsgGetMsg10_next);
             };
-            unsigned int RACE_BOSS_MSG__CMsgGetSerial12_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static unsigned int RACE_BOSS_MSG__CMsgGetSerial12_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgGetSerial12_user(_this, RACE_BOSS_MSG__CMsgGetSerial12_next);
             };
-            unsigned int RACE_BOSS_MSG__CMsgGetWebDBID14_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static unsigned int RACE_BOSS_MSG__CMsgGetWebDBID14_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgGetWebDBID14_user(_this, RACE_BOSS_MSG__CMsgGetWebDBID14_next);
             };
-            bool RACE_BOSS_MSG__CMsgIsDayChanged16_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static bool RACE_BOSS_MSG__CMsgIsDayChanged16_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgIsDayChanged16_user(_this, RACE_BOSS_MSG__CMsgIsDayChanged16_next);
             };
-            bool RACE_BOSS_MSG__CMsgIsSendFromWeb18_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static bool RACE_BOSS_MSG__CMsgIsSendFromWeb18_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgIsSendFromWeb18_user(_this, RACE_BOSS_MSG__CMsgIsSendFromWeb18_next);
             };
-            bool RACE_BOSS_MSG__CMsgIsSendTime20_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static bool RACE_BOSS_MSG__CMsgIsSendTime20_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgIsSendTime20_user(_this, RACE_BOSS_MSG__CMsgIsSendTime20_next);
             };
-            bool RACE_BOSS_MSG__CMsgIsWait22_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static bool RACE_BOSS_MSG__CMsgIsWait22_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                return RACE_BOSS_MSG__CMsgIsWait22_user(_this, RACE_BOSS_MSG__CMsgIsWait22_next);
             };
-            bool RACE_BOSS_MSG__CMsgLoad24_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace, unsigned int dwCurTime)
+            static bool RACE_BOSS_MSG__CMsgLoad24_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace, unsigned int dwCurTime)
             {
                return RACE_BOSS_MSG__CMsgLoad24_user(_this, ucRace, dwCurTime, RACE_BOSS_MSG__CMsgLoad24_next);
             };
-            bool RACE_BOSS_MSG__CMsgSave26_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace)
+            static bool RACE_BOSS_MSG__CMsgSave26_wrapper(struct RACE_BOSS_MSG::CMsg* _this, char ucRace)
             {
                return RACE_BOSS_MSG__CMsgSave26_user(_this, ucRace, RACE_BOSS_MSG__CMsgSave26_next);
             };
-            bool RACE_BOSS_MSG__CMsgSet28_wrapper(struct RACE_BOSS_MSG::CMsg* _this, unsigned int dwSerial, char* pwszName, char* pwszMsg, unsigned int dbWebSendDBID)
+            static bool RACE_BOSS_MSG__CMsgSet28_wrapper(struct RACE_BOSS_MSG::CMsg* _this, unsigned int dwSerial, char* pwszName, char* pwszMsg, unsigned int dbWebSendDBID)
             {
                return RACE_BOSS_MSG__CMsgSet28_user(_this, dwSerial, pwszName, pwszMsg, dbWebSendDBID, RACE_BOSS_MSG__CMsgSet28_next);
             };
-            void RACE_BOSS_MSG__CMsgSetDayChanged30_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static void RACE_BOSS_MSG__CMsgSetDayChanged30_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                RACE_BOSS_MSG__CMsgSetDayChanged30_user(_this, RACE_BOSS_MSG__CMsgSetDayChanged30_next);
             };
-            void RACE_BOSS_MSG__CMsgSetDone32_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static void RACE_BOSS_MSG__CMsgSetDone32_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                RACE_BOSS_MSG__CMsgSetDone32_user(_this, RACE_BOSS_MSG__CMsgSetDone32_next);
             };
-            void RACE_BOSS_MSG__CMsgdtor_CMsg36_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
+            static void RACE_BOSS_MSG__CMsgdtor_CMsg36_wrapper(struct RACE_BOSS_MSG::CMsg* _this)
             {
                RACE_BOSS_MSG__CMsgdtor_CMsg36_user(_this, RACE_BOSS_MSG__CMsgdtor_CMsg36_next);
             };
             
-            hook_record CMsg_functions[] = {
+            static hook_record CMsg_functions[] = {
             {   (LPVOID)0x14029dbe0L,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgctor_CMsg2_user,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgctor_CMsg2_next,
@@ -203,6 +203,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace RACE_BOSS_MSG
 END_ATF_NAMESPACE

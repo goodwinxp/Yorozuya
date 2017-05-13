@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_event_set_lootingctor__event_set_looting2_ptr _event_set_lootingctor__event_set_looting2_next(nullptr);
-        info::_event_set_lootingctor__event_set_looting2_clbk _event_set_lootingctor__event_set_looting2_user(nullptr);
-        info::_event_set_lootinginit4_ptr _event_set_lootinginit4_next(nullptr);
-        info::_event_set_lootinginit4_clbk _event_set_lootinginit4_user(nullptr);
+        static info::_event_set_lootingctor__event_set_looting2_ptr _event_set_lootingctor__event_set_looting2_next(nullptr);
+        static info::_event_set_lootingctor__event_set_looting2_clbk _event_set_lootingctor__event_set_looting2_user(nullptr);
+        static info::_event_set_lootinginit4_ptr _event_set_lootinginit4_next(nullptr);
+        static info::_event_set_lootinginit4_clbk _event_set_lootinginit4_user(nullptr);
         
-        void _event_set_lootingctor__event_set_looting2_wrapper(struct _event_set_looting* _this)
+        static void _event_set_lootingctor__event_set_looting2_wrapper(struct _event_set_looting* _this)
         {
            _event_set_lootingctor__event_set_looting2_user(_this, _event_set_lootingctor__event_set_looting2_next);
         };
-        void _event_set_lootinginit4_wrapper(struct _event_set_looting* _this)
+        static void _event_set_lootinginit4_wrapper(struct _event_set_looting* _this)
         {
            _event_set_lootinginit4_user(_this, _event_set_lootinginit4_next);
         };
         
-        hook_record _event_set_looting_functions[] = {
+        static hook_record _event_set_looting_functions[] = {
         {   (LPVOID)0x1402a9f70L,
             (LPVOID *)&_event_set_lootingctor__event_set_looting2_user,
             (LPVOID *)&_event_set_lootingctor__event_set_looting2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,71 +8,71 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_talk_crystal_matrial_combine_nodeConsume2_ptr _talk_crystal_matrial_combine_nodeConsume2_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeConsume2_clbk _talk_crystal_matrial_combine_nodeConsume2_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodeGetMixNeedNum4_ptr _talk_crystal_matrial_combine_nodeGetMixNeedNum4_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeGetMixNeedNum4_clbk _talk_crystal_matrial_combine_nodeGetMixNeedNum4_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_ptr _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_clbk _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodeInit8_ptr _talk_crystal_matrial_combine_nodeInit8_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeInit8_clbk _talk_crystal_matrial_combine_nodeInit8_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodeMake10_ptr _talk_crystal_matrial_combine_nodeMake10_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeMake10_clbk _talk_crystal_matrial_combine_nodeMake10_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodePush12_ptr _talk_crystal_matrial_combine_nodePush12_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodePush12_clbk _talk_crystal_matrial_combine_nodePush12_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodeSet14_ptr _talk_crystal_matrial_combine_nodeSet14_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodeSet14_clbk _talk_crystal_matrial_combine_nodeSet14_user(nullptr);
-        info::_talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_ptr _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_next(nullptr);
-        info::_talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_clbk _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeConsume2_ptr _talk_crystal_matrial_combine_nodeConsume2_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeConsume2_clbk _talk_crystal_matrial_combine_nodeConsume2_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeGetMixNeedNum4_ptr _talk_crystal_matrial_combine_nodeGetMixNeedNum4_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeGetMixNeedNum4_clbk _talk_crystal_matrial_combine_nodeGetMixNeedNum4_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_ptr _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_clbk _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeInit8_ptr _talk_crystal_matrial_combine_nodeInit8_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeInit8_clbk _talk_crystal_matrial_combine_nodeInit8_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeMake10_ptr _talk_crystal_matrial_combine_nodeMake10_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeMake10_clbk _talk_crystal_matrial_combine_nodeMake10_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodePush12_ptr _talk_crystal_matrial_combine_nodePush12_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodePush12_clbk _talk_crystal_matrial_combine_nodePush12_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeSet14_ptr _talk_crystal_matrial_combine_nodeSet14_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodeSet14_clbk _talk_crystal_matrial_combine_nodeSet14_user(nullptr);
+        static info::_talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_ptr _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_next(nullptr);
+        static info::_talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_clbk _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_user(nullptr);
         
-        info::_talk_crystal_matrial_combine_node___matrialinfoInit2_ptr _talk_crystal_matrial_combine_node___matrialinfoInit2_next(nullptr);
-        info::_talk_crystal_matrial_combine_node___matrialinfoInit2_clbk _talk_crystal_matrial_combine_node___matrialinfoInit2_user(nullptr);
-        info::_talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_ptr _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_next(nullptr);
-        info::_talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_clbk _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_user(nullptr);
+        static info::_talk_crystal_matrial_combine_node___matrialinfoInit2_ptr _talk_crystal_matrial_combine_node___matrialinfoInit2_next(nullptr);
+        static info::_talk_crystal_matrial_combine_node___matrialinfoInit2_clbk _talk_crystal_matrial_combine_node___matrialinfoInit2_user(nullptr);
+        static info::_talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_ptr _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_next(nullptr);
+        static info::_talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_clbk _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_user(nullptr);
         
-        void _talk_crystal_matrial_combine_nodeConsume2_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nConsumeCount)
+        static void _talk_crystal_matrial_combine_nodeConsume2_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nConsumeCount)
         {
            _talk_crystal_matrial_combine_nodeConsume2_user(_this, nConsumeCount, _talk_crystal_matrial_combine_nodeConsume2_next);
         };
-        int _talk_crystal_matrial_combine_nodeGetMixNeedNum4_wrapper(struct _talk_crystal_matrial_combine_node* _this)
+        static int _talk_crystal_matrial_combine_nodeGetMixNeedNum4_wrapper(struct _talk_crystal_matrial_combine_node* _this)
         {
            return _talk_crystal_matrial_combine_nodeGetMixNeedNum4_user(_this, _talk_crystal_matrial_combine_nodeGetMixNeedNum4_next);
         };
-        int _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_wrapper(struct _talk_crystal_matrial_combine_node* _this)
+        static int _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_wrapper(struct _talk_crystal_matrial_combine_node* _this)
         {
            return _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_user(_this, _talk_crystal_matrial_combine_nodeGetRequiredSlotCount6_next);
         };
-        void _talk_crystal_matrial_combine_nodeInit8_wrapper(struct _talk_crystal_matrial_combine_node* _this)
+        static void _talk_crystal_matrial_combine_nodeInit8_wrapper(struct _talk_crystal_matrial_combine_node* _this)
         {
            _talk_crystal_matrial_combine_nodeInit8_user(_this, _talk_crystal_matrial_combine_nodeInit8_next);
         };
-        void _talk_crystal_matrial_combine_nodeMake10_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nMakeCount)
+        static void _talk_crystal_matrial_combine_nodeMake10_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nMakeCount)
         {
            _talk_crystal_matrial_combine_nodeMake10_user(_this, nMakeCount, _talk_crystal_matrial_combine_nodeMake10_next);
         };
-        bool _talk_crystal_matrial_combine_nodePush12_wrapper(struct _talk_crystal_matrial_combine_node* _this, struct _STORAGE_LIST::_db_con* pItem, char byUseCount, char byClientIndex)
+        static bool _talk_crystal_matrial_combine_nodePush12_wrapper(struct _talk_crystal_matrial_combine_node* _this, struct _STORAGE_LIST::_db_con* pItem, char byUseCount, char byClientIndex)
         {
            return _talk_crystal_matrial_combine_nodePush12_user(_this, pItem, byUseCount, byClientIndex, _talk_crystal_matrial_combine_nodePush12_next);
         };
-        bool _talk_crystal_matrial_combine_nodeSet14_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nMixIndex, int nNeedItemNum, char byTableCode, uint16_t wItemIndex)
+        static bool _talk_crystal_matrial_combine_nodeSet14_wrapper(struct _talk_crystal_matrial_combine_node* _this, int nMixIndex, int nNeedItemNum, char byTableCode, uint16_t wItemIndex)
         {
            return _talk_crystal_matrial_combine_nodeSet14_user(_this, nMixIndex, nNeedItemNum, byTableCode, wItemIndex, _talk_crystal_matrial_combine_nodeSet14_next);
         };
-        void _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_wrapper(struct _talk_crystal_matrial_combine_node* _this)
+        static void _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_wrapper(struct _talk_crystal_matrial_combine_node* _this)
         {
            _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_user(_this, _talk_crystal_matrial_combine_nodector__talk_crystal_matrial_combine_node16_next);
         };
         
-        void _talk_crystal_matrial_combine_node___matrialinfoInit2_wrapper(struct _talk_crystal_matrial_combine_node::_matrialinfo* _this)
+        static void _talk_crystal_matrial_combine_node___matrialinfoInit2_wrapper(struct _talk_crystal_matrial_combine_node::_matrialinfo* _this)
         {
            _talk_crystal_matrial_combine_node___matrialinfoInit2_user(_this, _talk_crystal_matrial_combine_node___matrialinfoInit2_next);
         };
-        void _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_wrapper(struct _talk_crystal_matrial_combine_node::_matrialinfo* _this)
+        static void _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_wrapper(struct _talk_crystal_matrial_combine_node::_matrialinfo* _this)
         {
            _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_user(_this, _talk_crystal_matrial_combine_node___matrialinfoctor__matrialinfo4_next);
         };
         
-        hook_record _talk_crystal_matrial_combine_node_functions[] = {
+        static hook_record _talk_crystal_matrial_combine_node_functions[] = {
         {   (LPVOID)0x140430a90L,
             (LPVOID *)&_talk_crystal_matrial_combine_nodeConsume2_user,
             (LPVOID *)&_talk_crystal_matrial_combine_nodeConsume2_next,
@@ -127,5 +127,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

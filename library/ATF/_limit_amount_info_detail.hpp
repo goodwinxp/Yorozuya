@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_limit_amount_infoctor__limit_amount_info2_ptr _limit_amount_infoctor__limit_amount_info2_next(nullptr);
-        info::_limit_amount_infoctor__limit_amount_info2_clbk _limit_amount_infoctor__limit_amount_info2_user(nullptr);
+        static info::_limit_amount_infoctor__limit_amount_info2_ptr _limit_amount_infoctor__limit_amount_info2_next(nullptr);
+        static info::_limit_amount_infoctor__limit_amount_info2_clbk _limit_amount_infoctor__limit_amount_info2_user(nullptr);
         
-        void _limit_amount_infoctor__limit_amount_info2_wrapper(struct _limit_amount_info* _this)
+        static void _limit_amount_infoctor__limit_amount_info2_wrapper(struct _limit_amount_info* _this)
         {
            _limit_amount_infoctor__limit_amount_info2_user(_this, _limit_amount_infoctor__limit_amount_info2_next);
         };
         
-        hook_record _limit_amount_info_functions[] = {
+        static hook_record _limit_amount_info_functions[] = {
         {   (LPVOID)0x1400f7780L,
             (LPVOID *)&_limit_amount_infoctor__limit_amount_info2_user,
             (LPVOID *)&_limit_amount_infoctor__limit_amount_info2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

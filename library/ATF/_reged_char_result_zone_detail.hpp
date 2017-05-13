@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_reged_char_result_zonector__reged_char_result_zone2_ptr _reged_char_result_zonector__reged_char_result_zone2_next(nullptr);
-        info::_reged_char_result_zonector__reged_char_result_zone2_clbk _reged_char_result_zonector__reged_char_result_zone2_user(nullptr);
-        info::_reged_char_result_zonesize4_ptr _reged_char_result_zonesize4_next(nullptr);
-        info::_reged_char_result_zonesize4_clbk _reged_char_result_zonesize4_user(nullptr);
+        static info::_reged_char_result_zonector__reged_char_result_zone2_ptr _reged_char_result_zonector__reged_char_result_zone2_next(nullptr);
+        static info::_reged_char_result_zonector__reged_char_result_zone2_clbk _reged_char_result_zonector__reged_char_result_zone2_user(nullptr);
+        static info::_reged_char_result_zonesize4_ptr _reged_char_result_zonesize4_next(nullptr);
+        static info::_reged_char_result_zonesize4_clbk _reged_char_result_zonesize4_user(nullptr);
         
-        void _reged_char_result_zonector__reged_char_result_zone2_wrapper(struct _reged_char_result_zone* _this)
+        static void _reged_char_result_zonector__reged_char_result_zone2_wrapper(struct _reged_char_result_zone* _this)
         {
            _reged_char_result_zonector__reged_char_result_zone2_user(_this, _reged_char_result_zonector__reged_char_result_zone2_next);
         };
-        int _reged_char_result_zonesize4_wrapper(struct _reged_char_result_zone* _this)
+        static int _reged_char_result_zonesize4_wrapper(struct _reged_char_result_zone* _this)
         {
            return _reged_char_result_zonesize4_user(_this, _reged_char_result_zonesize4_next);
         };
         
-        hook_record _reged_char_result_zone_functions[] = {
+        static hook_record _reged_char_result_zone_functions[] = {
         {   (LPVOID)0x14011f680L,
             (LPVOID *)&_reged_char_result_zonector__reged_char_result_zone2_user,
             (LPVOID *)&_reged_char_result_zonector__reged_char_result_zone2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

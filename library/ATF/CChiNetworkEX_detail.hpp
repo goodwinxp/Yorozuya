@@ -8,123 +8,123 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CChiNetworkEXAcceptClientCheck2_ptr CChiNetworkEXAcceptClientCheck2_next(nullptr);
-        info::CChiNetworkEXAcceptClientCheck2_clbk CChiNetworkEXAcceptClientCheck2_user(nullptr);
-        info::CChiNetworkEXctor_CChiNetworkEX4_ptr CChiNetworkEXctor_CChiNetworkEX4_next(nullptr);
-        info::CChiNetworkEXctor_CChiNetworkEX4_clbk CChiNetworkEXctor_CChiNetworkEX4_user(nullptr);
-        info::CChiNetworkEXCheckApexLine6_ptr CChiNetworkEXCheckApexLine6_next(nullptr);
-        info::CChiNetworkEXCheckApexLine6_clbk CChiNetworkEXCheckApexLine6_user(nullptr);
-        info::CChiNetworkEXCloseClientCheck8_ptr CChiNetworkEXCloseClientCheck8_next(nullptr);
-        info::CChiNetworkEXCloseClientCheck8_clbk CChiNetworkEXCloseClientCheck8_user(nullptr);
-        info::CChiNetworkEXDestory10_ptr CChiNetworkEXDestory10_next(nullptr);
-        info::CChiNetworkEXDestory10_clbk CChiNetworkEXDestory10_user(nullptr);
-        info::CChiNetworkEXInform_For_Exit_By_ApexBlock12_ptr CChiNetworkEXInform_For_Exit_By_ApexBlock12_next(nullptr);
-        info::CChiNetworkEXInform_For_Exit_By_ApexBlock12_clbk CChiNetworkEXInform_For_Exit_By_ApexBlock12_user(nullptr);
-        info::CChiNetworkEXInitialize14_ptr CChiNetworkEXInitialize14_next(nullptr);
-        info::CChiNetworkEXInitialize14_clbk CChiNetworkEXInitialize14_user(nullptr);
-        info::CChiNetworkEXInstance16_ptr CChiNetworkEXInstance16_next(nullptr);
-        info::CChiNetworkEXInstance16_clbk CChiNetworkEXInstance16_user(nullptr);
-        info::CChiNetworkEXLoadINIFile18_ptr CChiNetworkEXLoadINIFile18_next(nullptr);
-        info::CChiNetworkEXLoadINIFile18_clbk CChiNetworkEXLoadINIFile18_user(nullptr);
-        info::CChiNetworkEXRecv_ApexInform20_ptr CChiNetworkEXRecv_ApexInform20_next(nullptr);
-        info::CChiNetworkEXRecv_ApexInform20_clbk CChiNetworkEXRecv_ApexInform20_user(nullptr);
-        info::CChiNetworkEXRecv_ApexKill22_ptr CChiNetworkEXRecv_ApexKill22_next(nullptr);
-        info::CChiNetworkEXRecv_ApexKill22_clbk CChiNetworkEXRecv_ApexKill22_user(nullptr);
-        info::CChiNetworkEXSend24_ptr CChiNetworkEXSend24_next(nullptr);
-        info::CChiNetworkEXSend24_clbk CChiNetworkEXSend24_user(nullptr);
-        info::CChiNetworkEXSend_ClienInform26_ptr CChiNetworkEXSend_ClienInform26_next(nullptr);
-        info::CChiNetworkEXSend_ClienInform26_clbk CChiNetworkEXSend_ClienInform26_user(nullptr);
-        info::CChiNetworkEXSend_IP28_ptr CChiNetworkEXSend_IP28_next(nullptr);
-        info::CChiNetworkEXSend_IP28_clbk CChiNetworkEXSend_IP28_user(nullptr);
-        info::CChiNetworkEXSend_Login30_ptr CChiNetworkEXSend_Login30_next(nullptr);
-        info::CChiNetworkEXSend_Login30_clbk CChiNetworkEXSend_Login30_user(nullptr);
-        info::CChiNetworkEXSend_Logout32_ptr CChiNetworkEXSend_Logout32_next(nullptr);
-        info::CChiNetworkEXSend_Logout32_clbk CChiNetworkEXSend_Logout32_user(nullptr);
-        info::CChiNetworkEXSend_Trans34_ptr CChiNetworkEXSend_Trans34_next(nullptr);
-        info::CChiNetworkEXSend_Trans34_clbk CChiNetworkEXSend_Trans34_user(nullptr);
-        info::CChiNetworkEXs_DataAnalysis39_ptr CChiNetworkEXs_DataAnalysis39_next(nullptr);
-        info::CChiNetworkEXs_DataAnalysis39_clbk CChiNetworkEXs_DataAnalysis39_user(nullptr);
-        info::CChiNetworkEXdtor_CChiNetworkEX41_ptr CChiNetworkEXdtor_CChiNetworkEX41_next(nullptr);
-        info::CChiNetworkEXdtor_CChiNetworkEX41_clbk CChiNetworkEXdtor_CChiNetworkEX41_user(nullptr);
+        static info::CChiNetworkEXAcceptClientCheck2_ptr CChiNetworkEXAcceptClientCheck2_next(nullptr);
+        static info::CChiNetworkEXAcceptClientCheck2_clbk CChiNetworkEXAcceptClientCheck2_user(nullptr);
+        static info::CChiNetworkEXctor_CChiNetworkEX4_ptr CChiNetworkEXctor_CChiNetworkEX4_next(nullptr);
+        static info::CChiNetworkEXctor_CChiNetworkEX4_clbk CChiNetworkEXctor_CChiNetworkEX4_user(nullptr);
+        static info::CChiNetworkEXCheckApexLine6_ptr CChiNetworkEXCheckApexLine6_next(nullptr);
+        static info::CChiNetworkEXCheckApexLine6_clbk CChiNetworkEXCheckApexLine6_user(nullptr);
+        static info::CChiNetworkEXCloseClientCheck8_ptr CChiNetworkEXCloseClientCheck8_next(nullptr);
+        static info::CChiNetworkEXCloseClientCheck8_clbk CChiNetworkEXCloseClientCheck8_user(nullptr);
+        static info::CChiNetworkEXDestory10_ptr CChiNetworkEXDestory10_next(nullptr);
+        static info::CChiNetworkEXDestory10_clbk CChiNetworkEXDestory10_user(nullptr);
+        static info::CChiNetworkEXInform_For_Exit_By_ApexBlock12_ptr CChiNetworkEXInform_For_Exit_By_ApexBlock12_next(nullptr);
+        static info::CChiNetworkEXInform_For_Exit_By_ApexBlock12_clbk CChiNetworkEXInform_For_Exit_By_ApexBlock12_user(nullptr);
+        static info::CChiNetworkEXInitialize14_ptr CChiNetworkEXInitialize14_next(nullptr);
+        static info::CChiNetworkEXInitialize14_clbk CChiNetworkEXInitialize14_user(nullptr);
+        static info::CChiNetworkEXInstance16_ptr CChiNetworkEXInstance16_next(nullptr);
+        static info::CChiNetworkEXInstance16_clbk CChiNetworkEXInstance16_user(nullptr);
+        static info::CChiNetworkEXLoadINIFile18_ptr CChiNetworkEXLoadINIFile18_next(nullptr);
+        static info::CChiNetworkEXLoadINIFile18_clbk CChiNetworkEXLoadINIFile18_user(nullptr);
+        static info::CChiNetworkEXRecv_ApexInform20_ptr CChiNetworkEXRecv_ApexInform20_next(nullptr);
+        static info::CChiNetworkEXRecv_ApexInform20_clbk CChiNetworkEXRecv_ApexInform20_user(nullptr);
+        static info::CChiNetworkEXRecv_ApexKill22_ptr CChiNetworkEXRecv_ApexKill22_next(nullptr);
+        static info::CChiNetworkEXRecv_ApexKill22_clbk CChiNetworkEXRecv_ApexKill22_user(nullptr);
+        static info::CChiNetworkEXSend24_ptr CChiNetworkEXSend24_next(nullptr);
+        static info::CChiNetworkEXSend24_clbk CChiNetworkEXSend24_user(nullptr);
+        static info::CChiNetworkEXSend_ClienInform26_ptr CChiNetworkEXSend_ClienInform26_next(nullptr);
+        static info::CChiNetworkEXSend_ClienInform26_clbk CChiNetworkEXSend_ClienInform26_user(nullptr);
+        static info::CChiNetworkEXSend_IP28_ptr CChiNetworkEXSend_IP28_next(nullptr);
+        static info::CChiNetworkEXSend_IP28_clbk CChiNetworkEXSend_IP28_user(nullptr);
+        static info::CChiNetworkEXSend_Login30_ptr CChiNetworkEXSend_Login30_next(nullptr);
+        static info::CChiNetworkEXSend_Login30_clbk CChiNetworkEXSend_Login30_user(nullptr);
+        static info::CChiNetworkEXSend_Logout32_ptr CChiNetworkEXSend_Logout32_next(nullptr);
+        static info::CChiNetworkEXSend_Logout32_clbk CChiNetworkEXSend_Logout32_user(nullptr);
+        static info::CChiNetworkEXSend_Trans34_ptr CChiNetworkEXSend_Trans34_next(nullptr);
+        static info::CChiNetworkEXSend_Trans34_clbk CChiNetworkEXSend_Trans34_user(nullptr);
+        static info::CChiNetworkEXs_DataAnalysis39_ptr CChiNetworkEXs_DataAnalysis39_next(nullptr);
+        static info::CChiNetworkEXs_DataAnalysis39_clbk CChiNetworkEXs_DataAnalysis39_user(nullptr);
+        static info::CChiNetworkEXdtor_CChiNetworkEX41_ptr CChiNetworkEXdtor_CChiNetworkEX41_next(nullptr);
+        static info::CChiNetworkEXdtor_CChiNetworkEX41_clbk CChiNetworkEXdtor_CChiNetworkEX41_user(nullptr);
         
-        void CChiNetworkEXAcceptClientCheck2_wrapper(struct CChiNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CChiNetworkEXAcceptClientCheck2_wrapper(struct CChiNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CChiNetworkEXAcceptClientCheck2_user(_this, dwProID, dwIndex, dwSerial, CChiNetworkEXAcceptClientCheck2_next);
         };
-        void CChiNetworkEXctor_CChiNetworkEX4_wrapper(struct CChiNetworkEX* _this)
+        static void CChiNetworkEXctor_CChiNetworkEX4_wrapper(struct CChiNetworkEX* _this)
         {
            CChiNetworkEXctor_CChiNetworkEX4_user(_this, CChiNetworkEXctor_CChiNetworkEX4_next);
         };
-        void CChiNetworkEXCheckApexLine6_wrapper(struct CChiNetworkEX* _this)
+        static void CChiNetworkEXCheckApexLine6_wrapper(struct CChiNetworkEX* _this)
         {
            CChiNetworkEXCheckApexLine6_user(_this, CChiNetworkEXCheckApexLine6_next);
         };
-        void CChiNetworkEXCloseClientCheck8_wrapper(struct CChiNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
+        static void CChiNetworkEXCloseClientCheck8_wrapper(struct CChiNetworkEX* _this, unsigned int dwProID, unsigned int dwIndex, unsigned int dwSerial)
         {
            CChiNetworkEXCloseClientCheck8_user(_this, dwProID, dwIndex, dwSerial, CChiNetworkEXCloseClientCheck8_next);
         };
-        void CChiNetworkEXDestory10_wrapper()
+        static void CChiNetworkEXDestory10_wrapper()
         {
            CChiNetworkEXDestory10_user(CChiNetworkEXDestory10_next);
         };
-        void CChiNetworkEXInform_For_Exit_By_ApexBlock12_wrapper(struct CChiNetworkEX* _this, unsigned int dwAccountSerial)
+        static void CChiNetworkEXInform_For_Exit_By_ApexBlock12_wrapper(struct CChiNetworkEX* _this, unsigned int dwAccountSerial)
         {
            CChiNetworkEXInform_For_Exit_By_ApexBlock12_user(_this, dwAccountSerial, CChiNetworkEXInform_For_Exit_By_ApexBlock12_next);
         };
-        int CChiNetworkEXInitialize14_wrapper(struct CChiNetworkEX* _this)
+        static int CChiNetworkEXInitialize14_wrapper(struct CChiNetworkEX* _this)
         {
            return CChiNetworkEXInitialize14_user(_this, CChiNetworkEXInitialize14_next);
         };
-        struct CChiNetworkEX* CChiNetworkEXInstance16_wrapper()
+        static struct CChiNetworkEX* CChiNetworkEXInstance16_wrapper()
         {
            return CChiNetworkEXInstance16_user(CChiNetworkEXInstance16_next);
         };
-        int CChiNetworkEXLoadINIFile18_wrapper(struct CChiNetworkEX* _this)
+        static int CChiNetworkEXLoadINIFile18_wrapper(struct CChiNetworkEX* _this)
         {
            return CChiNetworkEXLoadINIFile18_user(_this, CChiNetworkEXLoadINIFile18_next);
         };
-        void CChiNetworkEXRecv_ApexInform20_wrapper(struct CChiNetworkEX* _this, unsigned int dwSID, unsigned int dwRecvSize, char* pMsg)
+        static void CChiNetworkEXRecv_ApexInform20_wrapper(struct CChiNetworkEX* _this, unsigned int dwSID, unsigned int dwRecvSize, char* pMsg)
         {
            CChiNetworkEXRecv_ApexInform20_user(_this, dwSID, dwRecvSize, pMsg, CChiNetworkEXRecv_ApexInform20_next);
         };
-        void CChiNetworkEXRecv_ApexKill22_wrapper(struct CChiNetworkEX* _this, unsigned int dwSID, unsigned int dwRecvSize, char* pMsg)
+        static void CChiNetworkEXRecv_ApexKill22_wrapper(struct CChiNetworkEX* _this, unsigned int dwSID, unsigned int dwRecvSize, char* pMsg)
         {
            CChiNetworkEXRecv_ApexKill22_user(_this, dwSID, dwRecvSize, pMsg, CChiNetworkEXRecv_ApexKill22_next);
         };
-        int CChiNetworkEXSend24_wrapper(struct CChiNetworkEX* _this, char* pbyType, unsigned int dwSID, char* szMsg, uint16_t nLen)
+        static int CChiNetworkEXSend24_wrapper(struct CChiNetworkEX* _this, char* pbyType, unsigned int dwSID, char* szMsg, uint16_t nLen)
         {
            return CChiNetworkEXSend24_user(_this, pbyType, dwSID, szMsg, nLen, CChiNetworkEXSend24_next);
         };
-        void CChiNetworkEXSend_ClienInform26_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne, uint16_t wSize, char* pBuf)
+        static void CChiNetworkEXSend_ClienInform26_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne, uint16_t wSize, char* pBuf)
         {
            CChiNetworkEXSend_ClienInform26_user(_this, pOne, wSize, pBuf, CChiNetworkEXSend_ClienInform26_next);
         };
-        void CChiNetworkEXSend_IP28_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
+        static void CChiNetworkEXSend_IP28_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
         {
            CChiNetworkEXSend_IP28_user(_this, pOne, CChiNetworkEXSend_IP28_next);
         };
-        void CChiNetworkEXSend_Login30_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
+        static void CChiNetworkEXSend_Login30_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
         {
            CChiNetworkEXSend_Login30_user(_this, pOne, CChiNetworkEXSend_Login30_next);
         };
-        void CChiNetworkEXSend_Logout32_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
+        static void CChiNetworkEXSend_Logout32_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne)
         {
            CChiNetworkEXSend_Logout32_user(_this, pOne, CChiNetworkEXSend_Logout32_next);
         };
-        void CChiNetworkEXSend_Trans34_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne, unsigned int dwRet)
+        static void CChiNetworkEXSend_Trans34_wrapper(struct CChiNetworkEX* _this, struct CPlayer* pOne, unsigned int dwRet)
         {
            CChiNetworkEXSend_Trans34_user(_this, pOne, dwRet, CChiNetworkEXSend_Trans34_next);
         };
-        bool CChiNetworkEXs_DataAnalysis39_wrapper(unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CChiNetworkEXs_DataAnalysis39_wrapper(unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CChiNetworkEXs_DataAnalysis39_user(dwProID, dwClientIndex, pMsgHeader, pMsg, CChiNetworkEXs_DataAnalysis39_next);
         };
-        void CChiNetworkEXdtor_CChiNetworkEX41_wrapper(struct CChiNetworkEX* _this)
+        static void CChiNetworkEXdtor_CChiNetworkEX41_wrapper(struct CChiNetworkEX* _this)
         {
            CChiNetworkEXdtor_CChiNetworkEX41_user(_this, CChiNetworkEXdtor_CChiNetworkEX41_next);
         };
         
-        hook_record CChiNetworkEX_functions[] = {
+        static hook_record CChiNetworkEX_functions[] = {
         {   (LPVOID)0x1404106b0L,
             (LPVOID *)&CChiNetworkEXAcceptClientCheck2_user,
             (LPVOID *)&CChiNetworkEXAcceptClientCheck2_next,
@@ -223,5 +223,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

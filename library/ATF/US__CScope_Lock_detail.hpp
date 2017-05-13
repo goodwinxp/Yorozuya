@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CScope_Lockctor_CScope_Lock2_ptr US__CScope_Lockctor_CScope_Lock2_next(nullptr);
-            info::US__CScope_Lockctor_CScope_Lock2_clbk US__CScope_Lockctor_CScope_Lock2_user(nullptr);
-            info::US__CScope_Lockdtor_CScope_Lock4_ptr US__CScope_Lockdtor_CScope_Lock4_next(nullptr);
-            info::US__CScope_Lockdtor_CScope_Lock4_clbk US__CScope_Lockdtor_CScope_Lock4_user(nullptr);
+            static info::US__CScope_Lockctor_CScope_Lock2_ptr US__CScope_Lockctor_CScope_Lock2_next(nullptr);
+            static info::US__CScope_Lockctor_CScope_Lock2_clbk US__CScope_Lockctor_CScope_Lock2_user(nullptr);
+            static info::US__CScope_Lockdtor_CScope_Lock4_ptr US__CScope_Lockdtor_CScope_Lock4_next(nullptr);
+            static info::US__CScope_Lockdtor_CScope_Lock4_clbk US__CScope_Lockdtor_CScope_Lock4_user(nullptr);
             
-            void US__CScope_Lockctor_CScope_Lock2_wrapper(struct US::CScope_Lock<US::CriticalSection>* _this, struct US::CriticalSection* mtx)
+            static void US__CScope_Lockctor_CScope_Lock2_wrapper(struct US::CScope_Lock<US::CriticalSection>* _this, struct US::CriticalSection* mtx)
             {
                US__CScope_Lockctor_CScope_Lock2_user(_this, mtx);
             };
-            void US__CScope_Lockdtor_CScope_Lock4_wrapper(struct US::CScope_Lock<US::CriticalSection>* _this)
+            static void US__CScope_Lockdtor_CScope_Lock4_wrapper(struct US::CScope_Lock<US::CriticalSection>* _this)
             {
                US__CScope_Lockdtor_CScope_Lock4_user(_this);
             };
             
-            hook_record CScope_Lock<US::CriticalSection>_functions[] = {
+            static hook_record CScope_Lock<US::CriticalSection>_functions[] = {
             {   (LPVOID)0x14041e470L,
                 (LPVOID *)&US__CScope_Lockctor_CScope_Lock2_user,
                 (LPVOID *)&US__CScope_Lockctor_CScope_Lock2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE

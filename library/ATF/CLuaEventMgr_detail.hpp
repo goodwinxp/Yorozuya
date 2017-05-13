@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaEventMgrAttachEvent2_ptr CLuaEventMgrAttachEvent2_next(nullptr);
-        info::CLuaEventMgrAttachEvent2_clbk CLuaEventMgrAttachEvent2_user(nullptr);
-        info::CLuaEventMgrctor_CLuaEventMgr4_ptr CLuaEventMgrctor_CLuaEventMgr4_next(nullptr);
-        info::CLuaEventMgrctor_CLuaEventMgr4_clbk CLuaEventMgrctor_CLuaEventMgr4_user(nullptr);
-        info::CLuaEventMgrDestroy6_ptr CLuaEventMgrDestroy6_next(nullptr);
-        info::CLuaEventMgrDestroy6_clbk CLuaEventMgrDestroy6_user(nullptr);
-        info::CLuaEventMgrDettachEvent8_ptr CLuaEventMgrDettachEvent8_next(nullptr);
-        info::CLuaEventMgrDettachEvent8_clbk CLuaEventMgrDettachEvent8_user(nullptr);
-        info::CLuaEventMgrInitSDM10_ptr CLuaEventMgrInitSDM10_next(nullptr);
-        info::CLuaEventMgrInitSDM10_clbk CLuaEventMgrInitSDM10_user(nullptr);
-        info::CLuaEventMgrInstance12_ptr CLuaEventMgrInstance12_next(nullptr);
-        info::CLuaEventMgrInstance12_clbk CLuaEventMgrInstance12_user(nullptr);
-        info::CLuaEventMgrLoop14_ptr CLuaEventMgrLoop14_next(nullptr);
-        info::CLuaEventMgrLoop14_clbk CLuaEventMgrLoop14_user(nullptr);
-        info::CLuaEventMgrNewEvent16_ptr CLuaEventMgrNewEvent16_next(nullptr);
-        info::CLuaEventMgrNewEvent16_clbk CLuaEventMgrNewEvent16_user(nullptr);
-        info::CLuaEventMgrRemoveEvent18_ptr CLuaEventMgrRemoveEvent18_next(nullptr);
-        info::CLuaEventMgrRemoveEvent18_clbk CLuaEventMgrRemoveEvent18_user(nullptr);
-        info::CLuaEventMgrSearchEvent20_ptr CLuaEventMgrSearchEvent20_next(nullptr);
-        info::CLuaEventMgrSearchEvent20_clbk CLuaEventMgrSearchEvent20_user(nullptr);
-        info::CLuaEventMgrdtor_CLuaEventMgr24_ptr CLuaEventMgrdtor_CLuaEventMgr24_next(nullptr);
-        info::CLuaEventMgrdtor_CLuaEventMgr24_clbk CLuaEventMgrdtor_CLuaEventMgr24_user(nullptr);
+        static info::CLuaEventMgrAttachEvent2_ptr CLuaEventMgrAttachEvent2_next(nullptr);
+        static info::CLuaEventMgrAttachEvent2_clbk CLuaEventMgrAttachEvent2_user(nullptr);
+        static info::CLuaEventMgrctor_CLuaEventMgr4_ptr CLuaEventMgrctor_CLuaEventMgr4_next(nullptr);
+        static info::CLuaEventMgrctor_CLuaEventMgr4_clbk CLuaEventMgrctor_CLuaEventMgr4_user(nullptr);
+        static info::CLuaEventMgrDestroy6_ptr CLuaEventMgrDestroy6_next(nullptr);
+        static info::CLuaEventMgrDestroy6_clbk CLuaEventMgrDestroy6_user(nullptr);
+        static info::CLuaEventMgrDettachEvent8_ptr CLuaEventMgrDettachEvent8_next(nullptr);
+        static info::CLuaEventMgrDettachEvent8_clbk CLuaEventMgrDettachEvent8_user(nullptr);
+        static info::CLuaEventMgrInitSDM10_ptr CLuaEventMgrInitSDM10_next(nullptr);
+        static info::CLuaEventMgrInitSDM10_clbk CLuaEventMgrInitSDM10_user(nullptr);
+        static info::CLuaEventMgrInstance12_ptr CLuaEventMgrInstance12_next(nullptr);
+        static info::CLuaEventMgrInstance12_clbk CLuaEventMgrInstance12_user(nullptr);
+        static info::CLuaEventMgrLoop14_ptr CLuaEventMgrLoop14_next(nullptr);
+        static info::CLuaEventMgrLoop14_clbk CLuaEventMgrLoop14_user(nullptr);
+        static info::CLuaEventMgrNewEvent16_ptr CLuaEventMgrNewEvent16_next(nullptr);
+        static info::CLuaEventMgrNewEvent16_clbk CLuaEventMgrNewEvent16_user(nullptr);
+        static info::CLuaEventMgrRemoveEvent18_ptr CLuaEventMgrRemoveEvent18_next(nullptr);
+        static info::CLuaEventMgrRemoveEvent18_clbk CLuaEventMgrRemoveEvent18_user(nullptr);
+        static info::CLuaEventMgrSearchEvent20_ptr CLuaEventMgrSearchEvent20_next(nullptr);
+        static info::CLuaEventMgrSearchEvent20_clbk CLuaEventMgrSearchEvent20_user(nullptr);
+        static info::CLuaEventMgrdtor_CLuaEventMgr24_ptr CLuaEventMgrdtor_CLuaEventMgr24_next(nullptr);
+        static info::CLuaEventMgrdtor_CLuaEventMgr24_clbk CLuaEventMgrdtor_CLuaEventMgr24_user(nullptr);
         
-        bool CLuaEventMgrAttachEvent2_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
+        static bool CLuaEventMgrAttachEvent2_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
         {
            return CLuaEventMgrAttachEvent2_user(_this, pEvent, CLuaEventMgrAttachEvent2_next);
         };
-        void CLuaEventMgrctor_CLuaEventMgr4_wrapper(struct CLuaEventMgr* _this)
+        static void CLuaEventMgrctor_CLuaEventMgr4_wrapper(struct CLuaEventMgr* _this)
         {
            CLuaEventMgrctor_CLuaEventMgr4_user(_this, CLuaEventMgrctor_CLuaEventMgr4_next);
         };
-        void CLuaEventMgrDestroy6_wrapper()
+        static void CLuaEventMgrDestroy6_wrapper()
         {
            CLuaEventMgrDestroy6_user(CLuaEventMgrDestroy6_next);
         };
-        bool CLuaEventMgrDettachEvent8_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
+        static bool CLuaEventMgrDettachEvent8_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
         {
            return CLuaEventMgrDettachEvent8_user(_this, pEvent, CLuaEventMgrDettachEvent8_next);
         };
-        bool CLuaEventMgrInitSDM10_wrapper(struct CLuaEventMgr* _this)
+        static bool CLuaEventMgrInitSDM10_wrapper(struct CLuaEventMgr* _this)
         {
            return CLuaEventMgrInitSDM10_user(_this, CLuaEventMgrInitSDM10_next);
         };
-        struct CLuaEventMgr* CLuaEventMgrInstance12_wrapper()
+        static struct CLuaEventMgr* CLuaEventMgrInstance12_wrapper()
         {
            return CLuaEventMgrInstance12_user(CLuaEventMgrInstance12_next);
         };
-        void CLuaEventMgrLoop14_wrapper(struct CLuaEventMgr* _this)
+        static void CLuaEventMgrLoop14_wrapper(struct CLuaEventMgr* _this)
         {
            CLuaEventMgrLoop14_user(_this, CLuaEventMgrLoop14_next);
         };
-        struct CLuaEventNode* CLuaEventMgrNewEvent16_wrapper(struct CLuaEventMgr* _this)
+        static struct CLuaEventNode* CLuaEventMgrNewEvent16_wrapper(struct CLuaEventMgr* _this)
         {
            return CLuaEventMgrNewEvent16_user(_this, CLuaEventMgrNewEvent16_next);
         };
-        void CLuaEventMgrRemoveEvent18_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
+        static void CLuaEventMgrRemoveEvent18_wrapper(struct CLuaEventMgr* _this, struct CLuaEventNode* pEvent)
         {
            CLuaEventMgrRemoveEvent18_user(_this, pEvent, CLuaEventMgrRemoveEvent18_next);
         };
-        struct CLuaEventNode* CLuaEventMgrSearchEvent20_wrapper(struct CLuaEventMgr* _this, char* strFileName)
+        static struct CLuaEventNode* CLuaEventMgrSearchEvent20_wrapper(struct CLuaEventMgr* _this, char* strFileName)
         {
            return CLuaEventMgrSearchEvent20_user(_this, strFileName, CLuaEventMgrSearchEvent20_next);
         };
-        void CLuaEventMgrdtor_CLuaEventMgr24_wrapper(struct CLuaEventMgr* _this)
+        static void CLuaEventMgrdtor_CLuaEventMgr24_wrapper(struct CLuaEventMgr* _this)
         {
            CLuaEventMgrdtor_CLuaEventMgr24_user(_this, CLuaEventMgrdtor_CLuaEventMgr24_next);
         };
         
-        hook_record CLuaEventMgr_functions[] = {
+        static hook_record CLuaEventMgr_functions[] = {
         {   (LPVOID)0x140403690L,
             (LPVOID *)&CLuaEventMgrAttachEvent2_user,
             (LPVOID *)&CLuaEventMgrAttachEvent2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

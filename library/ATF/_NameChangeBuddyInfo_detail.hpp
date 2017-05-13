@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_NameChangeBuddyInfoInit2_ptr _NameChangeBuddyInfoInit2_next(nullptr);
-        info::_NameChangeBuddyInfoInit2_clbk _NameChangeBuddyInfoInit2_user(nullptr);
-        info::_NameChangeBuddyInfoctor__NameChangeBuddyInfo4_ptr _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_next(nullptr);
-        info::_NameChangeBuddyInfoctor__NameChangeBuddyInfo4_clbk _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_user(nullptr);
+        static info::_NameChangeBuddyInfoInit2_ptr _NameChangeBuddyInfoInit2_next(nullptr);
+        static info::_NameChangeBuddyInfoInit2_clbk _NameChangeBuddyInfoInit2_user(nullptr);
+        static info::_NameChangeBuddyInfoctor__NameChangeBuddyInfo4_ptr _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_next(nullptr);
+        static info::_NameChangeBuddyInfoctor__NameChangeBuddyInfo4_clbk _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_user(nullptr);
         
-        void _NameChangeBuddyInfoInit2_wrapper(struct _NameChangeBuddyInfo* _this)
+        static void _NameChangeBuddyInfoInit2_wrapper(struct _NameChangeBuddyInfo* _this)
         {
            _NameChangeBuddyInfoInit2_user(_this, _NameChangeBuddyInfoInit2_next);
         };
-        void _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_wrapper(struct _NameChangeBuddyInfo* _this)
+        static void _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_wrapper(struct _NameChangeBuddyInfo* _this)
         {
            _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_user(_this, _NameChangeBuddyInfoctor__NameChangeBuddyInfo4_next);
         };
         
-        hook_record _NameChangeBuddyInfo_functions[] = {
+        static hook_record _NameChangeBuddyInfo_functions[] = {
         {   (LPVOID)0x140073e70L,
             (LPVOID *)&_NameChangeBuddyInfoInit2_user,
             (LPVOID *)&_NameChangeBuddyInfoInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

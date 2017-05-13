@@ -8,229 +8,229 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTransportShipAlterState2_ptr CTransportShipAlterState2_next(nullptr);
-        info::CTransportShipAlterState2_clbk CTransportShipAlterState2_user(nullptr);
-        info::CTransportShipApplyTicketReserver4_ptr CTransportShipApplyTicketReserver4_next(nullptr);
-        info::CTransportShipApplyTicketReserver4_clbk CTransportShipApplyTicketReserver4_user(nullptr);
-        info::CTransportShipctor_CTransportShip6_ptr CTransportShipctor_CTransportShip6_next(nullptr);
-        info::CTransportShipctor_CTransportShip6_clbk CTransportShipctor_CTransportShip6_user(nullptr);
-        info::CTransportShipCheckHurry8_ptr CTransportShipCheckHurry8_next(nullptr);
-        info::CTransportShipCheckHurry8_clbk CTransportShipCheckHurry8_user(nullptr);
-        info::CTransportShipCheckTicket10_ptr CTransportShipCheckTicket10_next(nullptr);
-        info::CTransportShipCheckTicket10_clbk CTransportShipCheckTicket10_user(nullptr);
-        info::CTransportShipCheckTicket_Kick12_ptr CTransportShipCheckTicket_Kick12_next(nullptr);
-        info::CTransportShipCheckTicket_Kick12_clbk CTransportShipCheckTicket_Kick12_user(nullptr);
-        info::CTransportShipCheckTicket_Pass14_ptr CTransportShipCheckTicket_Pass14_next(nullptr);
-        info::CTransportShipCheckTicket_Pass14_clbk CTransportShipCheckTicket_Pass14_user(nullptr);
-        info::CTransportShipEnterMember16_ptr CTransportShipEnterMember16_next(nullptr);
-        info::CTransportShipEnterMember16_clbk CTransportShipEnterMember16_user(nullptr);
-        info::CTransportShipExitMember18_ptr CTransportShipExitMember18_next(nullptr);
-        info::CTransportShipExitMember18_clbk CTransportShipExitMember18_user(nullptr);
-        info::CTransportShipGetCurRideShipThisTicket20_ptr CTransportShipGetCurRideShipThisTicket20_next(nullptr);
-        info::CTransportShipGetCurRideShipThisTicket20_clbk CTransportShipGetCurRideShipThisTicket20_user(nullptr);
-        info::CTransportShipGetEmptyNewMember22_ptr CTransportShipGetEmptyNewMember22_next(nullptr);
-        info::CTransportShipGetEmptyNewMember22_clbk CTransportShipGetEmptyNewMember22_user(nullptr);
-        info::CTransportShipGetLeftTicketIncludeReserNum24_ptr CTransportShipGetLeftTicketIncludeReserNum24_next(nullptr);
-        info::CTransportShipGetLeftTicketIncludeReserNum24_clbk CTransportShipGetLeftTicketIncludeReserNum24_user(nullptr);
-        info::CTransportShipGetMapCurDirect26_ptr CTransportShipGetMapCurDirect26_next(nullptr);
-        info::CTransportShipGetMapCurDirect26_clbk CTransportShipGetMapCurDirect26_user(nullptr);
-        info::CTransportShipGetOutPortalIndex28_ptr CTransportShipGetOutPortalIndex28_next(nullptr);
-        info::CTransportShipGetOutPortalIndex28_clbk CTransportShipGetOutPortalIndex28_user(nullptr);
-        info::CTransportShipGetRideLimLevel30_ptr CTransportShipGetRideLimLevel30_next(nullptr);
-        info::CTransportShipGetRideLimLevel30_clbk CTransportShipGetRideLimLevel30_user(nullptr);
-        info::CTransportShipGetRideUpLimLevel32_ptr CTransportShipGetRideUpLimLevel32_next(nullptr);
-        info::CTransportShipGetRideUpLimLevel32_clbk CTransportShipGetRideUpLimLevel32_user(nullptr);
-        info::CTransportShipGetStartPosInShip34_ptr CTransportShipGetStartPosInShip34_next(nullptr);
-        info::CTransportShipGetStartPosInShip34_clbk CTransportShipGetStartPosInShip34_user(nullptr);
-        info::CTransportShipInitShip36_ptr CTransportShipInitShip36_next(nullptr);
-        info::CTransportShipInitShip36_clbk CTransportShipInitShip36_user(nullptr);
-        info::CTransportShipInitTicketReserver38_ptr CTransportShipInitTicketReserver38_next(nullptr);
-        info::CTransportShipInitTicketReserver38_clbk CTransportShipInitTicketReserver38_user(nullptr);
-        info::CTransportShipIsMemberBeforeLogoff40_ptr CTransportShipIsMemberBeforeLogoff40_next(nullptr);
-        info::CTransportShipIsMemberBeforeLogoff40_clbk CTransportShipIsMemberBeforeLogoff40_user(nullptr);
-        info::CTransportShipIsOldMember42_ptr CTransportShipIsOldMember42_next(nullptr);
-        info::CTransportShipIsOldMember42_clbk CTransportShipIsOldMember42_user(nullptr);
-        info::CTransportShipKickFreeMember44_ptr CTransportShipKickFreeMember44_next(nullptr);
-        info::CTransportShipKickFreeMember44_clbk CTransportShipKickFreeMember44_user(nullptr);
-        info::CTransportShipKickOldMember46_ptr CTransportShipKickOldMember46_next(nullptr);
-        info::CTransportShipKickOldMember46_clbk CTransportShipKickOldMember46_user(nullptr);
-        info::CTransportShipLoop48_ptr CTransportShipLoop48_next(nullptr);
-        info::CTransportShipLoop48_clbk CTransportShipLoop48_user(nullptr);
-        info::CTransportShipReEnterMember50_ptr CTransportShipReEnterMember50_next(nullptr);
-        info::CTransportShipReEnterMember50_clbk CTransportShipReEnterMember50_user(nullptr);
-        info::CTransportShipRenewOldMember52_ptr CTransportShipRenewOldMember52_next(nullptr);
-        info::CTransportShipRenewOldMember52_clbk CTransportShipRenewOldMember52_user(nullptr);
-        info::CTransportShipSendMsg_KickForSail54_ptr CTransportShipSendMsg_KickForSail54_next(nullptr);
-        info::CTransportShipSendMsg_KickForSail54_clbk CTransportShipSendMsg_KickForSail54_user(nullptr);
-        info::CTransportShipSendMsg_TicketCheck56_ptr CTransportShipSendMsg_TicketCheck56_next(nullptr);
-        info::CTransportShipSendMsg_TicketCheck56_clbk CTransportShipSendMsg_TicketCheck56_user(nullptr);
-        info::CTransportShipSendMsg_TransportShipState58_ptr CTransportShipSendMsg_TransportShipState58_next(nullptr);
-        info::CTransportShipSendMsg_TransportShipState58_clbk CTransportShipSendMsg_TransportShipState58_user(nullptr);
-        info::CTransportShipTicketting60_ptr CTransportShipTicketting60_next(nullptr);
-        info::CTransportShipTicketting60_clbk CTransportShipTicketting60_user(nullptr);
-        info::CTransportShipdtor_CTransportShip62_ptr CTransportShipdtor_CTransportShip62_next(nullptr);
-        info::CTransportShipdtor_CTransportShip62_clbk CTransportShipdtor_CTransportShip62_user(nullptr);
+        static info::CTransportShipAlterState2_ptr CTransportShipAlterState2_next(nullptr);
+        static info::CTransportShipAlterState2_clbk CTransportShipAlterState2_user(nullptr);
+        static info::CTransportShipApplyTicketReserver4_ptr CTransportShipApplyTicketReserver4_next(nullptr);
+        static info::CTransportShipApplyTicketReserver4_clbk CTransportShipApplyTicketReserver4_user(nullptr);
+        static info::CTransportShipctor_CTransportShip6_ptr CTransportShipctor_CTransportShip6_next(nullptr);
+        static info::CTransportShipctor_CTransportShip6_clbk CTransportShipctor_CTransportShip6_user(nullptr);
+        static info::CTransportShipCheckHurry8_ptr CTransportShipCheckHurry8_next(nullptr);
+        static info::CTransportShipCheckHurry8_clbk CTransportShipCheckHurry8_user(nullptr);
+        static info::CTransportShipCheckTicket10_ptr CTransportShipCheckTicket10_next(nullptr);
+        static info::CTransportShipCheckTicket10_clbk CTransportShipCheckTicket10_user(nullptr);
+        static info::CTransportShipCheckTicket_Kick12_ptr CTransportShipCheckTicket_Kick12_next(nullptr);
+        static info::CTransportShipCheckTicket_Kick12_clbk CTransportShipCheckTicket_Kick12_user(nullptr);
+        static info::CTransportShipCheckTicket_Pass14_ptr CTransportShipCheckTicket_Pass14_next(nullptr);
+        static info::CTransportShipCheckTicket_Pass14_clbk CTransportShipCheckTicket_Pass14_user(nullptr);
+        static info::CTransportShipEnterMember16_ptr CTransportShipEnterMember16_next(nullptr);
+        static info::CTransportShipEnterMember16_clbk CTransportShipEnterMember16_user(nullptr);
+        static info::CTransportShipExitMember18_ptr CTransportShipExitMember18_next(nullptr);
+        static info::CTransportShipExitMember18_clbk CTransportShipExitMember18_user(nullptr);
+        static info::CTransportShipGetCurRideShipThisTicket20_ptr CTransportShipGetCurRideShipThisTicket20_next(nullptr);
+        static info::CTransportShipGetCurRideShipThisTicket20_clbk CTransportShipGetCurRideShipThisTicket20_user(nullptr);
+        static info::CTransportShipGetEmptyNewMember22_ptr CTransportShipGetEmptyNewMember22_next(nullptr);
+        static info::CTransportShipGetEmptyNewMember22_clbk CTransportShipGetEmptyNewMember22_user(nullptr);
+        static info::CTransportShipGetLeftTicketIncludeReserNum24_ptr CTransportShipGetLeftTicketIncludeReserNum24_next(nullptr);
+        static info::CTransportShipGetLeftTicketIncludeReserNum24_clbk CTransportShipGetLeftTicketIncludeReserNum24_user(nullptr);
+        static info::CTransportShipGetMapCurDirect26_ptr CTransportShipGetMapCurDirect26_next(nullptr);
+        static info::CTransportShipGetMapCurDirect26_clbk CTransportShipGetMapCurDirect26_user(nullptr);
+        static info::CTransportShipGetOutPortalIndex28_ptr CTransportShipGetOutPortalIndex28_next(nullptr);
+        static info::CTransportShipGetOutPortalIndex28_clbk CTransportShipGetOutPortalIndex28_user(nullptr);
+        static info::CTransportShipGetRideLimLevel30_ptr CTransportShipGetRideLimLevel30_next(nullptr);
+        static info::CTransportShipGetRideLimLevel30_clbk CTransportShipGetRideLimLevel30_user(nullptr);
+        static info::CTransportShipGetRideUpLimLevel32_ptr CTransportShipGetRideUpLimLevel32_next(nullptr);
+        static info::CTransportShipGetRideUpLimLevel32_clbk CTransportShipGetRideUpLimLevel32_user(nullptr);
+        static info::CTransportShipGetStartPosInShip34_ptr CTransportShipGetStartPosInShip34_next(nullptr);
+        static info::CTransportShipGetStartPosInShip34_clbk CTransportShipGetStartPosInShip34_user(nullptr);
+        static info::CTransportShipInitShip36_ptr CTransportShipInitShip36_next(nullptr);
+        static info::CTransportShipInitShip36_clbk CTransportShipInitShip36_user(nullptr);
+        static info::CTransportShipInitTicketReserver38_ptr CTransportShipInitTicketReserver38_next(nullptr);
+        static info::CTransportShipInitTicketReserver38_clbk CTransportShipInitTicketReserver38_user(nullptr);
+        static info::CTransportShipIsMemberBeforeLogoff40_ptr CTransportShipIsMemberBeforeLogoff40_next(nullptr);
+        static info::CTransportShipIsMemberBeforeLogoff40_clbk CTransportShipIsMemberBeforeLogoff40_user(nullptr);
+        static info::CTransportShipIsOldMember42_ptr CTransportShipIsOldMember42_next(nullptr);
+        static info::CTransportShipIsOldMember42_clbk CTransportShipIsOldMember42_user(nullptr);
+        static info::CTransportShipKickFreeMember44_ptr CTransportShipKickFreeMember44_next(nullptr);
+        static info::CTransportShipKickFreeMember44_clbk CTransportShipKickFreeMember44_user(nullptr);
+        static info::CTransportShipKickOldMember46_ptr CTransportShipKickOldMember46_next(nullptr);
+        static info::CTransportShipKickOldMember46_clbk CTransportShipKickOldMember46_user(nullptr);
+        static info::CTransportShipLoop48_ptr CTransportShipLoop48_next(nullptr);
+        static info::CTransportShipLoop48_clbk CTransportShipLoop48_user(nullptr);
+        static info::CTransportShipReEnterMember50_ptr CTransportShipReEnterMember50_next(nullptr);
+        static info::CTransportShipReEnterMember50_clbk CTransportShipReEnterMember50_user(nullptr);
+        static info::CTransportShipRenewOldMember52_ptr CTransportShipRenewOldMember52_next(nullptr);
+        static info::CTransportShipRenewOldMember52_clbk CTransportShipRenewOldMember52_user(nullptr);
+        static info::CTransportShipSendMsg_KickForSail54_ptr CTransportShipSendMsg_KickForSail54_next(nullptr);
+        static info::CTransportShipSendMsg_KickForSail54_clbk CTransportShipSendMsg_KickForSail54_user(nullptr);
+        static info::CTransportShipSendMsg_TicketCheck56_ptr CTransportShipSendMsg_TicketCheck56_next(nullptr);
+        static info::CTransportShipSendMsg_TicketCheck56_clbk CTransportShipSendMsg_TicketCheck56_user(nullptr);
+        static info::CTransportShipSendMsg_TransportShipState58_ptr CTransportShipSendMsg_TransportShipState58_next(nullptr);
+        static info::CTransportShipSendMsg_TransportShipState58_clbk CTransportShipSendMsg_TransportShipState58_user(nullptr);
+        static info::CTransportShipTicketting60_ptr CTransportShipTicketting60_next(nullptr);
+        static info::CTransportShipTicketting60_clbk CTransportShipTicketting60_user(nullptr);
+        static info::CTransportShipdtor_CTransportShip62_ptr CTransportShipdtor_CTransportShip62_next(nullptr);
+        static info::CTransportShipdtor_CTransportShip62_clbk CTransportShipdtor_CTransportShip62_user(nullptr);
         
-        info::CTransportShip____mgr_memberctor___mgr_member2_ptr CTransportShip____mgr_memberctor___mgr_member2_next(nullptr);
-        info::CTransportShip____mgr_memberctor___mgr_member2_clbk CTransportShip____mgr_memberctor___mgr_member2_user(nullptr);
-        info::CTransportShip____mgr_memberinit4_ptr CTransportShip____mgr_memberinit4_next(nullptr);
-        info::CTransportShip____mgr_memberinit4_clbk CTransportShip____mgr_memberinit4_user(nullptr);
-        info::CTransportShip____mgr_memberis_fill6_ptr CTransportShip____mgr_memberis_fill6_next(nullptr);
-        info::CTransportShip____mgr_memberis_fill6_clbk CTransportShip____mgr_memberis_fill6_user(nullptr);
+        static info::CTransportShip____mgr_memberctor___mgr_member2_ptr CTransportShip____mgr_memberctor___mgr_member2_next(nullptr);
+        static info::CTransportShip____mgr_memberctor___mgr_member2_clbk CTransportShip____mgr_memberctor___mgr_member2_user(nullptr);
+        static info::CTransportShip____mgr_memberinit4_ptr CTransportShip____mgr_memberinit4_next(nullptr);
+        static info::CTransportShip____mgr_memberinit4_clbk CTransportShip____mgr_memberinit4_user(nullptr);
+        static info::CTransportShip____mgr_memberis_fill6_ptr CTransportShip____mgr_memberis_fill6_next(nullptr);
+        static info::CTransportShip____mgr_memberis_fill6_clbk CTransportShip____mgr_memberis_fill6_user(nullptr);
         
-        info::CTransportShip____mgr_ticketctor___mgr_ticket2_ptr CTransportShip____mgr_ticketctor___mgr_ticket2_next(nullptr);
-        info::CTransportShip____mgr_ticketctor___mgr_ticket2_clbk CTransportShip____mgr_ticketctor___mgr_ticket2_user(nullptr);
-        info::CTransportShip____mgr_ticketinit4_ptr CTransportShip____mgr_ticketinit4_next(nullptr);
-        info::CTransportShip____mgr_ticketinit4_clbk CTransportShip____mgr_ticketinit4_user(nullptr);
+        static info::CTransportShip____mgr_ticketctor___mgr_ticket2_ptr CTransportShip____mgr_ticketctor___mgr_ticket2_next(nullptr);
+        static info::CTransportShip____mgr_ticketctor___mgr_ticket2_clbk CTransportShip____mgr_ticketctor___mgr_ticket2_user(nullptr);
+        static info::CTransportShip____mgr_ticketinit4_ptr CTransportShip____mgr_ticketinit4_next(nullptr);
+        static info::CTransportShip____mgr_ticketinit4_clbk CTransportShip____mgr_ticketinit4_user(nullptr);
         
-        void CTransportShipAlterState2_wrapper(struct CTransportShip* _this, bool bAnchor, char byDirect, int nPassMin, int nNextSubEventTerm)
+        static void CTransportShipAlterState2_wrapper(struct CTransportShip* _this, bool bAnchor, char byDirect, int nPassMin, int nNextSubEventTerm)
         {
            CTransportShipAlterState2_user(_this, bAnchor, byDirect, nPassMin, nNextSubEventTerm, CTransportShipAlterState2_next);
         };
-        void CTransportShipApplyTicketReserver4_wrapper(struct CTransportShip* _this)
+        static void CTransportShipApplyTicketReserver4_wrapper(struct CTransportShip* _this)
         {
            CTransportShipApplyTicketReserver4_user(_this, CTransportShipApplyTicketReserver4_next);
         };
-        void CTransportShipctor_CTransportShip6_wrapper(struct CTransportShip* _this)
+        static void CTransportShipctor_CTransportShip6_wrapper(struct CTransportShip* _this)
         {
            CTransportShipctor_CTransportShip6_user(_this, CTransportShipctor_CTransportShip6_next);
         };
-        void CTransportShipCheckHurry8_wrapper(struct CTransportShip* _this)
+        static void CTransportShipCheckHurry8_wrapper(struct CTransportShip* _this)
         {
            CTransportShipCheckHurry8_user(_this, CTransportShipCheckHurry8_next);
         };
-        void CTransportShipCheckTicket10_wrapper(struct CTransportShip* _this)
+        static void CTransportShipCheckTicket10_wrapper(struct CTransportShip* _this)
         {
            CTransportShipCheckTicket10_user(_this, CTransportShipCheckTicket10_next);
         };
-        void CTransportShipCheckTicket_Kick12_wrapper(struct CTransportShip* _this, struct CPlayer* pPtr, int nPortalIndex)
+        static void CTransportShipCheckTicket_Kick12_wrapper(struct CTransportShip* _this, struct CPlayer* pPtr, int nPortalIndex)
         {
            CTransportShipCheckTicket_Kick12_user(_this, pPtr, nPortalIndex, CTransportShipCheckTicket_Kick12_next);
         };
-        void CTransportShipCheckTicket_Pass14_wrapper(struct CTransportShip* _this, struct CPlayer* pPtr, int nPortalIndex)
+        static void CTransportShipCheckTicket_Pass14_wrapper(struct CTransportShip* _this, struct CPlayer* pPtr, int nPortalIndex)
         {
            CTransportShipCheckTicket_Pass14_user(_this, pPtr, nPortalIndex, CTransportShipCheckTicket_Pass14_next);
         };
-        void CTransportShipEnterMember16_wrapper(struct CTransportShip* _this, struct CPlayer* pEnter)
+        static void CTransportShipEnterMember16_wrapper(struct CTransportShip* _this, struct CPlayer* pEnter)
         {
            CTransportShipEnterMember16_user(_this, pEnter, CTransportShipEnterMember16_next);
         };
-        void CTransportShipExitMember18_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter, bool bLogoff)
+        static void CTransportShipExitMember18_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter, bool bLogoff)
         {
            CTransportShipExitMember18_user(_this, pExiter, bLogoff, CTransportShipExitMember18_next);
         };
-        bool CTransportShipGetCurRideShipThisTicket20_wrapper(struct CTransportShip* _this, struct _TicketItem_fld* pTicketFld)
+        static bool CTransportShipGetCurRideShipThisTicket20_wrapper(struct CTransportShip* _this, struct _TicketItem_fld* pTicketFld)
         {
            return CTransportShipGetCurRideShipThisTicket20_user(_this, pTicketFld, CTransportShipGetCurRideShipThisTicket20_next);
         };
-        struct CTransportShip::__mgr_member* CTransportShipGetEmptyNewMember22_wrapper(struct CTransportShip* _this)
+        static struct CTransportShip::__mgr_member* CTransportShipGetEmptyNewMember22_wrapper(struct CTransportShip* _this)
         {
            return CTransportShipGetEmptyNewMember22_user(_this, CTransportShipGetEmptyNewMember22_next);
         };
-        int CTransportShipGetLeftTicketIncludeReserNum24_wrapper(struct CTransportShip* _this, char* pszTarMapCode, int nAdd)
+        static int CTransportShipGetLeftTicketIncludeReserNum24_wrapper(struct CTransportShip* _this, char* pszTarMapCode, int nAdd)
         {
            return CTransportShipGetLeftTicketIncludeReserNum24_user(_this, pszTarMapCode, nAdd, CTransportShipGetLeftTicketIncludeReserNum24_next);
         };
-        struct CMapData* CTransportShipGetMapCurDirect26_wrapper(struct CTransportShip* _this)
+        static struct CMapData* CTransportShipGetMapCurDirect26_wrapper(struct CTransportShip* _this)
         {
            return CTransportShipGetMapCurDirect26_user(_this, CTransportShipGetMapCurDirect26_next);
         };
-        int CTransportShipGetOutPortalIndex28_wrapper(struct CTransportShip* _this, int nRaceCode, char byExitDirect)
+        static int CTransportShipGetOutPortalIndex28_wrapper(struct CTransportShip* _this, int nRaceCode, char byExitDirect)
         {
            return CTransportShipGetOutPortalIndex28_user(_this, nRaceCode, byExitDirect, CTransportShipGetOutPortalIndex28_next);
         };
-        int CTransportShipGetRideLimLevel30_wrapper(struct CTransportShip* _this)
+        static int CTransportShipGetRideLimLevel30_wrapper(struct CTransportShip* _this)
         {
            return CTransportShipGetRideLimLevel30_user(_this, CTransportShipGetRideLimLevel30_next);
         };
-        int CTransportShipGetRideUpLimLevel32_wrapper(struct CTransportShip* _this)
+        static int CTransportShipGetRideUpLimLevel32_wrapper(struct CTransportShip* _this)
         {
            return CTransportShipGetRideUpLimLevel32_user(_this, CTransportShipGetRideUpLimLevel32_next);
         };
-        void CTransportShipGetStartPosInShip34_wrapper(struct CTransportShip* _this, float* pfPos)
+        static void CTransportShipGetStartPosInShip34_wrapper(struct CTransportShip* _this, float* pfPos)
         {
            CTransportShipGetStartPosInShip34_user(_this, pfPos, CTransportShipGetStartPosInShip34_next);
         };
-        bool CTransportShipInitShip36_wrapper(struct CTransportShip* _this, struct CMapData* pLinkShipMap, struct CMapData* pLinkMainbaseMap, struct CMapData* pLinkPlatformMap, char byRaceCode_Layer)
+        static bool CTransportShipInitShip36_wrapper(struct CTransportShip* _this, struct CMapData* pLinkShipMap, struct CMapData* pLinkMainbaseMap, struct CMapData* pLinkPlatformMap, char byRaceCode_Layer)
         {
            return CTransportShipInitShip36_user(_this, pLinkShipMap, pLinkMainbaseMap, pLinkPlatformMap, byRaceCode_Layer, CTransportShipInitShip36_next);
         };
-        void CTransportShipInitTicketReserver38_wrapper(struct CTransportShip* _this)
+        static void CTransportShipInitTicketReserver38_wrapper(struct CTransportShip* _this)
         {
            CTransportShipInitTicketReserver38_user(_this, CTransportShipInitTicketReserver38_next);
         };
-        bool CTransportShipIsMemberBeforeLogoff40_wrapper(struct CTransportShip* _this, unsigned int dwPlayerSerial)
+        static bool CTransportShipIsMemberBeforeLogoff40_wrapper(struct CTransportShip* _this, unsigned int dwPlayerSerial)
         {
            return CTransportShipIsMemberBeforeLogoff40_user(_this, dwPlayerSerial, CTransportShipIsMemberBeforeLogoff40_next);
         };
-        bool CTransportShipIsOldMember42_wrapper(struct CTransportShip* _this, struct CPlayer* pMember)
+        static bool CTransportShipIsOldMember42_wrapper(struct CTransportShip* _this, struct CPlayer* pMember)
         {
            return CTransportShipIsOldMember42_user(_this, pMember, CTransportShipIsOldMember42_next);
         };
-        void CTransportShipKickFreeMember44_wrapper(struct CTransportShip* _this)
+        static void CTransportShipKickFreeMember44_wrapper(struct CTransportShip* _this)
         {
            CTransportShipKickFreeMember44_user(_this, CTransportShipKickFreeMember44_next);
         };
-        void CTransportShipKickOldMember46_wrapper(struct CTransportShip* _this, char byKickDirectCode)
+        static void CTransportShipKickOldMember46_wrapper(struct CTransportShip* _this, char byKickDirectCode)
         {
            CTransportShipKickOldMember46_user(_this, byKickDirectCode, CTransportShipKickOldMember46_next);
         };
-        void CTransportShipLoop48_wrapper(struct CTransportShip* _this)
+        static void CTransportShipLoop48_wrapper(struct CTransportShip* _this)
         {
            CTransportShipLoop48_user(_this, CTransportShipLoop48_next);
         };
-        void CTransportShipReEnterMember50_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter)
+        static void CTransportShipReEnterMember50_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter)
         {
            CTransportShipReEnterMember50_user(_this, pExiter, CTransportShipReEnterMember50_next);
         };
-        bool CTransportShipRenewOldMember52_wrapper(struct CTransportShip* _this, struct CPlayer* pMember)
+        static bool CTransportShipRenewOldMember52_wrapper(struct CTransportShip* _this, struct CPlayer* pMember)
         {
            return CTransportShipRenewOldMember52_user(_this, pMember, CTransportShipRenewOldMember52_next);
         };
-        void CTransportShipSendMsg_KickForSail54_wrapper(struct CTransportShip* _this, int n)
+        static void CTransportShipSendMsg_KickForSail54_wrapper(struct CTransportShip* _this, int n)
         {
            CTransportShipSendMsg_KickForSail54_user(_this, n, CTransportShipSendMsg_KickForSail54_next);
         };
-        void CTransportShipSendMsg_TicketCheck56_wrapper(struct CTransportShip* _this, int n, bool bPass, uint16_t wTicketSerial)
+        static void CTransportShipSendMsg_TicketCheck56_wrapper(struct CTransportShip* _this, int n, bool bPass, uint16_t wTicketSerial)
         {
            CTransportShipSendMsg_TicketCheck56_user(_this, n, bPass, wTicketSerial, CTransportShipSendMsg_TicketCheck56_next);
         };
-        void CTransportShipSendMsg_TransportShipState58_wrapper(struct CTransportShip* _this, int n)
+        static void CTransportShipSendMsg_TransportShipState58_wrapper(struct CTransportShip* _this, int n)
         {
            CTransportShipSendMsg_TransportShipState58_user(_this, n, CTransportShipSendMsg_TransportShipState58_next);
         };
-        bool CTransportShipTicketting60_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter)
+        static bool CTransportShipTicketting60_wrapper(struct CTransportShip* _this, struct CPlayer* pExiter)
         {
            return CTransportShipTicketting60_user(_this, pExiter, CTransportShipTicketting60_next);
         };
-        void CTransportShipdtor_CTransportShip62_wrapper(struct CTransportShip* _this)
+        static void CTransportShipdtor_CTransportShip62_wrapper(struct CTransportShip* _this)
         {
            CTransportShipdtor_CTransportShip62_user(_this, CTransportShipdtor_CTransportShip62_next);
         };
         
-        void CTransportShip____mgr_memberctor___mgr_member2_wrapper(struct CTransportShip::__mgr_member* _this)
+        static void CTransportShip____mgr_memberctor___mgr_member2_wrapper(struct CTransportShip::__mgr_member* _this)
         {
            CTransportShip____mgr_memberctor___mgr_member2_user(_this, CTransportShip____mgr_memberctor___mgr_member2_next);
         };
-        void CTransportShip____mgr_memberinit4_wrapper(struct CTransportShip::__mgr_member* _this)
+        static void CTransportShip____mgr_memberinit4_wrapper(struct CTransportShip::__mgr_member* _this)
         {
            CTransportShip____mgr_memberinit4_user(_this, CTransportShip____mgr_memberinit4_next);
         };
-        bool CTransportShip____mgr_memberis_fill6_wrapper(struct CTransportShip::__mgr_member* _this)
+        static bool CTransportShip____mgr_memberis_fill6_wrapper(struct CTransportShip::__mgr_member* _this)
         {
            return CTransportShip____mgr_memberis_fill6_user(_this, CTransportShip____mgr_memberis_fill6_next);
         };
         
-        void CTransportShip____mgr_ticketctor___mgr_ticket2_wrapper(struct CTransportShip::__mgr_ticket* _this)
+        static void CTransportShip____mgr_ticketctor___mgr_ticket2_wrapper(struct CTransportShip::__mgr_ticket* _this)
         {
            CTransportShip____mgr_ticketctor___mgr_ticket2_user(_this, CTransportShip____mgr_ticketctor___mgr_ticket2_next);
         };
-        void CTransportShip____mgr_ticketinit4_wrapper(struct CTransportShip::__mgr_ticket* _this)
+        static void CTransportShip____mgr_ticketinit4_wrapper(struct CTransportShip::__mgr_ticket* _this)
         {
            CTransportShip____mgr_ticketinit4_user(_this, CTransportShip____mgr_ticketinit4_next);
         };
         
-        hook_record CTransportShip_functions[] = {
+        static hook_record CTransportShip_functions[] = {
         {   (LPVOID)0x140263c00L,
             (LPVOID *)&CTransportShipAlterState2_user,
             (LPVOID *)&CTransportShipAlterState2_next,
@@ -416,5 +416,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

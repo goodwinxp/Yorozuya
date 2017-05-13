@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCashDbWorkerIDctor_CCashDbWorkerID2_ptr CCashDbWorkerIDctor_CCashDbWorkerID2_next(nullptr);
-        info::CCashDbWorkerIDctor_CCashDbWorkerID2_clbk CCashDbWorkerIDctor_CCashDbWorkerID2_user(nullptr);
-        info::CCashDbWorkerIDGetUseCashQueryStr4_ptr CCashDbWorkerIDGetUseCashQueryStr4_next(nullptr);
-        info::CCashDbWorkerIDGetUseCashQueryStr4_clbk CCashDbWorkerIDGetUseCashQueryStr4_user(nullptr);
-        info::CCashDbWorkerIDdtor_CCashDbWorkerID9_ptr CCashDbWorkerIDdtor_CCashDbWorkerID9_next(nullptr);
-        info::CCashDbWorkerIDdtor_CCashDbWorkerID9_clbk CCashDbWorkerIDdtor_CCashDbWorkerID9_user(nullptr);
+        static info::CCashDbWorkerIDctor_CCashDbWorkerID2_ptr CCashDbWorkerIDctor_CCashDbWorkerID2_next(nullptr);
+        static info::CCashDbWorkerIDctor_CCashDbWorkerID2_clbk CCashDbWorkerIDctor_CCashDbWorkerID2_user(nullptr);
+        static info::CCashDbWorkerIDGetUseCashQueryStr4_ptr CCashDbWorkerIDGetUseCashQueryStr4_next(nullptr);
+        static info::CCashDbWorkerIDGetUseCashQueryStr4_clbk CCashDbWorkerIDGetUseCashQueryStr4_user(nullptr);
+        static info::CCashDbWorkerIDdtor_CCashDbWorkerID9_ptr CCashDbWorkerIDdtor_CCashDbWorkerID9_next(nullptr);
+        static info::CCashDbWorkerIDdtor_CCashDbWorkerID9_clbk CCashDbWorkerIDdtor_CCashDbWorkerID9_user(nullptr);
         
-        void CCashDbWorkerIDctor_CCashDbWorkerID2_wrapper(struct CCashDbWorkerID* _this)
+        static void CCashDbWorkerIDctor_CCashDbWorkerID2_wrapper(struct CCashDbWorkerID* _this)
         {
            CCashDbWorkerIDctor_CCashDbWorkerID2_user(_this, CCashDbWorkerIDctor_CCashDbWorkerID2_next);
         };
-        void CCashDbWorkerIDGetUseCashQueryStr4_wrapper(struct CCashDbWorkerID* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
+        static void CCashDbWorkerIDGetUseCashQueryStr4_wrapper(struct CCashDbWorkerID* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
         {
            CCashDbWorkerIDGetUseCashQueryStr4_user(_this, rParam, nIdx, wszQuery, tBufferSize, CCashDbWorkerIDGetUseCashQueryStr4_next);
         };
-        void CCashDbWorkerIDdtor_CCashDbWorkerID9_wrapper(struct CCashDbWorkerID* _this)
+        static void CCashDbWorkerIDdtor_CCashDbWorkerID9_wrapper(struct CCashDbWorkerID* _this)
         {
            CCashDbWorkerIDdtor_CCashDbWorkerID9_user(_this, CCashDbWorkerIDdtor_CCashDbWorkerID9_next);
         };
         
-        hook_record CCashDbWorkerID_functions[] = {
+        static hook_record CCashDbWorkerID_functions[] = {
         {   (LPVOID)0x14022cca0L,
             (LPVOID *)&CCashDbWorkerIDctor_CCashDbWorkerID2_user,
             (LPVOID *)&CCashDbWorkerIDctor_CCashDbWorkerID2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

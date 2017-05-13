@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AINetFtpctor_AINetFtp2_ptr AINetFtpctor_AINetFtp2_next(nullptr);
-        info::AINetFtpctor_AINetFtp2_clbk AINetFtpctor_AINetFtp2_user(nullptr);
-        info::AINetFtpClose4_ptr AINetFtpClose4_next(nullptr);
-        info::AINetFtpClose4_clbk AINetFtpClose4_user(nullptr);
-        info::AINetFtpCreateDirectoryA6_ptr AINetFtpCreateDirectoryA6_next(nullptr);
-        info::AINetFtpCreateDirectoryA6_clbk AINetFtpCreateDirectoryA6_user(nullptr);
-        info::AINetFtpGetCurrentDirectoryA8_ptr AINetFtpGetCurrentDirectoryA8_next(nullptr);
-        info::AINetFtpGetCurrentDirectoryA8_clbk AINetFtpGetCurrentDirectoryA8_user(nullptr);
-        info::AINetFtpGetFile10_ptr AINetFtpGetFile10_next(nullptr);
-        info::AINetFtpGetFile10_clbk AINetFtpGetFile10_user(nullptr);
-        info::AINetFtpOpen12_ptr AINetFtpOpen12_next(nullptr);
-        info::AINetFtpOpen12_clbk AINetFtpOpen12_user(nullptr);
-        info::AINetFtpOpenFile14_ptr AINetFtpOpenFile14_next(nullptr);
-        info::AINetFtpOpenFile14_clbk AINetFtpOpenFile14_user(nullptr);
-        info::AINetFtpPutFile16_ptr AINetFtpPutFile16_next(nullptr);
-        info::AINetFtpPutFile16_clbk AINetFtpPutFile16_user(nullptr);
-        info::AINetFtpRemove18_ptr AINetFtpRemove18_next(nullptr);
-        info::AINetFtpRemove18_clbk AINetFtpRemove18_user(nullptr);
-        info::AINetFtpRemoveDirectoryA20_ptr AINetFtpRemoveDirectoryA20_next(nullptr);
-        info::AINetFtpRemoveDirectoryA20_clbk AINetFtpRemoveDirectoryA20_user(nullptr);
-        info::AINetFtpRename22_ptr AINetFtpRename22_next(nullptr);
-        info::AINetFtpRename22_clbk AINetFtpRename22_user(nullptr);
-        info::AINetFtpSetCurrentDirectoryA24_ptr AINetFtpSetCurrentDirectoryA24_next(nullptr);
-        info::AINetFtpSetCurrentDirectoryA24_clbk AINetFtpSetCurrentDirectoryA24_user(nullptr);
-        info::AINetFtpdtor_AINetFtp29_ptr AINetFtpdtor_AINetFtp29_next(nullptr);
-        info::AINetFtpdtor_AINetFtp29_clbk AINetFtpdtor_AINetFtp29_user(nullptr);
+        static info::AINetFtpctor_AINetFtp2_ptr AINetFtpctor_AINetFtp2_next(nullptr);
+        static info::AINetFtpctor_AINetFtp2_clbk AINetFtpctor_AINetFtp2_user(nullptr);
+        static info::AINetFtpClose4_ptr AINetFtpClose4_next(nullptr);
+        static info::AINetFtpClose4_clbk AINetFtpClose4_user(nullptr);
+        static info::AINetFtpCreateDirectoryA6_ptr AINetFtpCreateDirectoryA6_next(nullptr);
+        static info::AINetFtpCreateDirectoryA6_clbk AINetFtpCreateDirectoryA6_user(nullptr);
+        static info::AINetFtpGetCurrentDirectoryA8_ptr AINetFtpGetCurrentDirectoryA8_next(nullptr);
+        static info::AINetFtpGetCurrentDirectoryA8_clbk AINetFtpGetCurrentDirectoryA8_user(nullptr);
+        static info::AINetFtpGetFile10_ptr AINetFtpGetFile10_next(nullptr);
+        static info::AINetFtpGetFile10_clbk AINetFtpGetFile10_user(nullptr);
+        static info::AINetFtpOpen12_ptr AINetFtpOpen12_next(nullptr);
+        static info::AINetFtpOpen12_clbk AINetFtpOpen12_user(nullptr);
+        static info::AINetFtpOpenFile14_ptr AINetFtpOpenFile14_next(nullptr);
+        static info::AINetFtpOpenFile14_clbk AINetFtpOpenFile14_user(nullptr);
+        static info::AINetFtpPutFile16_ptr AINetFtpPutFile16_next(nullptr);
+        static info::AINetFtpPutFile16_clbk AINetFtpPutFile16_user(nullptr);
+        static info::AINetFtpRemove18_ptr AINetFtpRemove18_next(nullptr);
+        static info::AINetFtpRemove18_clbk AINetFtpRemove18_user(nullptr);
+        static info::AINetFtpRemoveDirectoryA20_ptr AINetFtpRemoveDirectoryA20_next(nullptr);
+        static info::AINetFtpRemoveDirectoryA20_clbk AINetFtpRemoveDirectoryA20_user(nullptr);
+        static info::AINetFtpRename22_ptr AINetFtpRename22_next(nullptr);
+        static info::AINetFtpRename22_clbk AINetFtpRename22_user(nullptr);
+        static info::AINetFtpSetCurrentDirectoryA24_ptr AINetFtpSetCurrentDirectoryA24_next(nullptr);
+        static info::AINetFtpSetCurrentDirectoryA24_clbk AINetFtpSetCurrentDirectoryA24_user(nullptr);
+        static info::AINetFtpdtor_AINetFtp29_ptr AINetFtpdtor_AINetFtp29_next(nullptr);
+        static info::AINetFtpdtor_AINetFtp29_clbk AINetFtpdtor_AINetFtp29_user(nullptr);
         
-        void AINetFtpctor_AINetFtp2_wrapper(struct AINetFtp* _this)
+        static void AINetFtpctor_AINetFtp2_wrapper(struct AINetFtp* _this)
         {
            AINetFtpctor_AINetFtp2_user(_this, AINetFtpctor_AINetFtp2_next);
         };
-        void AINetFtpClose4_wrapper(struct AINetFtp* _this)
+        static void AINetFtpClose4_wrapper(struct AINetFtp* _this)
         {
            AINetFtpClose4_user(_this, AINetFtpClose4_next);
         };
-        int AINetFtpCreateDirectoryA6_wrapper(struct AINetFtp* _this, char* pstrDirName)
+        static int AINetFtpCreateDirectoryA6_wrapper(struct AINetFtp* _this, char* pstrDirName)
         {
            return AINetFtpCreateDirectoryA6_user(_this, pstrDirName, AINetFtpCreateDirectoryA6_next);
         };
-        int AINetFtpGetCurrentDirectoryA8_wrapper(struct AINetFtp* _this, char* pstrDirName, unsigned int* lpdwLen)
+        static int AINetFtpGetCurrentDirectoryA8_wrapper(struct AINetFtp* _this, char* pstrDirName, unsigned int* lpdwLen)
         {
            return AINetFtpGetCurrentDirectoryA8_user(_this, pstrDirName, lpdwLen, AINetFtpGetCurrentDirectoryA8_next);
         };
-        int AINetFtpGetFile10_wrapper(struct AINetFtp* _this, char* pstrRemoteFile, char* pstrLocalFile, int bFailIfExists, unsigned int dwAttributes, unsigned int dwFlags, unsigned int dwContext)
+        static int AINetFtpGetFile10_wrapper(struct AINetFtp* _this, char* pstrRemoteFile, char* pstrLocalFile, int bFailIfExists, unsigned int dwAttributes, unsigned int dwFlags, unsigned int dwContext)
         {
            return AINetFtpGetFile10_user(_this, pstrRemoteFile, pstrLocalFile, bFailIfExists, dwAttributes, dwFlags, dwContext, AINetFtpGetFile10_next);
         };
-        int AINetFtpOpen12_wrapper(struct AINetFtp* _this, char* pstrServer, char* pstrUserName, char* pstrPassword, uint16_t nPort, int bPassive, unsigned int dwContext)
+        static int AINetFtpOpen12_wrapper(struct AINetFtp* _this, char* pstrServer, char* pstrUserName, char* pstrPassword, uint16_t nPort, int bPassive, unsigned int dwContext)
         {
            return AINetFtpOpen12_user(_this, pstrServer, pstrUserName, pstrPassword, nPort, bPassive, dwContext, AINetFtpOpen12_next);
         };
-        struct AINetFile* AINetFtpOpenFile14_wrapper(struct AINetFtp* _this, char* pstrFileName, unsigned int dwAccess, unsigned int dwFlags, unsigned int dwContext)
+        static struct AINetFile* AINetFtpOpenFile14_wrapper(struct AINetFtp* _this, char* pstrFileName, unsigned int dwAccess, unsigned int dwFlags, unsigned int dwContext)
         {
            return AINetFtpOpenFile14_user(_this, pstrFileName, dwAccess, dwFlags, dwContext, AINetFtpOpenFile14_next);
         };
-        int AINetFtpPutFile16_wrapper(struct AINetFtp* _this, char* pstrLocalFile, char* pstrRemoteFile, unsigned int dwFlags, unsigned int dwContext)
+        static int AINetFtpPutFile16_wrapper(struct AINetFtp* _this, char* pstrLocalFile, char* pstrRemoteFile, unsigned int dwFlags, unsigned int dwContext)
         {
            return AINetFtpPutFile16_user(_this, pstrLocalFile, pstrRemoteFile, dwFlags, dwContext, AINetFtpPutFile16_next);
         };
-        int AINetFtpRemove18_wrapper(struct AINetFtp* _this, char* pstrFileName)
+        static int AINetFtpRemove18_wrapper(struct AINetFtp* _this, char* pstrFileName)
         {
            return AINetFtpRemove18_user(_this, pstrFileName, AINetFtpRemove18_next);
         };
-        int AINetFtpRemoveDirectoryA20_wrapper(struct AINetFtp* _this, char* pstrDirName)
+        static int AINetFtpRemoveDirectoryA20_wrapper(struct AINetFtp* _this, char* pstrDirName)
         {
            return AINetFtpRemoveDirectoryA20_user(_this, pstrDirName, AINetFtpRemoveDirectoryA20_next);
         };
-        int AINetFtpRename22_wrapper(struct AINetFtp* _this, char* pstrExisting, char* pstrNew)
+        static int AINetFtpRename22_wrapper(struct AINetFtp* _this, char* pstrExisting, char* pstrNew)
         {
            return AINetFtpRename22_user(_this, pstrExisting, pstrNew, AINetFtpRename22_next);
         };
-        int AINetFtpSetCurrentDirectoryA24_wrapper(struct AINetFtp* _this, char* pstrDirName)
+        static int AINetFtpSetCurrentDirectoryA24_wrapper(struct AINetFtp* _this, char* pstrDirName)
         {
            return AINetFtpSetCurrentDirectoryA24_user(_this, pstrDirName, AINetFtpSetCurrentDirectoryA24_next);
         };
-        void AINetFtpdtor_AINetFtp29_wrapper(struct AINetFtp* _this)
+        static void AINetFtpdtor_AINetFtp29_wrapper(struct AINetFtp* _this)
         {
            AINetFtpdtor_AINetFtp29_user(_this, AINetFtpdtor_AINetFtp29_next);
         };
         
-        hook_record AINetFtp_functions[] = {
+        static hook_record AINetFtp_functions[] = {
         {   (LPVOID)0x140432660L,
             (LPVOID *)&AINetFtpctor_AINetFtp2_user,
             (LPVOID *)&AINetFtpctor_AINetFtp2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

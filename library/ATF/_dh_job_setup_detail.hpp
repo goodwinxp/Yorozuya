@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_dh_job_setupctor__dh_job_setup2_ptr _dh_job_setupctor__dh_job_setup2_next(nullptr);
-        info::_dh_job_setupctor__dh_job_setup2_clbk _dh_job_setupctor__dh_job_setup2_user(nullptr);
-        info::_dh_job_setupdtor__dh_job_setup7_ptr _dh_job_setupdtor__dh_job_setup7_next(nullptr);
-        info::_dh_job_setupdtor__dh_job_setup7_clbk _dh_job_setupdtor__dh_job_setup7_user(nullptr);
+        static info::_dh_job_setupctor__dh_job_setup2_ptr _dh_job_setupctor__dh_job_setup2_next(nullptr);
+        static info::_dh_job_setupctor__dh_job_setup2_clbk _dh_job_setupctor__dh_job_setup2_user(nullptr);
+        static info::_dh_job_setupdtor__dh_job_setup7_ptr _dh_job_setupdtor__dh_job_setup7_next(nullptr);
+        static info::_dh_job_setupdtor__dh_job_setup7_clbk _dh_job_setupdtor__dh_job_setup7_user(nullptr);
         
-        void _dh_job_setupctor__dh_job_setup2_wrapper(struct _dh_job_setup* _this)
+        static void _dh_job_setupctor__dh_job_setup2_wrapper(struct _dh_job_setup* _this)
         {
            _dh_job_setupctor__dh_job_setup2_user(_this, _dh_job_setupctor__dh_job_setup2_next);
         };
-        void _dh_job_setupdtor__dh_job_setup7_wrapper(struct _dh_job_setup* _this)
+        static void _dh_job_setupdtor__dh_job_setup7_wrapper(struct _dh_job_setup* _this)
         {
            _dh_job_setupdtor__dh_job_setup7_user(_this, _dh_job_setupdtor__dh_job_setup7_next);
         };
         
-        hook_record _dh_job_setup_functions[] = {
+        static hook_record _dh_job_setup_functions[] = {
         {   (LPVOID)0x1402729f0L,
             (LPVOID *)&_dh_job_setupctor__dh_job_setup2_user,
             (LPVOID *)&_dh_job_setupctor__dh_job_setup2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

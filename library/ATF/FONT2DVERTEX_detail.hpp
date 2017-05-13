@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::FONT2DVERTEXctor_FONT2DVERTEX1_ptr FONT2DVERTEXctor_FONT2DVERTEX1_next(nullptr);
-        info::FONT2DVERTEXctor_FONT2DVERTEX1_clbk FONT2DVERTEXctor_FONT2DVERTEX1_user(nullptr);
+        static info::FONT2DVERTEXctor_FONT2DVERTEX1_ptr FONT2DVERTEXctor_FONT2DVERTEX1_next(nullptr);
+        static info::FONT2DVERTEXctor_FONT2DVERTEX1_clbk FONT2DVERTEXctor_FONT2DVERTEX1_user(nullptr);
         
-        int64_t FONT2DVERTEXctor_FONT2DVERTEX1_wrapper(struct FONT2DVERTEX* _this)
+        static int64_t FONT2DVERTEXctor_FONT2DVERTEX1_wrapper(struct FONT2DVERTEX* _this)
         {
            return FONT2DVERTEXctor_FONT2DVERTEX1_user(_this, FONT2DVERTEXctor_FONT2DVERTEX1_next);
         };
         
-        hook_record FONT2DVERTEX_functions[] = {
+        static hook_record FONT2DVERTEX_functions[] = {
         {   (LPVOID)0x140526bb0L,
             (LPVOID *)&FONT2DVERTEXctor_FONT2DVERTEX1_user,
             (LPVOID *)&FONT2DVERTEXctor_FONT2DVERTEX1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

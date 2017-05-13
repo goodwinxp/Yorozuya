@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBattleTournamentInfoctor_CBattleTournamentInfo2_ptr CBattleTournamentInfoctor_CBattleTournamentInfo2_next(nullptr);
-        info::CBattleTournamentInfoctor_CBattleTournamentInfo2_clbk CBattleTournamentInfoctor_CBattleTournamentInfo2_user(nullptr);
-        info::CBattleTournamentInfoGetWinnerGrade4_ptr CBattleTournamentInfoGetWinnerGrade4_next(nullptr);
-        info::CBattleTournamentInfoGetWinnerGrade4_clbk CBattleTournamentInfoGetWinnerGrade4_user(nullptr);
-        info::CBattleTournamentInfoInit6_ptr CBattleTournamentInfoInit6_next(nullptr);
-        info::CBattleTournamentInfoInit6_clbk CBattleTournamentInfoInit6_user(nullptr);
-        info::CBattleTournamentInfoSetLoad8_ptr CBattleTournamentInfoSetLoad8_next(nullptr);
-        info::CBattleTournamentInfoSetLoad8_clbk CBattleTournamentInfoSetLoad8_user(nullptr);
-        info::CBattleTournamentInfoSetWinnerInfo10_ptr CBattleTournamentInfoSetWinnerInfo10_next(nullptr);
-        info::CBattleTournamentInfoSetWinnerInfo10_clbk CBattleTournamentInfoSetWinnerInfo10_user(nullptr);
-        info::CBattleTournamentInfodtor_CBattleTournamentInfo12_ptr CBattleTournamentInfodtor_CBattleTournamentInfo12_next(nullptr);
-        info::CBattleTournamentInfodtor_CBattleTournamentInfo12_clbk CBattleTournamentInfodtor_CBattleTournamentInfo12_user(nullptr);
+        static info::CBattleTournamentInfoctor_CBattleTournamentInfo2_ptr CBattleTournamentInfoctor_CBattleTournamentInfo2_next(nullptr);
+        static info::CBattleTournamentInfoctor_CBattleTournamentInfo2_clbk CBattleTournamentInfoctor_CBattleTournamentInfo2_user(nullptr);
+        static info::CBattleTournamentInfoGetWinnerGrade4_ptr CBattleTournamentInfoGetWinnerGrade4_next(nullptr);
+        static info::CBattleTournamentInfoGetWinnerGrade4_clbk CBattleTournamentInfoGetWinnerGrade4_user(nullptr);
+        static info::CBattleTournamentInfoInit6_ptr CBattleTournamentInfoInit6_next(nullptr);
+        static info::CBattleTournamentInfoInit6_clbk CBattleTournamentInfoInit6_user(nullptr);
+        static info::CBattleTournamentInfoSetLoad8_ptr CBattleTournamentInfoSetLoad8_next(nullptr);
+        static info::CBattleTournamentInfoSetLoad8_clbk CBattleTournamentInfoSetLoad8_user(nullptr);
+        static info::CBattleTournamentInfoSetWinnerInfo10_ptr CBattleTournamentInfoSetWinnerInfo10_next(nullptr);
+        static info::CBattleTournamentInfoSetWinnerInfo10_clbk CBattleTournamentInfoSetWinnerInfo10_user(nullptr);
+        static info::CBattleTournamentInfodtor_CBattleTournamentInfo12_ptr CBattleTournamentInfodtor_CBattleTournamentInfo12_next(nullptr);
+        static info::CBattleTournamentInfodtor_CBattleTournamentInfo12_clbk CBattleTournamentInfodtor_CBattleTournamentInfo12_user(nullptr);
         
-        void CBattleTournamentInfoctor_CBattleTournamentInfo2_wrapper(struct CBattleTournamentInfo* _this)
+        static void CBattleTournamentInfoctor_CBattleTournamentInfo2_wrapper(struct CBattleTournamentInfo* _this)
         {
            CBattleTournamentInfoctor_CBattleTournamentInfo2_user(_this, CBattleTournamentInfoctor_CBattleTournamentInfo2_next);
         };
-        char CBattleTournamentInfoGetWinnerGrade4_wrapper(struct CBattleTournamentInfo* _this, unsigned int dwSerial, char* pwszCharName)
+        static char CBattleTournamentInfoGetWinnerGrade4_wrapper(struct CBattleTournamentInfo* _this, unsigned int dwSerial, char* pwszCharName)
         {
            return CBattleTournamentInfoGetWinnerGrade4_user(_this, dwSerial, pwszCharName, CBattleTournamentInfoGetWinnerGrade4_next);
         };
-        void CBattleTournamentInfoInit6_wrapper(struct CBattleTournamentInfo* _this)
+        static void CBattleTournamentInfoInit6_wrapper(struct CBattleTournamentInfo* _this)
         {
            CBattleTournamentInfoInit6_user(_this, CBattleTournamentInfoInit6_next);
         };
-        void CBattleTournamentInfoSetLoad8_wrapper(struct CBattleTournamentInfo* _this, bool bLoad)
+        static void CBattleTournamentInfoSetLoad8_wrapper(struct CBattleTournamentInfo* _this, bool bLoad)
         {
            CBattleTournamentInfoSetLoad8_user(_this, bLoad, CBattleTournamentInfoSetLoad8_next);
         };
-        bool CBattleTournamentInfoSetWinnerInfo10_wrapper(struct CBattleTournamentInfo* _this, unsigned int dwSerial, char* pwszCharName, char byGrade)
+        static bool CBattleTournamentInfoSetWinnerInfo10_wrapper(struct CBattleTournamentInfo* _this, unsigned int dwSerial, char* pwszCharName, char byGrade)
         {
            return CBattleTournamentInfoSetWinnerInfo10_user(_this, dwSerial, pwszCharName, byGrade, CBattleTournamentInfoSetWinnerInfo10_next);
         };
-        void CBattleTournamentInfodtor_CBattleTournamentInfo12_wrapper(struct CBattleTournamentInfo* _this)
+        static void CBattleTournamentInfodtor_CBattleTournamentInfo12_wrapper(struct CBattleTournamentInfo* _this)
         {
            CBattleTournamentInfodtor_CBattleTournamentInfo12_user(_this, CBattleTournamentInfodtor_CBattleTournamentInfo12_next);
         };
         
-        hook_record CBattleTournamentInfo_functions[] = {
+        static hook_record CBattleTournamentInfo_functions[] = {
         {   (LPVOID)0x1403fea40L,
             (LPVOID *)&CBattleTournamentInfoctor_CBattleTournamentInfo2_user,
             (LPVOID *)&CBattleTournamentInfoctor_CBattleTournamentInfo2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

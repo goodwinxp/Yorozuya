@@ -8,31 +8,31 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_ptr _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_next(nullptr);
-        info::_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_clbk _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_user(nullptr);
+        static info::_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_ptr _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_next(nullptr);
+        static info::_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_clbk _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_user(nullptr);
         
-        info::_worlddb_sf_delay_info___eff_listctor__eff_list2_ptr _worlddb_sf_delay_info___eff_listctor__eff_list2_next(nullptr);
-        info::_worlddb_sf_delay_info___eff_listctor__eff_list2_clbk _worlddb_sf_delay_info___eff_listctor__eff_list2_user(nullptr);
+        static info::_worlddb_sf_delay_info___eff_listctor__eff_list2_ptr _worlddb_sf_delay_info___eff_listctor__eff_list2_next(nullptr);
+        static info::_worlddb_sf_delay_info___eff_listctor__eff_list2_clbk _worlddb_sf_delay_info___eff_listctor__eff_list2_user(nullptr);
         
-        info::_worlddb_sf_delay_info___mas_listctor__mas_list2_ptr _worlddb_sf_delay_info___mas_listctor__mas_list2_next(nullptr);
-        info::_worlddb_sf_delay_info___mas_listctor__mas_list2_clbk _worlddb_sf_delay_info___mas_listctor__mas_list2_user(nullptr);
+        static info::_worlddb_sf_delay_info___mas_listctor__mas_list2_ptr _worlddb_sf_delay_info___mas_listctor__mas_list2_next(nullptr);
+        static info::_worlddb_sf_delay_info___mas_listctor__mas_list2_clbk _worlddb_sf_delay_info___mas_listctor__mas_list2_user(nullptr);
         
-        void _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_wrapper(struct _worlddb_sf_delay_info* _this)
+        static void _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_wrapper(struct _worlddb_sf_delay_info* _this)
         {
            _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_user(_this, _worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_next);
         };
         
-        void _worlddb_sf_delay_info___eff_listctor__eff_list2_wrapper(struct _worlddb_sf_delay_info::_eff_list* _this)
+        static void _worlddb_sf_delay_info___eff_listctor__eff_list2_wrapper(struct _worlddb_sf_delay_info::_eff_list* _this)
         {
            _worlddb_sf_delay_info___eff_listctor__eff_list2_user(_this, _worlddb_sf_delay_info___eff_listctor__eff_list2_next);
         };
         
-        void _worlddb_sf_delay_info___mas_listctor__mas_list2_wrapper(struct _worlddb_sf_delay_info::_mas_list* _this)
+        static void _worlddb_sf_delay_info___mas_listctor__mas_list2_wrapper(struct _worlddb_sf_delay_info::_mas_list* _this)
         {
            _worlddb_sf_delay_info___mas_listctor__mas_list2_user(_this, _worlddb_sf_delay_info___mas_listctor__mas_list2_next);
         };
         
-        hook_record _worlddb_sf_delay_info_functions[] = {
+        static hook_record _worlddb_sf_delay_info_functions[] = {
         {   (LPVOID)0x140077e60L,
             (LPVOID *)&_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_user,
             (LPVOID *)&_worlddb_sf_delay_infoctor__worlddb_sf_delay_info2_next,
@@ -53,5 +53,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

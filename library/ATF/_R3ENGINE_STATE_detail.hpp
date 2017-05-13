@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_R3ENGINE_STATEctor__R3ENGINE_STATE1_ptr _R3ENGINE_STATEctor__R3ENGINE_STATE1_next(nullptr);
-        info::_R3ENGINE_STATEctor__R3ENGINE_STATE1_clbk _R3ENGINE_STATEctor__R3ENGINE_STATE1_user(nullptr);
+        static info::_R3ENGINE_STATEctor__R3ENGINE_STATE1_ptr _R3ENGINE_STATEctor__R3ENGINE_STATE1_next(nullptr);
+        static info::_R3ENGINE_STATEctor__R3ENGINE_STATE1_clbk _R3ENGINE_STATEctor__R3ENGINE_STATE1_user(nullptr);
         
-        int64_t _R3ENGINE_STATEctor__R3ENGINE_STATE1_wrapper(struct _R3ENGINE_STATE* _this)
+        static int64_t _R3ENGINE_STATEctor__R3ENGINE_STATE1_wrapper(struct _R3ENGINE_STATE* _this)
         {
            return _R3ENGINE_STATEctor__R3ENGINE_STATE1_user(_this, _R3ENGINE_STATEctor__R3ENGINE_STATE1_next);
         };
         
-        hook_record _R3ENGINE_STATE_functions[] = {
+        static hook_record _R3ENGINE_STATE_functions[] = {
         {   (LPVOID)0x1404ec4b0L,
             (LPVOID *)&_R3ENGINE_STATEctor__R3ENGINE_STATE1_user,
             (LPVOID *)&_R3ENGINE_STATEctor__R3ENGINE_STATE1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

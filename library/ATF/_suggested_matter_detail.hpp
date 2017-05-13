@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_suggested_matterClear2_ptr _suggested_matterClear2_next(nullptr);
-        info::_suggested_matterClear2_clbk _suggested_matterClear2_user(nullptr);
-        info::_suggested_matterIsVotable4_ptr _suggested_matterIsVotable4_next(nullptr);
-        info::_suggested_matterIsVotable4_clbk _suggested_matterIsVotable4_user(nullptr);
-        info::_suggested_matterctor__suggested_matter6_ptr _suggested_matterctor__suggested_matter6_next(nullptr);
-        info::_suggested_matterctor__suggested_matter6_clbk _suggested_matterctor__suggested_matter6_user(nullptr);
+        static info::_suggested_matterClear2_ptr _suggested_matterClear2_next(nullptr);
+        static info::_suggested_matterClear2_clbk _suggested_matterClear2_user(nullptr);
+        static info::_suggested_matterIsVotable4_ptr _suggested_matterIsVotable4_next(nullptr);
+        static info::_suggested_matterIsVotable4_clbk _suggested_matterIsVotable4_user(nullptr);
+        static info::_suggested_matterctor__suggested_matter6_ptr _suggested_matterctor__suggested_matter6_next(nullptr);
+        static info::_suggested_matterctor__suggested_matter6_clbk _suggested_matterctor__suggested_matter6_user(nullptr);
         
-        void _suggested_matterClear2_wrapper(struct _suggested_matter* _this)
+        static void _suggested_matterClear2_wrapper(struct _suggested_matter* _this)
         {
            _suggested_matterClear2_user(_this, _suggested_matterClear2_next);
         };
-        bool _suggested_matterIsVotable4_wrapper(struct _suggested_matter* _this, unsigned int dwSerial)
+        static bool _suggested_matterIsVotable4_wrapper(struct _suggested_matter* _this, unsigned int dwSerial)
         {
            return _suggested_matterIsVotable4_user(_this, dwSerial, _suggested_matterIsVotable4_next);
         };
-        void _suggested_matterctor__suggested_matter6_wrapper(struct _suggested_matter* _this)
+        static void _suggested_matterctor__suggested_matter6_wrapper(struct _suggested_matter* _this)
         {
            _suggested_matterctor__suggested_matter6_user(_this, _suggested_matterctor__suggested_matter6_next);
         };
         
-        hook_record _suggested_matter_functions[] = {
+        static hook_record _suggested_matter_functions[] = {
         {   (LPVOID)0x14025cfe0L,
             (LPVOID *)&_suggested_matterClear2_user,
             (LPVOID *)&_suggested_matterClear2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

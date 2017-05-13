@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_BILLING_FORCE_CLOSE_DELAYProcess2_ptr _BILLING_FORCE_CLOSE_DELAYProcess2_next(nullptr);
-        info::_BILLING_FORCE_CLOSE_DELAYProcess2_clbk _BILLING_FORCE_CLOSE_DELAYProcess2_user(nullptr);
-        info::_BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_ptr _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_next(nullptr);
-        info::_BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_clbk _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_user(nullptr);
-        info::_BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_ptr _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_next(nullptr);
-        info::_BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_clbk _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_user(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYProcess2_ptr _BILLING_FORCE_CLOSE_DELAYProcess2_next(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYProcess2_clbk _BILLING_FORCE_CLOSE_DELAYProcess2_user(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_ptr _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_next(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_clbk _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_user(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_ptr _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_next(nullptr);
+        static info::_BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_clbk _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_user(nullptr);
         
-        void _BILLING_FORCE_CLOSE_DELAYProcess2_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static void _BILLING_FORCE_CLOSE_DELAYProcess2_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            _BILLING_FORCE_CLOSE_DELAYProcess2_user(_this, dwIndex, dwSerial, _BILLING_FORCE_CLOSE_DELAYProcess2_next);
         };
-        void _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this)
+        static void _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this)
         {
            _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_user(_this, _BILLING_FORCE_CLOSE_DELAYctor__BILLING_FORCE_CLOSE_DELAY4_next);
         };
-        void _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this)
+        static void _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_wrapper(struct _BILLING_FORCE_CLOSE_DELAY* _this)
         {
            _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_user(_this, _BILLING_FORCE_CLOSE_DELAYdtor__BILLING_FORCE_CLOSE_DELAY6_next);
         };
         
-        hook_record _BILLING_FORCE_CLOSE_DELAY_functions[] = {
+        static hook_record _BILLING_FORCE_CLOSE_DELAY_functions[] = {
         {   (LPVOID)0x140066480L,
             (LPVOID *)&_BILLING_FORCE_CLOSE_DELAYProcess2_user,
             (LPVOID *)&_BILLING_FORCE_CLOSE_DELAYProcess2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

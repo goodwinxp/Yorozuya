@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_apex_send_ipctor__apex_send_ip2_ptr _apex_send_ipctor__apex_send_ip2_next(nullptr);
-        info::_apex_send_ipctor__apex_send_ip2_clbk _apex_send_ipctor__apex_send_ip2_user(nullptr);
-        info::_apex_send_ipsize4_ptr _apex_send_ipsize4_next(nullptr);
-        info::_apex_send_ipsize4_clbk _apex_send_ipsize4_user(nullptr);
+        static info::_apex_send_ipctor__apex_send_ip2_ptr _apex_send_ipctor__apex_send_ip2_next(nullptr);
+        static info::_apex_send_ipctor__apex_send_ip2_clbk _apex_send_ipctor__apex_send_ip2_user(nullptr);
+        static info::_apex_send_ipsize4_ptr _apex_send_ipsize4_next(nullptr);
+        static info::_apex_send_ipsize4_clbk _apex_send_ipsize4_user(nullptr);
         
-        void _apex_send_ipctor__apex_send_ip2_wrapper(struct _apex_send_ip* _this)
+        static void _apex_send_ipctor__apex_send_ip2_wrapper(struct _apex_send_ip* _this)
         {
            _apex_send_ipctor__apex_send_ip2_user(_this, _apex_send_ipctor__apex_send_ip2_next);
         };
-        int _apex_send_ipsize4_wrapper(struct _apex_send_ip* _this)
+        static int _apex_send_ipsize4_wrapper(struct _apex_send_ip* _this)
         {
            return _apex_send_ipsize4_user(_this, _apex_send_ipsize4_next);
         };
         
-        hook_record _apex_send_ip_functions[] = {
+        static hook_record _apex_send_ip_functions[] = {
         {   (LPVOID)0x140410c00L,
             (LPVOID *)&_apex_send_ipctor__apex_send_ip2_user,
             (LPVOID *)&_apex_send_ipctor__apex_send_ip2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

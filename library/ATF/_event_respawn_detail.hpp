@@ -8,29 +8,29 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_event_respawnctor__event_respawn2_ptr _event_respawnctor__event_respawn2_next(nullptr);
-        info::_event_respawnctor__event_respawn2_clbk _event_respawnctor__event_respawn2_user(nullptr);
+        static info::_event_respawnctor__event_respawn2_ptr _event_respawnctor__event_respawn2_next(nullptr);
+        static info::_event_respawnctor__event_respawn2_clbk _event_respawnctor__event_respawn2_user(nullptr);
         
-        info::_event_respawn___statector__state2_ptr _event_respawn___statector__state2_next(nullptr);
-        info::_event_respawn___statector__state2_clbk _event_respawn___statector__state2_user(nullptr);
-        info::_event_respawn___stateinit4_ptr _event_respawn___stateinit4_next(nullptr);
-        info::_event_respawn___stateinit4_clbk _event_respawn___stateinit4_user(nullptr);
+        static info::_event_respawn___statector__state2_ptr _event_respawn___statector__state2_next(nullptr);
+        static info::_event_respawn___statector__state2_clbk _event_respawn___statector__state2_user(nullptr);
+        static info::_event_respawn___stateinit4_ptr _event_respawn___stateinit4_next(nullptr);
+        static info::_event_respawn___stateinit4_clbk _event_respawn___stateinit4_user(nullptr);
         
-        void _event_respawnctor__event_respawn2_wrapper(struct _event_respawn* _this)
+        static void _event_respawnctor__event_respawn2_wrapper(struct _event_respawn* _this)
         {
            _event_respawnctor__event_respawn2_user(_this, _event_respawnctor__event_respawn2_next);
         };
         
-        void _event_respawn___statector__state2_wrapper(struct _event_respawn::_state* _this)
+        static void _event_respawn___statector__state2_wrapper(struct _event_respawn::_state* _this)
         {
            _event_respawn___statector__state2_user(_this, _event_respawn___statector__state2_next);
         };
-        void _event_respawn___stateinit4_wrapper(struct _event_respawn::_state* _this)
+        static void _event_respawn___stateinit4_wrapper(struct _event_respawn::_state* _this)
         {
            _event_respawn___stateinit4_user(_this, _event_respawn___stateinit4_next);
         };
         
-        hook_record _event_respawn_functions[] = {
+        static hook_record _event_respawn_functions[] = {
         {   (LPVOID)0x1402a7740L,
             (LPVOID *)&_event_respawnctor__event_respawn2_user,
             (LPVOID *)&_event_respawnctor__event_respawn2_next,
@@ -50,5 +50,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

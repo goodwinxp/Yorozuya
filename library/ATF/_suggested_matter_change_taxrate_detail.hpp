@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_ptr _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_next(nullptr);
-        info::_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_clbk _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_user(nullptr);
-        info::_suggested_matter_change_taxrateinit4_ptr _suggested_matter_change_taxrateinit4_next(nullptr);
-        info::_suggested_matter_change_taxrateinit4_clbk _suggested_matter_change_taxrateinit4_user(nullptr);
+        static info::_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_ptr _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_next(nullptr);
+        static info::_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_clbk _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_user(nullptr);
+        static info::_suggested_matter_change_taxrateinit4_ptr _suggested_matter_change_taxrateinit4_next(nullptr);
+        static info::_suggested_matter_change_taxrateinit4_clbk _suggested_matter_change_taxrateinit4_user(nullptr);
         
-        void _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_wrapper(struct _suggested_matter_change_taxrate* _this)
+        static void _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_wrapper(struct _suggested_matter_change_taxrate* _this)
         {
            _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_user(_this, _suggested_matter_change_taxratector__suggested_matter_change_taxrate2_next);
         };
-        void _suggested_matter_change_taxrateinit4_wrapper(struct _suggested_matter_change_taxrate* _this)
+        static void _suggested_matter_change_taxrateinit4_wrapper(struct _suggested_matter_change_taxrate* _this)
         {
            _suggested_matter_change_taxrateinit4_user(_this, _suggested_matter_change_taxrateinit4_next);
         };
         
-        hook_record _suggested_matter_change_taxrate_functions[] = {
+        static hook_record _suggested_matter_change_taxrate_functions[] = {
         {   (LPVOID)0x1402d97c0L,
             (LPVOID *)&_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_user,
             (LPVOID *)&_suggested_matter_change_taxratector__suggested_matter_change_taxrate2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

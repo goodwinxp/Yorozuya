@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_check_speed_hack_anssize2_ptr _check_speed_hack_anssize2_next(nullptr);
-        info::_check_speed_hack_anssize2_clbk _check_speed_hack_anssize2_user(nullptr);
+        static info::_check_speed_hack_anssize2_ptr _check_speed_hack_anssize2_next(nullptr);
+        static info::_check_speed_hack_anssize2_clbk _check_speed_hack_anssize2_user(nullptr);
         
-        int _check_speed_hack_anssize2_wrapper(struct _check_speed_hack_ans* _this)
+        static int _check_speed_hack_anssize2_wrapper(struct _check_speed_hack_ans* _this)
         {
            return _check_speed_hack_anssize2_user(_this, _check_speed_hack_anssize2_next);
         };
         
-        hook_record _check_speed_hack_ans_functions[] = {
+        static hook_record _check_speed_hack_ans_functions[] = {
         {   (LPVOID)0x14047db50L,
             (LPVOID *)&_check_speed_hack_anssize2_user,
             (LPVOID *)&_check_speed_hack_anssize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

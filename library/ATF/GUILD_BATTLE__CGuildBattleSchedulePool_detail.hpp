@@ -10,75 +10,75 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_ptr GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_clbk GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_ptr GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_clbk GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_ptr GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_clbk GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_ptr GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_clbk GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGet10_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGet10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGet10_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGet10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGet12_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGet12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGet12_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGet12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolInit18_ptr GUILD_BATTLE__CGuildBattleSchedulePoolInit18_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolInit18_clbk GUILD_BATTLE__CGuildBattleSchedulePoolInit18_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_ptr GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_clbk GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_ptr GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_clbk GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_ptr GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_clbk GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_ptr GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_clbk GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_ptr GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_clbk GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_ptr GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_clbk GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGet10_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGet10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGet10_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGet10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGet12_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGet12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGet12_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGet12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_ptr GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_clbk GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolInit18_ptr GUILD_BATTLE__CGuildBattleSchedulePoolInit18_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolInit18_clbk GUILD_BATTLE__CGuildBattleSchedulePoolInit18_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_ptr GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_clbk GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_ptr GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_clbk GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
+            static void GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
             {
                GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_user(_this, GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_next);
             };
-            void GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
+            static void GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
             {
                GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_user(_this, GUILD_BATTLE__CGuildBattleSchedulePoolClearAll4_next);
             };
-            void GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiDayID)
+            static void GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiDayID)
             {
                GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_user(_this, uiDayID, GUILD_BATTLE__CGuildBattleSchedulePoolClearByDayID6_next);
             };
-            void GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_wrapper()
+            static void GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_wrapper()
             {
                GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_user(GUILD_BATTLE__CGuildBattleSchedulePoolDestroy8_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGet10_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiSLID, unsigned int dwStartInx)
+            static struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGet10_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiSLID, unsigned int dwStartInx)
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolGet10_user(_this, uiSLID, dwStartInx, GUILD_BATTLE__CGuildBattleSchedulePoolGet10_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGet12_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int dwSID)
+            static struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGet12_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int dwSID)
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolGet12_user(_this, dwSID, GUILD_BATTLE__CGuildBattleSchedulePoolGet12_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int dwSID)
+            static struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int dwSID)
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_user(_this, dwSID, GUILD_BATTLE__CGuildBattleSchedulePoolGetRef14_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiSLID, unsigned int dwStartInx)
+            static unsigned int GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiSLID, unsigned int dwStartInx)
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_user(_this, uiSLID, dwStartInx, GUILD_BATTLE__CGuildBattleSchedulePoolGetSID16_next);
             };
-            bool GUILD_BATTLE__CGuildBattleSchedulePoolInit18_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiMapCnt)
+            static bool GUILD_BATTLE__CGuildBattleSchedulePoolInit18_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this, unsigned int uiMapCnt)
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolInit18_user(_this, uiMapCnt, GUILD_BATTLE__CGuildBattleSchedulePoolInit18_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedulePool* GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_wrapper()
+            static struct GUILD_BATTLE::CGuildBattleSchedulePool* GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_wrapper()
             {
                return GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_user(GUILD_BATTLE__CGuildBattleSchedulePoolInstance20_next);
             };
-            void GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
+            static void GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_wrapper(struct GUILD_BATTLE::CGuildBattleSchedulePool* _this)
             {
                GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_user(_this, GUILD_BATTLE__CGuildBattleSchedulePooldtor_CGuildBattleSchedulePool24_next);
             };
             
-            hook_record CGuildBattleSchedulePool_functions[] = {
+            static hook_record CGuildBattleSchedulePool_functions[] = {
             {   (LPVOID)0x1403da430L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleSchedulePoolctor_CGuildBattleSchedulePool2_next,
@@ -137,6 +137,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

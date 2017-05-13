@@ -8,207 +8,207 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPvpUserRankingInfoctor_CPvpUserRankingInfo2_ptr CPvpUserRankingInfoctor_CPvpUserRankingInfo2_next(nullptr);
-        info::CPvpUserRankingInfoctor_CPvpUserRankingInfo2_clbk CPvpUserRankingInfoctor_CPvpUserRankingInfo2_user(nullptr);
-        info::CPvpUserRankingInfoClearTomorrowPvpRankData4_ptr CPvpUserRankingInfoClearTomorrowPvpRankData4_next(nullptr);
-        info::CPvpUserRankingInfoClearTomorrowPvpRankData4_clbk CPvpUserRankingInfoClearTomorrowPvpRankData4_user(nullptr);
-        info::CPvpUserRankingInfoDoDayChangedWork6_ptr CPvpUserRankingInfoDoDayChangedWork6_next(nullptr);
-        info::CPvpUserRankingInfoDoDayChangedWork6_clbk CPvpUserRankingInfoDoDayChangedWork6_user(nullptr);
-        info::CPvpUserRankingInfoFindRank8_ptr CPvpUserRankingInfoFindRank8_next(nullptr);
-        info::CPvpUserRankingInfoFindRank8_clbk CPvpUserRankingInfoFindRank8_user(nullptr);
-        info::CPvpUserRankingInfoFlipPvPRankTop10_ptr CPvpUserRankingInfoFlipPvPRankTop10_next(nullptr);
-        info::CPvpUserRankingInfoFlipPvPRankTop10_clbk CPvpUserRankingInfoFlipPvPRankTop10_user(nullptr);
-        info::CPvpUserRankingInfoGetBossType12_ptr CPvpUserRankingInfoGetBossType12_next(nullptr);
-        info::CPvpUserRankingInfoGetBossType12_clbk CPvpUserRankingInfoGetBossType12_user(nullptr);
-        info::CPvpUserRankingInfoGetCurrentPvpRankData14_ptr CPvpUserRankingInfoGetCurrentPvpRankData14_next(nullptr);
-        info::CPvpUserRankingInfoGetCurrentPvpRankData14_clbk CPvpUserRankingInfoGetCurrentPvpRankData14_user(nullptr);
-        info::CPvpUserRankingInfoGetCurrentRaceBossSerial16_ptr CPvpUserRankingInfoGetCurrentRaceBossSerial16_next(nullptr);
-        info::CPvpUserRankingInfoGetCurrentRaceBossSerial16_clbk CPvpUserRankingInfoGetCurrentRaceBossSerial16_user(nullptr);
-        info::CPvpUserRankingInfoGetPvpRankDataVersion18_ptr CPvpUserRankingInfoGetPvpRankDataVersion18_next(nullptr);
-        info::CPvpUserRankingInfoGetPvpRankDataVersion18_clbk CPvpUserRankingInfoGetPvpRankDataVersion18_user(nullptr);
-        info::CPvpUserRankingInfoGetRankPackedData20_ptr CPvpUserRankingInfoGetRankPackedData20_next(nullptr);
-        info::CPvpUserRankingInfoGetRankPackedData20_clbk CPvpUserRankingInfoGetRankPackedData20_user(nullptr);
-        info::CPvpUserRankingInfoGetTomorrowPvpRankData22_ptr CPvpUserRankingInfoGetTomorrowPvpRankData22_next(nullptr);
-        info::CPvpUserRankingInfoGetTomorrowPvpRankData22_clbk CPvpUserRankingInfoGetTomorrowPvpRankData22_user(nullptr);
-        info::CPvpUserRankingInfoIncreaseVesion24_ptr CPvpUserRankingInfoIncreaseVesion24_next(nullptr);
-        info::CPvpUserRankingInfoIncreaseVesion24_clbk CPvpUserRankingInfoIncreaseVesion24_user(nullptr);
-        info::CPvpUserRankingInfoIsCurrentRaceBossGroup26_ptr CPvpUserRankingInfoIsCurrentRaceBossGroup26_next(nullptr);
-        info::CPvpUserRankingInfoIsCurrentRaceBossGroup26_clbk CPvpUserRankingInfoIsCurrentRaceBossGroup26_user(nullptr);
-        info::CPvpUserRankingInfoIsRaceViceBoss28_ptr CPvpUserRankingInfoIsRaceViceBoss28_next(nullptr);
-        info::CPvpUserRankingInfoIsRaceViceBoss28_clbk CPvpUserRankingInfoIsRaceViceBoss28_user(nullptr);
-        info::CPvpUserRankingInfoLoadPvpRank30_ptr CPvpUserRankingInfoLoadPvpRank30_next(nullptr);
-        info::CPvpUserRankingInfoLoadPvpRank30_clbk CPvpUserRankingInfoLoadPvpRank30_user(nullptr);
-        info::CPvpUserRankingInfoPvpRankDataPacking32_ptr CPvpUserRankingInfoPvpRankDataPacking32_next(nullptr);
-        info::CPvpUserRankingInfoPvpRankDataPacking32_clbk CPvpUserRankingInfoPvpRankDataPacking32_user(nullptr);
-        info::CPvpUserRankingInfoPvpRankListRequest34_ptr CPvpUserRankingInfoPvpRankListRequest34_next(nullptr);
-        info::CPvpUserRankingInfoPvpRankListRequest34_clbk CPvpUserRankingInfoPvpRankListRequest34_user(nullptr);
-        info::CPvpUserRankingInfoSendMsg_PvpRankListData36_ptr CPvpUserRankingInfoSendMsg_PvpRankListData36_next(nullptr);
-        info::CPvpUserRankingInfoSendMsg_PvpRankListData36_clbk CPvpUserRankingInfoSendMsg_PvpRankListData36_user(nullptr);
-        info::CPvpUserRankingInfoSendMsg_PvpRankListNodata38_ptr CPvpUserRankingInfoSendMsg_PvpRankListNodata38_next(nullptr);
-        info::CPvpUserRankingInfoSendMsg_PvpRankListNodata38_clbk CPvpUserRankingInfoSendMsg_PvpRankListNodata38_user(nullptr);
-        info::CPvpUserRankingInfoSetCurrentRaceBossSerial40_ptr CPvpUserRankingInfoSetCurrentRaceBossSerial40_next(nullptr);
-        info::CPvpUserRankingInfoSetCurrentRaceBossSerial40_clbk CPvpUserRankingInfoSetCurrentRaceBossSerial40_user(nullptr);
-        info::CPvpUserRankingInfoSetUpdateRaceBossSerial42_ptr CPvpUserRankingInfoSetUpdateRaceBossSerial42_next(nullptr);
-        info::CPvpUserRankingInfoSetUpdateRaceBossSerial42_clbk CPvpUserRankingInfoSetUpdateRaceBossSerial42_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep144_ptr CPvpUserRankingInfoUpdateRaceRankStep144_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep144_clbk CPvpUserRankingInfoUpdateRaceRankStep144_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep1046_ptr CPvpUserRankingInfoUpdateRaceRankStep1046_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep1046_clbk CPvpUserRankingInfoUpdateRaceRankStep1046_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep248_ptr CPvpUserRankingInfoUpdateRaceRankStep248_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep248_clbk CPvpUserRankingInfoUpdateRaceRankStep248_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep350_ptr CPvpUserRankingInfoUpdateRaceRankStep350_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep350_clbk CPvpUserRankingInfoUpdateRaceRankStep350_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep452_ptr CPvpUserRankingInfoUpdateRaceRankStep452_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep452_clbk CPvpUserRankingInfoUpdateRaceRankStep452_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep554_ptr CPvpUserRankingInfoUpdateRaceRankStep554_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep554_clbk CPvpUserRankingInfoUpdateRaceRankStep554_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep656_ptr CPvpUserRankingInfoUpdateRaceRankStep656_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep656_clbk CPvpUserRankingInfoUpdateRaceRankStep656_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep758_ptr CPvpUserRankingInfoUpdateRaceRankStep758_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep758_clbk CPvpUserRankingInfoUpdateRaceRankStep758_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep860_ptr CPvpUserRankingInfoUpdateRaceRankStep860_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep860_clbk CPvpUserRankingInfoUpdateRaceRankStep860_user(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep962_ptr CPvpUserRankingInfoUpdateRaceRankStep962_next(nullptr);
-        info::CPvpUserRankingInfoUpdateRaceRankStep962_clbk CPvpUserRankingInfoUpdateRaceRankStep962_user(nullptr);
-        info::CPvpUserRankingInfoassign64_ptr CPvpUserRankingInfoassign64_next(nullptr);
-        info::CPvpUserRankingInfoassign64_clbk CPvpUserRankingInfoassign64_user(nullptr);
-        info::CPvpUserRankingInfodtor_CPvpUserRankingInfo66_ptr CPvpUserRankingInfodtor_CPvpUserRankingInfo66_next(nullptr);
-        info::CPvpUserRankingInfodtor_CPvpUserRankingInfo66_clbk CPvpUserRankingInfodtor_CPvpUserRankingInfo66_user(nullptr);
+        static info::CPvpUserRankingInfoctor_CPvpUserRankingInfo2_ptr CPvpUserRankingInfoctor_CPvpUserRankingInfo2_next(nullptr);
+        static info::CPvpUserRankingInfoctor_CPvpUserRankingInfo2_clbk CPvpUserRankingInfoctor_CPvpUserRankingInfo2_user(nullptr);
+        static info::CPvpUserRankingInfoClearTomorrowPvpRankData4_ptr CPvpUserRankingInfoClearTomorrowPvpRankData4_next(nullptr);
+        static info::CPvpUserRankingInfoClearTomorrowPvpRankData4_clbk CPvpUserRankingInfoClearTomorrowPvpRankData4_user(nullptr);
+        static info::CPvpUserRankingInfoDoDayChangedWork6_ptr CPvpUserRankingInfoDoDayChangedWork6_next(nullptr);
+        static info::CPvpUserRankingInfoDoDayChangedWork6_clbk CPvpUserRankingInfoDoDayChangedWork6_user(nullptr);
+        static info::CPvpUserRankingInfoFindRank8_ptr CPvpUserRankingInfoFindRank8_next(nullptr);
+        static info::CPvpUserRankingInfoFindRank8_clbk CPvpUserRankingInfoFindRank8_user(nullptr);
+        static info::CPvpUserRankingInfoFlipPvPRankTop10_ptr CPvpUserRankingInfoFlipPvPRankTop10_next(nullptr);
+        static info::CPvpUserRankingInfoFlipPvPRankTop10_clbk CPvpUserRankingInfoFlipPvPRankTop10_user(nullptr);
+        static info::CPvpUserRankingInfoGetBossType12_ptr CPvpUserRankingInfoGetBossType12_next(nullptr);
+        static info::CPvpUserRankingInfoGetBossType12_clbk CPvpUserRankingInfoGetBossType12_user(nullptr);
+        static info::CPvpUserRankingInfoGetCurrentPvpRankData14_ptr CPvpUserRankingInfoGetCurrentPvpRankData14_next(nullptr);
+        static info::CPvpUserRankingInfoGetCurrentPvpRankData14_clbk CPvpUserRankingInfoGetCurrentPvpRankData14_user(nullptr);
+        static info::CPvpUserRankingInfoGetCurrentRaceBossSerial16_ptr CPvpUserRankingInfoGetCurrentRaceBossSerial16_next(nullptr);
+        static info::CPvpUserRankingInfoGetCurrentRaceBossSerial16_clbk CPvpUserRankingInfoGetCurrentRaceBossSerial16_user(nullptr);
+        static info::CPvpUserRankingInfoGetPvpRankDataVersion18_ptr CPvpUserRankingInfoGetPvpRankDataVersion18_next(nullptr);
+        static info::CPvpUserRankingInfoGetPvpRankDataVersion18_clbk CPvpUserRankingInfoGetPvpRankDataVersion18_user(nullptr);
+        static info::CPvpUserRankingInfoGetRankPackedData20_ptr CPvpUserRankingInfoGetRankPackedData20_next(nullptr);
+        static info::CPvpUserRankingInfoGetRankPackedData20_clbk CPvpUserRankingInfoGetRankPackedData20_user(nullptr);
+        static info::CPvpUserRankingInfoGetTomorrowPvpRankData22_ptr CPvpUserRankingInfoGetTomorrowPvpRankData22_next(nullptr);
+        static info::CPvpUserRankingInfoGetTomorrowPvpRankData22_clbk CPvpUserRankingInfoGetTomorrowPvpRankData22_user(nullptr);
+        static info::CPvpUserRankingInfoIncreaseVesion24_ptr CPvpUserRankingInfoIncreaseVesion24_next(nullptr);
+        static info::CPvpUserRankingInfoIncreaseVesion24_clbk CPvpUserRankingInfoIncreaseVesion24_user(nullptr);
+        static info::CPvpUserRankingInfoIsCurrentRaceBossGroup26_ptr CPvpUserRankingInfoIsCurrentRaceBossGroup26_next(nullptr);
+        static info::CPvpUserRankingInfoIsCurrentRaceBossGroup26_clbk CPvpUserRankingInfoIsCurrentRaceBossGroup26_user(nullptr);
+        static info::CPvpUserRankingInfoIsRaceViceBoss28_ptr CPvpUserRankingInfoIsRaceViceBoss28_next(nullptr);
+        static info::CPvpUserRankingInfoIsRaceViceBoss28_clbk CPvpUserRankingInfoIsRaceViceBoss28_user(nullptr);
+        static info::CPvpUserRankingInfoLoadPvpRank30_ptr CPvpUserRankingInfoLoadPvpRank30_next(nullptr);
+        static info::CPvpUserRankingInfoLoadPvpRank30_clbk CPvpUserRankingInfoLoadPvpRank30_user(nullptr);
+        static info::CPvpUserRankingInfoPvpRankDataPacking32_ptr CPvpUserRankingInfoPvpRankDataPacking32_next(nullptr);
+        static info::CPvpUserRankingInfoPvpRankDataPacking32_clbk CPvpUserRankingInfoPvpRankDataPacking32_user(nullptr);
+        static info::CPvpUserRankingInfoPvpRankListRequest34_ptr CPvpUserRankingInfoPvpRankListRequest34_next(nullptr);
+        static info::CPvpUserRankingInfoPvpRankListRequest34_clbk CPvpUserRankingInfoPvpRankListRequest34_user(nullptr);
+        static info::CPvpUserRankingInfoSendMsg_PvpRankListData36_ptr CPvpUserRankingInfoSendMsg_PvpRankListData36_next(nullptr);
+        static info::CPvpUserRankingInfoSendMsg_PvpRankListData36_clbk CPvpUserRankingInfoSendMsg_PvpRankListData36_user(nullptr);
+        static info::CPvpUserRankingInfoSendMsg_PvpRankListNodata38_ptr CPvpUserRankingInfoSendMsg_PvpRankListNodata38_next(nullptr);
+        static info::CPvpUserRankingInfoSendMsg_PvpRankListNodata38_clbk CPvpUserRankingInfoSendMsg_PvpRankListNodata38_user(nullptr);
+        static info::CPvpUserRankingInfoSetCurrentRaceBossSerial40_ptr CPvpUserRankingInfoSetCurrentRaceBossSerial40_next(nullptr);
+        static info::CPvpUserRankingInfoSetCurrentRaceBossSerial40_clbk CPvpUserRankingInfoSetCurrentRaceBossSerial40_user(nullptr);
+        static info::CPvpUserRankingInfoSetUpdateRaceBossSerial42_ptr CPvpUserRankingInfoSetUpdateRaceBossSerial42_next(nullptr);
+        static info::CPvpUserRankingInfoSetUpdateRaceBossSerial42_clbk CPvpUserRankingInfoSetUpdateRaceBossSerial42_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep144_ptr CPvpUserRankingInfoUpdateRaceRankStep144_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep144_clbk CPvpUserRankingInfoUpdateRaceRankStep144_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep1046_ptr CPvpUserRankingInfoUpdateRaceRankStep1046_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep1046_clbk CPvpUserRankingInfoUpdateRaceRankStep1046_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep248_ptr CPvpUserRankingInfoUpdateRaceRankStep248_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep248_clbk CPvpUserRankingInfoUpdateRaceRankStep248_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep350_ptr CPvpUserRankingInfoUpdateRaceRankStep350_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep350_clbk CPvpUserRankingInfoUpdateRaceRankStep350_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep452_ptr CPvpUserRankingInfoUpdateRaceRankStep452_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep452_clbk CPvpUserRankingInfoUpdateRaceRankStep452_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep554_ptr CPvpUserRankingInfoUpdateRaceRankStep554_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep554_clbk CPvpUserRankingInfoUpdateRaceRankStep554_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep656_ptr CPvpUserRankingInfoUpdateRaceRankStep656_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep656_clbk CPvpUserRankingInfoUpdateRaceRankStep656_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep758_ptr CPvpUserRankingInfoUpdateRaceRankStep758_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep758_clbk CPvpUserRankingInfoUpdateRaceRankStep758_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep860_ptr CPvpUserRankingInfoUpdateRaceRankStep860_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep860_clbk CPvpUserRankingInfoUpdateRaceRankStep860_user(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep962_ptr CPvpUserRankingInfoUpdateRaceRankStep962_next(nullptr);
+        static info::CPvpUserRankingInfoUpdateRaceRankStep962_clbk CPvpUserRankingInfoUpdateRaceRankStep962_user(nullptr);
+        static info::CPvpUserRankingInfoassign64_ptr CPvpUserRankingInfoassign64_next(nullptr);
+        static info::CPvpUserRankingInfoassign64_clbk CPvpUserRankingInfoassign64_user(nullptr);
+        static info::CPvpUserRankingInfodtor_CPvpUserRankingInfo66_ptr CPvpUserRankingInfodtor_CPvpUserRankingInfo66_next(nullptr);
+        static info::CPvpUserRankingInfodtor_CPvpUserRankingInfo66_clbk CPvpUserRankingInfodtor_CPvpUserRankingInfo66_user(nullptr);
         
-        void CPvpUserRankingInfoctor_CPvpUserRankingInfo2_wrapper(struct CPvpUserRankingInfo* _this)
+        static void CPvpUserRankingInfoctor_CPvpUserRankingInfo2_wrapper(struct CPvpUserRankingInfo* _this)
         {
            CPvpUserRankingInfoctor_CPvpUserRankingInfo2_user(_this, CPvpUserRankingInfoctor_CPvpUserRankingInfo2_next);
         };
-        void CPvpUserRankingInfoClearTomorrowPvpRankData4_wrapper(struct CPvpUserRankingInfo* _this)
+        static void CPvpUserRankingInfoClearTomorrowPvpRankData4_wrapper(struct CPvpUserRankingInfo* _this)
         {
            CPvpUserRankingInfoClearTomorrowPvpRankData4_user(_this, CPvpUserRankingInfoClearTomorrowPvpRankData4_next);
         };
-        void CPvpUserRankingInfoDoDayChangedWork6_wrapper(struct CPvpUserRankingInfo* _this, struct CLogFile* pkLogger)
+        static void CPvpUserRankingInfoDoDayChangedWork6_wrapper(struct CPvpUserRankingInfo* _this, struct CLogFile* pkLogger)
         {
            CPvpUserRankingInfoDoDayChangedWork6_user(_this, pkLogger, CPvpUserRankingInfoDoDayChangedWork6_next);
         };
-        unsigned int CPvpUserRankingInfoFindRank8_wrapper(struct CPvpUserRankingInfo* _this, char byRaceCode, unsigned int dwAvatorSerial)
+        static unsigned int CPvpUserRankingInfoFindRank8_wrapper(struct CPvpUserRankingInfo* _this, char byRaceCode, unsigned int dwAvatorSerial)
         {
            return CPvpUserRankingInfoFindRank8_user(_this, byRaceCode, dwAvatorSerial, CPvpUserRankingInfoFindRank8_next);
         };
-        void CPvpUserRankingInfoFlipPvPRankTop10_wrapper(struct CPvpUserRankingInfo* _this)
+        static void CPvpUserRankingInfoFlipPvPRankTop10_wrapper(struct CPvpUserRankingInfo* _this)
         {
            CPvpUserRankingInfoFlipPvPRankTop10_user(_this, CPvpUserRankingInfoFlipPvPRankTop10_next);
         };
-        char CPvpUserRankingInfoGetBossType12_wrapper(struct CPvpUserRankingInfo* _this, char byRaceCode, unsigned int dwSerial)
+        static char CPvpUserRankingInfoGetBossType12_wrapper(struct CPvpUserRankingInfo* _this, char byRaceCode, unsigned int dwSerial)
         {
            return CPvpUserRankingInfoGetBossType12_user(_this, byRaceCode, dwSerial, CPvpUserRankingInfoGetBossType12_next);
         };
-        struct _PVP_RANK_DATA* CPvpUserRankingInfoGetCurrentPvpRankData14_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
+        static struct _PVP_RANK_DATA* CPvpUserRankingInfoGetCurrentPvpRankData14_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
         {
            return CPvpUserRankingInfoGetCurrentPvpRankData14_user(_this, byRace, byNth, CPvpUserRankingInfoGetCurrentPvpRankData14_next);
         };
-        unsigned int CPvpUserRankingInfoGetCurrentRaceBossSerial16_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
+        static unsigned int CPvpUserRankingInfoGetCurrentRaceBossSerial16_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
         {
            return CPvpUserRankingInfoGetCurrentRaceBossSerial16_user(_this, byRace, byNth, CPvpUserRankingInfoGetCurrentRaceBossSerial16_next);
         };
-        char CPvpUserRankingInfoGetPvpRankDataVersion18_wrapper(struct CPvpUserRankingInfo* _this)
+        static char CPvpUserRankingInfoGetPvpRankDataVersion18_wrapper(struct CPvpUserRankingInfo* _this)
         {
            return CPvpUserRankingInfoGetPvpRankDataVersion18_user(_this, CPvpUserRankingInfoGetPvpRankDataVersion18_next);
         };
-        struct _PVP_RANK_PACKED_DATA* CPvpUserRankingInfoGetRankPackedData20_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byPage)
+        static struct _PVP_RANK_PACKED_DATA* CPvpUserRankingInfoGetRankPackedData20_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byPage)
         {
            return CPvpUserRankingInfoGetRankPackedData20_user(_this, byRace, byPage, CPvpUserRankingInfoGetRankPackedData20_next);
         };
-        struct _PVP_RANK_DATA* CPvpUserRankingInfoGetTomorrowPvpRankData22_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
+        static struct _PVP_RANK_DATA* CPvpUserRankingInfoGetTomorrowPvpRankData22_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth)
         {
            return CPvpUserRankingInfoGetTomorrowPvpRankData22_user(_this, byRace, byNth, CPvpUserRankingInfoGetTomorrowPvpRankData22_next);
         };
-        void CPvpUserRankingInfoIncreaseVesion24_wrapper(struct CPvpUserRankingInfo* _this)
+        static void CPvpUserRankingInfoIncreaseVesion24_wrapper(struct CPvpUserRankingInfo* _this)
         {
            CPvpUserRankingInfoIncreaseVesion24_user(_this, CPvpUserRankingInfoIncreaseVesion24_next);
         };
-        bool CPvpUserRankingInfoIsCurrentRaceBossGroup26_wrapper(struct CPvpUserRankingInfo* _this, char byRace, unsigned int dwSerial)
+        static bool CPvpUserRankingInfoIsCurrentRaceBossGroup26_wrapper(struct CPvpUserRankingInfo* _this, char byRace, unsigned int dwSerial)
         {
            return CPvpUserRankingInfoIsCurrentRaceBossGroup26_user(_this, byRace, dwSerial, CPvpUserRankingInfoIsCurrentRaceBossGroup26_next);
         };
-        bool CPvpUserRankingInfoIsRaceViceBoss28_wrapper(struct CPvpUserRankingInfo* _this, char byRace, unsigned int dwSerial)
+        static bool CPvpUserRankingInfoIsRaceViceBoss28_wrapper(struct CPvpUserRankingInfo* _this, char byRace, unsigned int dwSerial)
         {
            return CPvpUserRankingInfoIsRaceViceBoss28_user(_this, byRace, dwSerial, CPvpUserRankingInfoIsRaceViceBoss28_next);
         };
-        bool CPvpUserRankingInfoLoadPvpRank30_wrapper(struct CPvpUserRankingInfo* _this, char* szDate)
+        static bool CPvpUserRankingInfoLoadPvpRank30_wrapper(struct CPvpUserRankingInfo* _this, char* szDate)
         {
            return CPvpUserRankingInfoLoadPvpRank30_user(_this, szDate, CPvpUserRankingInfoLoadPvpRank30_next);
         };
-        void CPvpUserRankingInfoPvpRankDataPacking32_wrapper(struct CPvpUserRankingInfo* _this, struct CLogFile* pkLogger)
+        static void CPvpUserRankingInfoPvpRankDataPacking32_wrapper(struct CPvpUserRankingInfo* _this, struct CLogFile* pkLogger)
         {
            CPvpUserRankingInfoPvpRankDataPacking32_user(_this, pkLogger, CPvpUserRankingInfoPvpRankDataPacking32_next);
         };
-        void CPvpUserRankingInfoPvpRankListRequest34_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
+        static void CPvpUserRankingInfoPvpRankListRequest34_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
         {
            CPvpUserRankingInfoPvpRankListRequest34_user(_this, wIndex, byRace, byVersion, byPage, CPvpUserRankingInfoPvpRankListRequest34_next);
         };
-        void CPvpUserRankingInfoSendMsg_PvpRankListData36_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
+        static void CPvpUserRankingInfoSendMsg_PvpRankListData36_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
         {
            CPvpUserRankingInfoSendMsg_PvpRankListData36_user(_this, wIndex, byRace, byVersion, byPage, CPvpUserRankingInfoSendMsg_PvpRankListData36_next);
         };
-        void CPvpUserRankingInfoSendMsg_PvpRankListNodata38_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byPage, char byRet)
+        static void CPvpUserRankingInfoSendMsg_PvpRankListNodata38_wrapper(struct CPvpUserRankingInfo* _this, uint16_t wIndex, char byRace, char byPage, char byRet)
         {
            CPvpUserRankingInfoSendMsg_PvpRankListNodata38_user(_this, wIndex, byRace, byPage, byRet, CPvpUserRankingInfoSendMsg_PvpRankListNodata38_next);
         };
-        void CPvpUserRankingInfoSetCurrentRaceBossSerial40_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth, unsigned int dwSerial)
+        static void CPvpUserRankingInfoSetCurrentRaceBossSerial40_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth, unsigned int dwSerial)
         {
            CPvpUserRankingInfoSetCurrentRaceBossSerial40_user(_this, byRace, byNth, dwSerial, CPvpUserRankingInfoSetCurrentRaceBossSerial40_next);
         };
-        void CPvpUserRankingInfoSetUpdateRaceBossSerial42_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth, unsigned int dwSerial)
+        static void CPvpUserRankingInfoSetUpdateRaceBossSerial42_wrapper(struct CPvpUserRankingInfo* _this, char byRace, char byNth, unsigned int dwSerial)
         {
            CPvpUserRankingInfoSetUpdateRaceBossSerial42_user(_this, byRace, byNth, dwSerial, CPvpUserRankingInfoSetUpdateRaceBossSerial42_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep144_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep144_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep144_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep144_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep1046_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep1046_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep1046_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep1046_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep248_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep248_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep248_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep248_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep350_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep350_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep350_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep350_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep452_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep452_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep452_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep452_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep554_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep554_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep554_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep554_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep656_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep656_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep656_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep656_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep758_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep758_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep758_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep758_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep860_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep860_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep860_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep860_next);
         };
-        char CPvpUserRankingInfoUpdateRaceRankStep962_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
+        static char CPvpUserRankingInfoUpdateRaceRankStep962_wrapper(struct CPvpUserRankingInfo* _this, char* szData)
         {
            return CPvpUserRankingInfoUpdateRaceRankStep962_user(_this, szData, CPvpUserRankingInfoUpdateRaceRankStep962_next);
         };
-        bool CPvpUserRankingInfoassign64_wrapper(struct CPvpUserRankingInfo* _this)
+        static bool CPvpUserRankingInfoassign64_wrapper(struct CPvpUserRankingInfo* _this)
         {
            return CPvpUserRankingInfoassign64_user(_this, CPvpUserRankingInfoassign64_next);
         };
-        void CPvpUserRankingInfodtor_CPvpUserRankingInfo66_wrapper(struct CPvpUserRankingInfo* _this)
+        static void CPvpUserRankingInfodtor_CPvpUserRankingInfo66_wrapper(struct CPvpUserRankingInfo* _this)
         {
            CPvpUserRankingInfodtor_CPvpUserRankingInfo66_user(_this, CPvpUserRankingInfodtor_CPvpUserRankingInfo66_next);
         };
         
-        hook_record CPvpUserRankingInfo_functions[] = {
+        static hook_record CPvpUserRankingInfo_functions[] = {
         {   (LPVOID)0x140344090L,
             (LPVOID *)&CPvpUserRankingInfoctor_CPvpUserRankingInfo2_user,
             (LPVOID *)&CPvpUserRankingInfoctor_CPvpUserRankingInfo2_next,
@@ -377,5 +377,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

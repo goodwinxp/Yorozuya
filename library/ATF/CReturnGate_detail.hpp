@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CReturnGatector_CReturnGate2_ptr CReturnGatector_CReturnGate2_next(nullptr);
-        info::CReturnGatector_CReturnGate2_clbk CReturnGatector_CReturnGate2_user(nullptr);
-        info::CReturnGateClear4_ptr CReturnGateClear4_next(nullptr);
-        info::CReturnGateClear4_clbk CReturnGateClear4_user(nullptr);
-        info::CReturnGateClose6_ptr CReturnGateClose6_next(nullptr);
-        info::CReturnGateClose6_clbk CReturnGateClose6_user(nullptr);
-        info::CReturnGateEnter8_ptr CReturnGateEnter8_next(nullptr);
-        info::CReturnGateEnter8_clbk CReturnGateEnter8_user(nullptr);
-        info::CReturnGateGetIndex10_ptr CReturnGateGetIndex10_next(nullptr);
-        info::CReturnGateGetIndex10_clbk CReturnGateGetIndex10_user(nullptr);
-        info::CReturnGateGetInfo12_ptr CReturnGateGetInfo12_next(nullptr);
-        info::CReturnGateGetInfo12_clbk CReturnGateGetInfo12_user(nullptr);
-        info::CReturnGateGetOwner14_ptr CReturnGateGetOwner14_next(nullptr);
-        info::CReturnGateGetOwner14_clbk CReturnGateGetOwner14_user(nullptr);
-        info::CReturnGateIsClose16_ptr CReturnGateIsClose16_next(nullptr);
-        info::CReturnGateIsClose16_clbk CReturnGateIsClose16_user(nullptr);
-        info::CReturnGateIsOpen18_ptr CReturnGateIsOpen18_next(nullptr);
-        info::CReturnGateIsOpen18_clbk CReturnGateIsOpen18_user(nullptr);
-        info::CReturnGateIsValidOwner20_ptr CReturnGateIsValidOwner20_next(nullptr);
-        info::CReturnGateIsValidOwner20_clbk CReturnGateIsValidOwner20_user(nullptr);
-        info::CReturnGateIsValidPosition22_ptr CReturnGateIsValidPosition22_next(nullptr);
-        info::CReturnGateIsValidPosition22_clbk CReturnGateIsValidPosition22_user(nullptr);
-        info::CReturnGateOpen24_ptr CReturnGateOpen24_next(nullptr);
-        info::CReturnGateOpen24_clbk CReturnGateOpen24_user(nullptr);
-        info::CReturnGateSendMsg_Create26_ptr CReturnGateSendMsg_Create26_next(nullptr);
-        info::CReturnGateSendMsg_Create26_clbk CReturnGateSendMsg_Create26_user(nullptr);
-        info::CReturnGateSendMsg_Destroy28_ptr CReturnGateSendMsg_Destroy28_next(nullptr);
-        info::CReturnGateSendMsg_Destroy28_clbk CReturnGateSendMsg_Destroy28_user(nullptr);
-        info::CReturnGateSendMsg_FixPosition30_ptr CReturnGateSendMsg_FixPosition30_next(nullptr);
-        info::CReturnGateSendMsg_FixPosition30_clbk CReturnGateSendMsg_FixPosition30_user(nullptr);
-        info::CReturnGateSendMsg_MovePortal32_ptr CReturnGateSendMsg_MovePortal32_next(nullptr);
-        info::CReturnGateSendMsg_MovePortal32_clbk CReturnGateSendMsg_MovePortal32_user(nullptr);
-        info::CReturnGatedtor_CReturnGate37_ptr CReturnGatedtor_CReturnGate37_next(nullptr);
-        info::CReturnGatedtor_CReturnGate37_clbk CReturnGatedtor_CReturnGate37_user(nullptr);
+        static info::CReturnGatector_CReturnGate2_ptr CReturnGatector_CReturnGate2_next(nullptr);
+        static info::CReturnGatector_CReturnGate2_clbk CReturnGatector_CReturnGate2_user(nullptr);
+        static info::CReturnGateClear4_ptr CReturnGateClear4_next(nullptr);
+        static info::CReturnGateClear4_clbk CReturnGateClear4_user(nullptr);
+        static info::CReturnGateClose6_ptr CReturnGateClose6_next(nullptr);
+        static info::CReturnGateClose6_clbk CReturnGateClose6_user(nullptr);
+        static info::CReturnGateEnter8_ptr CReturnGateEnter8_next(nullptr);
+        static info::CReturnGateEnter8_clbk CReturnGateEnter8_user(nullptr);
+        static info::CReturnGateGetIndex10_ptr CReturnGateGetIndex10_next(nullptr);
+        static info::CReturnGateGetIndex10_clbk CReturnGateGetIndex10_user(nullptr);
+        static info::CReturnGateGetInfo12_ptr CReturnGateGetInfo12_next(nullptr);
+        static info::CReturnGateGetInfo12_clbk CReturnGateGetInfo12_user(nullptr);
+        static info::CReturnGateGetOwner14_ptr CReturnGateGetOwner14_next(nullptr);
+        static info::CReturnGateGetOwner14_clbk CReturnGateGetOwner14_user(nullptr);
+        static info::CReturnGateIsClose16_ptr CReturnGateIsClose16_next(nullptr);
+        static info::CReturnGateIsClose16_clbk CReturnGateIsClose16_user(nullptr);
+        static info::CReturnGateIsOpen18_ptr CReturnGateIsOpen18_next(nullptr);
+        static info::CReturnGateIsOpen18_clbk CReturnGateIsOpen18_user(nullptr);
+        static info::CReturnGateIsValidOwner20_ptr CReturnGateIsValidOwner20_next(nullptr);
+        static info::CReturnGateIsValidOwner20_clbk CReturnGateIsValidOwner20_user(nullptr);
+        static info::CReturnGateIsValidPosition22_ptr CReturnGateIsValidPosition22_next(nullptr);
+        static info::CReturnGateIsValidPosition22_clbk CReturnGateIsValidPosition22_user(nullptr);
+        static info::CReturnGateOpen24_ptr CReturnGateOpen24_next(nullptr);
+        static info::CReturnGateOpen24_clbk CReturnGateOpen24_user(nullptr);
+        static info::CReturnGateSendMsg_Create26_ptr CReturnGateSendMsg_Create26_next(nullptr);
+        static info::CReturnGateSendMsg_Create26_clbk CReturnGateSendMsg_Create26_user(nullptr);
+        static info::CReturnGateSendMsg_Destroy28_ptr CReturnGateSendMsg_Destroy28_next(nullptr);
+        static info::CReturnGateSendMsg_Destroy28_clbk CReturnGateSendMsg_Destroy28_user(nullptr);
+        static info::CReturnGateSendMsg_FixPosition30_ptr CReturnGateSendMsg_FixPosition30_next(nullptr);
+        static info::CReturnGateSendMsg_FixPosition30_clbk CReturnGateSendMsg_FixPosition30_user(nullptr);
+        static info::CReturnGateSendMsg_MovePortal32_ptr CReturnGateSendMsg_MovePortal32_next(nullptr);
+        static info::CReturnGateSendMsg_MovePortal32_clbk CReturnGateSendMsg_MovePortal32_user(nullptr);
+        static info::CReturnGatedtor_CReturnGate37_ptr CReturnGatedtor_CReturnGate37_next(nullptr);
+        static info::CReturnGatedtor_CReturnGate37_clbk CReturnGatedtor_CReturnGate37_user(nullptr);
         
-        void CReturnGatector_CReturnGate2_wrapper(struct CReturnGate* _this, struct _object_id* pID)
+        static void CReturnGatector_CReturnGate2_wrapper(struct CReturnGate* _this, struct _object_id* pID)
         {
            CReturnGatector_CReturnGate2_user(_this, pID, CReturnGatector_CReturnGate2_next);
         };
-        void CReturnGateClear4_wrapper(struct CReturnGate* _this)
+        static void CReturnGateClear4_wrapper(struct CReturnGate* _this)
         {
            CReturnGateClear4_user(_this, CReturnGateClear4_next);
         };
-        void CReturnGateClose6_wrapper(struct CReturnGate* _this)
+        static void CReturnGateClose6_wrapper(struct CReturnGate* _this)
         {
            CReturnGateClose6_user(_this, CReturnGateClose6_next);
         };
-        int CReturnGateEnter8_wrapper(struct CReturnGate* _this, struct CPlayer* pkObj)
+        static int CReturnGateEnter8_wrapper(struct CReturnGate* _this, struct CPlayer* pkObj)
         {
            return CReturnGateEnter8_user(_this, pkObj, CReturnGateEnter8_next);
         };
-        uint16_t CReturnGateGetIndex10_wrapper(struct CReturnGate* _this)
+        static uint16_t CReturnGateGetIndex10_wrapper(struct CReturnGate* _this)
         {
            return CReturnGateGetIndex10_user(_this, CReturnGateGetIndex10_next);
         };
-        void CReturnGateGetInfo12_wrapper(struct CReturnGate* _this, struct _open_return_gate_inform_zocl* Info)
+        static void CReturnGateGetInfo12_wrapper(struct CReturnGate* _this, struct _open_return_gate_inform_zocl* Info)
         {
            CReturnGateGetInfo12_user(_this, Info, CReturnGateGetInfo12_next);
         };
-        struct CPlayer* CReturnGateGetOwner14_wrapper(struct CReturnGate* _this)
+        static struct CPlayer* CReturnGateGetOwner14_wrapper(struct CReturnGate* _this)
         {
            return CReturnGateGetOwner14_user(_this, CReturnGateGetOwner14_next);
         };
-        bool CReturnGateIsClose16_wrapper(struct CReturnGate* _this)
+        static bool CReturnGateIsClose16_wrapper(struct CReturnGate* _this)
         {
            return CReturnGateIsClose16_user(_this, CReturnGateIsClose16_next);
         };
-        bool CReturnGateIsOpen18_wrapper(struct CReturnGate* _this)
+        static bool CReturnGateIsOpen18_wrapper(struct CReturnGate* _this)
         {
            return CReturnGateIsOpen18_user(_this, CReturnGateIsOpen18_next);
         };
-        bool CReturnGateIsValidOwner20_wrapper(struct CReturnGate* _this)
+        static bool CReturnGateIsValidOwner20_wrapper(struct CReturnGate* _this)
         {
            return CReturnGateIsValidOwner20_user(_this, CReturnGateIsValidOwner20_next);
         };
-        bool CReturnGateIsValidPosition22_wrapper(struct CReturnGate* _this, float* pfCurPos)
+        static bool CReturnGateIsValidPosition22_wrapper(struct CReturnGate* _this, float* pfCurPos)
         {
            return CReturnGateIsValidPosition22_user(_this, pfCurPos, CReturnGateIsValidPosition22_next);
         };
-        bool CReturnGateOpen24_wrapper(struct CReturnGate* _this, struct CReturnGateCreateParam* pParam)
+        static bool CReturnGateOpen24_wrapper(struct CReturnGate* _this, struct CReturnGateCreateParam* pParam)
         {
            return CReturnGateOpen24_user(_this, pParam, CReturnGateOpen24_next);
         };
-        void CReturnGateSendMsg_Create26_wrapper(struct CReturnGate* _this)
+        static void CReturnGateSendMsg_Create26_wrapper(struct CReturnGate* _this)
         {
            CReturnGateSendMsg_Create26_user(_this, CReturnGateSendMsg_Create26_next);
         };
-        void CReturnGateSendMsg_Destroy28_wrapper(struct CReturnGate* _this)
+        static void CReturnGateSendMsg_Destroy28_wrapper(struct CReturnGate* _this)
         {
            CReturnGateSendMsg_Destroy28_user(_this, CReturnGateSendMsg_Destroy28_next);
         };
-        void CReturnGateSendMsg_FixPosition30_wrapper(struct CReturnGate* _this, int n)
+        static void CReturnGateSendMsg_FixPosition30_wrapper(struct CReturnGate* _this, int n)
         {
            CReturnGateSendMsg_FixPosition30_user(_this, n, CReturnGateSendMsg_FixPosition30_next);
         };
-        void CReturnGateSendMsg_MovePortal32_wrapper(struct CReturnGate* _this, struct CPlayer* pkObj)
+        static void CReturnGateSendMsg_MovePortal32_wrapper(struct CReturnGate* _this, struct CPlayer* pkObj)
         {
            CReturnGateSendMsg_MovePortal32_user(_this, pkObj, CReturnGateSendMsg_MovePortal32_next);
         };
-        void CReturnGatedtor_CReturnGate37_wrapper(struct CReturnGate* _this)
+        static void CReturnGatedtor_CReturnGate37_wrapper(struct CReturnGate* _this)
         {
            CReturnGatedtor_CReturnGate37_user(_this, CReturnGatedtor_CReturnGate37_next);
         };
         
-        hook_record CReturnGate_functions[] = {
+        static hook_record CReturnGate_functions[] = {
         {   (LPVOID)0x1401685c0L,
             (LPVOID *)&CReturnGatector_CReturnGate2_user,
             (LPVOID *)&CReturnGatector_CReturnGate2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

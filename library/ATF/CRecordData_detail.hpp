@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRecordDatactor_CRecordData2_ptr CRecordDatactor_CRecordData2_next(nullptr);
-        info::CRecordDatactor_CRecordData2_clbk CRecordDatactor_CRecordData2_user(nullptr);
-        info::CRecordDataFileSize4_ptr CRecordDataFileSize4_next(nullptr);
-        info::CRecordDataFileSize4_clbk CRecordDataFileSize4_user(nullptr);
-        info::CRecordDataGetRecord6_ptr CRecordDataGetRecord6_next(nullptr);
-        info::CRecordDataGetRecord6_clbk CRecordDataGetRecord6_user(nullptr);
-        info::CRecordDataGetRecord8_ptr CRecordDataGetRecord8_next(nullptr);
-        info::CRecordDataGetRecord8_clbk CRecordDataGetRecord8_user(nullptr);
-        info::CRecordDataGetRecord10_ptr CRecordDataGetRecord10_next(nullptr);
-        info::CRecordDataGetRecord10_clbk CRecordDataGetRecord10_user(nullptr);
-        info::CRecordDataGetRecordByHash12_ptr CRecordDataGetRecordByHash12_next(nullptr);
-        info::CRecordDataGetRecordByHash12_clbk CRecordDataGetRecordByHash12_user(nullptr);
-        info::CRecordDataGetRecordNum14_ptr CRecordDataGetRecordNum14_next(nullptr);
-        info::CRecordDataGetRecordNum14_clbk CRecordDataGetRecordNum14_user(nullptr);
-        info::CRecordDataIsTableOpen16_ptr CRecordDataIsTableOpen16_next(nullptr);
-        info::CRecordDataIsTableOpen16_clbk CRecordDataIsTableOpen16_user(nullptr);
-        info::CRecordDataLoadRecordData18_ptr CRecordDataLoadRecordData18_next(nullptr);
-        info::CRecordDataLoadRecordData18_clbk CRecordDataLoadRecordData18_user(nullptr);
-        info::CRecordDataLoadRecordHeader20_ptr CRecordDataLoadRecordHeader20_next(nullptr);
-        info::CRecordDataLoadRecordHeader20_clbk CRecordDataLoadRecordHeader20_user(nullptr);
-        info::CRecordDataMakeHash22_ptr CRecordDataMakeHash22_next(nullptr);
-        info::CRecordDataMakeHash22_clbk CRecordDataMakeHash22_user(nullptr);
-        info::CRecordDataMakeHashTable24_ptr CRecordDataMakeHashTable24_next(nullptr);
-        info::CRecordDataMakeHashTable24_clbk CRecordDataMakeHashTable24_user(nullptr);
-        info::CRecordDataReadRecord26_ptr CRecordDataReadRecord26_next(nullptr);
-        info::CRecordDataReadRecord26_clbk CRecordDataReadRecord26_user(nullptr);
-        info::CRecordDataReadRecord_Ex28_ptr CRecordDataReadRecord_Ex28_next(nullptr);
-        info::CRecordDataReadRecord_Ex28_clbk CRecordDataReadRecord_Ex28_user(nullptr);
-        info::CRecordDatadtor_CRecordData34_ptr CRecordDatadtor_CRecordData34_next(nullptr);
-        info::CRecordDatadtor_CRecordData34_clbk CRecordDatadtor_CRecordData34_user(nullptr);
+        static info::CRecordDatactor_CRecordData2_ptr CRecordDatactor_CRecordData2_next(nullptr);
+        static info::CRecordDatactor_CRecordData2_clbk CRecordDatactor_CRecordData2_user(nullptr);
+        static info::CRecordDataFileSize4_ptr CRecordDataFileSize4_next(nullptr);
+        static info::CRecordDataFileSize4_clbk CRecordDataFileSize4_user(nullptr);
+        static info::CRecordDataGetRecord6_ptr CRecordDataGetRecord6_next(nullptr);
+        static info::CRecordDataGetRecord6_clbk CRecordDataGetRecord6_user(nullptr);
+        static info::CRecordDataGetRecord8_ptr CRecordDataGetRecord8_next(nullptr);
+        static info::CRecordDataGetRecord8_clbk CRecordDataGetRecord8_user(nullptr);
+        static info::CRecordDataGetRecord10_ptr CRecordDataGetRecord10_next(nullptr);
+        static info::CRecordDataGetRecord10_clbk CRecordDataGetRecord10_user(nullptr);
+        static info::CRecordDataGetRecordByHash12_ptr CRecordDataGetRecordByHash12_next(nullptr);
+        static info::CRecordDataGetRecordByHash12_clbk CRecordDataGetRecordByHash12_user(nullptr);
+        static info::CRecordDataGetRecordNum14_ptr CRecordDataGetRecordNum14_next(nullptr);
+        static info::CRecordDataGetRecordNum14_clbk CRecordDataGetRecordNum14_user(nullptr);
+        static info::CRecordDataIsTableOpen16_ptr CRecordDataIsTableOpen16_next(nullptr);
+        static info::CRecordDataIsTableOpen16_clbk CRecordDataIsTableOpen16_user(nullptr);
+        static info::CRecordDataLoadRecordData18_ptr CRecordDataLoadRecordData18_next(nullptr);
+        static info::CRecordDataLoadRecordData18_clbk CRecordDataLoadRecordData18_user(nullptr);
+        static info::CRecordDataLoadRecordHeader20_ptr CRecordDataLoadRecordHeader20_next(nullptr);
+        static info::CRecordDataLoadRecordHeader20_clbk CRecordDataLoadRecordHeader20_user(nullptr);
+        static info::CRecordDataMakeHash22_ptr CRecordDataMakeHash22_next(nullptr);
+        static info::CRecordDataMakeHash22_clbk CRecordDataMakeHash22_user(nullptr);
+        static info::CRecordDataMakeHashTable24_ptr CRecordDataMakeHashTable24_next(nullptr);
+        static info::CRecordDataMakeHashTable24_clbk CRecordDataMakeHashTable24_user(nullptr);
+        static info::CRecordDataReadRecord26_ptr CRecordDataReadRecord26_next(nullptr);
+        static info::CRecordDataReadRecord26_clbk CRecordDataReadRecord26_user(nullptr);
+        static info::CRecordDataReadRecord_Ex28_ptr CRecordDataReadRecord_Ex28_next(nullptr);
+        static info::CRecordDataReadRecord_Ex28_clbk CRecordDataReadRecord_Ex28_user(nullptr);
+        static info::CRecordDatadtor_CRecordData34_ptr CRecordDatadtor_CRecordData34_next(nullptr);
+        static info::CRecordDatadtor_CRecordData34_clbk CRecordDatadtor_CRecordData34_user(nullptr);
         
-        void CRecordDatactor_CRecordData2_wrapper(struct CRecordData* _this)
+        static void CRecordDatactor_CRecordData2_wrapper(struct CRecordData* _this)
         {
            CRecordDatactor_CRecordData2_user(_this, CRecordDatactor_CRecordData2_next);
         };
-        unsigned int CRecordDataFileSize4_wrapper(struct CRecordData* _this, char* szFile)
+        static unsigned int CRecordDataFileSize4_wrapper(struct CRecordData* _this, char* szFile)
         {
            return CRecordDataFileSize4_user(_this, szFile, CRecordDataFileSize4_next);
         };
-        struct _base_fld* CRecordDataGetRecord6_wrapper(struct CRecordData* _this, char* szRecordCode)
+        static struct _base_fld* CRecordDataGetRecord6_wrapper(struct CRecordData* _this, char* szRecordCode)
         {
            return CRecordDataGetRecord6_user(_this, szRecordCode, CRecordDataGetRecord6_next);
         };
-        struct _base_fld* CRecordDataGetRecord8_wrapper(struct CRecordData* _this, char* szRecordCode, int nCompareLen)
+        static struct _base_fld* CRecordDataGetRecord8_wrapper(struct CRecordData* _this, char* szRecordCode, int nCompareLen)
         {
            return CRecordDataGetRecord8_user(_this, szRecordCode, nCompareLen, CRecordDataGetRecord8_next);
         };
-        struct _base_fld* CRecordDataGetRecord10_wrapper(struct CRecordData* _this, int n)
+        static struct _base_fld* CRecordDataGetRecord10_wrapper(struct CRecordData* _this, int n)
         {
            return CRecordDataGetRecord10_user(_this, n, CRecordDataGetRecord10_next);
         };
-        struct _base_fld* CRecordDataGetRecordByHash12_wrapper(struct CRecordData* _this, char* szRecordCode, int offset, int len)
+        static struct _base_fld* CRecordDataGetRecordByHash12_wrapper(struct CRecordData* _this, char* szRecordCode, int offset, int len)
         {
            return CRecordDataGetRecordByHash12_user(_this, szRecordCode, offset, len, CRecordDataGetRecordByHash12_next);
         };
-        int CRecordDataGetRecordNum14_wrapper(struct CRecordData* _this)
+        static int CRecordDataGetRecordNum14_wrapper(struct CRecordData* _this)
         {
            return CRecordDataGetRecordNum14_user(_this, CRecordDataGetRecordNum14_next);
         };
-        bool CRecordDataIsTableOpen16_wrapper(struct CRecordData* _this)
+        static bool CRecordDataIsTableOpen16_wrapper(struct CRecordData* _this)
         {
            return CRecordDataIsTableOpen16_user(_this, CRecordDataIsTableOpen16_next);
         };
-        bool CRecordDataLoadRecordData18_wrapper(struct CRecordData* _this, void* hFile, char* pszErrMsg)
+        static bool CRecordDataLoadRecordData18_wrapper(struct CRecordData* _this, void* hFile, char* pszErrMsg)
         {
            return CRecordDataLoadRecordData18_user(_this, hFile, pszErrMsg, CRecordDataLoadRecordData18_next);
         };
-        bool CRecordDataLoadRecordHeader20_wrapper(struct CRecordData* _this, void* hFile, char* pszErrMsg)
+        static bool CRecordDataLoadRecordHeader20_wrapper(struct CRecordData* _this, void* hFile, char* pszErrMsg)
         {
            return CRecordDataLoadRecordHeader20_user(_this, hFile, pszErrMsg, CRecordDataLoadRecordHeader20_next);
         };
-        unsigned int CRecordDataMakeHash22_wrapper(char* p, int len)
+        static unsigned int CRecordDataMakeHash22_wrapper(char* p, int len)
         {
            return CRecordDataMakeHash22_user(p, len, CRecordDataMakeHash22_next);
         };
-        bool CRecordDataMakeHashTable24_wrapper(struct CRecordData* _this, int offset, int len, char* pszErrMsg)
+        static bool CRecordDataMakeHashTable24_wrapper(struct CRecordData* _this, int offset, int len, char* pszErrMsg)
         {
            return CRecordDataMakeHashTable24_user(_this, offset, len, pszErrMsg, CRecordDataMakeHashTable24_next);
         };
-        bool CRecordDataReadRecord26_wrapper(struct CRecordData* _this, char* szFile, unsigned int dwStructSize, char* pszErrMsg)
+        static bool CRecordDataReadRecord26_wrapper(struct CRecordData* _this, char* szFile, unsigned int dwStructSize, char* pszErrMsg)
         {
            return CRecordDataReadRecord26_user(_this, szFile, dwStructSize, pszErrMsg, CRecordDataReadRecord26_next);
         };
-        bool CRecordDataReadRecord_Ex28_wrapper(struct CRecordData* _this, char* szFile1, char* szFile2, unsigned int dwStructSize, char* pszErrMsg)
+        static bool CRecordDataReadRecord_Ex28_wrapper(struct CRecordData* _this, char* szFile1, char* szFile2, unsigned int dwStructSize, char* pszErrMsg)
         {
            return CRecordDataReadRecord_Ex28_user(_this, szFile1, szFile2, dwStructSize, pszErrMsg, CRecordDataReadRecord_Ex28_next);
         };
-        void CRecordDatadtor_CRecordData34_wrapper(struct CRecordData* _this)
+        static void CRecordDatadtor_CRecordData34_wrapper(struct CRecordData* _this)
         {
            CRecordDatadtor_CRecordData34_user(_this, CRecordDatadtor_CRecordData34_next);
         };
         
-        hook_record CRecordData_functions[] = {
+        static hook_record CRecordData_functions[] = {
         {   (LPVOID)0x14007f490L,
             (LPVOID *)&CRecordDatactor_CRecordData2_user,
             (LPVOID *)&CRecordDatactor_CRecordData2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

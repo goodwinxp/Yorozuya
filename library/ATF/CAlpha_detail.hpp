@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAlphaCheckAlphaAlloc1_ptr CAlphaCheckAlphaAlloc1_next(nullptr);
-        info::CAlphaCheckAlphaAlloc1_clbk CAlphaCheckAlphaAlloc1_user(nullptr);
-        info::CAlphaGetAlphaFace2_ptr CAlphaGetAlphaFace2_next(nullptr);
-        info::CAlphaGetAlphaFace2_clbk CAlphaGetAlphaFace2_user(nullptr);
-        info::CAlphaGetAlphaFaceCnt3_ptr CAlphaGetAlphaFaceCnt3_next(nullptr);
-        info::CAlphaGetAlphaFaceCnt3_clbk CAlphaGetAlphaFaceCnt3_user(nullptr);
-        info::CAlphaInitAlpha4_ptr CAlphaInitAlpha4_next(nullptr);
-        info::CAlphaInitAlpha4_clbk CAlphaInitAlpha4_user(nullptr);
-        info::CAlphaLoopInitAlphaStack5_ptr CAlphaLoopInitAlphaStack5_next(nullptr);
-        info::CAlphaLoopInitAlphaStack5_clbk CAlphaLoopInitAlphaStack5_user(nullptr);
-        info::CAlphaSetAlphaEntityStack6_ptr CAlphaSetAlphaEntityStack6_next(nullptr);
-        info::CAlphaSetAlphaEntityStack6_clbk CAlphaSetAlphaEntityStack6_user(nullptr);
-        info::CAlphaSetAlphaStack7_ptr CAlphaSetAlphaStack7_next(nullptr);
-        info::CAlphaSetAlphaStack7_clbk CAlphaSetAlphaStack7_user(nullptr);
-        info::CAlphaSetCoronaStack8_ptr CAlphaSetCoronaStack8_next(nullptr);
-        info::CAlphaSetCoronaStack8_clbk CAlphaSetCoronaStack8_user(nullptr);
-        info::CAlphaSortAlphaStack9_ptr CAlphaSortAlphaStack9_next(nullptr);
-        info::CAlphaSortAlphaStack9_clbk CAlphaSortAlphaStack9_user(nullptr);
-        info::CAlphadtor_CAlpha10_ptr CAlphadtor_CAlpha10_next(nullptr);
-        info::CAlphadtor_CAlpha10_clbk CAlphadtor_CAlpha10_user(nullptr);
+        static info::CAlphaCheckAlphaAlloc1_ptr CAlphaCheckAlphaAlloc1_next(nullptr);
+        static info::CAlphaCheckAlphaAlloc1_clbk CAlphaCheckAlphaAlloc1_user(nullptr);
+        static info::CAlphaGetAlphaFace2_ptr CAlphaGetAlphaFace2_next(nullptr);
+        static info::CAlphaGetAlphaFace2_clbk CAlphaGetAlphaFace2_user(nullptr);
+        static info::CAlphaGetAlphaFaceCnt3_ptr CAlphaGetAlphaFaceCnt3_next(nullptr);
+        static info::CAlphaGetAlphaFaceCnt3_clbk CAlphaGetAlphaFaceCnt3_user(nullptr);
+        static info::CAlphaInitAlpha4_ptr CAlphaInitAlpha4_next(nullptr);
+        static info::CAlphaInitAlpha4_clbk CAlphaInitAlpha4_user(nullptr);
+        static info::CAlphaLoopInitAlphaStack5_ptr CAlphaLoopInitAlphaStack5_next(nullptr);
+        static info::CAlphaLoopInitAlphaStack5_clbk CAlphaLoopInitAlphaStack5_user(nullptr);
+        static info::CAlphaSetAlphaEntityStack6_ptr CAlphaSetAlphaEntityStack6_next(nullptr);
+        static info::CAlphaSetAlphaEntityStack6_clbk CAlphaSetAlphaEntityStack6_user(nullptr);
+        static info::CAlphaSetAlphaStack7_ptr CAlphaSetAlphaStack7_next(nullptr);
+        static info::CAlphaSetAlphaStack7_clbk CAlphaSetAlphaStack7_user(nullptr);
+        static info::CAlphaSetCoronaStack8_ptr CAlphaSetCoronaStack8_next(nullptr);
+        static info::CAlphaSetCoronaStack8_clbk CAlphaSetCoronaStack8_user(nullptr);
+        static info::CAlphaSortAlphaStack9_ptr CAlphaSortAlphaStack9_next(nullptr);
+        static info::CAlphaSortAlphaStack9_clbk CAlphaSortAlphaStack9_user(nullptr);
+        static info::CAlphadtor_CAlpha10_ptr CAlphadtor_CAlpha10_next(nullptr);
+        static info::CAlphadtor_CAlpha10_clbk CAlphadtor_CAlpha10_user(nullptr);
         
-        void CAlphaCheckAlphaAlloc1_wrapper(struct CAlpha* _this)
+        static void CAlphaCheckAlphaAlloc1_wrapper(struct CAlpha* _this)
         {
            CAlphaCheckAlphaAlloc1_user(_this, CAlphaCheckAlphaAlloc1_next);
         };
-        uint32_t* CAlphaGetAlphaFace2_wrapper(struct CAlpha* _this)
+        static uint32_t* CAlphaGetAlphaFace2_wrapper(struct CAlpha* _this)
         {
            return CAlphaGetAlphaFace2_user(_this, CAlphaGetAlphaFace2_next);
         };
-        uint32_t CAlphaGetAlphaFaceCnt3_wrapper(struct CAlpha* _this)
+        static uint32_t CAlphaGetAlphaFaceCnt3_wrapper(struct CAlpha* _this)
         {
            return CAlphaGetAlphaFaceCnt3_user(_this, CAlphaGetAlphaFaceCnt3_next);
         };
-        void CAlphaInitAlpha4_wrapper(struct CAlpha* _this, void* arg_0)
+        static void CAlphaInitAlpha4_wrapper(struct CAlpha* _this, void* arg_0)
         {
            CAlphaInitAlpha4_user(_this, arg_0, CAlphaInitAlpha4_next);
         };
-        void CAlphaLoopInitAlphaStack5_wrapper(struct CAlpha* _this)
+        static void CAlphaLoopInitAlphaStack5_wrapper(struct CAlpha* _this)
         {
            CAlphaLoopInitAlphaStack5_user(_this, CAlphaLoopInitAlphaStack5_next);
         };
-        void CAlphaSetAlphaEntityStack6_wrapper(struct CAlpha* _this, uint16_t arg_0)
+        static void CAlphaSetAlphaEntityStack6_wrapper(struct CAlpha* _this, uint16_t arg_0)
         {
            CAlphaSetAlphaEntityStack6_user(_this, arg_0, CAlphaSetAlphaEntityStack6_next);
         };
-        void CAlphaSetAlphaStack7_wrapper(struct CAlpha* _this, uint16_t arg_0)
+        static void CAlphaSetAlphaStack7_wrapper(struct CAlpha* _this, uint16_t arg_0)
         {
            CAlphaSetAlphaStack7_user(_this, arg_0, CAlphaSetAlphaStack7_next);
         };
-        void CAlphaSetCoronaStack8_wrapper(struct CAlpha* _this, uint16_t arg_0)
+        static void CAlphaSetCoronaStack8_wrapper(struct CAlpha* _this, uint16_t arg_0)
         {
            CAlphaSetCoronaStack8_user(_this, arg_0, CAlphaSetCoronaStack8_next);
         };
-        uint32_t* CAlphaSortAlphaStack9_wrapper(struct CAlpha* _this, float* arg_0)
+        static uint32_t* CAlphaSortAlphaStack9_wrapper(struct CAlpha* _this, float* arg_0)
         {
            return CAlphaSortAlphaStack9_user(_this, arg_0, CAlphaSortAlphaStack9_next);
         };
-        int64_t CAlphadtor_CAlpha10_wrapper(struct CAlpha* _this)
+        static int64_t CAlphadtor_CAlpha10_wrapper(struct CAlpha* _this)
         {
            return CAlphadtor_CAlpha10_user(_this, CAlphadtor_CAlpha10_next);
         };
         
-        hook_record CAlpha_functions[] = {
+        static hook_record CAlpha_functions[] = {
         {   (LPVOID)0x14051ccf0L,
             (LPVOID *)&CAlphaCheckAlphaAlloc1_user,
             (LPVOID *)&CAlphaCheckAlphaAlloc1_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

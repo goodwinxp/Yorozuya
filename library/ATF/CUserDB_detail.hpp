@@ -8,753 +8,753 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUserDBAlive_Char_Complete2_ptr CUserDBAlive_Char_Complete2_next(nullptr);
-        info::CUserDBAlive_Char_Complete2_clbk CUserDBAlive_Char_Complete2_user(nullptr);
-        info::CUserDBAlive_Char_Request4_ptr CUserDBAlive_Char_Request4_next(nullptr);
-        info::CUserDBAlive_Char_Request4_clbk CUserDBAlive_Char_Request4_user(nullptr);
-        info::CUserDBctor_CUserDB6_ptr CUserDBctor_CUserDB6_next(nullptr);
-        info::CUserDBctor_CUserDB6_clbk CUserDBctor_CUserDB6_user(nullptr);
-        info::CUserDBCalcRadarDelay8_ptr CUserDBCalcRadarDelay8_next(nullptr);
-        info::CUserDBCalcRadarDelay8_clbk CUserDBCalcRadarDelay8_user(nullptr);
-        info::CUserDBCheckDQSLoadCharacterData10_ptr CUserDBCheckDQSLoadCharacterData10_next(nullptr);
-        info::CUserDBCheckDQSLoadCharacterData10_clbk CUserDBCheckDQSLoadCharacterData10_user(nullptr);
-        info::CUserDBClearBillingData12_ptr CUserDBClearBillingData12_next(nullptr);
-        info::CUserDBClearBillingData12_clbk CUserDBClearBillingData12_user(nullptr);
-        info::CUserDBCont_UserSave_Complete14_ptr CUserDBCont_UserSave_Complete14_next(nullptr);
-        info::CUserDBCont_UserSave_Complete14_clbk CUserDBCont_UserSave_Complete14_user(nullptr);
-        info::CUserDBDataValidCheckRevise16_ptr CUserDBDataValidCheckRevise16_next(nullptr);
-        info::CUserDBDataValidCheckRevise16_clbk CUserDBDataValidCheckRevise16_user(nullptr);
-        info::CUserDBDelPostData18_ptr CUserDBDelPostData18_next(nullptr);
-        info::CUserDBDelPostData18_clbk CUserDBDelPostData18_user(nullptr);
-        info::CUserDBDelete_Char_Complete20_ptr CUserDBDelete_Char_Complete20_next(nullptr);
-        info::CUserDBDelete_Char_Complete20_clbk CUserDBDelete_Char_Complete20_user(nullptr);
-        info::CUserDBDelete_Char_Request22_ptr CUserDBDelete_Char_Request22_next(nullptr);
-        info::CUserDBDelete_Char_Request22_clbk CUserDBDelete_Char_Request22_user(nullptr);
-        info::CUserDBDummyCreate24_ptr CUserDBDummyCreate24_next(nullptr);
-        info::CUserDBDummyCreate24_clbk CUserDBDummyCreate24_user(nullptr);
-        info::CUserDBEnter_Account26_ptr CUserDBEnter_Account26_next(nullptr);
-        info::CUserDBEnter_Account26_clbk CUserDBEnter_Account26_user(nullptr);
-        info::CUserDBExit_Account_Complete28_ptr CUserDBExit_Account_Complete28_next(nullptr);
-        info::CUserDBExit_Account_Complete28_clbk CUserDBExit_Account_Complete28_user(nullptr);
-        info::CUserDBExit_Account_Request30_ptr CUserDBExit_Account_Request30_next(nullptr);
-        info::CUserDBExit_Account_Request30_clbk CUserDBExit_Account_Request30_user(nullptr);
-        info::CUserDBFirstSettingData32_ptr CUserDBFirstSettingData32_next(nullptr);
-        info::CUserDBFirstSettingData32_clbk CUserDBFirstSettingData32_user(nullptr);
-        info::CUserDBForceCloseCommand34_ptr CUserDBForceCloseCommand34_next(nullptr);
-        info::CUserDBForceCloseCommand34_clbk CUserDBForceCloseCommand34_user(nullptr);
-        info::CUserDBGetActPoint36_ptr CUserDBGetActPoint36_next(nullptr);
-        info::CUserDBGetActPoint36_clbk CUserDBGetActPoint36_user(nullptr);
-        info::CUserDBGetBillingType38_ptr CUserDBGetBillingType38_next(nullptr);
-        info::CUserDBGetBillingType38_clbk CUserDBGetBillingType38_user(nullptr);
-        info::CUserDBGetPtrActPoint40_ptr CUserDBGetPtrActPoint40_next(nullptr);
-        info::CUserDBGetPtrActPoint40_clbk CUserDBGetPtrActPoint40_user(nullptr);
-        info::CUserDBInform_For_Exit_By_FireguardBlock42_ptr CUserDBInform_For_Exit_By_FireguardBlock42_next(nullptr);
-        info::CUserDBInform_For_Exit_By_FireguardBlock42_clbk CUserDBInform_For_Exit_By_FireguardBlock42_user(nullptr);
-        info::CUserDBInit44_ptr CUserDBInit44_next(nullptr);
-        info::CUserDBInit44_clbk CUserDBInit44_user(nullptr);
-        info::CUserDBInitClass46_ptr CUserDBInitClass46_next(nullptr);
-        info::CUserDBInitClass46_clbk CUserDBInitClass46_user(nullptr);
-        info::CUserDBInsert_Char_Complete48_ptr CUserDBInsert_Char_Complete48_next(nullptr);
-        info::CUserDBInsert_Char_Complete48_clbk CUserDBInsert_Char_Complete48_user(nullptr);
-        info::CUserDBInsert_Char_Request50_ptr CUserDBInsert_Char_Request50_next(nullptr);
-        info::CUserDBInsert_Char_Request50_clbk CUserDBInsert_Char_Request50_user(nullptr);
-        info::CUserDBIsContPushBefore52_ptr CUserDBIsContPushBefore52_next(nullptr);
-        info::CUserDBIsContPushBefore52_clbk CUserDBIsContPushBefore52_user(nullptr);
-        info::CUserDBIsExistRequestMoveCharacterList54_ptr CUserDBIsExistRequestMoveCharacterList54_next(nullptr);
-        info::CUserDBIsExistRequestMoveCharacterList54_clbk CUserDBIsExistRequestMoveCharacterList54_user(nullptr);
-        info::CUserDBIsReturnPostUpdate56_ptr CUserDBIsReturnPostUpdate56_next(nullptr);
-        info::CUserDBIsReturnPostUpdate56_clbk CUserDBIsReturnPostUpdate56_user(nullptr);
-        info::CUserDBLobby_Char_Complete58_ptr CUserDBLobby_Char_Complete58_next(nullptr);
-        info::CUserDBLobby_Char_Complete58_clbk CUserDBLobby_Char_Complete58_user(nullptr);
-        info::CUserDBLobby_Char_Request60_ptr CUserDBLobby_Char_Request60_next(nullptr);
-        info::CUserDBLobby_Char_Request60_clbk CUserDBLobby_Char_Request60_user(nullptr);
-        info::CUserDBOnLoop_Static62_ptr CUserDBOnLoop_Static62_next(nullptr);
-        info::CUserDBOnLoop_Static62_clbk CUserDBOnLoop_Static62_user(nullptr);
-        info::CUserDBParamInit64_ptr CUserDBParamInit64_next(nullptr);
-        info::CUserDBParamInit64_clbk CUserDBParamInit64_user(nullptr);
-        info::CUserDBReRangeClientIndex66_ptr CUserDBReRangeClientIndex66_next(nullptr);
-        info::CUserDBReRangeClientIndex66_clbk CUserDBReRangeClientIndex66_user(nullptr);
-        info::CUserDBReged_Char_Complete68_ptr CUserDBReged_Char_Complete68_next(nullptr);
-        info::CUserDBReged_Char_Complete68_clbk CUserDBReged_Char_Complete68_user(nullptr);
-        info::CUserDBReged_Char_Request70_ptr CUserDBReged_Char_Request70_next(nullptr);
-        info::CUserDBReged_Char_Request70_clbk CUserDBReged_Char_Request70_user(nullptr);
-        info::CUserDBSelect_Char_Complete72_ptr CUserDBSelect_Char_Complete72_next(nullptr);
-        info::CUserDBSelect_Char_Complete72_clbk CUserDBSelect_Char_Complete72_user(nullptr);
-        info::CUserDBSelect_Char_Request74_ptr CUserDBSelect_Char_Request74_next(nullptr);
-        info::CUserDBSelect_Char_Request74_clbk CUserDBSelect_Char_Request74_user(nullptr);
-        info::CUserDBSendMsgAccount_UILockRefresh_Update76_ptr CUserDBSendMsgAccount_UILockRefresh_Update76_next(nullptr);
-        info::CUserDBSendMsgAccount_UILockRefresh_Update76_clbk CUserDBSendMsgAccount_UILockRefresh_Update76_user(nullptr);
-        info::CUserDBSendMsg_BillingInfo78_ptr CUserDBSendMsg_BillingInfo78_next(nullptr);
-        info::CUserDBSendMsg_BillingInfo78_clbk CUserDBSendMsg_BillingInfo78_user(nullptr);
-        info::CUserDBSendMsg_Inform_UILock80_ptr CUserDBSendMsg_Inform_UILock80_next(nullptr);
-        info::CUserDBSendMsg_Inform_UILock80_clbk CUserDBSendMsg_Inform_UILock80_user(nullptr);
-        info::CUserDBSetActPoint82_ptr CUserDBSetActPoint82_next(nullptr);
-        info::CUserDBSetActPoint82_clbk CUserDBSetActPoint82_user(nullptr);
-        info::CUserDBSetBillingData84_ptr CUserDBSetBillingData84_next(nullptr);
-        info::CUserDBSetBillingData84_clbk CUserDBSetBillingData84_user(nullptr);
-        info::CUserDBSetBillingData86_ptr CUserDBSetBillingData86_next(nullptr);
-        info::CUserDBSetBillingData86_clbk CUserDBSetBillingData86_user(nullptr);
-        info::CUserDBSetBillingNoLogout88_ptr CUserDBSetBillingNoLogout88_next(nullptr);
-        info::CUserDBSetBillingNoLogout88_clbk CUserDBSetBillingNoLogout88_user(nullptr);
-        info::CUserDBSetChatLock90_ptr CUserDBSetChatLock90_next(nullptr);
-        info::CUserDBSetChatLock90_clbk CUserDBSetChatLock90_user(nullptr);
-        info::CUserDBSetDBPostData92_ptr CUserDBSetDBPostData92_next(nullptr);
-        info::CUserDBSetDBPostData92_clbk CUserDBSetDBPostData92_user(nullptr);
-        info::CUserDBSetNewDBPostData94_ptr CUserDBSetNewDBPostData94_next(nullptr);
-        info::CUserDBSetNewDBPostData94_clbk CUserDBSetNewDBPostData94_user(nullptr);
-        info::CUserDBSetRadarDelay96_ptr CUserDBSetRadarDelay96_next(nullptr);
-        info::CUserDBSetRadarDelay96_clbk CUserDBSetRadarDelay96_user(nullptr);
-        info::CUserDBSetRemainTime98_ptr CUserDBSetRemainTime98_next(nullptr);
-        info::CUserDBSetRemainTime98_clbk CUserDBSetRemainTime98_user(nullptr);
-        info::CUserDBSetWorldCLID100_ptr CUserDBSetWorldCLID100_next(nullptr);
-        info::CUserDBSetWorldCLID100_clbk CUserDBSetWorldCLID100_user(nullptr);
-        info::CUserDBSetting_Class102_ptr CUserDBSetting_Class102_next(nullptr);
-        info::CUserDBSetting_Class102_clbk CUserDBSetting_Class102_user(nullptr);
-        info::CUserDBStartFieldMode104_ptr CUserDBStartFieldMode104_next(nullptr);
-        info::CUserDBStartFieldMode104_clbk CUserDBStartFieldMode104_user(nullptr);
-        info::CUserDBTotalPlayMinCheck106_ptr CUserDBTotalPlayMinCheck106_next(nullptr);
-        info::CUserDBTotalPlayMinCheck106_clbk CUserDBTotalPlayMinCheck106_user(nullptr);
-        info::CUserDBUILockInfo_Init108_ptr CUserDBUILockInfo_Init108_next(nullptr);
-        info::CUserDBUILockInfo_Init108_clbk CUserDBUILockInfo_Init108_user(nullptr);
-        info::CUserDBUILockInfo_Update110_ptr CUserDBUILockInfo_Update110_next(nullptr);
-        info::CUserDBUILockInfo_Update110_clbk CUserDBUILockInfo_Update110_user(nullptr);
-        info::CUserDBUpdateContUserSave112_ptr CUserDBUpdateContUserSave112_next(nullptr);
-        info::CUserDBUpdateContUserSave112_clbk CUserDBUpdateContUserSave112_user(nullptr);
-        info::CUserDBUpdate_AddBuddy114_ptr CUserDBUpdate_AddBuddy114_next(nullptr);
-        info::CUserDBUpdate_AddBuddy114_clbk CUserDBUpdate_AddBuddy114_user(nullptr);
-        info::CUserDBUpdate_AlterPvPCashBag116_ptr CUserDBUpdate_AlterPvPCashBag116_next(nullptr);
-        info::CUserDBUpdate_AlterPvPCashBag116_clbk CUserDBUpdate_AlterPvPCashBag116_user(nullptr);
-        info::CUserDBUpdate_AlterPvPPoint118_ptr CUserDBUpdate_AlterPvPPoint118_next(nullptr);
-        info::CUserDBUpdate_AlterPvPPoint118_clbk CUserDBUpdate_AlterPvPPoint118_user(nullptr);
-        info::CUserDBUpdate_AutoTradeAllClear120_ptr CUserDBUpdate_AutoTradeAllClear120_next(nullptr);
-        info::CUserDBUpdate_AutoTradeAllClear120_clbk CUserDBUpdate_AutoTradeAllClear120_user(nullptr);
-        info::CUserDBUpdate_BagNum122_ptr CUserDBUpdate_BagNum122_next(nullptr);
-        info::CUserDBUpdate_BagNum122_clbk CUserDBUpdate_BagNum122_user(nullptr);
-        info::CUserDBUpdate_Bind124_ptr CUserDBUpdate_Bind124_next(nullptr);
-        info::CUserDBUpdate_Bind124_clbk CUserDBUpdate_Bind124_user(nullptr);
-        info::CUserDBUpdate_BossCryMsg126_ptr CUserDBUpdate_BossCryMsg126_next(nullptr);
-        info::CUserDBUpdate_BossCryMsg126_clbk CUserDBUpdate_BossCryMsg126_user(nullptr);
-        info::CUserDBUpdate_Class128_ptr CUserDBUpdate_Class128_next(nullptr);
-        info::CUserDBUpdate_Class128_clbk CUserDBUpdate_Class128_user(nullptr);
-        info::CUserDBUpdate_CombineExResult_Pop130_ptr CUserDBUpdate_CombineExResult_Pop130_next(nullptr);
-        info::CUserDBUpdate_CombineExResult_Pop130_clbk CUserDBUpdate_CombineExResult_Pop130_user(nullptr);
-        info::CUserDBUpdate_CombineExResult_Push132_ptr CUserDBUpdate_CombineExResult_Push132_next(nullptr);
-        info::CUserDBUpdate_CombineExResult_Push132_clbk CUserDBUpdate_CombineExResult_Push132_user(nullptr);
-        info::CUserDBUpdate_CopyAll134_ptr CUserDBUpdate_CopyAll134_next(nullptr);
-        info::CUserDBUpdate_CopyAll134_clbk CUserDBUpdate_CopyAll134_user(nullptr);
-        info::CUserDBUpdate_CuttingEmpty136_ptr CUserDBUpdate_CuttingEmpty136_next(nullptr);
-        info::CUserDBUpdate_CuttingEmpty136_clbk CUserDBUpdate_CuttingEmpty136_user(nullptr);
-        info::CUserDBUpdate_CuttingPush138_ptr CUserDBUpdate_CuttingPush138_next(nullptr);
-        info::CUserDBUpdate_CuttingPush138_clbk CUserDBUpdate_CuttingPush138_user(nullptr);
-        info::CUserDBUpdate_CuttingTrans140_ptr CUserDBUpdate_CuttingTrans140_next(nullptr);
-        info::CUserDBUpdate_CuttingTrans140_clbk CUserDBUpdate_CuttingTrans140_user(nullptr);
-        info::CUserDBUpdate_DelBuddy142_ptr CUserDBUpdate_DelBuddy142_next(nullptr);
-        info::CUserDBUpdate_DelBuddy142_clbk CUserDBUpdate_DelBuddy142_user(nullptr);
-        info::CUserDBUpdate_DelPost144_ptr CUserDBUpdate_DelPost144_next(nullptr);
-        info::CUserDBUpdate_DelPost144_clbk CUserDBUpdate_DelPost144_user(nullptr);
-        info::CUserDBUpdate_Exp146_ptr CUserDBUpdate_Exp146_next(nullptr);
-        info::CUserDBUpdate_Exp146_clbk CUserDBUpdate_Exp146_user(nullptr);
-        info::CUserDBUpdate_ExtTrunkSlotNum148_ptr CUserDBUpdate_ExtTrunkSlotNum148_next(nullptr);
-        info::CUserDBUpdate_ExtTrunkSlotNum148_clbk CUserDBUpdate_ExtTrunkSlotNum148_user(nullptr);
-        info::CUserDBUpdate_ItemAdd150_ptr CUserDBUpdate_ItemAdd150_next(nullptr);
-        info::CUserDBUpdate_ItemAdd150_clbk CUserDBUpdate_ItemAdd150_user(nullptr);
-        info::CUserDBUpdate_ItemDelete152_ptr CUserDBUpdate_ItemDelete152_next(nullptr);
-        info::CUserDBUpdate_ItemDelete152_clbk CUserDBUpdate_ItemDelete152_user(nullptr);
-        info::CUserDBUpdate_ItemDur154_ptr CUserDBUpdate_ItemDur154_next(nullptr);
-        info::CUserDBUpdate_ItemDur154_clbk CUserDBUpdate_ItemDur154_user(nullptr);
-        info::CUserDBUpdate_ItemSlot156_ptr CUserDBUpdate_ItemSlot156_next(nullptr);
-        info::CUserDBUpdate_ItemSlot156_clbk CUserDBUpdate_ItemSlot156_user(nullptr);
-        info::CUserDBUpdate_ItemUpgrade158_ptr CUserDBUpdate_ItemUpgrade158_next(nullptr);
-        info::CUserDBUpdate_ItemUpgrade158_clbk CUserDBUpdate_ItemUpgrade158_user(nullptr);
-        info::CUserDBUpdate_LastAttBuff160_ptr CUserDBUpdate_LastAttBuff160_next(nullptr);
-        info::CUserDBUpdate_LastAttBuff160_clbk CUserDBUpdate_LastAttBuff160_user(nullptr);
-        info::CUserDBUpdate_Level162_ptr CUserDBUpdate_Level162_next(nullptr);
-        info::CUserDBUpdate_Level162_clbk CUserDBUpdate_Level162_user(nullptr);
-        info::CUserDBUpdate_LinkBoardLock164_ptr CUserDBUpdate_LinkBoardLock164_next(nullptr);
-        info::CUserDBUpdate_LinkBoardLock164_clbk CUserDBUpdate_LinkBoardLock164_user(nullptr);
-        info::CUserDBUpdate_LinkBoardSlot166_ptr CUserDBUpdate_LinkBoardSlot166_next(nullptr);
-        info::CUserDBUpdate_LinkBoardSlot166_clbk CUserDBUpdate_LinkBoardSlot166_user(nullptr);
-        info::CUserDBUpdate_LossExp168_ptr CUserDBUpdate_LossExp168_next(nullptr);
-        info::CUserDBUpdate_LossExp168_clbk CUserDBUpdate_LossExp168_user(nullptr);
-        info::CUserDBUpdate_Macro170_ptr CUserDBUpdate_Macro170_next(nullptr);
-        info::CUserDBUpdate_Macro170_clbk CUserDBUpdate_Macro170_user(nullptr);
-        info::CUserDBUpdate_Map172_ptr CUserDBUpdate_Map172_next(nullptr);
-        info::CUserDBUpdate_Map172_clbk CUserDBUpdate_Map172_user(nullptr);
-        info::CUserDBUpdate_MaxLevel174_ptr CUserDBUpdate_MaxLevel174_next(nullptr);
-        info::CUserDBUpdate_MaxLevel174_clbk CUserDBUpdate_MaxLevel174_user(nullptr);
-        info::CUserDBUpdate_Money176_ptr CUserDBUpdate_Money176_next(nullptr);
-        info::CUserDBUpdate_Money176_clbk CUserDBUpdate_Money176_user(nullptr);
-        info::CUserDBUpdate_NPCQuestHistory178_ptr CUserDBUpdate_NPCQuestHistory178_next(nullptr);
-        info::CUserDBUpdate_NPCQuestHistory178_clbk CUserDBUpdate_NPCQuestHistory178_user(nullptr);
-        info::CUserDBUpdate_Param180_ptr CUserDBUpdate_Param180_next(nullptr);
-        info::CUserDBUpdate_Param180_clbk CUserDBUpdate_Param180_user(nullptr);
-        info::CUserDBUpdate_PlayTime182_ptr CUserDBUpdate_PlayTime182_next(nullptr);
-        info::CUserDBUpdate_PlayTime182_clbk CUserDBUpdate_PlayTime182_user(nullptr);
-        info::CUserDBUpdate_Post184_ptr CUserDBUpdate_Post184_next(nullptr);
-        info::CUserDBUpdate_Post184_clbk CUserDBUpdate_Post184_user(nullptr);
-        info::CUserDBUpdate_PotionNextUseTime186_ptr CUserDBUpdate_PotionNextUseTime186_next(nullptr);
-        info::CUserDBUpdate_PotionNextUseTime186_clbk CUserDBUpdate_PotionNextUseTime186_user(nullptr);
-        info::CUserDBUpdate_PvpPointLeak188_ptr CUserDBUpdate_PvpPointLeak188_next(nullptr);
-        info::CUserDBUpdate_PvpPointLeak188_clbk CUserDBUpdate_PvpPointLeak188_user(nullptr);
-        info::CUserDBUpdate_QuestDelete190_ptr CUserDBUpdate_QuestDelete190_next(nullptr);
-        info::CUserDBUpdate_QuestDelete190_clbk CUserDBUpdate_QuestDelete190_user(nullptr);
-        info::CUserDBUpdate_QuestInsert192_ptr CUserDBUpdate_QuestInsert192_next(nullptr);
-        info::CUserDBUpdate_QuestInsert192_clbk CUserDBUpdate_QuestInsert192_user(nullptr);
-        info::CUserDBUpdate_QuestUpdate194_ptr CUserDBUpdate_QuestUpdate194_next(nullptr);
-        info::CUserDBUpdate_QuestUpdate194_clbk CUserDBUpdate_QuestUpdate194_user(nullptr);
-        info::CUserDBUpdate_RaceVoteInfoInit196_ptr CUserDBUpdate_RaceVoteInfoInit196_next(nullptr);
-        info::CUserDBUpdate_RaceVoteInfoInit196_clbk CUserDBUpdate_RaceVoteInfoInit196_user(nullptr);
-        info::CUserDBUpdate_ReturnPost198_ptr CUserDBUpdate_ReturnPost198_next(nullptr);
-        info::CUserDBUpdate_ReturnPost198_clbk CUserDBUpdate_ReturnPost198_user(nullptr);
-        info::CUserDBUpdate_SFContDelete200_ptr CUserDBUpdate_SFContDelete200_next(nullptr);
-        info::CUserDBUpdate_SFContDelete200_clbk CUserDBUpdate_SFContDelete200_user(nullptr);
-        info::CUserDBUpdate_SFContInsert202_ptr CUserDBUpdate_SFContInsert202_next(nullptr);
-        info::CUserDBUpdate_SFContInsert202_clbk CUserDBUpdate_SFContInsert202_user(nullptr);
-        info::CUserDBUpdate_SFContUpdate204_ptr CUserDBUpdate_SFContUpdate204_next(nullptr);
-        info::CUserDBUpdate_SFContUpdate204_clbk CUserDBUpdate_SFContUpdate204_user(nullptr);
-        info::CUserDBUpdate_StartNPCQuestHistory206_ptr CUserDBUpdate_StartNPCQuestHistory206_next(nullptr);
-        info::CUserDBUpdate_StartNPCQuestHistory206_clbk CUserDBUpdate_StartNPCQuestHistory206_user(nullptr);
-        info::CUserDBUpdate_Stat208_ptr CUserDBUpdate_Stat208_next(nullptr);
-        info::CUserDBUpdate_Stat208_clbk CUserDBUpdate_Stat208_user(nullptr);
-        info::CUserDBUpdate_TakeLastCriTicket210_ptr CUserDBUpdate_TakeLastCriTicket210_next(nullptr);
-        info::CUserDBUpdate_TakeLastCriTicket210_clbk CUserDBUpdate_TakeLastCriTicket210_user(nullptr);
-        info::CUserDBUpdate_TakeLastMentalTicket212_ptr CUserDBUpdate_TakeLastMentalTicket212_next(nullptr);
-        info::CUserDBUpdate_TakeLastMentalTicket212_clbk CUserDBUpdate_TakeLastMentalTicket212_user(nullptr);
-        info::CUserDBUpdate_TrunkHint214_ptr CUserDBUpdate_TrunkHint214_next(nullptr);
-        info::CUserDBUpdate_TrunkHint214_clbk CUserDBUpdate_TrunkHint214_user(nullptr);
-        info::CUserDBUpdate_TrunkMoney216_ptr CUserDBUpdate_TrunkMoney216_next(nullptr);
-        info::CUserDBUpdate_TrunkMoney216_clbk CUserDBUpdate_TrunkMoney216_user(nullptr);
-        info::CUserDBUpdate_TrunkPassword218_ptr CUserDBUpdate_TrunkPassword218_next(nullptr);
-        info::CUserDBUpdate_TrunkPassword218_clbk CUserDBUpdate_TrunkPassword218_user(nullptr);
-        info::CUserDBUpdate_TrunkSlotNum220_ptr CUserDBUpdate_TrunkSlotNum220_next(nullptr);
-        info::CUserDBUpdate_TrunkSlotNum220_clbk CUserDBUpdate_TrunkSlotNum220_user(nullptr);
-        info::CUserDBUpdate_UnitData222_ptr CUserDBUpdate_UnitData222_next(nullptr);
-        info::CUserDBUpdate_UnitData222_clbk CUserDBUpdate_UnitData222_user(nullptr);
-        info::CUserDBUpdate_UnitDelete224_ptr CUserDBUpdate_UnitDelete224_next(nullptr);
-        info::CUserDBUpdate_UnitDelete224_clbk CUserDBUpdate_UnitDelete224_user(nullptr);
-        info::CUserDBUpdate_UnitInsert226_ptr CUserDBUpdate_UnitInsert226_next(nullptr);
-        info::CUserDBUpdate_UnitInsert226_clbk CUserDBUpdate_UnitInsert226_user(nullptr);
-        info::CUserDBUpdate_UserFatigue228_ptr CUserDBUpdate_UserFatigue228_next(nullptr);
-        info::CUserDBUpdate_UserFatigue228_clbk CUserDBUpdate_UserFatigue228_user(nullptr);
-        info::CUserDBUpdate_UserGetScaner230_ptr CUserDBUpdate_UserGetScaner230_next(nullptr);
-        info::CUserDBUpdate_UserGetScaner230_clbk CUserDBUpdate_UserGetScaner230_user(nullptr);
-        info::CUserDBUpdate_UserPlayTime232_ptr CUserDBUpdate_UserPlayTime232_next(nullptr);
-        info::CUserDBUpdate_UserPlayTime232_clbk CUserDBUpdate_UserPlayTime232_user(nullptr);
-        info::CUserDBUpdate_UserTLStatus234_ptr CUserDBUpdate_UserTLStatus234_next(nullptr);
-        info::CUserDBUpdate_UserTLStatus234_clbk CUserDBUpdate_UserTLStatus234_user(nullptr);
-        info::CUserDBUpdate_UserVoteData236_ptr CUserDBUpdate_UserVoteData236_next(nullptr);
-        info::CUserDBUpdate_UserVoteData236_clbk CUserDBUpdate_UserVoteData236_user(nullptr);
-        info::CUserDBUpdate_User_Action_Point238_ptr CUserDBUpdate_User_Action_Point238_next(nullptr);
-        info::CUserDBUpdate_User_Action_Point238_clbk CUserDBUpdate_User_Action_Point238_user(nullptr);
-        info::CUserDBUpdate_WindowInfo240_ptr CUserDBUpdate_WindowInfo240_next(nullptr);
-        info::CUserDBUpdate_WindowInfo240_clbk CUserDBUpdate_WindowInfo240_user(nullptr);
-        info::CUserDBWriteLog_ChangeClassAfterInitClass242_ptr CUserDBWriteLog_ChangeClassAfterInitClass242_next(nullptr);
-        info::CUserDBWriteLog_ChangeClassAfterInitClass242_clbk CUserDBWriteLog_ChangeClassAfterInitClass242_user(nullptr);
-        info::CUserDBWriteLog_CharSelect244_ptr CUserDBWriteLog_CharSelect244_next(nullptr);
-        info::CUserDBWriteLog_CharSelect244_clbk CUserDBWriteLog_CharSelect244_user(nullptr);
-        info::CUserDBWriteLog_Level246_ptr CUserDBWriteLog_Level246_next(nullptr);
-        info::CUserDBWriteLog_Level246_clbk CUserDBWriteLog_Level246_user(nullptr);
-        info::CUserDBdtor_CUserDB252_ptr CUserDBdtor_CUserDB252_next(nullptr);
-        info::CUserDBdtor_CUserDB252_clbk CUserDBdtor_CUserDB252_user(nullptr);
+        static info::CUserDBAlive_Char_Complete2_ptr CUserDBAlive_Char_Complete2_next(nullptr);
+        static info::CUserDBAlive_Char_Complete2_clbk CUserDBAlive_Char_Complete2_user(nullptr);
+        static info::CUserDBAlive_Char_Request4_ptr CUserDBAlive_Char_Request4_next(nullptr);
+        static info::CUserDBAlive_Char_Request4_clbk CUserDBAlive_Char_Request4_user(nullptr);
+        static info::CUserDBctor_CUserDB6_ptr CUserDBctor_CUserDB6_next(nullptr);
+        static info::CUserDBctor_CUserDB6_clbk CUserDBctor_CUserDB6_user(nullptr);
+        static info::CUserDBCalcRadarDelay8_ptr CUserDBCalcRadarDelay8_next(nullptr);
+        static info::CUserDBCalcRadarDelay8_clbk CUserDBCalcRadarDelay8_user(nullptr);
+        static info::CUserDBCheckDQSLoadCharacterData10_ptr CUserDBCheckDQSLoadCharacterData10_next(nullptr);
+        static info::CUserDBCheckDQSLoadCharacterData10_clbk CUserDBCheckDQSLoadCharacterData10_user(nullptr);
+        static info::CUserDBClearBillingData12_ptr CUserDBClearBillingData12_next(nullptr);
+        static info::CUserDBClearBillingData12_clbk CUserDBClearBillingData12_user(nullptr);
+        static info::CUserDBCont_UserSave_Complete14_ptr CUserDBCont_UserSave_Complete14_next(nullptr);
+        static info::CUserDBCont_UserSave_Complete14_clbk CUserDBCont_UserSave_Complete14_user(nullptr);
+        static info::CUserDBDataValidCheckRevise16_ptr CUserDBDataValidCheckRevise16_next(nullptr);
+        static info::CUserDBDataValidCheckRevise16_clbk CUserDBDataValidCheckRevise16_user(nullptr);
+        static info::CUserDBDelPostData18_ptr CUserDBDelPostData18_next(nullptr);
+        static info::CUserDBDelPostData18_clbk CUserDBDelPostData18_user(nullptr);
+        static info::CUserDBDelete_Char_Complete20_ptr CUserDBDelete_Char_Complete20_next(nullptr);
+        static info::CUserDBDelete_Char_Complete20_clbk CUserDBDelete_Char_Complete20_user(nullptr);
+        static info::CUserDBDelete_Char_Request22_ptr CUserDBDelete_Char_Request22_next(nullptr);
+        static info::CUserDBDelete_Char_Request22_clbk CUserDBDelete_Char_Request22_user(nullptr);
+        static info::CUserDBDummyCreate24_ptr CUserDBDummyCreate24_next(nullptr);
+        static info::CUserDBDummyCreate24_clbk CUserDBDummyCreate24_user(nullptr);
+        static info::CUserDBEnter_Account26_ptr CUserDBEnter_Account26_next(nullptr);
+        static info::CUserDBEnter_Account26_clbk CUserDBEnter_Account26_user(nullptr);
+        static info::CUserDBExit_Account_Complete28_ptr CUserDBExit_Account_Complete28_next(nullptr);
+        static info::CUserDBExit_Account_Complete28_clbk CUserDBExit_Account_Complete28_user(nullptr);
+        static info::CUserDBExit_Account_Request30_ptr CUserDBExit_Account_Request30_next(nullptr);
+        static info::CUserDBExit_Account_Request30_clbk CUserDBExit_Account_Request30_user(nullptr);
+        static info::CUserDBFirstSettingData32_ptr CUserDBFirstSettingData32_next(nullptr);
+        static info::CUserDBFirstSettingData32_clbk CUserDBFirstSettingData32_user(nullptr);
+        static info::CUserDBForceCloseCommand34_ptr CUserDBForceCloseCommand34_next(nullptr);
+        static info::CUserDBForceCloseCommand34_clbk CUserDBForceCloseCommand34_user(nullptr);
+        static info::CUserDBGetActPoint36_ptr CUserDBGetActPoint36_next(nullptr);
+        static info::CUserDBGetActPoint36_clbk CUserDBGetActPoint36_user(nullptr);
+        static info::CUserDBGetBillingType38_ptr CUserDBGetBillingType38_next(nullptr);
+        static info::CUserDBGetBillingType38_clbk CUserDBGetBillingType38_user(nullptr);
+        static info::CUserDBGetPtrActPoint40_ptr CUserDBGetPtrActPoint40_next(nullptr);
+        static info::CUserDBGetPtrActPoint40_clbk CUserDBGetPtrActPoint40_user(nullptr);
+        static info::CUserDBInform_For_Exit_By_FireguardBlock42_ptr CUserDBInform_For_Exit_By_FireguardBlock42_next(nullptr);
+        static info::CUserDBInform_For_Exit_By_FireguardBlock42_clbk CUserDBInform_For_Exit_By_FireguardBlock42_user(nullptr);
+        static info::CUserDBInit44_ptr CUserDBInit44_next(nullptr);
+        static info::CUserDBInit44_clbk CUserDBInit44_user(nullptr);
+        static info::CUserDBInitClass46_ptr CUserDBInitClass46_next(nullptr);
+        static info::CUserDBInitClass46_clbk CUserDBInitClass46_user(nullptr);
+        static info::CUserDBInsert_Char_Complete48_ptr CUserDBInsert_Char_Complete48_next(nullptr);
+        static info::CUserDBInsert_Char_Complete48_clbk CUserDBInsert_Char_Complete48_user(nullptr);
+        static info::CUserDBInsert_Char_Request50_ptr CUserDBInsert_Char_Request50_next(nullptr);
+        static info::CUserDBInsert_Char_Request50_clbk CUserDBInsert_Char_Request50_user(nullptr);
+        static info::CUserDBIsContPushBefore52_ptr CUserDBIsContPushBefore52_next(nullptr);
+        static info::CUserDBIsContPushBefore52_clbk CUserDBIsContPushBefore52_user(nullptr);
+        static info::CUserDBIsExistRequestMoveCharacterList54_ptr CUserDBIsExistRequestMoveCharacterList54_next(nullptr);
+        static info::CUserDBIsExistRequestMoveCharacterList54_clbk CUserDBIsExistRequestMoveCharacterList54_user(nullptr);
+        static info::CUserDBIsReturnPostUpdate56_ptr CUserDBIsReturnPostUpdate56_next(nullptr);
+        static info::CUserDBIsReturnPostUpdate56_clbk CUserDBIsReturnPostUpdate56_user(nullptr);
+        static info::CUserDBLobby_Char_Complete58_ptr CUserDBLobby_Char_Complete58_next(nullptr);
+        static info::CUserDBLobby_Char_Complete58_clbk CUserDBLobby_Char_Complete58_user(nullptr);
+        static info::CUserDBLobby_Char_Request60_ptr CUserDBLobby_Char_Request60_next(nullptr);
+        static info::CUserDBLobby_Char_Request60_clbk CUserDBLobby_Char_Request60_user(nullptr);
+        static info::CUserDBOnLoop_Static62_ptr CUserDBOnLoop_Static62_next(nullptr);
+        static info::CUserDBOnLoop_Static62_clbk CUserDBOnLoop_Static62_user(nullptr);
+        static info::CUserDBParamInit64_ptr CUserDBParamInit64_next(nullptr);
+        static info::CUserDBParamInit64_clbk CUserDBParamInit64_user(nullptr);
+        static info::CUserDBReRangeClientIndex66_ptr CUserDBReRangeClientIndex66_next(nullptr);
+        static info::CUserDBReRangeClientIndex66_clbk CUserDBReRangeClientIndex66_user(nullptr);
+        static info::CUserDBReged_Char_Complete68_ptr CUserDBReged_Char_Complete68_next(nullptr);
+        static info::CUserDBReged_Char_Complete68_clbk CUserDBReged_Char_Complete68_user(nullptr);
+        static info::CUserDBReged_Char_Request70_ptr CUserDBReged_Char_Request70_next(nullptr);
+        static info::CUserDBReged_Char_Request70_clbk CUserDBReged_Char_Request70_user(nullptr);
+        static info::CUserDBSelect_Char_Complete72_ptr CUserDBSelect_Char_Complete72_next(nullptr);
+        static info::CUserDBSelect_Char_Complete72_clbk CUserDBSelect_Char_Complete72_user(nullptr);
+        static info::CUserDBSelect_Char_Request74_ptr CUserDBSelect_Char_Request74_next(nullptr);
+        static info::CUserDBSelect_Char_Request74_clbk CUserDBSelect_Char_Request74_user(nullptr);
+        static info::CUserDBSendMsgAccount_UILockRefresh_Update76_ptr CUserDBSendMsgAccount_UILockRefresh_Update76_next(nullptr);
+        static info::CUserDBSendMsgAccount_UILockRefresh_Update76_clbk CUserDBSendMsgAccount_UILockRefresh_Update76_user(nullptr);
+        static info::CUserDBSendMsg_BillingInfo78_ptr CUserDBSendMsg_BillingInfo78_next(nullptr);
+        static info::CUserDBSendMsg_BillingInfo78_clbk CUserDBSendMsg_BillingInfo78_user(nullptr);
+        static info::CUserDBSendMsg_Inform_UILock80_ptr CUserDBSendMsg_Inform_UILock80_next(nullptr);
+        static info::CUserDBSendMsg_Inform_UILock80_clbk CUserDBSendMsg_Inform_UILock80_user(nullptr);
+        static info::CUserDBSetActPoint82_ptr CUserDBSetActPoint82_next(nullptr);
+        static info::CUserDBSetActPoint82_clbk CUserDBSetActPoint82_user(nullptr);
+        static info::CUserDBSetBillingData84_ptr CUserDBSetBillingData84_next(nullptr);
+        static info::CUserDBSetBillingData84_clbk CUserDBSetBillingData84_user(nullptr);
+        static info::CUserDBSetBillingData86_ptr CUserDBSetBillingData86_next(nullptr);
+        static info::CUserDBSetBillingData86_clbk CUserDBSetBillingData86_user(nullptr);
+        static info::CUserDBSetBillingNoLogout88_ptr CUserDBSetBillingNoLogout88_next(nullptr);
+        static info::CUserDBSetBillingNoLogout88_clbk CUserDBSetBillingNoLogout88_user(nullptr);
+        static info::CUserDBSetChatLock90_ptr CUserDBSetChatLock90_next(nullptr);
+        static info::CUserDBSetChatLock90_clbk CUserDBSetChatLock90_user(nullptr);
+        static info::CUserDBSetDBPostData92_ptr CUserDBSetDBPostData92_next(nullptr);
+        static info::CUserDBSetDBPostData92_clbk CUserDBSetDBPostData92_user(nullptr);
+        static info::CUserDBSetNewDBPostData94_ptr CUserDBSetNewDBPostData94_next(nullptr);
+        static info::CUserDBSetNewDBPostData94_clbk CUserDBSetNewDBPostData94_user(nullptr);
+        static info::CUserDBSetRadarDelay96_ptr CUserDBSetRadarDelay96_next(nullptr);
+        static info::CUserDBSetRadarDelay96_clbk CUserDBSetRadarDelay96_user(nullptr);
+        static info::CUserDBSetRemainTime98_ptr CUserDBSetRemainTime98_next(nullptr);
+        static info::CUserDBSetRemainTime98_clbk CUserDBSetRemainTime98_user(nullptr);
+        static info::CUserDBSetWorldCLID100_ptr CUserDBSetWorldCLID100_next(nullptr);
+        static info::CUserDBSetWorldCLID100_clbk CUserDBSetWorldCLID100_user(nullptr);
+        static info::CUserDBSetting_Class102_ptr CUserDBSetting_Class102_next(nullptr);
+        static info::CUserDBSetting_Class102_clbk CUserDBSetting_Class102_user(nullptr);
+        static info::CUserDBStartFieldMode104_ptr CUserDBStartFieldMode104_next(nullptr);
+        static info::CUserDBStartFieldMode104_clbk CUserDBStartFieldMode104_user(nullptr);
+        static info::CUserDBTotalPlayMinCheck106_ptr CUserDBTotalPlayMinCheck106_next(nullptr);
+        static info::CUserDBTotalPlayMinCheck106_clbk CUserDBTotalPlayMinCheck106_user(nullptr);
+        static info::CUserDBUILockInfo_Init108_ptr CUserDBUILockInfo_Init108_next(nullptr);
+        static info::CUserDBUILockInfo_Init108_clbk CUserDBUILockInfo_Init108_user(nullptr);
+        static info::CUserDBUILockInfo_Update110_ptr CUserDBUILockInfo_Update110_next(nullptr);
+        static info::CUserDBUILockInfo_Update110_clbk CUserDBUILockInfo_Update110_user(nullptr);
+        static info::CUserDBUpdateContUserSave112_ptr CUserDBUpdateContUserSave112_next(nullptr);
+        static info::CUserDBUpdateContUserSave112_clbk CUserDBUpdateContUserSave112_user(nullptr);
+        static info::CUserDBUpdate_AddBuddy114_ptr CUserDBUpdate_AddBuddy114_next(nullptr);
+        static info::CUserDBUpdate_AddBuddy114_clbk CUserDBUpdate_AddBuddy114_user(nullptr);
+        static info::CUserDBUpdate_AlterPvPCashBag116_ptr CUserDBUpdate_AlterPvPCashBag116_next(nullptr);
+        static info::CUserDBUpdate_AlterPvPCashBag116_clbk CUserDBUpdate_AlterPvPCashBag116_user(nullptr);
+        static info::CUserDBUpdate_AlterPvPPoint118_ptr CUserDBUpdate_AlterPvPPoint118_next(nullptr);
+        static info::CUserDBUpdate_AlterPvPPoint118_clbk CUserDBUpdate_AlterPvPPoint118_user(nullptr);
+        static info::CUserDBUpdate_AutoTradeAllClear120_ptr CUserDBUpdate_AutoTradeAllClear120_next(nullptr);
+        static info::CUserDBUpdate_AutoTradeAllClear120_clbk CUserDBUpdate_AutoTradeAllClear120_user(nullptr);
+        static info::CUserDBUpdate_BagNum122_ptr CUserDBUpdate_BagNum122_next(nullptr);
+        static info::CUserDBUpdate_BagNum122_clbk CUserDBUpdate_BagNum122_user(nullptr);
+        static info::CUserDBUpdate_Bind124_ptr CUserDBUpdate_Bind124_next(nullptr);
+        static info::CUserDBUpdate_Bind124_clbk CUserDBUpdate_Bind124_user(nullptr);
+        static info::CUserDBUpdate_BossCryMsg126_ptr CUserDBUpdate_BossCryMsg126_next(nullptr);
+        static info::CUserDBUpdate_BossCryMsg126_clbk CUserDBUpdate_BossCryMsg126_user(nullptr);
+        static info::CUserDBUpdate_Class128_ptr CUserDBUpdate_Class128_next(nullptr);
+        static info::CUserDBUpdate_Class128_clbk CUserDBUpdate_Class128_user(nullptr);
+        static info::CUserDBUpdate_CombineExResult_Pop130_ptr CUserDBUpdate_CombineExResult_Pop130_next(nullptr);
+        static info::CUserDBUpdate_CombineExResult_Pop130_clbk CUserDBUpdate_CombineExResult_Pop130_user(nullptr);
+        static info::CUserDBUpdate_CombineExResult_Push132_ptr CUserDBUpdate_CombineExResult_Push132_next(nullptr);
+        static info::CUserDBUpdate_CombineExResult_Push132_clbk CUserDBUpdate_CombineExResult_Push132_user(nullptr);
+        static info::CUserDBUpdate_CopyAll134_ptr CUserDBUpdate_CopyAll134_next(nullptr);
+        static info::CUserDBUpdate_CopyAll134_clbk CUserDBUpdate_CopyAll134_user(nullptr);
+        static info::CUserDBUpdate_CuttingEmpty136_ptr CUserDBUpdate_CuttingEmpty136_next(nullptr);
+        static info::CUserDBUpdate_CuttingEmpty136_clbk CUserDBUpdate_CuttingEmpty136_user(nullptr);
+        static info::CUserDBUpdate_CuttingPush138_ptr CUserDBUpdate_CuttingPush138_next(nullptr);
+        static info::CUserDBUpdate_CuttingPush138_clbk CUserDBUpdate_CuttingPush138_user(nullptr);
+        static info::CUserDBUpdate_CuttingTrans140_ptr CUserDBUpdate_CuttingTrans140_next(nullptr);
+        static info::CUserDBUpdate_CuttingTrans140_clbk CUserDBUpdate_CuttingTrans140_user(nullptr);
+        static info::CUserDBUpdate_DelBuddy142_ptr CUserDBUpdate_DelBuddy142_next(nullptr);
+        static info::CUserDBUpdate_DelBuddy142_clbk CUserDBUpdate_DelBuddy142_user(nullptr);
+        static info::CUserDBUpdate_DelPost144_ptr CUserDBUpdate_DelPost144_next(nullptr);
+        static info::CUserDBUpdate_DelPost144_clbk CUserDBUpdate_DelPost144_user(nullptr);
+        static info::CUserDBUpdate_Exp146_ptr CUserDBUpdate_Exp146_next(nullptr);
+        static info::CUserDBUpdate_Exp146_clbk CUserDBUpdate_Exp146_user(nullptr);
+        static info::CUserDBUpdate_ExtTrunkSlotNum148_ptr CUserDBUpdate_ExtTrunkSlotNum148_next(nullptr);
+        static info::CUserDBUpdate_ExtTrunkSlotNum148_clbk CUserDBUpdate_ExtTrunkSlotNum148_user(nullptr);
+        static info::CUserDBUpdate_ItemAdd150_ptr CUserDBUpdate_ItemAdd150_next(nullptr);
+        static info::CUserDBUpdate_ItemAdd150_clbk CUserDBUpdate_ItemAdd150_user(nullptr);
+        static info::CUserDBUpdate_ItemDelete152_ptr CUserDBUpdate_ItemDelete152_next(nullptr);
+        static info::CUserDBUpdate_ItemDelete152_clbk CUserDBUpdate_ItemDelete152_user(nullptr);
+        static info::CUserDBUpdate_ItemDur154_ptr CUserDBUpdate_ItemDur154_next(nullptr);
+        static info::CUserDBUpdate_ItemDur154_clbk CUserDBUpdate_ItemDur154_user(nullptr);
+        static info::CUserDBUpdate_ItemSlot156_ptr CUserDBUpdate_ItemSlot156_next(nullptr);
+        static info::CUserDBUpdate_ItemSlot156_clbk CUserDBUpdate_ItemSlot156_user(nullptr);
+        static info::CUserDBUpdate_ItemUpgrade158_ptr CUserDBUpdate_ItemUpgrade158_next(nullptr);
+        static info::CUserDBUpdate_ItemUpgrade158_clbk CUserDBUpdate_ItemUpgrade158_user(nullptr);
+        static info::CUserDBUpdate_LastAttBuff160_ptr CUserDBUpdate_LastAttBuff160_next(nullptr);
+        static info::CUserDBUpdate_LastAttBuff160_clbk CUserDBUpdate_LastAttBuff160_user(nullptr);
+        static info::CUserDBUpdate_Level162_ptr CUserDBUpdate_Level162_next(nullptr);
+        static info::CUserDBUpdate_Level162_clbk CUserDBUpdate_Level162_user(nullptr);
+        static info::CUserDBUpdate_LinkBoardLock164_ptr CUserDBUpdate_LinkBoardLock164_next(nullptr);
+        static info::CUserDBUpdate_LinkBoardLock164_clbk CUserDBUpdate_LinkBoardLock164_user(nullptr);
+        static info::CUserDBUpdate_LinkBoardSlot166_ptr CUserDBUpdate_LinkBoardSlot166_next(nullptr);
+        static info::CUserDBUpdate_LinkBoardSlot166_clbk CUserDBUpdate_LinkBoardSlot166_user(nullptr);
+        static info::CUserDBUpdate_LossExp168_ptr CUserDBUpdate_LossExp168_next(nullptr);
+        static info::CUserDBUpdate_LossExp168_clbk CUserDBUpdate_LossExp168_user(nullptr);
+        static info::CUserDBUpdate_Macro170_ptr CUserDBUpdate_Macro170_next(nullptr);
+        static info::CUserDBUpdate_Macro170_clbk CUserDBUpdate_Macro170_user(nullptr);
+        static info::CUserDBUpdate_Map172_ptr CUserDBUpdate_Map172_next(nullptr);
+        static info::CUserDBUpdate_Map172_clbk CUserDBUpdate_Map172_user(nullptr);
+        static info::CUserDBUpdate_MaxLevel174_ptr CUserDBUpdate_MaxLevel174_next(nullptr);
+        static info::CUserDBUpdate_MaxLevel174_clbk CUserDBUpdate_MaxLevel174_user(nullptr);
+        static info::CUserDBUpdate_Money176_ptr CUserDBUpdate_Money176_next(nullptr);
+        static info::CUserDBUpdate_Money176_clbk CUserDBUpdate_Money176_user(nullptr);
+        static info::CUserDBUpdate_NPCQuestHistory178_ptr CUserDBUpdate_NPCQuestHistory178_next(nullptr);
+        static info::CUserDBUpdate_NPCQuestHistory178_clbk CUserDBUpdate_NPCQuestHistory178_user(nullptr);
+        static info::CUserDBUpdate_Param180_ptr CUserDBUpdate_Param180_next(nullptr);
+        static info::CUserDBUpdate_Param180_clbk CUserDBUpdate_Param180_user(nullptr);
+        static info::CUserDBUpdate_PlayTime182_ptr CUserDBUpdate_PlayTime182_next(nullptr);
+        static info::CUserDBUpdate_PlayTime182_clbk CUserDBUpdate_PlayTime182_user(nullptr);
+        static info::CUserDBUpdate_Post184_ptr CUserDBUpdate_Post184_next(nullptr);
+        static info::CUserDBUpdate_Post184_clbk CUserDBUpdate_Post184_user(nullptr);
+        static info::CUserDBUpdate_PotionNextUseTime186_ptr CUserDBUpdate_PotionNextUseTime186_next(nullptr);
+        static info::CUserDBUpdate_PotionNextUseTime186_clbk CUserDBUpdate_PotionNextUseTime186_user(nullptr);
+        static info::CUserDBUpdate_PvpPointLeak188_ptr CUserDBUpdate_PvpPointLeak188_next(nullptr);
+        static info::CUserDBUpdate_PvpPointLeak188_clbk CUserDBUpdate_PvpPointLeak188_user(nullptr);
+        static info::CUserDBUpdate_QuestDelete190_ptr CUserDBUpdate_QuestDelete190_next(nullptr);
+        static info::CUserDBUpdate_QuestDelete190_clbk CUserDBUpdate_QuestDelete190_user(nullptr);
+        static info::CUserDBUpdate_QuestInsert192_ptr CUserDBUpdate_QuestInsert192_next(nullptr);
+        static info::CUserDBUpdate_QuestInsert192_clbk CUserDBUpdate_QuestInsert192_user(nullptr);
+        static info::CUserDBUpdate_QuestUpdate194_ptr CUserDBUpdate_QuestUpdate194_next(nullptr);
+        static info::CUserDBUpdate_QuestUpdate194_clbk CUserDBUpdate_QuestUpdate194_user(nullptr);
+        static info::CUserDBUpdate_RaceVoteInfoInit196_ptr CUserDBUpdate_RaceVoteInfoInit196_next(nullptr);
+        static info::CUserDBUpdate_RaceVoteInfoInit196_clbk CUserDBUpdate_RaceVoteInfoInit196_user(nullptr);
+        static info::CUserDBUpdate_ReturnPost198_ptr CUserDBUpdate_ReturnPost198_next(nullptr);
+        static info::CUserDBUpdate_ReturnPost198_clbk CUserDBUpdate_ReturnPost198_user(nullptr);
+        static info::CUserDBUpdate_SFContDelete200_ptr CUserDBUpdate_SFContDelete200_next(nullptr);
+        static info::CUserDBUpdate_SFContDelete200_clbk CUserDBUpdate_SFContDelete200_user(nullptr);
+        static info::CUserDBUpdate_SFContInsert202_ptr CUserDBUpdate_SFContInsert202_next(nullptr);
+        static info::CUserDBUpdate_SFContInsert202_clbk CUserDBUpdate_SFContInsert202_user(nullptr);
+        static info::CUserDBUpdate_SFContUpdate204_ptr CUserDBUpdate_SFContUpdate204_next(nullptr);
+        static info::CUserDBUpdate_SFContUpdate204_clbk CUserDBUpdate_SFContUpdate204_user(nullptr);
+        static info::CUserDBUpdate_StartNPCQuestHistory206_ptr CUserDBUpdate_StartNPCQuestHistory206_next(nullptr);
+        static info::CUserDBUpdate_StartNPCQuestHistory206_clbk CUserDBUpdate_StartNPCQuestHistory206_user(nullptr);
+        static info::CUserDBUpdate_Stat208_ptr CUserDBUpdate_Stat208_next(nullptr);
+        static info::CUserDBUpdate_Stat208_clbk CUserDBUpdate_Stat208_user(nullptr);
+        static info::CUserDBUpdate_TakeLastCriTicket210_ptr CUserDBUpdate_TakeLastCriTicket210_next(nullptr);
+        static info::CUserDBUpdate_TakeLastCriTicket210_clbk CUserDBUpdate_TakeLastCriTicket210_user(nullptr);
+        static info::CUserDBUpdate_TakeLastMentalTicket212_ptr CUserDBUpdate_TakeLastMentalTicket212_next(nullptr);
+        static info::CUserDBUpdate_TakeLastMentalTicket212_clbk CUserDBUpdate_TakeLastMentalTicket212_user(nullptr);
+        static info::CUserDBUpdate_TrunkHint214_ptr CUserDBUpdate_TrunkHint214_next(nullptr);
+        static info::CUserDBUpdate_TrunkHint214_clbk CUserDBUpdate_TrunkHint214_user(nullptr);
+        static info::CUserDBUpdate_TrunkMoney216_ptr CUserDBUpdate_TrunkMoney216_next(nullptr);
+        static info::CUserDBUpdate_TrunkMoney216_clbk CUserDBUpdate_TrunkMoney216_user(nullptr);
+        static info::CUserDBUpdate_TrunkPassword218_ptr CUserDBUpdate_TrunkPassword218_next(nullptr);
+        static info::CUserDBUpdate_TrunkPassword218_clbk CUserDBUpdate_TrunkPassword218_user(nullptr);
+        static info::CUserDBUpdate_TrunkSlotNum220_ptr CUserDBUpdate_TrunkSlotNum220_next(nullptr);
+        static info::CUserDBUpdate_TrunkSlotNum220_clbk CUserDBUpdate_TrunkSlotNum220_user(nullptr);
+        static info::CUserDBUpdate_UnitData222_ptr CUserDBUpdate_UnitData222_next(nullptr);
+        static info::CUserDBUpdate_UnitData222_clbk CUserDBUpdate_UnitData222_user(nullptr);
+        static info::CUserDBUpdate_UnitDelete224_ptr CUserDBUpdate_UnitDelete224_next(nullptr);
+        static info::CUserDBUpdate_UnitDelete224_clbk CUserDBUpdate_UnitDelete224_user(nullptr);
+        static info::CUserDBUpdate_UnitInsert226_ptr CUserDBUpdate_UnitInsert226_next(nullptr);
+        static info::CUserDBUpdate_UnitInsert226_clbk CUserDBUpdate_UnitInsert226_user(nullptr);
+        static info::CUserDBUpdate_UserFatigue228_ptr CUserDBUpdate_UserFatigue228_next(nullptr);
+        static info::CUserDBUpdate_UserFatigue228_clbk CUserDBUpdate_UserFatigue228_user(nullptr);
+        static info::CUserDBUpdate_UserGetScaner230_ptr CUserDBUpdate_UserGetScaner230_next(nullptr);
+        static info::CUserDBUpdate_UserGetScaner230_clbk CUserDBUpdate_UserGetScaner230_user(nullptr);
+        static info::CUserDBUpdate_UserPlayTime232_ptr CUserDBUpdate_UserPlayTime232_next(nullptr);
+        static info::CUserDBUpdate_UserPlayTime232_clbk CUserDBUpdate_UserPlayTime232_user(nullptr);
+        static info::CUserDBUpdate_UserTLStatus234_ptr CUserDBUpdate_UserTLStatus234_next(nullptr);
+        static info::CUserDBUpdate_UserTLStatus234_clbk CUserDBUpdate_UserTLStatus234_user(nullptr);
+        static info::CUserDBUpdate_UserVoteData236_ptr CUserDBUpdate_UserVoteData236_next(nullptr);
+        static info::CUserDBUpdate_UserVoteData236_clbk CUserDBUpdate_UserVoteData236_user(nullptr);
+        static info::CUserDBUpdate_User_Action_Point238_ptr CUserDBUpdate_User_Action_Point238_next(nullptr);
+        static info::CUserDBUpdate_User_Action_Point238_clbk CUserDBUpdate_User_Action_Point238_user(nullptr);
+        static info::CUserDBUpdate_WindowInfo240_ptr CUserDBUpdate_WindowInfo240_next(nullptr);
+        static info::CUserDBUpdate_WindowInfo240_clbk CUserDBUpdate_WindowInfo240_user(nullptr);
+        static info::CUserDBWriteLog_ChangeClassAfterInitClass242_ptr CUserDBWriteLog_ChangeClassAfterInitClass242_next(nullptr);
+        static info::CUserDBWriteLog_ChangeClassAfterInitClass242_clbk CUserDBWriteLog_ChangeClassAfterInitClass242_user(nullptr);
+        static info::CUserDBWriteLog_CharSelect244_ptr CUserDBWriteLog_CharSelect244_next(nullptr);
+        static info::CUserDBWriteLog_CharSelect244_clbk CUserDBWriteLog_CharSelect244_user(nullptr);
+        static info::CUserDBWriteLog_Level246_ptr CUserDBWriteLog_Level246_next(nullptr);
+        static info::CUserDBWriteLog_Level246_clbk CUserDBWriteLog_Level246_user(nullptr);
+        static info::CUserDBdtor_CUserDB252_ptr CUserDBdtor_CUserDB252_next(nullptr);
+        static info::CUserDBdtor_CUserDB252_clbk CUserDBdtor_CUserDB252_user(nullptr);
         
-        void CUserDBAlive_Char_Complete2_wrapper(struct CUserDB* _this, char byRetCode, char byCase, unsigned int dwSerial, struct _REGED* pAliveAvator)
+        static void CUserDBAlive_Char_Complete2_wrapper(struct CUserDB* _this, char byRetCode, char byCase, unsigned int dwSerial, struct _REGED* pAliveAvator)
         {
            CUserDBAlive_Char_Complete2_user(_this, byRetCode, byCase, dwSerial, pAliveAvator, CUserDBAlive_Char_Complete2_next);
         };
-        bool CUserDBAlive_Char_Request4_wrapper(struct CUserDB* _this, char byCase, unsigned int dwSerial, char* pwszName, char bySlotIndex)
+        static bool CUserDBAlive_Char_Request4_wrapper(struct CUserDB* _this, char byCase, unsigned int dwSerial, char* pwszName, char bySlotIndex)
         {
            return CUserDBAlive_Char_Request4_user(_this, byCase, dwSerial, pwszName, bySlotIndex, CUserDBAlive_Char_Request4_next);
         };
-        void CUserDBctor_CUserDB6_wrapper(struct CUserDB* _this)
+        static void CUserDBctor_CUserDB6_wrapper(struct CUserDB* _this)
         {
            CUserDBctor_CUserDB6_user(_this, CUserDBctor_CUserDB6_next);
         };
-        void CUserDBCalcRadarDelay8_wrapper(struct CUserDB* _this)
+        static void CUserDBCalcRadarDelay8_wrapper(struct CUserDB* _this)
         {
            CUserDBCalcRadarDelay8_user(_this, CUserDBCalcRadarDelay8_next);
         };
-        bool CUserDBCheckDQSLoadCharacterData10_wrapper(struct _AVATOR_DATA* pData)
+        static bool CUserDBCheckDQSLoadCharacterData10_wrapper(struct _AVATOR_DATA* pData)
         {
            return CUserDBCheckDQSLoadCharacterData10_user(pData, CUserDBCheckDQSLoadCharacterData10_next);
         };
-        void CUserDBClearBillingData12_wrapper(struct CUserDB* _this)
+        static void CUserDBClearBillingData12_wrapper(struct CUserDB* _this)
         {
            CUserDBClearBillingData12_user(_this, CUserDBClearBillingData12_next);
         };
-        void CUserDBCont_UserSave_Complete14_wrapper(struct CUserDB* _this, char byResult, struct _AVATOR_DATA* pAvatorData)
+        static void CUserDBCont_UserSave_Complete14_wrapper(struct CUserDB* _this, char byResult, struct _AVATOR_DATA* pAvatorData)
         {
            CUserDBCont_UserSave_Complete14_user(_this, byResult, pAvatorData, CUserDBCont_UserSave_Complete14_next);
         };
-        bool CUserDBDataValidCheckRevise16_wrapper(struct _AVATOR_DATA* pData, bool* pDataUpdated)
+        static bool CUserDBDataValidCheckRevise16_wrapper(struct _AVATOR_DATA* pData, bool* pDataUpdated)
         {
            return CUserDBDataValidCheckRevise16_user(pData, pDataUpdated, CUserDBDataValidCheckRevise16_next);
         };
-        void CUserDBDelPostData18_wrapper(struct CUserDB* _this, unsigned int dwIndex)
+        static void CUserDBDelPostData18_wrapper(struct CUserDB* _this, unsigned int dwIndex)
         {
            CUserDBDelPostData18_user(_this, dwIndex, CUserDBDelPostData18_next);
         };
-        void CUserDBDelete_Char_Complete20_wrapper(struct CUserDB* _this, char byRetCode, char bySlotIndex)
+        static void CUserDBDelete_Char_Complete20_wrapper(struct CUserDB* _this, char byRetCode, char bySlotIndex)
         {
            CUserDBDelete_Char_Complete20_user(_this, byRetCode, bySlotIndex, CUserDBDelete_Char_Complete20_next);
         };
-        bool CUserDBDelete_Char_Request22_wrapper(struct CUserDB* _this, char bySlotIndex)
+        static bool CUserDBDelete_Char_Request22_wrapper(struct CUserDB* _this, char bySlotIndex)
         {
            return CUserDBDelete_Char_Request22_user(_this, bySlotIndex, CUserDBDelete_Char_Request22_next);
         };
-        void CUserDBDummyCreate24_wrapper(struct CUserDB* _this, unsigned int dwSerial)
+        static void CUserDBDummyCreate24_wrapper(struct CUserDB* _this, unsigned int dwSerial)
         {
            CUserDBDummyCreate24_user(_this, dwSerial, CUserDBDummyCreate24_next);
         };
-        bool CUserDBEnter_Account26_wrapper(struct CUserDB* _this, unsigned int dwAccountSerial, unsigned int dwIP, unsigned int dwProtocolVer, unsigned int* pdwMasterKey)
+        static bool CUserDBEnter_Account26_wrapper(struct CUserDB* _this, unsigned int dwAccountSerial, unsigned int dwIP, unsigned int dwProtocolVer, unsigned int* pdwMasterKey)
         {
            return CUserDBEnter_Account26_user(_this, dwAccountSerial, dwIP, dwProtocolVer, pdwMasterKey, CUserDBEnter_Account26_next);
         };
-        void CUserDBExit_Account_Complete28_wrapper(struct CUserDB* _this, char byRetCode)
+        static void CUserDBExit_Account_Complete28_wrapper(struct CUserDB* _this, char byRetCode)
         {
            CUserDBExit_Account_Complete28_user(_this, byRetCode, CUserDBExit_Account_Complete28_next);
         };
-        void CUserDBExit_Account_Request30_wrapper(struct CUserDB* _this)
+        static void CUserDBExit_Account_Request30_wrapper(struct CUserDB* _this)
         {
            CUserDBExit_Account_Request30_user(_this, CUserDBExit_Account_Request30_next);
         };
-        bool CUserDBFirstSettingData32_wrapper(struct CUserDB* _this)
+        static bool CUserDBFirstSettingData32_wrapper(struct CUserDB* _this)
         {
            return CUserDBFirstSettingData32_user(_this, CUserDBFirstSettingData32_next);
         };
-        void CUserDBForceCloseCommand34_wrapper(struct CUserDB* _this, char byKickType, unsigned int dwPushIP, bool bSlow, char* pszCause)
+        static void CUserDBForceCloseCommand34_wrapper(struct CUserDB* _this, char byKickType, unsigned int dwPushIP, bool bSlow, char* pszCause)
         {
            CUserDBForceCloseCommand34_user(_this, byKickType, dwPushIP, bSlow, pszCause, CUserDBForceCloseCommand34_next);
         };
-        unsigned int CUserDBGetActPoint36_wrapper(struct CUserDB* _this, char byCode)
+        static unsigned int CUserDBGetActPoint36_wrapper(struct CUserDB* _this, char byCode)
         {
            return CUserDBGetActPoint36_user(_this, byCode, CUserDBGetActPoint36_next);
         };
-        int CUserDBGetBillingType38_wrapper(struct CUserDB* _this)
+        static int CUserDBGetBillingType38_wrapper(struct CUserDB* _this)
         {
            return CUserDBGetBillingType38_user(_this, CUserDBGetBillingType38_next);
         };
-        unsigned int* CUserDBGetPtrActPoint40_wrapper(struct CUserDB* _this)
+        static unsigned int* CUserDBGetPtrActPoint40_wrapper(struct CUserDB* _this)
         {
            return CUserDBGetPtrActPoint40_user(_this, CUserDBGetPtrActPoint40_next);
         };
-        void CUserDBInform_For_Exit_By_FireguardBlock42_wrapper(struct CUserDB* _this)
+        static void CUserDBInform_For_Exit_By_FireguardBlock42_wrapper(struct CUserDB* _this)
         {
            CUserDBInform_For_Exit_By_FireguardBlock42_user(_this, CUserDBInform_For_Exit_By_FireguardBlock42_next);
         };
-        void CUserDBInit44_wrapper(struct CUserDB* _this, unsigned int dwIndex)
+        static void CUserDBInit44_wrapper(struct CUserDB* _this, unsigned int dwIndex)
         {
            CUserDBInit44_user(_this, dwIndex, CUserDBInit44_next);
         };
-        bool CUserDBInitClass46_wrapper(struct CUserDB* _this, char* pszClassCode)
+        static bool CUserDBInitClass46_wrapper(struct CUserDB* _this, char* pszClassCode)
         {
            return CUserDBInitClass46_user(_this, pszClassCode, CUserDBInitClass46_next);
         };
-        void CUserDBInsert_Char_Complete48_wrapper(struct CUserDB* _this, char byRetCode, struct _REGED_AVATOR_DB* pInsertData)
+        static void CUserDBInsert_Char_Complete48_wrapper(struct CUserDB* _this, char byRetCode, struct _REGED_AVATOR_DB* pInsertData)
         {
            CUserDBInsert_Char_Complete48_user(_this, byRetCode, pInsertData, CUserDBInsert_Char_Complete48_next);
         };
-        bool CUserDBInsert_Char_Request50_wrapper(struct CUserDB* _this, char* pwszCharName, char bySlotIndex, char byRaceSexCode, char* pszClassCode, unsigned int dwBaseShape)
+        static bool CUserDBInsert_Char_Request50_wrapper(struct CUserDB* _this, char* pwszCharName, char bySlotIndex, char byRaceSexCode, char* pszClassCode, unsigned int dwBaseShape)
         {
            return CUserDBInsert_Char_Request50_user(_this, pwszCharName, bySlotIndex, byRaceSexCode, pszClassCode, dwBaseShape, CUserDBInsert_Char_Request50_next);
         };
-        struct _AVATOR_DATA* CUserDBIsContPushBefore52_wrapper(struct CUserDB* _this)
+        static struct _AVATOR_DATA* CUserDBIsContPushBefore52_wrapper(struct CUserDB* _this)
         {
            return CUserDBIsContPushBefore52_user(_this, CUserDBIsContPushBefore52_next);
         };
-        char CUserDBIsExistRequestMoveCharacterList54_wrapper(struct CUserDB* _this, unsigned int dwCharSerial)
+        static char CUserDBIsExistRequestMoveCharacterList54_wrapper(struct CUserDB* _this, unsigned int dwCharSerial)
         {
            return CUserDBIsExistRequestMoveCharacterList54_user(_this, dwCharSerial, CUserDBIsExistRequestMoveCharacterList54_next);
         };
-        bool CUserDBIsReturnPostUpdate56_wrapper(struct CUserDB* _this)
+        static bool CUserDBIsReturnPostUpdate56_wrapper(struct CUserDB* _this)
         {
            return CUserDBIsReturnPostUpdate56_user(_this, CUserDBIsReturnPostUpdate56_next);
         };
-        void CUserDBLobby_Char_Complete58_wrapper(struct CUserDB* _this, char byRetCode)
+        static void CUserDBLobby_Char_Complete58_wrapper(struct CUserDB* _this, char byRetCode)
         {
            CUserDBLobby_Char_Complete58_user(_this, byRetCode, CUserDBLobby_Char_Complete58_next);
         };
-        bool CUserDBLobby_Char_Request60_wrapper(struct CUserDB* _this)
+        static bool CUserDBLobby_Char_Request60_wrapper(struct CUserDB* _this)
         {
            return CUserDBLobby_Char_Request60_user(_this, CUserDBLobby_Char_Request60_next);
         };
-        void CUserDBOnLoop_Static62_wrapper()
+        static void CUserDBOnLoop_Static62_wrapper()
         {
            CUserDBOnLoop_Static62_user(CUserDBOnLoop_Static62_next);
         };
-        void CUserDBParamInit64_wrapper(struct CUserDB* _this)
+        static void CUserDBParamInit64_wrapper(struct CUserDB* _this)
         {
            CUserDBParamInit64_user(_this, CUserDBParamInit64_next);
         };
-        void CUserDBReRangeClientIndex66_wrapper(struct _AVATOR_DATA* pData)
+        static void CUserDBReRangeClientIndex66_wrapper(struct _AVATOR_DATA* pData)
         {
            CUserDBReRangeClientIndex66_user(pData, CUserDBReRangeClientIndex66_next);
         };
-        void CUserDBReged_Char_Complete68_wrapper(struct CUserDB* _this, char byRetCode, struct _REGED* pRegedList, struct _NOT_ARRANGED_AVATOR_DB* pArrangedList)
+        static void CUserDBReged_Char_Complete68_wrapper(struct CUserDB* _this, char byRetCode, struct _REGED* pRegedList, struct _NOT_ARRANGED_AVATOR_DB* pArrangedList)
         {
            CUserDBReged_Char_Complete68_user(_this, byRetCode, pRegedList, pArrangedList, CUserDBReged_Char_Complete68_next);
         };
-        bool CUserDBReged_Char_Request70_wrapper(struct CUserDB* _this)
+        static bool CUserDBReged_Char_Request70_wrapper(struct CUserDB* _this)
         {
            return CUserDBReged_Char_Request70_user(_this, CUserDBReged_Char_Request70_next);
         };
-        void CUserDBSelect_Char_Complete72_wrapper(struct CUserDB* _this, char byRetCode, struct _AVATOR_DATA* pLoadData, bool* pbAddItem, unsigned int dwAddDalant, unsigned int dwAddGold, unsigned int dwCheckSum, bool* pbTrunkAddItem, char byTrunkOldSlot, long double dTrunkOldDalant, long double dTrunkOldGold, bool bCreateTrunkFree, bool* pbExtTrunkAddItem, char byExtTrunkOldSlot)
+        static void CUserDBSelect_Char_Complete72_wrapper(struct CUserDB* _this, char byRetCode, struct _AVATOR_DATA* pLoadData, bool* pbAddItem, unsigned int dwAddDalant, unsigned int dwAddGold, unsigned int dwCheckSum, bool* pbTrunkAddItem, char byTrunkOldSlot, long double dTrunkOldDalant, long double dTrunkOldGold, bool bCreateTrunkFree, bool* pbExtTrunkAddItem, char byExtTrunkOldSlot)
         {
            CUserDBSelect_Char_Complete72_user(_this, byRetCode, pLoadData, pbAddItem, dwAddDalant, dwAddGold, dwCheckSum, pbTrunkAddItem, byTrunkOldSlot, dTrunkOldDalant, dTrunkOldGold, bCreateTrunkFree, pbExtTrunkAddItem, byExtTrunkOldSlot, CUserDBSelect_Char_Complete72_next);
         };
-        bool CUserDBSelect_Char_Request74_wrapper(struct CUserDB* _this, char bySlotIndex)
+        static bool CUserDBSelect_Char_Request74_wrapper(struct CUserDB* _this, char bySlotIndex)
         {
            return CUserDBSelect_Char_Request74_user(_this, bySlotIndex, CUserDBSelect_Char_Request74_next);
         };
-        void CUserDBSendMsgAccount_UILockRefresh_Update76_wrapper(struct CUserDB* _this)
+        static void CUserDBSendMsgAccount_UILockRefresh_Update76_wrapper(struct CUserDB* _this)
         {
            CUserDBSendMsgAccount_UILockRefresh_Update76_user(_this, CUserDBSendMsgAccount_UILockRefresh_Update76_next);
         };
-        void CUserDBSendMsg_BillingInfo78_wrapper(struct CUserDB* _this)
+        static void CUserDBSendMsg_BillingInfo78_wrapper(struct CUserDB* _this)
         {
            CUserDBSendMsg_BillingInfo78_user(_this, CUserDBSendMsg_BillingInfo78_next);
         };
-        void CUserDBSendMsg_Inform_UILock80_wrapper(struct CUserDB* _this)
+        static void CUserDBSendMsg_Inform_UILock80_wrapper(struct CUserDB* _this)
         {
            CUserDBSendMsg_Inform_UILock80_user(_this, CUserDBSendMsg_Inform_UILock80_next);
         };
-        void CUserDBSetActPoint82_wrapper(struct CUserDB* _this, char byCode, unsigned int dwLeftPoint)
+        static void CUserDBSetActPoint82_wrapper(struct CUserDB* _this, char byCode, unsigned int dwLeftPoint)
         {
            CUserDBSetActPoint82_user(_this, byCode, dwLeftPoint, CUserDBSetActPoint82_next);
         };
-        void CUserDBSetBillingData84_wrapper(struct CUserDB* _this, struct _BILLING_INFO* pBillingInfo)
+        static void CUserDBSetBillingData84_wrapper(struct CUserDB* _this, struct _BILLING_INFO* pBillingInfo)
         {
            CUserDBSetBillingData84_user(_this, pBillingInfo, CUserDBSetBillingData84_next);
         };
-        void CUserDBSetBillingData86_wrapper(struct CUserDB* _this, char* szCMSCode, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
+        static void CUserDBSetBillingData86_wrapper(struct CUserDB* _this, char* szCMSCode, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
         {
            CUserDBSetBillingData86_user(_this, szCMSCode, iType, lRemainTime, pstEndDate, CUserDBSetBillingData86_next);
         };
-        void CUserDBSetBillingNoLogout88_wrapper(struct CUserDB* _this, bool bNoLogout)
+        static void CUserDBSetBillingNoLogout88_wrapper(struct CUserDB* _this, bool bNoLogout)
         {
            CUserDBSetBillingNoLogout88_user(_this, bNoLogout, CUserDBSetBillingNoLogout88_next);
         };
-        void CUserDBSetChatLock90_wrapper(struct CUserDB* _this, bool bLock)
+        static void CUserDBSetChatLock90_wrapper(struct CUserDB* _this, bool bLock)
         {
            CUserDBSetChatLock90_user(_this, bLock, CUserDBSetChatLock90_next);
         };
-        void CUserDBSetDBPostData92_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, bool bUpdateIndex, uint64_t lnUID)
+        static void CUserDBSetDBPostData92_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, bool bUpdateIndex, uint64_t lnUID)
         {
            CUserDBSetDBPostData92_user(_this, n, dwSerial, nNumber, byState, nKey, dwDur, dwUpt, dwGold, bUpdateIndex, lnUID, CUserDBSetDBPostData92_next);
         };
-        void CUserDBSetNewDBPostData94_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
+        static void CUserDBSetNewDBPostData94_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
         {
            CUserDBSetNewDBPostData94_user(_this, n, dwSerial, nNumber, byState, wszSendName, wszRecvName, wszTitle, wszContent, nKey, dwDur, dwUpt, dwGold, lnUID, CUserDBSetNewDBPostData94_next);
         };
-        void CUserDBSetRadarDelay96_wrapper(struct CUserDB* _this, unsigned int dwDelay)
+        static void CUserDBSetRadarDelay96_wrapper(struct CUserDB* _this, unsigned int dwDelay)
         {
            CUserDBSetRadarDelay96_user(_this, dwDelay, CUserDBSetRadarDelay96_next);
         };
-        void CUserDBSetRemainTime98_wrapper(struct CUserDB* _this, int lRemainTime)
+        static void CUserDBSetRemainTime98_wrapper(struct CUserDB* _this, int lRemainTime)
         {
            CUserDBSetRemainTime98_user(_this, lRemainTime, CUserDBSetRemainTime98_next);
         };
-        void CUserDBSetWorldCLID100_wrapper(struct CUserDB* _this, unsigned int dwSerial, unsigned int* pipAddr)
+        static void CUserDBSetWorldCLID100_wrapper(struct CUserDB* _this, unsigned int dwSerial, unsigned int* pipAddr)
         {
            CUserDBSetWorldCLID100_user(_this, dwSerial, pipAddr, CUserDBSetWorldCLID100_next);
         };
-        bool CUserDBSetting_Class102_wrapper(struct CUserDB* _this, char* pszClassCode)
+        static bool CUserDBSetting_Class102_wrapper(struct CUserDB* _this, char* pszClassCode)
         {
            return CUserDBSetting_Class102_user(_this, pszClassCode, CUserDBSetting_Class102_next);
         };
-        void CUserDBStartFieldMode104_wrapper(struct CUserDB* _this)
+        static void CUserDBStartFieldMode104_wrapper(struct CUserDB* _this)
         {
            CUserDBStartFieldMode104_user(_this, CUserDBStartFieldMode104_next);
         };
-        void CUserDBTotalPlayMinCheck106_wrapper(struct CUserDB* _this)
+        static void CUserDBTotalPlayMinCheck106_wrapper(struct CUserDB* _this)
         {
            CUserDBTotalPlayMinCheck106_user(_this, CUserDBTotalPlayMinCheck106_next);
         };
-        void CUserDBUILockInfo_Init108_wrapper(struct CUserDB* _this, char* pMsg)
+        static void CUserDBUILockInfo_Init108_wrapper(struct CUserDB* _this, char* pMsg)
         {
            CUserDBUILockInfo_Init108_user(_this, pMsg, CUserDBUILockInfo_Init108_next);
         };
-        void CUserDBUILockInfo_Update110_wrapper(struct CUserDB* _this, char* pMsg)
+        static void CUserDBUILockInfo_Update110_wrapper(struct CUserDB* _this, char* pMsg)
         {
            CUserDBUILockInfo_Update110_user(_this, pMsg, CUserDBUILockInfo_Update110_next);
         };
-        bool CUserDBUpdateContUserSave112_wrapper(struct CUserDB* _this, bool bDirect)
+        static bool CUserDBUpdateContUserSave112_wrapper(struct CUserDB* _this, bool bDirect)
         {
            return CUserDBUpdateContUserSave112_user(_this, bDirect, CUserDBUpdateContUserSave112_next);
         };
-        bool CUserDBUpdate_AddBuddy114_wrapper(struct CUserDB* _this, char bySlotIndex, unsigned int dwAdderSerial, char* pwszAdderName)
+        static bool CUserDBUpdate_AddBuddy114_wrapper(struct CUserDB* _this, char bySlotIndex, unsigned int dwAdderSerial, char* pwszAdderName)
         {
            return CUserDBUpdate_AddBuddy114_user(_this, bySlotIndex, dwAdderSerial, pwszAdderName, CUserDBUpdate_AddBuddy114_next);
         };
-        bool CUserDBUpdate_AlterPvPCashBag116_wrapper(struct CUserDB* _this, long double dNewPoint)
+        static bool CUserDBUpdate_AlterPvPCashBag116_wrapper(struct CUserDB* _this, long double dNewPoint)
         {
            return CUserDBUpdate_AlterPvPCashBag116_user(_this, dNewPoint, CUserDBUpdate_AlterPvPCashBag116_next);
         };
-        bool CUserDBUpdate_AlterPvPPoint118_wrapper(struct CUserDB* _this, long double dNewPoint)
+        static bool CUserDBUpdate_AlterPvPPoint118_wrapper(struct CUserDB* _this, long double dNewPoint)
         {
            return CUserDBUpdate_AlterPvPPoint118_user(_this, dNewPoint, CUserDBUpdate_AlterPvPPoint118_next);
         };
-        bool CUserDBUpdate_AutoTradeAllClear120_wrapper(struct CUserDB* _this)
+        static bool CUserDBUpdate_AutoTradeAllClear120_wrapper(struct CUserDB* _this)
         {
            return CUserDBUpdate_AutoTradeAllClear120_user(_this, CUserDBUpdate_AutoTradeAllClear120_next);
         };
-        bool CUserDBUpdate_BagNum122_wrapper(struct CUserDB* _this, char bagnum)
+        static bool CUserDBUpdate_BagNum122_wrapper(struct CUserDB* _this, char bagnum)
         {
            return CUserDBUpdate_BagNum122_user(_this, bagnum, CUserDBUpdate_BagNum122_next);
         };
-        bool CUserDBUpdate_Bind124_wrapper(struct CUserDB* _this, char* pszMapCode, char* pDummyCode, bool bUpdate)
+        static bool CUserDBUpdate_Bind124_wrapper(struct CUserDB* _this, char* pszMapCode, char* pDummyCode, bool bUpdate)
         {
            return CUserDBUpdate_Bind124_user(_this, pszMapCode, pDummyCode, bUpdate, CUserDBUpdate_Bind124_next);
         };
-        void CUserDBUpdate_BossCryMsg126_wrapper(struct CUserDB* _this, char bySlot, char* pwszCryMsg)
+        static void CUserDBUpdate_BossCryMsg126_wrapper(struct CUserDB* _this, char bySlot, char* pwszCryMsg)
         {
            CUserDBUpdate_BossCryMsg126_user(_this, bySlot, pwszCryMsg, CUserDBUpdate_BossCryMsg126_next);
         };
-        bool CUserDBUpdate_Class128_wrapper(struct CUserDB* _this, char* pszClassCode, char byHistoryRecordNum, uint16_t wHistoryClassIndex)
+        static bool CUserDBUpdate_Class128_wrapper(struct CUserDB* _this, char* pszClassCode, char byHistoryRecordNum, uint16_t wHistoryClassIndex)
         {
            return CUserDBUpdate_Class128_user(_this, pszClassCode, byHistoryRecordNum, wHistoryClassIndex, CUserDBUpdate_Class128_next);
         };
-        bool CUserDBUpdate_CombineExResult_Pop130_wrapper(struct CUserDB* _this)
+        static bool CUserDBUpdate_CombineExResult_Pop130_wrapper(struct CUserDB* _this)
         {
            return CUserDBUpdate_CombineExResult_Pop130_user(_this, CUserDBUpdate_CombineExResult_Pop130_next);
         };
-        bool CUserDBUpdate_CombineExResult_Push132_wrapper(struct CUserDB* _this, struct _ITEMCOMBINE_DB_BASE* pItemCombineDB_IN)
+        static bool CUserDBUpdate_CombineExResult_Push132_wrapper(struct CUserDB* _this, struct _ITEMCOMBINE_DB_BASE* pItemCombineDB_IN)
         {
            return CUserDBUpdate_CombineExResult_Push132_user(_this, pItemCombineDB_IN, CUserDBUpdate_CombineExResult_Push132_next);
         };
-        bool CUserDBUpdate_CopyAll134_wrapper(struct CUserDB* _this, struct _AVATOR_DATA* pSrc)
+        static bool CUserDBUpdate_CopyAll134_wrapper(struct CUserDB* _this, struct _AVATOR_DATA* pSrc)
         {
            return CUserDBUpdate_CopyAll134_user(_this, pSrc, CUserDBUpdate_CopyAll134_next);
         };
-        bool CUserDBUpdate_CuttingEmpty136_wrapper(struct CUserDB* _this)
+        static bool CUserDBUpdate_CuttingEmpty136_wrapper(struct CUserDB* _this)
         {
            return CUserDBUpdate_CuttingEmpty136_user(_this, CUserDBUpdate_CuttingEmpty136_next);
         };
-        bool CUserDBUpdate_CuttingPush138_wrapper(struct CUserDB* _this, char resnum, struct _CUTTING_DB_BASE::_LIST* plist)
+        static bool CUserDBUpdate_CuttingPush138_wrapper(struct CUserDB* _this, char resnum, struct _CUTTING_DB_BASE::_LIST* plist)
         {
            return CUserDBUpdate_CuttingPush138_user(_this, resnum, plist, CUserDBUpdate_CuttingPush138_next);
         };
-        bool CUserDBUpdate_CuttingTrans140_wrapper(struct CUserDB* _this, uint16_t wResItemIndex, uint16_t wLeftAmt)
+        static bool CUserDBUpdate_CuttingTrans140_wrapper(struct CUserDB* _this, uint16_t wResItemIndex, uint16_t wLeftAmt)
         {
            return CUserDBUpdate_CuttingTrans140_user(_this, wResItemIndex, wLeftAmt, CUserDBUpdate_CuttingTrans140_next);
         };
-        bool CUserDBUpdate_DelBuddy142_wrapper(struct CUserDB* _this, char bySlotIndex)
+        static bool CUserDBUpdate_DelBuddy142_wrapper(struct CUserDB* _this, char bySlotIndex)
         {
            return CUserDBUpdate_DelBuddy142_user(_this, bySlotIndex, CUserDBUpdate_DelBuddy142_next);
         };
-        bool CUserDBUpdate_DelPost144_wrapper(struct CUserDB* _this, unsigned int dwSerial, int nIndex)
+        static bool CUserDBUpdate_DelPost144_wrapper(struct CUserDB* _this, unsigned int dwSerial, int nIndex)
         {
            return CUserDBUpdate_DelPost144_user(_this, dwSerial, nIndex, CUserDBUpdate_DelPost144_next);
         };
-        bool CUserDBUpdate_Exp146_wrapper(struct CUserDB* _this, long double exp)
+        static bool CUserDBUpdate_Exp146_wrapper(struct CUserDB* _this, long double exp)
         {
            return CUserDBUpdate_Exp146_user(_this, exp, CUserDBUpdate_Exp146_next);
         };
-        bool CUserDBUpdate_ExtTrunkSlotNum148_wrapper(struct CUserDB* _this, char byExtSlotNum)
+        static bool CUserDBUpdate_ExtTrunkSlotNum148_wrapper(struct CUserDB* _this, char byExtSlotNum)
         {
            return CUserDBUpdate_ExtTrunkSlotNum148_user(_this, byExtSlotNum, CUserDBUpdate_ExtTrunkSlotNum148_next);
         };
-        bool CUserDBUpdate_ItemAdd150_wrapper(struct CUserDB* _this, char storage, char slot, struct _STORAGE_LIST::_db_con* pItem, bool bUpdate)
+        static bool CUserDBUpdate_ItemAdd150_wrapper(struct CUserDB* _this, char storage, char slot, struct _STORAGE_LIST::_db_con* pItem, bool bUpdate)
         {
            return CUserDBUpdate_ItemAdd150_user(_this, storage, slot, pItem, bUpdate, CUserDBUpdate_ItemAdd150_next);
         };
-        bool CUserDBUpdate_ItemDelete152_wrapper(struct CUserDB* _this, char storage, char slot, bool bUpdate)
+        static bool CUserDBUpdate_ItemDelete152_wrapper(struct CUserDB* _this, char storage, char slot, bool bUpdate)
         {
            return CUserDBUpdate_ItemDelete152_user(_this, storage, slot, bUpdate, CUserDBUpdate_ItemDelete152_next);
         };
-        bool CUserDBUpdate_ItemDur154_wrapper(struct CUserDB* _this, char storage, char slot, uint64_t amount, bool bUpdate)
+        static bool CUserDBUpdate_ItemDur154_wrapper(struct CUserDB* _this, char storage, char slot, uint64_t amount, bool bUpdate)
         {
            return CUserDBUpdate_ItemDur154_user(_this, storage, slot, amount, bUpdate, CUserDBUpdate_ItemDur154_next);
         };
-        bool CUserDBUpdate_ItemSlot156_wrapper(struct CUserDB* _this, char storage, char slot, char clientpos)
+        static bool CUserDBUpdate_ItemSlot156_wrapper(struct CUserDB* _this, char storage, char slot, char clientpos)
         {
            return CUserDBUpdate_ItemSlot156_user(_this, storage, slot, clientpos, CUserDBUpdate_ItemSlot156_next);
         };
-        bool CUserDBUpdate_ItemUpgrade158_wrapper(struct CUserDB* _this, char storage, char slot, unsigned int upg, bool bUpdate)
+        static bool CUserDBUpdate_ItemUpgrade158_wrapper(struct CUserDB* _this, char storage, char slot, unsigned int upg, bool bUpdate)
         {
            return CUserDBUpdate_ItemUpgrade158_user(_this, storage, slot, upg, bUpdate, CUserDBUpdate_ItemUpgrade158_next);
         };
-        void CUserDBUpdate_LastAttBuff160_wrapper(struct CUserDB* _this, bool bSet)
+        static void CUserDBUpdate_LastAttBuff160_wrapper(struct CUserDB* _this, bool bSet)
         {
            CUserDBUpdate_LastAttBuff160_user(_this, bSet, CUserDBUpdate_LastAttBuff160_next);
         };
-        bool CUserDBUpdate_Level162_wrapper(struct CUserDB* _this, char lv, long double exp)
+        static bool CUserDBUpdate_Level162_wrapper(struct CUserDB* _this, char lv, long double exp)
         {
            return CUserDBUpdate_Level162_user(_this, lv, exp, CUserDBUpdate_Level162_next);
         };
-        bool CUserDBUpdate_LinkBoardLock164_wrapper(struct CUserDB* _this, char byLBLock)
+        static bool CUserDBUpdate_LinkBoardLock164_wrapper(struct CUserDB* _this, char byLBLock)
         {
            return CUserDBUpdate_LinkBoardLock164_user(_this, byLBLock, CUserDBUpdate_LinkBoardLock164_next);
         };
-        bool CUserDBUpdate_LinkBoardSlot166_wrapper(struct CUserDB* _this, char bySlot, char byLinkCode, uint16_t wIndex)
+        static bool CUserDBUpdate_LinkBoardSlot166_wrapper(struct CUserDB* _this, char bySlot, char byLinkCode, uint16_t wIndex)
         {
            return CUserDBUpdate_LinkBoardSlot166_user(_this, bySlot, byLinkCode, wIndex, CUserDBUpdate_LinkBoardSlot166_next);
         };
-        bool CUserDBUpdate_LossExp168_wrapper(struct CUserDB* _this, long double dLossExp)
+        static bool CUserDBUpdate_LossExp168_wrapper(struct CUserDB* _this, long double dLossExp)
         {
            return CUserDBUpdate_LossExp168_user(_this, dLossExp, CUserDBUpdate_LossExp168_next);
         };
-        bool CUserDBUpdate_Macro170_wrapper(struct CUserDB* _this, char* pBuf)
+        static bool CUserDBUpdate_Macro170_wrapper(struct CUserDB* _this, char* pBuf)
         {
            return CUserDBUpdate_Macro170_user(_this, pBuf, CUserDBUpdate_Macro170_next);
         };
-        bool CUserDBUpdate_Map172_wrapper(struct CUserDB* _this, char map, float* pos)
+        static bool CUserDBUpdate_Map172_wrapper(struct CUserDB* _this, char map, float* pos)
         {
            return CUserDBUpdate_Map172_user(_this, map, pos, CUserDBUpdate_Map172_next);
         };
-        void CUserDBUpdate_MaxLevel174_wrapper(struct CUserDB* _this, char byMaxLevel)
+        static void CUserDBUpdate_MaxLevel174_wrapper(struct CUserDB* _this, char byMaxLevel)
         {
            CUserDBUpdate_MaxLevel174_user(_this, byMaxLevel, CUserDBUpdate_MaxLevel174_next);
         };
-        bool CUserDBUpdate_Money176_wrapper(struct CUserDB* _this, unsigned int dalant, unsigned int gold)
+        static bool CUserDBUpdate_Money176_wrapper(struct CUserDB* _this, unsigned int dalant, unsigned int gold)
         {
            return CUserDBUpdate_Money176_user(_this, dalant, gold, CUserDBUpdate_Money176_next);
         };
-        bool CUserDBUpdate_NPCQuestHistory178_wrapper(struct CUserDB* _this, char byIndex, struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* pHisData)
+        static bool CUserDBUpdate_NPCQuestHistory178_wrapper(struct CUserDB* _this, char byIndex, struct _QUEST_DB_BASE::_NPC_QUEST_HISTORY* pHisData)
         {
            return CUserDBUpdate_NPCQuestHistory178_user(_this, byIndex, pHisData, CUserDBUpdate_NPCQuestHistory178_next);
         };
-        bool CUserDBUpdate_Param180_wrapper(struct CUserDB* _this, struct _EXIT_ALTER_PARAM* pCon)
+        static bool CUserDBUpdate_Param180_wrapper(struct CUserDB* _this, struct _EXIT_ALTER_PARAM* pCon)
         {
            return CUserDBUpdate_Param180_user(_this, pCon, CUserDBUpdate_Param180_next);
         };
-        bool CUserDBUpdate_PlayTime182_wrapper(struct CUserDB* _this, unsigned int dwTotalTimeMin)
+        static bool CUserDBUpdate_PlayTime182_wrapper(struct CUserDB* _this, unsigned int dwTotalTimeMin)
         {
            return CUserDBUpdate_PlayTime182_user(_this, dwTotalTimeMin, CUserDBUpdate_PlayTime182_next);
         };
-        void CUserDBUpdate_Post184_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
+        static void CUserDBUpdate_Post184_wrapper(struct CUserDB* _this, int n, unsigned int dwSerial, int nNumber, char byState, int nKey, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
         {
            CUserDBUpdate_Post184_user(_this, n, dwSerial, nNumber, byState, nKey, dwDur, dwUpt, dwGold, lnUID, CUserDBUpdate_Post184_next);
         };
-        void CUserDBUpdate_PotionNextUseTime186_wrapper(struct CUserDB* _this, char byPotionClass, unsigned int dwNextUseTime)
+        static void CUserDBUpdate_PotionNextUseTime186_wrapper(struct CUserDB* _this, char byPotionClass, unsigned int dwNextUseTime)
         {
            CUserDBUpdate_PotionNextUseTime186_user(_this, byPotionClass, dwNextUseTime, CUserDBUpdate_PotionNextUseTime186_next);
         };
-        void CUserDBUpdate_PvpPointLeak188_wrapper(struct CUserDB* _this, long double dValue)
+        static void CUserDBUpdate_PvpPointLeak188_wrapper(struct CUserDB* _this, long double dValue)
         {
            CUserDBUpdate_PvpPointLeak188_user(_this, dValue, CUserDBUpdate_PvpPointLeak188_next);
         };
-        bool CUserDBUpdate_QuestDelete190_wrapper(struct CUserDB* _this, char bySlotIndex)
+        static bool CUserDBUpdate_QuestDelete190_wrapper(struct CUserDB* _this, char bySlotIndex)
         {
            return CUserDBUpdate_QuestDelete190_user(_this, bySlotIndex, CUserDBUpdate_QuestDelete190_next);
         };
-        bool CUserDBUpdate_QuestInsert192_wrapper(struct CUserDB* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pSlotData)
+        static bool CUserDBUpdate_QuestInsert192_wrapper(struct CUserDB* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pSlotData)
         {
            return CUserDBUpdate_QuestInsert192_user(_this, bySlotIndex, pSlotData, CUserDBUpdate_QuestInsert192_next);
         };
-        bool CUserDBUpdate_QuestUpdate194_wrapper(struct CUserDB* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pSlotData, bool bUpdate)
+        static bool CUserDBUpdate_QuestUpdate194_wrapper(struct CUserDB* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pSlotData, bool bUpdate)
         {
            return CUserDBUpdate_QuestUpdate194_user(_this, bySlotIndex, pSlotData, bUpdate, CUserDBUpdate_QuestUpdate194_next);
         };
-        bool CUserDBUpdate_RaceVoteInfoInit196_wrapper(struct CUserDB* _this)
+        static bool CUserDBUpdate_RaceVoteInfoInit196_wrapper(struct CUserDB* _this)
         {
            return CUserDBUpdate_RaceVoteInfoInit196_user(_this, CUserDBUpdate_RaceVoteInfoInit196_next);
         };
-        void CUserDBUpdate_ReturnPost198_wrapper(struct CUserDB* _this, unsigned int dwSerial)
+        static void CUserDBUpdate_ReturnPost198_wrapper(struct CUserDB* _this, unsigned int dwSerial)
         {
            CUserDBUpdate_ReturnPost198_user(_this, dwSerial, CUserDBUpdate_ReturnPost198_next);
         };
-        bool CUserDBUpdate_SFContDelete200_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex)
+        static bool CUserDBUpdate_SFContDelete200_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex)
         {
            return CUserDBUpdate_SFContDelete200_user(_this, byContCode, bySlotIndex, CUserDBUpdate_SFContDelete200_next);
         };
-        bool CUserDBUpdate_SFContInsert202_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex, char byEffectCode, uint16_t wEffectIndex, char byLv, uint16_t wDurSec)
+        static bool CUserDBUpdate_SFContInsert202_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex, char byEffectCode, uint16_t wEffectIndex, char byLv, uint16_t wDurSec)
         {
            return CUserDBUpdate_SFContInsert202_user(_this, byContCode, bySlotIndex, byEffectCode, wEffectIndex, byLv, wDurSec, CUserDBUpdate_SFContInsert202_next);
         };
-        bool CUserDBUpdate_SFContUpdate204_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex, uint16_t wTime, bool bUpdate)
+        static bool CUserDBUpdate_SFContUpdate204_wrapper(struct CUserDB* _this, char byContCode, char bySlotIndex, uint16_t wTime, bool bUpdate)
         {
            return CUserDBUpdate_SFContUpdate204_user(_this, byContCode, bySlotIndex, wTime, bUpdate, CUserDBUpdate_SFContUpdate204_next);
         };
-        bool CUserDBUpdate_StartNPCQuestHistory206_wrapper(struct CUserDB* _this, char byIndex, struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* pHisData)
+        static bool CUserDBUpdate_StartNPCQuestHistory206_wrapper(struct CUserDB* _this, char byIndex, struct _QUEST_DB_BASE::_START_NPC_QUEST_HISTORY* pHisData)
         {
            return CUserDBUpdate_StartNPCQuestHistory206_user(_this, byIndex, pHisData, CUserDBUpdate_StartNPCQuestHistory206_next);
         };
-        bool CUserDBUpdate_Stat208_wrapper(struct CUserDB* _this, char byStatIndex, unsigned int dwNewCum, bool bUpdate)
+        static bool CUserDBUpdate_Stat208_wrapper(struct CUserDB* _this, char byStatIndex, unsigned int dwNewCum, bool bUpdate)
         {
            return CUserDBUpdate_Stat208_user(_this, byStatIndex, dwNewCum, bUpdate, CUserDBUpdate_Stat208_next);
         };
-        bool CUserDBUpdate_TakeLastCriTicket210_wrapper(struct CUserDB* _this, unsigned int dwCriTicket)
+        static bool CUserDBUpdate_TakeLastCriTicket210_wrapper(struct CUserDB* _this, unsigned int dwCriTicket)
         {
            return CUserDBUpdate_TakeLastCriTicket210_user(_this, dwCriTicket, CUserDBUpdate_TakeLastCriTicket210_next);
         };
-        bool CUserDBUpdate_TakeLastMentalTicket212_wrapper(struct CUserDB* _this, unsigned int dwMentalTicket)
+        static bool CUserDBUpdate_TakeLastMentalTicket212_wrapper(struct CUserDB* _this, unsigned int dwMentalTicket)
         {
            return CUserDBUpdate_TakeLastMentalTicket212_user(_this, dwMentalTicket, CUserDBUpdate_TakeLastMentalTicket212_next);
         };
-        bool CUserDBUpdate_TrunkHint214_wrapper(struct CUserDB* _this, char byHintIndex, char* pwszHintAnswer)
+        static bool CUserDBUpdate_TrunkHint214_wrapper(struct CUserDB* _this, char byHintIndex, char* pwszHintAnswer)
         {
            return CUserDBUpdate_TrunkHint214_user(_this, byHintIndex, pwszHintAnswer, CUserDBUpdate_TrunkHint214_next);
         };
-        bool CUserDBUpdate_TrunkMoney216_wrapper(struct CUserDB* _this, long double dGold, long double dDalant)
+        static bool CUserDBUpdate_TrunkMoney216_wrapper(struct CUserDB* _this, long double dGold, long double dDalant)
         {
            return CUserDBUpdate_TrunkMoney216_user(_this, dGold, dDalant, CUserDBUpdate_TrunkMoney216_next);
         };
-        bool CUserDBUpdate_TrunkPassword218_wrapper(struct CUserDB* _this, char* pwszPassword)
+        static bool CUserDBUpdate_TrunkPassword218_wrapper(struct CUserDB* _this, char* pwszPassword)
         {
            return CUserDBUpdate_TrunkPassword218_user(_this, pwszPassword, CUserDBUpdate_TrunkPassword218_next);
         };
-        bool CUserDBUpdate_TrunkSlotNum220_wrapper(struct CUserDB* _this, char bySlotNum)
+        static bool CUserDBUpdate_TrunkSlotNum220_wrapper(struct CUserDB* _this, char bySlotNum)
         {
            return CUserDBUpdate_TrunkSlotNum220_user(_this, bySlotNum, CUserDBUpdate_TrunkSlotNum220_next);
         };
-        bool CUserDBUpdate_UnitData222_wrapper(struct CUserDB* _this, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData)
+        static bool CUserDBUpdate_UnitData222_wrapper(struct CUserDB* _this, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData)
         {
            return CUserDBUpdate_UnitData222_user(_this, bySlotIndex, pData, CUserDBUpdate_UnitData222_next);
         };
-        bool CUserDBUpdate_UnitDelete224_wrapper(struct CUserDB* _this, char bySlotIndex)
+        static bool CUserDBUpdate_UnitDelete224_wrapper(struct CUserDB* _this, char bySlotIndex)
         {
            return CUserDBUpdate_UnitDelete224_user(_this, bySlotIndex, CUserDBUpdate_UnitDelete224_next);
         };
-        bool CUserDBUpdate_UnitInsert226_wrapper(struct CUserDB* _this, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pSlotData)
+        static bool CUserDBUpdate_UnitInsert226_wrapper(struct CUserDB* _this, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pSlotData)
         {
            return CUserDBUpdate_UnitInsert226_user(_this, bySlotIndex, pSlotData, CUserDBUpdate_UnitInsert226_next);
         };
-        bool CUserDBUpdate_UserFatigue228_wrapper(struct CUserDB* _this, unsigned int dwFatigue)
+        static bool CUserDBUpdate_UserFatigue228_wrapper(struct CUserDB* _this, unsigned int dwFatigue)
         {
            return CUserDBUpdate_UserFatigue228_user(_this, dwFatigue, CUserDBUpdate_UserFatigue228_next);
         };
-        bool CUserDBUpdate_UserGetScaner230_wrapper(struct CUserDB* _this, uint16_t wScanerCnt, uint16_t wBattleTime)
+        static bool CUserDBUpdate_UserGetScaner230_wrapper(struct CUserDB* _this, uint16_t wScanerCnt, uint16_t wBattleTime)
         {
            return CUserDBUpdate_UserGetScaner230_user(_this, wScanerCnt, wBattleTime, CUserDBUpdate_UserGetScaner230_next);
         };
-        bool CUserDBUpdate_UserPlayTime232_wrapper(struct CUserDB* _this, unsigned int dwAccPlayTime)
+        static bool CUserDBUpdate_UserPlayTime232_wrapper(struct CUserDB* _this, unsigned int dwAccPlayTime)
         {
            return CUserDBUpdate_UserPlayTime232_user(_this, dwAccPlayTime, CUserDBUpdate_UserPlayTime232_next);
         };
-        bool CUserDBUpdate_UserTLStatus234_wrapper(struct CUserDB* _this, char byStatus)
+        static bool CUserDBUpdate_UserTLStatus234_wrapper(struct CUserDB* _this, char byStatus)
         {
            return CUserDBUpdate_UserTLStatus234_user(_this, byStatus, CUserDBUpdate_UserTLStatus234_next);
         };
-        bool CUserDBUpdate_UserVoteData236_wrapper(struct CUserDB* _this)
+        static bool CUserDBUpdate_UserVoteData236_wrapper(struct CUserDB* _this)
         {
            return CUserDBUpdate_UserVoteData236_user(_this, CUserDBUpdate_UserVoteData236_next);
         };
-        bool CUserDBUpdate_User_Action_Point238_wrapper(struct CUserDB* _this, char byActionCode, unsigned int dwPoint)
+        static bool CUserDBUpdate_User_Action_Point238_wrapper(struct CUserDB* _this, char byActionCode, unsigned int dwPoint)
         {
            return CUserDBUpdate_User_Action_Point238_user(_this, byActionCode, dwPoint, CUserDBUpdate_User_Action_Point238_next);
         };
-        bool CUserDBUpdate_WindowInfo240_wrapper(struct CUserDB* _this, unsigned int* pdwSkill, unsigned int* pdwForce, unsigned int* pdwChar, unsigned int* pdwAnimus, unsigned int dwInven, unsigned int* pdwInvenBag)
+        static bool CUserDBUpdate_WindowInfo240_wrapper(struct CUserDB* _this, unsigned int* pdwSkill, unsigned int* pdwForce, unsigned int* pdwChar, unsigned int* pdwAnimus, unsigned int dwInven, unsigned int* pdwInvenBag)
         {
            return CUserDBUpdate_WindowInfo240_user(_this, pdwSkill, pdwForce, pdwChar, pdwAnimus, dwInven, pdwInvenBag, CUserDBUpdate_WindowInfo240_next);
         };
-        void CUserDBWriteLog_ChangeClassAfterInitClass242_wrapper(struct CUserDB* _this, char byType, char* szPrevClass)
+        static void CUserDBWriteLog_ChangeClassAfterInitClass242_wrapper(struct CUserDB* _this, char byType, char* szPrevClass)
         {
            CUserDBWriteLog_ChangeClassAfterInitClass242_user(_this, byType, szPrevClass, CUserDBWriteLog_ChangeClassAfterInitClass242_next);
         };
-        void CUserDBWriteLog_CharSelect244_wrapper(struct CUserDB* _this)
+        static void CUserDBWriteLog_CharSelect244_wrapper(struct CUserDB* _this)
         {
            CUserDBWriteLog_CharSelect244_user(_this, CUserDBWriteLog_CharSelect244_next);
         };
-        void CUserDBWriteLog_Level246_wrapper(struct CUserDB* _this, char byLv)
+        static void CUserDBWriteLog_Level246_wrapper(struct CUserDB* _this, char byLv)
         {
            CUserDBWriteLog_Level246_user(_this, byLv, CUserDBWriteLog_Level246_next);
         };
-        void CUserDBdtor_CUserDB252_wrapper(struct CUserDB* _this)
+        static void CUserDBdtor_CUserDB252_wrapper(struct CUserDB* _this)
         {
            CUserDBdtor_CUserDB252_user(_this, CUserDBdtor_CUserDB252_next);
         };
         
-        hook_record CUserDB_functions[] = {
+        static hook_record CUserDB_functions[] = {
         {   (LPVOID)0x14011afc0L,
             (LPVOID *)&CUserDBAlive_Char_Complete2_user,
             (LPVOID *)&CUserDBAlive_Char_Complete2_next,
@@ -1378,5 +1378,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

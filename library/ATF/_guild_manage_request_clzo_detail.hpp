@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_guild_manage_request_clzoctor__guild_manage_request_clzo2_ptr _guild_manage_request_clzoctor__guild_manage_request_clzo2_next(nullptr);
-        info::_guild_manage_request_clzoctor__guild_manage_request_clzo2_clbk _guild_manage_request_clzoctor__guild_manage_request_clzo2_user(nullptr);
-        info::_guild_manage_request_clzosize4_ptr _guild_manage_request_clzosize4_next(nullptr);
-        info::_guild_manage_request_clzosize4_clbk _guild_manage_request_clzosize4_user(nullptr);
+        static info::_guild_manage_request_clzoctor__guild_manage_request_clzo2_ptr _guild_manage_request_clzoctor__guild_manage_request_clzo2_next(nullptr);
+        static info::_guild_manage_request_clzoctor__guild_manage_request_clzo2_clbk _guild_manage_request_clzoctor__guild_manage_request_clzo2_user(nullptr);
+        static info::_guild_manage_request_clzosize4_ptr _guild_manage_request_clzosize4_next(nullptr);
+        static info::_guild_manage_request_clzosize4_clbk _guild_manage_request_clzosize4_user(nullptr);
         
-        void _guild_manage_request_clzoctor__guild_manage_request_clzo2_wrapper(struct _guild_manage_request_clzo* _this)
+        static void _guild_manage_request_clzoctor__guild_manage_request_clzo2_wrapper(struct _guild_manage_request_clzo* _this)
         {
            _guild_manage_request_clzoctor__guild_manage_request_clzo2_user(_this, _guild_manage_request_clzoctor__guild_manage_request_clzo2_next);
         };
-        int _guild_manage_request_clzosize4_wrapper(struct _guild_manage_request_clzo* _this)
+        static int _guild_manage_request_clzosize4_wrapper(struct _guild_manage_request_clzo* _this)
         {
            return _guild_manage_request_clzosize4_user(_this, _guild_manage_request_clzosize4_next);
         };
         
-        hook_record _guild_manage_request_clzo_functions[] = {
+        static hook_record _guild_manage_request_clzo_functions[] = {
         {   (LPVOID)0x14029d7d0L,
             (LPVOID *)&_guild_manage_request_clzoctor__guild_manage_request_clzo2_user,
             (LPVOID *)&_guild_manage_request_clzoctor__guild_manage_request_clzo2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

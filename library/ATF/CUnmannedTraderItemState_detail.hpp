@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderItemStatector_CUnmannedTraderItemState2_ptr CUnmannedTraderItemStatector_CUnmannedTraderItemState2_next(nullptr);
-        info::CUnmannedTraderItemStatector_CUnmannedTraderItemState2_clbk CUnmannedTraderItemStatector_CUnmannedTraderItemState2_user(nullptr);
-        info::CUnmannedTraderItemStateClear4_ptr CUnmannedTraderItemStateClear4_next(nullptr);
-        info::CUnmannedTraderItemStateClear4_clbk CUnmannedTraderItemStateClear4_user(nullptr);
-        info::CUnmannedTraderItemStateGetMaxStateCnt6_ptr CUnmannedTraderItemStateGetMaxStateCnt6_next(nullptr);
-        info::CUnmannedTraderItemStateGetMaxStateCnt6_clbk CUnmannedTraderItemStateGetMaxStateCnt6_user(nullptr);
-        info::CUnmannedTraderItemStateGetState8_ptr CUnmannedTraderItemStateGetState8_next(nullptr);
-        info::CUnmannedTraderItemStateGetState8_clbk CUnmannedTraderItemStateGetState8_user(nullptr);
-        info::CUnmannedTraderItemStateGetStateStrList10_ptr CUnmannedTraderItemStateGetStateStrList10_next(nullptr);
-        info::CUnmannedTraderItemStateGetStateStrList10_clbk CUnmannedTraderItemStateGetStateStrList10_user(nullptr);
-        info::CUnmannedTraderItemStateGetStateStrW12_ptr CUnmannedTraderItemStateGetStateStrW12_next(nullptr);
-        info::CUnmannedTraderItemStateGetStateStrW12_clbk CUnmannedTraderItemStateGetStateStrW12_user(nullptr);
-        info::CUnmannedTraderItemStatePushUpdateState14_ptr CUnmannedTraderItemStatePushUpdateState14_next(nullptr);
-        info::CUnmannedTraderItemStatePushUpdateState14_clbk CUnmannedTraderItemStatePushUpdateState14_user(nullptr);
-        info::CUnmannedTraderItemStateSet16_ptr CUnmannedTraderItemStateSet16_next(nullptr);
-        info::CUnmannedTraderItemStateSet16_clbk CUnmannedTraderItemStateSet16_user(nullptr);
-        info::CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_ptr CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_next(nullptr);
-        info::CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_clbk CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_user(nullptr);
+        static info::CUnmannedTraderItemStatector_CUnmannedTraderItemState2_ptr CUnmannedTraderItemStatector_CUnmannedTraderItemState2_next(nullptr);
+        static info::CUnmannedTraderItemStatector_CUnmannedTraderItemState2_clbk CUnmannedTraderItemStatector_CUnmannedTraderItemState2_user(nullptr);
+        static info::CUnmannedTraderItemStateClear4_ptr CUnmannedTraderItemStateClear4_next(nullptr);
+        static info::CUnmannedTraderItemStateClear4_clbk CUnmannedTraderItemStateClear4_user(nullptr);
+        static info::CUnmannedTraderItemStateGetMaxStateCnt6_ptr CUnmannedTraderItemStateGetMaxStateCnt6_next(nullptr);
+        static info::CUnmannedTraderItemStateGetMaxStateCnt6_clbk CUnmannedTraderItemStateGetMaxStateCnt6_user(nullptr);
+        static info::CUnmannedTraderItemStateGetState8_ptr CUnmannedTraderItemStateGetState8_next(nullptr);
+        static info::CUnmannedTraderItemStateGetState8_clbk CUnmannedTraderItemStateGetState8_user(nullptr);
+        static info::CUnmannedTraderItemStateGetStateStrList10_ptr CUnmannedTraderItemStateGetStateStrList10_next(nullptr);
+        static info::CUnmannedTraderItemStateGetStateStrList10_clbk CUnmannedTraderItemStateGetStateStrList10_user(nullptr);
+        static info::CUnmannedTraderItemStateGetStateStrW12_ptr CUnmannedTraderItemStateGetStateStrW12_next(nullptr);
+        static info::CUnmannedTraderItemStateGetStateStrW12_clbk CUnmannedTraderItemStateGetStateStrW12_user(nullptr);
+        static info::CUnmannedTraderItemStatePushUpdateState14_ptr CUnmannedTraderItemStatePushUpdateState14_next(nullptr);
+        static info::CUnmannedTraderItemStatePushUpdateState14_clbk CUnmannedTraderItemStatePushUpdateState14_user(nullptr);
+        static info::CUnmannedTraderItemStateSet16_ptr CUnmannedTraderItemStateSet16_next(nullptr);
+        static info::CUnmannedTraderItemStateSet16_clbk CUnmannedTraderItemStateSet16_user(nullptr);
+        static info::CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_ptr CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_next(nullptr);
+        static info::CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_clbk CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_user(nullptr);
         
-        void CUnmannedTraderItemStatector_CUnmannedTraderItemState2_wrapper(struct CUnmannedTraderItemState* _this)
+        static void CUnmannedTraderItemStatector_CUnmannedTraderItemState2_wrapper(struct CUnmannedTraderItemState* _this)
         {
            CUnmannedTraderItemStatector_CUnmannedTraderItemState2_user(_this, CUnmannedTraderItemStatector_CUnmannedTraderItemState2_next);
         };
-        void CUnmannedTraderItemStateClear4_wrapper(struct CUnmannedTraderItemState* _this)
+        static void CUnmannedTraderItemStateClear4_wrapper(struct CUnmannedTraderItemState* _this)
         {
            CUnmannedTraderItemStateClear4_user(_this, CUnmannedTraderItemStateClear4_next);
         };
-        unsigned int CUnmannedTraderItemStateGetMaxStateCnt6_wrapper()
+        static unsigned int CUnmannedTraderItemStateGetMaxStateCnt6_wrapper()
         {
            return CUnmannedTraderItemStateGetMaxStateCnt6_user(CUnmannedTraderItemStateGetMaxStateCnt6_next);
         };
-        CUnmannedTraderItemState::STATE CUnmannedTraderItemStateGetState8_wrapper(struct CUnmannedTraderItemState* _this)
+        static CUnmannedTraderItemState::STATE CUnmannedTraderItemStateGetState8_wrapper(struct CUnmannedTraderItemState* _this)
         {
            return CUnmannedTraderItemStateGetState8_user(_this, CUnmannedTraderItemStateGetState8_next);
         };
-        wchar_t** CUnmannedTraderItemStateGetStateStrList10_wrapper()
+        static wchar_t** CUnmannedTraderItemStateGetStateStrList10_wrapper()
         {
            return CUnmannedTraderItemStateGetStateStrList10_user(CUnmannedTraderItemStateGetStateStrList10_next);
         };
-        wchar_t* CUnmannedTraderItemStateGetStateStrW12_wrapper(unsigned int uiInx)
+        static wchar_t* CUnmannedTraderItemStateGetStateStrW12_wrapper(unsigned int uiInx)
         {
            return CUnmannedTraderItemStateGetStateStrW12_user(uiInx, CUnmannedTraderItemStateGetStateStrW12_next);
         };
-        bool CUnmannedTraderItemStatePushUpdateState14_wrapper(char byType, unsigned int dwRegistSerial, char byState, unsigned int dwOwnerSerial, uint16_t wItemSerial, char byItemTableCode, uint16_t wItemTableIndex)
+        static bool CUnmannedTraderItemStatePushUpdateState14_wrapper(char byType, unsigned int dwRegistSerial, char byState, unsigned int dwOwnerSerial, uint16_t wItemSerial, char byItemTableCode, uint16_t wItemTableIndex)
         {
            return CUnmannedTraderItemStatePushUpdateState14_user(byType, dwRegistSerial, byState, dwOwnerSerial, wItemSerial, byItemTableCode, wItemTableIndex, CUnmannedTraderItemStatePushUpdateState14_next);
         };
-        bool CUnmannedTraderItemStateSet16_wrapper(struct CUnmannedTraderItemState* _this, char byState)
+        static bool CUnmannedTraderItemStateSet16_wrapper(struct CUnmannedTraderItemState* _this, char byState)
         {
            return CUnmannedTraderItemStateSet16_user(_this, byState, CUnmannedTraderItemStateSet16_next);
         };
-        void CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_wrapper(struct CUnmannedTraderItemState* _this)
+        static void CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_wrapper(struct CUnmannedTraderItemState* _this)
         {
            CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_user(_this, CUnmannedTraderItemStatedtor_CUnmannedTraderItemState18_next);
         };
         
-        hook_record CUnmannedTraderItemState_functions[] = {
+        static hook_record CUnmannedTraderItemState_functions[] = {
         {   (LPVOID)0x140352d90L,
             (LPVOID *)&CUnmannedTraderItemStatector_CUnmannedTraderItemState2_user,
             (LPVOID *)&CUnmannedTraderItemStatector_CUnmannedTraderItemState2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

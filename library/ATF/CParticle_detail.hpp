@@ -8,147 +8,147 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CParticleCheckCollision1_ptr CParticleCheckCollision1_next(nullptr);
-        info::CParticleCheckCollision1_clbk CParticleCheckCollision1_user(nullptr);
-        info::CParticleCopyParticleToSaveParticle2_ptr CParticleCopyParticleToSaveParticle2_next(nullptr);
-        info::CParticleCopyParticleToSaveParticle2_clbk CParticleCopyParticleToSaveParticle2_user(nullptr);
-        info::CParticleCopySaveParticleToParticle3_ptr CParticleCopySaveParticleToParticle3_next(nullptr);
-        info::CParticleCopySaveParticleToParticle3_clbk CParticleCopySaveParticleToParticle3_user(nullptr);
-        info::CParticleGetBBox4_ptr CParticleGetBBox4_next(nullptr);
-        info::CParticleGetBBox4_clbk CParticleGetBBox4_user(nullptr);
-        info::CParticleGetFlickerARGB5_ptr CParticleGetFlickerARGB5_next(nullptr);
-        info::CParticleGetFlickerARGB5_clbk CParticleGetFlickerARGB5_user(nullptr);
-        info::CParticleGetPartcleStep6_ptr CParticleGetPartcleStep6_next(nullptr);
-        info::CParticleGetPartcleStep6_clbk CParticleGetPartcleStep6_user(nullptr);
-        info::CParticleGetParticleState7_ptr CParticleGetParticleState7_next(nullptr);
-        info::CParticleGetParticleState7_clbk CParticleGetParticleState7_user(nullptr);
-        info::CParticleInitElement8_ptr CParticleInitElement8_next(nullptr);
-        info::CParticleInitElement8_clbk CParticleInitElement8_user(nullptr);
-        info::CParticleInitParticle9_ptr CParticleInitParticle9_next(nullptr);
-        info::CParticleInitParticle9_clbk CParticleInitParticle9_user(nullptr);
-        info::CParticleLoadParticleSPT10_ptr CParticleLoadParticleSPT10_next(nullptr);
-        info::CParticleLoadParticleSPT10_clbk CParticleLoadParticleSPT10_user(nullptr);
-        info::CParticleLoop11_ptr CParticleLoop11_next(nullptr);
-        info::CParticleLoop11_clbk CParticleLoop11_user(nullptr);
-        info::CParticleReInitParticle12_ptr CParticleReInitParticle12_next(nullptr);
-        info::CParticleReInitParticle12_clbk CParticleReInitParticle12_user(nullptr);
-        info::CParticleRealLoop13_ptr CParticleRealLoop13_next(nullptr);
-        info::CParticleRealLoop13_clbk CParticleRealLoop13_user(nullptr);
-        info::CParticleReleaseEntity14_ptr CParticleReleaseEntity14_next(nullptr);
-        info::CParticleReleaseEntity14_clbk CParticleReleaseEntity14_user(nullptr);
-        info::CParticleReleaseParticle15_ptr CParticleReleaseParticle15_next(nullptr);
-        info::CParticleReleaseParticle15_clbk CParticleReleaseParticle15_user(nullptr);
-        info::CParticleResetOnePerTime16_ptr CParticleResetOnePerTime16_next(nullptr);
-        info::CParticleResetOnePerTime16_clbk CParticleResetOnePerTime16_user(nullptr);
-        info::CParticleSetCreatePos17_ptr CParticleSetCreatePos17_next(nullptr);
-        info::CParticleSetCreatePos17_clbk CParticleSetCreatePos17_user(nullptr);
-        info::CParticleSetParticleState18_ptr CParticleSetParticleState18_next(nullptr);
-        info::CParticleSetParticleState18_clbk CParticleSetParticleState18_user(nullptr);
-        info::CParticleSetPreCalcParticle19_ptr CParticleSetPreCalcParticle19_next(nullptr);
-        info::CParticleSetPreCalcParticle19_clbk CParticleSetPreCalcParticle19_user(nullptr);
-        info::CParticleSetStartBoxArea20_ptr CParticleSetStartBoxArea20_next(nullptr);
-        info::CParticleSetStartBoxArea20_clbk CParticleSetStartBoxArea20_user(nullptr);
-        info::CParticleSpecialLoop21_ptr CParticleSpecialLoop21_next(nullptr);
-        info::CParticleSpecialLoop21_clbk CParticleSpecialLoop21_user(nullptr);
-        info::CParticleSpecialLoop222_ptr CParticleSpecialLoop222_next(nullptr);
-        info::CParticleSpecialLoop222_clbk CParticleSpecialLoop222_user(nullptr);
-        info::CParticledtor_CParticle24_ptr CParticledtor_CParticle24_next(nullptr);
-        info::CParticledtor_CParticle24_clbk CParticledtor_CParticle24_user(nullptr);
+        static info::CParticleCheckCollision1_ptr CParticleCheckCollision1_next(nullptr);
+        static info::CParticleCheckCollision1_clbk CParticleCheckCollision1_user(nullptr);
+        static info::CParticleCopyParticleToSaveParticle2_ptr CParticleCopyParticleToSaveParticle2_next(nullptr);
+        static info::CParticleCopyParticleToSaveParticle2_clbk CParticleCopyParticleToSaveParticle2_user(nullptr);
+        static info::CParticleCopySaveParticleToParticle3_ptr CParticleCopySaveParticleToParticle3_next(nullptr);
+        static info::CParticleCopySaveParticleToParticle3_clbk CParticleCopySaveParticleToParticle3_user(nullptr);
+        static info::CParticleGetBBox4_ptr CParticleGetBBox4_next(nullptr);
+        static info::CParticleGetBBox4_clbk CParticleGetBBox4_user(nullptr);
+        static info::CParticleGetFlickerARGB5_ptr CParticleGetFlickerARGB5_next(nullptr);
+        static info::CParticleGetFlickerARGB5_clbk CParticleGetFlickerARGB5_user(nullptr);
+        static info::CParticleGetPartcleStep6_ptr CParticleGetPartcleStep6_next(nullptr);
+        static info::CParticleGetPartcleStep6_clbk CParticleGetPartcleStep6_user(nullptr);
+        static info::CParticleGetParticleState7_ptr CParticleGetParticleState7_next(nullptr);
+        static info::CParticleGetParticleState7_clbk CParticleGetParticleState7_user(nullptr);
+        static info::CParticleInitElement8_ptr CParticleInitElement8_next(nullptr);
+        static info::CParticleInitElement8_clbk CParticleInitElement8_user(nullptr);
+        static info::CParticleInitParticle9_ptr CParticleInitParticle9_next(nullptr);
+        static info::CParticleInitParticle9_clbk CParticleInitParticle9_user(nullptr);
+        static info::CParticleLoadParticleSPT10_ptr CParticleLoadParticleSPT10_next(nullptr);
+        static info::CParticleLoadParticleSPT10_clbk CParticleLoadParticleSPT10_user(nullptr);
+        static info::CParticleLoop11_ptr CParticleLoop11_next(nullptr);
+        static info::CParticleLoop11_clbk CParticleLoop11_user(nullptr);
+        static info::CParticleReInitParticle12_ptr CParticleReInitParticle12_next(nullptr);
+        static info::CParticleReInitParticle12_clbk CParticleReInitParticle12_user(nullptr);
+        static info::CParticleRealLoop13_ptr CParticleRealLoop13_next(nullptr);
+        static info::CParticleRealLoop13_clbk CParticleRealLoop13_user(nullptr);
+        static info::CParticleReleaseEntity14_ptr CParticleReleaseEntity14_next(nullptr);
+        static info::CParticleReleaseEntity14_clbk CParticleReleaseEntity14_user(nullptr);
+        static info::CParticleReleaseParticle15_ptr CParticleReleaseParticle15_next(nullptr);
+        static info::CParticleReleaseParticle15_clbk CParticleReleaseParticle15_user(nullptr);
+        static info::CParticleResetOnePerTime16_ptr CParticleResetOnePerTime16_next(nullptr);
+        static info::CParticleResetOnePerTime16_clbk CParticleResetOnePerTime16_user(nullptr);
+        static info::CParticleSetCreatePos17_ptr CParticleSetCreatePos17_next(nullptr);
+        static info::CParticleSetCreatePos17_clbk CParticleSetCreatePos17_user(nullptr);
+        static info::CParticleSetParticleState18_ptr CParticleSetParticleState18_next(nullptr);
+        static info::CParticleSetParticleState18_clbk CParticleSetParticleState18_user(nullptr);
+        static info::CParticleSetPreCalcParticle19_ptr CParticleSetPreCalcParticle19_next(nullptr);
+        static info::CParticleSetPreCalcParticle19_clbk CParticleSetPreCalcParticle19_user(nullptr);
+        static info::CParticleSetStartBoxArea20_ptr CParticleSetStartBoxArea20_next(nullptr);
+        static info::CParticleSetStartBoxArea20_clbk CParticleSetStartBoxArea20_user(nullptr);
+        static info::CParticleSpecialLoop21_ptr CParticleSpecialLoop21_next(nullptr);
+        static info::CParticleSpecialLoop21_clbk CParticleSpecialLoop21_user(nullptr);
+        static info::CParticleSpecialLoop222_ptr CParticleSpecialLoop222_next(nullptr);
+        static info::CParticleSpecialLoop222_clbk CParticleSpecialLoop222_user(nullptr);
+        static info::CParticledtor_CParticle24_ptr CParticledtor_CParticle24_next(nullptr);
+        static info::CParticledtor_CParticle24_clbk CParticledtor_CParticle24_user(nullptr);
         
-        void CParticleCheckCollision1_wrapper(struct CParticle* _this, int arg_0, float arg_1)
+        static void CParticleCheckCollision1_wrapper(struct CParticle* _this, int arg_0, float arg_1)
         {
            CParticleCheckCollision1_user(_this, arg_0, arg_1, CParticleCheckCollision1_next);
         };
-        void CParticleCopyParticleToSaveParticle2_wrapper(struct CParticle* _this, struct _SAVE_PARTICLE* arg_0)
+        static void CParticleCopyParticleToSaveParticle2_wrapper(struct CParticle* _this, struct _SAVE_PARTICLE* arg_0)
         {
            CParticleCopyParticleToSaveParticle2_user(_this, arg_0, CParticleCopyParticleToSaveParticle2_next);
         };
-        void CParticleCopySaveParticleToParticle3_wrapper(struct CParticle* _this, struct _SAVE_PARTICLE* arg_0)
+        static void CParticleCopySaveParticleToParticle3_wrapper(struct CParticle* _this, struct _SAVE_PARTICLE* arg_0)
         {
            CParticleCopySaveParticleToParticle3_user(_this, arg_0, CParticleCopySaveParticleToParticle3_next);
         };
-        void CParticleGetBBox4_wrapper(struct CParticle* _this, float* arg_0, float* arg_1)
+        static void CParticleGetBBox4_wrapper(struct CParticle* _this, float* arg_0, float* arg_1)
         {
            CParticleGetBBox4_user(_this, arg_0, arg_1, CParticleGetBBox4_next);
         };
-        void CParticleGetFlickerARGB5_wrapper(struct CParticle* _this, int arg_0, uint32_t* arg_1)
+        static void CParticleGetFlickerARGB5_wrapper(struct CParticle* _this, int arg_0, uint32_t* arg_1)
         {
            CParticleGetFlickerARGB5_user(_this, arg_0, arg_1, CParticleGetFlickerARGB5_next);
         };
-        void CParticleGetPartcleStep6_wrapper(struct CParticle* _this, int arg_0, float arg_1)
+        static void CParticleGetPartcleStep6_wrapper(struct CParticle* _this, int arg_0, float arg_1)
         {
            CParticleGetPartcleStep6_user(_this, arg_0, arg_1, CParticleGetPartcleStep6_next);
         };
-        uint32_t CParticleGetParticleState7_wrapper(struct CParticle* _this)
+        static uint32_t CParticleGetParticleState7_wrapper(struct CParticle* _this)
         {
            return CParticleGetParticleState7_user(_this, CParticleGetParticleState7_next);
         };
-        void CParticleInitElement8_wrapper(struct CParticle* _this, int arg_0, float arg_1)
+        static void CParticleInitElement8_wrapper(struct CParticle* _this, int arg_0, float arg_1)
         {
            CParticleInitElement8_user(_this, arg_0, arg_1, CParticleInitElement8_next);
         };
-        void CParticleInitParticle9_wrapper(struct CParticle* _this)
+        static void CParticleInitParticle9_wrapper(struct CParticle* _this)
         {
            CParticleInitParticle9_user(_this, CParticleInitParticle9_next);
         };
-        int64_t CParticleLoadParticleSPT10_wrapper(struct CParticle* _this, char* arg_0, uint32_t arg_1)
+        static int64_t CParticleLoadParticleSPT10_wrapper(struct CParticle* _this, char* arg_0, uint32_t arg_1)
         {
            return CParticleLoadParticleSPT10_user(_this, arg_0, arg_1, CParticleLoadParticleSPT10_next);
         };
-        int32_t CParticleLoop11_wrapper(struct CParticle* _this)
+        static int32_t CParticleLoop11_wrapper(struct CParticle* _this)
         {
            return CParticleLoop11_user(_this, CParticleLoop11_next);
         };
-        void CParticleReInitParticle12_wrapper(struct CParticle* _this, int arg_0)
+        static void CParticleReInitParticle12_wrapper(struct CParticle* _this, int arg_0)
         {
            CParticleReInitParticle12_user(_this, arg_0, CParticleReInitParticle12_next);
         };
-        int32_t CParticleRealLoop13_wrapper(struct CParticle* _this)
+        static int32_t CParticleRealLoop13_wrapper(struct CParticle* _this)
         {
            return CParticleRealLoop13_user(_this, CParticleRealLoop13_next);
         };
-        void CParticleReleaseEntity14_wrapper(struct CParticle* _this)
+        static void CParticleReleaseEntity14_wrapper(struct CParticle* _this)
         {
            CParticleReleaseEntity14_user(_this, CParticleReleaseEntity14_next);
         };
-        void CParticleReleaseParticle15_wrapper(struct CParticle* _this)
+        static void CParticleReleaseParticle15_wrapper(struct CParticle* _this)
         {
            CParticleReleaseParticle15_user(_this, CParticleReleaseParticle15_next);
         };
-        void CParticleResetOnePerTime16_wrapper(struct CParticle* _this)
+        static void CParticleResetOnePerTime16_wrapper(struct CParticle* _this)
         {
            CParticleResetOnePerTime16_user(_this, CParticleResetOnePerTime16_next);
         };
-        void CParticleSetCreatePos17_wrapper(struct CParticle* _this, float* arg_0)
+        static void CParticleSetCreatePos17_wrapper(struct CParticle* _this, float* arg_0)
         {
            CParticleSetCreatePos17_user(_this, arg_0, CParticleSetCreatePos17_next);
         };
-        void CParticleSetParticleState18_wrapper(struct CParticle* _this, uint32_t arg_0)
+        static void CParticleSetParticleState18_wrapper(struct CParticle* _this, uint32_t arg_0)
         {
            CParticleSetParticleState18_user(_this, arg_0, CParticleSetParticleState18_next);
         };
-        void CParticleSetPreCalcParticle19_wrapper(struct CParticle* _this, uint32_t arg_0)
+        static void CParticleSetPreCalcParticle19_wrapper(struct CParticle* _this, uint32_t arg_0)
         {
            CParticleSetPreCalcParticle19_user(_this, arg_0, CParticleSetPreCalcParticle19_next);
         };
-        void CParticleSetStartBoxArea20_wrapper(struct CParticle* _this)
+        static void CParticleSetStartBoxArea20_wrapper(struct CParticle* _this)
         {
            CParticleSetStartBoxArea20_user(_this, CParticleSetStartBoxArea20_next);
         };
-        int32_t CParticleSpecialLoop21_wrapper(struct CParticle* _this)
+        static int32_t CParticleSpecialLoop21_wrapper(struct CParticle* _this)
         {
            return CParticleSpecialLoop21_user(_this, CParticleSpecialLoop21_next);
         };
-        int32_t CParticleSpecialLoop222_wrapper(struct CParticle* _this)
+        static int32_t CParticleSpecialLoop222_wrapper(struct CParticle* _this)
         {
            return CParticleSpecialLoop222_user(_this, CParticleSpecialLoop222_next);
         };
-        int64_t CParticledtor_CParticle24_wrapper(struct CParticle* _this)
+        static int64_t CParticledtor_CParticle24_wrapper(struct CParticle* _this)
         {
            return CParticledtor_CParticle24_user(_this, CParticledtor_CParticle24_next);
         };
         
-        hook_record CParticle_functions[] = {
+        static hook_record CParticle_functions[] = {
         {   (LPVOID)0x140518ef0L,
             (LPVOID *)&CParticleCheckCollision1_user,
             (LPVOID *)&CParticleCheckCollision1_next,
@@ -267,5 +267,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

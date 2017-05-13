@@ -8,29 +8,29 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_unit_download_result_zoclctor__unit_download_result_zocl2_ptr _unit_download_result_zoclctor__unit_download_result_zocl2_next(nullptr);
-        info::_unit_download_result_zoclctor__unit_download_result_zocl2_clbk _unit_download_result_zoclctor__unit_download_result_zocl2_user(nullptr);
-        info::_unit_download_result_zoclsize4_ptr _unit_download_result_zoclsize4_next(nullptr);
-        info::_unit_download_result_zoclsize4_clbk _unit_download_result_zoclsize4_user(nullptr);
+        static info::_unit_download_result_zoclctor__unit_download_result_zocl2_ptr _unit_download_result_zoclctor__unit_download_result_zocl2_next(nullptr);
+        static info::_unit_download_result_zoclctor__unit_download_result_zocl2_clbk _unit_download_result_zoclctor__unit_download_result_zocl2_user(nullptr);
+        static info::_unit_download_result_zoclsize4_ptr _unit_download_result_zoclsize4_next(nullptr);
+        static info::_unit_download_result_zoclsize4_clbk _unit_download_result_zoclsize4_user(nullptr);
         
-        info::_unit_download_result_zocl___listctor__list2_ptr _unit_download_result_zocl___listctor__list2_next(nullptr);
-        info::_unit_download_result_zocl___listctor__list2_clbk _unit_download_result_zocl___listctor__list2_user(nullptr);
+        static info::_unit_download_result_zocl___listctor__list2_ptr _unit_download_result_zocl___listctor__list2_next(nullptr);
+        static info::_unit_download_result_zocl___listctor__list2_clbk _unit_download_result_zocl___listctor__list2_user(nullptr);
         
-        void _unit_download_result_zoclctor__unit_download_result_zocl2_wrapper(struct _unit_download_result_zocl* _this)
+        static void _unit_download_result_zoclctor__unit_download_result_zocl2_wrapper(struct _unit_download_result_zocl* _this)
         {
            _unit_download_result_zoclctor__unit_download_result_zocl2_user(_this, _unit_download_result_zoclctor__unit_download_result_zocl2_next);
         };
-        int _unit_download_result_zoclsize4_wrapper(struct _unit_download_result_zocl* _this)
+        static int _unit_download_result_zoclsize4_wrapper(struct _unit_download_result_zocl* _this)
         {
            return _unit_download_result_zoclsize4_user(_this, _unit_download_result_zoclsize4_next);
         };
         
-        void _unit_download_result_zocl___listctor__list2_wrapper(struct _unit_download_result_zocl::_list* _this)
+        static void _unit_download_result_zocl___listctor__list2_wrapper(struct _unit_download_result_zocl::_list* _this)
         {
            _unit_download_result_zocl___listctor__list2_user(_this, _unit_download_result_zocl___listctor__list2_next);
         };
         
-        hook_record _unit_download_result_zocl_functions[] = {
+        static hook_record _unit_download_result_zocl_functions[] = {
         {   (LPVOID)0x1400ef730L,
             (LPVOID *)&_unit_download_result_zoclctor__unit_download_result_zocl2_user,
             (LPVOID *)&_unit_download_result_zoclctor__unit_download_result_zocl2_next,
@@ -50,5 +50,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

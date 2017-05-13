@@ -8,303 +8,303 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyKeeperctor_CHolyKeeper2_ptr CHolyKeeperctor_CHolyKeeper2_next(nullptr);
-        info::CHolyKeeperctor_CHolyKeeper2_clbk CHolyKeeperctor_CHolyKeeper2_user(nullptr);
-        info::CHolyKeeperCheckAttack4_ptr CHolyKeeperCheckAttack4_next(nullptr);
-        info::CHolyKeeperCheckAttack4_clbk CHolyKeeperCheckAttack4_user(nullptr);
-        info::CHolyKeeperCheckCurPos6_ptr CHolyKeeperCheckCurPos6_next(nullptr);
-        info::CHolyKeeperCheckCurPos6_clbk CHolyKeeperCheckCurPos6_user(nullptr);
-        info::CHolyKeeperCheckExit8_ptr CHolyKeeperCheckExit8_next(nullptr);
-        info::CHolyKeeperCheckExit8_clbk CHolyKeeperCheckExit8_user(nullptr);
-        info::CHolyKeeperCheckMove10_ptr CHolyKeeperCheckMove10_next(nullptr);
-        info::CHolyKeeperCheckMove10_clbk CHolyKeeperCheckMove10_user(nullptr);
-        info::CHolyKeeperCreate12_ptr CHolyKeeperCreate12_next(nullptr);
-        info::CHolyKeeperCreate12_clbk CHolyKeeperCreate12_user(nullptr);
-        info::CHolyKeeperDestroy14_ptr CHolyKeeperDestroy14_next(nullptr);
-        info::CHolyKeeperDestroy14_clbk CHolyKeeperDestroy14_user(nullptr);
-        info::CHolyKeeperDropItem16_ptr CHolyKeeperDropItem16_next(nullptr);
-        info::CHolyKeeperDropItem16_clbk CHolyKeeperDropItem16_user(nullptr);
-        info::CHolyKeeperExit18_ptr CHolyKeeperExit18_next(nullptr);
-        info::CHolyKeeperExit18_clbk CHolyKeeperExit18_user(nullptr);
-        info::CHolyKeeperGetAttackDP20_ptr CHolyKeeperGetAttackDP20_next(nullptr);
-        info::CHolyKeeperGetAttackDP20_clbk CHolyKeeperGetAttackDP20_user(nullptr);
-        info::CHolyKeeperGetAttackPivot22_ptr CHolyKeeperGetAttackPivot22_next(nullptr);
-        info::CHolyKeeperGetAttackPivot22_clbk CHolyKeeperGetAttackPivot22_user(nullptr);
-        info::CHolyKeeperGetAttackRange24_ptr CHolyKeeperGetAttackRange24_next(nullptr);
-        info::CHolyKeeperGetAttackRange24_clbk CHolyKeeperGetAttackRange24_user(nullptr);
-        info::CHolyKeeperGetDefFC26_ptr CHolyKeeperGetDefFC26_next(nullptr);
-        info::CHolyKeeperGetDefFC26_clbk CHolyKeeperGetDefFC26_user(nullptr);
-        info::CHolyKeeperGetDefFacing28_ptr CHolyKeeperGetDefFacing28_next(nullptr);
-        info::CHolyKeeperGetDefFacing28_clbk CHolyKeeperGetDefFacing28_user(nullptr);
-        info::CHolyKeeperGetDefGap30_ptr CHolyKeeperGetDefGap30_next(nullptr);
-        info::CHolyKeeperGetDefGap30_clbk CHolyKeeperGetDefGap30_user(nullptr);
-        info::CHolyKeeperGetDefSkill32_ptr CHolyKeeperGetDefSkill32_next(nullptr);
-        info::CHolyKeeperGetDefSkill32_clbk CHolyKeeperGetDefSkill32_user(nullptr);
-        info::CHolyKeeperGetFireTol34_ptr CHolyKeeperGetFireTol34_next(nullptr);
-        info::CHolyKeeperGetFireTol34_clbk CHolyKeeperGetFireTol34_user(nullptr);
-        info::CHolyKeeperGetGenAttackProb36_ptr CHolyKeeperGetGenAttackProb36_next(nullptr);
-        info::CHolyKeeperGetGenAttackProb36_clbk CHolyKeeperGetGenAttackProb36_user(nullptr);
-        info::CHolyKeeperGetHP38_ptr CHolyKeeperGetHP38_next(nullptr);
-        info::CHolyKeeperGetHP38_clbk CHolyKeeperGetHP38_user(nullptr);
-        info::CHolyKeeperGetLevel40_ptr CHolyKeeperGetLevel40_next(nullptr);
-        info::CHolyKeeperGetLevel40_clbk CHolyKeeperGetLevel40_user(nullptr);
-        info::CHolyKeeperGetMaxHP42_ptr CHolyKeeperGetMaxHP42_next(nullptr);
-        info::CHolyKeeperGetMaxHP42_clbk CHolyKeeperGetMaxHP42_user(nullptr);
-        info::CHolyKeeperGetObjName44_ptr CHolyKeeperGetObjName44_next(nullptr);
-        info::CHolyKeeperGetObjName44_clbk CHolyKeeperGetObjName44_user(nullptr);
-        info::CHolyKeeperGetObjRace46_ptr CHolyKeeperGetObjRace46_next(nullptr);
-        info::CHolyKeeperGetObjRace46_clbk CHolyKeeperGetObjRace46_user(nullptr);
-        info::CHolyKeeperGetSoilTol48_ptr CHolyKeeperGetSoilTol48_next(nullptr);
-        info::CHolyKeeperGetSoilTol48_clbk CHolyKeeperGetSoilTol48_user(nullptr);
-        info::CHolyKeeperGetWaterTol50_ptr CHolyKeeperGetWaterTol50_next(nullptr);
-        info::CHolyKeeperGetWaterTol50_clbk CHolyKeeperGetWaterTol50_user(nullptr);
-        info::CHolyKeeperGetWeaponAdjust52_ptr CHolyKeeperGetWeaponAdjust52_next(nullptr);
-        info::CHolyKeeperGetWeaponAdjust52_clbk CHolyKeeperGetWeaponAdjust52_user(nullptr);
-        info::CHolyKeeperGetWeaponClass54_ptr CHolyKeeperGetWeaponClass54_next(nullptr);
-        info::CHolyKeeperGetWeaponClass54_clbk CHolyKeeperGetWeaponClass54_user(nullptr);
-        info::CHolyKeeperGetWidth56_ptr CHolyKeeperGetWidth56_next(nullptr);
-        info::CHolyKeeperGetWidth56_clbk CHolyKeeperGetWidth56_user(nullptr);
-        info::CHolyKeeperGetWindTol58_ptr CHolyKeeperGetWindTol58_next(nullptr);
-        info::CHolyKeeperGetWindTol58_clbk CHolyKeeperGetWindTol58_user(nullptr);
-        info::CHolyKeeperInit60_ptr CHolyKeeperInit60_next(nullptr);
-        info::CHolyKeeperInit60_clbk CHolyKeeperInit60_user(nullptr);
-        info::CHolyKeeperIsBeAttackedAble62_ptr CHolyKeeperIsBeAttackedAble62_next(nullptr);
-        info::CHolyKeeperIsBeAttackedAble62_clbk CHolyKeeperIsBeAttackedAble62_user(nullptr);
-        info::CHolyKeeperIsBeDamagedAble64_ptr CHolyKeeperIsBeDamagedAble64_next(nullptr);
-        info::CHolyKeeperIsBeDamagedAble64_clbk CHolyKeeperIsBeDamagedAble64_user(nullptr);
-        info::CHolyKeeperLoop66_ptr CHolyKeeperLoop66_next(nullptr);
-        info::CHolyKeeperLoop66_clbk CHolyKeeperLoop66_user(nullptr);
-        info::CHolyKeeperOutOfSec68_ptr CHolyKeeperOutOfSec68_next(nullptr);
-        info::CHolyKeeperOutOfSec68_clbk CHolyKeeperOutOfSec68_user(nullptr);
-        info::CHolyKeeperSearchAttackTarget70_ptr CHolyKeeperSearchAttackTarget70_next(nullptr);
-        info::CHolyKeeperSearchAttackTarget70_clbk CHolyKeeperSearchAttackTarget70_user(nullptr);
-        info::CHolyKeeperSearchMoveTarget72_ptr CHolyKeeperSearchMoveTarget72_next(nullptr);
-        info::CHolyKeeperSearchMoveTarget72_clbk CHolyKeeperSearchMoveTarget72_user(nullptr);
-        info::CHolyKeeperSendMsg_Attack74_ptr CHolyKeeperSendMsg_Attack74_next(nullptr);
-        info::CHolyKeeperSendMsg_Attack74_clbk CHolyKeeperSendMsg_Attack74_user(nullptr);
-        info::CHolyKeeperSendMsg_Create76_ptr CHolyKeeperSendMsg_Create76_next(nullptr);
-        info::CHolyKeeperSendMsg_Create76_clbk CHolyKeeperSendMsg_Create76_user(nullptr);
-        info::CHolyKeeperSendMsg_Destroy78_ptr CHolyKeeperSendMsg_Destroy78_next(nullptr);
-        info::CHolyKeeperSendMsg_Destroy78_clbk CHolyKeeperSendMsg_Destroy78_user(nullptr);
-        info::CHolyKeeperSendMsg_FixPosition80_ptr CHolyKeeperSendMsg_FixPosition80_next(nullptr);
-        info::CHolyKeeperSendMsg_FixPosition80_clbk CHolyKeeperSendMsg_FixPosition80_user(nullptr);
-        info::CHolyKeeperSendMsg_Move82_ptr CHolyKeeperSendMsg_Move82_next(nullptr);
-        info::CHolyKeeperSendMsg_Move82_clbk CHolyKeeperSendMsg_Move82_user(nullptr);
-        info::CHolyKeeperSendMsg_RealMovePoint84_ptr CHolyKeeperSendMsg_RealMovePoint84_next(nullptr);
-        info::CHolyKeeperSendMsg_RealMovePoint84_clbk CHolyKeeperSendMsg_RealMovePoint84_user(nullptr);
-        info::CHolyKeeperSetDamage86_ptr CHolyKeeperSetDamage86_next(nullptr);
-        info::CHolyKeeperSetDamage86_clbk CHolyKeeperSetDamage86_user(nullptr);
-        info::CHolyKeeperSetDamageAbleState88_ptr CHolyKeeperSetDamageAbleState88_next(nullptr);
-        info::CHolyKeeperSetDamageAbleState88_clbk CHolyKeeperSetDamageAbleState88_user(nullptr);
-        info::CHolyKeeperSetDropItem90_ptr CHolyKeeperSetDropItem90_next(nullptr);
-        info::CHolyKeeperSetDropItem90_clbk CHolyKeeperSetDropItem90_user(nullptr);
-        info::CHolyKeeperSetHP92_ptr CHolyKeeperSetHP92_next(nullptr);
-        info::CHolyKeeperSetHP92_clbk CHolyKeeperSetHP92_user(nullptr);
-        info::CHolyKeeperSetMaxHP94_ptr CHolyKeeperSetMaxHP94_next(nullptr);
-        info::CHolyKeeperSetMaxHP94_clbk CHolyKeeperSetMaxHP94_user(nullptr);
-        info::CHolyKeeperSetStateChaos96_ptr CHolyKeeperSetStateChaos96_next(nullptr);
-        info::CHolyKeeperSetStateChaos96_clbk CHolyKeeperSetStateChaos96_user(nullptr);
-        info::CHolyKeeperdtor_CHolyKeeper102_ptr CHolyKeeperdtor_CHolyKeeper102_next(nullptr);
-        info::CHolyKeeperdtor_CHolyKeeper102_clbk CHolyKeeperdtor_CHolyKeeper102_user(nullptr);
+        static info::CHolyKeeperctor_CHolyKeeper2_ptr CHolyKeeperctor_CHolyKeeper2_next(nullptr);
+        static info::CHolyKeeperctor_CHolyKeeper2_clbk CHolyKeeperctor_CHolyKeeper2_user(nullptr);
+        static info::CHolyKeeperCheckAttack4_ptr CHolyKeeperCheckAttack4_next(nullptr);
+        static info::CHolyKeeperCheckAttack4_clbk CHolyKeeperCheckAttack4_user(nullptr);
+        static info::CHolyKeeperCheckCurPos6_ptr CHolyKeeperCheckCurPos6_next(nullptr);
+        static info::CHolyKeeperCheckCurPos6_clbk CHolyKeeperCheckCurPos6_user(nullptr);
+        static info::CHolyKeeperCheckExit8_ptr CHolyKeeperCheckExit8_next(nullptr);
+        static info::CHolyKeeperCheckExit8_clbk CHolyKeeperCheckExit8_user(nullptr);
+        static info::CHolyKeeperCheckMove10_ptr CHolyKeeperCheckMove10_next(nullptr);
+        static info::CHolyKeeperCheckMove10_clbk CHolyKeeperCheckMove10_user(nullptr);
+        static info::CHolyKeeperCreate12_ptr CHolyKeeperCreate12_next(nullptr);
+        static info::CHolyKeeperCreate12_clbk CHolyKeeperCreate12_user(nullptr);
+        static info::CHolyKeeperDestroy14_ptr CHolyKeeperDestroy14_next(nullptr);
+        static info::CHolyKeeperDestroy14_clbk CHolyKeeperDestroy14_user(nullptr);
+        static info::CHolyKeeperDropItem16_ptr CHolyKeeperDropItem16_next(nullptr);
+        static info::CHolyKeeperDropItem16_clbk CHolyKeeperDropItem16_user(nullptr);
+        static info::CHolyKeeperExit18_ptr CHolyKeeperExit18_next(nullptr);
+        static info::CHolyKeeperExit18_clbk CHolyKeeperExit18_user(nullptr);
+        static info::CHolyKeeperGetAttackDP20_ptr CHolyKeeperGetAttackDP20_next(nullptr);
+        static info::CHolyKeeperGetAttackDP20_clbk CHolyKeeperGetAttackDP20_user(nullptr);
+        static info::CHolyKeeperGetAttackPivot22_ptr CHolyKeeperGetAttackPivot22_next(nullptr);
+        static info::CHolyKeeperGetAttackPivot22_clbk CHolyKeeperGetAttackPivot22_user(nullptr);
+        static info::CHolyKeeperGetAttackRange24_ptr CHolyKeeperGetAttackRange24_next(nullptr);
+        static info::CHolyKeeperGetAttackRange24_clbk CHolyKeeperGetAttackRange24_user(nullptr);
+        static info::CHolyKeeperGetDefFC26_ptr CHolyKeeperGetDefFC26_next(nullptr);
+        static info::CHolyKeeperGetDefFC26_clbk CHolyKeeperGetDefFC26_user(nullptr);
+        static info::CHolyKeeperGetDefFacing28_ptr CHolyKeeperGetDefFacing28_next(nullptr);
+        static info::CHolyKeeperGetDefFacing28_clbk CHolyKeeperGetDefFacing28_user(nullptr);
+        static info::CHolyKeeperGetDefGap30_ptr CHolyKeeperGetDefGap30_next(nullptr);
+        static info::CHolyKeeperGetDefGap30_clbk CHolyKeeperGetDefGap30_user(nullptr);
+        static info::CHolyKeeperGetDefSkill32_ptr CHolyKeeperGetDefSkill32_next(nullptr);
+        static info::CHolyKeeperGetDefSkill32_clbk CHolyKeeperGetDefSkill32_user(nullptr);
+        static info::CHolyKeeperGetFireTol34_ptr CHolyKeeperGetFireTol34_next(nullptr);
+        static info::CHolyKeeperGetFireTol34_clbk CHolyKeeperGetFireTol34_user(nullptr);
+        static info::CHolyKeeperGetGenAttackProb36_ptr CHolyKeeperGetGenAttackProb36_next(nullptr);
+        static info::CHolyKeeperGetGenAttackProb36_clbk CHolyKeeperGetGenAttackProb36_user(nullptr);
+        static info::CHolyKeeperGetHP38_ptr CHolyKeeperGetHP38_next(nullptr);
+        static info::CHolyKeeperGetHP38_clbk CHolyKeeperGetHP38_user(nullptr);
+        static info::CHolyKeeperGetLevel40_ptr CHolyKeeperGetLevel40_next(nullptr);
+        static info::CHolyKeeperGetLevel40_clbk CHolyKeeperGetLevel40_user(nullptr);
+        static info::CHolyKeeperGetMaxHP42_ptr CHolyKeeperGetMaxHP42_next(nullptr);
+        static info::CHolyKeeperGetMaxHP42_clbk CHolyKeeperGetMaxHP42_user(nullptr);
+        static info::CHolyKeeperGetObjName44_ptr CHolyKeeperGetObjName44_next(nullptr);
+        static info::CHolyKeeperGetObjName44_clbk CHolyKeeperGetObjName44_user(nullptr);
+        static info::CHolyKeeperGetObjRace46_ptr CHolyKeeperGetObjRace46_next(nullptr);
+        static info::CHolyKeeperGetObjRace46_clbk CHolyKeeperGetObjRace46_user(nullptr);
+        static info::CHolyKeeperGetSoilTol48_ptr CHolyKeeperGetSoilTol48_next(nullptr);
+        static info::CHolyKeeperGetSoilTol48_clbk CHolyKeeperGetSoilTol48_user(nullptr);
+        static info::CHolyKeeperGetWaterTol50_ptr CHolyKeeperGetWaterTol50_next(nullptr);
+        static info::CHolyKeeperGetWaterTol50_clbk CHolyKeeperGetWaterTol50_user(nullptr);
+        static info::CHolyKeeperGetWeaponAdjust52_ptr CHolyKeeperGetWeaponAdjust52_next(nullptr);
+        static info::CHolyKeeperGetWeaponAdjust52_clbk CHolyKeeperGetWeaponAdjust52_user(nullptr);
+        static info::CHolyKeeperGetWeaponClass54_ptr CHolyKeeperGetWeaponClass54_next(nullptr);
+        static info::CHolyKeeperGetWeaponClass54_clbk CHolyKeeperGetWeaponClass54_user(nullptr);
+        static info::CHolyKeeperGetWidth56_ptr CHolyKeeperGetWidth56_next(nullptr);
+        static info::CHolyKeeperGetWidth56_clbk CHolyKeeperGetWidth56_user(nullptr);
+        static info::CHolyKeeperGetWindTol58_ptr CHolyKeeperGetWindTol58_next(nullptr);
+        static info::CHolyKeeperGetWindTol58_clbk CHolyKeeperGetWindTol58_user(nullptr);
+        static info::CHolyKeeperInit60_ptr CHolyKeeperInit60_next(nullptr);
+        static info::CHolyKeeperInit60_clbk CHolyKeeperInit60_user(nullptr);
+        static info::CHolyKeeperIsBeAttackedAble62_ptr CHolyKeeperIsBeAttackedAble62_next(nullptr);
+        static info::CHolyKeeperIsBeAttackedAble62_clbk CHolyKeeperIsBeAttackedAble62_user(nullptr);
+        static info::CHolyKeeperIsBeDamagedAble64_ptr CHolyKeeperIsBeDamagedAble64_next(nullptr);
+        static info::CHolyKeeperIsBeDamagedAble64_clbk CHolyKeeperIsBeDamagedAble64_user(nullptr);
+        static info::CHolyKeeperLoop66_ptr CHolyKeeperLoop66_next(nullptr);
+        static info::CHolyKeeperLoop66_clbk CHolyKeeperLoop66_user(nullptr);
+        static info::CHolyKeeperOutOfSec68_ptr CHolyKeeperOutOfSec68_next(nullptr);
+        static info::CHolyKeeperOutOfSec68_clbk CHolyKeeperOutOfSec68_user(nullptr);
+        static info::CHolyKeeperSearchAttackTarget70_ptr CHolyKeeperSearchAttackTarget70_next(nullptr);
+        static info::CHolyKeeperSearchAttackTarget70_clbk CHolyKeeperSearchAttackTarget70_user(nullptr);
+        static info::CHolyKeeperSearchMoveTarget72_ptr CHolyKeeperSearchMoveTarget72_next(nullptr);
+        static info::CHolyKeeperSearchMoveTarget72_clbk CHolyKeeperSearchMoveTarget72_user(nullptr);
+        static info::CHolyKeeperSendMsg_Attack74_ptr CHolyKeeperSendMsg_Attack74_next(nullptr);
+        static info::CHolyKeeperSendMsg_Attack74_clbk CHolyKeeperSendMsg_Attack74_user(nullptr);
+        static info::CHolyKeeperSendMsg_Create76_ptr CHolyKeeperSendMsg_Create76_next(nullptr);
+        static info::CHolyKeeperSendMsg_Create76_clbk CHolyKeeperSendMsg_Create76_user(nullptr);
+        static info::CHolyKeeperSendMsg_Destroy78_ptr CHolyKeeperSendMsg_Destroy78_next(nullptr);
+        static info::CHolyKeeperSendMsg_Destroy78_clbk CHolyKeeperSendMsg_Destroy78_user(nullptr);
+        static info::CHolyKeeperSendMsg_FixPosition80_ptr CHolyKeeperSendMsg_FixPosition80_next(nullptr);
+        static info::CHolyKeeperSendMsg_FixPosition80_clbk CHolyKeeperSendMsg_FixPosition80_user(nullptr);
+        static info::CHolyKeeperSendMsg_Move82_ptr CHolyKeeperSendMsg_Move82_next(nullptr);
+        static info::CHolyKeeperSendMsg_Move82_clbk CHolyKeeperSendMsg_Move82_user(nullptr);
+        static info::CHolyKeeperSendMsg_RealMovePoint84_ptr CHolyKeeperSendMsg_RealMovePoint84_next(nullptr);
+        static info::CHolyKeeperSendMsg_RealMovePoint84_clbk CHolyKeeperSendMsg_RealMovePoint84_user(nullptr);
+        static info::CHolyKeeperSetDamage86_ptr CHolyKeeperSetDamage86_next(nullptr);
+        static info::CHolyKeeperSetDamage86_clbk CHolyKeeperSetDamage86_user(nullptr);
+        static info::CHolyKeeperSetDamageAbleState88_ptr CHolyKeeperSetDamageAbleState88_next(nullptr);
+        static info::CHolyKeeperSetDamageAbleState88_clbk CHolyKeeperSetDamageAbleState88_user(nullptr);
+        static info::CHolyKeeperSetDropItem90_ptr CHolyKeeperSetDropItem90_next(nullptr);
+        static info::CHolyKeeperSetDropItem90_clbk CHolyKeeperSetDropItem90_user(nullptr);
+        static info::CHolyKeeperSetHP92_ptr CHolyKeeperSetHP92_next(nullptr);
+        static info::CHolyKeeperSetHP92_clbk CHolyKeeperSetHP92_user(nullptr);
+        static info::CHolyKeeperSetMaxHP94_ptr CHolyKeeperSetMaxHP94_next(nullptr);
+        static info::CHolyKeeperSetMaxHP94_clbk CHolyKeeperSetMaxHP94_user(nullptr);
+        static info::CHolyKeeperSetStateChaos96_ptr CHolyKeeperSetStateChaos96_next(nullptr);
+        static info::CHolyKeeperSetStateChaos96_clbk CHolyKeeperSetStateChaos96_user(nullptr);
+        static info::CHolyKeeperdtor_CHolyKeeper102_ptr CHolyKeeperdtor_CHolyKeeper102_next(nullptr);
+        static info::CHolyKeeperdtor_CHolyKeeper102_clbk CHolyKeeperdtor_CHolyKeeper102_user(nullptr);
         
-        void CHolyKeeperctor_CHolyKeeper2_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperctor_CHolyKeeper2_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperctor_CHolyKeeper2_user(_this, CHolyKeeperctor_CHolyKeeper2_next);
         };
-        bool CHolyKeeperCheckAttack4_wrapper(struct CHolyKeeper* _this)
+        static bool CHolyKeeperCheckAttack4_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperCheckAttack4_user(_this, CHolyKeeperCheckAttack4_next);
         };
-        void CHolyKeeperCheckCurPos6_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperCheckCurPos6_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperCheckCurPos6_user(_this, CHolyKeeperCheckCurPos6_next);
         };
-        void CHolyKeeperCheckExit8_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperCheckExit8_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperCheckExit8_user(_this, CHolyKeeperCheckExit8_next);
         };
-        void CHolyKeeperCheckMove10_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperCheckMove10_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperCheckMove10_user(_this, CHolyKeeperCheckMove10_next);
         };
-        bool CHolyKeeperCreate12_wrapper(struct CHolyKeeper* _this, struct _keeper_create_setdata* pData, int nCreateType)
+        static bool CHolyKeeperCreate12_wrapper(struct CHolyKeeper* _this, struct _keeper_create_setdata* pData, int nCreateType)
         {
            return CHolyKeeperCreate12_user(_this, pData, nCreateType, CHolyKeeperCreate12_next);
         };
-        bool CHolyKeeperDestroy14_wrapper(struct CHolyKeeper* _this, char byDestroyCode, struct CCharacter* pAtter)
+        static bool CHolyKeeperDestroy14_wrapper(struct CHolyKeeper* _this, char byDestroyCode, struct CCharacter* pAtter)
         {
            return CHolyKeeperDestroy14_user(_this, byDestroyCode, pAtter, CHolyKeeperDestroy14_next);
         };
-        void CHolyKeeperDropItem16_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperDropItem16_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperDropItem16_user(_this, CHolyKeeperDropItem16_next);
         };
-        bool CHolyKeeperExit18_wrapper(struct CHolyKeeper* _this)
+        static bool CHolyKeeperExit18_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperExit18_user(_this, CHolyKeeperExit18_next);
         };
-        int CHolyKeeperGetAttackDP20_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetAttackDP20_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetAttackDP20_user(_this, CHolyKeeperGetAttackDP20_next);
         };
-        float* CHolyKeeperGetAttackPivot22_wrapper(struct CHolyKeeper* _this)
+        static float* CHolyKeeperGetAttackPivot22_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetAttackPivot22_user(_this, CHolyKeeperGetAttackPivot22_next);
         };
-        float CHolyKeeperGetAttackRange24_wrapper(struct CHolyKeeper* _this)
+        static float CHolyKeeperGetAttackRange24_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetAttackRange24_user(_this, CHolyKeeperGetAttackRange24_next);
         };
-        int CHolyKeeperGetDefFC26_wrapper(struct CHolyKeeper* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CHolyKeeperGetDefFC26_wrapper(struct CHolyKeeper* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CHolyKeeperGetDefFC26_user(_this, nAttactPart, pAttChar, pnConvertPart, CHolyKeeperGetDefFC26_next);
         };
-        float CHolyKeeperGetDefFacing28_wrapper(struct CHolyKeeper* _this, int nPart)
+        static float CHolyKeeperGetDefFacing28_wrapper(struct CHolyKeeper* _this, int nPart)
         {
            return CHolyKeeperGetDefFacing28_user(_this, nPart, CHolyKeeperGetDefFacing28_next);
         };
-        float CHolyKeeperGetDefGap30_wrapper(struct CHolyKeeper* _this, int nPart)
+        static float CHolyKeeperGetDefGap30_wrapper(struct CHolyKeeper* _this, int nPart)
         {
            return CHolyKeeperGetDefGap30_user(_this, nPart, CHolyKeeperGetDefGap30_next);
         };
-        int CHolyKeeperGetDefSkill32_wrapper(struct CHolyKeeper* _this, bool bBackAttack)
+        static int CHolyKeeperGetDefSkill32_wrapper(struct CHolyKeeper* _this, bool bBackAttack)
         {
            return CHolyKeeperGetDefSkill32_user(_this, bBackAttack, CHolyKeeperGetDefSkill32_next);
         };
-        int CHolyKeeperGetFireTol34_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetFireTol34_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetFireTol34_user(_this, CHolyKeeperGetFireTol34_next);
         };
-        int CHolyKeeperGetGenAttackProb36_wrapper(struct CHolyKeeper* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CHolyKeeperGetGenAttackProb36_wrapper(struct CHolyKeeper* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CHolyKeeperGetGenAttackProb36_user(_this, pDst, nPart, bBackAttack, CHolyKeeperGetGenAttackProb36_next);
         };
-        int CHolyKeeperGetHP38_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetHP38_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetHP38_user(_this, CHolyKeeperGetHP38_next);
         };
-        int CHolyKeeperGetLevel40_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetLevel40_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetLevel40_user(_this, CHolyKeeperGetLevel40_next);
         };
-        int CHolyKeeperGetMaxHP42_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetMaxHP42_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetMaxHP42_user(_this, CHolyKeeperGetMaxHP42_next);
         };
-        char* CHolyKeeperGetObjName44_wrapper(struct CHolyKeeper* _this)
+        static char* CHolyKeeperGetObjName44_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetObjName44_user(_this, CHolyKeeperGetObjName44_next);
         };
-        int CHolyKeeperGetObjRace46_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetObjRace46_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetObjRace46_user(_this, CHolyKeeperGetObjRace46_next);
         };
-        int CHolyKeeperGetSoilTol48_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetSoilTol48_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetSoilTol48_user(_this, CHolyKeeperGetSoilTol48_next);
         };
-        int CHolyKeeperGetWaterTol50_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetWaterTol50_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetWaterTol50_user(_this, CHolyKeeperGetWaterTol50_next);
         };
-        float CHolyKeeperGetWeaponAdjust52_wrapper(struct CHolyKeeper* _this)
+        static float CHolyKeeperGetWeaponAdjust52_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetWeaponAdjust52_user(_this, CHolyKeeperGetWeaponAdjust52_next);
         };
-        int CHolyKeeperGetWeaponClass54_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetWeaponClass54_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetWeaponClass54_user(_this, CHolyKeeperGetWeaponClass54_next);
         };
-        float CHolyKeeperGetWidth56_wrapper(struct CHolyKeeper* _this)
+        static float CHolyKeeperGetWidth56_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetWidth56_user(_this, CHolyKeeperGetWidth56_next);
         };
-        int CHolyKeeperGetWindTol58_wrapper(struct CHolyKeeper* _this)
+        static int CHolyKeeperGetWindTol58_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperGetWindTol58_user(_this, CHolyKeeperGetWindTol58_next);
         };
-        bool CHolyKeeperInit60_wrapper(struct CHolyKeeper* _this, struct _object_id* pID)
+        static bool CHolyKeeperInit60_wrapper(struct CHolyKeeper* _this, struct _object_id* pID)
         {
            return CHolyKeeperInit60_user(_this, pID, CHolyKeeperInit60_next);
         };
-        bool CHolyKeeperIsBeAttackedAble62_wrapper(struct CHolyKeeper* _this, bool bFirst)
+        static bool CHolyKeeperIsBeAttackedAble62_wrapper(struct CHolyKeeper* _this, bool bFirst)
         {
            return CHolyKeeperIsBeAttackedAble62_user(_this, bFirst, CHolyKeeperIsBeAttackedAble62_next);
         };
-        bool CHolyKeeperIsBeDamagedAble64_wrapper(struct CHolyKeeper* _this, struct CCharacter* pAtter)
+        static bool CHolyKeeperIsBeDamagedAble64_wrapper(struct CHolyKeeper* _this, struct CCharacter* pAtter)
         {
            return CHolyKeeperIsBeDamagedAble64_user(_this, pAtter, CHolyKeeperIsBeDamagedAble64_next);
         };
-        void CHolyKeeperLoop66_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperLoop66_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperLoop66_user(_this, CHolyKeeperLoop66_next);
         };
-        void CHolyKeeperOutOfSec68_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperOutOfSec68_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperOutOfSec68_user(_this, CHolyKeeperOutOfSec68_next);
         };
-        struct CCharacter* CHolyKeeperSearchAttackTarget70_wrapper(struct CHolyKeeper* _this)
+        static struct CCharacter* CHolyKeeperSearchAttackTarget70_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperSearchAttackTarget70_user(_this, CHolyKeeperSearchAttackTarget70_next);
         };
-        struct CPlayer* CHolyKeeperSearchMoveTarget72_wrapper(struct CHolyKeeper* _this)
+        static struct CPlayer* CHolyKeeperSearchMoveTarget72_wrapper(struct CHolyKeeper* _this)
         {
            return CHolyKeeperSearchMoveTarget72_user(_this, CHolyKeeperSearchMoveTarget72_next);
         };
-        void CHolyKeeperSendMsg_Attack74_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperSendMsg_Attack74_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperSendMsg_Attack74_user(_this, CHolyKeeperSendMsg_Attack74_next);
         };
-        void CHolyKeeperSendMsg_Create76_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperSendMsg_Create76_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperSendMsg_Create76_user(_this, CHolyKeeperSendMsg_Create76_next);
         };
-        void CHolyKeeperSendMsg_Destroy78_wrapper(struct CHolyKeeper* _this, char byDesType)
+        static void CHolyKeeperSendMsg_Destroy78_wrapper(struct CHolyKeeper* _this, char byDesType)
         {
            CHolyKeeperSendMsg_Destroy78_user(_this, byDesType, CHolyKeeperSendMsg_Destroy78_next);
         };
-        void CHolyKeeperSendMsg_FixPosition80_wrapper(struct CHolyKeeper* _this, int n)
+        static void CHolyKeeperSendMsg_FixPosition80_wrapper(struct CHolyKeeper* _this, int n)
         {
            CHolyKeeperSendMsg_FixPosition80_user(_this, n, CHolyKeeperSendMsg_FixPosition80_next);
         };
-        void CHolyKeeperSendMsg_Move82_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperSendMsg_Move82_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperSendMsg_Move82_user(_this, CHolyKeeperSendMsg_Move82_next);
         };
-        void CHolyKeeperSendMsg_RealMovePoint84_wrapper(struct CHolyKeeper* _this, int n)
+        static void CHolyKeeperSendMsg_RealMovePoint84_wrapper(struct CHolyKeeper* _this, int n)
         {
            CHolyKeeperSendMsg_RealMovePoint84_user(_this, n, CHolyKeeperSendMsg_RealMovePoint84_next);
         };
-        int CHolyKeeperSetDamage86_wrapper(struct CHolyKeeper* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CHolyKeeperSetDamage86_wrapper(struct CHolyKeeper* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CHolyKeeperSetDamage86_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CHolyKeeperSetDamage86_next);
         };
-        void CHolyKeeperSetDamageAbleState88_wrapper(struct CHolyKeeper* _this, bool bDamageAbState)
+        static void CHolyKeeperSetDamageAbleState88_wrapper(struct CHolyKeeper* _this, bool bDamageAbState)
         {
            CHolyKeeperSetDamageAbleState88_user(_this, bDamageAbState, CHolyKeeperSetDamageAbleState88_next);
         };
-        void CHolyKeeperSetDropItem90_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperSetDropItem90_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperSetDropItem90_user(_this, CHolyKeeperSetDropItem90_next);
         };
-        void CHolyKeeperSetHP92_wrapper(struct CHolyKeeper* _this, int nHP)
+        static void CHolyKeeperSetHP92_wrapper(struct CHolyKeeper* _this, int nHP)
         {
            CHolyKeeperSetHP92_user(_this, nHP, CHolyKeeperSetHP92_next);
         };
-        void CHolyKeeperSetMaxHP94_wrapper(struct CHolyKeeper* _this, int nMaxHP)
+        static void CHolyKeeperSetMaxHP94_wrapper(struct CHolyKeeper* _this, int nMaxHP)
         {
            CHolyKeeperSetMaxHP94_user(_this, nMaxHP, CHolyKeeperSetMaxHP94_next);
         };
-        void CHolyKeeperSetStateChaos96_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperSetStateChaos96_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperSetStateChaos96_user(_this, CHolyKeeperSetStateChaos96_next);
         };
-        void CHolyKeeperdtor_CHolyKeeper102_wrapper(struct CHolyKeeper* _this)
+        static void CHolyKeeperdtor_CHolyKeeper102_wrapper(struct CHolyKeeper* _this)
         {
            CHolyKeeperdtor_CHolyKeeper102_user(_this, CHolyKeeperdtor_CHolyKeeper102_next);
         };
         
-        hook_record CHolyKeeper_functions[] = {
+        static hook_record CHolyKeeper_functions[] = {
         {   (LPVOID)0x140132b00L,
             (LPVOID *)&CHolyKeeperctor_CHolyKeeper2_user,
             (LPVOID *)&CHolyKeeperctor_CHolyKeeper2_next,
@@ -553,5 +553,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_bind_dummySetDummy2_ptr _bind_dummySetDummy2_next(nullptr);
-        info::_bind_dummySetDummy2_clbk _bind_dummySetDummy2_user(nullptr);
-        info::_bind_dummyctor__bind_dummy4_ptr _bind_dummyctor__bind_dummy4_next(nullptr);
-        info::_bind_dummyctor__bind_dummy4_clbk _bind_dummyctor__bind_dummy4_user(nullptr);
+        static info::_bind_dummySetDummy2_ptr _bind_dummySetDummy2_next(nullptr);
+        static info::_bind_dummySetDummy2_clbk _bind_dummySetDummy2_user(nullptr);
+        static info::_bind_dummyctor__bind_dummy4_ptr _bind_dummyctor__bind_dummy4_next(nullptr);
+        static info::_bind_dummyctor__bind_dummy4_clbk _bind_dummyctor__bind_dummy4_user(nullptr);
         
-        bool _bind_dummySetDummy2_wrapper(struct _bind_dummy* _this, struct _dummy_position* pDumPos)
+        static bool _bind_dummySetDummy2_wrapper(struct _bind_dummy* _this, struct _dummy_position* pDumPos)
         {
            return _bind_dummySetDummy2_user(_this, pDumPos, _bind_dummySetDummy2_next);
         };
-        void _bind_dummyctor__bind_dummy4_wrapper(struct _bind_dummy* _this)
+        static void _bind_dummyctor__bind_dummy4_wrapper(struct _bind_dummy* _this)
         {
            _bind_dummyctor__bind_dummy4_user(_this, _bind_dummyctor__bind_dummy4_next);
         };
         
-        hook_record _bind_dummy_functions[] = {
+        static hook_record _bind_dummy_functions[] = {
         {   (LPVOID)0x140189470L,
             (LPVOID *)&_bind_dummySetDummy2_user,
             (LPVOID *)&_bind_dummySetDummy2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

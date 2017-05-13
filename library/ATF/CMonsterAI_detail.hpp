@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterAIctor_CMonsterAI2_ptr CMonsterAIctor_CMonsterAI2_next(nullptr);
-        info::CMonsterAIctor_CMonsterAI2_clbk CMonsterAIctor_CMonsterAI2_user(nullptr);
-        info::CMonsterAIGetBattleModeTime4_ptr CMonsterAIGetBattleModeTime4_next(nullptr);
-        info::CMonsterAIGetBattleModeTime4_clbk CMonsterAIGetBattleModeTime4_user(nullptr);
-        info::CMonsterAIGetPathFinder6_ptr CMonsterAIGetPathFinder6_next(nullptr);
-        info::CMonsterAIGetPathFinder6_clbk CMonsterAIGetPathFinder6_user(nullptr);
-        info::CMonsterAIGetTimer8_ptr CMonsterAIGetTimer8_next(nullptr);
-        info::CMonsterAIGetTimer8_clbk CMonsterAIGetTimer8_user(nullptr);
-        info::CMonsterAIInit10_ptr CMonsterAIInit10_next(nullptr);
-        info::CMonsterAIInit10_clbk CMonsterAIInit10_user(nullptr);
-        info::CMonsterAISetBattleModeTime12_ptr CMonsterAISetBattleModeTime12_next(nullptr);
-        info::CMonsterAISetBattleModeTime12_clbk CMonsterAISetBattleModeTime12_user(nullptr);
-        info::CMonsterAISetMyData14_ptr CMonsterAISetMyData14_next(nullptr);
-        info::CMonsterAISetMyData14_clbk CMonsterAISetMyData14_user(nullptr);
-        info::CMonsterAIdtor_CMonsterAI19_ptr CMonsterAIdtor_CMonsterAI19_next(nullptr);
-        info::CMonsterAIdtor_CMonsterAI19_clbk CMonsterAIdtor_CMonsterAI19_user(nullptr);
+        static info::CMonsterAIctor_CMonsterAI2_ptr CMonsterAIctor_CMonsterAI2_next(nullptr);
+        static info::CMonsterAIctor_CMonsterAI2_clbk CMonsterAIctor_CMonsterAI2_user(nullptr);
+        static info::CMonsterAIGetBattleModeTime4_ptr CMonsterAIGetBattleModeTime4_next(nullptr);
+        static info::CMonsterAIGetBattleModeTime4_clbk CMonsterAIGetBattleModeTime4_user(nullptr);
+        static info::CMonsterAIGetPathFinder6_ptr CMonsterAIGetPathFinder6_next(nullptr);
+        static info::CMonsterAIGetPathFinder6_clbk CMonsterAIGetPathFinder6_user(nullptr);
+        static info::CMonsterAIGetTimer8_ptr CMonsterAIGetTimer8_next(nullptr);
+        static info::CMonsterAIGetTimer8_clbk CMonsterAIGetTimer8_user(nullptr);
+        static info::CMonsterAIInit10_ptr CMonsterAIInit10_next(nullptr);
+        static info::CMonsterAIInit10_clbk CMonsterAIInit10_user(nullptr);
+        static info::CMonsterAISetBattleModeTime12_ptr CMonsterAISetBattleModeTime12_next(nullptr);
+        static info::CMonsterAISetBattleModeTime12_clbk CMonsterAISetBattleModeTime12_user(nullptr);
+        static info::CMonsterAISetMyData14_ptr CMonsterAISetMyData14_next(nullptr);
+        static info::CMonsterAISetMyData14_clbk CMonsterAISetMyData14_user(nullptr);
+        static info::CMonsterAIdtor_CMonsterAI19_ptr CMonsterAIdtor_CMonsterAI19_next(nullptr);
+        static info::CMonsterAIdtor_CMonsterAI19_clbk CMonsterAIdtor_CMonsterAI19_user(nullptr);
         
-        void CMonsterAIctor_CMonsterAI2_wrapper(struct CMonsterAI* _this)
+        static void CMonsterAIctor_CMonsterAI2_wrapper(struct CMonsterAI* _this)
         {
            CMonsterAIctor_CMonsterAI2_user(_this, CMonsterAIctor_CMonsterAI2_next);
         };
-        unsigned int CMonsterAIGetBattleModeTime4_wrapper(struct CMonsterAI* _this)
+        static unsigned int CMonsterAIGetBattleModeTime4_wrapper(struct CMonsterAI* _this)
         {
            return CMonsterAIGetBattleModeTime4_user(_this, CMonsterAIGetBattleModeTime4_next);
         };
-        struct CPathMgr* CMonsterAIGetPathFinder6_wrapper(struct CMonsterAI* _this)
+        static struct CPathMgr* CMonsterAIGetPathFinder6_wrapper(struct CMonsterAI* _this)
         {
            return CMonsterAIGetPathFinder6_user(_this, CMonsterAIGetPathFinder6_next);
         };
-        struct SF_Timer* CMonsterAIGetTimer8_wrapper(struct CMonsterAI* _this, int nIndex)
+        static struct SF_Timer* CMonsterAIGetTimer8_wrapper(struct CMonsterAI* _this, int nIndex)
         {
            return CMonsterAIGetTimer8_user(_this, nIndex, CMonsterAIGetTimer8_next);
         };
-        void CMonsterAIInit10_wrapper(struct CMonsterAI* _this)
+        static void CMonsterAIInit10_wrapper(struct CMonsterAI* _this)
         {
            CMonsterAIInit10_user(_this, CMonsterAIInit10_next);
         };
-        void CMonsterAISetBattleModeTime12_wrapper(struct CMonsterAI* _this, unsigned int dwTempBattleModeTime)
+        static void CMonsterAISetBattleModeTime12_wrapper(struct CMonsterAI* _this, unsigned int dwTempBattleModeTime)
         {
            CMonsterAISetBattleModeTime12_user(_this, dwTempBattleModeTime, CMonsterAISetBattleModeTime12_next);
         };
-        int CMonsterAISetMyData14_wrapper(struct CMonsterAI* _this, struct UsStateTBL* pStateTBL, void* pObject)
+        static int CMonsterAISetMyData14_wrapper(struct CMonsterAI* _this, struct UsStateTBL* pStateTBL, void* pObject)
         {
            return CMonsterAISetMyData14_user(_this, pStateTBL, pObject, CMonsterAISetMyData14_next);
         };
-        void CMonsterAIdtor_CMonsterAI19_wrapper(struct CMonsterAI* _this)
+        static void CMonsterAIdtor_CMonsterAI19_wrapper(struct CMonsterAI* _this)
         {
            CMonsterAIdtor_CMonsterAI19_user(_this, CMonsterAIdtor_CMonsterAI19_next);
         };
         
-        hook_record CMonsterAI_functions[] = {
+        static hook_record CMonsterAI_functions[] = {
         {   (LPVOID)0x14014f950L,
             (LPVOID *)&CMonsterAIctor_CMonsterAI2_user,
             (LPVOID *)&CMonsterAIctor_CMonsterAI2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

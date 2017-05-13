@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaLootingMgrAddNovusItem2_ptr CLuaLootingMgrAddNovusItem2_next(nullptr);
-        info::CLuaLootingMgrAddNovusItem2_clbk CLuaLootingMgrAddNovusItem2_user(nullptr);
-        info::CLuaLootingMgrctor_CLuaLootingMgr4_ptr CLuaLootingMgrctor_CLuaLootingMgr4_next(nullptr);
-        info::CLuaLootingMgrctor_CLuaLootingMgr4_clbk CLuaLootingMgrctor_CLuaLootingMgr4_user(nullptr);
-        info::CLuaLootingMgrDestroy6_ptr CLuaLootingMgrDestroy6_next(nullptr);
-        info::CLuaLootingMgrDestroy6_clbk CLuaLootingMgrDestroy6_user(nullptr);
-        info::CLuaLootingMgrInitSDM8_ptr CLuaLootingMgrInitSDM8_next(nullptr);
-        info::CLuaLootingMgrInitSDM8_clbk CLuaLootingMgrInitSDM8_user(nullptr);
-        info::CLuaLootingMgrInstance10_ptr CLuaLootingMgrInstance10_next(nullptr);
-        info::CLuaLootingMgrInstance10_clbk CLuaLootingMgrInstance10_user(nullptr);
-        info::CLuaLootingMgrLoop12_ptr CLuaLootingMgrLoop12_next(nullptr);
-        info::CLuaLootingMgrLoop12_clbk CLuaLootingMgrLoop12_user(nullptr);
-        info::CLuaLootingMgrdtor_CLuaLootingMgr16_ptr CLuaLootingMgrdtor_CLuaLootingMgr16_next(nullptr);
-        info::CLuaLootingMgrdtor_CLuaLootingMgr16_clbk CLuaLootingMgrdtor_CLuaLootingMgr16_user(nullptr);
+        static info::CLuaLootingMgrAddNovusItem2_ptr CLuaLootingMgrAddNovusItem2_next(nullptr);
+        static info::CLuaLootingMgrAddNovusItem2_clbk CLuaLootingMgrAddNovusItem2_user(nullptr);
+        static info::CLuaLootingMgrctor_CLuaLootingMgr4_ptr CLuaLootingMgrctor_CLuaLootingMgr4_next(nullptr);
+        static info::CLuaLootingMgrctor_CLuaLootingMgr4_clbk CLuaLootingMgrctor_CLuaLootingMgr4_user(nullptr);
+        static info::CLuaLootingMgrDestroy6_ptr CLuaLootingMgrDestroy6_next(nullptr);
+        static info::CLuaLootingMgrDestroy6_clbk CLuaLootingMgrDestroy6_user(nullptr);
+        static info::CLuaLootingMgrInitSDM8_ptr CLuaLootingMgrInitSDM8_next(nullptr);
+        static info::CLuaLootingMgrInitSDM8_clbk CLuaLootingMgrInitSDM8_user(nullptr);
+        static info::CLuaLootingMgrInstance10_ptr CLuaLootingMgrInstance10_next(nullptr);
+        static info::CLuaLootingMgrInstance10_clbk CLuaLootingMgrInstance10_user(nullptr);
+        static info::CLuaLootingMgrLoop12_ptr CLuaLootingMgrLoop12_next(nullptr);
+        static info::CLuaLootingMgrLoop12_clbk CLuaLootingMgrLoop12_user(nullptr);
+        static info::CLuaLootingMgrdtor_CLuaLootingMgr16_ptr CLuaLootingMgrdtor_CLuaLootingMgr16_next(nullptr);
+        static info::CLuaLootingMgrdtor_CLuaLootingMgr16_clbk CLuaLootingMgrdtor_CLuaLootingMgr16_user(nullptr);
         
-        bool CLuaLootingMgrAddNovusItem2_wrapper(struct CLuaLootingMgr* _this, char* strItemCode, struct CMapData* pMap, uint16_t wLayerIndex, float* fPos, uint16_t wLootRange, unsigned int dwOverlapCnt, unsigned int dwItemNum, char byCreateType)
+        static bool CLuaLootingMgrAddNovusItem2_wrapper(struct CLuaLootingMgr* _this, char* strItemCode, struct CMapData* pMap, uint16_t wLayerIndex, float* fPos, uint16_t wLootRange, unsigned int dwOverlapCnt, unsigned int dwItemNum, char byCreateType)
         {
            return CLuaLootingMgrAddNovusItem2_user(_this, strItemCode, pMap, wLayerIndex, fPos, wLootRange, dwOverlapCnt, dwItemNum, byCreateType, CLuaLootingMgrAddNovusItem2_next);
         };
-        void CLuaLootingMgrctor_CLuaLootingMgr4_wrapper(struct CLuaLootingMgr* _this)
+        static void CLuaLootingMgrctor_CLuaLootingMgr4_wrapper(struct CLuaLootingMgr* _this)
         {
            CLuaLootingMgrctor_CLuaLootingMgr4_user(_this, CLuaLootingMgrctor_CLuaLootingMgr4_next);
         };
-        void CLuaLootingMgrDestroy6_wrapper()
+        static void CLuaLootingMgrDestroy6_wrapper()
         {
            CLuaLootingMgrDestroy6_user(CLuaLootingMgrDestroy6_next);
         };
-        bool CLuaLootingMgrInitSDM8_wrapper(struct CLuaLootingMgr* _this, unsigned int dwLoopLootingCount, unsigned int dwLoopLootingTerm)
+        static bool CLuaLootingMgrInitSDM8_wrapper(struct CLuaLootingMgr* _this, unsigned int dwLoopLootingCount, unsigned int dwLoopLootingTerm)
         {
            return CLuaLootingMgrInitSDM8_user(_this, dwLoopLootingCount, dwLoopLootingTerm, CLuaLootingMgrInitSDM8_next);
         };
-        struct CLuaLootingMgr* CLuaLootingMgrInstance10_wrapper()
+        static struct CLuaLootingMgr* CLuaLootingMgrInstance10_wrapper()
         {
            return CLuaLootingMgrInstance10_user(CLuaLootingMgrInstance10_next);
         };
-        void CLuaLootingMgrLoop12_wrapper(struct CLuaLootingMgr* _this)
+        static void CLuaLootingMgrLoop12_wrapper(struct CLuaLootingMgr* _this)
         {
            CLuaLootingMgrLoop12_user(_this, CLuaLootingMgrLoop12_next);
         };
-        void CLuaLootingMgrdtor_CLuaLootingMgr16_wrapper(struct CLuaLootingMgr* _this)
+        static void CLuaLootingMgrdtor_CLuaLootingMgr16_wrapper(struct CLuaLootingMgr* _this)
         {
            CLuaLootingMgrdtor_CLuaLootingMgr16_user(_this, CLuaLootingMgrdtor_CLuaLootingMgr16_next);
         };
         
-        hook_record CLuaLootingMgr_functions[] = {
+        static hook_record CLuaLootingMgr_functions[] = {
         {   (LPVOID)0x140404ee0L,
             (LPVOID *)&CLuaLootingMgrAddNovusItem2_user,
             (LPVOID *)&CLuaLootingMgrAddNovusItem2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -10,69 +10,69 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_ptr GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_clbk GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateEnter4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateEnter4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateEnter6_ptr GUILD_BATTLE__CNormalGuildBattleStateEnter6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateEnter6_clbk GUILD_BATTLE__CNormalGuildBattleStateEnter6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateFin8_ptr GUILD_BATTLE__CNormalGuildBattleStateFin8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateFin8_clbk GUILD_BATTLE__CNormalGuildBattleStateFin8_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateFin10_ptr GUILD_BATTLE__CNormalGuildBattleStateFin10_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateFin10_clbk GUILD_BATTLE__CNormalGuildBattleStateFin10_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateGoal12_ptr GUILD_BATTLE__CNormalGuildBattleStateGoal12_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateGoal12_clbk GUILD_BATTLE__CNormalGuildBattleStateGoal12_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLog14_ptr GUILD_BATTLE__CNormalGuildBattleStateLog14_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLog14_clbk GUILD_BATTLE__CNormalGuildBattleStateLog14_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLoop16_ptr GUILD_BATTLE__CNormalGuildBattleStateLoop16_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLoop16_clbk GUILD_BATTLE__CNormalGuildBattleStateLoop16_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLoop18_ptr GUILD_BATTLE__CNormalGuildBattleStateLoop18_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateLoop18_clbk GUILD_BATTLE__CNormalGuildBattleStateLoop18_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_ptr GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_clbk GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_ptr GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_clbk GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateEnter4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateEnter4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateEnter6_ptr GUILD_BATTLE__CNormalGuildBattleStateEnter6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateEnter6_clbk GUILD_BATTLE__CNormalGuildBattleStateEnter6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateFin8_ptr GUILD_BATTLE__CNormalGuildBattleStateFin8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateFin8_clbk GUILD_BATTLE__CNormalGuildBattleStateFin8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateFin10_ptr GUILD_BATTLE__CNormalGuildBattleStateFin10_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateFin10_clbk GUILD_BATTLE__CNormalGuildBattleStateFin10_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateGoal12_ptr GUILD_BATTLE__CNormalGuildBattleStateGoal12_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateGoal12_clbk GUILD_BATTLE__CNormalGuildBattleStateGoal12_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLog14_ptr GUILD_BATTLE__CNormalGuildBattleStateLog14_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLog14_clbk GUILD_BATTLE__CNormalGuildBattleStateLog14_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLoop16_ptr GUILD_BATTLE__CNormalGuildBattleStateLoop16_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLoop16_clbk GUILD_BATTLE__CNormalGuildBattleStateLoop16_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLoop18_ptr GUILD_BATTLE__CNormalGuildBattleStateLoop18_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateLoop18_clbk GUILD_BATTLE__CNormalGuildBattleStateLoop18_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_ptr GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_clbk GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_user(_this, GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateEnter4_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateEnter4_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateEnter6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateEnter6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateEnter6_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateEnter6_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateFin8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateFin8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateFin8_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateFin8_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateFin10_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateFin10_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateFin10_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateFin10_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateGoal12_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateGoal12_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateGoal12_user(_this, GUILD_BATTLE__CNormalGuildBattleStateGoal12_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateLog14_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle, char* szFormat)
+            static void GUILD_BATTLE__CNormalGuildBattleStateLog14_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle, char* szFormat)
             {
                GUILD_BATTLE__CNormalGuildBattleStateLog14_user(_this, pkBattle, szFormat, GUILD_BATTLE__CNormalGuildBattleStateLog14_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateLoop16_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateLoop16_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateLoop16_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateLoop16_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateLoop18_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateLoop18_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateLoop18_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateLoop18_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_wrapper(struct GUILD_BATTLE::CNormalGuildBattleState* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_user(_this, GUILD_BATTLE__CNormalGuildBattleStatedtor_CNormalGuildBattleState20_next);
             };
             
-            hook_record CNormalGuildBattleState_functions[] = {
+            static hook_record CNormalGuildBattleState_functions[] = {
             {   (LPVOID)0x1403f3120L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStatector_CNormalGuildBattleState2_next,
@@ -126,6 +126,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

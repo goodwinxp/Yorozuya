@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_ptr _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_next(nullptr);
-        info::_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_clbk _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_user(nullptr);
-        info::_nuclear_result_code_zoclsize4_ptr _nuclear_result_code_zoclsize4_next(nullptr);
-        info::_nuclear_result_code_zoclsize4_clbk _nuclear_result_code_zoclsize4_user(nullptr);
+        static info::_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_ptr _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_next(nullptr);
+        static info::_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_clbk _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_user(nullptr);
+        static info::_nuclear_result_code_zoclsize4_ptr _nuclear_result_code_zoclsize4_next(nullptr);
+        static info::_nuclear_result_code_zoclsize4_clbk _nuclear_result_code_zoclsize4_user(nullptr);
         
-        void _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_wrapper(struct _nuclear_result_code_zocl* _this)
+        static void _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_wrapper(struct _nuclear_result_code_zocl* _this)
         {
            _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_user(_this, _nuclear_result_code_zoclctor__nuclear_result_code_zocl2_next);
         };
-        int _nuclear_result_code_zoclsize4_wrapper(struct _nuclear_result_code_zocl* _this)
+        static int _nuclear_result_code_zoclsize4_wrapper(struct _nuclear_result_code_zocl* _this)
         {
            return _nuclear_result_code_zoclsize4_user(_this, _nuclear_result_code_zoclsize4_next);
         };
         
-        hook_record _nuclear_result_code_zocl_functions[] = {
+        static hook_record _nuclear_result_code_zocl_functions[] = {
         {   (LPVOID)0x14013e340L,
             (LPVOID *)&_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_user,
             (LPVOID *)&_nuclear_result_code_zoclctor__nuclear_result_code_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

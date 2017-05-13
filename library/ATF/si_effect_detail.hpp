@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::si_effectGetCountOfEffect2_ptr si_effectGetCountOfEffect2_next(nullptr);
-        info::si_effectGetCountOfEffect2_clbk si_effectGetCountOfEffect2_user(nullptr);
-        info::si_effectGetCountOfItem4_ptr si_effectGetCountOfItem4_next(nullptr);
-        info::si_effectGetCountOfItem4_clbk si_effectGetCountOfItem4_user(nullptr);
-        info::si_effectinit6_ptr si_effectinit6_next(nullptr);
-        info::si_effectinit6_clbk si_effectinit6_user(nullptr);
-        info::si_effectset_effect_count_info8_ptr si_effectset_effect_count_info8_next(nullptr);
-        info::si_effectset_effect_count_info8_clbk si_effectset_effect_count_info8_user(nullptr);
-        info::si_effectctor_si_effect10_ptr si_effectctor_si_effect10_next(nullptr);
-        info::si_effectctor_si_effect10_clbk si_effectctor_si_effect10_user(nullptr);
+        static info::si_effectGetCountOfEffect2_ptr si_effectGetCountOfEffect2_next(nullptr);
+        static info::si_effectGetCountOfEffect2_clbk si_effectGetCountOfEffect2_user(nullptr);
+        static info::si_effectGetCountOfItem4_ptr si_effectGetCountOfItem4_next(nullptr);
+        static info::si_effectGetCountOfItem4_clbk si_effectGetCountOfItem4_user(nullptr);
+        static info::si_effectinit6_ptr si_effectinit6_next(nullptr);
+        static info::si_effectinit6_clbk si_effectinit6_user(nullptr);
+        static info::si_effectset_effect_count_info8_ptr si_effectset_effect_count_info8_next(nullptr);
+        static info::si_effectset_effect_count_info8_clbk si_effectset_effect_count_info8_user(nullptr);
+        static info::si_effectctor_si_effect10_ptr si_effectctor_si_effect10_next(nullptr);
+        static info::si_effectctor_si_effect10_clbk si_effectctor_si_effect10_user(nullptr);
         
-        char si_effectGetCountOfEffect2_wrapper(struct si_effect* _this)
+        static char si_effectGetCountOfEffect2_wrapper(struct si_effect* _this)
         {
            return si_effectGetCountOfEffect2_user(_this, si_effectGetCountOfEffect2_next);
         };
-        char si_effectGetCountOfItem4_wrapper(struct si_effect* _this)
+        static char si_effectGetCountOfItem4_wrapper(struct si_effect* _this)
         {
            return si_effectGetCountOfItem4_user(_this, si_effectGetCountOfItem4_next);
         };
-        void si_effectinit6_wrapper(struct si_effect* _this)
+        static void si_effectinit6_wrapper(struct si_effect* _this)
         {
            si_effectinit6_user(_this, si_effectinit6_next);
         };
-        void si_effectset_effect_count_info8_wrapper(struct si_effect* _this, char byCountOfItem, char byCountOfEffect)
+        static void si_effectset_effect_count_info8_wrapper(struct si_effect* _this, char byCountOfItem, char byCountOfEffect)
         {
            si_effectset_effect_count_info8_user(_this, byCountOfItem, byCountOfEffect, si_effectset_effect_count_info8_next);
         };
-        void si_effectctor_si_effect10_wrapper(struct si_effect* _this)
+        static void si_effectctor_si_effect10_wrapper(struct si_effect* _this)
         {
            si_effectctor_si_effect10_user(_this, si_effectctor_si_effect10_next);
         };
         
-        hook_record si_effect_functions[] = {
+        static hook_record si_effect_functions[] = {
         {   (LPVOID)0x1402e3c90L,
             (LPVOID *)&si_effectGetCountOfEffect2_user,
             (LPVOID *)&si_effectGetCountOfEffect2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

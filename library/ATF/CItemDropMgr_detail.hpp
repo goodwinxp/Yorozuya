@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CItemDropMgrDrop2_ptr CItemDropMgrDrop2_next(nullptr);
-        info::CItemDropMgrDrop2_clbk CItemDropMgrDrop2_user(nullptr);
-        info::CItemDropMgrFrontDrop4_ptr CItemDropMgrFrontDrop4_next(nullptr);
-        info::CItemDropMgrFrontDrop4_clbk CItemDropMgrFrontDrop4_user(nullptr);
-        info::CItemDropMgrGetFrontPtr6_ptr CItemDropMgrGetFrontPtr6_next(nullptr);
-        info::CItemDropMgrGetFrontPtr6_clbk CItemDropMgrGetFrontPtr6_user(nullptr);
-        info::CItemDropMgrPopFront8_ptr CItemDropMgrPopFront8_next(nullptr);
-        info::CItemDropMgrPopFront8_clbk CItemDropMgrPopFront8_user(nullptr);
+        static info::CItemDropMgrDrop2_ptr CItemDropMgrDrop2_next(nullptr);
+        static info::CItemDropMgrDrop2_clbk CItemDropMgrDrop2_user(nullptr);
+        static info::CItemDropMgrFrontDrop4_ptr CItemDropMgrFrontDrop4_next(nullptr);
+        static info::CItemDropMgrFrontDrop4_clbk CItemDropMgrFrontDrop4_user(nullptr);
+        static info::CItemDropMgrGetFrontPtr6_ptr CItemDropMgrGetFrontPtr6_next(nullptr);
+        static info::CItemDropMgrGetFrontPtr6_clbk CItemDropMgrGetFrontPtr6_user(nullptr);
+        static info::CItemDropMgrPopFront8_ptr CItemDropMgrPopFront8_next(nullptr);
+        static info::CItemDropMgrPopFront8_clbk CItemDropMgrPopFront8_user(nullptr);
         
-        bool CItemDropMgrDrop2_wrapper(struct CItemDropMgr* _this, int nCnt)
+        static bool CItemDropMgrDrop2_wrapper(struct CItemDropMgr* _this, int nCnt)
         {
            return CItemDropMgrDrop2_user(_this, nCnt, CItemDropMgrDrop2_next);
         };
-        bool CItemDropMgrFrontDrop4_wrapper(struct CItemDropMgr* _this)
+        static bool CItemDropMgrFrontDrop4_wrapper(struct CItemDropMgr* _this)
         {
            return CItemDropMgrFrontDrop4_user(_this, CItemDropMgrFrontDrop4_next);
         };
-        struct _DropItemGroupInfo* CItemDropMgrGetFrontPtr6_wrapper(struct CItemDropMgr* _this)
+        static struct _DropItemGroupInfo* CItemDropMgrGetFrontPtr6_wrapper(struct CItemDropMgr* _this)
         {
            return CItemDropMgrGetFrontPtr6_user(_this, CItemDropMgrGetFrontPtr6_next);
         };
-        bool CItemDropMgrPopFront8_wrapper(struct CItemDropMgr* _this)
+        static bool CItemDropMgrPopFront8_wrapper(struct CItemDropMgr* _this)
         {
            return CItemDropMgrPopFront8_user(_this, CItemDropMgrPopFront8_next);
         };
         
-        hook_record CItemDropMgr_functions[] = {
+        static hook_record CItemDropMgr_functions[] = {
         {   (LPVOID)0x1402cfde0L,
             (LPVOID *)&CItemDropMgrDrop2_user,
             (LPVOID *)&CItemDropMgrDrop2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

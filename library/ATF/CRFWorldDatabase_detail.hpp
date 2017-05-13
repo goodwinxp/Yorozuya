@@ -8,2019 +8,2019 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRFWorldDatabaseAdd_PvpPoint2_ptr CRFWorldDatabaseAdd_PvpPoint2_next(nullptr);
-        info::CRFWorldDatabaseAdd_PvpPoint2_clbk CRFWorldDatabaseAdd_PvpPoint2_user(nullptr);
-        info::CRFWorldDatabasector_CRFWorldDatabase4_ptr CRFWorldDatabasector_CRFWorldDatabase4_next(nullptr);
-        info::CRFWorldDatabasector_CRFWorldDatabase4_clbk CRFWorldDatabasector_CRFWorldDatabase4_user(nullptr);
-        info::CRFWorldDatabaseCheck_GuildMemberCount6_ptr CRFWorldDatabaseCheck_GuildMemberCount6_next(nullptr);
-        info::CRFWorldDatabaseCheck_GuildMemberCount6_clbk CRFWorldDatabaseCheck_GuildMemberCount6_user(nullptr);
-        info::CRFWorldDatabaseCreateCharacterSelectLogTable8_ptr CRFWorldDatabaseCreateCharacterSelectLogTable8_next(nullptr);
-        info::CRFWorldDatabaseCreateCharacterSelectLogTable8_clbk CRFWorldDatabaseCreateCharacterSelectLogTable8_user(nullptr);
-        info::CRFWorldDatabaseCreateGuildBattleRankTable10_ptr CRFWorldDatabaseCreateGuildBattleRankTable10_next(nullptr);
-        info::CRFWorldDatabaseCreateGuildBattleRankTable10_clbk CRFWorldDatabaseCreateGuildBattleRankTable10_user(nullptr);
-        info::CRFWorldDatabaseCreate_PvpPointGuildRankTable12_ptr CRFWorldDatabaseCreate_PvpPointGuildRankTable12_next(nullptr);
-        info::CRFWorldDatabaseCreate_PvpPointGuildRankTable12_clbk CRFWorldDatabaseCreate_PvpPointGuildRankTable12_user(nullptr);
-        info::CRFWorldDatabaseDeleteGuildBattleInfo14_ptr CRFWorldDatabaseDeleteGuildBattleInfo14_next(nullptr);
-        info::CRFWorldDatabaseDeleteGuildBattleInfo14_clbk CRFWorldDatabaseDeleteGuildBattleInfo14_user(nullptr);
-        info::CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_ptr CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_next(nullptr);
-        info::CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_clbk CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_user(nullptr);
-        info::CRFWorldDatabaseDelete_CharacterData18_ptr CRFWorldDatabaseDelete_CharacterData18_next(nullptr);
-        info::CRFWorldDatabaseDelete_CharacterData18_clbk CRFWorldDatabaseDelete_CharacterData18_user(nullptr);
-        info::CRFWorldDatabaseDelete_Guild20_ptr CRFWorldDatabaseDelete_Guild20_next(nullptr);
-        info::CRFWorldDatabaseDelete_Guild20_clbk CRFWorldDatabaseDelete_Guild20_user(nullptr);
-        info::CRFWorldDatabaseDelete_ItemCharge22_ptr CRFWorldDatabaseDelete_ItemCharge22_next(nullptr);
-        info::CRFWorldDatabaseDelete_ItemCharge22_clbk CRFWorldDatabaseDelete_ItemCharge22_user(nullptr);
-        info::CRFWorldDatabaseDelete_PatriarchComm24_ptr CRFWorldDatabaseDelete_PatriarchComm24_next(nullptr);
-        info::CRFWorldDatabaseDelete_PatriarchComm24_clbk CRFWorldDatabaseDelete_PatriarchComm24_user(nullptr);
-        info::CRFWorldDatabaseDelete_TrunkItemCharge26_ptr CRFWorldDatabaseDelete_TrunkItemCharge26_next(nullptr);
-        info::CRFWorldDatabaseDelete_TrunkItemCharge26_clbk CRFWorldDatabaseDelete_TrunkItemCharge26_user(nullptr);
-        info::CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_ptr CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_next(nullptr);
-        info::CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_clbk CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_user(nullptr);
-        info::CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_ptr CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_next(nullptr);
-        info::CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_clbk CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_user(nullptr);
-        info::CRFWorldDatabaseInsertCharacterSelectLog32_ptr CRFWorldDatabaseInsertCharacterSelectLog32_next(nullptr);
-        info::CRFWorldDatabaseInsertCharacterSelectLog32_clbk CRFWorldDatabaseInsertCharacterSelectLog32_user(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleDefaultRecord34_ptr CRFWorldDatabaseInsertGuildBattleDefaultRecord34_next(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleDefaultRecord34_clbk CRFWorldDatabaseInsertGuildBattleDefaultRecord34_user(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleRankRecord36_ptr CRFWorldDatabaseInsertGuildBattleRankRecord36_next(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleRankRecord36_clbk CRFWorldDatabaseInsertGuildBattleRankRecord36_user(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_ptr CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_next(nullptr);
-        info::CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_clbk CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_user(nullptr);
-        info::CRFWorldDatabaseInsert_AccountTrunk40_ptr CRFWorldDatabaseInsert_AccountTrunk40_next(nullptr);
-        info::CRFWorldDatabaseInsert_AccountTrunk40_clbk CRFWorldDatabaseInsert_AccountTrunk40_user(nullptr);
-        info::CRFWorldDatabaseInsert_AccountTrunkExtend42_ptr CRFWorldDatabaseInsert_AccountTrunkExtend42_next(nullptr);
-        info::CRFWorldDatabaseInsert_AccountTrunkExtend42_clbk CRFWorldDatabaseInsert_AccountTrunkExtend42_user(nullptr);
-        info::CRFWorldDatabaseInsert_AnimusData44_ptr CRFWorldDatabaseInsert_AnimusData44_next(nullptr);
-        info::CRFWorldDatabaseInsert_AnimusData44_clbk CRFWorldDatabaseInsert_AnimusData44_user(nullptr);
-        info::CRFWorldDatabaseInsert_AnimusLog46_ptr CRFWorldDatabaseInsert_AnimusLog46_next(nullptr);
-        info::CRFWorldDatabaseInsert_AnimusLog46_clbk CRFWorldDatabaseInsert_AnimusLog46_user(nullptr);
-        info::CRFWorldDatabaseInsert_BossCryRecord48_ptr CRFWorldDatabaseInsert_BossCryRecord48_next(nullptr);
-        info::CRFWorldDatabaseInsert_BossCryRecord48_clbk CRFWorldDatabaseInsert_BossCryRecord48_user(nullptr);
-        info::CRFWorldDatabaseInsert_Buddy50_ptr CRFWorldDatabaseInsert_Buddy50_next(nullptr);
-        info::CRFWorldDatabaseInsert_Buddy50_clbk CRFWorldDatabaseInsert_Buddy50_user(nullptr);
-        info::CRFWorldDatabaseInsert_CashLimSale52_ptr CRFWorldDatabaseInsert_CashLimSale52_next(nullptr);
-        info::CRFWorldDatabaseInsert_CashLimSale52_clbk CRFWorldDatabaseInsert_CashLimSale52_user(nullptr);
-        info::CRFWorldDatabaseInsert_CharacterData54_ptr CRFWorldDatabaseInsert_CharacterData54_next(nullptr);
-        info::CRFWorldDatabaseInsert_CharacterData54_clbk CRFWorldDatabaseInsert_CharacterData54_user(nullptr);
-        info::CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_ptr CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_next(nullptr);
-        info::CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_clbk CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_user(nullptr);
-        info::CRFWorldDatabaseInsert_Economy_History58_ptr CRFWorldDatabaseInsert_Economy_History58_next(nullptr);
-        info::CRFWorldDatabaseInsert_Economy_History58_clbk CRFWorldDatabaseInsert_Economy_History58_user(nullptr);
-        info::CRFWorldDatabaseInsert_GoldenBoxItem60_ptr CRFWorldDatabaseInsert_GoldenBoxItem60_next(nullptr);
-        info::CRFWorldDatabaseInsert_GoldenBoxItem60_clbk CRFWorldDatabaseInsert_GoldenBoxItem60_user(nullptr);
-        info::CRFWorldDatabaseInsert_GreetingRecord62_ptr CRFWorldDatabaseInsert_GreetingRecord62_next(nullptr);
-        info::CRFWorldDatabaseInsert_GreetingRecord62_clbk CRFWorldDatabaseInsert_GreetingRecord62_user(nullptr);
-        info::CRFWorldDatabaseInsert_GuidRoom64_ptr CRFWorldDatabaseInsert_GuidRoom64_next(nullptr);
-        info::CRFWorldDatabaseInsert_GuidRoom64_clbk CRFWorldDatabaseInsert_GuidRoom64_user(nullptr);
-        info::CRFWorldDatabaseInsert_Guild66_ptr CRFWorldDatabaseInsert_Guild66_next(nullptr);
-        info::CRFWorldDatabaseInsert_Guild66_clbk CRFWorldDatabaseInsert_Guild66_user(nullptr);
-        info::CRFWorldDatabaseInsert_GuildBatlleResultLog68_ptr CRFWorldDatabaseInsert_GuildBatlleResultLog68_next(nullptr);
-        info::CRFWorldDatabaseInsert_GuildBatlleResultLog68_clbk CRFWorldDatabaseInsert_GuildBatlleResultLog68_user(nullptr);
-        info::CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_ptr CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_next(nullptr);
-        info::CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_clbk CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_user(nullptr);
-        info::CRFWorldDatabaseInsert_GuildMoneyHistory72_ptr CRFWorldDatabaseInsert_GuildMoneyHistory72_next(nullptr);
-        info::CRFWorldDatabaseInsert_GuildMoneyHistory72_clbk CRFWorldDatabaseInsert_GuildMoneyHistory72_user(nullptr);
-        info::CRFWorldDatabaseInsert_ItemChargeInGame74_ptr CRFWorldDatabaseInsert_ItemChargeInGame74_next(nullptr);
-        info::CRFWorldDatabaseInsert_ItemChargeInGame74_clbk CRFWorldDatabaseInsert_ItemChargeInGame74_user(nullptr);
-        info::CRFWorldDatabaseInsert_ItemCombineEx76_ptr CRFWorldDatabaseInsert_ItemCombineEx76_next(nullptr);
-        info::CRFWorldDatabaseInsert_ItemCombineEx76_clbk CRFWorldDatabaseInsert_ItemCombineEx76_user(nullptr);
-        info::CRFWorldDatabaseInsert_Level_Log78_ptr CRFWorldDatabaseInsert_Level_Log78_next(nullptr);
-        info::CRFWorldDatabaseInsert_Level_Log78_clbk CRFWorldDatabaseInsert_Level_Log78_user(nullptr);
-        info::CRFWorldDatabaseInsert_LimitItemRecord80_ptr CRFWorldDatabaseInsert_LimitItemRecord80_next(nullptr);
-        info::CRFWorldDatabaseInsert_LimitItemRecord80_clbk CRFWorldDatabaseInsert_LimitItemRecord80_user(nullptr);
-        info::CRFWorldDatabaseInsert_MacroData82_ptr CRFWorldDatabaseInsert_MacroData82_next(nullptr);
-        info::CRFWorldDatabaseInsert_MacroData82_clbk CRFWorldDatabaseInsert_MacroData82_user(nullptr);
-        info::CRFWorldDatabaseInsert_NpcData84_ptr CRFWorldDatabaseInsert_NpcData84_next(nullptr);
-        info::CRFWorldDatabaseInsert_NpcData84_clbk CRFWorldDatabaseInsert_NpcData84_user(nullptr);
-        info::CRFWorldDatabaseInsert_NpcData86_ptr CRFWorldDatabaseInsert_NpcData86_next(nullptr);
-        info::CRFWorldDatabaseInsert_NpcData86_clbk CRFWorldDatabaseInsert_NpcData86_user(nullptr);
-        info::CRFWorldDatabaseInsert_NpcLog88_ptr CRFWorldDatabaseInsert_NpcLog88_next(nullptr);
-        info::CRFWorldDatabaseInsert_NpcLog88_clbk CRFWorldDatabaseInsert_NpcLog88_user(nullptr);
-        info::CRFWorldDatabaseInsert_NpcQuest_History90_ptr CRFWorldDatabaseInsert_NpcQuest_History90_next(nullptr);
-        info::CRFWorldDatabaseInsert_NpcQuest_History90_clbk CRFWorldDatabaseInsert_NpcQuest_History90_user(nullptr);
-        info::CRFWorldDatabaseInsert_OreCutting92_ptr CRFWorldDatabaseInsert_OreCutting92_next(nullptr);
-        info::CRFWorldDatabaseInsert_OreCutting92_clbk CRFWorldDatabaseInsert_OreCutting92_user(nullptr);
-        info::CRFWorldDatabaseInsert_OreReset_Log94_ptr CRFWorldDatabaseInsert_OreReset_Log94_next(nullptr);
-        info::CRFWorldDatabaseInsert_OreReset_Log94_clbk CRFWorldDatabaseInsert_OreReset_Log94_user(nullptr);
-        info::CRFWorldDatabaseInsert_PSDefaultRecord96_ptr CRFWorldDatabaseInsert_PSDefaultRecord96_next(nullptr);
-        info::CRFWorldDatabaseInsert_PSDefaultRecord96_clbk CRFWorldDatabaseInsert_PSDefaultRecord96_user(nullptr);
-        info::CRFWorldDatabaseInsert_PatriarchComm98_ptr CRFWorldDatabaseInsert_PatriarchComm98_next(nullptr);
-        info::CRFWorldDatabaseInsert_PatriarchComm98_clbk CRFWorldDatabaseInsert_PatriarchComm98_user(nullptr);
-        info::CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_ptr CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_next(nullptr);
-        info::CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_clbk CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_user(nullptr);
-        info::CRFWorldDatabaseInsert_PcBangFavorItem102_ptr CRFWorldDatabaseInsert_PcBangFavorItem102_next(nullptr);
-        info::CRFWorldDatabaseInsert_PcBangFavorItem102_clbk CRFWorldDatabaseInsert_PcBangFavorItem102_user(nullptr);
-        info::CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_ptr CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_next(nullptr);
-        info::CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_clbk CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_user(nullptr);
-        info::CRFWorldDatabaseInsert_PostStorageRecord106_ptr CRFWorldDatabaseInsert_PostStorageRecord106_next(nullptr);
-        info::CRFWorldDatabaseInsert_PostStorageRecord106_clbk CRFWorldDatabaseInsert_PostStorageRecord106_user(nullptr);
-        info::CRFWorldDatabaseInsert_PotionDelay108_ptr CRFWorldDatabaseInsert_PotionDelay108_next(nullptr);
-        info::CRFWorldDatabaseInsert_PotionDelay108_clbk CRFWorldDatabaseInsert_PotionDelay108_user(nullptr);
-        info::CRFWorldDatabaseInsert_PrimiumPlayTime110_ptr CRFWorldDatabaseInsert_PrimiumPlayTime110_next(nullptr);
-        info::CRFWorldDatabaseInsert_PrimiumPlayTime110_clbk CRFWorldDatabaseInsert_PrimiumPlayTime110_user(nullptr);
-        info::CRFWorldDatabaseInsert_PvpOrderViewInfo112_ptr CRFWorldDatabaseInsert_PvpOrderViewInfo112_next(nullptr);
-        info::CRFWorldDatabaseInsert_PvpOrderViewInfo112_clbk CRFWorldDatabaseInsert_PvpOrderViewInfo112_user(nullptr);
-        info::CRFWorldDatabaseInsert_PvpPointGuildRankData114_ptr CRFWorldDatabaseInsert_PvpPointGuildRankData114_next(nullptr);
-        info::CRFWorldDatabaseInsert_PvpPointGuildRankData114_clbk CRFWorldDatabaseInsert_PvpPointGuildRankData114_user(nullptr);
-        info::CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_ptr CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_next(nullptr);
-        info::CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_clbk CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_user(nullptr);
-        info::CRFWorldDatabaseInsert_Quest118_ptr CRFWorldDatabaseInsert_Quest118_next(nullptr);
-        info::CRFWorldDatabaseInsert_Quest118_clbk CRFWorldDatabaseInsert_Quest118_user(nullptr);
-        info::CRFWorldDatabaseInsert_RFEvent_ClassRefine120_ptr CRFWorldDatabaseInsert_RFEvent_ClassRefine120_next(nullptr);
-        info::CRFWorldDatabaseInsert_RFEvent_ClassRefine120_clbk CRFWorldDatabaseInsert_RFEvent_ClassRefine120_user(nullptr);
-        info::CRFWorldDatabaseInsert_RaceBattleLog122_ptr CRFWorldDatabaseInsert_RaceBattleLog122_next(nullptr);
-        info::CRFWorldDatabaseInsert_RaceBattleLog122_clbk CRFWorldDatabaseInsert_RaceBattleLog122_user(nullptr);
-        info::CRFWorldDatabaseInsert_RenamePotionLog124_ptr CRFWorldDatabaseInsert_RenamePotionLog124_next(nullptr);
-        info::CRFWorldDatabaseInsert_RenamePotionLog124_clbk CRFWorldDatabaseInsert_RenamePotionLog124_user(nullptr);
-        info::CRFWorldDatabaseInsert_SFDelayInfo126_ptr CRFWorldDatabaseInsert_SFDelayInfo126_next(nullptr);
-        info::CRFWorldDatabaseInsert_SFDelayInfo126_clbk CRFWorldDatabaseInsert_SFDelayInfo126_user(nullptr);
-        info::CRFWorldDatabaseInsert_Set_Limit_Run128_ptr CRFWorldDatabaseInsert_Set_Limit_Run128_next(nullptr);
-        info::CRFWorldDatabaseInsert_Set_Limit_Run128_clbk CRFWorldDatabaseInsert_Set_Limit_Run128_user(nullptr);
-        info::CRFWorldDatabaseInsert_SettlementOwnerLog130_ptr CRFWorldDatabaseInsert_SettlementOwnerLog130_next(nullptr);
-        info::CRFWorldDatabaseInsert_SettlementOwnerLog130_clbk CRFWorldDatabaseInsert_SettlementOwnerLog130_user(nullptr);
-        info::CRFWorldDatabaseInsert_Start_NpcQuest_History132_ptr CRFWorldDatabaseInsert_Start_NpcQuest_History132_next(nullptr);
-        info::CRFWorldDatabaseInsert_Start_NpcQuest_History132_clbk CRFWorldDatabaseInsert_Start_NpcQuest_History132_user(nullptr);
-        info::CRFWorldDatabaseInsert_Supplement134_ptr CRFWorldDatabaseInsert_Supplement134_next(nullptr);
-        info::CRFWorldDatabaseInsert_Supplement134_clbk CRFWorldDatabaseInsert_Supplement134_user(nullptr);
-        info::CRFWorldDatabaseInsert_Unit136_ptr CRFWorldDatabaseInsert_Unit136_next(nullptr);
-        info::CRFWorldDatabaseInsert_Unit136_clbk CRFWorldDatabaseInsert_Unit136_user(nullptr);
-        info::CRFWorldDatabaseInsert_UnitData138_ptr CRFWorldDatabaseInsert_UnitData138_next(nullptr);
-        info::CRFWorldDatabaseInsert_UnitData138_clbk CRFWorldDatabaseInsert_UnitData138_user(nullptr);
-        info::CRFWorldDatabaseInsert_UnitLog140_ptr CRFWorldDatabaseInsert_UnitLog140_next(nullptr);
-        info::CRFWorldDatabaseInsert_UnitLog140_clbk CRFWorldDatabaseInsert_UnitLog140_user(nullptr);
-        info::CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_ptr CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_next(nullptr);
-        info::CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_clbk CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_user(nullptr);
-        info::CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_ptr CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_next(nullptr);
-        info::CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_clbk CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_user(nullptr);
-        info::CRFWorldDatabaseInsert_UserInterface146_ptr CRFWorldDatabaseInsert_UserInterface146_next(nullptr);
-        info::CRFWorldDatabaseInsert_UserInterface146_clbk CRFWorldDatabaseInsert_UserInterface146_user(nullptr);
-        info::CRFWorldDatabaseInsert_UserNum_Log148_ptr CRFWorldDatabaseInsert_UserNum_Log148_next(nullptr);
-        info::CRFWorldDatabaseInsert_UserNum_Log148_clbk CRFWorldDatabaseInsert_UserNum_Log148_user(nullptr);
-        info::CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_ptr CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_next(nullptr);
-        info::CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_clbk CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_user(nullptr);
-        info::CRFWorldDatabaseLoadGreetingMsg152_ptr CRFWorldDatabaseLoadGreetingMsg152_next(nullptr);
-        info::CRFWorldDatabaseLoadGreetingMsg152_clbk CRFWorldDatabaseLoadGreetingMsg152_user(nullptr);
-        info::CRFWorldDatabaseLoadGuildBattleInfo154_ptr CRFWorldDatabaseLoadGuildBattleInfo154_next(nullptr);
-        info::CRFWorldDatabaseLoadGuildBattleInfo154_clbk CRFWorldDatabaseLoadGuildBattleInfo154_user(nullptr);
-        info::CRFWorldDatabaseLoadGuildBattleScheduleInfo156_ptr CRFWorldDatabaseLoadGuildBattleScheduleInfo156_next(nullptr);
-        info::CRFWorldDatabaseLoadGuildBattleScheduleInfo156_clbk CRFWorldDatabaseLoadGuildBattleScheduleInfo156_user(nullptr);
-        info::CRFWorldDatabaseRebirth_Base158_ptr CRFWorldDatabaseRebirth_Base158_next(nullptr);
-        info::CRFWorldDatabaseRebirth_Base158_clbk CRFWorldDatabaseRebirth_Base158_user(nullptr);
-        info::CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_ptr CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_next(nullptr);
-        info::CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_clbk CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_user(nullptr);
-        info::CRFWorldDatabaseSelectAllGuildSerial162_ptr CRFWorldDatabaseSelectAllGuildSerial162_next(nullptr);
-        info::CRFWorldDatabaseSelectAllGuildSerial162_clbk CRFWorldDatabaseSelectAllGuildSerial162_user(nullptr);
-        info::CRFWorldDatabaseSelectAllGuildSerialGrade164_ptr CRFWorldDatabaseSelectAllGuildSerialGrade164_next(nullptr);
-        info::CRFWorldDatabaseSelectAllGuildSerialGrade164_clbk CRFWorldDatabaseSelectAllGuildSerialGrade164_user(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRankList166_ptr CRFWorldDatabaseSelectGuildBattleRankList166_next(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRankList166_clbk CRFWorldDatabaseSelectGuildBattleRankList166_user(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRankRecord168_ptr CRFWorldDatabaseSelectGuildBattleRankRecord168_next(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRankRecord168_clbk CRFWorldDatabaseSelectGuildBattleRankRecord168_user(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRerservedList170_ptr CRFWorldDatabaseSelectGuildBattleRerservedList170_next(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleRerservedList170_clbk CRFWorldDatabaseSelectGuildBattleRerservedList170_user(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_ptr CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_next(nullptr);
-        info::CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_clbk CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_user(nullptr);
-        info::CRFWorldDatabaseSelectRowCountGuildBattleInfo174_ptr CRFWorldDatabaseSelectRowCountGuildBattleInfo174_next(nullptr);
-        info::CRFWorldDatabaseSelectRowCountGuildBattleInfo174_clbk CRFWorldDatabaseSelectRowCountGuildBattleInfo174_user(nullptr);
-        info::CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_ptr CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_next(nullptr);
-        info::CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_clbk CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountByAvatorName178_ptr CRFWorldDatabaseSelect_AccountByAvatorName178_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountByAvatorName178_clbk CRFWorldDatabaseSelect_AccountByAvatorName178_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountItemCharge180_ptr CRFWorldDatabaseSelect_AccountItemCharge180_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountItemCharge180_clbk CRFWorldDatabaseSelect_AccountItemCharge180_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountItemCharge_Extend182_ptr CRFWorldDatabaseSelect_AccountItemCharge_Extend182_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountItemCharge_Extend182_clbk CRFWorldDatabaseSelect_AccountItemCharge_Extend182_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountSerial184_ptr CRFWorldDatabaseSelect_AccountSerial184_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountSerial184_clbk CRFWorldDatabaseSelect_AccountSerial184_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountTrunk186_ptr CRFWorldDatabaseSelect_AccountTrunk186_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountTrunk186_clbk CRFWorldDatabaseSelect_AccountTrunk186_user(nullptr);
-        info::CRFWorldDatabaseSelect_AccountTrunkExtend188_ptr CRFWorldDatabaseSelect_AccountTrunkExtend188_next(nullptr);
-        info::CRFWorldDatabaseSelect_AccountTrunkExtend188_clbk CRFWorldDatabaseSelect_AccountTrunkExtend188_user(nullptr);
-        info::CRFWorldDatabaseSelect_AllGuildData190_ptr CRFWorldDatabaseSelect_AllGuildData190_next(nullptr);
-        info::CRFWorldDatabaseSelect_AllGuildData190_clbk CRFWorldDatabaseSelect_AllGuildData190_user(nullptr);
-        info::CRFWorldDatabaseSelect_AllGuildNum192_ptr CRFWorldDatabaseSelect_AllGuildNum192_next(nullptr);
-        info::CRFWorldDatabaseSelect_AllGuildNum192_clbk CRFWorldDatabaseSelect_AllGuildNum192_user(nullptr);
-        info::CRFWorldDatabaseSelect_AnimusData194_ptr CRFWorldDatabaseSelect_AnimusData194_next(nullptr);
-        info::CRFWorldDatabaseSelect_AnimusData194_clbk CRFWorldDatabaseSelect_AnimusData194_user(nullptr);
-        info::CRFWorldDatabaseSelect_ArrangeInfo196_ptr CRFWorldDatabaseSelect_ArrangeInfo196_next(nullptr);
-        info::CRFWorldDatabaseSelect_ArrangeInfo196_clbk CRFWorldDatabaseSelect_ArrangeInfo196_user(nullptr);
-        info::CRFWorldDatabaseSelect_BattleResultLogLatest198_ptr CRFWorldDatabaseSelect_BattleResultLogLatest198_next(nullptr);
-        info::CRFWorldDatabaseSelect_BattleResultLogLatest198_clbk CRFWorldDatabaseSelect_BattleResultLogLatest198_user(nullptr);
-        info::CRFWorldDatabaseSelect_BattleTournamentInfo200_ptr CRFWorldDatabaseSelect_BattleTournamentInfo200_next(nullptr);
-        info::CRFWorldDatabaseSelect_BattleTournamentInfo200_clbk CRFWorldDatabaseSelect_BattleTournamentInfo200_user(nullptr);
-        info::CRFWorldDatabaseSelect_BossCryMsg202_ptr CRFWorldDatabaseSelect_BossCryMsg202_next(nullptr);
-        info::CRFWorldDatabaseSelect_BossCryMsg202_clbk CRFWorldDatabaseSelect_BossCryMsg202_user(nullptr);
-        info::CRFWorldDatabaseSelect_Buddy204_ptr CRFWorldDatabaseSelect_Buddy204_next(nullptr);
-        info::CRFWorldDatabaseSelect_Buddy204_clbk CRFWorldDatabaseSelect_Buddy204_user(nullptr);
-        info::CRFWorldDatabaseSelect_CashLimSale206_ptr CRFWorldDatabaseSelect_CashLimSale206_next(nullptr);
-        info::CRFWorldDatabaseSelect_CashLimSale206_clbk CRFWorldDatabaseSelect_CashLimSale206_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharNumInWorld208_ptr CRFWorldDatabaseSelect_CharNumInWorld208_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharNumInWorld208_clbk CRFWorldDatabaseSelect_CharNumInWorld208_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfo210_ptr CRFWorldDatabaseSelect_CharacterBaseInfo210_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfo210_clbk CRFWorldDatabaseSelect_CharacterBaseInfo210_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfoByName212_ptr CRFWorldDatabaseSelect_CharacterBaseInfoByName212_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfoByName212_clbk CRFWorldDatabaseSelect_CharacterBaseInfoByName212_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_ptr CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_clbk CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterGeneralInfo216_ptr CRFWorldDatabaseSelect_CharacterGeneralInfo216_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterGeneralInfo216_clbk CRFWorldDatabaseSelect_CharacterGeneralInfo216_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterName218_ptr CRFWorldDatabaseSelect_CharacterName218_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterName218_clbk CRFWorldDatabaseSelect_CharacterName218_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterReName220_ptr CRFWorldDatabaseSelect_CharacterReName220_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterReName220_clbk CRFWorldDatabaseSelect_CharacterReName220_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterSerial222_ptr CRFWorldDatabaseSelect_CharacterSerial222_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharacterSerial222_clbk CRFWorldDatabaseSelect_CharacterSerial222_user(nullptr);
-        info::CRFWorldDatabaseSelect_CharactersInfo224_ptr CRFWorldDatabaseSelect_CharactersInfo224_next(nullptr);
-        info::CRFWorldDatabaseSelect_CharactersInfo224_clbk CRFWorldDatabaseSelect_CharactersInfo224_user(nullptr);
-        info::CRFWorldDatabaseSelect_CheckGreetRecord226_ptr CRFWorldDatabaseSelect_CheckGreetRecord226_next(nullptr);
-        info::CRFWorldDatabaseSelect_CheckGreetRecord226_clbk CRFWorldDatabaseSelect_CheckGreetRecord226_user(nullptr);
-        info::CRFWorldDatabaseSelect_CheckSumValue228_ptr CRFWorldDatabaseSelect_CheckSumValue228_next(nullptr);
-        info::CRFWorldDatabaseSelect_CheckSumValue228_clbk CRFWorldDatabaseSelect_CheckSumValue228_user(nullptr);
-        info::CRFWorldDatabaseSelect_ChracterSerialRace230_ptr CRFWorldDatabaseSelect_ChracterSerialRace230_next(nullptr);
-        info::CRFWorldDatabaseSelect_ChracterSerialRace230_clbk CRFWorldDatabaseSelect_ChracterSerialRace230_user(nullptr);
-        info::CRFWorldDatabaseSelect_ClearHonorGuild232_ptr CRFWorldDatabaseSelect_ClearHonorGuild232_next(nullptr);
-        info::CRFWorldDatabaseSelect_ClearHonorGuild232_clbk CRFWorldDatabaseSelect_ClearHonorGuild232_user(nullptr);
-        info::CRFWorldDatabaseSelect_Economy_History234_ptr CRFWorldDatabaseSelect_Economy_History234_next(nullptr);
-        info::CRFWorldDatabaseSelect_Economy_History234_clbk CRFWorldDatabaseSelect_Economy_History234_user(nullptr);
-        info::CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_ptr CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_next(nullptr);
-        info::CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_clbk CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_user(nullptr);
-        info::CRFWorldDatabaseSelect_Equal_Name238_ptr CRFWorldDatabaseSelect_Equal_Name238_next(nullptr);
-        info::CRFWorldDatabaseSelect_Equal_Name238_clbk CRFWorldDatabaseSelect_Equal_Name238_user(nullptr);
-        info::CRFWorldDatabaseSelect_Exist_Economy240_ptr CRFWorldDatabaseSelect_Exist_Economy240_next(nullptr);
-        info::CRFWorldDatabaseSelect_Exist_Economy240_clbk CRFWorldDatabaseSelect_Exist_Economy240_user(nullptr);
-        info::CRFWorldDatabaseSelect_FailBattleCount242_ptr CRFWorldDatabaseSelect_FailBattleCount242_next(nullptr);
-        info::CRFWorldDatabaseSelect_FailBattleCount242_clbk CRFWorldDatabaseSelect_FailBattleCount242_user(nullptr);
-        info::CRFWorldDatabaseSelect_GetCharSerialByNameRace244_ptr CRFWorldDatabaseSelect_GetCharSerialByNameRace244_next(nullptr);
-        info::CRFWorldDatabaseSelect_GetCharSerialByNameRace244_clbk CRFWorldDatabaseSelect_GetCharSerialByNameRace244_user(nullptr);
-        info::CRFWorldDatabaseSelect_GodenBoxItem246_ptr CRFWorldDatabaseSelect_GodenBoxItem246_next(nullptr);
-        info::CRFWorldDatabaseSelect_GodenBoxItem246_clbk CRFWorldDatabaseSelect_GodenBoxItem246_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildBattleRecord248_ptr CRFWorldDatabaseSelect_GuildBattleRecord248_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildBattleRecord248_clbk CRFWorldDatabaseSelect_GuildBattleRecord248_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildData250_ptr CRFWorldDatabaseSelect_GuildData250_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildData250_clbk CRFWorldDatabaseSelect_GuildData250_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMasterLastConn252_ptr CRFWorldDatabaseSelect_GuildMasterLastConn252_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMasterLastConn252_clbk CRFWorldDatabaseSelect_GuildMasterLastConn252_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMemberData254_ptr CRFWorldDatabaseSelect_GuildMemberData254_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMemberData254_clbk CRFWorldDatabaseSelect_GuildMemberData254_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMoneyIOData256_ptr CRFWorldDatabaseSelect_GuildMoneyIOData256_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildMoneyIOData256_clbk CRFWorldDatabaseSelect_GuildMoneyIOData256_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildRoomInfo258_ptr CRFWorldDatabaseSelect_GuildRoomInfo258_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildRoomInfo258_clbk CRFWorldDatabaseSelect_GuildRoomInfo258_user(nullptr);
-        info::CRFWorldDatabaseSelect_GuildSerial260_ptr CRFWorldDatabaseSelect_GuildSerial260_next(nullptr);
-        info::CRFWorldDatabaseSelect_GuildSerial260_clbk CRFWorldDatabaseSelect_GuildSerial260_user(nullptr);
-        info::CRFWorldDatabaseSelect_HonorGuild262_ptr CRFWorldDatabaseSelect_HonorGuild262_next(nullptr);
-        info::CRFWorldDatabaseSelect_HonorGuild262_clbk CRFWorldDatabaseSelect_HonorGuild262_user(nullptr);
-        info::CRFWorldDatabaseSelect_Inven264_ptr CRFWorldDatabaseSelect_Inven264_next(nullptr);
-        info::CRFWorldDatabaseSelect_Inven264_clbk CRFWorldDatabaseSelect_Inven264_user(nullptr);
-        info::CRFWorldDatabaseSelect_IsValidChar266_ptr CRFWorldDatabaseSelect_IsValidChar266_next(nullptr);
-        info::CRFWorldDatabaseSelect_IsValidChar266_clbk CRFWorldDatabaseSelect_IsValidChar266_user(nullptr);
-        info::CRFWorldDatabaseSelect_ItemCharge268_ptr CRFWorldDatabaseSelect_ItemCharge268_next(nullptr);
-        info::CRFWorldDatabaseSelect_ItemCharge268_clbk CRFWorldDatabaseSelect_ItemCharge268_user(nullptr);
-        info::CRFWorldDatabaseSelect_ItemCombineEx270_ptr CRFWorldDatabaseSelect_ItemCombineEx270_next(nullptr);
-        info::CRFWorldDatabaseSelect_ItemCombineEx270_clbk CRFWorldDatabaseSelect_ItemCombineEx270_user(nullptr);
-        info::CRFWorldDatabaseSelect_LimitInfo272_ptr CRFWorldDatabaseSelect_LimitInfo272_next(nullptr);
-        info::CRFWorldDatabaseSelect_LimitInfo272_clbk CRFWorldDatabaseSelect_LimitInfo272_user(nullptr);
-        info::CRFWorldDatabaseSelect_LimitItemEmptyRecord274_ptr CRFWorldDatabaseSelect_LimitItemEmptyRecord274_next(nullptr);
-        info::CRFWorldDatabaseSelect_LimitItemEmptyRecord274_clbk CRFWorldDatabaseSelect_LimitItemEmptyRecord274_user(nullptr);
-        info::CRFWorldDatabaseSelect_LimitItemUsedRecord276_ptr CRFWorldDatabaseSelect_LimitItemUsedRecord276_next(nullptr);
-        info::CRFWorldDatabaseSelect_LimitItemUsedRecord276_clbk CRFWorldDatabaseSelect_LimitItemUsedRecord276_user(nullptr);
-        info::CRFWorldDatabaseSelect_Limit_Run_Record278_ptr CRFWorldDatabaseSelect_Limit_Run_Record278_next(nullptr);
-        info::CRFWorldDatabaseSelect_Limit_Run_Record278_clbk CRFWorldDatabaseSelect_Limit_Run_Record278_user(nullptr);
-        info::CRFWorldDatabaseSelect_LoseBattleCount280_ptr CRFWorldDatabaseSelect_LoseBattleCount280_next(nullptr);
-        info::CRFWorldDatabaseSelect_LoseBattleCount280_clbk CRFWorldDatabaseSelect_LoseBattleCount280_user(nullptr);
-        info::CRFWorldDatabaseSelect_MacroData282_ptr CRFWorldDatabaseSelect_MacroData282_next(nullptr);
-        info::CRFWorldDatabaseSelect_MacroData282_clbk CRFWorldDatabaseSelect_MacroData282_user(nullptr);
-        info::CRFWorldDatabaseSelect_NotArrangeCharacter284_ptr CRFWorldDatabaseSelect_NotArrangeCharacter284_next(nullptr);
-        info::CRFWorldDatabaseSelect_NotArrangeCharacter284_clbk CRFWorldDatabaseSelect_NotArrangeCharacter284_user(nullptr);
-        info::CRFWorldDatabaseSelect_NpcData286_ptr CRFWorldDatabaseSelect_NpcData286_next(nullptr);
-        info::CRFWorldDatabaseSelect_NpcData286_clbk CRFWorldDatabaseSelect_NpcData286_user(nullptr);
-        info::CRFWorldDatabaseSelect_NpcQuest_History288_ptr CRFWorldDatabaseSelect_NpcQuest_History288_next(nullptr);
-        info::CRFWorldDatabaseSelect_NpcQuest_History288_clbk CRFWorldDatabaseSelect_NpcQuest_History288_user(nullptr);
-        info::CRFWorldDatabaseSelect_OldVerPatriarchGroup290_ptr CRFWorldDatabaseSelect_OldVerPatriarchGroup290_next(nullptr);
-        info::CRFWorldDatabaseSelect_OldVerPatriarchGroup290_clbk CRFWorldDatabaseSelect_OldVerPatriarchGroup290_user(nullptr);
-        info::CRFWorldDatabaseSelect_OreCutting292_ptr CRFWorldDatabaseSelect_OreCutting292_next(nullptr);
-        info::CRFWorldDatabaseSelect_OreCutting292_clbk CRFWorldDatabaseSelect_OreCutting292_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchCandidate294_ptr CRFWorldDatabaseSelect_PatriarchCandidate294_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchCandidate294_clbk CRFWorldDatabaseSelect_PatriarchCandidate294_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchComm296_ptr CRFWorldDatabaseSelect_PatriarchComm296_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchComm296_clbk CRFWorldDatabaseSelect_PatriarchComm296_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchCommCount298_ptr CRFWorldDatabaseSelect_PatriarchCommCount298_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchCommCount298_clbk CRFWorldDatabaseSelect_PatriarchCommCount298_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchElectState300_ptr CRFWorldDatabaseSelect_PatriarchElectState300_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchElectState300_clbk CRFWorldDatabaseSelect_PatriarchElectState300_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchGroup302_ptr CRFWorldDatabaseSelect_PatriarchGroup302_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchGroup302_clbk CRFWorldDatabaseSelect_PatriarchGroup302_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchRefundCount304_ptr CRFWorldDatabaseSelect_PatriarchRefundCount304_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchRefundCount304_clbk CRFWorldDatabaseSelect_PatriarchRefundCount304_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchVoted306_ptr CRFWorldDatabaseSelect_PatriarchVoted306_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchVoted306_clbk CRFWorldDatabaseSelect_PatriarchVoted306_user(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchWinCnt308_ptr CRFWorldDatabaseSelect_PatriarchWinCnt308_next(nullptr);
-        info::CRFWorldDatabaseSelect_PatriarchWinCnt308_clbk CRFWorldDatabaseSelect_PatriarchWinCnt308_user(nullptr);
-        info::CRFWorldDatabaseSelect_PcBangFavorItem310_ptr CRFWorldDatabaseSelect_PcBangFavorItem310_next(nullptr);
-        info::CRFWorldDatabaseSelect_PcBangFavorItem310_clbk CRFWorldDatabaseSelect_PcBangFavorItem310_user(nullptr);
-        info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_ptr CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_next(nullptr);
-        info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_clbk CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_user(nullptr);
-        info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_ptr CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_next(nullptr);
-        info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_clbk CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_user(nullptr);
-        info::CRFWorldDatabaseSelect_Player_Last_LogoutTime316_ptr CRFWorldDatabaseSelect_Player_Last_LogoutTime316_next(nullptr);
-        info::CRFWorldDatabaseSelect_Player_Last_LogoutTime316_clbk CRFWorldDatabaseSelect_Player_Last_LogoutTime316_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostContent318_ptr CRFWorldDatabaseSelect_PostContent318_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostContent318_clbk CRFWorldDatabaseSelect_PostContent318_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostRecvSerialFromName320_ptr CRFWorldDatabaseSelect_PostRecvSerialFromName320_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostRecvSerialFromName320_clbk CRFWorldDatabaseSelect_PostRecvSerialFromName320_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostRecvStorageCheck322_ptr CRFWorldDatabaseSelect_PostRecvStorageCheck322_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostRecvStorageCheck322_clbk CRFWorldDatabaseSelect_PostRecvStorageCheck322_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostRegistryData324_ptr CRFWorldDatabaseSelect_PostRegistryData324_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostRegistryData324_clbk CRFWorldDatabaseSelect_PostRegistryData324_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageEmptyRecord326_ptr CRFWorldDatabaseSelect_PostStorageEmptyRecord326_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageEmptyRecord326_clbk CRFWorldDatabaseSelect_PostStorageEmptyRecord326_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_ptr CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_clbk CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageList330_ptr CRFWorldDatabaseSelect_PostStorageList330_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageList330_clbk CRFWorldDatabaseSelect_PostStorageList330_user(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageRecordCheck332_ptr CRFWorldDatabaseSelect_PostStorageRecordCheck332_next(nullptr);
-        info::CRFWorldDatabaseSelect_PostStorageRecordCheck332_clbk CRFWorldDatabaseSelect_PostStorageRecordCheck332_user(nullptr);
-        info::CRFWorldDatabaseSelect_PotionDelay334_ptr CRFWorldDatabaseSelect_PotionDelay334_next(nullptr);
-        info::CRFWorldDatabaseSelect_PotionDelay334_clbk CRFWorldDatabaseSelect_PotionDelay334_user(nullptr);
-        info::CRFWorldDatabaseSelect_PrimiumPlayTime336_ptr CRFWorldDatabaseSelect_PrimiumPlayTime336_next(nullptr);
-        info::CRFWorldDatabaseSelect_PrimiumPlayTime336_clbk CRFWorldDatabaseSelect_PrimiumPlayTime336_user(nullptr);
-        info::CRFWorldDatabaseSelect_Punishment338_ptr CRFWorldDatabaseSelect_Punishment338_next(nullptr);
-        info::CRFWorldDatabaseSelect_Punishment338_clbk CRFWorldDatabaseSelect_Punishment338_user(nullptr);
-        info::CRFWorldDatabaseSelect_PunishmentCount340_ptr CRFWorldDatabaseSelect_PunishmentCount340_next(nullptr);
-        info::CRFWorldDatabaseSelect_PunishmentCount340_clbk CRFWorldDatabaseSelect_PunishmentCount340_user(nullptr);
-        info::CRFWorldDatabaseSelect_PvpOrderViewInfo342_ptr CRFWorldDatabaseSelect_PvpOrderViewInfo342_next(nullptr);
-        info::CRFWorldDatabaseSelect_PvpOrderViewInfo342_clbk CRFWorldDatabaseSelect_PvpOrderViewInfo342_user(nullptr);
-        info::CRFWorldDatabaseSelect_PvpPointGuildRank344_ptr CRFWorldDatabaseSelect_PvpPointGuildRank344_next(nullptr);
-        info::CRFWorldDatabaseSelect_PvpPointGuildRank344_clbk CRFWorldDatabaseSelect_PvpPointGuildRank344_user(nullptr);
-        info::CRFWorldDatabaseSelect_PvpPointLimitInfo346_ptr CRFWorldDatabaseSelect_PvpPointLimitInfo346_next(nullptr);
-        info::CRFWorldDatabaseSelect_PvpPointLimitInfo346_clbk CRFWorldDatabaseSelect_PvpPointLimitInfo346_user(nullptr);
-        info::CRFWorldDatabaseSelect_PvpRankInfo348_ptr CRFWorldDatabaseSelect_PvpRankInfo348_next(nullptr);
-        info::CRFWorldDatabaseSelect_PvpRankInfo348_clbk CRFWorldDatabaseSelect_PvpRankInfo348_user(nullptr);
-        info::CRFWorldDatabaseSelect_PvpRate350_ptr CRFWorldDatabaseSelect_PvpRate350_next(nullptr);
-        info::CRFWorldDatabaseSelect_PvpRate350_clbk CRFWorldDatabaseSelect_PvpRate350_user(nullptr);
-        info::CRFWorldDatabaseSelect_Quest352_ptr CRFWorldDatabaseSelect_Quest352_next(nullptr);
-        info::CRFWorldDatabaseSelect_Quest352_clbk CRFWorldDatabaseSelect_Quest352_user(nullptr);
-        info::CRFWorldDatabaseSelect_RFEvent_ClassRefine354_ptr CRFWorldDatabaseSelect_RFEvent_ClassRefine354_next(nullptr);
-        info::CRFWorldDatabaseSelect_RFEvent_ClassRefine354_clbk CRFWorldDatabaseSelect_RFEvent_ClassRefine354_user(nullptr);
-        info::CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_ptr CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_next(nullptr);
-        info::CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_clbk CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_user(nullptr);
-        info::CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_ptr CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_next(nullptr);
-        info::CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_clbk CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_user(nullptr);
-        info::CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_ptr CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_next(nullptr);
-        info::CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_clbk CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_user(nullptr);
-        info::CRFWorldDatabaseSelect_ReturnPost362_ptr CRFWorldDatabaseSelect_ReturnPost362_next(nullptr);
-        info::CRFWorldDatabaseSelect_ReturnPost362_clbk CRFWorldDatabaseSelect_ReturnPost362_user(nullptr);
-        info::CRFWorldDatabaseSelect_SFDelayInfo364_ptr CRFWorldDatabaseSelect_SFDelayInfo364_next(nullptr);
-        info::CRFWorldDatabaseSelect_SFDelayInfo364_clbk CRFWorldDatabaseSelect_SFDelayInfo364_user(nullptr);
-        info::CRFWorldDatabaseSelect_Start_NpcQuest_History366_ptr CRFWorldDatabaseSelect_Start_NpcQuest_History366_next(nullptr);
-        info::CRFWorldDatabaseSelect_Start_NpcQuest_History366_clbk CRFWorldDatabaseSelect_Start_NpcQuest_History366_user(nullptr);
-        info::CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_ptr CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_next(nullptr);
-        info::CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_clbk CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_user(nullptr);
-        info::CRFWorldDatabaseSelect_StoreLimitItem370_ptr CRFWorldDatabaseSelect_StoreLimitItem370_next(nullptr);
-        info::CRFWorldDatabaseSelect_StoreLimitItem370_clbk CRFWorldDatabaseSelect_StoreLimitItem370_user(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement372_ptr CRFWorldDatabaseSelect_Supplement372_next(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement372_clbk CRFWorldDatabaseSelect_Supplement372_user(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement_ActPoint374_ptr CRFWorldDatabaseSelect_Supplement_ActPoint374_next(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement_ActPoint374_clbk CRFWorldDatabaseSelect_Supplement_ActPoint374_user(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement_Ex376_ptr CRFWorldDatabaseSelect_Supplement_Ex376_next(nullptr);
-        info::CRFWorldDatabaseSelect_Supplement_Ex376_clbk CRFWorldDatabaseSelect_Supplement_Ex376_user(nullptr);
-        info::CRFWorldDatabaseSelect_TakeItem378_ptr CRFWorldDatabaseSelect_TakeItem378_next(nullptr);
-        info::CRFWorldDatabaseSelect_TakeItem378_clbk CRFWorldDatabaseSelect_TakeItem378_user(nullptr);
-        info::CRFWorldDatabaseSelect_TotalGuildRank380_ptr CRFWorldDatabaseSelect_TotalGuildRank380_next(nullptr);
-        info::CRFWorldDatabaseSelect_TotalGuildRank380_clbk CRFWorldDatabaseSelect_TotalGuildRank380_user(nullptr);
-        info::CRFWorldDatabaseSelect_TotalRecordNum382_ptr CRFWorldDatabaseSelect_TotalRecordNum382_next(nullptr);
-        info::CRFWorldDatabaseSelect_TotalRecordNum382_clbk CRFWorldDatabaseSelect_TotalRecordNum382_user(nullptr);
-        info::CRFWorldDatabaseSelect_Trade384_ptr CRFWorldDatabaseSelect_Trade384_next(nullptr);
-        info::CRFWorldDatabaseSelect_Trade384_clbk CRFWorldDatabaseSelect_Trade384_user(nullptr);
-        info::CRFWorldDatabaseSelect_TrunkMoney386_ptr CRFWorldDatabaseSelect_TrunkMoney386_next(nullptr);
-        info::CRFWorldDatabaseSelect_TrunkMoney386_clbk CRFWorldDatabaseSelect_TrunkMoney386_user(nullptr);
-        info::CRFWorldDatabaseSelect_Unit388_ptr CRFWorldDatabaseSelect_Unit388_next(nullptr);
-        info::CRFWorldDatabaseSelect_Unit388_clbk CRFWorldDatabaseSelect_Unit388_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnitData390_ptr CRFWorldDatabaseSelect_UnitData390_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnitData390_clbk CRFWorldDatabaseSelect_UnitData390_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_ptr CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_clbk CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_ptr CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_clbk CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemState396_ptr CRFWorldDatabaseSelect_UnmannedTraderItemState396_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemState396_clbk CRFWorldDatabaseSelect_UnmannedTraderItemState396_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_ptr CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_clbk CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_ptr CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_clbk CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderRegister402_ptr CRFWorldDatabaseSelect_UnmannedTraderRegister402_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderRegister402_clbk CRFWorldDatabaseSelect_UnmannedTraderRegister402_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_ptr CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_clbk CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_ptr CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_clbk CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_ptr CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_clbk CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_ptr CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_clbk CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_user(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_next(nullptr);
-        info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_user(nullptr);
-        info::CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_ptr CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_next(nullptr);
-        info::CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_clbk CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_user(nullptr);
-        info::CRFWorldDatabaseSelect_UserCountInfo420_ptr CRFWorldDatabaseSelect_UserCountInfo420_next(nullptr);
-        info::CRFWorldDatabaseSelect_UserCountInfo420_clbk CRFWorldDatabaseSelect_UserCountInfo420_user(nullptr);
-        info::CRFWorldDatabaseSelect_UserInterface422_ptr CRFWorldDatabaseSelect_UserInterface422_next(nullptr);
-        info::CRFWorldDatabaseSelect_UserInterface422_clbk CRFWorldDatabaseSelect_UserInterface422_user(nullptr);
-        info::CRFWorldDatabaseSelect_WaitItem424_ptr CRFWorldDatabaseSelect_WaitItem424_next(nullptr);
-        info::CRFWorldDatabaseSelect_WaitItem424_clbk CRFWorldDatabaseSelect_WaitItem424_user(nullptr);
-        info::CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_ptr CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_next(nullptr);
-        info::CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_clbk CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_user(nullptr);
-        info::CRFWorldDatabaseSelect_WinBattleCount428_ptr CRFWorldDatabaseSelect_WinBattleCount428_next(nullptr);
-        info::CRFWorldDatabaseSelect_WinBattleCount428_clbk CRFWorldDatabaseSelect_WinBattleCount428_user(nullptr);
-        info::CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_ptr CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_next(nullptr);
-        info::CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_clbk CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_user(nullptr);
-        info::CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_ptr CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_next(nullptr);
-        info::CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_clbk CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_user(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleInfo434_ptr CRFWorldDatabaseUpdateClearGuildBattleInfo434_next(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleInfo434_clbk CRFWorldDatabaseUpdateClearGuildBattleInfo434_user(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleRank436_ptr CRFWorldDatabaseUpdateClearGuildBattleRank436_next(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleRank436_clbk CRFWorldDatabaseUpdateClearGuildBattleRank436_user(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_ptr CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_next(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_clbk CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_user(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_ptr CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_next(nullptr);
-        info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_clbk CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_user(nullptr);
-        info::CRFWorldDatabaseUpdateDrawGuildBattleResult442_ptr CRFWorldDatabaseUpdateDrawGuildBattleResult442_next(nullptr);
-        info::CRFWorldDatabaseUpdateDrawGuildBattleResult442_clbk CRFWorldDatabaseUpdateDrawGuildBattleResult442_user(nullptr);
-        info::CRFWorldDatabaseUpdateGuildBattleInfo444_ptr CRFWorldDatabaseUpdateGuildBattleInfo444_next(nullptr);
-        info::CRFWorldDatabaseUpdateGuildBattleInfo444_clbk CRFWorldDatabaseUpdateGuildBattleInfo444_user(nullptr);
-        info::CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_ptr CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_next(nullptr);
-        info::CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_clbk CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_user(nullptr);
-        info::CRFWorldDatabaseUpdateGuildMoney448_ptr CRFWorldDatabaseUpdateGuildMoney448_next(nullptr);
-        info::CRFWorldDatabaseUpdateGuildMoney448_clbk CRFWorldDatabaseUpdateGuildMoney448_user(nullptr);
-        info::CRFWorldDatabaseUpdateLoseGuildBattleResult450_ptr CRFWorldDatabaseUpdateLoseGuildBattleResult450_next(nullptr);
-        info::CRFWorldDatabaseUpdateLoseGuildBattleResult450_clbk CRFWorldDatabaseUpdateLoseGuildBattleResult450_user(nullptr);
-        info::CRFWorldDatabaseUpdateServerResetToken452_ptr CRFWorldDatabaseUpdateServerResetToken452_next(nullptr);
-        info::CRFWorldDatabaseUpdateServerResetToken452_clbk CRFWorldDatabaseUpdateServerResetToken452_user(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_Cheat454_ptr CRFWorldDatabaseUpdateVotedReset_Cheat454_next(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_Cheat454_clbk CRFWorldDatabaseUpdateVotedReset_Cheat454_user(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_General456_ptr CRFWorldDatabaseUpdateVotedReset_General456_next(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_General456_clbk CRFWorldDatabaseUpdateVotedReset_General456_user(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_Supplement458_ptr CRFWorldDatabaseUpdateVotedReset_Supplement458_next(nullptr);
-        info::CRFWorldDatabaseUpdateVotedReset_Supplement458_clbk CRFWorldDatabaseUpdateVotedReset_Supplement458_user(nullptr);
-        info::CRFWorldDatabaseUpdateWinGuildBattleResult460_ptr CRFWorldDatabaseUpdateWinGuildBattleResult460_next(nullptr);
-        info::CRFWorldDatabaseUpdateWinGuildBattleResult460_clbk CRFWorldDatabaseUpdateWinGuildBattleResult460_user(nullptr);
-        info::CRFWorldDatabaseUpdate_AnimusData462_ptr CRFWorldDatabaseUpdate_AnimusData462_next(nullptr);
-        info::CRFWorldDatabaseUpdate_AnimusData462_clbk CRFWorldDatabaseUpdate_AnimusData462_user(nullptr);
-        info::CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_ptr CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_next(nullptr);
-        info::CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_clbk CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_user(nullptr);
-        info::CRFWorldDatabaseUpdate_CharSlot466_ptr CRFWorldDatabaseUpdate_CharSlot466_next(nullptr);
-        info::CRFWorldDatabaseUpdate_CharSlot466_clbk CRFWorldDatabaseUpdate_CharSlot466_user(nullptr);
-        info::CRFWorldDatabaseUpdate_CharacterData468_ptr CRFWorldDatabaseUpdate_CharacterData468_next(nullptr);
-        info::CRFWorldDatabaseUpdate_CharacterData468_clbk CRFWorldDatabaseUpdate_CharacterData468_user(nullptr);
-        info::CRFWorldDatabaseUpdate_CharacterReName470_ptr CRFWorldDatabaseUpdate_CharacterReName470_next(nullptr);
-        info::CRFWorldDatabaseUpdate_CharacterReName470_clbk CRFWorldDatabaseUpdate_CharacterReName470_user(nullptr);
-        info::CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_ptr CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_next(nullptr);
-        info::CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_clbk CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_user(nullptr);
-        info::CRFWorldDatabaseUpdate_CristalBattleCharInfo474_ptr CRFWorldDatabaseUpdate_CristalBattleCharInfo474_next(nullptr);
-        info::CRFWorldDatabaseUpdate_CristalBattleCharInfo474_clbk CRFWorldDatabaseUpdate_CristalBattleCharInfo474_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Dalant476_ptr CRFWorldDatabaseUpdate_Dalant476_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Dalant476_clbk CRFWorldDatabaseUpdate_Dalant476_user(nullptr);
-        info::CRFWorldDatabaseUpdate_DisableInstanceStore478_ptr CRFWorldDatabaseUpdate_DisableInstanceStore478_next(nullptr);
-        info::CRFWorldDatabaseUpdate_DisableInstanceStore478_clbk CRFWorldDatabaseUpdate_DisableInstanceStore478_user(nullptr);
-        info::CRFWorldDatabaseUpdate_DisappearOwnerRecord480_ptr CRFWorldDatabaseUpdate_DisappearOwnerRecord480_next(nullptr);
-        info::CRFWorldDatabaseUpdate_DisappearOwnerRecord480_clbk CRFWorldDatabaseUpdate_DisappearOwnerRecord480_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GmGreet482_ptr CRFWorldDatabaseUpdate_GmGreet482_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GmGreet482_clbk CRFWorldDatabaseUpdate_GmGreet482_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Gold484_ptr CRFWorldDatabaseUpdate_Gold484_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Gold484_clbk CRFWorldDatabaseUpdate_Gold484_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildEmblem486_ptr CRFWorldDatabaseUpdate_GuildEmblem486_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildEmblem486_clbk CRFWorldDatabaseUpdate_GuildEmblem486_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildGrade488_ptr CRFWorldDatabaseUpdate_GuildGrade488_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildGrade488_clbk CRFWorldDatabaseUpdate_GuildGrade488_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildGreet490_ptr CRFWorldDatabaseUpdate_GuildGreet490_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildGreet490_clbk CRFWorldDatabaseUpdate_GuildGreet490_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildMaster492_ptr CRFWorldDatabaseUpdate_GuildMaster492_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildMaster492_clbk CRFWorldDatabaseUpdate_GuildMaster492_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildMemberCount494_ptr CRFWorldDatabaseUpdate_GuildMemberCount494_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildMemberCount494_clbk CRFWorldDatabaseUpdate_GuildMemberCount494_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank496_ptr CRFWorldDatabaseUpdate_GuildRank496_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank496_clbk CRFWorldDatabaseUpdate_GuildRank496_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step1498_ptr CRFWorldDatabaseUpdate_GuildRank_Step1498_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step1498_clbk CRFWorldDatabaseUpdate_GuildRank_Step1498_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step2500_ptr CRFWorldDatabaseUpdate_GuildRank_Step2500_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step2500_clbk CRFWorldDatabaseUpdate_GuildRank_Step2500_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step3502_ptr CRFWorldDatabaseUpdate_GuildRank_Step3502_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRank_Step3502_clbk CRFWorldDatabaseUpdate_GuildRank_Step3502_user(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRoom504_ptr CRFWorldDatabaseUpdate_GuildRoom504_next(nullptr);
-        info::CRFWorldDatabaseUpdate_GuildRoom504_clbk CRFWorldDatabaseUpdate_GuildRoom504_user(nullptr);
-        info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_ptr CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_next(nullptr);
-        info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_clbk CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_user(nullptr);
-        info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_ptr CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_next(nullptr);
-        info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_clbk CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_user(nullptr);
-        info::CRFWorldDatabaseUpdate_InputGuildMoney510_ptr CRFWorldDatabaseUpdate_InputGuildMoney510_next(nullptr);
-        info::CRFWorldDatabaseUpdate_InputGuildMoney510_clbk CRFWorldDatabaseUpdate_InputGuildMoney510_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Level512_ptr CRFWorldDatabaseUpdate_Level512_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Level512_clbk CRFWorldDatabaseUpdate_Level512_user(nullptr);
-        info::CRFWorldDatabaseUpdate_LimitItemNum514_ptr CRFWorldDatabaseUpdate_LimitItemNum514_next(nullptr);
-        info::CRFWorldDatabaseUpdate_LimitItemNum514_clbk CRFWorldDatabaseUpdate_LimitItemNum514_user(nullptr);
-        info::CRFWorldDatabaseUpdate_MacroData516_ptr CRFWorldDatabaseUpdate_MacroData516_next(nullptr);
-        info::CRFWorldDatabaseUpdate_MacroData516_clbk CRFWorldDatabaseUpdate_MacroData516_user(nullptr);
-        info::CRFWorldDatabaseUpdate_NpcData518_ptr CRFWorldDatabaseUpdate_NpcData518_next(nullptr);
-        info::CRFWorldDatabaseUpdate_NpcData518_clbk CRFWorldDatabaseUpdate_NpcData518_user(nullptr);
-        info::CRFWorldDatabaseUpdate_OutputGuildMoney520_ptr CRFWorldDatabaseUpdate_OutputGuildMoney520_next(nullptr);
-        info::CRFWorldDatabaseUpdate_OutputGuildMoney520_clbk CRFWorldDatabaseUpdate_OutputGuildMoney520_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PatriarchComm522_ptr CRFWorldDatabaseUpdate_PatriarchComm522_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PatriarchComm522_clbk CRFWorldDatabaseUpdate_PatriarchComm522_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_ptr CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_clbk CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Player_Vote_Info526_ptr CRFWorldDatabaseUpdate_Player_Vote_Info526_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Player_Vote_Info526_clbk CRFWorldDatabaseUpdate_Player_Vote_Info526_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Post528_ptr CRFWorldDatabaseUpdate_Post528_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Post528_clbk CRFWorldDatabaseUpdate_Post528_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PostRegistry530_ptr CRFWorldDatabaseUpdate_PostRegistry530_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PostRegistry530_clbk CRFWorldDatabaseUpdate_PostRegistry530_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PostRegistryDisable532_ptr CRFWorldDatabaseUpdate_PostRegistryDisable532_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PostRegistryDisable532_clbk CRFWorldDatabaseUpdate_PostRegistryDisable532_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PostStorageSendToRecver534_ptr CRFWorldDatabaseUpdate_PostStorageSendToRecver534_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PostStorageSendToRecver534_clbk CRFWorldDatabaseUpdate_PostStorageSendToRecver534_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Punishment536_ptr CRFWorldDatabaseUpdate_Punishment536_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Punishment536_clbk CRFWorldDatabaseUpdate_Punishment536_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_ptr CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_clbk CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_ptr CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_clbk CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_user(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointInfo542_ptr CRFWorldDatabaseUpdate_PvpPointInfo542_next(nullptr);
-        info::CRFWorldDatabaseUpdate_PvpPointInfo542_clbk CRFWorldDatabaseUpdate_PvpPointInfo542_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_ptr CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_clbk CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceGreet546_ptr CRFWorldDatabaseUpdate_RaceGreet546_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceGreet546_clbk CRFWorldDatabaseUpdate_RaceGreet546_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank548_ptr CRFWorldDatabaseUpdate_RaceRank548_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank548_clbk CRFWorldDatabaseUpdate_RaceRank548_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step1550_ptr CRFWorldDatabaseUpdate_RaceRank_Step1550_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step1550_clbk CRFWorldDatabaseUpdate_RaceRank_Step1550_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step2552_ptr CRFWorldDatabaseUpdate_RaceRank_Step2552_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step2552_clbk CRFWorldDatabaseUpdate_RaceRank_Step2552_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step3554_ptr CRFWorldDatabaseUpdate_RaceRank_Step3554_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step3554_clbk CRFWorldDatabaseUpdate_RaceRank_Step3554_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step4556_ptr CRFWorldDatabaseUpdate_RaceRank_Step4556_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step4556_clbk CRFWorldDatabaseUpdate_RaceRank_Step4556_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step5558_ptr CRFWorldDatabaseUpdate_RaceRank_Step5558_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step5558_clbk CRFWorldDatabaseUpdate_RaceRank_Step5558_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step6560_ptr CRFWorldDatabaseUpdate_RaceRank_Step6560_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step6560_clbk CRFWorldDatabaseUpdate_RaceRank_Step6560_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step7562_ptr CRFWorldDatabaseUpdate_RaceRank_Step7562_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step7562_clbk CRFWorldDatabaseUpdate_RaceRank_Step7562_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step8564_ptr CRFWorldDatabaseUpdate_RaceRank_Step8564_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step8564_clbk CRFWorldDatabaseUpdate_RaceRank_Step8564_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step9566_ptr CRFWorldDatabaseUpdate_RaceRank_Step9566_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step9566_clbk CRFWorldDatabaseUpdate_RaceRank_Step9566_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild574_ptr CRFWorldDatabaseUpdate_RankInGuild574_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild574_clbk CRFWorldDatabaseUpdate_RankInGuild574_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step1576_ptr CRFWorldDatabaseUpdate_RankInGuild_Step1576_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step1576_clbk CRFWorldDatabaseUpdate_RankInGuild_Step1576_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step2578_ptr CRFWorldDatabaseUpdate_RankInGuild_Step2578_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step2578_clbk CRFWorldDatabaseUpdate_RankInGuild_Step2578_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step3580_ptr CRFWorldDatabaseUpdate_RankInGuild_Step3580_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step3580_clbk CRFWorldDatabaseUpdate_RankInGuild_Step3580_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step4582_ptr CRFWorldDatabaseUpdate_RankInGuild_Step4582_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step4582_clbk CRFWorldDatabaseUpdate_RankInGuild_Step4582_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step5584_ptr CRFWorldDatabaseUpdate_RankInGuild_Step5584_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step5584_clbk CRFWorldDatabaseUpdate_RankInGuild_Step5584_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step6586_ptr CRFWorldDatabaseUpdate_RankInGuild_Step6586_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step6586_clbk CRFWorldDatabaseUpdate_RankInGuild_Step6586_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step7588_ptr CRFWorldDatabaseUpdate_RankInGuild_Step7588_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step7588_clbk CRFWorldDatabaseUpdate_RankInGuild_Step7588_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step8590_ptr CRFWorldDatabaseUpdate_RankInGuild_Step8590_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step8590_clbk CRFWorldDatabaseUpdate_RankInGuild_Step8590_user(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step9592_ptr CRFWorldDatabaseUpdate_RankInGuild_Step9592_next(nullptr);
-        info::CRFWorldDatabaseUpdate_RankInGuild_Step9592_clbk CRFWorldDatabaseUpdate_RankInGuild_Step9592_user(nullptr);
-        info::CRFWorldDatabaseUpdate_SFDelayInfo594_ptr CRFWorldDatabaseUpdate_SFDelayInfo594_next(nullptr);
-        info::CRFWorldDatabaseUpdate_SFDelayInfo594_clbk CRFWorldDatabaseUpdate_SFDelayInfo594_user(nullptr);
-        info::CRFWorldDatabaseUpdate_SetActive596_ptr CRFWorldDatabaseUpdate_SetActive596_next(nullptr);
-        info::CRFWorldDatabaseUpdate_SetActive596_clbk CRFWorldDatabaseUpdate_SetActive596_user(nullptr);
-        info::CRFWorldDatabaseUpdate_SetGuildMoney598_ptr CRFWorldDatabaseUpdate_SetGuildMoney598_next(nullptr);
-        info::CRFWorldDatabaseUpdate_SetGuildMoney598_clbk CRFWorldDatabaseUpdate_SetGuildMoney598_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Set_Limit_Run600_ptr CRFWorldDatabaseUpdate_Set_Limit_Run600_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Set_Limit_Run600_clbk CRFWorldDatabaseUpdate_Set_Limit_Run600_user(nullptr);
-        info::CRFWorldDatabaseUpdate_Start_NpcQuest_History602_ptr CRFWorldDatabaseUpdate_Start_NpcQuest_History602_next(nullptr);
-        info::CRFWorldDatabaseUpdate_Start_NpcQuest_History602_clbk CRFWorldDatabaseUpdate_Start_NpcQuest_History602_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnitData604_ptr CRFWorldDatabaseUpdate_UnitData604_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnitData604_clbk CRFWorldDatabaseUpdate_UnitData604_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_ptr CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_clbk CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_ptr CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_clbk CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderItemState610_ptr CRFWorldDatabaseUpdate_UnmannedTraderItemState610_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderItemState610_clbk CRFWorldDatabaseUpdate_UnmannedTraderItemState610_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_ptr CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_clbk CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_ptr CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_clbk CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_ptr CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_clbk CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_ptr CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_clbk CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_ptr CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_clbk CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_ptr CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_clbk CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_user(nullptr);
-        info::CRFWorldDatabaseUpdate_UserGuildData624_ptr CRFWorldDatabaseUpdate_UserGuildData624_next(nullptr);
-        info::CRFWorldDatabaseUpdate_UserGuildData624_clbk CRFWorldDatabaseUpdate_UserGuildData624_user(nullptr);
-        info::CRFWorldDatabaseUpdatet_Account_Vote_Available626_ptr CRFWorldDatabaseUpdatet_Account_Vote_Available626_next(nullptr);
-        info::CRFWorldDatabaseUpdatet_Account_Vote_Available626_clbk CRFWorldDatabaseUpdatet_Account_Vote_Available626_user(nullptr);
-        info::CRFWorldDatabasecreate_amine_personal631_ptr CRFWorldDatabasecreate_amine_personal631_next(nullptr);
-        info::CRFWorldDatabasecreate_amine_personal631_clbk CRFWorldDatabasecreate_amine_personal631_user(nullptr);
-        info::CRFWorldDatabasecreate_automine_table633_ptr CRFWorldDatabasecreate_automine_table633_next(nullptr);
-        info::CRFWorldDatabasecreate_automine_table633_clbk CRFWorldDatabasecreate_automine_table633_user(nullptr);
-        info::CRFWorldDatabasecreate_sumtotal_dungeon635_ptr CRFWorldDatabasecreate_sumtotal_dungeon635_next(nullptr);
-        info::CRFWorldDatabasecreate_sumtotal_dungeon635_clbk CRFWorldDatabasecreate_sumtotal_dungeon635_user(nullptr);
-        info::CRFWorldDatabasecreate_table_atrade_taxrate637_ptr CRFWorldDatabasecreate_table_atrade_taxrate637_next(nullptr);
-        info::CRFWorldDatabasecreate_table_atrade_taxrate637_clbk CRFWorldDatabasecreate_table_atrade_taxrate637_user(nullptr);
-        info::CRFWorldDatabaseexist_aminpersonal_inven639_ptr CRFWorldDatabaseexist_aminpersonal_inven639_next(nullptr);
-        info::CRFWorldDatabaseexist_aminpersonal_inven639_clbk CRFWorldDatabaseexist_aminpersonal_inven639_user(nullptr);
-        info::CRFWorldDatabaseexist_automine641_ptr CRFWorldDatabaseexist_automine641_next(nullptr);
-        info::CRFWorldDatabaseexist_automine641_clbk CRFWorldDatabaseexist_automine641_user(nullptr);
-        info::CRFWorldDatabaseinsert_amine_newowner643_ptr CRFWorldDatabaseinsert_amine_newowner643_next(nullptr);
-        info::CRFWorldDatabaseinsert_amine_newowner643_clbk CRFWorldDatabaseinsert_amine_newowner643_user(nullptr);
-        info::CRFWorldDatabaseinsert_amine_personal645_ptr CRFWorldDatabaseinsert_amine_personal645_next(nullptr);
-        info::CRFWorldDatabaseinsert_amine_personal645_clbk CRFWorldDatabaseinsert_amine_personal645_user(nullptr);
-        info::CRFWorldDatabaseinsert_atrade_taxrate647_ptr CRFWorldDatabaseinsert_atrade_taxrate647_next(nullptr);
-        info::CRFWorldDatabaseinsert_atrade_taxrate647_clbk CRFWorldDatabaseinsert_atrade_taxrate647_user(nullptr);
-        info::CRFWorldDatabaseselect_amine_personal649_ptr CRFWorldDatabaseselect_amine_personal649_next(nullptr);
-        info::CRFWorldDatabaseselect_amine_personal649_clbk CRFWorldDatabaseselect_amine_personal649_user(nullptr);
-        info::CRFWorldDatabaseselect_amine_personal651_ptr CRFWorldDatabaseselect_amine_personal651_next(nullptr);
-        info::CRFWorldDatabaseselect_amine_personal651_clbk CRFWorldDatabaseselect_amine_personal651_user(nullptr);
-        info::CRFWorldDatabaseselect_atrade_taxrate653_ptr CRFWorldDatabaseselect_atrade_taxrate653_next(nullptr);
-        info::CRFWorldDatabaseselect_atrade_taxrate653_clbk CRFWorldDatabaseselect_atrade_taxrate653_user(nullptr);
-        info::CRFWorldDatabaseselect_automine655_ptr CRFWorldDatabaseselect_automine655_next(nullptr);
-        info::CRFWorldDatabaseselect_automine655_clbk CRFWorldDatabaseselect_automine655_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_battery657_ptr CRFWorldDatabaseupdate_amine_battery657_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_battery657_clbk CRFWorldDatabaseupdate_amine_battery657_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_dck659_ptr CRFWorldDatabaseupdate_amine_dck659_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_dck659_clbk CRFWorldDatabaseupdate_amine_dck659_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_mineore661_ptr CRFWorldDatabaseupdate_amine_mineore661_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_mineore661_clbk CRFWorldDatabaseupdate_amine_mineore661_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_moveore663_ptr CRFWorldDatabaseupdate_amine_moveore663_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_moveore663_clbk CRFWorldDatabaseupdate_amine_moveore663_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_personal665_ptr CRFWorldDatabaseupdate_amine_personal665_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_personal665_clbk CRFWorldDatabaseupdate_amine_personal665_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_selore667_ptr CRFWorldDatabaseupdate_amine_selore667_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_selore667_clbk CRFWorldDatabaseupdate_amine_selore667_user(nullptr);
-        info::CRFWorldDatabaseupdate_amine_workstate669_ptr CRFWorldDatabaseupdate_amine_workstate669_next(nullptr);
-        info::CRFWorldDatabaseupdate_amine_workstate669_clbk CRFWorldDatabaseupdate_amine_workstate669_user(nullptr);
-        info::CRFWorldDatabaseupdate_cristalbattle_date671_ptr CRFWorldDatabaseupdate_cristalbattle_date671_next(nullptr);
-        info::CRFWorldDatabaseupdate_cristalbattle_date671_clbk CRFWorldDatabaseupdate_cristalbattle_date671_user(nullptr);
-        info::CRFWorldDatabasedtor_CRFWorldDatabase673_ptr CRFWorldDatabasedtor_CRFWorldDatabase673_next(nullptr);
-        info::CRFWorldDatabasedtor_CRFWorldDatabase673_clbk CRFWorldDatabasedtor_CRFWorldDatabase673_user(nullptr);
+        static info::CRFWorldDatabaseAdd_PvpPoint2_ptr CRFWorldDatabaseAdd_PvpPoint2_next(nullptr);
+        static info::CRFWorldDatabaseAdd_PvpPoint2_clbk CRFWorldDatabaseAdd_PvpPoint2_user(nullptr);
+        static info::CRFWorldDatabasector_CRFWorldDatabase4_ptr CRFWorldDatabasector_CRFWorldDatabase4_next(nullptr);
+        static info::CRFWorldDatabasector_CRFWorldDatabase4_clbk CRFWorldDatabasector_CRFWorldDatabase4_user(nullptr);
+        static info::CRFWorldDatabaseCheck_GuildMemberCount6_ptr CRFWorldDatabaseCheck_GuildMemberCount6_next(nullptr);
+        static info::CRFWorldDatabaseCheck_GuildMemberCount6_clbk CRFWorldDatabaseCheck_GuildMemberCount6_user(nullptr);
+        static info::CRFWorldDatabaseCreateCharacterSelectLogTable8_ptr CRFWorldDatabaseCreateCharacterSelectLogTable8_next(nullptr);
+        static info::CRFWorldDatabaseCreateCharacterSelectLogTable8_clbk CRFWorldDatabaseCreateCharacterSelectLogTable8_user(nullptr);
+        static info::CRFWorldDatabaseCreateGuildBattleRankTable10_ptr CRFWorldDatabaseCreateGuildBattleRankTable10_next(nullptr);
+        static info::CRFWorldDatabaseCreateGuildBattleRankTable10_clbk CRFWorldDatabaseCreateGuildBattleRankTable10_user(nullptr);
+        static info::CRFWorldDatabaseCreate_PvpPointGuildRankTable12_ptr CRFWorldDatabaseCreate_PvpPointGuildRankTable12_next(nullptr);
+        static info::CRFWorldDatabaseCreate_PvpPointGuildRankTable12_clbk CRFWorldDatabaseCreate_PvpPointGuildRankTable12_user(nullptr);
+        static info::CRFWorldDatabaseDeleteGuildBattleInfo14_ptr CRFWorldDatabaseDeleteGuildBattleInfo14_next(nullptr);
+        static info::CRFWorldDatabaseDeleteGuildBattleInfo14_clbk CRFWorldDatabaseDeleteGuildBattleInfo14_user(nullptr);
+        static info::CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_ptr CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_next(nullptr);
+        static info::CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_clbk CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_user(nullptr);
+        static info::CRFWorldDatabaseDelete_CharacterData18_ptr CRFWorldDatabaseDelete_CharacterData18_next(nullptr);
+        static info::CRFWorldDatabaseDelete_CharacterData18_clbk CRFWorldDatabaseDelete_CharacterData18_user(nullptr);
+        static info::CRFWorldDatabaseDelete_Guild20_ptr CRFWorldDatabaseDelete_Guild20_next(nullptr);
+        static info::CRFWorldDatabaseDelete_Guild20_clbk CRFWorldDatabaseDelete_Guild20_user(nullptr);
+        static info::CRFWorldDatabaseDelete_ItemCharge22_ptr CRFWorldDatabaseDelete_ItemCharge22_next(nullptr);
+        static info::CRFWorldDatabaseDelete_ItemCharge22_clbk CRFWorldDatabaseDelete_ItemCharge22_user(nullptr);
+        static info::CRFWorldDatabaseDelete_PatriarchComm24_ptr CRFWorldDatabaseDelete_PatriarchComm24_next(nullptr);
+        static info::CRFWorldDatabaseDelete_PatriarchComm24_clbk CRFWorldDatabaseDelete_PatriarchComm24_user(nullptr);
+        static info::CRFWorldDatabaseDelete_TrunkItemCharge26_ptr CRFWorldDatabaseDelete_TrunkItemCharge26_next(nullptr);
+        static info::CRFWorldDatabaseDelete_TrunkItemCharge26_clbk CRFWorldDatabaseDelete_TrunkItemCharge26_user(nullptr);
+        static info::CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_ptr CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_next(nullptr);
+        static info::CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_clbk CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_user(nullptr);
+        static info::CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_ptr CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_next(nullptr);
+        static info::CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_clbk CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_user(nullptr);
+        static info::CRFWorldDatabaseInsertCharacterSelectLog32_ptr CRFWorldDatabaseInsertCharacterSelectLog32_next(nullptr);
+        static info::CRFWorldDatabaseInsertCharacterSelectLog32_clbk CRFWorldDatabaseInsertCharacterSelectLog32_user(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleDefaultRecord34_ptr CRFWorldDatabaseInsertGuildBattleDefaultRecord34_next(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleDefaultRecord34_clbk CRFWorldDatabaseInsertGuildBattleDefaultRecord34_user(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleRankRecord36_ptr CRFWorldDatabaseInsertGuildBattleRankRecord36_next(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleRankRecord36_clbk CRFWorldDatabaseInsertGuildBattleRankRecord36_user(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_ptr CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_next(nullptr);
+        static info::CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_clbk CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_user(nullptr);
+        static info::CRFWorldDatabaseInsert_AccountTrunk40_ptr CRFWorldDatabaseInsert_AccountTrunk40_next(nullptr);
+        static info::CRFWorldDatabaseInsert_AccountTrunk40_clbk CRFWorldDatabaseInsert_AccountTrunk40_user(nullptr);
+        static info::CRFWorldDatabaseInsert_AccountTrunkExtend42_ptr CRFWorldDatabaseInsert_AccountTrunkExtend42_next(nullptr);
+        static info::CRFWorldDatabaseInsert_AccountTrunkExtend42_clbk CRFWorldDatabaseInsert_AccountTrunkExtend42_user(nullptr);
+        static info::CRFWorldDatabaseInsert_AnimusData44_ptr CRFWorldDatabaseInsert_AnimusData44_next(nullptr);
+        static info::CRFWorldDatabaseInsert_AnimusData44_clbk CRFWorldDatabaseInsert_AnimusData44_user(nullptr);
+        static info::CRFWorldDatabaseInsert_AnimusLog46_ptr CRFWorldDatabaseInsert_AnimusLog46_next(nullptr);
+        static info::CRFWorldDatabaseInsert_AnimusLog46_clbk CRFWorldDatabaseInsert_AnimusLog46_user(nullptr);
+        static info::CRFWorldDatabaseInsert_BossCryRecord48_ptr CRFWorldDatabaseInsert_BossCryRecord48_next(nullptr);
+        static info::CRFWorldDatabaseInsert_BossCryRecord48_clbk CRFWorldDatabaseInsert_BossCryRecord48_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Buddy50_ptr CRFWorldDatabaseInsert_Buddy50_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Buddy50_clbk CRFWorldDatabaseInsert_Buddy50_user(nullptr);
+        static info::CRFWorldDatabaseInsert_CashLimSale52_ptr CRFWorldDatabaseInsert_CashLimSale52_next(nullptr);
+        static info::CRFWorldDatabaseInsert_CashLimSale52_clbk CRFWorldDatabaseInsert_CashLimSale52_user(nullptr);
+        static info::CRFWorldDatabaseInsert_CharacterData54_ptr CRFWorldDatabaseInsert_CharacterData54_next(nullptr);
+        static info::CRFWorldDatabaseInsert_CharacterData54_clbk CRFWorldDatabaseInsert_CharacterData54_user(nullptr);
+        static info::CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_ptr CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_next(nullptr);
+        static info::CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_clbk CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Economy_History58_ptr CRFWorldDatabaseInsert_Economy_History58_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Economy_History58_clbk CRFWorldDatabaseInsert_Economy_History58_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GoldenBoxItem60_ptr CRFWorldDatabaseInsert_GoldenBoxItem60_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GoldenBoxItem60_clbk CRFWorldDatabaseInsert_GoldenBoxItem60_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GreetingRecord62_ptr CRFWorldDatabaseInsert_GreetingRecord62_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GreetingRecord62_clbk CRFWorldDatabaseInsert_GreetingRecord62_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GuidRoom64_ptr CRFWorldDatabaseInsert_GuidRoom64_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GuidRoom64_clbk CRFWorldDatabaseInsert_GuidRoom64_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Guild66_ptr CRFWorldDatabaseInsert_Guild66_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Guild66_clbk CRFWorldDatabaseInsert_Guild66_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildBatlleResultLog68_ptr CRFWorldDatabaseInsert_GuildBatlleResultLog68_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildBatlleResultLog68_clbk CRFWorldDatabaseInsert_GuildBatlleResultLog68_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_ptr CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_clbk CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_user(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildMoneyHistory72_ptr CRFWorldDatabaseInsert_GuildMoneyHistory72_next(nullptr);
+        static info::CRFWorldDatabaseInsert_GuildMoneyHistory72_clbk CRFWorldDatabaseInsert_GuildMoneyHistory72_user(nullptr);
+        static info::CRFWorldDatabaseInsert_ItemChargeInGame74_ptr CRFWorldDatabaseInsert_ItemChargeInGame74_next(nullptr);
+        static info::CRFWorldDatabaseInsert_ItemChargeInGame74_clbk CRFWorldDatabaseInsert_ItemChargeInGame74_user(nullptr);
+        static info::CRFWorldDatabaseInsert_ItemCombineEx76_ptr CRFWorldDatabaseInsert_ItemCombineEx76_next(nullptr);
+        static info::CRFWorldDatabaseInsert_ItemCombineEx76_clbk CRFWorldDatabaseInsert_ItemCombineEx76_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Level_Log78_ptr CRFWorldDatabaseInsert_Level_Log78_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Level_Log78_clbk CRFWorldDatabaseInsert_Level_Log78_user(nullptr);
+        static info::CRFWorldDatabaseInsert_LimitItemRecord80_ptr CRFWorldDatabaseInsert_LimitItemRecord80_next(nullptr);
+        static info::CRFWorldDatabaseInsert_LimitItemRecord80_clbk CRFWorldDatabaseInsert_LimitItemRecord80_user(nullptr);
+        static info::CRFWorldDatabaseInsert_MacroData82_ptr CRFWorldDatabaseInsert_MacroData82_next(nullptr);
+        static info::CRFWorldDatabaseInsert_MacroData82_clbk CRFWorldDatabaseInsert_MacroData82_user(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcData84_ptr CRFWorldDatabaseInsert_NpcData84_next(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcData84_clbk CRFWorldDatabaseInsert_NpcData84_user(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcData86_ptr CRFWorldDatabaseInsert_NpcData86_next(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcData86_clbk CRFWorldDatabaseInsert_NpcData86_user(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcLog88_ptr CRFWorldDatabaseInsert_NpcLog88_next(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcLog88_clbk CRFWorldDatabaseInsert_NpcLog88_user(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcQuest_History90_ptr CRFWorldDatabaseInsert_NpcQuest_History90_next(nullptr);
+        static info::CRFWorldDatabaseInsert_NpcQuest_History90_clbk CRFWorldDatabaseInsert_NpcQuest_History90_user(nullptr);
+        static info::CRFWorldDatabaseInsert_OreCutting92_ptr CRFWorldDatabaseInsert_OreCutting92_next(nullptr);
+        static info::CRFWorldDatabaseInsert_OreCutting92_clbk CRFWorldDatabaseInsert_OreCutting92_user(nullptr);
+        static info::CRFWorldDatabaseInsert_OreReset_Log94_ptr CRFWorldDatabaseInsert_OreReset_Log94_next(nullptr);
+        static info::CRFWorldDatabaseInsert_OreReset_Log94_clbk CRFWorldDatabaseInsert_OreReset_Log94_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PSDefaultRecord96_ptr CRFWorldDatabaseInsert_PSDefaultRecord96_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PSDefaultRecord96_clbk CRFWorldDatabaseInsert_PSDefaultRecord96_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PatriarchComm98_ptr CRFWorldDatabaseInsert_PatriarchComm98_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PatriarchComm98_clbk CRFWorldDatabaseInsert_PatriarchComm98_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_ptr CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_clbk CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PcBangFavorItem102_ptr CRFWorldDatabaseInsert_PcBangFavorItem102_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PcBangFavorItem102_clbk CRFWorldDatabaseInsert_PcBangFavorItem102_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_ptr CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_clbk CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PostStorageRecord106_ptr CRFWorldDatabaseInsert_PostStorageRecord106_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PostStorageRecord106_clbk CRFWorldDatabaseInsert_PostStorageRecord106_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PotionDelay108_ptr CRFWorldDatabaseInsert_PotionDelay108_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PotionDelay108_clbk CRFWorldDatabaseInsert_PotionDelay108_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PrimiumPlayTime110_ptr CRFWorldDatabaseInsert_PrimiumPlayTime110_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PrimiumPlayTime110_clbk CRFWorldDatabaseInsert_PrimiumPlayTime110_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpOrderViewInfo112_ptr CRFWorldDatabaseInsert_PvpOrderViewInfo112_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpOrderViewInfo112_clbk CRFWorldDatabaseInsert_PvpOrderViewInfo112_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpPointGuildRankData114_ptr CRFWorldDatabaseInsert_PvpPointGuildRankData114_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpPointGuildRankData114_clbk CRFWorldDatabaseInsert_PvpPointGuildRankData114_user(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_ptr CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_next(nullptr);
+        static info::CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_clbk CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Quest118_ptr CRFWorldDatabaseInsert_Quest118_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Quest118_clbk CRFWorldDatabaseInsert_Quest118_user(nullptr);
+        static info::CRFWorldDatabaseInsert_RFEvent_ClassRefine120_ptr CRFWorldDatabaseInsert_RFEvent_ClassRefine120_next(nullptr);
+        static info::CRFWorldDatabaseInsert_RFEvent_ClassRefine120_clbk CRFWorldDatabaseInsert_RFEvent_ClassRefine120_user(nullptr);
+        static info::CRFWorldDatabaseInsert_RaceBattleLog122_ptr CRFWorldDatabaseInsert_RaceBattleLog122_next(nullptr);
+        static info::CRFWorldDatabaseInsert_RaceBattleLog122_clbk CRFWorldDatabaseInsert_RaceBattleLog122_user(nullptr);
+        static info::CRFWorldDatabaseInsert_RenamePotionLog124_ptr CRFWorldDatabaseInsert_RenamePotionLog124_next(nullptr);
+        static info::CRFWorldDatabaseInsert_RenamePotionLog124_clbk CRFWorldDatabaseInsert_RenamePotionLog124_user(nullptr);
+        static info::CRFWorldDatabaseInsert_SFDelayInfo126_ptr CRFWorldDatabaseInsert_SFDelayInfo126_next(nullptr);
+        static info::CRFWorldDatabaseInsert_SFDelayInfo126_clbk CRFWorldDatabaseInsert_SFDelayInfo126_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Set_Limit_Run128_ptr CRFWorldDatabaseInsert_Set_Limit_Run128_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Set_Limit_Run128_clbk CRFWorldDatabaseInsert_Set_Limit_Run128_user(nullptr);
+        static info::CRFWorldDatabaseInsert_SettlementOwnerLog130_ptr CRFWorldDatabaseInsert_SettlementOwnerLog130_next(nullptr);
+        static info::CRFWorldDatabaseInsert_SettlementOwnerLog130_clbk CRFWorldDatabaseInsert_SettlementOwnerLog130_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Start_NpcQuest_History132_ptr CRFWorldDatabaseInsert_Start_NpcQuest_History132_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Start_NpcQuest_History132_clbk CRFWorldDatabaseInsert_Start_NpcQuest_History132_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Supplement134_ptr CRFWorldDatabaseInsert_Supplement134_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Supplement134_clbk CRFWorldDatabaseInsert_Supplement134_user(nullptr);
+        static info::CRFWorldDatabaseInsert_Unit136_ptr CRFWorldDatabaseInsert_Unit136_next(nullptr);
+        static info::CRFWorldDatabaseInsert_Unit136_clbk CRFWorldDatabaseInsert_Unit136_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UnitData138_ptr CRFWorldDatabaseInsert_UnitData138_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UnitData138_clbk CRFWorldDatabaseInsert_UnitData138_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UnitLog140_ptr CRFWorldDatabaseInsert_UnitLog140_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UnitLog140_clbk CRFWorldDatabaseInsert_UnitLog140_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_ptr CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_clbk CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_ptr CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_clbk CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UserInterface146_ptr CRFWorldDatabaseInsert_UserInterface146_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UserInterface146_clbk CRFWorldDatabaseInsert_UserInterface146_user(nullptr);
+        static info::CRFWorldDatabaseInsert_UserNum_Log148_ptr CRFWorldDatabaseInsert_UserNum_Log148_next(nullptr);
+        static info::CRFWorldDatabaseInsert_UserNum_Log148_clbk CRFWorldDatabaseInsert_UserNum_Log148_user(nullptr);
+        static info::CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_ptr CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_next(nullptr);
+        static info::CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_clbk CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_user(nullptr);
+        static info::CRFWorldDatabaseLoadGreetingMsg152_ptr CRFWorldDatabaseLoadGreetingMsg152_next(nullptr);
+        static info::CRFWorldDatabaseLoadGreetingMsg152_clbk CRFWorldDatabaseLoadGreetingMsg152_user(nullptr);
+        static info::CRFWorldDatabaseLoadGuildBattleInfo154_ptr CRFWorldDatabaseLoadGuildBattleInfo154_next(nullptr);
+        static info::CRFWorldDatabaseLoadGuildBattleInfo154_clbk CRFWorldDatabaseLoadGuildBattleInfo154_user(nullptr);
+        static info::CRFWorldDatabaseLoadGuildBattleScheduleInfo156_ptr CRFWorldDatabaseLoadGuildBattleScheduleInfo156_next(nullptr);
+        static info::CRFWorldDatabaseLoadGuildBattleScheduleInfo156_clbk CRFWorldDatabaseLoadGuildBattleScheduleInfo156_user(nullptr);
+        static info::CRFWorldDatabaseRebirth_Base158_ptr CRFWorldDatabaseRebirth_Base158_next(nullptr);
+        static info::CRFWorldDatabaseRebirth_Base158_clbk CRFWorldDatabaseRebirth_Base158_user(nullptr);
+        static info::CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_ptr CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_next(nullptr);
+        static info::CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_clbk CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_user(nullptr);
+        static info::CRFWorldDatabaseSelectAllGuildSerial162_ptr CRFWorldDatabaseSelectAllGuildSerial162_next(nullptr);
+        static info::CRFWorldDatabaseSelectAllGuildSerial162_clbk CRFWorldDatabaseSelectAllGuildSerial162_user(nullptr);
+        static info::CRFWorldDatabaseSelectAllGuildSerialGrade164_ptr CRFWorldDatabaseSelectAllGuildSerialGrade164_next(nullptr);
+        static info::CRFWorldDatabaseSelectAllGuildSerialGrade164_clbk CRFWorldDatabaseSelectAllGuildSerialGrade164_user(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRankList166_ptr CRFWorldDatabaseSelectGuildBattleRankList166_next(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRankList166_clbk CRFWorldDatabaseSelectGuildBattleRankList166_user(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRankRecord168_ptr CRFWorldDatabaseSelectGuildBattleRankRecord168_next(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRankRecord168_clbk CRFWorldDatabaseSelectGuildBattleRankRecord168_user(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRerservedList170_ptr CRFWorldDatabaseSelectGuildBattleRerservedList170_next(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleRerservedList170_clbk CRFWorldDatabaseSelectGuildBattleRerservedList170_user(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_ptr CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_next(nullptr);
+        static info::CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_clbk CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_user(nullptr);
+        static info::CRFWorldDatabaseSelectRowCountGuildBattleInfo174_ptr CRFWorldDatabaseSelectRowCountGuildBattleInfo174_next(nullptr);
+        static info::CRFWorldDatabaseSelectRowCountGuildBattleInfo174_clbk CRFWorldDatabaseSelectRowCountGuildBattleInfo174_user(nullptr);
+        static info::CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_ptr CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_next(nullptr);
+        static info::CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_clbk CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountByAvatorName178_ptr CRFWorldDatabaseSelect_AccountByAvatorName178_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountByAvatorName178_clbk CRFWorldDatabaseSelect_AccountByAvatorName178_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountItemCharge180_ptr CRFWorldDatabaseSelect_AccountItemCharge180_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountItemCharge180_clbk CRFWorldDatabaseSelect_AccountItemCharge180_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountItemCharge_Extend182_ptr CRFWorldDatabaseSelect_AccountItemCharge_Extend182_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountItemCharge_Extend182_clbk CRFWorldDatabaseSelect_AccountItemCharge_Extend182_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountSerial184_ptr CRFWorldDatabaseSelect_AccountSerial184_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountSerial184_clbk CRFWorldDatabaseSelect_AccountSerial184_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountTrunk186_ptr CRFWorldDatabaseSelect_AccountTrunk186_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountTrunk186_clbk CRFWorldDatabaseSelect_AccountTrunk186_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountTrunkExtend188_ptr CRFWorldDatabaseSelect_AccountTrunkExtend188_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AccountTrunkExtend188_clbk CRFWorldDatabaseSelect_AccountTrunkExtend188_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AllGuildData190_ptr CRFWorldDatabaseSelect_AllGuildData190_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AllGuildData190_clbk CRFWorldDatabaseSelect_AllGuildData190_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AllGuildNum192_ptr CRFWorldDatabaseSelect_AllGuildNum192_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AllGuildNum192_clbk CRFWorldDatabaseSelect_AllGuildNum192_user(nullptr);
+        static info::CRFWorldDatabaseSelect_AnimusData194_ptr CRFWorldDatabaseSelect_AnimusData194_next(nullptr);
+        static info::CRFWorldDatabaseSelect_AnimusData194_clbk CRFWorldDatabaseSelect_AnimusData194_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ArrangeInfo196_ptr CRFWorldDatabaseSelect_ArrangeInfo196_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ArrangeInfo196_clbk CRFWorldDatabaseSelect_ArrangeInfo196_user(nullptr);
+        static info::CRFWorldDatabaseSelect_BattleResultLogLatest198_ptr CRFWorldDatabaseSelect_BattleResultLogLatest198_next(nullptr);
+        static info::CRFWorldDatabaseSelect_BattleResultLogLatest198_clbk CRFWorldDatabaseSelect_BattleResultLogLatest198_user(nullptr);
+        static info::CRFWorldDatabaseSelect_BattleTournamentInfo200_ptr CRFWorldDatabaseSelect_BattleTournamentInfo200_next(nullptr);
+        static info::CRFWorldDatabaseSelect_BattleTournamentInfo200_clbk CRFWorldDatabaseSelect_BattleTournamentInfo200_user(nullptr);
+        static info::CRFWorldDatabaseSelect_BossCryMsg202_ptr CRFWorldDatabaseSelect_BossCryMsg202_next(nullptr);
+        static info::CRFWorldDatabaseSelect_BossCryMsg202_clbk CRFWorldDatabaseSelect_BossCryMsg202_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Buddy204_ptr CRFWorldDatabaseSelect_Buddy204_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Buddy204_clbk CRFWorldDatabaseSelect_Buddy204_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CashLimSale206_ptr CRFWorldDatabaseSelect_CashLimSale206_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CashLimSale206_clbk CRFWorldDatabaseSelect_CashLimSale206_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharNumInWorld208_ptr CRFWorldDatabaseSelect_CharNumInWorld208_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharNumInWorld208_clbk CRFWorldDatabaseSelect_CharNumInWorld208_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfo210_ptr CRFWorldDatabaseSelect_CharacterBaseInfo210_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfo210_clbk CRFWorldDatabaseSelect_CharacterBaseInfo210_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfoByName212_ptr CRFWorldDatabaseSelect_CharacterBaseInfoByName212_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfoByName212_clbk CRFWorldDatabaseSelect_CharacterBaseInfoByName212_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_ptr CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_clbk CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterGeneralInfo216_ptr CRFWorldDatabaseSelect_CharacterGeneralInfo216_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterGeneralInfo216_clbk CRFWorldDatabaseSelect_CharacterGeneralInfo216_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterName218_ptr CRFWorldDatabaseSelect_CharacterName218_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterName218_clbk CRFWorldDatabaseSelect_CharacterName218_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterReName220_ptr CRFWorldDatabaseSelect_CharacterReName220_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterReName220_clbk CRFWorldDatabaseSelect_CharacterReName220_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterSerial222_ptr CRFWorldDatabaseSelect_CharacterSerial222_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharacterSerial222_clbk CRFWorldDatabaseSelect_CharacterSerial222_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CharactersInfo224_ptr CRFWorldDatabaseSelect_CharactersInfo224_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CharactersInfo224_clbk CRFWorldDatabaseSelect_CharactersInfo224_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CheckGreetRecord226_ptr CRFWorldDatabaseSelect_CheckGreetRecord226_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CheckGreetRecord226_clbk CRFWorldDatabaseSelect_CheckGreetRecord226_user(nullptr);
+        static info::CRFWorldDatabaseSelect_CheckSumValue228_ptr CRFWorldDatabaseSelect_CheckSumValue228_next(nullptr);
+        static info::CRFWorldDatabaseSelect_CheckSumValue228_clbk CRFWorldDatabaseSelect_CheckSumValue228_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ChracterSerialRace230_ptr CRFWorldDatabaseSelect_ChracterSerialRace230_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ChracterSerialRace230_clbk CRFWorldDatabaseSelect_ChracterSerialRace230_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ClearHonorGuild232_ptr CRFWorldDatabaseSelect_ClearHonorGuild232_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ClearHonorGuild232_clbk CRFWorldDatabaseSelect_ClearHonorGuild232_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Economy_History234_ptr CRFWorldDatabaseSelect_Economy_History234_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Economy_History234_clbk CRFWorldDatabaseSelect_Economy_History234_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_ptr CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_clbk CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Equal_Name238_ptr CRFWorldDatabaseSelect_Equal_Name238_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Equal_Name238_clbk CRFWorldDatabaseSelect_Equal_Name238_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Exist_Economy240_ptr CRFWorldDatabaseSelect_Exist_Economy240_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Exist_Economy240_clbk CRFWorldDatabaseSelect_Exist_Economy240_user(nullptr);
+        static info::CRFWorldDatabaseSelect_FailBattleCount242_ptr CRFWorldDatabaseSelect_FailBattleCount242_next(nullptr);
+        static info::CRFWorldDatabaseSelect_FailBattleCount242_clbk CRFWorldDatabaseSelect_FailBattleCount242_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GetCharSerialByNameRace244_ptr CRFWorldDatabaseSelect_GetCharSerialByNameRace244_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GetCharSerialByNameRace244_clbk CRFWorldDatabaseSelect_GetCharSerialByNameRace244_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GodenBoxItem246_ptr CRFWorldDatabaseSelect_GodenBoxItem246_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GodenBoxItem246_clbk CRFWorldDatabaseSelect_GodenBoxItem246_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildBattleRecord248_ptr CRFWorldDatabaseSelect_GuildBattleRecord248_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildBattleRecord248_clbk CRFWorldDatabaseSelect_GuildBattleRecord248_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildData250_ptr CRFWorldDatabaseSelect_GuildData250_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildData250_clbk CRFWorldDatabaseSelect_GuildData250_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMasterLastConn252_ptr CRFWorldDatabaseSelect_GuildMasterLastConn252_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMasterLastConn252_clbk CRFWorldDatabaseSelect_GuildMasterLastConn252_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMemberData254_ptr CRFWorldDatabaseSelect_GuildMemberData254_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMemberData254_clbk CRFWorldDatabaseSelect_GuildMemberData254_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMoneyIOData256_ptr CRFWorldDatabaseSelect_GuildMoneyIOData256_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildMoneyIOData256_clbk CRFWorldDatabaseSelect_GuildMoneyIOData256_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildRoomInfo258_ptr CRFWorldDatabaseSelect_GuildRoomInfo258_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildRoomInfo258_clbk CRFWorldDatabaseSelect_GuildRoomInfo258_user(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildSerial260_ptr CRFWorldDatabaseSelect_GuildSerial260_next(nullptr);
+        static info::CRFWorldDatabaseSelect_GuildSerial260_clbk CRFWorldDatabaseSelect_GuildSerial260_user(nullptr);
+        static info::CRFWorldDatabaseSelect_HonorGuild262_ptr CRFWorldDatabaseSelect_HonorGuild262_next(nullptr);
+        static info::CRFWorldDatabaseSelect_HonorGuild262_clbk CRFWorldDatabaseSelect_HonorGuild262_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Inven264_ptr CRFWorldDatabaseSelect_Inven264_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Inven264_clbk CRFWorldDatabaseSelect_Inven264_user(nullptr);
+        static info::CRFWorldDatabaseSelect_IsValidChar266_ptr CRFWorldDatabaseSelect_IsValidChar266_next(nullptr);
+        static info::CRFWorldDatabaseSelect_IsValidChar266_clbk CRFWorldDatabaseSelect_IsValidChar266_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ItemCharge268_ptr CRFWorldDatabaseSelect_ItemCharge268_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ItemCharge268_clbk CRFWorldDatabaseSelect_ItemCharge268_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ItemCombineEx270_ptr CRFWorldDatabaseSelect_ItemCombineEx270_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ItemCombineEx270_clbk CRFWorldDatabaseSelect_ItemCombineEx270_user(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitInfo272_ptr CRFWorldDatabaseSelect_LimitInfo272_next(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitInfo272_clbk CRFWorldDatabaseSelect_LimitInfo272_user(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitItemEmptyRecord274_ptr CRFWorldDatabaseSelect_LimitItemEmptyRecord274_next(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitItemEmptyRecord274_clbk CRFWorldDatabaseSelect_LimitItemEmptyRecord274_user(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitItemUsedRecord276_ptr CRFWorldDatabaseSelect_LimitItemUsedRecord276_next(nullptr);
+        static info::CRFWorldDatabaseSelect_LimitItemUsedRecord276_clbk CRFWorldDatabaseSelect_LimitItemUsedRecord276_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Limit_Run_Record278_ptr CRFWorldDatabaseSelect_Limit_Run_Record278_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Limit_Run_Record278_clbk CRFWorldDatabaseSelect_Limit_Run_Record278_user(nullptr);
+        static info::CRFWorldDatabaseSelect_LoseBattleCount280_ptr CRFWorldDatabaseSelect_LoseBattleCount280_next(nullptr);
+        static info::CRFWorldDatabaseSelect_LoseBattleCount280_clbk CRFWorldDatabaseSelect_LoseBattleCount280_user(nullptr);
+        static info::CRFWorldDatabaseSelect_MacroData282_ptr CRFWorldDatabaseSelect_MacroData282_next(nullptr);
+        static info::CRFWorldDatabaseSelect_MacroData282_clbk CRFWorldDatabaseSelect_MacroData282_user(nullptr);
+        static info::CRFWorldDatabaseSelect_NotArrangeCharacter284_ptr CRFWorldDatabaseSelect_NotArrangeCharacter284_next(nullptr);
+        static info::CRFWorldDatabaseSelect_NotArrangeCharacter284_clbk CRFWorldDatabaseSelect_NotArrangeCharacter284_user(nullptr);
+        static info::CRFWorldDatabaseSelect_NpcData286_ptr CRFWorldDatabaseSelect_NpcData286_next(nullptr);
+        static info::CRFWorldDatabaseSelect_NpcData286_clbk CRFWorldDatabaseSelect_NpcData286_user(nullptr);
+        static info::CRFWorldDatabaseSelect_NpcQuest_History288_ptr CRFWorldDatabaseSelect_NpcQuest_History288_next(nullptr);
+        static info::CRFWorldDatabaseSelect_NpcQuest_History288_clbk CRFWorldDatabaseSelect_NpcQuest_History288_user(nullptr);
+        static info::CRFWorldDatabaseSelect_OldVerPatriarchGroup290_ptr CRFWorldDatabaseSelect_OldVerPatriarchGroup290_next(nullptr);
+        static info::CRFWorldDatabaseSelect_OldVerPatriarchGroup290_clbk CRFWorldDatabaseSelect_OldVerPatriarchGroup290_user(nullptr);
+        static info::CRFWorldDatabaseSelect_OreCutting292_ptr CRFWorldDatabaseSelect_OreCutting292_next(nullptr);
+        static info::CRFWorldDatabaseSelect_OreCutting292_clbk CRFWorldDatabaseSelect_OreCutting292_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchCandidate294_ptr CRFWorldDatabaseSelect_PatriarchCandidate294_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchCandidate294_clbk CRFWorldDatabaseSelect_PatriarchCandidate294_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchComm296_ptr CRFWorldDatabaseSelect_PatriarchComm296_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchComm296_clbk CRFWorldDatabaseSelect_PatriarchComm296_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchCommCount298_ptr CRFWorldDatabaseSelect_PatriarchCommCount298_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchCommCount298_clbk CRFWorldDatabaseSelect_PatriarchCommCount298_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchElectState300_ptr CRFWorldDatabaseSelect_PatriarchElectState300_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchElectState300_clbk CRFWorldDatabaseSelect_PatriarchElectState300_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchGroup302_ptr CRFWorldDatabaseSelect_PatriarchGroup302_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchGroup302_clbk CRFWorldDatabaseSelect_PatriarchGroup302_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchRefundCount304_ptr CRFWorldDatabaseSelect_PatriarchRefundCount304_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchRefundCount304_clbk CRFWorldDatabaseSelect_PatriarchRefundCount304_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchVoted306_ptr CRFWorldDatabaseSelect_PatriarchVoted306_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchVoted306_clbk CRFWorldDatabaseSelect_PatriarchVoted306_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchWinCnt308_ptr CRFWorldDatabaseSelect_PatriarchWinCnt308_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PatriarchWinCnt308_clbk CRFWorldDatabaseSelect_PatriarchWinCnt308_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PcBangFavorItem310_ptr CRFWorldDatabaseSelect_PcBangFavorItem310_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PcBangFavorItem310_clbk CRFWorldDatabaseSelect_PcBangFavorItem310_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_ptr CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_clbk CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_ptr CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_clbk CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Player_Last_LogoutTime316_ptr CRFWorldDatabaseSelect_Player_Last_LogoutTime316_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Player_Last_LogoutTime316_clbk CRFWorldDatabaseSelect_Player_Last_LogoutTime316_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostContent318_ptr CRFWorldDatabaseSelect_PostContent318_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostContent318_clbk CRFWorldDatabaseSelect_PostContent318_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRecvSerialFromName320_ptr CRFWorldDatabaseSelect_PostRecvSerialFromName320_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRecvSerialFromName320_clbk CRFWorldDatabaseSelect_PostRecvSerialFromName320_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRecvStorageCheck322_ptr CRFWorldDatabaseSelect_PostRecvStorageCheck322_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRecvStorageCheck322_clbk CRFWorldDatabaseSelect_PostRecvStorageCheck322_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRegistryData324_ptr CRFWorldDatabaseSelect_PostRegistryData324_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostRegistryData324_clbk CRFWorldDatabaseSelect_PostRegistryData324_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageEmptyRecord326_ptr CRFWorldDatabaseSelect_PostStorageEmptyRecord326_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageEmptyRecord326_clbk CRFWorldDatabaseSelect_PostStorageEmptyRecord326_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_ptr CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_clbk CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageList330_ptr CRFWorldDatabaseSelect_PostStorageList330_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageList330_clbk CRFWorldDatabaseSelect_PostStorageList330_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageRecordCheck332_ptr CRFWorldDatabaseSelect_PostStorageRecordCheck332_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PostStorageRecordCheck332_clbk CRFWorldDatabaseSelect_PostStorageRecordCheck332_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PotionDelay334_ptr CRFWorldDatabaseSelect_PotionDelay334_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PotionDelay334_clbk CRFWorldDatabaseSelect_PotionDelay334_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PrimiumPlayTime336_ptr CRFWorldDatabaseSelect_PrimiumPlayTime336_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PrimiumPlayTime336_clbk CRFWorldDatabaseSelect_PrimiumPlayTime336_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Punishment338_ptr CRFWorldDatabaseSelect_Punishment338_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Punishment338_clbk CRFWorldDatabaseSelect_Punishment338_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PunishmentCount340_ptr CRFWorldDatabaseSelect_PunishmentCount340_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PunishmentCount340_clbk CRFWorldDatabaseSelect_PunishmentCount340_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpOrderViewInfo342_ptr CRFWorldDatabaseSelect_PvpOrderViewInfo342_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpOrderViewInfo342_clbk CRFWorldDatabaseSelect_PvpOrderViewInfo342_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpPointGuildRank344_ptr CRFWorldDatabaseSelect_PvpPointGuildRank344_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpPointGuildRank344_clbk CRFWorldDatabaseSelect_PvpPointGuildRank344_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpPointLimitInfo346_ptr CRFWorldDatabaseSelect_PvpPointLimitInfo346_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpPointLimitInfo346_clbk CRFWorldDatabaseSelect_PvpPointLimitInfo346_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpRankInfo348_ptr CRFWorldDatabaseSelect_PvpRankInfo348_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpRankInfo348_clbk CRFWorldDatabaseSelect_PvpRankInfo348_user(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpRate350_ptr CRFWorldDatabaseSelect_PvpRate350_next(nullptr);
+        static info::CRFWorldDatabaseSelect_PvpRate350_clbk CRFWorldDatabaseSelect_PvpRate350_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Quest352_ptr CRFWorldDatabaseSelect_Quest352_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Quest352_clbk CRFWorldDatabaseSelect_Quest352_user(nullptr);
+        static info::CRFWorldDatabaseSelect_RFEvent_ClassRefine354_ptr CRFWorldDatabaseSelect_RFEvent_ClassRefine354_next(nullptr);
+        static info::CRFWorldDatabaseSelect_RFEvent_ClassRefine354_clbk CRFWorldDatabaseSelect_RFEvent_ClassRefine354_user(nullptr);
+        static info::CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_ptr CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_next(nullptr);
+        static info::CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_clbk CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_user(nullptr);
+        static info::CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_ptr CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_next(nullptr);
+        static info::CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_clbk CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_user(nullptr);
+        static info::CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_ptr CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_next(nullptr);
+        static info::CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_clbk CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_user(nullptr);
+        static info::CRFWorldDatabaseSelect_ReturnPost362_ptr CRFWorldDatabaseSelect_ReturnPost362_next(nullptr);
+        static info::CRFWorldDatabaseSelect_ReturnPost362_clbk CRFWorldDatabaseSelect_ReturnPost362_user(nullptr);
+        static info::CRFWorldDatabaseSelect_SFDelayInfo364_ptr CRFWorldDatabaseSelect_SFDelayInfo364_next(nullptr);
+        static info::CRFWorldDatabaseSelect_SFDelayInfo364_clbk CRFWorldDatabaseSelect_SFDelayInfo364_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Start_NpcQuest_History366_ptr CRFWorldDatabaseSelect_Start_NpcQuest_History366_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Start_NpcQuest_History366_clbk CRFWorldDatabaseSelect_Start_NpcQuest_History366_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_ptr CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_clbk CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_user(nullptr);
+        static info::CRFWorldDatabaseSelect_StoreLimitItem370_ptr CRFWorldDatabaseSelect_StoreLimitItem370_next(nullptr);
+        static info::CRFWorldDatabaseSelect_StoreLimitItem370_clbk CRFWorldDatabaseSelect_StoreLimitItem370_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement372_ptr CRFWorldDatabaseSelect_Supplement372_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement372_clbk CRFWorldDatabaseSelect_Supplement372_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement_ActPoint374_ptr CRFWorldDatabaseSelect_Supplement_ActPoint374_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement_ActPoint374_clbk CRFWorldDatabaseSelect_Supplement_ActPoint374_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement_Ex376_ptr CRFWorldDatabaseSelect_Supplement_Ex376_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Supplement_Ex376_clbk CRFWorldDatabaseSelect_Supplement_Ex376_user(nullptr);
+        static info::CRFWorldDatabaseSelect_TakeItem378_ptr CRFWorldDatabaseSelect_TakeItem378_next(nullptr);
+        static info::CRFWorldDatabaseSelect_TakeItem378_clbk CRFWorldDatabaseSelect_TakeItem378_user(nullptr);
+        static info::CRFWorldDatabaseSelect_TotalGuildRank380_ptr CRFWorldDatabaseSelect_TotalGuildRank380_next(nullptr);
+        static info::CRFWorldDatabaseSelect_TotalGuildRank380_clbk CRFWorldDatabaseSelect_TotalGuildRank380_user(nullptr);
+        static info::CRFWorldDatabaseSelect_TotalRecordNum382_ptr CRFWorldDatabaseSelect_TotalRecordNum382_next(nullptr);
+        static info::CRFWorldDatabaseSelect_TotalRecordNum382_clbk CRFWorldDatabaseSelect_TotalRecordNum382_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Trade384_ptr CRFWorldDatabaseSelect_Trade384_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Trade384_clbk CRFWorldDatabaseSelect_Trade384_user(nullptr);
+        static info::CRFWorldDatabaseSelect_TrunkMoney386_ptr CRFWorldDatabaseSelect_TrunkMoney386_next(nullptr);
+        static info::CRFWorldDatabaseSelect_TrunkMoney386_clbk CRFWorldDatabaseSelect_TrunkMoney386_user(nullptr);
+        static info::CRFWorldDatabaseSelect_Unit388_ptr CRFWorldDatabaseSelect_Unit388_next(nullptr);
+        static info::CRFWorldDatabaseSelect_Unit388_clbk CRFWorldDatabaseSelect_Unit388_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnitData390_ptr CRFWorldDatabaseSelect_UnitData390_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnitData390_clbk CRFWorldDatabaseSelect_UnitData390_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_ptr CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_clbk CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_ptr CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_clbk CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemState396_ptr CRFWorldDatabaseSelect_UnmannedTraderItemState396_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemState396_clbk CRFWorldDatabaseSelect_UnmannedTraderItemState396_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_ptr CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_clbk CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_ptr CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_clbk CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderRegister402_ptr CRFWorldDatabaseSelect_UnmannedTraderRegister402_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderRegister402_clbk CRFWorldDatabaseSelect_UnmannedTraderRegister402_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_ptr CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_clbk CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_ptr CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_clbk CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_ptr CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_clbk CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_ptr CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_clbk CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_ptr CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_clbk CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_ptr CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_clbk CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UserCountInfo420_ptr CRFWorldDatabaseSelect_UserCountInfo420_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UserCountInfo420_clbk CRFWorldDatabaseSelect_UserCountInfo420_user(nullptr);
+        static info::CRFWorldDatabaseSelect_UserInterface422_ptr CRFWorldDatabaseSelect_UserInterface422_next(nullptr);
+        static info::CRFWorldDatabaseSelect_UserInterface422_clbk CRFWorldDatabaseSelect_UserInterface422_user(nullptr);
+        static info::CRFWorldDatabaseSelect_WaitItem424_ptr CRFWorldDatabaseSelect_WaitItem424_next(nullptr);
+        static info::CRFWorldDatabaseSelect_WaitItem424_clbk CRFWorldDatabaseSelect_WaitItem424_user(nullptr);
+        static info::CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_ptr CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_next(nullptr);
+        static info::CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_clbk CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_user(nullptr);
+        static info::CRFWorldDatabaseSelect_WinBattleCount428_ptr CRFWorldDatabaseSelect_WinBattleCount428_next(nullptr);
+        static info::CRFWorldDatabaseSelect_WinBattleCount428_clbk CRFWorldDatabaseSelect_WinBattleCount428_user(nullptr);
+        static info::CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_ptr CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_next(nullptr);
+        static info::CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_clbk CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_user(nullptr);
+        static info::CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_ptr CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_next(nullptr);
+        static info::CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_clbk CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_user(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleInfo434_ptr CRFWorldDatabaseUpdateClearGuildBattleInfo434_next(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleInfo434_clbk CRFWorldDatabaseUpdateClearGuildBattleInfo434_user(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleRank436_ptr CRFWorldDatabaseUpdateClearGuildBattleRank436_next(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleRank436_clbk CRFWorldDatabaseUpdateClearGuildBattleRank436_user(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_ptr CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_next(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_clbk CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_user(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_ptr CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_next(nullptr);
+        static info::CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_clbk CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_user(nullptr);
+        static info::CRFWorldDatabaseUpdateDrawGuildBattleResult442_ptr CRFWorldDatabaseUpdateDrawGuildBattleResult442_next(nullptr);
+        static info::CRFWorldDatabaseUpdateDrawGuildBattleResult442_clbk CRFWorldDatabaseUpdateDrawGuildBattleResult442_user(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildBattleInfo444_ptr CRFWorldDatabaseUpdateGuildBattleInfo444_next(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildBattleInfo444_clbk CRFWorldDatabaseUpdateGuildBattleInfo444_user(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_ptr CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_next(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_clbk CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_user(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildMoney448_ptr CRFWorldDatabaseUpdateGuildMoney448_next(nullptr);
+        static info::CRFWorldDatabaseUpdateGuildMoney448_clbk CRFWorldDatabaseUpdateGuildMoney448_user(nullptr);
+        static info::CRFWorldDatabaseUpdateLoseGuildBattleResult450_ptr CRFWorldDatabaseUpdateLoseGuildBattleResult450_next(nullptr);
+        static info::CRFWorldDatabaseUpdateLoseGuildBattleResult450_clbk CRFWorldDatabaseUpdateLoseGuildBattleResult450_user(nullptr);
+        static info::CRFWorldDatabaseUpdateServerResetToken452_ptr CRFWorldDatabaseUpdateServerResetToken452_next(nullptr);
+        static info::CRFWorldDatabaseUpdateServerResetToken452_clbk CRFWorldDatabaseUpdateServerResetToken452_user(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_Cheat454_ptr CRFWorldDatabaseUpdateVotedReset_Cheat454_next(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_Cheat454_clbk CRFWorldDatabaseUpdateVotedReset_Cheat454_user(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_General456_ptr CRFWorldDatabaseUpdateVotedReset_General456_next(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_General456_clbk CRFWorldDatabaseUpdateVotedReset_General456_user(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_Supplement458_ptr CRFWorldDatabaseUpdateVotedReset_Supplement458_next(nullptr);
+        static info::CRFWorldDatabaseUpdateVotedReset_Supplement458_clbk CRFWorldDatabaseUpdateVotedReset_Supplement458_user(nullptr);
+        static info::CRFWorldDatabaseUpdateWinGuildBattleResult460_ptr CRFWorldDatabaseUpdateWinGuildBattleResult460_next(nullptr);
+        static info::CRFWorldDatabaseUpdateWinGuildBattleResult460_clbk CRFWorldDatabaseUpdateWinGuildBattleResult460_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_AnimusData462_ptr CRFWorldDatabaseUpdate_AnimusData462_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_AnimusData462_clbk CRFWorldDatabaseUpdate_AnimusData462_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_ptr CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_clbk CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharSlot466_ptr CRFWorldDatabaseUpdate_CharSlot466_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharSlot466_clbk CRFWorldDatabaseUpdate_CharSlot466_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharacterData468_ptr CRFWorldDatabaseUpdate_CharacterData468_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharacterData468_clbk CRFWorldDatabaseUpdate_CharacterData468_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharacterReName470_ptr CRFWorldDatabaseUpdate_CharacterReName470_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_CharacterReName470_clbk CRFWorldDatabaseUpdate_CharacterReName470_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_ptr CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_clbk CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_CristalBattleCharInfo474_ptr CRFWorldDatabaseUpdate_CristalBattleCharInfo474_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_CristalBattleCharInfo474_clbk CRFWorldDatabaseUpdate_CristalBattleCharInfo474_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Dalant476_ptr CRFWorldDatabaseUpdate_Dalant476_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Dalant476_clbk CRFWorldDatabaseUpdate_Dalant476_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_DisableInstanceStore478_ptr CRFWorldDatabaseUpdate_DisableInstanceStore478_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_DisableInstanceStore478_clbk CRFWorldDatabaseUpdate_DisableInstanceStore478_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_DisappearOwnerRecord480_ptr CRFWorldDatabaseUpdate_DisappearOwnerRecord480_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_DisappearOwnerRecord480_clbk CRFWorldDatabaseUpdate_DisappearOwnerRecord480_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GmGreet482_ptr CRFWorldDatabaseUpdate_GmGreet482_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GmGreet482_clbk CRFWorldDatabaseUpdate_GmGreet482_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Gold484_ptr CRFWorldDatabaseUpdate_Gold484_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Gold484_clbk CRFWorldDatabaseUpdate_Gold484_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildEmblem486_ptr CRFWorldDatabaseUpdate_GuildEmblem486_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildEmblem486_clbk CRFWorldDatabaseUpdate_GuildEmblem486_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildGrade488_ptr CRFWorldDatabaseUpdate_GuildGrade488_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildGrade488_clbk CRFWorldDatabaseUpdate_GuildGrade488_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildGreet490_ptr CRFWorldDatabaseUpdate_GuildGreet490_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildGreet490_clbk CRFWorldDatabaseUpdate_GuildGreet490_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildMaster492_ptr CRFWorldDatabaseUpdate_GuildMaster492_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildMaster492_clbk CRFWorldDatabaseUpdate_GuildMaster492_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildMemberCount494_ptr CRFWorldDatabaseUpdate_GuildMemberCount494_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildMemberCount494_clbk CRFWorldDatabaseUpdate_GuildMemberCount494_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank496_ptr CRFWorldDatabaseUpdate_GuildRank496_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank496_clbk CRFWorldDatabaseUpdate_GuildRank496_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step1498_ptr CRFWorldDatabaseUpdate_GuildRank_Step1498_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step1498_clbk CRFWorldDatabaseUpdate_GuildRank_Step1498_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step2500_ptr CRFWorldDatabaseUpdate_GuildRank_Step2500_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step2500_clbk CRFWorldDatabaseUpdate_GuildRank_Step2500_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step3502_ptr CRFWorldDatabaseUpdate_GuildRank_Step3502_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRank_Step3502_clbk CRFWorldDatabaseUpdate_GuildRank_Step3502_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRoom504_ptr CRFWorldDatabaseUpdate_GuildRoom504_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_GuildRoom504_clbk CRFWorldDatabaseUpdate_GuildRoom504_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_ptr CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_clbk CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_ptr CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_clbk CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_InputGuildMoney510_ptr CRFWorldDatabaseUpdate_InputGuildMoney510_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_InputGuildMoney510_clbk CRFWorldDatabaseUpdate_InputGuildMoney510_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Level512_ptr CRFWorldDatabaseUpdate_Level512_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Level512_clbk CRFWorldDatabaseUpdate_Level512_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_LimitItemNum514_ptr CRFWorldDatabaseUpdate_LimitItemNum514_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_LimitItemNum514_clbk CRFWorldDatabaseUpdate_LimitItemNum514_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_MacroData516_ptr CRFWorldDatabaseUpdate_MacroData516_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_MacroData516_clbk CRFWorldDatabaseUpdate_MacroData516_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_NpcData518_ptr CRFWorldDatabaseUpdate_NpcData518_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_NpcData518_clbk CRFWorldDatabaseUpdate_NpcData518_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_OutputGuildMoney520_ptr CRFWorldDatabaseUpdate_OutputGuildMoney520_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_OutputGuildMoney520_clbk CRFWorldDatabaseUpdate_OutputGuildMoney520_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PatriarchComm522_ptr CRFWorldDatabaseUpdate_PatriarchComm522_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PatriarchComm522_clbk CRFWorldDatabaseUpdate_PatriarchComm522_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_ptr CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_clbk CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Player_Vote_Info526_ptr CRFWorldDatabaseUpdate_Player_Vote_Info526_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Player_Vote_Info526_clbk CRFWorldDatabaseUpdate_Player_Vote_Info526_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Post528_ptr CRFWorldDatabaseUpdate_Post528_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Post528_clbk CRFWorldDatabaseUpdate_Post528_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostRegistry530_ptr CRFWorldDatabaseUpdate_PostRegistry530_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostRegistry530_clbk CRFWorldDatabaseUpdate_PostRegistry530_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostRegistryDisable532_ptr CRFWorldDatabaseUpdate_PostRegistryDisable532_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostRegistryDisable532_clbk CRFWorldDatabaseUpdate_PostRegistryDisable532_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostStorageSendToRecver534_ptr CRFWorldDatabaseUpdate_PostStorageSendToRecver534_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PostStorageSendToRecver534_clbk CRFWorldDatabaseUpdate_PostStorageSendToRecver534_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Punishment536_ptr CRFWorldDatabaseUpdate_Punishment536_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Punishment536_clbk CRFWorldDatabaseUpdate_Punishment536_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_ptr CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_clbk CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_ptr CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_clbk CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointInfo542_ptr CRFWorldDatabaseUpdate_PvpPointInfo542_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_PvpPointInfo542_clbk CRFWorldDatabaseUpdate_PvpPointInfo542_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_ptr CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_clbk CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceGreet546_ptr CRFWorldDatabaseUpdate_RaceGreet546_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceGreet546_clbk CRFWorldDatabaseUpdate_RaceGreet546_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank548_ptr CRFWorldDatabaseUpdate_RaceRank548_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank548_clbk CRFWorldDatabaseUpdate_RaceRank548_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step1550_ptr CRFWorldDatabaseUpdate_RaceRank_Step1550_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step1550_clbk CRFWorldDatabaseUpdate_RaceRank_Step1550_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step2552_ptr CRFWorldDatabaseUpdate_RaceRank_Step2552_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step2552_clbk CRFWorldDatabaseUpdate_RaceRank_Step2552_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step3554_ptr CRFWorldDatabaseUpdate_RaceRank_Step3554_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step3554_clbk CRFWorldDatabaseUpdate_RaceRank_Step3554_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step4556_ptr CRFWorldDatabaseUpdate_RaceRank_Step4556_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step4556_clbk CRFWorldDatabaseUpdate_RaceRank_Step4556_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step5558_ptr CRFWorldDatabaseUpdate_RaceRank_Step5558_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step5558_clbk CRFWorldDatabaseUpdate_RaceRank_Step5558_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step6560_ptr CRFWorldDatabaseUpdate_RaceRank_Step6560_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step6560_clbk CRFWorldDatabaseUpdate_RaceRank_Step6560_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step7562_ptr CRFWorldDatabaseUpdate_RaceRank_Step7562_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step7562_clbk CRFWorldDatabaseUpdate_RaceRank_Step7562_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step8564_ptr CRFWorldDatabaseUpdate_RaceRank_Step8564_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step8564_clbk CRFWorldDatabaseUpdate_RaceRank_Step8564_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step9566_ptr CRFWorldDatabaseUpdate_RaceRank_Step9566_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step9566_clbk CRFWorldDatabaseUpdate_RaceRank_Step9566_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_ptr CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_clbk CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild574_ptr CRFWorldDatabaseUpdate_RankInGuild574_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild574_clbk CRFWorldDatabaseUpdate_RankInGuild574_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step1576_ptr CRFWorldDatabaseUpdate_RankInGuild_Step1576_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step1576_clbk CRFWorldDatabaseUpdate_RankInGuild_Step1576_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step2578_ptr CRFWorldDatabaseUpdate_RankInGuild_Step2578_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step2578_clbk CRFWorldDatabaseUpdate_RankInGuild_Step2578_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step3580_ptr CRFWorldDatabaseUpdate_RankInGuild_Step3580_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step3580_clbk CRFWorldDatabaseUpdate_RankInGuild_Step3580_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step4582_ptr CRFWorldDatabaseUpdate_RankInGuild_Step4582_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step4582_clbk CRFWorldDatabaseUpdate_RankInGuild_Step4582_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step5584_ptr CRFWorldDatabaseUpdate_RankInGuild_Step5584_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step5584_clbk CRFWorldDatabaseUpdate_RankInGuild_Step5584_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step6586_ptr CRFWorldDatabaseUpdate_RankInGuild_Step6586_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step6586_clbk CRFWorldDatabaseUpdate_RankInGuild_Step6586_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step7588_ptr CRFWorldDatabaseUpdate_RankInGuild_Step7588_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step7588_clbk CRFWorldDatabaseUpdate_RankInGuild_Step7588_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step8590_ptr CRFWorldDatabaseUpdate_RankInGuild_Step8590_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step8590_clbk CRFWorldDatabaseUpdate_RankInGuild_Step8590_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step9592_ptr CRFWorldDatabaseUpdate_RankInGuild_Step9592_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_RankInGuild_Step9592_clbk CRFWorldDatabaseUpdate_RankInGuild_Step9592_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_SFDelayInfo594_ptr CRFWorldDatabaseUpdate_SFDelayInfo594_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_SFDelayInfo594_clbk CRFWorldDatabaseUpdate_SFDelayInfo594_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_SetActive596_ptr CRFWorldDatabaseUpdate_SetActive596_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_SetActive596_clbk CRFWorldDatabaseUpdate_SetActive596_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_SetGuildMoney598_ptr CRFWorldDatabaseUpdate_SetGuildMoney598_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_SetGuildMoney598_clbk CRFWorldDatabaseUpdate_SetGuildMoney598_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Set_Limit_Run600_ptr CRFWorldDatabaseUpdate_Set_Limit_Run600_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Set_Limit_Run600_clbk CRFWorldDatabaseUpdate_Set_Limit_Run600_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_Start_NpcQuest_History602_ptr CRFWorldDatabaseUpdate_Start_NpcQuest_History602_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_Start_NpcQuest_History602_clbk CRFWorldDatabaseUpdate_Start_NpcQuest_History602_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnitData604_ptr CRFWorldDatabaseUpdate_UnitData604_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnitData604_clbk CRFWorldDatabaseUpdate_UnitData604_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_ptr CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_clbk CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_ptr CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_clbk CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderItemState610_ptr CRFWorldDatabaseUpdate_UnmannedTraderItemState610_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderItemState610_clbk CRFWorldDatabaseUpdate_UnmannedTraderItemState610_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_ptr CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_clbk CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_ptr CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_clbk CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_ptr CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_clbk CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_ptr CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_clbk CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_ptr CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_clbk CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_ptr CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_clbk CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_user(nullptr);
+        static info::CRFWorldDatabaseUpdate_UserGuildData624_ptr CRFWorldDatabaseUpdate_UserGuildData624_next(nullptr);
+        static info::CRFWorldDatabaseUpdate_UserGuildData624_clbk CRFWorldDatabaseUpdate_UserGuildData624_user(nullptr);
+        static info::CRFWorldDatabaseUpdatet_Account_Vote_Available626_ptr CRFWorldDatabaseUpdatet_Account_Vote_Available626_next(nullptr);
+        static info::CRFWorldDatabaseUpdatet_Account_Vote_Available626_clbk CRFWorldDatabaseUpdatet_Account_Vote_Available626_user(nullptr);
+        static info::CRFWorldDatabasecreate_amine_personal631_ptr CRFWorldDatabasecreate_amine_personal631_next(nullptr);
+        static info::CRFWorldDatabasecreate_amine_personal631_clbk CRFWorldDatabasecreate_amine_personal631_user(nullptr);
+        static info::CRFWorldDatabasecreate_automine_table633_ptr CRFWorldDatabasecreate_automine_table633_next(nullptr);
+        static info::CRFWorldDatabasecreate_automine_table633_clbk CRFWorldDatabasecreate_automine_table633_user(nullptr);
+        static info::CRFWorldDatabasecreate_sumtotal_dungeon635_ptr CRFWorldDatabasecreate_sumtotal_dungeon635_next(nullptr);
+        static info::CRFWorldDatabasecreate_sumtotal_dungeon635_clbk CRFWorldDatabasecreate_sumtotal_dungeon635_user(nullptr);
+        static info::CRFWorldDatabasecreate_table_atrade_taxrate637_ptr CRFWorldDatabasecreate_table_atrade_taxrate637_next(nullptr);
+        static info::CRFWorldDatabasecreate_table_atrade_taxrate637_clbk CRFWorldDatabasecreate_table_atrade_taxrate637_user(nullptr);
+        static info::CRFWorldDatabaseexist_aminpersonal_inven639_ptr CRFWorldDatabaseexist_aminpersonal_inven639_next(nullptr);
+        static info::CRFWorldDatabaseexist_aminpersonal_inven639_clbk CRFWorldDatabaseexist_aminpersonal_inven639_user(nullptr);
+        static info::CRFWorldDatabaseexist_automine641_ptr CRFWorldDatabaseexist_automine641_next(nullptr);
+        static info::CRFWorldDatabaseexist_automine641_clbk CRFWorldDatabaseexist_automine641_user(nullptr);
+        static info::CRFWorldDatabaseinsert_amine_newowner643_ptr CRFWorldDatabaseinsert_amine_newowner643_next(nullptr);
+        static info::CRFWorldDatabaseinsert_amine_newowner643_clbk CRFWorldDatabaseinsert_amine_newowner643_user(nullptr);
+        static info::CRFWorldDatabaseinsert_amine_personal645_ptr CRFWorldDatabaseinsert_amine_personal645_next(nullptr);
+        static info::CRFWorldDatabaseinsert_amine_personal645_clbk CRFWorldDatabaseinsert_amine_personal645_user(nullptr);
+        static info::CRFWorldDatabaseinsert_atrade_taxrate647_ptr CRFWorldDatabaseinsert_atrade_taxrate647_next(nullptr);
+        static info::CRFWorldDatabaseinsert_atrade_taxrate647_clbk CRFWorldDatabaseinsert_atrade_taxrate647_user(nullptr);
+        static info::CRFWorldDatabaseselect_amine_personal649_ptr CRFWorldDatabaseselect_amine_personal649_next(nullptr);
+        static info::CRFWorldDatabaseselect_amine_personal649_clbk CRFWorldDatabaseselect_amine_personal649_user(nullptr);
+        static info::CRFWorldDatabaseselect_amine_personal651_ptr CRFWorldDatabaseselect_amine_personal651_next(nullptr);
+        static info::CRFWorldDatabaseselect_amine_personal651_clbk CRFWorldDatabaseselect_amine_personal651_user(nullptr);
+        static info::CRFWorldDatabaseselect_atrade_taxrate653_ptr CRFWorldDatabaseselect_atrade_taxrate653_next(nullptr);
+        static info::CRFWorldDatabaseselect_atrade_taxrate653_clbk CRFWorldDatabaseselect_atrade_taxrate653_user(nullptr);
+        static info::CRFWorldDatabaseselect_automine655_ptr CRFWorldDatabaseselect_automine655_next(nullptr);
+        static info::CRFWorldDatabaseselect_automine655_clbk CRFWorldDatabaseselect_automine655_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_battery657_ptr CRFWorldDatabaseupdate_amine_battery657_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_battery657_clbk CRFWorldDatabaseupdate_amine_battery657_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_dck659_ptr CRFWorldDatabaseupdate_amine_dck659_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_dck659_clbk CRFWorldDatabaseupdate_amine_dck659_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_mineore661_ptr CRFWorldDatabaseupdate_amine_mineore661_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_mineore661_clbk CRFWorldDatabaseupdate_amine_mineore661_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_moveore663_ptr CRFWorldDatabaseupdate_amine_moveore663_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_moveore663_clbk CRFWorldDatabaseupdate_amine_moveore663_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_personal665_ptr CRFWorldDatabaseupdate_amine_personal665_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_personal665_clbk CRFWorldDatabaseupdate_amine_personal665_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_selore667_ptr CRFWorldDatabaseupdate_amine_selore667_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_selore667_clbk CRFWorldDatabaseupdate_amine_selore667_user(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_workstate669_ptr CRFWorldDatabaseupdate_amine_workstate669_next(nullptr);
+        static info::CRFWorldDatabaseupdate_amine_workstate669_clbk CRFWorldDatabaseupdate_amine_workstate669_user(nullptr);
+        static info::CRFWorldDatabaseupdate_cristalbattle_date671_ptr CRFWorldDatabaseupdate_cristalbattle_date671_next(nullptr);
+        static info::CRFWorldDatabaseupdate_cristalbattle_date671_clbk CRFWorldDatabaseupdate_cristalbattle_date671_user(nullptr);
+        static info::CRFWorldDatabasedtor_CRFWorldDatabase673_ptr CRFWorldDatabasedtor_CRFWorldDatabase673_next(nullptr);
+        static info::CRFWorldDatabasedtor_CRFWorldDatabase673_clbk CRFWorldDatabasedtor_CRFWorldDatabase673_user(nullptr);
         
-        bool CRFWorldDatabaseAdd_PvpPoint2_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwPoint, unsigned int dwCashBag)
+        static bool CRFWorldDatabaseAdd_PvpPoint2_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwPoint, unsigned int dwCashBag)
         {
            return CRFWorldDatabaseAdd_PvpPoint2_user(_this, dwSerial, dwPoint, dwCashBag, CRFWorldDatabaseAdd_PvpPoint2_next);
         };
-        void CRFWorldDatabasector_CRFWorldDatabase4_wrapper(struct CRFWorldDatabase* _this)
+        static void CRFWorldDatabasector_CRFWorldDatabase4_wrapper(struct CRFWorldDatabase* _this)
         {
            CRFWorldDatabasector_CRFWorldDatabase4_user(_this, CRFWorldDatabasector_CRFWorldDatabase4_next);
         };
-        bool CRFWorldDatabaseCheck_GuildMemberCount6_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseCheck_GuildMemberCount6_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseCheck_GuildMemberCount6_user(_this, dwGuildSerial, CRFWorldDatabaseCheck_GuildMemberCount6_next);
         };
-        bool CRFWorldDatabaseCreateCharacterSelectLogTable8_wrapper(struct CRFWorldDatabase* _this, char* szTableName)
+        static bool CRFWorldDatabaseCreateCharacterSelectLogTable8_wrapper(struct CRFWorldDatabase* _this, char* szTableName)
         {
            return CRFWorldDatabaseCreateCharacterSelectLogTable8_user(_this, szTableName, CRFWorldDatabaseCreateCharacterSelectLogTable8_next);
         };
-        bool CRFWorldDatabaseCreateGuildBattleRankTable10_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseCreateGuildBattleRankTable10_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseCreateGuildBattleRankTable10_user(_this, szDate, CRFWorldDatabaseCreateGuildBattleRankTable10_next);
         };
-        bool CRFWorldDatabaseCreate_PvpPointGuildRankTable12_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseCreate_PvpPointGuildRankTable12_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseCreate_PvpPointGuildRankTable12_user(_this, szDate, CRFWorldDatabaseCreate_PvpPointGuildRankTable12_next);
         };
-        bool CRFWorldDatabaseDeleteGuildBattleInfo14_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseDeleteGuildBattleInfo14_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseDeleteGuildBattleInfo14_user(_this, CRFWorldDatabaseDeleteGuildBattleInfo14_next);
         };
-        bool CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_user(_this, CRFWorldDatabaseDeleteGuildBattleScheduleInfo16_next);
         };
-        bool CRFWorldDatabaseDelete_CharacterData18_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
+        static bool CRFWorldDatabaseDelete_CharacterData18_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
         {
            return CRFWorldDatabaseDelete_CharacterData18_user(_this, dwCharacterSerial, CRFWorldDatabaseDelete_CharacterData18_next);
         };
-        bool CRFWorldDatabaseDelete_Guild20_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseDelete_Guild20_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseDelete_Guild20_user(_this, dwGuildSerial, CRFWorldDatabaseDelete_Guild20_next);
         };
-        bool CRFWorldDatabaseDelete_ItemCharge22_wrapper(struct CRFWorldDatabase* _this, unsigned int dwItemChargeIndex)
+        static bool CRFWorldDatabaseDelete_ItemCharge22_wrapper(struct CRFWorldDatabase* _this, unsigned int dwItemChargeIndex)
         {
            return CRFWorldDatabaseDelete_ItemCharge22_user(_this, dwItemChargeIndex, CRFWorldDatabaseDelete_ItemCharge22_next);
         };
-        char CRFWorldDatabaseDelete_PatriarchComm24_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pszDepDate)
+        static char CRFWorldDatabaseDelete_PatriarchComm24_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pszDepDate)
         {
            return CRFWorldDatabaseDelete_PatriarchComm24_user(_this, dwSerial, pszDepDate, CRFWorldDatabaseDelete_PatriarchComm24_next);
         };
-        bool CRFWorldDatabaseDelete_TrunkItemCharge26_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDBID)
+        static bool CRFWorldDatabaseDelete_TrunkItemCharge26_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDBID)
         {
            return CRFWorldDatabaseDelete_TrunkItemCharge26_user(_this, dwDBID, CRFWorldDatabaseDelete_TrunkItemCharge26_next);
         };
-        bool CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDBID)
+        static bool CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDBID)
         {
            return CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_user(_this, dwDBID, CRFWorldDatabaseDelete_TrunkItemCharge_Extend28_next);
         };
-        bool CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacSerial, char byType, char* szPrevClass, char* szNextClass, int nClassInitCnt, char byLastClassGrade, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
+        static bool CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacSerial, char byType, char* szPrevClass, char* szNextClass, int nClassInitCnt, char byLastClassGrade, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
         {
            return CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_user(_this, dwCharacSerial, byType, szPrevClass, szNextClass, nClassInitCnt, byLastClassGrade, dwYear, byMonth, byDay, byHour, byMin, bySec, CRFWorldDatabaseInsertChangeClassLogAfterInitClass30_next);
         };
-        bool CRFWorldDatabaseInsertCharacterSelectLog32_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* wszAccount, unsigned int dwCharacSerial, char* pwszCharacName, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
+        static bool CRFWorldDatabaseInsertCharacterSelectLog32_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* wszAccount, unsigned int dwCharacSerial, char* pwszCharacName, uint16_t dwYear, char byMonth, char byDay, char byHour, char byMin, char bySec)
         {
            return CRFWorldDatabaseInsertCharacterSelectLog32_user(_this, dwAccountSerial, wszAccount, dwCharacSerial, pwszCharacName, dwYear, byMonth, byDay, byHour, byMin, bySec, CRFWorldDatabaseInsertCharacterSelectLog32_next);
         };
-        bool CRFWorldDatabaseInsertGuildBattleDefaultRecord34_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt)
+        static bool CRFWorldDatabaseInsertGuildBattleDefaultRecord34_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt)
         {
            return CRFWorldDatabaseInsertGuildBattleDefaultRecord34_user(_this, dwRowCnt, CRFWorldDatabaseInsertGuildBattleDefaultRecord34_next);
         };
-        bool CRFWorldDatabaseInsertGuildBattleRankRecord36_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseInsertGuildBattleRankRecord36_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseInsertGuildBattleRankRecord36_user(_this, dwGuildSerial, CRFWorldDatabaseInsertGuildBattleRankRecord36_next);
         };
-        bool CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_wrapper(struct CRFWorldDatabase* _this, unsigned int uiDayCnt, unsigned int uiMapCnt, char byMaxHour, char byUnitTimeCntPerTime)
+        static bool CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_wrapper(struct CRFWorldDatabase* _this, unsigned int uiDayCnt, unsigned int uiMapCnt, char byMaxHour, char byUnitTimeCntPerTime)
         {
            return CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_user(_this, uiDayCnt, uiMapCnt, byMaxHour, byUnitTimeCntPerTime, CRFWorldDatabaseInsertGuildBattleScheduleDefaultRecord38_next);
         };
-        bool CRFWorldDatabaseInsert_AccountTrunk40_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
+        static bool CRFWorldDatabaseInsert_AccountTrunk40_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
         {
            return CRFWorldDatabaseInsert_AccountTrunk40_user(_this, dwAccountSerial, CRFWorldDatabaseInsert_AccountTrunk40_next);
         };
-        bool CRFWorldDatabaseInsert_AccountTrunkExtend42_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
+        static bool CRFWorldDatabaseInsert_AccountTrunkExtend42_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
         {
            return CRFWorldDatabaseInsert_AccountTrunkExtend42_user(_this, dwAccountSerial, CRFWorldDatabaseInsert_AccountTrunkExtend42_next);
         };
-        bool CRFWorldDatabaseInsert_AnimusData44_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pVal)
+        static bool CRFWorldDatabaseInsert_AnimusData44_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pVal)
         {
            return CRFWorldDatabaseInsert_AnimusData44_user(_this, dwSerial, pVal, CRFWorldDatabaseInsert_AnimusData44_next);
         };
-        bool CRFWorldDatabaseInsert_AnimusLog46_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszName, char byDID, long double dOrgVal, long double dChgVal)
+        static bool CRFWorldDatabaseInsert_AnimusLog46_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszName, char byDID, long double dOrgVal, long double dChgVal)
         {
            return CRFWorldDatabaseInsert_AnimusLog46_user(_this, dwSerial, wszName, byDID, dOrgVal, dChgVal, CRFWorldDatabaseInsert_AnimusLog46_next);
         };
-        bool CRFWorldDatabaseInsert_BossCryRecord48_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_BossCryRecord48_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_BossCryRecord48_user(_this, dwSerial, CRFWorldDatabaseInsert_BossCryRecord48_next);
         };
-        bool CRFWorldDatabaseInsert_Buddy50_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_Buddy50_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_Buddy50_user(_this, dwSerial, CRFWorldDatabaseInsert_Buddy50_next);
         };
-        bool CRFWorldDatabaseInsert_CashLimSale52_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseInsert_CashLimSale52_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseInsert_CashLimSale52_user(_this, CRFWorldDatabaseInsert_CashLimSale52_next);
         };
-        bool CRFWorldDatabaseInsert_CharacterData54_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, char* wszClassCode, unsigned int dwAccountSerial, char* wszAccount, char bySlotIndex, char byRaceSexCode, unsigned int dwBaseShape, int nMapIndex, unsigned int* pDwSerial)
+        static bool CRFWorldDatabaseInsert_CharacterData54_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, char* wszClassCode, unsigned int dwAccountSerial, char* wszAccount, char bySlotIndex, char byRaceSexCode, unsigned int dwBaseShape, int nMapIndex, unsigned int* pDwSerial)
         {
            return CRFWorldDatabaseInsert_CharacterData54_user(_this, pwszCharacterName, wszClassCode, dwAccountSerial, wszAccount, bySlotIndex, byRaceSexCode, dwBaseShape, nMapIndex, pDwSerial, CRFWorldDatabaseInsert_CharacterData54_next);
         };
-        bool CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_user(_this, CRFWorldDatabaseInsert_DefaultWeeklyGuildPvpPointSumRecord56_next);
         };
-        bool CRFWorldDatabaseInsert_Economy_History58_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
+        static bool CRFWorldDatabaseInsert_Economy_History58_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
         {
            return CRFWorldDatabaseInsert_Economy_History58_user(_this, dwDate, pEconomyData, CRFWorldDatabaseInsert_Economy_History58_next);
         };
-        bool CRFWorldDatabaseInsert_GoldenBoxItem60_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseInsert_GoldenBoxItem60_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseInsert_GoldenBoxItem60_user(_this, CRFWorldDatabaseInsert_GoldenBoxItem60_next);
         };
-        bool CRFWorldDatabaseInsert_GreetingRecord62_wrapper(struct CRFWorldDatabase* _this, int nUseType, char* wszName, char* wszMessage)
+        static bool CRFWorldDatabaseInsert_GreetingRecord62_wrapper(struct CRFWorldDatabase* _this, int nUseType, char* wszName, char* wszMessage)
         {
            return CRFWorldDatabaseInsert_GreetingRecord62_user(_this, nUseType, wszName, wszMessage, CRFWorldDatabaseInsert_GreetingRecord62_next);
         };
-        bool CRFWorldDatabaseInsert_GuidRoom64_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, char byRoomType, char byRace)
+        static bool CRFWorldDatabaseInsert_GuidRoom64_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, char byRoomType, char byRace)
         {
            return CRFWorldDatabaseInsert_GuidRoom64_user(_this, dwGuildSerial, byRoomType, byRace, CRFWorldDatabaseInsert_GuidRoom64_next);
         };
-        bool CRFWorldDatabaseInsert_Guild66_wrapper(struct CRFWorldDatabase* _this, char* pwszGuildName, char byRace)
+        static bool CRFWorldDatabaseInsert_Guild66_wrapper(struct CRFWorldDatabase* _this, char* pwszGuildName, char byRace)
         {
            return CRFWorldDatabaseInsert_Guild66_user(_this, pwszGuildName, byRace, CRFWorldDatabaseInsert_Guild66_next);
         };
-        bool CRFWorldDatabaseInsert_GuildBatlleResultLog68_wrapper(struct CRFWorldDatabase* _this, char* szStartTime, char* szEndTime, unsigned int dwRedSerial, char* wszRedName, unsigned int dwBlueSerial, char* wszBlueName, unsigned int dwRedScore, unsigned int dwBlueScore, unsigned int dwRedMaxJoinCnt, unsigned int dwBlueMaxJoinCnt, unsigned int dwRedGoalCntSum, unsigned int dwBlueGoalCntSum, unsigned int dwRedKillCntSum, unsigned int dwBlueKillCntSum, char byBattleResult, unsigned int dwMaxGoalCharacSerial, char* wszMaxGoalCharacName, unsigned int dwMaxKillCharacSerial, char* wszMaxKillCharacName, char byJoinLimit, unsigned int dwGuildBattleCostGold, char* szBattleMapCode)
+        static bool CRFWorldDatabaseInsert_GuildBatlleResultLog68_wrapper(struct CRFWorldDatabase* _this, char* szStartTime, char* szEndTime, unsigned int dwRedSerial, char* wszRedName, unsigned int dwBlueSerial, char* wszBlueName, unsigned int dwRedScore, unsigned int dwBlueScore, unsigned int dwRedMaxJoinCnt, unsigned int dwBlueMaxJoinCnt, unsigned int dwRedGoalCntSum, unsigned int dwBlueGoalCntSum, unsigned int dwRedKillCntSum, unsigned int dwBlueKillCntSum, char byBattleResult, unsigned int dwMaxGoalCharacSerial, char* wszMaxGoalCharacName, unsigned int dwMaxKillCharacSerial, char* wszMaxKillCharacName, char byJoinLimit, unsigned int dwGuildBattleCostGold, char* szBattleMapCode)
         {
            return CRFWorldDatabaseInsert_GuildBatlleResultLog68_user(_this, szStartTime, szEndTime, dwRedSerial, wszRedName, dwBlueSerial, wszBlueName, dwRedScore, dwBlueScore, dwRedMaxJoinCnt, dwBlueMaxJoinCnt, dwRedGoalCntSum, dwBlueGoalCntSum, dwRedKillCntSum, dwBlueKillCntSum, byBattleResult, dwMaxGoalCharacSerial, wszMaxGoalCharacName, dwMaxKillCharacSerial, wszMaxKillCharacName, byJoinLimit, dwGuildBattleCostGold, szBattleMapCode, CRFWorldDatabaseInsert_GuildBatlleResultLog68_next);
         };
-        bool CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_wrapper(struct CRFWorldDatabase* _this, char* szStartTime, char* szEndTime, unsigned int dwRedSerial, char* wszRedName, unsigned int dwBlueSerial, char* wszBlueName, unsigned int dwRedScore, unsigned int dwBlueScore, unsigned int dwRedMaxJoinCnt, unsigned int dwBlueMaxJoinCnt, unsigned int dwRedGoalCntSum, unsigned int dwBlueGoalCntSum, unsigned int dwRedKillCntSum, unsigned int dwBlueKillCntSum, char byBattleResult, unsigned int dwMaxGoalCharacSerial, char* wszMaxGoalCharacName, unsigned int dwMaxKillCharacSerial, char* wszMaxKillCharacName, char byJoinLimit, unsigned int dwGuildBattleCostGold, char* szBattleMapCode)
+        static bool CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_wrapper(struct CRFWorldDatabase* _this, char* szStartTime, char* szEndTime, unsigned int dwRedSerial, char* wszRedName, unsigned int dwBlueSerial, char* wszBlueName, unsigned int dwRedScore, unsigned int dwBlueScore, unsigned int dwRedMaxJoinCnt, unsigned int dwBlueMaxJoinCnt, unsigned int dwRedGoalCntSum, unsigned int dwBlueGoalCntSum, unsigned int dwRedKillCntSum, unsigned int dwBlueKillCntSum, char byBattleResult, unsigned int dwMaxGoalCharacSerial, char* wszMaxGoalCharacName, unsigned int dwMaxKillCharacSerial, char* wszMaxKillCharacName, char byJoinLimit, unsigned int dwGuildBattleCostGold, char* szBattleMapCode)
         {
            return CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_user(_this, szStartTime, szEndTime, dwRedSerial, wszRedName, dwBlueSerial, wszBlueName, dwRedScore, dwBlueScore, dwRedMaxJoinCnt, dwBlueMaxJoinCnt, dwRedGoalCntSum, dwBlueGoalCntSum, dwRedKillCntSum, dwBlueKillCntSum, byBattleResult, dwMaxGoalCharacSerial, wszMaxGoalCharacName, dwMaxKillCharacSerial, wszMaxKillCharacName, byJoinLimit, dwGuildBattleCostGold, szBattleMapCode, CRFWorldDatabaseInsert_GuildBatlleResultLogBattelInfo70_next);
         };
-        bool CRFWorldDatabaseInsert_GuildMoneyHistory72_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dInoutDalant, long double dInoutGold, long double dResultDalant, long double dResultGold, char* wszDate, unsigned int dwAvatorSerial, char* pwszName)
+        static bool CRFWorldDatabaseInsert_GuildMoneyHistory72_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dInoutDalant, long double dInoutGold, long double dResultDalant, long double dResultGold, char* wszDate, unsigned int dwAvatorSerial, char* pwszName)
         {
            return CRFWorldDatabaseInsert_GuildMoneyHistory72_user(_this, dwGuildSerial, dInoutDalant, dInoutGold, dResultDalant, dResultGold, wszDate, dwAvatorSerial, pwszName, CRFWorldDatabaseInsert_GuildMoneyHistory72_next);
         };
-        bool CRFWorldDatabaseInsert_ItemChargeInGame74_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, unsigned int dwItemCode_K, uint64_t dwItemCode_D, unsigned int dwItemCode_U, char byType)
+        static bool CRFWorldDatabaseInsert_ItemChargeInGame74_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, unsigned int dwItemCode_K, uint64_t dwItemCode_D, unsigned int dwItemCode_U, char byType)
         {
            return CRFWorldDatabaseInsert_ItemChargeInGame74_user(_this, dwAvatorSerial, dwItemCode_K, dwItemCode_D, dwItemCode_U, byType, CRFWorldDatabaseInsert_ItemChargeInGame74_next);
         };
-        bool CRFWorldDatabaseInsert_ItemCombineEx76_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
+        static bool CRFWorldDatabaseInsert_ItemCombineEx76_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
         {
            return CRFWorldDatabaseInsert_ItemCombineEx76_user(_this, dwCharacterSerial, CRFWorldDatabaseInsert_ItemCombineEx76_next);
         };
-        bool CRFWorldDatabaseInsert_Level_Log78_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, char byLevel, unsigned int dwTotalPlayMin)
+        static bool CRFWorldDatabaseInsert_Level_Log78_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, char byLevel, unsigned int dwTotalPlayMin)
         {
            return CRFWorldDatabaseInsert_Level_Log78_user(_this, dwCharacterSerial, byLevel, dwTotalPlayMin, CRFWorldDatabaseInsert_Level_Log78_next);
         };
-        bool CRFWorldDatabaseInsert_LimitItemRecord80_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwSerial)
+        static bool CRFWorldDatabaseInsert_LimitItemRecord80_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwSerial)
         {
            return CRFWorldDatabaseInsert_LimitItemRecord80_user(_this, pdwSerial, CRFWorldDatabaseInsert_LimitItemRecord80_next);
         };
-        bool CRFWorldDatabaseInsert_MacroData82_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_MacroData82_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_MacroData82_user(_this, dwSerial, CRFWorldDatabaseInsert_MacroData82_next);
         };
-        bool CRFWorldDatabaseInsert_NpcData84_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_NpcData84_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_NpcData84_user(_this, dwSerial, CRFWorldDatabaseInsert_NpcData84_next);
         };
-        bool CRFWorldDatabaseInsert_NpcData86_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
+        static bool CRFWorldDatabaseInsert_NpcData86_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
         {
            return CRFWorldDatabaseInsert_NpcData86_user(_this, dwSerial, pNpcData, CRFWorldDatabaseInsert_NpcData86_next);
         };
-        bool CRFWorldDatabaseInsert_NpcLog88_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszName, char byIndex, unsigned int dwOrgValue, unsigned int dwChgValue)
+        static bool CRFWorldDatabaseInsert_NpcLog88_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszName, char byIndex, unsigned int dwOrgValue, unsigned int dwChgValue)
         {
            return CRFWorldDatabaseInsert_NpcLog88_user(_this, dwSerial, pwszName, byIndex, dwOrgValue, dwChgValue, CRFWorldDatabaseInsert_NpcLog88_next);
         };
-        bool CRFWorldDatabaseInsert_NpcQuest_History90_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_NpcQuest_History90_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_NpcQuest_History90_user(_this, dwSerial, CRFWorldDatabaseInsert_NpcQuest_History90_next);
         };
-        bool CRFWorldDatabaseInsert_OreCutting92_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_OreCutting92_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_OreCutting92_user(_this, dwSerial, CRFWorldDatabaseInsert_OreCutting92_next);
         };
-        bool CRFWorldDatabaseInsert_OreReset_Log94_wrapper(struct CRFWorldDatabase* _this, char byType, int nLiveUsercnt, unsigned int dwOreRemain, unsigned int dwTAmount)
+        static bool CRFWorldDatabaseInsert_OreReset_Log94_wrapper(struct CRFWorldDatabase* _this, char byType, int nLiveUsercnt, unsigned int dwOreRemain, unsigned int dwTAmount)
         {
            return CRFWorldDatabaseInsert_OreReset_Log94_user(_this, byType, nLiveUsercnt, dwOreRemain, dwTAmount, CRFWorldDatabaseInsert_OreReset_Log94_next);
         };
-        bool CRFWorldDatabaseInsert_PSDefaultRecord96_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCum)
+        static bool CRFWorldDatabaseInsert_PSDefaultRecord96_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCum)
         {
            return CRFWorldDatabaseInsert_PSDefaultRecord96_user(_this, dwCum, CRFWorldDatabaseInsert_PSDefaultRecord96_next);
         };
-        char CRFWorldDatabaseInsert_PatriarchComm98_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszDepDate)
+        static char CRFWorldDatabaseInsert_PatriarchComm98_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszDepDate)
         {
            return CRFWorldDatabaseInsert_PatriarchComm98_user(_this, dwSerial, dwDalant, pszDepDate, CRFWorldDatabaseInsert_PatriarchComm98_next);
         };
-        bool CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_wrapper(struct CRFWorldDatabase* _this, char* szData)
+        static bool CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_wrapper(struct CRFWorldDatabase* _this, char* szData)
         {
            return CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_user(_this, szData, CRFWorldDatabaseInsert_PatrirchItemChargeRefund100_next);
         };
-        bool CRFWorldDatabaseInsert_PcBangFavorItem102_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_PcBangFavorItem102_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_PcBangFavorItem102_user(_this, dwSerial, CRFWorldDatabaseInsert_PcBangFavorItem102_next);
         };
-        bool CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
+        static bool CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial)
         {
            return CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_user(_this, dwAccountSerial, CRFWorldDatabaseInsert_PlayerTimeLimitInfo104_next);
         };
-        bool CRFWorldDatabaseInsert_PostStorageRecord106_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseInsert_PostStorageRecord106_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseInsert_PostStorageRecord106_user(_this, CRFWorldDatabaseInsert_PostStorageRecord106_next);
         };
-        bool CRFWorldDatabaseInsert_PotionDelay108_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_PotionDelay108_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_PotionDelay108_user(_this, dwSerial, CRFWorldDatabaseInsert_PotionDelay108_next);
         };
-        bool CRFWorldDatabaseInsert_PrimiumPlayTime110_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial)
+        static bool CRFWorldDatabaseInsert_PrimiumPlayTime110_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial)
         {
            return CRFWorldDatabaseInsert_PrimiumPlayTime110_user(_this, dwAccSerial, CRFWorldDatabaseInsert_PrimiumPlayTime110_next);
         };
-        bool CRFWorldDatabaseInsert_PvpOrderViewInfo112_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_PvpOrderViewInfo112_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_PvpOrderViewInfo112_user(_this, dwSerial, CRFWorldDatabaseInsert_PvpOrderViewInfo112_next);
         };
-        bool CRFWorldDatabaseInsert_PvpPointGuildRankData114_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseInsert_PvpPointGuildRankData114_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseInsert_PvpPointGuildRankData114_user(_this, szDate, CRFWorldDatabaseInsert_PvpPointGuildRankData114_next);
         };
-        bool CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_user(_this, dwSerial, CRFWorldDatabaseInsert_PvpPointLimitInfoRecord116_next);
         };
-        bool CRFWorldDatabaseInsert_Quest118_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_Quest118_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_Quest118_user(_this, dwSerial, CRFWorldDatabaseInsert_Quest118_next);
         };
-        bool CRFWorldDatabaseInsert_RFEvent_ClassRefine120_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial)
+        static bool CRFWorldDatabaseInsert_RFEvent_ClassRefine120_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial)
         {
            return CRFWorldDatabaseInsert_RFEvent_ClassRefine120_user(_this, dwAvatorSerial, CRFWorldDatabaseInsert_RFEvent_ClassRefine120_next);
         };
-        bool CRFWorldDatabaseInsert_RaceBattleLog122_wrapper(struct CRFWorldDatabase* _this, struct _race_battle_log_info* pInfo)
+        static bool CRFWorldDatabaseInsert_RaceBattleLog122_wrapper(struct CRFWorldDatabase* _this, struct _race_battle_log_info* pInfo)
         {
            return CRFWorldDatabaseInsert_RaceBattleLog122_user(_this, pInfo, CRFWorldDatabaseInsert_RaceBattleLog122_next);
         };
-        bool CRFWorldDatabaseInsert_RenamePotionLog124_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszOldName, char* wszNewName)
+        static bool CRFWorldDatabaseInsert_RenamePotionLog124_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszOldName, char* wszNewName)
         {
            return CRFWorldDatabaseInsert_RenamePotionLog124_user(_this, dwSerial, wszOldName, wszNewName, CRFWorldDatabaseInsert_RenamePotionLog124_next);
         };
-        bool CRFWorldDatabaseInsert_SFDelayInfo126_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
+        static bool CRFWorldDatabaseInsert_SFDelayInfo126_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
         {
            return CRFWorldDatabaseInsert_SFDelayInfo126_user(_this, dwSerial, pSFDelay, CRFWorldDatabaseInsert_SFDelayInfo126_next);
         };
-        bool CRFWorldDatabaseInsert_Set_Limit_Run128_wrapper(struct CRFWorldDatabase* _this, char* pData, int iSize)
+        static bool CRFWorldDatabaseInsert_Set_Limit_Run128_wrapper(struct CRFWorldDatabase* _this, char* pData, int iSize)
         {
            return CRFWorldDatabaseInsert_Set_Limit_Run128_user(_this, pData, iSize, CRFWorldDatabaseInsert_Set_Limit_Run128_next);
         };
-        bool CRFWorldDatabaseInsert_SettlementOwnerLog130_wrapper(struct CRFWorldDatabase* _this, char byNth, char byRace, unsigned int dwGuildSerial, char* wszGuildName, uint16_t wRank, char byGrade, long double dKillPvpPoint, long double dGuildBattlePvpPoint, unsigned int dwSumLv)
+        static bool CRFWorldDatabaseInsert_SettlementOwnerLog130_wrapper(struct CRFWorldDatabase* _this, char byNth, char byRace, unsigned int dwGuildSerial, char* wszGuildName, uint16_t wRank, char byGrade, long double dKillPvpPoint, long double dGuildBattlePvpPoint, unsigned int dwSumLv)
         {
            return CRFWorldDatabaseInsert_SettlementOwnerLog130_user(_this, byNth, byRace, dwGuildSerial, wszGuildName, wRank, byGrade, dKillPvpPoint, dGuildBattlePvpPoint, dwSumLv, CRFWorldDatabaseInsert_SettlementOwnerLog130_next);
         };
-        bool CRFWorldDatabaseInsert_Start_NpcQuest_History132_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szQuestCode, char byLevel, char* szTime, int64_t nEndTime)
+        static bool CRFWorldDatabaseInsert_Start_NpcQuest_History132_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szQuestCode, char byLevel, char* szTime, int64_t nEndTime)
         {
            return CRFWorldDatabaseInsert_Start_NpcQuest_History132_user(_this, dwSerial, szQuestCode, byLevel, szTime, nEndTime, CRFWorldDatabaseInsert_Start_NpcQuest_History132_next);
         };
-        bool CRFWorldDatabaseInsert_Supplement134_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_Supplement134_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_Supplement134_user(_this, dwSerial, CRFWorldDatabaseInsert_Supplement134_next);
         };
-        bool CRFWorldDatabaseInsert_Unit136_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
+        static bool CRFWorldDatabaseInsert_Unit136_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial)
         {
            return CRFWorldDatabaseInsert_Unit136_user(_this, dwCharacterSerial, CRFWorldDatabaseInsert_Unit136_next);
         };
-        bool CRFWorldDatabaseInsert_UnitData138_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
+        static bool CRFWorldDatabaseInsert_UnitData138_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
         {
            return CRFWorldDatabaseInsert_UnitData138_user(_this, dwSerial, pUnitData, CRFWorldDatabaseInsert_UnitData138_next);
         };
-        bool CRFWorldDatabaseInsert_UnitLog140_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszName, char byDID, long double dOrgVal, long double dChgVal)
+        static bool CRFWorldDatabaseInsert_UnitLog140_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* wszName, char byDID, long double dOrgVal, long double dChgVal)
         {
            return CRFWorldDatabaseInsert_UnitLog140_user(_this, dwSerial, wszName, byDID, dOrgVal, dChgVal, CRFWorldDatabaseInsert_UnitLog140_next);
         };
-        bool CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt, wchar_t** ppwszStr)
+        static bool CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt, wchar_t** ppwszStr)
         {
            return CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_user(_this, dwRowCnt, ppwszStr, CRFWorldDatabaseInsert_UnmannedTraderItemStateRecord142_next);
         };
-        bool CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt)
+        static bool CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRowCnt)
         {
            return CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_user(_this, dwRowCnt, CRFWorldDatabaseInsert_UnmannedTraderSingleDefaultRecord144_next);
         };
-        bool CRFWorldDatabaseInsert_UserInterface146_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_UserInterface146_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_UserInterface146_user(_this, dwSerial, CRFWorldDatabaseInsert_UserInterface146_next);
         };
-        bool CRFWorldDatabaseInsert_UserNum_Log148_wrapper(struct CRFWorldDatabase* _this, int nAvgUserNum, int nMaxUserNum)
+        static bool CRFWorldDatabaseInsert_UserNum_Log148_wrapper(struct CRFWorldDatabase* _this, int nAvgUserNum, int nMaxUserNum)
         {
            return CRFWorldDatabaseInsert_UserNum_Log148_user(_this, nAvgUserNum, nMaxUserNum, CRFWorldDatabaseInsert_UserNum_Log148_next);
         };
-        bool CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_user(_this, dwSerial, CRFWorldDatabaseInsert_WeeklyGuildPvpPointSum150_next);
         };
-        bool CRFWorldDatabaseLoadGreetingMsg152_wrapper(struct CRFWorldDatabase* _this, char* pwszGMGreetingmsg, char* pwszRaceGreetingmsgA, char* pwszRaceGreetingmsgB, char* pwszRaceGreetingmsgC, char* pwszGMName, char* pwszNameA, char* pwszNameB, char* pwszNameC)
+        static bool CRFWorldDatabaseLoadGreetingMsg152_wrapper(struct CRFWorldDatabase* _this, char* pwszGMGreetingmsg, char* pwszRaceGreetingmsgA, char* pwszRaceGreetingmsgB, char* pwszRaceGreetingmsgC, char* pwszGMName, char* pwszNameA, char* pwszNameB, char* pwszNameC)
         {
            return CRFWorldDatabaseLoadGreetingMsg152_user(_this, pwszGMGreetingmsg, pwszRaceGreetingmsgA, pwszRaceGreetingmsgB, pwszRaceGreetingmsgC, pwszGMName, pwszNameA, pwszNameB, pwszNameC, CRFWorldDatabaseLoadGreetingMsg152_next);
         };
-        bool CRFWorldDatabaseLoadGuildBattleInfo154_wrapper(struct CRFWorldDatabase* _this, unsigned int dwStartID, unsigned int dwRowCnt, struct _worlddb_guild_battle_info* pkInfo)
+        static bool CRFWorldDatabaseLoadGuildBattleInfo154_wrapper(struct CRFWorldDatabase* _this, unsigned int dwStartID, unsigned int dwRowCnt, struct _worlddb_guild_battle_info* pkInfo)
         {
            return CRFWorldDatabaseLoadGuildBattleInfo154_user(_this, dwStartID, dwRowCnt, pkInfo, CRFWorldDatabaseLoadGuildBattleInfo154_next);
         };
-        char CRFWorldDatabaseLoadGuildBattleScheduleInfo156_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartListID, unsigned int uiScheduleUnitCnt, struct _worlddb_guild_battle_schedule_list* pkInfo)
+        static char CRFWorldDatabaseLoadGuildBattleScheduleInfo156_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartListID, unsigned int uiScheduleUnitCnt, struct _worlddb_guild_battle_schedule_list* pkInfo)
         {
            return CRFWorldDatabaseLoadGuildBattleScheduleInfo156_user(_this, uiStartListID, uiScheduleUnitCnt, pkInfo, CRFWorldDatabaseLoadGuildBattleScheduleInfo156_next);
         };
-        bool CRFWorldDatabaseRebirth_Base158_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, char* pwszName)
+        static bool CRFWorldDatabaseRebirth_Base158_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, char* pwszName)
         {
            return CRFWorldDatabaseRebirth_Base158_user(_this, dwCharacterSerial, pwszName, CRFWorldDatabaseRebirth_Base158_next);
         };
-        bool CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo, bool bInsertRecord)
+        static bool CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo, bool bInsertRecord)
         {
            return CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_user(_this, dwRegSerial, kInfo, bInsertRecord, CRFWorldDatabaseRegist_UnmannedTraderSingleItem160_next);
         };
-        bool CRFWorldDatabaseSelectAllGuildSerial162_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCount, unsigned int* pdwSerial)
+        static bool CRFWorldDatabaseSelectAllGuildSerial162_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCount, unsigned int* pdwSerial)
         {
            return CRFWorldDatabaseSelectAllGuildSerial162_user(_this, pdwCount, pdwSerial, CRFWorldDatabaseSelectAllGuildSerial162_next);
         };
-        bool CRFWorldDatabaseSelectAllGuildSerialGrade164_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCount, unsigned int* pdwSerial, char* pbyGrade)
+        static bool CRFWorldDatabaseSelectAllGuildSerialGrade164_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCount, unsigned int* pdwSerial, char* pbyGrade)
         {
            return CRFWorldDatabaseSelectAllGuildSerialGrade164_user(_this, pdwCount, pdwSerial, pbyGrade, CRFWorldDatabaseSelectAllGuildSerialGrade164_next);
         };
-        bool CRFWorldDatabaseSelectGuildBattleRankList166_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _worlddb_guild_battle_rank_list* pkInfo)
+        static bool CRFWorldDatabaseSelectGuildBattleRankList166_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _worlddb_guild_battle_rank_list* pkInfo)
         {
            return CRFWorldDatabaseSelectGuildBattleRankList166_user(_this, byRace, pkInfo, CRFWorldDatabaseSelectGuildBattleRankList166_next);
         };
-        bool CRFWorldDatabaseSelectGuildBattleRankRecord168_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseSelectGuildBattleRankRecord168_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseSelectGuildBattleRankRecord168_user(_this, dwGuildSerial, CRFWorldDatabaseSelectGuildBattleRankRecord168_next);
         };
-        bool CRFWorldDatabaseSelectGuildBattleRerservedList170_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartSLID, unsigned int uiEndSLID, struct _worlddb_guild_battle_reserved_schedule_info* pkInfo)
+        static bool CRFWorldDatabaseSelectGuildBattleRerservedList170_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartSLID, unsigned int uiEndSLID, struct _worlddb_guild_battle_reserved_schedule_info* pkInfo)
         {
            return CRFWorldDatabaseSelectGuildBattleRerservedList170_user(_this, uiStartSLID, uiEndSLID, pkInfo, CRFWorldDatabaseSelectGuildBattleRerservedList170_next);
         };
-        char CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID)
+        static char CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID)
         {
            return CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_user(_this, dwID, CRFWorldDatabaseSelectGuildBattleScheduleInfoID172_next);
         };
-        int CRFWorldDatabaseSelectRowCountGuildBattleInfo174_wrapper(struct CRFWorldDatabase* _this)
+        static int CRFWorldDatabaseSelectRowCountGuildBattleInfo174_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelectRowCountGuildBattleInfo174_user(_this, CRFWorldDatabaseSelectRowCountGuildBattleInfo174_next);
         };
-        int CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_wrapper(struct CRFWorldDatabase* _this)
+        static int CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_user(_this, CRFWorldDatabaseSelectRowCountGuildBattleScheduleInfo176_next);
         };
-        bool CRFWorldDatabaseSelect_AccountByAvatorName178_wrapper(struct CRFWorldDatabase* _this, char* pwszAvatorName, char* szAccount)
+        static bool CRFWorldDatabaseSelect_AccountByAvatorName178_wrapper(struct CRFWorldDatabase* _this, char* pwszAvatorName, char* szAccount)
         {
            return CRFWorldDatabaseSelect_AccountByAvatorName178_user(_this, pwszAvatorName, szAccount, CRFWorldDatabaseSelect_AccountByAvatorName178_next);
         };
-        bool CRFWorldDatabaseSelect_AccountItemCharge180_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* pbyType, long double* pdMoney, unsigned int* pdwItemCode_K, uint64_t* pdwItemCode_D, unsigned int* pdwItemCode_U, char* pbyRace, unsigned int* pdwDBID, int* piTime)
+        static bool CRFWorldDatabaseSelect_AccountItemCharge180_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* pbyType, long double* pdMoney, unsigned int* pdwItemCode_K, uint64_t* pdwItemCode_D, unsigned int* pdwItemCode_U, char* pbyRace, unsigned int* pdwDBID, int* piTime)
         {
            return CRFWorldDatabaseSelect_AccountItemCharge180_user(_this, dwAccountSerial, pbyType, pdMoney, pdwItemCode_K, pdwItemCode_D, pdwItemCode_U, pbyRace, pdwDBID, piTime, CRFWorldDatabaseSelect_AccountItemCharge180_next);
         };
-        bool CRFWorldDatabaseSelect_AccountItemCharge_Extend182_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* pbyType, unsigned int* pdwItemCode_K, uint64_t* pdwItemCode_D, unsigned int* pdwItemCode_U, char* pbyRace, unsigned int* pdwDBID, int* piTime)
+        static bool CRFWorldDatabaseSelect_AccountItemCharge_Extend182_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* pbyType, unsigned int* pdwItemCode_K, uint64_t* pdwItemCode_D, unsigned int* pdwItemCode_U, char* pbyRace, unsigned int* pdwDBID, int* piTime)
         {
            return CRFWorldDatabaseSelect_AccountItemCharge_Extend182_user(_this, dwAccountSerial, pbyType, pdwItemCode_K, pdwItemCode_D, pdwItemCode_U, pbyRace, pdwDBID, piTime, CRFWorldDatabaseSelect_AccountItemCharge_Extend182_next);
         };
-        bool CRFWorldDatabaseSelect_AccountSerial184_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, char* szAccount, unsigned int* pSerial)
+        static bool CRFWorldDatabaseSelect_AccountSerial184_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, char* szAccount, unsigned int* pSerial)
         {
            return CRFWorldDatabaseSelect_AccountSerial184_user(_this, pwszCharacterName, szAccount, pSerial, CRFWorldDatabaseSelect_AccountSerial184_next);
         };
-        char CRFWorldDatabaseSelect_AccountTrunk186_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char byRace, struct _worlddb_trunk_info* pTrunkData)
+        static char CRFWorldDatabaseSelect_AccountTrunk186_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char byRace, struct _worlddb_trunk_info* pTrunkData)
         {
            return CRFWorldDatabaseSelect_AccountTrunk186_user(_this, dwAccountSerial, byRace, pTrunkData, CRFWorldDatabaseSelect_AccountTrunk186_next);
         };
-        char CRFWorldDatabaseSelect_AccountTrunkExtend188_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_trunk_info* pTrunkData)
+        static char CRFWorldDatabaseSelect_AccountTrunkExtend188_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_trunk_info* pTrunkData)
         {
            return CRFWorldDatabaseSelect_AccountTrunkExtend188_user(_this, dwAccountSerial, pTrunkData, CRFWorldDatabaseSelect_AccountTrunkExtend188_next);
         };
-        bool CRFWorldDatabaseSelect_AllGuildData190_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_guild_info* pGuildInfo)
+        static bool CRFWorldDatabaseSelect_AllGuildData190_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_guild_info* pGuildInfo)
         {
            return CRFWorldDatabaseSelect_AllGuildData190_user(_this, pGuildInfo, CRFWorldDatabaseSelect_AllGuildData190_next);
         };
-        uint16_t CRFWorldDatabaseSelect_AllGuildNum192_wrapper(struct CRFWorldDatabase* _this)
+        static uint16_t CRFWorldDatabaseSelect_AllGuildNum192_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelect_AllGuildNum192_user(_this, CRFWorldDatabaseSelect_AllGuildNum192_next);
         };
-        char CRFWorldDatabaseSelect_AnimusData194_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, long double* pAnimusData)
+        static char CRFWorldDatabaseSelect_AnimusData194_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, long double* pAnimusData)
         {
            return CRFWorldDatabaseSelect_AnimusData194_user(_this, dwSerial, byRace, pAnimusData, CRFWorldDatabaseSelect_AnimusData194_next);
         };
-        bool CRFWorldDatabaseSelect_ArrangeInfo196_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseSelect_ArrangeInfo196_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseSelect_ArrangeInfo196_user(_this, dwSerial, CRFWorldDatabaseSelect_ArrangeInfo196_next);
         };
-        char CRFWorldDatabaseSelect_BattleResultLogLatest198_wrapper(struct CRFWorldDatabase* _this, unsigned int* pkLogSerial)
+        static char CRFWorldDatabaseSelect_BattleResultLogLatest198_wrapper(struct CRFWorldDatabase* _this, unsigned int* pkLogSerial)
         {
            return CRFWorldDatabaseSelect_BattleResultLogLatest198_user(_this, pkLogSerial, CRFWorldDatabaseSelect_BattleResultLogLatest198_next);
         };
-        bool CRFWorldDatabaseSelect_BattleTournamentInfo200_wrapper(struct CRFWorldDatabase* _this, struct TournamentWinner* pWinnerInfo, int nMax)
+        static bool CRFWorldDatabaseSelect_BattleTournamentInfo200_wrapper(struct CRFWorldDatabase* _this, struct TournamentWinner* pWinnerInfo, int nMax)
         {
            return CRFWorldDatabaseSelect_BattleTournamentInfo200_user(_this, pWinnerInfo, nMax, CRFWorldDatabaseSelect_BattleTournamentInfo200_next);
         };
-        char CRFWorldDatabaseSelect_BossCryMsg202_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_crymsg_info* pCryMsg)
+        static char CRFWorldDatabaseSelect_BossCryMsg202_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_crymsg_info* pCryMsg)
         {
            return CRFWorldDatabaseSelect_BossCryMsg202_user(_this, dwSerial, pCryMsg, CRFWorldDatabaseSelect_BossCryMsg202_next);
         };
-        char CRFWorldDatabaseSelect_Buddy204_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_buddy_info* pBuddyData)
+        static char CRFWorldDatabaseSelect_Buddy204_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_buddy_info* pBuddyData)
         {
            return CRFWorldDatabaseSelect_Buddy204_user(_this, dwSerial, pBuddyData, CRFWorldDatabaseSelect_Buddy204_next);
         };
-        int CRFWorldDatabaseSelect_CashLimSale206_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_cash_limited_sale* pcashlimitedsale)
+        static int CRFWorldDatabaseSelect_CashLimSale206_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_cash_limited_sale* pcashlimitedsale)
         {
            return CRFWorldDatabaseSelect_CashLimSale206_user(_this, pcashlimitedsale, CRFWorldDatabaseSelect_CashLimSale206_next);
         };
-        char CRFWorldDatabaseSelect_CharNumInWorld208_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* byCharNum)
+        static char CRFWorldDatabaseSelect_CharNumInWorld208_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, char* byCharNum)
         {
            return CRFWorldDatabaseSelect_CharNumInWorld208_user(_this, dwAccountSerial, byCharNum, CRFWorldDatabaseSelect_CharNumInWorld208_next);
         };
-        char CRFWorldDatabaseSelect_CharacterBaseInfo210_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_character_base_info* pCharacterData)
+        static char CRFWorldDatabaseSelect_CharacterBaseInfo210_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_character_base_info* pCharacterData)
         {
            return CRFWorldDatabaseSelect_CharacterBaseInfo210_user(_this, dwCharacterSerial, pCharacterData, CRFWorldDatabaseSelect_CharacterBaseInfo210_next);
         };
-        char CRFWorldDatabaseSelect_CharacterBaseInfoByName212_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, struct _worlddb_character_base_info* pCharacterData)
+        static char CRFWorldDatabaseSelect_CharacterBaseInfoByName212_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, struct _worlddb_character_base_info* pCharacterData)
         {
            return CRFWorldDatabaseSelect_CharacterBaseInfoByName212_user(_this, pwszCharacterName, pCharacterData, CRFWorldDatabaseSelect_CharacterBaseInfoByName212_next);
         };
-        char CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_character_base_info_array* pCharacterDataArray)
+        static char CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_character_base_info_array* pCharacterDataArray)
         {
            return CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_user(_this, dwAccountSerial, pCharacterDataArray, CRFWorldDatabaseSelect_CharacterBaseInfoBySerial214_next);
         };
-        char CRFWorldDatabaseSelect_CharacterGeneralInfo216_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_character_general_info* pCharacterData)
+        static char CRFWorldDatabaseSelect_CharacterGeneralInfo216_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_character_general_info* pCharacterData)
         {
            return CRFWorldDatabaseSelect_CharacterGeneralInfo216_user(_this, dwCharacterSerial, pCharacterData, CRFWorldDatabaseSelect_CharacterGeneralInfo216_next);
         };
-        bool CRFWorldDatabaseSelect_CharacterName218_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszCharacterName, char* szAccount)
+        static bool CRFWorldDatabaseSelect_CharacterName218_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszCharacterName, char* szAccount)
         {
            return CRFWorldDatabaseSelect_CharacterName218_user(_this, dwSerial, pwszCharacterName, szAccount, CRFWorldDatabaseSelect_CharacterName218_next);
         };
-        bool CRFWorldDatabaseSelect_CharacterReName220_wrapper(struct CRFWorldDatabase* _this, char* pwszName, unsigned int* pSerial)
+        static bool CRFWorldDatabaseSelect_CharacterReName220_wrapper(struct CRFWorldDatabase* _this, char* pwszName, unsigned int* pSerial)
         {
            return CRFWorldDatabaseSelect_CharacterReName220_user(_this, pwszName, pSerial, CRFWorldDatabaseSelect_CharacterReName220_next);
         };
-        bool CRFWorldDatabaseSelect_CharacterSerial222_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, unsigned int* pSerial)
+        static bool CRFWorldDatabaseSelect_CharacterSerial222_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, unsigned int* pSerial)
         {
            return CRFWorldDatabaseSelect_CharacterSerial222_user(_this, pwszCharacterName, pSerial, CRFWorldDatabaseSelect_CharacterSerial222_next);
         };
-        bool CRFWorldDatabaseSelect_CharactersInfo224_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_character_array_info* pCharacterData)
+        static bool CRFWorldDatabaseSelect_CharactersInfo224_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_character_array_info* pCharacterData)
         {
            return CRFWorldDatabaseSelect_CharactersInfo224_user(_this, dwAccountSerial, pCharacterData, CRFWorldDatabaseSelect_CharactersInfo224_next);
         };
-        char CRFWorldDatabaseSelect_CheckGreetRecord226_wrapper(struct CRFWorldDatabase* _this, int nUseType)
+        static char CRFWorldDatabaseSelect_CheckGreetRecord226_wrapper(struct CRFWorldDatabase* _this, int nUseType)
         {
            return CRFWorldDatabaseSelect_CheckGreetRecord226_user(_this, nUseType, CRFWorldDatabaseSelect_CheckGreetRecord226_next);
         };
-        bool CRFWorldDatabaseSelect_CheckSumValue228_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pdwCheckSum)
+        static bool CRFWorldDatabaseSelect_CheckSumValue228_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pdwCheckSum)
         {
            return CRFWorldDatabaseSelect_CheckSumValue228_user(_this, dwSerial, pdwCheckSum, CRFWorldDatabaseSelect_CheckSumValue228_next);
         };
-        bool CRFWorldDatabaseSelect_ChracterSerialRace230_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, unsigned int* pSerial, char* pbyRace)
+        static bool CRFWorldDatabaseSelect_ChracterSerialRace230_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName, unsigned int* pSerial, char* pbyRace)
         {
            return CRFWorldDatabaseSelect_ChracterSerialRace230_user(_this, pwszCharacterName, pSerial, pbyRace, CRFWorldDatabaseSelect_ChracterSerialRace230_next);
         };
-        int CRFWorldDatabaseSelect_ClearHonorGuild232_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int* dwSerial)
+        static int CRFWorldDatabaseSelect_ClearHonorGuild232_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int* dwSerial)
         {
            return CRFWorldDatabaseSelect_ClearHonorGuild232_user(_this, byRace, dwSerial, CRFWorldDatabaseSelect_ClearHonorGuild232_next);
         };
-        char CRFWorldDatabaseSelect_Economy_History234_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_economy_history_info_array* pEconomyData, unsigned int dwDate)
+        static char CRFWorldDatabaseSelect_Economy_History234_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_economy_history_info_array* pEconomyData, unsigned int dwDate)
         {
            return CRFWorldDatabaseSelect_Economy_History234_user(_this, pEconomyData, dwDate, CRFWorldDatabaseSelect_Economy_History234_next);
         };
-        bool CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName)
+        static bool CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName)
         {
            return CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_user(_this, pwszCharacterName, CRFWorldDatabaseSelect_Equal_DeleteName_NoArranged236_next);
         };
-        bool CRFWorldDatabaseSelect_Equal_Name238_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName)
+        static bool CRFWorldDatabaseSelect_Equal_Name238_wrapper(struct CRFWorldDatabase* _this, char* pwszCharacterName)
         {
            return CRFWorldDatabaseSelect_Equal_Name238_user(_this, pwszCharacterName, CRFWorldDatabaseSelect_Equal_Name238_next);
         };
-        char CRFWorldDatabaseSelect_Exist_Economy240_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
+        static char CRFWorldDatabaseSelect_Exist_Economy240_wrapper(struct CRFWorldDatabase* _this, unsigned int dwDate, struct _worlddb_economy_history_info_array::_worlddb_economy_history_info* pEconomyData)
         {
            return CRFWorldDatabaseSelect_Exist_Economy240_user(_this, dwDate, pEconomyData, CRFWorldDatabaseSelect_Exist_Economy240_next);
         };
-        int CRFWorldDatabaseSelect_FailBattleCount242_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
+        static int CRFWorldDatabaseSelect_FailBattleCount242_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
         {
            return CRFWorldDatabaseSelect_FailBattleCount242_user(_this, byRace, dwSerial, dwCount, CRFWorldDatabaseSelect_FailBattleCount242_next);
         };
-        int CRFWorldDatabaseSelect_GetCharSerialByNameRace244_wrapper(struct CRFWorldDatabase* _this, char* pwszName, char byRace, unsigned int* pSerial)
+        static int CRFWorldDatabaseSelect_GetCharSerialByNameRace244_wrapper(struct CRFWorldDatabase* _this, char* pwszName, char byRace, unsigned int* pSerial)
         {
            return CRFWorldDatabaseSelect_GetCharSerialByNameRace244_user(_this, pwszName, byRace, pSerial, CRFWorldDatabaseSelect_GetCharSerialByNameRace244_next);
         };
-        int CRFWorldDatabaseSelect_GodenBoxItem246_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_golden_box_item* goldenboxitem, int* pnSerial)
+        static int CRFWorldDatabaseSelect_GodenBoxItem246_wrapper(struct CRFWorldDatabase* _this, struct _worlddb_golden_box_item* goldenboxitem, int* pnSerial)
         {
            return CRFWorldDatabaseSelect_GodenBoxItem246_user(_this, goldenboxitem, pnSerial, CRFWorldDatabaseSelect_GodenBoxItem246_next);
         };
-        bool CRFWorldDatabaseSelect_GuildBattleRecord248_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _guildbattle_totalrecord* pkInfo)
+        static bool CRFWorldDatabaseSelect_GuildBattleRecord248_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _guildbattle_totalrecord* pkInfo)
         {
            return CRFWorldDatabaseSelect_GuildBattleRecord248_user(_this, dwSerial, pkInfo, CRFWorldDatabaseSelect_GuildBattleRecord248_next);
         };
-        bool CRFWorldDatabaseSelect_GuildData250_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_guild_info::__guild_info* pGuildData)
+        static bool CRFWorldDatabaseSelect_GuildData250_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_guild_info::__guild_info* pGuildData)
         {
            return CRFWorldDatabaseSelect_GuildData250_user(_this, dwGuildSerial, pGuildData, CRFWorldDatabaseSelect_GuildData250_next);
         };
-        char CRFWorldDatabaseSelect_GuildMasterLastConn252_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwLimitConnTime, unsigned int* pdwLastConnTime)
+        static char CRFWorldDatabaseSelect_GuildMasterLastConn252_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwLimitConnTime, unsigned int* pdwLastConnTime)
         {
            return CRFWorldDatabaseSelect_GuildMasterLastConn252_user(_this, dwSerial, dwLimitConnTime, pdwLastConnTime, CRFWorldDatabaseSelect_GuildMasterLastConn252_next);
         };
-        bool CRFWorldDatabaseSelect_GuildMemberData254_wrapper(struct CRFWorldDatabase* _this, uint16_t wMaxMember, unsigned int dwGuildSerial, struct _worlddb_guild_member_info* pGuildMemberInfo)
+        static bool CRFWorldDatabaseSelect_GuildMemberData254_wrapper(struct CRFWorldDatabase* _this, uint16_t wMaxMember, unsigned int dwGuildSerial, struct _worlddb_guild_member_info* pGuildMemberInfo)
         {
            return CRFWorldDatabaseSelect_GuildMemberData254_user(_this, wMaxMember, dwGuildSerial, pGuildMemberInfo, CRFWorldDatabaseSelect_GuildMemberData254_next);
         };
-        bool CRFWorldDatabaseSelect_GuildMoneyIOData256_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_guild_money_io_info* pGuildIOData)
+        static bool CRFWorldDatabaseSelect_GuildMoneyIOData256_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_guild_money_io_info* pGuildIOData)
         {
            return CRFWorldDatabaseSelect_GuildMoneyIOData256_user(_this, dwGuildSerial, pGuildIOData, CRFWorldDatabaseSelect_GuildMoneyIOData256_next);
         };
-        bool CRFWorldDatabaseSelect_GuildRoomInfo258_wrapper(struct CRFWorldDatabase* _this, struct _guildroom_info* pInfo)
+        static bool CRFWorldDatabaseSelect_GuildRoomInfo258_wrapper(struct CRFWorldDatabase* _this, struct _guildroom_info* pInfo)
         {
            return CRFWorldDatabaseSelect_GuildRoomInfo258_user(_this, pInfo, CRFWorldDatabaseSelect_GuildRoomInfo258_next);
         };
-        bool CRFWorldDatabaseSelect_GuildSerial260_wrapper(struct CRFWorldDatabase* _this, char* pwszGuildName, unsigned int* pdwGuildSerial)
+        static bool CRFWorldDatabaseSelect_GuildSerial260_wrapper(struct CRFWorldDatabase* _this, char* pwszGuildName, unsigned int* pdwGuildSerial)
         {
            return CRFWorldDatabaseSelect_GuildSerial260_user(_this, pwszGuildName, pdwGuildSerial, CRFWorldDatabaseSelect_GuildSerial260_next);
         };
-        int CRFWorldDatabaseSelect_HonorGuild262_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _guild_honor_list_result_zocl* pOutList, bool bNext)
+        static int CRFWorldDatabaseSelect_HonorGuild262_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _guild_honor_list_result_zocl* pOutList, bool bNext)
         {
            return CRFWorldDatabaseSelect_HonorGuild262_user(_this, byRace, pOutList, bNext, CRFWorldDatabaseSelect_HonorGuild262_next);
         };
-        char CRFWorldDatabaseSelect_Inven264_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, uint16_t wBagCount, struct _worlddb_inven_info* pInvenData)
+        static char CRFWorldDatabaseSelect_Inven264_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, uint16_t wBagCount, struct _worlddb_inven_info* pInvenData)
         {
            return CRFWorldDatabaseSelect_Inven264_user(_this, dwCharacterSerial, wBagCount, pInvenData, CRFWorldDatabaseSelect_Inven264_next);
         };
-        int CRFWorldDatabaseSelect_IsValidChar266_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* dwDbSerial)
+        static int CRFWorldDatabaseSelect_IsValidChar266_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* dwDbSerial)
         {
            return CRFWorldDatabaseSelect_IsValidChar266_user(_this, dwSerial, dwDbSerial, CRFWorldDatabaseSelect_IsValidChar266_next);
         };
-        bool CRFWorldDatabaseSelect_ItemCharge268_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char* pbyType, unsigned int* pDwItemCode_K, uint64_t* pDwItemCode_D, unsigned int* pDwItemCode_U, unsigned int* pDwItemChargeIndex, int* piTime)
+        static bool CRFWorldDatabaseSelect_ItemCharge268_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char* pbyType, unsigned int* pDwItemCode_K, uint64_t* pDwItemCode_D, unsigned int* pDwItemCode_U, unsigned int* pDwItemChargeIndex, int* piTime)
         {
            return CRFWorldDatabaseSelect_ItemCharge268_user(_this, dwAvatorSerial, pbyType, pDwItemCode_K, pDwItemCode_D, pDwItemCode_U, pDwItemChargeIndex, piTime, CRFWorldDatabaseSelect_ItemCharge268_next);
         };
-        char CRFWorldDatabaseSelect_ItemCombineEx270_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_itemcombineex_info* pdbItemCombineExInfo)
+        static char CRFWorldDatabaseSelect_ItemCombineEx270_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_itemcombineex_info* pdbItemCombineExInfo)
         {
            return CRFWorldDatabaseSelect_ItemCombineEx270_user(_this, dwSerial, pdbItemCombineExInfo, CRFWorldDatabaseSelect_ItemCombineEx270_next);
         };
-        char CRFWorldDatabaseSelect_LimitInfo272_wrapper(struct CRFWorldDatabase* _this, char* pData, uint64_t tDataSize)
+        static char CRFWorldDatabaseSelect_LimitInfo272_wrapper(struct CRFWorldDatabase* _this, char* pData, uint64_t tDataSize)
         {
            return CRFWorldDatabaseSelect_LimitInfo272_user(_this, pData, tDataSize, CRFWorldDatabaseSelect_LimitInfo272_next);
         };
-        char CRFWorldDatabaseSelect_LimitItemEmptyRecord274_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwSerial)
+        static char CRFWorldDatabaseSelect_LimitItemEmptyRecord274_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwSerial)
         {
            return CRFWorldDatabaseSelect_LimitItemEmptyRecord274_user(_this, pdwSerial, CRFWorldDatabaseSelect_LimitItemEmptyRecord274_next);
         };
-        char CRFWorldDatabaseSelect_LimitItemUsedRecord276_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwTypeSerial, unsigned int dwStoreInx, unsigned int* pdwSerial)
+        static char CRFWorldDatabaseSelect_LimitItemUsedRecord276_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwTypeSerial, unsigned int dwStoreInx, unsigned int* pdwSerial)
         {
            return CRFWorldDatabaseSelect_LimitItemUsedRecord276_user(_this, byType, dwTypeSerial, dwStoreInx, pdwSerial, CRFWorldDatabaseSelect_LimitItemUsedRecord276_next);
         };
-        char CRFWorldDatabaseSelect_Limit_Run_Record278_wrapper(struct CRFWorldDatabase* _this)
+        static char CRFWorldDatabaseSelect_Limit_Run_Record278_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelect_Limit_Run_Record278_user(_this, CRFWorldDatabaseSelect_Limit_Run_Record278_next);
         };
-        int CRFWorldDatabaseSelect_LoseBattleCount280_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
+        static int CRFWorldDatabaseSelect_LoseBattleCount280_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
         {
            return CRFWorldDatabaseSelect_LoseBattleCount280_user(_this, byRace, dwSerial, dwCount, CRFWorldDatabaseSelect_LoseBattleCount280_next);
         };
-        char CRFWorldDatabaseSelect_MacroData282_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
+        static char CRFWorldDatabaseSelect_MacroData282_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
         {
            return CRFWorldDatabaseSelect_MacroData282_user(_this, dwSerial, pMacro, CRFWorldDatabaseSelect_MacroData282_next);
         };
-        char CRFWorldDatabaseSelect_NotArrangeCharacter284_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_arrange_char_info* pCharData)
+        static char CRFWorldDatabaseSelect_NotArrangeCharacter284_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_arrange_char_info* pCharData)
         {
            return CRFWorldDatabaseSelect_NotArrangeCharacter284_user(_this, dwAccountSerial, pCharData, CRFWorldDatabaseSelect_NotArrangeCharacter284_next);
         };
-        char CRFWorldDatabaseSelect_NpcData286_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
+        static char CRFWorldDatabaseSelect_NpcData286_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
         {
            return CRFWorldDatabaseSelect_NpcData286_user(_this, dwSerial, pNpcData, CRFWorldDatabaseSelect_NpcData286_next);
         };
-        char CRFWorldDatabaseSelect_NpcQuest_History288_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_npc_quest_complete_history* pNpcQHis)
+        static char CRFWorldDatabaseSelect_NpcQuest_History288_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_npc_quest_complete_history* pNpcQHis)
         {
            return CRFWorldDatabaseSelect_NpcQuest_History288_user(_this, dwSerial, pNpcQHis, CRFWorldDatabaseSelect_NpcQuest_History288_next);
         };
-        int CRFWorldDatabaseSelect_OldVerPatriarchGroup290_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _candidate_info* p)
+        static int CRFWorldDatabaseSelect_OldVerPatriarchGroup290_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _candidate_info* p)
         {
            return CRFWorldDatabaseSelect_OldVerPatriarchGroup290_user(_this, byRace, p, CRFWorldDatabaseSelect_OldVerPatriarchGroup290_next);
         };
-        int CRFWorldDatabaseSelect_OreCutting292_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_ore_cutting* pOreCutting)
+        static int CRFWorldDatabaseSelect_OreCutting292_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_ore_cutting* pOreCutting)
         {
            return CRFWorldDatabaseSelect_OreCutting292_user(_this, dwSerial, pOreCutting, CRFWorldDatabaseSelect_OreCutting292_next);
         };
-        char CRFWorldDatabaseSelect_PatriarchCandidate294_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, struct _candidate_info* p)
+        static char CRFWorldDatabaseSelect_PatriarchCandidate294_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, struct _candidate_info* p)
         {
            return CRFWorldDatabaseSelect_PatriarchCandidate294_user(_this, dwSerial, byRace, p, CRFWorldDatabaseSelect_PatriarchCandidate294_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchComm296_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _patriarch_comm_list* pOutList)
+        static int CRFWorldDatabaseSelect_PatriarchComm296_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _patriarch_comm_list* pOutList)
         {
            return CRFWorldDatabaseSelect_PatriarchComm296_user(_this, dwSerial, pOutList, CRFWorldDatabaseSelect_PatriarchComm296_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchCommCount298_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pszDate, unsigned int* dwCnt)
+        static int CRFWorldDatabaseSelect_PatriarchCommCount298_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pszDate, unsigned int* dwCnt)
         {
            return CRFWorldDatabaseSelect_PatriarchCommCount298_user(_this, dwSerial, pszDate, dwCnt, CRFWorldDatabaseSelect_PatriarchCommCount298_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchElectState300_wrapper(struct CRFWorldDatabase* _this, struct _sel_patriarch_elect_state* pSheet)
+        static int CRFWorldDatabaseSelect_PatriarchElectState300_wrapper(struct CRFWorldDatabase* _this, struct _sel_patriarch_elect_state* pSheet)
         {
            return CRFWorldDatabaseSelect_PatriarchElectState300_user(_this, pSheet, CRFWorldDatabaseSelect_PatriarchElectState300_next);
         };
-        char CRFWorldDatabaseSelect_PatriarchGroup302_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _candidate_info* p)
+        static char CRFWorldDatabaseSelect_PatriarchGroup302_wrapper(struct CRFWorldDatabase* _this, char byRace, struct _candidate_info* p)
         {
            return CRFWorldDatabaseSelect_PatriarchGroup302_user(_this, byRace, p, CRFWorldDatabaseSelect_PatriarchGroup302_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchRefundCount304_wrapper(struct CRFWorldDatabase* _this, char byRaceCode, unsigned int dwAvatorSerial, unsigned int* dwCnt)
+        static int CRFWorldDatabaseSelect_PatriarchRefundCount304_wrapper(struct CRFWorldDatabase* _this, char byRaceCode, unsigned int dwAvatorSerial, unsigned int* dwCnt)
         {
            return CRFWorldDatabaseSelect_PatriarchRefundCount304_user(_this, byRaceCode, dwAvatorSerial, dwCnt, CRFWorldDatabaseSelect_PatriarchRefundCount304_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchVoted306_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, bool* bOverlapVote)
+        static int CRFWorldDatabaseSelect_PatriarchVoted306_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, bool* bOverlapVote)
         {
            return CRFWorldDatabaseSelect_PatriarchVoted306_user(_this, byRace, dwSerial, bOverlapVote, CRFWorldDatabaseSelect_PatriarchVoted306_next);
         };
-        int CRFWorldDatabaseSelect_PatriarchWinCnt308_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwAvatorSerial, unsigned int* dwWinCnt)
+        static int CRFWorldDatabaseSelect_PatriarchWinCnt308_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwAvatorSerial, unsigned int* dwWinCnt)
         {
            return CRFWorldDatabaseSelect_PatriarchWinCnt308_user(_this, byRace, dwAvatorSerial, dwWinCnt, CRFWorldDatabaseSelect_PatriarchWinCnt308_next);
         };
-        int CRFWorldDatabaseSelect_PcBangFavorItem310_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_pcbang_favor_item* pPcBangFavorItem)
+        static int CRFWorldDatabaseSelect_PcBangFavorItem310_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_pcbang_favor_item* pPcBangFavorItem)
         {
            return CRFWorldDatabaseSelect_PcBangFavorItem310_user(_this, dwSerial, pPcBangFavorItem, CRFWorldDatabaseSelect_PcBangFavorItem310_next);
         };
-        int CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_time_limit_info* pTimeLimiInfo)
+        static int CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _worlddb_time_limit_info* pTimeLimiInfo)
         {
            return CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_user(_this, dwAccountSerial, pTimeLimiInfo, CRFWorldDatabaseSelect_PlayerTimeLimitInfo312_next);
         };
-        int CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, unsigned int* pdwFatigue, char* pbyStatus)
+        static int CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, unsigned int* pdwFatigue, char* pbyStatus)
         {
            return CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_user(_this, dwAccountSerial, pdwFatigue, pbyStatus, CRFWorldDatabaseSelect_PlayerTimeLimitInfo314_next);
         };
-        int CRFWorldDatabaseSelect_Player_Last_LogoutTime316_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, unsigned int* pdwLastLogoutTime)
+        static int CRFWorldDatabaseSelect_Player_Last_LogoutTime316_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, unsigned int* pdwLastLogoutTime)
         {
            return CRFWorldDatabaseSelect_Player_Last_LogoutTime316_user(_this, dwAccSerial, pdwLastLogoutTime, CRFWorldDatabaseSelect_Player_Last_LogoutTime316_next);
         };
-        char CRFWorldDatabaseSelect_PostContent318_wrapper(struct CRFWorldDatabase* _this, unsigned int dwPostSerial, char* wszContent, int nSize)
+        static char CRFWorldDatabaseSelect_PostContent318_wrapper(struct CRFWorldDatabase* _this, unsigned int dwPostSerial, char* wszContent, int nSize)
         {
            return CRFWorldDatabaseSelect_PostContent318_user(_this, dwPostSerial, wszContent, nSize, CRFWorldDatabaseSelect_PostContent318_next);
         };
-        char CRFWorldDatabaseSelect_PostRecvSerialFromName320_wrapper(struct CRFWorldDatabase* _this, char* wszRecvName, unsigned int* pdwOutSerial, unsigned int* pdwAccSerial, unsigned int* pdwRace)
+        static char CRFWorldDatabaseSelect_PostRecvSerialFromName320_wrapper(struct CRFWorldDatabase* _this, char* wszRecvName, unsigned int* pdwOutSerial, unsigned int* pdwAccSerial, unsigned int* pdwRace)
         {
            return CRFWorldDatabaseSelect_PostRecvSerialFromName320_user(_this, wszRecvName, pdwOutSerial, pdwAccSerial, pdwRace, CRFWorldDatabaseSelect_PostRecvSerialFromName320_next);
         };
-        int CRFWorldDatabaseSelect_PostRecvStorageCheck322_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static int CRFWorldDatabaseSelect_PostRecvStorageCheck322_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseSelect_PostRecvStorageCheck322_user(_this, dwSerial, CRFWorldDatabaseSelect_PostRecvStorageCheck322_next);
         };
-        char CRFWorldDatabaseSelect_PostRegistryData324_wrapper(struct CRFWorldDatabase* _this, unsigned int dwMax, struct CPostData* pPostData)
+        static char CRFWorldDatabaseSelect_PostRegistryData324_wrapper(struct CRFWorldDatabase* _this, unsigned int dwMax, struct CPostData* pPostData)
         {
            return CRFWorldDatabaseSelect_PostRegistryData324_user(_this, dwMax, pPostData, CRFWorldDatabaseSelect_PostRegistryData324_next);
         };
-        int CRFWorldDatabaseSelect_PostStorageEmptyRecord326_wrapper(struct CRFWorldDatabase* _this)
+        static int CRFWorldDatabaseSelect_PostStorageEmptyRecord326_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelect_PostStorageEmptyRecord326_user(_this, CRFWorldDatabaseSelect_PostStorageEmptyRecord326_next);
         };
-        bool CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwStorageSerial)
+        static bool CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwStorageSerial)
         {
            return CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_user(_this, pdwStorageSerial, CRFWorldDatabaseSelect_PostStorageEmptyRecordSerial328_next);
         };
-        char CRFWorldDatabaseSelect_PostStorageList330_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, struct _post_storage_list* pListData)
+        static char CRFWorldDatabaseSelect_PostStorageList330_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, struct _post_storage_list* pListData)
         {
            return CRFWorldDatabaseSelect_PostStorageList330_user(_this, dwOwner, pListData, CRFWorldDatabaseSelect_PostStorageList330_next);
         };
-        bool CRFWorldDatabaseSelect_PostStorageRecordCheck332_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseSelect_PostStorageRecordCheck332_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelect_PostStorageRecordCheck332_user(_this, CRFWorldDatabaseSelect_PostStorageRecordCheck332_next);
         };
-        int CRFWorldDatabaseSelect_PotionDelay334_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_potion_delay_info* pPotionDelayInfo)
+        static int CRFWorldDatabaseSelect_PotionDelay334_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_potion_delay_info* pPotionDelayInfo)
         {
            return CRFWorldDatabaseSelect_PotionDelay334_user(_this, dwSerial, pPotionDelayInfo, CRFWorldDatabaseSelect_PotionDelay334_next);
         };
-        int CRFWorldDatabaseSelect_PrimiumPlayTime336_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, struct _PCBANG_PLAY_TIME* kInfo)
+        static int CRFWorldDatabaseSelect_PrimiumPlayTime336_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, struct _PCBANG_PLAY_TIME* kInfo)
         {
            return CRFWorldDatabaseSelect_PrimiumPlayTime336_user(_this, dwAccSerial, kInfo, CRFWorldDatabaseSelect_PrimiumPlayTime336_next);
         };
-        int CRFWorldDatabaseSelect_Punishment338_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* dwESerial, unsigned int* dwValue)
+        static int CRFWorldDatabaseSelect_Punishment338_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* dwESerial, unsigned int* dwValue)
         {
            return CRFWorldDatabaseSelect_Punishment338_user(_this, dwSerial, dwESerial, dwValue, CRFWorldDatabaseSelect_Punishment338_next);
         };
-        int CRFWorldDatabaseSelect_PunishmentCount340_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwAvatorSerial, unsigned int* pdwCnt)
+        static int CRFWorldDatabaseSelect_PunishmentCount340_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwAvatorSerial, unsigned int* pdwCnt)
         {
            return CRFWorldDatabaseSelect_PunishmentCount340_user(_this, byType, dwAvatorSerial, pdwCnt, CRFWorldDatabaseSelect_PunishmentCount340_next);
         };
-        int CRFWorldDatabaseSelect_PvpOrderViewInfo342_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _pvporderview_info* kInfo)
+        static int CRFWorldDatabaseSelect_PvpOrderViewInfo342_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _pvporderview_info* kInfo)
         {
            return CRFWorldDatabaseSelect_PvpOrderViewInfo342_user(_this, dwSerial, kInfo, CRFWorldDatabaseSelect_PvpOrderViewInfo342_next);
         };
-        char CRFWorldDatabaseSelect_PvpPointGuildRank344_wrapper(struct CRFWorldDatabase* _this, char* szDate, struct _pvppoint_guild_rank_info* pkInfo)
+        static char CRFWorldDatabaseSelect_PvpPointGuildRank344_wrapper(struct CRFWorldDatabase* _this, char* szDate, struct _pvppoint_guild_rank_info* pkInfo)
         {
            return CRFWorldDatabaseSelect_PvpPointGuildRank344_user(_this, szDate, pkInfo, CRFWorldDatabaseSelect_PvpPointGuildRank344_next);
         };
-        char CRFWorldDatabaseSelect_PvpPointLimitInfo346_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _pvppointlimit_info* kInfo)
+        static char CRFWorldDatabaseSelect_PvpPointLimitInfo346_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _pvppointlimit_info* kInfo)
         {
            return CRFWorldDatabaseSelect_PvpPointLimitInfo346_user(_this, dwSerial, kInfo, CRFWorldDatabaseSelect_PvpPointLimitInfo346_next);
         };
-        char CRFWorldDatabaseSelect_PvpRankInfo348_wrapper(struct CRFWorldDatabase* _this, char byRace, char* szDate, struct _PVP_RANK_DATA* rankData)
+        static char CRFWorldDatabaseSelect_PvpRankInfo348_wrapper(struct CRFWorldDatabase* _this, char byRace, char* szDate, struct _PVP_RANK_DATA* rankData)
         {
            return CRFWorldDatabaseSelect_PvpRankInfo348_user(_this, byRace, szDate, rankData, CRFWorldDatabaseSelect_PvpRankInfo348_next);
         };
-        char CRFWorldDatabaseSelect_PvpRate350_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szDate, unsigned int* pdwRank, uint16_t* pwRankRate)
+        static char CRFWorldDatabaseSelect_PvpRate350_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szDate, unsigned int* pdwRank, uint16_t* pwRankRate)
         {
            return CRFWorldDatabaseSelect_PvpRate350_user(_this, dwSerial, szDate, pdwRank, pwRankRate, CRFWorldDatabaseSelect_PvpRate350_next);
         };
-        char CRFWorldDatabaseSelect_Quest352_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_quest_array* questData)
+        static char CRFWorldDatabaseSelect_Quest352_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_quest_array* questData)
         {
            return CRFWorldDatabaseSelect_Quest352_user(_this, dwSerial, questData, CRFWorldDatabaseSelect_Quest352_next);
         };
-        int CRFWorldDatabaseSelect_RFEvent_ClassRefine354_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char* byRefinedCnt, unsigned int* dwRefineDate)
+        static int CRFWorldDatabaseSelect_RFEvent_ClassRefine354_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char* byRefinedCnt, unsigned int* dwRefineDate)
         {
            return CRFWorldDatabaseSelect_RFEvent_ClassRefine354_user(_this, dwAvatorSerial, byRefinedCnt, dwRefineDate, CRFWorldDatabaseSelect_RFEvent_ClassRefine354_next);
         };
-        char CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwBossSerial, struct _raceboss_acc_winrate* windata)
+        static char CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwBossSerial, struct _raceboss_acc_winrate* windata)
         {
            return CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_user(_this, byRace, dwBossSerial, windata, CRFWorldDatabaseSelect_RaceBossAccumulationWinRate356_next);
         };
-        char CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_wrapper(struct CRFWorldDatabase* _this, char byRace, char* szDate, unsigned int* dwTotalCnt, unsigned int* dwWinCnt)
+        static char CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_wrapper(struct CRFWorldDatabase* _this, char byRace, char* szDate, unsigned int* dwTotalCnt, unsigned int* dwWinCnt)
         {
            return CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_user(_this, byRace, szDate, dwTotalCnt, dwWinCnt, CRFWorldDatabaseSelect_RaceBossCurrentWinRate358_next);
         };
-        char CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _rege_char_data* pRegeCharData)
+        static char CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccountSerial, struct _rege_char_data* pRegeCharData)
         {
            return CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_user(_this, dwAccountSerial, pRegeCharData, CRFWorldDatabaseSelect_RegeAvator_For_Lobby_Logout360_next);
         };
-        char CRFWorldDatabaseSelect_ReturnPost362_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, unsigned int dwMax, struct _return_post_list* pRetData)
+        static char CRFWorldDatabaseSelect_ReturnPost362_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, unsigned int dwMax, struct _return_post_list* pRetData)
         {
            return CRFWorldDatabaseSelect_ReturnPost362_user(_this, dwOwner, dwMax, pRetData, CRFWorldDatabaseSelect_ReturnPost362_next);
         };
-        char CRFWorldDatabaseSelect_SFDelayInfo364_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
+        static char CRFWorldDatabaseSelect_SFDelayInfo364_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
         {
            return CRFWorldDatabaseSelect_SFDelayInfo364_user(_this, dwSerial, pSFDelay, CRFWorldDatabaseSelect_SFDelayInfo364_next);
         };
-        char CRFWorldDatabaseSelect_Start_NpcQuest_History366_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_start_npc_quest_complete_history* pNpcQHis, unsigned int dwCount)
+        static char CRFWorldDatabaseSelect_Start_NpcQuest_History366_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_start_npc_quest_complete_history* pNpcQHis, unsigned int dwCount)
         {
            return CRFWorldDatabaseSelect_Start_NpcQuest_History366_user(_this, dwSerial, pNpcQHis, dwCount, CRFWorldDatabaseSelect_Start_NpcQuest_History366_next);
         };
-        char CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pdwCount)
+        static char CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pdwCount)
         {
            return CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_user(_this, dwSerial, pdwCount, CRFWorldDatabaseSelect_Start_NpcQuest_History_Count368_next);
         };
-        char CRFWorldDatabaseSelect_StoreLimitItem370_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_all_store_limit_item* pData)
+        static char CRFWorldDatabaseSelect_StoreLimitItem370_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_all_store_limit_item* pData)
         {
            return CRFWorldDatabaseSelect_StoreLimitItem370_user(_this, pData, CRFWorldDatabaseSelect_StoreLimitItem370_next);
         };
-        int CRFWorldDatabaseSelect_Supplement372_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
+        static int CRFWorldDatabaseSelect_Supplement372_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
         {
            return CRFWorldDatabaseSelect_Supplement372_user(_this, dwSerial, pSupplement, CRFWorldDatabaseSelect_Supplement372_next);
         };
-        int CRFWorldDatabaseSelect_Supplement_ActPoint374_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
+        static int CRFWorldDatabaseSelect_Supplement_ActPoint374_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
         {
            return CRFWorldDatabaseSelect_Supplement_ActPoint374_user(_this, dwSerial, pSupplement, CRFWorldDatabaseSelect_Supplement_ActPoint374_next);
         };
-        int CRFWorldDatabaseSelect_Supplement_Ex376_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
+        static int CRFWorldDatabaseSelect_Supplement_Ex376_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_character_supplement_info* pSupplement)
         {
            return CRFWorldDatabaseSelect_Supplement_Ex376_user(_this, dwSerial, pSupplement, CRFWorldDatabaseSelect_Supplement_Ex376_next);
         };
-        char CRFWorldDatabaseSelect_TakeItem378_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, struct _worlddb_item_list* itemList)
+        static char CRFWorldDatabaseSelect_TakeItem378_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, struct _worlddb_item_list* itemList)
         {
            return CRFWorldDatabaseSelect_TakeItem378_user(_this, dwAvatorSerial, itemList, CRFWorldDatabaseSelect_TakeItem378_next);
         };
-        char CRFWorldDatabaseSelect_TotalGuildRank380_wrapper(struct CRFWorldDatabase* _this, char* szDate, struct _total_guild_rank_info* pkInfo)
+        static char CRFWorldDatabaseSelect_TotalGuildRank380_wrapper(struct CRFWorldDatabase* _this, char* szDate, struct _total_guild_rank_info* pkInfo)
         {
            return CRFWorldDatabaseSelect_TotalGuildRank380_user(_this, szDate, pkInfo, CRFWorldDatabaseSelect_TotalGuildRank380_next);
         };
-        char CRFWorldDatabaseSelect_TotalRecordNum382_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwTotalNum)
+        static char CRFWorldDatabaseSelect_TotalRecordNum382_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwTotalNum)
         {
            return CRFWorldDatabaseSelect_TotalRecordNum382_user(_this, pdwTotalNum, CRFWorldDatabaseSelect_TotalRecordNum382_next);
         };
-        char CRFWorldDatabaseSelect_Trade384_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwSerial, char byRace, struct _worlddb_trade_info* pTradeData)
+        static char CRFWorldDatabaseSelect_Trade384_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwSerial, char byRace, struct _worlddb_trade_info* pTradeData)
         {
            return CRFWorldDatabaseSelect_Trade384_user(_this, byType, dwSerial, byRace, pTradeData, CRFWorldDatabaseSelect_Trade384_next);
         };
-        bool CRFWorldDatabaseSelect_TrunkMoney386_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pVal)
+        static bool CRFWorldDatabaseSelect_TrunkMoney386_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pVal)
         {
            return CRFWorldDatabaseSelect_TrunkMoney386_user(_this, dwSerial, pVal, CRFWorldDatabaseSelect_TrunkMoney386_next);
         };
-        char CRFWorldDatabaseSelect_Unit388_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_unit_info_array* pUnitInfo)
+        static char CRFWorldDatabaseSelect_Unit388_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharacterSerial, struct _worlddb_unit_info_array* pUnitInfo)
         {
            return CRFWorldDatabaseSelect_Unit388_user(_this, dwCharacterSerial, pUnitInfo, CRFWorldDatabaseSelect_Unit388_next);
         };
-        char CRFWorldDatabaseSelect_UnitData390_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
+        static char CRFWorldDatabaseSelect_UnitData390_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
         {
            return CRFWorldDatabaseSelect_UnitData390_user(_this, dwSerial, pUnitData, CRFWorldDatabaseSelect_UnitData390_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, struct _unmannedtrader_buy_item_info* kData)
+        static char CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, struct _unmannedtrader_buy_item_info* kData)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_user(_this, byType, dwRegistSerial, kData, CRFWorldDatabaseSelect_UnmannedTraderBuySingleItemInfo392_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_wrapper(struct CRFWorldDatabase* _this, char byType, char byState, unsigned int* pdwSerial, uint16_t wMaxCnt, uint16_t* pwRecordCnt)
+        static char CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_wrapper(struct CRFWorldDatabase* _this, char byType, char byState, unsigned int* pdwSerial, uint16_t wMaxCnt, uint16_t* pwRecordCnt)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_user(_this, byType, byState, pdwSerial, wMaxCnt, pwRecordCnt, CRFWorldDatabaseSelect_UnmannedTraderItemRecordCntByState394_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderItemState396_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char* byState)
+        static char CRFWorldDatabaseSelect_UnmannedTraderItemState396_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char* byState)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderItemState396_user(_this, byType, dwRegistSerial, byState, CRFWorldDatabaseSelect_UnmannedTraderItemState396_next);
         };
-        int CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_wrapper(struct CRFWorldDatabase* _this, struct _unmannedtrader_stade_id_info* pkInfo, unsigned int dwMaxCnt)
+        static int CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_wrapper(struct CRFWorldDatabase* _this, struct _unmannedtrader_stade_id_info* pkInfo, unsigned int dwMaxCnt)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_user(_this, pkInfo, dwMaxCnt, CRFWorldDatabaseSelect_UnmannedTraderItemStateInfo398_next);
         };
-        int CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCnt)
+        static int CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwCnt)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_user(_this, pdwCnt, CRFWorldDatabaseSelect_UnmannedTraderItemStateInfoCnt400_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderRegister402_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, unsigned int* pdwRegister)
+        static char CRFWorldDatabaseSelect_UnmannedTraderRegister402_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, unsigned int* pdwRegister)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderRegister402_user(_this, byType, dwRegistSerial, pdwRegister, CRFWorldDatabaseSelect_UnmannedTraderRegister402_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_wrapper(struct CRFWorldDatabase* _this, unsigned int dwMaxCnt, struct _unmannedtrader_reserved_schedule_info* pkInfo)
+        static char CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_wrapper(struct CRFWorldDatabase* _this, unsigned int dwMaxCnt, struct _unmannedtrader_reserved_schedule_info* pkInfo)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_user(_this, dwMaxCnt, pkInfo, CRFWorldDatabaseSelect_UnmannedTraderReservedSchedule404_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, char byClass1, char byClass2, char byClass3, unsigned int* dwCount)
+        static char CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, char byClass1, char byClass2, char byClass3, unsigned int* dwCount)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_user(_this, byType, byRace, byClass1, byClass2, byClass3, dwCount, CRFWorldDatabaseSelect_UnmannedTraderSearchGroupTotalRowCount406_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, char byClass1, char byClass2, char byClass3, unsigned int dwMaxRowCount, unsigned int dwExcludeRowCount, char* szSortQuery, struct _unmannedtrader_page_info* pkInfo)
+        static char CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, char byClass1, char byClass2, char byClass3, unsigned int dwMaxRowCount, unsigned int dwExcludeRowCount, char* szSortQuery, struct _unmannedtrader_page_info* pkInfo)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_user(_this, byType, byRace, byClass1, byClass2, byClass3, dwMaxRowCount, dwExcludeRowCount, szSortQuery, pkInfo, CRFWorldDatabaseSelect_UnmannedTraderSearchPageInfo408_next);
         };
-        char CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byRace, struct _unmannedtrader_seller_info* kData)
+        static char CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byRace, struct _unmannedtrader_seller_info* kData)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_user(_this, byType, dwRegistSerial, byRace, kData, CRFWorldDatabaseSelect_UnmannedTraderSellInfo410_next);
         };
-        bool CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_wrapper(struct CRFWorldDatabase* _this, unsigned int* dwSerial)
+        static bool CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_wrapper(struct CRFWorldDatabase* _this, unsigned int* dwSerial)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_user(_this, dwSerial, CRFWorldDatabaseSelect_UnmannedTraderSingleItemBottomSerial412_next);
         };
-        int CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_wrapper(struct CRFWorldDatabase* _this)
+        static int CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_user(_this, CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordCnt414_next);
         };
-        int CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_wrapper(struct CRFWorldDatabase* _this, unsigned int* dwSerial)
+        static int CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_wrapper(struct CRFWorldDatabase* _this, unsigned int* dwSerial)
         {
            return CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_user(_this, dwSerial, CRFWorldDatabaseSelect_UnmannedTraderSingleItemEmptyRecordSerial416_next);
         };
-        char CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwUsedNum)
+        static char CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_wrapper(struct CRFWorldDatabase* _this, unsigned int* pdwUsedNum)
         {
            return CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_user(_this, pdwUsedNum, CRFWorldDatabaseSelect_UsedLimitItemRecordNum418_next);
         };
-        bool CRFWorldDatabaseSelect_UserCountInfo420_wrapper(struct CRFWorldDatabase* _this, char* szStartDate, char* szEndDate, struct _worlddb_user_count_info* pUserCountData)
+        static bool CRFWorldDatabaseSelect_UserCountInfo420_wrapper(struct CRFWorldDatabase* _this, char* szStartDate, char* szEndDate, struct _worlddb_user_count_info* pUserCountData)
         {
            return CRFWorldDatabaseSelect_UserCountInfo420_user(_this, szStartDate, szEndDate, pUserCountData, CRFWorldDatabaseSelect_UserCountInfo420_next);
         };
-        char CRFWorldDatabaseSelect_UserInterface422_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_userinterface_info* pUserinterfaceInfo)
+        static char CRFWorldDatabaseSelect_UserInterface422_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_userinterface_info* pUserinterfaceInfo)
         {
            return CRFWorldDatabaseSelect_UserInterface422_user(_this, dwSerial, pUserinterfaceInfo, CRFWorldDatabaseSelect_UserInterface422_next);
         };
-        char CRFWorldDatabaseSelect_WaitItem424_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, struct _worlddb_item_list* itemList)
+        static char CRFWorldDatabaseSelect_WaitItem424_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, struct _worlddb_item_list* itemList)
         {
            return CRFWorldDatabaseSelect_WaitItem424_user(_this, dwAvatorSerial, itemList, CRFWorldDatabaseSelect_WaitItem424_next);
         };
-        char CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_wrapper(struct CRFWorldDatabase* _this, char* szDate, char byRace, char byLimitCnt, struct _weeklyguildrank_owner_info* pkInfo)
+        static char CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_wrapper(struct CRFWorldDatabase* _this, char* szDate, char byRace, char byLimitCnt, struct _weeklyguildrank_owner_info* pkInfo)
         {
            return CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_user(_this, szDate, byRace, byLimitCnt, pkInfo, CRFWorldDatabaseSelect_WeeklyGuildRankOwnerGuild426_next);
         };
-        int CRFWorldDatabaseSelect_WinBattleCount428_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
+        static int CRFWorldDatabaseSelect_WinBattleCount428_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, unsigned int* dwCount)
         {
            return CRFWorldDatabaseSelect_WinBattleCount428_user(_this, byRace, dwSerial, dwCount, CRFWorldDatabaseSelect_WinBattleCount428_next);
         };
-        char CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwOwnor, unsigned int* pSalesTotals)
+        static char CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwOwnor, unsigned int* pSalesTotals)
         {
            return CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_user(_this, byType, dwOwnor, pSalesTotals, CRFWorldDatabaseSelect_utSellWaitItems_SalesTotals430_next);
         };
-        bool CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_user(_this, CRFWorldDatabaseTruncate_UnmannedTraderItemStateRecord432_next);
         };
-        bool CRFWorldDatabaseUpdateClearGuildBattleInfo434_wrapper(struct CRFWorldDatabase* _this, unsigned int dwStartID, unsigned int dwEndID)
+        static bool CRFWorldDatabaseUpdateClearGuildBattleInfo434_wrapper(struct CRFWorldDatabase* _this, unsigned int dwStartID, unsigned int dwEndID)
         {
            return CRFWorldDatabaseUpdateClearGuildBattleInfo434_user(_this, dwStartID, dwEndID, CRFWorldDatabaseUpdateClearGuildBattleInfo434_next);
         };
-        bool CRFWorldDatabaseUpdateClearGuildBattleRank436_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdateClearGuildBattleRank436_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdateClearGuildBattleRank436_user(_this, CRFWorldDatabaseUpdateClearGuildBattleRank436_next);
         };
-        bool CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartListID, unsigned int uiEndListID)
+        static bool CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_wrapper(struct CRFWorldDatabase* _this, unsigned int uiStartListID, unsigned int uiEndListID)
         {
            return CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_user(_this, uiStartListID, uiEndListID, CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo438_next);
         };
-        bool CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID)
+        static bool CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID)
         {
            return CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_user(_this, dwID, CRFWorldDatabaseUpdateClearGuildBattleScheduleInfo440_next);
         };
-        bool CRFWorldDatabaseUpdateDrawGuildBattleResult442_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
+        static bool CRFWorldDatabaseUpdateDrawGuildBattleResult442_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
         {
            return CRFWorldDatabaseUpdateDrawGuildBattleResult442_user(_this, dwGuildSerial, dwScore, CRFWorldDatabaseUpdateDrawGuildBattleResult442_next);
         };
-        bool CRFWorldDatabaseUpdateGuildBattleInfo444_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID, unsigned int dwP1GuildSerial, unsigned int dwP2GuildSerial, unsigned int dwMapID, char byNumber)
+        static bool CRFWorldDatabaseUpdateGuildBattleInfo444_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID, unsigned int dwP1GuildSerial, unsigned int dwP2GuildSerial, unsigned int dwMapID, char byNumber)
         {
            return CRFWorldDatabaseUpdateGuildBattleInfo444_user(_this, dwID, dwP1GuildSerial, dwP2GuildSerial, dwMapID, byNumber, CRFWorldDatabaseUpdateGuildBattleInfo444_next);
         };
-        bool CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID, unsigned int dwSLID, char byState, int64_t tStartTime, uint16_t wTurmMin)
+        static bool CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_wrapper(struct CRFWorldDatabase* _this, unsigned int dwID, unsigned int dwSLID, char byState, int64_t tStartTime, uint16_t wTurmMin)
         {
            return CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_user(_this, dwID, dwSLID, byState, tStartTime, wTurmMin, CRFWorldDatabaseUpdateGuildBattleScheduleInfo446_next);
         };
-        bool CRFWorldDatabaseUpdateGuildMoney448_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dDalant, long double dGold)
+        static bool CRFWorldDatabaseUpdateGuildMoney448_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dDalant, long double dGold)
         {
            return CRFWorldDatabaseUpdateGuildMoney448_user(_this, dwSerial, dDalant, dGold, CRFWorldDatabaseUpdateGuildMoney448_next);
         };
-        bool CRFWorldDatabaseUpdateLoseGuildBattleResult450_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
+        static bool CRFWorldDatabaseUpdateLoseGuildBattleResult450_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
         {
            return CRFWorldDatabaseUpdateLoseGuildBattleResult450_user(_this, dwGuildSerial, dwScore, CRFWorldDatabaseUpdateLoseGuildBattleResult450_next);
         };
-        bool CRFWorldDatabaseUpdateServerResetToken452_wrapper(struct CRFWorldDatabase* _this, unsigned int dwToken, uint16_t wProcType, unsigned int dwESerial)
+        static bool CRFWorldDatabaseUpdateServerResetToken452_wrapper(struct CRFWorldDatabase* _this, unsigned int dwToken, uint16_t wProcType, unsigned int dwESerial)
         {
            return CRFWorldDatabaseUpdateServerResetToken452_user(_this, dwToken, wProcType, dwESerial, CRFWorldDatabaseUpdateServerResetToken452_next);
         };
-        bool CRFWorldDatabaseUpdateVotedReset_Cheat454_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseUpdateVotedReset_Cheat454_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseUpdateVotedReset_Cheat454_user(_this, dwSerial, CRFWorldDatabaseUpdateVotedReset_Cheat454_next);
         };
-        bool CRFWorldDatabaseUpdateVotedReset_General456_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseUpdateVotedReset_General456_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseUpdateVotedReset_General456_user(_this, dwSerial, CRFWorldDatabaseUpdateVotedReset_General456_next);
         };
-        bool CRFWorldDatabaseUpdateVotedReset_Supplement458_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseUpdateVotedReset_Supplement458_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseUpdateVotedReset_Supplement458_user(_this, dwSerial, CRFWorldDatabaseUpdateVotedReset_Supplement458_next);
         };
-        bool CRFWorldDatabaseUpdateWinGuildBattleResult460_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
+        static bool CRFWorldDatabaseUpdateWinGuildBattleResult460_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwScore)
         {
            return CRFWorldDatabaseUpdateWinGuildBattleResult460_user(_this, dwGuildSerial, dwScore, CRFWorldDatabaseUpdateWinGuildBattleResult460_next);
         };
-        bool CRFWorldDatabaseUpdate_AnimusData462_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, long double* pAnimusData)
+        static bool CRFWorldDatabaseUpdate_AnimusData462_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byRace, long double* pAnimusData)
         {
            return CRFWorldDatabaseUpdate_AnimusData462_user(_this, dwSerial, byRace, pAnimusData, CRFWorldDatabaseUpdate_AnimusData462_next);
         };
-        bool CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_wrapper(struct CRFWorldDatabase* _this, unsigned int kLogSerial, unsigned int dwRedSerial, unsigned int dwBlueSerial)
+        static bool CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_wrapper(struct CRFWorldDatabase* _this, unsigned int kLogSerial, unsigned int dwRedSerial, unsigned int dwBlueSerial)
         {
            return CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_user(_this, kLogSerial, dwRedSerial, dwBlueSerial, CRFWorldDatabaseUpdate_BattleResultLogBattleResultAndPvpPoint464_next);
         };
-        bool CRFWorldDatabaseUpdate_CharSlot466_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial)
+        static bool CRFWorldDatabaseUpdate_CharSlot466_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial)
         {
            return CRFWorldDatabaseUpdate_CharSlot466_user(_this, dwAvatorSerial, CRFWorldDatabaseUpdate_CharSlot466_next);
         };
-        bool CRFWorldDatabaseUpdate_CharacterData468_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_update_char_query* pUpdateQuery)
+        static bool CRFWorldDatabaseUpdate_CharacterData468_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_update_char_query* pUpdateQuery)
         {
            return CRFWorldDatabaseUpdate_CharacterData468_user(_this, dwSerial, pUpdateQuery, CRFWorldDatabaseUpdate_CharacterData468_next);
         };
-        bool CRFWorldDatabaseUpdate_CharacterReName470_wrapper(struct CRFWorldDatabase* _this, char* pwszName, unsigned int dwSerial)
+        static bool CRFWorldDatabaseUpdate_CharacterReName470_wrapper(struct CRFWorldDatabase* _this, char* pwszName, unsigned int dwSerial)
         {
            return CRFWorldDatabaseUpdate_CharacterReName470_user(_this, pwszName, dwSerial, CRFWorldDatabaseUpdate_CharacterReName470_next);
         };
-        bool CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_user(_this, CRFWorldDatabaseUpdate_ClearWeeklyPvpPointSum472_next);
         };
-        bool CRFWorldDatabaseUpdate_CristalBattleCharInfo474_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byHSKTime, char byPvpGrade, int iPvpPoint, uint16_t wKillPoint, uint16_t wDiePoint)
+        static bool CRFWorldDatabaseUpdate_CristalBattleCharInfo474_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byHSKTime, char byPvpGrade, int iPvpPoint, uint16_t wKillPoint, uint16_t wDiePoint)
         {
            return CRFWorldDatabaseUpdate_CristalBattleCharInfo474_user(_this, dwSerial, byHSKTime, byPvpGrade, iPvpPoint, wKillPoint, wDiePoint, CRFWorldDatabaseUpdate_CristalBattleCharInfo474_next);
         };
-        bool CRFWorldDatabaseUpdate_Dalant476_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant)
+        static bool CRFWorldDatabaseUpdate_Dalant476_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant)
         {
            return CRFWorldDatabaseUpdate_Dalant476_user(_this, dwSerial, dwDalant, CRFWorldDatabaseUpdate_Dalant476_next);
         };
-        bool CRFWorldDatabaseUpdate_DisableInstanceStore478_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseUpdate_DisableInstanceStore478_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseUpdate_DisableInstanceStore478_user(_this, dwSerial, CRFWorldDatabaseUpdate_DisableInstanceStore478_next);
         };
-        bool CRFWorldDatabaseUpdate_DisappearOwnerRecord480_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_DisappearOwnerRecord480_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_DisappearOwnerRecord480_user(_this, CRFWorldDatabaseUpdate_DisappearOwnerRecord480_next);
         };
-        bool CRFWorldDatabaseUpdate_GmGreet482_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_gm_greetingmsg* pSheet)
+        static bool CRFWorldDatabaseUpdate_GmGreet482_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_gm_greetingmsg* pSheet)
         {
            return CRFWorldDatabaseUpdate_GmGreet482_user(_this, pSheet, CRFWorldDatabaseUpdate_GmGreet482_next);
         };
-        bool CRFWorldDatabaseUpdate_Gold484_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwGold)
+        static bool CRFWorldDatabaseUpdate_Gold484_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwGold)
         {
            return CRFWorldDatabaseUpdate_Gold484_user(_this, dwSerial, dwGold, CRFWorldDatabaseUpdate_Gold484_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildEmblem486_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dCurDalant, unsigned int dwEmblemBack, unsigned int dwEmblemMark)
+        static bool CRFWorldDatabaseUpdate_GuildEmblem486_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dCurDalant, unsigned int dwEmblemBack, unsigned int dwEmblemMark)
         {
            return CRFWorldDatabaseUpdate_GuildEmblem486_user(_this, dwGuildSerial, dCurDalant, dwEmblemBack, dwEmblemMark, CRFWorldDatabaseUpdate_GuildEmblem486_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildGrade488_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_GuildGrade488_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_GuildGrade488_user(_this, CRFWorldDatabaseUpdate_GuildGrade488_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildGreet490_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_guild_greetingmsg* pSheet)
+        static bool CRFWorldDatabaseUpdate_GuildGreet490_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_guild_greetingmsg* pSheet)
         {
            return CRFWorldDatabaseUpdate_GuildGreet490_user(_this, pSheet, CRFWorldDatabaseUpdate_GuildGreet490_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildMaster492_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuild_Serial, unsigned int dwGuildMaster_Serial, char byGuildMaster_PrevGrade)
+        static bool CRFWorldDatabaseUpdate_GuildMaster492_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuild_Serial, unsigned int dwGuildMaster_Serial, char byGuildMaster_PrevGrade)
         {
            return CRFWorldDatabaseUpdate_GuildMaster492_user(_this, dwGuild_Serial, dwGuildMaster_Serial, byGuildMaster_PrevGrade, CRFWorldDatabaseUpdate_GuildMaster492_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildMemberCount494_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, uint16_t wMemberNum)
+        static bool CRFWorldDatabaseUpdate_GuildMemberCount494_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, uint16_t wMemberNum)
         {
            return CRFWorldDatabaseUpdate_GuildMemberCount494_user(_this, dwGuildSerial, wMemberNum, CRFWorldDatabaseUpdate_GuildMemberCount494_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildRank496_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_GuildRank496_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_GuildRank496_user(_this, szDate, CRFWorldDatabaseUpdate_GuildRank496_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildRank_Step1498_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_GuildRank_Step1498_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_GuildRank_Step1498_user(_this, szDate, CRFWorldDatabaseUpdate_GuildRank_Step1498_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildRank_Step2500_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_GuildRank_Step2500_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_GuildRank_Step2500_user(_this, szDate, CRFWorldDatabaseUpdate_GuildRank_Step2500_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildRank_Step3502_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_GuildRank_Step3502_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_GuildRank_Step3502_user(_this, szDate, CRFWorldDatabaseUpdate_GuildRank_Step3502_next);
         };
-        bool CRFWorldDatabaseUpdate_GuildRoom504_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseUpdate_GuildRoom504_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseUpdate_GuildRoom504_user(_this, dwGuildSerial, CRFWorldDatabaseUpdate_GuildRoom504_next);
         };
-        bool CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dPvpPoint)
+        static bool CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dPvpPoint)
         {
            return CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_user(_this, dwSerial, dPvpPoint, CRFWorldDatabaseUpdate_IncreaseWeeklyGuildGuildBattlePvpPointSum506_next);
         };
-        bool CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dPvpPoint)
+        static bool CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double dPvpPoint)
         {
            return CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_user(_this, dwSerial, dPvpPoint, CRFWorldDatabaseUpdate_IncreaseWeeklyGuildKillPvpPointSum508_next);
         };
-        bool CRFWorldDatabaseUpdate_InputGuildMoney510_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwDalant, unsigned int dwGold)
+        static bool CRFWorldDatabaseUpdate_InputGuildMoney510_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwDalant, unsigned int dwGold)
         {
            return CRFWorldDatabaseUpdate_InputGuildMoney510_user(_this, dwGuildSerial, dwDalant, dwGold, CRFWorldDatabaseUpdate_InputGuildMoney510_next);
         };
-        bool CRFWorldDatabaseUpdate_Level512_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byLv)
+        static bool CRFWorldDatabaseUpdate_Level512_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char byLv)
         {
            return CRFWorldDatabaseUpdate_Level512_user(_this, dwSerial, byLv, CRFWorldDatabaseUpdate_Level512_next);
         };
-        bool CRFWorldDatabaseUpdate_LimitItemNum514_wrapper(struct CRFWorldDatabase* _this, char* pszQuery)
+        static bool CRFWorldDatabaseUpdate_LimitItemNum514_wrapper(struct CRFWorldDatabase* _this, char* pszQuery)
         {
            return CRFWorldDatabaseUpdate_LimitItemNum514_user(_this, pszQuery, CRFWorldDatabaseUpdate_LimitItemNum514_next);
         };
-        bool CRFWorldDatabaseUpdate_MacroData516_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
+        static bool CRFWorldDatabaseUpdate_MacroData516_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _AIOC_A_MACRODATA* pMacro)
         {
            return CRFWorldDatabaseUpdate_MacroData516_user(_this, dwSerial, pMacro, CRFWorldDatabaseUpdate_MacroData516_next);
         };
-        bool CRFWorldDatabaseUpdate_NpcData518_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
+        static bool CRFWorldDatabaseUpdate_NpcData518_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int* pNpcData)
         {
            return CRFWorldDatabaseUpdate_NpcData518_user(_this, dwSerial, pNpcData, CRFWorldDatabaseUpdate_NpcData518_next);
         };
-        bool CRFWorldDatabaseUpdate_OutputGuildMoney520_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwDalant, unsigned int dwGold)
+        static bool CRFWorldDatabaseUpdate_OutputGuildMoney520_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, unsigned int dwDalant, unsigned int dwGold)
         {
            return CRFWorldDatabaseUpdate_OutputGuildMoney520_user(_this, dwGuildSerial, dwDalant, dwGold, CRFWorldDatabaseUpdate_OutputGuildMoney520_next);
         };
-        char CRFWorldDatabaseUpdate_PatriarchComm522_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszDepDate)
+        static char CRFWorldDatabaseUpdate_PatriarchComm522_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszDepDate)
         {
            return CRFWorldDatabaseUpdate_PatriarchComm522_user(_this, dwSerial, dwDalant, pszDepDate, CRFWorldDatabaseUpdate_PatriarchComm522_next);
         };
-        bool CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, unsigned int dwFatigue, char wStatus)
+        static bool CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAccSerial, unsigned int dwFatigue, char wStatus)
         {
            return CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_user(_this, dwAccSerial, dwFatigue, wStatus, CRFWorldDatabaseUpdate_Player_TimeLimit_Info524_next);
         };
-        bool CRFWorldDatabaseUpdate_Player_Vote_Info526_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwAccPlayTime, char IsVote, char VoteEnable, unsigned int dwScanerData)
+        static bool CRFWorldDatabaseUpdate_Player_Vote_Info526_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, unsigned int dwAccPlayTime, char IsVote, char VoteEnable, unsigned int dwScanerData)
         {
            return CRFWorldDatabaseUpdate_Player_Vote_Info526_user(_this, dwSerial, dwAccPlayTime, IsVote, VoteEnable, dwScanerData, CRFWorldDatabaseUpdate_Player_Vote_Info526_next);
         };
-        bool CRFWorldDatabaseUpdate_Post528_wrapper(struct CRFWorldDatabase* _this, char* szPostQuery)
+        static bool CRFWorldDatabaseUpdate_Post528_wrapper(struct CRFWorldDatabase* _this, char* szPostQuery)
         {
            return CRFWorldDatabaseUpdate_Post528_user(_this, szPostQuery, CRFWorldDatabaseUpdate_Post528_next);
         };
-        bool CRFWorldDatabaseUpdate_PostRegistry530_wrapper(struct CRFWorldDatabase* _this, unsigned int dwIndex, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nK, uint64_t dwD, unsigned int dwU, unsigned int dwGold, char bySendRace, char bySenderDgr, uint64_t lnUID)
+        static bool CRFWorldDatabaseUpdate_PostRegistry530_wrapper(struct CRFWorldDatabase* _this, unsigned int dwIndex, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nK, uint64_t dwD, unsigned int dwU, unsigned int dwGold, char bySendRace, char bySenderDgr, uint64_t lnUID)
         {
            return CRFWorldDatabaseUpdate_PostRegistry530_user(_this, dwIndex, dwSenderSerial, wszSendName, wszRecvName, wszTitle, wszContent, nK, dwD, dwU, dwGold, bySendRace, bySenderDgr, lnUID, CRFWorldDatabaseUpdate_PostRegistry530_next);
         };
-        bool CRFWorldDatabaseUpdate_PostRegistryDisable532_wrapper(struct CRFWorldDatabase* _this, unsigned int dwIndex)
+        static bool CRFWorldDatabaseUpdate_PostRegistryDisable532_wrapper(struct CRFWorldDatabase* _this, unsigned int dwIndex)
         {
            return CRFWorldDatabaseUpdate_PostRegistryDisable532_user(_this, dwIndex, CRFWorldDatabaseUpdate_PostRegistryDisable532_next);
         };
-        bool CRFWorldDatabaseUpdate_PostStorageSendToRecver534_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, unsigned int dwPostSerial, char byPostState, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nK, uint64_t dwD, unsigned int dwU, unsigned int dwGold, char byErr, uint16_t wStorageIndex, char* pbyNumber, bool bGetNumber, uint64_t lnUID)
+        static bool CRFWorldDatabaseUpdate_PostStorageSendToRecver534_wrapper(struct CRFWorldDatabase* _this, unsigned int dwOwner, unsigned int dwPostSerial, char byPostState, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, int nK, uint64_t dwD, unsigned int dwU, unsigned int dwGold, char byErr, uint16_t wStorageIndex, char* pbyNumber, bool bGetNumber, uint64_t lnUID)
         {
            return CRFWorldDatabaseUpdate_PostStorageSendToRecver534_user(_this, dwOwner, dwPostSerial, byPostState, wszSendName, wszRecvName, wszTitle, wszContent, nK, dwD, dwU, dwGold, byErr, wStorageIndex, pbyNumber, bGetNumber, lnUID, CRFWorldDatabaseUpdate_PostStorageSendToRecver534_next);
         };
-        bool CRFWorldDatabaseUpdate_Punishment536_wrapper(struct CRFWorldDatabase* _this, char* szData)
+        static bool CRFWorldDatabaseUpdate_Punishment536_wrapper(struct CRFWorldDatabase* _this, char* szData)
         {
            return CRFWorldDatabaseUpdate_Punishment536_user(_this, szData, CRFWorldDatabaseUpdate_Punishment536_next);
         };
-        bool CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_wrapper(struct CRFWorldDatabase* _this, char* szDate, unsigned int dwSerial, uint16_t wRank)
+        static bool CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_wrapper(struct CRFWorldDatabase* _this, char* szDate, unsigned int dwSerial, uint16_t wRank)
         {
            return CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_user(_this, szDate, dwSerial, wRank, CRFWorldDatabaseUpdate_PvpPointGuildRankRecord538_next);
         };
-        bool CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_wrapper(struct CRFWorldDatabase* _this, char* szDate, char byRace, char byLimitCnt, char byLimitGrade)
+        static bool CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_wrapper(struct CRFWorldDatabase* _this, char* szDate, char byRace, char byLimitCnt, char byLimitGrade)
         {
            return CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_user(_this, szDate, byRace, byLimitCnt, byLimitGrade, CRFWorldDatabaseUpdate_PvpPointGuildRankSumLv540_next);
         };
-        bool CRFWorldDatabaseUpdate_PvpPointInfo542_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, int16_t* zClass, long double dPvpPoint)
+        static bool CRFWorldDatabaseUpdate_PvpPointInfo542_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, int16_t* zClass, long double dPvpPoint)
         {
            return CRFWorldDatabaseUpdate_PvpPointInfo542_user(_this, dwSerial, zClass, dPvpPoint, CRFWorldDatabaseUpdate_PvpPointInfo542_next);
         };
-        bool CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char byRefineCnt, unsigned int dwRefineDate)
+        static bool CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, char byRefineCnt, unsigned int dwRefineDate)
         {
            return CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_user(_this, dwAvatorSerial, byRefineCnt, dwRefineDate, CRFWorldDatabaseUpdate_RFEvent_ClassRefine544_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceGreet546_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_race_greetingmsg* pSheet)
+        static bool CRFWorldDatabaseUpdate_RaceGreet546_wrapper(struct CRFWorldDatabase* _this, struct _qry_case_race_greetingmsg* pSheet)
         {
            return CRFWorldDatabaseUpdate_RaceGreet546_user(_this, pSheet, CRFWorldDatabaseUpdate_RaceGreet546_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank548_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank548_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank548_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank548_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step1550_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step1550_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step1550_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step1550_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step2552_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step2552_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step2552_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step2552_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step3554_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step3554_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step3554_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step3554_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step4556_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step4556_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step4556_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step4556_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step5558_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step5558_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step5558_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step5558_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step6560_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step6560_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step6560_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step6560_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step7562_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step7562_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step7562_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step7562_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step8564_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step8564_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step8564_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step8564_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step9566_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step9566_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step9566_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step9566_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step_6_1568_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step_6_2570_next);
         };
-        bool CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_wrapper(struct CRFWorldDatabase* _this, char* szDate)
+        static bool CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_wrapper(struct CRFWorldDatabase* _this, char* szDate)
         {
            return CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_user(_this, szDate, CRFWorldDatabaseUpdate_RaceRank_Step_6_3572_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild574_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_rankinguild_info* pGuildMemberRankData)
+        static bool CRFWorldDatabaseUpdate_RankInGuild574_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_rankinguild_info* pGuildMemberRankData)
         {
            return CRFWorldDatabaseUpdate_RankInGuild574_user(_this, dwGuildSerial, pGuildMemberRankData, CRFWorldDatabaseUpdate_RankInGuild574_next);
         };
-        char CRFWorldDatabaseUpdate_RankInGuild_Step1576_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static char CRFWorldDatabaseUpdate_RankInGuild_Step1576_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step1576_user(_this, dwGuildSerial, CRFWorldDatabaseUpdate_RankInGuild_Step1576_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step2578_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step2578_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step2578_user(_this, dwGuildSerial, CRFWorldDatabaseUpdate_RankInGuild_Step2578_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step3580_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step3580_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step3580_user(_this, dwGuildSerial, CRFWorldDatabaseUpdate_RankInGuild_Step3580_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step4582_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step4582_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step4582_user(_this, dwGuildSerial, CRFWorldDatabaseUpdate_RankInGuild_Step4582_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step5584_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_rankinguild_info* pGuildMemberRankData)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step5584_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, struct _worlddb_rankinguild_info* pGuildMemberRankData)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step5584_user(_this, dwGuildSerial, pGuildMemberRankData, CRFWorldDatabaseUpdate_RankInGuild_Step5584_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step6586_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step6586_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step6586_user(_this, CRFWorldDatabaseUpdate_RankInGuild_Step6586_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step7588_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step7588_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step7588_user(_this, CRFWorldDatabaseUpdate_RankInGuild_Step7588_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step8590_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step8590_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step8590_user(_this, CRFWorldDatabaseUpdate_RankInGuild_Step8590_next);
         };
-        bool CRFWorldDatabaseUpdate_RankInGuild_Step9592_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_RankInGuild_Step9592_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_RankInGuild_Step9592_user(_this, CRFWorldDatabaseUpdate_RankInGuild_Step9592_next);
         };
-        bool CRFWorldDatabaseUpdate_SFDelayInfo594_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
+        static bool CRFWorldDatabaseUpdate_SFDelayInfo594_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _worlddb_sf_delay_info* pSFDelay)
         {
            return CRFWorldDatabaseUpdate_SFDelayInfo594_user(_this, dwSerial, pSFDelay, CRFWorldDatabaseUpdate_SFDelayInfo594_next);
         };
-        bool CRFWorldDatabaseUpdate_SetActive596_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszActiveName, char bySlot)
+        static bool CRFWorldDatabaseUpdate_SetActive596_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* pwszActiveName, char bySlot)
         {
            return CRFWorldDatabaseUpdate_SetActive596_user(_this, dwSerial, pwszActiveName, bySlot, CRFWorldDatabaseUpdate_SetActive596_next);
         };
-        bool CRFWorldDatabaseUpdate_SetGuildMoney598_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dDalant, long double dGold)
+        static bool CRFWorldDatabaseUpdate_SetGuildMoney598_wrapper(struct CRFWorldDatabase* _this, unsigned int dwGuildSerial, long double dDalant, long double dGold)
         {
            return CRFWorldDatabaseUpdate_SetGuildMoney598_user(_this, dwGuildSerial, dDalant, dGold, CRFWorldDatabaseUpdate_SetGuildMoney598_next);
         };
-        bool CRFWorldDatabaseUpdate_Set_Limit_Run600_wrapper(struct CRFWorldDatabase* _this, char* pData, int iSize)
+        static bool CRFWorldDatabaseUpdate_Set_Limit_Run600_wrapper(struct CRFWorldDatabase* _this, char* pData, int iSize)
         {
            return CRFWorldDatabaseUpdate_Set_Limit_Run600_user(_this, pData, iSize, CRFWorldDatabaseUpdate_Set_Limit_Run600_next);
         };
-        bool CRFWorldDatabaseUpdate_Start_NpcQuest_History602_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szQuestCode, char byLevel, char* szTime, int64_t nEndTime)
+        static bool CRFWorldDatabaseUpdate_Start_NpcQuest_History602_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* szQuestCode, char byLevel, char* szTime, int64_t nEndTime)
         {
            return CRFWorldDatabaseUpdate_Start_NpcQuest_History602_user(_this, dwSerial, szQuestCode, byLevel, szTime, nEndTime, CRFWorldDatabaseUpdate_Start_NpcQuest_History602_next);
         };
-        bool CRFWorldDatabaseUpdate_UnitData604_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
+        static bool CRFWorldDatabaseUpdate_UnitData604_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, long double* pUnitData)
         {
            return CRFWorldDatabaseUpdate_UnitData604_user(_this, dwSerial, pUnitData, CRFWorldDatabaseUpdate_UnitData604_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_user(_this, byType, dwRegistSerial, CRFWorldDatabaseUpdate_UnmannedTraderCheatUpdateRegistDate606_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_user(_this, CRFWorldDatabaseUpdate_UnmannedTraderClearDanglingOwnerRecord608_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderItemState610_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwItemSerial, char byState, struct _SYSTEMTIME* kCurTime)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderItemState610_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwItemSerial, char byState, struct _SYSTEMTIME* kCurTime)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderItemState610_user(_this, byType, dwItemSerial, byState, kCurTime, CRFWorldDatabaseUpdate_UnmannedTraderItemState610_next);
         };
-        char CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byState, unsigned int dwPrice, unsigned int dwTax, struct _SYSTEMTIME* kCurTime)
+        static char CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byState, unsigned int dwPrice, unsigned int dwTax, struct _SYSTEMTIME* kCurTime)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_user(_this, byType, dwRegistSerial, byState, dwPrice, dwTax, kCurTime, CRFWorldDatabaseUpdate_UnmannedTraderReRegist612_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byState, unsigned int dwBuyer, unsigned int dwTax, struct _SYSTEMTIME* kCurTime)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, char byState, unsigned int dwBuyer, unsigned int dwTax, struct _SYSTEMTIME* kCurTime)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_user(_this, byType, dwRegistSerial, byState, dwBuyer, dwTax, kCurTime, CRFWorldDatabaseUpdate_UnmannedTraderResutlInfo614_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo, struct _SYSTEMTIME* kCurTime)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo, struct _SYSTEMTIME* kCurTime)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_user(_this, dwRegSerial, kInfo, kCurTime, CRFWorldDatabaseUpdate_UnmannedTraderSellInfo616_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, unsigned int dwOwner, unsigned int dwNewPrice)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_wrapper(struct CRFWorldDatabase* _this, char byType, unsigned int dwRegistSerial, unsigned int dwOwner, unsigned int dwNewPrice)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_user(_this, byType, dwRegistSerial, dwOwner, dwNewPrice, CRFWorldDatabaseUpdate_UnmannedTraderSellInfoPrice618_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_wrapper(struct CRFWorldDatabase* _this, unsigned int dwRegSerial, struct _unmannedtrader_registsingleitem* kInfo)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_user(_this, dwRegSerial, kInfo, CRFWorldDatabaseUpdate_UnmannedTraderSingleItemInfo620_next);
         };
-        bool CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _SYSTEMTIME* pkCurTime)
+        static bool CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _SYSTEMTIME* pkCurTime)
         {
            return CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_user(_this, dwSerial, pkCurTime, CRFWorldDatabaseUpdate_UnmannedTraderSingleTypeClearUseCompleteRecord622_next);
         };
-        bool CRFWorldDatabaseUpdate_UserGuildData624_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, char byGrade)
+        static bool CRFWorldDatabaseUpdate_UserGuildData624_wrapper(struct CRFWorldDatabase* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial, char byGrade)
         {
            return CRFWorldDatabaseUpdate_UserGuildData624_user(_this, dwAvatorSerial, dwGuildSerial, byGrade, CRFWorldDatabaseUpdate_UserGuildData624_next);
         };
-        int CRFWorldDatabaseUpdatet_Account_Vote_Available626_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* byVoteEnable)
+        static int CRFWorldDatabaseUpdatet_Account_Vote_Available626_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, char* byVoteEnable)
         {
            return CRFWorldDatabaseUpdatet_Account_Vote_Available626_user(_this, dwSerial, byVoteEnable, CRFWorldDatabaseUpdatet_Account_Vote_Available626_next);
         };
-        bool CRFWorldDatabasecreate_amine_personal631_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabasecreate_amine_personal631_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabasecreate_amine_personal631_user(_this, CRFWorldDatabasecreate_amine_personal631_next);
         };
-        bool CRFWorldDatabasecreate_automine_table633_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabasecreate_automine_table633_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabasecreate_automine_table633_user(_this, CRFWorldDatabasecreate_automine_table633_next);
         };
-        bool CRFWorldDatabasecreate_sumtotal_dungeon635_wrapper(struct CRFWorldDatabase* _this, int nRecodeNum, char** ppKey)
+        static bool CRFWorldDatabasecreate_sumtotal_dungeon635_wrapper(struct CRFWorldDatabase* _this, int nRecodeNum, char** ppKey)
         {
            return CRFWorldDatabasecreate_sumtotal_dungeon635_user(_this, nRecodeNum, ppKey, CRFWorldDatabasecreate_sumtotal_dungeon635_next);
         };
-        bool CRFWorldDatabasecreate_table_atrade_taxrate637_wrapper(struct CRFWorldDatabase* _this)
+        static bool CRFWorldDatabasecreate_table_atrade_taxrate637_wrapper(struct CRFWorldDatabase* _this)
         {
            return CRFWorldDatabasecreate_table_atrade_taxrate637_user(_this, CRFWorldDatabasecreate_table_atrade_taxrate637_next);
         };
-        int CRFWorldDatabaseexist_aminpersonal_inven639_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static int CRFWorldDatabaseexist_aminpersonal_inven639_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseexist_aminpersonal_inven639_user(_this, dwSerial, CRFWorldDatabaseexist_aminpersonal_inven639_next);
         };
-        int CRFWorldDatabaseexist_automine641_wrapper(struct CRFWorldDatabase* _this, char byCollisionType, char byRace)
+        static int CRFWorldDatabaseexist_automine641_wrapper(struct CRFWorldDatabase* _this, char byCollisionType, char byRace)
         {
            return CRFWorldDatabaseexist_automine641_user(_this, byCollisionType, byRace, CRFWorldDatabaseexist_automine641_next);
         };
-        bool CRFWorldDatabaseinsert_amine_newowner643_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial)
+        static bool CRFWorldDatabaseinsert_amine_newowner643_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial)
         {
            return CRFWorldDatabaseinsert_amine_newowner643_user(_this, byType, byRace, dwSerial, CRFWorldDatabaseinsert_amine_newowner643_next);
         };
-        bool CRFWorldDatabaseinsert_amine_personal645_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static bool CRFWorldDatabaseinsert_amine_personal645_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseinsert_amine_personal645_user(_this, dwSerial, CRFWorldDatabaseinsert_amine_personal645_next);
         };
-        bool CRFWorldDatabaseinsert_atrade_taxrate647_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, char* wszName, unsigned int dwMatterDst, char* wszMatterDst, char byCurrTax, unsigned int dwNext)
+        static bool CRFWorldDatabaseinsert_atrade_taxrate647_wrapper(struct CRFWorldDatabase* _this, char byRace, unsigned int dwSerial, char* wszName, unsigned int dwMatterDst, char* wszMatterDst, char byCurrTax, unsigned int dwNext)
         {
            return CRFWorldDatabaseinsert_atrade_taxrate647_user(_this, byRace, dwSerial, wszName, dwMatterDst, wszMatterDst, byCurrTax, dwNext, CRFWorldDatabaseinsert_atrade_taxrate647_next);
         };
-        int CRFWorldDatabaseselect_amine_personal649_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
+        static int CRFWorldDatabaseselect_amine_personal649_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial)
         {
            return CRFWorldDatabaseselect_amine_personal649_user(_this, dwSerial, CRFWorldDatabaseselect_amine_personal649_next);
         };
-        int CRFWorldDatabaseselect_amine_personal651_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _personal_amine_inven* pInven)
+        static int CRFWorldDatabaseselect_amine_personal651_wrapper(struct CRFWorldDatabase* _this, unsigned int dwSerial, struct _personal_amine_inven* pInven)
         {
            return CRFWorldDatabaseselect_amine_personal651_user(_this, dwSerial, pInven, CRFWorldDatabaseselect_amine_personal651_next);
         };
-        int CRFWorldDatabaseselect_atrade_taxrate653_wrapper(struct CRFWorldDatabase* _this, char byRace, char* pwszName, char* byCurrTax, char* byNextTax)
+        static int CRFWorldDatabaseselect_atrade_taxrate653_wrapper(struct CRFWorldDatabase* _this, char byRace, char* pwszName, char* byCurrTax, char* byNextTax)
         {
            return CRFWorldDatabaseselect_atrade_taxrate653_user(_this, byRace, pwszName, byCurrTax, byNextTax, CRFWorldDatabaseselect_atrade_taxrate653_next);
         };
-        int CRFWorldDatabaseselect_automine655_wrapper(struct CRFWorldDatabase* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pdata)
+        static int CRFWorldDatabaseselect_automine655_wrapper(struct CRFWorldDatabase* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pdata)
         {
            return CRFWorldDatabaseselect_automine655_user(_this, pdata, CRFWorldDatabaseselect_automine655_next);
         };
-        bool CRFWorldDatabaseupdate_amine_battery657_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, unsigned int dwBattery)
+        static bool CRFWorldDatabaseupdate_amine_battery657_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, unsigned int dwBattery)
         {
            return CRFWorldDatabaseupdate_amine_battery657_user(_this, byType, byRace, dwSerial, dwBattery, CRFWorldDatabaseupdate_amine_battery657_next);
         };
-        bool CRFWorldDatabaseupdate_amine_dck659_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial)
+        static bool CRFWorldDatabaseupdate_amine_dck659_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial)
         {
            return CRFWorldDatabaseupdate_amine_dck659_user(_this, byType, byRace, dwSerial, CRFWorldDatabaseupdate_amine_dck659_next);
         };
-        bool CRFWorldDatabaseupdate_amine_mineore661_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char bySlot, unsigned int dwK, char byNum, unsigned int dwGage)
+        static bool CRFWorldDatabaseupdate_amine_mineore661_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char bySlot, unsigned int dwK, char byNum, unsigned int dwGage)
         {
            return CRFWorldDatabaseupdate_amine_mineore661_user(_this, byType, byRace, dwSerial, bySlot, dwK, byNum, dwGage, CRFWorldDatabaseupdate_amine_mineore661_next);
         };
-        bool CRFWorldDatabaseupdate_amine_moveore663_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char bySSlot, unsigned int dwSK, char bySNum, char byDSlot, unsigned int dwDK, char byDNum)
+        static bool CRFWorldDatabaseupdate_amine_moveore663_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char bySSlot, unsigned int dwSK, char bySNum, char byDSlot, unsigned int dwDK, char byDNum)
         {
            return CRFWorldDatabaseupdate_amine_moveore663_user(_this, byType, byRace, dwSerial, bySSlot, dwSK, bySNum, byDSlot, dwDK, byDNum, CRFWorldDatabaseupdate_amine_moveore663_next);
         };
-        bool CRFWorldDatabaseupdate_amine_personal665_wrapper(struct CRFWorldDatabase* _this, char* pQry)
+        static bool CRFWorldDatabaseupdate_amine_personal665_wrapper(struct CRFWorldDatabase* _this, char* pQry)
         {
            return CRFWorldDatabaseupdate_amine_personal665_user(_this, pQry, CRFWorldDatabaseupdate_amine_personal665_next);
         };
-        bool CRFWorldDatabaseupdate_amine_selore667_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char byOreIdx)
+        static bool CRFWorldDatabaseupdate_amine_selore667_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, char byOreIdx)
         {
            return CRFWorldDatabaseupdate_amine_selore667_user(_this, byType, byRace, dwSerial, byOreIdx, CRFWorldDatabaseupdate_amine_selore667_next);
         };
-        bool CRFWorldDatabaseupdate_amine_workstate669_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, bool bWorking)
+        static bool CRFWorldDatabaseupdate_amine_workstate669_wrapper(struct CRFWorldDatabase* _this, char byType, char byRace, unsigned int dwSerial, bool bWorking)
         {
            return CRFWorldDatabaseupdate_amine_workstate669_user(_this, byType, byRace, dwSerial, bWorking, CRFWorldDatabaseupdate_amine_workstate669_next);
         };
-        bool CRFWorldDatabaseupdate_cristalbattle_date671_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharSerial, char bHSKTime)
+        static bool CRFWorldDatabaseupdate_cristalbattle_date671_wrapper(struct CRFWorldDatabase* _this, unsigned int dwCharSerial, char bHSKTime)
         {
            return CRFWorldDatabaseupdate_cristalbattle_date671_user(_this, dwCharSerial, bHSKTime, CRFWorldDatabaseupdate_cristalbattle_date671_next);
         };
-        void CRFWorldDatabasedtor_CRFWorldDatabase673_wrapper(struct CRFWorldDatabase* _this)
+        static void CRFWorldDatabasedtor_CRFWorldDatabase673_wrapper(struct CRFWorldDatabase* _this)
         {
            CRFWorldDatabasedtor_CRFWorldDatabase673_user(_this, CRFWorldDatabasedtor_CRFWorldDatabase673_next);
         };
         
-        hook_record CRFWorldDatabase_functions[] = {
+        static hook_record CRFWorldDatabase_functions[] = {
         {   (LPVOID)0x1404987e0L,
             (LPVOID *)&CRFWorldDatabaseAdd_PvpPoint2_user,
             (LPVOID *)&CRFWorldDatabaseAdd_PvpPoint2_next,
@@ -3699,5 +3699,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

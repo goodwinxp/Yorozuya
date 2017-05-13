@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBillingManagerAlive2_ptr CBillingManagerAlive2_next(nullptr);
-        info::CBillingManagerAlive2_clbk CBillingManagerAlive2_user(nullptr);
-        info::CBillingManagerBillingClose4_ptr CBillingManagerBillingClose4_next(nullptr);
-        info::CBillingManagerBillingClose4_clbk CBillingManagerBillingClose4_user(nullptr);
-        info::CBillingManagerctor_CBillingManager6_ptr CBillingManagerctor_CBillingManager6_next(nullptr);
-        info::CBillingManagerctor_CBillingManager6_clbk CBillingManagerctor_CBillingManager6_user(nullptr);
-        info::CBillingManagerChange_BillingType8_ptr CBillingManagerChange_BillingType8_next(nullptr);
-        info::CBillingManagerChange_BillingType8_clbk CBillingManagerChange_BillingType8_user(nullptr);
-        info::CBillingManagerChange_Primium10_ptr CBillingManagerChange_Primium10_next(nullptr);
-        info::CBillingManagerChange_Primium10_clbk CBillingManagerChange_Primium10_user(nullptr);
-        info::CBillingManagerExpire_IPOverflow12_ptr CBillingManagerExpire_IPOverflow12_next(nullptr);
-        info::CBillingManagerExpire_IPOverflow12_clbk CBillingManagerExpire_IPOverflow12_user(nullptr);
-        info::CBillingManagerExpire_PCBang14_ptr CBillingManagerExpire_PCBang14_next(nullptr);
-        info::CBillingManagerExpire_PCBang14_clbk CBillingManagerExpire_PCBang14_user(nullptr);
-        info::CBillingManagerExpire_Personal16_ptr CBillingManagerExpire_Personal16_next(nullptr);
-        info::CBillingManagerExpire_Personal16_clbk CBillingManagerExpire_Personal16_user(nullptr);
-        info::CBillingManagerInit18_ptr CBillingManagerInit18_next(nullptr);
-        info::CBillingManagerInit18_clbk CBillingManagerInit18_user(nullptr);
-        info::CBillingManagerIsOperate20_ptr CBillingManagerIsOperate20_next(nullptr);
-        info::CBillingManagerIsOperate20_clbk CBillingManagerIsOperate20_user(nullptr);
-        info::CBillingManagerLoadINI22_ptr CBillingManagerLoadINI22_next(nullptr);
-        info::CBillingManagerLoadINI22_clbk CBillingManagerLoadINI22_user(nullptr);
-        info::CBillingManagerLogin24_ptr CBillingManagerLogin24_next(nullptr);
-        info::CBillingManagerLogin24_clbk CBillingManagerLogin24_user(nullptr);
-        info::CBillingManagerLogout26_ptr CBillingManagerLogout26_next(nullptr);
-        info::CBillingManagerLogout26_clbk CBillingManagerLogout26_user(nullptr);
-        info::CBillingManagerRemaintime_PCBang28_ptr CBillingManagerRemaintime_PCBang28_next(nullptr);
-        info::CBillingManagerRemaintime_PCBang28_clbk CBillingManagerRemaintime_PCBang28_user(nullptr);
-        info::CBillingManagerRemaintime_Personal30_ptr CBillingManagerRemaintime_Personal30_next(nullptr);
-        info::CBillingManagerRemaintime_Personal30_clbk CBillingManagerRemaintime_Personal30_user(nullptr);
-        info::CBillingManagerSendMsg_ZoneAliveCheck32_ptr CBillingManagerSendMsg_ZoneAliveCheck32_next(nullptr);
-        info::CBillingManagerSendMsg_ZoneAliveCheck32_clbk CBillingManagerSendMsg_ZoneAliveCheck32_user(nullptr);
-        info::CBillingManagerStart34_ptr CBillingManagerStart34_next(nullptr);
-        info::CBillingManagerStart34_clbk CBillingManagerStart34_user(nullptr);
-        info::CBillingManagerdtor_CBillingManager39_ptr CBillingManagerdtor_CBillingManager39_next(nullptr);
-        info::CBillingManagerdtor_CBillingManager39_clbk CBillingManagerdtor_CBillingManager39_user(nullptr);
+        static info::CBillingManagerAlive2_ptr CBillingManagerAlive2_next(nullptr);
+        static info::CBillingManagerAlive2_clbk CBillingManagerAlive2_user(nullptr);
+        static info::CBillingManagerBillingClose4_ptr CBillingManagerBillingClose4_next(nullptr);
+        static info::CBillingManagerBillingClose4_clbk CBillingManagerBillingClose4_user(nullptr);
+        static info::CBillingManagerctor_CBillingManager6_ptr CBillingManagerctor_CBillingManager6_next(nullptr);
+        static info::CBillingManagerctor_CBillingManager6_clbk CBillingManagerctor_CBillingManager6_user(nullptr);
+        static info::CBillingManagerChange_BillingType8_ptr CBillingManagerChange_BillingType8_next(nullptr);
+        static info::CBillingManagerChange_BillingType8_clbk CBillingManagerChange_BillingType8_user(nullptr);
+        static info::CBillingManagerChange_Primium10_ptr CBillingManagerChange_Primium10_next(nullptr);
+        static info::CBillingManagerChange_Primium10_clbk CBillingManagerChange_Primium10_user(nullptr);
+        static info::CBillingManagerExpire_IPOverflow12_ptr CBillingManagerExpire_IPOverflow12_next(nullptr);
+        static info::CBillingManagerExpire_IPOverflow12_clbk CBillingManagerExpire_IPOverflow12_user(nullptr);
+        static info::CBillingManagerExpire_PCBang14_ptr CBillingManagerExpire_PCBang14_next(nullptr);
+        static info::CBillingManagerExpire_PCBang14_clbk CBillingManagerExpire_PCBang14_user(nullptr);
+        static info::CBillingManagerExpire_Personal16_ptr CBillingManagerExpire_Personal16_next(nullptr);
+        static info::CBillingManagerExpire_Personal16_clbk CBillingManagerExpire_Personal16_user(nullptr);
+        static info::CBillingManagerInit18_ptr CBillingManagerInit18_next(nullptr);
+        static info::CBillingManagerInit18_clbk CBillingManagerInit18_user(nullptr);
+        static info::CBillingManagerIsOperate20_ptr CBillingManagerIsOperate20_next(nullptr);
+        static info::CBillingManagerIsOperate20_clbk CBillingManagerIsOperate20_user(nullptr);
+        static info::CBillingManagerLoadINI22_ptr CBillingManagerLoadINI22_next(nullptr);
+        static info::CBillingManagerLoadINI22_clbk CBillingManagerLoadINI22_user(nullptr);
+        static info::CBillingManagerLogin24_ptr CBillingManagerLogin24_next(nullptr);
+        static info::CBillingManagerLogin24_clbk CBillingManagerLogin24_user(nullptr);
+        static info::CBillingManagerLogout26_ptr CBillingManagerLogout26_next(nullptr);
+        static info::CBillingManagerLogout26_clbk CBillingManagerLogout26_user(nullptr);
+        static info::CBillingManagerRemaintime_PCBang28_ptr CBillingManagerRemaintime_PCBang28_next(nullptr);
+        static info::CBillingManagerRemaintime_PCBang28_clbk CBillingManagerRemaintime_PCBang28_user(nullptr);
+        static info::CBillingManagerRemaintime_Personal30_ptr CBillingManagerRemaintime_Personal30_next(nullptr);
+        static info::CBillingManagerRemaintime_Personal30_clbk CBillingManagerRemaintime_Personal30_user(nullptr);
+        static info::CBillingManagerSendMsg_ZoneAliveCheck32_ptr CBillingManagerSendMsg_ZoneAliveCheck32_next(nullptr);
+        static info::CBillingManagerSendMsg_ZoneAliveCheck32_clbk CBillingManagerSendMsg_ZoneAliveCheck32_user(nullptr);
+        static info::CBillingManagerStart34_ptr CBillingManagerStart34_next(nullptr);
+        static info::CBillingManagerStart34_clbk CBillingManagerStart34_user(nullptr);
+        static info::CBillingManagerdtor_CBillingManager39_ptr CBillingManagerdtor_CBillingManager39_next(nullptr);
+        static info::CBillingManagerdtor_CBillingManager39_clbk CBillingManagerdtor_CBillingManager39_user(nullptr);
         
-        void CBillingManagerAlive2_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
+        static void CBillingManagerAlive2_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
         {
            CBillingManagerAlive2_user(_this, pUserDB, CBillingManagerAlive2_next);
         };
-        void CBillingManagerBillingClose4_wrapper(struct CBillingManager* _this, char* szID)
+        static void CBillingManagerBillingClose4_wrapper(struct CBillingManager* _this, char* szID)
         {
            CBillingManagerBillingClose4_user(_this, szID, CBillingManagerBillingClose4_next);
         };
-        void CBillingManagerctor_CBillingManager6_wrapper(struct CBillingManager* _this)
+        static void CBillingManagerctor_CBillingManager6_wrapper(struct CBillingManager* _this)
         {
            CBillingManagerctor_CBillingManager6_user(_this, CBillingManagerctor_CBillingManager6_next);
         };
-        void CBillingManagerChange_BillingType8_wrapper(struct CBillingManager* _this, char* szID, char* szCMSCode, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate, char byReason)
+        static void CBillingManagerChange_BillingType8_wrapper(struct CBillingManager* _this, char* szID, char* szCMSCode, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate, char byReason)
         {
            CBillingManagerChange_BillingType8_user(_this, szID, szCMSCode, iType, lRemainTime, pstEndDate, byReason, CBillingManagerChange_BillingType8_next);
         };
-        void CBillingManagerChange_Primium10_wrapper(struct CBillingManager* _this, char* szID, bool bResult)
+        static void CBillingManagerChange_Primium10_wrapper(struct CBillingManager* _this, char* szID, bool bResult)
         {
            CBillingManagerChange_Primium10_user(_this, szID, bResult, CBillingManagerChange_Primium10_next);
         };
-        void CBillingManagerExpire_IPOverflow12_wrapper(struct CBillingManager* _this, char* szID)
+        static void CBillingManagerExpire_IPOverflow12_wrapper(struct CBillingManager* _this, char* szID)
         {
            CBillingManagerExpire_IPOverflow12_user(_this, szID, CBillingManagerExpire_IPOverflow12_next);
         };
-        void CBillingManagerExpire_PCBang14_wrapper(struct CBillingManager* _this, char* szCMS)
+        static void CBillingManagerExpire_PCBang14_wrapper(struct CBillingManager* _this, char* szCMS)
         {
            CBillingManagerExpire_PCBang14_user(_this, szCMS, CBillingManagerExpire_PCBang14_next);
         };
-        void CBillingManagerExpire_Personal16_wrapper(struct CBillingManager* _this, char* szID)
+        static void CBillingManagerExpire_Personal16_wrapper(struct CBillingManager* _this, char* szID)
         {
            CBillingManagerExpire_Personal16_user(_this, szID, CBillingManagerExpire_Personal16_next);
         };
-        bool CBillingManagerInit18_wrapper(struct CBillingManager* _this)
+        static bool CBillingManagerInit18_wrapper(struct CBillingManager* _this)
         {
            return CBillingManagerInit18_user(_this, CBillingManagerInit18_next);
         };
-        bool CBillingManagerIsOperate20_wrapper(struct CBillingManager* _this)
+        static bool CBillingManagerIsOperate20_wrapper(struct CBillingManager* _this)
         {
            return CBillingManagerIsOperate20_user(_this, CBillingManagerIsOperate20_next);
         };
-        bool CBillingManagerLoadINI22_wrapper(struct CBillingManager* _this)
+        static bool CBillingManagerLoadINI22_wrapper(struct CBillingManager* _this)
         {
            return CBillingManagerLoadINI22_user(_this, CBillingManagerLoadINI22_next);
         };
-        void CBillingManagerLogin24_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
+        static void CBillingManagerLogin24_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
         {
            CBillingManagerLogin24_user(_this, pUserDB, CBillingManagerLogin24_next);
         };
-        void CBillingManagerLogout26_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
+        static void CBillingManagerLogout26_wrapper(struct CBillingManager* _this, struct CUserDB* pUserDB)
         {
            CBillingManagerLogout26_user(_this, pUserDB, CBillingManagerLogout26_next);
         };
-        void CBillingManagerRemaintime_PCBang28_wrapper(struct CBillingManager* _this, char* szCMSCode, int16_t iType, int lRemaintime, struct _SYSTEMTIME* pstEndDate)
+        static void CBillingManagerRemaintime_PCBang28_wrapper(struct CBillingManager* _this, char* szCMSCode, int16_t iType, int lRemaintime, struct _SYSTEMTIME* pstEndDate)
         {
            CBillingManagerRemaintime_PCBang28_user(_this, szCMSCode, iType, lRemaintime, pstEndDate, CBillingManagerRemaintime_PCBang28_next);
         };
-        void CBillingManagerRemaintime_Personal30_wrapper(struct CBillingManager* _this, char* szID, int16_t iType, int lRemaintime, struct _SYSTEMTIME* pstEndDate)
+        static void CBillingManagerRemaintime_Personal30_wrapper(struct CBillingManager* _this, char* szID, int16_t iType, int lRemaintime, struct _SYSTEMTIME* pstEndDate)
         {
            CBillingManagerRemaintime_Personal30_user(_this, szID, iType, lRemaintime, pstEndDate, CBillingManagerRemaintime_Personal30_next);
         };
-        void CBillingManagerSendMsg_ZoneAliveCheck32_wrapper(struct CBillingManager* _this, unsigned int dwData)
+        static void CBillingManagerSendMsg_ZoneAliveCheck32_wrapper(struct CBillingManager* _this, unsigned int dwData)
         {
            CBillingManagerSendMsg_ZoneAliveCheck32_user(_this, dwData, CBillingManagerSendMsg_ZoneAliveCheck32_next);
         };
-        void CBillingManagerStart34_wrapper(struct CBillingManager* _this)
+        static void CBillingManagerStart34_wrapper(struct CBillingManager* _this)
         {
            CBillingManagerStart34_user(_this, CBillingManagerStart34_next);
         };
-        void CBillingManagerdtor_CBillingManager39_wrapper(struct CBillingManager* _this)
+        static void CBillingManagerdtor_CBillingManager39_wrapper(struct CBillingManager* _this)
         {
            CBillingManagerdtor_CBillingManager39_user(_this, CBillingManagerdtor_CBillingManager39_next);
         };
         
-        hook_record CBillingManager_functions[] = {
+        static hook_record CBillingManager_functions[] = {
         {   (LPVOID)0x14007c1f0L,
             (LPVOID *)&CBillingManagerAlive2_user,
             (LPVOID *)&CBillingManagerAlive2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

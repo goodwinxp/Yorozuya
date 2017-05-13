@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_ptr CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_next(nullptr);
-        info::CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_clbk CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_user(nullptr);
-        info::CMonsterHelperGetAngle4_ptr CMonsterHelperGetAngle4_next(nullptr);
-        info::CMonsterHelperGetAngle4_clbk CMonsterHelperGetAngle4_user(nullptr);
-        info::CMonsterHelperGetDirection6_ptr CMonsterHelperGetDirection6_next(nullptr);
-        info::CMonsterHelperGetDirection6_clbk CMonsterHelperGetDirection6_user(nullptr);
-        info::CMonsterHelperHierarcyHelpCast8_ptr CMonsterHelperHierarcyHelpCast8_next(nullptr);
-        info::CMonsterHelperHierarcyHelpCast8_clbk CMonsterHelperHierarcyHelpCast8_user(nullptr);
-        info::CMonsterHelperIsInSector10_ptr CMonsterHelperIsInSector10_next(nullptr);
-        info::CMonsterHelperIsInSector10_clbk CMonsterHelperIsInSector10_user(nullptr);
-        info::CMonsterHelperSearchNearMonster12_ptr CMonsterHelperSearchNearMonster12_next(nullptr);
-        info::CMonsterHelperSearchNearMonster12_clbk CMonsterHelperSearchNearMonster12_user(nullptr);
-        info::CMonsterHelperSearchNearMonsterByDistance14_ptr CMonsterHelperSearchNearMonsterByDistance14_next(nullptr);
-        info::CMonsterHelperSearchNearMonsterByDistance14_clbk CMonsterHelperSearchNearMonsterByDistance14_user(nullptr);
-        info::CMonsterHelperSearchNearPlayer16_ptr CMonsterHelperSearchNearPlayer16_next(nullptr);
-        info::CMonsterHelperSearchNearPlayer16_clbk CMonsterHelperSearchNearPlayer16_user(nullptr);
-        info::CMonsterHelperSearchPatrolMovePos18_ptr CMonsterHelperSearchPatrolMovePos18_next(nullptr);
-        info::CMonsterHelperSearchPatrolMovePos18_clbk CMonsterHelperSearchPatrolMovePos18_user(nullptr);
-        info::CMonsterHelperSearchTargetMovePos_MovingTarget20_ptr CMonsterHelperSearchTargetMovePos_MovingTarget20_next(nullptr);
-        info::CMonsterHelperSearchTargetMovePos_MovingTarget20_clbk CMonsterHelperSearchTargetMovePos_MovingTarget20_user(nullptr);
-        info::CMonsterHelperSearchTargetMovePos_StopTarget22_ptr CMonsterHelperSearchTargetMovePos_StopTarget22_next(nullptr);
-        info::CMonsterHelperSearchTargetMovePos_StopTarget22_clbk CMonsterHelperSearchTargetMovePos_StopTarget22_user(nullptr);
-        info::CMonsterHelperTransPort24_ptr CMonsterHelperTransPort24_next(nullptr);
-        info::CMonsterHelperTransPort24_clbk CMonsterHelperTransPort24_user(nullptr);
+        static info::CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_ptr CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_next(nullptr);
+        static info::CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_clbk CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_user(nullptr);
+        static info::CMonsterHelperGetAngle4_ptr CMonsterHelperGetAngle4_next(nullptr);
+        static info::CMonsterHelperGetAngle4_clbk CMonsterHelperGetAngle4_user(nullptr);
+        static info::CMonsterHelperGetDirection6_ptr CMonsterHelperGetDirection6_next(nullptr);
+        static info::CMonsterHelperGetDirection6_clbk CMonsterHelperGetDirection6_user(nullptr);
+        static info::CMonsterHelperHierarcyHelpCast8_ptr CMonsterHelperHierarcyHelpCast8_next(nullptr);
+        static info::CMonsterHelperHierarcyHelpCast8_clbk CMonsterHelperHierarcyHelpCast8_user(nullptr);
+        static info::CMonsterHelperIsInSector10_ptr CMonsterHelperIsInSector10_next(nullptr);
+        static info::CMonsterHelperIsInSector10_clbk CMonsterHelperIsInSector10_user(nullptr);
+        static info::CMonsterHelperSearchNearMonster12_ptr CMonsterHelperSearchNearMonster12_next(nullptr);
+        static info::CMonsterHelperSearchNearMonster12_clbk CMonsterHelperSearchNearMonster12_user(nullptr);
+        static info::CMonsterHelperSearchNearMonsterByDistance14_ptr CMonsterHelperSearchNearMonsterByDistance14_next(nullptr);
+        static info::CMonsterHelperSearchNearMonsterByDistance14_clbk CMonsterHelperSearchNearMonsterByDistance14_user(nullptr);
+        static info::CMonsterHelperSearchNearPlayer16_ptr CMonsterHelperSearchNearPlayer16_next(nullptr);
+        static info::CMonsterHelperSearchNearPlayer16_clbk CMonsterHelperSearchNearPlayer16_user(nullptr);
+        static info::CMonsterHelperSearchPatrolMovePos18_ptr CMonsterHelperSearchPatrolMovePos18_next(nullptr);
+        static info::CMonsterHelperSearchPatrolMovePos18_clbk CMonsterHelperSearchPatrolMovePos18_user(nullptr);
+        static info::CMonsterHelperSearchTargetMovePos_MovingTarget20_ptr CMonsterHelperSearchTargetMovePos_MovingTarget20_next(nullptr);
+        static info::CMonsterHelperSearchTargetMovePos_MovingTarget20_clbk CMonsterHelperSearchTargetMovePos_MovingTarget20_user(nullptr);
+        static info::CMonsterHelperSearchTargetMovePos_StopTarget22_ptr CMonsterHelperSearchTargetMovePos_StopTarget22_next(nullptr);
+        static info::CMonsterHelperSearchTargetMovePos_StopTarget22_clbk CMonsterHelperSearchTargetMovePos_StopTarget22_user(nullptr);
+        static info::CMonsterHelperTransPort24_ptr CMonsterHelperTransPort24_next(nullptr);
+        static info::CMonsterHelperTransPort24_clbk CMonsterHelperTransPort24_user(nullptr);
         
-        int CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_wrapper(struct CMonster* pMon, struct CGameObject* pTarget)
+        static int CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_wrapper(struct CMonster* pMon, struct CGameObject* pTarget)
         {
            return CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_user(pMon, pTarget, CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_next);
         };
-        float CMonsterHelperGetAngle4_wrapper(float* mon, float* plr)
+        static float CMonsterHelperGetAngle4_wrapper(float* mon, float* plr)
         {
            return CMonsterHelperGetAngle4_user(mon, plr, CMonsterHelperGetAngle4_next);
         };
-        void CMonsterHelperGetDirection6_wrapper(float** cur, float** tar, float** out, float deg)
+        static void CMonsterHelperGetDirection6_wrapper(float** cur, float** tar, float** out, float deg)
         {
            CMonsterHelperGetDirection6_user(cur, tar, out, deg, CMonsterHelperGetDirection6_next);
         };
-        void CMonsterHelperHierarcyHelpCast8_wrapper(struct CMonster* pMon)
+        static void CMonsterHelperHierarcyHelpCast8_wrapper(struct CMonster* pMon)
         {
            CMonsterHelperHierarcyHelpCast8_user(pMon, CMonsterHelperHierarcyHelpCast8_next);
         };
-        int CMonsterHelperIsInSector10_wrapper(float* chkpos, float* src, float* dest, float angle, float radius, float* pfDist)
+        static int CMonsterHelperIsInSector10_wrapper(float* chkpos, float* src, float* dest, float angle, float radius, float* pfDist)
         {
            return CMonsterHelperIsInSector10_user(chkpos, src, dest, angle, radius, pfDist, CMonsterHelperIsInSector10_next);
         };
-        unsigned int CMonsterHelperSearchNearMonster12_wrapper(struct CMonster* pMon, struct _NEAR_DATA* NearChar, unsigned int dwArSize, int bTargetIgnore)
+        static unsigned int CMonsterHelperSearchNearMonster12_wrapper(struct CMonster* pMon, struct _NEAR_DATA* NearChar, unsigned int dwArSize, int bTargetIgnore)
         {
            return CMonsterHelperSearchNearMonster12_user(pMon, NearChar, dwArSize, bTargetIgnore, CMonsterHelperSearchNearMonster12_next);
         };
-        struct CMonster* CMonsterHelperSearchNearMonsterByDistance14_wrapper(struct CMonster* pMon, unsigned int dwDist)
+        static struct CMonster* CMonsterHelperSearchNearMonsterByDistance14_wrapper(struct CMonster* pMon, unsigned int dwDist)
         {
            return CMonsterHelperSearchNearMonsterByDistance14_user(pMon, dwDist, CMonsterHelperSearchNearMonsterByDistance14_next);
         };
-        struct CPlayer* CMonsterHelperSearchNearPlayer16_wrapper(struct CMonster* pMon, int nType)
+        static struct CPlayer* CMonsterHelperSearchNearPlayer16_wrapper(struct CMonster* pMon, int nType)
         {
            return CMonsterHelperSearchNearPlayer16_user(pMon, nType, CMonsterHelperSearchNearPlayer16_next);
         };
-        int CMonsterHelperSearchPatrolMovePos18_wrapper(struct CMonster* mon, float** NewTar)
+        static int CMonsterHelperSearchPatrolMovePos18_wrapper(struct CMonster* mon, float** NewTar)
         {
            return CMonsterHelperSearchPatrolMovePos18_user(mon, NewTar, CMonsterHelperSearchPatrolMovePos18_next);
         };
-        int CMonsterHelperSearchTargetMovePos_MovingTarget20_wrapper(struct CMonster* pMon, struct CCharacter* pTargetCharacter, float** tarPos)
+        static int CMonsterHelperSearchTargetMovePos_MovingTarget20_wrapper(struct CMonster* pMon, struct CCharacter* pTargetCharacter, float** tarPos)
         {
            return CMonsterHelperSearchTargetMovePos_MovingTarget20_user(pMon, pTargetCharacter, tarPos, CMonsterHelperSearchTargetMovePos_MovingTarget20_next);
         };
-        int CMonsterHelperSearchTargetMovePos_StopTarget22_wrapper(struct CMonster* pMon, struct CCharacter* pTargetCharacter, float** tarPos)
+        static int CMonsterHelperSearchTargetMovePos_StopTarget22_wrapper(struct CMonster* pMon, struct CCharacter* pTargetCharacter, float** tarPos)
         {
            return CMonsterHelperSearchTargetMovePos_StopTarget22_user(pMon, pTargetCharacter, tarPos, CMonsterHelperSearchTargetMovePos_StopTarget22_next);
         };
-        void CMonsterHelperTransPort24_wrapper(struct CMonster* mon, float* tarPos)
+        static void CMonsterHelperTransPort24_wrapper(struct CMonster* mon, float* tarPos)
         {
            CMonsterHelperTransPort24_user(mon, tarPos, CMonsterHelperTransPort24_next);
         };
         
-        hook_record CMonsterHelper_functions[] = {
+        static hook_record CMonsterHelper_functions[] = {
         {   (LPVOID)0x140158430L,
             (LPVOID *)&CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_user,
             (LPVOID *)&CMonsterHelperCheckPreAttackRangeTargetAbleCharacter2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

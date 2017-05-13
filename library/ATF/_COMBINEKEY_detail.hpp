@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_COMBINEKEYCovDBKey2_ptr _COMBINEKEYCovDBKey2_next(nullptr);
-        info::_COMBINEKEYCovDBKey2_clbk _COMBINEKEYCovDBKey2_user(nullptr);
-        info::_COMBINEKEYIsFilled4_ptr _COMBINEKEYIsFilled4_next(nullptr);
-        info::_COMBINEKEYIsFilled4_clbk _COMBINEKEYIsFilled4_user(nullptr);
-        info::_COMBINEKEYLoadDBKey6_ptr _COMBINEKEYLoadDBKey6_next(nullptr);
-        info::_COMBINEKEYLoadDBKey6_clbk _COMBINEKEYLoadDBKey6_user(nullptr);
-        info::_COMBINEKEYSetRelease8_ptr _COMBINEKEYSetRelease8_next(nullptr);
-        info::_COMBINEKEYSetRelease8_clbk _COMBINEKEYSetRelease8_user(nullptr);
+        static info::_COMBINEKEYCovDBKey2_ptr _COMBINEKEYCovDBKey2_next(nullptr);
+        static info::_COMBINEKEYCovDBKey2_clbk _COMBINEKEYCovDBKey2_user(nullptr);
+        static info::_COMBINEKEYIsFilled4_ptr _COMBINEKEYIsFilled4_next(nullptr);
+        static info::_COMBINEKEYIsFilled4_clbk _COMBINEKEYIsFilled4_user(nullptr);
+        static info::_COMBINEKEYLoadDBKey6_ptr _COMBINEKEYLoadDBKey6_next(nullptr);
+        static info::_COMBINEKEYLoadDBKey6_clbk _COMBINEKEYLoadDBKey6_user(nullptr);
+        static info::_COMBINEKEYSetRelease8_ptr _COMBINEKEYSetRelease8_next(nullptr);
+        static info::_COMBINEKEYSetRelease8_clbk _COMBINEKEYSetRelease8_user(nullptr);
         
-        int _COMBINEKEYCovDBKey2_wrapper(struct _COMBINEKEY* _this)
+        static int _COMBINEKEYCovDBKey2_wrapper(struct _COMBINEKEY* _this)
         {
            return _COMBINEKEYCovDBKey2_user(_this, _COMBINEKEYCovDBKey2_next);
         };
-        bool _COMBINEKEYIsFilled4_wrapper(struct _COMBINEKEY* _this)
+        static bool _COMBINEKEYIsFilled4_wrapper(struct _COMBINEKEY* _this)
         {
            return _COMBINEKEYIsFilled4_user(_this, _COMBINEKEYIsFilled4_next);
         };
-        void _COMBINEKEYLoadDBKey6_wrapper(struct _COMBINEKEY* _this, int pl_nKey)
+        static void _COMBINEKEYLoadDBKey6_wrapper(struct _COMBINEKEY* _this, int pl_nKey)
         {
            _COMBINEKEYLoadDBKey6_user(_this, pl_nKey, _COMBINEKEYLoadDBKey6_next);
         };
-        void _COMBINEKEYSetRelease8_wrapper(struct _COMBINEKEY* _this)
+        static void _COMBINEKEYSetRelease8_wrapper(struct _COMBINEKEY* _this)
         {
            _COMBINEKEYSetRelease8_user(_this, _COMBINEKEYSetRelease8_next);
         };
         
-        hook_record _COMBINEKEY_functions[] = {
+        static hook_record _COMBINEKEY_functions[] = {
         {   (LPVOID)0x1401bf320L,
             (LPVOID *)&_COMBINEKEYCovDBKey2_user,
             (LPVOID *)&_COMBINEKEYCovDBKey2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

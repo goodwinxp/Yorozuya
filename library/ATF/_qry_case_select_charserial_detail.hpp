@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_select_charserialsize2_ptr _qry_case_select_charserialsize2_next(nullptr);
-        info::_qry_case_select_charserialsize2_clbk _qry_case_select_charserialsize2_user(nullptr);
+        static info::_qry_case_select_charserialsize2_ptr _qry_case_select_charserialsize2_next(nullptr);
+        static info::_qry_case_select_charserialsize2_clbk _qry_case_select_charserialsize2_user(nullptr);
         
-        int _qry_case_select_charserialsize2_wrapper(struct _qry_case_select_charserial* _this)
+        static int _qry_case_select_charserialsize2_wrapper(struct _qry_case_select_charserial* _this)
         {
            return _qry_case_select_charserialsize2_user(_this, _qry_case_select_charserialsize2_next);
         };
         
-        hook_record _qry_case_select_charserial_functions[] = {
+        static hook_record _qry_case_select_charserial_functions[] = {
         {   (LPVOID)0x140102910L,
             (LPVOID *)&_qry_case_select_charserialsize2_user,
             (LPVOID *)&_qry_case_select_charserialsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

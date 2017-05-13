@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__bad_allocctor_bad_alloc5_ptr std__bad_allocctor_bad_alloc5_next(nullptr);
-            info::std__bad_allocctor_bad_alloc5_clbk std__bad_allocctor_bad_alloc5_user(nullptr);
-            info::std__bad_allocctor_bad_alloc7_ptr std__bad_allocctor_bad_alloc7_next(nullptr);
-            info::std__bad_allocctor_bad_alloc7_clbk std__bad_allocctor_bad_alloc7_user(nullptr);
-            info::std__bad_allocctor_bad_alloc8_ptr std__bad_allocctor_bad_alloc8_next(nullptr);
-            info::std__bad_allocctor_bad_alloc8_clbk std__bad_allocctor_bad_alloc8_user(nullptr);
-            info::std__bad_allocdtor_bad_alloc10_ptr std__bad_allocdtor_bad_alloc10_next(nullptr);
-            info::std__bad_allocdtor_bad_alloc10_clbk std__bad_allocdtor_bad_alloc10_user(nullptr);
+            static info::std__bad_allocctor_bad_alloc5_ptr std__bad_allocctor_bad_alloc5_next(nullptr);
+            static info::std__bad_allocctor_bad_alloc5_clbk std__bad_allocctor_bad_alloc5_user(nullptr);
+            static info::std__bad_allocctor_bad_alloc7_ptr std__bad_allocctor_bad_alloc7_next(nullptr);
+            static info::std__bad_allocctor_bad_alloc7_clbk std__bad_allocctor_bad_alloc7_user(nullptr);
+            static info::std__bad_allocctor_bad_alloc8_ptr std__bad_allocctor_bad_alloc8_next(nullptr);
+            static info::std__bad_allocctor_bad_alloc8_clbk std__bad_allocctor_bad_alloc8_user(nullptr);
+            static info::std__bad_allocdtor_bad_alloc10_ptr std__bad_allocdtor_bad_alloc10_next(nullptr);
+            static info::std__bad_allocdtor_bad_alloc10_clbk std__bad_allocdtor_bad_alloc10_user(nullptr);
             
-            void std__bad_allocctor_bad_alloc5_wrapper(struct std::bad_alloc* _this, char* _Message)
+            static void std__bad_allocctor_bad_alloc5_wrapper(struct std::bad_alloc* _this, char* _Message)
             {
                std__bad_allocctor_bad_alloc5_user(_this, _Message, std__bad_allocctor_bad_alloc5_next);
             };
-            void std__bad_allocctor_bad_alloc7_wrapper(struct std::bad_alloc* _this, struct std::bad_alloc* __that)
+            static void std__bad_allocctor_bad_alloc7_wrapper(struct std::bad_alloc* _this, struct std::bad_alloc* __that)
             {
                std__bad_allocctor_bad_alloc7_user(_this, __that, std__bad_allocctor_bad_alloc7_next);
             };
-            int64_t std__bad_allocctor_bad_alloc8_wrapper(struct std::bad_alloc* _this)
+            static int64_t std__bad_allocctor_bad_alloc8_wrapper(struct std::bad_alloc* _this)
             {
                return std__bad_allocctor_bad_alloc8_user(_this, std__bad_allocctor_bad_alloc8_next);
             };
-            void std__bad_allocdtor_bad_alloc10_wrapper(struct std::bad_alloc* _this)
+            static void std__bad_allocdtor_bad_alloc10_wrapper(struct std::bad_alloc* _this)
             {
                std__bad_allocdtor_bad_alloc10_user(_this, std__bad_allocdtor_bad_alloc10_next);
             };
             
-            hook_record bad_alloc_functions[] = {
+            static hook_record bad_alloc_functions[] = {
             {   (LPVOID)0x14007efb0L,
                 (LPVOID *)&std__bad_allocctor_bad_alloc5_user,
                 (LPVOID *)&std__bad_allocctor_bad_alloc5_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

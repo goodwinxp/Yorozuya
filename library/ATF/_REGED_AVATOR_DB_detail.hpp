@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_REGED_AVATOR_DBInit2_ptr _REGED_AVATOR_DBInit2_next(nullptr);
-        info::_REGED_AVATOR_DBInit2_clbk _REGED_AVATOR_DBInit2_user(nullptr);
-        info::_REGED_AVATOR_DBctor__REGED_AVATOR_DB4_ptr _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_next(nullptr);
-        info::_REGED_AVATOR_DBctor__REGED_AVATOR_DB4_clbk _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_user(nullptr);
+        static info::_REGED_AVATOR_DBInit2_ptr _REGED_AVATOR_DBInit2_next(nullptr);
+        static info::_REGED_AVATOR_DBInit2_clbk _REGED_AVATOR_DBInit2_user(nullptr);
+        static info::_REGED_AVATOR_DBctor__REGED_AVATOR_DB4_ptr _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_next(nullptr);
+        static info::_REGED_AVATOR_DBctor__REGED_AVATOR_DB4_clbk _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_user(nullptr);
         
-        void _REGED_AVATOR_DBInit2_wrapper(struct _REGED_AVATOR_DB* _this)
+        static void _REGED_AVATOR_DBInit2_wrapper(struct _REGED_AVATOR_DB* _this)
         {
            _REGED_AVATOR_DBInit2_user(_this, _REGED_AVATOR_DBInit2_next);
         };
-        void _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_wrapper(struct _REGED_AVATOR_DB* _this)
+        static void _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_wrapper(struct _REGED_AVATOR_DB* _this)
         {
            _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_user(_this, _REGED_AVATOR_DBctor__REGED_AVATOR_DB4_next);
         };
         
-        hook_record _REGED_AVATOR_DB_functions[] = {
+        static hook_record _REGED_AVATOR_DB_functions[] = {
         {   (LPVOID)0x1400754d0L,
             (LPVOID *)&_REGED_AVATOR_DBInit2_user,
             (LPVOID *)&_REGED_AVATOR_DBInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

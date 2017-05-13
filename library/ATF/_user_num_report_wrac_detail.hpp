@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_user_num_report_wracsize2_ptr _user_num_report_wracsize2_next(nullptr);
-        info::_user_num_report_wracsize2_clbk _user_num_report_wracsize2_user(nullptr);
+        static info::_user_num_report_wracsize2_ptr _user_num_report_wracsize2_next(nullptr);
+        static info::_user_num_report_wracsize2_clbk _user_num_report_wracsize2_user(nullptr);
         
-        int _user_num_report_wracsize2_wrapper(struct _user_num_report_wrac* _this)
+        static int _user_num_report_wracsize2_wrapper(struct _user_num_report_wrac* _this)
         {
            return _user_num_report_wracsize2_user(_this, _user_num_report_wracsize2_next);
         };
         
-        hook_record _user_num_report_wrac_functions[] = {
+        static hook_record _user_num_report_wrac_functions[] = {
         {   (LPVOID)0x140208050L,
             (LPVOID *)&_user_num_report_wracsize2_user,
             (LPVOID *)&_user_num_report_wracsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

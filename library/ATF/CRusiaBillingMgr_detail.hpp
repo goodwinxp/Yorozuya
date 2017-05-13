@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRusiaBillingMgrArrangeString2_ptr CRusiaBillingMgrArrangeString2_next(nullptr);
-        info::CRusiaBillingMgrArrangeString2_clbk CRusiaBillingMgrArrangeString2_user(nullptr);
-        info::CRusiaBillingMgrctor_CRusiaBillingMgr4_ptr CRusiaBillingMgrctor_CRusiaBillingMgr4_next(nullptr);
-        info::CRusiaBillingMgrctor_CRusiaBillingMgr4_clbk CRusiaBillingMgrctor_CRusiaBillingMgr4_user(nullptr);
-        info::CRusiaBillingMgrCallFunc_Item_Buy6_ptr CRusiaBillingMgrCallFunc_Item_Buy6_next(nullptr);
-        info::CRusiaBillingMgrCallFunc_Item_Buy6_clbk CRusiaBillingMgrCallFunc_Item_Buy6_user(nullptr);
-        info::CRusiaBillingMgrCallFunc_Item_Cancel8_ptr CRusiaBillingMgrCallFunc_Item_Cancel8_next(nullptr);
-        info::CRusiaBillingMgrCallFunc_Item_Cancel8_clbk CRusiaBillingMgrCallFunc_Item_Cancel8_user(nullptr);
-        info::CRusiaBillingMgrCallFunc_RFOnline_Auth10_ptr CRusiaBillingMgrCallFunc_RFOnline_Auth10_next(nullptr);
-        info::CRusiaBillingMgrCallFunc_RFOnline_Auth10_clbk CRusiaBillingMgrCallFunc_RFOnline_Auth10_user(nullptr);
-        info::CRusiaBillingMgrConfigUserODBC12_ptr CRusiaBillingMgrConfigUserODBC12_next(nullptr);
-        info::CRusiaBillingMgrConfigUserODBC12_clbk CRusiaBillingMgrConfigUserODBC12_user(nullptr);
-        info::CRusiaBillingMgrDeleteMem14_ptr CRusiaBillingMgrDeleteMem14_next(nullptr);
-        info::CRusiaBillingMgrDeleteMem14_clbk CRusiaBillingMgrDeleteMem14_user(nullptr);
-        info::CRusiaBillingMgrFree16_ptr CRusiaBillingMgrFree16_next(nullptr);
-        info::CRusiaBillingMgrFree16_clbk CRusiaBillingMgrFree16_user(nullptr);
-        info::CRusiaBillingMgrInit18_ptr CRusiaBillingMgrInit18_next(nullptr);
-        info::CRusiaBillingMgrInit18_clbk CRusiaBillingMgrInit18_user(nullptr);
-        info::CRusiaBillingMgrInstance20_ptr CRusiaBillingMgrInstance20_next(nullptr);
-        info::CRusiaBillingMgrInstance20_clbk CRusiaBillingMgrInstance20_user(nullptr);
-        info::CRusiaBillingMgrLoadINIFile22_ptr CRusiaBillingMgrLoadINIFile22_next(nullptr);
-        info::CRusiaBillingMgrLoadINIFile22_clbk CRusiaBillingMgrLoadINIFile22_user(nullptr);
-        info::CRusiaBillingMgrRelease24_ptr CRusiaBillingMgrRelease24_next(nullptr);
-        info::CRusiaBillingMgrRelease24_clbk CRusiaBillingMgrRelease24_user(nullptr);
-        info::CRusiaBillingMgrdhExtractSubString28_ptr CRusiaBillingMgrdhExtractSubString28_next(nullptr);
-        info::CRusiaBillingMgrdhExtractSubString28_clbk CRusiaBillingMgrdhExtractSubString28_user(nullptr);
-        info::CRusiaBillingMgrdhRExtractSubString30_ptr CRusiaBillingMgrdhRExtractSubString30_next(nullptr);
-        info::CRusiaBillingMgrdhRExtractSubString30_clbk CRusiaBillingMgrdhRExtractSubString30_user(nullptr);
-        info::CRusiaBillingMgrdtor_CRusiaBillingMgr32_ptr CRusiaBillingMgrdtor_CRusiaBillingMgr32_next(nullptr);
-        info::CRusiaBillingMgrdtor_CRusiaBillingMgr32_clbk CRusiaBillingMgrdtor_CRusiaBillingMgr32_user(nullptr);
+        static info::CRusiaBillingMgrArrangeString2_ptr CRusiaBillingMgrArrangeString2_next(nullptr);
+        static info::CRusiaBillingMgrArrangeString2_clbk CRusiaBillingMgrArrangeString2_user(nullptr);
+        static info::CRusiaBillingMgrctor_CRusiaBillingMgr4_ptr CRusiaBillingMgrctor_CRusiaBillingMgr4_next(nullptr);
+        static info::CRusiaBillingMgrctor_CRusiaBillingMgr4_clbk CRusiaBillingMgrctor_CRusiaBillingMgr4_user(nullptr);
+        static info::CRusiaBillingMgrCallFunc_Item_Buy6_ptr CRusiaBillingMgrCallFunc_Item_Buy6_next(nullptr);
+        static info::CRusiaBillingMgrCallFunc_Item_Buy6_clbk CRusiaBillingMgrCallFunc_Item_Buy6_user(nullptr);
+        static info::CRusiaBillingMgrCallFunc_Item_Cancel8_ptr CRusiaBillingMgrCallFunc_Item_Cancel8_next(nullptr);
+        static info::CRusiaBillingMgrCallFunc_Item_Cancel8_clbk CRusiaBillingMgrCallFunc_Item_Cancel8_user(nullptr);
+        static info::CRusiaBillingMgrCallFunc_RFOnline_Auth10_ptr CRusiaBillingMgrCallFunc_RFOnline_Auth10_next(nullptr);
+        static info::CRusiaBillingMgrCallFunc_RFOnline_Auth10_clbk CRusiaBillingMgrCallFunc_RFOnline_Auth10_user(nullptr);
+        static info::CRusiaBillingMgrConfigUserODBC12_ptr CRusiaBillingMgrConfigUserODBC12_next(nullptr);
+        static info::CRusiaBillingMgrConfigUserODBC12_clbk CRusiaBillingMgrConfigUserODBC12_user(nullptr);
+        static info::CRusiaBillingMgrDeleteMem14_ptr CRusiaBillingMgrDeleteMem14_next(nullptr);
+        static info::CRusiaBillingMgrDeleteMem14_clbk CRusiaBillingMgrDeleteMem14_user(nullptr);
+        static info::CRusiaBillingMgrFree16_ptr CRusiaBillingMgrFree16_next(nullptr);
+        static info::CRusiaBillingMgrFree16_clbk CRusiaBillingMgrFree16_user(nullptr);
+        static info::CRusiaBillingMgrInit18_ptr CRusiaBillingMgrInit18_next(nullptr);
+        static info::CRusiaBillingMgrInit18_clbk CRusiaBillingMgrInit18_user(nullptr);
+        static info::CRusiaBillingMgrInstance20_ptr CRusiaBillingMgrInstance20_next(nullptr);
+        static info::CRusiaBillingMgrInstance20_clbk CRusiaBillingMgrInstance20_user(nullptr);
+        static info::CRusiaBillingMgrLoadINIFile22_ptr CRusiaBillingMgrLoadINIFile22_next(nullptr);
+        static info::CRusiaBillingMgrLoadINIFile22_clbk CRusiaBillingMgrLoadINIFile22_user(nullptr);
+        static info::CRusiaBillingMgrRelease24_ptr CRusiaBillingMgrRelease24_next(nullptr);
+        static info::CRusiaBillingMgrRelease24_clbk CRusiaBillingMgrRelease24_user(nullptr);
+        static info::CRusiaBillingMgrdhExtractSubString28_ptr CRusiaBillingMgrdhExtractSubString28_next(nullptr);
+        static info::CRusiaBillingMgrdhExtractSubString28_clbk CRusiaBillingMgrdhExtractSubString28_user(nullptr);
+        static info::CRusiaBillingMgrdhRExtractSubString30_ptr CRusiaBillingMgrdhRExtractSubString30_next(nullptr);
+        static info::CRusiaBillingMgrdhRExtractSubString30_clbk CRusiaBillingMgrdhRExtractSubString30_user(nullptr);
+        static info::CRusiaBillingMgrdtor_CRusiaBillingMgr32_ptr CRusiaBillingMgrdtor_CRusiaBillingMgr32_next(nullptr);
+        static info::CRusiaBillingMgrdtor_CRusiaBillingMgr32_clbk CRusiaBillingMgrdtor_CRusiaBillingMgr32_user(nullptr);
         
-        void CRusiaBillingMgrArrangeString2_wrapper(struct CRusiaBillingMgr* _this, char* szDest, char* szSorc, char cToken)
+        static void CRusiaBillingMgrArrangeString2_wrapper(struct CRusiaBillingMgr* _this, char* szDest, char* szSorc, char cToken)
         {
            CRusiaBillingMgrArrangeString2_user(_this, szDest, szSorc, cToken, CRusiaBillingMgrArrangeString2_next);
         };
-        void CRusiaBillingMgrctor_CRusiaBillingMgr4_wrapper(struct CRusiaBillingMgr* _this)
+        static void CRusiaBillingMgrctor_CRusiaBillingMgr4_wrapper(struct CRusiaBillingMgr* _this)
         {
            CRusiaBillingMgrctor_CRusiaBillingMgr4_user(_this, CRusiaBillingMgrctor_CRusiaBillingMgr4_next);
         };
-        int CRusiaBillingMgrCallFunc_Item_Buy6_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_update* rParam, int nIdx)
+        static int CRusiaBillingMgrCallFunc_Item_Buy6_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_update* rParam, int nIdx)
         {
            return CRusiaBillingMgrCallFunc_Item_Buy6_user(_this, rParam, nIdx, CRusiaBillingMgrCallFunc_Item_Buy6_next);
         };
-        int CRusiaBillingMgrCallFunc_Item_Cancel8_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_rollback::__list* list, char* szUserID)
+        static int CRusiaBillingMgrCallFunc_Item_Cancel8_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_rollback::__list* list, char* szUserID)
         {
            return CRusiaBillingMgrCallFunc_Item_Cancel8_user(_this, list, szUserID, CRusiaBillingMgrCallFunc_Item_Cancel8_next);
         };
-        int CRusiaBillingMgrCallFunc_RFOnline_Auth10_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_select* rParam)
+        static int CRusiaBillingMgrCallFunc_RFOnline_Auth10_wrapper(struct CRusiaBillingMgr* _this, struct _param_cash_select* rParam)
         {
            return CRusiaBillingMgrCallFunc_RFOnline_Auth10_user(_this, rParam, CRusiaBillingMgrCallFunc_RFOnline_Auth10_next);
         };
-        int CRusiaBillingMgrConfigUserODBC12_wrapper(struct CRusiaBillingMgr* _this, char* szDSN, char* szServer, char* szDatabase, uint16_t wPort)
+        static int CRusiaBillingMgrConfigUserODBC12_wrapper(struct CRusiaBillingMgr* _this, char* szDSN, char* szServer, char* szDatabase, uint16_t wPort)
         {
            return CRusiaBillingMgrConfigUserODBC12_user(_this, szDSN, szServer, szDatabase, wPort, CRusiaBillingMgrConfigUserODBC12_next);
         };
-        void CRusiaBillingMgrDeleteMem14_wrapper(struct CRusiaBillingMgr* _this)
+        static void CRusiaBillingMgrDeleteMem14_wrapper(struct CRusiaBillingMgr* _this)
         {
            CRusiaBillingMgrDeleteMem14_user(_this, CRusiaBillingMgrDeleteMem14_next);
         };
-        int CRusiaBillingMgrFree16_wrapper(struct CRusiaBillingMgr* _this)
+        static int CRusiaBillingMgrFree16_wrapper(struct CRusiaBillingMgr* _this)
         {
            return CRusiaBillingMgrFree16_user(_this, CRusiaBillingMgrFree16_next);
         };
-        int CRusiaBillingMgrInit18_wrapper(struct CRusiaBillingMgr* _this)
+        static int CRusiaBillingMgrInit18_wrapper(struct CRusiaBillingMgr* _this)
         {
            return CRusiaBillingMgrInit18_user(_this, CRusiaBillingMgrInit18_next);
         };
-        struct CRusiaBillingMgr* CRusiaBillingMgrInstance20_wrapper(struct CRusiaBillingMgr* _this)
+        static struct CRusiaBillingMgr* CRusiaBillingMgrInstance20_wrapper(struct CRusiaBillingMgr* _this)
         {
            return CRusiaBillingMgrInstance20_user(_this, CRusiaBillingMgrInstance20_next);
         };
-        int CRusiaBillingMgrLoadINIFile22_wrapper(struct CRusiaBillingMgr* _this)
+        static int CRusiaBillingMgrLoadINIFile22_wrapper(struct CRusiaBillingMgr* _this)
         {
            return CRusiaBillingMgrLoadINIFile22_user(_this, CRusiaBillingMgrLoadINIFile22_next);
         };
-        void CRusiaBillingMgrRelease24_wrapper(struct CRusiaBillingMgr* _this)
+        static void CRusiaBillingMgrRelease24_wrapper(struct CRusiaBillingMgr* _this)
         {
            CRusiaBillingMgrRelease24_user(_this, CRusiaBillingMgrRelease24_next);
         };
-        char* CRusiaBillingMgrdhExtractSubString28_wrapper(struct CRusiaBillingMgr* _this, char* szSub, char* szFull, char cToken)
+        static char* CRusiaBillingMgrdhExtractSubString28_wrapper(struct CRusiaBillingMgr* _this, char* szSub, char* szFull, char cToken)
         {
            return CRusiaBillingMgrdhExtractSubString28_user(_this, szSub, szFull, cToken, CRusiaBillingMgrdhExtractSubString28_next);
         };
-        void CRusiaBillingMgrdhRExtractSubString30_wrapper(struct CRusiaBillingMgr* _this, char* szSub, char* szFull, char cToken)
+        static void CRusiaBillingMgrdhRExtractSubString30_wrapper(struct CRusiaBillingMgr* _this, char* szSub, char* szFull, char cToken)
         {
            CRusiaBillingMgrdhRExtractSubString30_user(_this, szSub, szFull, cToken, CRusiaBillingMgrdhRExtractSubString30_next);
         };
-        void CRusiaBillingMgrdtor_CRusiaBillingMgr32_wrapper(struct CRusiaBillingMgr* _this)
+        static void CRusiaBillingMgrdtor_CRusiaBillingMgr32_wrapper(struct CRusiaBillingMgr* _this)
         {
            CRusiaBillingMgrdtor_CRusiaBillingMgr32_user(_this, CRusiaBillingMgrdtor_CRusiaBillingMgr32_next);
         };
         
-        hook_record CRusiaBillingMgr_functions[] = {
+        static hook_record CRusiaBillingMgr_functions[] = {
         {   (LPVOID)0x140321a90L,
             (LPVOID *)&CRusiaBillingMgrArrangeString2_user,
             (LPVOID *)&CRusiaBillingMgrArrangeString2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

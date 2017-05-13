@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMapExtendctor_CMapExtend2_ptr CMapExtendctor_CMapExtend2_next(nullptr);
-        info::CMapExtendctor_CMapExtend2_clbk CMapExtendctor_CMapExtend2_user(nullptr);
-        info::CMapExtendctor_CMapExtend4_ptr CMapExtendctor_CMapExtend4_next(nullptr);
-        info::CMapExtendctor_CMapExtend4_clbk CMapExtendctor_CMapExtend4_user(nullptr);
-        info::CMapExtendConvertToMap6_ptr CMapExtendConvertToMap6_next(nullptr);
-        info::CMapExtendConvertToMap6_clbk CMapExtendConvertToMap6_user(nullptr);
-        info::CMapExtendDrawRect8_ptr CMapExtendDrawRect8_next(nullptr);
-        info::CMapExtendDrawRect8_clbk CMapExtendDrawRect8_user(nullptr);
-        info::CMapExtendEndScreenPoint10_ptr CMapExtendEndScreenPoint10_next(nullptr);
-        info::CMapExtendEndScreenPoint10_clbk CMapExtendEndScreenPoint10_user(nullptr);
-        info::CMapExtendGetExtendSize12_ptr CMapExtendGetExtendSize12_next(nullptr);
-        info::CMapExtendGetExtendSize12_clbk CMapExtendGetExtendSize12_user(nullptr);
-        info::CMapExtendInit14_ptr CMapExtendInit14_next(nullptr);
-        info::CMapExtendInit14_clbk CMapExtendInit14_user(nullptr);
-        info::CMapExtendMoveScreenPoint16_ptr CMapExtendMoveScreenPoint16_next(nullptr);
-        info::CMapExtendMoveScreenPoint16_clbk CMapExtendMoveScreenPoint16_user(nullptr);
-        info::CMapExtendScrollMapDown18_ptr CMapExtendScrollMapDown18_next(nullptr);
-        info::CMapExtendScrollMapDown18_clbk CMapExtendScrollMapDown18_user(nullptr);
-        info::CMapExtendScrollMapLeft20_ptr CMapExtendScrollMapLeft20_next(nullptr);
-        info::CMapExtendScrollMapLeft20_clbk CMapExtendScrollMapLeft20_user(nullptr);
-        info::CMapExtendScrollMapRight22_ptr CMapExtendScrollMapRight22_next(nullptr);
-        info::CMapExtendScrollMapRight22_clbk CMapExtendScrollMapRight22_user(nullptr);
-        info::CMapExtendScrollMapUp24_ptr CMapExtendScrollMapUp24_next(nullptr);
-        info::CMapExtendScrollMapUp24_clbk CMapExtendScrollMapUp24_user(nullptr);
-        info::CMapExtendStartScreenPoint26_ptr CMapExtendStartScreenPoint26_next(nullptr);
-        info::CMapExtendStartScreenPoint26_clbk CMapExtendStartScreenPoint26_user(nullptr);
-        info::CMapExtenddtor_CMapExtend28_ptr CMapExtenddtor_CMapExtend28_next(nullptr);
-        info::CMapExtenddtor_CMapExtend28_clbk CMapExtenddtor_CMapExtend28_user(nullptr);
+        static info::CMapExtendctor_CMapExtend2_ptr CMapExtendctor_CMapExtend2_next(nullptr);
+        static info::CMapExtendctor_CMapExtend2_clbk CMapExtendctor_CMapExtend2_user(nullptr);
+        static info::CMapExtendctor_CMapExtend4_ptr CMapExtendctor_CMapExtend4_next(nullptr);
+        static info::CMapExtendctor_CMapExtend4_clbk CMapExtendctor_CMapExtend4_user(nullptr);
+        static info::CMapExtendConvertToMap6_ptr CMapExtendConvertToMap6_next(nullptr);
+        static info::CMapExtendConvertToMap6_clbk CMapExtendConvertToMap6_user(nullptr);
+        static info::CMapExtendDrawRect8_ptr CMapExtendDrawRect8_next(nullptr);
+        static info::CMapExtendDrawRect8_clbk CMapExtendDrawRect8_user(nullptr);
+        static info::CMapExtendEndScreenPoint10_ptr CMapExtendEndScreenPoint10_next(nullptr);
+        static info::CMapExtendEndScreenPoint10_clbk CMapExtendEndScreenPoint10_user(nullptr);
+        static info::CMapExtendGetExtendSize12_ptr CMapExtendGetExtendSize12_next(nullptr);
+        static info::CMapExtendGetExtendSize12_clbk CMapExtendGetExtendSize12_user(nullptr);
+        static info::CMapExtendInit14_ptr CMapExtendInit14_next(nullptr);
+        static info::CMapExtendInit14_clbk CMapExtendInit14_user(nullptr);
+        static info::CMapExtendMoveScreenPoint16_ptr CMapExtendMoveScreenPoint16_next(nullptr);
+        static info::CMapExtendMoveScreenPoint16_clbk CMapExtendMoveScreenPoint16_user(nullptr);
+        static info::CMapExtendScrollMapDown18_ptr CMapExtendScrollMapDown18_next(nullptr);
+        static info::CMapExtendScrollMapDown18_clbk CMapExtendScrollMapDown18_user(nullptr);
+        static info::CMapExtendScrollMapLeft20_ptr CMapExtendScrollMapLeft20_next(nullptr);
+        static info::CMapExtendScrollMapLeft20_clbk CMapExtendScrollMapLeft20_user(nullptr);
+        static info::CMapExtendScrollMapRight22_ptr CMapExtendScrollMapRight22_next(nullptr);
+        static info::CMapExtendScrollMapRight22_clbk CMapExtendScrollMapRight22_user(nullptr);
+        static info::CMapExtendScrollMapUp24_ptr CMapExtendScrollMapUp24_next(nullptr);
+        static info::CMapExtendScrollMapUp24_clbk CMapExtendScrollMapUp24_user(nullptr);
+        static info::CMapExtendStartScreenPoint26_ptr CMapExtendStartScreenPoint26_next(nullptr);
+        static info::CMapExtendStartScreenPoint26_clbk CMapExtendStartScreenPoint26_user(nullptr);
+        static info::CMapExtenddtor_CMapExtend28_ptr CMapExtenddtor_CMapExtend28_next(nullptr);
+        static info::CMapExtenddtor_CMapExtend28_clbk CMapExtenddtor_CMapExtend28_user(nullptr);
         
-        void CMapExtendctor_CMapExtend2_wrapper(struct CMapExtend* _this, struct CSurface** pSF)
+        static void CMapExtendctor_CMapExtend2_wrapper(struct CMapExtend* _this, struct CSurface** pSF)
         {
            CMapExtendctor_CMapExtend2_user(_this, pSF, CMapExtendctor_CMapExtend2_next);
         };
-        void CMapExtendctor_CMapExtend4_wrapper(struct CMapExtend* _this)
+        static void CMapExtendctor_CMapExtend4_wrapper(struct CMapExtend* _this)
         {
            CMapExtendctor_CMapExtend4_user(_this, CMapExtendctor_CMapExtend4_next);
         };
-        void CMapExtendConvertToMap6_wrapper(struct CMapExtend* _this, struct CSize* szMap)
+        static void CMapExtendConvertToMap6_wrapper(struct CMapExtend* _this, struct CSize* szMap)
         {
            CMapExtendConvertToMap6_user(_this, szMap, CMapExtendConvertToMap6_next);
         };
-        void CMapExtendDrawRect8_wrapper(struct CMapExtend* _this)
+        static void CMapExtendDrawRect8_wrapper(struct CMapExtend* _this)
         {
            CMapExtendDrawRect8_user(_this, CMapExtendDrawRect8_next);
         };
-        int CMapExtendEndScreenPoint10_wrapper(struct CMapExtend* _this, struct CSize* szMap)
+        static int CMapExtendEndScreenPoint10_wrapper(struct CMapExtend* _this, struct CSize* szMap)
         {
            return CMapExtendEndScreenPoint10_user(_this, szMap, CMapExtendEndScreenPoint10_next);
         };
-        struct CSize* CMapExtendGetExtendSize12_wrapper(struct CMapExtend* _this)
+        static struct CSize* CMapExtendGetExtendSize12_wrapper(struct CMapExtend* _this)
         {
            return CMapExtendGetExtendSize12_user(_this, CMapExtendGetExtendSize12_next);
         };
-        void CMapExtendInit14_wrapper(struct CMapExtend* _this, struct CSurface** pSF)
+        static void CMapExtendInit14_wrapper(struct CMapExtend* _this, struct CSurface** pSF)
         {
            CMapExtendInit14_user(_this, pSF, CMapExtendInit14_next);
         };
-        void CMapExtendMoveScreenPoint16_wrapper(struct CMapExtend* _this, struct CPoint* pt)
+        static void CMapExtendMoveScreenPoint16_wrapper(struct CMapExtend* _this, struct CPoint* pt)
         {
            CMapExtendMoveScreenPoint16_user(_this, pt, CMapExtendMoveScreenPoint16_next);
         };
-        void CMapExtendScrollMapDown18_wrapper(struct CMapExtend* _this, int nMapY, int nInterval)
+        static void CMapExtendScrollMapDown18_wrapper(struct CMapExtend* _this, int nMapY, int nInterval)
         {
            CMapExtendScrollMapDown18_user(_this, nMapY, nInterval, CMapExtendScrollMapDown18_next);
         };
-        void CMapExtendScrollMapLeft20_wrapper(struct CMapExtend* _this, int nInterval)
+        static void CMapExtendScrollMapLeft20_wrapper(struct CMapExtend* _this, int nInterval)
         {
            CMapExtendScrollMapLeft20_user(_this, nInterval, CMapExtendScrollMapLeft20_next);
         };
-        void CMapExtendScrollMapRight22_wrapper(struct CMapExtend* _this, int nMapX, int nInterval)
+        static void CMapExtendScrollMapRight22_wrapper(struct CMapExtend* _this, int nMapX, int nInterval)
         {
            CMapExtendScrollMapRight22_user(_this, nMapX, nInterval, CMapExtendScrollMapRight22_next);
         };
-        void CMapExtendScrollMapUp24_wrapper(struct CMapExtend* _this, int nInterval)
+        static void CMapExtendScrollMapUp24_wrapper(struct CMapExtend* _this, int nInterval)
         {
            CMapExtendScrollMapUp24_user(_this, nInterval, CMapExtendScrollMapUp24_next);
         };
-        void CMapExtendStartScreenPoint26_wrapper(struct CMapExtend* _this, struct CPoint* pt, struct CMapData* pMap, struct CRect* rcWnd)
+        static void CMapExtendStartScreenPoint26_wrapper(struct CMapExtend* _this, struct CPoint* pt, struct CMapData* pMap, struct CRect* rcWnd)
         {
            CMapExtendStartScreenPoint26_user(_this, pt, pMap, rcWnd, CMapExtendStartScreenPoint26_next);
         };
-        void CMapExtenddtor_CMapExtend28_wrapper(struct CMapExtend* _this)
+        static void CMapExtenddtor_CMapExtend28_wrapper(struct CMapExtend* _this)
         {
            CMapExtenddtor_CMapExtend28_user(_this, CMapExtenddtor_CMapExtend28_next);
         };
         
-        hook_record CMapExtend_functions[] = {
+        static hook_record CMapExtend_functions[] = {
         {   (LPVOID)0x1401a1500L,
             (LPVOID *)&CMapExtendctor_CMapExtend2_user,
             (LPVOID *)&CMapExtendctor_CMapExtend2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

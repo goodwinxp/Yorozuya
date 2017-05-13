@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_apex_send_loginsize2_ptr _apex_send_loginsize2_next(nullptr);
-        info::_apex_send_loginsize2_clbk _apex_send_loginsize2_user(nullptr);
+        static info::_apex_send_loginsize2_ptr _apex_send_loginsize2_next(nullptr);
+        static info::_apex_send_loginsize2_clbk _apex_send_loginsize2_user(nullptr);
         
-        int _apex_send_loginsize2_wrapper(struct _apex_send_login* _this)
+        static int _apex_send_loginsize2_wrapper(struct _apex_send_login* _this)
         {
            return _apex_send_loginsize2_user(_this, _apex_send_loginsize2_next);
         };
         
-        hook_record _apex_send_login_functions[] = {
+        static hook_record _apex_send_login_functions[] = {
         {   (LPVOID)0x140410bf0L,
             (LPVOID *)&_apex_send_loginsize2_user,
             (LPVOID *)&_apex_send_loginsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,77 +8,77 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaSignalReActorAddAction2_ptr CLuaSignalReActorAddAction2_next(nullptr);
-        info::CLuaSignalReActorAddAction2_clbk CLuaSignalReActorAddAction2_user(nullptr);
-        info::CLuaSignalReActorctor_CLuaSignalReActor4_ptr CLuaSignalReActorctor_CLuaSignalReActor4_next(nullptr);
-        info::CLuaSignalReActorctor_CLuaSignalReActor4_clbk CLuaSignalReActorctor_CLuaSignalReActor4_user(nullptr);
-        info::CLuaSignalReActorFree6_ptr CLuaSignalReActorFree6_next(nullptr);
-        info::CLuaSignalReActorFree6_clbk CLuaSignalReActorFree6_user(nullptr);
-        info::CLuaSignalReActorInit8_ptr CLuaSignalReActorInit8_next(nullptr);
-        info::CLuaSignalReActorInit8_clbk CLuaSignalReActorInit8_user(nullptr);
-        info::CLuaSignalReActorSetSignalAndAction10_ptr CLuaSignalReActorSetSignalAndAction10_next(nullptr);
-        info::CLuaSignalReActorSetSignalAndAction10_clbk CLuaSignalReActorSetSignalAndAction10_user(nullptr);
-        info::CLuaSignalReActor_Free12_ptr CLuaSignalReActor_Free12_next(nullptr);
-        info::CLuaSignalReActor_Free12_clbk CLuaSignalReActor_Free12_user(nullptr);
-        info::CLuaSignalReActor_SearchAction14_ptr CLuaSignalReActor_SearchAction14_next(nullptr);
-        info::CLuaSignalReActor_SearchAction14_clbk CLuaSignalReActor_SearchAction14_user(nullptr);
-        info::CLuaSignalReActor_SearchEmptyAction16_ptr CLuaSignalReActor_SearchEmptyAction16_next(nullptr);
-        info::CLuaSignalReActor_SearchEmptyAction16_clbk CLuaSignalReActor_SearchEmptyAction16_user(nullptr);
-        info::CLuaSignalReActordtor_CLuaSignalReActor18_ptr CLuaSignalReActordtor_CLuaSignalReActor18_next(nullptr);
-        info::CLuaSignalReActordtor_CLuaSignalReActor18_clbk CLuaSignalReActordtor_CLuaSignalReActor18_user(nullptr);
+        static info::CLuaSignalReActorAddAction2_ptr CLuaSignalReActorAddAction2_next(nullptr);
+        static info::CLuaSignalReActorAddAction2_clbk CLuaSignalReActorAddAction2_user(nullptr);
+        static info::CLuaSignalReActorctor_CLuaSignalReActor4_ptr CLuaSignalReActorctor_CLuaSignalReActor4_next(nullptr);
+        static info::CLuaSignalReActorctor_CLuaSignalReActor4_clbk CLuaSignalReActorctor_CLuaSignalReActor4_user(nullptr);
+        static info::CLuaSignalReActorFree6_ptr CLuaSignalReActorFree6_next(nullptr);
+        static info::CLuaSignalReActorFree6_clbk CLuaSignalReActorFree6_user(nullptr);
+        static info::CLuaSignalReActorInit8_ptr CLuaSignalReActorInit8_next(nullptr);
+        static info::CLuaSignalReActorInit8_clbk CLuaSignalReActorInit8_user(nullptr);
+        static info::CLuaSignalReActorSetSignalAndAction10_ptr CLuaSignalReActorSetSignalAndAction10_next(nullptr);
+        static info::CLuaSignalReActorSetSignalAndAction10_clbk CLuaSignalReActorSetSignalAndAction10_user(nullptr);
+        static info::CLuaSignalReActor_Free12_ptr CLuaSignalReActor_Free12_next(nullptr);
+        static info::CLuaSignalReActor_Free12_clbk CLuaSignalReActor_Free12_user(nullptr);
+        static info::CLuaSignalReActor_SearchAction14_ptr CLuaSignalReActor_SearchAction14_next(nullptr);
+        static info::CLuaSignalReActor_SearchAction14_clbk CLuaSignalReActor_SearchAction14_user(nullptr);
+        static info::CLuaSignalReActor_SearchEmptyAction16_ptr CLuaSignalReActor_SearchEmptyAction16_next(nullptr);
+        static info::CLuaSignalReActor_SearchEmptyAction16_clbk CLuaSignalReActor_SearchEmptyAction16_user(nullptr);
+        static info::CLuaSignalReActordtor_CLuaSignalReActor18_ptr CLuaSignalReActordtor_CLuaSignalReActor18_next(nullptr);
+        static info::CLuaSignalReActordtor_CLuaSignalReActor18_clbk CLuaSignalReActordtor_CLuaSignalReActor18_user(nullptr);
         
-        info::CLuaSignalReActor___ActionInit2_ptr CLuaSignalReActor___ActionInit2_next(nullptr);
-        info::CLuaSignalReActor___ActionInit2_clbk CLuaSignalReActor___ActionInit2_user(nullptr);
-        info::CLuaSignalReActor___Actionctor__Action4_ptr CLuaSignalReActor___Actionctor__Action4_next(nullptr);
-        info::CLuaSignalReActor___Actionctor__Action4_clbk CLuaSignalReActor___Actionctor__Action4_user(nullptr);
+        static info::CLuaSignalReActor___ActionInit2_ptr CLuaSignalReActor___ActionInit2_next(nullptr);
+        static info::CLuaSignalReActor___ActionInit2_clbk CLuaSignalReActor___ActionInit2_user(nullptr);
+        static info::CLuaSignalReActor___Actionctor__Action4_ptr CLuaSignalReActor___Actionctor__Action4_next(nullptr);
+        static info::CLuaSignalReActor___Actionctor__Action4_clbk CLuaSignalReActor___Actionctor__Action4_user(nullptr);
         
-        bool CLuaSignalReActorAddAction2_wrapper(struct CLuaSignalReActor* _this, char bySignalCode, char byType, char* strScriptName, char* strName)
+        static bool CLuaSignalReActorAddAction2_wrapper(struct CLuaSignalReActor* _this, char bySignalCode, char byType, char* strScriptName, char* strName)
         {
            return CLuaSignalReActorAddAction2_user(_this, bySignalCode, byType, strScriptName, strName, CLuaSignalReActorAddAction2_next);
         };
-        void CLuaSignalReActorctor_CLuaSignalReActor4_wrapper(struct CLuaSignalReActor* _this)
+        static void CLuaSignalReActorctor_CLuaSignalReActor4_wrapper(struct CLuaSignalReActor* _this)
         {
            CLuaSignalReActorctor_CLuaSignalReActor4_user(_this, CLuaSignalReActorctor_CLuaSignalReActor4_next);
         };
-        void CLuaSignalReActorFree6_wrapper(struct CLuaSignalReActor* _this)
+        static void CLuaSignalReActorFree6_wrapper(struct CLuaSignalReActor* _this)
         {
            CLuaSignalReActorFree6_user(_this, CLuaSignalReActorFree6_next);
         };
-        void CLuaSignalReActorInit8_wrapper(struct CLuaSignalReActor* _this)
+        static void CLuaSignalReActorInit8_wrapper(struct CLuaSignalReActor* _this)
         {
            CLuaSignalReActorInit8_user(_this, CLuaSignalReActorInit8_next);
         };
-        bool CLuaSignalReActorSetSignalAndAction10_wrapper(struct CLuaSignalReActor* _this, char bySignalCode)
+        static bool CLuaSignalReActorSetSignalAndAction10_wrapper(struct CLuaSignalReActor* _this, char bySignalCode)
         {
            return CLuaSignalReActorSetSignalAndAction10_user(_this, bySignalCode, CLuaSignalReActorSetSignalAndAction10_next);
         };
-        void CLuaSignalReActor_Free12_wrapper(struct CLuaSignalReActor* _this, struct CLuaSignalReActor::_Action* pAction)
+        static void CLuaSignalReActor_Free12_wrapper(struct CLuaSignalReActor* _this, struct CLuaSignalReActor::_Action* pAction)
         {
            CLuaSignalReActor_Free12_user(_this, pAction, CLuaSignalReActor_Free12_next);
         };
-        struct CLuaSignalReActor::_Action* CLuaSignalReActor_SearchAction14_wrapper(struct CLuaSignalReActor* _this, char bySignalCode)
+        static struct CLuaSignalReActor::_Action* CLuaSignalReActor_SearchAction14_wrapper(struct CLuaSignalReActor* _this, char bySignalCode)
         {
            return CLuaSignalReActor_SearchAction14_user(_this, bySignalCode, CLuaSignalReActor_SearchAction14_next);
         };
-        struct CLuaSignalReActor::_Action* CLuaSignalReActor_SearchEmptyAction16_wrapper(struct CLuaSignalReActor* _this)
+        static struct CLuaSignalReActor::_Action* CLuaSignalReActor_SearchEmptyAction16_wrapper(struct CLuaSignalReActor* _this)
         {
            return CLuaSignalReActor_SearchEmptyAction16_user(_this, CLuaSignalReActor_SearchEmptyAction16_next);
         };
-        void CLuaSignalReActordtor_CLuaSignalReActor18_wrapper(struct CLuaSignalReActor* _this)
+        static void CLuaSignalReActordtor_CLuaSignalReActor18_wrapper(struct CLuaSignalReActor* _this)
         {
            CLuaSignalReActordtor_CLuaSignalReActor18_user(_this, CLuaSignalReActordtor_CLuaSignalReActor18_next);
         };
         
-        void CLuaSignalReActor___ActionInit2_wrapper(struct CLuaSignalReActor::_Action* _this)
+        static void CLuaSignalReActor___ActionInit2_wrapper(struct CLuaSignalReActor::_Action* _this)
         {
            CLuaSignalReActor___ActionInit2_user(_this, CLuaSignalReActor___ActionInit2_next);
         };
-        void CLuaSignalReActor___Actionctor__Action4_wrapper(struct CLuaSignalReActor::_Action* _this)
+        static void CLuaSignalReActor___Actionctor__Action4_wrapper(struct CLuaSignalReActor::_Action* _this)
         {
            CLuaSignalReActor___Actionctor__Action4_user(_this, CLuaSignalReActor___Actionctor__Action4_next);
         };
         
-        hook_record CLuaSignalReActor_functions[] = {
+        static hook_record CLuaSignalReActor_functions[] = {
         {   (LPVOID)0x1404000a0L,
             (LPVOID *)&CLuaSignalReActorAddAction2_user,
             (LPVOID *)&CLuaSignalReActorAddAction2_next,
@@ -138,5 +138,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

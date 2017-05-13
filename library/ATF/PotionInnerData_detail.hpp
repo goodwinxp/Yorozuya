@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::PotionInnerDataInit2_ptr PotionInnerDataInit2_next(nullptr);
-        info::PotionInnerDataInit2_clbk PotionInnerDataInit2_user(nullptr);
-        info::PotionInnerDatactor_PotionInnerData4_ptr PotionInnerDatactor_PotionInnerData4_next(nullptr);
-        info::PotionInnerDatactor_PotionInnerData4_clbk PotionInnerDatactor_PotionInnerData4_user(nullptr);
-        info::PotionInnerDatadtor_PotionInnerData6_ptr PotionInnerDatadtor_PotionInnerData6_next(nullptr);
-        info::PotionInnerDatadtor_PotionInnerData6_clbk PotionInnerDatadtor_PotionInnerData6_user(nullptr);
+        static info::PotionInnerDataInit2_ptr PotionInnerDataInit2_next(nullptr);
+        static info::PotionInnerDataInit2_clbk PotionInnerDataInit2_user(nullptr);
+        static info::PotionInnerDatactor_PotionInnerData4_ptr PotionInnerDatactor_PotionInnerData4_next(nullptr);
+        static info::PotionInnerDatactor_PotionInnerData4_clbk PotionInnerDatactor_PotionInnerData4_user(nullptr);
+        static info::PotionInnerDatadtor_PotionInnerData6_ptr PotionInnerDatadtor_PotionInnerData6_next(nullptr);
+        static info::PotionInnerDatadtor_PotionInnerData6_clbk PotionInnerDatadtor_PotionInnerData6_user(nullptr);
         
-        void PotionInnerDataInit2_wrapper(struct PotionInnerData* _this)
+        static void PotionInnerDataInit2_wrapper(struct PotionInnerData* _this)
         {
            PotionInnerDataInit2_user(_this, PotionInnerDataInit2_next);
         };
-        void PotionInnerDatactor_PotionInnerData4_wrapper(struct PotionInnerData* _this)
+        static void PotionInnerDatactor_PotionInnerData4_wrapper(struct PotionInnerData* _this)
         {
            PotionInnerDatactor_PotionInnerData4_user(_this, PotionInnerDatactor_PotionInnerData4_next);
         };
-        void PotionInnerDatadtor_PotionInnerData6_wrapper(struct PotionInnerData* _this)
+        static void PotionInnerDatadtor_PotionInnerData6_wrapper(struct PotionInnerData* _this)
         {
            PotionInnerDatadtor_PotionInnerData6_user(_this, PotionInnerDatadtor_PotionInnerData6_next);
         };
         
-        hook_record PotionInnerData_functions[] = {
+        static hook_record PotionInnerData_functions[] = {
         {   (LPVOID)0x1403a1280L,
             (LPVOID *)&PotionInnerDataInit2_user,
             (LPVOID *)&PotionInnerDataInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,165 +8,165 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CEntityAddFlag1_ptr CEntityAddFlag1_next(nullptr);
-        info::CEntityAddFlag1_clbk CEntityAddFlag1_user(nullptr);
-        info::CEntityDrawEntity2_ptr CEntityDrawEntity2_next(nullptr);
-        info::CEntityDrawEntity2_clbk CEntityDrawEntity2_user(nullptr);
-        info::CEntityDrawEntityVS3_ptr CEntityDrawEntityVS3_next(nullptr);
-        info::CEntityDrawEntityVS3_clbk CEntityDrawEntityVS3_user(nullptr);
-        info::CEntityDrawOneMatGroup4_ptr CEntityDrawOneMatGroup4_next(nullptr);
-        info::CEntityDrawOneMatGroup4_clbk CEntityDrawOneMatGroup4_user(nullptr);
-        info::CEntityDrawOneMatGroupVS5_ptr CEntityDrawOneMatGroupVS5_next(nullptr);
-        info::CEntityDrawOneMatGroupVS5_clbk CEntityDrawOneMatGroupVS5_user(nullptr);
-        info::CEntityGetAnimationMatrix6_ptr CEntityGetAnimationMatrix6_next(nullptr);
-        info::CEntityGetAnimationMatrix6_clbk CEntityGetAnimationMatrix6_user(nullptr);
-        info::CEntityGetMatGroup7_ptr CEntityGetMatGroup7_next(nullptr);
-        info::CEntityGetMatGroup7_clbk CEntityGetMatGroup7_user(nullptr);
-        info::CEntityGetMatGroupNum8_ptr CEntityGetMatGroupNum8_next(nullptr);
-        info::CEntityGetMatGroupNum8_clbk CEntityGetMatGroupNum8_user(nullptr);
-        info::CEntityGetMatNum9_ptr CEntityGetMatNum9_next(nullptr);
-        info::CEntityGetMatNum9_clbk CEntityGetMatNum9_user(nullptr);
-        info::CEntityGetObjectA10_ptr CEntityGetObjectA10_next(nullptr);
-        info::CEntityGetObjectA10_clbk CEntityGetObjectA10_user(nullptr);
-        info::CEntityGetStaticIndexedBuffer11_ptr CEntityGetStaticIndexedBuffer11_next(nullptr);
-        info::CEntityGetStaticIndexedBuffer11_clbk CEntityGetStaticIndexedBuffer11_user(nullptr);
-        info::CEntityGetStaticVertexBuffer12_ptr CEntityGetStaticVertexBuffer12_next(nullptr);
-        info::CEntityGetStaticVertexBuffer12_clbk CEntityGetStaticVertexBuffer12_user(nullptr);
-        info::CEntityGetUsedVertexBufferSize13_ptr CEntityGetUsedVertexBufferSize13_next(nullptr);
-        info::CEntityGetUsedVertexBufferSize13_clbk CEntityGetUsedVertexBufferSize13_user(nullptr);
-        info::CEntityIsAlpha14_ptr CEntityIsAlpha14_next(nullptr);
-        info::CEntityIsAlpha14_clbk CEntityIsAlpha14_user(nullptr);
-        info::CEntityIsEnableShaderID15_ptr CEntityIsEnableShaderID15_next(nullptr);
-        info::CEntityIsEnableShaderID15_clbk CEntityIsEnableShaderID15_user(nullptr);
-        info::CEntityIsFirstAlpha16_ptr CEntityIsFirstAlpha16_next(nullptr);
-        info::CEntityIsFirstAlpha16_clbk CEntityIsFirstAlpha16_user(nullptr);
-        info::CEntityLoadEntity17_ptr CEntityLoadEntity17_next(nullptr);
-        info::CEntityLoadEntity17_clbk CEntityLoadEntity17_user(nullptr);
-        info::CEntityOnceDrawEntity18_ptr CEntityOnceDrawEntity18_next(nullptr);
-        info::CEntityOnceDrawEntity18_clbk CEntityOnceDrawEntity18_user(nullptr);
-        info::CEntityPrepareAnimation19_ptr CEntityPrepareAnimation19_next(nullptr);
-        info::CEntityPrepareAnimation19_clbk CEntityPrepareAnimation19_user(nullptr);
-        info::CEntityReleaseEntity20_ptr CEntityReleaseEntity20_next(nullptr);
-        info::CEntityReleaseEntity20_clbk CEntityReleaseEntity20_user(nullptr);
-        info::CEntityReleaseTexMem21_ptr CEntityReleaseTexMem21_next(nullptr);
-        info::CEntityReleaseTexMem21_clbk CEntityReleaseTexMem21_user(nullptr);
-        info::CEntityRestoreTexMem22_ptr CEntityRestoreTexMem22_next(nullptr);
-        info::CEntityRestoreTexMem22_clbk CEntityRestoreTexMem22_user(nullptr);
-        info::CEntitySetMapColor23_ptr CEntitySetMapColor23_next(nullptr);
-        info::CEntitySetMapColor23_clbk CEntitySetMapColor23_user(nullptr);
-        info::CEntitySetMaterialAndLight24_ptr CEntitySetMaterialAndLight24_next(nullptr);
-        info::CEntitySetMaterialAndLight24_clbk CEntitySetMaterialAndLight24_user(nullptr);
-        info::CEntitySetVertexShaderID25_ptr CEntitySetVertexShaderID25_next(nullptr);
-        info::CEntitySetVertexShaderID25_clbk CEntitySetVertexShaderID25_user(nullptr);
-        info::CEntitydtor_CEntity27_ptr CEntitydtor_CEntity27_next(nullptr);
-        info::CEntitydtor_CEntity27_clbk CEntitydtor_CEntity27_user(nullptr);
+        static info::CEntityAddFlag1_ptr CEntityAddFlag1_next(nullptr);
+        static info::CEntityAddFlag1_clbk CEntityAddFlag1_user(nullptr);
+        static info::CEntityDrawEntity2_ptr CEntityDrawEntity2_next(nullptr);
+        static info::CEntityDrawEntity2_clbk CEntityDrawEntity2_user(nullptr);
+        static info::CEntityDrawEntityVS3_ptr CEntityDrawEntityVS3_next(nullptr);
+        static info::CEntityDrawEntityVS3_clbk CEntityDrawEntityVS3_user(nullptr);
+        static info::CEntityDrawOneMatGroup4_ptr CEntityDrawOneMatGroup4_next(nullptr);
+        static info::CEntityDrawOneMatGroup4_clbk CEntityDrawOneMatGroup4_user(nullptr);
+        static info::CEntityDrawOneMatGroupVS5_ptr CEntityDrawOneMatGroupVS5_next(nullptr);
+        static info::CEntityDrawOneMatGroupVS5_clbk CEntityDrawOneMatGroupVS5_user(nullptr);
+        static info::CEntityGetAnimationMatrix6_ptr CEntityGetAnimationMatrix6_next(nullptr);
+        static info::CEntityGetAnimationMatrix6_clbk CEntityGetAnimationMatrix6_user(nullptr);
+        static info::CEntityGetMatGroup7_ptr CEntityGetMatGroup7_next(nullptr);
+        static info::CEntityGetMatGroup7_clbk CEntityGetMatGroup7_user(nullptr);
+        static info::CEntityGetMatGroupNum8_ptr CEntityGetMatGroupNum8_next(nullptr);
+        static info::CEntityGetMatGroupNum8_clbk CEntityGetMatGroupNum8_user(nullptr);
+        static info::CEntityGetMatNum9_ptr CEntityGetMatNum9_next(nullptr);
+        static info::CEntityGetMatNum9_clbk CEntityGetMatNum9_user(nullptr);
+        static info::CEntityGetObjectA10_ptr CEntityGetObjectA10_next(nullptr);
+        static info::CEntityGetObjectA10_clbk CEntityGetObjectA10_user(nullptr);
+        static info::CEntityGetStaticIndexedBuffer11_ptr CEntityGetStaticIndexedBuffer11_next(nullptr);
+        static info::CEntityGetStaticIndexedBuffer11_clbk CEntityGetStaticIndexedBuffer11_user(nullptr);
+        static info::CEntityGetStaticVertexBuffer12_ptr CEntityGetStaticVertexBuffer12_next(nullptr);
+        static info::CEntityGetStaticVertexBuffer12_clbk CEntityGetStaticVertexBuffer12_user(nullptr);
+        static info::CEntityGetUsedVertexBufferSize13_ptr CEntityGetUsedVertexBufferSize13_next(nullptr);
+        static info::CEntityGetUsedVertexBufferSize13_clbk CEntityGetUsedVertexBufferSize13_user(nullptr);
+        static info::CEntityIsAlpha14_ptr CEntityIsAlpha14_next(nullptr);
+        static info::CEntityIsAlpha14_clbk CEntityIsAlpha14_user(nullptr);
+        static info::CEntityIsEnableShaderID15_ptr CEntityIsEnableShaderID15_next(nullptr);
+        static info::CEntityIsEnableShaderID15_clbk CEntityIsEnableShaderID15_user(nullptr);
+        static info::CEntityIsFirstAlpha16_ptr CEntityIsFirstAlpha16_next(nullptr);
+        static info::CEntityIsFirstAlpha16_clbk CEntityIsFirstAlpha16_user(nullptr);
+        static info::CEntityLoadEntity17_ptr CEntityLoadEntity17_next(nullptr);
+        static info::CEntityLoadEntity17_clbk CEntityLoadEntity17_user(nullptr);
+        static info::CEntityOnceDrawEntity18_ptr CEntityOnceDrawEntity18_next(nullptr);
+        static info::CEntityOnceDrawEntity18_clbk CEntityOnceDrawEntity18_user(nullptr);
+        static info::CEntityPrepareAnimation19_ptr CEntityPrepareAnimation19_next(nullptr);
+        static info::CEntityPrepareAnimation19_clbk CEntityPrepareAnimation19_user(nullptr);
+        static info::CEntityReleaseEntity20_ptr CEntityReleaseEntity20_next(nullptr);
+        static info::CEntityReleaseEntity20_clbk CEntityReleaseEntity20_user(nullptr);
+        static info::CEntityReleaseTexMem21_ptr CEntityReleaseTexMem21_next(nullptr);
+        static info::CEntityReleaseTexMem21_clbk CEntityReleaseTexMem21_user(nullptr);
+        static info::CEntityRestoreTexMem22_ptr CEntityRestoreTexMem22_next(nullptr);
+        static info::CEntityRestoreTexMem22_clbk CEntityRestoreTexMem22_user(nullptr);
+        static info::CEntitySetMapColor23_ptr CEntitySetMapColor23_next(nullptr);
+        static info::CEntitySetMapColor23_clbk CEntitySetMapColor23_user(nullptr);
+        static info::CEntitySetMaterialAndLight24_ptr CEntitySetMaterialAndLight24_next(nullptr);
+        static info::CEntitySetMaterialAndLight24_clbk CEntitySetMaterialAndLight24_user(nullptr);
+        static info::CEntitySetVertexShaderID25_ptr CEntitySetVertexShaderID25_next(nullptr);
+        static info::CEntitySetVertexShaderID25_clbk CEntitySetVertexShaderID25_user(nullptr);
+        static info::CEntitydtor_CEntity27_ptr CEntitydtor_CEntity27_next(nullptr);
+        static info::CEntitydtor_CEntity27_clbk CEntitydtor_CEntity27_user(nullptr);
         
-        void CEntityAddFlag1_wrapper(struct CEntity* _this, uint32_t arg_0)
+        static void CEntityAddFlag1_wrapper(struct CEntity* _this, uint32_t arg_0)
         {
            CEntityAddFlag1_user(_this, arg_0, CEntityAddFlag1_next);
         };
-        int64_t CEntityDrawEntity2_wrapper(struct CEntity* _this, float** arg_0, uint32_t arg_1, float arg_2)
+        static int64_t CEntityDrawEntity2_wrapper(struct CEntity* _this, float** arg_0, uint32_t arg_1, float arg_2)
         {
            return CEntityDrawEntity2_user(_this, arg_0, arg_1, arg_2, CEntityDrawEntity2_next);
         };
-        int64_t CEntityDrawEntityVS3_wrapper(struct CEntity* _this, struct _ENTITY_LIST* arg_0, float** arg_1, uint32_t arg_2)
+        static int64_t CEntityDrawEntityVS3_wrapper(struct CEntity* _this, struct _ENTITY_LIST* arg_0, float** arg_1, uint32_t arg_2)
         {
            return CEntityDrawEntityVS3_user(_this, arg_0, arg_1, arg_2, CEntityDrawEntityVS3_next);
         };
-        void CEntityDrawOneMatGroup4_wrapper(struct CEntity* _this, struct _ENTITY_M_GROUP* arg_0)
+        static void CEntityDrawOneMatGroup4_wrapper(struct CEntity* _this, struct _ENTITY_M_GROUP* arg_0)
         {
            CEntityDrawOneMatGroup4_user(_this, arg_0, CEntityDrawOneMatGroup4_next);
         };
-        void CEntityDrawOneMatGroupVS5_wrapper(struct CEntity* _this, struct _ENTITY_M_GROUP* arg_0)
+        static void CEntityDrawOneMatGroupVS5_wrapper(struct CEntity* _this, struct _ENTITY_M_GROUP* arg_0)
         {
            CEntityDrawOneMatGroupVS5_user(_this, arg_0, CEntityDrawOneMatGroupVS5_next);
         };
-        void CEntityGetAnimationMatrix6_wrapper(struct CEntity* _this, float** arg_0, struct _ANI_OBJECT* arg_1, float arg_2)
+        static void CEntityGetAnimationMatrix6_wrapper(struct CEntity* _this, float** arg_0, struct _ANI_OBJECT* arg_1, float arg_2)
         {
            CEntityGetAnimationMatrix6_user(_this, arg_0, arg_1, arg_2, CEntityGetAnimationMatrix6_next);
         };
-        struct _ENTITY_M_GROUP* CEntityGetMatGroup7_wrapper(struct CEntity* _this)
+        static struct _ENTITY_M_GROUP* CEntityGetMatGroup7_wrapper(struct CEntity* _this)
         {
            return CEntityGetMatGroup7_user(_this, CEntityGetMatGroup7_next);
         };
-        int64_t CEntityGetMatGroupNum8_wrapper(struct CEntity* _this)
+        static int64_t CEntityGetMatGroupNum8_wrapper(struct CEntity* _this)
         {
            return CEntityGetMatGroupNum8_user(_this, CEntityGetMatGroupNum8_next);
         };
-        int64_t CEntityGetMatNum9_wrapper(struct CEntity* _this)
+        static int64_t CEntityGetMatNum9_wrapper(struct CEntity* _this)
         {
            return CEntityGetMatNum9_user(_this, CEntityGetMatNum9_next);
         };
-        struct _ANI_OBJECT* CEntityGetObjectA10_wrapper(struct CEntity* _this)
+        static struct _ANI_OBJECT* CEntityGetObjectA10_wrapper(struct CEntity* _this)
         {
            return CEntityGetObjectA10_user(_this, CEntityGetObjectA10_next);
         };
-        struct CIndexBuffer* CEntityGetStaticIndexedBuffer11_wrapper(struct CEntity* _this)
+        static struct CIndexBuffer* CEntityGetStaticIndexedBuffer11_wrapper(struct CEntity* _this)
         {
            return CEntityGetStaticIndexedBuffer11_user(_this, CEntityGetStaticIndexedBuffer11_next);
         };
-        struct CVertexBuffer* CEntityGetStaticVertexBuffer12_wrapper(struct CEntity* _this)
+        static struct CVertexBuffer* CEntityGetStaticVertexBuffer12_wrapper(struct CEntity* _this)
         {
            return CEntityGetStaticVertexBuffer12_user(_this, CEntityGetStaticVertexBuffer12_next);
         };
-        int64_t CEntityGetUsedVertexBufferSize13_wrapper(struct CEntity* _this)
+        static int64_t CEntityGetUsedVertexBufferSize13_wrapper(struct CEntity* _this)
         {
            return CEntityGetUsedVertexBufferSize13_user(_this, CEntityGetUsedVertexBufferSize13_next);
         };
-        int64_t CEntityIsAlpha14_wrapper(struct CEntity* _this)
+        static int64_t CEntityIsAlpha14_wrapper(struct CEntity* _this)
         {
            return CEntityIsAlpha14_user(_this, CEntityIsAlpha14_next);
         };
-        int64_t CEntityIsEnableShaderID15_wrapper(struct CEntity* _this, uint32_t arg_0)
+        static int64_t CEntityIsEnableShaderID15_wrapper(struct CEntity* _this, uint32_t arg_0)
         {
            return CEntityIsEnableShaderID15_user(_this, arg_0, CEntityIsEnableShaderID15_next);
         };
-        int64_t CEntityIsFirstAlpha16_wrapper(struct CEntity* _this)
+        static int64_t CEntityIsFirstAlpha16_wrapper(struct CEntity* _this)
         {
            return CEntityIsFirstAlpha16_user(_this, CEntityIsFirstAlpha16_next);
         };
-        int64_t CEntityLoadEntity17_wrapper(struct CEntity* _this, char* arg_0, uint32_t arg_1)
+        static int64_t CEntityLoadEntity17_wrapper(struct CEntity* _this, char* arg_0, uint32_t arg_1)
         {
            return CEntityLoadEntity17_user(_this, arg_0, arg_1, CEntityLoadEntity17_next);
         };
-        int64_t CEntityOnceDrawEntity18_wrapper(struct CEntity* _this, float** arg_0, uint32_t arg_1)
+        static int64_t CEntityOnceDrawEntity18_wrapper(struct CEntity* _this, float** arg_0, uint32_t arg_1)
         {
            return CEntityOnceDrawEntity18_user(_this, arg_0, arg_1, CEntityOnceDrawEntity18_next);
         };
-        void CEntityPrepareAnimation19_wrapper(struct CEntity* _this)
+        static void CEntityPrepareAnimation19_wrapper(struct CEntity* _this)
         {
            CEntityPrepareAnimation19_user(_this, CEntityPrepareAnimation19_next);
         };
-        void CEntityReleaseEntity20_wrapper(struct CEntity* _this)
+        static void CEntityReleaseEntity20_wrapper(struct CEntity* _this)
         {
            CEntityReleaseEntity20_user(_this, CEntityReleaseEntity20_next);
         };
-        void CEntityReleaseTexMem21_wrapper(struct CEntity* _this)
+        static void CEntityReleaseTexMem21_wrapper(struct CEntity* _this)
         {
            CEntityReleaseTexMem21_user(_this, CEntityReleaseTexMem21_next);
         };
-        void CEntityRestoreTexMem22_wrapper(struct CEntity* _this)
+        static void CEntityRestoreTexMem22_wrapper(struct CEntity* _this)
         {
            CEntityRestoreTexMem22_user(_this, CEntityRestoreTexMem22_next);
         };
-        void CEntitySetMapColor23_wrapper(struct CEntity* _this, uint32_t arg_0)
+        static void CEntitySetMapColor23_wrapper(struct CEntity* _this, uint32_t arg_0)
         {
            CEntitySetMapColor23_user(_this, arg_0, CEntitySetMapColor23_next);
         };
-        void CEntitySetMaterialAndLight24_wrapper(struct CEntity* _this, uint32_t arg_0)
+        static void CEntitySetMaterialAndLight24_wrapper(struct CEntity* _this, uint32_t arg_0)
         {
            CEntitySetMaterialAndLight24_user(_this, arg_0, CEntitySetMaterialAndLight24_next);
         };
-        void CEntitySetVertexShaderID25_wrapper(struct CEntity* _this, struct _ENTITY_LIST* arg_0, float** arg_1, uint32_t arg_2)
+        static void CEntitySetVertexShaderID25_wrapper(struct CEntity* _this, struct _ENTITY_LIST* arg_0, float** arg_1, uint32_t arg_2)
         {
            CEntitySetVertexShaderID25_user(_this, arg_0, arg_1, arg_2, CEntitySetVertexShaderID25_next);
         };
-        int64_t CEntitydtor_CEntity27_wrapper(struct CEntity* _this)
+        static int64_t CEntitydtor_CEntity27_wrapper(struct CEntity* _this)
         {
            return CEntitydtor_CEntity27_user(_this, CEntitydtor_CEntity27_next);
         };
         
-        hook_record CEntity_functions[] = {
+        static hook_record CEntity_functions[] = {
         {   (LPVOID)0x14051d530L,
             (LPVOID *)&CEntityAddFlag1_user,
             (LPVOID *)&CEntityAddFlag1_next,
@@ -300,5 +300,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

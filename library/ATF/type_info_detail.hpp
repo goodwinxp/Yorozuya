@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::type_info_name_internal_method1_ptr type_info_name_internal_method1_next(nullptr);
-        info::type_info_name_internal_method1_clbk type_info_name_internal_method1_user(nullptr);
-        info::type_infoctor_type_info4_ptr type_infoctor_type_info4_next(nullptr);
-        info::type_infoctor_type_info4_clbk type_infoctor_type_info4_user(nullptr);
-        info::type_infodtor_type_info5_ptr type_infodtor_type_info5_next(nullptr);
-        info::type_infodtor_type_info5_clbk type_infodtor_type_info5_user(nullptr);
+        static info::type_info_name_internal_method1_ptr type_info_name_internal_method1_next(nullptr);
+        static info::type_info_name_internal_method1_clbk type_info_name_internal_method1_user(nullptr);
+        static info::type_infoctor_type_info4_ptr type_infoctor_type_info4_next(nullptr);
+        static info::type_infoctor_type_info4_clbk type_infoctor_type_info4_user(nullptr);
+        static info::type_infodtor_type_info5_ptr type_infodtor_type_info5_next(nullptr);
+        static info::type_infodtor_type_info5_clbk type_infodtor_type_info5_user(nullptr);
         
-        char* type_info_name_internal_method1_wrapper(struct type_info* _this, struct __type_info_node* arg_0)
+        static char* type_info_name_internal_method1_wrapper(struct type_info* _this, struct __type_info_node* arg_0)
         {
            return type_info_name_internal_method1_user(_this, arg_0, type_info_name_internal_method1_next);
         };
-        void type_infoctor_type_info4_wrapper(struct type_info* _this, struct type_info* rhs)
+        static void type_infoctor_type_info4_wrapper(struct type_info* _this, struct type_info* rhs)
         {
            type_infoctor_type_info4_user(_this, rhs, type_infoctor_type_info4_next);
         };
-        void type_infodtor_type_info5_wrapper(void* arg_0)
+        static void type_infodtor_type_info5_wrapper(void* arg_0)
         {
            type_infodtor_type_info5_user(arg_0, type_infodtor_type_info5_next);
         };
         
-        hook_record type_info_functions[] = {
+        static hook_record type_info_functions[] = {
         {   (LPVOID)0x1404de224L,
             (LPVOID *)&type_info_name_internal_method1_user,
             (LPVOID *)&type_info_name_internal_method1_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

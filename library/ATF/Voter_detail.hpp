@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::VoterDoit2_ptr VoterDoit2_next(nullptr);
-        info::VoterDoit2_clbk VoterDoit2_user(nullptr);
-        info::VoterInitialize4_ptr VoterInitialize4_next(nullptr);
-        info::VoterInitialize4_clbk VoterInitialize4_user(nullptr);
-        info::VoterIsRegistedVotePaper6_ptr VoterIsRegistedVotePaper6_next(nullptr);
-        info::VoterIsRegistedVotePaper6_clbk VoterIsRegistedVotePaper6_user(nullptr);
-        info::Voterctor_Voter8_ptr Voterctor_Voter8_next(nullptr);
-        info::Voterctor_Voter8_clbk Voterctor_Voter8_user(nullptr);
-        info::Voter_MakeVotePaper10_ptr Voter_MakeVotePaper10_next(nullptr);
-        info::Voter_MakeVotePaper10_clbk Voter_MakeVotePaper10_user(nullptr);
-        info::Voter_SendVotePaper12_ptr Voter_SendVotePaper12_next(nullptr);
-        info::Voter_SendVotePaper12_clbk Voter_SendVotePaper12_user(nullptr);
-        info::Voter_SendVotePaperAll14_ptr Voter_SendVotePaperAll14_next(nullptr);
-        info::Voter_SendVotePaperAll14_clbk Voter_SendVotePaperAll14_user(nullptr);
-        info::Voter_SendVoteScore16_ptr Voter_SendVoteScore16_next(nullptr);
-        info::Voter_SendVoteScore16_clbk Voter_SendVoteScore16_user(nullptr);
-        info::Voter_SendVoteScoreAll18_ptr Voter_SendVoteScoreAll18_next(nullptr);
-        info::Voter_SendVoteScoreAll18_clbk Voter_SendVoteScoreAll18_user(nullptr);
-        info::Voter_SetVoteScoreInfo20_ptr Voter_SetVoteScoreInfo20_next(nullptr);
-        info::Voter_SetVoteScoreInfo20_clbk Voter_SetVoteScoreInfo20_user(nullptr);
-        info::Voter_Vote22_ptr Voter_Vote22_next(nullptr);
-        info::Voter_Vote22_clbk Voter_Vote22_user(nullptr);
-        info::Voterdtor_Voter27_ptr Voterdtor_Voter27_next(nullptr);
-        info::Voterdtor_Voter27_clbk Voterdtor_Voter27_user(nullptr);
+        static info::VoterDoit2_ptr VoterDoit2_next(nullptr);
+        static info::VoterDoit2_clbk VoterDoit2_user(nullptr);
+        static info::VoterInitialize4_ptr VoterInitialize4_next(nullptr);
+        static info::VoterInitialize4_clbk VoterInitialize4_user(nullptr);
+        static info::VoterIsRegistedVotePaper6_ptr VoterIsRegistedVotePaper6_next(nullptr);
+        static info::VoterIsRegistedVotePaper6_clbk VoterIsRegistedVotePaper6_user(nullptr);
+        static info::Voterctor_Voter8_ptr Voterctor_Voter8_next(nullptr);
+        static info::Voterctor_Voter8_clbk Voterctor_Voter8_user(nullptr);
+        static info::Voter_MakeVotePaper10_ptr Voter_MakeVotePaper10_next(nullptr);
+        static info::Voter_MakeVotePaper10_clbk Voter_MakeVotePaper10_user(nullptr);
+        static info::Voter_SendVotePaper12_ptr Voter_SendVotePaper12_next(nullptr);
+        static info::Voter_SendVotePaper12_clbk Voter_SendVotePaper12_user(nullptr);
+        static info::Voter_SendVotePaperAll14_ptr Voter_SendVotePaperAll14_next(nullptr);
+        static info::Voter_SendVotePaperAll14_clbk Voter_SendVotePaperAll14_user(nullptr);
+        static info::Voter_SendVoteScore16_ptr Voter_SendVoteScore16_next(nullptr);
+        static info::Voter_SendVoteScore16_clbk Voter_SendVoteScore16_user(nullptr);
+        static info::Voter_SendVoteScoreAll18_ptr Voter_SendVoteScoreAll18_next(nullptr);
+        static info::Voter_SendVoteScoreAll18_clbk Voter_SendVoteScoreAll18_user(nullptr);
+        static info::Voter_SetVoteScoreInfo20_ptr Voter_SetVoteScoreInfo20_next(nullptr);
+        static info::Voter_SetVoteScoreInfo20_clbk Voter_SetVoteScoreInfo20_user(nullptr);
+        static info::Voter_Vote22_ptr Voter_Vote22_next(nullptr);
+        static info::Voter_Vote22_clbk Voter_Vote22_user(nullptr);
+        static info::Voterdtor_Voter27_ptr Voterdtor_Voter27_next(nullptr);
+        static info::Voterdtor_Voter27_clbk Voterdtor_Voter27_user(nullptr);
         
-        int VoterDoit2_wrapper(struct Voter* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int VoterDoit2_wrapper(struct Voter* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return VoterDoit2_user(_this, eCmd, pOne, pdata, VoterDoit2_next);
         };
-        bool VoterInitialize4_wrapper(struct Voter* _this)
+        static bool VoterInitialize4_wrapper(struct Voter* _this)
         {
            return VoterInitialize4_user(_this, VoterInitialize4_next);
         };
-        bool VoterIsRegistedVotePaper6_wrapper(struct Voter* _this, char byRace, char* pwszName)
+        static bool VoterIsRegistedVotePaper6_wrapper(struct Voter* _this, char byRace, char* pwszName)
         {
            return VoterIsRegistedVotePaper6_user(_this, byRace, pwszName, VoterIsRegistedVotePaper6_next);
         };
-        void Voterctor_Voter8_wrapper(struct Voter* _this)
+        static void Voterctor_Voter8_wrapper(struct Voter* _this)
         {
            Voterctor_Voter8_user(_this, Voterctor_Voter8_next);
         };
-        void Voter_MakeVotePaper10_wrapper(struct Voter* _this)
+        static void Voter_MakeVotePaper10_wrapper(struct Voter* _this)
         {
            Voter_MakeVotePaper10_user(_this, Voter_MakeVotePaper10_next);
         };
-        int Voter_SendVotePaper12_wrapper(struct Voter* _this, struct CPlayer* pOne)
+        static int Voter_SendVotePaper12_wrapper(struct Voter* _this, struct CPlayer* pOne)
         {
            return Voter_SendVotePaper12_user(_this, pOne, Voter_SendVotePaper12_next);
         };
-        void Voter_SendVotePaperAll14_wrapper(struct Voter* _this)
+        static void Voter_SendVotePaperAll14_wrapper(struct Voter* _this)
         {
            Voter_SendVotePaperAll14_user(_this, Voter_SendVotePaperAll14_next);
         };
-        void Voter_SendVoteScore16_wrapper(struct Voter* _this, struct CPlayer* pOne)
+        static void Voter_SendVoteScore16_wrapper(struct Voter* _this, struct CPlayer* pOne)
         {
            Voter_SendVoteScore16_user(_this, pOne, Voter_SendVoteScore16_next);
         };
-        void Voter_SendVoteScoreAll18_wrapper(struct Voter* _this, char byRace)
+        static void Voter_SendVoteScoreAll18_wrapper(struct Voter* _this, char byRace)
         {
            Voter_SendVoteScoreAll18_user(_this, byRace, Voter_SendVoteScoreAll18_next);
         };
-        void Voter_SetVoteScoreInfo20_wrapper(struct Voter* _this, char byRace, char* wszName, bool bAbstention)
+        static void Voter_SetVoteScoreInfo20_wrapper(struct Voter* _this, char byRace, char* wszName, bool bAbstention)
         {
            Voter_SetVoteScoreInfo20_user(_this, byRace, wszName, bAbstention, Voter_SetVoteScoreInfo20_next);
         };
-        int Voter_Vote22_wrapper(struct Voter* _this, struct CPlayer* pOne, char* pdata)
+        static int Voter_Vote22_wrapper(struct Voter* _this, struct CPlayer* pOne, char* pdata)
         {
            return Voter_Vote22_user(_this, pOne, pdata, Voter_Vote22_next);
         };
-        void Voterdtor_Voter27_wrapper(struct Voter* _this)
+        static void Voterdtor_Voter27_wrapper(struct Voter* _this)
         {
            Voterdtor_Voter27_user(_this, Voterdtor_Voter27_next);
         };
         
-        hook_record Voter_functions[] = {
+        static hook_record Voter_functions[] = {
         {   (LPVOID)0x1402bea50L,
             (LPVOID *)&VoterDoit2_user,
             (LPVOID *)&VoterDoit2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

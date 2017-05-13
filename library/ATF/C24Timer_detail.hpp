@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::C24Timerctor_C24Timer2_ptr C24Timerctor_C24Timer2_next(nullptr);
-        info::C24Timerctor_C24Timer2_clbk C24Timerctor_C24Timer2_user(nullptr);
-        info::C24TimerGet24TimeFromTickTime4_ptr C24TimerGet24TimeFromTickTime4_next(nullptr);
-        info::C24TimerGet24TimeFromTickTime4_clbk C24TimerGet24TimeFromTickTime4_user(nullptr);
-        info::C24TimerInit6_ptr C24TimerInit6_next(nullptr);
-        info::C24TimerInit6_clbk C24TimerInit6_user(nullptr);
-        info::C24Timerdtor_C24Timer8_ptr C24Timerdtor_C24Timer8_next(nullptr);
-        info::C24Timerdtor_C24Timer8_clbk C24Timerdtor_C24Timer8_user(nullptr);
+        static info::C24Timerctor_C24Timer2_ptr C24Timerctor_C24Timer2_next(nullptr);
+        static info::C24Timerctor_C24Timer2_clbk C24Timerctor_C24Timer2_user(nullptr);
+        static info::C24TimerGet24TimeFromTickTime4_ptr C24TimerGet24TimeFromTickTime4_next(nullptr);
+        static info::C24TimerGet24TimeFromTickTime4_clbk C24TimerGet24TimeFromTickTime4_user(nullptr);
+        static info::C24TimerInit6_ptr C24TimerInit6_next(nullptr);
+        static info::C24TimerInit6_clbk C24TimerInit6_user(nullptr);
+        static info::C24Timerdtor_C24Timer8_ptr C24Timerdtor_C24Timer8_next(nullptr);
+        static info::C24Timerdtor_C24Timer8_clbk C24Timerdtor_C24Timer8_user(nullptr);
         
-        void C24Timerctor_C24Timer2_wrapper(struct C24Timer* _this)
+        static void C24Timerctor_C24Timer2_wrapper(struct C24Timer* _this)
         {
            C24Timerctor_C24Timer2_user(_this, C24Timerctor_C24Timer2_next);
         };
-        unsigned int C24TimerGet24TimeFromTickTime4_wrapper(struct C24Timer* _this, unsigned int dwTickTime)
+        static unsigned int C24TimerGet24TimeFromTickTime4_wrapper(struct C24Timer* _this, unsigned int dwTickTime)
         {
            return C24TimerGet24TimeFromTickTime4_user(_this, dwTickTime, C24TimerGet24TimeFromTickTime4_next);
         };
-        void C24TimerInit6_wrapper(struct C24Timer* _this)
+        static void C24TimerInit6_wrapper(struct C24Timer* _this)
         {
            C24TimerInit6_user(_this, C24TimerInit6_next);
         };
-        void C24Timerdtor_C24Timer8_wrapper(struct C24Timer* _this)
+        static void C24Timerdtor_C24Timer8_wrapper(struct C24Timer* _this)
         {
            C24Timerdtor_C24Timer8_user(_this, C24Timerdtor_C24Timer8_next);
         };
         
-        hook_record C24Timer_functions[] = {
+        static hook_record C24Timer_functions[] = {
         {   (LPVOID)0x140284dc0L,
             (LPVOID *)&C24Timerctor_C24Timer2_user,
             (LPVOID *)&C24Timerctor_C24Timer2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

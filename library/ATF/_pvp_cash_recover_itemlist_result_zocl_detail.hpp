@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_ptr _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_next(nullptr);
-        info::_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_clbk _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_user(nullptr);
-        info::_pvp_cash_recover_itemlist_result_zoclsize4_ptr _pvp_cash_recover_itemlist_result_zoclsize4_next(nullptr);
-        info::_pvp_cash_recover_itemlist_result_zoclsize4_clbk _pvp_cash_recover_itemlist_result_zoclsize4_user(nullptr);
+        static info::_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_ptr _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_next(nullptr);
+        static info::_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_clbk _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_user(nullptr);
+        static info::_pvp_cash_recover_itemlist_result_zoclsize4_ptr _pvp_cash_recover_itemlist_result_zoclsize4_next(nullptr);
+        static info::_pvp_cash_recover_itemlist_result_zoclsize4_clbk _pvp_cash_recover_itemlist_result_zoclsize4_user(nullptr);
         
-        void _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_wrapper(struct _pvp_cash_recover_itemlist_result_zocl* _this)
+        static void _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_wrapper(struct _pvp_cash_recover_itemlist_result_zocl* _this)
         {
            _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_user(_this, _pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_next);
         };
-        int _pvp_cash_recover_itemlist_result_zoclsize4_wrapper(struct _pvp_cash_recover_itemlist_result_zocl* _this)
+        static int _pvp_cash_recover_itemlist_result_zoclsize4_wrapper(struct _pvp_cash_recover_itemlist_result_zocl* _this)
         {
            return _pvp_cash_recover_itemlist_result_zoclsize4_user(_this, _pvp_cash_recover_itemlist_result_zoclsize4_next);
         };
         
-        hook_record _pvp_cash_recover_itemlist_result_zocl_functions[] = {
+        static hook_record _pvp_cash_recover_itemlist_result_zocl_functions[] = {
         {   (LPVOID)0x1403f6d70L,
             (LPVOID *)&_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_user,
             (LPVOID *)&_pvp_cash_recover_itemlist_result_zoclctor__pvp_cash_recover_itemlist_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

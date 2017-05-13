@@ -8,195 +8,195 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TimeLimitMgrChack_Time2_ptr TimeLimitMgrChack_Time2_next(nullptr);
-        info::TimeLimitMgrChack_Time2_clbk TimeLimitMgrChack_Time2_user(nullptr);
-        info::TimeLimitMgrCheckPlayerStatus4_ptr TimeLimitMgrCheckPlayerStatus4_next(nullptr);
-        info::TimeLimitMgrCheckPlayerStatus4_clbk TimeLimitMgrCheckPlayerStatus4_user(nullptr);
-        info::TimeLimitMgrClacLastLogoutTimeSec6_ptr TimeLimitMgrClacLastLogoutTimeSec6_next(nullptr);
-        info::TimeLimitMgrClacLastLogoutTimeSec6_clbk TimeLimitMgrClacLastLogoutTimeSec6_user(nullptr);
-        info::TimeLimitMgrClacLastLogoutTimeToFatigue8_ptr TimeLimitMgrClacLastLogoutTimeToFatigue8_next(nullptr);
-        info::TimeLimitMgrClacLastLogoutTimeToFatigue8_clbk TimeLimitMgrClacLastLogoutTimeToFatigue8_user(nullptr);
-        info::TimeLimitMgrDelete_All10_ptr TimeLimitMgrDelete_All10_next(nullptr);
-        info::TimeLimitMgrDelete_All10_clbk TimeLimitMgrDelete_All10_user(nullptr);
-        info::TimeLimitMgrFind_Data12_ptr TimeLimitMgrFind_Data12_next(nullptr);
-        info::TimeLimitMgrFind_Data12_clbk TimeLimitMgrFind_Data12_user(nullptr);
-        info::TimeLimitMgrFind_Data14_ptr TimeLimitMgrFind_Data14_next(nullptr);
-        info::TimeLimitMgrFind_Data14_clbk TimeLimitMgrFind_Data14_user(nullptr);
-        info::TimeLimitMgrGetEndPlayTime16_ptr TimeLimitMgrGetEndPlayTime16_next(nullptr);
-        info::TimeLimitMgrGetEndPlayTime16_clbk TimeLimitMgrGetEndPlayTime16_user(nullptr);
-        info::TimeLimitMgrGetPeriodCnt18_ptr TimeLimitMgrGetPeriodCnt18_next(nullptr);
-        info::TimeLimitMgrGetPeriodCnt18_clbk TimeLimitMgrGetPeriodCnt18_user(nullptr);
-        info::TimeLimitMgrGetPlayFDegree20_ptr TimeLimitMgrGetPlayFDegree20_next(nullptr);
-        info::TimeLimitMgrGetPlayFDegree20_clbk TimeLimitMgrGetPlayFDegree20_user(nullptr);
-        info::TimeLimitMgrGetPlayerData22_ptr TimeLimitMgrGetPlayerData22_next(nullptr);
-        info::TimeLimitMgrGetPlayerData22_clbk TimeLimitMgrGetPlayerData22_user(nullptr);
-        info::TimeLimitMgrGetPlayerPenalty24_ptr TimeLimitMgrGetPlayerPenalty24_next(nullptr);
-        info::TimeLimitMgrGetPlayerPenalty24_clbk TimeLimitMgrGetPlayerPenalty24_user(nullptr);
-        info::TimeLimitMgrGetPlayerStatus26_ptr TimeLimitMgrGetPlayerStatus26_next(nullptr);
-        info::TimeLimitMgrGetPlayerStatus26_clbk TimeLimitMgrGetPlayerStatus26_user(nullptr);
-        info::TimeLimitMgrInitializeTLMgr28_ptr TimeLimitMgrInitializeTLMgr28_next(nullptr);
-        info::TimeLimitMgrInitializeTLMgr28_clbk TimeLimitMgrInitializeTLMgr28_user(nullptr);
-        info::TimeLimitMgrInsertPlayerStatus30_ptr TimeLimitMgrInsertPlayerStatus30_next(nullptr);
-        info::TimeLimitMgrInsertPlayerStatus30_clbk TimeLimitMgrInsertPlayerStatus30_user(nullptr);
-        info::TimeLimitMgrInstance32_ptr TimeLimitMgrInstance32_next(nullptr);
-        info::TimeLimitMgrInstance32_clbk TimeLimitMgrInstance32_user(nullptr);
-        info::TimeLimitMgrLoadTLINIFile34_ptr TimeLimitMgrLoadTLINIFile34_next(nullptr);
-        info::TimeLimitMgrLoadTLINIFile34_clbk TimeLimitMgrLoadTLINIFile34_user(nullptr);
-        info::TimeLimitMgrPop_Data36_ptr TimeLimitMgrPop_Data36_next(nullptr);
-        info::TimeLimitMgrPop_Data36_clbk TimeLimitMgrPop_Data36_user(nullptr);
-        info::TimeLimitMgrPush_Data38_ptr TimeLimitMgrPush_Data38_next(nullptr);
-        info::TimeLimitMgrPush_Data38_clbk TimeLimitMgrPush_Data38_user(nullptr);
-        info::TimeLimitMgrReInitFatigue40_ptr TimeLimitMgrReInitFatigue40_next(nullptr);
-        info::TimeLimitMgrReInitFatigue40_clbk TimeLimitMgrReInitFatigue40_user(nullptr);
-        info::TimeLimitMgrReSetPercent42_ptr TimeLimitMgrReSetPercent42_next(nullptr);
-        info::TimeLimitMgrReSetPercent42_clbk TimeLimitMgrReSetPercent42_user(nullptr);
-        info::TimeLimitMgrSetConfig44_ptr TimeLimitMgrSetConfig44_next(nullptr);
-        info::TimeLimitMgrSetConfig44_clbk TimeLimitMgrSetConfig44_user(nullptr);
-        info::TimeLimitMgrSetLogoutFDegree46_ptr TimeLimitMgrSetLogoutFDegree46_next(nullptr);
-        info::TimeLimitMgrSetLogoutFDegree46_clbk TimeLimitMgrSetLogoutFDegree46_user(nullptr);
-        info::TimeLimitMgrSetPlayFDegree48_ptr TimeLimitMgrSetPlayFDegree48_next(nullptr);
-        info::TimeLimitMgrSetPlayFDegree48_clbk TimeLimitMgrSetPlayFDegree48_user(nullptr);
-        info::TimeLimitMgrSetTLEnable50_ptr TimeLimitMgrSetTLEnable50_next(nullptr);
-        info::TimeLimitMgrSetTLEnable50_clbk TimeLimitMgrSetTLEnable50_user(nullptr);
-        info::TimeLimitMgrSetTime52_ptr TimeLimitMgrSetTime52_next(nullptr);
-        info::TimeLimitMgrSetTime52_clbk TimeLimitMgrSetTime52_user(nullptr);
-        info::TimeLimitMgrSumMinuteBetweenSec54_ptr TimeLimitMgrSumMinuteBetweenSec54_next(nullptr);
-        info::TimeLimitMgrSumMinuteBetweenSec54_clbk TimeLimitMgrSumMinuteBetweenSec54_user(nullptr);
-        info::TimeLimitMgrSumMinuteOne56_ptr TimeLimitMgrSumMinuteOne56_next(nullptr);
-        info::TimeLimitMgrSumMinuteOne56_clbk TimeLimitMgrSumMinuteOne56_user(nullptr);
-        info::TimeLimitMgrctor_TimeLimitMgr58_ptr TimeLimitMgrctor_TimeLimitMgr58_next(nullptr);
-        info::TimeLimitMgrctor_TimeLimitMgr58_clbk TimeLimitMgrctor_TimeLimitMgr58_user(nullptr);
-        info::TimeLimitMgrUpdatePlayerStatus60_ptr TimeLimitMgrUpdatePlayerStatus60_next(nullptr);
-        info::TimeLimitMgrUpdatePlayerStatus60_clbk TimeLimitMgrUpdatePlayerStatus60_user(nullptr);
-        info::TimeLimitMgrdtor_TimeLimitMgr64_ptr TimeLimitMgrdtor_TimeLimitMgr64_next(nullptr);
-        info::TimeLimitMgrdtor_TimeLimitMgr64_clbk TimeLimitMgrdtor_TimeLimitMgr64_user(nullptr);
+        static info::TimeLimitMgrChack_Time2_ptr TimeLimitMgrChack_Time2_next(nullptr);
+        static info::TimeLimitMgrChack_Time2_clbk TimeLimitMgrChack_Time2_user(nullptr);
+        static info::TimeLimitMgrCheckPlayerStatus4_ptr TimeLimitMgrCheckPlayerStatus4_next(nullptr);
+        static info::TimeLimitMgrCheckPlayerStatus4_clbk TimeLimitMgrCheckPlayerStatus4_user(nullptr);
+        static info::TimeLimitMgrClacLastLogoutTimeSec6_ptr TimeLimitMgrClacLastLogoutTimeSec6_next(nullptr);
+        static info::TimeLimitMgrClacLastLogoutTimeSec6_clbk TimeLimitMgrClacLastLogoutTimeSec6_user(nullptr);
+        static info::TimeLimitMgrClacLastLogoutTimeToFatigue8_ptr TimeLimitMgrClacLastLogoutTimeToFatigue8_next(nullptr);
+        static info::TimeLimitMgrClacLastLogoutTimeToFatigue8_clbk TimeLimitMgrClacLastLogoutTimeToFatigue8_user(nullptr);
+        static info::TimeLimitMgrDelete_All10_ptr TimeLimitMgrDelete_All10_next(nullptr);
+        static info::TimeLimitMgrDelete_All10_clbk TimeLimitMgrDelete_All10_user(nullptr);
+        static info::TimeLimitMgrFind_Data12_ptr TimeLimitMgrFind_Data12_next(nullptr);
+        static info::TimeLimitMgrFind_Data12_clbk TimeLimitMgrFind_Data12_user(nullptr);
+        static info::TimeLimitMgrFind_Data14_ptr TimeLimitMgrFind_Data14_next(nullptr);
+        static info::TimeLimitMgrFind_Data14_clbk TimeLimitMgrFind_Data14_user(nullptr);
+        static info::TimeLimitMgrGetEndPlayTime16_ptr TimeLimitMgrGetEndPlayTime16_next(nullptr);
+        static info::TimeLimitMgrGetEndPlayTime16_clbk TimeLimitMgrGetEndPlayTime16_user(nullptr);
+        static info::TimeLimitMgrGetPeriodCnt18_ptr TimeLimitMgrGetPeriodCnt18_next(nullptr);
+        static info::TimeLimitMgrGetPeriodCnt18_clbk TimeLimitMgrGetPeriodCnt18_user(nullptr);
+        static info::TimeLimitMgrGetPlayFDegree20_ptr TimeLimitMgrGetPlayFDegree20_next(nullptr);
+        static info::TimeLimitMgrGetPlayFDegree20_clbk TimeLimitMgrGetPlayFDegree20_user(nullptr);
+        static info::TimeLimitMgrGetPlayerData22_ptr TimeLimitMgrGetPlayerData22_next(nullptr);
+        static info::TimeLimitMgrGetPlayerData22_clbk TimeLimitMgrGetPlayerData22_user(nullptr);
+        static info::TimeLimitMgrGetPlayerPenalty24_ptr TimeLimitMgrGetPlayerPenalty24_next(nullptr);
+        static info::TimeLimitMgrGetPlayerPenalty24_clbk TimeLimitMgrGetPlayerPenalty24_user(nullptr);
+        static info::TimeLimitMgrGetPlayerStatus26_ptr TimeLimitMgrGetPlayerStatus26_next(nullptr);
+        static info::TimeLimitMgrGetPlayerStatus26_clbk TimeLimitMgrGetPlayerStatus26_user(nullptr);
+        static info::TimeLimitMgrInitializeTLMgr28_ptr TimeLimitMgrInitializeTLMgr28_next(nullptr);
+        static info::TimeLimitMgrInitializeTLMgr28_clbk TimeLimitMgrInitializeTLMgr28_user(nullptr);
+        static info::TimeLimitMgrInsertPlayerStatus30_ptr TimeLimitMgrInsertPlayerStatus30_next(nullptr);
+        static info::TimeLimitMgrInsertPlayerStatus30_clbk TimeLimitMgrInsertPlayerStatus30_user(nullptr);
+        static info::TimeLimitMgrInstance32_ptr TimeLimitMgrInstance32_next(nullptr);
+        static info::TimeLimitMgrInstance32_clbk TimeLimitMgrInstance32_user(nullptr);
+        static info::TimeLimitMgrLoadTLINIFile34_ptr TimeLimitMgrLoadTLINIFile34_next(nullptr);
+        static info::TimeLimitMgrLoadTLINIFile34_clbk TimeLimitMgrLoadTLINIFile34_user(nullptr);
+        static info::TimeLimitMgrPop_Data36_ptr TimeLimitMgrPop_Data36_next(nullptr);
+        static info::TimeLimitMgrPop_Data36_clbk TimeLimitMgrPop_Data36_user(nullptr);
+        static info::TimeLimitMgrPush_Data38_ptr TimeLimitMgrPush_Data38_next(nullptr);
+        static info::TimeLimitMgrPush_Data38_clbk TimeLimitMgrPush_Data38_user(nullptr);
+        static info::TimeLimitMgrReInitFatigue40_ptr TimeLimitMgrReInitFatigue40_next(nullptr);
+        static info::TimeLimitMgrReInitFatigue40_clbk TimeLimitMgrReInitFatigue40_user(nullptr);
+        static info::TimeLimitMgrReSetPercent42_ptr TimeLimitMgrReSetPercent42_next(nullptr);
+        static info::TimeLimitMgrReSetPercent42_clbk TimeLimitMgrReSetPercent42_user(nullptr);
+        static info::TimeLimitMgrSetConfig44_ptr TimeLimitMgrSetConfig44_next(nullptr);
+        static info::TimeLimitMgrSetConfig44_clbk TimeLimitMgrSetConfig44_user(nullptr);
+        static info::TimeLimitMgrSetLogoutFDegree46_ptr TimeLimitMgrSetLogoutFDegree46_next(nullptr);
+        static info::TimeLimitMgrSetLogoutFDegree46_clbk TimeLimitMgrSetLogoutFDegree46_user(nullptr);
+        static info::TimeLimitMgrSetPlayFDegree48_ptr TimeLimitMgrSetPlayFDegree48_next(nullptr);
+        static info::TimeLimitMgrSetPlayFDegree48_clbk TimeLimitMgrSetPlayFDegree48_user(nullptr);
+        static info::TimeLimitMgrSetTLEnable50_ptr TimeLimitMgrSetTLEnable50_next(nullptr);
+        static info::TimeLimitMgrSetTLEnable50_clbk TimeLimitMgrSetTLEnable50_user(nullptr);
+        static info::TimeLimitMgrSetTime52_ptr TimeLimitMgrSetTime52_next(nullptr);
+        static info::TimeLimitMgrSetTime52_clbk TimeLimitMgrSetTime52_user(nullptr);
+        static info::TimeLimitMgrSumMinuteBetweenSec54_ptr TimeLimitMgrSumMinuteBetweenSec54_next(nullptr);
+        static info::TimeLimitMgrSumMinuteBetweenSec54_clbk TimeLimitMgrSumMinuteBetweenSec54_user(nullptr);
+        static info::TimeLimitMgrSumMinuteOne56_ptr TimeLimitMgrSumMinuteOne56_next(nullptr);
+        static info::TimeLimitMgrSumMinuteOne56_clbk TimeLimitMgrSumMinuteOne56_user(nullptr);
+        static info::TimeLimitMgrctor_TimeLimitMgr58_ptr TimeLimitMgrctor_TimeLimitMgr58_next(nullptr);
+        static info::TimeLimitMgrctor_TimeLimitMgr58_clbk TimeLimitMgrctor_TimeLimitMgr58_user(nullptr);
+        static info::TimeLimitMgrUpdatePlayerStatus60_ptr TimeLimitMgrUpdatePlayerStatus60_next(nullptr);
+        static info::TimeLimitMgrUpdatePlayerStatus60_clbk TimeLimitMgrUpdatePlayerStatus60_user(nullptr);
+        static info::TimeLimitMgrdtor_TimeLimitMgr64_ptr TimeLimitMgrdtor_TimeLimitMgr64_next(nullptr);
+        static info::TimeLimitMgrdtor_TimeLimitMgr64_clbk TimeLimitMgrdtor_TimeLimitMgr64_user(nullptr);
         
-        void TimeLimitMgrChack_Time2_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrChack_Time2_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrChack_Time2_user(_this, TimeLimitMgrChack_Time2_next);
         };
-        bool TimeLimitMgrCheckPlayerStatus4_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwLastContSaveTime, char* pbyStatus, unsigned int* pdwFatigue)
+        static bool TimeLimitMgrCheckPlayerStatus4_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwLastContSaveTime, char* pbyStatus, unsigned int* pdwFatigue)
         {
            return TimeLimitMgrCheckPlayerStatus4_user(_this, wIndex, dwLastContSaveTime, pbyStatus, pdwFatigue, TimeLimitMgrCheckPlayerStatus4_next);
         };
-        unsigned int TimeLimitMgrClacLastLogoutTimeSec6_wrapper(struct TimeLimitMgr* _this, unsigned int dwLastConnTime)
+        static unsigned int TimeLimitMgrClacLastLogoutTimeSec6_wrapper(struct TimeLimitMgr* _this, unsigned int dwLastConnTime)
         {
            return TimeLimitMgrClacLastLogoutTimeSec6_user(_this, dwLastConnTime, TimeLimitMgrClacLastLogoutTimeSec6_next);
         };
-        unsigned int TimeLimitMgrClacLastLogoutTimeToFatigue8_wrapper(struct TimeLimitMgr* _this, unsigned int dwLastConnTime)
+        static unsigned int TimeLimitMgrClacLastLogoutTimeToFatigue8_wrapper(struct TimeLimitMgr* _this, unsigned int dwLastConnTime)
         {
            return TimeLimitMgrClacLastLogoutTimeToFatigue8_user(_this, dwLastConnTime, TimeLimitMgrClacLastLogoutTimeToFatigue8_next);
         };
-        void TimeLimitMgrDelete_All10_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrDelete_All10_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrDelete_All10_user(_this, TimeLimitMgrDelete_All10_next);
         };
-        struct Player_TL_Status* TimeLimitMgrFind_Data12_wrapper(struct TimeLimitMgr* _this, unsigned int dwSerial)
+        static struct Player_TL_Status* TimeLimitMgrFind_Data12_wrapper(struct TimeLimitMgr* _this, unsigned int dwSerial)
         {
            return TimeLimitMgrFind_Data12_user(_this, dwSerial, TimeLimitMgrFind_Data12_next);
         };
-        struct Player_TL_Status* TimeLimitMgrFind_Data14_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
+        static struct Player_TL_Status* TimeLimitMgrFind_Data14_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
         {
            return TimeLimitMgrFind_Data14_user(_this, wIndex, TimeLimitMgrFind_Data14_next);
         };
-        uint16_t TimeLimitMgrGetEndPlayTime16_wrapper(struct TimeLimitMgr* _this)
+        static uint16_t TimeLimitMgrGetEndPlayTime16_wrapper(struct TimeLimitMgr* _this)
         {
            return TimeLimitMgrGetEndPlayTime16_user(_this, TimeLimitMgrGetEndPlayTime16_next);
         };
-        uint16_t TimeLimitMgrGetPeriodCnt18_wrapper(struct TimeLimitMgr* _this)
+        static uint16_t TimeLimitMgrGetPeriodCnt18_wrapper(struct TimeLimitMgr* _this)
         {
            return TimeLimitMgrGetPeriodCnt18_user(_this, TimeLimitMgrGetPeriodCnt18_next);
         };
-        unsigned int TimeLimitMgrGetPlayFDegree20_wrapper(struct TimeLimitMgr* _this)
+        static unsigned int TimeLimitMgrGetPlayFDegree20_wrapper(struct TimeLimitMgr* _this)
         {
            return TimeLimitMgrGetPlayFDegree20_user(_this, TimeLimitMgrGetPlayFDegree20_next);
         };
-        uint16_t TimeLimitMgrGetPlayerData22_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, char* psStatus, long double* pdPercent)
+        static uint16_t TimeLimitMgrGetPlayerData22_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, char* psStatus, long double* pdPercent)
         {
            return TimeLimitMgrGetPlayerData22_user(_this, wIndex, psStatus, pdPercent, TimeLimitMgrGetPlayerData22_next);
         };
-        long double TimeLimitMgrGetPlayerPenalty24_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
+        static long double TimeLimitMgrGetPlayerPenalty24_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
         {
            return TimeLimitMgrGetPlayerPenalty24_user(_this, wIndex, TimeLimitMgrGetPlayerPenalty24_next);
         };
-        char TimeLimitMgrGetPlayerStatus26_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
+        static char TimeLimitMgrGetPlayerStatus26_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
         {
            return TimeLimitMgrGetPlayerStatus26_user(_this, wIndex, TimeLimitMgrGetPlayerStatus26_next);
         };
-        void TimeLimitMgrInitializeTLMgr28_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrInitializeTLMgr28_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrInitializeTLMgr28_user(_this, TimeLimitMgrInitializeTLMgr28_next);
         };
-        void TimeLimitMgrInsertPlayerStatus30_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwAccountSerial, char byStatus, unsigned int dwFatigue, unsigned int dwLastLogoutTime, bool bAgeLimit)
+        static void TimeLimitMgrInsertPlayerStatus30_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwAccountSerial, char byStatus, unsigned int dwFatigue, unsigned int dwLastLogoutTime, bool bAgeLimit)
         {
            TimeLimitMgrInsertPlayerStatus30_user(_this, wIndex, dwAccountSerial, byStatus, dwFatigue, dwLastLogoutTime, bAgeLimit, TimeLimitMgrInsertPlayerStatus30_next);
         };
-        struct TimeLimitMgr* TimeLimitMgrInstance32_wrapper()
+        static struct TimeLimitMgr* TimeLimitMgrInstance32_wrapper()
         {
            return TimeLimitMgrInstance32_user(TimeLimitMgrInstance32_next);
         };
-        void TimeLimitMgrLoadTLINIFile34_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrLoadTLINIFile34_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrLoadTLINIFile34_user(_this, TimeLimitMgrLoadTLINIFile34_next);
         };
-        void TimeLimitMgrPop_Data36_wrapper(struct TimeLimitMgr* _this, unsigned int dwAccountSerial, uint16_t wIndex)
+        static void TimeLimitMgrPop_Data36_wrapper(struct TimeLimitMgr* _this, unsigned int dwAccountSerial, uint16_t wIndex)
         {
            TimeLimitMgrPop_Data36_user(_this, dwAccountSerial, wIndex, TimeLimitMgrPop_Data36_next);
         };
-        void TimeLimitMgrPush_Data38_wrapper(struct TimeLimitMgr* _this, struct Player_TL_Status* data, uint16_t wIndex)
+        static void TimeLimitMgrPush_Data38_wrapper(struct TimeLimitMgr* _this, struct Player_TL_Status* data, uint16_t wIndex)
         {
            TimeLimitMgrPush_Data38_user(_this, data, wIndex, TimeLimitMgrPush_Data38_next);
         };
-        void TimeLimitMgrReInitFatigue40_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrReInitFatigue40_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrReInitFatigue40_user(_this, TimeLimitMgrReInitFatigue40_next);
         };
-        void TimeLimitMgrReSetPercent42_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
+        static void TimeLimitMgrReSetPercent42_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex)
         {
            TimeLimitMgrReSetPercent42_user(_this, wIndex, TimeLimitMgrReSetPercent42_next);
         };
-        bool TimeLimitMgrSetConfig44_wrapper(struct TimeLimitMgr* _this, uint16_t time1, uint16_t time2, uint16_t time3, uint16_t time4, uint16_t time5)
+        static bool TimeLimitMgrSetConfig44_wrapper(struct TimeLimitMgr* _this, uint16_t time1, uint16_t time2, uint16_t time3, uint16_t time4, uint16_t time5)
         {
            return TimeLimitMgrSetConfig44_user(_this, time1, time2, time3, time4, time5, TimeLimitMgrSetConfig44_next);
         };
-        void TimeLimitMgrSetLogoutFDegree46_wrapper(struct TimeLimitMgr* _this, unsigned int dwDegree)
+        static void TimeLimitMgrSetLogoutFDegree46_wrapper(struct TimeLimitMgr* _this, unsigned int dwDegree)
         {
            TimeLimitMgrSetLogoutFDegree46_user(_this, dwDegree, TimeLimitMgrSetLogoutFDegree46_next);
         };
-        void TimeLimitMgrSetPlayFDegree48_wrapper(struct TimeLimitMgr* _this, unsigned int dwDegree)
+        static void TimeLimitMgrSetPlayFDegree48_wrapper(struct TimeLimitMgr* _this, unsigned int dwDegree)
         {
            TimeLimitMgrSetPlayFDegree48_user(_this, dwDegree, TimeLimitMgrSetPlayFDegree48_next);
         };
-        void TimeLimitMgrSetTLEnable50_wrapper(struct TimeLimitMgr* _this, uint16_t wState)
+        static void TimeLimitMgrSetTLEnable50_wrapper(struct TimeLimitMgr* _this, uint16_t wState)
         {
            TimeLimitMgrSetTLEnable50_user(_this, wState, TimeLimitMgrSetTLEnable50_next);
         };
-        void TimeLimitMgrSetTime52_wrapper(struct TimeLimitMgr* _this, unsigned int dwTime, uint16_t iIndex)
+        static void TimeLimitMgrSetTime52_wrapper(struct TimeLimitMgr* _this, unsigned int dwTime, uint16_t iIndex)
         {
            TimeLimitMgrSetTime52_user(_this, dwTime, iIndex, TimeLimitMgrSetTime52_next);
         };
-        unsigned int TimeLimitMgrSumMinuteBetweenSec54_wrapper(struct TimeLimitMgr* _this, struct tm* tmLast)
+        static unsigned int TimeLimitMgrSumMinuteBetweenSec54_wrapper(struct TimeLimitMgr* _this, struct tm* tmLast)
         {
            return TimeLimitMgrSumMinuteBetweenSec54_user(_this, tmLast, TimeLimitMgrSumMinuteBetweenSec54_next);
         };
-        unsigned int TimeLimitMgrSumMinuteOne56_wrapper(struct TimeLimitMgr* _this, struct _SYSTEMTIME* tm)
+        static unsigned int TimeLimitMgrSumMinuteOne56_wrapper(struct TimeLimitMgr* _this, struct _SYSTEMTIME* tm)
         {
            return TimeLimitMgrSumMinuteOne56_user(_this, tm, TimeLimitMgrSumMinuteOne56_next);
         };
-        void TimeLimitMgrctor_TimeLimitMgr58_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrctor_TimeLimitMgr58_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrctor_TimeLimitMgr58_user(_this, TimeLimitMgrctor_TimeLimitMgr58_next);
         };
-        bool TimeLimitMgrUpdatePlayerStatus60_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwFatigue, char wStatus)
+        static bool TimeLimitMgrUpdatePlayerStatus60_wrapper(struct TimeLimitMgr* _this, uint16_t wIndex, unsigned int dwFatigue, char wStatus)
         {
            return TimeLimitMgrUpdatePlayerStatus60_user(_this, wIndex, dwFatigue, wStatus, TimeLimitMgrUpdatePlayerStatus60_next);
         };
-        void TimeLimitMgrdtor_TimeLimitMgr64_wrapper(struct TimeLimitMgr* _this)
+        static void TimeLimitMgrdtor_TimeLimitMgr64_wrapper(struct TimeLimitMgr* _this)
         {
            TimeLimitMgrdtor_TimeLimitMgr64_user(_this, TimeLimitMgrdtor_TimeLimitMgr64_next);
         };
         
-        hook_record TimeLimitMgr_functions[] = {
+        static hook_record TimeLimitMgr_functions[] = {
         {   (LPVOID)0x14040e500L,
             (LPVOID *)&TimeLimitMgrChack_Time2_user,
             (LPVOID *)&TimeLimitMgrChack_Time2_next,
@@ -355,5 +355,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

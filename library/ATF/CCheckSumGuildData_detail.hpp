@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCheckSumGuildDatactor_CCheckSumGuildData2_ptr CCheckSumGuildDatactor_CCheckSumGuildData2_next(nullptr);
-        info::CCheckSumGuildDatactor_CCheckSumGuildData2_clbk CCheckSumGuildDatactor_CCheckSumGuildData2_user(nullptr);
-        info::CCheckSumGuildDataCheckDiff4_ptr CCheckSumGuildDataCheckDiff4_next(nullptr);
-        info::CCheckSumGuildDataCheckDiff4_clbk CCheckSumGuildDataCheckDiff4_user(nullptr);
-        info::CCheckSumGuildDataDecode6_ptr CCheckSumGuildDataDecode6_next(nullptr);
-        info::CCheckSumGuildDataDecode6_clbk CCheckSumGuildDataDecode6_user(nullptr);
-        info::CCheckSumGuildDataEncode8_ptr CCheckSumGuildDataEncode8_next(nullptr);
-        info::CCheckSumGuildDataEncode8_clbk CCheckSumGuildDataEncode8_user(nullptr);
-        info::CCheckSumGuildDataGetDalant10_ptr CCheckSumGuildDataGetDalant10_next(nullptr);
-        info::CCheckSumGuildDataGetDalant10_clbk CCheckSumGuildDataGetDalant10_user(nullptr);
-        info::CCheckSumGuildDataGetGold12_ptr CCheckSumGuildDataGetGold12_next(nullptr);
-        info::CCheckSumGuildDataGetGold12_clbk CCheckSumGuildDataGetGold12_user(nullptr);
-        info::CCheckSumGuildDataInsert14_ptr CCheckSumGuildDataInsert14_next(nullptr);
-        info::CCheckSumGuildDataInsert14_clbk CCheckSumGuildDataInsert14_user(nullptr);
-        info::CCheckSumGuildDataLoad16_ptr CCheckSumGuildDataLoad16_next(nullptr);
-        info::CCheckSumGuildDataLoad16_clbk CCheckSumGuildDataLoad16_user(nullptr);
-        info::CCheckSumGuildDataSetValue18_ptr CCheckSumGuildDataSetValue18_next(nullptr);
-        info::CCheckSumGuildDataSetValue18_clbk CCheckSumGuildDataSetValue18_user(nullptr);
-        info::CCheckSumGuildDataUpdate20_ptr CCheckSumGuildDataUpdate20_next(nullptr);
-        info::CCheckSumGuildDataUpdate20_clbk CCheckSumGuildDataUpdate20_user(nullptr);
-        info::CCheckSumGuildDatadtor_CCheckSumGuildData22_ptr CCheckSumGuildDatadtor_CCheckSumGuildData22_next(nullptr);
-        info::CCheckSumGuildDatadtor_CCheckSumGuildData22_clbk CCheckSumGuildDatadtor_CCheckSumGuildData22_user(nullptr);
+        static info::CCheckSumGuildDatactor_CCheckSumGuildData2_ptr CCheckSumGuildDatactor_CCheckSumGuildData2_next(nullptr);
+        static info::CCheckSumGuildDatactor_CCheckSumGuildData2_clbk CCheckSumGuildDatactor_CCheckSumGuildData2_user(nullptr);
+        static info::CCheckSumGuildDataCheckDiff4_ptr CCheckSumGuildDataCheckDiff4_next(nullptr);
+        static info::CCheckSumGuildDataCheckDiff4_clbk CCheckSumGuildDataCheckDiff4_user(nullptr);
+        static info::CCheckSumGuildDataDecode6_ptr CCheckSumGuildDataDecode6_next(nullptr);
+        static info::CCheckSumGuildDataDecode6_clbk CCheckSumGuildDataDecode6_user(nullptr);
+        static info::CCheckSumGuildDataEncode8_ptr CCheckSumGuildDataEncode8_next(nullptr);
+        static info::CCheckSumGuildDataEncode8_clbk CCheckSumGuildDataEncode8_user(nullptr);
+        static info::CCheckSumGuildDataGetDalant10_ptr CCheckSumGuildDataGetDalant10_next(nullptr);
+        static info::CCheckSumGuildDataGetDalant10_clbk CCheckSumGuildDataGetDalant10_user(nullptr);
+        static info::CCheckSumGuildDataGetGold12_ptr CCheckSumGuildDataGetGold12_next(nullptr);
+        static info::CCheckSumGuildDataGetGold12_clbk CCheckSumGuildDataGetGold12_user(nullptr);
+        static info::CCheckSumGuildDataInsert14_ptr CCheckSumGuildDataInsert14_next(nullptr);
+        static info::CCheckSumGuildDataInsert14_clbk CCheckSumGuildDataInsert14_user(nullptr);
+        static info::CCheckSumGuildDataLoad16_ptr CCheckSumGuildDataLoad16_next(nullptr);
+        static info::CCheckSumGuildDataLoad16_clbk CCheckSumGuildDataLoad16_user(nullptr);
+        static info::CCheckSumGuildDataSetValue18_ptr CCheckSumGuildDataSetValue18_next(nullptr);
+        static info::CCheckSumGuildDataSetValue18_clbk CCheckSumGuildDataSetValue18_user(nullptr);
+        static info::CCheckSumGuildDataUpdate20_ptr CCheckSumGuildDataUpdate20_next(nullptr);
+        static info::CCheckSumGuildDataUpdate20_clbk CCheckSumGuildDataUpdate20_user(nullptr);
+        static info::CCheckSumGuildDatadtor_CCheckSumGuildData22_ptr CCheckSumGuildDatadtor_CCheckSumGuildData22_next(nullptr);
+        static info::CCheckSumGuildDatadtor_CCheckSumGuildData22_clbk CCheckSumGuildDatadtor_CCheckSumGuildData22_user(nullptr);
         
-        void CCheckSumGuildDatactor_CCheckSumGuildData2_wrapper(struct CCheckSumGuildData* _this, unsigned int dwSerial)
+        static void CCheckSumGuildDatactor_CCheckSumGuildData2_wrapper(struct CCheckSumGuildData* _this, unsigned int dwSerial)
         {
            CCheckSumGuildDatactor_CCheckSumGuildData2_user(_this, dwSerial, CCheckSumGuildDatactor_CCheckSumGuildData2_next);
         };
-        int CCheckSumGuildDataCheckDiff4_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB, char* wszName, struct CCheckSumGuildData* kSrcValue)
+        static int CCheckSumGuildDataCheckDiff4_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB, char* wszName, struct CCheckSumGuildData* kSrcValue)
         {
            return CCheckSumGuildDataCheckDiff4_user(_this, pkDB, wszName, kSrcValue, CCheckSumGuildDataCheckDiff4_next);
         };
-        void CCheckSumGuildDataDecode6_wrapper(struct CCheckSumGuildData* _this, long double dDalant, long double dGold)
+        static void CCheckSumGuildDataDecode6_wrapper(struct CCheckSumGuildData* _this, long double dDalant, long double dGold)
         {
            CCheckSumGuildDataDecode6_user(_this, dDalant, dGold, CCheckSumGuildDataDecode6_next);
         };
-        void CCheckSumGuildDataEncode8_wrapper(struct CCheckSumGuildData* _this, long double dDalant, long double dGold)
+        static void CCheckSumGuildDataEncode8_wrapper(struct CCheckSumGuildData* _this, long double dDalant, long double dGold)
         {
            CCheckSumGuildDataEncode8_user(_this, dDalant, dGold, CCheckSumGuildDataEncode8_next);
         };
-        long double CCheckSumGuildDataGetDalant10_wrapper(struct CCheckSumGuildData* _this)
+        static long double CCheckSumGuildDataGetDalant10_wrapper(struct CCheckSumGuildData* _this)
         {
            return CCheckSumGuildDataGetDalant10_user(_this, CCheckSumGuildDataGetDalant10_next);
         };
-        long double CCheckSumGuildDataGetGold12_wrapper(struct CCheckSumGuildData* _this)
+        static long double CCheckSumGuildDataGetGold12_wrapper(struct CCheckSumGuildData* _this)
         {
            return CCheckSumGuildDataGetGold12_user(_this, CCheckSumGuildDataGetGold12_next);
         };
-        bool CCheckSumGuildDataInsert14_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB)
+        static bool CCheckSumGuildDataInsert14_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB)
         {
            return CCheckSumGuildDataInsert14_user(_this, pkDB, CCheckSumGuildDataInsert14_next);
         };
-        int CCheckSumGuildDataLoad16_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB, struct CCheckSumGuildData* kSrcValue)
+        static int CCheckSumGuildDataLoad16_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB, struct CCheckSumGuildData* kSrcValue)
         {
            return CCheckSumGuildDataLoad16_user(_this, pkDB, kSrcValue, CCheckSumGuildDataLoad16_next);
         };
-        void CCheckSumGuildDataSetValue18_wrapper(struct CCheckSumGuildData* _this, CCheckSumGuildData::COLUMN_D_TYPE eType, long double dValue)
+        static void CCheckSumGuildDataSetValue18_wrapper(struct CCheckSumGuildData* _this, CCheckSumGuildData::COLUMN_D_TYPE eType, long double dValue)
         {
            CCheckSumGuildDataSetValue18_user(_this, eType, dValue, CCheckSumGuildDataSetValue18_next);
         };
-        bool CCheckSumGuildDataUpdate20_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB)
+        static bool CCheckSumGuildDataUpdate20_wrapper(struct CCheckSumGuildData* _this, struct CRFWorldDatabase* pkDB)
         {
            return CCheckSumGuildDataUpdate20_user(_this, pkDB, CCheckSumGuildDataUpdate20_next);
         };
-        void CCheckSumGuildDatadtor_CCheckSumGuildData22_wrapper(struct CCheckSumGuildData* _this)
+        static void CCheckSumGuildDatadtor_CCheckSumGuildData22_wrapper(struct CCheckSumGuildData* _this)
         {
            CCheckSumGuildDatadtor_CCheckSumGuildData22_user(_this, CCheckSumGuildDatadtor_CCheckSumGuildData22_next);
         };
         
-        hook_record CCheckSumGuildData_functions[] = {
+        static hook_record CCheckSumGuildData_functions[] = {
         {   (LPVOID)0x1401bf340L,
             (LPVOID *)&CCheckSumGuildDatactor_CCheckSumGuildData2_user,
             (LPVOID *)&CCheckSumGuildDatactor_CCheckSumGuildData2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

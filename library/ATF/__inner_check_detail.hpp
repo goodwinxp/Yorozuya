@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__inner_checkctor___inner_check2_ptr __inner_checkctor___inner_check2_next(nullptr);
-        info::__inner_checkctor___inner_check2_clbk __inner_checkctor___inner_check2_user(nullptr);
-        info::__inner_checkdtor___inner_check6_ptr __inner_checkdtor___inner_check6_next(nullptr);
-        info::__inner_checkdtor___inner_check6_clbk __inner_checkdtor___inner_check6_user(nullptr);
+        static info::__inner_checkctor___inner_check2_ptr __inner_checkctor___inner_check2_next(nullptr);
+        static info::__inner_checkctor___inner_check2_clbk __inner_checkctor___inner_check2_user(nullptr);
+        static info::__inner_checkdtor___inner_check6_ptr __inner_checkdtor___inner_check6_next(nullptr);
+        static info::__inner_checkdtor___inner_check6_clbk __inner_checkdtor___inner_check6_user(nullptr);
         
-        void __inner_checkctor___inner_check2_wrapper(struct __inner_check* _this)
+        static void __inner_checkctor___inner_check2_wrapper(struct __inner_check* _this)
         {
            __inner_checkctor___inner_check2_user(_this, __inner_checkctor___inner_check2_next);
         };
-        void __inner_checkdtor___inner_check6_wrapper(struct __inner_check* _this)
+        static void __inner_checkdtor___inner_check6_wrapper(struct __inner_check* _this)
         {
            __inner_checkdtor___inner_check6_user(_this, __inner_checkdtor___inner_check6_next);
         };
         
-        hook_record __inner_check_functions[] = {
+        static hook_record __inner_check_functions[] = {
         {   (LPVOID)0x14027a500L,
             (LPVOID *)&__inner_checkctor___inner_check2_user,
             (LPVOID *)&__inner_checkctor___inner_check2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

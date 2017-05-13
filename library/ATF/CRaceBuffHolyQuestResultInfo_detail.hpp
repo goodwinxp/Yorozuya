@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_ptr CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_clbk CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoClearResult4_ptr CRaceBuffHolyQuestResultInfoClearResult4_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoClearResult4_clbk CRaceBuffHolyQuestResultInfoClearResult4_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoFindFailRace6_ptr CRaceBuffHolyQuestResultInfoFindFailRace6_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoFindFailRace6_clbk CRaceBuffHolyQuestResultInfoFindFailRace6_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoGetContinueCnt8_ptr CRaceBuffHolyQuestResultInfoGetContinueCnt8_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoGetContinueCnt8_clbk CRaceBuffHolyQuestResultInfoGetContinueCnt8_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoGetResultType10_ptr CRaceBuffHolyQuestResultInfoGetResultType10_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoGetResultType10_clbk CRaceBuffHolyQuestResultInfoGetResultType10_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoIsChaos12_ptr CRaceBuffHolyQuestResultInfoIsChaos12_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoIsChaos12_clbk CRaceBuffHolyQuestResultInfoIsChaos12_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoIsValidResult14_ptr CRaceBuffHolyQuestResultInfoIsValidResult14_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoIsValidResult14_clbk CRaceBuffHolyQuestResultInfoIsValidResult14_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoLoad16_ptr CRaceBuffHolyQuestResultInfoLoad16_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoLoad16_clbk CRaceBuffHolyQuestResultInfoLoad16_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoLoadINI18_ptr CRaceBuffHolyQuestResultInfoLoadINI18_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoLoadINI18_clbk CRaceBuffHolyQuestResultInfoLoadINI18_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSave20_ptr CRaceBuffHolyQuestResultInfoSave20_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSave20_clbk CRaceBuffHolyQuestResultInfoSave20_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSaveINI22_ptr CRaceBuffHolyQuestResultInfoSaveINI22_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSaveINI22_clbk CRaceBuffHolyQuestResultInfoSaveINI22_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_ptr CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_clbk CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetBuffFlag26_ptr CRaceBuffHolyQuestResultInfoSetBuffFlag26_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetBuffFlag26_clbk CRaceBuffHolyQuestResultInfoSetBuffFlag26_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetResult28_ptr CRaceBuffHolyQuestResultInfoSetResult28_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetResult28_clbk CRaceBuffHolyQuestResultInfoSetResult28_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_ptr CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_clbk CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_user(nullptr);
-        info::CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_ptr CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_next(nullptr);
-        info::CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_clbk CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_ptr CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_clbk CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoClearResult4_ptr CRaceBuffHolyQuestResultInfoClearResult4_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoClearResult4_clbk CRaceBuffHolyQuestResultInfoClearResult4_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoFindFailRace6_ptr CRaceBuffHolyQuestResultInfoFindFailRace6_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoFindFailRace6_clbk CRaceBuffHolyQuestResultInfoFindFailRace6_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoGetContinueCnt8_ptr CRaceBuffHolyQuestResultInfoGetContinueCnt8_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoGetContinueCnt8_clbk CRaceBuffHolyQuestResultInfoGetContinueCnt8_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoGetResultType10_ptr CRaceBuffHolyQuestResultInfoGetResultType10_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoGetResultType10_clbk CRaceBuffHolyQuestResultInfoGetResultType10_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoIsChaos12_ptr CRaceBuffHolyQuestResultInfoIsChaos12_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoIsChaos12_clbk CRaceBuffHolyQuestResultInfoIsChaos12_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoIsValidResult14_ptr CRaceBuffHolyQuestResultInfoIsValidResult14_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoIsValidResult14_clbk CRaceBuffHolyQuestResultInfoIsValidResult14_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoLoad16_ptr CRaceBuffHolyQuestResultInfoLoad16_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoLoad16_clbk CRaceBuffHolyQuestResultInfoLoad16_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoLoadINI18_ptr CRaceBuffHolyQuestResultInfoLoadINI18_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoLoadINI18_clbk CRaceBuffHolyQuestResultInfoLoadINI18_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSave20_ptr CRaceBuffHolyQuestResultInfoSave20_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSave20_clbk CRaceBuffHolyQuestResultInfoSave20_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSaveINI22_ptr CRaceBuffHolyQuestResultInfoSaveINI22_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSaveINI22_clbk CRaceBuffHolyQuestResultInfoSaveINI22_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_ptr CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_clbk CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetBuffFlag26_ptr CRaceBuffHolyQuestResultInfoSetBuffFlag26_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetBuffFlag26_clbk CRaceBuffHolyQuestResultInfoSetBuffFlag26_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetResult28_ptr CRaceBuffHolyQuestResultInfoSetResult28_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetResult28_clbk CRaceBuffHolyQuestResultInfoSetResult28_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_ptr CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_clbk CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_user(nullptr);
+        static info::CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_ptr CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_next(nullptr);
+        static info::CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_clbk CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_user(nullptr);
         
-        void CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static void CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_user(_this, CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_next);
         };
-        void CRaceBuffHolyQuestResultInfoClearResult4_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static void CRaceBuffHolyQuestResultInfoClearResult4_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            CRaceBuffHolyQuestResultInfoClearResult4_user(_this, CRaceBuffHolyQuestResultInfoClearResult4_next);
         };
-        bool CRaceBuffHolyQuestResultInfoFindFailRace6_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, char* pbyFailRace)
+        static bool CRaceBuffHolyQuestResultInfoFindFailRace6_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, char* pbyFailRace)
         {
            return CRaceBuffHolyQuestResultInfoFindFailRace6_user(_this, byWinRace, byLoseRace, pbyFailRace, CRaceBuffHolyQuestResultInfoFindFailRace6_next);
         };
-        unsigned int CRaceBuffHolyQuestResultInfoGetContinueCnt8_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, int iType)
+        static unsigned int CRaceBuffHolyQuestResultInfoGetContinueCnt8_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, int iType)
         {
            return CRaceBuffHolyQuestResultInfoGetContinueCnt8_user(_this, iType, CRaceBuffHolyQuestResultInfoGetContinueCnt8_next);
         };
-        int CRaceBuffHolyQuestResultInfoGetResultType10_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byRace, bool bGetScanner)
+        static int CRaceBuffHolyQuestResultInfoGetResultType10_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byRace, bool bGetScanner)
         {
            return CRaceBuffHolyQuestResultInfoGetResultType10_user(_this, byRace, bGetScanner, CRaceBuffHolyQuestResultInfoGetResultType10_next);
         };
-        bool CRaceBuffHolyQuestResultInfoIsChaos12_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoIsChaos12_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoIsChaos12_user(_this, CRaceBuffHolyQuestResultInfoIsChaos12_next);
         };
-        bool CRaceBuffHolyQuestResultInfoIsValidResult14_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoIsValidResult14_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoIsValidResult14_user(_this, CRaceBuffHolyQuestResultInfoIsValidResult14_next);
         };
-        bool CRaceBuffHolyQuestResultInfoLoad16_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoLoad16_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoLoad16_user(_this, CRaceBuffHolyQuestResultInfoLoad16_next);
         };
-        bool CRaceBuffHolyQuestResultInfoLoadINI18_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoLoadINI18_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoLoadINI18_user(_this, CRaceBuffHolyQuestResultInfoLoadINI18_next);
         };
-        bool CRaceBuffHolyQuestResultInfoSave20_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoSave20_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoSave20_user(_this, CRaceBuffHolyQuestResultInfoSave20_next);
         };
-        bool CRaceBuffHolyQuestResultInfoSaveINI22_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static bool CRaceBuffHolyQuestResultInfoSaveINI22_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            return CRaceBuffHolyQuestResultInfoSaveINI22_user(_this, CRaceBuffHolyQuestResultInfoSaveINI22_next);
         };
-        bool CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char* szItem, char byNum)
+        static bool CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char* szItem, char byNum)
         {
            return CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_user(_this, szItem, byNum, CRaceBuffHolyQuestResultInfoSaveINISubProcSaveNum24_next);
         };
-        void CRaceBuffHolyQuestResultInfoSetBuffFlag26_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static void CRaceBuffHolyQuestResultInfoSetBuffFlag26_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            CRaceBuffHolyQuestResultInfoSetBuffFlag26_user(_this, CRaceBuffHolyQuestResultInfoSetBuffFlag26_next);
         };
-        void CRaceBuffHolyQuestResultInfoSetResult28_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, unsigned int uiThMax)
+        static void CRaceBuffHolyQuestResultInfoSetResult28_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, unsigned int uiThMax)
         {
            CRaceBuffHolyQuestResultInfoSetResult28_user(_this, byWinRace, byLoseRace, uiThMax, CRaceBuffHolyQuestResultInfoSetResult28_next);
         };
-        bool CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, unsigned int uiThMax)
+        static bool CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_wrapper(struct CRaceBuffHolyQuestResultInfo* _this, char byWinRace, char byLoseRace, unsigned int uiThMax)
         {
            return CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_user(_this, byWinRace, byLoseRace, uiThMax, CRaceBuffHolyQuestResultInfoSetResultSubProcSetRace30_next);
         };
-        void CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
+        static void CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_wrapper(struct CRaceBuffHolyQuestResultInfo* _this)
         {
            CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_user(_this, CRaceBuffHolyQuestResultInfodtor_CRaceBuffHolyQuestResultInfo32_next);
         };
         
-        hook_record CRaceBuffHolyQuestResultInfo_functions[] = {
+        static hook_record CRaceBuffHolyQuestResultInfo_functions[] = {
         {   (LPVOID)0x1403b53b0L,
             (LPVOID *)&CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_user,
             (LPVOID *)&CRaceBuffHolyQuestResultInfoctor_CRaceBuffHolyQuestResultInfo2_next,
@@ -190,5 +190,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

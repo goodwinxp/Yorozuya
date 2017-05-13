@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_dummy_positionSetActiveMonNum2_ptr _dummy_positionSetActiveMonNum2_next(nullptr);
-        info::_dummy_positionSetActiveMonNum2_clbk _dummy_positionSetActiveMonNum2_user(nullptr);
-        info::_dummy_positionctor__dummy_position4_ptr _dummy_positionctor__dummy_position4_next(nullptr);
-        info::_dummy_positionctor__dummy_position4_clbk _dummy_positionctor__dummy_position4_user(nullptr);
+        static info::_dummy_positionSetActiveMonNum2_ptr _dummy_positionSetActiveMonNum2_next(nullptr);
+        static info::_dummy_positionSetActiveMonNum2_clbk _dummy_positionSetActiveMonNum2_user(nullptr);
+        static info::_dummy_positionctor__dummy_position4_ptr _dummy_positionctor__dummy_position4_next(nullptr);
+        static info::_dummy_positionctor__dummy_position4_clbk _dummy_positionctor__dummy_position4_user(nullptr);
         
-        void _dummy_positionSetActiveMonNum2_wrapper(struct _dummy_position* _this, int nAlter)
+        static void _dummy_positionSetActiveMonNum2_wrapper(struct _dummy_position* _this, int nAlter)
         {
            _dummy_positionSetActiveMonNum2_user(_this, nAlter, _dummy_positionSetActiveMonNum2_next);
         };
-        void _dummy_positionctor__dummy_position4_wrapper(struct _dummy_position* _this)
+        static void _dummy_positionctor__dummy_position4_wrapper(struct _dummy_position* _this)
         {
            _dummy_positionctor__dummy_position4_user(_this, _dummy_positionctor__dummy_position4_next);
         };
         
-        hook_record _dummy_position_functions[] = {
+        static hook_record _dummy_position_functions[] = {
         {   (LPVOID)0x14014bd20L,
             (LPVOID *)&_dummy_positionSetActiveMonNum2_user,
             (LPVOID *)&_dummy_positionSetActiveMonNum2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

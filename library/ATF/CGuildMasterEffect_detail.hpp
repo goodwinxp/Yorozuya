@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuildMasterEffectctor_CGuildMasterEffect2_ptr CGuildMasterEffectctor_CGuildMasterEffect2_next(nullptr);
-        info::CGuildMasterEffectctor_CGuildMasterEffect2_clbk CGuildMasterEffectctor_CGuildMasterEffect2_user(nullptr);
-        info::CGuildMasterEffectGetInstance4_ptr CGuildMasterEffectGetInstance4_next(nullptr);
-        info::CGuildMasterEffectGetInstance4_clbk CGuildMasterEffectGetInstance4_user(nullptr);
-        info::CGuildMasterEffectadjust_effect6_ptr CGuildMasterEffectadjust_effect6_next(nullptr);
-        info::CGuildMasterEffectadjust_effect6_clbk CGuildMasterEffectadjust_effect6_user(nullptr);
-        info::CGuildMasterEffectchange_player8_ptr CGuildMasterEffectchange_player8_next(nullptr);
-        info::CGuildMasterEffectchange_player8_clbk CGuildMasterEffectchange_player8_user(nullptr);
-        info::CGuildMasterEffectget_AdjustableGrade10_ptr CGuildMasterEffectget_AdjustableGrade10_next(nullptr);
-        info::CGuildMasterEffectget_AdjustableGrade10_clbk CGuildMasterEffectget_AdjustableGrade10_user(nullptr);
-        info::CGuildMasterEffectget_AttactValueByGrade12_ptr CGuildMasterEffectget_AttactValueByGrade12_next(nullptr);
-        info::CGuildMasterEffectget_AttactValueByGrade12_clbk CGuildMasterEffectget_AttactValueByGrade12_user(nullptr);
-        info::CGuildMasterEffectget_DefenceValueByGrade14_ptr CGuildMasterEffectget_DefenceValueByGrade14_next(nullptr);
-        info::CGuildMasterEffectget_DefenceValueByGrade14_clbk CGuildMasterEffectget_DefenceValueByGrade14_user(nullptr);
-        info::CGuildMasterEffectin_player16_ptr CGuildMasterEffectin_player16_next(nullptr);
-        info::CGuildMasterEffectin_player16_clbk CGuildMasterEffectin_player16_user(nullptr);
-        info::CGuildMasterEffectinit18_ptr CGuildMasterEffectinit18_next(nullptr);
-        info::CGuildMasterEffectinit18_clbk CGuildMasterEffectinit18_user(nullptr);
-        info::CGuildMasterEffectout_player20_ptr CGuildMasterEffectout_player20_next(nullptr);
-        info::CGuildMasterEffectout_player20_clbk CGuildMasterEffectout_player20_user(nullptr);
-        info::CGuildMasterEffectshow_to_all22_ptr CGuildMasterEffectshow_to_all22_next(nullptr);
-        info::CGuildMasterEffectshow_to_all22_clbk CGuildMasterEffectshow_to_all22_user(nullptr);
+        static info::CGuildMasterEffectctor_CGuildMasterEffect2_ptr CGuildMasterEffectctor_CGuildMasterEffect2_next(nullptr);
+        static info::CGuildMasterEffectctor_CGuildMasterEffect2_clbk CGuildMasterEffectctor_CGuildMasterEffect2_user(nullptr);
+        static info::CGuildMasterEffectGetInstance4_ptr CGuildMasterEffectGetInstance4_next(nullptr);
+        static info::CGuildMasterEffectGetInstance4_clbk CGuildMasterEffectGetInstance4_user(nullptr);
+        static info::CGuildMasterEffectadjust_effect6_ptr CGuildMasterEffectadjust_effect6_next(nullptr);
+        static info::CGuildMasterEffectadjust_effect6_clbk CGuildMasterEffectadjust_effect6_user(nullptr);
+        static info::CGuildMasterEffectchange_player8_ptr CGuildMasterEffectchange_player8_next(nullptr);
+        static info::CGuildMasterEffectchange_player8_clbk CGuildMasterEffectchange_player8_user(nullptr);
+        static info::CGuildMasterEffectget_AdjustableGrade10_ptr CGuildMasterEffectget_AdjustableGrade10_next(nullptr);
+        static info::CGuildMasterEffectget_AdjustableGrade10_clbk CGuildMasterEffectget_AdjustableGrade10_user(nullptr);
+        static info::CGuildMasterEffectget_AttactValueByGrade12_ptr CGuildMasterEffectget_AttactValueByGrade12_next(nullptr);
+        static info::CGuildMasterEffectget_AttactValueByGrade12_clbk CGuildMasterEffectget_AttactValueByGrade12_user(nullptr);
+        static info::CGuildMasterEffectget_DefenceValueByGrade14_ptr CGuildMasterEffectget_DefenceValueByGrade14_next(nullptr);
+        static info::CGuildMasterEffectget_DefenceValueByGrade14_clbk CGuildMasterEffectget_DefenceValueByGrade14_user(nullptr);
+        static info::CGuildMasterEffectin_player16_ptr CGuildMasterEffectin_player16_next(nullptr);
+        static info::CGuildMasterEffectin_player16_clbk CGuildMasterEffectin_player16_user(nullptr);
+        static info::CGuildMasterEffectinit18_ptr CGuildMasterEffectinit18_next(nullptr);
+        static info::CGuildMasterEffectinit18_clbk CGuildMasterEffectinit18_user(nullptr);
+        static info::CGuildMasterEffectout_player20_ptr CGuildMasterEffectout_player20_next(nullptr);
+        static info::CGuildMasterEffectout_player20_clbk CGuildMasterEffectout_player20_user(nullptr);
+        static info::CGuildMasterEffectshow_to_all22_ptr CGuildMasterEffectshow_to_all22_next(nullptr);
+        static info::CGuildMasterEffectshow_to_all22_clbk CGuildMasterEffectshow_to_all22_user(nullptr);
         
-        void CGuildMasterEffectctor_CGuildMasterEffect2_wrapper(struct CGuildMasterEffect* _this)
+        static void CGuildMasterEffectctor_CGuildMasterEffect2_wrapper(struct CGuildMasterEffect* _this)
         {
            CGuildMasterEffectctor_CGuildMasterEffect2_user(_this, CGuildMasterEffectctor_CGuildMasterEffect2_next);
         };
-        struct CGuildMasterEffect* CGuildMasterEffectGetInstance4_wrapper()
+        static struct CGuildMasterEffect* CGuildMasterEffectGetInstance4_wrapper()
         {
            return CGuildMasterEffectGetInstance4_user(CGuildMasterEffectGetInstance4_next);
         };
-        void CGuildMasterEffectadjust_effect6_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade, bool bAdd)
+        static void CGuildMasterEffectadjust_effect6_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade, bool bAdd)
         {
            CGuildMasterEffectadjust_effect6_user(_this, pP, byGrade, bAdd, CGuildMasterEffectadjust_effect6_next);
         };
-        bool CGuildMasterEffectchange_player8_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byBeforeGrade, char byAfterGrade)
+        static bool CGuildMasterEffectchange_player8_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byBeforeGrade, char byAfterGrade)
         {
            return CGuildMasterEffectchange_player8_user(_this, pP, byBeforeGrade, byAfterGrade, CGuildMasterEffectchange_player8_next);
         };
-        char CGuildMasterEffectget_AdjustableGrade10_wrapper(struct CGuildMasterEffect* _this)
+        static char CGuildMasterEffectget_AdjustableGrade10_wrapper(struct CGuildMasterEffect* _this)
         {
            return CGuildMasterEffectget_AdjustableGrade10_user(_this, CGuildMasterEffectget_AdjustableGrade10_next);
         };
-        char CGuildMasterEffectget_AttactValueByGrade12_wrapper(struct CGuildMasterEffect* _this, char byGrade)
+        static char CGuildMasterEffectget_AttactValueByGrade12_wrapper(struct CGuildMasterEffect* _this, char byGrade)
         {
            return CGuildMasterEffectget_AttactValueByGrade12_user(_this, byGrade, CGuildMasterEffectget_AttactValueByGrade12_next);
         };
-        char CGuildMasterEffectget_DefenceValueByGrade14_wrapper(struct CGuildMasterEffect* _this, char byGrade)
+        static char CGuildMasterEffectget_DefenceValueByGrade14_wrapper(struct CGuildMasterEffect* _this, char byGrade)
         {
            return CGuildMasterEffectget_DefenceValueByGrade14_user(_this, byGrade, CGuildMasterEffectget_DefenceValueByGrade14_next);
         };
-        bool CGuildMasterEffectin_player16_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade)
+        static bool CGuildMasterEffectin_player16_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade)
         {
            return CGuildMasterEffectin_player16_user(_this, pP, byGrade, CGuildMasterEffectin_player16_next);
         };
-        bool CGuildMasterEffectinit18_wrapper(struct CGuildMasterEffect* _this)
+        static bool CGuildMasterEffectinit18_wrapper(struct CGuildMasterEffect* _this)
         {
            return CGuildMasterEffectinit18_user(_this, CGuildMasterEffectinit18_next);
         };
-        bool CGuildMasterEffectout_player20_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade)
+        static bool CGuildMasterEffectout_player20_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byGrade)
         {
            return CGuildMasterEffectout_player20_user(_this, pP, byGrade, CGuildMasterEffectout_player20_next);
         };
-        void CGuildMasterEffectshow_to_all22_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byBeforeGrade, char byGrade, char byState)
+        static void CGuildMasterEffectshow_to_all22_wrapper(struct CGuildMasterEffect* _this, struct CPlayer* pP, char byBeforeGrade, char byGrade, char byState)
         {
            CGuildMasterEffectshow_to_all22_user(_this, pP, byBeforeGrade, byGrade, byState, CGuildMasterEffectshow_to_all22_next);
         };
         
-        hook_record CGuildMasterEffect_functions[] = {
+        static hook_record CGuildMasterEffect_functions[] = {
         {   (LPVOID)0x1403f46e0L,
             (LPVOID *)&CGuildMasterEffectctor_CGuildMasterEffect2_user,
             (LPVOID *)&CGuildMasterEffectctor_CGuildMasterEffect2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

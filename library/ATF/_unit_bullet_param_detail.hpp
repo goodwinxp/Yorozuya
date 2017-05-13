@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_unit_bullet_paramIsFill2_ptr _unit_bullet_paramIsFill2_next(nullptr);
-        info::_unit_bullet_paramIsFill2_clbk _unit_bullet_paramIsFill2_user(nullptr);
+        static info::_unit_bullet_paramIsFill2_ptr _unit_bullet_paramIsFill2_next(nullptr);
+        static info::_unit_bullet_paramIsFill2_clbk _unit_bullet_paramIsFill2_user(nullptr);
         
-        int _unit_bullet_paramIsFill2_wrapper(struct _unit_bullet_param* _this)
+        static int _unit_bullet_paramIsFill2_wrapper(struct _unit_bullet_param* _this)
         {
            return _unit_bullet_paramIsFill2_user(_this, _unit_bullet_paramIsFill2_next);
         };
         
-        hook_record _unit_bullet_param_functions[] = {
+        static hook_record _unit_bullet_param_functions[] = {
         {   (LPVOID)0x1401083b0L,
             (LPVOID *)&_unit_bullet_paramIsFill2_user,
             (LPVOID *)&_unit_bullet_paramIsFill2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

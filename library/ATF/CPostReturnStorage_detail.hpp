@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPostReturnStorageAddReturnPost2_ptr CPostReturnStorageAddReturnPost2_next(nullptr);
-        info::CPostReturnStorageAddReturnPost2_clbk CPostReturnStorageAddReturnPost2_user(nullptr);
-        info::CPostReturnStoragector_CPostReturnStorage4_ptr CPostReturnStoragector_CPostReturnStorage4_next(nullptr);
-        info::CPostReturnStoragector_CPostReturnStorage4_clbk CPostReturnStoragector_CPostReturnStorage4_user(nullptr);
-        info::CPostReturnStorageDelPostData6_ptr CPostReturnStorageDelPostData6_next(nullptr);
-        info::CPostReturnStorageDelPostData6_clbk CPostReturnStorageDelPostData6_user(nullptr);
-        info::CPostReturnStorageGetPostDataFromInx8_ptr CPostReturnStorageGetPostDataFromInx8_next(nullptr);
-        info::CPostReturnStorageGetPostDataFromInx8_clbk CPostReturnStorageGetPostDataFromInx8_user(nullptr);
-        info::CPostReturnStorageGetPostDataFromSerial10_ptr CPostReturnStorageGetPostDataFromSerial10_next(nullptr);
-        info::CPostReturnStorageGetPostDataFromSerial10_clbk CPostReturnStorageGetPostDataFromSerial10_user(nullptr);
-        info::CPostReturnStorageGetReturnPostInx12_ptr CPostReturnStorageGetReturnPostInx12_next(nullptr);
-        info::CPostReturnStorageGetReturnPostInx12_clbk CPostReturnStorageGetReturnPostInx12_user(nullptr);
-        info::CPostReturnStorageGetSize14_ptr CPostReturnStorageGetSize14_next(nullptr);
-        info::CPostReturnStorageGetSize14_clbk CPostReturnStorageGetSize14_user(nullptr);
-        info::CPostReturnStorageInit16_ptr CPostReturnStorageInit16_next(nullptr);
-        info::CPostReturnStorageInit16_clbk CPostReturnStorageInit16_user(nullptr);
-        info::CPostReturnStoragedtor_CPostReturnStorage18_ptr CPostReturnStoragedtor_CPostReturnStorage18_next(nullptr);
-        info::CPostReturnStoragedtor_CPostReturnStorage18_clbk CPostReturnStoragedtor_CPostReturnStorage18_user(nullptr);
+        static info::CPostReturnStorageAddReturnPost2_ptr CPostReturnStorageAddReturnPost2_next(nullptr);
+        static info::CPostReturnStorageAddReturnPost2_clbk CPostReturnStorageAddReturnPost2_user(nullptr);
+        static info::CPostReturnStoragector_CPostReturnStorage4_ptr CPostReturnStoragector_CPostReturnStorage4_next(nullptr);
+        static info::CPostReturnStoragector_CPostReturnStorage4_clbk CPostReturnStoragector_CPostReturnStorage4_user(nullptr);
+        static info::CPostReturnStorageDelPostData6_ptr CPostReturnStorageDelPostData6_next(nullptr);
+        static info::CPostReturnStorageDelPostData6_clbk CPostReturnStorageDelPostData6_user(nullptr);
+        static info::CPostReturnStorageGetPostDataFromInx8_ptr CPostReturnStorageGetPostDataFromInx8_next(nullptr);
+        static info::CPostReturnStorageGetPostDataFromInx8_clbk CPostReturnStorageGetPostDataFromInx8_user(nullptr);
+        static info::CPostReturnStorageGetPostDataFromSerial10_ptr CPostReturnStorageGetPostDataFromSerial10_next(nullptr);
+        static info::CPostReturnStorageGetPostDataFromSerial10_clbk CPostReturnStorageGetPostDataFromSerial10_user(nullptr);
+        static info::CPostReturnStorageGetReturnPostInx12_ptr CPostReturnStorageGetReturnPostInx12_next(nullptr);
+        static info::CPostReturnStorageGetReturnPostInx12_clbk CPostReturnStorageGetReturnPostInx12_user(nullptr);
+        static info::CPostReturnStorageGetSize14_ptr CPostReturnStorageGetSize14_next(nullptr);
+        static info::CPostReturnStorageGetSize14_clbk CPostReturnStorageGetSize14_user(nullptr);
+        static info::CPostReturnStorageInit16_ptr CPostReturnStorageInit16_next(nullptr);
+        static info::CPostReturnStorageInit16_clbk CPostReturnStorageInit16_user(nullptr);
+        static info::CPostReturnStoragedtor_CPostReturnStorage18_ptr CPostReturnStoragedtor_CPostReturnStorage18_next(nullptr);
+        static info::CPostReturnStoragedtor_CPostReturnStorage18_clbk CPostReturnStoragedtor_CPostReturnStorage18_user(nullptr);
         
-        struct CPostData* CPostReturnStorageAddReturnPost2_wrapper(struct CPostReturnStorage* _this, char byErrCode, unsigned int dwPostSerial, char byState, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
+        static struct CPostData* CPostReturnStorageAddReturnPost2_wrapper(struct CPostReturnStorage* _this, char byErrCode, unsigned int dwPostSerial, char byState, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
         {
            return CPostReturnStorageAddReturnPost2_user(_this, byErrCode, dwPostSerial, byState, wszRecvName, wszTitle, wszContent, Key, dwDur, dwUpt, dwGold, lnUID, CPostReturnStorageAddReturnPost2_next);
         };
-        void CPostReturnStoragector_CPostReturnStorage4_wrapper(struct CPostReturnStorage* _this)
+        static void CPostReturnStoragector_CPostReturnStorage4_wrapper(struct CPostReturnStorage* _this)
         {
            CPostReturnStoragector_CPostReturnStorage4_user(_this, CPostReturnStoragector_CPostReturnStorage4_next);
         };
-        void CPostReturnStorageDelPostData6_wrapper(struct CPostReturnStorage* _this, unsigned int dwPostSerial)
+        static void CPostReturnStorageDelPostData6_wrapper(struct CPostReturnStorage* _this, unsigned int dwPostSerial)
         {
            CPostReturnStorageDelPostData6_user(_this, dwPostSerial, CPostReturnStorageDelPostData6_next);
         };
-        struct CPostData* CPostReturnStorageGetPostDataFromInx8_wrapper(struct CPostReturnStorage* _this, int nIndex)
+        static struct CPostData* CPostReturnStorageGetPostDataFromInx8_wrapper(struct CPostReturnStorage* _this, int nIndex)
         {
            return CPostReturnStorageGetPostDataFromInx8_user(_this, nIndex, CPostReturnStorageGetPostDataFromInx8_next);
         };
-        struct CPostData* CPostReturnStorageGetPostDataFromSerial10_wrapper(struct CPostReturnStorage* _this, unsigned int dwPostSerial)
+        static struct CPostData* CPostReturnStorageGetPostDataFromSerial10_wrapper(struct CPostReturnStorage* _this, unsigned int dwPostSerial)
         {
            return CPostReturnStorageGetPostDataFromSerial10_user(_this, dwPostSerial, CPostReturnStorageGetPostDataFromSerial10_next);
         };
-        int CPostReturnStorageGetReturnPostInx12_wrapper(struct CPostReturnStorage* _this)
+        static int CPostReturnStorageGetReturnPostInx12_wrapper(struct CPostReturnStorage* _this)
         {
            return CPostReturnStorageGetReturnPostInx12_user(_this, CPostReturnStorageGetReturnPostInx12_next);
         };
-        int CPostReturnStorageGetSize14_wrapper(struct CPostReturnStorage* _this)
+        static int CPostReturnStorageGetSize14_wrapper(struct CPostReturnStorage* _this)
         {
            return CPostReturnStorageGetSize14_user(_this, CPostReturnStorageGetSize14_next);
         };
-        void CPostReturnStorageInit16_wrapper(struct CPostReturnStorage* _this)
+        static void CPostReturnStorageInit16_wrapper(struct CPostReturnStorage* _this)
         {
            CPostReturnStorageInit16_user(_this, CPostReturnStorageInit16_next);
         };
-        void CPostReturnStoragedtor_CPostReturnStorage18_wrapper(struct CPostReturnStorage* _this)
+        static void CPostReturnStoragedtor_CPostReturnStorage18_wrapper(struct CPostReturnStorage* _this)
         {
            CPostReturnStoragedtor_CPostReturnStorage18_user(_this, CPostReturnStoragedtor_CPostReturnStorage18_next);
         };
         
-        hook_record CPostReturnStorage_functions[] = {
+        static hook_record CPostReturnStorage_functions[] = {
         {   (LPVOID)0x1403238f0L,
             (LPVOID *)&CPostReturnStorageAddReturnPost2_user,
             (LPVOID *)&CPostReturnStorageAddReturnPost2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

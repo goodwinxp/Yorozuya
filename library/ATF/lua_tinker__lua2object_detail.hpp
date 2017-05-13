@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct CMonster* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CMonster *>* _this, lua_State* L, int index)
+            static struct CMonster* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CMonster *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<CMonster *>_functions[] = {
+            static hook_record lua2object<CMonster *>_functions[] = {
             {   (LPVOID)0x14040b1c0L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -27,7 +27,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -38,15 +38,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct CLuaEventNode* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaEventNode *>* _this, lua_State* L, int index)
+            static struct CLuaEventNode* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaEventNode *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<CLuaEventNode *>_functions[] = {
+            static hook_record lua2object<CLuaEventNode *>_functions[] = {
             {   (LPVOID)0x14040a890L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -55,7 +55,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -66,15 +66,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct CLuaSignalReActor* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaSignalReActor *>* _this, lua_State* L, int index)
+            static struct CLuaSignalReActor* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaSignalReActor *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<CLuaSignalReActor *>_functions[] = {
+            static hook_record lua2object<CLuaSignalReActor *>_functions[] = {
             {   (LPVOID)0x14040b130L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -83,7 +83,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -94,15 +94,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct CLuaScript* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaScript *>* _this, lua_State* L, int index)
+            static struct CLuaScript* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaScript *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<CLuaScript *>_functions[] = {
+            static hook_record lua2object<CLuaScript *>_functions[] = {
             {   (LPVOID)0x14040a920L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -111,7 +111,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -122,15 +122,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct LuaParam3* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<LuaParam3 *>* _this, lua_State* L, int index)
+            static struct LuaParam3* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<LuaParam3 *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<LuaParam3 *>_functions[] = {
+            static hook_record lua2object<LuaParam3 *>_functions[] = {
             {   (LPVOID)0x1404098b0L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -139,7 +139,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -150,15 +150,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct CLuaEventMgr* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaEventMgr *>* _this, lua_State* L, int index)
+            static struct CLuaEventMgr* lua_tinker__lua2objectinvoke2_wrapper(struct lua_tinker::lua2object<CLuaEventMgr *>* _this, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(_this, L, index);
             };
             
-            hook_record lua2object<CLuaEventMgr *>_functions[] = {
+            static hook_record lua2object<CLuaEventMgr *>_functions[] = {
             {   (LPVOID)0x14040a9b0L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -167,7 +167,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__lua2object_info.hpp"
@@ -178,15 +178,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
-            info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_ptr lua_tinker__lua2objectinvoke2_next(nullptr);
+            static info::lua_tinker__lua2objectinvoke2_clbk lua_tinker__lua2objectinvoke2_user(nullptr);
             
-            struct LuaParam3* lua_tinker__lua2objectinvoke2_wrapper(struct LuaParam3* result, lua_State* L, int index)
+            static struct LuaParam3* lua_tinker__lua2objectinvoke2_wrapper(struct LuaParam3* result, lua_State* L, int index)
             {
                return lua_tinker__lua2objectinvoke2_user(result, L, index);
             };
             
-            hook_record lua2object<LuaParam3>_functions[] = {
+            static hook_record lua2object<LuaParam3>_functions[] = {
             {   (LPVOID)0x14040aa40L,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_user,
                 (LPVOID *)&lua_tinker__lua2objectinvoke2_next,
@@ -195,6 +195,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

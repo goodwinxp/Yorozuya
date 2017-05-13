@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ANIMUSKEYCovDBKey2_ptr _ANIMUSKEYCovDBKey2_next(nullptr);
-        info::_ANIMUSKEYCovDBKey2_clbk _ANIMUSKEYCovDBKey2_user(nullptr);
-        info::_ANIMUSKEYIsFilled4_ptr _ANIMUSKEYIsFilled4_next(nullptr);
-        info::_ANIMUSKEYIsFilled4_clbk _ANIMUSKEYIsFilled4_user(nullptr);
-        info::_ANIMUSKEYLoadDBKey6_ptr _ANIMUSKEYLoadDBKey6_next(nullptr);
-        info::_ANIMUSKEYLoadDBKey6_clbk _ANIMUSKEYLoadDBKey6_user(nullptr);
-        info::_ANIMUSKEYSetRelease8_ptr _ANIMUSKEYSetRelease8_next(nullptr);
-        info::_ANIMUSKEYSetRelease8_clbk _ANIMUSKEYSetRelease8_user(nullptr);
+        static info::_ANIMUSKEYCovDBKey2_ptr _ANIMUSKEYCovDBKey2_next(nullptr);
+        static info::_ANIMUSKEYCovDBKey2_clbk _ANIMUSKEYCovDBKey2_user(nullptr);
+        static info::_ANIMUSKEYIsFilled4_ptr _ANIMUSKEYIsFilled4_next(nullptr);
+        static info::_ANIMUSKEYIsFilled4_clbk _ANIMUSKEYIsFilled4_user(nullptr);
+        static info::_ANIMUSKEYLoadDBKey6_ptr _ANIMUSKEYLoadDBKey6_next(nullptr);
+        static info::_ANIMUSKEYLoadDBKey6_clbk _ANIMUSKEYLoadDBKey6_user(nullptr);
+        static info::_ANIMUSKEYSetRelease8_ptr _ANIMUSKEYSetRelease8_next(nullptr);
+        static info::_ANIMUSKEYSetRelease8_clbk _ANIMUSKEYSetRelease8_user(nullptr);
         
-        char _ANIMUSKEYCovDBKey2_wrapper(struct _ANIMUSKEY* _this)
+        static char _ANIMUSKEYCovDBKey2_wrapper(struct _ANIMUSKEY* _this)
         {
            return _ANIMUSKEYCovDBKey2_user(_this, _ANIMUSKEYCovDBKey2_next);
         };
-        bool _ANIMUSKEYIsFilled4_wrapper(struct _ANIMUSKEY* _this)
+        static bool _ANIMUSKEYIsFilled4_wrapper(struct _ANIMUSKEY* _this)
         {
            return _ANIMUSKEYIsFilled4_user(_this, _ANIMUSKEYIsFilled4_next);
         };
-        void _ANIMUSKEYLoadDBKey6_wrapper(struct _ANIMUSKEY* _this, char pl_byKey)
+        static void _ANIMUSKEYLoadDBKey6_wrapper(struct _ANIMUSKEY* _this, char pl_byKey)
         {
            _ANIMUSKEYLoadDBKey6_user(_this, pl_byKey, _ANIMUSKEYLoadDBKey6_next);
         };
-        void _ANIMUSKEYSetRelease8_wrapper(struct _ANIMUSKEY* _this)
+        static void _ANIMUSKEYSetRelease8_wrapper(struct _ANIMUSKEY* _this)
         {
            _ANIMUSKEYSetRelease8_user(_this, _ANIMUSKEYSetRelease8_next);
         };
         
-        hook_record _ANIMUSKEY_functions[] = {
+        static hook_record _ANIMUSKEY_functions[] = {
         {   (LPVOID)0x1401bf2e0L,
             (LPVOID *)&_ANIMUSKEYCovDBKey2_user,
             (LPVOID *)&_ANIMUSKEYCovDBKey2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

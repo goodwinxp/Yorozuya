@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_ptr GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_clbk GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosEnter4_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosLoop6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateRoundReturnStartPos* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_user(_this, GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosdtor_CNormalGuildBattleStateRoundReturnStartPos8_next);
             };
             
-            hook_record CNormalGuildBattleStateRoundReturnStartPos_functions[] = {
+            static hook_record CNormalGuildBattleStateRoundReturnStartPos_functions[] = {
             {   (LPVOID)0x1403f1b10L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosctor_CNormalGuildBattleStateRoundReturnStartPos2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_sf_continousGetSFContCurTime2_ptr _sf_continousGetSFContCurTime2_next(nullptr);
-        info::_sf_continousGetSFContCurTime2_clbk _sf_continousGetSFContCurTime2_user(nullptr);
-        info::_sf_continousctor__sf_continous4_ptr _sf_continousctor__sf_continous4_next(nullptr);
-        info::_sf_continousctor__sf_continous4_clbk _sf_continousctor__sf_continous4_user(nullptr);
+        static info::_sf_continousGetSFContCurTime2_ptr _sf_continousGetSFContCurTime2_next(nullptr);
+        static info::_sf_continousGetSFContCurTime2_clbk _sf_continousGetSFContCurTime2_user(nullptr);
+        static info::_sf_continousctor__sf_continous4_ptr _sf_continousctor__sf_continous4_next(nullptr);
+        static info::_sf_continousctor__sf_continous4_clbk _sf_continousctor__sf_continous4_user(nullptr);
         
-        unsigned int _sf_continousGetSFContCurTime2_wrapper()
+        static unsigned int _sf_continousGetSFContCurTime2_wrapper()
         {
            return _sf_continousGetSFContCurTime2_user(_sf_continousGetSFContCurTime2_next);
         };
-        void _sf_continousctor__sf_continous4_wrapper(struct _sf_continous* _this)
+        static void _sf_continousctor__sf_continous4_wrapper(struct _sf_continous* _this)
         {
            _sf_continousctor__sf_continous4_user(_this, _sf_continousctor__sf_continous4_next);
         };
         
-        hook_record _sf_continous_functions[] = {
+        static hook_record _sf_continous_functions[] = {
         {   (LPVOID)0x140034970L,
             (LPVOID *)&_sf_continousGetSFContCurTime2_user,
             (LPVOID *)&_sf_continousGetSFContCurTime2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

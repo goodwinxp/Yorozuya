@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SYN_DATActor__SYN_DATA2_ptr _SYN_DATActor__SYN_DATA2_next(nullptr);
-        info::_SYN_DATActor__SYN_DATA2_clbk _SYN_DATActor__SYN_DATA2_user(nullptr);
-        info::_SYN_DATAdtor__SYN_DATA6_ptr _SYN_DATAdtor__SYN_DATA6_next(nullptr);
-        info::_SYN_DATAdtor__SYN_DATA6_clbk _SYN_DATAdtor__SYN_DATA6_user(nullptr);
+        static info::_SYN_DATActor__SYN_DATA2_ptr _SYN_DATActor__SYN_DATA2_next(nullptr);
+        static info::_SYN_DATActor__SYN_DATA2_clbk _SYN_DATActor__SYN_DATA2_user(nullptr);
+        static info::_SYN_DATAdtor__SYN_DATA6_ptr _SYN_DATAdtor__SYN_DATA6_next(nullptr);
+        static info::_SYN_DATAdtor__SYN_DATA6_clbk _SYN_DATAdtor__SYN_DATA6_user(nullptr);
         
-        void _SYN_DATActor__SYN_DATA2_wrapper(struct _SYN_DATA* _this)
+        static void _SYN_DATActor__SYN_DATA2_wrapper(struct _SYN_DATA* _this)
         {
            _SYN_DATActor__SYN_DATA2_user(_this, _SYN_DATActor__SYN_DATA2_next);
         };
-        void _SYN_DATAdtor__SYN_DATA6_wrapper(struct _SYN_DATA* _this)
+        static void _SYN_DATAdtor__SYN_DATA6_wrapper(struct _SYN_DATA* _this)
         {
            _SYN_DATAdtor__SYN_DATA6_user(_this, _SYN_DATAdtor__SYN_DATA6_next);
         };
         
-        hook_record _SYN_DATA_functions[] = {
+        static hook_record _SYN_DATA_functions[] = {
         {   (LPVOID)0x14043ed10L,
             (LPVOID *)&_SYN_DATActor__SYN_DATA2_user,
             (LPVOID *)&_SYN_DATActor__SYN_DATA2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::INI_Keyctor_INI_Key2_ptr INI_Keyctor_INI_Key2_next(nullptr);
-        info::INI_Keyctor_INI_Key2_clbk INI_Keyctor_INI_Key2_user(nullptr);
+        static info::INI_Keyctor_INI_Key2_ptr INI_Keyctor_INI_Key2_next(nullptr);
+        static info::INI_Keyctor_INI_Key2_clbk INI_Keyctor_INI_Key2_user(nullptr);
         
-        void INI_Keyctor_INI_Key2_wrapper(struct INI_Key* _this)
+        static void INI_Keyctor_INI_Key2_wrapper(struct INI_Key* _this)
         {
            INI_Keyctor_INI_Key2_user(_this, INI_Keyctor_INI_Key2_next);
         };
         
-        hook_record INI_Key_functions[] = {
+        static hook_record INI_Key_functions[] = {
         {   (LPVOID)0x1404700b0L,
             (LPVOID *)&INI_Keyctor_INI_Key2_user,
             (LPVOID *)&INI_Keyctor_INI_Key2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

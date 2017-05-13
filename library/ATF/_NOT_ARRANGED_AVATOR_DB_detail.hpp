@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_NOT_ARRANGED_AVATOR_DBInit2_ptr _NOT_ARRANGED_AVATOR_DBInit2_next(nullptr);
-        info::_NOT_ARRANGED_AVATOR_DBInit2_clbk _NOT_ARRANGED_AVATOR_DBInit2_user(nullptr);
-        info::_NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_ptr _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_next(nullptr);
-        info::_NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_clbk _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_user(nullptr);
+        static info::_NOT_ARRANGED_AVATOR_DBInit2_ptr _NOT_ARRANGED_AVATOR_DBInit2_next(nullptr);
+        static info::_NOT_ARRANGED_AVATOR_DBInit2_clbk _NOT_ARRANGED_AVATOR_DBInit2_user(nullptr);
+        static info::_NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_ptr _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_next(nullptr);
+        static info::_NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_clbk _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_user(nullptr);
         
-        void _NOT_ARRANGED_AVATOR_DBInit2_wrapper(struct _NOT_ARRANGED_AVATOR_DB* _this)
+        static void _NOT_ARRANGED_AVATOR_DBInit2_wrapper(struct _NOT_ARRANGED_AVATOR_DB* _this)
         {
            _NOT_ARRANGED_AVATOR_DBInit2_user(_this, _NOT_ARRANGED_AVATOR_DBInit2_next);
         };
-        void _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_wrapper(struct _NOT_ARRANGED_AVATOR_DB* _this)
+        static void _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_wrapper(struct _NOT_ARRANGED_AVATOR_DB* _this)
         {
            _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_user(_this, _NOT_ARRANGED_AVATOR_DBctor__NOT_ARRANGED_AVATOR_DB4_next);
         };
         
-        hook_record _NOT_ARRANGED_AVATOR_DB_functions[] = {
+        static hook_record _NOT_ARRANGED_AVATOR_DB_functions[] = {
         {   (LPVOID)0x14011f070L,
             (LPVOID *)&_NOT_ARRANGED_AVATOR_DBInit2_user,
             (LPVOID *)&_NOT_ARRANGED_AVATOR_DBInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

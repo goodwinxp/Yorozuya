@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_MONEY_SUPPLY_DATAinit2_ptr _MONEY_SUPPLY_DATAinit2_next(nullptr);
-        info::_MONEY_SUPPLY_DATAinit2_clbk _MONEY_SUPPLY_DATAinit2_user(nullptr);
-        info::_MONEY_SUPPLY_DATAsize4_ptr _MONEY_SUPPLY_DATAsize4_next(nullptr);
-        info::_MONEY_SUPPLY_DATAsize4_clbk _MONEY_SUPPLY_DATAsize4_user(nullptr);
+        static info::_MONEY_SUPPLY_DATAinit2_ptr _MONEY_SUPPLY_DATAinit2_next(nullptr);
+        static info::_MONEY_SUPPLY_DATAinit2_clbk _MONEY_SUPPLY_DATAinit2_user(nullptr);
+        static info::_MONEY_SUPPLY_DATAsize4_ptr _MONEY_SUPPLY_DATAsize4_next(nullptr);
+        static info::_MONEY_SUPPLY_DATAsize4_clbk _MONEY_SUPPLY_DATAsize4_user(nullptr);
         
-        void _MONEY_SUPPLY_DATAinit2_wrapper(struct _MONEY_SUPPLY_DATA* _this)
+        static void _MONEY_SUPPLY_DATAinit2_wrapper(struct _MONEY_SUPPLY_DATA* _this)
         {
            _MONEY_SUPPLY_DATAinit2_user(_this, _MONEY_SUPPLY_DATAinit2_next);
         };
-        int _MONEY_SUPPLY_DATAsize4_wrapper(struct _MONEY_SUPPLY_DATA* _this)
+        static int _MONEY_SUPPLY_DATAsize4_wrapper(struct _MONEY_SUPPLY_DATA* _this)
         {
            return _MONEY_SUPPLY_DATAsize4_user(_this, _MONEY_SUPPLY_DATAsize4_next);
         };
         
-        hook_record _MONEY_SUPPLY_DATA_functions[] = {
+        static hook_record _MONEY_SUPPLY_DATA_functions[] = {
         {   (LPVOID)0x140430740L,
             (LPVOID *)&_MONEY_SUPPLY_DATAinit2_user,
             (LPVOID *)&_MONEY_SUPPLY_DATAinit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

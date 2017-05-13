@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_ptr CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_next(nullptr);
-        info::CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_clbk CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_user(nullptr);
-        info::CUnmannedTraderGroupVersionInfoGetVersion4_ptr CUnmannedTraderGroupVersionInfoGetVersion4_next(nullptr);
-        info::CUnmannedTraderGroupVersionInfoGetVersion4_clbk CUnmannedTraderGroupVersionInfoGetVersion4_user(nullptr);
-        info::CUnmannedTraderGroupVersionInfoIncreaseVersion6_ptr CUnmannedTraderGroupVersionInfoIncreaseVersion6_next(nullptr);
-        info::CUnmannedTraderGroupVersionInfoIncreaseVersion6_clbk CUnmannedTraderGroupVersionInfoIncreaseVersion6_user(nullptr);
-        info::CUnmannedTraderGroupVersionInfoInit8_ptr CUnmannedTraderGroupVersionInfoInit8_next(nullptr);
-        info::CUnmannedTraderGroupVersionInfoInit8_clbk CUnmannedTraderGroupVersionInfoInit8_user(nullptr);
-        info::CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_ptr CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_next(nullptr);
-        info::CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_clbk CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_user(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_ptr CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_next(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_clbk CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_user(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoGetVersion4_ptr CUnmannedTraderGroupVersionInfoGetVersion4_next(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoGetVersion4_clbk CUnmannedTraderGroupVersionInfoGetVersion4_user(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoIncreaseVersion6_ptr CUnmannedTraderGroupVersionInfoIncreaseVersion6_next(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoIncreaseVersion6_clbk CUnmannedTraderGroupVersionInfoIncreaseVersion6_user(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoInit8_ptr CUnmannedTraderGroupVersionInfoInit8_next(nullptr);
+        static info::CUnmannedTraderGroupVersionInfoInit8_clbk CUnmannedTraderGroupVersionInfoInit8_user(nullptr);
+        static info::CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_ptr CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_next(nullptr);
+        static info::CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_clbk CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_user(nullptr);
         
-        void CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_wrapper(struct CUnmannedTraderGroupVersionInfo* _this)
+        static void CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_wrapper(struct CUnmannedTraderGroupVersionInfo* _this)
         {
            CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_user(_this, CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_next);
         };
-        bool CUnmannedTraderGroupVersionInfoGetVersion4_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, char byDivision, char byClass, unsigned int* dwVer)
+        static bool CUnmannedTraderGroupVersionInfoGetVersion4_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, char byDivision, char byClass, unsigned int* dwVer)
         {
            return CUnmannedTraderGroupVersionInfoGetVersion4_user(_this, byDivision, byClass, dwVer, CUnmannedTraderGroupVersionInfoGetVersion4_next);
         };
-        bool CUnmannedTraderGroupVersionInfoIncreaseVersion6_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, char byDivision, char byClass)
+        static bool CUnmannedTraderGroupVersionInfoIncreaseVersion6_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, char byDivision, char byClass)
         {
            return CUnmannedTraderGroupVersionInfoIncreaseVersion6_user(_this, byDivision, byClass, CUnmannedTraderGroupVersionInfoIncreaseVersion6_next);
         };
-        bool CUnmannedTraderGroupVersionInfoInit8_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, struct std::vector<std::pair<unsigned long,unsigned long>,std::allocator<std::pair<unsigned long,unsigned long> > >* vecInfo)
+        static bool CUnmannedTraderGroupVersionInfoInit8_wrapper(struct CUnmannedTraderGroupVersionInfo* _this, struct std::vector<std::pair<unsigned long,unsigned long>,std::allocator<std::pair<unsigned long,unsigned long> > >* vecInfo)
         {
            return CUnmannedTraderGroupVersionInfoInit8_user(_this, vecInfo, CUnmannedTraderGroupVersionInfoInit8_next);
         };
-        void CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_wrapper(struct CUnmannedTraderGroupVersionInfo* _this)
+        static void CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_wrapper(struct CUnmannedTraderGroupVersionInfo* _this)
         {
            CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_user(_this, CUnmannedTraderGroupVersionInfodtor_CUnmannedTraderGroupVersionInfo10_next);
         };
         
-        hook_record CUnmannedTraderGroupVersionInfo_functions[] = {
+        static hook_record CUnmannedTraderGroupVersionInfo_functions[] = {
         {   (LPVOID)0x14036bc90L,
             (LPVOID *)&CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_user,
             (LPVOID *)&CUnmannedTraderGroupVersionInfoctor_CUnmannedTraderGroupVersionInfo2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

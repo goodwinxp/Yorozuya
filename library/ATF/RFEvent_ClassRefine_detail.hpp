@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::RFEvent_ClassRefineCanDoEvent2_ptr RFEvent_ClassRefineCanDoEvent2_next(nullptr);
-        info::RFEvent_ClassRefineCanDoEvent2_clbk RFEvent_ClassRefineCanDoEvent2_user(nullptr);
-        info::RFEvent_ClassRefineCheckRefineEventData4_ptr RFEvent_ClassRefineCheckRefineEventData4_next(nullptr);
-        info::RFEvent_ClassRefineCheckRefineEventData4_clbk RFEvent_ClassRefineCheckRefineEventData4_user(nullptr);
-        info::RFEvent_ClassRefineDoEvent6_ptr RFEvent_ClassRefineDoEvent6_next(nullptr);
-        info::RFEvent_ClassRefineDoEvent6_clbk RFEvent_ClassRefineDoEvent6_user(nullptr);
-        info::RFEvent_ClassRefineGetPlayerState8_ptr RFEvent_ClassRefineGetPlayerState8_next(nullptr);
-        info::RFEvent_ClassRefineGetPlayerState8_clbk RFEvent_ClassRefineGetPlayerState8_user(nullptr);
-        info::RFEvent_ClassRefineInitialzie10_ptr RFEvent_ClassRefineInitialzie10_next(nullptr);
-        info::RFEvent_ClassRefineInitialzie10_clbk RFEvent_ClassRefineInitialzie10_user(nullptr);
-        info::RFEvent_ClassRefineIsDbUpdate12_ptr RFEvent_ClassRefineIsDbUpdate12_next(nullptr);
-        info::RFEvent_ClassRefineIsDbUpdate12_clbk RFEvent_ClassRefineIsDbUpdate12_user(nullptr);
-        info::RFEvent_ClassRefineIsEnable14_ptr RFEvent_ClassRefineIsEnable14_next(nullptr);
-        info::RFEvent_ClassRefineIsEnable14_clbk RFEvent_ClassRefineIsEnable14_user(nullptr);
-        info::RFEvent_ClassRefineLoop16_ptr RFEvent_ClassRefineLoop16_next(nullptr);
-        info::RFEvent_ClassRefineLoop16_clbk RFEvent_ClassRefineLoop16_user(nullptr);
-        info::RFEvent_ClassRefinector_RFEvent_ClassRefine18_ptr RFEvent_ClassRefinector_RFEvent_ClassRefine18_next(nullptr);
-        info::RFEvent_ClassRefinector_RFEvent_ClassRefine18_clbk RFEvent_ClassRefinector_RFEvent_ClassRefine18_user(nullptr);
-        info::RFEvent_ClassRefineReadClassRefineEventInfo20_ptr RFEvent_ClassRefineReadClassRefineEventInfo20_next(nullptr);
-        info::RFEvent_ClassRefineReadClassRefineEventInfo20_clbk RFEvent_ClassRefineReadClassRefineEventInfo20_user(nullptr);
-        info::RFEvent_ClassRefineResetRefineData22_ptr RFEvent_ClassRefineResetRefineData22_next(nullptr);
-        info::RFEvent_ClassRefineResetRefineData22_clbk RFEvent_ClassRefineResetRefineData22_user(nullptr);
-        info::RFEvent_ClassRefineSetEvent24_ptr RFEvent_ClassRefineSetEvent24_next(nullptr);
-        info::RFEvent_ClassRefineSetEvent24_clbk RFEvent_ClassRefineSetEvent24_user(nullptr);
-        info::RFEvent_ClassRefineSetPlayerState26_ptr RFEvent_ClassRefineSetPlayerState26_next(nullptr);
-        info::RFEvent_ClassRefineSetPlayerState26_clbk RFEvent_ClassRefineSetPlayerState26_user(nullptr);
-        info::RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_ptr RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_next(nullptr);
-        info::RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_clbk RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_user(nullptr);
+        static info::RFEvent_ClassRefineCanDoEvent2_ptr RFEvent_ClassRefineCanDoEvent2_next(nullptr);
+        static info::RFEvent_ClassRefineCanDoEvent2_clbk RFEvent_ClassRefineCanDoEvent2_user(nullptr);
+        static info::RFEvent_ClassRefineCheckRefineEventData4_ptr RFEvent_ClassRefineCheckRefineEventData4_next(nullptr);
+        static info::RFEvent_ClassRefineCheckRefineEventData4_clbk RFEvent_ClassRefineCheckRefineEventData4_user(nullptr);
+        static info::RFEvent_ClassRefineDoEvent6_ptr RFEvent_ClassRefineDoEvent6_next(nullptr);
+        static info::RFEvent_ClassRefineDoEvent6_clbk RFEvent_ClassRefineDoEvent6_user(nullptr);
+        static info::RFEvent_ClassRefineGetPlayerState8_ptr RFEvent_ClassRefineGetPlayerState8_next(nullptr);
+        static info::RFEvent_ClassRefineGetPlayerState8_clbk RFEvent_ClassRefineGetPlayerState8_user(nullptr);
+        static info::RFEvent_ClassRefineInitialzie10_ptr RFEvent_ClassRefineInitialzie10_next(nullptr);
+        static info::RFEvent_ClassRefineInitialzie10_clbk RFEvent_ClassRefineInitialzie10_user(nullptr);
+        static info::RFEvent_ClassRefineIsDbUpdate12_ptr RFEvent_ClassRefineIsDbUpdate12_next(nullptr);
+        static info::RFEvent_ClassRefineIsDbUpdate12_clbk RFEvent_ClassRefineIsDbUpdate12_user(nullptr);
+        static info::RFEvent_ClassRefineIsEnable14_ptr RFEvent_ClassRefineIsEnable14_next(nullptr);
+        static info::RFEvent_ClassRefineIsEnable14_clbk RFEvent_ClassRefineIsEnable14_user(nullptr);
+        static info::RFEvent_ClassRefineLoop16_ptr RFEvent_ClassRefineLoop16_next(nullptr);
+        static info::RFEvent_ClassRefineLoop16_clbk RFEvent_ClassRefineLoop16_user(nullptr);
+        static info::RFEvent_ClassRefinector_RFEvent_ClassRefine18_ptr RFEvent_ClassRefinector_RFEvent_ClassRefine18_next(nullptr);
+        static info::RFEvent_ClassRefinector_RFEvent_ClassRefine18_clbk RFEvent_ClassRefinector_RFEvent_ClassRefine18_user(nullptr);
+        static info::RFEvent_ClassRefineReadClassRefineEventInfo20_ptr RFEvent_ClassRefineReadClassRefineEventInfo20_next(nullptr);
+        static info::RFEvent_ClassRefineReadClassRefineEventInfo20_clbk RFEvent_ClassRefineReadClassRefineEventInfo20_user(nullptr);
+        static info::RFEvent_ClassRefineResetRefineData22_ptr RFEvent_ClassRefineResetRefineData22_next(nullptr);
+        static info::RFEvent_ClassRefineResetRefineData22_clbk RFEvent_ClassRefineResetRefineData22_user(nullptr);
+        static info::RFEvent_ClassRefineSetEvent24_ptr RFEvent_ClassRefineSetEvent24_next(nullptr);
+        static info::RFEvent_ClassRefineSetEvent24_clbk RFEvent_ClassRefineSetEvent24_user(nullptr);
+        static info::RFEvent_ClassRefineSetPlayerState26_ptr RFEvent_ClassRefineSetPlayerState26_next(nullptr);
+        static info::RFEvent_ClassRefineSetPlayerState26_clbk RFEvent_ClassRefineSetPlayerState26_user(nullptr);
+        static info::RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_ptr RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_next(nullptr);
+        static info::RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_clbk RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_user(nullptr);
         
-        int RFEvent_ClassRefineCanDoEvent2_wrapper(struct RFEvent_ClassRefine* _this, struct CPlayer* pOne)
+        static int RFEvent_ClassRefineCanDoEvent2_wrapper(struct RFEvent_ClassRefine* _this, struct CPlayer* pOne)
         {
            return RFEvent_ClassRefineCanDoEvent2_user(_this, pOne, RFEvent_ClassRefineCanDoEvent2_next);
         };
-        bool RFEvent_ClassRefineCheckRefineEventData4_wrapper(struct RFEvent_ClassRefine* _this)
+        static bool RFEvent_ClassRefineCheckRefineEventData4_wrapper(struct RFEvent_ClassRefine* _this)
         {
            return RFEvent_ClassRefineCheckRefineEventData4_user(_this, RFEvent_ClassRefineCheckRefineEventData4_next);
         };
-        int RFEvent_ClassRefineDoEvent6_wrapper(struct RFEvent_ClassRefine* _this, struct CPlayer* pOne)
+        static int RFEvent_ClassRefineDoEvent6_wrapper(struct RFEvent_ClassRefine* _this, struct CPlayer* pOne)
         {
            return RFEvent_ClassRefineDoEvent6_user(_this, pOne, RFEvent_ClassRefineDoEvent6_next);
         };
-        char* RFEvent_ClassRefineGetPlayerState8_wrapper(struct RFEvent_ClassRefine* _this, unsigned int nIdx, unsigned int nAvator)
+        static char* RFEvent_ClassRefineGetPlayerState8_wrapper(struct RFEvent_ClassRefine* _this, unsigned int nIdx, unsigned int nAvator)
         {
            return RFEvent_ClassRefineGetPlayerState8_user(_this, nIdx, nAvator, RFEvent_ClassRefineGetPlayerState8_next);
         };
-        bool RFEvent_ClassRefineInitialzie10_wrapper(struct RFEvent_ClassRefine* _this)
+        static bool RFEvent_ClassRefineInitialzie10_wrapper(struct RFEvent_ClassRefine* _this)
         {
            return RFEvent_ClassRefineInitialzie10_user(_this, RFEvent_ClassRefineInitialzie10_next);
         };
-        bool RFEvent_ClassRefineIsDbUpdate12_wrapper(struct RFEvent_ClassRefine* _this, unsigned int nIdx)
+        static bool RFEvent_ClassRefineIsDbUpdate12_wrapper(struct RFEvent_ClassRefine* _this, unsigned int nIdx)
         {
            return RFEvent_ClassRefineIsDbUpdate12_user(_this, nIdx, RFEvent_ClassRefineIsDbUpdate12_next);
         };
-        bool RFEvent_ClassRefineIsEnable14_wrapper(struct RFEvent_ClassRefine* _this)
+        static bool RFEvent_ClassRefineIsEnable14_wrapper(struct RFEvent_ClassRefine* _this)
         {
            return RFEvent_ClassRefineIsEnable14_user(_this, RFEvent_ClassRefineIsEnable14_next);
         };
-        void RFEvent_ClassRefineLoop16_wrapper(struct RFEvent_ClassRefine* _this)
+        static void RFEvent_ClassRefineLoop16_wrapper(struct RFEvent_ClassRefine* _this)
         {
            RFEvent_ClassRefineLoop16_user(_this, RFEvent_ClassRefineLoop16_next);
         };
-        void RFEvent_ClassRefinector_RFEvent_ClassRefine18_wrapper(struct RFEvent_ClassRefine* _this)
+        static void RFEvent_ClassRefinector_RFEvent_ClassRefine18_wrapper(struct RFEvent_ClassRefine* _this)
         {
            RFEvent_ClassRefinector_RFEvent_ClassRefine18_user(_this, RFEvent_ClassRefinector_RFEvent_ClassRefine18_next);
         };
-        void RFEvent_ClassRefineReadClassRefineEventInfo20_wrapper(struct RFEvent_ClassRefine* _this)
+        static void RFEvent_ClassRefineReadClassRefineEventInfo20_wrapper(struct RFEvent_ClassRefine* _this)
         {
            RFEvent_ClassRefineReadClassRefineEventInfo20_user(_this, RFEvent_ClassRefineReadClassRefineEventInfo20_next);
         };
-        void RFEvent_ClassRefineResetRefineData22_wrapper(struct RFEvent_ClassRefine* _this)
+        static void RFEvent_ClassRefineResetRefineData22_wrapper(struct RFEvent_ClassRefine* _this)
         {
            RFEvent_ClassRefineResetRefineData22_user(_this, RFEvent_ClassRefineResetRefineData22_next);
         };
-        bool RFEvent_ClassRefineSetEvent24_wrapper(struct RFEvent_ClassRefine* _this, char* p, int size, bool bInit)
+        static bool RFEvent_ClassRefineSetEvent24_wrapper(struct RFEvent_ClassRefine* _this, char* p, int size, bool bInit)
         {
            return RFEvent_ClassRefineSetEvent24_user(_this, p, size, bInit, RFEvent_ClassRefineSetEvent24_next);
         };
-        bool RFEvent_ClassRefineSetPlayerState26_wrapper(struct RFEvent_ClassRefine* _this, void* p, int size)
+        static bool RFEvent_ClassRefineSetPlayerState26_wrapper(struct RFEvent_ClassRefine* _this, void* p, int size)
         {
            return RFEvent_ClassRefineSetPlayerState26_user(_this, p, size, RFEvent_ClassRefineSetPlayerState26_next);
         };
-        void RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_wrapper(struct RFEvent_ClassRefine* _this)
+        static void RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_wrapper(struct RFEvent_ClassRefine* _this)
         {
            RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_user(_this, RFEvent_ClassRefinedtor_RFEvent_ClassRefine31_next);
         };
         
-        hook_record RFEvent_ClassRefine_functions[] = {
+        static hook_record RFEvent_ClassRefine_functions[] = {
         {   (LPVOID)0x140328bc0L,
             (LPVOID *)&RFEvent_ClassRefineCanDoEvent2_user,
             (LPVOID *)&RFEvent_ClassRefineCanDoEvent2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

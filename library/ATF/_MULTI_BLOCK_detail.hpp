@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_MULTI_BLOCKctor__MULTI_BLOCK2_ptr _MULTI_BLOCKctor__MULTI_BLOCK2_next(nullptr);
-        info::_MULTI_BLOCKctor__MULTI_BLOCK2_clbk _MULTI_BLOCKctor__MULTI_BLOCK2_user(nullptr);
-        info::_MULTI_BLOCKdtor__MULTI_BLOCK6_ptr _MULTI_BLOCKdtor__MULTI_BLOCK6_next(nullptr);
-        info::_MULTI_BLOCKdtor__MULTI_BLOCK6_clbk _MULTI_BLOCKdtor__MULTI_BLOCK6_user(nullptr);
+        static info::_MULTI_BLOCKctor__MULTI_BLOCK2_ptr _MULTI_BLOCKctor__MULTI_BLOCK2_next(nullptr);
+        static info::_MULTI_BLOCKctor__MULTI_BLOCK2_clbk _MULTI_BLOCKctor__MULTI_BLOCK2_user(nullptr);
+        static info::_MULTI_BLOCKdtor__MULTI_BLOCK6_ptr _MULTI_BLOCKdtor__MULTI_BLOCK6_next(nullptr);
+        static info::_MULTI_BLOCKdtor__MULTI_BLOCK6_clbk _MULTI_BLOCKdtor__MULTI_BLOCK6_user(nullptr);
         
-        void _MULTI_BLOCKctor__MULTI_BLOCK2_wrapper(struct _MULTI_BLOCK* _this)
+        static void _MULTI_BLOCKctor__MULTI_BLOCK2_wrapper(struct _MULTI_BLOCK* _this)
         {
            _MULTI_BLOCKctor__MULTI_BLOCK2_user(_this, _MULTI_BLOCKctor__MULTI_BLOCK2_next);
         };
-        void _MULTI_BLOCKdtor__MULTI_BLOCK6_wrapper(struct _MULTI_BLOCK* _this)
+        static void _MULTI_BLOCKdtor__MULTI_BLOCK6_wrapper(struct _MULTI_BLOCK* _this)
         {
            _MULTI_BLOCKdtor__MULTI_BLOCK6_user(_this, _MULTI_BLOCKdtor__MULTI_BLOCK6_next);
         };
         
-        hook_record _MULTI_BLOCK_functions[] = {
+        static hook_record _MULTI_BLOCK_functions[] = {
         {   (LPVOID)0x1401887b0L,
             (LPVOID *)&_MULTI_BLOCKctor__MULTI_BLOCK2_user,
             (LPVOID *)&_MULTI_BLOCKctor__MULTI_BLOCK2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

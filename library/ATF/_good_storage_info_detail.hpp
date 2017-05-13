@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_good_storage_infoctor__good_storage_info2_ptr _good_storage_infoctor__good_storage_info2_next(nullptr);
-        info::_good_storage_infoctor__good_storage_info2_clbk _good_storage_infoctor__good_storage_info2_user(nullptr);
+        static info::_good_storage_infoctor__good_storage_info2_ptr _good_storage_infoctor__good_storage_info2_next(nullptr);
+        static info::_good_storage_infoctor__good_storage_info2_clbk _good_storage_infoctor__good_storage_info2_user(nullptr);
         
-        void _good_storage_infoctor__good_storage_info2_wrapper(struct _good_storage_info* _this)
+        static void _good_storage_infoctor__good_storage_info2_wrapper(struct _good_storage_info* _this)
         {
            _good_storage_infoctor__good_storage_info2_user(_this, _good_storage_infoctor__good_storage_info2_next);
         };
         
-        hook_record _good_storage_info_functions[] = {
+        static hook_record _good_storage_info_functions[] = {
         {   (LPVOID)0x140263710L,
             (LPVOID *)&_good_storage_infoctor__good_storage_info2_user,
             (LPVOID *)&_good_storage_infoctor__good_storage_info2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

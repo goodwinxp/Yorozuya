@@ -10,111 +10,111 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleStateListAdvance2_ptr GUILD_BATTLE__CGuildBattleStateListAdvance2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListAdvance2_clbk GUILD_BATTLE__CGuildBattleStateListAdvance2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_ptr GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_clbk GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListCheckLoop6_ptr GUILD_BATTLE__CGuildBattleStateListCheckLoop6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListCheckLoop6_clbk GUILD_BATTLE__CGuildBattleStateListCheckLoop6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListClear8_ptr GUILD_BATTLE__CGuildBattleStateListClear8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListClear8_clbk GUILD_BATTLE__CGuildBattleStateListClear8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListForceNext10_ptr GUILD_BATTLE__CGuildBattleStateListForceNext10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListForceNext10_clbk GUILD_BATTLE__CGuildBattleStateListForceNext10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGetTerm12_ptr GUILD_BATTLE__CGuildBattleStateListGetTerm12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGetTerm12_clbk GUILD_BATTLE__CGuildBattleStateListGetTerm12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGoto14_ptr GUILD_BATTLE__CGuildBattleStateListGoto14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGoto14_clbk GUILD_BATTLE__CGuildBattleStateListGoto14_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGotoState16_ptr GUILD_BATTLE__CGuildBattleStateListGotoState16_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListGotoState16_clbk GUILD_BATTLE__CGuildBattleStateListGotoState16_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListIsEmpty18_ptr GUILD_BATTLE__CGuildBattleStateListIsEmpty18_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListIsEmpty18_clbk GUILD_BATTLE__CGuildBattleStateListIsEmpty18_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListIsProc20_ptr GUILD_BATTLE__CGuildBattleStateListIsProc20_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListIsProc20_clbk GUILD_BATTLE__CGuildBattleStateListIsProc20_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListLog22_ptr GUILD_BATTLE__CGuildBattleStateListLog22_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListLog22_clbk GUILD_BATTLE__CGuildBattleStateListLog22_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListNext24_ptr GUILD_BATTLE__CGuildBattleStateListNext24_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListNext24_clbk GUILD_BATTLE__CGuildBattleStateListNext24_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListProcess26_ptr GUILD_BATTLE__CGuildBattleStateListProcess26_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListProcess26_clbk GUILD_BATTLE__CGuildBattleStateListProcess26_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetNextState28_ptr GUILD_BATTLE__CGuildBattleStateListSetNextState28_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetNextState28_clbk GUILD_BATTLE__CGuildBattleStateListSetNextState28_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetReady30_ptr GUILD_BATTLE__CGuildBattleStateListSetReady30_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetReady30_clbk GUILD_BATTLE__CGuildBattleStateListSetReady30_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetWait32_ptr GUILD_BATTLE__CGuildBattleStateListSetWait32_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListSetWait32_clbk GUILD_BATTLE__CGuildBattleStateListSetWait32_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_ptr GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_clbk GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListAdvance2_ptr GUILD_BATTLE__CGuildBattleStateListAdvance2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListAdvance2_clbk GUILD_BATTLE__CGuildBattleStateListAdvance2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_ptr GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_clbk GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListCheckLoop6_ptr GUILD_BATTLE__CGuildBattleStateListCheckLoop6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListCheckLoop6_clbk GUILD_BATTLE__CGuildBattleStateListCheckLoop6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListClear8_ptr GUILD_BATTLE__CGuildBattleStateListClear8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListClear8_clbk GUILD_BATTLE__CGuildBattleStateListClear8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListForceNext10_ptr GUILD_BATTLE__CGuildBattleStateListForceNext10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListForceNext10_clbk GUILD_BATTLE__CGuildBattleStateListForceNext10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGetTerm12_ptr GUILD_BATTLE__CGuildBattleStateListGetTerm12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGetTerm12_clbk GUILD_BATTLE__CGuildBattleStateListGetTerm12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGoto14_ptr GUILD_BATTLE__CGuildBattleStateListGoto14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGoto14_clbk GUILD_BATTLE__CGuildBattleStateListGoto14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGotoState16_ptr GUILD_BATTLE__CGuildBattleStateListGotoState16_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListGotoState16_clbk GUILD_BATTLE__CGuildBattleStateListGotoState16_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListIsEmpty18_ptr GUILD_BATTLE__CGuildBattleStateListIsEmpty18_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListIsEmpty18_clbk GUILD_BATTLE__CGuildBattleStateListIsEmpty18_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListIsProc20_ptr GUILD_BATTLE__CGuildBattleStateListIsProc20_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListIsProc20_clbk GUILD_BATTLE__CGuildBattleStateListIsProc20_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListLog22_ptr GUILD_BATTLE__CGuildBattleStateListLog22_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListLog22_clbk GUILD_BATTLE__CGuildBattleStateListLog22_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListNext24_ptr GUILD_BATTLE__CGuildBattleStateListNext24_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListNext24_clbk GUILD_BATTLE__CGuildBattleStateListNext24_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListProcess26_ptr GUILD_BATTLE__CGuildBattleStateListProcess26_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListProcess26_clbk GUILD_BATTLE__CGuildBattleStateListProcess26_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetNextState28_ptr GUILD_BATTLE__CGuildBattleStateListSetNextState28_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetNextState28_clbk GUILD_BATTLE__CGuildBattleStateListSetNextState28_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetReady30_ptr GUILD_BATTLE__CGuildBattleStateListSetReady30_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetReady30_clbk GUILD_BATTLE__CGuildBattleStateListSetReady30_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetWait32_ptr GUILD_BATTLE__CGuildBattleStateListSetWait32_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListSetWait32_clbk GUILD_BATTLE__CGuildBattleStateListSetWait32_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_ptr GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_clbk GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattleStateListAdvance2_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iAdvance)
+            static void GUILD_BATTLE__CGuildBattleStateListAdvance2_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iAdvance)
             {
                GUILD_BATTLE__CGuildBattleStateListAdvance2_user(_this, iAdvance, GUILD_BATTLE__CGuildBattleStateListAdvance2_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iStateMax, int iLoopType, unsigned int uiLoopCnt)
+            static void GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iStateMax, int iLoopType, unsigned int uiLoopCnt)
             {
                GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_user(_this, iStateMax, iLoopType, uiLoopCnt, GUILD_BATTLE__CGuildBattleStateListctor_CGuildBattleStateList4_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateListCheckLoop6_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static int GUILD_BATTLE__CGuildBattleStateListCheckLoop6_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                return GUILD_BATTLE__CGuildBattleStateListCheckLoop6_user(_this, GUILD_BATTLE__CGuildBattleStateListCheckLoop6_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListClear8_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListClear8_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListClear8_user(_this, GUILD_BATTLE__CGuildBattleStateListClear8_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListForceNext10_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListForceNext10_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListForceNext10_user(_this, GUILD_BATTLE__CGuildBattleStateListForceNext10_next);
             };
-            struct ATL::CTimeSpan* GUILD_BATTLE__CGuildBattleStateListGetTerm12_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, struct ATL::CTimeSpan* result)
+            static struct ATL::CTimeSpan* GUILD_BATTLE__CGuildBattleStateListGetTerm12_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, struct ATL::CTimeSpan* result)
             {
                return GUILD_BATTLE__CGuildBattleStateListGetTerm12_user(_this, result, GUILD_BATTLE__CGuildBattleStateListGetTerm12_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateListGoto14_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static int GUILD_BATTLE__CGuildBattleStateListGoto14_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                return GUILD_BATTLE__CGuildBattleStateListGoto14_user(_this, GUILD_BATTLE__CGuildBattleStateListGoto14_next);
             };
-            bool GUILD_BATTLE__CGuildBattleStateListGotoState16_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iState)
+            static bool GUILD_BATTLE__CGuildBattleStateListGotoState16_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, int iState)
             {
                return GUILD_BATTLE__CGuildBattleStateListGotoState16_user(_this, iState, GUILD_BATTLE__CGuildBattleStateListGotoState16_next);
             };
-            bool GUILD_BATTLE__CGuildBattleStateListIsEmpty18_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static bool GUILD_BATTLE__CGuildBattleStateListIsEmpty18_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                return GUILD_BATTLE__CGuildBattleStateListIsEmpty18_user(_this, GUILD_BATTLE__CGuildBattleStateListIsEmpty18_next);
             };
-            bool GUILD_BATTLE__CGuildBattleStateListIsProc20_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static bool GUILD_BATTLE__CGuildBattleStateListIsProc20_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                return GUILD_BATTLE__CGuildBattleStateListIsProc20_user(_this, GUILD_BATTLE__CGuildBattleStateListIsProc20_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListLog22_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, char* szMsg)
+            static void GUILD_BATTLE__CGuildBattleStateListLog22_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, char* szMsg)
             {
                GUILD_BATTLE__CGuildBattleStateListLog22_user(_this, szMsg, GUILD_BATTLE__CGuildBattleStateListLog22_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateListNext24_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, bool bForce)
+            static int GUILD_BATTLE__CGuildBattleStateListNext24_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, bool bForce)
             {
                return GUILD_BATTLE__CGuildBattleStateListNext24_user(_this, bForce, GUILD_BATTLE__CGuildBattleStateListNext24_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListProcess26_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static void GUILD_BATTLE__CGuildBattleStateListProcess26_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                GUILD_BATTLE__CGuildBattleStateListProcess26_user(_this, pkBattle, GUILD_BATTLE__CGuildBattleStateListProcess26_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListSetNextState28_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListSetNextState28_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListSetNextState28_user(_this, GUILD_BATTLE__CGuildBattleStateListSetNextState28_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListSetReady30_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListSetReady30_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListSetReady30_user(_this, GUILD_BATTLE__CGuildBattleStateListSetReady30_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListSetWait32_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListSetWait32_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListSetWait32_user(_this, GUILD_BATTLE__CGuildBattleStateListSetWait32_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
+            static void GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_wrapper(struct GUILD_BATTLE::CGuildBattleStateList* _this)
             {
                GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_user(_this, GUILD_BATTLE__CGuildBattleStateListdtor_CGuildBattleStateList34_next);
             };
             
-            hook_record CGuildBattleStateList_functions[] = {
+            static hook_record CGuildBattleStateList_functions[] = {
             {   (LPVOID)0x1403df610L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleStateListAdvance2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleStateListAdvance2_next,
@@ -203,6 +203,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

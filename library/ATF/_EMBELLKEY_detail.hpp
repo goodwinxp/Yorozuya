@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_EMBELLKEYCovDBKey2_ptr _EMBELLKEYCovDBKey2_next(nullptr);
-        info::_EMBELLKEYCovDBKey2_clbk _EMBELLKEYCovDBKey2_user(nullptr);
-        info::_EMBELLKEYIsFilled4_ptr _EMBELLKEYIsFilled4_next(nullptr);
-        info::_EMBELLKEYIsFilled4_clbk _EMBELLKEYIsFilled4_user(nullptr);
-        info::_EMBELLKEYLoadDBKey6_ptr _EMBELLKEYLoadDBKey6_next(nullptr);
-        info::_EMBELLKEYLoadDBKey6_clbk _EMBELLKEYLoadDBKey6_user(nullptr);
-        info::_EMBELLKEYSetRelease8_ptr _EMBELLKEYSetRelease8_next(nullptr);
-        info::_EMBELLKEYSetRelease8_clbk _EMBELLKEYSetRelease8_user(nullptr);
+        static info::_EMBELLKEYCovDBKey2_ptr _EMBELLKEYCovDBKey2_next(nullptr);
+        static info::_EMBELLKEYCovDBKey2_clbk _EMBELLKEYCovDBKey2_user(nullptr);
+        static info::_EMBELLKEYIsFilled4_ptr _EMBELLKEYIsFilled4_next(nullptr);
+        static info::_EMBELLKEYIsFilled4_clbk _EMBELLKEYIsFilled4_user(nullptr);
+        static info::_EMBELLKEYLoadDBKey6_ptr _EMBELLKEYLoadDBKey6_next(nullptr);
+        static info::_EMBELLKEYLoadDBKey6_clbk _EMBELLKEYLoadDBKey6_user(nullptr);
+        static info::_EMBELLKEYSetRelease8_ptr _EMBELLKEYSetRelease8_next(nullptr);
+        static info::_EMBELLKEYSetRelease8_clbk _EMBELLKEYSetRelease8_user(nullptr);
         
-        int _EMBELLKEYCovDBKey2_wrapper(struct _EMBELLKEY* _this)
+        static int _EMBELLKEYCovDBKey2_wrapper(struct _EMBELLKEY* _this)
         {
            return _EMBELLKEYCovDBKey2_user(_this, _EMBELLKEYCovDBKey2_next);
         };
-        bool _EMBELLKEYIsFilled4_wrapper(struct _EMBELLKEY* _this)
+        static bool _EMBELLKEYIsFilled4_wrapper(struct _EMBELLKEY* _this)
         {
            return _EMBELLKEYIsFilled4_user(_this, _EMBELLKEYIsFilled4_next);
         };
-        void _EMBELLKEYLoadDBKey6_wrapper(struct _EMBELLKEY* _this, int pl_nKey)
+        static void _EMBELLKEYLoadDBKey6_wrapper(struct _EMBELLKEY* _this, int pl_nKey)
         {
            _EMBELLKEYLoadDBKey6_user(_this, pl_nKey, _EMBELLKEYLoadDBKey6_next);
         };
-        void _EMBELLKEYSetRelease8_wrapper(struct _EMBELLKEY* _this)
+        static void _EMBELLKEYSetRelease8_wrapper(struct _EMBELLKEY* _this)
         {
            _EMBELLKEYSetRelease8_user(_this, _EMBELLKEYSetRelease8_next);
         };
         
-        hook_record _EMBELLKEY_functions[] = {
+        static hook_record _EMBELLKEY_functions[] = {
         {   (LPVOID)0x1401bf2a0L,
             (LPVOID *)&_EMBELLKEYCovDBKey2_user,
             (LPVOID *)&_EMBELLKEYCovDBKey2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

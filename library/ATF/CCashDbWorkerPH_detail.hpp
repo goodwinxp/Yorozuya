@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCashDbWorkerPHctor_CCashDbWorkerPH2_ptr CCashDbWorkerPHctor_CCashDbWorkerPH2_next(nullptr);
-        info::CCashDbWorkerPHctor_CCashDbWorkerPH2_clbk CCashDbWorkerPHctor_CCashDbWorkerPH2_user(nullptr);
-        info::CCashDbWorkerPHdtor_CCashDbWorkerPH7_ptr CCashDbWorkerPHdtor_CCashDbWorkerPH7_next(nullptr);
-        info::CCashDbWorkerPHdtor_CCashDbWorkerPH7_clbk CCashDbWorkerPHdtor_CCashDbWorkerPH7_user(nullptr);
+        static info::CCashDbWorkerPHctor_CCashDbWorkerPH2_ptr CCashDbWorkerPHctor_CCashDbWorkerPH2_next(nullptr);
+        static info::CCashDbWorkerPHctor_CCashDbWorkerPH2_clbk CCashDbWorkerPHctor_CCashDbWorkerPH2_user(nullptr);
+        static info::CCashDbWorkerPHdtor_CCashDbWorkerPH7_ptr CCashDbWorkerPHdtor_CCashDbWorkerPH7_next(nullptr);
+        static info::CCashDbWorkerPHdtor_CCashDbWorkerPH7_clbk CCashDbWorkerPHdtor_CCashDbWorkerPH7_user(nullptr);
         
-        void CCashDbWorkerPHctor_CCashDbWorkerPH2_wrapper(struct CCashDbWorkerPH* _this)
+        static void CCashDbWorkerPHctor_CCashDbWorkerPH2_wrapper(struct CCashDbWorkerPH* _this)
         {
            CCashDbWorkerPHctor_CCashDbWorkerPH2_user(_this, CCashDbWorkerPHctor_CCashDbWorkerPH2_next);
         };
-        void CCashDbWorkerPHdtor_CCashDbWorkerPH7_wrapper(struct CCashDbWorkerPH* _this)
+        static void CCashDbWorkerPHdtor_CCashDbWorkerPH7_wrapper(struct CCashDbWorkerPH* _this)
         {
            CCashDbWorkerPHdtor_CCashDbWorkerPH7_user(_this, CCashDbWorkerPHdtor_CCashDbWorkerPH7_next);
         };
         
-        hook_record CCashDbWorkerPH_functions[] = {
+        static hook_record CCashDbWorkerPH_functions[] = {
         {   (LPVOID)0x14022e130L,
             (LPVOID *)&CCashDbWorkerPHctor_CCashDbWorkerPH2_user,
             (LPVOID *)&CCashDbWorkerPHctor_CCashDbWorkerPH2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_portal_dummySetDummy2_ptr _portal_dummySetDummy2_next(nullptr);
-        info::_portal_dummySetDummy2_clbk _portal_dummySetDummy2_user(nullptr);
-        info::_portal_dummyctor__portal_dummy4_ptr _portal_dummyctor__portal_dummy4_next(nullptr);
-        info::_portal_dummyctor__portal_dummy4_clbk _portal_dummyctor__portal_dummy4_user(nullptr);
+        static info::_portal_dummySetDummy2_ptr _portal_dummySetDummy2_next(nullptr);
+        static info::_portal_dummySetDummy2_clbk _portal_dummySetDummy2_user(nullptr);
+        static info::_portal_dummyctor__portal_dummy4_ptr _portal_dummyctor__portal_dummy4_next(nullptr);
+        static info::_portal_dummyctor__portal_dummy4_clbk _portal_dummyctor__portal_dummy4_user(nullptr);
         
-        bool _portal_dummySetDummy2_wrapper(struct _portal_dummy* _this, struct _portal_fld* pRec, struct _dummy_position* pDumPos)
+        static bool _portal_dummySetDummy2_wrapper(struct _portal_dummy* _this, struct _portal_fld* pRec, struct _dummy_position* pDumPos)
         {
            return _portal_dummySetDummy2_user(_this, pRec, pDumPos, _portal_dummySetDummy2_next);
         };
-        void _portal_dummyctor__portal_dummy4_wrapper(struct _portal_dummy* _this)
+        static void _portal_dummyctor__portal_dummy4_wrapper(struct _portal_dummy* _this)
         {
            _portal_dummyctor__portal_dummy4_user(_this, _portal_dummyctor__portal_dummy4_next);
         };
         
-        hook_record _portal_dummy_functions[] = {
+        static hook_record _portal_dummy_functions[] = {
         {   (LPVOID)0x1401892f0L,
             (LPVOID *)&_portal_dummySetDummy2_user,
             (LPVOID *)&_portal_dummySetDummy2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

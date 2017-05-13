@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TaskGetRetCode2_ptr TaskGetRetCode2_next(nullptr);
-        info::TaskGetRetCode2_clbk TaskGetRetCode2_user(nullptr);
-        info::TaskGetTaskBuf4_ptr TaskGetTaskBuf4_next(nullptr);
-        info::TaskGetTaskBuf4_clbk TaskGetTaskBuf4_user(nullptr);
-        info::TaskGetTaskCode6_ptr TaskGetTaskCode6_next(nullptr);
-        info::TaskGetTaskCode6_clbk TaskGetTaskCode6_user(nullptr);
-        info::TaskInitialize8_ptr TaskInitialize8_next(nullptr);
-        info::TaskInitialize8_clbk TaskInitialize8_user(nullptr);
-        info::TaskSetRetCode10_ptr TaskSetRetCode10_next(nullptr);
-        info::TaskSetRetCode10_clbk TaskSetRetCode10_user(nullptr);
-        info::TaskSetTask12_ptr TaskSetTask12_next(nullptr);
-        info::TaskSetTask12_clbk TaskSetTask12_user(nullptr);
-        info::Taskctor_Task14_ptr Taskctor_Task14_next(nullptr);
-        info::Taskctor_Task14_clbk Taskctor_Task14_user(nullptr);
-        info::Taskdtor_Task18_ptr Taskdtor_Task18_next(nullptr);
-        info::Taskdtor_Task18_clbk Taskdtor_Task18_user(nullptr);
+        static info::TaskGetRetCode2_ptr TaskGetRetCode2_next(nullptr);
+        static info::TaskGetRetCode2_clbk TaskGetRetCode2_user(nullptr);
+        static info::TaskGetTaskBuf4_ptr TaskGetTaskBuf4_next(nullptr);
+        static info::TaskGetTaskBuf4_clbk TaskGetTaskBuf4_user(nullptr);
+        static info::TaskGetTaskCode6_ptr TaskGetTaskCode6_next(nullptr);
+        static info::TaskGetTaskCode6_clbk TaskGetTaskCode6_user(nullptr);
+        static info::TaskInitialize8_ptr TaskInitialize8_next(nullptr);
+        static info::TaskInitialize8_clbk TaskInitialize8_user(nullptr);
+        static info::TaskSetRetCode10_ptr TaskSetRetCode10_next(nullptr);
+        static info::TaskSetRetCode10_clbk TaskSetRetCode10_user(nullptr);
+        static info::TaskSetTask12_ptr TaskSetTask12_next(nullptr);
+        static info::TaskSetTask12_clbk TaskSetTask12_user(nullptr);
+        static info::Taskctor_Task14_ptr Taskctor_Task14_next(nullptr);
+        static info::Taskctor_Task14_clbk Taskctor_Task14_user(nullptr);
+        static info::Taskdtor_Task18_ptr Taskdtor_Task18_next(nullptr);
+        static info::Taskdtor_Task18_clbk Taskdtor_Task18_user(nullptr);
         
-        int TaskGetRetCode2_wrapper(struct Task* _this)
+        static int TaskGetRetCode2_wrapper(struct Task* _this)
         {
            return TaskGetRetCode2_user(_this, TaskGetRetCode2_next);
         };
-        char* TaskGetTaskBuf4_wrapper(struct Task* _this)
+        static char* TaskGetTaskBuf4_wrapper(struct Task* _this)
         {
            return TaskGetTaskBuf4_user(_this, TaskGetTaskBuf4_next);
         };
-        int TaskGetTaskCode6_wrapper(struct Task* _this)
+        static int TaskGetTaskCode6_wrapper(struct Task* _this)
         {
            return TaskGetTaskCode6_user(_this, TaskGetTaskCode6_next);
         };
-        bool TaskInitialize8_wrapper(struct Task* _this, uint64_t nMaxBufSize)
+        static bool TaskInitialize8_wrapper(struct Task* _this, uint64_t nMaxBufSize)
         {
            return TaskInitialize8_user(_this, nMaxBufSize, TaskInitialize8_next);
         };
-        void TaskSetRetCode10_wrapper(struct Task* _this, int nCode)
+        static void TaskSetRetCode10_wrapper(struct Task* _this, int nCode)
         {
            TaskSetRetCode10_user(_this, nCode, TaskSetRetCode10_next);
         };
-        void TaskSetTask12_wrapper(struct Task* _this, int nTaskCode, char* p, uint64_t size)
+        static void TaskSetTask12_wrapper(struct Task* _this, int nTaskCode, char* p, uint64_t size)
         {
            TaskSetTask12_user(_this, nTaskCode, p, size, TaskSetTask12_next);
         };
-        void Taskctor_Task14_wrapper(struct Task* _this)
+        static void Taskctor_Task14_wrapper(struct Task* _this)
         {
            Taskctor_Task14_user(_this, Taskctor_Task14_next);
         };
-        void Taskdtor_Task18_wrapper(struct Task* _this)
+        static void Taskdtor_Task18_wrapper(struct Task* _this)
         {
            Taskdtor_Task18_user(_this, Taskdtor_Task18_next);
         };
         
-        hook_record Task_functions[] = {
+        static hook_record Task_functions[] = {
         {   (LPVOID)0x1402f2720L,
             (LPVOID *)&TaskGetRetCode2_user,
             (LPVOID *)&TaskGetRetCode2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

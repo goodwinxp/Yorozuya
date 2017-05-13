@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_ptr _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_next(nullptr);
-        info::_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_clbk _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_user(nullptr);
-        info::_guild_member_buddy_download_zoclsize4_ptr _guild_member_buddy_download_zoclsize4_next(nullptr);
-        info::_guild_member_buddy_download_zoclsize4_clbk _guild_member_buddy_download_zoclsize4_user(nullptr);
+        static info::_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_ptr _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_next(nullptr);
+        static info::_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_clbk _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_user(nullptr);
+        static info::_guild_member_buddy_download_zoclsize4_ptr _guild_member_buddy_download_zoclsize4_next(nullptr);
+        static info::_guild_member_buddy_download_zoclsize4_clbk _guild_member_buddy_download_zoclsize4_user(nullptr);
         
-        void _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_wrapper(struct _guild_member_buddy_download_zocl* _this)
+        static void _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_wrapper(struct _guild_member_buddy_download_zocl* _this)
         {
            _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_user(_this, _guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_next);
         };
-        int _guild_member_buddy_download_zoclsize4_wrapper(struct _guild_member_buddy_download_zocl* _this)
+        static int _guild_member_buddy_download_zoclsize4_wrapper(struct _guild_member_buddy_download_zocl* _this)
         {
            return _guild_member_buddy_download_zoclsize4_user(_this, _guild_member_buddy_download_zoclsize4_next);
         };
         
-        hook_record _guild_member_buddy_download_zocl_functions[] = {
+        static hook_record _guild_member_buddy_download_zocl_functions[] = {
         {   (LPVOID)0x14025ce10L,
             (LPVOID *)&_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_user,
             (LPVOID *)&_guild_member_buddy_download_zoclctor__guild_member_buddy_download_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

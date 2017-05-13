@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlAllocatorAddCategory1_ptr CAtlAllocatorAddCategory1_next(nullptr);
-        info::CAtlAllocatorAddCategory1_clbk CAtlAllocatorAddCategory1_user(nullptr);
-        info::CAtlAllocatorAddModule2_ptr CAtlAllocatorAddModule2_next(nullptr);
-        info::CAtlAllocatorAddModule2_clbk CAtlAllocatorAddModule2_user(nullptr);
-        info::CAtlAllocatorctor_CAtlAllocator3_ptr CAtlAllocatorctor_CAtlAllocator3_next(nullptr);
-        info::CAtlAllocatorctor_CAtlAllocator3_clbk CAtlAllocatorctor_CAtlAllocator3_user(nullptr);
-        info::CAtlAllocatorCleanUp4_ptr CAtlAllocatorCleanUp4_next(nullptr);
-        info::CAtlAllocatorCleanUp4_clbk CAtlAllocatorCleanUp4_user(nullptr);
-        info::CAtlAllocatorClose5_ptr CAtlAllocatorClose5_next(nullptr);
-        info::CAtlAllocatorClose5_clbk CAtlAllocatorClose5_user(nullptr);
-        info::CAtlAllocatorFindModule6_ptr CAtlAllocatorFindModule6_next(nullptr);
-        info::CAtlAllocatorFindModule6_clbk CAtlAllocatorFindModule6_user(nullptr);
-        info::CAtlAllocatorGetCategory7_ptr CAtlAllocatorGetCategory7_next(nullptr);
-        info::CAtlAllocatorGetCategory7_clbk CAtlAllocatorGetCategory7_user(nullptr);
-        info::CAtlAllocatorGetCategoryCount8_ptr CAtlAllocatorGetCategoryCount8_next(nullptr);
-        info::CAtlAllocatorGetCategoryCount8_clbk CAtlAllocatorGetCategoryCount8_user(nullptr);
-        info::CAtlAllocatorGetCategoryCount9_ptr CAtlAllocatorGetCategoryCount9_next(nullptr);
-        info::CAtlAllocatorGetCategoryCount9_clbk CAtlAllocatorGetCategoryCount9_user(nullptr);
-        info::CAtlAllocatorGetModule10_ptr CAtlAllocatorGetModule10_next(nullptr);
-        info::CAtlAllocatorGetModule10_clbk CAtlAllocatorGetModule10_user(nullptr);
-        info::CAtlAllocatorGetModuleCount11_ptr CAtlAllocatorGetModuleCount11_next(nullptr);
-        info::CAtlAllocatorGetModuleCount11_clbk CAtlAllocatorGetModuleCount11_user(nullptr);
-        info::CAtlAllocatorGetProcess12_ptr CAtlAllocatorGetProcess12_next(nullptr);
-        info::CAtlAllocatorGetProcess12_clbk CAtlAllocatorGetProcess12_user(nullptr);
-        info::CAtlAllocatorInit13_ptr CAtlAllocatorInit13_next(nullptr);
-        info::CAtlAllocatorInit13_clbk CAtlAllocatorInit13_user(nullptr);
-        info::CAtlAllocatorOpen14_ptr CAtlAllocatorOpen14_next(nullptr);
-        info::CAtlAllocatorOpen14_clbk CAtlAllocatorOpen14_user(nullptr);
-        info::CAtlAllocatorReleaseSnapshot15_ptr CAtlAllocatorReleaseSnapshot15_next(nullptr);
-        info::CAtlAllocatorReleaseSnapshot15_clbk CAtlAllocatorReleaseSnapshot15_user(nullptr);
-        info::CAtlAllocatorRemoveModule16_ptr CAtlAllocatorRemoveModule16_next(nullptr);
-        info::CAtlAllocatorRemoveModule16_clbk CAtlAllocatorRemoveModule16_user(nullptr);
-        info::CAtlAllocatorTakeSnapshot17_ptr CAtlAllocatorTakeSnapshot17_next(nullptr);
-        info::CAtlAllocatorTakeSnapshot17_clbk CAtlAllocatorTakeSnapshot17_user(nullptr);
-        info::CAtlAllocatordtor_CAtlAllocator19_ptr CAtlAllocatordtor_CAtlAllocator19_next(nullptr);
-        info::CAtlAllocatordtor_CAtlAllocator19_clbk CAtlAllocatordtor_CAtlAllocator19_user(nullptr);
+        static info::CAtlAllocatorAddCategory1_ptr CAtlAllocatorAddCategory1_next(nullptr);
+        static info::CAtlAllocatorAddCategory1_clbk CAtlAllocatorAddCategory1_user(nullptr);
+        static info::CAtlAllocatorAddModule2_ptr CAtlAllocatorAddModule2_next(nullptr);
+        static info::CAtlAllocatorAddModule2_clbk CAtlAllocatorAddModule2_user(nullptr);
+        static info::CAtlAllocatorctor_CAtlAllocator3_ptr CAtlAllocatorctor_CAtlAllocator3_next(nullptr);
+        static info::CAtlAllocatorctor_CAtlAllocator3_clbk CAtlAllocatorctor_CAtlAllocator3_user(nullptr);
+        static info::CAtlAllocatorCleanUp4_ptr CAtlAllocatorCleanUp4_next(nullptr);
+        static info::CAtlAllocatorCleanUp4_clbk CAtlAllocatorCleanUp4_user(nullptr);
+        static info::CAtlAllocatorClose5_ptr CAtlAllocatorClose5_next(nullptr);
+        static info::CAtlAllocatorClose5_clbk CAtlAllocatorClose5_user(nullptr);
+        static info::CAtlAllocatorFindModule6_ptr CAtlAllocatorFindModule6_next(nullptr);
+        static info::CAtlAllocatorFindModule6_clbk CAtlAllocatorFindModule6_user(nullptr);
+        static info::CAtlAllocatorGetCategory7_ptr CAtlAllocatorGetCategory7_next(nullptr);
+        static info::CAtlAllocatorGetCategory7_clbk CAtlAllocatorGetCategory7_user(nullptr);
+        static info::CAtlAllocatorGetCategoryCount8_ptr CAtlAllocatorGetCategoryCount8_next(nullptr);
+        static info::CAtlAllocatorGetCategoryCount8_clbk CAtlAllocatorGetCategoryCount8_user(nullptr);
+        static info::CAtlAllocatorGetCategoryCount9_ptr CAtlAllocatorGetCategoryCount9_next(nullptr);
+        static info::CAtlAllocatorGetCategoryCount9_clbk CAtlAllocatorGetCategoryCount9_user(nullptr);
+        static info::CAtlAllocatorGetModule10_ptr CAtlAllocatorGetModule10_next(nullptr);
+        static info::CAtlAllocatorGetModule10_clbk CAtlAllocatorGetModule10_user(nullptr);
+        static info::CAtlAllocatorGetModuleCount11_ptr CAtlAllocatorGetModuleCount11_next(nullptr);
+        static info::CAtlAllocatorGetModuleCount11_clbk CAtlAllocatorGetModuleCount11_user(nullptr);
+        static info::CAtlAllocatorGetProcess12_ptr CAtlAllocatorGetProcess12_next(nullptr);
+        static info::CAtlAllocatorGetProcess12_clbk CAtlAllocatorGetProcess12_user(nullptr);
+        static info::CAtlAllocatorInit13_ptr CAtlAllocatorInit13_next(nullptr);
+        static info::CAtlAllocatorInit13_clbk CAtlAllocatorInit13_user(nullptr);
+        static info::CAtlAllocatorOpen14_ptr CAtlAllocatorOpen14_next(nullptr);
+        static info::CAtlAllocatorOpen14_clbk CAtlAllocatorOpen14_user(nullptr);
+        static info::CAtlAllocatorReleaseSnapshot15_ptr CAtlAllocatorReleaseSnapshot15_next(nullptr);
+        static info::CAtlAllocatorReleaseSnapshot15_clbk CAtlAllocatorReleaseSnapshot15_user(nullptr);
+        static info::CAtlAllocatorRemoveModule16_ptr CAtlAllocatorRemoveModule16_next(nullptr);
+        static info::CAtlAllocatorRemoveModule16_clbk CAtlAllocatorRemoveModule16_user(nullptr);
+        static info::CAtlAllocatorTakeSnapshot17_ptr CAtlAllocatorTakeSnapshot17_next(nullptr);
+        static info::CAtlAllocatorTakeSnapshot17_clbk CAtlAllocatorTakeSnapshot17_user(nullptr);
+        static info::CAtlAllocatordtor_CAtlAllocator19_ptr CAtlAllocatordtor_CAtlAllocator19_next(nullptr);
+        static info::CAtlAllocatordtor_CAtlAllocator19_clbk CAtlAllocatordtor_CAtlAllocator19_user(nullptr);
         
-        int CAtlAllocatorAddCategory1_wrapper(struct CAtlAllocator* _this, int iModule, wchar_t* szCategoryName)
+        static int CAtlAllocatorAddCategory1_wrapper(struct CAtlAllocator* _this, int iModule, wchar_t* szCategoryName)
         {
            return CAtlAllocatorAddCategory1_user(_this, iModule, szCategoryName, CAtlAllocatorAddCategory1_next);
         };
-        int CAtlAllocatorAddModule2_wrapper(struct CAtlAllocator* _this, struct HINSTANCE__* hInst)
+        static int CAtlAllocatorAddModule2_wrapper(struct CAtlAllocator* _this, struct HINSTANCE__* hInst)
         {
            return CAtlAllocatorAddModule2_user(_this, hInst, CAtlAllocatorAddModule2_next);
         };
-        void CAtlAllocatorctor_CAtlAllocator3_wrapper(struct CAtlAllocator* _this)
+        static void CAtlAllocatorctor_CAtlAllocator3_wrapper(struct CAtlAllocator* _this)
         {
            CAtlAllocatorctor_CAtlAllocator3_user(_this, CAtlAllocatorctor_CAtlAllocator3_next);
         };
-        void CAtlAllocatorCleanUp4_wrapper(struct CAtlAllocator* _this)
+        static void CAtlAllocatorCleanUp4_wrapper(struct CAtlAllocator* _this)
         {
            CAtlAllocatorCleanUp4_user(_this, CAtlAllocatorCleanUp4_next);
         };
-        void CAtlAllocatorClose5_wrapper(struct CAtlAllocator* _this, bool bForceUnmap)
+        static void CAtlAllocatorClose5_wrapper(struct CAtlAllocator* _this, bool bForceUnmap)
         {
            CAtlAllocatorClose5_user(_this, bForceUnmap, CAtlAllocatorClose5_next);
         };
-        bool CAtlAllocatorFindModule6_wrapper(struct CAtlAllocator* _this, wchar_t* pszModulePath, unsigned int* pnModule)
+        static bool CAtlAllocatorFindModule6_wrapper(struct CAtlAllocator* _this, wchar_t* pszModulePath, unsigned int* pnModule)
         {
            return CAtlAllocatorFindModule6_user(_this, pszModulePath, pnModule, CAtlAllocatorFindModule6_next);
         };
-        struct CAtlTraceCategory* CAtlAllocatorGetCategory7_wrapper(struct CAtlAllocator* _this, int iCategory)
+        static struct CAtlTraceCategory* CAtlAllocatorGetCategory7_wrapper(struct CAtlAllocator* _this, int iCategory)
         {
            return CAtlAllocatorGetCategory7_user(_this, iCategory, CAtlAllocatorGetCategory7_next);
         };
-        int CAtlAllocatorGetCategoryCount8_wrapper(struct CAtlAllocator* _this, struct CAtlTraceModule* rModule)
+        static int CAtlAllocatorGetCategoryCount8_wrapper(struct CAtlAllocator* _this, struct CAtlTraceModule* rModule)
         {
            return CAtlAllocatorGetCategoryCount8_user(_this, rModule, CAtlAllocatorGetCategoryCount8_next);
         };
-        int CAtlAllocatorGetCategoryCount9_wrapper(struct CAtlAllocator* _this, int iModule)
+        static int CAtlAllocatorGetCategoryCount9_wrapper(struct CAtlAllocator* _this, int iModule)
         {
            return CAtlAllocatorGetCategoryCount9_user(_this, iModule, CAtlAllocatorGetCategoryCount9_next);
         };
-        struct CAtlTraceModule* CAtlAllocatorGetModule10_wrapper(struct CAtlAllocator* _this, int iModule)
+        static struct CAtlTraceModule* CAtlAllocatorGetModule10_wrapper(struct CAtlAllocator* _this, int iModule)
         {
            return CAtlAllocatorGetModule10_user(_this, iModule, CAtlAllocatorGetModule10_next);
         };
-        int CAtlAllocatorGetModuleCount11_wrapper(struct CAtlAllocator* _this)
+        static int CAtlAllocatorGetModuleCount11_wrapper(struct CAtlAllocator* _this)
         {
            return CAtlAllocatorGetModuleCount11_user(_this, CAtlAllocatorGetModuleCount11_next);
         };
-        struct CAtlTraceProcess* CAtlAllocatorGetProcess12_wrapper(struct CAtlAllocator* _this)
+        static struct CAtlTraceProcess* CAtlAllocatorGetProcess12_wrapper(struct CAtlAllocator* _this)
         {
            return CAtlAllocatorGetProcess12_user(_this, CAtlAllocatorGetProcess12_next);
         };
-        bool CAtlAllocatorInit13_wrapper(struct CAtlAllocator* _this, char* pszFileName, unsigned int dwMaxSize)
+        static bool CAtlAllocatorInit13_wrapper(struct CAtlAllocator* _this, char* pszFileName, unsigned int dwMaxSize)
         {
            return CAtlAllocatorInit13_user(_this, pszFileName, dwMaxSize, CAtlAllocatorInit13_next);
         };
-        bool CAtlAllocatorOpen14_wrapper(struct CAtlAllocator* _this, char* pszFileName)
+        static bool CAtlAllocatorOpen14_wrapper(struct CAtlAllocator* _this, char* pszFileName)
         {
            return CAtlAllocatorOpen14_user(_this, pszFileName, CAtlAllocatorOpen14_next);
         };
-        void CAtlAllocatorReleaseSnapshot15_wrapper(struct CAtlAllocator* _this)
+        static void CAtlAllocatorReleaseSnapshot15_wrapper(struct CAtlAllocator* _this)
         {
            CAtlAllocatorReleaseSnapshot15_user(_this, CAtlAllocatorReleaseSnapshot15_next);
         };
-        bool CAtlAllocatorRemoveModule16_wrapper(struct CAtlAllocator* _this, int iModule)
+        static bool CAtlAllocatorRemoveModule16_wrapper(struct CAtlAllocator* _this, int iModule)
         {
            return CAtlAllocatorRemoveModule16_user(_this, iModule, CAtlAllocatorRemoveModule16_next);
         };
-        void CAtlAllocatorTakeSnapshot17_wrapper(struct CAtlAllocator* _this)
+        static void CAtlAllocatorTakeSnapshot17_wrapper(struct CAtlAllocator* _this)
         {
            CAtlAllocatorTakeSnapshot17_user(_this, CAtlAllocatorTakeSnapshot17_next);
         };
-        void CAtlAllocatordtor_CAtlAllocator19_wrapper(struct CAtlAllocator* _this)
+        static void CAtlAllocatordtor_CAtlAllocator19_wrapper(struct CAtlAllocator* _this)
         {
            CAtlAllocatordtor_CAtlAllocator19_user(_this, CAtlAllocatordtor_CAtlAllocator19_next);
         };
         
-        hook_record CAtlAllocator_functions[] = {
+        static hook_record CAtlAllocator_functions[] = {
         {   (LPVOID)0x140674c90L,
             (LPVOID *)&CAtlAllocatorAddCategory1_user,
             (LPVOID *)&CAtlAllocatorAddCategory1_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,615 +8,615 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuildActVote2_ptr CGuildActVote2_next(nullptr);
-        info::CGuildActVote2_clbk CGuildActVote2_user(nullptr);
-        info::CGuildAddScheduleComplete4_ptr CGuildAddScheduleComplete4_next(nullptr);
-        info::CGuildAddScheduleComplete4_clbk CGuildAddScheduleComplete4_user(nullptr);
-        info::CGuildctor_CGuild6_ptr CGuildctor_CGuild6_next(nullptr);
-        info::CGuildctor_CGuild6_clbk CGuildctor_CGuild6_user(nullptr);
-        info::CGuildCancelSuggestedMatter8_ptr CGuildCancelSuggestedMatter8_next(nullptr);
-        info::CGuildCancelSuggestedMatter8_clbk CGuildCancelSuggestedMatter8_user(nullptr);
-        info::CGuildCheckGuildBattleSuggestRequestToDestGuild10_ptr CGuildCheckGuildBattleSuggestRequestToDestGuild10_next(nullptr);
-        info::CGuildCheckGuildBattleSuggestRequestToDestGuild10_clbk CGuildCheckGuildBattleSuggestRequestToDestGuild10_user(nullptr);
-        info::CGuildClearGuildBattle12_ptr CGuildClearGuildBattle12_next(nullptr);
-        info::CGuildClearGuildBattle12_clbk CGuildClearGuildBattle12_user(nullptr);
-        info::CGuildClearVote14_ptr CGuildClearVote14_next(nullptr);
-        info::CGuildClearVote14_clbk CGuildClearVote14_user(nullptr);
-        info::CGuildCompleteOutGuildbattleCost16_ptr CGuildCompleteOutGuildbattleCost16_next(nullptr);
-        info::CGuildCompleteOutGuildbattleCost16_clbk CGuildCompleteOutGuildbattleCost16_user(nullptr);
-        info::CGuildCompleteSelectMasterLastConn18_ptr CGuildCompleteSelectMasterLastConn18_next(nullptr);
-        info::CGuildCompleteSelectMasterLastConn18_clbk CGuildCompleteSelectMasterLastConn18_user(nullptr);
-        info::CGuildComplete_DB_Update_Committee20_ptr CGuildComplete_DB_Update_Committee20_next(nullptr);
-        info::CGuildComplete_DB_Update_Committee20_clbk CGuildComplete_DB_Update_Committee20_user(nullptr);
-        info::CGuildDB_Update_GuildMaster22_ptr CGuildDB_Update_GuildMaster22_next(nullptr);
-        info::CGuildDB_Update_GuildMaster22_clbk CGuildDB_Update_GuildMaster22_user(nullptr);
-        info::CGuildDB_Update_GuildMaster_Complete24_ptr CGuildDB_Update_GuildMaster_Complete24_next(nullptr);
-        info::CGuildDB_Update_GuildMaster_Complete24_clbk CGuildDB_Update_GuildMaster_Complete24_user(nullptr);
-        info::CGuildDestGuildIsAvailableBattleRequestState26_ptr CGuildDestGuildIsAvailableBattleRequestState26_next(nullptr);
-        info::CGuildDestGuildIsAvailableBattleRequestState26_clbk CGuildDestGuildIsAvailableBattleRequestState26_user(nullptr);
-        info::CGuildEndRankJob28_ptr CGuildEndRankJob28_next(nullptr);
-        info::CGuildEndRankJob28_clbk CGuildEndRankJob28_user(nullptr);
-        info::CGuildEstGuild30_ptr CGuildEstGuild30_next(nullptr);
-        info::CGuildEstGuild30_clbk CGuildEstGuild30_user(nullptr);
-        info::CGuildForceLeave32_ptr CGuildForceLeave32_next(nullptr);
-        info::CGuildForceLeave32_clbk CGuildForceLeave32_user(nullptr);
-        info::CGuildGetApplierFromSerial34_ptr CGuildGetApplierFromSerial34_next(nullptr);
-        info::CGuildGetApplierFromSerial34_clbk CGuildGetApplierFromSerial34_user(nullptr);
-        info::CGuildGetGrade36_ptr CGuildGetGrade36_next(nullptr);
-        info::CGuildGetGrade36_clbk CGuildGetGrade36_user(nullptr);
-        info::CGuildGetGuildMasterName38_ptr CGuildGetGuildMasterName38_next(nullptr);
-        info::CGuildGetGuildMasterName38_clbk CGuildGetGuildMasterName38_user(nullptr);
-        info::CGuildGetGuildMasterSerial40_ptr CGuildGetGuildMasterSerial40_next(nullptr);
-        info::CGuildGetGuildMasterSerial40_clbk CGuildGetGuildMasterSerial40_user(nullptr);
-        info::CGuildGetMemberFromSerial42_ptr CGuildGetMemberFromSerial42_next(nullptr);
-        info::CGuildGetMemberFromSerial42_clbk CGuildGetMemberFromSerial42_user(nullptr);
-        info::CGuildGetMemberNum44_ptr CGuildGetMemberNum44_next(nullptr);
-        info::CGuildGetMemberNum44_clbk CGuildGetMemberNum44_user(nullptr);
-        info::CGuildGetMemberNumForJoin46_ptr CGuildGetMemberNumForJoin46_next(nullptr);
-        info::CGuildGetMemberNumForJoin46_clbk CGuildGetMemberNumForJoin46_user(nullptr);
-        info::CGuildGetRace48_ptr CGuildGetRace48_next(nullptr);
-        info::CGuildGetRace48_clbk CGuildGetRace48_user(nullptr);
-        info::CGuildGetTotalDalant50_ptr CGuildGetTotalDalant50_next(nullptr);
-        info::CGuildGetTotalDalant50_clbk CGuildGetTotalDalant50_user(nullptr);
-        info::CGuildGetTotalGold52_ptr CGuildGetTotalGold52_next(nullptr);
-        info::CGuildGetTotalGold52_clbk CGuildGetTotalGold52_user(nullptr);
-        info::CGuildGuildBattleSuggestRequestToDestGuild54_ptr CGuildGuildBattleSuggestRequestToDestGuild54_next(nullptr);
-        info::CGuildGuildBattleSuggestRequestToDestGuild54_clbk CGuildGuildBattleSuggestRequestToDestGuild54_user(nullptr);
-        info::CGuildIOMoney56_ptr CGuildIOMoney56_next(nullptr);
-        info::CGuildIOMoney56_clbk CGuildIOMoney56_user(nullptr);
-        info::CGuildInit58_ptr CGuildInit58_next(nullptr);
-        info::CGuildInit58_clbk CGuildInit58_user(nullptr);
-        info::CGuildInitVote60_ptr CGuildInitVote60_next(nullptr);
-        info::CGuildInitVote60_clbk CGuildInitVote60_user(nullptr);
-        info::CGuildIsFill62_ptr CGuildIsFill62_next(nullptr);
-        info::CGuildIsFill62_clbk CGuildIsFill62_user(nullptr);
-        info::CGuildLoginMember64_ptr CGuildLoginMember64_next(nullptr);
-        info::CGuildLoginMember64_clbk CGuildLoginMember64_user(nullptr);
-        info::CGuildLogoffMember66_ptr CGuildLogoffMember66_next(nullptr);
-        info::CGuildLogoffMember66_clbk CGuildLogoffMember66_user(nullptr);
-        info::CGuildLoop68_ptr CGuildLoop68_next(nullptr);
-        info::CGuildLoop68_clbk CGuildLoop68_user(nullptr);
-        info::CGuildMakeBuddyPacket70_ptr CGuildMakeBuddyPacket70_next(nullptr);
-        info::CGuildMakeBuddyPacket70_clbk CGuildMakeBuddyPacket70_user(nullptr);
-        info::CGuildMakeDownApplierPacket72_ptr CGuildMakeDownApplierPacket72_next(nullptr);
-        info::CGuildMakeDownApplierPacket72_clbk CGuildMakeDownApplierPacket72_user(nullptr);
-        info::CGuildMakeDownMemberPacket74_ptr CGuildMakeDownMemberPacket74_next(nullptr);
-        info::CGuildMakeDownMemberPacket74_clbk CGuildMakeDownMemberPacket74_user(nullptr);
-        info::CGuildMakeMoneyIOPacket76_ptr CGuildMakeMoneyIOPacket76_next(nullptr);
-        info::CGuildMakeMoneyIOPacket76_clbk CGuildMakeMoneyIOPacket76_user(nullptr);
-        info::CGuildMakeQueryInfoPacket78_ptr CGuildMakeQueryInfoPacket78_next(nullptr);
-        info::CGuildMakeQueryInfoPacket78_clbk CGuildMakeQueryInfoPacket78_user(nullptr);
-        info::CGuildManageAcceptORRefuseGuildBattle80_ptr CGuildManageAcceptORRefuseGuildBattle80_next(nullptr);
-        info::CGuildManageAcceptORRefuseGuildBattle80_clbk CGuildManageAcceptORRefuseGuildBattle80_user(nullptr);
-        info::CGuildManageBuyGuildEmblem82_ptr CGuildManageBuyGuildEmblem82_next(nullptr);
-        info::CGuildManageBuyGuildEmblem82_clbk CGuildManageBuyGuildEmblem82_user(nullptr);
-        info::CGuildManageExpulseMember84_ptr CGuildManageExpulseMember84_next(nullptr);
-        info::CGuildManageExpulseMember84_clbk CGuildManageExpulseMember84_user(nullptr);
-        info::CGuildManageGuildCommittee86_ptr CGuildManageGuildCommittee86_next(nullptr);
-        info::CGuildManageGuildCommittee86_clbk CGuildManageGuildCommittee86_user(nullptr);
-        info::CGuildManagePopGuildMoney88_ptr CGuildManagePopGuildMoney88_next(nullptr);
-        info::CGuildManagePopGuildMoney88_clbk CGuildManagePopGuildMoney88_user(nullptr);
-        info::CGuildManageProposeGuildBattle90_ptr CGuildManageProposeGuildBattle90_next(nullptr);
-        info::CGuildManageProposeGuildBattle90_clbk CGuildManageProposeGuildBattle90_user(nullptr);
-        info::CGuildPopApplier92_ptr CGuildPopApplier92_next(nullptr);
-        info::CGuildPopApplier92_clbk CGuildPopApplier92_user(nullptr);
-        info::CGuildPopMember94_ptr CGuildPopMember94_next(nullptr);
-        info::CGuildPopMember94_clbk CGuildPopMember94_user(nullptr);
-        info::CGuildPushApplier96_ptr CGuildPushApplier96_next(nullptr);
-        info::CGuildPushApplier96_clbk CGuildPushApplier96_user(nullptr);
-        info::CGuildPushDQSDestGuildOutputGuildBattleCost98_ptr CGuildPushDQSDestGuildOutputGuildBattleCost98_next(nullptr);
-        info::CGuildPushDQSDestGuildOutputGuildBattleCost98_clbk CGuildPushDQSDestGuildOutputGuildBattleCost98_user(nullptr);
-        info::CGuildPushDQSGuildMasterLastConnn100_ptr CGuildPushDQSGuildMasterLastConnn100_next(nullptr);
-        info::CGuildPushDQSGuildMasterLastConnn100_clbk CGuildPushDQSGuildMasterLastConnn100_user(nullptr);
-        info::CGuildPushDQSInGuildBattleCost102_ptr CGuildPushDQSInGuildBattleCost102_next(nullptr);
-        info::CGuildPushDQSInGuildBattleCost102_clbk CGuildPushDQSInGuildBattleCost102_user(nullptr);
-        info::CGuildPushDQSInGuildBattleRewardMoney104_ptr CGuildPushDQSInGuildBattleRewardMoney104_next(nullptr);
-        info::CGuildPushDQSInGuildBattleRewardMoney104_clbk CGuildPushDQSInGuildBattleRewardMoney104_user(nullptr);
-        info::CGuildPushDQSSourceGuildOutputGuildBattleCost106_ptr CGuildPushDQSSourceGuildOutputGuildBattleCost106_next(nullptr);
-        info::CGuildPushDQSSourceGuildOutputGuildBattleCost106_clbk CGuildPushDQSSourceGuildOutputGuildBattleCost106_user(nullptr);
-        info::CGuildPushHistory_IOMoney108_ptr CGuildPushHistory_IOMoney108_next(nullptr);
-        info::CGuildPushHistory_IOMoney108_clbk CGuildPushHistory_IOMoney108_user(nullptr);
-        info::CGuildPushMember110_ptr CGuildPushMember110_next(nullptr);
-        info::CGuildPushMember110_clbk CGuildPushMember110_user(nullptr);
-        info::CGuildRefreshGuildMemberData112_ptr CGuildRefreshGuildMemberData112_next(nullptr);
-        info::CGuildRefreshGuildMemberData112_clbk CGuildRefreshGuildMemberData112_user(nullptr);
-        info::CGuildRegSuggestedMatter114_ptr CGuildRegSuggestedMatter114_next(nullptr);
-        info::CGuildRegSuggestedMatter114_clbk CGuildRegSuggestedMatter114_user(nullptr);
-        info::CGuildRelease116_ptr CGuildRelease116_next(nullptr);
-        info::CGuildRelease116_clbk CGuildRelease116_user(nullptr);
-        info::CGuildReleaseTemp118_ptr CGuildReleaseTemp118_next(nullptr);
-        info::CGuildReleaseTemp118_clbk CGuildReleaseTemp118_user(nullptr);
-        info::CGuildSendMsg_AddJoinApplier120_ptr CGuildSendMsg_AddJoinApplier120_next(nullptr);
-        info::CGuildSendMsg_AddJoinApplier120_clbk CGuildSendMsg_AddJoinApplier120_user(nullptr);
-        info::CGuildSendMsg_AlterMemberGrade122_ptr CGuildSendMsg_AlterMemberGrade122_next(nullptr);
-        info::CGuildSendMsg_AlterMemberGrade122_clbk CGuildSendMsg_AlterMemberGrade122_user(nullptr);
-        info::CGuildSendMsg_AlterMemberState124_ptr CGuildSendMsg_AlterMemberState124_next(nullptr);
-        info::CGuildSendMsg_AlterMemberState124_clbk CGuildSendMsg_AlterMemberState124_user(nullptr);
-        info::CGuildSendMsg_ApplyGuildBattleResultInform126_ptr CGuildSendMsg_ApplyGuildBattleResultInform126_next(nullptr);
-        info::CGuildSendMsg_ApplyGuildBattleResultInform126_clbk CGuildSendMsg_ApplyGuildBattleResultInform126_user(nullptr);
-        info::CGuildSendMsg_ChangeTaxRate128_ptr CGuildSendMsg_ChangeTaxRate128_next(nullptr);
-        info::CGuildSendMsg_ChangeTaxRate128_clbk CGuildSendMsg_ChangeTaxRate128_user(nullptr);
-        info::CGuildSendMsg_DelJoinApplier130_ptr CGuildSendMsg_DelJoinApplier130_next(nullptr);
-        info::CGuildSendMsg_DelJoinApplier130_clbk CGuildSendMsg_DelJoinApplier130_user(nullptr);
-        info::CGuildSendMsg_DownPacket132_ptr CGuildSendMsg_DownPacket132_next(nullptr);
-        info::CGuildSendMsg_DownPacket132_clbk CGuildSendMsg_DownPacket132_user(nullptr);
-        info::CGuildSendMsg_GuildBattleProposed134_ptr CGuildSendMsg_GuildBattleProposed134_next(nullptr);
-        info::CGuildSendMsg_GuildBattleProposed134_clbk CGuildSendMsg_GuildBattleProposed134_user(nullptr);
-        info::CGuildSendMsg_GuildBattleRefused136_ptr CGuildSendMsg_GuildBattleRefused136_next(nullptr);
-        info::CGuildSendMsg_GuildBattleRefused136_clbk CGuildSendMsg_GuildBattleRefused136_user(nullptr);
-        info::CGuildSendMsg_GuildBattleSuggestResult138_ptr CGuildSendMsg_GuildBattleSuggestResult138_next(nullptr);
-        info::CGuildSendMsg_GuildBattleSuggestResult138_clbk CGuildSendMsg_GuildBattleSuggestResult138_user(nullptr);
-        info::CGuildSendMsg_GuildDisjointInform140_ptr CGuildSendMsg_GuildDisjointInform140_next(nullptr);
-        info::CGuildSendMsg_GuildDisjointInform140_clbk CGuildSendMsg_GuildDisjointInform140_user(nullptr);
-        info::CGuildSendMsg_GuildInfoUpdateInform142_ptr CGuildSendMsg_GuildInfoUpdateInform142_next(nullptr);
-        info::CGuildSendMsg_GuildInfoUpdateInform142_clbk CGuildSendMsg_GuildInfoUpdateInform142_user(nullptr);
-        info::CGuildSendMsg_GuildJoinAcceptInform144_ptr CGuildSendMsg_GuildJoinAcceptInform144_next(nullptr);
-        info::CGuildSendMsg_GuildJoinAcceptInform144_clbk CGuildSendMsg_GuildJoinAcceptInform144_user(nullptr);
-        info::CGuildSendMsg_GuildMemberLogin146_ptr CGuildSendMsg_GuildMemberLogin146_next(nullptr);
-        info::CGuildSendMsg_GuildMemberLogin146_clbk CGuildSendMsg_GuildMemberLogin146_user(nullptr);
-        info::CGuildSendMsg_GuildMemberLogoff148_ptr CGuildSendMsg_GuildMemberLogoff148_next(nullptr);
-        info::CGuildSendMsg_GuildMemberLogoff148_clbk CGuildSendMsg_GuildMemberLogoff148_user(nullptr);
-        info::CGuildSendMsg_GuildMemberPosInform150_ptr CGuildSendMsg_GuildMemberPosInform150_next(nullptr);
-        info::CGuildSendMsg_GuildMemberPosInform150_clbk CGuildSendMsg_GuildMemberPosInform150_user(nullptr);
-        info::CGuildSendMsg_GuildOutputMoneyFail152_ptr CGuildSendMsg_GuildOutputMoneyFail152_next(nullptr);
-        info::CGuildSendMsg_GuildOutputMoneyFail152_clbk CGuildSendMsg_GuildOutputMoneyFail152_user(nullptr);
-        info::CGuildSendMsg_GuildRoomRented154_ptr CGuildSendMsg_GuildRoomRented154_next(nullptr);
-        info::CGuildSendMsg_GuildRoomRented154_clbk CGuildSendMsg_GuildRoomRented154_user(nullptr);
-        info::CGuildSendMsg_IOMoney156_ptr CGuildSendMsg_IOMoney156_next(nullptr);
-        info::CGuildSendMsg_IOMoney156_clbk CGuildSendMsg_IOMoney156_user(nullptr);
-        info::CGuildSendMsg_LeaveMember158_ptr CGuildSendMsg_LeaveMember158_next(nullptr);
-        info::CGuildSendMsg_LeaveMember158_clbk CGuildSendMsg_LeaveMember158_user(nullptr);
-        info::CGuildSendMsg_ManageGuildCommitteeResult160_ptr CGuildSendMsg_ManageGuildCommitteeResult160_next(nullptr);
-        info::CGuildSendMsg_ManageGuildCommitteeResult160_clbk CGuildSendMsg_ManageGuildCommitteeResult160_user(nullptr);
-        info::CGuildSendMsg_MasterElectPossible162_ptr CGuildSendMsg_MasterElectPossible162_next(nullptr);
-        info::CGuildSendMsg_MasterElectPossible162_clbk CGuildSendMsg_MasterElectPossible162_user(nullptr);
-        info::CGuildSendMsg_QueryPacket_Info164_ptr CGuildSendMsg_QueryPacket_Info164_next(nullptr);
-        info::CGuildSendMsg_QueryPacket_Info164_clbk CGuildSendMsg_QueryPacket_Info164_user(nullptr);
-        info::CGuildSendMsg_VoteCancelInform166_ptr CGuildSendMsg_VoteCancelInform166_next(nullptr);
-        info::CGuildSendMsg_VoteCancelInform166_clbk CGuildSendMsg_VoteCancelInform166_user(nullptr);
-        info::CGuildSendMsg_VoteComplete168_ptr CGuildSendMsg_VoteComplete168_next(nullptr);
-        info::CGuildSendMsg_VoteComplete168_clbk CGuildSendMsg_VoteComplete168_user(nullptr);
-        info::CGuildSendMsg_VoteProcessInform_Continue170_ptr CGuildSendMsg_VoteProcessInform_Continue170_next(nullptr);
-        info::CGuildSendMsg_VoteProcessInform_Continue170_clbk CGuildSendMsg_VoteProcessInform_Continue170_user(nullptr);
-        info::CGuildSendMsg_VoteProcessInform_Start172_ptr CGuildSendMsg_VoteProcessInform_Start172_next(nullptr);
-        info::CGuildSendMsg_VoteProcessInform_Start172_clbk CGuildSendMsg_VoteProcessInform_Start172_user(nullptr);
-        info::CGuildSendMsg_VoteState174_ptr CGuildSendMsg_VoteState174_next(nullptr);
-        info::CGuildSendMsg_VoteState174_clbk CGuildSendMsg_VoteState174_user(nullptr);
-        info::CGuildSendMsg_VoteStop176_ptr CGuildSendMsg_VoteStop176_next(nullptr);
-        info::CGuildSendMsg_VoteStop176_clbk CGuildSendMsg_VoteStop176_user(nullptr);
-        info::CGuildSetCopmlteGuildBattleSuggest178_ptr CGuildSetCopmlteGuildBattleSuggest178_next(nullptr);
-        info::CGuildSetCopmlteGuildBattleSuggest178_clbk CGuildSetCopmlteGuildBattleSuggest178_user(nullptr);
-        info::CGuildSetGreetingmsg_GUILD180_ptr CGuildSetGreetingmsg_GUILD180_next(nullptr);
-        info::CGuildSetGreetingmsg_GUILD180_clbk CGuildSetGreetingmsg_GUILD180_user(nullptr);
-        info::CGuildSetGuild182_ptr CGuildSetGuild182_next(nullptr);
-        info::CGuildSetGuild182_clbk CGuildSetGuild182_user(nullptr);
-        info::CGuildSetGuildBattleMatter184_ptr CGuildSetGuildBattleMatter184_next(nullptr);
-        info::CGuildSetGuildBattleMatter184_clbk CGuildSetGuildBattleMatter184_user(nullptr);
-        info::CGuildSetTemp186_ptr CGuildSetTemp186_next(nullptr);
-        info::CGuildSetTemp186_clbk CGuildSetTemp186_user(nullptr);
-        info::CGuildSortRankInGuild188_ptr CGuildSortRankInGuild188_next(nullptr);
-        info::CGuildSortRankInGuild188_clbk CGuildSortRankInGuild188_user(nullptr);
-        info::CGuildSrcGuildIsAvailableBattleRequestState190_ptr CGuildSrcGuildIsAvailableBattleRequestState190_next(nullptr);
-        info::CGuildSrcGuildIsAvailableBattleRequestState190_clbk CGuildSrcGuildIsAvailableBattleRequestState190_user(nullptr);
-        info::CGuildStartRankJob192_ptr CGuildStartRankJob192_next(nullptr);
-        info::CGuildStartRankJob192_clbk CGuildStartRankJob192_user(nullptr);
-        info::CGuildUpdateEmblem194_ptr CGuildUpdateEmblem194_next(nullptr);
-        info::CGuildUpdateEmblem194_clbk CGuildUpdateEmblem194_user(nullptr);
-        info::CGuildUpdateGrade196_ptr CGuildUpdateGrade196_next(nullptr);
-        info::CGuildUpdateGrade196_clbk CGuildUpdateGrade196_user(nullptr);
-        info::CGuildUpdateGuildBattleWinCnt198_ptr CGuildUpdateGuildBattleWinCnt198_next(nullptr);
-        info::CGuildUpdateGuildBattleWinCnt198_clbk CGuildUpdateGuildBattleWinCnt198_user(nullptr);
-        info::CGuildUpdateUTATax200_ptr CGuildUpdateUTATax200_next(nullptr);
-        info::CGuildUpdateUTATax200_clbk CGuildUpdateUTATax200_user(nullptr);
-        info::CGuilddtor_CGuild206_ptr CGuilddtor_CGuild206_next(nullptr);
-        info::CGuilddtor_CGuild206_clbk CGuilddtor_CGuild206_user(nullptr);
+        static info::CGuildActVote2_ptr CGuildActVote2_next(nullptr);
+        static info::CGuildActVote2_clbk CGuildActVote2_user(nullptr);
+        static info::CGuildAddScheduleComplete4_ptr CGuildAddScheduleComplete4_next(nullptr);
+        static info::CGuildAddScheduleComplete4_clbk CGuildAddScheduleComplete4_user(nullptr);
+        static info::CGuildctor_CGuild6_ptr CGuildctor_CGuild6_next(nullptr);
+        static info::CGuildctor_CGuild6_clbk CGuildctor_CGuild6_user(nullptr);
+        static info::CGuildCancelSuggestedMatter8_ptr CGuildCancelSuggestedMatter8_next(nullptr);
+        static info::CGuildCancelSuggestedMatter8_clbk CGuildCancelSuggestedMatter8_user(nullptr);
+        static info::CGuildCheckGuildBattleSuggestRequestToDestGuild10_ptr CGuildCheckGuildBattleSuggestRequestToDestGuild10_next(nullptr);
+        static info::CGuildCheckGuildBattleSuggestRequestToDestGuild10_clbk CGuildCheckGuildBattleSuggestRequestToDestGuild10_user(nullptr);
+        static info::CGuildClearGuildBattle12_ptr CGuildClearGuildBattle12_next(nullptr);
+        static info::CGuildClearGuildBattle12_clbk CGuildClearGuildBattle12_user(nullptr);
+        static info::CGuildClearVote14_ptr CGuildClearVote14_next(nullptr);
+        static info::CGuildClearVote14_clbk CGuildClearVote14_user(nullptr);
+        static info::CGuildCompleteOutGuildbattleCost16_ptr CGuildCompleteOutGuildbattleCost16_next(nullptr);
+        static info::CGuildCompleteOutGuildbattleCost16_clbk CGuildCompleteOutGuildbattleCost16_user(nullptr);
+        static info::CGuildCompleteSelectMasterLastConn18_ptr CGuildCompleteSelectMasterLastConn18_next(nullptr);
+        static info::CGuildCompleteSelectMasterLastConn18_clbk CGuildCompleteSelectMasterLastConn18_user(nullptr);
+        static info::CGuildComplete_DB_Update_Committee20_ptr CGuildComplete_DB_Update_Committee20_next(nullptr);
+        static info::CGuildComplete_DB_Update_Committee20_clbk CGuildComplete_DB_Update_Committee20_user(nullptr);
+        static info::CGuildDB_Update_GuildMaster22_ptr CGuildDB_Update_GuildMaster22_next(nullptr);
+        static info::CGuildDB_Update_GuildMaster22_clbk CGuildDB_Update_GuildMaster22_user(nullptr);
+        static info::CGuildDB_Update_GuildMaster_Complete24_ptr CGuildDB_Update_GuildMaster_Complete24_next(nullptr);
+        static info::CGuildDB_Update_GuildMaster_Complete24_clbk CGuildDB_Update_GuildMaster_Complete24_user(nullptr);
+        static info::CGuildDestGuildIsAvailableBattleRequestState26_ptr CGuildDestGuildIsAvailableBattleRequestState26_next(nullptr);
+        static info::CGuildDestGuildIsAvailableBattleRequestState26_clbk CGuildDestGuildIsAvailableBattleRequestState26_user(nullptr);
+        static info::CGuildEndRankJob28_ptr CGuildEndRankJob28_next(nullptr);
+        static info::CGuildEndRankJob28_clbk CGuildEndRankJob28_user(nullptr);
+        static info::CGuildEstGuild30_ptr CGuildEstGuild30_next(nullptr);
+        static info::CGuildEstGuild30_clbk CGuildEstGuild30_user(nullptr);
+        static info::CGuildForceLeave32_ptr CGuildForceLeave32_next(nullptr);
+        static info::CGuildForceLeave32_clbk CGuildForceLeave32_user(nullptr);
+        static info::CGuildGetApplierFromSerial34_ptr CGuildGetApplierFromSerial34_next(nullptr);
+        static info::CGuildGetApplierFromSerial34_clbk CGuildGetApplierFromSerial34_user(nullptr);
+        static info::CGuildGetGrade36_ptr CGuildGetGrade36_next(nullptr);
+        static info::CGuildGetGrade36_clbk CGuildGetGrade36_user(nullptr);
+        static info::CGuildGetGuildMasterName38_ptr CGuildGetGuildMasterName38_next(nullptr);
+        static info::CGuildGetGuildMasterName38_clbk CGuildGetGuildMasterName38_user(nullptr);
+        static info::CGuildGetGuildMasterSerial40_ptr CGuildGetGuildMasterSerial40_next(nullptr);
+        static info::CGuildGetGuildMasterSerial40_clbk CGuildGetGuildMasterSerial40_user(nullptr);
+        static info::CGuildGetMemberFromSerial42_ptr CGuildGetMemberFromSerial42_next(nullptr);
+        static info::CGuildGetMemberFromSerial42_clbk CGuildGetMemberFromSerial42_user(nullptr);
+        static info::CGuildGetMemberNum44_ptr CGuildGetMemberNum44_next(nullptr);
+        static info::CGuildGetMemberNum44_clbk CGuildGetMemberNum44_user(nullptr);
+        static info::CGuildGetMemberNumForJoin46_ptr CGuildGetMemberNumForJoin46_next(nullptr);
+        static info::CGuildGetMemberNumForJoin46_clbk CGuildGetMemberNumForJoin46_user(nullptr);
+        static info::CGuildGetRace48_ptr CGuildGetRace48_next(nullptr);
+        static info::CGuildGetRace48_clbk CGuildGetRace48_user(nullptr);
+        static info::CGuildGetTotalDalant50_ptr CGuildGetTotalDalant50_next(nullptr);
+        static info::CGuildGetTotalDalant50_clbk CGuildGetTotalDalant50_user(nullptr);
+        static info::CGuildGetTotalGold52_ptr CGuildGetTotalGold52_next(nullptr);
+        static info::CGuildGetTotalGold52_clbk CGuildGetTotalGold52_user(nullptr);
+        static info::CGuildGuildBattleSuggestRequestToDestGuild54_ptr CGuildGuildBattleSuggestRequestToDestGuild54_next(nullptr);
+        static info::CGuildGuildBattleSuggestRequestToDestGuild54_clbk CGuildGuildBattleSuggestRequestToDestGuild54_user(nullptr);
+        static info::CGuildIOMoney56_ptr CGuildIOMoney56_next(nullptr);
+        static info::CGuildIOMoney56_clbk CGuildIOMoney56_user(nullptr);
+        static info::CGuildInit58_ptr CGuildInit58_next(nullptr);
+        static info::CGuildInit58_clbk CGuildInit58_user(nullptr);
+        static info::CGuildInitVote60_ptr CGuildInitVote60_next(nullptr);
+        static info::CGuildInitVote60_clbk CGuildInitVote60_user(nullptr);
+        static info::CGuildIsFill62_ptr CGuildIsFill62_next(nullptr);
+        static info::CGuildIsFill62_clbk CGuildIsFill62_user(nullptr);
+        static info::CGuildLoginMember64_ptr CGuildLoginMember64_next(nullptr);
+        static info::CGuildLoginMember64_clbk CGuildLoginMember64_user(nullptr);
+        static info::CGuildLogoffMember66_ptr CGuildLogoffMember66_next(nullptr);
+        static info::CGuildLogoffMember66_clbk CGuildLogoffMember66_user(nullptr);
+        static info::CGuildLoop68_ptr CGuildLoop68_next(nullptr);
+        static info::CGuildLoop68_clbk CGuildLoop68_user(nullptr);
+        static info::CGuildMakeBuddyPacket70_ptr CGuildMakeBuddyPacket70_next(nullptr);
+        static info::CGuildMakeBuddyPacket70_clbk CGuildMakeBuddyPacket70_user(nullptr);
+        static info::CGuildMakeDownApplierPacket72_ptr CGuildMakeDownApplierPacket72_next(nullptr);
+        static info::CGuildMakeDownApplierPacket72_clbk CGuildMakeDownApplierPacket72_user(nullptr);
+        static info::CGuildMakeDownMemberPacket74_ptr CGuildMakeDownMemberPacket74_next(nullptr);
+        static info::CGuildMakeDownMemberPacket74_clbk CGuildMakeDownMemberPacket74_user(nullptr);
+        static info::CGuildMakeMoneyIOPacket76_ptr CGuildMakeMoneyIOPacket76_next(nullptr);
+        static info::CGuildMakeMoneyIOPacket76_clbk CGuildMakeMoneyIOPacket76_user(nullptr);
+        static info::CGuildMakeQueryInfoPacket78_ptr CGuildMakeQueryInfoPacket78_next(nullptr);
+        static info::CGuildMakeQueryInfoPacket78_clbk CGuildMakeQueryInfoPacket78_user(nullptr);
+        static info::CGuildManageAcceptORRefuseGuildBattle80_ptr CGuildManageAcceptORRefuseGuildBattle80_next(nullptr);
+        static info::CGuildManageAcceptORRefuseGuildBattle80_clbk CGuildManageAcceptORRefuseGuildBattle80_user(nullptr);
+        static info::CGuildManageBuyGuildEmblem82_ptr CGuildManageBuyGuildEmblem82_next(nullptr);
+        static info::CGuildManageBuyGuildEmblem82_clbk CGuildManageBuyGuildEmblem82_user(nullptr);
+        static info::CGuildManageExpulseMember84_ptr CGuildManageExpulseMember84_next(nullptr);
+        static info::CGuildManageExpulseMember84_clbk CGuildManageExpulseMember84_user(nullptr);
+        static info::CGuildManageGuildCommittee86_ptr CGuildManageGuildCommittee86_next(nullptr);
+        static info::CGuildManageGuildCommittee86_clbk CGuildManageGuildCommittee86_user(nullptr);
+        static info::CGuildManagePopGuildMoney88_ptr CGuildManagePopGuildMoney88_next(nullptr);
+        static info::CGuildManagePopGuildMoney88_clbk CGuildManagePopGuildMoney88_user(nullptr);
+        static info::CGuildManageProposeGuildBattle90_ptr CGuildManageProposeGuildBattle90_next(nullptr);
+        static info::CGuildManageProposeGuildBattle90_clbk CGuildManageProposeGuildBattle90_user(nullptr);
+        static info::CGuildPopApplier92_ptr CGuildPopApplier92_next(nullptr);
+        static info::CGuildPopApplier92_clbk CGuildPopApplier92_user(nullptr);
+        static info::CGuildPopMember94_ptr CGuildPopMember94_next(nullptr);
+        static info::CGuildPopMember94_clbk CGuildPopMember94_user(nullptr);
+        static info::CGuildPushApplier96_ptr CGuildPushApplier96_next(nullptr);
+        static info::CGuildPushApplier96_clbk CGuildPushApplier96_user(nullptr);
+        static info::CGuildPushDQSDestGuildOutputGuildBattleCost98_ptr CGuildPushDQSDestGuildOutputGuildBattleCost98_next(nullptr);
+        static info::CGuildPushDQSDestGuildOutputGuildBattleCost98_clbk CGuildPushDQSDestGuildOutputGuildBattleCost98_user(nullptr);
+        static info::CGuildPushDQSGuildMasterLastConnn100_ptr CGuildPushDQSGuildMasterLastConnn100_next(nullptr);
+        static info::CGuildPushDQSGuildMasterLastConnn100_clbk CGuildPushDQSGuildMasterLastConnn100_user(nullptr);
+        static info::CGuildPushDQSInGuildBattleCost102_ptr CGuildPushDQSInGuildBattleCost102_next(nullptr);
+        static info::CGuildPushDQSInGuildBattleCost102_clbk CGuildPushDQSInGuildBattleCost102_user(nullptr);
+        static info::CGuildPushDQSInGuildBattleRewardMoney104_ptr CGuildPushDQSInGuildBattleRewardMoney104_next(nullptr);
+        static info::CGuildPushDQSInGuildBattleRewardMoney104_clbk CGuildPushDQSInGuildBattleRewardMoney104_user(nullptr);
+        static info::CGuildPushDQSSourceGuildOutputGuildBattleCost106_ptr CGuildPushDQSSourceGuildOutputGuildBattleCost106_next(nullptr);
+        static info::CGuildPushDQSSourceGuildOutputGuildBattleCost106_clbk CGuildPushDQSSourceGuildOutputGuildBattleCost106_user(nullptr);
+        static info::CGuildPushHistory_IOMoney108_ptr CGuildPushHistory_IOMoney108_next(nullptr);
+        static info::CGuildPushHistory_IOMoney108_clbk CGuildPushHistory_IOMoney108_user(nullptr);
+        static info::CGuildPushMember110_ptr CGuildPushMember110_next(nullptr);
+        static info::CGuildPushMember110_clbk CGuildPushMember110_user(nullptr);
+        static info::CGuildRefreshGuildMemberData112_ptr CGuildRefreshGuildMemberData112_next(nullptr);
+        static info::CGuildRefreshGuildMemberData112_clbk CGuildRefreshGuildMemberData112_user(nullptr);
+        static info::CGuildRegSuggestedMatter114_ptr CGuildRegSuggestedMatter114_next(nullptr);
+        static info::CGuildRegSuggestedMatter114_clbk CGuildRegSuggestedMatter114_user(nullptr);
+        static info::CGuildRelease116_ptr CGuildRelease116_next(nullptr);
+        static info::CGuildRelease116_clbk CGuildRelease116_user(nullptr);
+        static info::CGuildReleaseTemp118_ptr CGuildReleaseTemp118_next(nullptr);
+        static info::CGuildReleaseTemp118_clbk CGuildReleaseTemp118_user(nullptr);
+        static info::CGuildSendMsg_AddJoinApplier120_ptr CGuildSendMsg_AddJoinApplier120_next(nullptr);
+        static info::CGuildSendMsg_AddJoinApplier120_clbk CGuildSendMsg_AddJoinApplier120_user(nullptr);
+        static info::CGuildSendMsg_AlterMemberGrade122_ptr CGuildSendMsg_AlterMemberGrade122_next(nullptr);
+        static info::CGuildSendMsg_AlterMemberGrade122_clbk CGuildSendMsg_AlterMemberGrade122_user(nullptr);
+        static info::CGuildSendMsg_AlterMemberState124_ptr CGuildSendMsg_AlterMemberState124_next(nullptr);
+        static info::CGuildSendMsg_AlterMemberState124_clbk CGuildSendMsg_AlterMemberState124_user(nullptr);
+        static info::CGuildSendMsg_ApplyGuildBattleResultInform126_ptr CGuildSendMsg_ApplyGuildBattleResultInform126_next(nullptr);
+        static info::CGuildSendMsg_ApplyGuildBattleResultInform126_clbk CGuildSendMsg_ApplyGuildBattleResultInform126_user(nullptr);
+        static info::CGuildSendMsg_ChangeTaxRate128_ptr CGuildSendMsg_ChangeTaxRate128_next(nullptr);
+        static info::CGuildSendMsg_ChangeTaxRate128_clbk CGuildSendMsg_ChangeTaxRate128_user(nullptr);
+        static info::CGuildSendMsg_DelJoinApplier130_ptr CGuildSendMsg_DelJoinApplier130_next(nullptr);
+        static info::CGuildSendMsg_DelJoinApplier130_clbk CGuildSendMsg_DelJoinApplier130_user(nullptr);
+        static info::CGuildSendMsg_DownPacket132_ptr CGuildSendMsg_DownPacket132_next(nullptr);
+        static info::CGuildSendMsg_DownPacket132_clbk CGuildSendMsg_DownPacket132_user(nullptr);
+        static info::CGuildSendMsg_GuildBattleProposed134_ptr CGuildSendMsg_GuildBattleProposed134_next(nullptr);
+        static info::CGuildSendMsg_GuildBattleProposed134_clbk CGuildSendMsg_GuildBattleProposed134_user(nullptr);
+        static info::CGuildSendMsg_GuildBattleRefused136_ptr CGuildSendMsg_GuildBattleRefused136_next(nullptr);
+        static info::CGuildSendMsg_GuildBattleRefused136_clbk CGuildSendMsg_GuildBattleRefused136_user(nullptr);
+        static info::CGuildSendMsg_GuildBattleSuggestResult138_ptr CGuildSendMsg_GuildBattleSuggestResult138_next(nullptr);
+        static info::CGuildSendMsg_GuildBattleSuggestResult138_clbk CGuildSendMsg_GuildBattleSuggestResult138_user(nullptr);
+        static info::CGuildSendMsg_GuildDisjointInform140_ptr CGuildSendMsg_GuildDisjointInform140_next(nullptr);
+        static info::CGuildSendMsg_GuildDisjointInform140_clbk CGuildSendMsg_GuildDisjointInform140_user(nullptr);
+        static info::CGuildSendMsg_GuildInfoUpdateInform142_ptr CGuildSendMsg_GuildInfoUpdateInform142_next(nullptr);
+        static info::CGuildSendMsg_GuildInfoUpdateInform142_clbk CGuildSendMsg_GuildInfoUpdateInform142_user(nullptr);
+        static info::CGuildSendMsg_GuildJoinAcceptInform144_ptr CGuildSendMsg_GuildJoinAcceptInform144_next(nullptr);
+        static info::CGuildSendMsg_GuildJoinAcceptInform144_clbk CGuildSendMsg_GuildJoinAcceptInform144_user(nullptr);
+        static info::CGuildSendMsg_GuildMemberLogin146_ptr CGuildSendMsg_GuildMemberLogin146_next(nullptr);
+        static info::CGuildSendMsg_GuildMemberLogin146_clbk CGuildSendMsg_GuildMemberLogin146_user(nullptr);
+        static info::CGuildSendMsg_GuildMemberLogoff148_ptr CGuildSendMsg_GuildMemberLogoff148_next(nullptr);
+        static info::CGuildSendMsg_GuildMemberLogoff148_clbk CGuildSendMsg_GuildMemberLogoff148_user(nullptr);
+        static info::CGuildSendMsg_GuildMemberPosInform150_ptr CGuildSendMsg_GuildMemberPosInform150_next(nullptr);
+        static info::CGuildSendMsg_GuildMemberPosInform150_clbk CGuildSendMsg_GuildMemberPosInform150_user(nullptr);
+        static info::CGuildSendMsg_GuildOutputMoneyFail152_ptr CGuildSendMsg_GuildOutputMoneyFail152_next(nullptr);
+        static info::CGuildSendMsg_GuildOutputMoneyFail152_clbk CGuildSendMsg_GuildOutputMoneyFail152_user(nullptr);
+        static info::CGuildSendMsg_GuildRoomRented154_ptr CGuildSendMsg_GuildRoomRented154_next(nullptr);
+        static info::CGuildSendMsg_GuildRoomRented154_clbk CGuildSendMsg_GuildRoomRented154_user(nullptr);
+        static info::CGuildSendMsg_IOMoney156_ptr CGuildSendMsg_IOMoney156_next(nullptr);
+        static info::CGuildSendMsg_IOMoney156_clbk CGuildSendMsg_IOMoney156_user(nullptr);
+        static info::CGuildSendMsg_LeaveMember158_ptr CGuildSendMsg_LeaveMember158_next(nullptr);
+        static info::CGuildSendMsg_LeaveMember158_clbk CGuildSendMsg_LeaveMember158_user(nullptr);
+        static info::CGuildSendMsg_ManageGuildCommitteeResult160_ptr CGuildSendMsg_ManageGuildCommitteeResult160_next(nullptr);
+        static info::CGuildSendMsg_ManageGuildCommitteeResult160_clbk CGuildSendMsg_ManageGuildCommitteeResult160_user(nullptr);
+        static info::CGuildSendMsg_MasterElectPossible162_ptr CGuildSendMsg_MasterElectPossible162_next(nullptr);
+        static info::CGuildSendMsg_MasterElectPossible162_clbk CGuildSendMsg_MasterElectPossible162_user(nullptr);
+        static info::CGuildSendMsg_QueryPacket_Info164_ptr CGuildSendMsg_QueryPacket_Info164_next(nullptr);
+        static info::CGuildSendMsg_QueryPacket_Info164_clbk CGuildSendMsg_QueryPacket_Info164_user(nullptr);
+        static info::CGuildSendMsg_VoteCancelInform166_ptr CGuildSendMsg_VoteCancelInform166_next(nullptr);
+        static info::CGuildSendMsg_VoteCancelInform166_clbk CGuildSendMsg_VoteCancelInform166_user(nullptr);
+        static info::CGuildSendMsg_VoteComplete168_ptr CGuildSendMsg_VoteComplete168_next(nullptr);
+        static info::CGuildSendMsg_VoteComplete168_clbk CGuildSendMsg_VoteComplete168_user(nullptr);
+        static info::CGuildSendMsg_VoteProcessInform_Continue170_ptr CGuildSendMsg_VoteProcessInform_Continue170_next(nullptr);
+        static info::CGuildSendMsg_VoteProcessInform_Continue170_clbk CGuildSendMsg_VoteProcessInform_Continue170_user(nullptr);
+        static info::CGuildSendMsg_VoteProcessInform_Start172_ptr CGuildSendMsg_VoteProcessInform_Start172_next(nullptr);
+        static info::CGuildSendMsg_VoteProcessInform_Start172_clbk CGuildSendMsg_VoteProcessInform_Start172_user(nullptr);
+        static info::CGuildSendMsg_VoteState174_ptr CGuildSendMsg_VoteState174_next(nullptr);
+        static info::CGuildSendMsg_VoteState174_clbk CGuildSendMsg_VoteState174_user(nullptr);
+        static info::CGuildSendMsg_VoteStop176_ptr CGuildSendMsg_VoteStop176_next(nullptr);
+        static info::CGuildSendMsg_VoteStop176_clbk CGuildSendMsg_VoteStop176_user(nullptr);
+        static info::CGuildSetCopmlteGuildBattleSuggest178_ptr CGuildSetCopmlteGuildBattleSuggest178_next(nullptr);
+        static info::CGuildSetCopmlteGuildBattleSuggest178_clbk CGuildSetCopmlteGuildBattleSuggest178_user(nullptr);
+        static info::CGuildSetGreetingmsg_GUILD180_ptr CGuildSetGreetingmsg_GUILD180_next(nullptr);
+        static info::CGuildSetGreetingmsg_GUILD180_clbk CGuildSetGreetingmsg_GUILD180_user(nullptr);
+        static info::CGuildSetGuild182_ptr CGuildSetGuild182_next(nullptr);
+        static info::CGuildSetGuild182_clbk CGuildSetGuild182_user(nullptr);
+        static info::CGuildSetGuildBattleMatter184_ptr CGuildSetGuildBattleMatter184_next(nullptr);
+        static info::CGuildSetGuildBattleMatter184_clbk CGuildSetGuildBattleMatter184_user(nullptr);
+        static info::CGuildSetTemp186_ptr CGuildSetTemp186_next(nullptr);
+        static info::CGuildSetTemp186_clbk CGuildSetTemp186_user(nullptr);
+        static info::CGuildSortRankInGuild188_ptr CGuildSortRankInGuild188_next(nullptr);
+        static info::CGuildSortRankInGuild188_clbk CGuildSortRankInGuild188_user(nullptr);
+        static info::CGuildSrcGuildIsAvailableBattleRequestState190_ptr CGuildSrcGuildIsAvailableBattleRequestState190_next(nullptr);
+        static info::CGuildSrcGuildIsAvailableBattleRequestState190_clbk CGuildSrcGuildIsAvailableBattleRequestState190_user(nullptr);
+        static info::CGuildStartRankJob192_ptr CGuildStartRankJob192_next(nullptr);
+        static info::CGuildStartRankJob192_clbk CGuildStartRankJob192_user(nullptr);
+        static info::CGuildUpdateEmblem194_ptr CGuildUpdateEmblem194_next(nullptr);
+        static info::CGuildUpdateEmblem194_clbk CGuildUpdateEmblem194_user(nullptr);
+        static info::CGuildUpdateGrade196_ptr CGuildUpdateGrade196_next(nullptr);
+        static info::CGuildUpdateGrade196_clbk CGuildUpdateGrade196_user(nullptr);
+        static info::CGuildUpdateGuildBattleWinCnt198_ptr CGuildUpdateGuildBattleWinCnt198_next(nullptr);
+        static info::CGuildUpdateGuildBattleWinCnt198_clbk CGuildUpdateGuildBattleWinCnt198_user(nullptr);
+        static info::CGuildUpdateUTATax200_ptr CGuildUpdateUTATax200_next(nullptr);
+        static info::CGuildUpdateUTATax200_clbk CGuildUpdateUTATax200_user(nullptr);
+        static info::CGuilddtor_CGuild206_ptr CGuilddtor_CGuild206_next(nullptr);
+        static info::CGuilddtor_CGuild206_clbk CGuilddtor_CGuild206_user(nullptr);
         
-        bool CGuildActVote2_wrapper(struct CGuild* _this, struct _guild_member_info* pMemPtr, char byCode)
+        static bool CGuildActVote2_wrapper(struct CGuild* _this, struct _guild_member_info* pMemPtr, char byCode)
         {
            return CGuildActVote2_user(_this, pMemPtr, byCode, CGuildActVote2_next);
         };
-        void CGuildAddScheduleComplete4_wrapper(struct CGuild* _this, char byRet, struct CGuild* pSrcGuild)
+        static void CGuildAddScheduleComplete4_wrapper(struct CGuild* _this, char byRet, struct CGuild* pSrcGuild)
         {
            CGuildAddScheduleComplete4_user(_this, byRet, pSrcGuild, CGuildAddScheduleComplete4_next);
         };
-        void CGuildctor_CGuild6_wrapper(struct CGuild* _this)
+        static void CGuildctor_CGuild6_wrapper(struct CGuild* _this)
         {
            CGuildctor_CGuild6_user(_this, CGuildctor_CGuild6_next);
         };
-        void CGuildCancelSuggestedMatter8_wrapper(struct CGuild* _this)
+        static void CGuildCancelSuggestedMatter8_wrapper(struct CGuild* _this)
         {
            CGuildCancelSuggestedMatter8_user(_this, CGuildCancelSuggestedMatter8_next);
         };
-        char CGuildCheckGuildBattleSuggestRequestToDestGuild10_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
+        static char CGuildCheckGuildBattleSuggestRequestToDestGuild10_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
         {
            return CGuildCheckGuildBattleSuggestRequestToDestGuild10_user(_this, dwSrcGuildSerial, dwStartTimeInx, dwMemberCntInx, dwMapInx, CGuildCheckGuildBattleSuggestRequestToDestGuild10_next);
         };
-        void CGuildClearGuildBattle12_wrapper(struct CGuild* _this)
+        static void CGuildClearGuildBattle12_wrapper(struct CGuild* _this)
         {
            CGuildClearGuildBattle12_user(_this, CGuildClearGuildBattle12_next);
         };
-        void CGuildClearVote14_wrapper(struct CGuild* _this)
+        static void CGuildClearVote14_wrapper(struct CGuild* _this)
         {
            CGuildClearVote14_user(_this, CGuildClearVote14_next);
         };
-        void CGuildCompleteOutGuildbattleCost16_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
+        static void CGuildCompleteOutGuildbattleCost16_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
         {
            CGuildCompleteOutGuildbattleCost16_user(_this, dwSrcGuildSerial, dwStartTimeInx, dwMemberCntInx, dwMapInx, CGuildCompleteOutGuildbattleCost16_next);
         };
-        void CGuildCompleteSelectMasterLastConn18_wrapper(struct CGuild* _this, unsigned int dwLastConnTime)
+        static void CGuildCompleteSelectMasterLastConn18_wrapper(struct CGuild* _this, unsigned int dwLastConnTime)
         {
            CGuildCompleteSelectMasterLastConn18_user(_this, dwLastConnTime, CGuildCompleteSelectMasterLastConn18_next);
         };
-        void CGuildComplete_DB_Update_Committee20_wrapper(struct CGuild* _this, char* pData)
+        static void CGuildComplete_DB_Update_Committee20_wrapper(struct CGuild* _this, char* pData)
         {
            CGuildComplete_DB_Update_Committee20_user(_this, pData, CGuildComplete_DB_Update_Committee20_next);
         };
-        bool CGuildDB_Update_GuildMaster22_wrapper(struct CGuild* _this, struct _guild_member_info* pNewguildMaster)
+        static bool CGuildDB_Update_GuildMaster22_wrapper(struct CGuild* _this, struct _guild_member_info* pNewguildMaster)
         {
            return CGuildDB_Update_GuildMaster22_user(_this, pNewguildMaster, CGuildDB_Update_GuildMaster22_next);
         };
-        void CGuildDB_Update_GuildMaster_Complete24_wrapper(struct CGuild* _this, unsigned int in_guild_prev_masterSerial, char in_guild_prev_masterPrevGrade, unsigned int in_guild_new_masterSerial, char in_guild_new_masterPrevGrade)
+        static void CGuildDB_Update_GuildMaster_Complete24_wrapper(struct CGuild* _this, unsigned int in_guild_prev_masterSerial, char in_guild_prev_masterPrevGrade, unsigned int in_guild_new_masterSerial, char in_guild_new_masterPrevGrade)
         {
            CGuildDB_Update_GuildMaster_Complete24_user(_this, in_guild_prev_masterSerial, in_guild_prev_masterPrevGrade, in_guild_new_masterSerial, in_guild_new_masterPrevGrade, CGuildDB_Update_GuildMaster_Complete24_next);
         };
-        char CGuildDestGuildIsAvailableBattleRequestState26_wrapper(struct CGuild* _this)
+        static char CGuildDestGuildIsAvailableBattleRequestState26_wrapper(struct CGuild* _this)
         {
            return CGuildDestGuildIsAvailableBattleRequestState26_user(_this, CGuildDestGuildIsAvailableBattleRequestState26_next);
         };
-        void CGuildEndRankJob28_wrapper(struct CGuild* _this)
+        static void CGuildEndRankJob28_wrapper(struct CGuild* _this)
         {
            CGuildEndRankJob28_user(_this, CGuildEndRankJob28_next);
         };
-        void CGuildEstGuild30_wrapper(struct CGuild* _this, unsigned int dwSerial, char* pwszName, char byRace, int nMemberNum, struct _guild_member_info* pEstMember)
+        static void CGuildEstGuild30_wrapper(struct CGuild* _this, unsigned int dwSerial, char* pwszName, char byRace, int nMemberNum, struct _guild_member_info* pEstMember)
         {
            CGuildEstGuild30_user(_this, dwSerial, pwszName, byRace, nMemberNum, pEstMember, CGuildEstGuild30_next);
         };
-        void CGuildForceLeave32_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
+        static void CGuildForceLeave32_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
         {
            CGuildForceLeave32_user(_this, dwMemberSerial, CGuildForceLeave32_next);
         };
-        struct _guild_applier_info* CGuildGetApplierFromSerial34_wrapper(struct CGuild* _this, unsigned int dwApplierSerial)
+        static struct _guild_applier_info* CGuildGetApplierFromSerial34_wrapper(struct CGuild* _this, unsigned int dwApplierSerial)
         {
            return CGuildGetApplierFromSerial34_user(_this, dwApplierSerial, CGuildGetApplierFromSerial34_next);
         };
-        char CGuildGetGrade36_wrapper(struct CGuild* _this)
+        static char CGuildGetGrade36_wrapper(struct CGuild* _this)
         {
            return CGuildGetGrade36_user(_this, CGuildGetGrade36_next);
         };
-        char* CGuildGetGuildMasterName38_wrapper(struct CGuild* _this)
+        static char* CGuildGetGuildMasterName38_wrapper(struct CGuild* _this)
         {
            return CGuildGetGuildMasterName38_user(_this, CGuildGetGuildMasterName38_next);
         };
-        unsigned int CGuildGetGuildMasterSerial40_wrapper(struct CGuild* _this)
+        static unsigned int CGuildGetGuildMasterSerial40_wrapper(struct CGuild* _this)
         {
            return CGuildGetGuildMasterSerial40_user(_this, CGuildGetGuildMasterSerial40_next);
         };
-        struct _guild_member_info* CGuildGetMemberFromSerial42_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
+        static struct _guild_member_info* CGuildGetMemberFromSerial42_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
         {
            return CGuildGetMemberFromSerial42_user(_this, dwMemberSerial, CGuildGetMemberFromSerial42_next);
         };
-        int CGuildGetMemberNum44_wrapper(struct CGuild* _this)
+        static int CGuildGetMemberNum44_wrapper(struct CGuild* _this)
         {
            return CGuildGetMemberNum44_user(_this, CGuildGetMemberNum44_next);
         };
-        int CGuildGetMemberNumForJoin46_wrapper(struct CGuild* _this)
+        static int CGuildGetMemberNumForJoin46_wrapper(struct CGuild* _this)
         {
            return CGuildGetMemberNumForJoin46_user(_this, CGuildGetMemberNumForJoin46_next);
         };
-        char CGuildGetRace48_wrapper(struct CGuild* _this)
+        static char CGuildGetRace48_wrapper(struct CGuild* _this)
         {
            return CGuildGetRace48_user(_this, CGuildGetRace48_next);
         };
-        long double CGuildGetTotalDalant50_wrapper(struct CGuild* _this)
+        static long double CGuildGetTotalDalant50_wrapper(struct CGuild* _this)
         {
            return CGuildGetTotalDalant50_user(_this, CGuildGetTotalDalant50_next);
         };
-        long double CGuildGetTotalGold52_wrapper(struct CGuild* _this)
+        static long double CGuildGetTotalGold52_wrapper(struct CGuild* _this)
         {
            return CGuildGetTotalGold52_user(_this, CGuildGetTotalGold52_next);
         };
-        char CGuildGuildBattleSuggestRequestToDestGuild54_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
+        static char CGuildGuildBattleSuggestRequestToDestGuild54_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTimeInx, unsigned int dwMemberCntInx, unsigned int dwMapInx)
         {
            return CGuildGuildBattleSuggestRequestToDestGuild54_user(_this, dwSrcGuildSerial, dwStartTimeInx, dwMemberCntInx, dwMapInx, CGuildGuildBattleSuggestRequestToDestGuild54_next);
         };
-        void CGuildIOMoney56_wrapper(struct CGuild* _this, char* pwszIOerName, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, long double dTotalDalant, long double dTotalGold, char* pbyDate, bool bInPut)
+        static void CGuildIOMoney56_wrapper(struct CGuild* _this, char* pwszIOerName, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, long double dTotalDalant, long double dTotalGold, char* pbyDate, bool bInPut)
         {
            CGuildIOMoney56_user(_this, pwszIOerName, dwIOerSerial, dIODalant, dIOGold, dTotalDalant, dTotalGold, pbyDate, bInPut, CGuildIOMoney56_next);
         };
-        void CGuildInit58_wrapper(struct CGuild* _this, int nIndex)
+        static void CGuildInit58_wrapper(struct CGuild* _this, int nIndex)
         {
            CGuildInit58_user(_this, nIndex, CGuildInit58_next);
         };
-        void CGuildInitVote60_wrapper(struct CGuild* _this)
+        static void CGuildInitVote60_wrapper(struct CGuild* _this)
         {
            CGuildInitVote60_user(_this, CGuildInitVote60_next);
         };
-        bool CGuildIsFill62_wrapper(struct CGuild* _this)
+        static bool CGuildIsFill62_wrapper(struct CGuild* _this)
         {
            return CGuildIsFill62_user(_this, CGuildIsFill62_next);
         };
-        struct _guild_member_info* CGuildLoginMember64_wrapper(struct CGuild* _this, unsigned int dwMemberSerial, struct CPlayer* pPtr)
+        static struct _guild_member_info* CGuildLoginMember64_wrapper(struct CGuild* _this, unsigned int dwMemberSerial, struct CPlayer* pPtr)
         {
            return CGuildLoginMember64_user(_this, dwMemberSerial, pPtr, CGuildLoginMember64_next);
         };
-        bool CGuildLogoffMember66_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
+        static bool CGuildLogoffMember66_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
         {
            return CGuildLogoffMember66_user(_this, dwMemberSerial, CGuildLogoffMember66_next);
         };
-        void CGuildLoop68_wrapper(struct CGuild* _this, bool bChangeDay)
+        static void CGuildLoop68_wrapper(struct CGuild* _this, bool bChangeDay)
         {
            CGuildLoop68_user(_this, bChangeDay, CGuildLoop68_next);
         };
-        void CGuildMakeBuddyPacket70_wrapper(struct CGuild* _this)
+        static void CGuildMakeBuddyPacket70_wrapper(struct CGuild* _this)
         {
            CGuildMakeBuddyPacket70_user(_this, CGuildMakeBuddyPacket70_next);
         };
-        void CGuildMakeDownApplierPacket72_wrapper(struct CGuild* _this)
+        static void CGuildMakeDownApplierPacket72_wrapper(struct CGuild* _this)
         {
            CGuildMakeDownApplierPacket72_user(_this, CGuildMakeDownApplierPacket72_next);
         };
-        void CGuildMakeDownMemberPacket74_wrapper(struct CGuild* _this)
+        static void CGuildMakeDownMemberPacket74_wrapper(struct CGuild* _this)
         {
            CGuildMakeDownMemberPacket74_user(_this, CGuildMakeDownMemberPacket74_next);
         };
-        void CGuildMakeMoneyIOPacket76_wrapper(struct CGuild* _this)
+        static void CGuildMakeMoneyIOPacket76_wrapper(struct CGuild* _this)
         {
            CGuildMakeMoneyIOPacket76_user(_this, CGuildMakeMoneyIOPacket76_next);
         };
-        void CGuildMakeQueryInfoPacket78_wrapper(struct CGuild* _this)
+        static void CGuildMakeQueryInfoPacket78_wrapper(struct CGuild* _this)
         {
            CGuildMakeQueryInfoPacket78_user(_this, CGuildMakeQueryInfoPacket78_next);
         };
-        char CGuildManageAcceptORRefuseGuildBattle80_wrapper(struct CGuild* _this, bool bAccept)
+        static char CGuildManageAcceptORRefuseGuildBattle80_wrapper(struct CGuild* _this, bool bAccept)
         {
            return CGuildManageAcceptORRefuseGuildBattle80_user(_this, bAccept, CGuildManageAcceptORRefuseGuildBattle80_next);
         };
-        char CGuildManageBuyGuildEmblem82_wrapper(struct CGuild* _this, unsigned int dwBuyer, unsigned int dwBack, unsigned int dwMark)
+        static char CGuildManageBuyGuildEmblem82_wrapper(struct CGuild* _this, unsigned int dwBuyer, unsigned int dwBack, unsigned int dwMark)
         {
            return CGuildManageBuyGuildEmblem82_user(_this, dwBuyer, dwBack, dwMark, CGuildManageBuyGuildEmblem82_next);
         };
-        char CGuildManageExpulseMember84_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
+        static char CGuildManageExpulseMember84_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
         {
            return CGuildManageExpulseMember84_user(_this, dwMemberSerial, CGuildManageExpulseMember84_next);
         };
-        char CGuildManageGuildCommittee86_wrapper(struct CGuild* _this, unsigned int dwDestSerial, bool bAppoint)
+        static char CGuildManageGuildCommittee86_wrapper(struct CGuild* _this, unsigned int dwDestSerial, bool bAppoint)
         {
            return CGuildManageGuildCommittee86_user(_this, dwDestSerial, bAppoint, CGuildManageGuildCommittee86_next);
         };
-        char CGuildManagePopGuildMoney88_wrapper(struct CGuild* _this, unsigned int dwDest, unsigned int dwDalant, unsigned int dwGold)
+        static char CGuildManagePopGuildMoney88_wrapper(struct CGuild* _this, unsigned int dwDest, unsigned int dwDalant, unsigned int dwGold)
         {
            return CGuildManagePopGuildMoney88_user(_this, dwDest, dwDalant, dwGold, CGuildManagePopGuildMoney88_next);
         };
-        char CGuildManageProposeGuildBattle90_wrapper(struct CGuild* _this, unsigned int dwDestGuild, unsigned int dwStartTimeIdx, unsigned int dwMemberCountIdx, unsigned int dwMapIdx)
+        static char CGuildManageProposeGuildBattle90_wrapper(struct CGuild* _this, unsigned int dwDestGuild, unsigned int dwStartTimeIdx, unsigned int dwMemberCountIdx, unsigned int dwMapIdx)
         {
            return CGuildManageProposeGuildBattle90_user(_this, dwDestGuild, dwStartTimeIdx, dwMemberCountIdx, dwMapIdx, CGuildManageProposeGuildBattle90_next);
         };
-        bool CGuildPopApplier92_wrapper(struct CGuild* _this, unsigned int dwApplierSerial, char byDelCode)
+        static bool CGuildPopApplier92_wrapper(struct CGuild* _this, unsigned int dwApplierSerial, char byDelCode)
         {
            return CGuildPopApplier92_user(_this, dwApplierSerial, byDelCode, CGuildPopApplier92_next);
         };
-        bool CGuildPopMember94_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
+        static bool CGuildPopMember94_wrapper(struct CGuild* _this, unsigned int dwMemberSerial)
         {
            return CGuildPopMember94_user(_this, dwMemberSerial, CGuildPopMember94_next);
         };
-        bool CGuildPushApplier96_wrapper(struct CGuild* _this, struct CPlayer* pApplier)
+        static bool CGuildPushApplier96_wrapper(struct CGuild* _this, struct CPlayer* pApplier)
         {
            return CGuildPushApplier96_user(_this, pApplier, CGuildPushApplier96_next);
         };
-        void CGuildPushDQSDestGuildOutputGuildBattleCost98_wrapper(struct CGuild* _this)
+        static void CGuildPushDQSDestGuildOutputGuildBattleCost98_wrapper(struct CGuild* _this)
         {
            CGuildPushDQSDestGuildOutputGuildBattleCost98_user(_this, CGuildPushDQSDestGuildOutputGuildBattleCost98_next);
         };
-        void CGuildPushDQSGuildMasterLastConnn100_wrapper(struct CGuild* _this)
+        static void CGuildPushDQSGuildMasterLastConnn100_wrapper(struct CGuild* _this)
         {
            CGuildPushDQSGuildMasterLastConnn100_user(_this, CGuildPushDQSGuildMasterLastConnn100_next);
         };
-        void CGuildPushDQSInGuildBattleCost102_wrapper(struct CGuild* _this)
+        static void CGuildPushDQSInGuildBattleCost102_wrapper(struct CGuild* _this)
         {
            CGuildPushDQSInGuildBattleCost102_user(_this, CGuildPushDQSInGuildBattleCost102_next);
         };
-        void CGuildPushDQSInGuildBattleRewardMoney104_wrapper(struct CGuild* _this)
+        static void CGuildPushDQSInGuildBattleRewardMoney104_wrapper(struct CGuild* _this)
         {
            CGuildPushDQSInGuildBattleRewardMoney104_user(_this, CGuildPushDQSInGuildBattleRewardMoney104_next);
         };
-        void CGuildPushDQSSourceGuildOutputGuildBattleCost106_wrapper(struct CGuild* _this)
+        static void CGuildPushDQSSourceGuildOutputGuildBattleCost106_wrapper(struct CGuild* _this)
         {
            CGuildPushDQSSourceGuildOutputGuildBattleCost106_user(_this, CGuildPushDQSSourceGuildOutputGuildBattleCost106_next);
         };
-        void CGuildPushHistory_IOMoney108_wrapper(struct CGuild* _this, bool bInput, char* pwszIOerName, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, long double dLeftDalant, long double dLeftGold, char* pbyDate)
+        static void CGuildPushHistory_IOMoney108_wrapper(struct CGuild* _this, bool bInput, char* pwszIOerName, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, long double dLeftDalant, long double dLeftGold, char* pbyDate)
         {
            CGuildPushHistory_IOMoney108_user(_this, bInput, pwszIOerName, dwIOerSerial, dIODalant, dIOGold, dLeftDalant, dLeftGold, pbyDate, CGuildPushHistory_IOMoney108_next);
         };
-        struct _guild_member_info* CGuildPushMember110_wrapper(struct CGuild* _this, struct _guild_member_info* pSheet)
+        static struct _guild_member_info* CGuildPushMember110_wrapper(struct CGuild* _this, struct _guild_member_info* pSheet)
         {
            return CGuildPushMember110_user(_this, pSheet, CGuildPushMember110_next);
         };
-        void CGuildRefreshGuildMemberData112_wrapper(struct CGuild* _this, struct _guild_member_refresh_data* pRefreshMember)
+        static void CGuildRefreshGuildMemberData112_wrapper(struct CGuild* _this, struct _guild_member_refresh_data* pRefreshMember)
         {
            CGuildRefreshGuildMemberData112_user(_this, pRefreshMember, CGuildRefreshGuildMemberData112_next);
         };
-        bool CGuildRegSuggestedMatter114_wrapper(struct CGuild* _this, unsigned int dwSuggesterSerial, char byMatterType, unsigned int dwMatterDst, char* pwszComment, unsigned int dwMatterObj1, unsigned int dwMatterObj2, unsigned int dwMatterObj3)
+        static bool CGuildRegSuggestedMatter114_wrapper(struct CGuild* _this, unsigned int dwSuggesterSerial, char byMatterType, unsigned int dwMatterDst, char* pwszComment, unsigned int dwMatterObj1, unsigned int dwMatterObj2, unsigned int dwMatterObj3)
         {
            return CGuildRegSuggestedMatter114_user(_this, dwSuggesterSerial, byMatterType, dwMatterDst, pwszComment, dwMatterObj1, dwMatterObj2, dwMatterObj3, CGuildRegSuggestedMatter114_next);
         };
-        void CGuildRelease116_wrapper(struct CGuild* _this)
+        static void CGuildRelease116_wrapper(struct CGuild* _this)
         {
            CGuildRelease116_user(_this, CGuildRelease116_next);
         };
-        void CGuildReleaseTemp118_wrapper(struct CGuild* _this)
+        static void CGuildReleaseTemp118_wrapper(struct CGuild* _this)
         {
            CGuildReleaseTemp118_user(_this, CGuildReleaseTemp118_next);
         };
-        void CGuildSendMsg_AddJoinApplier120_wrapper(struct CGuild* _this, struct _guild_applier_info* p)
+        static void CGuildSendMsg_AddJoinApplier120_wrapper(struct CGuild* _this, struct _guild_applier_info* p)
         {
            CGuildSendMsg_AddJoinApplier120_user(_this, p, CGuildSendMsg_AddJoinApplier120_next);
         };
-        void CGuildSendMsg_AlterMemberGrade122_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_AlterMemberGrade122_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_AlterMemberGrade122_user(_this, CGuildSendMsg_AlterMemberGrade122_next);
         };
-        void CGuildSendMsg_AlterMemberState124_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_AlterMemberState124_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_AlterMemberState124_user(_this, CGuildSendMsg_AlterMemberState124_next);
         };
-        void CGuildSendMsg_ApplyGuildBattleResultInform126_wrapper(struct CGuild* _this, char byRet, char* wszDestGuildName)
+        static void CGuildSendMsg_ApplyGuildBattleResultInform126_wrapper(struct CGuild* _this, char byRet, char* wszDestGuildName)
         {
            CGuildSendMsg_ApplyGuildBattleResultInform126_user(_this, byRet, wszDestGuildName, CGuildSendMsg_ApplyGuildBattleResultInform126_next);
         };
-        void CGuildSendMsg_ChangeTaxRate128_wrapper(struct CGuild* _this, char byTax)
+        static void CGuildSendMsg_ChangeTaxRate128_wrapper(struct CGuild* _this, char byTax)
         {
            CGuildSendMsg_ChangeTaxRate128_user(_this, byTax, CGuildSendMsg_ChangeTaxRate128_next);
         };
-        void CGuildSendMsg_DelJoinApplier130_wrapper(struct CGuild* _this, struct _guild_applier_info* p, char byDelCode)
+        static void CGuildSendMsg_DelJoinApplier130_wrapper(struct CGuild* _this, struct _guild_applier_info* p, char byDelCode)
         {
            CGuildSendMsg_DelJoinApplier130_user(_this, p, byDelCode, CGuildSendMsg_DelJoinApplier130_next);
         };
-        void CGuildSendMsg_DownPacket132_wrapper(struct CGuild* _this, char bDowntype, struct _guild_member_info* pMem)
+        static void CGuildSendMsg_DownPacket132_wrapper(struct CGuild* _this, char bDowntype, struct _guild_member_info* pMem)
         {
            CGuildSendMsg_DownPacket132_user(_this, bDowntype, pMem, CGuildSendMsg_DownPacket132_next);
         };
-        int CGuildSendMsg_GuildBattleProposed134_wrapper(struct CGuild* _this, char* pwszName)
+        static int CGuildSendMsg_GuildBattleProposed134_wrapper(struct CGuild* _this, char* pwszName)
         {
            return CGuildSendMsg_GuildBattleProposed134_user(_this, pwszName, CGuildSendMsg_GuildBattleProposed134_next);
         };
-        void CGuildSendMsg_GuildBattleRefused136_wrapper(struct CGuild* _this, char* pwszName)
+        static void CGuildSendMsg_GuildBattleRefused136_wrapper(struct CGuild* _this, char* pwszName)
         {
            CGuildSendMsg_GuildBattleRefused136_user(_this, pwszName, CGuildSendMsg_GuildBattleRefused136_next);
         };
-        void CGuildSendMsg_GuildBattleSuggestResult138_wrapper(struct CGuild* _this, char byRet, char* wszDestGuildName)
+        static void CGuildSendMsg_GuildBattleSuggestResult138_wrapper(struct CGuild* _this, char byRet, char* wszDestGuildName)
         {
            CGuildSendMsg_GuildBattleSuggestResult138_user(_this, byRet, wszDestGuildName, CGuildSendMsg_GuildBattleSuggestResult138_next);
         };
-        void CGuildSendMsg_GuildDisjointInform140_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_GuildDisjointInform140_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_GuildDisjointInform140_user(_this, CGuildSendMsg_GuildDisjointInform140_next);
         };
-        void CGuildSendMsg_GuildInfoUpdateInform142_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_GuildInfoUpdateInform142_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_GuildInfoUpdateInform142_user(_this, CGuildSendMsg_GuildInfoUpdateInform142_next);
         };
-        void CGuildSendMsg_GuildJoinAcceptInform144_wrapper(struct CGuild* _this, struct _guild_member_info* p, unsigned int dwAcceptSerial)
+        static void CGuildSendMsg_GuildJoinAcceptInform144_wrapper(struct CGuild* _this, struct _guild_member_info* p, unsigned int dwAcceptSerial)
         {
            CGuildSendMsg_GuildJoinAcceptInform144_user(_this, p, dwAcceptSerial, CGuildSendMsg_GuildJoinAcceptInform144_next);
         };
-        void CGuildSendMsg_GuildMemberLogin146_wrapper(struct CGuild* _this, unsigned int dwSerial, uint16_t wMapCode, uint16_t wRegionIndex)
+        static void CGuildSendMsg_GuildMemberLogin146_wrapper(struct CGuild* _this, unsigned int dwSerial, uint16_t wMapCode, uint16_t wRegionIndex)
         {
            CGuildSendMsg_GuildMemberLogin146_user(_this, dwSerial, wMapCode, wRegionIndex, CGuildSendMsg_GuildMemberLogin146_next);
         };
-        void CGuildSendMsg_GuildMemberLogoff148_wrapper(struct CGuild* _this, unsigned int dwSerial)
+        static void CGuildSendMsg_GuildMemberLogoff148_wrapper(struct CGuild* _this, unsigned int dwSerial)
         {
            CGuildSendMsg_GuildMemberLogoff148_user(_this, dwSerial, CGuildSendMsg_GuildMemberLogoff148_next);
         };
-        void CGuildSendMsg_GuildMemberPosInform150_wrapper(struct CGuild* _this, unsigned int dwSerial, uint16_t wMapCode, uint16_t wRegionIndex)
+        static void CGuildSendMsg_GuildMemberPosInform150_wrapper(struct CGuild* _this, unsigned int dwSerial, uint16_t wMapCode, uint16_t wRegionIndex)
         {
            CGuildSendMsg_GuildMemberPosInform150_user(_this, dwSerial, wMapCode, wRegionIndex, CGuildSendMsg_GuildMemberPosInform150_next);
         };
-        void CGuildSendMsg_GuildOutputMoneyFail152_wrapper(struct CGuild* _this, unsigned int dwIOerSerial)
+        static void CGuildSendMsg_GuildOutputMoneyFail152_wrapper(struct CGuild* _this, unsigned int dwIOerSerial)
         {
            CGuildSendMsg_GuildOutputMoneyFail152_user(_this, dwIOerSerial, CGuildSendMsg_GuildOutputMoneyFail152_next);
         };
-        void CGuildSendMsg_GuildRoomRented154_wrapper(struct CGuild* _this, char byRoomType)
+        static void CGuildSendMsg_GuildRoomRented154_wrapper(struct CGuild* _this, char byRoomType)
         {
            CGuildSendMsg_GuildRoomRented154_user(_this, byRoomType, CGuildSendMsg_GuildRoomRented154_next);
         };
-        void CGuildSendMsg_IOMoney156_wrapper(struct CGuild* _this, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, bool bInPut, char* pbyDate)
+        static void CGuildSendMsg_IOMoney156_wrapper(struct CGuild* _this, unsigned int dwIOerSerial, long double dIODalant, long double dIOGold, bool bInPut, char* pbyDate)
         {
            CGuildSendMsg_IOMoney156_user(_this, dwIOerSerial, dIODalant, dIOGold, bInPut, pbyDate, CGuildSendMsg_IOMoney156_next);
         };
-        void CGuildSendMsg_LeaveMember158_wrapper(struct CGuild* _this, unsigned int dwMemberSerial, bool bSelf, bool bPunish)
+        static void CGuildSendMsg_LeaveMember158_wrapper(struct CGuild* _this, unsigned int dwMemberSerial, bool bSelf, bool bPunish)
         {
            CGuildSendMsg_LeaveMember158_user(_this, dwMemberSerial, bSelf, bPunish, CGuildSendMsg_LeaveMember158_next);
         };
-        void CGuildSendMsg_ManageGuildCommitteeResult160_wrapper(struct CGuild* _this, bool bAppoint, char* pwszCommitteeName)
+        static void CGuildSendMsg_ManageGuildCommitteeResult160_wrapper(struct CGuild* _this, bool bAppoint, char* pwszCommitteeName)
         {
            CGuildSendMsg_ManageGuildCommitteeResult160_user(_this, bAppoint, pwszCommitteeName, CGuildSendMsg_ManageGuildCommitteeResult160_next);
         };
-        void CGuildSendMsg_MasterElectPossible162_wrapper(struct CGuild* _this, bool bPossible)
+        static void CGuildSendMsg_MasterElectPossible162_wrapper(struct CGuild* _this, bool bPossible)
         {
            CGuildSendMsg_MasterElectPossible162_user(_this, bPossible, CGuildSendMsg_MasterElectPossible162_next);
         };
-        void CGuildSendMsg_QueryPacket_Info164_wrapper(struct CGuild* _this, int n)
+        static void CGuildSendMsg_QueryPacket_Info164_wrapper(struct CGuild* _this, int n)
         {
            CGuildSendMsg_QueryPacket_Info164_user(_this, n, CGuildSendMsg_QueryPacket_Info164_next);
         };
-        void CGuildSendMsg_VoteCancelInform166_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_VoteCancelInform166_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_VoteCancelInform166_user(_this, CGuildSendMsg_VoteCancelInform166_next);
         };
-        void CGuildSendMsg_VoteComplete168_wrapper(struct CGuild* _this, bool bPass)
+        static void CGuildSendMsg_VoteComplete168_wrapper(struct CGuild* _this, bool bPass)
         {
            CGuildSendMsg_VoteComplete168_user(_this, bPass, CGuildSendMsg_VoteComplete168_next);
         };
-        void CGuildSendMsg_VoteProcessInform_Continue170_wrapper(struct CGuild* _this, struct _guild_member_info* pMem)
+        static void CGuildSendMsg_VoteProcessInform_Continue170_wrapper(struct CGuild* _this, struct _guild_member_info* pMem)
         {
            CGuildSendMsg_VoteProcessInform_Continue170_user(_this, pMem, CGuildSendMsg_VoteProcessInform_Continue170_next);
         };
-        void CGuildSendMsg_VoteProcessInform_Start172_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_VoteProcessInform_Start172_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_VoteProcessInform_Start172_user(_this, CGuildSendMsg_VoteProcessInform_Start172_next);
         };
-        void CGuildSendMsg_VoteState174_wrapper(struct CGuild* _this)
+        static void CGuildSendMsg_VoteState174_wrapper(struct CGuild* _this)
         {
            CGuildSendMsg_VoteState174_user(_this, CGuildSendMsg_VoteState174_next);
         };
-        void CGuildSendMsg_VoteStop176_wrapper(struct CGuild* _this, unsigned int dwMatterVoteSynKey)
+        static void CGuildSendMsg_VoteStop176_wrapper(struct CGuild* _this, unsigned int dwMatterVoteSynKey)
         {
            CGuildSendMsg_VoteStop176_user(_this, dwMatterVoteSynKey, CGuildSendMsg_VoteStop176_next);
         };
-        void CGuildSetCopmlteGuildBattleSuggest178_wrapper(struct CGuild* _this)
+        static void CGuildSetCopmlteGuildBattleSuggest178_wrapper(struct CGuild* _this)
         {
            CGuildSetCopmlteGuildBattleSuggest178_user(_this, CGuildSetCopmlteGuildBattleSuggest178_next);
         };
-        void CGuildSetGreetingmsg_GUILD180_wrapper(struct CGuild* _this, char* wszgreetmsg)
+        static void CGuildSetGreetingmsg_GUILD180_wrapper(struct CGuild* _this, char* wszgreetmsg)
         {
            CGuildSetGreetingmsg_GUILD180_user(_this, wszgreetmsg, CGuildSetGreetingmsg_GUILD180_next);
         };
-        void CGuildSetGuild182_wrapper(struct CGuild* _this, unsigned int dwSerial, char byGrade, char byRace, char* pwszName, char* pwszGreetingMsg, unsigned int dwEmblemBack, unsigned int dwEmblemMark, int nNum, struct _guild_member_info* pEstMember, long double dTotalDalant, long double dTotalGold, unsigned int dwMasterSerial, char byMasterPrevGrade, int nIOMoneyHisNum, struct _io_money_data* pIOMonHisList, unsigned int dwGuildBattleTotalWinCnt, unsigned int dwGuildBattleTotalDrawCnt, unsigned int dwGuildBattleTotalLoseCnt)
+        static void CGuildSetGuild182_wrapper(struct CGuild* _this, unsigned int dwSerial, char byGrade, char byRace, char* pwszName, char* pwszGreetingMsg, unsigned int dwEmblemBack, unsigned int dwEmblemMark, int nNum, struct _guild_member_info* pEstMember, long double dTotalDalant, long double dTotalGold, unsigned int dwMasterSerial, char byMasterPrevGrade, int nIOMoneyHisNum, struct _io_money_data* pIOMonHisList, unsigned int dwGuildBattleTotalWinCnt, unsigned int dwGuildBattleTotalDrawCnt, unsigned int dwGuildBattleTotalLoseCnt)
         {
            CGuildSetGuild182_user(_this, dwSerial, byGrade, byRace, pwszName, pwszGreetingMsg, dwEmblemBack, dwEmblemMark, nNum, pEstMember, dTotalDalant, dTotalGold, dwMasterSerial, byMasterPrevGrade, nIOMoneyHisNum, pIOMonHisList, dwGuildBattleTotalWinCnt, dwGuildBattleTotalDrawCnt, dwGuildBattleTotalLoseCnt, CGuildSetGuild182_next);
         };
-        void CGuildSetGuildBattleMatter184_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTime, unsigned int dwNumber, unsigned int dwMapIdx)
+        static void CGuildSetGuildBattleMatter184_wrapper(struct CGuild* _this, unsigned int dwSrcGuildSerial, unsigned int dwStartTime, unsigned int dwNumber, unsigned int dwMapIdx)
         {
            CGuildSetGuildBattleMatter184_user(_this, dwSrcGuildSerial, dwStartTime, dwNumber, dwMapIdx, CGuildSetGuildBattleMatter184_next);
         };
-        void CGuildSetTemp186_wrapper(struct CGuild* _this, char* pwszName)
+        static void CGuildSetTemp186_wrapper(struct CGuild* _this, char* pwszName)
         {
            CGuildSetTemp186_user(_this, pwszName, CGuildSetTemp186_next);
         };
-        void CGuildSortRankInGuild188_wrapper(struct CGuild* _this)
+        static void CGuildSortRankInGuild188_wrapper(struct CGuild* _this)
         {
            CGuildSortRankInGuild188_user(_this, CGuildSortRankInGuild188_next);
         };
-        char CGuildSrcGuildIsAvailableBattleRequestState190_wrapper(struct CGuild* _this)
+        static char CGuildSrcGuildIsAvailableBattleRequestState190_wrapper(struct CGuild* _this)
         {
            return CGuildSrcGuildIsAvailableBattleRequestState190_user(_this, CGuildSrcGuildIsAvailableBattleRequestState190_next);
         };
-        void CGuildStartRankJob192_wrapper(struct CGuild* _this)
+        static void CGuildStartRankJob192_wrapper(struct CGuild* _this)
         {
            CGuildStartRankJob192_user(_this, CGuildStartRankJob192_next);
         };
-        void CGuildUpdateEmblem194_wrapper(struct CGuild* _this, unsigned int dwEmblemBack, unsigned int dwEmblemMark)
+        static void CGuildUpdateEmblem194_wrapper(struct CGuild* _this, unsigned int dwEmblemBack, unsigned int dwEmblemMark)
         {
            CGuildUpdateEmblem194_user(_this, dwEmblemBack, dwEmblemMark, CGuildUpdateEmblem194_next);
         };
-        void CGuildUpdateGrade196_wrapper(struct CGuild* _this, char byGrade)
+        static void CGuildUpdateGrade196_wrapper(struct CGuild* _this, char byGrade)
         {
            CGuildUpdateGrade196_user(_this, byGrade, CGuildUpdateGrade196_next);
         };
-        void CGuildUpdateGuildBattleWinCnt198_wrapper(struct CGuild* _this, unsigned int dwTotWin, unsigned int dwTotDraw, unsigned int dwTotLose)
+        static void CGuildUpdateGuildBattleWinCnt198_wrapper(struct CGuild* _this, unsigned int dwTotWin, unsigned int dwTotDraw, unsigned int dwTotLose)
         {
            CGuildUpdateGuildBattleWinCnt198_user(_this, dwTotWin, dwTotDraw, dwTotLose, CGuildUpdateGuildBattleWinCnt198_next);
         };
-        void CGuildUpdateUTATax200_wrapper(struct CGuild* _this, char byTaxRate)
+        static void CGuildUpdateUTATax200_wrapper(struct CGuild* _this, char byTaxRate)
         {
            CGuildUpdateUTATax200_user(_this, byTaxRate, CGuildUpdateUTATax200_next);
         };
-        void CGuilddtor_CGuild206_wrapper(struct CGuild* _this)
+        static void CGuilddtor_CGuild206_wrapper(struct CGuild* _this)
         {
            CGuilddtor_CGuild206_user(_this, CGuilddtor_CGuild206_next);
         };
         
-        hook_record CGuild_functions[] = {
+        static hook_record CGuild_functions[] = {
         {   (LPVOID)0x140254180L,
             (LPVOID *)&CGuildActVote2_user,
             (LPVOID *)&CGuildActVote2_next,
@@ -1125,5 +1125,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMsgDatactor_CMsgData2_ptr CMsgDatactor_CMsgData2_next(nullptr);
-        info::CMsgDatactor_CMsgData2_clbk CMsgDatactor_CMsgData2_user(nullptr);
-        info::CMsgDatactor_CMsgData4_ptr CMsgDatactor_CMsgData4_next(nullptr);
-        info::CMsgDatactor_CMsgData4_clbk CMsgDatactor_CMsgData4_user(nullptr);
-        info::CMsgDataInit6_ptr CMsgDataInit6_next(nullptr);
-        info::CMsgDataInit6_clbk CMsgDataInit6_user(nullptr);
-        info::CMsgDataPackingMsg8_ptr CMsgDataPackingMsg8_next(nullptr);
-        info::CMsgDataPackingMsg8_clbk CMsgDataPackingMsg8_user(nullptr);
-        info::CMsgDataPopEmptyBuf10_ptr CMsgDataPopEmptyBuf10_next(nullptr);
-        info::CMsgDataPopEmptyBuf10_clbk CMsgDataPopEmptyBuf10_user(nullptr);
-        info::CMsgDataPopMsg12_ptr CMsgDataPopMsg12_next(nullptr);
-        info::CMsgDataPopMsg12_clbk CMsgDataPopMsg12_user(nullptr);
-        info::CMsgDataProcessMessage14_ptr CMsgDataProcessMessage14_next(nullptr);
-        info::CMsgDataProcessMessage14_clbk CMsgDataProcessMessage14_user(nullptr);
-        info::CMsgDataPumpMsgList16_ptr CMsgDataPumpMsgList16_next(nullptr);
-        info::CMsgDataPumpMsgList16_clbk CMsgDataPumpMsgList16_user(nullptr);
-        info::CMsgDataPushEmptyBuf18_ptr CMsgDataPushEmptyBuf18_next(nullptr);
-        info::CMsgDataPushEmptyBuf18_clbk CMsgDataPushEmptyBuf18_user(nullptr);
-        info::CMsgDataPushMsg20_ptr CMsgDataPushMsg20_next(nullptr);
-        info::CMsgDataPushMsg20_clbk CMsgDataPushMsg20_user(nullptr);
-        info::CMsgDatadtor_CMsgData25_ptr CMsgDatadtor_CMsgData25_next(nullptr);
-        info::CMsgDatadtor_CMsgData25_clbk CMsgDatadtor_CMsgData25_user(nullptr);
+        static info::CMsgDatactor_CMsgData2_ptr CMsgDatactor_CMsgData2_next(nullptr);
+        static info::CMsgDatactor_CMsgData2_clbk CMsgDatactor_CMsgData2_user(nullptr);
+        static info::CMsgDatactor_CMsgData4_ptr CMsgDatactor_CMsgData4_next(nullptr);
+        static info::CMsgDatactor_CMsgData4_clbk CMsgDatactor_CMsgData4_user(nullptr);
+        static info::CMsgDataInit6_ptr CMsgDataInit6_next(nullptr);
+        static info::CMsgDataInit6_clbk CMsgDataInit6_user(nullptr);
+        static info::CMsgDataPackingMsg8_ptr CMsgDataPackingMsg8_next(nullptr);
+        static info::CMsgDataPackingMsg8_clbk CMsgDataPackingMsg8_user(nullptr);
+        static info::CMsgDataPopEmptyBuf10_ptr CMsgDataPopEmptyBuf10_next(nullptr);
+        static info::CMsgDataPopEmptyBuf10_clbk CMsgDataPopEmptyBuf10_user(nullptr);
+        static info::CMsgDataPopMsg12_ptr CMsgDataPopMsg12_next(nullptr);
+        static info::CMsgDataPopMsg12_clbk CMsgDataPopMsg12_user(nullptr);
+        static info::CMsgDataProcessMessage14_ptr CMsgDataProcessMessage14_next(nullptr);
+        static info::CMsgDataProcessMessage14_clbk CMsgDataProcessMessage14_user(nullptr);
+        static info::CMsgDataPumpMsgList16_ptr CMsgDataPumpMsgList16_next(nullptr);
+        static info::CMsgDataPumpMsgList16_clbk CMsgDataPumpMsgList16_user(nullptr);
+        static info::CMsgDataPushEmptyBuf18_ptr CMsgDataPushEmptyBuf18_next(nullptr);
+        static info::CMsgDataPushEmptyBuf18_clbk CMsgDataPushEmptyBuf18_user(nullptr);
+        static info::CMsgDataPushMsg20_ptr CMsgDataPushMsg20_next(nullptr);
+        static info::CMsgDataPushMsg20_clbk CMsgDataPushMsg20_user(nullptr);
+        static info::CMsgDatadtor_CMsgData25_ptr CMsgDatadtor_CMsgData25_next(nullptr);
+        static info::CMsgDatadtor_CMsgData25_clbk CMsgDatadtor_CMsgData25_user(nullptr);
         
-        void CMsgDatactor_CMsgData2_wrapper(struct CMsgData* _this, int nObjNum)
+        static void CMsgDatactor_CMsgData2_wrapper(struct CMsgData* _this, int nObjNum)
         {
            CMsgDatactor_CMsgData2_user(_this, nObjNum, CMsgDatactor_CMsgData2_next);
         };
-        void CMsgDatactor_CMsgData4_wrapper(struct CMsgData* _this)
+        static void CMsgDatactor_CMsgData4_wrapper(struct CMsgData* _this)
         {
            CMsgDatactor_CMsgData4_user(_this, CMsgDatactor_CMsgData4_next);
         };
-        void CMsgDataInit6_wrapper(struct CMsgData* _this, int nObjNum)
+        static void CMsgDataInit6_wrapper(struct CMsgData* _this, int nObjNum)
         {
            CMsgDataInit6_user(_this, nObjNum, CMsgDataInit6_next);
         };
-        bool CMsgDataPackingMsg8_wrapper(struct CMsgData* _this, unsigned int dwMessage, unsigned int dwKey1, unsigned int dwKey2, unsigned int dwKey3)
+        static bool CMsgDataPackingMsg8_wrapper(struct CMsgData* _this, unsigned int dwMessage, unsigned int dwKey1, unsigned int dwKey2, unsigned int dwKey3)
         {
            return CMsgDataPackingMsg8_user(_this, dwMessage, dwKey1, dwKey2, dwKey3, CMsgDataPackingMsg8_next);
         };
-        struct _message* CMsgDataPopEmptyBuf10_wrapper(struct CMsgData* _this)
+        static struct _message* CMsgDataPopEmptyBuf10_wrapper(struct CMsgData* _this)
         {
            return CMsgDataPopEmptyBuf10_user(_this, CMsgDataPopEmptyBuf10_next);
         };
-        struct _message* CMsgDataPopMsg12_wrapper(struct CMsgData* _this)
+        static struct _message* CMsgDataPopMsg12_wrapper(struct CMsgData* _this)
         {
            return CMsgDataPopMsg12_user(_this, CMsgDataPopMsg12_next);
         };
-        void CMsgDataProcessMessage14_wrapper(struct CMsgData* _this, struct _message* pMsg)
+        static void CMsgDataProcessMessage14_wrapper(struct CMsgData* _this, struct _message* pMsg)
         {
            CMsgDataProcessMessage14_user(_this, pMsg, CMsgDataProcessMessage14_next);
         };
-        void CMsgDataPumpMsgList16_wrapper(struct CMsgData* _this)
+        static void CMsgDataPumpMsgList16_wrapper(struct CMsgData* _this)
         {
            CMsgDataPumpMsgList16_user(_this, CMsgDataPumpMsgList16_next);
         };
-        void CMsgDataPushEmptyBuf18_wrapper(struct CMsgData* _this, struct _message* pMsg)
+        static void CMsgDataPushEmptyBuf18_wrapper(struct CMsgData* _this, struct _message* pMsg)
         {
            CMsgDataPushEmptyBuf18_user(_this, pMsg, CMsgDataPushEmptyBuf18_next);
         };
-        void CMsgDataPushMsg20_wrapper(struct CMsgData* _this, struct _message* pMsg)
+        static void CMsgDataPushMsg20_wrapper(struct CMsgData* _this, struct _message* pMsg)
         {
            CMsgDataPushMsg20_user(_this, pMsg, CMsgDataPushMsg20_next);
         };
-        void CMsgDatadtor_CMsgData25_wrapper(struct CMsgData* _this)
+        static void CMsgDatadtor_CMsgData25_wrapper(struct CMsgData* _this)
         {
            CMsgDatadtor_CMsgData25_user(_this, CMsgDatadtor_CMsgData25_next);
         };
         
-        hook_record CMsgData_functions[] = {
+        static hook_record CMsgData_functions[] = {
         {   (LPVOID)0x1404377d0L,
             (LPVOID *)&CMsgDatactor_CMsgData2_user,
             (LPVOID *)&CMsgDatactor_CMsgData2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

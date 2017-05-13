@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_WEAPON_PARAMFixUnit2_ptr _WEAPON_PARAMFixUnit2_next(nullptr);
-        info::_WEAPON_PARAMFixUnit2_clbk _WEAPON_PARAMFixUnit2_user(nullptr);
-        info::_WEAPON_PARAMFixWeapon4_ptr _WEAPON_PARAMFixWeapon4_next(nullptr);
-        info::_WEAPON_PARAMFixWeapon4_clbk _WEAPON_PARAMFixWeapon4_user(nullptr);
-        info::_WEAPON_PARAMGetAttackDelay6_ptr _WEAPON_PARAMGetAttackDelay6_next(nullptr);
-        info::_WEAPON_PARAMGetAttackDelay6_clbk _WEAPON_PARAMGetAttackDelay6_user(nullptr);
-        info::_WEAPON_PARAMGetAttackToolType8_ptr _WEAPON_PARAMGetAttackToolType8_next(nullptr);
-        info::_WEAPON_PARAMGetAttackToolType8_clbk _WEAPON_PARAMGetAttackToolType8_user(nullptr);
-        info::_WEAPON_PARAMGetWeaponTolType10_ptr _WEAPON_PARAMGetWeaponTolType10_next(nullptr);
-        info::_WEAPON_PARAMGetWeaponTolType10_clbk _WEAPON_PARAMGetWeaponTolType10_user(nullptr);
-        info::_WEAPON_PARAMInit12_ptr _WEAPON_PARAMInit12_next(nullptr);
-        info::_WEAPON_PARAMInit12_clbk _WEAPON_PARAMInit12_user(nullptr);
-        info::_WEAPON_PARAMSetStaticMember14_ptr _WEAPON_PARAMSetStaticMember14_next(nullptr);
-        info::_WEAPON_PARAMSetStaticMember14_clbk _WEAPON_PARAMSetStaticMember14_user(nullptr);
+        static info::_WEAPON_PARAMFixUnit2_ptr _WEAPON_PARAMFixUnit2_next(nullptr);
+        static info::_WEAPON_PARAMFixUnit2_clbk _WEAPON_PARAMFixUnit2_user(nullptr);
+        static info::_WEAPON_PARAMFixWeapon4_ptr _WEAPON_PARAMFixWeapon4_next(nullptr);
+        static info::_WEAPON_PARAMFixWeapon4_clbk _WEAPON_PARAMFixWeapon4_user(nullptr);
+        static info::_WEAPON_PARAMGetAttackDelay6_ptr _WEAPON_PARAMGetAttackDelay6_next(nullptr);
+        static info::_WEAPON_PARAMGetAttackDelay6_clbk _WEAPON_PARAMGetAttackDelay6_user(nullptr);
+        static info::_WEAPON_PARAMGetAttackToolType8_ptr _WEAPON_PARAMGetAttackToolType8_next(nullptr);
+        static info::_WEAPON_PARAMGetAttackToolType8_clbk _WEAPON_PARAMGetAttackToolType8_user(nullptr);
+        static info::_WEAPON_PARAMGetWeaponTolType10_ptr _WEAPON_PARAMGetWeaponTolType10_next(nullptr);
+        static info::_WEAPON_PARAMGetWeaponTolType10_clbk _WEAPON_PARAMGetWeaponTolType10_user(nullptr);
+        static info::_WEAPON_PARAMInit12_ptr _WEAPON_PARAMInit12_next(nullptr);
+        static info::_WEAPON_PARAMInit12_clbk _WEAPON_PARAMInit12_user(nullptr);
+        static info::_WEAPON_PARAMSetStaticMember14_ptr _WEAPON_PARAMSetStaticMember14_next(nullptr);
+        static info::_WEAPON_PARAMSetStaticMember14_clbk _WEAPON_PARAMSetStaticMember14_user(nullptr);
         
-        void _WEAPON_PARAMFixUnit2_wrapper(struct _WEAPON_PARAM* _this, struct _UNIT_DB_BASE::_LIST* pUnit)
+        static void _WEAPON_PARAMFixUnit2_wrapper(struct _WEAPON_PARAM* _this, struct _UNIT_DB_BASE::_LIST* pUnit)
         {
            _WEAPON_PARAMFixUnit2_user(_this, pUnit, _WEAPON_PARAMFixUnit2_next);
         };
-        void _WEAPON_PARAMFixWeapon4_wrapper(struct _WEAPON_PARAM* _this, struct _STORAGE_LIST::_db_con* pWeapon)
+        static void _WEAPON_PARAMFixWeapon4_wrapper(struct _WEAPON_PARAM* _this, struct _STORAGE_LIST::_db_con* pWeapon)
         {
            _WEAPON_PARAMFixWeapon4_user(_this, pWeapon, _WEAPON_PARAMFixWeapon4_next);
         };
-        unsigned int _WEAPON_PARAMGetAttackDelay6_wrapper(struct _WEAPON_PARAM* _this, int nLv, int nAddDelay)
+        static unsigned int _WEAPON_PARAMGetAttackDelay6_wrapper(struct _WEAPON_PARAM* _this, int nLv, int nAddDelay)
         {
            return _WEAPON_PARAMGetAttackDelay6_user(_this, nLv, nAddDelay, _WEAPON_PARAMGetAttackDelay6_next);
         };
-        int _WEAPON_PARAMGetAttackToolType8_wrapper(struct _WEAPON_PARAM* _this)
+        static int _WEAPON_PARAMGetAttackToolType8_wrapper(struct _WEAPON_PARAM* _this)
         {
            return _WEAPON_PARAMGetAttackToolType8_user(_this, _WEAPON_PARAMGetAttackToolType8_next);
         };
-        int _WEAPON_PARAMGetWeaponTolType10_wrapper(struct _WEAPON_PARAM* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static int _WEAPON_PARAMGetWeaponTolType10_wrapper(struct _WEAPON_PARAM* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return _WEAPON_PARAMGetWeaponTolType10_user(_this, pItem, _WEAPON_PARAMGetWeaponTolType10_next);
         };
-        void _WEAPON_PARAMInit12_wrapper(struct _WEAPON_PARAM* _this)
+        static void _WEAPON_PARAMInit12_wrapper(struct _WEAPON_PARAM* _this)
         {
            _WEAPON_PARAMInit12_user(_this, _WEAPON_PARAMInit12_next);
         };
-        void _WEAPON_PARAMSetStaticMember14_wrapper(struct CRecordData* pWeaponData)
+        static void _WEAPON_PARAMSetStaticMember14_wrapper(struct CRecordData* pWeaponData)
         {
            _WEAPON_PARAMSetStaticMember14_user(pWeaponData, _WEAPON_PARAMSetStaticMember14_next);
         };
         
-        hook_record _WEAPON_PARAM_functions[] = {
+        static hook_record _WEAPON_PARAM_functions[] = {
         {   (LPVOID)0x14007d2a0L,
             (LPVOID *)&_WEAPON_PARAMFixUnit2_user,
             (LPVOID *)&_WEAPON_PARAMFixUnit2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

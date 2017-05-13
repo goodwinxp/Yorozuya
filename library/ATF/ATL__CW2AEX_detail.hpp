@@ -10,27 +10,27 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CW2AEXctor_CW2AEX2_ptr ATL__CW2AEXctor_CW2AEX2_next(nullptr);
-            info::ATL__CW2AEXctor_CW2AEX2_clbk ATL__CW2AEXctor_CW2AEX2_user(nullptr);
-            info::ATL__CW2AEXInit4_ptr ATL__CW2AEXInit4_next(nullptr);
-            info::ATL__CW2AEXInit4_clbk ATL__CW2AEXInit4_user(nullptr);
-            info::ATL__CW2AEXdtor_CW2AEX8_ptr ATL__CW2AEXdtor_CW2AEX8_next(nullptr);
-            info::ATL__CW2AEXdtor_CW2AEX8_clbk ATL__CW2AEXdtor_CW2AEX8_user(nullptr);
+            static info::ATL__CW2AEXctor_CW2AEX2_ptr ATL__CW2AEXctor_CW2AEX2_next(nullptr);
+            static info::ATL__CW2AEXctor_CW2AEX2_clbk ATL__CW2AEXctor_CW2AEX2_user(nullptr);
+            static info::ATL__CW2AEXInit4_ptr ATL__CW2AEXInit4_next(nullptr);
+            static info::ATL__CW2AEXInit4_clbk ATL__CW2AEXInit4_user(nullptr);
+            static info::ATL__CW2AEXdtor_CW2AEX8_ptr ATL__CW2AEXdtor_CW2AEX8_next(nullptr);
+            static info::ATL__CW2AEXdtor_CW2AEX8_clbk ATL__CW2AEXdtor_CW2AEX8_user(nullptr);
             
-            void ATL__CW2AEXctor_CW2AEX2_wrapper(struct ATL::CW2AEX<128>* _this, wchar_t* psz)
+            static void ATL__CW2AEXctor_CW2AEX2_wrapper(struct ATL::CW2AEX<128>* _this, wchar_t* psz)
             {
                ATL__CW2AEXctor_CW2AEX2_user(_this, psz);
             };
-            void ATL__CW2AEXInit4_wrapper(struct ATL::CW2AEX<128>* _this, wchar_t* psz, unsigned int nConvertCodePage)
+            static void ATL__CW2AEXInit4_wrapper(struct ATL::CW2AEX<128>* _this, wchar_t* psz, unsigned int nConvertCodePage)
             {
                ATL__CW2AEXInit4_user(_this, psz, nConvertCodePage);
             };
-            void ATL__CW2AEXdtor_CW2AEX8_wrapper(struct ATL::CW2AEX<128>* _this)
+            static void ATL__CW2AEXdtor_CW2AEX8_wrapper(struct ATL::CW2AEX<128>* _this)
             {
                ATL__CW2AEXdtor_CW2AEX8_user(_this);
             };
             
-            hook_record ATL::CW2AEX<128>_functions[] = {
+            static hook_record CW2AEX_functions[] = {
             {   (LPVOID)0x140026ef0L,
                 (LPVOID *)&ATL__CW2AEXctor_CW2AEX2_user,
                 (LPVOID *)&ATL__CW2AEXctor_CW2AEX2_next,
@@ -49,6 +49,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

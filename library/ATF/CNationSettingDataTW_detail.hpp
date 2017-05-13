@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataTWctor_CNationSettingDataTW2_ptr CNationSettingDataTWctor_CNationSettingDataTW2_next(nullptr);
-        info::CNationSettingDataTWctor_CNationSettingDataTW2_clbk CNationSettingDataTWctor_CNationSettingDataTW2_user(nullptr);
-        info::CNationSettingDataTWCreateWorker4_ptr CNationSettingDataTWCreateWorker4_next(nullptr);
-        info::CNationSettingDataTWCreateWorker4_clbk CNationSettingDataTWCreateWorker4_user(nullptr);
-        info::CNationSettingDataTWGetCashItemPrice6_ptr CNationSettingDataTWGetCashItemPrice6_next(nullptr);
-        info::CNationSettingDataTWGetCashItemPrice6_clbk CNationSettingDataTWGetCashItemPrice6_user(nullptr);
-        info::CNationSettingDataTWGetItemName8_ptr CNationSettingDataTWGetItemName8_next(nullptr);
-        info::CNationSettingDataTWGetItemName8_clbk CNationSettingDataTWGetItemName8_user(nullptr);
-        info::CNationSettingDataTWInit10_ptr CNationSettingDataTWInit10_next(nullptr);
-        info::CNationSettingDataTWInit10_clbk CNationSettingDataTWInit10_user(nullptr);
-        info::CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_ptr CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_next(nullptr);
-        info::CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_clbk CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_user(nullptr);
-        info::CNationSettingDataTWReadSystemPass14_ptr CNationSettingDataTWReadSystemPass14_next(nullptr);
-        info::CNationSettingDataTWReadSystemPass14_clbk CNationSettingDataTWReadSystemPass14_user(nullptr);
-        info::CNationSettingDataTWValidMacAddress16_ptr CNationSettingDataTWValidMacAddress16_next(nullptr);
-        info::CNationSettingDataTWValidMacAddress16_clbk CNationSettingDataTWValidMacAddress16_user(nullptr);
+        static info::CNationSettingDataTWctor_CNationSettingDataTW2_ptr CNationSettingDataTWctor_CNationSettingDataTW2_next(nullptr);
+        static info::CNationSettingDataTWctor_CNationSettingDataTW2_clbk CNationSettingDataTWctor_CNationSettingDataTW2_user(nullptr);
+        static info::CNationSettingDataTWCreateWorker4_ptr CNationSettingDataTWCreateWorker4_next(nullptr);
+        static info::CNationSettingDataTWCreateWorker4_clbk CNationSettingDataTWCreateWorker4_user(nullptr);
+        static info::CNationSettingDataTWGetCashItemPrice6_ptr CNationSettingDataTWGetCashItemPrice6_next(nullptr);
+        static info::CNationSettingDataTWGetCashItemPrice6_clbk CNationSettingDataTWGetCashItemPrice6_user(nullptr);
+        static info::CNationSettingDataTWGetItemName8_ptr CNationSettingDataTWGetItemName8_next(nullptr);
+        static info::CNationSettingDataTWGetItemName8_clbk CNationSettingDataTWGetItemName8_user(nullptr);
+        static info::CNationSettingDataTWInit10_ptr CNationSettingDataTWInit10_next(nullptr);
+        static info::CNationSettingDataTWInit10_clbk CNationSettingDataTWInit10_user(nullptr);
+        static info::CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_ptr CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_next(nullptr);
+        static info::CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_clbk CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_user(nullptr);
+        static info::CNationSettingDataTWReadSystemPass14_ptr CNationSettingDataTWReadSystemPass14_next(nullptr);
+        static info::CNationSettingDataTWReadSystemPass14_clbk CNationSettingDataTWReadSystemPass14_user(nullptr);
+        static info::CNationSettingDataTWValidMacAddress16_ptr CNationSettingDataTWValidMacAddress16_next(nullptr);
+        static info::CNationSettingDataTWValidMacAddress16_clbk CNationSettingDataTWValidMacAddress16_user(nullptr);
         
-        void CNationSettingDataTWctor_CNationSettingDataTW2_wrapper(struct CNationSettingDataTW* _this)
+        static void CNationSettingDataTWctor_CNationSettingDataTW2_wrapper(struct CNationSettingDataTW* _this)
         {
            CNationSettingDataTWctor_CNationSettingDataTW2_user(_this, CNationSettingDataTWctor_CNationSettingDataTW2_next);
         };
-        struct CashDbWorker* CNationSettingDataTWCreateWorker4_wrapper(struct CNationSettingDataTW* _this)
+        static struct CashDbWorker* CNationSettingDataTWCreateWorker4_wrapper(struct CNationSettingDataTW* _this)
         {
            return CNationSettingDataTWCreateWorker4_user(_this, CNationSettingDataTWCreateWorker4_next);
         };
-        int CNationSettingDataTWGetCashItemPrice6_wrapper(struct CNationSettingDataTW* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataTWGetCashItemPrice6_wrapper(struct CNationSettingDataTW* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataTWGetCashItemPrice6_user(_this, pFld, CNationSettingDataTWGetCashItemPrice6_next);
         };
-        char* CNationSettingDataTWGetItemName8_wrapper(struct CNationSettingDataTW* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataTWGetItemName8_wrapper(struct CNationSettingDataTW* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataTWGetItemName8_user(_this, pFld, CNationSettingDataTWGetItemName8_next);
         };
-        int CNationSettingDataTWInit10_wrapper(struct CNationSettingDataTW* _this)
+        static int CNationSettingDataTWInit10_wrapper(struct CNationSettingDataTW* _this)
         {
            return CNationSettingDataTWInit10_user(_this, CNationSettingDataTWInit10_next);
         };
-        bool CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_wrapper(struct CNationSettingDataTW* _this, int16_t* pDest1, int16_t* pDest2)
+        static bool CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_wrapper(struct CNationSettingDataTW* _this, int16_t* pDest1, int16_t* pDest2)
         {
            return CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_user(_this, pDest1, pDest2, CNationSettingDataTWIsPersonalFreeFixedAmountBillingType12_next);
         };
-        bool CNationSettingDataTWReadSystemPass14_wrapper(struct CNationSettingDataTW* _this)
+        static bool CNationSettingDataTWReadSystemPass14_wrapper(struct CNationSettingDataTW* _this)
         {
            return CNationSettingDataTWReadSystemPass14_user(_this, CNationSettingDataTWReadSystemPass14_next);
         };
-        bool CNationSettingDataTWValidMacAddress16_wrapper(struct CNationSettingDataTW* _this)
+        static bool CNationSettingDataTWValidMacAddress16_wrapper(struct CNationSettingDataTW* _this)
         {
            return CNationSettingDataTWValidMacAddress16_user(_this, CNationSettingDataTWValidMacAddress16_next);
         };
         
-        hook_record CNationSettingDataTW_functions[] = {
+        static hook_record CNationSettingDataTW_functions[] = {
         {   (LPVOID)0x14022f9b0L,
             (LPVOID *)&CNationSettingDataTWctor_CNationSettingDataTW2_user,
             (LPVOID *)&CNationSettingDataTWctor_CNationSettingDataTW2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

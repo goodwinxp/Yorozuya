@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CActionPointSystemMgrctor_CActionPointSystemMgr2_ptr CActionPointSystemMgrctor_CActionPointSystemMgr2_next(nullptr);
-        info::CActionPointSystemMgrctor_CActionPointSystemMgr2_clbk CActionPointSystemMgrctor_CActionPointSystemMgr2_user(nullptr);
-        info::CActionPointSystemMgrCheck_Event_Status4_ptr CActionPointSystemMgrCheck_Event_Status4_next(nullptr);
-        info::CActionPointSystemMgrCheck_Event_Status4_clbk CActionPointSystemMgrCheck_Event_Status4_user(nullptr);
-        info::CActionPointSystemMgrCheck_Load_Event_Status6_ptr CActionPointSystemMgrCheck_Load_Event_Status6_next(nullptr);
-        info::CActionPointSystemMgrCheck_Load_Event_Status6_clbk CActionPointSystemMgrCheck_Load_Event_Status6_user(nullptr);
-        info::CActionPointSystemMgrCheck_Loop8_ptr CActionPointSystemMgrCheck_Loop8_next(nullptr);
-        info::CActionPointSystemMgrCheck_Loop8_clbk CActionPointSystemMgrCheck_Loop8_user(nullptr);
-        info::CActionPointSystemMgrGetEventStatus10_ptr CActionPointSystemMgrGetEventStatus10_next(nullptr);
-        info::CActionPointSystemMgrGetEventStatus10_clbk CActionPointSystemMgrGetEventStatus10_user(nullptr);
-        info::CActionPointSystemMgrInitialize12_ptr CActionPointSystemMgrInitialize12_next(nullptr);
-        info::CActionPointSystemMgrInitialize12_clbk CActionPointSystemMgrInitialize12_user(nullptr);
-        info::CActionPointSystemMgrInstance14_ptr CActionPointSystemMgrInstance14_next(nullptr);
-        info::CActionPointSystemMgrInstance14_clbk CActionPointSystemMgrInstance14_user(nullptr);
-        info::CActionPointSystemMgrIsPointReset16_ptr CActionPointSystemMgrIsPointReset16_next(nullptr);
-        info::CActionPointSystemMgrIsPointReset16_clbk CActionPointSystemMgrIsPointReset16_user(nullptr);
-        info::CActionPointSystemMgrIsSystemEnable18_ptr CActionPointSystemMgrIsSystemEnable18_next(nullptr);
-        info::CActionPointSystemMgrIsSystemEnable18_clbk CActionPointSystemMgrIsSystemEnable18_user(nullptr);
-        info::CActionPointSystemMgrLoad_Event_INI20_ptr CActionPointSystemMgrLoad_Event_INI20_next(nullptr);
-        info::CActionPointSystemMgrLoad_Event_INI20_clbk CActionPointSystemMgrLoad_Event_INI20_user(nullptr);
-        info::CActionPointSystemMgrSetEventStatus22_ptr CActionPointSystemMgrSetEventStatus22_next(nullptr);
-        info::CActionPointSystemMgrSetEventStatus22_clbk CActionPointSystemMgrSetEventStatus22_user(nullptr);
-        info::CActionPointSystemMgrdtor_CActionPointSystemMgr24_ptr CActionPointSystemMgrdtor_CActionPointSystemMgr24_next(nullptr);
-        info::CActionPointSystemMgrdtor_CActionPointSystemMgr24_clbk CActionPointSystemMgrdtor_CActionPointSystemMgr24_user(nullptr);
+        static info::CActionPointSystemMgrctor_CActionPointSystemMgr2_ptr CActionPointSystemMgrctor_CActionPointSystemMgr2_next(nullptr);
+        static info::CActionPointSystemMgrctor_CActionPointSystemMgr2_clbk CActionPointSystemMgrctor_CActionPointSystemMgr2_user(nullptr);
+        static info::CActionPointSystemMgrCheck_Event_Status4_ptr CActionPointSystemMgrCheck_Event_Status4_next(nullptr);
+        static info::CActionPointSystemMgrCheck_Event_Status4_clbk CActionPointSystemMgrCheck_Event_Status4_user(nullptr);
+        static info::CActionPointSystemMgrCheck_Load_Event_Status6_ptr CActionPointSystemMgrCheck_Load_Event_Status6_next(nullptr);
+        static info::CActionPointSystemMgrCheck_Load_Event_Status6_clbk CActionPointSystemMgrCheck_Load_Event_Status6_user(nullptr);
+        static info::CActionPointSystemMgrCheck_Loop8_ptr CActionPointSystemMgrCheck_Loop8_next(nullptr);
+        static info::CActionPointSystemMgrCheck_Loop8_clbk CActionPointSystemMgrCheck_Loop8_user(nullptr);
+        static info::CActionPointSystemMgrGetEventStatus10_ptr CActionPointSystemMgrGetEventStatus10_next(nullptr);
+        static info::CActionPointSystemMgrGetEventStatus10_clbk CActionPointSystemMgrGetEventStatus10_user(nullptr);
+        static info::CActionPointSystemMgrInitialize12_ptr CActionPointSystemMgrInitialize12_next(nullptr);
+        static info::CActionPointSystemMgrInitialize12_clbk CActionPointSystemMgrInitialize12_user(nullptr);
+        static info::CActionPointSystemMgrInstance14_ptr CActionPointSystemMgrInstance14_next(nullptr);
+        static info::CActionPointSystemMgrInstance14_clbk CActionPointSystemMgrInstance14_user(nullptr);
+        static info::CActionPointSystemMgrIsPointReset16_ptr CActionPointSystemMgrIsPointReset16_next(nullptr);
+        static info::CActionPointSystemMgrIsPointReset16_clbk CActionPointSystemMgrIsPointReset16_user(nullptr);
+        static info::CActionPointSystemMgrIsSystemEnable18_ptr CActionPointSystemMgrIsSystemEnable18_next(nullptr);
+        static info::CActionPointSystemMgrIsSystemEnable18_clbk CActionPointSystemMgrIsSystemEnable18_user(nullptr);
+        static info::CActionPointSystemMgrLoad_Event_INI20_ptr CActionPointSystemMgrLoad_Event_INI20_next(nullptr);
+        static info::CActionPointSystemMgrLoad_Event_INI20_clbk CActionPointSystemMgrLoad_Event_INI20_user(nullptr);
+        static info::CActionPointSystemMgrSetEventStatus22_ptr CActionPointSystemMgrSetEventStatus22_next(nullptr);
+        static info::CActionPointSystemMgrSetEventStatus22_clbk CActionPointSystemMgrSetEventStatus22_user(nullptr);
+        static info::CActionPointSystemMgrdtor_CActionPointSystemMgr24_ptr CActionPointSystemMgrdtor_CActionPointSystemMgr24_next(nullptr);
+        static info::CActionPointSystemMgrdtor_CActionPointSystemMgr24_clbk CActionPointSystemMgrdtor_CActionPointSystemMgr24_user(nullptr);
         
-        void CActionPointSystemMgrctor_CActionPointSystemMgr2_wrapper(struct CActionPointSystemMgr* _this)
+        static void CActionPointSystemMgrctor_CActionPointSystemMgr2_wrapper(struct CActionPointSystemMgr* _this)
         {
            CActionPointSystemMgrctor_CActionPointSystemMgr2_user(_this, CActionPointSystemMgrctor_CActionPointSystemMgr2_next);
         };
-        void CActionPointSystemMgrCheck_Event_Status4_wrapper(struct CActionPointSystemMgr* _this)
+        static void CActionPointSystemMgrCheck_Event_Status4_wrapper(struct CActionPointSystemMgr* _this)
         {
            CActionPointSystemMgrCheck_Event_Status4_user(_this, CActionPointSystemMgrCheck_Event_Status4_next);
         };
-        void CActionPointSystemMgrCheck_Load_Event_Status6_wrapper(struct CActionPointSystemMgr* _this, char byActionCode, struct _action_point_system_ini* pIni)
+        static void CActionPointSystemMgrCheck_Load_Event_Status6_wrapper(struct CActionPointSystemMgr* _this, char byActionCode, struct _action_point_system_ini* pIni)
         {
            CActionPointSystemMgrCheck_Load_Event_Status6_user(_this, byActionCode, pIni, CActionPointSystemMgrCheck_Load_Event_Status6_next);
         };
-        void CActionPointSystemMgrCheck_Loop8_wrapper(struct CActionPointSystemMgr* _this)
+        static void CActionPointSystemMgrCheck_Loop8_wrapper(struct CActionPointSystemMgr* _this)
         {
            CActionPointSystemMgrCheck_Loop8_user(_this, CActionPointSystemMgrCheck_Loop8_next);
         };
-        char CActionPointSystemMgrGetEventStatus10_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
+        static char CActionPointSystemMgrGetEventStatus10_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
         {
            return CActionPointSystemMgrGetEventStatus10_user(_this, byActionCode, CActionPointSystemMgrGetEventStatus10_next);
         };
-        bool CActionPointSystemMgrInitialize12_wrapper(struct CActionPointSystemMgr* _this)
+        static bool CActionPointSystemMgrInitialize12_wrapper(struct CActionPointSystemMgr* _this)
         {
            return CActionPointSystemMgrInitialize12_user(_this, CActionPointSystemMgrInitialize12_next);
         };
-        struct CActionPointSystemMgr* CActionPointSystemMgrInstance14_wrapper()
+        static struct CActionPointSystemMgr* CActionPointSystemMgrInstance14_wrapper()
         {
            return CActionPointSystemMgrInstance14_user(CActionPointSystemMgrInstance14_next);
         };
-        bool CActionPointSystemMgrIsPointReset16_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
+        static bool CActionPointSystemMgrIsPointReset16_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
         {
            return CActionPointSystemMgrIsPointReset16_user(_this, byActionCode, CActionPointSystemMgrIsPointReset16_next);
         };
-        bool CActionPointSystemMgrIsSystemEnable18_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
+        static bool CActionPointSystemMgrIsSystemEnable18_wrapper(struct CActionPointSystemMgr* _this, char byActionCode)
         {
            return CActionPointSystemMgrIsSystemEnable18_user(_this, byActionCode, CActionPointSystemMgrIsSystemEnable18_next);
         };
-        void CActionPointSystemMgrLoad_Event_INI20_wrapper(struct CActionPointSystemMgr* _this, struct _action_point_system_ini* pIni, uint16_t wIndex)
+        static void CActionPointSystemMgrLoad_Event_INI20_wrapper(struct CActionPointSystemMgr* _this, struct _action_point_system_ini* pIni, uint16_t wIndex)
         {
            CActionPointSystemMgrLoad_Event_INI20_user(_this, pIni, wIndex, CActionPointSystemMgrLoad_Event_INI20_next);
         };
-        void CActionPointSystemMgrSetEventStatus22_wrapper(struct CActionPointSystemMgr* _this, char byActionCode, char byStatus)
+        static void CActionPointSystemMgrSetEventStatus22_wrapper(struct CActionPointSystemMgr* _this, char byActionCode, char byStatus)
         {
            CActionPointSystemMgrSetEventStatus22_user(_this, byActionCode, byStatus, CActionPointSystemMgrSetEventStatus22_next);
         };
-        void CActionPointSystemMgrdtor_CActionPointSystemMgr24_wrapper(struct CActionPointSystemMgr* _this)
+        static void CActionPointSystemMgrdtor_CActionPointSystemMgr24_wrapper(struct CActionPointSystemMgr* _this)
         {
            CActionPointSystemMgrdtor_CActionPointSystemMgr24_user(_this, CActionPointSystemMgrdtor_CActionPointSystemMgr24_next);
         };
         
-        hook_record CActionPointSystemMgr_functions[] = {
+        static hook_record CActionPointSystemMgr_functions[] = {
         {   (LPVOID)0x1404110f0L,
             (LPVOID *)&CActionPointSystemMgrctor_CActionPointSystemMgr2_user,
             (LPVOID *)&CActionPointSystemMgrctor_CActionPointSystemMgr2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

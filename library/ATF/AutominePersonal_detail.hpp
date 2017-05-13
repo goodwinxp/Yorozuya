@@ -8,273 +8,273 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AutominePersonalctor_AutominePersonal2_ptr AutominePersonalctor_AutominePersonal2_next(nullptr);
-        info::AutominePersonalctor_AutominePersonal2_clbk AutominePersonalctor_AutominePersonal2_user(nullptr);
-        info::AutominePersonalGetDefFC4_ptr AutominePersonalGetDefFC4_next(nullptr);
-        info::AutominePersonalGetDefFC4_clbk AutominePersonalGetDefFC4_user(nullptr);
-        info::AutominePersonalGetDefFacing6_ptr AutominePersonalGetDefFacing6_next(nullptr);
-        info::AutominePersonalGetDefFacing6_clbk AutominePersonalGetDefFacing6_user(nullptr);
-        info::AutominePersonalGetDefGap8_ptr AutominePersonalGetDefGap8_next(nullptr);
-        info::AutominePersonalGetDefGap8_clbk AutominePersonalGetDefGap8_user(nullptr);
-        info::AutominePersonalGetHP10_ptr AutominePersonalGetHP10_next(nullptr);
-        info::AutominePersonalGetHP10_clbk AutominePersonalGetHP10_user(nullptr);
-        info::AutominePersonalGetMaxHP12_ptr AutominePersonalGetMaxHP12_next(nullptr);
-        info::AutominePersonalGetMaxHP12_clbk AutominePersonalGetMaxHP12_user(nullptr);
-        info::AutominePersonalGetObjRace14_ptr AutominePersonalGetObjRace14_next(nullptr);
-        info::AutominePersonalGetObjRace14_clbk AutominePersonalGetObjRace14_user(nullptr);
-        info::AutominePersonalGetOwner16_ptr AutominePersonalGetOwner16_next(nullptr);
-        info::AutominePersonalGetOwner16_clbk AutominePersonalGetOwner16_user(nullptr);
-        info::AutominePersonalIsBeAttackedAble18_ptr AutominePersonalIsBeAttackedAble18_next(nullptr);
-        info::AutominePersonalIsBeAttackedAble18_clbk AutominePersonalIsBeAttackedAble18_user(nullptr);
-        info::AutominePersonalIsBeDamagedAble20_ptr AutominePersonalIsBeDamagedAble20_next(nullptr);
-        info::AutominePersonalIsBeDamagedAble20_clbk AutominePersonalIsBeDamagedAble20_user(nullptr);
-        info::AutominePersonalLoadDBComplete22_ptr AutominePersonalLoadDBComplete22_next(nullptr);
-        info::AutominePersonalLoadDBComplete22_clbk AutominePersonalLoadDBComplete22_user(nullptr);
-        info::AutominePersonalLoop24_ptr AutominePersonalLoop24_next(nullptr);
-        info::AutominePersonalLoop24_clbk AutominePersonalLoop24_user(nullptr);
-        info::AutominePersonalSendMsg_FixPosition26_ptr AutominePersonalSendMsg_FixPosition26_next(nullptr);
-        info::AutominePersonalSendMsg_FixPosition26_clbk AutominePersonalSendMsg_FixPosition26_user(nullptr);
-        info::AutominePersonalSetDamage28_ptr AutominePersonalSetDamage28_next(nullptr);
-        info::AutominePersonalSetDamage28_clbk AutominePersonalSetDamage28_user(nullptr);
-        info::AutominePersonaldo_automine34_ptr AutominePersonaldo_automine34_next(nullptr);
-        info::AutominePersonaldo_automine34_clbk AutominePersonaldo_automine34_user(nullptr);
-        info::AutominePersonalextract_battery36_ptr AutominePersonalextract_battery36_next(nullptr);
-        info::AutominePersonalextract_battery36_clbk AutominePersonalextract_battery36_user(nullptr);
-        info::AutominePersonalget_battery38_ptr AutominePersonalget_battery38_next(nullptr);
-        info::AutominePersonalget_battery38_clbk AutominePersonalget_battery38_user(nullptr);
-        info::AutominePersonalget_battery40_ptr AutominePersonalget_battery40_next(nullptr);
-        info::AutominePersonalget_battery40_clbk AutominePersonalget_battery40_user(nullptr);
-        info::AutominePersonalget_item42_ptr AutominePersonalget_item42_next(nullptr);
-        info::AutominePersonalget_item42_clbk AutominePersonalget_item42_user(nullptr);
-        info::AutominePersonalget_itemserial44_ptr AutominePersonalget_itemserial44_next(nullptr);
-        info::AutominePersonalget_itemserial44_clbk AutominePersonalget_itemserial44_user(nullptr);
-        info::AutominePersonalget_objserial46_ptr AutominePersonalget_objserial46_next(nullptr);
-        info::AutominePersonalget_objserial46_clbk AutominePersonalget_objserial46_user(nullptr);
-        info::AutominePersonalget_owner48_ptr AutominePersonalget_owner48_next(nullptr);
-        info::AutominePersonalget_owner48_clbk AutominePersonalget_owner48_user(nullptr);
-        info::AutominePersonalget_ownerserial50_ptr AutominePersonalget_ownerserial50_next(nullptr);
-        info::AutominePersonalget_ownerserial50_clbk AutominePersonalget_ownerserial50_user(nullptr);
-        info::AutominePersonalinitialize52_ptr AutominePersonalinitialize52_next(nullptr);
-        info::AutominePersonalinitialize52_clbk AutominePersonalinitialize52_user(nullptr);
-        info::AutominePersonalinsert_battery54_ptr AutominePersonalinsert_battery54_next(nullptr);
-        info::AutominePersonalinsert_battery54_clbk AutominePersonalinsert_battery54_user(nullptr);
-        info::AutominePersonalis_installed56_ptr AutominePersonalis_installed56_next(nullptr);
-        info::AutominePersonalis_installed56_clbk AutominePersonalis_installed56_user(nullptr);
-        info::AutominePersonalis_run58_ptr AutominePersonalis_run58_next(nullptr);
-        info::AutominePersonalis_run58_clbk AutominePersonalis_run58_user(nullptr);
-        info::AutominePersonalmake_minepacket60_ptr AutominePersonalmake_minepacket60_next(nullptr);
-        info::AutominePersonalmake_minepacket60_clbk AutominePersonalmake_minepacket60_user(nullptr);
-        info::AutominePersonalregist_to_map62_ptr AutominePersonalregist_to_map62_next(nullptr);
-        info::AutominePersonalregist_to_map62_clbk AutominePersonalregist_to_map62_user(nullptr);
-        info::AutominePersonalsend_attacked64_ptr AutominePersonalsend_attacked64_next(nullptr);
-        info::AutominePersonalsend_attacked64_clbk AutominePersonalsend_attacked64_user(nullptr);
-        info::AutominePersonalsend_changed_packet66_ptr AutominePersonalsend_changed_packet66_next(nullptr);
-        info::AutominePersonalsend_changed_packet66_clbk AutominePersonalsend_changed_packet66_user(nullptr);
-        info::AutominePersonalsend_current_state68_ptr AutominePersonalsend_current_state68_next(nullptr);
-        info::AutominePersonalsend_current_state68_clbk AutominePersonalsend_current_state68_user(nullptr);
-        info::AutominePersonalsend_ecode70_ptr AutominePersonalsend_ecode70_next(nullptr);
-        info::AutominePersonalsend_ecode70_clbk AutominePersonalsend_ecode70_user(nullptr);
-        info::AutominePersonalsend_installed72_ptr AutominePersonalsend_installed72_next(nullptr);
-        info::AutominePersonalsend_installed72_clbk AutominePersonalsend_installed72_user(nullptr);
-        info::AutominePersonalset_delay74_ptr AutominePersonalset_delay74_next(nullptr);
-        info::AutominePersonalset_delay74_clbk AutominePersonalset_delay74_user(nullptr);
-        info::AutominePersonalset_delaysec76_ptr AutominePersonalset_delaysec76_next(nullptr);
-        info::AutominePersonalset_delaysec76_clbk AutominePersonalset_delaysec76_user(nullptr);
-        info::AutominePersonalset_openUI_Inven78_ptr AutominePersonalset_openUI_Inven78_next(nullptr);
-        info::AutominePersonalset_openUI_Inven78_clbk AutominePersonalset_openUI_Inven78_user(nullptr);
-        info::AutominePersonalset_openUI_battery80_ptr AutominePersonalset_openUI_battery80_next(nullptr);
-        info::AutominePersonalset_openUI_battery80_clbk AutominePersonalset_openUI_battery80_user(nullptr);
-        info::AutominePersonalset_selore82_ptr AutominePersonalset_selore82_next(nullptr);
-        info::AutominePersonalset_selore82_clbk AutominePersonalset_selore82_user(nullptr);
-        info::AutominePersonalset_work84_ptr AutominePersonalset_work84_next(nullptr);
-        info::AutominePersonalset_work84_clbk AutominePersonalset_work84_user(nullptr);
-        info::AutominePersonalsub_battery86_ptr AutominePersonalsub_battery86_next(nullptr);
-        info::AutominePersonalsub_battery86_clbk AutominePersonalsub_battery86_user(nullptr);
-        info::AutominePersonalsub_filledslot88_ptr AutominePersonalsub_filledslot88_next(nullptr);
-        info::AutominePersonalsub_filledslot88_clbk AutominePersonalsub_filledslot88_user(nullptr);
-        info::AutominePersonalunregist_from_map90_ptr AutominePersonalunregist_from_map90_next(nullptr);
-        info::AutominePersonalunregist_from_map90_clbk AutominePersonalunregist_from_map90_user(nullptr);
-        info::AutominePersonaldtor_AutominePersonal92_ptr AutominePersonaldtor_AutominePersonal92_next(nullptr);
-        info::AutominePersonaldtor_AutominePersonal92_clbk AutominePersonaldtor_AutominePersonal92_user(nullptr);
+        static info::AutominePersonalctor_AutominePersonal2_ptr AutominePersonalctor_AutominePersonal2_next(nullptr);
+        static info::AutominePersonalctor_AutominePersonal2_clbk AutominePersonalctor_AutominePersonal2_user(nullptr);
+        static info::AutominePersonalGetDefFC4_ptr AutominePersonalGetDefFC4_next(nullptr);
+        static info::AutominePersonalGetDefFC4_clbk AutominePersonalGetDefFC4_user(nullptr);
+        static info::AutominePersonalGetDefFacing6_ptr AutominePersonalGetDefFacing6_next(nullptr);
+        static info::AutominePersonalGetDefFacing6_clbk AutominePersonalGetDefFacing6_user(nullptr);
+        static info::AutominePersonalGetDefGap8_ptr AutominePersonalGetDefGap8_next(nullptr);
+        static info::AutominePersonalGetDefGap8_clbk AutominePersonalGetDefGap8_user(nullptr);
+        static info::AutominePersonalGetHP10_ptr AutominePersonalGetHP10_next(nullptr);
+        static info::AutominePersonalGetHP10_clbk AutominePersonalGetHP10_user(nullptr);
+        static info::AutominePersonalGetMaxHP12_ptr AutominePersonalGetMaxHP12_next(nullptr);
+        static info::AutominePersonalGetMaxHP12_clbk AutominePersonalGetMaxHP12_user(nullptr);
+        static info::AutominePersonalGetObjRace14_ptr AutominePersonalGetObjRace14_next(nullptr);
+        static info::AutominePersonalGetObjRace14_clbk AutominePersonalGetObjRace14_user(nullptr);
+        static info::AutominePersonalGetOwner16_ptr AutominePersonalGetOwner16_next(nullptr);
+        static info::AutominePersonalGetOwner16_clbk AutominePersonalGetOwner16_user(nullptr);
+        static info::AutominePersonalIsBeAttackedAble18_ptr AutominePersonalIsBeAttackedAble18_next(nullptr);
+        static info::AutominePersonalIsBeAttackedAble18_clbk AutominePersonalIsBeAttackedAble18_user(nullptr);
+        static info::AutominePersonalIsBeDamagedAble20_ptr AutominePersonalIsBeDamagedAble20_next(nullptr);
+        static info::AutominePersonalIsBeDamagedAble20_clbk AutominePersonalIsBeDamagedAble20_user(nullptr);
+        static info::AutominePersonalLoadDBComplete22_ptr AutominePersonalLoadDBComplete22_next(nullptr);
+        static info::AutominePersonalLoadDBComplete22_clbk AutominePersonalLoadDBComplete22_user(nullptr);
+        static info::AutominePersonalLoop24_ptr AutominePersonalLoop24_next(nullptr);
+        static info::AutominePersonalLoop24_clbk AutominePersonalLoop24_user(nullptr);
+        static info::AutominePersonalSendMsg_FixPosition26_ptr AutominePersonalSendMsg_FixPosition26_next(nullptr);
+        static info::AutominePersonalSendMsg_FixPosition26_clbk AutominePersonalSendMsg_FixPosition26_user(nullptr);
+        static info::AutominePersonalSetDamage28_ptr AutominePersonalSetDamage28_next(nullptr);
+        static info::AutominePersonalSetDamage28_clbk AutominePersonalSetDamage28_user(nullptr);
+        static info::AutominePersonaldo_automine34_ptr AutominePersonaldo_automine34_next(nullptr);
+        static info::AutominePersonaldo_automine34_clbk AutominePersonaldo_automine34_user(nullptr);
+        static info::AutominePersonalextract_battery36_ptr AutominePersonalextract_battery36_next(nullptr);
+        static info::AutominePersonalextract_battery36_clbk AutominePersonalextract_battery36_user(nullptr);
+        static info::AutominePersonalget_battery38_ptr AutominePersonalget_battery38_next(nullptr);
+        static info::AutominePersonalget_battery38_clbk AutominePersonalget_battery38_user(nullptr);
+        static info::AutominePersonalget_battery40_ptr AutominePersonalget_battery40_next(nullptr);
+        static info::AutominePersonalget_battery40_clbk AutominePersonalget_battery40_user(nullptr);
+        static info::AutominePersonalget_item42_ptr AutominePersonalget_item42_next(nullptr);
+        static info::AutominePersonalget_item42_clbk AutominePersonalget_item42_user(nullptr);
+        static info::AutominePersonalget_itemserial44_ptr AutominePersonalget_itemserial44_next(nullptr);
+        static info::AutominePersonalget_itemserial44_clbk AutominePersonalget_itemserial44_user(nullptr);
+        static info::AutominePersonalget_objserial46_ptr AutominePersonalget_objserial46_next(nullptr);
+        static info::AutominePersonalget_objserial46_clbk AutominePersonalget_objserial46_user(nullptr);
+        static info::AutominePersonalget_owner48_ptr AutominePersonalget_owner48_next(nullptr);
+        static info::AutominePersonalget_owner48_clbk AutominePersonalget_owner48_user(nullptr);
+        static info::AutominePersonalget_ownerserial50_ptr AutominePersonalget_ownerserial50_next(nullptr);
+        static info::AutominePersonalget_ownerserial50_clbk AutominePersonalget_ownerserial50_user(nullptr);
+        static info::AutominePersonalinitialize52_ptr AutominePersonalinitialize52_next(nullptr);
+        static info::AutominePersonalinitialize52_clbk AutominePersonalinitialize52_user(nullptr);
+        static info::AutominePersonalinsert_battery54_ptr AutominePersonalinsert_battery54_next(nullptr);
+        static info::AutominePersonalinsert_battery54_clbk AutominePersonalinsert_battery54_user(nullptr);
+        static info::AutominePersonalis_installed56_ptr AutominePersonalis_installed56_next(nullptr);
+        static info::AutominePersonalis_installed56_clbk AutominePersonalis_installed56_user(nullptr);
+        static info::AutominePersonalis_run58_ptr AutominePersonalis_run58_next(nullptr);
+        static info::AutominePersonalis_run58_clbk AutominePersonalis_run58_user(nullptr);
+        static info::AutominePersonalmake_minepacket60_ptr AutominePersonalmake_minepacket60_next(nullptr);
+        static info::AutominePersonalmake_minepacket60_clbk AutominePersonalmake_minepacket60_user(nullptr);
+        static info::AutominePersonalregist_to_map62_ptr AutominePersonalregist_to_map62_next(nullptr);
+        static info::AutominePersonalregist_to_map62_clbk AutominePersonalregist_to_map62_user(nullptr);
+        static info::AutominePersonalsend_attacked64_ptr AutominePersonalsend_attacked64_next(nullptr);
+        static info::AutominePersonalsend_attacked64_clbk AutominePersonalsend_attacked64_user(nullptr);
+        static info::AutominePersonalsend_changed_packet66_ptr AutominePersonalsend_changed_packet66_next(nullptr);
+        static info::AutominePersonalsend_changed_packet66_clbk AutominePersonalsend_changed_packet66_user(nullptr);
+        static info::AutominePersonalsend_current_state68_ptr AutominePersonalsend_current_state68_next(nullptr);
+        static info::AutominePersonalsend_current_state68_clbk AutominePersonalsend_current_state68_user(nullptr);
+        static info::AutominePersonalsend_ecode70_ptr AutominePersonalsend_ecode70_next(nullptr);
+        static info::AutominePersonalsend_ecode70_clbk AutominePersonalsend_ecode70_user(nullptr);
+        static info::AutominePersonalsend_installed72_ptr AutominePersonalsend_installed72_next(nullptr);
+        static info::AutominePersonalsend_installed72_clbk AutominePersonalsend_installed72_user(nullptr);
+        static info::AutominePersonalset_delay74_ptr AutominePersonalset_delay74_next(nullptr);
+        static info::AutominePersonalset_delay74_clbk AutominePersonalset_delay74_user(nullptr);
+        static info::AutominePersonalset_delaysec76_ptr AutominePersonalset_delaysec76_next(nullptr);
+        static info::AutominePersonalset_delaysec76_clbk AutominePersonalset_delaysec76_user(nullptr);
+        static info::AutominePersonalset_openUI_Inven78_ptr AutominePersonalset_openUI_Inven78_next(nullptr);
+        static info::AutominePersonalset_openUI_Inven78_clbk AutominePersonalset_openUI_Inven78_user(nullptr);
+        static info::AutominePersonalset_openUI_battery80_ptr AutominePersonalset_openUI_battery80_next(nullptr);
+        static info::AutominePersonalset_openUI_battery80_clbk AutominePersonalset_openUI_battery80_user(nullptr);
+        static info::AutominePersonalset_selore82_ptr AutominePersonalset_selore82_next(nullptr);
+        static info::AutominePersonalset_selore82_clbk AutominePersonalset_selore82_user(nullptr);
+        static info::AutominePersonalset_work84_ptr AutominePersonalset_work84_next(nullptr);
+        static info::AutominePersonalset_work84_clbk AutominePersonalset_work84_user(nullptr);
+        static info::AutominePersonalsub_battery86_ptr AutominePersonalsub_battery86_next(nullptr);
+        static info::AutominePersonalsub_battery86_clbk AutominePersonalsub_battery86_user(nullptr);
+        static info::AutominePersonalsub_filledslot88_ptr AutominePersonalsub_filledslot88_next(nullptr);
+        static info::AutominePersonalsub_filledslot88_clbk AutominePersonalsub_filledslot88_user(nullptr);
+        static info::AutominePersonalunregist_from_map90_ptr AutominePersonalunregist_from_map90_next(nullptr);
+        static info::AutominePersonalunregist_from_map90_clbk AutominePersonalunregist_from_map90_user(nullptr);
+        static info::AutominePersonaldtor_AutominePersonal92_ptr AutominePersonaldtor_AutominePersonal92_next(nullptr);
+        static info::AutominePersonaldtor_AutominePersonal92_clbk AutominePersonaldtor_AutominePersonal92_user(nullptr);
         
-        void AutominePersonalctor_AutominePersonal2_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalctor_AutominePersonal2_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalctor_AutominePersonal2_user(_this, AutominePersonalctor_AutominePersonal2_next);
         };
-        int AutominePersonalGetDefFC4_wrapper(struct AutominePersonal* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int AutominePersonalGetDefFC4_wrapper(struct AutominePersonal* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return AutominePersonalGetDefFC4_user(_this, nAttactPart, pAttChar, pnConvertPart, AutominePersonalGetDefFC4_next);
         };
-        float AutominePersonalGetDefFacing6_wrapper(struct AutominePersonal* _this, int nPart)
+        static float AutominePersonalGetDefFacing6_wrapper(struct AutominePersonal* _this, int nPart)
         {
            return AutominePersonalGetDefFacing6_user(_this, nPart, AutominePersonalGetDefFacing6_next);
         };
-        float AutominePersonalGetDefGap8_wrapper(struct AutominePersonal* _this, int nPart)
+        static float AutominePersonalGetDefGap8_wrapper(struct AutominePersonal* _this, int nPart)
         {
            return AutominePersonalGetDefGap8_user(_this, nPart, AutominePersonalGetDefGap8_next);
         };
-        int AutominePersonalGetHP10_wrapper(struct AutominePersonal* _this)
+        static int AutominePersonalGetHP10_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalGetHP10_user(_this, AutominePersonalGetHP10_next);
         };
-        int AutominePersonalGetMaxHP12_wrapper(struct AutominePersonal* _this)
+        static int AutominePersonalGetMaxHP12_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalGetMaxHP12_user(_this, AutominePersonalGetMaxHP12_next);
         };
-        int AutominePersonalGetObjRace14_wrapper(struct AutominePersonal* _this)
+        static int AutominePersonalGetObjRace14_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalGetObjRace14_user(_this, AutominePersonalGetObjRace14_next);
         };
-        struct CPlayer* AutominePersonalGetOwner16_wrapper(struct AutominePersonal* _this)
+        static struct CPlayer* AutominePersonalGetOwner16_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalGetOwner16_user(_this, AutominePersonalGetOwner16_next);
         };
-        bool AutominePersonalIsBeAttackedAble18_wrapper(struct AutominePersonal* _this, bool bFirst)
+        static bool AutominePersonalIsBeAttackedAble18_wrapper(struct AutominePersonal* _this, bool bFirst)
         {
            return AutominePersonalIsBeAttackedAble18_user(_this, bFirst, AutominePersonalIsBeAttackedAble18_next);
         };
-        bool AutominePersonalIsBeDamagedAble20_wrapper(struct AutominePersonal* _this, struct CCharacter* pAtter)
+        static bool AutominePersonalIsBeDamagedAble20_wrapper(struct AutominePersonal* _this, struct CCharacter* pAtter)
         {
            return AutominePersonalIsBeDamagedAble20_user(_this, pAtter, AutominePersonalIsBeDamagedAble20_next);
         };
-        void AutominePersonalLoadDBComplete22_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalLoadDBComplete22_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalLoadDBComplete22_user(_this, AutominePersonalLoadDBComplete22_next);
         };
-        void AutominePersonalLoop24_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalLoop24_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalLoop24_user(_this, AutominePersonalLoop24_next);
         };
-        void AutominePersonalSendMsg_FixPosition26_wrapper(struct AutominePersonal* _this, int n)
+        static void AutominePersonalSendMsg_FixPosition26_wrapper(struct AutominePersonal* _this, int n)
         {
            AutominePersonalSendMsg_FixPosition26_user(_this, n, AutominePersonalSendMsg_FixPosition26_next);
         };
-        int AutominePersonalSetDamage28_wrapper(struct AutominePersonal* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int AutominePersonalSetDamage28_wrapper(struct AutominePersonal* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return AutominePersonalSetDamage28_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, AutominePersonalSetDamage28_next);
         };
-        bool AutominePersonaldo_automine34_wrapper(struct AutominePersonal* _this, unsigned int dwTime)
+        static bool AutominePersonaldo_automine34_wrapper(struct AutominePersonal* _this, unsigned int dwTime)
         {
            return AutominePersonaldo_automine34_user(_this, dwTime, AutominePersonaldo_automine34_next);
         };
-        bool AutominePersonalextract_battery36_wrapper(struct AutominePersonal* _this, char bySlotIdx, struct _STORAGE_LIST::_db_con* pBattery)
+        static bool AutominePersonalextract_battery36_wrapper(struct AutominePersonal* _this, char bySlotIdx, struct _STORAGE_LIST::_db_con* pBattery)
         {
            return AutominePersonalextract_battery36_user(_this, bySlotIdx, pBattery, AutominePersonalextract_battery36_next);
         };
-        unsigned int AutominePersonalget_battery38_wrapper(struct AutominePersonal* _this, int n)
+        static unsigned int AutominePersonalget_battery38_wrapper(struct AutominePersonal* _this, int n)
         {
            return AutominePersonalget_battery38_user(_this, n, AutominePersonalget_battery38_next);
         };
-        unsigned int AutominePersonalget_battery40_wrapper(struct AutominePersonal* _this)
+        static unsigned int AutominePersonalget_battery40_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_battery40_user(_this, AutominePersonalget_battery40_next);
         };
-        struct _STORAGE_LIST::_db_con* AutominePersonalget_item42_wrapper(struct AutominePersonal* _this)
+        static struct _STORAGE_LIST::_db_con* AutominePersonalget_item42_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_item42_user(_this, AutominePersonalget_item42_next);
         };
-        uint16_t AutominePersonalget_itemserial44_wrapper(struct AutominePersonal* _this)
+        static uint16_t AutominePersonalget_itemserial44_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_itemserial44_user(_this, AutominePersonalget_itemserial44_next);
         };
-        unsigned int AutominePersonalget_objserial46_wrapper(struct AutominePersonal* _this)
+        static unsigned int AutominePersonalget_objserial46_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_objserial46_user(_this, AutominePersonalget_objserial46_next);
         };
-        struct CPlayer* AutominePersonalget_owner48_wrapper(struct AutominePersonal* _this)
+        static struct CPlayer* AutominePersonalget_owner48_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_owner48_user(_this, AutominePersonalget_owner48_next);
         };
-        unsigned int AutominePersonalget_ownerserial50_wrapper(struct AutominePersonal* _this)
+        static unsigned int AutominePersonalget_ownerserial50_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalget_ownerserial50_user(_this, AutominePersonalget_ownerserial50_next);
         };
-        bool AutominePersonalinitialize52_wrapper(struct AutominePersonal* _this, uint16_t wIndex)
+        static bool AutominePersonalinitialize52_wrapper(struct AutominePersonal* _this, uint16_t wIndex)
         {
            return AutominePersonalinitialize52_user(_this, wIndex, AutominePersonalinitialize52_next);
         };
-        bool AutominePersonalinsert_battery54_wrapper(struct AutominePersonal* _this, char bySlotIdx, uint16_t wItemSerial)
+        static bool AutominePersonalinsert_battery54_wrapper(struct AutominePersonal* _this, char bySlotIdx, uint16_t wItemSerial)
         {
            return AutominePersonalinsert_battery54_user(_this, bySlotIdx, wItemSerial, AutominePersonalinsert_battery54_next);
         };
-        bool AutominePersonalis_installed56_wrapper(struct AutominePersonal* _this)
+        static bool AutominePersonalis_installed56_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalis_installed56_user(_this, AutominePersonalis_installed56_next);
         };
-        bool AutominePersonalis_run58_wrapper(struct AutominePersonal* _this)
+        static bool AutominePersonalis_run58_wrapper(struct AutominePersonal* _this)
         {
            return AutominePersonalis_run58_user(_this, AutominePersonalis_run58_next);
         };
-        void AutominePersonalmake_minepacket60_wrapper(struct AutominePersonal* _this, uint16_t wItemIndex, uint16_t wItemSerial, char byStorageIndex, uint16_t nNewOre, unsigned int dwDur)
+        static void AutominePersonalmake_minepacket60_wrapper(struct AutominePersonal* _this, uint16_t wItemIndex, uint16_t wItemSerial, char byStorageIndex, uint16_t nNewOre, unsigned int dwDur)
         {
            AutominePersonalmake_minepacket60_user(_this, wItemIndex, wItemSerial, byStorageIndex, nNewOre, dwDur, AutominePersonalmake_minepacket60_next);
         };
-        bool AutominePersonalregist_to_map62_wrapper(struct AutominePersonal* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pDstItem, char byDummyIndex, unsigned int dwObjSerial, float fDelayProf)
+        static bool AutominePersonalregist_to_map62_wrapper(struct AutominePersonal* _this, struct CPlayer* pOne, struct _STORAGE_LIST::_db_con* pDstItem, char byDummyIndex, unsigned int dwObjSerial, float fDelayProf)
         {
            return AutominePersonalregist_to_map62_user(_this, pOne, pDstItem, byDummyIndex, dwObjSerial, fDelayProf, AutominePersonalregist_to_map62_next);
         };
-        void AutominePersonalsend_attacked64_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalsend_attacked64_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalsend_attacked64_user(_this, AutominePersonalsend_attacked64_next);
         };
-        void AutominePersonalsend_changed_packet66_wrapper(struct AutominePersonal* _this, int n)
+        static void AutominePersonalsend_changed_packet66_wrapper(struct AutominePersonal* _this, int n)
         {
            AutominePersonalsend_changed_packet66_user(_this, n, AutominePersonalsend_changed_packet66_next);
         };
-        void AutominePersonalsend_current_state68_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalsend_current_state68_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalsend_current_state68_user(_this, AutominePersonalsend_current_state68_next);
         };
-        void AutominePersonalsend_ecode70_wrapper(struct AutominePersonal* _this, char byCode)
+        static void AutominePersonalsend_ecode70_wrapper(struct AutominePersonal* _this, char byCode)
         {
            AutominePersonalsend_ecode70_user(_this, byCode, AutominePersonalsend_ecode70_next);
         };
-        void AutominePersonalsend_installed72_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalsend_installed72_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalsend_installed72_user(_this, AutominePersonalsend_installed72_next);
         };
-        void AutominePersonalset_delay74_wrapper(struct AutominePersonal* _this, unsigned int dwDelay)
+        static void AutominePersonalset_delay74_wrapper(struct AutominePersonal* _this, unsigned int dwDelay)
         {
            AutominePersonalset_delay74_user(_this, dwDelay, AutominePersonalset_delay74_next);
         };
-        void AutominePersonalset_delaysec76_wrapper(struct AutominePersonal* _this, unsigned int dwDS)
+        static void AutominePersonalset_delaysec76_wrapper(struct AutominePersonal* _this, unsigned int dwDS)
         {
            AutominePersonalset_delaysec76_user(_this, dwDS, AutominePersonalset_delaysec76_next);
         };
-        void AutominePersonalset_openUI_Inven78_wrapper(struct AutominePersonal* _this, bool bFlag)
+        static void AutominePersonalset_openUI_Inven78_wrapper(struct AutominePersonal* _this, bool bFlag)
         {
            AutominePersonalset_openUI_Inven78_user(_this, bFlag, AutominePersonalset_openUI_Inven78_next);
         };
-        void AutominePersonalset_openUI_battery80_wrapper(struct AutominePersonal* _this, bool bFlag)
+        static void AutominePersonalset_openUI_battery80_wrapper(struct AutominePersonal* _this, bool bFlag)
         {
            AutominePersonalset_openUI_battery80_user(_this, bFlag, AutominePersonalset_openUI_battery80_next);
         };
-        void AutominePersonalset_selore82_wrapper(struct AutominePersonal* _this, char bySelOre)
+        static void AutominePersonalset_selore82_wrapper(struct AutominePersonal* _this, char bySelOre)
         {
            AutominePersonalset_selore82_user(_this, bySelOre, AutominePersonalset_selore82_next);
         };
-        void AutominePersonalset_work84_wrapper(struct AutominePersonal* _this, bool bWork)
+        static void AutominePersonalset_work84_wrapper(struct AutominePersonal* _this, bool bWork)
         {
            AutominePersonalset_work84_user(_this, bWork, AutominePersonalset_work84_next);
         };
-        char AutominePersonalsub_battery86_wrapper(struct AutominePersonal* _this, unsigned int dwUsed)
+        static char AutominePersonalsub_battery86_wrapper(struct AutominePersonal* _this, unsigned int dwUsed)
         {
            return AutominePersonalsub_battery86_user(_this, dwUsed, AutominePersonalsub_battery86_next);
         };
-        void AutominePersonalsub_filledslot88_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonalsub_filledslot88_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonalsub_filledslot88_user(_this, AutominePersonalsub_filledslot88_next);
         };
-        bool AutominePersonalunregist_from_map90_wrapper(struct AutominePersonal* _this, char byDestroyType)
+        static bool AutominePersonalunregist_from_map90_wrapper(struct AutominePersonal* _this, char byDestroyType)
         {
            return AutominePersonalunregist_from_map90_user(_this, byDestroyType, AutominePersonalunregist_from_map90_next);
         };
-        void AutominePersonaldtor_AutominePersonal92_wrapper(struct AutominePersonal* _this)
+        static void AutominePersonaldtor_AutominePersonal92_wrapper(struct AutominePersonal* _this)
         {
            AutominePersonaldtor_AutominePersonal92_user(_this, AutominePersonaldtor_AutominePersonal92_next);
         };
         
-        hook_record AutominePersonal_functions[] = {
+        static hook_record AutominePersonal_functions[] = {
         {   (LPVOID)0x1402da090L,
             (LPVOID *)&AutominePersonalctor_AutominePersonal2_user,
             (LPVOID *)&AutominePersonalctor_AutominePersonal2_next,
@@ -498,5 +498,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

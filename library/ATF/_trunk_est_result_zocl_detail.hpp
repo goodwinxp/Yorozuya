@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_trunk_est_result_zoclctor__trunk_est_result_zocl2_ptr _trunk_est_result_zoclctor__trunk_est_result_zocl2_next(nullptr);
-        info::_trunk_est_result_zoclctor__trunk_est_result_zocl2_clbk _trunk_est_result_zoclctor__trunk_est_result_zocl2_user(nullptr);
+        static info::_trunk_est_result_zoclctor__trunk_est_result_zocl2_ptr _trunk_est_result_zoclctor__trunk_est_result_zocl2_next(nullptr);
+        static info::_trunk_est_result_zoclctor__trunk_est_result_zocl2_clbk _trunk_est_result_zoclctor__trunk_est_result_zocl2_user(nullptr);
         
-        void _trunk_est_result_zoclctor__trunk_est_result_zocl2_wrapper(struct _trunk_est_result_zocl* _this)
+        static void _trunk_est_result_zoclctor__trunk_est_result_zocl2_wrapper(struct _trunk_est_result_zocl* _this)
         {
            _trunk_est_result_zoclctor__trunk_est_result_zocl2_user(_this, _trunk_est_result_zoclctor__trunk_est_result_zocl2_next);
         };
         
-        hook_record _trunk_est_result_zocl_functions[] = {
+        static hook_record _trunk_est_result_zocl_functions[] = {
         {   (LPVOID)0x1400effa0L,
             (LPVOID *)&_trunk_est_result_zoclctor__trunk_est_result_zocl2_user,
             (LPVOID *)&_trunk_est_result_zoclctor__trunk_est_result_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

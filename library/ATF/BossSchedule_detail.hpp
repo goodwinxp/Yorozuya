@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::BossSchedulector_BossSchedule2_ptr BossSchedulector_BossSchedule2_next(nullptr);
-        info::BossSchedulector_BossSchedule2_clbk BossSchedulector_BossSchedule2_user(nullptr);
-        info::BossScheduleMake_LastTimeRespawnSystemTime4_ptr BossScheduleMake_LastTimeRespawnSystemTime4_next(nullptr);
-        info::BossScheduleMake_LastTimeRespawnSystemTime4_clbk BossScheduleMake_LastTimeRespawnSystemTime4_user(nullptr);
-        info::BossScheduleMake_LastTimeRespawnSystemTimeString6_ptr BossScheduleMake_LastTimeRespawnSystemTimeString6_next(nullptr);
-        info::BossScheduleMake_LastTimeRespawnSystemTimeString6_clbk BossScheduleMake_LastTimeRespawnSystemTimeString6_user(nullptr);
-        info::BossScheduleMake_LiveCount8_ptr BossScheduleMake_LiveCount8_next(nullptr);
-        info::BossScheduleMake_LiveCount8_clbk BossScheduleMake_LiveCount8_user(nullptr);
-        info::BossScheduleMake_LiveCountString10_ptr BossScheduleMake_LiveCountString10_next(nullptr);
-        info::BossScheduleMake_LiveCountString10_clbk BossScheduleMake_LiveCountString10_user(nullptr);
-        info::BossScheduleSave_LastRespawnSystemTime12_ptr BossScheduleSave_LastRespawnSystemTime12_next(nullptr);
-        info::BossScheduleSave_LastRespawnSystemTime12_clbk BossScheduleSave_LastRespawnSystemTime12_user(nullptr);
-        info::BossScheduleSave_LiveCount14_ptr BossScheduleSave_LiveCount14_next(nullptr);
-        info::BossScheduleSave_LiveCount14_clbk BossScheduleSave_LiveCount14_user(nullptr);
-        info::BossScheduledtor_BossSchedule18_ptr BossScheduledtor_BossSchedule18_next(nullptr);
-        info::BossScheduledtor_BossSchedule18_clbk BossScheduledtor_BossSchedule18_user(nullptr);
+        static info::BossSchedulector_BossSchedule2_ptr BossSchedulector_BossSchedule2_next(nullptr);
+        static info::BossSchedulector_BossSchedule2_clbk BossSchedulector_BossSchedule2_user(nullptr);
+        static info::BossScheduleMake_LastTimeRespawnSystemTime4_ptr BossScheduleMake_LastTimeRespawnSystemTime4_next(nullptr);
+        static info::BossScheduleMake_LastTimeRespawnSystemTime4_clbk BossScheduleMake_LastTimeRespawnSystemTime4_user(nullptr);
+        static info::BossScheduleMake_LastTimeRespawnSystemTimeString6_ptr BossScheduleMake_LastTimeRespawnSystemTimeString6_next(nullptr);
+        static info::BossScheduleMake_LastTimeRespawnSystemTimeString6_clbk BossScheduleMake_LastTimeRespawnSystemTimeString6_user(nullptr);
+        static info::BossScheduleMake_LiveCount8_ptr BossScheduleMake_LiveCount8_next(nullptr);
+        static info::BossScheduleMake_LiveCount8_clbk BossScheduleMake_LiveCount8_user(nullptr);
+        static info::BossScheduleMake_LiveCountString10_ptr BossScheduleMake_LiveCountString10_next(nullptr);
+        static info::BossScheduleMake_LiveCountString10_clbk BossScheduleMake_LiveCountString10_user(nullptr);
+        static info::BossScheduleSave_LastRespawnSystemTime12_ptr BossScheduleSave_LastRespawnSystemTime12_next(nullptr);
+        static info::BossScheduleSave_LastRespawnSystemTime12_clbk BossScheduleSave_LastRespawnSystemTime12_user(nullptr);
+        static info::BossScheduleSave_LiveCount14_ptr BossScheduleSave_LiveCount14_next(nullptr);
+        static info::BossScheduleSave_LiveCount14_clbk BossScheduleSave_LiveCount14_user(nullptr);
+        static info::BossScheduledtor_BossSchedule18_ptr BossScheduledtor_BossSchedule18_next(nullptr);
+        static info::BossScheduledtor_BossSchedule18_clbk BossScheduledtor_BossSchedule18_user(nullptr);
         
-        void BossSchedulector_BossSchedule2_wrapper(struct BossSchedule* _this)
+        static void BossSchedulector_BossSchedule2_wrapper(struct BossSchedule* _this)
         {
            BossSchedulector_BossSchedule2_user(_this, BossSchedulector_BossSchedule2_next);
         };
-        struct ATL::CTime* BossScheduleMake_LastTimeRespawnSystemTime4_wrapper(struct ATL::CTime* result, char* strTimeValue)
+        static struct ATL::CTime* BossScheduleMake_LastTimeRespawnSystemTime4_wrapper(struct ATL::CTime* result, char* strTimeValue)
         {
            return BossScheduleMake_LastTimeRespawnSystemTime4_user(result, strTimeValue, BossScheduleMake_LastTimeRespawnSystemTime4_next);
         };
-        bool BossScheduleMake_LastTimeRespawnSystemTimeString6_wrapper(struct BossSchedule* _this, char* strBuff, int nBuffSize)
+        static bool BossScheduleMake_LastTimeRespawnSystemTimeString6_wrapper(struct BossSchedule* _this, char* strBuff, int nBuffSize)
         {
            return BossScheduleMake_LastTimeRespawnSystemTimeString6_user(_this, strBuff, nBuffSize, BossScheduleMake_LastTimeRespawnSystemTimeString6_next);
         };
-        uint16_t BossScheduleMake_LiveCount8_wrapper(char* strTimeValue)
+        static uint16_t BossScheduleMake_LiveCount8_wrapper(char* strTimeValue)
         {
            return BossScheduleMake_LiveCount8_user(strTimeValue, BossScheduleMake_LiveCount8_next);
         };
-        bool BossScheduleMake_LiveCountString10_wrapper(struct BossSchedule* _this, char* strBuff, int nBuffSize)
+        static bool BossScheduleMake_LiveCountString10_wrapper(struct BossSchedule* _this, char* strBuff, int nBuffSize)
         {
            return BossScheduleMake_LiveCountString10_user(_this, strBuff, nBuffSize, BossScheduleMake_LiveCountString10_next);
         };
-        void BossScheduleSave_LastRespawnSystemTime12_wrapper(struct BossSchedule* _this, struct ATL::CTime* systime)
+        static void BossScheduleSave_LastRespawnSystemTime12_wrapper(struct BossSchedule* _this, struct ATL::CTime* systime)
         {
            BossScheduleSave_LastRespawnSystemTime12_user(_this, systime, BossScheduleSave_LastRespawnSystemTime12_next);
         };
-        void BossScheduleSave_LiveCount14_wrapper(struct BossSchedule* _this, uint16_t wCount)
+        static void BossScheduleSave_LiveCount14_wrapper(struct BossSchedule* _this, uint16_t wCount)
         {
            BossScheduleSave_LiveCount14_user(_this, wCount, BossScheduleSave_LiveCount14_next);
         };
-        void BossScheduledtor_BossSchedule18_wrapper(struct BossSchedule* _this)
+        static void BossScheduledtor_BossSchedule18_wrapper(struct BossSchedule* _this)
         {
            BossScheduledtor_BossSchedule18_user(_this, BossScheduledtor_BossSchedule18_next);
         };
         
-        hook_record BossSchedule_functions[] = {
+        static hook_record BossSchedule_functions[] = {
         {   (LPVOID)0x14041b680L,
             (LPVOID *)&BossSchedulector_BossSchedule2_user,
             (LPVOID *)&BossSchedulector_BossSchedule2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

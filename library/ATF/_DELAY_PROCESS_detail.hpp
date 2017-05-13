@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_DELAY_PROCESSCheckOnLoop2_ptr _DELAY_PROCESSCheckOnLoop2_next(nullptr);
-        info::_DELAY_PROCESSCheckOnLoop2_clbk _DELAY_PROCESSCheckOnLoop2_user(nullptr);
-        info::_DELAY_PROCESSDelete4_ptr _DELAY_PROCESSDelete4_next(nullptr);
-        info::_DELAY_PROCESSDelete4_clbk _DELAY_PROCESSDelete4_user(nullptr);
-        info::_DELAY_PROCESSInit6_ptr _DELAY_PROCESSInit6_next(nullptr);
-        info::_DELAY_PROCESSInit6_clbk _DELAY_PROCESSInit6_user(nullptr);
-        info::_DELAY_PROCESSProcess8_ptr _DELAY_PROCESSProcess8_next(nullptr);
-        info::_DELAY_PROCESSProcess8_clbk _DELAY_PROCESSProcess8_user(nullptr);
-        info::_DELAY_PROCESSPush10_ptr _DELAY_PROCESSPush10_next(nullptr);
-        info::_DELAY_PROCESSPush10_clbk _DELAY_PROCESSPush10_user(nullptr);
-        info::_DELAY_PROCESSctor__DELAY_PROCESS12_ptr _DELAY_PROCESSctor__DELAY_PROCESS12_next(nullptr);
-        info::_DELAY_PROCESSctor__DELAY_PROCESS12_clbk _DELAY_PROCESSctor__DELAY_PROCESS12_user(nullptr);
-        info::_DELAY_PROCESSctor__DELAY_PROCESS14_ptr _DELAY_PROCESSctor__DELAY_PROCESS14_next(nullptr);
-        info::_DELAY_PROCESSctor__DELAY_PROCESS14_clbk _DELAY_PROCESSctor__DELAY_PROCESS14_user(nullptr);
-        info::_DELAY_PROCESSdtor__DELAY_PROCESS16_ptr _DELAY_PROCESSdtor__DELAY_PROCESS16_next(nullptr);
-        info::_DELAY_PROCESSdtor__DELAY_PROCESS16_clbk _DELAY_PROCESSdtor__DELAY_PROCESS16_user(nullptr);
+        static info::_DELAY_PROCESSCheckOnLoop2_ptr _DELAY_PROCESSCheckOnLoop2_next(nullptr);
+        static info::_DELAY_PROCESSCheckOnLoop2_clbk _DELAY_PROCESSCheckOnLoop2_user(nullptr);
+        static info::_DELAY_PROCESSDelete4_ptr _DELAY_PROCESSDelete4_next(nullptr);
+        static info::_DELAY_PROCESSDelete4_clbk _DELAY_PROCESSDelete4_user(nullptr);
+        static info::_DELAY_PROCESSInit6_ptr _DELAY_PROCESSInit6_next(nullptr);
+        static info::_DELAY_PROCESSInit6_clbk _DELAY_PROCESSInit6_user(nullptr);
+        static info::_DELAY_PROCESSProcess8_ptr _DELAY_PROCESSProcess8_next(nullptr);
+        static info::_DELAY_PROCESSProcess8_clbk _DELAY_PROCESSProcess8_user(nullptr);
+        static info::_DELAY_PROCESSPush10_ptr _DELAY_PROCESSPush10_next(nullptr);
+        static info::_DELAY_PROCESSPush10_clbk _DELAY_PROCESSPush10_user(nullptr);
+        static info::_DELAY_PROCESSctor__DELAY_PROCESS12_ptr _DELAY_PROCESSctor__DELAY_PROCESS12_next(nullptr);
+        static info::_DELAY_PROCESSctor__DELAY_PROCESS12_clbk _DELAY_PROCESSctor__DELAY_PROCESS12_user(nullptr);
+        static info::_DELAY_PROCESSctor__DELAY_PROCESS14_ptr _DELAY_PROCESSctor__DELAY_PROCESS14_next(nullptr);
+        static info::_DELAY_PROCESSctor__DELAY_PROCESS14_clbk _DELAY_PROCESSctor__DELAY_PROCESS14_user(nullptr);
+        static info::_DELAY_PROCESSdtor__DELAY_PROCESS16_ptr _DELAY_PROCESSdtor__DELAY_PROCESS16_next(nullptr);
+        static info::_DELAY_PROCESSdtor__DELAY_PROCESS16_clbk _DELAY_PROCESSdtor__DELAY_PROCESS16_user(nullptr);
         
-        void _DELAY_PROCESSCheckOnLoop2_wrapper(struct _DELAY_PROCESS* _this)
+        static void _DELAY_PROCESSCheckOnLoop2_wrapper(struct _DELAY_PROCESS* _this)
         {
            _DELAY_PROCESSCheckOnLoop2_user(_this, _DELAY_PROCESSCheckOnLoop2_next);
         };
-        void _DELAY_PROCESSDelete4_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static void _DELAY_PROCESSDelete4_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            _DELAY_PROCESSDelete4_user(_this, dwIndex, dwSerial, _DELAY_PROCESSDelete4_next);
         };
-        bool _DELAY_PROCESSInit6_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwObjectNum, unsigned int dwTerm)
+        static bool _DELAY_PROCESSInit6_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwObjectNum, unsigned int dwTerm)
         {
            return _DELAY_PROCESSInit6_user(_this, dwObjectNum, dwTerm, _DELAY_PROCESSInit6_next);
         };
-        void _DELAY_PROCESSProcess8_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static void _DELAY_PROCESSProcess8_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            _DELAY_PROCESSProcess8_user(_this, dwIndex, dwSerial, _DELAY_PROCESSProcess8_next);
         };
-        bool _DELAY_PROCESSPush10_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static bool _DELAY_PROCESSPush10_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            return _DELAY_PROCESSPush10_user(_this, dwIndex, dwSerial, _DELAY_PROCESSPush10_next);
         };
-        void _DELAY_PROCESSctor__DELAY_PROCESS12_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwObjectNum, unsigned int dwTerm)
+        static void _DELAY_PROCESSctor__DELAY_PROCESS12_wrapper(struct _DELAY_PROCESS* _this, unsigned int dwObjectNum, unsigned int dwTerm)
         {
            _DELAY_PROCESSctor__DELAY_PROCESS12_user(_this, dwObjectNum, dwTerm, _DELAY_PROCESSctor__DELAY_PROCESS12_next);
         };
-        void _DELAY_PROCESSctor__DELAY_PROCESS14_wrapper(struct _DELAY_PROCESS* _this)
+        static void _DELAY_PROCESSctor__DELAY_PROCESS14_wrapper(struct _DELAY_PROCESS* _this)
         {
            _DELAY_PROCESSctor__DELAY_PROCESS14_user(_this, _DELAY_PROCESSctor__DELAY_PROCESS14_next);
         };
-        void _DELAY_PROCESSdtor__DELAY_PROCESS16_wrapper(struct _DELAY_PROCESS* _this)
+        static void _DELAY_PROCESSdtor__DELAY_PROCESS16_wrapper(struct _DELAY_PROCESS* _this)
         {
            _DELAY_PROCESSdtor__DELAY_PROCESS16_user(_this, _DELAY_PROCESSdtor__DELAY_PROCESS16_next);
         };
         
-        hook_record _DELAY_PROCESS_functions[] = {
+        static hook_record _DELAY_PROCESS_functions[] = {
         {   (LPVOID)0x14007de40L,
             (LPVOID *)&_DELAY_PROCESSCheckOnLoop2_user,
             (LPVOID *)&_DELAY_PROCESSCheckOnLoop2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

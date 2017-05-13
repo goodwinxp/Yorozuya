@@ -8,135 +8,135 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::WheatyExceptionReportDumpTypeIndex2_ptr WheatyExceptionReportDumpTypeIndex2_next(nullptr);
-        info::WheatyExceptionReportDumpTypeIndex2_clbk WheatyExceptionReportDumpTypeIndex2_user(nullptr);
-        info::WheatyExceptionReportEnumerateSymbolsCallback4_ptr WheatyExceptionReportEnumerateSymbolsCallback4_next(nullptr);
-        info::WheatyExceptionReportEnumerateSymbolsCallback4_clbk WheatyExceptionReportEnumerateSymbolsCallback4_user(nullptr);
-        info::WheatyExceptionReportFormatOutputValue6_ptr WheatyExceptionReportFormatOutputValue6_next(nullptr);
-        info::WheatyExceptionReportFormatOutputValue6_clbk WheatyExceptionReportFormatOutputValue6_user(nullptr);
-        info::WheatyExceptionReportFormatSymbolValue8_ptr WheatyExceptionReportFormatSymbolValue8_next(nullptr);
-        info::WheatyExceptionReportFormatSymbolValue8_clbk WheatyExceptionReportFormatSymbolValue8_user(nullptr);
-        info::WheatyExceptionReportGenerateExceptionReport10_ptr WheatyExceptionReportGenerateExceptionReport10_next(nullptr);
-        info::WheatyExceptionReportGenerateExceptionReport10_clbk WheatyExceptionReportGenerateExceptionReport10_user(nullptr);
-        info::WheatyExceptionReportGetBasicType12_ptr WheatyExceptionReportGetBasicType12_next(nullptr);
-        info::WheatyExceptionReportGetBasicType12_clbk WheatyExceptionReportGetBasicType12_user(nullptr);
-        info::WheatyExceptionReportGetDisplayInfo14_ptr WheatyExceptionReportGetDisplayInfo14_next(nullptr);
-        info::WheatyExceptionReportGetDisplayInfo14_clbk WheatyExceptionReportGetDisplayInfo14_user(nullptr);
-        info::WheatyExceptionReportGetExceptionString16_ptr WheatyExceptionReportGetExceptionString16_next(nullptr);
-        info::WheatyExceptionReportGetExceptionString16_clbk WheatyExceptionReportGetExceptionString16_user(nullptr);
-        info::WheatyExceptionReportGetLogicalAddress18_ptr WheatyExceptionReportGetLogicalAddress18_next(nullptr);
-        info::WheatyExceptionReportGetLogicalAddress18_clbk WheatyExceptionReportGetLogicalAddress18_user(nullptr);
-        info::WheatyExceptionReportGetOsName20_ptr WheatyExceptionReportGetOsName20_next(nullptr);
-        info::WheatyExceptionReportGetOsName20_clbk WheatyExceptionReportGetOsName20_user(nullptr);
-        info::WheatyExceptionReportGetOsVersion22_ptr WheatyExceptionReportGetOsVersion22_next(nullptr);
-        info::WheatyExceptionReportGetOsVersion22_clbk WheatyExceptionReportGetOsVersion22_user(nullptr);
-        info::WheatyExceptionReportSetDescription24_ptr WheatyExceptionReportSetDescription24_next(nullptr);
-        info::WheatyExceptionReportSetDescription24_clbk WheatyExceptionReportSetDescription24_user(nullptr);
-        info::WheatyExceptionReportSetFtpConnection26_ptr WheatyExceptionReportSetFtpConnection26_next(nullptr);
-        info::WheatyExceptionReportSetFtpConnection26_clbk WheatyExceptionReportSetFtpConnection26_user(nullptr);
-        info::WheatyExceptionReportSetLogName28_ptr WheatyExceptionReportSetLogName28_next(nullptr);
-        info::WheatyExceptionReportSetLogName28_clbk WheatyExceptionReportSetLogName28_user(nullptr);
-        info::WheatyExceptionReportSetRunDialog30_ptr WheatyExceptionReportSetRunDialog30_next(nullptr);
-        info::WheatyExceptionReportSetRunDialog30_clbk WheatyExceptionReportSetRunDialog30_user(nullptr);
-        info::WheatyExceptionReportctor_WheatyExceptionReport32_ptr WheatyExceptionReportctor_WheatyExceptionReport32_next(nullptr);
-        info::WheatyExceptionReportctor_WheatyExceptionReport32_clbk WheatyExceptionReportctor_WheatyExceptionReport32_user(nullptr);
-        info::WheatyExceptionReportWheatyUnhandledExceptionFilter34_ptr WheatyExceptionReportWheatyUnhandledExceptionFilter34_next(nullptr);
-        info::WheatyExceptionReportWheatyUnhandledExceptionFilter34_clbk WheatyExceptionReportWheatyUnhandledExceptionFilter34_user(nullptr);
-        info::WheatyExceptionReportWriteStackDetails36_ptr WheatyExceptionReportWriteStackDetails36_next(nullptr);
-        info::WheatyExceptionReportWriteStackDetails36_clbk WheatyExceptionReportWriteStackDetails36_user(nullptr);
-        info::WheatyExceptionReport_tprintfh38_ptr WheatyExceptionReport_tprintfh38_next(nullptr);
-        info::WheatyExceptionReport_tprintfh38_clbk WheatyExceptionReport_tprintfh38_user(nullptr);
-        info::WheatyExceptionReportprintf40_ptr WheatyExceptionReportprintf40_next(nullptr);
-        info::WheatyExceptionReportprintf40_clbk WheatyExceptionReportprintf40_user(nullptr);
-        info::WheatyExceptionReportdtor_WheatyExceptionReport42_ptr WheatyExceptionReportdtor_WheatyExceptionReport42_next(nullptr);
-        info::WheatyExceptionReportdtor_WheatyExceptionReport42_clbk WheatyExceptionReportdtor_WheatyExceptionReport42_user(nullptr);
+        static info::WheatyExceptionReportDumpTypeIndex2_ptr WheatyExceptionReportDumpTypeIndex2_next(nullptr);
+        static info::WheatyExceptionReportDumpTypeIndex2_clbk WheatyExceptionReportDumpTypeIndex2_user(nullptr);
+        static info::WheatyExceptionReportEnumerateSymbolsCallback4_ptr WheatyExceptionReportEnumerateSymbolsCallback4_next(nullptr);
+        static info::WheatyExceptionReportEnumerateSymbolsCallback4_clbk WheatyExceptionReportEnumerateSymbolsCallback4_user(nullptr);
+        static info::WheatyExceptionReportFormatOutputValue6_ptr WheatyExceptionReportFormatOutputValue6_next(nullptr);
+        static info::WheatyExceptionReportFormatOutputValue6_clbk WheatyExceptionReportFormatOutputValue6_user(nullptr);
+        static info::WheatyExceptionReportFormatSymbolValue8_ptr WheatyExceptionReportFormatSymbolValue8_next(nullptr);
+        static info::WheatyExceptionReportFormatSymbolValue8_clbk WheatyExceptionReportFormatSymbolValue8_user(nullptr);
+        static info::WheatyExceptionReportGenerateExceptionReport10_ptr WheatyExceptionReportGenerateExceptionReport10_next(nullptr);
+        static info::WheatyExceptionReportGenerateExceptionReport10_clbk WheatyExceptionReportGenerateExceptionReport10_user(nullptr);
+        static info::WheatyExceptionReportGetBasicType12_ptr WheatyExceptionReportGetBasicType12_next(nullptr);
+        static info::WheatyExceptionReportGetBasicType12_clbk WheatyExceptionReportGetBasicType12_user(nullptr);
+        static info::WheatyExceptionReportGetDisplayInfo14_ptr WheatyExceptionReportGetDisplayInfo14_next(nullptr);
+        static info::WheatyExceptionReportGetDisplayInfo14_clbk WheatyExceptionReportGetDisplayInfo14_user(nullptr);
+        static info::WheatyExceptionReportGetExceptionString16_ptr WheatyExceptionReportGetExceptionString16_next(nullptr);
+        static info::WheatyExceptionReportGetExceptionString16_clbk WheatyExceptionReportGetExceptionString16_user(nullptr);
+        static info::WheatyExceptionReportGetLogicalAddress18_ptr WheatyExceptionReportGetLogicalAddress18_next(nullptr);
+        static info::WheatyExceptionReportGetLogicalAddress18_clbk WheatyExceptionReportGetLogicalAddress18_user(nullptr);
+        static info::WheatyExceptionReportGetOsName20_ptr WheatyExceptionReportGetOsName20_next(nullptr);
+        static info::WheatyExceptionReportGetOsName20_clbk WheatyExceptionReportGetOsName20_user(nullptr);
+        static info::WheatyExceptionReportGetOsVersion22_ptr WheatyExceptionReportGetOsVersion22_next(nullptr);
+        static info::WheatyExceptionReportGetOsVersion22_clbk WheatyExceptionReportGetOsVersion22_user(nullptr);
+        static info::WheatyExceptionReportSetDescription24_ptr WheatyExceptionReportSetDescription24_next(nullptr);
+        static info::WheatyExceptionReportSetDescription24_clbk WheatyExceptionReportSetDescription24_user(nullptr);
+        static info::WheatyExceptionReportSetFtpConnection26_ptr WheatyExceptionReportSetFtpConnection26_next(nullptr);
+        static info::WheatyExceptionReportSetFtpConnection26_clbk WheatyExceptionReportSetFtpConnection26_user(nullptr);
+        static info::WheatyExceptionReportSetLogName28_ptr WheatyExceptionReportSetLogName28_next(nullptr);
+        static info::WheatyExceptionReportSetLogName28_clbk WheatyExceptionReportSetLogName28_user(nullptr);
+        static info::WheatyExceptionReportSetRunDialog30_ptr WheatyExceptionReportSetRunDialog30_next(nullptr);
+        static info::WheatyExceptionReportSetRunDialog30_clbk WheatyExceptionReportSetRunDialog30_user(nullptr);
+        static info::WheatyExceptionReportctor_WheatyExceptionReport32_ptr WheatyExceptionReportctor_WheatyExceptionReport32_next(nullptr);
+        static info::WheatyExceptionReportctor_WheatyExceptionReport32_clbk WheatyExceptionReportctor_WheatyExceptionReport32_user(nullptr);
+        static info::WheatyExceptionReportWheatyUnhandledExceptionFilter34_ptr WheatyExceptionReportWheatyUnhandledExceptionFilter34_next(nullptr);
+        static info::WheatyExceptionReportWheatyUnhandledExceptionFilter34_clbk WheatyExceptionReportWheatyUnhandledExceptionFilter34_user(nullptr);
+        static info::WheatyExceptionReportWriteStackDetails36_ptr WheatyExceptionReportWriteStackDetails36_next(nullptr);
+        static info::WheatyExceptionReportWriteStackDetails36_clbk WheatyExceptionReportWriteStackDetails36_user(nullptr);
+        static info::WheatyExceptionReport_tprintfh38_ptr WheatyExceptionReport_tprintfh38_next(nullptr);
+        static info::WheatyExceptionReport_tprintfh38_clbk WheatyExceptionReport_tprintfh38_user(nullptr);
+        static info::WheatyExceptionReportprintf40_ptr WheatyExceptionReportprintf40_next(nullptr);
+        static info::WheatyExceptionReportprintf40_clbk WheatyExceptionReportprintf40_user(nullptr);
+        static info::WheatyExceptionReportdtor_WheatyExceptionReport42_ptr WheatyExceptionReportdtor_WheatyExceptionReport42_next(nullptr);
+        static info::WheatyExceptionReportdtor_WheatyExceptionReport42_clbk WheatyExceptionReportdtor_WheatyExceptionReport42_user(nullptr);
         
-        char* WheatyExceptionReportDumpTypeIndex2_wrapper(char* pszCurrBuffer, uint64_t modBase, unsigned int dwTypeIndex, unsigned int nestingLevel, uint64_t offset, bool* bHandled)
+        static char* WheatyExceptionReportDumpTypeIndex2_wrapper(char* pszCurrBuffer, uint64_t modBase, unsigned int dwTypeIndex, unsigned int nestingLevel, uint64_t offset, bool* bHandled)
         {
            return WheatyExceptionReportDumpTypeIndex2_user(pszCurrBuffer, modBase, dwTypeIndex, nestingLevel, offset, bHandled, WheatyExceptionReportDumpTypeIndex2_next);
         };
-        int WheatyExceptionReportEnumerateSymbolsCallback4_wrapper(struct _SYMBOL_INFO* pSymInfo, unsigned int SymbolSize, void* UserContext)
+        static int WheatyExceptionReportEnumerateSymbolsCallback4_wrapper(struct _SYMBOL_INFO* pSymInfo, unsigned int SymbolSize, void* UserContext)
         {
            return WheatyExceptionReportEnumerateSymbolsCallback4_user(pSymInfo, SymbolSize, UserContext, WheatyExceptionReportEnumerateSymbolsCallback4_next);
         };
-        char* WheatyExceptionReportFormatOutputValue6_wrapper(char* pszCurrBuffer, BasicType basicType, uint64_t length, void* pAddress)
+        static char* WheatyExceptionReportFormatOutputValue6_wrapper(char* pszCurrBuffer, BasicType basicType, uint64_t length, void* pAddress)
         {
            return WheatyExceptionReportFormatOutputValue6_user(pszCurrBuffer, basicType, length, pAddress, WheatyExceptionReportFormatOutputValue6_next);
         };
-        bool WheatyExceptionReportFormatSymbolValue8_wrapper(struct _SYMBOL_INFO* pSym, struct _tagSTACKFRAME64* sf, char* pszBuffer, unsigned int cbBuffer)
+        static bool WheatyExceptionReportFormatSymbolValue8_wrapper(struct _SYMBOL_INFO* pSym, struct _tagSTACKFRAME64* sf, char* pszBuffer, unsigned int cbBuffer)
         {
            return WheatyExceptionReportFormatSymbolValue8_user(pSym, sf, pszBuffer, cbBuffer, WheatyExceptionReportFormatSymbolValue8_next);
         };
-        void WheatyExceptionReportGenerateExceptionReport10_wrapper(struct _EXCEPTION_POINTERS* pExceptionInfo)
+        static void WheatyExceptionReportGenerateExceptionReport10_wrapper(struct _EXCEPTION_POINTERS* pExceptionInfo)
         {
            WheatyExceptionReportGenerateExceptionReport10_user(pExceptionInfo, WheatyExceptionReportGenerateExceptionReport10_next);
         };
-        BasicType WheatyExceptionReportGetBasicType12_wrapper(unsigned int typeIndex, uint64_t modBase)
+        static BasicType WheatyExceptionReportGetBasicType12_wrapper(unsigned int typeIndex, uint64_t modBase)
         {
            return WheatyExceptionReportGetBasicType12_user(typeIndex, modBase, WheatyExceptionReportGetBasicType12_next);
         };
-        int WheatyExceptionReportGetDisplayInfo14_wrapper(int nDeviceIndex, char* lpszDeviceInfo, char* lpszMonitorInfo)
+        static int WheatyExceptionReportGetDisplayInfo14_wrapper(int nDeviceIndex, char* lpszDeviceInfo, char* lpszMonitorInfo)
         {
            return WheatyExceptionReportGetDisplayInfo14_user(nDeviceIndex, lpszDeviceInfo, lpszMonitorInfo, WheatyExceptionReportGetDisplayInfo14_next);
         };
-        char* WheatyExceptionReportGetExceptionString16_wrapper(unsigned int dwCode)
+        static char* WheatyExceptionReportGetExceptionString16_wrapper(unsigned int dwCode)
         {
            return WheatyExceptionReportGetExceptionString16_user(dwCode, WheatyExceptionReportGetExceptionString16_next);
         };
-        int WheatyExceptionReportGetLogicalAddress18_wrapper(void* addr, char* szModule, unsigned int len, unsigned int* section, unsigned int* offset)
+        static int WheatyExceptionReportGetLogicalAddress18_wrapper(void* addr, char* szModule, unsigned int len, unsigned int* section, unsigned int* offset)
         {
            return WheatyExceptionReportGetLogicalAddress18_user(addr, szModule, len, section, offset, WheatyExceptionReportGetLogicalAddress18_next);
         };
-        char* WheatyExceptionReportGetOsName20_wrapper(unsigned int dwPlatformId, unsigned int dwMajorVersion, unsigned int dwMinorVersion)
+        static char* WheatyExceptionReportGetOsName20_wrapper(unsigned int dwPlatformId, unsigned int dwMajorVersion, unsigned int dwMinorVersion)
         {
            return WheatyExceptionReportGetOsName20_user(dwPlatformId, dwMajorVersion, dwMinorVersion, WheatyExceptionReportGetOsName20_next);
         };
-        char* WheatyExceptionReportGetOsVersion22_wrapper()
+        static char* WheatyExceptionReportGetOsVersion22_wrapper()
         {
            return WheatyExceptionReportGetOsVersion22_user(WheatyExceptionReportGetOsVersion22_next);
         };
-        void WheatyExceptionReportSetDescription24_wrapper(struct WheatyExceptionReport* _this, char* pszDescription)
+        static void WheatyExceptionReportSetDescription24_wrapper(struct WheatyExceptionReport* _this, char* pszDescription)
         {
            WheatyExceptionReportSetDescription24_user(_this, pszDescription, WheatyExceptionReportSetDescription24_next);
         };
-        void WheatyExceptionReportSetFtpConnection26_wrapper(struct WheatyExceptionReport* _this, char* pszFtpIp, unsigned int nFtpPort, char* pszFtpId, char* pszFtpPwd, char* pszFtpDirectory)
+        static void WheatyExceptionReportSetFtpConnection26_wrapper(struct WheatyExceptionReport* _this, char* pszFtpIp, unsigned int nFtpPort, char* pszFtpId, char* pszFtpPwd, char* pszFtpDirectory)
         {
            WheatyExceptionReportSetFtpConnection26_user(_this, pszFtpIp, nFtpPort, pszFtpId, pszFtpPwd, pszFtpDirectory, WheatyExceptionReportSetFtpConnection26_next);
         };
-        void WheatyExceptionReportSetLogName28_wrapper(struct WheatyExceptionReport* _this, char* pszLogName)
+        static void WheatyExceptionReportSetLogName28_wrapper(struct WheatyExceptionReport* _this, char* pszLogName)
         {
            WheatyExceptionReportSetLogName28_user(_this, pszLogName, WheatyExceptionReportSetLogName28_next);
         };
-        void WheatyExceptionReportSetRunDialog30_wrapper(struct WheatyExceptionReport* _this, int bRun)
+        static void WheatyExceptionReportSetRunDialog30_wrapper(struct WheatyExceptionReport* _this, int bRun)
         {
            WheatyExceptionReportSetRunDialog30_user(_this, bRun, WheatyExceptionReportSetRunDialog30_next);
         };
-        void WheatyExceptionReportctor_WheatyExceptionReport32_wrapper(struct WheatyExceptionReport* _this)
+        static void WheatyExceptionReportctor_WheatyExceptionReport32_wrapper(struct WheatyExceptionReport* _this)
         {
            WheatyExceptionReportctor_WheatyExceptionReport32_user(_this, WheatyExceptionReportctor_WheatyExceptionReport32_next);
         };
-        int WheatyExceptionReportWheatyUnhandledExceptionFilter34_wrapper(struct _EXCEPTION_POINTERS* pExceptionInfo)
+        static int WheatyExceptionReportWheatyUnhandledExceptionFilter34_wrapper(struct _EXCEPTION_POINTERS* pExceptionInfo)
         {
            return WheatyExceptionReportWheatyUnhandledExceptionFilter34_user(pExceptionInfo, WheatyExceptionReportWheatyUnhandledExceptionFilter34_next);
         };
-        void WheatyExceptionReportWriteStackDetails36_wrapper(struct _CONTEXT* pContext, bool bWriteVariables)
+        static void WheatyExceptionReportWriteStackDetails36_wrapper(struct _CONTEXT* pContext, bool bWriteVariables)
         {
            WheatyExceptionReportWriteStackDetails36_user(pContext, bWriteVariables, WheatyExceptionReportWriteStackDetails36_next);
         };
-        int WheatyExceptionReport_tprintfh38_wrapper(void* hFile, char* format)
+        static int WheatyExceptionReport_tprintfh38_wrapper(void* hFile, char* format)
         {
            return WheatyExceptionReport_tprintfh38_user(hFile, format, WheatyExceptionReport_tprintfh38_next);
         };
-        int WheatyExceptionReportprintf40_wrapper(char* format)
+        static int WheatyExceptionReportprintf40_wrapper(char* format)
         {
            return WheatyExceptionReportprintf40_user(format, WheatyExceptionReportprintf40_next);
         };
-        void WheatyExceptionReportdtor_WheatyExceptionReport42_wrapper(struct WheatyExceptionReport* _this)
+        static void WheatyExceptionReportdtor_WheatyExceptionReport42_wrapper(struct WheatyExceptionReport* _this)
         {
            WheatyExceptionReportdtor_WheatyExceptionReport42_user(_this, WheatyExceptionReportdtor_WheatyExceptionReport42_next);
         };
         
-        hook_record WheatyExceptionReport_functions[] = {
+        static hook_record WheatyExceptionReport_functions[] = {
         {   (LPVOID)0x140440d40L,
             (LPVOID *)&WheatyExceptionReportDumpTypeIndex2_user,
             (LPVOID *)&WheatyExceptionReportDumpTypeIndex2_next,
@@ -245,5 +245,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AINetFilector_AINetFile2_ptr AINetFilector_AINetFile2_next(nullptr);
-        info::AINetFilector_AINetFile2_clbk AINetFilector_AINetFile2_user(nullptr);
-        info::AINetFileClose4_ptr AINetFileClose4_next(nullptr);
-        info::AINetFileClose4_clbk AINetFileClose4_user(nullptr);
-        info::AINetFileRead6_ptr AINetFileRead6_next(nullptr);
-        info::AINetFileRead6_clbk AINetFileRead6_user(nullptr);
-        info::AINetFileWrite8_ptr AINetFileWrite8_next(nullptr);
-        info::AINetFileWrite8_clbk AINetFileWrite8_user(nullptr);
-        info::AINetFileWriteString10_ptr AINetFileWriteString10_next(nullptr);
-        info::AINetFileWriteString10_clbk AINetFileWriteString10_user(nullptr);
-        info::AINetFiledtor_AINetFile15_ptr AINetFiledtor_AINetFile15_next(nullptr);
-        info::AINetFiledtor_AINetFile15_clbk AINetFiledtor_AINetFile15_user(nullptr);
+        static info::AINetFilector_AINetFile2_ptr AINetFilector_AINetFile2_next(nullptr);
+        static info::AINetFilector_AINetFile2_clbk AINetFilector_AINetFile2_user(nullptr);
+        static info::AINetFileClose4_ptr AINetFileClose4_next(nullptr);
+        static info::AINetFileClose4_clbk AINetFileClose4_user(nullptr);
+        static info::AINetFileRead6_ptr AINetFileRead6_next(nullptr);
+        static info::AINetFileRead6_clbk AINetFileRead6_user(nullptr);
+        static info::AINetFileWrite8_ptr AINetFileWrite8_next(nullptr);
+        static info::AINetFileWrite8_clbk AINetFileWrite8_user(nullptr);
+        static info::AINetFileWriteString10_ptr AINetFileWriteString10_next(nullptr);
+        static info::AINetFileWriteString10_clbk AINetFileWriteString10_user(nullptr);
+        static info::AINetFiledtor_AINetFile15_ptr AINetFiledtor_AINetFile15_next(nullptr);
+        static info::AINetFiledtor_AINetFile15_clbk AINetFiledtor_AINetFile15_user(nullptr);
         
-        void AINetFilector_AINetFile2_wrapper(struct AINetFile* _this, void* hFile, unsigned int dwAccess)
+        static void AINetFilector_AINetFile2_wrapper(struct AINetFile* _this, void* hFile, unsigned int dwAccess)
         {
            AINetFilector_AINetFile2_user(_this, hFile, dwAccess, AINetFilector_AINetFile2_next);
         };
-        void AINetFileClose4_wrapper(struct AINetFile* _this)
+        static void AINetFileClose4_wrapper(struct AINetFile* _this)
         {
            AINetFileClose4_user(_this, AINetFileClose4_next);
         };
-        unsigned int AINetFileRead6_wrapper(struct AINetFile* _this, void* lpBuf, unsigned int nCount)
+        static unsigned int AINetFileRead6_wrapper(struct AINetFile* _this, void* lpBuf, unsigned int nCount)
         {
            return AINetFileRead6_user(_this, lpBuf, nCount, AINetFileRead6_next);
         };
-        unsigned int AINetFileWrite8_wrapper(struct AINetFile* _this, void* lpBuf, unsigned int nCount)
+        static unsigned int AINetFileWrite8_wrapper(struct AINetFile* _this, void* lpBuf, unsigned int nCount)
         {
            return AINetFileWrite8_user(_this, lpBuf, nCount, AINetFileWrite8_next);
         };
-        int AINetFileWriteString10_wrapper(struct AINetFile* _this, char* str)
+        static int AINetFileWriteString10_wrapper(struct AINetFile* _this, char* str)
         {
            return AINetFileWriteString10_user(_this, str, AINetFileWriteString10_next);
         };
-        void AINetFiledtor_AINetFile15_wrapper(struct AINetFile* _this)
+        static void AINetFiledtor_AINetFile15_wrapper(struct AINetFile* _this)
         {
            AINetFiledtor_AINetFile15_user(_this, AINetFiledtor_AINetFile15_next);
         };
         
-        hook_record AINetFile_functions[] = {
+        static hook_record AINetFile_functions[] = {
         {   (LPVOID)0x140432380L,
             (LPVOID *)&AINetFilector_AINetFile2_user,
             (LPVOID *)&AINetFilector_AINetFile2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPvpUserRankingTargetUserListAdd2_ptr CPvpUserRankingTargetUserListAdd2_next(nullptr);
-        info::CPvpUserRankingTargetUserListAdd2_clbk CPvpUserRankingTargetUserListAdd2_user(nullptr);
-        info::CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_ptr CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_next(nullptr);
-        info::CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_clbk CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_user(nullptr);
-        info::CPvpUserRankingTargetUserListClearRankingStart6_ptr CPvpUserRankingTargetUserListClearRankingStart6_next(nullptr);
-        info::CPvpUserRankingTargetUserListClearRankingStart6_clbk CPvpUserRankingTargetUserListClearRankingStart6_user(nullptr);
-        info::CPvpUserRankingTargetUserListGetAddedTotalCnt8_ptr CPvpUserRankingTargetUserListGetAddedTotalCnt8_next(nullptr);
-        info::CPvpUserRankingTargetUserListGetAddedTotalCnt8_clbk CPvpUserRankingTargetUserListGetAddedTotalCnt8_user(nullptr);
-        info::CPvpUserRankingTargetUserListUpdateCharGrade10_ptr CPvpUserRankingTargetUserListUpdateCharGrade10_next(nullptr);
-        info::CPvpUserRankingTargetUserListUpdateCharGrade10_clbk CPvpUserRankingTargetUserListUpdateCharGrade10_user(nullptr);
-        info::CPvpUserRankingTargetUserListUpdateRaceRankStep1112_ptr CPvpUserRankingTargetUserListUpdateRaceRankStep1112_next(nullptr);
-        info::CPvpUserRankingTargetUserListUpdateRaceRankStep1112_clbk CPvpUserRankingTargetUserListUpdateRaceRankStep1112_user(nullptr);
-        info::CPvpUserRankingTargetUserListassign14_ptr CPvpUserRankingTargetUserListassign14_next(nullptr);
-        info::CPvpUserRankingTargetUserListassign14_clbk CPvpUserRankingTargetUserListassign14_user(nullptr);
-        info::CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_ptr CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_next(nullptr);
-        info::CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_clbk CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_user(nullptr);
+        static info::CPvpUserRankingTargetUserListAdd2_ptr CPvpUserRankingTargetUserListAdd2_next(nullptr);
+        static info::CPvpUserRankingTargetUserListAdd2_clbk CPvpUserRankingTargetUserListAdd2_user(nullptr);
+        static info::CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_ptr CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_next(nullptr);
+        static info::CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_clbk CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_user(nullptr);
+        static info::CPvpUserRankingTargetUserListClearRankingStart6_ptr CPvpUserRankingTargetUserListClearRankingStart6_next(nullptr);
+        static info::CPvpUserRankingTargetUserListClearRankingStart6_clbk CPvpUserRankingTargetUserListClearRankingStart6_user(nullptr);
+        static info::CPvpUserRankingTargetUserListGetAddedTotalCnt8_ptr CPvpUserRankingTargetUserListGetAddedTotalCnt8_next(nullptr);
+        static info::CPvpUserRankingTargetUserListGetAddedTotalCnt8_clbk CPvpUserRankingTargetUserListGetAddedTotalCnt8_user(nullptr);
+        static info::CPvpUserRankingTargetUserListUpdateCharGrade10_ptr CPvpUserRankingTargetUserListUpdateCharGrade10_next(nullptr);
+        static info::CPvpUserRankingTargetUserListUpdateCharGrade10_clbk CPvpUserRankingTargetUserListUpdateCharGrade10_user(nullptr);
+        static info::CPvpUserRankingTargetUserListUpdateRaceRankStep1112_ptr CPvpUserRankingTargetUserListUpdateRaceRankStep1112_next(nullptr);
+        static info::CPvpUserRankingTargetUserListUpdateRaceRankStep1112_clbk CPvpUserRankingTargetUserListUpdateRaceRankStep1112_user(nullptr);
+        static info::CPvpUserRankingTargetUserListassign14_ptr CPvpUserRankingTargetUserListassign14_next(nullptr);
+        static info::CPvpUserRankingTargetUserListassign14_clbk CPvpUserRankingTargetUserListassign14_user(nullptr);
+        static info::CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_ptr CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_next(nullptr);
+        static info::CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_clbk CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_user(nullptr);
         
-        void CPvpUserRankingTargetUserListAdd2_wrapper(struct CPvpUserRankingTargetUserList* _this, unsigned int dwSerial, char byLv, char byRace)
+        static void CPvpUserRankingTargetUserListAdd2_wrapper(struct CPvpUserRankingTargetUserList* _this, unsigned int dwSerial, char byLv, char byRace)
         {
            CPvpUserRankingTargetUserListAdd2_user(_this, dwSerial, byLv, byRace, CPvpUserRankingTargetUserListAdd2_next);
         };
-        void CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static void CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_user(_this, CPvpUserRankingTargetUserListctor_CPvpUserRankingTargetUserList4_next);
         };
-        void CPvpUserRankingTargetUserListClearRankingStart6_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static void CPvpUserRankingTargetUserListClearRankingStart6_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            CPvpUserRankingTargetUserListClearRankingStart6_user(_this, CPvpUserRankingTargetUserListClearRankingStart6_next);
         };
-        unsigned int CPvpUserRankingTargetUserListGetAddedTotalCnt8_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static unsigned int CPvpUserRankingTargetUserListGetAddedTotalCnt8_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            return CPvpUserRankingTargetUserListGetAddedTotalCnt8_user(_this, CPvpUserRankingTargetUserListGetAddedTotalCnt8_next);
         };
-        void CPvpUserRankingTargetUserListUpdateCharGrade10_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static void CPvpUserRankingTargetUserListUpdateCharGrade10_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            CPvpUserRankingTargetUserListUpdateCharGrade10_user(_this, CPvpUserRankingTargetUserListUpdateCharGrade10_next);
         };
-        char CPvpUserRankingTargetUserListUpdateRaceRankStep1112_wrapper(struct CPvpUserRankingTargetUserList* _this, char* szData)
+        static char CPvpUserRankingTargetUserListUpdateRaceRankStep1112_wrapper(struct CPvpUserRankingTargetUserList* _this, char* szData)
         {
            return CPvpUserRankingTargetUserListUpdateRaceRankStep1112_user(_this, szData, CPvpUserRankingTargetUserListUpdateRaceRankStep1112_next);
         };
-        bool CPvpUserRankingTargetUserListassign14_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static bool CPvpUserRankingTargetUserListassign14_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            return CPvpUserRankingTargetUserListassign14_user(_this, CPvpUserRankingTargetUserListassign14_next);
         };
-        void CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_wrapper(struct CPvpUserRankingTargetUserList* _this)
+        static void CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_wrapper(struct CPvpUserRankingTargetUserList* _this)
         {
            CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_user(_this, CPvpUserRankingTargetUserListdtor_CPvpUserRankingTargetUserList16_next);
         };
         
-        hook_record CPvpUserRankingTargetUserList_functions[] = {
+        static hook_record CPvpUserRankingTargetUserList_functions[] = {
         {   (LPVOID)0x140336280L,
             (LPVOID *)&CPvpUserRankingTargetUserListAdd2_user,
             (LPVOID *)&CPvpUserRankingTargetUserListAdd2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

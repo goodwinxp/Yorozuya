@@ -8,837 +8,837 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterAddEventItem2_ptr CMonsterAddEventItem2_next(nullptr);
-        info::CMonsterAddEventItem2_clbk CMonsterAddEventItem2_user(nullptr);
-        info::CMonsterAssistSF4_ptr CMonsterAssistSF4_next(nullptr);
-        info::CMonsterAssistSF4_clbk CMonsterAssistSF4_user(nullptr);
-        info::CMonsterAttack6_ptr CMonsterAttack6_next(nullptr);
-        info::CMonsterAttack6_clbk CMonsterAttack6_user(nullptr);
-        info::CMonsterAttackObject8_ptr CMonsterAttackObject8_next(nullptr);
-        info::CMonsterAttackObject8_clbk CMonsterAttackObject8_user(nullptr);
-        info::CMonsterAttackableHeight10_ptr CMonsterAttackableHeight10_next(nullptr);
-        info::CMonsterAttackableHeight10_clbk CMonsterAttackableHeight10_user(nullptr);
-        info::CMonsterAutoRecover12_ptr CMonsterAutoRecover12_next(nullptr);
-        info::CMonsterAutoRecover12_clbk CMonsterAutoRecover12_user(nullptr);
-        info::CMonsterBeTargeted14_ptr CMonsterBeTargeted14_next(nullptr);
-        info::CMonsterBeTargeted14_clbk CMonsterBeTargeted14_user(nullptr);
-        info::CMonsterctor_CMonster16_ptr CMonsterctor_CMonster16_next(nullptr);
-        info::CMonsterctor_CMonster16_clbk CMonsterctor_CMonster16_user(nullptr);
-        info::CMonsterChangeApparition18_ptr CMonsterChangeApparition18_next(nullptr);
-        info::CMonsterChangeApparition18_clbk CMonsterChangeApparition18_user(nullptr);
-        info::CMonsterCheckAutoRecoverHP20_ptr CMonsterCheckAutoRecoverHP20_next(nullptr);
-        info::CMonsterCheckAutoRecoverHP20_clbk CMonsterCheckAutoRecoverHP20_user(nullptr);
-        info::CMonsterCheckDelayDestroy22_ptr CMonsterCheckDelayDestroy22_next(nullptr);
-        info::CMonsterCheckDelayDestroy22_clbk CMonsterCheckDelayDestroy22_user(nullptr);
-        info::CMonsterCheckEmotionPresentation24_ptr CMonsterCheckEmotionPresentation24_next(nullptr);
-        info::CMonsterCheckEmotionPresentation24_clbk CMonsterCheckEmotionPresentation24_user(nullptr);
-        info::CMonsterCheckEventEmotionPresentation26_ptr CMonsterCheckEventEmotionPresentation26_next(nullptr);
-        info::CMonsterCheckEventEmotionPresentation26_clbk CMonsterCheckEventEmotionPresentation26_user(nullptr);
-        info::CMonsterCheckLootItem28_ptr CMonsterCheckLootItem28_next(nullptr);
-        info::CMonsterCheckLootItem28_clbk CMonsterCheckLootItem28_user(nullptr);
-        info::CMonsterCheckMonsterRotate30_ptr CMonsterCheckMonsterRotate30_next(nullptr);
-        info::CMonsterCheckMonsterRotate30_clbk CMonsterCheckMonsterRotate30_user(nullptr);
-        info::CMonsterCheckMonsterStateData32_ptr CMonsterCheckMonsterStateData32_next(nullptr);
-        info::CMonsterCheckMonsterStateData32_clbk CMonsterCheckMonsterStateData32_user(nullptr);
-        info::CMonsterCheckRespawnProcess34_ptr CMonsterCheckRespawnProcess34_next(nullptr);
-        info::CMonsterCheckRespawnProcess34_clbk CMonsterCheckRespawnProcess34_user(nullptr);
-        info::CMonsterClearEmotionPresentation36_ptr CMonsterClearEmotionPresentation36_next(nullptr);
-        info::CMonsterClearEmotionPresentation36_clbk CMonsterClearEmotionPresentation36_user(nullptr);
-        info::CMonsterCommand_ChildMonDestroy38_ptr CMonsterCommand_ChildMonDestroy38_next(nullptr);
-        info::CMonsterCommand_ChildMonDestroy38_clbk CMonsterCommand_ChildMonDestroy38_user(nullptr);
-        info::CMonsterConvertTargetPlayer40_ptr CMonsterConvertTargetPlayer40_next(nullptr);
-        info::CMonsterConvertTargetPlayer40_clbk CMonsterConvertTargetPlayer40_user(nullptr);
-        info::CMonsterCreate42_ptr CMonsterCreate42_next(nullptr);
-        info::CMonsterCreate42_clbk CMonsterCreate42_user(nullptr);
-        info::CMonsterCreateAI44_ptr CMonsterCreateAI44_next(nullptr);
-        info::CMonsterCreateAI44_clbk CMonsterCreateAI44_user(nullptr);
-        info::CMonsterDestroy46_ptr CMonsterDestroy46_next(nullptr);
-        info::CMonsterDestroy46_clbk CMonsterDestroy46_user(nullptr);
-        info::CMonsterDisableStdItemLoot48_ptr CMonsterDisableStdItemLoot48_next(nullptr);
-        info::CMonsterDisableStdItemLoot48_clbk CMonsterDisableStdItemLoot48_user(nullptr);
-        info::CMonsterFixTargetWhile50_ptr CMonsterFixTargetWhile50_next(nullptr);
-        info::CMonsterFixTargetWhile50_clbk CMonsterFixTargetWhile50_user(nullptr);
-        info::CMonsterGeEmotionImpStdTime52_ptr CMonsterGeEmotionImpStdTime52_next(nullptr);
-        info::CMonsterGeEmotionImpStdTime52_clbk CMonsterGeEmotionImpStdTime52_user(nullptr);
-        info::CMonsterGetAggroResetTime54_ptr CMonsterGetAggroResetTime54_next(nullptr);
-        info::CMonsterGetAggroResetTime54_clbk CMonsterGetAggroResetTime54_user(nullptr);
-        info::CMonsterGetAggroShortTime56_ptr CMonsterGetAggroShortTime56_next(nullptr);
-        info::CMonsterGetAggroShortTime56_clbk CMonsterGetAggroShortTime56_user(nullptr);
-        info::CMonsterGetAttackDP58_ptr CMonsterGetAttackDP58_next(nullptr);
-        info::CMonsterGetAttackDP58_clbk CMonsterGetAttackDP58_user(nullptr);
-        info::CMonsterGetAttackPart60_ptr CMonsterGetAttackPart60_next(nullptr);
-        info::CMonsterGetAttackPart60_clbk CMonsterGetAttackPart60_user(nullptr);
-        info::CMonsterGetAttackRange62_ptr CMonsterGetAttackRange62_next(nullptr);
-        info::CMonsterGetAttackRange62_clbk CMonsterGetAttackRange62_user(nullptr);
-        info::CMonsterGetAttackTarget64_ptr CMonsterGetAttackTarget64_next(nullptr);
-        info::CMonsterGetAttackTarget64_clbk CMonsterGetAttackTarget64_user(nullptr);
-        info::CMonsterGetBonusInAreaAggro66_ptr CMonsterGetBonusInAreaAggro66_next(nullptr);
-        info::CMonsterGetBonusInAreaAggro66_clbk CMonsterGetBonusInAreaAggro66_user(nullptr);
-        info::CMonsterGetCombatState68_ptr CMonsterGetCombatState68_next(nullptr);
-        info::CMonsterGetCombatState68_clbk CMonsterGetCombatState68_user(nullptr);
-        info::CMonsterGetCritical_Exception_Rate70_ptr CMonsterGetCritical_Exception_Rate70_next(nullptr);
-        info::CMonsterGetCritical_Exception_Rate70_clbk CMonsterGetCritical_Exception_Rate70_user(nullptr);
-        info::CMonsterGetDefFC72_ptr CMonsterGetDefFC72_next(nullptr);
-        info::CMonsterGetDefFC72_clbk CMonsterGetDefFC72_user(nullptr);
-        info::CMonsterGetDefFacing74_ptr CMonsterGetDefFacing74_next(nullptr);
-        info::CMonsterGetDefFacing74_clbk CMonsterGetDefFacing74_user(nullptr);
-        info::CMonsterGetDefGap76_ptr CMonsterGetDefGap76_next(nullptr);
-        info::CMonsterGetDefGap76_clbk CMonsterGetDefGap76_user(nullptr);
-        info::CMonsterGetDefSkill78_ptr CMonsterGetDefSkill78_next(nullptr);
-        info::CMonsterGetDefSkill78_clbk CMonsterGetDefSkill78_user(nullptr);
-        info::CMonsterGetEmotionState80_ptr CMonsterGetEmotionState80_next(nullptr);
-        info::CMonsterGetEmotionState80_clbk CMonsterGetEmotionState80_user(nullptr);
-        info::CMonsterGetFireTol82_ptr CMonsterGetFireTol82_next(nullptr);
-        info::CMonsterGetFireTol82_clbk CMonsterGetFireTol82_user(nullptr);
-        info::CMonsterGetGenAttackProb84_ptr CMonsterGetGenAttackProb84_next(nullptr);
-        info::CMonsterGetGenAttackProb84_clbk CMonsterGetGenAttackProb84_user(nullptr);
-        info::CMonsterGetHP86_ptr CMonsterGetHP86_next(nullptr);
-        info::CMonsterGetHP86_clbk CMonsterGetHP86_user(nullptr);
-        info::CMonsterGetHelpMeCase88_ptr CMonsterGetHelpMeCase88_next(nullptr);
-        info::CMonsterGetHelpMeCase88_clbk CMonsterGetHelpMeCase88_user(nullptr);
-        info::CMonsterGetLevel90_ptr CMonsterGetLevel90_next(nullptr);
-        info::CMonsterGetLevel90_clbk CMonsterGetLevel90_user(nullptr);
-        info::CMonsterGetMaxDMGSFContCount92_ptr CMonsterGetMaxDMGSFContCount92_next(nullptr);
-        info::CMonsterGetMaxDMGSFContCount92_clbk CMonsterGetMaxDMGSFContCount92_user(nullptr);
-        info::CMonsterGetMaxHP94_ptr CMonsterGetMaxHP94_next(nullptr);
-        info::CMonsterGetMaxHP94_clbk CMonsterGetMaxHP94_user(nullptr);
-        info::CMonsterGetMob_AsistType96_ptr CMonsterGetMob_AsistType96_next(nullptr);
-        info::CMonsterGetMob_AsistType96_clbk CMonsterGetMob_AsistType96_user(nullptr);
-        info::CMonsterGetMob_SubRace98_ptr CMonsterGetMob_SubRace98_next(nullptr);
-        info::CMonsterGetMob_SubRace98_clbk CMonsterGetMob_SubRace98_user(nullptr);
-        info::CMonsterGetMonStateInfo100_ptr CMonsterGetMonStateInfo100_next(nullptr);
-        info::CMonsterGetMonStateInfo100_clbk CMonsterGetMonStateInfo100_user(nullptr);
-        info::CMonsterGetMonsterGrade102_ptr CMonsterGetMonsterGrade102_next(nullptr);
-        info::CMonsterGetMonsterGrade102_clbk CMonsterGetMonsterGrade102_user(nullptr);
-        info::CMonsterGetMoveSpeed104_ptr CMonsterGetMoveSpeed104_next(nullptr);
-        info::CMonsterGetMoveSpeed104_clbk CMonsterGetMoveSpeed104_user(nullptr);
-        info::CMonsterGetMoveType106_ptr CMonsterGetMoveType106_next(nullptr);
-        info::CMonsterGetMoveType106_clbk CMonsterGetMoveType106_user(nullptr);
-        info::CMonsterGetMyDMGSFContCount108_ptr CMonsterGetMyDMGSFContCount108_next(nullptr);
-        info::CMonsterGetMyDMGSFContCount108_clbk CMonsterGetMyDMGSFContCount108_user(nullptr);
-        info::CMonsterGetNewMonSerial110_ptr CMonsterGetNewMonSerial110_next(nullptr);
-        info::CMonsterGetNewMonSerial110_clbk CMonsterGetNewMonSerial110_user(nullptr);
-        info::CMonsterGetObjName112_ptr CMonsterGetObjName112_next(nullptr);
-        info::CMonsterGetObjName112_clbk CMonsterGetObjName112_user(nullptr);
-        info::CMonsterGetObjRace114_ptr CMonsterGetObjRace114_next(nullptr);
-        info::CMonsterGetObjRace114_clbk CMonsterGetObjRace114_user(nullptr);
-        info::CMonsterGetOffensiveType116_ptr CMonsterGetOffensiveType116_next(nullptr);
-        info::CMonsterGetOffensiveType116_clbk CMonsterGetOffensiveType116_user(nullptr);
-        info::CMonsterGetSignalReActor118_ptr CMonsterGetSignalReActor118_next(nullptr);
-        info::CMonsterGetSignalReActor118_clbk CMonsterGetSignalReActor118_user(nullptr);
-        info::CMonsterGetSkillDelayTime120_ptr CMonsterGetSkillDelayTime120_next(nullptr);
-        info::CMonsterGetSkillDelayTime120_clbk CMonsterGetSkillDelayTime120_user(nullptr);
-        info::CMonsterGetSoilTol122_ptr CMonsterGetSoilTol122_next(nullptr);
-        info::CMonsterGetSoilTol122_clbk CMonsterGetSoilTol122_user(nullptr);
-        info::CMonsterGetViewAngleCap124_ptr CMonsterGetViewAngleCap124_next(nullptr);
-        info::CMonsterGetViewAngleCap124_clbk CMonsterGetViewAngleCap124_user(nullptr);
-        info::CMonsterGetVisualAngle126_ptr CMonsterGetVisualAngle126_next(nullptr);
-        info::CMonsterGetVisualAngle126_clbk CMonsterGetVisualAngle126_user(nullptr);
-        info::CMonsterGetVisualField128_ptr CMonsterGetVisualField128_next(nullptr);
-        info::CMonsterGetVisualField128_clbk CMonsterGetVisualField128_user(nullptr);
-        info::CMonsterGetWaterTol130_ptr CMonsterGetWaterTol130_next(nullptr);
-        info::CMonsterGetWaterTol130_clbk CMonsterGetWaterTol130_user(nullptr);
-        info::CMonsterGetWeaponAdjust132_ptr CMonsterGetWeaponAdjust132_next(nullptr);
-        info::CMonsterGetWeaponAdjust132_clbk CMonsterGetWeaponAdjust132_user(nullptr);
-        info::CMonsterGetWeaponClass134_ptr CMonsterGetWeaponClass134_next(nullptr);
-        info::CMonsterGetWeaponClass134_clbk CMonsterGetWeaponClass134_user(nullptr);
-        info::CMonsterGetWidth136_ptr CMonsterGetWidth136_next(nullptr);
-        info::CMonsterGetWidth136_clbk CMonsterGetWidth136_user(nullptr);
-        info::CMonsterGetWindTol138_ptr CMonsterGetWindTol138_next(nullptr);
-        info::CMonsterGetWindTol138_clbk CMonsterGetWindTol138_user(nullptr);
-        info::CMonsterGetYAngle140_ptr CMonsterGetYAngle140_next(nullptr);
-        info::CMonsterGetYAngle140_clbk CMonsterGetYAngle140_user(nullptr);
-        info::CMonsterGetYAngleByte142_ptr CMonsterGetYAngleByte142_next(nullptr);
-        info::CMonsterGetYAngleByte142_clbk CMonsterGetYAngleByte142_user(nullptr);
-        info::CMonsterInit144_ptr CMonsterInit144_next(nullptr);
-        info::CMonsterInit144_clbk CMonsterInit144_user(nullptr);
-        info::CMonsterInsertSFContEffect146_ptr CMonsterInsertSFContEffect146_next(nullptr);
-        info::CMonsterInsertSFContEffect146_clbk CMonsterInsertSFContEffect146_user(nullptr);
-        info::CMonsterIsAttackableInTown148_ptr CMonsterIsAttackableInTown148_next(nullptr);
-        info::CMonsterIsAttackableInTown148_clbk CMonsterIsAttackableInTown148_user(nullptr);
-        info::CMonsterIsBeAttackedAble150_ptr CMonsterIsBeAttackedAble150_next(nullptr);
-        info::CMonsterIsBeAttackedAble150_clbk CMonsterIsBeAttackedAble150_user(nullptr);
-        info::CMonsterIsBeDamagedAble152_ptr CMonsterIsBeDamagedAble152_next(nullptr);
-        info::CMonsterIsBeDamagedAble152_clbk CMonsterIsBeDamagedAble152_user(nullptr);
-        info::CMonsterIsBossMonster154_ptr CMonsterIsBossMonster154_next(nullptr);
-        info::CMonsterIsBossMonster154_clbk CMonsterIsBossMonster154_user(nullptr);
-        info::CMonsterIsMovable156_ptr CMonsterIsMovable156_next(nullptr);
-        info::CMonsterIsMovable156_clbk CMonsterIsMovable156_user(nullptr);
-        info::CMonsterIsPreAttackAbleMon158_ptr CMonsterIsPreAttackAbleMon158_next(nullptr);
-        info::CMonsterIsPreAttackAbleMon158_clbk CMonsterIsPreAttackAbleMon158_user(nullptr);
-        info::CMonsterIsRecvableContEffect160_ptr CMonsterIsRecvableContEffect160_next(nullptr);
-        info::CMonsterIsRecvableContEffect160_clbk CMonsterIsRecvableContEffect160_user(nullptr);
-        info::CMonsterIsRewardExp162_ptr CMonsterIsRewardExp162_next(nullptr);
-        info::CMonsterIsRewardExp162_clbk CMonsterIsRewardExp162_user(nullptr);
-        info::CMonsterIsRoateMonster164_ptr CMonsterIsRoateMonster164_next(nullptr);
-        info::CMonsterIsRoateMonster164_clbk CMonsterIsRoateMonster164_user(nullptr);
-        info::CMonsterIsValidPlayer166_ptr CMonsterIsValidPlayer166_next(nullptr);
-        info::CMonsterIsValidPlayer166_clbk CMonsterIsValidPlayer166_user(nullptr);
-        info::CMonsterIsViewArea168_ptr CMonsterIsViewArea168_next(nullptr);
-        info::CMonsterIsViewArea168_clbk CMonsterIsViewArea168_user(nullptr);
-        info::CMonsterLinkEventRespawn170_ptr CMonsterLinkEventRespawn170_next(nullptr);
-        info::CMonsterLinkEventRespawn170_clbk CMonsterLinkEventRespawn170_user(nullptr);
-        info::CMonsterLinkEventSet172_ptr CMonsterLinkEventSet172_next(nullptr);
-        info::CMonsterLinkEventSet172_clbk CMonsterLinkEventSet172_user(nullptr);
-        info::CMonsterLoop174_ptr CMonsterLoop174_next(nullptr);
-        info::CMonsterLoop174_clbk CMonsterLoop174_user(nullptr);
-        info::CMonsterOutOfSec176_ptr CMonsterOutOfSec176_next(nullptr);
-        info::CMonsterOutOfSec176_clbk CMonsterOutOfSec176_user(nullptr);
-        info::CMonsterRobbedHP178_ptr CMonsterRobbedHP178_next(nullptr);
-        info::CMonsterRobbedHP178_clbk CMonsterRobbedHP178_user(nullptr);
-        info::CMonsterSF_AllContHelpForceRemove_Once180_ptr CMonsterSF_AllContHelpForceRemove_Once180_next(nullptr);
-        info::CMonsterSF_AllContHelpForceRemove_Once180_clbk CMonsterSF_AllContHelpForceRemove_Once180_user(nullptr);
-        info::CMonsterSF_AllContHelpSkillRemove_Once182_ptr CMonsterSF_AllContHelpSkillRemove_Once182_next(nullptr);
-        info::CMonsterSF_AllContHelpSkillRemove_Once182_clbk CMonsterSF_AllContHelpSkillRemove_Once182_user(nullptr);
-        info::CMonsterSF_HPInc_Once184_ptr CMonsterSF_HPInc_Once184_next(nullptr);
-        info::CMonsterSF_HPInc_Once184_clbk CMonsterSF_HPInc_Once184_user(nullptr);
-        info::CMonsterSF_LateContDamageRemove_Once186_ptr CMonsterSF_LateContDamageRemove_Once186_next(nullptr);
-        info::CMonsterSF_LateContDamageRemove_Once186_clbk CMonsterSF_LateContDamageRemove_Once186_user(nullptr);
-        info::CMonsterSF_LateContHelpForceRemove_Once188_ptr CMonsterSF_LateContHelpForceRemove_Once188_next(nullptr);
-        info::CMonsterSF_LateContHelpForceRemove_Once188_clbk CMonsterSF_LateContHelpForceRemove_Once188_user(nullptr);
-        info::CMonsterSF_LateContHelpSkillRemove_Once190_ptr CMonsterSF_LateContHelpSkillRemove_Once190_next(nullptr);
-        info::CMonsterSF_LateContHelpSkillRemove_Once190_clbk CMonsterSF_LateContHelpSkillRemove_Once190_user(nullptr);
-        info::CMonsterSearchNearPlayer192_ptr CMonsterSearchNearPlayer192_next(nullptr);
-        info::CMonsterSearchNearPlayer192_clbk CMonsterSearchNearPlayer192_user(nullptr);
-        info::CMonsterSendMsg_Assist_Force194_ptr CMonsterSendMsg_Assist_Force194_next(nullptr);
-        info::CMonsterSendMsg_Assist_Force194_clbk CMonsterSendMsg_Assist_Force194_user(nullptr);
-        info::CMonsterSendMsg_Assist_Skill196_ptr CMonsterSendMsg_Assist_Skill196_next(nullptr);
-        info::CMonsterSendMsg_Assist_Skill196_clbk CMonsterSendMsg_Assist_Skill196_user(nullptr);
-        info::CMonsterSendMsg_Attack_Force198_ptr CMonsterSendMsg_Attack_Force198_next(nullptr);
-        info::CMonsterSendMsg_Attack_Force198_clbk CMonsterSendMsg_Attack_Force198_user(nullptr);
-        info::CMonsterSendMsg_Attack_Gen200_ptr CMonsterSendMsg_Attack_Gen200_next(nullptr);
-        info::CMonsterSendMsg_Attack_Gen200_clbk CMonsterSendMsg_Attack_Gen200_user(nullptr);
-        info::CMonsterSendMsg_Attack_Skill202_ptr CMonsterSendMsg_Attack_Skill202_next(nullptr);
-        info::CMonsterSendMsg_Attack_Skill202_clbk CMonsterSendMsg_Attack_Skill202_user(nullptr);
-        info::CMonsterSendMsg_Change_MonsterRotate204_ptr CMonsterSendMsg_Change_MonsterRotate204_next(nullptr);
-        info::CMonsterSendMsg_Change_MonsterRotate204_clbk CMonsterSendMsg_Change_MonsterRotate204_user(nullptr);
-        info::CMonsterSendMsg_Change_MonsterState206_ptr CMonsterSendMsg_Change_MonsterState206_next(nullptr);
-        info::CMonsterSendMsg_Change_MonsterState206_clbk CMonsterSendMsg_Change_MonsterState206_user(nullptr);
-        info::CMonsterSendMsg_Change_MonsterTarget208_ptr CMonsterSendMsg_Change_MonsterTarget208_next(nullptr);
-        info::CMonsterSendMsg_Change_MonsterTarget208_clbk CMonsterSendMsg_Change_MonsterTarget208_user(nullptr);
-        info::CMonsterSendMsg_Create210_ptr CMonsterSendMsg_Create210_next(nullptr);
-        info::CMonsterSendMsg_Create210_clbk CMonsterSendMsg_Create210_user(nullptr);
-        info::CMonsterSendMsg_Destroy212_ptr CMonsterSendMsg_Destroy212_next(nullptr);
-        info::CMonsterSendMsg_Destroy212_clbk CMonsterSendMsg_Destroy212_user(nullptr);
-        info::CMonsterSendMsg_Emotion_Presentation214_ptr CMonsterSendMsg_Emotion_Presentation214_next(nullptr);
-        info::CMonsterSendMsg_Emotion_Presentation214_clbk CMonsterSendMsg_Emotion_Presentation214_user(nullptr);
-        info::CMonsterSendMsg_FixPosition216_ptr CMonsterSendMsg_FixPosition216_next(nullptr);
-        info::CMonsterSendMsg_FixPosition216_clbk CMonsterSendMsg_FixPosition216_user(nullptr);
-        info::CMonsterSendMsg_Move218_ptr CMonsterSendMsg_Move218_next(nullptr);
-        info::CMonsterSendMsg_Move218_clbk CMonsterSendMsg_Move218_user(nullptr);
-        info::CMonsterSendMsg_RealMovePoint220_ptr CMonsterSendMsg_RealMovePoint220_next(nullptr);
-        info::CMonsterSendMsg_RealMovePoint220_clbk CMonsterSendMsg_RealMovePoint220_user(nullptr);
-        info::CMonsterSetAttackTarget222_ptr CMonsterSetAttackTarget222_next(nullptr);
-        info::CMonsterSetAttackTarget222_clbk CMonsterSetAttackTarget222_user(nullptr);
-        info::CMonsterSetCombatState224_ptr CMonsterSetCombatState224_next(nullptr);
-        info::CMonsterSetCombatState224_clbk CMonsterSetCombatState224_user(nullptr);
-        info::CMonsterSetDamage226_ptr CMonsterSetDamage226_next(nullptr);
-        info::CMonsterSetDamage226_clbk CMonsterSetDamage226_user(nullptr);
-        info::CMonsterSetDefPart228_ptr CMonsterSetDefPart228_next(nullptr);
-        info::CMonsterSetDefPart228_clbk CMonsterSetDefPart228_user(nullptr);
-        info::CMonsterSetEmotionState230_ptr CMonsterSetEmotionState230_next(nullptr);
-        info::CMonsterSetEmotionState230_clbk CMonsterSetEmotionState230_user(nullptr);
-        info::CMonsterSetHP232_ptr CMonsterSetHP232_next(nullptr);
-        info::CMonsterSetHP232_clbk CMonsterSetHP232_user(nullptr);
-        info::CMonsterSetMoveType234_ptr CMonsterSetMoveType234_next(nullptr);
-        info::CMonsterSetMoveType234_clbk CMonsterSetMoveType234_user(nullptr);
-        info::CMonsterSetStun236_ptr CMonsterSetStun236_next(nullptr);
-        info::CMonsterSetStun236_clbk CMonsterSetStun236_user(nullptr);
-        info::CMonsterUpdateLookAtPos238_ptr CMonsterUpdateLookAtPos238_next(nullptr);
-        info::CMonsterUpdateLookAtPos238_clbk CMonsterUpdateLookAtPos238_user(nullptr);
-        info::CMonsterUpdateLookAtPos240_ptr CMonsterUpdateLookAtPos240_next(nullptr);
-        info::CMonsterUpdateLookAtPos240_clbk CMonsterUpdateLookAtPos240_user(nullptr);
-        info::CMonsterUpdateSFCont242_ptr CMonsterUpdateSFCont242_next(nullptr);
-        info::CMonsterUpdateSFCont242_clbk CMonsterUpdateSFCont242_user(nullptr);
-        info::CMonster_AssistSF_Cont_Dmg244_ptr CMonster_AssistSF_Cont_Dmg244_next(nullptr);
-        info::CMonster_AssistSF_Cont_Dmg244_clbk CMonster_AssistSF_Cont_Dmg244_user(nullptr);
-        info::CMonster_AssistSF_Cont_Support246_ptr CMonster_AssistSF_Cont_Support246_next(nullptr);
-        info::CMonster_AssistSF_Cont_Support246_clbk CMonster_AssistSF_Cont_Support246_user(nullptr);
-        info::CMonster_AssistSF_Cont_Temp248_ptr CMonster_AssistSF_Cont_Temp248_next(nullptr);
-        info::CMonster_AssistSF_Cont_Temp248_clbk CMonster_AssistSF_Cont_Temp248_user(nullptr);
-        info::CMonster_BossBirthWriteLog250_ptr CMonster_BossBirthWriteLog250_next(nullptr);
-        info::CMonster_BossBirthWriteLog250_clbk CMonster_BossBirthWriteLog250_user(nullptr);
-        info::CMonster_BossDieWriteLog_End252_ptr CMonster_BossDieWriteLog_End252_next(nullptr);
-        info::CMonster_BossDieWriteLog_End252_clbk CMonster_BossDieWriteLog_End252_user(nullptr);
-        info::CMonster_BossDieWriteLog_Start254_ptr CMonster_BossDieWriteLog_Start254_next(nullptr);
-        info::CMonster_BossDieWriteLog_Start254_clbk CMonster_BossDieWriteLog_Start254_user(nullptr);
-        info::CMonster_DestroySDM256_ptr CMonster_DestroySDM256_next(nullptr);
-        info::CMonster_DestroySDM256_clbk CMonster_DestroySDM256_user(nullptr);
-        info::CMonster_InitSDM258_ptr CMonster_InitSDM258_next(nullptr);
-        info::CMonster_InitSDM258_clbk CMonster_InitSDM258_user(nullptr);
-        info::CMonster_InitSDM_LootTBL260_ptr CMonster_InitSDM_LootTBL260_next(nullptr);
-        info::CMonster_InitSDM_LootTBL260_clbk CMonster_InitSDM_LootTBL260_user(nullptr);
-        info::CMonster_LootItem_EventSet262_ptr CMonster_LootItem_EventSet262_next(nullptr);
-        info::CMonster_LootItem_EventSet262_clbk CMonster_LootItem_EventSet262_user(nullptr);
-        info::CMonster_LootItem_Qst264_ptr CMonster_LootItem_Qst264_next(nullptr);
-        info::CMonster_LootItem_Qst264_clbk CMonster_LootItem_Qst264_user(nullptr);
-        info::CMonster_LootItem_Rwp266_ptr CMonster_LootItem_Rwp266_next(nullptr);
-        info::CMonster_LootItem_Rwp266_clbk CMonster_LootItem_Rwp266_user(nullptr);
-        info::CMonster_LootItem_Std268_ptr CMonster_LootItem_Std268_next(nullptr);
-        info::CMonster_LootItem_Std268_clbk CMonster_LootItem_Std268_user(nullptr);
-        info::CMonstermake_force_attack_param274_ptr CMonstermake_force_attack_param274_next(nullptr);
-        info::CMonstermake_force_attack_param274_clbk CMonstermake_force_attack_param274_user(nullptr);
-        info::CMonstermake_gen_attack_param276_ptr CMonstermake_gen_attack_param276_next(nullptr);
-        info::CMonstermake_gen_attack_param276_clbk CMonstermake_gen_attack_param276_user(nullptr);
-        info::CMonstermake_skill_attack_param278_ptr CMonstermake_skill_attack_param278_next(nullptr);
-        info::CMonstermake_skill_attack_param278_clbk CMonstermake_skill_attack_param278_user(nullptr);
-        info::CMonsterdtor_CMonster280_ptr CMonsterdtor_CMonster280_next(nullptr);
-        info::CMonsterdtor_CMonster280_clbk CMonsterdtor_CMonster280_user(nullptr);
+        static info::CMonsterAddEventItem2_ptr CMonsterAddEventItem2_next(nullptr);
+        static info::CMonsterAddEventItem2_clbk CMonsterAddEventItem2_user(nullptr);
+        static info::CMonsterAssistSF4_ptr CMonsterAssistSF4_next(nullptr);
+        static info::CMonsterAssistSF4_clbk CMonsterAssistSF4_user(nullptr);
+        static info::CMonsterAttack6_ptr CMonsterAttack6_next(nullptr);
+        static info::CMonsterAttack6_clbk CMonsterAttack6_user(nullptr);
+        static info::CMonsterAttackObject8_ptr CMonsterAttackObject8_next(nullptr);
+        static info::CMonsterAttackObject8_clbk CMonsterAttackObject8_user(nullptr);
+        static info::CMonsterAttackableHeight10_ptr CMonsterAttackableHeight10_next(nullptr);
+        static info::CMonsterAttackableHeight10_clbk CMonsterAttackableHeight10_user(nullptr);
+        static info::CMonsterAutoRecover12_ptr CMonsterAutoRecover12_next(nullptr);
+        static info::CMonsterAutoRecover12_clbk CMonsterAutoRecover12_user(nullptr);
+        static info::CMonsterBeTargeted14_ptr CMonsterBeTargeted14_next(nullptr);
+        static info::CMonsterBeTargeted14_clbk CMonsterBeTargeted14_user(nullptr);
+        static info::CMonsterctor_CMonster16_ptr CMonsterctor_CMonster16_next(nullptr);
+        static info::CMonsterctor_CMonster16_clbk CMonsterctor_CMonster16_user(nullptr);
+        static info::CMonsterChangeApparition18_ptr CMonsterChangeApparition18_next(nullptr);
+        static info::CMonsterChangeApparition18_clbk CMonsterChangeApparition18_user(nullptr);
+        static info::CMonsterCheckAutoRecoverHP20_ptr CMonsterCheckAutoRecoverHP20_next(nullptr);
+        static info::CMonsterCheckAutoRecoverHP20_clbk CMonsterCheckAutoRecoverHP20_user(nullptr);
+        static info::CMonsterCheckDelayDestroy22_ptr CMonsterCheckDelayDestroy22_next(nullptr);
+        static info::CMonsterCheckDelayDestroy22_clbk CMonsterCheckDelayDestroy22_user(nullptr);
+        static info::CMonsterCheckEmotionPresentation24_ptr CMonsterCheckEmotionPresentation24_next(nullptr);
+        static info::CMonsterCheckEmotionPresentation24_clbk CMonsterCheckEmotionPresentation24_user(nullptr);
+        static info::CMonsterCheckEventEmotionPresentation26_ptr CMonsterCheckEventEmotionPresentation26_next(nullptr);
+        static info::CMonsterCheckEventEmotionPresentation26_clbk CMonsterCheckEventEmotionPresentation26_user(nullptr);
+        static info::CMonsterCheckLootItem28_ptr CMonsterCheckLootItem28_next(nullptr);
+        static info::CMonsterCheckLootItem28_clbk CMonsterCheckLootItem28_user(nullptr);
+        static info::CMonsterCheckMonsterRotate30_ptr CMonsterCheckMonsterRotate30_next(nullptr);
+        static info::CMonsterCheckMonsterRotate30_clbk CMonsterCheckMonsterRotate30_user(nullptr);
+        static info::CMonsterCheckMonsterStateData32_ptr CMonsterCheckMonsterStateData32_next(nullptr);
+        static info::CMonsterCheckMonsterStateData32_clbk CMonsterCheckMonsterStateData32_user(nullptr);
+        static info::CMonsterCheckRespawnProcess34_ptr CMonsterCheckRespawnProcess34_next(nullptr);
+        static info::CMonsterCheckRespawnProcess34_clbk CMonsterCheckRespawnProcess34_user(nullptr);
+        static info::CMonsterClearEmotionPresentation36_ptr CMonsterClearEmotionPresentation36_next(nullptr);
+        static info::CMonsterClearEmotionPresentation36_clbk CMonsterClearEmotionPresentation36_user(nullptr);
+        static info::CMonsterCommand_ChildMonDestroy38_ptr CMonsterCommand_ChildMonDestroy38_next(nullptr);
+        static info::CMonsterCommand_ChildMonDestroy38_clbk CMonsterCommand_ChildMonDestroy38_user(nullptr);
+        static info::CMonsterConvertTargetPlayer40_ptr CMonsterConvertTargetPlayer40_next(nullptr);
+        static info::CMonsterConvertTargetPlayer40_clbk CMonsterConvertTargetPlayer40_user(nullptr);
+        static info::CMonsterCreate42_ptr CMonsterCreate42_next(nullptr);
+        static info::CMonsterCreate42_clbk CMonsterCreate42_user(nullptr);
+        static info::CMonsterCreateAI44_ptr CMonsterCreateAI44_next(nullptr);
+        static info::CMonsterCreateAI44_clbk CMonsterCreateAI44_user(nullptr);
+        static info::CMonsterDestroy46_ptr CMonsterDestroy46_next(nullptr);
+        static info::CMonsterDestroy46_clbk CMonsterDestroy46_user(nullptr);
+        static info::CMonsterDisableStdItemLoot48_ptr CMonsterDisableStdItemLoot48_next(nullptr);
+        static info::CMonsterDisableStdItemLoot48_clbk CMonsterDisableStdItemLoot48_user(nullptr);
+        static info::CMonsterFixTargetWhile50_ptr CMonsterFixTargetWhile50_next(nullptr);
+        static info::CMonsterFixTargetWhile50_clbk CMonsterFixTargetWhile50_user(nullptr);
+        static info::CMonsterGeEmotionImpStdTime52_ptr CMonsterGeEmotionImpStdTime52_next(nullptr);
+        static info::CMonsterGeEmotionImpStdTime52_clbk CMonsterGeEmotionImpStdTime52_user(nullptr);
+        static info::CMonsterGetAggroResetTime54_ptr CMonsterGetAggroResetTime54_next(nullptr);
+        static info::CMonsterGetAggroResetTime54_clbk CMonsterGetAggroResetTime54_user(nullptr);
+        static info::CMonsterGetAggroShortTime56_ptr CMonsterGetAggroShortTime56_next(nullptr);
+        static info::CMonsterGetAggroShortTime56_clbk CMonsterGetAggroShortTime56_user(nullptr);
+        static info::CMonsterGetAttackDP58_ptr CMonsterGetAttackDP58_next(nullptr);
+        static info::CMonsterGetAttackDP58_clbk CMonsterGetAttackDP58_user(nullptr);
+        static info::CMonsterGetAttackPart60_ptr CMonsterGetAttackPart60_next(nullptr);
+        static info::CMonsterGetAttackPart60_clbk CMonsterGetAttackPart60_user(nullptr);
+        static info::CMonsterGetAttackRange62_ptr CMonsterGetAttackRange62_next(nullptr);
+        static info::CMonsterGetAttackRange62_clbk CMonsterGetAttackRange62_user(nullptr);
+        static info::CMonsterGetAttackTarget64_ptr CMonsterGetAttackTarget64_next(nullptr);
+        static info::CMonsterGetAttackTarget64_clbk CMonsterGetAttackTarget64_user(nullptr);
+        static info::CMonsterGetBonusInAreaAggro66_ptr CMonsterGetBonusInAreaAggro66_next(nullptr);
+        static info::CMonsterGetBonusInAreaAggro66_clbk CMonsterGetBonusInAreaAggro66_user(nullptr);
+        static info::CMonsterGetCombatState68_ptr CMonsterGetCombatState68_next(nullptr);
+        static info::CMonsterGetCombatState68_clbk CMonsterGetCombatState68_user(nullptr);
+        static info::CMonsterGetCritical_Exception_Rate70_ptr CMonsterGetCritical_Exception_Rate70_next(nullptr);
+        static info::CMonsterGetCritical_Exception_Rate70_clbk CMonsterGetCritical_Exception_Rate70_user(nullptr);
+        static info::CMonsterGetDefFC72_ptr CMonsterGetDefFC72_next(nullptr);
+        static info::CMonsterGetDefFC72_clbk CMonsterGetDefFC72_user(nullptr);
+        static info::CMonsterGetDefFacing74_ptr CMonsterGetDefFacing74_next(nullptr);
+        static info::CMonsterGetDefFacing74_clbk CMonsterGetDefFacing74_user(nullptr);
+        static info::CMonsterGetDefGap76_ptr CMonsterGetDefGap76_next(nullptr);
+        static info::CMonsterGetDefGap76_clbk CMonsterGetDefGap76_user(nullptr);
+        static info::CMonsterGetDefSkill78_ptr CMonsterGetDefSkill78_next(nullptr);
+        static info::CMonsterGetDefSkill78_clbk CMonsterGetDefSkill78_user(nullptr);
+        static info::CMonsterGetEmotionState80_ptr CMonsterGetEmotionState80_next(nullptr);
+        static info::CMonsterGetEmotionState80_clbk CMonsterGetEmotionState80_user(nullptr);
+        static info::CMonsterGetFireTol82_ptr CMonsterGetFireTol82_next(nullptr);
+        static info::CMonsterGetFireTol82_clbk CMonsterGetFireTol82_user(nullptr);
+        static info::CMonsterGetGenAttackProb84_ptr CMonsterGetGenAttackProb84_next(nullptr);
+        static info::CMonsterGetGenAttackProb84_clbk CMonsterGetGenAttackProb84_user(nullptr);
+        static info::CMonsterGetHP86_ptr CMonsterGetHP86_next(nullptr);
+        static info::CMonsterGetHP86_clbk CMonsterGetHP86_user(nullptr);
+        static info::CMonsterGetHelpMeCase88_ptr CMonsterGetHelpMeCase88_next(nullptr);
+        static info::CMonsterGetHelpMeCase88_clbk CMonsterGetHelpMeCase88_user(nullptr);
+        static info::CMonsterGetLevel90_ptr CMonsterGetLevel90_next(nullptr);
+        static info::CMonsterGetLevel90_clbk CMonsterGetLevel90_user(nullptr);
+        static info::CMonsterGetMaxDMGSFContCount92_ptr CMonsterGetMaxDMGSFContCount92_next(nullptr);
+        static info::CMonsterGetMaxDMGSFContCount92_clbk CMonsterGetMaxDMGSFContCount92_user(nullptr);
+        static info::CMonsterGetMaxHP94_ptr CMonsterGetMaxHP94_next(nullptr);
+        static info::CMonsterGetMaxHP94_clbk CMonsterGetMaxHP94_user(nullptr);
+        static info::CMonsterGetMob_AsistType96_ptr CMonsterGetMob_AsistType96_next(nullptr);
+        static info::CMonsterGetMob_AsistType96_clbk CMonsterGetMob_AsistType96_user(nullptr);
+        static info::CMonsterGetMob_SubRace98_ptr CMonsterGetMob_SubRace98_next(nullptr);
+        static info::CMonsterGetMob_SubRace98_clbk CMonsterGetMob_SubRace98_user(nullptr);
+        static info::CMonsterGetMonStateInfo100_ptr CMonsterGetMonStateInfo100_next(nullptr);
+        static info::CMonsterGetMonStateInfo100_clbk CMonsterGetMonStateInfo100_user(nullptr);
+        static info::CMonsterGetMonsterGrade102_ptr CMonsterGetMonsterGrade102_next(nullptr);
+        static info::CMonsterGetMonsterGrade102_clbk CMonsterGetMonsterGrade102_user(nullptr);
+        static info::CMonsterGetMoveSpeed104_ptr CMonsterGetMoveSpeed104_next(nullptr);
+        static info::CMonsterGetMoveSpeed104_clbk CMonsterGetMoveSpeed104_user(nullptr);
+        static info::CMonsterGetMoveType106_ptr CMonsterGetMoveType106_next(nullptr);
+        static info::CMonsterGetMoveType106_clbk CMonsterGetMoveType106_user(nullptr);
+        static info::CMonsterGetMyDMGSFContCount108_ptr CMonsterGetMyDMGSFContCount108_next(nullptr);
+        static info::CMonsterGetMyDMGSFContCount108_clbk CMonsterGetMyDMGSFContCount108_user(nullptr);
+        static info::CMonsterGetNewMonSerial110_ptr CMonsterGetNewMonSerial110_next(nullptr);
+        static info::CMonsterGetNewMonSerial110_clbk CMonsterGetNewMonSerial110_user(nullptr);
+        static info::CMonsterGetObjName112_ptr CMonsterGetObjName112_next(nullptr);
+        static info::CMonsterGetObjName112_clbk CMonsterGetObjName112_user(nullptr);
+        static info::CMonsterGetObjRace114_ptr CMonsterGetObjRace114_next(nullptr);
+        static info::CMonsterGetObjRace114_clbk CMonsterGetObjRace114_user(nullptr);
+        static info::CMonsterGetOffensiveType116_ptr CMonsterGetOffensiveType116_next(nullptr);
+        static info::CMonsterGetOffensiveType116_clbk CMonsterGetOffensiveType116_user(nullptr);
+        static info::CMonsterGetSignalReActor118_ptr CMonsterGetSignalReActor118_next(nullptr);
+        static info::CMonsterGetSignalReActor118_clbk CMonsterGetSignalReActor118_user(nullptr);
+        static info::CMonsterGetSkillDelayTime120_ptr CMonsterGetSkillDelayTime120_next(nullptr);
+        static info::CMonsterGetSkillDelayTime120_clbk CMonsterGetSkillDelayTime120_user(nullptr);
+        static info::CMonsterGetSoilTol122_ptr CMonsterGetSoilTol122_next(nullptr);
+        static info::CMonsterGetSoilTol122_clbk CMonsterGetSoilTol122_user(nullptr);
+        static info::CMonsterGetViewAngleCap124_ptr CMonsterGetViewAngleCap124_next(nullptr);
+        static info::CMonsterGetViewAngleCap124_clbk CMonsterGetViewAngleCap124_user(nullptr);
+        static info::CMonsterGetVisualAngle126_ptr CMonsterGetVisualAngle126_next(nullptr);
+        static info::CMonsterGetVisualAngle126_clbk CMonsterGetVisualAngle126_user(nullptr);
+        static info::CMonsterGetVisualField128_ptr CMonsterGetVisualField128_next(nullptr);
+        static info::CMonsterGetVisualField128_clbk CMonsterGetVisualField128_user(nullptr);
+        static info::CMonsterGetWaterTol130_ptr CMonsterGetWaterTol130_next(nullptr);
+        static info::CMonsterGetWaterTol130_clbk CMonsterGetWaterTol130_user(nullptr);
+        static info::CMonsterGetWeaponAdjust132_ptr CMonsterGetWeaponAdjust132_next(nullptr);
+        static info::CMonsterGetWeaponAdjust132_clbk CMonsterGetWeaponAdjust132_user(nullptr);
+        static info::CMonsterGetWeaponClass134_ptr CMonsterGetWeaponClass134_next(nullptr);
+        static info::CMonsterGetWeaponClass134_clbk CMonsterGetWeaponClass134_user(nullptr);
+        static info::CMonsterGetWidth136_ptr CMonsterGetWidth136_next(nullptr);
+        static info::CMonsterGetWidth136_clbk CMonsterGetWidth136_user(nullptr);
+        static info::CMonsterGetWindTol138_ptr CMonsterGetWindTol138_next(nullptr);
+        static info::CMonsterGetWindTol138_clbk CMonsterGetWindTol138_user(nullptr);
+        static info::CMonsterGetYAngle140_ptr CMonsterGetYAngle140_next(nullptr);
+        static info::CMonsterGetYAngle140_clbk CMonsterGetYAngle140_user(nullptr);
+        static info::CMonsterGetYAngleByte142_ptr CMonsterGetYAngleByte142_next(nullptr);
+        static info::CMonsterGetYAngleByte142_clbk CMonsterGetYAngleByte142_user(nullptr);
+        static info::CMonsterInit144_ptr CMonsterInit144_next(nullptr);
+        static info::CMonsterInit144_clbk CMonsterInit144_user(nullptr);
+        static info::CMonsterInsertSFContEffect146_ptr CMonsterInsertSFContEffect146_next(nullptr);
+        static info::CMonsterInsertSFContEffect146_clbk CMonsterInsertSFContEffect146_user(nullptr);
+        static info::CMonsterIsAttackableInTown148_ptr CMonsterIsAttackableInTown148_next(nullptr);
+        static info::CMonsterIsAttackableInTown148_clbk CMonsterIsAttackableInTown148_user(nullptr);
+        static info::CMonsterIsBeAttackedAble150_ptr CMonsterIsBeAttackedAble150_next(nullptr);
+        static info::CMonsterIsBeAttackedAble150_clbk CMonsterIsBeAttackedAble150_user(nullptr);
+        static info::CMonsterIsBeDamagedAble152_ptr CMonsterIsBeDamagedAble152_next(nullptr);
+        static info::CMonsterIsBeDamagedAble152_clbk CMonsterIsBeDamagedAble152_user(nullptr);
+        static info::CMonsterIsBossMonster154_ptr CMonsterIsBossMonster154_next(nullptr);
+        static info::CMonsterIsBossMonster154_clbk CMonsterIsBossMonster154_user(nullptr);
+        static info::CMonsterIsMovable156_ptr CMonsterIsMovable156_next(nullptr);
+        static info::CMonsterIsMovable156_clbk CMonsterIsMovable156_user(nullptr);
+        static info::CMonsterIsPreAttackAbleMon158_ptr CMonsterIsPreAttackAbleMon158_next(nullptr);
+        static info::CMonsterIsPreAttackAbleMon158_clbk CMonsterIsPreAttackAbleMon158_user(nullptr);
+        static info::CMonsterIsRecvableContEffect160_ptr CMonsterIsRecvableContEffect160_next(nullptr);
+        static info::CMonsterIsRecvableContEffect160_clbk CMonsterIsRecvableContEffect160_user(nullptr);
+        static info::CMonsterIsRewardExp162_ptr CMonsterIsRewardExp162_next(nullptr);
+        static info::CMonsterIsRewardExp162_clbk CMonsterIsRewardExp162_user(nullptr);
+        static info::CMonsterIsRoateMonster164_ptr CMonsterIsRoateMonster164_next(nullptr);
+        static info::CMonsterIsRoateMonster164_clbk CMonsterIsRoateMonster164_user(nullptr);
+        static info::CMonsterIsValidPlayer166_ptr CMonsterIsValidPlayer166_next(nullptr);
+        static info::CMonsterIsValidPlayer166_clbk CMonsterIsValidPlayer166_user(nullptr);
+        static info::CMonsterIsViewArea168_ptr CMonsterIsViewArea168_next(nullptr);
+        static info::CMonsterIsViewArea168_clbk CMonsterIsViewArea168_user(nullptr);
+        static info::CMonsterLinkEventRespawn170_ptr CMonsterLinkEventRespawn170_next(nullptr);
+        static info::CMonsterLinkEventRespawn170_clbk CMonsterLinkEventRespawn170_user(nullptr);
+        static info::CMonsterLinkEventSet172_ptr CMonsterLinkEventSet172_next(nullptr);
+        static info::CMonsterLinkEventSet172_clbk CMonsterLinkEventSet172_user(nullptr);
+        static info::CMonsterLoop174_ptr CMonsterLoop174_next(nullptr);
+        static info::CMonsterLoop174_clbk CMonsterLoop174_user(nullptr);
+        static info::CMonsterOutOfSec176_ptr CMonsterOutOfSec176_next(nullptr);
+        static info::CMonsterOutOfSec176_clbk CMonsterOutOfSec176_user(nullptr);
+        static info::CMonsterRobbedHP178_ptr CMonsterRobbedHP178_next(nullptr);
+        static info::CMonsterRobbedHP178_clbk CMonsterRobbedHP178_user(nullptr);
+        static info::CMonsterSF_AllContHelpForceRemove_Once180_ptr CMonsterSF_AllContHelpForceRemove_Once180_next(nullptr);
+        static info::CMonsterSF_AllContHelpForceRemove_Once180_clbk CMonsterSF_AllContHelpForceRemove_Once180_user(nullptr);
+        static info::CMonsterSF_AllContHelpSkillRemove_Once182_ptr CMonsterSF_AllContHelpSkillRemove_Once182_next(nullptr);
+        static info::CMonsterSF_AllContHelpSkillRemove_Once182_clbk CMonsterSF_AllContHelpSkillRemove_Once182_user(nullptr);
+        static info::CMonsterSF_HPInc_Once184_ptr CMonsterSF_HPInc_Once184_next(nullptr);
+        static info::CMonsterSF_HPInc_Once184_clbk CMonsterSF_HPInc_Once184_user(nullptr);
+        static info::CMonsterSF_LateContDamageRemove_Once186_ptr CMonsterSF_LateContDamageRemove_Once186_next(nullptr);
+        static info::CMonsterSF_LateContDamageRemove_Once186_clbk CMonsterSF_LateContDamageRemove_Once186_user(nullptr);
+        static info::CMonsterSF_LateContHelpForceRemove_Once188_ptr CMonsterSF_LateContHelpForceRemove_Once188_next(nullptr);
+        static info::CMonsterSF_LateContHelpForceRemove_Once188_clbk CMonsterSF_LateContHelpForceRemove_Once188_user(nullptr);
+        static info::CMonsterSF_LateContHelpSkillRemove_Once190_ptr CMonsterSF_LateContHelpSkillRemove_Once190_next(nullptr);
+        static info::CMonsterSF_LateContHelpSkillRemove_Once190_clbk CMonsterSF_LateContHelpSkillRemove_Once190_user(nullptr);
+        static info::CMonsterSearchNearPlayer192_ptr CMonsterSearchNearPlayer192_next(nullptr);
+        static info::CMonsterSearchNearPlayer192_clbk CMonsterSearchNearPlayer192_user(nullptr);
+        static info::CMonsterSendMsg_Assist_Force194_ptr CMonsterSendMsg_Assist_Force194_next(nullptr);
+        static info::CMonsterSendMsg_Assist_Force194_clbk CMonsterSendMsg_Assist_Force194_user(nullptr);
+        static info::CMonsterSendMsg_Assist_Skill196_ptr CMonsterSendMsg_Assist_Skill196_next(nullptr);
+        static info::CMonsterSendMsg_Assist_Skill196_clbk CMonsterSendMsg_Assist_Skill196_user(nullptr);
+        static info::CMonsterSendMsg_Attack_Force198_ptr CMonsterSendMsg_Attack_Force198_next(nullptr);
+        static info::CMonsterSendMsg_Attack_Force198_clbk CMonsterSendMsg_Attack_Force198_user(nullptr);
+        static info::CMonsterSendMsg_Attack_Gen200_ptr CMonsterSendMsg_Attack_Gen200_next(nullptr);
+        static info::CMonsterSendMsg_Attack_Gen200_clbk CMonsterSendMsg_Attack_Gen200_user(nullptr);
+        static info::CMonsterSendMsg_Attack_Skill202_ptr CMonsterSendMsg_Attack_Skill202_next(nullptr);
+        static info::CMonsterSendMsg_Attack_Skill202_clbk CMonsterSendMsg_Attack_Skill202_user(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterRotate204_ptr CMonsterSendMsg_Change_MonsterRotate204_next(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterRotate204_clbk CMonsterSendMsg_Change_MonsterRotate204_user(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterState206_ptr CMonsterSendMsg_Change_MonsterState206_next(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterState206_clbk CMonsterSendMsg_Change_MonsterState206_user(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterTarget208_ptr CMonsterSendMsg_Change_MonsterTarget208_next(nullptr);
+        static info::CMonsterSendMsg_Change_MonsterTarget208_clbk CMonsterSendMsg_Change_MonsterTarget208_user(nullptr);
+        static info::CMonsterSendMsg_Create210_ptr CMonsterSendMsg_Create210_next(nullptr);
+        static info::CMonsterSendMsg_Create210_clbk CMonsterSendMsg_Create210_user(nullptr);
+        static info::CMonsterSendMsg_Destroy212_ptr CMonsterSendMsg_Destroy212_next(nullptr);
+        static info::CMonsterSendMsg_Destroy212_clbk CMonsterSendMsg_Destroy212_user(nullptr);
+        static info::CMonsterSendMsg_Emotion_Presentation214_ptr CMonsterSendMsg_Emotion_Presentation214_next(nullptr);
+        static info::CMonsterSendMsg_Emotion_Presentation214_clbk CMonsterSendMsg_Emotion_Presentation214_user(nullptr);
+        static info::CMonsterSendMsg_FixPosition216_ptr CMonsterSendMsg_FixPosition216_next(nullptr);
+        static info::CMonsterSendMsg_FixPosition216_clbk CMonsterSendMsg_FixPosition216_user(nullptr);
+        static info::CMonsterSendMsg_Move218_ptr CMonsterSendMsg_Move218_next(nullptr);
+        static info::CMonsterSendMsg_Move218_clbk CMonsterSendMsg_Move218_user(nullptr);
+        static info::CMonsterSendMsg_RealMovePoint220_ptr CMonsterSendMsg_RealMovePoint220_next(nullptr);
+        static info::CMonsterSendMsg_RealMovePoint220_clbk CMonsterSendMsg_RealMovePoint220_user(nullptr);
+        static info::CMonsterSetAttackTarget222_ptr CMonsterSetAttackTarget222_next(nullptr);
+        static info::CMonsterSetAttackTarget222_clbk CMonsterSetAttackTarget222_user(nullptr);
+        static info::CMonsterSetCombatState224_ptr CMonsterSetCombatState224_next(nullptr);
+        static info::CMonsterSetCombatState224_clbk CMonsterSetCombatState224_user(nullptr);
+        static info::CMonsterSetDamage226_ptr CMonsterSetDamage226_next(nullptr);
+        static info::CMonsterSetDamage226_clbk CMonsterSetDamage226_user(nullptr);
+        static info::CMonsterSetDefPart228_ptr CMonsterSetDefPart228_next(nullptr);
+        static info::CMonsterSetDefPart228_clbk CMonsterSetDefPart228_user(nullptr);
+        static info::CMonsterSetEmotionState230_ptr CMonsterSetEmotionState230_next(nullptr);
+        static info::CMonsterSetEmotionState230_clbk CMonsterSetEmotionState230_user(nullptr);
+        static info::CMonsterSetHP232_ptr CMonsterSetHP232_next(nullptr);
+        static info::CMonsterSetHP232_clbk CMonsterSetHP232_user(nullptr);
+        static info::CMonsterSetMoveType234_ptr CMonsterSetMoveType234_next(nullptr);
+        static info::CMonsterSetMoveType234_clbk CMonsterSetMoveType234_user(nullptr);
+        static info::CMonsterSetStun236_ptr CMonsterSetStun236_next(nullptr);
+        static info::CMonsterSetStun236_clbk CMonsterSetStun236_user(nullptr);
+        static info::CMonsterUpdateLookAtPos238_ptr CMonsterUpdateLookAtPos238_next(nullptr);
+        static info::CMonsterUpdateLookAtPos238_clbk CMonsterUpdateLookAtPos238_user(nullptr);
+        static info::CMonsterUpdateLookAtPos240_ptr CMonsterUpdateLookAtPos240_next(nullptr);
+        static info::CMonsterUpdateLookAtPos240_clbk CMonsterUpdateLookAtPos240_user(nullptr);
+        static info::CMonsterUpdateSFCont242_ptr CMonsterUpdateSFCont242_next(nullptr);
+        static info::CMonsterUpdateSFCont242_clbk CMonsterUpdateSFCont242_user(nullptr);
+        static info::CMonster_AssistSF_Cont_Dmg244_ptr CMonster_AssistSF_Cont_Dmg244_next(nullptr);
+        static info::CMonster_AssistSF_Cont_Dmg244_clbk CMonster_AssistSF_Cont_Dmg244_user(nullptr);
+        static info::CMonster_AssistSF_Cont_Support246_ptr CMonster_AssistSF_Cont_Support246_next(nullptr);
+        static info::CMonster_AssistSF_Cont_Support246_clbk CMonster_AssistSF_Cont_Support246_user(nullptr);
+        static info::CMonster_AssistSF_Cont_Temp248_ptr CMonster_AssistSF_Cont_Temp248_next(nullptr);
+        static info::CMonster_AssistSF_Cont_Temp248_clbk CMonster_AssistSF_Cont_Temp248_user(nullptr);
+        static info::CMonster_BossBirthWriteLog250_ptr CMonster_BossBirthWriteLog250_next(nullptr);
+        static info::CMonster_BossBirthWriteLog250_clbk CMonster_BossBirthWriteLog250_user(nullptr);
+        static info::CMonster_BossDieWriteLog_End252_ptr CMonster_BossDieWriteLog_End252_next(nullptr);
+        static info::CMonster_BossDieWriteLog_End252_clbk CMonster_BossDieWriteLog_End252_user(nullptr);
+        static info::CMonster_BossDieWriteLog_Start254_ptr CMonster_BossDieWriteLog_Start254_next(nullptr);
+        static info::CMonster_BossDieWriteLog_Start254_clbk CMonster_BossDieWriteLog_Start254_user(nullptr);
+        static info::CMonster_DestroySDM256_ptr CMonster_DestroySDM256_next(nullptr);
+        static info::CMonster_DestroySDM256_clbk CMonster_DestroySDM256_user(nullptr);
+        static info::CMonster_InitSDM258_ptr CMonster_InitSDM258_next(nullptr);
+        static info::CMonster_InitSDM258_clbk CMonster_InitSDM258_user(nullptr);
+        static info::CMonster_InitSDM_LootTBL260_ptr CMonster_InitSDM_LootTBL260_next(nullptr);
+        static info::CMonster_InitSDM_LootTBL260_clbk CMonster_InitSDM_LootTBL260_user(nullptr);
+        static info::CMonster_LootItem_EventSet262_ptr CMonster_LootItem_EventSet262_next(nullptr);
+        static info::CMonster_LootItem_EventSet262_clbk CMonster_LootItem_EventSet262_user(nullptr);
+        static info::CMonster_LootItem_Qst264_ptr CMonster_LootItem_Qst264_next(nullptr);
+        static info::CMonster_LootItem_Qst264_clbk CMonster_LootItem_Qst264_user(nullptr);
+        static info::CMonster_LootItem_Rwp266_ptr CMonster_LootItem_Rwp266_next(nullptr);
+        static info::CMonster_LootItem_Rwp266_clbk CMonster_LootItem_Rwp266_user(nullptr);
+        static info::CMonster_LootItem_Std268_ptr CMonster_LootItem_Std268_next(nullptr);
+        static info::CMonster_LootItem_Std268_clbk CMonster_LootItem_Std268_user(nullptr);
+        static info::CMonstermake_force_attack_param274_ptr CMonstermake_force_attack_param274_next(nullptr);
+        static info::CMonstermake_force_attack_param274_clbk CMonstermake_force_attack_param274_user(nullptr);
+        static info::CMonstermake_gen_attack_param276_ptr CMonstermake_gen_attack_param276_next(nullptr);
+        static info::CMonstermake_gen_attack_param276_clbk CMonstermake_gen_attack_param276_user(nullptr);
+        static info::CMonstermake_skill_attack_param278_ptr CMonstermake_skill_attack_param278_next(nullptr);
+        static info::CMonstermake_skill_attack_param278_clbk CMonstermake_skill_attack_param278_user(nullptr);
+        static info::CMonsterdtor_CMonster280_ptr CMonsterdtor_CMonster280_next(nullptr);
+        static info::CMonsterdtor_CMonster280_clbk CMonsterdtor_CMonster280_user(nullptr);
         
-        bool CMonsterAddEventItem2_wrapper(struct CMonster* _this, struct _event_loot_item* pItem)
+        static bool CMonsterAddEventItem2_wrapper(struct CMonster* _this, struct _event_loot_item* pItem)
         {
            return CMonsterAddEventItem2_user(_this, pItem, CMonsterAddEventItem2_next);
         };
-        int CMonsterAssistSF4_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
+        static int CMonsterAssistSF4_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
         {
            return CMonsterAssistSF4_user(_this, pDst, pskill, CMonsterAssistSF4_next);
         };
-        int CMonsterAttack6_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
+        static int CMonsterAttack6_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
         {
            return CMonsterAttack6_user(_this, pDst, pskill, CMonsterAttack6_next);
         };
-        int CMonsterAttackObject8_wrapper(struct CMonster* _this, int nDamage, struct CGameObject* pOri)
+        static int CMonsterAttackObject8_wrapper(struct CMonster* _this, int nDamage, struct CGameObject* pOri)
         {
            return CMonsterAttackObject8_user(_this, nDamage, pOri, CMonsterAttackObject8_next);
         };
-        int CMonsterAttackableHeight10_wrapper(struct CMonster* _this)
+        static int CMonsterAttackableHeight10_wrapper(struct CMonster* _this)
         {
            return CMonsterAttackableHeight10_user(_this, CMonsterAttackableHeight10_next);
         };
-        void CMonsterAutoRecover12_wrapper(struct CMonster* _this)
+        static void CMonsterAutoRecover12_wrapper(struct CMonster* _this)
         {
            CMonsterAutoRecover12_user(_this, CMonsterAutoRecover12_next);
         };
-        void CMonsterBeTargeted14_wrapper(struct CMonster* _this, struct CCharacter* pSeacher)
+        static void CMonsterBeTargeted14_wrapper(struct CMonster* _this, struct CCharacter* pSeacher)
         {
            CMonsterBeTargeted14_user(_this, pSeacher, CMonsterBeTargeted14_next);
         };
-        void CMonsterctor_CMonster16_wrapper(struct CMonster* _this)
+        static void CMonsterctor_CMonster16_wrapper(struct CMonster* _this)
         {
            CMonsterctor_CMonster16_user(_this, CMonsterctor_CMonster16_next);
         };
-        void CMonsterChangeApparition18_wrapper(struct CMonster* _this, bool bApparition, unsigned int dwAfterKillTerm)
+        static void CMonsterChangeApparition18_wrapper(struct CMonster* _this, bool bApparition, unsigned int dwAfterKillTerm)
         {
            CMonsterChangeApparition18_user(_this, bApparition, dwAfterKillTerm, CMonsterChangeApparition18_next);
         };
-        void CMonsterCheckAutoRecoverHP20_wrapper(struct CMonster* _this)
+        static void CMonsterCheckAutoRecoverHP20_wrapper(struct CMonster* _this)
         {
            CMonsterCheckAutoRecoverHP20_user(_this, CMonsterCheckAutoRecoverHP20_next);
         };
-        bool CMonsterCheckDelayDestroy22_wrapper(struct CMonster* _this)
+        static bool CMonsterCheckDelayDestroy22_wrapper(struct CMonster* _this)
         {
            return CMonsterCheckDelayDestroy22_user(_this, CMonsterCheckDelayDestroy22_next);
         };
-        void CMonsterCheckEmotionPresentation24_wrapper(struct CMonster* _this)
+        static void CMonsterCheckEmotionPresentation24_wrapper(struct CMonster* _this)
         {
            CMonsterCheckEmotionPresentation24_user(_this, CMonsterCheckEmotionPresentation24_next);
         };
-        bool CMonsterCheckEventEmotionPresentation26_wrapper(struct CMonster* _this, char byCheckType, struct CCharacter* pTarget)
+        static bool CMonsterCheckEventEmotionPresentation26_wrapper(struct CMonster* _this, char byCheckType, struct CCharacter* pTarget)
         {
            return CMonsterCheckEventEmotionPresentation26_user(_this, byCheckType, pTarget, CMonsterCheckEventEmotionPresentation26_next);
         };
-        void CMonsterCheckLootItem28_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
+        static void CMonsterCheckLootItem28_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
         {
            CMonsterCheckLootItem28_user(_this, pOwner, CMonsterCheckLootItem28_next);
         };
-        void CMonsterCheckMonsterRotate30_wrapper(struct CMonster* _this)
+        static void CMonsterCheckMonsterRotate30_wrapper(struct CMonster* _this)
         {
            CMonsterCheckMonsterRotate30_user(_this, CMonsterCheckMonsterRotate30_next);
         };
-        bool CMonsterCheckMonsterStateData32_wrapper(struct CMonster* _this)
+        static bool CMonsterCheckMonsterStateData32_wrapper(struct CMonster* _this)
         {
            return CMonsterCheckMonsterStateData32_user(_this, CMonsterCheckMonsterStateData32_next);
         };
-        bool CMonsterCheckRespawnProcess34_wrapper(struct CMonster* _this)
+        static bool CMonsterCheckRespawnProcess34_wrapper(struct CMonster* _this)
         {
            return CMonsterCheckRespawnProcess34_user(_this, CMonsterCheckRespawnProcess34_next);
         };
-        void CMonsterClearEmotionPresentation36_wrapper(struct CMonster* _this)
+        static void CMonsterClearEmotionPresentation36_wrapper(struct CMonster* _this)
         {
            CMonsterClearEmotionPresentation36_user(_this, CMonsterClearEmotionPresentation36_next);
         };
-        void CMonsterCommand_ChildMonDestroy38_wrapper(struct CMonster* _this, unsigned int dwAfterKillTerm)
+        static void CMonsterCommand_ChildMonDestroy38_wrapper(struct CMonster* _this, unsigned int dwAfterKillTerm)
         {
            CMonsterCommand_ChildMonDestroy38_user(_this, dwAfterKillTerm, CMonsterCommand_ChildMonDestroy38_next);
         };
-        bool CMonsterConvertTargetPlayer40_wrapper(struct CMonster* _this, struct CPlayer* pTar)
+        static bool CMonsterConvertTargetPlayer40_wrapper(struct CMonster* _this, struct CPlayer* pTar)
         {
            return CMonsterConvertTargetPlayer40_user(_this, pTar, CMonsterConvertTargetPlayer40_next);
         };
-        bool CMonsterCreate42_wrapper(struct CMonster* _this, struct _monster_create_setdata* pData)
+        static bool CMonsterCreate42_wrapper(struct CMonster* _this, struct _monster_create_setdata* pData)
         {
            return CMonsterCreate42_user(_this, pData, CMonsterCreate42_next);
         };
-        int CMonsterCreateAI44_wrapper(struct CMonster* _this, int nType)
+        static int CMonsterCreateAI44_wrapper(struct CMonster* _this, int nType)
         {
            return CMonsterCreateAI44_user(_this, nType, CMonsterCreateAI44_next);
         };
-        bool CMonsterDestroy46_wrapper(struct CMonster* _this, char byDestroyCode, struct CGameObject* pAttObj)
+        static bool CMonsterDestroy46_wrapper(struct CMonster* _this, char byDestroyCode, struct CGameObject* pAttObj)
         {
            return CMonsterDestroy46_user(_this, byDestroyCode, pAttObj, CMonsterDestroy46_next);
         };
-        void CMonsterDisableStdItemLoot48_wrapper(struct CMonster* _this)
+        static void CMonsterDisableStdItemLoot48_wrapper(struct CMonster* _this)
         {
            CMonsterDisableStdItemLoot48_user(_this, CMonsterDisableStdItemLoot48_next);
         };
-        bool CMonsterFixTargetWhile50_wrapper(struct CMonster* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
+        static bool CMonsterFixTargetWhile50_wrapper(struct CMonster* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
         {
            return CMonsterFixTargetWhile50_user(_this, pkTarget, dwMiliSecond, CMonsterFixTargetWhile50_next);
         };
-        float CMonsterGeEmotionImpStdTime52_wrapper(struct CMonster* _this)
+        static float CMonsterGeEmotionImpStdTime52_wrapper(struct CMonster* _this)
         {
            return CMonsterGeEmotionImpStdTime52_user(_this, CMonsterGeEmotionImpStdTime52_next);
         };
-        unsigned int CMonsterGetAggroResetTime54_wrapper(struct CMonster* _this)
+        static unsigned int CMonsterGetAggroResetTime54_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAggroResetTime54_user(_this, CMonsterGetAggroResetTime54_next);
         };
-        unsigned int CMonsterGetAggroShortTime56_wrapper(struct CMonster* _this)
+        static unsigned int CMonsterGetAggroShortTime56_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAggroShortTime56_user(_this, CMonsterGetAggroShortTime56_next);
         };
-        int CMonsterGetAttackDP58_wrapper(struct CMonster* _this)
+        static int CMonsterGetAttackDP58_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAttackDP58_user(_this, CMonsterGetAttackDP58_next);
         };
-        int CMonsterGetAttackPart60_wrapper(struct CMonster* _this)
+        static int CMonsterGetAttackPart60_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAttackPart60_user(_this, CMonsterGetAttackPart60_next);
         };
-        float CMonsterGetAttackRange62_wrapper(struct CMonster* _this)
+        static float CMonsterGetAttackRange62_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAttackRange62_user(_this, CMonsterGetAttackRange62_next);
         };
-        struct CCharacter* CMonsterGetAttackTarget64_wrapper(struct CMonster* _this)
+        static struct CCharacter* CMonsterGetAttackTarget64_wrapper(struct CMonster* _this)
         {
            return CMonsterGetAttackTarget64_user(_this, CMonsterGetAttackTarget64_next);
         };
-        float CMonsterGetBonusInAreaAggro66_wrapper(struct CMonster* _this)
+        static float CMonsterGetBonusInAreaAggro66_wrapper(struct CMonster* _this)
         {
            return CMonsterGetBonusInAreaAggro66_user(_this, CMonsterGetBonusInAreaAggro66_next);
         };
-        char CMonsterGetCombatState68_wrapper(struct CMonster* _this)
+        static char CMonsterGetCombatState68_wrapper(struct CMonster* _this)
         {
            return CMonsterGetCombatState68_user(_this, CMonsterGetCombatState68_next);
         };
-        int CMonsterGetCritical_Exception_Rate70_wrapper(struct CMonster* _this)
+        static int CMonsterGetCritical_Exception_Rate70_wrapper(struct CMonster* _this)
         {
            return CMonsterGetCritical_Exception_Rate70_user(_this, CMonsterGetCritical_Exception_Rate70_next);
         };
-        int CMonsterGetDefFC72_wrapper(struct CMonster* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CMonsterGetDefFC72_wrapper(struct CMonster* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CMonsterGetDefFC72_user(_this, nAttactPart, pAttChar, pnConvertPart, CMonsterGetDefFC72_next);
         };
-        float CMonsterGetDefFacing74_wrapper(struct CMonster* _this, int nPart)
+        static float CMonsterGetDefFacing74_wrapper(struct CMonster* _this, int nPart)
         {
            return CMonsterGetDefFacing74_user(_this, nPart, CMonsterGetDefFacing74_next);
         };
-        float CMonsterGetDefGap76_wrapper(struct CMonster* _this, int nPart)
+        static float CMonsterGetDefGap76_wrapper(struct CMonster* _this, int nPart)
         {
            return CMonsterGetDefGap76_user(_this, nPart, CMonsterGetDefGap76_next);
         };
-        int CMonsterGetDefSkill78_wrapper(struct CMonster* _this, bool bBackAttackDamage)
+        static int CMonsterGetDefSkill78_wrapper(struct CMonster* _this, bool bBackAttackDamage)
         {
            return CMonsterGetDefSkill78_user(_this, bBackAttackDamage, CMonsterGetDefSkill78_next);
         };
-        char CMonsterGetEmotionState80_wrapper(struct CMonster* _this)
+        static char CMonsterGetEmotionState80_wrapper(struct CMonster* _this)
         {
            return CMonsterGetEmotionState80_user(_this, CMonsterGetEmotionState80_next);
         };
-        int CMonsterGetFireTol82_wrapper(struct CMonster* _this)
+        static int CMonsterGetFireTol82_wrapper(struct CMonster* _this)
         {
            return CMonsterGetFireTol82_user(_this, CMonsterGetFireTol82_next);
         };
-        int CMonsterGetGenAttackProb84_wrapper(struct CMonster* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CMonsterGetGenAttackProb84_wrapper(struct CMonster* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CMonsterGetGenAttackProb84_user(_this, pDst, nPart, bBackAttack, CMonsterGetGenAttackProb84_next);
         };
-        int CMonsterGetHP86_wrapper(struct CMonster* _this)
+        static int CMonsterGetHP86_wrapper(struct CMonster* _this)
         {
            return CMonsterGetHP86_user(_this, CMonsterGetHP86_next);
         };
-        int CMonsterGetHelpMeCase88_wrapper(struct CMonster* _this)
+        static int CMonsterGetHelpMeCase88_wrapper(struct CMonster* _this)
         {
            return CMonsterGetHelpMeCase88_user(_this, CMonsterGetHelpMeCase88_next);
         };
-        int CMonsterGetLevel90_wrapper(struct CMonster* _this)
+        static int CMonsterGetLevel90_wrapper(struct CMonster* _this)
         {
            return CMonsterGetLevel90_user(_this, CMonsterGetLevel90_next);
         };
-        int CMonsterGetMaxDMGSFContCount92_wrapper(struct CMonster* _this)
+        static int CMonsterGetMaxDMGSFContCount92_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMaxDMGSFContCount92_user(_this, CMonsterGetMaxDMGSFContCount92_next);
         };
-        int CMonsterGetMaxHP94_wrapper(struct CMonster* _this)
+        static int CMonsterGetMaxHP94_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMaxHP94_user(_this, CMonsterGetMaxHP94_next);
         };
-        int CMonsterGetMob_AsistType96_wrapper(struct CMonster* _this)
+        static int CMonsterGetMob_AsistType96_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMob_AsistType96_user(_this, CMonsterGetMob_AsistType96_next);
         };
-        int CMonsterGetMob_SubRace98_wrapper(struct CMonster* _this)
+        static int CMonsterGetMob_SubRace98_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMob_SubRace98_user(_this, CMonsterGetMob_SubRace98_next);
         };
-        uint16_t CMonsterGetMonStateInfo100_wrapper(struct CMonster* _this)
+        static uint16_t CMonsterGetMonStateInfo100_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMonStateInfo100_user(_this, CMonsterGetMonStateInfo100_next);
         };
-        int CMonsterGetMonsterGrade102_wrapper(struct CMonster* _this)
+        static int CMonsterGetMonsterGrade102_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMonsterGrade102_user(_this, CMonsterGetMonsterGrade102_next);
         };
-        float CMonsterGetMoveSpeed104_wrapper(struct CMonster* _this)
+        static float CMonsterGetMoveSpeed104_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMoveSpeed104_user(_this, CMonsterGetMoveSpeed104_next);
         };
-        char CMonsterGetMoveType106_wrapper(struct CMonster* _this)
+        static char CMonsterGetMoveType106_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMoveType106_user(_this, CMonsterGetMoveType106_next);
         };
-        int CMonsterGetMyDMGSFContCount108_wrapper(struct CMonster* _this)
+        static int CMonsterGetMyDMGSFContCount108_wrapper(struct CMonster* _this)
         {
            return CMonsterGetMyDMGSFContCount108_user(_this, CMonsterGetMyDMGSFContCount108_next);
         };
-        unsigned int CMonsterGetNewMonSerial110_wrapper()
+        static unsigned int CMonsterGetNewMonSerial110_wrapper()
         {
            return CMonsterGetNewMonSerial110_user(CMonsterGetNewMonSerial110_next);
         };
-        char* CMonsterGetObjName112_wrapper(struct CMonster* _this)
+        static char* CMonsterGetObjName112_wrapper(struct CMonster* _this)
         {
            return CMonsterGetObjName112_user(_this, CMonsterGetObjName112_next);
         };
-        int CMonsterGetObjRace114_wrapper(struct CMonster* _this)
+        static int CMonsterGetObjRace114_wrapper(struct CMonster* _this)
         {
            return CMonsterGetObjRace114_user(_this, CMonsterGetObjRace114_next);
         };
-        int CMonsterGetOffensiveType116_wrapper(struct CMonster* _this)
+        static int CMonsterGetOffensiveType116_wrapper(struct CMonster* _this)
         {
            return CMonsterGetOffensiveType116_user(_this, CMonsterGetOffensiveType116_next);
         };
-        struct CLuaSignalReActor* CMonsterGetSignalReActor118_wrapper(struct CMonster* _this)
+        static struct CLuaSignalReActor* CMonsterGetSignalReActor118_wrapper(struct CMonster* _this)
         {
            return CMonsterGetSignalReActor118_user(_this, CMonsterGetSignalReActor118_next);
         };
-        float CMonsterGetSkillDelayTime120_wrapper(struct CMonster* _this, struct CMonsterSkill* pSkill)
+        static float CMonsterGetSkillDelayTime120_wrapper(struct CMonster* _this, struct CMonsterSkill* pSkill)
         {
            return CMonsterGetSkillDelayTime120_user(_this, pSkill, CMonsterGetSkillDelayTime120_next);
         };
-        int CMonsterGetSoilTol122_wrapper(struct CMonster* _this)
+        static int CMonsterGetSoilTol122_wrapper(struct CMonster* _this)
         {
            return CMonsterGetSoilTol122_user(_this, CMonsterGetSoilTol122_next);
         };
-        bool CMonsterGetViewAngleCap124_wrapper(struct CMonster* _this, int nCapKind, int* nOutValue)
+        static bool CMonsterGetViewAngleCap124_wrapper(struct CMonster* _this, int nCapKind, int* nOutValue)
         {
            return CMonsterGetViewAngleCap124_user(_this, nCapKind, nOutValue, CMonsterGetViewAngleCap124_next);
         };
-        float CMonsterGetVisualAngle126_wrapper(struct CMonster* _this)
+        static float CMonsterGetVisualAngle126_wrapper(struct CMonster* _this)
         {
            return CMonsterGetVisualAngle126_user(_this, CMonsterGetVisualAngle126_next);
         };
-        float CMonsterGetVisualField128_wrapper(struct CMonster* _this)
+        static float CMonsterGetVisualField128_wrapper(struct CMonster* _this)
         {
            return CMonsterGetVisualField128_user(_this, CMonsterGetVisualField128_next);
         };
-        int CMonsterGetWaterTol130_wrapper(struct CMonster* _this)
+        static int CMonsterGetWaterTol130_wrapper(struct CMonster* _this)
         {
            return CMonsterGetWaterTol130_user(_this, CMonsterGetWaterTol130_next);
         };
-        float CMonsterGetWeaponAdjust132_wrapper(struct CMonster* _this)
+        static float CMonsterGetWeaponAdjust132_wrapper(struct CMonster* _this)
         {
            return CMonsterGetWeaponAdjust132_user(_this, CMonsterGetWeaponAdjust132_next);
         };
-        int CMonsterGetWeaponClass134_wrapper(struct CMonster* _this)
+        static int CMonsterGetWeaponClass134_wrapper(struct CMonster* _this)
         {
            return CMonsterGetWeaponClass134_user(_this, CMonsterGetWeaponClass134_next);
         };
-        float CMonsterGetWidth136_wrapper(struct CMonster* _this)
+        static float CMonsterGetWidth136_wrapper(struct CMonster* _this)
         {
            return CMonsterGetWidth136_user(_this, CMonsterGetWidth136_next);
         };
-        int CMonsterGetWindTol138_wrapper(struct CMonster* _this)
+        static int CMonsterGetWindTol138_wrapper(struct CMonster* _this)
         {
            return CMonsterGetWindTol138_user(_this, CMonsterGetWindTol138_next);
         };
-        float CMonsterGetYAngle140_wrapper(struct CMonster* _this)
+        static float CMonsterGetYAngle140_wrapper(struct CMonster* _this)
         {
            return CMonsterGetYAngle140_user(_this, CMonsterGetYAngle140_next);
         };
-        char CMonsterGetYAngleByte142_wrapper(struct CMonster* _this)
+        static char CMonsterGetYAngleByte142_wrapper(struct CMonster* _this)
         {
            return CMonsterGetYAngleByte142_user(_this, CMonsterGetYAngleByte142_next);
         };
-        bool CMonsterInit144_wrapper(struct CMonster* _this, struct _object_id* pID)
+        static bool CMonsterInit144_wrapper(struct CMonster* _this, struct _object_id* pID)
         {
            return CMonsterInit144_user(_this, pID, CMonsterInit144_next);
         };
-        char CMonsterInsertSFContEffect146_wrapper(struct CMonster* _this, char byContCode, char byEffectCode, unsigned int dwEffectIndex, uint16_t wDurSec, char byLv, bool* pbUpMty, struct CCharacter* pActChar)
+        static char CMonsterInsertSFContEffect146_wrapper(struct CMonster* _this, char byContCode, char byEffectCode, unsigned int dwEffectIndex, uint16_t wDurSec, char byLv, bool* pbUpMty, struct CCharacter* pActChar)
         {
            return CMonsterInsertSFContEffect146_user(_this, byContCode, byEffectCode, dwEffectIndex, wDurSec, byLv, pbUpMty, pActChar, CMonsterInsertSFContEffect146_next);
         };
-        bool CMonsterIsAttackableInTown148_wrapper(struct CMonster* _this)
+        static bool CMonsterIsAttackableInTown148_wrapper(struct CMonster* _this)
         {
            return CMonsterIsAttackableInTown148_user(_this, CMonsterIsAttackableInTown148_next);
         };
-        bool CMonsterIsBeAttackedAble150_wrapper(struct CMonster* _this, bool bFirst)
+        static bool CMonsterIsBeAttackedAble150_wrapper(struct CMonster* _this, bool bFirst)
         {
            return CMonsterIsBeAttackedAble150_user(_this, bFirst, CMonsterIsBeAttackedAble150_next);
         };
-        bool CMonsterIsBeDamagedAble152_wrapper(struct CMonster* _this, struct CCharacter* pAtter)
+        static bool CMonsterIsBeDamagedAble152_wrapper(struct CMonster* _this, struct CCharacter* pAtter)
         {
            return CMonsterIsBeDamagedAble152_user(_this, pAtter, CMonsterIsBeDamagedAble152_next);
         };
-        bool CMonsterIsBossMonster154_wrapper(struct CMonster* _this)
+        static bool CMonsterIsBossMonster154_wrapper(struct CMonster* _this)
         {
            return CMonsterIsBossMonster154_user(_this, CMonsterIsBossMonster154_next);
         };
-        bool CMonsterIsMovable156_wrapper(struct CMonster* _this)
+        static bool CMonsterIsMovable156_wrapper(struct CMonster* _this)
         {
            return CMonsterIsMovable156_user(_this, CMonsterIsMovable156_next);
         };
-        int CMonsterIsPreAttackAbleMon158_wrapper(struct CMonster* _this)
+        static int CMonsterIsPreAttackAbleMon158_wrapper(struct CMonster* _this)
         {
            return CMonsterIsPreAttackAbleMon158_user(_this, CMonsterIsPreAttackAbleMon158_next);
         };
-        bool CMonsterIsRecvableContEffect160_wrapper(struct CMonster* _this)
+        static bool CMonsterIsRecvableContEffect160_wrapper(struct CMonster* _this)
         {
            return CMonsterIsRecvableContEffect160_user(_this, CMonsterIsRecvableContEffect160_next);
         };
-        bool CMonsterIsRewardExp162_wrapper(struct CMonster* _this)
+        static bool CMonsterIsRewardExp162_wrapper(struct CMonster* _this)
         {
            return CMonsterIsRewardExp162_user(_this, CMonsterIsRewardExp162_next);
         };
-        bool CMonsterIsRoateMonster164_wrapper(struct CMonster* _this)
+        static bool CMonsterIsRoateMonster164_wrapper(struct CMonster* _this)
         {
            return CMonsterIsRoateMonster164_user(_this, CMonsterIsRoateMonster164_next);
         };
-        int CMonsterIsValidPlayer166_wrapper(struct CMonster* _this)
+        static int CMonsterIsValidPlayer166_wrapper(struct CMonster* _this)
         {
            return CMonsterIsValidPlayer166_user(_this, CMonsterIsValidPlayer166_next);
         };
-        bool CMonsterIsViewArea168_wrapper(struct CMonster* _this, struct CCharacter* pTarget)
+        static bool CMonsterIsViewArea168_wrapper(struct CMonster* _this, struct CCharacter* pTarget)
         {
            return CMonsterIsViewArea168_user(_this, pTarget, CMonsterIsViewArea168_next);
         };
-        void CMonsterLinkEventRespawn170_wrapper(struct CMonster* _this, struct _event_respawn* pEventRespawn)
+        static void CMonsterLinkEventRespawn170_wrapper(struct CMonster* _this, struct _event_respawn* pEventRespawn)
         {
            CMonsterLinkEventRespawn170_user(_this, pEventRespawn, CMonsterLinkEventRespawn170_next);
         };
-        void CMonsterLinkEventSet172_wrapper(struct CMonster* _this, struct _event_set* pEventSet)
+        static void CMonsterLinkEventSet172_wrapper(struct CMonster* _this, struct _event_set* pEventSet)
         {
            CMonsterLinkEventSet172_user(_this, pEventSet, CMonsterLinkEventSet172_next);
         };
-        void CMonsterLoop174_wrapper(struct CMonster* _this)
+        static void CMonsterLoop174_wrapper(struct CMonster* _this)
         {
            CMonsterLoop174_user(_this, CMonsterLoop174_next);
         };
-        void CMonsterOutOfSec176_wrapper(struct CMonster* _this)
+        static void CMonsterOutOfSec176_wrapper(struct CMonster* _this)
         {
            CMonsterOutOfSec176_user(_this, CMonsterOutOfSec176_next);
         };
-        bool CMonsterRobbedHP178_wrapper(struct CMonster* _this, struct CCharacter* pDst, int nDecHP)
+        static bool CMonsterRobbedHP178_wrapper(struct CMonster* _this, struct CCharacter* pDst, int nDecHP)
         {
            return CMonsterRobbedHP178_user(_this, pDst, nDecHP, CMonsterRobbedHP178_next);
         };
-        bool CMonsterSF_AllContHelpForceRemove_Once180_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
+        static bool CMonsterSF_AllContHelpForceRemove_Once180_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
         {
            return CMonsterSF_AllContHelpForceRemove_Once180_user(_this, pDstObj, CMonsterSF_AllContHelpForceRemove_Once180_next);
         };
-        bool CMonsterSF_AllContHelpSkillRemove_Once182_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
+        static bool CMonsterSF_AllContHelpSkillRemove_Once182_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
         {
            return CMonsterSF_AllContHelpSkillRemove_Once182_user(_this, pDstObj, CMonsterSF_AllContHelpSkillRemove_Once182_next);
         };
-        bool CMonsterSF_HPInc_Once184_wrapper(struct CMonster* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CMonsterSF_HPInc_Once184_wrapper(struct CMonster* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CMonsterSF_HPInc_Once184_user(_this, pDstObj, fEffectValue, CMonsterSF_HPInc_Once184_next);
         };
-        bool CMonsterSF_LateContDamageRemove_Once186_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
+        static bool CMonsterSF_LateContDamageRemove_Once186_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
         {
            return CMonsterSF_LateContDamageRemove_Once186_user(_this, pDstObj, CMonsterSF_LateContDamageRemove_Once186_next);
         };
-        bool CMonsterSF_LateContHelpForceRemove_Once188_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
+        static bool CMonsterSF_LateContHelpForceRemove_Once188_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
         {
            return CMonsterSF_LateContHelpForceRemove_Once188_user(_this, pDstObj, CMonsterSF_LateContHelpForceRemove_Once188_next);
         };
-        bool CMonsterSF_LateContHelpSkillRemove_Once190_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
+        static bool CMonsterSF_LateContHelpSkillRemove_Once190_wrapper(struct CMonster* _this, struct CCharacter* pDstObj)
         {
            return CMonsterSF_LateContHelpSkillRemove_Once190_user(_this, pDstObj, CMonsterSF_LateContHelpSkillRemove_Once190_next);
         };
-        struct CCharacter* CMonsterSearchNearPlayer192_wrapper(struct CMonster* _this)
+        static struct CCharacter* CMonsterSearchNearPlayer192_wrapper(struct CMonster* _this)
         {
            return CMonsterSearchNearPlayer192_user(_this, CMonsterSearchNearPlayer192_next);
         };
-        void CMonsterSendMsg_Assist_Force194_wrapper(struct CMonster* _this, char byErrCode, struct CCharacter* pDst, struct _force_fld* pForc_fld, int nSFLv)
+        static void CMonsterSendMsg_Assist_Force194_wrapper(struct CMonster* _this, char byErrCode, struct CCharacter* pDst, struct _force_fld* pForc_fld, int nSFLv)
         {
            CMonsterSendMsg_Assist_Force194_user(_this, byErrCode, pDst, pForc_fld, nSFLv, CMonsterSendMsg_Assist_Force194_next);
         };
-        void CMonsterSendMsg_Assist_Skill196_wrapper(struct CMonster* _this, char byErrCode, int nEffectCode, struct CCharacter* pDst, struct _skill_fld* pSkill_fld, int nSFLv)
+        static void CMonsterSendMsg_Assist_Skill196_wrapper(struct CMonster* _this, char byErrCode, int nEffectCode, struct CCharacter* pDst, struct _skill_fld* pSkill_fld, int nSFLv)
         {
            CMonsterSendMsg_Assist_Skill196_user(_this, byErrCode, nEffectCode, pDst, pSkill_fld, nSFLv, CMonsterSendMsg_Assist_Skill196_next);
         };
-        void CMonsterSendMsg_Attack_Force198_wrapper(struct CMonster* _this, struct CMonsterAttack* pAt)
+        static void CMonsterSendMsg_Attack_Force198_wrapper(struct CMonster* _this, struct CMonsterAttack* pAt)
         {
            CMonsterSendMsg_Attack_Force198_user(_this, pAt, CMonsterSendMsg_Attack_Force198_next);
         };
-        void CMonsterSendMsg_Attack_Gen200_wrapper(struct CMonster* _this, struct CMonsterAttack* pAT)
+        static void CMonsterSendMsg_Attack_Gen200_wrapper(struct CMonster* _this, struct CMonsterAttack* pAT)
         {
            CMonsterSendMsg_Attack_Gen200_user(_this, pAT, CMonsterSendMsg_Attack_Gen200_next);
         };
-        void CMonsterSendMsg_Attack_Skill202_wrapper(struct CMonster* _this, struct CMonsterAttack* pAt)
+        static void CMonsterSendMsg_Attack_Skill202_wrapper(struct CMonster* _this, struct CMonsterAttack* pAt)
         {
            CMonsterSendMsg_Attack_Skill202_user(_this, pAt, CMonsterSendMsg_Attack_Skill202_next);
         };
-        void CMonsterSendMsg_Change_MonsterRotate204_wrapper(struct CMonster* _this)
+        static void CMonsterSendMsg_Change_MonsterRotate204_wrapper(struct CMonster* _this)
         {
            CMonsterSendMsg_Change_MonsterRotate204_user(_this, CMonsterSendMsg_Change_MonsterRotate204_next);
         };
-        void CMonsterSendMsg_Change_MonsterState206_wrapper(struct CMonster* _this)
+        static void CMonsterSendMsg_Change_MonsterState206_wrapper(struct CMonster* _this)
         {
            CMonsterSendMsg_Change_MonsterState206_user(_this, CMonsterSendMsg_Change_MonsterState206_next);
         };
-        void CMonsterSendMsg_Change_MonsterTarget208_wrapper(struct CMonster* _this, struct CCharacter* pChar)
+        static void CMonsterSendMsg_Change_MonsterTarget208_wrapper(struct CMonster* _this, struct CCharacter* pChar)
         {
            CMonsterSendMsg_Change_MonsterTarget208_user(_this, pChar, CMonsterSendMsg_Change_MonsterTarget208_next);
         };
-        void CMonsterSendMsg_Create210_wrapper(struct CMonster* _this)
+        static void CMonsterSendMsg_Create210_wrapper(struct CMonster* _this)
         {
            CMonsterSendMsg_Create210_user(_this, CMonsterSendMsg_Create210_next);
         };
-        void CMonsterSendMsg_Destroy212_wrapper(struct CMonster* _this, char byDestroyCode)
+        static void CMonsterSendMsg_Destroy212_wrapper(struct CMonster* _this, char byDestroyCode)
         {
            CMonsterSendMsg_Destroy212_user(_this, byDestroyCode, CMonsterSendMsg_Destroy212_next);
         };
-        void CMonsterSendMsg_Emotion_Presentation214_wrapper(struct CMonster* _this, char bylhw, uint16_t wSubIndex, uint16_t wRandIndex, int nSendTargetIndex)
+        static void CMonsterSendMsg_Emotion_Presentation214_wrapper(struct CMonster* _this, char bylhw, uint16_t wSubIndex, uint16_t wRandIndex, int nSendTargetIndex)
         {
            CMonsterSendMsg_Emotion_Presentation214_user(_this, bylhw, wSubIndex, wRandIndex, nSendTargetIndex, CMonsterSendMsg_Emotion_Presentation214_next);
         };
-        void CMonsterSendMsg_FixPosition216_wrapper(struct CMonster* _this, int n)
+        static void CMonsterSendMsg_FixPosition216_wrapper(struct CMonster* _this, int n)
         {
            CMonsterSendMsg_FixPosition216_user(_this, n, CMonsterSendMsg_FixPosition216_next);
         };
-        void CMonsterSendMsg_Move218_wrapper(struct CMonster* _this)
+        static void CMonsterSendMsg_Move218_wrapper(struct CMonster* _this)
         {
            CMonsterSendMsg_Move218_user(_this, CMonsterSendMsg_Move218_next);
         };
-        void CMonsterSendMsg_RealMovePoint220_wrapper(struct CMonster* _this, int n)
+        static void CMonsterSendMsg_RealMovePoint220_wrapper(struct CMonster* _this, int n)
         {
            CMonsterSendMsg_RealMovePoint220_user(_this, n, CMonsterSendMsg_RealMovePoint220_next);
         };
-        void CMonsterSetAttackTarget222_wrapper(struct CMonster* _this, struct CCharacter* p)
+        static void CMonsterSetAttackTarget222_wrapper(struct CMonster* _this, struct CCharacter* p)
         {
            CMonsterSetAttackTarget222_user(_this, p, CMonsterSetAttackTarget222_next);
         };
-        void CMonsterSetCombatState224_wrapper(struct CMonster* _this, char byCombatState)
+        static void CMonsterSetCombatState224_wrapper(struct CMonster* _this, char byCombatState)
         {
            CMonsterSetCombatState224_user(_this, byCombatState, CMonsterSetCombatState224_next);
         };
-        int CMonsterSetDamage226_wrapper(struct CMonster* _this, int nDamage, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CMonsterSetDamage226_wrapper(struct CMonster* _this, int nDamage, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CMonsterSetDamage226_user(_this, nDamage, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CMonsterSetDamage226_next);
         };
-        void CMonsterSetDefPart228_wrapper(struct CMonster* _this, struct _monster_fld* pRecordSet)
+        static void CMonsterSetDefPart228_wrapper(struct CMonster* _this, struct _monster_fld* pRecordSet)
         {
            CMonsterSetDefPart228_user(_this, pRecordSet, CMonsterSetDefPart228_next);
         };
-        void CMonsterSetEmotionState230_wrapper(struct CMonster* _this, char byEmotionState)
+        static void CMonsterSetEmotionState230_wrapper(struct CMonster* _this, char byEmotionState)
         {
            CMonsterSetEmotionState230_user(_this, byEmotionState, CMonsterSetEmotionState230_next);
         };
-        bool CMonsterSetHP232_wrapper(struct CMonster* _this, int nHP, bool bOver)
+        static bool CMonsterSetHP232_wrapper(struct CMonster* _this, int nHP, bool bOver)
         {
            return CMonsterSetHP232_user(_this, nHP, bOver, CMonsterSetHP232_next);
         };
-        void CMonsterSetMoveType234_wrapper(struct CMonster* _this, char bMoveType)
+        static void CMonsterSetMoveType234_wrapper(struct CMonster* _this, char bMoveType)
         {
            CMonsterSetMoveType234_user(_this, bMoveType, CMonsterSetMoveType234_next);
         };
-        void CMonsterSetStun236_wrapper(struct CMonster* _this, bool bStun)
+        static void CMonsterSetStun236_wrapper(struct CMonster* _this, bool bStun)
         {
            CMonsterSetStun236_user(_this, bStun, CMonsterSetStun236_next);
         };
-        void CMonsterUpdateLookAtPos238_wrapper(struct CMonster* _this, float* vLookAt)
+        static void CMonsterUpdateLookAtPos238_wrapper(struct CMonster* _this, float* vLookAt)
         {
            CMonsterUpdateLookAtPos238_user(_this, vLookAt, CMonsterUpdateLookAtPos238_next);
         };
-        void CMonsterUpdateLookAtPos240_wrapper(struct CMonster* _this)
+        static void CMonsterUpdateLookAtPos240_wrapper(struct CMonster* _this)
         {
            CMonsterUpdateLookAtPos240_user(_this, CMonsterUpdateLookAtPos240_next);
         };
-        void CMonsterUpdateSFCont242_wrapper(struct CMonster* _this)
+        static void CMonsterUpdateSFCont242_wrapper(struct CMonster* _this)
         {
            CMonsterUpdateSFCont242_user(_this, CMonsterUpdateSFCont242_next);
         };
-        int CMonster_AssistSF_Cont_Dmg244_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
+        static int CMonster_AssistSF_Cont_Dmg244_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
         {
            return CMonster_AssistSF_Cont_Dmg244_user(_this, pDst, pskill, CMonster_AssistSF_Cont_Dmg244_next);
         };
-        int CMonster_AssistSF_Cont_Support246_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
+        static int CMonster_AssistSF_Cont_Support246_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
         {
            return CMonster_AssistSF_Cont_Support246_user(_this, pDst, pskill, CMonster_AssistSF_Cont_Support246_next);
         };
-        int CMonster_AssistSF_Cont_Temp248_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
+        static int CMonster_AssistSF_Cont_Temp248_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pskill)
         {
            return CMonster_AssistSF_Cont_Temp248_user(_this, pDst, pskill, CMonster_AssistSF_Cont_Temp248_next);
         };
-        void CMonster_BossBirthWriteLog250_wrapper(struct CMonster* _this)
+        static void CMonster_BossBirthWriteLog250_wrapper(struct CMonster* _this)
         {
            CMonster_BossBirthWriteLog250_user(_this, CMonster_BossBirthWriteLog250_next);
         };
-        void CMonster_BossDieWriteLog_End252_wrapper(struct CMonster* _this)
+        static void CMonster_BossDieWriteLog_End252_wrapper(struct CMonster* _this)
         {
            CMonster_BossDieWriteLog_End252_user(_this, CMonster_BossDieWriteLog_End252_next);
         };
-        void CMonster_BossDieWriteLog_Start254_wrapper(struct CMonster* _this, char byDestroyCode, struct CGameObject* pAttObj)
+        static void CMonster_BossDieWriteLog_Start254_wrapper(struct CMonster* _this, char byDestroyCode, struct CGameObject* pAttObj)
         {
            CMonster_BossDieWriteLog_Start254_user(_this, byDestroyCode, pAttObj, CMonster_BossDieWriteLog_Start254_next);
         };
-        void CMonster_DestroySDM256_wrapper()
+        static void CMonster_DestroySDM256_wrapper()
         {
            CMonster_DestroySDM256_user(CMonster_DestroySDM256_next);
         };
-        void CMonster_InitSDM258_wrapper()
+        static void CMonster_InitSDM258_wrapper()
         {
            CMonster_InitSDM258_user(CMonster_InitSDM258_next);
         };
-        void CMonster_InitSDM_LootTBL260_wrapper()
+        static void CMonster_InitSDM_LootTBL260_wrapper()
         {
            CMonster_InitSDM_LootTBL260_user(CMonster_InitSDM_LootTBL260_next);
         };
-        bool CMonster_LootItem_EventSet262_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
+        static bool CMonster_LootItem_EventSet262_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
         {
            return CMonster_LootItem_EventSet262_user(_this, pOwner, CMonster_LootItem_EventSet262_next);
         };
-        bool CMonster_LootItem_Qst264_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
+        static bool CMonster_LootItem_Qst264_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
         {
            return CMonster_LootItem_Qst264_user(_this, pOwner, CMonster_LootItem_Qst264_next);
         };
-        bool CMonster_LootItem_Rwp266_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
+        static bool CMonster_LootItem_Rwp266_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
         {
            return CMonster_LootItem_Rwp266_user(_this, pOwner, CMonster_LootItem_Rwp266_next);
         };
-        bool CMonster_LootItem_Std268_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
+        static bool CMonster_LootItem_Std268_wrapper(struct CMonster* _this, struct CPlayer* pOwner)
         {
            return CMonster_LootItem_Std268_user(_this, pOwner, CMonster_LootItem_Std268_next);
         };
-        void CMonstermake_force_attack_param274_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pSkill, struct _attack_param* pAP)
+        static void CMonstermake_force_attack_param274_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pSkill, struct _attack_param* pAP)
         {
            CMonstermake_force_attack_param274_user(_this, pDst, pSkill, pAP, CMonstermake_force_attack_param274_next);
         };
-        void CMonstermake_gen_attack_param276_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct _attack_param* pAP)
+        static void CMonstermake_gen_attack_param276_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct _attack_param* pAP)
         {
            CMonstermake_gen_attack_param276_user(_this, pDst, pAP, CMonstermake_gen_attack_param276_next);
         };
-        bool CMonstermake_skill_attack_param278_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pSkill, int nEffectType, struct _attack_param* pAP)
+        static bool CMonstermake_skill_attack_param278_wrapper(struct CMonster* _this, struct CCharacter* pDst, struct CMonsterSkill* pSkill, int nEffectType, struct _attack_param* pAP)
         {
            return CMonstermake_skill_attack_param278_user(_this, pDst, pSkill, nEffectType, pAP, CMonstermake_skill_attack_param278_next);
         };
-        void CMonsterdtor_CMonster280_wrapper(struct CMonster* _this)
+        static void CMonsterdtor_CMonster280_wrapper(struct CMonster* _this)
         {
            CMonsterdtor_CMonster280_user(_this, CMonsterdtor_CMonster280_next);
         };
         
-        hook_record CMonster_functions[] = {
+        static hook_record CMonster_functions[] = {
         {   (LPVOID)0x140142ab0L,
             (LPVOID *)&CMonsterAddEventItem2_user,
             (LPVOID *)&CMonsterAddEventItem2_next,
@@ -1532,5 +1532,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

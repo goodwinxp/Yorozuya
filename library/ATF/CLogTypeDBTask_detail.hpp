@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLogTypeDBTaskctor_CLogTypeDBTask2_ptr CLogTypeDBTaskctor_CLogTypeDBTask2_next(nullptr);
-        info::CLogTypeDBTaskctor_CLogTypeDBTask2_clbk CLogTypeDBTaskctor_CLogTypeDBTask2_user(nullptr);
-        info::CLogTypeDBTaskClear4_ptr CLogTypeDBTaskClear4_next(nullptr);
-        info::CLogTypeDBTaskClear4_clbk CLogTypeDBTaskClear4_user(nullptr);
-        info::CLogTypeDBTaskGetDBRet6_ptr CLogTypeDBTaskGetDBRet6_next(nullptr);
-        info::CLogTypeDBTaskGetDBRet6_clbk CLogTypeDBTaskGetDBRet6_user(nullptr);
-        info::CLogTypeDBTaskGetData8_ptr CLogTypeDBTaskGetData8_next(nullptr);
-        info::CLogTypeDBTaskGetData8_clbk CLogTypeDBTaskGetData8_user(nullptr);
-        info::CLogTypeDBTaskGetInx10_ptr CLogTypeDBTaskGetInx10_next(nullptr);
-        info::CLogTypeDBTaskGetInx10_clbk CLogTypeDBTaskGetInx10_user(nullptr);
-        info::CLogTypeDBTaskGetProcRet12_ptr CLogTypeDBTaskGetProcRet12_next(nullptr);
-        info::CLogTypeDBTaskGetProcRet12_clbk CLogTypeDBTaskGetProcRet12_user(nullptr);
-        info::CLogTypeDBTaskGetQueryType14_ptr CLogTypeDBTaskGetQueryType14_next(nullptr);
-        info::CLogTypeDBTaskGetQueryType14_clbk CLogTypeDBTaskGetQueryType14_user(nullptr);
-        info::CLogTypeDBTaskInit16_ptr CLogTypeDBTaskInit16_next(nullptr);
-        info::CLogTypeDBTaskInit16_clbk CLogTypeDBTaskInit16_user(nullptr);
-        info::CLogTypeDBTaskSet18_ptr CLogTypeDBTaskSet18_next(nullptr);
-        info::CLogTypeDBTaskSet18_clbk CLogTypeDBTaskSet18_user(nullptr);
-        info::CLogTypeDBTaskSetComplete20_ptr CLogTypeDBTaskSetComplete20_next(nullptr);
-        info::CLogTypeDBTaskSetComplete20_clbk CLogTypeDBTaskSetComplete20_user(nullptr);
-        info::CLogTypeDBTaskSetEmpty22_ptr CLogTypeDBTaskSetEmpty22_next(nullptr);
-        info::CLogTypeDBTaskSetEmpty22_clbk CLogTypeDBTaskSetEmpty22_user(nullptr);
-        info::CLogTypeDBTaskSetRet24_ptr CLogTypeDBTaskSetRet24_next(nullptr);
-        info::CLogTypeDBTaskSetRet24_clbk CLogTypeDBTaskSetRet24_user(nullptr);
-        info::CLogTypeDBTaskSetUse26_ptr CLogTypeDBTaskSetUse26_next(nullptr);
-        info::CLogTypeDBTaskSetUse26_clbk CLogTypeDBTaskSetUse26_user(nullptr);
-        info::CLogTypeDBTaskdtor_CLogTypeDBTask30_ptr CLogTypeDBTaskdtor_CLogTypeDBTask30_next(nullptr);
-        info::CLogTypeDBTaskdtor_CLogTypeDBTask30_clbk CLogTypeDBTaskdtor_CLogTypeDBTask30_user(nullptr);
+        static info::CLogTypeDBTaskctor_CLogTypeDBTask2_ptr CLogTypeDBTaskctor_CLogTypeDBTask2_next(nullptr);
+        static info::CLogTypeDBTaskctor_CLogTypeDBTask2_clbk CLogTypeDBTaskctor_CLogTypeDBTask2_user(nullptr);
+        static info::CLogTypeDBTaskClear4_ptr CLogTypeDBTaskClear4_next(nullptr);
+        static info::CLogTypeDBTaskClear4_clbk CLogTypeDBTaskClear4_user(nullptr);
+        static info::CLogTypeDBTaskGetDBRet6_ptr CLogTypeDBTaskGetDBRet6_next(nullptr);
+        static info::CLogTypeDBTaskGetDBRet6_clbk CLogTypeDBTaskGetDBRet6_user(nullptr);
+        static info::CLogTypeDBTaskGetData8_ptr CLogTypeDBTaskGetData8_next(nullptr);
+        static info::CLogTypeDBTaskGetData8_clbk CLogTypeDBTaskGetData8_user(nullptr);
+        static info::CLogTypeDBTaskGetInx10_ptr CLogTypeDBTaskGetInx10_next(nullptr);
+        static info::CLogTypeDBTaskGetInx10_clbk CLogTypeDBTaskGetInx10_user(nullptr);
+        static info::CLogTypeDBTaskGetProcRet12_ptr CLogTypeDBTaskGetProcRet12_next(nullptr);
+        static info::CLogTypeDBTaskGetProcRet12_clbk CLogTypeDBTaskGetProcRet12_user(nullptr);
+        static info::CLogTypeDBTaskGetQueryType14_ptr CLogTypeDBTaskGetQueryType14_next(nullptr);
+        static info::CLogTypeDBTaskGetQueryType14_clbk CLogTypeDBTaskGetQueryType14_user(nullptr);
+        static info::CLogTypeDBTaskInit16_ptr CLogTypeDBTaskInit16_next(nullptr);
+        static info::CLogTypeDBTaskInit16_clbk CLogTypeDBTaskInit16_user(nullptr);
+        static info::CLogTypeDBTaskSet18_ptr CLogTypeDBTaskSet18_next(nullptr);
+        static info::CLogTypeDBTaskSet18_clbk CLogTypeDBTaskSet18_user(nullptr);
+        static info::CLogTypeDBTaskSetComplete20_ptr CLogTypeDBTaskSetComplete20_next(nullptr);
+        static info::CLogTypeDBTaskSetComplete20_clbk CLogTypeDBTaskSetComplete20_user(nullptr);
+        static info::CLogTypeDBTaskSetEmpty22_ptr CLogTypeDBTaskSetEmpty22_next(nullptr);
+        static info::CLogTypeDBTaskSetEmpty22_clbk CLogTypeDBTaskSetEmpty22_user(nullptr);
+        static info::CLogTypeDBTaskSetRet24_ptr CLogTypeDBTaskSetRet24_next(nullptr);
+        static info::CLogTypeDBTaskSetRet24_clbk CLogTypeDBTaskSetRet24_user(nullptr);
+        static info::CLogTypeDBTaskSetUse26_ptr CLogTypeDBTaskSetUse26_next(nullptr);
+        static info::CLogTypeDBTaskSetUse26_clbk CLogTypeDBTaskSetUse26_user(nullptr);
+        static info::CLogTypeDBTaskdtor_CLogTypeDBTask30_ptr CLogTypeDBTaskdtor_CLogTypeDBTask30_next(nullptr);
+        static info::CLogTypeDBTaskdtor_CLogTypeDBTask30_clbk CLogTypeDBTaskdtor_CLogTypeDBTask30_user(nullptr);
         
-        void CLogTypeDBTaskctor_CLogTypeDBTask2_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskctor_CLogTypeDBTask2_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskctor_CLogTypeDBTask2_user(_this, CLogTypeDBTaskctor_CLogTypeDBTask2_next);
         };
-        void CLogTypeDBTaskClear4_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskClear4_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskClear4_user(_this, CLogTypeDBTaskClear4_next);
         };
-        char CLogTypeDBTaskGetDBRet6_wrapper(struct CLogTypeDBTask* _this)
+        static char CLogTypeDBTaskGetDBRet6_wrapper(struct CLogTypeDBTask* _this)
         {
            return CLogTypeDBTaskGetDBRet6_user(_this, CLogTypeDBTaskGetDBRet6_next);
         };
-        char* CLogTypeDBTaskGetData8_wrapper(struct CLogTypeDBTask* _this)
+        static char* CLogTypeDBTaskGetData8_wrapper(struct CLogTypeDBTask* _this)
         {
            return CLogTypeDBTaskGetData8_user(_this, CLogTypeDBTaskGetData8_next);
         };
-        unsigned int CLogTypeDBTaskGetInx10_wrapper(struct CLogTypeDBTask* _this)
+        static unsigned int CLogTypeDBTaskGetInx10_wrapper(struct CLogTypeDBTask* _this)
         {
            return CLogTypeDBTaskGetInx10_user(_this, CLogTypeDBTaskGetInx10_next);
         };
-        char CLogTypeDBTaskGetProcRet12_wrapper(struct CLogTypeDBTask* _this)
+        static char CLogTypeDBTaskGetProcRet12_wrapper(struct CLogTypeDBTask* _this)
         {
            return CLogTypeDBTaskGetProcRet12_user(_this, CLogTypeDBTaskGetProcRet12_next);
         };
-        int CLogTypeDBTaskGetQueryType14_wrapper(struct CLogTypeDBTask* _this)
+        static int CLogTypeDBTaskGetQueryType14_wrapper(struct CLogTypeDBTask* _this)
         {
            return CLogTypeDBTaskGetQueryType14_user(_this, CLogTypeDBTaskGetQueryType14_next);
         };
-        bool CLogTypeDBTaskInit16_wrapper(struct CLogTypeDBTask* _this, unsigned int dwInx, unsigned int uiSize)
+        static bool CLogTypeDBTaskInit16_wrapper(struct CLogTypeDBTask* _this, unsigned int dwInx, unsigned int uiSize)
         {
            return CLogTypeDBTaskInit16_user(_this, dwInx, uiSize, CLogTypeDBTaskInit16_next);
         };
-        bool CLogTypeDBTaskSet18_wrapper(struct CLogTypeDBTask* _this, char byQueryType, char* pcData, uint16_t wSize)
+        static bool CLogTypeDBTaskSet18_wrapper(struct CLogTypeDBTask* _this, char byQueryType, char* pcData, uint16_t wSize)
         {
            return CLogTypeDBTaskSet18_user(_this, byQueryType, pcData, wSize, CLogTypeDBTaskSet18_next);
         };
-        void CLogTypeDBTaskSetComplete20_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskSetComplete20_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskSetComplete20_user(_this, CLogTypeDBTaskSetComplete20_next);
         };
-        void CLogTypeDBTaskSetEmpty22_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskSetEmpty22_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskSetEmpty22_user(_this, CLogTypeDBTaskSetEmpty22_next);
         };
-        void CLogTypeDBTaskSetRet24_wrapper(struct CLogTypeDBTask* _this, char byDBRet, char byProcRet)
+        static void CLogTypeDBTaskSetRet24_wrapper(struct CLogTypeDBTask* _this, char byDBRet, char byProcRet)
         {
            CLogTypeDBTaskSetRet24_user(_this, byDBRet, byProcRet, CLogTypeDBTaskSetRet24_next);
         };
-        void CLogTypeDBTaskSetUse26_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskSetUse26_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskSetUse26_user(_this, CLogTypeDBTaskSetUse26_next);
         };
-        void CLogTypeDBTaskdtor_CLogTypeDBTask30_wrapper(struct CLogTypeDBTask* _this)
+        static void CLogTypeDBTaskdtor_CLogTypeDBTask30_wrapper(struct CLogTypeDBTask* _this)
         {
            CLogTypeDBTaskdtor_CLogTypeDBTask30_user(_this, CLogTypeDBTaskdtor_CLogTypeDBTask30_next);
         };
         
-        hook_record CLogTypeDBTask_functions[] = {
+        static hook_record CLogTypeDBTask_functions[] = {
         {   (LPVOID)0x1402c1ca0L,
             (LPVOID *)&CLogTypeDBTaskctor_CLogTypeDBTask2_user,
             (LPVOID *)&CLogTypeDBTaskctor_CLogTypeDBTask2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

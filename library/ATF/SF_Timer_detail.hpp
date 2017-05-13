@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::SF_TimerCheckTime2_ptr SF_TimerCheckTime2_next(nullptr);
-        info::SF_TimerCheckTime2_clbk SF_TimerCheckTime2_user(nullptr);
-        info::SF_Timerctor_SF_Timer4_ptr SF_Timerctor_SF_Timer4_next(nullptr);
-        info::SF_Timerctor_SF_Timer4_clbk SF_Timerctor_SF_Timer4_user(nullptr);
-        info::SF_TimerSet6_ptr SF_TimerSet6_next(nullptr);
-        info::SF_TimerSet6_clbk SF_TimerSet6_user(nullptr);
+        static info::SF_TimerCheckTime2_ptr SF_TimerCheckTime2_next(nullptr);
+        static info::SF_TimerCheckTime2_clbk SF_TimerCheckTime2_user(nullptr);
+        static info::SF_Timerctor_SF_Timer4_ptr SF_Timerctor_SF_Timer4_next(nullptr);
+        static info::SF_Timerctor_SF_Timer4_clbk SF_Timerctor_SF_Timer4_user(nullptr);
+        static info::SF_TimerSet6_ptr SF_TimerSet6_next(nullptr);
+        static info::SF_TimerSet6_clbk SF_TimerSet6_user(nullptr);
         
-        int SF_TimerCheckTime2_wrapper(struct SF_Timer* _this, unsigned int dwLoopTime)
+        static int SF_TimerCheckTime2_wrapper(struct SF_Timer* _this, unsigned int dwLoopTime)
         {
            return SF_TimerCheckTime2_user(_this, dwLoopTime, SF_TimerCheckTime2_next);
         };
-        void SF_Timerctor_SF_Timer4_wrapper(struct SF_Timer* _this)
+        static void SF_Timerctor_SF_Timer4_wrapper(struct SF_Timer* _this)
         {
            SF_Timerctor_SF_Timer4_user(_this, SF_Timerctor_SF_Timer4_next);
         };
-        void SF_TimerSet6_wrapper(struct SF_Timer* _this, unsigned int dwTimeDelay)
+        static void SF_TimerSet6_wrapper(struct SF_Timer* _this, unsigned int dwTimeDelay)
         {
            SF_TimerSet6_user(_this, dwTimeDelay, SF_TimerSet6_next);
         };
         
-        hook_record SF_Timer_functions[] = {
+        static hook_record SF_Timer_functions[] = {
         {   (LPVOID)0x140155620L,
             (LPVOID *)&SF_TimerCheckTime2_user,
             (LPVOID *)&SF_TimerCheckTime2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

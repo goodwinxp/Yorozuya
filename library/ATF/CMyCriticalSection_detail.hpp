@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMyCriticalSectionctor_CMyCriticalSection2_ptr CMyCriticalSectionctor_CMyCriticalSection2_next(nullptr);
-        info::CMyCriticalSectionctor_CMyCriticalSection2_clbk CMyCriticalSectionctor_CMyCriticalSection2_user(nullptr);
-        info::CMyCriticalSectionLock4_ptr CMyCriticalSectionLock4_next(nullptr);
-        info::CMyCriticalSectionLock4_clbk CMyCriticalSectionLock4_user(nullptr);
-        info::CMyCriticalSectionUnlock6_ptr CMyCriticalSectionUnlock6_next(nullptr);
-        info::CMyCriticalSectionUnlock6_clbk CMyCriticalSectionUnlock6_user(nullptr);
-        info::CMyCriticalSectiondtor_CMyCriticalSection11_ptr CMyCriticalSectiondtor_CMyCriticalSection11_next(nullptr);
-        info::CMyCriticalSectiondtor_CMyCriticalSection11_clbk CMyCriticalSectiondtor_CMyCriticalSection11_user(nullptr);
+        static info::CMyCriticalSectionctor_CMyCriticalSection2_ptr CMyCriticalSectionctor_CMyCriticalSection2_next(nullptr);
+        static info::CMyCriticalSectionctor_CMyCriticalSection2_clbk CMyCriticalSectionctor_CMyCriticalSection2_user(nullptr);
+        static info::CMyCriticalSectionLock4_ptr CMyCriticalSectionLock4_next(nullptr);
+        static info::CMyCriticalSectionLock4_clbk CMyCriticalSectionLock4_user(nullptr);
+        static info::CMyCriticalSectionUnlock6_ptr CMyCriticalSectionUnlock6_next(nullptr);
+        static info::CMyCriticalSectionUnlock6_clbk CMyCriticalSectionUnlock6_user(nullptr);
+        static info::CMyCriticalSectiondtor_CMyCriticalSection11_ptr CMyCriticalSectiondtor_CMyCriticalSection11_next(nullptr);
+        static info::CMyCriticalSectiondtor_CMyCriticalSection11_clbk CMyCriticalSectiondtor_CMyCriticalSection11_user(nullptr);
         
-        void CMyCriticalSectionctor_CMyCriticalSection2_wrapper(struct CMyCriticalSection* _this)
+        static void CMyCriticalSectionctor_CMyCriticalSection2_wrapper(struct CMyCriticalSection* _this)
         {
            CMyCriticalSectionctor_CMyCriticalSection2_user(_this, CMyCriticalSectionctor_CMyCriticalSection2_next);
         };
-        void CMyCriticalSectionLock4_wrapper(struct CMyCriticalSection* _this)
+        static void CMyCriticalSectionLock4_wrapper(struct CMyCriticalSection* _this)
         {
            CMyCriticalSectionLock4_user(_this, CMyCriticalSectionLock4_next);
         };
-        void CMyCriticalSectionUnlock6_wrapper(struct CMyCriticalSection* _this)
+        static void CMyCriticalSectionUnlock6_wrapper(struct CMyCriticalSection* _this)
         {
            CMyCriticalSectionUnlock6_user(_this, CMyCriticalSectionUnlock6_next);
         };
-        void CMyCriticalSectiondtor_CMyCriticalSection11_wrapper(struct CMyCriticalSection* _this)
+        static void CMyCriticalSectiondtor_CMyCriticalSection11_wrapper(struct CMyCriticalSection* _this)
         {
            CMyCriticalSectiondtor_CMyCriticalSection11_user(_this, CMyCriticalSectiondtor_CMyCriticalSection11_next);
         };
         
-        hook_record CMyCriticalSection_functions[] = {
+        static hook_record CMyCriticalSection_functions[] = {
         {   (LPVOID)0x140438c30L,
             (LPVOID *)&CMyCriticalSectionctor_CMyCriticalSection2_user,
             (LPVOID *)&CMyCriticalSectionctor_CMyCriticalSection2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

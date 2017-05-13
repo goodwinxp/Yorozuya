@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_buy_offerctor__buy_offer2_ptr _buy_offerctor__buy_offer2_next(nullptr);
-        info::_buy_offerctor__buy_offer2_clbk _buy_offerctor__buy_offer2_user(nullptr);
+        static info::_buy_offerctor__buy_offer2_ptr _buy_offerctor__buy_offer2_next(nullptr);
+        static info::_buy_offerctor__buy_offer2_clbk _buy_offerctor__buy_offer2_user(nullptr);
         
-        void _buy_offerctor__buy_offer2_wrapper(struct _buy_offer* _this)
+        static void _buy_offerctor__buy_offer2_wrapper(struct _buy_offer* _this)
         {
            _buy_offerctor__buy_offer2_user(_this, _buy_offerctor__buy_offer2_next);
         };
         
-        hook_record _buy_offer_functions[] = {
+        static hook_record _buy_offer_functions[] = {
         {   (LPVOID)0x1400f7820L,
             (LPVOID *)&_buy_offerctor__buy_offer2_user,
             (LPVOID *)&_buy_offerctor__buy_offer2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCashDBWorkManagerctor_CCashDBWorkManager2_ptr CCashDBWorkManagerctor_CCashDBWorkManager2_next(nullptr);
-        info::CCashDBWorkManagerctor_CCashDBWorkManager2_clbk CCashDBWorkManagerctor_CCashDBWorkManager2_user(nullptr);
-        info::CCashDBWorkManagerCompleteWork4_ptr CCashDBWorkManagerCompleteWork4_next(nullptr);
-        info::CCashDBWorkManagerCompleteWork4_clbk CCashDBWorkManagerCompleteWork4_user(nullptr);
-        info::CCashDBWorkManagerGetBillingDBConnectionStatus6_ptr CCashDBWorkManagerGetBillingDBConnectionStatus6_next(nullptr);
-        info::CCashDBWorkManagerGetBillingDBConnectionStatus6_clbk CCashDBWorkManagerGetBillingDBConnectionStatus6_user(nullptr);
-        info::CCashDBWorkManagerGetUseCashQueryStr8_ptr CCashDBWorkManagerGetUseCashQueryStr8_next(nullptr);
-        info::CCashDBWorkManagerGetUseCashQueryStr8_clbk CCashDBWorkManagerGetUseCashQueryStr8_user(nullptr);
-        info::CCashDBWorkManagerInitialize10_ptr CCashDBWorkManagerInitialize10_next(nullptr);
-        info::CCashDBWorkManagerInitialize10_clbk CCashDBWorkManagerInitialize10_user(nullptr);
-        info::CCashDBWorkManagerInitializeWorker12_ptr CCashDBWorkManagerInitializeWorker12_next(nullptr);
-        info::CCashDBWorkManagerInitializeWorker12_clbk CCashDBWorkManagerInitializeWorker12_user(nullptr);
-        info::CCashDBWorkManagerPushTask14_ptr CCashDBWorkManagerPushTask14_next(nullptr);
-        info::CCashDBWorkManagerPushTask14_clbk CCashDBWorkManagerPushTask14_user(nullptr);
-        info::CCashDBWorkManagerStart16_ptr CCashDBWorkManagerStart16_next(nullptr);
-        info::CCashDBWorkManagerStart16_clbk CCashDBWorkManagerStart16_user(nullptr);
-        info::CCashDBWorkManagerdtor_CCashDBWorkManager21_ptr CCashDBWorkManagerdtor_CCashDBWorkManager21_next(nullptr);
-        info::CCashDBWorkManagerdtor_CCashDBWorkManager21_clbk CCashDBWorkManagerdtor_CCashDBWorkManager21_user(nullptr);
+        static info::CCashDBWorkManagerctor_CCashDBWorkManager2_ptr CCashDBWorkManagerctor_CCashDBWorkManager2_next(nullptr);
+        static info::CCashDBWorkManagerctor_CCashDBWorkManager2_clbk CCashDBWorkManagerctor_CCashDBWorkManager2_user(nullptr);
+        static info::CCashDBWorkManagerCompleteWork4_ptr CCashDBWorkManagerCompleteWork4_next(nullptr);
+        static info::CCashDBWorkManagerCompleteWork4_clbk CCashDBWorkManagerCompleteWork4_user(nullptr);
+        static info::CCashDBWorkManagerGetBillingDBConnectionStatus6_ptr CCashDBWorkManagerGetBillingDBConnectionStatus6_next(nullptr);
+        static info::CCashDBWorkManagerGetBillingDBConnectionStatus6_clbk CCashDBWorkManagerGetBillingDBConnectionStatus6_user(nullptr);
+        static info::CCashDBWorkManagerGetUseCashQueryStr8_ptr CCashDBWorkManagerGetUseCashQueryStr8_next(nullptr);
+        static info::CCashDBWorkManagerGetUseCashQueryStr8_clbk CCashDBWorkManagerGetUseCashQueryStr8_user(nullptr);
+        static info::CCashDBWorkManagerInitialize10_ptr CCashDBWorkManagerInitialize10_next(nullptr);
+        static info::CCashDBWorkManagerInitialize10_clbk CCashDBWorkManagerInitialize10_user(nullptr);
+        static info::CCashDBWorkManagerInitializeWorker12_ptr CCashDBWorkManagerInitializeWorker12_next(nullptr);
+        static info::CCashDBWorkManagerInitializeWorker12_clbk CCashDBWorkManagerInitializeWorker12_user(nullptr);
+        static info::CCashDBWorkManagerPushTask14_ptr CCashDBWorkManagerPushTask14_next(nullptr);
+        static info::CCashDBWorkManagerPushTask14_clbk CCashDBWorkManagerPushTask14_user(nullptr);
+        static info::CCashDBWorkManagerStart16_ptr CCashDBWorkManagerStart16_next(nullptr);
+        static info::CCashDBWorkManagerStart16_clbk CCashDBWorkManagerStart16_user(nullptr);
+        static info::CCashDBWorkManagerdtor_CCashDBWorkManager21_ptr CCashDBWorkManagerdtor_CCashDBWorkManager21_next(nullptr);
+        static info::CCashDBWorkManagerdtor_CCashDBWorkManager21_clbk CCashDBWorkManagerdtor_CCashDBWorkManager21_user(nullptr);
         
-        void CCashDBWorkManagerctor_CCashDBWorkManager2_wrapper(struct CCashDBWorkManager* _this)
+        static void CCashDBWorkManagerctor_CCashDBWorkManager2_wrapper(struct CCashDBWorkManager* _this)
         {
            CCashDBWorkManagerctor_CCashDBWorkManager2_user(_this, CCashDBWorkManagerctor_CCashDBWorkManager2_next);
         };
-        void CCashDBWorkManagerCompleteWork4_wrapper(struct CCashDBWorkManager* _this)
+        static void CCashDBWorkManagerCompleteWork4_wrapper(struct CCashDBWorkManager* _this)
         {
            CCashDBWorkManagerCompleteWork4_user(_this, CCashDBWorkManagerCompleteWork4_next);
         };
-        bool CCashDBWorkManagerGetBillingDBConnectionStatus6_wrapper(struct CCashDBWorkManager* _this)
+        static bool CCashDBWorkManagerGetBillingDBConnectionStatus6_wrapper(struct CCashDBWorkManager* _this)
         {
            return CCashDBWorkManagerGetBillingDBConnectionStatus6_user(_this, CCashDBWorkManagerGetBillingDBConnectionStatus6_next);
         };
-        void CCashDBWorkManagerGetUseCashQueryStr8_wrapper(struct CCashDBWorkManager* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
+        static void CCashDBWorkManagerGetUseCashQueryStr8_wrapper(struct CCashDBWorkManager* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
         {
            CCashDBWorkManagerGetUseCashQueryStr8_user(_this, rParam, nIdx, wszQuery, tBufferSize, CCashDBWorkManagerGetUseCashQueryStr8_next);
         };
-        bool CCashDBWorkManagerInitialize10_wrapper(struct CCashDBWorkManager* _this)
+        static bool CCashDBWorkManagerInitialize10_wrapper(struct CCashDBWorkManager* _this)
         {
            return CCashDBWorkManagerInitialize10_user(_this, CCashDBWorkManagerInitialize10_next);
         };
-        bool CCashDBWorkManagerInitializeWorker12_wrapper(struct CCashDBWorkManager* _this)
+        static bool CCashDBWorkManagerInitializeWorker12_wrapper(struct CCashDBWorkManager* _this)
         {
            return CCashDBWorkManagerInitializeWorker12_user(_this, CCashDBWorkManagerInitializeWorker12_next);
         };
-        bool CCashDBWorkManagerPushTask14_wrapper(struct CCashDBWorkManager* _this, int nTaskCode, char* p, uint64_t size)
+        static bool CCashDBWorkManagerPushTask14_wrapper(struct CCashDBWorkManager* _this, int nTaskCode, char* p, uint64_t size)
         {
            return CCashDBWorkManagerPushTask14_user(_this, nTaskCode, p, size, CCashDBWorkManagerPushTask14_next);
         };
-        void CCashDBWorkManagerStart16_wrapper(struct CCashDBWorkManager* _this)
+        static void CCashDBWorkManagerStart16_wrapper(struct CCashDBWorkManager* _this)
         {
            CCashDBWorkManagerStart16_user(_this, CCashDBWorkManagerStart16_next);
         };
-        void CCashDBWorkManagerdtor_CCashDBWorkManager21_wrapper(struct CCashDBWorkManager* _this)
+        static void CCashDBWorkManagerdtor_CCashDBWorkManager21_wrapper(struct CCashDBWorkManager* _this)
         {
            CCashDBWorkManagerdtor_CCashDBWorkManager21_user(_this, CCashDBWorkManagerdtor_CCashDBWorkManager21_next);
         };
         
-        hook_record CCashDBWorkManager_functions[] = {
+        static hook_record CCashDBWorkManager_functions[] = {
         {   (LPVOID)0x1402f31b0L,
             (LPVOID *)&CCashDBWorkManagerctor_CCashDBWorkManager2_user,
             (LPVOID *)&CCashDBWorkManagerctor_CCashDBWorkManager2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

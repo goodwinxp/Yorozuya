@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_job_sub_setupctor__job_sub_setup2_ptr _job_sub_setupctor__job_sub_setup2_next(nullptr);
-        info::_job_sub_setupctor__job_sub_setup2_clbk _job_sub_setupctor__job_sub_setup2_user(nullptr);
+        static info::_job_sub_setupctor__job_sub_setup2_ptr _job_sub_setupctor__job_sub_setup2_next(nullptr);
+        static info::_job_sub_setupctor__job_sub_setup2_clbk _job_sub_setupctor__job_sub_setup2_user(nullptr);
         
-        void _job_sub_setupctor__job_sub_setup2_wrapper(struct _job_sub_setup* _this)
+        static void _job_sub_setupctor__job_sub_setup2_wrapper(struct _job_sub_setup* _this)
         {
            _job_sub_setupctor__job_sub_setup2_user(_this, _job_sub_setupctor__job_sub_setup2_next);
         };
         
-        hook_record _job_sub_setup_functions[] = {
+        static hook_record _job_sub_setup_functions[] = {
         {   (LPVOID)0x140272af0L,
             (LPVOID *)&_job_sub_setupctor__job_sub_setup2_user,
             (LPVOID *)&_job_sub_setupctor__job_sub_setup2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

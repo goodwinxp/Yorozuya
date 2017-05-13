@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__tablector_table2_ptr lua_tinker__tablector_table2_next(nullptr);
-            info::lua_tinker__tablector_table2_clbk lua_tinker__tablector_table2_user(nullptr);
-            info::lua_tinker__tablector_table4_ptr lua_tinker__tablector_table4_next(nullptr);
-            info::lua_tinker__tablector_table4_clbk lua_tinker__tablector_table4_user(nullptr);
-            info::lua_tinker__tablector_table6_ptr lua_tinker__tablector_table6_next(nullptr);
-            info::lua_tinker__tablector_table6_clbk lua_tinker__tablector_table6_user(nullptr);
-            info::lua_tinker__tablector_table8_ptr lua_tinker__tablector_table8_next(nullptr);
-            info::lua_tinker__tablector_table8_clbk lua_tinker__tablector_table8_user(nullptr);
-            info::lua_tinker__tabledtor_table10_ptr lua_tinker__tabledtor_table10_next(nullptr);
-            info::lua_tinker__tabledtor_table10_clbk lua_tinker__tabledtor_table10_user(nullptr);
+            static info::lua_tinker__tablector_table2_ptr lua_tinker__tablector_table2_next(nullptr);
+            static info::lua_tinker__tablector_table2_clbk lua_tinker__tablector_table2_user(nullptr);
+            static info::lua_tinker__tablector_table4_ptr lua_tinker__tablector_table4_next(nullptr);
+            static info::lua_tinker__tablector_table4_clbk lua_tinker__tablector_table4_user(nullptr);
+            static info::lua_tinker__tablector_table6_ptr lua_tinker__tablector_table6_next(nullptr);
+            static info::lua_tinker__tablector_table6_clbk lua_tinker__tablector_table6_user(nullptr);
+            static info::lua_tinker__tablector_table8_ptr lua_tinker__tablector_table8_next(nullptr);
+            static info::lua_tinker__tablector_table8_clbk lua_tinker__tablector_table8_user(nullptr);
+            static info::lua_tinker__tabledtor_table10_ptr lua_tinker__tabledtor_table10_next(nullptr);
+            static info::lua_tinker__tabledtor_table10_clbk lua_tinker__tabledtor_table10_user(nullptr);
             
-            void lua_tinker__tablector_table2_wrapper(struct lua_tinker::table* _this, lua_State* L)
+            static void lua_tinker__tablector_table2_wrapper(struct lua_tinker::table* _this, lua_State* L)
             {
                lua_tinker__tablector_table2_user(_this, L, lua_tinker__tablector_table2_next);
             };
-            void lua_tinker__tablector_table4_wrapper(struct lua_tinker::table* _this, lua_State* L, char* name)
+            static void lua_tinker__tablector_table4_wrapper(struct lua_tinker::table* _this, lua_State* L, char* name)
             {
                lua_tinker__tablector_table4_user(_this, L, name, lua_tinker__tablector_table4_next);
             };
-            void lua_tinker__tablector_table6_wrapper(struct lua_tinker::table* _this, lua_State* L, int index)
+            static void lua_tinker__tablector_table6_wrapper(struct lua_tinker::table* _this, lua_State* L, int index)
             {
                lua_tinker__tablector_table6_user(_this, L, index, lua_tinker__tablector_table6_next);
             };
-            void lua_tinker__tablector_table8_wrapper(struct lua_tinker::table* _this, struct lua_tinker::table* input)
+            static void lua_tinker__tablector_table8_wrapper(struct lua_tinker::table* _this, struct lua_tinker::table* input)
             {
                lua_tinker__tablector_table8_user(_this, input, lua_tinker__tablector_table8_next);
             };
-            void lua_tinker__tabledtor_table10_wrapper(struct lua_tinker::table* _this)
+            static void lua_tinker__tabledtor_table10_wrapper(struct lua_tinker::table* _this)
             {
                lua_tinker__tabledtor_table10_user(_this, lua_tinker__tabledtor_table10_next);
             };
             
-            hook_record table_functions[] = {
+            static hook_record table_functions[] = {
             {   (LPVOID)0x1404463d0L,
                 (LPVOID *)&lua_tinker__tablector_table2_user,
                 (LPVOID *)&lua_tinker__tablector_table2_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

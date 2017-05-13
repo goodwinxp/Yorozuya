@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::LtdWriterInitLogDB2_ptr LtdWriterInitLogDB2_next(nullptr);
-        info::LtdWriterInitLogDB2_clbk LtdWriterInitLogDB2_user(nullptr);
-        info::LtdWriterctor_LtdWriter4_ptr LtdWriterctor_LtdWriter4_next(nullptr);
-        info::LtdWriterctor_LtdWriter4_clbk LtdWriterctor_LtdWriter4_user(nullptr);
-        info::LtdWriterPtrInstance6_ptr LtdWriterPtrInstance6_next(nullptr);
-        info::LtdWriterPtrInstance6_clbk LtdWriterPtrInstance6_user(nullptr);
-        info::LtdWriterPushLog8_ptr LtdWriterPushLog8_next(nullptr);
-        info::LtdWriterPushLog8_clbk LtdWriterPushLog8_user(nullptr);
-        info::LtdWriterRelease10_ptr LtdWriterRelease10_next(nullptr);
-        info::LtdWriterRelease10_clbk LtdWriterRelease10_user(nullptr);
-        info::LtdWriter_CreateTable12_ptr LtdWriter_CreateTable12_next(nullptr);
-        info::LtdWriter_CreateTable12_clbk LtdWriter_CreateTable12_user(nullptr);
-        info::LtdWriter_GetLocalDate14_ptr LtdWriter_GetLocalDate14_next(nullptr);
-        info::LtdWriter_GetLocalDate14_clbk LtdWriter_GetLocalDate14_user(nullptr);
-        info::LtdWriter_PushItemCut16_ptr LtdWriter_PushItemCut16_next(nullptr);
-        info::LtdWriter_PushItemCut16_clbk LtdWriter_PushItemCut16_user(nullptr);
-        info::LtdWriter_PushItemMove18_ptr LtdWriter_PushItemMove18_next(nullptr);
-        info::LtdWriter_PushItemMove18_clbk LtdWriter_PushItemMove18_user(nullptr);
-        info::LtdWriter_SetExpend20_ptr LtdWriter_SetExpend20_next(nullptr);
-        info::LtdWriter_SetExpend20_clbk LtdWriter_SetExpend20_user(nullptr);
-        info::LtdWriter_SetItemInfo22_ptr LtdWriter_SetItemInfo22_next(nullptr);
-        info::LtdWriter_SetItemInfo22_clbk LtdWriter_SetItemInfo22_user(nullptr);
-        info::LtdWriter_SetLtd24_ptr LtdWriter_SetLtd24_next(nullptr);
-        info::LtdWriter_SetLtd24_clbk LtdWriter_SetLtd24_user(nullptr);
-        info::LtdWriter_WriteDB26_ptr LtdWriter_WriteDB26_next(nullptr);
-        info::LtdWriter_WriteDB26_clbk LtdWriter_WriteDB26_user(nullptr);
-        info::LtdWriters_Working30_ptr LtdWriters_Working30_next(nullptr);
-        info::LtdWriters_Working30_clbk LtdWriters_Working30_user(nullptr);
-        info::LtdWriterstart32_ptr LtdWriterstart32_next(nullptr);
-        info::LtdWriterstart32_clbk LtdWriterstart32_user(nullptr);
-        info::LtdWriterstop34_ptr LtdWriterstop34_next(nullptr);
-        info::LtdWriterstop34_clbk LtdWriterstop34_user(nullptr);
-        info::LtdWriterdtor_LtdWriter36_ptr LtdWriterdtor_LtdWriter36_next(nullptr);
-        info::LtdWriterdtor_LtdWriter36_clbk LtdWriterdtor_LtdWriter36_user(nullptr);
+        static info::LtdWriterInitLogDB2_ptr LtdWriterInitLogDB2_next(nullptr);
+        static info::LtdWriterInitLogDB2_clbk LtdWriterInitLogDB2_user(nullptr);
+        static info::LtdWriterctor_LtdWriter4_ptr LtdWriterctor_LtdWriter4_next(nullptr);
+        static info::LtdWriterctor_LtdWriter4_clbk LtdWriterctor_LtdWriter4_user(nullptr);
+        static info::LtdWriterPtrInstance6_ptr LtdWriterPtrInstance6_next(nullptr);
+        static info::LtdWriterPtrInstance6_clbk LtdWriterPtrInstance6_user(nullptr);
+        static info::LtdWriterPushLog8_ptr LtdWriterPushLog8_next(nullptr);
+        static info::LtdWriterPushLog8_clbk LtdWriterPushLog8_user(nullptr);
+        static info::LtdWriterRelease10_ptr LtdWriterRelease10_next(nullptr);
+        static info::LtdWriterRelease10_clbk LtdWriterRelease10_user(nullptr);
+        static info::LtdWriter_CreateTable12_ptr LtdWriter_CreateTable12_next(nullptr);
+        static info::LtdWriter_CreateTable12_clbk LtdWriter_CreateTable12_user(nullptr);
+        static info::LtdWriter_GetLocalDate14_ptr LtdWriter_GetLocalDate14_next(nullptr);
+        static info::LtdWriter_GetLocalDate14_clbk LtdWriter_GetLocalDate14_user(nullptr);
+        static info::LtdWriter_PushItemCut16_ptr LtdWriter_PushItemCut16_next(nullptr);
+        static info::LtdWriter_PushItemCut16_clbk LtdWriter_PushItemCut16_user(nullptr);
+        static info::LtdWriter_PushItemMove18_ptr LtdWriter_PushItemMove18_next(nullptr);
+        static info::LtdWriter_PushItemMove18_clbk LtdWriter_PushItemMove18_user(nullptr);
+        static info::LtdWriter_SetExpend20_ptr LtdWriter_SetExpend20_next(nullptr);
+        static info::LtdWriter_SetExpend20_clbk LtdWriter_SetExpend20_user(nullptr);
+        static info::LtdWriter_SetItemInfo22_ptr LtdWriter_SetItemInfo22_next(nullptr);
+        static info::LtdWriter_SetItemInfo22_clbk LtdWriter_SetItemInfo22_user(nullptr);
+        static info::LtdWriter_SetLtd24_ptr LtdWriter_SetLtd24_next(nullptr);
+        static info::LtdWriter_SetLtd24_clbk LtdWriter_SetLtd24_user(nullptr);
+        static info::LtdWriter_WriteDB26_ptr LtdWriter_WriteDB26_next(nullptr);
+        static info::LtdWriter_WriteDB26_clbk LtdWriter_WriteDB26_user(nullptr);
+        static info::LtdWriters_Working30_ptr LtdWriters_Working30_next(nullptr);
+        static info::LtdWriters_Working30_clbk LtdWriters_Working30_user(nullptr);
+        static info::LtdWriterstart32_ptr LtdWriterstart32_next(nullptr);
+        static info::LtdWriterstart32_clbk LtdWriterstart32_user(nullptr);
+        static info::LtdWriterstop34_ptr LtdWriterstop34_next(nullptr);
+        static info::LtdWriterstop34_clbk LtdWriterstop34_user(nullptr);
+        static info::LtdWriterdtor_LtdWriter36_ptr LtdWriterdtor_LtdWriter36_next(nullptr);
+        static info::LtdWriterdtor_LtdWriter36_clbk LtdWriterdtor_LtdWriter36_user(nullptr);
         
-        bool LtdWriterInitLogDB2_wrapper(struct LtdWriter* _this, char* szDBName, char* szIP)
+        static bool LtdWriterInitLogDB2_wrapper(struct LtdWriter* _this, char* szDBName, char* szIP)
         {
            return LtdWriterInitLogDB2_user(_this, szDBName, szIP, LtdWriterInitLogDB2_next);
         };
-        void LtdWriterctor_LtdWriter4_wrapper(struct LtdWriter* _this)
+        static void LtdWriterctor_LtdWriter4_wrapper(struct LtdWriter* _this)
         {
            LtdWriterctor_LtdWriter4_user(_this, LtdWriterctor_LtdWriter4_next);
         };
-        struct LtdWriter* LtdWriterPtrInstance6_wrapper()
+        static struct LtdWriter* LtdWriterPtrInstance6_wrapper()
         {
            return LtdWriterPtrInstance6_user(LtdWriterPtrInstance6_next);
         };
-        void LtdWriterPushLog8_wrapper(struct LtdWriter* _this, char* byLogType, struct _LTD_PARAM* pParam)
+        static void LtdWriterPushLog8_wrapper(struct LtdWriter* _this, char* byLogType, struct _LTD_PARAM* pParam)
         {
            LtdWriterPushLog8_user(_this, byLogType, pParam, LtdWriterPushLog8_next);
         };
-        void LtdWriterRelease10_wrapper(struct LtdWriter* _this)
+        static void LtdWriterRelease10_wrapper(struct LtdWriter* _this)
         {
            LtdWriterRelease10_user(_this, LtdWriterRelease10_next);
         };
-        void LtdWriter_CreateTable12_wrapper(struct LtdWriter* _this)
+        static void LtdWriter_CreateTable12_wrapper(struct LtdWriter* _this)
         {
            LtdWriter_CreateTable12_user(_this, LtdWriter_CreateTable12_next);
         };
-        int LtdWriter_GetLocalDate14_wrapper(struct LtdWriter* _this)
+        static int LtdWriter_GetLocalDate14_wrapper(struct LtdWriter* _this)
         {
            return LtdWriter_GetLocalDate14_user(_this, LtdWriter_GetLocalDate14_next);
         };
-        void LtdWriter_PushItemCut16_wrapper(struct LtdWriter* _this, char bySubLogType, struct _LTD_PARAM* pParam, struct _LTD* pl)
+        static void LtdWriter_PushItemCut16_wrapper(struct LtdWriter* _this, char bySubLogType, struct _LTD_PARAM* pParam, struct _LTD* pl)
         {
            LtdWriter_PushItemCut16_user(_this, bySubLogType, pParam, pl, LtdWriter_PushItemCut16_next);
         };
-        void LtdWriter_PushItemMove18_wrapper(struct LtdWriter* _this, char bySubLogType, struct _LTD_PARAM* pParam, struct _LTD* pl)
+        static void LtdWriter_PushItemMove18_wrapper(struct LtdWriter* _this, char bySubLogType, struct _LTD_PARAM* pParam, struct _LTD* pl)
         {
            LtdWriter_PushItemMove18_user(_this, bySubLogType, pParam, pl, LtdWriter_PushItemMove18_next);
         };
-        void LtdWriter_SetExpend20_wrapper(struct LtdWriter* _this, char* pszExpend, struct _LTD_EXPEND* pe)
+        static void LtdWriter_SetExpend20_wrapper(struct LtdWriter* _this, char* pszExpend, struct _LTD_EXPEND* pe)
         {
            LtdWriter_SetExpend20_user(_this, pszExpend, pe, LtdWriter_SetExpend20_next);
         };
-        void LtdWriter_SetItemInfo22_wrapper(struct LtdWriter* _this, char byIndex, struct _STORAGE_LIST::_db_con* pItem, char byOverlapNum, struct _LTD_ITEMINFO* pi, int nMoveType)
+        static void LtdWriter_SetItemInfo22_wrapper(struct LtdWriter* _this, char byIndex, struct _STORAGE_LIST::_db_con* pItem, char byOverlapNum, struct _LTD_ITEMINFO* pi, int nMoveType)
         {
            LtdWriter_SetItemInfo22_user(_this, byIndex, pItem, byOverlapNum, pi, nMoveType, LtdWriter_SetItemInfo22_next);
         };
-        void LtdWriter_SetLtd24_wrapper(struct LtdWriter* _this, struct CUserDB* pUserDB, struct _LTD* pl, bool bItemInfo, bool bExpend)
+        static void LtdWriter_SetLtd24_wrapper(struct LtdWriter* _this, struct CUserDB* pUserDB, struct _LTD* pl, bool bItemInfo, bool bExpend)
         {
            LtdWriter_SetLtd24_user(_this, pUserDB, pl, bItemInfo, bExpend, LtdWriter_SetLtd24_next);
         };
-        void LtdWriter_WriteDB26_wrapper(struct LtdWriter* _this, unsigned int dwIndex)
+        static void LtdWriter_WriteDB26_wrapper(struct LtdWriter* _this, unsigned int dwIndex)
         {
            LtdWriter_WriteDB26_user(_this, dwIndex, LtdWriter_WriteDB26_next);
         };
-        void LtdWriters_Working30_wrapper(void* pv)
+        static void LtdWriters_Working30_wrapper(void* pv)
         {
            LtdWriters_Working30_user(pv, LtdWriters_Working30_next);
         };
-        bool LtdWriterstart32_wrapper(struct LtdWriter* _this)
+        static bool LtdWriterstart32_wrapper(struct LtdWriter* _this)
         {
            return LtdWriterstart32_user(_this, LtdWriterstart32_next);
         };
-        void LtdWriterstop34_wrapper(struct LtdWriter* _this)
+        static void LtdWriterstop34_wrapper(struct LtdWriter* _this)
         {
            LtdWriterstop34_user(_this, LtdWriterstop34_next);
         };
-        void LtdWriterdtor_LtdWriter36_wrapper(struct LtdWriter* _this)
+        static void LtdWriterdtor_LtdWriter36_wrapper(struct LtdWriter* _this)
         {
            LtdWriterdtor_LtdWriter36_user(_this, LtdWriterdtor_LtdWriter36_next);
         };
         
-        hook_record LtdWriter_functions[] = {
+        static hook_record LtdWriter_functions[] = {
         {   (LPVOID)0x14024a850L,
             (LPVOID *)&LtdWriterInitLogDB2_user,
             (LPVOID *)&LtdWriterInitLogDB2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

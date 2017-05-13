@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_PCBANG_PLAY_TIMEInit2_ptr _PCBANG_PLAY_TIMEInit2_next(nullptr);
-        info::_PCBANG_PLAY_TIMEInit2_clbk _PCBANG_PLAY_TIMEInit2_user(nullptr);
+        static info::_PCBANG_PLAY_TIMEInit2_ptr _PCBANG_PLAY_TIMEInit2_next(nullptr);
+        static info::_PCBANG_PLAY_TIMEInit2_clbk _PCBANG_PLAY_TIMEInit2_user(nullptr);
         
-        void _PCBANG_PLAY_TIMEInit2_wrapper(struct _PCBANG_PLAY_TIME* _this)
+        static void _PCBANG_PLAY_TIMEInit2_wrapper(struct _PCBANG_PLAY_TIME* _this)
         {
            _PCBANG_PLAY_TIMEInit2_user(_this, _PCBANG_PLAY_TIMEInit2_next);
         };
         
-        hook_record _PCBANG_PLAY_TIME_functions[] = {
+        static hook_record _PCBANG_PLAY_TIME_functions[] = {
         {   (LPVOID)0x140077da0L,
             (LPVOID *)&_PCBANG_PLAY_TIMEInit2_user,
             (LPVOID *)&_PCBANG_PLAY_TIMEInit2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

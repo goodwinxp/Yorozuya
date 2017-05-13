@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_ptr _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_next(nullptr);
-        info::_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_clbk _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_user(nullptr);
-        info::_qry_case_insert_patriarch_commsize4_ptr _qry_case_insert_patriarch_commsize4_next(nullptr);
-        info::_qry_case_insert_patriarch_commsize4_clbk _qry_case_insert_patriarch_commsize4_user(nullptr);
+        static info::_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_ptr _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_next(nullptr);
+        static info::_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_clbk _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_user(nullptr);
+        static info::_qry_case_insert_patriarch_commsize4_ptr _qry_case_insert_patriarch_commsize4_next(nullptr);
+        static info::_qry_case_insert_patriarch_commsize4_clbk _qry_case_insert_patriarch_commsize4_user(nullptr);
         
-        void _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_wrapper(struct _qry_case_insert_patriarch_comm* _this)
+        static void _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_wrapper(struct _qry_case_insert_patriarch_comm* _this)
         {
            _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_user(_this, _qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_next);
         };
-        int _qry_case_insert_patriarch_commsize4_wrapper(struct _qry_case_insert_patriarch_comm* _this)
+        static int _qry_case_insert_patriarch_commsize4_wrapper(struct _qry_case_insert_patriarch_comm* _this)
         {
            return _qry_case_insert_patriarch_commsize4_user(_this, _qry_case_insert_patriarch_commsize4_next);
         };
         
-        hook_record _qry_case_insert_patriarch_comm_functions[] = {
+        static hook_record _qry_case_insert_patriarch_comm_functions[] = {
         {   (LPVOID)0x1402d98f0L,
             (LPVOID *)&_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_user,
             (LPVOID *)&_qry_case_insert_patriarch_commctor__qry_case_insert_patriarch_comm2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

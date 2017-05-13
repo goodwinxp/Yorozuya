@@ -8,83 +8,83 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SFCONT_DB_BASEInit2_ptr _SFCONT_DB_BASEInit2_next(nullptr);
-        info::_SFCONT_DB_BASEInit2_clbk _SFCONT_DB_BASEInit2_user(nullptr);
-        info::_SFCONT_DB_BASEctor__SFCONT_DB_BASE4_ptr _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_next(nullptr);
-        info::_SFCONT_DB_BASEctor__SFCONT_DB_BASE4_clbk _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_user(nullptr);
+        static info::_SFCONT_DB_BASEInit2_ptr _SFCONT_DB_BASEInit2_next(nullptr);
+        static info::_SFCONT_DB_BASEInit2_clbk _SFCONT_DB_BASEInit2_user(nullptr);
+        static info::_SFCONT_DB_BASEctor__SFCONT_DB_BASE4_ptr _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_next(nullptr);
+        static info::_SFCONT_DB_BASEctor__SFCONT_DB_BASE4_clbk _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_user(nullptr);
         
-        info::_SFCONT_DB_BASE___LISTGetEffectCode2_ptr _SFCONT_DB_BASE___LISTGetEffectCode2_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetEffectCode2_clbk _SFCONT_DB_BASE___LISTGetEffectCode2_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetEffectIndex4_ptr _SFCONT_DB_BASE___LISTGetEffectIndex4_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetEffectIndex4_clbk _SFCONT_DB_BASE___LISTGetEffectIndex4_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetLeftTime6_ptr _SFCONT_DB_BASE___LISTGetLeftTime6_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetLeftTime6_clbk _SFCONT_DB_BASE___LISTGetLeftTime6_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetLv8_ptr _SFCONT_DB_BASE___LISTGetLv8_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetLv8_clbk _SFCONT_DB_BASE___LISTGetLv8_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetOrder10_ptr _SFCONT_DB_BASE___LISTGetOrder10_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTGetOrder10_clbk _SFCONT_DB_BASE___LISTGetOrder10_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTInit12_ptr _SFCONT_DB_BASE___LISTInit12_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTInit12_clbk _SFCONT_DB_BASE___LISTInit12_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTIsFilled14_ptr _SFCONT_DB_BASE___LISTIsFilled14_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTIsFilled14_clbk _SFCONT_DB_BASE___LISTIsFilled14_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetKey16_ptr _SFCONT_DB_BASE___LISTSetKey16_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetKey16_clbk _SFCONT_DB_BASE___LISTSetKey16_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetLeftTime18_ptr _SFCONT_DB_BASE___LISTSetLeftTime18_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetLeftTime18_clbk _SFCONT_DB_BASE___LISTSetLeftTime18_user(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetOrder20_ptr _SFCONT_DB_BASE___LISTSetOrder20_next(nullptr);
-        info::_SFCONT_DB_BASE___LISTSetOrder20_clbk _SFCONT_DB_BASE___LISTSetOrder20_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetEffectCode2_ptr _SFCONT_DB_BASE___LISTGetEffectCode2_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetEffectCode2_clbk _SFCONT_DB_BASE___LISTGetEffectCode2_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetEffectIndex4_ptr _SFCONT_DB_BASE___LISTGetEffectIndex4_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetEffectIndex4_clbk _SFCONT_DB_BASE___LISTGetEffectIndex4_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetLeftTime6_ptr _SFCONT_DB_BASE___LISTGetLeftTime6_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetLeftTime6_clbk _SFCONT_DB_BASE___LISTGetLeftTime6_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetLv8_ptr _SFCONT_DB_BASE___LISTGetLv8_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetLv8_clbk _SFCONT_DB_BASE___LISTGetLv8_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetOrder10_ptr _SFCONT_DB_BASE___LISTGetOrder10_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTGetOrder10_clbk _SFCONT_DB_BASE___LISTGetOrder10_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTInit12_ptr _SFCONT_DB_BASE___LISTInit12_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTInit12_clbk _SFCONT_DB_BASE___LISTInit12_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTIsFilled14_ptr _SFCONT_DB_BASE___LISTIsFilled14_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTIsFilled14_clbk _SFCONT_DB_BASE___LISTIsFilled14_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetKey16_ptr _SFCONT_DB_BASE___LISTSetKey16_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetKey16_clbk _SFCONT_DB_BASE___LISTSetKey16_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetLeftTime18_ptr _SFCONT_DB_BASE___LISTSetLeftTime18_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetLeftTime18_clbk _SFCONT_DB_BASE___LISTSetLeftTime18_user(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetOrder20_ptr _SFCONT_DB_BASE___LISTSetOrder20_next(nullptr);
+        static info::_SFCONT_DB_BASE___LISTSetOrder20_clbk _SFCONT_DB_BASE___LISTSetOrder20_user(nullptr);
         
-        void _SFCONT_DB_BASEInit2_wrapper(struct _SFCONT_DB_BASE* _this)
+        static void _SFCONT_DB_BASEInit2_wrapper(struct _SFCONT_DB_BASE* _this)
         {
            _SFCONT_DB_BASEInit2_user(_this, _SFCONT_DB_BASEInit2_next);
         };
-        void _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_wrapper(struct _SFCONT_DB_BASE* _this)
+        static void _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_wrapper(struct _SFCONT_DB_BASE* _this)
         {
            _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_user(_this, _SFCONT_DB_BASEctor__SFCONT_DB_BASE4_next);
         };
         
-        char _SFCONT_DB_BASE___LISTGetEffectCode2_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static char _SFCONT_DB_BASE___LISTGetEffectCode2_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTGetEffectCode2_user(_this, _SFCONT_DB_BASE___LISTGetEffectCode2_next);
         };
-        uint16_t _SFCONT_DB_BASE___LISTGetEffectIndex4_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static uint16_t _SFCONT_DB_BASE___LISTGetEffectIndex4_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTGetEffectIndex4_user(_this, _SFCONT_DB_BASE___LISTGetEffectIndex4_next);
         };
-        uint16_t _SFCONT_DB_BASE___LISTGetLeftTime6_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static uint16_t _SFCONT_DB_BASE___LISTGetLeftTime6_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTGetLeftTime6_user(_this, _SFCONT_DB_BASE___LISTGetLeftTime6_next);
         };
-        char _SFCONT_DB_BASE___LISTGetLv8_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static char _SFCONT_DB_BASE___LISTGetLv8_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTGetLv8_user(_this, _SFCONT_DB_BASE___LISTGetLv8_next);
         };
-        char _SFCONT_DB_BASE___LISTGetOrder10_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static char _SFCONT_DB_BASE___LISTGetOrder10_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTGetOrder10_user(_this, _SFCONT_DB_BASE___LISTGetOrder10_next);
         };
-        void _SFCONT_DB_BASE___LISTInit12_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static void _SFCONT_DB_BASE___LISTInit12_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            _SFCONT_DB_BASE___LISTInit12_user(_this, _SFCONT_DB_BASE___LISTInit12_next);
         };
-        bool _SFCONT_DB_BASE___LISTIsFilled14_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
+        static bool _SFCONT_DB_BASE___LISTIsFilled14_wrapper(struct _SFCONT_DB_BASE::_LIST* _this)
         {
            return _SFCONT_DB_BASE___LISTIsFilled14_user(_this, _SFCONT_DB_BASE___LISTIsFilled14_next);
         };
-        void _SFCONT_DB_BASE___LISTSetKey16_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, char pl_byOrder, char pl_byEffectCode, uint16_t pl_wEffectIndex, char pl_byLv, uint16_t pl_wLeftTime)
+        static void _SFCONT_DB_BASE___LISTSetKey16_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, char pl_byOrder, char pl_byEffectCode, uint16_t pl_wEffectIndex, char pl_byLv, uint16_t pl_wLeftTime)
         {
            _SFCONT_DB_BASE___LISTSetKey16_user(_this, pl_byOrder, pl_byEffectCode, pl_wEffectIndex, pl_byLv, pl_wLeftTime, _SFCONT_DB_BASE___LISTSetKey16_next);
         };
-        void _SFCONT_DB_BASE___LISTSetLeftTime18_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, uint16_t pl_wLeftTime)
+        static void _SFCONT_DB_BASE___LISTSetLeftTime18_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, uint16_t pl_wLeftTime)
         {
            _SFCONT_DB_BASE___LISTSetLeftTime18_user(_this, pl_wLeftTime, _SFCONT_DB_BASE___LISTSetLeftTime18_next);
         };
-        void _SFCONT_DB_BASE___LISTSetOrder20_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, char pl_byOrder)
+        static void _SFCONT_DB_BASE___LISTSetOrder20_wrapper(struct _SFCONT_DB_BASE::_LIST* _this, char pl_byOrder)
         {
            _SFCONT_DB_BASE___LISTSetOrder20_user(_this, pl_byOrder, _SFCONT_DB_BASE___LISTSetOrder20_next);
         };
         
-        hook_record _SFCONT_DB_BASE_functions[] = {
+        static hook_record _SFCONT_DB_BASE_functions[] = {
         {   (LPVOID)0x140076b00L,
             (LPVOID *)&_SFCONT_DB_BASEInit2_user,
             (LPVOID *)&_SFCONT_DB_BASEInit2_next,
@@ -149,5 +149,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

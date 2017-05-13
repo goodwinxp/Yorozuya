@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_be_damaged_charctor__be_damaged_char2_ptr _be_damaged_charctor__be_damaged_char2_next(nullptr);
-        info::_be_damaged_charctor__be_damaged_char2_clbk _be_damaged_charctor__be_damaged_char2_user(nullptr);
+        static info::_be_damaged_charctor__be_damaged_char2_ptr _be_damaged_charctor__be_damaged_char2_next(nullptr);
+        static info::_be_damaged_charctor__be_damaged_char2_clbk _be_damaged_charctor__be_damaged_char2_user(nullptr);
         
-        void _be_damaged_charctor__be_damaged_char2_wrapper(struct _be_damaged_char* _this)
+        static void _be_damaged_charctor__be_damaged_char2_wrapper(struct _be_damaged_char* _this)
         {
            _be_damaged_charctor__be_damaged_char2_user(_this, _be_damaged_charctor__be_damaged_char2_next);
         };
         
-        hook_record _be_damaged_char_functions[] = {
+        static hook_record _be_damaged_char_functions[] = {
         {   (LPVOID)0x14013e400L,
             (LPVOID *)&_be_damaged_charctor__be_damaged_char2_user,
             (LPVOID *)&_be_damaged_charctor__be_damaged_char2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

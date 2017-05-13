@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TInvenPagector_TInvenPage2_ptr TInvenPagector_TInvenPage2_next(nullptr);
-        info::TInvenPagector_TInvenPage2_clbk TInvenPagector_TInvenPage2_user(nullptr);
-        info::TInvenPageclear6_ptr TInvenPageclear6_next(nullptr);
-        info::TInvenPageclear6_clbk TInvenPageclear6_user(nullptr);
-        info::TInvenPagecreate8_ptr TInvenPagecreate8_next(nullptr);
-        info::TInvenPagecreate8_clbk TInvenPagecreate8_user(nullptr);
-        info::TInvenPagefind_empty10_ptr TInvenPagefind_empty10_next(nullptr);
-        info::TInvenPagefind_empty10_clbk TInvenPagefind_empty10_user(nullptr);
-        info::TInvenPagefind_pos_empty12_ptr TInvenPagefind_pos_empty12_next(nullptr);
-        info::TInvenPagefind_pos_empty12_clbk TInvenPagefind_pos_empty12_user(nullptr);
-        info::TInvenPagefind_pos_overlap14_ptr TInvenPagefind_pos_overlap14_next(nullptr);
-        info::TInvenPagefind_pos_overlap14_clbk TInvenPagefind_pos_overlap14_user(nullptr);
-        info::TInvenPageget_slot16_ptr TInvenPageget_slot16_next(nullptr);
-        info::TInvenPageget_slot16_clbk TInvenPageget_slot16_user(nullptr);
-        info::TInvenPagepop18_ptr TInvenPagepop18_next(nullptr);
-        info::TInvenPagepop18_clbk TInvenPagepop18_user(nullptr);
-        info::TInvenPagepush20_ptr TInvenPagepush20_next(nullptr);
-        info::TInvenPagepush20_clbk TInvenPagepush20_user(nullptr);
-        info::TInvenPagepush_normal22_ptr TInvenPagepush_normal22_next(nullptr);
-        info::TInvenPagepush_normal22_clbk TInvenPagepush_normal22_user(nullptr);
-        info::TInvenPagepush_overlap24_ptr TInvenPagepush_overlap24_next(nullptr);
-        info::TInvenPagepush_overlap24_clbk TInvenPagepush_overlap24_user(nullptr);
-        info::TInvenPagedtor_TInvenPage26_ptr TInvenPagedtor_TInvenPage26_next(nullptr);
-        info::TInvenPagedtor_TInvenPage26_clbk TInvenPagedtor_TInvenPage26_user(nullptr);
+        static info::TInvenPagector_TInvenPage2_ptr TInvenPagector_TInvenPage2_next(nullptr);
+        static info::TInvenPagector_TInvenPage2_clbk TInvenPagector_TInvenPage2_user(nullptr);
+        static info::TInvenPageclear6_ptr TInvenPageclear6_next(nullptr);
+        static info::TInvenPageclear6_clbk TInvenPageclear6_user(nullptr);
+        static info::TInvenPagecreate8_ptr TInvenPagecreate8_next(nullptr);
+        static info::TInvenPagecreate8_clbk TInvenPagecreate8_user(nullptr);
+        static info::TInvenPagefind_empty10_ptr TInvenPagefind_empty10_next(nullptr);
+        static info::TInvenPagefind_empty10_clbk TInvenPagefind_empty10_user(nullptr);
+        static info::TInvenPagefind_pos_empty12_ptr TInvenPagefind_pos_empty12_next(nullptr);
+        static info::TInvenPagefind_pos_empty12_clbk TInvenPagefind_pos_empty12_user(nullptr);
+        static info::TInvenPagefind_pos_overlap14_ptr TInvenPagefind_pos_overlap14_next(nullptr);
+        static info::TInvenPagefind_pos_overlap14_clbk TInvenPagefind_pos_overlap14_user(nullptr);
+        static info::TInvenPageget_slot16_ptr TInvenPageget_slot16_next(nullptr);
+        static info::TInvenPageget_slot16_clbk TInvenPageget_slot16_user(nullptr);
+        static info::TInvenPagepop18_ptr TInvenPagepop18_next(nullptr);
+        static info::TInvenPagepop18_clbk TInvenPagepop18_user(nullptr);
+        static info::TInvenPagepush20_ptr TInvenPagepush20_next(nullptr);
+        static info::TInvenPagepush20_clbk TInvenPagepush20_user(nullptr);
+        static info::TInvenPagepush_normal22_ptr TInvenPagepush_normal22_next(nullptr);
+        static info::TInvenPagepush_normal22_clbk TInvenPagepush_normal22_user(nullptr);
+        static info::TInvenPagepush_overlap24_ptr TInvenPagepush_overlap24_next(nullptr);
+        static info::TInvenPagepush_overlap24_clbk TInvenPagepush_overlap24_user(nullptr);
+        static info::TInvenPagedtor_TInvenPage26_ptr TInvenPagedtor_TInvenPage26_next(nullptr);
+        static info::TInvenPagedtor_TInvenPage26_clbk TInvenPagedtor_TInvenPage26_user(nullptr);
         
-        void TInvenPagector_TInvenPage2_wrapper(struct TInvenPage<_INVENKEY>* _this)
+        static void TInvenPagector_TInvenPage2_wrapper(struct TInvenPage<_INVENKEY>* _this)
         {
            TInvenPagector_TInvenPage2_user(_this);
         };
-        void TInvenPageclear6_wrapper(struct TInvenPage<_INVENKEY>* _this)
+        static void TInvenPageclear6_wrapper(struct TInvenPage<_INVENKEY>* _this)
         {
            TInvenPageclear6_user(_this);
         };
-        bool TInvenPagecreate8_wrapper(struct TInvenPage<_INVENKEY>* _this, int nMaxSlotNum, int nMaxOverlapNum)
+        static bool TInvenPagecreate8_wrapper(struct TInvenPage<_INVENKEY>* _this, int nMaxSlotNum, int nMaxOverlapNum)
         {
            return TInvenPagecreate8_user(_this, nMaxSlotNum, nMaxOverlapNum);
         };
-        int TInvenPagefind_empty10_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
+        static int TInvenPagefind_empty10_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
         {
            return TInvenPagefind_empty10_user(_this, pItem, nNum);
         };
-        int TInvenPagefind_pos_empty12_wrapper(struct TInvenPage<_INVENKEY>* _this)
+        static int TInvenPagefind_pos_empty12_wrapper(struct TInvenPage<_INVENKEY>* _this)
         {
            return TInvenPagefind_pos_empty12_user(_this);
         };
-        int TInvenPagefind_pos_overlap14_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
+        static int TInvenPagefind_pos_overlap14_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum)
         {
            return TInvenPagefind_pos_overlap14_user(_this, pItem, nNum);
         };
-        struct TInvenSlot<_INVENKEY>* TInvenPageget_slot16_wrapper(struct TInvenPage<_INVENKEY>* _this, int n)
+        static struct TInvenSlot<_INVENKEY>* TInvenPageget_slot16_wrapper(struct TInvenPage<_INVENKEY>* _this, int n)
         {
            return TInvenPageget_slot16_user(_this, n);
         };
-        int TInvenPagepop18_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS, int nNum)
+        static int TInvenPagepop18_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS, int nNum)
         {
            return TInvenPagepop18_user(_this, pItem, nS, nNum);
         };
-        int TInvenPagepush20_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS, int nNum)
+        static int TInvenPagepush20_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS, int nNum)
         {
            return TInvenPagepush20_user(_this, pItem, nS, nNum);
         };
-        int TInvenPagepush_normal22_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS)
+        static int TInvenPagepush_normal22_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nS)
         {
            return TInvenPagepush_normal22_user(_this, pItem, nS);
         };
-        int TInvenPagepush_overlap24_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum, int nS)
+        static int TInvenPagepush_overlap24_wrapper(struct TInvenPage<_INVENKEY>* _this, struct _INVENKEY* pItem, int nNum, int nS)
         {
            return TInvenPagepush_overlap24_user(_this, pItem, nNum, nS);
         };
-        void TInvenPagedtor_TInvenPage26_wrapper(struct TInvenPage<_INVENKEY>* _this)
+        static void TInvenPagedtor_TInvenPage26_wrapper(struct TInvenPage<_INVENKEY>* _this)
         {
            TInvenPagedtor_TInvenPage26_user(_this);
         };
         
-        hook_record TInvenPage<_INVENKEY>_functions[] = {
+        static hook_record TInvenPage<_INVENKEY>_functions[] = {
         {   (LPVOID)0x1402d5080L,
             (LPVOID *)&TInvenPagector_TInvenPage2_user,
             (LPVOID *)&TInvenPagector_TInvenPage2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

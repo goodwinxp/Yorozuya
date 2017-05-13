@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_QUEST_CASHctor__QUEST_CASH2_ptr _QUEST_CASHctor__QUEST_CASH2_next(nullptr);
-        info::_QUEST_CASHctor__QUEST_CASH2_clbk _QUEST_CASHctor__QUEST_CASH2_user(nullptr);
-        info::_QUEST_CASHinit4_ptr _QUEST_CASHinit4_next(nullptr);
-        info::_QUEST_CASHinit4_clbk _QUEST_CASHinit4_user(nullptr);
-        info::_QUEST_CASHisload6_ptr _QUEST_CASHisload6_next(nullptr);
-        info::_QUEST_CASHisload6_clbk _QUEST_CASHisload6_user(nullptr);
+        static info::_QUEST_CASHctor__QUEST_CASH2_ptr _QUEST_CASHctor__QUEST_CASH2_next(nullptr);
+        static info::_QUEST_CASHctor__QUEST_CASH2_clbk _QUEST_CASHctor__QUEST_CASH2_user(nullptr);
+        static info::_QUEST_CASHinit4_ptr _QUEST_CASHinit4_next(nullptr);
+        static info::_QUEST_CASHinit4_clbk _QUEST_CASHinit4_user(nullptr);
+        static info::_QUEST_CASHisload6_ptr _QUEST_CASHisload6_next(nullptr);
+        static info::_QUEST_CASHisload6_clbk _QUEST_CASHisload6_user(nullptr);
         
-        void _QUEST_CASHctor__QUEST_CASH2_wrapper(struct _QUEST_CASH* _this)
+        static void _QUEST_CASHctor__QUEST_CASH2_wrapper(struct _QUEST_CASH* _this)
         {
            _QUEST_CASHctor__QUEST_CASH2_user(_this, _QUEST_CASHctor__QUEST_CASH2_next);
         };
-        void _QUEST_CASHinit4_wrapper(struct _QUEST_CASH* _this)
+        static void _QUEST_CASHinit4_wrapper(struct _QUEST_CASH* _this)
         {
            _QUEST_CASHinit4_user(_this, _QUEST_CASHinit4_next);
         };
-        bool _QUEST_CASHisload6_wrapper(struct _QUEST_CASH* _this)
+        static bool _QUEST_CASHisload6_wrapper(struct _QUEST_CASH* _this)
         {
            return _QUEST_CASHisload6_user(_this, _QUEST_CASHisload6_next);
         };
         
-        hook_record _QUEST_CASH_functions[] = {
+        static hook_record _QUEST_CASH_functions[] = {
         {   (LPVOID)0x140284230L,
             (LPVOID *)&_QUEST_CASHctor__QUEST_CASH2_user,
             (LPVOID *)&_QUEST_CASHctor__QUEST_CASH2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

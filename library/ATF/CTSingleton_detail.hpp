@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
-        info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
-        info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
-        info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
-        info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
-        info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
+        static info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
+        static info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
+        static info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
+        static info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
+        static info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
+        static info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
         
-        void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CNationSettingManager>* _this)
+        static void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CNationSettingManager>* _this)
         {
            CTSingletonctor_CTSingleton2_user(_this);
         };
-        struct CNationSettingManager* CTSingletonInstance4_wrapper()
+        static struct CNationSettingManager* CTSingletonInstance4_wrapper()
         {
            return CTSingletonInstance4_user();
         };
-        void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CNationSettingManager>* _this)
+        static void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CNationSettingManager>* _this)
         {
            CTSingletondtor_CTSingleton9_user(_this);
         };
         
-        hook_record CTSingleton<CNationSettingManager>_functions[] = {
+        static hook_record CTSingleton<CNationSettingManager>_functions[] = {
         {   (LPVOID)0x1402299a0L,
             (LPVOID *)&CTSingletonctor_CTSingleton2_user,
             (LPVOID *)&CTSingletonctor_CTSingleton2_next,
@@ -47,7 +47,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "CTSingleton_info.hpp"
 
@@ -55,27 +55,27 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
-        info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
-        info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
-        info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
-        info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
-        info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
+        static info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
+        static info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
+        static info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
+        static info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
+        static info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
+        static info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
         
-        void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CCashDBWorkManager>* _this)
+        static void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CCashDBWorkManager>* _this)
         {
            CTSingletonctor_CTSingleton2_user(_this);
         };
-        struct CCashDBWorkManager* CTSingletonInstance4_wrapper()
+        static struct CCashDBWorkManager* CTSingletonInstance4_wrapper()
         {
            return CTSingletonInstance4_user();
         };
-        void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CCashDBWorkManager>* _this)
+        static void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CCashDBWorkManager>* _this)
         {
            CTSingletondtor_CTSingleton9_user(_this);
         };
         
-        hook_record CTSingleton<CCashDBWorkManager>_functions[] = {
+        static hook_record CTSingleton<CCashDBWorkManager>_functions[] = {
         {   (LPVOID)0x1402f3740L,
             (LPVOID *)&CTSingletonctor_CTSingleton2_user,
             (LPVOID *)&CTSingletonctor_CTSingleton2_next,
@@ -94,7 +94,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "CTSingleton_info.hpp"
 
@@ -102,27 +102,27 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
-        info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
-        info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
-        info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
-        info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
-        info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
+        static info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
+        static info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
+        static info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
+        static info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
+        static info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
+        static info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
         
-        void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CCryptor>* _this)
+        static void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CCryptor>* _this)
         {
            CTSingletonctor_CTSingleton2_user(_this);
         };
-        struct CCryptor* CTSingletonInstance4_wrapper()
+        static struct CCryptor* CTSingletonInstance4_wrapper()
         {
            return CTSingletonInstance4_user();
         };
-        void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CCryptor>* _this)
+        static void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CCryptor>* _this)
         {
            CTSingletondtor_CTSingleton9_user(_this);
         };
         
-        hook_record CTSingleton<CCryptor>_functions[] = {
+        static hook_record CTSingleton<CCryptor>_functions[] = {
         {   (LPVOID)0x1401bfa00L,
             (LPVOID *)&CTSingletonctor_CTSingleton2_user,
             (LPVOID *)&CTSingletonctor_CTSingleton2_next,
@@ -141,7 +141,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "CTSingleton_info.hpp"
 
@@ -149,27 +149,27 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
-        info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
-        info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
-        info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
-        info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
-        info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
+        static info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
+        static info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
+        static info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
+        static info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
+        static info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
+        static info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
         
-        void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CEngNetworkBillEX>* _this)
+        static void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CEngNetworkBillEX>* _this)
         {
            CTSingletonctor_CTSingleton2_user(_this);
         };
-        struct CEngNetworkBillEX* CTSingletonInstance4_wrapper()
+        static struct CEngNetworkBillEX* CTSingletonInstance4_wrapper()
         {
            return CTSingletonInstance4_user();
         };
-        void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CEngNetworkBillEX>* _this)
+        static void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CEngNetworkBillEX>* _this)
         {
            CTSingletondtor_CTSingleton9_user(_this);
         };
         
-        hook_record CTSingleton<CEngNetworkBillEX>_functions[] = {
+        static hook_record CTSingleton<CEngNetworkBillEX>_functions[] = {
         {   (LPVOID)0x14031d5a0L,
             (LPVOID *)&CTSingletonctor_CTSingleton2_user,
             (LPVOID *)&CTSingletonctor_CTSingleton2_next,
@@ -188,7 +188,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "CTSingleton_info.hpp"
 
@@ -196,27 +196,27 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
-        info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
-        info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
-        info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
-        info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
-        info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
+        static info::CTSingletonctor_CTSingleton2_ptr CTSingletonctor_CTSingleton2_next(nullptr);
+        static info::CTSingletonctor_CTSingleton2_clbk CTSingletonctor_CTSingleton2_user(nullptr);
+        static info::CTSingletonInstance4_ptr CTSingletonInstance4_next(nullptr);
+        static info::CTSingletonInstance4_clbk CTSingletonInstance4_user(nullptr);
+        static info::CTSingletondtor_CTSingleton9_ptr CTSingletondtor_CTSingleton9_next(nullptr);
+        static info::CTSingletondtor_CTSingleton9_clbk CTSingletondtor_CTSingleton9_user(nullptr);
         
-        void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CBillingManager>* _this)
+        static void CTSingletonctor_CTSingleton2_wrapper(struct CTSingleton<CBillingManager>* _this)
         {
            CTSingletonctor_CTSingleton2_user(_this);
         };
-        struct CBillingManager* CTSingletonInstance4_wrapper()
+        static struct CBillingManager* CTSingletonInstance4_wrapper()
         {
            return CTSingletonInstance4_user();
         };
-        void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CBillingManager>* _this)
+        static void CTSingletondtor_CTSingleton9_wrapper(struct CTSingleton<CBillingManager>* _this)
         {
            CTSingletondtor_CTSingleton9_user(_this);
         };
         
-        hook_record CTSingleton<CBillingManager>_functions[] = {
+        static hook_record CTSingleton<CBillingManager>_functions[] = {
         {   (LPVOID)0x14028e030L,
             (LPVOID *)&CTSingletonctor_CTSingleton2_user,
             (LPVOID *)&CTSingletonctor_CTSingleton2_next,
@@ -235,5 +235,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

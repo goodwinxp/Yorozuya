@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_param_cashitem_dblogctor__param_cashitem_dblog2_ptr _param_cashitem_dblogctor__param_cashitem_dblog2_next(nullptr);
-        info::_param_cashitem_dblogctor__param_cashitem_dblog2_clbk _param_cashitem_dblogctor__param_cashitem_dblog2_user(nullptr);
-        info::_param_cashitem_dblogsize4_ptr _param_cashitem_dblogsize4_next(nullptr);
-        info::_param_cashitem_dblogsize4_clbk _param_cashitem_dblogsize4_user(nullptr);
-        info::_param_cashitem_dblogdtor__param_cashitem_dblog6_ptr _param_cashitem_dblogdtor__param_cashitem_dblog6_next(nullptr);
-        info::_param_cashitem_dblogdtor__param_cashitem_dblog6_clbk _param_cashitem_dblogdtor__param_cashitem_dblog6_user(nullptr);
+        static info::_param_cashitem_dblogctor__param_cashitem_dblog2_ptr _param_cashitem_dblogctor__param_cashitem_dblog2_next(nullptr);
+        static info::_param_cashitem_dblogctor__param_cashitem_dblog2_clbk _param_cashitem_dblogctor__param_cashitem_dblog2_user(nullptr);
+        static info::_param_cashitem_dblogsize4_ptr _param_cashitem_dblogsize4_next(nullptr);
+        static info::_param_cashitem_dblogsize4_clbk _param_cashitem_dblogsize4_user(nullptr);
+        static info::_param_cashitem_dblogdtor__param_cashitem_dblog6_ptr _param_cashitem_dblogdtor__param_cashitem_dblog6_next(nullptr);
+        static info::_param_cashitem_dblogdtor__param_cashitem_dblog6_clbk _param_cashitem_dblogdtor__param_cashitem_dblog6_user(nullptr);
         
-        void _param_cashitem_dblogctor__param_cashitem_dblog2_wrapper(struct _param_cashitem_dblog* _this, unsigned int dwAv)
+        static void _param_cashitem_dblogctor__param_cashitem_dblog2_wrapper(struct _param_cashitem_dblog* _this, unsigned int dwAv)
         {
            _param_cashitem_dblogctor__param_cashitem_dblog2_user(_this, dwAv, _param_cashitem_dblogctor__param_cashitem_dblog2_next);
         };
-        int _param_cashitem_dblogsize4_wrapper(struct _param_cashitem_dblog* _this)
+        static int _param_cashitem_dblogsize4_wrapper(struct _param_cashitem_dblog* _this)
         {
            return _param_cashitem_dblogsize4_user(_this, _param_cashitem_dblogsize4_next);
         };
-        void _param_cashitem_dblogdtor__param_cashitem_dblog6_wrapper(struct _param_cashitem_dblog* _this)
+        static void _param_cashitem_dblogdtor__param_cashitem_dblog6_wrapper(struct _param_cashitem_dblog* _this)
         {
            _param_cashitem_dblogdtor__param_cashitem_dblog6_user(_this, _param_cashitem_dblogdtor__param_cashitem_dblog6_next);
         };
         
-        hook_record _param_cashitem_dblog_functions[] = {
+        static hook_record _param_cashitem_dblog_functions[] = {
         {   (LPVOID)0x140304cc0L,
             (LPVOID *)&_param_cashitem_dblogctor__param_cashitem_dblog2_user,
             (LPVOID *)&_param_cashitem_dblogctor__param_cashitem_dblog2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

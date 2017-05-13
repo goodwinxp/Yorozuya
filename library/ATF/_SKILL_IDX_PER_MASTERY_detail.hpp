@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_ptr _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_next(nullptr);
-        info::_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_clbk _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_user(nullptr);
+        static info::_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_ptr _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_next(nullptr);
+        static info::_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_clbk _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_user(nullptr);
         
-        void _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_wrapper(struct _SKILL_IDX_PER_MASTERY* _this)
+        static void _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_wrapper(struct _SKILL_IDX_PER_MASTERY* _this)
         {
            _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_user(_this, _SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_next);
         };
         
-        hook_record _SKILL_IDX_PER_MASTERY_functions[] = {
+        static hook_record _SKILL_IDX_PER_MASTERY_functions[] = {
         {   (LPVOID)0x14007f1e0L,
             (LPVOID *)&_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_user,
             (LPVOID *)&_SKILL_IDX_PER_MASTERYctor__SKILL_IDX_PER_MASTERY2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

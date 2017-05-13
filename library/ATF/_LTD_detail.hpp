@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_LTDset2_ptr _LTDset2_next(nullptr);
-        info::_LTDset2_clbk _LTDset2_user(nullptr);
+        static info::_LTDset2_ptr _LTDset2_next(nullptr);
+        static info::_LTDset2_clbk _LTDset2_user(nullptr);
         
-        void _LTDset2_wrapper(struct _LTD* _this, char byMainLogType, char bySubLogType)
+        static void _LTDset2_wrapper(struct _LTD* _this, char byMainLogType, char bySubLogType)
         {
            _LTDset2_user(_this, byMainLogType, bySubLogType, _LTDset2_next);
         };
         
-        hook_record _LTD_functions[] = {
+        static hook_record _LTD_functions[] = {
         {   (LPVOID)0x14024bfc0L,
             (LPVOID *)&_LTDset2_user,
             (LPVOID *)&_LTDset2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

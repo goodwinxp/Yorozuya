@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_socketInitParam2_ptr _socketInitParam2_next(nullptr);
-        info::_socketInitParam2_clbk _socketInitParam2_user(nullptr);
-        info::_socketctor__socket4_ptr _socketctor__socket4_next(nullptr);
-        info::_socketctor__socket4_clbk _socketctor__socket4_user(nullptr);
-        info::_socketdtor__socket8_ptr _socketdtor__socket8_next(nullptr);
-        info::_socketdtor__socket8_clbk _socketdtor__socket8_user(nullptr);
+        static info::_socketInitParam2_ptr _socketInitParam2_next(nullptr);
+        static info::_socketInitParam2_clbk _socketInitParam2_user(nullptr);
+        static info::_socketctor__socket4_ptr _socketctor__socket4_next(nullptr);
+        static info::_socketctor__socket4_clbk _socketctor__socket4_user(nullptr);
+        static info::_socketdtor__socket8_ptr _socketdtor__socket8_next(nullptr);
+        static info::_socketdtor__socket8_clbk _socketdtor__socket8_user(nullptr);
         
-        void _socketInitParam2_wrapper(struct _socket* _this)
+        static void _socketInitParam2_wrapper(struct _socket* _this)
         {
            _socketInitParam2_user(_this, _socketInitParam2_next);
         };
-        void _socketctor__socket4_wrapper(struct _socket* _this)
+        static void _socketctor__socket4_wrapper(struct _socket* _this)
         {
            _socketctor__socket4_user(_this, _socketctor__socket4_next);
         };
-        void _socketdtor__socket8_wrapper(struct _socket* _this)
+        static void _socketdtor__socket8_wrapper(struct _socket* _this)
         {
            _socketdtor__socket8_user(_this, _socketdtor__socket8_next);
         };
         
-        hook_record _socket_functions[] = {
+        static hook_record _socket_functions[] = {
         {   (LPVOID)0x14047f910L,
             (LPVOID *)&_socketInitParam2_user,
             (LPVOID *)&_socketInitParam2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSkyBoxDrawSkyBox1_ptr CSkyBoxDrawSkyBox1_next(nullptr);
-        info::CSkyBoxDrawSkyBox1_clbk CSkyBoxDrawSkyBox1_user(nullptr);
-        info::CSkyBoxGetUsedVertexBufferSize2_ptr CSkyBoxGetUsedVertexBufferSize2_next(nullptr);
-        info::CSkyBoxGetUsedVertexBufferSize2_clbk CSkyBoxGetUsedVertexBufferSize2_user(nullptr);
-        info::CSkyBoxLoadSkyBox3_ptr CSkyBoxLoadSkyBox3_next(nullptr);
-        info::CSkyBoxLoadSkyBox3_clbk CSkyBoxLoadSkyBox3_user(nullptr);
-        info::CSkyBoxReleaseSkyBox4_ptr CSkyBoxReleaseSkyBox4_next(nullptr);
-        info::CSkyBoxReleaseSkyBox4_clbk CSkyBoxReleaseSkyBox4_user(nullptr);
-        info::CSkyBoxdtor_CSkyBox6_ptr CSkyBoxdtor_CSkyBox6_next(nullptr);
-        info::CSkyBoxdtor_CSkyBox6_clbk CSkyBoxdtor_CSkyBox6_user(nullptr);
+        static info::CSkyBoxDrawSkyBox1_ptr CSkyBoxDrawSkyBox1_next(nullptr);
+        static info::CSkyBoxDrawSkyBox1_clbk CSkyBoxDrawSkyBox1_user(nullptr);
+        static info::CSkyBoxGetUsedVertexBufferSize2_ptr CSkyBoxGetUsedVertexBufferSize2_next(nullptr);
+        static info::CSkyBoxGetUsedVertexBufferSize2_clbk CSkyBoxGetUsedVertexBufferSize2_user(nullptr);
+        static info::CSkyBoxLoadSkyBox3_ptr CSkyBoxLoadSkyBox3_next(nullptr);
+        static info::CSkyBoxLoadSkyBox3_clbk CSkyBoxLoadSkyBox3_user(nullptr);
+        static info::CSkyBoxReleaseSkyBox4_ptr CSkyBoxReleaseSkyBox4_next(nullptr);
+        static info::CSkyBoxReleaseSkyBox4_clbk CSkyBoxReleaseSkyBox4_user(nullptr);
+        static info::CSkyBoxdtor_CSkyBox6_ptr CSkyBoxdtor_CSkyBox6_next(nullptr);
+        static info::CSkyBoxdtor_CSkyBox6_clbk CSkyBoxdtor_CSkyBox6_user(nullptr);
         
-        void CSkyBoxDrawSkyBox1_wrapper(struct CSkyBox* _this, void* arg_0)
+        static void CSkyBoxDrawSkyBox1_wrapper(struct CSkyBox* _this, void* arg_0)
         {
            CSkyBoxDrawSkyBox1_user(_this, arg_0, CSkyBoxDrawSkyBox1_next);
         };
-        int64_t CSkyBoxGetUsedVertexBufferSize2_wrapper(struct CSkyBox* _this)
+        static int64_t CSkyBoxGetUsedVertexBufferSize2_wrapper(struct CSkyBox* _this)
         {
            return CSkyBoxGetUsedVertexBufferSize2_user(_this, CSkyBoxGetUsedVertexBufferSize2_next);
         };
-        void CSkyBoxLoadSkyBox3_wrapper(struct CSkyBox* _this, char* arg_0)
+        static void CSkyBoxLoadSkyBox3_wrapper(struct CSkyBox* _this, char* arg_0)
         {
            CSkyBoxLoadSkyBox3_user(_this, arg_0, CSkyBoxLoadSkyBox3_next);
         };
-        void CSkyBoxReleaseSkyBox4_wrapper(struct CSkyBox* _this)
+        static void CSkyBoxReleaseSkyBox4_wrapper(struct CSkyBox* _this)
         {
            CSkyBoxReleaseSkyBox4_user(_this, CSkyBoxReleaseSkyBox4_next);
         };
-        int64_t CSkyBoxdtor_CSkyBox6_wrapper(struct CSkyBox* _this)
+        static int64_t CSkyBoxdtor_CSkyBox6_wrapper(struct CSkyBox* _this)
         {
            return CSkyBoxdtor_CSkyBox6_user(_this, CSkyBoxdtor_CSkyBox6_next);
         };
         
-        hook_record CSkyBox_functions[] = {
+        static hook_record CSkyBox_functions[] = {
         {   (LPVOID)0x1404f5be0L,
             (LPVOID *)&CSkyBoxDrawSkyBox1_user,
             (LPVOID *)&CSkyBoxDrawSkyBox1_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

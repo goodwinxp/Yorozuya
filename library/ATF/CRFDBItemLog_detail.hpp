@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRFDBItemLogctor_CRFDBItemLog2_ptr CRFDBItemLogctor_CRFDBItemLog2_next(nullptr);
-        info::CRFDBItemLogctor_CRFDBItemLog2_clbk CRFDBItemLogctor_CRFDBItemLog2_user(nullptr);
-        info::CRFDBItemLogCreateTblLtd4_ptr CRFDBItemLogCreateTblLtd4_next(nullptr);
-        info::CRFDBItemLogCreateTblLtd4_clbk CRFDBItemLogCreateTblLtd4_user(nullptr);
-        info::CRFDBItemLogCreateTblLtd_Expend6_ptr CRFDBItemLogCreateTblLtd_Expend6_next(nullptr);
-        info::CRFDBItemLogCreateTblLtd_Expend6_clbk CRFDBItemLogCreateTblLtd_Expend6_user(nullptr);
-        info::CRFDBItemLogCreateTblLtd_ItemInfo8_ptr CRFDBItemLogCreateTblLtd_ItemInfo8_next(nullptr);
-        info::CRFDBItemLogCreateTblLtd_ItemInfo8_clbk CRFDBItemLogCreateTblLtd_ItemInfo8_user(nullptr);
-        info::CRFDBItemLogSetKorTime10_ptr CRFDBItemLogSetKorTime10_next(nullptr);
-        info::CRFDBItemLogSetKorTime10_clbk CRFDBItemLogSetKorTime10_user(nullptr);
-        info::CRFDBItemLoginsert_expend15_ptr CRFDBItemLoginsert_expend15_next(nullptr);
-        info::CRFDBItemLoginsert_expend15_clbk CRFDBItemLoginsert_expend15_user(nullptr);
-        info::CRFDBItemLoginsert_iteminfo17_ptr CRFDBItemLoginsert_iteminfo17_next(nullptr);
-        info::CRFDBItemLoginsert_iteminfo17_clbk CRFDBItemLoginsert_iteminfo17_user(nullptr);
-        info::CRFDBItemLoginsert_ltd19_ptr CRFDBItemLoginsert_ltd19_next(nullptr);
-        info::CRFDBItemLoginsert_ltd19_clbk CRFDBItemLoginsert_ltd19_user(nullptr);
-        info::CRFDBItemLogdtor_CRFDBItemLog21_ptr CRFDBItemLogdtor_CRFDBItemLog21_next(nullptr);
-        info::CRFDBItemLogdtor_CRFDBItemLog21_clbk CRFDBItemLogdtor_CRFDBItemLog21_user(nullptr);
+        static info::CRFDBItemLogctor_CRFDBItemLog2_ptr CRFDBItemLogctor_CRFDBItemLog2_next(nullptr);
+        static info::CRFDBItemLogctor_CRFDBItemLog2_clbk CRFDBItemLogctor_CRFDBItemLog2_user(nullptr);
+        static info::CRFDBItemLogCreateTblLtd4_ptr CRFDBItemLogCreateTblLtd4_next(nullptr);
+        static info::CRFDBItemLogCreateTblLtd4_clbk CRFDBItemLogCreateTblLtd4_user(nullptr);
+        static info::CRFDBItemLogCreateTblLtd_Expend6_ptr CRFDBItemLogCreateTblLtd_Expend6_next(nullptr);
+        static info::CRFDBItemLogCreateTblLtd_Expend6_clbk CRFDBItemLogCreateTblLtd_Expend6_user(nullptr);
+        static info::CRFDBItemLogCreateTblLtd_ItemInfo8_ptr CRFDBItemLogCreateTblLtd_ItemInfo8_next(nullptr);
+        static info::CRFDBItemLogCreateTblLtd_ItemInfo8_clbk CRFDBItemLogCreateTblLtd_ItemInfo8_user(nullptr);
+        static info::CRFDBItemLogSetKorTime10_ptr CRFDBItemLogSetKorTime10_next(nullptr);
+        static info::CRFDBItemLogSetKorTime10_clbk CRFDBItemLogSetKorTime10_user(nullptr);
+        static info::CRFDBItemLoginsert_expend15_ptr CRFDBItemLoginsert_expend15_next(nullptr);
+        static info::CRFDBItemLoginsert_expend15_clbk CRFDBItemLoginsert_expend15_user(nullptr);
+        static info::CRFDBItemLoginsert_iteminfo17_ptr CRFDBItemLoginsert_iteminfo17_next(nullptr);
+        static info::CRFDBItemLoginsert_iteminfo17_clbk CRFDBItemLoginsert_iteminfo17_user(nullptr);
+        static info::CRFDBItemLoginsert_ltd19_ptr CRFDBItemLoginsert_ltd19_next(nullptr);
+        static info::CRFDBItemLoginsert_ltd19_clbk CRFDBItemLoginsert_ltd19_user(nullptr);
+        static info::CRFDBItemLogdtor_CRFDBItemLog21_ptr CRFDBItemLogdtor_CRFDBItemLog21_next(nullptr);
+        static info::CRFDBItemLogdtor_CRFDBItemLog21_clbk CRFDBItemLogdtor_CRFDBItemLog21_user(nullptr);
         
-        void CRFDBItemLogctor_CRFDBItemLog2_wrapper(struct CRFDBItemLog* _this, unsigned int dwLocalDate)
+        static void CRFDBItemLogctor_CRFDBItemLog2_wrapper(struct CRFDBItemLog* _this, unsigned int dwLocalDate)
         {
            CRFDBItemLogctor_CRFDBItemLog2_user(_this, dwLocalDate, CRFDBItemLogctor_CRFDBItemLog2_next);
         };
-        bool CRFDBItemLogCreateTblLtd4_wrapper(struct CRFDBItemLog* _this, int nKorTime)
+        static bool CRFDBItemLogCreateTblLtd4_wrapper(struct CRFDBItemLog* _this, int nKorTime)
         {
            return CRFDBItemLogCreateTblLtd4_user(_this, nKorTime, CRFDBItemLogCreateTblLtd4_next);
         };
-        bool CRFDBItemLogCreateTblLtd_Expend6_wrapper(struct CRFDBItemLog* _this, int nKorTime)
+        static bool CRFDBItemLogCreateTblLtd_Expend6_wrapper(struct CRFDBItemLog* _this, int nKorTime)
         {
            return CRFDBItemLogCreateTblLtd_Expend6_user(_this, nKorTime, CRFDBItemLogCreateTblLtd_Expend6_next);
         };
-        bool CRFDBItemLogCreateTblLtd_ItemInfo8_wrapper(struct CRFDBItemLog* _this, int nKorTime)
+        static bool CRFDBItemLogCreateTblLtd_ItemInfo8_wrapper(struct CRFDBItemLog* _this, int nKorTime)
         {
            return CRFDBItemLogCreateTblLtd_ItemInfo8_user(_this, nKorTime, CRFDBItemLogCreateTblLtd_ItemInfo8_next);
         };
-        void CRFDBItemLogSetKorTime10_wrapper(struct CRFDBItemLog* _this, unsigned int dwKorTime)
+        static void CRFDBItemLogSetKorTime10_wrapper(struct CRFDBItemLog* _this, unsigned int dwKorTime)
         {
            CRFDBItemLogSetKorTime10_user(_this, dwKorTime, CRFDBItemLogSetKorTime10_next);
         };
-        bool CRFDBItemLoginsert_expend15_wrapper(struct CRFDBItemLog* _this, struct _LTD_EXPEND* pe)
+        static bool CRFDBItemLoginsert_expend15_wrapper(struct CRFDBItemLog* _this, struct _LTD_EXPEND* pe)
         {
            return CRFDBItemLoginsert_expend15_user(_this, pe, CRFDBItemLoginsert_expend15_next);
         };
-        bool CRFDBItemLoginsert_iteminfo17_wrapper(struct CRFDBItemLog* _this, struct _LTD_ITEMINFO* pi, char byIndex)
+        static bool CRFDBItemLoginsert_iteminfo17_wrapper(struct CRFDBItemLog* _this, struct _LTD_ITEMINFO* pi, char byIndex)
         {
            return CRFDBItemLoginsert_iteminfo17_user(_this, pi, byIndex, CRFDBItemLoginsert_iteminfo17_next);
         };
-        bool CRFDBItemLoginsert_ltd19_wrapper(struct CRFDBItemLog* _this, struct _LTD* pl)
+        static bool CRFDBItemLoginsert_ltd19_wrapper(struct CRFDBItemLog* _this, struct _LTD* pl)
         {
            return CRFDBItemLoginsert_ltd19_user(_this, pl, CRFDBItemLoginsert_ltd19_next);
         };
-        void CRFDBItemLogdtor_CRFDBItemLog21_wrapper(struct CRFDBItemLog* _this)
+        static void CRFDBItemLogdtor_CRFDBItemLog21_wrapper(struct CRFDBItemLog* _this)
         {
            CRFDBItemLogdtor_CRFDBItemLog21_user(_this, CRFDBItemLogdtor_CRFDBItemLog21_next);
         };
         
-        hook_record CRFDBItemLog_functions[] = {
+        static hook_record CRFDBItemLog_functions[] = {
         {   (LPVOID)0x140485420L,
             (LPVOID *)&CRFDBItemLogctor_CRFDBItemLog2_user,
             (LPVOID *)&CRFDBItemLogctor_CRFDBItemLog2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

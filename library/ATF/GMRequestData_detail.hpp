@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::GMRequestDatactor_GMRequestData2_ptr GMRequestDatactor_GMRequestData2_next(nullptr);
-        info::GMRequestDatactor_GMRequestData2_clbk GMRequestDatactor_GMRequestData2_user(nullptr);
-        info::GMRequestDataSet4_ptr GMRequestDataSet4_next(nullptr);
-        info::GMRequestDataSet4_clbk GMRequestDataSet4_user(nullptr);
-        info::GMRequestDatadtor_GMRequestData9_ptr GMRequestDatadtor_GMRequestData9_next(nullptr);
-        info::GMRequestDatadtor_GMRequestData9_clbk GMRequestDatadtor_GMRequestData9_user(nullptr);
+        static info::GMRequestDatactor_GMRequestData2_ptr GMRequestDatactor_GMRequestData2_next(nullptr);
+        static info::GMRequestDatactor_GMRequestData2_clbk GMRequestDatactor_GMRequestData2_user(nullptr);
+        static info::GMRequestDataSet4_ptr GMRequestDataSet4_next(nullptr);
+        static info::GMRequestDataSet4_clbk GMRequestDataSet4_user(nullptr);
+        static info::GMRequestDatadtor_GMRequestData9_ptr GMRequestDatadtor_GMRequestData9_next(nullptr);
+        static info::GMRequestDatadtor_GMRequestData9_clbk GMRequestDatadtor_GMRequestData9_user(nullptr);
         
-        void GMRequestDatactor_GMRequestData2_wrapper(struct GMRequestData* _this)
+        static void GMRequestDatactor_GMRequestData2_wrapper(struct GMRequestData* _this)
         {
            GMRequestDatactor_GMRequestData2_user(_this, GMRequestDatactor_GMRequestData2_next);
         };
-        void GMRequestDataSet4_wrapper(struct GMRequestData* _this, unsigned int dwSerial, char* pwszName, unsigned int dwTime)
+        static void GMRequestDataSet4_wrapper(struct GMRequestData* _this, unsigned int dwSerial, char* pwszName, unsigned int dwTime)
         {
            GMRequestDataSet4_user(_this, dwSerial, pwszName, dwTime, GMRequestDataSet4_next);
         };
-        void GMRequestDatadtor_GMRequestData9_wrapper(struct GMRequestData* _this)
+        static void GMRequestDatadtor_GMRequestData9_wrapper(struct GMRequestData* _this)
         {
            GMRequestDatadtor_GMRequestData9_user(_this, GMRequestDatadtor_GMRequestData9_next);
         };
         
-        hook_record GMRequestData_functions[] = {
+        static hook_record GMRequestData_functions[] = {
         {   (LPVOID)0x1402ab250L,
             (LPVOID *)&GMRequestDatactor_GMRequestData2_user,
             (LPVOID *)&GMRequestDatactor_GMRequestData2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

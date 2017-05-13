@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_PCBANG_FAVOR_ITEM_DB_BASEInit2_ptr _PCBANG_FAVOR_ITEM_DB_BASEInit2_next(nullptr);
-        info::_PCBANG_FAVOR_ITEM_DB_BASEInit2_clbk _PCBANG_FAVOR_ITEM_DB_BASEInit2_user(nullptr);
-        info::_PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_ptr _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_next(nullptr);
-        info::_PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_clbk _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_user(nullptr);
-        info::_PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_ptr _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_next(nullptr);
-        info::_PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_clbk _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_user(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEInit2_ptr _PCBANG_FAVOR_ITEM_DB_BASEInit2_next(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEInit2_clbk _PCBANG_FAVOR_ITEM_DB_BASEInit2_user(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_ptr _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_next(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_clbk _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_user(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_ptr _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_next(nullptr);
+        static info::_PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_clbk _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_user(nullptr);
         
-        void _PCBANG_FAVOR_ITEM_DB_BASEInit2_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this)
+        static void _PCBANG_FAVOR_ITEM_DB_BASEInit2_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this)
         {
            _PCBANG_FAVOR_ITEM_DB_BASEInit2_user(_this, _PCBANG_FAVOR_ITEM_DB_BASEInit2_next);
         };
-        bool _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this, struct _STORAGE_LIST::_db_con* Item)
+        static bool _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this, struct _STORAGE_LIST::_db_con* Item)
         {
            return _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_user(_this, Item, _PCBANG_FAVOR_ITEM_DB_BASEInsertItem4_next);
         };
-        bool _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this, struct _STORAGE_LIST::_db_con* Item)
+        static bool _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_wrapper(struct _PCBANG_FAVOR_ITEM_DB_BASE* _this, struct _STORAGE_LIST::_db_con* Item)
         {
            return _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_user(_this, Item, _PCBANG_FAVOR_ITEM_DB_BASEIsDeleteItem6_next);
         };
         
-        hook_record _PCBANG_FAVOR_ITEM_DB_BASE_functions[] = {
+        static hook_record _PCBANG_FAVOR_ITEM_DB_BASE_functions[] = {
         {   (LPVOID)0x140077df0L,
             (LPVOID *)&_PCBANG_FAVOR_ITEM_DB_BASEInit2_user,
             (LPVOID *)&_PCBANG_FAVOR_ITEM_DB_BASEInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CIndexBufferInitIndexBuffer1_ptr CIndexBufferInitIndexBuffer1_next(nullptr);
-        info::CIndexBufferInitIndexBuffer1_clbk CIndexBufferInitIndexBuffer1_user(nullptr);
-        info::CIndexBufferReleaseIndexBuffer2_ptr CIndexBufferReleaseIndexBuffer2_next(nullptr);
-        info::CIndexBufferReleaseIndexBuffer2_clbk CIndexBufferReleaseIndexBuffer2_user(nullptr);
-        info::CIndexBufferVPLock3_ptr CIndexBufferVPLock3_next(nullptr);
-        info::CIndexBufferVPLock3_clbk CIndexBufferVPLock3_user(nullptr);
-        info::CIndexBufferVPUnLock4_ptr CIndexBufferVPUnLock4_next(nullptr);
-        info::CIndexBufferVPUnLock4_clbk CIndexBufferVPUnLock4_user(nullptr);
-        info::CIndexBufferdtor_CIndexBuffer5_ptr CIndexBufferdtor_CIndexBuffer5_next(nullptr);
-        info::CIndexBufferdtor_CIndexBuffer5_clbk CIndexBufferdtor_CIndexBuffer5_user(nullptr);
+        static info::CIndexBufferInitIndexBuffer1_ptr CIndexBufferInitIndexBuffer1_next(nullptr);
+        static info::CIndexBufferInitIndexBuffer1_clbk CIndexBufferInitIndexBuffer1_user(nullptr);
+        static info::CIndexBufferReleaseIndexBuffer2_ptr CIndexBufferReleaseIndexBuffer2_next(nullptr);
+        static info::CIndexBufferReleaseIndexBuffer2_clbk CIndexBufferReleaseIndexBuffer2_user(nullptr);
+        static info::CIndexBufferVPLock3_ptr CIndexBufferVPLock3_next(nullptr);
+        static info::CIndexBufferVPLock3_clbk CIndexBufferVPLock3_user(nullptr);
+        static info::CIndexBufferVPUnLock4_ptr CIndexBufferVPUnLock4_next(nullptr);
+        static info::CIndexBufferVPUnLock4_clbk CIndexBufferVPUnLock4_user(nullptr);
+        static info::CIndexBufferdtor_CIndexBuffer5_ptr CIndexBufferdtor_CIndexBuffer5_next(nullptr);
+        static info::CIndexBufferdtor_CIndexBuffer5_clbk CIndexBufferdtor_CIndexBuffer5_user(nullptr);
         
-        void CIndexBufferInitIndexBuffer1_wrapper(struct CIndexBuffer* _this, int arg_0, int arg_1)
+        static void CIndexBufferInitIndexBuffer1_wrapper(struct CIndexBuffer* _this, int arg_0, int arg_1)
         {
            CIndexBufferInitIndexBuffer1_user(_this, arg_0, arg_1, CIndexBufferInitIndexBuffer1_next);
         };
-        void CIndexBufferReleaseIndexBuffer2_wrapper(struct CIndexBuffer* _this)
+        static void CIndexBufferReleaseIndexBuffer2_wrapper(struct CIndexBuffer* _this)
         {
            CIndexBufferReleaseIndexBuffer2_user(_this, CIndexBufferReleaseIndexBuffer2_next);
         };
-        uint8_t* CIndexBufferVPLock3_wrapper(struct CIndexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
+        static uint8_t* CIndexBufferVPLock3_wrapper(struct CIndexBuffer* _this, int arg_0, int arg_1, uint32_t arg_2)
         {
            return CIndexBufferVPLock3_user(_this, arg_0, arg_1, arg_2, CIndexBufferVPLock3_next);
         };
-        void CIndexBufferVPUnLock4_wrapper(struct CIndexBuffer* _this)
+        static void CIndexBufferVPUnLock4_wrapper(struct CIndexBuffer* _this)
         {
            CIndexBufferVPUnLock4_user(_this, CIndexBufferVPUnLock4_next);
         };
-        int64_t CIndexBufferdtor_CIndexBuffer5_wrapper(struct CIndexBuffer* _this)
+        static int64_t CIndexBufferdtor_CIndexBuffer5_wrapper(struct CIndexBuffer* _this)
         {
            return CIndexBufferdtor_CIndexBuffer5_user(_this, CIndexBufferdtor_CIndexBuffer5_next);
         };
         
-        hook_record CIndexBuffer_functions[] = {
+        static hook_record CIndexBuffer_functions[] = {
         {   (LPVOID)0x14050c370L,
             (LPVOID *)&CIndexBufferInitIndexBuffer1_user,
             (LPVOID *)&CIndexBufferInitIndexBuffer1_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

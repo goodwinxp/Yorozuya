@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlTraceSettingsctor_CAtlTraceSettings1_ptr CAtlTraceSettingsctor_CAtlTraceSettings1_next(nullptr);
-        info::CAtlTraceSettingsctor_CAtlTraceSettings1_clbk CAtlTraceSettingsctor_CAtlTraceSettings1_user(nullptr);
-        info::CAtlTraceSettingsMarkValid2_ptr CAtlTraceSettingsMarkValid2_next(nullptr);
-        info::CAtlTraceSettingsMarkValid2_clbk CAtlTraceSettingsMarkValid2_user(nullptr);
-        info::CAtlTraceSettingsRelease3_ptr CAtlTraceSettingsRelease3_next(nullptr);
-        info::CAtlTraceSettingsRelease3_clbk CAtlTraceSettingsRelease3_user(nullptr);
-        info::CAtlTraceSettingsTryAddRef4_ptr CAtlTraceSettingsTryAddRef4_next(nullptr);
-        info::CAtlTraceSettingsTryAddRef4_clbk CAtlTraceSettingsTryAddRef4_user(nullptr);
-        info::CAtlTraceSettingsTryAllocate5_ptr CAtlTraceSettingsTryAllocate5_next(nullptr);
-        info::CAtlTraceSettingsTryAllocate5_clbk CAtlTraceSettingsTryAllocate5_user(nullptr);
+        static info::CAtlTraceSettingsctor_CAtlTraceSettings1_ptr CAtlTraceSettingsctor_CAtlTraceSettings1_next(nullptr);
+        static info::CAtlTraceSettingsctor_CAtlTraceSettings1_clbk CAtlTraceSettingsctor_CAtlTraceSettings1_user(nullptr);
+        static info::CAtlTraceSettingsMarkValid2_ptr CAtlTraceSettingsMarkValid2_next(nullptr);
+        static info::CAtlTraceSettingsMarkValid2_clbk CAtlTraceSettingsMarkValid2_user(nullptr);
+        static info::CAtlTraceSettingsRelease3_ptr CAtlTraceSettingsRelease3_next(nullptr);
+        static info::CAtlTraceSettingsRelease3_clbk CAtlTraceSettingsRelease3_user(nullptr);
+        static info::CAtlTraceSettingsTryAddRef4_ptr CAtlTraceSettingsTryAddRef4_next(nullptr);
+        static info::CAtlTraceSettingsTryAddRef4_clbk CAtlTraceSettingsTryAddRef4_user(nullptr);
+        static info::CAtlTraceSettingsTryAllocate5_ptr CAtlTraceSettingsTryAllocate5_next(nullptr);
+        static info::CAtlTraceSettingsTryAllocate5_clbk CAtlTraceSettingsTryAllocate5_user(nullptr);
         
-        void CAtlTraceSettingsctor_CAtlTraceSettings1_wrapper(struct CAtlTraceSettings* _this)
+        static void CAtlTraceSettingsctor_CAtlTraceSettings1_wrapper(struct CAtlTraceSettings* _this)
         {
            CAtlTraceSettingsctor_CAtlTraceSettings1_user(_this, CAtlTraceSettingsctor_CAtlTraceSettings1_next);
         };
-        void CAtlTraceSettingsMarkValid2_wrapper(struct CAtlTraceSettings* _this, int nCookie)
+        static void CAtlTraceSettingsMarkValid2_wrapper(struct CAtlTraceSettings* _this, int nCookie)
         {
            CAtlTraceSettingsMarkValid2_user(_this, nCookie, CAtlTraceSettingsMarkValid2_next);
         };
-        void CAtlTraceSettingsRelease3_wrapper(struct CAtlTraceSettings* _this)
+        static void CAtlTraceSettingsRelease3_wrapper(struct CAtlTraceSettings* _this)
         {
            CAtlTraceSettingsRelease3_user(_this, CAtlTraceSettingsRelease3_next);
         };
-        bool CAtlTraceSettingsTryAddRef4_wrapper(struct CAtlTraceSettings* _this)
+        static bool CAtlTraceSettingsTryAddRef4_wrapper(struct CAtlTraceSettings* _this)
         {
            return CAtlTraceSettingsTryAddRef4_user(_this, CAtlTraceSettingsTryAddRef4_next);
         };
-        bool CAtlTraceSettingsTryAllocate5_wrapper(struct CAtlTraceSettings* _this)
+        static bool CAtlTraceSettingsTryAllocate5_wrapper(struct CAtlTraceSettings* _this)
         {
            return CAtlTraceSettingsTryAllocate5_user(_this, CAtlTraceSettingsTryAllocate5_next);
         };
         
-        hook_record CAtlTraceSettings_functions[] = {
+        static hook_record CAtlTraceSettings_functions[] = {
         {   (LPVOID)0x140676250L,
             (LPVOID *)&CAtlTraceSettingsctor_CAtlTraceSettings1_user,
             (LPVOID *)&CAtlTraceSettingsctor_CAtlTraceSettings1_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

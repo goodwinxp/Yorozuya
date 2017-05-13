@@ -8,95 +8,95 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaEventNodector_CLuaEventNode2_ptr CLuaEventNodector_CLuaEventNode2_next(nullptr);
-        info::CLuaEventNodector_CLuaEventNode2_clbk CLuaEventNodector_CLuaEventNode2_user(nullptr);
-        info::CLuaEventNodeGetCallFunName4_ptr CLuaEventNodeGetCallFunName4_next(nullptr);
-        info::CLuaEventNodeGetCallFunName4_clbk CLuaEventNodeGetCallFunName4_user(nullptr);
-        info::CLuaEventNodeGetName6_ptr CLuaEventNodeGetName6_next(nullptr);
-        info::CLuaEventNodeGetName6_clbk CLuaEventNodeGetName6_user(nullptr);
-        info::CLuaEventNodeGetNextLoopTime8_ptr CLuaEventNodeGetNextLoopTime8_next(nullptr);
-        info::CLuaEventNodeGetNextLoopTime8_clbk CLuaEventNodeGetNextLoopTime8_user(nullptr);
-        info::CLuaEventNodeGetScript10_ptr CLuaEventNodeGetScript10_next(nullptr);
-        info::CLuaEventNodeGetScript10_clbk CLuaEventNodeGetScript10_user(nullptr);
-        info::CLuaEventNodeGetTimeTerm12_ptr CLuaEventNodeGetTimeTerm12_next(nullptr);
-        info::CLuaEventNodeGetTimeTerm12_clbk CLuaEventNodeGetTimeTerm12_user(nullptr);
-        info::CLuaEventNodeInit14_ptr CLuaEventNodeInit14_next(nullptr);
-        info::CLuaEventNodeInit14_clbk CLuaEventNodeInit14_user(nullptr);
-        info::CLuaEventNodeIsCallFun16_ptr CLuaEventNodeIsCallFun16_next(nullptr);
-        info::CLuaEventNodeIsCallFun16_clbk CLuaEventNodeIsCallFun16_user(nullptr);
-        info::CLuaEventNodeSetCallFun18_ptr CLuaEventNodeSetCallFun18_next(nullptr);
-        info::CLuaEventNodeSetCallFun18_clbk CLuaEventNodeSetCallFun18_user(nullptr);
-        info::CLuaEventNodeSetName20_ptr CLuaEventNodeSetName20_next(nullptr);
-        info::CLuaEventNodeSetName20_clbk CLuaEventNodeSetName20_user(nullptr);
-        info::CLuaEventNodeSetNextLoopTime22_ptr CLuaEventNodeSetNextLoopTime22_next(nullptr);
-        info::CLuaEventNodeSetNextLoopTime22_clbk CLuaEventNodeSetNextLoopTime22_user(nullptr);
-        info::CLuaEventNodeSetScript24_ptr CLuaEventNodeSetScript24_next(nullptr);
-        info::CLuaEventNodeSetScript24_clbk CLuaEventNodeSetScript24_user(nullptr);
-        info::CLuaEventNodedtor_CLuaEventNode28_ptr CLuaEventNodedtor_CLuaEventNode28_next(nullptr);
-        info::CLuaEventNodedtor_CLuaEventNode28_clbk CLuaEventNodedtor_CLuaEventNode28_user(nullptr);
+        static info::CLuaEventNodector_CLuaEventNode2_ptr CLuaEventNodector_CLuaEventNode2_next(nullptr);
+        static info::CLuaEventNodector_CLuaEventNode2_clbk CLuaEventNodector_CLuaEventNode2_user(nullptr);
+        static info::CLuaEventNodeGetCallFunName4_ptr CLuaEventNodeGetCallFunName4_next(nullptr);
+        static info::CLuaEventNodeGetCallFunName4_clbk CLuaEventNodeGetCallFunName4_user(nullptr);
+        static info::CLuaEventNodeGetName6_ptr CLuaEventNodeGetName6_next(nullptr);
+        static info::CLuaEventNodeGetName6_clbk CLuaEventNodeGetName6_user(nullptr);
+        static info::CLuaEventNodeGetNextLoopTime8_ptr CLuaEventNodeGetNextLoopTime8_next(nullptr);
+        static info::CLuaEventNodeGetNextLoopTime8_clbk CLuaEventNodeGetNextLoopTime8_user(nullptr);
+        static info::CLuaEventNodeGetScript10_ptr CLuaEventNodeGetScript10_next(nullptr);
+        static info::CLuaEventNodeGetScript10_clbk CLuaEventNodeGetScript10_user(nullptr);
+        static info::CLuaEventNodeGetTimeTerm12_ptr CLuaEventNodeGetTimeTerm12_next(nullptr);
+        static info::CLuaEventNodeGetTimeTerm12_clbk CLuaEventNodeGetTimeTerm12_user(nullptr);
+        static info::CLuaEventNodeInit14_ptr CLuaEventNodeInit14_next(nullptr);
+        static info::CLuaEventNodeInit14_clbk CLuaEventNodeInit14_user(nullptr);
+        static info::CLuaEventNodeIsCallFun16_ptr CLuaEventNodeIsCallFun16_next(nullptr);
+        static info::CLuaEventNodeIsCallFun16_clbk CLuaEventNodeIsCallFun16_user(nullptr);
+        static info::CLuaEventNodeSetCallFun18_ptr CLuaEventNodeSetCallFun18_next(nullptr);
+        static info::CLuaEventNodeSetCallFun18_clbk CLuaEventNodeSetCallFun18_user(nullptr);
+        static info::CLuaEventNodeSetName20_ptr CLuaEventNodeSetName20_next(nullptr);
+        static info::CLuaEventNodeSetName20_clbk CLuaEventNodeSetName20_user(nullptr);
+        static info::CLuaEventNodeSetNextLoopTime22_ptr CLuaEventNodeSetNextLoopTime22_next(nullptr);
+        static info::CLuaEventNodeSetNextLoopTime22_clbk CLuaEventNodeSetNextLoopTime22_user(nullptr);
+        static info::CLuaEventNodeSetScript24_ptr CLuaEventNodeSetScript24_next(nullptr);
+        static info::CLuaEventNodeSetScript24_clbk CLuaEventNodeSetScript24_user(nullptr);
+        static info::CLuaEventNodedtor_CLuaEventNode28_ptr CLuaEventNodedtor_CLuaEventNode28_next(nullptr);
+        static info::CLuaEventNodedtor_CLuaEventNode28_clbk CLuaEventNodedtor_CLuaEventNode28_user(nullptr);
         
-        info::CLuaEventNode___Statector__State2_ptr CLuaEventNode___Statector__State2_next(nullptr);
-        info::CLuaEventNode___Statector__State2_clbk CLuaEventNode___Statector__State2_user(nullptr);
+        static info::CLuaEventNode___Statector__State2_ptr CLuaEventNode___Statector__State2_next(nullptr);
+        static info::CLuaEventNode___Statector__State2_clbk CLuaEventNode___Statector__State2_user(nullptr);
         
-        void CLuaEventNodector_CLuaEventNode2_wrapper(struct CLuaEventNode* _this)
+        static void CLuaEventNodector_CLuaEventNode2_wrapper(struct CLuaEventNode* _this)
         {
            CLuaEventNodector_CLuaEventNode2_user(_this, CLuaEventNodector_CLuaEventNode2_next);
         };
-        char* CLuaEventNodeGetCallFunName4_wrapper(struct CLuaEventNode* _this)
+        static char* CLuaEventNodeGetCallFunName4_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeGetCallFunName4_user(_this, CLuaEventNodeGetCallFunName4_next);
         };
-        char* CLuaEventNodeGetName6_wrapper(struct CLuaEventNode* _this)
+        static char* CLuaEventNodeGetName6_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeGetName6_user(_this, CLuaEventNodeGetName6_next);
         };
-        unsigned int CLuaEventNodeGetNextLoopTime8_wrapper(struct CLuaEventNode* _this)
+        static unsigned int CLuaEventNodeGetNextLoopTime8_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeGetNextLoopTime8_user(_this, CLuaEventNodeGetNextLoopTime8_next);
         };
-        struct CLuaScript* CLuaEventNodeGetScript10_wrapper(struct CLuaEventNode* _this)
+        static struct CLuaScript* CLuaEventNodeGetScript10_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeGetScript10_user(_this, CLuaEventNodeGetScript10_next);
         };
-        unsigned int CLuaEventNodeGetTimeTerm12_wrapper(struct CLuaEventNode* _this)
+        static unsigned int CLuaEventNodeGetTimeTerm12_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeGetTimeTerm12_user(_this, CLuaEventNodeGetTimeTerm12_next);
         };
-        void CLuaEventNodeInit14_wrapper(struct CLuaEventNode* _this)
+        static void CLuaEventNodeInit14_wrapper(struct CLuaEventNode* _this)
         {
            CLuaEventNodeInit14_user(_this, CLuaEventNodeInit14_next);
         };
-        bool CLuaEventNodeIsCallFun16_wrapper(struct CLuaEventNode* _this)
+        static bool CLuaEventNodeIsCallFun16_wrapper(struct CLuaEventNode* _this)
         {
            return CLuaEventNodeIsCallFun16_user(_this, CLuaEventNodeIsCallFun16_next);
         };
-        void CLuaEventNodeSetCallFun18_wrapper(struct CLuaEventNode* _this, char* strCallFunName, unsigned int dwTime)
+        static void CLuaEventNodeSetCallFun18_wrapper(struct CLuaEventNode* _this, char* strCallFunName, unsigned int dwTime)
         {
            CLuaEventNodeSetCallFun18_user(_this, strCallFunName, dwTime, CLuaEventNodeSetCallFun18_next);
         };
-        void CLuaEventNodeSetName20_wrapper(struct CLuaEventNode* _this, char* strName)
+        static void CLuaEventNodeSetName20_wrapper(struct CLuaEventNode* _this, char* strName)
         {
            CLuaEventNodeSetName20_user(_this, strName, CLuaEventNodeSetName20_next);
         };
-        void CLuaEventNodeSetNextLoopTime22_wrapper(struct CLuaEventNode* _this, unsigned int dwNextLoopTime)
+        static void CLuaEventNodeSetNextLoopTime22_wrapper(struct CLuaEventNode* _this, unsigned int dwNextLoopTime)
         {
            CLuaEventNodeSetNextLoopTime22_user(_this, dwNextLoopTime, CLuaEventNodeSetNextLoopTime22_next);
         };
-        void CLuaEventNodeSetScript24_wrapper(struct CLuaEventNode* _this, struct CLuaScript* pParentScript)
+        static void CLuaEventNodeSetScript24_wrapper(struct CLuaEventNode* _this, struct CLuaScript* pParentScript)
         {
            CLuaEventNodeSetScript24_user(_this, pParentScript, CLuaEventNodeSetScript24_next);
         };
-        void CLuaEventNodedtor_CLuaEventNode28_wrapper(struct CLuaEventNode* _this)
+        static void CLuaEventNodedtor_CLuaEventNode28_wrapper(struct CLuaEventNode* _this)
         {
            CLuaEventNodedtor_CLuaEventNode28_user(_this, CLuaEventNodedtor_CLuaEventNode28_next);
         };
         
-        void CLuaEventNode___Statector__State2_wrapper(struct CLuaEventNode::_State* _this)
+        static void CLuaEventNode___Statector__State2_wrapper(struct CLuaEventNode::_State* _this)
         {
            CLuaEventNode___Statector__State2_user(_this, CLuaEventNode___Statector__State2_next);
         };
         
-        hook_record CLuaEventNode_functions[] = {
+        static hook_record CLuaEventNode_functions[] = {
         {   (LPVOID)0x1404043d0L,
             (LPVOID *)&CLuaEventNodector_CLuaEventNode2_user,
             (LPVOID *)&CLuaEventNodector_CLuaEventNode2_next,
@@ -171,5 +171,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

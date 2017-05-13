@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_ptr GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_clbk GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_ptr GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_clbk GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_ptr GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_clbk GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_ptr GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_clbk GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_ptr GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_clbk GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_ptr GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_clbk GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_user(_this, GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateDivideFin4_next);
             };
-            struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this, struct ATL::CTimeSpan* result)
+            static struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this, struct ATL::CTimeSpan* result)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_user(_this, result, GUILD_BATTLE__CNormalGuildBattleStateDivideGetTerm6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateDivide* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_user(_this, GUILD_BATTLE__CNormalGuildBattleStateDividedtor_CNormalGuildBattleStateDivide8_next);
             };
             
-            hook_record CNormalGuildBattleStateDivide_functions[] = {
+            static hook_record CNormalGuildBattleStateDivide_functions[] = {
             {   (LPVOID)0x1403f0d20L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateDividector_CNormalGuildBattleStateDivide2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

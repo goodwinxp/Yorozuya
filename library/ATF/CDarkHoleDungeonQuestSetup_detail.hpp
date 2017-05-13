@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_ptr CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_next(nullptr);
-        info::CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_clbk CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_user(nullptr);
-        info::CDarkHoleDungeonQuestSetupGetErrorMsg4_ptr CDarkHoleDungeonQuestSetupGetErrorMsg4_next(nullptr);
-        info::CDarkHoleDungeonQuestSetupGetErrorMsg4_clbk CDarkHoleDungeonQuestSetupGetErrorMsg4_user(nullptr);
-        info::CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_ptr CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_next(nullptr);
-        info::CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_clbk CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_user(nullptr);
-        info::CDarkHoleDungeonQuestSetupSetupQuest8_ptr CDarkHoleDungeonQuestSetupSetupQuest8_next(nullptr);
-        info::CDarkHoleDungeonQuestSetupSetupQuest8_clbk CDarkHoleDungeonQuestSetupSetupQuest8_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_ptr CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_clbk CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_ptr CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_clbk CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_ptr CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_clbk CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_ptr CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_clbk CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_ptr CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_clbk CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_ptr CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_clbk CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_user(nullptr);
-        info::CDarkHoleDungeonQuestSetup_LastCheckScipt22_ptr CDarkHoleDungeonQuestSetup_LastCheckScipt22_next(nullptr);
-        info::CDarkHoleDungeonQuestSetup_LastCheckScipt22_clbk CDarkHoleDungeonQuestSetup_LastCheckScipt22_user(nullptr);
-        info::CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_ptr CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_next(nullptr);
-        info::CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_clbk CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_ptr CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_clbk CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetupGetErrorMsg4_ptr CDarkHoleDungeonQuestSetupGetErrorMsg4_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetupGetErrorMsg4_clbk CDarkHoleDungeonQuestSetupGetErrorMsg4_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_ptr CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_clbk CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetupSetupQuest8_ptr CDarkHoleDungeonQuestSetupSetupQuest8_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetupSetupQuest8_clbk CDarkHoleDungeonQuestSetupSetupQuest8_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_ptr CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_clbk CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_ptr CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_clbk CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_ptr CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_clbk CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_ptr CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_clbk CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_ptr CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_clbk CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_ptr CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_clbk CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_LastCheckScipt22_ptr CDarkHoleDungeonQuestSetup_LastCheckScipt22_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetup_LastCheckScipt22_clbk CDarkHoleDungeonQuestSetup_LastCheckScipt22_user(nullptr);
+        static info::CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_ptr CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_next(nullptr);
+        static info::CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_clbk CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_user(nullptr);
         
-        void CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
+        static void CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
         {
            CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_user(_this, CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_next);
         };
-        char* CDarkHoleDungeonQuestSetupGetErrorMsg4_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
+        static char* CDarkHoleDungeonQuestSetupGetErrorMsg4_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
         {
            return CDarkHoleDungeonQuestSetupGetErrorMsg4_user(_this, CDarkHoleDungeonQuestSetupGetErrorMsg4_next);
         };
-        struct _dh_quest_setup* CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_wrapper(struct CDarkHoleDungeonQuestSetup* _this, unsigned int dwQuestIndex)
+        static struct _dh_quest_setup* CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_wrapper(struct CDarkHoleDungeonQuestSetup* _this, unsigned int dwQuestIndex)
         {
            return CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_user(_this, dwQuestIndex, CDarkHoleDungeonQuestSetupGetQuestSetupPtr6_next);
         };
-        bool CDarkHoleDungeonQuestSetupSetupQuest8_wrapper(struct CDarkHoleDungeonQuestSetup* _this, char* pszQuestFileName)
+        static bool CDarkHoleDungeonQuestSetupSetupQuest8_wrapper(struct CDarkHoleDungeonQuestSetup* _this, char* pszQuestFileName)
         {
            return CDarkHoleDungeonQuestSetupSetupQuest8_user(_this, pszQuestFileName, CDarkHoleDungeonQuestSetupSetupQuest8_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Job_Condition10_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Job_Setting12_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Mission_Condition14_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Mission_Setting16_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Quest_Condition18_next);
         };
-        bool CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
+        static bool CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_wrapper(struct CDarkHoleDungeonQuestSetup* _this, struct strFILE* fstr)
         {
            return CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_user(_this, fstr, CDarkHoleDungeonQuestSetup_Analysis_Quest_Setting20_next);
         };
-        bool CDarkHoleDungeonQuestSetup_LastCheckScipt22_wrapper(struct CDarkHoleDungeonQuestSetup* _this, char* pszQuestFileName)
+        static bool CDarkHoleDungeonQuestSetup_LastCheckScipt22_wrapper(struct CDarkHoleDungeonQuestSetup* _this, char* pszQuestFileName)
         {
            return CDarkHoleDungeonQuestSetup_LastCheckScipt22_user(_this, pszQuestFileName, CDarkHoleDungeonQuestSetup_LastCheckScipt22_next);
         };
-        void CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
+        static void CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_wrapper(struct CDarkHoleDungeonQuestSetup* _this)
         {
            CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_user(_this, CDarkHoleDungeonQuestSetupdtor_CDarkHoleDungeonQuestSetup27_next);
         };
         
-        hook_record CDarkHoleDungeonQuestSetup_functions[] = {
+        static hook_record CDarkHoleDungeonQuestSetup_functions[] = {
         {   (LPVOID)0x14026f930L,
             (LPVOID *)&CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_user,
             (LPVOID *)&CDarkHoleDungeonQuestSetupctor_CDarkHoleDungeonQuestSetup2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

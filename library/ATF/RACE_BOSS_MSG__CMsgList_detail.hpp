@@ -10,123 +10,123 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::RACE_BOSS_MSG__CMsgListAddEmpty2_ptr RACE_BOSS_MSG__CMsgListAddEmpty2_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListAddEmpty2_clbk RACE_BOSS_MSG__CMsgListAddEmpty2_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListAddUse4_ptr RACE_BOSS_MSG__CMsgListAddUse4_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListAddUse4_clbk RACE_BOSS_MSG__CMsgListAddUse4_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListctor_CMsgList6_ptr RACE_BOSS_MSG__CMsgListctor_CMsgList6_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListctor_CMsgList6_clbk RACE_BOSS_MSG__CMsgListctor_CMsgList6_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListCancel8_ptr RACE_BOSS_MSG__CMsgListCancel8_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListCancel8_clbk RACE_BOSS_MSG__CMsgListCancel8_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListCleanUp10_ptr RACE_BOSS_MSG__CMsgListCleanUp10_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListCleanUp10_clbk RACE_BOSS_MSG__CMsgListCleanUp10_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetEmpty12_ptr RACE_BOSS_MSG__CMsgListGetEmpty12_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetEmpty12_clbk RACE_BOSS_MSG__CMsgListGetEmpty12_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetRemainCnt14_ptr RACE_BOSS_MSG__CMsgListGetRemainCnt14_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetRemainCnt14_clbk RACE_BOSS_MSG__CMsgListGetRemainCnt14_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetSendMsg16_ptr RACE_BOSS_MSG__CMsgListGetSendMsg16_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListGetSendMsg16_clbk RACE_BOSS_MSG__CMsgListGetSendMsg16_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListInit18_ptr RACE_BOSS_MSG__CMsgListInit18_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListInit18_clbk RACE_BOSS_MSG__CMsgListInit18_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoad20_ptr RACE_BOSS_MSG__CMsgListLoad20_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoad20_clbk RACE_BOSS_MSG__CMsgListLoad20_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoadIndexList22_ptr RACE_BOSS_MSG__CMsgListLoadIndexList22_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoadIndexList22_clbk RACE_BOSS_MSG__CMsgListLoadIndexList22_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoadMsgList24_ptr RACE_BOSS_MSG__CMsgListLoadMsgList24_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListLoadMsgList24_clbk RACE_BOSS_MSG__CMsgListLoadMsgList24_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRefresh26_ptr RACE_BOSS_MSG__CMsgListRefresh26_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRefresh26_clbk RACE_BOSS_MSG__CMsgListRefresh26_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRelease28_ptr RACE_BOSS_MSG__CMsgListRelease28_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRelease28_clbk RACE_BOSS_MSG__CMsgListRelease28_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRollBack30_ptr RACE_BOSS_MSG__CMsgListRollBack30_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListRollBack30_clbk RACE_BOSS_MSG__CMsgListRollBack30_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSave32_ptr RACE_BOSS_MSG__CMsgListSave32_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSave32_clbk RACE_BOSS_MSG__CMsgListSave32_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSaveIndexList34_ptr RACE_BOSS_MSG__CMsgListSaveIndexList34_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSaveIndexList34_clbk RACE_BOSS_MSG__CMsgListSaveIndexList34_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSaveMsgList36_ptr RACE_BOSS_MSG__CMsgListSaveMsgList36_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListSaveMsgList36_clbk RACE_BOSS_MSG__CMsgListSaveMsgList36_user(nullptr);
-            info::RACE_BOSS_MSG__CMsgListdtor_CMsgList40_ptr RACE_BOSS_MSG__CMsgListdtor_CMsgList40_next(nullptr);
-            info::RACE_BOSS_MSG__CMsgListdtor_CMsgList40_clbk RACE_BOSS_MSG__CMsgListdtor_CMsgList40_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListAddEmpty2_ptr RACE_BOSS_MSG__CMsgListAddEmpty2_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListAddEmpty2_clbk RACE_BOSS_MSG__CMsgListAddEmpty2_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListAddUse4_ptr RACE_BOSS_MSG__CMsgListAddUse4_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListAddUse4_clbk RACE_BOSS_MSG__CMsgListAddUse4_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListctor_CMsgList6_ptr RACE_BOSS_MSG__CMsgListctor_CMsgList6_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListctor_CMsgList6_clbk RACE_BOSS_MSG__CMsgListctor_CMsgList6_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListCancel8_ptr RACE_BOSS_MSG__CMsgListCancel8_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListCancel8_clbk RACE_BOSS_MSG__CMsgListCancel8_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListCleanUp10_ptr RACE_BOSS_MSG__CMsgListCleanUp10_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListCleanUp10_clbk RACE_BOSS_MSG__CMsgListCleanUp10_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetEmpty12_ptr RACE_BOSS_MSG__CMsgListGetEmpty12_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetEmpty12_clbk RACE_BOSS_MSG__CMsgListGetEmpty12_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetRemainCnt14_ptr RACE_BOSS_MSG__CMsgListGetRemainCnt14_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetRemainCnt14_clbk RACE_BOSS_MSG__CMsgListGetRemainCnt14_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetSendMsg16_ptr RACE_BOSS_MSG__CMsgListGetSendMsg16_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListGetSendMsg16_clbk RACE_BOSS_MSG__CMsgListGetSendMsg16_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListInit18_ptr RACE_BOSS_MSG__CMsgListInit18_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListInit18_clbk RACE_BOSS_MSG__CMsgListInit18_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoad20_ptr RACE_BOSS_MSG__CMsgListLoad20_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoad20_clbk RACE_BOSS_MSG__CMsgListLoad20_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoadIndexList22_ptr RACE_BOSS_MSG__CMsgListLoadIndexList22_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoadIndexList22_clbk RACE_BOSS_MSG__CMsgListLoadIndexList22_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoadMsgList24_ptr RACE_BOSS_MSG__CMsgListLoadMsgList24_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListLoadMsgList24_clbk RACE_BOSS_MSG__CMsgListLoadMsgList24_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRefresh26_ptr RACE_BOSS_MSG__CMsgListRefresh26_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRefresh26_clbk RACE_BOSS_MSG__CMsgListRefresh26_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRelease28_ptr RACE_BOSS_MSG__CMsgListRelease28_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRelease28_clbk RACE_BOSS_MSG__CMsgListRelease28_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRollBack30_ptr RACE_BOSS_MSG__CMsgListRollBack30_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListRollBack30_clbk RACE_BOSS_MSG__CMsgListRollBack30_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSave32_ptr RACE_BOSS_MSG__CMsgListSave32_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSave32_clbk RACE_BOSS_MSG__CMsgListSave32_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSaveIndexList34_ptr RACE_BOSS_MSG__CMsgListSaveIndexList34_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSaveIndexList34_clbk RACE_BOSS_MSG__CMsgListSaveIndexList34_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSaveMsgList36_ptr RACE_BOSS_MSG__CMsgListSaveMsgList36_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListSaveMsgList36_clbk RACE_BOSS_MSG__CMsgListSaveMsgList36_user(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListdtor_CMsgList40_ptr RACE_BOSS_MSG__CMsgListdtor_CMsgList40_next(nullptr);
+            static info::RACE_BOSS_MSG__CMsgListdtor_CMsgList40_clbk RACE_BOSS_MSG__CMsgListdtor_CMsgList40_user(nullptr);
             
-            void RACE_BOSS_MSG__CMsgListAddEmpty2_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
+            static void RACE_BOSS_MSG__CMsgListAddEmpty2_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
             {
                RACE_BOSS_MSG__CMsgListAddEmpty2_user(_this, pkMsg, RACE_BOSS_MSG__CMsgListAddEmpty2_next);
             };
-            void RACE_BOSS_MSG__CMsgListAddUse4_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
+            static void RACE_BOSS_MSG__CMsgListAddUse4_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
             {
                RACE_BOSS_MSG__CMsgListAddUse4_user(_this, pkMsg, RACE_BOSS_MSG__CMsgListAddUse4_next);
             };
-            void RACE_BOSS_MSG__CMsgListctor_CMsgList6_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, char ucRace, unsigned int uiSize)
+            static void RACE_BOSS_MSG__CMsgListctor_CMsgList6_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, char ucRace, unsigned int uiSize)
             {
                RACE_BOSS_MSG__CMsgListctor_CMsgList6_user(_this, ucRace, uiSize, RACE_BOSS_MSG__CMsgListctor_CMsgList6_next);
             };
-            int RACE_BOSS_MSG__CMsgListCancel8_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, unsigned int dwMsgID, struct RACE_BOSS_MSG::CMsg** pkMsg)
+            static int RACE_BOSS_MSG__CMsgListCancel8_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, unsigned int dwMsgID, struct RACE_BOSS_MSG::CMsg** pkMsg)
             {
                return RACE_BOSS_MSG__CMsgListCancel8_user(_this, dwMsgID, pkMsg, RACE_BOSS_MSG__CMsgListCancel8_next);
             };
-            void RACE_BOSS_MSG__CMsgListCleanUp10_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static void RACE_BOSS_MSG__CMsgListCleanUp10_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                RACE_BOSS_MSG__CMsgListCleanUp10_user(_this, RACE_BOSS_MSG__CMsgListCleanUp10_next);
             };
-            struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListGetEmpty12_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListGetEmpty12_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                return RACE_BOSS_MSG__CMsgListGetEmpty12_user(_this, RACE_BOSS_MSG__CMsgListGetEmpty12_next);
             };
-            char RACE_BOSS_MSG__CMsgListGetRemainCnt14_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static char RACE_BOSS_MSG__CMsgListGetRemainCnt14_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                return RACE_BOSS_MSG__CMsgListGetRemainCnt14_user(_this, RACE_BOSS_MSG__CMsgListGetRemainCnt14_next);
             };
-            struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListGetSendMsg16_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static struct RACE_BOSS_MSG::CMsg* RACE_BOSS_MSG__CMsgListGetSendMsg16_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                return RACE_BOSS_MSG__CMsgListGetSendMsg16_user(_this, RACE_BOSS_MSG__CMsgListGetSendMsg16_next);
             };
-            bool RACE_BOSS_MSG__CMsgListInit18_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static bool RACE_BOSS_MSG__CMsgListInit18_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                return RACE_BOSS_MSG__CMsgListInit18_user(_this, RACE_BOSS_MSG__CMsgListInit18_next);
             };
-            bool RACE_BOSS_MSG__CMsgListLoad20_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, unsigned int dwCurTime)
+            static bool RACE_BOSS_MSG__CMsgListLoad20_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, unsigned int dwCurTime)
             {
                return RACE_BOSS_MSG__CMsgListLoad20_user(_this, dwCurTime, RACE_BOSS_MSG__CMsgListLoad20_next);
             };
-            bool RACE_BOSS_MSG__CMsgListLoadIndexList22_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, int iType, struct CNetIndexList* kInxList)
+            static bool RACE_BOSS_MSG__CMsgListLoadIndexList22_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, int iType, struct CNetIndexList* kInxList)
             {
                return RACE_BOSS_MSG__CMsgListLoadIndexList22_user(_this, iType, kInxList, RACE_BOSS_MSG__CMsgListLoadIndexList22_next);
             };
-            bool RACE_BOSS_MSG__CMsgListLoadMsgList24_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct CNetIndexList* kInxList, unsigned int dwCurTime)
+            static bool RACE_BOSS_MSG__CMsgListLoadMsgList24_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct CNetIndexList* kInxList, unsigned int dwCurTime)
             {
                return RACE_BOSS_MSG__CMsgListLoadMsgList24_user(_this, kInxList, dwCurTime, RACE_BOSS_MSG__CMsgListLoadMsgList24_next);
             };
-            void RACE_BOSS_MSG__CMsgListRefresh26_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static void RACE_BOSS_MSG__CMsgListRefresh26_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                RACE_BOSS_MSG__CMsgListRefresh26_user(_this, RACE_BOSS_MSG__CMsgListRefresh26_next);
             };
-            void RACE_BOSS_MSG__CMsgListRelease28_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
+            static void RACE_BOSS_MSG__CMsgListRelease28_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct RACE_BOSS_MSG::CMsg* pkMsg)
             {
                RACE_BOSS_MSG__CMsgListRelease28_user(_this, pkMsg, RACE_BOSS_MSG__CMsgListRelease28_next);
             };
-            void RACE_BOSS_MSG__CMsgListRollBack30_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static void RACE_BOSS_MSG__CMsgListRollBack30_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                RACE_BOSS_MSG__CMsgListRollBack30_user(_this, RACE_BOSS_MSG__CMsgListRollBack30_next);
             };
-            bool RACE_BOSS_MSG__CMsgListSave32_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static bool RACE_BOSS_MSG__CMsgListSave32_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                return RACE_BOSS_MSG__CMsgListSave32_user(_this, RACE_BOSS_MSG__CMsgListSave32_next);
             };
-            bool RACE_BOSS_MSG__CMsgListSaveIndexList34_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, int iType, struct CNetIndexList* kInxList)
+            static bool RACE_BOSS_MSG__CMsgListSaveIndexList34_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, int iType, struct CNetIndexList* kInxList)
             {
                return RACE_BOSS_MSG__CMsgListSaveIndexList34_user(_this, iType, kInxList, RACE_BOSS_MSG__CMsgListSaveIndexList34_next);
             };
-            bool RACE_BOSS_MSG__CMsgListSaveMsgList36_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct CNetIndexList* kInxList)
+            static bool RACE_BOSS_MSG__CMsgListSaveMsgList36_wrapper(struct RACE_BOSS_MSG::CMsgList* _this, struct CNetIndexList* kInxList)
             {
                return RACE_BOSS_MSG__CMsgListSaveMsgList36_user(_this, kInxList, RACE_BOSS_MSG__CMsgListSaveMsgList36_next);
             };
-            void RACE_BOSS_MSG__CMsgListdtor_CMsgList40_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
+            static void RACE_BOSS_MSG__CMsgListdtor_CMsgList40_wrapper(struct RACE_BOSS_MSG::CMsgList* _this)
             {
                RACE_BOSS_MSG__CMsgListdtor_CMsgList40_user(_this, RACE_BOSS_MSG__CMsgListdtor_CMsgList40_next);
             };
             
-            hook_record CMsgList_functions[] = {
+            static hook_record CMsgList_functions[] = {
             {   (LPVOID)0x14029eb20L,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgListAddEmpty2_user,
                 (LPVOID *)&RACE_BOSS_MSG__CMsgListAddEmpty2_next,
@@ -225,6 +225,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace RACE_BOSS_MSG
 END_ATF_NAMESPACE

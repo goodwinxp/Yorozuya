@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaScriptMgrAttachLuaScript2_ptr CLuaScriptMgrAttachLuaScript2_next(nullptr);
-        info::CLuaScriptMgrAttachLuaScript2_clbk CLuaScriptMgrAttachLuaScript2_user(nullptr);
-        info::CLuaScriptMgrctor_CLuaScriptMgr4_ptr CLuaScriptMgrctor_CLuaScriptMgr4_next(nullptr);
-        info::CLuaScriptMgrctor_CLuaScriptMgr4_clbk CLuaScriptMgrctor_CLuaScriptMgr4_user(nullptr);
-        info::CLuaScriptMgrDestroy6_ptr CLuaScriptMgrDestroy6_next(nullptr);
-        info::CLuaScriptMgrDestroy6_clbk CLuaScriptMgrDestroy6_user(nullptr);
-        info::CLuaScriptMgrDetackLuaScript8_ptr CLuaScriptMgrDetackLuaScript8_next(nullptr);
-        info::CLuaScriptMgrDetackLuaScript8_clbk CLuaScriptMgrDetackLuaScript8_user(nullptr);
-        info::CLuaScriptMgrGetErrorLogFile10_ptr CLuaScriptMgrGetErrorLogFile10_next(nullptr);
-        info::CLuaScriptMgrGetErrorLogFile10_clbk CLuaScriptMgrGetErrorLogFile10_user(nullptr);
-        info::CLuaScriptMgrGetStateLogFile12_ptr CLuaScriptMgrGetStateLogFile12_next(nullptr);
-        info::CLuaScriptMgrGetStateLogFile12_clbk CLuaScriptMgrGetStateLogFile12_user(nullptr);
-        info::CLuaScriptMgrInitSDM14_ptr CLuaScriptMgrInitSDM14_next(nullptr);
-        info::CLuaScriptMgrInitSDM14_clbk CLuaScriptMgrInitSDM14_user(nullptr);
-        info::CLuaScriptMgrInstance16_ptr CLuaScriptMgrInstance16_next(nullptr);
-        info::CLuaScriptMgrInstance16_clbk CLuaScriptMgrInstance16_user(nullptr);
-        info::CLuaScriptMgrLogStack18_ptr CLuaScriptMgrLogStack18_next(nullptr);
-        info::CLuaScriptMgrLogStack18_clbk CLuaScriptMgrLogStack18_user(nullptr);
-        info::CLuaScriptMgrLoop20_ptr CLuaScriptMgrLoop20_next(nullptr);
-        info::CLuaScriptMgrLoop20_clbk CLuaScriptMgrLoop20_user(nullptr);
-        info::CLuaScriptMgrNewCommandEx22_ptr CLuaScriptMgrNewCommandEx22_next(nullptr);
-        info::CLuaScriptMgrNewCommandEx22_clbk CLuaScriptMgrNewCommandEx22_user(nullptr);
-        info::CLuaScriptMgrNewScript24_ptr CLuaScriptMgrNewScript24_next(nullptr);
-        info::CLuaScriptMgrNewScript24_clbk CLuaScriptMgrNewScript24_user(nullptr);
-        info::CLuaScriptMgrRemoveCommandEx26_ptr CLuaScriptMgrRemoveCommandEx26_next(nullptr);
-        info::CLuaScriptMgrRemoveCommandEx26_clbk CLuaScriptMgrRemoveCommandEx26_user(nullptr);
-        info::CLuaScriptMgrRemoveScript28_ptr CLuaScriptMgrRemoveScript28_next(nullptr);
-        info::CLuaScriptMgrRemoveScript28_clbk CLuaScriptMgrRemoveScript28_user(nullptr);
-        info::CLuaScriptMgrSearchScript30_ptr CLuaScriptMgrSearchScript30_next(nullptr);
-        info::CLuaScriptMgrSearchScript30_clbk CLuaScriptMgrSearchScript30_user(nullptr);
-        info::CLuaScriptMgrSearchScriptFromLuaState32_ptr CLuaScriptMgrSearchScriptFromLuaState32_next(nullptr);
-        info::CLuaScriptMgrSearchScriptFromLuaState32_clbk CLuaScriptMgrSearchScriptFromLuaState32_user(nullptr);
-        info::CLuaScriptMgr_Regist_Novus34_ptr CLuaScriptMgr_Regist_Novus34_next(nullptr);
-        info::CLuaScriptMgr_Regist_Novus34_clbk CLuaScriptMgr_Regist_Novus34_user(nullptr);
-        info::CLuaScriptMgrdtor_CLuaScriptMgr38_ptr CLuaScriptMgrdtor_CLuaScriptMgr38_next(nullptr);
-        info::CLuaScriptMgrdtor_CLuaScriptMgr38_clbk CLuaScriptMgrdtor_CLuaScriptMgr38_user(nullptr);
+        static info::CLuaScriptMgrAttachLuaScript2_ptr CLuaScriptMgrAttachLuaScript2_next(nullptr);
+        static info::CLuaScriptMgrAttachLuaScript2_clbk CLuaScriptMgrAttachLuaScript2_user(nullptr);
+        static info::CLuaScriptMgrctor_CLuaScriptMgr4_ptr CLuaScriptMgrctor_CLuaScriptMgr4_next(nullptr);
+        static info::CLuaScriptMgrctor_CLuaScriptMgr4_clbk CLuaScriptMgrctor_CLuaScriptMgr4_user(nullptr);
+        static info::CLuaScriptMgrDestroy6_ptr CLuaScriptMgrDestroy6_next(nullptr);
+        static info::CLuaScriptMgrDestroy6_clbk CLuaScriptMgrDestroy6_user(nullptr);
+        static info::CLuaScriptMgrDetackLuaScript8_ptr CLuaScriptMgrDetackLuaScript8_next(nullptr);
+        static info::CLuaScriptMgrDetackLuaScript8_clbk CLuaScriptMgrDetackLuaScript8_user(nullptr);
+        static info::CLuaScriptMgrGetErrorLogFile10_ptr CLuaScriptMgrGetErrorLogFile10_next(nullptr);
+        static info::CLuaScriptMgrGetErrorLogFile10_clbk CLuaScriptMgrGetErrorLogFile10_user(nullptr);
+        static info::CLuaScriptMgrGetStateLogFile12_ptr CLuaScriptMgrGetStateLogFile12_next(nullptr);
+        static info::CLuaScriptMgrGetStateLogFile12_clbk CLuaScriptMgrGetStateLogFile12_user(nullptr);
+        static info::CLuaScriptMgrInitSDM14_ptr CLuaScriptMgrInitSDM14_next(nullptr);
+        static info::CLuaScriptMgrInitSDM14_clbk CLuaScriptMgrInitSDM14_user(nullptr);
+        static info::CLuaScriptMgrInstance16_ptr CLuaScriptMgrInstance16_next(nullptr);
+        static info::CLuaScriptMgrInstance16_clbk CLuaScriptMgrInstance16_user(nullptr);
+        static info::CLuaScriptMgrLogStack18_ptr CLuaScriptMgrLogStack18_next(nullptr);
+        static info::CLuaScriptMgrLogStack18_clbk CLuaScriptMgrLogStack18_user(nullptr);
+        static info::CLuaScriptMgrLoop20_ptr CLuaScriptMgrLoop20_next(nullptr);
+        static info::CLuaScriptMgrLoop20_clbk CLuaScriptMgrLoop20_user(nullptr);
+        static info::CLuaScriptMgrNewCommandEx22_ptr CLuaScriptMgrNewCommandEx22_next(nullptr);
+        static info::CLuaScriptMgrNewCommandEx22_clbk CLuaScriptMgrNewCommandEx22_user(nullptr);
+        static info::CLuaScriptMgrNewScript24_ptr CLuaScriptMgrNewScript24_next(nullptr);
+        static info::CLuaScriptMgrNewScript24_clbk CLuaScriptMgrNewScript24_user(nullptr);
+        static info::CLuaScriptMgrRemoveCommandEx26_ptr CLuaScriptMgrRemoveCommandEx26_next(nullptr);
+        static info::CLuaScriptMgrRemoveCommandEx26_clbk CLuaScriptMgrRemoveCommandEx26_user(nullptr);
+        static info::CLuaScriptMgrRemoveScript28_ptr CLuaScriptMgrRemoveScript28_next(nullptr);
+        static info::CLuaScriptMgrRemoveScript28_clbk CLuaScriptMgrRemoveScript28_user(nullptr);
+        static info::CLuaScriptMgrSearchScript30_ptr CLuaScriptMgrSearchScript30_next(nullptr);
+        static info::CLuaScriptMgrSearchScript30_clbk CLuaScriptMgrSearchScript30_user(nullptr);
+        static info::CLuaScriptMgrSearchScriptFromLuaState32_ptr CLuaScriptMgrSearchScriptFromLuaState32_next(nullptr);
+        static info::CLuaScriptMgrSearchScriptFromLuaState32_clbk CLuaScriptMgrSearchScriptFromLuaState32_user(nullptr);
+        static info::CLuaScriptMgr_Regist_Novus34_ptr CLuaScriptMgr_Regist_Novus34_next(nullptr);
+        static info::CLuaScriptMgr_Regist_Novus34_clbk CLuaScriptMgr_Regist_Novus34_user(nullptr);
+        static info::CLuaScriptMgrdtor_CLuaScriptMgr38_ptr CLuaScriptMgrdtor_CLuaScriptMgr38_next(nullptr);
+        static info::CLuaScriptMgrdtor_CLuaScriptMgr38_clbk CLuaScriptMgrdtor_CLuaScriptMgr38_user(nullptr);
         
-        bool CLuaScriptMgrAttachLuaScript2_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript, struct CLuaCommand* pAttachCommand)
+        static bool CLuaScriptMgrAttachLuaScript2_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript, struct CLuaCommand* pAttachCommand)
         {
            return CLuaScriptMgrAttachLuaScript2_user(_this, pScript, pAttachCommand, CLuaScriptMgrAttachLuaScript2_next);
         };
-        void CLuaScriptMgrctor_CLuaScriptMgr4_wrapper(struct CLuaScriptMgr* _this)
+        static void CLuaScriptMgrctor_CLuaScriptMgr4_wrapper(struct CLuaScriptMgr* _this)
         {
            CLuaScriptMgrctor_CLuaScriptMgr4_user(_this, CLuaScriptMgrctor_CLuaScriptMgr4_next);
         };
-        void CLuaScriptMgrDestroy6_wrapper()
+        static void CLuaScriptMgrDestroy6_wrapper()
         {
            CLuaScriptMgrDestroy6_user(CLuaScriptMgrDestroy6_next);
         };
-        bool CLuaScriptMgrDetackLuaScript8_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
+        static bool CLuaScriptMgrDetackLuaScript8_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
         {
            return CLuaScriptMgrDetackLuaScript8_user(_this, pScript, CLuaScriptMgrDetackLuaScript8_next);
         };
-        struct CLogFile* CLuaScriptMgrGetErrorLogFile10_wrapper(struct CLuaScriptMgr* _this)
+        static struct CLogFile* CLuaScriptMgrGetErrorLogFile10_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgrGetErrorLogFile10_user(_this, CLuaScriptMgrGetErrorLogFile10_next);
         };
-        struct CLogFile* CLuaScriptMgrGetStateLogFile12_wrapper(struct CLuaScriptMgr* _this)
+        static struct CLogFile* CLuaScriptMgrGetStateLogFile12_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgrGetStateLogFile12_user(_this, CLuaScriptMgrGetStateLogFile12_next);
         };
-        bool CLuaScriptMgrInitSDM14_wrapper(struct CLuaScriptMgr* _this)
+        static bool CLuaScriptMgrInitSDM14_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgrInitSDM14_user(_this, CLuaScriptMgrInitSDM14_next);
         };
-        struct CLuaScriptMgr* CLuaScriptMgrInstance16_wrapper()
+        static struct CLuaScriptMgr* CLuaScriptMgrInstance16_wrapper()
         {
            return CLuaScriptMgrInstance16_user(CLuaScriptMgrInstance16_next);
         };
-        void CLuaScriptMgrLogStack18_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
+        static void CLuaScriptMgrLogStack18_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
         {
            CLuaScriptMgrLogStack18_user(_this, pScript, CLuaScriptMgrLogStack18_next);
         };
-        void CLuaScriptMgrLoop20_wrapper(struct CLuaScriptMgr* _this)
+        static void CLuaScriptMgrLoop20_wrapper(struct CLuaScriptMgr* _this)
         {
            CLuaScriptMgrLoop20_user(_this, CLuaScriptMgrLoop20_next);
         };
-        struct CLuaCommandEx* CLuaScriptMgrNewCommandEx22_wrapper(struct CLuaScriptMgr* _this)
+        static struct CLuaCommandEx* CLuaScriptMgrNewCommandEx22_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgrNewCommandEx22_user(_this, CLuaScriptMgrNewCommandEx22_next);
         };
-        struct CLuaScript* CLuaScriptMgrNewScript24_wrapper(struct CLuaScriptMgr* _this)
+        static struct CLuaScript* CLuaScriptMgrNewScript24_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgrNewScript24_user(_this, CLuaScriptMgrNewScript24_next);
         };
-        void CLuaScriptMgrRemoveCommandEx26_wrapper(struct CLuaScriptMgr* _this, struct CLuaCommandEx* pCommand)
+        static void CLuaScriptMgrRemoveCommandEx26_wrapper(struct CLuaScriptMgr* _this, struct CLuaCommandEx* pCommand)
         {
            CLuaScriptMgrRemoveCommandEx26_user(_this, pCommand, CLuaScriptMgrRemoveCommandEx26_next);
         };
-        void CLuaScriptMgrRemoveScript28_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
+        static void CLuaScriptMgrRemoveScript28_wrapper(struct CLuaScriptMgr* _this, struct CLuaScript* pScript)
         {
            CLuaScriptMgrRemoveScript28_user(_this, pScript, CLuaScriptMgrRemoveScript28_next);
         };
-        struct CLuaScript* CLuaScriptMgrSearchScript30_wrapper(struct CLuaScriptMgr* _this, char* strFileName)
+        static struct CLuaScript* CLuaScriptMgrSearchScript30_wrapper(struct CLuaScriptMgr* _this, char* strFileName)
         {
            return CLuaScriptMgrSearchScript30_user(_this, strFileName, CLuaScriptMgrSearchScript30_next);
         };
-        struct CLuaScript* CLuaScriptMgrSearchScriptFromLuaState32_wrapper(struct CLuaScriptMgr* _this, lua_State* state)
+        static struct CLuaScript* CLuaScriptMgrSearchScriptFromLuaState32_wrapper(struct CLuaScriptMgr* _this, lua_State* state)
         {
            return CLuaScriptMgrSearchScriptFromLuaState32_user(_this, state, CLuaScriptMgrSearchScriptFromLuaState32_next);
         };
-        bool CLuaScriptMgr_Regist_Novus34_wrapper(struct CLuaScriptMgr* _this)
+        static bool CLuaScriptMgr_Regist_Novus34_wrapper(struct CLuaScriptMgr* _this)
         {
            return CLuaScriptMgr_Regist_Novus34_user(_this, CLuaScriptMgr_Regist_Novus34_next);
         };
-        void CLuaScriptMgrdtor_CLuaScriptMgr38_wrapper(struct CLuaScriptMgr* _this)
+        static void CLuaScriptMgrdtor_CLuaScriptMgr38_wrapper(struct CLuaScriptMgr* _this)
         {
            CLuaScriptMgrdtor_CLuaScriptMgr38_user(_this, CLuaScriptMgrdtor_CLuaScriptMgr38_next);
         };
         
-        hook_record CLuaScriptMgr_functions[] = {
+        static hook_record CLuaScriptMgr_functions[] = {
         {   (LPVOID)0x1403ffc00L,
             (LPVOID *)&CLuaScriptMgrAttachLuaScript2_user,
             (LPVOID *)&CLuaScriptMgrAttachLuaScript2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

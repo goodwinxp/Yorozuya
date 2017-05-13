@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAITimerctor_CAITimer2_ptr CAITimerctor_CAITimer2_next(nullptr);
-        info::CAITimerctor_CAITimer2_clbk CAITimerctor_CAITimer2_user(nullptr);
-        info::CAITimerCheck4_ptr CAITimerCheck4_next(nullptr);
-        info::CAITimerCheck4_clbk CAITimerCheck4_user(nullptr);
-        info::CAITimerInit6_ptr CAITimerInit6_next(nullptr);
-        info::CAITimerInit6_clbk CAITimerInit6_user(nullptr);
-        info::CAITimerSet8_ptr CAITimerSet8_next(nullptr);
-        info::CAITimerSet8_clbk CAITimerSet8_user(nullptr);
+        static info::CAITimerctor_CAITimer2_ptr CAITimerctor_CAITimer2_next(nullptr);
+        static info::CAITimerctor_CAITimer2_clbk CAITimerctor_CAITimer2_user(nullptr);
+        static info::CAITimerCheck4_ptr CAITimerCheck4_next(nullptr);
+        static info::CAITimerCheck4_clbk CAITimerCheck4_user(nullptr);
+        static info::CAITimerInit6_ptr CAITimerInit6_next(nullptr);
+        static info::CAITimerInit6_clbk CAITimerInit6_user(nullptr);
+        static info::CAITimerSet8_ptr CAITimerSet8_next(nullptr);
+        static info::CAITimerSet8_clbk CAITimerSet8_user(nullptr);
         
-        void CAITimerctor_CAITimer2_wrapper(struct CAITimer* _this)
+        static void CAITimerctor_CAITimer2_wrapper(struct CAITimer* _this)
         {
            CAITimerctor_CAITimer2_user(_this, CAITimerctor_CAITimer2_next);
         };
-        int CAITimerCheck4_wrapper(struct CAITimer* _this)
+        static int CAITimerCheck4_wrapper(struct CAITimer* _this)
         {
            return CAITimerCheck4_user(_this, CAITimerCheck4_next);
         };
-        void CAITimerInit6_wrapper(struct CAITimer* _this, unsigned int delay)
+        static void CAITimerInit6_wrapper(struct CAITimer* _this, unsigned int delay)
         {
            CAITimerInit6_user(_this, delay, CAITimerInit6_next);
         };
-        void CAITimerSet8_wrapper(struct CAITimer* _this, unsigned int delay)
+        static void CAITimerSet8_wrapper(struct CAITimer* _this, unsigned int delay)
         {
            CAITimerSet8_user(_this, delay, CAITimerSet8_next);
         };
         
-        hook_record CAITimer_functions[] = {
+        static hook_record CAITimer_functions[] = {
         {   (LPVOID)0x14012cbd0L,
             (LPVOID *)&CAITimerctor_CAITimer2_user,
             (LPVOID *)&CAITimerctor_CAITimer2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

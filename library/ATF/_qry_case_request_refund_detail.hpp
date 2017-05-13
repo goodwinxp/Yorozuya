@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_request_refundctor__qry_case_request_refund2_ptr _qry_case_request_refundctor__qry_case_request_refund2_next(nullptr);
-        info::_qry_case_request_refundctor__qry_case_request_refund2_clbk _qry_case_request_refundctor__qry_case_request_refund2_user(nullptr);
-        info::_qry_case_request_refundsize4_ptr _qry_case_request_refundsize4_next(nullptr);
-        info::_qry_case_request_refundsize4_clbk _qry_case_request_refundsize4_user(nullptr);
+        static info::_qry_case_request_refundctor__qry_case_request_refund2_ptr _qry_case_request_refundctor__qry_case_request_refund2_next(nullptr);
+        static info::_qry_case_request_refundctor__qry_case_request_refund2_clbk _qry_case_request_refundctor__qry_case_request_refund2_user(nullptr);
+        static info::_qry_case_request_refundsize4_ptr _qry_case_request_refundsize4_next(nullptr);
+        static info::_qry_case_request_refundsize4_clbk _qry_case_request_refundsize4_user(nullptr);
         
-        void _qry_case_request_refundctor__qry_case_request_refund2_wrapper(struct _qry_case_request_refund* _this, char byR, uint16_t wIdx, unsigned int dwS, uint64_t dwRef)
+        static void _qry_case_request_refundctor__qry_case_request_refund2_wrapper(struct _qry_case_request_refund* _this, char byR, uint16_t wIdx, unsigned int dwS, uint64_t dwRef)
         {
            _qry_case_request_refundctor__qry_case_request_refund2_user(_this, byR, wIdx, dwS, dwRef, _qry_case_request_refundctor__qry_case_request_refund2_next);
         };
-        int _qry_case_request_refundsize4_wrapper(struct _qry_case_request_refund* _this)
+        static int _qry_case_request_refundsize4_wrapper(struct _qry_case_request_refund* _this)
         {
            return _qry_case_request_refundsize4_user(_this, _qry_case_request_refundsize4_next);
         };
         
-        hook_record _qry_case_request_refund_functions[] = {
+        static hook_record _qry_case_request_refund_functions[] = {
         {   (LPVOID)0x1402b6560L,
             (LPVOID *)&_qry_case_request_refundctor__qry_case_request_refund2_user,
             (LPVOID *)&_qry_case_request_refundctor__qry_case_request_refund2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

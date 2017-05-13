@@ -10,123 +10,123 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CTimector_CTime1_ptr ATL__CTimector_CTime1_next(nullptr);
-            info::ATL__CTimector_CTime1_clbk ATL__CTimector_CTime1_user(nullptr);
-            info::ATL__CTimector_CTime2_ptr ATL__CTimector_CTime2_next(nullptr);
-            info::ATL__CTimector_CTime2_clbk ATL__CTimector_CTime2_user(nullptr);
-            info::ATL__CTimector_CTime3_ptr ATL__CTimector_CTime3_next(nullptr);
-            info::ATL__CTimector_CTime3_clbk ATL__CTimector_CTime3_user(nullptr);
-            info::ATL__CTimector_CTime4_ptr ATL__CTimector_CTime4_next(nullptr);
-            info::ATL__CTimector_CTime4_clbk ATL__CTimector_CTime4_user(nullptr);
-            info::ATL__CTimector_CTime5_ptr ATL__CTimector_CTime5_next(nullptr);
-            info::ATL__CTimector_CTime5_clbk ATL__CTimector_CTime5_user(nullptr);
-            info::ATL__CTimector_CTime6_ptr ATL__CTimector_CTime6_next(nullptr);
-            info::ATL__CTimector_CTime6_clbk ATL__CTimector_CTime6_user(nullptr);
-            info::ATL__CTimeGetAsSystemTime7_ptr ATL__CTimeGetAsSystemTime7_next(nullptr);
-            info::ATL__CTimeGetAsSystemTime7_clbk ATL__CTimeGetAsSystemTime7_user(nullptr);
-            info::ATL__CTimeGetDay8_ptr ATL__CTimeGetDay8_next(nullptr);
-            info::ATL__CTimeGetDay8_clbk ATL__CTimeGetDay8_user(nullptr);
-            info::ATL__CTimeGetDayOfWeek9_ptr ATL__CTimeGetDayOfWeek9_next(nullptr);
-            info::ATL__CTimeGetDayOfWeek9_clbk ATL__CTimeGetDayOfWeek9_user(nullptr);
-            info::ATL__CTimeGetGmtTm10_ptr ATL__CTimeGetGmtTm10_next(nullptr);
-            info::ATL__CTimeGetGmtTm10_clbk ATL__CTimeGetGmtTm10_user(nullptr);
-            info::ATL__CTimeGetHour11_ptr ATL__CTimeGetHour11_next(nullptr);
-            info::ATL__CTimeGetHour11_clbk ATL__CTimeGetHour11_user(nullptr);
-            info::ATL__CTimeGetLocalTm12_ptr ATL__CTimeGetLocalTm12_next(nullptr);
-            info::ATL__CTimeGetLocalTm12_clbk ATL__CTimeGetLocalTm12_user(nullptr);
-            info::ATL__CTimeGetMinute13_ptr ATL__CTimeGetMinute13_next(nullptr);
-            info::ATL__CTimeGetMinute13_clbk ATL__CTimeGetMinute13_user(nullptr);
-            info::ATL__CTimeGetMonth14_ptr ATL__CTimeGetMonth14_next(nullptr);
-            info::ATL__CTimeGetMonth14_clbk ATL__CTimeGetMonth14_user(nullptr);
-            info::ATL__CTimeGetSecond15_ptr ATL__CTimeGetSecond15_next(nullptr);
-            info::ATL__CTimeGetSecond15_clbk ATL__CTimeGetSecond15_user(nullptr);
-            info::ATL__CTimeGetTickCount16_ptr ATL__CTimeGetTickCount16_next(nullptr);
-            info::ATL__CTimeGetTickCount16_clbk ATL__CTimeGetTickCount16_user(nullptr);
-            info::ATL__CTimeGetTime17_ptr ATL__CTimeGetTime17_next(nullptr);
-            info::ATL__CTimeGetTime17_clbk ATL__CTimeGetTime17_user(nullptr);
-            info::ATL__CTimeGetYear18_ptr ATL__CTimeGetYear18_next(nullptr);
-            info::ATL__CTimeGetYear18_clbk ATL__CTimeGetYear18_user(nullptr);
-            info::ATL__CTimeIsValidFILETIME19_ptr ATL__CTimeIsValidFILETIME19_next(nullptr);
-            info::ATL__CTimeIsValidFILETIME19_clbk ATL__CTimeIsValidFILETIME19_user(nullptr);
+            static info::ATL__CTimector_CTime1_ptr ATL__CTimector_CTime1_next(nullptr);
+            static info::ATL__CTimector_CTime1_clbk ATL__CTimector_CTime1_user(nullptr);
+            static info::ATL__CTimector_CTime2_ptr ATL__CTimector_CTime2_next(nullptr);
+            static info::ATL__CTimector_CTime2_clbk ATL__CTimector_CTime2_user(nullptr);
+            static info::ATL__CTimector_CTime3_ptr ATL__CTimector_CTime3_next(nullptr);
+            static info::ATL__CTimector_CTime3_clbk ATL__CTimector_CTime3_user(nullptr);
+            static info::ATL__CTimector_CTime4_ptr ATL__CTimector_CTime4_next(nullptr);
+            static info::ATL__CTimector_CTime4_clbk ATL__CTimector_CTime4_user(nullptr);
+            static info::ATL__CTimector_CTime5_ptr ATL__CTimector_CTime5_next(nullptr);
+            static info::ATL__CTimector_CTime5_clbk ATL__CTimector_CTime5_user(nullptr);
+            static info::ATL__CTimector_CTime6_ptr ATL__CTimector_CTime6_next(nullptr);
+            static info::ATL__CTimector_CTime6_clbk ATL__CTimector_CTime6_user(nullptr);
+            static info::ATL__CTimeGetAsSystemTime7_ptr ATL__CTimeGetAsSystemTime7_next(nullptr);
+            static info::ATL__CTimeGetAsSystemTime7_clbk ATL__CTimeGetAsSystemTime7_user(nullptr);
+            static info::ATL__CTimeGetDay8_ptr ATL__CTimeGetDay8_next(nullptr);
+            static info::ATL__CTimeGetDay8_clbk ATL__CTimeGetDay8_user(nullptr);
+            static info::ATL__CTimeGetDayOfWeek9_ptr ATL__CTimeGetDayOfWeek9_next(nullptr);
+            static info::ATL__CTimeGetDayOfWeek9_clbk ATL__CTimeGetDayOfWeek9_user(nullptr);
+            static info::ATL__CTimeGetGmtTm10_ptr ATL__CTimeGetGmtTm10_next(nullptr);
+            static info::ATL__CTimeGetGmtTm10_clbk ATL__CTimeGetGmtTm10_user(nullptr);
+            static info::ATL__CTimeGetHour11_ptr ATL__CTimeGetHour11_next(nullptr);
+            static info::ATL__CTimeGetHour11_clbk ATL__CTimeGetHour11_user(nullptr);
+            static info::ATL__CTimeGetLocalTm12_ptr ATL__CTimeGetLocalTm12_next(nullptr);
+            static info::ATL__CTimeGetLocalTm12_clbk ATL__CTimeGetLocalTm12_user(nullptr);
+            static info::ATL__CTimeGetMinute13_ptr ATL__CTimeGetMinute13_next(nullptr);
+            static info::ATL__CTimeGetMinute13_clbk ATL__CTimeGetMinute13_user(nullptr);
+            static info::ATL__CTimeGetMonth14_ptr ATL__CTimeGetMonth14_next(nullptr);
+            static info::ATL__CTimeGetMonth14_clbk ATL__CTimeGetMonth14_user(nullptr);
+            static info::ATL__CTimeGetSecond15_ptr ATL__CTimeGetSecond15_next(nullptr);
+            static info::ATL__CTimeGetSecond15_clbk ATL__CTimeGetSecond15_user(nullptr);
+            static info::ATL__CTimeGetTickCount16_ptr ATL__CTimeGetTickCount16_next(nullptr);
+            static info::ATL__CTimeGetTickCount16_clbk ATL__CTimeGetTickCount16_user(nullptr);
+            static info::ATL__CTimeGetTime17_ptr ATL__CTimeGetTime17_next(nullptr);
+            static info::ATL__CTimeGetTime17_clbk ATL__CTimeGetTime17_user(nullptr);
+            static info::ATL__CTimeGetYear18_ptr ATL__CTimeGetYear18_next(nullptr);
+            static info::ATL__CTimeGetYear18_clbk ATL__CTimeGetYear18_user(nullptr);
+            static info::ATL__CTimeIsValidFILETIME19_ptr ATL__CTimeIsValidFILETIME19_next(nullptr);
+            static info::ATL__CTimeIsValidFILETIME19_clbk ATL__CTimeIsValidFILETIME19_user(nullptr);
             
-            void ATL__CTimector_CTime1_wrapper(struct ATL::CTime* _this, struct _FILETIME* fileTime, int nDST)
+            static void ATL__CTimector_CTime1_wrapper(struct ATL::CTime* _this, struct _FILETIME* fileTime, int nDST)
             {
                ATL__CTimector_CTime1_user(_this, fileTime, nDST, ATL__CTimector_CTime1_next);
             };
-            void ATL__CTimector_CTime2_wrapper(struct ATL::CTime* _this, struct _SYSTEMTIME* sysTime, int nDST)
+            static void ATL__CTimector_CTime2_wrapper(struct ATL::CTime* _this, struct _SYSTEMTIME* sysTime, int nDST)
             {
                ATL__CTimector_CTime2_user(_this, sysTime, nDST, ATL__CTimector_CTime2_next);
             };
-            void ATL__CTimector_CTime3_wrapper(struct ATL::CTime* _this, int64_t time)
+            static void ATL__CTimector_CTime3_wrapper(struct ATL::CTime* _this, int64_t time)
             {
                ATL__CTimector_CTime3_user(_this, time, ATL__CTimector_CTime3_next);
             };
-            void ATL__CTimector_CTime4_wrapper(struct ATL::CTime* _this, int nYear, int nMonth, int nDay, int nHour, int nMin, int nSec, int nDST)
+            static void ATL__CTimector_CTime4_wrapper(struct ATL::CTime* _this, int nYear, int nMonth, int nDay, int nHour, int nMin, int nSec, int nDST)
             {
                ATL__CTimector_CTime4_user(_this, nYear, nMonth, nDay, nHour, nMin, nSec, nDST, ATL__CTimector_CTime4_next);
             };
-            void ATL__CTimector_CTime5_wrapper(struct ATL::CTime* _this, uint16_t wDosDate, uint16_t wDosTime, int nDST)
+            static void ATL__CTimector_CTime5_wrapper(struct ATL::CTime* _this, uint16_t wDosDate, uint16_t wDosTime, int nDST)
             {
                ATL__CTimector_CTime5_user(_this, wDosDate, wDosTime, nDST, ATL__CTimector_CTime5_next);
             };
-            void ATL__CTimector_CTime6_wrapper(struct ATL::CTime* _this)
+            static void ATL__CTimector_CTime6_wrapper(struct ATL::CTime* _this)
             {
                ATL__CTimector_CTime6_user(_this, ATL__CTimector_CTime6_next);
             };
-            bool ATL__CTimeGetAsSystemTime7_wrapper(struct ATL::CTime* _this, struct _SYSTEMTIME* timeDest)
+            static bool ATL__CTimeGetAsSystemTime7_wrapper(struct ATL::CTime* _this, struct _SYSTEMTIME* timeDest)
             {
                return ATL__CTimeGetAsSystemTime7_user(_this, timeDest, ATL__CTimeGetAsSystemTime7_next);
             };
-            int ATL__CTimeGetDay8_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetDay8_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetDay8_user(_this, ATL__CTimeGetDay8_next);
             };
-            int ATL__CTimeGetDayOfWeek9_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetDayOfWeek9_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetDayOfWeek9_user(_this, ATL__CTimeGetDayOfWeek9_next);
             };
-            struct tm* ATL__CTimeGetGmtTm10_wrapper(struct ATL::CTime* _this, struct tm* ptm)
+            static struct tm* ATL__CTimeGetGmtTm10_wrapper(struct ATL::CTime* _this, struct tm* ptm)
             {
                return ATL__CTimeGetGmtTm10_user(_this, ptm, ATL__CTimeGetGmtTm10_next);
             };
-            int ATL__CTimeGetHour11_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetHour11_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetHour11_user(_this, ATL__CTimeGetHour11_next);
             };
-            struct tm* ATL__CTimeGetLocalTm12_wrapper(struct ATL::CTime* _this, struct tm* ptm)
+            static struct tm* ATL__CTimeGetLocalTm12_wrapper(struct ATL::CTime* _this, struct tm* ptm)
             {
                return ATL__CTimeGetLocalTm12_user(_this, ptm, ATL__CTimeGetLocalTm12_next);
             };
-            int ATL__CTimeGetMinute13_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetMinute13_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetMinute13_user(_this, ATL__CTimeGetMinute13_next);
             };
-            int ATL__CTimeGetMonth14_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetMonth14_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetMonth14_user(_this, ATL__CTimeGetMonth14_next);
             };
-            int ATL__CTimeGetSecond15_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetSecond15_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetSecond15_user(_this, ATL__CTimeGetSecond15_next);
             };
-            struct ATL::CTime* ATL__CTimeGetTickCount16_wrapper(struct ATL::CTime* result)
+            static struct ATL::CTime* ATL__CTimeGetTickCount16_wrapper(struct ATL::CTime* result)
             {
                return ATL__CTimeGetTickCount16_user(result, ATL__CTimeGetTickCount16_next);
             };
-            int64_t ATL__CTimeGetTime17_wrapper(struct ATL::CTime* _this)
+            static int64_t ATL__CTimeGetTime17_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetTime17_user(_this, ATL__CTimeGetTime17_next);
             };
-            int ATL__CTimeGetYear18_wrapper(struct ATL::CTime* _this)
+            static int ATL__CTimeGetYear18_wrapper(struct ATL::CTime* _this)
             {
                return ATL__CTimeGetYear18_user(_this, ATL__CTimeGetYear18_next);
             };
-            int ATL__CTimeIsValidFILETIME19_wrapper(struct _FILETIME* fileTime)
+            static int ATL__CTimeIsValidFILETIME19_wrapper(struct _FILETIME* fileTime)
             {
                return ATL__CTimeIsValidFILETIME19_user(fileTime, ATL__CTimeIsValidFILETIME19_next);
             };
             
-            hook_record CTime_functions[] = {
+            static hook_record CTime_functions[] = {
             {   (LPVOID)0x140672cf0L,
                 (LPVOID *)&ATL__CTimector_CTime1_user,
                 (LPVOID *)&ATL__CTimector_CTime1_next,
@@ -225,6 +225,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

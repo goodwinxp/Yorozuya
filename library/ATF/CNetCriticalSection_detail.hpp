@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetCriticalSectionctor_CNetCriticalSection2_ptr CNetCriticalSectionctor_CNetCriticalSection2_next(nullptr);
-        info::CNetCriticalSectionctor_CNetCriticalSection2_clbk CNetCriticalSectionctor_CNetCriticalSection2_user(nullptr);
-        info::CNetCriticalSectionLock4_ptr CNetCriticalSectionLock4_next(nullptr);
-        info::CNetCriticalSectionLock4_clbk CNetCriticalSectionLock4_user(nullptr);
-        info::CNetCriticalSectionUnlock6_ptr CNetCriticalSectionUnlock6_next(nullptr);
-        info::CNetCriticalSectionUnlock6_clbk CNetCriticalSectionUnlock6_user(nullptr);
-        info::CNetCriticalSectiondtor_CNetCriticalSection10_ptr CNetCriticalSectiondtor_CNetCriticalSection10_next(nullptr);
-        info::CNetCriticalSectiondtor_CNetCriticalSection10_clbk CNetCriticalSectiondtor_CNetCriticalSection10_user(nullptr);
+        static info::CNetCriticalSectionctor_CNetCriticalSection2_ptr CNetCriticalSectionctor_CNetCriticalSection2_next(nullptr);
+        static info::CNetCriticalSectionctor_CNetCriticalSection2_clbk CNetCriticalSectionctor_CNetCriticalSection2_user(nullptr);
+        static info::CNetCriticalSectionLock4_ptr CNetCriticalSectionLock4_next(nullptr);
+        static info::CNetCriticalSectionLock4_clbk CNetCriticalSectionLock4_user(nullptr);
+        static info::CNetCriticalSectionUnlock6_ptr CNetCriticalSectionUnlock6_next(nullptr);
+        static info::CNetCriticalSectionUnlock6_clbk CNetCriticalSectionUnlock6_user(nullptr);
+        static info::CNetCriticalSectiondtor_CNetCriticalSection10_ptr CNetCriticalSectiondtor_CNetCriticalSection10_next(nullptr);
+        static info::CNetCriticalSectiondtor_CNetCriticalSection10_clbk CNetCriticalSectiondtor_CNetCriticalSection10_user(nullptr);
         
-        void CNetCriticalSectionctor_CNetCriticalSection2_wrapper(struct CNetCriticalSection* _this)
+        static void CNetCriticalSectionctor_CNetCriticalSection2_wrapper(struct CNetCriticalSection* _this)
         {
            CNetCriticalSectionctor_CNetCriticalSection2_user(_this, CNetCriticalSectionctor_CNetCriticalSection2_next);
         };
-        void CNetCriticalSectionLock4_wrapper(struct CNetCriticalSection* _this)
+        static void CNetCriticalSectionLock4_wrapper(struct CNetCriticalSection* _this)
         {
            CNetCriticalSectionLock4_user(_this, CNetCriticalSectionLock4_next);
         };
-        void CNetCriticalSectionUnlock6_wrapper(struct CNetCriticalSection* _this)
+        static void CNetCriticalSectionUnlock6_wrapper(struct CNetCriticalSection* _this)
         {
            CNetCriticalSectionUnlock6_user(_this, CNetCriticalSectionUnlock6_next);
         };
-        void CNetCriticalSectiondtor_CNetCriticalSection10_wrapper(struct CNetCriticalSection* _this)
+        static void CNetCriticalSectiondtor_CNetCriticalSection10_wrapper(struct CNetCriticalSection* _this)
         {
            CNetCriticalSectiondtor_CNetCriticalSection10_user(_this, CNetCriticalSectiondtor_CNetCriticalSection10_next);
         };
         
-        hook_record CNetCriticalSection_functions[] = {
+        static hook_record CNetCriticalSection_functions[] = {
         {   (LPVOID)0x140073230L,
             (LPVOID *)&CNetCriticalSectionctor_CNetCriticalSection2_user,
             (LPVOID *)&CNetCriticalSectionctor_CNetCriticalSection2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

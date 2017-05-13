@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_ptr CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_next(nullptr);
-        info::CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_clbk CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_user(nullptr);
-        info::CUnmannedTraderRequestLimiterClearRequset4_ptr CUnmannedTraderRequestLimiterClearRequset4_next(nullptr);
-        info::CUnmannedTraderRequestLimiterClearRequset4_clbk CUnmannedTraderRequestLimiterClearRequset4_user(nullptr);
-        info::CUnmannedTraderRequestLimiterIsEmpty6_ptr CUnmannedTraderRequestLimiterIsEmpty6_next(nullptr);
-        info::CUnmannedTraderRequestLimiterIsEmpty6_clbk CUnmannedTraderRequestLimiterIsEmpty6_user(nullptr);
-        info::CUnmannedTraderRequestLimiterSetRequest8_ptr CUnmannedTraderRequestLimiterSetRequest8_next(nullptr);
-        info::CUnmannedTraderRequestLimiterSetRequest8_clbk CUnmannedTraderRequestLimiterSetRequest8_user(nullptr);
-        info::CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_ptr CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_next(nullptr);
-        info::CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_clbk CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_user(nullptr);
+        static info::CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_ptr CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_next(nullptr);
+        static info::CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_clbk CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_user(nullptr);
+        static info::CUnmannedTraderRequestLimiterClearRequset4_ptr CUnmannedTraderRequestLimiterClearRequset4_next(nullptr);
+        static info::CUnmannedTraderRequestLimiterClearRequset4_clbk CUnmannedTraderRequestLimiterClearRequset4_user(nullptr);
+        static info::CUnmannedTraderRequestLimiterIsEmpty6_ptr CUnmannedTraderRequestLimiterIsEmpty6_next(nullptr);
+        static info::CUnmannedTraderRequestLimiterIsEmpty6_clbk CUnmannedTraderRequestLimiterIsEmpty6_user(nullptr);
+        static info::CUnmannedTraderRequestLimiterSetRequest8_ptr CUnmannedTraderRequestLimiterSetRequest8_next(nullptr);
+        static info::CUnmannedTraderRequestLimiterSetRequest8_clbk CUnmannedTraderRequestLimiterSetRequest8_user(nullptr);
+        static info::CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_ptr CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_next(nullptr);
+        static info::CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_clbk CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_user(nullptr);
         
-        void CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_wrapper(struct CUnmannedTraderRequestLimiter* _this)
+        static void CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_wrapper(struct CUnmannedTraderRequestLimiter* _this)
         {
            CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_user(_this, CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_next);
         };
-        void CUnmannedTraderRequestLimiterClearRequset4_wrapper(struct CUnmannedTraderRequestLimiter* _this)
+        static void CUnmannedTraderRequestLimiterClearRequset4_wrapper(struct CUnmannedTraderRequestLimiter* _this)
         {
            CUnmannedTraderRequestLimiterClearRequset4_user(_this, CUnmannedTraderRequestLimiterClearRequset4_next);
         };
-        bool CUnmannedTraderRequestLimiterIsEmpty6_wrapper(struct CUnmannedTraderRequestLimiter* _this)
+        static bool CUnmannedTraderRequestLimiterIsEmpty6_wrapper(struct CUnmannedTraderRequestLimiter* _this)
         {
            return CUnmannedTraderRequestLimiterIsEmpty6_user(_this, CUnmannedTraderRequestLimiterIsEmpty6_next);
         };
-        void CUnmannedTraderRequestLimiterSetRequest8_wrapper(struct CUnmannedTraderRequestLimiter* _this, int iRequest)
+        static void CUnmannedTraderRequestLimiterSetRequest8_wrapper(struct CUnmannedTraderRequestLimiter* _this, int iRequest)
         {
            CUnmannedTraderRequestLimiterSetRequest8_user(_this, iRequest, CUnmannedTraderRequestLimiterSetRequest8_next);
         };
-        void CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_wrapper(struct CUnmannedTraderRequestLimiter* _this)
+        static void CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_wrapper(struct CUnmannedTraderRequestLimiter* _this)
         {
            CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_user(_this, CUnmannedTraderRequestLimiterdtor_CUnmannedTraderRequestLimiter10_next);
         };
         
-        hook_record CUnmannedTraderRequestLimiter_functions[] = {
+        static hook_record CUnmannedTraderRequestLimiter_functions[] = {
         {   (LPVOID)0x14035f1f0L,
             (LPVOID *)&CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_user,
             (LPVOID *)&CUnmannedTraderRequestLimiterctor_CUnmannedTraderRequestLimiter2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

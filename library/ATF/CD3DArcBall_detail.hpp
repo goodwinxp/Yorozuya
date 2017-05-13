@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CD3DArcBallctor_CD3DArcBall1_ptr CD3DArcBallctor_CD3DArcBall1_next(nullptr);
-        info::CD3DArcBallctor_CD3DArcBall1_clbk CD3DArcBallctor_CD3DArcBall1_user(nullptr);
-        info::CD3DArcBallHandleMouseMessages2_ptr CD3DArcBallHandleMouseMessages2_next(nullptr);
-        info::CD3DArcBallHandleMouseMessages2_clbk CD3DArcBallHandleMouseMessages2_user(nullptr);
-        info::CD3DArcBallScreenToVector3_ptr CD3DArcBallScreenToVector3_next(nullptr);
-        info::CD3DArcBallScreenToVector3_clbk CD3DArcBallScreenToVector3_user(nullptr);
-        info::CD3DArcBallSetRadius4_ptr CD3DArcBallSetRadius4_next(nullptr);
-        info::CD3DArcBallSetRadius4_clbk CD3DArcBallSetRadius4_user(nullptr);
-        info::CD3DArcBallSetWindow5_ptr CD3DArcBallSetWindow5_next(nullptr);
-        info::CD3DArcBallSetWindow5_clbk CD3DArcBallSetWindow5_user(nullptr);
+        static info::CD3DArcBallctor_CD3DArcBall1_ptr CD3DArcBallctor_CD3DArcBall1_next(nullptr);
+        static info::CD3DArcBallctor_CD3DArcBall1_clbk CD3DArcBallctor_CD3DArcBall1_user(nullptr);
+        static info::CD3DArcBallHandleMouseMessages2_ptr CD3DArcBallHandleMouseMessages2_next(nullptr);
+        static info::CD3DArcBallHandleMouseMessages2_clbk CD3DArcBallHandleMouseMessages2_user(nullptr);
+        static info::CD3DArcBallScreenToVector3_ptr CD3DArcBallScreenToVector3_next(nullptr);
+        static info::CD3DArcBallScreenToVector3_clbk CD3DArcBallScreenToVector3_user(nullptr);
+        static info::CD3DArcBallSetRadius4_ptr CD3DArcBallSetRadius4_next(nullptr);
+        static info::CD3DArcBallSetRadius4_clbk CD3DArcBallSetRadius4_user(nullptr);
+        static info::CD3DArcBallSetWindow5_ptr CD3DArcBallSetWindow5_next(nullptr);
+        static info::CD3DArcBallSetWindow5_clbk CD3DArcBallSetWindow5_user(nullptr);
         
-        int64_t CD3DArcBallctor_CD3DArcBall1_wrapper(struct CD3DArcBall* _this)
+        static int64_t CD3DArcBallctor_CD3DArcBall1_wrapper(struct CD3DArcBall* _this)
         {
            return CD3DArcBallctor_CD3DArcBall1_user(_this, CD3DArcBallctor_CD3DArcBall1_next);
         };
-        int64_t CD3DArcBallHandleMouseMessages2_wrapper(struct CD3DArcBall* _this, HWND arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
+        static int64_t CD3DArcBallHandleMouseMessages2_wrapper(struct CD3DArcBall* _this, HWND arg_0, unsigned int arg_1, uint64_t arg_2, int64_t arg_3)
         {
            return CD3DArcBallHandleMouseMessages2_user(_this, arg_0, arg_1, arg_2, arg_3, CD3DArcBallHandleMouseMessages2_next);
         };
-        struct D3DXVECTOR3* CD3DArcBallScreenToVector3_wrapper(struct CD3DArcBall* _this, short retstr, struct D3DXVECTOR3* arg_0, int arg_1)
+        static struct D3DXVECTOR3* CD3DArcBallScreenToVector3_wrapper(struct CD3DArcBall* _this, short retstr, struct D3DXVECTOR3* arg_0, int arg_1)
         {
            return CD3DArcBallScreenToVector3_user(_this, retstr, arg_0, arg_1, CD3DArcBallScreenToVector3_next);
         };
-        void CD3DArcBallSetRadius4_wrapper(struct CD3DArcBall* _this, float arg_0)
+        static void CD3DArcBallSetRadius4_wrapper(struct CD3DArcBall* _this, float arg_0)
         {
            CD3DArcBallSetRadius4_user(_this, arg_0, CD3DArcBallSetRadius4_next);
         };
-        void CD3DArcBallSetWindow5_wrapper(struct CD3DArcBall* _this, int arg_0, int arg_1, float arg_2)
+        static void CD3DArcBallSetWindow5_wrapper(struct CD3DArcBall* _this, int arg_0, int arg_1, float arg_2)
         {
            CD3DArcBallSetWindow5_user(_this, arg_0, arg_1, arg_2, CD3DArcBallSetWindow5_next);
         };
         
-        hook_record CD3DArcBall_functions[] = {
+        static hook_record CD3DArcBall_functions[] = {
         {   (LPVOID)0x14052c210L,
             (LPVOID *)&CD3DArcBallctor_CD3DArcBall1_user,
             (LPVOID *)&CD3DArcBallctor_CD3DArcBall1_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

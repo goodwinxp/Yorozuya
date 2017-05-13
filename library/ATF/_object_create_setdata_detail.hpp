@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_object_create_setdatactor__object_create_setdata2_ptr _object_create_setdatactor__object_create_setdata2_next(nullptr);
-        info::_object_create_setdatactor__object_create_setdata2_clbk _object_create_setdatactor__object_create_setdata2_user(nullptr);
+        static info::_object_create_setdatactor__object_create_setdata2_ptr _object_create_setdatactor__object_create_setdata2_next(nullptr);
+        static info::_object_create_setdatactor__object_create_setdata2_clbk _object_create_setdatactor__object_create_setdata2_user(nullptr);
         
-        void _object_create_setdatactor__object_create_setdata2_wrapper(struct _object_create_setdata* _this)
+        static void _object_create_setdatactor__object_create_setdata2_wrapper(struct _object_create_setdata* _this)
         {
            _object_create_setdatactor__object_create_setdata2_user(_this, _object_create_setdatactor__object_create_setdata2_next);
         };
         
-        hook_record _object_create_setdata_functions[] = {
+        static hook_record _object_create_setdata_functions[] = {
         {   (LPVOID)0x140078e70L,
             (LPVOID *)&_object_create_setdatactor__object_create_setdata2_user,
             (LPVOID *)&_object_create_setdatactor__object_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

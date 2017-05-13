@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_ptr _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_next(nullptr);
-        info::_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_clbk _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_user(nullptr);
+        static info::_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_ptr _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_next(nullptr);
+        static info::_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_clbk _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_user(nullptr);
         
-        void _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_wrapper(struct _worlddb_potion_delay_info* _this)
+        static void _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_wrapper(struct _worlddb_potion_delay_info* _this)
         {
            _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_user(_this, _worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_next);
         };
         
-        hook_record _worlddb_potion_delay_info_functions[] = {
+        static hook_record _worlddb_potion_delay_info_functions[] = {
         {   (LPVOID)0x1401bf480L,
             (LPVOID *)&_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_user,
             (LPVOID *)&_worlddb_potion_delay_infoctor__worlddb_potion_delay_info2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_mastery_up_datactor__mastery_up_data2_ptr _mastery_up_datactor__mastery_up_data2_next(nullptr);
-        info::_mastery_up_datactor__mastery_up_data2_clbk _mastery_up_datactor__mastery_up_data2_user(nullptr);
-        info::_mastery_up_datainit4_ptr _mastery_up_datainit4_next(nullptr);
-        info::_mastery_up_datainit4_clbk _mastery_up_datainit4_user(nullptr);
-        info::_mastery_up_dataset6_ptr _mastery_up_dataset6_next(nullptr);
-        info::_mastery_up_dataset6_clbk _mastery_up_dataset6_user(nullptr);
+        static info::_mastery_up_datactor__mastery_up_data2_ptr _mastery_up_datactor__mastery_up_data2_next(nullptr);
+        static info::_mastery_up_datactor__mastery_up_data2_clbk _mastery_up_datactor__mastery_up_data2_user(nullptr);
+        static info::_mastery_up_datainit4_ptr _mastery_up_datainit4_next(nullptr);
+        static info::_mastery_up_datainit4_clbk _mastery_up_datainit4_user(nullptr);
+        static info::_mastery_up_dataset6_ptr _mastery_up_dataset6_next(nullptr);
+        static info::_mastery_up_dataset6_clbk _mastery_up_dataset6_user(nullptr);
         
-        void _mastery_up_datactor__mastery_up_data2_wrapper(struct _mastery_up_data* _this)
+        static void _mastery_up_datactor__mastery_up_data2_wrapper(struct _mastery_up_data* _this)
         {
            _mastery_up_datactor__mastery_up_data2_user(_this, _mastery_up_datactor__mastery_up_data2_next);
         };
-        void _mastery_up_datainit4_wrapper(struct _mastery_up_data* _this)
+        static void _mastery_up_datainit4_wrapper(struct _mastery_up_data* _this)
         {
            _mastery_up_datainit4_user(_this, _mastery_up_datainit4_next);
         };
-        void _mastery_up_dataset6_wrapper(struct _mastery_up_data* _this, char code, char index, char mastery)
+        static void _mastery_up_dataset6_wrapper(struct _mastery_up_data* _this, char code, char index, char mastery)
         {
            _mastery_up_dataset6_user(_this, code, index, mastery, _mastery_up_dataset6_next);
         };
         
-        hook_record _mastery_up_data_functions[] = {
+        static hook_record _mastery_up_data_functions[] = {
         {   (LPVOID)0x140074690L,
             (LPVOID *)&_mastery_up_datactor__mastery_up_data2_user,
             (LPVOID *)&_mastery_up_datactor__mastery_up_data2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

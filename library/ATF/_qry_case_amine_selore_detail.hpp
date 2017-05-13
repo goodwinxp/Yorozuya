@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_selorector__qry_case_amine_selore2_ptr _qry_case_amine_selorector__qry_case_amine_selore2_next(nullptr);
-        info::_qry_case_amine_selorector__qry_case_amine_selore2_clbk _qry_case_amine_selorector__qry_case_amine_selore2_user(nullptr);
-        info::_qry_case_amine_seloresize4_ptr _qry_case_amine_seloresize4_next(nullptr);
-        info::_qry_case_amine_seloresize4_clbk _qry_case_amine_seloresize4_user(nullptr);
+        static info::_qry_case_amine_selorector__qry_case_amine_selore2_ptr _qry_case_amine_selorector__qry_case_amine_selore2_next(nullptr);
+        static info::_qry_case_amine_selorector__qry_case_amine_selore2_clbk _qry_case_amine_selorector__qry_case_amine_selore2_user(nullptr);
+        static info::_qry_case_amine_seloresize4_ptr _qry_case_amine_seloresize4_next(nullptr);
+        static info::_qry_case_amine_seloresize4_clbk _qry_case_amine_seloresize4_user(nullptr);
         
-        void _qry_case_amine_selorector__qry_case_amine_selore2_wrapper(struct _qry_case_amine_selore* _this)
+        static void _qry_case_amine_selorector__qry_case_amine_selore2_wrapper(struct _qry_case_amine_selore* _this)
         {
            _qry_case_amine_selorector__qry_case_amine_selore2_user(_this, _qry_case_amine_selorector__qry_case_amine_selore2_next);
         };
-        int _qry_case_amine_seloresize4_wrapper(struct _qry_case_amine_selore* _this)
+        static int _qry_case_amine_seloresize4_wrapper(struct _qry_case_amine_selore* _this)
         {
            return _qry_case_amine_seloresize4_user(_this, _qry_case_amine_seloresize4_next);
         };
         
-        hook_record _qry_case_amine_selore_functions[] = {
+        static hook_record _qry_case_amine_selore_functions[] = {
         {   (LPVOID)0x1402d43b0L,
             (LPVOID *)&_qry_case_amine_selorector__qry_case_amine_selore2_user,
             (LPVOID *)&_qry_case_amine_selorector__qry_case_amine_selore2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

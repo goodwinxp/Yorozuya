@@ -8,43 +8,43 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_ptr _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_next(nullptr);
-        info::_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_clbk _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_user(nullptr);
+        static info::_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_ptr _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_next(nullptr);
+        static info::_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_clbk _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_user(nullptr);
         
-        info::_combine_ex_item_result_zocl____itemInit2_ptr _combine_ex_item_result_zocl____itemInit2_next(nullptr);
-        info::_combine_ex_item_result_zocl____itemInit2_clbk _combine_ex_item_result_zocl____itemInit2_user(nullptr);
-        info::_combine_ex_item_result_zocl____itemctor___item4_ptr _combine_ex_item_result_zocl____itemctor___item4_next(nullptr);
-        info::_combine_ex_item_result_zocl____itemctor___item4_clbk _combine_ex_item_result_zocl____itemctor___item4_user(nullptr);
+        static info::_combine_ex_item_result_zocl____itemInit2_ptr _combine_ex_item_result_zocl____itemInit2_next(nullptr);
+        static info::_combine_ex_item_result_zocl____itemInit2_clbk _combine_ex_item_result_zocl____itemInit2_user(nullptr);
+        static info::_combine_ex_item_result_zocl____itemctor___item4_ptr _combine_ex_item_result_zocl____itemctor___item4_next(nullptr);
+        static info::_combine_ex_item_result_zocl____itemctor___item4_clbk _combine_ex_item_result_zocl____itemctor___item4_user(nullptr);
         
-        info::_combine_ex_item_result_zocl___Result_ItemList_BuffInit2_ptr _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_next(nullptr);
-        info::_combine_ex_item_result_zocl___Result_ItemList_BuffInit2_clbk _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_user(nullptr);
-        info::_combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_ptr _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_next(nullptr);
-        info::_combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_clbk _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_user(nullptr);
+        static info::_combine_ex_item_result_zocl___Result_ItemList_BuffInit2_ptr _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_next(nullptr);
+        static info::_combine_ex_item_result_zocl___Result_ItemList_BuffInit2_clbk _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_user(nullptr);
+        static info::_combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_ptr _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_next(nullptr);
+        static info::_combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_clbk _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_user(nullptr);
         
-        void _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_wrapper(struct _combine_ex_item_result_zocl* _this)
+        static void _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_wrapper(struct _combine_ex_item_result_zocl* _this)
         {
            _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_user(_this, _combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_next);
         };
         
-        void _combine_ex_item_result_zocl____itemInit2_wrapper(struct _combine_ex_item_result_zocl::__item* _this)
+        static void _combine_ex_item_result_zocl____itemInit2_wrapper(struct _combine_ex_item_result_zocl::__item* _this)
         {
            _combine_ex_item_result_zocl____itemInit2_user(_this, _combine_ex_item_result_zocl____itemInit2_next);
         };
-        void _combine_ex_item_result_zocl____itemctor___item4_wrapper(struct _combine_ex_item_result_zocl::__item* _this)
+        static void _combine_ex_item_result_zocl____itemctor___item4_wrapper(struct _combine_ex_item_result_zocl::__item* _this)
         {
            _combine_ex_item_result_zocl____itemctor___item4_user(_this, _combine_ex_item_result_zocl____itemctor___item4_next);
         };
         
-        void _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_wrapper(struct _combine_ex_item_result_zocl::_Result_ItemList_Buff* _this)
+        static void _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_wrapper(struct _combine_ex_item_result_zocl::_Result_ItemList_Buff* _this)
         {
            _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_user(_this, _combine_ex_item_result_zocl___Result_ItemList_BuffInit2_next);
         };
-        void _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_wrapper(struct _combine_ex_item_result_zocl::_Result_ItemList_Buff* _this)
+        static void _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_wrapper(struct _combine_ex_item_result_zocl::_Result_ItemList_Buff* _this)
         {
            _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_user(_this, _combine_ex_item_result_zocl___Result_ItemList_Buffctor__Result_ItemList_Buff4_next);
         };
         
-        hook_record _combine_ex_item_result_zocl_functions[] = {
+        static hook_record _combine_ex_item_result_zocl_functions[] = {
         {   (LPVOID)0x1400b82b0L,
             (LPVOID *)&_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_user,
             (LPVOID *)&_combine_ex_item_result_zoclctor__combine_ex_item_result_zocl2_next,
@@ -75,5 +75,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

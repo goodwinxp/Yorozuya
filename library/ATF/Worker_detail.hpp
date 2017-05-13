@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::WorkerInitialize2_ptr WorkerInitialize2_next(nullptr);
-        info::WorkerInitialize2_clbk WorkerInitialize2_user(nullptr);
-        info::WorkerStart4_ptr WorkerStart4_next(nullptr);
-        info::WorkerStart4_clbk WorkerStart4_user(nullptr);
-        info::WorkerStop6_ptr WorkerStop6_next(nullptr);
-        info::WorkerStop6_clbk WorkerStop6_user(nullptr);
-        info::Workerctor_Worker8_ptr Workerctor_Worker8_next(nullptr);
-        info::Workerctor_Worker8_clbk Workerctor_Worker8_user(nullptr);
-        info::Workers_loop13_ptr Workers_loop13_next(nullptr);
-        info::Workers_loop13_clbk Workers_loop13_user(nullptr);
-        info::Workerdtor_Worker15_ptr Workerdtor_Worker15_next(nullptr);
-        info::Workerdtor_Worker15_clbk Workerdtor_Worker15_user(nullptr);
+        static info::WorkerInitialize2_ptr WorkerInitialize2_next(nullptr);
+        static info::WorkerInitialize2_clbk WorkerInitialize2_user(nullptr);
+        static info::WorkerStart4_ptr WorkerStart4_next(nullptr);
+        static info::WorkerStart4_clbk WorkerStart4_user(nullptr);
+        static info::WorkerStop6_ptr WorkerStop6_next(nullptr);
+        static info::WorkerStop6_clbk WorkerStop6_user(nullptr);
+        static info::Workerctor_Worker8_ptr Workerctor_Worker8_next(nullptr);
+        static info::Workerctor_Worker8_clbk Workerctor_Worker8_user(nullptr);
+        static info::Workers_loop13_ptr Workers_loop13_next(nullptr);
+        static info::Workers_loop13_clbk Workers_loop13_user(nullptr);
+        static info::Workerdtor_Worker15_ptr Workerdtor_Worker15_next(nullptr);
+        static info::Workerdtor_Worker15_clbk Workerdtor_Worker15_user(nullptr);
         
-        bool WorkerInitialize2_wrapper(struct Worker* _this, int nLoop, int nTerm)
+        static bool WorkerInitialize2_wrapper(struct Worker* _this, int nLoop, int nTerm)
         {
            return WorkerInitialize2_user(_this, nLoop, nTerm, WorkerInitialize2_next);
         };
-        void WorkerStart4_wrapper(struct Worker* _this)
+        static void WorkerStart4_wrapper(struct Worker* _this)
         {
            WorkerStart4_user(_this, WorkerStart4_next);
         };
-        void WorkerStop6_wrapper(struct Worker* _this)
+        static void WorkerStop6_wrapper(struct Worker* _this)
         {
            WorkerStop6_user(_this, WorkerStop6_next);
         };
-        void Workerctor_Worker8_wrapper(struct Worker* _this, char* pWorkerName, int nMaxTskNum, int nMaxTskBufSize)
+        static void Workerctor_Worker8_wrapper(struct Worker* _this, char* pWorkerName, int nMaxTskNum, int nMaxTskBufSize)
         {
            Workerctor_Worker8_user(_this, pWorkerName, nMaxTskNum, nMaxTskBufSize, Workerctor_Worker8_next);
         };
-        void Workers_loop13_wrapper(void* pArg)
+        static void Workers_loop13_wrapper(void* pArg)
         {
            Workers_loop13_user(pArg, Workers_loop13_next);
         };
-        void Workerdtor_Worker15_wrapper(struct Worker* _this)
+        static void Workerdtor_Worker15_wrapper(struct Worker* _this)
         {
            Workerdtor_Worker15_user(_this, Workerdtor_Worker15_next);
         };
         
-        hook_record Worker_functions[] = {
+        static hook_record Worker_functions[] = {
         {   (LPVOID)0x1403182f0L,
             (LPVOID *)&WorkerInitialize2_user,
             (LPVOID *)&WorkerInitialize2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

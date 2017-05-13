@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCashDbWorkerGBctor_CCashDbWorkerGB2_ptr CCashDbWorkerGBctor_CCashDbWorkerGB2_next(nullptr);
-        info::CCashDbWorkerGBctor_CCashDbWorkerGB2_clbk CCashDbWorkerGBctor_CCashDbWorkerGB2_user(nullptr);
-        info::CCashDbWorkerGBCompleteWork4_ptr CCashDbWorkerGBCompleteWork4_next(nullptr);
-        info::CCashDbWorkerGBCompleteWork4_clbk CCashDbWorkerGBCompleteWork4_user(nullptr);
-        info::CCashDbWorkerGBDoWork6_ptr CCashDbWorkerGBDoWork6_next(nullptr);
-        info::CCashDbWorkerGBDoWork6_clbk CCashDbWorkerGBDoWork6_user(nullptr);
-        info::CCashDbWorkerGBGetUseCashQueryStr8_ptr CCashDbWorkerGBGetUseCashQueryStr8_next(nullptr);
-        info::CCashDbWorkerGBGetUseCashQueryStr8_clbk CCashDbWorkerGBGetUseCashQueryStr8_user(nullptr);
-        info::CCashDbWorkerGBInitialize10_ptr CCashDbWorkerGBInitialize10_next(nullptr);
-        info::CCashDbWorkerGBInitialize10_clbk CCashDbWorkerGBInitialize10_user(nullptr);
-        info::CCashDbWorkerGBRelease12_ptr CCashDbWorkerGBRelease12_next(nullptr);
-        info::CCashDbWorkerGBRelease12_clbk CCashDbWorkerGBRelease12_user(nullptr);
-        info::CCashDbWorkerGB_init_database14_ptr CCashDbWorkerGB_init_database14_next(nullptr);
-        info::CCashDbWorkerGB_init_database14_clbk CCashDbWorkerGB_init_database14_user(nullptr);
-        info::CCashDbWorkerGB_wait_tsk_cash_select16_ptr CCashDbWorkerGB_wait_tsk_cash_select16_next(nullptr);
-        info::CCashDbWorkerGB_wait_tsk_cash_select16_clbk CCashDbWorkerGB_wait_tsk_cash_select16_user(nullptr);
-        info::CCashDbWorkerGB_wait_tsk_cash_update18_ptr CCashDbWorkerGB_wait_tsk_cash_update18_next(nullptr);
-        info::CCashDbWorkerGB_wait_tsk_cash_update18_clbk CCashDbWorkerGB_wait_tsk_cash_update18_user(nullptr);
-        info::CCashDbWorkerGBdtor_CCashDbWorkerGB23_ptr CCashDbWorkerGBdtor_CCashDbWorkerGB23_next(nullptr);
-        info::CCashDbWorkerGBdtor_CCashDbWorkerGB23_clbk CCashDbWorkerGBdtor_CCashDbWorkerGB23_user(nullptr);
+        static info::CCashDbWorkerGBctor_CCashDbWorkerGB2_ptr CCashDbWorkerGBctor_CCashDbWorkerGB2_next(nullptr);
+        static info::CCashDbWorkerGBctor_CCashDbWorkerGB2_clbk CCashDbWorkerGBctor_CCashDbWorkerGB2_user(nullptr);
+        static info::CCashDbWorkerGBCompleteWork4_ptr CCashDbWorkerGBCompleteWork4_next(nullptr);
+        static info::CCashDbWorkerGBCompleteWork4_clbk CCashDbWorkerGBCompleteWork4_user(nullptr);
+        static info::CCashDbWorkerGBDoWork6_ptr CCashDbWorkerGBDoWork6_next(nullptr);
+        static info::CCashDbWorkerGBDoWork6_clbk CCashDbWorkerGBDoWork6_user(nullptr);
+        static info::CCashDbWorkerGBGetUseCashQueryStr8_ptr CCashDbWorkerGBGetUseCashQueryStr8_next(nullptr);
+        static info::CCashDbWorkerGBGetUseCashQueryStr8_clbk CCashDbWorkerGBGetUseCashQueryStr8_user(nullptr);
+        static info::CCashDbWorkerGBInitialize10_ptr CCashDbWorkerGBInitialize10_next(nullptr);
+        static info::CCashDbWorkerGBInitialize10_clbk CCashDbWorkerGBInitialize10_user(nullptr);
+        static info::CCashDbWorkerGBRelease12_ptr CCashDbWorkerGBRelease12_next(nullptr);
+        static info::CCashDbWorkerGBRelease12_clbk CCashDbWorkerGBRelease12_user(nullptr);
+        static info::CCashDbWorkerGB_init_database14_ptr CCashDbWorkerGB_init_database14_next(nullptr);
+        static info::CCashDbWorkerGB_init_database14_clbk CCashDbWorkerGB_init_database14_user(nullptr);
+        static info::CCashDbWorkerGB_wait_tsk_cash_select16_ptr CCashDbWorkerGB_wait_tsk_cash_select16_next(nullptr);
+        static info::CCashDbWorkerGB_wait_tsk_cash_select16_clbk CCashDbWorkerGB_wait_tsk_cash_select16_user(nullptr);
+        static info::CCashDbWorkerGB_wait_tsk_cash_update18_ptr CCashDbWorkerGB_wait_tsk_cash_update18_next(nullptr);
+        static info::CCashDbWorkerGB_wait_tsk_cash_update18_clbk CCashDbWorkerGB_wait_tsk_cash_update18_user(nullptr);
+        static info::CCashDbWorkerGBdtor_CCashDbWorkerGB23_ptr CCashDbWorkerGBdtor_CCashDbWorkerGB23_next(nullptr);
+        static info::CCashDbWorkerGBdtor_CCashDbWorkerGB23_clbk CCashDbWorkerGBdtor_CCashDbWorkerGB23_user(nullptr);
         
-        void CCashDbWorkerGBctor_CCashDbWorkerGB2_wrapper(struct CCashDbWorkerGB* _this)
+        static void CCashDbWorkerGBctor_CCashDbWorkerGB2_wrapper(struct CCashDbWorkerGB* _this)
         {
            CCashDbWorkerGBctor_CCashDbWorkerGB2_user(_this, CCashDbWorkerGBctor_CCashDbWorkerGB2_next);
         };
-        void CCashDbWorkerGBCompleteWork4_wrapper(struct CCashDbWorkerGB* _this)
+        static void CCashDbWorkerGBCompleteWork4_wrapper(struct CCashDbWorkerGB* _this)
         {
            CCashDbWorkerGBCompleteWork4_user(_this, CCashDbWorkerGBCompleteWork4_next);
         };
-        void CCashDbWorkerGBDoWork6_wrapper(struct CCashDbWorkerGB* _this)
+        static void CCashDbWorkerGBDoWork6_wrapper(struct CCashDbWorkerGB* _this)
         {
            CCashDbWorkerGBDoWork6_user(_this, CCashDbWorkerGBDoWork6_next);
         };
-        void CCashDbWorkerGBGetUseCashQueryStr8_wrapper(struct CCashDbWorkerGB* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
+        static void CCashDbWorkerGBGetUseCashQueryStr8_wrapper(struct CCashDbWorkerGB* _this, struct _param_cash_update* rParam, int nIdx, char* wszQuery, uint64_t tBufferSize)
         {
            CCashDbWorkerGBGetUseCashQueryStr8_user(_this, rParam, nIdx, wszQuery, tBufferSize, CCashDbWorkerGBGetUseCashQueryStr8_next);
         };
-        bool CCashDbWorkerGBInitialize10_wrapper(struct CCashDbWorkerGB* _this)
+        static bool CCashDbWorkerGBInitialize10_wrapper(struct CCashDbWorkerGB* _this)
         {
            return CCashDbWorkerGBInitialize10_user(_this, CCashDbWorkerGBInitialize10_next);
         };
-        void CCashDbWorkerGBRelease12_wrapper(struct CCashDbWorkerGB* _this)
+        static void CCashDbWorkerGBRelease12_wrapper(struct CCashDbWorkerGB* _this)
         {
            CCashDbWorkerGBRelease12_user(_this, CCashDbWorkerGBRelease12_next);
         };
-        bool CCashDbWorkerGB_init_database14_wrapper(struct CCashDbWorkerGB* _this)
+        static bool CCashDbWorkerGB_init_database14_wrapper(struct CCashDbWorkerGB* _this)
         {
            return CCashDbWorkerGB_init_database14_user(_this, CCashDbWorkerGB_init_database14_next);
         };
-        int CCashDbWorkerGB_wait_tsk_cash_select16_wrapper(struct CCashDbWorkerGB* _this, struct Task* pkTsk, int nIdx)
+        static int CCashDbWorkerGB_wait_tsk_cash_select16_wrapper(struct CCashDbWorkerGB* _this, struct Task* pkTsk, int nIdx)
         {
            return CCashDbWorkerGB_wait_tsk_cash_select16_user(_this, pkTsk, nIdx, CCashDbWorkerGB_wait_tsk_cash_select16_next);
         };
-        int CCashDbWorkerGB_wait_tsk_cash_update18_wrapper(struct CCashDbWorkerGB* _this, struct Task* pkTsk, int nIdx)
+        static int CCashDbWorkerGB_wait_tsk_cash_update18_wrapper(struct CCashDbWorkerGB* _this, struct Task* pkTsk, int nIdx)
         {
            return CCashDbWorkerGB_wait_tsk_cash_update18_user(_this, pkTsk, nIdx, CCashDbWorkerGB_wait_tsk_cash_update18_next);
         };
-        void CCashDbWorkerGBdtor_CCashDbWorkerGB23_wrapper(struct CCashDbWorkerGB* _this)
+        static void CCashDbWorkerGBdtor_CCashDbWorkerGB23_wrapper(struct CCashDbWorkerGB* _this)
         {
            CCashDbWorkerGBdtor_CCashDbWorkerGB23_user(_this, CCashDbWorkerGBdtor_CCashDbWorkerGB23_next);
         };
         
-        hook_record CCashDbWorkerGB_functions[] = {
+        static hook_record CCashDbWorkerGB_functions[] = {
         {   (LPVOID)0x14022c340L,
             (LPVOID *)&CCashDbWorkerGBctor_CCashDbWorkerGB2_user,
             (LPVOID *)&CCashDbWorkerGBctor_CCashDbWorkerGB2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlTraceCategoryctor_CAtlTraceCategory1_ptr CAtlTraceCategoryctor_CAtlTraceCategory1_next(nullptr);
-        info::CAtlTraceCategoryctor_CAtlTraceCategory1_clbk CAtlTraceCategoryctor_CAtlTraceCategory1_user(nullptr);
-        info::CAtlTraceCategoryName2_ptr CAtlTraceCategoryName2_next(nullptr);
-        info::CAtlTraceCategoryName2_clbk CAtlTraceCategoryName2_user(nullptr);
-        info::CAtlTraceCategoryReset3_ptr CAtlTraceCategoryReset3_next(nullptr);
-        info::CAtlTraceCategoryReset3_clbk CAtlTraceCategoryReset3_user(nullptr);
+        static info::CAtlTraceCategoryctor_CAtlTraceCategory1_ptr CAtlTraceCategoryctor_CAtlTraceCategory1_next(nullptr);
+        static info::CAtlTraceCategoryctor_CAtlTraceCategory1_clbk CAtlTraceCategoryctor_CAtlTraceCategory1_user(nullptr);
+        static info::CAtlTraceCategoryName2_ptr CAtlTraceCategoryName2_next(nullptr);
+        static info::CAtlTraceCategoryName2_clbk CAtlTraceCategoryName2_user(nullptr);
+        static info::CAtlTraceCategoryReset3_ptr CAtlTraceCategoryReset3_next(nullptr);
+        static info::CAtlTraceCategoryReset3_clbk CAtlTraceCategoryReset3_user(nullptr);
         
-        void CAtlTraceCategoryctor_CAtlTraceCategory1_wrapper(struct CAtlTraceCategory* _this)
+        static void CAtlTraceCategoryctor_CAtlTraceCategory1_wrapper(struct CAtlTraceCategory* _this)
         {
            CAtlTraceCategoryctor_CAtlTraceCategory1_user(_this, CAtlTraceCategoryctor_CAtlTraceCategory1_next);
         };
-        wchar_t* CAtlTraceCategoryName2_wrapper(struct CAtlTraceCategory* _this)
+        static wchar_t* CAtlTraceCategoryName2_wrapper(struct CAtlTraceCategory* _this)
         {
            return CAtlTraceCategoryName2_user(_this, CAtlTraceCategoryName2_next);
         };
-        void CAtlTraceCategoryReset3_wrapper(struct CAtlTraceCategory* _this, wchar_t* pszName, int nModuleCookie)
+        static void CAtlTraceCategoryReset3_wrapper(struct CAtlTraceCategory* _this, wchar_t* pszName, int nModuleCookie)
         {
            CAtlTraceCategoryReset3_user(_this, pszName, nModuleCookie, CAtlTraceCategoryReset3_next);
         };
         
-        hook_record CAtlTraceCategory_functions[] = {
+        static hook_record CAtlTraceCategory_functions[] = {
         {   (LPVOID)0x140675fd0L,
             (LPVOID *)&CAtlTraceCategoryctor_CAtlTraceCategory1_user,
             (LPVOID *)&CAtlTraceCategoryctor_CAtlTraceCategory1_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

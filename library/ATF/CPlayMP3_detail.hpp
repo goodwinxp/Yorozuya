@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPlayMP3IsLoadedMP31_ptr CPlayMP3IsLoadedMP31_next(nullptr);
-        info::CPlayMP3IsLoadedMP31_clbk CPlayMP3IsLoadedMP31_user(nullptr);
+        static info::CPlayMP3IsLoadedMP31_ptr CPlayMP3IsLoadedMP31_next(nullptr);
+        static info::CPlayMP3IsLoadedMP31_clbk CPlayMP3IsLoadedMP31_user(nullptr);
         
-        int64_t CPlayMP3IsLoadedMP31_wrapper(struct CPlayMP3* _this)
+        static int64_t CPlayMP3IsLoadedMP31_wrapper(struct CPlayMP3* _this)
         {
            return CPlayMP3IsLoadedMP31_user(_this, CPlayMP3IsLoadedMP31_next);
         };
         
-        hook_record CPlayMP3_functions[] = {
+        static hook_record CPlayMP3_functions[] = {
         {   (LPVOID)0x14050f720L,
             (LPVOID *)&CPlayMP3IsLoadedMP31_user,
             (LPVOID *)&CPlayMP3IsLoadedMP31_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

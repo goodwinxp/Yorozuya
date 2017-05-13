@@ -8,231 +8,231 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_ptr CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_clbk CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoClear4_ptr CUnmannedTraderRegistItemInfoClear4_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoClear4_clbk CUnmannedTraderRegistItemInfoClear4_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearBuyerInfo6_ptr CUnmannedTraderRegistItemInfoClearBuyerInfo6_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearBuyerInfo6_clbk CUnmannedTraderRegistItemInfoClearBuyerInfo6_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearRegist8_ptr CUnmannedTraderRegistItemInfoClearRegist8_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearRegist8_clbk CUnmannedTraderRegistItemInfoClearRegist8_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearToWaitState10_ptr CUnmannedTraderRegistItemInfoClearToWaitState10_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoClearToWaitState10_clbk CUnmannedTraderRegistItemInfoClearToWaitState10_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetBuyerSerial12_ptr CUnmannedTraderRegistItemInfoGetBuyerSerial12_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetBuyerSerial12_clbk CUnmannedTraderRegistItemInfoGetBuyerSerial12_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetD14_ptr CUnmannedTraderRegistItemInfoGetD14_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetD14_clbk CUnmannedTraderRegistItemInfoGetD14_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetETSerial16_ptr CUnmannedTraderRegistItemInfoGetETSerial16_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetETSerial16_clbk CUnmannedTraderRegistItemInfoGetETSerial16_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetItemIndex18_ptr CUnmannedTraderRegistItemInfoGetItemIndex18_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetItemIndex18_clbk CUnmannedTraderRegistItemInfoGetItemIndex18_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetItemSerial20_ptr CUnmannedTraderRegistItemInfoGetItemSerial20_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetItemSerial20_clbk CUnmannedTraderRegistItemInfoGetItemSerial20_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetLeftSec22_ptr CUnmannedTraderRegistItemInfoGetLeftSec22_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetLeftSec22_clbk CUnmannedTraderRegistItemInfoGetLeftSec22_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetPrice24_ptr CUnmannedTraderRegistItemInfoGetPrice24_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetPrice24_clbk CUnmannedTraderRegistItemInfoGetPrice24_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetRegistSerial26_ptr CUnmannedTraderRegistItemInfoGetRegistSerial26_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetRegistSerial26_clbk CUnmannedTraderRegistItemInfoGetRegistSerial26_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetResultTime28_ptr CUnmannedTraderRegistItemInfoGetResultTime28_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetResultTime28_clbk CUnmannedTraderRegistItemInfoGetResultTime28_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetSellTurm30_ptr CUnmannedTraderRegistItemInfoGetSellTurm30_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetSellTurm30_clbk CUnmannedTraderRegistItemInfoGetSellTurm30_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStartTime32_ptr CUnmannedTraderRegistItemInfoGetStartTime32_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStartTime32_clbk CUnmannedTraderRegistItemInfoGetStartTime32_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStartTimePtr34_ptr CUnmannedTraderRegistItemInfoGetStartTimePtr34_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStartTimePtr34_clbk CUnmannedTraderRegistItemInfoGetStartTimePtr34_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetState36_ptr CUnmannedTraderRegistItemInfoGetState36_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetState36_clbk CUnmannedTraderRegistItemInfoGetState36_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStorageIndex38_ptr CUnmannedTraderRegistItemInfoGetStorageIndex38_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetStorageIndex38_clbk CUnmannedTraderRegistItemInfoGetStorageIndex38_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetTableCode40_ptr CUnmannedTraderRegistItemInfoGetTableCode40_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetTableCode40_clbk CUnmannedTraderRegistItemInfoGetTableCode40_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetTax42_ptr CUnmannedTraderRegistItemInfoGetTax42_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetTax42_clbk CUnmannedTraderRegistItemInfoGetTax42_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetU44_ptr CUnmannedTraderRegistItemInfoGetU44_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoGetU44_clbk CUnmannedTraderRegistItemInfoGetU44_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsEmpty46_ptr CUnmannedTraderRegistItemInfoIsEmpty46_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsEmpty46_clbk CUnmannedTraderRegistItemInfoIsEmpty46_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsOverRegistTime48_ptr CUnmannedTraderRegistItemInfoIsOverRegistTime48_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsOverRegistTime48_clbk CUnmannedTraderRegistItemInfoIsOverRegistTime48_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsRegist50_ptr CUnmannedTraderRegistItemInfoIsRegist50_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsRegist50_clbk CUnmannedTraderRegistItemInfoIsRegist50_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsSellUpdateWait52_ptr CUnmannedTraderRegistItemInfoIsSellUpdateWait52_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsSellUpdateWait52_clbk CUnmannedTraderRegistItemInfoIsSellUpdateWait52_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsSellWait54_ptr CUnmannedTraderRegistItemInfoIsSellWait54_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsSellWait54_clbk CUnmannedTraderRegistItemInfoIsSellWait54_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_ptr CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_clbk CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoReRegistItem58_ptr CUnmannedTraderRegistItemInfoReRegistItem58_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoReRegistItem58_clbk CUnmannedTraderRegistItemInfoReRegistItem58_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoRegistItem60_ptr CUnmannedTraderRegistItemInfoRegistItem60_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoRegistItem60_clbk CUnmannedTraderRegistItemInfoRegistItem60_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoRepriceItem62_ptr CUnmannedTraderRegistItemInfoRepriceItem62_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoRepriceItem62_clbk CUnmannedTraderRegistItemInfoRepriceItem62_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoSellComplete64_ptr CUnmannedTraderRegistItemInfoSellComplete64_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoSellComplete64_clbk CUnmannedTraderRegistItemInfoSellComplete64_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoSellWaitItem66_ptr CUnmannedTraderRegistItemInfoSellWaitItem66_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoSellWaitItem66_clbk CUnmannedTraderRegistItemInfoSellWaitItem66_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoSet68_ptr CUnmannedTraderRegistItemInfoSet68_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoSet68_clbk CUnmannedTraderRegistItemInfoSet68_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoSetOverRegistTime70_ptr CUnmannedTraderRegistItemInfoSetOverRegistTime70_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoSetOverRegistTime70_clbk CUnmannedTraderRegistItemInfoSetOverRegistTime70_user(nullptr);
-        info::CUnmannedTraderRegistItemInfoSetState72_ptr CUnmannedTraderRegistItemInfoSetState72_next(nullptr);
-        info::CUnmannedTraderRegistItemInfoSetState72_clbk CUnmannedTraderRegistItemInfoSetState72_user(nullptr);
-        info::CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_ptr CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_next(nullptr);
-        info::CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_clbk CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_ptr CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_clbk CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClear4_ptr CUnmannedTraderRegistItemInfoClear4_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClear4_clbk CUnmannedTraderRegistItemInfoClear4_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearBuyerInfo6_ptr CUnmannedTraderRegistItemInfoClearBuyerInfo6_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearBuyerInfo6_clbk CUnmannedTraderRegistItemInfoClearBuyerInfo6_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearRegist8_ptr CUnmannedTraderRegistItemInfoClearRegist8_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearRegist8_clbk CUnmannedTraderRegistItemInfoClearRegist8_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearToWaitState10_ptr CUnmannedTraderRegistItemInfoClearToWaitState10_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoClearToWaitState10_clbk CUnmannedTraderRegistItemInfoClearToWaitState10_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetBuyerSerial12_ptr CUnmannedTraderRegistItemInfoGetBuyerSerial12_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetBuyerSerial12_clbk CUnmannedTraderRegistItemInfoGetBuyerSerial12_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetD14_ptr CUnmannedTraderRegistItemInfoGetD14_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetD14_clbk CUnmannedTraderRegistItemInfoGetD14_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetETSerial16_ptr CUnmannedTraderRegistItemInfoGetETSerial16_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetETSerial16_clbk CUnmannedTraderRegistItemInfoGetETSerial16_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetItemIndex18_ptr CUnmannedTraderRegistItemInfoGetItemIndex18_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetItemIndex18_clbk CUnmannedTraderRegistItemInfoGetItemIndex18_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetItemSerial20_ptr CUnmannedTraderRegistItemInfoGetItemSerial20_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetItemSerial20_clbk CUnmannedTraderRegistItemInfoGetItemSerial20_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetLeftSec22_ptr CUnmannedTraderRegistItemInfoGetLeftSec22_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetLeftSec22_clbk CUnmannedTraderRegistItemInfoGetLeftSec22_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetPrice24_ptr CUnmannedTraderRegistItemInfoGetPrice24_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetPrice24_clbk CUnmannedTraderRegistItemInfoGetPrice24_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetRegistSerial26_ptr CUnmannedTraderRegistItemInfoGetRegistSerial26_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetRegistSerial26_clbk CUnmannedTraderRegistItemInfoGetRegistSerial26_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetResultTime28_ptr CUnmannedTraderRegistItemInfoGetResultTime28_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetResultTime28_clbk CUnmannedTraderRegistItemInfoGetResultTime28_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetSellTurm30_ptr CUnmannedTraderRegistItemInfoGetSellTurm30_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetSellTurm30_clbk CUnmannedTraderRegistItemInfoGetSellTurm30_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStartTime32_ptr CUnmannedTraderRegistItemInfoGetStartTime32_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStartTime32_clbk CUnmannedTraderRegistItemInfoGetStartTime32_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStartTimePtr34_ptr CUnmannedTraderRegistItemInfoGetStartTimePtr34_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStartTimePtr34_clbk CUnmannedTraderRegistItemInfoGetStartTimePtr34_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetState36_ptr CUnmannedTraderRegistItemInfoGetState36_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetState36_clbk CUnmannedTraderRegistItemInfoGetState36_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStorageIndex38_ptr CUnmannedTraderRegistItemInfoGetStorageIndex38_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetStorageIndex38_clbk CUnmannedTraderRegistItemInfoGetStorageIndex38_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetTableCode40_ptr CUnmannedTraderRegistItemInfoGetTableCode40_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetTableCode40_clbk CUnmannedTraderRegistItemInfoGetTableCode40_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetTax42_ptr CUnmannedTraderRegistItemInfoGetTax42_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetTax42_clbk CUnmannedTraderRegistItemInfoGetTax42_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetU44_ptr CUnmannedTraderRegistItemInfoGetU44_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoGetU44_clbk CUnmannedTraderRegistItemInfoGetU44_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsEmpty46_ptr CUnmannedTraderRegistItemInfoIsEmpty46_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsEmpty46_clbk CUnmannedTraderRegistItemInfoIsEmpty46_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsOverRegistTime48_ptr CUnmannedTraderRegistItemInfoIsOverRegistTime48_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsOverRegistTime48_clbk CUnmannedTraderRegistItemInfoIsOverRegistTime48_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsRegist50_ptr CUnmannedTraderRegistItemInfoIsRegist50_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsRegist50_clbk CUnmannedTraderRegistItemInfoIsRegist50_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsSellUpdateWait52_ptr CUnmannedTraderRegistItemInfoIsSellUpdateWait52_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsSellUpdateWait52_clbk CUnmannedTraderRegistItemInfoIsSellUpdateWait52_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsSellWait54_ptr CUnmannedTraderRegistItemInfoIsSellWait54_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsSellWait54_clbk CUnmannedTraderRegistItemInfoIsSellWait54_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_ptr CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_clbk CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoReRegistItem58_ptr CUnmannedTraderRegistItemInfoReRegistItem58_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoReRegistItem58_clbk CUnmannedTraderRegistItemInfoReRegistItem58_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoRegistItem60_ptr CUnmannedTraderRegistItemInfoRegistItem60_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoRegistItem60_clbk CUnmannedTraderRegistItemInfoRegistItem60_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoRepriceItem62_ptr CUnmannedTraderRegistItemInfoRepriceItem62_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoRepriceItem62_clbk CUnmannedTraderRegistItemInfoRepriceItem62_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSellComplete64_ptr CUnmannedTraderRegistItemInfoSellComplete64_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSellComplete64_clbk CUnmannedTraderRegistItemInfoSellComplete64_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSellWaitItem66_ptr CUnmannedTraderRegistItemInfoSellWaitItem66_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSellWaitItem66_clbk CUnmannedTraderRegistItemInfoSellWaitItem66_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSet68_ptr CUnmannedTraderRegistItemInfoSet68_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSet68_clbk CUnmannedTraderRegistItemInfoSet68_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSetOverRegistTime70_ptr CUnmannedTraderRegistItemInfoSetOverRegistTime70_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSetOverRegistTime70_clbk CUnmannedTraderRegistItemInfoSetOverRegistTime70_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSetState72_ptr CUnmannedTraderRegistItemInfoSetState72_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfoSetState72_clbk CUnmannedTraderRegistItemInfoSetState72_user(nullptr);
+        static info::CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_ptr CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_next(nullptr);
+        static info::CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_clbk CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_user(nullptr);
         
-        void CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_user(_this, CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_next);
         };
-        void CUnmannedTraderRegistItemInfoClear4_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoClear4_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoClear4_user(_this, CUnmannedTraderRegistItemInfoClear4_next);
         };
-        void CUnmannedTraderRegistItemInfoClearBuyerInfo6_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoClearBuyerInfo6_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoClearBuyerInfo6_user(_this, CUnmannedTraderRegistItemInfoClearBuyerInfo6_next);
         };
-        void CUnmannedTraderRegistItemInfoClearRegist8_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoClearRegist8_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoClearRegist8_user(_this, CUnmannedTraderRegistItemInfoClearRegist8_next);
         };
-        void CUnmannedTraderRegistItemInfoClearToWaitState10_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoClearToWaitState10_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoClearToWaitState10_user(_this, CUnmannedTraderRegistItemInfoClearToWaitState10_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetBuyerSerial12_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetBuyerSerial12_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetBuyerSerial12_user(_this, CUnmannedTraderRegistItemInfoGetBuyerSerial12_next);
         };
-        uint64_t CUnmannedTraderRegistItemInfoGetD14_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static uint64_t CUnmannedTraderRegistItemInfoGetD14_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetD14_user(_this, CUnmannedTraderRegistItemInfoGetD14_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetETSerial16_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetETSerial16_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetETSerial16_user(_this, CUnmannedTraderRegistItemInfoGetETSerial16_next);
         };
-        uint16_t CUnmannedTraderRegistItemInfoGetItemIndex18_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static uint16_t CUnmannedTraderRegistItemInfoGetItemIndex18_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetItemIndex18_user(_this, CUnmannedTraderRegistItemInfoGetItemIndex18_next);
         };
-        uint16_t CUnmannedTraderRegistItemInfoGetItemSerial20_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static uint16_t CUnmannedTraderRegistItemInfoGetItemSerial20_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetItemSerial20_user(_this, CUnmannedTraderRegistItemInfoGetItemSerial20_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetLeftSec22_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetLeftSec22_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetLeftSec22_user(_this, CUnmannedTraderRegistItemInfoGetLeftSec22_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetPrice24_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetPrice24_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetPrice24_user(_this, CUnmannedTraderRegistItemInfoGetPrice24_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetRegistSerial26_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetRegistSerial26_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetRegistSerial26_user(_this, CUnmannedTraderRegistItemInfoGetRegistSerial26_next);
         };
-        int64_t CUnmannedTraderRegistItemInfoGetResultTime28_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static int64_t CUnmannedTraderRegistItemInfoGetResultTime28_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetResultTime28_user(_this, CUnmannedTraderRegistItemInfoGetResultTime28_next);
         };
-        char CUnmannedTraderRegistItemInfoGetSellTurm30_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static char CUnmannedTraderRegistItemInfoGetSellTurm30_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetSellTurm30_user(_this, CUnmannedTraderRegistItemInfoGetSellTurm30_next);
         };
-        int64_t CUnmannedTraderRegistItemInfoGetStartTime32_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static int64_t CUnmannedTraderRegistItemInfoGetStartTime32_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetStartTime32_user(_this, CUnmannedTraderRegistItemInfoGetStartTime32_next);
         };
-        int64_t* CUnmannedTraderRegistItemInfoGetStartTimePtr34_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static int64_t* CUnmannedTraderRegistItemInfoGetStartTimePtr34_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetStartTimePtr34_user(_this, CUnmannedTraderRegistItemInfoGetStartTimePtr34_next);
         };
-        CUnmannedTraderItemState::STATE CUnmannedTraderRegistItemInfoGetState36_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static CUnmannedTraderItemState::STATE CUnmannedTraderRegistItemInfoGetState36_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetState36_user(_this, CUnmannedTraderRegistItemInfoGetState36_next);
         };
-        char CUnmannedTraderRegistItemInfoGetStorageIndex38_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static char CUnmannedTraderRegistItemInfoGetStorageIndex38_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetStorageIndex38_user(_this, CUnmannedTraderRegistItemInfoGetStorageIndex38_next);
         };
-        char CUnmannedTraderRegistItemInfoGetTableCode40_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static char CUnmannedTraderRegistItemInfoGetTableCode40_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetTableCode40_user(_this, CUnmannedTraderRegistItemInfoGetTableCode40_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetTax42_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetTax42_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetTax42_user(_this, CUnmannedTraderRegistItemInfoGetTax42_next);
         };
-        unsigned int CUnmannedTraderRegistItemInfoGetU44_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static unsigned int CUnmannedTraderRegistItemInfoGetU44_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoGetU44_user(_this, CUnmannedTraderRegistItemInfoGetU44_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsEmpty46_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsEmpty46_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsEmpty46_user(_this, CUnmannedTraderRegistItemInfoIsEmpty46_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsOverRegistTime48_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsOverRegistTime48_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsOverRegistTime48_user(_this, CUnmannedTraderRegistItemInfoIsOverRegistTime48_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsRegist50_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsRegist50_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsRegist50_user(_this, CUnmannedTraderRegistItemInfoIsRegist50_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsSellUpdateWait52_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsSellUpdateWait52_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsSellUpdateWait52_user(_this, CUnmannedTraderRegistItemInfoIsSellUpdateWait52_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsSellWait54_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsSellWait54_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsSellWait54_user(_this, CUnmannedTraderRegistItemInfoIsSellWait54_next);
         };
-        bool CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static bool CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            return CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_user(_this, CUnmannedTraderRegistItemInfoIsWaitNoitfyClose56_next);
         };
-        void CUnmannedTraderRegistItemInfoReRegistItem58_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice)
+        static void CUnmannedTraderRegistItemInfoReRegistItem58_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice)
         {
            CUnmannedTraderRegistItemInfoReRegistItem58_user(_this, dwPrice, CUnmannedTraderRegistItemInfoReRegistItem58_next);
         };
-        void CUnmannedTraderRegistItemInfoRegistItem60_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwRegistSerial, uint16_t wItemSerial, unsigned int dwETSerialNumber, unsigned int dwPrice, char bySellTurm, char byTableCode, uint16_t wItemIndex, char byStorageIndex, uint64_t dwD, unsigned int dwU, bool bInserted)
+        static void CUnmannedTraderRegistItemInfoRegistItem60_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwRegistSerial, uint16_t wItemSerial, unsigned int dwETSerialNumber, unsigned int dwPrice, char bySellTurm, char byTableCode, uint16_t wItemIndex, char byStorageIndex, uint64_t dwD, unsigned int dwU, bool bInserted)
         {
            CUnmannedTraderRegistItemInfoRegistItem60_user(_this, dwRegistSerial, wItemSerial, dwETSerialNumber, dwPrice, bySellTurm, byTableCode, wItemIndex, byStorageIndex, dwD, dwU, bInserted, CUnmannedTraderRegistItemInfoRegistItem60_next);
         };
-        void CUnmannedTraderRegistItemInfoRepriceItem62_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice)
+        static void CUnmannedTraderRegistItemInfoRepriceItem62_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice)
         {
            CUnmannedTraderRegistItemInfoRepriceItem62_user(_this, dwPrice, CUnmannedTraderRegistItemInfoRepriceItem62_next);
         };
-        void CUnmannedTraderRegistItemInfoSellComplete64_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice, unsigned int dwBuyerSerial, unsigned int dwTax, int64_t tResultTime, char* wszBuyerName, char* szBuyerAccount)
+        static void CUnmannedTraderRegistItemInfoSellComplete64_wrapper(struct CUnmannedTraderRegistItemInfo* _this, unsigned int dwPrice, unsigned int dwBuyerSerial, unsigned int dwTax, int64_t tResultTime, char* wszBuyerName, char* szBuyerAccount)
         {
            CUnmannedTraderRegistItemInfoSellComplete64_user(_this, dwPrice, dwBuyerSerial, dwTax, tResultTime, wszBuyerName, szBuyerAccount, CUnmannedTraderRegistItemInfoSellComplete64_next);
         };
-        char CUnmannedTraderRegistItemInfoSellWaitItem66_wrapper(struct CUnmannedTraderRegistItemInfo* _this, uint16_t wInx, struct CLogFile* pkLogger, int64_t tResultTime, char* byStorageInx)
+        static char CUnmannedTraderRegistItemInfoSellWaitItem66_wrapper(struct CUnmannedTraderRegistItemInfo* _this, uint16_t wInx, struct CLogFile* pkLogger, int64_t tResultTime, char* byStorageInx)
         {
            return CUnmannedTraderRegistItemInfoSellWaitItem66_user(_this, wInx, pkLogger, tResultTime, byStorageInx, CUnmannedTraderRegistItemInfoSellWaitItem66_next);
         };
-        bool CUnmannedTraderRegistItemInfoSet68_wrapper(struct CUnmannedTraderRegistItemInfo* _this, uint16_t wInx, char byInvenIndex, unsigned int uiInx, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
+        static bool CUnmannedTraderRegistItemInfoSet68_wrapper(struct CUnmannedTraderRegistItemInfo* _this, uint16_t wInx, char byInvenIndex, unsigned int uiInx, struct _TRADE_DB_BASE* kInfo, struct CLogFile* pkLogger)
         {
            return CUnmannedTraderRegistItemInfoSet68_user(_this, wInx, byInvenIndex, uiInx, kInfo, pkLogger, CUnmannedTraderRegistItemInfoSet68_next);
         };
-        void CUnmannedTraderRegistItemInfoSetOverRegistTime70_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfoSetOverRegistTime70_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfoSetOverRegistTime70_user(_this, CUnmannedTraderRegistItemInfoSetOverRegistTime70_next);
         };
-        bool CUnmannedTraderRegistItemInfoSetState72_wrapper(struct CUnmannedTraderRegistItemInfo* _this, char byState)
+        static bool CUnmannedTraderRegistItemInfoSetState72_wrapper(struct CUnmannedTraderRegistItemInfo* _this, char byState)
         {
            return CUnmannedTraderRegistItemInfoSetState72_user(_this, byState, CUnmannedTraderRegistItemInfoSetState72_next);
         };
-        void CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
+        static void CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_wrapper(struct CUnmannedTraderRegistItemInfo* _this)
         {
            CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_user(_this, CUnmannedTraderRegistItemInfodtor_CUnmannedTraderRegistItemInfo78_next);
         };
         
-        hook_record CUnmannedTraderRegistItemInfo_functions[] = {
+        static hook_record CUnmannedTraderRegistItemInfo_functions[] = {
         {   (LPVOID)0x140351da0L,
             (LPVOID *)&CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_user,
             (LPVOID *)&CUnmannedTraderRegistItemInfoctor_CUnmannedTraderRegistItemInfo2_next,
@@ -421,5 +421,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

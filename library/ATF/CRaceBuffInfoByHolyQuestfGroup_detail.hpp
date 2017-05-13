@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBuffInfoByHolyQuestfGroupApply2_ptr CRaceBuffInfoByHolyQuestfGroupApply2_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupApply2_clbk CRaceBuffInfoByHolyQuestfGroupApply2_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_ptr CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_clbk CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupCreateComplete6_ptr CRaceBuffInfoByHolyQuestfGroupCreateComplete6_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupCreateComplete6_clbk CRaceBuffInfoByHolyQuestfGroupCreateComplete6_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupInit8_ptr CRaceBuffInfoByHolyQuestfGroupInit8_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupInit8_clbk CRaceBuffInfoByHolyQuestfGroupInit8_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupRelease10_ptr CRaceBuffInfoByHolyQuestfGroupRelease10_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupRelease10_clbk CRaceBuffInfoByHolyQuestfGroupRelease10_user(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_ptr CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_next(nullptr);
-        info::CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_clbk CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupApply2_ptr CRaceBuffInfoByHolyQuestfGroupApply2_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupApply2_clbk CRaceBuffInfoByHolyQuestfGroupApply2_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_ptr CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_clbk CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupCreateComplete6_ptr CRaceBuffInfoByHolyQuestfGroupCreateComplete6_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupCreateComplete6_clbk CRaceBuffInfoByHolyQuestfGroupCreateComplete6_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupInit8_ptr CRaceBuffInfoByHolyQuestfGroupInit8_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupInit8_clbk CRaceBuffInfoByHolyQuestfGroupInit8_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupRelease10_ptr CRaceBuffInfoByHolyQuestfGroupRelease10_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupRelease10_clbk CRaceBuffInfoByHolyQuestfGroupRelease10_user(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_ptr CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_next(nullptr);
+        static info::CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_clbk CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_user(nullptr);
         
-        bool CRaceBuffInfoByHolyQuestfGroupApply2_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestfGroupApply2_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestfGroupApply2_user(_this, iResultType, pkDest, CRaceBuffInfoByHolyQuestfGroupApply2_next);
         };
-        void CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, unsigned int uiNTh)
+        static void CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, unsigned int uiNTh)
         {
            CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_user(_this, uiNTh, CRaceBuffInfoByHolyQuestfGroupctor_CRaceBuffInfoByHolyQuestfGroup4_next);
         };
-        bool CRaceBuffInfoByHolyQuestfGroupCreateComplete6_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestfGroupCreateComplete6_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestfGroupCreateComplete6_user(_this, iResultType, pkDest, CRaceBuffInfoByHolyQuestfGroupCreateComplete6_next);
         };
-        bool CRaceBuffInfoByHolyQuestfGroupInit8_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this)
+        static bool CRaceBuffInfoByHolyQuestfGroupInit8_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this)
         {
            return CRaceBuffInfoByHolyQuestfGroupInit8_user(_this, CRaceBuffInfoByHolyQuestfGroupInit8_next);
         };
-        bool CRaceBuffInfoByHolyQuestfGroupRelease10_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
+        static bool CRaceBuffInfoByHolyQuestfGroupRelease10_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this, int iResultType, struct CPlayer* pkDest)
         {
            return CRaceBuffInfoByHolyQuestfGroupRelease10_user(_this, iResultType, pkDest, CRaceBuffInfoByHolyQuestfGroupRelease10_next);
         };
-        void CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this)
+        static void CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_wrapper(struct CRaceBuffInfoByHolyQuestfGroup* _this)
         {
            CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_user(_this, CRaceBuffInfoByHolyQuestfGroupdtor_CRaceBuffInfoByHolyQuestfGroup14_next);
         };
         
-        hook_record CRaceBuffInfoByHolyQuestfGroup_functions[] = {
+        static hook_record CRaceBuffInfoByHolyQuestfGroup_functions[] = {
         {   (LPVOID)0x1403b4c70L,
             (LPVOID *)&CRaceBuffInfoByHolyQuestfGroupApply2_user,
             (LPVOID *)&CRaceBuffInfoByHolyQuestfGroupApply2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

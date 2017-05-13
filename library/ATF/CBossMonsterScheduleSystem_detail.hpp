@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBossMonsterScheduleSystemAnalysisMsg2_ptr CBossMonsterScheduleSystemAnalysisMsg2_next(nullptr);
-        info::CBossMonsterScheduleSystemAnalysisMsg2_clbk CBossMonsterScheduleSystemAnalysisMsg2_user(nullptr);
-        info::CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_ptr CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_next(nullptr);
-        info::CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_clbk CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_user(nullptr);
-        info::CBossMonsterScheduleSystemCreateTaskPool6_ptr CBossMonsterScheduleSystemCreateTaskPool6_next(nullptr);
-        info::CBossMonsterScheduleSystemCreateTaskPool6_clbk CBossMonsterScheduleSystemCreateTaskPool6_user(nullptr);
-        info::CBossMonsterScheduleSystemCreateWorkerThread8_ptr CBossMonsterScheduleSystemCreateWorkerThread8_next(nullptr);
-        info::CBossMonsterScheduleSystemCreateWorkerThread8_clbk CBossMonsterScheduleSystemCreateWorkerThread8_user(nullptr);
-        info::CBossMonsterScheduleSystemInit10_ptr CBossMonsterScheduleSystemInit10_next(nullptr);
-        info::CBossMonsterScheduleSystemInit10_clbk CBossMonsterScheduleSystemInit10_user(nullptr);
-        info::CBossMonsterScheduleSystemInstance12_ptr CBossMonsterScheduleSystemInstance12_next(nullptr);
-        info::CBossMonsterScheduleSystemInstance12_clbk CBossMonsterScheduleSystemInstance12_user(nullptr);
-        info::CBossMonsterScheduleSystemLoadSchedule14_ptr CBossMonsterScheduleSystemLoadSchedule14_next(nullptr);
-        info::CBossMonsterScheduleSystemLoadSchedule14_clbk CBossMonsterScheduleSystemLoadSchedule14_user(nullptr);
-        info::CBossMonsterScheduleSystemMakeMap16_ptr CBossMonsterScheduleSystemMakeMap16_next(nullptr);
-        info::CBossMonsterScheduleSystemMakeMap16_clbk CBossMonsterScheduleSystemMakeMap16_user(nullptr);
-        info::CBossMonsterScheduleSystemMakeSchedule18_ptr CBossMonsterScheduleSystemMakeSchedule18_next(nullptr);
-        info::CBossMonsterScheduleSystemMakeSchedule18_clbk CBossMonsterScheduleSystemMakeSchedule18_user(nullptr);
-        info::CBossMonsterScheduleSystemMakeTBL20_ptr CBossMonsterScheduleSystemMakeTBL20_next(nullptr);
-        info::CBossMonsterScheduleSystemMakeTBL20_clbk CBossMonsterScheduleSystemMakeTBL20_user(nullptr);
-        info::CBossMonsterScheduleSystemRespawnMonster22_ptr CBossMonsterScheduleSystemRespawnMonster22_next(nullptr);
-        info::CBossMonsterScheduleSystemRespawnMonster22_clbk CBossMonsterScheduleSystemRespawnMonster22_user(nullptr);
-        info::CBossMonsterScheduleSystemSavechedule24_ptr CBossMonsterScheduleSystemSavechedule24_next(nullptr);
-        info::CBossMonsterScheduleSystemSavechedule24_clbk CBossMonsterScheduleSystemSavechedule24_user(nullptr);
-        info::CBossMonsterScheduleSystemWorkProc26_ptr CBossMonsterScheduleSystemWorkProc26_next(nullptr);
-        info::CBossMonsterScheduleSystemWorkProc26_clbk CBossMonsterScheduleSystemWorkProc26_user(nullptr);
-        info::CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_ptr CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_next(nullptr);
-        info::CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_clbk CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_user(nullptr);
+        static info::CBossMonsterScheduleSystemAnalysisMsg2_ptr CBossMonsterScheduleSystemAnalysisMsg2_next(nullptr);
+        static info::CBossMonsterScheduleSystemAnalysisMsg2_clbk CBossMonsterScheduleSystemAnalysisMsg2_user(nullptr);
+        static info::CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_ptr CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_next(nullptr);
+        static info::CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_clbk CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_user(nullptr);
+        static info::CBossMonsterScheduleSystemCreateTaskPool6_ptr CBossMonsterScheduleSystemCreateTaskPool6_next(nullptr);
+        static info::CBossMonsterScheduleSystemCreateTaskPool6_clbk CBossMonsterScheduleSystemCreateTaskPool6_user(nullptr);
+        static info::CBossMonsterScheduleSystemCreateWorkerThread8_ptr CBossMonsterScheduleSystemCreateWorkerThread8_next(nullptr);
+        static info::CBossMonsterScheduleSystemCreateWorkerThread8_clbk CBossMonsterScheduleSystemCreateWorkerThread8_user(nullptr);
+        static info::CBossMonsterScheduleSystemInit10_ptr CBossMonsterScheduleSystemInit10_next(nullptr);
+        static info::CBossMonsterScheduleSystemInit10_clbk CBossMonsterScheduleSystemInit10_user(nullptr);
+        static info::CBossMonsterScheduleSystemInstance12_ptr CBossMonsterScheduleSystemInstance12_next(nullptr);
+        static info::CBossMonsterScheduleSystemInstance12_clbk CBossMonsterScheduleSystemInstance12_user(nullptr);
+        static info::CBossMonsterScheduleSystemLoadSchedule14_ptr CBossMonsterScheduleSystemLoadSchedule14_next(nullptr);
+        static info::CBossMonsterScheduleSystemLoadSchedule14_clbk CBossMonsterScheduleSystemLoadSchedule14_user(nullptr);
+        static info::CBossMonsterScheduleSystemMakeMap16_ptr CBossMonsterScheduleSystemMakeMap16_next(nullptr);
+        static info::CBossMonsterScheduleSystemMakeMap16_clbk CBossMonsterScheduleSystemMakeMap16_user(nullptr);
+        static info::CBossMonsterScheduleSystemMakeSchedule18_ptr CBossMonsterScheduleSystemMakeSchedule18_next(nullptr);
+        static info::CBossMonsterScheduleSystemMakeSchedule18_clbk CBossMonsterScheduleSystemMakeSchedule18_user(nullptr);
+        static info::CBossMonsterScheduleSystemMakeTBL20_ptr CBossMonsterScheduleSystemMakeTBL20_next(nullptr);
+        static info::CBossMonsterScheduleSystemMakeTBL20_clbk CBossMonsterScheduleSystemMakeTBL20_user(nullptr);
+        static info::CBossMonsterScheduleSystemRespawnMonster22_ptr CBossMonsterScheduleSystemRespawnMonster22_next(nullptr);
+        static info::CBossMonsterScheduleSystemRespawnMonster22_clbk CBossMonsterScheduleSystemRespawnMonster22_user(nullptr);
+        static info::CBossMonsterScheduleSystemSavechedule24_ptr CBossMonsterScheduleSystemSavechedule24_next(nullptr);
+        static info::CBossMonsterScheduleSystemSavechedule24_clbk CBossMonsterScheduleSystemSavechedule24_user(nullptr);
+        static info::CBossMonsterScheduleSystemWorkProc26_ptr CBossMonsterScheduleSystemWorkProc26_next(nullptr);
+        static info::CBossMonsterScheduleSystemWorkProc26_clbk CBossMonsterScheduleSystemWorkProc26_user(nullptr);
+        static info::CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_ptr CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_next(nullptr);
+        static info::CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_clbk CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_user(nullptr);
         
-        void CBossMonsterScheduleSystemAnalysisMsg2_wrapper(struct CBossMonsterScheduleSystem* _this, struct ScheduleMSG* pMSG)
+        static void CBossMonsterScheduleSystemAnalysisMsg2_wrapper(struct CBossMonsterScheduleSystem* _this, struct ScheduleMSG* pMSG)
         {
            CBossMonsterScheduleSystemAnalysisMsg2_user(_this, pMSG, CBossMonsterScheduleSystemAnalysisMsg2_next);
         };
-        void CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static void CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_user(_this, CBossMonsterScheduleSystemctor_CBossMonsterScheduleSystem4_next);
         };
-        bool CBossMonsterScheduleSystemCreateTaskPool6_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static bool CBossMonsterScheduleSystemCreateTaskPool6_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            return CBossMonsterScheduleSystemCreateTaskPool6_user(_this, CBossMonsterScheduleSystemCreateTaskPool6_next);
         };
-        bool CBossMonsterScheduleSystemCreateWorkerThread8_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static bool CBossMonsterScheduleSystemCreateWorkerThread8_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            return CBossMonsterScheduleSystemCreateWorkerThread8_user(_this, CBossMonsterScheduleSystemCreateWorkerThread8_next);
         };
-        bool CBossMonsterScheduleSystemInit10_wrapper(struct CBossMonsterScheduleSystem* _this, struct CMapOperation* pMapOper)
+        static bool CBossMonsterScheduleSystemInit10_wrapper(struct CBossMonsterScheduleSystem* _this, struct CMapOperation* pMapOper)
         {
            return CBossMonsterScheduleSystemInit10_user(_this, pMapOper, CBossMonsterScheduleSystemInit10_next);
         };
-        struct CBossMonsterScheduleSystem* CBossMonsterScheduleSystemInstance12_wrapper()
+        static struct CBossMonsterScheduleSystem* CBossMonsterScheduleSystemInstance12_wrapper()
         {
            return CBossMonsterScheduleSystemInstance12_user(CBossMonsterScheduleSystemInstance12_next);
         };
-        struct BossSchedule* CBossMonsterScheduleSystemLoadSchedule14_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct INI_Section* pSection)
+        static struct BossSchedule* CBossMonsterScheduleSystemLoadSchedule14_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct INI_Section* pSection)
         {
            return CBossMonsterScheduleSystemLoadSchedule14_user(_this, pMapSchedule, pSection, CBossMonsterScheduleSystemLoadSchedule14_next);
         };
-        struct BossSchedule_Map* CBossMonsterScheduleSystemMakeMap16_wrapper(struct CBossMonsterScheduleSystem* _this, int nIndex, struct CMapData* pMap)
+        static struct BossSchedule_Map* CBossMonsterScheduleSystemMakeMap16_wrapper(struct CBossMonsterScheduleSystem* _this, int nIndex, struct CMapData* pMap)
         {
            return CBossMonsterScheduleSystemMakeMap16_user(_this, nIndex, pMap, CBossMonsterScheduleSystemMakeMap16_next);
         };
-        struct BossSchedule* CBossMonsterScheduleSystemMakeSchedule18_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct _mon_active* pMonAct, struct _mon_block* pBlock, int nActIndex, int nBlockIndex)
+        static struct BossSchedule* CBossMonsterScheduleSystemMakeSchedule18_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct _mon_active* pMonAct, struct _mon_block* pBlock, int nActIndex, int nBlockIndex)
         {
            return CBossMonsterScheduleSystemMakeSchedule18_user(_this, pMapSchedule, pMonAct, pBlock, nActIndex, nBlockIndex, CBossMonsterScheduleSystemMakeSchedule18_next);
         };
-        struct BossSchedule_TBL* CBossMonsterScheduleSystemMakeTBL20_wrapper(struct CBossMonsterScheduleSystem* _this, struct CMapOperation* pMapOper)
+        static struct BossSchedule_TBL* CBossMonsterScheduleSystemMakeTBL20_wrapper(struct CBossMonsterScheduleSystem* _this, struct CMapOperation* pMapOper)
         {
            return CBossMonsterScheduleSystemMakeTBL20_user(_this, pMapOper, CBossMonsterScheduleSystemMakeTBL20_next);
         };
-        void CBossMonsterScheduleSystemRespawnMonster22_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static void CBossMonsterScheduleSystemRespawnMonster22_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            CBossMonsterScheduleSystemRespawnMonster22_user(_this, CBossMonsterScheduleSystemRespawnMonster22_next);
         };
-        void CBossMonsterScheduleSystemSavechedule24_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct BossSchedule* pSchedule)
+        static void CBossMonsterScheduleSystemSavechedule24_wrapper(struct CBossMonsterScheduleSystem* _this, struct BossSchedule_Map* pMapSchedule, struct BossSchedule* pSchedule)
         {
            CBossMonsterScheduleSystemSavechedule24_user(_this, pMapSchedule, pSchedule, CBossMonsterScheduleSystemSavechedule24_next);
         };
-        int CBossMonsterScheduleSystemWorkProc26_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static int CBossMonsterScheduleSystemWorkProc26_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            return CBossMonsterScheduleSystemWorkProc26_user(_this, CBossMonsterScheduleSystemWorkProc26_next);
         };
-        void CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_wrapper(struct CBossMonsterScheduleSystem* _this)
+        static void CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_wrapper(struct CBossMonsterScheduleSystem* _this)
         {
            CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_user(_this, CBossMonsterScheduleSystemdtor_CBossMonsterScheduleSystem31_next);
         };
         
-        hook_record CBossMonsterScheduleSystem_functions[] = {
+        static hook_record CBossMonsterScheduleSystem_functions[] = {
         {   (LPVOID)0x140419cb0L,
             (LPVOID *)&CBossMonsterScheduleSystemAnalysisMsg2_user,
             (LPVOID *)&CBossMonsterScheduleSystemAnalysisMsg2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

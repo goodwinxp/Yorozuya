@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_SYNC_STATEInit2_ptr _SYNC_STATEInit2_next(nullptr);
-        info::_SYNC_STATEInit2_clbk _SYNC_STATEInit2_user(nullptr);
-        info::_SYNC_STATEctor__SYNC_STATE4_ptr _SYNC_STATEctor__SYNC_STATE4_next(nullptr);
-        info::_SYNC_STATEctor__SYNC_STATE4_clbk _SYNC_STATEctor__SYNC_STATE4_user(nullptr);
-        info::_SYNC_STATEchk_enter6_ptr _SYNC_STATEchk_enter6_next(nullptr);
-        info::_SYNC_STATEchk_enter6_clbk _SYNC_STATEchk_enter6_user(nullptr);
-        info::_SYNC_STATEchk_reged8_ptr _SYNC_STATEchk_reged8_next(nullptr);
-        info::_SYNC_STATEchk_reged8_clbk _SYNC_STATEchk_reged8_user(nullptr);
-        info::_SYNC_STATEchk_select10_ptr _SYNC_STATEchk_select10_next(nullptr);
-        info::_SYNC_STATEchk_select10_clbk _SYNC_STATEchk_select10_user(nullptr);
-        info::_SYNC_STATEre_lobby12_ptr _SYNC_STATEre_lobby12_next(nullptr);
-        info::_SYNC_STATEre_lobby12_clbk _SYNC_STATEre_lobby12_user(nullptr);
+        static info::_SYNC_STATEInit2_ptr _SYNC_STATEInit2_next(nullptr);
+        static info::_SYNC_STATEInit2_clbk _SYNC_STATEInit2_user(nullptr);
+        static info::_SYNC_STATEctor__SYNC_STATE4_ptr _SYNC_STATEctor__SYNC_STATE4_next(nullptr);
+        static info::_SYNC_STATEctor__SYNC_STATE4_clbk _SYNC_STATEctor__SYNC_STATE4_user(nullptr);
+        static info::_SYNC_STATEchk_enter6_ptr _SYNC_STATEchk_enter6_next(nullptr);
+        static info::_SYNC_STATEchk_enter6_clbk _SYNC_STATEchk_enter6_user(nullptr);
+        static info::_SYNC_STATEchk_reged8_ptr _SYNC_STATEchk_reged8_next(nullptr);
+        static info::_SYNC_STATEchk_reged8_clbk _SYNC_STATEchk_reged8_user(nullptr);
+        static info::_SYNC_STATEchk_select10_ptr _SYNC_STATEchk_select10_next(nullptr);
+        static info::_SYNC_STATEchk_select10_clbk _SYNC_STATEchk_select10_user(nullptr);
+        static info::_SYNC_STATEre_lobby12_ptr _SYNC_STATEre_lobby12_next(nullptr);
+        static info::_SYNC_STATEre_lobby12_clbk _SYNC_STATEre_lobby12_user(nullptr);
         
-        void _SYNC_STATEInit2_wrapper(struct _SYNC_STATE* _this)
+        static void _SYNC_STATEInit2_wrapper(struct _SYNC_STATE* _this)
         {
            _SYNC_STATEInit2_user(_this, _SYNC_STATEInit2_next);
         };
-        void _SYNC_STATEctor__SYNC_STATE4_wrapper(struct _SYNC_STATE* _this)
+        static void _SYNC_STATEctor__SYNC_STATE4_wrapper(struct _SYNC_STATE* _this)
         {
            _SYNC_STATEctor__SYNC_STATE4_user(_this, _SYNC_STATEctor__SYNC_STATE4_next);
         };
-        bool _SYNC_STATEchk_enter6_wrapper(struct _SYNC_STATE* _this)
+        static bool _SYNC_STATEchk_enter6_wrapper(struct _SYNC_STATE* _this)
         {
            return _SYNC_STATEchk_enter6_user(_this, _SYNC_STATEchk_enter6_next);
         };
-        bool _SYNC_STATEchk_reged8_wrapper(struct _SYNC_STATE* _this)
+        static bool _SYNC_STATEchk_reged8_wrapper(struct _SYNC_STATE* _this)
         {
            return _SYNC_STATEchk_reged8_user(_this, _SYNC_STATEchk_reged8_next);
         };
-        bool _SYNC_STATEchk_select10_wrapper(struct _SYNC_STATE* _this)
+        static bool _SYNC_STATEchk_select10_wrapper(struct _SYNC_STATE* _this)
         {
            return _SYNC_STATEchk_select10_user(_this, _SYNC_STATEchk_select10_next);
         };
-        void _SYNC_STATEre_lobby12_wrapper(struct _SYNC_STATE* _this)
+        static void _SYNC_STATEre_lobby12_wrapper(struct _SYNC_STATE* _this)
         {
            _SYNC_STATEre_lobby12_user(_this, _SYNC_STATEre_lobby12_next);
         };
         
-        hook_record _SYNC_STATE_functions[] = {
+        static hook_record _SYNC_STATE_functions[] = {
         {   (LPVOID)0x14011f120L,
             (LPVOID *)&_SYNC_STATEInit2_user,
             (LPVOID *)&_SYNC_STATEInit2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

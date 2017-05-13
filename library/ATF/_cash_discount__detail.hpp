@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_cash_discount_ctor__cash_discount_2_ptr _cash_discount_ctor__cash_discount_2_next(nullptr);
-        info::_cash_discount_ctor__cash_discount_2_clbk _cash_discount_ctor__cash_discount_2_user(nullptr);
-        info::_cash_discount_dtor__cash_discount_4_ptr _cash_discount_dtor__cash_discount_4_next(nullptr);
-        info::_cash_discount_dtor__cash_discount_4_clbk _cash_discount_dtor__cash_discount_4_user(nullptr);
+        static info::_cash_discount_ctor__cash_discount_2_ptr _cash_discount_ctor__cash_discount_2_next(nullptr);
+        static info::_cash_discount_ctor__cash_discount_2_clbk _cash_discount_ctor__cash_discount_2_user(nullptr);
+        static info::_cash_discount_dtor__cash_discount_4_ptr _cash_discount_dtor__cash_discount_4_next(nullptr);
+        static info::_cash_discount_dtor__cash_discount_4_clbk _cash_discount_dtor__cash_discount_4_user(nullptr);
         
-        void _cash_discount_ctor__cash_discount_2_wrapper(struct _cash_discount_* _this)
+        static void _cash_discount_ctor__cash_discount_2_wrapper(struct _cash_discount_* _this)
         {
            _cash_discount_ctor__cash_discount_2_user(_this, _cash_discount_ctor__cash_discount_2_next);
         };
-        void _cash_discount_dtor__cash_discount_4_wrapper(struct _cash_discount_* _this)
+        static void _cash_discount_dtor__cash_discount_4_wrapper(struct _cash_discount_* _this)
         {
            _cash_discount_dtor__cash_discount_4_user(_this, _cash_discount_dtor__cash_discount_4_next);
         };
         
-        hook_record _cash_discount__functions[] = {
+        static hook_record _cash_discount__functions[] = {
         {   (LPVOID)0x1403043f0L,
             (LPVOID *)&_cash_discount_ctor__cash_discount_2_user,
             (LPVOID *)&_cash_discount_ctor__cash_discount_2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

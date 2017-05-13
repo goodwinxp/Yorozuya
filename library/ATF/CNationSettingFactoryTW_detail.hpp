@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingFactoryTWctor_CNationSettingFactoryTW2_ptr CNationSettingFactoryTWctor_CNationSettingFactoryTW2_next(nullptr);
-        info::CNationSettingFactoryTWctor_CNationSettingFactoryTW2_clbk CNationSettingFactoryTWctor_CNationSettingFactoryTW2_user(nullptr);
-        info::CNationSettingFactoryTWCreate4_ptr CNationSettingFactoryTWCreate4_next(nullptr);
-        info::CNationSettingFactoryTWCreate4_clbk CNationSettingFactoryTWCreate4_user(nullptr);
+        static info::CNationSettingFactoryTWctor_CNationSettingFactoryTW2_ptr CNationSettingFactoryTWctor_CNationSettingFactoryTW2_next(nullptr);
+        static info::CNationSettingFactoryTWctor_CNationSettingFactoryTW2_clbk CNationSettingFactoryTWctor_CNationSettingFactoryTW2_user(nullptr);
+        static info::CNationSettingFactoryTWCreate4_ptr CNationSettingFactoryTWCreate4_next(nullptr);
+        static info::CNationSettingFactoryTWCreate4_clbk CNationSettingFactoryTWCreate4_user(nullptr);
         
-        void CNationSettingFactoryTWctor_CNationSettingFactoryTW2_wrapper(struct CNationSettingFactoryTW* _this)
+        static void CNationSettingFactoryTWctor_CNationSettingFactoryTW2_wrapper(struct CNationSettingFactoryTW* _this)
         {
            CNationSettingFactoryTWctor_CNationSettingFactoryTW2_user(_this, CNationSettingFactoryTWctor_CNationSettingFactoryTW2_next);
         };
-        struct CNationSettingData* CNationSettingFactoryTWCreate4_wrapper(struct CNationSettingFactoryTW* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
+        static struct CNationSettingData* CNationSettingFactoryTWCreate4_wrapper(struct CNationSettingFactoryTW* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
         {
            return CNationSettingFactoryTWCreate4_user(_this, iNationCode, szNationCodeStr, bServiceMode, CNationSettingFactoryTWCreate4_next);
         };
         
-        hook_record CNationSettingFactoryTW_functions[] = {
+        static hook_record CNationSettingFactoryTW_functions[] = {
         {   (LPVOID)0x140219760L,
             (LPVOID *)&CNationSettingFactoryTWctor_CNationSettingFactoryTW2_user,
             (LPVOID *)&CNationSettingFactoryTWctor_CNationSettingFactoryTW2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

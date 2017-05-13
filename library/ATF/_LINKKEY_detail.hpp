@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_LINKKEYCovDBKey2_ptr _LINKKEYCovDBKey2_next(nullptr);
-        info::_LINKKEYCovDBKey2_clbk _LINKKEYCovDBKey2_user(nullptr);
-        info::_LINKKEYGetCode4_ptr _LINKKEYGetCode4_next(nullptr);
-        info::_LINKKEYGetCode4_clbk _LINKKEYGetCode4_user(nullptr);
-        info::_LINKKEYGetIndex6_ptr _LINKKEYGetIndex6_next(nullptr);
-        info::_LINKKEYGetIndex6_clbk _LINKKEYGetIndex6_user(nullptr);
-        info::_LINKKEYIsFilled8_ptr _LINKKEYIsFilled8_next(nullptr);
-        info::_LINKKEYIsFilled8_clbk _LINKKEYIsFilled8_user(nullptr);
-        info::_LINKKEYLoadDBKey10_ptr _LINKKEYLoadDBKey10_next(nullptr);
-        info::_LINKKEYLoadDBKey10_clbk _LINKKEYLoadDBKey10_user(nullptr);
-        info::_LINKKEYSetData12_ptr _LINKKEYSetData12_next(nullptr);
-        info::_LINKKEYSetData12_clbk _LINKKEYSetData12_user(nullptr);
-        info::_LINKKEYSetRelease14_ptr _LINKKEYSetRelease14_next(nullptr);
-        info::_LINKKEYSetRelease14_clbk _LINKKEYSetRelease14_user(nullptr);
+        static info::_LINKKEYCovDBKey2_ptr _LINKKEYCovDBKey2_next(nullptr);
+        static info::_LINKKEYCovDBKey2_clbk _LINKKEYCovDBKey2_user(nullptr);
+        static info::_LINKKEYGetCode4_ptr _LINKKEYGetCode4_next(nullptr);
+        static info::_LINKKEYGetCode4_clbk _LINKKEYGetCode4_user(nullptr);
+        static info::_LINKKEYGetIndex6_ptr _LINKKEYGetIndex6_next(nullptr);
+        static info::_LINKKEYGetIndex6_clbk _LINKKEYGetIndex6_user(nullptr);
+        static info::_LINKKEYIsFilled8_ptr _LINKKEYIsFilled8_next(nullptr);
+        static info::_LINKKEYIsFilled8_clbk _LINKKEYIsFilled8_user(nullptr);
+        static info::_LINKKEYLoadDBKey10_ptr _LINKKEYLoadDBKey10_next(nullptr);
+        static info::_LINKKEYLoadDBKey10_clbk _LINKKEYLoadDBKey10_user(nullptr);
+        static info::_LINKKEYSetData12_ptr _LINKKEYSetData12_next(nullptr);
+        static info::_LINKKEYSetData12_clbk _LINKKEYSetData12_user(nullptr);
+        static info::_LINKKEYSetRelease14_ptr _LINKKEYSetRelease14_next(nullptr);
+        static info::_LINKKEYSetRelease14_clbk _LINKKEYSetRelease14_user(nullptr);
         
-        int16_t _LINKKEYCovDBKey2_wrapper(struct _LINKKEY* _this)
+        static int16_t _LINKKEYCovDBKey2_wrapper(struct _LINKKEY* _this)
         {
            return _LINKKEYCovDBKey2_user(_this, _LINKKEYCovDBKey2_next);
         };
-        uint16_t _LINKKEYGetCode4_wrapper(struct _LINKKEY* _this)
+        static uint16_t _LINKKEYGetCode4_wrapper(struct _LINKKEY* _this)
         {
            return _LINKKEYGetCode4_user(_this, _LINKKEYGetCode4_next);
         };
-        uint16_t _LINKKEYGetIndex6_wrapper(struct _LINKKEY* _this)
+        static uint16_t _LINKKEYGetIndex6_wrapper(struct _LINKKEY* _this)
         {
            return _LINKKEYGetIndex6_user(_this, _LINKKEYGetIndex6_next);
         };
-        bool _LINKKEYIsFilled8_wrapper(struct _LINKKEY* _this)
+        static bool _LINKKEYIsFilled8_wrapper(struct _LINKKEY* _this)
         {
            return _LINKKEYIsFilled8_user(_this, _LINKKEYIsFilled8_next);
         };
-        void _LINKKEYLoadDBKey10_wrapper(struct _LINKKEY* _this, int16_t pl_zKey)
+        static void _LINKKEYLoadDBKey10_wrapper(struct _LINKKEY* _this, int16_t pl_zKey)
         {
            _LINKKEYLoadDBKey10_user(_this, pl_zKey, _LINKKEYLoadDBKey10_next);
         };
-        void _LINKKEYSetData12_wrapper(struct _LINKKEY* _this, uint16_t wCode, uint16_t wIndex)
+        static void _LINKKEYSetData12_wrapper(struct _LINKKEY* _this, uint16_t wCode, uint16_t wIndex)
         {
            _LINKKEYSetData12_user(_this, wCode, wIndex, _LINKKEYSetData12_next);
         };
-        void _LINKKEYSetRelease14_wrapper(struct _LINKKEY* _this)
+        static void _LINKKEYSetRelease14_wrapper(struct _LINKKEY* _this)
         {
            _LINKKEYSetRelease14_user(_this, _LINKKEYSetRelease14_next);
         };
         
-        hook_record _LINKKEY_functions[] = {
+        static hook_record _LINKKEY_functions[] = {
         {   (LPVOID)0x1401bf300L,
             (LPVOID *)&_LINKKEYCovDBKey2_user,
             (LPVOID *)&_LINKKEYCovDBKey2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::Player_TL_StatusGetTLStatus2_ptr Player_TL_StatusGetTLStatus2_next(nullptr);
-        info::Player_TL_StatusGetTLStatus2_clbk Player_TL_StatusGetTLStatus2_user(nullptr);
+        static info::Player_TL_StatusGetTLStatus2_ptr Player_TL_StatusGetTLStatus2_next(nullptr);
+        static info::Player_TL_StatusGetTLStatus2_clbk Player_TL_StatusGetTLStatus2_user(nullptr);
         
-        char Player_TL_StatusGetTLStatus2_wrapper(struct Player_TL_Status* _this)
+        static char Player_TL_StatusGetTLStatus2_wrapper(struct Player_TL_Status* _this)
         {
            return Player_TL_StatusGetTLStatus2_user(_this, Player_TL_StatusGetTLStatus2_next);
         };
         
-        hook_record Player_TL_Status_functions[] = {
+        static hook_record Player_TL_Status_functions[] = {
         {   (LPVOID)0x1403947c0L,
             (LPVOID *)&Player_TL_StatusGetTLStatus2_user,
             (LPVOID *)&Player_TL_StatusGetTLStatus2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

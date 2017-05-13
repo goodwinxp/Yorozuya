@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSUItemSystemctor_CSUItemSystem2_ptr CSUItemSystemctor_CSUItemSystem2_next(nullptr);
-        info::CSUItemSystemctor_CSUItemSystem2_clbk CSUItemSystemctor_CSUItemSystem2_user(nullptr);
-        info::CSUItemSystemClass_Init4_ptr CSUItemSystemClass_Init4_next(nullptr);
-        info::CSUItemSystemClass_Init4_clbk CSUItemSystemClass_Init4_user(nullptr);
-        info::CSUItemSystemGetCRecordData_SetItem6_ptr CSUItemSystemGetCRecordData_SetItem6_next(nullptr);
-        info::CSUItemSystemGetCRecordData_SetItem6_clbk CSUItemSystemGetCRecordData_SetItem6_user(nullptr);
-        info::CSUItemSystemGetCSetItemType8_ptr CSUItemSystemGetCSetItemType8_next(nullptr);
-        info::CSUItemSystemGetCSetItemType8_clbk CSUItemSystemGetCSetItemType8_user(nullptr);
-        info::CSUItemSystemGetSetItemTableInfo10_ptr CSUItemSystemGetSetItemTableInfo10_next(nullptr);
-        info::CSUItemSystemGetSetItemTableInfo10_clbk CSUItemSystemGetSetItemTableInfo10_user(nullptr);
-        info::CSUItemSystemInstance12_ptr CSUItemSystemInstance12_next(nullptr);
-        info::CSUItemSystemInstance12_clbk CSUItemSystemInstance12_user(nullptr);
-        info::CSUItemSystemSUItemSystem_CheckData14_ptr CSUItemSystemSUItemSystem_CheckData14_next(nullptr);
-        info::CSUItemSystemSUItemSystem_CheckData14_clbk CSUItemSystemSUItemSystem_CheckData14_user(nullptr);
-        info::CSUItemSystemSUItemSystem_Init16_ptr CSUItemSystemSUItemSystem_Init16_next(nullptr);
-        info::CSUItemSystemSUItemSystem_Init16_clbk CSUItemSystemSUItemSystem_Init16_user(nullptr);
-        info::CSUItemSystemSUItemSystem_UnInit18_ptr CSUItemSystemSUItemSystem_UnInit18_next(nullptr);
-        info::CSUItemSystemSUItemSystem_UnInit18_clbk CSUItemSystemSUItemSystem_UnInit18_user(nullptr);
-        info::CSUItemSystemdtor_CSUItemSystem20_ptr CSUItemSystemdtor_CSUItemSystem20_next(nullptr);
-        info::CSUItemSystemdtor_CSUItemSystem20_clbk CSUItemSystemdtor_CSUItemSystem20_user(nullptr);
+        static info::CSUItemSystemctor_CSUItemSystem2_ptr CSUItemSystemctor_CSUItemSystem2_next(nullptr);
+        static info::CSUItemSystemctor_CSUItemSystem2_clbk CSUItemSystemctor_CSUItemSystem2_user(nullptr);
+        static info::CSUItemSystemClass_Init4_ptr CSUItemSystemClass_Init4_next(nullptr);
+        static info::CSUItemSystemClass_Init4_clbk CSUItemSystemClass_Init4_user(nullptr);
+        static info::CSUItemSystemGetCRecordData_SetItem6_ptr CSUItemSystemGetCRecordData_SetItem6_next(nullptr);
+        static info::CSUItemSystemGetCRecordData_SetItem6_clbk CSUItemSystemGetCRecordData_SetItem6_user(nullptr);
+        static info::CSUItemSystemGetCSetItemType8_ptr CSUItemSystemGetCSetItemType8_next(nullptr);
+        static info::CSUItemSystemGetCSetItemType8_clbk CSUItemSystemGetCSetItemType8_user(nullptr);
+        static info::CSUItemSystemGetSetItemTableInfo10_ptr CSUItemSystemGetSetItemTableInfo10_next(nullptr);
+        static info::CSUItemSystemGetSetItemTableInfo10_clbk CSUItemSystemGetSetItemTableInfo10_user(nullptr);
+        static info::CSUItemSystemInstance12_ptr CSUItemSystemInstance12_next(nullptr);
+        static info::CSUItemSystemInstance12_clbk CSUItemSystemInstance12_user(nullptr);
+        static info::CSUItemSystemSUItemSystem_CheckData14_ptr CSUItemSystemSUItemSystem_CheckData14_next(nullptr);
+        static info::CSUItemSystemSUItemSystem_CheckData14_clbk CSUItemSystemSUItemSystem_CheckData14_user(nullptr);
+        static info::CSUItemSystemSUItemSystem_Init16_ptr CSUItemSystemSUItemSystem_Init16_next(nullptr);
+        static info::CSUItemSystemSUItemSystem_Init16_clbk CSUItemSystemSUItemSystem_Init16_user(nullptr);
+        static info::CSUItemSystemSUItemSystem_UnInit18_ptr CSUItemSystemSUItemSystem_UnInit18_next(nullptr);
+        static info::CSUItemSystemSUItemSystem_UnInit18_clbk CSUItemSystemSUItemSystem_UnInit18_user(nullptr);
+        static info::CSUItemSystemdtor_CSUItemSystem20_ptr CSUItemSystemdtor_CSUItemSystem20_next(nullptr);
+        static info::CSUItemSystemdtor_CSUItemSystem20_clbk CSUItemSystemdtor_CSUItemSystem20_user(nullptr);
         
-        void CSUItemSystemctor_CSUItemSystem2_wrapper(struct CSUItemSystem* _this)
+        static void CSUItemSystemctor_CSUItemSystem2_wrapper(struct CSUItemSystem* _this)
         {
            CSUItemSystemctor_CSUItemSystem2_user(_this, CSUItemSystemctor_CSUItemSystem2_next);
         };
-        void CSUItemSystemClass_Init4_wrapper(struct CSUItemSystem* _this)
+        static void CSUItemSystemClass_Init4_wrapper(struct CSUItemSystem* _this)
         {
            CSUItemSystemClass_Init4_user(_this, CSUItemSystemClass_Init4_next);
         };
-        struct CRecordData* CSUItemSystemGetCRecordData_SetItem6_wrapper(struct CSUItemSystem* _this)
+        static struct CRecordData* CSUItemSystemGetCRecordData_SetItem6_wrapper(struct CSUItemSystem* _this)
         {
            return CSUItemSystemGetCRecordData_SetItem6_user(_this, CSUItemSystemGetCRecordData_SetItem6_next);
         };
-        struct CSetItemType* CSUItemSystemGetCSetItemType8_wrapper(struct CSUItemSystem* _this)
+        static struct CSetItemType* CSUItemSystemGetCSetItemType8_wrapper(struct CSUItemSystem* _this)
         {
            return CSUItemSystemGetCSetItemType8_user(_this, CSUItemSystemGetCSetItemType8_next);
         };
-        int CSUItemSystemGetSetItemTableInfo10_wrapper(struct CSUItemSystem* _this, unsigned int dwSetItemEff, char* pStrCode, int nBufSize)
+        static int CSUItemSystemGetSetItemTableInfo10_wrapper(struct CSUItemSystem* _this, unsigned int dwSetItemEff, char* pStrCode, int nBufSize)
         {
            return CSUItemSystemGetSetItemTableInfo10_user(_this, dwSetItemEff, pStrCode, nBufSize, CSUItemSystemGetSetItemTableInfo10_next);
         };
-        struct CSUItemSystem* CSUItemSystemInstance12_wrapper()
+        static struct CSUItemSystem* CSUItemSystemInstance12_wrapper()
         {
            return CSUItemSystemInstance12_user(CSUItemSystemInstance12_next);
         };
-        bool CSUItemSystemSUItemSystem_CheckData14_wrapper(struct CSUItemSystem* _this)
+        static bool CSUItemSystemSUItemSystem_CheckData14_wrapper(struct CSUItemSystem* _this)
         {
            return CSUItemSystemSUItemSystem_CheckData14_user(_this, CSUItemSystemSUItemSystem_CheckData14_next);
         };
-        bool CSUItemSystemSUItemSystem_Init16_wrapper(struct CSUItemSystem* _this)
+        static bool CSUItemSystemSUItemSystem_Init16_wrapper(struct CSUItemSystem* _this)
         {
            return CSUItemSystemSUItemSystem_Init16_user(_this, CSUItemSystemSUItemSystem_Init16_next);
         };
-        bool CSUItemSystemSUItemSystem_UnInit18_wrapper(struct CSUItemSystem* _this)
+        static bool CSUItemSystemSUItemSystem_UnInit18_wrapper(struct CSUItemSystem* _this)
         {
            return CSUItemSystemSUItemSystem_UnInit18_user(_this, CSUItemSystemSUItemSystem_UnInit18_next);
         };
-        void CSUItemSystemdtor_CSUItemSystem20_wrapper(struct CSUItemSystem* _this)
+        static void CSUItemSystemdtor_CSUItemSystem20_wrapper(struct CSUItemSystem* _this)
         {
            CSUItemSystemdtor_CSUItemSystem20_user(_this, CSUItemSystemdtor_CSUItemSystem20_next);
         };
         
-        hook_record CSUItemSystem_functions[] = {
+        static hook_record CSUItemSystem_functions[] = {
         {   (LPVOID)0x1402e3d70L,
             (LPVOID *)&CSUItemSystemctor_CSUItemSystem2_user,
             (LPVOID *)&CSUItemSystemctor_CSUItemSystem2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,141 +8,141 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPostSystemManagerctor_CPostSystemManager2_ptr CPostSystemManagerctor_CPostSystemManager2_next(nullptr);
-        info::CPostSystemManagerctor_CPostSystemManager2_clbk CPostSystemManagerctor_CPostSystemManager2_user(nullptr);
-        info::CPostSystemManagerCheckRegister4_ptr CPostSystemManagerCheckRegister4_next(nullptr);
-        info::CPostSystemManagerCheckRegister4_clbk CPostSystemManagerCheckRegister4_user(nullptr);
-        info::CPostSystemManagerCompletePostReceiverCheck6_ptr CPostSystemManagerCompletePostReceiverCheck6_next(nullptr);
-        info::CPostSystemManagerCompletePostReceiverCheck6_clbk CPostSystemManagerCompletePostReceiverCheck6_user(nullptr);
-        info::CPostSystemManagerCompleteRegist8_ptr CPostSystemManagerCompleteRegist8_next(nullptr);
-        info::CPostSystemManagerCompleteRegist8_clbk CPostSystemManagerCompleteRegist8_user(nullptr);
-        info::CPostSystemManagerCompleteSend10_ptr CPostSystemManagerCompleteSend10_next(nullptr);
-        info::CPostSystemManagerCompleteSend10_clbk CPostSystemManagerCompleteSend10_user(nullptr);
-        info::CPostSystemManagerDestroy12_ptr CPostSystemManagerDestroy12_next(nullptr);
-        info::CPostSystemManagerDestroy12_clbk CPostSystemManagerDestroy12_user(nullptr);
-        info::CPostSystemManagerInit14_ptr CPostSystemManagerInit14_next(nullptr);
-        info::CPostSystemManagerInit14_clbk CPostSystemManagerInit14_user(nullptr);
-        info::CPostSystemManagerInitLogger16_ptr CPostSystemManagerInitLogger16_next(nullptr);
-        info::CPostSystemManagerInitLogger16_clbk CPostSystemManagerInitLogger16_user(nullptr);
-        info::CPostSystemManagerInsertDefaultPSRecord18_ptr CPostSystemManagerInsertDefaultPSRecord18_next(nullptr);
-        info::CPostSystemManagerInsertDefaultPSRecord18_clbk CPostSystemManagerInsertDefaultPSRecord18_user(nullptr);
-        info::CPostSystemManagerInstace20_ptr CPostSystemManagerInstace20_next(nullptr);
-        info::CPostSystemManagerInstace20_clbk CPostSystemManagerInstace20_user(nullptr);
-        info::CPostSystemManagerLoad22_ptr CPostSystemManagerLoad22_next(nullptr);
-        info::CPostSystemManagerLoad22_clbk CPostSystemManagerLoad22_user(nullptr);
-        info::CPostSystemManagerLog24_ptr CPostSystemManagerLog24_next(nullptr);
-        info::CPostSystemManagerLog24_clbk CPostSystemManagerLog24_user(nullptr);
-        info::CPostSystemManagerLog26_ptr CPostSystemManagerLog26_next(nullptr);
-        info::CPostSystemManagerLog26_clbk CPostSystemManagerLog26_user(nullptr);
-        info::CPostSystemManagerLoop28_ptr CPostSystemManagerLoop28_next(nullptr);
-        info::CPostSystemManagerLoop28_clbk CPostSystemManagerLoop28_user(nullptr);
-        info::CPostSystemManagerPostReceiverCheck30_ptr CPostSystemManagerPostReceiverCheck30_next(nullptr);
-        info::CPostSystemManagerPostReceiverCheck30_clbk CPostSystemManagerPostReceiverCheck30_user(nullptr);
-        info::CPostSystemManagerPostRegistryLoad32_ptr CPostSystemManagerPostRegistryLoad32_next(nullptr);
-        info::CPostSystemManagerPostRegistryLoad32_clbk CPostSystemManagerPostRegistryLoad32_user(nullptr);
-        info::CPostSystemManagerPostSend34_ptr CPostSystemManagerPostSend34_next(nullptr);
-        info::CPostSystemManagerPostSend34_clbk CPostSystemManagerPostSend34_user(nullptr);
-        info::CPostSystemManagerPostSendRequest36_ptr CPostSystemManagerPostSendRequest36_next(nullptr);
-        info::CPostSystemManagerPostSendRequest36_clbk CPostSystemManagerPostSendRequest36_user(nullptr);
-        info::CPostSystemManagerSetNextWriteTime38_ptr CPostSystemManagerSetNextWriteTime38_next(nullptr);
-        info::CPostSystemManagerSetNextWriteTime38_clbk CPostSystemManagerSetNextWriteTime38_user(nullptr);
-        info::CPostSystemManagerUpdateDisappearOwnerRecord40_ptr CPostSystemManagerUpdateDisappearOwnerRecord40_next(nullptr);
-        info::CPostSystemManagerUpdateDisappearOwnerRecord40_clbk CPostSystemManagerUpdateDisappearOwnerRecord40_user(nullptr);
-        info::CPostSystemManagerUpdateRegist42_ptr CPostSystemManagerUpdateRegist42_next(nullptr);
-        info::CPostSystemManagerUpdateRegist42_clbk CPostSystemManagerUpdateRegist42_user(nullptr);
-        info::CPostSystemManagerdtor_CPostSystemManager46_ptr CPostSystemManagerdtor_CPostSystemManager46_next(nullptr);
-        info::CPostSystemManagerdtor_CPostSystemManager46_clbk CPostSystemManagerdtor_CPostSystemManager46_user(nullptr);
+        static info::CPostSystemManagerctor_CPostSystemManager2_ptr CPostSystemManagerctor_CPostSystemManager2_next(nullptr);
+        static info::CPostSystemManagerctor_CPostSystemManager2_clbk CPostSystemManagerctor_CPostSystemManager2_user(nullptr);
+        static info::CPostSystemManagerCheckRegister4_ptr CPostSystemManagerCheckRegister4_next(nullptr);
+        static info::CPostSystemManagerCheckRegister4_clbk CPostSystemManagerCheckRegister4_user(nullptr);
+        static info::CPostSystemManagerCompletePostReceiverCheck6_ptr CPostSystemManagerCompletePostReceiverCheck6_next(nullptr);
+        static info::CPostSystemManagerCompletePostReceiverCheck6_clbk CPostSystemManagerCompletePostReceiverCheck6_user(nullptr);
+        static info::CPostSystemManagerCompleteRegist8_ptr CPostSystemManagerCompleteRegist8_next(nullptr);
+        static info::CPostSystemManagerCompleteRegist8_clbk CPostSystemManagerCompleteRegist8_user(nullptr);
+        static info::CPostSystemManagerCompleteSend10_ptr CPostSystemManagerCompleteSend10_next(nullptr);
+        static info::CPostSystemManagerCompleteSend10_clbk CPostSystemManagerCompleteSend10_user(nullptr);
+        static info::CPostSystemManagerDestroy12_ptr CPostSystemManagerDestroy12_next(nullptr);
+        static info::CPostSystemManagerDestroy12_clbk CPostSystemManagerDestroy12_user(nullptr);
+        static info::CPostSystemManagerInit14_ptr CPostSystemManagerInit14_next(nullptr);
+        static info::CPostSystemManagerInit14_clbk CPostSystemManagerInit14_user(nullptr);
+        static info::CPostSystemManagerInitLogger16_ptr CPostSystemManagerInitLogger16_next(nullptr);
+        static info::CPostSystemManagerInitLogger16_clbk CPostSystemManagerInitLogger16_user(nullptr);
+        static info::CPostSystemManagerInsertDefaultPSRecord18_ptr CPostSystemManagerInsertDefaultPSRecord18_next(nullptr);
+        static info::CPostSystemManagerInsertDefaultPSRecord18_clbk CPostSystemManagerInsertDefaultPSRecord18_user(nullptr);
+        static info::CPostSystemManagerInstace20_ptr CPostSystemManagerInstace20_next(nullptr);
+        static info::CPostSystemManagerInstace20_clbk CPostSystemManagerInstace20_user(nullptr);
+        static info::CPostSystemManagerLoad22_ptr CPostSystemManagerLoad22_next(nullptr);
+        static info::CPostSystemManagerLoad22_clbk CPostSystemManagerLoad22_user(nullptr);
+        static info::CPostSystemManagerLog24_ptr CPostSystemManagerLog24_next(nullptr);
+        static info::CPostSystemManagerLog24_clbk CPostSystemManagerLog24_user(nullptr);
+        static info::CPostSystemManagerLog26_ptr CPostSystemManagerLog26_next(nullptr);
+        static info::CPostSystemManagerLog26_clbk CPostSystemManagerLog26_user(nullptr);
+        static info::CPostSystemManagerLoop28_ptr CPostSystemManagerLoop28_next(nullptr);
+        static info::CPostSystemManagerLoop28_clbk CPostSystemManagerLoop28_user(nullptr);
+        static info::CPostSystemManagerPostReceiverCheck30_ptr CPostSystemManagerPostReceiverCheck30_next(nullptr);
+        static info::CPostSystemManagerPostReceiverCheck30_clbk CPostSystemManagerPostReceiverCheck30_user(nullptr);
+        static info::CPostSystemManagerPostRegistryLoad32_ptr CPostSystemManagerPostRegistryLoad32_next(nullptr);
+        static info::CPostSystemManagerPostRegistryLoad32_clbk CPostSystemManagerPostRegistryLoad32_user(nullptr);
+        static info::CPostSystemManagerPostSend34_ptr CPostSystemManagerPostSend34_next(nullptr);
+        static info::CPostSystemManagerPostSend34_clbk CPostSystemManagerPostSend34_user(nullptr);
+        static info::CPostSystemManagerPostSendRequest36_ptr CPostSystemManagerPostSendRequest36_next(nullptr);
+        static info::CPostSystemManagerPostSendRequest36_clbk CPostSystemManagerPostSendRequest36_user(nullptr);
+        static info::CPostSystemManagerSetNextWriteTime38_ptr CPostSystemManagerSetNextWriteTime38_next(nullptr);
+        static info::CPostSystemManagerSetNextWriteTime38_clbk CPostSystemManagerSetNextWriteTime38_user(nullptr);
+        static info::CPostSystemManagerUpdateDisappearOwnerRecord40_ptr CPostSystemManagerUpdateDisappearOwnerRecord40_next(nullptr);
+        static info::CPostSystemManagerUpdateDisappearOwnerRecord40_clbk CPostSystemManagerUpdateDisappearOwnerRecord40_user(nullptr);
+        static info::CPostSystemManagerUpdateRegist42_ptr CPostSystemManagerUpdateRegist42_next(nullptr);
+        static info::CPostSystemManagerUpdateRegist42_clbk CPostSystemManagerUpdateRegist42_user(nullptr);
+        static info::CPostSystemManagerdtor_CPostSystemManager46_ptr CPostSystemManagerdtor_CPostSystemManager46_next(nullptr);
+        static info::CPostSystemManagerdtor_CPostSystemManager46_clbk CPostSystemManagerdtor_CPostSystemManager46_user(nullptr);
         
-        void CPostSystemManagerctor_CPostSystemManager2_wrapper(struct CPostSystemManager* _this)
+        static void CPostSystemManagerctor_CPostSystemManager2_wrapper(struct CPostSystemManager* _this)
         {
            CPostSystemManagerctor_CPostSystemManager2_user(_this, CPostSystemManagerctor_CPostSystemManager2_next);
         };
-        char CPostSystemManagerCheckRegister4_wrapper(struct CPostSystemManager* _this, struct CPlayer* pOne, struct _STORAGE_POS_INDIV* pItemInfo, unsigned int dwGold, struct _STORAGE_LIST::_db_con** pItem)
+        static char CPostSystemManagerCheckRegister4_wrapper(struct CPostSystemManager* _this, struct CPlayer* pOne, struct _STORAGE_POS_INDIV* pItemInfo, unsigned int dwGold, struct _STORAGE_LIST::_db_con** pItem)
         {
            return CPostSystemManagerCheckRegister4_user(_this, pOne, pItemInfo, dwGold, pItem, CPostSystemManagerCheckRegister4_next);
         };
-        void CPostSystemManagerCompletePostReceiverCheck6_wrapper(struct CPostSystemManager* _this, char* pData)
+        static void CPostSystemManagerCompletePostReceiverCheck6_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            CPostSystemManagerCompletePostReceiverCheck6_user(_this, pData, CPostSystemManagerCompletePostReceiverCheck6_next);
         };
-        void CPostSystemManagerCompleteRegist8_wrapper(struct CPostSystemManager* _this, char* pData)
+        static void CPostSystemManagerCompleteRegist8_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            CPostSystemManagerCompleteRegist8_user(_this, pData, CPostSystemManagerCompleteRegist8_next);
         };
-        void CPostSystemManagerCompleteSend10_wrapper(struct CPostSystemManager* _this, char* pData)
+        static void CPostSystemManagerCompleteSend10_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            CPostSystemManagerCompleteSend10_user(_this, pData, CPostSystemManagerCompleteSend10_next);
         };
-        void CPostSystemManagerDestroy12_wrapper()
+        static void CPostSystemManagerDestroy12_wrapper()
         {
            CPostSystemManagerDestroy12_user(CPostSystemManagerDestroy12_next);
         };
-        bool CPostSystemManagerInit14_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerInit14_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerInit14_user(_this, CPostSystemManagerInit14_next);
         };
-        bool CPostSystemManagerInitLogger16_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerInitLogger16_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerInitLogger16_user(_this, CPostSystemManagerInitLogger16_next);
         };
-        bool CPostSystemManagerInsertDefaultPSRecord18_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerInsertDefaultPSRecord18_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerInsertDefaultPSRecord18_user(_this, CPostSystemManagerInsertDefaultPSRecord18_next);
         };
-        struct CPostSystemManager* CPostSystemManagerInstace20_wrapper()
+        static struct CPostSystemManager* CPostSystemManagerInstace20_wrapper()
         {
            return CPostSystemManagerInstace20_user(CPostSystemManagerInstace20_next);
         };
-        bool CPostSystemManagerLoad22_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerLoad22_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerLoad22_user(_this, CPostSystemManagerLoad22_next);
         };
-        void CPostSystemManagerLog24_wrapper(struct CPostSystemManager* _this, char* fmt)
+        static void CPostSystemManagerLog24_wrapper(struct CPostSystemManager* _this, char* fmt)
         {
            CPostSystemManagerLog24_user(_this, fmt, CPostSystemManagerLog24_next);
         };
-        void CPostSystemManagerLog26_wrapper(struct CPostSystemManager* _this, wchar_t* fmt)
+        static void CPostSystemManagerLog26_wrapper(struct CPostSystemManager* _this, wchar_t* fmt)
         {
            CPostSystemManagerLog26_user(_this, fmt, CPostSystemManagerLog26_next);
         };
-        void CPostSystemManagerLoop28_wrapper(struct CPostSystemManager* _this)
+        static void CPostSystemManagerLoop28_wrapper(struct CPostSystemManager* _this)
         {
            CPostSystemManagerLoop28_user(_this, CPostSystemManagerLoop28_next);
         };
-        char CPostSystemManagerPostReceiverCheck30_wrapper(struct CPostSystemManager* _this, char* pData)
+        static char CPostSystemManagerPostReceiverCheck30_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            return CPostSystemManagerPostReceiverCheck30_user(_this, pData, CPostSystemManagerPostReceiverCheck30_next);
         };
-        bool CPostSystemManagerPostRegistryLoad32_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerPostRegistryLoad32_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerPostRegistryLoad32_user(_this, CPostSystemManagerPostRegistryLoad32_next);
         };
-        char CPostSystemManagerPostSend34_wrapper(struct CPostSystemManager* _this, char* pData)
+        static char CPostSystemManagerPostSend34_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            return CPostSystemManagerPostSend34_user(_this, pData, CPostSystemManagerPostSend34_next);
         };
-        bool CPostSystemManagerPostSendRequest36_wrapper(struct CPostSystemManager* _this, struct CPlayer* pOne, char* wszRecvName, char* wszTitle, char* wszContent, struct _STORAGE_POS_INDIV* pItemInfo, unsigned int dwGold, char byRace)
+        static bool CPostSystemManagerPostSendRequest36_wrapper(struct CPostSystemManager* _this, struct CPlayer* pOne, char* wszRecvName, char* wszTitle, char* wszContent, struct _STORAGE_POS_INDIV* pItemInfo, unsigned int dwGold, char byRace)
         {
            return CPostSystemManagerPostSendRequest36_user(_this, pOne, wszRecvName, wszTitle, wszContent, pItemInfo, dwGold, byRace, CPostSystemManagerPostSendRequest36_next);
         };
-        void CPostSystemManagerSetNextWriteTime38_wrapper(struct CPostSystemManager* _this)
+        static void CPostSystemManagerSetNextWriteTime38_wrapper(struct CPostSystemManager* _this)
         {
            CPostSystemManagerSetNextWriteTime38_user(_this, CPostSystemManagerSetNextWriteTime38_next);
         };
-        bool CPostSystemManagerUpdateDisappearOwnerRecord40_wrapper(struct CPostSystemManager* _this)
+        static bool CPostSystemManagerUpdateDisappearOwnerRecord40_wrapper(struct CPostSystemManager* _this)
         {
            return CPostSystemManagerUpdateDisappearOwnerRecord40_user(_this, CPostSystemManagerUpdateDisappearOwnerRecord40_next);
         };
-        char CPostSystemManagerUpdateRegist42_wrapper(struct CPostSystemManager* _this, char* pData)
+        static char CPostSystemManagerUpdateRegist42_wrapper(struct CPostSystemManager* _this, char* pData)
         {
            return CPostSystemManagerUpdateRegist42_user(_this, pData, CPostSystemManagerUpdateRegist42_next);
         };
-        void CPostSystemManagerdtor_CPostSystemManager46_wrapper(struct CPostSystemManager* _this)
+        static void CPostSystemManagerdtor_CPostSystemManager46_wrapper(struct CPostSystemManager* _this)
         {
            CPostSystemManagerdtor_CPostSystemManager46_user(_this, CPostSystemManagerdtor_CPostSystemManager46_next);
         };
         
-        hook_record CPostSystemManager_functions[] = {
+        static hook_record CPostSystemManager_functions[] = {
         {   (LPVOID)0x140324080L,
             (LPVOID *)&CPostSystemManagerctor_CPostSystemManager2_user,
             (LPVOID *)&CPostSystemManagerctor_CPostSystemManager2_next,
@@ -256,5 +256,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

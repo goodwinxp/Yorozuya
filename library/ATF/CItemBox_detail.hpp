@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CItemBoxctor_CItemBox2_ptr CItemBoxctor_CItemBox2_next(nullptr);
-        info::CItemBoxctor_CItemBox2_clbk CItemBoxctor_CItemBox2_user(nullptr);
-        info::CItemBoxCreate4_ptr CItemBoxCreate4_next(nullptr);
-        info::CItemBoxCreate4_clbk CItemBoxCreate4_user(nullptr);
-        info::CItemBoxDestroy6_ptr CItemBoxDestroy6_next(nullptr);
-        info::CItemBoxDestroy6_clbk CItemBoxDestroy6_user(nullptr);
-        info::CItemBoxInit8_ptr CItemBoxInit8_next(nullptr);
-        info::CItemBoxInit8_clbk CItemBoxInit8_user(nullptr);
-        info::CItemBoxIsTakeRight10_ptr CItemBoxIsTakeRight10_next(nullptr);
-        info::CItemBoxIsTakeRight10_clbk CItemBoxIsTakeRight10_user(nullptr);
-        info::CItemBoxLoop12_ptr CItemBoxLoop12_next(nullptr);
-        info::CItemBoxLoop12_clbk CItemBoxLoop12_user(nullptr);
-        info::CItemBoxSendMsg_Create14_ptr CItemBoxSendMsg_Create14_next(nullptr);
-        info::CItemBoxSendMsg_Create14_clbk CItemBoxSendMsg_Create14_user(nullptr);
-        info::CItemBoxSendMsg_Destroy16_ptr CItemBoxSendMsg_Destroy16_next(nullptr);
-        info::CItemBoxSendMsg_Destroy16_clbk CItemBoxSendMsg_Destroy16_user(nullptr);
-        info::CItemBoxSendMsg_FixPosition18_ptr CItemBoxSendMsg_FixPosition18_next(nullptr);
-        info::CItemBoxSendMsg_FixPosition18_clbk CItemBoxSendMsg_FixPosition18_user(nullptr);
-        info::CItemBoxSendMsg_StateChange20_ptr CItemBoxSendMsg_StateChange20_next(nullptr);
-        info::CItemBoxSendMsg_StateChange20_clbk CItemBoxSendMsg_StateChange20_user(nullptr);
-        info::CItemBoxdtor_CItemBox26_ptr CItemBoxdtor_CItemBox26_next(nullptr);
-        info::CItemBoxdtor_CItemBox26_clbk CItemBoxdtor_CItemBox26_user(nullptr);
+        static info::CItemBoxctor_CItemBox2_ptr CItemBoxctor_CItemBox2_next(nullptr);
+        static info::CItemBoxctor_CItemBox2_clbk CItemBoxctor_CItemBox2_user(nullptr);
+        static info::CItemBoxCreate4_ptr CItemBoxCreate4_next(nullptr);
+        static info::CItemBoxCreate4_clbk CItemBoxCreate4_user(nullptr);
+        static info::CItemBoxDestroy6_ptr CItemBoxDestroy6_next(nullptr);
+        static info::CItemBoxDestroy6_clbk CItemBoxDestroy6_user(nullptr);
+        static info::CItemBoxInit8_ptr CItemBoxInit8_next(nullptr);
+        static info::CItemBoxInit8_clbk CItemBoxInit8_user(nullptr);
+        static info::CItemBoxIsTakeRight10_ptr CItemBoxIsTakeRight10_next(nullptr);
+        static info::CItemBoxIsTakeRight10_clbk CItemBoxIsTakeRight10_user(nullptr);
+        static info::CItemBoxLoop12_ptr CItemBoxLoop12_next(nullptr);
+        static info::CItemBoxLoop12_clbk CItemBoxLoop12_user(nullptr);
+        static info::CItemBoxSendMsg_Create14_ptr CItemBoxSendMsg_Create14_next(nullptr);
+        static info::CItemBoxSendMsg_Create14_clbk CItemBoxSendMsg_Create14_user(nullptr);
+        static info::CItemBoxSendMsg_Destroy16_ptr CItemBoxSendMsg_Destroy16_next(nullptr);
+        static info::CItemBoxSendMsg_Destroy16_clbk CItemBoxSendMsg_Destroy16_user(nullptr);
+        static info::CItemBoxSendMsg_FixPosition18_ptr CItemBoxSendMsg_FixPosition18_next(nullptr);
+        static info::CItemBoxSendMsg_FixPosition18_clbk CItemBoxSendMsg_FixPosition18_user(nullptr);
+        static info::CItemBoxSendMsg_StateChange20_ptr CItemBoxSendMsg_StateChange20_next(nullptr);
+        static info::CItemBoxSendMsg_StateChange20_clbk CItemBoxSendMsg_StateChange20_user(nullptr);
+        static info::CItemBoxdtor_CItemBox26_ptr CItemBoxdtor_CItemBox26_next(nullptr);
+        static info::CItemBoxdtor_CItemBox26_clbk CItemBoxdtor_CItemBox26_user(nullptr);
         
-        void CItemBoxctor_CItemBox2_wrapper(struct CItemBox* _this)
+        static void CItemBoxctor_CItemBox2_wrapper(struct CItemBox* _this)
         {
            CItemBoxctor_CItemBox2_user(_this, CItemBoxctor_CItemBox2_next);
         };
-        bool CItemBoxCreate4_wrapper(struct CItemBox* _this, struct _itembox_create_setdata* pParam, bool bHide)
+        static bool CItemBoxCreate4_wrapper(struct CItemBox* _this, struct _itembox_create_setdata* pParam, bool bHide)
         {
            return CItemBoxCreate4_user(_this, pParam, bHide, CItemBoxCreate4_next);
         };
-        bool CItemBoxDestroy6_wrapper(struct CItemBox* _this)
+        static bool CItemBoxDestroy6_wrapper(struct CItemBox* _this)
         {
            return CItemBoxDestroy6_user(_this, CItemBoxDestroy6_next);
         };
-        void CItemBoxInit8_wrapper(struct CItemBox* _this, struct _object_id* pID)
+        static void CItemBoxInit8_wrapper(struct CItemBox* _this, struct _object_id* pID)
         {
            CItemBoxInit8_user(_this, pID, CItemBoxInit8_next);
         };
-        bool CItemBoxIsTakeRight10_wrapper(struct CItemBox* _this, struct CPlayer* pOne)
+        static bool CItemBoxIsTakeRight10_wrapper(struct CItemBox* _this, struct CPlayer* pOne)
         {
            return CItemBoxIsTakeRight10_user(_this, pOne, CItemBoxIsTakeRight10_next);
         };
-        void CItemBoxLoop12_wrapper(struct CItemBox* _this)
+        static void CItemBoxLoop12_wrapper(struct CItemBox* _this)
         {
            CItemBoxLoop12_user(_this, CItemBoxLoop12_next);
         };
-        void CItemBoxSendMsg_Create14_wrapper(struct CItemBox* _this)
+        static void CItemBoxSendMsg_Create14_wrapper(struct CItemBox* _this)
         {
            CItemBoxSendMsg_Create14_user(_this, CItemBoxSendMsg_Create14_next);
         };
-        void CItemBoxSendMsg_Destroy16_wrapper(struct CItemBox* _this)
+        static void CItemBoxSendMsg_Destroy16_wrapper(struct CItemBox* _this)
         {
            CItemBoxSendMsg_Destroy16_user(_this, CItemBoxSendMsg_Destroy16_next);
         };
-        void CItemBoxSendMsg_FixPosition18_wrapper(struct CItemBox* _this, int n)
+        static void CItemBoxSendMsg_FixPosition18_wrapper(struct CItemBox* _this, int n)
         {
            CItemBoxSendMsg_FixPosition18_user(_this, n, CItemBoxSendMsg_FixPosition18_next);
         };
-        void CItemBoxSendMsg_StateChange20_wrapper(struct CItemBox* _this)
+        static void CItemBoxSendMsg_StateChange20_wrapper(struct CItemBox* _this)
         {
            CItemBoxSendMsg_StateChange20_user(_this, CItemBoxSendMsg_StateChange20_next);
         };
-        void CItemBoxdtor_CItemBox26_wrapper(struct CItemBox* _this)
+        static void CItemBoxdtor_CItemBox26_wrapper(struct CItemBox* _this)
         {
            CItemBoxdtor_CItemBox26_user(_this, CItemBoxdtor_CItemBox26_next);
         };
         
-        hook_record CItemBox_functions[] = {
+        static hook_record CItemBox_functions[] = {
         {   (LPVOID)0x1401655f0L,
             (LPVOID *)&CItemBoxctor_CItemBox2_user,
             (LPVOID *)&CItemBoxctor_CItemBox2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

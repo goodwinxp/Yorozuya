@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSurfacector_CSurface2_ptr CSurfacector_CSurface2_next(nullptr);
-        info::CSurfacector_CSurface2_clbk CSurfacector_CSurface2_user(nullptr);
-        info::CSurfaceConvertGDIColor4_ptr CSurfaceConvertGDIColor4_next(nullptr);
-        info::CSurfaceConvertGDIColor4_clbk CSurfaceConvertGDIColor4_user(nullptr);
-        info::CSurfaceCreate6_ptr CSurfaceCreate6_next(nullptr);
-        info::CSurfaceCreate6_clbk CSurfaceCreate6_user(nullptr);
-        info::CSurfaceCreate8_ptr CSurfaceCreate8_next(nullptr);
-        info::CSurfaceCreate8_clbk CSurfaceCreate8_user(nullptr);
-        info::CSurfaceDestroy10_ptr CSurfaceDestroy10_next(nullptr);
-        info::CSurfaceDestroy10_clbk CSurfaceDestroy10_user(nullptr);
-        info::CSurfaceDrawBitmap12_ptr CSurfaceDrawBitmap12_next(nullptr);
-        info::CSurfaceDrawBitmap12_clbk CSurfaceDrawBitmap12_user(nullptr);
-        info::CSurfaceDrawBitmap14_ptr CSurfaceDrawBitmap14_next(nullptr);
-        info::CSurfaceDrawBitmap14_clbk CSurfaceDrawBitmap14_user(nullptr);
-        info::CSurfaceDrawTextA16_ptr CSurfaceDrawTextA16_next(nullptr);
-        info::CSurfaceDrawTextA16_clbk CSurfaceDrawTextA16_user(nullptr);
-        info::CSurfaceFillColor18_ptr CSurfaceFillColor18_next(nullptr);
-        info::CSurfaceFillColor18_clbk CSurfaceFillColor18_user(nullptr);
-        info::CSurfaceGetBitMaskInfo20_ptr CSurfaceGetBitMaskInfo20_next(nullptr);
-        info::CSurfaceGetBitMaskInfo20_clbk CSurfaceGetBitMaskInfo20_user(nullptr);
-        info::CSurfaceGetDDSurfaceDesc22_ptr CSurfaceGetDDSurfaceDesc22_next(nullptr);
-        info::CSurfaceGetDDSurfaceDesc22_clbk CSurfaceGetDDSurfaceDesc22_user(nullptr);
-        info::CSurfaceGetDDrawSurface24_ptr CSurfaceGetDDrawSurface24_next(nullptr);
-        info::CSurfaceGetDDrawSurface24_clbk CSurfaceGetDDrawSurface24_user(nullptr);
-        info::CSurfaceIsColorKeyed26_ptr CSurfaceIsColorKeyed26_next(nullptr);
-        info::CSurfaceIsColorKeyed26_clbk CSurfaceIsColorKeyed26_user(nullptr);
-        info::CSurfaceSetColorKey28_ptr CSurfaceSetColorKey28_next(nullptr);
-        info::CSurfaceSetColorKey28_clbk CSurfaceSetColorKey28_user(nullptr);
-        info::CSurfacedtor_CSurface32_ptr CSurfacedtor_CSurface32_next(nullptr);
-        info::CSurfacedtor_CSurface32_clbk CSurfacedtor_CSurface32_user(nullptr);
+        static info::CSurfacector_CSurface2_ptr CSurfacector_CSurface2_next(nullptr);
+        static info::CSurfacector_CSurface2_clbk CSurfacector_CSurface2_user(nullptr);
+        static info::CSurfaceConvertGDIColor4_ptr CSurfaceConvertGDIColor4_next(nullptr);
+        static info::CSurfaceConvertGDIColor4_clbk CSurfaceConvertGDIColor4_user(nullptr);
+        static info::CSurfaceCreate6_ptr CSurfaceCreate6_next(nullptr);
+        static info::CSurfaceCreate6_clbk CSurfaceCreate6_user(nullptr);
+        static info::CSurfaceCreate8_ptr CSurfaceCreate8_next(nullptr);
+        static info::CSurfaceCreate8_clbk CSurfaceCreate8_user(nullptr);
+        static info::CSurfaceDestroy10_ptr CSurfaceDestroy10_next(nullptr);
+        static info::CSurfaceDestroy10_clbk CSurfaceDestroy10_user(nullptr);
+        static info::CSurfaceDrawBitmap12_ptr CSurfaceDrawBitmap12_next(nullptr);
+        static info::CSurfaceDrawBitmap12_clbk CSurfaceDrawBitmap12_user(nullptr);
+        static info::CSurfaceDrawBitmap14_ptr CSurfaceDrawBitmap14_next(nullptr);
+        static info::CSurfaceDrawBitmap14_clbk CSurfaceDrawBitmap14_user(nullptr);
+        static info::CSurfaceDrawTextA16_ptr CSurfaceDrawTextA16_next(nullptr);
+        static info::CSurfaceDrawTextA16_clbk CSurfaceDrawTextA16_user(nullptr);
+        static info::CSurfaceFillColor18_ptr CSurfaceFillColor18_next(nullptr);
+        static info::CSurfaceFillColor18_clbk CSurfaceFillColor18_user(nullptr);
+        static info::CSurfaceGetBitMaskInfo20_ptr CSurfaceGetBitMaskInfo20_next(nullptr);
+        static info::CSurfaceGetBitMaskInfo20_clbk CSurfaceGetBitMaskInfo20_user(nullptr);
+        static info::CSurfaceGetDDSurfaceDesc22_ptr CSurfaceGetDDSurfaceDesc22_next(nullptr);
+        static info::CSurfaceGetDDSurfaceDesc22_clbk CSurfaceGetDDSurfaceDesc22_user(nullptr);
+        static info::CSurfaceGetDDrawSurface24_ptr CSurfaceGetDDrawSurface24_next(nullptr);
+        static info::CSurfaceGetDDrawSurface24_clbk CSurfaceGetDDrawSurface24_user(nullptr);
+        static info::CSurfaceIsColorKeyed26_ptr CSurfaceIsColorKeyed26_next(nullptr);
+        static info::CSurfaceIsColorKeyed26_clbk CSurfaceIsColorKeyed26_user(nullptr);
+        static info::CSurfaceSetColorKey28_ptr CSurfaceSetColorKey28_next(nullptr);
+        static info::CSurfaceSetColorKey28_clbk CSurfaceSetColorKey28_user(nullptr);
+        static info::CSurfacedtor_CSurface32_ptr CSurfacedtor_CSurface32_next(nullptr);
+        static info::CSurfacedtor_CSurface32_clbk CSurfacedtor_CSurface32_user(nullptr);
         
-        void CSurfacector_CSurface2_wrapper(struct CSurface* _this)
+        static void CSurfacector_CSurface2_wrapper(struct CSurface* _this)
         {
            CSurfacector_CSurface2_user(_this, CSurfacector_CSurface2_next);
         };
-        unsigned int CSurfaceConvertGDIColor4_wrapper(struct CSurface* _this, unsigned int dwGDIColor)
+        static unsigned int CSurfaceConvertGDIColor4_wrapper(struct CSurface* _this, unsigned int dwGDIColor)
         {
            return CSurfaceConvertGDIColor4_user(_this, dwGDIColor, CSurfaceConvertGDIColor4_next);
         };
-        HRESULT CSurfaceCreate6_wrapper(struct CSurface* _this, struct IDirectDraw7* pDD, struct _DDSURFACEDESC2* pddsd)
+        static HRESULT CSurfaceCreate6_wrapper(struct CSurface* _this, struct IDirectDraw7* pDD, struct _DDSURFACEDESC2* pddsd)
         {
            return CSurfaceCreate6_user(_this, pDD, pddsd, CSurfaceCreate6_next);
         };
-        HRESULT CSurfaceCreate8_wrapper(struct CSurface* _this, struct IDirectDrawSurface7* pdds)
+        static HRESULT CSurfaceCreate8_wrapper(struct CSurface* _this, struct IDirectDrawSurface7* pdds)
         {
            return CSurfaceCreate8_user(_this, pdds, CSurfaceCreate8_next);
         };
-        HRESULT CSurfaceDestroy10_wrapper(struct CSurface* _this)
+        static HRESULT CSurfaceDestroy10_wrapper(struct CSurface* _this)
         {
            return CSurfaceDestroy10_user(_this, CSurfaceDestroy10_next);
         };
-        HRESULT CSurfaceDrawBitmap12_wrapper(struct CSurface* _this, struct HBITMAP__* hBMP, unsigned int dwBMPOriginX, unsigned int dwBMPOriginY, unsigned int dwBMPWidth, unsigned int dwBMPHeight)
+        static HRESULT CSurfaceDrawBitmap12_wrapper(struct CSurface* _this, struct HBITMAP__* hBMP, unsigned int dwBMPOriginX, unsigned int dwBMPOriginY, unsigned int dwBMPWidth, unsigned int dwBMPHeight)
         {
            return CSurfaceDrawBitmap12_user(_this, hBMP, dwBMPOriginX, dwBMPOriginY, dwBMPWidth, dwBMPHeight, CSurfaceDrawBitmap12_next);
         };
-        HRESULT CSurfaceDrawBitmap14_wrapper(struct CSurface* _this, char* strBMP, unsigned int dwDesiredWidth, unsigned int dwDesiredHeight)
+        static HRESULT CSurfaceDrawBitmap14_wrapper(struct CSurface* _this, char* strBMP, unsigned int dwDesiredWidth, unsigned int dwDesiredHeight)
         {
            return CSurfaceDrawBitmap14_user(_this, strBMP, dwDesiredWidth, dwDesiredHeight, CSurfaceDrawBitmap14_next);
         };
-        HRESULT CSurfaceDrawTextA16_wrapper(struct CSurface* _this, struct HFONT__* hFont, char* strText, unsigned int dwOriginX, unsigned int dwOriginY, unsigned int crBackground, unsigned int crForeground)
+        static HRESULT CSurfaceDrawTextA16_wrapper(struct CSurface* _this, struct HFONT__* hFont, char* strText, unsigned int dwOriginX, unsigned int dwOriginY, unsigned int crBackground, unsigned int crForeground)
         {
            return CSurfaceDrawTextA16_user(_this, hFont, strText, dwOriginX, dwOriginY, crBackground, crForeground, CSurfaceDrawTextA16_next);
         };
-        HRESULT CSurfaceFillColor18_wrapper(struct CSurface* _this, unsigned int crColor)
+        static HRESULT CSurfaceFillColor18_wrapper(struct CSurface* _this, unsigned int crColor)
         {
            return CSurfaceFillColor18_user(_this, crColor, CSurfaceFillColor18_next);
         };
-        HRESULT CSurfaceGetBitMaskInfo20_wrapper(unsigned int dwBitMask, unsigned int* pdwShift, unsigned int* pdwBits)
+        static HRESULT CSurfaceGetBitMaskInfo20_wrapper(unsigned int dwBitMask, unsigned int* pdwShift, unsigned int* pdwBits)
         {
            return CSurfaceGetBitMaskInfo20_user(dwBitMask, pdwShift, pdwBits, CSurfaceGetBitMaskInfo20_next);
         };
-        struct _DDSURFACEDESC2* CSurfaceGetDDSurfaceDesc22_wrapper(struct CSurface* _this)
+        static struct _DDSURFACEDESC2* CSurfaceGetDDSurfaceDesc22_wrapper(struct CSurface* _this)
         {
            return CSurfaceGetDDSurfaceDesc22_user(_this, CSurfaceGetDDSurfaceDesc22_next);
         };
-        struct IDirectDrawSurface7* CSurfaceGetDDrawSurface24_wrapper(struct CSurface* _this)
+        static struct IDirectDrawSurface7* CSurfaceGetDDrawSurface24_wrapper(struct CSurface* _this)
         {
            return CSurfaceGetDDrawSurface24_user(_this, CSurfaceGetDDrawSurface24_next);
         };
-        int CSurfaceIsColorKeyed26_wrapper(struct CSurface* _this)
+        static int CSurfaceIsColorKeyed26_wrapper(struct CSurface* _this)
         {
            return CSurfaceIsColorKeyed26_user(_this, CSurfaceIsColorKeyed26_next);
         };
-        HRESULT CSurfaceSetColorKey28_wrapper(struct CSurface* _this, unsigned int dwColorKey)
+        static HRESULT CSurfaceSetColorKey28_wrapper(struct CSurface* _this, unsigned int dwColorKey)
         {
            return CSurfaceSetColorKey28_user(_this, dwColorKey, CSurfaceSetColorKey28_next);
         };
-        void CSurfacedtor_CSurface32_wrapper(struct CSurface* _this)
+        static void CSurfacedtor_CSurface32_wrapper(struct CSurface* _this)
         {
            CSurfacedtor_CSurface32_user(_this, CSurfacedtor_CSurface32_next);
         };
         
-        hook_record CSurface_functions[] = {
+        static hook_record CSurface_functions[] = {
         {   (LPVOID)0x140434d80L,
             (LPVOID *)&CSurfacector_CSurface2_user,
             (LPVOID *)&CSurfacector_CSurface2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

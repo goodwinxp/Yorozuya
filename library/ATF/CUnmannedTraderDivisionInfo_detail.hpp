@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_ptr CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_next(nullptr);
-        info::CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_clbk CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_user(nullptr);
-        info::CUnmannedTraderDivisionInfoCleanUp4_ptr CUnmannedTraderDivisionInfoCleanUp4_next(nullptr);
-        info::CUnmannedTraderDivisionInfoCleanUp4_clbk CUnmannedTraderDivisionInfoCleanUp4_user(nullptr);
-        info::CUnmannedTraderDivisionInfoCopy6_ptr CUnmannedTraderDivisionInfoCopy6_next(nullptr);
-        info::CUnmannedTraderDivisionInfoCopy6_clbk CUnmannedTraderDivisionInfoCopy6_user(nullptr);
-        info::CUnmannedTraderDivisionInfoFindSortType8_ptr CUnmannedTraderDivisionInfoFindSortType8_next(nullptr);
-        info::CUnmannedTraderDivisionInfoFindSortType8_clbk CUnmannedTraderDivisionInfoFindSortType8_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetGroupID10_ptr CUnmannedTraderDivisionInfoGetGroupID10_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetGroupID10_clbk CUnmannedTraderDivisionInfoGetGroupID10_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetGroupID12_ptr CUnmannedTraderDivisionInfoGetGroupID12_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetGroupID12_clbk CUnmannedTraderDivisionInfoGetGroupID12_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetID14_ptr CUnmannedTraderDivisionInfoGetID14_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetID14_clbk CUnmannedTraderDivisionInfoGetID14_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetMaxClassCnt16_ptr CUnmannedTraderDivisionInfoGetMaxClassCnt16_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetMaxClassCnt16_clbk CUnmannedTraderDivisionInfoGetMaxClassCnt16_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetSize18_ptr CUnmannedTraderDivisionInfoGetSize18_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetSize18_clbk CUnmannedTraderDivisionInfoGetSize18_user(nullptr);
-        info::CUnmannedTraderDivisionInfoGetSortType20_ptr CUnmannedTraderDivisionInfoGetSortType20_next(nullptr);
-        info::CUnmannedTraderDivisionInfoGetSortType20_clbk CUnmannedTraderDivisionInfoGetSortType20_user(nullptr);
-        info::CUnmannedTraderDivisionInfoIsExistGroupID22_ptr CUnmannedTraderDivisionInfoIsExistGroupID22_next(nullptr);
-        info::CUnmannedTraderDivisionInfoIsExistGroupID22_clbk CUnmannedTraderDivisionInfoIsExistGroupID22_user(nullptr);
-        info::CUnmannedTraderDivisionInfoIsExistSortTypeID24_ptr CUnmannedTraderDivisionInfoIsExistSortTypeID24_next(nullptr);
-        info::CUnmannedTraderDivisionInfoIsExistSortTypeID24_clbk CUnmannedTraderDivisionInfoIsExistSortTypeID24_user(nullptr);
-        info::CUnmannedTraderDivisionInfoIsValidID26_ptr CUnmannedTraderDivisionInfoIsValidID26_next(nullptr);
-        info::CUnmannedTraderDivisionInfoIsValidID26_clbk CUnmannedTraderDivisionInfoIsValidID26_user(nullptr);
-        info::CUnmannedTraderDivisionInfoLoadXML28_ptr CUnmannedTraderDivisionInfoLoadXML28_next(nullptr);
-        info::CUnmannedTraderDivisionInfoLoadXML28_clbk CUnmannedTraderDivisionInfoLoadXML28_user(nullptr);
-        info::CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_ptr CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_next(nullptr);
-        info::CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_clbk CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_ptr CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_clbk CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoCleanUp4_ptr CUnmannedTraderDivisionInfoCleanUp4_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoCleanUp4_clbk CUnmannedTraderDivisionInfoCleanUp4_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoCopy6_ptr CUnmannedTraderDivisionInfoCopy6_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoCopy6_clbk CUnmannedTraderDivisionInfoCopy6_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoFindSortType8_ptr CUnmannedTraderDivisionInfoFindSortType8_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoFindSortType8_clbk CUnmannedTraderDivisionInfoFindSortType8_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetGroupID10_ptr CUnmannedTraderDivisionInfoGetGroupID10_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetGroupID10_clbk CUnmannedTraderDivisionInfoGetGroupID10_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetGroupID12_ptr CUnmannedTraderDivisionInfoGetGroupID12_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetGroupID12_clbk CUnmannedTraderDivisionInfoGetGroupID12_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetID14_ptr CUnmannedTraderDivisionInfoGetID14_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetID14_clbk CUnmannedTraderDivisionInfoGetID14_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetMaxClassCnt16_ptr CUnmannedTraderDivisionInfoGetMaxClassCnt16_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetMaxClassCnt16_clbk CUnmannedTraderDivisionInfoGetMaxClassCnt16_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetSize18_ptr CUnmannedTraderDivisionInfoGetSize18_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetSize18_clbk CUnmannedTraderDivisionInfoGetSize18_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetSortType20_ptr CUnmannedTraderDivisionInfoGetSortType20_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoGetSortType20_clbk CUnmannedTraderDivisionInfoGetSortType20_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsExistGroupID22_ptr CUnmannedTraderDivisionInfoIsExistGroupID22_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsExistGroupID22_clbk CUnmannedTraderDivisionInfoIsExistGroupID22_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsExistSortTypeID24_ptr CUnmannedTraderDivisionInfoIsExistSortTypeID24_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsExistSortTypeID24_clbk CUnmannedTraderDivisionInfoIsExistSortTypeID24_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsValidID26_ptr CUnmannedTraderDivisionInfoIsValidID26_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoIsValidID26_clbk CUnmannedTraderDivisionInfoIsValidID26_user(nullptr);
+        static info::CUnmannedTraderDivisionInfoLoadXML28_ptr CUnmannedTraderDivisionInfoLoadXML28_next(nullptr);
+        static info::CUnmannedTraderDivisionInfoLoadXML28_clbk CUnmannedTraderDivisionInfoLoadXML28_user(nullptr);
+        static info::CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_ptr CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_next(nullptr);
+        static info::CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_clbk CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_user(nullptr);
         
-        void CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID, char* szName)
+        static void CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID, char* szName)
         {
            CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_user(_this, dwID, szName, CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_next);
         };
-        void CUnmannedTraderDivisionInfoCleanUp4_wrapper(struct CUnmannedTraderDivisionInfo* _this)
+        static void CUnmannedTraderDivisionInfoCleanUp4_wrapper(struct CUnmannedTraderDivisionInfo* _this)
         {
            CUnmannedTraderDivisionInfoCleanUp4_user(_this, CUnmannedTraderDivisionInfoCleanUp4_next);
         };
-        struct CUnmannedTraderDivisionInfo* CUnmannedTraderDivisionInfoCopy6_wrapper(struct CUnmannedTraderDivisionInfo* _this, struct CUnmannedTraderDivisionInfo* lhs)
+        static struct CUnmannedTraderDivisionInfo* CUnmannedTraderDivisionInfoCopy6_wrapper(struct CUnmannedTraderDivisionInfo* _this, struct CUnmannedTraderDivisionInfo* lhs)
         {
            return CUnmannedTraderDivisionInfoCopy6_user(_this, lhs, CUnmannedTraderDivisionInfoCopy6_next);
         };
-        struct CUnmannedTraderSortType* CUnmannedTraderDivisionInfoFindSortType8_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
+        static struct CUnmannedTraderSortType* CUnmannedTraderDivisionInfoFindSortType8_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
         {
            return CUnmannedTraderDivisionInfoFindSortType8_user(_this, dwID, CUnmannedTraderDivisionInfoFindSortType8_next);
         };
-        bool CUnmannedTraderDivisionInfoGetGroupID10_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byTableCode, uint16_t wItemTableIndex, char* byDivision, char* byClass)
+        static bool CUnmannedTraderDivisionInfoGetGroupID10_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byTableCode, uint16_t wItemTableIndex, char* byDivision, char* byClass)
         {
            return CUnmannedTraderDivisionInfoGetGroupID10_user(_this, byTableCode, wItemTableIndex, byDivision, byClass, CUnmannedTraderDivisionInfoGetGroupID10_next);
         };
-        bool CUnmannedTraderDivisionInfoGetGroupID12_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byTableCode, uint16_t wItemTableIndex, char* byDivision, char* byClass, char* bySubClass, unsigned int* dwListIndex)
+        static bool CUnmannedTraderDivisionInfoGetGroupID12_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byTableCode, uint16_t wItemTableIndex, char* byDivision, char* byClass, char* bySubClass, unsigned int* dwListIndex)
         {
            return CUnmannedTraderDivisionInfoGetGroupID12_user(_this, byTableCode, wItemTableIndex, byDivision, byClass, bySubClass, dwListIndex, CUnmannedTraderDivisionInfoGetGroupID12_next);
         };
-        unsigned int CUnmannedTraderDivisionInfoGetID14_wrapper(struct CUnmannedTraderDivisionInfo* _this)
+        static unsigned int CUnmannedTraderDivisionInfoGetID14_wrapper(struct CUnmannedTraderDivisionInfo* _this)
         {
            return CUnmannedTraderDivisionInfoGetID14_user(_this, CUnmannedTraderDivisionInfoGetID14_next);
         };
-        unsigned int CUnmannedTraderDivisionInfoGetMaxClassCnt16_wrapper(struct CUnmannedTraderDivisionInfo* _this)
+        static unsigned int CUnmannedTraderDivisionInfoGetMaxClassCnt16_wrapper(struct CUnmannedTraderDivisionInfo* _this)
         {
            return CUnmannedTraderDivisionInfoGetMaxClassCnt16_user(_this, CUnmannedTraderDivisionInfoGetMaxClassCnt16_next);
         };
-        unsigned int CUnmannedTraderDivisionInfoGetSize18_wrapper(struct CUnmannedTraderDivisionInfo* _this)
+        static unsigned int CUnmannedTraderDivisionInfoGetSize18_wrapper(struct CUnmannedTraderDivisionInfo* _this)
         {
            return CUnmannedTraderDivisionInfoGetSize18_user(_this, CUnmannedTraderDivisionInfoGetSize18_next);
         };
-        struct CUnmannedTraderSortType* CUnmannedTraderDivisionInfoGetSortType20_wrapper(struct CUnmannedTraderDivisionInfo* _this, char bySortType)
+        static struct CUnmannedTraderSortType* CUnmannedTraderDivisionInfoGetSortType20_wrapper(struct CUnmannedTraderDivisionInfo* _this, char bySortType)
         {
            return CUnmannedTraderDivisionInfoGetSortType20_user(_this, bySortType, CUnmannedTraderDivisionInfoGetSortType20_next);
         };
-        bool CUnmannedTraderDivisionInfoIsExistGroupID22_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byDivision, char byClass, char bySubClass, char bySortType, unsigned int* dwListIndex)
+        static bool CUnmannedTraderDivisionInfoIsExistGroupID22_wrapper(struct CUnmannedTraderDivisionInfo* _this, char byDivision, char byClass, char bySubClass, char bySortType, unsigned int* dwListIndex)
         {
            return CUnmannedTraderDivisionInfoIsExistGroupID22_user(_this, byDivision, byClass, bySubClass, bySortType, dwListIndex, CUnmannedTraderDivisionInfoIsExistGroupID22_next);
         };
-        bool CUnmannedTraderDivisionInfoIsExistSortTypeID24_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
+        static bool CUnmannedTraderDivisionInfoIsExistSortTypeID24_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
         {
            return CUnmannedTraderDivisionInfoIsExistSortTypeID24_user(_this, dwID, CUnmannedTraderDivisionInfoIsExistSortTypeID24_next);
         };
-        bool CUnmannedTraderDivisionInfoIsValidID26_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
+        static bool CUnmannedTraderDivisionInfoIsValidID26_wrapper(struct CUnmannedTraderDivisionInfo* _this, unsigned int dwID)
         {
            return CUnmannedTraderDivisionInfoIsValidID26_user(_this, dwID, CUnmannedTraderDivisionInfoIsValidID26_next);
         };
-        bool CUnmannedTraderDivisionInfoLoadXML28_wrapper(struct CUnmannedTraderDivisionInfo* _this, struct TiXmlElement* pkElement, struct CLogFile* kLogger)
+        static bool CUnmannedTraderDivisionInfoLoadXML28_wrapper(struct CUnmannedTraderDivisionInfo* _this, struct TiXmlElement* pkElement, struct CLogFile* kLogger)
         {
            return CUnmannedTraderDivisionInfoLoadXML28_user(_this, pkElement, kLogger, CUnmannedTraderDivisionInfoLoadXML28_next);
         };
-        void CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_wrapper(struct CUnmannedTraderDivisionInfo* _this)
+        static void CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_wrapper(struct CUnmannedTraderDivisionInfo* _this)
         {
            CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_user(_this, CUnmannedTraderDivisionInfodtor_CUnmannedTraderDivisionInfo32_next);
         };
         
-        hook_record CUnmannedTraderDivisionInfo_functions[] = {
+        static hook_record CUnmannedTraderDivisionInfo_functions[] = {
         {   (LPVOID)0x14036d240L,
             (LPVOID *)&CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_user,
             (LPVOID *)&CUnmannedTraderDivisionInfoctor_CUnmannedTraderDivisionInfo2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

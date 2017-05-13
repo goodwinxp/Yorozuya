@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_ptr _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_next(nullptr);
-        info::_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_clbk _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_user(nullptr);
-        info::_pt_automine_getoutore_zoclsize4_ptr _pt_automine_getoutore_zoclsize4_next(nullptr);
-        info::_pt_automine_getoutore_zoclsize4_clbk _pt_automine_getoutore_zoclsize4_user(nullptr);
+        static info::_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_ptr _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_next(nullptr);
+        static info::_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_clbk _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_user(nullptr);
+        static info::_pt_automine_getoutore_zoclsize4_ptr _pt_automine_getoutore_zoclsize4_next(nullptr);
+        static info::_pt_automine_getoutore_zoclsize4_clbk _pt_automine_getoutore_zoclsize4_user(nullptr);
         
-        void _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_wrapper(struct _pt_automine_getoutore_zocl* _this)
+        static void _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_wrapper(struct _pt_automine_getoutore_zocl* _this)
         {
            _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_user(_this, _pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_next);
         };
-        int _pt_automine_getoutore_zoclsize4_wrapper(struct _pt_automine_getoutore_zocl* _this)
+        static int _pt_automine_getoutore_zoclsize4_wrapper(struct _pt_automine_getoutore_zocl* _this)
         {
            return _pt_automine_getoutore_zoclsize4_user(_this, _pt_automine_getoutore_zoclsize4_next);
         };
         
-        hook_record _pt_automine_getoutore_zocl_functions[] = {
+        static hook_record _pt_automine_getoutore_zocl_functions[] = {
         {   (LPVOID)0x1402d3f50L,
             (LPVOID *)&_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_user,
             (LPVOID *)&_pt_automine_getoutore_zoclctor__pt_automine_getoutore_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,141 +8,141 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMerchantctor_CMerchant2_ptr CMerchantctor_CMerchant2_next(nullptr);
-        info::CMerchantctor_CMerchant2_clbk CMerchantctor_CMerchant2_user(nullptr);
-        info::CMerchantCreate4_ptr CMerchantCreate4_next(nullptr);
-        info::CMerchantCreate4_clbk CMerchantCreate4_user(nullptr);
-        info::CMerchantDestroy6_ptr CMerchantDestroy6_next(nullptr);
-        info::CMerchantDestroy6_clbk CMerchantDestroy6_user(nullptr);
-        info::CMerchantGetFireTol8_ptr CMerchantGetFireTol8_next(nullptr);
-        info::CMerchantGetFireTol8_clbk CMerchantGetFireTol8_user(nullptr);
-        info::CMerchantGetNewMonSerial10_ptr CMerchantGetNewMonSerial10_next(nullptr);
-        info::CMerchantGetNewMonSerial10_clbk CMerchantGetNewMonSerial10_user(nullptr);
-        info::CMerchantGetObjName12_ptr CMerchantGetObjName12_next(nullptr);
-        info::CMerchantGetObjName12_clbk CMerchantGetObjName12_user(nullptr);
-        info::CMerchantGetObjRace14_ptr CMerchantGetObjRace14_next(nullptr);
-        info::CMerchantGetObjRace14_clbk CMerchantGetObjRace14_user(nullptr);
-        info::CMerchantGetSoilTol16_ptr CMerchantGetSoilTol16_next(nullptr);
-        info::CMerchantGetSoilTol16_clbk CMerchantGetSoilTol16_user(nullptr);
-        info::CMerchantGetStoreDummyName18_ptr CMerchantGetStoreDummyName18_next(nullptr);
-        info::CMerchantGetStoreDummyName18_clbk CMerchantGetStoreDummyName18_user(nullptr);
-        info::CMerchantGetWaterTol20_ptr CMerchantGetWaterTol20_next(nullptr);
-        info::CMerchantGetWaterTol20_clbk CMerchantGetWaterTol20_user(nullptr);
-        info::CMerchantGetWindTol22_ptr CMerchantGetWindTol22_next(nullptr);
-        info::CMerchantGetWindTol22_clbk CMerchantGetWindTol22_user(nullptr);
-        info::CMerchantInit24_ptr CMerchantInit24_next(nullptr);
-        info::CMerchantInit24_clbk CMerchantInit24_user(nullptr);
-        info::CMerchantLoop26_ptr CMerchantLoop26_next(nullptr);
-        info::CMerchantLoop26_clbk CMerchantLoop26_user(nullptr);
-        info::CMerchantOutOfSec28_ptr CMerchantOutOfSec28_next(nullptr);
-        info::CMerchantOutOfSec28_clbk CMerchantOutOfSec28_user(nullptr);
-        info::CMerchantSendMsg_Create30_ptr CMerchantSendMsg_Create30_next(nullptr);
-        info::CMerchantSendMsg_Create30_clbk CMerchantSendMsg_Create30_user(nullptr);
-        info::CMerchantSendMsg_Destroy32_ptr CMerchantSendMsg_Destroy32_next(nullptr);
-        info::CMerchantSendMsg_Destroy32_clbk CMerchantSendMsg_Destroy32_user(nullptr);
-        info::CMerchantSendMsg_FixPosition34_ptr CMerchantSendMsg_FixPosition34_next(nullptr);
-        info::CMerchantSendMsg_FixPosition34_clbk CMerchantSendMsg_FixPosition34_user(nullptr);
-        info::CMerchantSendMsg_Move36_ptr CMerchantSendMsg_Move36_next(nullptr);
-        info::CMerchantSendMsg_Move36_clbk CMerchantSendMsg_Move36_user(nullptr);
-        info::CMerchantSendMsg_RealFixPosition38_ptr CMerchantSendMsg_RealFixPosition38_next(nullptr);
-        info::CMerchantSendMsg_RealFixPosition38_clbk CMerchantSendMsg_RealFixPosition38_user(nullptr);
-        info::CMerchantSendMsg_RealMovePoint40_ptr CMerchantSendMsg_RealMovePoint40_next(nullptr);
-        info::CMerchantSendMsg_RealMovePoint40_clbk CMerchantSendMsg_RealMovePoint40_user(nullptr);
-        info::CMerchantSendMsg_TransShipTicketNumInform42_ptr CMerchantSendMsg_TransShipTicketNumInform42_next(nullptr);
-        info::CMerchantSendMsg_TransShipTicketNumInform42_clbk CMerchantSendMsg_TransShipTicketNumInform42_user(nullptr);
-        info::CMerchantdtor_CMerchant48_ptr CMerchantdtor_CMerchant48_next(nullptr);
-        info::CMerchantdtor_CMerchant48_clbk CMerchantdtor_CMerchant48_user(nullptr);
+        static info::CMerchantctor_CMerchant2_ptr CMerchantctor_CMerchant2_next(nullptr);
+        static info::CMerchantctor_CMerchant2_clbk CMerchantctor_CMerchant2_user(nullptr);
+        static info::CMerchantCreate4_ptr CMerchantCreate4_next(nullptr);
+        static info::CMerchantCreate4_clbk CMerchantCreate4_user(nullptr);
+        static info::CMerchantDestroy6_ptr CMerchantDestroy6_next(nullptr);
+        static info::CMerchantDestroy6_clbk CMerchantDestroy6_user(nullptr);
+        static info::CMerchantGetFireTol8_ptr CMerchantGetFireTol8_next(nullptr);
+        static info::CMerchantGetFireTol8_clbk CMerchantGetFireTol8_user(nullptr);
+        static info::CMerchantGetNewMonSerial10_ptr CMerchantGetNewMonSerial10_next(nullptr);
+        static info::CMerchantGetNewMonSerial10_clbk CMerchantGetNewMonSerial10_user(nullptr);
+        static info::CMerchantGetObjName12_ptr CMerchantGetObjName12_next(nullptr);
+        static info::CMerchantGetObjName12_clbk CMerchantGetObjName12_user(nullptr);
+        static info::CMerchantGetObjRace14_ptr CMerchantGetObjRace14_next(nullptr);
+        static info::CMerchantGetObjRace14_clbk CMerchantGetObjRace14_user(nullptr);
+        static info::CMerchantGetSoilTol16_ptr CMerchantGetSoilTol16_next(nullptr);
+        static info::CMerchantGetSoilTol16_clbk CMerchantGetSoilTol16_user(nullptr);
+        static info::CMerchantGetStoreDummyName18_ptr CMerchantGetStoreDummyName18_next(nullptr);
+        static info::CMerchantGetStoreDummyName18_clbk CMerchantGetStoreDummyName18_user(nullptr);
+        static info::CMerchantGetWaterTol20_ptr CMerchantGetWaterTol20_next(nullptr);
+        static info::CMerchantGetWaterTol20_clbk CMerchantGetWaterTol20_user(nullptr);
+        static info::CMerchantGetWindTol22_ptr CMerchantGetWindTol22_next(nullptr);
+        static info::CMerchantGetWindTol22_clbk CMerchantGetWindTol22_user(nullptr);
+        static info::CMerchantInit24_ptr CMerchantInit24_next(nullptr);
+        static info::CMerchantInit24_clbk CMerchantInit24_user(nullptr);
+        static info::CMerchantLoop26_ptr CMerchantLoop26_next(nullptr);
+        static info::CMerchantLoop26_clbk CMerchantLoop26_user(nullptr);
+        static info::CMerchantOutOfSec28_ptr CMerchantOutOfSec28_next(nullptr);
+        static info::CMerchantOutOfSec28_clbk CMerchantOutOfSec28_user(nullptr);
+        static info::CMerchantSendMsg_Create30_ptr CMerchantSendMsg_Create30_next(nullptr);
+        static info::CMerchantSendMsg_Create30_clbk CMerchantSendMsg_Create30_user(nullptr);
+        static info::CMerchantSendMsg_Destroy32_ptr CMerchantSendMsg_Destroy32_next(nullptr);
+        static info::CMerchantSendMsg_Destroy32_clbk CMerchantSendMsg_Destroy32_user(nullptr);
+        static info::CMerchantSendMsg_FixPosition34_ptr CMerchantSendMsg_FixPosition34_next(nullptr);
+        static info::CMerchantSendMsg_FixPosition34_clbk CMerchantSendMsg_FixPosition34_user(nullptr);
+        static info::CMerchantSendMsg_Move36_ptr CMerchantSendMsg_Move36_next(nullptr);
+        static info::CMerchantSendMsg_Move36_clbk CMerchantSendMsg_Move36_user(nullptr);
+        static info::CMerchantSendMsg_RealFixPosition38_ptr CMerchantSendMsg_RealFixPosition38_next(nullptr);
+        static info::CMerchantSendMsg_RealFixPosition38_clbk CMerchantSendMsg_RealFixPosition38_user(nullptr);
+        static info::CMerchantSendMsg_RealMovePoint40_ptr CMerchantSendMsg_RealMovePoint40_next(nullptr);
+        static info::CMerchantSendMsg_RealMovePoint40_clbk CMerchantSendMsg_RealMovePoint40_user(nullptr);
+        static info::CMerchantSendMsg_TransShipTicketNumInform42_ptr CMerchantSendMsg_TransShipTicketNumInform42_next(nullptr);
+        static info::CMerchantSendMsg_TransShipTicketNumInform42_clbk CMerchantSendMsg_TransShipTicketNumInform42_user(nullptr);
+        static info::CMerchantdtor_CMerchant48_ptr CMerchantdtor_CMerchant48_next(nullptr);
+        static info::CMerchantdtor_CMerchant48_clbk CMerchantdtor_CMerchant48_user(nullptr);
         
-        void CMerchantctor_CMerchant2_wrapper(struct CMerchant* _this)
+        static void CMerchantctor_CMerchant2_wrapper(struct CMerchant* _this)
         {
            CMerchantctor_CMerchant2_user(_this, CMerchantctor_CMerchant2_next);
         };
-        bool CMerchantCreate4_wrapper(struct CMerchant* _this, struct _npc_create_setdata* pData)
+        static bool CMerchantCreate4_wrapper(struct CMerchant* _this, struct _npc_create_setdata* pData)
         {
            return CMerchantCreate4_user(_this, pData, CMerchantCreate4_next);
         };
-        bool CMerchantDestroy6_wrapper(struct CMerchant* _this, struct CGameObject* pAttObj)
+        static bool CMerchantDestroy6_wrapper(struct CMerchant* _this, struct CGameObject* pAttObj)
         {
            return CMerchantDestroy6_user(_this, pAttObj, CMerchantDestroy6_next);
         };
-        int CMerchantGetFireTol8_wrapper(struct CMerchant* _this)
+        static int CMerchantGetFireTol8_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetFireTol8_user(_this, CMerchantGetFireTol8_next);
         };
-        unsigned int CMerchantGetNewMonSerial10_wrapper()
+        static unsigned int CMerchantGetNewMonSerial10_wrapper()
         {
            return CMerchantGetNewMonSerial10_user(CMerchantGetNewMonSerial10_next);
         };
-        char* CMerchantGetObjName12_wrapper(struct CMerchant* _this)
+        static char* CMerchantGetObjName12_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetObjName12_user(_this, CMerchantGetObjName12_next);
         };
-        int CMerchantGetObjRace14_wrapper(struct CMerchant* _this)
+        static int CMerchantGetObjRace14_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetObjRace14_user(_this, CMerchantGetObjRace14_next);
         };
-        int CMerchantGetSoilTol16_wrapper(struct CMerchant* _this)
+        static int CMerchantGetSoilTol16_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetSoilTol16_user(_this, CMerchantGetSoilTol16_next);
         };
-        char* CMerchantGetStoreDummyName18_wrapper(struct CMerchant* _this)
+        static char* CMerchantGetStoreDummyName18_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetStoreDummyName18_user(_this, CMerchantGetStoreDummyName18_next);
         };
-        int CMerchantGetWaterTol20_wrapper(struct CMerchant* _this)
+        static int CMerchantGetWaterTol20_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetWaterTol20_user(_this, CMerchantGetWaterTol20_next);
         };
-        int CMerchantGetWindTol22_wrapper(struct CMerchant* _this)
+        static int CMerchantGetWindTol22_wrapper(struct CMerchant* _this)
         {
            return CMerchantGetWindTol22_user(_this, CMerchantGetWindTol22_next);
         };
-        bool CMerchantInit24_wrapper(struct CMerchant* _this, struct _object_id* pID)
+        static bool CMerchantInit24_wrapper(struct CMerchant* _this, struct _object_id* pID)
         {
            return CMerchantInit24_user(_this, pID, CMerchantInit24_next);
         };
-        void CMerchantLoop26_wrapper(struct CMerchant* _this)
+        static void CMerchantLoop26_wrapper(struct CMerchant* _this)
         {
            CMerchantLoop26_user(_this, CMerchantLoop26_next);
         };
-        void CMerchantOutOfSec28_wrapper(struct CMerchant* _this)
+        static void CMerchantOutOfSec28_wrapper(struct CMerchant* _this)
         {
            CMerchantOutOfSec28_user(_this, CMerchantOutOfSec28_next);
         };
-        void CMerchantSendMsg_Create30_wrapper(struct CMerchant* _this)
+        static void CMerchantSendMsg_Create30_wrapper(struct CMerchant* _this)
         {
            CMerchantSendMsg_Create30_user(_this, CMerchantSendMsg_Create30_next);
         };
-        void CMerchantSendMsg_Destroy32_wrapper(struct CMerchant* _this)
+        static void CMerchantSendMsg_Destroy32_wrapper(struct CMerchant* _this)
         {
            CMerchantSendMsg_Destroy32_user(_this, CMerchantSendMsg_Destroy32_next);
         };
-        void CMerchantSendMsg_FixPosition34_wrapper(struct CMerchant* _this, int n)
+        static void CMerchantSendMsg_FixPosition34_wrapper(struct CMerchant* _this, int n)
         {
            CMerchantSendMsg_FixPosition34_user(_this, n, CMerchantSendMsg_FixPosition34_next);
         };
-        void CMerchantSendMsg_Move36_wrapper(struct CMerchant* _this)
+        static void CMerchantSendMsg_Move36_wrapper(struct CMerchant* _this)
         {
            CMerchantSendMsg_Move36_user(_this, CMerchantSendMsg_Move36_next);
         };
-        void CMerchantSendMsg_RealFixPosition38_wrapper(struct CMerchant* _this, bool bCircle)
+        static void CMerchantSendMsg_RealFixPosition38_wrapper(struct CMerchant* _this, bool bCircle)
         {
            CMerchantSendMsg_RealFixPosition38_user(_this, bCircle, CMerchantSendMsg_RealFixPosition38_next);
         };
-        void CMerchantSendMsg_RealMovePoint40_wrapper(struct CMerchant* _this, int n)
+        static void CMerchantSendMsg_RealMovePoint40_wrapper(struct CMerchant* _this, int n)
         {
            CMerchantSendMsg_RealMovePoint40_user(_this, n, CMerchantSendMsg_RealMovePoint40_next);
         };
-        void CMerchantSendMsg_TransShipTicketNumInform42_wrapper(struct CMerchant* _this, int n)
+        static void CMerchantSendMsg_TransShipTicketNumInform42_wrapper(struct CMerchant* _this, int n)
         {
            CMerchantSendMsg_TransShipTicketNumInform42_user(_this, n, CMerchantSendMsg_TransShipTicketNumInform42_next);
         };
-        void CMerchantdtor_CMerchant48_wrapper(struct CMerchant* _this)
+        static void CMerchantdtor_CMerchant48_wrapper(struct CMerchant* _this)
         {
            CMerchantdtor_CMerchant48_user(_this, CMerchantdtor_CMerchant48_next);
         };
         
-        hook_record CMerchant_functions[] = {
+        static hook_record CMerchant_functions[] = {
         {   (LPVOID)0x140139010L,
             (LPVOID *)&CMerchantctor_CMerchant2_user,
             (LPVOID *)&CMerchantctor_CMerchant2_next,
@@ -256,5 +256,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

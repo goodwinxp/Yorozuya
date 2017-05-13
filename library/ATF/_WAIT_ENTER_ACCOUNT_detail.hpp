@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_WAIT_ENTER_ACCOUNTRelease2_ptr _WAIT_ENTER_ACCOUNTRelease2_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTRelease2_clbk _WAIT_ENTER_ACCOUNTRelease2_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_ptr _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_clbk _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetBillingInfo6_ptr _WAIT_ENTER_ACCOUNTSetBillingInfo6_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetBillingInfo6_clbk _WAIT_ENTER_ACCOUNTSetBillingInfo6_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetData8_ptr _WAIT_ENTER_ACCOUNTSetData8_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetData8_clbk _WAIT_ENTER_ACCOUNTSetData8_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetPcBangFlag10_ptr _WAIT_ENTER_ACCOUNTSetPcBangFlag10_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetPcBangFlag10_clbk _WAIT_ENTER_ACCOUNTSetPcBangFlag10_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetTransFlag12_ptr _WAIT_ENTER_ACCOUNTSetTransFlag12_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetTransFlag12_clbk _WAIT_ENTER_ACCOUNTSetTransFlag12_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetUILock14_ptr _WAIT_ENTER_ACCOUNTSetUILock14_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTSetUILock14_clbk _WAIT_ENTER_ACCOUNTSetUILock14_user(nullptr);
-        info::_WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_ptr _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_next(nullptr);
-        info::_WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_clbk _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTRelease2_ptr _WAIT_ENTER_ACCOUNTRelease2_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTRelease2_clbk _WAIT_ENTER_ACCOUNTRelease2_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_ptr _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_clbk _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetBillingInfo6_ptr _WAIT_ENTER_ACCOUNTSetBillingInfo6_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetBillingInfo6_clbk _WAIT_ENTER_ACCOUNTSetBillingInfo6_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetData8_ptr _WAIT_ENTER_ACCOUNTSetData8_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetData8_clbk _WAIT_ENTER_ACCOUNTSetData8_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetPcBangFlag10_ptr _WAIT_ENTER_ACCOUNTSetPcBangFlag10_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetPcBangFlag10_clbk _WAIT_ENTER_ACCOUNTSetPcBangFlag10_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetTransFlag12_ptr _WAIT_ENTER_ACCOUNTSetTransFlag12_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetTransFlag12_clbk _WAIT_ENTER_ACCOUNTSetTransFlag12_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetUILock14_ptr _WAIT_ENTER_ACCOUNTSetUILock14_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTSetUILock14_clbk _WAIT_ENTER_ACCOUNTSetUILock14_user(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_ptr _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_next(nullptr);
+        static info::_WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_clbk _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_user(nullptr);
         
-        void _WAIT_ENTER_ACCOUNTRelease2_wrapper(struct _WAIT_ENTER_ACCOUNT* _this)
+        static void _WAIT_ENTER_ACCOUNTRelease2_wrapper(struct _WAIT_ENTER_ACCOUNT* _this)
         {
            _WAIT_ENTER_ACCOUNTRelease2_user(_this, _WAIT_ENTER_ACCOUNTRelease2_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, bool bAgeLimit)
+        static void _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, bool bAgeLimit)
         {
            _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_user(_this, bAgeLimit, _WAIT_ENTER_ACCOUNTSetAgeLimitFlag4_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetBillingInfo6_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, int16_t iType, char* szCMS, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
+        static void _WAIT_ENTER_ACCOUNTSetBillingInfo6_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, int16_t iType, char* szCMS, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
         {
            _WAIT_ENTER_ACCOUNTSetBillingInfo6_user(_this, iType, szCMS, lRemainTime, pstEndDate, _WAIT_ENTER_ACCOUNTSetBillingInfo6_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetData8_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, unsigned int dwAccountSerial, char* pszAccountID, char byUserDgr, char bySubDgr, struct _GLBID* pgidGlobal, unsigned int* pdwKey, bool bChatLock)
+        static void _WAIT_ENTER_ACCOUNTSetData8_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, unsigned int dwAccountSerial, char* pszAccountID, char byUserDgr, char bySubDgr, struct _GLBID* pgidGlobal, unsigned int* pdwKey, bool bChatLock)
         {
            _WAIT_ENTER_ACCOUNTSetData8_user(_this, dwAccountSerial, pszAccountID, byUserDgr, bySubDgr, pgidGlobal, pdwKey, bChatLock, _WAIT_ENTER_ACCOUNTSetData8_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetPcBangFlag10_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, bool bIsPcBang)
+        static void _WAIT_ENTER_ACCOUNTSetPcBangFlag10_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, bool bIsPcBang)
         {
            _WAIT_ENTER_ACCOUNTSetPcBangFlag10_user(_this, bIsPcBang, _WAIT_ENTER_ACCOUNTSetPcBangFlag10_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetTransFlag12_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, int nTrans)
+        static void _WAIT_ENTER_ACCOUNTSetTransFlag12_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, int nTrans)
         {
            _WAIT_ENTER_ACCOUNTSetTransFlag12_user(_this, nTrans, _WAIT_ENTER_ACCOUNTSetTransFlag12_next);
         };
-        void _WAIT_ENTER_ACCOUNTSetUILock14_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, char byUILock, char* szUILockPW, char byUILockFailCnt, char* szAccountPW, char byHintIndex, char* uszHintAnswer, char byUILockFindPassFailCount)
+        static void _WAIT_ENTER_ACCOUNTSetUILock14_wrapper(struct _WAIT_ENTER_ACCOUNT* _this, char byUILock, char* szUILockPW, char byUILockFailCnt, char* szAccountPW, char byHintIndex, char* uszHintAnswer, char byUILockFindPassFailCount)
         {
            _WAIT_ENTER_ACCOUNTSetUILock14_user(_this, byUILock, szUILockPW, byUILockFailCnt, szAccountPW, byHintIndex, uszHintAnswer, byUILockFindPassFailCount, _WAIT_ENTER_ACCOUNTSetUILock14_next);
         };
-        void _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_wrapper(struct _WAIT_ENTER_ACCOUNT* _this)
+        static void _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_wrapper(struct _WAIT_ENTER_ACCOUNT* _this)
         {
            _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_user(_this, _WAIT_ENTER_ACCOUNTctor__WAIT_ENTER_ACCOUNT16_next);
         };
         
-        hook_record _WAIT_ENTER_ACCOUNT_functions[] = {
+        static hook_record _WAIT_ENTER_ACCOUNT_functions[] = {
         {   (LPVOID)0x14011f260L,
             (LPVOID *)&_WAIT_ENTER_ACCOUNTRelease2_user,
             (LPVOID *)&_WAIT_ENTER_ACCOUNTRelease2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

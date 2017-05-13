@@ -8,165 +8,165 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuildRoomInfoctor_CGuildRoomInfo2_ptr CGuildRoomInfoctor_CGuildRoomInfo2_next(nullptr);
-        info::CGuildRoomInfoctor_CGuildRoomInfo2_clbk CGuildRoomInfoctor_CGuildRoomInfo2_user(nullptr);
-        info::CGuildRoomInfoctor_CGuildRoomInfo4_ptr CGuildRoomInfoctor_CGuildRoomInfo4_next(nullptr);
-        info::CGuildRoomInfoctor_CGuildRoomInfo4_clbk CGuildRoomInfoctor_CGuildRoomInfo4_user(nullptr);
-        info::CGuildRoomInfoGetGuildSerial6_ptr CGuildRoomInfoGetGuildSerial6_next(nullptr);
-        info::CGuildRoomInfoGetGuildSerial6_clbk CGuildRoomInfoGetGuildSerial6_user(nullptr);
-        info::CGuildRoomInfoGetMapData8_ptr CGuildRoomInfoGetMapData8_next(nullptr);
-        info::CGuildRoomInfoGetMapData8_clbk CGuildRoomInfoGetMapData8_user(nullptr);
-        info::CGuildRoomInfoGetMapLayer10_ptr CGuildRoomInfoGetMapLayer10_next(nullptr);
-        info::CGuildRoomInfoGetMapLayer10_clbk CGuildRoomInfoGetMapLayer10_user(nullptr);
-        info::CGuildRoomInfoGetMapPos12_ptr CGuildRoomInfoGetMapPos12_next(nullptr);
-        info::CGuildRoomInfoGetMapPos12_clbk CGuildRoomInfoGetMapPos12_user(nullptr);
-        info::CGuildRoomInfoGetRestTime14_ptr CGuildRoomInfoGetRestTime14_next(nullptr);
-        info::CGuildRoomInfoGetRestTime14_clbk CGuildRoomInfoGetRestTime14_user(nullptr);
-        info::CGuildRoomInfoGetRoomType16_ptr CGuildRoomInfoGetRoomType16_next(nullptr);
-        info::CGuildRoomInfoGetRoomType16_clbk CGuildRoomInfoGetRoomType16_user(nullptr);
-        info::CGuildRoomInfoIsMemberIn18_ptr CGuildRoomInfoIsMemberIn18_next(nullptr);
-        info::CGuildRoomInfoIsMemberIn18_clbk CGuildRoomInfoIsMemberIn18_user(nullptr);
-        info::CGuildRoomInfoIsRent20_ptr CGuildRoomInfoIsRent20_next(nullptr);
-        info::CGuildRoomInfoIsRent20_clbk CGuildRoomInfoIsRent20_user(nullptr);
-        info::CGuildRoomInfoOutAllRoomMember22_ptr CGuildRoomInfoOutAllRoomMember22_next(nullptr);
-        info::CGuildRoomInfoOutAllRoomMember22_clbk CGuildRoomInfoOutAllRoomMember22_user(nullptr);
-        info::CGuildRoomInfoRoomIn24_ptr CGuildRoomInfoRoomIn24_next(nullptr);
-        info::CGuildRoomInfoRoomIn24_clbk CGuildRoomInfoRoomIn24_user(nullptr);
-        info::CGuildRoomInfoRoomOut26_ptr CGuildRoomInfoRoomOut26_next(nullptr);
-        info::CGuildRoomInfoRoomOut26_clbk CGuildRoomInfoRoomOut26_user(nullptr);
-        info::CGuildRoomInfoRoomTimer28_ptr CGuildRoomInfoRoomTimer28_next(nullptr);
-        info::CGuildRoomInfoRoomTimer28_clbk CGuildRoomInfoRoomTimer28_user(nullptr);
-        info::CGuildRoomInfoRoom_Initialize30_ptr CGuildRoomInfoRoom_Initialize30_next(nullptr);
-        info::CGuildRoomInfoRoom_Initialize30_clbk CGuildRoomInfoRoom_Initialize30_user(nullptr);
-        info::CGuildRoomInfoSendDQS_RoomInsert32_ptr CGuildRoomInfoSendDQS_RoomInsert32_next(nullptr);
-        info::CGuildRoomInfoSendDQS_RoomInsert32_clbk CGuildRoomInfoSendDQS_RoomInsert32_user(nullptr);
-        info::CGuildRoomInfoSendDQS_RoomUpdate34_ptr CGuildRoomInfoSendDQS_RoomUpdate34_next(nullptr);
-        info::CGuildRoomInfoSendDQS_RoomUpdate34_clbk CGuildRoomInfoSendDQS_RoomUpdate34_user(nullptr);
-        info::CGuildRoomInfoSendMsg_RoomTimeOver36_ptr CGuildRoomInfoSendMsg_RoomTimeOver36_next(nullptr);
-        info::CGuildRoomInfoSendMsg_RoomTimeOver36_clbk CGuildRoomInfoSendMsg_RoomTimeOver36_user(nullptr);
-        info::CGuildRoomInfoSetPlayerOut38_ptr CGuildRoomInfoSetPlayerOut38_next(nullptr);
-        info::CGuildRoomInfoSetPlayerOut38_clbk CGuildRoomInfoSetPlayerOut38_user(nullptr);
-        info::CGuildRoomInfoSetRoom40_ptr CGuildRoomInfoSetRoom40_next(nullptr);
-        info::CGuildRoomInfoSetRoom40_clbk CGuildRoomInfoSetRoom40_user(nullptr);
-        info::CGuildRoomInfoSetRoomMapInfo42_ptr CGuildRoomInfoSetRoomMapInfo42_next(nullptr);
-        info::CGuildRoomInfoSetRoomMapInfo42_clbk CGuildRoomInfoSetRoomMapInfo42_user(nullptr);
-        info::CGuildRoomInfoSetRoomTime44_ptr CGuildRoomInfoSetRoomTime44_next(nullptr);
-        info::CGuildRoomInfoSetRoomTime44_clbk CGuildRoomInfoSetRoomTime44_user(nullptr);
-        info::CGuildRoomInfoSetRoomTime_Restore46_ptr CGuildRoomInfoSetRoomTime_Restore46_next(nullptr);
-        info::CGuildRoomInfoSetRoomTime_Restore46_clbk CGuildRoomInfoSetRoomTime_Restore46_user(nullptr);
-        info::CGuildRoomInfoSetRoom_Restore48_ptr CGuildRoomInfoSetRoom_Restore48_next(nullptr);
-        info::CGuildRoomInfoSetRoom_Restore48_clbk CGuildRoomInfoSetRoom_Restore48_user(nullptr);
-        info::CGuildRoomInfoTimeOver50_ptr CGuildRoomInfoTimeOver50_next(nullptr);
-        info::CGuildRoomInfoTimeOver50_clbk CGuildRoomInfoTimeOver50_user(nullptr);
-        info::CGuildRoomInfodtor_CGuildRoomInfo56_ptr CGuildRoomInfodtor_CGuildRoomInfo56_next(nullptr);
-        info::CGuildRoomInfodtor_CGuildRoomInfo56_clbk CGuildRoomInfodtor_CGuildRoomInfo56_user(nullptr);
+        static info::CGuildRoomInfoctor_CGuildRoomInfo2_ptr CGuildRoomInfoctor_CGuildRoomInfo2_next(nullptr);
+        static info::CGuildRoomInfoctor_CGuildRoomInfo2_clbk CGuildRoomInfoctor_CGuildRoomInfo2_user(nullptr);
+        static info::CGuildRoomInfoctor_CGuildRoomInfo4_ptr CGuildRoomInfoctor_CGuildRoomInfo4_next(nullptr);
+        static info::CGuildRoomInfoctor_CGuildRoomInfo4_clbk CGuildRoomInfoctor_CGuildRoomInfo4_user(nullptr);
+        static info::CGuildRoomInfoGetGuildSerial6_ptr CGuildRoomInfoGetGuildSerial6_next(nullptr);
+        static info::CGuildRoomInfoGetGuildSerial6_clbk CGuildRoomInfoGetGuildSerial6_user(nullptr);
+        static info::CGuildRoomInfoGetMapData8_ptr CGuildRoomInfoGetMapData8_next(nullptr);
+        static info::CGuildRoomInfoGetMapData8_clbk CGuildRoomInfoGetMapData8_user(nullptr);
+        static info::CGuildRoomInfoGetMapLayer10_ptr CGuildRoomInfoGetMapLayer10_next(nullptr);
+        static info::CGuildRoomInfoGetMapLayer10_clbk CGuildRoomInfoGetMapLayer10_user(nullptr);
+        static info::CGuildRoomInfoGetMapPos12_ptr CGuildRoomInfoGetMapPos12_next(nullptr);
+        static info::CGuildRoomInfoGetMapPos12_clbk CGuildRoomInfoGetMapPos12_user(nullptr);
+        static info::CGuildRoomInfoGetRestTime14_ptr CGuildRoomInfoGetRestTime14_next(nullptr);
+        static info::CGuildRoomInfoGetRestTime14_clbk CGuildRoomInfoGetRestTime14_user(nullptr);
+        static info::CGuildRoomInfoGetRoomType16_ptr CGuildRoomInfoGetRoomType16_next(nullptr);
+        static info::CGuildRoomInfoGetRoomType16_clbk CGuildRoomInfoGetRoomType16_user(nullptr);
+        static info::CGuildRoomInfoIsMemberIn18_ptr CGuildRoomInfoIsMemberIn18_next(nullptr);
+        static info::CGuildRoomInfoIsMemberIn18_clbk CGuildRoomInfoIsMemberIn18_user(nullptr);
+        static info::CGuildRoomInfoIsRent20_ptr CGuildRoomInfoIsRent20_next(nullptr);
+        static info::CGuildRoomInfoIsRent20_clbk CGuildRoomInfoIsRent20_user(nullptr);
+        static info::CGuildRoomInfoOutAllRoomMember22_ptr CGuildRoomInfoOutAllRoomMember22_next(nullptr);
+        static info::CGuildRoomInfoOutAllRoomMember22_clbk CGuildRoomInfoOutAllRoomMember22_user(nullptr);
+        static info::CGuildRoomInfoRoomIn24_ptr CGuildRoomInfoRoomIn24_next(nullptr);
+        static info::CGuildRoomInfoRoomIn24_clbk CGuildRoomInfoRoomIn24_user(nullptr);
+        static info::CGuildRoomInfoRoomOut26_ptr CGuildRoomInfoRoomOut26_next(nullptr);
+        static info::CGuildRoomInfoRoomOut26_clbk CGuildRoomInfoRoomOut26_user(nullptr);
+        static info::CGuildRoomInfoRoomTimer28_ptr CGuildRoomInfoRoomTimer28_next(nullptr);
+        static info::CGuildRoomInfoRoomTimer28_clbk CGuildRoomInfoRoomTimer28_user(nullptr);
+        static info::CGuildRoomInfoRoom_Initialize30_ptr CGuildRoomInfoRoom_Initialize30_next(nullptr);
+        static info::CGuildRoomInfoRoom_Initialize30_clbk CGuildRoomInfoRoom_Initialize30_user(nullptr);
+        static info::CGuildRoomInfoSendDQS_RoomInsert32_ptr CGuildRoomInfoSendDQS_RoomInsert32_next(nullptr);
+        static info::CGuildRoomInfoSendDQS_RoomInsert32_clbk CGuildRoomInfoSendDQS_RoomInsert32_user(nullptr);
+        static info::CGuildRoomInfoSendDQS_RoomUpdate34_ptr CGuildRoomInfoSendDQS_RoomUpdate34_next(nullptr);
+        static info::CGuildRoomInfoSendDQS_RoomUpdate34_clbk CGuildRoomInfoSendDQS_RoomUpdate34_user(nullptr);
+        static info::CGuildRoomInfoSendMsg_RoomTimeOver36_ptr CGuildRoomInfoSendMsg_RoomTimeOver36_next(nullptr);
+        static info::CGuildRoomInfoSendMsg_RoomTimeOver36_clbk CGuildRoomInfoSendMsg_RoomTimeOver36_user(nullptr);
+        static info::CGuildRoomInfoSetPlayerOut38_ptr CGuildRoomInfoSetPlayerOut38_next(nullptr);
+        static info::CGuildRoomInfoSetPlayerOut38_clbk CGuildRoomInfoSetPlayerOut38_user(nullptr);
+        static info::CGuildRoomInfoSetRoom40_ptr CGuildRoomInfoSetRoom40_next(nullptr);
+        static info::CGuildRoomInfoSetRoom40_clbk CGuildRoomInfoSetRoom40_user(nullptr);
+        static info::CGuildRoomInfoSetRoomMapInfo42_ptr CGuildRoomInfoSetRoomMapInfo42_next(nullptr);
+        static info::CGuildRoomInfoSetRoomMapInfo42_clbk CGuildRoomInfoSetRoomMapInfo42_user(nullptr);
+        static info::CGuildRoomInfoSetRoomTime44_ptr CGuildRoomInfoSetRoomTime44_next(nullptr);
+        static info::CGuildRoomInfoSetRoomTime44_clbk CGuildRoomInfoSetRoomTime44_user(nullptr);
+        static info::CGuildRoomInfoSetRoomTime_Restore46_ptr CGuildRoomInfoSetRoomTime_Restore46_next(nullptr);
+        static info::CGuildRoomInfoSetRoomTime_Restore46_clbk CGuildRoomInfoSetRoomTime_Restore46_user(nullptr);
+        static info::CGuildRoomInfoSetRoom_Restore48_ptr CGuildRoomInfoSetRoom_Restore48_next(nullptr);
+        static info::CGuildRoomInfoSetRoom_Restore48_clbk CGuildRoomInfoSetRoom_Restore48_user(nullptr);
+        static info::CGuildRoomInfoTimeOver50_ptr CGuildRoomInfoTimeOver50_next(nullptr);
+        static info::CGuildRoomInfoTimeOver50_clbk CGuildRoomInfoTimeOver50_user(nullptr);
+        static info::CGuildRoomInfodtor_CGuildRoomInfo56_ptr CGuildRoomInfodtor_CGuildRoomInfo56_next(nullptr);
+        static info::CGuildRoomInfodtor_CGuildRoomInfo56_clbk CGuildRoomInfodtor_CGuildRoomInfo56_user(nullptr);
         
-        void CGuildRoomInfoctor_CGuildRoomInfo2_wrapper(struct CGuildRoomInfo* _this, struct CGuildRoomInfo* __that)
+        static void CGuildRoomInfoctor_CGuildRoomInfo2_wrapper(struct CGuildRoomInfo* _this, struct CGuildRoomInfo* __that)
         {
            CGuildRoomInfoctor_CGuildRoomInfo2_user(_this, __that, CGuildRoomInfoctor_CGuildRoomInfo2_next);
         };
-        void CGuildRoomInfoctor_CGuildRoomInfo4_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoctor_CGuildRoomInfo4_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoctor_CGuildRoomInfo4_user(_this, CGuildRoomInfoctor_CGuildRoomInfo4_next);
         };
-        unsigned int CGuildRoomInfoGetGuildSerial6_wrapper(struct CGuildRoomInfo* _this)
+        static unsigned int CGuildRoomInfoGetGuildSerial6_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoGetGuildSerial6_user(_this, CGuildRoomInfoGetGuildSerial6_next);
         };
-        struct CMapData* CGuildRoomInfoGetMapData8_wrapper(struct CGuildRoomInfo* _this)
+        static struct CMapData* CGuildRoomInfoGetMapData8_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoGetMapData8_user(_this, CGuildRoomInfoGetMapData8_next);
         };
-        uint16_t CGuildRoomInfoGetMapLayer10_wrapper(struct CGuildRoomInfo* _this)
+        static uint16_t CGuildRoomInfoGetMapLayer10_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoGetMapLayer10_user(_this, CGuildRoomInfoGetMapLayer10_next);
         };
-        bool CGuildRoomInfoGetMapPos12_wrapper(struct CGuildRoomInfo* _this, float* pPos)
+        static bool CGuildRoomInfoGetMapPos12_wrapper(struct CGuildRoomInfo* _this, float* pPos)
         {
            return CGuildRoomInfoGetMapPos12_user(_this, pPos, CGuildRoomInfoGetMapPos12_next);
         };
-        int CGuildRoomInfoGetRestTime14_wrapper(struct CGuildRoomInfo* _this)
+        static int CGuildRoomInfoGetRestTime14_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoGetRestTime14_user(_this, CGuildRoomInfoGetRestTime14_next);
         };
-        char CGuildRoomInfoGetRoomType16_wrapper(struct CGuildRoomInfo* _this)
+        static char CGuildRoomInfoGetRoomType16_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoGetRoomType16_user(_this, CGuildRoomInfoGetRoomType16_next);
         };
-        bool CGuildRoomInfoIsMemberIn18_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
+        static bool CGuildRoomInfoIsMemberIn18_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomInfoIsMemberIn18_user(_this, n, dwCharSerial, CGuildRoomInfoIsMemberIn18_next);
         };
-        bool CGuildRoomInfoIsRent20_wrapper(struct CGuildRoomInfo* _this)
+        static bool CGuildRoomInfoIsRent20_wrapper(struct CGuildRoomInfo* _this)
         {
            return CGuildRoomInfoIsRent20_user(_this, CGuildRoomInfoIsRent20_next);
         };
-        void CGuildRoomInfoOutAllRoomMember22_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoOutAllRoomMember22_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoOutAllRoomMember22_user(_this, CGuildRoomInfoOutAllRoomMember22_next);
         };
-        int CGuildRoomInfoRoomIn24_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
+        static int CGuildRoomInfoRoomIn24_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomInfoRoomIn24_user(_this, n, dwCharSerial, CGuildRoomInfoRoomIn24_next);
         };
-        int CGuildRoomInfoRoomOut26_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
+        static int CGuildRoomInfoRoomOut26_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomInfoRoomOut26_user(_this, n, dwCharSerial, CGuildRoomInfoRoomOut26_next);
         };
-        void CGuildRoomInfoRoomTimer28_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoRoomTimer28_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoRoomTimer28_user(_this, CGuildRoomInfoRoomTimer28_next);
         };
-        void CGuildRoomInfoRoom_Initialize30_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoRoom_Initialize30_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoRoom_Initialize30_user(_this, CGuildRoomInfoRoom_Initialize30_next);
         };
-        void CGuildRoomInfoSendDQS_RoomInsert32_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoSendDQS_RoomInsert32_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoSendDQS_RoomInsert32_user(_this, CGuildRoomInfoSendDQS_RoomInsert32_next);
         };
-        void CGuildRoomInfoSendDQS_RoomUpdate34_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoSendDQS_RoomUpdate34_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoSendDQS_RoomUpdate34_user(_this, CGuildRoomInfoSendDQS_RoomUpdate34_next);
         };
-        void CGuildRoomInfoSendMsg_RoomTimeOver36_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoSendMsg_RoomTimeOver36_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoSendMsg_RoomTimeOver36_user(_this, CGuildRoomInfoSendMsg_RoomTimeOver36_next);
         };
-        bool CGuildRoomInfoSetPlayerOut38_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial, int iMemberIdx)
+        static bool CGuildRoomInfoSetPlayerOut38_wrapper(struct CGuildRoomInfo* _this, int n, unsigned int dwCharSerial, int iMemberIdx)
         {
            return CGuildRoomInfoSetPlayerOut38_user(_this, n, dwCharSerial, iMemberIdx, CGuildRoomInfoSetPlayerOut38_next);
         };
-        bool CGuildRoomInfoSetRoom40_wrapper(struct CGuildRoomInfo* _this, int iGuildInx, unsigned int dwGuildSerial)
+        static bool CGuildRoomInfoSetRoom40_wrapper(struct CGuildRoomInfo* _this, int iGuildInx, unsigned int dwGuildSerial)
         {
            return CGuildRoomInfoSetRoom40_user(_this, iGuildInx, dwGuildSerial, CGuildRoomInfoSetRoom40_next);
         };
-        void CGuildRoomInfoSetRoomMapInfo42_wrapper(struct CGuildRoomInfo* _this, struct CMapData* pMap, uint16_t wMapLayer, char byRoomType, char byRace)
+        static void CGuildRoomInfoSetRoomMapInfo42_wrapper(struct CGuildRoomInfo* _this, struct CMapData* pMap, uint16_t wMapLayer, char byRoomType, char byRace)
         {
            CGuildRoomInfoSetRoomMapInfo42_user(_this, pMap, wMapLayer, byRoomType, byRace, CGuildRoomInfoSetRoomMapInfo42_next);
         };
-        void CGuildRoomInfoSetRoomTime44_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoSetRoomTime44_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoSetRoomTime44_user(_this, CGuildRoomInfoSetRoomTime44_next);
         };
-        void CGuildRoomInfoSetRoomTime_Restore46_wrapper(struct CGuildRoomInfo* _this, struct tagTIMESTAMP_STRUCT ts)
+        static void CGuildRoomInfoSetRoomTime_Restore46_wrapper(struct CGuildRoomInfo* _this, struct tagTIMESTAMP_STRUCT ts)
         {
            CGuildRoomInfoSetRoomTime_Restore46_user(_this, ts, CGuildRoomInfoSetRoomTime_Restore46_next);
         };
-        bool CGuildRoomInfoSetRoom_Restore48_wrapper(struct CGuildRoomInfo* _this, int iGuildInx, unsigned int dwGuildSerial, struct tagTIMESTAMP_STRUCT ts)
+        static bool CGuildRoomInfoSetRoom_Restore48_wrapper(struct CGuildRoomInfo* _this, int iGuildInx, unsigned int dwGuildSerial, struct tagTIMESTAMP_STRUCT ts)
         {
            return CGuildRoomInfoSetRoom_Restore48_user(_this, iGuildInx, dwGuildSerial, ts, CGuildRoomInfoSetRoom_Restore48_next);
         };
-        void CGuildRoomInfoTimeOver50_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfoTimeOver50_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfoTimeOver50_user(_this, CGuildRoomInfoTimeOver50_next);
         };
-        void CGuildRoomInfodtor_CGuildRoomInfo56_wrapper(struct CGuildRoomInfo* _this)
+        static void CGuildRoomInfodtor_CGuildRoomInfo56_wrapper(struct CGuildRoomInfo* _this)
         {
            CGuildRoomInfodtor_CGuildRoomInfo56_user(_this, CGuildRoomInfodtor_CGuildRoomInfo56_next);
         };
         
-        hook_record CGuildRoomInfo_functions[] = {
+        static hook_record CGuildRoomInfo_functions[] = {
         {   (LPVOID)0x1402eb8f0L,
             (LPVOID *)&CGuildRoomInfoctor_CGuildRoomInfo2_user,
             (LPVOID *)&CGuildRoomInfoctor_CGuildRoomInfo2_next,
@@ -300,5 +300,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

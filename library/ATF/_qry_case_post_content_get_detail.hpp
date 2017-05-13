@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_post_content_getctor__qry_case_post_content_get2_ptr _qry_case_post_content_getctor__qry_case_post_content_get2_next(nullptr);
-        info::_qry_case_post_content_getctor__qry_case_post_content_get2_clbk _qry_case_post_content_getctor__qry_case_post_content_get2_user(nullptr);
-        info::_qry_case_post_content_getsize4_ptr _qry_case_post_content_getsize4_next(nullptr);
-        info::_qry_case_post_content_getsize4_clbk _qry_case_post_content_getsize4_user(nullptr);
+        static info::_qry_case_post_content_getctor__qry_case_post_content_get2_ptr _qry_case_post_content_getctor__qry_case_post_content_get2_next(nullptr);
+        static info::_qry_case_post_content_getctor__qry_case_post_content_get2_clbk _qry_case_post_content_getctor__qry_case_post_content_get2_user(nullptr);
+        static info::_qry_case_post_content_getsize4_ptr _qry_case_post_content_getsize4_next(nullptr);
+        static info::_qry_case_post_content_getsize4_clbk _qry_case_post_content_getsize4_user(nullptr);
         
-        void _qry_case_post_content_getctor__qry_case_post_content_get2_wrapper(struct _qry_case_post_content_get* _this)
+        static void _qry_case_post_content_getctor__qry_case_post_content_get2_wrapper(struct _qry_case_post_content_get* _this)
         {
            _qry_case_post_content_getctor__qry_case_post_content_get2_user(_this, _qry_case_post_content_getctor__qry_case_post_content_get2_next);
         };
-        int _qry_case_post_content_getsize4_wrapper(struct _qry_case_post_content_get* _this)
+        static int _qry_case_post_content_getsize4_wrapper(struct _qry_case_post_content_get* _this)
         {
            return _qry_case_post_content_getsize4_user(_this, _qry_case_post_content_getsize4_next);
         };
         
-        hook_record _qry_case_post_content_get_functions[] = {
+        static hook_record _qry_case_post_content_get_functions[] = {
         {   (LPVOID)0x1400ca730L,
             (LPVOID *)&_qry_case_post_content_getctor__qry_case_post_content_get2_user,
             (LPVOID *)&_qry_case_post_content_getctor__qry_case_post_content_get2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

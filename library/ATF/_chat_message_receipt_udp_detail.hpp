@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_chat_message_receipt_udpctor__chat_message_receipt_udp2_ptr _chat_message_receipt_udpctor__chat_message_receipt_udp2_next(nullptr);
-        info::_chat_message_receipt_udpctor__chat_message_receipt_udp2_clbk _chat_message_receipt_udpctor__chat_message_receipt_udp2_user(nullptr);
-        info::_chat_message_receipt_udpsize4_ptr _chat_message_receipt_udpsize4_next(nullptr);
-        info::_chat_message_receipt_udpsize4_clbk _chat_message_receipt_udpsize4_user(nullptr);
+        static info::_chat_message_receipt_udpctor__chat_message_receipt_udp2_ptr _chat_message_receipt_udpctor__chat_message_receipt_udp2_next(nullptr);
+        static info::_chat_message_receipt_udpctor__chat_message_receipt_udp2_clbk _chat_message_receipt_udpctor__chat_message_receipt_udp2_user(nullptr);
+        static info::_chat_message_receipt_udpsize4_ptr _chat_message_receipt_udpsize4_next(nullptr);
+        static info::_chat_message_receipt_udpsize4_clbk _chat_message_receipt_udpsize4_user(nullptr);
         
-        void _chat_message_receipt_udpctor__chat_message_receipt_udp2_wrapper(struct _chat_message_receipt_udp* _this)
+        static void _chat_message_receipt_udpctor__chat_message_receipt_udp2_wrapper(struct _chat_message_receipt_udp* _this)
         {
            _chat_message_receipt_udpctor__chat_message_receipt_udp2_user(_this, _chat_message_receipt_udpctor__chat_message_receipt_udp2_next);
         };
-        int _chat_message_receipt_udpsize4_wrapper(struct _chat_message_receipt_udp* _this)
+        static int _chat_message_receipt_udpsize4_wrapper(struct _chat_message_receipt_udp* _this)
         {
            return _chat_message_receipt_udpsize4_user(_this, _chat_message_receipt_udpsize4_next);
         };
         
-        hook_record _chat_message_receipt_udp_functions[] = {
+        static hook_record _chat_message_receipt_udp_functions[] = {
         {   (LPVOID)0x140094e90L,
             (LPVOID *)&_chat_message_receipt_udpctor__chat_message_receipt_udp2_user,
             (LPVOID *)&_chat_message_receipt_udpctor__chat_message_receipt_udp2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

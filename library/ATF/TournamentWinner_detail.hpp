@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TournamentWinnerctor_TournamentWinner2_ptr TournamentWinnerctor_TournamentWinner2_next(nullptr);
-        info::TournamentWinnerctor_TournamentWinner2_clbk TournamentWinnerctor_TournamentWinner2_user(nullptr);
+        static info::TournamentWinnerctor_TournamentWinner2_ptr TournamentWinnerctor_TournamentWinner2_next(nullptr);
+        static info::TournamentWinnerctor_TournamentWinner2_clbk TournamentWinnerctor_TournamentWinner2_user(nullptr);
         
-        void TournamentWinnerctor_TournamentWinner2_wrapper(struct TournamentWinner* _this)
+        static void TournamentWinnerctor_TournamentWinner2_wrapper(struct TournamentWinner* _this)
         {
            TournamentWinnerctor_TournamentWinner2_user(_this, TournamentWinnerctor_TournamentWinner2_next);
         };
         
-        hook_record TournamentWinner_functions[] = {
+        static hook_record TournamentWinner_functions[] = {
         {   (LPVOID)0x1401bf4d0L,
             (LPVOID *)&TournamentWinnerctor_TournamentWinner2_user,
             (LPVOID *)&TournamentWinnerctor_TournamentWinner2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

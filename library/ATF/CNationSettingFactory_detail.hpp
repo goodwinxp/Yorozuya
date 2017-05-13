@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingFactoryctor_CNationSettingFactory2_ptr CNationSettingFactoryctor_CNationSettingFactory2_next(nullptr);
-        info::CNationSettingFactoryctor_CNationSettingFactory2_clbk CNationSettingFactoryctor_CNationSettingFactory2_user(nullptr);
-        info::CNationSettingFactoryGetKey4_ptr CNationSettingFactoryGetKey4_next(nullptr);
-        info::CNationSettingFactoryGetKey4_clbk CNationSettingFactoryGetKey4_user(nullptr);
-        info::CNationSettingFactoryIsExistCheat6_ptr CNationSettingFactoryIsExistCheat6_next(nullptr);
-        info::CNationSettingFactoryIsExistCheat6_clbk CNationSettingFactoryIsExistCheat6_user(nullptr);
-        info::CNationSettingFactoryIsNULL8_ptr CNationSettingFactoryIsNULL8_next(nullptr);
-        info::CNationSettingFactoryIsNULL8_clbk CNationSettingFactoryIsNULL8_user(nullptr);
-        info::CNationSettingFactoryRegistCheat10_ptr CNationSettingFactoryRegistCheat10_next(nullptr);
-        info::CNationSettingFactoryRegistCheat10_clbk CNationSettingFactoryRegistCheat10_user(nullptr);
-        info::CNationSettingFactoryRegistCheatEndRecord12_ptr CNationSettingFactoryRegistCheatEndRecord12_next(nullptr);
-        info::CNationSettingFactoryRegistCheatEndRecord12_clbk CNationSettingFactoryRegistCheatEndRecord12_user(nullptr);
-        info::CNationSettingFactoryRegistCheatTable14_ptr CNationSettingFactoryRegistCheatTable14_next(nullptr);
-        info::CNationSettingFactoryRegistCheatTable14_clbk CNationSettingFactoryRegistCheatTable14_user(nullptr);
-        info::CNationSettingFactoryRegistCheatTableOnlyInternal16_ptr CNationSettingFactoryRegistCheatTableOnlyInternal16_next(nullptr);
-        info::CNationSettingFactoryRegistCheatTableOnlyInternal16_clbk CNationSettingFactoryRegistCheatTableOnlyInternal16_user(nullptr);
-        info::CNationSettingFactoryRegistCheatTableUnion18_ptr CNationSettingFactoryRegistCheatTableUnion18_next(nullptr);
-        info::CNationSettingFactoryRegistCheatTableUnion18_clbk CNationSettingFactoryRegistCheatTableUnion18_user(nullptr);
+        static info::CNationSettingFactoryctor_CNationSettingFactory2_ptr CNationSettingFactoryctor_CNationSettingFactory2_next(nullptr);
+        static info::CNationSettingFactoryctor_CNationSettingFactory2_clbk CNationSettingFactoryctor_CNationSettingFactory2_user(nullptr);
+        static info::CNationSettingFactoryGetKey4_ptr CNationSettingFactoryGetKey4_next(nullptr);
+        static info::CNationSettingFactoryGetKey4_clbk CNationSettingFactoryGetKey4_user(nullptr);
+        static info::CNationSettingFactoryIsExistCheat6_ptr CNationSettingFactoryIsExistCheat6_next(nullptr);
+        static info::CNationSettingFactoryIsExistCheat6_clbk CNationSettingFactoryIsExistCheat6_user(nullptr);
+        static info::CNationSettingFactoryIsNULL8_ptr CNationSettingFactoryIsNULL8_next(nullptr);
+        static info::CNationSettingFactoryIsNULL8_clbk CNationSettingFactoryIsNULL8_user(nullptr);
+        static info::CNationSettingFactoryRegistCheat10_ptr CNationSettingFactoryRegistCheat10_next(nullptr);
+        static info::CNationSettingFactoryRegistCheat10_clbk CNationSettingFactoryRegistCheat10_user(nullptr);
+        static info::CNationSettingFactoryRegistCheatEndRecord12_ptr CNationSettingFactoryRegistCheatEndRecord12_next(nullptr);
+        static info::CNationSettingFactoryRegistCheatEndRecord12_clbk CNationSettingFactoryRegistCheatEndRecord12_user(nullptr);
+        static info::CNationSettingFactoryRegistCheatTable14_ptr CNationSettingFactoryRegistCheatTable14_next(nullptr);
+        static info::CNationSettingFactoryRegistCheatTable14_clbk CNationSettingFactoryRegistCheatTable14_user(nullptr);
+        static info::CNationSettingFactoryRegistCheatTableOnlyInternal16_ptr CNationSettingFactoryRegistCheatTableOnlyInternal16_next(nullptr);
+        static info::CNationSettingFactoryRegistCheatTableOnlyInternal16_clbk CNationSettingFactoryRegistCheatTableOnlyInternal16_user(nullptr);
+        static info::CNationSettingFactoryRegistCheatTableUnion18_ptr CNationSettingFactoryRegistCheatTableUnion18_next(nullptr);
+        static info::CNationSettingFactoryRegistCheatTableUnion18_clbk CNationSettingFactoryRegistCheatTableUnion18_user(nullptr);
         
-        void CNationSettingFactoryctor_CNationSettingFactory2_wrapper(struct CNationSettingFactory* _this, int iType)
+        static void CNationSettingFactoryctor_CNationSettingFactory2_wrapper(struct CNationSettingFactory* _this, int iType)
         {
            CNationSettingFactoryctor_CNationSettingFactory2_user(_this, iType, CNationSettingFactoryctor_CNationSettingFactory2_next);
         };
-        int CNationSettingFactoryGetKey4_wrapper(struct CNationSettingFactory* _this)
+        static int CNationSettingFactoryGetKey4_wrapper(struct CNationSettingFactory* _this)
         {
            return CNationSettingFactoryGetKey4_user(_this, CNationSettingFactoryGetKey4_next);
         };
-        bool CNationSettingFactoryIsExistCheat6_wrapper(struct CNationSettingFactory* _this, char* szCheat, struct CNationSettingData* pkData)
+        static bool CNationSettingFactoryIsExistCheat6_wrapper(struct CNationSettingFactory* _this, char* szCheat, struct CNationSettingData* pkData)
         {
            return CNationSettingFactoryIsExistCheat6_user(_this, szCheat, pkData, CNationSettingFactoryIsExistCheat6_next);
         };
-        bool CNationSettingFactoryIsNULL8_wrapper(struct CNationSettingFactory* _this)
+        static bool CNationSettingFactoryIsNULL8_wrapper(struct CNationSettingFactory* _this)
         {
            return CNationSettingFactoryIsNULL8_user(_this, CNationSettingFactoryIsNULL8_next);
         };
-        bool CNationSettingFactoryRegistCheat10_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData, char* szCheat, bool (WINAPIV* pCheatCommandFn)(struct CPlayer*), int iUseDegree, int iMgrDegree)
+        static bool CNationSettingFactoryRegistCheat10_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData, char* szCheat, bool (WINAPIV* pCheatCommandFn)(struct CPlayer*), int iUseDegree, int iMgrDegree)
         {
            return CNationSettingFactoryRegistCheat10_user(_this, pkData, szCheat, pCheatCommandFn, iUseDegree, iMgrDegree, CNationSettingFactoryRegistCheat10_next);
         };
-        void CNationSettingFactoryRegistCheatEndRecord12_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
+        static void CNationSettingFactoryRegistCheatEndRecord12_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
         {
            CNationSettingFactoryRegistCheatEndRecord12_user(_this, pkData, CNationSettingFactoryRegistCheatEndRecord12_next);
         };
-        bool CNationSettingFactoryRegistCheatTable14_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
+        static bool CNationSettingFactoryRegistCheatTable14_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
         {
            return CNationSettingFactoryRegistCheatTable14_user(_this, pkData, CNationSettingFactoryRegistCheatTable14_next);
         };
-        bool CNationSettingFactoryRegistCheatTableOnlyInternal16_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
+        static bool CNationSettingFactoryRegistCheatTableOnlyInternal16_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
         {
            return CNationSettingFactoryRegistCheatTableOnlyInternal16_user(_this, pkData, CNationSettingFactoryRegistCheatTableOnlyInternal16_next);
         };
-        bool CNationSettingFactoryRegistCheatTableUnion18_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
+        static bool CNationSettingFactoryRegistCheatTableUnion18_wrapper(struct CNationSettingFactory* _this, struct CNationSettingData* pkData)
         {
            return CNationSettingFactoryRegistCheatTableUnion18_user(_this, pkData, CNationSettingFactoryRegistCheatTableUnion18_next);
         };
         
-        hook_record CNationSettingFactory_functions[] = {
+        static hook_record CNationSettingFactory_functions[] = {
         {   (LPVOID)0x1402194e0L,
             (LPVOID *)&CNationSettingFactoryctor_CNationSettingFactory2_user,
             (LPVOID *)&CNationSettingFactoryctor_CNationSettingFactory2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

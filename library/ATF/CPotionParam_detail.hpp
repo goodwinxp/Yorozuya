@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPotionParamctor_CPotionParam2_ptr CPotionParamctor_CPotionParam2_next(nullptr);
-        info::CPotionParamctor_CPotionParam2_clbk CPotionParamctor_CPotionParam2_user(nullptr);
-        info::CPotionParamInit4_ptr CPotionParamInit4_next(nullptr);
-        info::CPotionParamInit4_clbk CPotionParamInit4_user(nullptr);
-        info::CPotionParamIsUsableActDelay6_ptr CPotionParamIsUsableActDelay6_next(nullptr);
-        info::CPotionParamIsUsableActDelay6_clbk CPotionParamIsUsableActDelay6_user(nullptr);
-        info::CPotionParamSetPotionActDelay8_ptr CPotionParamSetPotionActDelay8_next(nullptr);
-        info::CPotionParamSetPotionActDelay8_clbk CPotionParamSetPotionActDelay8_user(nullptr);
-        info::CPotionParamdtor_CPotionParam10_ptr CPotionParamdtor_CPotionParam10_next(nullptr);
-        info::CPotionParamdtor_CPotionParam10_clbk CPotionParamdtor_CPotionParam10_user(nullptr);
+        static info::CPotionParamctor_CPotionParam2_ptr CPotionParamctor_CPotionParam2_next(nullptr);
+        static info::CPotionParamctor_CPotionParam2_clbk CPotionParamctor_CPotionParam2_user(nullptr);
+        static info::CPotionParamInit4_ptr CPotionParamInit4_next(nullptr);
+        static info::CPotionParamInit4_clbk CPotionParamInit4_user(nullptr);
+        static info::CPotionParamIsUsableActDelay6_ptr CPotionParamIsUsableActDelay6_next(nullptr);
+        static info::CPotionParamIsUsableActDelay6_clbk CPotionParamIsUsableActDelay6_user(nullptr);
+        static info::CPotionParamSetPotionActDelay8_ptr CPotionParamSetPotionActDelay8_next(nullptr);
+        static info::CPotionParamSetPotionActDelay8_clbk CPotionParamSetPotionActDelay8_user(nullptr);
+        static info::CPotionParamdtor_CPotionParam10_ptr CPotionParamdtor_CPotionParam10_next(nullptr);
+        static info::CPotionParamdtor_CPotionParam10_clbk CPotionParamdtor_CPotionParam10_user(nullptr);
         
-        void CPotionParamctor_CPotionParam2_wrapper(struct CPotionParam* _this)
+        static void CPotionParamctor_CPotionParam2_wrapper(struct CPotionParam* _this)
         {
            CPotionParamctor_CPotionParam2_user(_this, CPotionParamctor_CPotionParam2_next);
         };
-        void CPotionParamInit4_wrapper(struct CPotionParam* _this, struct CPlayer* pMaster)
+        static void CPotionParamInit4_wrapper(struct CPotionParam* _this, struct CPlayer* pMaster)
         {
            CPotionParamInit4_user(_this, pMaster, CPotionParamInit4_next);
         };
-        bool CPotionParamIsUsableActDelay6_wrapper(struct CPotionParam* _this, char byPotionClass, unsigned int dwCurrTime)
+        static bool CPotionParamIsUsableActDelay6_wrapper(struct CPotionParam* _this, char byPotionClass, unsigned int dwCurrTime)
         {
            return CPotionParamIsUsableActDelay6_user(_this, byPotionClass, dwCurrTime, CPotionParamIsUsableActDelay6_next);
         };
-        void CPotionParamSetPotionActDelay8_wrapper(struct CPotionParam* _this, char byPotionClass, unsigned int dwCurrTime, unsigned int dwActDelay)
+        static void CPotionParamSetPotionActDelay8_wrapper(struct CPotionParam* _this, char byPotionClass, unsigned int dwCurrTime, unsigned int dwActDelay)
         {
            CPotionParamSetPotionActDelay8_user(_this, byPotionClass, dwCurrTime, dwActDelay, CPotionParamSetPotionActDelay8_next);
         };
-        void CPotionParamdtor_CPotionParam10_wrapper(struct CPotionParam* _this)
+        static void CPotionParamdtor_CPotionParam10_wrapper(struct CPotionParam* _this)
         {
            CPotionParamdtor_CPotionParam10_user(_this, CPotionParamdtor_CPotionParam10_next);
         };
         
-        hook_record CPotionParam_functions[] = {
+        static hook_record CPotionParam_functions[] = {
         {   (LPVOID)0x1400729f0L,
             (LPVOID *)&CPotionParamctor_CPotionParam2_user,
             (LPVOID *)&CPotionParamctor_CPotionParam2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

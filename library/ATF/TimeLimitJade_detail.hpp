@@ -8,121 +8,121 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TimeLimitJadeCheckEndTime2_ptr TimeLimitJadeCheckEndTime2_next(nullptr);
-        info::TimeLimitJadeCheckEndTime2_clbk TimeLimitJadeCheckEndTime2_user(nullptr);
-        info::TimeLimitJadeCheckStartTime4_ptr TimeLimitJadeCheckStartTime4_next(nullptr);
-        info::TimeLimitJadeCheckStartTime4_clbk TimeLimitJadeCheckStartTime4_user(nullptr);
-        info::TimeLimitJadeDeleteUseList6_ptr TimeLimitJadeDeleteUseList6_next(nullptr);
-        info::TimeLimitJadeDeleteUseList6_clbk TimeLimitJadeDeleteUseList6_user(nullptr);
-        info::TimeLimitJadeDeleteWaitList8_ptr TimeLimitJadeDeleteWaitList8_next(nullptr);
-        info::TimeLimitJadeDeleteWaitList8_clbk TimeLimitJadeDeleteWaitList8_user(nullptr);
-        info::TimeLimitJadeInit10_ptr TimeLimitJadeInit10_next(nullptr);
-        info::TimeLimitJadeInit10_clbk TimeLimitJadeInit10_user(nullptr);
-        info::TimeLimitJadeInitUse12_ptr TimeLimitJadeInitUse12_next(nullptr);
-        info::TimeLimitJadeInitUse12_clbk TimeLimitJadeInitUse12_user(nullptr);
-        info::TimeLimitJadeInitWait14_ptr TimeLimitJadeInitWait14_next(nullptr);
-        info::TimeLimitJadeInitWait14_clbk TimeLimitJadeInitWait14_user(nullptr);
-        info::TimeLimitJadeInsertUseList16_ptr TimeLimitJadeInsertUseList16_next(nullptr);
-        info::TimeLimitJadeInsertUseList16_clbk TimeLimitJadeInsertUseList16_user(nullptr);
-        info::TimeLimitJadeInsertWaitList18_ptr TimeLimitJadeInsertWaitList18_next(nullptr);
-        info::TimeLimitJadeInsertWaitList18_clbk TimeLimitJadeInsertWaitList18_user(nullptr);
-        info::TimeLimitJadeRelease20_ptr TimeLimitJadeRelease20_next(nullptr);
-        info::TimeLimitJadeRelease20_clbk TimeLimitJadeRelease20_user(nullptr);
-        info::TimeLimitJadector_TimeLimitJade22_ptr TimeLimitJadector_TimeLimitJade22_next(nullptr);
-        info::TimeLimitJadector_TimeLimitJade22_clbk TimeLimitJadector_TimeLimitJade22_user(nullptr);
-        info::TimeLimitJadedtor_TimeLimitJade26_ptr TimeLimitJadedtor_TimeLimitJade26_next(nullptr);
-        info::TimeLimitJadedtor_TimeLimitJade26_clbk TimeLimitJadedtor_TimeLimitJade26_user(nullptr);
+        static info::TimeLimitJadeCheckEndTime2_ptr TimeLimitJadeCheckEndTime2_next(nullptr);
+        static info::TimeLimitJadeCheckEndTime2_clbk TimeLimitJadeCheckEndTime2_user(nullptr);
+        static info::TimeLimitJadeCheckStartTime4_ptr TimeLimitJadeCheckStartTime4_next(nullptr);
+        static info::TimeLimitJadeCheckStartTime4_clbk TimeLimitJadeCheckStartTime4_user(nullptr);
+        static info::TimeLimitJadeDeleteUseList6_ptr TimeLimitJadeDeleteUseList6_next(nullptr);
+        static info::TimeLimitJadeDeleteUseList6_clbk TimeLimitJadeDeleteUseList6_user(nullptr);
+        static info::TimeLimitJadeDeleteWaitList8_ptr TimeLimitJadeDeleteWaitList8_next(nullptr);
+        static info::TimeLimitJadeDeleteWaitList8_clbk TimeLimitJadeDeleteWaitList8_user(nullptr);
+        static info::TimeLimitJadeInit10_ptr TimeLimitJadeInit10_next(nullptr);
+        static info::TimeLimitJadeInit10_clbk TimeLimitJadeInit10_user(nullptr);
+        static info::TimeLimitJadeInitUse12_ptr TimeLimitJadeInitUse12_next(nullptr);
+        static info::TimeLimitJadeInitUse12_clbk TimeLimitJadeInitUse12_user(nullptr);
+        static info::TimeLimitJadeInitWait14_ptr TimeLimitJadeInitWait14_next(nullptr);
+        static info::TimeLimitJadeInitWait14_clbk TimeLimitJadeInitWait14_user(nullptr);
+        static info::TimeLimitJadeInsertUseList16_ptr TimeLimitJadeInsertUseList16_next(nullptr);
+        static info::TimeLimitJadeInsertUseList16_clbk TimeLimitJadeInsertUseList16_user(nullptr);
+        static info::TimeLimitJadeInsertWaitList18_ptr TimeLimitJadeInsertWaitList18_next(nullptr);
+        static info::TimeLimitJadeInsertWaitList18_clbk TimeLimitJadeInsertWaitList18_user(nullptr);
+        static info::TimeLimitJadeRelease20_ptr TimeLimitJadeRelease20_next(nullptr);
+        static info::TimeLimitJadeRelease20_clbk TimeLimitJadeRelease20_user(nullptr);
+        static info::TimeLimitJadector_TimeLimitJade22_ptr TimeLimitJadector_TimeLimitJade22_next(nullptr);
+        static info::TimeLimitJadector_TimeLimitJade22_clbk TimeLimitJadector_TimeLimitJade22_user(nullptr);
+        static info::TimeLimitJadedtor_TimeLimitJade26_ptr TimeLimitJadedtor_TimeLimitJade26_next(nullptr);
+        static info::TimeLimitJadedtor_TimeLimitJade26_clbk TimeLimitJadedtor_TimeLimitJade26_user(nullptr);
         
-        info::TimeLimitJade__WaitCellctor_WaitCell2_ptr TimeLimitJade__WaitCellctor_WaitCell2_next(nullptr);
-        info::TimeLimitJade__WaitCellctor_WaitCell2_clbk TimeLimitJade__WaitCellctor_WaitCell2_user(nullptr);
-        info::TimeLimitJade__WaitCellctor_WaitCell4_ptr TimeLimitJade__WaitCellctor_WaitCell4_next(nullptr);
-        info::TimeLimitJade__WaitCellctor_WaitCell4_clbk TimeLimitJade__WaitCellctor_WaitCell4_user(nullptr);
-        info::TimeLimitJade__WaitCellctor_WaitCell6_ptr TimeLimitJade__WaitCellctor_WaitCell6_next(nullptr);
-        info::TimeLimitJade__WaitCellctor_WaitCell6_clbk TimeLimitJade__WaitCellctor_WaitCell6_user(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell2_ptr TimeLimitJade__WaitCellctor_WaitCell2_next(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell2_clbk TimeLimitJade__WaitCellctor_WaitCell2_user(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell4_ptr TimeLimitJade__WaitCellctor_WaitCell4_next(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell4_clbk TimeLimitJade__WaitCellctor_WaitCell4_user(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell6_ptr TimeLimitJade__WaitCellctor_WaitCell6_next(nullptr);
+        static info::TimeLimitJade__WaitCellctor_WaitCell6_clbk TimeLimitJade__WaitCellctor_WaitCell6_user(nullptr);
         
-        info::TimeLimitJade__UseCellctor_UseCell2_ptr TimeLimitJade__UseCellctor_UseCell2_next(nullptr);
-        info::TimeLimitJade__UseCellctor_UseCell2_clbk TimeLimitJade__UseCellctor_UseCell2_user(nullptr);
-        info::TimeLimitJade__UseCellctor_UseCell4_ptr TimeLimitJade__UseCellctor_UseCell4_next(nullptr);
-        info::TimeLimitJade__UseCellctor_UseCell4_clbk TimeLimitJade__UseCellctor_UseCell4_user(nullptr);
-        info::TimeLimitJade__UseCellctor_UseCell6_ptr TimeLimitJade__UseCellctor_UseCell6_next(nullptr);
-        info::TimeLimitJade__UseCellctor_UseCell6_clbk TimeLimitJade__UseCellctor_UseCell6_user(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell2_ptr TimeLimitJade__UseCellctor_UseCell2_next(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell2_clbk TimeLimitJade__UseCellctor_UseCell2_user(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell4_ptr TimeLimitJade__UseCellctor_UseCell4_next(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell4_clbk TimeLimitJade__UseCellctor_UseCell4_user(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell6_ptr TimeLimitJade__UseCellctor_UseCell6_next(nullptr);
+        static info::TimeLimitJade__UseCellctor_UseCell6_clbk TimeLimitJade__UseCellctor_UseCell6_user(nullptr);
         
-        int TimeLimitJadeCheckEndTime2_wrapper(struct TimeLimitJade* _this)
+        static int TimeLimitJadeCheckEndTime2_wrapper(struct TimeLimitJade* _this)
         {
            return TimeLimitJadeCheckEndTime2_user(_this, TimeLimitJadeCheckEndTime2_next);
         };
-        int TimeLimitJadeCheckStartTime4_wrapper(struct TimeLimitJade* _this)
+        static int TimeLimitJadeCheckStartTime4_wrapper(struct TimeLimitJade* _this)
         {
            return TimeLimitJadeCheckStartTime4_user(_this, TimeLimitJadeCheckStartTime4_next);
         };
-        bool TimeLimitJadeDeleteUseList6_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem, bool bItemDel)
+        static bool TimeLimitJadeDeleteUseList6_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem, bool bItemDel)
         {
            return TimeLimitJadeDeleteUseList6_user(_this, pkItem, bItemDel, TimeLimitJadeDeleteUseList6_next);
         };
-        bool TimeLimitJadeDeleteWaitList8_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool TimeLimitJadeDeleteWaitList8_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return TimeLimitJadeDeleteWaitList8_user(_this, pkItem, TimeLimitJadeDeleteWaitList8_next);
         };
-        bool TimeLimitJadeInit10_wrapper(struct TimeLimitJade* _this)
+        static bool TimeLimitJadeInit10_wrapper(struct TimeLimitJade* _this)
         {
            return TimeLimitJadeInit10_user(_this, TimeLimitJadeInit10_next);
         };
-        bool TimeLimitJadeInitUse12_wrapper(struct TimeLimitJade* _this)
+        static bool TimeLimitJadeInitUse12_wrapper(struct TimeLimitJade* _this)
         {
            return TimeLimitJadeInitUse12_user(_this, TimeLimitJadeInitUse12_next);
         };
-        bool TimeLimitJadeInitWait14_wrapper(struct TimeLimitJade* _this)
+        static bool TimeLimitJadeInitWait14_wrapper(struct TimeLimitJade* _this)
         {
            return TimeLimitJadeInitWait14_user(_this, TimeLimitJadeInitWait14_next);
         };
-        bool TimeLimitJadeInsertUseList16_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem, unsigned int dwStart, unsigned int dwEnd)
+        static bool TimeLimitJadeInsertUseList16_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem, unsigned int dwStart, unsigned int dwEnd)
         {
            return TimeLimitJadeInsertUseList16_user(_this, pkItem, dwStart, dwEnd, TimeLimitJadeInsertUseList16_next);
         };
-        bool TimeLimitJadeInsertWaitList18_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool TimeLimitJadeInsertWaitList18_wrapper(struct TimeLimitJade* _this, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return TimeLimitJadeInsertWaitList18_user(_this, pkItem, TimeLimitJadeInsertWaitList18_next);
         };
-        void TimeLimitJadeRelease20_wrapper(struct TimeLimitJade* _this)
+        static void TimeLimitJadeRelease20_wrapper(struct TimeLimitJade* _this)
         {
            TimeLimitJadeRelease20_user(_this, TimeLimitJadeRelease20_next);
         };
-        void TimeLimitJadector_TimeLimitJade22_wrapper(struct TimeLimitJade* _this, struct CPlayer* p)
+        static void TimeLimitJadector_TimeLimitJade22_wrapper(struct TimeLimitJade* _this, struct CPlayer* p)
         {
            TimeLimitJadector_TimeLimitJade22_user(_this, p, TimeLimitJadector_TimeLimitJade22_next);
         };
-        void TimeLimitJadedtor_TimeLimitJade26_wrapper(struct TimeLimitJade* _this)
+        static void TimeLimitJadedtor_TimeLimitJade26_wrapper(struct TimeLimitJade* _this)
         {
            TimeLimitJadedtor_TimeLimitJade26_user(_this, TimeLimitJadedtor_TimeLimitJade26_next);
         };
         
-        void TimeLimitJade__WaitCellctor_WaitCell2_wrapper(struct TimeLimitJade::WaitCell* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static void TimeLimitJade__WaitCellctor_WaitCell2_wrapper(struct TimeLimitJade::WaitCell* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            TimeLimitJade__WaitCellctor_WaitCell2_user(_this, pItem, TimeLimitJade__WaitCellctor_WaitCell2_next);
         };
-        void TimeLimitJade__WaitCellctor_WaitCell4_wrapper(struct TimeLimitJade::WaitCell* _this, struct _STORAGE_LIST::_db_con* pItem, uint16_t wStartTime, unsigned int dwUseTime)
+        static void TimeLimitJade__WaitCellctor_WaitCell4_wrapper(struct TimeLimitJade::WaitCell* _this, struct _STORAGE_LIST::_db_con* pItem, uint16_t wStartTime, unsigned int dwUseTime)
         {
            TimeLimitJade__WaitCellctor_WaitCell4_user(_this, pItem, wStartTime, dwUseTime, TimeLimitJade__WaitCellctor_WaitCell4_next);
         };
-        void TimeLimitJade__WaitCellctor_WaitCell6_wrapper(struct TimeLimitJade::WaitCell* _this)
+        static void TimeLimitJade__WaitCellctor_WaitCell6_wrapper(struct TimeLimitJade::WaitCell* _this)
         {
            TimeLimitJade__WaitCellctor_WaitCell6_user(_this, TimeLimitJade__WaitCellctor_WaitCell6_next);
         };
         
-        void TimeLimitJade__UseCellctor_UseCell2_wrapper(struct TimeLimitJade::UseCell* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static void TimeLimitJade__UseCellctor_UseCell2_wrapper(struct TimeLimitJade::UseCell* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            TimeLimitJade__UseCellctor_UseCell2_user(_this, pItem, TimeLimitJade__UseCellctor_UseCell2_next);
         };
-        void TimeLimitJade__UseCellctor_UseCell4_wrapper(struct TimeLimitJade::UseCell* _this, struct _STORAGE_LIST::_db_con* pItem, uint16_t wStartTime, unsigned int dwUseTime)
+        static void TimeLimitJade__UseCellctor_UseCell4_wrapper(struct TimeLimitJade::UseCell* _this, struct _STORAGE_LIST::_db_con* pItem, uint16_t wStartTime, unsigned int dwUseTime)
         {
            TimeLimitJade__UseCellctor_UseCell4_user(_this, pItem, wStartTime, dwUseTime, TimeLimitJade__UseCellctor_UseCell4_next);
         };
-        void TimeLimitJade__UseCellctor_UseCell6_wrapper(struct TimeLimitJade::UseCell* _this)
+        static void TimeLimitJade__UseCellctor_UseCell6_wrapper(struct TimeLimitJade::UseCell* _this)
         {
            TimeLimitJade__UseCellctor_UseCell6_user(_this, TimeLimitJade__UseCellctor_UseCell6_next);
         };
         
-        hook_record TimeLimitJade_functions[] = {
+        static hook_record TimeLimitJade_functions[] = {
         {   (LPVOID)0x1403fa240L,
             (LPVOID *)&TimeLimitJadeCheckEndTime2_user,
             (LPVOID *)&TimeLimitJadeCheckEndTime2_next,
@@ -218,5 +218,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

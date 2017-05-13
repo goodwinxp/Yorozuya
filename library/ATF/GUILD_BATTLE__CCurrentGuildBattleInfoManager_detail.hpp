@@ -10,81 +10,81 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_user(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_next(nullptr);
-            info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_user(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_ptr GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_next(nullptr);
+            static info::GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_clbk GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_user(nullptr);
             
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_user(_this, GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_user(_this, GUILD_BATTLE__CCurrentGuildBattleInfoManagerCleanUp4_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_user(_this, uiMapID, GUILD_BATTLE__CCurrentGuildBattleInfoManagerClear6_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_wrapper()
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_wrapper()
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_user(GUILD_BATTLE__CCurrentGuildBattleInfoManagerDestroy8_next);
             };
-            char GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID)
+            static char GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID)
             {
                return GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_user(_this, uiMapID, GUILD_BATTLE__CCurrentGuildBattleInfoManagerGetLeftTime10_next);
             };
-            bool GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
+            static bool GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
             {
                return GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_user(_this, GUILD_BATTLE__CCurrentGuildBattleInfoManagerInit12_next);
             };
-            struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_wrapper()
+            static struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_wrapper()
             {
                return GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_user(GUILD_BATTLE__CCurrentGuildBattleInfoManagerInstance14_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, int n, unsigned int uiMapID)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, int n, unsigned int uiMapID)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_user(_this, n, uiMapID, GUILD_BATTLE__CCurrentGuildBattleInfoManagerSend16_next);
             };
-            bool GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static bool GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_user(_this, uiMapID, pkBattle, GUILD_BATTLE__CCurrentGuildBattleInfoManagerSet18_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, char byColorInx, unsigned int dwGoalCnt)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, char byColorInx, unsigned int dwGoalCnt)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_user(_this, uiMapID, byColorInx, dwGoalCnt, GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateGoalCnt20_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, char byColorInx, unsigned int dwScore)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this, unsigned int uiMapID, char byColorInx, unsigned int dwScore)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_user(_this, uiMapID, byColorInx, dwScore, GUILD_BATTLE__CCurrentGuildBattleInfoManagerUpdateScore22_next);
             };
-            void GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
+            static void GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_wrapper(struct GUILD_BATTLE::CCurrentGuildBattleInfoManager* _this)
             {
                GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_user(_this, GUILD_BATTLE__CCurrentGuildBattleInfoManagerdtor_CCurrentGuildBattleInfoManager26_next);
             };
             
-            hook_record CCurrentGuildBattleInfoManager_functions[] = {
+            static hook_record CCurrentGuildBattleInfoManager_functions[] = {
             {   (LPVOID)0x1403cde40L,
                 (LPVOID *)&GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_user,
                 (LPVOID *)&GUILD_BATTLE__CCurrentGuildBattleInfoManagerctor_CCurrentGuildBattleInfoManager2_next,
@@ -148,6 +148,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

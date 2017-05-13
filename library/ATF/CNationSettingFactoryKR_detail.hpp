@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingFactoryKRctor_CNationSettingFactoryKR2_ptr CNationSettingFactoryKRctor_CNationSettingFactoryKR2_next(nullptr);
-        info::CNationSettingFactoryKRctor_CNationSettingFactoryKR2_clbk CNationSettingFactoryKRctor_CNationSettingFactoryKR2_user(nullptr);
-        info::CNationSettingFactoryKRCreate4_ptr CNationSettingFactoryKRCreate4_next(nullptr);
-        info::CNationSettingFactoryKRCreate4_clbk CNationSettingFactoryKRCreate4_user(nullptr);
+        static info::CNationSettingFactoryKRctor_CNationSettingFactoryKR2_ptr CNationSettingFactoryKRctor_CNationSettingFactoryKR2_next(nullptr);
+        static info::CNationSettingFactoryKRctor_CNationSettingFactoryKR2_clbk CNationSettingFactoryKRctor_CNationSettingFactoryKR2_user(nullptr);
+        static info::CNationSettingFactoryKRCreate4_ptr CNationSettingFactoryKRCreate4_next(nullptr);
+        static info::CNationSettingFactoryKRCreate4_clbk CNationSettingFactoryKRCreate4_user(nullptr);
         
-        void CNationSettingFactoryKRctor_CNationSettingFactoryKR2_wrapper(struct CNationSettingFactoryKR* _this)
+        static void CNationSettingFactoryKRctor_CNationSettingFactoryKR2_wrapper(struct CNationSettingFactoryKR* _this)
         {
            CNationSettingFactoryKRctor_CNationSettingFactoryKR2_user(_this, CNationSettingFactoryKRctor_CNationSettingFactoryKR2_next);
         };
-        struct CNationSettingData* CNationSettingFactoryKRCreate4_wrapper(struct CNationSettingFactoryKR* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
+        static struct CNationSettingData* CNationSettingFactoryKRCreate4_wrapper(struct CNationSettingFactoryKR* _this, int iNationCode, char* szNationCodeStr, bool bServiceMode)
         {
            return CNationSettingFactoryKRCreate4_user(_this, iNationCode, szNationCodeStr, bServiceMode, CNationSettingFactoryKRCreate4_next);
         };
         
-        hook_record CNationSettingFactoryKR_functions[] = {
+        static hook_record CNationSettingFactoryKR_functions[] = {
         {   (LPVOID)0x140219480L,
             (LPVOID *)&CNationSettingFactoryKRctor_CNationSettingFactoryKR2_user,
             (LPVOID *)&CNationSettingFactoryKRctor_CNationSettingFactoryKR2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

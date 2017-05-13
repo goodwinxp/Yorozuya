@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBuffManagerctor_CRaceBuffManager2_ptr CRaceBuffManagerctor_CRaceBuffManager2_next(nullptr);
-        info::CRaceBuffManagerctor_CRaceBuffManager2_clbk CRaceBuffManagerctor_CRaceBuffManager2_user(nullptr);
-        info::CRaceBuffManagerCancelPlayerRaceBuff4_ptr CRaceBuffManagerCancelPlayerRaceBuff4_next(nullptr);
-        info::CRaceBuffManagerCancelPlayerRaceBuff4_clbk CRaceBuffManagerCancelPlayerRaceBuff4_user(nullptr);
-        info::CRaceBuffManagerCreateComplete6_ptr CRaceBuffManagerCreateComplete6_next(nullptr);
-        info::CRaceBuffManagerCreateComplete6_clbk CRaceBuffManagerCreateComplete6_user(nullptr);
-        info::CRaceBuffManagerDestroy8_ptr CRaceBuffManagerDestroy8_next(nullptr);
-        info::CRaceBuffManagerDestroy8_clbk CRaceBuffManagerDestroy8_user(nullptr);
-        info::CRaceBuffManagerGetRaceBuffLevel10_ptr CRaceBuffManagerGetRaceBuffLevel10_next(nullptr);
-        info::CRaceBuffManagerGetRaceBuffLevel10_clbk CRaceBuffManagerGetRaceBuffLevel10_user(nullptr);
-        info::CRaceBuffManagerInit12_ptr CRaceBuffManagerInit12_next(nullptr);
-        info::CRaceBuffManagerInit12_clbk CRaceBuffManagerInit12_user(nullptr);
-        info::CRaceBuffManagerInstance14_ptr CRaceBuffManagerInstance14_next(nullptr);
-        info::CRaceBuffManagerInstance14_clbk CRaceBuffManagerInstance14_user(nullptr);
-        info::CRaceBuffManagerLoop16_ptr CRaceBuffManagerLoop16_next(nullptr);
-        info::CRaceBuffManagerLoop16_clbk CRaceBuffManagerLoop16_user(nullptr);
-        info::CRaceBuffManagerRequestHolyQuestRaceBuff18_ptr CRaceBuffManagerRequestHolyQuestRaceBuff18_next(nullptr);
-        info::CRaceBuffManagerRequestHolyQuestRaceBuff18_clbk CRaceBuffManagerRequestHolyQuestRaceBuff18_user(nullptr);
-        info::CRaceBuffManagerdtor_CRaceBuffManager22_ptr CRaceBuffManagerdtor_CRaceBuffManager22_next(nullptr);
-        info::CRaceBuffManagerdtor_CRaceBuffManager22_clbk CRaceBuffManagerdtor_CRaceBuffManager22_user(nullptr);
+        static info::CRaceBuffManagerctor_CRaceBuffManager2_ptr CRaceBuffManagerctor_CRaceBuffManager2_next(nullptr);
+        static info::CRaceBuffManagerctor_CRaceBuffManager2_clbk CRaceBuffManagerctor_CRaceBuffManager2_user(nullptr);
+        static info::CRaceBuffManagerCancelPlayerRaceBuff4_ptr CRaceBuffManagerCancelPlayerRaceBuff4_next(nullptr);
+        static info::CRaceBuffManagerCancelPlayerRaceBuff4_clbk CRaceBuffManagerCancelPlayerRaceBuff4_user(nullptr);
+        static info::CRaceBuffManagerCreateComplete6_ptr CRaceBuffManagerCreateComplete6_next(nullptr);
+        static info::CRaceBuffManagerCreateComplete6_clbk CRaceBuffManagerCreateComplete6_user(nullptr);
+        static info::CRaceBuffManagerDestroy8_ptr CRaceBuffManagerDestroy8_next(nullptr);
+        static info::CRaceBuffManagerDestroy8_clbk CRaceBuffManagerDestroy8_user(nullptr);
+        static info::CRaceBuffManagerGetRaceBuffLevel10_ptr CRaceBuffManagerGetRaceBuffLevel10_next(nullptr);
+        static info::CRaceBuffManagerGetRaceBuffLevel10_clbk CRaceBuffManagerGetRaceBuffLevel10_user(nullptr);
+        static info::CRaceBuffManagerInit12_ptr CRaceBuffManagerInit12_next(nullptr);
+        static info::CRaceBuffManagerInit12_clbk CRaceBuffManagerInit12_user(nullptr);
+        static info::CRaceBuffManagerInstance14_ptr CRaceBuffManagerInstance14_next(nullptr);
+        static info::CRaceBuffManagerInstance14_clbk CRaceBuffManagerInstance14_user(nullptr);
+        static info::CRaceBuffManagerLoop16_ptr CRaceBuffManagerLoop16_next(nullptr);
+        static info::CRaceBuffManagerLoop16_clbk CRaceBuffManagerLoop16_user(nullptr);
+        static info::CRaceBuffManagerRequestHolyQuestRaceBuff18_ptr CRaceBuffManagerRequestHolyQuestRaceBuff18_next(nullptr);
+        static info::CRaceBuffManagerRequestHolyQuestRaceBuff18_clbk CRaceBuffManagerRequestHolyQuestRaceBuff18_user(nullptr);
+        static info::CRaceBuffManagerdtor_CRaceBuffManager22_ptr CRaceBuffManagerdtor_CRaceBuffManager22_next(nullptr);
+        static info::CRaceBuffManagerdtor_CRaceBuffManager22_clbk CRaceBuffManagerdtor_CRaceBuffManager22_user(nullptr);
         
-        void CRaceBuffManagerctor_CRaceBuffManager2_wrapper(struct CRaceBuffManager* _this)
+        static void CRaceBuffManagerctor_CRaceBuffManager2_wrapper(struct CRaceBuffManager* _this)
         {
            CRaceBuffManagerctor_CRaceBuffManager2_user(_this, CRaceBuffManagerctor_CRaceBuffManager2_next);
         };
-        int CRaceBuffManagerCancelPlayerRaceBuff4_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pkPlayer, CRaceBuffInfoByHolyQuestfGroup::RESULT_TYPE eReleaseType, unsigned int uiContinueCnt)
+        static int CRaceBuffManagerCancelPlayerRaceBuff4_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pkPlayer, CRaceBuffInfoByHolyQuestfGroup::RESULT_TYPE eReleaseType, unsigned int uiContinueCnt)
         {
            return CRaceBuffManagerCancelPlayerRaceBuff4_user(_this, pkPlayer, eReleaseType, uiContinueCnt, CRaceBuffManagerCancelPlayerRaceBuff4_next);
         };
-        bool CRaceBuffManagerCreateComplete6_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pkPlayer)
+        static bool CRaceBuffManagerCreateComplete6_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pkPlayer)
         {
            return CRaceBuffManagerCreateComplete6_user(_this, pkPlayer, CRaceBuffManagerCreateComplete6_next);
         };
-        void CRaceBuffManagerDestroy8_wrapper()
+        static void CRaceBuffManagerDestroy8_wrapper()
         {
            CRaceBuffManagerDestroy8_user(CRaceBuffManagerDestroy8_next);
         };
-        int CRaceBuffManagerGetRaceBuffLevel10_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pOne)
+        static int CRaceBuffManagerGetRaceBuffLevel10_wrapper(struct CRaceBuffManager* _this, struct CPlayer* pOne)
         {
            return CRaceBuffManagerGetRaceBuffLevel10_user(_this, pOne, CRaceBuffManagerGetRaceBuffLevel10_next);
         };
-        bool CRaceBuffManagerInit12_wrapper(struct CRaceBuffManager* _this)
+        static bool CRaceBuffManagerInit12_wrapper(struct CRaceBuffManager* _this)
         {
            return CRaceBuffManagerInit12_user(_this, CRaceBuffManagerInit12_next);
         };
-        struct CRaceBuffManager* CRaceBuffManagerInstance14_wrapper()
+        static struct CRaceBuffManager* CRaceBuffManagerInstance14_wrapper()
         {
            return CRaceBuffManagerInstance14_user(CRaceBuffManagerInstance14_next);
         };
-        void CRaceBuffManagerLoop16_wrapper(struct CRaceBuffManager* _this)
+        static void CRaceBuffManagerLoop16_wrapper(struct CRaceBuffManager* _this)
         {
            CRaceBuffManagerLoop16_user(_this, CRaceBuffManagerLoop16_next);
         };
-        bool CRaceBuffManagerRequestHolyQuestRaceBuff18_wrapper(struct CRaceBuffManager* _this, int iType)
+        static bool CRaceBuffManagerRequestHolyQuestRaceBuff18_wrapper(struct CRaceBuffManager* _this, int iType)
         {
            return CRaceBuffManagerRequestHolyQuestRaceBuff18_user(_this, iType, CRaceBuffManagerRequestHolyQuestRaceBuff18_next);
         };
-        void CRaceBuffManagerdtor_CRaceBuffManager22_wrapper(struct CRaceBuffManager* _this)
+        static void CRaceBuffManagerdtor_CRaceBuffManager22_wrapper(struct CRaceBuffManager* _this)
         {
            CRaceBuffManagerdtor_CRaceBuffManager22_user(_this, CRaceBuffManagerdtor_CRaceBuffManager22_next);
         };
         
-        hook_record CRaceBuffManager_functions[] = {
+        static hook_record CRaceBuffManager_functions[] = {
         {   (LPVOID)0x1403b7e30L,
             (LPVOID *)&CRaceBuffManagerctor_CRaceBuffManager2_user,
             (LPVOID *)&CRaceBuffManagerctor_CRaceBuffManager2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

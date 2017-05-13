@@ -8,95 +8,95 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetIndexListctor_CNetIndexList2_ptr CNetIndexListctor_CNetIndexList2_next(nullptr);
-        info::CNetIndexListctor_CNetIndexList2_clbk CNetIndexListctor_CNetIndexList2_user(nullptr);
-        info::CNetIndexListCopyFront4_ptr CNetIndexListCopyFront4_next(nullptr);
-        info::CNetIndexListCopyFront4_clbk CNetIndexListCopyFront4_user(nullptr);
-        info::CNetIndexListCopyIndexList6_ptr CNetIndexListCopyIndexList6_next(nullptr);
-        info::CNetIndexListCopyIndexList6_clbk CNetIndexListCopyIndexList6_user(nullptr);
-        info::CNetIndexListFindNode8_ptr CNetIndexListFindNode8_next(nullptr);
-        info::CNetIndexListFindNode8_clbk CNetIndexListFindNode8_user(nullptr);
-        info::CNetIndexListIsInList10_ptr CNetIndexListIsInList10_next(nullptr);
-        info::CNetIndexListIsInList10_clbk CNetIndexListIsInList10_user(nullptr);
-        info::CNetIndexListPopNode_Back12_ptr CNetIndexListPopNode_Back12_next(nullptr);
-        info::CNetIndexListPopNode_Back12_clbk CNetIndexListPopNode_Back12_user(nullptr);
-        info::CNetIndexListPopNode_Front14_ptr CNetIndexListPopNode_Front14_next(nullptr);
-        info::CNetIndexListPopNode_Front14_clbk CNetIndexListPopNode_Front14_user(nullptr);
-        info::CNetIndexListPushNode_Back16_ptr CNetIndexListPushNode_Back16_next(nullptr);
-        info::CNetIndexListPushNode_Back16_clbk CNetIndexListPushNode_Back16_user(nullptr);
-        info::CNetIndexListPushNode_Front18_ptr CNetIndexListPushNode_Front18_next(nullptr);
-        info::CNetIndexListPushNode_Front18_clbk CNetIndexListPushNode_Front18_user(nullptr);
-        info::CNetIndexListResetList20_ptr CNetIndexListResetList20_next(nullptr);
-        info::CNetIndexListResetList20_clbk CNetIndexListResetList20_user(nullptr);
-        info::CNetIndexListSetList22_ptr CNetIndexListSetList22_next(nullptr);
-        info::CNetIndexListSetList22_clbk CNetIndexListSetList22_user(nullptr);
-        info::CNetIndexListsize26_ptr CNetIndexListsize26_next(nullptr);
-        info::CNetIndexListsize26_clbk CNetIndexListsize26_user(nullptr);
-        info::CNetIndexListdtor_CNetIndexList28_ptr CNetIndexListdtor_CNetIndexList28_next(nullptr);
-        info::CNetIndexListdtor_CNetIndexList28_clbk CNetIndexListdtor_CNetIndexList28_user(nullptr);
+        static info::CNetIndexListctor_CNetIndexList2_ptr CNetIndexListctor_CNetIndexList2_next(nullptr);
+        static info::CNetIndexListctor_CNetIndexList2_clbk CNetIndexListctor_CNetIndexList2_user(nullptr);
+        static info::CNetIndexListCopyFront4_ptr CNetIndexListCopyFront4_next(nullptr);
+        static info::CNetIndexListCopyFront4_clbk CNetIndexListCopyFront4_user(nullptr);
+        static info::CNetIndexListCopyIndexList6_ptr CNetIndexListCopyIndexList6_next(nullptr);
+        static info::CNetIndexListCopyIndexList6_clbk CNetIndexListCopyIndexList6_user(nullptr);
+        static info::CNetIndexListFindNode8_ptr CNetIndexListFindNode8_next(nullptr);
+        static info::CNetIndexListFindNode8_clbk CNetIndexListFindNode8_user(nullptr);
+        static info::CNetIndexListIsInList10_ptr CNetIndexListIsInList10_next(nullptr);
+        static info::CNetIndexListIsInList10_clbk CNetIndexListIsInList10_user(nullptr);
+        static info::CNetIndexListPopNode_Back12_ptr CNetIndexListPopNode_Back12_next(nullptr);
+        static info::CNetIndexListPopNode_Back12_clbk CNetIndexListPopNode_Back12_user(nullptr);
+        static info::CNetIndexListPopNode_Front14_ptr CNetIndexListPopNode_Front14_next(nullptr);
+        static info::CNetIndexListPopNode_Front14_clbk CNetIndexListPopNode_Front14_user(nullptr);
+        static info::CNetIndexListPushNode_Back16_ptr CNetIndexListPushNode_Back16_next(nullptr);
+        static info::CNetIndexListPushNode_Back16_clbk CNetIndexListPushNode_Back16_user(nullptr);
+        static info::CNetIndexListPushNode_Front18_ptr CNetIndexListPushNode_Front18_next(nullptr);
+        static info::CNetIndexListPushNode_Front18_clbk CNetIndexListPushNode_Front18_user(nullptr);
+        static info::CNetIndexListResetList20_ptr CNetIndexListResetList20_next(nullptr);
+        static info::CNetIndexListResetList20_clbk CNetIndexListResetList20_user(nullptr);
+        static info::CNetIndexListSetList22_ptr CNetIndexListSetList22_next(nullptr);
+        static info::CNetIndexListSetList22_clbk CNetIndexListSetList22_user(nullptr);
+        static info::CNetIndexListsize26_ptr CNetIndexListsize26_next(nullptr);
+        static info::CNetIndexListsize26_clbk CNetIndexListsize26_user(nullptr);
+        static info::CNetIndexListdtor_CNetIndexList28_ptr CNetIndexListdtor_CNetIndexList28_next(nullptr);
+        static info::CNetIndexListdtor_CNetIndexList28_clbk CNetIndexListdtor_CNetIndexList28_user(nullptr);
         
-        info::CNetIndexList___index_nodector__index_node2_ptr CNetIndexList___index_nodector__index_node2_next(nullptr);
-        info::CNetIndexList___index_nodector__index_node2_clbk CNetIndexList___index_nodector__index_node2_user(nullptr);
+        static info::CNetIndexList___index_nodector__index_node2_ptr CNetIndexList___index_nodector__index_node2_next(nullptr);
+        static info::CNetIndexList___index_nodector__index_node2_clbk CNetIndexList___index_nodector__index_node2_user(nullptr);
         
-        void CNetIndexListctor_CNetIndexList2_wrapper(struct CNetIndexList* _this)
+        static void CNetIndexListctor_CNetIndexList2_wrapper(struct CNetIndexList* _this)
         {
            CNetIndexListctor_CNetIndexList2_user(_this, CNetIndexListctor_CNetIndexList2_next);
         };
-        bool CNetIndexListCopyFront4_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
+        static bool CNetIndexListCopyFront4_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
         {
            return CNetIndexListCopyFront4_user(_this, pdwOutIndex, CNetIndexListCopyFront4_next);
         };
-        int CNetIndexListCopyIndexList6_wrapper(struct CNetIndexList* _this, unsigned int* pdwList, int nMax)
+        static int CNetIndexListCopyIndexList6_wrapper(struct CNetIndexList* _this, unsigned int* pdwList, int nMax)
         {
            return CNetIndexListCopyIndexList6_user(_this, pdwList, nMax, CNetIndexListCopyIndexList6_next);
         };
-        struct CNetIndexList::_index_node* CNetIndexListFindNode8_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
+        static struct CNetIndexList::_index_node* CNetIndexListFindNode8_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
         {
            return CNetIndexListFindNode8_user(_this, dwIndex, CNetIndexListFindNode8_next);
         };
-        bool CNetIndexListIsInList10_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
+        static bool CNetIndexListIsInList10_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
         {
            return CNetIndexListIsInList10_user(_this, dwIndex, CNetIndexListIsInList10_next);
         };
-        bool CNetIndexListPopNode_Back12_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
+        static bool CNetIndexListPopNode_Back12_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
         {
            return CNetIndexListPopNode_Back12_user(_this, pdwOutIndex, CNetIndexListPopNode_Back12_next);
         };
-        bool CNetIndexListPopNode_Front14_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
+        static bool CNetIndexListPopNode_Front14_wrapper(struct CNetIndexList* _this, unsigned int* pdwOutIndex)
         {
            return CNetIndexListPopNode_Front14_user(_this, pdwOutIndex, CNetIndexListPopNode_Front14_next);
         };
-        bool CNetIndexListPushNode_Back16_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
+        static bool CNetIndexListPushNode_Back16_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
         {
            return CNetIndexListPushNode_Back16_user(_this, dwIndex, CNetIndexListPushNode_Back16_next);
         };
-        bool CNetIndexListPushNode_Front18_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
+        static bool CNetIndexListPushNode_Front18_wrapper(struct CNetIndexList* _this, unsigned int dwIndex)
         {
            return CNetIndexListPushNode_Front18_user(_this, dwIndex, CNetIndexListPushNode_Front18_next);
         };
-        void CNetIndexListResetList20_wrapper(struct CNetIndexList* _this)
+        static void CNetIndexListResetList20_wrapper(struct CNetIndexList* _this)
         {
            CNetIndexListResetList20_user(_this, CNetIndexListResetList20_next);
         };
-        bool CNetIndexListSetList22_wrapper(struct CNetIndexList* _this, unsigned int dwMaxBufNum)
+        static bool CNetIndexListSetList22_wrapper(struct CNetIndexList* _this, unsigned int dwMaxBufNum)
         {
            return CNetIndexListSetList22_user(_this, dwMaxBufNum, CNetIndexListSetList22_next);
         };
-        int CNetIndexListsize26_wrapper(struct CNetIndexList* _this)
+        static int CNetIndexListsize26_wrapper(struct CNetIndexList* _this)
         {
            return CNetIndexListsize26_user(_this, CNetIndexListsize26_next);
         };
-        void CNetIndexListdtor_CNetIndexList28_wrapper(struct CNetIndexList* _this)
+        static void CNetIndexListdtor_CNetIndexList28_wrapper(struct CNetIndexList* _this)
         {
            CNetIndexListdtor_CNetIndexList28_user(_this, CNetIndexListdtor_CNetIndexList28_next);
         };
         
-        void CNetIndexList___index_nodector__index_node2_wrapper(struct CNetIndexList::_index_node* _this)
+        static void CNetIndexList___index_nodector__index_node2_wrapper(struct CNetIndexList::_index_node* _this)
         {
            CNetIndexList___index_nodector__index_node2_user(_this, CNetIndexList___index_nodector__index_node2_next);
         };
         
-        hook_record CNetIndexList_functions[] = {
+        static hook_record CNetIndexList_functions[] = {
         {   (LPVOID)0x1400730a0L,
             (LPVOID *)&CNetIndexListctor_CNetIndexList2_user,
             (LPVOID *)&CNetIndexListctor_CNetIndexList2_next,
@@ -171,5 +171,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

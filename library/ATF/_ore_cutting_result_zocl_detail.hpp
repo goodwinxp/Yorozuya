@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_ptr _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_next(nullptr);
-        info::_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_clbk _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_user(nullptr);
-        info::_ore_cutting_result_zoclsize4_ptr _ore_cutting_result_zoclsize4_next(nullptr);
-        info::_ore_cutting_result_zoclsize4_clbk _ore_cutting_result_zoclsize4_user(nullptr);
+        static info::_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_ptr _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_next(nullptr);
+        static info::_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_clbk _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_user(nullptr);
+        static info::_ore_cutting_result_zoclsize4_ptr _ore_cutting_result_zoclsize4_next(nullptr);
+        static info::_ore_cutting_result_zoclsize4_clbk _ore_cutting_result_zoclsize4_user(nullptr);
         
-        void _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_wrapper(struct _ore_cutting_result_zocl* _this)
+        static void _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_wrapper(struct _ore_cutting_result_zocl* _this)
         {
            _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_user(_this, _ore_cutting_result_zoclctor__ore_cutting_result_zocl2_next);
         };
-        int _ore_cutting_result_zoclsize4_wrapper(struct _ore_cutting_result_zocl* _this)
+        static int _ore_cutting_result_zoclsize4_wrapper(struct _ore_cutting_result_zocl* _this)
         {
            return _ore_cutting_result_zoclsize4_user(_this, _ore_cutting_result_zoclsize4_next);
         };
         
-        hook_record _ore_cutting_result_zocl_functions[] = {
+        static hook_record _ore_cutting_result_zocl_functions[] = {
         {   (LPVOID)0x1400efa50L,
             (LPVOID *)&_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_user,
             (LPVOID *)&_ore_cutting_result_zoclctor__ore_cutting_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

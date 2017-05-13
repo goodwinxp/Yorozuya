@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPostDatactor_CPostData2_ptr CPostDatactor_CPostData2_next(nullptr);
-        info::CPostDatactor_CPostData2_clbk CPostDatactor_CPostData2_user(nullptr);
-        info::CPostDataGetState4_ptr CPostDataGetState4_next(nullptr);
-        info::CPostDataGetState4_clbk CPostDataGetState4_user(nullptr);
-        info::CPostDataInit6_ptr CPostDataInit6_next(nullptr);
-        info::CPostDataInit6_clbk CPostDataInit6_user(nullptr);
-        info::CPostDataSetPostContent8_ptr CPostDataSetPostContent8_next(nullptr);
-        info::CPostDataSetPostContent8_clbk CPostDataSetPostContent8_user(nullptr);
-        info::CPostDataSetPostData10_ptr CPostDataSetPostData10_next(nullptr);
-        info::CPostDataSetPostData10_clbk CPostDataSetPostData10_user(nullptr);
-        info::CPostDataSetPostItemSerial12_ptr CPostDataSetPostItemSerial12_next(nullptr);
-        info::CPostDataSetPostItemSerial12_clbk CPostDataSetPostItemSerial12_user(nullptr);
-        info::CPostDataSetPostTitleData14_ptr CPostDataSetPostTitleData14_next(nullptr);
-        info::CPostDataSetPostTitleData14_clbk CPostDataSetPostTitleData14_user(nullptr);
-        info::CPostDataSetReturnPostData16_ptr CPostDataSetReturnPostData16_next(nullptr);
-        info::CPostDataSetReturnPostData16_clbk CPostDataSetReturnPostData16_user(nullptr);
-        info::CPostDataSetState18_ptr CPostDataSetState18_next(nullptr);
-        info::CPostDataSetState18_clbk CPostDataSetState18_user(nullptr);
-        info::CPostDatadtor_CPostData22_ptr CPostDatadtor_CPostData22_next(nullptr);
-        info::CPostDatadtor_CPostData22_clbk CPostDatadtor_CPostData22_user(nullptr);
+        static info::CPostDatactor_CPostData2_ptr CPostDatactor_CPostData2_next(nullptr);
+        static info::CPostDatactor_CPostData2_clbk CPostDatactor_CPostData2_user(nullptr);
+        static info::CPostDataGetState4_ptr CPostDataGetState4_next(nullptr);
+        static info::CPostDataGetState4_clbk CPostDataGetState4_user(nullptr);
+        static info::CPostDataInit6_ptr CPostDataInit6_next(nullptr);
+        static info::CPostDataInit6_clbk CPostDataInit6_user(nullptr);
+        static info::CPostDataSetPostContent8_ptr CPostDataSetPostContent8_next(nullptr);
+        static info::CPostDataSetPostContent8_clbk CPostDataSetPostContent8_user(nullptr);
+        static info::CPostDataSetPostData10_ptr CPostDataSetPostData10_next(nullptr);
+        static info::CPostDataSetPostData10_clbk CPostDataSetPostData10_user(nullptr);
+        static info::CPostDataSetPostItemSerial12_ptr CPostDataSetPostItemSerial12_next(nullptr);
+        static info::CPostDataSetPostItemSerial12_clbk CPostDataSetPostItemSerial12_user(nullptr);
+        static info::CPostDataSetPostTitleData14_ptr CPostDataSetPostTitleData14_next(nullptr);
+        static info::CPostDataSetPostTitleData14_clbk CPostDataSetPostTitleData14_user(nullptr);
+        static info::CPostDataSetReturnPostData16_ptr CPostDataSetReturnPostData16_next(nullptr);
+        static info::CPostDataSetReturnPostData16_clbk CPostDataSetReturnPostData16_user(nullptr);
+        static info::CPostDataSetState18_ptr CPostDataSetState18_next(nullptr);
+        static info::CPostDataSetState18_clbk CPostDataSetState18_user(nullptr);
+        static info::CPostDatadtor_CPostData22_ptr CPostDatadtor_CPostData22_next(nullptr);
+        static info::CPostDatadtor_CPostData22_clbk CPostDatadtor_CPostData22_user(nullptr);
         
-        void CPostDatactor_CPostData2_wrapper(struct CPostData* _this)
+        static void CPostDatactor_CPostData2_wrapper(struct CPostData* _this)
         {
            CPostDatactor_CPostData2_user(_this, CPostDatactor_CPostData2_next);
         };
-        char CPostDataGetState4_wrapper(struct CPostData* _this)
+        static char CPostDataGetState4_wrapper(struct CPostData* _this)
         {
            return CPostDataGetState4_user(_this, CPostDataGetState4_next);
         };
-        void CPostDataInit6_wrapper(struct CPostData* _this)
+        static void CPostDataInit6_wrapper(struct CPostData* _this)
         {
            CPostDataInit6_user(_this, CPostDataInit6_next);
         };
-        void CPostDataSetPostContent8_wrapper(struct CPostData* _this, char* wszContent)
+        static void CPostDataSetPostContent8_wrapper(struct CPostData* _this, char* wszContent)
         {
            CPostDataSetPostContent8_user(_this, wszContent, CPostDataSetPostContent8_next);
         };
-        void CPostDataSetPostData10_wrapper(struct CPostData* _this, int nNumber, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, unsigned int dwPSSerial, char bySendRace, char bySenderDgr)
+        static void CPostDataSetPostData10_wrapper(struct CPostData* _this, int nNumber, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, unsigned int dwPSSerial, char bySendRace, char bySenderDgr)
         {
            CPostDataSetPostData10_user(_this, nNumber, dwSenderSerial, wszSendName, wszRecvName, wszTitle, Key, dwDur, dwUpt, dwGold, dwPSSerial, bySendRace, bySenderDgr, CPostDataSetPostData10_next);
         };
-        void CPostDataSetPostItemSerial12_wrapper(struct CPostData* _this, uint64_t lnUID)
+        static void CPostDataSetPostItemSerial12_wrapper(struct CPostData* _this, uint64_t lnUID)
         {
            CPostDataSetPostItemSerial12_user(_this, lnUID, CPostDataSetPostItemSerial12_next);
         };
-        void CPostDataSetPostTitleData14_wrapper(struct CPostData* _this, int nNumber, unsigned int dwPSSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, bool bUpdateIndex)
+        static void CPostDataSetPostTitleData14_wrapper(struct CPostData* _this, int nNumber, unsigned int dwPSSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, bool bUpdateIndex)
         {
            CPostDataSetPostTitleData14_user(_this, nNumber, dwPSSerial, byState, wszSendName, wszTitle, Key, dwDur, dwUpt, dwGold, bUpdateIndex, CPostDataSetPostTitleData14_next);
         };
-        void CPostDataSetReturnPostData16_wrapper(struct CPostData* _this, char byErrCode, unsigned int dwPostSerial, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold)
+        static void CPostDataSetReturnPostData16_wrapper(struct CPostData* _this, char byErrCode, unsigned int dwPostSerial, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold)
         {
            CPostDataSetReturnPostData16_user(_this, byErrCode, dwPostSerial, wszRecvName, wszTitle, wszContent, Key, dwDur, dwUpt, dwGold, CPostDataSetReturnPostData16_next);
         };
-        void CPostDataSetState18_wrapper(struct CPostData* _this, char byState)
+        static void CPostDataSetState18_wrapper(struct CPostData* _this, char byState)
         {
            CPostDataSetState18_user(_this, byState, CPostDataSetState18_next);
         };
-        void CPostDatadtor_CPostData22_wrapper(struct CPostData* _this)
+        static void CPostDatadtor_CPostData22_wrapper(struct CPostData* _this)
         {
            CPostDatadtor_CPostData22_user(_this, CPostDatadtor_CPostData22_next);
         };
         
-        hook_record CPostData_functions[] = {
+        static hook_record CPostData_functions[] = {
         {   (LPVOID)0x140322720L,
             (LPVOID *)&CPostDatactor_CPostData2_user,
             (LPVOID *)&CPostDatactor_CPostData2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

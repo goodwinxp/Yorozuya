@@ -10,57 +10,57 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_user(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_next(nullptr);
-            info::GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_user(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_ptr GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_next(nullptr);
+            static info::GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_clbk GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_user(nullptr);
             
-            void GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
+            static void GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
             {
                GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_user(_this, GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_next);
             };
-            bool GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
+            static bool GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
             {
                return GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_user(_this, GUILD_BATTLE__CReservedGuildScheduleDayGroupClear4_next);
             };
-            struct GUILD_BATTLE::CReservedGuildSchedulePage* GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, unsigned int dwGuildSerial)
+            static struct GUILD_BATTLE::CReservedGuildSchedulePage* GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, unsigned int dwGuildSerial)
             {
                return GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_user(_this, dwGuildSerial, GUILD_BATTLE__CReservedGuildScheduleDayGroupFind6_next);
             };
-            void GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
+            static void GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
             {
                GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_user(_this, GUILD_BATTLE__CReservedGuildScheduleDayGroupFlip8_next);
             };
-            bool GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, unsigned int uiMapCnt)
+            static bool GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, unsigned int uiMapCnt)
             {
                return GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_user(_this, uiMapCnt, GUILD_BATTLE__CReservedGuildScheduleDayGroupInit10_next);
             };
-            bool GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, char byDayID, unsigned int uiMapInx, struct _worlddb_guild_battle_reserved_schedule_info* kInfo)
+            static bool GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, char byDayID, unsigned int uiMapInx, struct _worlddb_guild_battle_reserved_schedule_info* kInfo)
             {
                return GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_user(_this, byDayID, uiMapInx, kInfo, GUILD_BATTLE__CReservedGuildScheduleDayGroupLoad12_next);
             };
-            void GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, char byDayID, unsigned int uiMapID, int n, unsigned int dwVer, char byPage, unsigned int dwGuildSerial)
+            static void GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this, char byDayID, unsigned int uiMapID, int n, unsigned int dwVer, char byPage, unsigned int dwGuildSerial)
             {
                GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_user(_this, byDayID, uiMapID, n, dwVer, byPage, dwGuildSerial, GUILD_BATTLE__CReservedGuildScheduleDayGroupSend14_next);
             };
-            void GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
+            static void GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_wrapper(struct GUILD_BATTLE::CReservedGuildScheduleDayGroup* _this)
             {
                GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_user(_this, GUILD_BATTLE__CReservedGuildScheduleDayGroupdtor_CReservedGuildScheduleDayGroup16_next);
             };
             
-            hook_record CReservedGuildScheduleDayGroup_functions[] = {
+            static hook_record CReservedGuildScheduleDayGroup_functions[] = {
             {   (LPVOID)0x1403ccbc0L,
                 (LPVOID *)&GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_user,
                 (LPVOID *)&GUILD_BATTLE__CReservedGuildScheduleDayGroupctor_CReservedGuildScheduleDayGroup2_next,
@@ -104,6 +104,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

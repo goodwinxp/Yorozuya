@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::RECV_DATActor_RECV_DATA2_ptr RECV_DATActor_RECV_DATA2_next(nullptr);
-        info::RECV_DATActor_RECV_DATA2_clbk RECV_DATActor_RECV_DATA2_user(nullptr);
+        static info::RECV_DATActor_RECV_DATA2_ptr RECV_DATActor_RECV_DATA2_next(nullptr);
+        static info::RECV_DATActor_RECV_DATA2_clbk RECV_DATActor_RECV_DATA2_user(nullptr);
         
-        void RECV_DATActor_RECV_DATA2_wrapper(struct RECV_DATA* _this)
+        static void RECV_DATActor_RECV_DATA2_wrapper(struct RECV_DATA* _this)
         {
            RECV_DATActor_RECV_DATA2_user(_this, RECV_DATActor_RECV_DATA2_next);
         };
         
-        hook_record RECV_DATA_functions[] = {
+        static hook_record RECV_DATA_functions[] = {
         {   (LPVOID)0x14031a490L,
             (LPVOID *)&RECV_DATActor_RECV_DATA2_user,
             (LPVOID *)&RECV_DATActor_RECV_DATA2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

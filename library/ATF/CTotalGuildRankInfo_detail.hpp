@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTotalGuildRankInfoctor_CTotalGuildRankInfo2_ptr CTotalGuildRankInfoctor_CTotalGuildRankInfo2_next(nullptr);
-        info::CTotalGuildRankInfoctor_CTotalGuildRankInfo2_clbk CTotalGuildRankInfoctor_CTotalGuildRankInfo2_user(nullptr);
-        info::CTotalGuildRankInfoClear4_ptr CTotalGuildRankInfoClear4_next(nullptr);
-        info::CTotalGuildRankInfoClear4_clbk CTotalGuildRankInfoClear4_user(nullptr);
-        info::CTotalGuildRankInfoFind6_ptr CTotalGuildRankInfoFind6_next(nullptr);
-        info::CTotalGuildRankInfoFind6_clbk CTotalGuildRankInfoFind6_user(nullptr);
-        info::CTotalGuildRankInfoInit8_ptr CTotalGuildRankInfoInit8_next(nullptr);
-        info::CTotalGuildRankInfoInit8_clbk CTotalGuildRankInfoInit8_user(nullptr);
-        info::CTotalGuildRankInfoLoad10_ptr CTotalGuildRankInfoLoad10_next(nullptr);
-        info::CTotalGuildRankInfoLoad10_clbk CTotalGuildRankInfoLoad10_user(nullptr);
-        info::CTotalGuildRankInfoSend12_ptr CTotalGuildRankInfoSend12_next(nullptr);
-        info::CTotalGuildRankInfoSend12_clbk CTotalGuildRankInfoSend12_user(nullptr);
-        info::CTotalGuildRankInfoSetNoDataFlag14_ptr CTotalGuildRankInfoSetNoDataFlag14_next(nullptr);
-        info::CTotalGuildRankInfoSetNoDataFlag14_clbk CTotalGuildRankInfoSetNoDataFlag14_user(nullptr);
-        info::CTotalGuildRankInfoUpdate16_ptr CTotalGuildRankInfoUpdate16_next(nullptr);
-        info::CTotalGuildRankInfoUpdate16_clbk CTotalGuildRankInfoUpdate16_user(nullptr);
-        info::CTotalGuildRankInfodtor_CTotalGuildRankInfo18_ptr CTotalGuildRankInfodtor_CTotalGuildRankInfo18_next(nullptr);
-        info::CTotalGuildRankInfodtor_CTotalGuildRankInfo18_clbk CTotalGuildRankInfodtor_CTotalGuildRankInfo18_user(nullptr);
+        static info::CTotalGuildRankInfoctor_CTotalGuildRankInfo2_ptr CTotalGuildRankInfoctor_CTotalGuildRankInfo2_next(nullptr);
+        static info::CTotalGuildRankInfoctor_CTotalGuildRankInfo2_clbk CTotalGuildRankInfoctor_CTotalGuildRankInfo2_user(nullptr);
+        static info::CTotalGuildRankInfoClear4_ptr CTotalGuildRankInfoClear4_next(nullptr);
+        static info::CTotalGuildRankInfoClear4_clbk CTotalGuildRankInfoClear4_user(nullptr);
+        static info::CTotalGuildRankInfoFind6_ptr CTotalGuildRankInfoFind6_next(nullptr);
+        static info::CTotalGuildRankInfoFind6_clbk CTotalGuildRankInfoFind6_user(nullptr);
+        static info::CTotalGuildRankInfoInit8_ptr CTotalGuildRankInfoInit8_next(nullptr);
+        static info::CTotalGuildRankInfoInit8_clbk CTotalGuildRankInfoInit8_user(nullptr);
+        static info::CTotalGuildRankInfoLoad10_ptr CTotalGuildRankInfoLoad10_next(nullptr);
+        static info::CTotalGuildRankInfoLoad10_clbk CTotalGuildRankInfoLoad10_user(nullptr);
+        static info::CTotalGuildRankInfoSend12_ptr CTotalGuildRankInfoSend12_next(nullptr);
+        static info::CTotalGuildRankInfoSend12_clbk CTotalGuildRankInfoSend12_user(nullptr);
+        static info::CTotalGuildRankInfoSetNoDataFlag14_ptr CTotalGuildRankInfoSetNoDataFlag14_next(nullptr);
+        static info::CTotalGuildRankInfoSetNoDataFlag14_clbk CTotalGuildRankInfoSetNoDataFlag14_user(nullptr);
+        static info::CTotalGuildRankInfoUpdate16_ptr CTotalGuildRankInfoUpdate16_next(nullptr);
+        static info::CTotalGuildRankInfoUpdate16_clbk CTotalGuildRankInfoUpdate16_user(nullptr);
+        static info::CTotalGuildRankInfodtor_CTotalGuildRankInfo18_ptr CTotalGuildRankInfodtor_CTotalGuildRankInfo18_next(nullptr);
+        static info::CTotalGuildRankInfodtor_CTotalGuildRankInfo18_clbk CTotalGuildRankInfodtor_CTotalGuildRankInfo18_user(nullptr);
         
-        void CTotalGuildRankInfoctor_CTotalGuildRankInfo2_wrapper(struct CTotalGuildRankInfo* _this)
+        static void CTotalGuildRankInfoctor_CTotalGuildRankInfo2_wrapper(struct CTotalGuildRankInfo* _this)
         {
            CTotalGuildRankInfoctor_CTotalGuildRankInfo2_user(_this, CTotalGuildRankInfoctor_CTotalGuildRankInfo2_next);
         };
-        void CTotalGuildRankInfoClear4_wrapper(struct CTotalGuildRankInfo* _this)
+        static void CTotalGuildRankInfoClear4_wrapper(struct CTotalGuildRankInfo* _this)
         {
            CTotalGuildRankInfoClear4_user(_this, CTotalGuildRankInfoClear4_next);
         };
-        int CTotalGuildRankInfoFind6_wrapper(struct CTotalGuildRankInfo* _this, char byRace, unsigned int dwGuildSerial)
+        static int CTotalGuildRankInfoFind6_wrapper(struct CTotalGuildRankInfo* _this, char byRace, unsigned int dwGuildSerial)
         {
            return CTotalGuildRankInfoFind6_user(_this, byRace, dwGuildSerial, CTotalGuildRankInfoFind6_next);
         };
-        bool CTotalGuildRankInfoInit8_wrapper(struct CTotalGuildRankInfo* _this)
+        static bool CTotalGuildRankInfoInit8_wrapper(struct CTotalGuildRankInfo* _this)
         {
            return CTotalGuildRankInfoInit8_user(_this, CTotalGuildRankInfoInit8_next);
         };
-        bool CTotalGuildRankInfoLoad10_wrapper(struct CTotalGuildRankInfo* _this, struct _total_guild_rank_info* pkInfo)
+        static bool CTotalGuildRankInfoLoad10_wrapper(struct CTotalGuildRankInfo* _this, struct _total_guild_rank_info* pkInfo)
         {
            return CTotalGuildRankInfoLoad10_user(_this, pkInfo, CTotalGuildRankInfoLoad10_next);
         };
-        void CTotalGuildRankInfoSend12_wrapper(struct CTotalGuildRankInfo* _this, unsigned int dwVer, int n, char byTabRace, char bySelfRace, unsigned int dwGuildSerial)
+        static void CTotalGuildRankInfoSend12_wrapper(struct CTotalGuildRankInfo* _this, unsigned int dwVer, int n, char byTabRace, char bySelfRace, unsigned int dwGuildSerial)
         {
            CTotalGuildRankInfoSend12_user(_this, dwVer, n, byTabRace, bySelfRace, dwGuildSerial, CTotalGuildRankInfoSend12_next);
         };
-        void CTotalGuildRankInfoSetNoDataFlag14_wrapper(struct CTotalGuildRankInfo* _this)
+        static void CTotalGuildRankInfoSetNoDataFlag14_wrapper(struct CTotalGuildRankInfo* _this)
         {
            CTotalGuildRankInfoSetNoDataFlag14_user(_this, CTotalGuildRankInfoSetNoDataFlag14_next);
         };
-        bool CTotalGuildRankInfoUpdate16_wrapper(struct CTotalGuildRankInfo* _this, struct _total_guild_rank_info* pkInfo)
+        static bool CTotalGuildRankInfoUpdate16_wrapper(struct CTotalGuildRankInfo* _this, struct _total_guild_rank_info* pkInfo)
         {
            return CTotalGuildRankInfoUpdate16_user(_this, pkInfo, CTotalGuildRankInfoUpdate16_next);
         };
-        void CTotalGuildRankInfodtor_CTotalGuildRankInfo18_wrapper(struct CTotalGuildRankInfo* _this)
+        static void CTotalGuildRankInfodtor_CTotalGuildRankInfo18_wrapper(struct CTotalGuildRankInfo* _this)
         {
            CTotalGuildRankInfodtor_CTotalGuildRankInfo18_user(_this, CTotalGuildRankInfodtor_CTotalGuildRankInfo18_next);
         };
         
-        hook_record CTotalGuildRankInfo_functions[] = {
+        static hook_record CTotalGuildRankInfo_functions[] = {
         {   (LPVOID)0x1402c86e0L,
             (LPVOID *)&CTotalGuildRankInfoctor_CTotalGuildRankInfo2_user,
             (LPVOID *)&CTotalGuildRankInfoctor_CTotalGuildRankInfo2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

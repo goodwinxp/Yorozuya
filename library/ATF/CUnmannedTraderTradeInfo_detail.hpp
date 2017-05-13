@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderTradeInfoAddIncome2_ptr CUnmannedTraderTradeInfoAddIncome2_next(nullptr);
-        info::CUnmannedTraderTradeInfoAddIncome2_clbk CUnmannedTraderTradeInfoAddIncome2_user(nullptr);
-        info::CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_ptr CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_next(nullptr);
-        info::CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_clbk CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_user(nullptr);
-        info::CUnmannedTraderTradeInfoInit6_ptr CUnmannedTraderTradeInfoInit6_next(nullptr);
-        info::CUnmannedTraderTradeInfoInit6_clbk CUnmannedTraderTradeInfoInit6_user(nullptr);
-        info::CUnmannedTraderTradeInfoLoadINI8_ptr CUnmannedTraderTradeInfoLoadINI8_next(nullptr);
-        info::CUnmannedTraderTradeInfoLoadINI8_clbk CUnmannedTraderTradeInfoLoadINI8_user(nullptr);
-        info::CUnmannedTraderTradeInfoLoop10_ptr CUnmannedTraderTradeInfoLoop10_next(nullptr);
-        info::CUnmannedTraderTradeInfoLoop10_clbk CUnmannedTraderTradeInfoLoop10_user(nullptr);
-        info::CUnmannedTraderTradeInfoNotifyIncome12_ptr CUnmannedTraderTradeInfoNotifyIncome12_next(nullptr);
-        info::CUnmannedTraderTradeInfoNotifyIncome12_clbk CUnmannedTraderTradeInfoNotifyIncome12_user(nullptr);
-        info::CUnmannedTraderTradeInfoNotifyIncome14_ptr CUnmannedTraderTradeInfoNotifyIncome14_next(nullptr);
-        info::CUnmannedTraderTradeInfoNotifyIncome14_clbk CUnmannedTraderTradeInfoNotifyIncome14_user(nullptr);
-        info::CUnmannedTraderTradeInfoSaveINI16_ptr CUnmannedTraderTradeInfoSaveINI16_next(nullptr);
-        info::CUnmannedTraderTradeInfoSaveINI16_clbk CUnmannedTraderTradeInfoSaveINI16_user(nullptr);
-        info::CUnmannedTraderTradeInfoUpdateIncome18_ptr CUnmannedTraderTradeInfoUpdateIncome18_next(nullptr);
-        info::CUnmannedTraderTradeInfoUpdateIncome18_clbk CUnmannedTraderTradeInfoUpdateIncome18_user(nullptr);
-        info::CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_ptr CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_next(nullptr);
-        info::CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_clbk CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_user(nullptr);
+        static info::CUnmannedTraderTradeInfoAddIncome2_ptr CUnmannedTraderTradeInfoAddIncome2_next(nullptr);
+        static info::CUnmannedTraderTradeInfoAddIncome2_clbk CUnmannedTraderTradeInfoAddIncome2_user(nullptr);
+        static info::CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_ptr CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_next(nullptr);
+        static info::CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_clbk CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_user(nullptr);
+        static info::CUnmannedTraderTradeInfoInit6_ptr CUnmannedTraderTradeInfoInit6_next(nullptr);
+        static info::CUnmannedTraderTradeInfoInit6_clbk CUnmannedTraderTradeInfoInit6_user(nullptr);
+        static info::CUnmannedTraderTradeInfoLoadINI8_ptr CUnmannedTraderTradeInfoLoadINI8_next(nullptr);
+        static info::CUnmannedTraderTradeInfoLoadINI8_clbk CUnmannedTraderTradeInfoLoadINI8_user(nullptr);
+        static info::CUnmannedTraderTradeInfoLoop10_ptr CUnmannedTraderTradeInfoLoop10_next(nullptr);
+        static info::CUnmannedTraderTradeInfoLoop10_clbk CUnmannedTraderTradeInfoLoop10_user(nullptr);
+        static info::CUnmannedTraderTradeInfoNotifyIncome12_ptr CUnmannedTraderTradeInfoNotifyIncome12_next(nullptr);
+        static info::CUnmannedTraderTradeInfoNotifyIncome12_clbk CUnmannedTraderTradeInfoNotifyIncome12_user(nullptr);
+        static info::CUnmannedTraderTradeInfoNotifyIncome14_ptr CUnmannedTraderTradeInfoNotifyIncome14_next(nullptr);
+        static info::CUnmannedTraderTradeInfoNotifyIncome14_clbk CUnmannedTraderTradeInfoNotifyIncome14_user(nullptr);
+        static info::CUnmannedTraderTradeInfoSaveINI16_ptr CUnmannedTraderTradeInfoSaveINI16_next(nullptr);
+        static info::CUnmannedTraderTradeInfoSaveINI16_clbk CUnmannedTraderTradeInfoSaveINI16_user(nullptr);
+        static info::CUnmannedTraderTradeInfoUpdateIncome18_ptr CUnmannedTraderTradeInfoUpdateIncome18_next(nullptr);
+        static info::CUnmannedTraderTradeInfoUpdateIncome18_clbk CUnmannedTraderTradeInfoUpdateIncome18_user(nullptr);
+        static info::CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_ptr CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_next(nullptr);
+        static info::CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_clbk CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_user(nullptr);
         
-        void CUnmannedTraderTradeInfoAddIncome2_wrapper(struct CUnmannedTraderTradeInfo* _this, unsigned int dwOriPrice)
+        static void CUnmannedTraderTradeInfoAddIncome2_wrapper(struct CUnmannedTraderTradeInfo* _this, unsigned int dwOriPrice)
         {
            CUnmannedTraderTradeInfoAddIncome2_user(_this, dwOriPrice, CUnmannedTraderTradeInfoAddIncome2_next);
         };
-        void CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_user(_this, CUnmannedTraderTradeInfoctor_CUnmannedTraderTradeInfo4_next);
         };
-        bool CUnmannedTraderTradeInfoInit6_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static bool CUnmannedTraderTradeInfoInit6_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            return CUnmannedTraderTradeInfoInit6_user(_this, CUnmannedTraderTradeInfoInit6_next);
         };
-        void CUnmannedTraderTradeInfoLoadINI8_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoLoadINI8_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoLoadINI8_user(_this, CUnmannedTraderTradeInfoLoadINI8_next);
         };
-        void CUnmannedTraderTradeInfoLoop10_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoLoop10_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoLoop10_user(_this, CUnmannedTraderTradeInfoLoop10_next);
         };
-        void CUnmannedTraderTradeInfoNotifyIncome12_wrapper(struct CUnmannedTraderTradeInfo* _this, char byRace, uint16_t wIndex)
+        static void CUnmannedTraderTradeInfoNotifyIncome12_wrapper(struct CUnmannedTraderTradeInfo* _this, char byRace, uint16_t wIndex)
         {
            CUnmannedTraderTradeInfoNotifyIncome12_user(_this, byRace, wIndex, CUnmannedTraderTradeInfoNotifyIncome12_next);
         };
-        void CUnmannedTraderTradeInfoNotifyIncome14_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoNotifyIncome14_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoNotifyIncome14_user(_this, CUnmannedTraderTradeInfoNotifyIncome14_next);
         };
-        void CUnmannedTraderTradeInfoSaveINI16_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoSaveINI16_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoSaveINI16_user(_this, CUnmannedTraderTradeInfoSaveINI16_next);
         };
-        void CUnmannedTraderTradeInfoUpdateIncome18_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfoUpdateIncome18_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfoUpdateIncome18_user(_this, CUnmannedTraderTradeInfoUpdateIncome18_next);
         };
-        void CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_wrapper(struct CUnmannedTraderTradeInfo* _this)
+        static void CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_wrapper(struct CUnmannedTraderTradeInfo* _this)
         {
            CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_user(_this, CUnmannedTraderTradeInfodtor_CUnmannedTraderTradeInfo20_next);
         };
         
-        hook_record CUnmannedTraderTradeInfo_functions[] = {
+        static hook_record CUnmannedTraderTradeInfo_functions[] = {
         {   (LPVOID)0x140366ec0L,
             (LPVOID *)&CUnmannedTraderTradeInfoAddIncome2_user,
             (LPVOID *)&CUnmannedTraderTradeInfoAddIncome2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

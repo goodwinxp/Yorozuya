@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__guild_list_pagector___guild_list_page2_ptr __guild_list_pagector___guild_list_page2_next(nullptr);
-        info::__guild_list_pagector___guild_list_page2_clbk __guild_list_pagector___guild_list_page2_user(nullptr);
+        static info::__guild_list_pagector___guild_list_page2_ptr __guild_list_pagector___guild_list_page2_next(nullptr);
+        static info::__guild_list_pagector___guild_list_page2_clbk __guild_list_pagector___guild_list_page2_user(nullptr);
         
-        void __guild_list_pagector___guild_list_page2_wrapper(struct __guild_list_page* _this)
+        static void __guild_list_pagector___guild_list_page2_wrapper(struct __guild_list_page* _this)
         {
            __guild_list_pagector___guild_list_page2_user(_this, __guild_list_pagector___guild_list_page2_next);
         };
         
-        hook_record __guild_list_page_functions[] = {
+        static hook_record __guild_list_page_functions[] = {
         {   (LPVOID)0x14025e1d0L,
             (LPVOID *)&__guild_list_pagector___guild_list_page2_user,
             (LPVOID *)&__guild_list_pagector___guild_list_page2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

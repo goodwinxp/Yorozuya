@@ -8,273 +8,273 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMapDatactor_CMapData2_ptr CMapDatactor_CMapData2_next(nullptr);
-        info::CMapDatactor_CMapData2_clbk CMapDatactor_CMapData2_user(nullptr);
-        info::CMapDataCheckCenterPosDummy4_ptr CMapDataCheckCenterPosDummy4_next(nullptr);
-        info::CMapDataCheckCenterPosDummy4_clbk CMapDataCheckCenterPosDummy4_user(nullptr);
-        info::CMapDataConvertLocal6_ptr CMapDataConvertLocal6_next(nullptr);
-        info::CMapDataConvertLocal6_clbk CMapDataConvertLocal6_user(nullptr);
-        info::CMapDataConvertLocalToWorldDummy8_ptr CMapDataConvertLocalToWorldDummy8_next(nullptr);
-        info::CMapDataConvertLocalToWorldDummy8_clbk CMapDataConvertLocalToWorldDummy8_user(nullptr);
-        info::CMapDataEnterMap10_ptr CMapDataEnterMap10_next(nullptr);
-        info::CMapDataEnterMap10_clbk CMapDataEnterMap10_user(nullptr);
-        info::CMapDataExitMap12_ptr CMapDataExitMap12_next(nullptr);
-        info::CMapDataExitMap12_clbk CMapDataExitMap12_user(nullptr);
-        info::CMapDataGetBspInfo14_ptr CMapDataGetBspInfo14_next(nullptr);
-        info::CMapDataGetBspInfo14_clbk CMapDataGetBspInfo14_user(nullptr);
-        info::CMapDataGetDummyPostion16_ptr CMapDataGetDummyPostion16_next(nullptr);
-        info::CMapDataGetDummyPostion16_clbk CMapDataGetDummyPostion16_user(nullptr);
-        info::CMapDataGetLevelLimit18_ptr CMapDataGetLevelLimit18_next(nullptr);
-        info::CMapDataGetLevelLimit18_clbk CMapDataGetLevelLimit18_user(nullptr);
-        info::CMapDataGetLinkPortal20_ptr CMapDataGetLinkPortal20_next(nullptr);
-        info::CMapDataGetLinkPortal20_clbk CMapDataGetLinkPortal20_user(nullptr);
-        info::CMapDataGetMapCode22_ptr CMapDataGetMapCode22_next(nullptr);
-        info::CMapDataGetMapCode22_clbk CMapDataGetMapCode22_user(nullptr);
-        info::CMapDataGetPortal24_ptr CMapDataGetPortal24_next(nullptr);
-        info::CMapDataGetPortal24_clbk CMapDataGetPortal24_user(nullptr);
-        info::CMapDataGetPortal26_ptr CMapDataGetPortal26_next(nullptr);
-        info::CMapDataGetPortal26_clbk CMapDataGetPortal26_user(nullptr);
-        info::CMapDataGetPortalInx28_ptr CMapDataGetPortalInx28_next(nullptr);
-        info::CMapDataGetPortalInx28_clbk CMapDataGetPortalInx28_user(nullptr);
-        info::CMapDataGetRaceTown30_ptr CMapDataGetRaceTown30_next(nullptr);
-        info::CMapDataGetRaceTown30_clbk CMapDataGetRaceTown30_user(nullptr);
-        info::CMapDataGetRandPosInDummy32_ptr CMapDataGetRandPosInDummy32_next(nullptr);
-        info::CMapDataGetRandPosInDummy32_clbk CMapDataGetRandPosInDummy32_user(nullptr);
-        info::CMapDataGetRandPosInRange34_ptr CMapDataGetRandPosInRange34_next(nullptr);
-        info::CMapDataGetRandPosInRange34_clbk CMapDataGetRandPosInRange34_user(nullptr);
-        info::CMapDataGetRandPosVirtualDum36_ptr CMapDataGetRandPosVirtualDum36_next(nullptr);
-        info::CMapDataGetRandPosVirtualDum36_clbk CMapDataGetRandPosVirtualDum36_user(nullptr);
-        info::CMapDataGetRandPosVirtualDumExcludeStdRange38_ptr CMapDataGetRandPosVirtualDumExcludeStdRange38_next(nullptr);
-        info::CMapDataGetRandPosVirtualDumExcludeStdRange38_clbk CMapDataGetRandPosVirtualDumExcludeStdRange38_user(nullptr);
-        info::CMapDataGetRectInRadius40_ptr CMapDataGetRectInRadius40_next(nullptr);
-        info::CMapDataGetRectInRadius40_clbk CMapDataGetRectInRadius40_user(nullptr);
-        info::CMapDataGetResDummySector42_ptr CMapDataGetResDummySector42_next(nullptr);
-        info::CMapDataGetResDummySector42_clbk CMapDataGetResDummySector42_user(nullptr);
-        info::CMapDataGetSecInfo44_ptr CMapDataGetSecInfo44_next(nullptr);
-        info::CMapDataGetSecInfo44_clbk CMapDataGetSecInfo44_user(nullptr);
-        info::CMapDataGetSectorIndex46_ptr CMapDataGetSectorIndex46_next(nullptr);
-        info::CMapDataGetSectorIndex46_clbk CMapDataGetSectorIndex46_user(nullptr);
-        info::CMapDataGetSectorListObj48_ptr CMapDataGetSectorListObj48_next(nullptr);
-        info::CMapDataGetSectorListObj48_clbk CMapDataGetSectorListObj48_user(nullptr);
-        info::CMapDataGetSectorListPlayer50_ptr CMapDataGetSectorListPlayer50_next(nullptr);
-        info::CMapDataGetSectorListPlayer50_clbk CMapDataGetSectorListPlayer50_user(nullptr);
-        info::CMapDataGetSectorListTower52_ptr CMapDataGetSectorListTower52_next(nullptr);
-        info::CMapDataGetSectorListTower52_clbk CMapDataGetSectorListTower52_user(nullptr);
-        info::CMapDataGetSectorNumByLayerIndex54_ptr CMapDataGetSectorNumByLayerIndex54_next(nullptr);
-        info::CMapDataGetSectorNumByLayerIndex54_clbk CMapDataGetSectorNumByLayerIndex54_user(nullptr);
-        info::CMapDataInit56_ptr CMapDataInit56_next(nullptr);
-        info::CMapDataInit56_clbk CMapDataInit56_user(nullptr);
-        info::CMapDataIsMapIn58_ptr CMapDataIsMapIn58_next(nullptr);
-        info::CMapDataIsMapIn58_clbk CMapDataIsMapIn58_user(nullptr);
-        info::CMapDataLoadDummy60_ptr CMapDataLoadDummy60_next(nullptr);
-        info::CMapDataLoadDummy60_clbk CMapDataLoadDummy60_user(nullptr);
-        info::CMapDataLoadHolySystemDummy62_ptr CMapDataLoadHolySystemDummy62_next(nullptr);
-        info::CMapDataLoadHolySystemDummy62_clbk CMapDataLoadHolySystemDummy62_user(nullptr);
-        info::CMapDataOnLoop64_ptr CMapDataOnLoop64_next(nullptr);
-        info::CMapDataOnLoop64_clbk CMapDataOnLoop64_user(nullptr);
-        info::CMapDataOpenMap66_ptr CMapDataOpenMap66_next(nullptr);
-        info::CMapDataOpenMap66_clbk CMapDataOpenMap66_user(nullptr);
-        info::CMapDataUpdateSecterList68_ptr CMapDataUpdateSecterList68_next(nullptr);
-        info::CMapDataUpdateSecterList68_clbk CMapDataUpdateSecterList68_user(nullptr);
-        info::CMapData_LoadBind70_ptr CMapData_LoadBind70_next(nullptr);
-        info::CMapData_LoadBind70_clbk CMapData_LoadBind70_user(nullptr);
-        info::CMapData_LoadBspSec72_ptr CMapData_LoadBspSec72_next(nullptr);
-        info::CMapData_LoadBspSec72_clbk CMapData_LoadBspSec72_user(nullptr);
-        info::CMapData_LoadMonBlk74_ptr CMapData_LoadMonBlk74_next(nullptr);
-        info::CMapData_LoadMonBlk74_clbk CMapData_LoadMonBlk74_user(nullptr);
-        info::CMapData_LoadPortal76_ptr CMapData_LoadPortal76_next(nullptr);
-        info::CMapData_LoadPortal76_clbk CMapData_LoadPortal76_user(nullptr);
-        info::CMapData_LoadQuest78_ptr CMapData_LoadQuest78_next(nullptr);
-        info::CMapData_LoadQuest78_clbk CMapData_LoadQuest78_user(nullptr);
-        info::CMapData_LoadResource80_ptr CMapData_LoadResource80_next(nullptr);
-        info::CMapData_LoadResource80_clbk CMapData_LoadResource80_user(nullptr);
-        info::CMapData_LoadSafe82_ptr CMapData_LoadSafe82_next(nullptr);
-        info::CMapData_LoadSafe82_clbk CMapData_LoadSafe82_user(nullptr);
-        info::CMapData_LoadStart84_ptr CMapData_LoadStart84_next(nullptr);
-        info::CMapData_LoadStart84_clbk CMapData_LoadStart84_user(nullptr);
-        info::CMapData_LoadStoreDummy86_ptr CMapData_LoadStoreDummy86_next(nullptr);
-        info::CMapData_LoadStoreDummy86_clbk CMapData_LoadStoreDummy86_user(nullptr);
-        info::CMapDatadtor_CMapData92_ptr CMapDatadtor_CMapData92_next(nullptr);
-        info::CMapDatadtor_CMapData92_clbk CMapDatadtor_CMapData92_user(nullptr);
+        static info::CMapDatactor_CMapData2_ptr CMapDatactor_CMapData2_next(nullptr);
+        static info::CMapDatactor_CMapData2_clbk CMapDatactor_CMapData2_user(nullptr);
+        static info::CMapDataCheckCenterPosDummy4_ptr CMapDataCheckCenterPosDummy4_next(nullptr);
+        static info::CMapDataCheckCenterPosDummy4_clbk CMapDataCheckCenterPosDummy4_user(nullptr);
+        static info::CMapDataConvertLocal6_ptr CMapDataConvertLocal6_next(nullptr);
+        static info::CMapDataConvertLocal6_clbk CMapDataConvertLocal6_user(nullptr);
+        static info::CMapDataConvertLocalToWorldDummy8_ptr CMapDataConvertLocalToWorldDummy8_next(nullptr);
+        static info::CMapDataConvertLocalToWorldDummy8_clbk CMapDataConvertLocalToWorldDummy8_user(nullptr);
+        static info::CMapDataEnterMap10_ptr CMapDataEnterMap10_next(nullptr);
+        static info::CMapDataEnterMap10_clbk CMapDataEnterMap10_user(nullptr);
+        static info::CMapDataExitMap12_ptr CMapDataExitMap12_next(nullptr);
+        static info::CMapDataExitMap12_clbk CMapDataExitMap12_user(nullptr);
+        static info::CMapDataGetBspInfo14_ptr CMapDataGetBspInfo14_next(nullptr);
+        static info::CMapDataGetBspInfo14_clbk CMapDataGetBspInfo14_user(nullptr);
+        static info::CMapDataGetDummyPostion16_ptr CMapDataGetDummyPostion16_next(nullptr);
+        static info::CMapDataGetDummyPostion16_clbk CMapDataGetDummyPostion16_user(nullptr);
+        static info::CMapDataGetLevelLimit18_ptr CMapDataGetLevelLimit18_next(nullptr);
+        static info::CMapDataGetLevelLimit18_clbk CMapDataGetLevelLimit18_user(nullptr);
+        static info::CMapDataGetLinkPortal20_ptr CMapDataGetLinkPortal20_next(nullptr);
+        static info::CMapDataGetLinkPortal20_clbk CMapDataGetLinkPortal20_user(nullptr);
+        static info::CMapDataGetMapCode22_ptr CMapDataGetMapCode22_next(nullptr);
+        static info::CMapDataGetMapCode22_clbk CMapDataGetMapCode22_user(nullptr);
+        static info::CMapDataGetPortal24_ptr CMapDataGetPortal24_next(nullptr);
+        static info::CMapDataGetPortal24_clbk CMapDataGetPortal24_user(nullptr);
+        static info::CMapDataGetPortal26_ptr CMapDataGetPortal26_next(nullptr);
+        static info::CMapDataGetPortal26_clbk CMapDataGetPortal26_user(nullptr);
+        static info::CMapDataGetPortalInx28_ptr CMapDataGetPortalInx28_next(nullptr);
+        static info::CMapDataGetPortalInx28_clbk CMapDataGetPortalInx28_user(nullptr);
+        static info::CMapDataGetRaceTown30_ptr CMapDataGetRaceTown30_next(nullptr);
+        static info::CMapDataGetRaceTown30_clbk CMapDataGetRaceTown30_user(nullptr);
+        static info::CMapDataGetRandPosInDummy32_ptr CMapDataGetRandPosInDummy32_next(nullptr);
+        static info::CMapDataGetRandPosInDummy32_clbk CMapDataGetRandPosInDummy32_user(nullptr);
+        static info::CMapDataGetRandPosInRange34_ptr CMapDataGetRandPosInRange34_next(nullptr);
+        static info::CMapDataGetRandPosInRange34_clbk CMapDataGetRandPosInRange34_user(nullptr);
+        static info::CMapDataGetRandPosVirtualDum36_ptr CMapDataGetRandPosVirtualDum36_next(nullptr);
+        static info::CMapDataGetRandPosVirtualDum36_clbk CMapDataGetRandPosVirtualDum36_user(nullptr);
+        static info::CMapDataGetRandPosVirtualDumExcludeStdRange38_ptr CMapDataGetRandPosVirtualDumExcludeStdRange38_next(nullptr);
+        static info::CMapDataGetRandPosVirtualDumExcludeStdRange38_clbk CMapDataGetRandPosVirtualDumExcludeStdRange38_user(nullptr);
+        static info::CMapDataGetRectInRadius40_ptr CMapDataGetRectInRadius40_next(nullptr);
+        static info::CMapDataGetRectInRadius40_clbk CMapDataGetRectInRadius40_user(nullptr);
+        static info::CMapDataGetResDummySector42_ptr CMapDataGetResDummySector42_next(nullptr);
+        static info::CMapDataGetResDummySector42_clbk CMapDataGetResDummySector42_user(nullptr);
+        static info::CMapDataGetSecInfo44_ptr CMapDataGetSecInfo44_next(nullptr);
+        static info::CMapDataGetSecInfo44_clbk CMapDataGetSecInfo44_user(nullptr);
+        static info::CMapDataGetSectorIndex46_ptr CMapDataGetSectorIndex46_next(nullptr);
+        static info::CMapDataGetSectorIndex46_clbk CMapDataGetSectorIndex46_user(nullptr);
+        static info::CMapDataGetSectorListObj48_ptr CMapDataGetSectorListObj48_next(nullptr);
+        static info::CMapDataGetSectorListObj48_clbk CMapDataGetSectorListObj48_user(nullptr);
+        static info::CMapDataGetSectorListPlayer50_ptr CMapDataGetSectorListPlayer50_next(nullptr);
+        static info::CMapDataGetSectorListPlayer50_clbk CMapDataGetSectorListPlayer50_user(nullptr);
+        static info::CMapDataGetSectorListTower52_ptr CMapDataGetSectorListTower52_next(nullptr);
+        static info::CMapDataGetSectorListTower52_clbk CMapDataGetSectorListTower52_user(nullptr);
+        static info::CMapDataGetSectorNumByLayerIndex54_ptr CMapDataGetSectorNumByLayerIndex54_next(nullptr);
+        static info::CMapDataGetSectorNumByLayerIndex54_clbk CMapDataGetSectorNumByLayerIndex54_user(nullptr);
+        static info::CMapDataInit56_ptr CMapDataInit56_next(nullptr);
+        static info::CMapDataInit56_clbk CMapDataInit56_user(nullptr);
+        static info::CMapDataIsMapIn58_ptr CMapDataIsMapIn58_next(nullptr);
+        static info::CMapDataIsMapIn58_clbk CMapDataIsMapIn58_user(nullptr);
+        static info::CMapDataLoadDummy60_ptr CMapDataLoadDummy60_next(nullptr);
+        static info::CMapDataLoadDummy60_clbk CMapDataLoadDummy60_user(nullptr);
+        static info::CMapDataLoadHolySystemDummy62_ptr CMapDataLoadHolySystemDummy62_next(nullptr);
+        static info::CMapDataLoadHolySystemDummy62_clbk CMapDataLoadHolySystemDummy62_user(nullptr);
+        static info::CMapDataOnLoop64_ptr CMapDataOnLoop64_next(nullptr);
+        static info::CMapDataOnLoop64_clbk CMapDataOnLoop64_user(nullptr);
+        static info::CMapDataOpenMap66_ptr CMapDataOpenMap66_next(nullptr);
+        static info::CMapDataOpenMap66_clbk CMapDataOpenMap66_user(nullptr);
+        static info::CMapDataUpdateSecterList68_ptr CMapDataUpdateSecterList68_next(nullptr);
+        static info::CMapDataUpdateSecterList68_clbk CMapDataUpdateSecterList68_user(nullptr);
+        static info::CMapData_LoadBind70_ptr CMapData_LoadBind70_next(nullptr);
+        static info::CMapData_LoadBind70_clbk CMapData_LoadBind70_user(nullptr);
+        static info::CMapData_LoadBspSec72_ptr CMapData_LoadBspSec72_next(nullptr);
+        static info::CMapData_LoadBspSec72_clbk CMapData_LoadBspSec72_user(nullptr);
+        static info::CMapData_LoadMonBlk74_ptr CMapData_LoadMonBlk74_next(nullptr);
+        static info::CMapData_LoadMonBlk74_clbk CMapData_LoadMonBlk74_user(nullptr);
+        static info::CMapData_LoadPortal76_ptr CMapData_LoadPortal76_next(nullptr);
+        static info::CMapData_LoadPortal76_clbk CMapData_LoadPortal76_user(nullptr);
+        static info::CMapData_LoadQuest78_ptr CMapData_LoadQuest78_next(nullptr);
+        static info::CMapData_LoadQuest78_clbk CMapData_LoadQuest78_user(nullptr);
+        static info::CMapData_LoadResource80_ptr CMapData_LoadResource80_next(nullptr);
+        static info::CMapData_LoadResource80_clbk CMapData_LoadResource80_user(nullptr);
+        static info::CMapData_LoadSafe82_ptr CMapData_LoadSafe82_next(nullptr);
+        static info::CMapData_LoadSafe82_clbk CMapData_LoadSafe82_user(nullptr);
+        static info::CMapData_LoadStart84_ptr CMapData_LoadStart84_next(nullptr);
+        static info::CMapData_LoadStart84_clbk CMapData_LoadStart84_user(nullptr);
+        static info::CMapData_LoadStoreDummy86_ptr CMapData_LoadStoreDummy86_next(nullptr);
+        static info::CMapData_LoadStoreDummy86_clbk CMapData_LoadStoreDummy86_user(nullptr);
+        static info::CMapDatadtor_CMapData92_ptr CMapDatadtor_CMapData92_next(nullptr);
+        static info::CMapDatadtor_CMapData92_clbk CMapDatadtor_CMapData92_user(nullptr);
         
-        void CMapDatactor_CMapData2_wrapper(struct CMapData* _this)
+        static void CMapDatactor_CMapData2_wrapper(struct CMapData* _this)
         {
            CMapDatactor_CMapData2_user(_this, CMapDatactor_CMapData2_next);
         };
-        bool CMapDataCheckCenterPosDummy4_wrapper(struct CMapData* _this, struct _dummy_position* pPos)
+        static bool CMapDataCheckCenterPosDummy4_wrapper(struct CMapData* _this, struct _dummy_position* pPos)
         {
            return CMapDataCheckCenterPosDummy4_user(_this, pPos, CMapDataCheckCenterPosDummy4_next);
         };
-        bool CMapDataConvertLocal6_wrapper(struct CMapData* _this, struct _dummy_position* pPos)
+        static bool CMapDataConvertLocal6_wrapper(struct CMapData* _this, struct _dummy_position* pPos)
         {
            return CMapDataConvertLocal6_user(_this, pPos, CMapDataConvertLocal6_next);
         };
-        bool CMapDataConvertLocalToWorldDummy8_wrapper(struct CMapData* _this, struct CDummyPosTable* pPosTable, bool bCheckCenter)
+        static bool CMapDataConvertLocalToWorldDummy8_wrapper(struct CMapData* _this, struct CDummyPosTable* pPosTable, bool bCheckCenter)
         {
            return CMapDataConvertLocalToWorldDummy8_user(_this, pPosTable, bCheckCenter, CMapDataConvertLocalToWorldDummy8_next);
         };
-        void CMapDataEnterMap10_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwSecIndex)
+        static void CMapDataEnterMap10_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwSecIndex)
         {
            CMapDataEnterMap10_user(_this, pObj, dwSecIndex, CMapDataEnterMap10_next);
         };
-        void CMapDataExitMap12_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwSecIndex)
+        static void CMapDataExitMap12_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwSecIndex)
         {
            CMapDataExitMap12_user(_this, pObj, dwSecIndex, CMapDataExitMap12_next);
         };
-        struct _bsp_info* CMapDataGetBspInfo14_wrapper(struct CMapData* _this)
+        static struct _bsp_info* CMapDataGetBspInfo14_wrapper(struct CMapData* _this)
         {
            return CMapDataGetBspInfo14_user(_this, CMapDataGetBspInfo14_next);
         };
-        struct _dummy_position* CMapDataGetDummyPostion16_wrapper(struct CMapData* _this, char* pszDummyCode)
+        static struct _dummy_position* CMapDataGetDummyPostion16_wrapper(struct CMapData* _this, char* pszDummyCode)
         {
            return CMapDataGetDummyPostion16_user(_this, pszDummyCode, CMapDataGetDummyPostion16_next);
         };
-        int CMapDataGetLevelLimit18_wrapper(struct CMapData* _this)
+        static int CMapDataGetLevelLimit18_wrapper(struct CMapData* _this)
         {
            return CMapDataGetLevelLimit18_user(_this, CMapDataGetLevelLimit18_next);
         };
-        struct _portal_dummy* CMapDataGetLinkPortal20_wrapper(struct CMapData* _this, char* pPortalCode)
+        static struct _portal_dummy* CMapDataGetLinkPortal20_wrapper(struct CMapData* _this, char* pPortalCode)
         {
            return CMapDataGetLinkPortal20_user(_this, pPortalCode, CMapDataGetLinkPortal20_next);
         };
-        char CMapDataGetMapCode22_wrapper(struct CMapData* _this)
+        static char CMapDataGetMapCode22_wrapper(struct CMapData* _this)
         {
            return CMapDataGetMapCode22_user(_this, CMapDataGetMapCode22_next);
         };
-        struct _portal_dummy* CMapDataGetPortal24_wrapper(struct CMapData* _this, char* pPortalCode)
+        static struct _portal_dummy* CMapDataGetPortal24_wrapper(struct CMapData* _this, char* pPortalCode)
         {
            return CMapDataGetPortal24_user(_this, pPortalCode, CMapDataGetPortal24_next);
         };
-        struct _portal_dummy* CMapDataGetPortal26_wrapper(struct CMapData* _this, int nPortalIndex)
+        static struct _portal_dummy* CMapDataGetPortal26_wrapper(struct CMapData* _this, int nPortalIndex)
         {
            return CMapDataGetPortal26_user(_this, nPortalIndex, CMapDataGetPortal26_next);
         };
-        int CMapDataGetPortalInx28_wrapper(struct CMapData* _this, char* pPortalCode)
+        static int CMapDataGetPortalInx28_wrapper(struct CMapData* _this, char* pPortalCode)
         {
            return CMapDataGetPortalInx28_user(_this, pPortalCode, CMapDataGetPortalInx28_next);
         };
-        char CMapDataGetRaceTown30_wrapper(struct CMapData* _this, float* fPos, char byRaceCode)
+        static char CMapDataGetRaceTown30_wrapper(struct CMapData* _this, float* fPos, char byRaceCode)
         {
            return CMapDataGetRaceTown30_user(_this, fPos, byRaceCode, CMapDataGetRaceTown30_next);
         };
-        bool CMapDataGetRandPosInDummy32_wrapper(struct CMapData* _this, struct _dummy_position* pPos, float* pNewPos, bool bRePos)
+        static bool CMapDataGetRandPosInDummy32_wrapper(struct CMapData* _this, struct _dummy_position* pPos, float* pNewPos, bool bRePos)
         {
            return CMapDataGetRandPosInDummy32_user(_this, pPos, pNewPos, bRePos, CMapDataGetRandPosInDummy32_next);
         };
-        bool CMapDataGetRandPosInRange34_wrapper(struct CMapData* _this, float* pStdPos, int nRange, float* pNewPos)
+        static bool CMapDataGetRandPosInRange34_wrapper(struct CMapData* _this, float* pStdPos, int nRange, float* pNewPos)
         {
            return CMapDataGetRandPosInRange34_user(_this, pStdPos, nRange, pNewPos, CMapDataGetRandPosInRange34_next);
         };
-        bool CMapDataGetRandPosVirtualDum36_wrapper(struct CMapData* _this, float* pStdPos, int nRange, float* pNewPos)
+        static bool CMapDataGetRandPosVirtualDum36_wrapper(struct CMapData* _this, float* pStdPos, int nRange, float* pNewPos)
         {
            return CMapDataGetRandPosVirtualDum36_user(_this, pStdPos, nRange, pNewPos, CMapDataGetRandPosVirtualDum36_next);
         };
-        bool CMapDataGetRandPosVirtualDumExcludeStdRange38_wrapper(struct CMapData* _this, float* pStdPos, int nRange, int iExcludeRange, float* pNewPos)
+        static bool CMapDataGetRandPosVirtualDumExcludeStdRange38_wrapper(struct CMapData* _this, float* pStdPos, int nRange, int iExcludeRange, float* pNewPos)
         {
            return CMapDataGetRandPosVirtualDumExcludeStdRange38_user(_this, pStdPos, nRange, iExcludeRange, pNewPos, CMapDataGetRandPosVirtualDumExcludeStdRange38_next);
         };
-        void CMapDataGetRectInRadius40_wrapper(struct CMapData* _this, struct _pnt_rect* pRect, int nRadius, int nSecNum)
+        static void CMapDataGetRectInRadius40_wrapper(struct CMapData* _this, struct _pnt_rect* pRect, int nRadius, int nSecNum)
         {
            CMapDataGetRectInRadius40_user(_this, pRect, nRadius, nSecNum, CMapDataGetRectInRadius40_next);
         };
-        int CMapDataGetResDummySector42_wrapper(struct CMapData* _this, int nDummyIndex, float* pCurPos)
+        static int CMapDataGetResDummySector42_wrapper(struct CMapData* _this, int nDummyIndex, float* pCurPos)
         {
            return CMapDataGetResDummySector42_user(_this, nDummyIndex, pCurPos, CMapDataGetResDummySector42_next);
         };
-        struct _sec_info* CMapDataGetSecInfo44_wrapper(struct CMapData* _this)
+        static struct _sec_info* CMapDataGetSecInfo44_wrapper(struct CMapData* _this)
         {
            return CMapDataGetSecInfo44_user(_this, CMapDataGetSecInfo44_next);
         };
-        int CMapDataGetSectorIndex46_wrapper(struct CMapData* _this, float* pPos)
+        static int CMapDataGetSectorIndex46_wrapper(struct CMapData* _this, float* pPos)
         {
            return CMapDataGetSectorIndex46_user(_this, pPos, CMapDataGetSectorIndex46_next);
         };
-        struct CObjectList* CMapDataGetSectorListObj48_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
+        static struct CObjectList* CMapDataGetSectorListObj48_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
         {
            return CMapDataGetSectorListObj48_user(_this, wLayerIndex, dwSecIndex, CMapDataGetSectorListObj48_next);
         };
-        struct CObjectList* CMapDataGetSectorListPlayer50_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
+        static struct CObjectList* CMapDataGetSectorListPlayer50_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
         {
            return CMapDataGetSectorListPlayer50_user(_this, wLayerIndex, dwSecIndex, CMapDataGetSectorListPlayer50_next);
         };
-        struct CObjectList* CMapDataGetSectorListTower52_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
+        static struct CObjectList* CMapDataGetSectorListTower52_wrapper(struct CMapData* _this, uint16_t wLayerIndex, unsigned int dwSecIndex)
         {
            return CMapDataGetSectorListTower52_user(_this, wLayerIndex, dwSecIndex, CMapDataGetSectorListTower52_next);
         };
-        int CMapDataGetSectorNumByLayerIndex54_wrapper(struct CMapData* _this, uint16_t wLayerIndex)
+        static int CMapDataGetSectorNumByLayerIndex54_wrapper(struct CMapData* _this, uint16_t wLayerIndex)
         {
            return CMapDataGetSectorNumByLayerIndex54_user(_this, wLayerIndex, CMapDataGetSectorNumByLayerIndex54_next);
         };
-        void CMapDataInit56_wrapper(struct CMapData* _this, struct _map_fld* pMapSet)
+        static void CMapDataInit56_wrapper(struct CMapData* _this, struct _map_fld* pMapSet)
         {
            CMapDataInit56_user(_this, pMapSet, CMapDataInit56_next);
         };
-        bool CMapDataIsMapIn58_wrapper(struct CMapData* _this, float* fPos)
+        static bool CMapDataIsMapIn58_wrapper(struct CMapData* _this, float* fPos)
         {
            return CMapDataIsMapIn58_user(_this, fPos, CMapDataIsMapIn58_next);
         };
-        bool CMapDataLoadDummy60_wrapper(struct CMapData* _this, char* pszDummyCode, struct _dummy_position* pPos)
+        static bool CMapDataLoadDummy60_wrapper(struct CMapData* _this, char* pszDummyCode, struct _dummy_position* pPos)
         {
            return CMapDataLoadDummy60_user(_this, pszDummyCode, pPos, CMapDataLoadDummy60_next);
         };
-        bool CMapDataLoadHolySystemDummy62_wrapper(struct CMapData* _this, char* pszDummyCode, struct _dummy_position* pPos)
+        static bool CMapDataLoadHolySystemDummy62_wrapper(struct CMapData* _this, char* pszDummyCode, struct _dummy_position* pPos)
         {
            return CMapDataLoadHolySystemDummy62_user(_this, pszDummyCode, pPos, CMapDataLoadHolySystemDummy62_next);
         };
-        void CMapDataOnLoop64_wrapper(struct CMapData* _this)
+        static void CMapDataOnLoop64_wrapper(struct CMapData* _this)
         {
            CMapDataOnLoop64_user(_this, CMapDataOnLoop64_next);
         };
-        bool CMapDataOpenMap66_wrapper(struct CMapData* _this, char* pszMapCode, struct _map_fld* pMapSet, bool bUse)
+        static bool CMapDataOpenMap66_wrapper(struct CMapData* _this, char* pszMapCode, struct _map_fld* pMapSet, bool bUse)
         {
            return CMapDataOpenMap66_user(_this, pszMapCode, pMapSet, bUse, CMapDataOpenMap66_next);
         };
-        bool CMapDataUpdateSecterList68_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwOldSec, unsigned int dwNewSec)
+        static bool CMapDataUpdateSecterList68_wrapper(struct CMapData* _this, struct CGameObject* pObj, unsigned int dwOldSec, unsigned int dwNewSec)
         {
            return CMapDataUpdateSecterList68_user(_this, pObj, dwOldSec, dwNewSec, CMapDataUpdateSecterList68_next);
         };
-        bool CMapData_LoadBind70_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadBind70_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadBind70_user(_this, pszMapCode, CMapData_LoadBind70_next);
         };
-        bool CMapData_LoadBspSec72_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadBspSec72_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadBspSec72_user(_this, pszMapCode, CMapData_LoadBspSec72_next);
         };
-        bool CMapData_LoadMonBlk74_wrapper(struct CMapData* _this, char* pszMapCode, struct _map_fld* pMapFld)
+        static bool CMapData_LoadMonBlk74_wrapper(struct CMapData* _this, char* pszMapCode, struct _map_fld* pMapFld)
         {
            return CMapData_LoadMonBlk74_user(_this, pszMapCode, pMapFld, CMapData_LoadMonBlk74_next);
         };
-        bool CMapData_LoadPortal76_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadPortal76_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadPortal76_user(_this, pszMapCode, CMapData_LoadPortal76_next);
         };
-        bool CMapData_LoadQuest78_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadQuest78_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadQuest78_user(_this, pszMapCode, CMapData_LoadQuest78_next);
         };
-        bool CMapData_LoadResource80_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadResource80_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadResource80_user(_this, pszMapCode, CMapData_LoadResource80_next);
         };
-        bool CMapData_LoadSafe82_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadSafe82_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadSafe82_user(_this, pszMapCode, CMapData_LoadSafe82_next);
         };
-        bool CMapData_LoadStart84_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadStart84_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadStart84_user(_this, pszMapCode, CMapData_LoadStart84_next);
         };
-        bool CMapData_LoadStoreDummy86_wrapper(struct CMapData* _this, char* pszMapCode)
+        static bool CMapData_LoadStoreDummy86_wrapper(struct CMapData* _this, char* pszMapCode)
         {
            return CMapData_LoadStoreDummy86_user(_this, pszMapCode, CMapData_LoadStoreDummy86_next);
         };
-        void CMapDatadtor_CMapData92_wrapper(struct CMapData* _this)
+        static void CMapDatadtor_CMapData92_wrapper(struct CMapData* _this)
         {
            CMapDatadtor_CMapData92_user(_this, CMapDatadtor_CMapData92_next);
         };
         
-        hook_record CMapData_functions[] = {
+        static hook_record CMapData_functions[] = {
         {   (LPVOID)0x140180050L,
             (LPVOID *)&CMapDatactor_CMapData2_user,
             (LPVOID *)&CMapDatactor_CMapData2_next,
@@ -498,5 +498,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_golden_box_item_inictor__golden_box_item_ini2_ptr _golden_box_item_inictor__golden_box_item_ini2_next(nullptr);
-        info::_golden_box_item_inictor__golden_box_item_ini2_clbk _golden_box_item_inictor__golden_box_item_ini2_user(nullptr);
+        static info::_golden_box_item_inictor__golden_box_item_ini2_ptr _golden_box_item_inictor__golden_box_item_ini2_next(nullptr);
+        static info::_golden_box_item_inictor__golden_box_item_ini2_clbk _golden_box_item_inictor__golden_box_item_ini2_user(nullptr);
         
-        void _golden_box_item_inictor__golden_box_item_ini2_wrapper(struct _golden_box_item_ini* _this)
+        static void _golden_box_item_inictor__golden_box_item_ini2_wrapper(struct _golden_box_item_ini* _this)
         {
            _golden_box_item_inictor__golden_box_item_ini2_user(_this, _golden_box_item_inictor__golden_box_item_ini2_next);
         };
         
-        hook_record _golden_box_item_ini_functions[] = {
+        static hook_record _golden_box_item_ini_functions[] = {
         {   (LPVOID)0x1404169c0L,
             (LPVOID *)&_golden_box_item_inictor__golden_box_item_ini2_user,
             (LPVOID *)&_golden_box_item_inictor__golden_box_item_ini2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__table_objdec_ref4_ptr lua_tinker__table_objdec_ref4_next(nullptr);
-            info::lua_tinker__table_objdec_ref4_clbk lua_tinker__table_objdec_ref4_user(nullptr);
-            info::lua_tinker__table_objinc_ref6_ptr lua_tinker__table_objinc_ref6_next(nullptr);
-            info::lua_tinker__table_objinc_ref6_clbk lua_tinker__table_objinc_ref6_user(nullptr);
-            info::lua_tinker__table_objctor_table_obj8_ptr lua_tinker__table_objctor_table_obj8_next(nullptr);
-            info::lua_tinker__table_objctor_table_obj8_clbk lua_tinker__table_objctor_table_obj8_user(nullptr);
-            info::lua_tinker__table_objvalidate10_ptr lua_tinker__table_objvalidate10_next(nullptr);
-            info::lua_tinker__table_objvalidate10_clbk lua_tinker__table_objvalidate10_user(nullptr);
-            info::lua_tinker__table_objdtor_table_obj12_ptr lua_tinker__table_objdtor_table_obj12_next(nullptr);
-            info::lua_tinker__table_objdtor_table_obj12_clbk lua_tinker__table_objdtor_table_obj12_user(nullptr);
+            static info::lua_tinker__table_objdec_ref4_ptr lua_tinker__table_objdec_ref4_next(nullptr);
+            static info::lua_tinker__table_objdec_ref4_clbk lua_tinker__table_objdec_ref4_user(nullptr);
+            static info::lua_tinker__table_objinc_ref6_ptr lua_tinker__table_objinc_ref6_next(nullptr);
+            static info::lua_tinker__table_objinc_ref6_clbk lua_tinker__table_objinc_ref6_user(nullptr);
+            static info::lua_tinker__table_objctor_table_obj8_ptr lua_tinker__table_objctor_table_obj8_next(nullptr);
+            static info::lua_tinker__table_objctor_table_obj8_clbk lua_tinker__table_objctor_table_obj8_user(nullptr);
+            static info::lua_tinker__table_objvalidate10_ptr lua_tinker__table_objvalidate10_next(nullptr);
+            static info::lua_tinker__table_objvalidate10_clbk lua_tinker__table_objvalidate10_user(nullptr);
+            static info::lua_tinker__table_objdtor_table_obj12_ptr lua_tinker__table_objdtor_table_obj12_next(nullptr);
+            static info::lua_tinker__table_objdtor_table_obj12_clbk lua_tinker__table_objdtor_table_obj12_user(nullptr);
             
-            void lua_tinker__table_objdec_ref4_wrapper(struct lua_tinker::table_obj* _this)
+            static void lua_tinker__table_objdec_ref4_wrapper(struct lua_tinker::table_obj* _this)
             {
                lua_tinker__table_objdec_ref4_user(_this, lua_tinker__table_objdec_ref4_next);
             };
-            void lua_tinker__table_objinc_ref6_wrapper(struct lua_tinker::table_obj* _this)
+            static void lua_tinker__table_objinc_ref6_wrapper(struct lua_tinker::table_obj* _this)
             {
                lua_tinker__table_objinc_ref6_user(_this, lua_tinker__table_objinc_ref6_next);
             };
-            void lua_tinker__table_objctor_table_obj8_wrapper(struct lua_tinker::table_obj* _this, lua_State* L, int index)
+            static void lua_tinker__table_objctor_table_obj8_wrapper(struct lua_tinker::table_obj* _this, lua_State* L, int index)
             {
                lua_tinker__table_objctor_table_obj8_user(_this, L, index, lua_tinker__table_objctor_table_obj8_next);
             };
-            bool lua_tinker__table_objvalidate10_wrapper(struct lua_tinker::table_obj* _this)
+            static bool lua_tinker__table_objvalidate10_wrapper(struct lua_tinker::table_obj* _this)
             {
                return lua_tinker__table_objvalidate10_user(_this, lua_tinker__table_objvalidate10_next);
             };
-            void lua_tinker__table_objdtor_table_obj12_wrapper(struct lua_tinker::table_obj* _this)
+            static void lua_tinker__table_objdtor_table_obj12_wrapper(struct lua_tinker::table_obj* _this)
             {
                lua_tinker__table_objdtor_table_obj12_user(_this, lua_tinker__table_objdtor_table_obj12_next);
             };
             
-            hook_record table_obj_functions[] = {
+            static hook_record table_obj_functions[] = {
             {   (LPVOID)0x140446260L,
                 (LPVOID *)&lua_tinker__table_objdec_ref4_user,
                 (LPVOID *)&lua_tinker__table_objdec_ref4_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

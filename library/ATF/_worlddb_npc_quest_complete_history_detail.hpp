@@ -8,23 +8,23 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_ptr _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_next(nullptr);
-        info::_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_clbk _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_user(nullptr);
+        static info::_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_ptr _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_next(nullptr);
+        static info::_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_clbk _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_user(nullptr);
         
-        info::_worlddb_npc_quest_complete_history____listctor___list2_ptr _worlddb_npc_quest_complete_history____listctor___list2_next(nullptr);
-        info::_worlddb_npc_quest_complete_history____listctor___list2_clbk _worlddb_npc_quest_complete_history____listctor___list2_user(nullptr);
+        static info::_worlddb_npc_quest_complete_history____listctor___list2_ptr _worlddb_npc_quest_complete_history____listctor___list2_next(nullptr);
+        static info::_worlddb_npc_quest_complete_history____listctor___list2_clbk _worlddb_npc_quest_complete_history____listctor___list2_user(nullptr);
         
-        void _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_wrapper(struct _worlddb_npc_quest_complete_history* _this)
+        static void _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_wrapper(struct _worlddb_npc_quest_complete_history* _this)
         {
            _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_user(_this, _worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_next);
         };
         
-        void _worlddb_npc_quest_complete_history____listctor___list2_wrapper(struct _worlddb_npc_quest_complete_history::__list* _this)
+        static void _worlddb_npc_quest_complete_history____listctor___list2_wrapper(struct _worlddb_npc_quest_complete_history::__list* _this)
         {
            _worlddb_npc_quest_complete_history____listctor___list2_user(_this, _worlddb_npc_quest_complete_history____listctor___list2_next);
         };
         
-        hook_record _worlddb_npc_quest_complete_history_functions[] = {
+        static hook_record _worlddb_npc_quest_complete_history_functions[] = {
         {   (LPVOID)0x1401bf130L,
             (LPVOID *)&_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_user,
             (LPVOID *)&_worlddb_npc_quest_complete_historyctor__worlddb_npc_quest_complete_history2_next,
@@ -39,5 +39,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

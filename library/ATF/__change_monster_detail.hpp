@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__change_monsterctor___change_monster2_ptr __change_monsterctor___change_monster2_next(nullptr);
-        info::__change_monsterctor___change_monster2_clbk __change_monsterctor___change_monster2_user(nullptr);
-        info::__change_monsterdtor___change_monster6_ptr __change_monsterdtor___change_monster6_next(nullptr);
-        info::__change_monsterdtor___change_monster6_clbk __change_monsterdtor___change_monster6_user(nullptr);
+        static info::__change_monsterctor___change_monster2_ptr __change_monsterctor___change_monster2_next(nullptr);
+        static info::__change_monsterctor___change_monster2_clbk __change_monsterctor___change_monster2_user(nullptr);
+        static info::__change_monsterdtor___change_monster6_ptr __change_monsterdtor___change_monster6_next(nullptr);
+        static info::__change_monsterdtor___change_monster6_clbk __change_monsterdtor___change_monster6_user(nullptr);
         
-        void __change_monsterctor___change_monster2_wrapper(struct __change_monster* _this)
+        static void __change_monsterctor___change_monster2_wrapper(struct __change_monster* _this)
         {
            __change_monsterctor___change_monster2_user(_this, __change_monsterctor___change_monster2_next);
         };
-        void __change_monsterdtor___change_monster6_wrapper(struct __change_monster* _this)
+        static void __change_monsterdtor___change_monster6_wrapper(struct __change_monster* _this)
         {
            __change_monsterdtor___change_monster6_user(_this, __change_monsterdtor___change_monster6_next);
         };
         
-        hook_record __change_monster_functions[] = {
+        static hook_record __change_monster_functions[] = {
         {   (LPVOID)0x14027a4d0L,
             (LPVOID *)&__change_monsterctor___change_monster2_user,
             (LPVOID *)&__change_monsterctor___change_monster2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

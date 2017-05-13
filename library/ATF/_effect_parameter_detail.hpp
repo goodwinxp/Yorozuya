@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_effect_parameterAllocEffParam2_ptr _effect_parameterAllocEffParam2_next(nullptr);
-        info::_effect_parameterAllocEffParam2_clbk _effect_parameterAllocEffParam2_user(nullptr);
-        info::_effect_parameterGetEff_Have4_ptr _effect_parameterGetEff_Have4_next(nullptr);
-        info::_effect_parameterGetEff_Have4_clbk _effect_parameterGetEff_Have4_user(nullptr);
-        info::_effect_parameterGetEff_Plus6_ptr _effect_parameterGetEff_Plus6_next(nullptr);
-        info::_effect_parameterGetEff_Plus6_clbk _effect_parameterGetEff_Plus6_user(nullptr);
-        info::_effect_parameterGetEff_Rate8_ptr _effect_parameterGetEff_Rate8_next(nullptr);
-        info::_effect_parameterGetEff_Rate8_clbk _effect_parameterGetEff_Rate8_user(nullptr);
-        info::_effect_parameterGetEff_State10_ptr _effect_parameterGetEff_State10_next(nullptr);
-        info::_effect_parameterGetEff_State10_clbk _effect_parameterGetEff_State10_user(nullptr);
-        info::_effect_parameterInitEffHave12_ptr _effect_parameterInitEffHave12_next(nullptr);
-        info::_effect_parameterInitEffHave12_clbk _effect_parameterInitEffHave12_user(nullptr);
-        info::_effect_parameterInitEffParam14_ptr _effect_parameterInitEffParam14_next(nullptr);
-        info::_effect_parameterInitEffParam14_clbk _effect_parameterInitEffParam14_user(nullptr);
-        info::_effect_parameterSetEff_Plus16_ptr _effect_parameterSetEff_Plus16_next(nullptr);
-        info::_effect_parameterSetEff_Plus16_clbk _effect_parameterSetEff_Plus16_user(nullptr);
-        info::_effect_parameterSetEff_Rate18_ptr _effect_parameterSetEff_Rate18_next(nullptr);
-        info::_effect_parameterSetEff_Rate18_clbk _effect_parameterSetEff_Rate18_user(nullptr);
-        info::_effect_parameterSetEff_State20_ptr _effect_parameterSetEff_State20_next(nullptr);
-        info::_effect_parameterSetEff_State20_clbk _effect_parameterSetEff_State20_user(nullptr);
-        info::_effect_parameterSetLock22_ptr _effect_parameterSetLock22_next(nullptr);
-        info::_effect_parameterSetLock22_clbk _effect_parameterSetLock22_user(nullptr);
-        info::_effect_parameterctor__effect_parameter24_ptr _effect_parameterctor__effect_parameter24_next(nullptr);
-        info::_effect_parameterctor__effect_parameter24_clbk _effect_parameterctor__effect_parameter24_user(nullptr);
-        info::_effect_parameterdtor__effect_parameter26_ptr _effect_parameterdtor__effect_parameter26_next(nullptr);
-        info::_effect_parameterdtor__effect_parameter26_clbk _effect_parameterdtor__effect_parameter26_user(nullptr);
+        static info::_effect_parameterAllocEffParam2_ptr _effect_parameterAllocEffParam2_next(nullptr);
+        static info::_effect_parameterAllocEffParam2_clbk _effect_parameterAllocEffParam2_user(nullptr);
+        static info::_effect_parameterGetEff_Have4_ptr _effect_parameterGetEff_Have4_next(nullptr);
+        static info::_effect_parameterGetEff_Have4_clbk _effect_parameterGetEff_Have4_user(nullptr);
+        static info::_effect_parameterGetEff_Plus6_ptr _effect_parameterGetEff_Plus6_next(nullptr);
+        static info::_effect_parameterGetEff_Plus6_clbk _effect_parameterGetEff_Plus6_user(nullptr);
+        static info::_effect_parameterGetEff_Rate8_ptr _effect_parameterGetEff_Rate8_next(nullptr);
+        static info::_effect_parameterGetEff_Rate8_clbk _effect_parameterGetEff_Rate8_user(nullptr);
+        static info::_effect_parameterGetEff_State10_ptr _effect_parameterGetEff_State10_next(nullptr);
+        static info::_effect_parameterGetEff_State10_clbk _effect_parameterGetEff_State10_user(nullptr);
+        static info::_effect_parameterInitEffHave12_ptr _effect_parameterInitEffHave12_next(nullptr);
+        static info::_effect_parameterInitEffHave12_clbk _effect_parameterInitEffHave12_user(nullptr);
+        static info::_effect_parameterInitEffParam14_ptr _effect_parameterInitEffParam14_next(nullptr);
+        static info::_effect_parameterInitEffParam14_clbk _effect_parameterInitEffParam14_user(nullptr);
+        static info::_effect_parameterSetEff_Plus16_ptr _effect_parameterSetEff_Plus16_next(nullptr);
+        static info::_effect_parameterSetEff_Plus16_clbk _effect_parameterSetEff_Plus16_user(nullptr);
+        static info::_effect_parameterSetEff_Rate18_ptr _effect_parameterSetEff_Rate18_next(nullptr);
+        static info::_effect_parameterSetEff_Rate18_clbk _effect_parameterSetEff_Rate18_user(nullptr);
+        static info::_effect_parameterSetEff_State20_ptr _effect_parameterSetEff_State20_next(nullptr);
+        static info::_effect_parameterSetEff_State20_clbk _effect_parameterSetEff_State20_user(nullptr);
+        static info::_effect_parameterSetLock22_ptr _effect_parameterSetLock22_next(nullptr);
+        static info::_effect_parameterSetLock22_clbk _effect_parameterSetLock22_user(nullptr);
+        static info::_effect_parameterctor__effect_parameter24_ptr _effect_parameterctor__effect_parameter24_next(nullptr);
+        static info::_effect_parameterctor__effect_parameter24_clbk _effect_parameterctor__effect_parameter24_user(nullptr);
+        static info::_effect_parameterdtor__effect_parameter26_ptr _effect_parameterdtor__effect_parameter26_next(nullptr);
+        static info::_effect_parameterdtor__effect_parameter26_clbk _effect_parameterdtor__effect_parameter26_user(nullptr);
         
-        void _effect_parameterAllocEffParam2_wrapper(struct _effect_parameter* _this)
+        static void _effect_parameterAllocEffParam2_wrapper(struct _effect_parameter* _this)
         {
            _effect_parameterAllocEffParam2_user(_this, _effect_parameterAllocEffParam2_next);
         };
-        float _effect_parameterGetEff_Have4_wrapper(struct _effect_parameter* _this, int nParamIndex)
+        static float _effect_parameterGetEff_Have4_wrapper(struct _effect_parameter* _this, int nParamIndex)
         {
            return _effect_parameterGetEff_Have4_user(_this, nParamIndex, _effect_parameterGetEff_Have4_next);
         };
-        float _effect_parameterGetEff_Plus6_wrapper(struct _effect_parameter* _this, int nParamIndex)
+        static float _effect_parameterGetEff_Plus6_wrapper(struct _effect_parameter* _this, int nParamIndex)
         {
            return _effect_parameterGetEff_Plus6_user(_this, nParamIndex, _effect_parameterGetEff_Plus6_next);
         };
-        float _effect_parameterGetEff_Rate8_wrapper(struct _effect_parameter* _this, int nParamIndex)
+        static float _effect_parameterGetEff_Rate8_wrapper(struct _effect_parameter* _this, int nParamIndex)
         {
            return _effect_parameterGetEff_Rate8_user(_this, nParamIndex, _effect_parameterGetEff_Rate8_next);
         };
-        bool _effect_parameterGetEff_State10_wrapper(struct _effect_parameter* _this, int nParamIndex)
+        static bool _effect_parameterGetEff_State10_wrapper(struct _effect_parameter* _this, int nParamIndex)
         {
            return _effect_parameterGetEff_State10_user(_this, nParamIndex, _effect_parameterGetEff_State10_next);
         };
-        void _effect_parameterInitEffHave12_wrapper(struct _effect_parameter* _this)
+        static void _effect_parameterInitEffHave12_wrapper(struct _effect_parameter* _this)
         {
            _effect_parameterInitEffHave12_user(_this, _effect_parameterInitEffHave12_next);
         };
-        void _effect_parameterInitEffParam14_wrapper(struct _effect_parameter* _this)
+        static void _effect_parameterInitEffParam14_wrapper(struct _effect_parameter* _this)
         {
            _effect_parameterInitEffParam14_user(_this, _effect_parameterInitEffParam14_next);
         };
-        bool _effect_parameterSetEff_Plus16_wrapper(struct _effect_parameter* _this, int nParamIndex, float fVar, bool bAdd)
+        static bool _effect_parameterSetEff_Plus16_wrapper(struct _effect_parameter* _this, int nParamIndex, float fVar, bool bAdd)
         {
            return _effect_parameterSetEff_Plus16_user(_this, nParamIndex, fVar, bAdd, _effect_parameterSetEff_Plus16_next);
         };
-        bool _effect_parameterSetEff_Rate18_wrapper(struct _effect_parameter* _this, int nParamIndex, float fVar, bool bAdd)
+        static bool _effect_parameterSetEff_Rate18_wrapper(struct _effect_parameter* _this, int nParamIndex, float fVar, bool bAdd)
         {
            return _effect_parameterSetEff_Rate18_user(_this, nParamIndex, fVar, bAdd, _effect_parameterSetEff_Rate18_next);
         };
-        bool _effect_parameterSetEff_State20_wrapper(struct _effect_parameter* _this, int nParamIndex, bool bVar)
+        static bool _effect_parameterSetEff_State20_wrapper(struct _effect_parameter* _this, int nParamIndex, bool bVar)
         {
            return _effect_parameterSetEff_State20_user(_this, nParamIndex, bVar, _effect_parameterSetEff_State20_next);
         };
-        void _effect_parameterSetLock22_wrapper(struct _effect_parameter* _this, bool bLock)
+        static void _effect_parameterSetLock22_wrapper(struct _effect_parameter* _this, bool bLock)
         {
            _effect_parameterSetLock22_user(_this, bLock, _effect_parameterSetLock22_next);
         };
-        void _effect_parameterctor__effect_parameter24_wrapper(struct _effect_parameter* _this)
+        static void _effect_parameterctor__effect_parameter24_wrapper(struct _effect_parameter* _this)
         {
            _effect_parameterctor__effect_parameter24_user(_this, _effect_parameterctor__effect_parameter24_next);
         };
-        void _effect_parameterdtor__effect_parameter26_wrapper(struct _effect_parameter* _this)
+        static void _effect_parameterdtor__effect_parameter26_wrapper(struct _effect_parameter* _this)
         {
            _effect_parameterdtor__effect_parameter26_user(_this, _effect_parameterdtor__effect_parameter26_next);
         };
         
-        hook_record _effect_parameter_functions[] = {
+        static hook_record _effect_parameter_functions[] = {
         {   (LPVOID)0x1400748f0L,
             (LPVOID *)&_effect_parameterAllocEffParam2_user,
             (LPVOID *)&_effect_parameterAllocEffParam2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

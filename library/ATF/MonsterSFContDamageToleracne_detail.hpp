@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::MonsterSFContDamageToleracneGetToleranceProb2_ptr MonsterSFContDamageToleracneGetToleranceProb2_next(nullptr);
-        info::MonsterSFContDamageToleracneGetToleranceProb2_clbk MonsterSFContDamageToleracneGetToleranceProb2_user(nullptr);
-        info::MonsterSFContDamageToleracneInit4_ptr MonsterSFContDamageToleracneInit4_next(nullptr);
-        info::MonsterSFContDamageToleracneInit4_clbk MonsterSFContDamageToleracneInit4_user(nullptr);
-        info::MonsterSFContDamageToleracneIsSFContDamage6_ptr MonsterSFContDamageToleracneIsSFContDamage6_next(nullptr);
-        info::MonsterSFContDamageToleracneIsSFContDamage6_clbk MonsterSFContDamageToleracneIsSFContDamage6_user(nullptr);
-        info::MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_ptr MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_next(nullptr);
-        info::MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_clbk MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_user(nullptr);
-        info::MonsterSFContDamageToleracneOnlyOnceInit10_ptr MonsterSFContDamageToleracneOnlyOnceInit10_next(nullptr);
-        info::MonsterSFContDamageToleracneOnlyOnceInit10_clbk MonsterSFContDamageToleracneOnlyOnceInit10_user(nullptr);
-        info::MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_ptr MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_next(nullptr);
-        info::MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_clbk MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_user(nullptr);
-        info::MonsterSFContDamageToleracneUpdate14_ptr MonsterSFContDamageToleracneUpdate14_next(nullptr);
-        info::MonsterSFContDamageToleracneUpdate14_clbk MonsterSFContDamageToleracneUpdate14_user(nullptr);
+        static info::MonsterSFContDamageToleracneGetToleranceProb2_ptr MonsterSFContDamageToleracneGetToleranceProb2_next(nullptr);
+        static info::MonsterSFContDamageToleracneGetToleranceProb2_clbk MonsterSFContDamageToleracneGetToleranceProb2_user(nullptr);
+        static info::MonsterSFContDamageToleracneInit4_ptr MonsterSFContDamageToleracneInit4_next(nullptr);
+        static info::MonsterSFContDamageToleracneInit4_clbk MonsterSFContDamageToleracneInit4_user(nullptr);
+        static info::MonsterSFContDamageToleracneIsSFContDamage6_ptr MonsterSFContDamageToleracneIsSFContDamage6_next(nullptr);
+        static info::MonsterSFContDamageToleracneIsSFContDamage6_clbk MonsterSFContDamageToleracneIsSFContDamage6_user(nullptr);
+        static info::MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_ptr MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_next(nullptr);
+        static info::MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_clbk MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_user(nullptr);
+        static info::MonsterSFContDamageToleracneOnlyOnceInit10_ptr MonsterSFContDamageToleracneOnlyOnceInit10_next(nullptr);
+        static info::MonsterSFContDamageToleracneOnlyOnceInit10_clbk MonsterSFContDamageToleracneOnlyOnceInit10_user(nullptr);
+        static info::MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_ptr MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_next(nullptr);
+        static info::MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_clbk MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_user(nullptr);
+        static info::MonsterSFContDamageToleracneUpdate14_ptr MonsterSFContDamageToleracneUpdate14_next(nullptr);
+        static info::MonsterSFContDamageToleracneUpdate14_clbk MonsterSFContDamageToleracneUpdate14_user(nullptr);
         
-        float MonsterSFContDamageToleracneGetToleranceProb2_wrapper(struct MonsterSFContDamageToleracne* _this)
+        static float MonsterSFContDamageToleracneGetToleranceProb2_wrapper(struct MonsterSFContDamageToleracne* _this)
         {
            return MonsterSFContDamageToleracneGetToleranceProb2_user(_this, MonsterSFContDamageToleracneGetToleranceProb2_next);
         };
-        void MonsterSFContDamageToleracneInit4_wrapper(struct MonsterSFContDamageToleracne* _this, float fMaxTolValue)
+        static void MonsterSFContDamageToleracneInit4_wrapper(struct MonsterSFContDamageToleracne* _this, float fMaxTolValue)
         {
            MonsterSFContDamageToleracneInit4_user(_this, fMaxTolValue, MonsterSFContDamageToleracneInit4_next);
         };
-        bool MonsterSFContDamageToleracneIsSFContDamage6_wrapper(struct MonsterSFContDamageToleracne* _this)
+        static bool MonsterSFContDamageToleracneIsSFContDamage6_wrapper(struct MonsterSFContDamageToleracne* _this)
         {
            return MonsterSFContDamageToleracneIsSFContDamage6_user(_this, MonsterSFContDamageToleracneIsSFContDamage6_next);
         };
-        void MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_wrapper(struct MonsterSFContDamageToleracne* _this)
+        static void MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_wrapper(struct MonsterSFContDamageToleracne* _this)
         {
            MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_user(_this, MonsterSFContDamageToleracnector_MonsterSFContDamageToleracne8_next);
         };
-        void MonsterSFContDamageToleracneOnlyOnceInit10_wrapper(struct MonsterSFContDamageToleracne* _this, struct CMonster* pMonster)
+        static void MonsterSFContDamageToleracneOnlyOnceInit10_wrapper(struct MonsterSFContDamageToleracne* _this, struct CMonster* pMonster)
         {
            MonsterSFContDamageToleracneOnlyOnceInit10_user(_this, pMonster, MonsterSFContDamageToleracneOnlyOnceInit10_next);
         };
-        void MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_wrapper(struct MonsterSFContDamageToleracne* _this, float fAddValue)
+        static void MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_wrapper(struct MonsterSFContDamageToleracne* _this, float fAddValue)
         {
            MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_user(_this, fAddValue, MonsterSFContDamageToleracneSetSFDamageToleracne_Variation12_next);
         };
-        void MonsterSFContDamageToleracneUpdate14_wrapper(struct MonsterSFContDamageToleracne* _this)
+        static void MonsterSFContDamageToleracneUpdate14_wrapper(struct MonsterSFContDamageToleracne* _this)
         {
            MonsterSFContDamageToleracneUpdate14_user(_this, MonsterSFContDamageToleracneUpdate14_next);
         };
         
-        hook_record MonsterSFContDamageToleracne_functions[] = {
+        static hook_record MonsterSFContDamageToleracne_functions[] = {
         {   (LPVOID)0x14014caf0L,
             (LPVOID *)&MonsterSFContDamageToleracneGetToleranceProb2_user,
             (LPVOID *)&MonsterSFContDamageToleracneGetToleranceProb2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

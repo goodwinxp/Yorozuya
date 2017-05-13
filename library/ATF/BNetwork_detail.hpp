@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::BNetworkctor_BNetwork2_ptr BNetworkctor_BNetwork2_next(nullptr);
-        info::BNetworkctor_BNetwork2_clbk BNetworkctor_BNetwork2_user(nullptr);
-        info::BNetworkFreeDLL4_ptr BNetworkFreeDLL4_next(nullptr);
-        info::BNetworkFreeDLL4_clbk BNetworkFreeDLL4_user(nullptr);
-        info::BNetworkInitNetwork6_ptr BNetworkInitNetwork6_next(nullptr);
-        info::BNetworkInitNetwork6_clbk BNetworkInitNetwork6_user(nullptr);
-        info::BNetworkLoadDll8_ptr BNetworkLoadDll8_next(nullptr);
-        info::BNetworkLoadDll8_clbk BNetworkLoadDll8_user(nullptr);
-        info::BNetworkdtor_BNetwork13_ptr BNetworkdtor_BNetwork13_next(nullptr);
-        info::BNetworkdtor_BNetwork13_clbk BNetworkdtor_BNetwork13_user(nullptr);
+        static info::BNetworkctor_BNetwork2_ptr BNetworkctor_BNetwork2_next(nullptr);
+        static info::BNetworkctor_BNetwork2_clbk BNetworkctor_BNetwork2_user(nullptr);
+        static info::BNetworkFreeDLL4_ptr BNetworkFreeDLL4_next(nullptr);
+        static info::BNetworkFreeDLL4_clbk BNetworkFreeDLL4_user(nullptr);
+        static info::BNetworkInitNetwork6_ptr BNetworkInitNetwork6_next(nullptr);
+        static info::BNetworkInitNetwork6_clbk BNetworkInitNetwork6_user(nullptr);
+        static info::BNetworkLoadDll8_ptr BNetworkLoadDll8_next(nullptr);
+        static info::BNetworkLoadDll8_clbk BNetworkLoadDll8_user(nullptr);
+        static info::BNetworkdtor_BNetwork13_ptr BNetworkdtor_BNetwork13_next(nullptr);
+        static info::BNetworkdtor_BNetwork13_clbk BNetworkdtor_BNetwork13_user(nullptr);
         
-        void BNetworkctor_BNetwork2_wrapper(struct BNetwork* _this)
+        static void BNetworkctor_BNetwork2_wrapper(struct BNetwork* _this)
         {
            BNetworkctor_BNetwork2_user(_this, BNetworkctor_BNetwork2_next);
         };
-        void BNetworkFreeDLL4_wrapper(struct BNetwork* _this)
+        static void BNetworkFreeDLL4_wrapper(struct BNetwork* _this)
         {
            BNetworkFreeDLL4_user(_this, BNetworkFreeDLL4_next);
         };
-        void BNetworkInitNetwork6_wrapper(struct BNetwork* _this)
+        static void BNetworkInitNetwork6_wrapper(struct BNetwork* _this)
         {
            BNetworkInitNetwork6_user(_this, BNetworkInitNetwork6_next);
         };
-        bool BNetworkLoadDll8_wrapper(struct BNetwork* _this, char* dll_name)
+        static bool BNetworkLoadDll8_wrapper(struct BNetwork* _this, char* dll_name)
         {
            return BNetworkLoadDll8_user(_this, dll_name, BNetworkLoadDll8_next);
         };
-        void BNetworkdtor_BNetwork13_wrapper(struct BNetwork* _this)
+        static void BNetworkdtor_BNetwork13_wrapper(struct BNetwork* _this)
         {
            BNetworkdtor_BNetwork13_user(_this, BNetworkdtor_BNetwork13_next);
         };
         
-        hook_record BNetwork_functions[] = {
+        static hook_record BNetwork_functions[] = {
         {   (LPVOID)0x14031d270L,
             (LPVOID *)&BNetworkctor_BNetwork2_user,
             (LPVOID *)&BNetworkctor_BNetwork2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

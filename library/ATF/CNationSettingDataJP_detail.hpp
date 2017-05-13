@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataJPctor_CNationSettingDataJP2_ptr CNationSettingDataJPctor_CNationSettingDataJP2_next(nullptr);
-        info::CNationSettingDataJPctor_CNationSettingDataJP2_clbk CNationSettingDataJPctor_CNationSettingDataJP2_user(nullptr);
-        info::CNationSettingDataJPCreateBilling4_ptr CNationSettingDataJPCreateBilling4_next(nullptr);
-        info::CNationSettingDataJPCreateBilling4_clbk CNationSettingDataJPCreateBilling4_user(nullptr);
-        info::CNationSettingDataJPCreateWorker6_ptr CNationSettingDataJPCreateWorker6_next(nullptr);
-        info::CNationSettingDataJPCreateWorker6_clbk CNationSettingDataJPCreateWorker6_user(nullptr);
-        info::CNationSettingDataJPGetCashItemPrice8_ptr CNationSettingDataJPGetCashItemPrice8_next(nullptr);
-        info::CNationSettingDataJPGetCashItemPrice8_clbk CNationSettingDataJPGetCashItemPrice8_user(nullptr);
-        info::CNationSettingDataJPGetItemName10_ptr CNationSettingDataJPGetItemName10_next(nullptr);
-        info::CNationSettingDataJPGetItemName10_clbk CNationSettingDataJPGetItemName10_user(nullptr);
-        info::CNationSettingDataJPInit12_ptr CNationSettingDataJPInit12_next(nullptr);
-        info::CNationSettingDataJPInit12_clbk CNationSettingDataJPInit12_user(nullptr);
-        info::CNationSettingDataJPLoop14_ptr CNationSettingDataJPLoop14_next(nullptr);
-        info::CNationSettingDataJPLoop14_clbk CNationSettingDataJPLoop14_user(nullptr);
-        info::CNationSettingDataJPReadSystemPass16_ptr CNationSettingDataJPReadSystemPass16_next(nullptr);
-        info::CNationSettingDataJPReadSystemPass16_clbk CNationSettingDataJPReadSystemPass16_user(nullptr);
-        info::CNationSettingDataJPSetUnitPassiveValue18_ptr CNationSettingDataJPSetUnitPassiveValue18_next(nullptr);
-        info::CNationSettingDataJPSetUnitPassiveValue18_clbk CNationSettingDataJPSetUnitPassiveValue18_user(nullptr);
+        static info::CNationSettingDataJPctor_CNationSettingDataJP2_ptr CNationSettingDataJPctor_CNationSettingDataJP2_next(nullptr);
+        static info::CNationSettingDataJPctor_CNationSettingDataJP2_clbk CNationSettingDataJPctor_CNationSettingDataJP2_user(nullptr);
+        static info::CNationSettingDataJPCreateBilling4_ptr CNationSettingDataJPCreateBilling4_next(nullptr);
+        static info::CNationSettingDataJPCreateBilling4_clbk CNationSettingDataJPCreateBilling4_user(nullptr);
+        static info::CNationSettingDataJPCreateWorker6_ptr CNationSettingDataJPCreateWorker6_next(nullptr);
+        static info::CNationSettingDataJPCreateWorker6_clbk CNationSettingDataJPCreateWorker6_user(nullptr);
+        static info::CNationSettingDataJPGetCashItemPrice8_ptr CNationSettingDataJPGetCashItemPrice8_next(nullptr);
+        static info::CNationSettingDataJPGetCashItemPrice8_clbk CNationSettingDataJPGetCashItemPrice8_user(nullptr);
+        static info::CNationSettingDataJPGetItemName10_ptr CNationSettingDataJPGetItemName10_next(nullptr);
+        static info::CNationSettingDataJPGetItemName10_clbk CNationSettingDataJPGetItemName10_user(nullptr);
+        static info::CNationSettingDataJPInit12_ptr CNationSettingDataJPInit12_next(nullptr);
+        static info::CNationSettingDataJPInit12_clbk CNationSettingDataJPInit12_user(nullptr);
+        static info::CNationSettingDataJPLoop14_ptr CNationSettingDataJPLoop14_next(nullptr);
+        static info::CNationSettingDataJPLoop14_clbk CNationSettingDataJPLoop14_user(nullptr);
+        static info::CNationSettingDataJPReadSystemPass16_ptr CNationSettingDataJPReadSystemPass16_next(nullptr);
+        static info::CNationSettingDataJPReadSystemPass16_clbk CNationSettingDataJPReadSystemPass16_user(nullptr);
+        static info::CNationSettingDataJPSetUnitPassiveValue18_ptr CNationSettingDataJPSetUnitPassiveValue18_next(nullptr);
+        static info::CNationSettingDataJPSetUnitPassiveValue18_clbk CNationSettingDataJPSetUnitPassiveValue18_user(nullptr);
         
-        void CNationSettingDataJPctor_CNationSettingDataJP2_wrapper(struct CNationSettingDataJP* _this)
+        static void CNationSettingDataJPctor_CNationSettingDataJP2_wrapper(struct CNationSettingDataJP* _this)
         {
            CNationSettingDataJPctor_CNationSettingDataJP2_user(_this, CNationSettingDataJPctor_CNationSettingDataJP2_next);
         };
-        struct CBilling* CNationSettingDataJPCreateBilling4_wrapper(struct CNationSettingDataJP* _this)
+        static struct CBilling* CNationSettingDataJPCreateBilling4_wrapper(struct CNationSettingDataJP* _this)
         {
            return CNationSettingDataJPCreateBilling4_user(_this, CNationSettingDataJPCreateBilling4_next);
         };
-        struct CashDbWorker* CNationSettingDataJPCreateWorker6_wrapper(struct CNationSettingDataJP* _this)
+        static struct CashDbWorker* CNationSettingDataJPCreateWorker6_wrapper(struct CNationSettingDataJP* _this)
         {
            return CNationSettingDataJPCreateWorker6_user(_this, CNationSettingDataJPCreateWorker6_next);
         };
-        int CNationSettingDataJPGetCashItemPrice8_wrapper(struct CNationSettingDataJP* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataJPGetCashItemPrice8_wrapper(struct CNationSettingDataJP* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataJPGetCashItemPrice8_user(_this, pFld, CNationSettingDataJPGetCashItemPrice8_next);
         };
-        char* CNationSettingDataJPGetItemName10_wrapper(struct CNationSettingDataJP* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataJPGetItemName10_wrapper(struct CNationSettingDataJP* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataJPGetItemName10_user(_this, pFld, CNationSettingDataJPGetItemName10_next);
         };
-        int CNationSettingDataJPInit12_wrapper(struct CNationSettingDataJP* _this)
+        static int CNationSettingDataJPInit12_wrapper(struct CNationSettingDataJP* _this)
         {
            return CNationSettingDataJPInit12_user(_this, CNationSettingDataJPInit12_next);
         };
-        void CNationSettingDataJPLoop14_wrapper(struct CNationSettingDataJP* _this)
+        static void CNationSettingDataJPLoop14_wrapper(struct CNationSettingDataJP* _this)
         {
            CNationSettingDataJPLoop14_user(_this, CNationSettingDataJPLoop14_next);
         };
-        bool CNationSettingDataJPReadSystemPass16_wrapper(struct CNationSettingDataJP* _this)
+        static bool CNationSettingDataJPReadSystemPass16_wrapper(struct CNationSettingDataJP* _this)
         {
            return CNationSettingDataJPReadSystemPass16_user(_this, CNationSettingDataJPReadSystemPass16_next);
         };
-        void CNationSettingDataJPSetUnitPassiveValue18_wrapper(struct CNationSettingDataJP* _this, float* fUnitPv_DefFc)
+        static void CNationSettingDataJPSetUnitPassiveValue18_wrapper(struct CNationSettingDataJP* _this, float* fUnitPv_DefFc)
         {
            CNationSettingDataJPSetUnitPassiveValue18_user(_this, fUnitPv_DefFc, CNationSettingDataJPSetUnitPassiveValue18_next);
         };
         
-        hook_record CNationSettingDataJP_functions[] = {
+        static hook_record CNationSettingDataJP_functions[] = {
         {   (LPVOID)0x14022d0c0L,
             (LPVOID *)&CNationSettingDataJPctor_CNationSettingDataJP2_user,
             (LPVOID *)&CNationSettingDataJPctor_CNationSettingDataJP2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

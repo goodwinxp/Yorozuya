@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_ptr CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_next(nullptr);
-        info::CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_clbk CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_user(nullptr);
-        info::CDarkHoleDungeonQuestCanOpenChannel4_ptr CDarkHoleDungeonQuestCanOpenChannel4_next(nullptr);
-        info::CDarkHoleDungeonQuestCanOpenChannel4_clbk CDarkHoleDungeonQuestCanOpenChannel4_user(nullptr);
-        info::CDarkHoleDungeonQuestCheckQuestOnLoop6_ptr CDarkHoleDungeonQuestCheckQuestOnLoop6_next(nullptr);
-        info::CDarkHoleDungeonQuestCheckQuestOnLoop6_clbk CDarkHoleDungeonQuestCheckQuestOnLoop6_user(nullptr);
-        info::CDarkHoleDungeonQuestGetChannel8_ptr CDarkHoleDungeonQuestGetChannel8_next(nullptr);
-        info::CDarkHoleDungeonQuestGetChannel8_clbk CDarkHoleDungeonQuestGetChannel8_user(nullptr);
-        info::CDarkHoleDungeonQuestLoadDarkHoleQuest10_ptr CDarkHoleDungeonQuestLoadDarkHoleQuest10_next(nullptr);
-        info::CDarkHoleDungeonQuestLoadDarkHoleQuest10_clbk CDarkHoleDungeonQuestLoadDarkHoleQuest10_user(nullptr);
-        info::CDarkHoleDungeonQuestOpenChannel12_ptr CDarkHoleDungeonQuestOpenChannel12_next(nullptr);
-        info::CDarkHoleDungeonQuestOpenChannel12_clbk CDarkHoleDungeonQuestOpenChannel12_user(nullptr);
-        info::CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_ptr CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_next(nullptr);
-        info::CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_clbk CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_user(nullptr);
-        info::CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_ptr CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_next(nullptr);
-        info::CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_clbk CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_user(nullptr);
-        info::CDarkHoleDungeonQuestSearchOncePlayedChannel18_ptr CDarkHoleDungeonQuestSearchOncePlayedChannel18_next(nullptr);
-        info::CDarkHoleDungeonQuestSearchOncePlayedChannel18_clbk CDarkHoleDungeonQuestSearchOncePlayedChannel18_user(nullptr);
-        info::CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_ptr CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_next(nullptr);
-        info::CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_clbk CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_user(nullptr);
+        static info::CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_ptr CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_next(nullptr);
+        static info::CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_clbk CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_user(nullptr);
+        static info::CDarkHoleDungeonQuestCanOpenChannel4_ptr CDarkHoleDungeonQuestCanOpenChannel4_next(nullptr);
+        static info::CDarkHoleDungeonQuestCanOpenChannel4_clbk CDarkHoleDungeonQuestCanOpenChannel4_user(nullptr);
+        static info::CDarkHoleDungeonQuestCheckQuestOnLoop6_ptr CDarkHoleDungeonQuestCheckQuestOnLoop6_next(nullptr);
+        static info::CDarkHoleDungeonQuestCheckQuestOnLoop6_clbk CDarkHoleDungeonQuestCheckQuestOnLoop6_user(nullptr);
+        static info::CDarkHoleDungeonQuestGetChannel8_ptr CDarkHoleDungeonQuestGetChannel8_next(nullptr);
+        static info::CDarkHoleDungeonQuestGetChannel8_clbk CDarkHoleDungeonQuestGetChannel8_user(nullptr);
+        static info::CDarkHoleDungeonQuestLoadDarkHoleQuest10_ptr CDarkHoleDungeonQuestLoadDarkHoleQuest10_next(nullptr);
+        static info::CDarkHoleDungeonQuestLoadDarkHoleQuest10_clbk CDarkHoleDungeonQuestLoadDarkHoleQuest10_user(nullptr);
+        static info::CDarkHoleDungeonQuestOpenChannel12_ptr CDarkHoleDungeonQuestOpenChannel12_next(nullptr);
+        static info::CDarkHoleDungeonQuestOpenChannel12_clbk CDarkHoleDungeonQuestOpenChannel12_user(nullptr);
+        static info::CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_ptr CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_next(nullptr);
+        static info::CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_clbk CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_user(nullptr);
+        static info::CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_ptr CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_next(nullptr);
+        static info::CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_clbk CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_user(nullptr);
+        static info::CDarkHoleDungeonQuestSearchOncePlayedChannel18_ptr CDarkHoleDungeonQuestSearchOncePlayedChannel18_next(nullptr);
+        static info::CDarkHoleDungeonQuestSearchOncePlayedChannel18_clbk CDarkHoleDungeonQuestSearchOncePlayedChannel18_user(nullptr);
+        static info::CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_ptr CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_next(nullptr);
+        static info::CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_clbk CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_user(nullptr);
         
-        void CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_wrapper(struct CDarkHoleDungeonQuest* _this)
+        static void CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_wrapper(struct CDarkHoleDungeonQuest* _this)
         {
            CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_user(_this, CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_next);
         };
-        struct CDarkHoleChannel* CDarkHoleDungeonQuestCanOpenChannel4_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex)
+        static struct CDarkHoleChannel* CDarkHoleDungeonQuestCanOpenChannel4_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex)
         {
            return CDarkHoleDungeonQuestCanOpenChannel4_user(_this, nQuestIndex, CDarkHoleDungeonQuestCanOpenChannel4_next);
         };
-        void CDarkHoleDungeonQuestCheckQuestOnLoop6_wrapper(struct CDarkHoleDungeonQuest* _this)
+        static void CDarkHoleDungeonQuestCheckQuestOnLoop6_wrapper(struct CDarkHoleDungeonQuest* _this)
         {
            CDarkHoleDungeonQuestCheckQuestOnLoop6_user(_this, CDarkHoleDungeonQuestCheckQuestOnLoop6_next);
         };
-        struct CDarkHoleChannel* CDarkHoleDungeonQuestGetChannel8_wrapper(struct CDarkHoleDungeonQuest* _this, unsigned int dwChannelIndex)
+        static struct CDarkHoleChannel* CDarkHoleDungeonQuestGetChannel8_wrapper(struct CDarkHoleDungeonQuest* _this, unsigned int dwChannelIndex)
         {
            return CDarkHoleDungeonQuestGetChannel8_user(_this, dwChannelIndex, CDarkHoleDungeonQuestGetChannel8_next);
         };
-        bool CDarkHoleDungeonQuestLoadDarkHoleQuest10_wrapper(struct CDarkHoleDungeonQuest* _this)
+        static bool CDarkHoleDungeonQuestLoadDarkHoleQuest10_wrapper(struct CDarkHoleDungeonQuest* _this)
         {
            return CDarkHoleDungeonQuestLoadDarkHoleQuest10_user(_this, CDarkHoleDungeonQuestLoadDarkHoleQuest10_next);
         };
-        struct CDarkHoleChannel* CDarkHoleDungeonQuestOpenChannel12_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex, struct CPlayer* pOpener, struct CDarkHole* pHoleObj)
+        static struct CDarkHoleChannel* CDarkHoleDungeonQuestOpenChannel12_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex, struct CPlayer* pOpener, struct CDarkHole* pHoleObj)
         {
            return CDarkHoleDungeonQuestOpenChannel12_user(_this, nQuestIndex, pOpener, pHoleObj, CDarkHoleDungeonQuestOpenChannel12_next);
         };
-        int CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_wrapper(struct CDarkHoleDungeonQuest* _this)
+        static int CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_wrapper(struct CDarkHoleDungeonQuest* _this)
         {
            return CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_user(_this, CDarkHoleDungeonQuestSearchEmptyDarkHoleChannel14_next);
         };
-        int CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex)
+        static int CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_wrapper(struct CDarkHoleDungeonQuest* _this, int nQuestIndex)
         {
            return CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_user(_this, nQuestIndex, CDarkHoleDungeonQuestSearchEmptyDarkHoleLayer16_next);
         };
-        struct CDarkHoleChannel* CDarkHoleDungeonQuestSearchOncePlayedChannel18_wrapper(struct CDarkHoleDungeonQuest* _this, unsigned int dwMemberSerial)
+        static struct CDarkHoleChannel* CDarkHoleDungeonQuestSearchOncePlayedChannel18_wrapper(struct CDarkHoleDungeonQuest* _this, unsigned int dwMemberSerial)
         {
            return CDarkHoleDungeonQuestSearchOncePlayedChannel18_user(_this, dwMemberSerial, CDarkHoleDungeonQuestSearchOncePlayedChannel18_next);
         };
-        void CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_wrapper(struct CDarkHoleDungeonQuest* _this)
+        static void CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_wrapper(struct CDarkHoleDungeonQuest* _this)
         {
            CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_user(_this, CDarkHoleDungeonQuestdtor_CDarkHoleDungeonQuest23_next);
         };
         
-        hook_record CDarkHoleDungeonQuest_functions[] = {
+        static hook_record CDarkHoleDungeonQuest_functions[] = {
         {   (LPVOID)0x140265eb0L,
             (LPVOID *)&CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_user,
             (LPVOID *)&CDarkHoleDungeonQuestctor_CDarkHoleDungeonQuest2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

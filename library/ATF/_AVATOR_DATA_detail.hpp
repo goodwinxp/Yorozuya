@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_AVATOR_DATAInitData2_ptr _AVATOR_DATAInitData2_next(nullptr);
-        info::_AVATOR_DATAInitData2_clbk _AVATOR_DATAInitData2_user(nullptr);
-        info::_AVATOR_DATAPostUpdateInit4_ptr _AVATOR_DATAPostUpdateInit4_next(nullptr);
-        info::_AVATOR_DATAPostUpdateInit4_clbk _AVATOR_DATAPostUpdateInit4_user(nullptr);
-        info::_AVATOR_DATActor__AVATOR_DATA6_ptr _AVATOR_DATActor__AVATOR_DATA6_next(nullptr);
-        info::_AVATOR_DATActor__AVATOR_DATA6_clbk _AVATOR_DATActor__AVATOR_DATA6_user(nullptr);
-        info::_AVATOR_DATAdtor__AVATOR_DATA8_ptr _AVATOR_DATAdtor__AVATOR_DATA8_next(nullptr);
-        info::_AVATOR_DATAdtor__AVATOR_DATA8_clbk _AVATOR_DATAdtor__AVATOR_DATA8_user(nullptr);
+        static info::_AVATOR_DATAInitData2_ptr _AVATOR_DATAInitData2_next(nullptr);
+        static info::_AVATOR_DATAInitData2_clbk _AVATOR_DATAInitData2_user(nullptr);
+        static info::_AVATOR_DATAPostUpdateInit4_ptr _AVATOR_DATAPostUpdateInit4_next(nullptr);
+        static info::_AVATOR_DATAPostUpdateInit4_clbk _AVATOR_DATAPostUpdateInit4_user(nullptr);
+        static info::_AVATOR_DATActor__AVATOR_DATA6_ptr _AVATOR_DATActor__AVATOR_DATA6_next(nullptr);
+        static info::_AVATOR_DATActor__AVATOR_DATA6_clbk _AVATOR_DATActor__AVATOR_DATA6_user(nullptr);
+        static info::_AVATOR_DATAdtor__AVATOR_DATA8_ptr _AVATOR_DATAdtor__AVATOR_DATA8_next(nullptr);
+        static info::_AVATOR_DATAdtor__AVATOR_DATA8_clbk _AVATOR_DATAdtor__AVATOR_DATA8_user(nullptr);
         
-        void _AVATOR_DATAInitData2_wrapper(struct _AVATOR_DATA* _this)
+        static void _AVATOR_DATAInitData2_wrapper(struct _AVATOR_DATA* _this)
         {
            _AVATOR_DATAInitData2_user(_this, _AVATOR_DATAInitData2_next);
         };
-        void _AVATOR_DATAPostUpdateInit4_wrapper(struct _AVATOR_DATA* _this)
+        static void _AVATOR_DATAPostUpdateInit4_wrapper(struct _AVATOR_DATA* _this)
         {
            _AVATOR_DATAPostUpdateInit4_user(_this, _AVATOR_DATAPostUpdateInit4_next);
         };
-        void _AVATOR_DATActor__AVATOR_DATA6_wrapper(struct _AVATOR_DATA* _this)
+        static void _AVATOR_DATActor__AVATOR_DATA6_wrapper(struct _AVATOR_DATA* _this)
         {
            _AVATOR_DATActor__AVATOR_DATA6_user(_this, _AVATOR_DATActor__AVATOR_DATA6_next);
         };
-        void _AVATOR_DATAdtor__AVATOR_DATA8_wrapper(struct _AVATOR_DATA* _this)
+        static void _AVATOR_DATAdtor__AVATOR_DATA8_wrapper(struct _AVATOR_DATA* _this)
         {
            _AVATOR_DATAdtor__AVATOR_DATA8_user(_this, _AVATOR_DATAdtor__AVATOR_DATA8_next);
         };
         
-        hook_record _AVATOR_DATA_functions[] = {
+        static hook_record _AVATOR_DATA_functions[] = {
         {   (LPVOID)0x140077a00L,
             (LPVOID *)&_AVATOR_DATAInitData2_user,
             (LPVOID *)&_AVATOR_DATAInitData2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

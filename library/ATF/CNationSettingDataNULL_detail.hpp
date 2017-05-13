@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationSettingDataNULLctor_CNationSettingDataNULL2_ptr CNationSettingDataNULLctor_CNationSettingDataNULL2_next(nullptr);
-        info::CNationSettingDataNULLctor_CNationSettingDataNULL2_clbk CNationSettingDataNULLctor_CNationSettingDataNULL2_user(nullptr);
-        info::CNationSettingDataNULLCheckEnterWorldRequest4_ptr CNationSettingDataNULLCheckEnterWorldRequest4_next(nullptr);
-        info::CNationSettingDataNULLCheckEnterWorldRequest4_clbk CNationSettingDataNULLCheckEnterWorldRequest4_user(nullptr);
-        info::CNationSettingDataNULLCreateBilling6_ptr CNationSettingDataNULLCreateBilling6_next(nullptr);
-        info::CNationSettingDataNULLCreateBilling6_clbk CNationSettingDataNULLCreateBilling6_user(nullptr);
-        info::CNationSettingDataNULLCreateComplete8_ptr CNationSettingDataNULLCreateComplete8_next(nullptr);
-        info::CNationSettingDataNULLCreateComplete8_clbk CNationSettingDataNULLCreateComplete8_user(nullptr);
-        info::CNationSettingDataNULLCreateWorker10_ptr CNationSettingDataNULLCreateWorker10_next(nullptr);
-        info::CNationSettingDataNULLCreateWorker10_clbk CNationSettingDataNULLCreateWorker10_user(nullptr);
-        info::CNationSettingDataNULLGetCashItemPrice12_ptr CNationSettingDataNULLGetCashItemPrice12_next(nullptr);
-        info::CNationSettingDataNULLGetCashItemPrice12_clbk CNationSettingDataNULLGetCashItemPrice12_user(nullptr);
-        info::CNationSettingDataNULLGetItemName14_ptr CNationSettingDataNULLGetItemName14_next(nullptr);
-        info::CNationSettingDataNULLGetItemName14_clbk CNationSettingDataNULLGetItemName14_user(nullptr);
-        info::CNationSettingDataNULLInit16_ptr CNationSettingDataNULLInit16_next(nullptr);
-        info::CNationSettingDataNULLInit16_clbk CNationSettingDataNULLInit16_user(nullptr);
-        info::CNationSettingDataNULLIsApplyPcbangPrimium18_ptr CNationSettingDataNULLIsApplyPcbangPrimium18_next(nullptr);
-        info::CNationSettingDataNULLIsApplyPcbangPrimium18_clbk CNationSettingDataNULLIsApplyPcbangPrimium18_user(nullptr);
-        info::CNationSettingDataNULLIsNormalChar20_ptr CNationSettingDataNULLIsNormalChar20_next(nullptr);
-        info::CNationSettingDataNULLIsNormalChar20_clbk CNationSettingDataNULLIsNormalChar20_user(nullptr);
-        info::CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_ptr CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_next(nullptr);
-        info::CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_clbk CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_user(nullptr);
-        info::CNationSettingDataNULLLoop24_ptr CNationSettingDataNULLLoop24_next(nullptr);
-        info::CNationSettingDataNULLLoop24_clbk CNationSettingDataNULLLoop24_user(nullptr);
-        info::CNationSettingDataNULLNetClose26_ptr CNationSettingDataNULLNetClose26_next(nullptr);
-        info::CNationSettingDataNULLNetClose26_clbk CNationSettingDataNULLNetClose26_user(nullptr);
-        info::CNationSettingDataNULLSendCashDBDSNRequest28_ptr CNationSettingDataNULLSendCashDBDSNRequest28_next(nullptr);
-        info::CNationSettingDataNULLSendCashDBDSNRequest28_clbk CNationSettingDataNULLSendCashDBDSNRequest28_user(nullptr);
-        info::CNationSettingDataNULLSetUnitPassiveValue30_ptr CNationSettingDataNULLSetUnitPassiveValue30_next(nullptr);
-        info::CNationSettingDataNULLSetUnitPassiveValue30_clbk CNationSettingDataNULLSetUnitPassiveValue30_user(nullptr);
-        info::CNationSettingDataNULLValidMacAddress32_ptr CNationSettingDataNULLValidMacAddress32_next(nullptr);
-        info::CNationSettingDataNULLValidMacAddress32_clbk CNationSettingDataNULLValidMacAddress32_user(nullptr);
-        info::CNationSettingDataNULLdtor_CNationSettingDataNULL34_ptr CNationSettingDataNULLdtor_CNationSettingDataNULL34_next(nullptr);
-        info::CNationSettingDataNULLdtor_CNationSettingDataNULL34_clbk CNationSettingDataNULLdtor_CNationSettingDataNULL34_user(nullptr);
+        static info::CNationSettingDataNULLctor_CNationSettingDataNULL2_ptr CNationSettingDataNULLctor_CNationSettingDataNULL2_next(nullptr);
+        static info::CNationSettingDataNULLctor_CNationSettingDataNULL2_clbk CNationSettingDataNULLctor_CNationSettingDataNULL2_user(nullptr);
+        static info::CNationSettingDataNULLCheckEnterWorldRequest4_ptr CNationSettingDataNULLCheckEnterWorldRequest4_next(nullptr);
+        static info::CNationSettingDataNULLCheckEnterWorldRequest4_clbk CNationSettingDataNULLCheckEnterWorldRequest4_user(nullptr);
+        static info::CNationSettingDataNULLCreateBilling6_ptr CNationSettingDataNULLCreateBilling6_next(nullptr);
+        static info::CNationSettingDataNULLCreateBilling6_clbk CNationSettingDataNULLCreateBilling6_user(nullptr);
+        static info::CNationSettingDataNULLCreateComplete8_ptr CNationSettingDataNULLCreateComplete8_next(nullptr);
+        static info::CNationSettingDataNULLCreateComplete8_clbk CNationSettingDataNULLCreateComplete8_user(nullptr);
+        static info::CNationSettingDataNULLCreateWorker10_ptr CNationSettingDataNULLCreateWorker10_next(nullptr);
+        static info::CNationSettingDataNULLCreateWorker10_clbk CNationSettingDataNULLCreateWorker10_user(nullptr);
+        static info::CNationSettingDataNULLGetCashItemPrice12_ptr CNationSettingDataNULLGetCashItemPrice12_next(nullptr);
+        static info::CNationSettingDataNULLGetCashItemPrice12_clbk CNationSettingDataNULLGetCashItemPrice12_user(nullptr);
+        static info::CNationSettingDataNULLGetItemName14_ptr CNationSettingDataNULLGetItemName14_next(nullptr);
+        static info::CNationSettingDataNULLGetItemName14_clbk CNationSettingDataNULLGetItemName14_user(nullptr);
+        static info::CNationSettingDataNULLInit16_ptr CNationSettingDataNULLInit16_next(nullptr);
+        static info::CNationSettingDataNULLInit16_clbk CNationSettingDataNULLInit16_user(nullptr);
+        static info::CNationSettingDataNULLIsApplyPcbangPrimium18_ptr CNationSettingDataNULLIsApplyPcbangPrimium18_next(nullptr);
+        static info::CNationSettingDataNULLIsApplyPcbangPrimium18_clbk CNationSettingDataNULLIsApplyPcbangPrimium18_user(nullptr);
+        static info::CNationSettingDataNULLIsNormalChar20_ptr CNationSettingDataNULLIsNormalChar20_next(nullptr);
+        static info::CNationSettingDataNULLIsNormalChar20_clbk CNationSettingDataNULLIsNormalChar20_user(nullptr);
+        static info::CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_ptr CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_next(nullptr);
+        static info::CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_clbk CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_user(nullptr);
+        static info::CNationSettingDataNULLLoop24_ptr CNationSettingDataNULLLoop24_next(nullptr);
+        static info::CNationSettingDataNULLLoop24_clbk CNationSettingDataNULLLoop24_user(nullptr);
+        static info::CNationSettingDataNULLNetClose26_ptr CNationSettingDataNULLNetClose26_next(nullptr);
+        static info::CNationSettingDataNULLNetClose26_clbk CNationSettingDataNULLNetClose26_user(nullptr);
+        static info::CNationSettingDataNULLSendCashDBDSNRequest28_ptr CNationSettingDataNULLSendCashDBDSNRequest28_next(nullptr);
+        static info::CNationSettingDataNULLSendCashDBDSNRequest28_clbk CNationSettingDataNULLSendCashDBDSNRequest28_user(nullptr);
+        static info::CNationSettingDataNULLSetUnitPassiveValue30_ptr CNationSettingDataNULLSetUnitPassiveValue30_next(nullptr);
+        static info::CNationSettingDataNULLSetUnitPassiveValue30_clbk CNationSettingDataNULLSetUnitPassiveValue30_user(nullptr);
+        static info::CNationSettingDataNULLValidMacAddress32_ptr CNationSettingDataNULLValidMacAddress32_next(nullptr);
+        static info::CNationSettingDataNULLValidMacAddress32_clbk CNationSettingDataNULLValidMacAddress32_user(nullptr);
+        static info::CNationSettingDataNULLdtor_CNationSettingDataNULL34_ptr CNationSettingDataNULLdtor_CNationSettingDataNULL34_next(nullptr);
+        static info::CNationSettingDataNULLdtor_CNationSettingDataNULL34_clbk CNationSettingDataNULLdtor_CNationSettingDataNULL34_user(nullptr);
         
-        void CNationSettingDataNULLctor_CNationSettingDataNULL2_wrapper(struct CNationSettingDataNULL* _this)
+        static void CNationSettingDataNULLctor_CNationSettingDataNULL2_wrapper(struct CNationSettingDataNULL* _this)
         {
            CNationSettingDataNULLctor_CNationSettingDataNULL2_user(_this, CNationSettingDataNULLctor_CNationSettingDataNULL2_next);
         };
-        bool CNationSettingDataNULLCheckEnterWorldRequest4_wrapper(struct CNationSettingDataNULL* _this, int n, char* pBuf)
+        static bool CNationSettingDataNULLCheckEnterWorldRequest4_wrapper(struct CNationSettingDataNULL* _this, int n, char* pBuf)
         {
            return CNationSettingDataNULLCheckEnterWorldRequest4_user(_this, n, pBuf, CNationSettingDataNULLCheckEnterWorldRequest4_next);
         };
-        struct CBilling* CNationSettingDataNULLCreateBilling6_wrapper(struct CNationSettingDataNULL* _this)
+        static struct CBilling* CNationSettingDataNULLCreateBilling6_wrapper(struct CNationSettingDataNULL* _this)
         {
            return CNationSettingDataNULLCreateBilling6_user(_this, CNationSettingDataNULLCreateBilling6_next);
         };
-        void CNationSettingDataNULLCreateComplete8_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pOne)
+        static void CNationSettingDataNULLCreateComplete8_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pOne)
         {
            CNationSettingDataNULLCreateComplete8_user(_this, pOne, CNationSettingDataNULLCreateComplete8_next);
         };
-        struct CashDbWorker* CNationSettingDataNULLCreateWorker10_wrapper(struct CNationSettingDataNULL* _this)
+        static struct CashDbWorker* CNationSettingDataNULLCreateWorker10_wrapper(struct CNationSettingDataNULL* _this)
         {
            return CNationSettingDataNULLCreateWorker10_user(_this, CNationSettingDataNULLCreateWorker10_next);
         };
-        int CNationSettingDataNULLGetCashItemPrice12_wrapper(struct CNationSettingDataNULL* _this, struct _CashShop_str_fld* pFld)
+        static int CNationSettingDataNULLGetCashItemPrice12_wrapper(struct CNationSettingDataNULL* _this, struct _CashShop_str_fld* pFld)
         {
            return CNationSettingDataNULLGetCashItemPrice12_user(_this, pFld, CNationSettingDataNULLGetCashItemPrice12_next);
         };
-        char* CNationSettingDataNULLGetItemName14_wrapper(struct CNationSettingDataNULL* _this, struct _NameTxt_fld* pFld)
+        static char* CNationSettingDataNULLGetItemName14_wrapper(struct CNationSettingDataNULL* _this, struct _NameTxt_fld* pFld)
         {
            return CNationSettingDataNULLGetItemName14_user(_this, pFld, CNationSettingDataNULLGetItemName14_next);
         };
-        int CNationSettingDataNULLInit16_wrapper(struct CNationSettingDataNULL* _this)
+        static int CNationSettingDataNULLInit16_wrapper(struct CNationSettingDataNULL* _this)
         {
            return CNationSettingDataNULLInit16_user(_this, CNationSettingDataNULLInit16_next);
         };
-        bool CNationSettingDataNULLIsApplyPcbangPrimium18_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pUser)
+        static bool CNationSettingDataNULLIsApplyPcbangPrimium18_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pUser)
         {
            return CNationSettingDataNULLIsApplyPcbangPrimium18_user(_this, pUser, CNationSettingDataNULLIsApplyPcbangPrimium18_next);
         };
-        bool CNationSettingDataNULLIsNormalChar20_wrapper(struct CNationSettingDataNULL* _this, wchar_t wcChar)
+        static bool CNationSettingDataNULLIsNormalChar20_wrapper(struct CNationSettingDataNULL* _this, wchar_t wcChar)
         {
            return CNationSettingDataNULLIsNormalChar20_user(_this, wcChar, CNationSettingDataNULLIsNormalChar20_next);
         };
-        bool CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_wrapper(struct CNationSettingDataNULL* _this, int16_t* pDest1, int16_t* pDest2)
+        static bool CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_wrapper(struct CNationSettingDataNULL* _this, int16_t* pDest1, int16_t* pDest2)
         {
            return CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_user(_this, pDest1, pDest2, CNationSettingDataNULLIsPersonalFreeFixedAmountBillingType22_next);
         };
-        void CNationSettingDataNULLLoop24_wrapper(struct CNationSettingDataNULL* _this)
+        static void CNationSettingDataNULLLoop24_wrapper(struct CNationSettingDataNULL* _this)
         {
            CNationSettingDataNULLLoop24_user(_this, CNationSettingDataNULLLoop24_next);
         };
-        void CNationSettingDataNULLNetClose26_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pOne)
+        static void CNationSettingDataNULLNetClose26_wrapper(struct CNationSettingDataNULL* _this, struct CPlayer* pOne)
         {
            CNationSettingDataNULLNetClose26_user(_this, pOne, CNationSettingDataNULLNetClose26_next);
         };
-        void CNationSettingDataNULLSendCashDBDSNRequest28_wrapper(struct CNationSettingDataNULL* _this)
+        static void CNationSettingDataNULLSendCashDBDSNRequest28_wrapper(struct CNationSettingDataNULL* _this)
         {
            CNationSettingDataNULLSendCashDBDSNRequest28_user(_this, CNationSettingDataNULLSendCashDBDSNRequest28_next);
         };
-        void CNationSettingDataNULLSetUnitPassiveValue30_wrapper(struct CNationSettingDataNULL* _this, float* fUnitPv_DefFc)
+        static void CNationSettingDataNULLSetUnitPassiveValue30_wrapper(struct CNationSettingDataNULL* _this, float* fUnitPv_DefFc)
         {
            CNationSettingDataNULLSetUnitPassiveValue30_user(_this, fUnitPv_DefFc, CNationSettingDataNULLSetUnitPassiveValue30_next);
         };
-        bool CNationSettingDataNULLValidMacAddress32_wrapper(struct CNationSettingDataNULL* _this)
+        static bool CNationSettingDataNULLValidMacAddress32_wrapper(struct CNationSettingDataNULL* _this)
         {
            return CNationSettingDataNULLValidMacAddress32_user(_this, CNationSettingDataNULLValidMacAddress32_next);
         };
-        void CNationSettingDataNULLdtor_CNationSettingDataNULL34_wrapper(struct CNationSettingDataNULL* _this)
+        static void CNationSettingDataNULLdtor_CNationSettingDataNULL34_wrapper(struct CNationSettingDataNULL* _this)
         {
            CNationSettingDataNULLdtor_CNationSettingDataNULL34_user(_this, CNationSettingDataNULLdtor_CNationSettingDataNULL34_next);
         };
         
-        hook_record CNationSettingDataNULL_functions[] = {
+        static hook_record CNationSettingDataNULL_functions[] = {
         {   (LPVOID)0x140212f50L,
             (LPVOID *)&CNationSettingDataNULLctor_CNationSettingDataNULL2_user,
             (LPVOID *)&CNationSettingDataNULLctor_CNationSettingDataNULL2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

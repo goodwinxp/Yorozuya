@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_ptr _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_next(nullptr);
-        info::_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_clbk _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_user(nullptr);
+        static info::_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_ptr _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_next(nullptr);
+        static info::_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_clbk _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_user(nullptr);
         
-        void _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_wrapper(struct _unit_pack_fill_result_zocl* _this)
+        static void _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_wrapper(struct _unit_pack_fill_result_zocl* _this)
         {
            _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_user(_this, _unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_next);
         };
         
-        hook_record _unit_pack_fill_result_zocl_functions[] = {
+        static hook_record _unit_pack_fill_result_zocl_functions[] = {
         {   (LPVOID)0x1400efa30L,
             (LPVOID *)&_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_user,
             (LPVOID *)&_unit_pack_fill_result_zoclctor__unit_pack_fill_result_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

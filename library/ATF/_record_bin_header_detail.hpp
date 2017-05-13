@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_record_bin_headerctor__record_bin_header2_ptr _record_bin_headerctor__record_bin_header2_next(nullptr);
-        info::_record_bin_headerctor__record_bin_header2_clbk _record_bin_headerctor__record_bin_header2_user(nullptr);
+        static info::_record_bin_headerctor__record_bin_header2_ptr _record_bin_headerctor__record_bin_header2_next(nullptr);
+        static info::_record_bin_headerctor__record_bin_header2_clbk _record_bin_headerctor__record_bin_header2_user(nullptr);
         
-        void _record_bin_headerctor__record_bin_header2_wrapper(struct _record_bin_header* _this)
+        static void _record_bin_headerctor__record_bin_header2_wrapper(struct _record_bin_header* _this)
         {
            _record_bin_headerctor__record_bin_header2_user(_this, _record_bin_headerctor__record_bin_header2_next);
         };
         
-        hook_record _record_bin_header_functions[] = {
+        static hook_record _record_bin_header_functions[] = {
         {   (LPVOID)0x140044720L,
             (LPVOID *)&_record_bin_headerctor__record_bin_header2_user,
             (LPVOID *)&_record_bin_headerctor__record_bin_header2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

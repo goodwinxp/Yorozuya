@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::SKILLGetDmg2_ptr SKILLGetDmg2_next(nullptr);
-        info::SKILLGetDmg2_clbk SKILLGetDmg2_user(nullptr);
-        info::SKILLInit4_ptr SKILLInit4_next(nullptr);
-        info::SKILLInit4_clbk SKILLInit4_user(nullptr);
-        info::SKILLctor_SKILL6_ptr SKILLctor_SKILL6_next(nullptr);
-        info::SKILLctor_SKILL6_clbk SKILLctor_SKILL6_user(nullptr);
+        static info::SKILLGetDmg2_ptr SKILLGetDmg2_next(nullptr);
+        static info::SKILLGetDmg2_clbk SKILLGetDmg2_user(nullptr);
+        static info::SKILLInit4_ptr SKILLInit4_next(nullptr);
+        static info::SKILLInit4_clbk SKILLInit4_user(nullptr);
+        static info::SKILLctor_SKILL6_ptr SKILLctor_SKILL6_next(nullptr);
+        static info::SKILLctor_SKILL6_clbk SKILLctor_SKILL6_user(nullptr);
         
-        int SKILLGetDmg2_wrapper(struct SKILL* _this, float fDamRate)
+        static int SKILLGetDmg2_wrapper(struct SKILL* _this, float fDamRate)
         {
            return SKILLGetDmg2_user(_this, fDamRate, SKILLGetDmg2_next);
         };
-        void SKILLInit4_wrapper(struct SKILL* _this, int type, int dmg, int minprob, int maxprob, int len, int castdelay, int delay, int el)
+        static void SKILLInit4_wrapper(struct SKILL* _this, int type, int dmg, int minprob, int maxprob, int len, int castdelay, int delay, int el)
         {
            SKILLInit4_user(_this, type, dmg, minprob, maxprob, len, castdelay, delay, el, SKILLInit4_next);
         };
-        void SKILLctor_SKILL6_wrapper(struct SKILL* _this)
+        static void SKILLctor_SKILL6_wrapper(struct SKILL* _this)
         {
            SKILLctor_SKILL6_user(_this, SKILLctor_SKILL6_next);
         };
         
-        hook_record SKILL_functions[] = {
+        static hook_record SKILL_functions[] = {
         {   (LPVOID)0x14012d250L,
             (LPVOID *)&SKILLGetDmg2_user,
             (LPVOID *)&SKILLGetDmg2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMoveMapLimitRightctor_CMoveMapLimitRight2_ptr CMoveMapLimitRightctor_CMoveMapLimitRight2_next(nullptr);
-        info::CMoveMapLimitRightctor_CMoveMapLimitRight2_clbk CMoveMapLimitRightctor_CMoveMapLimitRight2_user(nullptr);
-        info::CMoveMapLimitRightCleanUp4_ptr CMoveMapLimitRightCleanUp4_next(nullptr);
-        info::CMoveMapLimitRightCleanUp4_clbk CMoveMapLimitRightCleanUp4_user(nullptr);
-        info::CMoveMapLimitRightCreate6_ptr CMoveMapLimitRightCreate6_next(nullptr);
-        info::CMoveMapLimitRightCreate6_clbk CMoveMapLimitRightCreate6_user(nullptr);
-        info::CMoveMapLimitRightCreateComplete8_ptr CMoveMapLimitRightCreateComplete8_next(nullptr);
-        info::CMoveMapLimitRightCreateComplete8_clbk CMoveMapLimitRightCreateComplete8_user(nullptr);
-        info::CMoveMapLimitRightGetType10_ptr CMoveMapLimitRightGetType10_next(nullptr);
-        info::CMoveMapLimitRightGetType10_clbk CMoveMapLimitRightGetType10_user(nullptr);
-        info::CMoveMapLimitRightIsHaveRight12_ptr CMoveMapLimitRightIsHaveRight12_next(nullptr);
-        info::CMoveMapLimitRightIsHaveRight12_clbk CMoveMapLimitRightIsHaveRight12_user(nullptr);
-        info::CMoveMapLimitRightLoad14_ptr CMoveMapLimitRightLoad14_next(nullptr);
-        info::CMoveMapLimitRightLoad14_clbk CMoveMapLimitRightLoad14_user(nullptr);
-        info::CMoveMapLimitRightLogIn16_ptr CMoveMapLimitRightLogIn16_next(nullptr);
-        info::CMoveMapLimitRightLogIn16_clbk CMoveMapLimitRightLogIn16_user(nullptr);
-        info::CMoveMapLimitRightLogOut18_ptr CMoveMapLimitRightLogOut18_next(nullptr);
-        info::CMoveMapLimitRightLogOut18_clbk CMoveMapLimitRightLogOut18_user(nullptr);
-        info::CMoveMapLimitRightSetFlag20_ptr CMoveMapLimitRightSetFlag20_next(nullptr);
-        info::CMoveMapLimitRightSetFlag20_clbk CMoveMapLimitRightSetFlag20_user(nullptr);
-        info::CMoveMapLimitRightdtor_CMoveMapLimitRight24_ptr CMoveMapLimitRightdtor_CMoveMapLimitRight24_next(nullptr);
-        info::CMoveMapLimitRightdtor_CMoveMapLimitRight24_clbk CMoveMapLimitRightdtor_CMoveMapLimitRight24_user(nullptr);
+        static info::CMoveMapLimitRightctor_CMoveMapLimitRight2_ptr CMoveMapLimitRightctor_CMoveMapLimitRight2_next(nullptr);
+        static info::CMoveMapLimitRightctor_CMoveMapLimitRight2_clbk CMoveMapLimitRightctor_CMoveMapLimitRight2_user(nullptr);
+        static info::CMoveMapLimitRightCleanUp4_ptr CMoveMapLimitRightCleanUp4_next(nullptr);
+        static info::CMoveMapLimitRightCleanUp4_clbk CMoveMapLimitRightCleanUp4_user(nullptr);
+        static info::CMoveMapLimitRightCreate6_ptr CMoveMapLimitRightCreate6_next(nullptr);
+        static info::CMoveMapLimitRightCreate6_clbk CMoveMapLimitRightCreate6_user(nullptr);
+        static info::CMoveMapLimitRightCreateComplete8_ptr CMoveMapLimitRightCreateComplete8_next(nullptr);
+        static info::CMoveMapLimitRightCreateComplete8_clbk CMoveMapLimitRightCreateComplete8_user(nullptr);
+        static info::CMoveMapLimitRightGetType10_ptr CMoveMapLimitRightGetType10_next(nullptr);
+        static info::CMoveMapLimitRightGetType10_clbk CMoveMapLimitRightGetType10_user(nullptr);
+        static info::CMoveMapLimitRightIsHaveRight12_ptr CMoveMapLimitRightIsHaveRight12_next(nullptr);
+        static info::CMoveMapLimitRightIsHaveRight12_clbk CMoveMapLimitRightIsHaveRight12_user(nullptr);
+        static info::CMoveMapLimitRightLoad14_ptr CMoveMapLimitRightLoad14_next(nullptr);
+        static info::CMoveMapLimitRightLoad14_clbk CMoveMapLimitRightLoad14_user(nullptr);
+        static info::CMoveMapLimitRightLogIn16_ptr CMoveMapLimitRightLogIn16_next(nullptr);
+        static info::CMoveMapLimitRightLogIn16_clbk CMoveMapLimitRightLogIn16_user(nullptr);
+        static info::CMoveMapLimitRightLogOut18_ptr CMoveMapLimitRightLogOut18_next(nullptr);
+        static info::CMoveMapLimitRightLogOut18_clbk CMoveMapLimitRightLogOut18_user(nullptr);
+        static info::CMoveMapLimitRightSetFlag20_ptr CMoveMapLimitRightSetFlag20_next(nullptr);
+        static info::CMoveMapLimitRightSetFlag20_clbk CMoveMapLimitRightSetFlag20_user(nullptr);
+        static info::CMoveMapLimitRightdtor_CMoveMapLimitRight24_ptr CMoveMapLimitRightdtor_CMoveMapLimitRight24_next(nullptr);
+        static info::CMoveMapLimitRightdtor_CMoveMapLimitRight24_clbk CMoveMapLimitRightdtor_CMoveMapLimitRight24_user(nullptr);
         
-        void CMoveMapLimitRightctor_CMoveMapLimitRight2_wrapper(struct CMoveMapLimitRight* _this, int iType)
+        static void CMoveMapLimitRightctor_CMoveMapLimitRight2_wrapper(struct CMoveMapLimitRight* _this, int iType)
         {
            CMoveMapLimitRightctor_CMoveMapLimitRight2_user(_this, iType, CMoveMapLimitRightctor_CMoveMapLimitRight2_next);
         };
-        void CMoveMapLimitRightCleanUp4_wrapper(struct CMoveMapLimitRight* _this)
+        static void CMoveMapLimitRightCleanUp4_wrapper(struct CMoveMapLimitRight* _this)
         {
            CMoveMapLimitRightCleanUp4_user(_this, CMoveMapLimitRightCleanUp4_next);
         };
-        struct CMoveMapLimitRight* CMoveMapLimitRightCreate6_wrapper(int iType)
+        static struct CMoveMapLimitRight* CMoveMapLimitRightCreate6_wrapper(int iType)
         {
            return CMoveMapLimitRightCreate6_user(iType, CMoveMapLimitRightCreate6_next);
         };
-        void CMoveMapLimitRightCreateComplete8_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightCreateComplete8_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightCreateComplete8_user(_this, pkPlayer, CMoveMapLimitRightCreateComplete8_next);
         };
-        int CMoveMapLimitRightGetType10_wrapper(struct CMoveMapLimitRight* _this)
+        static int CMoveMapLimitRightGetType10_wrapper(struct CMoveMapLimitRight* _this)
         {
            return CMoveMapLimitRightGetType10_user(_this, CMoveMapLimitRightGetType10_next);
         };
-        bool CMoveMapLimitRightIsHaveRight12_wrapper(struct CMoveMapLimitRight* _this)
+        static bool CMoveMapLimitRightIsHaveRight12_wrapper(struct CMoveMapLimitRight* _this)
         {
            return CMoveMapLimitRightIsHaveRight12_user(_this, CMoveMapLimitRightIsHaveRight12_next);
         };
-        void CMoveMapLimitRightLoad14_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightLoad14_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightLoad14_user(_this, pkPlayer, CMoveMapLimitRightLoad14_next);
         };
-        void CMoveMapLimitRightLogIn16_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightLogIn16_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightLogIn16_user(_this, pkPlayer, CMoveMapLimitRightLogIn16_next);
         };
-        void CMoveMapLimitRightLogOut18_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightLogOut18_wrapper(struct CMoveMapLimitRight* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightLogOut18_user(_this, pkPlayer, CMoveMapLimitRightLogOut18_next);
         };
-        void CMoveMapLimitRightSetFlag20_wrapper(struct CMoveMapLimitRight* _this, int iType, bool bFlag)
+        static void CMoveMapLimitRightSetFlag20_wrapper(struct CMoveMapLimitRight* _this, int iType, bool bFlag)
         {
            CMoveMapLimitRightSetFlag20_user(_this, iType, bFlag, CMoveMapLimitRightSetFlag20_next);
         };
-        void CMoveMapLimitRightdtor_CMoveMapLimitRight24_wrapper(struct CMoveMapLimitRight* _this)
+        static void CMoveMapLimitRightdtor_CMoveMapLimitRight24_wrapper(struct CMoveMapLimitRight* _this)
         {
            CMoveMapLimitRightdtor_CMoveMapLimitRight24_user(_this, CMoveMapLimitRightdtor_CMoveMapLimitRight24_next);
         };
         
-        hook_record CMoveMapLimitRight_functions[] = {
+        static hook_record CMoveMapLimitRight_functions[] = {
         {   (LPVOID)0x1403ae460L,
             (LPVOID *)&CMoveMapLimitRightctor_CMoveMapLimitRight2_user,
             (LPVOID *)&CMoveMapLimitRightctor_CMoveMapLimitRight2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

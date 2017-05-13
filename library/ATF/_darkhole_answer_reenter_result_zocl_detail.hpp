@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_darkhole_answer_reenter_result_zoclsize2_ptr _darkhole_answer_reenter_result_zoclsize2_next(nullptr);
-        info::_darkhole_answer_reenter_result_zoclsize2_clbk _darkhole_answer_reenter_result_zoclsize2_user(nullptr);
+        static info::_darkhole_answer_reenter_result_zoclsize2_ptr _darkhole_answer_reenter_result_zoclsize2_next(nullptr);
+        static info::_darkhole_answer_reenter_result_zoclsize2_clbk _darkhole_answer_reenter_result_zoclsize2_user(nullptr);
         
-        int _darkhole_answer_reenter_result_zoclsize2_wrapper(struct _darkhole_answer_reenter_result_zocl* _this)
+        static int _darkhole_answer_reenter_result_zoclsize2_wrapper(struct _darkhole_answer_reenter_result_zocl* _this)
         {
            return _darkhole_answer_reenter_result_zoclsize2_user(_this, _darkhole_answer_reenter_result_zoclsize2_next);
         };
         
-        hook_record _darkhole_answer_reenter_result_zocl_functions[] = {
+        static hook_record _darkhole_answer_reenter_result_zocl_functions[] = {
         {   (LPVOID)0x1400efa10L,
             (LPVOID *)&_darkhole_answer_reenter_result_zoclsize2_user,
             (LPVOID *)&_darkhole_answer_reenter_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

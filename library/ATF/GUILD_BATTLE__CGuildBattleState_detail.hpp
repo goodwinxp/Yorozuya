@@ -10,51 +10,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_ptr GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_clbk GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateEnter4_ptr GUILD_BATTLE__CGuildBattleStateEnter4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateEnter4_clbk GUILD_BATTLE__CGuildBattleStateEnter4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateFin6_ptr GUILD_BATTLE__CGuildBattleStateFin6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateFin6_clbk GUILD_BATTLE__CGuildBattleStateFin6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateGetTerm8_ptr GUILD_BATTLE__CGuildBattleStateGetTerm8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateGetTerm8_clbk GUILD_BATTLE__CGuildBattleStateGetTerm8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateLog10_ptr GUILD_BATTLE__CGuildBattleStateLog10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateLog10_clbk GUILD_BATTLE__CGuildBattleStateLog10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateLoop12_ptr GUILD_BATTLE__CGuildBattleStateLoop12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStateLoop12_clbk GUILD_BATTLE__CGuildBattleStateLoop12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_ptr GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_clbk GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_ptr GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_clbk GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateEnter4_ptr GUILD_BATTLE__CGuildBattleStateEnter4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateEnter4_clbk GUILD_BATTLE__CGuildBattleStateEnter4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateFin6_ptr GUILD_BATTLE__CGuildBattleStateFin6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateFin6_clbk GUILD_BATTLE__CGuildBattleStateFin6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateGetTerm8_ptr GUILD_BATTLE__CGuildBattleStateGetTerm8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateGetTerm8_clbk GUILD_BATTLE__CGuildBattleStateGetTerm8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateLog10_ptr GUILD_BATTLE__CGuildBattleStateLog10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateLog10_clbk GUILD_BATTLE__CGuildBattleStateLog10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateLoop12_ptr GUILD_BATTLE__CGuildBattleStateLoop12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStateLoop12_clbk GUILD_BATTLE__CGuildBattleStateLoop12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_ptr GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_clbk GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this)
+            static void GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this)
             {
                GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_user(_this, GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateEnter4_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CGuildBattleStateEnter4_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CGuildBattleStateEnter4_user(_this, pkBattle, GUILD_BATTLE__CGuildBattleStateEnter4_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateFin6_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CGuildBattleStateFin6_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CGuildBattleStateFin6_user(_this, pkBattle, GUILD_BATTLE__CGuildBattleStateFin6_next);
             };
-            struct ATL::CTimeSpan* GUILD_BATTLE__CGuildBattleStateGetTerm8_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct ATL::CTimeSpan* result)
+            static struct ATL::CTimeSpan* GUILD_BATTLE__CGuildBattleStateGetTerm8_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct ATL::CTimeSpan* result)
             {
                return GUILD_BATTLE__CGuildBattleStateGetTerm8_user(_this, result, GUILD_BATTLE__CGuildBattleStateGetTerm8_next);
             };
-            void GUILD_BATTLE__CGuildBattleStateLog10_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, char* szMsg)
+            static void GUILD_BATTLE__CGuildBattleStateLog10_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, char* szMsg)
             {
                GUILD_BATTLE__CGuildBattleStateLog10_user(_this, szMsg, GUILD_BATTLE__CGuildBattleStateLog10_next);
             };
-            int GUILD_BATTLE__CGuildBattleStateLoop12_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CGuildBattleStateLoop12_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this, struct GUILD_BATTLE::CGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CGuildBattleStateLoop12_user(_this, pkBattle, GUILD_BATTLE__CGuildBattleStateLoop12_next);
             };
-            void GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this)
+            static void GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_wrapper(struct GUILD_BATTLE::CGuildBattleState* _this)
             {
                GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_user(_this, GUILD_BATTLE__CGuildBattleStatedtor_CGuildBattleState14_next);
             };
             
-            hook_record CGuildBattleState_functions[] = {
+            static hook_record CGuildBattleState_functions[] = {
             {   (LPVOID)0x1403dee30L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleStatector_CGuildBattleState2_next,
@@ -93,6 +93,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

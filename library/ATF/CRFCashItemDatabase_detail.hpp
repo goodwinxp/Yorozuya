@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRFCashItemDatabasector_CRFCashItemDatabase2_ptr CRFCashItemDatabasector_CRFCashItemDatabase2_next(nullptr);
-        info::CRFCashItemDatabasector_CRFCashItemDatabase2_clbk CRFCashItemDatabasector_CRFCashItemDatabase2_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_InsertCashItemLog4_ptr CRFCashItemDatabaseCallProc_InsertCashItemLog4_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_InsertCashItemLog4_clbk CRFCashItemDatabaseCallProc_InsertCashItemLog4_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_ptr CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_clbk CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_ptr CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_clbk CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAuth10_ptr CRFCashItemDatabaseCallProc_RFOnlineAuth10_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAuth10_clbk CRFCashItemDatabaseCallProc_RFOnlineAuth10_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_ptr CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_clbk CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_ptr CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_clbk CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineUse16_ptr CRFCashItemDatabaseCallProc_RFOnlineUse16_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineUse16_clbk CRFCashItemDatabaseCallProc_RFOnlineUse16_user(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_ptr CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_next(nullptr);
-        info::CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_clbk CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_user(nullptr);
-        info::CRFCashItemDatabasedhRExtractSubString23_ptr CRFCashItemDatabasedhRExtractSubString23_next(nullptr);
-        info::CRFCashItemDatabasedhRExtractSubString23_clbk CRFCashItemDatabasedhRExtractSubString23_user(nullptr);
-        info::CRFCashItemDatabasedtor_CRFCashItemDatabase25_ptr CRFCashItemDatabasedtor_CRFCashItemDatabase25_next(nullptr);
-        info::CRFCashItemDatabasedtor_CRFCashItemDatabase25_clbk CRFCashItemDatabasedtor_CRFCashItemDatabase25_user(nullptr);
+        static info::CRFCashItemDatabasector_CRFCashItemDatabase2_ptr CRFCashItemDatabasector_CRFCashItemDatabase2_next(nullptr);
+        static info::CRFCashItemDatabasector_CRFCashItemDatabase2_clbk CRFCashItemDatabasector_CRFCashItemDatabase2_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_InsertCashItemLog4_ptr CRFCashItemDatabaseCallProc_InsertCashItemLog4_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_InsertCashItemLog4_clbk CRFCashItemDatabaseCallProc_InsertCashItemLog4_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_ptr CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_clbk CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_ptr CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_clbk CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAuth10_ptr CRFCashItemDatabaseCallProc_RFOnlineAuth10_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAuth10_clbk CRFCashItemDatabaseCallProc_RFOnlineAuth10_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_ptr CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_clbk CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_ptr CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_clbk CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineUse16_ptr CRFCashItemDatabaseCallProc_RFOnlineUse16_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineUse16_clbk CRFCashItemDatabaseCallProc_RFOnlineUse16_user(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_ptr CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_next(nullptr);
+        static info::CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_clbk CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_user(nullptr);
+        static info::CRFCashItemDatabasedhRExtractSubString23_ptr CRFCashItemDatabasedhRExtractSubString23_next(nullptr);
+        static info::CRFCashItemDatabasedhRExtractSubString23_clbk CRFCashItemDatabasedhRExtractSubString23_user(nullptr);
+        static info::CRFCashItemDatabasedtor_CRFCashItemDatabase25_ptr CRFCashItemDatabasedtor_CRFCashItemDatabase25_next(nullptr);
+        static info::CRFCashItemDatabasedtor_CRFCashItemDatabase25_clbk CRFCashItemDatabasedtor_CRFCashItemDatabase25_user(nullptr);
         
-        void CRFCashItemDatabasector_CRFCashItemDatabase2_wrapper(struct CRFCashItemDatabase* _this)
+        static void CRFCashItemDatabasector_CRFCashItemDatabase2_wrapper(struct CRFCashItemDatabase* _this)
         {
            CRFCashItemDatabasector_CRFCashItemDatabase2_user(_this, CRFCashItemDatabasector_CRFCashItemDatabase2_next);
         };
-        bool CRFCashItemDatabaseCallProc_InsertCashItemLog4_wrapper(struct CRFCashItemDatabase* _this, unsigned int dwSerial, char byLv, char* szItemCode, char* szItemName, char byNum, unsigned int dwCost)
+        static bool CRFCashItemDatabaseCallProc_InsertCashItemLog4_wrapper(struct CRFCashItemDatabase* _this, unsigned int dwSerial, char byLv, char* szItemCode, char* szItemName, char byNum, unsigned int dwCost)
         {
            return CRFCashItemDatabaseCallProc_InsertCashItemLog4_user(_this, dwSerial, byLv, szItemCode, szItemName, byNum, dwCost, CRFCashItemDatabaseCallProc_InsertCashItemLog4_next);
         };
-        int CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_rollback::__list* list)
+        static int CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_rollback::__list* list)
         {
            return CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_user(_this, list, CRFCashItemDatabaseCallProc_RFONLINE_Cancel6_next);
         };
-        int CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_rollback* list, int iIndex)
+        static int CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_rollback* list, int iIndex)
         {
            return CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_user(_this, list, iIndex, CRFCashItemDatabaseCallProc_RFONLINE_Cancel_Jap8_next);
         };
-        int CRFCashItemDatabaseCallProc_RFOnlineAuth10_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_select* rParam)
+        static int CRFCashItemDatabaseCallProc_RFOnlineAuth10_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_select* rParam)
         {
            return CRFCashItemDatabaseCallProc_RFOnlineAuth10_user(_this, rParam, CRFCashItemDatabaseCallProc_RFOnlineAuth10_next);
         };
-        int CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_select* rParam)
+        static int CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_select* rParam)
         {
            return CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_user(_this, rParam, CRFCashItemDatabaseCallProc_RFOnlineAuth_Jap12_next);
         };
-        int CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_wrapper(struct CRFCashItemDatabase* _this, unsigned int* iAvgCashSelling)
+        static int CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_wrapper(struct CRFCashItemDatabase* _this, unsigned int* iAvgCashSelling)
         {
            return CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_user(_this, iAvgCashSelling, CRFCashItemDatabaseCallProc_RFOnlineAvg_Event14_next);
         };
-        int CRFCashItemDatabaseCallProc_RFOnlineUse16_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_update* rParam, int nIdx)
+        static int CRFCashItemDatabaseCallProc_RFOnlineUse16_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_update* rParam, int nIdx)
         {
            return CRFCashItemDatabaseCallProc_RFOnlineUse16_user(_this, rParam, nIdx, CRFCashItemDatabaseCallProc_RFOnlineUse16_next);
         };
-        int CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_update* rParam, int nIdx)
+        static int CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_wrapper(struct CRFCashItemDatabase* _this, struct _param_cash_update* rParam, int nIdx)
         {
            return CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_user(_this, rParam, nIdx, CRFCashItemDatabaseCallProc_RFOnlineUse_Jap18_next);
         };
-        void CRFCashItemDatabasedhRExtractSubString23_wrapper(struct CRFCashItemDatabase* _this, char* szSub, char* szFull, int n)
+        static void CRFCashItemDatabasedhRExtractSubString23_wrapper(struct CRFCashItemDatabase* _this, char* szSub, char* szFull, int n)
         {
            CRFCashItemDatabasedhRExtractSubString23_user(_this, szSub, szFull, n, CRFCashItemDatabasedhRExtractSubString23_next);
         };
-        void CRFCashItemDatabasedtor_CRFCashItemDatabase25_wrapper(struct CRFCashItemDatabase* _this)
+        static void CRFCashItemDatabasedtor_CRFCashItemDatabase25_wrapper(struct CRFCashItemDatabase* _this)
         {
            CRFCashItemDatabasedtor_CRFCashItemDatabase25_user(_this, CRFCashItemDatabasedtor_CRFCashItemDatabase25_next);
         };
         
-        hook_record CRFCashItemDatabase_functions[] = {
+        static hook_record CRFCashItemDatabase_functions[] = {
         {   (LPVOID)0x1402f2ae0L,
             (LPVOID *)&CRFCashItemDatabasector_CRFCashItemDatabase2_user,
             (LPVOID *)&CRFCashItemDatabasector_CRFCashItemDatabase2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

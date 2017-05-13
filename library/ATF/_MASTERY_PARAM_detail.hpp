@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_MASTERY_PARAMAlterCumPerMast2_ptr _MASTERY_PARAMAlterCumPerMast2_next(nullptr);
-        info::_MASTERY_PARAMAlterCumPerMast2_clbk _MASTERY_PARAMAlterCumPerMast2_user(nullptr);
-        info::_MASTERY_PARAMGetAveForceMasteryPerClass4_ptr _MASTERY_PARAMGetAveForceMasteryPerClass4_next(nullptr);
-        info::_MASTERY_PARAMGetAveForceMasteryPerClass4_clbk _MASTERY_PARAMGetAveForceMasteryPerClass4_user(nullptr);
-        info::_MASTERY_PARAMGetAveSkillMasteryPerClass6_ptr _MASTERY_PARAMGetAveSkillMasteryPerClass6_next(nullptr);
-        info::_MASTERY_PARAMGetAveSkillMasteryPerClass6_clbk _MASTERY_PARAMGetAveSkillMasteryPerClass6_user(nullptr);
-        info::_MASTERY_PARAMGetCumPerMast8_ptr _MASTERY_PARAMGetCumPerMast8_next(nullptr);
-        info::_MASTERY_PARAMGetCumPerMast8_clbk _MASTERY_PARAMGetCumPerMast8_user(nullptr);
-        info::_MASTERY_PARAMGetEquipMastery10_ptr _MASTERY_PARAMGetEquipMastery10_next(nullptr);
-        info::_MASTERY_PARAMGetEquipMastery10_clbk _MASTERY_PARAMGetEquipMastery10_user(nullptr);
-        info::_MASTERY_PARAMGetMasteryPerMast12_ptr _MASTERY_PARAMGetMasteryPerMast12_next(nullptr);
-        info::_MASTERY_PARAMGetMasteryPerMast12_clbk _MASTERY_PARAMGetMasteryPerMast12_user(nullptr);
-        info::_MASTERY_PARAMGetSkillLv14_ptr _MASTERY_PARAMGetSkillLv14_next(nullptr);
-        info::_MASTERY_PARAMGetSkillLv14_clbk _MASTERY_PARAMGetSkillLv14_user(nullptr);
-        info::_MASTERY_PARAMInit16_ptr _MASTERY_PARAMInit16_next(nullptr);
-        info::_MASTERY_PARAMInit16_clbk _MASTERY_PARAMInit16_user(nullptr);
-        info::_MASTERY_PARAMIsValidMasteryCode18_ptr _MASTERY_PARAMIsValidMasteryCode18_next(nullptr);
-        info::_MASTERY_PARAMIsValidMasteryCode18_clbk _MASTERY_PARAMIsValidMasteryCode18_user(nullptr);
-        info::_MASTERY_PARAMSetStaticMember20_ptr _MASTERY_PARAMSetStaticMember20_next(nullptr);
-        info::_MASTERY_PARAMSetStaticMember20_clbk _MASTERY_PARAMSetStaticMember20_user(nullptr);
-        info::_MASTERY_PARAMUpdateCumPerMast22_ptr _MASTERY_PARAMUpdateCumPerMast22_next(nullptr);
-        info::_MASTERY_PARAMUpdateCumPerMast22_clbk _MASTERY_PARAMUpdateCumPerMast22_user(nullptr);
-        info::_MASTERY_PARAMctor__MASTERY_PARAM24_ptr _MASTERY_PARAMctor__MASTERY_PARAM24_next(nullptr);
-        info::_MASTERY_PARAMctor__MASTERY_PARAM24_clbk _MASTERY_PARAMctor__MASTERY_PARAM24_user(nullptr);
+        static info::_MASTERY_PARAMAlterCumPerMast2_ptr _MASTERY_PARAMAlterCumPerMast2_next(nullptr);
+        static info::_MASTERY_PARAMAlterCumPerMast2_clbk _MASTERY_PARAMAlterCumPerMast2_user(nullptr);
+        static info::_MASTERY_PARAMGetAveForceMasteryPerClass4_ptr _MASTERY_PARAMGetAveForceMasteryPerClass4_next(nullptr);
+        static info::_MASTERY_PARAMGetAveForceMasteryPerClass4_clbk _MASTERY_PARAMGetAveForceMasteryPerClass4_user(nullptr);
+        static info::_MASTERY_PARAMGetAveSkillMasteryPerClass6_ptr _MASTERY_PARAMGetAveSkillMasteryPerClass6_next(nullptr);
+        static info::_MASTERY_PARAMGetAveSkillMasteryPerClass6_clbk _MASTERY_PARAMGetAveSkillMasteryPerClass6_user(nullptr);
+        static info::_MASTERY_PARAMGetCumPerMast8_ptr _MASTERY_PARAMGetCumPerMast8_next(nullptr);
+        static info::_MASTERY_PARAMGetCumPerMast8_clbk _MASTERY_PARAMGetCumPerMast8_user(nullptr);
+        static info::_MASTERY_PARAMGetEquipMastery10_ptr _MASTERY_PARAMGetEquipMastery10_next(nullptr);
+        static info::_MASTERY_PARAMGetEquipMastery10_clbk _MASTERY_PARAMGetEquipMastery10_user(nullptr);
+        static info::_MASTERY_PARAMGetMasteryPerMast12_ptr _MASTERY_PARAMGetMasteryPerMast12_next(nullptr);
+        static info::_MASTERY_PARAMGetMasteryPerMast12_clbk _MASTERY_PARAMGetMasteryPerMast12_user(nullptr);
+        static info::_MASTERY_PARAMGetSkillLv14_ptr _MASTERY_PARAMGetSkillLv14_next(nullptr);
+        static info::_MASTERY_PARAMGetSkillLv14_clbk _MASTERY_PARAMGetSkillLv14_user(nullptr);
+        static info::_MASTERY_PARAMInit16_ptr _MASTERY_PARAMInit16_next(nullptr);
+        static info::_MASTERY_PARAMInit16_clbk _MASTERY_PARAMInit16_user(nullptr);
+        static info::_MASTERY_PARAMIsValidMasteryCode18_ptr _MASTERY_PARAMIsValidMasteryCode18_next(nullptr);
+        static info::_MASTERY_PARAMIsValidMasteryCode18_clbk _MASTERY_PARAMIsValidMasteryCode18_user(nullptr);
+        static info::_MASTERY_PARAMSetStaticMember20_ptr _MASTERY_PARAMSetStaticMember20_next(nullptr);
+        static info::_MASTERY_PARAMSetStaticMember20_clbk _MASTERY_PARAMSetStaticMember20_user(nullptr);
+        static info::_MASTERY_PARAMUpdateCumPerMast22_ptr _MASTERY_PARAMUpdateCumPerMast22_next(nullptr);
+        static info::_MASTERY_PARAMUpdateCumPerMast22_clbk _MASTERY_PARAMUpdateCumPerMast22_user(nullptr);
+        static info::_MASTERY_PARAMctor__MASTERY_PARAM24_ptr _MASTERY_PARAMctor__MASTERY_PARAM24_next(nullptr);
+        static info::_MASTERY_PARAMctor__MASTERY_PARAM24_clbk _MASTERY_PARAMctor__MASTERY_PARAM24_user(nullptr);
         
-        bool _MASTERY_PARAMAlterCumPerMast2_wrapper(struct _MASTERY_PARAM* _this, char byClass, char byIndex, unsigned int dwAlterCum, unsigned int* pdwAfterCum)
+        static bool _MASTERY_PARAMAlterCumPerMast2_wrapper(struct _MASTERY_PARAM* _this, char byClass, char byIndex, unsigned int dwAlterCum, unsigned int* pdwAfterCum)
         {
            return _MASTERY_PARAMAlterCumPerMast2_user(_this, byClass, byIndex, dwAlterCum, pdwAfterCum, _MASTERY_PARAMAlterCumPerMast2_next);
         };
-        float _MASTERY_PARAMGetAveForceMasteryPerClass4_wrapper(struct _MASTERY_PARAM* _this, char byClass)
+        static float _MASTERY_PARAMGetAveForceMasteryPerClass4_wrapper(struct _MASTERY_PARAM* _this, char byClass)
         {
            return _MASTERY_PARAMGetAveForceMasteryPerClass4_user(_this, byClass, _MASTERY_PARAMGetAveForceMasteryPerClass4_next);
         };
-        float _MASTERY_PARAMGetAveSkillMasteryPerClass6_wrapper(struct _MASTERY_PARAM* _this, char byClass)
+        static float _MASTERY_PARAMGetAveSkillMasteryPerClass6_wrapper(struct _MASTERY_PARAM* _this, char byClass)
         {
            return _MASTERY_PARAMGetAveSkillMasteryPerClass6_user(_this, byClass, _MASTERY_PARAMGetAveSkillMasteryPerClass6_next);
         };
-        int _MASTERY_PARAMGetCumPerMast8_wrapper(struct _MASTERY_PARAM* _this, char byCode, char byMast)
+        static int _MASTERY_PARAMGetCumPerMast8_wrapper(struct _MASTERY_PARAM* _this, char byCode, char byMast)
         {
            return _MASTERY_PARAMGetCumPerMast8_user(_this, byCode, byMast, _MASTERY_PARAMGetCumPerMast8_next);
         };
-        char _MASTERY_PARAMGetEquipMastery10_wrapper(struct _MASTERY_PARAM* _this, int nEquipMasteryCode)
+        static char _MASTERY_PARAMGetEquipMastery10_wrapper(struct _MASTERY_PARAM* _this, int nEquipMasteryCode)
         {
            return _MASTERY_PARAMGetEquipMastery10_user(_this, nEquipMasteryCode, _MASTERY_PARAMGetEquipMastery10_next);
         };
-        int _MASTERY_PARAMGetMasteryPerMast12_wrapper(struct _MASTERY_PARAM* _this, char byCode, char byMast)
+        static int _MASTERY_PARAMGetMasteryPerMast12_wrapper(struct _MASTERY_PARAM* _this, char byCode, char byMast)
         {
            return _MASTERY_PARAMGetMasteryPerMast12_user(_this, byCode, byMast, _MASTERY_PARAMGetMasteryPerMast12_next);
         };
-        int _MASTERY_PARAMGetSkillLv14_wrapper(struct _MASTERY_PARAM* _this, char bySkillIndex)
+        static int _MASTERY_PARAMGetSkillLv14_wrapper(struct _MASTERY_PARAM* _this, char bySkillIndex)
         {
            return _MASTERY_PARAMGetSkillLv14_user(_this, bySkillIndex, _MASTERY_PARAMGetSkillLv14_next);
         };
-        bool _MASTERY_PARAMInit16_wrapper(struct _MASTERY_PARAM* _this, struct _STAT_DB_BASE* pStatBase, char byRaceCode)
+        static bool _MASTERY_PARAMInit16_wrapper(struct _MASTERY_PARAM* _this, struct _STAT_DB_BASE* pStatBase, char byRaceCode)
         {
            return _MASTERY_PARAMInit16_user(_this, pStatBase, byRaceCode, _MASTERY_PARAMInit16_next);
         };
-        bool _MASTERY_PARAMIsValidMasteryCode18_wrapper(char byCode, char byIndex)
+        static bool _MASTERY_PARAMIsValidMasteryCode18_wrapper(char byCode, char byIndex)
         {
            return _MASTERY_PARAMIsValidMasteryCode18_user(byCode, byIndex, _MASTERY_PARAMIsValidMasteryCode18_next);
         };
-        void _MASTERY_PARAMSetStaticMember20_wrapper(struct CRecordData* pSkillData, struct CRecordData* pForceData)
+        static void _MASTERY_PARAMSetStaticMember20_wrapper(struct CRecordData* pSkillData, struct CRecordData* pForceData)
         {
            _MASTERY_PARAMSetStaticMember20_user(pSkillData, pForceData, _MASTERY_PARAMSetStaticMember20_next);
         };
-        void _MASTERY_PARAMUpdateCumPerMast22_wrapper(struct _MASTERY_PARAM* _this, char byClass, char byIndex, unsigned int dwNewCum)
+        static void _MASTERY_PARAMUpdateCumPerMast22_wrapper(struct _MASTERY_PARAM* _this, char byClass, char byIndex, unsigned int dwNewCum)
         {
            _MASTERY_PARAMUpdateCumPerMast22_user(_this, byClass, byIndex, dwNewCum, _MASTERY_PARAMUpdateCumPerMast22_next);
         };
-        void _MASTERY_PARAMctor__MASTERY_PARAM24_wrapper(struct _MASTERY_PARAM* _this)
+        static void _MASTERY_PARAMctor__MASTERY_PARAM24_wrapper(struct _MASTERY_PARAM* _this)
         {
            _MASTERY_PARAMctor__MASTERY_PARAM24_user(_this, _MASTERY_PARAMctor__MASTERY_PARAM24_next);
         };
         
-        hook_record _MASTERY_PARAM_functions[] = {
+        static hook_record _MASTERY_PARAM_functions[] = {
         {   (LPVOID)0x14007c770L,
             (LPVOID *)&_MASTERY_PARAMAlterCumPerMast2_user,
             (LPVOID *)&_MASTERY_PARAMAlterCumPerMast2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,119 +8,119 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CEquipItemSFAgentAllEndContSF2_ptr CEquipItemSFAgentAllEndContSF2_next(nullptr);
-        info::CEquipItemSFAgentAllEndContSF2_clbk CEquipItemSFAgentAllEndContSF2_user(nullptr);
-        info::CEquipItemSFAgentctor_CEquipItemSFAgent4_ptr CEquipItemSFAgentctor_CEquipItemSFAgent4_next(nullptr);
-        info::CEquipItemSFAgentctor_CEquipItemSFAgent4_clbk CEquipItemSFAgentctor_CEquipItemSFAgent4_user(nullptr);
-        info::CEquipItemSFAgentEndContSF6_ptr CEquipItemSFAgentEndContSF6_next(nullptr);
-        info::CEquipItemSFAgentEndContSF6_clbk CEquipItemSFAgentEndContSF6_user(nullptr);
-        info::CEquipItemSFAgentGetBoosterAddSpeed8_ptr CEquipItemSFAgentGetBoosterAddSpeed8_next(nullptr);
-        info::CEquipItemSFAgentGetBoosterAddSpeed8_clbk CEquipItemSFAgentGetBoosterAddSpeed8_user(nullptr);
-        info::CEquipItemSFAgentGetEquip10_ptr CEquipItemSFAgentGetEquip10_next(nullptr);
-        info::CEquipItemSFAgentGetEquip10_clbk CEquipItemSFAgentGetEquip10_user(nullptr);
-        info::CEquipItemSFAgentGetEquipSFCont12_ptr CEquipItemSFAgentGetEquipSFCont12_next(nullptr);
-        info::CEquipItemSFAgentGetEquipSFCont12_clbk CEquipItemSFAgentGetEquipSFCont12_user(nullptr);
-        info::CEquipItemSFAgentGetRequireSFSlot14_ptr CEquipItemSFAgentGetRequireSFSlot14_next(nullptr);
-        info::CEquipItemSFAgentGetRequireSFSlot14_clbk CEquipItemSFAgentGetRequireSFSlot14_user(nullptr);
-        info::CEquipItemSFAgentInit16_ptr CEquipItemSFAgentInit16_next(nullptr);
-        info::CEquipItemSFAgentInit16_clbk CEquipItemSFAgentInit16_user(nullptr);
-        info::CEquipItemSFAgentIsEnableSkill18_ptr CEquipItemSFAgentIsEnableSkill18_next(nullptr);
-        info::CEquipItemSFAgentIsEnableSkill18_clbk CEquipItemSFAgentIsEnableSkill18_user(nullptr);
-        info::CEquipItemSFAgentIsEnableSkill20_ptr CEquipItemSFAgentIsEnableSkill20_next(nullptr);
-        info::CEquipItemSFAgentIsEnableSkill20_clbk CEquipItemSFAgentIsEnableSkill20_user(nullptr);
-        info::CEquipItemSFAgentIsUseBooster22_ptr CEquipItemSFAgentIsUseBooster22_next(nullptr);
-        info::CEquipItemSFAgentIsUseBooster22_clbk CEquipItemSFAgentIsUseBooster22_user(nullptr);
-        info::CEquipItemSFAgentReleaseSFCont24_ptr CEquipItemSFAgentReleaseSFCont24_next(nullptr);
-        info::CEquipItemSFAgentReleaseSFCont24_clbk CEquipItemSFAgentReleaseSFCont24_user(nullptr);
-        info::CEquipItemSFAgentSearchItemAddSpeed26_ptr CEquipItemSFAgentSearchItemAddSpeed26_next(nullptr);
-        info::CEquipItemSFAgentSearchItemAddSpeed26_clbk CEquipItemSFAgentSearchItemAddSpeed26_user(nullptr);
-        info::CEquipItemSFAgentSetSFCont28_ptr CEquipItemSFAgentSetSFCont28_next(nullptr);
-        info::CEquipItemSFAgentSetSFCont28_clbk CEquipItemSFAgentSetSFCont28_user(nullptr);
-        info::CEquipItemSFAgentStartContSF30_ptr CEquipItemSFAgentStartContSF30_next(nullptr);
-        info::CEquipItemSFAgentStartContSF30_clbk CEquipItemSFAgentStartContSF30_user(nullptr);
-        info::CEquipItemSFAgentdtor_CEquipItemSFAgent32_ptr CEquipItemSFAgentdtor_CEquipItemSFAgent32_next(nullptr);
-        info::CEquipItemSFAgentdtor_CEquipItemSFAgent32_clbk CEquipItemSFAgentdtor_CEquipItemSFAgent32_user(nullptr);
+        static info::CEquipItemSFAgentAllEndContSF2_ptr CEquipItemSFAgentAllEndContSF2_next(nullptr);
+        static info::CEquipItemSFAgentAllEndContSF2_clbk CEquipItemSFAgentAllEndContSF2_user(nullptr);
+        static info::CEquipItemSFAgentctor_CEquipItemSFAgent4_ptr CEquipItemSFAgentctor_CEquipItemSFAgent4_next(nullptr);
+        static info::CEquipItemSFAgentctor_CEquipItemSFAgent4_clbk CEquipItemSFAgentctor_CEquipItemSFAgent4_user(nullptr);
+        static info::CEquipItemSFAgentEndContSF6_ptr CEquipItemSFAgentEndContSF6_next(nullptr);
+        static info::CEquipItemSFAgentEndContSF6_clbk CEquipItemSFAgentEndContSF6_user(nullptr);
+        static info::CEquipItemSFAgentGetBoosterAddSpeed8_ptr CEquipItemSFAgentGetBoosterAddSpeed8_next(nullptr);
+        static info::CEquipItemSFAgentGetBoosterAddSpeed8_clbk CEquipItemSFAgentGetBoosterAddSpeed8_user(nullptr);
+        static info::CEquipItemSFAgentGetEquip10_ptr CEquipItemSFAgentGetEquip10_next(nullptr);
+        static info::CEquipItemSFAgentGetEquip10_clbk CEquipItemSFAgentGetEquip10_user(nullptr);
+        static info::CEquipItemSFAgentGetEquipSFCont12_ptr CEquipItemSFAgentGetEquipSFCont12_next(nullptr);
+        static info::CEquipItemSFAgentGetEquipSFCont12_clbk CEquipItemSFAgentGetEquipSFCont12_user(nullptr);
+        static info::CEquipItemSFAgentGetRequireSFSlot14_ptr CEquipItemSFAgentGetRequireSFSlot14_next(nullptr);
+        static info::CEquipItemSFAgentGetRequireSFSlot14_clbk CEquipItemSFAgentGetRequireSFSlot14_user(nullptr);
+        static info::CEquipItemSFAgentInit16_ptr CEquipItemSFAgentInit16_next(nullptr);
+        static info::CEquipItemSFAgentInit16_clbk CEquipItemSFAgentInit16_user(nullptr);
+        static info::CEquipItemSFAgentIsEnableSkill18_ptr CEquipItemSFAgentIsEnableSkill18_next(nullptr);
+        static info::CEquipItemSFAgentIsEnableSkill18_clbk CEquipItemSFAgentIsEnableSkill18_user(nullptr);
+        static info::CEquipItemSFAgentIsEnableSkill20_ptr CEquipItemSFAgentIsEnableSkill20_next(nullptr);
+        static info::CEquipItemSFAgentIsEnableSkill20_clbk CEquipItemSFAgentIsEnableSkill20_user(nullptr);
+        static info::CEquipItemSFAgentIsUseBooster22_ptr CEquipItemSFAgentIsUseBooster22_next(nullptr);
+        static info::CEquipItemSFAgentIsUseBooster22_clbk CEquipItemSFAgentIsUseBooster22_user(nullptr);
+        static info::CEquipItemSFAgentReleaseSFCont24_ptr CEquipItemSFAgentReleaseSFCont24_next(nullptr);
+        static info::CEquipItemSFAgentReleaseSFCont24_clbk CEquipItemSFAgentReleaseSFCont24_user(nullptr);
+        static info::CEquipItemSFAgentSearchItemAddSpeed26_ptr CEquipItemSFAgentSearchItemAddSpeed26_next(nullptr);
+        static info::CEquipItemSFAgentSearchItemAddSpeed26_clbk CEquipItemSFAgentSearchItemAddSpeed26_user(nullptr);
+        static info::CEquipItemSFAgentSetSFCont28_ptr CEquipItemSFAgentSetSFCont28_next(nullptr);
+        static info::CEquipItemSFAgentSetSFCont28_clbk CEquipItemSFAgentSetSFCont28_user(nullptr);
+        static info::CEquipItemSFAgentStartContSF30_ptr CEquipItemSFAgentStartContSF30_next(nullptr);
+        static info::CEquipItemSFAgentStartContSF30_clbk CEquipItemSFAgentStartContSF30_user(nullptr);
+        static info::CEquipItemSFAgentdtor_CEquipItemSFAgent32_ptr CEquipItemSFAgentdtor_CEquipItemSFAgent32_next(nullptr);
+        static info::CEquipItemSFAgentdtor_CEquipItemSFAgent32_clbk CEquipItemSFAgentdtor_CEquipItemSFAgent32_user(nullptr);
         
-        info::CEquipItemSFAgent___requireSlotInit2_ptr CEquipItemSFAgent___requireSlotInit2_next(nullptr);
-        info::CEquipItemSFAgent___requireSlotInit2_clbk CEquipItemSFAgent___requireSlotInit2_user(nullptr);
-        info::CEquipItemSFAgent___requireSlotctor__requireSlot4_ptr CEquipItemSFAgent___requireSlotctor__requireSlot4_next(nullptr);
-        info::CEquipItemSFAgent___requireSlotctor__requireSlot4_clbk CEquipItemSFAgent___requireSlotctor__requireSlot4_user(nullptr);
+        static info::CEquipItemSFAgent___requireSlotInit2_ptr CEquipItemSFAgent___requireSlotInit2_next(nullptr);
+        static info::CEquipItemSFAgent___requireSlotInit2_clbk CEquipItemSFAgent___requireSlotInit2_user(nullptr);
+        static info::CEquipItemSFAgent___requireSlotctor__requireSlot4_ptr CEquipItemSFAgent___requireSlotctor__requireSlot4_next(nullptr);
+        static info::CEquipItemSFAgent___requireSlotctor__requireSlot4_clbk CEquipItemSFAgent___requireSlotctor__requireSlot4_user(nullptr);
         
-        void CEquipItemSFAgentAllEndContSF2_wrapper(struct CEquipItemSFAgent* _this)
+        static void CEquipItemSFAgentAllEndContSF2_wrapper(struct CEquipItemSFAgent* _this)
         {
            CEquipItemSFAgentAllEndContSF2_user(_this, CEquipItemSFAgentAllEndContSF2_next);
         };
-        void CEquipItemSFAgentctor_CEquipItemSFAgent4_wrapper(struct CEquipItemSFAgent* _this)
+        static void CEquipItemSFAgentctor_CEquipItemSFAgent4_wrapper(struct CEquipItemSFAgent* _this)
         {
            CEquipItemSFAgentctor_CEquipItemSFAgent4_user(_this, CEquipItemSFAgentctor_CEquipItemSFAgent4_next);
         };
-        void CEquipItemSFAgentEndContSF6_wrapper(struct CEquipItemSFAgent* _this, struct _sf_continous* pSF_Cont)
+        static void CEquipItemSFAgentEndContSF6_wrapper(struct CEquipItemSFAgent* _this, struct _sf_continous* pSF_Cont)
         {
            CEquipItemSFAgentEndContSF6_user(_this, pSF_Cont, CEquipItemSFAgentEndContSF6_next);
         };
-        float CEquipItemSFAgentGetBoosterAddSpeed8_wrapper(struct CEquipItemSFAgent* _this)
+        static float CEquipItemSFAgentGetBoosterAddSpeed8_wrapper(struct CEquipItemSFAgent* _this)
         {
            return CEquipItemSFAgentGetBoosterAddSpeed8_user(_this, CEquipItemSFAgentGetBoosterAddSpeed8_next);
         };
-        struct _STORAGE_LIST::_db_con* CEquipItemSFAgentGetEquip10_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
+        static struct _STORAGE_LIST::_db_con* CEquipItemSFAgentGetEquip10_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
         {
            return CEquipItemSFAgentGetEquip10_user(_this, nEquipTblIndex, CEquipItemSFAgentGetEquip10_next);
         };
-        struct _sf_continous* CEquipItemSFAgentGetEquipSFCont12_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
+        static struct _sf_continous* CEquipItemSFAgentGetEquipSFCont12_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
         {
            return CEquipItemSFAgentGetEquipSFCont12_user(_this, nEquipTblIndex, CEquipItemSFAgentGetEquipSFCont12_next);
         };
-        bool CEquipItemSFAgentGetRequireSFSlot14_wrapper(struct CEquipItemSFAgent* _this, struct CEquipItemSFAgent::_requireSlot* pSlot, struct _skill_fld* pSkillFld)
+        static bool CEquipItemSFAgentGetRequireSFSlot14_wrapper(struct CEquipItemSFAgent* _this, struct CEquipItemSFAgent::_requireSlot* pSlot, struct _skill_fld* pSkillFld)
         {
            return CEquipItemSFAgentGetRequireSFSlot14_user(_this, pSlot, pSkillFld, CEquipItemSFAgentGetRequireSFSlot14_next);
         };
-        void CEquipItemSFAgentInit16_wrapper(struct CEquipItemSFAgent* _this, struct CPlayer* pMaster)
+        static void CEquipItemSFAgentInit16_wrapper(struct CEquipItemSFAgent* _this, struct CPlayer* pMaster)
         {
            CEquipItemSFAgentInit16_user(_this, pMaster, CEquipItemSFAgentInit16_next);
         };
-        char CEquipItemSFAgentIsEnableSkill18_wrapper(struct CEquipItemSFAgent* _this, struct _skill_fld* pSkill)
+        static char CEquipItemSFAgentIsEnableSkill18_wrapper(struct CEquipItemSFAgent* _this, struct _skill_fld* pSkill)
         {
            return CEquipItemSFAgentIsEnableSkill18_user(_this, pSkill, CEquipItemSFAgentIsEnableSkill18_next);
         };
-        char CEquipItemSFAgentIsEnableSkill20_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex, struct _skill_fld* pSkill)
+        static char CEquipItemSFAgentIsEnableSkill20_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex, struct _skill_fld* pSkill)
         {
            return CEquipItemSFAgentIsEnableSkill20_user(_this, nEquipTblIndex, pSkill, CEquipItemSFAgentIsEnableSkill20_next);
         };
-        bool CEquipItemSFAgentIsUseBooster22_wrapper(struct CEquipItemSFAgent* _this)
+        static bool CEquipItemSFAgentIsUseBooster22_wrapper(struct CEquipItemSFAgent* _this)
         {
            return CEquipItemSFAgentIsUseBooster22_user(_this, CEquipItemSFAgentIsUseBooster22_next);
         };
-        void CEquipItemSFAgentReleaseSFCont24_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
+        static void CEquipItemSFAgentReleaseSFCont24_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex)
         {
            CEquipItemSFAgentReleaseSFCont24_user(_this, nEquipTblIndex, CEquipItemSFAgentReleaseSFCont24_next);
         };
-        float CEquipItemSFAgentSearchItemAddSpeed26_wrapper(struct CEquipItemSFAgent* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static float CEquipItemSFAgentSearchItemAddSpeed26_wrapper(struct CEquipItemSFAgent* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return CEquipItemSFAgentSearchItemAddSpeed26_user(_this, pItem, CEquipItemSFAgentSearchItemAddSpeed26_next);
         };
-        void CEquipItemSFAgentSetSFCont28_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex, struct _sf_continous* pSF)
+        static void CEquipItemSFAgentSetSFCont28_wrapper(struct CEquipItemSFAgent* _this, int nEquipTblIndex, struct _sf_continous* pSF)
         {
            CEquipItemSFAgentSetSFCont28_user(_this, nEquipTblIndex, pSF, CEquipItemSFAgentSetSFCont28_next);
         };
-        void CEquipItemSFAgentStartContSF30_wrapper(struct CEquipItemSFAgent* _this, struct _sf_continous* pSF_Cont)
+        static void CEquipItemSFAgentStartContSF30_wrapper(struct CEquipItemSFAgent* _this, struct _sf_continous* pSF_Cont)
         {
            CEquipItemSFAgentStartContSF30_user(_this, pSF_Cont, CEquipItemSFAgentStartContSF30_next);
         };
-        void CEquipItemSFAgentdtor_CEquipItemSFAgent32_wrapper(struct CEquipItemSFAgent* _this)
+        static void CEquipItemSFAgentdtor_CEquipItemSFAgent32_wrapper(struct CEquipItemSFAgent* _this)
         {
            CEquipItemSFAgentdtor_CEquipItemSFAgent32_user(_this, CEquipItemSFAgentdtor_CEquipItemSFAgent32_next);
         };
         
-        void CEquipItemSFAgent___requireSlotInit2_wrapper(struct CEquipItemSFAgent::_requireSlot* _this)
+        static void CEquipItemSFAgent___requireSlotInit2_wrapper(struct CEquipItemSFAgent::_requireSlot* _this)
         {
            CEquipItemSFAgent___requireSlotInit2_user(_this, CEquipItemSFAgent___requireSlotInit2_next);
         };
-        void CEquipItemSFAgent___requireSlotctor__requireSlot4_wrapper(struct CEquipItemSFAgent::_requireSlot* _this)
+        static void CEquipItemSFAgent___requireSlotctor__requireSlot4_wrapper(struct CEquipItemSFAgent::_requireSlot* _this)
         {
            CEquipItemSFAgent___requireSlotctor__requireSlot4_user(_this, CEquipItemSFAgent___requireSlotctor__requireSlot4_next);
         };
         
-        hook_record CEquipItemSFAgent_functions[] = {
+        static hook_record CEquipItemSFAgent_functions[] = {
         {   (LPVOID)0x140121040L,
             (LPVOID *)&CEquipItemSFAgentAllEndContSF2_user,
             (LPVOID *)&CEquipItemSFAgentAllEndContSF2_next,
@@ -215,5 +215,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,249 +8,249 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLevelCalcR3Fog1_ptr CLevelCalcR3Fog1_next(nullptr);
-        info::CLevelCalcR3Fog1_clbk CLevelCalcR3Fog1_user(nullptr);
-        info::CLevelDrawBBox2_ptr CLevelDrawBBox2_next(nullptr);
-        info::CLevelDrawBBox2_clbk CLevelDrawBBox2_user(nullptr);
-        info::CLevelDrawBBox3_ptr CLevelDrawBBox3_next(nullptr);
-        info::CLevelDrawBBox3_clbk CLevelDrawBBox3_user(nullptr);
-        info::CLevelDrawLeafBBox4_ptr CLevelDrawLeafBBox4_next(nullptr);
-        info::CLevelDrawLeafBBox4_clbk CLevelDrawLeafBBox4_user(nullptr);
-        info::CLevelDrawMapAlphaRender5_ptr CLevelDrawMapAlphaRender5_next(nullptr);
-        info::CLevelDrawMapAlphaRender5_clbk CLevelDrawMapAlphaRender5_user(nullptr);
-        info::CLevelDrawMapEntitiesRender6_ptr CLevelDrawMapEntitiesRender6_next(nullptr);
-        info::CLevelDrawMapEntitiesRender6_clbk CLevelDrawMapEntitiesRender6_user(nullptr);
-        info::CLevelDrawMapRender7_ptr CLevelDrawMapRender7_next(nullptr);
-        info::CLevelDrawMapRender7_clbk CLevelDrawMapRender7_user(nullptr);
-        info::CLevelDrawMatBBox8_ptr CLevelDrawMatBBox8_next(nullptr);
-        info::CLevelDrawMatBBox8_clbk CLevelDrawMatBBox8_user(nullptr);
-        info::CLevelDrawShadowRender9_ptr CLevelDrawShadowRender9_next(nullptr);
-        info::CLevelDrawShadowRender9_clbk CLevelDrawShadowRender9_user(nullptr);
-        info::CLevelDrawSkyBoxRender10_ptr CLevelDrawSkyBoxRender10_next(nullptr);
-        info::CLevelDrawSkyBoxRender10_clbk CLevelDrawSkyBoxRender10_user(nullptr);
-        info::CLevelDrawTestBox11_ptr CLevelDrawTestBox11_next(nullptr);
-        info::CLevelDrawTestBox11_clbk CLevelDrawTestBox11_user(nullptr);
-        info::CLevelFrameMove12_ptr CLevelFrameMove12_next(nullptr);
-        info::CLevelFrameMove12_clbk CLevelFrameMove12_user(nullptr);
-        info::CLevelGetEnvironment14_ptr CLevelGetEnvironment14_next(nullptr);
-        info::CLevelGetEnvironment14_clbk CLevelGetEnvironment14_user(nullptr);
-        info::CLevelGetFirstYpos15_ptr CLevelGetFirstYpos15_next(nullptr);
-        info::CLevelGetFirstYpos15_clbk CLevelGetFirstYpos15_user(nullptr);
-        info::CLevelGetFirstYpos16_ptr CLevelGetFirstYpos16_next(nullptr);
-        info::CLevelGetFirstYpos16_clbk CLevelGetFirstYpos16_user(nullptr);
-        info::CLevelGetFirstYpos17_ptr CLevelGetFirstYpos17_next(nullptr);
-        info::CLevelGetFirstYpos17_clbk CLevelGetFirstYpos17_user(nullptr);
-        info::CLevelGetFrustumNormalPlane18_ptr CLevelGetFrustumNormalPlane18_next(nullptr);
-        info::CLevelGetFrustumNormalPlane18_clbk CLevelGetFrustumNormalPlane18_user(nullptr);
-        info::CLevelGetMapName19_ptr CLevelGetMapName19_next(nullptr);
-        info::CLevelGetMapName19_clbk CLevelGetMapName19_user(nullptr);
-        info::CLevelGetNextYpos20_ptr CLevelGetNextYpos20_next(nullptr);
-        info::CLevelGetNextYpos20_clbk CLevelGetNextYpos20_user(nullptr);
-        info::CLevelGetNextYposFar21_ptr CLevelGetNextYposFar21_next(nullptr);
-        info::CLevelGetNextYposFar21_clbk CLevelGetNextYposFar21_user(nullptr);
-        info::CLevelGetNextYposFarProgress22_ptr CLevelGetNextYposFarProgress22_next(nullptr);
-        info::CLevelGetNextYposFarProgress22_clbk CLevelGetNextYposFarProgress22_user(nullptr);
-        info::CLevelGetNextYposForServer23_ptr CLevelGetNextYposForServer23_next(nullptr);
-        info::CLevelGetNextYposForServer23_clbk CLevelGetNextYposForServer23_user(nullptr);
-        info::CLevelGetNextYposForServerFar24_ptr CLevelGetNextYposForServerFar24_next(nullptr);
-        info::CLevelGetNextYposForServerFar24_clbk CLevelGetNextYposForServerFar24_user(nullptr);
-        info::CLevelGetNextYposNoAttr25_ptr CLevelGetNextYposNoAttr25_next(nullptr);
-        info::CLevelGetNextYposNoAttr25_clbk CLevelGetNextYposNoAttr25_user(nullptr);
-        info::CLevelGetPath26_ptr CLevelGetPath26_next(nullptr);
-        info::CLevelGetPath26_clbk CLevelGetPath26_user(nullptr);
-        info::CLevelGetPathFromDepth27_ptr CLevelGetPathFromDepth27_next(nullptr);
-        info::CLevelGetPathFromDepth27_clbk CLevelGetPathFromDepth27_user(nullptr);
-        info::CLevelGetPointFromScreenRay28_ptr CLevelGetPointFromScreenRay28_next(nullptr);
-        info::CLevelGetPointFromScreenRay28_clbk CLevelGetPointFromScreenRay28_user(nullptr);
-        info::CLevelGetPointFromScreenRayFar29_ptr CLevelGetPointFromScreenRayFar29_next(nullptr);
-        info::CLevelGetPointFromScreenRayFar29_clbk CLevelGetPointFromScreenRayFar29_user(nullptr);
-        info::CLevelHearMapSound30_ptr CLevelHearMapSound30_next(nullptr);
-        info::CLevelHearMapSound30_clbk CLevelHearMapSound30_user(nullptr);
-        info::CLevelIsCollisionRayAABB31_ptr CLevelIsCollisionRayAABB31_next(nullptr);
-        info::CLevelIsCollisionRayAABB31_clbk CLevelIsCollisionRayAABB31_user(nullptr);
-        info::CLevelIsLoadedBsp33_ptr CLevelIsLoadedBsp33_next(nullptr);
-        info::CLevelIsLoadedBsp33_clbk CLevelIsLoadedBsp33_user(nullptr);
-        info::CLevelLoadLevel34_ptr CLevelLoadLevel34_next(nullptr);
-        info::CLevelLoadLevel34_clbk CLevelLoadLevel34_user(nullptr);
-        info::CLevelPrepareShadowRender35_ptr CLevelPrepareShadowRender35_next(nullptr);
-        info::CLevelPrepareShadowRender35_clbk CLevelPrepareShadowRender35_user(nullptr);
-        info::CLevelReLoadAllMaterial36_ptr CLevelReLoadAllMaterial36_next(nullptr);
-        info::CLevelReLoadAllMaterial36_clbk CLevelReLoadAllMaterial36_user(nullptr);
-        info::CLevelReleaseLevel37_ptr CLevelReleaseLevel37_next(nullptr);
-        info::CLevelReleaseLevel37_clbk CLevelReleaseLevel37_user(nullptr);
-        info::CLevelScreenShot38_ptr CLevelScreenShot38_next(nullptr);
-        info::CLevelScreenShot38_clbk CLevelScreenShot38_user(nullptr);
-        info::CLevelSetCameraPos39_ptr CLevelSetCameraPos39_next(nullptr);
-        info::CLevelSetCameraPos39_clbk CLevelSetCameraPos39_user(nullptr);
-        info::CLevelSetEnvironment40_ptr CLevelSetEnvironment40_next(nullptr);
-        info::CLevelSetEnvironment40_clbk CLevelSetEnvironment40_user(nullptr);
-        info::CLevelSetViewMatrix41_ptr CLevelSetViewMatrix41_next(nullptr);
-        info::CLevelSetViewMatrix41_clbk CLevelSetViewMatrix41_user(nullptr);
-        info::CLeveldtor_CLevel43_ptr CLeveldtor_CLevel43_next(nullptr);
-        info::CLeveldtor_CLevel43_clbk CLeveldtor_CLevel43_user(nullptr);
+        static info::CLevelCalcR3Fog1_ptr CLevelCalcR3Fog1_next(nullptr);
+        static info::CLevelCalcR3Fog1_clbk CLevelCalcR3Fog1_user(nullptr);
+        static info::CLevelDrawBBox2_ptr CLevelDrawBBox2_next(nullptr);
+        static info::CLevelDrawBBox2_clbk CLevelDrawBBox2_user(nullptr);
+        static info::CLevelDrawBBox3_ptr CLevelDrawBBox3_next(nullptr);
+        static info::CLevelDrawBBox3_clbk CLevelDrawBBox3_user(nullptr);
+        static info::CLevelDrawLeafBBox4_ptr CLevelDrawLeafBBox4_next(nullptr);
+        static info::CLevelDrawLeafBBox4_clbk CLevelDrawLeafBBox4_user(nullptr);
+        static info::CLevelDrawMapAlphaRender5_ptr CLevelDrawMapAlphaRender5_next(nullptr);
+        static info::CLevelDrawMapAlphaRender5_clbk CLevelDrawMapAlphaRender5_user(nullptr);
+        static info::CLevelDrawMapEntitiesRender6_ptr CLevelDrawMapEntitiesRender6_next(nullptr);
+        static info::CLevelDrawMapEntitiesRender6_clbk CLevelDrawMapEntitiesRender6_user(nullptr);
+        static info::CLevelDrawMapRender7_ptr CLevelDrawMapRender7_next(nullptr);
+        static info::CLevelDrawMapRender7_clbk CLevelDrawMapRender7_user(nullptr);
+        static info::CLevelDrawMatBBox8_ptr CLevelDrawMatBBox8_next(nullptr);
+        static info::CLevelDrawMatBBox8_clbk CLevelDrawMatBBox8_user(nullptr);
+        static info::CLevelDrawShadowRender9_ptr CLevelDrawShadowRender9_next(nullptr);
+        static info::CLevelDrawShadowRender9_clbk CLevelDrawShadowRender9_user(nullptr);
+        static info::CLevelDrawSkyBoxRender10_ptr CLevelDrawSkyBoxRender10_next(nullptr);
+        static info::CLevelDrawSkyBoxRender10_clbk CLevelDrawSkyBoxRender10_user(nullptr);
+        static info::CLevelDrawTestBox11_ptr CLevelDrawTestBox11_next(nullptr);
+        static info::CLevelDrawTestBox11_clbk CLevelDrawTestBox11_user(nullptr);
+        static info::CLevelFrameMove12_ptr CLevelFrameMove12_next(nullptr);
+        static info::CLevelFrameMove12_clbk CLevelFrameMove12_user(nullptr);
+        static info::CLevelGetEnvironment14_ptr CLevelGetEnvironment14_next(nullptr);
+        static info::CLevelGetEnvironment14_clbk CLevelGetEnvironment14_user(nullptr);
+        static info::CLevelGetFirstYpos15_ptr CLevelGetFirstYpos15_next(nullptr);
+        static info::CLevelGetFirstYpos15_clbk CLevelGetFirstYpos15_user(nullptr);
+        static info::CLevelGetFirstYpos16_ptr CLevelGetFirstYpos16_next(nullptr);
+        static info::CLevelGetFirstYpos16_clbk CLevelGetFirstYpos16_user(nullptr);
+        static info::CLevelGetFirstYpos17_ptr CLevelGetFirstYpos17_next(nullptr);
+        static info::CLevelGetFirstYpos17_clbk CLevelGetFirstYpos17_user(nullptr);
+        static info::CLevelGetFrustumNormalPlane18_ptr CLevelGetFrustumNormalPlane18_next(nullptr);
+        static info::CLevelGetFrustumNormalPlane18_clbk CLevelGetFrustumNormalPlane18_user(nullptr);
+        static info::CLevelGetMapName19_ptr CLevelGetMapName19_next(nullptr);
+        static info::CLevelGetMapName19_clbk CLevelGetMapName19_user(nullptr);
+        static info::CLevelGetNextYpos20_ptr CLevelGetNextYpos20_next(nullptr);
+        static info::CLevelGetNextYpos20_clbk CLevelGetNextYpos20_user(nullptr);
+        static info::CLevelGetNextYposFar21_ptr CLevelGetNextYposFar21_next(nullptr);
+        static info::CLevelGetNextYposFar21_clbk CLevelGetNextYposFar21_user(nullptr);
+        static info::CLevelGetNextYposFarProgress22_ptr CLevelGetNextYposFarProgress22_next(nullptr);
+        static info::CLevelGetNextYposFarProgress22_clbk CLevelGetNextYposFarProgress22_user(nullptr);
+        static info::CLevelGetNextYposForServer23_ptr CLevelGetNextYposForServer23_next(nullptr);
+        static info::CLevelGetNextYposForServer23_clbk CLevelGetNextYposForServer23_user(nullptr);
+        static info::CLevelGetNextYposForServerFar24_ptr CLevelGetNextYposForServerFar24_next(nullptr);
+        static info::CLevelGetNextYposForServerFar24_clbk CLevelGetNextYposForServerFar24_user(nullptr);
+        static info::CLevelGetNextYposNoAttr25_ptr CLevelGetNextYposNoAttr25_next(nullptr);
+        static info::CLevelGetNextYposNoAttr25_clbk CLevelGetNextYposNoAttr25_user(nullptr);
+        static info::CLevelGetPath26_ptr CLevelGetPath26_next(nullptr);
+        static info::CLevelGetPath26_clbk CLevelGetPath26_user(nullptr);
+        static info::CLevelGetPathFromDepth27_ptr CLevelGetPathFromDepth27_next(nullptr);
+        static info::CLevelGetPathFromDepth27_clbk CLevelGetPathFromDepth27_user(nullptr);
+        static info::CLevelGetPointFromScreenRay28_ptr CLevelGetPointFromScreenRay28_next(nullptr);
+        static info::CLevelGetPointFromScreenRay28_clbk CLevelGetPointFromScreenRay28_user(nullptr);
+        static info::CLevelGetPointFromScreenRayFar29_ptr CLevelGetPointFromScreenRayFar29_next(nullptr);
+        static info::CLevelGetPointFromScreenRayFar29_clbk CLevelGetPointFromScreenRayFar29_user(nullptr);
+        static info::CLevelHearMapSound30_ptr CLevelHearMapSound30_next(nullptr);
+        static info::CLevelHearMapSound30_clbk CLevelHearMapSound30_user(nullptr);
+        static info::CLevelIsCollisionRayAABB31_ptr CLevelIsCollisionRayAABB31_next(nullptr);
+        static info::CLevelIsCollisionRayAABB31_clbk CLevelIsCollisionRayAABB31_user(nullptr);
+        static info::CLevelIsLoadedBsp33_ptr CLevelIsLoadedBsp33_next(nullptr);
+        static info::CLevelIsLoadedBsp33_clbk CLevelIsLoadedBsp33_user(nullptr);
+        static info::CLevelLoadLevel34_ptr CLevelLoadLevel34_next(nullptr);
+        static info::CLevelLoadLevel34_clbk CLevelLoadLevel34_user(nullptr);
+        static info::CLevelPrepareShadowRender35_ptr CLevelPrepareShadowRender35_next(nullptr);
+        static info::CLevelPrepareShadowRender35_clbk CLevelPrepareShadowRender35_user(nullptr);
+        static info::CLevelReLoadAllMaterial36_ptr CLevelReLoadAllMaterial36_next(nullptr);
+        static info::CLevelReLoadAllMaterial36_clbk CLevelReLoadAllMaterial36_user(nullptr);
+        static info::CLevelReleaseLevel37_ptr CLevelReleaseLevel37_next(nullptr);
+        static info::CLevelReleaseLevel37_clbk CLevelReleaseLevel37_user(nullptr);
+        static info::CLevelScreenShot38_ptr CLevelScreenShot38_next(nullptr);
+        static info::CLevelScreenShot38_clbk CLevelScreenShot38_user(nullptr);
+        static info::CLevelSetCameraPos39_ptr CLevelSetCameraPos39_next(nullptr);
+        static info::CLevelSetCameraPos39_clbk CLevelSetCameraPos39_user(nullptr);
+        static info::CLevelSetEnvironment40_ptr CLevelSetEnvironment40_next(nullptr);
+        static info::CLevelSetEnvironment40_clbk CLevelSetEnvironment40_user(nullptr);
+        static info::CLevelSetViewMatrix41_ptr CLevelSetViewMatrix41_next(nullptr);
+        static info::CLevelSetViewMatrix41_clbk CLevelSetViewMatrix41_user(nullptr);
+        static info::CLeveldtor_CLevel43_ptr CLeveldtor_CLevel43_next(nullptr);
+        static info::CLeveldtor_CLevel43_clbk CLeveldtor_CLevel43_user(nullptr);
         
-        void CLevelCalcR3Fog1_wrapper(struct CLevel* _this)
+        static void CLevelCalcR3Fog1_wrapper(struct CLevel* _this)
         {
            CLevelCalcR3Fog1_user(_this, CLevelCalcR3Fog1_next);
         };
-        void CLevelDrawBBox2_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, uint32_t arg_2)
+        static void CLevelDrawBBox2_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, uint32_t arg_2)
         {
            CLevelDrawBBox2_user(_this, arg_0, arg_1, arg_2, CLevelDrawBBox2_next);
         };
-        void CLevelDrawBBox3_wrapper(struct CLevel* _this, int16_t* arg_0, int16_t* arg_1, uint32_t arg_2)
+        static void CLevelDrawBBox3_wrapper(struct CLevel* _this, int16_t* arg_0, int16_t* arg_1, uint32_t arg_2)
         {
            CLevelDrawBBox3_user(_this, arg_0, arg_1, arg_2, CLevelDrawBBox3_next);
         };
-        void CLevelDrawLeafBBox4_wrapper(struct CLevel* _this)
+        static void CLevelDrawLeafBBox4_wrapper(struct CLevel* _this)
         {
            CLevelDrawLeafBBox4_user(_this, CLevelDrawLeafBBox4_next);
         };
-        void CLevelDrawMapAlphaRender5_wrapper(struct CLevel* _this, float* arg_0)
+        static void CLevelDrawMapAlphaRender5_wrapper(struct CLevel* _this, float* arg_0)
         {
            CLevelDrawMapAlphaRender5_user(_this, arg_0, CLevelDrawMapAlphaRender5_next);
         };
-        void CLevelDrawMapEntitiesRender6_wrapper(struct CLevel* _this)
+        static void CLevelDrawMapEntitiesRender6_wrapper(struct CLevel* _this)
         {
            CLevelDrawMapEntitiesRender6_user(_this, CLevelDrawMapEntitiesRender6_next);
         };
-        void CLevelDrawMapRender7_wrapper(struct CLevel* _this)
+        static void CLevelDrawMapRender7_wrapper(struct CLevel* _this)
         {
            CLevelDrawMapRender7_user(_this, CLevelDrawMapRender7_next);
         };
-        void CLevelDrawMatBBox8_wrapper(struct CLevel* _this)
+        static void CLevelDrawMatBBox8_wrapper(struct CLevel* _this)
         {
            CLevelDrawMatBBox8_user(_this, CLevelDrawMatBBox8_next);
         };
-        void CLevelDrawShadowRender9_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
+        static void CLevelDrawShadowRender9_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            CLevelDrawShadowRender9_user(_this, arg_0, arg_1, arg_2, CLevelDrawShadowRender9_next);
         };
-        void CLevelDrawSkyBoxRender10_wrapper(struct CLevel* _this)
+        static void CLevelDrawSkyBoxRender10_wrapper(struct CLevel* _this)
         {
            CLevelDrawSkyBoxRender10_user(_this, CLevelDrawSkyBoxRender10_next);
         };
-        void CLevelDrawTestBox11_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, uint32_t arg_2)
+        static void CLevelDrawTestBox11_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, uint32_t arg_2)
         {
            CLevelDrawTestBox11_user(_this, arg_0, arg_1, arg_2, CLevelDrawTestBox11_next);
         };
-        void CLevelFrameMove12_wrapper(struct CLevel* _this)
+        static void CLevelFrameMove12_wrapper(struct CLevel* _this)
         {
            CLevelFrameMove12_user(_this, CLevelFrameMove12_next);
         };
-        unsigned int CLevelGetEnvironment14_wrapper(struct CLevel* _this)
+        static unsigned int CLevelGetEnvironment14_wrapper(struct CLevel* _this)
         {
            return CLevelGetEnvironment14_user(_this, CLevelGetEnvironment14_next);
         };
-        float CLevelGetFirstYpos15_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
+        static float CLevelGetFirstYpos15_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            return CLevelGetFirstYpos15_user(_this, arg_0, arg_1, arg_2, CLevelGetFirstYpos15_next);
         };
-        float CLevelGetFirstYpos16_wrapper(struct CLevel* _this, float* arg_0, int arg_1)
+        static float CLevelGetFirstYpos16_wrapper(struct CLevel* _this, float* arg_0, int arg_1)
         {
            return CLevelGetFirstYpos16_user(_this, arg_0, arg_1, CLevelGetFirstYpos16_next);
         };
-        float CLevelGetFirstYpos17_wrapper(struct CLevel* _this, float* arg_0, int16_t* arg_1, int16_t* arg_2)
+        static float CLevelGetFirstYpos17_wrapper(struct CLevel* _this, float* arg_0, int16_t* arg_1, int16_t* arg_2)
         {
            return CLevelGetFirstYpos17_user(_this, arg_0, arg_1, arg_2, CLevelGetFirstYpos17_next);
         };
-        void CLevelGetFrustumNormalPlane18_wrapper(struct CLevel* _this, float** arg_0)
+        static void CLevelGetFrustumNormalPlane18_wrapper(struct CLevel* _this, float** arg_0)
         {
            CLevelGetFrustumNormalPlane18_user(_this, arg_0, CLevelGetFrustumNormalPlane18_next);
         };
-        char* CLevelGetMapName19_wrapper(struct CLevel* _this)
+        static char* CLevelGetMapName19_wrapper(struct CLevel* _this)
         {
            return CLevelGetMapName19_user(_this, CLevelGetMapName19_next);
         };
-        int CLevelGetNextYpos20_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
+        static int CLevelGetNextYpos20_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
         {
            return CLevelGetNextYpos20_user(_this, arg_0, arg_1, CLevelGetNextYpos20_next);
         };
-        int64_t CLevelGetNextYposFar21_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
+        static int64_t CLevelGetNextYposFar21_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            return CLevelGetNextYposFar21_user(_this, arg_0, arg_1, arg_2, CLevelGetNextYposFar21_next);
         };
-        int64_t CLevelGetNextYposFarProgress22_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
+        static int64_t CLevelGetNextYposFarProgress22_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            return CLevelGetNextYposFarProgress22_user(_this, arg_0, arg_1, arg_2, CLevelGetNextYposFarProgress22_next);
         };
-        int CLevelGetNextYposForServer23_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
+        static int CLevelGetNextYposForServer23_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
         {
            return CLevelGetNextYposForServer23_user(_this, arg_0, arg_1, CLevelGetNextYposForServer23_next);
         };
-        int64_t CLevelGetNextYposForServerFar24_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
+        static int64_t CLevelGetNextYposForServerFar24_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            return CLevelGetNextYposForServerFar24_user(_this, arg_0, arg_1, arg_2, CLevelGetNextYposForServerFar24_next);
         };
-        int CLevelGetNextYposNoAttr25_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
+        static int CLevelGetNextYposNoAttr25_wrapper(struct CLevel* _this, float* arg_0, float* arg_1)
         {
            return CLevelGetNextYposNoAttr25_user(_this, arg_0, arg_1, CLevelGetNextYposNoAttr25_next);
         };
-        uint32_t CLevelGetPath26_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float** arg_2, uint32_t* arg_3, int arg_4)
+        static uint32_t CLevelGetPath26_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, float** arg_2, uint32_t* arg_3, int arg_4)
         {
            return CLevelGetPath26_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CLevelGetPath26_next);
         };
-        uint32_t CLevelGetPathFromDepth27_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, int arg_2, float** arg_3, uint32_t* arg_4)
+        static uint32_t CLevelGetPathFromDepth27_wrapper(struct CLevel* _this, float* arg_0, float* arg_1, int arg_2, float** arg_3, uint32_t* arg_4)
         {
            return CLevelGetPathFromDepth27_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CLevelGetPathFromDepth27_next);
         };
-        int64_t CLevelGetPointFromScreenRay28_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float** arg_2)
+        static int64_t CLevelGetPointFromScreenRay28_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float** arg_2)
         {
            return CLevelGetPointFromScreenRay28_user(_this, arg_0, arg_1, arg_2, CLevelGetPointFromScreenRay28_next);
         };
-        int64_t CLevelGetPointFromScreenRayFar29_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float** arg_2)
+        static int64_t CLevelGetPointFromScreenRayFar29_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float** arg_2)
         {
            return CLevelGetPointFromScreenRayFar29_user(_this, arg_0, arg_1, arg_2, CLevelGetPointFromScreenRayFar29_next);
         };
-        void CLevelHearMapSound30_wrapper(struct CLevel* _this)
+        static void CLevelHearMapSound30_wrapper(struct CLevel* _this)
         {
            CLevelHearMapSound30_user(_this, CLevelHearMapSound30_next);
         };
-        int CLevelIsCollisionRayAABB31_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float* arg_2, float* arg_3, float** arg_4)
+        static int CLevelIsCollisionRayAABB31_wrapper(struct CLevel* _this, int32_t arg_0, int32_t arg_1, float* arg_2, float* arg_3, float** arg_4)
         {
            return CLevelIsCollisionRayAABB31_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CLevelIsCollisionRayAABB31_next);
         };
-        int CLevelIsLoadedBsp33_wrapper(struct CLevel* _this)
+        static int CLevelIsLoadedBsp33_wrapper(struct CLevel* _this)
         {
            return CLevelIsLoadedBsp33_user(_this, CLevelIsLoadedBsp33_next);
         };
-        void CLevelLoadLevel34_wrapper(struct CLevel* _this, char* arg_0)
+        static void CLevelLoadLevel34_wrapper(struct CLevel* _this, char* arg_0)
         {
            CLevelLoadLevel34_user(_this, arg_0, CLevelLoadLevel34_next);
         };
-        void CLevelPrepareShadowRender35_wrapper(struct CLevel* _this, float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
+        static void CLevelPrepareShadowRender35_wrapper(struct CLevel* _this, float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
         {
            CLevelPrepareShadowRender35_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CLevelPrepareShadowRender35_next);
         };
-        void CLevelReLoadAllMaterial36_wrapper(struct CLevel* _this)
+        static void CLevelReLoadAllMaterial36_wrapper(struct CLevel* _this)
         {
            CLevelReLoadAllMaterial36_user(_this, CLevelReLoadAllMaterial36_next);
         };
-        void CLevelReleaseLevel37_wrapper(struct CLevel* _this)
+        static void CLevelReleaseLevel37_wrapper(struct CLevel* _this)
         {
            CLevelReleaseLevel37_user(_this, CLevelReleaseLevel37_next);
         };
-        void CLevelScreenShot38_wrapper(struct CLevel* _this)
+        static void CLevelScreenShot38_wrapper(struct CLevel* _this)
         {
            CLevelScreenShot38_user(_this, CLevelScreenShot38_next);
         };
-        void CLevelSetCameraPos39_wrapper(struct CLevel* _this, float* arg_0)
+        static void CLevelSetCameraPos39_wrapper(struct CLevel* _this, float* arg_0)
         {
            CLevelSetCameraPos39_user(_this, arg_0, CLevelSetCameraPos39_next);
         };
-        void CLevelSetEnvironment40_wrapper(struct CLevel* _this, uint32_t arg_0)
+        static void CLevelSetEnvironment40_wrapper(struct CLevel* _this, uint32_t arg_0)
         {
            CLevelSetEnvironment40_user(_this, arg_0, CLevelSetEnvironment40_next);
         };
-        void CLevelSetViewMatrix41_wrapper(struct CLevel* _this, struct D3DXMATRIX* arg_0)
+        static void CLevelSetViewMatrix41_wrapper(struct CLevel* _this, struct D3DXMATRIX* arg_0)
         {
            CLevelSetViewMatrix41_user(_this, arg_0, CLevelSetViewMatrix41_next);
         };
-        int64_t CLeveldtor_CLevel43_wrapper(struct CLevel* _this)
+        static int64_t CLeveldtor_CLevel43_wrapper(struct CLevel* _this)
         {
            return CLeveldtor_CLevel43_user(_this, CLeveldtor_CLevel43_next);
         };
         
-        hook_record CLevel_functions[] = {
+        static hook_record CLevel_functions[] = {
         {   (LPVOID)0x1404e26f0L,
             (LPVOID *)&CLevelCalcR3Fog1_user,
             (LPVOID *)&CLevelCalcR3Fog1_next,
@@ -454,5 +454,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

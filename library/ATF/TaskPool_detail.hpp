@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TaskPoolInitialize2_ptr TaskPoolInitialize2_next(nullptr);
-        info::TaskPoolInitialize2_clbk TaskPoolInitialize2_user(nullptr);
-        info::TaskPoolIsEmpty4_ptr TaskPoolIsEmpty4_next(nullptr);
-        info::TaskPoolIsEmpty4_clbk TaskPoolIsEmpty4_user(nullptr);
-        info::TaskPoolPopCompleteTsk6_ptr TaskPoolPopCompleteTsk6_next(nullptr);
-        info::TaskPoolPopCompleteTsk6_clbk TaskPoolPopCompleteTsk6_user(nullptr);
-        info::TaskPoolPopWaitTsk8_ptr TaskPoolPopWaitTsk8_next(nullptr);
-        info::TaskPoolPopWaitTsk8_clbk TaskPoolPopWaitTsk8_user(nullptr);
-        info::TaskPoolPushCompleteTsk10_ptr TaskPoolPushCompleteTsk10_next(nullptr);
-        info::TaskPoolPushCompleteTsk10_clbk TaskPoolPushCompleteTsk10_user(nullptr);
-        info::TaskPoolPushEmptyTsk12_ptr TaskPoolPushEmptyTsk12_next(nullptr);
-        info::TaskPoolPushEmptyTsk12_clbk TaskPoolPushEmptyTsk12_user(nullptr);
-        info::TaskPoolPushWaitTsk14_ptr TaskPoolPushWaitTsk14_next(nullptr);
-        info::TaskPoolPushWaitTsk14_clbk TaskPoolPushWaitTsk14_user(nullptr);
-        info::TaskPoolRelease16_ptr TaskPoolRelease16_next(nullptr);
-        info::TaskPoolRelease16_clbk TaskPoolRelease16_user(nullptr);
-        info::TaskPoolctor_TaskPool18_ptr TaskPoolctor_TaskPool18_next(nullptr);
-        info::TaskPoolctor_TaskPool18_clbk TaskPoolctor_TaskPool18_user(nullptr);
-        info::TaskPool_create_task20_ptr TaskPool_create_task20_next(nullptr);
-        info::TaskPool_create_task20_clbk TaskPool_create_task20_user(nullptr);
-        info::TaskPool_init_index_lists22_ptr TaskPool_init_index_lists22_next(nullptr);
-        info::TaskPool_init_index_lists22_clbk TaskPool_init_index_lists22_user(nullptr);
+        static info::TaskPoolInitialize2_ptr TaskPoolInitialize2_next(nullptr);
+        static info::TaskPoolInitialize2_clbk TaskPoolInitialize2_user(nullptr);
+        static info::TaskPoolIsEmpty4_ptr TaskPoolIsEmpty4_next(nullptr);
+        static info::TaskPoolIsEmpty4_clbk TaskPoolIsEmpty4_user(nullptr);
+        static info::TaskPoolPopCompleteTsk6_ptr TaskPoolPopCompleteTsk6_next(nullptr);
+        static info::TaskPoolPopCompleteTsk6_clbk TaskPoolPopCompleteTsk6_user(nullptr);
+        static info::TaskPoolPopWaitTsk8_ptr TaskPoolPopWaitTsk8_next(nullptr);
+        static info::TaskPoolPopWaitTsk8_clbk TaskPoolPopWaitTsk8_user(nullptr);
+        static info::TaskPoolPushCompleteTsk10_ptr TaskPoolPushCompleteTsk10_next(nullptr);
+        static info::TaskPoolPushCompleteTsk10_clbk TaskPoolPushCompleteTsk10_user(nullptr);
+        static info::TaskPoolPushEmptyTsk12_ptr TaskPoolPushEmptyTsk12_next(nullptr);
+        static info::TaskPoolPushEmptyTsk12_clbk TaskPoolPushEmptyTsk12_user(nullptr);
+        static info::TaskPoolPushWaitTsk14_ptr TaskPoolPushWaitTsk14_next(nullptr);
+        static info::TaskPoolPushWaitTsk14_clbk TaskPoolPushWaitTsk14_user(nullptr);
+        static info::TaskPoolRelease16_ptr TaskPoolRelease16_next(nullptr);
+        static info::TaskPoolRelease16_clbk TaskPoolRelease16_user(nullptr);
+        static info::TaskPoolctor_TaskPool18_ptr TaskPoolctor_TaskPool18_next(nullptr);
+        static info::TaskPoolctor_TaskPool18_clbk TaskPoolctor_TaskPool18_user(nullptr);
+        static info::TaskPool_create_task20_ptr TaskPool_create_task20_next(nullptr);
+        static info::TaskPool_create_task20_clbk TaskPool_create_task20_user(nullptr);
+        static info::TaskPool_init_index_lists22_ptr TaskPool_init_index_lists22_next(nullptr);
+        static info::TaskPool_init_index_lists22_clbk TaskPool_init_index_lists22_user(nullptr);
         
-        TaskPool::RCODE TaskPoolInitialize2_wrapper(struct TaskPool* _this, int nTskMaxNum, int nMaxTskSize)
+        static TaskPool::RCODE TaskPoolInitialize2_wrapper(struct TaskPool* _this, int nTskMaxNum, int nMaxTskSize)
         {
            return TaskPoolInitialize2_user(_this, nTskMaxNum, nMaxTskSize, TaskPoolInitialize2_next);
         };
-        bool TaskPoolIsEmpty4_wrapper(struct TaskPool* _this)
+        static bool TaskPoolIsEmpty4_wrapper(struct TaskPool* _this)
         {
            return TaskPoolIsEmpty4_user(_this, TaskPoolIsEmpty4_next);
         };
-        struct Task* TaskPoolPopCompleteTsk6_wrapper(struct TaskPool* _this, unsigned int* nIdx)
+        static struct Task* TaskPoolPopCompleteTsk6_wrapper(struct TaskPool* _this, unsigned int* nIdx)
         {
            return TaskPoolPopCompleteTsk6_user(_this, nIdx, TaskPoolPopCompleteTsk6_next);
         };
-        struct Task* TaskPoolPopWaitTsk8_wrapper(struct TaskPool* _this, unsigned int* nIdx)
+        static struct Task* TaskPoolPopWaitTsk8_wrapper(struct TaskPool* _this, unsigned int* nIdx)
         {
            return TaskPoolPopWaitTsk8_user(_this, nIdx, TaskPoolPopWaitTsk8_next);
         };
-        TaskPool::RCODE TaskPoolPushCompleteTsk10_wrapper(struct TaskPool* _this, unsigned int nIdx)
+        static TaskPool::RCODE TaskPoolPushCompleteTsk10_wrapper(struct TaskPool* _this, unsigned int nIdx)
         {
            return TaskPoolPushCompleteTsk10_user(_this, nIdx, TaskPoolPushCompleteTsk10_next);
         };
-        TaskPool::RCODE TaskPoolPushEmptyTsk12_wrapper(struct TaskPool* _this, unsigned int nIdx)
+        static TaskPool::RCODE TaskPoolPushEmptyTsk12_wrapper(struct TaskPool* _this, unsigned int nIdx)
         {
            return TaskPoolPushEmptyTsk12_user(_this, nIdx, TaskPoolPushEmptyTsk12_next);
         };
-        TaskPool::RCODE TaskPoolPushWaitTsk14_wrapper(struct TaskPool* _this, int nTaskCode, char* p, uint64_t size)
+        static TaskPool::RCODE TaskPoolPushWaitTsk14_wrapper(struct TaskPool* _this, int nTaskCode, char* p, uint64_t size)
         {
            return TaskPoolPushWaitTsk14_user(_this, nTaskCode, p, size, TaskPoolPushWaitTsk14_next);
         };
-        void TaskPoolRelease16_wrapper(struct TaskPool* _this)
+        static void TaskPoolRelease16_wrapper(struct TaskPool* _this)
         {
            TaskPoolRelease16_user(_this, TaskPoolRelease16_next);
         };
-        void TaskPoolctor_TaskPool18_wrapper(struct TaskPool* _this)
+        static void TaskPoolctor_TaskPool18_wrapper(struct TaskPool* _this)
         {
            TaskPoolctor_TaskPool18_user(_this, TaskPoolctor_TaskPool18_next);
         };
-        bool TaskPool_create_task20_wrapper(struct TaskPool* _this, int nMaxTskSize)
+        static bool TaskPool_create_task20_wrapper(struct TaskPool* _this, int nMaxTskSize)
         {
            return TaskPool_create_task20_user(_this, nMaxTskSize, TaskPool_create_task20_next);
         };
-        bool TaskPool_init_index_lists22_wrapper(struct TaskPool* _this)
+        static bool TaskPool_init_index_lists22_wrapper(struct TaskPool* _this)
         {
            return TaskPool_init_index_lists22_user(_this, TaskPool_init_index_lists22_next);
         };
         
-        hook_record TaskPool_functions[] = {
+        static hook_record TaskPool_functions[] = {
         {   (LPVOID)0x140317d60L,
             (LPVOID *)&TaskPoolInitialize2_user,
             (LPVOID *)&TaskPoolInitialize2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

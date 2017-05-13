@@ -8,213 +8,213 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AutoMineMachinector_AutoMineMachine2_ptr AutoMineMachinector_AutoMineMachine2_next(nullptr);
-        info::AutoMineMachinector_AutoMineMachine2_clbk AutoMineMachinector_AutoMineMachine2_user(nullptr);
-        info::AutoMineMachineChangeOwner4_ptr AutoMineMachineChangeOwner4_next(nullptr);
-        info::AutoMineMachineChangeOwner4_clbk AutoMineMachineChangeOwner4_user(nullptr);
-        info::AutoMineMachineCharge6_ptr AutoMineMachineCharge6_next(nullptr);
-        info::AutoMineMachineCharge6_clbk AutoMineMachineCharge6_user(nullptr);
-        info::AutoMineMachineDischarge8_ptr AutoMineMachineDischarge8_next(nullptr);
-        info::AutoMineMachineDischarge8_clbk AutoMineMachineDischarge8_user(nullptr);
-        info::AutoMineMachineGetMachineInfo10_ptr AutoMineMachineGetMachineInfo10_next(nullptr);
-        info::AutoMineMachineGetMachineInfo10_clbk AutoMineMachineGetMachineInfo10_user(nullptr);
-        info::AutoMineMachineGetOutOreInAutoMine12_ptr AutoMineMachineGetOutOreInAutoMine12_next(nullptr);
-        info::AutoMineMachineGetOutOreInAutoMine12_clbk AutoMineMachineGetOutOreInAutoMine12_user(nullptr);
-        info::AutoMineMachineGetOwnerGuild14_ptr AutoMineMachineGetOwnerGuild14_next(nullptr);
-        info::AutoMineMachineGetOwnerGuild14_clbk AutoMineMachineGetOwnerGuild14_user(nullptr);
-        info::AutoMineMachineGetState16_ptr AutoMineMachineGetState16_next(nullptr);
-        info::AutoMineMachineGetState16_clbk AutoMineMachineGetState16_user(nullptr);
-        info::AutoMineMachineInitialize18_ptr AutoMineMachineInitialize18_next(nullptr);
-        info::AutoMineMachineInitialize18_clbk AutoMineMachineInitialize18_user(nullptr);
-        info::AutoMineMachineIsMaster20_ptr AutoMineMachineIsMaster20_next(nullptr);
-        info::AutoMineMachineIsMaster20_clbk AutoMineMachineIsMaster20_user(nullptr);
-        info::AutoMineMachineLoadDatabase22_ptr AutoMineMachineLoadDatabase22_next(nullptr);
-        info::AutoMineMachineLoadDatabase22_clbk AutoMineMachineLoadDatabase22_user(nullptr);
-        info::AutoMineMachineLoop24_ptr AutoMineMachineLoop24_next(nullptr);
-        info::AutoMineMachineLoop24_clbk AutoMineMachineLoop24_user(nullptr);
-        info::AutoMineMachineMoveOreInAutoMine26_ptr AutoMineMachineMoveOreInAutoMine26_next(nullptr);
-        info::AutoMineMachineMoveOreInAutoMine26_clbk AutoMineMachineMoveOreInAutoMine26_user(nullptr);
-        info::AutoMineMachineOreMerge28_ptr AutoMineMachineOreMerge28_next(nullptr);
-        info::AutoMineMachineOreMerge28_clbk AutoMineMachineOreMerge28_user(nullptr);
-        info::AutoMineMachineSelectOre30_ptr AutoMineMachineSelectOre30_next(nullptr);
-        info::AutoMineMachineSelectOre30_clbk AutoMineMachineSelectOre30_user(nullptr);
-        info::AutoMineMachineSendMsg_MachineInfo32_ptr AutoMineMachineSendMsg_MachineInfo32_next(nullptr);
-        info::AutoMineMachineSendMsg_MachineInfo32_clbk AutoMineMachineSendMsg_MachineInfo32_user(nullptr);
-        info::AutoMineMachineSendMsg_ResultCode34_ptr AutoMineMachineSendMsg_ResultCode34_next(nullptr);
-        info::AutoMineMachineSendMsg_ResultCode34_clbk AutoMineMachineSendMsg_ResultCode34_user(nullptr);
-        info::AutoMineMachineSetOpenUI36_ptr AutoMineMachineSetOpenUI36_next(nullptr);
-        info::AutoMineMachineSetOpenUI36_clbk AutoMineMachineSetOpenUI36_user(nullptr);
-        info::AutoMineMachineSetOwner38_ptr AutoMineMachineSetOwner38_next(nullptr);
-        info::AutoMineMachineSetOwner38_clbk AutoMineMachineSetOwner38_user(nullptr);
-        info::AutoMineMachineStart40_ptr AutoMineMachineStart40_next(nullptr);
-        info::AutoMineMachineStart40_clbk AutoMineMachineStart40_user(nullptr);
-        info::AutoMineMachineStop42_ptr AutoMineMachineStop42_next(nullptr);
-        info::AutoMineMachineStop42_clbk AutoMineMachineStop42_user(nullptr);
-        info::AutoMineMachineSubChargeCost44_ptr AutoMineMachineSubChargeCost44_next(nullptr);
-        info::AutoMineMachineSubChargeCost44_clbk AutoMineMachineSubChargeCost44_user(nullptr);
-        info::AutoMineMachine_Convert_GoldToGage46_ptr AutoMineMachine_Convert_GoldToGage46_next(nullptr);
-        info::AutoMineMachine_Convert_GoldToGage46_clbk AutoMineMachine_Convert_GoldToGage46_user(nullptr);
-        info::AutoMineMachine_InitMineOre48_ptr AutoMineMachine_InitMineOre48_next(nullptr);
-        info::AutoMineMachine_InitMineOre48_clbk AutoMineMachine_InitMineOre48_user(nullptr);
-        info::AutoMineMachine_Mining50_ptr AutoMineMachine_Mining50_next(nullptr);
-        info::AutoMineMachine_Mining50_clbk AutoMineMachine_Mining50_user(nullptr);
-        info::AutoMineMachinepush_dqs_battery_charge52_ptr AutoMineMachinepush_dqs_battery_charge52_next(nullptr);
-        info::AutoMineMachinepush_dqs_battery_charge52_clbk AutoMineMachinepush_dqs_battery_charge52_user(nullptr);
-        info::AutoMineMachinepush_dqs_battery_discharge54_ptr AutoMineMachinepush_dqs_battery_discharge54_next(nullptr);
-        info::AutoMineMachinepush_dqs_battery_discharge54_clbk AutoMineMachinepush_dqs_battery_discharge54_user(nullptr);
-        info::AutoMineMachinepush_dqs_getore56_ptr AutoMineMachinepush_dqs_getore56_next(nullptr);
-        info::AutoMineMachinepush_dqs_getore56_clbk AutoMineMachinepush_dqs_getore56_user(nullptr);
-        info::AutoMineMachinepush_dqs_mineore58_ptr AutoMineMachinepush_dqs_mineore58_next(nullptr);
-        info::AutoMineMachinepush_dqs_mineore58_clbk AutoMineMachinepush_dqs_mineore58_user(nullptr);
-        info::AutoMineMachinepush_dqs_moveore60_ptr AutoMineMachinepush_dqs_moveore60_next(nullptr);
-        info::AutoMineMachinepush_dqs_moveore60_clbk AutoMineMachinepush_dqs_moveore60_user(nullptr);
-        info::AutoMineMachinepush_dqs_newowner62_ptr AutoMineMachinepush_dqs_newowner62_next(nullptr);
-        info::AutoMineMachinepush_dqs_newowner62_clbk AutoMineMachinepush_dqs_newowner62_user(nullptr);
-        info::AutoMineMachinepush_dqs_selore64_ptr AutoMineMachinepush_dqs_selore64_next(nullptr);
-        info::AutoMineMachinepush_dqs_selore64_clbk AutoMineMachinepush_dqs_selore64_user(nullptr);
-        info::AutoMineMachinepush_dqs_workingstate66_ptr AutoMineMachinepush_dqs_workingstate66_next(nullptr);
-        info::AutoMineMachinepush_dqs_workingstate66_clbk AutoMineMachinepush_dqs_workingstate66_user(nullptr);
-        info::AutoMineMachinedtor_AutoMineMachine68_ptr AutoMineMachinedtor_AutoMineMachine68_next(nullptr);
-        info::AutoMineMachinedtor_AutoMineMachine68_clbk AutoMineMachinedtor_AutoMineMachine68_user(nullptr);
+        static info::AutoMineMachinector_AutoMineMachine2_ptr AutoMineMachinector_AutoMineMachine2_next(nullptr);
+        static info::AutoMineMachinector_AutoMineMachine2_clbk AutoMineMachinector_AutoMineMachine2_user(nullptr);
+        static info::AutoMineMachineChangeOwner4_ptr AutoMineMachineChangeOwner4_next(nullptr);
+        static info::AutoMineMachineChangeOwner4_clbk AutoMineMachineChangeOwner4_user(nullptr);
+        static info::AutoMineMachineCharge6_ptr AutoMineMachineCharge6_next(nullptr);
+        static info::AutoMineMachineCharge6_clbk AutoMineMachineCharge6_user(nullptr);
+        static info::AutoMineMachineDischarge8_ptr AutoMineMachineDischarge8_next(nullptr);
+        static info::AutoMineMachineDischarge8_clbk AutoMineMachineDischarge8_user(nullptr);
+        static info::AutoMineMachineGetMachineInfo10_ptr AutoMineMachineGetMachineInfo10_next(nullptr);
+        static info::AutoMineMachineGetMachineInfo10_clbk AutoMineMachineGetMachineInfo10_user(nullptr);
+        static info::AutoMineMachineGetOutOreInAutoMine12_ptr AutoMineMachineGetOutOreInAutoMine12_next(nullptr);
+        static info::AutoMineMachineGetOutOreInAutoMine12_clbk AutoMineMachineGetOutOreInAutoMine12_user(nullptr);
+        static info::AutoMineMachineGetOwnerGuild14_ptr AutoMineMachineGetOwnerGuild14_next(nullptr);
+        static info::AutoMineMachineGetOwnerGuild14_clbk AutoMineMachineGetOwnerGuild14_user(nullptr);
+        static info::AutoMineMachineGetState16_ptr AutoMineMachineGetState16_next(nullptr);
+        static info::AutoMineMachineGetState16_clbk AutoMineMachineGetState16_user(nullptr);
+        static info::AutoMineMachineInitialize18_ptr AutoMineMachineInitialize18_next(nullptr);
+        static info::AutoMineMachineInitialize18_clbk AutoMineMachineInitialize18_user(nullptr);
+        static info::AutoMineMachineIsMaster20_ptr AutoMineMachineIsMaster20_next(nullptr);
+        static info::AutoMineMachineIsMaster20_clbk AutoMineMachineIsMaster20_user(nullptr);
+        static info::AutoMineMachineLoadDatabase22_ptr AutoMineMachineLoadDatabase22_next(nullptr);
+        static info::AutoMineMachineLoadDatabase22_clbk AutoMineMachineLoadDatabase22_user(nullptr);
+        static info::AutoMineMachineLoop24_ptr AutoMineMachineLoop24_next(nullptr);
+        static info::AutoMineMachineLoop24_clbk AutoMineMachineLoop24_user(nullptr);
+        static info::AutoMineMachineMoveOreInAutoMine26_ptr AutoMineMachineMoveOreInAutoMine26_next(nullptr);
+        static info::AutoMineMachineMoveOreInAutoMine26_clbk AutoMineMachineMoveOreInAutoMine26_user(nullptr);
+        static info::AutoMineMachineOreMerge28_ptr AutoMineMachineOreMerge28_next(nullptr);
+        static info::AutoMineMachineOreMerge28_clbk AutoMineMachineOreMerge28_user(nullptr);
+        static info::AutoMineMachineSelectOre30_ptr AutoMineMachineSelectOre30_next(nullptr);
+        static info::AutoMineMachineSelectOre30_clbk AutoMineMachineSelectOre30_user(nullptr);
+        static info::AutoMineMachineSendMsg_MachineInfo32_ptr AutoMineMachineSendMsg_MachineInfo32_next(nullptr);
+        static info::AutoMineMachineSendMsg_MachineInfo32_clbk AutoMineMachineSendMsg_MachineInfo32_user(nullptr);
+        static info::AutoMineMachineSendMsg_ResultCode34_ptr AutoMineMachineSendMsg_ResultCode34_next(nullptr);
+        static info::AutoMineMachineSendMsg_ResultCode34_clbk AutoMineMachineSendMsg_ResultCode34_user(nullptr);
+        static info::AutoMineMachineSetOpenUI36_ptr AutoMineMachineSetOpenUI36_next(nullptr);
+        static info::AutoMineMachineSetOpenUI36_clbk AutoMineMachineSetOpenUI36_user(nullptr);
+        static info::AutoMineMachineSetOwner38_ptr AutoMineMachineSetOwner38_next(nullptr);
+        static info::AutoMineMachineSetOwner38_clbk AutoMineMachineSetOwner38_user(nullptr);
+        static info::AutoMineMachineStart40_ptr AutoMineMachineStart40_next(nullptr);
+        static info::AutoMineMachineStart40_clbk AutoMineMachineStart40_user(nullptr);
+        static info::AutoMineMachineStop42_ptr AutoMineMachineStop42_next(nullptr);
+        static info::AutoMineMachineStop42_clbk AutoMineMachineStop42_user(nullptr);
+        static info::AutoMineMachineSubChargeCost44_ptr AutoMineMachineSubChargeCost44_next(nullptr);
+        static info::AutoMineMachineSubChargeCost44_clbk AutoMineMachineSubChargeCost44_user(nullptr);
+        static info::AutoMineMachine_Convert_GoldToGage46_ptr AutoMineMachine_Convert_GoldToGage46_next(nullptr);
+        static info::AutoMineMachine_Convert_GoldToGage46_clbk AutoMineMachine_Convert_GoldToGage46_user(nullptr);
+        static info::AutoMineMachine_InitMineOre48_ptr AutoMineMachine_InitMineOre48_next(nullptr);
+        static info::AutoMineMachine_InitMineOre48_clbk AutoMineMachine_InitMineOre48_user(nullptr);
+        static info::AutoMineMachine_Mining50_ptr AutoMineMachine_Mining50_next(nullptr);
+        static info::AutoMineMachine_Mining50_clbk AutoMineMachine_Mining50_user(nullptr);
+        static info::AutoMineMachinepush_dqs_battery_charge52_ptr AutoMineMachinepush_dqs_battery_charge52_next(nullptr);
+        static info::AutoMineMachinepush_dqs_battery_charge52_clbk AutoMineMachinepush_dqs_battery_charge52_user(nullptr);
+        static info::AutoMineMachinepush_dqs_battery_discharge54_ptr AutoMineMachinepush_dqs_battery_discharge54_next(nullptr);
+        static info::AutoMineMachinepush_dqs_battery_discharge54_clbk AutoMineMachinepush_dqs_battery_discharge54_user(nullptr);
+        static info::AutoMineMachinepush_dqs_getore56_ptr AutoMineMachinepush_dqs_getore56_next(nullptr);
+        static info::AutoMineMachinepush_dqs_getore56_clbk AutoMineMachinepush_dqs_getore56_user(nullptr);
+        static info::AutoMineMachinepush_dqs_mineore58_ptr AutoMineMachinepush_dqs_mineore58_next(nullptr);
+        static info::AutoMineMachinepush_dqs_mineore58_clbk AutoMineMachinepush_dqs_mineore58_user(nullptr);
+        static info::AutoMineMachinepush_dqs_moveore60_ptr AutoMineMachinepush_dqs_moveore60_next(nullptr);
+        static info::AutoMineMachinepush_dqs_moveore60_clbk AutoMineMachinepush_dqs_moveore60_user(nullptr);
+        static info::AutoMineMachinepush_dqs_newowner62_ptr AutoMineMachinepush_dqs_newowner62_next(nullptr);
+        static info::AutoMineMachinepush_dqs_newowner62_clbk AutoMineMachinepush_dqs_newowner62_user(nullptr);
+        static info::AutoMineMachinepush_dqs_selore64_ptr AutoMineMachinepush_dqs_selore64_next(nullptr);
+        static info::AutoMineMachinepush_dqs_selore64_clbk AutoMineMachinepush_dqs_selore64_user(nullptr);
+        static info::AutoMineMachinepush_dqs_workingstate66_ptr AutoMineMachinepush_dqs_workingstate66_next(nullptr);
+        static info::AutoMineMachinepush_dqs_workingstate66_clbk AutoMineMachinepush_dqs_workingstate66_user(nullptr);
+        static info::AutoMineMachinedtor_AutoMineMachine68_ptr AutoMineMachinedtor_AutoMineMachine68_next(nullptr);
+        static info::AutoMineMachinedtor_AutoMineMachine68_clbk AutoMineMachinedtor_AutoMineMachine68_user(nullptr);
         
-        void AutoMineMachinector_AutoMineMachine2_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinector_AutoMineMachine2_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinector_AutoMineMachine2_user(_this, AutoMineMachinector_AutoMineMachine2_next);
         };
-        void AutoMineMachineChangeOwner4_wrapper(struct AutoMineMachine* _this, struct CGuild* pOwnerGuild)
+        static void AutoMineMachineChangeOwner4_wrapper(struct AutoMineMachine* _this, struct CGuild* pOwnerGuild)
         {
            AutoMineMachineChangeOwner4_user(_this, pOwnerGuild, AutoMineMachineChangeOwner4_next);
         };
-        void AutoMineMachineCharge6_wrapper(struct AutoMineMachine* _this, int n, int nCharge, int nGold)
+        static void AutoMineMachineCharge6_wrapper(struct AutoMineMachine* _this, int n, int nCharge, int nGold)
         {
            AutoMineMachineCharge6_user(_this, n, nCharge, nGold, AutoMineMachineCharge6_next);
         };
-        void AutoMineMachineDischarge8_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachineDischarge8_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachineDischarge8_user(_this, AutoMineMachineDischarge8_next);
         };
-        void AutoMineMachineGetMachineInfo10_wrapper(struct AutoMineMachine* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pInfo)
+        static void AutoMineMachineGetMachineInfo10_wrapper(struct AutoMineMachine* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pInfo)
         {
            AutoMineMachineGetMachineInfo10_user(_this, pInfo, AutoMineMachineGetMachineInfo10_next);
         };
-        void AutoMineMachineGetOutOreInAutoMine12_wrapper(struct AutoMineMachine* _this, struct CPlayer* pUser, char* pMsg)
+        static void AutoMineMachineGetOutOreInAutoMine12_wrapper(struct AutoMineMachine* _this, struct CPlayer* pUser, char* pMsg)
         {
            AutoMineMachineGetOutOreInAutoMine12_user(_this, pUser, pMsg, AutoMineMachineGetOutOreInAutoMine12_next);
         };
-        struct CGuild* AutoMineMachineGetOwnerGuild14_wrapper(struct AutoMineMachine* _this)
+        static struct CGuild* AutoMineMachineGetOwnerGuild14_wrapper(struct AutoMineMachine* _this)
         {
            return AutoMineMachineGetOwnerGuild14_user(_this, AutoMineMachineGetOwnerGuild14_next);
         };
-        void AutoMineMachineGetState16_wrapper(struct AutoMineMachine* _this, unsigned int* dwState)
+        static void AutoMineMachineGetState16_wrapper(struct AutoMineMachine* _this, unsigned int* dwState)
         {
            AutoMineMachineGetState16_user(_this, dwState, AutoMineMachineGetState16_next);
         };
-        bool AutoMineMachineInitialize18_wrapper(struct AutoMineMachine* _this, char byRace, char byCollisionType)
+        static bool AutoMineMachineInitialize18_wrapper(struct AutoMineMachine* _this, char byRace, char byCollisionType)
         {
            return AutoMineMachineInitialize18_user(_this, byRace, byCollisionType, AutoMineMachineInitialize18_next);
         };
-        bool AutoMineMachineIsMaster20_wrapper(struct AutoMineMachine* _this, struct CPlayer* pUser)
+        static bool AutoMineMachineIsMaster20_wrapper(struct AutoMineMachine* _this, struct CPlayer* pUser)
         {
            return AutoMineMachineIsMaster20_user(_this, pUser, AutoMineMachineIsMaster20_next);
         };
-        bool AutoMineMachineLoadDatabase22_wrapper(struct AutoMineMachine* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pdata)
+        static bool AutoMineMachineLoadDatabase22_wrapper(struct AutoMineMachine* _this, struct _DB_LOAD_AUTOMINE_MACHINE* pdata)
         {
            return AutoMineMachineLoadDatabase22_user(_this, pdata, AutoMineMachineLoadDatabase22_next);
         };
-        void AutoMineMachineLoop24_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachineLoop24_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachineLoop24_user(_this, AutoMineMachineLoop24_next);
         };
-        void AutoMineMachineMoveOreInAutoMine26_wrapper(struct AutoMineMachine* _this, int n, char sl, char ss, char dl, char ds)
+        static void AutoMineMachineMoveOreInAutoMine26_wrapper(struct AutoMineMachine* _this, int n, char sl, char ss, char dl, char ds)
         {
            AutoMineMachineMoveOreInAutoMine26_user(_this, n, sl, ss, dl, ds, AutoMineMachineMoveOreInAutoMine26_next);
         };
-        void AutoMineMachineOreMerge28_wrapper(struct AutoMineMachine* _this, int n, char* pMsg)
+        static void AutoMineMachineOreMerge28_wrapper(struct AutoMineMachine* _this, int n, char* pMsg)
         {
            AutoMineMachineOreMerge28_user(_this, n, pMsg, AutoMineMachineOreMerge28_next);
         };
-        void AutoMineMachineSelectOre30_wrapper(struct AutoMineMachine* _this, int n, char byOre)
+        static void AutoMineMachineSelectOre30_wrapper(struct AutoMineMachine* _this, int n, char byOre)
         {
            AutoMineMachineSelectOre30_user(_this, n, byOre, AutoMineMachineSelectOre30_next);
         };
-        void AutoMineMachineSendMsg_MachineInfo32_wrapper(struct AutoMineMachine* _this, int n)
+        static void AutoMineMachineSendMsg_MachineInfo32_wrapper(struct AutoMineMachine* _this, int n)
         {
            AutoMineMachineSendMsg_MachineInfo32_user(_this, n, AutoMineMachineSendMsg_MachineInfo32_next);
         };
-        void AutoMineMachineSendMsg_ResultCode34_wrapper(struct AutoMineMachine* _this, int n, char byType, char byRetCode)
+        static void AutoMineMachineSendMsg_ResultCode34_wrapper(struct AutoMineMachine* _this, int n, char byType, char byRetCode)
         {
            AutoMineMachineSendMsg_ResultCode34_user(_this, n, byType, byRetCode, AutoMineMachineSendMsg_ResultCode34_next);
         };
-        void AutoMineMachineSetOpenUI36_wrapper(struct AutoMineMachine* _this, bool bOpen)
+        static void AutoMineMachineSetOpenUI36_wrapper(struct AutoMineMachine* _this, bool bOpen)
         {
            AutoMineMachineSetOpenUI36_user(_this, bOpen, AutoMineMachineSetOpenUI36_next);
         };
-        bool AutoMineMachineSetOwner38_wrapper(struct AutoMineMachine* _this, char byRace, char byCollisionType, struct CGuild* pGuild)
+        static bool AutoMineMachineSetOwner38_wrapper(struct AutoMineMachine* _this, char byRace, char byCollisionType, struct CGuild* pGuild)
         {
            return AutoMineMachineSetOwner38_user(_this, byRace, byCollisionType, pGuild, AutoMineMachineSetOwner38_next);
         };
-        void AutoMineMachineStart40_wrapper(struct AutoMineMachine* _this, int n)
+        static void AutoMineMachineStart40_wrapper(struct AutoMineMachine* _this, int n)
         {
            AutoMineMachineStart40_user(_this, n, AutoMineMachineStart40_next);
         };
-        void AutoMineMachineStop42_wrapper(struct AutoMineMachine* _this, int n)
+        static void AutoMineMachineStop42_wrapper(struct AutoMineMachine* _this, int n)
         {
            AutoMineMachineStop42_user(_this, n, AutoMineMachineStop42_next);
         };
-        void AutoMineMachineSubChargeCost44_wrapper(struct AutoMineMachine* _this, char byRet, char* pdata)
+        static void AutoMineMachineSubChargeCost44_wrapper(struct AutoMineMachine* _this, char byRet, char* pdata)
         {
            AutoMineMachineSubChargeCost44_user(_this, byRet, pdata, AutoMineMachineSubChargeCost44_next);
         };
-        int AutoMineMachine_Convert_GoldToGage46_wrapper(struct AutoMineMachine* _this, int nGold)
+        static int AutoMineMachine_Convert_GoldToGage46_wrapper(struct AutoMineMachine* _this, int nGold)
         {
            return AutoMineMachine_Convert_GoldToGage46_user(_this, nGold, AutoMineMachine_Convert_GoldToGage46_next);
         };
-        bool AutoMineMachine_InitMineOre48_wrapper(struct AutoMineMachine* _this)
+        static bool AutoMineMachine_InitMineOre48_wrapper(struct AutoMineMachine* _this)
         {
            return AutoMineMachine_InitMineOre48_user(_this, AutoMineMachine_InitMineOre48_next);
         };
-        void AutoMineMachine_Mining50_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachine_Mining50_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachine_Mining50_user(_this, AutoMineMachine_Mining50_next);
         };
-        void AutoMineMachinepush_dqs_battery_charge52_wrapper(struct AutoMineMachine* _this, uint16_t wIndex, int ncharge, int ncost)
+        static void AutoMineMachinepush_dqs_battery_charge52_wrapper(struct AutoMineMachine* _this, uint16_t wIndex, int ncharge, int ncost)
         {
            AutoMineMachinepush_dqs_battery_charge52_user(_this, wIndex, ncharge, ncost, AutoMineMachinepush_dqs_battery_charge52_next);
         };
-        void AutoMineMachinepush_dqs_battery_discharge54_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinepush_dqs_battery_discharge54_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinepush_dqs_battery_discharge54_user(_this, AutoMineMachinepush_dqs_battery_discharge54_next);
         };
-        void AutoMineMachinepush_dqs_getore56_wrapper(struct AutoMineMachine* _this, int nP, int nS, char byNum)
+        static void AutoMineMachinepush_dqs_getore56_wrapper(struct AutoMineMachine* _this, int nP, int nS, char byNum)
         {
            AutoMineMachinepush_dqs_getore56_user(_this, nP, nS, byNum, AutoMineMachinepush_dqs_getore56_next);
         };
-        void AutoMineMachinepush_dqs_mineore58_wrapper(struct AutoMineMachine* _this, int nP, int nS)
+        static void AutoMineMachinepush_dqs_mineore58_wrapper(struct AutoMineMachine* _this, int nP, int nS)
         {
            AutoMineMachinepush_dqs_mineore58_user(_this, nP, nS, AutoMineMachinepush_dqs_mineore58_next);
         };
-        void AutoMineMachinepush_dqs_moveore60_wrapper(struct AutoMineMachine* _this, int nDBSlot_S, struct _INVENKEY* pSKey, char bySNum, int nDBSlot_D, struct _INVENKEY* pDKey, char byDNum)
+        static void AutoMineMachinepush_dqs_moveore60_wrapper(struct AutoMineMachine* _this, int nDBSlot_S, struct _INVENKEY* pSKey, char bySNum, int nDBSlot_D, struct _INVENKEY* pDKey, char byDNum)
         {
            AutoMineMachinepush_dqs_moveore60_user(_this, nDBSlot_S, pSKey, bySNum, nDBSlot_D, pDKey, byDNum, AutoMineMachinepush_dqs_moveore60_next);
         };
-        void AutoMineMachinepush_dqs_newowner62_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinepush_dqs_newowner62_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinepush_dqs_newowner62_user(_this, AutoMineMachinepush_dqs_newowner62_next);
         };
-        void AutoMineMachinepush_dqs_selore64_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinepush_dqs_selore64_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinepush_dqs_selore64_user(_this, AutoMineMachinepush_dqs_selore64_next);
         };
-        void AutoMineMachinepush_dqs_workingstate66_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinepush_dqs_workingstate66_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinepush_dqs_workingstate66_user(_this, AutoMineMachinepush_dqs_workingstate66_next);
         };
-        void AutoMineMachinedtor_AutoMineMachine68_wrapper(struct AutoMineMachine* _this)
+        static void AutoMineMachinedtor_AutoMineMachine68_wrapper(struct AutoMineMachine* _this)
         {
            AutoMineMachinedtor_AutoMineMachine68_user(_this, AutoMineMachinedtor_AutoMineMachine68_next);
         };
         
-        hook_record AutoMineMachine_functions[] = {
+        static hook_record AutoMineMachine_functions[] = {
         {   (LPVOID)0x1402d0340L,
             (LPVOID *)&AutoMineMachinector_AutoMineMachine2_user,
             (LPVOID *)&AutoMineMachinector_AutoMineMachine2_next,
@@ -388,5 +388,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

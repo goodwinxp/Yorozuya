@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_ptr _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_next(nullptr);
-        info::_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_clbk _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_user(nullptr);
+        static info::_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_ptr _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_next(nullptr);
+        static info::_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_clbk _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_user(nullptr);
         
-        void _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_wrapper(struct _DB_QRY_SYN_DATA* _this)
+        static void _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_wrapper(struct _DB_QRY_SYN_DATA* _this)
         {
            _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_user(_this, _DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_next);
         };
         
-        hook_record _DB_QRY_SYN_DATA_functions[] = {
+        static hook_record _DB_QRY_SYN_DATA_functions[] = {
         {   (LPVOID)0x1402024a0L,
             (LPVOID *)&_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_user,
             (LPVOID *)&_DB_QRY_SYN_DATActor__DB_QRY_SYN_DATA2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

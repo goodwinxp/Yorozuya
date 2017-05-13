@@ -8,273 +8,273 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRectBottomRight1_ptr CRectBottomRight1_next(nullptr);
-        info::CRectBottomRight1_clbk CRectBottomRight1_user(nullptr);
-        info::CRectBottomRight2_ptr CRectBottomRight2_next(nullptr);
-        info::CRectBottomRight2_clbk CRectBottomRight2_user(nullptr);
-        info::CRectctor_CRect3_ptr CRectctor_CRect3_next(nullptr);
-        info::CRectctor_CRect3_clbk CRectctor_CRect3_user(nullptr);
-        info::CRectctor_CRect4_ptr CRectctor_CRect4_next(nullptr);
-        info::CRectctor_CRect4_clbk CRectctor_CRect4_user(nullptr);
-        info::CRectctor_CRect5_ptr CRectctor_CRect5_next(nullptr);
-        info::CRectctor_CRect5_clbk CRectctor_CRect5_user(nullptr);
-        info::CRectctor_CRect6_ptr CRectctor_CRect6_next(nullptr);
-        info::CRectctor_CRect6_clbk CRectctor_CRect6_user(nullptr);
-        info::CRectctor_CRect7_ptr CRectctor_CRect7_next(nullptr);
-        info::CRectctor_CRect7_clbk CRectctor_CRect7_user(nullptr);
-        info::CRectctor_CRect8_ptr CRectctor_CRect8_next(nullptr);
-        info::CRectctor_CRect8_clbk CRectctor_CRect8_user(nullptr);
-        info::CRectCenterPoint9_ptr CRectCenterPoint9_next(nullptr);
-        info::CRectCenterPoint9_clbk CRectCenterPoint9_user(nullptr);
-        info::CRectCopyRect10_ptr CRectCopyRect10_next(nullptr);
-        info::CRectCopyRect10_clbk CRectCopyRect10_user(nullptr);
-        info::CRectDeflateRect11_ptr CRectDeflateRect11_next(nullptr);
-        info::CRectDeflateRect11_clbk CRectDeflateRect11_user(nullptr);
-        info::CRectDeflateRect12_ptr CRectDeflateRect12_next(nullptr);
-        info::CRectDeflateRect12_clbk CRectDeflateRect12_user(nullptr);
-        info::CRectDeflateRect13_ptr CRectDeflateRect13_next(nullptr);
-        info::CRectDeflateRect13_clbk CRectDeflateRect13_user(nullptr);
-        info::CRectDeflateRect14_ptr CRectDeflateRect14_next(nullptr);
-        info::CRectDeflateRect14_clbk CRectDeflateRect14_user(nullptr);
-        info::CRectEqualRect15_ptr CRectEqualRect15_next(nullptr);
-        info::CRectEqualRect15_clbk CRectEqualRect15_user(nullptr);
-        info::CRectHeight16_ptr CRectHeight16_next(nullptr);
-        info::CRectHeight16_clbk CRectHeight16_user(nullptr);
-        info::CRectInflateRect17_ptr CRectInflateRect17_next(nullptr);
-        info::CRectInflateRect17_clbk CRectInflateRect17_user(nullptr);
-        info::CRectInflateRect18_ptr CRectInflateRect18_next(nullptr);
-        info::CRectInflateRect18_clbk CRectInflateRect18_user(nullptr);
-        info::CRectInflateRect19_ptr CRectInflateRect19_next(nullptr);
-        info::CRectInflateRect19_clbk CRectInflateRect19_user(nullptr);
-        info::CRectInflateRect20_ptr CRectInflateRect20_next(nullptr);
-        info::CRectInflateRect20_clbk CRectInflateRect20_user(nullptr);
-        info::CRectIntersectRect21_ptr CRectIntersectRect21_next(nullptr);
-        info::CRectIntersectRect21_clbk CRectIntersectRect21_user(nullptr);
-        info::CRectIsRectEmpty22_ptr CRectIsRectEmpty22_next(nullptr);
-        info::CRectIsRectEmpty22_clbk CRectIsRectEmpty22_user(nullptr);
-        info::CRectIsRectNull23_ptr CRectIsRectNull23_next(nullptr);
-        info::CRectIsRectNull23_clbk CRectIsRectNull23_user(nullptr);
-        info::CRectMoveToX24_ptr CRectMoveToX24_next(nullptr);
-        info::CRectMoveToX24_clbk CRectMoveToX24_user(nullptr);
-        info::CRectMoveToXY25_ptr CRectMoveToXY25_next(nullptr);
-        info::CRectMoveToXY25_clbk CRectMoveToXY25_user(nullptr);
-        info::CRectMoveToXY26_ptr CRectMoveToXY26_next(nullptr);
-        info::CRectMoveToXY26_clbk CRectMoveToXY26_user(nullptr);
-        info::CRectMoveToY27_ptr CRectMoveToY27_next(nullptr);
-        info::CRectMoveToY27_clbk CRectMoveToY27_user(nullptr);
-        info::CRectMulDiv28_ptr CRectMulDiv28_next(nullptr);
-        info::CRectMulDiv28_clbk CRectMulDiv28_user(nullptr);
-        info::CRectNormalizeRect29_ptr CRectNormalizeRect29_next(nullptr);
-        info::CRectNormalizeRect29_clbk CRectNormalizeRect29_user(nullptr);
-        info::CRectOffsetRect30_ptr CRectOffsetRect30_next(nullptr);
-        info::CRectOffsetRect30_clbk CRectOffsetRect30_user(nullptr);
-        info::CRectOffsetRect31_ptr CRectOffsetRect31_next(nullptr);
-        info::CRectOffsetRect31_clbk CRectOffsetRect31_user(nullptr);
-        info::CRectOffsetRect32_ptr CRectOffsetRect32_next(nullptr);
-        info::CRectOffsetRect32_clbk CRectOffsetRect32_user(nullptr);
-        info::CRectPtInRect33_ptr CRectPtInRect33_next(nullptr);
-        info::CRectPtInRect33_clbk CRectPtInRect33_user(nullptr);
-        info::CRectSetRect34_ptr CRectSetRect34_next(nullptr);
-        info::CRectSetRect34_clbk CRectSetRect34_user(nullptr);
-        info::CRectSetRect35_ptr CRectSetRect35_next(nullptr);
-        info::CRectSetRect35_clbk CRectSetRect35_user(nullptr);
-        info::CRectSetRectEmpty36_ptr CRectSetRectEmpty36_next(nullptr);
-        info::CRectSetRectEmpty36_clbk CRectSetRectEmpty36_user(nullptr);
-        info::CRectSize37_ptr CRectSize37_next(nullptr);
-        info::CRectSize37_clbk CRectSize37_user(nullptr);
-        info::CRectSubtractRect38_ptr CRectSubtractRect38_next(nullptr);
-        info::CRectSubtractRect38_clbk CRectSubtractRect38_user(nullptr);
-        info::CRectSwapLeftRight39_ptr CRectSwapLeftRight39_next(nullptr);
-        info::CRectSwapLeftRight39_clbk CRectSwapLeftRight39_user(nullptr);
-        info::CRectSwapLeftRight40_ptr CRectSwapLeftRight40_next(nullptr);
-        info::CRectSwapLeftRight40_clbk CRectSwapLeftRight40_user(nullptr);
-        info::CRectTopLeft41_ptr CRectTopLeft41_next(nullptr);
-        info::CRectTopLeft41_clbk CRectTopLeft41_user(nullptr);
-        info::CRectTopLeft42_ptr CRectTopLeft42_next(nullptr);
-        info::CRectTopLeft42_clbk CRectTopLeft42_user(nullptr);
-        info::CRectUnionRect43_ptr CRectUnionRect43_next(nullptr);
-        info::CRectUnionRect43_clbk CRectUnionRect43_user(nullptr);
-        info::CRectWidth44_ptr CRectWidth44_next(nullptr);
-        info::CRectWidth44_clbk CRectWidth44_user(nullptr);
+        static info::CRectBottomRight1_ptr CRectBottomRight1_next(nullptr);
+        static info::CRectBottomRight1_clbk CRectBottomRight1_user(nullptr);
+        static info::CRectBottomRight2_ptr CRectBottomRight2_next(nullptr);
+        static info::CRectBottomRight2_clbk CRectBottomRight2_user(nullptr);
+        static info::CRectctor_CRect3_ptr CRectctor_CRect3_next(nullptr);
+        static info::CRectctor_CRect3_clbk CRectctor_CRect3_user(nullptr);
+        static info::CRectctor_CRect4_ptr CRectctor_CRect4_next(nullptr);
+        static info::CRectctor_CRect4_clbk CRectctor_CRect4_user(nullptr);
+        static info::CRectctor_CRect5_ptr CRectctor_CRect5_next(nullptr);
+        static info::CRectctor_CRect5_clbk CRectctor_CRect5_user(nullptr);
+        static info::CRectctor_CRect6_ptr CRectctor_CRect6_next(nullptr);
+        static info::CRectctor_CRect6_clbk CRectctor_CRect6_user(nullptr);
+        static info::CRectctor_CRect7_ptr CRectctor_CRect7_next(nullptr);
+        static info::CRectctor_CRect7_clbk CRectctor_CRect7_user(nullptr);
+        static info::CRectctor_CRect8_ptr CRectctor_CRect8_next(nullptr);
+        static info::CRectctor_CRect8_clbk CRectctor_CRect8_user(nullptr);
+        static info::CRectCenterPoint9_ptr CRectCenterPoint9_next(nullptr);
+        static info::CRectCenterPoint9_clbk CRectCenterPoint9_user(nullptr);
+        static info::CRectCopyRect10_ptr CRectCopyRect10_next(nullptr);
+        static info::CRectCopyRect10_clbk CRectCopyRect10_user(nullptr);
+        static info::CRectDeflateRect11_ptr CRectDeflateRect11_next(nullptr);
+        static info::CRectDeflateRect11_clbk CRectDeflateRect11_user(nullptr);
+        static info::CRectDeflateRect12_ptr CRectDeflateRect12_next(nullptr);
+        static info::CRectDeflateRect12_clbk CRectDeflateRect12_user(nullptr);
+        static info::CRectDeflateRect13_ptr CRectDeflateRect13_next(nullptr);
+        static info::CRectDeflateRect13_clbk CRectDeflateRect13_user(nullptr);
+        static info::CRectDeflateRect14_ptr CRectDeflateRect14_next(nullptr);
+        static info::CRectDeflateRect14_clbk CRectDeflateRect14_user(nullptr);
+        static info::CRectEqualRect15_ptr CRectEqualRect15_next(nullptr);
+        static info::CRectEqualRect15_clbk CRectEqualRect15_user(nullptr);
+        static info::CRectHeight16_ptr CRectHeight16_next(nullptr);
+        static info::CRectHeight16_clbk CRectHeight16_user(nullptr);
+        static info::CRectInflateRect17_ptr CRectInflateRect17_next(nullptr);
+        static info::CRectInflateRect17_clbk CRectInflateRect17_user(nullptr);
+        static info::CRectInflateRect18_ptr CRectInflateRect18_next(nullptr);
+        static info::CRectInflateRect18_clbk CRectInflateRect18_user(nullptr);
+        static info::CRectInflateRect19_ptr CRectInflateRect19_next(nullptr);
+        static info::CRectInflateRect19_clbk CRectInflateRect19_user(nullptr);
+        static info::CRectInflateRect20_ptr CRectInflateRect20_next(nullptr);
+        static info::CRectInflateRect20_clbk CRectInflateRect20_user(nullptr);
+        static info::CRectIntersectRect21_ptr CRectIntersectRect21_next(nullptr);
+        static info::CRectIntersectRect21_clbk CRectIntersectRect21_user(nullptr);
+        static info::CRectIsRectEmpty22_ptr CRectIsRectEmpty22_next(nullptr);
+        static info::CRectIsRectEmpty22_clbk CRectIsRectEmpty22_user(nullptr);
+        static info::CRectIsRectNull23_ptr CRectIsRectNull23_next(nullptr);
+        static info::CRectIsRectNull23_clbk CRectIsRectNull23_user(nullptr);
+        static info::CRectMoveToX24_ptr CRectMoveToX24_next(nullptr);
+        static info::CRectMoveToX24_clbk CRectMoveToX24_user(nullptr);
+        static info::CRectMoveToXY25_ptr CRectMoveToXY25_next(nullptr);
+        static info::CRectMoveToXY25_clbk CRectMoveToXY25_user(nullptr);
+        static info::CRectMoveToXY26_ptr CRectMoveToXY26_next(nullptr);
+        static info::CRectMoveToXY26_clbk CRectMoveToXY26_user(nullptr);
+        static info::CRectMoveToY27_ptr CRectMoveToY27_next(nullptr);
+        static info::CRectMoveToY27_clbk CRectMoveToY27_user(nullptr);
+        static info::CRectMulDiv28_ptr CRectMulDiv28_next(nullptr);
+        static info::CRectMulDiv28_clbk CRectMulDiv28_user(nullptr);
+        static info::CRectNormalizeRect29_ptr CRectNormalizeRect29_next(nullptr);
+        static info::CRectNormalizeRect29_clbk CRectNormalizeRect29_user(nullptr);
+        static info::CRectOffsetRect30_ptr CRectOffsetRect30_next(nullptr);
+        static info::CRectOffsetRect30_clbk CRectOffsetRect30_user(nullptr);
+        static info::CRectOffsetRect31_ptr CRectOffsetRect31_next(nullptr);
+        static info::CRectOffsetRect31_clbk CRectOffsetRect31_user(nullptr);
+        static info::CRectOffsetRect32_ptr CRectOffsetRect32_next(nullptr);
+        static info::CRectOffsetRect32_clbk CRectOffsetRect32_user(nullptr);
+        static info::CRectPtInRect33_ptr CRectPtInRect33_next(nullptr);
+        static info::CRectPtInRect33_clbk CRectPtInRect33_user(nullptr);
+        static info::CRectSetRect34_ptr CRectSetRect34_next(nullptr);
+        static info::CRectSetRect34_clbk CRectSetRect34_user(nullptr);
+        static info::CRectSetRect35_ptr CRectSetRect35_next(nullptr);
+        static info::CRectSetRect35_clbk CRectSetRect35_user(nullptr);
+        static info::CRectSetRectEmpty36_ptr CRectSetRectEmpty36_next(nullptr);
+        static info::CRectSetRectEmpty36_clbk CRectSetRectEmpty36_user(nullptr);
+        static info::CRectSize37_ptr CRectSize37_next(nullptr);
+        static info::CRectSize37_clbk CRectSize37_user(nullptr);
+        static info::CRectSubtractRect38_ptr CRectSubtractRect38_next(nullptr);
+        static info::CRectSubtractRect38_clbk CRectSubtractRect38_user(nullptr);
+        static info::CRectSwapLeftRight39_ptr CRectSwapLeftRight39_next(nullptr);
+        static info::CRectSwapLeftRight39_clbk CRectSwapLeftRight39_user(nullptr);
+        static info::CRectSwapLeftRight40_ptr CRectSwapLeftRight40_next(nullptr);
+        static info::CRectSwapLeftRight40_clbk CRectSwapLeftRight40_user(nullptr);
+        static info::CRectTopLeft41_ptr CRectTopLeft41_next(nullptr);
+        static info::CRectTopLeft41_clbk CRectTopLeft41_user(nullptr);
+        static info::CRectTopLeft42_ptr CRectTopLeft42_next(nullptr);
+        static info::CRectTopLeft42_clbk CRectTopLeft42_user(nullptr);
+        static info::CRectUnionRect43_ptr CRectUnionRect43_next(nullptr);
+        static info::CRectUnionRect43_clbk CRectUnionRect43_user(nullptr);
+        static info::CRectWidth44_ptr CRectWidth44_next(nullptr);
+        static info::CRectWidth44_clbk CRectWidth44_user(nullptr);
         
-        struct CPoint* CRectBottomRight1_wrapper(struct CRect* _this)
+        static struct CPoint* CRectBottomRight1_wrapper(struct CRect* _this)
         {
            return CRectBottomRight1_user(_this, CRectBottomRight1_next);
         };
-        struct CPoint* CRectBottomRight2_wrapper(struct CRect* _this)
+        static struct CPoint* CRectBottomRight2_wrapper(struct CRect* _this)
         {
            return CRectBottomRight2_user(_this, CRectBottomRight2_next);
         };
-        void CRectctor_CRect3_wrapper(struct CRect* _this, int l, int t, int r, int b)
+        static void CRectctor_CRect3_wrapper(struct CRect* _this, int l, int t, int r, int b)
         {
            CRectctor_CRect3_user(_this, l, t, r, b, CRectctor_CRect3_next);
         };
-        void CRectctor_CRect4_wrapper(struct CRect* _this, struct tagPOINT topLeft, struct tagPOINT bottomRight)
+        static void CRectctor_CRect4_wrapper(struct CRect* _this, struct tagPOINT topLeft, struct tagPOINT bottomRight)
         {
            CRectctor_CRect4_user(_this, topLeft, bottomRight, CRectctor_CRect4_next);
         };
-        void CRectctor_CRect5_wrapper(struct CRect* _this, struct tagPOINT point, struct tagSIZE size)
+        static void CRectctor_CRect5_wrapper(struct CRect* _this, struct tagPOINT point, struct tagSIZE size)
         {
            CRectctor_CRect5_user(_this, point, size, CRectctor_CRect5_next);
         };
-        void CRectctor_CRect6_wrapper(struct CRect* _this, struct tagRECT* srcRect)
+        static void CRectctor_CRect6_wrapper(struct CRect* _this, struct tagRECT* srcRect)
         {
            CRectctor_CRect6_user(_this, srcRect, CRectctor_CRect6_next);
         };
-        void CRectctor_CRect7_wrapper(struct CRect* _this, struct tagRECT* lpSrcRect)
+        static void CRectctor_CRect7_wrapper(struct CRect* _this, struct tagRECT* lpSrcRect)
         {
            CRectctor_CRect7_user(_this, lpSrcRect, CRectctor_CRect7_next);
         };
-        void CRectctor_CRect8_wrapper(struct CRect* _this)
+        static void CRectctor_CRect8_wrapper(struct CRect* _this)
         {
            CRectctor_CRect8_user(_this, CRectctor_CRect8_next);
         };
-        struct CPoint* CRectCenterPoint9_wrapper(struct CRect* _this, struct CPoint* result)
+        static struct CPoint* CRectCenterPoint9_wrapper(struct CRect* _this, struct CPoint* result)
         {
            return CRectCenterPoint9_user(_this, result, CRectCenterPoint9_next);
         };
-        void CRectCopyRect10_wrapper(struct CRect* _this, struct tagRECT* lpSrcRect)
+        static void CRectCopyRect10_wrapper(struct CRect* _this, struct tagRECT* lpSrcRect)
         {
            CRectCopyRect10_user(_this, lpSrcRect, CRectCopyRect10_next);
         };
-        void CRectDeflateRect11_wrapper(struct CRect* _this, int x, int y)
+        static void CRectDeflateRect11_wrapper(struct CRect* _this, int x, int y)
         {
            CRectDeflateRect11_user(_this, x, y, CRectDeflateRect11_next);
         };
-        void CRectDeflateRect12_wrapper(struct CRect* _this, int l, int t, int r, int b)
+        static void CRectDeflateRect12_wrapper(struct CRect* _this, int l, int t, int r, int b)
         {
            CRectDeflateRect12_user(_this, l, t, r, b, CRectDeflateRect12_next);
         };
-        void CRectDeflateRect13_wrapper(struct CRect* _this, struct tagRECT* lpRect)
+        static void CRectDeflateRect13_wrapper(struct CRect* _this, struct tagRECT* lpRect)
         {
            CRectDeflateRect13_user(_this, lpRect, CRectDeflateRect13_next);
         };
-        void CRectDeflateRect14_wrapper(struct CRect* _this, struct tagSIZE size)
+        static void CRectDeflateRect14_wrapper(struct CRect* _this, struct tagSIZE size)
         {
            CRectDeflateRect14_user(_this, size, CRectDeflateRect14_next);
         };
-        int CRectEqualRect15_wrapper(struct CRect* _this, struct tagRECT* lpRect)
+        static int CRectEqualRect15_wrapper(struct CRect* _this, struct tagRECT* lpRect)
         {
            return CRectEqualRect15_user(_this, lpRect, CRectEqualRect15_next);
         };
-        int CRectHeight16_wrapper(struct CRect* _this)
+        static int CRectHeight16_wrapper(struct CRect* _this)
         {
            return CRectHeight16_user(_this, CRectHeight16_next);
         };
-        void CRectInflateRect17_wrapper(struct CRect* _this, int x, int y)
+        static void CRectInflateRect17_wrapper(struct CRect* _this, int x, int y)
         {
            CRectInflateRect17_user(_this, x, y, CRectInflateRect17_next);
         };
-        void CRectInflateRect18_wrapper(struct CRect* _this, int l, int t, int r, int b)
+        static void CRectInflateRect18_wrapper(struct CRect* _this, int l, int t, int r, int b)
         {
            CRectInflateRect18_user(_this, l, t, r, b, CRectInflateRect18_next);
         };
-        void CRectInflateRect19_wrapper(struct CRect* _this, struct tagRECT* lpRect)
+        static void CRectInflateRect19_wrapper(struct CRect* _this, struct tagRECT* lpRect)
         {
            CRectInflateRect19_user(_this, lpRect, CRectInflateRect19_next);
         };
-        void CRectInflateRect20_wrapper(struct CRect* _this, struct tagSIZE size)
+        static void CRectInflateRect20_wrapper(struct CRect* _this, struct tagSIZE size)
         {
            CRectInflateRect20_user(_this, size, CRectInflateRect20_next);
         };
-        int CRectIntersectRect21_wrapper(struct CRect* _this, struct tagRECT* lpRect1, struct tagRECT* lpRect2)
+        static int CRectIntersectRect21_wrapper(struct CRect* _this, struct tagRECT* lpRect1, struct tagRECT* lpRect2)
         {
            return CRectIntersectRect21_user(_this, lpRect1, lpRect2, CRectIntersectRect21_next);
         };
-        int CRectIsRectEmpty22_wrapper(struct CRect* _this)
+        static int CRectIsRectEmpty22_wrapper(struct CRect* _this)
         {
            return CRectIsRectEmpty22_user(_this, CRectIsRectEmpty22_next);
         };
-        int CRectIsRectNull23_wrapper(struct CRect* _this)
+        static int CRectIsRectNull23_wrapper(struct CRect* _this)
         {
            return CRectIsRectNull23_user(_this, CRectIsRectNull23_next);
         };
-        void CRectMoveToX24_wrapper(struct CRect* _this, int x)
+        static void CRectMoveToX24_wrapper(struct CRect* _this, int x)
         {
            CRectMoveToX24_user(_this, x, CRectMoveToX24_next);
         };
-        void CRectMoveToXY25_wrapper(struct CRect* _this, int x, int y)
+        static void CRectMoveToXY25_wrapper(struct CRect* _this, int x, int y)
         {
            CRectMoveToXY25_user(_this, x, y, CRectMoveToXY25_next);
         };
-        void CRectMoveToXY26_wrapper(struct CRect* _this, struct tagPOINT pt)
+        static void CRectMoveToXY26_wrapper(struct CRect* _this, struct tagPOINT pt)
         {
            CRectMoveToXY26_user(_this, pt, CRectMoveToXY26_next);
         };
-        void CRectMoveToY27_wrapper(struct CRect* _this, int y)
+        static void CRectMoveToY27_wrapper(struct CRect* _this, int y)
         {
            CRectMoveToY27_user(_this, y, CRectMoveToY27_next);
         };
-        struct CRect* CRectMulDiv28_wrapper(struct CRect* _this, struct CRect* result, int nMultiplier, int nDivisor)
+        static struct CRect* CRectMulDiv28_wrapper(struct CRect* _this, struct CRect* result, int nMultiplier, int nDivisor)
         {
            return CRectMulDiv28_user(_this, result, nMultiplier, nDivisor, CRectMulDiv28_next);
         };
-        void CRectNormalizeRect29_wrapper(struct CRect* _this)
+        static void CRectNormalizeRect29_wrapper(struct CRect* _this)
         {
            CRectNormalizeRect29_user(_this, CRectNormalizeRect29_next);
         };
-        void CRectOffsetRect30_wrapper(struct CRect* _this, int x, int y)
+        static void CRectOffsetRect30_wrapper(struct CRect* _this, int x, int y)
         {
            CRectOffsetRect30_user(_this, x, y, CRectOffsetRect30_next);
         };
-        void CRectOffsetRect31_wrapper(struct CRect* _this, struct tagPOINT point)
+        static void CRectOffsetRect31_wrapper(struct CRect* _this, struct tagPOINT point)
         {
            CRectOffsetRect31_user(_this, point, CRectOffsetRect31_next);
         };
-        void CRectOffsetRect32_wrapper(struct CRect* _this, struct tagSIZE size)
+        static void CRectOffsetRect32_wrapper(struct CRect* _this, struct tagSIZE size)
         {
            CRectOffsetRect32_user(_this, size, CRectOffsetRect32_next);
         };
-        int CRectPtInRect33_wrapper(struct CRect* _this, struct tagPOINT point)
+        static int CRectPtInRect33_wrapper(struct CRect* _this, struct tagPOINT point)
         {
            return CRectPtInRect33_user(_this, point, CRectPtInRect33_next);
         };
-        void CRectSetRect34_wrapper(struct CRect* _this, int x1, int y1, int x2, int y2)
+        static void CRectSetRect34_wrapper(struct CRect* _this, int x1, int y1, int x2, int y2)
         {
            CRectSetRect34_user(_this, x1, y1, x2, y2, CRectSetRect34_next);
         };
-        void CRectSetRect35_wrapper(struct CRect* _this, struct tagPOINT topLeft, struct tagPOINT bottomRight)
+        static void CRectSetRect35_wrapper(struct CRect* _this, struct tagPOINT topLeft, struct tagPOINT bottomRight)
         {
            CRectSetRect35_user(_this, topLeft, bottomRight, CRectSetRect35_next);
         };
-        void CRectSetRectEmpty36_wrapper(struct CRect* _this)
+        static void CRectSetRectEmpty36_wrapper(struct CRect* _this)
         {
            CRectSetRectEmpty36_user(_this, CRectSetRectEmpty36_next);
         };
-        struct CSize* CRectSize37_wrapper(struct CRect* _this, struct CSize* result)
+        static struct CSize* CRectSize37_wrapper(struct CRect* _this, struct CSize* result)
         {
            return CRectSize37_user(_this, result, CRectSize37_next);
         };
-        int CRectSubtractRect38_wrapper(struct CRect* _this, struct tagRECT* lpRectSrc1, struct tagRECT* lpRectSrc2)
+        static int CRectSubtractRect38_wrapper(struct CRect* _this, struct tagRECT* lpRectSrc1, struct tagRECT* lpRectSrc2)
         {
            return CRectSubtractRect38_user(_this, lpRectSrc1, lpRectSrc2, CRectSubtractRect38_next);
         };
-        void CRectSwapLeftRight39_wrapper(struct tagRECT* lpRect)
+        static void CRectSwapLeftRight39_wrapper(struct tagRECT* lpRect)
         {
            CRectSwapLeftRight39_user(lpRect, CRectSwapLeftRight39_next);
         };
-        void CRectSwapLeftRight40_wrapper(struct CRect* _this)
+        static void CRectSwapLeftRight40_wrapper(struct CRect* _this)
         {
            CRectSwapLeftRight40_user(_this, CRectSwapLeftRight40_next);
         };
-        struct CPoint* CRectTopLeft41_wrapper(struct CRect* _this)
+        static struct CPoint* CRectTopLeft41_wrapper(struct CRect* _this)
         {
            return CRectTopLeft41_user(_this, CRectTopLeft41_next);
         };
-        struct CPoint* CRectTopLeft42_wrapper(struct CRect* _this)
+        static struct CPoint* CRectTopLeft42_wrapper(struct CRect* _this)
         {
            return CRectTopLeft42_user(_this, CRectTopLeft42_next);
         };
-        int CRectUnionRect43_wrapper(struct CRect* _this, struct tagRECT* lpRect1, struct tagRECT* lpRect2)
+        static int CRectUnionRect43_wrapper(struct CRect* _this, struct tagRECT* lpRect1, struct tagRECT* lpRect2)
         {
            return CRectUnionRect43_user(_this, lpRect1, lpRect2, CRectUnionRect43_next);
         };
-        int CRectWidth44_wrapper(struct CRect* _this)
+        static int CRectWidth44_wrapper(struct CRect* _this)
         {
            return CRectWidth44_user(_this, CRectWidth44_next);
         };
         
-        hook_record CRect_functions[] = {
+        static hook_record CRect_functions[] = {
         {   (LPVOID)0x140671260L,
             (LPVOID *)&CRectBottomRight1_user,
             (LPVOID *)&CRectBottomRight1_next,
@@ -498,5 +498,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

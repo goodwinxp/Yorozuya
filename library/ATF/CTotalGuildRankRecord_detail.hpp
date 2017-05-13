@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTotalGuildRankRecordctor_CTotalGuildRankRecord2_ptr CTotalGuildRankRecordctor_CTotalGuildRankRecord2_next(nullptr);
-        info::CTotalGuildRankRecordctor_CTotalGuildRankRecord2_clbk CTotalGuildRankRecordctor_CTotalGuildRankRecord2_user(nullptr);
-        info::CTotalGuildRankRecordClear4_ptr CTotalGuildRankRecordClear4_next(nullptr);
-        info::CTotalGuildRankRecordClear4_clbk CTotalGuildRankRecordClear4_user(nullptr);
-        info::CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_ptr CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_next(nullptr);
-        info::CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_clbk CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_user(nullptr);
+        static info::CTotalGuildRankRecordctor_CTotalGuildRankRecord2_ptr CTotalGuildRankRecordctor_CTotalGuildRankRecord2_next(nullptr);
+        static info::CTotalGuildRankRecordctor_CTotalGuildRankRecord2_clbk CTotalGuildRankRecordctor_CTotalGuildRankRecord2_user(nullptr);
+        static info::CTotalGuildRankRecordClear4_ptr CTotalGuildRankRecordClear4_next(nullptr);
+        static info::CTotalGuildRankRecordClear4_clbk CTotalGuildRankRecordClear4_user(nullptr);
+        static info::CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_ptr CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_next(nullptr);
+        static info::CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_clbk CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_user(nullptr);
         
-        void CTotalGuildRankRecordctor_CTotalGuildRankRecord2_wrapper(struct CTotalGuildRankRecord* _this)
+        static void CTotalGuildRankRecordctor_CTotalGuildRankRecord2_wrapper(struct CTotalGuildRankRecord* _this)
         {
            CTotalGuildRankRecordctor_CTotalGuildRankRecord2_user(_this, CTotalGuildRankRecordctor_CTotalGuildRankRecord2_next);
         };
-        void CTotalGuildRankRecordClear4_wrapper(struct CTotalGuildRankRecord* _this)
+        static void CTotalGuildRankRecordClear4_wrapper(struct CTotalGuildRankRecord* _this)
         {
            CTotalGuildRankRecordClear4_user(_this, CTotalGuildRankRecordClear4_next);
         };
-        void CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_wrapper(struct CTotalGuildRankRecord* _this)
+        static void CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_wrapper(struct CTotalGuildRankRecord* _this)
         {
            CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_user(_this, CTotalGuildRankRecorddtor_CTotalGuildRankRecord8_next);
         };
         
-        hook_record CTotalGuildRankRecord_functions[] = {
+        static hook_record CTotalGuildRankRecord_functions[] = {
         {   (LPVOID)0x1402c85d0L,
             (LPVOID *)&CTotalGuildRankRecordctor_CTotalGuildRankRecord2_user,
             (LPVOID *)&CTotalGuildRankRecordctor_CTotalGuildRankRecord2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

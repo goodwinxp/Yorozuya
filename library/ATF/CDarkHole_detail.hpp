@@ -8,99 +8,99 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CDarkHolector_CDarkHole2_ptr CDarkHolector_CDarkHole2_next(nullptr);
-        info::CDarkHolector_CDarkHole2_clbk CDarkHolector_CDarkHole2_user(nullptr);
-        info::CDarkHoleCreate4_ptr CDarkHoleCreate4_next(nullptr);
-        info::CDarkHoleCreate4_clbk CDarkHoleCreate4_user(nullptr);
-        info::CDarkHoleDestroy6_ptr CDarkHoleDestroy6_next(nullptr);
-        info::CDarkHoleDestroy6_clbk CDarkHoleDestroy6_user(nullptr);
-        info::CDarkHoleEnterPlayer8_ptr CDarkHoleEnterPlayer8_next(nullptr);
-        info::CDarkHoleEnterPlayer8_clbk CDarkHoleEnterPlayer8_user(nullptr);
-        info::CDarkHoleGetEnterNewPos10_ptr CDarkHoleGetEnterNewPos10_next(nullptr);
-        info::CDarkHoleGetEnterNewPos10_clbk CDarkHoleGetEnterNewPos10_user(nullptr);
-        info::CDarkHoleInit12_ptr CDarkHoleInit12_next(nullptr);
-        info::CDarkHoleInit12_clbk CDarkHoleInit12_user(nullptr);
-        info::CDarkHoleIsNewEnterAbleNum14_ptr CDarkHoleIsNewEnterAbleNum14_next(nullptr);
-        info::CDarkHoleIsNewEnterAbleNum14_clbk CDarkHoleIsNewEnterAbleNum14_user(nullptr);
-        info::CDarkHoleIsNewEnterAblePlayer16_ptr CDarkHoleIsNewEnterAblePlayer16_next(nullptr);
-        info::CDarkHoleIsNewEnterAblePlayer16_clbk CDarkHoleIsNewEnterAblePlayer16_user(nullptr);
-        info::CDarkHoleIsOpenPartyMember18_ptr CDarkHoleIsOpenPartyMember18_next(nullptr);
-        info::CDarkHoleIsOpenPartyMember18_clbk CDarkHoleIsOpenPartyMember18_user(nullptr);
-        info::CDarkHoleLoop20_ptr CDarkHoleLoop20_next(nullptr);
-        info::CDarkHoleLoop20_clbk CDarkHoleLoop20_user(nullptr);
-        info::CDarkHoleSendMsg_Create22_ptr CDarkHoleSendMsg_Create22_next(nullptr);
-        info::CDarkHoleSendMsg_Create22_clbk CDarkHoleSendMsg_Create22_user(nullptr);
-        info::CDarkHoleSendMsg_Destroy24_ptr CDarkHoleSendMsg_Destroy24_next(nullptr);
-        info::CDarkHoleSendMsg_Destroy24_clbk CDarkHoleSendMsg_Destroy24_user(nullptr);
-        info::CDarkHoleSendMsg_FixPosition26_ptr CDarkHoleSendMsg_FixPosition26_next(nullptr);
-        info::CDarkHoleSendMsg_FixPosition26_clbk CDarkHoleSendMsg_FixPosition26_user(nullptr);
-        info::CDarkHoleSendMsg_StateChange28_ptr CDarkHoleSendMsg_StateChange28_next(nullptr);
-        info::CDarkHoleSendMsg_StateChange28_clbk CDarkHoleSendMsg_StateChange28_user(nullptr);
-        info::CDarkHoledtor_CDarkHole34_ptr CDarkHoledtor_CDarkHole34_next(nullptr);
-        info::CDarkHoledtor_CDarkHole34_clbk CDarkHoledtor_CDarkHole34_user(nullptr);
+        static info::CDarkHolector_CDarkHole2_ptr CDarkHolector_CDarkHole2_next(nullptr);
+        static info::CDarkHolector_CDarkHole2_clbk CDarkHolector_CDarkHole2_user(nullptr);
+        static info::CDarkHoleCreate4_ptr CDarkHoleCreate4_next(nullptr);
+        static info::CDarkHoleCreate4_clbk CDarkHoleCreate4_user(nullptr);
+        static info::CDarkHoleDestroy6_ptr CDarkHoleDestroy6_next(nullptr);
+        static info::CDarkHoleDestroy6_clbk CDarkHoleDestroy6_user(nullptr);
+        static info::CDarkHoleEnterPlayer8_ptr CDarkHoleEnterPlayer8_next(nullptr);
+        static info::CDarkHoleEnterPlayer8_clbk CDarkHoleEnterPlayer8_user(nullptr);
+        static info::CDarkHoleGetEnterNewPos10_ptr CDarkHoleGetEnterNewPos10_next(nullptr);
+        static info::CDarkHoleGetEnterNewPos10_clbk CDarkHoleGetEnterNewPos10_user(nullptr);
+        static info::CDarkHoleInit12_ptr CDarkHoleInit12_next(nullptr);
+        static info::CDarkHoleInit12_clbk CDarkHoleInit12_user(nullptr);
+        static info::CDarkHoleIsNewEnterAbleNum14_ptr CDarkHoleIsNewEnterAbleNum14_next(nullptr);
+        static info::CDarkHoleIsNewEnterAbleNum14_clbk CDarkHoleIsNewEnterAbleNum14_user(nullptr);
+        static info::CDarkHoleIsNewEnterAblePlayer16_ptr CDarkHoleIsNewEnterAblePlayer16_next(nullptr);
+        static info::CDarkHoleIsNewEnterAblePlayer16_clbk CDarkHoleIsNewEnterAblePlayer16_user(nullptr);
+        static info::CDarkHoleIsOpenPartyMember18_ptr CDarkHoleIsOpenPartyMember18_next(nullptr);
+        static info::CDarkHoleIsOpenPartyMember18_clbk CDarkHoleIsOpenPartyMember18_user(nullptr);
+        static info::CDarkHoleLoop20_ptr CDarkHoleLoop20_next(nullptr);
+        static info::CDarkHoleLoop20_clbk CDarkHoleLoop20_user(nullptr);
+        static info::CDarkHoleSendMsg_Create22_ptr CDarkHoleSendMsg_Create22_next(nullptr);
+        static info::CDarkHoleSendMsg_Create22_clbk CDarkHoleSendMsg_Create22_user(nullptr);
+        static info::CDarkHoleSendMsg_Destroy24_ptr CDarkHoleSendMsg_Destroy24_next(nullptr);
+        static info::CDarkHoleSendMsg_Destroy24_clbk CDarkHoleSendMsg_Destroy24_user(nullptr);
+        static info::CDarkHoleSendMsg_FixPosition26_ptr CDarkHoleSendMsg_FixPosition26_next(nullptr);
+        static info::CDarkHoleSendMsg_FixPosition26_clbk CDarkHoleSendMsg_FixPosition26_user(nullptr);
+        static info::CDarkHoleSendMsg_StateChange28_ptr CDarkHoleSendMsg_StateChange28_next(nullptr);
+        static info::CDarkHoleSendMsg_StateChange28_clbk CDarkHoleSendMsg_StateChange28_user(nullptr);
+        static info::CDarkHoledtor_CDarkHole34_ptr CDarkHoledtor_CDarkHole34_next(nullptr);
+        static info::CDarkHoledtor_CDarkHole34_clbk CDarkHoledtor_CDarkHole34_user(nullptr);
         
-        void CDarkHolector_CDarkHole2_wrapper(struct CDarkHole* _this)
+        static void CDarkHolector_CDarkHole2_wrapper(struct CDarkHole* _this)
         {
            CDarkHolector_CDarkHole2_user(_this, CDarkHolector_CDarkHole2_next);
         };
-        bool CDarkHoleCreate4_wrapper(struct CDarkHole* _this, struct _darkhole_create_setdata* pParam)
+        static bool CDarkHoleCreate4_wrapper(struct CDarkHole* _this, struct _darkhole_create_setdata* pParam)
         {
            return CDarkHoleCreate4_user(_this, pParam, CDarkHoleCreate4_next);
         };
-        bool CDarkHoleDestroy6_wrapper(struct CDarkHole* _this)
+        static bool CDarkHoleDestroy6_wrapper(struct CDarkHole* _this)
         {
            return CDarkHoleDestroy6_user(_this, CDarkHoleDestroy6_next);
         };
-        bool CDarkHoleEnterPlayer8_wrapper(struct CDarkHole* _this, struct CPlayer* pEnter, struct CMapData* pOldMap, uint16_t wOldLayer, float* fOldPos, bool bReconnect)
+        static bool CDarkHoleEnterPlayer8_wrapper(struct CDarkHole* _this, struct CPlayer* pEnter, struct CMapData* pOldMap, uint16_t wOldLayer, float* fOldPos, bool bReconnect)
         {
            return CDarkHoleEnterPlayer8_user(_this, pEnter, pOldMap, wOldLayer, fOldPos, bReconnect, CDarkHoleEnterPlayer8_next);
         };
-        bool CDarkHoleGetEnterNewPos10_wrapper(struct CDarkHole* _this, struct _ENTER_DUNGEON_NEW_POS* pNewPos)
+        static bool CDarkHoleGetEnterNewPos10_wrapper(struct CDarkHole* _this, struct _ENTER_DUNGEON_NEW_POS* pNewPos)
         {
            return CDarkHoleGetEnterNewPos10_user(_this, pNewPos, CDarkHoleGetEnterNewPos10_next);
         };
-        void CDarkHoleInit12_wrapper(struct CDarkHole* _this, struct _object_id* pID)
+        static void CDarkHoleInit12_wrapper(struct CDarkHole* _this, struct _object_id* pID)
         {
            CDarkHoleInit12_user(_this, pID, CDarkHoleInit12_next);
         };
-        bool CDarkHoleIsNewEnterAbleNum14_wrapper(struct CDarkHole* _this)
+        static bool CDarkHoleIsNewEnterAbleNum14_wrapper(struct CDarkHole* _this)
         {
            return CDarkHoleIsNewEnterAbleNum14_user(_this, CDarkHoleIsNewEnterAbleNum14_next);
         };
-        bool CDarkHoleIsNewEnterAblePlayer16_wrapper(struct CDarkHole* _this, struct CPlayer* pEnter)
+        static bool CDarkHoleIsNewEnterAblePlayer16_wrapper(struct CDarkHole* _this, struct CPlayer* pEnter)
         {
            return CDarkHoleIsNewEnterAblePlayer16_user(_this, pEnter, CDarkHoleIsNewEnterAblePlayer16_next);
         };
-        bool CDarkHoleIsOpenPartyMember18_wrapper(struct CDarkHole* _this, struct CPlayer* pOpener)
+        static bool CDarkHoleIsOpenPartyMember18_wrapper(struct CDarkHole* _this, struct CPlayer* pOpener)
         {
            return CDarkHoleIsOpenPartyMember18_user(_this, pOpener, CDarkHoleIsOpenPartyMember18_next);
         };
-        void CDarkHoleLoop20_wrapper(struct CDarkHole* _this)
+        static void CDarkHoleLoop20_wrapper(struct CDarkHole* _this)
         {
            CDarkHoleLoop20_user(_this, CDarkHoleLoop20_next);
         };
-        void CDarkHoleSendMsg_Create22_wrapper(struct CDarkHole* _this)
+        static void CDarkHoleSendMsg_Create22_wrapper(struct CDarkHole* _this)
         {
            CDarkHoleSendMsg_Create22_user(_this, CDarkHoleSendMsg_Create22_next);
         };
-        void CDarkHoleSendMsg_Destroy24_wrapper(struct CDarkHole* _this)
+        static void CDarkHoleSendMsg_Destroy24_wrapper(struct CDarkHole* _this)
         {
            CDarkHoleSendMsg_Destroy24_user(_this, CDarkHoleSendMsg_Destroy24_next);
         };
-        void CDarkHoleSendMsg_FixPosition26_wrapper(struct CDarkHole* _this, int n)
+        static void CDarkHoleSendMsg_FixPosition26_wrapper(struct CDarkHole* _this, int n)
         {
            CDarkHoleSendMsg_FixPosition26_user(_this, n, CDarkHoleSendMsg_FixPosition26_next);
         };
-        void CDarkHoleSendMsg_StateChange28_wrapper(struct CDarkHole* _this)
+        static void CDarkHoleSendMsg_StateChange28_wrapper(struct CDarkHole* _this)
         {
            CDarkHoleSendMsg_StateChange28_user(_this, CDarkHoleSendMsg_StateChange28_next);
         };
-        void CDarkHoledtor_CDarkHole34_wrapper(struct CDarkHole* _this)
+        static void CDarkHoledtor_CDarkHole34_wrapper(struct CDarkHole* _this)
         {
            CDarkHoledtor_CDarkHole34_user(_this, CDarkHoledtor_CDarkHole34_next);
         };
         
-        hook_record CDarkHole_functions[] = {
+        static hook_record CDarkHole_functions[] = {
         {   (LPVOID)0x140163820L,
             (LPVOID *)&CDarkHolector_CDarkHole2_user,
             (LPVOID *)&CDarkHolector_CDarkHole2_next,
@@ -179,5 +179,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_a_trade_clear_item_result_zoclsize2_ptr _a_trade_clear_item_result_zoclsize2_next(nullptr);
-        info::_a_trade_clear_item_result_zoclsize2_clbk _a_trade_clear_item_result_zoclsize2_user(nullptr);
+        static info::_a_trade_clear_item_result_zoclsize2_ptr _a_trade_clear_item_result_zoclsize2_next(nullptr);
+        static info::_a_trade_clear_item_result_zoclsize2_clbk _a_trade_clear_item_result_zoclsize2_user(nullptr);
         
-        int _a_trade_clear_item_result_zoclsize2_wrapper(struct _a_trade_clear_item_result_zocl* _this)
+        static int _a_trade_clear_item_result_zoclsize2_wrapper(struct _a_trade_clear_item_result_zocl* _this)
         {
            return _a_trade_clear_item_result_zoclsize2_user(_this, _a_trade_clear_item_result_zoclsize2_next);
         };
         
-        hook_record _a_trade_clear_item_result_zocl_functions[] = {
+        static hook_record _a_trade_clear_item_result_zocl_functions[] = {
         {   (LPVOID)0x14035fdc0L,
             (LPVOID *)&_a_trade_clear_item_result_zoclsize2_user,
             (LPVOID *)&_a_trade_clear_item_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

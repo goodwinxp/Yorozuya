@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_DTRADE_ITEMReleaseData2_ptr _DTRADE_ITEMReleaseData2_next(nullptr);
-        info::_DTRADE_ITEMReleaseData2_clbk _DTRADE_ITEMReleaseData2_user(nullptr);
-        info::_DTRADE_ITEMSetData4_ptr _DTRADE_ITEMSetData4_next(nullptr);
-        info::_DTRADE_ITEMSetData4_clbk _DTRADE_ITEMSetData4_user(nullptr);
+        static info::_DTRADE_ITEMReleaseData2_ptr _DTRADE_ITEMReleaseData2_next(nullptr);
+        static info::_DTRADE_ITEMReleaseData2_clbk _DTRADE_ITEMReleaseData2_user(nullptr);
+        static info::_DTRADE_ITEMSetData4_ptr _DTRADE_ITEMSetData4_next(nullptr);
+        static info::_DTRADE_ITEMSetData4_clbk _DTRADE_ITEMSetData4_user(nullptr);
         
-        void _DTRADE_ITEMReleaseData2_wrapper(struct _DTRADE_ITEM* _this)
+        static void _DTRADE_ITEMReleaseData2_wrapper(struct _DTRADE_ITEM* _this)
         {
            _DTRADE_ITEMReleaseData2_user(_this, _DTRADE_ITEMReleaseData2_next);
         };
-        void _DTRADE_ITEMSetData4_wrapper(struct _DTRADE_ITEM* _this, char p_byStorageCode, unsigned int p_dwSerial, char p_byAmount)
+        static void _DTRADE_ITEMSetData4_wrapper(struct _DTRADE_ITEM* _this, char p_byStorageCode, unsigned int p_dwSerial, char p_byAmount)
         {
            _DTRADE_ITEMSetData4_user(_this, p_byStorageCode, p_dwSerial, p_byAmount, _DTRADE_ITEMSetData4_next);
         };
         
-        hook_record _DTRADE_ITEM_functions[] = {
+        static hook_record _DTRADE_ITEM_functions[] = {
         {   (LPVOID)0x1400f79f0L,
             (LPVOID *)&_DTRADE_ITEMReleaseData2_user,
             (LPVOID *)&_DTRADE_ITEMReleaseData2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

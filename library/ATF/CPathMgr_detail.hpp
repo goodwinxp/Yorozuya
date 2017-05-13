@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPathMgrctor_CPathMgr2_ptr CPathMgrctor_CPathMgr2_next(nullptr);
-        info::CPathMgrctor_CPathMgr2_clbk CPathMgrctor_CPathMgr2_user(nullptr);
-        info::CPathMgrCopy4_ptr CPathMgrCopy4_next(nullptr);
-        info::CPathMgrCopy4_clbk CPathMgrCopy4_user(nullptr);
-        info::CPathMgrGetPathSize6_ptr CPathMgrGetPathSize6_next(nullptr);
-        info::CPathMgrGetPathSize6_clbk CPathMgrGetPathSize6_user(nullptr);
-        info::CPathMgrInit8_ptr CPathMgrInit8_next(nullptr);
-        info::CPathMgrInit8_clbk CPathMgrInit8_user(nullptr);
-        info::CPathMgrPopNextPath10_ptr CPathMgrPopNextPath10_next(nullptr);
-        info::CPathMgrPopNextPath10_clbk CPathMgrPopNextPath10_user(nullptr);
-        info::CPathMgrSearchPathA12_ptr CPathMgrSearchPathA12_next(nullptr);
-        info::CPathMgrSearchPathA12_clbk CPathMgrSearchPathA12_user(nullptr);
-        info::CPathMgrdtor_CPathMgr17_ptr CPathMgrdtor_CPathMgr17_next(nullptr);
-        info::CPathMgrdtor_CPathMgr17_clbk CPathMgrdtor_CPathMgr17_user(nullptr);
+        static info::CPathMgrctor_CPathMgr2_ptr CPathMgrctor_CPathMgr2_next(nullptr);
+        static info::CPathMgrctor_CPathMgr2_clbk CPathMgrctor_CPathMgr2_user(nullptr);
+        static info::CPathMgrCopy4_ptr CPathMgrCopy4_next(nullptr);
+        static info::CPathMgrCopy4_clbk CPathMgrCopy4_user(nullptr);
+        static info::CPathMgrGetPathSize6_ptr CPathMgrGetPathSize6_next(nullptr);
+        static info::CPathMgrGetPathSize6_clbk CPathMgrGetPathSize6_user(nullptr);
+        static info::CPathMgrInit8_ptr CPathMgrInit8_next(nullptr);
+        static info::CPathMgrInit8_clbk CPathMgrInit8_user(nullptr);
+        static info::CPathMgrPopNextPath10_ptr CPathMgrPopNextPath10_next(nullptr);
+        static info::CPathMgrPopNextPath10_clbk CPathMgrPopNextPath10_user(nullptr);
+        static info::CPathMgrSearchPathA12_ptr CPathMgrSearchPathA12_next(nullptr);
+        static info::CPathMgrSearchPathA12_clbk CPathMgrSearchPathA12_user(nullptr);
+        static info::CPathMgrdtor_CPathMgr17_ptr CPathMgrdtor_CPathMgr17_next(nullptr);
+        static info::CPathMgrdtor_CPathMgr17_clbk CPathMgrdtor_CPathMgr17_user(nullptr);
         
-        void CPathMgrctor_CPathMgr2_wrapper(struct CPathMgr* _this)
+        static void CPathMgrctor_CPathMgr2_wrapper(struct CPathMgr* _this)
         {
            CPathMgrctor_CPathMgr2_user(_this, CPathMgrctor_CPathMgr2_next);
         };
-        void CPathMgrCopy4_wrapper(struct CPathMgr* _this, struct CPathMgr* pDst)
+        static void CPathMgrCopy4_wrapper(struct CPathMgr* _this, struct CPathMgr* pDst)
         {
            CPathMgrCopy4_user(_this, pDst, CPathMgrCopy4_next);
         };
-        char CPathMgrGetPathSize6_wrapper(struct CPathMgr* _this)
+        static char CPathMgrGetPathSize6_wrapper(struct CPathMgr* _this)
         {
            return CPathMgrGetPathSize6_user(_this, CPathMgrGetPathSize6_next);
         };
-        void CPathMgrInit8_wrapper(struct CPathMgr* _this)
+        static void CPathMgrInit8_wrapper(struct CPathMgr* _this)
         {
            CPathMgrInit8_user(_this, CPathMgrInit8_next);
         };
-        int CPathMgrPopNextPath10_wrapper(struct CPathMgr* _this, float* pPos)
+        static int CPathMgrPopNextPath10_wrapper(struct CPathMgr* _this, float* pPos)
         {
            return CPathMgrPopNextPath10_user(_this, pPos, CPathMgrPopNextPath10_next);
         };
-        int CPathMgrSearchPathA12_wrapper(struct CPathMgr* _this, struct CMonster* pMon, float* vTarPos, int bBackupRestore)
+        static int CPathMgrSearchPathA12_wrapper(struct CPathMgr* _this, struct CMonster* pMon, float* vTarPos, int bBackupRestore)
         {
            return CPathMgrSearchPathA12_user(_this, pMon, vTarPos, bBackupRestore, CPathMgrSearchPathA12_next);
         };
-        void CPathMgrdtor_CPathMgr17_wrapper(struct CPathMgr* _this)
+        static void CPathMgrdtor_CPathMgr17_wrapper(struct CPathMgr* _this)
         {
            CPathMgrdtor_CPathMgr17_user(_this, CPathMgrdtor_CPathMgr17_next);
         };
         
-        hook_record CPathMgr_functions[] = {
+        static hook_record CPathMgr_functions[] = {
         {   (LPVOID)0x1401559f0L,
             (LPVOID *)&CPathMgrctor_CPathMgr2_user,
             (LPVOID *)&CPathMgrctor_CPathMgr2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_party_member_info_updctor__party_member_info_upd2_ptr _party_member_info_updctor__party_member_info_upd2_next(nullptr);
-        info::_party_member_info_updctor__party_member_info_upd2_clbk _party_member_info_updctor__party_member_info_upd2_user(nullptr);
-        info::_party_member_info_updsize4_ptr _party_member_info_updsize4_next(nullptr);
-        info::_party_member_info_updsize4_clbk _party_member_info_updsize4_user(nullptr);
+        static info::_party_member_info_updctor__party_member_info_upd2_ptr _party_member_info_updctor__party_member_info_upd2_next(nullptr);
+        static info::_party_member_info_updctor__party_member_info_upd2_clbk _party_member_info_updctor__party_member_info_upd2_user(nullptr);
+        static info::_party_member_info_updsize4_ptr _party_member_info_updsize4_next(nullptr);
+        static info::_party_member_info_updsize4_clbk _party_member_info_updsize4_user(nullptr);
         
-        void _party_member_info_updctor__party_member_info_upd2_wrapper(struct _party_member_info_upd* _this)
+        static void _party_member_info_updctor__party_member_info_upd2_wrapper(struct _party_member_info_upd* _this)
         {
            _party_member_info_updctor__party_member_info_upd2_user(_this, _party_member_info_updctor__party_member_info_upd2_next);
         };
-        int _party_member_info_updsize4_wrapper(struct _party_member_info_upd* _this)
+        static int _party_member_info_updsize4_wrapper(struct _party_member_info_upd* _this)
         {
            return _party_member_info_updsize4_user(_this, _party_member_info_updsize4_next);
         };
         
-        hook_record _party_member_info_upd_functions[] = {
+        static hook_record _party_member_info_upd_functions[] = {
         {   (LPVOID)0x1400efb50L,
             (LPVOID *)&_party_member_info_updctor__party_member_info_upd2_user,
             (LPVOID *)&_party_member_info_updctor__party_member_info_upd2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ScheduleMSGInit2_ptr ScheduleMSGInit2_next(nullptr);
-        info::ScheduleMSGInit2_clbk ScheduleMSGInit2_user(nullptr);
-        info::ScheduleMSGctor_ScheduleMSG4_ptr ScheduleMSGctor_ScheduleMSG4_next(nullptr);
-        info::ScheduleMSGctor_ScheduleMSG4_clbk ScheduleMSGctor_ScheduleMSG4_user(nullptr);
+        static info::ScheduleMSGInit2_ptr ScheduleMSGInit2_next(nullptr);
+        static info::ScheduleMSGInit2_clbk ScheduleMSGInit2_user(nullptr);
+        static info::ScheduleMSGctor_ScheduleMSG4_ptr ScheduleMSGctor_ScheduleMSG4_next(nullptr);
+        static info::ScheduleMSGctor_ScheduleMSG4_clbk ScheduleMSGctor_ScheduleMSG4_user(nullptr);
         
-        void ScheduleMSGInit2_wrapper(struct ScheduleMSG* _this)
+        static void ScheduleMSGInit2_wrapper(struct ScheduleMSG* _this)
         {
            ScheduleMSGInit2_user(_this, ScheduleMSGInit2_next);
         };
-        void ScheduleMSGctor_ScheduleMSG4_wrapper(struct ScheduleMSG* _this)
+        static void ScheduleMSGctor_ScheduleMSG4_wrapper(struct ScheduleMSG* _this)
         {
            ScheduleMSGctor_ScheduleMSG4_user(_this, ScheduleMSGctor_ScheduleMSG4_next);
         };
         
-        hook_record ScheduleMSG_functions[] = {
+        static hook_record ScheduleMSG_functions[] = {
         {   (LPVOID)0x14041b8b0L,
             (LPVOID *)&ScheduleMSGInit2_user,
             (LPVOID *)&ScheduleMSGInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

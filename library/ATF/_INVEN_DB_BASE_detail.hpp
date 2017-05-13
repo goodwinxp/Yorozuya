@@ -8,47 +8,47 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_INVEN_DB_BASEInit2_ptr _INVEN_DB_BASEInit2_next(nullptr);
-        info::_INVEN_DB_BASEInit2_clbk _INVEN_DB_BASEInit2_user(nullptr);
-        info::_INVEN_DB_BASEctor__INVEN_DB_BASE4_ptr _INVEN_DB_BASEctor__INVEN_DB_BASE4_next(nullptr);
-        info::_INVEN_DB_BASEctor__INVEN_DB_BASE4_clbk _INVEN_DB_BASEctor__INVEN_DB_BASE4_user(nullptr);
+        static info::_INVEN_DB_BASEInit2_ptr _INVEN_DB_BASEInit2_next(nullptr);
+        static info::_INVEN_DB_BASEInit2_clbk _INVEN_DB_BASEInit2_user(nullptr);
+        static info::_INVEN_DB_BASEctor__INVEN_DB_BASE4_ptr _INVEN_DB_BASEctor__INVEN_DB_BASE4_next(nullptr);
+        static info::_INVEN_DB_BASEctor__INVEN_DB_BASE4_clbk _INVEN_DB_BASEctor__INVEN_DB_BASE4_user(nullptr);
         
-        info::_INVEN_DB_BASE___LISTInit2_ptr _INVEN_DB_BASE___LISTInit2_next(nullptr);
-        info::_INVEN_DB_BASE___LISTInit2_clbk _INVEN_DB_BASE___LISTInit2_user(nullptr);
-        info::_INVEN_DB_BASE___LISTRelease4_ptr _INVEN_DB_BASE___LISTRelease4_next(nullptr);
-        info::_INVEN_DB_BASE___LISTRelease4_clbk _INVEN_DB_BASE___LISTRelease4_user(nullptr);
-        info::_INVEN_DB_BASE___LISTSet6_ptr _INVEN_DB_BASE___LISTSet6_next(nullptr);
-        info::_INVEN_DB_BASE___LISTSet6_clbk _INVEN_DB_BASE___LISTSet6_user(nullptr);
-        info::_INVEN_DB_BASE___LISTctor__LIST8_ptr _INVEN_DB_BASE___LISTctor__LIST8_next(nullptr);
-        info::_INVEN_DB_BASE___LISTctor__LIST8_clbk _INVEN_DB_BASE___LISTctor__LIST8_user(nullptr);
+        static info::_INVEN_DB_BASE___LISTInit2_ptr _INVEN_DB_BASE___LISTInit2_next(nullptr);
+        static info::_INVEN_DB_BASE___LISTInit2_clbk _INVEN_DB_BASE___LISTInit2_user(nullptr);
+        static info::_INVEN_DB_BASE___LISTRelease4_ptr _INVEN_DB_BASE___LISTRelease4_next(nullptr);
+        static info::_INVEN_DB_BASE___LISTRelease4_clbk _INVEN_DB_BASE___LISTRelease4_user(nullptr);
+        static info::_INVEN_DB_BASE___LISTSet6_ptr _INVEN_DB_BASE___LISTSet6_next(nullptr);
+        static info::_INVEN_DB_BASE___LISTSet6_clbk _INVEN_DB_BASE___LISTSet6_user(nullptr);
+        static info::_INVEN_DB_BASE___LISTctor__LIST8_ptr _INVEN_DB_BASE___LISTctor__LIST8_next(nullptr);
+        static info::_INVEN_DB_BASE___LISTctor__LIST8_clbk _INVEN_DB_BASE___LISTctor__LIST8_user(nullptr);
         
-        void _INVEN_DB_BASEInit2_wrapper(struct _INVEN_DB_BASE* _this)
+        static void _INVEN_DB_BASEInit2_wrapper(struct _INVEN_DB_BASE* _this)
         {
            _INVEN_DB_BASEInit2_user(_this, _INVEN_DB_BASEInit2_next);
         };
-        void _INVEN_DB_BASEctor__INVEN_DB_BASE4_wrapper(struct _INVEN_DB_BASE* _this)
+        static void _INVEN_DB_BASEctor__INVEN_DB_BASE4_wrapper(struct _INVEN_DB_BASE* _this)
         {
            _INVEN_DB_BASEctor__INVEN_DB_BASE4_user(_this, _INVEN_DB_BASEctor__INVEN_DB_BASE4_next);
         };
         
-        void _INVEN_DB_BASE___LISTInit2_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
+        static void _INVEN_DB_BASE___LISTInit2_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
         {
            _INVEN_DB_BASE___LISTInit2_user(_this, _INVEN_DB_BASE___LISTInit2_next);
         };
-        bool _INVEN_DB_BASE___LISTRelease4_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
+        static bool _INVEN_DB_BASE___LISTRelease4_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
         {
            return _INVEN_DB_BASE___LISTRelease4_user(_this, _INVEN_DB_BASE___LISTRelease4_next);
         };
-        bool _INVEN_DB_BASE___LISTSet6_wrapper(struct _INVEN_DB_BASE::_LIST* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static bool _INVEN_DB_BASE___LISTSet6_wrapper(struct _INVEN_DB_BASE::_LIST* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return _INVEN_DB_BASE___LISTSet6_user(_this, pItem, _INVEN_DB_BASE___LISTSet6_next);
         };
-        void _INVEN_DB_BASE___LISTctor__LIST8_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
+        static void _INVEN_DB_BASE___LISTctor__LIST8_wrapper(struct _INVEN_DB_BASE::_LIST* _this)
         {
            _INVEN_DB_BASE___LISTctor__LIST8_user(_this, _INVEN_DB_BASE___LISTctor__LIST8_next);
         };
         
-        hook_record _INVEN_DB_BASE_functions[] = {
+        static hook_record _INVEN_DB_BASE_functions[] = {
         {   (LPVOID)0x140075dc0L,
             (LPVOID *)&_INVEN_DB_BASEInit2_user,
             (LPVOID *)&_INVEN_DB_BASEInit2_next,
@@ -83,5 +83,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

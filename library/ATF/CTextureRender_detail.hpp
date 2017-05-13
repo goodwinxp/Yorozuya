@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTextureRenderBeginScene1_ptr CTextureRenderBeginScene1_next(nullptr);
-        info::CTextureRenderBeginScene1_clbk CTextureRenderBeginScene1_user(nullptr);
-        info::CTextureRenderClearFrameBuffer2_ptr CTextureRenderClearFrameBuffer2_next(nullptr);
-        info::CTextureRenderClearFrameBuffer2_clbk CTextureRenderClearFrameBuffer2_user(nullptr);
-        info::CTextureRenderCreateTexture3_ptr CTextureRenderCreateTexture3_next(nullptr);
-        info::CTextureRenderCreateTexture3_clbk CTextureRenderCreateTexture3_user(nullptr);
-        info::CTextureRenderEndScene4_ptr CTextureRenderEndScene4_next(nullptr);
-        info::CTextureRenderEndScene4_clbk CTextureRenderEndScene4_user(nullptr);
-        info::CTextureRenderGetD3DTexture5_ptr CTextureRenderGetD3DTexture5_next(nullptr);
-        info::CTextureRenderGetD3DTexture5_clbk CTextureRenderGetD3DTexture5_user(nullptr);
-        info::CTextureRenderGetXSize6_ptr CTextureRenderGetXSize6_next(nullptr);
-        info::CTextureRenderGetXSize6_clbk CTextureRenderGetXSize6_user(nullptr);
-        info::CTextureRenderGetYSize7_ptr CTextureRenderGetYSize7_next(nullptr);
-        info::CTextureRenderGetYSize7_clbk CTextureRenderGetYSize7_user(nullptr);
-        info::CTextureRenderIsLoaded8_ptr CTextureRenderIsLoaded8_next(nullptr);
-        info::CTextureRenderIsLoaded8_clbk CTextureRenderIsLoaded8_user(nullptr);
-        info::CTextureRenderReleaseTexture9_ptr CTextureRenderReleaseTexture9_next(nullptr);
-        info::CTextureRenderReleaseTexture9_clbk CTextureRenderReleaseTexture9_user(nullptr);
-        info::CTextureRenderSetClearAtOnce10_ptr CTextureRenderSetClearAtOnce10_next(nullptr);
-        info::CTextureRenderSetClearAtOnce10_clbk CTextureRenderSetClearAtOnce10_user(nullptr);
-        info::CTextureRenderdtor_CTextureRender11_ptr CTextureRenderdtor_CTextureRender11_next(nullptr);
-        info::CTextureRenderdtor_CTextureRender11_clbk CTextureRenderdtor_CTextureRender11_user(nullptr);
+        static info::CTextureRenderBeginScene1_ptr CTextureRenderBeginScene1_next(nullptr);
+        static info::CTextureRenderBeginScene1_clbk CTextureRenderBeginScene1_user(nullptr);
+        static info::CTextureRenderClearFrameBuffer2_ptr CTextureRenderClearFrameBuffer2_next(nullptr);
+        static info::CTextureRenderClearFrameBuffer2_clbk CTextureRenderClearFrameBuffer2_user(nullptr);
+        static info::CTextureRenderCreateTexture3_ptr CTextureRenderCreateTexture3_next(nullptr);
+        static info::CTextureRenderCreateTexture3_clbk CTextureRenderCreateTexture3_user(nullptr);
+        static info::CTextureRenderEndScene4_ptr CTextureRenderEndScene4_next(nullptr);
+        static info::CTextureRenderEndScene4_clbk CTextureRenderEndScene4_user(nullptr);
+        static info::CTextureRenderGetD3DTexture5_ptr CTextureRenderGetD3DTexture5_next(nullptr);
+        static info::CTextureRenderGetD3DTexture5_clbk CTextureRenderGetD3DTexture5_user(nullptr);
+        static info::CTextureRenderGetXSize6_ptr CTextureRenderGetXSize6_next(nullptr);
+        static info::CTextureRenderGetXSize6_clbk CTextureRenderGetXSize6_user(nullptr);
+        static info::CTextureRenderGetYSize7_ptr CTextureRenderGetYSize7_next(nullptr);
+        static info::CTextureRenderGetYSize7_clbk CTextureRenderGetYSize7_user(nullptr);
+        static info::CTextureRenderIsLoaded8_ptr CTextureRenderIsLoaded8_next(nullptr);
+        static info::CTextureRenderIsLoaded8_clbk CTextureRenderIsLoaded8_user(nullptr);
+        static info::CTextureRenderReleaseTexture9_ptr CTextureRenderReleaseTexture9_next(nullptr);
+        static info::CTextureRenderReleaseTexture9_clbk CTextureRenderReleaseTexture9_user(nullptr);
+        static info::CTextureRenderSetClearAtOnce10_ptr CTextureRenderSetClearAtOnce10_next(nullptr);
+        static info::CTextureRenderSetClearAtOnce10_clbk CTextureRenderSetClearAtOnce10_user(nullptr);
+        static info::CTextureRenderdtor_CTextureRender11_ptr CTextureRenderdtor_CTextureRender11_next(nullptr);
+        static info::CTextureRenderdtor_CTextureRender11_clbk CTextureRenderdtor_CTextureRender11_user(nullptr);
         
-        int64_t CTextureRenderBeginScene1_wrapper(struct CTextureRender* _this, uint32_t arg_0)
+        static int64_t CTextureRenderBeginScene1_wrapper(struct CTextureRender* _this, uint32_t arg_0)
         {
            return CTextureRenderBeginScene1_user(_this, arg_0, CTextureRenderBeginScene1_next);
         };
-        void CTextureRenderClearFrameBuffer2_wrapper(struct CTextureRender* _this, uint32_t arg_0)
+        static void CTextureRenderClearFrameBuffer2_wrapper(struct CTextureRender* _this, uint32_t arg_0)
         {
            CTextureRenderClearFrameBuffer2_user(_this, arg_0, CTextureRenderClearFrameBuffer2_next);
         };
-        int64_t CTextureRenderCreateTexture3_wrapper(struct CTextureRender* _this, struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, int arg_3)
+        static int64_t CTextureRenderCreateTexture3_wrapper(struct CTextureRender* _this, struct IDirect3DDevice8* arg_0, uint32_t arg_1, uint32_t arg_2, int arg_3)
         {
            return CTextureRenderCreateTexture3_user(_this, arg_0, arg_1, arg_2, arg_3, CTextureRenderCreateTexture3_next);
         };
-        void CTextureRenderEndScene4_wrapper(struct CTextureRender* _this)
+        static void CTextureRenderEndScene4_wrapper(struct CTextureRender* _this)
         {
            CTextureRenderEndScene4_user(_this, CTextureRenderEndScene4_next);
         };
-        struct IDirect3DTexture8* CTextureRenderGetD3DTexture5_wrapper(struct CTextureRender* _this)
+        static struct IDirect3DTexture8* CTextureRenderGetD3DTexture5_wrapper(struct CTextureRender* _this)
         {
            return CTextureRenderGetD3DTexture5_user(_this, CTextureRenderGetD3DTexture5_next);
         };
-        uint32_t CTextureRenderGetXSize6_wrapper(struct CTextureRender* _this)
+        static uint32_t CTextureRenderGetXSize6_wrapper(struct CTextureRender* _this)
         {
            return CTextureRenderGetXSize6_user(_this, CTextureRenderGetXSize6_next);
         };
-        uint32_t CTextureRenderGetYSize7_wrapper(struct CTextureRender* _this)
+        static uint32_t CTextureRenderGetYSize7_wrapper(struct CTextureRender* _this)
         {
            return CTextureRenderGetYSize7_user(_this, CTextureRenderGetYSize7_next);
         };
-        int64_t CTextureRenderIsLoaded8_wrapper(struct CTextureRender* _this)
+        static int64_t CTextureRenderIsLoaded8_wrapper(struct CTextureRender* _this)
         {
            return CTextureRenderIsLoaded8_user(_this, CTextureRenderIsLoaded8_next);
         };
-        void CTextureRenderReleaseTexture9_wrapper(struct CTextureRender* _this)
+        static void CTextureRenderReleaseTexture9_wrapper(struct CTextureRender* _this)
         {
            CTextureRenderReleaseTexture9_user(_this, CTextureRenderReleaseTexture9_next);
         };
-        void CTextureRenderSetClearAtOnce10_wrapper(struct CTextureRender* _this, int arg_0)
+        static void CTextureRenderSetClearAtOnce10_wrapper(struct CTextureRender* _this, int arg_0)
         {
            CTextureRenderSetClearAtOnce10_user(_this, arg_0, CTextureRenderSetClearAtOnce10_next);
         };
-        int64_t CTextureRenderdtor_CTextureRender11_wrapper(struct CTextureRender* _this)
+        static int64_t CTextureRenderdtor_CTextureRender11_wrapper(struct CTextureRender* _this)
         {
            return CTextureRenderdtor_CTextureRender11_user(_this, CTextureRenderdtor_CTextureRender11_next);
         };
         
-        hook_record CTextureRender_functions[] = {
+        static hook_record CTextureRender_functions[] = {
         {   (LPVOID)0x140529f10L,
             (LPVOID *)&CTextureRenderBeginScene1_user,
             (LPVOID *)&CTextureRenderBeginScene1_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

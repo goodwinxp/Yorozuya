@@ -10,117 +10,117 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_ptr GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_clbk GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_user(nullptr);
             
-            char GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt, struct GUILD_BATTLE::CGuildBattleSchedule** ppkSchedule, unsigned int* uiSLID)
+            static char GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt, struct GUILD_BATTLE::CGuildBattleSchedule** ppkSchedule, unsigned int* uiSLID)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_user(_this, uiFieldInx, dwStartTimeInx, dwElapseTimeCnt, ppkSchedule, uiSLID, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_next);
             };
-            void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupctor_CGuildBattleReservedScheduleMapGroup4_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCleanUpDanglingReservedSchedule6_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int dwID)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int dwID)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_user(_this, uiMapID, dwID, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear8_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupClear10_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, bool* pbField)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, bool* pbField)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_user(_this, uiMapID, pbField, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupCopyUseTimeField12_next);
             };
-            void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupFlip14_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID)
+            static unsigned int GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_user(_this, uiMapID, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetCurScheduleID16_next);
             };
-            unsigned int GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static unsigned int GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetDayID18_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int* uiSLID)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int* uiSLID)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_user(_this, uiMapID, uiSLID, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupGetSLID20_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiDayInx, unsigned int uiMapCnt)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiDayInx, unsigned int uiMapCnt)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_user(_this, uiDayInx, uiMapCnt, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupInit22_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsDone24_next);
             };
-            char GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt)
+            static char GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiFieldInx, unsigned int dwStartTimeInx, unsigned int dwElapseTimeCnt)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_user(_this, uiFieldInx, dwStartTimeInx, dwElapseTimeCnt, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupIsEmptyTime26_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, bool bToday)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, bool bToday)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_user(_this, bToday, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoad28_next);
             };
-            bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static bool GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupLoop30_next);
             };
-            void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupPushDQSClear32_next);
             };
-            struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int dwID)
+            static struct GUILD_BATTLE::CGuildBattleSchedule* GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this, unsigned int uiMapID, unsigned int dwID)
             {
                return GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_user(_this, uiMapID, dwID, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupUpdateUseFlag34_next);
             };
-            void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
+            static void GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_wrapper(struct GUILD_BATTLE::CGuildBattleReservedScheduleMapGroup* _this)
             {
                GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_user(_this, GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupdtor_CGuildBattleReservedScheduleMapGroup38_next);
             };
             
-            hook_record CGuildBattleReservedScheduleMapGroup_functions[] = {
+            static hook_record CGuildBattleReservedScheduleMapGroup_functions[] = {
             {   (LPVOID)0x1403dc440L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupAdd2_next,
@@ -214,6 +214,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CCRTAllocatorAllocate2_ptr ATL__CCRTAllocatorAllocate2_next(nullptr);
-            info::ATL__CCRTAllocatorAllocate2_clbk ATL__CCRTAllocatorAllocate2_user(nullptr);
-            info::ATL__CCRTAllocatorFree4_ptr ATL__CCRTAllocatorFree4_next(nullptr);
-            info::ATL__CCRTAllocatorFree4_clbk ATL__CCRTAllocatorFree4_user(nullptr);
+            static info::ATL__CCRTAllocatorAllocate2_ptr ATL__CCRTAllocatorAllocate2_next(nullptr);
+            static info::ATL__CCRTAllocatorAllocate2_clbk ATL__CCRTAllocatorAllocate2_user(nullptr);
+            static info::ATL__CCRTAllocatorFree4_ptr ATL__CCRTAllocatorFree4_next(nullptr);
+            static info::ATL__CCRTAllocatorFree4_clbk ATL__CCRTAllocatorFree4_user(nullptr);
             
-            void* ATL__CCRTAllocatorAllocate2_wrapper(uint64_t nBytes)
+            static void* ATL__CCRTAllocatorAllocate2_wrapper(uint64_t nBytes)
             {
                return ATL__CCRTAllocatorAllocate2_user(nBytes, ATL__CCRTAllocatorAllocate2_next);
             };
-            void ATL__CCRTAllocatorFree4_wrapper(void* p)
+            static void ATL__CCRTAllocatorFree4_wrapper(void* p)
             {
                ATL__CCRTAllocatorFree4_user(p, ATL__CCRTAllocatorFree4_next);
             };
             
-            hook_record CCRTAllocator_functions[] = {
+            static hook_record CCRTAllocator_functions[] = {
             {   (LPVOID)0x140026cd0L,
                 (LPVOID *)&ATL__CCRTAllocatorAllocate2_user,
                 (LPVOID *)&ATL__CCRTAllocatorAllocate2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

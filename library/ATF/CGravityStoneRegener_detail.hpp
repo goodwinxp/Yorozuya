@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGravityStoneRegenerctor_CGravityStoneRegener2_ptr CGravityStoneRegenerctor_CGravityStoneRegener2_next(nullptr);
-        info::CGravityStoneRegenerctor_CGravityStoneRegener2_clbk CGravityStoneRegenerctor_CGravityStoneRegener2_user(nullptr);
-        info::CGravityStoneRegenerCheatClearRegenState4_ptr CGravityStoneRegenerCheatClearRegenState4_next(nullptr);
-        info::CGravityStoneRegenerCheatClearRegenState4_clbk CGravityStoneRegenerCheatClearRegenState4_user(nullptr);
-        info::CGravityStoneRegenerClearRegen6_ptr CGravityStoneRegenerClearRegen6_next(nullptr);
-        info::CGravityStoneRegenerClearRegen6_clbk CGravityStoneRegenerClearRegen6_user(nullptr);
-        info::CGravityStoneRegenerCreate8_ptr CGravityStoneRegenerCreate8_next(nullptr);
-        info::CGravityStoneRegenerCreate8_clbk CGravityStoneRegenerCreate8_user(nullptr);
-        info::CGravityStoneRegenerDestroy10_ptr CGravityStoneRegenerDestroy10_next(nullptr);
-        info::CGravityStoneRegenerDestroy10_clbk CGravityStoneRegenerDestroy10_user(nullptr);
-        info::CGravityStoneRegenerGetPortalInx12_ptr CGravityStoneRegenerGetPortalInx12_next(nullptr);
-        info::CGravityStoneRegenerGetPortalInx12_clbk CGravityStoneRegenerGetPortalInx12_user(nullptr);
-        info::CGravityStoneRegenerGetStateString14_ptr CGravityStoneRegenerGetStateString14_next(nullptr);
-        info::CGravityStoneRegenerGetStateString14_clbk CGravityStoneRegenerGetStateString14_user(nullptr);
-        info::CGravityStoneRegenerInit16_ptr CGravityStoneRegenerInit16_next(nullptr);
-        info::CGravityStoneRegenerInit16_clbk CGravityStoneRegenerInit16_user(nullptr);
-        info::CGravityStoneRegenerIsNearPosition18_ptr CGravityStoneRegenerIsNearPosition18_next(nullptr);
-        info::CGravityStoneRegenerIsNearPosition18_clbk CGravityStoneRegenerIsNearPosition18_user(nullptr);
-        info::CGravityStoneRegenerRegen20_ptr CGravityStoneRegenerRegen20_next(nullptr);
-        info::CGravityStoneRegenerRegen20_clbk CGravityStoneRegenerRegen20_user(nullptr);
-        info::CGravityStoneRegenerSendMsgAlterState22_ptr CGravityStoneRegenerSendMsgAlterState22_next(nullptr);
-        info::CGravityStoneRegenerSendMsgAlterState22_clbk CGravityStoneRegenerSendMsgAlterState22_user(nullptr);
-        info::CGravityStoneRegenerSendMsg_FixPosition24_ptr CGravityStoneRegenerSendMsg_FixPosition24_next(nullptr);
-        info::CGravityStoneRegenerSendMsg_FixPosition24_clbk CGravityStoneRegenerSendMsg_FixPosition24_user(nullptr);
-        info::CGravityStoneRegenerTake26_ptr CGravityStoneRegenerTake26_next(nullptr);
-        info::CGravityStoneRegenerTake26_clbk CGravityStoneRegenerTake26_user(nullptr);
-        info::CGravityStoneRegenerdtor_CGravityStoneRegener32_ptr CGravityStoneRegenerdtor_CGravityStoneRegener32_next(nullptr);
-        info::CGravityStoneRegenerdtor_CGravityStoneRegener32_clbk CGravityStoneRegenerdtor_CGravityStoneRegener32_user(nullptr);
+        static info::CGravityStoneRegenerctor_CGravityStoneRegener2_ptr CGravityStoneRegenerctor_CGravityStoneRegener2_next(nullptr);
+        static info::CGravityStoneRegenerctor_CGravityStoneRegener2_clbk CGravityStoneRegenerctor_CGravityStoneRegener2_user(nullptr);
+        static info::CGravityStoneRegenerCheatClearRegenState4_ptr CGravityStoneRegenerCheatClearRegenState4_next(nullptr);
+        static info::CGravityStoneRegenerCheatClearRegenState4_clbk CGravityStoneRegenerCheatClearRegenState4_user(nullptr);
+        static info::CGravityStoneRegenerClearRegen6_ptr CGravityStoneRegenerClearRegen6_next(nullptr);
+        static info::CGravityStoneRegenerClearRegen6_clbk CGravityStoneRegenerClearRegen6_user(nullptr);
+        static info::CGravityStoneRegenerCreate8_ptr CGravityStoneRegenerCreate8_next(nullptr);
+        static info::CGravityStoneRegenerCreate8_clbk CGravityStoneRegenerCreate8_user(nullptr);
+        static info::CGravityStoneRegenerDestroy10_ptr CGravityStoneRegenerDestroy10_next(nullptr);
+        static info::CGravityStoneRegenerDestroy10_clbk CGravityStoneRegenerDestroy10_user(nullptr);
+        static info::CGravityStoneRegenerGetPortalInx12_ptr CGravityStoneRegenerGetPortalInx12_next(nullptr);
+        static info::CGravityStoneRegenerGetPortalInx12_clbk CGravityStoneRegenerGetPortalInx12_user(nullptr);
+        static info::CGravityStoneRegenerGetStateString14_ptr CGravityStoneRegenerGetStateString14_next(nullptr);
+        static info::CGravityStoneRegenerGetStateString14_clbk CGravityStoneRegenerGetStateString14_user(nullptr);
+        static info::CGravityStoneRegenerInit16_ptr CGravityStoneRegenerInit16_next(nullptr);
+        static info::CGravityStoneRegenerInit16_clbk CGravityStoneRegenerInit16_user(nullptr);
+        static info::CGravityStoneRegenerIsNearPosition18_ptr CGravityStoneRegenerIsNearPosition18_next(nullptr);
+        static info::CGravityStoneRegenerIsNearPosition18_clbk CGravityStoneRegenerIsNearPosition18_user(nullptr);
+        static info::CGravityStoneRegenerRegen20_ptr CGravityStoneRegenerRegen20_next(nullptr);
+        static info::CGravityStoneRegenerRegen20_clbk CGravityStoneRegenerRegen20_user(nullptr);
+        static info::CGravityStoneRegenerSendMsgAlterState22_ptr CGravityStoneRegenerSendMsgAlterState22_next(nullptr);
+        static info::CGravityStoneRegenerSendMsgAlterState22_clbk CGravityStoneRegenerSendMsgAlterState22_user(nullptr);
+        static info::CGravityStoneRegenerSendMsg_FixPosition24_ptr CGravityStoneRegenerSendMsg_FixPosition24_next(nullptr);
+        static info::CGravityStoneRegenerSendMsg_FixPosition24_clbk CGravityStoneRegenerSendMsg_FixPosition24_user(nullptr);
+        static info::CGravityStoneRegenerTake26_ptr CGravityStoneRegenerTake26_next(nullptr);
+        static info::CGravityStoneRegenerTake26_clbk CGravityStoneRegenerTake26_user(nullptr);
+        static info::CGravityStoneRegenerdtor_CGravityStoneRegener32_ptr CGravityStoneRegenerdtor_CGravityStoneRegener32_next(nullptr);
+        static info::CGravityStoneRegenerdtor_CGravityStoneRegener32_clbk CGravityStoneRegenerdtor_CGravityStoneRegener32_user(nullptr);
         
-        void CGravityStoneRegenerctor_CGravityStoneRegener2_wrapper(struct CGravityStoneRegener* _this)
+        static void CGravityStoneRegenerctor_CGravityStoneRegener2_wrapper(struct CGravityStoneRegener* _this)
         {
            CGravityStoneRegenerctor_CGravityStoneRegener2_user(_this, CGravityStoneRegenerctor_CGravityStoneRegener2_next);
         };
-        void CGravityStoneRegenerCheatClearRegenState4_wrapper(struct CGravityStoneRegener* _this)
+        static void CGravityStoneRegenerCheatClearRegenState4_wrapper(struct CGravityStoneRegener* _this)
         {
            CGravityStoneRegenerCheatClearRegenState4_user(_this, CGravityStoneRegenerCheatClearRegenState4_next);
         };
-        bool CGravityStoneRegenerClearRegen6_wrapper(struct CGravityStoneRegener* _this)
+        static bool CGravityStoneRegenerClearRegen6_wrapper(struct CGravityStoneRegener* _this)
         {
            return CGravityStoneRegenerClearRegen6_user(_this, CGravityStoneRegenerClearRegen6_next);
         };
-        bool CGravityStoneRegenerCreate8_wrapper(struct CGravityStoneRegener* _this, struct CMapData* pkMap)
+        static bool CGravityStoneRegenerCreate8_wrapper(struct CGravityStoneRegener* _this, struct CMapData* pkMap)
         {
            return CGravityStoneRegenerCreate8_user(_this, pkMap, CGravityStoneRegenerCreate8_next);
         };
-        void CGravityStoneRegenerDestroy10_wrapper(struct CGravityStoneRegener* _this)
+        static void CGravityStoneRegenerDestroy10_wrapper(struct CGravityStoneRegener* _this)
         {
            CGravityStoneRegenerDestroy10_user(_this, CGravityStoneRegenerDestroy10_next);
         };
-        int CGravityStoneRegenerGetPortalInx12_wrapper(struct CGravityStoneRegener* _this)
+        static int CGravityStoneRegenerGetPortalInx12_wrapper(struct CGravityStoneRegener* _this)
         {
            return CGravityStoneRegenerGetPortalInx12_user(_this, CGravityStoneRegenerGetPortalInx12_next);
         };
-        char* CGravityStoneRegenerGetStateString14_wrapper(struct CGravityStoneRegener* _this, struct ATL::CStringT<char,StrTraitMFC_DLL<char,ATL::ChTraitsCRT<char> > >* strState)
+        static char* CGravityStoneRegenerGetStateString14_wrapper(struct CGravityStoneRegener* _this, struct ATL::CStringT<char,StrTraitMFC_DLL<char,ATL::ChTraitsCRT<char> > >* strState)
         {
            return CGravityStoneRegenerGetStateString14_user(_this, strState, CGravityStoneRegenerGetStateString14_next);
         };
-        bool CGravityStoneRegenerInit16_wrapper(struct CGravityStoneRegener* _this, unsigned int uiMapInx, uint16_t wInx, struct CMapData* pkMap)
+        static bool CGravityStoneRegenerInit16_wrapper(struct CGravityStoneRegener* _this, unsigned int uiMapInx, uint16_t wInx, struct CMapData* pkMap)
         {
            return CGravityStoneRegenerInit16_user(_this, uiMapInx, wInx, pkMap, CGravityStoneRegenerInit16_next);
         };
-        bool CGravityStoneRegenerIsNearPosition18_wrapper(struct CGravityStoneRegener* _this, float* pfCurPos)
+        static bool CGravityStoneRegenerIsNearPosition18_wrapper(struct CGravityStoneRegener* _this, float* pfCurPos)
         {
            return CGravityStoneRegenerIsNearPosition18_user(_this, pfCurPos, CGravityStoneRegenerIsNearPosition18_next);
         };
-        int CGravityStoneRegenerRegen20_wrapper(struct CGravityStoneRegener* _this)
+        static int CGravityStoneRegenerRegen20_wrapper(struct CGravityStoneRegener* _this)
         {
            return CGravityStoneRegenerRegen20_user(_this, CGravityStoneRegenerRegen20_next);
         };
-        void CGravityStoneRegenerSendMsgAlterState22_wrapper(struct CGravityStoneRegener* _this)
+        static void CGravityStoneRegenerSendMsgAlterState22_wrapper(struct CGravityStoneRegener* _this)
         {
            CGravityStoneRegenerSendMsgAlterState22_user(_this, CGravityStoneRegenerSendMsgAlterState22_next);
         };
-        void CGravityStoneRegenerSendMsg_FixPosition24_wrapper(struct CGravityStoneRegener* _this, int n)
+        static void CGravityStoneRegenerSendMsg_FixPosition24_wrapper(struct CGravityStoneRegener* _this, int n)
         {
            CGravityStoneRegenerSendMsg_FixPosition24_user(_this, n, CGravityStoneRegenerSendMsg_FixPosition24_next);
         };
-        char CGravityStoneRegenerTake26_wrapper(struct CGravityStoneRegener* _this, struct CMapData* pkMap, float* pfCurPos)
+        static char CGravityStoneRegenerTake26_wrapper(struct CGravityStoneRegener* _this, struct CMapData* pkMap, float* pfCurPos)
         {
            return CGravityStoneRegenerTake26_user(_this, pkMap, pfCurPos, CGravityStoneRegenerTake26_next);
         };
-        void CGravityStoneRegenerdtor_CGravityStoneRegener32_wrapper(struct CGravityStoneRegener* _this)
+        static void CGravityStoneRegenerdtor_CGravityStoneRegener32_wrapper(struct CGravityStoneRegener* _this)
         {
            CGravityStoneRegenerdtor_CGravityStoneRegener32_user(_this, CGravityStoneRegenerdtor_CGravityStoneRegener32_next);
         };
         
-        hook_record CGravityStoneRegener_functions[] = {
+        static hook_record CGravityStoneRegener_functions[] = {
         {   (LPVOID)0x14012e4c0L,
             (LPVOID *)&CGravityStoneRegenerctor_CGravityStoneRegener2_user,
             (LPVOID *)&CGravityStoneRegenerctor_CGravityStoneRegener2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

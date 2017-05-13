@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_base_fldctor__base_fld2_ptr _base_fldctor__base_fld2_next(nullptr);
-        info::_base_fldctor__base_fld2_clbk _base_fldctor__base_fld2_user(nullptr);
+        static info::_base_fldctor__base_fld2_ptr _base_fldctor__base_fld2_next(nullptr);
+        static info::_base_fldctor__base_fld2_clbk _base_fldctor__base_fld2_user(nullptr);
         
-        void _base_fldctor__base_fld2_wrapper(struct _base_fld* _this)
+        static void _base_fldctor__base_fld2_wrapper(struct _base_fld* _this)
         {
            _base_fldctor__base_fld2_user(_this, _base_fldctor__base_fld2_next);
         };
         
-        hook_record _base_fld_functions[] = {
+        static hook_record _base_fld_functions[] = {
         {   (LPVOID)0x140161930L,
             (LPVOID *)&_base_fldctor__base_fld2_user,
             (LPVOID *)&_base_fldctor__base_fld2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCryptParamCretector_CCryptParamCrete2_ptr CCryptParamCretector_CCryptParamCrete2_next(nullptr);
-        info::CCryptParamCretector_CCryptParamCrete2_clbk CCryptParamCretector_CCryptParamCrete2_user(nullptr);
-        info::CCryptParamCretedtor_CCryptParamCrete7_ptr CCryptParamCretedtor_CCryptParamCrete7_next(nullptr);
-        info::CCryptParamCretedtor_CCryptParamCrete7_clbk CCryptParamCretedtor_CCryptParamCrete7_user(nullptr);
+        static info::CCryptParamCretector_CCryptParamCrete2_ptr CCryptParamCretector_CCryptParamCrete2_next(nullptr);
+        static info::CCryptParamCretector_CCryptParamCrete2_clbk CCryptParamCretector_CCryptParamCrete2_user(nullptr);
+        static info::CCryptParamCretedtor_CCryptParamCrete7_ptr CCryptParamCretedtor_CCryptParamCrete7_next(nullptr);
+        static info::CCryptParamCretedtor_CCryptParamCrete7_clbk CCryptParamCretedtor_CCryptParamCrete7_user(nullptr);
         
-        void CCryptParamCretector_CCryptParamCrete2_wrapper(struct CCryptParamCrete* _this, struct CryptoPP::AutoSeededRandomPool* prng)
+        static void CCryptParamCretector_CCryptParamCrete2_wrapper(struct CCryptParamCrete* _this, struct CryptoPP::AutoSeededRandomPool* prng)
         {
            CCryptParamCretector_CCryptParamCrete2_user(_this, prng, CCryptParamCretector_CCryptParamCrete2_next);
         };
-        void CCryptParamCretedtor_CCryptParamCrete7_wrapper(struct CCryptParamCrete* _this)
+        static void CCryptParamCretedtor_CCryptParamCrete7_wrapper(struct CCryptParamCrete* _this)
         {
            CCryptParamCretedtor_CCryptParamCrete7_user(_this, CCryptParamCretedtor_CCryptParamCrete7_next);
         };
         
-        hook_record CCryptParamCrete_functions[] = {
+        static hook_record CCryptParamCrete_functions[] = {
         {   (LPVOID)0x140448170L,
             (LPVOID *)&CCryptParamCretector_CCryptParamCrete2_user,
             (LPVOID *)&CCryptParamCretector_CCryptParamCrete2_next,
@@ -36,6 +36,6 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 */

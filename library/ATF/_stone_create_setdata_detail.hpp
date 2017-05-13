@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_stone_create_setdatactor__stone_create_setdata2_ptr _stone_create_setdatactor__stone_create_setdata2_next(nullptr);
-        info::_stone_create_setdatactor__stone_create_setdata2_clbk _stone_create_setdatactor__stone_create_setdata2_user(nullptr);
+        static info::_stone_create_setdatactor__stone_create_setdata2_ptr _stone_create_setdatactor__stone_create_setdata2_next(nullptr);
+        static info::_stone_create_setdatactor__stone_create_setdata2_clbk _stone_create_setdatactor__stone_create_setdata2_user(nullptr);
         
-        void _stone_create_setdatactor__stone_create_setdata2_wrapper(struct _stone_create_setdata* _this)
+        static void _stone_create_setdatactor__stone_create_setdata2_wrapper(struct _stone_create_setdata* _this)
         {
            _stone_create_setdatactor__stone_create_setdata2_user(_this, _stone_create_setdatactor__stone_create_setdata2_next);
         };
         
-        hook_record _stone_create_setdata_functions[] = {
+        static hook_record _stone_create_setdata_functions[] = {
         {   (LPVOID)0x140284530L,
             (LPVOID *)&_stone_create_setdatactor__stone_create_setdata2_user,
             (LPVOID *)&_stone_create_setdatactor__stone_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

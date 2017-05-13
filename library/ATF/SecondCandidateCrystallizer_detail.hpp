@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::SecondCandidateCrystallizerDoit2_ptr SecondCandidateCrystallizerDoit2_next(nullptr);
-        info::SecondCandidateCrystallizerDoit2_clbk SecondCandidateCrystallizerDoit2_user(nullptr);
-        info::SecondCandidateCrystallizerInitialize4_ptr SecondCandidateCrystallizerInitialize4_next(nullptr);
-        info::SecondCandidateCrystallizerInitialize4_clbk SecondCandidateCrystallizerInitialize4_user(nullptr);
-        info::SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_ptr SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_next(nullptr);
-        info::SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_clbk SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_user(nullptr);
-        info::SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_ptr SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_next(nullptr);
-        info::SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_clbk SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_user(nullptr);
+        static info::SecondCandidateCrystallizerDoit2_ptr SecondCandidateCrystallizerDoit2_next(nullptr);
+        static info::SecondCandidateCrystallizerDoit2_clbk SecondCandidateCrystallizerDoit2_user(nullptr);
+        static info::SecondCandidateCrystallizerInitialize4_ptr SecondCandidateCrystallizerInitialize4_next(nullptr);
+        static info::SecondCandidateCrystallizerInitialize4_clbk SecondCandidateCrystallizerInitialize4_user(nullptr);
+        static info::SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_ptr SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_next(nullptr);
+        static info::SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_clbk SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_user(nullptr);
+        static info::SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_ptr SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_next(nullptr);
+        static info::SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_clbk SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_user(nullptr);
         
-        int SecondCandidateCrystallizerDoit2_wrapper(struct SecondCandidateCrystallizer* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int SecondCandidateCrystallizerDoit2_wrapper(struct SecondCandidateCrystallizer* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return SecondCandidateCrystallizerDoit2_user(_this, eCmd, pOne, pdata, SecondCandidateCrystallizerDoit2_next);
         };
-        bool SecondCandidateCrystallizerInitialize4_wrapper(struct SecondCandidateCrystallizer* _this)
+        static bool SecondCandidateCrystallizerInitialize4_wrapper(struct SecondCandidateCrystallizer* _this)
         {
            return SecondCandidateCrystallizerInitialize4_user(_this, SecondCandidateCrystallizerInitialize4_next);
         };
-        void SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_wrapper(struct SecondCandidateCrystallizer* _this)
+        static void SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_wrapper(struct SecondCandidateCrystallizer* _this)
         {
            SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_user(_this, SecondCandidateCrystallizerctor_SecondCandidateCrystallizer6_next);
         };
-        void SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_wrapper(struct SecondCandidateCrystallizer* _this)
+        static void SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_wrapper(struct SecondCandidateCrystallizer* _this)
         {
            SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_user(_this, SecondCandidateCrystallizerdtor_SecondCandidateCrystallizer11_next);
         };
         
-        hook_record SecondCandidateCrystallizer_functions[] = {
+        static hook_record SecondCandidateCrystallizer_functions[] = {
         {   (LPVOID)0x1402be6c0L,
             (LPVOID *)&SecondCandidateCrystallizerDoit2_user,
             (LPVOID *)&SecondCandidateCrystallizerDoit2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

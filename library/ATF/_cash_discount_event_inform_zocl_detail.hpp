@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_cash_discount_event_inform_zoclsize2_ptr _cash_discount_event_inform_zoclsize2_next(nullptr);
-        info::_cash_discount_event_inform_zoclsize2_clbk _cash_discount_event_inform_zoclsize2_user(nullptr);
+        static info::_cash_discount_event_inform_zoclsize2_ptr _cash_discount_event_inform_zoclsize2_next(nullptr);
+        static info::_cash_discount_event_inform_zoclsize2_clbk _cash_discount_event_inform_zoclsize2_user(nullptr);
         
-        int _cash_discount_event_inform_zoclsize2_wrapper(struct _cash_discount_event_inform_zocl* _this)
+        static int _cash_discount_event_inform_zoclsize2_wrapper(struct _cash_discount_event_inform_zocl* _this)
         {
            return _cash_discount_event_inform_zoclsize2_user(_this, _cash_discount_event_inform_zoclsize2_next);
         };
         
-        hook_record _cash_discount_event_inform_zocl_functions[] = {
+        static hook_record _cash_discount_event_inform_zocl_functions[] = {
         {   (LPVOID)0x14030d700L,
             (LPVOID *)&_cash_discount_event_inform_zoclsize2_user,
             (LPVOID *)&_cash_discount_event_inform_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

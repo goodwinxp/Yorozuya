@@ -10,33 +10,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_ptr GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_clbk GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_user(_this, GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_next);
             };
-            int GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
+            static int GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this, struct GUILD_BATTLE::CNormalGuildBattle* pkBattle)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_user(_this, pkBattle, GUILD_BATTLE__CNormalGuildBattleStateNotifyEnter4_next);
             };
-            struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this, struct ATL::CTimeSpan* result)
+            static struct ATL::CTimeSpan* GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this, struct ATL::CTimeSpan* result)
             {
                return GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_user(_this, result, GUILD_BATTLE__CNormalGuildBattleStateNotifyGetTerm6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleStateNotify* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_user(_this, GUILD_BATTLE__CNormalGuildBattleStateNotifydtor_CNormalGuildBattleStateNotify8_next);
             };
             
-            hook_record CNormalGuildBattleStateNotify_functions[] = {
+            static hook_record CNormalGuildBattleStateNotify_functions[] = {
             {   (LPVOID)0x1403f06b0L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleStateNotifyctor_CNormalGuildBattleStateNotify2_next,
@@ -60,6 +60,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

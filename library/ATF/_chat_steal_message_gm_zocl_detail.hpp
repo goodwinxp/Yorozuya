@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_ptr _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_next(nullptr);
-        info::_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_clbk _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_user(nullptr);
-        info::_chat_steal_message_gm_zoclsize4_ptr _chat_steal_message_gm_zoclsize4_next(nullptr);
-        info::_chat_steal_message_gm_zoclsize4_clbk _chat_steal_message_gm_zoclsize4_user(nullptr);
+        static info::_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_ptr _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_next(nullptr);
+        static info::_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_clbk _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_user(nullptr);
+        static info::_chat_steal_message_gm_zoclsize4_ptr _chat_steal_message_gm_zoclsize4_next(nullptr);
+        static info::_chat_steal_message_gm_zoclsize4_clbk _chat_steal_message_gm_zoclsize4_user(nullptr);
         
-        void _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_wrapper(struct _chat_steal_message_gm_zocl* _this)
+        static void _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_wrapper(struct _chat_steal_message_gm_zocl* _this)
         {
            _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_user(_this, _chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_next);
         };
-        int _chat_steal_message_gm_zoclsize4_wrapper(struct _chat_steal_message_gm_zocl* _this)
+        static int _chat_steal_message_gm_zoclsize4_wrapper(struct _chat_steal_message_gm_zocl* _this)
         {
            return _chat_steal_message_gm_zoclsize4_user(_this, _chat_steal_message_gm_zoclsize4_next);
         };
         
-        hook_record _chat_steal_message_gm_zocl_functions[] = {
+        static hook_record _chat_steal_message_gm_zocl_functions[] = {
         {   (LPVOID)0x1403f8d30L,
             (LPVOID *)&_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_user,
             (LPVOID *)&_chat_steal_message_gm_zoclctor__chat_steal_message_gm_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

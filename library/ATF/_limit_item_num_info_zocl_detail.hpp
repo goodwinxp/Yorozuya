@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_ptr _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_next(nullptr);
-        info::_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_clbk _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_user(nullptr);
-        info::_limit_item_num_info_zoclsize4_ptr _limit_item_num_info_zoclsize4_next(nullptr);
-        info::_limit_item_num_info_zoclsize4_clbk _limit_item_num_info_zoclsize4_user(nullptr);
+        static info::_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_ptr _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_next(nullptr);
+        static info::_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_clbk _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_user(nullptr);
+        static info::_limit_item_num_info_zoclsize4_ptr _limit_item_num_info_zoclsize4_next(nullptr);
+        static info::_limit_item_num_info_zoclsize4_clbk _limit_item_num_info_zoclsize4_user(nullptr);
         
-        void _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_wrapper(struct _limit_item_num_info_zocl* _this)
+        static void _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_wrapper(struct _limit_item_num_info_zocl* _this)
         {
            _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_user(_this, _limit_item_num_info_zoclctor__limit_item_num_info_zocl2_next);
         };
-        int _limit_item_num_info_zoclsize4_wrapper(struct _limit_item_num_info_zocl* _this)
+        static int _limit_item_num_info_zoclsize4_wrapper(struct _limit_item_num_info_zocl* _this)
         {
            return _limit_item_num_info_zoclsize4_user(_this, _limit_item_num_info_zoclsize4_next);
         };
         
-        hook_record _limit_item_num_info_zocl_functions[] = {
+        static hook_record _limit_item_num_info_zocl_functions[] = {
         {   (LPVOID)0x1400ef1b0L,
             (LPVOID *)&_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_user,
             (LPVOID *)&_limit_item_num_info_zoclctor__limit_item_num_info_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

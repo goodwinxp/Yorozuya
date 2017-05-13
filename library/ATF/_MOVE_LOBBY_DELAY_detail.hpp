@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_MOVE_LOBBY_DELAYProcess2_ptr _MOVE_LOBBY_DELAYProcess2_next(nullptr);
-        info::_MOVE_LOBBY_DELAYProcess2_clbk _MOVE_LOBBY_DELAYProcess2_user(nullptr);
-        info::_MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_ptr _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_next(nullptr);
-        info::_MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_clbk _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_user(nullptr);
-        info::_MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_ptr _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_next(nullptr);
-        info::_MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_clbk _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_user(nullptr);
+        static info::_MOVE_LOBBY_DELAYProcess2_ptr _MOVE_LOBBY_DELAYProcess2_next(nullptr);
+        static info::_MOVE_LOBBY_DELAYProcess2_clbk _MOVE_LOBBY_DELAYProcess2_user(nullptr);
+        static info::_MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_ptr _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_next(nullptr);
+        static info::_MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_clbk _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_user(nullptr);
+        static info::_MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_ptr _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_next(nullptr);
+        static info::_MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_clbk _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_user(nullptr);
         
-        void _MOVE_LOBBY_DELAYProcess2_wrapper(struct _MOVE_LOBBY_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static void _MOVE_LOBBY_DELAYProcess2_wrapper(struct _MOVE_LOBBY_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            _MOVE_LOBBY_DELAYProcess2_user(_this, dwIndex, dwSerial, _MOVE_LOBBY_DELAYProcess2_next);
         };
-        void _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_wrapper(struct _MOVE_LOBBY_DELAY* _this)
+        static void _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_wrapper(struct _MOVE_LOBBY_DELAY* _this)
         {
            _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_user(_this, _MOVE_LOBBY_DELAYctor__MOVE_LOBBY_DELAY4_next);
         };
-        void _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_wrapper(struct _MOVE_LOBBY_DELAY* _this)
+        static void _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_wrapper(struct _MOVE_LOBBY_DELAY* _this)
         {
            _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_user(_this, _MOVE_LOBBY_DELAYdtor__MOVE_LOBBY_DELAY6_next);
         };
         
-        hook_record _MOVE_LOBBY_DELAY_functions[] = {
+        static hook_record _MOVE_LOBBY_DELAY_functions[] = {
         {   (LPVOID)0x14011b430L,
             (LPVOID *)&_MOVE_LOBBY_DELAYProcess2_user,
             (LPVOID *)&_MOVE_LOBBY_DELAYProcess2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

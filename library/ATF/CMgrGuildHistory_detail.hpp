@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMgrGuildHistoryctor_CMgrGuildHistory2_ptr CMgrGuildHistoryctor_CMgrGuildHistory2_next(nullptr);
-        info::CMgrGuildHistoryctor_CMgrGuildHistory2_clbk CMgrGuildHistoryctor_CMgrGuildHistory2_user(nullptr);
-        info::CMgrGuildHistoryGetNewFileName4_ptr CMgrGuildHistoryGetNewFileName4_next(nullptr);
-        info::CMgrGuildHistoryGetNewFileName4_clbk CMgrGuildHistoryGetNewFileName4_user(nullptr);
-        info::CMgrGuildHistoryGetTotalWaitSize6_ptr CMgrGuildHistoryGetTotalWaitSize6_next(nullptr);
-        info::CMgrGuildHistoryGetTotalWaitSize6_clbk CMgrGuildHistoryGetTotalWaitSize6_user(nullptr);
-        info::CMgrGuildHistoryIOThread8_ptr CMgrGuildHistoryIOThread8_next(nullptr);
-        info::CMgrGuildHistoryIOThread8_clbk CMgrGuildHistoryIOThread8_user(nullptr);
-        info::CMgrGuildHistoryOnLoop10_ptr CMgrGuildHistoryOnLoop10_next(nullptr);
-        info::CMgrGuildHistoryOnLoop10_clbk CMgrGuildHistoryOnLoop10_user(nullptr);
-        info::CMgrGuildHistoryWriteFile12_ptr CMgrGuildHistoryWriteFile12_next(nullptr);
-        info::CMgrGuildHistoryWriteFile12_clbk CMgrGuildHistoryWriteFile12_user(nullptr);
-        info::CMgrGuildHistorychange_atrade_taxrate14_ptr CMgrGuildHistorychange_atrade_taxrate14_next(nullptr);
-        info::CMgrGuildHistorychange_atrade_taxrate14_clbk CMgrGuildHistorychange_atrade_taxrate14_user(nullptr);
-        info::CMgrGuildHistoryjoin_member16_ptr CMgrGuildHistoryjoin_member16_next(nullptr);
-        info::CMgrGuildHistoryjoin_member16_clbk CMgrGuildHistoryjoin_member16_user(nullptr);
-        info::CMgrGuildHistoryleave_member18_ptr CMgrGuildHistoryleave_member18_next(nullptr);
-        info::CMgrGuildHistoryleave_member18_clbk CMgrGuildHistoryleave_member18_user(nullptr);
-        info::CMgrGuildHistoryload_guild20_ptr CMgrGuildHistoryload_guild20_next(nullptr);
-        info::CMgrGuildHistoryload_guild20_clbk CMgrGuildHistoryload_guild20_user(nullptr);
-        info::CMgrGuildHistorypop_money22_ptr CMgrGuildHistorypop_money22_next(nullptr);
-        info::CMgrGuildHistorypop_money22_clbk CMgrGuildHistorypop_money22_user(nullptr);
-        info::CMgrGuildHistorypush_money24_ptr CMgrGuildHistorypush_money24_next(nullptr);
-        info::CMgrGuildHistorypush_money24_clbk CMgrGuildHistorypush_money24_user(nullptr);
-        info::CMgrGuildHistorystart_guild26_ptr CMgrGuildHistorystart_guild26_next(nullptr);
-        info::CMgrGuildHistorystart_guild26_clbk CMgrGuildHistorystart_guild26_user(nullptr);
-        info::CMgrGuildHistorysuggest_cancel28_ptr CMgrGuildHistorysuggest_cancel28_next(nullptr);
-        info::CMgrGuildHistorysuggest_cancel28_clbk CMgrGuildHistorysuggest_cancel28_user(nullptr);
-        info::CMgrGuildHistorysuggest_complete30_ptr CMgrGuildHistorysuggest_complete30_next(nullptr);
-        info::CMgrGuildHistorysuggest_complete30_clbk CMgrGuildHistorysuggest_complete30_user(nullptr);
-        info::CMgrGuildHistorysuggest_vote32_ptr CMgrGuildHistorysuggest_vote32_next(nullptr);
-        info::CMgrGuildHistorysuggest_vote32_clbk CMgrGuildHistorysuggest_vote32_user(nullptr);
-        info::CMgrGuildHistorydtor_CMgrGuildHistory34_ptr CMgrGuildHistorydtor_CMgrGuildHistory34_next(nullptr);
-        info::CMgrGuildHistorydtor_CMgrGuildHistory34_clbk CMgrGuildHistorydtor_CMgrGuildHistory34_user(nullptr);
+        static info::CMgrGuildHistoryctor_CMgrGuildHistory2_ptr CMgrGuildHistoryctor_CMgrGuildHistory2_next(nullptr);
+        static info::CMgrGuildHistoryctor_CMgrGuildHistory2_clbk CMgrGuildHistoryctor_CMgrGuildHistory2_user(nullptr);
+        static info::CMgrGuildHistoryGetNewFileName4_ptr CMgrGuildHistoryGetNewFileName4_next(nullptr);
+        static info::CMgrGuildHistoryGetNewFileName4_clbk CMgrGuildHistoryGetNewFileName4_user(nullptr);
+        static info::CMgrGuildHistoryGetTotalWaitSize6_ptr CMgrGuildHistoryGetTotalWaitSize6_next(nullptr);
+        static info::CMgrGuildHistoryGetTotalWaitSize6_clbk CMgrGuildHistoryGetTotalWaitSize6_user(nullptr);
+        static info::CMgrGuildHistoryIOThread8_ptr CMgrGuildHistoryIOThread8_next(nullptr);
+        static info::CMgrGuildHistoryIOThread8_clbk CMgrGuildHistoryIOThread8_user(nullptr);
+        static info::CMgrGuildHistoryOnLoop10_ptr CMgrGuildHistoryOnLoop10_next(nullptr);
+        static info::CMgrGuildHistoryOnLoop10_clbk CMgrGuildHistoryOnLoop10_user(nullptr);
+        static info::CMgrGuildHistoryWriteFile12_ptr CMgrGuildHistoryWriteFile12_next(nullptr);
+        static info::CMgrGuildHistoryWriteFile12_clbk CMgrGuildHistoryWriteFile12_user(nullptr);
+        static info::CMgrGuildHistorychange_atrade_taxrate14_ptr CMgrGuildHistorychange_atrade_taxrate14_next(nullptr);
+        static info::CMgrGuildHistorychange_atrade_taxrate14_clbk CMgrGuildHistorychange_atrade_taxrate14_user(nullptr);
+        static info::CMgrGuildHistoryjoin_member16_ptr CMgrGuildHistoryjoin_member16_next(nullptr);
+        static info::CMgrGuildHistoryjoin_member16_clbk CMgrGuildHistoryjoin_member16_user(nullptr);
+        static info::CMgrGuildHistoryleave_member18_ptr CMgrGuildHistoryleave_member18_next(nullptr);
+        static info::CMgrGuildHistoryleave_member18_clbk CMgrGuildHistoryleave_member18_user(nullptr);
+        static info::CMgrGuildHistoryload_guild20_ptr CMgrGuildHistoryload_guild20_next(nullptr);
+        static info::CMgrGuildHistoryload_guild20_clbk CMgrGuildHistoryload_guild20_user(nullptr);
+        static info::CMgrGuildHistorypop_money22_ptr CMgrGuildHistorypop_money22_next(nullptr);
+        static info::CMgrGuildHistorypop_money22_clbk CMgrGuildHistorypop_money22_user(nullptr);
+        static info::CMgrGuildHistorypush_money24_ptr CMgrGuildHistorypush_money24_next(nullptr);
+        static info::CMgrGuildHistorypush_money24_clbk CMgrGuildHistorypush_money24_user(nullptr);
+        static info::CMgrGuildHistorystart_guild26_ptr CMgrGuildHistorystart_guild26_next(nullptr);
+        static info::CMgrGuildHistorystart_guild26_clbk CMgrGuildHistorystart_guild26_user(nullptr);
+        static info::CMgrGuildHistorysuggest_cancel28_ptr CMgrGuildHistorysuggest_cancel28_next(nullptr);
+        static info::CMgrGuildHistorysuggest_cancel28_clbk CMgrGuildHistorysuggest_cancel28_user(nullptr);
+        static info::CMgrGuildHistorysuggest_complete30_ptr CMgrGuildHistorysuggest_complete30_next(nullptr);
+        static info::CMgrGuildHistorysuggest_complete30_clbk CMgrGuildHistorysuggest_complete30_user(nullptr);
+        static info::CMgrGuildHistorysuggest_vote32_ptr CMgrGuildHistorysuggest_vote32_next(nullptr);
+        static info::CMgrGuildHistorysuggest_vote32_clbk CMgrGuildHistorysuggest_vote32_user(nullptr);
+        static info::CMgrGuildHistorydtor_CMgrGuildHistory34_ptr CMgrGuildHistorydtor_CMgrGuildHistory34_next(nullptr);
+        static info::CMgrGuildHistorydtor_CMgrGuildHistory34_clbk CMgrGuildHistorydtor_CMgrGuildHistory34_user(nullptr);
         
-        void CMgrGuildHistoryctor_CMgrGuildHistory2_wrapper(struct CMgrGuildHistory* _this)
+        static void CMgrGuildHistoryctor_CMgrGuildHistory2_wrapper(struct CMgrGuildHistory* _this)
         {
            CMgrGuildHistoryctor_CMgrGuildHistory2_user(_this, CMgrGuildHistoryctor_CMgrGuildHistory2_next);
         };
-        void CMgrGuildHistoryGetNewFileName4_wrapper(struct CMgrGuildHistory* _this, unsigned int dwGuildSerial, char* pszFileName)
+        static void CMgrGuildHistoryGetNewFileName4_wrapper(struct CMgrGuildHistory* _this, unsigned int dwGuildSerial, char* pszFileName)
         {
            CMgrGuildHistoryGetNewFileName4_user(_this, dwGuildSerial, pszFileName, CMgrGuildHistoryGetNewFileName4_next);
         };
-        int CMgrGuildHistoryGetTotalWaitSize6_wrapper(struct CMgrGuildHistory* _this)
+        static int CMgrGuildHistoryGetTotalWaitSize6_wrapper(struct CMgrGuildHistory* _this)
         {
            return CMgrGuildHistoryGetTotalWaitSize6_user(_this, CMgrGuildHistoryGetTotalWaitSize6_next);
         };
-        void CMgrGuildHistoryIOThread8_wrapper(void* pv)
+        static void CMgrGuildHistoryIOThread8_wrapper(void* pv)
         {
            CMgrGuildHistoryIOThread8_user(pv, CMgrGuildHistoryIOThread8_next);
         };
-        void CMgrGuildHistoryOnLoop10_wrapper(struct CMgrGuildHistory* _this)
+        static void CMgrGuildHistoryOnLoop10_wrapper(struct CMgrGuildHistory* _this)
         {
            CMgrGuildHistoryOnLoop10_user(_this, CMgrGuildHistoryOnLoop10_next);
         };
-        void CMgrGuildHistoryWriteFile12_wrapper(struct CMgrGuildHistory* _this, char* pszFileName, char* pszLog)
+        static void CMgrGuildHistoryWriteFile12_wrapper(struct CMgrGuildHistory* _this, char* pszFileName, char* pszLog)
         {
            CMgrGuildHistoryWriteFile12_user(_this, pszFileName, pszLog, CMgrGuildHistoryWriteFile12_next);
         };
-        void CMgrGuildHistorychange_atrade_taxrate14_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, char byCurTax, char byNextTax, char* pszFileName)
+        static void CMgrGuildHistorychange_atrade_taxrate14_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, char byCurTax, char byNextTax, char* pszFileName)
         {
            CMgrGuildHistorychange_atrade_taxrate14_user(_this, pszSugerName, dwSugerSerial, byCurTax, byNextTax, pszFileName, CMgrGuildHistorychange_atrade_taxrate14_next);
         };
-        void CMgrGuildHistoryjoin_member16_wrapper(struct CMgrGuildHistory* _this, char* pszJoinerName, unsigned int dwJoinerSerial, char* pszOKerName, unsigned int dwOKSerial, int nMemNum, char* pszFileName)
+        static void CMgrGuildHistoryjoin_member16_wrapper(struct CMgrGuildHistory* _this, char* pszJoinerName, unsigned int dwJoinerSerial, char* pszOKerName, unsigned int dwOKSerial, int nMemNum, char* pszFileName)
         {
            CMgrGuildHistoryjoin_member16_user(_this, pszJoinerName, dwJoinerSerial, pszOKerName, dwOKSerial, nMemNum, pszFileName, CMgrGuildHistoryjoin_member16_next);
         };
-        void CMgrGuildHistoryleave_member18_wrapper(struct CMgrGuildHistory* _this, char* pszLeaverName, unsigned int dwLeaverSerial, bool bSelf, int nMemNum, char* pszFileName, bool bPunish)
+        static void CMgrGuildHistoryleave_member18_wrapper(struct CMgrGuildHistory* _this, char* pszLeaverName, unsigned int dwLeaverSerial, bool bSelf, int nMemNum, char* pszFileName, bool bPunish)
         {
            CMgrGuildHistoryleave_member18_user(_this, pszLeaverName, dwLeaverSerial, bSelf, nMemNum, pszFileName, bPunish, CMgrGuildHistoryleave_member18_next);
         };
-        void CMgrGuildHistoryload_guild20_wrapper(struct CMgrGuildHistory* _this, struct CGuild* pGuild, char* pszFileName)
+        static void CMgrGuildHistoryload_guild20_wrapper(struct CMgrGuildHistory* _this, struct CGuild* pGuild, char* pszFileName)
         {
            CMgrGuildHistoryload_guild20_user(_this, pGuild, pszFileName, CMgrGuildHistoryload_guild20_next);
         };
-        void CMgrGuildHistorypop_money22_wrapper(struct CMgrGuildHistory* _this, char* pszIOerName, unsigned int dwIOerSerial, int nPopDalant, int nPopGold, long double dTotalDalant, long double dTotalGold, char* pszFileName)
+        static void CMgrGuildHistorypop_money22_wrapper(struct CMgrGuildHistory* _this, char* pszIOerName, unsigned int dwIOerSerial, int nPopDalant, int nPopGold, long double dTotalDalant, long double dTotalGold, char* pszFileName)
         {
            CMgrGuildHistorypop_money22_user(_this, pszIOerName, dwIOerSerial, nPopDalant, nPopGold, dTotalDalant, dTotalGold, pszFileName, CMgrGuildHistorypop_money22_next);
         };
-        void CMgrGuildHistorypush_money24_wrapper(struct CMgrGuildHistory* _this, char* pszIOerName, unsigned int dwIOerSerial, int nPushDalant, int nPushGold, long double dTotalDalant, long double dTotalGold, char* pszFileName)
+        static void CMgrGuildHistorypush_money24_wrapper(struct CMgrGuildHistory* _this, char* pszIOerName, unsigned int dwIOerSerial, int nPushDalant, int nPushGold, long double dTotalDalant, long double dTotalGold, char* pszFileName)
         {
            CMgrGuildHistorypush_money24_user(_this, pszIOerName, dwIOerSerial, nPushDalant, nPushGold, dTotalDalant, dTotalGold, pszFileName, CMgrGuildHistorypush_money24_next);
         };
-        void CMgrGuildHistorystart_guild26_wrapper(struct CMgrGuildHistory* _this, struct CGuild* pGuild, char* pszFileName)
+        static void CMgrGuildHistorystart_guild26_wrapper(struct CMgrGuildHistory* _this, struct CGuild* pGuild, char* pszFileName)
         {
            CMgrGuildHistorystart_guild26_user(_this, pGuild, pszFileName, CMgrGuildHistorystart_guild26_next);
         };
-        void CMgrGuildHistorysuggest_cancel28_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, char* pszFileName)
+        static void CMgrGuildHistorysuggest_cancel28_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, char* pszFileName)
         {
            CMgrGuildHistorysuggest_cancel28_user(_this, pszSugerName, dwSugerSerial, pMatter, pszFileName, CMgrGuildHistorysuggest_cancel28_next);
         };
-        void CMgrGuildHistorysuggest_complete30_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, bool bPass, char* pszFileName)
+        static void CMgrGuildHistorysuggest_complete30_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, bool bPass, char* pszFileName)
         {
            CMgrGuildHistorysuggest_complete30_user(_this, pszSugerName, dwSugerSerial, pMatter, bPass, pszFileName, CMgrGuildHistorysuggest_complete30_next);
         };
-        void CMgrGuildHistorysuggest_vote32_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, char* pszFileName)
+        static void CMgrGuildHistorysuggest_vote32_wrapper(struct CMgrGuildHistory* _this, char* pszSugerName, unsigned int dwSugerSerial, struct _suggested_matter* pMatter, char* pszFileName)
         {
            CMgrGuildHistorysuggest_vote32_user(_this, pszSugerName, dwSugerSerial, pMatter, pszFileName, CMgrGuildHistorysuggest_vote32_next);
         };
-        void CMgrGuildHistorydtor_CMgrGuildHistory34_wrapper(struct CMgrGuildHistory* _this)
+        static void CMgrGuildHistorydtor_CMgrGuildHistory34_wrapper(struct CMgrGuildHistory* _this)
         {
            CMgrGuildHistorydtor_CMgrGuildHistory34_user(_this, CMgrGuildHistorydtor_CMgrGuildHistory34_next);
         };
         
-        hook_record CMgrGuildHistory_functions[] = {
+        static hook_record CMgrGuildHistory_functions[] = {
         {   (LPVOID)0x140248460L,
             (LPVOID *)&CMgrGuildHistoryctor_CMgrGuildHistory2_user,
             (LPVOID *)&CMgrGuildHistoryctor_CMgrGuildHistory2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::MonsterStateDataGetStateChunk2_ptr MonsterStateDataGetStateChunk2_next(nullptr);
-        info::MonsterStateDataGetStateChunk2_clbk MonsterStateDataGetStateChunk2_user(nullptr);
-        info::MonsterStateDatactor_MonsterStateData4_ptr MonsterStateDatactor_MonsterStateData4_next(nullptr);
-        info::MonsterStateDatactor_MonsterStateData4_clbk MonsterStateDatactor_MonsterStateData4_user(nullptr);
+        static info::MonsterStateDataGetStateChunk2_ptr MonsterStateDataGetStateChunk2_next(nullptr);
+        static info::MonsterStateDataGetStateChunk2_clbk MonsterStateDataGetStateChunk2_user(nullptr);
+        static info::MonsterStateDatactor_MonsterStateData4_ptr MonsterStateDatactor_MonsterStateData4_next(nullptr);
+        static info::MonsterStateDatactor_MonsterStateData4_clbk MonsterStateDatactor_MonsterStateData4_user(nullptr);
         
-        uint16_t MonsterStateDataGetStateChunk2_wrapper(struct MonsterStateData* _this)
+        static uint16_t MonsterStateDataGetStateChunk2_wrapper(struct MonsterStateData* _this)
         {
            return MonsterStateDataGetStateChunk2_user(_this, MonsterStateDataGetStateChunk2_next);
         };
-        void MonsterStateDatactor_MonsterStateData4_wrapper(struct MonsterStateData* _this)
+        static void MonsterStateDatactor_MonsterStateData4_wrapper(struct MonsterStateData* _this)
         {
            MonsterStateDatactor_MonsterStateData4_user(_this, MonsterStateDatactor_MonsterStateData4_next);
         };
         
-        hook_record MonsterStateData_functions[] = {
+        static hook_record MonsterStateData_functions[] = {
         {   (LPVOID)0x14014c450L,
             (LPVOID *)&MonsterStateDataGetStateChunk2_user,
             (LPVOID *)&MonsterStateDataGetStateChunk2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

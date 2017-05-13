@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_ptr CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_next(nullptr);
-        info::CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_clbk CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_user(nullptr);
-        info::CUnmannedTraderClassInfoFactoryCreate4_ptr CUnmannedTraderClassInfoFactoryCreate4_next(nullptr);
-        info::CUnmannedTraderClassInfoFactoryCreate4_clbk CUnmannedTraderClassInfoFactoryCreate4_user(nullptr);
-        info::CUnmannedTraderClassInfoFactoryDestroy6_ptr CUnmannedTraderClassInfoFactoryDestroy6_next(nullptr);
-        info::CUnmannedTraderClassInfoFactoryDestroy6_clbk CUnmannedTraderClassInfoFactoryDestroy6_user(nullptr);
-        info::CUnmannedTraderClassInfoFactoryRegist8_ptr CUnmannedTraderClassInfoFactoryRegist8_next(nullptr);
-        info::CUnmannedTraderClassInfoFactoryRegist8_clbk CUnmannedTraderClassInfoFactoryRegist8_user(nullptr);
-        info::CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_ptr CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_next(nullptr);
-        info::CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_clbk CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_user(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_ptr CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_next(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_clbk CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_user(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryCreate4_ptr CUnmannedTraderClassInfoFactoryCreate4_next(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryCreate4_clbk CUnmannedTraderClassInfoFactoryCreate4_user(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryDestroy6_ptr CUnmannedTraderClassInfoFactoryDestroy6_next(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryDestroy6_clbk CUnmannedTraderClassInfoFactoryDestroy6_user(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryRegist8_ptr CUnmannedTraderClassInfoFactoryRegist8_next(nullptr);
+        static info::CUnmannedTraderClassInfoFactoryRegist8_clbk CUnmannedTraderClassInfoFactoryRegist8_user(nullptr);
+        static info::CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_ptr CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_next(nullptr);
+        static info::CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_clbk CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_user(nullptr);
         
-        void CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
+        static void CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
         {
            CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_user(_this, CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_next);
         };
-        struct CUnmannedTraderClassInfo* CUnmannedTraderClassInfoFactoryCreate4_wrapper(struct CUnmannedTraderClassInfoFactory* _this, char* szType, unsigned int dwID)
+        static struct CUnmannedTraderClassInfo* CUnmannedTraderClassInfoFactoryCreate4_wrapper(struct CUnmannedTraderClassInfoFactory* _this, char* szType, unsigned int dwID)
         {
            return CUnmannedTraderClassInfoFactoryCreate4_user(_this, szType, dwID, CUnmannedTraderClassInfoFactoryCreate4_next);
         };
-        void CUnmannedTraderClassInfoFactoryDestroy6_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
+        static void CUnmannedTraderClassInfoFactoryDestroy6_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
         {
            CUnmannedTraderClassInfoFactoryDestroy6_user(_this, CUnmannedTraderClassInfoFactoryDestroy6_next);
         };
-        bool CUnmannedTraderClassInfoFactoryRegist8_wrapper(struct CUnmannedTraderClassInfoFactory* _this, struct CUnmannedTraderClassInfo* pkType)
+        static bool CUnmannedTraderClassInfoFactoryRegist8_wrapper(struct CUnmannedTraderClassInfoFactory* _this, struct CUnmannedTraderClassInfo* pkType)
         {
            return CUnmannedTraderClassInfoFactoryRegist8_user(_this, pkType, CUnmannedTraderClassInfoFactoryRegist8_next);
         };
-        void CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
+        static void CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_wrapper(struct CUnmannedTraderClassInfoFactory* _this)
         {
            CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_user(_this, CUnmannedTraderClassInfoFactorydtor_CUnmannedTraderClassInfoFactory10_next);
         };
         
-        hook_record CUnmannedTraderClassInfoFactory_functions[] = {
+        static hook_record CUnmannedTraderClassInfoFactory_functions[] = {
         {   (LPVOID)0x1403847e0L,
             (LPVOID *)&CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_user,
             (LPVOID *)&CUnmannedTraderClassInfoFactoryctor_CUnmannedTraderClassInfoFactory2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

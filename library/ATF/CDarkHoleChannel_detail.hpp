@@ -8,365 +8,365 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CDarkHoleChannelAddMonster2_ptr CDarkHoleChannelAddMonster2_next(nullptr);
-        info::CDarkHoleChannelAddMonster2_clbk CDarkHoleChannelAddMonster2_user(nullptr);
-        info::CDarkHoleChannelctor_CDarkHoleChannel4_ptr CDarkHoleChannelctor_CDarkHoleChannel4_next(nullptr);
-        info::CDarkHoleChannelctor_CDarkHoleChannel4_clbk CDarkHoleChannelctor_CDarkHoleChannel4_user(nullptr);
-        info::CDarkHoleChannelCanYouEnterHole6_ptr CDarkHoleChannelCanYouEnterHole6_next(nullptr);
-        info::CDarkHoleChannelCanYouEnterHole6_clbk CDarkHoleChannelCanYouEnterHole6_user(nullptr);
-        info::CDarkHoleChannelChangeMonster8_ptr CDarkHoleChannelChangeMonster8_next(nullptr);
-        info::CDarkHoleChannelChangeMonster8_clbk CDarkHoleChannelChangeMonster8_user(nullptr);
-        info::CDarkHoleChannelChangeMonsterApparition10_ptr CDarkHoleChannelChangeMonsterApparition10_next(nullptr);
-        info::CDarkHoleChannelChangeMonsterApparition10_clbk CDarkHoleChannelChangeMonsterApparition10_user(nullptr);
-        info::CDarkHoleChannelCheckCurrentMission12_ptr CDarkHoleChannelCheckCurrentMission12_next(nullptr);
-        info::CDarkHoleChannelCheckCurrentMission12_clbk CDarkHoleChannelCheckCurrentMission12_user(nullptr);
-        info::CDarkHoleChannelCheckEvent14_ptr CDarkHoleChannelCheckEvent14_next(nullptr);
-        info::CDarkHoleChannelCheckEvent14_clbk CDarkHoleChannelCheckEvent14_user(nullptr);
-        info::CDarkHoleChannelCheckInnerEventDummy16_ptr CDarkHoleChannelCheckInnerEventDummy16_next(nullptr);
-        info::CDarkHoleChannelCheckInnerEventDummy16_clbk CDarkHoleChannelCheckInnerEventDummy16_user(nullptr);
-        info::CDarkHoleChannelCheckMember18_ptr CDarkHoleChannelCheckMember18_next(nullptr);
-        info::CDarkHoleChannelCheckMember18_clbk CDarkHoleChannelCheckMember18_user(nullptr);
-        info::CDarkHoleChannelCheckRespawnMonster20_ptr CDarkHoleChannelCheckRespawnMonster20_next(nullptr);
-        info::CDarkHoleChannelCheckRespawnMonster20_clbk CDarkHoleChannelCheckRespawnMonster20_user(nullptr);
-        info::CDarkHoleChannelCheckSendNewMissionMsg22_ptr CDarkHoleChannelCheckSendNewMissionMsg22_next(nullptr);
-        info::CDarkHoleChannelCheckSendNewMissionMsg22_clbk CDarkHoleChannelCheckSendNewMissionMsg22_user(nullptr);
-        info::CDarkHoleChannelCheckWaitNextMission24_ptr CDarkHoleChannelCheckWaitNextMission24_next(nullptr);
-        info::CDarkHoleChannelCheckWaitNextMission24_clbk CDarkHoleChannelCheckWaitNextMission24_user(nullptr);
-        info::CDarkHoleChannelClearMember26_ptr CDarkHoleChannelClearMember26_next(nullptr);
-        info::CDarkHoleChannelClearMember26_clbk CDarkHoleChannelClearMember26_user(nullptr);
-        info::CDarkHoleChannelCloseDungeon28_ptr CDarkHoleChannelCloseDungeon28_next(nullptr);
-        info::CDarkHoleChannelCloseDungeon28_clbk CDarkHoleChannelCloseDungeon28_user(nullptr);
-        info::CDarkHoleChannelCreateMonster30_ptr CDarkHoleChannelCreateMonster30_next(nullptr);
-        info::CDarkHoleChannelCreateMonster30_clbk CDarkHoleChannelCreateMonster30_user(nullptr);
-        info::CDarkHoleChannelGetAllMemberNum32_ptr CDarkHoleChannelGetAllMemberNum32_next(nullptr);
-        info::CDarkHoleChannelGetAllMemberNum32_clbk CDarkHoleChannelGetAllMemberNum32_user(nullptr);
-        info::CDarkHoleChannelGetCurrentMemberNum34_ptr CDarkHoleChannelGetCurrentMemberNum34_next(nullptr);
-        info::CDarkHoleChannelGetCurrentMemberNum34_clbk CDarkHoleChannelGetCurrentMemberNum34_user(nullptr);
-        info::CDarkHoleChannelGetEnterNewPos36_ptr CDarkHoleChannelGetEnterNewPos36_next(nullptr);
-        info::CDarkHoleChannelGetEnterNewPos36_clbk CDarkHoleChannelGetEnterNewPos36_user(nullptr);
-        info::CDarkHoleChannelGetLeaderSerial38_ptr CDarkHoleChannelGetLeaderSerial38_next(nullptr);
-        info::CDarkHoleChannelGetLeaderSerial38_clbk CDarkHoleChannelGetLeaderSerial38_user(nullptr);
-        info::CDarkHoleChannelGetMonsterNumInCurMissionArea40_ptr CDarkHoleChannelGetMonsterNumInCurMissionArea40_next(nullptr);
-        info::CDarkHoleChannelGetMonsterNumInCurMissionArea40_clbk CDarkHoleChannelGetMonsterNumInCurMissionArea40_user(nullptr);
-        info::CDarkHoleChannelGetPlayerInfo42_ptr CDarkHoleChannelGetPlayerInfo42_next(nullptr);
-        info::CDarkHoleChannelGetPlayerInfo42_clbk CDarkHoleChannelGetPlayerInfo42_user(nullptr);
-        info::CDarkHoleChannelGotoNextMission44_ptr CDarkHoleChannelGotoNextMission44_next(nullptr);
-        info::CDarkHoleChannelGotoNextMission44_clbk CDarkHoleChannelGotoNextMission44_user(nullptr);
-        info::CDarkHoleChannelGotoNextMissionByPosition46_ptr CDarkHoleChannelGotoNextMissionByPosition46_next(nullptr);
-        info::CDarkHoleChannelGotoNextMissionByPosition46_clbk CDarkHoleChannelGotoNextMissionByPosition46_user(nullptr);
-        info::CDarkHoleChannelInit48_ptr CDarkHoleChannelInit48_next(nullptr);
-        info::CDarkHoleChannelInit48_clbk CDarkHoleChannelInit48_user(nullptr);
-        info::CDarkHoleChannelIsAllMemberNearPosition50_ptr CDarkHoleChannelIsAllMemberNearPosition50_next(nullptr);
-        info::CDarkHoleChannelIsAllMemberNearPosition50_clbk CDarkHoleChannelIsAllMemberNearPosition50_user(nullptr);
-        info::CDarkHoleChannelIsFill52_ptr CDarkHoleChannelIsFill52_next(nullptr);
-        info::CDarkHoleChannelIsFill52_clbk CDarkHoleChannelIsFill52_user(nullptr);
-        info::CDarkHoleChannelIsMoveNextMission54_ptr CDarkHoleChannelIsMoveNextMission54_next(nullptr);
-        info::CDarkHoleChannelIsMoveNextMission54_clbk CDarkHoleChannelIsMoveNextMission54_user(nullptr);
-        info::CDarkHoleChannelIsOpenPartyMember56_ptr CDarkHoleChannelIsOpenPartyMember56_next(nullptr);
-        info::CDarkHoleChannelIsOpenPartyMember56_clbk CDarkHoleChannelIsOpenPartyMember56_user(nullptr);
-        info::CDarkHoleChannelIsReEnterable58_ptr CDarkHoleChannelIsReEnterable58_next(nullptr);
-        info::CDarkHoleChannelIsReEnterable58_clbk CDarkHoleChannelIsReEnterable58_user(nullptr);
-        info::CDarkHoleChannelNextMissionOtherQuester60_ptr CDarkHoleChannelNextMissionOtherQuester60_next(nullptr);
-        info::CDarkHoleChannelNextMissionOtherQuester60_clbk CDarkHoleChannelNextMissionOtherQuester60_user(nullptr);
-        info::CDarkHoleChannelOnLoop62_ptr CDarkHoleChannelOnLoop62_next(nullptr);
-        info::CDarkHoleChannelOnLoop62_clbk CDarkHoleChannelOnLoop62_user(nullptr);
-        info::CDarkHoleChannelOpenDungeon64_ptr CDarkHoleChannelOpenDungeon64_next(nullptr);
-        info::CDarkHoleChannelOpenDungeon64_clbk CDarkHoleChannelOpenDungeon64_user(nullptr);
-        info::CDarkHoleChannelPushMember66_ptr CDarkHoleChannelPushMember66_next(nullptr);
-        info::CDarkHoleChannelPushMember66_clbk CDarkHoleChannelPushMember66_user(nullptr);
-        info::CDarkHoleChannelSearchMissionFromPos68_ptr CDarkHoleChannelSearchMissionFromPos68_next(nullptr);
-        info::CDarkHoleChannelSearchMissionFromPos68_clbk CDarkHoleChannelSearchMissionFromPos68_user(nullptr);
-        info::CDarkHoleChannelSendMsg_AskReEnter70_ptr CDarkHoleChannelSendMsg_AskReEnter70_next(nullptr);
-        info::CDarkHoleChannelSendMsg_AskReEnter70_clbk CDarkHoleChannelSendMsg_AskReEnter70_user(nullptr);
-        info::CDarkHoleChannelSendMsg_ChannelClose72_ptr CDarkHoleChannelSendMsg_ChannelClose72_next(nullptr);
-        info::CDarkHoleChannelSendMsg_ChannelClose72_clbk CDarkHoleChannelSendMsg_ChannelClose72_user(nullptr);
-        info::CDarkHoleChannelSendMsg_GateDestroy74_ptr CDarkHoleChannelSendMsg_GateDestroy74_next(nullptr);
-        info::CDarkHoleChannelSendMsg_GateDestroy74_clbk CDarkHoleChannelSendMsg_GateDestroy74_user(nullptr);
-        info::CDarkHoleChannelSendMsg_JobCount76_ptr CDarkHoleChannelSendMsg_JobCount76_next(nullptr);
-        info::CDarkHoleChannelSendMsg_JobCount76_clbk CDarkHoleChannelSendMsg_JobCount76_user(nullptr);
-        info::CDarkHoleChannelSendMsg_JobPass78_ptr CDarkHoleChannelSendMsg_JobPass78_next(nullptr);
-        info::CDarkHoleChannelSendMsg_JobPass78_clbk CDarkHoleChannelSendMsg_JobPass78_user(nullptr);
-        info::CDarkHoleChannelSendMsg_LeaderChange80_ptr CDarkHoleChannelSendMsg_LeaderChange80_next(nullptr);
-        info::CDarkHoleChannelSendMsg_LeaderChange80_clbk CDarkHoleChannelSendMsg_LeaderChange80_user(nullptr);
-        info::CDarkHoleChannelSendMsg_MemberInfo82_ptr CDarkHoleChannelSendMsg_MemberInfo82_next(nullptr);
-        info::CDarkHoleChannelSendMsg_MemberInfo82_clbk CDarkHoleChannelSendMsg_MemberInfo82_user(nullptr);
-        info::CDarkHoleChannelSendMsg_MissionInfo84_ptr CDarkHoleChannelSendMsg_MissionInfo84_next(nullptr);
-        info::CDarkHoleChannelSendMsg_MissionInfo84_clbk CDarkHoleChannelSendMsg_MissionInfo84_user(nullptr);
-        info::CDarkHoleChannelSendMsg_MissionPass86_ptr CDarkHoleChannelSendMsg_MissionPass86_next(nullptr);
-        info::CDarkHoleChannelSendMsg_MissionPass86_clbk CDarkHoleChannelSendMsg_MissionPass86_user(nullptr);
-        info::CDarkHoleChannelSendMsg_NewMember88_ptr CDarkHoleChannelSendMsg_NewMember88_next(nullptr);
-        info::CDarkHoleChannelSendMsg_NewMember88_clbk CDarkHoleChannelSendMsg_NewMember88_user(nullptr);
-        info::CDarkHoleChannelSendMsg_NewMission90_ptr CDarkHoleChannelSendMsg_NewMission90_next(nullptr);
-        info::CDarkHoleChannelSendMsg_NewMission90_clbk CDarkHoleChannelSendMsg_NewMission90_user(nullptr);
-        info::CDarkHoleChannelSendMsg_OpenPortalByReact92_ptr CDarkHoleChannelSendMsg_OpenPortalByReact92_next(nullptr);
-        info::CDarkHoleChannelSendMsg_OpenPortalByReact92_clbk CDarkHoleChannelSendMsg_OpenPortalByReact92_user(nullptr);
-        info::CDarkHoleChannelSendMsg_OpenPortalByResult94_ptr CDarkHoleChannelSendMsg_OpenPortalByResult94_next(nullptr);
-        info::CDarkHoleChannelSendMsg_OpenPortalByResult94_clbk CDarkHoleChannelSendMsg_OpenPortalByResult94_user(nullptr);
-        info::CDarkHoleChannelSendMsg_PopMember96_ptr CDarkHoleChannelSendMsg_PopMember96_next(nullptr);
-        info::CDarkHoleChannelSendMsg_PopMember96_clbk CDarkHoleChannelSendMsg_PopMember96_user(nullptr);
-        info::CDarkHoleChannelSendMsg_QuestInfo98_ptr CDarkHoleChannelSendMsg_QuestInfo98_next(nullptr);
-        info::CDarkHoleChannelSendMsg_QuestInfo98_clbk CDarkHoleChannelSendMsg_QuestInfo98_user(nullptr);
-        info::CDarkHoleChannelSendMsg_QuestPass100_ptr CDarkHoleChannelSendMsg_QuestPass100_next(nullptr);
-        info::CDarkHoleChannelSendMsg_QuestPass100_clbk CDarkHoleChannelSendMsg_QuestPass100_user(nullptr);
-        info::CDarkHoleChannelSendMsg_RealAddLimTime102_ptr CDarkHoleChannelSendMsg_RealAddLimTime102_next(nullptr);
-        info::CDarkHoleChannelSendMsg_RealAddLimTime102_clbk CDarkHoleChannelSendMsg_RealAddLimTime102_user(nullptr);
-        info::CDarkHoleChannelSendMsg_RealMsgInform104_ptr CDarkHoleChannelSendMsg_RealMsgInform104_next(nullptr);
-        info::CDarkHoleChannelSendMsg_RealMsgInform104_clbk CDarkHoleChannelSendMsg_RealMsgInform104_user(nullptr);
-        info::CDarkHoleChannelSendMsg_TimeOut106_ptr CDarkHoleChannelSendMsg_TimeOut106_next(nullptr);
-        info::CDarkHoleChannelSendMsg_TimeOut106_clbk CDarkHoleChannelSendMsg_TimeOut106_user(nullptr);
-        info::CDarkHoleChannelShareItemToMonster108_ptr CDarkHoleChannelShareItemToMonster108_next(nullptr);
-        info::CDarkHoleChannelShareItemToMonster108_clbk CDarkHoleChannelShareItemToMonster108_user(nullptr);
-        info::CDarkHoleChannelWaitNextMission110_ptr CDarkHoleChannelWaitNextMission110_next(nullptr);
-        info::CDarkHoleChannelWaitNextMission110_clbk CDarkHoleChannelWaitNextMission110_user(nullptr);
-        info::CDarkHoleChannel_Reward112_ptr CDarkHoleChannel_Reward112_next(nullptr);
-        info::CDarkHoleChannel_Reward112_clbk CDarkHoleChannel_Reward112_user(nullptr);
-        info::CDarkHoleChanneldtor_CDarkHoleChannel117_ptr CDarkHoleChanneldtor_CDarkHoleChannel117_next(nullptr);
-        info::CDarkHoleChanneldtor_CDarkHoleChannel117_clbk CDarkHoleChanneldtor_CDarkHoleChannel117_user(nullptr);
+        static info::CDarkHoleChannelAddMonster2_ptr CDarkHoleChannelAddMonster2_next(nullptr);
+        static info::CDarkHoleChannelAddMonster2_clbk CDarkHoleChannelAddMonster2_user(nullptr);
+        static info::CDarkHoleChannelctor_CDarkHoleChannel4_ptr CDarkHoleChannelctor_CDarkHoleChannel4_next(nullptr);
+        static info::CDarkHoleChannelctor_CDarkHoleChannel4_clbk CDarkHoleChannelctor_CDarkHoleChannel4_user(nullptr);
+        static info::CDarkHoleChannelCanYouEnterHole6_ptr CDarkHoleChannelCanYouEnterHole6_next(nullptr);
+        static info::CDarkHoleChannelCanYouEnterHole6_clbk CDarkHoleChannelCanYouEnterHole6_user(nullptr);
+        static info::CDarkHoleChannelChangeMonster8_ptr CDarkHoleChannelChangeMonster8_next(nullptr);
+        static info::CDarkHoleChannelChangeMonster8_clbk CDarkHoleChannelChangeMonster8_user(nullptr);
+        static info::CDarkHoleChannelChangeMonsterApparition10_ptr CDarkHoleChannelChangeMonsterApparition10_next(nullptr);
+        static info::CDarkHoleChannelChangeMonsterApparition10_clbk CDarkHoleChannelChangeMonsterApparition10_user(nullptr);
+        static info::CDarkHoleChannelCheckCurrentMission12_ptr CDarkHoleChannelCheckCurrentMission12_next(nullptr);
+        static info::CDarkHoleChannelCheckCurrentMission12_clbk CDarkHoleChannelCheckCurrentMission12_user(nullptr);
+        static info::CDarkHoleChannelCheckEvent14_ptr CDarkHoleChannelCheckEvent14_next(nullptr);
+        static info::CDarkHoleChannelCheckEvent14_clbk CDarkHoleChannelCheckEvent14_user(nullptr);
+        static info::CDarkHoleChannelCheckInnerEventDummy16_ptr CDarkHoleChannelCheckInnerEventDummy16_next(nullptr);
+        static info::CDarkHoleChannelCheckInnerEventDummy16_clbk CDarkHoleChannelCheckInnerEventDummy16_user(nullptr);
+        static info::CDarkHoleChannelCheckMember18_ptr CDarkHoleChannelCheckMember18_next(nullptr);
+        static info::CDarkHoleChannelCheckMember18_clbk CDarkHoleChannelCheckMember18_user(nullptr);
+        static info::CDarkHoleChannelCheckRespawnMonster20_ptr CDarkHoleChannelCheckRespawnMonster20_next(nullptr);
+        static info::CDarkHoleChannelCheckRespawnMonster20_clbk CDarkHoleChannelCheckRespawnMonster20_user(nullptr);
+        static info::CDarkHoleChannelCheckSendNewMissionMsg22_ptr CDarkHoleChannelCheckSendNewMissionMsg22_next(nullptr);
+        static info::CDarkHoleChannelCheckSendNewMissionMsg22_clbk CDarkHoleChannelCheckSendNewMissionMsg22_user(nullptr);
+        static info::CDarkHoleChannelCheckWaitNextMission24_ptr CDarkHoleChannelCheckWaitNextMission24_next(nullptr);
+        static info::CDarkHoleChannelCheckWaitNextMission24_clbk CDarkHoleChannelCheckWaitNextMission24_user(nullptr);
+        static info::CDarkHoleChannelClearMember26_ptr CDarkHoleChannelClearMember26_next(nullptr);
+        static info::CDarkHoleChannelClearMember26_clbk CDarkHoleChannelClearMember26_user(nullptr);
+        static info::CDarkHoleChannelCloseDungeon28_ptr CDarkHoleChannelCloseDungeon28_next(nullptr);
+        static info::CDarkHoleChannelCloseDungeon28_clbk CDarkHoleChannelCloseDungeon28_user(nullptr);
+        static info::CDarkHoleChannelCreateMonster30_ptr CDarkHoleChannelCreateMonster30_next(nullptr);
+        static info::CDarkHoleChannelCreateMonster30_clbk CDarkHoleChannelCreateMonster30_user(nullptr);
+        static info::CDarkHoleChannelGetAllMemberNum32_ptr CDarkHoleChannelGetAllMemberNum32_next(nullptr);
+        static info::CDarkHoleChannelGetAllMemberNum32_clbk CDarkHoleChannelGetAllMemberNum32_user(nullptr);
+        static info::CDarkHoleChannelGetCurrentMemberNum34_ptr CDarkHoleChannelGetCurrentMemberNum34_next(nullptr);
+        static info::CDarkHoleChannelGetCurrentMemberNum34_clbk CDarkHoleChannelGetCurrentMemberNum34_user(nullptr);
+        static info::CDarkHoleChannelGetEnterNewPos36_ptr CDarkHoleChannelGetEnterNewPos36_next(nullptr);
+        static info::CDarkHoleChannelGetEnterNewPos36_clbk CDarkHoleChannelGetEnterNewPos36_user(nullptr);
+        static info::CDarkHoleChannelGetLeaderSerial38_ptr CDarkHoleChannelGetLeaderSerial38_next(nullptr);
+        static info::CDarkHoleChannelGetLeaderSerial38_clbk CDarkHoleChannelGetLeaderSerial38_user(nullptr);
+        static info::CDarkHoleChannelGetMonsterNumInCurMissionArea40_ptr CDarkHoleChannelGetMonsterNumInCurMissionArea40_next(nullptr);
+        static info::CDarkHoleChannelGetMonsterNumInCurMissionArea40_clbk CDarkHoleChannelGetMonsterNumInCurMissionArea40_user(nullptr);
+        static info::CDarkHoleChannelGetPlayerInfo42_ptr CDarkHoleChannelGetPlayerInfo42_next(nullptr);
+        static info::CDarkHoleChannelGetPlayerInfo42_clbk CDarkHoleChannelGetPlayerInfo42_user(nullptr);
+        static info::CDarkHoleChannelGotoNextMission44_ptr CDarkHoleChannelGotoNextMission44_next(nullptr);
+        static info::CDarkHoleChannelGotoNextMission44_clbk CDarkHoleChannelGotoNextMission44_user(nullptr);
+        static info::CDarkHoleChannelGotoNextMissionByPosition46_ptr CDarkHoleChannelGotoNextMissionByPosition46_next(nullptr);
+        static info::CDarkHoleChannelGotoNextMissionByPosition46_clbk CDarkHoleChannelGotoNextMissionByPosition46_user(nullptr);
+        static info::CDarkHoleChannelInit48_ptr CDarkHoleChannelInit48_next(nullptr);
+        static info::CDarkHoleChannelInit48_clbk CDarkHoleChannelInit48_user(nullptr);
+        static info::CDarkHoleChannelIsAllMemberNearPosition50_ptr CDarkHoleChannelIsAllMemberNearPosition50_next(nullptr);
+        static info::CDarkHoleChannelIsAllMemberNearPosition50_clbk CDarkHoleChannelIsAllMemberNearPosition50_user(nullptr);
+        static info::CDarkHoleChannelIsFill52_ptr CDarkHoleChannelIsFill52_next(nullptr);
+        static info::CDarkHoleChannelIsFill52_clbk CDarkHoleChannelIsFill52_user(nullptr);
+        static info::CDarkHoleChannelIsMoveNextMission54_ptr CDarkHoleChannelIsMoveNextMission54_next(nullptr);
+        static info::CDarkHoleChannelIsMoveNextMission54_clbk CDarkHoleChannelIsMoveNextMission54_user(nullptr);
+        static info::CDarkHoleChannelIsOpenPartyMember56_ptr CDarkHoleChannelIsOpenPartyMember56_next(nullptr);
+        static info::CDarkHoleChannelIsOpenPartyMember56_clbk CDarkHoleChannelIsOpenPartyMember56_user(nullptr);
+        static info::CDarkHoleChannelIsReEnterable58_ptr CDarkHoleChannelIsReEnterable58_next(nullptr);
+        static info::CDarkHoleChannelIsReEnterable58_clbk CDarkHoleChannelIsReEnterable58_user(nullptr);
+        static info::CDarkHoleChannelNextMissionOtherQuester60_ptr CDarkHoleChannelNextMissionOtherQuester60_next(nullptr);
+        static info::CDarkHoleChannelNextMissionOtherQuester60_clbk CDarkHoleChannelNextMissionOtherQuester60_user(nullptr);
+        static info::CDarkHoleChannelOnLoop62_ptr CDarkHoleChannelOnLoop62_next(nullptr);
+        static info::CDarkHoleChannelOnLoop62_clbk CDarkHoleChannelOnLoop62_user(nullptr);
+        static info::CDarkHoleChannelOpenDungeon64_ptr CDarkHoleChannelOpenDungeon64_next(nullptr);
+        static info::CDarkHoleChannelOpenDungeon64_clbk CDarkHoleChannelOpenDungeon64_user(nullptr);
+        static info::CDarkHoleChannelPushMember66_ptr CDarkHoleChannelPushMember66_next(nullptr);
+        static info::CDarkHoleChannelPushMember66_clbk CDarkHoleChannelPushMember66_user(nullptr);
+        static info::CDarkHoleChannelSearchMissionFromPos68_ptr CDarkHoleChannelSearchMissionFromPos68_next(nullptr);
+        static info::CDarkHoleChannelSearchMissionFromPos68_clbk CDarkHoleChannelSearchMissionFromPos68_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_AskReEnter70_ptr CDarkHoleChannelSendMsg_AskReEnter70_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_AskReEnter70_clbk CDarkHoleChannelSendMsg_AskReEnter70_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_ChannelClose72_ptr CDarkHoleChannelSendMsg_ChannelClose72_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_ChannelClose72_clbk CDarkHoleChannelSendMsg_ChannelClose72_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_GateDestroy74_ptr CDarkHoleChannelSendMsg_GateDestroy74_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_GateDestroy74_clbk CDarkHoleChannelSendMsg_GateDestroy74_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_JobCount76_ptr CDarkHoleChannelSendMsg_JobCount76_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_JobCount76_clbk CDarkHoleChannelSendMsg_JobCount76_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_JobPass78_ptr CDarkHoleChannelSendMsg_JobPass78_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_JobPass78_clbk CDarkHoleChannelSendMsg_JobPass78_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_LeaderChange80_ptr CDarkHoleChannelSendMsg_LeaderChange80_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_LeaderChange80_clbk CDarkHoleChannelSendMsg_LeaderChange80_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_MemberInfo82_ptr CDarkHoleChannelSendMsg_MemberInfo82_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_MemberInfo82_clbk CDarkHoleChannelSendMsg_MemberInfo82_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_MissionInfo84_ptr CDarkHoleChannelSendMsg_MissionInfo84_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_MissionInfo84_clbk CDarkHoleChannelSendMsg_MissionInfo84_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_MissionPass86_ptr CDarkHoleChannelSendMsg_MissionPass86_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_MissionPass86_clbk CDarkHoleChannelSendMsg_MissionPass86_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_NewMember88_ptr CDarkHoleChannelSendMsg_NewMember88_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_NewMember88_clbk CDarkHoleChannelSendMsg_NewMember88_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_NewMission90_ptr CDarkHoleChannelSendMsg_NewMission90_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_NewMission90_clbk CDarkHoleChannelSendMsg_NewMission90_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_OpenPortalByReact92_ptr CDarkHoleChannelSendMsg_OpenPortalByReact92_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_OpenPortalByReact92_clbk CDarkHoleChannelSendMsg_OpenPortalByReact92_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_OpenPortalByResult94_ptr CDarkHoleChannelSendMsg_OpenPortalByResult94_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_OpenPortalByResult94_clbk CDarkHoleChannelSendMsg_OpenPortalByResult94_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_PopMember96_ptr CDarkHoleChannelSendMsg_PopMember96_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_PopMember96_clbk CDarkHoleChannelSendMsg_PopMember96_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_QuestInfo98_ptr CDarkHoleChannelSendMsg_QuestInfo98_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_QuestInfo98_clbk CDarkHoleChannelSendMsg_QuestInfo98_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_QuestPass100_ptr CDarkHoleChannelSendMsg_QuestPass100_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_QuestPass100_clbk CDarkHoleChannelSendMsg_QuestPass100_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_RealAddLimTime102_ptr CDarkHoleChannelSendMsg_RealAddLimTime102_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_RealAddLimTime102_clbk CDarkHoleChannelSendMsg_RealAddLimTime102_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_RealMsgInform104_ptr CDarkHoleChannelSendMsg_RealMsgInform104_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_RealMsgInform104_clbk CDarkHoleChannelSendMsg_RealMsgInform104_user(nullptr);
+        static info::CDarkHoleChannelSendMsg_TimeOut106_ptr CDarkHoleChannelSendMsg_TimeOut106_next(nullptr);
+        static info::CDarkHoleChannelSendMsg_TimeOut106_clbk CDarkHoleChannelSendMsg_TimeOut106_user(nullptr);
+        static info::CDarkHoleChannelShareItemToMonster108_ptr CDarkHoleChannelShareItemToMonster108_next(nullptr);
+        static info::CDarkHoleChannelShareItemToMonster108_clbk CDarkHoleChannelShareItemToMonster108_user(nullptr);
+        static info::CDarkHoleChannelWaitNextMission110_ptr CDarkHoleChannelWaitNextMission110_next(nullptr);
+        static info::CDarkHoleChannelWaitNextMission110_clbk CDarkHoleChannelWaitNextMission110_user(nullptr);
+        static info::CDarkHoleChannel_Reward112_ptr CDarkHoleChannel_Reward112_next(nullptr);
+        static info::CDarkHoleChannel_Reward112_clbk CDarkHoleChannel_Reward112_user(nullptr);
+        static info::CDarkHoleChanneldtor_CDarkHoleChannel117_ptr CDarkHoleChanneldtor_CDarkHoleChannel117_next(nullptr);
+        static info::CDarkHoleChanneldtor_CDarkHoleChannel117_clbk CDarkHoleChanneldtor_CDarkHoleChannel117_user(nullptr);
         
-        info::CDarkHoleChannel____enter_memberctor___enter_member2_ptr CDarkHoleChannel____enter_memberctor___enter_member2_next(nullptr);
-        info::CDarkHoleChannel____enter_memberctor___enter_member2_clbk CDarkHoleChannel____enter_memberctor___enter_member2_user(nullptr);
-        info::CDarkHoleChannel____enter_memberctor___enter_member4_ptr CDarkHoleChannel____enter_memberctor___enter_member4_next(nullptr);
-        info::CDarkHoleChannel____enter_memberctor___enter_member4_clbk CDarkHoleChannel____enter_memberctor___enter_member4_user(nullptr);
+        static info::CDarkHoleChannel____enter_memberctor___enter_member2_ptr CDarkHoleChannel____enter_memberctor___enter_member2_next(nullptr);
+        static info::CDarkHoleChannel____enter_memberctor___enter_member2_clbk CDarkHoleChannel____enter_memberctor___enter_member2_user(nullptr);
+        static info::CDarkHoleChannel____enter_memberctor___enter_member4_ptr CDarkHoleChannel____enter_memberctor___enter_member4_next(nullptr);
+        static info::CDarkHoleChannel____enter_memberctor___enter_member4_clbk CDarkHoleChannel____enter_memberctor___enter_member4_user(nullptr);
         
-        void CDarkHoleChannelAddMonster2_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelAddMonster2_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelAddMonster2_user(_this, CDarkHoleChannelAddMonster2_next);
         };
-        void CDarkHoleChannelctor_CDarkHoleChannel4_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelctor_CDarkHoleChannel4_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelctor_CDarkHoleChannel4_user(_this, CDarkHoleChannelctor_CDarkHoleChannel4_next);
         };
-        bool CDarkHoleChannelCanYouEnterHole6_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pEnter)
+        static bool CDarkHoleChannelCanYouEnterHole6_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pEnter)
         {
            return CDarkHoleChannelCanYouEnterHole6_user(_this, pEnter, CDarkHoleChannelCanYouEnterHole6_next);
         };
-        void CDarkHoleChannelChangeMonster8_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelChangeMonster8_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelChangeMonster8_user(_this, CDarkHoleChannelChangeMonster8_next);
         };
-        void CDarkHoleChannelChangeMonsterApparition10_wrapper(struct CDarkHoleChannel* _this, int nTermMSec)
+        static void CDarkHoleChannelChangeMonsterApparition10_wrapper(struct CDarkHoleChannel* _this, int nTermMSec)
         {
            CDarkHoleChannelChangeMonsterApparition10_user(_this, nTermMSec, CDarkHoleChannelChangeMonsterApparition10_next);
         };
-        void CDarkHoleChannelCheckCurrentMission12_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckCurrentMission12_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckCurrentMission12_user(_this, CDarkHoleChannelCheckCurrentMission12_next);
         };
-        bool CDarkHoleChannelCheckEvent14_wrapper(struct CDarkHoleChannel* _this, EM_DH_EVENT eventType, int nContentTable, int nContentIndex, int nCount, struct CGameObject* pObj)
+        static bool CDarkHoleChannelCheckEvent14_wrapper(struct CDarkHoleChannel* _this, EM_DH_EVENT eventType, int nContentTable, int nContentIndex, int nCount, struct CGameObject* pObj)
         {
            return CDarkHoleChannelCheckEvent14_user(_this, eventType, nContentTable, nContentIndex, nCount, pObj, CDarkHoleChannelCheckEvent14_next);
         };
-        void CDarkHoleChannelCheckInnerEventDummy16_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckInnerEventDummy16_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckInnerEventDummy16_user(_this, CDarkHoleChannelCheckInnerEventDummy16_next);
         };
-        void CDarkHoleChannelCheckMember18_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckMember18_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckMember18_user(_this, CDarkHoleChannelCheckMember18_next);
         };
-        void CDarkHoleChannelCheckRespawnMonster20_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckRespawnMonster20_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckRespawnMonster20_user(_this, CDarkHoleChannelCheckRespawnMonster20_next);
         };
-        void CDarkHoleChannelCheckSendNewMissionMsg22_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckSendNewMissionMsg22_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckSendNewMissionMsg22_user(_this, CDarkHoleChannelCheckSendNewMissionMsg22_next);
         };
-        void CDarkHoleChannelCheckWaitNextMission24_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCheckWaitNextMission24_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCheckWaitNextMission24_user(_this, CDarkHoleChannelCheckWaitNextMission24_next);
         };
-        bool CDarkHoleChannelClearMember26_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pMember, bool bDisconnect, struct _dh_player_mgr::_pos* poutPlayerPos)
+        static bool CDarkHoleChannelClearMember26_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pMember, bool bDisconnect, struct _dh_player_mgr::_pos* poutPlayerPos)
         {
            return CDarkHoleChannelClearMember26_user(_this, pMember, bDisconnect, poutPlayerPos, CDarkHoleChannelClearMember26_next);
         };
-        void CDarkHoleChannelCloseDungeon28_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCloseDungeon28_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCloseDungeon28_user(_this, CDarkHoleChannelCloseDungeon28_next);
         };
-        void CDarkHoleChannelCreateMonster30_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelCreateMonster30_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelCreateMonster30_user(_this, CDarkHoleChannelCreateMonster30_next);
         };
-        int CDarkHoleChannelGetAllMemberNum32_wrapper(struct CDarkHoleChannel* _this)
+        static int CDarkHoleChannelGetAllMemberNum32_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannelGetAllMemberNum32_user(_this, CDarkHoleChannelGetAllMemberNum32_next);
         };
-        int CDarkHoleChannelGetCurrentMemberNum34_wrapper(struct CDarkHoleChannel* _this)
+        static int CDarkHoleChannelGetCurrentMemberNum34_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannelGetCurrentMemberNum34_user(_this, CDarkHoleChannelGetCurrentMemberNum34_next);
         };
-        bool CDarkHoleChannelGetEnterNewPos36_wrapper(struct CDarkHoleChannel* _this, struct _ENTER_DUNGEON_NEW_POS* pNewPos)
+        static bool CDarkHoleChannelGetEnterNewPos36_wrapper(struct CDarkHoleChannel* _this, struct _ENTER_DUNGEON_NEW_POS* pNewPos)
         {
            return CDarkHoleChannelGetEnterNewPos36_user(_this, pNewPos, CDarkHoleChannelGetEnterNewPos36_next);
         };
-        unsigned int CDarkHoleChannelGetLeaderSerial38_wrapper(struct CDarkHoleChannel* _this)
+        static unsigned int CDarkHoleChannelGetLeaderSerial38_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannelGetLeaderSerial38_user(_this, CDarkHoleChannelGetLeaderSerial38_next);
         };
-        int CDarkHoleChannelGetMonsterNumInCurMissionArea40_wrapper(struct CDarkHoleChannel* _this, int nMonsterRecIndex)
+        static int CDarkHoleChannelGetMonsterNumInCurMissionArea40_wrapper(struct CDarkHoleChannel* _this, int nMonsterRecIndex)
         {
            return CDarkHoleChannelGetMonsterNumInCurMissionArea40_user(_this, nMonsterRecIndex, CDarkHoleChannelGetMonsterNumInCurMissionArea40_next);
         };
-        struct _dh_player_mgr* CDarkHoleChannelGetPlayerInfo42_wrapper(struct CDarkHoleChannel* _this, unsigned int dwSerial)
+        static struct _dh_player_mgr* CDarkHoleChannelGetPlayerInfo42_wrapper(struct CDarkHoleChannel* _this, unsigned int dwSerial)
         {
            return CDarkHoleChannelGetPlayerInfo42_user(_this, dwSerial, CDarkHoleChannelGetPlayerInfo42_next);
         };
-        bool CDarkHoleChannelGotoNextMission44_wrapper(struct CDarkHoleChannel* _this)
+        static bool CDarkHoleChannelGotoNextMission44_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannelGotoNextMission44_user(_this, CDarkHoleChannelGotoNextMission44_next);
         };
-        bool CDarkHoleChannelGotoNextMissionByPosition46_wrapper(struct CDarkHoleChannel* _this, float* pfStartPos)
+        static bool CDarkHoleChannelGotoNextMissionByPosition46_wrapper(struct CDarkHoleChannel* _this, float* pfStartPos)
         {
            return CDarkHoleChannelGotoNextMissionByPosition46_user(_this, pfStartPos, CDarkHoleChannelGotoNextMissionByPosition46_next);
         };
-        void CDarkHoleChannelInit48_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelInit48_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelInit48_user(_this, CDarkHoleChannelInit48_next);
         };
-        bool CDarkHoleChannelIsAllMemberNearPosition50_wrapper(struct CDarkHoleChannel* _this, float* pfCenterPos, int nLen)
+        static bool CDarkHoleChannelIsAllMemberNearPosition50_wrapper(struct CDarkHoleChannel* _this, float* pfCenterPos, int nLen)
         {
            return CDarkHoleChannelIsAllMemberNearPosition50_user(_this, pfCenterPos, nLen, CDarkHoleChannelIsAllMemberNearPosition50_next);
         };
-        bool CDarkHoleChannelIsFill52_wrapper(struct CDarkHoleChannel* _this)
+        static bool CDarkHoleChannelIsFill52_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannelIsFill52_user(_this, CDarkHoleChannelIsFill52_next);
         };
-        bool CDarkHoleChannelIsMoveNextMission54_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
+        static bool CDarkHoleChannelIsMoveNextMission54_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
         {
            return CDarkHoleChannelIsMoveNextMission54_user(_this, nPortalIndex, CDarkHoleChannelIsMoveNextMission54_next);
         };
-        bool CDarkHoleChannelIsOpenPartyMember56_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pOpener)
+        static bool CDarkHoleChannelIsOpenPartyMember56_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pOpener)
         {
            return CDarkHoleChannelIsOpenPartyMember56_user(_this, pOpener, CDarkHoleChannelIsOpenPartyMember56_next);
         };
-        bool CDarkHoleChannelIsReEnterable58_wrapper(struct CDarkHoleChannel* _this, unsigned int dwEnterSerial)
+        static bool CDarkHoleChannelIsReEnterable58_wrapper(struct CDarkHoleChannel* _this, unsigned int dwEnterSerial)
         {
            return CDarkHoleChannelIsReEnterable58_user(_this, dwEnterSerial, CDarkHoleChannelIsReEnterable58_next);
         };
-        void CDarkHoleChannelNextMissionOtherQuester60_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pLeader, struct _dh_mission_setup* pNextMission)
+        static void CDarkHoleChannelNextMissionOtherQuester60_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pLeader, struct _dh_mission_setup* pNextMission)
         {
            CDarkHoleChannelNextMissionOtherQuester60_user(_this, pLeader, pNextMission, CDarkHoleChannelNextMissionOtherQuester60_next);
         };
-        void CDarkHoleChannelOnLoop62_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelOnLoop62_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelOnLoop62_user(_this, CDarkHoleChannelOnLoop62_next);
         };
-        void CDarkHoleChannelOpenDungeon64_wrapper(struct CDarkHoleChannel* _this, struct _dh_quest_setup* pQuestSetup, int nLayerIndex, struct CPlayer* pOpener, struct CDarkHole* pHoleObj)
+        static void CDarkHoleChannelOpenDungeon64_wrapper(struct CDarkHoleChannel* _this, struct _dh_quest_setup* pQuestSetup, int nLayerIndex, struct CPlayer* pOpener, struct CDarkHole* pHoleObj)
         {
            CDarkHoleChannelOpenDungeon64_user(_this, pQuestSetup, nLayerIndex, pOpener, pHoleObj, CDarkHoleChannelOpenDungeon64_next);
         };
-        bool CDarkHoleChannelPushMember66_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pMember, bool bReconnect, struct CMapData* pOldMap, uint16_t wLastLayer, float* pfOldPos)
+        static bool CDarkHoleChannelPushMember66_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pMember, bool bReconnect, struct CMapData* pOldMap, uint16_t wLastLayer, float* pfOldPos)
         {
            return CDarkHoleChannelPushMember66_user(_this, pMember, bReconnect, pOldMap, wLastLayer, pfOldPos, CDarkHoleChannelPushMember66_next);
         };
-        struct _dh_mission_setup* CDarkHoleChannelSearchMissionFromPos68_wrapper(struct CDarkHoleChannel* _this, float* pfStartPos)
+        static struct _dh_mission_setup* CDarkHoleChannelSearchMissionFromPos68_wrapper(struct CDarkHoleChannel* _this, float* pfStartPos)
         {
            return CDarkHoleChannelSearchMissionFromPos68_user(_this, pfStartPos, CDarkHoleChannelSearchMissionFromPos68_next);
         };
-        void CDarkHoleChannelSendMsg_AskReEnter70_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
+        static void CDarkHoleChannelSendMsg_AskReEnter70_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
         {
            CDarkHoleChannelSendMsg_AskReEnter70_user(_this, pDst, CDarkHoleChannelSendMsg_AskReEnter70_next);
         };
-        void CDarkHoleChannelSendMsg_ChannelClose72_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelSendMsg_ChannelClose72_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelSendMsg_ChannelClose72_user(_this, CDarkHoleChannelSendMsg_ChannelClose72_next);
         };
-        void CDarkHoleChannelSendMsg_GateDestroy74_wrapper(struct CDarkHoleChannel* _this, char* byType, char* pSend, int nSize)
+        static void CDarkHoleChannelSendMsg_GateDestroy74_wrapper(struct CDarkHoleChannel* _this, char* byType, char* pSend, int nSize)
         {
            CDarkHoleChannelSendMsg_GateDestroy74_user(_this, byType, pSend, nSize, CDarkHoleChannelSendMsg_GateDestroy74_next);
         };
-        void CDarkHoleChannelSendMsg_JobCount76_wrapper(struct CDarkHoleChannel* _this, int nJobIndex, int nCount)
+        static void CDarkHoleChannelSendMsg_JobCount76_wrapper(struct CDarkHoleChannel* _this, int nJobIndex, int nCount)
         {
            CDarkHoleChannelSendMsg_JobCount76_user(_this, nJobIndex, nCount, CDarkHoleChannelSendMsg_JobCount76_next);
         };
-        void CDarkHoleChannelSendMsg_JobPass78_wrapper(struct CDarkHoleChannel* _this, int nJobIndex)
+        static void CDarkHoleChannelSendMsg_JobPass78_wrapper(struct CDarkHoleChannel* _this, int nJobIndex)
         {
            CDarkHoleChannelSendMsg_JobPass78_user(_this, nJobIndex, CDarkHoleChannelSendMsg_JobPass78_next);
         };
-        void CDarkHoleChannelSendMsg_LeaderChange80_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pNewLeader)
+        static void CDarkHoleChannelSendMsg_LeaderChange80_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pNewLeader)
         {
            CDarkHoleChannelSendMsg_LeaderChange80_user(_this, pNewLeader, CDarkHoleChannelSendMsg_LeaderChange80_next);
         };
-        void CDarkHoleChannelSendMsg_MemberInfo82_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
+        static void CDarkHoleChannelSendMsg_MemberInfo82_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
         {
            CDarkHoleChannelSendMsg_MemberInfo82_user(_this, pDst, CDarkHoleChannelSendMsg_MemberInfo82_next);
         };
-        void CDarkHoleChannelSendMsg_MissionInfo84_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
+        static void CDarkHoleChannelSendMsg_MissionInfo84_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
         {
            CDarkHoleChannelSendMsg_MissionInfo84_user(_this, pDst, CDarkHoleChannelSendMsg_MissionInfo84_next);
         };
-        void CDarkHoleChannelSendMsg_MissionPass86_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelSendMsg_MissionPass86_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelSendMsg_MissionPass86_user(_this, CDarkHoleChannelSendMsg_MissionPass86_next);
         };
-        void CDarkHoleChannelSendMsg_NewMember88_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pNewMember, bool bReconnect)
+        static void CDarkHoleChannelSendMsg_NewMember88_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pNewMember, bool bReconnect)
         {
            CDarkHoleChannelSendMsg_NewMember88_user(_this, pNewMember, bReconnect, CDarkHoleChannelSendMsg_NewMember88_next);
         };
-        void CDarkHoleChannelSendMsg_NewMission90_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelSendMsg_NewMission90_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelSendMsg_NewMission90_user(_this, CDarkHoleChannelSendMsg_NewMission90_next);
         };
-        void CDarkHoleChannelSendMsg_OpenPortalByReact92_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
+        static void CDarkHoleChannelSendMsg_OpenPortalByReact92_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
         {
            CDarkHoleChannelSendMsg_OpenPortalByReact92_user(_this, nPortalIndex, CDarkHoleChannelSendMsg_OpenPortalByReact92_next);
         };
-        void CDarkHoleChannelSendMsg_OpenPortalByResult94_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
+        static void CDarkHoleChannelSendMsg_OpenPortalByResult94_wrapper(struct CDarkHoleChannel* _this, int nPortalIndex)
         {
            CDarkHoleChannelSendMsg_OpenPortalByResult94_user(_this, nPortalIndex, CDarkHoleChannelSendMsg_OpenPortalByResult94_next);
         };
-        void CDarkHoleChannelSendMsg_PopMember96_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pPopMember, bool bDisconnect)
+        static void CDarkHoleChannelSendMsg_PopMember96_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pPopMember, bool bDisconnect)
         {
            CDarkHoleChannelSendMsg_PopMember96_user(_this, pPopMember, bDisconnect, CDarkHoleChannelSendMsg_PopMember96_next);
         };
-        void CDarkHoleChannelSendMsg_QuestInfo98_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
+        static void CDarkHoleChannelSendMsg_QuestInfo98_wrapper(struct CDarkHoleChannel* _this, struct CPlayer* pDst)
         {
            CDarkHoleChannelSendMsg_QuestInfo98_user(_this, pDst, CDarkHoleChannelSendMsg_QuestInfo98_next);
         };
-        void CDarkHoleChannelSendMsg_QuestPass100_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelSendMsg_QuestPass100_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelSendMsg_QuestPass100_user(_this, CDarkHoleChannelSendMsg_QuestPass100_next);
         };
-        void CDarkHoleChannelSendMsg_RealAddLimTime102_wrapper(struct CDarkHoleChannel* _this, int nAddSec, char* pMsg)
+        static void CDarkHoleChannelSendMsg_RealAddLimTime102_wrapper(struct CDarkHoleChannel* _this, int nAddSec, char* pMsg)
         {
            CDarkHoleChannelSendMsg_RealAddLimTime102_user(_this, nAddSec, pMsg, CDarkHoleChannelSendMsg_RealAddLimTime102_next);
         };
-        void CDarkHoleChannelSendMsg_RealMsgInform104_wrapper(struct CDarkHoleChannel* _this, char* pMsg)
+        static void CDarkHoleChannelSendMsg_RealMsgInform104_wrapper(struct CDarkHoleChannel* _this, char* pMsg)
         {
            CDarkHoleChannelSendMsg_RealMsgInform104_user(_this, pMsg, CDarkHoleChannelSendMsg_RealMsgInform104_next);
         };
-        void CDarkHoleChannelSendMsg_TimeOut106_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelSendMsg_TimeOut106_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelSendMsg_TimeOut106_user(_this, CDarkHoleChannelSendMsg_TimeOut106_next);
         };
-        void CDarkHoleChannelShareItemToMonster108_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelShareItemToMonster108_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelShareItemToMonster108_user(_this, CDarkHoleChannelShareItemToMonster108_next);
         };
-        void CDarkHoleChannelWaitNextMission110_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChannelWaitNextMission110_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChannelWaitNextMission110_user(_this, CDarkHoleChannelWaitNextMission110_next);
         };
-        bool CDarkHoleChannel_Reward112_wrapper(struct CDarkHoleChannel* _this)
+        static bool CDarkHoleChannel_Reward112_wrapper(struct CDarkHoleChannel* _this)
         {
            return CDarkHoleChannel_Reward112_user(_this, CDarkHoleChannel_Reward112_next);
         };
-        void CDarkHoleChanneldtor_CDarkHoleChannel117_wrapper(struct CDarkHoleChannel* _this)
+        static void CDarkHoleChanneldtor_CDarkHoleChannel117_wrapper(struct CDarkHoleChannel* _this)
         {
            CDarkHoleChanneldtor_CDarkHoleChannel117_user(_this, CDarkHoleChanneldtor_CDarkHoleChannel117_next);
         };
         
-        void CDarkHoleChannel____enter_memberctor___enter_member2_wrapper(struct CDarkHoleChannel::__enter_member* _this, bool active, bool disnormal, unsigned int time)
+        static void CDarkHoleChannel____enter_memberctor___enter_member2_wrapper(struct CDarkHoleChannel::__enter_member* _this, bool active, bool disnormal, unsigned int time)
         {
            CDarkHoleChannel____enter_memberctor___enter_member2_user(_this, active, disnormal, time, CDarkHoleChannel____enter_memberctor___enter_member2_next);
         };
-        void CDarkHoleChannel____enter_memberctor___enter_member4_wrapper(struct CDarkHoleChannel::__enter_member* _this)
+        static void CDarkHoleChannel____enter_memberctor___enter_member4_wrapper(struct CDarkHoleChannel::__enter_member* _this)
         {
            CDarkHoleChannel____enter_memberctor___enter_member4_user(_this, CDarkHoleChannel____enter_memberctor___enter_member4_next);
         };
         
-        hook_record CDarkHoleChannel_functions[] = {
+        static hook_record CDarkHoleChannel_functions[] = {
         {   (LPVOID)0x140268f40L,
             (LPVOID *)&CDarkHoleChannelAddMonster2_user,
             (LPVOID *)&CDarkHoleChannelAddMonster2_next,
@@ -666,5 +666,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

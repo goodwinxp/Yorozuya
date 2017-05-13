@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::UsRefObjectDecRefCount2_ptr UsRefObjectDecRefCount2_next(nullptr);
-        info::UsRefObjectDecRefCount2_clbk UsRefObjectDecRefCount2_user(nullptr);
-        info::UsRefObjectIncRefCount4_ptr UsRefObjectIncRefCount4_next(nullptr);
-        info::UsRefObjectIncRefCount4_clbk UsRefObjectIncRefCount4_user(nullptr);
-        info::UsRefObjectctor_UsRefObject6_ptr UsRefObjectctor_UsRefObject6_next(nullptr);
-        info::UsRefObjectctor_UsRefObject6_clbk UsRefObjectctor_UsRefObject6_user(nullptr);
-        info::UsRefObjectdtor_UsRefObject11_ptr UsRefObjectdtor_UsRefObject11_next(nullptr);
-        info::UsRefObjectdtor_UsRefObject11_clbk UsRefObjectdtor_UsRefObject11_user(nullptr);
+        static info::UsRefObjectDecRefCount2_ptr UsRefObjectDecRefCount2_next(nullptr);
+        static info::UsRefObjectDecRefCount2_clbk UsRefObjectDecRefCount2_user(nullptr);
+        static info::UsRefObjectIncRefCount4_ptr UsRefObjectIncRefCount4_next(nullptr);
+        static info::UsRefObjectIncRefCount4_clbk UsRefObjectIncRefCount4_user(nullptr);
+        static info::UsRefObjectctor_UsRefObject6_ptr UsRefObjectctor_UsRefObject6_next(nullptr);
+        static info::UsRefObjectctor_UsRefObject6_clbk UsRefObjectctor_UsRefObject6_user(nullptr);
+        static info::UsRefObjectdtor_UsRefObject11_ptr UsRefObjectdtor_UsRefObject11_next(nullptr);
+        static info::UsRefObjectdtor_UsRefObject11_clbk UsRefObjectdtor_UsRefObject11_user(nullptr);
         
-        void UsRefObjectDecRefCount2_wrapper(struct UsRefObject* _this)
+        static void UsRefObjectDecRefCount2_wrapper(struct UsRefObject* _this)
         {
            UsRefObjectDecRefCount2_user(_this, UsRefObjectDecRefCount2_next);
         };
-        void UsRefObjectIncRefCount4_wrapper(struct UsRefObject* _this)
+        static void UsRefObjectIncRefCount4_wrapper(struct UsRefObject* _this)
         {
            UsRefObjectIncRefCount4_user(_this, UsRefObjectIncRefCount4_next);
         };
-        void UsRefObjectctor_UsRefObject6_wrapper(struct UsRefObject* _this)
+        static void UsRefObjectctor_UsRefObject6_wrapper(struct UsRefObject* _this)
         {
            UsRefObjectctor_UsRefObject6_user(_this, UsRefObjectctor_UsRefObject6_next);
         };
-        void UsRefObjectdtor_UsRefObject11_wrapper(struct UsRefObject* _this)
+        static void UsRefObjectdtor_UsRefObject11_wrapper(struct UsRefObject* _this)
         {
            UsRefObjectdtor_UsRefObject11_user(_this, UsRefObjectdtor_UsRefObject11_next);
         };
         
-        hook_record UsRefObject_functions[] = {
+        static hook_record UsRefObject_functions[] = {
         {   (LPVOID)0x14014cd40L,
             (LPVOID *)&UsRefObjectDecRefCount2_user,
             (LPVOID *)&UsRefObjectDecRefCount2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

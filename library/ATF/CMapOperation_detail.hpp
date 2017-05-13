@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMapOperationctor_CMapOperation2_ptr CMapOperationctor_CMapOperation2_next(nullptr);
-        info::CMapOperationctor_CMapOperation2_clbk CMapOperationctor_CMapOperation2_user(nullptr);
-        info::CMapOperationCheckMapPortalLink4_ptr CMapOperationCheckMapPortalLink4_next(nullptr);
-        info::CMapOperationCheckMapPortalLink4_clbk CMapOperationCheckMapPortalLink4_user(nullptr);
-        info::CMapOperationGetMap6_ptr CMapOperationGetMap6_next(nullptr);
-        info::CMapOperationGetMap6_clbk CMapOperationGetMap6_user(nullptr);
-        info::CMapOperationGetMap8_ptr CMapOperationGetMap8_next(nullptr);
-        info::CMapOperationGetMap8_clbk CMapOperationGetMap8_user(nullptr);
-        info::CMapOperationGetMap10_ptr CMapOperationGetMap10_next(nullptr);
-        info::CMapOperationGetMap10_clbk CMapOperationGetMap10_user(nullptr);
-        info::CMapOperationGetPosStartMap12_ptr CMapOperationGetPosStartMap12_next(nullptr);
-        info::CMapOperationGetPosStartMap12_clbk CMapOperationGetPosStartMap12_user(nullptr);
-        info::CMapOperationGetSettlementMapData14_ptr CMapOperationGetSettlementMapData14_next(nullptr);
-        info::CMapOperationGetSettlementMapData14_clbk CMapOperationGetSettlementMapData14_user(nullptr);
-        info::CMapOperationGetStartMap16_ptr CMapOperationGetStartMap16_next(nullptr);
-        info::CMapOperationGetStartMap16_clbk CMapOperationGetStartMap16_user(nullptr);
-        info::CMapOperationInit18_ptr CMapOperationInit18_next(nullptr);
-        info::CMapOperationInit18_clbk CMapOperationInit18_user(nullptr);
-        info::CMapOperationIsExistStdMapID20_ptr CMapOperationIsExistStdMapID20_next(nullptr);
-        info::CMapOperationIsExistStdMapID20_clbk CMapOperationIsExistStdMapID20_user(nullptr);
-        info::CMapOperationIsInRegion22_ptr CMapOperationIsInRegion22_next(nullptr);
-        info::CMapOperationIsInRegion22_clbk CMapOperationIsInRegion22_user(nullptr);
-        info::CMapOperationLoadMaps24_ptr CMapOperationLoadMaps24_next(nullptr);
-        info::CMapOperationLoadMaps24_clbk CMapOperationLoadMaps24_user(nullptr);
-        info::CMapOperationLoadRegion26_ptr CMapOperationLoadRegion26_next(nullptr);
-        info::CMapOperationLoadRegion26_clbk CMapOperationLoadRegion26_user(nullptr);
-        info::CMapOperationOnLoop28_ptr CMapOperationOnLoop28_next(nullptr);
-        info::CMapOperationOnLoop28_clbk CMapOperationOnLoop28_user(nullptr);
-        info::CMapOperationRespawnMonster30_ptr CMapOperationRespawnMonster30_next(nullptr);
-        info::CMapOperationRespawnMonster30_clbk CMapOperationRespawnMonster30_user(nullptr);
-        info::CMapOperationdtor_CMapOperation35_ptr CMapOperationdtor_CMapOperation35_next(nullptr);
-        info::CMapOperationdtor_CMapOperation35_clbk CMapOperationdtor_CMapOperation35_user(nullptr);
+        static info::CMapOperationctor_CMapOperation2_ptr CMapOperationctor_CMapOperation2_next(nullptr);
+        static info::CMapOperationctor_CMapOperation2_clbk CMapOperationctor_CMapOperation2_user(nullptr);
+        static info::CMapOperationCheckMapPortalLink4_ptr CMapOperationCheckMapPortalLink4_next(nullptr);
+        static info::CMapOperationCheckMapPortalLink4_clbk CMapOperationCheckMapPortalLink4_user(nullptr);
+        static info::CMapOperationGetMap6_ptr CMapOperationGetMap6_next(nullptr);
+        static info::CMapOperationGetMap6_clbk CMapOperationGetMap6_user(nullptr);
+        static info::CMapOperationGetMap8_ptr CMapOperationGetMap8_next(nullptr);
+        static info::CMapOperationGetMap8_clbk CMapOperationGetMap8_user(nullptr);
+        static info::CMapOperationGetMap10_ptr CMapOperationGetMap10_next(nullptr);
+        static info::CMapOperationGetMap10_clbk CMapOperationGetMap10_user(nullptr);
+        static info::CMapOperationGetPosStartMap12_ptr CMapOperationGetPosStartMap12_next(nullptr);
+        static info::CMapOperationGetPosStartMap12_clbk CMapOperationGetPosStartMap12_user(nullptr);
+        static info::CMapOperationGetSettlementMapData14_ptr CMapOperationGetSettlementMapData14_next(nullptr);
+        static info::CMapOperationGetSettlementMapData14_clbk CMapOperationGetSettlementMapData14_user(nullptr);
+        static info::CMapOperationGetStartMap16_ptr CMapOperationGetStartMap16_next(nullptr);
+        static info::CMapOperationGetStartMap16_clbk CMapOperationGetStartMap16_user(nullptr);
+        static info::CMapOperationInit18_ptr CMapOperationInit18_next(nullptr);
+        static info::CMapOperationInit18_clbk CMapOperationInit18_user(nullptr);
+        static info::CMapOperationIsExistStdMapID20_ptr CMapOperationIsExistStdMapID20_next(nullptr);
+        static info::CMapOperationIsExistStdMapID20_clbk CMapOperationIsExistStdMapID20_user(nullptr);
+        static info::CMapOperationIsInRegion22_ptr CMapOperationIsInRegion22_next(nullptr);
+        static info::CMapOperationIsInRegion22_clbk CMapOperationIsInRegion22_user(nullptr);
+        static info::CMapOperationLoadMaps24_ptr CMapOperationLoadMaps24_next(nullptr);
+        static info::CMapOperationLoadMaps24_clbk CMapOperationLoadMaps24_user(nullptr);
+        static info::CMapOperationLoadRegion26_ptr CMapOperationLoadRegion26_next(nullptr);
+        static info::CMapOperationLoadRegion26_clbk CMapOperationLoadRegion26_user(nullptr);
+        static info::CMapOperationOnLoop28_ptr CMapOperationOnLoop28_next(nullptr);
+        static info::CMapOperationOnLoop28_clbk CMapOperationOnLoop28_user(nullptr);
+        static info::CMapOperationRespawnMonster30_ptr CMapOperationRespawnMonster30_next(nullptr);
+        static info::CMapOperationRespawnMonster30_clbk CMapOperationRespawnMonster30_user(nullptr);
+        static info::CMapOperationdtor_CMapOperation35_ptr CMapOperationdtor_CMapOperation35_next(nullptr);
+        static info::CMapOperationdtor_CMapOperation35_clbk CMapOperationdtor_CMapOperation35_user(nullptr);
         
-        void CMapOperationctor_CMapOperation2_wrapper(struct CMapOperation* _this)
+        static void CMapOperationctor_CMapOperation2_wrapper(struct CMapOperation* _this)
         {
            CMapOperationctor_CMapOperation2_user(_this, CMapOperationctor_CMapOperation2_next);
         };
-        void CMapOperationCheckMapPortalLink4_wrapper(struct CMapOperation* _this)
+        static void CMapOperationCheckMapPortalLink4_wrapper(struct CMapOperation* _this)
         {
            CMapOperationCheckMapPortalLink4_user(_this, CMapOperationCheckMapPortalLink4_next);
         };
-        int CMapOperationGetMap6_wrapper(struct CMapOperation* _this, struct CMapData* pMap)
+        static int CMapOperationGetMap6_wrapper(struct CMapOperation* _this, struct CMapData* pMap)
         {
            return CMapOperationGetMap6_user(_this, pMap, CMapOperationGetMap6_next);
         };
-        struct CMapData* CMapOperationGetMap8_wrapper(struct CMapOperation* _this, char* szMapCode)
+        static struct CMapData* CMapOperationGetMap8_wrapper(struct CMapOperation* _this, char* szMapCode)
         {
            return CMapOperationGetMap8_user(_this, szMapCode, CMapOperationGetMap8_next);
         };
-        struct CMapData* CMapOperationGetMap10_wrapper(struct CMapOperation* _this, int nIndex)
+        static struct CMapData* CMapOperationGetMap10_wrapper(struct CMapOperation* _this, int nIndex)
         {
            return CMapOperationGetMap10_user(_this, nIndex, CMapOperationGetMap10_next);
         };
-        struct CMapData* CMapOperationGetPosStartMap12_wrapper(struct CMapOperation* _this, char byRaceCode, bool bRand, float* pfoutPos)
+        static struct CMapData* CMapOperationGetPosStartMap12_wrapper(struct CMapOperation* _this, char byRaceCode, bool bRand, float* pfoutPos)
         {
            return CMapOperationGetPosStartMap12_user(_this, byRaceCode, bRand, pfoutPos, CMapOperationGetPosStartMap12_next);
         };
-        struct CMapData* CMapOperationGetSettlementMapData14_wrapper(struct CMapOperation* _this, int iRace, int iTh)
+        static struct CMapData* CMapOperationGetSettlementMapData14_wrapper(struct CMapOperation* _this, int iRace, int iTh)
         {
            return CMapOperationGetSettlementMapData14_user(_this, iRace, iTh, CMapOperationGetSettlementMapData14_next);
         };
-        struct CMapData* CMapOperationGetStartMap16_wrapper(struct CMapOperation* _this, char byRaceCode)
+        static struct CMapData* CMapOperationGetStartMap16_wrapper(struct CMapOperation* _this, char byRaceCode)
         {
            return CMapOperationGetStartMap16_user(_this, byRaceCode, CMapOperationGetStartMap16_next);
         };
-        bool CMapOperationInit18_wrapper(struct CMapOperation* _this)
+        static bool CMapOperationInit18_wrapper(struct CMapOperation* _this)
         {
            return CMapOperationInit18_user(_this, CMapOperationInit18_next);
         };
-        bool CMapOperationIsExistStdMapID20_wrapper(struct CMapOperation* _this, int iMapID)
+        static bool CMapOperationIsExistStdMapID20_wrapper(struct CMapOperation* _this, int iMapID)
         {
            return CMapOperationIsExistStdMapID20_user(_this, iMapID, CMapOperationIsExistStdMapID20_next);
         };
-        bool CMapOperationIsInRegion22_wrapper(struct CMapOperation* _this, char* pszRegionCode, struct CGameObject* pObj)
+        static bool CMapOperationIsInRegion22_wrapper(struct CMapOperation* _this, char* pszRegionCode, struct CGameObject* pObj)
         {
            return CMapOperationIsInRegion22_user(_this, pszRegionCode, pObj, CMapOperationIsInRegion22_next);
         };
-        bool CMapOperationLoadMaps24_wrapper(struct CMapOperation* _this)
+        static bool CMapOperationLoadMaps24_wrapper(struct CMapOperation* _this)
         {
            return CMapOperationLoadMaps24_user(_this, CMapOperationLoadMaps24_next);
         };
-        bool CMapOperationLoadRegion26_wrapper(struct CMapOperation* _this)
+        static bool CMapOperationLoadRegion26_wrapper(struct CMapOperation* _this)
         {
            return CMapOperationLoadRegion26_user(_this, CMapOperationLoadRegion26_next);
         };
-        void CMapOperationOnLoop28_wrapper(struct CMapOperation* _this)
+        static void CMapOperationOnLoop28_wrapper(struct CMapOperation* _this)
         {
            CMapOperationOnLoop28_user(_this, CMapOperationOnLoop28_next);
         };
-        void CMapOperationRespawnMonster30_wrapper(struct CMapOperation* _this)
+        static void CMapOperationRespawnMonster30_wrapper(struct CMapOperation* _this)
         {
            CMapOperationRespawnMonster30_user(_this, CMapOperationRespawnMonster30_next);
         };
-        void CMapOperationdtor_CMapOperation35_wrapper(struct CMapOperation* _this)
+        static void CMapOperationdtor_CMapOperation35_wrapper(struct CMapOperation* _this)
         {
            CMapOperationdtor_CMapOperation35_user(_this, CMapOperationdtor_CMapOperation35_next);
         };
         
-        hook_record CMapOperation_functions[] = {
+        static hook_record CMapOperation_functions[] = {
         {   (LPVOID)0x140195e20L,
             (LPVOID *)&CMapOperationctor_CMapOperation2_user,
             (LPVOID *)&CMapOperationctor_CMapOperation2_next,
@@ -190,5 +190,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

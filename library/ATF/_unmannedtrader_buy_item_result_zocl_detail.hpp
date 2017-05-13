@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_ptr _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_next(nullptr);
-        info::_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_clbk _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_user(nullptr);
-        info::_unmannedtrader_buy_item_result_zoclsize4_ptr _unmannedtrader_buy_item_result_zoclsize4_next(nullptr);
-        info::_unmannedtrader_buy_item_result_zoclsize4_clbk _unmannedtrader_buy_item_result_zoclsize4_user(nullptr);
+        static info::_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_ptr _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_next(nullptr);
+        static info::_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_clbk _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_user(nullptr);
+        static info::_unmannedtrader_buy_item_result_zoclsize4_ptr _unmannedtrader_buy_item_result_zoclsize4_next(nullptr);
+        static info::_unmannedtrader_buy_item_result_zoclsize4_clbk _unmannedtrader_buy_item_result_zoclsize4_user(nullptr);
         
-        void _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_wrapper(struct _unmannedtrader_buy_item_result_zocl* _this)
+        static void _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_wrapper(struct _unmannedtrader_buy_item_result_zocl* _this)
         {
            _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_user(_this, _unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_next);
         };
-        int _unmannedtrader_buy_item_result_zoclsize4_wrapper(struct _unmannedtrader_buy_item_result_zocl* _this)
+        static int _unmannedtrader_buy_item_result_zoclsize4_wrapper(struct _unmannedtrader_buy_item_result_zocl* _this)
         {
            return _unmannedtrader_buy_item_result_zoclsize4_user(_this, _unmannedtrader_buy_item_result_zoclsize4_next);
         };
         
-        hook_record _unmannedtrader_buy_item_result_zocl_functions[] = {
+        static hook_record _unmannedtrader_buy_item_result_zocl_functions[] = {
         {   (LPVOID)0x140351860L,
             (LPVOID *)&_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_user,
             (LPVOID *)&_unmannedtrader_buy_item_result_zoclctor__unmannedtrader_buy_item_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_apex_block_request_wracsize2_ptr _apex_block_request_wracsize2_next(nullptr);
-        info::_apex_block_request_wracsize2_clbk _apex_block_request_wracsize2_user(nullptr);
+        static info::_apex_block_request_wracsize2_ptr _apex_block_request_wracsize2_next(nullptr);
+        static info::_apex_block_request_wracsize2_clbk _apex_block_request_wracsize2_user(nullptr);
         
-        int _apex_block_request_wracsize2_wrapper(struct _apex_block_request_wrac* _this)
+        static int _apex_block_request_wracsize2_wrapper(struct _apex_block_request_wrac* _this)
         {
            return _apex_block_request_wracsize2_user(_this, _apex_block_request_wracsize2_next);
         };
         
-        hook_record _apex_block_request_wrac_functions[] = {
+        static hook_record _apex_block_request_wrac_functions[] = {
         {   (LPVOID)0x140410c50L,
             (LPVOID *)&_apex_block_request_wracsize2_user,
             (LPVOID *)&_apex_block_request_wracsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

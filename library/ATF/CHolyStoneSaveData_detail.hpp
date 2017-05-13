@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyStoneSaveDataDefaultInit2_ptr CHolyStoneSaveDataDefaultInit2_next(nullptr);
-        info::CHolyStoneSaveDataDefaultInit2_clbk CHolyStoneSaveDataDefaultInit2_user(nullptr);
+        static info::CHolyStoneSaveDataDefaultInit2_ptr CHolyStoneSaveDataDefaultInit2_next(nullptr);
+        static info::CHolyStoneSaveDataDefaultInit2_clbk CHolyStoneSaveDataDefaultInit2_user(nullptr);
         
-        void CHolyStoneSaveDataDefaultInit2_wrapper(struct CHolyStoneSaveData* _this, struct CHolyScheduleData::__HolyScheduleNode* ScheduleNode)
+        static void CHolyStoneSaveDataDefaultInit2_wrapper(struct CHolyStoneSaveData* _this, struct CHolyScheduleData::__HolyScheduleNode* ScheduleNode)
         {
            CHolyStoneSaveDataDefaultInit2_user(_this, ScheduleNode, CHolyStoneSaveDataDefaultInit2_next);
         };
         
-        hook_record CHolyStoneSaveData_functions[] = {
+        static hook_record CHolyStoneSaveData_functions[] = {
         {   (LPVOID)0x140284350L,
             (LPVOID *)&CHolyStoneSaveDataDefaultInit2_user,
             (LPVOID *)&CHolyStoneSaveDataDefaultInit2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

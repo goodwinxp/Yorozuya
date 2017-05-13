@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetworkctor_CNetwork2_ptr CNetworkctor_CNetwork2_next(nullptr);
-        info::CNetworkctor_CNetwork2_clbk CNetworkctor_CNetwork2_user(nullptr);
-        info::CNetworkFreeDLL4_ptr CNetworkFreeDLL4_next(nullptr);
-        info::CNetworkFreeDLL4_clbk CNetworkFreeDLL4_user(nullptr);
-        info::CNetworkInitNetwork6_ptr CNetworkInitNetwork6_next(nullptr);
-        info::CNetworkInitNetwork6_clbk CNetworkInitNetwork6_user(nullptr);
-        info::CNetworkLoadDll8_ptr CNetworkLoadDll8_next(nullptr);
-        info::CNetworkLoadDll8_clbk CNetworkLoadDll8_user(nullptr);
-        info::CNetworkdtor_CNetwork13_ptr CNetworkdtor_CNetwork13_next(nullptr);
-        info::CNetworkdtor_CNetwork13_clbk CNetworkdtor_CNetwork13_user(nullptr);
+        static info::CNetworkctor_CNetwork2_ptr CNetworkctor_CNetwork2_next(nullptr);
+        static info::CNetworkctor_CNetwork2_clbk CNetworkctor_CNetwork2_user(nullptr);
+        static info::CNetworkFreeDLL4_ptr CNetworkFreeDLL4_next(nullptr);
+        static info::CNetworkFreeDLL4_clbk CNetworkFreeDLL4_user(nullptr);
+        static info::CNetworkInitNetwork6_ptr CNetworkInitNetwork6_next(nullptr);
+        static info::CNetworkInitNetwork6_clbk CNetworkInitNetwork6_user(nullptr);
+        static info::CNetworkLoadDll8_ptr CNetworkLoadDll8_next(nullptr);
+        static info::CNetworkLoadDll8_clbk CNetworkLoadDll8_user(nullptr);
+        static info::CNetworkdtor_CNetwork13_ptr CNetworkdtor_CNetwork13_next(nullptr);
+        static info::CNetworkdtor_CNetwork13_clbk CNetworkdtor_CNetwork13_user(nullptr);
         
-        void CNetworkctor_CNetwork2_wrapper(struct CNetwork* _this)
+        static void CNetworkctor_CNetwork2_wrapper(struct CNetwork* _this)
         {
            CNetworkctor_CNetwork2_user(_this, CNetworkctor_CNetwork2_next);
         };
-        void CNetworkFreeDLL4_wrapper(struct CNetwork* _this)
+        static void CNetworkFreeDLL4_wrapper(struct CNetwork* _this)
         {
            CNetworkFreeDLL4_user(_this, CNetworkFreeDLL4_next);
         };
-        void CNetworkInitNetwork6_wrapper(struct CNetwork* _this)
+        static void CNetworkInitNetwork6_wrapper(struct CNetwork* _this)
         {
            CNetworkInitNetwork6_user(_this, CNetworkInitNetwork6_next);
         };
-        bool CNetworkLoadDll8_wrapper(struct CNetwork* _this, char* dll_name)
+        static bool CNetworkLoadDll8_wrapper(struct CNetwork* _this, char* dll_name)
         {
            return CNetworkLoadDll8_user(_this, dll_name, CNetworkLoadDll8_next);
         };
-        void CNetworkdtor_CNetwork13_wrapper(struct CNetwork* _this)
+        static void CNetworkdtor_CNetwork13_wrapper(struct CNetwork* _this)
         {
            CNetworkdtor_CNetwork13_user(_this, CNetworkdtor_CNetwork13_next);
         };
         
-        hook_record CNetwork_functions[] = {
+        static hook_record CNetwork_functions[] = {
         {   (LPVOID)0x140410a80L,
             (LPVOID *)&CNetworkctor_CNetwork2_user,
             (LPVOID *)&CNetworkctor_CNetwork2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

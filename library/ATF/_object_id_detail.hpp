@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_object_idctor__object_id2_ptr _object_idctor__object_id2_next(nullptr);
-        info::_object_idctor__object_id2_clbk _object_idctor__object_id2_user(nullptr);
-        info::_object_idctor__object_id4_ptr _object_idctor__object_id4_next(nullptr);
-        info::_object_idctor__object_id4_clbk _object_idctor__object_id4_user(nullptr);
+        static info::_object_idctor__object_id2_ptr _object_idctor__object_id2_next(nullptr);
+        static info::_object_idctor__object_id2_clbk _object_idctor__object_id2_user(nullptr);
+        static info::_object_idctor__object_id4_ptr _object_idctor__object_id4_next(nullptr);
+        static info::_object_idctor__object_id4_clbk _object_idctor__object_id4_user(nullptr);
         
-        void _object_idctor__object_id2_wrapper(struct _object_id* _this, char byKind, char byID, uint16_t wIndex)
+        static void _object_idctor__object_id2_wrapper(struct _object_id* _this, char byKind, char byID, uint16_t wIndex)
         {
            _object_idctor__object_id2_user(_this, byKind, byID, wIndex, _object_idctor__object_id2_next);
         };
-        void _object_idctor__object_id4_wrapper(struct _object_id* _this)
+        static void _object_idctor__object_id4_wrapper(struct _object_id* _this)
         {
            _object_idctor__object_id4_user(_this, _object_idctor__object_id4_next);
         };
         
-        hook_record _object_id_functions[] = {
+        static hook_record _object_id_functions[] = {
         {   (LPVOID)0x14012e460L,
             (LPVOID *)&_object_idctor__object_id2_user,
             (LPVOID *)&_object_idctor__object_id2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

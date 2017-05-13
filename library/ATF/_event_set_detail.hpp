@@ -8,43 +8,43 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_event_setctor__event_set2_ptr _event_setctor__event_set2_next(nullptr);
-        info::_event_setctor__event_set2_clbk _event_setctor__event_set2_user(nullptr);
-        info::_event_setinit4_ptr _event_setinit4_next(nullptr);
-        info::_event_setinit4_clbk _event_setinit4_user(nullptr);
+        static info::_event_setctor__event_set2_ptr _event_setctor__event_set2_next(nullptr);
+        static info::_event_setctor__event_set2_clbk _event_setctor__event_set2_user(nullptr);
+        static info::_event_setinit4_ptr _event_setinit4_next(nullptr);
+        static info::_event_setinit4_clbk _event_setinit4_user(nullptr);
         
-        info::_event_set___monster_setctor__monster_set2_ptr _event_set___monster_setctor__monster_set2_next(nullptr);
-        info::_event_set___monster_setctor__monster_set2_clbk _event_set___monster_setctor__monster_set2_user(nullptr);
+        static info::_event_set___monster_setctor__monster_set2_ptr _event_set___monster_setctor__monster_set2_next(nullptr);
+        static info::_event_set___monster_setctor__monster_set2_clbk _event_set___monster_setctor__monster_set2_user(nullptr);
         
-        info::_event_set___monster_set___statector__state2_ptr _event_set___monster_set___statector__state2_next(nullptr);
-        info::_event_set___monster_set___statector__state2_clbk _event_set___monster_set___statector__state2_user(nullptr);
-        info::_event_set___monster_set___stateinit4_ptr _event_set___monster_set___stateinit4_next(nullptr);
-        info::_event_set___monster_set___stateinit4_clbk _event_set___monster_set___stateinit4_user(nullptr);
+        static info::_event_set___monster_set___statector__state2_ptr _event_set___monster_set___statector__state2_next(nullptr);
+        static info::_event_set___monster_set___statector__state2_clbk _event_set___monster_set___statector__state2_user(nullptr);
+        static info::_event_set___monster_set___stateinit4_ptr _event_set___monster_set___stateinit4_next(nullptr);
+        static info::_event_set___monster_set___stateinit4_clbk _event_set___monster_set___stateinit4_user(nullptr);
         
-        void _event_setctor__event_set2_wrapper(struct _event_set* _this)
+        static void _event_setctor__event_set2_wrapper(struct _event_set* _this)
         {
            _event_setctor__event_set2_user(_this, _event_setctor__event_set2_next);
         };
-        void _event_setinit4_wrapper(struct _event_set* _this)
+        static void _event_setinit4_wrapper(struct _event_set* _this)
         {
            _event_setinit4_user(_this, _event_setinit4_next);
         };
         
-        void _event_set___monster_setctor__monster_set2_wrapper(struct _event_set::_monster_set* _this)
+        static void _event_set___monster_setctor__monster_set2_wrapper(struct _event_set::_monster_set* _this)
         {
            _event_set___monster_setctor__monster_set2_user(_this, _event_set___monster_setctor__monster_set2_next);
         };
         
-        void _event_set___monster_set___statector__state2_wrapper(struct _event_set::_monster_set::_state* _this)
+        static void _event_set___monster_set___statector__state2_wrapper(struct _event_set::_monster_set::_state* _this)
         {
            _event_set___monster_set___statector__state2_user(_this, _event_set___monster_set___statector__state2_next);
         };
-        void _event_set___monster_set___stateinit4_wrapper(struct _event_set::_monster_set::_state* _this)
+        static void _event_set___monster_set___stateinit4_wrapper(struct _event_set::_monster_set::_state* _this)
         {
            _event_set___monster_set___stateinit4_user(_this, _event_set___monster_set___stateinit4_next);
         };
         
-        hook_record _event_set_functions[] = {
+        static hook_record _event_set_functions[] = {
         {   (LPVOID)0x1402a9db0L,
             (LPVOID *)&_event_setctor__event_set2_user,
             (LPVOID *)&_event_setctor__event_set2_next,
@@ -75,5 +75,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

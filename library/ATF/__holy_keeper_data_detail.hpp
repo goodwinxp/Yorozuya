@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__holy_keeper_datactor___holy_keeper_data2_ptr __holy_keeper_datactor___holy_keeper_data2_next(nullptr);
-        info::__holy_keeper_datactor___holy_keeper_data2_clbk __holy_keeper_datactor___holy_keeper_data2_user(nullptr);
+        static info::__holy_keeper_datactor___holy_keeper_data2_ptr __holy_keeper_datactor___holy_keeper_data2_next(nullptr);
+        static info::__holy_keeper_datactor___holy_keeper_data2_clbk __holy_keeper_datactor___holy_keeper_data2_user(nullptr);
         
-        void __holy_keeper_datactor___holy_keeper_data2_wrapper(struct __holy_keeper_data* _this)
+        static void __holy_keeper_datactor___holy_keeper_data2_wrapper(struct __holy_keeper_data* _this)
         {
            __holy_keeper_datactor___holy_keeper_data2_user(_this, __holy_keeper_datactor___holy_keeper_data2_next);
         };
         
-        hook_record __holy_keeper_data_functions[] = {
+        static hook_record __holy_keeper_data_functions[] = {
         {   (LPVOID)0x140284010L,
             (LPVOID *)&__holy_keeper_datactor___holy_keeper_data2_user,
             (LPVOID *)&__holy_keeper_datactor___holy_keeper_data2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

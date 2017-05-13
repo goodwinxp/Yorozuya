@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_thread_parameterEndThread2_ptr _thread_parameterEndThread2_next(nullptr);
-        info::_thread_parameterEndThread2_clbk _thread_parameterEndThread2_user(nullptr);
-        info::_thread_parameterSetParameter4_ptr _thread_parameterSetParameter4_next(nullptr);
-        info::_thread_parameterSetParameter4_clbk _thread_parameterSetParameter4_user(nullptr);
-        info::_thread_parameterctor__thread_parameter6_ptr _thread_parameterctor__thread_parameter6_next(nullptr);
-        info::_thread_parameterctor__thread_parameter6_clbk _thread_parameterctor__thread_parameter6_user(nullptr);
+        static info::_thread_parameterEndThread2_ptr _thread_parameterEndThread2_next(nullptr);
+        static info::_thread_parameterEndThread2_clbk _thread_parameterEndThread2_user(nullptr);
+        static info::_thread_parameterSetParameter4_ptr _thread_parameterSetParameter4_next(nullptr);
+        static info::_thread_parameterSetParameter4_clbk _thread_parameterSetParameter4_user(nullptr);
+        static info::_thread_parameterctor__thread_parameter6_ptr _thread_parameterctor__thread_parameter6_next(nullptr);
+        static info::_thread_parameterctor__thread_parameter6_clbk _thread_parameterctor__thread_parameter6_user(nullptr);
         
-        void _thread_parameterEndThread2_wrapper(struct _thread_parameter* _this)
+        static void _thread_parameterEndThread2_wrapper(struct _thread_parameter* _this)
         {
            _thread_parameterEndThread2_user(_this, _thread_parameterEndThread2_next);
         };
-        void _thread_parameterSetParameter4_wrapper(struct _thread_parameter* _this, int bStart, void* pParam, int nIndex)
+        static void _thread_parameterSetParameter4_wrapper(struct _thread_parameter* _this, int bStart, void* pParam, int nIndex)
         {
            _thread_parameterSetParameter4_user(_this, bStart, pParam, nIndex, _thread_parameterSetParameter4_next);
         };
-        void _thread_parameterctor__thread_parameter6_wrapper(struct _thread_parameter* _this)
+        static void _thread_parameterctor__thread_parameter6_wrapper(struct _thread_parameter* _this)
         {
            _thread_parameterctor__thread_parameter6_user(_this, _thread_parameterctor__thread_parameter6_next);
         };
         
-        hook_record _thread_parameter_functions[] = {
+        static hook_record _thread_parameter_functions[] = {
         {   (LPVOID)0x14047d3e0L,
             (LPVOID *)&_thread_parameterEndThread2_user,
             (LPVOID *)&_thread_parameterEndThread2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

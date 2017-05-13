@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_goldbox_indexctor__goldbox_index2_ptr _goldbox_indexctor__goldbox_index2_next(nullptr);
-        info::_goldbox_indexctor__goldbox_index2_clbk _goldbox_indexctor__goldbox_index2_user(nullptr);
+        static info::_goldbox_indexctor__goldbox_index2_ptr _goldbox_indexctor__goldbox_index2_next(nullptr);
+        static info::_goldbox_indexctor__goldbox_index2_clbk _goldbox_indexctor__goldbox_index2_user(nullptr);
         
-        void _goldbox_indexctor__goldbox_index2_wrapper(struct _goldbox_index* _this)
+        static void _goldbox_indexctor__goldbox_index2_wrapper(struct _goldbox_index* _this)
         {
            _goldbox_indexctor__goldbox_index2_user(_this, _goldbox_indexctor__goldbox_index2_next);
         };
         
-        hook_record _goldbox_index_functions[] = {
+        static hook_record _goldbox_index_functions[] = {
         {   (LPVOID)0x140416c60L,
             (LPVOID *)&_goldbox_indexctor__goldbox_index2_user,
             (LPVOID *)&_goldbox_indexctor__goldbox_index2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

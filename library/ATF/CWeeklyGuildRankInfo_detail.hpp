@@ -8,135 +8,135 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_ptr CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_next(nullptr);
-        info::CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_clbk CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_user(nullptr);
-        info::CWeeklyGuildRankInfoCheckEmpty4_ptr CWeeklyGuildRankInfoCheckEmpty4_next(nullptr);
-        info::CWeeklyGuildRankInfoCheckEmpty4_clbk CWeeklyGuildRankInfoCheckEmpty4_user(nullptr);
-        info::CWeeklyGuildRankInfoClear6_ptr CWeeklyGuildRankInfoClear6_next(nullptr);
-        info::CWeeklyGuildRankInfoClear6_clbk CWeeklyGuildRankInfoClear6_user(nullptr);
-        info::CWeeklyGuildRankInfoClearOwner8_ptr CWeeklyGuildRankInfoClearOwner8_next(nullptr);
-        info::CWeeklyGuildRankInfoClearOwner8_clbk CWeeklyGuildRankInfoClearOwner8_user(nullptr);
-        info::CWeeklyGuildRankInfoClearRank10_ptr CWeeklyGuildRankInfoClearRank10_next(nullptr);
-        info::CWeeklyGuildRankInfoClearRank10_clbk CWeeklyGuildRankInfoClearRank10_user(nullptr);
-        info::CWeeklyGuildRankInfoFind12_ptr CWeeklyGuildRankInfoFind12_next(nullptr);
-        info::CWeeklyGuildRankInfoFind12_clbk CWeeklyGuildRankInfoFind12_user(nullptr);
-        info::CWeeklyGuildRankInfoGetCurOwnerGuild14_ptr CWeeklyGuildRankInfoGetCurOwnerGuild14_next(nullptr);
-        info::CWeeklyGuildRankInfoGetCurOwnerGuild14_clbk CWeeklyGuildRankInfoGetCurOwnerGuild14_user(nullptr);
-        info::CWeeklyGuildRankInfoGetOwnerGuild16_ptr CWeeklyGuildRankInfoGetOwnerGuild16_next(nullptr);
-        info::CWeeklyGuildRankInfoGetOwnerGuild16_clbk CWeeklyGuildRankInfoGetOwnerGuild16_user(nullptr);
-        info::CWeeklyGuildRankInfoGetPrevOwnerGuild18_ptr CWeeklyGuildRankInfoGetPrevOwnerGuild18_next(nullptr);
-        info::CWeeklyGuildRankInfoGetPrevOwnerGuild18_clbk CWeeklyGuildRankInfoGetPrevOwnerGuild18_user(nullptr);
-        info::CWeeklyGuildRankInfoInit20_ptr CWeeklyGuildRankInfoInit20_next(nullptr);
-        info::CWeeklyGuildRankInfoInit20_clbk CWeeklyGuildRankInfoInit20_user(nullptr);
-        info::CWeeklyGuildRankInfoIsNoDataPrev22_ptr CWeeklyGuildRankInfoIsNoDataPrev22_next(nullptr);
-        info::CWeeklyGuildRankInfoIsNoDataPrev22_clbk CWeeklyGuildRankInfoIsNoDataPrev22_user(nullptr);
-        info::CWeeklyGuildRankInfoIsNoDataToday24_ptr CWeeklyGuildRankInfoIsNoDataToday24_next(nullptr);
-        info::CWeeklyGuildRankInfoIsNoDataToday24_clbk CWeeklyGuildRankInfoIsNoDataToday24_user(nullptr);
-        info::CWeeklyGuildRankInfoLoad26_ptr CWeeklyGuildRankInfoLoad26_next(nullptr);
-        info::CWeeklyGuildRankInfoLoad26_clbk CWeeklyGuildRankInfoLoad26_user(nullptr);
-        info::CWeeklyGuildRankInfoLoadOwner28_ptr CWeeklyGuildRankInfoLoadOwner28_next(nullptr);
-        info::CWeeklyGuildRankInfoLoadOwner28_clbk CWeeklyGuildRankInfoLoadOwner28_user(nullptr);
-        info::CWeeklyGuildRankInfoLoadPrev30_ptr CWeeklyGuildRankInfoLoadPrev30_next(nullptr);
-        info::CWeeklyGuildRankInfoLoadPrev30_clbk CWeeklyGuildRankInfoLoadPrev30_user(nullptr);
-        info::CWeeklyGuildRankInfoLoadToday32_ptr CWeeklyGuildRankInfoLoadToday32_next(nullptr);
-        info::CWeeklyGuildRankInfoLoadToday32_clbk CWeeklyGuildRankInfoLoadToday32_user(nullptr);
-        info::CWeeklyGuildRankInfoSend34_ptr CWeeklyGuildRankInfoSend34_next(nullptr);
-        info::CWeeklyGuildRankInfoSend34_clbk CWeeklyGuildRankInfoSend34_user(nullptr);
-        info::CWeeklyGuildRankInfoSetNoDataFlagToday36_ptr CWeeklyGuildRankInfoSetNoDataFlagToday36_next(nullptr);
-        info::CWeeklyGuildRankInfoSetNoDataFlagToday36_clbk CWeeklyGuildRankInfoSetNoDataFlagToday36_user(nullptr);
-        info::CWeeklyGuildRankInfoUpdate38_ptr CWeeklyGuildRankInfoUpdate38_next(nullptr);
-        info::CWeeklyGuildRankInfoUpdate38_clbk CWeeklyGuildRankInfoUpdate38_user(nullptr);
-        info::CWeeklyGuildRankInfoUpdateOwner40_ptr CWeeklyGuildRankInfoUpdateOwner40_next(nullptr);
-        info::CWeeklyGuildRankInfoUpdateOwner40_clbk CWeeklyGuildRankInfoUpdateOwner40_user(nullptr);
-        info::CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_ptr CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_next(nullptr);
-        info::CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_clbk CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_user(nullptr);
+        static info::CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_ptr CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_next(nullptr);
+        static info::CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_clbk CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_user(nullptr);
+        static info::CWeeklyGuildRankInfoCheckEmpty4_ptr CWeeklyGuildRankInfoCheckEmpty4_next(nullptr);
+        static info::CWeeklyGuildRankInfoCheckEmpty4_clbk CWeeklyGuildRankInfoCheckEmpty4_user(nullptr);
+        static info::CWeeklyGuildRankInfoClear6_ptr CWeeklyGuildRankInfoClear6_next(nullptr);
+        static info::CWeeklyGuildRankInfoClear6_clbk CWeeklyGuildRankInfoClear6_user(nullptr);
+        static info::CWeeklyGuildRankInfoClearOwner8_ptr CWeeklyGuildRankInfoClearOwner8_next(nullptr);
+        static info::CWeeklyGuildRankInfoClearOwner8_clbk CWeeklyGuildRankInfoClearOwner8_user(nullptr);
+        static info::CWeeklyGuildRankInfoClearRank10_ptr CWeeklyGuildRankInfoClearRank10_next(nullptr);
+        static info::CWeeklyGuildRankInfoClearRank10_clbk CWeeklyGuildRankInfoClearRank10_user(nullptr);
+        static info::CWeeklyGuildRankInfoFind12_ptr CWeeklyGuildRankInfoFind12_next(nullptr);
+        static info::CWeeklyGuildRankInfoFind12_clbk CWeeklyGuildRankInfoFind12_user(nullptr);
+        static info::CWeeklyGuildRankInfoGetCurOwnerGuild14_ptr CWeeklyGuildRankInfoGetCurOwnerGuild14_next(nullptr);
+        static info::CWeeklyGuildRankInfoGetCurOwnerGuild14_clbk CWeeklyGuildRankInfoGetCurOwnerGuild14_user(nullptr);
+        static info::CWeeklyGuildRankInfoGetOwnerGuild16_ptr CWeeklyGuildRankInfoGetOwnerGuild16_next(nullptr);
+        static info::CWeeklyGuildRankInfoGetOwnerGuild16_clbk CWeeklyGuildRankInfoGetOwnerGuild16_user(nullptr);
+        static info::CWeeklyGuildRankInfoGetPrevOwnerGuild18_ptr CWeeklyGuildRankInfoGetPrevOwnerGuild18_next(nullptr);
+        static info::CWeeklyGuildRankInfoGetPrevOwnerGuild18_clbk CWeeklyGuildRankInfoGetPrevOwnerGuild18_user(nullptr);
+        static info::CWeeklyGuildRankInfoInit20_ptr CWeeklyGuildRankInfoInit20_next(nullptr);
+        static info::CWeeklyGuildRankInfoInit20_clbk CWeeklyGuildRankInfoInit20_user(nullptr);
+        static info::CWeeklyGuildRankInfoIsNoDataPrev22_ptr CWeeklyGuildRankInfoIsNoDataPrev22_next(nullptr);
+        static info::CWeeklyGuildRankInfoIsNoDataPrev22_clbk CWeeklyGuildRankInfoIsNoDataPrev22_user(nullptr);
+        static info::CWeeklyGuildRankInfoIsNoDataToday24_ptr CWeeklyGuildRankInfoIsNoDataToday24_next(nullptr);
+        static info::CWeeklyGuildRankInfoIsNoDataToday24_clbk CWeeklyGuildRankInfoIsNoDataToday24_user(nullptr);
+        static info::CWeeklyGuildRankInfoLoad26_ptr CWeeklyGuildRankInfoLoad26_next(nullptr);
+        static info::CWeeklyGuildRankInfoLoad26_clbk CWeeklyGuildRankInfoLoad26_user(nullptr);
+        static info::CWeeklyGuildRankInfoLoadOwner28_ptr CWeeklyGuildRankInfoLoadOwner28_next(nullptr);
+        static info::CWeeklyGuildRankInfoLoadOwner28_clbk CWeeklyGuildRankInfoLoadOwner28_user(nullptr);
+        static info::CWeeklyGuildRankInfoLoadPrev30_ptr CWeeklyGuildRankInfoLoadPrev30_next(nullptr);
+        static info::CWeeklyGuildRankInfoLoadPrev30_clbk CWeeklyGuildRankInfoLoadPrev30_user(nullptr);
+        static info::CWeeklyGuildRankInfoLoadToday32_ptr CWeeklyGuildRankInfoLoadToday32_next(nullptr);
+        static info::CWeeklyGuildRankInfoLoadToday32_clbk CWeeklyGuildRankInfoLoadToday32_user(nullptr);
+        static info::CWeeklyGuildRankInfoSend34_ptr CWeeklyGuildRankInfoSend34_next(nullptr);
+        static info::CWeeklyGuildRankInfoSend34_clbk CWeeklyGuildRankInfoSend34_user(nullptr);
+        static info::CWeeklyGuildRankInfoSetNoDataFlagToday36_ptr CWeeklyGuildRankInfoSetNoDataFlagToday36_next(nullptr);
+        static info::CWeeklyGuildRankInfoSetNoDataFlagToday36_clbk CWeeklyGuildRankInfoSetNoDataFlagToday36_user(nullptr);
+        static info::CWeeklyGuildRankInfoUpdate38_ptr CWeeklyGuildRankInfoUpdate38_next(nullptr);
+        static info::CWeeklyGuildRankInfoUpdate38_clbk CWeeklyGuildRankInfoUpdate38_user(nullptr);
+        static info::CWeeklyGuildRankInfoUpdateOwner40_ptr CWeeklyGuildRankInfoUpdateOwner40_next(nullptr);
+        static info::CWeeklyGuildRankInfoUpdateOwner40_clbk CWeeklyGuildRankInfoUpdateOwner40_user(nullptr);
+        static info::CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_ptr CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_next(nullptr);
+        static info::CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_clbk CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_user(nullptr);
         
-        void CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_user(_this, CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_next);
         };
-        bool CWeeklyGuildRankInfoCheckEmpty4_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
+        static bool CWeeklyGuildRankInfoCheckEmpty4_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
         {
            return CWeeklyGuildRankInfoCheckEmpty4_user(_this, pkInfo, CWeeklyGuildRankInfoCheckEmpty4_next);
         };
-        void CWeeklyGuildRankInfoClear6_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfoClear6_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfoClear6_user(_this, CWeeklyGuildRankInfoClear6_next);
         };
-        void CWeeklyGuildRankInfoClearOwner8_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfoClearOwner8_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfoClearOwner8_user(_this, CWeeklyGuildRankInfoClearOwner8_next);
         };
-        void CWeeklyGuildRankInfoClearRank10_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfoClearRank10_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfoClearRank10_user(_this, CWeeklyGuildRankInfoClearRank10_next);
         };
-        int CWeeklyGuildRankInfoFind12_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, unsigned int dwGuildSerial)
+        static int CWeeklyGuildRankInfoFind12_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, unsigned int dwGuildSerial)
         {
            return CWeeklyGuildRankInfoFind12_user(_this, byRace, dwGuildSerial, CWeeklyGuildRankInfoFind12_next);
         };
-        struct CGuild* CWeeklyGuildRankInfoGetCurOwnerGuild14_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
+        static struct CGuild* CWeeklyGuildRankInfoGetCurOwnerGuild14_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
         {
            return CWeeklyGuildRankInfoGetCurOwnerGuild14_user(_this, byRace, byNth, CWeeklyGuildRankInfoGetCurOwnerGuild14_next);
         };
-        struct CGuild* CWeeklyGuildRankInfoGetOwnerGuild16_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
+        static struct CGuild* CWeeklyGuildRankInfoGetOwnerGuild16_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
         {
            return CWeeklyGuildRankInfoGetOwnerGuild16_user(_this, byRace, byNth, CWeeklyGuildRankInfoGetOwnerGuild16_next);
         };
-        struct CGuild* CWeeklyGuildRankInfoGetPrevOwnerGuild18_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
+        static struct CGuild* CWeeklyGuildRankInfoGetPrevOwnerGuild18_wrapper(struct CWeeklyGuildRankInfo* _this, char byRace, char byNth)
         {
            return CWeeklyGuildRankInfoGetPrevOwnerGuild18_user(_this, byRace, byNth, CWeeklyGuildRankInfoGetPrevOwnerGuild18_next);
         };
-        bool CWeeklyGuildRankInfoInit20_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static bool CWeeklyGuildRankInfoInit20_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            return CWeeklyGuildRankInfoInit20_user(_this, CWeeklyGuildRankInfoInit20_next);
         };
-        bool CWeeklyGuildRankInfoIsNoDataPrev22_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static bool CWeeklyGuildRankInfoIsNoDataPrev22_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            return CWeeklyGuildRankInfoIsNoDataPrev22_user(_this, CWeeklyGuildRankInfoIsNoDataPrev22_next);
         };
-        bool CWeeklyGuildRankInfoIsNoDataToday24_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static bool CWeeklyGuildRankInfoIsNoDataToday24_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            return CWeeklyGuildRankInfoIsNoDataToday24_user(_this, CWeeklyGuildRankInfoIsNoDataToday24_next);
         };
-        bool CWeeklyGuildRankInfoLoad26_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo, bool* bNoData)
+        static bool CWeeklyGuildRankInfoLoad26_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo, bool* bNoData)
         {
            return CWeeklyGuildRankInfoLoad26_user(_this, pkInfo, bNoData, CWeeklyGuildRankInfoLoad26_next);
         };
-        bool CWeeklyGuildRankInfoLoadOwner28_wrapper(struct CWeeklyGuildRankInfo* _this, struct _weeklyguildrank_owner_info* pkInfo)
+        static bool CWeeklyGuildRankInfoLoadOwner28_wrapper(struct CWeeklyGuildRankInfo* _this, struct _weeklyguildrank_owner_info* pkInfo)
         {
            return CWeeklyGuildRankInfoLoadOwner28_user(_this, pkInfo, CWeeklyGuildRankInfoLoadOwner28_next);
         };
-        bool CWeeklyGuildRankInfoLoadPrev30_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
+        static bool CWeeklyGuildRankInfoLoadPrev30_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
         {
            return CWeeklyGuildRankInfoLoadPrev30_user(_this, pkInfo, CWeeklyGuildRankInfoLoadPrev30_next);
         };
-        bool CWeeklyGuildRankInfoLoadToday32_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
+        static bool CWeeklyGuildRankInfoLoadToday32_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
         {
            return CWeeklyGuildRankInfoLoadToday32_user(_this, pkInfo, CWeeklyGuildRankInfoLoadToday32_next);
         };
-        void CWeeklyGuildRankInfoSend34_wrapper(struct CWeeklyGuildRankInfo* _this, unsigned int dwVer, int n, char byTabRace, char bySelfRace, unsigned int dwGuildSerial)
+        static void CWeeklyGuildRankInfoSend34_wrapper(struct CWeeklyGuildRankInfo* _this, unsigned int dwVer, int n, char byTabRace, char bySelfRace, unsigned int dwGuildSerial)
         {
            CWeeklyGuildRankInfoSend34_user(_this, dwVer, n, byTabRace, bySelfRace, dwGuildSerial, CWeeklyGuildRankInfoSend34_next);
         };
-        void CWeeklyGuildRankInfoSetNoDataFlagToday36_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfoSetNoDataFlagToday36_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfoSetNoDataFlagToday36_user(_this, CWeeklyGuildRankInfoSetNoDataFlagToday36_next);
         };
-        bool CWeeklyGuildRankInfoUpdate38_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
+        static bool CWeeklyGuildRankInfoUpdate38_wrapper(struct CWeeklyGuildRankInfo* _this, struct _pvppoint_guild_rank_info* pkInfo)
         {
            return CWeeklyGuildRankInfoUpdate38_user(_this, pkInfo, CWeeklyGuildRankInfoUpdate38_next);
         };
-        bool CWeeklyGuildRankInfoUpdateOwner40_wrapper(struct CWeeklyGuildRankInfo* _this, struct _weeklyguildrank_owner_info* pkInfo)
+        static bool CWeeklyGuildRankInfoUpdateOwner40_wrapper(struct CWeeklyGuildRankInfo* _this, struct _weeklyguildrank_owner_info* pkInfo)
         {
            return CWeeklyGuildRankInfoUpdateOwner40_user(_this, pkInfo, CWeeklyGuildRankInfoUpdateOwner40_next);
         };
-        void CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_wrapper(struct CWeeklyGuildRankInfo* _this)
+        static void CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_wrapper(struct CWeeklyGuildRankInfo* _this)
         {
            CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_user(_this, CWeeklyGuildRankInfodtor_CWeeklyGuildRankInfo42_next);
         };
         
-        hook_record CWeeklyGuildRankInfo_functions[] = {
+        static hook_record CWeeklyGuildRankInfo_functions[] = {
         {   (LPVOID)0x1402ca640L,
             (LPVOID *)&CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_user,
             (LPVOID *)&CWeeklyGuildRankInfoctor_CWeeklyGuildRankInfo2_next,
@@ -245,5 +245,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

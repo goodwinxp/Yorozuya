@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_param_cash_rollbackctor__param_cash_rollback2_ptr _param_cash_rollbackctor__param_cash_rollback2_next(nullptr);
-        info::_param_cash_rollbackctor__param_cash_rollback2_clbk _param_cash_rollbackctor__param_cash_rollback2_user(nullptr);
-        info::_param_cash_rollbacksize4_ptr _param_cash_rollbacksize4_next(nullptr);
-        info::_param_cash_rollbacksize4_clbk _param_cash_rollbacksize4_user(nullptr);
-        info::_param_cash_rollbackdtor__param_cash_rollback6_ptr _param_cash_rollbackdtor__param_cash_rollback6_next(nullptr);
-        info::_param_cash_rollbackdtor__param_cash_rollback6_clbk _param_cash_rollbackdtor__param_cash_rollback6_user(nullptr);
+        static info::_param_cash_rollbackctor__param_cash_rollback2_ptr _param_cash_rollbackctor__param_cash_rollback2_next(nullptr);
+        static info::_param_cash_rollbackctor__param_cash_rollback2_clbk _param_cash_rollbackctor__param_cash_rollback2_user(nullptr);
+        static info::_param_cash_rollbacksize4_ptr _param_cash_rollbacksize4_next(nullptr);
+        static info::_param_cash_rollbacksize4_clbk _param_cash_rollbacksize4_user(nullptr);
+        static info::_param_cash_rollbackdtor__param_cash_rollback6_ptr _param_cash_rollbackdtor__param_cash_rollback6_next(nullptr);
+        static info::_param_cash_rollbackdtor__param_cash_rollback6_clbk _param_cash_rollbackdtor__param_cash_rollback6_user(nullptr);
         
-        void _param_cash_rollbackctor__param_cash_rollback2_wrapper(struct _param_cash_rollback* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
+        static void _param_cash_rollbackctor__param_cash_rollback2_wrapper(struct _param_cash_rollback* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
         {
            _param_cash_rollbackctor__param_cash_rollback2_user(_this, dwAc, dwAv, wSock, _param_cash_rollbackctor__param_cash_rollback2_next);
         };
-        int _param_cash_rollbacksize4_wrapper(struct _param_cash_rollback* _this)
+        static int _param_cash_rollbacksize4_wrapper(struct _param_cash_rollback* _this)
         {
            return _param_cash_rollbacksize4_user(_this, _param_cash_rollbacksize4_next);
         };
-        void _param_cash_rollbackdtor__param_cash_rollback6_wrapper(struct _param_cash_rollback* _this)
+        static void _param_cash_rollbackdtor__param_cash_rollback6_wrapper(struct _param_cash_rollback* _this)
         {
            _param_cash_rollbackdtor__param_cash_rollback6_user(_this, _param_cash_rollbackdtor__param_cash_rollback6_next);
         };
         
-        hook_record _param_cash_rollback_functions[] = {
+        static hook_record _param_cash_rollback_functions[] = {
         {   (LPVOID)0x1402f29b0L,
             (LPVOID *)&_param_cash_rollbackctor__param_cash_rollback2_user,
             (LPVOID *)&_param_cash_rollbackctor__param_cash_rollback2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

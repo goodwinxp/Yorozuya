@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CClientDCdtor_CClientDC1_ptr CClientDCdtor_CClientDC1_next(nullptr);
-        info::CClientDCdtor_CClientDC1_clbk CClientDCdtor_CClientDC1_user(nullptr);
+        static info::CClientDCdtor_CClientDC1_ptr CClientDCdtor_CClientDC1_next(nullptr);
+        static info::CClientDCdtor_CClientDC1_clbk CClientDCdtor_CClientDC1_user(nullptr);
         
-        int64_t CClientDCdtor_CClientDC1_wrapper(struct CClientDC* _this)
+        static int64_t CClientDCdtor_CClientDC1_wrapper(struct CClientDC* _this)
         {
            return CClientDCdtor_CClientDC1_user(_this, CClientDCdtor_CClientDC1_next);
         };
         
-        hook_record CClientDC_functions[] = {
+        static hook_record CClientDC_functions[] = {
         {   (LPVOID)0x1404dc282L,
             (LPVOID *)&CClientDCdtor_CClientDC1_user,
             (LPVOID *)&CClientDCdtor_CClientDC1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

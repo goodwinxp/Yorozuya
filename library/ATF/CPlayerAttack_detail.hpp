@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPlayerAttackAttackSkill2_ptr CPlayerAttackAttackSkill2_next(nullptr);
-        info::CPlayerAttackAttackSkill2_clbk CPlayerAttackAttackSkill2_user(nullptr);
-        info::CPlayerAttackAttackUnit4_ptr CPlayerAttackAttackUnit4_next(nullptr);
-        info::CPlayerAttackAttackUnit4_clbk CPlayerAttackAttackUnit4_user(nullptr);
-        info::CPlayerAttackctor_CPlayerAttack6_ptr CPlayerAttackctor_CPlayerAttack6_next(nullptr);
-        info::CPlayerAttackctor_CPlayerAttack6_clbk CPlayerAttackctor_CPlayerAttack6_user(nullptr);
-        info::CPlayerAttackWPActiveAttackForce8_ptr CPlayerAttackWPActiveAttackForce8_next(nullptr);
-        info::CPlayerAttackWPActiveAttackForce8_clbk CPlayerAttackWPActiveAttackForce8_user(nullptr);
-        info::CPlayerAttackWPActiveAttackSkill10_ptr CPlayerAttackWPActiveAttackSkill10_next(nullptr);
-        info::CPlayerAttackWPActiveAttackSkill10_clbk CPlayerAttackWPActiveAttackSkill10_user(nullptr);
-        info::CPlayerAttack_CalcSkillAttPnt12_ptr CPlayerAttack_CalcSkillAttPnt12_next(nullptr);
-        info::CPlayerAttack_CalcSkillAttPnt12_clbk CPlayerAttack_CalcSkillAttPnt12_user(nullptr);
+        static info::CPlayerAttackAttackSkill2_ptr CPlayerAttackAttackSkill2_next(nullptr);
+        static info::CPlayerAttackAttackSkill2_clbk CPlayerAttackAttackSkill2_user(nullptr);
+        static info::CPlayerAttackAttackUnit4_ptr CPlayerAttackAttackUnit4_next(nullptr);
+        static info::CPlayerAttackAttackUnit4_clbk CPlayerAttackAttackUnit4_user(nullptr);
+        static info::CPlayerAttackctor_CPlayerAttack6_ptr CPlayerAttackctor_CPlayerAttack6_next(nullptr);
+        static info::CPlayerAttackctor_CPlayerAttack6_clbk CPlayerAttackctor_CPlayerAttack6_user(nullptr);
+        static info::CPlayerAttackWPActiveAttackForce8_ptr CPlayerAttackWPActiveAttackForce8_next(nullptr);
+        static info::CPlayerAttackWPActiveAttackForce8_clbk CPlayerAttackWPActiveAttackForce8_user(nullptr);
+        static info::CPlayerAttackWPActiveAttackSkill10_ptr CPlayerAttackWPActiveAttackSkill10_next(nullptr);
+        static info::CPlayerAttackWPActiveAttackSkill10_clbk CPlayerAttackWPActiveAttackSkill10_user(nullptr);
+        static info::CPlayerAttack_CalcSkillAttPnt12_ptr CPlayerAttack_CalcSkillAttPnt12_next(nullptr);
+        static info::CPlayerAttack_CalcSkillAttPnt12_clbk CPlayerAttack_CalcSkillAttPnt12_user(nullptr);
         
-        void CPlayerAttackAttackSkill2_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam, bool bUseEffBullet)
+        static void CPlayerAttackAttackSkill2_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam, bool bUseEffBullet)
         {
            CPlayerAttackAttackSkill2_user(_this, pParam, bUseEffBullet, CPlayerAttackAttackSkill2_next);
         };
-        void CPlayerAttackAttackUnit4_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
+        static void CPlayerAttackAttackUnit4_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
         {
            CPlayerAttackAttackUnit4_user(_this, pParam, CPlayerAttackAttackUnit4_next);
         };
-        void CPlayerAttackctor_CPlayerAttack6_wrapper(struct CPlayerAttack* _this, struct CCharacter* pThis)
+        static void CPlayerAttackctor_CPlayerAttack6_wrapper(struct CPlayerAttack* _this, struct CCharacter* pThis)
         {
            CPlayerAttackctor_CPlayerAttack6_user(_this, pThis, CPlayerAttackctor_CPlayerAttack6_next);
         };
-        void CPlayerAttackWPActiveAttackForce8_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
+        static void CPlayerAttackWPActiveAttackForce8_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
         {
            CPlayerAttackWPActiveAttackForce8_user(_this, pParam, CPlayerAttackWPActiveAttackForce8_next);
         };
-        void CPlayerAttackWPActiveAttackSkill10_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
+        static void CPlayerAttackWPActiveAttackSkill10_wrapper(struct CPlayerAttack* _this, struct _attack_param* pParam)
         {
            CPlayerAttackWPActiveAttackSkill10_user(_this, pParam, CPlayerAttackWPActiveAttackSkill10_next);
         };
-        int CPlayerAttack_CalcSkillAttPnt12_wrapper(struct CPlayerAttack* _this, bool bUseEffBullet)
+        static int CPlayerAttack_CalcSkillAttPnt12_wrapper(struct CPlayerAttack* _this, bool bUseEffBullet)
         {
            return CPlayerAttack_CalcSkillAttPnt12_user(_this, bUseEffBullet, CPlayerAttack_CalcSkillAttPnt12_next);
         };
         
-        hook_record CPlayerAttack_functions[] = {
+        static hook_record CPlayerAttack_functions[] = {
         {   (LPVOID)0x14016e140L,
             (LPVOID *)&CPlayerAttackAttackSkill2_user,
             (LPVOID *)&CPlayerAttackAttackSkill2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

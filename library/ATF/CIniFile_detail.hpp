@@ -8,147 +8,147 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CIniFilector_CIniFile2_ptr CIniFilector_CIniFile2_next(nullptr);
-        info::CIniFilector_CIniFile2_clbk CIniFilector_CIniFile2_user(nullptr);
-        info::CIniFilector_CIniFile4_ptr CIniFilector_CIniFile4_next(nullptr);
-        info::CIniFilector_CIniFile4_clbk CIniFilector_CIniFile4_user(nullptr);
-        info::CIniFileClear6_ptr CIniFileClear6_next(nullptr);
-        info::CIniFileClear6_clbk CIniFileClear6_user(nullptr);
-        info::CIniFileDeleteKey8_ptr CIniFileDeleteKey8_next(nullptr);
-        info::CIniFileDeleteKey8_clbk CIniFileDeleteKey8_user(nullptr);
-        info::CIniFileDeleteKey10_ptr CIniFileDeleteKey10_next(nullptr);
-        info::CIniFileDeleteKey10_clbk CIniFileDeleteKey10_user(nullptr);
-        info::CIniFileDeleteSection12_ptr CIniFileDeleteSection12_next(nullptr);
-        info::CIniFileDeleteSection12_clbk CIniFileDeleteSection12_user(nullptr);
-        info::CIniFileDeleteSection14_ptr CIniFileDeleteSection14_next(nullptr);
-        info::CIniFileDeleteSection14_clbk CIniFileDeleteSection14_user(nullptr);
-        info::CIniFileGetKey16_ptr CIniFileGetKey16_next(nullptr);
-        info::CIniFileGetKey16_clbk CIniFileGetKey16_user(nullptr);
-        info::CIniFileGetSection18_ptr CIniFileGetSection18_next(nullptr);
-        info::CIniFileGetSection18_clbk CIniFileGetSection18_user(nullptr);
-        info::CIniFileGetSection20_ptr CIniFileGetSection20_next(nullptr);
-        info::CIniFileGetSection20_clbk CIniFileGetSection20_user(nullptr);
-        info::CIniFileGetSectionSize22_ptr CIniFileGetSectionSize22_next(nullptr);
-        info::CIniFileGetSectionSize22_clbk CIniFileGetSectionSize22_user(nullptr);
-        info::CIniFileLoad24_ptr CIniFileLoad24_next(nullptr);
-        info::CIniFileLoad24_clbk CIniFileLoad24_user(nullptr);
-        info::CIniFileLoadKey26_ptr CIniFileLoadKey26_next(nullptr);
-        info::CIniFileLoadKey26_clbk CIniFileLoadKey26_user(nullptr);
-        info::CIniFileLoadSection28_ptr CIniFileLoadSection28_next(nullptr);
-        info::CIniFileLoadSection28_clbk CIniFileLoadSection28_user(nullptr);
-        info::CIniFileMerge_Intersection30_ptr CIniFileMerge_Intersection30_next(nullptr);
-        info::CIniFileMerge_Intersection30_clbk CIniFileMerge_Intersection30_user(nullptr);
-        info::CIniFileMerge_SumOfSets32_ptr CIniFileMerge_SumOfSets32_next(nullptr);
-        info::CIniFileMerge_SumOfSets32_clbk CIniFileMerge_SumOfSets32_user(nullptr);
-        info::CIniFileSave34_ptr CIniFileSave34_next(nullptr);
-        info::CIniFileSave34_clbk CIniFileSave34_user(nullptr);
-        info::CIniFileSaveKey36_ptr CIniFileSaveKey36_next(nullptr);
-        info::CIniFileSaveKey36_clbk CIniFileSaveKey36_user(nullptr);
-        info::CIniFileSaveSection38_ptr CIniFileSaveSection38_next(nullptr);
-        info::CIniFileSaveSection38_clbk CIniFileSaveSection38_user(nullptr);
-        info::CIniFileSetIniFilename40_ptr CIniFileSetIniFilename40_next(nullptr);
-        info::CIniFileSetIniFilename40_clbk CIniFileSetIniFilename40_user(nullptr);
-        info::CIniFileSplitKey42_ptr CIniFileSplitKey42_next(nullptr);
-        info::CIniFileSplitKey42_clbk CIniFileSplitKey42_user(nullptr);
-        info::CIniFileWriteString44_ptr CIniFileWriteString44_next(nullptr);
-        info::CIniFileWriteString44_clbk CIniFileWriteString44_user(nullptr);
-        info::CIniFiledtor_CIniFile49_ptr CIniFiledtor_CIniFile49_next(nullptr);
-        info::CIniFiledtor_CIniFile49_clbk CIniFiledtor_CIniFile49_user(nullptr);
+        static info::CIniFilector_CIniFile2_ptr CIniFilector_CIniFile2_next(nullptr);
+        static info::CIniFilector_CIniFile2_clbk CIniFilector_CIniFile2_user(nullptr);
+        static info::CIniFilector_CIniFile4_ptr CIniFilector_CIniFile4_next(nullptr);
+        static info::CIniFilector_CIniFile4_clbk CIniFilector_CIniFile4_user(nullptr);
+        static info::CIniFileClear6_ptr CIniFileClear6_next(nullptr);
+        static info::CIniFileClear6_clbk CIniFileClear6_user(nullptr);
+        static info::CIniFileDeleteKey8_ptr CIniFileDeleteKey8_next(nullptr);
+        static info::CIniFileDeleteKey8_clbk CIniFileDeleteKey8_user(nullptr);
+        static info::CIniFileDeleteKey10_ptr CIniFileDeleteKey10_next(nullptr);
+        static info::CIniFileDeleteKey10_clbk CIniFileDeleteKey10_user(nullptr);
+        static info::CIniFileDeleteSection12_ptr CIniFileDeleteSection12_next(nullptr);
+        static info::CIniFileDeleteSection12_clbk CIniFileDeleteSection12_user(nullptr);
+        static info::CIniFileDeleteSection14_ptr CIniFileDeleteSection14_next(nullptr);
+        static info::CIniFileDeleteSection14_clbk CIniFileDeleteSection14_user(nullptr);
+        static info::CIniFileGetKey16_ptr CIniFileGetKey16_next(nullptr);
+        static info::CIniFileGetKey16_clbk CIniFileGetKey16_user(nullptr);
+        static info::CIniFileGetSection18_ptr CIniFileGetSection18_next(nullptr);
+        static info::CIniFileGetSection18_clbk CIniFileGetSection18_user(nullptr);
+        static info::CIniFileGetSection20_ptr CIniFileGetSection20_next(nullptr);
+        static info::CIniFileGetSection20_clbk CIniFileGetSection20_user(nullptr);
+        static info::CIniFileGetSectionSize22_ptr CIniFileGetSectionSize22_next(nullptr);
+        static info::CIniFileGetSectionSize22_clbk CIniFileGetSectionSize22_user(nullptr);
+        static info::CIniFileLoad24_ptr CIniFileLoad24_next(nullptr);
+        static info::CIniFileLoad24_clbk CIniFileLoad24_user(nullptr);
+        static info::CIniFileLoadKey26_ptr CIniFileLoadKey26_next(nullptr);
+        static info::CIniFileLoadKey26_clbk CIniFileLoadKey26_user(nullptr);
+        static info::CIniFileLoadSection28_ptr CIniFileLoadSection28_next(nullptr);
+        static info::CIniFileLoadSection28_clbk CIniFileLoadSection28_user(nullptr);
+        static info::CIniFileMerge_Intersection30_ptr CIniFileMerge_Intersection30_next(nullptr);
+        static info::CIniFileMerge_Intersection30_clbk CIniFileMerge_Intersection30_user(nullptr);
+        static info::CIniFileMerge_SumOfSets32_ptr CIniFileMerge_SumOfSets32_next(nullptr);
+        static info::CIniFileMerge_SumOfSets32_clbk CIniFileMerge_SumOfSets32_user(nullptr);
+        static info::CIniFileSave34_ptr CIniFileSave34_next(nullptr);
+        static info::CIniFileSave34_clbk CIniFileSave34_user(nullptr);
+        static info::CIniFileSaveKey36_ptr CIniFileSaveKey36_next(nullptr);
+        static info::CIniFileSaveKey36_clbk CIniFileSaveKey36_user(nullptr);
+        static info::CIniFileSaveSection38_ptr CIniFileSaveSection38_next(nullptr);
+        static info::CIniFileSaveSection38_clbk CIniFileSaveSection38_user(nullptr);
+        static info::CIniFileSetIniFilename40_ptr CIniFileSetIniFilename40_next(nullptr);
+        static info::CIniFileSetIniFilename40_clbk CIniFileSetIniFilename40_user(nullptr);
+        static info::CIniFileSplitKey42_ptr CIniFileSplitKey42_next(nullptr);
+        static info::CIniFileSplitKey42_clbk CIniFileSplitKey42_user(nullptr);
+        static info::CIniFileWriteString44_ptr CIniFileWriteString44_next(nullptr);
+        static info::CIniFileWriteString44_clbk CIniFileWriteString44_user(nullptr);
+        static info::CIniFiledtor_CIniFile49_ptr CIniFiledtor_CIniFile49_next(nullptr);
+        static info::CIniFiledtor_CIniFile49_clbk CIniFiledtor_CIniFile49_user(nullptr);
         
-        void CIniFilector_CIniFile2_wrapper(struct CIniFile* _this, char* strPath)
+        static void CIniFilector_CIniFile2_wrapper(struct CIniFile* _this, char* strPath)
         {
            CIniFilector_CIniFile2_user(_this, strPath, CIniFilector_CIniFile2_next);
         };
-        void CIniFilector_CIniFile4_wrapper(struct CIniFile* _this)
+        static void CIniFilector_CIniFile4_wrapper(struct CIniFile* _this)
         {
            CIniFilector_CIniFile4_user(_this, CIniFilector_CIniFile4_next);
         };
-        void CIniFileClear6_wrapper(struct CIniFile* _this)
+        static void CIniFileClear6_wrapper(struct CIniFile* _this)
         {
            CIniFileClear6_user(_this, CIniFileClear6_next);
         };
-        bool CIniFileDeleteKey8_wrapper(struct CIniFile* _this, struct INI_Key* pKey)
+        static bool CIniFileDeleteKey8_wrapper(struct CIniFile* _this, struct INI_Key* pKey)
         {
            return CIniFileDeleteKey8_user(_this, pKey, CIniFileDeleteKey8_next);
         };
-        int CIniFileDeleteKey10_wrapper(struct CIniFile* _this, char* lpSection, char* lpKey)
+        static int CIniFileDeleteKey10_wrapper(struct CIniFile* _this, char* lpSection, char* lpKey)
         {
            return CIniFileDeleteKey10_user(_this, lpSection, lpKey, CIniFileDeleteKey10_next);
         };
-        bool CIniFileDeleteSection12_wrapper(struct CIniFile* _this, struct INI_Section* pSection)
+        static bool CIniFileDeleteSection12_wrapper(struct CIniFile* _this, struct INI_Section* pSection)
         {
            return CIniFileDeleteSection12_user(_this, pSection, CIniFileDeleteSection12_next);
         };
-        int CIniFileDeleteSection14_wrapper(struct CIniFile* _this, char* lpSection)
+        static int CIniFileDeleteSection14_wrapper(struct CIniFile* _this, char* lpSection)
         {
            return CIniFileDeleteSection14_user(_this, lpSection, CIniFileDeleteSection14_next);
         };
-        struct INI_Key* CIniFileGetKey16_wrapper(struct CIniFile* _this, char* strSection, char* strKey)
+        static struct INI_Key* CIniFileGetKey16_wrapper(struct CIniFile* _this, char* strSection, char* strKey)
         {
            return CIniFileGetKey16_user(_this, strSection, strKey, CIniFileGetKey16_next);
         };
-        struct INI_Section* CIniFileGetSection18_wrapper(struct CIniFile* _this, char* strSection)
+        static struct INI_Section* CIniFileGetSection18_wrapper(struct CIniFile* _this, char* strSection)
         {
            return CIniFileGetSection18_user(_this, strSection, CIniFileGetSection18_next);
         };
-        struct INI_Section* CIniFileGetSection20_wrapper(struct CIniFile* _this, unsigned int dwIndex)
+        static struct INI_Section* CIniFileGetSection20_wrapper(struct CIniFile* _this, unsigned int dwIndex)
         {
            return CIniFileGetSection20_user(_this, dwIndex, CIniFileGetSection20_next);
         };
-        unsigned int CIniFileGetSectionSize22_wrapper(struct CIniFile* _this)
+        static unsigned int CIniFileGetSectionSize22_wrapper(struct CIniFile* _this)
         {
            return CIniFileGetSectionSize22_user(_this, CIniFileGetSectionSize22_next);
         };
-        bool CIniFileLoad24_wrapper(struct CIniFile* _this)
+        static bool CIniFileLoad24_wrapper(struct CIniFile* _this)
         {
            return CIniFileLoad24_user(_this, CIniFileLoad24_next);
         };
-        struct INI_Key* CIniFileLoadKey26_wrapper(struct CIniFile* _this, char* strSection, char* strKey)
+        static struct INI_Key* CIniFileLoadKey26_wrapper(struct CIniFile* _this, char* strSection, char* strKey)
         {
            return CIniFileLoadKey26_user(_this, strSection, strKey, CIniFileLoadKey26_next);
         };
-        struct INI_Section* CIniFileLoadSection28_wrapper(struct CIniFile* _this, char* strSection)
+        static struct INI_Section* CIniFileLoadSection28_wrapper(struct CIniFile* _this, char* strSection)
         {
            return CIniFileLoadSection28_user(_this, strSection, CIniFileLoadSection28_next);
         };
-        bool CIniFileMerge_Intersection30_wrapper(struct CIniFile* _this, struct CIniFile* rhs)
+        static bool CIniFileMerge_Intersection30_wrapper(struct CIniFile* _this, struct CIniFile* rhs)
         {
            return CIniFileMerge_Intersection30_user(_this, rhs, CIniFileMerge_Intersection30_next);
         };
-        bool CIniFileMerge_SumOfSets32_wrapper(struct CIniFile* _this, struct CIniFile* rhs)
+        static bool CIniFileMerge_SumOfSets32_wrapper(struct CIniFile* _this, struct CIniFile* rhs)
         {
            return CIniFileMerge_SumOfSets32_user(_this, rhs, CIniFileMerge_SumOfSets32_next);
         };
-        void CIniFileSave34_wrapper(struct CIniFile* _this)
+        static void CIniFileSave34_wrapper(struct CIniFile* _this)
         {
            CIniFileSave34_user(_this, CIniFileSave34_next);
         };
-        bool CIniFileSaveKey36_wrapper(struct CIniFile* _this, struct INI_Key* pKey)
+        static bool CIniFileSaveKey36_wrapper(struct CIniFile* _this, struct INI_Key* pKey)
         {
            return CIniFileSaveKey36_user(_this, pKey, CIniFileSaveKey36_next);
         };
-        bool CIniFileSaveSection38_wrapper(struct CIniFile* _this, struct INI_Section* pSection)
+        static bool CIniFileSaveSection38_wrapper(struct CIniFile* _this, struct INI_Section* pSection)
         {
            return CIniFileSaveSection38_user(_this, pSection, CIniFileSaveSection38_next);
         };
-        void CIniFileSetIniFilename40_wrapper(struct CIniFile* _this, char* strPath)
+        static void CIniFileSetIniFilename40_wrapper(struct CIniFile* _this, char* strPath)
         {
            CIniFileSetIniFilename40_user(_this, strPath, CIniFileSetIniFilename40_next);
         };
-        bool CIniFileSplitKey42_wrapper(struct CIniFile* _this, char* strBase, char* strKey, int nKeyLen)
+        static bool CIniFileSplitKey42_wrapper(struct CIniFile* _this, char* strBase, char* strKey, int nKeyLen)
         {
            return CIniFileSplitKey42_user(_this, strBase, strKey, nKeyLen, CIniFileSplitKey42_next);
         };
-        bool CIniFileWriteString44_wrapper(struct CIniFile* _this, char* strSection, char* strKey, char* strValue)
+        static bool CIniFileWriteString44_wrapper(struct CIniFile* _this, char* strSection, char* strKey, char* strValue)
         {
            return CIniFileWriteString44_user(_this, strSection, strKey, strValue, CIniFileWriteString44_next);
         };
-        void CIniFiledtor_CIniFile49_wrapper(struct CIniFile* _this)
+        static void CIniFiledtor_CIniFile49_wrapper(struct CIniFile* _this)
         {
            CIniFiledtor_CIniFile49_user(_this, CIniFiledtor_CIniFile49_next);
         };
         
-        hook_record CIniFile_functions[] = {
+        static hook_record CIniFile_functions[] = {
         {   (LPVOID)0x14046c530L,
             (LPVOID *)&CIniFilector_CIniFile2_user,
             (LPVOID *)&CIniFilector_CIniFile2_next,
@@ -267,5 +267,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

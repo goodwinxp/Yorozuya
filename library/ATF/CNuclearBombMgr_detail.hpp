@@ -8,93 +8,93 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNuclearBombMgrctor_CNuclearBombMgr2_ptr CNuclearBombMgrctor_CNuclearBombMgr2_next(nullptr);
-        info::CNuclearBombMgrctor_CNuclearBombMgr2_clbk CNuclearBombMgrctor_CNuclearBombMgr2_user(nullptr);
-        info::CNuclearBombMgrCheckNuclearState4_ptr CNuclearBombMgrCheckNuclearState4_next(nullptr);
-        info::CNuclearBombMgrCheckNuclearState4_clbk CNuclearBombMgrCheckNuclearState4_user(nullptr);
-        info::CNuclearBombMgrCreateMissile6_ptr CNuclearBombMgrCreateMissile6_next(nullptr);
-        info::CNuclearBombMgrCreateMissile6_clbk CNuclearBombMgrCreateMissile6_user(nullptr);
-        info::CNuclearBombMgrDestroy8_ptr CNuclearBombMgrDestroy8_next(nullptr);
-        info::CNuclearBombMgrDestroy8_clbk CNuclearBombMgrDestroy8_user(nullptr);
-        info::CNuclearBombMgrGetBossType10_ptr CNuclearBombMgrGetBossType10_next(nullptr);
-        info::CNuclearBombMgrGetBossType10_clbk CNuclearBombMgrGetBossType10_user(nullptr);
-        info::CNuclearBombMgrInstance12_ptr CNuclearBombMgrInstance12_next(nullptr);
-        info::CNuclearBombMgrInstance12_clbk CNuclearBombMgrInstance12_user(nullptr);
-        info::CNuclearBombMgrIsPatriarch14_ptr CNuclearBombMgrIsPatriarch14_next(nullptr);
-        info::CNuclearBombMgrIsPatriarch14_clbk CNuclearBombMgrIsPatriarch14_user(nullptr);
-        info::CNuclearBombMgrLoadIni16_ptr CNuclearBombMgrLoadIni16_next(nullptr);
-        info::CNuclearBombMgrLoadIni16_clbk CNuclearBombMgrLoadIni16_user(nullptr);
-        info::CNuclearBombMgrLoop18_ptr CNuclearBombMgrLoop18_next(nullptr);
-        info::CNuclearBombMgrLoop18_clbk CNuclearBombMgrLoop18_user(nullptr);
-        info::CNuclearBombMgrMissileInit20_ptr CNuclearBombMgrMissileInit20_next(nullptr);
-        info::CNuclearBombMgrMissileInit20_clbk CNuclearBombMgrMissileInit20_user(nullptr);
-        info::CNuclearBombMgrRequest_EnableNuclearControl22_ptr CNuclearBombMgrRequest_EnableNuclearControl22_next(nullptr);
-        info::CNuclearBombMgrRequest_EnableNuclearControl22_clbk CNuclearBombMgrRequest_EnableNuclearControl22_user(nullptr);
-        info::CNuclearBombMgrRequest_SelectDropPosition24_ptr CNuclearBombMgrRequest_SelectDropPosition24_next(nullptr);
-        info::CNuclearBombMgrRequest_SelectDropPosition24_clbk CNuclearBombMgrRequest_SelectDropPosition24_user(nullptr);
-        info::CNuclearBombMgrSendMsg_Result26_ptr CNuclearBombMgrSendMsg_Result26_next(nullptr);
-        info::CNuclearBombMgrSendMsg_Result26_clbk CNuclearBombMgrSendMsg_Result26_user(nullptr);
-        info::CNuclearBombMgrdtor_CNuclearBombMgr31_ptr CNuclearBombMgrdtor_CNuclearBombMgr31_next(nullptr);
-        info::CNuclearBombMgrdtor_CNuclearBombMgr31_clbk CNuclearBombMgrdtor_CNuclearBombMgr31_user(nullptr);
+        static info::CNuclearBombMgrctor_CNuclearBombMgr2_ptr CNuclearBombMgrctor_CNuclearBombMgr2_next(nullptr);
+        static info::CNuclearBombMgrctor_CNuclearBombMgr2_clbk CNuclearBombMgrctor_CNuclearBombMgr2_user(nullptr);
+        static info::CNuclearBombMgrCheckNuclearState4_ptr CNuclearBombMgrCheckNuclearState4_next(nullptr);
+        static info::CNuclearBombMgrCheckNuclearState4_clbk CNuclearBombMgrCheckNuclearState4_user(nullptr);
+        static info::CNuclearBombMgrCreateMissile6_ptr CNuclearBombMgrCreateMissile6_next(nullptr);
+        static info::CNuclearBombMgrCreateMissile6_clbk CNuclearBombMgrCreateMissile6_user(nullptr);
+        static info::CNuclearBombMgrDestroy8_ptr CNuclearBombMgrDestroy8_next(nullptr);
+        static info::CNuclearBombMgrDestroy8_clbk CNuclearBombMgrDestroy8_user(nullptr);
+        static info::CNuclearBombMgrGetBossType10_ptr CNuclearBombMgrGetBossType10_next(nullptr);
+        static info::CNuclearBombMgrGetBossType10_clbk CNuclearBombMgrGetBossType10_user(nullptr);
+        static info::CNuclearBombMgrInstance12_ptr CNuclearBombMgrInstance12_next(nullptr);
+        static info::CNuclearBombMgrInstance12_clbk CNuclearBombMgrInstance12_user(nullptr);
+        static info::CNuclearBombMgrIsPatriarch14_ptr CNuclearBombMgrIsPatriarch14_next(nullptr);
+        static info::CNuclearBombMgrIsPatriarch14_clbk CNuclearBombMgrIsPatriarch14_user(nullptr);
+        static info::CNuclearBombMgrLoadIni16_ptr CNuclearBombMgrLoadIni16_next(nullptr);
+        static info::CNuclearBombMgrLoadIni16_clbk CNuclearBombMgrLoadIni16_user(nullptr);
+        static info::CNuclearBombMgrLoop18_ptr CNuclearBombMgrLoop18_next(nullptr);
+        static info::CNuclearBombMgrLoop18_clbk CNuclearBombMgrLoop18_user(nullptr);
+        static info::CNuclearBombMgrMissileInit20_ptr CNuclearBombMgrMissileInit20_next(nullptr);
+        static info::CNuclearBombMgrMissileInit20_clbk CNuclearBombMgrMissileInit20_user(nullptr);
+        static info::CNuclearBombMgrRequest_EnableNuclearControl22_ptr CNuclearBombMgrRequest_EnableNuclearControl22_next(nullptr);
+        static info::CNuclearBombMgrRequest_EnableNuclearControl22_clbk CNuclearBombMgrRequest_EnableNuclearControl22_user(nullptr);
+        static info::CNuclearBombMgrRequest_SelectDropPosition24_ptr CNuclearBombMgrRequest_SelectDropPosition24_next(nullptr);
+        static info::CNuclearBombMgrRequest_SelectDropPosition24_clbk CNuclearBombMgrRequest_SelectDropPosition24_user(nullptr);
+        static info::CNuclearBombMgrSendMsg_Result26_ptr CNuclearBombMgrSendMsg_Result26_next(nullptr);
+        static info::CNuclearBombMgrSendMsg_Result26_clbk CNuclearBombMgrSendMsg_Result26_user(nullptr);
+        static info::CNuclearBombMgrdtor_CNuclearBombMgr31_ptr CNuclearBombMgrdtor_CNuclearBombMgr31_next(nullptr);
+        static info::CNuclearBombMgrdtor_CNuclearBombMgr31_clbk CNuclearBombMgrdtor_CNuclearBombMgr31_user(nullptr);
         
-        void CNuclearBombMgrctor_CNuclearBombMgr2_wrapper(struct CNuclearBombMgr* _this)
+        static void CNuclearBombMgrctor_CNuclearBombMgr2_wrapper(struct CNuclearBombMgr* _this)
         {
            CNuclearBombMgrctor_CNuclearBombMgr2_user(_this, CNuclearBombMgrctor_CNuclearBombMgr2_next);
         };
-        void CNuclearBombMgrCheckNuclearState4_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pOne)
+        static void CNuclearBombMgrCheckNuclearState4_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pOne)
         {
            CNuclearBombMgrCheckNuclearState4_user(_this, pOne, CNuclearBombMgrCheckNuclearState4_next);
         };
-        bool CNuclearBombMgrCreateMissile6_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pMaster, float* fPos, unsigned int WarnTime, unsigned int InformTime, unsigned int StartTime)
+        static bool CNuclearBombMgrCreateMissile6_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pMaster, float* fPos, unsigned int WarnTime, unsigned int InformTime, unsigned int StartTime)
         {
            return CNuclearBombMgrCreateMissile6_user(_this, pMaster, fPos, WarnTime, InformTime, StartTime, CNuclearBombMgrCreateMissile6_next);
         };
-        void CNuclearBombMgrDestroy8_wrapper(struct CNuclearBombMgr* _this)
+        static void CNuclearBombMgrDestroy8_wrapper(struct CNuclearBombMgr* _this)
         {
            CNuclearBombMgrDestroy8_user(_this, CNuclearBombMgrDestroy8_next);
         };
-        char CNuclearBombMgrGetBossType10_wrapper(struct CNuclearBombMgr* _this, char byRace, unsigned int dwSerial)
+        static char CNuclearBombMgrGetBossType10_wrapper(struct CNuclearBombMgr* _this, char byRace, unsigned int dwSerial)
         {
            return CNuclearBombMgrGetBossType10_user(_this, byRace, dwSerial, CNuclearBombMgrGetBossType10_next);
         };
-        struct CNuclearBombMgr* CNuclearBombMgrInstance12_wrapper()
+        static struct CNuclearBombMgr* CNuclearBombMgrInstance12_wrapper()
         {
            return CNuclearBombMgrInstance12_user(CNuclearBombMgrInstance12_next);
         };
-        bool CNuclearBombMgrIsPatriarch14_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pOne)
+        static bool CNuclearBombMgrIsPatriarch14_wrapper(struct CNuclearBombMgr* _this, struct CPlayer* pOne)
         {
            return CNuclearBombMgrIsPatriarch14_user(_this, pOne, CNuclearBombMgrIsPatriarch14_next);
         };
-        bool CNuclearBombMgrLoadIni16_wrapper(struct CNuclearBombMgr* _this)
+        static bool CNuclearBombMgrLoadIni16_wrapper(struct CNuclearBombMgr* _this)
         {
            return CNuclearBombMgrLoadIni16_user(_this, CNuclearBombMgrLoadIni16_next);
         };
-        void CNuclearBombMgrLoop18_wrapper(struct CNuclearBombMgr* _this)
+        static void CNuclearBombMgrLoop18_wrapper(struct CNuclearBombMgr* _this)
         {
            CNuclearBombMgrLoop18_user(_this, CNuclearBombMgrLoop18_next);
         };
-        bool CNuclearBombMgrMissileInit20_wrapper(struct CNuclearBombMgr* _this)
+        static bool CNuclearBombMgrMissileInit20_wrapper(struct CNuclearBombMgr* _this)
         {
            return CNuclearBombMgrMissileInit20_user(_this, CNuclearBombMgrMissileInit20_next);
         };
-        bool CNuclearBombMgrRequest_EnableNuclearControl22_wrapper(struct CNuclearBombMgr* _this, int n, char* pMsg)
+        static bool CNuclearBombMgrRequest_EnableNuclearControl22_wrapper(struct CNuclearBombMgr* _this, int n, char* pMsg)
         {
            return CNuclearBombMgrRequest_EnableNuclearControl22_user(_this, n, pMsg, CNuclearBombMgrRequest_EnableNuclearControl22_next);
         };
-        bool CNuclearBombMgrRequest_SelectDropPosition24_wrapper(struct CNuclearBombMgr* _this, int n, char* pMsg)
+        static bool CNuclearBombMgrRequest_SelectDropPosition24_wrapper(struct CNuclearBombMgr* _this, int n, char* pMsg)
         {
            return CNuclearBombMgrRequest_SelectDropPosition24_user(_this, n, pMsg, CNuclearBombMgrRequest_SelectDropPosition24_next);
         };
-        void CNuclearBombMgrSendMsg_Result26_wrapper(struct CNuclearBombMgr* _this, int n, char byCode)
+        static void CNuclearBombMgrSendMsg_Result26_wrapper(struct CNuclearBombMgr* _this, int n, char byCode)
         {
            CNuclearBombMgrSendMsg_Result26_user(_this, n, byCode, CNuclearBombMgrSendMsg_Result26_next);
         };
-        void CNuclearBombMgrdtor_CNuclearBombMgr31_wrapper(struct CNuclearBombMgr* _this)
+        static void CNuclearBombMgrdtor_CNuclearBombMgr31_wrapper(struct CNuclearBombMgr* _this)
         {
            CNuclearBombMgrdtor_CNuclearBombMgr31_user(_this, CNuclearBombMgrdtor_CNuclearBombMgr31_next);
         };
         
-        hook_record CNuclearBombMgr_functions[] = {
+        static hook_record CNuclearBombMgr_functions[] = {
         {   (LPVOID)0x14013a2b0L,
             (LPVOID *)&CNuclearBombMgrctor_CNuclearBombMgr2_user,
             (LPVOID *)&CNuclearBombMgrctor_CNuclearBombMgr2_next,
@@ -168,5 +168,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

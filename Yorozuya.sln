@@ -7,22 +7,37 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Yorozuya", "Yorozuya\Yorozu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YorozuyaGS", "YorozuyaGS\YorozuyaGS.vcxproj", "{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameServer", "GameServer", "{750435D7-0A39-4031-A76B-E48C2024A000}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Debug|x64.ActiveCfg = Debug|x64
 		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Debug|x64.Build.0 = Debug|x64
+		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Debug|x86.Build.0 = Debug|Win32
 		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Release|x64.ActiveCfg = Release|x64
 		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Release|x64.Build.0 = Release|x64
+		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Release|x86.ActiveCfg = Release|Win32
+		{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}.Release|x86.Build.0 = Release|Win32
 		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Debug|x64.ActiveCfg = Debug|x64
 		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Debug|x64.Build.0 = Debug|x64
+		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Debug|x86.Build.0 = Debug|Win32
 		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Release|x64.ActiveCfg = Release|x64
 		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Release|x64.Build.0 = Release|x64
+		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Release|x86.ActiveCfg = Release|Win32
+		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4} = {750435D7-0A39-4031-A76B-E48C2024A000}
 	EndGlobalSection
 EndGlobal

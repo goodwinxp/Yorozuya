@@ -8,41 +8,41 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_dh_player_mgrInit2_ptr _dh_player_mgrInit2_next(nullptr);
-        info::_dh_player_mgrInit2_clbk _dh_player_mgrInit2_user(nullptr);
-        info::_dh_player_mgrIsFill4_ptr _dh_player_mgrIsFill4_next(nullptr);
-        info::_dh_player_mgrIsFill4_clbk _dh_player_mgrIsFill4_user(nullptr);
-        info::_dh_player_mgrctor__dh_player_mgr6_ptr _dh_player_mgrctor__dh_player_mgr6_next(nullptr);
-        info::_dh_player_mgrctor__dh_player_mgr6_clbk _dh_player_mgrctor__dh_player_mgr6_user(nullptr);
+        static info::_dh_player_mgrInit2_ptr _dh_player_mgrInit2_next(nullptr);
+        static info::_dh_player_mgrInit2_clbk _dh_player_mgrInit2_user(nullptr);
+        static info::_dh_player_mgrIsFill4_ptr _dh_player_mgrIsFill4_next(nullptr);
+        static info::_dh_player_mgrIsFill4_clbk _dh_player_mgrIsFill4_user(nullptr);
+        static info::_dh_player_mgrctor__dh_player_mgr6_ptr _dh_player_mgrctor__dh_player_mgr6_next(nullptr);
+        static info::_dh_player_mgrctor__dh_player_mgr6_clbk _dh_player_mgrctor__dh_player_mgr6_user(nullptr);
         
-        info::_dh_player_mgr___posinit2_ptr _dh_player_mgr___posinit2_next(nullptr);
-        info::_dh_player_mgr___posinit2_clbk _dh_player_mgr___posinit2_user(nullptr);
-        info::_dh_player_mgr___posset4_ptr _dh_player_mgr___posset4_next(nullptr);
-        info::_dh_player_mgr___posset4_clbk _dh_player_mgr___posset4_user(nullptr);
+        static info::_dh_player_mgr___posinit2_ptr _dh_player_mgr___posinit2_next(nullptr);
+        static info::_dh_player_mgr___posinit2_clbk _dh_player_mgr___posinit2_user(nullptr);
+        static info::_dh_player_mgr___posset4_ptr _dh_player_mgr___posset4_next(nullptr);
+        static info::_dh_player_mgr___posset4_clbk _dh_player_mgr___posset4_user(nullptr);
         
-        void _dh_player_mgrInit2_wrapper(struct _dh_player_mgr* _this)
+        static void _dh_player_mgrInit2_wrapper(struct _dh_player_mgr* _this)
         {
            _dh_player_mgrInit2_user(_this, _dh_player_mgrInit2_next);
         };
-        bool _dh_player_mgrIsFill4_wrapper(struct _dh_player_mgr* _this)
+        static bool _dh_player_mgrIsFill4_wrapper(struct _dh_player_mgr* _this)
         {
            return _dh_player_mgrIsFill4_user(_this, _dh_player_mgrIsFill4_next);
         };
-        void _dh_player_mgrctor__dh_player_mgr6_wrapper(struct _dh_player_mgr* _this)
+        static void _dh_player_mgrctor__dh_player_mgr6_wrapper(struct _dh_player_mgr* _this)
         {
            _dh_player_mgrctor__dh_player_mgr6_user(_this, _dh_player_mgrctor__dh_player_mgr6_next);
         };
         
-        void _dh_player_mgr___posinit2_wrapper(struct _dh_player_mgr::_pos* _this)
+        static void _dh_player_mgr___posinit2_wrapper(struct _dh_player_mgr::_pos* _this)
         {
            _dh_player_mgr___posinit2_user(_this, _dh_player_mgr___posinit2_next);
         };
-        void _dh_player_mgr___posset4_wrapper(struct _dh_player_mgr::_pos* _this, struct CMapData* map, uint16_t layer, float* pos)
+        static void _dh_player_mgr___posset4_wrapper(struct _dh_player_mgr::_pos* _this, struct CMapData* map, uint16_t layer, float* pos)
         {
            _dh_player_mgr___posset4_user(_this, map, layer, pos, _dh_player_mgr___posset4_next);
         };
         
-        hook_record _dh_player_mgr_functions[] = {
+        static hook_record _dh_player_mgr_functions[] = {
         {   (LPVOID)0x14026eae0L,
             (LPVOID *)&_dh_player_mgrInit2_user,
             (LPVOID *)&_dh_player_mgrInit2_next,
@@ -72,5 +72,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

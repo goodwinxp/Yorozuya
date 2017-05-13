@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_POSTSTORAGE_DB_BASEInit2_ptr _POSTSTORAGE_DB_BASEInit2_next(nullptr);
-        info::_POSTSTORAGE_DB_BASEInit2_clbk _POSTSTORAGE_DB_BASEInit2_user(nullptr);
-        info::_POSTSTORAGE_DB_BASEUpdateInit4_ptr _POSTSTORAGE_DB_BASEUpdateInit4_next(nullptr);
-        info::_POSTSTORAGE_DB_BASEUpdateInit4_clbk _POSTSTORAGE_DB_BASEUpdateInit4_user(nullptr);
-        info::_POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_ptr _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_next(nullptr);
-        info::_POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_clbk _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_user(nullptr);
+        static info::_POSTSTORAGE_DB_BASEInit2_ptr _POSTSTORAGE_DB_BASEInit2_next(nullptr);
+        static info::_POSTSTORAGE_DB_BASEInit2_clbk _POSTSTORAGE_DB_BASEInit2_user(nullptr);
+        static info::_POSTSTORAGE_DB_BASEUpdateInit4_ptr _POSTSTORAGE_DB_BASEUpdateInit4_next(nullptr);
+        static info::_POSTSTORAGE_DB_BASEUpdateInit4_clbk _POSTSTORAGE_DB_BASEUpdateInit4_user(nullptr);
+        static info::_POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_ptr _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_next(nullptr);
+        static info::_POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_clbk _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_user(nullptr);
         
-        void _POSTSTORAGE_DB_BASEInit2_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
+        static void _POSTSTORAGE_DB_BASEInit2_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
         {
            _POSTSTORAGE_DB_BASEInit2_user(_this, _POSTSTORAGE_DB_BASEInit2_next);
         };
-        void _POSTSTORAGE_DB_BASEUpdateInit4_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
+        static void _POSTSTORAGE_DB_BASEUpdateInit4_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
         {
            _POSTSTORAGE_DB_BASEUpdateInit4_user(_this, _POSTSTORAGE_DB_BASEUpdateInit4_next);
         };
-        void _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
+        static void _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_wrapper(struct _POSTSTORAGE_DB_BASE* _this)
         {
            _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_user(_this, _POSTSTORAGE_DB_BASEctor__POSTSTORAGE_DB_BASE6_next);
         };
         
-        hook_record _POSTSTORAGE_DB_BASE_functions[] = {
+        static hook_record _POSTSTORAGE_DB_BASE_functions[] = {
         {   (LPVOID)0x140077470L,
             (LPVOID *)&_POSTSTORAGE_DB_BASEInit2_user,
             (LPVOID *)&_POSTSTORAGE_DB_BASEInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

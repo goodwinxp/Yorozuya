@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CEngNetworkBillEXArrangeString2_ptr CEngNetworkBillEXArrangeString2_next(nullptr);
-        info::CEngNetworkBillEXArrangeString2_clbk CEngNetworkBillEXArrangeString2_user(nullptr);
-        info::CEngNetworkBillEXctor_CEngNetworkBillEX4_ptr CEngNetworkBillEXctor_CEngNetworkBillEX4_next(nullptr);
-        info::CEngNetworkBillEXctor_CEngNetworkBillEX4_clbk CEngNetworkBillEXctor_CEngNetworkBillEX4_user(nullptr);
-        info::CEngNetworkBillEXCalcStreamSize6_ptr CEngNetworkBillEXCalcStreamSize6_next(nullptr);
-        info::CEngNetworkBillEXCalcStreamSize6_clbk CEngNetworkBillEXCalcStreamSize6_user(nullptr);
-        info::CEngNetworkBillEXConnectToNcash8_ptr CEngNetworkBillEXConnectToNcash8_next(nullptr);
-        info::CEngNetworkBillEXConnectToNcash8_clbk CEngNetworkBillEXConnectToNcash8_user(nullptr);
-        info::CEngNetworkBillEXFreeVectorData10_ptr CEngNetworkBillEXFreeVectorData10_next(nullptr);
-        info::CEngNetworkBillEXFreeVectorData10_clbk CEngNetworkBillEXFreeVectorData10_user(nullptr);
-        info::CEngNetworkBillEXInitialize12_ptr CEngNetworkBillEXInitialize12_next(nullptr);
-        info::CEngNetworkBillEXInitialize12_clbk CEngNetworkBillEXInitialize12_user(nullptr);
-        info::CEngNetworkBillEXIsGetConnected14_ptr CEngNetworkBillEXIsGetConnected14_next(nullptr);
-        info::CEngNetworkBillEXIsGetConnected14_clbk CEngNetworkBillEXIsGetConnected14_user(nullptr);
-        info::CEngNetworkBillEXLoadINIFile16_ptr CEngNetworkBillEXLoadINIFile16_next(nullptr);
-        info::CEngNetworkBillEXLoadINIFile16_clbk CEngNetworkBillEXLoadINIFile16_user(nullptr);
-        info::CEngNetworkBillEXParsingBuyItem18_ptr CEngNetworkBillEXParsingBuyItem18_next(nullptr);
-        info::CEngNetworkBillEXParsingBuyItem18_clbk CEngNetworkBillEXParsingBuyItem18_user(nullptr);
-        info::CEngNetworkBillEXParsingRemainCash20_ptr CEngNetworkBillEXParsingRemainCash20_next(nullptr);
-        info::CEngNetworkBillEXParsingRemainCash20_clbk CEngNetworkBillEXParsingRemainCash20_user(nullptr);
-        info::CEngNetworkBillEXParsingSeqNumber22_ptr CEngNetworkBillEXParsingSeqNumber22_next(nullptr);
-        info::CEngNetworkBillEXParsingSeqNumber22_clbk CEngNetworkBillEXParsingSeqNumber22_user(nullptr);
-        info::CEngNetworkBillEXReInitialize24_ptr CEngNetworkBillEXReInitialize24_next(nullptr);
-        info::CEngNetworkBillEXReInitialize24_clbk CEngNetworkBillEXReInitialize24_user(nullptr);
-        info::CEngNetworkBillEXSend26_ptr CEngNetworkBillEXSend26_next(nullptr);
-        info::CEngNetworkBillEXSend26_clbk CEngNetworkBillEXSend26_user(nullptr);
-        info::CEngNetworkBillEXdhExtractSubString31_ptr CEngNetworkBillEXdhExtractSubString31_next(nullptr);
-        info::CEngNetworkBillEXdhExtractSubString31_clbk CEngNetworkBillEXdhExtractSubString31_user(nullptr);
-        info::CEngNetworkBillEXdhRExtractSubString33_ptr CEngNetworkBillEXdhRExtractSubString33_next(nullptr);
-        info::CEngNetworkBillEXdhRExtractSubString33_clbk CEngNetworkBillEXdhRExtractSubString33_user(nullptr);
-        info::CEngNetworkBillEXs_DataAnalysis35_ptr CEngNetworkBillEXs_DataAnalysis35_next(nullptr);
-        info::CEngNetworkBillEXs_DataAnalysis35_clbk CEngNetworkBillEXs_DataAnalysis35_user(nullptr);
-        info::CEngNetworkBillEXdtor_CEngNetworkBillEX37_ptr CEngNetworkBillEXdtor_CEngNetworkBillEX37_next(nullptr);
-        info::CEngNetworkBillEXdtor_CEngNetworkBillEX37_clbk CEngNetworkBillEXdtor_CEngNetworkBillEX37_user(nullptr);
+        static info::CEngNetworkBillEXArrangeString2_ptr CEngNetworkBillEXArrangeString2_next(nullptr);
+        static info::CEngNetworkBillEXArrangeString2_clbk CEngNetworkBillEXArrangeString2_user(nullptr);
+        static info::CEngNetworkBillEXctor_CEngNetworkBillEX4_ptr CEngNetworkBillEXctor_CEngNetworkBillEX4_next(nullptr);
+        static info::CEngNetworkBillEXctor_CEngNetworkBillEX4_clbk CEngNetworkBillEXctor_CEngNetworkBillEX4_user(nullptr);
+        static info::CEngNetworkBillEXCalcStreamSize6_ptr CEngNetworkBillEXCalcStreamSize6_next(nullptr);
+        static info::CEngNetworkBillEXCalcStreamSize6_clbk CEngNetworkBillEXCalcStreamSize6_user(nullptr);
+        static info::CEngNetworkBillEXConnectToNcash8_ptr CEngNetworkBillEXConnectToNcash8_next(nullptr);
+        static info::CEngNetworkBillEXConnectToNcash8_clbk CEngNetworkBillEXConnectToNcash8_user(nullptr);
+        static info::CEngNetworkBillEXFreeVectorData10_ptr CEngNetworkBillEXFreeVectorData10_next(nullptr);
+        static info::CEngNetworkBillEXFreeVectorData10_clbk CEngNetworkBillEXFreeVectorData10_user(nullptr);
+        static info::CEngNetworkBillEXInitialize12_ptr CEngNetworkBillEXInitialize12_next(nullptr);
+        static info::CEngNetworkBillEXInitialize12_clbk CEngNetworkBillEXInitialize12_user(nullptr);
+        static info::CEngNetworkBillEXIsGetConnected14_ptr CEngNetworkBillEXIsGetConnected14_next(nullptr);
+        static info::CEngNetworkBillEXIsGetConnected14_clbk CEngNetworkBillEXIsGetConnected14_user(nullptr);
+        static info::CEngNetworkBillEXLoadINIFile16_ptr CEngNetworkBillEXLoadINIFile16_next(nullptr);
+        static info::CEngNetworkBillEXLoadINIFile16_clbk CEngNetworkBillEXLoadINIFile16_user(nullptr);
+        static info::CEngNetworkBillEXParsingBuyItem18_ptr CEngNetworkBillEXParsingBuyItem18_next(nullptr);
+        static info::CEngNetworkBillEXParsingBuyItem18_clbk CEngNetworkBillEXParsingBuyItem18_user(nullptr);
+        static info::CEngNetworkBillEXParsingRemainCash20_ptr CEngNetworkBillEXParsingRemainCash20_next(nullptr);
+        static info::CEngNetworkBillEXParsingRemainCash20_clbk CEngNetworkBillEXParsingRemainCash20_user(nullptr);
+        static info::CEngNetworkBillEXParsingSeqNumber22_ptr CEngNetworkBillEXParsingSeqNumber22_next(nullptr);
+        static info::CEngNetworkBillEXParsingSeqNumber22_clbk CEngNetworkBillEXParsingSeqNumber22_user(nullptr);
+        static info::CEngNetworkBillEXReInitialize24_ptr CEngNetworkBillEXReInitialize24_next(nullptr);
+        static info::CEngNetworkBillEXReInitialize24_clbk CEngNetworkBillEXReInitialize24_user(nullptr);
+        static info::CEngNetworkBillEXSend26_ptr CEngNetworkBillEXSend26_next(nullptr);
+        static info::CEngNetworkBillEXSend26_clbk CEngNetworkBillEXSend26_user(nullptr);
+        static info::CEngNetworkBillEXdhExtractSubString31_ptr CEngNetworkBillEXdhExtractSubString31_next(nullptr);
+        static info::CEngNetworkBillEXdhExtractSubString31_clbk CEngNetworkBillEXdhExtractSubString31_user(nullptr);
+        static info::CEngNetworkBillEXdhRExtractSubString33_ptr CEngNetworkBillEXdhRExtractSubString33_next(nullptr);
+        static info::CEngNetworkBillEXdhRExtractSubString33_clbk CEngNetworkBillEXdhRExtractSubString33_user(nullptr);
+        static info::CEngNetworkBillEXs_DataAnalysis35_ptr CEngNetworkBillEXs_DataAnalysis35_next(nullptr);
+        static info::CEngNetworkBillEXs_DataAnalysis35_clbk CEngNetworkBillEXs_DataAnalysis35_user(nullptr);
+        static info::CEngNetworkBillEXdtor_CEngNetworkBillEX37_ptr CEngNetworkBillEXdtor_CEngNetworkBillEX37_next(nullptr);
+        static info::CEngNetworkBillEXdtor_CEngNetworkBillEX37_clbk CEngNetworkBillEXdtor_CEngNetworkBillEX37_user(nullptr);
         
-        void CEngNetworkBillEXArrangeString2_wrapper(struct CEngNetworkBillEX* _this, char* szDest, char* szSorc, char cToken)
+        static void CEngNetworkBillEXArrangeString2_wrapper(struct CEngNetworkBillEX* _this, char* szDest, char* szSorc, char cToken)
         {
            CEngNetworkBillEXArrangeString2_user(_this, szDest, szSorc, cToken, CEngNetworkBillEXArrangeString2_next);
         };
-        void CEngNetworkBillEXctor_CEngNetworkBillEX4_wrapper(struct CEngNetworkBillEX* _this)
+        static void CEngNetworkBillEXctor_CEngNetworkBillEX4_wrapper(struct CEngNetworkBillEX* _this)
         {
            CEngNetworkBillEXctor_CEngNetworkBillEX4_user(_this, CEngNetworkBillEXctor_CEngNetworkBillEX4_next);
         };
-        uint16_t CEngNetworkBillEXCalcStreamSize6_wrapper(struct CEngNetworkBillEX* _this, char* pRecvData)
+        static uint16_t CEngNetworkBillEXCalcStreamSize6_wrapper(struct CEngNetworkBillEX* _this, char* pRecvData)
         {
            return CEngNetworkBillEXCalcStreamSize6_user(_this, pRecvData, CEngNetworkBillEXCalcStreamSize6_next);
         };
-        int CEngNetworkBillEXConnectToNcash8_wrapper(struct CEngNetworkBillEX* _this)
+        static int CEngNetworkBillEXConnectToNcash8_wrapper(struct CEngNetworkBillEX* _this)
         {
            return CEngNetworkBillEXConnectToNcash8_user(_this, CEngNetworkBillEXConnectToNcash8_next);
         };
-        bool CEngNetworkBillEXFreeVectorData10_wrapper(struct CEngNetworkBillEX* _this, unsigned int dwSeq)
+        static bool CEngNetworkBillEXFreeVectorData10_wrapper(struct CEngNetworkBillEX* _this, unsigned int dwSeq)
         {
            return CEngNetworkBillEXFreeVectorData10_user(_this, dwSeq, CEngNetworkBillEXFreeVectorData10_next);
         };
-        bool CEngNetworkBillEXInitialize12_wrapper(struct CEngNetworkBillEX* _this)
+        static bool CEngNetworkBillEXInitialize12_wrapper(struct CEngNetworkBillEX* _this)
         {
            return CEngNetworkBillEXInitialize12_user(_this, CEngNetworkBillEXInitialize12_next);
         };
-        bool CEngNetworkBillEXIsGetConnected14_wrapper(struct CEngNetworkBillEX* _this)
+        static bool CEngNetworkBillEXIsGetConnected14_wrapper(struct CEngNetworkBillEX* _this)
         {
            return CEngNetworkBillEXIsGetConnected14_user(_this, CEngNetworkBillEXIsGetConnected14_next);
         };
-        int CEngNetworkBillEXLoadINIFile16_wrapper(struct CEngNetworkBillEX* _this)
+        static int CEngNetworkBillEXLoadINIFile16_wrapper(struct CEngNetworkBillEX* _this)
         {
            return CEngNetworkBillEXLoadINIFile16_user(_this, CEngNetworkBillEXLoadINIFile16_next);
         };
-        void CEngNetworkBillEXParsingBuyItem18_wrapper(struct CEngNetworkBillEX* _this, struct Request_Buy_Item* data, char* pRecvData)
+        static void CEngNetworkBillEXParsingBuyItem18_wrapper(struct CEngNetworkBillEX* _this, struct Request_Buy_Item* data, char* pRecvData)
         {
            CEngNetworkBillEXParsingBuyItem18_user(_this, data, pRecvData, CEngNetworkBillEXParsingBuyItem18_next);
         };
-        void CEngNetworkBillEXParsingRemainCash20_wrapper(struct CEngNetworkBillEX* _this, struct Request_Remain_Cash* data, char* pRecvData)
+        static void CEngNetworkBillEXParsingRemainCash20_wrapper(struct CEngNetworkBillEX* _this, struct Request_Remain_Cash* data, char* pRecvData)
         {
            CEngNetworkBillEXParsingRemainCash20_user(_this, data, pRecvData, CEngNetworkBillEXParsingRemainCash20_next);
         };
-        unsigned int CEngNetworkBillEXParsingSeqNumber22_wrapper(struct CEngNetworkBillEX* _this, char* pRecvData)
+        static unsigned int CEngNetworkBillEXParsingSeqNumber22_wrapper(struct CEngNetworkBillEX* _this, char* pRecvData)
         {
            return CEngNetworkBillEXParsingSeqNumber22_user(_this, pRecvData, CEngNetworkBillEXParsingSeqNumber22_next);
         };
-        bool CEngNetworkBillEXReInitialize24_wrapper(struct CEngNetworkBillEX* _this)
+        static bool CEngNetworkBillEXReInitialize24_wrapper(struct CEngNetworkBillEX* _this)
         {
            return CEngNetworkBillEXReInitialize24_user(_this, CEngNetworkBillEXReInitialize24_next);
         };
-        int CEngNetworkBillEXSend26_wrapper(struct CEngNetworkBillEX* _this, char* pbyType, char* szMsg, uint16_t nLen)
+        static int CEngNetworkBillEXSend26_wrapper(struct CEngNetworkBillEX* _this, char* pbyType, char* szMsg, uint16_t nLen)
         {
            return CEngNetworkBillEXSend26_user(_this, pbyType, szMsg, nLen, CEngNetworkBillEXSend26_next);
         };
-        char* CEngNetworkBillEXdhExtractSubString31_wrapper(struct CEngNetworkBillEX* _this, char* szSub, char* szFull, char cToken)
+        static char* CEngNetworkBillEXdhExtractSubString31_wrapper(struct CEngNetworkBillEX* _this, char* szSub, char* szFull, char cToken)
         {
            return CEngNetworkBillEXdhExtractSubString31_user(_this, szSub, szFull, cToken, CEngNetworkBillEXdhExtractSubString31_next);
         };
-        void CEngNetworkBillEXdhRExtractSubString33_wrapper(struct CEngNetworkBillEX* _this, char* szSub, char* szFull, char cToken)
+        static void CEngNetworkBillEXdhRExtractSubString33_wrapper(struct CEngNetworkBillEX* _this, char* szSub, char* szFull, char cToken)
         {
            CEngNetworkBillEXdhRExtractSubString33_user(_this, szSub, szFull, cToken, CEngNetworkBillEXdhRExtractSubString33_next);
         };
-        bool CEngNetworkBillEXs_DataAnalysis35_wrapper(unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
+        static bool CEngNetworkBillEXs_DataAnalysis35_wrapper(unsigned int dwProID, unsigned int dwClientIndex, struct _MSG_HEADER* pMsgHeader, char* pMsg)
         {
            return CEngNetworkBillEXs_DataAnalysis35_user(dwProID, dwClientIndex, pMsgHeader, pMsg, CEngNetworkBillEXs_DataAnalysis35_next);
         };
-        void CEngNetworkBillEXdtor_CEngNetworkBillEX37_wrapper(struct CEngNetworkBillEX* _this)
+        static void CEngNetworkBillEXdtor_CEngNetworkBillEX37_wrapper(struct CEngNetworkBillEX* _this)
         {
            CEngNetworkBillEXdtor_CEngNetworkBillEX37_user(_this, CEngNetworkBillEXdtor_CEngNetworkBillEX37_next);
         };
         
-        hook_record CEngNetworkBillEX_functions[] = {
+        static hook_record CEngNetworkBillEX_functions[] = {
         {   (LPVOID)0x14031cbe0L,
             (LPVOID *)&CEngNetworkBillEXArrangeString2_user,
             (LPVOID *)&CEngNetworkBillEXArrangeString2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

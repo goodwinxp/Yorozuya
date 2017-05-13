@@ -8,279 +8,279 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuardTowerAttack2_ptr CGuardTowerAttack2_next(nullptr);
-        info::CGuardTowerAttack2_clbk CGuardTowerAttack2_user(nullptr);
-        info::CGuardTowerAttackableHeight4_ptr CGuardTowerAttackableHeight4_next(nullptr);
-        info::CGuardTowerAttackableHeight4_clbk CGuardTowerAttackableHeight4_user(nullptr);
-        info::CGuardTowerctor_CGuardTower6_ptr CGuardTowerctor_CGuardTower6_next(nullptr);
-        info::CGuardTowerctor_CGuardTower6_clbk CGuardTowerctor_CGuardTower6_user(nullptr);
-        info::CGuardTowerCreate8_ptr CGuardTowerCreate8_next(nullptr);
-        info::CGuardTowerCreate8_clbk CGuardTowerCreate8_user(nullptr);
-        info::CGuardTowerDestroy10_ptr CGuardTowerDestroy10_next(nullptr);
-        info::CGuardTowerDestroy10_clbk CGuardTowerDestroy10_user(nullptr);
-        info::CGuardTowerGetAttackDP12_ptr CGuardTowerGetAttackDP12_next(nullptr);
-        info::CGuardTowerGetAttackDP12_clbk CGuardTowerGetAttackDP12_user(nullptr);
-        info::CGuardTowerGetAttackRange14_ptr CGuardTowerGetAttackRange14_next(nullptr);
-        info::CGuardTowerGetAttackRange14_clbk CGuardTowerGetAttackRange14_user(nullptr);
-        info::CGuardTowerGetDefFC16_ptr CGuardTowerGetDefFC16_next(nullptr);
-        info::CGuardTowerGetDefFC16_clbk CGuardTowerGetDefFC16_user(nullptr);
-        info::CGuardTowerGetDefFacing18_ptr CGuardTowerGetDefFacing18_next(nullptr);
-        info::CGuardTowerGetDefFacing18_clbk CGuardTowerGetDefFacing18_user(nullptr);
-        info::CGuardTowerGetDefGap20_ptr CGuardTowerGetDefGap20_next(nullptr);
-        info::CGuardTowerGetDefGap20_clbk CGuardTowerGetDefGap20_user(nullptr);
-        info::CGuardTowerGetDefSkill22_ptr CGuardTowerGetDefSkill22_next(nullptr);
-        info::CGuardTowerGetDefSkill22_clbk CGuardTowerGetDefSkill22_user(nullptr);
-        info::CGuardTowerGetFireTol24_ptr CGuardTowerGetFireTol24_next(nullptr);
-        info::CGuardTowerGetFireTol24_clbk CGuardTowerGetFireTol24_user(nullptr);
-        info::CGuardTowerGetGenAttackProb26_ptr CGuardTowerGetGenAttackProb26_next(nullptr);
-        info::CGuardTowerGetGenAttackProb26_clbk CGuardTowerGetGenAttackProb26_user(nullptr);
-        info::CGuardTowerGetHP28_ptr CGuardTowerGetHP28_next(nullptr);
-        info::CGuardTowerGetHP28_clbk CGuardTowerGetHP28_user(nullptr);
-        info::CGuardTowerGetLevel30_ptr CGuardTowerGetLevel30_next(nullptr);
-        info::CGuardTowerGetLevel30_clbk CGuardTowerGetLevel30_user(nullptr);
-        info::CGuardTowerGetMaxHP32_ptr CGuardTowerGetMaxHP32_next(nullptr);
-        info::CGuardTowerGetMaxHP32_clbk CGuardTowerGetMaxHP32_user(nullptr);
-        info::CGuardTowerGetNewSerial34_ptr CGuardTowerGetNewSerial34_next(nullptr);
-        info::CGuardTowerGetNewSerial34_clbk CGuardTowerGetNewSerial34_user(nullptr);
-        info::CGuardTowerGetObjName36_ptr CGuardTowerGetObjName36_next(nullptr);
-        info::CGuardTowerGetObjName36_clbk CGuardTowerGetObjName36_user(nullptr);
-        info::CGuardTowerGetObjRace38_ptr CGuardTowerGetObjRace38_next(nullptr);
-        info::CGuardTowerGetObjRace38_clbk CGuardTowerGetObjRace38_user(nullptr);
-        info::CGuardTowerGetSoilTol40_ptr CGuardTowerGetSoilTol40_next(nullptr);
-        info::CGuardTowerGetSoilTol40_clbk CGuardTowerGetSoilTol40_user(nullptr);
-        info::CGuardTowerGetWaterTol42_ptr CGuardTowerGetWaterTol42_next(nullptr);
-        info::CGuardTowerGetWaterTol42_clbk CGuardTowerGetWaterTol42_user(nullptr);
-        info::CGuardTowerGetWeaponAdjust44_ptr CGuardTowerGetWeaponAdjust44_next(nullptr);
-        info::CGuardTowerGetWeaponAdjust44_clbk CGuardTowerGetWeaponAdjust44_user(nullptr);
-        info::CGuardTowerGetWeaponClass46_ptr CGuardTowerGetWeaponClass46_next(nullptr);
-        info::CGuardTowerGetWeaponClass46_clbk CGuardTowerGetWeaponClass46_user(nullptr);
-        info::CGuardTowerGetWidth48_ptr CGuardTowerGetWidth48_next(nullptr);
-        info::CGuardTowerGetWidth48_clbk CGuardTowerGetWidth48_user(nullptr);
-        info::CGuardTowerGetWindTol50_ptr CGuardTowerGetWindTol50_next(nullptr);
-        info::CGuardTowerGetWindTol50_clbk CGuardTowerGetWindTol50_user(nullptr);
-        info::CGuardTowerInit52_ptr CGuardTowerInit52_next(nullptr);
-        info::CGuardTowerInit52_clbk CGuardTowerInit52_user(nullptr);
-        info::CGuardTowerIsBeAttackedAble54_ptr CGuardTowerIsBeAttackedAble54_next(nullptr);
-        info::CGuardTowerIsBeAttackedAble54_clbk CGuardTowerIsBeAttackedAble54_user(nullptr);
-        info::CGuardTowerIsBeDamagedAble56_ptr CGuardTowerIsBeDamagedAble56_next(nullptr);
-        info::CGuardTowerIsBeDamagedAble56_clbk CGuardTowerIsBeDamagedAble56_user(nullptr);
-        info::CGuardTowerIsHaveEmpty58_ptr CGuardTowerIsHaveEmpty58_next(nullptr);
-        info::CGuardTowerIsHaveEmpty58_clbk CGuardTowerIsHaveEmpty58_user(nullptr);
-        info::CGuardTowerIsInTown60_ptr CGuardTowerIsInTown60_next(nullptr);
-        info::CGuardTowerIsInTown60_clbk CGuardTowerIsInTown60_user(nullptr);
-        info::CGuardTowerIsValidTarget62_ptr CGuardTowerIsValidTarget62_next(nullptr);
-        info::CGuardTowerIsValidTarget62_clbk CGuardTowerIsValidTarget62_user(nullptr);
-        info::CGuardTowerLoop64_ptr CGuardTowerLoop64_next(nullptr);
-        info::CGuardTowerLoop64_clbk CGuardTowerLoop64_user(nullptr);
-        info::CGuardTowerNotifyOwnerAttackInform66_ptr CGuardTowerNotifyOwnerAttackInform66_next(nullptr);
-        info::CGuardTowerNotifyOwnerAttackInform66_clbk CGuardTowerNotifyOwnerAttackInform66_user(nullptr);
-        info::CGuardTowerOnLoop_Static68_ptr CGuardTowerOnLoop_Static68_next(nullptr);
-        info::CGuardTowerOnLoop_Static68_clbk CGuardTowerOnLoop_Static68_user(nullptr);
-        info::CGuardTowerOutOfSec70_ptr CGuardTowerOutOfSec70_next(nullptr);
-        info::CGuardTowerOutOfSec70_clbk CGuardTowerOutOfSec70_user(nullptr);
-        info::CGuardTowerRecvKillMessage72_ptr CGuardTowerRecvKillMessage72_next(nullptr);
-        info::CGuardTowerRecvKillMessage72_clbk CGuardTowerRecvKillMessage72_user(nullptr);
-        info::CGuardTowerRobbedHP74_ptr CGuardTowerRobbedHP74_next(nullptr);
-        info::CGuardTowerRobbedHP74_clbk CGuardTowerRobbedHP74_user(nullptr);
-        info::CGuardTowerSearchNearEnemy76_ptr CGuardTowerSearchNearEnemy76_next(nullptr);
-        info::CGuardTowerSearchNearEnemy76_clbk CGuardTowerSearchNearEnemy76_user(nullptr);
-        info::CGuardTowerSendMsg_Attack78_ptr CGuardTowerSendMsg_Attack78_next(nullptr);
-        info::CGuardTowerSendMsg_Attack78_clbk CGuardTowerSendMsg_Attack78_user(nullptr);
-        info::CGuardTowerSendMsg_Create80_ptr CGuardTowerSendMsg_Create80_next(nullptr);
-        info::CGuardTowerSendMsg_Create80_clbk CGuardTowerSendMsg_Create80_user(nullptr);
-        info::CGuardTowerSendMsg_Destroy82_ptr CGuardTowerSendMsg_Destroy82_next(nullptr);
-        info::CGuardTowerSendMsg_Destroy82_clbk CGuardTowerSendMsg_Destroy82_user(nullptr);
-        info::CGuardTowerSendMsg_FixPosition84_ptr CGuardTowerSendMsg_FixPosition84_next(nullptr);
-        info::CGuardTowerSendMsg_FixPosition84_clbk CGuardTowerSendMsg_FixPosition84_user(nullptr);
-        info::CGuardTowerSendMsg_TowerCompleteInform86_ptr CGuardTowerSendMsg_TowerCompleteInform86_next(nullptr);
-        info::CGuardTowerSendMsg_TowerCompleteInform86_clbk CGuardTowerSendMsg_TowerCompleteInform86_user(nullptr);
-        info::CGuardTowerSetDamage88_ptr CGuardTowerSetDamage88_next(nullptr);
-        info::CGuardTowerSetDamage88_clbk CGuardTowerSetDamage88_user(nullptr);
-        info::CGuardTowerdtor_CGuardTower94_ptr CGuardTowerdtor_CGuardTower94_next(nullptr);
-        info::CGuardTowerdtor_CGuardTower94_clbk CGuardTowerdtor_CGuardTower94_user(nullptr);
+        static info::CGuardTowerAttack2_ptr CGuardTowerAttack2_next(nullptr);
+        static info::CGuardTowerAttack2_clbk CGuardTowerAttack2_user(nullptr);
+        static info::CGuardTowerAttackableHeight4_ptr CGuardTowerAttackableHeight4_next(nullptr);
+        static info::CGuardTowerAttackableHeight4_clbk CGuardTowerAttackableHeight4_user(nullptr);
+        static info::CGuardTowerctor_CGuardTower6_ptr CGuardTowerctor_CGuardTower6_next(nullptr);
+        static info::CGuardTowerctor_CGuardTower6_clbk CGuardTowerctor_CGuardTower6_user(nullptr);
+        static info::CGuardTowerCreate8_ptr CGuardTowerCreate8_next(nullptr);
+        static info::CGuardTowerCreate8_clbk CGuardTowerCreate8_user(nullptr);
+        static info::CGuardTowerDestroy10_ptr CGuardTowerDestroy10_next(nullptr);
+        static info::CGuardTowerDestroy10_clbk CGuardTowerDestroy10_user(nullptr);
+        static info::CGuardTowerGetAttackDP12_ptr CGuardTowerGetAttackDP12_next(nullptr);
+        static info::CGuardTowerGetAttackDP12_clbk CGuardTowerGetAttackDP12_user(nullptr);
+        static info::CGuardTowerGetAttackRange14_ptr CGuardTowerGetAttackRange14_next(nullptr);
+        static info::CGuardTowerGetAttackRange14_clbk CGuardTowerGetAttackRange14_user(nullptr);
+        static info::CGuardTowerGetDefFC16_ptr CGuardTowerGetDefFC16_next(nullptr);
+        static info::CGuardTowerGetDefFC16_clbk CGuardTowerGetDefFC16_user(nullptr);
+        static info::CGuardTowerGetDefFacing18_ptr CGuardTowerGetDefFacing18_next(nullptr);
+        static info::CGuardTowerGetDefFacing18_clbk CGuardTowerGetDefFacing18_user(nullptr);
+        static info::CGuardTowerGetDefGap20_ptr CGuardTowerGetDefGap20_next(nullptr);
+        static info::CGuardTowerGetDefGap20_clbk CGuardTowerGetDefGap20_user(nullptr);
+        static info::CGuardTowerGetDefSkill22_ptr CGuardTowerGetDefSkill22_next(nullptr);
+        static info::CGuardTowerGetDefSkill22_clbk CGuardTowerGetDefSkill22_user(nullptr);
+        static info::CGuardTowerGetFireTol24_ptr CGuardTowerGetFireTol24_next(nullptr);
+        static info::CGuardTowerGetFireTol24_clbk CGuardTowerGetFireTol24_user(nullptr);
+        static info::CGuardTowerGetGenAttackProb26_ptr CGuardTowerGetGenAttackProb26_next(nullptr);
+        static info::CGuardTowerGetGenAttackProb26_clbk CGuardTowerGetGenAttackProb26_user(nullptr);
+        static info::CGuardTowerGetHP28_ptr CGuardTowerGetHP28_next(nullptr);
+        static info::CGuardTowerGetHP28_clbk CGuardTowerGetHP28_user(nullptr);
+        static info::CGuardTowerGetLevel30_ptr CGuardTowerGetLevel30_next(nullptr);
+        static info::CGuardTowerGetLevel30_clbk CGuardTowerGetLevel30_user(nullptr);
+        static info::CGuardTowerGetMaxHP32_ptr CGuardTowerGetMaxHP32_next(nullptr);
+        static info::CGuardTowerGetMaxHP32_clbk CGuardTowerGetMaxHP32_user(nullptr);
+        static info::CGuardTowerGetNewSerial34_ptr CGuardTowerGetNewSerial34_next(nullptr);
+        static info::CGuardTowerGetNewSerial34_clbk CGuardTowerGetNewSerial34_user(nullptr);
+        static info::CGuardTowerGetObjName36_ptr CGuardTowerGetObjName36_next(nullptr);
+        static info::CGuardTowerGetObjName36_clbk CGuardTowerGetObjName36_user(nullptr);
+        static info::CGuardTowerGetObjRace38_ptr CGuardTowerGetObjRace38_next(nullptr);
+        static info::CGuardTowerGetObjRace38_clbk CGuardTowerGetObjRace38_user(nullptr);
+        static info::CGuardTowerGetSoilTol40_ptr CGuardTowerGetSoilTol40_next(nullptr);
+        static info::CGuardTowerGetSoilTol40_clbk CGuardTowerGetSoilTol40_user(nullptr);
+        static info::CGuardTowerGetWaterTol42_ptr CGuardTowerGetWaterTol42_next(nullptr);
+        static info::CGuardTowerGetWaterTol42_clbk CGuardTowerGetWaterTol42_user(nullptr);
+        static info::CGuardTowerGetWeaponAdjust44_ptr CGuardTowerGetWeaponAdjust44_next(nullptr);
+        static info::CGuardTowerGetWeaponAdjust44_clbk CGuardTowerGetWeaponAdjust44_user(nullptr);
+        static info::CGuardTowerGetWeaponClass46_ptr CGuardTowerGetWeaponClass46_next(nullptr);
+        static info::CGuardTowerGetWeaponClass46_clbk CGuardTowerGetWeaponClass46_user(nullptr);
+        static info::CGuardTowerGetWidth48_ptr CGuardTowerGetWidth48_next(nullptr);
+        static info::CGuardTowerGetWidth48_clbk CGuardTowerGetWidth48_user(nullptr);
+        static info::CGuardTowerGetWindTol50_ptr CGuardTowerGetWindTol50_next(nullptr);
+        static info::CGuardTowerGetWindTol50_clbk CGuardTowerGetWindTol50_user(nullptr);
+        static info::CGuardTowerInit52_ptr CGuardTowerInit52_next(nullptr);
+        static info::CGuardTowerInit52_clbk CGuardTowerInit52_user(nullptr);
+        static info::CGuardTowerIsBeAttackedAble54_ptr CGuardTowerIsBeAttackedAble54_next(nullptr);
+        static info::CGuardTowerIsBeAttackedAble54_clbk CGuardTowerIsBeAttackedAble54_user(nullptr);
+        static info::CGuardTowerIsBeDamagedAble56_ptr CGuardTowerIsBeDamagedAble56_next(nullptr);
+        static info::CGuardTowerIsBeDamagedAble56_clbk CGuardTowerIsBeDamagedAble56_user(nullptr);
+        static info::CGuardTowerIsHaveEmpty58_ptr CGuardTowerIsHaveEmpty58_next(nullptr);
+        static info::CGuardTowerIsHaveEmpty58_clbk CGuardTowerIsHaveEmpty58_user(nullptr);
+        static info::CGuardTowerIsInTown60_ptr CGuardTowerIsInTown60_next(nullptr);
+        static info::CGuardTowerIsInTown60_clbk CGuardTowerIsInTown60_user(nullptr);
+        static info::CGuardTowerIsValidTarget62_ptr CGuardTowerIsValidTarget62_next(nullptr);
+        static info::CGuardTowerIsValidTarget62_clbk CGuardTowerIsValidTarget62_user(nullptr);
+        static info::CGuardTowerLoop64_ptr CGuardTowerLoop64_next(nullptr);
+        static info::CGuardTowerLoop64_clbk CGuardTowerLoop64_user(nullptr);
+        static info::CGuardTowerNotifyOwnerAttackInform66_ptr CGuardTowerNotifyOwnerAttackInform66_next(nullptr);
+        static info::CGuardTowerNotifyOwnerAttackInform66_clbk CGuardTowerNotifyOwnerAttackInform66_user(nullptr);
+        static info::CGuardTowerOnLoop_Static68_ptr CGuardTowerOnLoop_Static68_next(nullptr);
+        static info::CGuardTowerOnLoop_Static68_clbk CGuardTowerOnLoop_Static68_user(nullptr);
+        static info::CGuardTowerOutOfSec70_ptr CGuardTowerOutOfSec70_next(nullptr);
+        static info::CGuardTowerOutOfSec70_clbk CGuardTowerOutOfSec70_user(nullptr);
+        static info::CGuardTowerRecvKillMessage72_ptr CGuardTowerRecvKillMessage72_next(nullptr);
+        static info::CGuardTowerRecvKillMessage72_clbk CGuardTowerRecvKillMessage72_user(nullptr);
+        static info::CGuardTowerRobbedHP74_ptr CGuardTowerRobbedHP74_next(nullptr);
+        static info::CGuardTowerRobbedHP74_clbk CGuardTowerRobbedHP74_user(nullptr);
+        static info::CGuardTowerSearchNearEnemy76_ptr CGuardTowerSearchNearEnemy76_next(nullptr);
+        static info::CGuardTowerSearchNearEnemy76_clbk CGuardTowerSearchNearEnemy76_user(nullptr);
+        static info::CGuardTowerSendMsg_Attack78_ptr CGuardTowerSendMsg_Attack78_next(nullptr);
+        static info::CGuardTowerSendMsg_Attack78_clbk CGuardTowerSendMsg_Attack78_user(nullptr);
+        static info::CGuardTowerSendMsg_Create80_ptr CGuardTowerSendMsg_Create80_next(nullptr);
+        static info::CGuardTowerSendMsg_Create80_clbk CGuardTowerSendMsg_Create80_user(nullptr);
+        static info::CGuardTowerSendMsg_Destroy82_ptr CGuardTowerSendMsg_Destroy82_next(nullptr);
+        static info::CGuardTowerSendMsg_Destroy82_clbk CGuardTowerSendMsg_Destroy82_user(nullptr);
+        static info::CGuardTowerSendMsg_FixPosition84_ptr CGuardTowerSendMsg_FixPosition84_next(nullptr);
+        static info::CGuardTowerSendMsg_FixPosition84_clbk CGuardTowerSendMsg_FixPosition84_user(nullptr);
+        static info::CGuardTowerSendMsg_TowerCompleteInform86_ptr CGuardTowerSendMsg_TowerCompleteInform86_next(nullptr);
+        static info::CGuardTowerSendMsg_TowerCompleteInform86_clbk CGuardTowerSendMsg_TowerCompleteInform86_user(nullptr);
+        static info::CGuardTowerSetDamage88_ptr CGuardTowerSetDamage88_next(nullptr);
+        static info::CGuardTowerSetDamage88_clbk CGuardTowerSetDamage88_user(nullptr);
+        static info::CGuardTowerdtor_CGuardTower94_ptr CGuardTowerdtor_CGuardTower94_next(nullptr);
+        static info::CGuardTowerdtor_CGuardTower94_clbk CGuardTowerdtor_CGuardTower94_user(nullptr);
         
-        void CGuardTowerAttack2_wrapper(struct CGuardTower* _this, struct CCharacter* pTarget)
+        static void CGuardTowerAttack2_wrapper(struct CGuardTower* _this, struct CCharacter* pTarget)
         {
            CGuardTowerAttack2_user(_this, pTarget, CGuardTowerAttack2_next);
         };
-        int CGuardTowerAttackableHeight4_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerAttackableHeight4_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerAttackableHeight4_user(_this, CGuardTowerAttackableHeight4_next);
         };
-        void CGuardTowerctor_CGuardTower6_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerctor_CGuardTower6_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerctor_CGuardTower6_user(_this, CGuardTowerctor_CGuardTower6_next);
         };
-        bool CGuardTowerCreate8_wrapper(struct CGuardTower* _this, struct _tower_create_setdata* pData)
+        static bool CGuardTowerCreate8_wrapper(struct CGuardTower* _this, struct _tower_create_setdata* pData)
         {
            return CGuardTowerCreate8_user(_this, pData, CGuardTowerCreate8_next);
         };
-        bool CGuardTowerDestroy10_wrapper(struct CGuardTower* _this, char byDesType, bool bSystemBack)
+        static bool CGuardTowerDestroy10_wrapper(struct CGuardTower* _this, char byDesType, bool bSystemBack)
         {
            return CGuardTowerDestroy10_user(_this, byDesType, bSystemBack, CGuardTowerDestroy10_next);
         };
-        int CGuardTowerGetAttackDP12_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetAttackDP12_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetAttackDP12_user(_this, CGuardTowerGetAttackDP12_next);
         };
-        float CGuardTowerGetAttackRange14_wrapper(struct CGuardTower* _this)
+        static float CGuardTowerGetAttackRange14_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetAttackRange14_user(_this, CGuardTowerGetAttackRange14_next);
         };
-        int CGuardTowerGetDefFC16_wrapper(struct CGuardTower* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CGuardTowerGetDefFC16_wrapper(struct CGuardTower* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CGuardTowerGetDefFC16_user(_this, nAttactPart, pAttChar, pnConvertPart, CGuardTowerGetDefFC16_next);
         };
-        float CGuardTowerGetDefFacing18_wrapper(struct CGuardTower* _this, int nPart)
+        static float CGuardTowerGetDefFacing18_wrapper(struct CGuardTower* _this, int nPart)
         {
            return CGuardTowerGetDefFacing18_user(_this, nPart, CGuardTowerGetDefFacing18_next);
         };
-        float CGuardTowerGetDefGap20_wrapper(struct CGuardTower* _this, int nPart)
+        static float CGuardTowerGetDefGap20_wrapper(struct CGuardTower* _this, int nPart)
         {
            return CGuardTowerGetDefGap20_user(_this, nPart, CGuardTowerGetDefGap20_next);
         };
-        int CGuardTowerGetDefSkill22_wrapper(struct CGuardTower* _this, bool bBackAttack)
+        static int CGuardTowerGetDefSkill22_wrapper(struct CGuardTower* _this, bool bBackAttack)
         {
            return CGuardTowerGetDefSkill22_user(_this, bBackAttack, CGuardTowerGetDefSkill22_next);
         };
-        int CGuardTowerGetFireTol24_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetFireTol24_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetFireTol24_user(_this, CGuardTowerGetFireTol24_next);
         };
-        int CGuardTowerGetGenAttackProb26_wrapper(struct CGuardTower* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CGuardTowerGetGenAttackProb26_wrapper(struct CGuardTower* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CGuardTowerGetGenAttackProb26_user(_this, pDst, nPart, bBackAttack, CGuardTowerGetGenAttackProb26_next);
         };
-        int CGuardTowerGetHP28_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetHP28_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetHP28_user(_this, CGuardTowerGetHP28_next);
         };
-        int CGuardTowerGetLevel30_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetLevel30_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetLevel30_user(_this, CGuardTowerGetLevel30_next);
         };
-        int CGuardTowerGetMaxHP32_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetMaxHP32_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetMaxHP32_user(_this, CGuardTowerGetMaxHP32_next);
         };
-        unsigned int CGuardTowerGetNewSerial34_wrapper()
+        static unsigned int CGuardTowerGetNewSerial34_wrapper()
         {
            return CGuardTowerGetNewSerial34_user(CGuardTowerGetNewSerial34_next);
         };
-        char* CGuardTowerGetObjName36_wrapper(struct CGuardTower* _this)
+        static char* CGuardTowerGetObjName36_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetObjName36_user(_this, CGuardTowerGetObjName36_next);
         };
-        int CGuardTowerGetObjRace38_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetObjRace38_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetObjRace38_user(_this, CGuardTowerGetObjRace38_next);
         };
-        int CGuardTowerGetSoilTol40_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetSoilTol40_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetSoilTol40_user(_this, CGuardTowerGetSoilTol40_next);
         };
-        int CGuardTowerGetWaterTol42_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetWaterTol42_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetWaterTol42_user(_this, CGuardTowerGetWaterTol42_next);
         };
-        float CGuardTowerGetWeaponAdjust44_wrapper(struct CGuardTower* _this)
+        static float CGuardTowerGetWeaponAdjust44_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetWeaponAdjust44_user(_this, CGuardTowerGetWeaponAdjust44_next);
         };
-        int CGuardTowerGetWeaponClass46_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetWeaponClass46_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetWeaponClass46_user(_this, CGuardTowerGetWeaponClass46_next);
         };
-        float CGuardTowerGetWidth48_wrapper(struct CGuardTower* _this)
+        static float CGuardTowerGetWidth48_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetWidth48_user(_this, CGuardTowerGetWidth48_next);
         };
-        int CGuardTowerGetWindTol50_wrapper(struct CGuardTower* _this)
+        static int CGuardTowerGetWindTol50_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerGetWindTol50_user(_this, CGuardTowerGetWindTol50_next);
         };
-        bool CGuardTowerInit52_wrapper(struct CGuardTower* _this, struct _object_id* pID)
+        static bool CGuardTowerInit52_wrapper(struct CGuardTower* _this, struct _object_id* pID)
         {
            return CGuardTowerInit52_user(_this, pID, CGuardTowerInit52_next);
         };
-        bool CGuardTowerIsBeAttackedAble54_wrapper(struct CGuardTower* _this, bool bFirst)
+        static bool CGuardTowerIsBeAttackedAble54_wrapper(struct CGuardTower* _this, bool bFirst)
         {
            return CGuardTowerIsBeAttackedAble54_user(_this, bFirst, CGuardTowerIsBeAttackedAble54_next);
         };
-        bool CGuardTowerIsBeDamagedAble56_wrapper(struct CGuardTower* _this, struct CCharacter* pAtter)
+        static bool CGuardTowerIsBeDamagedAble56_wrapper(struct CGuardTower* _this, struct CCharacter* pAtter)
         {
            return CGuardTowerIsBeDamagedAble56_user(_this, pAtter, CGuardTowerIsBeDamagedAble56_next);
         };
-        bool CGuardTowerIsHaveEmpty58_wrapper()
+        static bool CGuardTowerIsHaveEmpty58_wrapper()
         {
            return CGuardTowerIsHaveEmpty58_user(CGuardTowerIsHaveEmpty58_next);
         };
-        bool CGuardTowerIsInTown60_wrapper(struct CGuardTower* _this)
+        static bool CGuardTowerIsInTown60_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerIsInTown60_user(_this, CGuardTowerIsInTown60_next);
         };
-        bool CGuardTowerIsValidTarget62_wrapper(struct CGuardTower* _this)
+        static bool CGuardTowerIsValidTarget62_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerIsValidTarget62_user(_this, CGuardTowerIsValidTarget62_next);
         };
-        void CGuardTowerLoop64_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerLoop64_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerLoop64_user(_this, CGuardTowerLoop64_next);
         };
-        void CGuardTowerNotifyOwnerAttackInform66_wrapper(struct CGuardTower* _this, struct CCharacter* pDst)
+        static void CGuardTowerNotifyOwnerAttackInform66_wrapper(struct CGuardTower* _this, struct CCharacter* pDst)
         {
            CGuardTowerNotifyOwnerAttackInform66_user(_this, pDst, CGuardTowerNotifyOwnerAttackInform66_next);
         };
-        void CGuardTowerOnLoop_Static68_wrapper()
+        static void CGuardTowerOnLoop_Static68_wrapper()
         {
            CGuardTowerOnLoop_Static68_user(CGuardTowerOnLoop_Static68_next);
         };
-        void CGuardTowerOutOfSec70_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerOutOfSec70_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerOutOfSec70_user(_this, CGuardTowerOutOfSec70_next);
         };
-        void CGuardTowerRecvKillMessage72_wrapper(struct CGuardTower* _this, struct CCharacter* pDier)
+        static void CGuardTowerRecvKillMessage72_wrapper(struct CGuardTower* _this, struct CCharacter* pDier)
         {
            CGuardTowerRecvKillMessage72_user(_this, pDier, CGuardTowerRecvKillMessage72_next);
         };
-        bool CGuardTowerRobbedHP74_wrapper(struct CGuardTower* _this, struct CCharacter* pDst, int nDecHP)
+        static bool CGuardTowerRobbedHP74_wrapper(struct CGuardTower* _this, struct CCharacter* pDst, int nDecHP)
         {
            return CGuardTowerRobbedHP74_user(_this, pDst, nDecHP, CGuardTowerRobbedHP74_next);
         };
-        struct CCharacter* CGuardTowerSearchNearEnemy76_wrapper(struct CGuardTower* _this)
+        static struct CCharacter* CGuardTowerSearchNearEnemy76_wrapper(struct CGuardTower* _this)
         {
            return CGuardTowerSearchNearEnemy76_user(_this, CGuardTowerSearchNearEnemy76_next);
         };
-        void CGuardTowerSendMsg_Attack78_wrapper(struct CGuardTower* _this, struct CAttack* pAt)
+        static void CGuardTowerSendMsg_Attack78_wrapper(struct CGuardTower* _this, struct CAttack* pAt)
         {
            CGuardTowerSendMsg_Attack78_user(_this, pAt, CGuardTowerSendMsg_Attack78_next);
         };
-        void CGuardTowerSendMsg_Create80_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerSendMsg_Create80_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerSendMsg_Create80_user(_this, CGuardTowerSendMsg_Create80_next);
         };
-        void CGuardTowerSendMsg_Destroy82_wrapper(struct CGuardTower* _this, char byDesType)
+        static void CGuardTowerSendMsg_Destroy82_wrapper(struct CGuardTower* _this, char byDesType)
         {
            CGuardTowerSendMsg_Destroy82_user(_this, byDesType, CGuardTowerSendMsg_Destroy82_next);
         };
-        void CGuardTowerSendMsg_FixPosition84_wrapper(struct CGuardTower* _this, int n)
+        static void CGuardTowerSendMsg_FixPosition84_wrapper(struct CGuardTower* _this, int n)
         {
            CGuardTowerSendMsg_FixPosition84_user(_this, n, CGuardTowerSendMsg_FixPosition84_next);
         };
-        void CGuardTowerSendMsg_TowerCompleteInform86_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerSendMsg_TowerCompleteInform86_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerSendMsg_TowerCompleteInform86_user(_this, CGuardTowerSendMsg_TowerCompleteInform86_next);
         };
-        int CGuardTowerSetDamage88_wrapper(struct CGuardTower* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CGuardTowerSetDamage88_wrapper(struct CGuardTower* _this, int nDam, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CGuardTowerSetDamage88_user(_this, nDam, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CGuardTowerSetDamage88_next);
         };
-        void CGuardTowerdtor_CGuardTower94_wrapper(struct CGuardTower* _this)
+        static void CGuardTowerdtor_CGuardTower94_wrapper(struct CGuardTower* _this)
         {
            CGuardTowerdtor_CGuardTower94_user(_this, CGuardTowerdtor_CGuardTower94_next);
         };
         
-        hook_record CGuardTower_functions[] = {
+        static hook_record CGuardTower_functions[] = {
         {   (LPVOID)0x14012f840L,
             (LPVOID *)&CGuardTowerAttack2_user,
             (LPVOID *)&CGuardTowerAttack2_next,
@@ -509,5 +509,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

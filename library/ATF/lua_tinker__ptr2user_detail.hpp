@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
-            info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
             
-            void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CMonster>* _this, struct CMonster* t)
+            static void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CMonster>* _this, struct CMonster* t)
             {
                lua_tinker__ptr2userctor_ptr2user5_user(_this, t);
             };
-            void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CMonster>* _this)
+            static void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CMonster>* _this)
             {
                lua_tinker__ptr2userdtor_ptr2user7_user(_this);
             };
             
-            hook_record ptr2user<CMonster>_functions[] = {
+            static hook_record ptr2user<CMonster>_functions[] = {
             {   (LPVOID)0x14040b880L,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_user,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_next,
@@ -38,7 +38,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__ptr2user_info.hpp"
@@ -49,21 +49,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
-            info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
             
-            void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaSignalReActor>* _this, struct CLuaSignalReActor* t)
+            static void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaSignalReActor>* _this, struct CLuaSignalReActor* t)
             {
                lua_tinker__ptr2userctor_ptr2user5_user(_this, t);
             };
-            void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaSignalReActor>* _this)
+            static void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaSignalReActor>* _this)
             {
                lua_tinker__ptr2userdtor_ptr2user7_user(_this);
             };
             
-            hook_record ptr2user<CLuaSignalReActor>_functions[] = {
+            static hook_record ptr2user<CLuaSignalReActor>_functions[] = {
             {   (LPVOID)0x14040b7a0L,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_user,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_next,
@@ -77,7 +77,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__ptr2user_info.hpp"
@@ -88,21 +88,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
-            info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
             
-            void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaEventNode>* _this, struct CLuaEventNode* t)
+            static void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaEventNode>* _this, struct CLuaEventNode* t)
             {
                lua_tinker__ptr2userctor_ptr2user5_user(_this, t);
             };
-            void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaEventNode>* _this)
+            static void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaEventNode>* _this)
             {
                lua_tinker__ptr2userdtor_ptr2user7_user(_this);
             };
             
-            hook_record ptr2user<CLuaEventNode>_functions[] = {
+            static hook_record ptr2user<CLuaEventNode>_functions[] = {
             {   (LPVOID)0x140404cb0L,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_user,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_next,
@@ -116,7 +116,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__ptr2user_info.hpp"
@@ -127,21 +127,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
-            info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
             
-            void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaEventMgr>* _this, struct CLuaEventMgr* t)
+            static void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaEventMgr>* _this, struct CLuaEventMgr* t)
             {
                lua_tinker__ptr2userctor_ptr2user5_user(_this, t);
             };
-            void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaEventMgr>* _this)
+            static void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaEventMgr>* _this)
             {
                lua_tinker__ptr2userdtor_ptr2user7_user(_this);
             };
             
-            hook_record ptr2user<CLuaEventMgr>_functions[] = {
+            static hook_record ptr2user<CLuaEventMgr>_functions[] = {
             {   (LPVOID)0x14040b810L,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_user,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_next,
@@ -155,7 +155,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE
 #include "lua_tinker__ptr2user_info.hpp"
@@ -166,21 +166,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
-            info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
-            info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_ptr lua_tinker__ptr2userctor_ptr2user5_next(nullptr);
+            static info::lua_tinker__ptr2userctor_ptr2user5_clbk lua_tinker__ptr2userctor_ptr2user5_user(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_ptr lua_tinker__ptr2userdtor_ptr2user7_next(nullptr);
+            static info::lua_tinker__ptr2userdtor_ptr2user7_clbk lua_tinker__ptr2userdtor_ptr2user7_user(nullptr);
             
-            void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaScript>* _this, struct CLuaScript* t)
+            static void lua_tinker__ptr2userctor_ptr2user5_wrapper(struct lua_tinker::ptr2user<CLuaScript>* _this, struct CLuaScript* t)
             {
                lua_tinker__ptr2userctor_ptr2user5_user(_this, t);
             };
-            void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaScript>* _this)
+            static void lua_tinker__ptr2userdtor_ptr2user7_wrapper(struct lua_tinker::ptr2user<CLuaScript>* _this)
             {
                lua_tinker__ptr2userdtor_ptr2user7_user(_this);
             };
             
-            hook_record ptr2user<CLuaScript>_functions[] = {
+            static hook_record ptr2user<CLuaScript>_functions[] = {
             {   (LPVOID)0x1404031d0L,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_user,
                 (LPVOID *)&lua_tinker__ptr2userctor_ptr2user5_next,
@@ -194,6 +194,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_react_objctor__react_obj2_ptr _react_objctor__react_obj2_next(nullptr);
-        info::_react_objctor__react_obj2_clbk _react_objctor__react_obj2_user(nullptr);
-        info::_react_objcopy4_ptr _react_objcopy4_next(nullptr);
-        info::_react_objcopy4_clbk _react_objcopy4_user(nullptr);
+        static info::_react_objctor__react_obj2_ptr _react_objctor__react_obj2_next(nullptr);
+        static info::_react_objctor__react_obj2_clbk _react_objctor__react_obj2_user(nullptr);
+        static info::_react_objcopy4_ptr _react_objcopy4_next(nullptr);
+        static info::_react_objcopy4_clbk _react_objcopy4_user(nullptr);
         
-        void _react_objctor__react_obj2_wrapper(struct _react_obj* _this)
+        static void _react_objctor__react_obj2_wrapper(struct _react_obj* _this)
         {
            _react_objctor__react_obj2_user(_this, _react_objctor__react_obj2_next);
         };
-        void _react_objcopy4_wrapper(struct _react_obj* _this, struct _react_obj* pObj)
+        static void _react_objcopy4_wrapper(struct _react_obj* _this, struct _react_obj* pObj)
         {
            _react_objcopy4_user(_this, pObj, _react_objcopy4_next);
         };
         
-        hook_record _react_obj_functions[] = {
+        static hook_record _react_obj_functions[] = {
         {   (LPVOID)0x14027a230L,
             (LPVOID *)&_react_objctor__react_obj2_user,
             (LPVOID *)&_react_objctor__react_obj2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

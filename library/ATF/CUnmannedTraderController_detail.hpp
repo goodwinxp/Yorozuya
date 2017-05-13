@@ -8,357 +8,357 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderControllerBuy2_ptr CUnmannedTraderControllerBuy2_next(nullptr);
-        info::CUnmannedTraderControllerBuy2_clbk CUnmannedTraderControllerBuy2_user(nullptr);
-        info::CUnmannedTraderControllerctor_CUnmannedTraderController4_ptr CUnmannedTraderControllerctor_CUnmannedTraderController4_next(nullptr);
-        info::CUnmannedTraderControllerctor_CUnmannedTraderController4_clbk CUnmannedTraderControllerctor_CUnmannedTraderController4_user(nullptr);
-        info::CUnmannedTraderControllerCancelRegist6_ptr CUnmannedTraderControllerCancelRegist6_next(nullptr);
-        info::CUnmannedTraderControllerCancelRegist6_clbk CUnmannedTraderControllerCancelRegist6_user(nullptr);
-        info::CUnmannedTraderControllerCheatCancelRegist8_ptr CUnmannedTraderControllerCheatCancelRegist8_next(nullptr);
-        info::CUnmannedTraderControllerCheatCancelRegist8_clbk CUnmannedTraderControllerCheatCancelRegist8_user(nullptr);
-        info::CUnmannedTraderControllerCheckDBItemState10_ptr CUnmannedTraderControllerCheckDBItemState10_next(nullptr);
-        info::CUnmannedTraderControllerCheckDBItemState10_clbk CUnmannedTraderControllerCheckDBItemState10_user(nullptr);
-        info::CUnmannedTraderControllerComleteLazyClean12_ptr CUnmannedTraderControllerComleteLazyClean12_next(nullptr);
-        info::CUnmannedTraderControllerComleteLazyClean12_clbk CUnmannedTraderControllerComleteLazyClean12_user(nullptr);
-        info::CUnmannedTraderControllerCompleteBuy14_ptr CUnmannedTraderControllerCompleteBuy14_next(nullptr);
-        info::CUnmannedTraderControllerCompleteBuy14_clbk CUnmannedTraderControllerCompleteBuy14_user(nullptr);
-        info::CUnmannedTraderControllerCompleteBuyComplete16_ptr CUnmannedTraderControllerCompleteBuyComplete16_next(nullptr);
-        info::CUnmannedTraderControllerCompleteBuyComplete16_clbk CUnmannedTraderControllerCompleteBuyComplete16_user(nullptr);
-        info::CUnmannedTraderControllerCompleteBuyRollBack18_ptr CUnmannedTraderControllerCompleteBuyRollBack18_next(nullptr);
-        info::CUnmannedTraderControllerCompleteBuyRollBack18_clbk CUnmannedTraderControllerCompleteBuyRollBack18_user(nullptr);
-        info::CUnmannedTraderControllerCompleteCancelRegist20_ptr CUnmannedTraderControllerCompleteCancelRegist20_next(nullptr);
-        info::CUnmannedTraderControllerCompleteCancelRegist20_clbk CUnmannedTraderControllerCompleteCancelRegist20_user(nullptr);
-        info::CUnmannedTraderControllerCompleteCreate22_ptr CUnmannedTraderControllerCompleteCreate22_next(nullptr);
-        info::CUnmannedTraderControllerCompleteCreate22_clbk CUnmannedTraderControllerCompleteCreate22_user(nullptr);
-        info::CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_ptr CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_next(nullptr);
-        info::CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_clbk CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_user(nullptr);
-        info::CUnmannedTraderControllerCompleteLogInCompete26_ptr CUnmannedTraderControllerCompleteLogInCompete26_next(nullptr);
-        info::CUnmannedTraderControllerCompleteLogInCompete26_clbk CUnmannedTraderControllerCompleteLogInCompete26_user(nullptr);
-        info::CUnmannedTraderControllerCompleteReRegist28_ptr CUnmannedTraderControllerCompleteReRegist28_next(nullptr);
-        info::CUnmannedTraderControllerCompleteReRegist28_clbk CUnmannedTraderControllerCompleteReRegist28_user(nullptr);
-        info::CUnmannedTraderControllerCompleteReRegistRollBack30_ptr CUnmannedTraderControllerCompleteReRegistRollBack30_next(nullptr);
-        info::CUnmannedTraderControllerCompleteReRegistRollBack30_clbk CUnmannedTraderControllerCompleteReRegistRollBack30_user(nullptr);
-        info::CUnmannedTraderControllerCompleteRegistItem32_ptr CUnmannedTraderControllerCompleteRegistItem32_next(nullptr);
-        info::CUnmannedTraderControllerCompleteRegistItem32_clbk CUnmannedTraderControllerCompleteRegistItem32_user(nullptr);
-        info::CUnmannedTraderControllerCompleteReprice34_ptr CUnmannedTraderControllerCompleteReprice34_next(nullptr);
-        info::CUnmannedTraderControllerCompleteReprice34_clbk CUnmannedTraderControllerCompleteReprice34_user(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectBuyInfo36_ptr CUnmannedTraderControllerCompleteSelectBuyInfo36_next(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectBuyInfo36_clbk CUnmannedTraderControllerCompleteSelectBuyInfo36_user(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectReservedSchedule38_ptr CUnmannedTraderControllerCompleteSelectReservedSchedule38_next(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectReservedSchedule38_clbk CUnmannedTraderControllerCompleteSelectReservedSchedule38_user(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectSearchList40_ptr CUnmannedTraderControllerCompleteSelectSearchList40_next(nullptr);
-        info::CUnmannedTraderControllerCompleteSelectSearchList40_clbk CUnmannedTraderControllerCompleteSelectSearchList40_user(nullptr);
-        info::CUnmannedTraderControllerCompleteTimeOutCancelRegist42_ptr CUnmannedTraderControllerCompleteTimeOutCancelRegist42_next(nullptr);
-        info::CUnmannedTraderControllerCompleteTimeOutCancelRegist42_clbk CUnmannedTraderControllerCompleteTimeOutCancelRegist42_user(nullptr);
-        info::CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_ptr CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_next(nullptr);
-        info::CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_clbk CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_user(nullptr);
-        info::CUnmannedTraderControllerCompleteUpdateState46_ptr CUnmannedTraderControllerCompleteUpdateState46_next(nullptr);
-        info::CUnmannedTraderControllerCompleteUpdateState46_clbk CUnmannedTraderControllerCompleteUpdateState46_user(nullptr);
-        info::CUnmannedTraderControllerDestroy48_ptr CUnmannedTraderControllerDestroy48_next(nullptr);
-        info::CUnmannedTraderControllerDestroy48_clbk CUnmannedTraderControllerDestroy48_user(nullptr);
-        info::CUnmannedTraderControllerGetEmptyRecordSerial50_ptr CUnmannedTraderControllerGetEmptyRecordSerial50_next(nullptr);
-        info::CUnmannedTraderControllerGetEmptyRecordSerial50_clbk CUnmannedTraderControllerGetEmptyRecordSerial50_user(nullptr);
-        info::CUnmannedTraderControllerGetMaxRegistCnt52_ptr CUnmannedTraderControllerGetMaxRegistCnt52_next(nullptr);
-        info::CUnmannedTraderControllerGetMaxRegistCnt52_clbk CUnmannedTraderControllerGetMaxRegistCnt52_user(nullptr);
-        info::CUnmannedTraderControllerGetRegItemInfo54_ptr CUnmannedTraderControllerGetRegItemInfo54_next(nullptr);
-        info::CUnmannedTraderControllerGetRegItemInfo54_clbk CUnmannedTraderControllerGetRegItemInfo54_user(nullptr);
-        info::CUnmannedTraderControllerInit56_ptr CUnmannedTraderControllerInit56_next(nullptr);
-        info::CUnmannedTraderControllerInit56_clbk CUnmannedTraderControllerInit56_user(nullptr);
-        info::CUnmannedTraderControllerInitLogger58_ptr CUnmannedTraderControllerInitLogger58_next(nullptr);
-        info::CUnmannedTraderControllerInitLogger58_clbk CUnmannedTraderControllerInitLogger58_user(nullptr);
-        info::CUnmannedTraderControllerInsertDefalutRecord60_ptr CUnmannedTraderControllerInsertDefalutRecord60_next(nullptr);
-        info::CUnmannedTraderControllerInsertDefalutRecord60_clbk CUnmannedTraderControllerInsertDefalutRecord60_user(nullptr);
-        info::CUnmannedTraderControllerInsertStateRecord62_ptr CUnmannedTraderControllerInsertStateRecord62_next(nullptr);
-        info::CUnmannedTraderControllerInsertStateRecord62_clbk CUnmannedTraderControllerInsertStateRecord62_user(nullptr);
-        info::CUnmannedTraderControllerInstance64_ptr CUnmannedTraderControllerInstance64_next(nullptr);
-        info::CUnmannedTraderControllerInstance64_clbk CUnmannedTraderControllerInstance64_user(nullptr);
-        info::CUnmannedTraderControllerLoad66_ptr CUnmannedTraderControllerLoad66_next(nullptr);
-        info::CUnmannedTraderControllerLoad66_clbk CUnmannedTraderControllerLoad66_user(nullptr);
-        info::CUnmannedTraderControllerLoad68_ptr CUnmannedTraderControllerLoad68_next(nullptr);
-        info::CUnmannedTraderControllerLoad68_clbk CUnmannedTraderControllerLoad68_user(nullptr);
-        info::CUnmannedTraderControllerLog70_ptr CUnmannedTraderControllerLog70_next(nullptr);
-        info::CUnmannedTraderControllerLog70_clbk CUnmannedTraderControllerLog70_user(nullptr);
-        info::CUnmannedTraderControllerLogOut72_ptr CUnmannedTraderControllerLogOut72_next(nullptr);
-        info::CUnmannedTraderControllerLogOut72_clbk CUnmannedTraderControllerLogOut72_user(nullptr);
-        info::CUnmannedTraderControllerLoop74_ptr CUnmannedTraderControllerLoop74_next(nullptr);
-        info::CUnmannedTraderControllerLoop74_clbk CUnmannedTraderControllerLoop74_user(nullptr);
-        info::CUnmannedTraderControllerModifyPrice76_ptr CUnmannedTraderControllerModifyPrice76_next(nullptr);
-        info::CUnmannedTraderControllerModifyPrice76_clbk CUnmannedTraderControllerModifyPrice76_user(nullptr);
-        info::CUnmannedTraderControllerReRegist78_ptr CUnmannedTraderControllerReRegist78_next(nullptr);
-        info::CUnmannedTraderControllerReRegist78_clbk CUnmannedTraderControllerReRegist78_user(nullptr);
-        info::CUnmannedTraderControllerRegist80_ptr CUnmannedTraderControllerRegist80_next(nullptr);
-        info::CUnmannedTraderControllerRegist80_clbk CUnmannedTraderControllerRegist80_user(nullptr);
-        info::CUnmannedTraderControllerSearch82_ptr CUnmannedTraderControllerSearch82_next(nullptr);
-        info::CUnmannedTraderControllerSearch82_clbk CUnmannedTraderControllerSearch82_user(nullptr);
-        info::CUnmannedTraderControllerSelectBuy84_ptr CUnmannedTraderControllerSelectBuy84_next(nullptr);
-        info::CUnmannedTraderControllerSelectBuy84_clbk CUnmannedTraderControllerSelectBuy84_user(nullptr);
-        info::CUnmannedTraderControllerSelectSearchList86_ptr CUnmannedTraderControllerSelectSearchList86_next(nullptr);
-        info::CUnmannedTraderControllerSelectSearchList86_clbk CUnmannedTraderControllerSelectSearchList86_user(nullptr);
-        info::CUnmannedTraderControllerUpdateBuy88_ptr CUnmannedTraderControllerUpdateBuy88_next(nullptr);
-        info::CUnmannedTraderControllerUpdateBuy88_clbk CUnmannedTraderControllerUpdateBuy88_user(nullptr);
-        info::CUnmannedTraderControllerUpdateBuyComplete90_ptr CUnmannedTraderControllerUpdateBuyComplete90_next(nullptr);
-        info::CUnmannedTraderControllerUpdateBuyComplete90_clbk CUnmannedTraderControllerUpdateBuyComplete90_user(nullptr);
-        info::CUnmannedTraderControllerUpdateBuyRollBack92_ptr CUnmannedTraderControllerUpdateBuyRollBack92_next(nullptr);
-        info::CUnmannedTraderControllerUpdateBuyRollBack92_clbk CUnmannedTraderControllerUpdateBuyRollBack92_user(nullptr);
-        info::CUnmannedTraderControllerUpdateCancelRegist94_ptr CUnmannedTraderControllerUpdateCancelRegist94_next(nullptr);
-        info::CUnmannedTraderControllerUpdateCancelRegist94_clbk CUnmannedTraderControllerUpdateCancelRegist94_user(nullptr);
-        info::CUnmannedTraderControllerUpdateCheatRegistTime96_ptr CUnmannedTraderControllerUpdateCheatRegistTime96_next(nullptr);
-        info::CUnmannedTraderControllerUpdateCheatRegistTime96_clbk CUnmannedTraderControllerUpdateCheatRegistTime96_user(nullptr);
-        info::CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_ptr CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_next(nullptr);
-        info::CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_clbk CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_user(nullptr);
-        info::CUnmannedTraderControllerUpdateItemState100_ptr CUnmannedTraderControllerUpdateItemState100_next(nullptr);
-        info::CUnmannedTraderControllerUpdateItemState100_clbk CUnmannedTraderControllerUpdateItemState100_user(nullptr);
-        info::CUnmannedTraderControllerUpdateLazyClean102_ptr CUnmannedTraderControllerUpdateLazyClean102_next(nullptr);
-        info::CUnmannedTraderControllerUpdateLazyClean102_clbk CUnmannedTraderControllerUpdateLazyClean102_user(nullptr);
-        info::CUnmannedTraderControllerUpdateLogInComplete104_ptr CUnmannedTraderControllerUpdateLogInComplete104_next(nullptr);
-        info::CUnmannedTraderControllerUpdateLogInComplete104_clbk CUnmannedTraderControllerUpdateLogInComplete104_user(nullptr);
-        info::CUnmannedTraderControllerUpdateRePrice106_ptr CUnmannedTraderControllerUpdateRePrice106_next(nullptr);
-        info::CUnmannedTraderControllerUpdateRePrice106_clbk CUnmannedTraderControllerUpdateRePrice106_user(nullptr);
-        info::CUnmannedTraderControllerUpdateReRegist108_ptr CUnmannedTraderControllerUpdateReRegist108_next(nullptr);
-        info::CUnmannedTraderControllerUpdateReRegist108_clbk CUnmannedTraderControllerUpdateReRegist108_user(nullptr);
-        info::CUnmannedTraderControllerUpdateReRegistRollBack110_ptr CUnmannedTraderControllerUpdateReRegistRollBack110_next(nullptr);
-        info::CUnmannedTraderControllerUpdateReRegistRollBack110_clbk CUnmannedTraderControllerUpdateReRegistRollBack110_user(nullptr);
-        info::CUnmannedTraderControllerUpdateRegistItem112_ptr CUnmannedTraderControllerUpdateRegistItem112_next(nullptr);
-        info::CUnmannedTraderControllerUpdateRegistItem112_clbk CUnmannedTraderControllerUpdateRegistItem112_user(nullptr);
-        info::CUnmannedTraderControllerUpdateTimeOutCancelRegist114_ptr CUnmannedTraderControllerUpdateTimeOutCancelRegist114_next(nullptr);
-        info::CUnmannedTraderControllerUpdateTimeOutCancelRegist114_clbk CUnmannedTraderControllerUpdateTimeOutCancelRegist114_user(nullptr);
-        info::CUnmannedTraderControllerdtor_CUnmannedTraderController118_ptr CUnmannedTraderControllerdtor_CUnmannedTraderController118_next(nullptr);
-        info::CUnmannedTraderControllerdtor_CUnmannedTraderController118_clbk CUnmannedTraderControllerdtor_CUnmannedTraderController118_user(nullptr);
+        static info::CUnmannedTraderControllerBuy2_ptr CUnmannedTraderControllerBuy2_next(nullptr);
+        static info::CUnmannedTraderControllerBuy2_clbk CUnmannedTraderControllerBuy2_user(nullptr);
+        static info::CUnmannedTraderControllerctor_CUnmannedTraderController4_ptr CUnmannedTraderControllerctor_CUnmannedTraderController4_next(nullptr);
+        static info::CUnmannedTraderControllerctor_CUnmannedTraderController4_clbk CUnmannedTraderControllerctor_CUnmannedTraderController4_user(nullptr);
+        static info::CUnmannedTraderControllerCancelRegist6_ptr CUnmannedTraderControllerCancelRegist6_next(nullptr);
+        static info::CUnmannedTraderControllerCancelRegist6_clbk CUnmannedTraderControllerCancelRegist6_user(nullptr);
+        static info::CUnmannedTraderControllerCheatCancelRegist8_ptr CUnmannedTraderControllerCheatCancelRegist8_next(nullptr);
+        static info::CUnmannedTraderControllerCheatCancelRegist8_clbk CUnmannedTraderControllerCheatCancelRegist8_user(nullptr);
+        static info::CUnmannedTraderControllerCheckDBItemState10_ptr CUnmannedTraderControllerCheckDBItemState10_next(nullptr);
+        static info::CUnmannedTraderControllerCheckDBItemState10_clbk CUnmannedTraderControllerCheckDBItemState10_user(nullptr);
+        static info::CUnmannedTraderControllerComleteLazyClean12_ptr CUnmannedTraderControllerComleteLazyClean12_next(nullptr);
+        static info::CUnmannedTraderControllerComleteLazyClean12_clbk CUnmannedTraderControllerComleteLazyClean12_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuy14_ptr CUnmannedTraderControllerCompleteBuy14_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuy14_clbk CUnmannedTraderControllerCompleteBuy14_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuyComplete16_ptr CUnmannedTraderControllerCompleteBuyComplete16_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuyComplete16_clbk CUnmannedTraderControllerCompleteBuyComplete16_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuyRollBack18_ptr CUnmannedTraderControllerCompleteBuyRollBack18_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteBuyRollBack18_clbk CUnmannedTraderControllerCompleteBuyRollBack18_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteCancelRegist20_ptr CUnmannedTraderControllerCompleteCancelRegist20_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteCancelRegist20_clbk CUnmannedTraderControllerCompleteCancelRegist20_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteCreate22_ptr CUnmannedTraderControllerCompleteCreate22_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteCreate22_clbk CUnmannedTraderControllerCompleteCreate22_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_ptr CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_clbk CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteLogInCompete26_ptr CUnmannedTraderControllerCompleteLogInCompete26_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteLogInCompete26_clbk CUnmannedTraderControllerCompleteLogInCompete26_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteReRegist28_ptr CUnmannedTraderControllerCompleteReRegist28_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteReRegist28_clbk CUnmannedTraderControllerCompleteReRegist28_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteReRegistRollBack30_ptr CUnmannedTraderControllerCompleteReRegistRollBack30_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteReRegistRollBack30_clbk CUnmannedTraderControllerCompleteReRegistRollBack30_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteRegistItem32_ptr CUnmannedTraderControllerCompleteRegistItem32_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteRegistItem32_clbk CUnmannedTraderControllerCompleteRegistItem32_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteReprice34_ptr CUnmannedTraderControllerCompleteReprice34_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteReprice34_clbk CUnmannedTraderControllerCompleteReprice34_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectBuyInfo36_ptr CUnmannedTraderControllerCompleteSelectBuyInfo36_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectBuyInfo36_clbk CUnmannedTraderControllerCompleteSelectBuyInfo36_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectReservedSchedule38_ptr CUnmannedTraderControllerCompleteSelectReservedSchedule38_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectReservedSchedule38_clbk CUnmannedTraderControllerCompleteSelectReservedSchedule38_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectSearchList40_ptr CUnmannedTraderControllerCompleteSelectSearchList40_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteSelectSearchList40_clbk CUnmannedTraderControllerCompleteSelectSearchList40_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteTimeOutCancelRegist42_ptr CUnmannedTraderControllerCompleteTimeOutCancelRegist42_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteTimeOutCancelRegist42_clbk CUnmannedTraderControllerCompleteTimeOutCancelRegist42_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_ptr CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_clbk CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_user(nullptr);
+        static info::CUnmannedTraderControllerCompleteUpdateState46_ptr CUnmannedTraderControllerCompleteUpdateState46_next(nullptr);
+        static info::CUnmannedTraderControllerCompleteUpdateState46_clbk CUnmannedTraderControllerCompleteUpdateState46_user(nullptr);
+        static info::CUnmannedTraderControllerDestroy48_ptr CUnmannedTraderControllerDestroy48_next(nullptr);
+        static info::CUnmannedTraderControllerDestroy48_clbk CUnmannedTraderControllerDestroy48_user(nullptr);
+        static info::CUnmannedTraderControllerGetEmptyRecordSerial50_ptr CUnmannedTraderControllerGetEmptyRecordSerial50_next(nullptr);
+        static info::CUnmannedTraderControllerGetEmptyRecordSerial50_clbk CUnmannedTraderControllerGetEmptyRecordSerial50_user(nullptr);
+        static info::CUnmannedTraderControllerGetMaxRegistCnt52_ptr CUnmannedTraderControllerGetMaxRegistCnt52_next(nullptr);
+        static info::CUnmannedTraderControllerGetMaxRegistCnt52_clbk CUnmannedTraderControllerGetMaxRegistCnt52_user(nullptr);
+        static info::CUnmannedTraderControllerGetRegItemInfo54_ptr CUnmannedTraderControllerGetRegItemInfo54_next(nullptr);
+        static info::CUnmannedTraderControllerGetRegItemInfo54_clbk CUnmannedTraderControllerGetRegItemInfo54_user(nullptr);
+        static info::CUnmannedTraderControllerInit56_ptr CUnmannedTraderControllerInit56_next(nullptr);
+        static info::CUnmannedTraderControllerInit56_clbk CUnmannedTraderControllerInit56_user(nullptr);
+        static info::CUnmannedTraderControllerInitLogger58_ptr CUnmannedTraderControllerInitLogger58_next(nullptr);
+        static info::CUnmannedTraderControllerInitLogger58_clbk CUnmannedTraderControllerInitLogger58_user(nullptr);
+        static info::CUnmannedTraderControllerInsertDefalutRecord60_ptr CUnmannedTraderControllerInsertDefalutRecord60_next(nullptr);
+        static info::CUnmannedTraderControllerInsertDefalutRecord60_clbk CUnmannedTraderControllerInsertDefalutRecord60_user(nullptr);
+        static info::CUnmannedTraderControllerInsertStateRecord62_ptr CUnmannedTraderControllerInsertStateRecord62_next(nullptr);
+        static info::CUnmannedTraderControllerInsertStateRecord62_clbk CUnmannedTraderControllerInsertStateRecord62_user(nullptr);
+        static info::CUnmannedTraderControllerInstance64_ptr CUnmannedTraderControllerInstance64_next(nullptr);
+        static info::CUnmannedTraderControllerInstance64_clbk CUnmannedTraderControllerInstance64_user(nullptr);
+        static info::CUnmannedTraderControllerLoad66_ptr CUnmannedTraderControllerLoad66_next(nullptr);
+        static info::CUnmannedTraderControllerLoad66_clbk CUnmannedTraderControllerLoad66_user(nullptr);
+        static info::CUnmannedTraderControllerLoad68_ptr CUnmannedTraderControllerLoad68_next(nullptr);
+        static info::CUnmannedTraderControllerLoad68_clbk CUnmannedTraderControllerLoad68_user(nullptr);
+        static info::CUnmannedTraderControllerLog70_ptr CUnmannedTraderControllerLog70_next(nullptr);
+        static info::CUnmannedTraderControllerLog70_clbk CUnmannedTraderControllerLog70_user(nullptr);
+        static info::CUnmannedTraderControllerLogOut72_ptr CUnmannedTraderControllerLogOut72_next(nullptr);
+        static info::CUnmannedTraderControllerLogOut72_clbk CUnmannedTraderControllerLogOut72_user(nullptr);
+        static info::CUnmannedTraderControllerLoop74_ptr CUnmannedTraderControllerLoop74_next(nullptr);
+        static info::CUnmannedTraderControllerLoop74_clbk CUnmannedTraderControllerLoop74_user(nullptr);
+        static info::CUnmannedTraderControllerModifyPrice76_ptr CUnmannedTraderControllerModifyPrice76_next(nullptr);
+        static info::CUnmannedTraderControllerModifyPrice76_clbk CUnmannedTraderControllerModifyPrice76_user(nullptr);
+        static info::CUnmannedTraderControllerReRegist78_ptr CUnmannedTraderControllerReRegist78_next(nullptr);
+        static info::CUnmannedTraderControllerReRegist78_clbk CUnmannedTraderControllerReRegist78_user(nullptr);
+        static info::CUnmannedTraderControllerRegist80_ptr CUnmannedTraderControllerRegist80_next(nullptr);
+        static info::CUnmannedTraderControllerRegist80_clbk CUnmannedTraderControllerRegist80_user(nullptr);
+        static info::CUnmannedTraderControllerSearch82_ptr CUnmannedTraderControllerSearch82_next(nullptr);
+        static info::CUnmannedTraderControllerSearch82_clbk CUnmannedTraderControllerSearch82_user(nullptr);
+        static info::CUnmannedTraderControllerSelectBuy84_ptr CUnmannedTraderControllerSelectBuy84_next(nullptr);
+        static info::CUnmannedTraderControllerSelectBuy84_clbk CUnmannedTraderControllerSelectBuy84_user(nullptr);
+        static info::CUnmannedTraderControllerSelectSearchList86_ptr CUnmannedTraderControllerSelectSearchList86_next(nullptr);
+        static info::CUnmannedTraderControllerSelectSearchList86_clbk CUnmannedTraderControllerSelectSearchList86_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuy88_ptr CUnmannedTraderControllerUpdateBuy88_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuy88_clbk CUnmannedTraderControllerUpdateBuy88_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuyComplete90_ptr CUnmannedTraderControllerUpdateBuyComplete90_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuyComplete90_clbk CUnmannedTraderControllerUpdateBuyComplete90_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuyRollBack92_ptr CUnmannedTraderControllerUpdateBuyRollBack92_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateBuyRollBack92_clbk CUnmannedTraderControllerUpdateBuyRollBack92_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateCancelRegist94_ptr CUnmannedTraderControllerUpdateCancelRegist94_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateCancelRegist94_clbk CUnmannedTraderControllerUpdateCancelRegist94_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateCheatRegistTime96_ptr CUnmannedTraderControllerUpdateCheatRegistTime96_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateCheatRegistTime96_clbk CUnmannedTraderControllerUpdateCheatRegistTime96_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_ptr CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_clbk CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateItemState100_ptr CUnmannedTraderControllerUpdateItemState100_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateItemState100_clbk CUnmannedTraderControllerUpdateItemState100_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateLazyClean102_ptr CUnmannedTraderControllerUpdateLazyClean102_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateLazyClean102_clbk CUnmannedTraderControllerUpdateLazyClean102_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateLogInComplete104_ptr CUnmannedTraderControllerUpdateLogInComplete104_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateLogInComplete104_clbk CUnmannedTraderControllerUpdateLogInComplete104_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateRePrice106_ptr CUnmannedTraderControllerUpdateRePrice106_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateRePrice106_clbk CUnmannedTraderControllerUpdateRePrice106_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateReRegist108_ptr CUnmannedTraderControllerUpdateReRegist108_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateReRegist108_clbk CUnmannedTraderControllerUpdateReRegist108_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateReRegistRollBack110_ptr CUnmannedTraderControllerUpdateReRegistRollBack110_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateReRegistRollBack110_clbk CUnmannedTraderControllerUpdateReRegistRollBack110_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateRegistItem112_ptr CUnmannedTraderControllerUpdateRegistItem112_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateRegistItem112_clbk CUnmannedTraderControllerUpdateRegistItem112_user(nullptr);
+        static info::CUnmannedTraderControllerUpdateTimeOutCancelRegist114_ptr CUnmannedTraderControllerUpdateTimeOutCancelRegist114_next(nullptr);
+        static info::CUnmannedTraderControllerUpdateTimeOutCancelRegist114_clbk CUnmannedTraderControllerUpdateTimeOutCancelRegist114_user(nullptr);
+        static info::CUnmannedTraderControllerdtor_CUnmannedTraderController118_ptr CUnmannedTraderControllerdtor_CUnmannedTraderController118_next(nullptr);
+        static info::CUnmannedTraderControllerdtor_CUnmannedTraderController118_clbk CUnmannedTraderControllerdtor_CUnmannedTraderController118_user(nullptr);
         
-        void CUnmannedTraderControllerBuy2_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_buy_item_request_clzo* pRequest)
+        static void CUnmannedTraderControllerBuy2_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_buy_item_request_clzo* pRequest)
         {
            CUnmannedTraderControllerBuy2_user(_this, wInx, pRequest, CUnmannedTraderControllerBuy2_next);
         };
-        void CUnmannedTraderControllerctor_CUnmannedTraderController4_wrapper(struct CUnmannedTraderController* _this)
+        static void CUnmannedTraderControllerctor_CUnmannedTraderController4_wrapper(struct CUnmannedTraderController* _this)
         {
            CUnmannedTraderControllerctor_CUnmannedTraderController4_user(_this, CUnmannedTraderControllerctor_CUnmannedTraderController4_next);
         };
-        void CUnmannedTraderControllerCancelRegist6_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_clear_item_request_clzo* pRequest)
+        static void CUnmannedTraderControllerCancelRegist6_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_clear_item_request_clzo* pRequest)
         {
            CUnmannedTraderControllerCancelRegist6_user(_this, wInx, pRequest, CUnmannedTraderControllerCancelRegist6_next);
         };
-        bool CUnmannedTraderControllerCheatCancelRegist8_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwOwnerSerial, char byNth)
+        static bool CUnmannedTraderControllerCheatCancelRegist8_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwOwnerSerial, char byNth)
         {
            return CUnmannedTraderControllerCheatCancelRegist8_user(_this, wInx, dwOwnerSerial, byNth, CUnmannedTraderControllerCheatCancelRegist8_next);
         };
-        char CUnmannedTraderControllerCheckDBItemState10_wrapper(struct CUnmannedTraderController* _this, char byType, unsigned int dwRegistSerial, char* byState, char* byProcRet)
+        static char CUnmannedTraderControllerCheckDBItemState10_wrapper(struct CUnmannedTraderController* _this, char byType, unsigned int dwRegistSerial, char* byState, char* byProcRet)
         {
            return CUnmannedTraderControllerCheckDBItemState10_user(_this, byType, dwRegistSerial, byState, byProcRet, CUnmannedTraderControllerCheckDBItemState10_next);
         };
-        void CUnmannedTraderControllerComleteLazyClean12_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static void CUnmannedTraderControllerComleteLazyClean12_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            CUnmannedTraderControllerComleteLazyClean12_user(_this, pData, CUnmannedTraderControllerComleteLazyClean12_next);
         };
-        void CUnmannedTraderControllerCompleteBuy14_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteBuy14_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteBuy14_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteBuy14_next);
         };
-        void CUnmannedTraderControllerCompleteBuyComplete16_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static void CUnmannedTraderControllerCompleteBuyComplete16_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            CUnmannedTraderControllerCompleteBuyComplete16_user(_this, pData, CUnmannedTraderControllerCompleteBuyComplete16_next);
         };
-        void CUnmannedTraderControllerCompleteBuyRollBack18_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteBuyRollBack18_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteBuyRollBack18_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteBuyRollBack18_next);
         };
-        void CUnmannedTraderControllerCompleteCancelRegist20_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteCancelRegist20_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteCancelRegist20_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteCancelRegist20_next);
         };
-        void CUnmannedTraderControllerCompleteCreate22_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx)
+        static void CUnmannedTraderControllerCompleteCreate22_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx)
         {
            CUnmannedTraderControllerCompleteCreate22_user(_this, wInx, CUnmannedTraderControllerCompleteCreate22_next);
         };
-        void CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_wrapper(struct CUnmannedTraderController* _this, char byRace, uint16_t wInx)
+        static void CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_wrapper(struct CUnmannedTraderController* _this, char byRace, uint16_t wInx)
         {
            CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_user(_this, byRace, wInx, CUnmannedTraderControllerCompleteCreateNotifyTradeInfo24_next);
         };
-        void CUnmannedTraderControllerCompleteLogInCompete26_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static void CUnmannedTraderControllerCompleteLogInCompete26_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            CUnmannedTraderControllerCompleteLogInCompete26_user(_this, pData, CUnmannedTraderControllerCompleteLogInCompete26_next);
         };
-        void CUnmannedTraderControllerCompleteReRegist28_wrapper(struct CUnmannedTraderController* _this, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteReRegist28_wrapper(struct CUnmannedTraderController* _this, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteReRegist28_user(_this, pLoadData, CUnmannedTraderControllerCompleteReRegist28_next);
         };
-        void CUnmannedTraderControllerCompleteReRegistRollBack30_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static void CUnmannedTraderControllerCompleteReRegistRollBack30_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            CUnmannedTraderControllerCompleteReRegistRollBack30_user(_this, pData, CUnmannedTraderControllerCompleteReRegistRollBack30_next);
         };
-        void CUnmannedTraderControllerCompleteRegistItem32_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteRegistItem32_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteRegistItem32_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteRegistItem32_next);
         };
-        void CUnmannedTraderControllerCompleteReprice34_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteReprice34_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteReprice34_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteReprice34_next);
         };
-        void CUnmannedTraderControllerCompleteSelectBuyInfo36_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteSelectBuyInfo36_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteSelectBuyInfo36_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteSelectBuyInfo36_next);
         };
-        void CUnmannedTraderControllerCompleteSelectReservedSchedule38_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteSelectReservedSchedule38_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteSelectReservedSchedule38_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteSelectReservedSchedule38_next);
         };
-        void CUnmannedTraderControllerCompleteSelectSearchList40_wrapper(struct CUnmannedTraderController* _this, char byDBRet, char byProcRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteSelectSearchList40_wrapper(struct CUnmannedTraderController* _this, char byDBRet, char byProcRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteSelectSearchList40_user(_this, byDBRet, byProcRet, pLoadData, CUnmannedTraderControllerCompleteSelectSearchList40_next);
         };
-        void CUnmannedTraderControllerCompleteTimeOutCancelRegist42_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteTimeOutCancelRegist42_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteTimeOutCancelRegist42_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteTimeOutCancelRegist42_next);
         };
-        void CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_wrapper(struct CUnmannedTraderController* _this, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_wrapper(struct CUnmannedTraderController* _this, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_user(_this, pLoadData, CUnmannedTraderControllerCompleteUpdateCheatRegistTime44_next);
         };
-        void CUnmannedTraderControllerCompleteUpdateState46_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
+        static void CUnmannedTraderControllerCompleteUpdateState46_wrapper(struct CUnmannedTraderController* _this, char byRet, char* pLoadData)
         {
            CUnmannedTraderControllerCompleteUpdateState46_user(_this, byRet, pLoadData, CUnmannedTraderControllerCompleteUpdateState46_next);
         };
-        void CUnmannedTraderControllerDestroy48_wrapper()
+        static void CUnmannedTraderControllerDestroy48_wrapper()
         {
            CUnmannedTraderControllerDestroy48_user(CUnmannedTraderControllerDestroy48_next);
         };
-        char CUnmannedTraderControllerGetEmptyRecordSerial50_wrapper(struct CUnmannedTraderController* _this, unsigned int* dwSerial, bool* pbRecordInserted)
+        static char CUnmannedTraderControllerGetEmptyRecordSerial50_wrapper(struct CUnmannedTraderController* _this, unsigned int* dwSerial, bool* pbRecordInserted)
         {
            return CUnmannedTraderControllerGetEmptyRecordSerial50_user(_this, dwSerial, pbRecordInserted, CUnmannedTraderControllerGetEmptyRecordSerial50_next);
         };
-        char CUnmannedTraderControllerGetMaxRegistCnt52_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
+        static char CUnmannedTraderControllerGetMaxRegistCnt52_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
         {
            return CUnmannedTraderControllerGetMaxRegistCnt52_user(_this, wInx, dwSerial, CUnmannedTraderControllerGetMaxRegistCnt52_next);
         };
-        struct CUnmannedTraderRegistItemInfo* CUnmannedTraderControllerGetRegItemInfo54_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
+        static struct CUnmannedTraderRegistItemInfo* CUnmannedTraderControllerGetRegItemInfo54_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
         {
            return CUnmannedTraderControllerGetRegItemInfo54_user(_this, wInx, dwSerial, CUnmannedTraderControllerGetRegItemInfo54_next);
         };
-        bool CUnmannedTraderControllerInit56_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerInit56_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerInit56_user(_this, CUnmannedTraderControllerInit56_next);
         };
-        bool CUnmannedTraderControllerInitLogger58_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerInitLogger58_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerInitLogger58_user(_this, CUnmannedTraderControllerInitLogger58_next);
         };
-        bool CUnmannedTraderControllerInsertDefalutRecord60_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerInsertDefalutRecord60_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerInsertDefalutRecord60_user(_this, CUnmannedTraderControllerInsertDefalutRecord60_next);
         };
-        bool CUnmannedTraderControllerInsertStateRecord62_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerInsertStateRecord62_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerInsertStateRecord62_user(_this, CUnmannedTraderControllerInsertStateRecord62_next);
         };
-        struct CUnmannedTraderController* CUnmannedTraderControllerInstance64_wrapper()
+        static struct CUnmannedTraderController* CUnmannedTraderControllerInstance64_wrapper()
         {
            return CUnmannedTraderControllerInstance64_user(CUnmannedTraderControllerInstance64_next);
         };
-        bool CUnmannedTraderControllerLoad66_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo)
+        static bool CUnmannedTraderControllerLoad66_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial, struct _TRADE_DB_BASE* kInfo)
         {
            return CUnmannedTraderControllerLoad66_user(_this, wInx, dwSerial, kInfo, CUnmannedTraderControllerLoad66_next);
         };
-        bool CUnmannedTraderControllerLoad68_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerLoad68_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerLoad68_user(_this, CUnmannedTraderControllerLoad68_next);
         };
-        void CUnmannedTraderControllerLog70_wrapper(struct CUnmannedTraderController* _this, char* fmt)
+        static void CUnmannedTraderControllerLog70_wrapper(struct CUnmannedTraderController* _this, char* fmt)
         {
            CUnmannedTraderControllerLog70_user(_this, fmt, CUnmannedTraderControllerLog70_next);
         };
-        void CUnmannedTraderControllerLogOut72_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
+        static void CUnmannedTraderControllerLogOut72_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, unsigned int dwSerial)
         {
            CUnmannedTraderControllerLogOut72_user(_this, wInx, dwSerial, CUnmannedTraderControllerLogOut72_next);
         };
-        void CUnmannedTraderControllerLoop74_wrapper(struct CUnmannedTraderController* _this)
+        static void CUnmannedTraderControllerLoop74_wrapper(struct CUnmannedTraderController* _this)
         {
            CUnmannedTraderControllerLoop74_user(_this, CUnmannedTraderControllerLoop74_next);
         };
-        void CUnmannedTraderControllerModifyPrice76_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_adjust_price_request_clzo* pRequest)
+        static void CUnmannedTraderControllerModifyPrice76_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_adjust_price_request_clzo* pRequest)
         {
            CUnmannedTraderControllerModifyPrice76_user(_this, wInx, pRequest, CUnmannedTraderControllerModifyPrice76_next);
         };
-        void CUnmannedTraderControllerReRegist78_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_re_regist_request_clzo* pRequest)
+        static void CUnmannedTraderControllerReRegist78_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_re_regist_request_clzo* pRequest)
         {
            CUnmannedTraderControllerReRegist78_user(_this, wInx, pRequest, CUnmannedTraderControllerReRegist78_next);
         };
-        void CUnmannedTraderControllerRegist80_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_reg_item_request_clzo* pRequest)
+        static void CUnmannedTraderControllerRegist80_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _a_trade_reg_item_request_clzo* pRequest)
         {
            CUnmannedTraderControllerRegist80_user(_this, wInx, pRequest, CUnmannedTraderControllerRegist80_next);
         };
-        void CUnmannedTraderControllerSearch82_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_search_list_request_clzo* pRequest)
+        static void CUnmannedTraderControllerSearch82_wrapper(struct CUnmannedTraderController* _this, uint16_t wInx, struct _unmannedtrader_search_list_request_clzo* pRequest)
         {
            CUnmannedTraderControllerSearch82_user(_this, wInx, pRequest, CUnmannedTraderControllerSearch82_next);
         };
-        char CUnmannedTraderControllerSelectBuy84_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerSelectBuy84_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerSelectBuy84_user(_this, pData, CUnmannedTraderControllerSelectBuy84_next);
         };
-        char CUnmannedTraderControllerSelectSearchList86_wrapper(struct CUnmannedTraderController* _this, char* pData, struct CRFWorldDatabase* pkWorldDB, char* byProcRet)
+        static char CUnmannedTraderControllerSelectSearchList86_wrapper(struct CUnmannedTraderController* _this, char* pData, struct CRFWorldDatabase* pkWorldDB, char* byProcRet)
         {
            return CUnmannedTraderControllerSelectSearchList86_user(_this, pData, pkWorldDB, byProcRet, CUnmannedTraderControllerSelectSearchList86_next);
         };
-        char CUnmannedTraderControllerUpdateBuy88_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateBuy88_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateBuy88_user(_this, pData, CUnmannedTraderControllerUpdateBuy88_next);
         };
-        char CUnmannedTraderControllerUpdateBuyComplete90_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateBuyComplete90_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateBuyComplete90_user(_this, pData, CUnmannedTraderControllerUpdateBuyComplete90_next);
         };
-        char CUnmannedTraderControllerUpdateBuyRollBack92_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateBuyRollBack92_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateBuyRollBack92_user(_this, pData, CUnmannedTraderControllerUpdateBuyRollBack92_next);
         };
-        char CUnmannedTraderControllerUpdateCancelRegist94_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateCancelRegist94_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateCancelRegist94_user(_this, pData, CUnmannedTraderControllerUpdateCancelRegist94_next);
         };
-        char CUnmannedTraderControllerUpdateCheatRegistTime96_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateCheatRegistTime96_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateCheatRegistTime96_user(_this, pData, CUnmannedTraderControllerUpdateCheatRegistTime96_next);
         };
-        bool CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_wrapper(struct CUnmannedTraderController* _this)
+        static bool CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_wrapper(struct CUnmannedTraderController* _this)
         {
            return CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_user(_this, CUnmannedTraderControllerUpdateClearDanglingOwnerRecord98_next);
         };
-        char CUnmannedTraderControllerUpdateItemState100_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateItemState100_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateItemState100_user(_this, pData, CUnmannedTraderControllerUpdateItemState100_next);
         };
-        char CUnmannedTraderControllerUpdateLazyClean102_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateLazyClean102_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateLazyClean102_user(_this, pData, CUnmannedTraderControllerUpdateLazyClean102_next);
         };
-        char CUnmannedTraderControllerUpdateLogInComplete104_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateLogInComplete104_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateLogInComplete104_user(_this, pData, CUnmannedTraderControllerUpdateLogInComplete104_next);
         };
-        char CUnmannedTraderControllerUpdateRePrice106_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateRePrice106_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateRePrice106_user(_this, pData, CUnmannedTraderControllerUpdateRePrice106_next);
         };
-        char CUnmannedTraderControllerUpdateReRegist108_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateReRegist108_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateReRegist108_user(_this, pData, CUnmannedTraderControllerUpdateReRegist108_next);
         };
-        char CUnmannedTraderControllerUpdateReRegistRollBack110_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateReRegistRollBack110_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateReRegistRollBack110_user(_this, pData, CUnmannedTraderControllerUpdateReRegistRollBack110_next);
         };
-        char CUnmannedTraderControllerUpdateRegistItem112_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateRegistItem112_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateRegistItem112_user(_this, pData, CUnmannedTraderControllerUpdateRegistItem112_next);
         };
-        char CUnmannedTraderControllerUpdateTimeOutCancelRegist114_wrapper(struct CUnmannedTraderController* _this, char* pData)
+        static char CUnmannedTraderControllerUpdateTimeOutCancelRegist114_wrapper(struct CUnmannedTraderController* _this, char* pData)
         {
            return CUnmannedTraderControllerUpdateTimeOutCancelRegist114_user(_this, pData, CUnmannedTraderControllerUpdateTimeOutCancelRegist114_next);
         };
-        void CUnmannedTraderControllerdtor_CUnmannedTraderController118_wrapper(struct CUnmannedTraderController* _this)
+        static void CUnmannedTraderControllerdtor_CUnmannedTraderController118_wrapper(struct CUnmannedTraderController* _this)
         {
            CUnmannedTraderControllerdtor_CUnmannedTraderController118_user(_this, CUnmannedTraderControllerdtor_CUnmannedTraderController118_next);
         };
         
-        hook_record CUnmannedTraderController_functions[] = {
+        static hook_record CUnmannedTraderController_functions[] = {
         {   (LPVOID)0x1401d4920L,
             (LPVOID *)&CUnmannedTraderControllerBuy2_user,
             (LPVOID *)&CUnmannedTraderControllerBuy2_next,
@@ -652,5 +652,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

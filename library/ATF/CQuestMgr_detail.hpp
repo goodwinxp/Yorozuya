@@ -8,291 +8,291 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CQuestMgrctor_CQuestMgr2_ptr CQuestMgrctor_CQuestMgr2_next(nullptr);
-        info::CQuestMgrctor_CQuestMgr2_clbk CQuestMgrctor_CQuestMgr2_user(nullptr);
-        info::CQuestMgrCalcStartNPCQuestCnt4_ptr CQuestMgrCalcStartNPCQuestCnt4_next(nullptr);
-        info::CQuestMgrCalcStartNPCQuestCnt4_clbk CQuestMgrCalcStartNPCQuestCnt4_user(nullptr);
-        info::CQuestMgrCanGiveupQuest6_ptr CQuestMgrCanGiveupQuest6_next(nullptr);
-        info::CQuestMgrCanGiveupQuest6_clbk CQuestMgrCanGiveupQuest6_user(nullptr);
-        info::CQuestMgrCheckFailCondition8_ptr CQuestMgrCheckFailCondition8_next(nullptr);
-        info::CQuestMgrCheckFailCondition8_clbk CQuestMgrCheckFailCondition8_user(nullptr);
-        info::CQuestMgrCheckFailLoop10_ptr CQuestMgrCheckFailLoop10_next(nullptr);
-        info::CQuestMgrCheckFailLoop10_clbk CQuestMgrCheckFailLoop10_user(nullptr);
-        info::CQuestMgrCheckLimLv12_ptr CQuestMgrCheckLimLv12_next(nullptr);
-        info::CQuestMgrCheckLimLv12_clbk CQuestMgrCheckLimLv12_user(nullptr);
-        info::CQuestMgrCheckNPCQuestList14_ptr CQuestMgrCheckNPCQuestList14_next(nullptr);
-        info::CQuestMgrCheckNPCQuestList14_clbk CQuestMgrCheckNPCQuestList14_user(nullptr);
-        info::CQuestMgrCheckNPCQuestStartable16_ptr CQuestMgrCheckNPCQuestStartable16_next(nullptr);
-        info::CQuestMgrCheckNPCQuestStartable16_clbk CQuestMgrCheckNPCQuestStartable16_user(nullptr);
-        info::CQuestMgrCheckQuestHappenEvent18_ptr CQuestMgrCheckQuestHappenEvent18_next(nullptr);
-        info::CQuestMgrCheckQuestHappenEvent18_clbk CQuestMgrCheckQuestHappenEvent18_user(nullptr);
-        info::CQuestMgrCheckReqAct20_ptr CQuestMgrCheckReqAct20_next(nullptr);
-        info::CQuestMgrCheckReqAct20_clbk CQuestMgrCheckReqAct20_user(nullptr);
-        info::CQuestMgrCheckRewardMasteryData22_ptr CQuestMgrCheckRewardMasteryData22_next(nullptr);
-        info::CQuestMgrCheckRewardMasteryData22_clbk CQuestMgrCheckRewardMasteryData22_user(nullptr);
-        info::CQuestMgrDeleteQuestData24_ptr CQuestMgrDeleteQuestData24_next(nullptr);
-        info::CQuestMgrDeleteQuestData24_clbk CQuestMgrDeleteQuestData24_user(nullptr);
-        info::CQuestMgrDeleteQuestItem26_ptr CQuestMgrDeleteQuestItem26_next(nullptr);
-        info::CQuestMgrDeleteQuestItem26_clbk CQuestMgrDeleteQuestItem26_user(nullptr);
-        info::CQuestMgrGetCountQuestType28_ptr CQuestMgrGetCountQuestType28_next(nullptr);
-        info::CQuestMgrGetCountQuestType28_clbk CQuestMgrGetCountQuestType28_user(nullptr);
-        info::CQuestMgrGetLastHappenEvent30_ptr CQuestMgrGetLastHappenEvent30_next(nullptr);
-        info::CQuestMgrGetLastHappenEvent30_clbk CQuestMgrGetLastHappenEvent30_user(nullptr);
-        info::CQuestMgrGetQuestFromEvent32_ptr CQuestMgrGetQuestFromEvent32_next(nullptr);
-        info::CQuestMgrGetQuestFromEvent32_clbk CQuestMgrGetQuestFromEvent32_user(nullptr);
-        info::CQuestMgrGiveItem34_ptr CQuestMgrGiveItem34_next(nullptr);
-        info::CQuestMgrGiveItem34_clbk CQuestMgrGiveItem34_user(nullptr);
-        info::CQuestMgrInitMgr36_ptr CQuestMgrInitMgr36_next(nullptr);
-        info::CQuestMgrInitMgr36_clbk CQuestMgrInitMgr36_user(nullptr);
-        info::CQuestMgrInsertNpcQuestHistory38_ptr CQuestMgrInsertNpcQuestHistory38_next(nullptr);
-        info::CQuestMgrInsertNpcQuestHistory38_clbk CQuestMgrInsertNpcQuestHistory38_user(nullptr);
-        info::CQuestMgrIsCompleteNpcQuest40_ptr CQuestMgrIsCompleteNpcQuest40_next(nullptr);
-        info::CQuestMgrIsCompleteNpcQuest40_clbk CQuestMgrIsCompleteNpcQuest40_user(nullptr);
-        info::CQuestMgrIsPossibleRepeatNpcQuest42_ptr CQuestMgrIsPossibleRepeatNpcQuest42_next(nullptr);
-        info::CQuestMgrIsPossibleRepeatNpcQuest42_clbk CQuestMgrIsPossibleRepeatNpcQuest42_user(nullptr);
-        info::CQuestMgrIsProcLinkNpcQuest44_ptr CQuestMgrIsProcLinkNpcQuest44_next(nullptr);
-        info::CQuestMgrIsProcLinkNpcQuest44_clbk CQuestMgrIsProcLinkNpcQuest44_user(nullptr);
-        info::CQuestMgrIsProcNpcQuest46_ptr CQuestMgrIsProcNpcQuest46_next(nullptr);
-        info::CQuestMgrIsProcNpcQuest46_clbk CQuestMgrIsProcNpcQuest46_user(nullptr);
-        info::CQuestMgrIsRecvedQuestByNPC48_ptr CQuestMgrIsRecvedQuestByNPC48_next(nullptr);
-        info::CQuestMgrIsRecvedQuestByNPC48_clbk CQuestMgrIsRecvedQuestByNPC48_user(nullptr);
-        info::CQuestMgrIsRecvedQuestByNPC50_ptr CQuestMgrIsRecvedQuestByNPC50_next(nullptr);
-        info::CQuestMgrIsRecvedQuestByNPC50_clbk CQuestMgrIsRecvedQuestByNPC50_user(nullptr);
-        info::CQuestMgrLoadQuestData52_ptr CQuestMgrLoadQuestData52_next(nullptr);
-        info::CQuestMgrLoadQuestData52_clbk CQuestMgrLoadQuestData52_user(nullptr);
-        info::CQuestMgrLoop54_ptr CQuestMgrLoop54_next(nullptr);
-        info::CQuestMgrLoop54_clbk CQuestMgrLoop54_user(nullptr);
-        info::CQuestMgrReturnItem56_ptr CQuestMgrReturnItem56_next(nullptr);
-        info::CQuestMgrReturnItem56_clbk CQuestMgrReturnItem56_user(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_ptr CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_next(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_clbk CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_user(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoHaveGiveItem60_ptr CQuestMgrSendMsgToMaster_NoHaveGiveItem60_next(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoHaveGiveItem60_clbk CQuestMgrSendMsgToMaster_NoHaveGiveItem60_user(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoHaveReturnItem62_ptr CQuestMgrSendMsgToMaster_NoHaveReturnItem62_next(nullptr);
-        info::CQuestMgrSendMsgToMaster_NoHaveReturnItem62_clbk CQuestMgrSendMsgToMaster_NoHaveReturnItem62_user(nullptr);
-        info::CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_ptr CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_next(nullptr);
-        info::CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_clbk CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_user(nullptr);
-        info::CQuestMgr_CheckCondition66_ptr CQuestMgr_CheckCondition66_next(nullptr);
-        info::CQuestMgr_CheckCondition66_clbk CQuestMgr_CheckCondition66_user(nullptr);
-        info::CQuestMgr__CheckCond_Class68_ptr CQuestMgr__CheckCond_Class68_next(nullptr);
-        info::CQuestMgr__CheckCond_Class68_clbk CQuestMgr__CheckCond_Class68_user(nullptr);
-        info::CQuestMgr__CheckCond_Dalant70_ptr CQuestMgr__CheckCond_Dalant70_next(nullptr);
-        info::CQuestMgr__CheckCond_Dalant70_clbk CQuestMgr__CheckCond_Dalant70_user(nullptr);
-        info::CQuestMgr__CheckCond_Dummy72_ptr CQuestMgr__CheckCond_Dummy72_next(nullptr);
-        info::CQuestMgr__CheckCond_Dummy72_clbk CQuestMgr__CheckCond_Dummy72_user(nullptr);
-        info::CQuestMgr__CheckCond_Equip74_ptr CQuestMgr__CheckCond_Equip74_next(nullptr);
-        info::CQuestMgr__CheckCond_Equip74_clbk CQuestMgr__CheckCond_Equip74_user(nullptr);
-        info::CQuestMgr__CheckCond_Gold76_ptr CQuestMgr__CheckCond_Gold76_next(nullptr);
-        info::CQuestMgr__CheckCond_Gold76_clbk CQuestMgr__CheckCond_Gold76_user(nullptr);
-        info::CQuestMgr__CheckCond_Grade78_ptr CQuestMgr__CheckCond_Grade78_next(nullptr);
-        info::CQuestMgr__CheckCond_Grade78_clbk CQuestMgr__CheckCond_Grade78_user(nullptr);
-        info::CQuestMgr__CheckCond_Guild80_ptr CQuestMgr__CheckCond_Guild80_next(nullptr);
-        info::CQuestMgr__CheckCond_Guild80_clbk CQuestMgr__CheckCond_Guild80_user(nullptr);
-        info::CQuestMgr__CheckCond_Have82_ptr CQuestMgr__CheckCond_Have82_next(nullptr);
-        info::CQuestMgr__CheckCond_Have82_clbk CQuestMgr__CheckCond_Have82_user(nullptr);
-        info::CQuestMgr__CheckCond_LV84_ptr CQuestMgr__CheckCond_LV84_next(nullptr);
-        info::CQuestMgr__CheckCond_LV84_clbk CQuestMgr__CheckCond_LV84_user(nullptr);
-        info::CQuestMgr__CheckCond_Mastery86_ptr CQuestMgr__CheckCond_Mastery86_next(nullptr);
-        info::CQuestMgr__CheckCond_Mastery86_clbk CQuestMgr__CheckCond_Mastery86_user(nullptr);
-        info::CQuestMgr__CheckCond_Nation88_ptr CQuestMgr__CheckCond_Nation88_next(nullptr);
-        info::CQuestMgr__CheckCond_Nation88_clbk CQuestMgr__CheckCond_Nation88_user(nullptr);
-        info::CQuestMgr__CheckCond_Party90_ptr CQuestMgr__CheckCond_Party90_next(nullptr);
-        info::CQuestMgr__CheckCond_Party90_clbk CQuestMgr__CheckCond_Party90_user(nullptr);
-        info::CQuestMgr__CheckCond_Race92_ptr CQuestMgr__CheckCond_Race92_next(nullptr);
-        info::CQuestMgr__CheckCond_Race92_clbk CQuestMgr__CheckCond_Race92_user(nullptr);
-        info::CQuestMgrdtor_CQuestMgr94_ptr CQuestMgrdtor_CQuestMgr94_next(nullptr);
-        info::CQuestMgrdtor_CQuestMgr94_clbk CQuestMgrdtor_CQuestMgr94_user(nullptr);
+        static info::CQuestMgrctor_CQuestMgr2_ptr CQuestMgrctor_CQuestMgr2_next(nullptr);
+        static info::CQuestMgrctor_CQuestMgr2_clbk CQuestMgrctor_CQuestMgr2_user(nullptr);
+        static info::CQuestMgrCalcStartNPCQuestCnt4_ptr CQuestMgrCalcStartNPCQuestCnt4_next(nullptr);
+        static info::CQuestMgrCalcStartNPCQuestCnt4_clbk CQuestMgrCalcStartNPCQuestCnt4_user(nullptr);
+        static info::CQuestMgrCanGiveupQuest6_ptr CQuestMgrCanGiveupQuest6_next(nullptr);
+        static info::CQuestMgrCanGiveupQuest6_clbk CQuestMgrCanGiveupQuest6_user(nullptr);
+        static info::CQuestMgrCheckFailCondition8_ptr CQuestMgrCheckFailCondition8_next(nullptr);
+        static info::CQuestMgrCheckFailCondition8_clbk CQuestMgrCheckFailCondition8_user(nullptr);
+        static info::CQuestMgrCheckFailLoop10_ptr CQuestMgrCheckFailLoop10_next(nullptr);
+        static info::CQuestMgrCheckFailLoop10_clbk CQuestMgrCheckFailLoop10_user(nullptr);
+        static info::CQuestMgrCheckLimLv12_ptr CQuestMgrCheckLimLv12_next(nullptr);
+        static info::CQuestMgrCheckLimLv12_clbk CQuestMgrCheckLimLv12_user(nullptr);
+        static info::CQuestMgrCheckNPCQuestList14_ptr CQuestMgrCheckNPCQuestList14_next(nullptr);
+        static info::CQuestMgrCheckNPCQuestList14_clbk CQuestMgrCheckNPCQuestList14_user(nullptr);
+        static info::CQuestMgrCheckNPCQuestStartable16_ptr CQuestMgrCheckNPCQuestStartable16_next(nullptr);
+        static info::CQuestMgrCheckNPCQuestStartable16_clbk CQuestMgrCheckNPCQuestStartable16_user(nullptr);
+        static info::CQuestMgrCheckQuestHappenEvent18_ptr CQuestMgrCheckQuestHappenEvent18_next(nullptr);
+        static info::CQuestMgrCheckQuestHappenEvent18_clbk CQuestMgrCheckQuestHappenEvent18_user(nullptr);
+        static info::CQuestMgrCheckReqAct20_ptr CQuestMgrCheckReqAct20_next(nullptr);
+        static info::CQuestMgrCheckReqAct20_clbk CQuestMgrCheckReqAct20_user(nullptr);
+        static info::CQuestMgrCheckRewardMasteryData22_ptr CQuestMgrCheckRewardMasteryData22_next(nullptr);
+        static info::CQuestMgrCheckRewardMasteryData22_clbk CQuestMgrCheckRewardMasteryData22_user(nullptr);
+        static info::CQuestMgrDeleteQuestData24_ptr CQuestMgrDeleteQuestData24_next(nullptr);
+        static info::CQuestMgrDeleteQuestData24_clbk CQuestMgrDeleteQuestData24_user(nullptr);
+        static info::CQuestMgrDeleteQuestItem26_ptr CQuestMgrDeleteQuestItem26_next(nullptr);
+        static info::CQuestMgrDeleteQuestItem26_clbk CQuestMgrDeleteQuestItem26_user(nullptr);
+        static info::CQuestMgrGetCountQuestType28_ptr CQuestMgrGetCountQuestType28_next(nullptr);
+        static info::CQuestMgrGetCountQuestType28_clbk CQuestMgrGetCountQuestType28_user(nullptr);
+        static info::CQuestMgrGetLastHappenEvent30_ptr CQuestMgrGetLastHappenEvent30_next(nullptr);
+        static info::CQuestMgrGetLastHappenEvent30_clbk CQuestMgrGetLastHappenEvent30_user(nullptr);
+        static info::CQuestMgrGetQuestFromEvent32_ptr CQuestMgrGetQuestFromEvent32_next(nullptr);
+        static info::CQuestMgrGetQuestFromEvent32_clbk CQuestMgrGetQuestFromEvent32_user(nullptr);
+        static info::CQuestMgrGiveItem34_ptr CQuestMgrGiveItem34_next(nullptr);
+        static info::CQuestMgrGiveItem34_clbk CQuestMgrGiveItem34_user(nullptr);
+        static info::CQuestMgrInitMgr36_ptr CQuestMgrInitMgr36_next(nullptr);
+        static info::CQuestMgrInitMgr36_clbk CQuestMgrInitMgr36_user(nullptr);
+        static info::CQuestMgrInsertNpcQuestHistory38_ptr CQuestMgrInsertNpcQuestHistory38_next(nullptr);
+        static info::CQuestMgrInsertNpcQuestHistory38_clbk CQuestMgrInsertNpcQuestHistory38_user(nullptr);
+        static info::CQuestMgrIsCompleteNpcQuest40_ptr CQuestMgrIsCompleteNpcQuest40_next(nullptr);
+        static info::CQuestMgrIsCompleteNpcQuest40_clbk CQuestMgrIsCompleteNpcQuest40_user(nullptr);
+        static info::CQuestMgrIsPossibleRepeatNpcQuest42_ptr CQuestMgrIsPossibleRepeatNpcQuest42_next(nullptr);
+        static info::CQuestMgrIsPossibleRepeatNpcQuest42_clbk CQuestMgrIsPossibleRepeatNpcQuest42_user(nullptr);
+        static info::CQuestMgrIsProcLinkNpcQuest44_ptr CQuestMgrIsProcLinkNpcQuest44_next(nullptr);
+        static info::CQuestMgrIsProcLinkNpcQuest44_clbk CQuestMgrIsProcLinkNpcQuest44_user(nullptr);
+        static info::CQuestMgrIsProcNpcQuest46_ptr CQuestMgrIsProcNpcQuest46_next(nullptr);
+        static info::CQuestMgrIsProcNpcQuest46_clbk CQuestMgrIsProcNpcQuest46_user(nullptr);
+        static info::CQuestMgrIsRecvedQuestByNPC48_ptr CQuestMgrIsRecvedQuestByNPC48_next(nullptr);
+        static info::CQuestMgrIsRecvedQuestByNPC48_clbk CQuestMgrIsRecvedQuestByNPC48_user(nullptr);
+        static info::CQuestMgrIsRecvedQuestByNPC50_ptr CQuestMgrIsRecvedQuestByNPC50_next(nullptr);
+        static info::CQuestMgrIsRecvedQuestByNPC50_clbk CQuestMgrIsRecvedQuestByNPC50_user(nullptr);
+        static info::CQuestMgrLoadQuestData52_ptr CQuestMgrLoadQuestData52_next(nullptr);
+        static info::CQuestMgrLoadQuestData52_clbk CQuestMgrLoadQuestData52_user(nullptr);
+        static info::CQuestMgrLoop54_ptr CQuestMgrLoop54_next(nullptr);
+        static info::CQuestMgrLoop54_clbk CQuestMgrLoop54_user(nullptr);
+        static info::CQuestMgrReturnItem56_ptr CQuestMgrReturnItem56_next(nullptr);
+        static info::CQuestMgrReturnItem56_clbk CQuestMgrReturnItem56_user(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_ptr CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_next(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_clbk CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_user(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoHaveGiveItem60_ptr CQuestMgrSendMsgToMaster_NoHaveGiveItem60_next(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoHaveGiveItem60_clbk CQuestMgrSendMsgToMaster_NoHaveGiveItem60_user(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoHaveReturnItem62_ptr CQuestMgrSendMsgToMaster_NoHaveReturnItem62_next(nullptr);
+        static info::CQuestMgrSendMsgToMaster_NoHaveReturnItem62_clbk CQuestMgrSendMsgToMaster_NoHaveReturnItem62_user(nullptr);
+        static info::CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_ptr CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_next(nullptr);
+        static info::CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_clbk CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_user(nullptr);
+        static info::CQuestMgr_CheckCondition66_ptr CQuestMgr_CheckCondition66_next(nullptr);
+        static info::CQuestMgr_CheckCondition66_clbk CQuestMgr_CheckCondition66_user(nullptr);
+        static info::CQuestMgr__CheckCond_Class68_ptr CQuestMgr__CheckCond_Class68_next(nullptr);
+        static info::CQuestMgr__CheckCond_Class68_clbk CQuestMgr__CheckCond_Class68_user(nullptr);
+        static info::CQuestMgr__CheckCond_Dalant70_ptr CQuestMgr__CheckCond_Dalant70_next(nullptr);
+        static info::CQuestMgr__CheckCond_Dalant70_clbk CQuestMgr__CheckCond_Dalant70_user(nullptr);
+        static info::CQuestMgr__CheckCond_Dummy72_ptr CQuestMgr__CheckCond_Dummy72_next(nullptr);
+        static info::CQuestMgr__CheckCond_Dummy72_clbk CQuestMgr__CheckCond_Dummy72_user(nullptr);
+        static info::CQuestMgr__CheckCond_Equip74_ptr CQuestMgr__CheckCond_Equip74_next(nullptr);
+        static info::CQuestMgr__CheckCond_Equip74_clbk CQuestMgr__CheckCond_Equip74_user(nullptr);
+        static info::CQuestMgr__CheckCond_Gold76_ptr CQuestMgr__CheckCond_Gold76_next(nullptr);
+        static info::CQuestMgr__CheckCond_Gold76_clbk CQuestMgr__CheckCond_Gold76_user(nullptr);
+        static info::CQuestMgr__CheckCond_Grade78_ptr CQuestMgr__CheckCond_Grade78_next(nullptr);
+        static info::CQuestMgr__CheckCond_Grade78_clbk CQuestMgr__CheckCond_Grade78_user(nullptr);
+        static info::CQuestMgr__CheckCond_Guild80_ptr CQuestMgr__CheckCond_Guild80_next(nullptr);
+        static info::CQuestMgr__CheckCond_Guild80_clbk CQuestMgr__CheckCond_Guild80_user(nullptr);
+        static info::CQuestMgr__CheckCond_Have82_ptr CQuestMgr__CheckCond_Have82_next(nullptr);
+        static info::CQuestMgr__CheckCond_Have82_clbk CQuestMgr__CheckCond_Have82_user(nullptr);
+        static info::CQuestMgr__CheckCond_LV84_ptr CQuestMgr__CheckCond_LV84_next(nullptr);
+        static info::CQuestMgr__CheckCond_LV84_clbk CQuestMgr__CheckCond_LV84_user(nullptr);
+        static info::CQuestMgr__CheckCond_Mastery86_ptr CQuestMgr__CheckCond_Mastery86_next(nullptr);
+        static info::CQuestMgr__CheckCond_Mastery86_clbk CQuestMgr__CheckCond_Mastery86_user(nullptr);
+        static info::CQuestMgr__CheckCond_Nation88_ptr CQuestMgr__CheckCond_Nation88_next(nullptr);
+        static info::CQuestMgr__CheckCond_Nation88_clbk CQuestMgr__CheckCond_Nation88_user(nullptr);
+        static info::CQuestMgr__CheckCond_Party90_ptr CQuestMgr__CheckCond_Party90_next(nullptr);
+        static info::CQuestMgr__CheckCond_Party90_clbk CQuestMgr__CheckCond_Party90_user(nullptr);
+        static info::CQuestMgr__CheckCond_Race92_ptr CQuestMgr__CheckCond_Race92_next(nullptr);
+        static info::CQuestMgr__CheckCond_Race92_clbk CQuestMgr__CheckCond_Race92_user(nullptr);
+        static info::CQuestMgrdtor_CQuestMgr94_ptr CQuestMgrdtor_CQuestMgr94_next(nullptr);
+        static info::CQuestMgrdtor_CQuestMgr94_clbk CQuestMgrdtor_CQuestMgr94_user(nullptr);
         
-        void CQuestMgrctor_CQuestMgr2_wrapper(struct CQuestMgr* _this)
+        static void CQuestMgrctor_CQuestMgr2_wrapper(struct CQuestMgr* _this)
         {
            CQuestMgrctor_CQuestMgr2_user(_this, CQuestMgrctor_CQuestMgr2_next);
         };
-        bool CQuestMgrCalcStartNPCQuestCnt4_wrapper(unsigned int* pdwCnt)
+        static bool CQuestMgrCalcStartNPCQuestCnt4_wrapper(unsigned int* pdwCnt)
         {
            return CQuestMgrCalcStartNPCQuestCnt4_user(pdwCnt, CQuestMgrCalcStartNPCQuestCnt4_next);
         };
-        bool CQuestMgrCanGiveupQuest6_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
+        static bool CQuestMgrCanGiveupQuest6_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
         {
            return CQuestMgrCanGiveupQuest6_user(_this, byQuestDBSlot, CQuestMgrCanGiveupQuest6_next);
         };
-        bool CQuestMgrCheckFailCondition8_wrapper(struct CQuestMgr* _this, char byQuestDBSlot, int nFailCond, char* pszCode)
+        static bool CQuestMgrCheckFailCondition8_wrapper(struct CQuestMgr* _this, char byQuestDBSlot, int nFailCond, char* pszCode)
         {
            return CQuestMgrCheckFailCondition8_user(_this, byQuestDBSlot, nFailCond, pszCode, CQuestMgrCheckFailCondition8_next);
         };
-        void CQuestMgrCheckFailLoop10_wrapper(struct CQuestMgr* _this, int nFailCond, char* pszCode)
+        static void CQuestMgrCheckFailLoop10_wrapper(struct CQuestMgr* _this, int nFailCond, char* pszCode)
         {
            CQuestMgrCheckFailLoop10_user(_this, nFailCond, pszCode, CQuestMgrCheckFailLoop10_next);
         };
-        struct _quest_fail_result* CQuestMgrCheckLimLv12_wrapper(struct CQuestMgr* _this, int nNewLv)
+        static struct _quest_fail_result* CQuestMgrCheckLimLv12_wrapper(struct CQuestMgr* _this, int nNewLv)
         {
            return CQuestMgrCheckLimLv12_user(_this, nNewLv, CQuestMgrCheckLimLv12_next);
         };
-        void CQuestMgrCheckNPCQuestList14_wrapper(struct CQuestMgr* _this, char* pszEventCode, char byRaceCode, struct _NPCQuestIndexTempData* pQuestIndexData)
+        static void CQuestMgrCheckNPCQuestList14_wrapper(struct CQuestMgr* _this, char* pszEventCode, char byRaceCode, struct _NPCQuestIndexTempData* pQuestIndexData)
         {
            CQuestMgrCheckNPCQuestList14_user(_this, pszEventCode, byRaceCode, pQuestIndexData, CQuestMgrCheckNPCQuestList14_next);
         };
-        struct _happen_event_cont* CQuestMgrCheckNPCQuestStartable16_wrapper(struct CQuestMgr* _this, char* pszEventCode, char byRaceCode, unsigned int dwQuestIndex, unsigned int dwHappenIndex)
+        static struct _happen_event_cont* CQuestMgrCheckNPCQuestStartable16_wrapper(struct CQuestMgr* _this, char* pszEventCode, char byRaceCode, unsigned int dwQuestIndex, unsigned int dwHappenIndex)
         {
            return CQuestMgrCheckNPCQuestStartable16_user(_this, pszEventCode, byRaceCode, dwQuestIndex, dwHappenIndex, CQuestMgrCheckNPCQuestStartable16_next);
         };
-        struct _happen_event_cont* CQuestMgrCheckQuestHappenEvent18_wrapper(struct CQuestMgr* _this, QUEST_HAPPEN HappenType, char* pszEventCode, char byRaceCode)
+        static struct _happen_event_cont* CQuestMgrCheckQuestHappenEvent18_wrapper(struct CQuestMgr* _this, QUEST_HAPPEN HappenType, char* pszEventCode, char byRaceCode)
         {
            return CQuestMgrCheckQuestHappenEvent18_user(_this, HappenType, pszEventCode, byRaceCode, CQuestMgrCheckQuestHappenEvent18_next);
         };
-        struct _quest_check_result* CQuestMgrCheckReqAct20_wrapper(struct CQuestMgr* _this, int nActCode, char* pszReqCode, uint16_t wActCount, bool bPartyState)
+        static struct _quest_check_result* CQuestMgrCheckReqAct20_wrapper(struct CQuestMgr* _this, int nActCode, char* pszReqCode, uint16_t wActCount, bool bPartyState)
         {
            return CQuestMgrCheckReqAct20_user(_this, nActCode, pszReqCode, wActCount, bPartyState, CQuestMgrCheckReqAct20_next);
         };
-        bool CQuestMgrCheckRewardMasteryData22_wrapper(int iInx, int iNth, struct _quest_reward_mastery* pData)
+        static bool CQuestMgrCheckRewardMasteryData22_wrapper(int iInx, int iNth, struct _quest_reward_mastery* pData)
         {
            return CQuestMgrCheckRewardMasteryData22_user(iInx, iNth, pData, CQuestMgrCheckRewardMasteryData22_next);
         };
-        void CQuestMgrDeleteQuestData24_wrapper(struct CQuestMgr* _this, char bySlot)
+        static void CQuestMgrDeleteQuestData24_wrapper(struct CQuestMgr* _this, char bySlot)
         {
            CQuestMgrDeleteQuestData24_user(_this, bySlot, CQuestMgrDeleteQuestData24_next);
         };
-        bool CQuestMgrDeleteQuestItem26_wrapper(struct CQuestMgr* _this, char* pszItemCode, uint16_t wCount)
+        static bool CQuestMgrDeleteQuestItem26_wrapper(struct CQuestMgr* _this, char* pszItemCode, uint16_t wCount)
         {
            return CQuestMgrDeleteQuestItem26_user(_this, pszItemCode, wCount, CQuestMgrDeleteQuestItem26_next);
         };
-        int CQuestMgrGetCountQuestType28_wrapper(struct CQuestMgr* _this, int nType)
+        static int CQuestMgrGetCountQuestType28_wrapper(struct CQuestMgr* _this, int nType)
         {
            return CQuestMgrGetCountQuestType28_user(_this, nType, CQuestMgrGetCountQuestType28_next);
         };
-        struct _happen_event_cont* CQuestMgrGetLastHappenEvent30_wrapper(struct CQuestMgr* _this)
+        static struct _happen_event_cont* CQuestMgrGetLastHappenEvent30_wrapper(struct CQuestMgr* _this)
         {
            return CQuestMgrGetLastHappenEvent30_user(_this, CQuestMgrGetLastHappenEvent30_next);
         };
-        struct _Quest_fld* CQuestMgrGetQuestFromEvent32_wrapper(struct CQuestMgr* _this, char bySelect)
+        static struct _Quest_fld* CQuestMgrGetQuestFromEvent32_wrapper(struct CQuestMgr* _this, char bySelect)
         {
            return CQuestMgrGetQuestFromEvent32_user(_this, bySelect, CQuestMgrGetQuestFromEvent32_next);
         };
-        bool CQuestMgrGiveItem34_wrapper(struct CQuestMgr* _this, char byQuestDBSlot, struct _action_node* pActionNode, bool bCheckOnly)
+        static bool CQuestMgrGiveItem34_wrapper(struct CQuestMgr* _this, char byQuestDBSlot, struct _action_node* pActionNode, bool bCheckOnly)
         {
            return CQuestMgrGiveItem34_user(_this, byQuestDBSlot, pActionNode, bCheckOnly, CQuestMgrGiveItem34_next);
         };
-        void CQuestMgrInitMgr36_wrapper(struct CQuestMgr* _this, struct CPlayer* pMaster, struct _QUEST_DB_BASE* pQuestData)
+        static void CQuestMgrInitMgr36_wrapper(struct CQuestMgr* _this, struct CPlayer* pMaster, struct _QUEST_DB_BASE* pQuestData)
         {
            CQuestMgrInitMgr36_user(_this, pMaster, pQuestData, CQuestMgrInitMgr36_next);
         };
-        char CQuestMgrInsertNpcQuestHistory38_wrapper(struct CQuestMgr* _this, char* pszQuestCode, char byLevel, long double dRepeatTime)
+        static char CQuestMgrInsertNpcQuestHistory38_wrapper(struct CQuestMgr* _this, char* pszQuestCode, char byLevel, long double dRepeatTime)
         {
            return CQuestMgrInsertNpcQuestHistory38_user(_this, pszQuestCode, byLevel, dRepeatTime, CQuestMgrInsertNpcQuestHistory38_next);
         };
-        bool CQuestMgrIsCompleteNpcQuest40_wrapper(struct CQuestMgr* _this, char* pszCode, int bQuestRepeat)
+        static bool CQuestMgrIsCompleteNpcQuest40_wrapper(struct CQuestMgr* _this, char* pszCode, int bQuestRepeat)
         {
            return CQuestMgrIsCompleteNpcQuest40_user(_this, pszCode, bQuestRepeat, CQuestMgrIsCompleteNpcQuest40_next);
         };
-        bool CQuestMgrIsPossibleRepeatNpcQuest42_wrapper(struct CQuestMgr* _this, char* pszCode, int nLinkQuestGroupID)
+        static bool CQuestMgrIsPossibleRepeatNpcQuest42_wrapper(struct CQuestMgr* _this, char* pszCode, int nLinkQuestGroupID)
         {
            return CQuestMgrIsPossibleRepeatNpcQuest42_user(_this, pszCode, nLinkQuestGroupID, CQuestMgrIsPossibleRepeatNpcQuest42_next);
         };
-        bool CQuestMgrIsProcLinkNpcQuest44_wrapper(struct CQuestMgr* _this, char* pszCode, int nLinkQuestGroupID)
+        static bool CQuestMgrIsProcLinkNpcQuest44_wrapper(struct CQuestMgr* _this, char* pszCode, int nLinkQuestGroupID)
         {
            return CQuestMgrIsProcLinkNpcQuest44_user(_this, pszCode, nLinkQuestGroupID, CQuestMgrIsProcLinkNpcQuest44_next);
         };
-        bool CQuestMgrIsProcNpcQuest46_wrapper(struct CQuestMgr* _this, char* pszCode)
+        static bool CQuestMgrIsProcNpcQuest46_wrapper(struct CQuestMgr* _this, char* pszCode)
         {
            return CQuestMgrIsProcNpcQuest46_user(_this, pszCode, CQuestMgrIsProcNpcQuest46_next);
         };
-        bool CQuestMgrIsRecvedQuestByNPC48_wrapper(struct CQuestMgr* _this, char* pszNPCCode)
+        static bool CQuestMgrIsRecvedQuestByNPC48_wrapper(struct CQuestMgr* _this, char* pszNPCCode)
         {
            return CQuestMgrIsRecvedQuestByNPC48_user(_this, pszNPCCode, CQuestMgrIsRecvedQuestByNPC48_next);
         };
-        bool CQuestMgrIsRecvedQuestByNPC50_wrapper(struct CQuestMgr* _this, int nEventIndex)
+        static bool CQuestMgrIsRecvedQuestByNPC50_wrapper(struct CQuestMgr* _this, int nEventIndex)
         {
            return CQuestMgrIsRecvedQuestByNPC50_user(_this, nEventIndex, CQuestMgrIsRecvedQuestByNPC50_next);
         };
-        bool CQuestMgrLoadQuestData52_wrapper()
+        static bool CQuestMgrLoadQuestData52_wrapper()
         {
            return CQuestMgrLoadQuestData52_user(CQuestMgrLoadQuestData52_next);
         };
-        void CQuestMgrLoop54_wrapper(struct CQuestMgr* _this)
+        static void CQuestMgrLoop54_wrapper(struct CQuestMgr* _this)
         {
            CQuestMgrLoop54_user(_this, CQuestMgrLoop54_next);
         };
-        bool CQuestMgrReturnItem56_wrapper(struct CQuestMgr* _this, char* pszItemCode, int nEndReturnItemCnt, char byQuestDBSlot, bool bCheckOnly)
+        static bool CQuestMgrReturnItem56_wrapper(struct CQuestMgr* _this, char* pszItemCode, int nEndReturnItemCnt, char byQuestDBSlot, bool bCheckOnly)
         {
            return CQuestMgrReturnItem56_user(_this, pszItemCode, nEndReturnItemCnt, byQuestDBSlot, bCheckOnly, CQuestMgrReturnItem56_next);
         };
-        void CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
+        static void CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
         {
            CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_user(_this, byQuestDBSlot, CQuestMgrSendMsgToMaster_NoCompleteQuestFromNPC58_next);
         };
-        void CQuestMgrSendMsgToMaster_NoHaveGiveItem60_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
+        static void CQuestMgrSendMsgToMaster_NoHaveGiveItem60_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
         {
            CQuestMgrSendMsgToMaster_NoHaveGiveItem60_user(_this, byQuestDBSlot, CQuestMgrSendMsgToMaster_NoHaveGiveItem60_next);
         };
-        void CQuestMgrSendMsgToMaster_NoHaveReturnItem62_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
+        static void CQuestMgrSendMsgToMaster_NoHaveReturnItem62_wrapper(struct CQuestMgr* _this, char byQuestDBSlot)
         {
            CQuestMgrSendMsgToMaster_NoHaveReturnItem62_user(_this, byQuestDBSlot, CQuestMgrSendMsgToMaster_NoHaveReturnItem62_next);
         };
-        void CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_wrapper(struct CQuestMgr* _this, uint16_t wItemSerial, char byNum, char byQuestDBSlot)
+        static void CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_wrapper(struct CQuestMgr* _this, uint16_t wItemSerial, char byNum, char byQuestDBSlot)
         {
            CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_user(_this, wItemSerial, byNum, byQuestDBSlot, CQuestMgrSendMsgToMaster_ReturnItemAfterQuest64_next);
         };
-        bool CQuestMgr_CheckCondition66_wrapper(struct CQuestMgr* _this, struct _happen_event_condition_node* pCond)
+        static bool CQuestMgr_CheckCondition66_wrapper(struct CQuestMgr* _this, struct _happen_event_condition_node* pCond)
         {
            return CQuestMgr_CheckCondition66_user(_this, pCond, CQuestMgr_CheckCondition66_next);
         };
-        bool CQuestMgr__CheckCond_Class68_wrapper(struct CQuestMgr* _this, char* pszClassCode)
+        static bool CQuestMgr__CheckCond_Class68_wrapper(struct CQuestMgr* _this, char* pszClassCode)
         {
            return CQuestMgr__CheckCond_Class68_user(_this, pszClassCode, CQuestMgr__CheckCond_Class68_next);
         };
-        bool CQuestMgr__CheckCond_Dalant70_wrapper(struct CQuestMgr* _this, char byCompare, int nDalant)
+        static bool CQuestMgr__CheckCond_Dalant70_wrapper(struct CQuestMgr* _this, char byCompare, int nDalant)
         {
            return CQuestMgr__CheckCond_Dalant70_user(_this, byCompare, nDalant, CQuestMgr__CheckCond_Dalant70_next);
         };
-        bool CQuestMgr__CheckCond_Dummy72_wrapper(struct CQuestMgr* _this, int bInclude, char* pszDummyCode)
+        static bool CQuestMgr__CheckCond_Dummy72_wrapper(struct CQuestMgr* _this, int bInclude, char* pszDummyCode)
         {
            return CQuestMgr__CheckCond_Dummy72_user(_this, bInclude, pszDummyCode, CQuestMgr__CheckCond_Dummy72_next);
         };
-        bool CQuestMgr__CheckCond_Equip74_wrapper(struct CQuestMgr* _this, char* pszItemCode)
+        static bool CQuestMgr__CheckCond_Equip74_wrapper(struct CQuestMgr* _this, char* pszItemCode)
         {
            return CQuestMgr__CheckCond_Equip74_user(_this, pszItemCode, CQuestMgr__CheckCond_Equip74_next);
         };
-        bool CQuestMgr__CheckCond_Gold76_wrapper(struct CQuestMgr* _this, char byCompare, int nGold)
+        static bool CQuestMgr__CheckCond_Gold76_wrapper(struct CQuestMgr* _this, char byCompare, int nGold)
         {
            return CQuestMgr__CheckCond_Gold76_user(_this, byCompare, nGold, CQuestMgr__CheckCond_Gold76_next);
         };
-        bool CQuestMgr__CheckCond_Grade78_wrapper(struct CQuestMgr* _this, char byCompare, int nGrade)
+        static bool CQuestMgr__CheckCond_Grade78_wrapper(struct CQuestMgr* _this, char byCompare, int nGrade)
         {
            return CQuestMgr__CheckCond_Grade78_user(_this, byCompare, nGrade, CQuestMgr__CheckCond_Grade78_next);
         };
-        bool CQuestMgr__CheckCond_Guild80_wrapper(struct CQuestMgr* _this, int belong)
+        static bool CQuestMgr__CheckCond_Guild80_wrapper(struct CQuestMgr* _this, int belong)
         {
            return CQuestMgr__CheckCond_Guild80_user(_this, belong, CQuestMgr__CheckCond_Guild80_next);
         };
-        bool CQuestMgr__CheckCond_Have82_wrapper(struct CQuestMgr* _this, int nAmonut, char* pszItemCode)
+        static bool CQuestMgr__CheckCond_Have82_wrapper(struct CQuestMgr* _this, int nAmonut, char* pszItemCode)
         {
            return CQuestMgr__CheckCond_Have82_user(_this, nAmonut, pszItemCode, CQuestMgr__CheckCond_Have82_next);
         };
-        bool CQuestMgr__CheckCond_LV84_wrapper(struct CQuestMgr* _this, char byCompare, int nLv)
+        static bool CQuestMgr__CheckCond_LV84_wrapper(struct CQuestMgr* _this, char byCompare, int nLv)
         {
            return CQuestMgr__CheckCond_LV84_user(_this, byCompare, nLv, CQuestMgr__CheckCond_LV84_next);
         };
-        bool CQuestMgr__CheckCond_Mastery86_wrapper(struct CQuestMgr* _this, char byCompare, char* pszMasteryPack)
+        static bool CQuestMgr__CheckCond_Mastery86_wrapper(struct CQuestMgr* _this, char byCompare, char* pszMasteryPack)
         {
            return CQuestMgr__CheckCond_Mastery86_user(_this, byCompare, pszMasteryPack, CQuestMgr__CheckCond_Mastery86_next);
         };
-        bool CQuestMgr__CheckCond_Nation88_wrapper(struct CQuestMgr* _this, int belong)
+        static bool CQuestMgr__CheckCond_Nation88_wrapper(struct CQuestMgr* _this, int belong)
         {
            return CQuestMgr__CheckCond_Nation88_user(_this, belong, CQuestMgr__CheckCond_Nation88_next);
         };
-        bool CQuestMgr__CheckCond_Party90_wrapper(struct CQuestMgr* _this, int belong)
+        static bool CQuestMgr__CheckCond_Party90_wrapper(struct CQuestMgr* _this, int belong)
         {
            return CQuestMgr__CheckCond_Party90_user(_this, belong, CQuestMgr__CheckCond_Party90_next);
         };
-        bool CQuestMgr__CheckCond_Race92_wrapper(struct CQuestMgr* _this, char* pszRaceSexFlag)
+        static bool CQuestMgr__CheckCond_Race92_wrapper(struct CQuestMgr* _this, char* pszRaceSexFlag)
         {
            return CQuestMgr__CheckCond_Race92_user(_this, pszRaceSexFlag, CQuestMgr__CheckCond_Race92_next);
         };
-        void CQuestMgrdtor_CQuestMgr94_wrapper(struct CQuestMgr* _this)
+        static void CQuestMgrdtor_CQuestMgr94_wrapper(struct CQuestMgr* _this)
         {
            CQuestMgrdtor_CQuestMgr94_user(_this, CQuestMgrdtor_CQuestMgr94_next);
         };
         
-        hook_record CQuestMgr_functions[] = {
+        static hook_record CQuestMgr_functions[] = {
         {   (LPVOID)0x1402875a0L,
             (LPVOID *)&CQuestMgrctor_CQuestMgr2_user,
             (LPVOID *)&CQuestMgrctor_CQuestMgr2_next,
@@ -531,5 +531,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

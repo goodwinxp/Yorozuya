@@ -8,81 +8,81 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPostStorageAddNewPost2_ptr CPostStorageAddNewPost2_next(nullptr);
-        info::CPostStorageAddNewPost2_clbk CPostStorageAddNewPost2_user(nullptr);
-        info::CPostStorageAddPostTitleData4_ptr CPostStorageAddPostTitleData4_next(nullptr);
-        info::CPostStorageAddPostTitleData4_clbk CPostStorageAddPostTitleData4_user(nullptr);
-        info::CPostStorageAddPostTitleDataByStorageIndex6_ptr CPostStorageAddPostTitleDataByStorageIndex6_next(nullptr);
-        info::CPostStorageAddPostTitleDataByStorageIndex6_clbk CPostStorageAddPostTitleDataByStorageIndex6_user(nullptr);
-        info::CPostStoragector_CPostStorage8_ptr CPostStoragector_CPostStorage8_next(nullptr);
-        info::CPostStoragector_CPostStorage8_clbk CPostStoragector_CPostStorage8_user(nullptr);
-        info::CPostStorageDelPostData10_ptr CPostStorageDelPostData10_next(nullptr);
-        info::CPostStorageDelPostData10_clbk CPostStorageDelPostData10_user(nullptr);
-        info::CPostStorageGetPostDataFromInx12_ptr CPostStorageGetPostDataFromInx12_next(nullptr);
-        info::CPostStorageGetPostDataFromInx12_clbk CPostStorageGetPostDataFromInx12_user(nullptr);
-        info::CPostStorageGetPostDataFromSerial14_ptr CPostStorageGetPostDataFromSerial14_next(nullptr);
-        info::CPostStorageGetPostDataFromSerial14_clbk CPostStorageGetPostDataFromSerial14_user(nullptr);
-        info::CPostStorageGetSize16_ptr CPostStorageGetSize16_next(nullptr);
-        info::CPostStorageGetSize16_clbk CPostStorageGetSize16_user(nullptr);
-        info::CPostStorageInit18_ptr CPostStorageInit18_next(nullptr);
-        info::CPostStorageInit18_clbk CPostStorageInit18_user(nullptr);
-        info::CPostStorageIsContentLoad20_ptr CPostStorageIsContentLoad20_next(nullptr);
-        info::CPostStorageIsContentLoad20_clbk CPostStorageIsContentLoad20_user(nullptr);
-        info::CPostStorageSetPostContent22_ptr CPostStorageSetPostContent22_next(nullptr);
-        info::CPostStorageSetPostContent22_clbk CPostStorageSetPostContent22_user(nullptr);
-        info::CPostStoragedtor_CPostStorage24_ptr CPostStoragedtor_CPostStorage24_next(nullptr);
-        info::CPostStoragedtor_CPostStorage24_clbk CPostStoragedtor_CPostStorage24_user(nullptr);
+        static info::CPostStorageAddNewPost2_ptr CPostStorageAddNewPost2_next(nullptr);
+        static info::CPostStorageAddNewPost2_clbk CPostStorageAddNewPost2_user(nullptr);
+        static info::CPostStorageAddPostTitleData4_ptr CPostStorageAddPostTitleData4_next(nullptr);
+        static info::CPostStorageAddPostTitleData4_clbk CPostStorageAddPostTitleData4_user(nullptr);
+        static info::CPostStorageAddPostTitleDataByStorageIndex6_ptr CPostStorageAddPostTitleDataByStorageIndex6_next(nullptr);
+        static info::CPostStorageAddPostTitleDataByStorageIndex6_clbk CPostStorageAddPostTitleDataByStorageIndex6_user(nullptr);
+        static info::CPostStoragector_CPostStorage8_ptr CPostStoragector_CPostStorage8_next(nullptr);
+        static info::CPostStoragector_CPostStorage8_clbk CPostStoragector_CPostStorage8_user(nullptr);
+        static info::CPostStorageDelPostData10_ptr CPostStorageDelPostData10_next(nullptr);
+        static info::CPostStorageDelPostData10_clbk CPostStorageDelPostData10_user(nullptr);
+        static info::CPostStorageGetPostDataFromInx12_ptr CPostStorageGetPostDataFromInx12_next(nullptr);
+        static info::CPostStorageGetPostDataFromInx12_clbk CPostStorageGetPostDataFromInx12_user(nullptr);
+        static info::CPostStorageGetPostDataFromSerial14_ptr CPostStorageGetPostDataFromSerial14_next(nullptr);
+        static info::CPostStorageGetPostDataFromSerial14_clbk CPostStorageGetPostDataFromSerial14_user(nullptr);
+        static info::CPostStorageGetSize16_ptr CPostStorageGetSize16_next(nullptr);
+        static info::CPostStorageGetSize16_clbk CPostStorageGetSize16_user(nullptr);
+        static info::CPostStorageInit18_ptr CPostStorageInit18_next(nullptr);
+        static info::CPostStorageInit18_clbk CPostStorageInit18_user(nullptr);
+        static info::CPostStorageIsContentLoad20_ptr CPostStorageIsContentLoad20_next(nullptr);
+        static info::CPostStorageIsContentLoad20_clbk CPostStorageIsContentLoad20_user(nullptr);
+        static info::CPostStorageSetPostContent22_ptr CPostStorageSetPostContent22_next(nullptr);
+        static info::CPostStorageSetPostContent22_clbk CPostStorageSetPostContent22_user(nullptr);
+        static info::CPostStoragedtor_CPostStorage24_ptr CPostStoragedtor_CPostStorage24_next(nullptr);
+        static info::CPostStoragedtor_CPostStorage24_clbk CPostStoragedtor_CPostStorage24_user(nullptr);
         
-        int CPostStorageAddNewPost2_wrapper(struct CPostStorage* _this, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, unsigned int dwPSSerial, char byState, int* nNumber, uint64_t lnUID)
+        static int CPostStorageAddNewPost2_wrapper(struct CPostStorage* _this, unsigned int dwSenderSerial, char* wszSendName, char* wszRecvName, char* wszTitle, char* wszContent, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, unsigned int dwPSSerial, char byState, int* nNumber, uint64_t lnUID)
         {
            return CPostStorageAddNewPost2_user(_this, dwSenderSerial, wszSendName, wszRecvName, wszTitle, wszContent, Key, dwDur, dwUpt, dwGold, dwPSSerial, byState, nNumber, lnUID, CPostStorageAddNewPost2_next);
         };
-        int CPostStorageAddPostTitleData4_wrapper(struct CPostStorage* _this, int nIndex, unsigned int dwSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
+        static int CPostStorageAddPostTitleData4_wrapper(struct CPostStorage* _this, int nIndex, unsigned int dwSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
         {
            return CPostStorageAddPostTitleData4_user(_this, nIndex, dwSerial, byState, wszSendName, wszTitle, Key, dwDur, dwUpt, dwGold, lnUID, CPostStorageAddPostTitleData4_next);
         };
-        bool CPostStorageAddPostTitleDataByStorageIndex6_wrapper(struct CPostStorage* _this, int nStorageIndex, int nNumber, unsigned int dwSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
+        static bool CPostStorageAddPostTitleDataByStorageIndex6_wrapper(struct CPostStorage* _this, int nStorageIndex, int nNumber, unsigned int dwSerial, char byState, char* wszSendName, char* wszTitle, struct _INVENKEY Key, uint64_t dwDur, unsigned int dwUpt, unsigned int dwGold, uint64_t lnUID)
         {
            return CPostStorageAddPostTitleDataByStorageIndex6_user(_this, nStorageIndex, nNumber, dwSerial, byState, wszSendName, wszTitle, Key, dwDur, dwUpt, dwGold, lnUID, CPostStorageAddPostTitleDataByStorageIndex6_next);
         };
-        void CPostStoragector_CPostStorage8_wrapper(struct CPostStorage* _this)
+        static void CPostStoragector_CPostStorage8_wrapper(struct CPostStorage* _this)
         {
            CPostStoragector_CPostStorage8_user(_this, CPostStoragector_CPostStorage8_next);
         };
-        void CPostStorageDelPostData10_wrapper(struct CPostStorage* _this, unsigned int dwIndex)
+        static void CPostStorageDelPostData10_wrapper(struct CPostStorage* _this, unsigned int dwIndex)
         {
            CPostStorageDelPostData10_user(_this, dwIndex, CPostStorageDelPostData10_next);
         };
-        struct CPostData* CPostStorageGetPostDataFromInx12_wrapper(struct CPostStorage* _this, int nIndex)
+        static struct CPostData* CPostStorageGetPostDataFromInx12_wrapper(struct CPostStorage* _this, int nIndex)
         {
            return CPostStorageGetPostDataFromInx12_user(_this, nIndex, CPostStorageGetPostDataFromInx12_next);
         };
-        struct CPostData* CPostStorageGetPostDataFromSerial14_wrapper(struct CPostStorage* _this, unsigned int dwPostSerial)
+        static struct CPostData* CPostStorageGetPostDataFromSerial14_wrapper(struct CPostStorage* _this, unsigned int dwPostSerial)
         {
            return CPostStorageGetPostDataFromSerial14_user(_this, dwPostSerial, CPostStorageGetPostDataFromSerial14_next);
         };
-        int CPostStorageGetSize16_wrapper(struct CPostStorage* _this)
+        static int CPostStorageGetSize16_wrapper(struct CPostStorage* _this)
         {
            return CPostStorageGetSize16_user(_this, CPostStorageGetSize16_next);
         };
-        void CPostStorageInit18_wrapper(struct CPostStorage* _this)
+        static void CPostStorageInit18_wrapper(struct CPostStorage* _this)
         {
            CPostStorageInit18_user(_this, CPostStorageInit18_next);
         };
-        bool CPostStorageIsContentLoad20_wrapper(struct CPostStorage* _this, unsigned int dwIndex)
+        static bool CPostStorageIsContentLoad20_wrapper(struct CPostStorage* _this, unsigned int dwIndex)
         {
            return CPostStorageIsContentLoad20_user(_this, dwIndex, CPostStorageIsContentLoad20_next);
         };
-        int CPostStorageSetPostContent22_wrapper(struct CPostStorage* _this, unsigned int dwSerial, char* wszContent)
+        static int CPostStorageSetPostContent22_wrapper(struct CPostStorage* _this, unsigned int dwSerial, char* wszContent)
         {
            return CPostStorageSetPostContent22_user(_this, dwSerial, wszContent, CPostStorageSetPostContent22_next);
         };
-        void CPostStoragedtor_CPostStorage24_wrapper(struct CPostStorage* _this)
+        static void CPostStoragedtor_CPostStorage24_wrapper(struct CPostStorage* _this)
         {
            CPostStoragedtor_CPostStorage24_user(_this, CPostStoragedtor_CPostStorage24_next);
         };
         
-        hook_record CPostStorage_functions[] = {
+        static hook_record CPostStorage_functions[] = {
         {   (LPVOID)0x140322fd0L,
             (LPVOID *)&CPostStorageAddNewPost2_user,
             (LPVOID *)&CPostStorageAddNewPost2_next,
@@ -146,5 +146,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

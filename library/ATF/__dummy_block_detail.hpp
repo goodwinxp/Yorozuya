@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__dummy_blockctor___dummy_block2_ptr __dummy_blockctor___dummy_block2_next(nullptr);
-        info::__dummy_blockctor___dummy_block2_clbk __dummy_blockctor___dummy_block2_user(nullptr);
+        static info::__dummy_blockctor___dummy_block2_ptr __dummy_blockctor___dummy_block2_next(nullptr);
+        static info::__dummy_blockctor___dummy_block2_clbk __dummy_blockctor___dummy_block2_user(nullptr);
         
-        void __dummy_blockctor___dummy_block2_wrapper(struct __dummy_block* _this)
+        static void __dummy_blockctor___dummy_block2_wrapper(struct __dummy_block* _this)
         {
            __dummy_blockctor___dummy_block2_user(_this, __dummy_blockctor___dummy_block2_next);
         };
         
-        hook_record __dummy_block_functions[] = {
+        static hook_record __dummy_block_functions[] = {
         {   (LPVOID)0x140279f80L,
             (LPVOID *)&__dummy_blockctor___dummy_block2_user,
             (LPVOID *)&__dummy_blockctor___dummy_block2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

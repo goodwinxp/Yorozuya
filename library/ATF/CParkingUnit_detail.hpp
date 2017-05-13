@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CParkingUnitctor_CParkingUnit2_ptr CParkingUnitctor_CParkingUnit2_next(nullptr);
-        info::CParkingUnitctor_CParkingUnit2_clbk CParkingUnitctor_CParkingUnit2_user(nullptr);
-        info::CParkingUnitCalcCurHPRate4_ptr CParkingUnitCalcCurHPRate4_next(nullptr);
-        info::CParkingUnitCalcCurHPRate4_clbk CParkingUnitCalcCurHPRate4_user(nullptr);
-        info::CParkingUnitChangeOwner6_ptr CParkingUnitChangeOwner6_next(nullptr);
-        info::CParkingUnitChangeOwner6_clbk CParkingUnitChangeOwner6_user(nullptr);
-        info::CParkingUnitCreate8_ptr CParkingUnitCreate8_next(nullptr);
-        info::CParkingUnitCreate8_clbk CParkingUnitCreate8_user(nullptr);
-        info::CParkingUnitDestroy10_ptr CParkingUnitDestroy10_next(nullptr);
-        info::CParkingUnitDestroy10_clbk CParkingUnitDestroy10_user(nullptr);
-        info::CParkingUnitInit12_ptr CParkingUnitInit12_next(nullptr);
-        info::CParkingUnitInit12_clbk CParkingUnitInit12_user(nullptr);
-        info::CParkingUnitIsRideRight14_ptr CParkingUnitIsRideRight14_next(nullptr);
-        info::CParkingUnitIsRideRight14_clbk CParkingUnitIsRideRight14_user(nullptr);
-        info::CParkingUnitLoop16_ptr CParkingUnitLoop16_next(nullptr);
-        info::CParkingUnitLoop16_clbk CParkingUnitLoop16_user(nullptr);
-        info::CParkingUnitSendMsg_ChangeOwner18_ptr CParkingUnitSendMsg_ChangeOwner18_next(nullptr);
-        info::CParkingUnitSendMsg_ChangeOwner18_clbk CParkingUnitSendMsg_ChangeOwner18_user(nullptr);
-        info::CParkingUnitSendMsg_Create20_ptr CParkingUnitSendMsg_Create20_next(nullptr);
-        info::CParkingUnitSendMsg_Create20_clbk CParkingUnitSendMsg_Create20_user(nullptr);
-        info::CParkingUnitSendMsg_Destroy22_ptr CParkingUnitSendMsg_Destroy22_next(nullptr);
-        info::CParkingUnitSendMsg_Destroy22_clbk CParkingUnitSendMsg_Destroy22_user(nullptr);
-        info::CParkingUnitSendMsg_FixPosition24_ptr CParkingUnitSendMsg_FixPosition24_next(nullptr);
-        info::CParkingUnitSendMsg_FixPosition24_clbk CParkingUnitSendMsg_FixPosition24_user(nullptr);
-        info::CParkingUnitdtor_CParkingUnit30_ptr CParkingUnitdtor_CParkingUnit30_next(nullptr);
-        info::CParkingUnitdtor_CParkingUnit30_clbk CParkingUnitdtor_CParkingUnit30_user(nullptr);
+        static info::CParkingUnitctor_CParkingUnit2_ptr CParkingUnitctor_CParkingUnit2_next(nullptr);
+        static info::CParkingUnitctor_CParkingUnit2_clbk CParkingUnitctor_CParkingUnit2_user(nullptr);
+        static info::CParkingUnitCalcCurHPRate4_ptr CParkingUnitCalcCurHPRate4_next(nullptr);
+        static info::CParkingUnitCalcCurHPRate4_clbk CParkingUnitCalcCurHPRate4_user(nullptr);
+        static info::CParkingUnitChangeOwner6_ptr CParkingUnitChangeOwner6_next(nullptr);
+        static info::CParkingUnitChangeOwner6_clbk CParkingUnitChangeOwner6_user(nullptr);
+        static info::CParkingUnitCreate8_ptr CParkingUnitCreate8_next(nullptr);
+        static info::CParkingUnitCreate8_clbk CParkingUnitCreate8_user(nullptr);
+        static info::CParkingUnitDestroy10_ptr CParkingUnitDestroy10_next(nullptr);
+        static info::CParkingUnitDestroy10_clbk CParkingUnitDestroy10_user(nullptr);
+        static info::CParkingUnitInit12_ptr CParkingUnitInit12_next(nullptr);
+        static info::CParkingUnitInit12_clbk CParkingUnitInit12_user(nullptr);
+        static info::CParkingUnitIsRideRight14_ptr CParkingUnitIsRideRight14_next(nullptr);
+        static info::CParkingUnitIsRideRight14_clbk CParkingUnitIsRideRight14_user(nullptr);
+        static info::CParkingUnitLoop16_ptr CParkingUnitLoop16_next(nullptr);
+        static info::CParkingUnitLoop16_clbk CParkingUnitLoop16_user(nullptr);
+        static info::CParkingUnitSendMsg_ChangeOwner18_ptr CParkingUnitSendMsg_ChangeOwner18_next(nullptr);
+        static info::CParkingUnitSendMsg_ChangeOwner18_clbk CParkingUnitSendMsg_ChangeOwner18_user(nullptr);
+        static info::CParkingUnitSendMsg_Create20_ptr CParkingUnitSendMsg_Create20_next(nullptr);
+        static info::CParkingUnitSendMsg_Create20_clbk CParkingUnitSendMsg_Create20_user(nullptr);
+        static info::CParkingUnitSendMsg_Destroy22_ptr CParkingUnitSendMsg_Destroy22_next(nullptr);
+        static info::CParkingUnitSendMsg_Destroy22_clbk CParkingUnitSendMsg_Destroy22_user(nullptr);
+        static info::CParkingUnitSendMsg_FixPosition24_ptr CParkingUnitSendMsg_FixPosition24_next(nullptr);
+        static info::CParkingUnitSendMsg_FixPosition24_clbk CParkingUnitSendMsg_FixPosition24_user(nullptr);
+        static info::CParkingUnitdtor_CParkingUnit30_ptr CParkingUnitdtor_CParkingUnit30_next(nullptr);
+        static info::CParkingUnitdtor_CParkingUnit30_clbk CParkingUnitdtor_CParkingUnit30_user(nullptr);
         
-        void CParkingUnitctor_CParkingUnit2_wrapper(struct CParkingUnit* _this)
+        static void CParkingUnitctor_CParkingUnit2_wrapper(struct CParkingUnit* _this)
         {
            CParkingUnitctor_CParkingUnit2_user(_this, CParkingUnitctor_CParkingUnit2_next);
         };
-        uint16_t CParkingUnitCalcCurHPRate4_wrapper(struct CParkingUnit* _this)
+        static uint16_t CParkingUnitCalcCurHPRate4_wrapper(struct CParkingUnit* _this)
         {
            return CParkingUnitCalcCurHPRate4_user(_this, CParkingUnitCalcCurHPRate4_next);
         };
-        void CParkingUnitChangeOwner6_wrapper(struct CParkingUnit* _this, struct CPlayer* pNewOwner, char byUnitSlotIndex)
+        static void CParkingUnitChangeOwner6_wrapper(struct CParkingUnit* _this, struct CPlayer* pNewOwner, char byUnitSlotIndex)
         {
            CParkingUnitChangeOwner6_user(_this, pNewOwner, byUnitSlotIndex, CParkingUnitChangeOwner6_next);
         };
-        bool CParkingUnitCreate8_wrapper(struct CParkingUnit* _this, struct _parkingunit_create_setdata* pParam)
+        static bool CParkingUnitCreate8_wrapper(struct CParkingUnit* _this, struct _parkingunit_create_setdata* pParam)
         {
            return CParkingUnitCreate8_user(_this, pParam, CParkingUnitCreate8_next);
         };
-        bool CParkingUnitDestroy10_wrapper(struct CParkingUnit* _this, char byDestoryType)
+        static bool CParkingUnitDestroy10_wrapper(struct CParkingUnit* _this, char byDestoryType)
         {
            return CParkingUnitDestroy10_user(_this, byDestoryType, CParkingUnitDestroy10_next);
         };
-        void CParkingUnitInit12_wrapper(struct CParkingUnit* _this, struct _object_id* pID)
+        static void CParkingUnitInit12_wrapper(struct CParkingUnit* _this, struct _object_id* pID)
         {
            CParkingUnitInit12_user(_this, pID, CParkingUnitInit12_next);
         };
-        bool CParkingUnitIsRideRight14_wrapper(struct CParkingUnit* _this, struct CPlayer* pOne)
+        static bool CParkingUnitIsRideRight14_wrapper(struct CParkingUnit* _this, struct CPlayer* pOne)
         {
            return CParkingUnitIsRideRight14_user(_this, pOne, CParkingUnitIsRideRight14_next);
         };
-        void CParkingUnitLoop16_wrapper(struct CParkingUnit* _this)
+        static void CParkingUnitLoop16_wrapper(struct CParkingUnit* _this)
         {
            CParkingUnitLoop16_user(_this, CParkingUnitLoop16_next);
         };
-        void CParkingUnitSendMsg_ChangeOwner18_wrapper(struct CParkingUnit* _this, char byUnitSlotIndex, struct CPlayer* pOldOwner)
+        static void CParkingUnitSendMsg_ChangeOwner18_wrapper(struct CParkingUnit* _this, char byUnitSlotIndex, struct CPlayer* pOldOwner)
         {
            CParkingUnitSendMsg_ChangeOwner18_user(_this, byUnitSlotIndex, pOldOwner, CParkingUnitSendMsg_ChangeOwner18_next);
         };
-        void CParkingUnitSendMsg_Create20_wrapper(struct CParkingUnit* _this)
+        static void CParkingUnitSendMsg_Create20_wrapper(struct CParkingUnit* _this)
         {
            CParkingUnitSendMsg_Create20_user(_this, CParkingUnitSendMsg_Create20_next);
         };
-        void CParkingUnitSendMsg_Destroy22_wrapper(struct CParkingUnit* _this, char byDestoryType)
+        static void CParkingUnitSendMsg_Destroy22_wrapper(struct CParkingUnit* _this, char byDestoryType)
         {
            CParkingUnitSendMsg_Destroy22_user(_this, byDestoryType, CParkingUnitSendMsg_Destroy22_next);
         };
-        void CParkingUnitSendMsg_FixPosition24_wrapper(struct CParkingUnit* _this, int n)
+        static void CParkingUnitSendMsg_FixPosition24_wrapper(struct CParkingUnit* _this, int n)
         {
            CParkingUnitSendMsg_FixPosition24_user(_this, n, CParkingUnitSendMsg_FixPosition24_next);
         };
-        void CParkingUnitdtor_CParkingUnit30_wrapper(struct CParkingUnit* _this)
+        static void CParkingUnitdtor_CParkingUnit30_wrapper(struct CParkingUnit* _this)
         {
            CParkingUnitdtor_CParkingUnit30_user(_this, CParkingUnitdtor_CParkingUnit30_next);
         };
         
-        hook_record CParkingUnit_functions[] = {
+        static hook_record CParkingUnit_functions[] = {
         {   (LPVOID)0x140167900L,
             (LPVOID *)&CParkingUnitctor_CParkingUnit2_user,
             (LPVOID *)&CParkingUnitctor_CParkingUnit2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

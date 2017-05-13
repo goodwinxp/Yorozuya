@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ChatStealTargetInfoctor__ChatStealTargetInfo2_ptr _ChatStealTargetInfoctor__ChatStealTargetInfo2_next(nullptr);
-        info::_ChatStealTargetInfoctor__ChatStealTargetInfo2_clbk _ChatStealTargetInfoctor__ChatStealTargetInfo2_user(nullptr);
+        static info::_ChatStealTargetInfoctor__ChatStealTargetInfo2_ptr _ChatStealTargetInfoctor__ChatStealTargetInfo2_next(nullptr);
+        static info::_ChatStealTargetInfoctor__ChatStealTargetInfo2_clbk _ChatStealTargetInfoctor__ChatStealTargetInfo2_user(nullptr);
         
-        void _ChatStealTargetInfoctor__ChatStealTargetInfo2_wrapper(struct _ChatStealTargetInfo* _this)
+        static void _ChatStealTargetInfoctor__ChatStealTargetInfo2_wrapper(struct _ChatStealTargetInfo* _this)
         {
            _ChatStealTargetInfoctor__ChatStealTargetInfo2_user(_this, _ChatStealTargetInfoctor__ChatStealTargetInfo2_next);
         };
         
-        hook_record _ChatStealTargetInfo_functions[] = {
+        static hook_record _ChatStealTargetInfo_functions[] = {
         {   (LPVOID)0x1403f8cf0L,
             (LPVOID *)&_ChatStealTargetInfoctor__ChatStealTargetInfo2_user,
             (LPVOID *)&_ChatStealTargetInfoctor__ChatStealTargetInfo2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

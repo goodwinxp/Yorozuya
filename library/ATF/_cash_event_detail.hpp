@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_cash_eventctor__cash_event2_ptr _cash_eventctor__cash_event2_next(nullptr);
-        info::_cash_eventctor__cash_event2_clbk _cash_eventctor__cash_event2_user(nullptr);
-        info::_cash_eventdtor__cash_event4_ptr _cash_eventdtor__cash_event4_next(nullptr);
-        info::_cash_eventdtor__cash_event4_clbk _cash_eventdtor__cash_event4_user(nullptr);
+        static info::_cash_eventctor__cash_event2_ptr _cash_eventctor__cash_event2_next(nullptr);
+        static info::_cash_eventctor__cash_event2_clbk _cash_eventctor__cash_event2_user(nullptr);
+        static info::_cash_eventdtor__cash_event4_ptr _cash_eventdtor__cash_event4_next(nullptr);
+        static info::_cash_eventdtor__cash_event4_clbk _cash_eventdtor__cash_event4_user(nullptr);
         
-        void _cash_eventctor__cash_event2_wrapper(struct _cash_event* _this)
+        static void _cash_eventctor__cash_event2_wrapper(struct _cash_event* _this)
         {
            _cash_eventctor__cash_event2_user(_this, _cash_eventctor__cash_event2_next);
         };
-        void _cash_eventdtor__cash_event4_wrapper(struct _cash_event* _this)
+        static void _cash_eventdtor__cash_event4_wrapper(struct _cash_event* _this)
         {
            _cash_eventdtor__cash_event4_user(_this, _cash_eventdtor__cash_event4_next);
         };
         
-        hook_record _cash_event_functions[] = {
+        static hook_record _cash_event_functions[] = {
         {   (LPVOID)0x140304540L,
             (LPVOID *)&_cash_eventctor__cash_event2_user,
             (LPVOID *)&_cash_eventctor__cash_event2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

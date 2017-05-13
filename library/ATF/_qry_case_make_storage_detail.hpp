@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_make_storagector__qry_case_make_storage2_ptr _qry_case_make_storagector__qry_case_make_storage2_next(nullptr);
-        info::_qry_case_make_storagector__qry_case_make_storage2_clbk _qry_case_make_storagector__qry_case_make_storage2_user(nullptr);
-        info::_qry_case_make_storagesize4_ptr _qry_case_make_storagesize4_next(nullptr);
-        info::_qry_case_make_storagesize4_clbk _qry_case_make_storagesize4_user(nullptr);
+        static info::_qry_case_make_storagector__qry_case_make_storage2_ptr _qry_case_make_storagector__qry_case_make_storage2_next(nullptr);
+        static info::_qry_case_make_storagector__qry_case_make_storage2_clbk _qry_case_make_storagector__qry_case_make_storage2_user(nullptr);
+        static info::_qry_case_make_storagesize4_ptr _qry_case_make_storagesize4_next(nullptr);
+        static info::_qry_case_make_storagesize4_clbk _qry_case_make_storagesize4_user(nullptr);
         
-        void _qry_case_make_storagector__qry_case_make_storage2_wrapper(struct _qry_case_make_storage* _this)
+        static void _qry_case_make_storagector__qry_case_make_storage2_wrapper(struct _qry_case_make_storage* _this)
         {
            _qry_case_make_storagector__qry_case_make_storage2_user(_this, _qry_case_make_storagector__qry_case_make_storage2_next);
         };
-        int _qry_case_make_storagesize4_wrapper(struct _qry_case_make_storage* _this)
+        static int _qry_case_make_storagesize4_wrapper(struct _qry_case_make_storage* _this)
         {
            return _qry_case_make_storagesize4_user(_this, _qry_case_make_storagesize4_next);
         };
         
-        hook_record _qry_case_make_storage_functions[] = {
+        static hook_record _qry_case_make_storage_functions[] = {
         {   (LPVOID)0x1402e1c10L,
             (LPVOID *)&_qry_case_make_storagector__qry_case_make_storage2_user,
             (LPVOID *)&_qry_case_make_storagector__qry_case_make_storage2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

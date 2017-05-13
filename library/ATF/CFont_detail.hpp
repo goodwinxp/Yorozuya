@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CFontCreateFontA1_ptr CFontCreateFontA1_next(nullptr);
-        info::CFontCreateFontA1_clbk CFontCreateFontA1_user(nullptr);
-        info::CFontdtor_CFont2_ptr CFontdtor_CFont2_next(nullptr);
-        info::CFontdtor_CFont2_clbk CFontdtor_CFont2_user(nullptr);
+        static info::CFontCreateFontA1_ptr CFontCreateFontA1_next(nullptr);
+        static info::CFontCreateFontA1_clbk CFontCreateFontA1_user(nullptr);
+        static info::CFontdtor_CFont2_ptr CFontdtor_CFont2_next(nullptr);
+        static info::CFontdtor_CFont2_clbk CFontdtor_CFont2_user(nullptr);
         
-        int64_t CFontCreateFontA1_wrapper(struct CFont* _this, int arg_0, int arg_1, int arg_2, int arg_3, int arg_4, uint8_t arg_5, uint8_t arg_6, uint8_t arg_7, uint8_t arg_8, uint8_t arg_9, uint8_t arg_10, uint8_t arg_11, uint8_t arg_12, char* arg_13)
+        static int64_t CFontCreateFontA1_wrapper(struct CFont* _this, int arg_0, int arg_1, int arg_2, int arg_3, int arg_4, uint8_t arg_5, uint8_t arg_6, uint8_t arg_7, uint8_t arg_8, uint8_t arg_9, uint8_t arg_10, uint8_t arg_11, uint8_t arg_12, char* arg_13)
         {
            return CFontCreateFontA1_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, arg_7, arg_8, arg_9, arg_10, arg_11, arg_12, arg_13, CFontCreateFontA1_next);
         };
-        int64_t CFontdtor_CFont2_wrapper(struct CFont* _this)
+        static int64_t CFontdtor_CFont2_wrapper(struct CFont* _this)
         {
            return CFontdtor_CFont2_user(_this, CFontdtor_CFont2_next);
         };
         
-        hook_record CFont_functions[] = {
+        static hook_record CFont_functions[] = {
         {   (LPVOID)0x1404dc3f0L,
             (LPVOID *)&CFontCreateFontA1_user,
             (LPVOID *)&CFontCreateFontA1_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

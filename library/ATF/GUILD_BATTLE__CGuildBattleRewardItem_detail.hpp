@@ -10,51 +10,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_ptr GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_clbk GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_ptr GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_clbk GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_ptr GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_clbk GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGive8_ptr GUILD_BATTLE__CGuildBattleRewardItemGive8_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemGive8_clbk GUILD_BATTLE__CGuildBattleRewardItemGive8_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemInit10_ptr GUILD_BATTLE__CGuildBattleRewardItemInit10_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemInit10_clbk GUILD_BATTLE__CGuildBattleRewardItemInit10_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemIsNull12_ptr GUILD_BATTLE__CGuildBattleRewardItemIsNull12_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemIsNull12_clbk GUILD_BATTLE__CGuildBattleRewardItemIsNull12_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemSetItem14_ptr GUILD_BATTLE__CGuildBattleRewardItemSetItem14_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleRewardItemSetItem14_clbk GUILD_BATTLE__CGuildBattleRewardItemSetItem14_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_ptr GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_clbk GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_ptr GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_clbk GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_ptr GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_clbk GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGive8_ptr GUILD_BATTLE__CGuildBattleRewardItemGive8_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemGive8_clbk GUILD_BATTLE__CGuildBattleRewardItemGive8_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemInit10_ptr GUILD_BATTLE__CGuildBattleRewardItemInit10_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemInit10_clbk GUILD_BATTLE__CGuildBattleRewardItemInit10_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemIsNull12_ptr GUILD_BATTLE__CGuildBattleRewardItemIsNull12_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemIsNull12_clbk GUILD_BATTLE__CGuildBattleRewardItemIsNull12_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemSetItem14_ptr GUILD_BATTLE__CGuildBattleRewardItemSetItem14_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleRewardItemSetItem14_clbk GUILD_BATTLE__CGuildBattleRewardItemSetItem14_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
+            static void GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
             {
                GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_user(_this, GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_next);
             };
-            char GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
+            static char GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_user(_this, GUILD_BATTLE__CGuildBattleRewardItemGetAmount4_next);
             };
-            char* GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
+            static char* GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_user(_this, GUILD_BATTLE__CGuildBattleRewardItemGetItemCode6_next);
             };
-            struct GUILD_BATTLE::CGuildBattleRewardItem* GUILD_BATTLE__CGuildBattleRewardItemGive8_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, struct CPlayer* pkPlayer)
+            static struct GUILD_BATTLE::CGuildBattleRewardItem* GUILD_BATTLE__CGuildBattleRewardItemGive8_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, struct CPlayer* pkPlayer)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemGive8_user(_this, pkPlayer, GUILD_BATTLE__CGuildBattleRewardItemGive8_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRewardItemInit10_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, uint16_t usInx)
+            static bool GUILD_BATTLE__CGuildBattleRewardItemInit10_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, uint16_t usInx)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemInit10_user(_this, usInx, GUILD_BATTLE__CGuildBattleRewardItemInit10_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRewardItemIsNull12_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
+            static bool GUILD_BATTLE__CGuildBattleRewardItemIsNull12_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemIsNull12_user(_this, GUILD_BATTLE__CGuildBattleRewardItemIsNull12_next);
             };
-            bool GUILD_BATTLE__CGuildBattleRewardItemSetItem14_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, char* szItemCode)
+            static bool GUILD_BATTLE__CGuildBattleRewardItemSetItem14_wrapper(struct GUILD_BATTLE::CGuildBattleRewardItem* _this, char* szItemCode)
             {
                return GUILD_BATTLE__CGuildBattleRewardItemSetItem14_user(_this, szItemCode, GUILD_BATTLE__CGuildBattleRewardItemSetItem14_next);
             };
             
-            hook_record CGuildBattleRewardItem_functions[] = {
+            static hook_record CGuildBattleRewardItem_functions[] = {
             {   (LPVOID)0x1403c8ef0L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattleRewardItemctor_CGuildBattleRewardItem2_next,
@@ -93,6 +93,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

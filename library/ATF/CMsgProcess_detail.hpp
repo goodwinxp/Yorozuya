@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMsgProcessctor_CMsgProcess2_ptr CMsgProcessctor_CMsgProcess2_next(nullptr);
-        info::CMsgProcessctor_CMsgProcess2_clbk CMsgProcessctor_CMsgProcess2_user(nullptr);
-        info::CMsgProcessctor_CMsgProcess4_ptr CMsgProcessctor_CMsgProcess4_next(nullptr);
-        info::CMsgProcessctor_CMsgProcess4_clbk CMsgProcessctor_CMsgProcess4_user(nullptr);
-        info::CMsgProcessProcessMessage6_ptr CMsgProcessProcessMessage6_next(nullptr);
-        info::CMsgProcessProcessMessage6_clbk CMsgProcessProcessMessage6_user(nullptr);
-        info::CMsgProcessdtor_CMsgProcess11_ptr CMsgProcessdtor_CMsgProcess11_next(nullptr);
-        info::CMsgProcessdtor_CMsgProcess11_clbk CMsgProcessdtor_CMsgProcess11_user(nullptr);
+        static info::CMsgProcessctor_CMsgProcess2_ptr CMsgProcessctor_CMsgProcess2_next(nullptr);
+        static info::CMsgProcessctor_CMsgProcess2_clbk CMsgProcessctor_CMsgProcess2_user(nullptr);
+        static info::CMsgProcessctor_CMsgProcess4_ptr CMsgProcessctor_CMsgProcess4_next(nullptr);
+        static info::CMsgProcessctor_CMsgProcess4_clbk CMsgProcessctor_CMsgProcess4_user(nullptr);
+        static info::CMsgProcessProcessMessage6_ptr CMsgProcessProcessMessage6_next(nullptr);
+        static info::CMsgProcessProcessMessage6_clbk CMsgProcessProcessMessage6_user(nullptr);
+        static info::CMsgProcessdtor_CMsgProcess11_ptr CMsgProcessdtor_CMsgProcess11_next(nullptr);
+        static info::CMsgProcessdtor_CMsgProcess11_clbk CMsgProcessdtor_CMsgProcess11_user(nullptr);
         
-        void CMsgProcessctor_CMsgProcess2_wrapper(struct CMsgProcess* _this, int nObjNum)
+        static void CMsgProcessctor_CMsgProcess2_wrapper(struct CMsgProcess* _this, int nObjNum)
         {
            CMsgProcessctor_CMsgProcess2_user(_this, nObjNum, CMsgProcessctor_CMsgProcess2_next);
         };
-        void CMsgProcessctor_CMsgProcess4_wrapper(struct CMsgProcess* _this)
+        static void CMsgProcessctor_CMsgProcess4_wrapper(struct CMsgProcess* _this)
         {
            CMsgProcessctor_CMsgProcess4_user(_this, CMsgProcessctor_CMsgProcess4_next);
         };
-        void CMsgProcessProcessMessage6_wrapper(struct CMsgProcess* _this, struct _message* pMsg)
+        static void CMsgProcessProcessMessage6_wrapper(struct CMsgProcess* _this, struct _message* pMsg)
         {
            CMsgProcessProcessMessage6_user(_this, pMsg, CMsgProcessProcessMessage6_next);
         };
-        void CMsgProcessdtor_CMsgProcess11_wrapper(struct CMsgProcess* _this)
+        static void CMsgProcessdtor_CMsgProcess11_wrapper(struct CMsgProcess* _this)
         {
            CMsgProcessdtor_CMsgProcess11_user(_this, CMsgProcessdtor_CMsgProcess11_next);
         };
         
-        hook_record CMsgProcess_functions[] = {
+        static hook_record CMsgProcess_functions[] = {
         {   (LPVOID)0x1401bfed0L,
             (LPVOID *)&CMsgProcessctor_CMsgProcess2_user,
             (LPVOID *)&CMsgProcessctor_CMsgProcess2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

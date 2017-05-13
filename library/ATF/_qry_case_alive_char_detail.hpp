@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_alive_charctor__qry_case_alive_char2_ptr _qry_case_alive_charctor__qry_case_alive_char2_next(nullptr);
-        info::_qry_case_alive_charctor__qry_case_alive_char2_clbk _qry_case_alive_charctor__qry_case_alive_char2_user(nullptr);
-        info::_qry_case_alive_charsize4_ptr _qry_case_alive_charsize4_next(nullptr);
-        info::_qry_case_alive_charsize4_clbk _qry_case_alive_charsize4_user(nullptr);
+        static info::_qry_case_alive_charctor__qry_case_alive_char2_ptr _qry_case_alive_charctor__qry_case_alive_char2_next(nullptr);
+        static info::_qry_case_alive_charctor__qry_case_alive_char2_clbk _qry_case_alive_charctor__qry_case_alive_char2_user(nullptr);
+        static info::_qry_case_alive_charsize4_ptr _qry_case_alive_charsize4_next(nullptr);
+        static info::_qry_case_alive_charsize4_clbk _qry_case_alive_charsize4_user(nullptr);
         
-        void _qry_case_alive_charctor__qry_case_alive_char2_wrapper(struct _qry_case_alive_char* _this)
+        static void _qry_case_alive_charctor__qry_case_alive_char2_wrapper(struct _qry_case_alive_char* _this)
         {
            _qry_case_alive_charctor__qry_case_alive_char2_user(_this, _qry_case_alive_charctor__qry_case_alive_char2_next);
         };
-        int _qry_case_alive_charsize4_wrapper(struct _qry_case_alive_char* _this)
+        static int _qry_case_alive_charsize4_wrapper(struct _qry_case_alive_char* _this)
         {
            return _qry_case_alive_charsize4_user(_this, _qry_case_alive_charsize4_next);
         };
         
-        hook_record _qry_case_alive_char_functions[] = {
+        static hook_record _qry_case_alive_char_functions[] = {
         {   (LPVOID)0x140120d80L,
             (LPVOID *)&_qry_case_alive_charctor__qry_case_alive_char2_user,
             (LPVOID *)&_qry_case_alive_charctor__qry_case_alive_char2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

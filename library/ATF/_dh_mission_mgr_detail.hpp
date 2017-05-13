@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_dh_mission_mgrGetLimMSecTime2_ptr _dh_mission_mgrGetLimMSecTime2_next(nullptr);
-        info::_dh_mission_mgrGetLimMSecTime2_clbk _dh_mission_mgrGetLimMSecTime2_user(nullptr);
-        info::_dh_mission_mgrGetMissionCont4_ptr _dh_mission_mgrGetMissionCont4_next(nullptr);
-        info::_dh_mission_mgrGetMissionCont4_clbk _dh_mission_mgrGetMissionCont4_user(nullptr);
-        info::_dh_mission_mgrInit6_ptr _dh_mission_mgrInit6_next(nullptr);
-        info::_dh_mission_mgrInit6_clbk _dh_mission_mgrInit6_user(nullptr);
-        info::_dh_mission_mgrIsOpenPortal8_ptr _dh_mission_mgrIsOpenPortal8_next(nullptr);
-        info::_dh_mission_mgrIsOpenPortal8_clbk _dh_mission_mgrIsOpenPortal8_user(nullptr);
-        info::_dh_mission_mgrNextMission10_ptr _dh_mission_mgrNextMission10_next(nullptr);
-        info::_dh_mission_mgrNextMission10_clbk _dh_mission_mgrNextMission10_user(nullptr);
-        info::_dh_mission_mgrOpenPortal12_ptr _dh_mission_mgrOpenPortal12_next(nullptr);
-        info::_dh_mission_mgrOpenPortal12_clbk _dh_mission_mgrOpenPortal12_user(nullptr);
-        info::_dh_mission_mgrSearchCurMissionCont14_ptr _dh_mission_mgrSearchCurMissionCont14_next(nullptr);
-        info::_dh_mission_mgrSearchCurMissionCont14_clbk _dh_mission_mgrSearchCurMissionCont14_user(nullptr);
-        info::_dh_mission_mgrctor__dh_mission_mgr16_ptr _dh_mission_mgrctor__dh_mission_mgr16_next(nullptr);
-        info::_dh_mission_mgrctor__dh_mission_mgr16_clbk _dh_mission_mgrctor__dh_mission_mgr16_user(nullptr);
+        static info::_dh_mission_mgrGetLimMSecTime2_ptr _dh_mission_mgrGetLimMSecTime2_next(nullptr);
+        static info::_dh_mission_mgrGetLimMSecTime2_clbk _dh_mission_mgrGetLimMSecTime2_user(nullptr);
+        static info::_dh_mission_mgrGetMissionCont4_ptr _dh_mission_mgrGetMissionCont4_next(nullptr);
+        static info::_dh_mission_mgrGetMissionCont4_clbk _dh_mission_mgrGetMissionCont4_user(nullptr);
+        static info::_dh_mission_mgrInit6_ptr _dh_mission_mgrInit6_next(nullptr);
+        static info::_dh_mission_mgrInit6_clbk _dh_mission_mgrInit6_user(nullptr);
+        static info::_dh_mission_mgrIsOpenPortal8_ptr _dh_mission_mgrIsOpenPortal8_next(nullptr);
+        static info::_dh_mission_mgrIsOpenPortal8_clbk _dh_mission_mgrIsOpenPortal8_user(nullptr);
+        static info::_dh_mission_mgrNextMission10_ptr _dh_mission_mgrNextMission10_next(nullptr);
+        static info::_dh_mission_mgrNextMission10_clbk _dh_mission_mgrNextMission10_user(nullptr);
+        static info::_dh_mission_mgrOpenPortal12_ptr _dh_mission_mgrOpenPortal12_next(nullptr);
+        static info::_dh_mission_mgrOpenPortal12_clbk _dh_mission_mgrOpenPortal12_user(nullptr);
+        static info::_dh_mission_mgrSearchCurMissionCont14_ptr _dh_mission_mgrSearchCurMissionCont14_next(nullptr);
+        static info::_dh_mission_mgrSearchCurMissionCont14_clbk _dh_mission_mgrSearchCurMissionCont14_user(nullptr);
+        static info::_dh_mission_mgrctor__dh_mission_mgr16_ptr _dh_mission_mgrctor__dh_mission_mgr16_next(nullptr);
+        static info::_dh_mission_mgrctor__dh_mission_mgr16_clbk _dh_mission_mgrctor__dh_mission_mgr16_user(nullptr);
         
-        info::_dh_mission_mgr___countInit2_ptr _dh_mission_mgr___countInit2_next(nullptr);
-        info::_dh_mission_mgr___countInit2_clbk _dh_mission_mgr___countInit2_user(nullptr);
+        static info::_dh_mission_mgr___countInit2_ptr _dh_mission_mgr___countInit2_next(nullptr);
+        static info::_dh_mission_mgr___countInit2_clbk _dh_mission_mgr___countInit2_user(nullptr);
         
-        info::_dh_mission_mgr___if_changeInit2_ptr _dh_mission_mgr___if_changeInit2_next(nullptr);
-        info::_dh_mission_mgr___if_changeInit2_clbk _dh_mission_mgr___if_changeInit2_user(nullptr);
-        info::_dh_mission_mgr___if_changeIsFill4_ptr _dh_mission_mgr___if_changeIsFill4_next(nullptr);
-        info::_dh_mission_mgr___if_changeIsFill4_clbk _dh_mission_mgr___if_changeIsFill4_user(nullptr);
-        info::_dh_mission_mgr___if_changector__if_change6_ptr _dh_mission_mgr___if_changector__if_change6_next(nullptr);
-        info::_dh_mission_mgr___if_changector__if_change6_clbk _dh_mission_mgr___if_changector__if_change6_user(nullptr);
+        static info::_dh_mission_mgr___if_changeInit2_ptr _dh_mission_mgr___if_changeInit2_next(nullptr);
+        static info::_dh_mission_mgr___if_changeInit2_clbk _dh_mission_mgr___if_changeInit2_user(nullptr);
+        static info::_dh_mission_mgr___if_changeIsFill4_ptr _dh_mission_mgr___if_changeIsFill4_next(nullptr);
+        static info::_dh_mission_mgr___if_changeIsFill4_clbk _dh_mission_mgr___if_changeIsFill4_user(nullptr);
+        static info::_dh_mission_mgr___if_changector__if_change6_ptr _dh_mission_mgr___if_changector__if_change6_next(nullptr);
+        static info::_dh_mission_mgr___if_changector__if_change6_clbk _dh_mission_mgr___if_changector__if_change6_user(nullptr);
         
-        info::_dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_ptr _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_next(nullptr);
-        info::_dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_clbk _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_user(nullptr);
-        info::_dh_mission_mgr___respawn_monster_actinit4_ptr _dh_mission_mgr___respawn_monster_actinit4_next(nullptr);
-        info::_dh_mission_mgr___respawn_monster_actinit4_clbk _dh_mission_mgr___respawn_monster_actinit4_user(nullptr);
-        info::_dh_mission_mgr___respawn_monster_actset6_ptr _dh_mission_mgr___respawn_monster_actset6_next(nullptr);
-        info::_dh_mission_mgr___respawn_monster_actset6_clbk _dh_mission_mgr___respawn_monster_actset6_user(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_ptr _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_next(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_clbk _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_user(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actinit4_ptr _dh_mission_mgr___respawn_monster_actinit4_next(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actinit4_clbk _dh_mission_mgr___respawn_monster_actinit4_user(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actset6_ptr _dh_mission_mgr___respawn_monster_actset6_next(nullptr);
+        static info::_dh_mission_mgr___respawn_monster_actset6_clbk _dh_mission_mgr___respawn_monster_actset6_user(nullptr);
         
-        unsigned int _dh_mission_mgrGetLimMSecTime2_wrapper(struct _dh_mission_mgr* _this)
+        static unsigned int _dh_mission_mgrGetLimMSecTime2_wrapper(struct _dh_mission_mgr* _this)
         {
            return _dh_mission_mgrGetLimMSecTime2_user(_this, _dh_mission_mgrGetLimMSecTime2_next);
         };
-        struct _dh_mission_mgr::_if_change* _dh_mission_mgrGetMissionCont4_wrapper(struct _dh_mission_mgr* _this, struct _dh_mission_setup* pMsSetup)
+        static struct _dh_mission_mgr::_if_change* _dh_mission_mgrGetMissionCont4_wrapper(struct _dh_mission_mgr* _this, struct _dh_mission_setup* pMsSetup)
         {
            return _dh_mission_mgrGetMissionCont4_user(_this, pMsSetup, _dh_mission_mgrGetMissionCont4_next);
         };
-        void _dh_mission_mgrInit6_wrapper(struct _dh_mission_mgr* _this)
+        static void _dh_mission_mgrInit6_wrapper(struct _dh_mission_mgr* _this)
         {
            _dh_mission_mgrInit6_user(_this, _dh_mission_mgrInit6_next);
         };
-        bool _dh_mission_mgrIsOpenPortal8_wrapper(struct _dh_mission_mgr* _this, int nIndex)
+        static bool _dh_mission_mgrIsOpenPortal8_wrapper(struct _dh_mission_mgr* _this, int nIndex)
         {
            return _dh_mission_mgrIsOpenPortal8_user(_this, nIndex, _dh_mission_mgrIsOpenPortal8_next);
         };
-        void _dh_mission_mgrNextMission10_wrapper(struct _dh_mission_mgr* _this, struct _dh_mission_setup* pNextMssionPtr)
+        static void _dh_mission_mgrNextMission10_wrapper(struct _dh_mission_mgr* _this, struct _dh_mission_setup* pNextMssionPtr)
         {
            _dh_mission_mgrNextMission10_user(_this, pNextMssionPtr, _dh_mission_mgrNextMission10_next);
         };
-        void _dh_mission_mgrOpenPortal12_wrapper(struct _dh_mission_mgr* _this, int nIndex)
+        static void _dh_mission_mgrOpenPortal12_wrapper(struct _dh_mission_mgr* _this, int nIndex)
         {
            _dh_mission_mgrOpenPortal12_user(_this, nIndex, _dh_mission_mgrOpenPortal12_next);
         };
-        struct _dh_mission_mgr::_if_change* _dh_mission_mgrSearchCurMissionCont14_wrapper(struct _dh_mission_mgr* _this)
+        static struct _dh_mission_mgr::_if_change* _dh_mission_mgrSearchCurMissionCont14_wrapper(struct _dh_mission_mgr* _this)
         {
            return _dh_mission_mgrSearchCurMissionCont14_user(_this, _dh_mission_mgrSearchCurMissionCont14_next);
         };
-        void _dh_mission_mgrctor__dh_mission_mgr16_wrapper(struct _dh_mission_mgr* _this)
+        static void _dh_mission_mgrctor__dh_mission_mgr16_wrapper(struct _dh_mission_mgr* _this)
         {
            _dh_mission_mgrctor__dh_mission_mgr16_user(_this, _dh_mission_mgrctor__dh_mission_mgr16_next);
         };
         
-        void _dh_mission_mgr___countInit2_wrapper(struct _dh_mission_mgr::_count* _this)
+        static void _dh_mission_mgr___countInit2_wrapper(struct _dh_mission_mgr::_count* _this)
         {
            _dh_mission_mgr___countInit2_user(_this, _dh_mission_mgr___countInit2_next);
         };
         
-        void _dh_mission_mgr___if_changeInit2_wrapper(struct _dh_mission_mgr::_if_change* _this)
+        static void _dh_mission_mgr___if_changeInit2_wrapper(struct _dh_mission_mgr::_if_change* _this)
         {
            _dh_mission_mgr___if_changeInit2_user(_this, _dh_mission_mgr___if_changeInit2_next);
         };
-        bool _dh_mission_mgr___if_changeIsFill4_wrapper(struct _dh_mission_mgr::_if_change* _this)
+        static bool _dh_mission_mgr___if_changeIsFill4_wrapper(struct _dh_mission_mgr::_if_change* _this)
         {
            return _dh_mission_mgr___if_changeIsFill4_user(_this, _dh_mission_mgr___if_changeIsFill4_next);
         };
-        void _dh_mission_mgr___if_changector__if_change6_wrapper(struct _dh_mission_mgr::_if_change* _this)
+        static void _dh_mission_mgr___if_changector__if_change6_wrapper(struct _dh_mission_mgr::_if_change* _this)
         {
            _dh_mission_mgr___if_changector__if_change6_user(_this, _dh_mission_mgr___if_changector__if_change6_next);
         };
         
-        void _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this)
+        static void _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this)
         {
            _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_user(_this, _dh_mission_mgr___respawn_monster_actctor__respawn_monster_act2_next);
         };
-        void _dh_mission_mgr___respawn_monster_actinit4_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this)
+        static void _dh_mission_mgr___respawn_monster_actinit4_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this)
         {
            _dh_mission_mgr___respawn_monster_actinit4_user(_this, _dh_mission_mgr___respawn_monster_actinit4_next);
         };
-        void _dh_mission_mgr___respawn_monster_actset6_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this, struct __respawn_monster* data)
+        static void _dh_mission_mgr___respawn_monster_actset6_wrapper(struct _dh_mission_mgr::_respawn_monster_act* _this, struct __respawn_monster* data)
         {
            _dh_mission_mgr___respawn_monster_actset6_user(_this, data, _dh_mission_mgr___respawn_monster_actset6_next);
         };
         
-        hook_record _dh_mission_mgr_functions[] = {
+        static hook_record _dh_mission_mgr_functions[] = {
         {   (LPVOID)0x14026ef40L,
             (LPVOID *)&_dh_mission_mgrGetLimMSecTime2_user,
             (LPVOID *)&_dh_mission_mgrGetLimMSecTime2_next,
@@ -188,5 +188,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

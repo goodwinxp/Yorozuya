@@ -8,57 +8,57 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::cStaticMember_PlayerGetLimitExp2_ptr cStaticMember_PlayerGetLimitExp2_next(nullptr);
-        info::cStaticMember_PlayerGetLimitExp2_clbk cStaticMember_PlayerGetLimitExp2_user(nullptr);
-        info::cStaticMember_PlayerGetMaxLv4_ptr cStaticMember_PlayerGetMaxLv4_next(nullptr);
-        info::cStaticMember_PlayerGetMaxLv4_clbk cStaticMember_PlayerGetMaxLv4_user(nullptr);
-        info::cStaticMember_PlayerInitialize6_ptr cStaticMember_PlayerInitialize6_next(nullptr);
-        info::cStaticMember_PlayerInitialize6_clbk cStaticMember_PlayerInitialize6_user(nullptr);
-        info::cStaticMember_PlayerInstance8_ptr cStaticMember_PlayerInstance8_next(nullptr);
-        info::cStaticMember_PlayerInstance8_clbk cStaticMember_PlayerInstance8_user(nullptr);
-        info::cStaticMember_PlayerRelease10_ptr cStaticMember_PlayerRelease10_next(nullptr);
-        info::cStaticMember_PlayerRelease10_clbk cStaticMember_PlayerRelease10_user(nullptr);
-        info::cStaticMember_Playerctor_cStaticMember_Player14_ptr cStaticMember_Playerctor_cStaticMember_Player14_next(nullptr);
-        info::cStaticMember_Playerctor_cStaticMember_Player14_clbk cStaticMember_Playerctor_cStaticMember_Player14_user(nullptr);
-        info::cStaticMember_PlayerloadLimitExpData16_ptr cStaticMember_PlayerloadLimitExpData16_next(nullptr);
-        info::cStaticMember_PlayerloadLimitExpData16_clbk cStaticMember_PlayerloadLimitExpData16_user(nullptr);
-        info::cStaticMember_Playerdtor_cStaticMember_Player18_ptr cStaticMember_Playerdtor_cStaticMember_Player18_next(nullptr);
-        info::cStaticMember_Playerdtor_cStaticMember_Player18_clbk cStaticMember_Playerdtor_cStaticMember_Player18_user(nullptr);
+        static info::cStaticMember_PlayerGetLimitExp2_ptr cStaticMember_PlayerGetLimitExp2_next(nullptr);
+        static info::cStaticMember_PlayerGetLimitExp2_clbk cStaticMember_PlayerGetLimitExp2_user(nullptr);
+        static info::cStaticMember_PlayerGetMaxLv4_ptr cStaticMember_PlayerGetMaxLv4_next(nullptr);
+        static info::cStaticMember_PlayerGetMaxLv4_clbk cStaticMember_PlayerGetMaxLv4_user(nullptr);
+        static info::cStaticMember_PlayerInitialize6_ptr cStaticMember_PlayerInitialize6_next(nullptr);
+        static info::cStaticMember_PlayerInitialize6_clbk cStaticMember_PlayerInitialize6_user(nullptr);
+        static info::cStaticMember_PlayerInstance8_ptr cStaticMember_PlayerInstance8_next(nullptr);
+        static info::cStaticMember_PlayerInstance8_clbk cStaticMember_PlayerInstance8_user(nullptr);
+        static info::cStaticMember_PlayerRelease10_ptr cStaticMember_PlayerRelease10_next(nullptr);
+        static info::cStaticMember_PlayerRelease10_clbk cStaticMember_PlayerRelease10_user(nullptr);
+        static info::cStaticMember_Playerctor_cStaticMember_Player14_ptr cStaticMember_Playerctor_cStaticMember_Player14_next(nullptr);
+        static info::cStaticMember_Playerctor_cStaticMember_Player14_clbk cStaticMember_Playerctor_cStaticMember_Player14_user(nullptr);
+        static info::cStaticMember_PlayerloadLimitExpData16_ptr cStaticMember_PlayerloadLimitExpData16_next(nullptr);
+        static info::cStaticMember_PlayerloadLimitExpData16_clbk cStaticMember_PlayerloadLimitExpData16_user(nullptr);
+        static info::cStaticMember_Playerdtor_cStaticMember_Player18_ptr cStaticMember_Playerdtor_cStaticMember_Player18_next(nullptr);
+        static info::cStaticMember_Playerdtor_cStaticMember_Player18_clbk cStaticMember_Playerdtor_cStaticMember_Player18_user(nullptr);
         
-        long double cStaticMember_PlayerGetLimitExp2_wrapper(struct cStaticMember_Player* _this, int lv)
+        static long double cStaticMember_PlayerGetLimitExp2_wrapper(struct cStaticMember_Player* _this, int lv)
         {
            return cStaticMember_PlayerGetLimitExp2_user(_this, lv, cStaticMember_PlayerGetLimitExp2_next);
         };
-        int cStaticMember_PlayerGetMaxLv4_wrapper(struct cStaticMember_Player* _this)
+        static int cStaticMember_PlayerGetMaxLv4_wrapper(struct cStaticMember_Player* _this)
         {
            return cStaticMember_PlayerGetMaxLv4_user(_this, cStaticMember_PlayerGetMaxLv4_next);
         };
-        bool cStaticMember_PlayerInitialize6_wrapper(struct cStaticMember_Player* _this)
+        static bool cStaticMember_PlayerInitialize6_wrapper(struct cStaticMember_Player* _this)
         {
            return cStaticMember_PlayerInitialize6_user(_this, cStaticMember_PlayerInitialize6_next);
         };
-        struct cStaticMember_Player* cStaticMember_PlayerInstance8_wrapper()
+        static struct cStaticMember_Player* cStaticMember_PlayerInstance8_wrapper()
         {
            return cStaticMember_PlayerInstance8_user(cStaticMember_PlayerInstance8_next);
         };
-        void cStaticMember_PlayerRelease10_wrapper()
+        static void cStaticMember_PlayerRelease10_wrapper()
         {
            cStaticMember_PlayerRelease10_user(cStaticMember_PlayerRelease10_next);
         };
-        void cStaticMember_Playerctor_cStaticMember_Player14_wrapper(struct cStaticMember_Player* _this)
+        static void cStaticMember_Playerctor_cStaticMember_Player14_wrapper(struct cStaticMember_Player* _this)
         {
            cStaticMember_Playerctor_cStaticMember_Player14_user(_this, cStaticMember_Playerctor_cStaticMember_Player14_next);
         };
-        bool cStaticMember_PlayerloadLimitExpData16_wrapper(struct cStaticMember_Player* _this)
+        static bool cStaticMember_PlayerloadLimitExpData16_wrapper(struct cStaticMember_Player* _this)
         {
            return cStaticMember_PlayerloadLimitExpData16_user(_this, cStaticMember_PlayerloadLimitExpData16_next);
         };
-        void cStaticMember_Playerdtor_cStaticMember_Player18_wrapper(struct cStaticMember_Player* _this)
+        static void cStaticMember_Playerdtor_cStaticMember_Player18_wrapper(struct cStaticMember_Player* _this)
         {
            cStaticMember_Playerdtor_cStaticMember_Player18_user(_this, cStaticMember_Playerdtor_cStaticMember_Player18_next);
         };
         
-        hook_record cStaticMember_Player_functions[] = {
+        static hook_record cStaticMember_Player_functions[] = {
         {   (LPVOID)0x14010e5e0L,
             (LPVOID *)&cStaticMember_PlayerGetLimitExp2_user,
             (LPVOID *)&cStaticMember_PlayerGetLimitExp2_next,
@@ -102,5 +102,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

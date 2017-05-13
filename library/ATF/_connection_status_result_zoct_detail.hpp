@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_connection_status_result_zoctsize2_ptr _connection_status_result_zoctsize2_next(nullptr);
-        info::_connection_status_result_zoctsize2_clbk _connection_status_result_zoctsize2_user(nullptr);
+        static info::_connection_status_result_zoctsize2_ptr _connection_status_result_zoctsize2_next(nullptr);
+        static info::_connection_status_result_zoctsize2_clbk _connection_status_result_zoctsize2_user(nullptr);
         
-        int _connection_status_result_zoctsize2_wrapper(struct _connection_status_result_zoct* _this)
+        static int _connection_status_result_zoctsize2_wrapper(struct _connection_status_result_zoct* _this)
         {
            return _connection_status_result_zoctsize2_user(_this, _connection_status_result_zoctsize2_next);
         };
         
-        hook_record _connection_status_result_zoct_functions[] = {
+        static hook_record _connection_status_result_zoct_functions[] = {
         {   (LPVOID)0x1401c7750L,
             (LPVOID *)&_connection_status_result_zoctsize2_user,
             (LPVOID *)&_connection_status_result_zoctsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

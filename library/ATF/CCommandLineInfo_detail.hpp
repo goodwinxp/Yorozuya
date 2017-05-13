@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCommandLineInfodtor_CCommandLineInfo1_ptr CCommandLineInfodtor_CCommandLineInfo1_next(nullptr);
-        info::CCommandLineInfodtor_CCommandLineInfo1_clbk CCommandLineInfodtor_CCommandLineInfo1_user(nullptr);
+        static info::CCommandLineInfodtor_CCommandLineInfo1_ptr CCommandLineInfodtor_CCommandLineInfo1_next(nullptr);
+        static info::CCommandLineInfodtor_CCommandLineInfo1_clbk CCommandLineInfodtor_CCommandLineInfo1_user(nullptr);
         
-        int64_t CCommandLineInfodtor_CCommandLineInfo1_wrapper(struct CCommandLineInfo* _this)
+        static int64_t CCommandLineInfodtor_CCommandLineInfo1_wrapper(struct CCommandLineInfo* _this)
         {
            return CCommandLineInfodtor_CCommandLineInfo1_user(_this, CCommandLineInfodtor_CCommandLineInfo1_next);
         };
         
-        hook_record CCommandLineInfo_functions[] = {
+        static hook_record CCommandLineInfo_functions[] = {
         {   (LPVOID)0x1404dbffaL,
             (LPVOID *)&CCommandLineInfodtor_CCommandLineInfo1_user,
             (LPVOID *)&CCommandLineInfodtor_CCommandLineInfo1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_event_participant_classrefineIsChanged2_ptr _event_participant_classrefineIsChanged2_next(nullptr);
-        info::_event_participant_classrefineIsChanged2_clbk _event_participant_classrefineIsChanged2_user(nullptr);
-        info::_event_participant_classrefinesize4_ptr _event_participant_classrefinesize4_next(nullptr);
-        info::_event_participant_classrefinesize4_clbk _event_participant_classrefinesize4_user(nullptr);
+        static info::_event_participant_classrefineIsChanged2_ptr _event_participant_classrefineIsChanged2_next(nullptr);
+        static info::_event_participant_classrefineIsChanged2_clbk _event_participant_classrefineIsChanged2_user(nullptr);
+        static info::_event_participant_classrefinesize4_ptr _event_participant_classrefinesize4_next(nullptr);
+        static info::_event_participant_classrefinesize4_clbk _event_participant_classrefinesize4_user(nullptr);
         
-        bool _event_participant_classrefineIsChanged2_wrapper(struct _event_participant_classrefine* _this)
+        static bool _event_participant_classrefineIsChanged2_wrapper(struct _event_participant_classrefine* _this)
         {
            return _event_participant_classrefineIsChanged2_user(_this, _event_participant_classrefineIsChanged2_next);
         };
-        int _event_participant_classrefinesize4_wrapper(struct _event_participant_classrefine* _this)
+        static int _event_participant_classrefinesize4_wrapper(struct _event_participant_classrefine* _this)
         {
            return _event_participant_classrefinesize4_user(_this, _event_participant_classrefinesize4_next);
         };
         
-        hook_record _event_participant_classrefine_functions[] = {
+        static hook_record _event_participant_classrefine_functions[] = {
         {   (LPVOID)0x140329680L,
             (LPVOID *)&_event_participant_classrefineIsChanged2_user,
             (LPVOID *)&_event_participant_classrefineIsChanged2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

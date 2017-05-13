@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CExtPotionBufctor_CExtPotionBuf2_ptr CExtPotionBufctor_CExtPotionBuf2_next(nullptr);
-        info::CExtPotionBufctor_CExtPotionBuf2_clbk CExtPotionBufctor_CExtPotionBuf2_user(nullptr);
-        info::CExtPotionBufCalcRemainTime4_ptr CExtPotionBufCalcRemainTime4_next(nullptr);
-        info::CExtPotionBufCalcRemainTime4_clbk CExtPotionBufCalcRemainTime4_user(nullptr);
-        info::CExtPotionBufCheckPotionTime6_ptr CExtPotionBufCheckPotionTime6_next(nullptr);
-        info::CExtPotionBufCheckPotionTime6_clbk CExtPotionBufCheckPotionTime6_user(nullptr);
-        info::CExtPotionBufIsExtPotionUse8_ptr CExtPotionBufIsExtPotionUse8_next(nullptr);
-        info::CExtPotionBufIsExtPotionUse8_clbk CExtPotionBufIsExtPotionUse8_user(nullptr);
-        info::CExtPotionBufSednMsg_RemovePotionContEffect10_ptr CExtPotionBufSednMsg_RemovePotionContEffect10_next(nullptr);
-        info::CExtPotionBufSednMsg_RemovePotionContEffect10_clbk CExtPotionBufSednMsg_RemovePotionContEffect10_user(nullptr);
-        info::CExtPotionBufSendMsg_RemainBufUseTime12_ptr CExtPotionBufSendMsg_RemainBufUseTime12_next(nullptr);
-        info::CExtPotionBufSendMsg_RemainBufUseTime12_clbk CExtPotionBufSendMsg_RemainBufUseTime12_user(nullptr);
-        info::CExtPotionBufSetExtPotionBufUse14_ptr CExtPotionBufSetExtPotionBufUse14_next(nullptr);
-        info::CExtPotionBufSetExtPotionBufUse14_clbk CExtPotionBufSetExtPotionBufUse14_user(nullptr);
-        info::CExtPotionBufSetExtPotionEndTime16_ptr CExtPotionBufSetExtPotionEndTime16_next(nullptr);
-        info::CExtPotionBufSetExtPotionEndTime16_clbk CExtPotionBufSetExtPotionEndTime16_user(nullptr);
-        info::CExtPotionBufUseBuffPotion18_ptr CExtPotionBufUseBuffPotion18_next(nullptr);
-        info::CExtPotionBufUseBuffPotion18_clbk CExtPotionBufUseBuffPotion18_user(nullptr);
-        info::CExtPotionBufdtor_CExtPotionBuf20_ptr CExtPotionBufdtor_CExtPotionBuf20_next(nullptr);
-        info::CExtPotionBufdtor_CExtPotionBuf20_clbk CExtPotionBufdtor_CExtPotionBuf20_user(nullptr);
+        static info::CExtPotionBufctor_CExtPotionBuf2_ptr CExtPotionBufctor_CExtPotionBuf2_next(nullptr);
+        static info::CExtPotionBufctor_CExtPotionBuf2_clbk CExtPotionBufctor_CExtPotionBuf2_user(nullptr);
+        static info::CExtPotionBufCalcRemainTime4_ptr CExtPotionBufCalcRemainTime4_next(nullptr);
+        static info::CExtPotionBufCalcRemainTime4_clbk CExtPotionBufCalcRemainTime4_user(nullptr);
+        static info::CExtPotionBufCheckPotionTime6_ptr CExtPotionBufCheckPotionTime6_next(nullptr);
+        static info::CExtPotionBufCheckPotionTime6_clbk CExtPotionBufCheckPotionTime6_user(nullptr);
+        static info::CExtPotionBufIsExtPotionUse8_ptr CExtPotionBufIsExtPotionUse8_next(nullptr);
+        static info::CExtPotionBufIsExtPotionUse8_clbk CExtPotionBufIsExtPotionUse8_user(nullptr);
+        static info::CExtPotionBufSednMsg_RemovePotionContEffect10_ptr CExtPotionBufSednMsg_RemovePotionContEffect10_next(nullptr);
+        static info::CExtPotionBufSednMsg_RemovePotionContEffect10_clbk CExtPotionBufSednMsg_RemovePotionContEffect10_user(nullptr);
+        static info::CExtPotionBufSendMsg_RemainBufUseTime12_ptr CExtPotionBufSendMsg_RemainBufUseTime12_next(nullptr);
+        static info::CExtPotionBufSendMsg_RemainBufUseTime12_clbk CExtPotionBufSendMsg_RemainBufUseTime12_user(nullptr);
+        static info::CExtPotionBufSetExtPotionBufUse14_ptr CExtPotionBufSetExtPotionBufUse14_next(nullptr);
+        static info::CExtPotionBufSetExtPotionBufUse14_clbk CExtPotionBufSetExtPotionBufUse14_user(nullptr);
+        static info::CExtPotionBufSetExtPotionEndTime16_ptr CExtPotionBufSetExtPotionEndTime16_next(nullptr);
+        static info::CExtPotionBufSetExtPotionEndTime16_clbk CExtPotionBufSetExtPotionEndTime16_user(nullptr);
+        static info::CExtPotionBufUseBuffPotion18_ptr CExtPotionBufUseBuffPotion18_next(nullptr);
+        static info::CExtPotionBufUseBuffPotion18_clbk CExtPotionBufUseBuffPotion18_user(nullptr);
+        static info::CExtPotionBufdtor_CExtPotionBuf20_ptr CExtPotionBufdtor_CExtPotionBuf20_next(nullptr);
+        static info::CExtPotionBufdtor_CExtPotionBuf20_clbk CExtPotionBufdtor_CExtPotionBuf20_user(nullptr);
         
-        void CExtPotionBufctor_CExtPotionBuf2_wrapper(struct CExtPotionBuf* _this)
+        static void CExtPotionBufctor_CExtPotionBuf2_wrapper(struct CExtPotionBuf* _this)
         {
            CExtPotionBufctor_CExtPotionBuf2_user(_this, CExtPotionBufctor_CExtPotionBuf2_next);
         };
-        void CExtPotionBufCalcRemainTime4_wrapper(struct CExtPotionBuf* _this, uint16_t wInx, bool bUse)
+        static void CExtPotionBufCalcRemainTime4_wrapper(struct CExtPotionBuf* _this, uint16_t wInx, bool bUse)
         {
            CExtPotionBufCalcRemainTime4_user(_this, wInx, bUse, CExtPotionBufCalcRemainTime4_next);
         };
-        void CExtPotionBufCheckPotionTime6_wrapper(struct CExtPotionBuf* _this, struct CPlayer* pOne)
+        static void CExtPotionBufCheckPotionTime6_wrapper(struct CExtPotionBuf* _this, struct CPlayer* pOne)
         {
            CExtPotionBufCheckPotionTime6_user(_this, pOne, CExtPotionBufCheckPotionTime6_next);
         };
-        bool CExtPotionBufIsExtPotionUse8_wrapper(struct CExtPotionBuf* _this)
+        static bool CExtPotionBufIsExtPotionUse8_wrapper(struct CExtPotionBuf* _this)
         {
            return CExtPotionBufIsExtPotionUse8_user(_this, CExtPotionBufIsExtPotionUse8_next);
         };
-        void CExtPotionBufSednMsg_RemovePotionContEffect10_wrapper(struct CExtPotionBuf* _this, uint16_t wPotionInx, uint16_t wIndex)
+        static void CExtPotionBufSednMsg_RemovePotionContEffect10_wrapper(struct CExtPotionBuf* _this, uint16_t wPotionInx, uint16_t wIndex)
         {
            CExtPotionBufSednMsg_RemovePotionContEffect10_user(_this, wPotionInx, wIndex, CExtPotionBufSednMsg_RemovePotionContEffect10_next);
         };
-        void CExtPotionBufSendMsg_RemainBufUseTime12_wrapper(struct CExtPotionBuf* _this, bool bUse, uint16_t wIndex, int nEndDay, int nEndHour, int nEndMin)
+        static void CExtPotionBufSendMsg_RemainBufUseTime12_wrapper(struct CExtPotionBuf* _this, bool bUse, uint16_t wIndex, int nEndDay, int nEndHour, int nEndMin)
         {
            CExtPotionBufSendMsg_RemainBufUseTime12_user(_this, bUse, wIndex, nEndDay, nEndHour, nEndMin, CExtPotionBufSendMsg_RemainBufUseTime12_next);
         };
-        void CExtPotionBufSetExtPotionBufUse14_wrapper(struct CExtPotionBuf* _this, bool bUse)
+        static void CExtPotionBufSetExtPotionBufUse14_wrapper(struct CExtPotionBuf* _this, bool bUse)
         {
            CExtPotionBufSetExtPotionBufUse14_user(_this, bUse, CExtPotionBufSetExtPotionBufUse14_next);
         };
-        void CExtPotionBufSetExtPotionEndTime16_wrapper(struct CExtPotionBuf* _this, unsigned int dwEndTime)
+        static void CExtPotionBufSetExtPotionEndTime16_wrapper(struct CExtPotionBuf* _this, unsigned int dwEndTime)
         {
            CExtPotionBufSetExtPotionEndTime16_user(_this, dwEndTime, CExtPotionBufSetExtPotionEndTime16_next);
         };
-        void CExtPotionBufUseBuffPotion18_wrapper(struct CExtPotionBuf* _this, struct CPlayer* pOne)
+        static void CExtPotionBufUseBuffPotion18_wrapper(struct CExtPotionBuf* _this, struct CPlayer* pOne)
         {
            CExtPotionBufUseBuffPotion18_user(_this, pOne, CExtPotionBufUseBuffPotion18_next);
         };
-        void CExtPotionBufdtor_CExtPotionBuf20_wrapper(struct CExtPotionBuf* _this)
+        static void CExtPotionBufdtor_CExtPotionBuf20_wrapper(struct CExtPotionBuf* _this)
         {
            CExtPotionBufdtor_CExtPotionBuf20_user(_this, CExtPotionBufdtor_CExtPotionBuf20_next);
         };
         
-        hook_record CExtPotionBuf_functions[] = {
+        static hook_record CExtPotionBuf_functions[] = {
         {   (LPVOID)0x14039fba0L,
             (LPVOID *)&CExtPotionBufctor_CExtPotionBuf2_user,
             (LPVOID *)&CExtPotionBufctor_CExtPotionBuf2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

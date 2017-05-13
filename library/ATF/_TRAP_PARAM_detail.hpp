@@ -8,59 +8,59 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_TRAP_PARAMGetNum2_ptr _TRAP_PARAMGetNum2_next(nullptr);
-        info::_TRAP_PARAMGetNum2_clbk _TRAP_PARAMGetNum2_user(nullptr);
-        info::_TRAP_PARAMInit4_ptr _TRAP_PARAMInit4_next(nullptr);
-        info::_TRAP_PARAMInit4_clbk _TRAP_PARAMInit4_user(nullptr);
-        info::_TRAP_PARAMPopItem6_ptr _TRAP_PARAMPopItem6_next(nullptr);
-        info::_TRAP_PARAMPopItem6_clbk _TRAP_PARAMPopItem6_user(nullptr);
-        info::_TRAP_PARAMPushItem8_ptr _TRAP_PARAMPushItem8_next(nullptr);
-        info::_TRAP_PARAMPushItem8_clbk _TRAP_PARAMPushItem8_user(nullptr);
-        info::_TRAP_PARAMctor__TRAP_PARAM10_ptr _TRAP_PARAMctor__TRAP_PARAM10_next(nullptr);
-        info::_TRAP_PARAMctor__TRAP_PARAM10_clbk _TRAP_PARAMctor__TRAP_PARAM10_user(nullptr);
+        static info::_TRAP_PARAMGetNum2_ptr _TRAP_PARAMGetNum2_next(nullptr);
+        static info::_TRAP_PARAMGetNum2_clbk _TRAP_PARAMGetNum2_user(nullptr);
+        static info::_TRAP_PARAMInit4_ptr _TRAP_PARAMInit4_next(nullptr);
+        static info::_TRAP_PARAMInit4_clbk _TRAP_PARAMInit4_user(nullptr);
+        static info::_TRAP_PARAMPopItem6_ptr _TRAP_PARAMPopItem6_next(nullptr);
+        static info::_TRAP_PARAMPopItem6_clbk _TRAP_PARAMPopItem6_user(nullptr);
+        static info::_TRAP_PARAMPushItem8_ptr _TRAP_PARAMPushItem8_next(nullptr);
+        static info::_TRAP_PARAMPushItem8_clbk _TRAP_PARAMPushItem8_user(nullptr);
+        static info::_TRAP_PARAMctor__TRAP_PARAM10_ptr _TRAP_PARAMctor__TRAP_PARAM10_next(nullptr);
+        static info::_TRAP_PARAMctor__TRAP_PARAM10_clbk _TRAP_PARAMctor__TRAP_PARAM10_user(nullptr);
         
-        info::_TRAP_PARAM___paramctor__param2_ptr _TRAP_PARAM___paramctor__param2_next(nullptr);
-        info::_TRAP_PARAM___paramctor__param2_clbk _TRAP_PARAM___paramctor__param2_user(nullptr);
-        info::_TRAP_PARAM___paraminit4_ptr _TRAP_PARAM___paraminit4_next(nullptr);
-        info::_TRAP_PARAM___paraminit4_clbk _TRAP_PARAM___paraminit4_user(nullptr);
-        info::_TRAP_PARAM___paramisLoad6_ptr _TRAP_PARAM___paramisLoad6_next(nullptr);
-        info::_TRAP_PARAM___paramisLoad6_clbk _TRAP_PARAM___paramisLoad6_user(nullptr);
+        static info::_TRAP_PARAM___paramctor__param2_ptr _TRAP_PARAM___paramctor__param2_next(nullptr);
+        static info::_TRAP_PARAM___paramctor__param2_clbk _TRAP_PARAM___paramctor__param2_user(nullptr);
+        static info::_TRAP_PARAM___paraminit4_ptr _TRAP_PARAM___paraminit4_next(nullptr);
+        static info::_TRAP_PARAM___paraminit4_clbk _TRAP_PARAM___paraminit4_user(nullptr);
+        static info::_TRAP_PARAM___paramisLoad6_ptr _TRAP_PARAM___paramisLoad6_next(nullptr);
+        static info::_TRAP_PARAM___paramisLoad6_clbk _TRAP_PARAM___paramisLoad6_user(nullptr);
         
-        int _TRAP_PARAMGetNum2_wrapper(struct _TRAP_PARAM* _this)
+        static int _TRAP_PARAMGetNum2_wrapper(struct _TRAP_PARAM* _this)
         {
            return _TRAP_PARAMGetNum2_user(_this, _TRAP_PARAMGetNum2_next);
         };
-        void _TRAP_PARAMInit4_wrapper(struct _TRAP_PARAM* _this)
+        static void _TRAP_PARAMInit4_wrapper(struct _TRAP_PARAM* _this)
         {
            _TRAP_PARAMInit4_user(_this, _TRAP_PARAMInit4_next);
         };
-        bool _TRAP_PARAMPopItem6_wrapper(struct _TRAP_PARAM* _this, unsigned int dwTrapSerial)
+        static bool _TRAP_PARAMPopItem6_wrapper(struct _TRAP_PARAM* _this, unsigned int dwTrapSerial)
         {
            return _TRAP_PARAMPopItem6_user(_this, dwTrapSerial, _TRAP_PARAMPopItem6_next);
         };
-        bool _TRAP_PARAMPushItem8_wrapper(struct _TRAP_PARAM* _this, struct CTrap* pTrap, unsigned int dwTrapSerial)
+        static bool _TRAP_PARAMPushItem8_wrapper(struct _TRAP_PARAM* _this, struct CTrap* pTrap, unsigned int dwTrapSerial)
         {
            return _TRAP_PARAMPushItem8_user(_this, pTrap, dwTrapSerial, _TRAP_PARAMPushItem8_next);
         };
-        void _TRAP_PARAMctor__TRAP_PARAM10_wrapper(struct _TRAP_PARAM* _this)
+        static void _TRAP_PARAMctor__TRAP_PARAM10_wrapper(struct _TRAP_PARAM* _this)
         {
            _TRAP_PARAMctor__TRAP_PARAM10_user(_this, _TRAP_PARAMctor__TRAP_PARAM10_next);
         };
         
-        void _TRAP_PARAM___paramctor__param2_wrapper(struct _TRAP_PARAM::_param* _this)
+        static void _TRAP_PARAM___paramctor__param2_wrapper(struct _TRAP_PARAM::_param* _this)
         {
            _TRAP_PARAM___paramctor__param2_user(_this, _TRAP_PARAM___paramctor__param2_next);
         };
-        void _TRAP_PARAM___paraminit4_wrapper(struct _TRAP_PARAM::_param* _this)
+        static void _TRAP_PARAM___paraminit4_wrapper(struct _TRAP_PARAM::_param* _this)
         {
            _TRAP_PARAM___paraminit4_user(_this, _TRAP_PARAM___paraminit4_next);
         };
-        bool _TRAP_PARAM___paramisLoad6_wrapper(struct _TRAP_PARAM::_param* _this)
+        static bool _TRAP_PARAM___paramisLoad6_wrapper(struct _TRAP_PARAM::_param* _this)
         {
            return _TRAP_PARAM___paramisLoad6_user(_this, _TRAP_PARAM___paramisLoad6_next);
         };
         
-        hook_record _TRAP_PARAM_functions[] = {
+        static hook_record _TRAP_PARAM_functions[] = {
         {   (LPVOID)0x1400a6a20L,
             (LPVOID *)&_TRAP_PARAMGetNum2_user,
             (LPVOID *)&_TRAP_PARAMGetNum2_next,
@@ -105,5 +105,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

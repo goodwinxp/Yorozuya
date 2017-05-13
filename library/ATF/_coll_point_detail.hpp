@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_coll_pointInitPoint2_ptr _coll_pointInitPoint2_next(nullptr);
-        info::_coll_pointInitPoint2_clbk _coll_pointInitPoint2_user(nullptr);
+        static info::_coll_pointInitPoint2_ptr _coll_pointInitPoint2_next(nullptr);
+        static info::_coll_pointInitPoint2_clbk _coll_pointInitPoint2_user(nullptr);
         
-        void _coll_pointInitPoint2_wrapper(struct _coll_point* _this, struct CMapData* pMap, float* pPos, struct CRect* prcWnd)
+        static void _coll_pointInitPoint2_wrapper(struct _coll_point* _this, struct CMapData* pMap, float* pPos, struct CRect* prcWnd)
         {
            _coll_pointInitPoint2_user(_this, pMap, pPos, prcWnd, _coll_pointInitPoint2_next);
         };
         
-        hook_record _coll_point_functions[] = {
+        static hook_record _coll_point_functions[] = {
         {   (LPVOID)0x14019c3b0L,
             (LPVOID *)&_coll_pointInitPoint2_user,
             (LPVOID *)&_coll_pointInitPoint2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

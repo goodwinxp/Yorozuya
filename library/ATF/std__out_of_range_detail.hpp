@@ -10,27 +10,27 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__out_of_rangector_out_of_range5_ptr std__out_of_rangector_out_of_range5_next(nullptr);
-            info::std__out_of_rangector_out_of_range5_clbk std__out_of_rangector_out_of_range5_user(nullptr);
-            info::std__out_of_rangector_out_of_range7_ptr std__out_of_rangector_out_of_range7_next(nullptr);
-            info::std__out_of_rangector_out_of_range7_clbk std__out_of_rangector_out_of_range7_user(nullptr);
-            info::std__out_of_rangedtor_out_of_range9_ptr std__out_of_rangedtor_out_of_range9_next(nullptr);
-            info::std__out_of_rangedtor_out_of_range9_clbk std__out_of_rangedtor_out_of_range9_user(nullptr);
+            static info::std__out_of_rangector_out_of_range5_ptr std__out_of_rangector_out_of_range5_next(nullptr);
+            static info::std__out_of_rangector_out_of_range5_clbk std__out_of_rangector_out_of_range5_user(nullptr);
+            static info::std__out_of_rangector_out_of_range7_ptr std__out_of_rangector_out_of_range7_next(nullptr);
+            static info::std__out_of_rangector_out_of_range7_clbk std__out_of_rangector_out_of_range7_user(nullptr);
+            static info::std__out_of_rangedtor_out_of_range9_ptr std__out_of_rangedtor_out_of_range9_next(nullptr);
+            static info::std__out_of_rangedtor_out_of_range9_clbk std__out_of_rangedtor_out_of_range9_user(nullptr);
             
-            void std__out_of_rangector_out_of_range5_wrapper(struct std::out_of_range* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
+            static void std__out_of_rangector_out_of_range5_wrapper(struct std::out_of_range* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
             {
                std__out_of_rangector_out_of_range5_user(_this, _Message, std__out_of_rangector_out_of_range5_next);
             };
-            void std__out_of_rangector_out_of_range7_wrapper(struct std::out_of_range* _this, struct std::out_of_range* __that)
+            static void std__out_of_rangector_out_of_range7_wrapper(struct std::out_of_range* _this, struct std::out_of_range* __that)
             {
                std__out_of_rangector_out_of_range7_user(_this, __that, std__out_of_rangector_out_of_range7_next);
             };
-            void std__out_of_rangedtor_out_of_range9_wrapper(struct std::out_of_range* _this)
+            static void std__out_of_rangedtor_out_of_range9_wrapper(struct std::out_of_range* _this)
             {
                std__out_of_rangedtor_out_of_range9_user(_this, std__out_of_rangedtor_out_of_range9_next);
             };
             
-            hook_record out_of_range_functions[] = {
+            static hook_record out_of_range_functions[] = {
             {   (LPVOID)0x140195740L,
                 (LPVOID *)&std__out_of_rangector_out_of_range5_user,
                 (LPVOID *)&std__out_of_rangector_out_of_range5_next,
@@ -49,6 +49,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

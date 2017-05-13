@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_react_areactor__react_area2_ptr _react_areactor__react_area2_next(nullptr);
-        info::_react_areactor__react_area2_clbk _react_areactor__react_area2_user(nullptr);
-        info::_react_areacopy4_ptr _react_areacopy4_next(nullptr);
-        info::_react_areacopy4_clbk _react_areacopy4_user(nullptr);
+        static info::_react_areactor__react_area2_ptr _react_areactor__react_area2_next(nullptr);
+        static info::_react_areactor__react_area2_clbk _react_areactor__react_area2_user(nullptr);
+        static info::_react_areacopy4_ptr _react_areacopy4_next(nullptr);
+        static info::_react_areacopy4_clbk _react_areacopy4_user(nullptr);
         
-        void _react_areactor__react_area2_wrapper(struct _react_area* _this)
+        static void _react_areactor__react_area2_wrapper(struct _react_area* _this)
         {
            _react_areactor__react_area2_user(_this, _react_areactor__react_area2_next);
         };
-        void _react_areacopy4_wrapper(struct _react_area* _this, struct _react_area* pObj)
+        static void _react_areacopy4_wrapper(struct _react_area* _this, struct _react_area* pObj)
         {
            _react_areacopy4_user(_this, pObj, _react_areacopy4_next);
         };
         
-        hook_record _react_area_functions[] = {
+        static hook_record _react_area_functions[] = {
         {   (LPVOID)0x14027a340L,
             (LPVOID *)&_react_areactor__react_area2_user,
             (LPVOID *)&_react_areactor__react_area2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

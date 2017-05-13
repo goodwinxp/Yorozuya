@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_NEAR_DATAInit2_ptr _NEAR_DATAInit2_next(nullptr);
-        info::_NEAR_DATAInit2_clbk _NEAR_DATAInit2_user(nullptr);
-        info::_NEAR_DATActor__NEAR_DATA4_ptr _NEAR_DATActor__NEAR_DATA4_next(nullptr);
-        info::_NEAR_DATActor__NEAR_DATA4_clbk _NEAR_DATActor__NEAR_DATA4_user(nullptr);
+        static info::_NEAR_DATAInit2_ptr _NEAR_DATAInit2_next(nullptr);
+        static info::_NEAR_DATAInit2_clbk _NEAR_DATAInit2_user(nullptr);
+        static info::_NEAR_DATActor__NEAR_DATA4_ptr _NEAR_DATActor__NEAR_DATA4_next(nullptr);
+        static info::_NEAR_DATActor__NEAR_DATA4_clbk _NEAR_DATActor__NEAR_DATA4_user(nullptr);
         
-        void _NEAR_DATAInit2_wrapper(struct _NEAR_DATA* _this)
+        static void _NEAR_DATAInit2_wrapper(struct _NEAR_DATA* _this)
         {
            _NEAR_DATAInit2_user(_this, _NEAR_DATAInit2_next);
         };
-        void _NEAR_DATActor__NEAR_DATA4_wrapper(struct _NEAR_DATA* _this)
+        static void _NEAR_DATActor__NEAR_DATA4_wrapper(struct _NEAR_DATA* _this)
         {
            _NEAR_DATActor__NEAR_DATA4_user(_this, _NEAR_DATActor__NEAR_DATA4_next);
         };
         
-        hook_record _NEAR_DATA_functions[] = {
+        static hook_record _NEAR_DATA_functions[] = {
         {   (LPVOID)0x140155570L,
             (LPVOID *)&_NEAR_DATAInit2_user,
             (LPVOID *)&_NEAR_DATAInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

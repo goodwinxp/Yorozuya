@@ -8,177 +8,177 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CItemStoreManagerctor_CItemStoreManager2_ptr CItemStoreManagerctor_CItemStoreManager2_next(nullptr);
-        info::CItemStoreManagerctor_CItemStoreManager2_clbk CItemStoreManagerctor_CItemStoreManager2_user(nullptr);
-        info::CItemStoreManagerCompleteDisableInstanceStore4_ptr CItemStoreManagerCompleteDisableInstanceStore4_next(nullptr);
-        info::CItemStoreManagerCompleteDisableInstanceStore4_clbk CItemStoreManagerCompleteDisableInstanceStore4_user(nullptr);
-        info::CItemStoreManagerCompleteStoreLimitItem6_ptr CItemStoreManagerCompleteStoreLimitItem6_next(nullptr);
-        info::CItemStoreManagerCompleteStoreLimitItem6_clbk CItemStoreManagerCompleteStoreLimitItem6_user(nullptr);
-        info::CItemStoreManagerDestroy8_ptr CItemStoreManagerDestroy8_next(nullptr);
-        info::CItemStoreManagerDestroy8_clbk CItemStoreManagerDestroy8_user(nullptr);
-        info::CItemStoreManagerGetEmptyInstanceItemStore10_ptr CItemStoreManagerGetEmptyInstanceItemStore10_next(nullptr);
-        info::CItemStoreManagerGetEmptyInstanceItemStore10_clbk CItemStoreManagerGetEmptyInstanceItemStore10_user(nullptr);
-        info::CItemStoreManagerGetInstanceStoreListBySerial12_ptr CItemStoreManagerGetInstanceStoreListBySerial12_next(nullptr);
-        info::CItemStoreManagerGetInstanceStoreListBySerial12_clbk CItemStoreManagerGetInstanceStoreListBySerial12_user(nullptr);
-        info::CItemStoreManagerGetMapItemStoreFromList14_ptr CItemStoreManagerGetMapItemStoreFromList14_next(nullptr);
-        info::CItemStoreManagerGetMapItemStoreFromList14_clbk CItemStoreManagerGetMapItemStoreFromList14_user(nullptr);
-        info::CItemStoreManagerGetMapItemStoreListByNum16_ptr CItemStoreManagerGetMapItemStoreListByNum16_next(nullptr);
-        info::CItemStoreManagerGetMapItemStoreListByNum16_clbk CItemStoreManagerGetMapItemStoreListByNum16_user(nullptr);
-        info::CItemStoreManagerGetMapItemStoreListBySerial18_ptr CItemStoreManagerGetMapItemStoreListBySerial18_next(nullptr);
-        info::CItemStoreManagerGetMapItemStoreListBySerial18_clbk CItemStoreManagerGetMapItemStoreListBySerial18_user(nullptr);
-        info::CItemStoreManagerInit20_ptr CItemStoreManagerInit20_next(nullptr);
-        info::CItemStoreManagerInit20_clbk CItemStoreManagerInit20_user(nullptr);
-        info::CItemStoreManagerInitLogger22_ptr CItemStoreManagerInitLogger22_next(nullptr);
-        info::CItemStoreManagerInitLogger22_clbk CItemStoreManagerInitLogger22_user(nullptr);
-        info::CItemStoreManagerInsertNotEnoughLimitItemRecord24_ptr CItemStoreManagerInsertNotEnoughLimitItemRecord24_next(nullptr);
-        info::CItemStoreManagerInsertNotEnoughLimitItemRecord24_clbk CItemStoreManagerInsertNotEnoughLimitItemRecord24_user(nullptr);
-        info::CItemStoreManagerInstance26_ptr CItemStoreManagerInstance26_next(nullptr);
-        info::CItemStoreManagerInstance26_clbk CItemStoreManagerInstance26_user(nullptr);
-        info::CItemStoreManagerLoad28_ptr CItemStoreManagerLoad28_next(nullptr);
-        info::CItemStoreManagerLoad28_clbk CItemStoreManagerLoad28_user(nullptr);
-        info::CItemStoreManagerLog30_ptr CItemStoreManagerLog30_next(nullptr);
-        info::CItemStoreManagerLog30_clbk CItemStoreManagerLog30_user(nullptr);
-        info::CItemStoreManagerLoop32_ptr CItemStoreManagerLoop32_next(nullptr);
-        info::CItemStoreManagerLoop32_clbk CItemStoreManagerLoop32_user(nullptr);
-        info::CItemStoreManagerMakeLimitItemUpdateQuery34_ptr CItemStoreManagerMakeLimitItemUpdateQuery34_next(nullptr);
-        info::CItemStoreManagerMakeLimitItemUpdateQuery34_clbk CItemStoreManagerMakeLimitItemUpdateQuery34_user(nullptr);
-        info::CItemStoreManagerResetInstanceItemStore36_ptr CItemStoreManagerResetInstanceItemStore36_next(nullptr);
-        info::CItemStoreManagerResetInstanceItemStore36_clbk CItemStoreManagerResetInstanceItemStore36_user(nullptr);
-        info::CItemStoreManagerSelectStoreLimitItem38_ptr CItemStoreManagerSelectStoreLimitItem38_next(nullptr);
-        info::CItemStoreManagerSelectStoreLimitItem38_clbk CItemStoreManagerSelectStoreLimitItem38_user(nullptr);
-        info::CItemStoreManagerSelectTotalRecordNum40_ptr CItemStoreManagerSelectTotalRecordNum40_next(nullptr);
-        info::CItemStoreManagerSelectTotalRecordNum40_clbk CItemStoreManagerSelectTotalRecordNum40_user(nullptr);
-        info::CItemStoreManagerSelectUsedRecordNum42_ptr CItemStoreManagerSelectUsedRecordNum42_next(nullptr);
-        info::CItemStoreManagerSelectUsedRecordNum42_clbk CItemStoreManagerSelectUsedRecordNum42_user(nullptr);
-        info::CItemStoreManagerSetEnforceInitNormalStore44_ptr CItemStoreManagerSetEnforceInitNormalStore44_next(nullptr);
-        info::CItemStoreManagerSetEnforceInitNormalStore44_clbk CItemStoreManagerSetEnforceInitNormalStore44_user(nullptr);
-        info::CItemStoreManagerSetNextEnforceInitTime46_ptr CItemStoreManagerSetNextEnforceInitTime46_next(nullptr);
-        info::CItemStoreManagerSetNextEnforceInitTime46_clbk CItemStoreManagerSetNextEnforceInitTime46_user(nullptr);
-        info::CItemStoreManagerSetStoreLimitItemData48_ptr CItemStoreManagerSetStoreLimitItemData48_next(nullptr);
-        info::CItemStoreManagerSetStoreLimitItemData48_clbk CItemStoreManagerSetStoreLimitItemData48_user(nullptr);
-        info::CItemStoreManagerSetUpdateDBDataDoNotCheck50_ptr CItemStoreManagerSetUpdateDBDataDoNotCheck50_next(nullptr);
-        info::CItemStoreManagerSetUpdateDBDataDoNotCheck50_clbk CItemStoreManagerSetUpdateDBDataDoNotCheck50_user(nullptr);
-        info::CItemStoreManagerUpdateDisableInstanceStore52_ptr CItemStoreManagerUpdateDisableInstanceStore52_next(nullptr);
-        info::CItemStoreManagerUpdateDisableInstanceStore52_clbk CItemStoreManagerUpdateDisableInstanceStore52_user(nullptr);
-        info::CItemStoreManagerUpdateStoreLimitItem54_ptr CItemStoreManagerUpdateStoreLimitItem54_next(nullptr);
-        info::CItemStoreManagerUpdateStoreLimitItem54_clbk CItemStoreManagerUpdateStoreLimitItem54_user(nullptr);
-        info::CItemStoreManagerdtor_CItemStoreManager58_ptr CItemStoreManagerdtor_CItemStoreManager58_next(nullptr);
-        info::CItemStoreManagerdtor_CItemStoreManager58_clbk CItemStoreManagerdtor_CItemStoreManager58_user(nullptr);
+        static info::CItemStoreManagerctor_CItemStoreManager2_ptr CItemStoreManagerctor_CItemStoreManager2_next(nullptr);
+        static info::CItemStoreManagerctor_CItemStoreManager2_clbk CItemStoreManagerctor_CItemStoreManager2_user(nullptr);
+        static info::CItemStoreManagerCompleteDisableInstanceStore4_ptr CItemStoreManagerCompleteDisableInstanceStore4_next(nullptr);
+        static info::CItemStoreManagerCompleteDisableInstanceStore4_clbk CItemStoreManagerCompleteDisableInstanceStore4_user(nullptr);
+        static info::CItemStoreManagerCompleteStoreLimitItem6_ptr CItemStoreManagerCompleteStoreLimitItem6_next(nullptr);
+        static info::CItemStoreManagerCompleteStoreLimitItem6_clbk CItemStoreManagerCompleteStoreLimitItem6_user(nullptr);
+        static info::CItemStoreManagerDestroy8_ptr CItemStoreManagerDestroy8_next(nullptr);
+        static info::CItemStoreManagerDestroy8_clbk CItemStoreManagerDestroy8_user(nullptr);
+        static info::CItemStoreManagerGetEmptyInstanceItemStore10_ptr CItemStoreManagerGetEmptyInstanceItemStore10_next(nullptr);
+        static info::CItemStoreManagerGetEmptyInstanceItemStore10_clbk CItemStoreManagerGetEmptyInstanceItemStore10_user(nullptr);
+        static info::CItemStoreManagerGetInstanceStoreListBySerial12_ptr CItemStoreManagerGetInstanceStoreListBySerial12_next(nullptr);
+        static info::CItemStoreManagerGetInstanceStoreListBySerial12_clbk CItemStoreManagerGetInstanceStoreListBySerial12_user(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreFromList14_ptr CItemStoreManagerGetMapItemStoreFromList14_next(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreFromList14_clbk CItemStoreManagerGetMapItemStoreFromList14_user(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreListByNum16_ptr CItemStoreManagerGetMapItemStoreListByNum16_next(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreListByNum16_clbk CItemStoreManagerGetMapItemStoreListByNum16_user(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreListBySerial18_ptr CItemStoreManagerGetMapItemStoreListBySerial18_next(nullptr);
+        static info::CItemStoreManagerGetMapItemStoreListBySerial18_clbk CItemStoreManagerGetMapItemStoreListBySerial18_user(nullptr);
+        static info::CItemStoreManagerInit20_ptr CItemStoreManagerInit20_next(nullptr);
+        static info::CItemStoreManagerInit20_clbk CItemStoreManagerInit20_user(nullptr);
+        static info::CItemStoreManagerInitLogger22_ptr CItemStoreManagerInitLogger22_next(nullptr);
+        static info::CItemStoreManagerInitLogger22_clbk CItemStoreManagerInitLogger22_user(nullptr);
+        static info::CItemStoreManagerInsertNotEnoughLimitItemRecord24_ptr CItemStoreManagerInsertNotEnoughLimitItemRecord24_next(nullptr);
+        static info::CItemStoreManagerInsertNotEnoughLimitItemRecord24_clbk CItemStoreManagerInsertNotEnoughLimitItemRecord24_user(nullptr);
+        static info::CItemStoreManagerInstance26_ptr CItemStoreManagerInstance26_next(nullptr);
+        static info::CItemStoreManagerInstance26_clbk CItemStoreManagerInstance26_user(nullptr);
+        static info::CItemStoreManagerLoad28_ptr CItemStoreManagerLoad28_next(nullptr);
+        static info::CItemStoreManagerLoad28_clbk CItemStoreManagerLoad28_user(nullptr);
+        static info::CItemStoreManagerLog30_ptr CItemStoreManagerLog30_next(nullptr);
+        static info::CItemStoreManagerLog30_clbk CItemStoreManagerLog30_user(nullptr);
+        static info::CItemStoreManagerLoop32_ptr CItemStoreManagerLoop32_next(nullptr);
+        static info::CItemStoreManagerLoop32_clbk CItemStoreManagerLoop32_user(nullptr);
+        static info::CItemStoreManagerMakeLimitItemUpdateQuery34_ptr CItemStoreManagerMakeLimitItemUpdateQuery34_next(nullptr);
+        static info::CItemStoreManagerMakeLimitItemUpdateQuery34_clbk CItemStoreManagerMakeLimitItemUpdateQuery34_user(nullptr);
+        static info::CItemStoreManagerResetInstanceItemStore36_ptr CItemStoreManagerResetInstanceItemStore36_next(nullptr);
+        static info::CItemStoreManagerResetInstanceItemStore36_clbk CItemStoreManagerResetInstanceItemStore36_user(nullptr);
+        static info::CItemStoreManagerSelectStoreLimitItem38_ptr CItemStoreManagerSelectStoreLimitItem38_next(nullptr);
+        static info::CItemStoreManagerSelectStoreLimitItem38_clbk CItemStoreManagerSelectStoreLimitItem38_user(nullptr);
+        static info::CItemStoreManagerSelectTotalRecordNum40_ptr CItemStoreManagerSelectTotalRecordNum40_next(nullptr);
+        static info::CItemStoreManagerSelectTotalRecordNum40_clbk CItemStoreManagerSelectTotalRecordNum40_user(nullptr);
+        static info::CItemStoreManagerSelectUsedRecordNum42_ptr CItemStoreManagerSelectUsedRecordNum42_next(nullptr);
+        static info::CItemStoreManagerSelectUsedRecordNum42_clbk CItemStoreManagerSelectUsedRecordNum42_user(nullptr);
+        static info::CItemStoreManagerSetEnforceInitNormalStore44_ptr CItemStoreManagerSetEnforceInitNormalStore44_next(nullptr);
+        static info::CItemStoreManagerSetEnforceInitNormalStore44_clbk CItemStoreManagerSetEnforceInitNormalStore44_user(nullptr);
+        static info::CItemStoreManagerSetNextEnforceInitTime46_ptr CItemStoreManagerSetNextEnforceInitTime46_next(nullptr);
+        static info::CItemStoreManagerSetNextEnforceInitTime46_clbk CItemStoreManagerSetNextEnforceInitTime46_user(nullptr);
+        static info::CItemStoreManagerSetStoreLimitItemData48_ptr CItemStoreManagerSetStoreLimitItemData48_next(nullptr);
+        static info::CItemStoreManagerSetStoreLimitItemData48_clbk CItemStoreManagerSetStoreLimitItemData48_user(nullptr);
+        static info::CItemStoreManagerSetUpdateDBDataDoNotCheck50_ptr CItemStoreManagerSetUpdateDBDataDoNotCheck50_next(nullptr);
+        static info::CItemStoreManagerSetUpdateDBDataDoNotCheck50_clbk CItemStoreManagerSetUpdateDBDataDoNotCheck50_user(nullptr);
+        static info::CItemStoreManagerUpdateDisableInstanceStore52_ptr CItemStoreManagerUpdateDisableInstanceStore52_next(nullptr);
+        static info::CItemStoreManagerUpdateDisableInstanceStore52_clbk CItemStoreManagerUpdateDisableInstanceStore52_user(nullptr);
+        static info::CItemStoreManagerUpdateStoreLimitItem54_ptr CItemStoreManagerUpdateStoreLimitItem54_next(nullptr);
+        static info::CItemStoreManagerUpdateStoreLimitItem54_clbk CItemStoreManagerUpdateStoreLimitItem54_user(nullptr);
+        static info::CItemStoreManagerdtor_CItemStoreManager58_ptr CItemStoreManagerdtor_CItemStoreManager58_next(nullptr);
+        static info::CItemStoreManagerdtor_CItemStoreManager58_clbk CItemStoreManagerdtor_CItemStoreManager58_user(nullptr);
         
-        void CItemStoreManagerctor_CItemStoreManager2_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerctor_CItemStoreManager2_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerctor_CItemStoreManager2_user(_this, CItemStoreManagerctor_CItemStoreManager2_next);
         };
-        void CItemStoreManagerCompleteDisableInstanceStore4_wrapper(struct CItemStoreManager* _this, char* pData)
+        static void CItemStoreManagerCompleteDisableInstanceStore4_wrapper(struct CItemStoreManager* _this, char* pData)
         {
            CItemStoreManagerCompleteDisableInstanceStore4_user(_this, pData, CItemStoreManagerCompleteDisableInstanceStore4_next);
         };
-        void CItemStoreManagerCompleteStoreLimitItem6_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerCompleteStoreLimitItem6_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerCompleteStoreLimitItem6_user(_this, CItemStoreManagerCompleteStoreLimitItem6_next);
         };
-        void CItemStoreManagerDestroy8_wrapper()
+        static void CItemStoreManagerDestroy8_wrapper()
         {
            CItemStoreManagerDestroy8_user(CItemStoreManagerDestroy8_next);
         };
-        struct CMapItemStoreList* CItemStoreManagerGetEmptyInstanceItemStore10_wrapper(struct CItemStoreManager* _this)
+        static struct CMapItemStoreList* CItemStoreManagerGetEmptyInstanceItemStore10_wrapper(struct CItemStoreManager* _this)
         {
            return CItemStoreManagerGetEmptyInstanceItemStore10_user(_this, CItemStoreManagerGetEmptyInstanceItemStore10_next);
         };
-        struct CMapItemStoreList* CItemStoreManagerGetInstanceStoreListBySerial12_wrapper(struct CItemStoreManager* _this, int nSerial)
+        static struct CMapItemStoreList* CItemStoreManagerGetInstanceStoreListBySerial12_wrapper(struct CItemStoreManager* _this, int nSerial)
         {
            return CItemStoreManagerGetInstanceStoreListBySerial12_user(_this, nSerial, CItemStoreManagerGetInstanceStoreListBySerial12_next);
         };
-        struct CItemStore* CItemStoreManagerGetMapItemStoreFromList14_wrapper(struct CItemStoreManager* _this, int nMapNum, int nStoreNum)
+        static struct CItemStore* CItemStoreManagerGetMapItemStoreFromList14_wrapper(struct CItemStoreManager* _this, int nMapNum, int nStoreNum)
         {
            return CItemStoreManagerGetMapItemStoreFromList14_user(_this, nMapNum, nStoreNum, CItemStoreManagerGetMapItemStoreFromList14_next);
         };
-        struct CMapItemStoreList* CItemStoreManagerGetMapItemStoreListByNum16_wrapper(struct CItemStoreManager* _this, int nNum)
+        static struct CMapItemStoreList* CItemStoreManagerGetMapItemStoreListByNum16_wrapper(struct CItemStoreManager* _this, int nNum)
         {
            return CItemStoreManagerGetMapItemStoreListByNum16_user(_this, nNum, CItemStoreManagerGetMapItemStoreListByNum16_next);
         };
-        struct CMapItemStoreList* CItemStoreManagerGetMapItemStoreListBySerial18_wrapper(struct CItemStoreManager* _this, int nSerial)
+        static struct CMapItemStoreList* CItemStoreManagerGetMapItemStoreListBySerial18_wrapper(struct CItemStoreManager* _this, int nSerial)
         {
            return CItemStoreManagerGetMapItemStoreListBySerial18_user(_this, nSerial, CItemStoreManagerGetMapItemStoreListBySerial18_next);
         };
-        bool CItemStoreManagerInit20_wrapper(struct CItemStoreManager* _this, int nNormalListNum, int nInstanceListNum)
+        static bool CItemStoreManagerInit20_wrapper(struct CItemStoreManager* _this, int nNormalListNum, int nInstanceListNum)
         {
            return CItemStoreManagerInit20_user(_this, nNormalListNum, nInstanceListNum, CItemStoreManagerInit20_next);
         };
-        bool CItemStoreManagerInitLogger22_wrapper(struct CItemStoreManager* _this)
+        static bool CItemStoreManagerInitLogger22_wrapper(struct CItemStoreManager* _this)
         {
            return CItemStoreManagerInitLogger22_user(_this, CItemStoreManagerInitLogger22_next);
         };
-        bool CItemStoreManagerInsertNotEnoughLimitItemRecord24_wrapper(struct CItemStoreManager* _this, int nNum)
+        static bool CItemStoreManagerInsertNotEnoughLimitItemRecord24_wrapper(struct CItemStoreManager* _this, int nNum)
         {
            return CItemStoreManagerInsertNotEnoughLimitItemRecord24_user(_this, nNum, CItemStoreManagerInsertNotEnoughLimitItemRecord24_next);
         };
-        struct CItemStoreManager* CItemStoreManagerInstance26_wrapper()
+        static struct CItemStoreManager* CItemStoreManagerInstance26_wrapper()
         {
            return CItemStoreManagerInstance26_user(CItemStoreManagerInstance26_next);
         };
-        bool CItemStoreManagerLoad28_wrapper(struct CItemStoreManager* _this)
+        static bool CItemStoreManagerLoad28_wrapper(struct CItemStoreManager* _this)
         {
            return CItemStoreManagerLoad28_user(_this, CItemStoreManagerLoad28_next);
         };
-        void CItemStoreManagerLog30_wrapper(struct CItemStoreManager* _this, char* fmt)
+        static void CItemStoreManagerLog30_wrapper(struct CItemStoreManager* _this, char* fmt)
         {
            CItemStoreManagerLog30_user(_this, fmt, CItemStoreManagerLog30_next);
         };
-        void CItemStoreManagerLoop32_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerLoop32_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerLoop32_user(_this, CItemStoreManagerLoop32_next);
         };
-        void CItemStoreManagerMakeLimitItemUpdateQuery34_wrapper(struct CItemStoreManager* _this, unsigned int dwSerial, char byStoreType, int nTypeSerial, unsigned int dwStoreIndex, struct _limit_item_db_data* pItemData, uint64_t dwLimitInitTime, char* pszQuery, int nBufSize)
+        static void CItemStoreManagerMakeLimitItemUpdateQuery34_wrapper(struct CItemStoreManager* _this, unsigned int dwSerial, char byStoreType, int nTypeSerial, unsigned int dwStoreIndex, struct _limit_item_db_data* pItemData, uint64_t dwLimitInitTime, char* pszQuery, int nBufSize)
         {
            CItemStoreManagerMakeLimitItemUpdateQuery34_user(_this, dwSerial, byStoreType, nTypeSerial, dwStoreIndex, pItemData, dwLimitInitTime, pszQuery, nBufSize, CItemStoreManagerMakeLimitItemUpdateQuery34_next);
         };
-        bool CItemStoreManagerResetInstanceItemStore36_wrapper(struct CItemStoreManager* _this, char byStoreType, int nSerial)
+        static bool CItemStoreManagerResetInstanceItemStore36_wrapper(struct CItemStoreManager* _this, char byStoreType, int nSerial)
         {
            return CItemStoreManagerResetInstanceItemStore36_user(_this, byStoreType, nSerial, CItemStoreManagerResetInstanceItemStore36_next);
         };
-        bool CItemStoreManagerSelectStoreLimitItem38_wrapper(struct CItemStoreManager* _this)
+        static bool CItemStoreManagerSelectStoreLimitItem38_wrapper(struct CItemStoreManager* _this)
         {
            return CItemStoreManagerSelectStoreLimitItem38_user(_this, CItemStoreManagerSelectStoreLimitItem38_next);
         };
-        bool CItemStoreManagerSelectTotalRecordNum40_wrapper(struct CItemStoreManager* _this, unsigned int* pdwTotalNum)
+        static bool CItemStoreManagerSelectTotalRecordNum40_wrapper(struct CItemStoreManager* _this, unsigned int* pdwTotalNum)
         {
            return CItemStoreManagerSelectTotalRecordNum40_user(_this, pdwTotalNum, CItemStoreManagerSelectTotalRecordNum40_next);
         };
-        bool CItemStoreManagerSelectUsedRecordNum42_wrapper(struct CItemStoreManager* _this, unsigned int* pdwUsedNum)
+        static bool CItemStoreManagerSelectUsedRecordNum42_wrapper(struct CItemStoreManager* _this, unsigned int* pdwUsedNum)
         {
            return CItemStoreManagerSelectUsedRecordNum42_user(_this, pdwUsedNum, CItemStoreManagerSelectUsedRecordNum42_next);
         };
-        void CItemStoreManagerSetEnforceInitNormalStore44_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerSetEnforceInitNormalStore44_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerSetEnforceInitNormalStore44_user(_this, CItemStoreManagerSetEnforceInitNormalStore44_next);
         };
-        void CItemStoreManagerSetNextEnforceInitTime46_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerSetNextEnforceInitTime46_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerSetNextEnforceInitTime46_user(_this, CItemStoreManagerSetNextEnforceInitTime46_next);
         };
-        void CItemStoreManagerSetStoreLimitItemData48_wrapper(struct CItemStoreManager* _this, struct _qry_case_all_store_limit_item::__list* pData)
+        static void CItemStoreManagerSetStoreLimitItemData48_wrapper(struct CItemStoreManager* _this, struct _qry_case_all_store_limit_item::__list* pData)
         {
            CItemStoreManagerSetStoreLimitItemData48_user(_this, pData, CItemStoreManagerSetStoreLimitItemData48_next);
         };
-        void CItemStoreManagerSetUpdateDBDataDoNotCheck50_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerSetUpdateDBDataDoNotCheck50_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerSetUpdateDBDataDoNotCheck50_user(_this, CItemStoreManagerSetUpdateDBDataDoNotCheck50_next);
         };
-        char CItemStoreManagerUpdateDisableInstanceStore52_wrapper(struct CItemStoreManager* _this, char* pData)
+        static char CItemStoreManagerUpdateDisableInstanceStore52_wrapper(struct CItemStoreManager* _this, char* pData)
         {
            return CItemStoreManagerUpdateDisableInstanceStore52_user(_this, pData, CItemStoreManagerUpdateDisableInstanceStore52_next);
         };
-        char CItemStoreManagerUpdateStoreLimitItem54_wrapper(struct CItemStoreManager* _this)
+        static char CItemStoreManagerUpdateStoreLimitItem54_wrapper(struct CItemStoreManager* _this)
         {
            return CItemStoreManagerUpdateStoreLimitItem54_user(_this, CItemStoreManagerUpdateStoreLimitItem54_next);
         };
-        void CItemStoreManagerdtor_CItemStoreManager58_wrapper(struct CItemStoreManager* _this)
+        static void CItemStoreManagerdtor_CItemStoreManager58_wrapper(struct CItemStoreManager* _this)
         {
            CItemStoreManagerdtor_CItemStoreManager58_user(_this, CItemStoreManagerdtor_CItemStoreManager58_next);
         };
         
-        hook_record CItemStoreManager_functions[] = {
+        static hook_record CItemStoreManager_functions[] = {
         {   (LPVOID)0x140348020L,
             (LPVOID *)&CItemStoreManagerctor_CItemStoreManager2_user,
             (LPVOID *)&CItemStoreManagerctor_CItemStoreManager2_next,
@@ -322,5 +322,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CChatStealSystemctor_CChatStealSystem2_ptr CChatStealSystemctor_CChatStealSystem2_next(nullptr);
-        info::CChatStealSystemctor_CChatStealSystem2_clbk CChatStealSystemctor_CChatStealSystem2_user(nullptr);
-        info::CChatStealSystemInstance4_ptr CChatStealSystemInstance4_next(nullptr);
-        info::CChatStealSystemInstance4_clbk CChatStealSystemInstance4_user(nullptr);
-        info::CChatStealSystemSendStealMsg6_ptr CChatStealSystemSendStealMsg6_next(nullptr);
-        info::CChatStealSystemSendStealMsg6_clbk CChatStealSystemSendStealMsg6_user(nullptr);
-        info::CChatStealSystemSetGm8_ptr CChatStealSystemSetGm8_next(nullptr);
-        info::CChatStealSystemSetGm8_clbk CChatStealSystemSetGm8_user(nullptr);
-        info::CChatStealSystemSetTargetInfoFromBoss10_ptr CChatStealSystemSetTargetInfoFromBoss10_next(nullptr);
-        info::CChatStealSystemSetTargetInfoFromBoss10_clbk CChatStealSystemSetTargetInfoFromBoss10_user(nullptr);
-        info::CChatStealSystemSetTargetInfoFromCharacter12_ptr CChatStealSystemSetTargetInfoFromCharacter12_next(nullptr);
-        info::CChatStealSystemSetTargetInfoFromCharacter12_clbk CChatStealSystemSetTargetInfoFromCharacter12_user(nullptr);
-        info::CChatStealSystemSetTargetInfoFromRace14_ptr CChatStealSystemSetTargetInfoFromRace14_next(nullptr);
-        info::CChatStealSystemSetTargetInfoFromRace14_clbk CChatStealSystemSetTargetInfoFromRace14_user(nullptr);
-        info::CChatStealSystemStealChatMsg16_ptr CChatStealSystemStealChatMsg16_next(nullptr);
-        info::CChatStealSystemStealChatMsg16_clbk CChatStealSystemStealChatMsg16_user(nullptr);
-        info::CChatStealSystemdtor_CChatStealSystem18_ptr CChatStealSystemdtor_CChatStealSystem18_next(nullptr);
-        info::CChatStealSystemdtor_CChatStealSystem18_clbk CChatStealSystemdtor_CChatStealSystem18_user(nullptr);
+        static info::CChatStealSystemctor_CChatStealSystem2_ptr CChatStealSystemctor_CChatStealSystem2_next(nullptr);
+        static info::CChatStealSystemctor_CChatStealSystem2_clbk CChatStealSystemctor_CChatStealSystem2_user(nullptr);
+        static info::CChatStealSystemInstance4_ptr CChatStealSystemInstance4_next(nullptr);
+        static info::CChatStealSystemInstance4_clbk CChatStealSystemInstance4_user(nullptr);
+        static info::CChatStealSystemSendStealMsg6_ptr CChatStealSystemSendStealMsg6_next(nullptr);
+        static info::CChatStealSystemSendStealMsg6_clbk CChatStealSystemSendStealMsg6_user(nullptr);
+        static info::CChatStealSystemSetGm8_ptr CChatStealSystemSetGm8_next(nullptr);
+        static info::CChatStealSystemSetGm8_clbk CChatStealSystemSetGm8_user(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromBoss10_ptr CChatStealSystemSetTargetInfoFromBoss10_next(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromBoss10_clbk CChatStealSystemSetTargetInfoFromBoss10_user(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromCharacter12_ptr CChatStealSystemSetTargetInfoFromCharacter12_next(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromCharacter12_clbk CChatStealSystemSetTargetInfoFromCharacter12_user(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromRace14_ptr CChatStealSystemSetTargetInfoFromRace14_next(nullptr);
+        static info::CChatStealSystemSetTargetInfoFromRace14_clbk CChatStealSystemSetTargetInfoFromRace14_user(nullptr);
+        static info::CChatStealSystemStealChatMsg16_ptr CChatStealSystemStealChatMsg16_next(nullptr);
+        static info::CChatStealSystemStealChatMsg16_clbk CChatStealSystemStealChatMsg16_user(nullptr);
+        static info::CChatStealSystemdtor_CChatStealSystem18_ptr CChatStealSystemdtor_CChatStealSystem18_next(nullptr);
+        static info::CChatStealSystemdtor_CChatStealSystem18_clbk CChatStealSystemdtor_CChatStealSystem18_user(nullptr);
         
-        void CChatStealSystemctor_CChatStealSystem2_wrapper(struct CChatStealSystem* _this)
+        static void CChatStealSystemctor_CChatStealSystem2_wrapper(struct CChatStealSystem* _this)
         {
            CChatStealSystemctor_CChatStealSystem2_user(_this, CChatStealSystemctor_CChatStealSystem2_next);
         };
-        struct CChatStealSystem* CChatStealSystemInstance4_wrapper()
+        static struct CChatStealSystem* CChatStealSystemInstance4_wrapper()
         {
            return CChatStealSystemInstance4_user(CChatStealSystemInstance4_next);
         };
-        void CChatStealSystemSendStealMsg6_wrapper(struct CChatStealSystem* _this, struct CPlayer* pPlayer, char byChatType, unsigned int dwSenderSerial, char* pwszSender, char byRaceCode, char* pwszMessage)
+        static void CChatStealSystemSendStealMsg6_wrapper(struct CChatStealSystem* _this, struct CPlayer* pPlayer, char byChatType, unsigned int dwSenderSerial, char* pwszSender, char byRaceCode, char* pwszMessage)
         {
            CChatStealSystemSendStealMsg6_user(_this, pPlayer, byChatType, dwSenderSerial, pwszSender, byRaceCode, pwszMessage, CChatStealSystemSendStealMsg6_next);
         };
-        bool CChatStealSystemSetGm8_wrapper(struct CChatStealSystem* _this, struct CPlayer* pGM)
+        static bool CChatStealSystemSetGm8_wrapper(struct CChatStealSystem* _this, struct CPlayer* pGM)
         {
            return CChatStealSystemSetGm8_user(_this, pGM, CChatStealSystemSetGm8_next);
         };
-        bool CChatStealSystemSetTargetInfoFromBoss10_wrapper(struct CChatStealSystem* _this, char byType, char byRaceCode)
+        static bool CChatStealSystemSetTargetInfoFromBoss10_wrapper(struct CChatStealSystem* _this, char byType, char byRaceCode)
         {
            return CChatStealSystemSetTargetInfoFromBoss10_user(_this, byType, byRaceCode, CChatStealSystemSetTargetInfoFromBoss10_next);
         };
-        bool CChatStealSystemSetTargetInfoFromCharacter12_wrapper(struct CChatStealSystem* _this, char byType, char* szCharName)
+        static bool CChatStealSystemSetTargetInfoFromCharacter12_wrapper(struct CChatStealSystem* _this, char byType, char* szCharName)
         {
            return CChatStealSystemSetTargetInfoFromCharacter12_user(_this, byType, szCharName, CChatStealSystemSetTargetInfoFromCharacter12_next);
         };
-        bool CChatStealSystemSetTargetInfoFromRace14_wrapper(struct CChatStealSystem* _this, char byType, char byRaceCode)
+        static bool CChatStealSystemSetTargetInfoFromRace14_wrapper(struct CChatStealSystem* _this, char byType, char byRaceCode)
         {
            return CChatStealSystemSetTargetInfoFromRace14_user(_this, byType, byRaceCode, CChatStealSystemSetTargetInfoFromRace14_next);
         };
-        void CChatStealSystemStealChatMsg16_wrapper(struct CChatStealSystem* _this, struct CPlayer* pPlayer, char byChatType, char* szChatMsg)
+        static void CChatStealSystemStealChatMsg16_wrapper(struct CChatStealSystem* _this, struct CPlayer* pPlayer, char byChatType, char* szChatMsg)
         {
            CChatStealSystemStealChatMsg16_user(_this, pPlayer, byChatType, szChatMsg, CChatStealSystemStealChatMsg16_next);
         };
-        void CChatStealSystemdtor_CChatStealSystem18_wrapper(struct CChatStealSystem* _this)
+        static void CChatStealSystemdtor_CChatStealSystem18_wrapper(struct CChatStealSystem* _this)
         {
            CChatStealSystemdtor_CChatStealSystem18_user(_this, CChatStealSystemdtor_CChatStealSystem18_next);
         };
         
-        hook_record CChatStealSystem_functions[] = {
+        static hook_record CChatStealSystem_functions[] = {
         {   (LPVOID)0x1403f86a0L,
             (LPVOID *)&CChatStealSystemctor_CChatStealSystem2_user,
             (LPVOID *)&CChatStealSystemctor_CChatStealSystem2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

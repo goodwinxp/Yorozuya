@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::US__CNoneCopyAblector_CNoneCopyAble2_ptr US__CNoneCopyAblector_CNoneCopyAble2_next(nullptr);
-            info::US__CNoneCopyAblector_CNoneCopyAble2_clbk US__CNoneCopyAblector_CNoneCopyAble2_user(nullptr);
-            info::US__CNoneCopyAbledtor_CNoneCopyAble4_ptr US__CNoneCopyAbledtor_CNoneCopyAble4_next(nullptr);
-            info::US__CNoneCopyAbledtor_CNoneCopyAble4_clbk US__CNoneCopyAbledtor_CNoneCopyAble4_user(nullptr);
+            static info::US__CNoneCopyAblector_CNoneCopyAble2_ptr US__CNoneCopyAblector_CNoneCopyAble2_next(nullptr);
+            static info::US__CNoneCopyAblector_CNoneCopyAble2_clbk US__CNoneCopyAblector_CNoneCopyAble2_user(nullptr);
+            static info::US__CNoneCopyAbledtor_CNoneCopyAble4_ptr US__CNoneCopyAbledtor_CNoneCopyAble4_next(nullptr);
+            static info::US__CNoneCopyAbledtor_CNoneCopyAble4_clbk US__CNoneCopyAbledtor_CNoneCopyAble4_user(nullptr);
             
-            void US__CNoneCopyAblector_CNoneCopyAble2_wrapper(struct US::CNoneCopyAble* _this)
+            static void US__CNoneCopyAblector_CNoneCopyAble2_wrapper(struct US::CNoneCopyAble* _this)
             {
                US__CNoneCopyAblector_CNoneCopyAble2_user(_this, US__CNoneCopyAblector_CNoneCopyAble2_next);
             };
-            void US__CNoneCopyAbledtor_CNoneCopyAble4_wrapper(struct US::CNoneCopyAble* _this)
+            static void US__CNoneCopyAbledtor_CNoneCopyAble4_wrapper(struct US::CNoneCopyAble* _this)
             {
                US__CNoneCopyAbledtor_CNoneCopyAble4_user(_this, US__CNoneCopyAbledtor_CNoneCopyAble4_next);
             };
             
-            hook_record CNoneCopyAble_functions[] = {
+            static hook_record CNoneCopyAble_functions[] = {
             {   (LPVOID)0x14041d6d0L,
                 (LPVOID *)&US__CNoneCopyAblector_CNoneCopyAble2_user,
                 (LPVOID *)&US__CNoneCopyAblector_CNoneCopyAble2_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace US
 END_ATF_NAMESPACE

@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterEventSetctor_CMonsterEventSet2_ptr CMonsterEventSetctor_CMonsterEventSet2_next(nullptr);
-        info::CMonsterEventSetctor_CMonsterEventSet2_clbk CMonsterEventSetctor_CMonsterEventSet2_user(nullptr);
-        info::CMonsterEventSetCheckEventSetRespawn4_ptr CMonsterEventSetCheckEventSetRespawn4_next(nullptr);
-        info::CMonsterEventSetCheckEventSetRespawn4_clbk CMonsterEventSetCheckEventSetRespawn4_user(nullptr);
-        info::CMonsterEventSetGetEmptyEventSet6_ptr CMonsterEventSetGetEmptyEventSet6_next(nullptr);
-        info::CMonsterEventSetGetEmptyEventSet6_clbk CMonsterEventSetGetEmptyEventSet6_user(nullptr);
-        info::CMonsterEventSetGetEvenSetLooting8_ptr CMonsterEventSetGetEvenSetLooting8_next(nullptr);
-        info::CMonsterEventSetGetEvenSetLooting8_clbk CMonsterEventSetGetEvenSetLooting8_user(nullptr);
-        info::CMonsterEventSetGetMonsterSet10_ptr CMonsterEventSetGetMonsterSet10_next(nullptr);
-        info::CMonsterEventSetGetMonsterSet10_clbk CMonsterEventSetGetMonsterSet10_user(nullptr);
-        info::CMonsterEventSetIsINIFileChanged12_ptr CMonsterEventSetIsINIFileChanged12_next(nullptr);
-        info::CMonsterEventSetIsINIFileChanged12_clbk CMonsterEventSetIsINIFileChanged12_user(nullptr);
-        info::CMonsterEventSetLoadEventSet14_ptr CMonsterEventSetLoadEventSet14_next(nullptr);
-        info::CMonsterEventSetLoadEventSet14_clbk CMonsterEventSetLoadEventSet14_user(nullptr);
-        info::CMonsterEventSetLoadEventSetLooting16_ptr CMonsterEventSetLoadEventSetLooting16_next(nullptr);
-        info::CMonsterEventSetLoadEventSetLooting16_clbk CMonsterEventSetLoadEventSetLooting16_user(nullptr);
-        info::CMonsterEventSetStartEventSet18_ptr CMonsterEventSetStartEventSet18_next(nullptr);
-        info::CMonsterEventSetStartEventSet18_clbk CMonsterEventSetStartEventSet18_user(nullptr);
-        info::CMonsterEventSetStopEventSet20_ptr CMonsterEventSetStopEventSet20_next(nullptr);
-        info::CMonsterEventSetStopEventSet20_clbk CMonsterEventSetStopEventSet20_user(nullptr);
-        info::CMonsterEventSetdtor_CMonsterEventSet25_ptr CMonsterEventSetdtor_CMonsterEventSet25_next(nullptr);
-        info::CMonsterEventSetdtor_CMonsterEventSet25_clbk CMonsterEventSetdtor_CMonsterEventSet25_user(nullptr);
+        static info::CMonsterEventSetctor_CMonsterEventSet2_ptr CMonsterEventSetctor_CMonsterEventSet2_next(nullptr);
+        static info::CMonsterEventSetctor_CMonsterEventSet2_clbk CMonsterEventSetctor_CMonsterEventSet2_user(nullptr);
+        static info::CMonsterEventSetCheckEventSetRespawn4_ptr CMonsterEventSetCheckEventSetRespawn4_next(nullptr);
+        static info::CMonsterEventSetCheckEventSetRespawn4_clbk CMonsterEventSetCheckEventSetRespawn4_user(nullptr);
+        static info::CMonsterEventSetGetEmptyEventSet6_ptr CMonsterEventSetGetEmptyEventSet6_next(nullptr);
+        static info::CMonsterEventSetGetEmptyEventSet6_clbk CMonsterEventSetGetEmptyEventSet6_user(nullptr);
+        static info::CMonsterEventSetGetEvenSetLooting8_ptr CMonsterEventSetGetEvenSetLooting8_next(nullptr);
+        static info::CMonsterEventSetGetEvenSetLooting8_clbk CMonsterEventSetGetEvenSetLooting8_user(nullptr);
+        static info::CMonsterEventSetGetMonsterSet10_ptr CMonsterEventSetGetMonsterSet10_next(nullptr);
+        static info::CMonsterEventSetGetMonsterSet10_clbk CMonsterEventSetGetMonsterSet10_user(nullptr);
+        static info::CMonsterEventSetIsINIFileChanged12_ptr CMonsterEventSetIsINIFileChanged12_next(nullptr);
+        static info::CMonsterEventSetIsINIFileChanged12_clbk CMonsterEventSetIsINIFileChanged12_user(nullptr);
+        static info::CMonsterEventSetLoadEventSet14_ptr CMonsterEventSetLoadEventSet14_next(nullptr);
+        static info::CMonsterEventSetLoadEventSet14_clbk CMonsterEventSetLoadEventSet14_user(nullptr);
+        static info::CMonsterEventSetLoadEventSetLooting16_ptr CMonsterEventSetLoadEventSetLooting16_next(nullptr);
+        static info::CMonsterEventSetLoadEventSetLooting16_clbk CMonsterEventSetLoadEventSetLooting16_user(nullptr);
+        static info::CMonsterEventSetStartEventSet18_ptr CMonsterEventSetStartEventSet18_next(nullptr);
+        static info::CMonsterEventSetStartEventSet18_clbk CMonsterEventSetStartEventSet18_user(nullptr);
+        static info::CMonsterEventSetStopEventSet20_ptr CMonsterEventSetStopEventSet20_next(nullptr);
+        static info::CMonsterEventSetStopEventSet20_clbk CMonsterEventSetStopEventSet20_user(nullptr);
+        static info::CMonsterEventSetdtor_CMonsterEventSet25_ptr CMonsterEventSetdtor_CMonsterEventSet25_next(nullptr);
+        static info::CMonsterEventSetdtor_CMonsterEventSet25_clbk CMonsterEventSetdtor_CMonsterEventSet25_user(nullptr);
         
-        void CMonsterEventSetctor_CMonsterEventSet2_wrapper(struct CMonsterEventSet* _this)
+        static void CMonsterEventSetctor_CMonsterEventSet2_wrapper(struct CMonsterEventSet* _this)
         {
            CMonsterEventSetctor_CMonsterEventSet2_user(_this, CMonsterEventSetctor_CMonsterEventSet2_next);
         };
-        void CMonsterEventSetCheckEventSetRespawn4_wrapper(struct CMonsterEventSet* _this)
+        static void CMonsterEventSetCheckEventSetRespawn4_wrapper(struct CMonsterEventSet* _this)
         {
            CMonsterEventSetCheckEventSetRespawn4_user(_this, CMonsterEventSetCheckEventSetRespawn4_next);
         };
-        struct _event_set* CMonsterEventSetGetEmptyEventSet6_wrapper(struct CMonsterEventSet* _this)
+        static struct _event_set* CMonsterEventSetGetEmptyEventSet6_wrapper(struct CMonsterEventSet* _this)
         {
            return CMonsterEventSetGetEmptyEventSet6_user(_this, CMonsterEventSetGetEmptyEventSet6_next);
         };
-        struct _event_set_looting* CMonsterEventSetGetEvenSetLooting8_wrapper(struct CMonsterEventSet* _this, char* pszCode)
+        static struct _event_set_looting* CMonsterEventSetGetEvenSetLooting8_wrapper(struct CMonsterEventSet* _this, char* pszCode)
         {
            return CMonsterEventSetGetEvenSetLooting8_user(_this, pszCode, CMonsterEventSetGetEvenSetLooting8_next);
         };
-        struct _event_set::_monster_set* CMonsterEventSetGetMonsterSet10_wrapper(struct CMonsterEventSet* _this, struct _event_set* pEventSet)
+        static struct _event_set::_monster_set* CMonsterEventSetGetMonsterSet10_wrapper(struct CMonsterEventSet* _this, struct _event_set* pEventSet)
         {
            return CMonsterEventSetGetMonsterSet10_user(_this, pEventSet, CMonsterEventSetGetMonsterSet10_next);
         };
-        bool CMonsterEventSetIsINIFileChanged12_wrapper(struct CMonsterEventSet* _this, char* pszFileName, struct _FILETIME ftCurr)
+        static bool CMonsterEventSetIsINIFileChanged12_wrapper(struct CMonsterEventSet* _this, char* pszFileName, struct _FILETIME ftCurr)
         {
            return CMonsterEventSetIsINIFileChanged12_user(_this, pszFileName, ftCurr, CMonsterEventSetIsINIFileChanged12_next);
         };
-        bool CMonsterEventSetLoadEventSet14_wrapper(struct CMonsterEventSet* _this, char* pwszErrCode)
+        static bool CMonsterEventSetLoadEventSet14_wrapper(struct CMonsterEventSet* _this, char* pwszErrCode)
         {
            return CMonsterEventSetLoadEventSet14_user(_this, pwszErrCode, CMonsterEventSetLoadEventSet14_next);
         };
-        bool CMonsterEventSetLoadEventSetLooting16_wrapper(struct CMonsterEventSet* _this)
+        static bool CMonsterEventSetLoadEventSetLooting16_wrapper(struct CMonsterEventSet* _this)
         {
            return CMonsterEventSetLoadEventSetLooting16_user(_this, CMonsterEventSetLoadEventSetLooting16_next);
         };
-        bool CMonsterEventSetStartEventSet18_wrapper(struct CMonsterEventSet* _this, char* pszEventCode, char* pwszErrCode, struct CPlayer* pOne)
+        static bool CMonsterEventSetStartEventSet18_wrapper(struct CMonsterEventSet* _this, char* pszEventCode, char* pwszErrCode, struct CPlayer* pOne)
         {
            return CMonsterEventSetStartEventSet18_user(_this, pszEventCode, pwszErrCode, pOne, CMonsterEventSetStartEventSet18_next);
         };
-        bool CMonsterEventSetStopEventSet20_wrapper(struct CMonsterEventSet* _this, char* pszEventCode, char* pwszErrCode)
+        static bool CMonsterEventSetStopEventSet20_wrapper(struct CMonsterEventSet* _this, char* pszEventCode, char* pwszErrCode)
         {
            return CMonsterEventSetStopEventSet20_user(_this, pszEventCode, pwszErrCode, CMonsterEventSetStopEventSet20_next);
         };
-        void CMonsterEventSetdtor_CMonsterEventSet25_wrapper(struct CMonsterEventSet* _this)
+        static void CMonsterEventSetdtor_CMonsterEventSet25_wrapper(struct CMonsterEventSet* _this)
         {
            CMonsterEventSetdtor_CMonsterEventSet25_user(_this, CMonsterEventSetdtor_CMonsterEventSet25_next);
         };
         
-        hook_record CMonsterEventSet_functions[] = {
+        static hook_record CMonsterEventSet_functions[] = {
         {   (LPVOID)0x1402a7920L,
             (LPVOID *)&CMonsterEventSetctor_CMonsterEventSet2_user,
             (LPVOID *)&CMonsterEventSetctor_CMonsterEventSet2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

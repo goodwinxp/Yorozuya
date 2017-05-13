@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::Us_FSM_NodeGetState2_ptr Us_FSM_NodeGetState2_next(nullptr);
-        info::Us_FSM_NodeGetState2_clbk Us_FSM_NodeGetState2_user(nullptr);
-        info::Us_FSM_NodeInit4_ptr Us_FSM_NodeInit4_next(nullptr);
-        info::Us_FSM_NodeInit4_clbk Us_FSM_NodeInit4_user(nullptr);
-        info::Us_FSM_NodeSetLoopTime6_ptr Us_FSM_NodeSetLoopTime6_next(nullptr);
-        info::Us_FSM_NodeSetLoopTime6_clbk Us_FSM_NodeSetLoopTime6_user(nullptr);
-        info::Us_FSM_NodeSetParent8_ptr Us_FSM_NodeSetParent8_next(nullptr);
-        info::Us_FSM_NodeSetParent8_clbk Us_FSM_NodeSetParent8_user(nullptr);
-        info::Us_FSM_NodeSetState10_ptr Us_FSM_NodeSetState10_next(nullptr);
-        info::Us_FSM_NodeSetState10_clbk Us_FSM_NodeSetState10_user(nullptr);
-        info::Us_FSM_Nodector_Us_FSM_Node12_ptr Us_FSM_Nodector_Us_FSM_Node12_next(nullptr);
-        info::Us_FSM_Nodector_Us_FSM_Node12_clbk Us_FSM_Nodector_Us_FSM_Node12_user(nullptr);
-        info::Us_FSM_Nodedtor_Us_FSM_Node14_ptr Us_FSM_Nodedtor_Us_FSM_Node14_next(nullptr);
-        info::Us_FSM_Nodedtor_Us_FSM_Node14_clbk Us_FSM_Nodedtor_Us_FSM_Node14_user(nullptr);
+        static info::Us_FSM_NodeGetState2_ptr Us_FSM_NodeGetState2_next(nullptr);
+        static info::Us_FSM_NodeGetState2_clbk Us_FSM_NodeGetState2_user(nullptr);
+        static info::Us_FSM_NodeInit4_ptr Us_FSM_NodeInit4_next(nullptr);
+        static info::Us_FSM_NodeInit4_clbk Us_FSM_NodeInit4_user(nullptr);
+        static info::Us_FSM_NodeSetLoopTime6_ptr Us_FSM_NodeSetLoopTime6_next(nullptr);
+        static info::Us_FSM_NodeSetLoopTime6_clbk Us_FSM_NodeSetLoopTime6_user(nullptr);
+        static info::Us_FSM_NodeSetParent8_ptr Us_FSM_NodeSetParent8_next(nullptr);
+        static info::Us_FSM_NodeSetParent8_clbk Us_FSM_NodeSetParent8_user(nullptr);
+        static info::Us_FSM_NodeSetState10_ptr Us_FSM_NodeSetState10_next(nullptr);
+        static info::Us_FSM_NodeSetState10_clbk Us_FSM_NodeSetState10_user(nullptr);
+        static info::Us_FSM_Nodector_Us_FSM_Node12_ptr Us_FSM_Nodector_Us_FSM_Node12_next(nullptr);
+        static info::Us_FSM_Nodector_Us_FSM_Node12_clbk Us_FSM_Nodector_Us_FSM_Node12_user(nullptr);
+        static info::Us_FSM_Nodedtor_Us_FSM_Node14_ptr Us_FSM_Nodedtor_Us_FSM_Node14_next(nullptr);
+        static info::Us_FSM_Nodedtor_Us_FSM_Node14_clbk Us_FSM_Nodedtor_Us_FSM_Node14_user(nullptr);
         
-        unsigned int Us_FSM_NodeGetState2_wrapper(struct Us_FSM_Node* _this)
+        static unsigned int Us_FSM_NodeGetState2_wrapper(struct Us_FSM_Node* _this)
         {
            return Us_FSM_NodeGetState2_user(_this, Us_FSM_NodeGetState2_next);
         };
-        void Us_FSM_NodeInit4_wrapper(struct Us_FSM_Node* _this)
+        static void Us_FSM_NodeInit4_wrapper(struct Us_FSM_Node* _this)
         {
            Us_FSM_NodeInit4_user(_this, Us_FSM_NodeInit4_next);
         };
-        void Us_FSM_NodeSetLoopTime6_wrapper(struct Us_FSM_Node* _this, unsigned int dwLoopTime)
+        static void Us_FSM_NodeSetLoopTime6_wrapper(struct Us_FSM_Node* _this, unsigned int dwLoopTime)
         {
            Us_FSM_NodeSetLoopTime6_user(_this, dwLoopTime, Us_FSM_NodeSetLoopTime6_next);
         };
-        void Us_FSM_NodeSetParent8_wrapper(struct Us_FSM_Node* _this, struct Us_FSM_Node* pParent)
+        static void Us_FSM_NodeSetParent8_wrapper(struct Us_FSM_Node* _this, struct Us_FSM_Node* pParent)
         {
            Us_FSM_NodeSetParent8_user(_this, pParent, Us_FSM_NodeSetParent8_next);
         };
-        void Us_FSM_NodeSetState10_wrapper(struct Us_FSM_Node* _this, unsigned int dwState)
+        static void Us_FSM_NodeSetState10_wrapper(struct Us_FSM_Node* _this, unsigned int dwState)
         {
            Us_FSM_NodeSetState10_user(_this, dwState, Us_FSM_NodeSetState10_next);
         };
-        void Us_FSM_Nodector_Us_FSM_Node12_wrapper(struct Us_FSM_Node* _this)
+        static void Us_FSM_Nodector_Us_FSM_Node12_wrapper(struct Us_FSM_Node* _this)
         {
            Us_FSM_Nodector_Us_FSM_Node12_user(_this, Us_FSM_Nodector_Us_FSM_Node12_next);
         };
-        void Us_FSM_Nodedtor_Us_FSM_Node14_wrapper(struct Us_FSM_Node* _this)
+        static void Us_FSM_Nodedtor_Us_FSM_Node14_wrapper(struct Us_FSM_Node* _this)
         {
            Us_FSM_Nodedtor_Us_FSM_Node14_user(_this, Us_FSM_Nodedtor_Us_FSM_Node14_next);
         };
         
-        hook_record Us_FSM_Node_functions[] = {
+        static hook_record Us_FSM_Node_functions[] = {
         {   (LPVOID)0x140155500L,
             (LPVOID *)&Us_FSM_NodeGetState2_user,
             (LPVOID *)&Us_FSM_NodeGetState2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

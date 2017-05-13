@@ -10,27 +10,27 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__length_errorctor_length_error5_ptr std__length_errorctor_length_error5_next(nullptr);
-            info::std__length_errorctor_length_error5_clbk std__length_errorctor_length_error5_user(nullptr);
-            info::std__length_errorctor_length_error7_ptr std__length_errorctor_length_error7_next(nullptr);
-            info::std__length_errorctor_length_error7_clbk std__length_errorctor_length_error7_user(nullptr);
-            info::std__length_errordtor_length_error9_ptr std__length_errordtor_length_error9_next(nullptr);
-            info::std__length_errordtor_length_error9_clbk std__length_errordtor_length_error9_user(nullptr);
+            static info::std__length_errorctor_length_error5_ptr std__length_errorctor_length_error5_next(nullptr);
+            static info::std__length_errorctor_length_error5_clbk std__length_errorctor_length_error5_user(nullptr);
+            static info::std__length_errorctor_length_error7_ptr std__length_errorctor_length_error7_next(nullptr);
+            static info::std__length_errorctor_length_error7_clbk std__length_errorctor_length_error7_user(nullptr);
+            static info::std__length_errordtor_length_error9_ptr std__length_errordtor_length_error9_next(nullptr);
+            static info::std__length_errordtor_length_error9_clbk std__length_errordtor_length_error9_user(nullptr);
             
-            void std__length_errorctor_length_error5_wrapper(struct std::length_error* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
+            static void std__length_errorctor_length_error5_wrapper(struct std::length_error* _this, struct std::basic_string<char,std::char_traits<char>,std::allocator<char> >* _Message)
             {
                std__length_errorctor_length_error5_user(_this, _Message, std__length_errorctor_length_error5_next);
             };
-            void std__length_errorctor_length_error7_wrapper(struct std::length_error* _this, struct std::length_error* __that)
+            static void std__length_errorctor_length_error7_wrapper(struct std::length_error* _this, struct std::length_error* __that)
             {
                std__length_errorctor_length_error7_user(_this, __that, std__length_errorctor_length_error7_next);
             };
-            void std__length_errordtor_length_error9_wrapper(struct std::length_error* _this)
+            static void std__length_errordtor_length_error9_wrapper(struct std::length_error* _this)
             {
                std__length_errordtor_length_error9_user(_this, std__length_errordtor_length_error9_next);
             };
             
-            hook_record length_error_functions[] = {
+            static hook_record length_error_functions[] = {
             {   (LPVOID)0x14007e780L,
                 (LPVOID *)&std__length_errorctor_length_error5_user,
                 (LPVOID *)&std__length_errorctor_length_error5_next,
@@ -49,6 +49,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

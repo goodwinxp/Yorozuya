@@ -8,23 +8,23 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_gm_msg_gmcall_list_response_zoclInit2_ptr _gm_msg_gmcall_list_response_zoclInit2_next(nullptr);
-        info::_gm_msg_gmcall_list_response_zoclInit2_clbk _gm_msg_gmcall_list_response_zoclInit2_user(nullptr);
+        static info::_gm_msg_gmcall_list_response_zoclInit2_ptr _gm_msg_gmcall_list_response_zoclInit2_next(nullptr);
+        static info::_gm_msg_gmcall_list_response_zoclInit2_clbk _gm_msg_gmcall_list_response_zoclInit2_user(nullptr);
         
-        info::_gm_msg_gmcall_list_response_zocl___call_nodeInit2_ptr _gm_msg_gmcall_list_response_zocl___call_nodeInit2_next(nullptr);
-        info::_gm_msg_gmcall_list_response_zocl___call_nodeInit2_clbk _gm_msg_gmcall_list_response_zocl___call_nodeInit2_user(nullptr);
+        static info::_gm_msg_gmcall_list_response_zocl___call_nodeInit2_ptr _gm_msg_gmcall_list_response_zocl___call_nodeInit2_next(nullptr);
+        static info::_gm_msg_gmcall_list_response_zocl___call_nodeInit2_clbk _gm_msg_gmcall_list_response_zocl___call_nodeInit2_user(nullptr);
         
-        void _gm_msg_gmcall_list_response_zoclInit2_wrapper(struct _gm_msg_gmcall_list_response_zocl* _this)
+        static void _gm_msg_gmcall_list_response_zoclInit2_wrapper(struct _gm_msg_gmcall_list_response_zocl* _this)
         {
            _gm_msg_gmcall_list_response_zoclInit2_user(_this, _gm_msg_gmcall_list_response_zoclInit2_next);
         };
         
-        void _gm_msg_gmcall_list_response_zocl___call_nodeInit2_wrapper(struct _gm_msg_gmcall_list_response_zocl::_call_node* _this)
+        static void _gm_msg_gmcall_list_response_zocl___call_nodeInit2_wrapper(struct _gm_msg_gmcall_list_response_zocl::_call_node* _this)
         {
            _gm_msg_gmcall_list_response_zocl___call_nodeInit2_user(_this, _gm_msg_gmcall_list_response_zocl___call_nodeInit2_next);
         };
         
-        hook_record _gm_msg_gmcall_list_response_zocl_functions[] = {
+        static hook_record _gm_msg_gmcall_list_response_zocl_functions[] = {
         {   (LPVOID)0x1402ab6a0L,
             (LPVOID *)&_gm_msg_gmcall_list_response_zoclInit2_user,
             (LPVOID *)&_gm_msg_gmcall_list_response_zoclInit2_next,
@@ -39,5 +39,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

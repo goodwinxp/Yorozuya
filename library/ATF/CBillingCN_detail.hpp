@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBillingCNctor_CBillingCN2_ptr CBillingCNctor_CBillingCN2_next(nullptr);
-        info::CBillingCNctor_CBillingCN2_clbk CBillingCNctor_CBillingCN2_user(nullptr);
-        info::CBillingCNdtor_CBillingCN7_ptr CBillingCNdtor_CBillingCN7_next(nullptr);
-        info::CBillingCNdtor_CBillingCN7_clbk CBillingCNdtor_CBillingCN7_user(nullptr);
+        static info::CBillingCNctor_CBillingCN2_ptr CBillingCNctor_CBillingCN2_next(nullptr);
+        static info::CBillingCNctor_CBillingCN2_clbk CBillingCNctor_CBillingCN2_user(nullptr);
+        static info::CBillingCNdtor_CBillingCN7_ptr CBillingCNdtor_CBillingCN7_next(nullptr);
+        static info::CBillingCNdtor_CBillingCN7_clbk CBillingCNdtor_CBillingCN7_user(nullptr);
         
-        void CBillingCNctor_CBillingCN2_wrapper(struct CBillingCN* _this)
+        static void CBillingCNctor_CBillingCN2_wrapper(struct CBillingCN* _this)
         {
            CBillingCNctor_CBillingCN2_user(_this, CBillingCNctor_CBillingCN2_next);
         };
-        void CBillingCNdtor_CBillingCN7_wrapper(struct CBillingCN* _this)
+        static void CBillingCNdtor_CBillingCN7_wrapper(struct CBillingCN* _this)
         {
            CBillingCNdtor_CBillingCN7_user(_this, CBillingCNdtor_CBillingCN7_next);
         };
         
-        hook_record CBillingCN_functions[] = {
+        static hook_record CBillingCN_functions[] = {
         {   (LPVOID)0x140230ce0L,
             (LPVOID *)&CBillingCNctor_CBillingCN2_user,
             (LPVOID *)&CBillingCNctor_CBillingCN2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

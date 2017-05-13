@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_tower_create_setdatactor__tower_create_setdata2_ptr _tower_create_setdatactor__tower_create_setdata2_next(nullptr);
-        info::_tower_create_setdatactor__tower_create_setdata2_clbk _tower_create_setdatactor__tower_create_setdata2_user(nullptr);
+        static info::_tower_create_setdatactor__tower_create_setdata2_ptr _tower_create_setdatactor__tower_create_setdata2_next(nullptr);
+        static info::_tower_create_setdatactor__tower_create_setdata2_clbk _tower_create_setdatactor__tower_create_setdata2_user(nullptr);
         
-        void _tower_create_setdatactor__tower_create_setdata2_wrapper(struct _tower_create_setdata* _this)
+        static void _tower_create_setdatactor__tower_create_setdata2_wrapper(struct _tower_create_setdata* _this)
         {
            _tower_create_setdatactor__tower_create_setdata2_user(_this, _tower_create_setdatactor__tower_create_setdata2_next);
         };
         
-        hook_record _tower_create_setdata_functions[] = {
+        static hook_record _tower_create_setdata_functions[] = {
         {   (LPVOID)0x140132a70L,
             (LPVOID *)&_tower_create_setdatactor__tower_create_setdata2_user,
             (LPVOID *)&_tower_create_setdatactor__tower_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

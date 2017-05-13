@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_newownerctor__qry_case_amine_newowner2_ptr _qry_case_amine_newownerctor__qry_case_amine_newowner2_next(nullptr);
-        info::_qry_case_amine_newownerctor__qry_case_amine_newowner2_clbk _qry_case_amine_newownerctor__qry_case_amine_newowner2_user(nullptr);
-        info::_qry_case_amine_newownersize4_ptr _qry_case_amine_newownersize4_next(nullptr);
-        info::_qry_case_amine_newownersize4_clbk _qry_case_amine_newownersize4_user(nullptr);
+        static info::_qry_case_amine_newownerctor__qry_case_amine_newowner2_ptr _qry_case_amine_newownerctor__qry_case_amine_newowner2_next(nullptr);
+        static info::_qry_case_amine_newownerctor__qry_case_amine_newowner2_clbk _qry_case_amine_newownerctor__qry_case_amine_newowner2_user(nullptr);
+        static info::_qry_case_amine_newownersize4_ptr _qry_case_amine_newownersize4_next(nullptr);
+        static info::_qry_case_amine_newownersize4_clbk _qry_case_amine_newownersize4_user(nullptr);
         
-        void _qry_case_amine_newownerctor__qry_case_amine_newowner2_wrapper(struct _qry_case_amine_newowner* _this)
+        static void _qry_case_amine_newownerctor__qry_case_amine_newowner2_wrapper(struct _qry_case_amine_newowner* _this)
         {
            _qry_case_amine_newownerctor__qry_case_amine_newowner2_user(_this, _qry_case_amine_newownerctor__qry_case_amine_newowner2_next);
         };
-        int _qry_case_amine_newownersize4_wrapper(struct _qry_case_amine_newowner* _this)
+        static int _qry_case_amine_newownersize4_wrapper(struct _qry_case_amine_newowner* _this)
         {
            return _qry_case_amine_newownersize4_user(_this, _qry_case_amine_newownersize4_next);
         };
         
-        hook_record _qry_case_amine_newowner_functions[] = {
+        static hook_record _qry_case_amine_newowner_functions[] = {
         {   (LPVOID)0x1402d41d0L,
             (LPVOID *)&_qry_case_amine_newownerctor__qry_case_amine_newowner2_user,
             (LPVOID *)&_qry_case_amine_newownerctor__qry_case_amine_newowner2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

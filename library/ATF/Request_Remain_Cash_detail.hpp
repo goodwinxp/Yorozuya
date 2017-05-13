@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::Request_Remain_Cashctor_Request_Remain_Cash2_ptr Request_Remain_Cashctor_Request_Remain_Cash2_next(nullptr);
-        info::Request_Remain_Cashctor_Request_Remain_Cash2_clbk Request_Remain_Cashctor_Request_Remain_Cash2_user(nullptr);
+        static info::Request_Remain_Cashctor_Request_Remain_Cash2_ptr Request_Remain_Cashctor_Request_Remain_Cash2_next(nullptr);
+        static info::Request_Remain_Cashctor_Request_Remain_Cash2_clbk Request_Remain_Cashctor_Request_Remain_Cash2_user(nullptr);
         
-        void Request_Remain_Cashctor_Request_Remain_Cash2_wrapper(struct Request_Remain_Cash* _this)
+        static void Request_Remain_Cashctor_Request_Remain_Cash2_wrapper(struct Request_Remain_Cash* _this)
         {
            Request_Remain_Cashctor_Request_Remain_Cash2_user(_this, Request_Remain_Cashctor_Request_Remain_Cash2_next);
         };
         
-        hook_record Request_Remain_Cash_functions[] = {
+        static hook_record Request_Remain_Cash_functions[] = {
         {   (LPVOID)0x14031d3a0L,
             (LPVOID *)&Request_Remain_Cashctor_Request_Remain_Cash2_user,
             (LPVOID *)&Request_Remain_Cashctor_Request_Remain_Cash2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

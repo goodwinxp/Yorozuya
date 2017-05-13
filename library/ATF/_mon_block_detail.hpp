@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_mon_blockSelectDummyIndex2_ptr _mon_blockSelectDummyIndex2_next(nullptr);
-        info::_mon_blockSelectDummyIndex2_clbk _mon_blockSelectDummyIndex2_user(nullptr);
-        info::_mon_blockSetBlock4_ptr _mon_blockSetBlock4_next(nullptr);
-        info::_mon_blockSetBlock4_clbk _mon_blockSetBlock4_user(nullptr);
-        info::_mon_blockSetRotateBlock6_ptr _mon_blockSetRotateBlock6_next(nullptr);
-        info::_mon_blockSetRotateBlock6_clbk _mon_blockSetRotateBlock6_user(nullptr);
+        static info::_mon_blockSelectDummyIndex2_ptr _mon_blockSelectDummyIndex2_next(nullptr);
+        static info::_mon_blockSelectDummyIndex2_clbk _mon_blockSelectDummyIndex2_user(nullptr);
+        static info::_mon_blockSetBlock4_ptr _mon_blockSetBlock4_next(nullptr);
+        static info::_mon_blockSetBlock4_clbk _mon_blockSetBlock4_user(nullptr);
+        static info::_mon_blockSetRotateBlock6_ptr _mon_blockSetRotateBlock6_next(nullptr);
+        static info::_mon_blockSetRotateBlock6_clbk _mon_blockSetRotateBlock6_user(nullptr);
         
-        int _mon_blockSelectDummyIndex2_wrapper(struct _mon_block* _this)
+        static int _mon_blockSelectDummyIndex2_wrapper(struct _mon_block* _this)
         {
            return _mon_blockSelectDummyIndex2_user(_this, _mon_blockSelectDummyIndex2_next);
         };
-        bool _mon_blockSetBlock4_wrapper(struct _mon_block* _this, struct _mon_block_fld* pBlkRec, struct CMapData* pMap, struct _dummy_position** ppDumPos)
+        static bool _mon_blockSetBlock4_wrapper(struct _mon_block* _this, struct _mon_block_fld* pBlkRec, struct CMapData* pMap, struct _dummy_position** ppDumPos)
         {
            return _mon_blockSetBlock4_user(_this, pBlkRec, pMap, ppDumPos, _mon_blockSetBlock4_next);
         };
-        void _mon_blockSetRotateBlock6_wrapper(struct _mon_block* _this, bool rhs)
+        static void _mon_blockSetRotateBlock6_wrapper(struct _mon_block* _this, bool rhs)
         {
            _mon_blockSetRotateBlock6_user(_this, rhs, _mon_blockSetRotateBlock6_next);
         };
         
-        hook_record _mon_block_functions[] = {
+        static hook_record _mon_block_functions[] = {
         {   (LPVOID)0x140189fc0L,
             (LPVOID *)&_mon_blockSelectDummyIndex2_user,
             (LPVOID *)&_mon_blockSelectDummyIndex2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

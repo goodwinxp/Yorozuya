@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_ptr _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_next(nullptr);
-        info::_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_clbk _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_user(nullptr);
+        static info::_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_ptr _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_next(nullptr);
+        static info::_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_clbk _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_user(nullptr);
         
-        void _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_wrapper(struct _AUTOMINE_SLOT* _this)
+        static void _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_wrapper(struct _AUTOMINE_SLOT* _this)
         {
            _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_user(_this, _AUTOMINE_SLOTctor__AUTOMINE_SLOT2_next);
         };
         
-        hook_record _AUTOMINE_SLOT_functions[] = {
+        static hook_record _AUTOMINE_SLOT_functions[] = {
         {   (LPVOID)0x1402d4180L,
             (LPVOID *)&_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_user,
             (LPVOID *)&_AUTOMINE_SLOTctor__AUTOMINE_SLOT2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_ptr CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_next(nullptr);
-        info::CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_clbk CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_user(nullptr);
-        info::CLogTypeDBTaskPoolDestroy4_ptr CLogTypeDBTaskPoolDestroy4_next(nullptr);
-        info::CLogTypeDBTaskPoolDestroy4_clbk CLogTypeDBTaskPoolDestroy4_user(nullptr);
-        info::CLogTypeDBTaskPoolGetComplete6_ptr CLogTypeDBTaskPoolGetComplete6_next(nullptr);
-        info::CLogTypeDBTaskPoolGetComplete6_clbk CLogTypeDBTaskPoolGetComplete6_user(nullptr);
-        info::CLogTypeDBTaskPoolGetEmpty8_ptr CLogTypeDBTaskPoolGetEmpty8_next(nullptr);
-        info::CLogTypeDBTaskPoolGetEmpty8_clbk CLogTypeDBTaskPoolGetEmpty8_user(nullptr);
-        info::CLogTypeDBTaskPoolGetProc10_ptr CLogTypeDBTaskPoolGetProc10_next(nullptr);
-        info::CLogTypeDBTaskPoolGetProc10_clbk CLogTypeDBTaskPoolGetProc10_user(nullptr);
-        info::CLogTypeDBTaskPoolInit12_ptr CLogTypeDBTaskPoolInit12_next(nullptr);
-        info::CLogTypeDBTaskPoolInit12_clbk CLogTypeDBTaskPoolInit12_user(nullptr);
-        info::CLogTypeDBTaskPoolSetComplete14_ptr CLogTypeDBTaskPoolSetComplete14_next(nullptr);
-        info::CLogTypeDBTaskPoolSetComplete14_clbk CLogTypeDBTaskPoolSetComplete14_user(nullptr);
-        info::CLogTypeDBTaskPoolSetEmpty16_ptr CLogTypeDBTaskPoolSetEmpty16_next(nullptr);
-        info::CLogTypeDBTaskPoolSetEmpty16_clbk CLogTypeDBTaskPoolSetEmpty16_user(nullptr);
-        info::CLogTypeDBTaskPoolSetProc18_ptr CLogTypeDBTaskPoolSetProc18_next(nullptr);
-        info::CLogTypeDBTaskPoolSetProc18_clbk CLogTypeDBTaskPoolSetProc18_user(nullptr);
-        info::CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_ptr CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_next(nullptr);
-        info::CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_clbk CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_user(nullptr);
+        static info::CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_ptr CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_next(nullptr);
+        static info::CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_clbk CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_user(nullptr);
+        static info::CLogTypeDBTaskPoolDestroy4_ptr CLogTypeDBTaskPoolDestroy4_next(nullptr);
+        static info::CLogTypeDBTaskPoolDestroy4_clbk CLogTypeDBTaskPoolDestroy4_user(nullptr);
+        static info::CLogTypeDBTaskPoolGetComplete6_ptr CLogTypeDBTaskPoolGetComplete6_next(nullptr);
+        static info::CLogTypeDBTaskPoolGetComplete6_clbk CLogTypeDBTaskPoolGetComplete6_user(nullptr);
+        static info::CLogTypeDBTaskPoolGetEmpty8_ptr CLogTypeDBTaskPoolGetEmpty8_next(nullptr);
+        static info::CLogTypeDBTaskPoolGetEmpty8_clbk CLogTypeDBTaskPoolGetEmpty8_user(nullptr);
+        static info::CLogTypeDBTaskPoolGetProc10_ptr CLogTypeDBTaskPoolGetProc10_next(nullptr);
+        static info::CLogTypeDBTaskPoolGetProc10_clbk CLogTypeDBTaskPoolGetProc10_user(nullptr);
+        static info::CLogTypeDBTaskPoolInit12_ptr CLogTypeDBTaskPoolInit12_next(nullptr);
+        static info::CLogTypeDBTaskPoolInit12_clbk CLogTypeDBTaskPoolInit12_user(nullptr);
+        static info::CLogTypeDBTaskPoolSetComplete14_ptr CLogTypeDBTaskPoolSetComplete14_next(nullptr);
+        static info::CLogTypeDBTaskPoolSetComplete14_clbk CLogTypeDBTaskPoolSetComplete14_user(nullptr);
+        static info::CLogTypeDBTaskPoolSetEmpty16_ptr CLogTypeDBTaskPoolSetEmpty16_next(nullptr);
+        static info::CLogTypeDBTaskPoolSetEmpty16_clbk CLogTypeDBTaskPoolSetEmpty16_user(nullptr);
+        static info::CLogTypeDBTaskPoolSetProc18_ptr CLogTypeDBTaskPoolSetProc18_next(nullptr);
+        static info::CLogTypeDBTaskPoolSetProc18_clbk CLogTypeDBTaskPoolSetProc18_user(nullptr);
+        static info::CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_ptr CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_next(nullptr);
+        static info::CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_clbk CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_user(nullptr);
         
-        void CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_wrapper(struct CLogTypeDBTaskPool* _this)
+        static void CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_user(_this, CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_next);
         };
-        void CLogTypeDBTaskPoolDestroy4_wrapper(struct CLogTypeDBTaskPool* _this)
+        static void CLogTypeDBTaskPoolDestroy4_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            CLogTypeDBTaskPoolDestroy4_user(_this, CLogTypeDBTaskPoolDestroy4_next);
         };
-        struct CLogTypeDBTask* CLogTypeDBTaskPoolGetComplete6_wrapper(struct CLogTypeDBTaskPool* _this)
+        static struct CLogTypeDBTask* CLogTypeDBTaskPoolGetComplete6_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            return CLogTypeDBTaskPoolGetComplete6_user(_this, CLogTypeDBTaskPoolGetComplete6_next);
         };
-        struct CLogTypeDBTask* CLogTypeDBTaskPoolGetEmpty8_wrapper(struct CLogTypeDBTaskPool* _this)
+        static struct CLogTypeDBTask* CLogTypeDBTaskPoolGetEmpty8_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            return CLogTypeDBTaskPoolGetEmpty8_user(_this, CLogTypeDBTaskPoolGetEmpty8_next);
         };
-        struct CLogTypeDBTask* CLogTypeDBTaskPoolGetProc10_wrapper(struct CLogTypeDBTaskPool* _this)
+        static struct CLogTypeDBTask* CLogTypeDBTaskPoolGetProc10_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            return CLogTypeDBTaskPoolGetProc10_user(_this, CLogTypeDBTaskPoolGetProc10_next);
         };
-        bool CLogTypeDBTaskPoolInit12_wrapper(struct CLogTypeDBTaskPool* _this, unsigned int uiBuffSize, unsigned int uiMaxCnt, struct CLogFile* kLogger)
+        static bool CLogTypeDBTaskPoolInit12_wrapper(struct CLogTypeDBTaskPool* _this, unsigned int uiBuffSize, unsigned int uiMaxCnt, struct CLogFile* kLogger)
         {
            return CLogTypeDBTaskPoolInit12_user(_this, uiBuffSize, uiMaxCnt, kLogger, CLogTypeDBTaskPoolInit12_next);
         };
-        bool CLogTypeDBTaskPoolSetComplete14_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
+        static bool CLogTypeDBTaskPoolSetComplete14_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
         {
            return CLogTypeDBTaskPoolSetComplete14_user(_this, pTask, kLogger, CLogTypeDBTaskPoolSetComplete14_next);
         };
-        bool CLogTypeDBTaskPoolSetEmpty16_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
+        static bool CLogTypeDBTaskPoolSetEmpty16_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
         {
            return CLogTypeDBTaskPoolSetEmpty16_user(_this, pTask, kLogger, CLogTypeDBTaskPoolSetEmpty16_next);
         };
-        bool CLogTypeDBTaskPoolSetProc18_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
+        static bool CLogTypeDBTaskPoolSetProc18_wrapper(struct CLogTypeDBTaskPool* _this, struct CLogTypeDBTask* pTask, struct CLogFile* kLogger)
         {
            return CLogTypeDBTaskPoolSetProc18_user(_this, pTask, kLogger, CLogTypeDBTaskPoolSetProc18_next);
         };
-        void CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_wrapper(struct CLogTypeDBTaskPool* _this)
+        static void CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_wrapper(struct CLogTypeDBTaskPool* _this)
         {
            CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_user(_this, CLogTypeDBTaskPooldtor_CLogTypeDBTaskPool20_next);
         };
         
-        hook_record CLogTypeDBTaskPool_functions[] = {
+        static hook_record CLogTypeDBTaskPool_functions[] = {
         {   (LPVOID)0x1402c1ea0L,
             (LPVOID *)&CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_user,
             (LPVOID *)&CLogTypeDBTaskPoolctor_CLogTypeDBTaskPool2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

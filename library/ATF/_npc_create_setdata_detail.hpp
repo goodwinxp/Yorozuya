@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_npc_create_setdatactor__npc_create_setdata2_ptr _npc_create_setdatactor__npc_create_setdata2_next(nullptr);
-        info::_npc_create_setdatactor__npc_create_setdata2_clbk _npc_create_setdatactor__npc_create_setdata2_user(nullptr);
+        static info::_npc_create_setdatactor__npc_create_setdata2_ptr _npc_create_setdatactor__npc_create_setdata2_next(nullptr);
+        static info::_npc_create_setdatactor__npc_create_setdata2_clbk _npc_create_setdatactor__npc_create_setdata2_user(nullptr);
         
-        void _npc_create_setdatactor__npc_create_setdata2_wrapper(struct _npc_create_setdata* _this)
+        static void _npc_create_setdatactor__npc_create_setdata2_wrapper(struct _npc_create_setdata* _this)
         {
            _npc_create_setdatactor__npc_create_setdata2_user(_this, _npc_create_setdatactor__npc_create_setdata2_next);
         };
         
-        hook_record _npc_create_setdata_functions[] = {
+        static hook_record _npc_create_setdata_functions[] = {
         {   (LPVOID)0x140199140L,
             (LPVOID *)&_npc_create_setdatactor__npc_create_setdata2_user,
             (LPVOID *)&_npc_create_setdatactor__npc_create_setdata2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

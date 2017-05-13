@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_ptr CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_next(nullptr);
-        info::CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_clbk CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_user(nullptr);
-        info::CUnmannedTraderScheduleClear4_ptr CUnmannedTraderScheduleClear4_next(nullptr);
-        info::CUnmannedTraderScheduleClear4_clbk CUnmannedTraderScheduleClear4_user(nullptr);
-        info::CUnmannedTraderScheduleCompleteClear6_ptr CUnmannedTraderScheduleCompleteClear6_next(nullptr);
-        info::CUnmannedTraderScheduleCompleteClear6_clbk CUnmannedTraderScheduleCompleteClear6_user(nullptr);
-        info::CUnmannedTraderScheduleGetOwnerSerial8_ptr CUnmannedTraderScheduleGetOwnerSerial8_next(nullptr);
-        info::CUnmannedTraderScheduleGetOwnerSerial8_clbk CUnmannedTraderScheduleGetOwnerSerial8_user(nullptr);
-        info::CUnmannedTraderScheduleGetRegistSerial10_ptr CUnmannedTraderScheduleGetRegistSerial10_next(nullptr);
-        info::CUnmannedTraderScheduleGetRegistSerial10_clbk CUnmannedTraderScheduleGetRegistSerial10_user(nullptr);
-        info::CUnmannedTraderScheduleGetType12_ptr CUnmannedTraderScheduleGetType12_next(nullptr);
-        info::CUnmannedTraderScheduleGetType12_clbk CUnmannedTraderScheduleGetType12_user(nullptr);
-        info::CUnmannedTraderScheduleIsDone14_ptr CUnmannedTraderScheduleIsDone14_next(nullptr);
-        info::CUnmannedTraderScheduleIsDone14_clbk CUnmannedTraderScheduleIsDone14_user(nullptr);
-        info::CUnmannedTraderScheduleIsWait16_ptr CUnmannedTraderScheduleIsWait16_next(nullptr);
-        info::CUnmannedTraderScheduleIsWait16_clbk CUnmannedTraderScheduleIsWait16_user(nullptr);
-        info::CUnmannedTraderSchedulePushClear18_ptr CUnmannedTraderSchedulePushClear18_next(nullptr);
-        info::CUnmannedTraderSchedulePushClear18_clbk CUnmannedTraderSchedulePushClear18_user(nullptr);
-        info::CUnmannedTraderScheduleSet20_ptr CUnmannedTraderScheduleSet20_next(nullptr);
-        info::CUnmannedTraderScheduleSet20_clbk CUnmannedTraderScheduleSet20_user(nullptr);
-        info::CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_ptr CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_next(nullptr);
-        info::CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_clbk CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_user(nullptr);
+        static info::CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_ptr CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_next(nullptr);
+        static info::CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_clbk CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_user(nullptr);
+        static info::CUnmannedTraderScheduleClear4_ptr CUnmannedTraderScheduleClear4_next(nullptr);
+        static info::CUnmannedTraderScheduleClear4_clbk CUnmannedTraderScheduleClear4_user(nullptr);
+        static info::CUnmannedTraderScheduleCompleteClear6_ptr CUnmannedTraderScheduleCompleteClear6_next(nullptr);
+        static info::CUnmannedTraderScheduleCompleteClear6_clbk CUnmannedTraderScheduleCompleteClear6_user(nullptr);
+        static info::CUnmannedTraderScheduleGetOwnerSerial8_ptr CUnmannedTraderScheduleGetOwnerSerial8_next(nullptr);
+        static info::CUnmannedTraderScheduleGetOwnerSerial8_clbk CUnmannedTraderScheduleGetOwnerSerial8_user(nullptr);
+        static info::CUnmannedTraderScheduleGetRegistSerial10_ptr CUnmannedTraderScheduleGetRegistSerial10_next(nullptr);
+        static info::CUnmannedTraderScheduleGetRegistSerial10_clbk CUnmannedTraderScheduleGetRegistSerial10_user(nullptr);
+        static info::CUnmannedTraderScheduleGetType12_ptr CUnmannedTraderScheduleGetType12_next(nullptr);
+        static info::CUnmannedTraderScheduleGetType12_clbk CUnmannedTraderScheduleGetType12_user(nullptr);
+        static info::CUnmannedTraderScheduleIsDone14_ptr CUnmannedTraderScheduleIsDone14_next(nullptr);
+        static info::CUnmannedTraderScheduleIsDone14_clbk CUnmannedTraderScheduleIsDone14_user(nullptr);
+        static info::CUnmannedTraderScheduleIsWait16_ptr CUnmannedTraderScheduleIsWait16_next(nullptr);
+        static info::CUnmannedTraderScheduleIsWait16_clbk CUnmannedTraderScheduleIsWait16_user(nullptr);
+        static info::CUnmannedTraderSchedulePushClear18_ptr CUnmannedTraderSchedulePushClear18_next(nullptr);
+        static info::CUnmannedTraderSchedulePushClear18_clbk CUnmannedTraderSchedulePushClear18_user(nullptr);
+        static info::CUnmannedTraderScheduleSet20_ptr CUnmannedTraderScheduleSet20_next(nullptr);
+        static info::CUnmannedTraderScheduleSet20_clbk CUnmannedTraderScheduleSet20_user(nullptr);
+        static info::CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_ptr CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_next(nullptr);
+        static info::CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_clbk CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_user(nullptr);
         
-        void CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_wrapper(struct CUnmannedTraderSchedule* _this)
+        static void CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_user(_this, CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_next);
         };
-        void CUnmannedTraderScheduleClear4_wrapper(struct CUnmannedTraderSchedule* _this)
+        static void CUnmannedTraderScheduleClear4_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            CUnmannedTraderScheduleClear4_user(_this, CUnmannedTraderScheduleClear4_next);
         };
-        void CUnmannedTraderScheduleCompleteClear6_wrapper(struct CUnmannedTraderSchedule* _this, char byDBQueryRet, char byProcRet)
+        static void CUnmannedTraderScheduleCompleteClear6_wrapper(struct CUnmannedTraderSchedule* _this, char byDBQueryRet, char byProcRet)
         {
            CUnmannedTraderScheduleCompleteClear6_user(_this, byDBQueryRet, byProcRet, CUnmannedTraderScheduleCompleteClear6_next);
         };
-        unsigned int CUnmannedTraderScheduleGetOwnerSerial8_wrapper(struct CUnmannedTraderSchedule* _this)
+        static unsigned int CUnmannedTraderScheduleGetOwnerSerial8_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            return CUnmannedTraderScheduleGetOwnerSerial8_user(_this, CUnmannedTraderScheduleGetOwnerSerial8_next);
         };
-        unsigned int CUnmannedTraderScheduleGetRegistSerial10_wrapper(struct CUnmannedTraderSchedule* _this)
+        static unsigned int CUnmannedTraderScheduleGetRegistSerial10_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            return CUnmannedTraderScheduleGetRegistSerial10_user(_this, CUnmannedTraderScheduleGetRegistSerial10_next);
         };
-        char CUnmannedTraderScheduleGetType12_wrapper(struct CUnmannedTraderSchedule* _this)
+        static char CUnmannedTraderScheduleGetType12_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            return CUnmannedTraderScheduleGetType12_user(_this, CUnmannedTraderScheduleGetType12_next);
         };
-        bool CUnmannedTraderScheduleIsDone14_wrapper(struct CUnmannedTraderSchedule* _this)
+        static bool CUnmannedTraderScheduleIsDone14_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            return CUnmannedTraderScheduleIsDone14_user(_this, CUnmannedTraderScheduleIsDone14_next);
         };
-        bool CUnmannedTraderScheduleIsWait16_wrapper(struct CUnmannedTraderSchedule* _this)
+        static bool CUnmannedTraderScheduleIsWait16_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            return CUnmannedTraderScheduleIsWait16_user(_this, CUnmannedTraderScheduleIsWait16_next);
         };
-        void CUnmannedTraderSchedulePushClear18_wrapper(struct CUnmannedTraderSchedule* _this, bool bTimeLimit)
+        static void CUnmannedTraderSchedulePushClear18_wrapper(struct CUnmannedTraderSchedule* _this, bool bTimeLimit)
         {
            CUnmannedTraderSchedulePushClear18_user(_this, bTimeLimit, CUnmannedTraderSchedulePushClear18_next);
         };
-        void CUnmannedTraderScheduleSet20_wrapper(struct CUnmannedTraderSchedule* _this, char byType, unsigned int dwSerial, int64_t tEndTime, unsigned int dwOwnerSerial, unsigned int dwK)
+        static void CUnmannedTraderScheduleSet20_wrapper(struct CUnmannedTraderSchedule* _this, char byType, unsigned int dwSerial, int64_t tEndTime, unsigned int dwOwnerSerial, unsigned int dwK)
         {
            CUnmannedTraderScheduleSet20_user(_this, byType, dwSerial, tEndTime, dwOwnerSerial, dwK, CUnmannedTraderScheduleSet20_next);
         };
-        void CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_wrapper(struct CUnmannedTraderSchedule* _this)
+        static void CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_wrapper(struct CUnmannedTraderSchedule* _this)
         {
            CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_user(_this, CUnmannedTraderScheduledtor_CUnmannedTraderSchedule24_next);
         };
         
-        hook_record CUnmannedTraderSchedule_functions[] = {
+        static hook_record CUnmannedTraderSchedule_functions[] = {
         {   (LPVOID)0x140394580L,
             (LPVOID *)&CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_user,
             (LPVOID *)&CUnmannedTraderSchedulector_CUnmannedTraderSchedule2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

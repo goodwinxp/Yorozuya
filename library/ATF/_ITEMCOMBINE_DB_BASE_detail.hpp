@@ -8,41 +8,41 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ITEMCOMBINE_DB_BASEInit2_ptr _ITEMCOMBINE_DB_BASEInit2_next(nullptr);
-        info::_ITEMCOMBINE_DB_BASEInit2_clbk _ITEMCOMBINE_DB_BASEInit2_user(nullptr);
-        info::_ITEMCOMBINE_DB_BASEIsCombineData4_ptr _ITEMCOMBINE_DB_BASEIsCombineData4_next(nullptr);
-        info::_ITEMCOMBINE_DB_BASEIsCombineData4_clbk _ITEMCOMBINE_DB_BASEIsCombineData4_user(nullptr);
-        info::_ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_ptr _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_next(nullptr);
-        info::_ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_clbk _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_user(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEInit2_ptr _ITEMCOMBINE_DB_BASEInit2_next(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEInit2_clbk _ITEMCOMBINE_DB_BASEInit2_user(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEIsCombineData4_ptr _ITEMCOMBINE_DB_BASEIsCombineData4_next(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEIsCombineData4_clbk _ITEMCOMBINE_DB_BASEIsCombineData4_user(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_ptr _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_next(nullptr);
+        static info::_ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_clbk _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_user(nullptr);
         
-        info::_ITEMCOMBINE_DB_BASE___LISTInit2_ptr _ITEMCOMBINE_DB_BASE___LISTInit2_next(nullptr);
-        info::_ITEMCOMBINE_DB_BASE___LISTInit2_clbk _ITEMCOMBINE_DB_BASE___LISTInit2_user(nullptr);
-        info::_ITEMCOMBINE_DB_BASE___LISTctor__LIST4_ptr _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_next(nullptr);
-        info::_ITEMCOMBINE_DB_BASE___LISTctor__LIST4_clbk _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_user(nullptr);
+        static info::_ITEMCOMBINE_DB_BASE___LISTInit2_ptr _ITEMCOMBINE_DB_BASE___LISTInit2_next(nullptr);
+        static info::_ITEMCOMBINE_DB_BASE___LISTInit2_clbk _ITEMCOMBINE_DB_BASE___LISTInit2_user(nullptr);
+        static info::_ITEMCOMBINE_DB_BASE___LISTctor__LIST4_ptr _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_next(nullptr);
+        static info::_ITEMCOMBINE_DB_BASE___LISTctor__LIST4_clbk _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_user(nullptr);
         
-        void _ITEMCOMBINE_DB_BASEInit2_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
+        static void _ITEMCOMBINE_DB_BASEInit2_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
         {
            _ITEMCOMBINE_DB_BASEInit2_user(_this, _ITEMCOMBINE_DB_BASEInit2_next);
         };
-        bool _ITEMCOMBINE_DB_BASEIsCombineData4_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
+        static bool _ITEMCOMBINE_DB_BASEIsCombineData4_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
         {
            return _ITEMCOMBINE_DB_BASEIsCombineData4_user(_this, _ITEMCOMBINE_DB_BASEIsCombineData4_next);
         };
-        void _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
+        static void _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_wrapper(struct _ITEMCOMBINE_DB_BASE* _this)
         {
            _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_user(_this, _ITEMCOMBINE_DB_BASEctor__ITEMCOMBINE_DB_BASE6_next);
         };
         
-        void _ITEMCOMBINE_DB_BASE___LISTInit2_wrapper(struct _ITEMCOMBINE_DB_BASE::_LIST* _this)
+        static void _ITEMCOMBINE_DB_BASE___LISTInit2_wrapper(struct _ITEMCOMBINE_DB_BASE::_LIST* _this)
         {
            _ITEMCOMBINE_DB_BASE___LISTInit2_user(_this, _ITEMCOMBINE_DB_BASE___LISTInit2_next);
         };
-        void _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_wrapper(struct _ITEMCOMBINE_DB_BASE::_LIST* _this)
+        static void _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_wrapper(struct _ITEMCOMBINE_DB_BASE::_LIST* _this)
         {
            _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_user(_this, _ITEMCOMBINE_DB_BASE___LISTctor__LIST4_next);
         };
         
-        hook_record _ITEMCOMBINE_DB_BASE_functions[] = {
+        static hook_record _ITEMCOMBINE_DB_BASE_functions[] = {
         {   (LPVOID)0x1400772d0L,
             (LPVOID *)&_ITEMCOMBINE_DB_BASEInit2_user,
             (LPVOID *)&_ITEMCOMBINE_DB_BASEInit2_next,
@@ -72,5 +72,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

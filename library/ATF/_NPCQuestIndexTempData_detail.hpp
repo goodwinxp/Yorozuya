@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_NPCQuestIndexTempDataInit2_ptr _NPCQuestIndexTempDataInit2_next(nullptr);
-        info::_NPCQuestIndexTempDataInit2_clbk _NPCQuestIndexTempDataInit2_user(nullptr);
-        info::_NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_ptr _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_next(nullptr);
-        info::_NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_clbk _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_user(nullptr);
+        static info::_NPCQuestIndexTempDataInit2_ptr _NPCQuestIndexTempDataInit2_next(nullptr);
+        static info::_NPCQuestIndexTempDataInit2_clbk _NPCQuestIndexTempDataInit2_user(nullptr);
+        static info::_NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_ptr _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_next(nullptr);
+        static info::_NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_clbk _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_user(nullptr);
         
-        void _NPCQuestIndexTempDataInit2_wrapper(struct _NPCQuestIndexTempData* _this)
+        static void _NPCQuestIndexTempDataInit2_wrapper(struct _NPCQuestIndexTempData* _this)
         {
            _NPCQuestIndexTempDataInit2_user(_this, _NPCQuestIndexTempDataInit2_next);
         };
-        void _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_wrapper(struct _NPCQuestIndexTempData* _this)
+        static void _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_wrapper(struct _NPCQuestIndexTempData* _this)
         {
            _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_user(_this, _NPCQuestIndexTempDatactor__NPCQuestIndexTempData4_next);
         };
         
-        hook_record _NPCQuestIndexTempData_functions[] = {
+        static hook_record _NPCQuestIndexTempData_functions[] = {
         {   (LPVOID)0x140073ef0L,
             (LPVOID *)&_NPCQuestIndexTempDataInit2_user,
             (LPVOID *)&_NPCQuestIndexTempDataInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRFMonsterAIMgrctor_CRFMonsterAIMgr2_ptr CRFMonsterAIMgrctor_CRFMonsterAIMgr2_next(nullptr);
-        info::CRFMonsterAIMgrctor_CRFMonsterAIMgr2_clbk CRFMonsterAIMgrctor_CRFMonsterAIMgr2_user(nullptr);
-        info::CRFMonsterAIMgrDestory4_ptr CRFMonsterAIMgrDestory4_next(nullptr);
-        info::CRFMonsterAIMgrDestory4_clbk CRFMonsterAIMgrDestory4_user(nullptr);
-        info::CRFMonsterAIMgrGetStateTBL6_ptr CRFMonsterAIMgrGetStateTBL6_next(nullptr);
-        info::CRFMonsterAIMgrGetStateTBL6_clbk CRFMonsterAIMgrGetStateTBL6_user(nullptr);
-        info::CRFMonsterAIMgrInstance8_ptr CRFMonsterAIMgrInstance8_next(nullptr);
-        info::CRFMonsterAIMgrInstance8_clbk CRFMonsterAIMgrInstance8_user(nullptr);
-        info::CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_ptr CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_next(nullptr);
-        info::CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_clbk CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_user(nullptr);
+        static info::CRFMonsterAIMgrctor_CRFMonsterAIMgr2_ptr CRFMonsterAIMgrctor_CRFMonsterAIMgr2_next(nullptr);
+        static info::CRFMonsterAIMgrctor_CRFMonsterAIMgr2_clbk CRFMonsterAIMgrctor_CRFMonsterAIMgr2_user(nullptr);
+        static info::CRFMonsterAIMgrDestory4_ptr CRFMonsterAIMgrDestory4_next(nullptr);
+        static info::CRFMonsterAIMgrDestory4_clbk CRFMonsterAIMgrDestory4_user(nullptr);
+        static info::CRFMonsterAIMgrGetStateTBL6_ptr CRFMonsterAIMgrGetStateTBL6_next(nullptr);
+        static info::CRFMonsterAIMgrGetStateTBL6_clbk CRFMonsterAIMgrGetStateTBL6_user(nullptr);
+        static info::CRFMonsterAIMgrInstance8_ptr CRFMonsterAIMgrInstance8_next(nullptr);
+        static info::CRFMonsterAIMgrInstance8_clbk CRFMonsterAIMgrInstance8_user(nullptr);
+        static info::CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_ptr CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_next(nullptr);
+        static info::CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_clbk CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_user(nullptr);
         
-        void CRFMonsterAIMgrctor_CRFMonsterAIMgr2_wrapper(struct CRFMonsterAIMgr* _this)
+        static void CRFMonsterAIMgrctor_CRFMonsterAIMgr2_wrapper(struct CRFMonsterAIMgr* _this)
         {
            CRFMonsterAIMgrctor_CRFMonsterAIMgr2_user(_this, CRFMonsterAIMgrctor_CRFMonsterAIMgr2_next);
         };
-        void CRFMonsterAIMgrDestory4_wrapper()
+        static void CRFMonsterAIMgrDestory4_wrapper()
         {
            CRFMonsterAIMgrDestory4_user(CRFMonsterAIMgrDestory4_next);
         };
-        struct UsPoint* CRFMonsterAIMgrGetStateTBL6_wrapper(struct CRFMonsterAIMgr* _this, struct UsPoint* result, int nIndex)
+        static struct UsPoint* CRFMonsterAIMgrGetStateTBL6_wrapper(struct CRFMonsterAIMgr* _this, struct UsPoint* result, int nIndex)
         {
            return CRFMonsterAIMgrGetStateTBL6_user(_this, result, nIndex, CRFMonsterAIMgrGetStateTBL6_next);
         };
-        struct CRFMonsterAIMgr* CRFMonsterAIMgrInstance8_wrapper()
+        static struct CRFMonsterAIMgr* CRFMonsterAIMgrInstance8_wrapper()
         {
            return CRFMonsterAIMgrInstance8_user(CRFMonsterAIMgrInstance8_next);
         };
-        void CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_wrapper(struct CRFMonsterAIMgr* _this)
+        static void CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_wrapper(struct CRFMonsterAIMgr* _this)
         {
            CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_user(_this, CRFMonsterAIMgrdtor_CRFMonsterAIMgr12_next);
         };
         
-        hook_record CRFMonsterAIMgr_functions[] = {
+        static hook_record CRFMonsterAIMgr_functions[] = {
         {   (LPVOID)0x14014c1e0L,
             (LPVOID *)&CRFMonsterAIMgrctor_CRFMonsterAIMgr2_user,
             (LPVOID *)&CRFMonsterAIMgrctor_CRFMonsterAIMgr2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

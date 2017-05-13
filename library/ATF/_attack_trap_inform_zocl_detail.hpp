@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_ptr _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_next(nullptr);
-        info::_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_clbk _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_user(nullptr);
-        info::_attack_trap_inform_zoclsize4_ptr _attack_trap_inform_zoclsize4_next(nullptr);
-        info::_attack_trap_inform_zoclsize4_clbk _attack_trap_inform_zoclsize4_user(nullptr);
+        static info::_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_ptr _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_next(nullptr);
+        static info::_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_clbk _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_user(nullptr);
+        static info::_attack_trap_inform_zoclsize4_ptr _attack_trap_inform_zoclsize4_next(nullptr);
+        static info::_attack_trap_inform_zoclsize4_clbk _attack_trap_inform_zoclsize4_user(nullptr);
         
-        void _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_wrapper(struct _attack_trap_inform_zocl* _this)
+        static void _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_wrapper(struct _attack_trap_inform_zocl* _this)
         {
            _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_user(_this, _attack_trap_inform_zoclctor__attack_trap_inform_zocl2_next);
         };
-        int _attack_trap_inform_zoclsize4_wrapper(struct _attack_trap_inform_zocl* _this)
+        static int _attack_trap_inform_zoclsize4_wrapper(struct _attack_trap_inform_zocl* _this)
         {
            return _attack_trap_inform_zoclsize4_user(_this, _attack_trap_inform_zoclsize4_next);
         };
         
-        hook_record _attack_trap_inform_zocl_functions[] = {
+        static hook_record _attack_trap_inform_zocl_functions[] = {
         {   (LPVOID)0x140141400L,
             (LPVOID *)&_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_user,
             (LPVOID *)&_attack_trap_inform_zoclctor__attack_trap_inform_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

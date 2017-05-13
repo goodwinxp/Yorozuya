@@ -8,147 +8,147 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPvpCashPointctor_CPvpCashPoint2_ptr CPvpCashPointctor_CPvpCashPoint2_next(nullptr);
-        info::CPvpCashPointctor_CPvpCashPoint2_clbk CPvpCashPointctor_CPvpCashPoint2_user(nullptr);
-        info::CPvpCashPointCalPvpCashPoint4_ptr CPvpCashPointCalPvpCashPoint4_next(nullptr);
-        info::CPvpCashPointCalPvpCashPoint4_clbk CPvpCashPointCalPvpCashPoint4_user(nullptr);
-        info::CPvpCashPointCheckPvpHaveCondition6_ptr CPvpCashPointCheckPvpHaveCondition6_next(nullptr);
-        info::CPvpCashPointCheckPvpHaveCondition6_clbk CPvpCashPointCheckPvpHaveCondition6_user(nullptr);
-        info::CPvpCashPointCheckPvpLoseCondition8_ptr CPvpCashPointCheckPvpLoseCondition8_next(nullptr);
-        info::CPvpCashPointCheckPvpLoseCondition8_clbk CPvpCashPointCheckPvpLoseCondition8_user(nullptr);
-        info::CPvpCashPointGetContPvpHave10_ptr CPvpCashPointGetContPvpHave10_next(nullptr);
-        info::CPvpCashPointGetContPvpHave10_clbk CPvpCashPointGetContPvpHave10_user(nullptr);
-        info::CPvpCashPointGetContPvpLose12_ptr CPvpCashPointGetContPvpLose12_next(nullptr);
-        info::CPvpCashPointGetContPvpLose12_clbk CPvpCashPointGetContPvpLose12_user(nullptr);
-        info::CPvpCashPointGetMaxTempPoint14_ptr CPvpCashPointGetMaxTempPoint14_next(nullptr);
-        info::CPvpCashPointGetMaxTempPoint14_clbk CPvpCashPointGetMaxTempPoint14_user(nullptr);
-        info::CPvpCashPointGetMinTempPoint16_ptr CPvpCashPointGetMinTempPoint16_next(nullptr);
-        info::CPvpCashPointGetMinTempPoint16_clbk CPvpCashPointGetMinTempPoint16_user(nullptr);
-        info::CPvpCashPointGetMyClassVal18_ptr CPvpCashPointGetMyClassVal18_next(nullptr);
-        info::CPvpCashPointGetMyClassVal18_clbk CPvpCashPointGetMyClassVal18_user(nullptr);
-        info::CPvpCashPointGetRaceWarRecvr20_ptr CPvpCashPointGetRaceWarRecvr20_next(nullptr);
-        info::CPvpCashPointGetRaceWarRecvr20_clbk CPvpCashPointGetRaceWarRecvr20_user(nullptr);
-        info::CPvpCashPointGetTalikRecvrPoint22_ptr CPvpCashPointGetTalikRecvrPoint22_next(nullptr);
-        info::CPvpCashPointGetTalikRecvrPoint22_clbk CPvpCashPointGetTalikRecvrPoint22_user(nullptr);
-        info::CPvpCashPointInit24_ptr CPvpCashPointInit24_next(nullptr);
-        info::CPvpCashPointInit24_clbk CPvpCashPointInit24_user(nullptr);
-        info::CPvpCashPointIsPvpMap26_ptr CPvpCashPointIsPvpMap26_next(nullptr);
-        info::CPvpCashPointIsPvpMap26_clbk CPvpCashPointIsPvpMap26_user(nullptr);
-        info::CPvpCashPointKillerListInit28_ptr CPvpCashPointKillerListInit28_next(nullptr);
-        info::CPvpCashPointKillerListInit28_clbk CPvpCashPointKillerListInit28_user(nullptr);
-        info::CPvpCashPointSendMsg_PvpCashInform30_ptr CPvpCashPointSendMsg_PvpCashInform30_next(nullptr);
-        info::CPvpCashPointSendMsg_PvpCashInform30_clbk CPvpCashPointSendMsg_PvpCashInform30_user(nullptr);
-        info::CPvpCashPointSendMsg_RecoverResult32_ptr CPvpCashPointSendMsg_RecoverResult32_next(nullptr);
-        info::CPvpCashPointSendMsg_RecoverResult32_clbk CPvpCashPointSendMsg_RecoverResult32_user(nullptr);
-        info::CPvpCashPointSendMsg_TalikList34_ptr CPvpCashPointSendMsg_TalikList34_next(nullptr);
-        info::CPvpCashPointSendMsg_TalikList34_clbk CPvpCashPointSendMsg_TalikList34_user(nullptr);
-        info::CPvpCashPointSetContPvpHave36_ptr CPvpCashPointSetContPvpHave36_next(nullptr);
-        info::CPvpCashPointSetContPvpHave36_clbk CPvpCashPointSetContPvpHave36_user(nullptr);
-        info::CPvpCashPointSetContPvpLose38_ptr CPvpCashPointSetContPvpLose38_next(nullptr);
-        info::CPvpCashPointSetContPvpLose38_clbk CPvpCashPointSetContPvpLose38_user(nullptr);
-        info::CPvpCashPointSetKillerList40_ptr CPvpCashPointSetKillerList40_next(nullptr);
-        info::CPvpCashPointSetKillerList40_clbk CPvpCashPointSetKillerList40_user(nullptr);
-        info::CPvpCashPointSetRaceWarRecvr42_ptr CPvpCashPointSetRaceWarRecvr42_next(nullptr);
-        info::CPvpCashPointSetRaceWarRecvr42_clbk CPvpCashPointSetRaceWarRecvr42_user(nullptr);
-        info::CPvpCashPointUpdateKillerList44_ptr CPvpCashPointUpdateKillerList44_next(nullptr);
-        info::CPvpCashPointUpdateKillerList44_clbk CPvpCashPointUpdateKillerList44_user(nullptr);
-        info::CPvpCashPointdtor_CPvpCashPoint46_ptr CPvpCashPointdtor_CPvpCashPoint46_next(nullptr);
-        info::CPvpCashPointdtor_CPvpCashPoint46_clbk CPvpCashPointdtor_CPvpCashPoint46_user(nullptr);
+        static info::CPvpCashPointctor_CPvpCashPoint2_ptr CPvpCashPointctor_CPvpCashPoint2_next(nullptr);
+        static info::CPvpCashPointctor_CPvpCashPoint2_clbk CPvpCashPointctor_CPvpCashPoint2_user(nullptr);
+        static info::CPvpCashPointCalPvpCashPoint4_ptr CPvpCashPointCalPvpCashPoint4_next(nullptr);
+        static info::CPvpCashPointCalPvpCashPoint4_clbk CPvpCashPointCalPvpCashPoint4_user(nullptr);
+        static info::CPvpCashPointCheckPvpHaveCondition6_ptr CPvpCashPointCheckPvpHaveCondition6_next(nullptr);
+        static info::CPvpCashPointCheckPvpHaveCondition6_clbk CPvpCashPointCheckPvpHaveCondition6_user(nullptr);
+        static info::CPvpCashPointCheckPvpLoseCondition8_ptr CPvpCashPointCheckPvpLoseCondition8_next(nullptr);
+        static info::CPvpCashPointCheckPvpLoseCondition8_clbk CPvpCashPointCheckPvpLoseCondition8_user(nullptr);
+        static info::CPvpCashPointGetContPvpHave10_ptr CPvpCashPointGetContPvpHave10_next(nullptr);
+        static info::CPvpCashPointGetContPvpHave10_clbk CPvpCashPointGetContPvpHave10_user(nullptr);
+        static info::CPvpCashPointGetContPvpLose12_ptr CPvpCashPointGetContPvpLose12_next(nullptr);
+        static info::CPvpCashPointGetContPvpLose12_clbk CPvpCashPointGetContPvpLose12_user(nullptr);
+        static info::CPvpCashPointGetMaxTempPoint14_ptr CPvpCashPointGetMaxTempPoint14_next(nullptr);
+        static info::CPvpCashPointGetMaxTempPoint14_clbk CPvpCashPointGetMaxTempPoint14_user(nullptr);
+        static info::CPvpCashPointGetMinTempPoint16_ptr CPvpCashPointGetMinTempPoint16_next(nullptr);
+        static info::CPvpCashPointGetMinTempPoint16_clbk CPvpCashPointGetMinTempPoint16_user(nullptr);
+        static info::CPvpCashPointGetMyClassVal18_ptr CPvpCashPointGetMyClassVal18_next(nullptr);
+        static info::CPvpCashPointGetMyClassVal18_clbk CPvpCashPointGetMyClassVal18_user(nullptr);
+        static info::CPvpCashPointGetRaceWarRecvr20_ptr CPvpCashPointGetRaceWarRecvr20_next(nullptr);
+        static info::CPvpCashPointGetRaceWarRecvr20_clbk CPvpCashPointGetRaceWarRecvr20_user(nullptr);
+        static info::CPvpCashPointGetTalikRecvrPoint22_ptr CPvpCashPointGetTalikRecvrPoint22_next(nullptr);
+        static info::CPvpCashPointGetTalikRecvrPoint22_clbk CPvpCashPointGetTalikRecvrPoint22_user(nullptr);
+        static info::CPvpCashPointInit24_ptr CPvpCashPointInit24_next(nullptr);
+        static info::CPvpCashPointInit24_clbk CPvpCashPointInit24_user(nullptr);
+        static info::CPvpCashPointIsPvpMap26_ptr CPvpCashPointIsPvpMap26_next(nullptr);
+        static info::CPvpCashPointIsPvpMap26_clbk CPvpCashPointIsPvpMap26_user(nullptr);
+        static info::CPvpCashPointKillerListInit28_ptr CPvpCashPointKillerListInit28_next(nullptr);
+        static info::CPvpCashPointKillerListInit28_clbk CPvpCashPointKillerListInit28_user(nullptr);
+        static info::CPvpCashPointSendMsg_PvpCashInform30_ptr CPvpCashPointSendMsg_PvpCashInform30_next(nullptr);
+        static info::CPvpCashPointSendMsg_PvpCashInform30_clbk CPvpCashPointSendMsg_PvpCashInform30_user(nullptr);
+        static info::CPvpCashPointSendMsg_RecoverResult32_ptr CPvpCashPointSendMsg_RecoverResult32_next(nullptr);
+        static info::CPvpCashPointSendMsg_RecoverResult32_clbk CPvpCashPointSendMsg_RecoverResult32_user(nullptr);
+        static info::CPvpCashPointSendMsg_TalikList34_ptr CPvpCashPointSendMsg_TalikList34_next(nullptr);
+        static info::CPvpCashPointSendMsg_TalikList34_clbk CPvpCashPointSendMsg_TalikList34_user(nullptr);
+        static info::CPvpCashPointSetContPvpHave36_ptr CPvpCashPointSetContPvpHave36_next(nullptr);
+        static info::CPvpCashPointSetContPvpHave36_clbk CPvpCashPointSetContPvpHave36_user(nullptr);
+        static info::CPvpCashPointSetContPvpLose38_ptr CPvpCashPointSetContPvpLose38_next(nullptr);
+        static info::CPvpCashPointSetContPvpLose38_clbk CPvpCashPointSetContPvpLose38_user(nullptr);
+        static info::CPvpCashPointSetKillerList40_ptr CPvpCashPointSetKillerList40_next(nullptr);
+        static info::CPvpCashPointSetKillerList40_clbk CPvpCashPointSetKillerList40_user(nullptr);
+        static info::CPvpCashPointSetRaceWarRecvr42_ptr CPvpCashPointSetRaceWarRecvr42_next(nullptr);
+        static info::CPvpCashPointSetRaceWarRecvr42_clbk CPvpCashPointSetRaceWarRecvr42_user(nullptr);
+        static info::CPvpCashPointUpdateKillerList44_ptr CPvpCashPointUpdateKillerList44_next(nullptr);
+        static info::CPvpCashPointUpdateKillerList44_clbk CPvpCashPointUpdateKillerList44_user(nullptr);
+        static info::CPvpCashPointdtor_CPvpCashPoint46_ptr CPvpCashPointdtor_CPvpCashPoint46_next(nullptr);
+        static info::CPvpCashPointdtor_CPvpCashPoint46_clbk CPvpCashPointdtor_CPvpCashPoint46_user(nullptr);
         
-        void CPvpCashPointctor_CPvpCashPoint2_wrapper(struct CPvpCashPoint* _this)
+        static void CPvpCashPointctor_CPvpCashPoint2_wrapper(struct CPvpCashPoint* _this)
         {
            CPvpCashPointctor_CPvpCashPoint2_user(_this, CPvpCashPointctor_CPvpCashPoint2_next);
         };
-        long double CPvpCashPointCalPvpCashPoint4_wrapper(struct CPvpCashPoint* _this, int nDstLv, int nSrcLv, char* pSrcClass, char nParty)
+        static long double CPvpCashPointCalPvpCashPoint4_wrapper(struct CPvpCashPoint* _this, int nDstLv, int nSrcLv, char* pSrcClass, char nParty)
         {
            return CPvpCashPointCalPvpCashPoint4_user(_this, nDstLv, nSrcLv, pSrcClass, nParty, CPvpCashPointCalPvpCashPoint4_next);
         };
-        bool CPvpCashPointCheckPvpHaveCondition6_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pKiller, struct CPlayer* pDier, long double dOldTempPoint)
+        static bool CPvpCashPointCheckPvpHaveCondition6_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pKiller, struct CPlayer* pDier, long double dOldTempPoint)
         {
            return CPvpCashPointCheckPvpHaveCondition6_user(_this, pKiller, pDier, dOldTempPoint, CPvpCashPointCheckPvpHaveCondition6_next);
         };
-        bool CPvpCashPointCheckPvpLoseCondition8_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pKiller, struct CPlayer* pDier)
+        static bool CPvpCashPointCheckPvpLoseCondition8_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pKiller, struct CPlayer* pDier)
         {
            return CPvpCashPointCheckPvpLoseCondition8_user(_this, pKiller, pDier, CPvpCashPointCheckPvpLoseCondition8_next);
         };
-        int CPvpCashPointGetContPvpHave10_wrapper(struct CPvpCashPoint* _this)
+        static int CPvpCashPointGetContPvpHave10_wrapper(struct CPvpCashPoint* _this)
         {
            return CPvpCashPointGetContPvpHave10_user(_this, CPvpCashPointGetContPvpHave10_next);
         };
-        int CPvpCashPointGetContPvpLose12_wrapper(struct CPvpCashPoint* _this)
+        static int CPvpCashPointGetContPvpLose12_wrapper(struct CPvpCashPoint* _this)
         {
            return CPvpCashPointGetContPvpLose12_user(_this, CPvpCashPointGetContPvpLose12_next);
         };
-        int CPvpCashPointGetMaxTempPoint14_wrapper(struct CPvpCashPoint* _this, char nLv, bool bPremium)
+        static int CPvpCashPointGetMaxTempPoint14_wrapper(struct CPvpCashPoint* _this, char nLv, bool bPremium)
         {
            return CPvpCashPointGetMaxTempPoint14_user(_this, nLv, bPremium, CPvpCashPointGetMaxTempPoint14_next);
         };
-        int CPvpCashPointGetMinTempPoint16_wrapper(struct CPvpCashPoint* _this, char nLv)
+        static int CPvpCashPointGetMinTempPoint16_wrapper(struct CPvpCashPoint* _this, char nLv)
         {
            return CPvpCashPointGetMinTempPoint16_user(_this, nLv, CPvpCashPointGetMinTempPoint16_next);
         };
-        int CPvpCashPointGetMyClassVal18_wrapper(struct CPvpCashPoint* _this, char* pClass)
+        static int CPvpCashPointGetMyClassVal18_wrapper(struct CPvpCashPoint* _this, char* pClass)
         {
            return CPvpCashPointGetMyClassVal18_user(_this, pClass, CPvpCashPointGetMyClassVal18_next);
         };
-        bool CPvpCashPointGetRaceWarRecvr20_wrapper(struct CPvpCashPoint* _this)
+        static bool CPvpCashPointGetRaceWarRecvr20_wrapper(struct CPvpCashPoint* _this)
         {
            return CPvpCashPointGetRaceWarRecvr20_user(_this, CPvpCashPointGetRaceWarRecvr20_next);
         };
-        int CPvpCashPointGetTalikRecvrPoint22_wrapper(struct CPvpCashPoint* _this, char byTblCode, unsigned int dwIndex)
+        static int CPvpCashPointGetTalikRecvrPoint22_wrapper(struct CPvpCashPoint* _this, char byTblCode, unsigned int dwIndex)
         {
            return CPvpCashPointGetTalikRecvrPoint22_user(_this, byTblCode, dwIndex, CPvpCashPointGetTalikRecvrPoint22_next);
         };
-        void CPvpCashPointInit24_wrapper(struct CPvpCashPoint* _this, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo)
+        static void CPvpCashPointInit24_wrapper(struct CPvpCashPoint* _this, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo)
         {
            CPvpCashPointInit24_user(_this, pkInfo, CPvpCashPointInit24_next);
         };
-        bool CPvpCashPointIsPvpMap26_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pOne)
+        static bool CPvpCashPointIsPvpMap26_wrapper(struct CPvpCashPoint* _this, struct CPlayer* pOne)
         {
            return CPvpCashPointIsPvpMap26_user(_this, pOne, CPvpCashPointIsPvpMap26_next);
         };
-        void CPvpCashPointKillerListInit28_wrapper(struct CPvpCashPoint* _this)
+        static void CPvpCashPointKillerListInit28_wrapper(struct CPvpCashPoint* _this)
         {
            CPvpCashPointKillerListInit28_user(_this, CPvpCashPointKillerListInit28_next);
         };
-        void CPvpCashPointSendMsg_PvpCashInform30_wrapper(struct CPvpCashPoint* _this, int n, char byError)
+        static void CPvpCashPointSendMsg_PvpCashInform30_wrapper(struct CPvpCashPoint* _this, int n, char byError)
         {
            CPvpCashPointSendMsg_PvpCashInform30_user(_this, n, byError, CPvpCashPointSendMsg_PvpCashInform30_next);
         };
-        void CPvpCashPointSendMsg_RecoverResult32_wrapper(struct CPvpCashPoint* _this, int n, char byRet, int nRecvrPoint)
+        static void CPvpCashPointSendMsg_RecoverResult32_wrapper(struct CPvpCashPoint* _this, int n, char byRet, int nRecvrPoint)
         {
            CPvpCashPointSendMsg_RecoverResult32_user(_this, n, byRet, nRecvrPoint, CPvpCashPointSendMsg_RecoverResult32_next);
         };
-        void CPvpCashPointSendMsg_TalikList34_wrapper(struct CPvpCashPoint* _this, int n)
+        static void CPvpCashPointSendMsg_TalikList34_wrapper(struct CPvpCashPoint* _this, int n)
         {
            CPvpCashPointSendMsg_TalikList34_user(_this, n, CPvpCashPointSendMsg_TalikList34_next);
         };
-        void CPvpCashPointSetContPvpHave36_wrapper(struct CPvpCashPoint* _this, char byCnt)
+        static void CPvpCashPointSetContPvpHave36_wrapper(struct CPvpCashPoint* _this, char byCnt)
         {
            CPvpCashPointSetContPvpHave36_user(_this, byCnt, CPvpCashPointSetContPvpHave36_next);
         };
-        void CPvpCashPointSetContPvpLose38_wrapper(struct CPvpCashPoint* _this, int byCnt)
+        static void CPvpCashPointSetContPvpLose38_wrapper(struct CPvpCashPoint* _this, int byCnt)
         {
            CPvpCashPointSetContPvpLose38_user(_this, byCnt, CPvpCashPointSetContPvpLose38_next);
         };
-        bool CPvpCashPointSetKillerList40_wrapper(struct CPvpCashPoint* _this, unsigned int dwKillerSerial)
+        static bool CPvpCashPointSetKillerList40_wrapper(struct CPvpCashPoint* _this, unsigned int dwKillerSerial)
         {
            return CPvpCashPointSetKillerList40_user(_this, dwKillerSerial, CPvpCashPointSetKillerList40_next);
         };
-        void CPvpCashPointSetRaceWarRecvr42_wrapper(struct CPvpCashPoint* _this, bool bUsed)
+        static void CPvpCashPointSetRaceWarRecvr42_wrapper(struct CPvpCashPoint* _this, bool bUsed)
         {
            CPvpCashPointSetRaceWarRecvr42_user(_this, bUsed, CPvpCashPointSetRaceWarRecvr42_next);
         };
-        void CPvpCashPointUpdateKillerList44_wrapper(struct CPvpCashPoint* _this, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo)
+        static void CPvpCashPointUpdateKillerList44_wrapper(struct CPvpCashPoint* _this, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo)
         {
            CPvpCashPointUpdateKillerList44_user(_this, pkInfo, CPvpCashPointUpdateKillerList44_next);
         };
-        void CPvpCashPointdtor_CPvpCashPoint46_wrapper(struct CPvpCashPoint* _this)
+        static void CPvpCashPointdtor_CPvpCashPoint46_wrapper(struct CPvpCashPoint* _this)
         {
            CPvpCashPointdtor_CPvpCashPoint46_user(_this, CPvpCashPointdtor_CPvpCashPoint46_next);
         };
         
-        hook_record CPvpCashPoint_functions[] = {
+        static hook_record CPvpCashPoint_functions[] = {
         {   (LPVOID)0x1403f4f80L,
             (LPVOID *)&CPvpCashPointctor_CPvpCashPoint2_user,
             (LPVOID *)&CPvpCashPointctor_CPvpCashPoint2_next,
@@ -267,5 +267,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

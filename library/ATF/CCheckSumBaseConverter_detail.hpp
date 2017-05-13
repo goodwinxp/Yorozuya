@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCheckSumBaseConverterProcCode2_ptr CCheckSumBaseConverterProcCode2_next(nullptr);
-        info::CCheckSumBaseConverterProcCode2_clbk CCheckSumBaseConverterProcCode2_user(nullptr);
-        info::CCheckSumBaseConverterProcCode4_ptr CCheckSumBaseConverterProcCode4_next(nullptr);
-        info::CCheckSumBaseConverterProcCode4_clbk CCheckSumBaseConverterProcCode4_user(nullptr);
+        static info::CCheckSumBaseConverterProcCode2_ptr CCheckSumBaseConverterProcCode2_next(nullptr);
+        static info::CCheckSumBaseConverterProcCode2_clbk CCheckSumBaseConverterProcCode2_user(nullptr);
+        static info::CCheckSumBaseConverterProcCode4_ptr CCheckSumBaseConverterProcCode4_next(nullptr);
+        static info::CCheckSumBaseConverterProcCode4_clbk CCheckSumBaseConverterProcCode4_user(nullptr);
         
-        long double CCheckSumBaseConverterProcCode2_wrapper(struct CCheckSumBaseConverter* _this, char byIndex, unsigned int dwSerial, long double dValue)
+        static long double CCheckSumBaseConverterProcCode2_wrapper(struct CCheckSumBaseConverter* _this, char byIndex, unsigned int dwSerial, long double dValue)
         {
            return CCheckSumBaseConverterProcCode2_user(_this, byIndex, dwSerial, dValue, CCheckSumBaseConverterProcCode2_next);
         };
-        unsigned int CCheckSumBaseConverterProcCode4_wrapper(struct CCheckSumBaseConverter* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
+        static unsigned int CCheckSumBaseConverterProcCode4_wrapper(struct CCheckSumBaseConverter* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
         {
            return CCheckSumBaseConverterProcCode4_user(_this, byIndex, dwSerial, dwValue, CCheckSumBaseConverterProcCode4_next);
         };
         
-        hook_record CCheckSumBaseConverter_functions[] = {
+        static hook_record CCheckSumBaseConverter_functions[] = {
         {   (LPVOID)0x1402c1440L,
             (LPVOID *)&CCheckSumBaseConverterProcCode2_user,
             (LPVOID *)&CCheckSumBaseConverterProcCode2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

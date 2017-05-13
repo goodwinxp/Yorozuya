@@ -8,579 +8,579 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBspctor_CBsp1_ptr CBspctor_CBsp1_next(nullptr);
-        info::CBspctor_CBsp1_clbk CBspctor_CBsp1_user(nullptr);
-        info::CBspCalcEntitiesMainColor2_ptr CBspCalcEntitiesMainColor2_next(nullptr);
-        info::CBspCalcEntitiesMainColor2_clbk CBspCalcEntitiesMainColor2_user(nullptr);
-        info::CBspCalcObjectLoop3_ptr CBspCalcObjectLoop3_next(nullptr);
-        info::CBspCalcObjectLoop3_clbk CBspCalcObjectLoop3_user(nullptr);
-        info::CBspCanYouGoThere4_ptr CBspCanYouGoThere4_next(nullptr);
-        info::CBspCanYouGoThere4_clbk CBspCanYouGoThere4_user(nullptr);
-        info::CBspClearVariable5_ptr CBspClearVariable5_next(nullptr);
-        info::CBspClearVariable5_clbk CBspClearVariable5_user(nullptr);
-        info::CBspDrawAlphaRender6_ptr CBspDrawAlphaRender6_next(nullptr);
-        info::CBspDrawAlphaRender6_clbk CBspDrawAlphaRender6_user(nullptr);
-        info::CBspDrawBspRender7_ptr CBspDrawBspRender7_next(nullptr);
-        info::CBspDrawBspRender7_clbk CBspDrawBspRender7_user(nullptr);
-        info::CBspDrawCollisionPoly8_ptr CBspDrawCollisionPoly8_next(nullptr);
-        info::CBspDrawCollisionPoly8_clbk CBspDrawCollisionPoly8_user(nullptr);
-        info::CBspDrawDynamicLightSub9_ptr CBspDrawDynamicLightSub9_next(nullptr);
-        info::CBspDrawDynamicLightSub9_clbk CBspDrawDynamicLightSub9_user(nullptr);
-        info::CBspDrawDynamicLights10_ptr CBspDrawDynamicLights10_next(nullptr);
-        info::CBspDrawDynamicLights10_clbk CBspDrawDynamicLights10_user(nullptr);
-        info::CBspDrawLeafBBox11_ptr CBspDrawLeafBBox11_next(nullptr);
-        info::CBspDrawLeafBBox11_clbk CBspDrawLeafBBox11_user(nullptr);
-        info::CBspDrawLeafCollisionPoly12_ptr CBspDrawLeafCollisionPoly12_next(nullptr);
-        info::CBspDrawLeafCollisionPoly12_clbk CBspDrawLeafCollisionPoly12_user(nullptr);
-        info::CBspDrawMagicLightSub13_ptr CBspDrawMagicLightSub13_next(nullptr);
-        info::CBspDrawMagicLightSub13_clbk CBspDrawMagicLightSub13_user(nullptr);
-        info::CBspDrawMapEntitiesRender14_ptr CBspDrawMapEntitiesRender14_next(nullptr);
-        info::CBspDrawMapEntitiesRender14_clbk CBspDrawMapEntitiesRender14_user(nullptr);
-        info::CBspDrawMatBBox15_ptr CBspDrawMatBBox15_next(nullptr);
-        info::CBspDrawMatBBox15_clbk CBspDrawMatBBox15_user(nullptr);
-        info::CBspDrawShadowRender16_ptr CBspDrawShadowRender16_next(nullptr);
-        info::CBspDrawShadowRender16_clbk CBspDrawShadowRender16_user(nullptr);
-        info::CBspEdgeTest17_ptr CBspEdgeTest17_next(nullptr);
-        info::CBspEdgeTest17_clbk CBspEdgeTest17_user(nullptr);
-        info::CBspFastWalkNodeForLeafListFromBBox18_ptr CBspFastWalkNodeForLeafListFromBBox18_next(nullptr);
-        info::CBspFastWalkNodeForLeafListFromBBox18_clbk CBspFastWalkNodeForLeafListFromBBox18_user(nullptr);
-        info::CBspFrameMoveEnvironment19_ptr CBspFrameMoveEnvironment19_next(nullptr);
-        info::CBspFrameMoveEnvironment19_clbk CBspFrameMoveEnvironment19_user(nullptr);
-        info::CBspFrameMoveMapEntities20_ptr CBspFrameMoveMapEntities20_next(nullptr);
-        info::CBspFrameMoveMapEntities20_clbk CBspFrameMoveMapEntities20_user(nullptr);
-        info::CBspGetBestYposInLeaf21_ptr CBspGetBestYposInLeaf21_next(nullptr);
-        info::CBspGetBestYposInLeaf21_clbk CBspGetBestYposInLeaf21_user(nullptr);
-        info::CBspGetBspObjectMatrix22_ptr CBspGetBspObjectMatrix22_next(nullptr);
-        info::CBspGetBspObjectMatrix22_clbk CBspGetBspObjectMatrix22_user(nullptr);
-        info::CBspGetColorFromPoint23_ptr CBspGetColorFromPoint23_next(nullptr);
-        info::CBspGetColorFromPoint23_clbk CBspGetColorFromPoint23_user(nullptr);
-        info::CBspGetDynamicVertexBuffer24_ptr CBspGetDynamicVertexBuffer24_next(nullptr);
-        info::CBspGetDynamicVertexBuffer24_clbk CBspGetDynamicVertexBuffer24_user(nullptr);
-        info::CBspGetEventAnimationState25_ptr CBspGetEventAnimationState25_next(nullptr);
-        info::CBspGetEventAnimationState25_clbk CBspGetEventAnimationState25_user(nullptr);
-        info::CBspGetFaceFrontPoint26_ptr CBspGetFaceFrontPoint26_next(nullptr);
-        info::CBspGetFaceFrontPoint26_clbk CBspGetFaceFrontPoint26_user(nullptr);
-        info::CBspGetFastLeafListFromBBox27_ptr CBspGetFastLeafListFromBBox27_next(nullptr);
-        info::CBspGetFastLeafListFromBBox27_clbk CBspGetFastLeafListFromBBox27_user(nullptr);
-        info::CBspGetFinalPath28_ptr CBspGetFinalPath28_next(nullptr);
-        info::CBspGetFinalPath28_clbk CBspGetFinalPath28_user(nullptr);
-        info::CBspGetFirstYpos29_ptr CBspGetFirstYpos29_next(nullptr);
-        info::CBspGetFirstYpos29_clbk CBspGetFirstYpos29_user(nullptr);
-        info::CBspGetFirstYpos30_ptr CBspGetFirstYpos30_next(nullptr);
-        info::CBspGetFirstYpos30_clbk CBspGetFirstYpos30_user(nullptr);
-        info::CBspGetFirstYpos31_ptr CBspGetFirstYpos31_next(nullptr);
-        info::CBspGetFirstYpos31_clbk CBspGetFirstYpos31_user(nullptr);
-        info::CBspGetHeight32_ptr CBspGetHeight32_next(nullptr);
-        info::CBspGetHeight32_clbk CBspGetHeight32_user(nullptr);
-        info::CBspGetLeafList33_ptr CBspGetLeafList33_next(nullptr);
-        info::CBspGetLeafList33_clbk CBspGetLeafList33_user(nullptr);
-        info::CBspGetLeafNum34_ptr CBspGetLeafNum34_next(nullptr);
-        info::CBspGetLeafNum34_clbk CBspGetLeafNum34_user(nullptr);
-        info::CBspGetLightFromPoint35_ptr CBspGetLightFromPoint35_next(nullptr);
-        info::CBspGetLightFromPoint35_clbk CBspGetLightFromPoint35_user(nullptr);
-        info::CBspGetLightMapUVFromPoint36_ptr CBspGetLightMapUVFromPoint36_next(nullptr);
-        info::CBspGetLightMapUVFromPoint36_clbk CBspGetLightMapUVFromPoint36_user(nullptr);
-        info::CBspGetMatGroup37_ptr CBspGetMatGroup37_next(nullptr);
-        info::CBspGetMatGroup37_clbk CBspGetMatGroup37_user(nullptr);
-        info::CBspGetMatGroupPoint38_ptr CBspGetMatGroupPoint38_next(nullptr);
-        info::CBspGetMatGroupPoint38_clbk CBspGetMatGroupPoint38_user(nullptr);
-        info::CBspGetPath39_ptr CBspGetPath39_next(nullptr);
-        info::CBspGetPath39_clbk CBspGetPath39_user(nullptr);
-        info::CBspGetPathCrossPoint40_ptr CBspGetPathCrossPoint40_next(nullptr);
-        info::CBspGetPathCrossPoint40_clbk CBspGetPathCrossPoint40_user(nullptr);
-        info::CBspGetPathFind41_ptr CBspGetPathFind41_next(nullptr);
-        info::CBspGetPathFind41_clbk CBspGetPathFind41_user(nullptr);
-        info::CBspGetPointFromScreenRay42_ptr CBspGetPointFromScreenRay42_next(nullptr);
-        info::CBspGetPointFromScreenRay42_clbk CBspGetPointFromScreenRay42_user(nullptr);
-        info::CBspGetPointFromScreenRayFar43_ptr CBspGetPointFromScreenRayFar43_next(nullptr);
-        info::CBspGetPointFromScreenRayFar43_clbk CBspGetPointFromScreenRayFar43_user(nullptr);
-        info::CBspGetVertexNormal44_ptr CBspGetVertexNormal44_next(nullptr);
-        info::CBspGetVertexNormal44_clbk CBspGetVertexNormal44_user(nullptr);
-        info::CBspGetYposInLeaf45_ptr CBspGetYposInLeaf45_next(nullptr);
-        info::CBspGetYposInLeaf45_clbk CBspGetYposInLeaf45_user(nullptr);
-        info::CBspGetYposInLeafNoAttr46_ptr CBspGetYposInLeafNoAttr46_next(nullptr);
-        info::CBspGetYposInLeafNoAttr46_clbk CBspGetYposInLeafNoAttr46_user(nullptr);
-        info::CBspGetYposInLeafUseEdgeNormal47_ptr CBspGetYposInLeafUseEdgeNormal47_next(nullptr);
-        info::CBspGetYposInLeafUseEdgeNormal47_clbk CBspGetYposInLeafUseEdgeNormal47_user(nullptr);
-        info::CBspHearMapSound48_ptr CBspHearMapSound48_next(nullptr);
-        info::CBspHearMapSound48_clbk CBspHearMapSound48_user(nullptr);
-        info::CBspIsCollisionFace49_ptr CBspIsCollisionFace49_next(nullptr);
-        info::CBspIsCollisionFace49_clbk CBspIsCollisionFace49_user(nullptr);
-        info::CBspIsCollisionFace50_ptr CBspIsCollisionFace50_next(nullptr);
-        info::CBspIsCollisionFace50_clbk CBspIsCollisionFace50_user(nullptr);
-        info::CBspIsCollisionFace51_ptr CBspIsCollisionFace51_next(nullptr);
-        info::CBspIsCollisionFace51_clbk CBspIsCollisionFace51_user(nullptr);
-        info::CBspIsCollisionFaceForServer52_ptr CBspIsCollisionFaceForServer52_next(nullptr);
-        info::CBspIsCollisionFaceForServer52_clbk CBspIsCollisionFaceForServer52_user(nullptr);
-        info::CBspIsCollisionFaceForServer53_ptr CBspIsCollisionFaceForServer53_next(nullptr);
-        info::CBspIsCollisionFaceForServer53_clbk CBspIsCollisionFaceForServer53_user(nullptr);
-        info::CBspIsCollisionFromPath54_ptr CBspIsCollisionFromPath54_next(nullptr);
-        info::CBspIsCollisionFromPath54_clbk CBspIsCollisionFromPath54_user(nullptr);
-        info::CBspIsExistSelfPoint55_ptr CBspIsExistSelfPoint55_next(nullptr);
-        info::CBspIsExistSelfPoint55_clbk CBspIsExistSelfPoint55_user(nullptr);
-        info::CBspIsInViewFrustum56_ptr CBspIsInViewFrustum56_next(nullptr);
-        info::CBspIsInViewFrustum56_clbk CBspIsInViewFrustum56_user(nullptr);
-        info::CBspIsInWater57_ptr CBspIsInWater57_next(nullptr);
-        info::CBspIsInWater57_clbk CBspIsInWater57_user(nullptr);
-        info::CBspIsLoaded58_ptr CBspIsLoaded58_next(nullptr);
-        info::CBspIsLoaded58_clbk CBspIsLoaded58_user(nullptr);
-        info::CBspLoadBsp59_ptr CBspLoadBsp59_next(nullptr);
-        info::CBspLoadBsp59_clbk CBspLoadBsp59_user(nullptr);
-        info::CBspLoadEntities60_ptr CBspLoadEntities60_next(nullptr);
-        info::CBspLoadEntities60_clbk CBspLoadEntities60_user(nullptr);
-        info::CBspLoadEnvironment61_ptr CBspLoadEnvironment61_next(nullptr);
-        info::CBspLoadEnvironment61_clbk CBspLoadEnvironment61_user(nullptr);
-        info::CBspLoadExtBsp62_ptr CBspLoadExtBsp62_next(nullptr);
-        info::CBspLoadExtBsp62_clbk CBspLoadExtBsp62_user(nullptr);
-        info::CBspLoadSoundEntities63_ptr CBspLoadSoundEntities63_next(nullptr);
-        info::CBspLoadSoundEntities63_clbk CBspLoadSoundEntities63_user(nullptr);
-        info::CBspLoopInitRenderedMatGroup64_ptr CBspLoopInitRenderedMatGroup64_next(nullptr);
-        info::CBspLoopInitRenderedMatGroup64_clbk CBspLoopInitRenderedMatGroup64_user(nullptr);
-        info::CBspMakeEdgeNormal65_ptr CBspMakeEdgeNormal65_next(nullptr);
-        info::CBspMakeEdgeNormal65_clbk CBspMakeEdgeNormal65_user(nullptr);
-        info::CBspOnlyStoreCollisionStructure66_ptr CBspOnlyStoreCollisionStructure66_next(nullptr);
-        info::CBspOnlyStoreCollisionStructure66_clbk CBspOnlyStoreCollisionStructure66_user(nullptr);
-        info::CBspPrepareAnimation67_ptr CBspPrepareAnimation67_next(nullptr);
-        info::CBspPrepareAnimation67_clbk CBspPrepareAnimation67_user(nullptr);
-        info::CBspPrepareShadowRender68_ptr CBspPrepareShadowRender68_next(nullptr);
-        info::CBspPrepareShadowRender68_clbk CBspPrepareShadowRender68_user(nullptr);
-        info::CBspReadDynamicDataExtBsp69_ptr CBspReadDynamicDataExtBsp69_next(nullptr);
-        info::CBspReadDynamicDataExtBsp69_clbk CBspReadDynamicDataExtBsp69_user(nullptr);
-        info::CBspReadDynamicDataFillVertexBuffer70_ptr CBspReadDynamicDataFillVertexBuffer70_next(nullptr);
-        info::CBspReadDynamicDataFillVertexBuffer70_clbk CBspReadDynamicDataFillVertexBuffer70_user(nullptr);
-        info::CBspReadyBspRender71_ptr CBspReadyBspRender71_next(nullptr);
-        info::CBspReadyBspRender71_clbk CBspReadyBspRender71_user(nullptr);
-        info::CBspReleaseBsp72_ptr CBspReleaseBsp72_next(nullptr);
-        info::CBspReleaseBsp72_clbk CBspReleaseBsp72_user(nullptr);
-        info::CBspReleaseEntities73_ptr CBspReleaseEntities73_next(nullptr);
-        info::CBspReleaseEntities73_clbk CBspReleaseEntities73_user(nullptr);
-        info::CBspReleaseEnvironment74_ptr CBspReleaseEnvironment74_next(nullptr);
-        info::CBspReleaseEnvironment74_clbk CBspReleaseEnvironment74_user(nullptr);
-        info::CBspReleaseSoundEntities75_ptr CBspReleaseSoundEntities75_next(nullptr);
-        info::CBspReleaseSoundEntities75_clbk CBspReleaseSoundEntities75_user(nullptr);
-        info::CBspRenderCollisionLeaf76_ptr CBspRenderCollisionLeaf76_next(nullptr);
-        info::CBspRenderCollisionLeaf76_clbk CBspRenderCollisionLeaf76_user(nullptr);
-        info::CBspRenderEnvironment77_ptr CBspRenderEnvironment77_next(nullptr);
-        info::CBspRenderEnvironment77_clbk CBspRenderEnvironment77_user(nullptr);
-        info::CBspRenderIndepentMatGroup78_ptr CBspRenderIndepentMatGroup78_next(nullptr);
-        info::CBspRenderIndepentMatGroup78_clbk CBspRenderIndepentMatGroup78_user(nullptr);
-        info::CBspRenderLeaf79_ptr CBspRenderLeaf79_next(nullptr);
-        info::CBspRenderLeaf79_clbk CBspRenderLeaf79_user(nullptr);
-        info::CBspRenderMatGroup80_ptr CBspRenderMatGroup80_next(nullptr);
-        info::CBspRenderMatGroup80_clbk CBspRenderMatGroup80_user(nullptr);
-        info::CBspRenderOneEntityRender81_ptr CBspRenderOneEntityRender81_next(nullptr);
-        info::CBspRenderOneEntityRender81_clbk CBspRenderOneEntityRender81_user(nullptr);
-        info::CBspRenderReflectionMatGroup82_ptr CBspRenderReflectionMatGroup82_next(nullptr);
-        info::CBspRenderReflectionMatGroup82_clbk CBspRenderReflectionMatGroup82_user(nullptr);
-        info::CBspRenderShadowMatGroup83_ptr CBspRenderShadowMatGroup83_next(nullptr);
-        info::CBspRenderShadowMatGroup83_clbk CBspRenderShadowMatGroup83_user(nullptr);
-        info::CBspSaveExtBsp84_ptr CBspSaveExtBsp84_next(nullptr);
-        info::CBspSaveExtBsp84_clbk CBspSaveExtBsp84_user(nullptr);
-        info::CBspSearchNode85_ptr CBspSearchNode85_next(nullptr);
-        info::CBspSearchNode85_clbk CBspSearchNode85_user(nullptr);
-        info::CBspSetAllAnimationState86_ptr CBspSetAllAnimationState86_next(nullptr);
-        info::CBspSetAllAnimationState86_clbk CBspSetAllAnimationState86_user(nullptr);
-        info::CBspSetCFNormal87_ptr CBspSetCFNormal87_next(nullptr);
-        info::CBspSetCFNormal87_clbk CBspSetCFNormal87_user(nullptr);
-        info::CBspSetEventAnimationState88_ptr CBspSetEventAnimationState88_next(nullptr);
-        info::CBspSetEventAnimationState88_clbk CBspSetEventAnimationState88_user(nullptr);
-        info::CBspSetIsLoaded89_ptr CBspSetIsLoaded89_next(nullptr);
-        info::CBspSetIsLoaded89_clbk CBspSetIsLoaded89_user(nullptr);
-        info::CBspSubLeafList90_ptr CBspSubLeafList90_next(nullptr);
-        info::CBspSubLeafList90_clbk CBspSubLeafList90_user(nullptr);
-        info::CBspSubLeafListFromBBox91_ptr CBspSubLeafListFromBBox91_next(nullptr);
-        info::CBspSubLeafListFromBBox91_clbk CBspSubLeafListFromBBox91_user(nullptr);
-        info::CBspWalkLeaf92_ptr CBspWalkLeaf92_next(nullptr);
-        info::CBspWalkLeaf92_clbk CBspWalkLeaf92_user(nullptr);
-        info::CBspWalkNode93_ptr CBspWalkNode93_next(nullptr);
-        info::CBspWalkNode93_clbk CBspWalkNode93_user(nullptr);
-        info::CBspWalkNodeForLeafList94_ptr CBspWalkNodeForLeafList94_next(nullptr);
-        info::CBspWalkNodeForLeafList94_clbk CBspWalkNodeForLeafList94_user(nullptr);
-        info::CBspdtor_CBsp96_ptr CBspdtor_CBsp96_next(nullptr);
-        info::CBspdtor_CBsp96_clbk CBspdtor_CBsp96_user(nullptr);
+        static info::CBspctor_CBsp1_ptr CBspctor_CBsp1_next(nullptr);
+        static info::CBspctor_CBsp1_clbk CBspctor_CBsp1_user(nullptr);
+        static info::CBspCalcEntitiesMainColor2_ptr CBspCalcEntitiesMainColor2_next(nullptr);
+        static info::CBspCalcEntitiesMainColor2_clbk CBspCalcEntitiesMainColor2_user(nullptr);
+        static info::CBspCalcObjectLoop3_ptr CBspCalcObjectLoop3_next(nullptr);
+        static info::CBspCalcObjectLoop3_clbk CBspCalcObjectLoop3_user(nullptr);
+        static info::CBspCanYouGoThere4_ptr CBspCanYouGoThere4_next(nullptr);
+        static info::CBspCanYouGoThere4_clbk CBspCanYouGoThere4_user(nullptr);
+        static info::CBspClearVariable5_ptr CBspClearVariable5_next(nullptr);
+        static info::CBspClearVariable5_clbk CBspClearVariable5_user(nullptr);
+        static info::CBspDrawAlphaRender6_ptr CBspDrawAlphaRender6_next(nullptr);
+        static info::CBspDrawAlphaRender6_clbk CBspDrawAlphaRender6_user(nullptr);
+        static info::CBspDrawBspRender7_ptr CBspDrawBspRender7_next(nullptr);
+        static info::CBspDrawBspRender7_clbk CBspDrawBspRender7_user(nullptr);
+        static info::CBspDrawCollisionPoly8_ptr CBspDrawCollisionPoly8_next(nullptr);
+        static info::CBspDrawCollisionPoly8_clbk CBspDrawCollisionPoly8_user(nullptr);
+        static info::CBspDrawDynamicLightSub9_ptr CBspDrawDynamicLightSub9_next(nullptr);
+        static info::CBspDrawDynamicLightSub9_clbk CBspDrawDynamicLightSub9_user(nullptr);
+        static info::CBspDrawDynamicLights10_ptr CBspDrawDynamicLights10_next(nullptr);
+        static info::CBspDrawDynamicLights10_clbk CBspDrawDynamicLights10_user(nullptr);
+        static info::CBspDrawLeafBBox11_ptr CBspDrawLeafBBox11_next(nullptr);
+        static info::CBspDrawLeafBBox11_clbk CBspDrawLeafBBox11_user(nullptr);
+        static info::CBspDrawLeafCollisionPoly12_ptr CBspDrawLeafCollisionPoly12_next(nullptr);
+        static info::CBspDrawLeafCollisionPoly12_clbk CBspDrawLeafCollisionPoly12_user(nullptr);
+        static info::CBspDrawMagicLightSub13_ptr CBspDrawMagicLightSub13_next(nullptr);
+        static info::CBspDrawMagicLightSub13_clbk CBspDrawMagicLightSub13_user(nullptr);
+        static info::CBspDrawMapEntitiesRender14_ptr CBspDrawMapEntitiesRender14_next(nullptr);
+        static info::CBspDrawMapEntitiesRender14_clbk CBspDrawMapEntitiesRender14_user(nullptr);
+        static info::CBspDrawMatBBox15_ptr CBspDrawMatBBox15_next(nullptr);
+        static info::CBspDrawMatBBox15_clbk CBspDrawMatBBox15_user(nullptr);
+        static info::CBspDrawShadowRender16_ptr CBspDrawShadowRender16_next(nullptr);
+        static info::CBspDrawShadowRender16_clbk CBspDrawShadowRender16_user(nullptr);
+        static info::CBspEdgeTest17_ptr CBspEdgeTest17_next(nullptr);
+        static info::CBspEdgeTest17_clbk CBspEdgeTest17_user(nullptr);
+        static info::CBspFastWalkNodeForLeafListFromBBox18_ptr CBspFastWalkNodeForLeafListFromBBox18_next(nullptr);
+        static info::CBspFastWalkNodeForLeafListFromBBox18_clbk CBspFastWalkNodeForLeafListFromBBox18_user(nullptr);
+        static info::CBspFrameMoveEnvironment19_ptr CBspFrameMoveEnvironment19_next(nullptr);
+        static info::CBspFrameMoveEnvironment19_clbk CBspFrameMoveEnvironment19_user(nullptr);
+        static info::CBspFrameMoveMapEntities20_ptr CBspFrameMoveMapEntities20_next(nullptr);
+        static info::CBspFrameMoveMapEntities20_clbk CBspFrameMoveMapEntities20_user(nullptr);
+        static info::CBspGetBestYposInLeaf21_ptr CBspGetBestYposInLeaf21_next(nullptr);
+        static info::CBspGetBestYposInLeaf21_clbk CBspGetBestYposInLeaf21_user(nullptr);
+        static info::CBspGetBspObjectMatrix22_ptr CBspGetBspObjectMatrix22_next(nullptr);
+        static info::CBspGetBspObjectMatrix22_clbk CBspGetBspObjectMatrix22_user(nullptr);
+        static info::CBspGetColorFromPoint23_ptr CBspGetColorFromPoint23_next(nullptr);
+        static info::CBspGetColorFromPoint23_clbk CBspGetColorFromPoint23_user(nullptr);
+        static info::CBspGetDynamicVertexBuffer24_ptr CBspGetDynamicVertexBuffer24_next(nullptr);
+        static info::CBspGetDynamicVertexBuffer24_clbk CBspGetDynamicVertexBuffer24_user(nullptr);
+        static info::CBspGetEventAnimationState25_ptr CBspGetEventAnimationState25_next(nullptr);
+        static info::CBspGetEventAnimationState25_clbk CBspGetEventAnimationState25_user(nullptr);
+        static info::CBspGetFaceFrontPoint26_ptr CBspGetFaceFrontPoint26_next(nullptr);
+        static info::CBspGetFaceFrontPoint26_clbk CBspGetFaceFrontPoint26_user(nullptr);
+        static info::CBspGetFastLeafListFromBBox27_ptr CBspGetFastLeafListFromBBox27_next(nullptr);
+        static info::CBspGetFastLeafListFromBBox27_clbk CBspGetFastLeafListFromBBox27_user(nullptr);
+        static info::CBspGetFinalPath28_ptr CBspGetFinalPath28_next(nullptr);
+        static info::CBspGetFinalPath28_clbk CBspGetFinalPath28_user(nullptr);
+        static info::CBspGetFirstYpos29_ptr CBspGetFirstYpos29_next(nullptr);
+        static info::CBspGetFirstYpos29_clbk CBspGetFirstYpos29_user(nullptr);
+        static info::CBspGetFirstYpos30_ptr CBspGetFirstYpos30_next(nullptr);
+        static info::CBspGetFirstYpos30_clbk CBspGetFirstYpos30_user(nullptr);
+        static info::CBspGetFirstYpos31_ptr CBspGetFirstYpos31_next(nullptr);
+        static info::CBspGetFirstYpos31_clbk CBspGetFirstYpos31_user(nullptr);
+        static info::CBspGetHeight32_ptr CBspGetHeight32_next(nullptr);
+        static info::CBspGetHeight32_clbk CBspGetHeight32_user(nullptr);
+        static info::CBspGetLeafList33_ptr CBspGetLeafList33_next(nullptr);
+        static info::CBspGetLeafList33_clbk CBspGetLeafList33_user(nullptr);
+        static info::CBspGetLeafNum34_ptr CBspGetLeafNum34_next(nullptr);
+        static info::CBspGetLeafNum34_clbk CBspGetLeafNum34_user(nullptr);
+        static info::CBspGetLightFromPoint35_ptr CBspGetLightFromPoint35_next(nullptr);
+        static info::CBspGetLightFromPoint35_clbk CBspGetLightFromPoint35_user(nullptr);
+        static info::CBspGetLightMapUVFromPoint36_ptr CBspGetLightMapUVFromPoint36_next(nullptr);
+        static info::CBspGetLightMapUVFromPoint36_clbk CBspGetLightMapUVFromPoint36_user(nullptr);
+        static info::CBspGetMatGroup37_ptr CBspGetMatGroup37_next(nullptr);
+        static info::CBspGetMatGroup37_clbk CBspGetMatGroup37_user(nullptr);
+        static info::CBspGetMatGroupPoint38_ptr CBspGetMatGroupPoint38_next(nullptr);
+        static info::CBspGetMatGroupPoint38_clbk CBspGetMatGroupPoint38_user(nullptr);
+        static info::CBspGetPath39_ptr CBspGetPath39_next(nullptr);
+        static info::CBspGetPath39_clbk CBspGetPath39_user(nullptr);
+        static info::CBspGetPathCrossPoint40_ptr CBspGetPathCrossPoint40_next(nullptr);
+        static info::CBspGetPathCrossPoint40_clbk CBspGetPathCrossPoint40_user(nullptr);
+        static info::CBspGetPathFind41_ptr CBspGetPathFind41_next(nullptr);
+        static info::CBspGetPathFind41_clbk CBspGetPathFind41_user(nullptr);
+        static info::CBspGetPointFromScreenRay42_ptr CBspGetPointFromScreenRay42_next(nullptr);
+        static info::CBspGetPointFromScreenRay42_clbk CBspGetPointFromScreenRay42_user(nullptr);
+        static info::CBspGetPointFromScreenRayFar43_ptr CBspGetPointFromScreenRayFar43_next(nullptr);
+        static info::CBspGetPointFromScreenRayFar43_clbk CBspGetPointFromScreenRayFar43_user(nullptr);
+        static info::CBspGetVertexNormal44_ptr CBspGetVertexNormal44_next(nullptr);
+        static info::CBspGetVertexNormal44_clbk CBspGetVertexNormal44_user(nullptr);
+        static info::CBspGetYposInLeaf45_ptr CBspGetYposInLeaf45_next(nullptr);
+        static info::CBspGetYposInLeaf45_clbk CBspGetYposInLeaf45_user(nullptr);
+        static info::CBspGetYposInLeafNoAttr46_ptr CBspGetYposInLeafNoAttr46_next(nullptr);
+        static info::CBspGetYposInLeafNoAttr46_clbk CBspGetYposInLeafNoAttr46_user(nullptr);
+        static info::CBspGetYposInLeafUseEdgeNormal47_ptr CBspGetYposInLeafUseEdgeNormal47_next(nullptr);
+        static info::CBspGetYposInLeafUseEdgeNormal47_clbk CBspGetYposInLeafUseEdgeNormal47_user(nullptr);
+        static info::CBspHearMapSound48_ptr CBspHearMapSound48_next(nullptr);
+        static info::CBspHearMapSound48_clbk CBspHearMapSound48_user(nullptr);
+        static info::CBspIsCollisionFace49_ptr CBspIsCollisionFace49_next(nullptr);
+        static info::CBspIsCollisionFace49_clbk CBspIsCollisionFace49_user(nullptr);
+        static info::CBspIsCollisionFace50_ptr CBspIsCollisionFace50_next(nullptr);
+        static info::CBspIsCollisionFace50_clbk CBspIsCollisionFace50_user(nullptr);
+        static info::CBspIsCollisionFace51_ptr CBspIsCollisionFace51_next(nullptr);
+        static info::CBspIsCollisionFace51_clbk CBspIsCollisionFace51_user(nullptr);
+        static info::CBspIsCollisionFaceForServer52_ptr CBspIsCollisionFaceForServer52_next(nullptr);
+        static info::CBspIsCollisionFaceForServer52_clbk CBspIsCollisionFaceForServer52_user(nullptr);
+        static info::CBspIsCollisionFaceForServer53_ptr CBspIsCollisionFaceForServer53_next(nullptr);
+        static info::CBspIsCollisionFaceForServer53_clbk CBspIsCollisionFaceForServer53_user(nullptr);
+        static info::CBspIsCollisionFromPath54_ptr CBspIsCollisionFromPath54_next(nullptr);
+        static info::CBspIsCollisionFromPath54_clbk CBspIsCollisionFromPath54_user(nullptr);
+        static info::CBspIsExistSelfPoint55_ptr CBspIsExistSelfPoint55_next(nullptr);
+        static info::CBspIsExistSelfPoint55_clbk CBspIsExistSelfPoint55_user(nullptr);
+        static info::CBspIsInViewFrustum56_ptr CBspIsInViewFrustum56_next(nullptr);
+        static info::CBspIsInViewFrustum56_clbk CBspIsInViewFrustum56_user(nullptr);
+        static info::CBspIsInWater57_ptr CBspIsInWater57_next(nullptr);
+        static info::CBspIsInWater57_clbk CBspIsInWater57_user(nullptr);
+        static info::CBspIsLoaded58_ptr CBspIsLoaded58_next(nullptr);
+        static info::CBspIsLoaded58_clbk CBspIsLoaded58_user(nullptr);
+        static info::CBspLoadBsp59_ptr CBspLoadBsp59_next(nullptr);
+        static info::CBspLoadBsp59_clbk CBspLoadBsp59_user(nullptr);
+        static info::CBspLoadEntities60_ptr CBspLoadEntities60_next(nullptr);
+        static info::CBspLoadEntities60_clbk CBspLoadEntities60_user(nullptr);
+        static info::CBspLoadEnvironment61_ptr CBspLoadEnvironment61_next(nullptr);
+        static info::CBspLoadEnvironment61_clbk CBspLoadEnvironment61_user(nullptr);
+        static info::CBspLoadExtBsp62_ptr CBspLoadExtBsp62_next(nullptr);
+        static info::CBspLoadExtBsp62_clbk CBspLoadExtBsp62_user(nullptr);
+        static info::CBspLoadSoundEntities63_ptr CBspLoadSoundEntities63_next(nullptr);
+        static info::CBspLoadSoundEntities63_clbk CBspLoadSoundEntities63_user(nullptr);
+        static info::CBspLoopInitRenderedMatGroup64_ptr CBspLoopInitRenderedMatGroup64_next(nullptr);
+        static info::CBspLoopInitRenderedMatGroup64_clbk CBspLoopInitRenderedMatGroup64_user(nullptr);
+        static info::CBspMakeEdgeNormal65_ptr CBspMakeEdgeNormal65_next(nullptr);
+        static info::CBspMakeEdgeNormal65_clbk CBspMakeEdgeNormal65_user(nullptr);
+        static info::CBspOnlyStoreCollisionStructure66_ptr CBspOnlyStoreCollisionStructure66_next(nullptr);
+        static info::CBspOnlyStoreCollisionStructure66_clbk CBspOnlyStoreCollisionStructure66_user(nullptr);
+        static info::CBspPrepareAnimation67_ptr CBspPrepareAnimation67_next(nullptr);
+        static info::CBspPrepareAnimation67_clbk CBspPrepareAnimation67_user(nullptr);
+        static info::CBspPrepareShadowRender68_ptr CBspPrepareShadowRender68_next(nullptr);
+        static info::CBspPrepareShadowRender68_clbk CBspPrepareShadowRender68_user(nullptr);
+        static info::CBspReadDynamicDataExtBsp69_ptr CBspReadDynamicDataExtBsp69_next(nullptr);
+        static info::CBspReadDynamicDataExtBsp69_clbk CBspReadDynamicDataExtBsp69_user(nullptr);
+        static info::CBspReadDynamicDataFillVertexBuffer70_ptr CBspReadDynamicDataFillVertexBuffer70_next(nullptr);
+        static info::CBspReadDynamicDataFillVertexBuffer70_clbk CBspReadDynamicDataFillVertexBuffer70_user(nullptr);
+        static info::CBspReadyBspRender71_ptr CBspReadyBspRender71_next(nullptr);
+        static info::CBspReadyBspRender71_clbk CBspReadyBspRender71_user(nullptr);
+        static info::CBspReleaseBsp72_ptr CBspReleaseBsp72_next(nullptr);
+        static info::CBspReleaseBsp72_clbk CBspReleaseBsp72_user(nullptr);
+        static info::CBspReleaseEntities73_ptr CBspReleaseEntities73_next(nullptr);
+        static info::CBspReleaseEntities73_clbk CBspReleaseEntities73_user(nullptr);
+        static info::CBspReleaseEnvironment74_ptr CBspReleaseEnvironment74_next(nullptr);
+        static info::CBspReleaseEnvironment74_clbk CBspReleaseEnvironment74_user(nullptr);
+        static info::CBspReleaseSoundEntities75_ptr CBspReleaseSoundEntities75_next(nullptr);
+        static info::CBspReleaseSoundEntities75_clbk CBspReleaseSoundEntities75_user(nullptr);
+        static info::CBspRenderCollisionLeaf76_ptr CBspRenderCollisionLeaf76_next(nullptr);
+        static info::CBspRenderCollisionLeaf76_clbk CBspRenderCollisionLeaf76_user(nullptr);
+        static info::CBspRenderEnvironment77_ptr CBspRenderEnvironment77_next(nullptr);
+        static info::CBspRenderEnvironment77_clbk CBspRenderEnvironment77_user(nullptr);
+        static info::CBspRenderIndepentMatGroup78_ptr CBspRenderIndepentMatGroup78_next(nullptr);
+        static info::CBspRenderIndepentMatGroup78_clbk CBspRenderIndepentMatGroup78_user(nullptr);
+        static info::CBspRenderLeaf79_ptr CBspRenderLeaf79_next(nullptr);
+        static info::CBspRenderLeaf79_clbk CBspRenderLeaf79_user(nullptr);
+        static info::CBspRenderMatGroup80_ptr CBspRenderMatGroup80_next(nullptr);
+        static info::CBspRenderMatGroup80_clbk CBspRenderMatGroup80_user(nullptr);
+        static info::CBspRenderOneEntityRender81_ptr CBspRenderOneEntityRender81_next(nullptr);
+        static info::CBspRenderOneEntityRender81_clbk CBspRenderOneEntityRender81_user(nullptr);
+        static info::CBspRenderReflectionMatGroup82_ptr CBspRenderReflectionMatGroup82_next(nullptr);
+        static info::CBspRenderReflectionMatGroup82_clbk CBspRenderReflectionMatGroup82_user(nullptr);
+        static info::CBspRenderShadowMatGroup83_ptr CBspRenderShadowMatGroup83_next(nullptr);
+        static info::CBspRenderShadowMatGroup83_clbk CBspRenderShadowMatGroup83_user(nullptr);
+        static info::CBspSaveExtBsp84_ptr CBspSaveExtBsp84_next(nullptr);
+        static info::CBspSaveExtBsp84_clbk CBspSaveExtBsp84_user(nullptr);
+        static info::CBspSearchNode85_ptr CBspSearchNode85_next(nullptr);
+        static info::CBspSearchNode85_clbk CBspSearchNode85_user(nullptr);
+        static info::CBspSetAllAnimationState86_ptr CBspSetAllAnimationState86_next(nullptr);
+        static info::CBspSetAllAnimationState86_clbk CBspSetAllAnimationState86_user(nullptr);
+        static info::CBspSetCFNormal87_ptr CBspSetCFNormal87_next(nullptr);
+        static info::CBspSetCFNormal87_clbk CBspSetCFNormal87_user(nullptr);
+        static info::CBspSetEventAnimationState88_ptr CBspSetEventAnimationState88_next(nullptr);
+        static info::CBspSetEventAnimationState88_clbk CBspSetEventAnimationState88_user(nullptr);
+        static info::CBspSetIsLoaded89_ptr CBspSetIsLoaded89_next(nullptr);
+        static info::CBspSetIsLoaded89_clbk CBspSetIsLoaded89_user(nullptr);
+        static info::CBspSubLeafList90_ptr CBspSubLeafList90_next(nullptr);
+        static info::CBspSubLeafList90_clbk CBspSubLeafList90_user(nullptr);
+        static info::CBspSubLeafListFromBBox91_ptr CBspSubLeafListFromBBox91_next(nullptr);
+        static info::CBspSubLeafListFromBBox91_clbk CBspSubLeafListFromBBox91_user(nullptr);
+        static info::CBspWalkLeaf92_ptr CBspWalkLeaf92_next(nullptr);
+        static info::CBspWalkLeaf92_clbk CBspWalkLeaf92_user(nullptr);
+        static info::CBspWalkNode93_ptr CBspWalkNode93_next(nullptr);
+        static info::CBspWalkNode93_clbk CBspWalkNode93_user(nullptr);
+        static info::CBspWalkNodeForLeafList94_ptr CBspWalkNodeForLeafList94_next(nullptr);
+        static info::CBspWalkNodeForLeafList94_clbk CBspWalkNodeForLeafList94_user(nullptr);
+        static info::CBspdtor_CBsp96_ptr CBspdtor_CBsp96_next(nullptr);
+        static info::CBspdtor_CBsp96_clbk CBspdtor_CBsp96_user(nullptr);
         
-        int64_t CBspctor_CBsp1_wrapper(struct CBsp* _this)
+        static int64_t CBspctor_CBsp1_wrapper(struct CBsp* _this)
         {
            return CBspctor_CBsp1_user(_this, CBspctor_CBsp1_next);
         };
-        void CBspCalcEntitiesMainColor2_wrapper(struct CBsp* _this)
+        static void CBspCalcEntitiesMainColor2_wrapper(struct CBsp* _this)
         {
            CBspCalcEntitiesMainColor2_user(_this, CBspCalcEntitiesMainColor2_next);
         };
-        void CBspCalcObjectLoop3_wrapper(struct CBsp* _this)
+        static void CBspCalcObjectLoop3_wrapper(struct CBsp* _this)
         {
            CBspCalcObjectLoop3_user(_this, CBspCalcObjectLoop3_next);
         };
-        int64_t CBspCanYouGoThere4_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2)
+        static int64_t CBspCanYouGoThere4_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2)
         {
            return CBspCanYouGoThere4_user(_this, arg_0, arg_1, arg_2, CBspCanYouGoThere4_next);
         };
-        void CBspClearVariable5_wrapper(struct CBsp* _this)
+        static void CBspClearVariable5_wrapper(struct CBsp* _this)
         {
            CBspClearVariable5_user(_this, CBspClearVariable5_next);
         };
-        void CBspDrawAlphaRender6_wrapper(struct CBsp* _this, float* arg_0)
+        static void CBspDrawAlphaRender6_wrapper(struct CBsp* _this, float* arg_0)
         {
            CBspDrawAlphaRender6_user(_this, arg_0, CBspDrawAlphaRender6_next);
         };
-        void CBspDrawBspRender7_wrapper(struct CBsp* _this)
+        static void CBspDrawBspRender7_wrapper(struct CBsp* _this)
         {
            CBspDrawBspRender7_user(_this, CBspDrawBspRender7_next);
         };
-        void CBspDrawCollisionPoly8_wrapper(struct CBsp* _this)
+        static void CBspDrawCollisionPoly8_wrapper(struct CBsp* _this)
         {
            CBspDrawCollisionPoly8_user(_this, CBspDrawCollisionPoly8_next);
         };
-        void CBspDrawDynamicLightSub9_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static void CBspDrawDynamicLightSub9_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            CBspDrawDynamicLightSub9_user(_this, arg_0, arg_1, CBspDrawDynamicLightSub9_next);
         };
-        void CBspDrawDynamicLights10_wrapper(struct CBsp* _this)
+        static void CBspDrawDynamicLights10_wrapper(struct CBsp* _this)
         {
            CBspDrawDynamicLights10_user(_this, CBspDrawDynamicLights10_next);
         };
-        void CBspDrawLeafBBox11_wrapper(struct CBsp* _this)
+        static void CBspDrawLeafBBox11_wrapper(struct CBsp* _this)
         {
            CBspDrawLeafBBox11_user(_this, CBspDrawLeafBBox11_next);
         };
-        void CBspDrawLeafCollisionPoly12_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspDrawLeafCollisionPoly12_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspDrawLeafCollisionPoly12_user(_this, arg_0, CBspDrawLeafCollisionPoly12_next);
         };
-        void CBspDrawMagicLightSub13_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static void CBspDrawMagicLightSub13_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            CBspDrawMagicLightSub13_user(_this, arg_0, arg_1, CBspDrawMagicLightSub13_next);
         };
-        void CBspDrawMapEntitiesRender14_wrapper(struct CBsp* _this)
+        static void CBspDrawMapEntitiesRender14_wrapper(struct CBsp* _this)
         {
            CBspDrawMapEntitiesRender14_user(_this, CBspDrawMapEntitiesRender14_next);
         };
-        void CBspDrawMatBBox15_wrapper(struct CBsp* _this)
+        static void CBspDrawMatBBox15_wrapper(struct CBsp* _this)
         {
            CBspDrawMatBBox15_user(_this, CBspDrawMatBBox15_next);
         };
-        void CBspDrawShadowRender16_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float* arg_2)
+        static void CBspDrawShadowRender16_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            CBspDrawShadowRender16_user(_this, arg_0, arg_1, arg_2, CBspDrawShadowRender16_next);
         };
-        int CBspEdgeTest17_wrapper(struct CBsp* _this, float* arg_0, int arg_1)
+        static int CBspEdgeTest17_wrapper(struct CBsp* _this, float* arg_0, int arg_1)
         {
            return CBspEdgeTest17_user(_this, arg_0, arg_1, CBspEdgeTest17_next);
         };
-        void CBspFastWalkNodeForLeafListFromBBox18_wrapper(struct CBsp* _this, int8_t arg_0, int16_t arg_1, int16_t arg_2, float** arg_3)
+        static void CBspFastWalkNodeForLeafListFromBBox18_wrapper(struct CBsp* _this, int8_t arg_0, int16_t arg_1, int16_t arg_2, float** arg_3)
         {
            CBspFastWalkNodeForLeafListFromBBox18_user(_this, arg_0, arg_1, arg_2, arg_3, CBspFastWalkNodeForLeafListFromBBox18_next);
         };
-        void CBspFrameMoveEnvironment19_wrapper(struct CBsp* _this)
+        static void CBspFrameMoveEnvironment19_wrapper(struct CBsp* _this)
         {
            CBspFrameMoveEnvironment19_user(_this, CBspFrameMoveEnvironment19_next);
         };
-        void CBspFrameMoveMapEntities20_wrapper(struct CBsp* _this)
+        static void CBspFrameMoveMapEntities20_wrapper(struct CBsp* _this)
         {
            CBspFrameMoveMapEntities20_user(_this, CBspFrameMoveMapEntities20_next);
         };
-        float CBspGetBestYposInLeaf21_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
+        static float CBspGetBestYposInLeaf21_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
         {
            return CBspGetBestYposInLeaf21_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetBestYposInLeaf21_next);
         };
-        void CBspGetBspObjectMatrix22_wrapper(struct CBsp* _this, float** arg_0, uint16_t arg_1)
+        static void CBspGetBspObjectMatrix22_wrapper(struct CBsp* _this, float** arg_0, uint16_t arg_1)
         {
            CBspGetBspObjectMatrix22_user(_this, arg_0, arg_1, CBspGetBspObjectMatrix22_next);
         };
-        uint32_t CBspGetColorFromPoint23_wrapper(struct CBsp* _this, int arg_0, float* arg_1)
+        static uint32_t CBspGetColorFromPoint23_wrapper(struct CBsp* _this, int arg_0, float* arg_1)
         {
            return CBspGetColorFromPoint23_user(_this, arg_0, arg_1, CBspGetColorFromPoint23_next);
         };
-        void* CBspGetDynamicVertexBuffer24_wrapper(struct CBsp* _this)
+        static void* CBspGetDynamicVertexBuffer24_wrapper(struct CBsp* _this)
         {
            return CBspGetDynamicVertexBuffer24_user(_this, CBspGetDynamicVertexBuffer24_next);
         };
-        uint32_t CBspGetEventAnimationState25_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static uint32_t CBspGetEventAnimationState25_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            return CBspGetEventAnimationState25_user(_this, arg_0, CBspGetEventAnimationState25_next);
         };
-        void CBspGetFaceFrontPoint26_wrapper(struct CBsp* _this, float** arg_0, int arg_1)
+        static void CBspGetFaceFrontPoint26_wrapper(struct CBsp* _this, float** arg_0, int arg_1)
         {
            CBspGetFaceFrontPoint26_user(_this, arg_0, arg_1, CBspGetFaceFrontPoint26_next);
         };
-        void CBspGetFastLeafListFromBBox27_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, int32_t* arg_2, int16_t* arg_3, uint32_t arg_4)
+        static void CBspGetFastLeafListFromBBox27_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, int32_t* arg_2, int16_t* arg_3, uint32_t arg_4)
         {
            CBspGetFastLeafListFromBBox27_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetFastLeafListFromBBox27_next);
         };
-        int64_t CBspGetFinalPath28_wrapper(struct CBsp* _this, void* arg_0, float* arg_1, float** arg_2)
+        static int64_t CBspGetFinalPath28_wrapper(struct CBsp* _this, void* arg_0, float* arg_1, float** arg_2)
         {
            return CBspGetFinalPath28_user(_this, arg_0, arg_1, arg_2, CBspGetFinalPath28_next);
         };
-        float CBspGetFirstYpos29_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float* arg_2)
+        static float CBspGetFirstYpos29_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float* arg_2)
         {
            return CBspGetFirstYpos29_user(_this, arg_0, arg_1, arg_2, CBspGetFirstYpos29_next);
         };
-        float CBspGetFirstYpos30_wrapper(struct CBsp* _this, float* arg_0, int arg_1)
+        static float CBspGetFirstYpos30_wrapper(struct CBsp* _this, float* arg_0, int arg_1)
         {
            return CBspGetFirstYpos30_user(_this, arg_0, arg_1, CBspGetFirstYpos30_next);
         };
-        float CBspGetFirstYpos31_wrapper(struct CBsp* _this, float* arg_0, int16_t* arg_1, int16_t* arg_2)
+        static float CBspGetFirstYpos31_wrapper(struct CBsp* _this, float* arg_0, int16_t* arg_1, int16_t* arg_2)
         {
            return CBspGetFirstYpos31_user(_this, arg_0, arg_1, arg_2, CBspGetFirstYpos31_next);
         };
-        void CBspGetHeight32_wrapper(struct CBsp* _this, float* arg_0)
+        static void CBspGetHeight32_wrapper(struct CBsp* _this, float* arg_0)
         {
            CBspGetHeight32_user(_this, arg_0, CBspGetHeight32_next);
         };
-        void CBspGetLeafList33_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, int32_t* arg_2, int16_t* arg_3, uint32_t arg_4)
+        static void CBspGetLeafList33_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, int32_t* arg_2, int16_t* arg_3, uint32_t arg_4)
         {
            CBspGetLeafList33_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetLeafList33_next);
         };
-        int16_t CBspGetLeafNum34_wrapper(struct CBsp* _this, float* arg_0)
+        static int16_t CBspGetLeafNum34_wrapper(struct CBsp* _this, float* arg_0)
         {
            return CBspGetLeafNum34_user(_this, arg_0, CBspGetLeafNum34_next);
         };
-        uint32_t CBspGetLightFromPoint35_wrapper(struct CBsp* _this, float* arg_0, uint32_t arg_1)
+        static uint32_t CBspGetLightFromPoint35_wrapper(struct CBsp* _this, float* arg_0, uint32_t arg_1)
         {
            return CBspGetLightFromPoint35_user(_this, arg_0, arg_1, CBspGetLightFromPoint35_next);
         };
-        void CBspGetLightMapUVFromPoint36_wrapper(struct CBsp* _this, float* arg_0, int arg_1, float* arg_2)
+        static void CBspGetLightMapUVFromPoint36_wrapper(struct CBsp* _this, float* arg_0, int arg_1, float* arg_2)
         {
            CBspGetLightMapUVFromPoint36_user(_this, arg_0, arg_1, arg_2, CBspGetLightMapUVFromPoint36_next);
         };
-        struct _BSP_MAT_GROUP* CBspGetMatGroup37_wrapper(struct CBsp* _this)
+        static struct _BSP_MAT_GROUP* CBspGetMatGroup37_wrapper(struct CBsp* _this)
         {
            return CBspGetMatGroup37_user(_this, CBspGetMatGroup37_next);
         };
-        float CBspGetMatGroupPoint38_wrapper(struct CBsp* _this, uint16_t arg_0, float* arg_1)
+        static float CBspGetMatGroupPoint38_wrapper(struct CBsp* _this, uint16_t arg_0, float* arg_1)
         {
            return CBspGetMatGroupPoint38_user(_this, arg_0, arg_1, CBspGetMatGroupPoint38_next);
         };
-        void CBspGetPath39_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static void CBspGetPath39_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            CBspGetPath39_user(_this, arg_0, arg_1, CBspGetPath39_next);
         };
-        int64_t CBspGetPathCrossPoint40_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, int arg_3, int arg_4)
+        static int64_t CBspGetPathCrossPoint40_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, int arg_3, int arg_4)
         {
            return CBspGetPathCrossPoint40_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetPathCrossPoint40_next);
         };
-        uint32_t CBspGetPathFind41_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, uint32_t* arg_3, int arg_4)
+        static uint32_t CBspGetPathFind41_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, uint32_t* arg_3, int arg_4)
         {
            return CBspGetPathFind41_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetPathFind41_next);
         };
-        int64_t CBspGetPointFromScreenRay42_wrapper(struct CBsp* _this, float arg_0, float arg_1, float* arg_2, float* arg_3)
+        static int64_t CBspGetPointFromScreenRay42_wrapper(struct CBsp* _this, float arg_0, float arg_1, float* arg_2, float* arg_3)
         {
            return CBspGetPointFromScreenRay42_user(_this, arg_0, arg_1, arg_2, arg_3, CBspGetPointFromScreenRay42_next);
         };
-        int64_t CBspGetPointFromScreenRayFar43_wrapper(struct CBsp* _this, float arg_0, float arg_1, float* arg_2, float* arg_3)
+        static int64_t CBspGetPointFromScreenRayFar43_wrapper(struct CBsp* _this, float arg_0, float arg_1, float* arg_2, float* arg_3)
         {
            return CBspGetPointFromScreenRayFar43_user(_this, arg_0, arg_1, arg_2, arg_3, CBspGetPointFromScreenRayFar43_next);
         };
-        void CBspGetVertexNormal44_wrapper(struct CBsp* _this)
+        static void CBspGetVertexNormal44_wrapper(struct CBsp* _this)
         {
            CBspGetVertexNormal44_user(_this, CBspGetVertexNormal44_next);
         };
-        float CBspGetYposInLeaf45_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
+        static float CBspGetYposInLeaf45_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
         {
            return CBspGetYposInLeaf45_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetYposInLeaf45_next);
         };
-        float CBspGetYposInLeafNoAttr46_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
+        static float CBspGetYposInLeafNoAttr46_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
         {
            return CBspGetYposInLeafNoAttr46_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetYposInLeafNoAttr46_next);
         };
-        float CBspGetYposInLeafUseEdgeNormal47_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
+        static float CBspGetYposInLeafUseEdgeNormal47_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float arg_2, float arg_3, int arg_4)
         {
            return CBspGetYposInLeafUseEdgeNormal47_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspGetYposInLeafUseEdgeNormal47_next);
         };
-        void CBspHearMapSound48_wrapper(struct CBsp* _this)
+        static void CBspHearMapSound48_wrapper(struct CBsp* _this)
         {
            CBspHearMapSound48_user(_this, CBspHearMapSound48_next);
         };
-        int64_t CBspIsCollisionFace49_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static int64_t CBspIsCollisionFace49_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            return CBspIsCollisionFace49_user(_this, arg_0, arg_1, CBspIsCollisionFace49_next);
         };
-        int64_t CBspIsCollisionFace50_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float** arg_3)
+        static int64_t CBspIsCollisionFace50_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float** arg_3)
         {
            return CBspIsCollisionFace50_user(_this, arg_0, arg_1, arg_2, arg_3, CBspIsCollisionFace50_next);
         };
-        int64_t CBspIsCollisionFace51_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
+        static int64_t CBspIsCollisionFace51_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
         {
            return CBspIsCollisionFace51_user(_this, arg_0, arg_1, arg_2, arg_3, CBspIsCollisionFace51_next);
         };
-        int64_t CBspIsCollisionFaceForServer52_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static int64_t CBspIsCollisionFaceForServer52_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            return CBspIsCollisionFaceForServer52_user(_this, arg_0, arg_1, CBspIsCollisionFaceForServer52_next);
         };
-        int64_t CBspIsCollisionFaceForServer53_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
+        static int64_t CBspIsCollisionFaceForServer53_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
         {
            return CBspIsCollisionFaceForServer53_user(_this, arg_0, arg_1, arg_2, arg_3, CBspIsCollisionFaceForServer53_next);
         };
-        int64_t CBspIsCollisionFromPath54_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
+        static int64_t CBspIsCollisionFromPath54_wrapper(struct CBsp* _this, float* arg_0, float* arg_1)
         {
            return CBspIsCollisionFromPath54_user(_this, arg_0, arg_1, CBspIsCollisionFromPath54_next);
         };
-        int64_t CBspIsExistSelfPoint55_wrapper(struct CBsp* _this, int arg_0, int arg_1)
+        static int64_t CBspIsExistSelfPoint55_wrapper(struct CBsp* _this, int arg_0, int arg_1)
         {
            return CBspIsExistSelfPoint55_user(_this, arg_0, arg_1, CBspIsExistSelfPoint55_next);
         };
-        int64_t CBspIsInViewFrustum56_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static int64_t CBspIsInViewFrustum56_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            return CBspIsInViewFrustum56_user(_this, arg_0, CBspIsInViewFrustum56_next);
         };
-        int64_t CBspIsInWater57_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
+        static int64_t CBspIsInWater57_wrapper(struct CBsp* _this, float* arg_0, float* arg_1, float** arg_2, float arg_3)
         {
            return CBspIsInWater57_user(_this, arg_0, arg_1, arg_2, arg_3, CBspIsInWater57_next);
         };
-        int64_t CBspIsLoaded58_wrapper(struct CBsp* _this)
+        static int64_t CBspIsLoaded58_wrapper(struct CBsp* _this)
         {
            return CBspIsLoaded58_user(_this, CBspIsLoaded58_next);
         };
-        void CBspLoadBsp59_wrapper(struct CBsp* _this, char* arg_0)
+        static void CBspLoadBsp59_wrapper(struct CBsp* _this, char* arg_0)
         {
            CBspLoadBsp59_user(_this, arg_0, CBspLoadBsp59_next);
         };
-        void CBspLoadEntities60_wrapper(struct CBsp* _this, struct _READ_MAP_ENTITIES_LIST* arg_0)
+        static void CBspLoadEntities60_wrapper(struct CBsp* _this, struct _READ_MAP_ENTITIES_LIST* arg_0)
         {
            CBspLoadEntities60_user(_this, arg_0, CBspLoadEntities60_next);
         };
-        void CBspLoadEnvironment61_wrapper(struct CBsp* _this)
+        static void CBspLoadEnvironment61_wrapper(struct CBsp* _this)
         {
            CBspLoadEnvironment61_user(_this, CBspLoadEnvironment61_next);
         };
-        void CBspLoadExtBsp62_wrapper(struct CBsp* _this, char* arg_0)
+        static void CBspLoadExtBsp62_wrapper(struct CBsp* _this, char* arg_0)
         {
            CBspLoadExtBsp62_user(_this, arg_0, CBspLoadExtBsp62_next);
         };
-        void CBspLoadSoundEntities63_wrapper(struct CBsp* _this, struct _READ_SOUND_ENTITY_LIST* arg_0, struct _READ_SOUND_ENTITIES_LIST* arg_1)
+        static void CBspLoadSoundEntities63_wrapper(struct CBsp* _this, struct _READ_SOUND_ENTITY_LIST* arg_0, struct _READ_SOUND_ENTITIES_LIST* arg_1)
         {
            CBspLoadSoundEntities63_user(_this, arg_0, arg_1, CBspLoadSoundEntities63_next);
         };
-        void CBspLoopInitRenderedMatGroup64_wrapper(struct CBsp* _this)
+        static void CBspLoopInitRenderedMatGroup64_wrapper(struct CBsp* _this)
         {
            CBspLoopInitRenderedMatGroup64_user(_this, CBspLoopInitRenderedMatGroup64_next);
         };
-        void CBspMakeEdgeNormal65_wrapper(struct CBsp* _this)
+        static void CBspMakeEdgeNormal65_wrapper(struct CBsp* _this)
         {
            CBspMakeEdgeNormal65_user(_this, CBspMakeEdgeNormal65_next);
         };
-        void CBspOnlyStoreCollisionStructure66_wrapper(struct CBsp* _this, struct _BSP_READ_M_GROUP* arg_0, char** arg_1, int16_t** arg_2, float** arg_3, uint32_t* arg_4, struct _BSP_READ_FACE* arg_5, uint32_t* arg_6)
+        static void CBspOnlyStoreCollisionStructure66_wrapper(struct CBsp* _this, struct _BSP_READ_M_GROUP* arg_0, char** arg_1, int16_t** arg_2, float** arg_3, uint32_t* arg_4, struct _BSP_READ_FACE* arg_5, uint32_t* arg_6)
         {
            CBspOnlyStoreCollisionStructure66_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, arg_6, CBspOnlyStoreCollisionStructure66_next);
         };
-        void CBspPrepareAnimation67_wrapper(struct CBsp* _this)
+        static void CBspPrepareAnimation67_wrapper(struct CBsp* _this)
         {
            CBspPrepareAnimation67_user(_this, CBspPrepareAnimation67_next);
         };
-        void CBspPrepareShadowRender68_wrapper(struct CBsp* _this, float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
+        static void CBspPrepareShadowRender68_wrapper(struct CBsp* _this, float* arg_0, void* arg_1, float arg_2, uint32_t arg_3, float arg_4, float arg_5)
         {
            CBspPrepareShadowRender68_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CBspPrepareShadowRender68_next);
         };
-        void CBspReadDynamicDataExtBsp69_wrapper(struct CBsp* _this, FILE* File)
+        static void CBspReadDynamicDataExtBsp69_wrapper(struct CBsp* _this, FILE* File)
         {
            CBspReadDynamicDataExtBsp69_user(_this, File, CBspReadDynamicDataExtBsp69_next);
         };
-        void CBspReadDynamicDataFillVertexBuffer70_wrapper(struct CBsp* _this, FILE* File)
+        static void CBspReadDynamicDataFillVertexBuffer70_wrapper(struct CBsp* _this, FILE* File)
         {
            CBspReadDynamicDataFillVertexBuffer70_user(_this, File, CBspReadDynamicDataFillVertexBuffer70_next);
         };
-        void CBspReadyBspRender71_wrapper(struct CBsp* _this, float* arg_0)
+        static void CBspReadyBspRender71_wrapper(struct CBsp* _this, float* arg_0)
         {
            CBspReadyBspRender71_user(_this, arg_0, CBspReadyBspRender71_next);
         };
-        void CBspReleaseBsp72_wrapper(struct CBsp* _this)
+        static void CBspReleaseBsp72_wrapper(struct CBsp* _this)
         {
            CBspReleaseBsp72_user(_this, CBspReleaseBsp72_next);
         };
-        void CBspReleaseEntities73_wrapper(struct CBsp* _this)
+        static void CBspReleaseEntities73_wrapper(struct CBsp* _this)
         {
            CBspReleaseEntities73_user(_this, CBspReleaseEntities73_next);
         };
-        void CBspReleaseEnvironment74_wrapper(struct CBsp* _this)
+        static void CBspReleaseEnvironment74_wrapper(struct CBsp* _this)
         {
            CBspReleaseEnvironment74_user(_this, CBspReleaseEnvironment74_next);
         };
-        void CBspReleaseSoundEntities75_wrapper(struct CBsp* _this)
+        static void CBspReleaseSoundEntities75_wrapper(struct CBsp* _this)
         {
            CBspReleaseSoundEntities75_user(_this, CBspReleaseSoundEntities75_next);
         };
-        void CBspRenderCollisionLeaf76_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspRenderCollisionLeaf76_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspRenderCollisionLeaf76_user(_this, arg_0, CBspRenderCollisionLeaf76_next);
         };
-        void CBspRenderEnvironment77_wrapper(struct CBsp* _this)
+        static void CBspRenderEnvironment77_wrapper(struct CBsp* _this)
         {
            CBspRenderEnvironment77_user(_this, CBspRenderEnvironment77_next);
         };
-        void CBspRenderIndepentMatGroup78_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static void CBspRenderIndepentMatGroup78_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            CBspRenderIndepentMatGroup78_user(_this, arg_0, CBspRenderIndepentMatGroup78_next);
         };
-        void CBspRenderLeaf79_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspRenderLeaf79_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspRenderLeaf79_user(_this, arg_0, CBspRenderLeaf79_next);
         };
-        void CBspRenderMatGroup80_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static void CBspRenderMatGroup80_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            CBspRenderMatGroup80_user(_this, arg_0, CBspRenderMatGroup80_next);
         };
-        void CBspRenderOneEntityRender81_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static void CBspRenderOneEntityRender81_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            CBspRenderOneEntityRender81_user(_this, arg_0, CBspRenderOneEntityRender81_next);
         };
-        void CBspRenderReflectionMatGroup82_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static void CBspRenderReflectionMatGroup82_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            CBspRenderReflectionMatGroup82_user(_this, arg_0, CBspRenderReflectionMatGroup82_next);
         };
-        void CBspRenderShadowMatGroup83_wrapper(struct CBsp* _this, uint16_t arg_0)
+        static void CBspRenderShadowMatGroup83_wrapper(struct CBsp* _this, uint16_t arg_0)
         {
            CBspRenderShadowMatGroup83_user(_this, arg_0, CBspRenderShadowMatGroup83_next);
         };
-        void CBspSaveExtBsp84_wrapper(struct CBsp* _this, char* arg_0, struct _ADD_BSP_SAVE* arg_1)
+        static void CBspSaveExtBsp84_wrapper(struct CBsp* _this, char* arg_0, struct _ADD_BSP_SAVE* arg_1)
         {
            CBspSaveExtBsp84_user(_this, arg_0, arg_1, CBspSaveExtBsp84_next);
         };
-        void CBspSearchNode85_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspSearchNode85_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspSearchNode85_user(_this, arg_0, CBspSearchNode85_next);
         };
-        int64_t CBspSetAllAnimationState86_wrapper(struct CBsp* _this, uint32_t arg_0)
+        static int64_t CBspSetAllAnimationState86_wrapper(struct CBsp* _this, uint32_t arg_0)
         {
            return CBspSetAllAnimationState86_user(_this, arg_0, CBspSetAllAnimationState86_next);
         };
-        void CBspSetCFNormal87_wrapper(struct CBsp* _this)
+        static void CBspSetCFNormal87_wrapper(struct CBsp* _this)
         {
            CBspSetCFNormal87_user(_this, CBspSetCFNormal87_next);
         };
-        int64_t CBspSetEventAnimationState88_wrapper(struct CBsp* _this, uint16_t arg_0, uint32_t arg_1)
+        static int64_t CBspSetEventAnimationState88_wrapper(struct CBsp* _this, uint16_t arg_0, uint32_t arg_1)
         {
            return CBspSetEventAnimationState88_user(_this, arg_0, arg_1, CBspSetEventAnimationState88_next);
         };
-        void CBspSetIsLoaded89_wrapper(struct CBsp* _this, int arg_0)
+        static void CBspSetIsLoaded89_wrapper(struct CBsp* _this, int arg_0)
         {
            CBspSetIsLoaded89_user(_this, arg_0, CBspSetIsLoaded89_next);
         };
-        void CBspSubLeafList90_wrapper(struct CBsp* _this, float arg_0, struct _BSP_NODE* arg_1, float* arg_2, float* arg_3, int16_t* arg_4, int* arg_5)
+        static void CBspSubLeafList90_wrapper(struct CBsp* _this, float arg_0, struct _BSP_NODE* arg_1, float* arg_2, float* arg_3, int16_t* arg_4, int* arg_5)
         {
            CBspSubLeafList90_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, arg_5, CBspSubLeafList90_next);
         };
-        void CBspSubLeafListFromBBox91_wrapper(struct CBsp* _this, float arg_0, struct _BSP_NODE* arg_1, float** arg_2, int16_t* arg_3, int* arg_4)
+        static void CBspSubLeafListFromBBox91_wrapper(struct CBsp* _this, float arg_0, struct _BSP_NODE* arg_1, float** arg_2, int16_t* arg_3, int* arg_4)
         {
            CBspSubLeafListFromBBox91_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspSubLeafListFromBBox91_next);
         };
-        void CBspWalkLeaf92_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspWalkLeaf92_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspWalkLeaf92_user(_this, arg_0, CBspWalkLeaf92_next);
         };
-        void CBspWalkNode93_wrapper(struct CBsp* _this, int16_t arg_0)
+        static void CBspWalkNode93_wrapper(struct CBsp* _this, int16_t arg_0)
         {
            CBspWalkNode93_user(_this, arg_0, CBspWalkNode93_next);
         };
-        void CBspWalkNodeForLeafList94_wrapper(struct CBsp* _this, int8_t arg_0, int16_t arg_1, int16_t arg_2, float* arg_3, float arg_4)
+        static void CBspWalkNodeForLeafList94_wrapper(struct CBsp* _this, int8_t arg_0, int16_t arg_1, int16_t arg_2, float* arg_3, float arg_4)
         {
            CBspWalkNodeForLeafList94_user(_this, arg_0, arg_1, arg_2, arg_3, arg_4, CBspWalkNodeForLeafList94_next);
         };
-        int64_t CBspdtor_CBsp96_wrapper(struct CBsp* _this)
+        static int64_t CBspdtor_CBsp96_wrapper(struct CBsp* _this)
         {
            return CBspdtor_CBsp96_user(_this, CBspdtor_CBsp96_next);
         };
         
-        hook_record CBsp_functions[] = {
+        static hook_record CBsp_functions[] = {
         {   (LPVOID)0x1404f62a0L,
             (LPVOID *)&CBspctor_CBsp1_user,
             (LPVOID *)&CBspctor_CBsp1_next,
@@ -1059,5 +1059,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

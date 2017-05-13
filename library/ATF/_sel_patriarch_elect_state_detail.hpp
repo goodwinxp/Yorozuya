@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_sel_patriarch_elect_statector__sel_patriarch_elect_state2_ptr _sel_patriarch_elect_statector__sel_patriarch_elect_state2_next(nullptr);
-        info::_sel_patriarch_elect_statector__sel_patriarch_elect_state2_clbk _sel_patriarch_elect_statector__sel_patriarch_elect_state2_user(nullptr);
+        static info::_sel_patriarch_elect_statector__sel_patriarch_elect_state2_ptr _sel_patriarch_elect_statector__sel_patriarch_elect_state2_next(nullptr);
+        static info::_sel_patriarch_elect_statector__sel_patriarch_elect_state2_clbk _sel_patriarch_elect_statector__sel_patriarch_elect_state2_user(nullptr);
         
-        void _sel_patriarch_elect_statector__sel_patriarch_elect_state2_wrapper(struct _sel_patriarch_elect_state* _this)
+        static void _sel_patriarch_elect_statector__sel_patriarch_elect_state2_wrapper(struct _sel_patriarch_elect_state* _this)
         {
            _sel_patriarch_elect_statector__sel_patriarch_elect_state2_user(_this, _sel_patriarch_elect_statector__sel_patriarch_elect_state2_next);
         };
         
-        hook_record _sel_patriarch_elect_state_functions[] = {
+        static hook_record _sel_patriarch_elect_state_functions[] = {
         {   (LPVOID)0x1402bd610L,
             (LPVOID *)&_sel_patriarch_elect_statector__sel_patriarch_elect_state2_user,
             (LPVOID *)&_sel_patriarch_elect_statector__sel_patriarch_elect_state2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

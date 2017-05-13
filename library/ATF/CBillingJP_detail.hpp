@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBillingJPAlive2_ptr CBillingJPAlive2_next(nullptr);
-        info::CBillingJPAlive2_clbk CBillingJPAlive2_user(nullptr);
-        info::CBillingJPctor_CBillingJP4_ptr CBillingJPctor_CBillingJP4_next(nullptr);
-        info::CBillingJPctor_CBillingJP4_clbk CBillingJPctor_CBillingJP4_user(nullptr);
-        info::CBillingJPLogin6_ptr CBillingJPLogin6_next(nullptr);
-        info::CBillingJPLogin6_clbk CBillingJPLogin6_user(nullptr);
-        info::CBillingJPLogout8_ptr CBillingJPLogout8_next(nullptr);
-        info::CBillingJPLogout8_clbk CBillingJPLogout8_user(nullptr);
-        info::CBillingJPSendMsg_Login10_ptr CBillingJPSendMsg_Login10_next(nullptr);
-        info::CBillingJPSendMsg_Login10_clbk CBillingJPSendMsg_Login10_user(nullptr);
-        info::CBillingJPdtor_CBillingJP15_ptr CBillingJPdtor_CBillingJP15_next(nullptr);
-        info::CBillingJPdtor_CBillingJP15_clbk CBillingJPdtor_CBillingJP15_user(nullptr);
+        static info::CBillingJPAlive2_ptr CBillingJPAlive2_next(nullptr);
+        static info::CBillingJPAlive2_clbk CBillingJPAlive2_user(nullptr);
+        static info::CBillingJPctor_CBillingJP4_ptr CBillingJPctor_CBillingJP4_next(nullptr);
+        static info::CBillingJPctor_CBillingJP4_clbk CBillingJPctor_CBillingJP4_user(nullptr);
+        static info::CBillingJPLogin6_ptr CBillingJPLogin6_next(nullptr);
+        static info::CBillingJPLogin6_clbk CBillingJPLogin6_user(nullptr);
+        static info::CBillingJPLogout8_ptr CBillingJPLogout8_next(nullptr);
+        static info::CBillingJPLogout8_clbk CBillingJPLogout8_user(nullptr);
+        static info::CBillingJPSendMsg_Login10_ptr CBillingJPSendMsg_Login10_next(nullptr);
+        static info::CBillingJPSendMsg_Login10_clbk CBillingJPSendMsg_Login10_user(nullptr);
+        static info::CBillingJPdtor_CBillingJP15_ptr CBillingJPdtor_CBillingJP15_next(nullptr);
+        static info::CBillingJPdtor_CBillingJP15_clbk CBillingJPdtor_CBillingJP15_user(nullptr);
         
-        void CBillingJPAlive2_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
+        static void CBillingJPAlive2_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
         {
            CBillingJPAlive2_user(_this, pUserDB, CBillingJPAlive2_next);
         };
-        void CBillingJPctor_CBillingJP4_wrapper(struct CBillingJP* _this)
+        static void CBillingJPctor_CBillingJP4_wrapper(struct CBillingJP* _this)
         {
            CBillingJPctor_CBillingJP4_user(_this, CBillingJPctor_CBillingJP4_next);
         };
-        void CBillingJPLogin6_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
+        static void CBillingJPLogin6_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
         {
            CBillingJPLogin6_user(_this, pUserDB, CBillingJPLogin6_next);
         };
-        void CBillingJPLogout8_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
+        static void CBillingJPLogout8_wrapper(struct CBillingJP* _this, struct CUserDB* pUserDB)
         {
            CBillingJPLogout8_user(_this, pUserDB, CBillingJPLogout8_next);
         };
-        bool CBillingJPSendMsg_Login10_wrapper(struct CBillingJP* _this, char* szID, char* szIP, char* szCMS, int16_t iType, struct _SYSTEMTIME* pstEndDate, int lRemainTime)
+        static bool CBillingJPSendMsg_Login10_wrapper(struct CBillingJP* _this, char* szID, char* szIP, char* szCMS, int16_t iType, struct _SYSTEMTIME* pstEndDate, int lRemainTime)
         {
            return CBillingJPSendMsg_Login10_user(_this, szID, szIP, szCMS, iType, pstEndDate, lRemainTime, CBillingJPSendMsg_Login10_next);
         };
-        void CBillingJPdtor_CBillingJP15_wrapper(struct CBillingJP* _this)
+        static void CBillingJPdtor_CBillingJP15_wrapper(struct CBillingJP* _this)
         {
            CBillingJPdtor_CBillingJP15_user(_this, CBillingJPdtor_CBillingJP15_next);
         };
         
-        hook_record CBillingJP_functions[] = {
+        static hook_record CBillingJP_functions[] = {
         {   (LPVOID)0x14028ea00L,
             (LPVOID *)&CBillingJPAlive2_user,
             (LPVOID *)&CBillingJPAlive2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

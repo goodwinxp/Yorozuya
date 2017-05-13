@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::RFEventBaseDoEvent2_ptr RFEventBaseDoEvent2_next(nullptr);
-        info::RFEventBaseDoEvent2_clbk RFEventBaseDoEvent2_user(nullptr);
-        info::RFEventBaseGetPlayerState4_ptr RFEventBaseGetPlayerState4_next(nullptr);
-        info::RFEventBaseGetPlayerState4_clbk RFEventBaseGetPlayerState4_user(nullptr);
-        info::RFEventBaseInitialzie6_ptr RFEventBaseInitialzie6_next(nullptr);
-        info::RFEventBaseInitialzie6_clbk RFEventBaseInitialzie6_user(nullptr);
-        info::RFEventBaseIsDbUpdate8_ptr RFEventBaseIsDbUpdate8_next(nullptr);
-        info::RFEventBaseIsDbUpdate8_clbk RFEventBaseIsDbUpdate8_user(nullptr);
-        info::RFEventBaseIsEnable10_ptr RFEventBaseIsEnable10_next(nullptr);
-        info::RFEventBaseIsEnable10_clbk RFEventBaseIsEnable10_user(nullptr);
-        info::RFEventBaseLoop12_ptr RFEventBaseLoop12_next(nullptr);
-        info::RFEventBaseLoop12_clbk RFEventBaseLoop12_user(nullptr);
-        info::RFEventBasector_RFEventBase14_ptr RFEventBasector_RFEventBase14_next(nullptr);
-        info::RFEventBasector_RFEventBase14_clbk RFEventBasector_RFEventBase14_user(nullptr);
-        info::RFEventBaseSetEvent16_ptr RFEventBaseSetEvent16_next(nullptr);
-        info::RFEventBaseSetEvent16_clbk RFEventBaseSetEvent16_user(nullptr);
-        info::RFEventBaseSetPlayerState18_ptr RFEventBaseSetPlayerState18_next(nullptr);
-        info::RFEventBaseSetPlayerState18_clbk RFEventBaseSetPlayerState18_user(nullptr);
-        info::RFEventBasedtor_RFEventBase23_ptr RFEventBasedtor_RFEventBase23_next(nullptr);
-        info::RFEventBasedtor_RFEventBase23_clbk RFEventBasedtor_RFEventBase23_user(nullptr);
+        static info::RFEventBaseDoEvent2_ptr RFEventBaseDoEvent2_next(nullptr);
+        static info::RFEventBaseDoEvent2_clbk RFEventBaseDoEvent2_user(nullptr);
+        static info::RFEventBaseGetPlayerState4_ptr RFEventBaseGetPlayerState4_next(nullptr);
+        static info::RFEventBaseGetPlayerState4_clbk RFEventBaseGetPlayerState4_user(nullptr);
+        static info::RFEventBaseInitialzie6_ptr RFEventBaseInitialzie6_next(nullptr);
+        static info::RFEventBaseInitialzie6_clbk RFEventBaseInitialzie6_user(nullptr);
+        static info::RFEventBaseIsDbUpdate8_ptr RFEventBaseIsDbUpdate8_next(nullptr);
+        static info::RFEventBaseIsDbUpdate8_clbk RFEventBaseIsDbUpdate8_user(nullptr);
+        static info::RFEventBaseIsEnable10_ptr RFEventBaseIsEnable10_next(nullptr);
+        static info::RFEventBaseIsEnable10_clbk RFEventBaseIsEnable10_user(nullptr);
+        static info::RFEventBaseLoop12_ptr RFEventBaseLoop12_next(nullptr);
+        static info::RFEventBaseLoop12_clbk RFEventBaseLoop12_user(nullptr);
+        static info::RFEventBasector_RFEventBase14_ptr RFEventBasector_RFEventBase14_next(nullptr);
+        static info::RFEventBasector_RFEventBase14_clbk RFEventBasector_RFEventBase14_user(nullptr);
+        static info::RFEventBaseSetEvent16_ptr RFEventBaseSetEvent16_next(nullptr);
+        static info::RFEventBaseSetEvent16_clbk RFEventBaseSetEvent16_user(nullptr);
+        static info::RFEventBaseSetPlayerState18_ptr RFEventBaseSetPlayerState18_next(nullptr);
+        static info::RFEventBaseSetPlayerState18_clbk RFEventBaseSetPlayerState18_user(nullptr);
+        static info::RFEventBasedtor_RFEventBase23_ptr RFEventBasedtor_RFEventBase23_next(nullptr);
+        static info::RFEventBasedtor_RFEventBase23_clbk RFEventBasedtor_RFEventBase23_user(nullptr);
         
-        int RFEventBaseDoEvent2_wrapper(struct RFEventBase* _this, struct CPlayer* pOne)
+        static int RFEventBaseDoEvent2_wrapper(struct RFEventBase* _this, struct CPlayer* pOne)
         {
            return RFEventBaseDoEvent2_user(_this, pOne, RFEventBaseDoEvent2_next);
         };
-        char* RFEventBaseGetPlayerState4_wrapper(struct RFEventBase* _this, unsigned int nIdx, unsigned int nAvator)
+        static char* RFEventBaseGetPlayerState4_wrapper(struct RFEventBase* _this, unsigned int nIdx, unsigned int nAvator)
         {
            return RFEventBaseGetPlayerState4_user(_this, nIdx, nAvator, RFEventBaseGetPlayerState4_next);
         };
-        bool RFEventBaseInitialzie6_wrapper(struct RFEventBase* _this)
+        static bool RFEventBaseInitialzie6_wrapper(struct RFEventBase* _this)
         {
            return RFEventBaseInitialzie6_user(_this, RFEventBaseInitialzie6_next);
         };
-        bool RFEventBaseIsDbUpdate8_wrapper(struct RFEventBase* _this, unsigned int nIdx)
+        static bool RFEventBaseIsDbUpdate8_wrapper(struct RFEventBase* _this, unsigned int nIdx)
         {
            return RFEventBaseIsDbUpdate8_user(_this, nIdx, RFEventBaseIsDbUpdate8_next);
         };
-        bool RFEventBaseIsEnable10_wrapper(struct RFEventBase* _this)
+        static bool RFEventBaseIsEnable10_wrapper(struct RFEventBase* _this)
         {
            return RFEventBaseIsEnable10_user(_this, RFEventBaseIsEnable10_next);
         };
-        void RFEventBaseLoop12_wrapper(struct RFEventBase* _this)
+        static void RFEventBaseLoop12_wrapper(struct RFEventBase* _this)
         {
            RFEventBaseLoop12_user(_this, RFEventBaseLoop12_next);
         };
-        void RFEventBasector_RFEventBase14_wrapper(struct RFEventBase* _this)
+        static void RFEventBasector_RFEventBase14_wrapper(struct RFEventBase* _this)
         {
            RFEventBasector_RFEventBase14_user(_this, RFEventBasector_RFEventBase14_next);
         };
-        bool RFEventBaseSetEvent16_wrapper(struct RFEventBase* _this, char* p, int size, bool bInit)
+        static bool RFEventBaseSetEvent16_wrapper(struct RFEventBase* _this, char* p, int size, bool bInit)
         {
            return RFEventBaseSetEvent16_user(_this, p, size, bInit, RFEventBaseSetEvent16_next);
         };
-        bool RFEventBaseSetPlayerState18_wrapper(struct RFEventBase* _this, void* p, int size)
+        static bool RFEventBaseSetPlayerState18_wrapper(struct RFEventBase* _this, void* p, int size)
         {
            return RFEventBaseSetPlayerState18_user(_this, p, size, RFEventBaseSetPlayerState18_next);
         };
-        void RFEventBasedtor_RFEventBase23_wrapper(struct RFEventBase* _this)
+        static void RFEventBasedtor_RFEventBase23_wrapper(struct RFEventBase* _this)
         {
            RFEventBasedtor_RFEventBase23_user(_this, RFEventBasedtor_RFEventBase23_next);
         };
         
-        hook_record RFEventBase_functions[] = {
+        static hook_record RFEventBase_functions[] = {
         {   (LPVOID)0x1403294d0L,
             (LPVOID *)&RFEventBaseDoEvent2_user,
             (LPVOID *)&RFEventBaseDoEvent2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

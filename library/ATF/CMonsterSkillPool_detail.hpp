@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterSkillPoolctor_CMonsterSkillPool2_ptr CMonsterSkillPoolctor_CMonsterSkillPool2_next(nullptr);
-        info::CMonsterSkillPoolctor_CMonsterSkillPool2_clbk CMonsterSkillPoolctor_CMonsterSkillPool2_user(nullptr);
-        info::CMonsterSkillPoolGetMonSkill4_ptr CMonsterSkillPoolGetMonSkill4_next(nullptr);
-        info::CMonsterSkillPoolGetMonSkill4_clbk CMonsterSkillPoolGetMonSkill4_user(nullptr);
-        info::CMonsterSkillPoolGetMonSkillKind6_ptr CMonsterSkillPoolGetMonSkillKind6_next(nullptr);
-        info::CMonsterSkillPoolGetMonSkillKind6_clbk CMonsterSkillPoolGetMonSkillKind6_user(nullptr);
-        info::CMonsterSkillPoolInit8_ptr CMonsterSkillPoolInit8_next(nullptr);
-        info::CMonsterSkillPoolInit8_clbk CMonsterSkillPoolInit8_user(nullptr);
-        info::CMonsterSkillPoolInsertSkill10_ptr CMonsterSkillPoolInsertSkill10_next(nullptr);
-        info::CMonsterSkillPoolInsertSkill10_clbk CMonsterSkillPoolInsertSkill10_user(nullptr);
-        info::CMonsterSkillPoolSet12_ptr CMonsterSkillPoolSet12_next(nullptr);
-        info::CMonsterSkillPoolSet12_clbk CMonsterSkillPoolSet12_user(nullptr);
-        info::CMonsterSkillPooldtor_CMonsterSkillPool14_ptr CMonsterSkillPooldtor_CMonsterSkillPool14_next(nullptr);
-        info::CMonsterSkillPooldtor_CMonsterSkillPool14_clbk CMonsterSkillPooldtor_CMonsterSkillPool14_user(nullptr);
+        static info::CMonsterSkillPoolctor_CMonsterSkillPool2_ptr CMonsterSkillPoolctor_CMonsterSkillPool2_next(nullptr);
+        static info::CMonsterSkillPoolctor_CMonsterSkillPool2_clbk CMonsterSkillPoolctor_CMonsterSkillPool2_user(nullptr);
+        static info::CMonsterSkillPoolGetMonSkill4_ptr CMonsterSkillPoolGetMonSkill4_next(nullptr);
+        static info::CMonsterSkillPoolGetMonSkill4_clbk CMonsterSkillPoolGetMonSkill4_user(nullptr);
+        static info::CMonsterSkillPoolGetMonSkillKind6_ptr CMonsterSkillPoolGetMonSkillKind6_next(nullptr);
+        static info::CMonsterSkillPoolGetMonSkillKind6_clbk CMonsterSkillPoolGetMonSkillKind6_user(nullptr);
+        static info::CMonsterSkillPoolInit8_ptr CMonsterSkillPoolInit8_next(nullptr);
+        static info::CMonsterSkillPoolInit8_clbk CMonsterSkillPoolInit8_user(nullptr);
+        static info::CMonsterSkillPoolInsertSkill10_ptr CMonsterSkillPoolInsertSkill10_next(nullptr);
+        static info::CMonsterSkillPoolInsertSkill10_clbk CMonsterSkillPoolInsertSkill10_user(nullptr);
+        static info::CMonsterSkillPoolSet12_ptr CMonsterSkillPoolSet12_next(nullptr);
+        static info::CMonsterSkillPoolSet12_clbk CMonsterSkillPoolSet12_user(nullptr);
+        static info::CMonsterSkillPooldtor_CMonsterSkillPool14_ptr CMonsterSkillPooldtor_CMonsterSkillPool14_next(nullptr);
+        static info::CMonsterSkillPooldtor_CMonsterSkillPool14_clbk CMonsterSkillPooldtor_CMonsterSkillPool14_user(nullptr);
         
-        void CMonsterSkillPoolctor_CMonsterSkillPool2_wrapper(struct CMonsterSkillPool* _this)
+        static void CMonsterSkillPoolctor_CMonsterSkillPool2_wrapper(struct CMonsterSkillPool* _this)
         {
            CMonsterSkillPoolctor_CMonsterSkillPool2_user(_this, CMonsterSkillPoolctor_CMonsterSkillPool2_next);
         };
-        struct CMonsterSkill* CMonsterSkillPoolGetMonSkill4_wrapper(struct CMonsterSkillPool* _this, int nIndex)
+        static struct CMonsterSkill* CMonsterSkillPoolGetMonSkill4_wrapper(struct CMonsterSkillPool* _this, int nIndex)
         {
            return CMonsterSkillPoolGetMonSkill4_user(_this, nIndex, CMonsterSkillPoolGetMonSkill4_next);
         };
-        struct CMonsterSkill* CMonsterSkillPoolGetMonSkillKind6_wrapper(struct CMonsterSkillPool* _this, int nKind)
+        static struct CMonsterSkill* CMonsterSkillPoolGetMonSkillKind6_wrapper(struct CMonsterSkillPool* _this, int nKind)
         {
            return CMonsterSkillPoolGetMonSkillKind6_user(_this, nKind, CMonsterSkillPoolGetMonSkillKind6_next);
         };
-        void CMonsterSkillPoolInit8_wrapper(struct CMonsterSkillPool* _this)
+        static void CMonsterSkillPoolInit8_wrapper(struct CMonsterSkillPool* _this)
         {
            CMonsterSkillPoolInit8_user(_this, CMonsterSkillPoolInit8_next);
         };
-        int CMonsterSkillPoolInsertSkill10_wrapper(struct CMonsterSkillPool* _this, struct CMonsterSkill* skill)
+        static int CMonsterSkillPoolInsertSkill10_wrapper(struct CMonsterSkillPool* _this, struct CMonsterSkill* skill)
         {
            return CMonsterSkillPoolInsertSkill10_user(_this, skill, CMonsterSkillPoolInsertSkill10_next);
         };
-        int CMonsterSkillPoolSet12_wrapper(struct CMonsterSkillPool* _this, struct CMonster* pMyMonster)
+        static int CMonsterSkillPoolSet12_wrapper(struct CMonsterSkillPool* _this, struct CMonster* pMyMonster)
         {
            return CMonsterSkillPoolSet12_user(_this, pMyMonster, CMonsterSkillPoolSet12_next);
         };
-        void CMonsterSkillPooldtor_CMonsterSkillPool14_wrapper(struct CMonsterSkillPool* _this)
+        static void CMonsterSkillPooldtor_CMonsterSkillPool14_wrapper(struct CMonsterSkillPool* _this)
         {
            CMonsterSkillPooldtor_CMonsterSkillPool14_user(_this, CMonsterSkillPooldtor_CMonsterSkillPool14_next);
         };
         
-        hook_record CMonsterSkillPool_functions[] = {
+        static hook_record CMonsterSkillPool_functions[] = {
         {   (LPVOID)0x14014b4b0L,
             (LPVOID *)&CMonsterSkillPoolctor_CMonsterSkillPool2_user,
             (LPVOID *)&CMonsterSkillPoolctor_CMonsterSkillPool2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

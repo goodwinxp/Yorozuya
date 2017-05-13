@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHackShieldExSystemctor_CHackShieldExSystem2_ptr CHackShieldExSystemctor_CHackShieldExSystem2_next(nullptr);
-        info::CHackShieldExSystemctor_CHackShieldExSystem2_clbk CHackShieldExSystemctor_CHackShieldExSystem2_user(nullptr);
-        info::CHackShieldExSystemGetParam4_ptr CHackShieldExSystemGetParam4_next(nullptr);
-        info::CHackShieldExSystemGetParam4_clbk CHackShieldExSystemGetParam4_user(nullptr);
-        info::CHackShieldExSystemIsActive6_ptr CHackShieldExSystemIsActive6_next(nullptr);
-        info::CHackShieldExSystemIsActive6_clbk CHackShieldExSystemIsActive6_user(nullptr);
-        info::CHackShieldExSystemIsInit8_ptr CHackShieldExSystemIsInit8_next(nullptr);
-        info::CHackShieldExSystemIsInit8_clbk CHackShieldExSystemIsInit8_user(nullptr);
-        info::CHackShieldExSystemOnCheckSession_FirstVerify10_ptr CHackShieldExSystemOnCheckSession_FirstVerify10_next(nullptr);
-        info::CHackShieldExSystemOnCheckSession_FirstVerify10_clbk CHackShieldExSystemOnCheckSession_FirstVerify10_user(nullptr);
-        info::CHackShieldExSystemOnConnectSession12_ptr CHackShieldExSystemOnConnectSession12_next(nullptr);
-        info::CHackShieldExSystemOnConnectSession12_clbk CHackShieldExSystemOnConnectSession12_user(nullptr);
-        info::CHackShieldExSystemOnDisConnectSession14_ptr CHackShieldExSystemOnDisConnectSession14_next(nullptr);
-        info::CHackShieldExSystemOnDisConnectSession14_clbk CHackShieldExSystemOnDisConnectSession14_user(nullptr);
-        info::CHackShieldExSystemOnLoop16_ptr CHackShieldExSystemOnLoop16_next(nullptr);
-        info::CHackShieldExSystemOnLoop16_clbk CHackShieldExSystemOnLoop16_user(nullptr);
-        info::CHackShieldExSystemOnLoopSession18_ptr CHackShieldExSystemOnLoopSession18_next(nullptr);
-        info::CHackShieldExSystemOnLoopSession18_clbk CHackShieldExSystemOnLoopSession18_user(nullptr);
-        info::CHackShieldExSystemRecvClientLine20_ptr CHackShieldExSystemRecvClientLine20_next(nullptr);
-        info::CHackShieldExSystemRecvClientLine20_clbk CHackShieldExSystemRecvClientLine20_user(nullptr);
-        info::CHackShieldExSystemdtor_CHackShieldExSystem25_ptr CHackShieldExSystemdtor_CHackShieldExSystem25_next(nullptr);
-        info::CHackShieldExSystemdtor_CHackShieldExSystem25_clbk CHackShieldExSystemdtor_CHackShieldExSystem25_user(nullptr);
+        static info::CHackShieldExSystemctor_CHackShieldExSystem2_ptr CHackShieldExSystemctor_CHackShieldExSystem2_next(nullptr);
+        static info::CHackShieldExSystemctor_CHackShieldExSystem2_clbk CHackShieldExSystemctor_CHackShieldExSystem2_user(nullptr);
+        static info::CHackShieldExSystemGetParam4_ptr CHackShieldExSystemGetParam4_next(nullptr);
+        static info::CHackShieldExSystemGetParam4_clbk CHackShieldExSystemGetParam4_user(nullptr);
+        static info::CHackShieldExSystemIsActive6_ptr CHackShieldExSystemIsActive6_next(nullptr);
+        static info::CHackShieldExSystemIsActive6_clbk CHackShieldExSystemIsActive6_user(nullptr);
+        static info::CHackShieldExSystemIsInit8_ptr CHackShieldExSystemIsInit8_next(nullptr);
+        static info::CHackShieldExSystemIsInit8_clbk CHackShieldExSystemIsInit8_user(nullptr);
+        static info::CHackShieldExSystemOnCheckSession_FirstVerify10_ptr CHackShieldExSystemOnCheckSession_FirstVerify10_next(nullptr);
+        static info::CHackShieldExSystemOnCheckSession_FirstVerify10_clbk CHackShieldExSystemOnCheckSession_FirstVerify10_user(nullptr);
+        static info::CHackShieldExSystemOnConnectSession12_ptr CHackShieldExSystemOnConnectSession12_next(nullptr);
+        static info::CHackShieldExSystemOnConnectSession12_clbk CHackShieldExSystemOnConnectSession12_user(nullptr);
+        static info::CHackShieldExSystemOnDisConnectSession14_ptr CHackShieldExSystemOnDisConnectSession14_next(nullptr);
+        static info::CHackShieldExSystemOnDisConnectSession14_clbk CHackShieldExSystemOnDisConnectSession14_user(nullptr);
+        static info::CHackShieldExSystemOnLoop16_ptr CHackShieldExSystemOnLoop16_next(nullptr);
+        static info::CHackShieldExSystemOnLoop16_clbk CHackShieldExSystemOnLoop16_user(nullptr);
+        static info::CHackShieldExSystemOnLoopSession18_ptr CHackShieldExSystemOnLoopSession18_next(nullptr);
+        static info::CHackShieldExSystemOnLoopSession18_clbk CHackShieldExSystemOnLoopSession18_user(nullptr);
+        static info::CHackShieldExSystemRecvClientLine20_ptr CHackShieldExSystemRecvClientLine20_next(nullptr);
+        static info::CHackShieldExSystemRecvClientLine20_clbk CHackShieldExSystemRecvClientLine20_user(nullptr);
+        static info::CHackShieldExSystemdtor_CHackShieldExSystem25_ptr CHackShieldExSystemdtor_CHackShieldExSystem25_next(nullptr);
+        static info::CHackShieldExSystemdtor_CHackShieldExSystem25_clbk CHackShieldExSystemdtor_CHackShieldExSystem25_user(nullptr);
         
-        void CHackShieldExSystemctor_CHackShieldExSystem2_wrapper(struct CHackShieldExSystem* _this)
+        static void CHackShieldExSystemctor_CHackShieldExSystem2_wrapper(struct CHackShieldExSystem* _this)
         {
            CHackShieldExSystemctor_CHackShieldExSystem2_user(_this, CHackShieldExSystemctor_CHackShieldExSystem2_next);
         };
-        struct BASE_HACKSHEILD_PARAM* CHackShieldExSystemGetParam4_wrapper(struct CHackShieldExSystem* _this, unsigned int n)
+        static struct BASE_HACKSHEILD_PARAM* CHackShieldExSystemGetParam4_wrapper(struct CHackShieldExSystem* _this, unsigned int n)
         {
            return CHackShieldExSystemGetParam4_user(_this, n, CHackShieldExSystemGetParam4_next);
         };
-        bool CHackShieldExSystemIsActive6_wrapper(struct CHackShieldExSystem* _this)
+        static bool CHackShieldExSystemIsActive6_wrapper(struct CHackShieldExSystem* _this)
         {
            return CHackShieldExSystemIsActive6_user(_this, CHackShieldExSystemIsActive6_next);
         };
-        bool CHackShieldExSystemIsInit8_wrapper(struct CHackShieldExSystem* _this)
+        static bool CHackShieldExSystemIsInit8_wrapper(struct CHackShieldExSystem* _this)
         {
            return CHackShieldExSystemIsInit8_user(_this, CHackShieldExSystemIsInit8_next);
         };
-        bool CHackShieldExSystemOnCheckSession_FirstVerify10_wrapper(struct CHackShieldExSystem* _this, int n)
+        static bool CHackShieldExSystemOnCheckSession_FirstVerify10_wrapper(struct CHackShieldExSystem* _this, int n)
         {
            return CHackShieldExSystemOnCheckSession_FirstVerify10_user(_this, n, CHackShieldExSystemOnCheckSession_FirstVerify10_next);
         };
-        void CHackShieldExSystemOnConnectSession12_wrapper(struct CHackShieldExSystem* _this, int n)
+        static void CHackShieldExSystemOnConnectSession12_wrapper(struct CHackShieldExSystem* _this, int n)
         {
            CHackShieldExSystemOnConnectSession12_user(_this, n, CHackShieldExSystemOnConnectSession12_next);
         };
-        void CHackShieldExSystemOnDisConnectSession14_wrapper(struct CHackShieldExSystem* _this, int n)
+        static void CHackShieldExSystemOnDisConnectSession14_wrapper(struct CHackShieldExSystem* _this, int n)
         {
            CHackShieldExSystemOnDisConnectSession14_user(_this, n, CHackShieldExSystemOnDisConnectSession14_next);
         };
-        void CHackShieldExSystemOnLoop16_wrapper(struct CHackShieldExSystem* _this)
+        static void CHackShieldExSystemOnLoop16_wrapper(struct CHackShieldExSystem* _this)
         {
            CHackShieldExSystemOnLoop16_user(_this, CHackShieldExSystemOnLoop16_next);
         };
-        void CHackShieldExSystemOnLoopSession18_wrapper(struct CHackShieldExSystem* _this, int n)
+        static void CHackShieldExSystemOnLoopSession18_wrapper(struct CHackShieldExSystem* _this, int n)
         {
            CHackShieldExSystemOnLoopSession18_user(_this, n, CHackShieldExSystemOnLoopSession18_next);
         };
-        bool CHackShieldExSystemRecvClientLine20_wrapper(struct CHackShieldExSystem* _this, int n, struct _MSG_HEADER* pHeader, char* pMsg)
+        static bool CHackShieldExSystemRecvClientLine20_wrapper(struct CHackShieldExSystem* _this, int n, struct _MSG_HEADER* pHeader, char* pMsg)
         {
            return CHackShieldExSystemRecvClientLine20_user(_this, n, pHeader, pMsg, CHackShieldExSystemRecvClientLine20_next);
         };
-        void CHackShieldExSystemdtor_CHackShieldExSystem25_wrapper(struct CHackShieldExSystem* _this)
+        static void CHackShieldExSystemdtor_CHackShieldExSystem25_wrapper(struct CHackShieldExSystem* _this)
         {
            CHackShieldExSystemdtor_CHackShieldExSystem25_user(_this, CHackShieldExSystemdtor_CHackShieldExSystem25_next);
         };
         
-        hook_record CHackShieldExSystem_functions[] = {
+        static hook_record CHackShieldExSystem_functions[] = {
         {   (LPVOID)0x140416cb0L,
             (LPVOID *)&CHackShieldExSystemctor_CHackShieldExSystem2_user,
             (LPVOID *)&CHackShieldExSystemctor_CHackShieldExSystem2_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

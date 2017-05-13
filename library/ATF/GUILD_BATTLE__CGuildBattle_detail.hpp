@@ -10,27 +10,27 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CGuildBattlector_CGuildBattle2_ptr GUILD_BATTLE__CGuildBattlector_CGuildBattle2_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattlector_CGuildBattle2_clbk GUILD_BATTLE__CGuildBattlector_CGuildBattle2_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattleGetObjType4_ptr GUILD_BATTLE__CGuildBattleGetObjType4_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattleGetObjType4_clbk GUILD_BATTLE__CGuildBattleGetObjType4_user(nullptr);
-            info::GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_ptr GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_next(nullptr);
-            info::GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_clbk GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattlector_CGuildBattle2_ptr GUILD_BATTLE__CGuildBattlector_CGuildBattle2_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattlector_CGuildBattle2_clbk GUILD_BATTLE__CGuildBattlector_CGuildBattle2_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleGetObjType4_ptr GUILD_BATTLE__CGuildBattleGetObjType4_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattleGetObjType4_clbk GUILD_BATTLE__CGuildBattleGetObjType4_user(nullptr);
+            static info::GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_ptr GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_next(nullptr);
+            static info::GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_clbk GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_user(nullptr);
             
-            void GUILD_BATTLE__CGuildBattlector_CGuildBattle2_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
+            static void GUILD_BATTLE__CGuildBattlector_CGuildBattle2_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
             {
                GUILD_BATTLE__CGuildBattlector_CGuildBattle2_user(_this, GUILD_BATTLE__CGuildBattlector_CGuildBattle2_next);
             };
-            int GUILD_BATTLE__CGuildBattleGetObjType4_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
+            static int GUILD_BATTLE__CGuildBattleGetObjType4_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
             {
                return GUILD_BATTLE__CGuildBattleGetObjType4_user(_this, GUILD_BATTLE__CGuildBattleGetObjType4_next);
             };
-            void GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
+            static void GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_wrapper(struct GUILD_BATTLE::CGuildBattle* _this)
             {
                GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_user(_this, GUILD_BATTLE__CGuildBattledtor_CGuildBattle6_next);
             };
             
-            hook_record CGuildBattle_functions[] = {
+            static hook_record CGuildBattle_functions[] = {
             {   (LPVOID)0x1403eb010L,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattlector_CGuildBattle2_user,
                 (LPVOID *)&GUILD_BATTLE__CGuildBattlector_CGuildBattle2_next,
@@ -49,6 +49,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE

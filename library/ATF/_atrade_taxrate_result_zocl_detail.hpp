@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_atrade_taxrate_result_zoclsize2_ptr _atrade_taxrate_result_zoclsize2_next(nullptr);
-        info::_atrade_taxrate_result_zoclsize2_clbk _atrade_taxrate_result_zoclsize2_user(nullptr);
+        static info::_atrade_taxrate_result_zoclsize2_ptr _atrade_taxrate_result_zoclsize2_next(nullptr);
+        static info::_atrade_taxrate_result_zoclsize2_clbk _atrade_taxrate_result_zoclsize2_user(nullptr);
         
-        int _atrade_taxrate_result_zoclsize2_wrapper(struct _atrade_taxrate_result_zocl* _this)
+        static int _atrade_taxrate_result_zoclsize2_wrapper(struct _atrade_taxrate_result_zocl* _this)
         {
            return _atrade_taxrate_result_zoclsize2_user(_this, _atrade_taxrate_result_zoclsize2_next);
         };
         
-        hook_record _atrade_taxrate_result_zocl_functions[] = {
+        static hook_record _atrade_taxrate_result_zocl_functions[] = {
         {   (LPVOID)0x1402d9990L,
             (LPVOID *)&_atrade_taxrate_result_zoclsize2_user,
             (LPVOID *)&_atrade_taxrate_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

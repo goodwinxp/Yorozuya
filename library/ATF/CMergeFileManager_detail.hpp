@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMergeFileManagerGetFileSize1_ptr CMergeFileManagerGetFileSize1_next(nullptr);
-        info::CMergeFileManagerGetFileSize1_clbk CMergeFileManagerGetFileSize1_user(nullptr);
-        info::CMergeFileManagerInitMergeFile2_ptr CMergeFileManagerInitMergeFile2_next(nullptr);
-        info::CMergeFileManagerInitMergeFile2_clbk CMergeFileManagerInitMergeFile2_user(nullptr);
-        info::CMergeFileManagerIsExistFile3_ptr CMergeFileManagerIsExistFile3_next(nullptr);
-        info::CMergeFileManagerIsExistFile3_clbk CMergeFileManagerIsExistFile3_user(nullptr);
-        info::CMergeFileManagerLoadFileOffset4_ptr CMergeFileManagerLoadFileOffset4_next(nullptr);
-        info::CMergeFileManagerLoadFileOffset4_clbk CMergeFileManagerLoadFileOffset4_user(nullptr);
-        info::CMergeFileManagerReleaseMergeFile5_ptr CMergeFileManagerReleaseMergeFile5_next(nullptr);
-        info::CMergeFileManagerReleaseMergeFile5_clbk CMergeFileManagerReleaseMergeFile5_user(nullptr);
-        info::CMergeFileManagerdtor_CMergeFileManager6_ptr CMergeFileManagerdtor_CMergeFileManager6_next(nullptr);
-        info::CMergeFileManagerdtor_CMergeFileManager6_clbk CMergeFileManagerdtor_CMergeFileManager6_user(nullptr);
+        static info::CMergeFileManagerGetFileSize1_ptr CMergeFileManagerGetFileSize1_next(nullptr);
+        static info::CMergeFileManagerGetFileSize1_clbk CMergeFileManagerGetFileSize1_user(nullptr);
+        static info::CMergeFileManagerInitMergeFile2_ptr CMergeFileManagerInitMergeFile2_next(nullptr);
+        static info::CMergeFileManagerInitMergeFile2_clbk CMergeFileManagerInitMergeFile2_user(nullptr);
+        static info::CMergeFileManagerIsExistFile3_ptr CMergeFileManagerIsExistFile3_next(nullptr);
+        static info::CMergeFileManagerIsExistFile3_clbk CMergeFileManagerIsExistFile3_user(nullptr);
+        static info::CMergeFileManagerLoadFileOffset4_ptr CMergeFileManagerLoadFileOffset4_next(nullptr);
+        static info::CMergeFileManagerLoadFileOffset4_clbk CMergeFileManagerLoadFileOffset4_user(nullptr);
+        static info::CMergeFileManagerReleaseMergeFile5_ptr CMergeFileManagerReleaseMergeFile5_next(nullptr);
+        static info::CMergeFileManagerReleaseMergeFile5_clbk CMergeFileManagerReleaseMergeFile5_user(nullptr);
+        static info::CMergeFileManagerdtor_CMergeFileManager6_ptr CMergeFileManagerdtor_CMergeFileManager6_next(nullptr);
+        static info::CMergeFileManagerdtor_CMergeFileManager6_clbk CMergeFileManagerdtor_CMergeFileManager6_user(nullptr);
         
-        uint32_t CMergeFileManagerGetFileSize1_wrapper(struct CMergeFileManager* _this, char* arg_0)
+        static uint32_t CMergeFileManagerGetFileSize1_wrapper(struct CMergeFileManager* _this, char* arg_0)
         {
            return CMergeFileManagerGetFileSize1_user(_this, arg_0, CMergeFileManagerGetFileSize1_next);
         };
-        void CMergeFileManagerInitMergeFile2_wrapper(struct CMergeFileManager* _this, char* arg_0)
+        static void CMergeFileManagerInitMergeFile2_wrapper(struct CMergeFileManager* _this, char* arg_0)
         {
            CMergeFileManagerInitMergeFile2_user(_this, arg_0, CMergeFileManagerInitMergeFile2_next);
         };
-        int CMergeFileManagerIsExistFile3_wrapper(struct CMergeFileManager* _this, char* arg_0)
+        static int CMergeFileManagerIsExistFile3_wrapper(struct CMergeFileManager* _this, char* arg_0)
         {
            return CMergeFileManagerIsExistFile3_user(_this, arg_0, CMergeFileManagerIsExistFile3_next);
         };
-        struct _iobuf* CMergeFileManagerLoadFileOffset4_wrapper(struct CMergeFileManager* _this, char* arg_0, char* arg_1)
+        static struct _iobuf* CMergeFileManagerLoadFileOffset4_wrapper(struct CMergeFileManager* _this, char* arg_0, char* arg_1)
         {
            return CMergeFileManagerLoadFileOffset4_user(_this, arg_0, arg_1, CMergeFileManagerLoadFileOffset4_next);
         };
-        void CMergeFileManagerReleaseMergeFile5_wrapper(struct CMergeFileManager* _this)
+        static void CMergeFileManagerReleaseMergeFile5_wrapper(struct CMergeFileManager* _this)
         {
            CMergeFileManagerReleaseMergeFile5_user(_this, CMergeFileManagerReleaseMergeFile5_next);
         };
-        int64_t CMergeFileManagerdtor_CMergeFileManager6_wrapper(struct CMergeFileManager* _this)
+        static int64_t CMergeFileManagerdtor_CMergeFileManager6_wrapper(struct CMergeFileManager* _this)
         {
            return CMergeFileManagerdtor_CMergeFileManager6_user(_this, CMergeFileManagerdtor_CMergeFileManager6_next);
         };
         
-        hook_record CMergeFileManager_functions[] = {
+        static hook_record CMergeFileManager_functions[] = {
         {   (LPVOID)0x14050a920L,
             (LPVOID *)&CMergeFileManagerGetFileSize1_user,
             (LPVOID *)&CMergeFileManagerGetFileSize1_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

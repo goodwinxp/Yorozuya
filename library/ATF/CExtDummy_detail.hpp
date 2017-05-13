@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CExtDummyDrawAllDummyBBox1_ptr CExtDummyDrawAllDummyBBox1_next(nullptr);
-        info::CExtDummyDrawAllDummyBBox1_clbk CExtDummyDrawAllDummyBBox1_user(nullptr);
-        info::CExtDummyDrawDummyBBox2_ptr CExtDummyDrawDummyBBox2_next(nullptr);
-        info::CExtDummyDrawDummyBBox2_clbk CExtDummyDrawDummyBBox2_user(nullptr);
-        info::CExtDummyGetDummy3_ptr CExtDummyGetDummy3_next(nullptr);
-        info::CExtDummyGetDummy3_clbk CExtDummyGetDummy3_user(nullptr);
-        info::CExtDummyGetDummyList4_ptr CExtDummyGetDummyList4_next(nullptr);
-        info::CExtDummyGetDummyList4_clbk CExtDummyGetDummyList4_user(nullptr);
-        info::CExtDummyGetLocalFromWorld5_ptr CExtDummyGetLocalFromWorld5_next(nullptr);
-        info::CExtDummyGetLocalFromWorld5_clbk CExtDummyGetLocalFromWorld5_user(nullptr);
-        info::CExtDummyGetTotalNum7_ptr CExtDummyGetTotalNum7_next(nullptr);
-        info::CExtDummyGetTotalNum7_clbk CExtDummyGetTotalNum7_user(nullptr);
-        info::CExtDummyGetWorldFromLocal8_ptr CExtDummyGetWorldFromLocal8_next(nullptr);
-        info::CExtDummyGetWorldFromLocal8_clbk CExtDummyGetWorldFromLocal8_user(nullptr);
-        info::CExtDummyIsInBBox9_ptr CExtDummyIsInBBox9_next(nullptr);
-        info::CExtDummyIsInBBox9_clbk CExtDummyIsInBBox9_user(nullptr);
-        info::CExtDummyLoadExtDummy10_ptr CExtDummyLoadExtDummy10_next(nullptr);
-        info::CExtDummyLoadExtDummy10_clbk CExtDummyLoadExtDummy10_user(nullptr);
-        info::CExtDummyReleaseExtDummy11_ptr CExtDummyReleaseExtDummy11_next(nullptr);
-        info::CExtDummyReleaseExtDummy11_clbk CExtDummyReleaseExtDummy11_user(nullptr);
-        info::CExtDummydtor_CExtDummy14_ptr CExtDummydtor_CExtDummy14_next(nullptr);
-        info::CExtDummydtor_CExtDummy14_clbk CExtDummydtor_CExtDummy14_user(nullptr);
+        static info::CExtDummyDrawAllDummyBBox1_ptr CExtDummyDrawAllDummyBBox1_next(nullptr);
+        static info::CExtDummyDrawAllDummyBBox1_clbk CExtDummyDrawAllDummyBBox1_user(nullptr);
+        static info::CExtDummyDrawDummyBBox2_ptr CExtDummyDrawDummyBBox2_next(nullptr);
+        static info::CExtDummyDrawDummyBBox2_clbk CExtDummyDrawDummyBBox2_user(nullptr);
+        static info::CExtDummyGetDummy3_ptr CExtDummyGetDummy3_next(nullptr);
+        static info::CExtDummyGetDummy3_clbk CExtDummyGetDummy3_user(nullptr);
+        static info::CExtDummyGetDummyList4_ptr CExtDummyGetDummyList4_next(nullptr);
+        static info::CExtDummyGetDummyList4_clbk CExtDummyGetDummyList4_user(nullptr);
+        static info::CExtDummyGetLocalFromWorld5_ptr CExtDummyGetLocalFromWorld5_next(nullptr);
+        static info::CExtDummyGetLocalFromWorld5_clbk CExtDummyGetLocalFromWorld5_user(nullptr);
+        static info::CExtDummyGetTotalNum7_ptr CExtDummyGetTotalNum7_next(nullptr);
+        static info::CExtDummyGetTotalNum7_clbk CExtDummyGetTotalNum7_user(nullptr);
+        static info::CExtDummyGetWorldFromLocal8_ptr CExtDummyGetWorldFromLocal8_next(nullptr);
+        static info::CExtDummyGetWorldFromLocal8_clbk CExtDummyGetWorldFromLocal8_user(nullptr);
+        static info::CExtDummyIsInBBox9_ptr CExtDummyIsInBBox9_next(nullptr);
+        static info::CExtDummyIsInBBox9_clbk CExtDummyIsInBBox9_user(nullptr);
+        static info::CExtDummyLoadExtDummy10_ptr CExtDummyLoadExtDummy10_next(nullptr);
+        static info::CExtDummyLoadExtDummy10_clbk CExtDummyLoadExtDummy10_user(nullptr);
+        static info::CExtDummyReleaseExtDummy11_ptr CExtDummyReleaseExtDummy11_next(nullptr);
+        static info::CExtDummyReleaseExtDummy11_clbk CExtDummyReleaseExtDummy11_user(nullptr);
+        static info::CExtDummydtor_CExtDummy14_ptr CExtDummydtor_CExtDummy14_next(nullptr);
+        static info::CExtDummydtor_CExtDummy14_clbk CExtDummydtor_CExtDummy14_user(nullptr);
         
-        void CExtDummyDrawAllDummyBBox1_wrapper(struct CExtDummy* _this)
+        static void CExtDummyDrawAllDummyBBox1_wrapper(struct CExtDummy* _this)
         {
            CExtDummyDrawAllDummyBBox1_user(_this, CExtDummyDrawAllDummyBBox1_next);
         };
-        void CExtDummyDrawDummyBBox2_wrapper(struct CExtDummy* _this, uint32_t arg_0)
+        static void CExtDummyDrawDummyBBox2_wrapper(struct CExtDummy* _this, uint32_t arg_0)
         {
            CExtDummyDrawDummyBBox2_user(_this, arg_0, CExtDummyDrawDummyBBox2_next);
         };
-        struct _EXT_DUMMY* CExtDummyGetDummy3_wrapper(struct CExtDummy* _this, uint32_t arg_0)
+        static struct _EXT_DUMMY* CExtDummyGetDummy3_wrapper(struct CExtDummy* _this, uint32_t arg_0)
         {
            return CExtDummyGetDummy3_user(_this, arg_0, CExtDummyGetDummy3_next);
         };
-        void CExtDummyGetDummyList4_wrapper(struct CExtDummy* _this, uint32_t arg_0, uint32_t* arg_1, uint32_t* arg_2)
+        static void CExtDummyGetDummyList4_wrapper(struct CExtDummy* _this, uint32_t arg_0, uint32_t* arg_1, uint32_t* arg_2)
         {
            CExtDummyGetDummyList4_user(_this, arg_0, arg_1, arg_2, CExtDummyGetDummyList4_next);
         };
-        int CExtDummyGetLocalFromWorld5_wrapper(struct CExtDummy* _this, float** arg_0, uint32_t arg_1, float* arg_2)
+        static int CExtDummyGetLocalFromWorld5_wrapper(struct CExtDummy* _this, float** arg_0, uint32_t arg_1, float* arg_2)
         {
            return CExtDummyGetLocalFromWorld5_user(_this, arg_0, arg_1, arg_2, CExtDummyGetLocalFromWorld5_next);
         };
-        unsigned int CExtDummyGetTotalNum7_wrapper(struct CExtDummy* _this)
+        static unsigned int CExtDummyGetTotalNum7_wrapper(struct CExtDummy* _this)
         {
            return CExtDummyGetTotalNum7_user(_this, CExtDummyGetTotalNum7_next);
         };
-        int CExtDummyGetWorldFromLocal8_wrapper(struct CExtDummy* _this, float** arg_0, uint32_t arg_1, float* arg_2)
+        static int CExtDummyGetWorldFromLocal8_wrapper(struct CExtDummy* _this, float** arg_0, uint32_t arg_1, float* arg_2)
         {
            return CExtDummyGetWorldFromLocal8_user(_this, arg_0, arg_1, arg_2, CExtDummyGetWorldFromLocal8_next);
         };
-        int CExtDummyIsInBBox9_wrapper(struct CExtDummy* _this, uint32_t arg_0, float* arg_1)
+        static int CExtDummyIsInBBox9_wrapper(struct CExtDummy* _this, uint32_t arg_0, float* arg_1)
         {
            return CExtDummyIsInBBox9_user(_this, arg_0, arg_1, CExtDummyIsInBBox9_next);
         };
-        int CExtDummyLoadExtDummy10_wrapper(struct CExtDummy* _this, char* arg_0)
+        static int CExtDummyLoadExtDummy10_wrapper(struct CExtDummy* _this, char* arg_0)
         {
            return CExtDummyLoadExtDummy10_user(_this, arg_0, CExtDummyLoadExtDummy10_next);
         };
-        void CExtDummyReleaseExtDummy11_wrapper(struct CExtDummy* _this)
+        static void CExtDummyReleaseExtDummy11_wrapper(struct CExtDummy* _this)
         {
            CExtDummyReleaseExtDummy11_user(_this, CExtDummyReleaseExtDummy11_next);
         };
-        int64_t CExtDummydtor_CExtDummy14_wrapper(struct CExtDummy* _this)
+        static int64_t CExtDummydtor_CExtDummy14_wrapper(struct CExtDummy* _this)
         {
            return CExtDummydtor_CExtDummy14_user(_this, CExtDummydtor_CExtDummy14_next);
         };
         
-        hook_record CExtDummy_functions[] = {
+        static hook_record CExtDummy_functions[] = {
         {   (LPVOID)0x1404dfb10L,
             (LPVOID *)&CExtDummyDrawAllDummyBBox1_user,
             (LPVOID *)&CExtDummyDrawAllDummyBBox1_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_quick_linkctor__quick_link2_ptr _quick_linkctor__quick_link2_next(nullptr);
-        info::_quick_linkctor__quick_link2_clbk _quick_linkctor__quick_link2_user(nullptr);
-        info::_quick_linkinit4_ptr _quick_linkinit4_next(nullptr);
-        info::_quick_linkinit4_clbk _quick_linkinit4_user(nullptr);
+        static info::_quick_linkctor__quick_link2_ptr _quick_linkctor__quick_link2_next(nullptr);
+        static info::_quick_linkctor__quick_link2_clbk _quick_linkctor__quick_link2_user(nullptr);
+        static info::_quick_linkinit4_ptr _quick_linkinit4_next(nullptr);
+        static info::_quick_linkinit4_clbk _quick_linkinit4_user(nullptr);
         
-        void _quick_linkctor__quick_link2_wrapper(struct _quick_link* _this)
+        static void _quick_linkctor__quick_link2_wrapper(struct _quick_link* _this)
         {
            _quick_linkctor__quick_link2_user(_this, _quick_linkctor__quick_link2_next);
         };
-        void _quick_linkinit4_wrapper(struct _quick_link* _this)
+        static void _quick_linkinit4_wrapper(struct _quick_link* _this)
         {
            _quick_linkinit4_user(_this, _quick_linkinit4_next);
         };
         
-        hook_record _quick_link_functions[] = {
+        static hook_record _quick_link_functions[] = {
         {   (LPVOID)0x14010e060L,
             (LPVOID *)&_quick_linkctor__quick_link2_user,
             (LPVOID *)&_quick_linkctor__quick_link2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

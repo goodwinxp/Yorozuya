@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_class_valuector__class_value2_ptr _class_valuector__class_value2_next(nullptr);
-        info::_class_valuector__class_value2_clbk _class_valuector__class_value2_user(nullptr);
-        info::_class_valueinit4_ptr _class_valueinit4_next(nullptr);
-        info::_class_valueinit4_clbk _class_valueinit4_user(nullptr);
-        info::_class_valuesize6_ptr _class_valuesize6_next(nullptr);
-        info::_class_valuesize6_clbk _class_valuesize6_user(nullptr);
+        static info::_class_valuector__class_value2_ptr _class_valuector__class_value2_next(nullptr);
+        static info::_class_valuector__class_value2_clbk _class_valuector__class_value2_user(nullptr);
+        static info::_class_valueinit4_ptr _class_valueinit4_next(nullptr);
+        static info::_class_valueinit4_clbk _class_valueinit4_user(nullptr);
+        static info::_class_valuesize6_ptr _class_valuesize6_next(nullptr);
+        static info::_class_valuesize6_clbk _class_valuesize6_user(nullptr);
         
-        void _class_valuector__class_value2_wrapper(struct _class_value* _this)
+        static void _class_valuector__class_value2_wrapper(struct _class_value* _this)
         {
            _class_valuector__class_value2_user(_this, _class_valuector__class_value2_next);
         };
-        void _class_valueinit4_wrapper(struct _class_value* _this)
+        static void _class_valueinit4_wrapper(struct _class_value* _this)
         {
            _class_valueinit4_user(_this, _class_valueinit4_next);
         };
-        int _class_valuesize6_wrapper(struct _class_value* _this)
+        static int _class_valuesize6_wrapper(struct _class_value* _this)
         {
            return _class_valuesize6_user(_this, _class_valuesize6_next);
         };
         
-        hook_record _class_value_functions[] = {
+        static hook_record _class_value_functions[] = {
         {   (LPVOID)0x1403f6f80L,
             (LPVOID *)&_class_valuector__class_value2_user,
             (LPVOID *)&_class_valuector__class_value2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

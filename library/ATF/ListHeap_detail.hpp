@@ -8,89 +8,89 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
-        info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
-        info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
-        info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
-        info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
-        info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
-        info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
-        info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
-        info::ListHeappop10_ptr ListHeappop10_next(nullptr);
-        info::ListHeappop10_clbk ListHeappop10_user(nullptr);
-        info::ListHeappop12_ptr ListHeappop12_next(nullptr);
-        info::ListHeappop12_clbk ListHeappop12_user(nullptr);
-        info::ListHeappush14_ptr ListHeappush14_next(nullptr);
-        info::ListHeappush14_clbk ListHeappush14_user(nullptr);
-        info::ListHeapsize16_ptr ListHeapsize16_next(nullptr);
-        info::ListHeapsize16_clbk ListHeapsize16_user(nullptr);
-        info::ListHeaptop18_ptr ListHeaptop18_next(nullptr);
-        info::ListHeaptop18_clbk ListHeaptop18_user(nullptr);
-        info::ListHeapdtor_ListHeap20_ptr ListHeapdtor_ListHeap20_next(nullptr);
-        info::ListHeapdtor_ListHeap20_clbk ListHeapdtor_ListHeap20_user(nullptr);
+        static info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
+        static info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
+        static info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
+        static info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
+        static info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
+        static info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
+        static info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
+        static info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
+        static info::ListHeappop10_ptr ListHeappop10_next(nullptr);
+        static info::ListHeappop10_clbk ListHeappop10_user(nullptr);
+        static info::ListHeappop12_ptr ListHeappop12_next(nullptr);
+        static info::ListHeappop12_clbk ListHeappop12_user(nullptr);
+        static info::ListHeappush14_ptr ListHeappush14_next(nullptr);
+        static info::ListHeappush14_clbk ListHeappush14_user(nullptr);
+        static info::ListHeapsize16_ptr ListHeapsize16_next(nullptr);
+        static info::ListHeapsize16_clbk ListHeapsize16_user(nullptr);
+        static info::ListHeaptop18_ptr ListHeaptop18_next(nullptr);
+        static info::ListHeaptop18_clbk ListHeaptop18_user(nullptr);
+        static info::ListHeapdtor_ListHeap20_ptr ListHeapdtor_ListHeap20_next(nullptr);
+        static info::ListHeapdtor_ListHeap20_clbk ListHeapdtor_ListHeap20_user(nullptr);
         
-        info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
-        info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
-        info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
-        info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
+        static info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
+        static info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
         
-        bool ListHeapInitialize2_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, uint64_t nMaxBuf)
+        static bool ListHeapInitialize2_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, uint64_t nMaxBuf)
         {
            return ListHeapInitialize2_user(_this, nMaxBuf);
         };
-        void ListHeapctor_ListHeap4_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static void ListHeapctor_ListHeap4_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            ListHeapctor_ListHeap4_user(_this);
         };
-        void ListHeapRelease6_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static void ListHeapRelease6_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            ListHeapRelease6_user(_this);
         };
-        bool ListHeapempty8_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static bool ListHeapempty8_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            return ListHeapempty8_user(_this);
         };
-        bool ListHeappop10_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, struct LendItemSheet::Cell* data)
+        static bool ListHeappop10_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, struct LendItemSheet::Cell* data)
         {
            return ListHeappop10_user(_this, data);
         };
-        bool ListHeappop12_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static bool ListHeappop12_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            return ListHeappop12_user(_this);
         };
-        bool ListHeappush14_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, struct LendItemSheet::Cell* data)
+        static bool ListHeappush14_wrapper(struct ListHeap<LendItemSheet::Cell>* _this, struct LendItemSheet::Cell* data)
         {
            return ListHeappush14_user(_this, data);
         };
-        uint64_t ListHeapsize16_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static uint64_t ListHeapsize16_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            return ListHeapsize16_user(_this);
         };
-        struct LendItemSheet::Cell* ListHeaptop18_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static struct LendItemSheet::Cell* ListHeaptop18_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            return ListHeaptop18_user(_this);
         };
-        void ListHeapdtor_ListHeap20_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
+        static void ListHeapdtor_ListHeap20_wrapper(struct ListHeap<LendItemSheet::Cell>* _this)
         {
            ListHeapdtor_ListHeap20_user(_this);
         };
         
-        void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExctor_CIndexListEx2_user(_this);
         };
-        bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
+        static bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
         {
            return ListHeap__CIndexListExPush4_user(_this, pos, dwIndex);
         };
-        void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<LendItemSheet::Cell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExdtor_CIndexListEx6_user(_this);
         };
         
-        hook_record ListHeap<LendItemSheet::Cell>_functions[] = {
+        static hook_record ListHeap<LendItemSheet::Cell>_functions[] = {
         {   (LPVOID)0x14030fe00L,
             (LPVOID *)&ListHeapInitialize2_user,
             (LPVOID *)&ListHeapInitialize2_next,
@@ -160,7 +160,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "ListHeap_info.hpp"
 
@@ -168,95 +168,95 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
-        info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
-        info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
-        info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
-        info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
-        info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
-        info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
-        info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
-        info::ListHeappop10_ptr ListHeappop10_next(nullptr);
-        info::ListHeappop10_clbk ListHeappop10_user(nullptr);
-        info::ListHeappop12_ptr ListHeappop12_next(nullptr);
-        info::ListHeappop12_clbk ListHeappop12_user(nullptr);
-        info::ListHeappop14_ptr ListHeappop14_next(nullptr);
-        info::ListHeappop14_clbk ListHeappop14_user(nullptr);
-        info::ListHeappush16_ptr ListHeappush16_next(nullptr);
-        info::ListHeappush16_clbk ListHeappush16_user(nullptr);
-        info::ListHeapsize18_ptr ListHeapsize18_next(nullptr);
-        info::ListHeapsize18_clbk ListHeapsize18_user(nullptr);
-        info::ListHeaptop20_ptr ListHeaptop20_next(nullptr);
-        info::ListHeaptop20_clbk ListHeaptop20_user(nullptr);
-        info::ListHeapdtor_ListHeap22_ptr ListHeapdtor_ListHeap22_next(nullptr);
-        info::ListHeapdtor_ListHeap22_clbk ListHeapdtor_ListHeap22_user(nullptr);
+        static info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
+        static info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
+        static info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
+        static info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
+        static info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
+        static info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
+        static info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
+        static info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
+        static info::ListHeappop10_ptr ListHeappop10_next(nullptr);
+        static info::ListHeappop10_clbk ListHeappop10_user(nullptr);
+        static info::ListHeappop12_ptr ListHeappop12_next(nullptr);
+        static info::ListHeappop12_clbk ListHeappop12_user(nullptr);
+        static info::ListHeappop14_ptr ListHeappop14_next(nullptr);
+        static info::ListHeappop14_clbk ListHeappop14_user(nullptr);
+        static info::ListHeappush16_ptr ListHeappush16_next(nullptr);
+        static info::ListHeappush16_clbk ListHeappush16_user(nullptr);
+        static info::ListHeapsize18_ptr ListHeapsize18_next(nullptr);
+        static info::ListHeapsize18_clbk ListHeapsize18_user(nullptr);
+        static info::ListHeaptop20_ptr ListHeaptop20_next(nullptr);
+        static info::ListHeaptop20_clbk ListHeaptop20_user(nullptr);
+        static info::ListHeapdtor_ListHeap22_ptr ListHeapdtor_ListHeap22_next(nullptr);
+        static info::ListHeapdtor_ListHeap22_clbk ListHeapdtor_ListHeap22_user(nullptr);
         
-        info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
-        info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
-        info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
-        info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
+        static info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
+        static info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
         
-        bool ListHeapInitialize2_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, uint64_t nMaxBuf)
+        static bool ListHeapInitialize2_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, uint64_t nMaxBuf)
         {
            return ListHeapInitialize2_user(_this, nMaxBuf);
         };
-        void ListHeapctor_ListHeap4_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static void ListHeapctor_ListHeap4_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            ListHeapctor_ListHeap4_user(_this);
         };
-        void ListHeapRelease6_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static void ListHeapRelease6_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            ListHeapRelease6_user(_this);
         };
-        bool ListHeapempty8_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static bool ListHeapempty8_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            return ListHeapempty8_user(_this);
         };
-        bool ListHeappop10_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, struct TimeLimitJade::WaitCell* data)
+        static bool ListHeappop10_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, struct TimeLimitJade::WaitCell* data)
         {
            return ListHeappop10_user(_this, data);
         };
-        struct TimeLimitJade::WaitCell* ListHeappop12_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, unsigned int dwIndex)
+        static struct TimeLimitJade::WaitCell* ListHeappop12_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, unsigned int dwIndex)
         {
            return ListHeappop12_user(_this, dwIndex);
         };
-        bool ListHeappop14_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static bool ListHeappop14_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            return ListHeappop14_user(_this);
         };
-        bool ListHeappush16_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, struct TimeLimitJade::WaitCell* data)
+        static bool ListHeappush16_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this, struct TimeLimitJade::WaitCell* data)
         {
            return ListHeappush16_user(_this, data);
         };
-        uint64_t ListHeapsize18_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static uint64_t ListHeapsize18_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            return ListHeapsize18_user(_this);
         };
-        struct TimeLimitJade::WaitCell* ListHeaptop20_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static struct TimeLimitJade::WaitCell* ListHeaptop20_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            return ListHeaptop20_user(_this);
         };
-        void ListHeapdtor_ListHeap22_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
+        static void ListHeapdtor_ListHeap22_wrapper(struct ListHeap<TimeLimitJade::WaitCell>* _this)
         {
            ListHeapdtor_ListHeap22_user(_this);
         };
         
-        void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExctor_CIndexListEx2_user(_this);
         };
-        bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
+        static bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
         {
            return ListHeap__CIndexListExPush4_user(_this, pos, dwIndex);
         };
-        void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<TimeLimitJade::WaitCell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExdtor_CIndexListEx6_user(_this);
         };
         
-        hook_record ListHeap<TimeLimitJade::WaitCell>_functions[] = {
+        static hook_record ListHeap<TimeLimitJade::WaitCell>_functions[] = {
         {   (LPVOID)0x1403fc2d0L,
             (LPVOID *)&ListHeapInitialize2_user,
             (LPVOID *)&ListHeapInitialize2_next,
@@ -331,7 +331,7 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 #include "ListHeap_info.hpp"
 
@@ -339,89 +339,89 @@ END_ATF_NAMESPACE
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
-        info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
-        info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
-        info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
-        info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
-        info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
-        info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
-        info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
-        info::ListHeappop10_ptr ListHeappop10_next(nullptr);
-        info::ListHeappop10_clbk ListHeappop10_user(nullptr);
-        info::ListHeappop12_ptr ListHeappop12_next(nullptr);
-        info::ListHeappop12_clbk ListHeappop12_user(nullptr);
-        info::ListHeappush14_ptr ListHeappush14_next(nullptr);
-        info::ListHeappush14_clbk ListHeappush14_user(nullptr);
-        info::ListHeapsize16_ptr ListHeapsize16_next(nullptr);
-        info::ListHeapsize16_clbk ListHeapsize16_user(nullptr);
-        info::ListHeaptop18_ptr ListHeaptop18_next(nullptr);
-        info::ListHeaptop18_clbk ListHeaptop18_user(nullptr);
-        info::ListHeapdtor_ListHeap20_ptr ListHeapdtor_ListHeap20_next(nullptr);
-        info::ListHeapdtor_ListHeap20_clbk ListHeapdtor_ListHeap20_user(nullptr);
+        static info::ListHeapInitialize2_ptr ListHeapInitialize2_next(nullptr);
+        static info::ListHeapInitialize2_clbk ListHeapInitialize2_user(nullptr);
+        static info::ListHeapctor_ListHeap4_ptr ListHeapctor_ListHeap4_next(nullptr);
+        static info::ListHeapctor_ListHeap4_clbk ListHeapctor_ListHeap4_user(nullptr);
+        static info::ListHeapRelease6_ptr ListHeapRelease6_next(nullptr);
+        static info::ListHeapRelease6_clbk ListHeapRelease6_user(nullptr);
+        static info::ListHeapempty8_ptr ListHeapempty8_next(nullptr);
+        static info::ListHeapempty8_clbk ListHeapempty8_user(nullptr);
+        static info::ListHeappop10_ptr ListHeappop10_next(nullptr);
+        static info::ListHeappop10_clbk ListHeappop10_user(nullptr);
+        static info::ListHeappop12_ptr ListHeappop12_next(nullptr);
+        static info::ListHeappop12_clbk ListHeappop12_user(nullptr);
+        static info::ListHeappush14_ptr ListHeappush14_next(nullptr);
+        static info::ListHeappush14_clbk ListHeappush14_user(nullptr);
+        static info::ListHeapsize16_ptr ListHeapsize16_next(nullptr);
+        static info::ListHeapsize16_clbk ListHeapsize16_user(nullptr);
+        static info::ListHeaptop18_ptr ListHeaptop18_next(nullptr);
+        static info::ListHeaptop18_clbk ListHeaptop18_user(nullptr);
+        static info::ListHeapdtor_ListHeap20_ptr ListHeapdtor_ListHeap20_next(nullptr);
+        static info::ListHeapdtor_ListHeap20_clbk ListHeapdtor_ListHeap20_user(nullptr);
         
-        info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
-        info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
-        info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
-        info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
-        info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_ptr ListHeap__CIndexListExctor_CIndexListEx2_next(nullptr);
+        static info::ListHeap__CIndexListExctor_CIndexListEx2_clbk ListHeap__CIndexListExctor_CIndexListEx2_user(nullptr);
+        static info::ListHeap__CIndexListExPush4_ptr ListHeap__CIndexListExPush4_next(nullptr);
+        static info::ListHeap__CIndexListExPush4_clbk ListHeap__CIndexListExPush4_user(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_ptr ListHeap__CIndexListExdtor_CIndexListEx6_next(nullptr);
+        static info::ListHeap__CIndexListExdtor_CIndexListEx6_clbk ListHeap__CIndexListExdtor_CIndexListEx6_user(nullptr);
         
-        bool ListHeapInitialize2_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, uint64_t nMaxBuf)
+        static bool ListHeapInitialize2_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, uint64_t nMaxBuf)
         {
            return ListHeapInitialize2_user(_this, nMaxBuf);
         };
-        void ListHeapctor_ListHeap4_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static void ListHeapctor_ListHeap4_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            ListHeapctor_ListHeap4_user(_this);
         };
-        void ListHeapRelease6_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static void ListHeapRelease6_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            ListHeapRelease6_user(_this);
         };
-        bool ListHeapempty8_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static bool ListHeapempty8_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            return ListHeapempty8_user(_this);
         };
-        bool ListHeappop10_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, struct TimeLimitJade::UseCell* data)
+        static bool ListHeappop10_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, struct TimeLimitJade::UseCell* data)
         {
            return ListHeappop10_user(_this, data);
         };
-        bool ListHeappop12_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static bool ListHeappop12_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            return ListHeappop12_user(_this);
         };
-        bool ListHeappush14_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, struct TimeLimitJade::UseCell* data)
+        static bool ListHeappush14_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this, struct TimeLimitJade::UseCell* data)
         {
            return ListHeappush14_user(_this, data);
         };
-        uint64_t ListHeapsize16_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static uint64_t ListHeapsize16_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            return ListHeapsize16_user(_this);
         };
-        struct TimeLimitJade::UseCell* ListHeaptop18_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static struct TimeLimitJade::UseCell* ListHeaptop18_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            return ListHeaptop18_user(_this);
         };
-        void ListHeapdtor_ListHeap20_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
+        static void ListHeapdtor_ListHeap20_wrapper(struct ListHeap<TimeLimitJade::UseCell>* _this)
         {
            ListHeapdtor_ListHeap20_user(_this);
         };
         
-        void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExctor_CIndexListEx2_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExctor_CIndexListEx2_user(_this);
         };
-        bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
+        static bool ListHeap__CIndexListExPush4_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this, struct CNetIndexList::_index_node* pos, unsigned int dwIndex)
         {
            return ListHeap__CIndexListExPush4_user(_this, pos, dwIndex);
         };
-        void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this)
+        static void ListHeap__CIndexListExdtor_CIndexListEx6_wrapper(struct ListHeap<TimeLimitJade::UseCell>::CIndexListEx* _this)
         {
            ListHeap__CIndexListExdtor_CIndexListEx6_user(_this);
         };
         
-        hook_record ListHeap<TimeLimitJade::UseCell>_functions[] = {
+        static hook_record ListHeap<TimeLimitJade::UseCell>_functions[] = {
         {   (LPVOID)0x1403fcd10L,
             (LPVOID *)&ListHeapInitialize2_user,
             (LPVOID *)&ListHeapInitialize2_next,
@@ -491,5 +491,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

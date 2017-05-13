@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__add_timector___add_time2_ptr __add_timector___add_time2_next(nullptr);
-        info::__add_timector___add_time2_clbk __add_timector___add_time2_user(nullptr);
+        static info::__add_timector___add_time2_ptr __add_timector___add_time2_next(nullptr);
+        static info::__add_timector___add_time2_clbk __add_timector___add_time2_user(nullptr);
         
-        void __add_timector___add_time2_wrapper(struct __add_time* _this)
+        static void __add_timector___add_time2_wrapper(struct __add_time* _this)
         {
            __add_timector___add_time2_user(_this, __add_timector___add_time2_next);
         };
         
-        hook_record __add_time_functions[] = {
+        static hook_record __add_time_functions[] = {
         {   (LPVOID)0x14027a620L,
             (LPVOID *)&__add_timector___add_time2_user,
             (LPVOID *)&__add_timector___add_time2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

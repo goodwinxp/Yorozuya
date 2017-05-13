@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_ptr _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_next(nullptr);
-        info::_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_clbk _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_user(nullptr);
-        info::_darkhole_open_all_portal_by_result_inform_zoclsize4_ptr _darkhole_open_all_portal_by_result_inform_zoclsize4_next(nullptr);
-        info::_darkhole_open_all_portal_by_result_inform_zoclsize4_clbk _darkhole_open_all_portal_by_result_inform_zoclsize4_user(nullptr);
+        static info::_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_ptr _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_next(nullptr);
+        static info::_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_clbk _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_user(nullptr);
+        static info::_darkhole_open_all_portal_by_result_inform_zoclsize4_ptr _darkhole_open_all_portal_by_result_inform_zoclsize4_next(nullptr);
+        static info::_darkhole_open_all_portal_by_result_inform_zoclsize4_clbk _darkhole_open_all_portal_by_result_inform_zoclsize4_user(nullptr);
         
-        void _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_wrapper(struct _darkhole_open_all_portal_by_result_inform_zocl* _this)
+        static void _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_wrapper(struct _darkhole_open_all_portal_by_result_inform_zocl* _this)
         {
            _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_user(_this, _darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_next);
         };
-        int _darkhole_open_all_portal_by_result_inform_zoclsize4_wrapper(struct _darkhole_open_all_portal_by_result_inform_zocl* _this)
+        static int _darkhole_open_all_portal_by_result_inform_zoclsize4_wrapper(struct _darkhole_open_all_portal_by_result_inform_zocl* _this)
         {
            return _darkhole_open_all_portal_by_result_inform_zoclsize4_user(_this, _darkhole_open_all_portal_by_result_inform_zoclsize4_next);
         };
         
-        hook_record _darkhole_open_all_portal_by_result_inform_zocl_functions[] = {
+        static hook_record _darkhole_open_all_portal_by_result_inform_zocl_functions[] = {
         {   (LPVOID)0x14026f700L,
             (LPVOID *)&_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_user,
             (LPVOID *)&_darkhole_open_all_portal_by_result_inform_zoclctor__darkhole_open_all_portal_by_result_inform_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

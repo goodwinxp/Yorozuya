@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlTraceModulector_CAtlTraceModule1_ptr CAtlTraceModulector_CAtlTraceModule1_next(nullptr);
-        info::CAtlTraceModulector_CAtlTraceModule1_clbk CAtlTraceModulector_CAtlTraceModule1_user(nullptr);
-        info::CAtlTraceModuleCrtDbgReport2_ptr CAtlTraceModuleCrtDbgReport2_next(nullptr);
-        info::CAtlTraceModuleCrtDbgReport2_clbk CAtlTraceModuleCrtDbgReport2_user(nullptr);
-        info::CAtlTraceModuleCrtDbgReport3_ptr CAtlTraceModuleCrtDbgReport3_next(nullptr);
-        info::CAtlTraceModuleCrtDbgReport3_clbk CAtlTraceModuleCrtDbgReport3_user(nullptr);
+        static info::CAtlTraceModulector_CAtlTraceModule1_ptr CAtlTraceModulector_CAtlTraceModule1_next(nullptr);
+        static info::CAtlTraceModulector_CAtlTraceModule1_clbk CAtlTraceModulector_CAtlTraceModule1_user(nullptr);
+        static info::CAtlTraceModuleCrtDbgReport2_ptr CAtlTraceModuleCrtDbgReport2_next(nullptr);
+        static info::CAtlTraceModuleCrtDbgReport2_clbk CAtlTraceModuleCrtDbgReport2_user(nullptr);
+        static info::CAtlTraceModuleCrtDbgReport3_ptr CAtlTraceModuleCrtDbgReport3_next(nullptr);
+        static info::CAtlTraceModuleCrtDbgReport3_clbk CAtlTraceModuleCrtDbgReport3_user(nullptr);
         
-        void CAtlTraceModulector_CAtlTraceModule1_wrapper(struct CAtlTraceModule* _this)
+        static void CAtlTraceModulector_CAtlTraceModule1_wrapper(struct CAtlTraceModule* _this)
         {
            CAtlTraceModulector_CAtlTraceModule1_user(_this, CAtlTraceModulector_CAtlTraceModule1_next);
         };
-        void CAtlTraceModuleCrtDbgReport2_wrapper(struct CAtlTraceModule* _this, int (WINAPIV* pfnCrtDbgReport)(int, char*, int, char*, char*))
+        static void CAtlTraceModuleCrtDbgReport2_wrapper(struct CAtlTraceModule* _this, int (WINAPIV* pfnCrtDbgReport)(int, char*, int, char*, char*))
         {
            CAtlTraceModuleCrtDbgReport2_user(_this, pfnCrtDbgReport, CAtlTraceModuleCrtDbgReport2_next);
         };
-		info::CAtlTraceModuleCrtDbgReport3_ret CAtlTraceModuleCrtDbgReport3_wrapper(struct CAtlTraceModule* _this)
+		static info::CAtlTraceModuleCrtDbgReport3_ret CAtlTraceModuleCrtDbgReport3_wrapper(struct CAtlTraceModule* _this)
         {
            return CAtlTraceModuleCrtDbgReport3_user(_this, CAtlTraceModuleCrtDbgReport3_next);
         };
         
-        hook_record CAtlTraceModule_functions[] = {
+        static hook_record CAtlTraceModule_functions[] = {
         {   (LPVOID)0x140676080L,
             (LPVOID *)&CAtlTraceModulector_CAtlTraceModule1_user,
             (LPVOID *)&CAtlTraceModulector_CAtlTraceModule1_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

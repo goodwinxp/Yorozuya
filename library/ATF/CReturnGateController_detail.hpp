@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CReturnGateControllerctor_CReturnGateController2_ptr CReturnGateControllerctor_CReturnGateController2_next(nullptr);
-        info::CReturnGateControllerctor_CReturnGateController2_clbk CReturnGateControllerctor_CReturnGateController2_user(nullptr);
-        info::CReturnGateControllerCleanUp4_ptr CReturnGateControllerCleanUp4_next(nullptr);
-        info::CReturnGateControllerCleanUp4_clbk CReturnGateControllerCleanUp4_user(nullptr);
-        info::CReturnGateControllerClose6_ptr CReturnGateControllerClose6_next(nullptr);
-        info::CReturnGateControllerClose6_clbk CReturnGateControllerClose6_user(nullptr);
-        info::CReturnGateControllerDestroy8_ptr CReturnGateControllerDestroy8_next(nullptr);
-        info::CReturnGateControllerDestroy8_clbk CReturnGateControllerDestroy8_user(nullptr);
-        info::CReturnGateControllerEnter10_ptr CReturnGateControllerEnter10_next(nullptr);
-        info::CReturnGateControllerEnter10_clbk CReturnGateControllerEnter10_user(nullptr);
-        info::CReturnGateControllerGetEmpty12_ptr CReturnGateControllerGetEmpty12_next(nullptr);
-        info::CReturnGateControllerGetEmpty12_clbk CReturnGateControllerGetEmpty12_user(nullptr);
-        info::CReturnGateControllerGetGate14_ptr CReturnGateControllerGetGate14_next(nullptr);
-        info::CReturnGateControllerGetGate14_clbk CReturnGateControllerGetGate14_user(nullptr);
-        info::CReturnGateControllerInit16_ptr CReturnGateControllerInit16_next(nullptr);
-        info::CReturnGateControllerInit16_clbk CReturnGateControllerInit16_user(nullptr);
-        info::CReturnGateControllerInstance18_ptr CReturnGateControllerInstance18_next(nullptr);
-        info::CReturnGateControllerInstance18_clbk CReturnGateControllerInstance18_user(nullptr);
-        info::CReturnGateControllerIsExistOwner20_ptr CReturnGateControllerIsExistOwner20_next(nullptr);
-        info::CReturnGateControllerIsExistOwner20_clbk CReturnGateControllerIsExistOwner20_user(nullptr);
-        info::CReturnGateControllerOnLoop22_ptr CReturnGateControllerOnLoop22_next(nullptr);
-        info::CReturnGateControllerOnLoop22_clbk CReturnGateControllerOnLoop22_user(nullptr);
-        info::CReturnGateControllerOpen24_ptr CReturnGateControllerOpen24_next(nullptr);
-        info::CReturnGateControllerOpen24_clbk CReturnGateControllerOpen24_user(nullptr);
-        info::CReturnGateControllerProcessEnter26_ptr CReturnGateControllerProcessEnter26_next(nullptr);
-        info::CReturnGateControllerProcessEnter26_clbk CReturnGateControllerProcessEnter26_user(nullptr);
-        info::CReturnGateControllerSendEnterResult28_ptr CReturnGateControllerSendEnterResult28_next(nullptr);
-        info::CReturnGateControllerSendEnterResult28_clbk CReturnGateControllerSendEnterResult28_user(nullptr);
-        info::CReturnGateControllerUpdateClose30_ptr CReturnGateControllerUpdateClose30_next(nullptr);
-        info::CReturnGateControllerUpdateClose30_clbk CReturnGateControllerUpdateClose30_user(nullptr);
-        info::CReturnGateControllerdtor_CReturnGateController34_ptr CReturnGateControllerdtor_CReturnGateController34_next(nullptr);
-        info::CReturnGateControllerdtor_CReturnGateController34_clbk CReturnGateControllerdtor_CReturnGateController34_user(nullptr);
+        static info::CReturnGateControllerctor_CReturnGateController2_ptr CReturnGateControllerctor_CReturnGateController2_next(nullptr);
+        static info::CReturnGateControllerctor_CReturnGateController2_clbk CReturnGateControllerctor_CReturnGateController2_user(nullptr);
+        static info::CReturnGateControllerCleanUp4_ptr CReturnGateControllerCleanUp4_next(nullptr);
+        static info::CReturnGateControllerCleanUp4_clbk CReturnGateControllerCleanUp4_user(nullptr);
+        static info::CReturnGateControllerClose6_ptr CReturnGateControllerClose6_next(nullptr);
+        static info::CReturnGateControllerClose6_clbk CReturnGateControllerClose6_user(nullptr);
+        static info::CReturnGateControllerDestroy8_ptr CReturnGateControllerDestroy8_next(nullptr);
+        static info::CReturnGateControllerDestroy8_clbk CReturnGateControllerDestroy8_user(nullptr);
+        static info::CReturnGateControllerEnter10_ptr CReturnGateControllerEnter10_next(nullptr);
+        static info::CReturnGateControllerEnter10_clbk CReturnGateControllerEnter10_user(nullptr);
+        static info::CReturnGateControllerGetEmpty12_ptr CReturnGateControllerGetEmpty12_next(nullptr);
+        static info::CReturnGateControllerGetEmpty12_clbk CReturnGateControllerGetEmpty12_user(nullptr);
+        static info::CReturnGateControllerGetGate14_ptr CReturnGateControllerGetGate14_next(nullptr);
+        static info::CReturnGateControllerGetGate14_clbk CReturnGateControllerGetGate14_user(nullptr);
+        static info::CReturnGateControllerInit16_ptr CReturnGateControllerInit16_next(nullptr);
+        static info::CReturnGateControllerInit16_clbk CReturnGateControllerInit16_user(nullptr);
+        static info::CReturnGateControllerInstance18_ptr CReturnGateControllerInstance18_next(nullptr);
+        static info::CReturnGateControllerInstance18_clbk CReturnGateControllerInstance18_user(nullptr);
+        static info::CReturnGateControllerIsExistOwner20_ptr CReturnGateControllerIsExistOwner20_next(nullptr);
+        static info::CReturnGateControllerIsExistOwner20_clbk CReturnGateControllerIsExistOwner20_user(nullptr);
+        static info::CReturnGateControllerOnLoop22_ptr CReturnGateControllerOnLoop22_next(nullptr);
+        static info::CReturnGateControllerOnLoop22_clbk CReturnGateControllerOnLoop22_user(nullptr);
+        static info::CReturnGateControllerOpen24_ptr CReturnGateControllerOpen24_next(nullptr);
+        static info::CReturnGateControllerOpen24_clbk CReturnGateControllerOpen24_user(nullptr);
+        static info::CReturnGateControllerProcessEnter26_ptr CReturnGateControllerProcessEnter26_next(nullptr);
+        static info::CReturnGateControllerProcessEnter26_clbk CReturnGateControllerProcessEnter26_user(nullptr);
+        static info::CReturnGateControllerSendEnterResult28_ptr CReturnGateControllerSendEnterResult28_next(nullptr);
+        static info::CReturnGateControllerSendEnterResult28_clbk CReturnGateControllerSendEnterResult28_user(nullptr);
+        static info::CReturnGateControllerUpdateClose30_ptr CReturnGateControllerUpdateClose30_next(nullptr);
+        static info::CReturnGateControllerUpdateClose30_clbk CReturnGateControllerUpdateClose30_user(nullptr);
+        static info::CReturnGateControllerdtor_CReturnGateController34_ptr CReturnGateControllerdtor_CReturnGateController34_next(nullptr);
+        static info::CReturnGateControllerdtor_CReturnGateController34_clbk CReturnGateControllerdtor_CReturnGateController34_user(nullptr);
         
-        void CReturnGateControllerctor_CReturnGateController2_wrapper(struct CReturnGateController* _this)
+        static void CReturnGateControllerctor_CReturnGateController2_wrapper(struct CReturnGateController* _this)
         {
            CReturnGateControllerctor_CReturnGateController2_user(_this, CReturnGateControllerctor_CReturnGateController2_next);
         };
-        void CReturnGateControllerCleanUp4_wrapper(struct CReturnGateController* _this)
+        static void CReturnGateControllerCleanUp4_wrapper(struct CReturnGateController* _this)
         {
            CReturnGateControllerCleanUp4_user(_this, CReturnGateControllerCleanUp4_next);
         };
-        void CReturnGateControllerClose6_wrapper(struct CReturnGateController* _this, struct CReturnGate* pkGate)
+        static void CReturnGateControllerClose6_wrapper(struct CReturnGateController* _this, struct CReturnGate* pkGate)
         {
            CReturnGateControllerClose6_user(_this, pkGate, CReturnGateControllerClose6_next);
         };
-        void CReturnGateControllerDestroy8_wrapper()
+        static void CReturnGateControllerDestroy8_wrapper()
         {
            CReturnGateControllerDestroy8_user(CReturnGateControllerDestroy8_next);
         };
-        bool CReturnGateControllerEnter10_wrapper(struct CReturnGateController* _this, unsigned int uiGateInx, struct CPlayer* pkObj)
+        static bool CReturnGateControllerEnter10_wrapper(struct CReturnGateController* _this, unsigned int uiGateInx, struct CPlayer* pkObj)
         {
            return CReturnGateControllerEnter10_user(_this, uiGateInx, pkObj, CReturnGateControllerEnter10_next);
         };
-        struct CReturnGate* CReturnGateControllerGetEmpty12_wrapper(struct CReturnGateController* _this)
+        static struct CReturnGate* CReturnGateControllerGetEmpty12_wrapper(struct CReturnGateController* _this)
         {
            return CReturnGateControllerGetEmpty12_user(_this, CReturnGateControllerGetEmpty12_next);
         };
-        struct CReturnGate* CReturnGateControllerGetGate14_wrapper(struct CReturnGateController* _this, unsigned int uiInx)
+        static struct CReturnGate* CReturnGateControllerGetGate14_wrapper(struct CReturnGateController* _this, unsigned int uiInx)
         {
            return CReturnGateControllerGetGate14_user(_this, uiInx, CReturnGateControllerGetGate14_next);
         };
-        bool CReturnGateControllerInit16_wrapper(struct CReturnGateController* _this, unsigned int uiSize)
+        static bool CReturnGateControllerInit16_wrapper(struct CReturnGateController* _this, unsigned int uiSize)
         {
            return CReturnGateControllerInit16_user(_this, uiSize, CReturnGateControllerInit16_next);
         };
-        struct CReturnGateController* CReturnGateControllerInstance18_wrapper()
+        static struct CReturnGateController* CReturnGateControllerInstance18_wrapper()
         {
            return CReturnGateControllerInstance18_user(CReturnGateControllerInstance18_next);
         };
-        bool CReturnGateControllerIsExistOwner20_wrapper(struct CReturnGateController* _this, struct CPlayer* pkObj)
+        static bool CReturnGateControllerIsExistOwner20_wrapper(struct CReturnGateController* _this, struct CPlayer* pkObj)
         {
            return CReturnGateControllerIsExistOwner20_user(_this, pkObj, CReturnGateControllerIsExistOwner20_next);
         };
-        void CReturnGateControllerOnLoop22_wrapper(struct CReturnGateController* _this)
+        static void CReturnGateControllerOnLoop22_wrapper(struct CReturnGateController* _this)
         {
            CReturnGateControllerOnLoop22_user(_this, CReturnGateControllerOnLoop22_next);
         };
-        bool CReturnGateControllerOpen24_wrapper(struct CReturnGateController* _this, struct CPlayer* pkOwner)
+        static bool CReturnGateControllerOpen24_wrapper(struct CReturnGateController* _this, struct CPlayer* pkOwner)
         {
            return CReturnGateControllerOpen24_user(_this, pkOwner, CReturnGateControllerOpen24_next);
         };
-        int CReturnGateControllerProcessEnter26_wrapper(struct CReturnGateController* _this, unsigned int uiGateInx, struct CPlayer* pkObj)
+        static int CReturnGateControllerProcessEnter26_wrapper(struct CReturnGateController* _this, unsigned int uiGateInx, struct CPlayer* pkObj)
         {
            return CReturnGateControllerProcessEnter26_user(_this, uiGateInx, pkObj, CReturnGateControllerProcessEnter26_next);
         };
-        void CReturnGateControllerSendEnterResult28_wrapper(struct CReturnGateController* _this, int iResult, struct CPlayer* pkObj)
+        static void CReturnGateControllerSendEnterResult28_wrapper(struct CReturnGateController* _this, int iResult, struct CPlayer* pkObj)
         {
            CReturnGateControllerSendEnterResult28_user(_this, iResult, pkObj, CReturnGateControllerSendEnterResult28_next);
         };
-        void CReturnGateControllerUpdateClose30_wrapper(struct CReturnGateController* _this)
+        static void CReturnGateControllerUpdateClose30_wrapper(struct CReturnGateController* _this)
         {
            CReturnGateControllerUpdateClose30_user(_this, CReturnGateControllerUpdateClose30_next);
         };
-        void CReturnGateControllerdtor_CReturnGateController34_wrapper(struct CReturnGateController* _this)
+        static void CReturnGateControllerdtor_CReturnGateController34_wrapper(struct CReturnGateController* _this)
         {
            CReturnGateControllerdtor_CReturnGateController34_user(_this, CReturnGateControllerdtor_CReturnGateController34_next);
         };
         
-        hook_record CReturnGateController_functions[] = {
+        static hook_record CReturnGateController_functions[] = {
         {   (LPVOID)0x140250040L,
             (LPVOID *)&CReturnGateControllerctor_CReturnGateController2_user,
             (LPVOID *)&CReturnGateControllerctor_CReturnGateController2_next,
@@ -190,5 +190,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::AggroCaculateDatactor_AggroCaculateData2_ptr AggroCaculateDatactor_AggroCaculateData2_next(nullptr);
-        info::AggroCaculateDatactor_AggroCaculateData2_clbk AggroCaculateDatactor_AggroCaculateData2_user(nullptr);
-        info::AggroCaculateDataGetDefault4_ptr AggroCaculateDataGetDefault4_next(nullptr);
-        info::AggroCaculateDataGetDefault4_clbk AggroCaculateDataGetDefault4_user(nullptr);
-        info::AggroCaculateDataGetSize6_ptr AggroCaculateDataGetSize6_next(nullptr);
-        info::AggroCaculateDataGetSize6_clbk AggroCaculateDataGetSize6_user(nullptr);
-        info::AggroCaculateDataGetSpecialData8_ptr AggroCaculateDataGetSpecialData8_next(nullptr);
-        info::AggroCaculateDataGetSpecialData8_clbk AggroCaculateDataGetSpecialData8_user(nullptr);
-        info::AggroCaculateDataInit10_ptr AggroCaculateDataInit10_next(nullptr);
-        info::AggroCaculateDataInit10_clbk AggroCaculateDataInit10_user(nullptr);
-        info::AggroCaculateDataLoad12_ptr AggroCaculateDataLoad12_next(nullptr);
-        info::AggroCaculateDataLoad12_clbk AggroCaculateDataLoad12_user(nullptr);
-        info::AggroCaculateDataPushSpecialData14_ptr AggroCaculateDataPushSpecialData14_next(nullptr);
-        info::AggroCaculateDataPushSpecialData14_clbk AggroCaculateDataPushSpecialData14_user(nullptr);
+        static info::AggroCaculateDatactor_AggroCaculateData2_ptr AggroCaculateDatactor_AggroCaculateData2_next(nullptr);
+        static info::AggroCaculateDatactor_AggroCaculateData2_clbk AggroCaculateDatactor_AggroCaculateData2_user(nullptr);
+        static info::AggroCaculateDataGetDefault4_ptr AggroCaculateDataGetDefault4_next(nullptr);
+        static info::AggroCaculateDataGetDefault4_clbk AggroCaculateDataGetDefault4_user(nullptr);
+        static info::AggroCaculateDataGetSize6_ptr AggroCaculateDataGetSize6_next(nullptr);
+        static info::AggroCaculateDataGetSize6_clbk AggroCaculateDataGetSize6_user(nullptr);
+        static info::AggroCaculateDataGetSpecialData8_ptr AggroCaculateDataGetSpecialData8_next(nullptr);
+        static info::AggroCaculateDataGetSpecialData8_clbk AggroCaculateDataGetSpecialData8_user(nullptr);
+        static info::AggroCaculateDataInit10_ptr AggroCaculateDataInit10_next(nullptr);
+        static info::AggroCaculateDataInit10_clbk AggroCaculateDataInit10_user(nullptr);
+        static info::AggroCaculateDataLoad12_ptr AggroCaculateDataLoad12_next(nullptr);
+        static info::AggroCaculateDataLoad12_clbk AggroCaculateDataLoad12_user(nullptr);
+        static info::AggroCaculateDataPushSpecialData14_ptr AggroCaculateDataPushSpecialData14_next(nullptr);
+        static info::AggroCaculateDataPushSpecialData14_clbk AggroCaculateDataPushSpecialData14_user(nullptr);
         
-        void AggroCaculateDatactor_AggroCaculateData2_wrapper(struct AggroCaculateData* _this)
+        static void AggroCaculateDatactor_AggroCaculateData2_wrapper(struct AggroCaculateData* _this)
         {
            AggroCaculateDatactor_AggroCaculateData2_user(_this, AggroCaculateDatactor_AggroCaculateData2_next);
         };
-        int AggroCaculateDataGetDefault4_wrapper(struct AggroCaculateData* _this, unsigned int dwKind)
+        static int AggroCaculateDataGetDefault4_wrapper(struct AggroCaculateData* _this, unsigned int dwKind)
         {
            return AggroCaculateDataGetDefault4_user(_this, dwKind, AggroCaculateDataGetDefault4_next);
         };
-        int AggroCaculateDataGetSize6_wrapper(struct AggroCaculateData* _this)
+        static int AggroCaculateDataGetSize6_wrapper(struct AggroCaculateData* _this)
         {
            return AggroCaculateDataGetSize6_user(_this, AggroCaculateDataGetSize6_next);
         };
-        int AggroCaculateDataGetSpecialData8_wrapper(struct AggroCaculateData* _this, char byAttackType, uint16_t wIndex)
+        static int AggroCaculateDataGetSpecialData8_wrapper(struct AggroCaculateData* _this, char byAttackType, uint16_t wIndex)
         {
            return AggroCaculateDataGetSpecialData8_user(_this, byAttackType, wIndex, AggroCaculateDataGetSpecialData8_next);
         };
-        void AggroCaculateDataInit10_wrapper(struct AggroCaculateData* _this)
+        static void AggroCaculateDataInit10_wrapper(struct AggroCaculateData* _this)
         {
            AggroCaculateDataInit10_user(_this, AggroCaculateDataInit10_next);
         };
-        int AggroCaculateDataLoad12_wrapper(struct AggroCaculateData* _this, char* strFileName)
+        static int AggroCaculateDataLoad12_wrapper(struct AggroCaculateData* _this, char* strFileName)
         {
            return AggroCaculateDataLoad12_user(_this, strFileName, AggroCaculateDataLoad12_next);
         };
-        int AggroCaculateDataPushSpecialData14_wrapper(struct AggroCaculateData* _this, char byAttackType, uint16_t wIndex, int nValue)
+        static int AggroCaculateDataPushSpecialData14_wrapper(struct AggroCaculateData* _this, char byAttackType, uint16_t wIndex, int nValue)
         {
            return AggroCaculateDataPushSpecialData14_user(_this, byAttackType, wIndex, nValue, AggroCaculateDataPushSpecialData14_next);
         };
         
-        hook_record AggroCaculateData_functions[] = {
+        static hook_record AggroCaculateData_functions[] = {
         {   (LPVOID)0x14015beb0L,
             (LPVOID *)&AggroCaculateDatactor_AggroCaculateData2_user,
             (LPVOID *)&AggroCaculateDatactor_AggroCaculateData2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

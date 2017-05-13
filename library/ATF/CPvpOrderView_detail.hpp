@@ -8,147 +8,147 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPvpOrderViewGetPvpCash2_ptr CPvpOrderViewGetPvpCash2_next(nullptr);
-        info::CPvpOrderViewGetPvpCash2_clbk CPvpOrderViewGetPvpCash2_user(nullptr);
-        info::CPvpOrderViewGetPvpTempCash4_ptr CPvpOrderViewGetPvpTempCash4_next(nullptr);
-        info::CPvpOrderViewGetPvpTempCash4_clbk CPvpOrderViewGetPvpTempCash4_user(nullptr);
-        info::CPvpOrderViewInit6_ptr CPvpOrderViewInit6_next(nullptr);
-        info::CPvpOrderViewInit6_clbk CPvpOrderViewInit6_user(nullptr);
-        info::CPvpOrderViewLoop8_ptr CPvpOrderViewLoop8_next(nullptr);
-        info::CPvpOrderViewLoop8_clbk CPvpOrderViewLoop8_user(nullptr);
-        info::CPvpOrderViewNotify_OrderView10_ptr CPvpOrderViewNotify_OrderView10_next(nullptr);
-        info::CPvpOrderViewNotify_OrderView10_clbk CPvpOrderViewNotify_OrderView10_user(nullptr);
-        info::CPvpOrderViewNotify_Point12_ptr CPvpOrderViewNotify_Point12_next(nullptr);
-        info::CPvpOrderViewNotify_Point12_clbk CPvpOrderViewNotify_Point12_user(nullptr);
-        info::CPvpOrderViewNotify_PvPEnd14_ptr CPvpOrderViewNotify_PvPEnd14_next(nullptr);
-        info::CPvpOrderViewNotify_PvPEnd14_clbk CPvpOrderViewNotify_PvPEnd14_user(nullptr);
-        info::CPvpOrderViewNotify_PvpTempCash16_ptr CPvpOrderViewNotify_PvpTempCash16_next(nullptr);
-        info::CPvpOrderViewNotify_PvpTempCash16_clbk CPvpOrderViewNotify_PvpTempCash16_user(nullptr);
-        info::CPvpOrderViewResetPvPOrderView18_ptr CPvpOrderViewResetPvPOrderView18_next(nullptr);
-        info::CPvpOrderViewResetPvPOrderView18_clbk CPvpOrderViewResetPvPOrderView18_user(nullptr);
-        info::CPvpOrderViewSetOrderViewAttackState20_ptr CPvpOrderViewSetOrderViewAttackState20_next(nullptr);
-        info::CPvpOrderViewSetOrderViewAttackState20_clbk CPvpOrderViewSetOrderViewAttackState20_user(nullptr);
-        info::CPvpOrderViewSetOrderViewDamagedState22_ptr CPvpOrderViewSetOrderViewDamagedState22_next(nullptr);
-        info::CPvpOrderViewSetOrderViewDamagedState22_clbk CPvpOrderViewSetOrderViewDamagedState22_user(nullptr);
-        info::CPvpOrderViewSetPvpCash24_ptr CPvpOrderViewSetPvpCash24_next(nullptr);
-        info::CPvpOrderViewSetPvpCash24_clbk CPvpOrderViewSetPvpCash24_user(nullptr);
-        info::CPvpOrderViewSetPvpOrderView26_ptr CPvpOrderViewSetPvpOrderView26_next(nullptr);
-        info::CPvpOrderViewSetPvpOrderView26_clbk CPvpOrderViewSetPvpOrderView26_user(nullptr);
-        info::CPvpOrderViewUpdate28_ptr CPvpOrderViewUpdate28_next(nullptr);
-        info::CPvpOrderViewUpdate28_clbk CPvpOrderViewUpdate28_user(nullptr);
-        info::CPvpOrderViewUpdatePvPDeath30_ptr CPvpOrderViewUpdatePvPDeath30_next(nullptr);
-        info::CPvpOrderViewUpdatePvPDeath30_clbk CPvpOrderViewUpdatePvPDeath30_user(nullptr);
-        info::CPvpOrderViewUpdatePvPKill32_ptr CPvpOrderViewUpdatePvPKill32_next(nullptr);
-        info::CPvpOrderViewUpdatePvPKill32_clbk CPvpOrderViewUpdatePvPKill32_user(nullptr);
-        info::CPvpOrderViewUpdatePvPPoint34_ptr CPvpOrderViewUpdatePvPPoint34_next(nullptr);
-        info::CPvpOrderViewUpdatePvPPoint34_clbk CPvpOrderViewUpdatePvPPoint34_user(nullptr);
-        info::CPvpOrderViewUpdatePvpCash36_ptr CPvpOrderViewUpdatePvpCash36_next(nullptr);
-        info::CPvpOrderViewUpdatePvpCash36_clbk CPvpOrderViewUpdatePvpCash36_user(nullptr);
-        info::CPvpOrderViewUpdate_ContHaveCash38_ptr CPvpOrderViewUpdate_ContHaveCash38_next(nullptr);
-        info::CPvpOrderViewUpdate_ContHaveCash38_clbk CPvpOrderViewUpdate_ContHaveCash38_user(nullptr);
-        info::CPvpOrderViewUpdate_ContLoseCash40_ptr CPvpOrderViewUpdate_ContLoseCash40_next(nullptr);
-        info::CPvpOrderViewUpdate_ContLoseCash40_clbk CPvpOrderViewUpdate_ContLoseCash40_user(nullptr);
-        info::CPvpOrderViewUpdate_KillerList42_ptr CPvpOrderViewUpdate_KillerList42_next(nullptr);
-        info::CPvpOrderViewUpdate_KillerList42_clbk CPvpOrderViewUpdate_KillerList42_user(nullptr);
-        info::CPvpOrderViewUpdate_PvpTempCash44_ptr CPvpOrderViewUpdate_PvpTempCash44_next(nullptr);
-        info::CPvpOrderViewUpdate_PvpTempCash44_clbk CPvpOrderViewUpdate_PvpTempCash44_user(nullptr);
-        info::CPvpOrderViewUpdate_RaceWarRecvr46_ptr CPvpOrderViewUpdate_RaceWarRecvr46_next(nullptr);
-        info::CPvpOrderViewUpdate_RaceWarRecvr46_clbk CPvpOrderViewUpdate_RaceWarRecvr46_user(nullptr);
+        static info::CPvpOrderViewGetPvpCash2_ptr CPvpOrderViewGetPvpCash2_next(nullptr);
+        static info::CPvpOrderViewGetPvpCash2_clbk CPvpOrderViewGetPvpCash2_user(nullptr);
+        static info::CPvpOrderViewGetPvpTempCash4_ptr CPvpOrderViewGetPvpTempCash4_next(nullptr);
+        static info::CPvpOrderViewGetPvpTempCash4_clbk CPvpOrderViewGetPvpTempCash4_user(nullptr);
+        static info::CPvpOrderViewInit6_ptr CPvpOrderViewInit6_next(nullptr);
+        static info::CPvpOrderViewInit6_clbk CPvpOrderViewInit6_user(nullptr);
+        static info::CPvpOrderViewLoop8_ptr CPvpOrderViewLoop8_next(nullptr);
+        static info::CPvpOrderViewLoop8_clbk CPvpOrderViewLoop8_user(nullptr);
+        static info::CPvpOrderViewNotify_OrderView10_ptr CPvpOrderViewNotify_OrderView10_next(nullptr);
+        static info::CPvpOrderViewNotify_OrderView10_clbk CPvpOrderViewNotify_OrderView10_user(nullptr);
+        static info::CPvpOrderViewNotify_Point12_ptr CPvpOrderViewNotify_Point12_next(nullptr);
+        static info::CPvpOrderViewNotify_Point12_clbk CPvpOrderViewNotify_Point12_user(nullptr);
+        static info::CPvpOrderViewNotify_PvPEnd14_ptr CPvpOrderViewNotify_PvPEnd14_next(nullptr);
+        static info::CPvpOrderViewNotify_PvPEnd14_clbk CPvpOrderViewNotify_PvPEnd14_user(nullptr);
+        static info::CPvpOrderViewNotify_PvpTempCash16_ptr CPvpOrderViewNotify_PvpTempCash16_next(nullptr);
+        static info::CPvpOrderViewNotify_PvpTempCash16_clbk CPvpOrderViewNotify_PvpTempCash16_user(nullptr);
+        static info::CPvpOrderViewResetPvPOrderView18_ptr CPvpOrderViewResetPvPOrderView18_next(nullptr);
+        static info::CPvpOrderViewResetPvPOrderView18_clbk CPvpOrderViewResetPvPOrderView18_user(nullptr);
+        static info::CPvpOrderViewSetOrderViewAttackState20_ptr CPvpOrderViewSetOrderViewAttackState20_next(nullptr);
+        static info::CPvpOrderViewSetOrderViewAttackState20_clbk CPvpOrderViewSetOrderViewAttackState20_user(nullptr);
+        static info::CPvpOrderViewSetOrderViewDamagedState22_ptr CPvpOrderViewSetOrderViewDamagedState22_next(nullptr);
+        static info::CPvpOrderViewSetOrderViewDamagedState22_clbk CPvpOrderViewSetOrderViewDamagedState22_user(nullptr);
+        static info::CPvpOrderViewSetPvpCash24_ptr CPvpOrderViewSetPvpCash24_next(nullptr);
+        static info::CPvpOrderViewSetPvpCash24_clbk CPvpOrderViewSetPvpCash24_user(nullptr);
+        static info::CPvpOrderViewSetPvpOrderView26_ptr CPvpOrderViewSetPvpOrderView26_next(nullptr);
+        static info::CPvpOrderViewSetPvpOrderView26_clbk CPvpOrderViewSetPvpOrderView26_user(nullptr);
+        static info::CPvpOrderViewUpdate28_ptr CPvpOrderViewUpdate28_next(nullptr);
+        static info::CPvpOrderViewUpdate28_clbk CPvpOrderViewUpdate28_user(nullptr);
+        static info::CPvpOrderViewUpdatePvPDeath30_ptr CPvpOrderViewUpdatePvPDeath30_next(nullptr);
+        static info::CPvpOrderViewUpdatePvPDeath30_clbk CPvpOrderViewUpdatePvPDeath30_user(nullptr);
+        static info::CPvpOrderViewUpdatePvPKill32_ptr CPvpOrderViewUpdatePvPKill32_next(nullptr);
+        static info::CPvpOrderViewUpdatePvPKill32_clbk CPvpOrderViewUpdatePvPKill32_user(nullptr);
+        static info::CPvpOrderViewUpdatePvPPoint34_ptr CPvpOrderViewUpdatePvPPoint34_next(nullptr);
+        static info::CPvpOrderViewUpdatePvPPoint34_clbk CPvpOrderViewUpdatePvPPoint34_user(nullptr);
+        static info::CPvpOrderViewUpdatePvpCash36_ptr CPvpOrderViewUpdatePvpCash36_next(nullptr);
+        static info::CPvpOrderViewUpdatePvpCash36_clbk CPvpOrderViewUpdatePvpCash36_user(nullptr);
+        static info::CPvpOrderViewUpdate_ContHaveCash38_ptr CPvpOrderViewUpdate_ContHaveCash38_next(nullptr);
+        static info::CPvpOrderViewUpdate_ContHaveCash38_clbk CPvpOrderViewUpdate_ContHaveCash38_user(nullptr);
+        static info::CPvpOrderViewUpdate_ContLoseCash40_ptr CPvpOrderViewUpdate_ContLoseCash40_next(nullptr);
+        static info::CPvpOrderViewUpdate_ContLoseCash40_clbk CPvpOrderViewUpdate_ContLoseCash40_user(nullptr);
+        static info::CPvpOrderViewUpdate_KillerList42_ptr CPvpOrderViewUpdate_KillerList42_next(nullptr);
+        static info::CPvpOrderViewUpdate_KillerList42_clbk CPvpOrderViewUpdate_KillerList42_user(nullptr);
+        static info::CPvpOrderViewUpdate_PvpTempCash44_ptr CPvpOrderViewUpdate_PvpTempCash44_next(nullptr);
+        static info::CPvpOrderViewUpdate_PvpTempCash44_clbk CPvpOrderViewUpdate_PvpTempCash44_user(nullptr);
+        static info::CPvpOrderViewUpdate_RaceWarRecvr46_ptr CPvpOrderViewUpdate_RaceWarRecvr46_next(nullptr);
+        static info::CPvpOrderViewUpdate_RaceWarRecvr46_clbk CPvpOrderViewUpdate_RaceWarRecvr46_user(nullptr);
         
-        long double CPvpOrderViewGetPvpCash2_wrapper(struct CPvpOrderView* _this)
+        static long double CPvpOrderViewGetPvpCash2_wrapper(struct CPvpOrderView* _this)
         {
            return CPvpOrderViewGetPvpCash2_user(_this, CPvpOrderViewGetPvpCash2_next);
         };
-        long double CPvpOrderViewGetPvpTempCash4_wrapper(struct CPvpOrderView* _this)
+        static long double CPvpOrderViewGetPvpTempCash4_wrapper(struct CPvpOrderView* _this)
         {
            return CPvpOrderViewGetPvpTempCash4_user(_this, CPvpOrderViewGetPvpTempCash4_next);
         };
-        bool CPvpOrderViewInit6_wrapper(struct CPvpOrderView* _this)
+        static bool CPvpOrderViewInit6_wrapper(struct CPvpOrderView* _this)
         {
            return CPvpOrderViewInit6_user(_this, CPvpOrderViewInit6_next);
         };
-        void CPvpOrderViewLoop8_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
+        static void CPvpOrderViewLoop8_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
         {
            CPvpOrderViewLoop8_user(_this, wIndex, CPvpOrderViewLoop8_next);
         };
-        void CPvpOrderViewNotify_OrderView10_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
+        static void CPvpOrderViewNotify_OrderView10_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
         {
            CPvpOrderViewNotify_OrderView10_user(_this, wIndex, CPvpOrderViewNotify_OrderView10_next);
         };
-        void CPvpOrderViewNotify_Point12_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, long double dChangePoint, unsigned int dwTarSerial)
+        static void CPvpOrderViewNotify_Point12_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, long double dChangePoint, unsigned int dwTarSerial)
         {
            CPvpOrderViewNotify_Point12_user(_this, wIndex, dChangePoint, dwTarSerial, CPvpOrderViewNotify_Point12_next);
         };
-        void CPvpOrderViewNotify_PvPEnd14_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
+        static void CPvpOrderViewNotify_PvPEnd14_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
         {
            CPvpOrderViewNotify_PvPEnd14_user(_this, wIndex, CPvpOrderViewNotify_PvPEnd14_next);
         };
-        void CPvpOrderViewNotify_PvpTempCash16_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
+        static void CPvpOrderViewNotify_PvpTempCash16_wrapper(struct CPvpOrderView* _this, uint16_t wIndex)
         {
            CPvpOrderViewNotify_PvpTempCash16_user(_this, wIndex, CPvpOrderViewNotify_PvpTempCash16_next);
         };
-        void CPvpOrderViewResetPvPOrderView18_wrapper(struct CPvpOrderView* _this)
+        static void CPvpOrderViewResetPvPOrderView18_wrapper(struct CPvpOrderView* _this)
         {
            CPvpOrderViewResetPvPOrderView18_user(_this, CPvpOrderViewResetPvPOrderView18_next);
         };
-        void CPvpOrderViewSetOrderViewAttackState20_wrapper(struct CPvpOrderView* _this)
+        static void CPvpOrderViewSetOrderViewAttackState20_wrapper(struct CPvpOrderView* _this)
         {
            CPvpOrderViewSetOrderViewAttackState20_user(_this, CPvpOrderViewSetOrderViewAttackState20_next);
         };
-        void CPvpOrderViewSetOrderViewDamagedState22_wrapper(struct CPvpOrderView* _this)
+        static void CPvpOrderViewSetOrderViewDamagedState22_wrapper(struct CPvpOrderView* _this)
         {
            CPvpOrderViewSetOrderViewDamagedState22_user(_this, CPvpOrderViewSetOrderViewDamagedState22_next);
         };
-        void CPvpOrderViewSetPvpCash24_wrapper(struct CPvpOrderView* _this, long double dAlter)
+        static void CPvpOrderViewSetPvpCash24_wrapper(struct CPvpOrderView* _this, long double dAlter)
         {
            CPvpOrderViewSetPvpCash24_user(_this, dAlter, CPvpOrderViewSetPvpCash24_next);
         };
-        bool CPvpOrderViewSetPvpOrderView26_wrapper(struct CPvpOrderView* _this, long double dPvpPoint, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo, struct CPlayer* pOne)
+        static bool CPvpOrderViewSetPvpOrderView26_wrapper(struct CPvpOrderView* _this, long double dPvpPoint, struct _PVP_ORDER_VIEW_DB_BASE* pkInfo, struct CPlayer* pOne)
         {
            return CPvpOrderViewSetPvpOrderView26_user(_this, dPvpPoint, pkInfo, pOne, CPvpOrderViewSetPvpOrderView26_next);
         };
-        void CPvpOrderViewUpdate28_wrapper(struct CPvpOrderView* _this, int64_t tUpdateDate, int nDeath, int nKill, long double dTodayStacked, long double dPvpPoint, long double dPvpTempCash)
+        static void CPvpOrderViewUpdate28_wrapper(struct CPvpOrderView* _this, int64_t tUpdateDate, int nDeath, int nKill, long double dTodayStacked, long double dPvpPoint, long double dPvpTempCash)
         {
            CPvpOrderViewUpdate28_user(_this, tUpdateDate, nDeath, nKill, dTodayStacked, dPvpPoint, dPvpTempCash, CPvpOrderViewUpdate28_next);
         };
-        void CPvpOrderViewUpdatePvPDeath30_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, unsigned int dwTarSerial)
+        static void CPvpOrderViewUpdatePvPDeath30_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, unsigned int dwTarSerial)
         {
            CPvpOrderViewUpdatePvPDeath30_user(_this, wIndex, dwTarSerial, CPvpOrderViewUpdatePvPDeath30_next);
         };
-        void CPvpOrderViewUpdatePvPKill32_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, unsigned int dwTarSerial)
+        static void CPvpOrderViewUpdatePvPKill32_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, unsigned int dwTarSerial)
         {
            CPvpOrderViewUpdatePvPKill32_user(_this, wIndex, dwTarSerial, CPvpOrderViewUpdatePvPKill32_next);
         };
-        void CPvpOrderViewUpdatePvPPoint34_wrapper(struct CPvpOrderView* _this, long double dUpPoint, long double dNewPoint)
+        static void CPvpOrderViewUpdatePvPPoint34_wrapper(struct CPvpOrderView* _this, long double dUpPoint, long double dNewPoint)
         {
            CPvpOrderViewUpdatePvPPoint34_user(_this, dUpPoint, dNewPoint, CPvpOrderViewUpdatePvPPoint34_next);
         };
-        void CPvpOrderViewUpdatePvpCash36_wrapper(struct CPvpOrderView* _this, long double dPvpCash)
+        static void CPvpOrderViewUpdatePvpCash36_wrapper(struct CPvpOrderView* _this, long double dPvpCash)
         {
            CPvpOrderViewUpdatePvpCash36_user(_this, dPvpCash, CPvpOrderViewUpdatePvpCash36_next);
         };
-        void CPvpOrderViewUpdate_ContHaveCash38_wrapper(struct CPvpOrderView* _this, char byCnt)
+        static void CPvpOrderViewUpdate_ContHaveCash38_wrapper(struct CPvpOrderView* _this, char byCnt)
         {
            CPvpOrderViewUpdate_ContHaveCash38_user(_this, byCnt, CPvpOrderViewUpdate_ContHaveCash38_next);
         };
-        void CPvpOrderViewUpdate_ContLoseCash40_wrapper(struct CPvpOrderView* _this, char byCnt)
+        static void CPvpOrderViewUpdate_ContLoseCash40_wrapper(struct CPvpOrderView* _this, char byCnt)
         {
            CPvpOrderViewUpdate_ContLoseCash40_user(_this, byCnt, CPvpOrderViewUpdate_ContLoseCash40_next);
         };
-        void CPvpOrderViewUpdate_KillerList42_wrapper(struct CPvpOrderView* _this, unsigned int dwSerial, int nIndex)
+        static void CPvpOrderViewUpdate_KillerList42_wrapper(struct CPvpOrderView* _this, unsigned int dwSerial, int nIndex)
         {
            CPvpOrderViewUpdate_KillerList42_user(_this, dwSerial, nIndex, CPvpOrderViewUpdate_KillerList42_next);
         };
-        void CPvpOrderViewUpdate_PvpTempCash44_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, long double dTempPvpCash)
+        static void CPvpOrderViewUpdate_PvpTempCash44_wrapper(struct CPvpOrderView* _this, uint16_t wIndex, long double dTempPvpCash)
         {
            CPvpOrderViewUpdate_PvpTempCash44_user(_this, wIndex, dTempPvpCash, CPvpOrderViewUpdate_PvpTempCash44_next);
         };
-        void CPvpOrderViewUpdate_RaceWarRecvr46_wrapper(struct CPvpOrderView* _this, bool bUse)
+        static void CPvpOrderViewUpdate_RaceWarRecvr46_wrapper(struct CPvpOrderView* _this, bool bUse)
         {
            CPvpOrderViewUpdate_RaceWarRecvr46_user(_this, bUse, CPvpOrderViewUpdate_RaceWarRecvr46_next);
         };
         
-        hook_record CPvpOrderView_functions[] = {
+        static hook_record CPvpOrderView_functions[] = {
         {   (LPVOID)0x14007c2e0L,
             (LPVOID *)&CPvpOrderViewGetPvpCash2_user,
             (LPVOID *)&CPvpOrderViewGetPvpCash2_next,
@@ -267,5 +267,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

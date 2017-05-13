@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_moveorector__qry_case_amine_moveore2_ptr _qry_case_amine_moveorector__qry_case_amine_moveore2_next(nullptr);
-        info::_qry_case_amine_moveorector__qry_case_amine_moveore2_clbk _qry_case_amine_moveorector__qry_case_amine_moveore2_user(nullptr);
-        info::_qry_case_amine_moveoresize4_ptr _qry_case_amine_moveoresize4_next(nullptr);
-        info::_qry_case_amine_moveoresize4_clbk _qry_case_amine_moveoresize4_user(nullptr);
+        static info::_qry_case_amine_moveorector__qry_case_amine_moveore2_ptr _qry_case_amine_moveorector__qry_case_amine_moveore2_next(nullptr);
+        static info::_qry_case_amine_moveorector__qry_case_amine_moveore2_clbk _qry_case_amine_moveorector__qry_case_amine_moveore2_user(nullptr);
+        static info::_qry_case_amine_moveoresize4_ptr _qry_case_amine_moveoresize4_next(nullptr);
+        static info::_qry_case_amine_moveoresize4_clbk _qry_case_amine_moveoresize4_user(nullptr);
         
-        void _qry_case_amine_moveorector__qry_case_amine_moveore2_wrapper(struct _qry_case_amine_moveore* _this)
+        static void _qry_case_amine_moveorector__qry_case_amine_moveore2_wrapper(struct _qry_case_amine_moveore* _this)
         {
            _qry_case_amine_moveorector__qry_case_amine_moveore2_user(_this, _qry_case_amine_moveorector__qry_case_amine_moveore2_next);
         };
-        int _qry_case_amine_moveoresize4_wrapper(struct _qry_case_amine_moveore* _this)
+        static int _qry_case_amine_moveoresize4_wrapper(struct _qry_case_amine_moveore* _this)
         {
            return _qry_case_amine_moveoresize4_user(_this, _qry_case_amine_moveoresize4_next);
         };
         
-        hook_record _qry_case_amine_moveore_functions[] = {
+        static hook_record _qry_case_amine_moveore_functions[] = {
         {   (LPVOID)0x1402d4350L,
             (LPVOID *)&_qry_case_amine_moveorector__qry_case_amine_moveore2_user,
             (LPVOID *)&_qry_case_amine_moveorector__qry_case_amine_moveore2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

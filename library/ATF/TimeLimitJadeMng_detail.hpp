@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TimeLimitJadeMngDeleteList2_ptr TimeLimitJadeMngDeleteList2_next(nullptr);
-        info::TimeLimitJadeMngDeleteList2_clbk TimeLimitJadeMngDeleteList2_user(nullptr);
-        info::TimeLimitJadeMngGetSheet4_ptr TimeLimitJadeMngGetSheet4_next(nullptr);
-        info::TimeLimitJadeMngGetSheet4_clbk TimeLimitJadeMngGetSheet4_user(nullptr);
-        info::TimeLimitJadeMngInit6_ptr TimeLimitJadeMngInit6_next(nullptr);
-        info::TimeLimitJadeMngInit6_clbk TimeLimitJadeMngInit6_user(nullptr);
-        info::TimeLimitJadeMngInsertList8_ptr TimeLimitJadeMngInsertList8_next(nullptr);
-        info::TimeLimitJadeMngInsertList8_clbk TimeLimitJadeMngInsertList8_user(nullptr);
-        info::TimeLimitJadeMngInstance10_ptr TimeLimitJadeMngInstance10_next(nullptr);
-        info::TimeLimitJadeMngInstance10_clbk TimeLimitJadeMngInstance10_user(nullptr);
-        info::TimeLimitJadeMngRelease12_ptr TimeLimitJadeMngRelease12_next(nullptr);
-        info::TimeLimitJadeMngRelease12_clbk TimeLimitJadeMngRelease12_user(nullptr);
-        info::TimeLimitJadeMngReleaseAll14_ptr TimeLimitJadeMngReleaseAll14_next(nullptr);
-        info::TimeLimitJadeMngReleaseAll14_clbk TimeLimitJadeMngReleaseAll14_user(nullptr);
-        info::TimeLimitJadeMngctor_TimeLimitJadeMng16_ptr TimeLimitJadeMngctor_TimeLimitJadeMng16_next(nullptr);
-        info::TimeLimitJadeMngctor_TimeLimitJadeMng16_clbk TimeLimitJadeMngctor_TimeLimitJadeMng16_user(nullptr);
-        info::TimeLimitJadeMngdtor_TimeLimitJadeMng20_ptr TimeLimitJadeMngdtor_TimeLimitJadeMng20_next(nullptr);
-        info::TimeLimitJadeMngdtor_TimeLimitJadeMng20_clbk TimeLimitJadeMngdtor_TimeLimitJadeMng20_user(nullptr);
+        static info::TimeLimitJadeMngDeleteList2_ptr TimeLimitJadeMngDeleteList2_next(nullptr);
+        static info::TimeLimitJadeMngDeleteList2_clbk TimeLimitJadeMngDeleteList2_user(nullptr);
+        static info::TimeLimitJadeMngGetSheet4_ptr TimeLimitJadeMngGetSheet4_next(nullptr);
+        static info::TimeLimitJadeMngGetSheet4_clbk TimeLimitJadeMngGetSheet4_user(nullptr);
+        static info::TimeLimitJadeMngInit6_ptr TimeLimitJadeMngInit6_next(nullptr);
+        static info::TimeLimitJadeMngInit6_clbk TimeLimitJadeMngInit6_user(nullptr);
+        static info::TimeLimitJadeMngInsertList8_ptr TimeLimitJadeMngInsertList8_next(nullptr);
+        static info::TimeLimitJadeMngInsertList8_clbk TimeLimitJadeMngInsertList8_user(nullptr);
+        static info::TimeLimitJadeMngInstance10_ptr TimeLimitJadeMngInstance10_next(nullptr);
+        static info::TimeLimitJadeMngInstance10_clbk TimeLimitJadeMngInstance10_user(nullptr);
+        static info::TimeLimitJadeMngRelease12_ptr TimeLimitJadeMngRelease12_next(nullptr);
+        static info::TimeLimitJadeMngRelease12_clbk TimeLimitJadeMngRelease12_user(nullptr);
+        static info::TimeLimitJadeMngReleaseAll14_ptr TimeLimitJadeMngReleaseAll14_next(nullptr);
+        static info::TimeLimitJadeMngReleaseAll14_clbk TimeLimitJadeMngReleaseAll14_user(nullptr);
+        static info::TimeLimitJadeMngctor_TimeLimitJadeMng16_ptr TimeLimitJadeMngctor_TimeLimitJadeMng16_next(nullptr);
+        static info::TimeLimitJadeMngctor_TimeLimitJadeMng16_clbk TimeLimitJadeMngctor_TimeLimitJadeMng16_user(nullptr);
+        static info::TimeLimitJadeMngdtor_TimeLimitJadeMng20_ptr TimeLimitJadeMngdtor_TimeLimitJadeMng20_next(nullptr);
+        static info::TimeLimitJadeMngdtor_TimeLimitJadeMng20_clbk TimeLimitJadeMngdtor_TimeLimitJadeMng20_user(nullptr);
         
-        bool TimeLimitJadeMngDeleteList2_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool TimeLimitJadeMngDeleteList2_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return TimeLimitJadeMngDeleteList2_user(_this, wIdx, pkItem, TimeLimitJadeMngDeleteList2_next);
         };
-        struct TimeLimitJade* TimeLimitJadeMngGetSheet4_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIndex)
+        static struct TimeLimitJade* TimeLimitJadeMngGetSheet4_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIndex)
         {
            return TimeLimitJadeMngGetSheet4_user(_this, wIndex, TimeLimitJadeMngGetSheet4_next);
         };
-        bool TimeLimitJadeMngInit6_wrapper(struct TimeLimitJadeMng* _this)
+        static bool TimeLimitJadeMngInit6_wrapper(struct TimeLimitJadeMng* _this)
         {
            return TimeLimitJadeMngInit6_user(_this, TimeLimitJadeMngInit6_next);
         };
-        bool TimeLimitJadeMngInsertList8_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx, struct _STORAGE_LIST::_db_con* pkItem)
+        static bool TimeLimitJadeMngInsertList8_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx, struct _STORAGE_LIST::_db_con* pkItem)
         {
            return TimeLimitJadeMngInsertList8_user(_this, wIdx, pkItem, TimeLimitJadeMngInsertList8_next);
         };
-        struct TimeLimitJadeMng* TimeLimitJadeMngInstance10_wrapper()
+        static struct TimeLimitJadeMng* TimeLimitJadeMngInstance10_wrapper()
         {
            return TimeLimitJadeMngInstance10_user(TimeLimitJadeMngInstance10_next);
         };
-        void TimeLimitJadeMngRelease12_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx)
+        static void TimeLimitJadeMngRelease12_wrapper(struct TimeLimitJadeMng* _this, uint16_t wIdx)
         {
            TimeLimitJadeMngRelease12_user(_this, wIdx, TimeLimitJadeMngRelease12_next);
         };
-        void TimeLimitJadeMngReleaseAll14_wrapper(struct TimeLimitJadeMng* _this)
+        static void TimeLimitJadeMngReleaseAll14_wrapper(struct TimeLimitJadeMng* _this)
         {
            TimeLimitJadeMngReleaseAll14_user(_this, TimeLimitJadeMngReleaseAll14_next);
         };
-        void TimeLimitJadeMngctor_TimeLimitJadeMng16_wrapper(struct TimeLimitJadeMng* _this)
+        static void TimeLimitJadeMngctor_TimeLimitJadeMng16_wrapper(struct TimeLimitJadeMng* _this)
         {
            TimeLimitJadeMngctor_TimeLimitJadeMng16_user(_this, TimeLimitJadeMngctor_TimeLimitJadeMng16_next);
         };
-        void TimeLimitJadeMngdtor_TimeLimitJadeMng20_wrapper(struct TimeLimitJadeMng* _this)
+        static void TimeLimitJadeMngdtor_TimeLimitJadeMng20_wrapper(struct TimeLimitJadeMng* _this)
         {
            TimeLimitJadeMngdtor_TimeLimitJadeMng20_user(_this, TimeLimitJadeMngdtor_TimeLimitJadeMng20_next);
         };
         
-        hook_record TimeLimitJadeMng_functions[] = {
+        static hook_record TimeLimitJadeMng_functions[] = {
         {   (LPVOID)0x1403fac50L,
             (LPVOID *)&TimeLimitJadeMngDeleteList2_user,
             (LPVOID *)&TimeLimitJadeMngDeleteList2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

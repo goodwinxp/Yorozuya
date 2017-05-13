@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ItemCombineMgrCheckLoadData2_ptr ItemCombineMgrCheckLoadData2_next(nullptr);
-        info::ItemCombineMgrCheckLoadData2_clbk ItemCombineMgrCheckLoadData2_user(nullptr);
-        info::ItemCombineMgrClearDB_CombineResult4_ptr ItemCombineMgrClearDB_CombineResult4_next(nullptr);
-        info::ItemCombineMgrClearDB_CombineResult4_clbk ItemCombineMgrClearDB_CombineResult4_user(nullptr);
-        info::ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_ptr ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_next(nullptr);
-        info::ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_clbk ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_user(nullptr);
-        info::ItemCombineMgrInitMgr8_ptr ItemCombineMgrInitMgr8_next(nullptr);
-        info::ItemCombineMgrInitMgr8_clbk ItemCombineMgrInitMgr8_user(nullptr);
-        info::ItemCombineMgrctor_ItemCombineMgr10_ptr ItemCombineMgrctor_ItemCombineMgr10_next(nullptr);
-        info::ItemCombineMgrctor_ItemCombineMgr10_clbk ItemCombineMgrctor_ItemCombineMgr10_user(nullptr);
-        info::ItemCombineMgrLoadDB_CombineResult12_ptr ItemCombineMgrLoadDB_CombineResult12_next(nullptr);
-        info::ItemCombineMgrLoadDB_CombineResult12_clbk ItemCombineMgrLoadDB_CombineResult12_user(nullptr);
-        info::ItemCombineMgrLoadData14_ptr ItemCombineMgrLoadData14_next(nullptr);
-        info::ItemCombineMgrLoadData14_clbk ItemCombineMgrLoadData14_user(nullptr);
-        info::ItemCombineMgrMakeNewItems16_ptr ItemCombineMgrMakeNewItems16_next(nullptr);
-        info::ItemCombineMgrMakeNewItems16_clbk ItemCombineMgrMakeNewItems16_user(nullptr);
-        info::ItemCombineMgrOnPlayerCreateCompleteProc18_ptr ItemCombineMgrOnPlayerCreateCompleteProc18_next(nullptr);
-        info::ItemCombineMgrOnPlayerCreateCompleteProc18_clbk ItemCombineMgrOnPlayerCreateCompleteProc18_user(nullptr);
-        info::ItemCombineMgrRequestCombineAcceptProcess20_ptr ItemCombineMgrRequestCombineAcceptProcess20_next(nullptr);
-        info::ItemCombineMgrRequestCombineAcceptProcess20_clbk ItemCombineMgrRequestCombineAcceptProcess20_user(nullptr);
-        info::ItemCombineMgrRequestCombineProcess22_ptr ItemCombineMgrRequestCombineProcess22_next(nullptr);
-        info::ItemCombineMgrRequestCombineProcess22_clbk ItemCombineMgrRequestCombineProcess22_user(nullptr);
-        info::ItemCombineMgrUpdateDB_CombineResult24_ptr ItemCombineMgrUpdateDB_CombineResult24_next(nullptr);
-        info::ItemCombineMgrUpdateDB_CombineResult24_clbk ItemCombineMgrUpdateDB_CombineResult24_user(nullptr);
-        info::ItemCombineMgrdtor_ItemCombineMgr26_ptr ItemCombineMgrdtor_ItemCombineMgr26_next(nullptr);
-        info::ItemCombineMgrdtor_ItemCombineMgr26_clbk ItemCombineMgrdtor_ItemCombineMgr26_user(nullptr);
+        static info::ItemCombineMgrCheckLoadData2_ptr ItemCombineMgrCheckLoadData2_next(nullptr);
+        static info::ItemCombineMgrCheckLoadData2_clbk ItemCombineMgrCheckLoadData2_user(nullptr);
+        static info::ItemCombineMgrClearDB_CombineResult4_ptr ItemCombineMgrClearDB_CombineResult4_next(nullptr);
+        static info::ItemCombineMgrClearDB_CombineResult4_clbk ItemCombineMgrClearDB_CombineResult4_user(nullptr);
+        static info::ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_ptr ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_next(nullptr);
+        static info::ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_clbk ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_user(nullptr);
+        static info::ItemCombineMgrInitMgr8_ptr ItemCombineMgrInitMgr8_next(nullptr);
+        static info::ItemCombineMgrInitMgr8_clbk ItemCombineMgrInitMgr8_user(nullptr);
+        static info::ItemCombineMgrctor_ItemCombineMgr10_ptr ItemCombineMgrctor_ItemCombineMgr10_next(nullptr);
+        static info::ItemCombineMgrctor_ItemCombineMgr10_clbk ItemCombineMgrctor_ItemCombineMgr10_user(nullptr);
+        static info::ItemCombineMgrLoadDB_CombineResult12_ptr ItemCombineMgrLoadDB_CombineResult12_next(nullptr);
+        static info::ItemCombineMgrLoadDB_CombineResult12_clbk ItemCombineMgrLoadDB_CombineResult12_user(nullptr);
+        static info::ItemCombineMgrLoadData14_ptr ItemCombineMgrLoadData14_next(nullptr);
+        static info::ItemCombineMgrLoadData14_clbk ItemCombineMgrLoadData14_user(nullptr);
+        static info::ItemCombineMgrMakeNewItems16_ptr ItemCombineMgrMakeNewItems16_next(nullptr);
+        static info::ItemCombineMgrMakeNewItems16_clbk ItemCombineMgrMakeNewItems16_user(nullptr);
+        static info::ItemCombineMgrOnPlayerCreateCompleteProc18_ptr ItemCombineMgrOnPlayerCreateCompleteProc18_next(nullptr);
+        static info::ItemCombineMgrOnPlayerCreateCompleteProc18_clbk ItemCombineMgrOnPlayerCreateCompleteProc18_user(nullptr);
+        static info::ItemCombineMgrRequestCombineAcceptProcess20_ptr ItemCombineMgrRequestCombineAcceptProcess20_next(nullptr);
+        static info::ItemCombineMgrRequestCombineAcceptProcess20_clbk ItemCombineMgrRequestCombineAcceptProcess20_user(nullptr);
+        static info::ItemCombineMgrRequestCombineProcess22_ptr ItemCombineMgrRequestCombineProcess22_next(nullptr);
+        static info::ItemCombineMgrRequestCombineProcess22_clbk ItemCombineMgrRequestCombineProcess22_user(nullptr);
+        static info::ItemCombineMgrUpdateDB_CombineResult24_ptr ItemCombineMgrUpdateDB_CombineResult24_next(nullptr);
+        static info::ItemCombineMgrUpdateDB_CombineResult24_clbk ItemCombineMgrUpdateDB_CombineResult24_user(nullptr);
+        static info::ItemCombineMgrdtor_ItemCombineMgr26_ptr ItemCombineMgrdtor_ItemCombineMgr26_next(nullptr);
+        static info::ItemCombineMgrdtor_ItemCombineMgr26_clbk ItemCombineMgrdtor_ItemCombineMgr26_user(nullptr);
         
-        bool ItemCombineMgrCheckLoadData2_wrapper()
+        static bool ItemCombineMgrCheckLoadData2_wrapper()
         {
            return ItemCombineMgrCheckLoadData2_user(ItemCombineMgrCheckLoadData2_next);
         };
-        char ItemCombineMgrClearDB_CombineResult4_wrapper(struct ItemCombineMgr* _this)
+        static char ItemCombineMgrClearDB_CombineResult4_wrapper(struct ItemCombineMgr* _this)
         {
            return ItemCombineMgrClearDB_CombineResult4_user(_this, ItemCombineMgrClearDB_CombineResult4_next);
         };
-        char ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_wrapper(struct ItemCombineMgr* _this, struct _STORAGE_LIST::_db_con** pMt_Sv_Inv, char byMtSlotNum, struct _combine_ex_item_request_clzo::_list* pipMaterials, struct _combine_ex_item_result_zocl* pSaveData, struct _ItemCombine_exp_fld* pfld, char byLinkTableIndex, int nType)
+        static char ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_wrapper(struct ItemCombineMgr* _this, struct _STORAGE_LIST::_db_con** pMt_Sv_Inv, char byMtSlotNum, struct _combine_ex_item_request_clzo::_list* pipMaterials, struct _combine_ex_item_result_zocl* pSaveData, struct _ItemCombine_exp_fld* pfld, char byLinkTableIndex, int nType)
         {
            return ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_user(_this, pMt_Sv_Inv, byMtSlotNum, pipMaterials, pSaveData, pfld, byLinkTableIndex, nType, ItemCombineMgrConsumeMeterial_And_CalculateNewItems6_next);
         };
-        void ItemCombineMgrInitMgr8_wrapper(struct ItemCombineMgr* _this, struct CPlayer* pOne)
+        static void ItemCombineMgrInitMgr8_wrapper(struct ItemCombineMgr* _this, struct CPlayer* pOne)
         {
            ItemCombineMgrInitMgr8_user(_this, pOne, ItemCombineMgrInitMgr8_next);
         };
-        void ItemCombineMgrctor_ItemCombineMgr10_wrapper(struct ItemCombineMgr* _this)
+        static void ItemCombineMgrctor_ItemCombineMgr10_wrapper(struct ItemCombineMgr* _this)
         {
            ItemCombineMgrctor_ItemCombineMgr10_user(_this, ItemCombineMgrctor_ItemCombineMgr10_next);
         };
-        char ItemCombineMgrLoadDB_CombineResult12_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_result_zocl* pLoadData)
+        static char ItemCombineMgrLoadDB_CombineResult12_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_result_zocl* pLoadData)
         {
            return ItemCombineMgrLoadDB_CombineResult12_user(_this, pLoadData, ItemCombineMgrLoadDB_CombineResult12_next);
         };
-        bool ItemCombineMgrLoadData14_wrapper()
+        static bool ItemCombineMgrLoadData14_wrapper()
         {
            return ItemCombineMgrLoadData14_user(ItemCombineMgrLoadData14_next);
         };
-        char ItemCombineMgrMakeNewItems16_wrapper(struct ItemCombineMgr* _this, struct _ITEMCOMBINE_DB_BASE* pPlayerItemDB, struct _combine_ex_item_accept_request_clzo* pRecv, struct _combine_ex_item_accept_result_zocl* pSend)
+        static char ItemCombineMgrMakeNewItems16_wrapper(struct ItemCombineMgr* _this, struct _ITEMCOMBINE_DB_BASE* pPlayerItemDB, struct _combine_ex_item_accept_request_clzo* pRecv, struct _combine_ex_item_accept_result_zocl* pSend)
         {
            return ItemCombineMgrMakeNewItems16_user(_this, pPlayerItemDB, pRecv, pSend, ItemCombineMgrMakeNewItems16_next);
         };
-        void ItemCombineMgrOnPlayerCreateCompleteProc18_wrapper(struct ItemCombineMgr* _this)
+        static void ItemCombineMgrOnPlayerCreateCompleteProc18_wrapper(struct ItemCombineMgr* _this)
         {
            ItemCombineMgrOnPlayerCreateCompleteProc18_user(_this, ItemCombineMgrOnPlayerCreateCompleteProc18_next);
         };
-        char ItemCombineMgrRequestCombineAcceptProcess20_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_accept_request_clzo* pRecv, struct _combine_ex_item_accept_result_zocl* pSend)
+        static char ItemCombineMgrRequestCombineAcceptProcess20_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_accept_request_clzo* pRecv, struct _combine_ex_item_accept_result_zocl* pSend)
         {
            return ItemCombineMgrRequestCombineAcceptProcess20_user(_this, pRecv, pSend, ItemCombineMgrRequestCombineAcceptProcess20_next);
         };
-        char ItemCombineMgrRequestCombineProcess22_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_request_clzo* pRecv, struct _combine_ex_item_result_zocl* pSend)
+        static char ItemCombineMgrRequestCombineProcess22_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_request_clzo* pRecv, struct _combine_ex_item_result_zocl* pSend)
         {
            return ItemCombineMgrRequestCombineProcess22_user(_this, pRecv, pSend, ItemCombineMgrRequestCombineProcess22_next);
         };
-        char ItemCombineMgrUpdateDB_CombineResult24_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_result_zocl* pSaveData)
+        static char ItemCombineMgrUpdateDB_CombineResult24_wrapper(struct ItemCombineMgr* _this, struct _combine_ex_item_result_zocl* pSaveData)
         {
            return ItemCombineMgrUpdateDB_CombineResult24_user(_this, pSaveData, ItemCombineMgrUpdateDB_CombineResult24_next);
         };
-        void ItemCombineMgrdtor_ItemCombineMgr26_wrapper(struct ItemCombineMgr* _this)
+        static void ItemCombineMgrdtor_ItemCombineMgr26_wrapper(struct ItemCombineMgr* _this)
         {
            ItemCombineMgrdtor_ItemCombineMgr26_user(_this, ItemCombineMgrdtor_ItemCombineMgr26_next);
         };
         
-        hook_record ItemCombineMgr_functions[] = {
+        static hook_record ItemCombineMgr_functions[] = {
         {   (LPVOID)0x1402ab8e0L,
             (LPVOID *)&ItemCombineMgrCheckLoadData2_user,
             (LPVOID *)&ItemCombineMgrCheckLoadData2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

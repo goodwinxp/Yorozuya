@@ -8,87 +8,87 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::HACKSHEILD_PARAM_ANTICPCheckClient2_ptr HACKSHEILD_PARAM_ANTICPCheckClient2_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPCheckClient2_clbk HACKSHEILD_PARAM_ANTICPCheckClient2_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_ptr HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_clbk HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPInit6_ptr HACKSHEILD_PARAM_ANTICPInit6_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPInit6_clbk HACKSHEILD_PARAM_ANTICPInit6_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPIsLogPass8_ptr HACKSHEILD_PARAM_ANTICPIsLogPass8_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPIsLogPass8_clbk HACKSHEILD_PARAM_ANTICPIsLogPass8_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPKick10_ptr HACKSHEILD_PARAM_ANTICPKick10_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPKick10_clbk HACKSHEILD_PARAM_ANTICPKick10_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_ptr HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_clbk HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnConnect14_ptr HACKSHEILD_PARAM_ANTICPOnConnect14_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnConnect14_clbk HACKSHEILD_PARAM_ANTICPOnConnect14_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnDisConnect16_ptr HACKSHEILD_PARAM_ANTICPOnDisConnect16_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnDisConnect16_clbk HACKSHEILD_PARAM_ANTICPOnDisConnect16_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnLoop18_ptr HACKSHEILD_PARAM_ANTICPOnLoop18_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnLoop18_clbk HACKSHEILD_PARAM_ANTICPOnLoop18_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession20_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession20_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession20_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession20_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_user(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_next(nullptr);
-        info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPCheckClient2_ptr HACKSHEILD_PARAM_ANTICPCheckClient2_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPCheckClient2_clbk HACKSHEILD_PARAM_ANTICPCheckClient2_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_ptr HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_clbk HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPInit6_ptr HACKSHEILD_PARAM_ANTICPInit6_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPInit6_clbk HACKSHEILD_PARAM_ANTICPInit6_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPIsLogPass8_ptr HACKSHEILD_PARAM_ANTICPIsLogPass8_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPIsLogPass8_clbk HACKSHEILD_PARAM_ANTICPIsLogPass8_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPKick10_ptr HACKSHEILD_PARAM_ANTICPKick10_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPKick10_clbk HACKSHEILD_PARAM_ANTICPKick10_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_ptr HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_clbk HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnConnect14_ptr HACKSHEILD_PARAM_ANTICPOnConnect14_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnConnect14_clbk HACKSHEILD_PARAM_ANTICPOnConnect14_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnDisConnect16_ptr HACKSHEILD_PARAM_ANTICPOnDisConnect16_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnDisConnect16_clbk HACKSHEILD_PARAM_ANTICPOnDisConnect16_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnLoop18_ptr HACKSHEILD_PARAM_ANTICPOnLoop18_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnLoop18_clbk HACKSHEILD_PARAM_ANTICPOnLoop18_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession20_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession20_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession20_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession20_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_user(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_ptr HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_next(nullptr);
+        static info::HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_clbk HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_user(nullptr);
         
-        void HACKSHEILD_PARAM_ANTICPCheckClient2_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static void HACKSHEILD_PARAM_ANTICPCheckClient2_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            HACKSHEILD_PARAM_ANTICPCheckClient2_user(_this, HACKSHEILD_PARAM_ANTICPCheckClient2_next);
         };
-        void HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static void HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_user(_this, HACKSHEILD_PARAM_ANTICPctor_HACKSHEILD_PARAM_ANTICP4_next);
         };
-        void HACKSHEILD_PARAM_ANTICPInit6_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static void HACKSHEILD_PARAM_ANTICPInit6_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            HACKSHEILD_PARAM_ANTICPInit6_user(_this, HACKSHEILD_PARAM_ANTICPInit6_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPIsLogPass8_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static bool HACKSHEILD_PARAM_ANTICPIsLogPass8_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            return HACKSHEILD_PARAM_ANTICPIsLogPass8_user(_this, HACKSHEILD_PARAM_ANTICPIsLogPass8_next);
         };
-        void HACKSHEILD_PARAM_ANTICPKick10_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, char byReason, unsigned int dwRet)
+        static void HACKSHEILD_PARAM_ANTICPKick10_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, char byReason, unsigned int dwRet)
         {
            HACKSHEILD_PARAM_ANTICPKick10_user(_this, byReason, dwRet, HACKSHEILD_PARAM_ANTICPKick10_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int n)
+        static bool HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int n)
         {
            return HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_user(_this, n, HACKSHEILD_PARAM_ANTICPOnCheckSession_FirstVerify12_next);
         };
-        void HACKSHEILD_PARAM_ANTICPOnConnect14_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int nIndex)
+        static void HACKSHEILD_PARAM_ANTICPOnConnect14_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int nIndex)
         {
            HACKSHEILD_PARAM_ANTICPOnConnect14_user(_this, nIndex, HACKSHEILD_PARAM_ANTICPOnConnect14_next);
         };
-        void HACKSHEILD_PARAM_ANTICPOnDisConnect16_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static void HACKSHEILD_PARAM_ANTICPOnDisConnect16_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            HACKSHEILD_PARAM_ANTICPOnDisConnect16_user(_this, HACKSHEILD_PARAM_ANTICPOnDisConnect16_next);
         };
-        void HACKSHEILD_PARAM_ANTICPOnLoop18_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
+        static void HACKSHEILD_PARAM_ANTICPOnLoop18_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this)
         {
            HACKSHEILD_PARAM_ANTICPOnLoop18_user(_this, HACKSHEILD_PARAM_ANTICPOnLoop18_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPOnRecvSession20_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, struct CHackShieldExSystem* mgr, int nIndex, char byProtocol, uint64_t tSize, char* pMsg)
+        static bool HACKSHEILD_PARAM_ANTICPOnRecvSession20_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, struct CHackShieldExSystem* mgr, int nIndex, char byProtocol, uint64_t tSize, char* pMsg)
         {
            return HACKSHEILD_PARAM_ANTICPOnRecvSession20_user(_this, mgr, nIndex, byProtocol, tSize, pMsg, HACKSHEILD_PARAM_ANTICPOnRecvSession20_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, uint64_t tSize, char* pMsg)
+        static bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, uint64_t tSize, char* pMsg)
         {
            return HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_user(_this, tSize, pMsg, HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCheckSum_Response22_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, uint64_t tSize, char* pMsg)
+        static bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, uint64_t tSize, char* pMsg)
         {
            return HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_user(_this, tSize, pMsg, HACKSHEILD_PARAM_ANTICPOnRecvSession_ClientCrc_Response24_next);
         };
-        bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int nIndex)
+        static bool HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_wrapper(struct HACKSHEILD_PARAM_ANTICP* _this, int nIndex)
         {
            return HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_user(_this, nIndex, HACKSHEILD_PARAM_ANTICPOnRecvSession_ServerCheckSum_Request26_next);
         };
         
-        hook_record HACKSHEILD_PARAM_ANTICP_functions[] = {
+        static hook_record HACKSHEILD_PARAM_ANTICP_functions[] = {
         {   (LPVOID)0x140417b60L,
             (LPVOID *)&HACKSHEILD_PARAM_ANTICPCheckClient2_user,
             (LPVOID *)&HACKSHEILD_PARAM_ANTICPCheckClient2_next,
@@ -157,5 +157,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

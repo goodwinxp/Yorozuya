@@ -9,16 +9,16 @@
 START_ATF_NAMESPACE
     struct CNetwork
     {
-        CNetworkVtbl *vfptr;
-        HINSTANCE__ *m_hChinaDLL;
-        void (WINAPIV *SetDataAnalysisFunc)(bool (WINAPIV *)(unsigned int, unsigned int, _MSG_HEADER *, char *));
+        struct CNetworkVtbl *vfptr;
+        struct HINSTANCE__ *m_hChinaDLL;
+        void (WINAPIV *SetDataAnalysisFunc)(bool (WINAPIV *)(unsigned int, unsigned int, struct _MSG_HEADER *, char *));
         void (WINAPIV *Release)();
         int (WINAPIV *LoadSendMsg)(unsigned int, unsigned int, char *, unsigned int, char *, unsigned __int16);
-        bool (WINAPIV *SetNetSystem)(unsigned int, _NET_TYPE_PARAM *, char *, char *);
+        bool (WINAPIV *SetNetSystem)(unsigned int, struct _NET_TYPE_PARAM *, char *, char *);
         void (WINAPIV *OnLoop)();
         int (WINAPIV *Connect)(unsigned int, unsigned int, unsigned int, unsigned __int16);
         void (WINAPIV *CloseSocket)(unsigned int, unsigned int, bool);
-        _socket *(WINAPIV *GetSocket)(unsigned int, unsigned int);
+        struct _socket *(WINAPIV *GetSocket)(unsigned int, unsigned int);
         bool (WINAPIV *RecvS)(char *, int, int *);
         bool (WINAPIV *SendS)(char *, int, int *);
     public:

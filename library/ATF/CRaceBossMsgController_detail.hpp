@@ -8,159 +8,159 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRaceBossMsgControllerctor_CRaceBossMsgController2_ptr CRaceBossMsgControllerctor_CRaceBossMsgController2_next(nullptr);
-        info::CRaceBossMsgControllerctor_CRaceBossMsgController2_clbk CRaceBossMsgControllerctor_CRaceBossMsgController2_user(nullptr);
-        info::CRaceBossMsgControllerCancel4_ptr CRaceBossMsgControllerCancel4_next(nullptr);
-        info::CRaceBossMsgControllerCancel4_clbk CRaceBossMsgControllerCancel4_user(nullptr);
-        info::CRaceBossMsgControllerCancel6_ptr CRaceBossMsgControllerCancel6_next(nullptr);
-        info::CRaceBossMsgControllerCancel6_clbk CRaceBossMsgControllerCancel6_user(nullptr);
-        info::CRaceBossMsgControllerCleanUp8_ptr CRaceBossMsgControllerCleanUp8_next(nullptr);
-        info::CRaceBossMsgControllerCleanUp8_clbk CRaceBossMsgControllerCleanUp8_user(nullptr);
-        info::CRaceBossMsgControllerDestroy10_ptr CRaceBossMsgControllerDestroy10_next(nullptr);
-        info::CRaceBossMsgControllerDestroy10_clbk CRaceBossMsgControllerDestroy10_user(nullptr);
-        info::CRaceBossMsgControllerGetCurDay12_ptr CRaceBossMsgControllerGetCurDay12_next(nullptr);
-        info::CRaceBossMsgControllerGetCurDay12_clbk CRaceBossMsgControllerGetCurDay12_user(nullptr);
-        info::CRaceBossMsgControllerInit14_ptr CRaceBossMsgControllerInit14_next(nullptr);
-        info::CRaceBossMsgControllerInit14_clbk CRaceBossMsgControllerInit14_user(nullptr);
-        info::CRaceBossMsgControllerInstance16_ptr CRaceBossMsgControllerInstance16_next(nullptr);
-        info::CRaceBossMsgControllerInstance16_clbk CRaceBossMsgControllerInstance16_user(nullptr);
-        info::CRaceBossMsgControllerIsDayChanged18_ptr CRaceBossMsgControllerIsDayChanged18_next(nullptr);
-        info::CRaceBossMsgControllerIsDayChanged18_clbk CRaceBossMsgControllerIsDayChanged18_user(nullptr);
-        info::CRaceBossMsgControllerLoadCurTime20_ptr CRaceBossMsgControllerLoadCurTime20_next(nullptr);
-        info::CRaceBossMsgControllerLoadCurTime20_clbk CRaceBossMsgControllerLoadCurTime20_user(nullptr);
-        info::CRaceBossMsgControllerOnLoop22_ptr CRaceBossMsgControllerOnLoop22_next(nullptr);
-        info::CRaceBossMsgControllerOnLoop22_clbk CRaceBossMsgControllerOnLoop22_user(nullptr);
-        info::CRaceBossMsgControllerSaveCurTime24_ptr CRaceBossMsgControllerSaveCurTime24_next(nullptr);
-        info::CRaceBossMsgControllerSaveCurTime24_clbk CRaceBossMsgControllerSaveCurTime24_user(nullptr);
-        info::CRaceBossMsgControllerSend26_ptr CRaceBossMsgControllerSend26_next(nullptr);
-        info::CRaceBossMsgControllerSend26_clbk CRaceBossMsgControllerSend26_user(nullptr);
-        info::CRaceBossMsgControllerSend28_ptr CRaceBossMsgControllerSend28_next(nullptr);
-        info::CRaceBossMsgControllerSend28_clbk CRaceBossMsgControllerSend28_user(nullptr);
-        info::CRaceBossMsgControllerSendCancelWeb30_ptr CRaceBossMsgControllerSendCancelWeb30_next(nullptr);
-        info::CRaceBossMsgControllerSendCancelWeb30_clbk CRaceBossMsgControllerSendCancelWeb30_user(nullptr);
-        info::CRaceBossMsgControllerSendCancleInfomManager32_ptr CRaceBossMsgControllerSendCancleInfomManager32_next(nullptr);
-        info::CRaceBossMsgControllerSendCancleInfomManager32_clbk CRaceBossMsgControllerSendCancleInfomManager32_user(nullptr);
-        info::CRaceBossMsgControllerSendCancleInfomSender34_ptr CRaceBossMsgControllerSendCancleInfomSender34_next(nullptr);
-        info::CRaceBossMsgControllerSendCancleInfomSender34_clbk CRaceBossMsgControllerSendCancleInfomSender34_user(nullptr);
-        info::CRaceBossMsgControllerSendComfirmWeb36_ptr CRaceBossMsgControllerSendComfirmWeb36_next(nullptr);
-        info::CRaceBossMsgControllerSendComfirmWeb36_clbk CRaceBossMsgControllerSendComfirmWeb36_user(nullptr);
-        info::CRaceBossMsgControllerSendConfirmCtrl38_ptr CRaceBossMsgControllerSendConfirmCtrl38_next(nullptr);
-        info::CRaceBossMsgControllerSendConfirmCtrl38_clbk CRaceBossMsgControllerSendConfirmCtrl38_user(nullptr);
-        info::CRaceBossMsgControllerSendInfomSender40_ptr CRaceBossMsgControllerSendInfomSender40_next(nullptr);
-        info::CRaceBossMsgControllerSendInfomSender40_clbk CRaceBossMsgControllerSendInfomSender40_user(nullptr);
-        info::CRaceBossMsgControllerSendMsgRequestResult42_ptr CRaceBossMsgControllerSendMsgRequestResult42_next(nullptr);
-        info::CRaceBossMsgControllerSendMsgRequestResult42_clbk CRaceBossMsgControllerSendMsgRequestResult42_user(nullptr);
-        info::CRaceBossMsgControllerSendRequestWeb44_ptr CRaceBossMsgControllerSendRequestWeb44_next(nullptr);
-        info::CRaceBossMsgControllerSendRequestWeb44_clbk CRaceBossMsgControllerSendRequestWeb44_user(nullptr);
-        info::CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_ptr CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_next(nullptr);
-        info::CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_clbk CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_user(nullptr);
-        info::CRaceBossMsgControllerUpdateSend48_ptr CRaceBossMsgControllerUpdateSend48_next(nullptr);
-        info::CRaceBossMsgControllerUpdateSend48_clbk CRaceBossMsgControllerUpdateSend48_user(nullptr);
-        info::CRaceBossMsgControllerdtor_CRaceBossMsgController52_ptr CRaceBossMsgControllerdtor_CRaceBossMsgController52_next(nullptr);
-        info::CRaceBossMsgControllerdtor_CRaceBossMsgController52_clbk CRaceBossMsgControllerdtor_CRaceBossMsgController52_user(nullptr);
+        static info::CRaceBossMsgControllerctor_CRaceBossMsgController2_ptr CRaceBossMsgControllerctor_CRaceBossMsgController2_next(nullptr);
+        static info::CRaceBossMsgControllerctor_CRaceBossMsgController2_clbk CRaceBossMsgControllerctor_CRaceBossMsgController2_user(nullptr);
+        static info::CRaceBossMsgControllerCancel4_ptr CRaceBossMsgControllerCancel4_next(nullptr);
+        static info::CRaceBossMsgControllerCancel4_clbk CRaceBossMsgControllerCancel4_user(nullptr);
+        static info::CRaceBossMsgControllerCancel6_ptr CRaceBossMsgControllerCancel6_next(nullptr);
+        static info::CRaceBossMsgControllerCancel6_clbk CRaceBossMsgControllerCancel6_user(nullptr);
+        static info::CRaceBossMsgControllerCleanUp8_ptr CRaceBossMsgControllerCleanUp8_next(nullptr);
+        static info::CRaceBossMsgControllerCleanUp8_clbk CRaceBossMsgControllerCleanUp8_user(nullptr);
+        static info::CRaceBossMsgControllerDestroy10_ptr CRaceBossMsgControllerDestroy10_next(nullptr);
+        static info::CRaceBossMsgControllerDestroy10_clbk CRaceBossMsgControllerDestroy10_user(nullptr);
+        static info::CRaceBossMsgControllerGetCurDay12_ptr CRaceBossMsgControllerGetCurDay12_next(nullptr);
+        static info::CRaceBossMsgControllerGetCurDay12_clbk CRaceBossMsgControllerGetCurDay12_user(nullptr);
+        static info::CRaceBossMsgControllerInit14_ptr CRaceBossMsgControllerInit14_next(nullptr);
+        static info::CRaceBossMsgControllerInit14_clbk CRaceBossMsgControllerInit14_user(nullptr);
+        static info::CRaceBossMsgControllerInstance16_ptr CRaceBossMsgControllerInstance16_next(nullptr);
+        static info::CRaceBossMsgControllerInstance16_clbk CRaceBossMsgControllerInstance16_user(nullptr);
+        static info::CRaceBossMsgControllerIsDayChanged18_ptr CRaceBossMsgControllerIsDayChanged18_next(nullptr);
+        static info::CRaceBossMsgControllerIsDayChanged18_clbk CRaceBossMsgControllerIsDayChanged18_user(nullptr);
+        static info::CRaceBossMsgControllerLoadCurTime20_ptr CRaceBossMsgControllerLoadCurTime20_next(nullptr);
+        static info::CRaceBossMsgControllerLoadCurTime20_clbk CRaceBossMsgControllerLoadCurTime20_user(nullptr);
+        static info::CRaceBossMsgControllerOnLoop22_ptr CRaceBossMsgControllerOnLoop22_next(nullptr);
+        static info::CRaceBossMsgControllerOnLoop22_clbk CRaceBossMsgControllerOnLoop22_user(nullptr);
+        static info::CRaceBossMsgControllerSaveCurTime24_ptr CRaceBossMsgControllerSaveCurTime24_next(nullptr);
+        static info::CRaceBossMsgControllerSaveCurTime24_clbk CRaceBossMsgControllerSaveCurTime24_user(nullptr);
+        static info::CRaceBossMsgControllerSend26_ptr CRaceBossMsgControllerSend26_next(nullptr);
+        static info::CRaceBossMsgControllerSend26_clbk CRaceBossMsgControllerSend26_user(nullptr);
+        static info::CRaceBossMsgControllerSend28_ptr CRaceBossMsgControllerSend28_next(nullptr);
+        static info::CRaceBossMsgControllerSend28_clbk CRaceBossMsgControllerSend28_user(nullptr);
+        static info::CRaceBossMsgControllerSendCancelWeb30_ptr CRaceBossMsgControllerSendCancelWeb30_next(nullptr);
+        static info::CRaceBossMsgControllerSendCancelWeb30_clbk CRaceBossMsgControllerSendCancelWeb30_user(nullptr);
+        static info::CRaceBossMsgControllerSendCancleInfomManager32_ptr CRaceBossMsgControllerSendCancleInfomManager32_next(nullptr);
+        static info::CRaceBossMsgControllerSendCancleInfomManager32_clbk CRaceBossMsgControllerSendCancleInfomManager32_user(nullptr);
+        static info::CRaceBossMsgControllerSendCancleInfomSender34_ptr CRaceBossMsgControllerSendCancleInfomSender34_next(nullptr);
+        static info::CRaceBossMsgControllerSendCancleInfomSender34_clbk CRaceBossMsgControllerSendCancleInfomSender34_user(nullptr);
+        static info::CRaceBossMsgControllerSendComfirmWeb36_ptr CRaceBossMsgControllerSendComfirmWeb36_next(nullptr);
+        static info::CRaceBossMsgControllerSendComfirmWeb36_clbk CRaceBossMsgControllerSendComfirmWeb36_user(nullptr);
+        static info::CRaceBossMsgControllerSendConfirmCtrl38_ptr CRaceBossMsgControllerSendConfirmCtrl38_next(nullptr);
+        static info::CRaceBossMsgControllerSendConfirmCtrl38_clbk CRaceBossMsgControllerSendConfirmCtrl38_user(nullptr);
+        static info::CRaceBossMsgControllerSendInfomSender40_ptr CRaceBossMsgControllerSendInfomSender40_next(nullptr);
+        static info::CRaceBossMsgControllerSendInfomSender40_clbk CRaceBossMsgControllerSendInfomSender40_user(nullptr);
+        static info::CRaceBossMsgControllerSendMsgRequestResult42_ptr CRaceBossMsgControllerSendMsgRequestResult42_next(nullptr);
+        static info::CRaceBossMsgControllerSendMsgRequestResult42_clbk CRaceBossMsgControllerSendMsgRequestResult42_user(nullptr);
+        static info::CRaceBossMsgControllerSendRequestWeb44_ptr CRaceBossMsgControllerSendRequestWeb44_next(nullptr);
+        static info::CRaceBossMsgControllerSendRequestWeb44_clbk CRaceBossMsgControllerSendRequestWeb44_user(nullptr);
+        static info::CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_ptr CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_next(nullptr);
+        static info::CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_clbk CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_user(nullptr);
+        static info::CRaceBossMsgControllerUpdateSend48_ptr CRaceBossMsgControllerUpdateSend48_next(nullptr);
+        static info::CRaceBossMsgControllerUpdateSend48_clbk CRaceBossMsgControllerUpdateSend48_user(nullptr);
+        static info::CRaceBossMsgControllerdtor_CRaceBossMsgController52_ptr CRaceBossMsgControllerdtor_CRaceBossMsgController52_next(nullptr);
+        static info::CRaceBossMsgControllerdtor_CRaceBossMsgController52_clbk CRaceBossMsgControllerdtor_CRaceBossMsgController52_user(nullptr);
         
-        void CRaceBossMsgControllerctor_CRaceBossMsgController2_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerctor_CRaceBossMsgController2_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerctor_CRaceBossMsgController2_user(_this, CRaceBossMsgControllerctor_CRaceBossMsgController2_next);
         };
-        bool CRaceBossMsgControllerCancel4_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwMsgID)
+        static bool CRaceBossMsgControllerCancel4_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwMsgID)
         {
            return CRaceBossMsgControllerCancel4_user(_this, ucRace, dwMsgID, CRaceBossMsgControllerCancel4_next);
         };
-        bool CRaceBossMsgControllerCancel6_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwMsgID, struct CPlayer* pkManager)
+        static bool CRaceBossMsgControllerCancel6_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwMsgID, struct CPlayer* pkManager)
         {
            return CRaceBossMsgControllerCancel6_user(_this, ucRace, dwMsgID, pkManager, CRaceBossMsgControllerCancel6_next);
         };
-        void CRaceBossMsgControllerCleanUp8_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerCleanUp8_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerCleanUp8_user(_this, CRaceBossMsgControllerCleanUp8_next);
         };
-        void CRaceBossMsgControllerDestroy10_wrapper()
+        static void CRaceBossMsgControllerDestroy10_wrapper()
         {
            CRaceBossMsgControllerDestroy10_user(CRaceBossMsgControllerDestroy10_next);
         };
-        int CRaceBossMsgControllerGetCurDay12_wrapper(struct CRaceBossMsgController* _this)
+        static int CRaceBossMsgControllerGetCurDay12_wrapper(struct CRaceBossMsgController* _this)
         {
            return CRaceBossMsgControllerGetCurDay12_user(_this, CRaceBossMsgControllerGetCurDay12_next);
         };
-        bool CRaceBossMsgControllerInit14_wrapper(struct CRaceBossMsgController* _this)
+        static bool CRaceBossMsgControllerInit14_wrapper(struct CRaceBossMsgController* _this)
         {
            return CRaceBossMsgControllerInit14_user(_this, CRaceBossMsgControllerInit14_next);
         };
-        struct CRaceBossMsgController* CRaceBossMsgControllerInstance16_wrapper()
+        static struct CRaceBossMsgController* CRaceBossMsgControllerInstance16_wrapper()
         {
            return CRaceBossMsgControllerInstance16_user(CRaceBossMsgControllerInstance16_next);
         };
-        bool CRaceBossMsgControllerIsDayChanged18_wrapper(struct CRaceBossMsgController* _this)
+        static bool CRaceBossMsgControllerIsDayChanged18_wrapper(struct CRaceBossMsgController* _this)
         {
            return CRaceBossMsgControllerIsDayChanged18_user(_this, CRaceBossMsgControllerIsDayChanged18_next);
         };
-        bool CRaceBossMsgControllerLoadCurTime20_wrapper(struct CRaceBossMsgController* _this, unsigned int* dwCurTime)
+        static bool CRaceBossMsgControllerLoadCurTime20_wrapper(struct CRaceBossMsgController* _this, unsigned int* dwCurTime)
         {
            return CRaceBossMsgControllerLoadCurTime20_user(_this, dwCurTime, CRaceBossMsgControllerLoadCurTime20_next);
         };
-        void CRaceBossMsgControllerOnLoop22_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerOnLoop22_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerOnLoop22_user(_this, CRaceBossMsgControllerOnLoop22_next);
         };
-        void CRaceBossMsgControllerSaveCurTime24_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerSaveCurTime24_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerSaveCurTime24_user(_this, CRaceBossMsgControllerSaveCurTime24_next);
         };
-        bool CRaceBossMsgControllerSend26_wrapper(struct CRaceBossMsgController* _this, struct CPlayer* pkSender, char* pwszMsg)
+        static bool CRaceBossMsgControllerSend26_wrapper(struct CRaceBossMsgController* _this, struct CPlayer* pkSender, char* pwszMsg)
         {
            return CRaceBossMsgControllerSend26_user(_this, pkSender, pwszMsg, CRaceBossMsgControllerSend26_next);
         };
-        bool CRaceBossMsgControllerSend28_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwSerial, char* wszName, char* pwszMsg, unsigned int dwWebSendDBID)
+        static bool CRaceBossMsgControllerSend28_wrapper(struct CRaceBossMsgController* _this, char ucRace, unsigned int dwSerial, char* wszName, char* pwszMsg, unsigned int dwWebSendDBID)
         {
            return CRaceBossMsgControllerSend28_user(_this, ucRace, dwSerial, wszName, pwszMsg, dwWebSendDBID, CRaceBossMsgControllerSend28_next);
         };
-        void CRaceBossMsgControllerSendCancelWeb30_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+        static void CRaceBossMsgControllerSendCancelWeb30_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
         {
            CRaceBossMsgControllerSendCancelWeb30_user(_this, ucRace, pkMsg, CRaceBossMsgControllerSendCancelWeb30_next);
         };
-        void CRaceBossMsgControllerSendCancleInfomManager32_wrapper(struct CRaceBossMsgController* _this, uint16_t usInx, char ucRet, unsigned int dwMsgID, char* pwszName)
+        static void CRaceBossMsgControllerSendCancleInfomManager32_wrapper(struct CRaceBossMsgController* _this, uint16_t usInx, char ucRet, unsigned int dwMsgID, char* pwszName)
         {
            CRaceBossMsgControllerSendCancleInfomManager32_user(_this, usInx, ucRet, dwMsgID, pwszName, CRaceBossMsgControllerSendCancleInfomManager32_next);
         };
-        void CRaceBossMsgControllerSendCancleInfomSender34_wrapper(struct CRaceBossMsgController* _this, unsigned int dwSerial)
+        static void CRaceBossMsgControllerSendCancleInfomSender34_wrapper(struct CRaceBossMsgController* _this, unsigned int dwSerial)
         {
            CRaceBossMsgControllerSendCancleInfomSender34_user(_this, dwSerial, CRaceBossMsgControllerSendCancleInfomSender34_next);
         };
-        void CRaceBossMsgControllerSendComfirmWeb36_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+        static void CRaceBossMsgControllerSendComfirmWeb36_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
         {
            CRaceBossMsgControllerSendComfirmWeb36_user(_this, ucRace, pkMsg, CRaceBossMsgControllerSendComfirmWeb36_next);
         };
-        void CRaceBossMsgControllerSendConfirmCtrl38_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+        static void CRaceBossMsgControllerSendConfirmCtrl38_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
         {
            CRaceBossMsgControllerSendConfirmCtrl38_user(_this, ucRace, pkMsg, CRaceBossMsgControllerSendConfirmCtrl38_next);
         };
-        void CRaceBossMsgControllerSendInfomSender40_wrapper(struct CRaceBossMsgController* _this, unsigned int dwSerial, char ucRemainCnt)
+        static void CRaceBossMsgControllerSendInfomSender40_wrapper(struct CRaceBossMsgController* _this, unsigned int dwSerial, char ucRemainCnt)
         {
            CRaceBossMsgControllerSendInfomSender40_user(_this, dwSerial, ucRemainCnt, CRaceBossMsgControllerSendInfomSender40_next);
         };
-        void CRaceBossMsgControllerSendMsgRequestResult42_wrapper(struct CRaceBossMsgController* _this, uint16_t usInx, char ucRet)
+        static void CRaceBossMsgControllerSendMsgRequestResult42_wrapper(struct CRaceBossMsgController* _this, uint16_t usInx, char ucRet)
         {
            CRaceBossMsgControllerSendMsgRequestResult42_user(_this, usInx, ucRet, CRaceBossMsgControllerSendMsgRequestResult42_next);
         };
-        void CRaceBossMsgControllerSendRequestWeb44_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
+        static void CRaceBossMsgControllerSendRequestWeb44_wrapper(struct CRaceBossMsgController* _this, char ucRace, struct RACE_BOSS_MSG::CMsg* pkMsg)
         {
            CRaceBossMsgControllerSendRequestWeb44_user(_this, ucRace, pkMsg, CRaceBossMsgControllerSendRequestWeb44_next);
         };
-        void CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_wrapper(struct CRaceBossMsgController* _this, int iRet, unsigned int dwWebDBID)
+        static void CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_wrapper(struct CRaceBossMsgController* _this, int iRet, unsigned int dwWebDBID)
         {
            CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_user(_this, iRet, dwWebDBID, CRaceBossMsgControllerSendWebRaceBossSMSErrorResult46_next);
         };
-        void CRaceBossMsgControllerUpdateSend48_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerUpdateSend48_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerUpdateSend48_user(_this, CRaceBossMsgControllerUpdateSend48_next);
         };
-        void CRaceBossMsgControllerdtor_CRaceBossMsgController52_wrapper(struct CRaceBossMsgController* _this)
+        static void CRaceBossMsgControllerdtor_CRaceBossMsgController52_wrapper(struct CRaceBossMsgController* _this)
         {
            CRaceBossMsgControllerdtor_CRaceBossMsgController52_user(_this, CRaceBossMsgControllerdtor_CRaceBossMsgController52_next);
         };
         
-        hook_record CRaceBossMsgController_functions[] = {
+        static hook_record CRaceBossMsgController_functions[] = {
         {   (LPVOID)0x1402a0250L,
             (LPVOID *)&CRaceBossMsgControllerctor_CRaceBossMsgController2_user,
             (LPVOID *)&CRaceBossMsgControllerctor_CRaceBossMsgController2_next,
@@ -289,5 +289,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

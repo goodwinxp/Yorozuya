@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAsyncLogInfoctor_CAsyncLogInfo2_ptr CAsyncLogInfoctor_CAsyncLogInfo2_next(nullptr);
-        info::CAsyncLogInfoctor_CAsyncLogInfo2_clbk CAsyncLogInfoctor_CAsyncLogInfo2_user(nullptr);
-        info::CAsyncLogInfoGetCount4_ptr CAsyncLogInfoGetCount4_next(nullptr);
-        info::CAsyncLogInfoGetCount4_clbk CAsyncLogInfoGetCount4_user(nullptr);
-        info::CAsyncLogInfoGetDirPath6_ptr CAsyncLogInfoGetDirPath6_next(nullptr);
-        info::CAsyncLogInfoGetDirPath6_clbk CAsyncLogInfoGetDirPath6_user(nullptr);
-        info::CAsyncLogInfoGetFileName8_ptr CAsyncLogInfoGetFileName8_next(nullptr);
-        info::CAsyncLogInfoGetFileName8_clbk CAsyncLogInfoGetFileName8_user(nullptr);
-        info::CAsyncLogInfoGetTypeName10_ptr CAsyncLogInfoGetTypeName10_next(nullptr);
-        info::CAsyncLogInfoGetTypeName10_clbk CAsyncLogInfoGetTypeName10_user(nullptr);
-        info::CAsyncLogInfoIncreaseCount12_ptr CAsyncLogInfoIncreaseCount12_next(nullptr);
-        info::CAsyncLogInfoIncreaseCount12_clbk CAsyncLogInfoIncreaseCount12_user(nullptr);
-        info::CAsyncLogInfoInit14_ptr CAsyncLogInfoInit14_next(nullptr);
-        info::CAsyncLogInfoInit14_clbk CAsyncLogInfoInit14_user(nullptr);
-        info::CAsyncLogInfoUpdateLogFileName16_ptr CAsyncLogInfoUpdateLogFileName16_next(nullptr);
-        info::CAsyncLogInfoUpdateLogFileName16_clbk CAsyncLogInfoUpdateLogFileName16_user(nullptr);
-        info::CAsyncLogInfodtor_CAsyncLogInfo20_ptr CAsyncLogInfodtor_CAsyncLogInfo20_next(nullptr);
-        info::CAsyncLogInfodtor_CAsyncLogInfo20_clbk CAsyncLogInfodtor_CAsyncLogInfo20_user(nullptr);
+        static info::CAsyncLogInfoctor_CAsyncLogInfo2_ptr CAsyncLogInfoctor_CAsyncLogInfo2_next(nullptr);
+        static info::CAsyncLogInfoctor_CAsyncLogInfo2_clbk CAsyncLogInfoctor_CAsyncLogInfo2_user(nullptr);
+        static info::CAsyncLogInfoGetCount4_ptr CAsyncLogInfoGetCount4_next(nullptr);
+        static info::CAsyncLogInfoGetCount4_clbk CAsyncLogInfoGetCount4_user(nullptr);
+        static info::CAsyncLogInfoGetDirPath6_ptr CAsyncLogInfoGetDirPath6_next(nullptr);
+        static info::CAsyncLogInfoGetDirPath6_clbk CAsyncLogInfoGetDirPath6_user(nullptr);
+        static info::CAsyncLogInfoGetFileName8_ptr CAsyncLogInfoGetFileName8_next(nullptr);
+        static info::CAsyncLogInfoGetFileName8_clbk CAsyncLogInfoGetFileName8_user(nullptr);
+        static info::CAsyncLogInfoGetTypeName10_ptr CAsyncLogInfoGetTypeName10_next(nullptr);
+        static info::CAsyncLogInfoGetTypeName10_clbk CAsyncLogInfoGetTypeName10_user(nullptr);
+        static info::CAsyncLogInfoIncreaseCount12_ptr CAsyncLogInfoIncreaseCount12_next(nullptr);
+        static info::CAsyncLogInfoIncreaseCount12_clbk CAsyncLogInfoIncreaseCount12_user(nullptr);
+        static info::CAsyncLogInfoInit14_ptr CAsyncLogInfoInit14_next(nullptr);
+        static info::CAsyncLogInfoInit14_clbk CAsyncLogInfoInit14_user(nullptr);
+        static info::CAsyncLogInfoUpdateLogFileName16_ptr CAsyncLogInfoUpdateLogFileName16_next(nullptr);
+        static info::CAsyncLogInfoUpdateLogFileName16_clbk CAsyncLogInfoUpdateLogFileName16_user(nullptr);
+        static info::CAsyncLogInfodtor_CAsyncLogInfo20_ptr CAsyncLogInfodtor_CAsyncLogInfo20_next(nullptr);
+        static info::CAsyncLogInfodtor_CAsyncLogInfo20_clbk CAsyncLogInfodtor_CAsyncLogInfo20_user(nullptr);
         
-        void CAsyncLogInfoctor_CAsyncLogInfo2_wrapper(struct CAsyncLogInfo* _this)
+        static void CAsyncLogInfoctor_CAsyncLogInfo2_wrapper(struct CAsyncLogInfo* _this)
         {
            CAsyncLogInfoctor_CAsyncLogInfo2_user(_this, CAsyncLogInfoctor_CAsyncLogInfo2_next);
         };
-        unsigned int CAsyncLogInfoGetCount4_wrapper(struct CAsyncLogInfo* _this)
+        static unsigned int CAsyncLogInfoGetCount4_wrapper(struct CAsyncLogInfo* _this)
         {
            return CAsyncLogInfoGetCount4_user(_this, CAsyncLogInfoGetCount4_next);
         };
-        char* CAsyncLogInfoGetDirPath6_wrapper(struct CAsyncLogInfo* _this)
+        static char* CAsyncLogInfoGetDirPath6_wrapper(struct CAsyncLogInfo* _this)
         {
            return CAsyncLogInfoGetDirPath6_user(_this, CAsyncLogInfoGetDirPath6_next);
         };
-        char* CAsyncLogInfoGetFileName8_wrapper(struct CAsyncLogInfo* _this)
+        static char* CAsyncLogInfoGetFileName8_wrapper(struct CAsyncLogInfo* _this)
         {
            return CAsyncLogInfoGetFileName8_user(_this, CAsyncLogInfoGetFileName8_next);
         };
-        char* CAsyncLogInfoGetTypeName10_wrapper(struct CAsyncLogInfo* _this)
+        static char* CAsyncLogInfoGetTypeName10_wrapper(struct CAsyncLogInfo* _this)
         {
            return CAsyncLogInfoGetTypeName10_user(_this, CAsyncLogInfoGetTypeName10_next);
         };
-        void CAsyncLogInfoIncreaseCount12_wrapper(struct CAsyncLogInfo* _this)
+        static void CAsyncLogInfoIncreaseCount12_wrapper(struct CAsyncLogInfo* _this)
         {
            CAsyncLogInfoIncreaseCount12_user(_this, CAsyncLogInfoIncreaseCount12_next);
         };
-        bool CAsyncLogInfoInit14_wrapper(struct CAsyncLogInfo* _this, ASYNC_LOG_TYPE eType, char* szDirPath, char* szTypeName, bool bAddDateFileName, unsigned int dwUpdateFileNameDelay, struct CLogFile* logLoading)
+        static bool CAsyncLogInfoInit14_wrapper(struct CAsyncLogInfo* _this, ASYNC_LOG_TYPE eType, char* szDirPath, char* szTypeName, bool bAddDateFileName, unsigned int dwUpdateFileNameDelay, struct CLogFile* logLoading)
         {
            return CAsyncLogInfoInit14_user(_this, eType, szDirPath, szTypeName, bAddDateFileName, dwUpdateFileNameDelay, logLoading, CAsyncLogInfoInit14_next);
         };
-        void CAsyncLogInfoUpdateLogFileName16_wrapper(struct CAsyncLogInfo* _this)
+        static void CAsyncLogInfoUpdateLogFileName16_wrapper(struct CAsyncLogInfo* _this)
         {
            CAsyncLogInfoUpdateLogFileName16_user(_this, CAsyncLogInfoUpdateLogFileName16_next);
         };
-        void CAsyncLogInfodtor_CAsyncLogInfo20_wrapper(struct CAsyncLogInfo* _this)
+        static void CAsyncLogInfodtor_CAsyncLogInfo20_wrapper(struct CAsyncLogInfo* _this)
         {
            CAsyncLogInfodtor_CAsyncLogInfo20_user(_this, CAsyncLogInfodtor_CAsyncLogInfo20_next);
         };
         
-        hook_record CAsyncLogInfo_functions[] = {
+        static hook_record CAsyncLogInfo_functions[] = {
         {   (LPVOID)0x1403bc9f0L,
             (LPVOID *)&CAsyncLogInfoctor_CAsyncLogInfo2_user,
             (LPVOID *)&CAsyncLogInfoctor_CAsyncLogInfo2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

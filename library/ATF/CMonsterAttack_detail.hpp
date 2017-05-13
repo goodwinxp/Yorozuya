@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterAttackAttackMonsterForce2_ptr CMonsterAttackAttackMonsterForce2_next(nullptr);
-        info::CMonsterAttackAttackMonsterForce2_clbk CMonsterAttackAttackMonsterForce2_user(nullptr);
-        info::CMonsterAttackAttackMonsterGen4_ptr CMonsterAttackAttackMonsterGen4_next(nullptr);
-        info::CMonsterAttackAttackMonsterGen4_clbk CMonsterAttackAttackMonsterGen4_user(nullptr);
-        info::CMonsterAttackAttackMonsterSkill6_ptr CMonsterAttackAttackMonsterSkill6_next(nullptr);
-        info::CMonsterAttackAttackMonsterSkill6_clbk CMonsterAttackAttackMonsterSkill6_user(nullptr);
-        info::CMonsterAttackctor_CMonsterAttack8_ptr CMonsterAttackctor_CMonsterAttack8_next(nullptr);
-        info::CMonsterAttackctor_CMonsterAttack8_clbk CMonsterAttackctor_CMonsterAttack8_user(nullptr);
-        info::CMonsterAttackModifyMonsterAttFc10_ptr CMonsterAttackModifyMonsterAttFc10_next(nullptr);
-        info::CMonsterAttackModifyMonsterAttFc10_clbk CMonsterAttackModifyMonsterAttFc10_user(nullptr);
-        info::CMonsterAttack_CalcMonSkillAttPnt12_ptr CMonsterAttack_CalcMonSkillAttPnt12_next(nullptr);
-        info::CMonsterAttack_CalcMonSkillAttPnt12_clbk CMonsterAttack_CalcMonSkillAttPnt12_user(nullptr);
+        static info::CMonsterAttackAttackMonsterForce2_ptr CMonsterAttackAttackMonsterForce2_next(nullptr);
+        static info::CMonsterAttackAttackMonsterForce2_clbk CMonsterAttackAttackMonsterForce2_user(nullptr);
+        static info::CMonsterAttackAttackMonsterGen4_ptr CMonsterAttackAttackMonsterGen4_next(nullptr);
+        static info::CMonsterAttackAttackMonsterGen4_clbk CMonsterAttackAttackMonsterGen4_user(nullptr);
+        static info::CMonsterAttackAttackMonsterSkill6_ptr CMonsterAttackAttackMonsterSkill6_next(nullptr);
+        static info::CMonsterAttackAttackMonsterSkill6_clbk CMonsterAttackAttackMonsterSkill6_user(nullptr);
+        static info::CMonsterAttackctor_CMonsterAttack8_ptr CMonsterAttackctor_CMonsterAttack8_next(nullptr);
+        static info::CMonsterAttackctor_CMonsterAttack8_clbk CMonsterAttackctor_CMonsterAttack8_user(nullptr);
+        static info::CMonsterAttackModifyMonsterAttFc10_ptr CMonsterAttackModifyMonsterAttFc10_next(nullptr);
+        static info::CMonsterAttackModifyMonsterAttFc10_clbk CMonsterAttackModifyMonsterAttFc10_user(nullptr);
+        static info::CMonsterAttack_CalcMonSkillAttPnt12_ptr CMonsterAttack_CalcMonSkillAttPnt12_next(nullptr);
+        static info::CMonsterAttack_CalcMonSkillAttPnt12_clbk CMonsterAttack_CalcMonSkillAttPnt12_user(nullptr);
         
-        void CMonsterAttackAttackMonsterForce2_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam)
+        static void CMonsterAttackAttackMonsterForce2_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam)
         {
            CMonsterAttackAttackMonsterForce2_user(_this, pParam, CMonsterAttackAttackMonsterForce2_next);
         };
-        void CMonsterAttackAttackMonsterGen4_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam, bool bMustMiss)
+        static void CMonsterAttackAttackMonsterGen4_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam, bool bMustMiss)
         {
            CMonsterAttackAttackMonsterGen4_user(_this, pParam, bMustMiss, CMonsterAttackAttackMonsterGen4_next);
         };
-        void CMonsterAttackAttackMonsterSkill6_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam)
+        static void CMonsterAttackAttackMonsterSkill6_wrapper(struct CMonsterAttack* _this, struct _attack_param* pParam)
         {
            CMonsterAttackAttackMonsterSkill6_user(_this, pParam, CMonsterAttackAttackMonsterSkill6_next);
         };
-        void CMonsterAttackctor_CMonsterAttack8_wrapper(struct CMonsterAttack* _this, struct CCharacter* pThis)
+        static void CMonsterAttackctor_CMonsterAttack8_wrapper(struct CMonsterAttack* _this, struct CCharacter* pThis)
         {
            CMonsterAttackctor_CMonsterAttack8_user(_this, pThis, CMonsterAttackctor_CMonsterAttack8_next);
         };
-        float CMonsterAttackModifyMonsterAttFc10_wrapper(struct CMonsterAttack* _this, float fAttFc)
+        static float CMonsterAttackModifyMonsterAttFc10_wrapper(struct CMonsterAttack* _this, float fAttFc)
         {
            return CMonsterAttackModifyMonsterAttFc10_user(_this, fAttFc, CMonsterAttackModifyMonsterAttFc10_next);
         };
-        int CMonsterAttack_CalcMonSkillAttPnt12_wrapper(struct CMonsterAttack* _this)
+        static int CMonsterAttack_CalcMonSkillAttPnt12_wrapper(struct CMonsterAttack* _this)
         {
            return CMonsterAttack_CalcMonSkillAttPnt12_user(_this, CMonsterAttack_CalcMonSkillAttPnt12_next);
         };
         
-        hook_record CMonsterAttack_functions[] = {
+        static hook_record CMonsterAttack_functions[] = {
         {   (LPVOID)0x14015ba60L,
             (LPVOID *)&CMonsterAttackAttackMonsterForce2_user,
             (LPVOID *)&CMonsterAttackAttackMonsterForce2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

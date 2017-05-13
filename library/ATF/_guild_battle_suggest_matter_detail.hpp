@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_guild_battle_suggest_matterCancelSuggestedMatter2_ptr _guild_battle_suggest_matterCancelSuggestedMatter2_next(nullptr);
-        info::_guild_battle_suggest_matterCancelSuggestedMatter2_clbk _guild_battle_suggest_matterCancelSuggestedMatter2_user(nullptr);
-        info::_guild_battle_suggest_matterClear4_ptr _guild_battle_suggest_matterClear4_next(nullptr);
-        info::_guild_battle_suggest_matterClear4_clbk _guild_battle_suggest_matterClear4_user(nullptr);
-        info::_guild_battle_suggest_matterIsCompleteBattle6_ptr _guild_battle_suggest_matterIsCompleteBattle6_next(nullptr);
-        info::_guild_battle_suggest_matterIsCompleteBattle6_clbk _guild_battle_suggest_matterIsCompleteBattle6_user(nullptr);
-        info::_guild_battle_suggest_matterctor__guild_battle_suggest_matter8_ptr _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_next(nullptr);
-        info::_guild_battle_suggest_matterctor__guild_battle_suggest_matter8_clbk _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_user(nullptr);
+        static info::_guild_battle_suggest_matterCancelSuggestedMatter2_ptr _guild_battle_suggest_matterCancelSuggestedMatter2_next(nullptr);
+        static info::_guild_battle_suggest_matterCancelSuggestedMatter2_clbk _guild_battle_suggest_matterCancelSuggestedMatter2_user(nullptr);
+        static info::_guild_battle_suggest_matterClear4_ptr _guild_battle_suggest_matterClear4_next(nullptr);
+        static info::_guild_battle_suggest_matterClear4_clbk _guild_battle_suggest_matterClear4_user(nullptr);
+        static info::_guild_battle_suggest_matterIsCompleteBattle6_ptr _guild_battle_suggest_matterIsCompleteBattle6_next(nullptr);
+        static info::_guild_battle_suggest_matterIsCompleteBattle6_clbk _guild_battle_suggest_matterIsCompleteBattle6_user(nullptr);
+        static info::_guild_battle_suggest_matterctor__guild_battle_suggest_matter8_ptr _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_next(nullptr);
+        static info::_guild_battle_suggest_matterctor__guild_battle_suggest_matter8_clbk _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_user(nullptr);
         
-        void _guild_battle_suggest_matterCancelSuggestedMatter2_wrapper(struct _guild_battle_suggest_matter* _this)
+        static void _guild_battle_suggest_matterCancelSuggestedMatter2_wrapper(struct _guild_battle_suggest_matter* _this)
         {
            _guild_battle_suggest_matterCancelSuggestedMatter2_user(_this, _guild_battle_suggest_matterCancelSuggestedMatter2_next);
         };
-        void _guild_battle_suggest_matterClear4_wrapper(struct _guild_battle_suggest_matter* _this)
+        static void _guild_battle_suggest_matterClear4_wrapper(struct _guild_battle_suggest_matter* _this)
         {
            _guild_battle_suggest_matterClear4_user(_this, _guild_battle_suggest_matterClear4_next);
         };
-        bool _guild_battle_suggest_matterIsCompleteBattle6_wrapper(struct _guild_battle_suggest_matter* _this)
+        static bool _guild_battle_suggest_matterIsCompleteBattle6_wrapper(struct _guild_battle_suggest_matter* _this)
         {
            return _guild_battle_suggest_matterIsCompleteBattle6_user(_this, _guild_battle_suggest_matterIsCompleteBattle6_next);
         };
-        void _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_wrapper(struct _guild_battle_suggest_matter* _this)
+        static void _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_wrapper(struct _guild_battle_suggest_matter* _this)
         {
            _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_user(_this, _guild_battle_suggest_matterctor__guild_battle_suggest_matter8_next);
         };
         
-        hook_record _guild_battle_suggest_matter_functions[] = {
+        static hook_record _guild_battle_suggest_matter_functions[] = {
         {   (LPVOID)0x14025d350L,
             (LPVOID *)&_guild_battle_suggest_matterCancelSuggestedMatter2_user,
             (LPVOID *)&_guild_battle_suggest_matterCancelSuggestedMatter2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

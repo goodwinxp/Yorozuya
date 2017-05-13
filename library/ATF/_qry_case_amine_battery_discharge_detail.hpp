@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_ptr _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_next(nullptr);
-        info::_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_clbk _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_user(nullptr);
-        info::_qry_case_amine_battery_dischargesize4_ptr _qry_case_amine_battery_dischargesize4_next(nullptr);
-        info::_qry_case_amine_battery_dischargesize4_clbk _qry_case_amine_battery_dischargesize4_user(nullptr);
+        static info::_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_ptr _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_next(nullptr);
+        static info::_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_clbk _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_user(nullptr);
+        static info::_qry_case_amine_battery_dischargesize4_ptr _qry_case_amine_battery_dischargesize4_next(nullptr);
+        static info::_qry_case_amine_battery_dischargesize4_clbk _qry_case_amine_battery_dischargesize4_user(nullptr);
         
-        void _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_wrapper(struct _qry_case_amine_battery_discharge* _this)
+        static void _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_wrapper(struct _qry_case_amine_battery_discharge* _this)
         {
            _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_user(_this, _qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_next);
         };
-        int _qry_case_amine_battery_dischargesize4_wrapper(struct _qry_case_amine_battery_discharge* _this)
+        static int _qry_case_amine_battery_dischargesize4_wrapper(struct _qry_case_amine_battery_discharge* _this)
         {
            return _qry_case_amine_battery_dischargesize4_user(_this, _qry_case_amine_battery_dischargesize4_next);
         };
         
-        hook_record _qry_case_amine_battery_discharge_functions[] = {
+        static hook_record _qry_case_amine_battery_discharge_functions[] = {
         {   (LPVOID)0x1402d42f0L,
             (LPVOID *)&_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_user,
             (LPVOID *)&_qry_case_amine_battery_dischargector__qry_case_amine_battery_discharge2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

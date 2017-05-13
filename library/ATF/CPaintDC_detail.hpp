@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPaintDCdtor_CPaintDC1_ptr CPaintDCdtor_CPaintDC1_next(nullptr);
-        info::CPaintDCdtor_CPaintDC1_clbk CPaintDCdtor_CPaintDC1_user(nullptr);
+        static info::CPaintDCdtor_CPaintDC1_ptr CPaintDCdtor_CPaintDC1_next(nullptr);
+        static info::CPaintDCdtor_CPaintDC1_clbk CPaintDCdtor_CPaintDC1_user(nullptr);
         
-        int64_t CPaintDCdtor_CPaintDC1_wrapper(struct CPaintDC* _this)
+        static int64_t CPaintDCdtor_CPaintDC1_wrapper(struct CPaintDC* _this)
         {
            return CPaintDCdtor_CPaintDC1_user(_this, CPaintDCdtor_CPaintDC1_next);
         };
         
-        hook_record CPaintDC_functions[] = {
+        static hook_record CPaintDC_functions[] = {
         {   (LPVOID)0x1404dbefeL,
             (LPVOID *)&CPaintDCdtor_CPaintDC1_user,
             (LPVOID *)&CPaintDCdtor_CPaintDC1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,29 +8,29 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_ptr CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_next(nullptr);
-        info::CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_clbk CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_user(nullptr);
-        info::CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_ptr CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_next(nullptr);
-        info::CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_clbk CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_user(nullptr);
+        static info::CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_ptr CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_next(nullptr);
+        static info::CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_clbk CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_user(nullptr);
+        static info::CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_ptr CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_next(nullptr);
+        static info::CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_clbk CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_user(nullptr);
         
-        info::CLuaLooting_Novus_Item___Statector__State2_ptr CLuaLooting_Novus_Item___Statector__State2_next(nullptr);
-        info::CLuaLooting_Novus_Item___Statector__State2_clbk CLuaLooting_Novus_Item___Statector__State2_user(nullptr);
+        static info::CLuaLooting_Novus_Item___Statector__State2_ptr CLuaLooting_Novus_Item___Statector__State2_next(nullptr);
+        static info::CLuaLooting_Novus_Item___Statector__State2_clbk CLuaLooting_Novus_Item___Statector__State2_user(nullptr);
         
-        void CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_wrapper(struct CLuaLooting_Novus_Item* _this)
+        static void CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_wrapper(struct CLuaLooting_Novus_Item* _this)
         {
            CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_user(_this, CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_next);
         };
-        void CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_wrapper(struct CLuaLooting_Novus_Item* _this)
+        static void CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_wrapper(struct CLuaLooting_Novus_Item* _this)
         {
            CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_user(_this, CLuaLooting_Novus_Itemdtor_CLuaLooting_Novus_Item6_next);
         };
         
-        void CLuaLooting_Novus_Item___Statector__State2_wrapper(struct CLuaLooting_Novus_Item::_State* _this)
+        static void CLuaLooting_Novus_Item___Statector__State2_wrapper(struct CLuaLooting_Novus_Item::_State* _this)
         {
            CLuaLooting_Novus_Item___Statector__State2_user(_this, CLuaLooting_Novus_Item___Statector__State2_next);
         };
         
-        hook_record CLuaLooting_Novus_Item_functions[] = {
+        static hook_record CLuaLooting_Novus_Item_functions[] = {
         {   (LPVOID)0x140405cd0L,
             (LPVOID *)&CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_user,
             (LPVOID *)&CLuaLooting_Novus_Itemctor_CLuaLooting_Novus_Item2_next,
@@ -50,5 +50,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

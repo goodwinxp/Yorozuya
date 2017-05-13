@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::lua_tinker__val2userctor_val2user5_ptr lua_tinker__val2userctor_val2user5_next(nullptr);
-            info::lua_tinker__val2userctor_val2user5_clbk lua_tinker__val2userctor_val2user5_user(nullptr);
-            info::lua_tinker__val2userdtor_val2user7_ptr lua_tinker__val2userdtor_val2user7_next(nullptr);
-            info::lua_tinker__val2userdtor_val2user7_clbk lua_tinker__val2userdtor_val2user7_user(nullptr);
+            static info::lua_tinker__val2userctor_val2user5_ptr lua_tinker__val2userctor_val2user5_next(nullptr);
+            static info::lua_tinker__val2userctor_val2user5_clbk lua_tinker__val2userctor_val2user5_user(nullptr);
+            static info::lua_tinker__val2userdtor_val2user7_ptr lua_tinker__val2userdtor_val2user7_next(nullptr);
+            static info::lua_tinker__val2userdtor_val2user7_clbk lua_tinker__val2userdtor_val2user7_user(nullptr);
             
-            void lua_tinker__val2userctor_val2user5_wrapper(struct lua_tinker::val2user<LuaParam3>* _this, int t1, int t2, int t3)
+            static void lua_tinker__val2userctor_val2user5_wrapper(struct lua_tinker::val2user<LuaParam3>* _this, int t1, int t2, int t3)
             {
                lua_tinker__val2userctor_val2user5_user(_this, t1, t2, t3);
             };
-            void lua_tinker__val2userdtor_val2user7_wrapper(struct lua_tinker::val2user<LuaParam3>* _this)
+            static void lua_tinker__val2userdtor_val2user7_wrapper(struct lua_tinker::val2user<LuaParam3>* _this)
             {
                lua_tinker__val2userdtor_val2user7_user(_this);
             };
             
-            hook_record val2user<LuaParam3>_functions[] = {
+            static hook_record val2user<LuaParam3>_functions[] = {
             {   (LPVOID)0x140409df0L,
                 (LPVOID *)&lua_tinker__val2userctor_val2user5_user,
                 (LPVOID *)&lua_tinker__val2userctor_val2user5_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace lua_tinker
 END_ATF_NAMESPACE

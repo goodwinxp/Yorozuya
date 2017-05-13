@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_talik_recvr_listctor__talik_recvr_list2_ptr _talik_recvr_listctor__talik_recvr_list2_next(nullptr);
-        info::_talik_recvr_listctor__talik_recvr_list2_clbk _talik_recvr_listctor__talik_recvr_list2_user(nullptr);
-        info::_talik_recvr_listsize4_ptr _talik_recvr_listsize4_next(nullptr);
-        info::_talik_recvr_listsize4_clbk _talik_recvr_listsize4_user(nullptr);
+        static info::_talik_recvr_listctor__talik_recvr_list2_ptr _talik_recvr_listctor__talik_recvr_list2_next(nullptr);
+        static info::_talik_recvr_listctor__talik_recvr_list2_clbk _talik_recvr_listctor__talik_recvr_list2_user(nullptr);
+        static info::_talik_recvr_listsize4_ptr _talik_recvr_listsize4_next(nullptr);
+        static info::_talik_recvr_listsize4_clbk _talik_recvr_listsize4_user(nullptr);
         
-        void _talik_recvr_listctor__talik_recvr_list2_wrapper(struct _talik_recvr_list* _this)
+        static void _talik_recvr_listctor__talik_recvr_list2_wrapper(struct _talik_recvr_list* _this)
         {
            _talik_recvr_listctor__talik_recvr_list2_user(_this, _talik_recvr_listctor__talik_recvr_list2_next);
         };
-        int _talik_recvr_listsize4_wrapper(struct _talik_recvr_list* _this)
+        static int _talik_recvr_listsize4_wrapper(struct _talik_recvr_list* _this)
         {
            return _talik_recvr_listsize4_user(_this, _talik_recvr_listsize4_next);
         };
         
-        hook_record _talik_recvr_list_functions[] = {
+        static hook_record _talik_recvr_list_functions[] = {
         {   (LPVOID)0x1403f6ed0L,
             (LPVOID *)&_talik_recvr_listctor__talik_recvr_list2_user,
             (LPVOID *)&_talik_recvr_listctor__talik_recvr_list2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

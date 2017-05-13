@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_apex_send_transsize2_ptr _apex_send_transsize2_next(nullptr);
-        info::_apex_send_transsize2_clbk _apex_send_transsize2_user(nullptr);
+        static info::_apex_send_transsize2_ptr _apex_send_transsize2_next(nullptr);
+        static info::_apex_send_transsize2_clbk _apex_send_transsize2_user(nullptr);
         
-        int _apex_send_transsize2_wrapper(struct _apex_send_trans* _this)
+        static int _apex_send_transsize2_wrapper(struct _apex_send_trans* _this)
         {
            return _apex_send_transsize2_user(_this, _apex_send_transsize2_next);
         };
         
-        hook_record _apex_send_trans_functions[] = {
+        static hook_record _apex_send_trans_functions[] = {
         {   (LPVOID)0x140410c30L,
             (LPVOID *)&_apex_send_transsize2_user,
             (LPVOID *)&_apex_send_transsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

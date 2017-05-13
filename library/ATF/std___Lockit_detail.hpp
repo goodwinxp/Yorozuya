@@ -10,21 +10,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std___Lockitctor__Lockit1_ptr std___Lockitctor__Lockit1_next(nullptr);
-            info::std___Lockitctor__Lockit1_clbk std___Lockitctor__Lockit1_user(nullptr);
-            info::std___Lockitdtor__Lockit2_ptr std___Lockitdtor__Lockit2_next(nullptr);
-            info::std___Lockitdtor__Lockit2_clbk std___Lockitdtor__Lockit2_user(nullptr);
+            static info::std___Lockitctor__Lockit1_ptr std___Lockitctor__Lockit1_next(nullptr);
+            static info::std___Lockitctor__Lockit1_clbk std___Lockitctor__Lockit1_user(nullptr);
+            static info::std___Lockitdtor__Lockit2_ptr std___Lockitdtor__Lockit2_next(nullptr);
+            static info::std___Lockitdtor__Lockit2_clbk std___Lockitdtor__Lockit2_user(nullptr);
             
-            int64_t std___Lockitctor__Lockit1_wrapper(struct std::_Lockit* _this, int arg_0)
+            static int64_t std___Lockitctor__Lockit1_wrapper(struct std::_Lockit* _this, int arg_0)
             {
                return std___Lockitctor__Lockit1_user(_this, arg_0, std___Lockitctor__Lockit1_next);
             };
-            int64_t std___Lockitdtor__Lockit2_wrapper(struct std::_Lockit* _this)
+            static int64_t std___Lockitdtor__Lockit2_wrapper(struct std::_Lockit* _this)
             {
                return std___Lockitdtor__Lockit2_user(_this, std___Lockitdtor__Lockit2_next);
             };
             
-            hook_record _Lockit_functions[] = {
+            static hook_record _Lockit_functions[] = {
             {   (LPVOID)0x1404dbafcL,
                 (LPVOID *)&std___Lockitctor__Lockit1_user,
                 (LPVOID *)&std___Lockitctor__Lockit1_next,
@@ -38,6 +38,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

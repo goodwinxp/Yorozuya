@@ -8,79 +8,79 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ATTACK_DELAY_CHECKERInit2_ptr _ATTACK_DELAY_CHECKERInit2_next(nullptr);
-        info::_ATTACK_DELAY_CHECKERInit2_clbk _ATTACK_DELAY_CHECKERInit2_user(nullptr);
-        info::_ATTACK_DELAY_CHECKERIsDelay4_ptr _ATTACK_DELAY_CHECKERIsDelay4_next(nullptr);
-        info::_ATTACK_DELAY_CHECKERIsDelay4_clbk _ATTACK_DELAY_CHECKERIsDelay4_user(nullptr);
-        info::_ATTACK_DELAY_CHECKERSetDelay6_ptr _ATTACK_DELAY_CHECKERSetDelay6_next(nullptr);
-        info::_ATTACK_DELAY_CHECKERSetDelay6_clbk _ATTACK_DELAY_CHECKERSetDelay6_user(nullptr);
-        info::_ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_ptr _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_next(nullptr);
-        info::_ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_clbk _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_user(nullptr);
-        info::_ATTACK_DELAY_CHECKER_delay_check10_ptr _ATTACK_DELAY_CHECKER_delay_check10_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER_delay_check10_clbk _ATTACK_DELAY_CHECKER_delay_check10_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKERInit2_ptr _ATTACK_DELAY_CHECKERInit2_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKERInit2_clbk _ATTACK_DELAY_CHECKERInit2_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKERIsDelay4_ptr _ATTACK_DELAY_CHECKERIsDelay4_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKERIsDelay4_clbk _ATTACK_DELAY_CHECKERIsDelay4_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKERSetDelay6_ptr _ATTACK_DELAY_CHECKERSetDelay6_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKERSetDelay6_clbk _ATTACK_DELAY_CHECKERSetDelay6_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_ptr _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_clbk _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER_delay_check10_ptr _ATTACK_DELAY_CHECKER_delay_check10_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER_delay_check10_clbk _ATTACK_DELAY_CHECKER_delay_check10_user(nullptr);
         
-        info::_ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_ptr _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_clbk _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_user(nullptr);
-        info::_ATTACK_DELAY_CHECKER___eff_listfill4_ptr _ATTACK_DELAY_CHECKER___eff_listfill4_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___eff_listfill4_clbk _ATTACK_DELAY_CHECKER___eff_listfill4_user(nullptr);
-        info::_ATTACK_DELAY_CHECKER___eff_listinit6_ptr _ATTACK_DELAY_CHECKER___eff_listinit6_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___eff_listinit6_clbk _ATTACK_DELAY_CHECKER___eff_listinit6_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_ptr _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_clbk _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listfill4_ptr _ATTACK_DELAY_CHECKER___eff_listfill4_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listfill4_clbk _ATTACK_DELAY_CHECKER___eff_listfill4_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listinit6_ptr _ATTACK_DELAY_CHECKER___eff_listinit6_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___eff_listinit6_clbk _ATTACK_DELAY_CHECKER___eff_listinit6_user(nullptr);
         
-        info::_ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_ptr _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_clbk _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_user(nullptr);
-        info::_ATTACK_DELAY_CHECKER___mas_listfill4_ptr _ATTACK_DELAY_CHECKER___mas_listfill4_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___mas_listfill4_clbk _ATTACK_DELAY_CHECKER___mas_listfill4_user(nullptr);
-        info::_ATTACK_DELAY_CHECKER___mas_listinit6_ptr _ATTACK_DELAY_CHECKER___mas_listinit6_next(nullptr);
-        info::_ATTACK_DELAY_CHECKER___mas_listinit6_clbk _ATTACK_DELAY_CHECKER___mas_listinit6_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_ptr _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_clbk _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listfill4_ptr _ATTACK_DELAY_CHECKER___mas_listfill4_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listfill4_clbk _ATTACK_DELAY_CHECKER___mas_listfill4_user(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listinit6_ptr _ATTACK_DELAY_CHECKER___mas_listinit6_next(nullptr);
+        static info::_ATTACK_DELAY_CHECKER___mas_listinit6_clbk _ATTACK_DELAY_CHECKER___mas_listinit6_user(nullptr);
         
-        void _ATTACK_DELAY_CHECKERInit2_wrapper(struct _ATTACK_DELAY_CHECKER* _this)
+        static void _ATTACK_DELAY_CHECKERInit2_wrapper(struct _ATTACK_DELAY_CHECKER* _this)
         {
            _ATTACK_DELAY_CHECKERInit2_user(_this, _ATTACK_DELAY_CHECKERInit2_next);
         };
-        bool _ATTACK_DELAY_CHECKERIsDelay4_wrapper(struct _ATTACK_DELAY_CHECKER* _this, char code, uint16_t index, char mastery)
+        static bool _ATTACK_DELAY_CHECKERIsDelay4_wrapper(struct _ATTACK_DELAY_CHECKER* _this, char code, uint16_t index, char mastery)
         {
            return _ATTACK_DELAY_CHECKERIsDelay4_user(_this, code, index, mastery, _ATTACK_DELAY_CHECKERIsDelay4_next);
         };
-        void _ATTACK_DELAY_CHECKERSetDelay6_wrapper(struct _ATTACK_DELAY_CHECKER* _this, unsigned int delay)
+        static void _ATTACK_DELAY_CHECKERSetDelay6_wrapper(struct _ATTACK_DELAY_CHECKER* _this, unsigned int delay)
         {
            _ATTACK_DELAY_CHECKERSetDelay6_user(_this, delay, _ATTACK_DELAY_CHECKERSetDelay6_next);
         };
-        void _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_wrapper(struct _ATTACK_DELAY_CHECKER* _this)
+        static void _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_wrapper(struct _ATTACK_DELAY_CHECKER* _this)
         {
            _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_user(_this, _ATTACK_DELAY_CHECKERctor__ATTACK_DELAY_CHECKER8_next);
         };
-        bool _ATTACK_DELAY_CHECKER_delay_check10_wrapper(struct _ATTACK_DELAY_CHECKER* _this, char code, uint16_t index, char mastery)
+        static bool _ATTACK_DELAY_CHECKER_delay_check10_wrapper(struct _ATTACK_DELAY_CHECKER* _this, char code, uint16_t index, char mastery)
         {
            return _ATTACK_DELAY_CHECKER_delay_check10_user(_this, code, index, mastery, _ATTACK_DELAY_CHECKER_delay_check10_next);
         };
         
-        void _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
+        static void _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
         {
            _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_user(_this, _ATTACK_DELAY_CHECKER___eff_listctor__eff_list2_next);
         };
-        bool _ATTACK_DELAY_CHECKER___eff_listfill4_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
+        static bool _ATTACK_DELAY_CHECKER___eff_listfill4_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
         {
            return _ATTACK_DELAY_CHECKER___eff_listfill4_user(_this, _ATTACK_DELAY_CHECKER___eff_listfill4_next);
         };
-        void _ATTACK_DELAY_CHECKER___eff_listinit6_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
+        static void _ATTACK_DELAY_CHECKER___eff_listinit6_wrapper(struct _ATTACK_DELAY_CHECKER::_eff_list* _this)
         {
            _ATTACK_DELAY_CHECKER___eff_listinit6_user(_this, _ATTACK_DELAY_CHECKER___eff_listinit6_next);
         };
         
-        void _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
+        static void _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
         {
            _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_user(_this, _ATTACK_DELAY_CHECKER___mas_listctor__mas_list2_next);
         };
-        bool _ATTACK_DELAY_CHECKER___mas_listfill4_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
+        static bool _ATTACK_DELAY_CHECKER___mas_listfill4_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
         {
            return _ATTACK_DELAY_CHECKER___mas_listfill4_user(_this, _ATTACK_DELAY_CHECKER___mas_listfill4_next);
         };
-        void _ATTACK_DELAY_CHECKER___mas_listinit6_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
+        static void _ATTACK_DELAY_CHECKER___mas_listinit6_wrapper(struct _ATTACK_DELAY_CHECKER::_mas_list* _this)
         {
            _ATTACK_DELAY_CHECKER___mas_listinit6_user(_this, _ATTACK_DELAY_CHECKER___mas_listinit6_next);
         };
         
-        hook_record _ATTACK_DELAY_CHECKER_functions[] = {
+        static hook_record _ATTACK_DELAY_CHECKER_functions[] = {
         {   (LPVOID)0x140072e60L,
             (LPVOID *)&_ATTACK_DELAY_CHECKERInit2_user,
             (LPVOID *)&_ATTACK_DELAY_CHECKERInit2_next,
@@ -141,5 +141,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

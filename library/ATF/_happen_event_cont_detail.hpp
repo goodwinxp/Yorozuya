@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_happen_event_contctor__happen_event_cont2_ptr _happen_event_contctor__happen_event_cont2_next(nullptr);
-        info::_happen_event_contctor__happen_event_cont2_clbk _happen_event_contctor__happen_event_cont2_user(nullptr);
-        info::_happen_event_continit4_ptr _happen_event_continit4_next(nullptr);
-        info::_happen_event_continit4_clbk _happen_event_continit4_user(nullptr);
-        info::_happen_event_contisset6_ptr _happen_event_contisset6_next(nullptr);
-        info::_happen_event_contisset6_clbk _happen_event_contisset6_user(nullptr);
-        info::_happen_event_contset8_ptr _happen_event_contset8_next(nullptr);
-        info::_happen_event_contset8_clbk _happen_event_contset8_user(nullptr);
+        static info::_happen_event_contctor__happen_event_cont2_ptr _happen_event_contctor__happen_event_cont2_next(nullptr);
+        static info::_happen_event_contctor__happen_event_cont2_clbk _happen_event_contctor__happen_event_cont2_user(nullptr);
+        static info::_happen_event_continit4_ptr _happen_event_continit4_next(nullptr);
+        static info::_happen_event_continit4_clbk _happen_event_continit4_user(nullptr);
+        static info::_happen_event_contisset6_ptr _happen_event_contisset6_next(nullptr);
+        static info::_happen_event_contisset6_clbk _happen_event_contisset6_user(nullptr);
+        static info::_happen_event_contset8_ptr _happen_event_contset8_next(nullptr);
+        static info::_happen_event_contset8_clbk _happen_event_contset8_user(nullptr);
         
-        void _happen_event_contctor__happen_event_cont2_wrapper(struct _happen_event_cont* _this)
+        static void _happen_event_contctor__happen_event_cont2_wrapper(struct _happen_event_cont* _this)
         {
            _happen_event_contctor__happen_event_cont2_user(_this, _happen_event_contctor__happen_event_cont2_next);
         };
-        void _happen_event_continit4_wrapper(struct _happen_event_cont* _this)
+        static void _happen_event_continit4_wrapper(struct _happen_event_cont* _this)
         {
            _happen_event_continit4_user(_this, _happen_event_continit4_next);
         };
-        bool _happen_event_contisset6_wrapper(struct _happen_event_cont* _this)
+        static bool _happen_event_contisset6_wrapper(struct _happen_event_cont* _this)
         {
            return _happen_event_contisset6_user(_this, _happen_event_contisset6_next);
         };
-        void _happen_event_contset8_wrapper(struct _happen_event_cont* _this, struct _happen_event_node* pPoint, QUEST_HAPPEN QtHpType, int nIndexInType, int nRaceCode)
+        static void _happen_event_contset8_wrapper(struct _happen_event_cont* _this, struct _happen_event_node* pPoint, QUEST_HAPPEN QtHpType, int nIndexInType, int nRaceCode)
         {
            _happen_event_contset8_user(_this, pPoint, QtHpType, nIndexInType, nRaceCode, _happen_event_contset8_next);
         };
         
-        hook_record _happen_event_cont_functions[] = {
+        static hook_record _happen_event_cont_functions[] = {
         {   (LPVOID)0x1400cfb70L,
             (LPVOID *)&_happen_event_contctor__happen_event_cont2_user,
             (LPVOID *)&_happen_event_contctor__happen_event_cont2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CBillingNULLAlive2_ptr CBillingNULLAlive2_next(nullptr);
-        info::CBillingNULLAlive2_clbk CBillingNULLAlive2_user(nullptr);
-        info::CBillingNULLBillingClose4_ptr CBillingNULLBillingClose4_next(nullptr);
-        info::CBillingNULLBillingClose4_clbk CBillingNULLBillingClose4_user(nullptr);
-        info::CBillingNULLctor_CBillingNULL6_ptr CBillingNULLctor_CBillingNULL6_next(nullptr);
-        info::CBillingNULLctor_CBillingNULL6_clbk CBillingNULLctor_CBillingNULL6_user(nullptr);
-        info::CBillingNULLLogin8_ptr CBillingNULLLogin8_next(nullptr);
-        info::CBillingNULLLogin8_clbk CBillingNULLLogin8_user(nullptr);
-        info::CBillingNULLLogout10_ptr CBillingNULLLogout10_next(nullptr);
-        info::CBillingNULLLogout10_clbk CBillingNULLLogout10_user(nullptr);
-        info::CBillingNULLSendMsg_Login12_ptr CBillingNULLSendMsg_Login12_next(nullptr);
-        info::CBillingNULLSendMsg_Login12_clbk CBillingNULLSendMsg_Login12_user(nullptr);
-        info::CBillingNULLdtor_CBillingNULL17_ptr CBillingNULLdtor_CBillingNULL17_next(nullptr);
-        info::CBillingNULLdtor_CBillingNULL17_clbk CBillingNULLdtor_CBillingNULL17_user(nullptr);
+        static info::CBillingNULLAlive2_ptr CBillingNULLAlive2_next(nullptr);
+        static info::CBillingNULLAlive2_clbk CBillingNULLAlive2_user(nullptr);
+        static info::CBillingNULLBillingClose4_ptr CBillingNULLBillingClose4_next(nullptr);
+        static info::CBillingNULLBillingClose4_clbk CBillingNULLBillingClose4_user(nullptr);
+        static info::CBillingNULLctor_CBillingNULL6_ptr CBillingNULLctor_CBillingNULL6_next(nullptr);
+        static info::CBillingNULLctor_CBillingNULL6_clbk CBillingNULLctor_CBillingNULL6_user(nullptr);
+        static info::CBillingNULLLogin8_ptr CBillingNULLLogin8_next(nullptr);
+        static info::CBillingNULLLogin8_clbk CBillingNULLLogin8_user(nullptr);
+        static info::CBillingNULLLogout10_ptr CBillingNULLLogout10_next(nullptr);
+        static info::CBillingNULLLogout10_clbk CBillingNULLLogout10_user(nullptr);
+        static info::CBillingNULLSendMsg_Login12_ptr CBillingNULLSendMsg_Login12_next(nullptr);
+        static info::CBillingNULLSendMsg_Login12_clbk CBillingNULLSendMsg_Login12_user(nullptr);
+        static info::CBillingNULLdtor_CBillingNULL17_ptr CBillingNULLdtor_CBillingNULL17_next(nullptr);
+        static info::CBillingNULLdtor_CBillingNULL17_clbk CBillingNULLdtor_CBillingNULL17_user(nullptr);
         
-        void CBillingNULLAlive2_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
+        static void CBillingNULLAlive2_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
         {
            CBillingNULLAlive2_user(_this, pUserDB, CBillingNULLAlive2_next);
         };
-        void CBillingNULLBillingClose4_wrapper(struct CBillingNULL* _this, char* szID)
+        static void CBillingNULLBillingClose4_wrapper(struct CBillingNULL* _this, char* szID)
         {
            CBillingNULLBillingClose4_user(_this, szID, CBillingNULLBillingClose4_next);
         };
-        void CBillingNULLctor_CBillingNULL6_wrapper(struct CBillingNULL* _this)
+        static void CBillingNULLctor_CBillingNULL6_wrapper(struct CBillingNULL* _this)
         {
            CBillingNULLctor_CBillingNULL6_user(_this, CBillingNULLctor_CBillingNULL6_next);
         };
-        void CBillingNULLLogin8_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
+        static void CBillingNULLLogin8_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
         {
            CBillingNULLLogin8_user(_this, pUserDB, CBillingNULLLogin8_next);
         };
-        void CBillingNULLLogout10_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
+        static void CBillingNULLLogout10_wrapper(struct CBillingNULL* _this, struct CUserDB* pUserDB)
         {
            CBillingNULLLogout10_user(_this, pUserDB, CBillingNULLLogout10_next);
         };
-        bool CBillingNULLSendMsg_Login12_wrapper(struct CBillingNULL* _this, char* szID, char* szIP, char* szCMS, int16_t iType, struct _SYSTEMTIME* pstEndDate, int lRemainTime)
+        static bool CBillingNULLSendMsg_Login12_wrapper(struct CBillingNULL* _this, char* szID, char* szIP, char* szCMS, int16_t iType, struct _SYSTEMTIME* pstEndDate, int lRemainTime)
         {
            return CBillingNULLSendMsg_Login12_user(_this, szID, szIP, szCMS, iType, pstEndDate, lRemainTime, CBillingNULLSendMsg_Login12_next);
         };
-        void CBillingNULLdtor_CBillingNULL17_wrapper(struct CBillingNULL* _this)
+        static void CBillingNULLdtor_CBillingNULL17_wrapper(struct CBillingNULL* _this)
         {
            CBillingNULLdtor_CBillingNULL17_user(_this, CBillingNULLdtor_CBillingNULL17_next);
         };
         
-        hook_record CBillingNULL_functions[] = {
+        static hook_record CBillingNULL_functions[] = {
         {   (LPVOID)0x14028dbe0L,
             (LPVOID *)&CBillingNULLAlive2_user,
             (LPVOID *)&CBillingNULLAlive2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

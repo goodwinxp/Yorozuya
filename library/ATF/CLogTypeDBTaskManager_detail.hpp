@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_ptr CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_next(nullptr);
-        info::CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_clbk CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_user(nullptr);
-        info::CLogTypeDBTaskManagerCleanUp4_ptr CLogTypeDBTaskManagerCleanUp4_next(nullptr);
-        info::CLogTypeDBTaskManagerCleanUp4_clbk CLogTypeDBTaskManagerCleanUp4_user(nullptr);
-        info::CLogTypeDBTaskManagerDBProcess6_ptr CLogTypeDBTaskManagerDBProcess6_next(nullptr);
-        info::CLogTypeDBTaskManagerDBProcess6_clbk CLogTypeDBTaskManagerDBProcess6_user(nullptr);
-        info::CLogTypeDBTaskManagerDestroy8_ptr CLogTypeDBTaskManagerDestroy8_next(nullptr);
-        info::CLogTypeDBTaskManagerDestroy8_clbk CLogTypeDBTaskManagerDestroy8_user(nullptr);
-        info::CLogTypeDBTaskManagerGetDBProc10_ptr CLogTypeDBTaskManagerGetDBProc10_next(nullptr);
-        info::CLogTypeDBTaskManagerGetDBProc10_clbk CLogTypeDBTaskManagerGetDBProc10_user(nullptr);
-        info::CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_ptr CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_next(nullptr);
-        info::CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_clbk CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_user(nullptr);
-        info::CLogTypeDBTaskManagerGetDBTaskDataStatus14_ptr CLogTypeDBTaskManagerGetDBTaskDataStatus14_next(nullptr);
-        info::CLogTypeDBTaskManagerGetDBTaskDataStatus14_clbk CLogTypeDBTaskManagerGetDBTaskDataStatus14_user(nullptr);
-        info::CLogTypeDBTaskManagerInit16_ptr CLogTypeDBTaskManagerInit16_next(nullptr);
-        info::CLogTypeDBTaskManagerInit16_clbk CLogTypeDBTaskManagerInit16_user(nullptr);
-        info::CLogTypeDBTaskManagerInitDB18_ptr CLogTypeDBTaskManagerInitDB18_next(nullptr);
-        info::CLogTypeDBTaskManagerInitDB18_clbk CLogTypeDBTaskManagerInitDB18_user(nullptr);
-        info::CLogTypeDBTaskManagerInitLogger20_ptr CLogTypeDBTaskManagerInitLogger20_next(nullptr);
-        info::CLogTypeDBTaskManagerInitLogger20_clbk CLogTypeDBTaskManagerInitLogger20_user(nullptr);
-        info::CLogTypeDBTaskManagerInstance22_ptr CLogTypeDBTaskManagerInstance22_next(nullptr);
-        info::CLogTypeDBTaskManagerInstance22_clbk CLogTypeDBTaskManagerInstance22_user(nullptr);
-        info::CLogTypeDBTaskManagerIsInitialized24_ptr CLogTypeDBTaskManagerIsInitialized24_next(nullptr);
-        info::CLogTypeDBTaskManagerIsInitialized24_clbk CLogTypeDBTaskManagerIsInitialized24_user(nullptr);
-        info::CLogTypeDBTaskManagerLog26_ptr CLogTypeDBTaskManagerLog26_next(nullptr);
-        info::CLogTypeDBTaskManagerLog26_clbk CLogTypeDBTaskManagerLog26_user(nullptr);
-        info::CLogTypeDBTaskManagerLoop28_ptr CLogTypeDBTaskManagerLoop28_next(nullptr);
-        info::CLogTypeDBTaskManagerLoop28_clbk CLogTypeDBTaskManagerLoop28_user(nullptr);
-        info::CLogTypeDBTaskManagerProcComplete30_ptr CLogTypeDBTaskManagerProcComplete30_next(nullptr);
-        info::CLogTypeDBTaskManagerProcComplete30_clbk CLogTypeDBTaskManagerProcComplete30_user(nullptr);
-        info::CLogTypeDBTaskManagerProcThread32_ptr CLogTypeDBTaskManagerProcThread32_next(nullptr);
-        info::CLogTypeDBTaskManagerProcThread32_clbk CLogTypeDBTaskManagerProcThread32_user(nullptr);
-        info::CLogTypeDBTaskManagerPush34_ptr CLogTypeDBTaskManagerPush34_next(nullptr);
-        info::CLogTypeDBTaskManagerPush34_clbk CLogTypeDBTaskManagerPush34_user(nullptr);
-        info::CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_ptr CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_next(nullptr);
-        info::CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_clbk CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_user(nullptr);
+        static info::CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_ptr CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_next(nullptr);
+        static info::CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_clbk CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_user(nullptr);
+        static info::CLogTypeDBTaskManagerCleanUp4_ptr CLogTypeDBTaskManagerCleanUp4_next(nullptr);
+        static info::CLogTypeDBTaskManagerCleanUp4_clbk CLogTypeDBTaskManagerCleanUp4_user(nullptr);
+        static info::CLogTypeDBTaskManagerDBProcess6_ptr CLogTypeDBTaskManagerDBProcess6_next(nullptr);
+        static info::CLogTypeDBTaskManagerDBProcess6_clbk CLogTypeDBTaskManagerDBProcess6_user(nullptr);
+        static info::CLogTypeDBTaskManagerDestroy8_ptr CLogTypeDBTaskManagerDestroy8_next(nullptr);
+        static info::CLogTypeDBTaskManagerDestroy8_clbk CLogTypeDBTaskManagerDestroy8_user(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBProc10_ptr CLogTypeDBTaskManagerGetDBProc10_next(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBProc10_clbk CLogTypeDBTaskManagerGetDBProc10_user(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_ptr CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_next(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_clbk CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_user(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBTaskDataStatus14_ptr CLogTypeDBTaskManagerGetDBTaskDataStatus14_next(nullptr);
+        static info::CLogTypeDBTaskManagerGetDBTaskDataStatus14_clbk CLogTypeDBTaskManagerGetDBTaskDataStatus14_user(nullptr);
+        static info::CLogTypeDBTaskManagerInit16_ptr CLogTypeDBTaskManagerInit16_next(nullptr);
+        static info::CLogTypeDBTaskManagerInit16_clbk CLogTypeDBTaskManagerInit16_user(nullptr);
+        static info::CLogTypeDBTaskManagerInitDB18_ptr CLogTypeDBTaskManagerInitDB18_next(nullptr);
+        static info::CLogTypeDBTaskManagerInitDB18_clbk CLogTypeDBTaskManagerInitDB18_user(nullptr);
+        static info::CLogTypeDBTaskManagerInitLogger20_ptr CLogTypeDBTaskManagerInitLogger20_next(nullptr);
+        static info::CLogTypeDBTaskManagerInitLogger20_clbk CLogTypeDBTaskManagerInitLogger20_user(nullptr);
+        static info::CLogTypeDBTaskManagerInstance22_ptr CLogTypeDBTaskManagerInstance22_next(nullptr);
+        static info::CLogTypeDBTaskManagerInstance22_clbk CLogTypeDBTaskManagerInstance22_user(nullptr);
+        static info::CLogTypeDBTaskManagerIsInitialized24_ptr CLogTypeDBTaskManagerIsInitialized24_next(nullptr);
+        static info::CLogTypeDBTaskManagerIsInitialized24_clbk CLogTypeDBTaskManagerIsInitialized24_user(nullptr);
+        static info::CLogTypeDBTaskManagerLog26_ptr CLogTypeDBTaskManagerLog26_next(nullptr);
+        static info::CLogTypeDBTaskManagerLog26_clbk CLogTypeDBTaskManagerLog26_user(nullptr);
+        static info::CLogTypeDBTaskManagerLoop28_ptr CLogTypeDBTaskManagerLoop28_next(nullptr);
+        static info::CLogTypeDBTaskManagerLoop28_clbk CLogTypeDBTaskManagerLoop28_user(nullptr);
+        static info::CLogTypeDBTaskManagerProcComplete30_ptr CLogTypeDBTaskManagerProcComplete30_next(nullptr);
+        static info::CLogTypeDBTaskManagerProcComplete30_clbk CLogTypeDBTaskManagerProcComplete30_user(nullptr);
+        static info::CLogTypeDBTaskManagerProcThread32_ptr CLogTypeDBTaskManagerProcThread32_next(nullptr);
+        static info::CLogTypeDBTaskManagerProcThread32_clbk CLogTypeDBTaskManagerProcThread32_user(nullptr);
+        static info::CLogTypeDBTaskManagerPush34_ptr CLogTypeDBTaskManagerPush34_next(nullptr);
+        static info::CLogTypeDBTaskManagerPush34_clbk CLogTypeDBTaskManagerPush34_user(nullptr);
+        static info::CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_ptr CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_next(nullptr);
+        static info::CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_clbk CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_user(nullptr);
         
-        void CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_user(_this, CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_next);
         };
-        void CLogTypeDBTaskManagerCleanUp4_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerCleanUp4_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerCleanUp4_user(_this, CLogTypeDBTaskManagerCleanUp4_next);
         };
-        void CLogTypeDBTaskManagerDBProcess6_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerDBProcess6_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerDBProcess6_user(_this, CLogTypeDBTaskManagerDBProcess6_next);
         };
-        void CLogTypeDBTaskManagerDestroy8_wrapper()
+        static void CLogTypeDBTaskManagerDestroy8_wrapper()
         {
            CLogTypeDBTaskManagerDestroy8_user(CLogTypeDBTaskManagerDestroy8_next);
         };
-        bool CLogTypeDBTaskManagerGetDBProc10_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerGetDBProc10_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerGetDBProc10_user(_this, CLogTypeDBTaskManagerGetDBProc10_next);
         };
-        bool CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_user(_this, CLogTypeDBTaskManagerGetDBTaskConnectionStatus12_next);
         };
-        bool CLogTypeDBTaskManagerGetDBTaskDataStatus14_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerGetDBTaskDataStatus14_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerGetDBTaskDataStatus14_user(_this, CLogTypeDBTaskManagerGetDBTaskDataStatus14_next);
         };
-        bool CLogTypeDBTaskManagerInit16_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerInit16_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerInit16_user(_this, CLogTypeDBTaskManagerInit16_next);
         };
-        bool CLogTypeDBTaskManagerInitDB18_wrapper(struct CLogTypeDBTaskManager* _this, char* szDBName, char* szDBIP)
+        static bool CLogTypeDBTaskManagerInitDB18_wrapper(struct CLogTypeDBTaskManager* _this, char* szDBName, char* szDBIP)
         {
            return CLogTypeDBTaskManagerInitDB18_user(_this, szDBName, szDBIP, CLogTypeDBTaskManagerInitDB18_next);
         };
-        bool CLogTypeDBTaskManagerInitLogger20_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerInitLogger20_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerInitLogger20_user(_this, CLogTypeDBTaskManagerInitLogger20_next);
         };
-        struct CLogTypeDBTaskManager* CLogTypeDBTaskManagerInstance22_wrapper()
+        static struct CLogTypeDBTaskManager* CLogTypeDBTaskManagerInstance22_wrapper()
         {
            return CLogTypeDBTaskManagerInstance22_user(CLogTypeDBTaskManagerInstance22_next);
         };
-        bool CLogTypeDBTaskManagerIsInitialized24_wrapper(struct CLogTypeDBTaskManager* _this)
+        static bool CLogTypeDBTaskManagerIsInitialized24_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            return CLogTypeDBTaskManagerIsInitialized24_user(_this, CLogTypeDBTaskManagerIsInitialized24_next);
         };
-        void CLogTypeDBTaskManagerLog26_wrapper(struct CLogTypeDBTaskManager* _this, char* fmt)
+        static void CLogTypeDBTaskManagerLog26_wrapper(struct CLogTypeDBTaskManager* _this, char* fmt)
         {
            CLogTypeDBTaskManagerLog26_user(_this, fmt, CLogTypeDBTaskManagerLog26_next);
         };
-        void CLogTypeDBTaskManagerLoop28_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerLoop28_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerLoop28_user(_this, CLogTypeDBTaskManagerLoop28_next);
         };
-        void CLogTypeDBTaskManagerProcComplete30_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerProcComplete30_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerProcComplete30_user(_this, CLogTypeDBTaskManagerProcComplete30_next);
         };
-        void CLogTypeDBTaskManagerProcThread32_wrapper(void* pParam)
+        static void CLogTypeDBTaskManagerProcThread32_wrapper(void* pParam)
         {
            CLogTypeDBTaskManagerProcThread32_user(pParam, CLogTypeDBTaskManagerProcThread32_next);
         };
-        bool CLogTypeDBTaskManagerPush34_wrapper(struct CLogTypeDBTaskManager* _this, char byQueryType, char* pcData, uint16_t wSize)
+        static bool CLogTypeDBTaskManagerPush34_wrapper(struct CLogTypeDBTaskManager* _this, char byQueryType, char* pcData, uint16_t wSize)
         {
            return CLogTypeDBTaskManagerPush34_user(_this, byQueryType, pcData, wSize, CLogTypeDBTaskManagerPush34_next);
         };
-        void CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_wrapper(struct CLogTypeDBTaskManager* _this)
+        static void CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_wrapper(struct CLogTypeDBTaskManager* _this)
         {
            CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_user(_this, CLogTypeDBTaskManagerdtor_CLogTypeDBTaskManager38_next);
         };
         
-        hook_record CLogTypeDBTaskManager_functions[] = {
+        static hook_record CLogTypeDBTaskManager_functions[] = {
         {   (LPVOID)0x1402c2a90L,
             (LPVOID *)&CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_user,
             (LPVOID *)&CLogTypeDBTaskManagerctor_CLogTypeDBTaskManager2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

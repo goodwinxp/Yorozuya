@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::DnBuffNodector_DnBuffNode2_ptr DnBuffNodector_DnBuffNode2_next(nullptr);
-        info::DnBuffNodector_DnBuffNode2_clbk DnBuffNodector_DnBuffNode2_user(nullptr);
-        info::DnBuffNodeDnNodeClear4_ptr DnBuffNodeDnNodeClear4_next(nullptr);
-        info::DnBuffNodeDnNodeClear4_clbk DnBuffNodeDnNodeClear4_user(nullptr);
-        info::DnBuffNodeDnNodeClose6_ptr DnBuffNodeDnNodeClose6_next(nullptr);
-        info::DnBuffNodeDnNodeClose6_clbk DnBuffNodeDnNodeClose6_user(nullptr);
-        info::DnBuffNodeDnNodeOpen8_ptr DnBuffNodeDnNodeOpen8_next(nullptr);
-        info::DnBuffNodeDnNodeOpen8_clbk DnBuffNodeDnNodeOpen8_user(nullptr);
-        info::DnBuffNodeGetBuffIndex10_ptr DnBuffNodeGetBuffIndex10_next(nullptr);
-        info::DnBuffNodeGetBuffIndex10_clbk DnBuffNodeGetBuffIndex10_user(nullptr);
-        info::DnBuffNodedtor_DnBuffNode15_ptr DnBuffNodedtor_DnBuffNode15_next(nullptr);
-        info::DnBuffNodedtor_DnBuffNode15_clbk DnBuffNodedtor_DnBuffNode15_user(nullptr);
+        static info::DnBuffNodector_DnBuffNode2_ptr DnBuffNodector_DnBuffNode2_next(nullptr);
+        static info::DnBuffNodector_DnBuffNode2_clbk DnBuffNodector_DnBuffNode2_user(nullptr);
+        static info::DnBuffNodeDnNodeClear4_ptr DnBuffNodeDnNodeClear4_next(nullptr);
+        static info::DnBuffNodeDnNodeClear4_clbk DnBuffNodeDnNodeClear4_user(nullptr);
+        static info::DnBuffNodeDnNodeClose6_ptr DnBuffNodeDnNodeClose6_next(nullptr);
+        static info::DnBuffNodeDnNodeClose6_clbk DnBuffNodeDnNodeClose6_user(nullptr);
+        static info::DnBuffNodeDnNodeOpen8_ptr DnBuffNodeDnNodeOpen8_next(nullptr);
+        static info::DnBuffNodeDnNodeOpen8_clbk DnBuffNodeDnNodeOpen8_user(nullptr);
+        static info::DnBuffNodeGetBuffIndex10_ptr DnBuffNodeGetBuffIndex10_next(nullptr);
+        static info::DnBuffNodeGetBuffIndex10_clbk DnBuffNodeGetBuffIndex10_user(nullptr);
+        static info::DnBuffNodedtor_DnBuffNode15_ptr DnBuffNodedtor_DnBuffNode15_next(nullptr);
+        static info::DnBuffNodedtor_DnBuffNode15_clbk DnBuffNodedtor_DnBuffNode15_user(nullptr);
         
-        void DnBuffNodector_DnBuffNode2_wrapper(struct DnBuffNode* _this)
+        static void DnBuffNodector_DnBuffNode2_wrapper(struct DnBuffNode* _this)
         {
            DnBuffNodector_DnBuffNode2_user(_this, DnBuffNodector_DnBuffNode2_next);
         };
-        void DnBuffNodeDnNodeClear4_wrapper(struct DnBuffNode* _this)
+        static void DnBuffNodeDnNodeClear4_wrapper(struct DnBuffNode* _this)
         {
            DnBuffNodeDnNodeClear4_user(_this, DnBuffNodeDnNodeClear4_next);
         };
-        void DnBuffNodeDnNodeClose6_wrapper(struct DnBuffNode* _this)
+        static void DnBuffNodeDnNodeClose6_wrapper(struct DnBuffNode* _this)
         {
            DnBuffNodeDnNodeClose6_user(_this, DnBuffNodeDnNodeClose6_next);
         };
-        void DnBuffNodeDnNodeOpen8_wrapper(struct DnBuffNode* _this, unsigned int dwBuffIndex)
+        static void DnBuffNodeDnNodeOpen8_wrapper(struct DnBuffNode* _this, unsigned int dwBuffIndex)
         {
            DnBuffNodeDnNodeOpen8_user(_this, dwBuffIndex, DnBuffNodeDnNodeOpen8_next);
         };
-        unsigned int DnBuffNodeGetBuffIndex10_wrapper(struct DnBuffNode* _this)
+        static unsigned int DnBuffNodeGetBuffIndex10_wrapper(struct DnBuffNode* _this)
         {
            return DnBuffNodeGetBuffIndex10_user(_this, DnBuffNodeGetBuffIndex10_next);
         };
-        void DnBuffNodedtor_DnBuffNode15_wrapper(struct DnBuffNode* _this)
+        static void DnBuffNodedtor_DnBuffNode15_wrapper(struct DnBuffNode* _this)
         {
            DnBuffNodedtor_DnBuffNode15_user(_this, DnBuffNodedtor_DnBuffNode15_next);
         };
         
-        hook_record DnBuffNode_functions[] = {
+        static hook_record DnBuffNode_functions[] = {
         {   (LPVOID)0x1402ab2b0L,
             (LPVOID *)&DnBuffNodector_DnBuffNode2_user,
             (LPVOID *)&DnBuffNodector_DnBuffNode2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

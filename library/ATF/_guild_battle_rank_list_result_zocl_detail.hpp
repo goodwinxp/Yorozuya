@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_guild_battle_rank_list_result_zoclsize2_ptr _guild_battle_rank_list_result_zoclsize2_next(nullptr);
-        info::_guild_battle_rank_list_result_zoclsize2_clbk _guild_battle_rank_list_result_zoclsize2_user(nullptr);
+        static info::_guild_battle_rank_list_result_zoclsize2_ptr _guild_battle_rank_list_result_zoclsize2_next(nullptr);
+        static info::_guild_battle_rank_list_result_zoclsize2_clbk _guild_battle_rank_list_result_zoclsize2_user(nullptr);
         
-        int _guild_battle_rank_list_result_zoclsize2_wrapper(struct _guild_battle_rank_list_result_zocl* _this)
+        static int _guild_battle_rank_list_result_zoclsize2_wrapper(struct _guild_battle_rank_list_result_zocl* _this)
         {
            return _guild_battle_rank_list_result_zoclsize2_user(_this, _guild_battle_rank_list_result_zoclsize2_next);
         };
         
-        hook_record _guild_battle_rank_list_result_zocl_functions[] = {
+        static hook_record _guild_battle_rank_list_result_zocl_functions[] = {
         {   (LPVOID)0x1403d0930L,
             (LPVOID *)&_guild_battle_rank_list_result_zoclsize2_user,
             (LPVOID *)&_guild_battle_rank_list_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

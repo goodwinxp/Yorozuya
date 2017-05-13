@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_REGEDRelease2_ptr _REGEDRelease2_next(nullptr);
-        info::_REGEDRelease2_clbk _REGEDRelease2_user(nullptr);
-        info::_REGEDSet4_ptr _REGEDSet4_next(nullptr);
-        info::_REGEDSet4_clbk _REGEDSet4_user(nullptr);
-        info::_REGEDUpdateEquipLv6_ptr _REGEDUpdateEquipLv6_next(nullptr);
-        info::_REGEDUpdateEquipLv6_clbk _REGEDUpdateEquipLv6_user(nullptr);
-        info::_REGEDctor__REGED8_ptr _REGEDctor__REGED8_next(nullptr);
-        info::_REGEDctor__REGED8_clbk _REGEDctor__REGED8_user(nullptr);
-        info::_REGEDinit10_ptr _REGEDinit10_next(nullptr);
-        info::_REGEDinit10_clbk _REGEDinit10_user(nullptr);
+        static info::_REGEDRelease2_ptr _REGEDRelease2_next(nullptr);
+        static info::_REGEDRelease2_clbk _REGEDRelease2_user(nullptr);
+        static info::_REGEDSet4_ptr _REGEDSet4_next(nullptr);
+        static info::_REGEDSet4_clbk _REGEDSet4_user(nullptr);
+        static info::_REGEDUpdateEquipLv6_ptr _REGEDUpdateEquipLv6_next(nullptr);
+        static info::_REGEDUpdateEquipLv6_clbk _REGEDUpdateEquipLv6_user(nullptr);
+        static info::_REGEDctor__REGED8_ptr _REGEDctor__REGED8_next(nullptr);
+        static info::_REGEDctor__REGED8_clbk _REGEDctor__REGED8_user(nullptr);
+        static info::_REGEDinit10_ptr _REGEDinit10_next(nullptr);
+        static info::_REGEDinit10_clbk _REGEDinit10_user(nullptr);
         
-        bool _REGEDRelease2_wrapper(struct _REGED* _this, char bySlot)
+        static bool _REGEDRelease2_wrapper(struct _REGED* _this, char bySlot)
         {
            return _REGEDRelease2_user(_this, bySlot, _REGEDRelease2_next);
         };
-        bool _REGEDSet4_wrapper(struct _REGED* _this, char bySlot, struct _STORAGE_LIST::_db_con* pItem)
+        static bool _REGEDSet4_wrapper(struct _REGED* _this, char bySlot, struct _STORAGE_LIST::_db_con* pItem)
         {
            return _REGEDSet4_user(_this, bySlot, pItem, _REGEDSet4_next);
         };
-        void _REGEDUpdateEquipLv6_wrapper(struct _REGED* _this)
+        static void _REGEDUpdateEquipLv6_wrapper(struct _REGED* _this)
         {
            _REGEDUpdateEquipLv6_user(_this, _REGEDUpdateEquipLv6_next);
         };
-        void _REGEDctor__REGED8_wrapper(struct _REGED* _this)
+        static void _REGEDctor__REGED8_wrapper(struct _REGED* _this)
         {
            _REGEDctor__REGED8_user(_this, _REGEDctor__REGED8_next);
         };
-        void _REGEDinit10_wrapper(struct _REGED* _this)
+        static void _REGEDinit10_wrapper(struct _REGED* _this)
         {
            _REGEDinit10_user(_this, _REGEDinit10_next);
         };
         
-        hook_record _REGED_functions[] = {
+        static hook_record _REGED_functions[] = {
         {   (LPVOID)0x140120660L,
             (LPVOID *)&_REGEDRelease2_user,
             (LPVOID *)&_REGEDRelease2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_ptr _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_next(nullptr);
-        info::_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_clbk _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_user(nullptr);
+        static info::_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_ptr _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_next(nullptr);
+        static info::_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_clbk _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_user(nullptr);
         
-        void _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_wrapper(struct _insert_new_quest_inform_zocl* _this)
+        static void _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_wrapper(struct _insert_new_quest_inform_zocl* _this)
         {
            _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_user(_this, _insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_next);
         };
         
-        hook_record _insert_new_quest_inform_zocl_functions[] = {
+        static hook_record _insert_new_quest_inform_zocl_functions[] = {
         {   (LPVOID)0x1400efe60L,
             (LPVOID *)&_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_user,
             (LPVOID *)&_insert_new_quest_inform_zoclctor__insert_new_quest_inform_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

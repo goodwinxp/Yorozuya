@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_updatewinloseguildbattleranksize2_ptr _qry_case_updatewinloseguildbattleranksize2_next(nullptr);
-        info::_qry_case_updatewinloseguildbattleranksize2_clbk _qry_case_updatewinloseguildbattleranksize2_user(nullptr);
+        static info::_qry_case_updatewinloseguildbattleranksize2_ptr _qry_case_updatewinloseguildbattleranksize2_next(nullptr);
+        static info::_qry_case_updatewinloseguildbattleranksize2_clbk _qry_case_updatewinloseguildbattleranksize2_user(nullptr);
         
-        int _qry_case_updatewinloseguildbattleranksize2_wrapper(struct _qry_case_updatewinloseguildbattlerank* _this)
+        static int _qry_case_updatewinloseguildbattleranksize2_wrapper(struct _qry_case_updatewinloseguildbattlerank* _this)
         {
            return _qry_case_updatewinloseguildbattleranksize2_user(_this, _qry_case_updatewinloseguildbattleranksize2_next);
         };
         
-        hook_record _qry_case_updatewinloseguildbattlerank_functions[] = {
+        static hook_record _qry_case_updatewinloseguildbattlerank_functions[] = {
         {   (LPVOID)0x1403eb3e0L,
             (LPVOID *)&_qry_case_updatewinloseguildbattleranksize2_user,
             (LPVOID *)&_qry_case_updatewinloseguildbattleranksize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

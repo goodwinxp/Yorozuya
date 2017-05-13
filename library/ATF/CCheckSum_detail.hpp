@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCheckSumctor_CCheckSum2_ptr CCheckSumctor_CCheckSum2_next(nullptr);
-        info::CCheckSumctor_CCheckSum2_clbk CCheckSumctor_CCheckSum2_user(nullptr);
-        info::CCheckSumDecodeValue4_ptr CCheckSumDecodeValue4_next(nullptr);
-        info::CCheckSumDecodeValue4_clbk CCheckSumDecodeValue4_user(nullptr);
-        info::CCheckSumEncodeValue6_ptr CCheckSumEncodeValue6_next(nullptr);
-        info::CCheckSumEncodeValue6_clbk CCheckSumEncodeValue6_user(nullptr);
-        info::CCheckSumInit8_ptr CCheckSumInit8_next(nullptr);
-        info::CCheckSumInit8_clbk CCheckSumInit8_user(nullptr);
-        info::CCheckSumdtor_CCheckSum10_ptr CCheckSumdtor_CCheckSum10_next(nullptr);
-        info::CCheckSumdtor_CCheckSum10_clbk CCheckSumdtor_CCheckSum10_user(nullptr);
+        static info::CCheckSumctor_CCheckSum2_ptr CCheckSumctor_CCheckSum2_next(nullptr);
+        static info::CCheckSumctor_CCheckSum2_clbk CCheckSumctor_CCheckSum2_user(nullptr);
+        static info::CCheckSumDecodeValue4_ptr CCheckSumDecodeValue4_next(nullptr);
+        static info::CCheckSumDecodeValue4_clbk CCheckSumDecodeValue4_user(nullptr);
+        static info::CCheckSumEncodeValue6_ptr CCheckSumEncodeValue6_next(nullptr);
+        static info::CCheckSumEncodeValue6_clbk CCheckSumEncodeValue6_user(nullptr);
+        static info::CCheckSumInit8_ptr CCheckSumInit8_next(nullptr);
+        static info::CCheckSumInit8_clbk CCheckSumInit8_user(nullptr);
+        static info::CCheckSumdtor_CCheckSum10_ptr CCheckSumdtor_CCheckSum10_next(nullptr);
+        static info::CCheckSumdtor_CCheckSum10_clbk CCheckSumdtor_CCheckSum10_user(nullptr);
         
-        void CCheckSumctor_CCheckSum2_wrapper(struct CCheckSum* _this)
+        static void CCheckSumctor_CCheckSum2_wrapper(struct CCheckSum* _this)
         {
            CCheckSumctor_CCheckSum2_user(_this, CCheckSumctor_CCheckSum2_next);
         };
-        unsigned int CCheckSumDecodeValue4_wrapper(struct CCheckSum* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
+        static unsigned int CCheckSumDecodeValue4_wrapper(struct CCheckSum* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
         {
            return CCheckSumDecodeValue4_user(_this, byIndex, dwSerial, dwValue, CCheckSumDecodeValue4_next);
         };
-        unsigned int CCheckSumEncodeValue6_wrapper(struct CCheckSum* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
+        static unsigned int CCheckSumEncodeValue6_wrapper(struct CCheckSum* _this, char byIndex, unsigned int dwSerial, unsigned int dwValue)
         {
            return CCheckSumEncodeValue6_user(_this, byIndex, dwSerial, dwValue, CCheckSumEncodeValue6_next);
         };
-        bool CCheckSumInit8_wrapper(struct CCheckSum* _this)
+        static bool CCheckSumInit8_wrapper(struct CCheckSum* _this)
         {
            return CCheckSumInit8_user(_this, CCheckSumInit8_next);
         };
-        void CCheckSumdtor_CCheckSum10_wrapper(struct CCheckSum* _this)
+        static void CCheckSumdtor_CCheckSum10_wrapper(struct CCheckSum* _this)
         {
            CCheckSumdtor_CCheckSum10_user(_this, CCheckSumdtor_CCheckSum10_next);
         };
         
-        hook_record CCheckSum_functions[] = {
+        static hook_record CCheckSum_functions[] = {
         {   (LPVOID)0x1402c0560L,
             (LPVOID *)&CCheckSumctor_CCheckSum2_user,
             (LPVOID *)&CCheckSumctor_CCheckSum2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

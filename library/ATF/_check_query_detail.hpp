@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_check_querysize2_ptr _check_querysize2_next(nullptr);
-        info::_check_querysize2_clbk _check_querysize2_user(nullptr);
+        static info::_check_querysize2_ptr _check_querysize2_next(nullptr);
+        static info::_check_querysize2_clbk _check_querysize2_user(nullptr);
         
-        int _check_querysize2_wrapper(struct _check_query* _this)
+        static int _check_querysize2_wrapper(struct _check_query* _this)
         {
            return _check_querysize2_user(_this, _check_querysize2_next);
         };
         
-        hook_record _check_query_functions[] = {
+        static hook_record _check_query_functions[] = {
         {   (LPVOID)0x14047db10L,
             (LPVOID *)&_check_querysize2_user,
             (LPVOID *)&_check_querysize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

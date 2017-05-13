@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_ANIMUS_RETURN_DELAYProcess2_ptr _ANIMUS_RETURN_DELAYProcess2_next(nullptr);
-        info::_ANIMUS_RETURN_DELAYProcess2_clbk _ANIMUS_RETURN_DELAYProcess2_user(nullptr);
-        info::_ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_ptr _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_next(nullptr);
-        info::_ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_clbk _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_user(nullptr);
-        info::_ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_ptr _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_next(nullptr);
-        info::_ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_clbk _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_user(nullptr);
+        static info::_ANIMUS_RETURN_DELAYProcess2_ptr _ANIMUS_RETURN_DELAYProcess2_next(nullptr);
+        static info::_ANIMUS_RETURN_DELAYProcess2_clbk _ANIMUS_RETURN_DELAYProcess2_user(nullptr);
+        static info::_ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_ptr _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_next(nullptr);
+        static info::_ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_clbk _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_user(nullptr);
+        static info::_ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_ptr _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_next(nullptr);
+        static info::_ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_clbk _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_user(nullptr);
         
-        void _ANIMUS_RETURN_DELAYProcess2_wrapper(struct _ANIMUS_RETURN_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
+        static void _ANIMUS_RETURN_DELAYProcess2_wrapper(struct _ANIMUS_RETURN_DELAY* _this, unsigned int dwIndex, unsigned int dwSerial)
         {
            _ANIMUS_RETURN_DELAYProcess2_user(_this, dwIndex, dwSerial, _ANIMUS_RETURN_DELAYProcess2_next);
         };
-        void _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_wrapper(struct _ANIMUS_RETURN_DELAY* _this)
+        static void _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_wrapper(struct _ANIMUS_RETURN_DELAY* _this)
         {
            _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_user(_this, _ANIMUS_RETURN_DELAYctor__ANIMUS_RETURN_DELAY4_next);
         };
-        void _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_wrapper(struct _ANIMUS_RETURN_DELAY* _this)
+        static void _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_wrapper(struct _ANIMUS_RETURN_DELAY* _this)
         {
            _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_user(_this, _ANIMUS_RETURN_DELAYdtor__ANIMUS_RETURN_DELAY6_next);
         };
         
-        hook_record _ANIMUS_RETURN_DELAY_functions[] = {
+        static hook_record _ANIMUS_RETURN_DELAY_functions[] = {
         {   (LPVOID)0x140066400L,
             (LPVOID *)&_ANIMUS_RETURN_DELAYProcess2_user,
             (LPVOID *)&_ANIMUS_RETURN_DELAYProcess2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

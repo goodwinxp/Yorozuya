@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CTakeOutTakeOut_Lotto2_ptr CTakeOutTakeOut_Lotto2_next(nullptr);
-        info::CTakeOutTakeOut_Lotto2_clbk CTakeOutTakeOut_Lotto2_user(nullptr);
+        static info::CTakeOutTakeOut_Lotto2_ptr CTakeOutTakeOut_Lotto2_next(nullptr);
+        static info::CTakeOutTakeOut_Lotto2_clbk CTakeOutTakeOut_Lotto2_user(nullptr);
         
-        void CTakeOutTakeOut_Lotto2_wrapper(int* pBuff, unsigned int dwNodeCount)
+        static void CTakeOutTakeOut_Lotto2_wrapper(int* pBuff, unsigned int dwNodeCount)
         {
            CTakeOutTakeOut_Lotto2_user(pBuff, dwNodeCount, CTakeOutTakeOut_Lotto2_next);
         };
         
-        hook_record CTakeOut_functions[] = {
+        static hook_record CTakeOut_functions[] = {
         {   (LPVOID)0x1402af680L,
             (LPVOID *)&CTakeOutTakeOut_Lotto2_user,
             (LPVOID *)&CTakeOutTakeOut_Lotto2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

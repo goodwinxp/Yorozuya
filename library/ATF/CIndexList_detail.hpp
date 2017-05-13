@@ -8,101 +8,101 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CIndexListctor_CIndexList2_ptr CIndexListctor_CIndexList2_next(nullptr);
-        info::CIndexListctor_CIndexList2_clbk CIndexListctor_CIndexList2_user(nullptr);
-        info::CIndexListCopyFront4_ptr CIndexListCopyFront4_next(nullptr);
-        info::CIndexListCopyFront4_clbk CIndexListCopyFront4_user(nullptr);
-        info::CIndexListFindNode6_ptr CIndexListFindNode6_next(nullptr);
-        info::CIndexListFindNode6_clbk CIndexListFindNode6_user(nullptr);
-        info::CIndexListGetAllNode8_ptr CIndexListGetAllNode8_next(nullptr);
-        info::CIndexListGetAllNode8_clbk CIndexListGetAllNode8_user(nullptr);
-        info::CIndexListGetSize10_ptr CIndexListGetSize10_next(nullptr);
-        info::CIndexListGetSize10_clbk CIndexListGetSize10_user(nullptr);
-        info::CIndexListIsInList12_ptr CIndexListIsInList12_next(nullptr);
-        info::CIndexListIsInList12_clbk CIndexListIsInList12_user(nullptr);
-        info::CIndexListIsSetting14_ptr CIndexListIsSetting14_next(nullptr);
-        info::CIndexListIsSetting14_clbk CIndexListIsSetting14_user(nullptr);
-        info::CIndexListPopNode_Front16_ptr CIndexListPopNode_Front16_next(nullptr);
-        info::CIndexListPopNode_Front16_clbk CIndexListPopNode_Front16_user(nullptr);
-        info::CIndexListPushNode_Back18_ptr CIndexListPushNode_Back18_next(nullptr);
-        info::CIndexListPushNode_Back18_clbk CIndexListPushNode_Back18_user(nullptr);
-        info::CIndexListResetList20_ptr CIndexListResetList20_next(nullptr);
-        info::CIndexListResetList20_clbk CIndexListResetList20_user(nullptr);
-        info::CIndexListSetList22_ptr CIndexListSetList22_next(nullptr);
-        info::CIndexListSetList22_clbk CIndexListSetList22_user(nullptr);
-        info::CIndexListdtor_CIndexList27_ptr CIndexListdtor_CIndexList27_next(nullptr);
-        info::CIndexListdtor_CIndexList27_clbk CIndexListdtor_CIndexList27_user(nullptr);
+        static info::CIndexListctor_CIndexList2_ptr CIndexListctor_CIndexList2_next(nullptr);
+        static info::CIndexListctor_CIndexList2_clbk CIndexListctor_CIndexList2_user(nullptr);
+        static info::CIndexListCopyFront4_ptr CIndexListCopyFront4_next(nullptr);
+        static info::CIndexListCopyFront4_clbk CIndexListCopyFront4_user(nullptr);
+        static info::CIndexListFindNode6_ptr CIndexListFindNode6_next(nullptr);
+        static info::CIndexListFindNode6_clbk CIndexListFindNode6_user(nullptr);
+        static info::CIndexListGetAllNode8_ptr CIndexListGetAllNode8_next(nullptr);
+        static info::CIndexListGetAllNode8_clbk CIndexListGetAllNode8_user(nullptr);
+        static info::CIndexListGetSize10_ptr CIndexListGetSize10_next(nullptr);
+        static info::CIndexListGetSize10_clbk CIndexListGetSize10_user(nullptr);
+        static info::CIndexListIsInList12_ptr CIndexListIsInList12_next(nullptr);
+        static info::CIndexListIsInList12_clbk CIndexListIsInList12_user(nullptr);
+        static info::CIndexListIsSetting14_ptr CIndexListIsSetting14_next(nullptr);
+        static info::CIndexListIsSetting14_clbk CIndexListIsSetting14_user(nullptr);
+        static info::CIndexListPopNode_Front16_ptr CIndexListPopNode_Front16_next(nullptr);
+        static info::CIndexListPopNode_Front16_clbk CIndexListPopNode_Front16_user(nullptr);
+        static info::CIndexListPushNode_Back18_ptr CIndexListPushNode_Back18_next(nullptr);
+        static info::CIndexListPushNode_Back18_clbk CIndexListPushNode_Back18_user(nullptr);
+        static info::CIndexListResetList20_ptr CIndexListResetList20_next(nullptr);
+        static info::CIndexListResetList20_clbk CIndexListResetList20_user(nullptr);
+        static info::CIndexListSetList22_ptr CIndexListSetList22_next(nullptr);
+        static info::CIndexListSetList22_clbk CIndexListSetList22_user(nullptr);
+        static info::CIndexListdtor_CIndexList27_ptr CIndexListdtor_CIndexList27_next(nullptr);
+        static info::CIndexListdtor_CIndexList27_clbk CIndexListdtor_CIndexList27_user(nullptr);
         
-        info::CIndexList___index_nodeAllocInfo2_ptr CIndexList___index_nodeAllocInfo2_next(nullptr);
-        info::CIndexList___index_nodeAllocInfo2_clbk CIndexList___index_nodeAllocInfo2_user(nullptr);
-        info::CIndexList___index_nodector__index_node4_ptr CIndexList___index_nodector__index_node4_next(nullptr);
-        info::CIndexList___index_nodector__index_node4_clbk CIndexList___index_nodector__index_node4_user(nullptr);
-        info::CIndexList___index_nodedtor__index_node8_ptr CIndexList___index_nodedtor__index_node8_next(nullptr);
-        info::CIndexList___index_nodedtor__index_node8_clbk CIndexList___index_nodedtor__index_node8_user(nullptr);
+        static info::CIndexList___index_nodeAllocInfo2_ptr CIndexList___index_nodeAllocInfo2_next(nullptr);
+        static info::CIndexList___index_nodeAllocInfo2_clbk CIndexList___index_nodeAllocInfo2_user(nullptr);
+        static info::CIndexList___index_nodector__index_node4_ptr CIndexList___index_nodector__index_node4_next(nullptr);
+        static info::CIndexList___index_nodector__index_node4_clbk CIndexList___index_nodector__index_node4_user(nullptr);
+        static info::CIndexList___index_nodedtor__index_node8_ptr CIndexList___index_nodedtor__index_node8_next(nullptr);
+        static info::CIndexList___index_nodedtor__index_node8_clbk CIndexList___index_nodedtor__index_node8_user(nullptr);
         
-        void CIndexListctor_CIndexList2_wrapper(struct CIndexList* _this)
+        static void CIndexListctor_CIndexList2_wrapper(struct CIndexList* _this)
         {
            CIndexListctor_CIndexList2_user(_this, CIndexListctor_CIndexList2_next);
         };
-        bool CIndexListCopyFront4_wrapper(struct CIndexList* _this, unsigned int* pdwOutIndex, char* pInfoData)
+        static bool CIndexListCopyFront4_wrapper(struct CIndexList* _this, unsigned int* pdwOutIndex, char* pInfoData)
         {
            return CIndexListCopyFront4_user(_this, pdwOutIndex, pInfoData, CIndexListCopyFront4_next);
         };
-        bool CIndexListFindNode6_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
+        static bool CIndexListFindNode6_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
         {
            return CIndexListFindNode6_user(_this, dwIndex, pInfoData, CIndexListFindNode6_next);
         };
-        struct CIndexList::_index_node* CIndexListGetAllNode8_wrapper(struct CIndexList* _this, unsigned int* pdwMaxNodeNum)
+        static struct CIndexList::_index_node* CIndexListGetAllNode8_wrapper(struct CIndexList* _this, unsigned int* pdwMaxNodeNum)
         {
            return CIndexListGetAllNode8_user(_this, pdwMaxNodeNum, CIndexListGetAllNode8_next);
         };
-        int CIndexListGetSize10_wrapper(struct CIndexList* _this)
+        static int CIndexListGetSize10_wrapper(struct CIndexList* _this)
         {
            return CIndexListGetSize10_user(_this, CIndexListGetSize10_next);
         };
-        bool CIndexListIsInList12_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
+        static bool CIndexListIsInList12_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
         {
            return CIndexListIsInList12_user(_this, dwIndex, pInfoData, CIndexListIsInList12_next);
         };
-        bool CIndexListIsSetting14_wrapper(struct CIndexList* _this)
+        static bool CIndexListIsSetting14_wrapper(struct CIndexList* _this)
         {
            return CIndexListIsSetting14_user(_this, CIndexListIsSetting14_next);
         };
-        bool CIndexListPopNode_Front16_wrapper(struct CIndexList* _this, unsigned int* pdwOutIndex, char* pInfoData)
+        static bool CIndexListPopNode_Front16_wrapper(struct CIndexList* _this, unsigned int* pdwOutIndex, char* pInfoData)
         {
            return CIndexListPopNode_Front16_user(_this, pdwOutIndex, pInfoData, CIndexListPopNode_Front16_next);
         };
-        bool CIndexListPushNode_Back18_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
+        static bool CIndexListPushNode_Back18_wrapper(struct CIndexList* _this, unsigned int dwIndex, char* pInfoData)
         {
            return CIndexListPushNode_Back18_user(_this, dwIndex, pInfoData, CIndexListPushNode_Back18_next);
         };
-        void CIndexListResetList20_wrapper(struct CIndexList* _this)
+        static void CIndexListResetList20_wrapper(struct CIndexList* _this)
         {
            CIndexListResetList20_user(_this, CIndexListResetList20_next);
         };
-        bool CIndexListSetList22_wrapper(struct CIndexList* _this, unsigned int dwMaxBufNum, unsigned int nInfoSize, bool bUseMultiThread)
+        static bool CIndexListSetList22_wrapper(struct CIndexList* _this, unsigned int dwMaxBufNum, unsigned int nInfoSize, bool bUseMultiThread)
         {
            return CIndexListSetList22_user(_this, dwMaxBufNum, nInfoSize, bUseMultiThread, CIndexListSetList22_next);
         };
-        void CIndexListdtor_CIndexList27_wrapper(struct CIndexList* _this)
+        static void CIndexListdtor_CIndexList27_wrapper(struct CIndexList* _this)
         {
            CIndexListdtor_CIndexList27_user(_this, CIndexListdtor_CIndexList27_next);
         };
         
-        bool CIndexList___index_nodeAllocInfo2_wrapper(struct CIndexList::_index_node* _this, unsigned int nSize)
+        static bool CIndexList___index_nodeAllocInfo2_wrapper(struct CIndexList::_index_node* _this, unsigned int nSize)
         {
            return CIndexList___index_nodeAllocInfo2_user(_this, nSize, CIndexList___index_nodeAllocInfo2_next);
         };
-        void CIndexList___index_nodector__index_node4_wrapper(struct CIndexList::_index_node* _this)
+        static void CIndexList___index_nodector__index_node4_wrapper(struct CIndexList::_index_node* _this)
         {
            CIndexList___index_nodector__index_node4_user(_this, CIndexList___index_nodector__index_node4_next);
         };
-        void CIndexList___index_nodedtor__index_node8_wrapper(struct CIndexList::_index_node* _this)
+        static void CIndexList___index_nodedtor__index_node8_wrapper(struct CIndexList::_index_node* _this)
         {
            CIndexList___index_nodedtor__index_node8_user(_this, CIndexList___index_nodedtor__index_node8_next);
         };
         
-        hook_record CIndexList_functions[] = {
+        static hook_record CIndexList_functions[] = {
         {   (LPVOID)0x1404392f0L,
             (LPVOID *)&CIndexListctor_CIndexList2_user,
             (LPVOID *)&CIndexListctor_CIndexList2_next,
@@ -182,5 +182,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

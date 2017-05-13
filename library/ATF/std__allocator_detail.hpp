@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct INI_Section** std__allocatorallocate2_wrapper(struct std::allocator<INI_Section *>* _this, uint64_t _Count)
+            static struct INI_Section** std__allocatorallocate2_wrapper(struct std::allocator<INI_Section *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<INI_Section *>* _this, struct std::allocator<INI_Section *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<INI_Section *>* _this, struct std::allocator<INI_Section *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<INI_Section *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<INI_Section *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<INI_Section *>* _this, struct INI_Section** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<INI_Section *>* _this, struct INI_Section** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<INI_Section *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<INI_Section *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<INI_Section *>_functions[] = {
+            static hook_record allocator<INI_Section *>_functions[] = {
             {   (LPVOID)0x140473e80L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -71,7 +71,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -82,39 +82,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct INI_Key** std__allocatorallocate2_wrapper(struct std::allocator<INI_Key *>* _this, uint64_t _Count)
+            static struct INI_Key** std__allocatorallocate2_wrapper(struct std::allocator<INI_Key *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<INI_Key *>* _this, struct std::allocator<INI_Key *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<INI_Key *>* _this, struct std::allocator<INI_Key *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<INI_Key *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<INI_Key *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<INI_Key *>* _this, struct INI_Key** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<INI_Key *>* _this, struct INI_Key** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<INI_Key *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<INI_Key *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<INI_Key *>_functions[] = {
+            static hook_record allocator<INI_Key *>_functions[] = {
             {   (LPVOID)0x1404732f0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -143,7 +143,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -154,39 +154,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct ScheduleMSG** std__allocatorallocate2_wrapper(struct std::allocator<ScheduleMSG *>* _this, uint64_t _Count)
+            static struct ScheduleMSG** std__allocatorallocate2_wrapper(struct std::allocator<ScheduleMSG *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<ScheduleMSG *>* _this, struct std::allocator<ScheduleMSG *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<ScheduleMSG *>* _this, struct std::allocator<ScheduleMSG *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<ScheduleMSG *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<ScheduleMSG *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<ScheduleMSG *>* _this, struct ScheduleMSG** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<ScheduleMSG *>* _this, struct ScheduleMSG** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<ScheduleMSG *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<ScheduleMSG *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<ScheduleMSG *>_functions[] = {
+            static hook_record allocator<ScheduleMSG *>_functions[] = {
             {   (LPVOID)0x140423f30L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -215,7 +215,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -226,51 +226,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CGuildRoomInfo* std__allocatorallocate2_wrapper(struct std::allocator<CGuildRoomInfo>* _this, uint64_t _Count)
+            static struct CGuildRoomInfo* std__allocatorallocate2_wrapper(struct std::allocator<CGuildRoomInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct std::allocator<CGuildRoomInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct std::allocator<CGuildRoomInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CGuildRoomInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CGuildRoomInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr, struct CGuildRoomInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr, struct CGuildRoomInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CGuildRoomInfo>* _this, struct CGuildRoomInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CGuildRoomInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CGuildRoomInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CGuildRoomInfo>_functions[] = {
+            static hook_record allocator<CGuildRoomInfo>_functions[] = {
             {   (LPVOID)0x1402ec2d0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -309,7 +309,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -320,51 +320,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct RoomCharInfo* std__allocatorallocate2_wrapper(struct std::allocator<RoomCharInfo>* _this, uint64_t _Count)
+            static struct RoomCharInfo* std__allocatorallocate2_wrapper(struct std::allocator<RoomCharInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<RoomCharInfo>* _this, struct std::allocator<RoomCharInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<RoomCharInfo>* _this, struct std::allocator<RoomCharInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<RoomCharInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<RoomCharInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr, struct RoomCharInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr, struct RoomCharInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<RoomCharInfo>* _this, struct RoomCharInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<RoomCharInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<RoomCharInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<RoomCharInfo>_functions[] = {
+            static hook_record allocator<RoomCharInfo>_functions[] = {
             {   (LPVOID)0x1402e7c20L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -403,7 +403,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -414,39 +414,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct _PVP_RANK_REFRESH_USER** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, uint64_t _Count)
+            static struct _PVP_RANK_REFRESH_USER** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, struct std::allocator<_PVP_RANK_REFRESH_USER *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, struct std::allocator<_PVP_RANK_REFRESH_USER *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, struct _PVP_RANK_REFRESH_USER** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this, struct _PVP_RANK_REFRESH_USER** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_REFRESH_USER *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<_PVP_RANK_REFRESH_USER *>_functions[] = {
+            static hook_record allocator<_PVP_RANK_REFRESH_USER *>_functions[] = {
             {   (LPVOID)0x140338360L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -475,7 +475,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -486,39 +486,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct _PVP_RANK_DATA** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, uint64_t _Count)
+            static struct _PVP_RANK_DATA** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, struct std::allocator<_PVP_RANK_DATA *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, struct std::allocator<_PVP_RANK_DATA *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, struct _PVP_RANK_DATA** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this, struct _PVP_RANK_DATA** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_DATA *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<_PVP_RANK_DATA *>_functions[] = {
+            static hook_record allocator<_PVP_RANK_DATA *>_functions[] = {
             {   (LPVOID)0x140332790L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -547,7 +547,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -558,39 +558,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct _PVP_RANK_PACKED_DATA** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, uint64_t _Count)
+            static struct _PVP_RANK_PACKED_DATA** std__allocatorallocate2_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, struct std::allocator<_PVP_RANK_PACKED_DATA *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, struct std::allocator<_PVP_RANK_PACKED_DATA *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, struct _PVP_RANK_PACKED_DATA** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this, struct _PVP_RANK_PACKED_DATA** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_PVP_RANK_PACKED_DATA *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<_PVP_RANK_PACKED_DATA *>_functions[] = {
+            static hook_record allocator<_PVP_RANK_PACKED_DATA *>_functions[] = {
             {   (LPVOID)0x1403331d0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -619,7 +619,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -630,39 +630,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct _guild_member_refresh_data** std__allocatorallocate2_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, uint64_t _Count)
+            static struct _guild_member_refresh_data** std__allocatorallocate2_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, struct std::allocator<_guild_member_refresh_data *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, struct std::allocator<_guild_member_refresh_data *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, struct _guild_member_refresh_data** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this, struct _guild_member_refresh_data** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<_guild_member_refresh_data *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<_guild_member_refresh_data *>_functions[] = {
+            static hook_record allocator<_guild_member_refresh_data *>_functions[] = {
             {   (LPVOID)0x14033e6d0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -691,7 +691,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -702,51 +702,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CHEAT_COMMAND* std__allocatorallocate2_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, uint64_t _Count)
+            static struct CHEAT_COMMAND* std__allocatorallocate2_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct std::allocator<CHEAT_COMMAND>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct std::allocator<CHEAT_COMMAND>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CHEAT_COMMAND>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CHEAT_COMMAND>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr, struct CHEAT_COMMAND* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr, struct CHEAT_COMMAND* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CHEAT_COMMAND>* _this, struct CHEAT_COMMAND* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CHEAT_COMMAND>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CHEAT_COMMAND>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CHEAT_COMMAND>_functions[] = {
+            static hook_record allocator<CHEAT_COMMAND>_functions[] = {
             {   (LPVOID)0x140212d20L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -785,7 +785,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -796,51 +796,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CryptoPP::ECPPoint* std__allocatorallocate2_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, uint64_t _Count)
+            static struct CryptoPP::ECPPoint* std__allocatorallocate2_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct std::allocator<CryptoPP::ECPPoint>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct std::allocator<CryptoPP::ECPPoint>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr, struct CryptoPP::ECPPoint* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr, struct CryptoPP::ECPPoint* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this, struct CryptoPP::ECPPoint* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CryptoPP::ECPPoint>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CryptoPP::ECPPoint>_functions[] = {
+            static hook_record allocator<CryptoPP::ECPPoint>_functions[] = {
             {   (LPVOID)0x14045d250L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -879,7 +879,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -890,51 +890,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct GUILD_BATTLE::CGuildBattleRewardItem* std__allocatorallocate2_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, uint64_t _Count)
+            static struct GUILD_BATTLE::CGuildBattleRewardItem* std__allocatorallocate2_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr, struct GUILD_BATTLE::CGuildBattleRewardItem* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr, struct GUILD_BATTLE::CGuildBattleRewardItem* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this, struct GUILD_BATTLE::CGuildBattleRewardItem* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<GUILD_BATTLE::CGuildBattleRewardItem>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<GUILD_BATTLE::CGuildBattleRewardItem>_functions[] = {
+            static hook_record allocator<GUILD_BATTLE::CGuildBattleRewardItem>_functions[] = {
             {   (LPVOID)0x1403d1970L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -973,7 +973,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -984,51 +984,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CLogTypeDBTask** std__allocatorallocate2_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, uint64_t _Count)
+            static struct CLogTypeDBTask** std__allocatorallocate2_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct std::allocator<CLogTypeDBTask *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct std::allocator<CLogTypeDBTask *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CLogTypeDBTask *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CLogTypeDBTask *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr, struct CLogTypeDBTask** _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr, struct CLogTypeDBTask** _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CLogTypeDBTask *>* _this, struct CLogTypeDBTask** _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CLogTypeDBTask *>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CLogTypeDBTask *>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CLogTypeDBTask *>_functions[] = {
+            static hook_record allocator<CLogTypeDBTask *>_functions[] = {
             {   (LPVOID)0x1402c5c60L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1067,7 +1067,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1078,39 +1078,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct CRaceBuffInfoByHolyQuest** std__allocatorallocate2_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, uint64_t _Count)
+            static struct CRaceBuffInfoByHolyQuest** std__allocatorallocate2_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, struct std::allocator<CRaceBuffInfoByHolyQuest *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, struct std::allocator<CRaceBuffInfoByHolyQuest *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, struct CRaceBuffInfoByHolyQuest** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this, struct CRaceBuffInfoByHolyQuest** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuest *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<CRaceBuffInfoByHolyQuest *>_functions[] = {
+            static hook_record allocator<CRaceBuffInfoByHolyQuest *>_functions[] = {
             {   (LPVOID)0x1403b9570L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1139,7 +1139,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1150,39 +1150,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct CRaceBuffInfoByHolyQuestfGroup** std__allocatorallocate2_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, uint64_t _Count)
+            static struct CRaceBuffInfoByHolyQuestfGroup** std__allocatorallocate2_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, struct CRaceBuffInfoByHolyQuestfGroup** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this, struct CRaceBuffInfoByHolyQuestfGroup** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CRaceBuffInfoByHolyQuestfGroup *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<CRaceBuffInfoByHolyQuestfGroup *>_functions[] = {
+            static hook_record allocator<CRaceBuffInfoByHolyQuestfGroup *>_functions[] = {
             {   (LPVOID)0x1403b9a90L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1211,7 +1211,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1222,51 +1222,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CMoveMapLimitRight** std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, uint64_t _Count)
+            static struct CMoveMapLimitRight** std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct std::allocator<CMoveMapLimitRight *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct std::allocator<CMoveMapLimitRight *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr, struct CMoveMapLimitRight** _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr, struct CMoveMapLimitRight** _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this, struct CMoveMapLimitRight** _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CMoveMapLimitRight *>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CMoveMapLimitRight *>_functions[] = {
+            static hook_record allocator<CMoveMapLimitRight *>_functions[] = {
             {   (LPVOID)0x1403b0610L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1305,7 +1305,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1316,51 +1316,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CMoveMapLimitRightInfo* std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, uint64_t _Count)
+            static struct CMoveMapLimitRightInfo* std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct std::allocator<CMoveMapLimitRightInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct std::allocator<CMoveMapLimitRightInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr, struct CMoveMapLimitRightInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr, struct CMoveMapLimitRightInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this, struct CMoveMapLimitRightInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CMoveMapLimitRightInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CMoveMapLimitRightInfo>_functions[] = {
+            static hook_record allocator<CMoveMapLimitRightInfo>_functions[] = {
             {   (LPVOID)0x1403a2f00L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1399,7 +1399,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1410,39 +1410,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            int* std__allocatorallocate2_wrapper(struct std::allocator<int>* _this, uint64_t _Count)
+            static int* std__allocatorallocate2_wrapper(struct std::allocator<int>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<int>* _this, struct std::allocator<int>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<int>* _this, struct std::allocator<int>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<int>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<int>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<int>* _this, int* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<int>* _this, int* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<int>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<int>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<int>_functions[] = {
+            static hook_record allocator<int>_functions[] = {
             {   (LPVOID)0x1403a3170L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1471,7 +1471,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1482,39 +1482,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            char** std__allocatorallocate2_wrapper(struct std::allocator<char *>* _this, uint64_t _Count)
+            static char** std__allocatorallocate2_wrapper(struct std::allocator<char *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<char *>* _this, struct std::allocator<char *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<char *>* _this, struct std::allocator<char *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<char *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<char *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<char *>* _this, char** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<char *>* _this, char** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<char *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<char *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<char *>_functions[] = {
+            static hook_record allocator<char *>_functions[] = {
             {   (LPVOID)0x1403a9160L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1543,7 +1543,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1554,39 +1554,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct CMoveMapLimitInfo** std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, uint64_t _Count)
+            static struct CMoveMapLimitInfo** std__allocatorallocate2_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, struct std::allocator<CMoveMapLimitInfo *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, struct std::allocator<CMoveMapLimitInfo *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, struct CMoveMapLimitInfo** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this, struct CMoveMapLimitInfo** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CMoveMapLimitInfo *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<CMoveMapLimitInfo *>_functions[] = {
+            static hook_record allocator<CMoveMapLimitInfo *>_functions[] = {
             {   (LPVOID)0x1403a2c90L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1615,7 +1615,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1626,51 +1626,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderGroupDivisionVersionInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, uint64_t _Count)
+            static struct CUnmannedTraderGroupDivisionVersionInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr, struct CUnmannedTraderGroupDivisionVersionInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr, struct CUnmannedTraderGroupDivisionVersionInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this, struct CUnmannedTraderGroupDivisionVersionInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderGroupDivisionVersionInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderGroupDivisionVersionInfo>_functions[] = {
+            static hook_record allocator<CUnmannedTraderGroupDivisionVersionInfo>_functions[] = {
             {   (LPVOID)0x14036c740L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1709,7 +1709,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1720,51 +1720,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderRegistItemInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, uint64_t _Count)
+            static struct CUnmannedTraderRegistItemInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct std::allocator<CUnmannedTraderRegistItemInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct std::allocator<CUnmannedTraderRegistItemInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr, struct CUnmannedTraderRegistItemInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr, struct CUnmannedTraderRegistItemInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this, struct CUnmannedTraderRegistItemInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderRegistItemInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderRegistItemInfo>_functions[] = {
+            static hook_record allocator<CUnmannedTraderRegistItemInfo>_functions[] = {
             {   (LPVOID)0x140361c60L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1803,7 +1803,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1814,51 +1814,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderUserInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, uint64_t _Count)
+            static struct CUnmannedTraderUserInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct std::allocator<CUnmannedTraderUserInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct std::allocator<CUnmannedTraderUserInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr, struct CUnmannedTraderUserInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr, struct CUnmannedTraderUserInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this, struct CUnmannedTraderUserInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderUserInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderUserInfo>_functions[] = {
+            static hook_record allocator<CUnmannedTraderUserInfo>_functions[] = {
             {   (LPVOID)0x140368180L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1897,7 +1897,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -1908,51 +1908,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderSchedule* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, uint64_t _Count)
+            static struct CUnmannedTraderSchedule* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct std::allocator<CUnmannedTraderSchedule>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct std::allocator<CUnmannedTraderSchedule>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr, struct CUnmannedTraderSchedule* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr, struct CUnmannedTraderSchedule* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this, struct CUnmannedTraderSchedule* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderSchedule>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderSchedule>_functions[] = {
+            static hook_record allocator<CUnmannedTraderSchedule>_functions[] = {
             {   (LPVOID)0x140395cd0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -1991,7 +1991,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2002,39 +2002,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct TRC_AutoTrade** std__allocatorallocate2_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, uint64_t _Count)
+            static struct TRC_AutoTrade** std__allocatorallocate2_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, struct std::allocator<TRC_AutoTrade *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, struct std::allocator<TRC_AutoTrade *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<TRC_AutoTrade *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<TRC_AutoTrade *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, struct TRC_AutoTrade** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<TRC_AutoTrade *>* _this, struct TRC_AutoTrade** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<TRC_AutoTrade *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<TRC_AutoTrade *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<TRC_AutoTrade *>_functions[] = {
+            static hook_record allocator<TRC_AutoTrade *>_functions[] = {
             {   (LPVOID)0x140390c70L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2063,7 +2063,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2074,39 +2074,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct CUnmannedTraderDivisionInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, uint64_t _Count)
+            static struct CUnmannedTraderDivisionInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, struct std::allocator<CUnmannedTraderDivisionInfo *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, struct std::allocator<CUnmannedTraderDivisionInfo *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, struct CUnmannedTraderDivisionInfo** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this, struct CUnmannedTraderDivisionInfo** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CUnmannedTraderDivisionInfo *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderDivisionInfo *>_functions[] = {
+            static hook_record allocator<CUnmannedTraderDivisionInfo *>_functions[] = {
             {   (LPVOID)0x14038a4e0L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2135,7 +2135,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2146,51 +2146,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderClassInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, uint64_t _Count)
+            static struct CUnmannedTraderClassInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct std::allocator<CUnmannedTraderClassInfo *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct std::allocator<CUnmannedTraderClassInfo *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr, struct CUnmannedTraderClassInfo** _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr, struct CUnmannedTraderClassInfo** _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this, struct CUnmannedTraderClassInfo** _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderClassInfo *>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderClassInfo *>_functions[] = {
+            static hook_record allocator<CUnmannedTraderClassInfo *>_functions[] = {
             {   (LPVOID)0x140372230L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2229,7 +2229,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2240,39 +2240,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
-            info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
-            info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
-            info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatordeallocate8_ptr std__allocatordeallocate8_next(nullptr);
+            static info::std__allocatordeallocate8_clbk std__allocatordeallocate8_user(nullptr);
+            static info::std__allocatormax_size10_ptr std__allocatormax_size10_next(nullptr);
+            static info::std__allocatormax_size10_clbk std__allocatormax_size10_user(nullptr);
             
-            struct CUnmannedTraderSortType** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, uint64_t _Count)
+            static struct CUnmannedTraderSortType** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, struct std::allocator<CUnmannedTraderSortType *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, struct std::allocator<CUnmannedTraderSortType *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatordeallocate8_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, struct CUnmannedTraderSortType** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate8_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this, struct CUnmannedTraderSortType** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate8_user(_this, _Ptr, __formal);
             };
-            uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this)
+            static uint64_t std__allocatormax_size10_wrapper(struct std::allocator<CUnmannedTraderSortType *>* _this)
             {
                return std__allocatormax_size10_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderSortType *>_functions[] = {
+            static hook_record allocator<CUnmannedTraderSortType *>_functions[] = {
             {   (LPVOID)0x140372c30L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2301,7 +2301,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2312,51 +2312,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderSubClassInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, uint64_t _Count)
+            static struct CUnmannedTraderSubClassInfo** std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct std::allocator<CUnmannedTraderSubClassInfo *>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct std::allocator<CUnmannedTraderSubClassInfo *>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr, struct CUnmannedTraderSubClassInfo** _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr, struct CUnmannedTraderSubClassInfo** _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this, struct CUnmannedTraderSubClassInfo** _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderSubClassInfo *>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderSubClassInfo *>_functions[] = {
+            static hook_record allocator<CUnmannedTraderSubClassInfo *>_functions[] = {
             {   (LPVOID)0x14037fe30L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2395,7 +2395,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2406,51 +2406,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct CUnmannedTraderItemCodeInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, uint64_t _Count)
+            static struct CUnmannedTraderItemCodeInfo* std__allocatorallocate2_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct std::allocator<CUnmannedTraderItemCodeInfo>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct std::allocator<CUnmannedTraderItemCodeInfo>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr, struct CUnmannedTraderItemCodeInfo* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr, struct CUnmannedTraderItemCodeInfo* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this, struct CUnmannedTraderItemCodeInfo* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<CUnmannedTraderItemCodeInfo>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<CUnmannedTraderItemCodeInfo>_functions[] = {
+            static hook_record allocator<CUnmannedTraderItemCodeInfo>_functions[] = {
             {   (LPVOID)0x140379b50L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2489,7 +2489,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2500,33 +2500,33 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatordeallocate6_ptr std__allocatordeallocate6_next(nullptr);
-            info::std__allocatordeallocate6_clbk std__allocatordeallocate6_user(nullptr);
-            info::std__allocatordestroy8_ptr std__allocatordestroy8_next(nullptr);
-            info::std__allocatordestroy8_clbk std__allocatordestroy8_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatordeallocate6_ptr std__allocatordeallocate6_next(nullptr);
+            static info::std__allocatordeallocate6_clbk std__allocatordeallocate6_user(nullptr);
+            static info::std__allocatordestroy8_ptr std__allocatordestroy8_next(nullptr);
+            static info::std__allocatordestroy8_clbk std__allocatordestroy8_user(nullptr);
             
-            struct RECV_DATA** std__allocatorallocate2_wrapper(struct std::allocator<RECV_DATA *>* _this, uint64_t _Count)
+            static struct RECV_DATA** std__allocatorallocate2_wrapper(struct std::allocator<RECV_DATA *>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<RECV_DATA *>* _this, struct std::allocator<RECV_DATA>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<RECV_DATA *>* _this, struct std::allocator<RECV_DATA>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatordeallocate6_wrapper(struct std::allocator<RECV_DATA *>* _this, struct RECV_DATA** _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate6_wrapper(struct std::allocator<RECV_DATA *>* _this, struct RECV_DATA** _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate6_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy8_wrapper(struct std::allocator<RECV_DATA *>* _this, struct RECV_DATA** _Ptr)
+            static void std__allocatordestroy8_wrapper(struct std::allocator<RECV_DATA *>* _this, struct RECV_DATA** _Ptr)
             {
                std__allocatordestroy8_user(_this, _Ptr);
             };
             
-            hook_record allocator<RECV_DATA *>_functions[] = {
+            static hook_record allocator<RECV_DATA *>_functions[] = {
             {   (LPVOID)0x14031ad80L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2550,7 +2550,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2561,51 +2561,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct RECV_DATA* std__allocatorallocate2_wrapper(struct std::allocator<RECV_DATA>* _this, uint64_t _Count)
+            static struct RECV_DATA* std__allocatorallocate2_wrapper(struct std::allocator<RECV_DATA>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<RECV_DATA>* _this, struct std::allocator<RECV_DATA>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<RECV_DATA>* _this, struct std::allocator<RECV_DATA>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<RECV_DATA>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<RECV_DATA>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr, struct RECV_DATA* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr, struct RECV_DATA* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<RECV_DATA>* _this, struct RECV_DATA* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<RECV_DATA>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<RECV_DATA>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<RECV_DATA>_functions[] = {
+            static hook_record allocator<RECV_DATA>_functions[] = {
             {   (LPVOID)0x14031ab40L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2644,7 +2644,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__allocator_info.hpp"
@@ -2655,51 +2655,51 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
-            info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
-            info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
-            info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
-            info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
-            info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
-            info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
-            info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
-            info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
-            info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
-            info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
-            info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
-            info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
-            info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
+            static info::std__allocatorallocate2_ptr std__allocatorallocate2_next(nullptr);
+            static info::std__allocatorallocate2_clbk std__allocatorallocate2_user(nullptr);
+            static info::std__allocatorctor_allocator4_ptr std__allocatorctor_allocator4_next(nullptr);
+            static info::std__allocatorctor_allocator4_clbk std__allocatorctor_allocator4_user(nullptr);
+            static info::std__allocatorctor_allocator6_ptr std__allocatorctor_allocator6_next(nullptr);
+            static info::std__allocatorctor_allocator6_clbk std__allocatorctor_allocator6_user(nullptr);
+            static info::std__allocatorconstruct8_ptr std__allocatorconstruct8_next(nullptr);
+            static info::std__allocatorconstruct8_clbk std__allocatorconstruct8_user(nullptr);
+            static info::std__allocatordeallocate10_ptr std__allocatordeallocate10_next(nullptr);
+            static info::std__allocatordeallocate10_clbk std__allocatordeallocate10_user(nullptr);
+            static info::std__allocatordestroy12_ptr std__allocatordestroy12_next(nullptr);
+            static info::std__allocatordestroy12_clbk std__allocatordestroy12_user(nullptr);
+            static info::std__allocatormax_size14_ptr std__allocatormax_size14_next(nullptr);
+            static info::std__allocatormax_size14_clbk std__allocatormax_size14_user(nullptr);
             
-            struct AreaData* std__allocatorallocate2_wrapper(struct std::allocator<AreaData>* _this, uint64_t _Count)
+            static struct AreaData* std__allocatorallocate2_wrapper(struct std::allocator<AreaData>* _this, uint64_t _Count)
             {
                return std__allocatorallocate2_user(_this, _Count);
             };
-            void std__allocatorctor_allocator4_wrapper(struct std::allocator<AreaData>* _this, struct std::allocator<AreaData>* __formal)
+            static void std__allocatorctor_allocator4_wrapper(struct std::allocator<AreaData>* _this, struct std::allocator<AreaData>* __formal)
             {
                std__allocatorctor_allocator4_user(_this, __formal);
             };
-            void std__allocatorctor_allocator6_wrapper(struct std::allocator<AreaData>* _this)
+            static void std__allocatorctor_allocator6_wrapper(struct std::allocator<AreaData>* _this)
             {
                std__allocatorctor_allocator6_user(_this);
             };
-            void std__allocatorconstruct8_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr, struct AreaData* _Val)
+            static void std__allocatorconstruct8_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr, struct AreaData* _Val)
             {
                std__allocatorconstruct8_user(_this, _Ptr, _Val);
             };
-            void std__allocatordeallocate10_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr, uint64_t __formal)
+            static void std__allocatordeallocate10_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr, uint64_t __formal)
             {
                std__allocatordeallocate10_user(_this, _Ptr, __formal);
             };
-            void std__allocatordestroy12_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr)
+            static void std__allocatordestroy12_wrapper(struct std::allocator<AreaData>* _this, struct AreaData* _Ptr)
             {
                std__allocatordestroy12_user(_this, _Ptr);
             };
-            uint64_t std__allocatormax_size14_wrapper(struct std::allocator<AreaData>* _this)
+            static uint64_t std__allocatormax_size14_wrapper(struct std::allocator<AreaData>* _this)
             {
                return std__allocatormax_size14_user(_this);
             };
             
-            hook_record allocator<AreaData>_functions[] = {
+            static hook_record allocator<AreaData>_functions[] = {
             {   (LPVOID)0x14018fe70L,
                 (LPVOID *)&std__allocatorallocate2_user,
                 (LPVOID *)&std__allocatorallocate2_next,
@@ -2738,6 +2738,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

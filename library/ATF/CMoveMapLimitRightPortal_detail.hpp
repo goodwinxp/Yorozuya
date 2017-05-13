@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_ptr CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_next(nullptr);
-        info::CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_clbk CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_user(nullptr);
-        info::CMoveMapLimitRightPortalCreateComplete4_ptr CMoveMapLimitRightPortalCreateComplete4_next(nullptr);
-        info::CMoveMapLimitRightPortalCreateComplete4_clbk CMoveMapLimitRightPortalCreateComplete4_user(nullptr);
-        info::CMoveMapLimitRightPortalIsHaveRight6_ptr CMoveMapLimitRightPortalIsHaveRight6_next(nullptr);
-        info::CMoveMapLimitRightPortalIsHaveRight6_clbk CMoveMapLimitRightPortalIsHaveRight6_user(nullptr);
-        info::CMoveMapLimitRightPortalLoad8_ptr CMoveMapLimitRightPortalLoad8_next(nullptr);
-        info::CMoveMapLimitRightPortalLoad8_clbk CMoveMapLimitRightPortalLoad8_user(nullptr);
-        info::CMoveMapLimitRightPortalLogOut10_ptr CMoveMapLimitRightPortalLogOut10_next(nullptr);
-        info::CMoveMapLimitRightPortalLogOut10_clbk CMoveMapLimitRightPortalLogOut10_user(nullptr);
-        info::CMoveMapLimitRightPortalSetFlag12_ptr CMoveMapLimitRightPortalSetFlag12_next(nullptr);
-        info::CMoveMapLimitRightPortalSetFlag12_clbk CMoveMapLimitRightPortalSetFlag12_user(nullptr);
+        static info::CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_ptr CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_next(nullptr);
+        static info::CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_clbk CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_user(nullptr);
+        static info::CMoveMapLimitRightPortalCreateComplete4_ptr CMoveMapLimitRightPortalCreateComplete4_next(nullptr);
+        static info::CMoveMapLimitRightPortalCreateComplete4_clbk CMoveMapLimitRightPortalCreateComplete4_user(nullptr);
+        static info::CMoveMapLimitRightPortalIsHaveRight6_ptr CMoveMapLimitRightPortalIsHaveRight6_next(nullptr);
+        static info::CMoveMapLimitRightPortalIsHaveRight6_clbk CMoveMapLimitRightPortalIsHaveRight6_user(nullptr);
+        static info::CMoveMapLimitRightPortalLoad8_ptr CMoveMapLimitRightPortalLoad8_next(nullptr);
+        static info::CMoveMapLimitRightPortalLoad8_clbk CMoveMapLimitRightPortalLoad8_user(nullptr);
+        static info::CMoveMapLimitRightPortalLogOut10_ptr CMoveMapLimitRightPortalLogOut10_next(nullptr);
+        static info::CMoveMapLimitRightPortalLogOut10_clbk CMoveMapLimitRightPortalLogOut10_user(nullptr);
+        static info::CMoveMapLimitRightPortalSetFlag12_ptr CMoveMapLimitRightPortalSetFlag12_next(nullptr);
+        static info::CMoveMapLimitRightPortalSetFlag12_clbk CMoveMapLimitRightPortalSetFlag12_user(nullptr);
         
-        void CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_wrapper(struct CMoveMapLimitRightPortal* _this, int iType)
+        static void CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_wrapper(struct CMoveMapLimitRightPortal* _this, int iType)
         {
            CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_user(_this, iType, CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_next);
         };
-        void CMoveMapLimitRightPortalCreateComplete4_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightPortalCreateComplete4_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightPortalCreateComplete4_user(_this, pkPlayer, CMoveMapLimitRightPortalCreateComplete4_next);
         };
-        bool CMoveMapLimitRightPortalIsHaveRight6_wrapper(struct CMoveMapLimitRightPortal* _this)
+        static bool CMoveMapLimitRightPortalIsHaveRight6_wrapper(struct CMoveMapLimitRightPortal* _this)
         {
            return CMoveMapLimitRightPortalIsHaveRight6_user(_this, CMoveMapLimitRightPortalIsHaveRight6_next);
         };
-        void CMoveMapLimitRightPortalLoad8_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightPortalLoad8_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightPortalLoad8_user(_this, pkPlayer, CMoveMapLimitRightPortalLoad8_next);
         };
-        void CMoveMapLimitRightPortalLogOut10_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
+        static void CMoveMapLimitRightPortalLogOut10_wrapper(struct CMoveMapLimitRightPortal* _this, struct CPlayer* pkPlayer)
         {
            CMoveMapLimitRightPortalLogOut10_user(_this, pkPlayer, CMoveMapLimitRightPortalLogOut10_next);
         };
-        void CMoveMapLimitRightPortalSetFlag12_wrapper(struct CMoveMapLimitRightPortal* _this, int iType, bool bFlag)
+        static void CMoveMapLimitRightPortalSetFlag12_wrapper(struct CMoveMapLimitRightPortal* _this, int iType, bool bFlag)
         {
            CMoveMapLimitRightPortalSetFlag12_user(_this, iType, bFlag, CMoveMapLimitRightPortalSetFlag12_next);
         };
         
-        hook_record CMoveMapLimitRightPortal_functions[] = {
+        static hook_record CMoveMapLimitRightPortal_functions[] = {
         {   (LPVOID)0x1403ac7f0L,
             (LPVOID *)&CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_user,
             (LPVOID *)&CMoveMapLimitRightPortalctor_CMoveMapLimitRightPortal2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

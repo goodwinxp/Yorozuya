@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_server_rate_realtime_loadInit2_ptr _server_rate_realtime_loadInit2_next(nullptr);
-        info::_server_rate_realtime_loadInit2_clbk _server_rate_realtime_loadInit2_user(nullptr);
-        info::_server_rate_realtime_loadctor__server_rate_realtime_load4_ptr _server_rate_realtime_loadctor__server_rate_realtime_load4_next(nullptr);
-        info::_server_rate_realtime_loadctor__server_rate_realtime_load4_clbk _server_rate_realtime_loadctor__server_rate_realtime_load4_user(nullptr);
-        info::_server_rate_realtime_loaddtor__server_rate_realtime_load6_ptr _server_rate_realtime_loaddtor__server_rate_realtime_load6_next(nullptr);
-        info::_server_rate_realtime_loaddtor__server_rate_realtime_load6_clbk _server_rate_realtime_loaddtor__server_rate_realtime_load6_user(nullptr);
+        static info::_server_rate_realtime_loadInit2_ptr _server_rate_realtime_loadInit2_next(nullptr);
+        static info::_server_rate_realtime_loadInit2_clbk _server_rate_realtime_loadInit2_user(nullptr);
+        static info::_server_rate_realtime_loadctor__server_rate_realtime_load4_ptr _server_rate_realtime_loadctor__server_rate_realtime_load4_next(nullptr);
+        static info::_server_rate_realtime_loadctor__server_rate_realtime_load4_clbk _server_rate_realtime_loadctor__server_rate_realtime_load4_user(nullptr);
+        static info::_server_rate_realtime_loaddtor__server_rate_realtime_load6_ptr _server_rate_realtime_loaddtor__server_rate_realtime_load6_next(nullptr);
+        static info::_server_rate_realtime_loaddtor__server_rate_realtime_load6_clbk _server_rate_realtime_loaddtor__server_rate_realtime_load6_user(nullptr);
         
-        void _server_rate_realtime_loadInit2_wrapper(struct _server_rate_realtime_load* _this, unsigned int dwReadTerm)
+        static void _server_rate_realtime_loadInit2_wrapper(struct _server_rate_realtime_load* _this, unsigned int dwReadTerm)
         {
            _server_rate_realtime_loadInit2_user(_this, dwReadTerm, _server_rate_realtime_loadInit2_next);
         };
-        void _server_rate_realtime_loadctor__server_rate_realtime_load4_wrapper(struct _server_rate_realtime_load* _this)
+        static void _server_rate_realtime_loadctor__server_rate_realtime_load4_wrapper(struct _server_rate_realtime_load* _this)
         {
            _server_rate_realtime_loadctor__server_rate_realtime_load4_user(_this, _server_rate_realtime_loadctor__server_rate_realtime_load4_next);
         };
-        void _server_rate_realtime_loaddtor__server_rate_realtime_load6_wrapper(struct _server_rate_realtime_load* _this)
+        static void _server_rate_realtime_loaddtor__server_rate_realtime_load6_wrapper(struct _server_rate_realtime_load* _this)
         {
            _server_rate_realtime_loaddtor__server_rate_realtime_load6_user(_this, _server_rate_realtime_loaddtor__server_rate_realtime_load6_next);
         };
         
-        hook_record _server_rate_realtime_load_functions[] = {
+        static hook_record _server_rate_realtime_load_functions[] = {
         {   (LPVOID)0x140203120L,
             (LPVOID *)&_server_rate_realtime_loadInit2_user,
             (LPVOID *)&_server_rate_realtime_loadInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

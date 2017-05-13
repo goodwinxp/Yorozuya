@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_skill_lv_up_datainit2_ptr _skill_lv_up_datainit2_next(nullptr);
-        info::_skill_lv_up_datainit2_clbk _skill_lv_up_datainit2_user(nullptr);
-        info::_skill_lv_up_dataset4_ptr _skill_lv_up_dataset4_next(nullptr);
-        info::_skill_lv_up_dataset4_clbk _skill_lv_up_dataset4_user(nullptr);
+        static info::_skill_lv_up_datainit2_ptr _skill_lv_up_datainit2_next(nullptr);
+        static info::_skill_lv_up_datainit2_clbk _skill_lv_up_datainit2_user(nullptr);
+        static info::_skill_lv_up_dataset4_ptr _skill_lv_up_dataset4_next(nullptr);
+        static info::_skill_lv_up_dataset4_clbk _skill_lv_up_dataset4_user(nullptr);
         
-        void _skill_lv_up_datainit2_wrapper(struct _skill_lv_up_data* _this)
+        static void _skill_lv_up_datainit2_wrapper(struct _skill_lv_up_data* _this)
         {
            _skill_lv_up_datainit2_user(_this, _skill_lv_up_datainit2_next);
         };
-        void _skill_lv_up_dataset4_wrapper(struct _skill_lv_up_data* _this, uint16_t index, char lv)
+        static void _skill_lv_up_dataset4_wrapper(struct _skill_lv_up_data* _this, uint16_t index, char lv)
         {
            _skill_lv_up_dataset4_user(_this, index, lv, _skill_lv_up_dataset4_next);
         };
         
-        hook_record _skill_lv_up_data_functions[] = {
+        static hook_record _skill_lv_up_data_functions[] = {
         {   (LPVOID)0x140078950L,
             (LPVOID *)&_skill_lv_up_datainit2_user,
             (LPVOID *)&_skill_lv_up_datainit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

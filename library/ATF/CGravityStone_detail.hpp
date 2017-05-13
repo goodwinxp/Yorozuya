@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGravityStonector_CGravityStone2_ptr CGravityStonector_CGravityStone2_next(nullptr);
-        info::CGravityStonector_CGravityStone2_clbk CGravityStonector_CGravityStone2_user(nullptr);
-        info::CGravityStoneCheatGet4_ptr CGravityStoneCheatGet4_next(nullptr);
-        info::CGravityStoneCheatGet4_clbk CGravityStoneCheatGet4_user(nullptr);
-        info::CGravityStoneCheckTakeTimeLimit6_ptr CGravityStoneCheckTakeTimeLimit6_next(nullptr);
-        info::CGravityStoneCheckTakeTimeLimit6_clbk CGravityStoneCheckTakeTimeLimit6_user(nullptr);
-        info::CGravityStoneClear8_ptr CGravityStoneClear8_next(nullptr);
-        info::CGravityStoneClear8_clbk CGravityStoneClear8_user(nullptr);
-        info::CGravityStoneDestroy10_ptr CGravityStoneDestroy10_next(nullptr);
-        info::CGravityStoneDestroy10_clbk CGravityStoneDestroy10_user(nullptr);
-        info::CGravityStoneDrop12_ptr CGravityStoneDrop12_next(nullptr);
-        info::CGravityStoneDrop12_clbk CGravityStoneDrop12_user(nullptr);
-        info::CGravityStoneGet14_ptr CGravityStoneGet14_next(nullptr);
-        info::CGravityStoneGet14_clbk CGravityStoneGet14_user(nullptr);
-        info::CGravityStoneGetOwner16_ptr CGravityStoneGetOwner16_next(nullptr);
-        info::CGravityStoneGetOwner16_clbk CGravityStoneGetOwner16_user(nullptr);
-        info::CGravityStoneGetOwnerCurPos18_ptr CGravityStoneGetOwnerCurPos18_next(nullptr);
-        info::CGravityStoneGetOwnerCurPos18_clbk CGravityStoneGetOwnerCurPos18_user(nullptr);
-        info::CGravityStoneIsInTown20_ptr CGravityStoneIsInTown20_next(nullptr);
-        info::CGravityStoneIsInTown20_clbk CGravityStoneIsInTown20_user(nullptr);
-        info::CGravityStoneIsNearPosition22_ptr CGravityStoneIsNearPosition22_next(nullptr);
-        info::CGravityStoneIsNearPosition22_clbk CGravityStoneIsNearPosition22_user(nullptr);
-        info::CGravityStoneIsValidOwner24_ptr CGravityStoneIsValidOwner24_next(nullptr);
-        info::CGravityStoneIsValidOwner24_clbk CGravityStoneIsValidOwner24_user(nullptr);
-        info::CGravityStoneRegen26_ptr CGravityStoneRegen26_next(nullptr);
-        info::CGravityStoneRegen26_clbk CGravityStoneRegen26_user(nullptr);
-        info::CGravityStoneSendMsg_Create28_ptr CGravityStoneSendMsg_Create28_next(nullptr);
-        info::CGravityStoneSendMsg_Create28_clbk CGravityStoneSendMsg_Create28_user(nullptr);
-        info::CGravityStoneSendMsg_Destroy30_ptr CGravityStoneSendMsg_Destroy30_next(nullptr);
-        info::CGravityStoneSendMsg_Destroy30_clbk CGravityStoneSendMsg_Destroy30_user(nullptr);
-        info::CGravityStoneSendMsg_FixPosition32_ptr CGravityStoneSendMsg_FixPosition32_next(nullptr);
-        info::CGravityStoneSendMsg_FixPosition32_clbk CGravityStoneSendMsg_FixPosition32_user(nullptr);
-        info::CGravityStoneSetOwner34_ptr CGravityStoneSetOwner34_next(nullptr);
-        info::CGravityStoneSetOwner34_clbk CGravityStoneSetOwner34_user(nullptr);
-        info::CGravityStonedtor_CGravityStone39_ptr CGravityStonedtor_CGravityStone39_next(nullptr);
-        info::CGravityStonedtor_CGravityStone39_clbk CGravityStonedtor_CGravityStone39_user(nullptr);
+        static info::CGravityStonector_CGravityStone2_ptr CGravityStonector_CGravityStone2_next(nullptr);
+        static info::CGravityStonector_CGravityStone2_clbk CGravityStonector_CGravityStone2_user(nullptr);
+        static info::CGravityStoneCheatGet4_ptr CGravityStoneCheatGet4_next(nullptr);
+        static info::CGravityStoneCheatGet4_clbk CGravityStoneCheatGet4_user(nullptr);
+        static info::CGravityStoneCheckTakeTimeLimit6_ptr CGravityStoneCheckTakeTimeLimit6_next(nullptr);
+        static info::CGravityStoneCheckTakeTimeLimit6_clbk CGravityStoneCheckTakeTimeLimit6_user(nullptr);
+        static info::CGravityStoneClear8_ptr CGravityStoneClear8_next(nullptr);
+        static info::CGravityStoneClear8_clbk CGravityStoneClear8_user(nullptr);
+        static info::CGravityStoneDestroy10_ptr CGravityStoneDestroy10_next(nullptr);
+        static info::CGravityStoneDestroy10_clbk CGravityStoneDestroy10_user(nullptr);
+        static info::CGravityStoneDrop12_ptr CGravityStoneDrop12_next(nullptr);
+        static info::CGravityStoneDrop12_clbk CGravityStoneDrop12_user(nullptr);
+        static info::CGravityStoneGet14_ptr CGravityStoneGet14_next(nullptr);
+        static info::CGravityStoneGet14_clbk CGravityStoneGet14_user(nullptr);
+        static info::CGravityStoneGetOwner16_ptr CGravityStoneGetOwner16_next(nullptr);
+        static info::CGravityStoneGetOwner16_clbk CGravityStoneGetOwner16_user(nullptr);
+        static info::CGravityStoneGetOwnerCurPos18_ptr CGravityStoneGetOwnerCurPos18_next(nullptr);
+        static info::CGravityStoneGetOwnerCurPos18_clbk CGravityStoneGetOwnerCurPos18_user(nullptr);
+        static info::CGravityStoneIsInTown20_ptr CGravityStoneIsInTown20_next(nullptr);
+        static info::CGravityStoneIsInTown20_clbk CGravityStoneIsInTown20_user(nullptr);
+        static info::CGravityStoneIsNearPosition22_ptr CGravityStoneIsNearPosition22_next(nullptr);
+        static info::CGravityStoneIsNearPosition22_clbk CGravityStoneIsNearPosition22_user(nullptr);
+        static info::CGravityStoneIsValidOwner24_ptr CGravityStoneIsValidOwner24_next(nullptr);
+        static info::CGravityStoneIsValidOwner24_clbk CGravityStoneIsValidOwner24_user(nullptr);
+        static info::CGravityStoneRegen26_ptr CGravityStoneRegen26_next(nullptr);
+        static info::CGravityStoneRegen26_clbk CGravityStoneRegen26_user(nullptr);
+        static info::CGravityStoneSendMsg_Create28_ptr CGravityStoneSendMsg_Create28_next(nullptr);
+        static info::CGravityStoneSendMsg_Create28_clbk CGravityStoneSendMsg_Create28_user(nullptr);
+        static info::CGravityStoneSendMsg_Destroy30_ptr CGravityStoneSendMsg_Destroy30_next(nullptr);
+        static info::CGravityStoneSendMsg_Destroy30_clbk CGravityStoneSendMsg_Destroy30_user(nullptr);
+        static info::CGravityStoneSendMsg_FixPosition32_ptr CGravityStoneSendMsg_FixPosition32_next(nullptr);
+        static info::CGravityStoneSendMsg_FixPosition32_clbk CGravityStoneSendMsg_FixPosition32_user(nullptr);
+        static info::CGravityStoneSetOwner34_ptr CGravityStoneSetOwner34_next(nullptr);
+        static info::CGravityStoneSetOwner34_clbk CGravityStoneSetOwner34_user(nullptr);
+        static info::CGravityStonedtor_CGravityStone39_ptr CGravityStonedtor_CGravityStone39_next(nullptr);
+        static info::CGravityStonedtor_CGravityStone39_clbk CGravityStonedtor_CGravityStone39_user(nullptr);
         
-        void CGravityStonector_CGravityStone2_wrapper(struct CGravityStone* _this, uint16_t wInx)
+        static void CGravityStonector_CGravityStone2_wrapper(struct CGravityStone* _this, uint16_t wInx)
         {
            CGravityStonector_CGravityStone2_user(_this, wInx, CGravityStonector_CGravityStone2_next);
         };
-        char CGravityStoneCheatGet4_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
+        static char CGravityStoneCheatGet4_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
         {
            return CGravityStoneCheatGet4_user(_this, pkPlayer, CGravityStoneCheatGet4_next);
         };
-        bool CGravityStoneCheckTakeTimeLimit6_wrapper(struct CGravityStone* _this)
+        static bool CGravityStoneCheckTakeTimeLimit6_wrapper(struct CGravityStone* _this)
         {
            return CGravityStoneCheckTakeTimeLimit6_user(_this, CGravityStoneCheckTakeTimeLimit6_next);
         };
-        void CGravityStoneClear8_wrapper(struct CGravityStone* _this)
+        static void CGravityStoneClear8_wrapper(struct CGravityStone* _this)
         {
            CGravityStoneClear8_user(_this, CGravityStoneClear8_next);
         };
-        void CGravityStoneDestroy10_wrapper(struct CGravityStone* _this)
+        static void CGravityStoneDestroy10_wrapper(struct CGravityStone* _this)
         {
            CGravityStoneDestroy10_user(_this, CGravityStoneDestroy10_next);
         };
-        char CGravityStoneDrop12_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
+        static char CGravityStoneDrop12_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
         {
            return CGravityStoneDrop12_user(_this, pkPlayer, CGravityStoneDrop12_next);
         };
-        char CGravityStoneGet14_wrapper(struct CGravityStone* _this, uint16_t wIndex, unsigned int dwObjSerial, struct CPlayer* pkPlayer)
+        static char CGravityStoneGet14_wrapper(struct CGravityStone* _this, uint16_t wIndex, unsigned int dwObjSerial, struct CPlayer* pkPlayer)
         {
            return CGravityStoneGet14_user(_this, wIndex, dwObjSerial, pkPlayer, CGravityStoneGet14_next);
         };
-        struct CPlayer* CGravityStoneGetOwner16_wrapper(struct CGravityStone* _this)
+        static struct CPlayer* CGravityStoneGetOwner16_wrapper(struct CGravityStone* _this)
         {
            return CGravityStoneGetOwner16_user(_this, CGravityStoneGetOwner16_next);
         };
-        float* CGravityStoneGetOwnerCurPos18_wrapper(struct CGravityStone* _this)
+        static float* CGravityStoneGetOwnerCurPos18_wrapper(struct CGravityStone* _this)
         {
            return CGravityStoneGetOwnerCurPos18_user(_this, CGravityStoneGetOwnerCurPos18_next);
         };
-        bool CGravityStoneIsInTown20_wrapper(struct CGravityStone* _this)
+        static bool CGravityStoneIsInTown20_wrapper(struct CGravityStone* _this)
         {
            return CGravityStoneIsInTown20_user(_this, CGravityStoneIsInTown20_next);
         };
-        bool CGravityStoneIsNearPosition22_wrapper(struct CGravityStone* _this, float* pfCurPos)
+        static bool CGravityStoneIsNearPosition22_wrapper(struct CGravityStone* _this, float* pfCurPos)
         {
            return CGravityStoneIsNearPosition22_user(_this, pfCurPos, CGravityStoneIsNearPosition22_next);
         };
-        bool CGravityStoneIsValidOwner24_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
+        static bool CGravityStoneIsValidOwner24_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
         {
            return CGravityStoneIsValidOwner24_user(_this, pkPlayer, CGravityStoneIsValidOwner24_next);
         };
-        bool CGravityStoneRegen26_wrapper(struct CGravityStone* _this, struct _object_create_setdata* pParam)
+        static bool CGravityStoneRegen26_wrapper(struct CGravityStone* _this, struct _object_create_setdata* pParam)
         {
            return CGravityStoneRegen26_user(_this, pParam, CGravityStoneRegen26_next);
         };
-        void CGravityStoneSendMsg_Create28_wrapper(struct CGravityStone* _this)
+        static void CGravityStoneSendMsg_Create28_wrapper(struct CGravityStone* _this)
         {
            CGravityStoneSendMsg_Create28_user(_this, CGravityStoneSendMsg_Create28_next);
         };
-        void CGravityStoneSendMsg_Destroy30_wrapper(struct CGravityStone* _this)
+        static void CGravityStoneSendMsg_Destroy30_wrapper(struct CGravityStone* _this)
         {
            CGravityStoneSendMsg_Destroy30_user(_this, CGravityStoneSendMsg_Destroy30_next);
         };
-        void CGravityStoneSendMsg_FixPosition32_wrapper(struct CGravityStone* _this, int n)
+        static void CGravityStoneSendMsg_FixPosition32_wrapper(struct CGravityStone* _this, int n)
         {
            CGravityStoneSendMsg_FixPosition32_user(_this, n, CGravityStoneSendMsg_FixPosition32_next);
         };
-        void CGravityStoneSetOwner34_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
+        static void CGravityStoneSetOwner34_wrapper(struct CGravityStone* _this, struct CPlayer* pkPlayer)
         {
            CGravityStoneSetOwner34_user(_this, pkPlayer, CGravityStoneSetOwner34_next);
         };
-        void CGravityStonedtor_CGravityStone39_wrapper(struct CGravityStone* _this)
+        static void CGravityStonedtor_CGravityStone39_wrapper(struct CGravityStone* _this)
         {
            CGravityStonedtor_CGravityStone39_user(_this, CGravityStonedtor_CGravityStone39_next);
         };
         
-        hook_record CGravityStone_functions[] = {
+        static hook_record CGravityStone_functions[] = {
         {   (LPVOID)0x140164910L,
             (LPVOID *)&CGravityStonector_CGravityStone2_user,
             (LPVOID *)&CGravityStonector_CGravityStone2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

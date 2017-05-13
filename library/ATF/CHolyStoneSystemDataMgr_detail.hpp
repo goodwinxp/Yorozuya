@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyStoneSystemDataMgrLoadIni2_ptr CHolyStoneSystemDataMgrLoadIni2_next(nullptr);
-        info::CHolyStoneSystemDataMgrLoadIni2_clbk CHolyStoneSystemDataMgrLoadIni2_user(nullptr);
-        info::CHolyStoneSystemDataMgrLoadSceduleData4_ptr CHolyStoneSystemDataMgrLoadSceduleData4_next(nullptr);
-        info::CHolyStoneSystemDataMgrLoadSceduleData4_clbk CHolyStoneSystemDataMgrLoadSceduleData4_user(nullptr);
-        info::CHolyStoneSystemDataMgrLoadStateData6_ptr CHolyStoneSystemDataMgrLoadStateData6_next(nullptr);
-        info::CHolyStoneSystemDataMgrLoadStateData6_clbk CHolyStoneSystemDataMgrLoadStateData6_user(nullptr);
-        info::CHolyStoneSystemDataMgrSaveStateData8_ptr CHolyStoneSystemDataMgrSaveStateData8_next(nullptr);
-        info::CHolyStoneSystemDataMgrSaveStateData8_clbk CHolyStoneSystemDataMgrSaveStateData8_user(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadIni2_ptr CHolyStoneSystemDataMgrLoadIni2_next(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadIni2_clbk CHolyStoneSystemDataMgrLoadIni2_user(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadSceduleData4_ptr CHolyStoneSystemDataMgrLoadSceduleData4_next(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadSceduleData4_clbk CHolyStoneSystemDataMgrLoadSceduleData4_user(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadStateData6_ptr CHolyStoneSystemDataMgrLoadStateData6_next(nullptr);
+        static info::CHolyStoneSystemDataMgrLoadStateData6_clbk CHolyStoneSystemDataMgrLoadStateData6_user(nullptr);
+        static info::CHolyStoneSystemDataMgrSaveStateData8_ptr CHolyStoneSystemDataMgrSaveStateData8_next(nullptr);
+        static info::CHolyStoneSystemDataMgrSaveStateData8_clbk CHolyStoneSystemDataMgrSaveStateData8_user(nullptr);
         
-        bool CHolyStoneSystemDataMgrLoadIni2_wrapper(struct CHolyStoneSystem* clsHolyStoneSystem)
+        static bool CHolyStoneSystemDataMgrLoadIni2_wrapper(struct CHolyStoneSystem* clsHolyStoneSystem)
         {
            return CHolyStoneSystemDataMgrLoadIni2_user(clsHolyStoneSystem, CHolyStoneSystemDataMgrLoadIni2_next);
         };
-        bool CHolyStoneSystemDataMgrLoadSceduleData4_wrapper(struct CHolyScheduleData* clsDummy)
+        static bool CHolyStoneSystemDataMgrLoadSceduleData4_wrapper(struct CHolyScheduleData* clsDummy)
         {
            return CHolyStoneSystemDataMgrLoadSceduleData4_user(clsDummy, CHolyStoneSystemDataMgrLoadSceduleData4_next);
         };
-        bool CHolyStoneSystemDataMgrLoadStateData6_wrapper(struct CHolyStoneSaveData* clsSaveDummy)
+        static bool CHolyStoneSystemDataMgrLoadStateData6_wrapper(struct CHolyStoneSaveData* clsSaveDummy)
         {
            return CHolyStoneSystemDataMgrLoadStateData6_user(clsSaveDummy, CHolyStoneSystemDataMgrLoadStateData6_next);
         };
-        bool CHolyStoneSystemDataMgrSaveStateData8_wrapper(struct CHolyStoneSaveData* clsSaveDummy)
+        static bool CHolyStoneSystemDataMgrSaveStateData8_wrapper(struct CHolyStoneSaveData* clsSaveDummy)
         {
            return CHolyStoneSystemDataMgrSaveStateData8_user(clsSaveDummy, CHolyStoneSystemDataMgrSaveStateData8_next);
         };
         
-        hook_record CHolyStoneSystemDataMgr_functions[] = {
+        static hook_record CHolyStoneSystemDataMgr_functions[] = {
         {   (LPVOID)0x140284e90L,
             (LPVOID *)&CHolyStoneSystemDataMgrLoadIni2_user,
             (LPVOID *)&CHolyStoneSystemDataMgrLoadIni2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

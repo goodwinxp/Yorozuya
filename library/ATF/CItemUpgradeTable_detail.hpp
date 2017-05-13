@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CItemUpgradeTablector_CItemUpgradeTable2_ptr CItemUpgradeTablector_CItemUpgradeTable2_next(nullptr);
-        info::CItemUpgradeTablector_CItemUpgradeTable2_clbk CItemUpgradeTablector_CItemUpgradeTable2_user(nullptr);
-        info::CItemUpgradeTableGetRecord4_ptr CItemUpgradeTableGetRecord4_next(nullptr);
-        info::CItemUpgradeTableGetRecord4_clbk CItemUpgradeTableGetRecord4_user(nullptr);
-        info::CItemUpgradeTableGetRecordFromRes6_ptr CItemUpgradeTableGetRecordFromRes6_next(nullptr);
-        info::CItemUpgradeTableGetRecordFromRes6_clbk CItemUpgradeTableGetRecordFromRes6_user(nullptr);
-        info::CItemUpgradeTableGetSize8_ptr CItemUpgradeTableGetSize8_next(nullptr);
-        info::CItemUpgradeTableGetSize8_clbk CItemUpgradeTableGetSize8_user(nullptr);
-        info::CItemUpgradeTableIndexing10_ptr CItemUpgradeTableIndexing10_next(nullptr);
-        info::CItemUpgradeTableIndexing10_clbk CItemUpgradeTableIndexing10_user(nullptr);
-        info::CItemUpgradeTableReadRecord12_ptr CItemUpgradeTableReadRecord12_next(nullptr);
-        info::CItemUpgradeTableReadRecord12_clbk CItemUpgradeTableReadRecord12_user(nullptr);
-        info::CItemUpgradeTabledtor_CItemUpgradeTable17_ptr CItemUpgradeTabledtor_CItemUpgradeTable17_next(nullptr);
-        info::CItemUpgradeTabledtor_CItemUpgradeTable17_clbk CItemUpgradeTabledtor_CItemUpgradeTable17_user(nullptr);
+        static info::CItemUpgradeTablector_CItemUpgradeTable2_ptr CItemUpgradeTablector_CItemUpgradeTable2_next(nullptr);
+        static info::CItemUpgradeTablector_CItemUpgradeTable2_clbk CItemUpgradeTablector_CItemUpgradeTable2_user(nullptr);
+        static info::CItemUpgradeTableGetRecord4_ptr CItemUpgradeTableGetRecord4_next(nullptr);
+        static info::CItemUpgradeTableGetRecord4_clbk CItemUpgradeTableGetRecord4_user(nullptr);
+        static info::CItemUpgradeTableGetRecordFromRes6_ptr CItemUpgradeTableGetRecordFromRes6_next(nullptr);
+        static info::CItemUpgradeTableGetRecordFromRes6_clbk CItemUpgradeTableGetRecordFromRes6_user(nullptr);
+        static info::CItemUpgradeTableGetSize8_ptr CItemUpgradeTableGetSize8_next(nullptr);
+        static info::CItemUpgradeTableGetSize8_clbk CItemUpgradeTableGetSize8_user(nullptr);
+        static info::CItemUpgradeTableIndexing10_ptr CItemUpgradeTableIndexing10_next(nullptr);
+        static info::CItemUpgradeTableIndexing10_clbk CItemUpgradeTableIndexing10_user(nullptr);
+        static info::CItemUpgradeTableReadRecord12_ptr CItemUpgradeTableReadRecord12_next(nullptr);
+        static info::CItemUpgradeTableReadRecord12_clbk CItemUpgradeTableReadRecord12_user(nullptr);
+        static info::CItemUpgradeTabledtor_CItemUpgradeTable17_ptr CItemUpgradeTabledtor_CItemUpgradeTable17_next(nullptr);
+        static info::CItemUpgradeTabledtor_CItemUpgradeTable17_clbk CItemUpgradeTabledtor_CItemUpgradeTable17_user(nullptr);
         
-        void CItemUpgradeTablector_CItemUpgradeTable2_wrapper(struct CItemUpgradeTable* _this)
+        static void CItemUpgradeTablector_CItemUpgradeTable2_wrapper(struct CItemUpgradeTable* _this)
         {
            CItemUpgradeTablector_CItemUpgradeTable2_user(_this, CItemUpgradeTablector_CItemUpgradeTable2_next);
         };
-        struct _ItemUpgrade_fld* CItemUpgradeTableGetRecord4_wrapper(struct CItemUpgradeTable* _this, unsigned int dwIndex)
+        static struct _ItemUpgrade_fld* CItemUpgradeTableGetRecord4_wrapper(struct CItemUpgradeTable* _this, unsigned int dwIndex)
         {
            return CItemUpgradeTableGetRecord4_user(_this, dwIndex, CItemUpgradeTableGetRecord4_next);
         };
-        struct _ItemUpgrade_fld* CItemUpgradeTableGetRecordFromRes6_wrapper(struct CItemUpgradeTable* _this, unsigned int dwResIndex)
+        static struct _ItemUpgrade_fld* CItemUpgradeTableGetRecordFromRes6_wrapper(struct CItemUpgradeTable* _this, unsigned int dwResIndex)
         {
            return CItemUpgradeTableGetRecordFromRes6_user(_this, dwResIndex, CItemUpgradeTableGetRecordFromRes6_next);
         };
-        int CItemUpgradeTableGetSize8_wrapper(struct CItemUpgradeTable* _this)
+        static int CItemUpgradeTableGetSize8_wrapper(struct CItemUpgradeTable* _this)
         {
            return CItemUpgradeTableGetSize8_user(_this, CItemUpgradeTableGetSize8_next);
         };
-        bool CItemUpgradeTableIndexing10_wrapper(struct CItemUpgradeTable* _this, struct CRecordData* pResRec, char* pszErrMsg)
+        static bool CItemUpgradeTableIndexing10_wrapper(struct CItemUpgradeTable* _this, struct CRecordData* pResRec, char* pszErrMsg)
         {
            return CItemUpgradeTableIndexing10_user(_this, pResRec, pszErrMsg, CItemUpgradeTableIndexing10_next);
         };
-        bool CItemUpgradeTableReadRecord12_wrapper(struct CItemUpgradeTable* _this, char* szFile, struct CRecordData* pResRec, char* pszErrMsg)
+        static bool CItemUpgradeTableReadRecord12_wrapper(struct CItemUpgradeTable* _this, char* szFile, struct CRecordData* pResRec, char* pszErrMsg)
         {
            return CItemUpgradeTableReadRecord12_user(_this, szFile, pResRec, pszErrMsg, CItemUpgradeTableReadRecord12_next);
         };
-        void CItemUpgradeTabledtor_CItemUpgradeTable17_wrapper(struct CItemUpgradeTable* _this)
+        static void CItemUpgradeTabledtor_CItemUpgradeTable17_wrapper(struct CItemUpgradeTable* _this)
         {
            CItemUpgradeTabledtor_CItemUpgradeTable17_user(_this, CItemUpgradeTabledtor_CItemUpgradeTable17_next);
         };
         
-        hook_record CItemUpgradeTable_functions[] = {
+        static hook_record CItemUpgradeTable_functions[] = {
         {   (LPVOID)0x140202bc0L,
             (LPVOID *)&CItemUpgradeTablector_CItemUpgradeTable2_user,
             (LPVOID *)&CItemUpgradeTablector_CItemUpgradeTable2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

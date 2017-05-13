@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_result_csi_goods_list_zoclsize2_ptr _result_csi_goods_list_zoclsize2_next(nullptr);
-        info::_result_csi_goods_list_zoclsize2_clbk _result_csi_goods_list_zoclsize2_user(nullptr);
+        static info::_result_csi_goods_list_zoclsize2_ptr _result_csi_goods_list_zoclsize2_next(nullptr);
+        static info::_result_csi_goods_list_zoclsize2_clbk _result_csi_goods_list_zoclsize2_user(nullptr);
         
-        int _result_csi_goods_list_zoclsize2_wrapper(struct _result_csi_goods_list_zocl* _this)
+        static int _result_csi_goods_list_zoclsize2_wrapper(struct _result_csi_goods_list_zocl* _this)
         {
            return _result_csi_goods_list_zoclsize2_user(_this, _result_csi_goods_list_zoclsize2_next);
         };
         
-        hook_record _result_csi_goods_list_zocl_functions[] = {
+        static hook_record _result_csi_goods_list_zocl_functions[] = {
         {   (LPVOID)0x140304dd0L,
             (LPVOID *)&_result_csi_goods_list_zoclsize2_user,
             (LPVOID *)&_result_csi_goods_list_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

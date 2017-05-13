@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ICsSendInterfaceSendMsg_BuyCashItem2_ptr ICsSendInterfaceSendMsg_BuyCashItem2_next(nullptr);
-        info::ICsSendInterfaceSendMsg_BuyCashItem2_clbk ICsSendInterfaceSendMsg_BuyCashItem2_user(nullptr);
-        info::ICsSendInterfaceSendMsg_CashDiscountEventInform4_ptr ICsSendInterfaceSendMsg_CashDiscountEventInform4_next(nullptr);
-        info::ICsSendInterfaceSendMsg_CashDiscountEventInform4_clbk ICsSendInterfaceSendMsg_CashDiscountEventInform4_user(nullptr);
-        info::ICsSendInterfaceSendMsg_CashEventInform6_ptr ICsSendInterfaceSendMsg_CashEventInform6_next(nullptr);
-        info::ICsSendInterfaceSendMsg_CashEventInform6_clbk ICsSendInterfaceSendMsg_CashEventInform6_user(nullptr);
-        info::ICsSendInterfaceSendMsg_ConditionalEventInform8_ptr ICsSendInterfaceSendMsg_ConditionalEventInform8_next(nullptr);
-        info::ICsSendInterfaceSendMsg_ConditionalEventInform8_clbk ICsSendInterfaceSendMsg_ConditionalEventInform8_user(nullptr);
-        info::ICsSendInterfaceSendMsg_Error10_ptr ICsSendInterfaceSendMsg_Error10_next(nullptr);
-        info::ICsSendInterfaceSendMsg_Error10_clbk ICsSendInterfaceSendMsg_Error10_user(nullptr);
-        info::ICsSendInterfaceSendMsg_GoodsList12_ptr ICsSendInterfaceSendMsg_GoodsList12_next(nullptr);
-        info::ICsSendInterfaceSendMsg_GoodsList12_clbk ICsSendInterfaceSendMsg_GoodsList12_user(nullptr);
-        info::ICsSendInterfaceSendMsg_LimitedsaleEventInform14_ptr ICsSendInterfaceSendMsg_LimitedsaleEventInform14_next(nullptr);
-        info::ICsSendInterfaceSendMsg_LimitedsaleEventInform14_clbk ICsSendInterfaceSendMsg_LimitedsaleEventInform14_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_BuyCashItem2_ptr ICsSendInterfaceSendMsg_BuyCashItem2_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_BuyCashItem2_clbk ICsSendInterfaceSendMsg_BuyCashItem2_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_CashDiscountEventInform4_ptr ICsSendInterfaceSendMsg_CashDiscountEventInform4_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_CashDiscountEventInform4_clbk ICsSendInterfaceSendMsg_CashDiscountEventInform4_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_CashEventInform6_ptr ICsSendInterfaceSendMsg_CashEventInform6_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_CashEventInform6_clbk ICsSendInterfaceSendMsg_CashEventInform6_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_ConditionalEventInform8_ptr ICsSendInterfaceSendMsg_ConditionalEventInform8_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_ConditionalEventInform8_clbk ICsSendInterfaceSendMsg_ConditionalEventInform8_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_Error10_ptr ICsSendInterfaceSendMsg_Error10_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_Error10_clbk ICsSendInterfaceSendMsg_Error10_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_GoodsList12_ptr ICsSendInterfaceSendMsg_GoodsList12_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_GoodsList12_clbk ICsSendInterfaceSendMsg_GoodsList12_user(nullptr);
+        static info::ICsSendInterfaceSendMsg_LimitedsaleEventInform14_ptr ICsSendInterfaceSendMsg_LimitedsaleEventInform14_next(nullptr);
+        static info::ICsSendInterfaceSendMsg_LimitedsaleEventInform14_clbk ICsSendInterfaceSendMsg_LimitedsaleEventInform14_user(nullptr);
         
-        void ICsSendInterfaceSendMsg_BuyCashItem2_wrapper(uint16_t wSock, struct _param_cash_update* psheet, struct _param_cash_update* sheetplus)
+        static void ICsSendInterfaceSendMsg_BuyCashItem2_wrapper(uint16_t wSock, struct _param_cash_update* psheet, struct _param_cash_update* sheetplus)
         {
            ICsSendInterfaceSendMsg_BuyCashItem2_user(wSock, psheet, sheetplus, ICsSendInterfaceSendMsg_BuyCashItem2_next);
         };
-        void ICsSendInterfaceSendMsg_CashDiscountEventInform4_wrapper(uint16_t wSock, char byEventType, struct _cash_discount_ini_* pIni)
+        static void ICsSendInterfaceSendMsg_CashDiscountEventInform4_wrapper(uint16_t wSock, char byEventType, struct _cash_discount_ini_* pIni)
         {
            ICsSendInterfaceSendMsg_CashDiscountEventInform4_user(wSock, byEventType, pIni, ICsSendInterfaceSendMsg_CashDiscountEventInform4_next);
         };
-        void ICsSendInterfaceSendMsg_CashEventInform6_wrapper(uint16_t wSock, char byEventType, char byStatus, struct _cash_event_ini* pIni, struct _cash_lim_sale* pLim)
+        static void ICsSendInterfaceSendMsg_CashEventInform6_wrapper(uint16_t wSock, char byEventType, char byStatus, struct _cash_event_ini* pIni, struct _cash_lim_sale* pLim)
         {
            ICsSendInterfaceSendMsg_CashEventInform6_user(wSock, byEventType, byStatus, pIni, pLim, ICsSendInterfaceSendMsg_CashEventInform6_next);
         };
-        void ICsSendInterfaceSendMsg_ConditionalEventInform8_wrapper(uint16_t wSock, char byEventType, uint16_t wCsDiscount, char byStatus, char* pEMsg)
+        static void ICsSendInterfaceSendMsg_ConditionalEventInform8_wrapper(uint16_t wSock, char byEventType, uint16_t wCsDiscount, char byStatus, char* pEMsg)
         {
            ICsSendInterfaceSendMsg_ConditionalEventInform8_user(wSock, byEventType, wCsDiscount, byStatus, pEMsg, ICsSendInterfaceSendMsg_ConditionalEventInform8_next);
         };
-        void ICsSendInterfaceSendMsg_Error10_wrapper(uint16_t wSock, int eCode)
+        static void ICsSendInterfaceSendMsg_Error10_wrapper(uint16_t wSock, int eCode)
         {
            ICsSendInterfaceSendMsg_Error10_user(wSock, eCode, ICsSendInterfaceSendMsg_Error10_next);
         };
-        void ICsSendInterfaceSendMsg_GoodsList12_wrapper(uint16_t wSock, struct _param_cash_select* psheet)
+        static void ICsSendInterfaceSendMsg_GoodsList12_wrapper(uint16_t wSock, struct _param_cash_select* psheet)
         {
            ICsSendInterfaceSendMsg_GoodsList12_user(wSock, psheet, ICsSendInterfaceSendMsg_GoodsList12_next);
         };
-        void ICsSendInterfaceSendMsg_LimitedsaleEventInform14_wrapper(uint16_t wSock, char byTableCode, unsigned int dwIndex, uint16_t wNum)
+        static void ICsSendInterfaceSendMsg_LimitedsaleEventInform14_wrapper(uint16_t wSock, char byTableCode, unsigned int dwIndex, uint16_t wNum)
         {
            ICsSendInterfaceSendMsg_LimitedsaleEventInform14_user(wSock, byTableCode, dwIndex, wNum, ICsSendInterfaceSendMsg_LimitedsaleEventInform14_next);
         };
         
-        hook_record ICsSendInterface_functions[] = {
+        static hook_record ICsSendInterface_functions[] = {
         {   (LPVOID)0x14030c760L,
             (LPVOID *)&ICsSendInterfaceSendMsg_BuyCashItem2_user,
             (LPVOID *)&ICsSendInterfaceSendMsg_BuyCashItem2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

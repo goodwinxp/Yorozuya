@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_ptr _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_next(nullptr);
-        info::_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_clbk _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_user(nullptr);
+        static info::_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_ptr _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_next(nullptr);
+        static info::_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_clbk _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_user(nullptr);
         
-        void _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_wrapper(struct _equip_up_item_lv_limit_zocl* _this)
+        static void _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_wrapper(struct _equip_up_item_lv_limit_zocl* _this)
         {
            _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_user(_this, _equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_next);
         };
         
-        hook_record _equip_up_item_lv_limit_zocl_functions[] = {
+        static hook_record _equip_up_item_lv_limit_zocl_functions[] = {
         {   (LPVOID)0x1400f06f0L,
             (LPVOID *)&_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_user,
             (LPVOID *)&_equip_up_item_lv_limit_zoclctor__equip_up_item_lv_limit_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

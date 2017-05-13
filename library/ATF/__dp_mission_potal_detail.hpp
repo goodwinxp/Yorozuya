@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__dp_mission_potalctor___dp_mission_potal2_ptr __dp_mission_potalctor___dp_mission_potal2_next(nullptr);
-        info::__dp_mission_potalctor___dp_mission_potal2_clbk __dp_mission_potalctor___dp_mission_potal2_user(nullptr);
-        info::__dp_mission_potalfind4_ptr __dp_mission_potalfind4_next(nullptr);
-        info::__dp_mission_potalfind4_clbk __dp_mission_potalfind4_user(nullptr);
-        info::__dp_mission_potalset6_ptr __dp_mission_potalset6_next(nullptr);
-        info::__dp_mission_potalset6_clbk __dp_mission_potalset6_user(nullptr);
-        info::__dp_mission_potaldtor___dp_mission_potal8_ptr __dp_mission_potaldtor___dp_mission_potal8_next(nullptr);
-        info::__dp_mission_potaldtor___dp_mission_potal8_clbk __dp_mission_potaldtor___dp_mission_potal8_user(nullptr);
+        static info::__dp_mission_potalctor___dp_mission_potal2_ptr __dp_mission_potalctor___dp_mission_potal2_next(nullptr);
+        static info::__dp_mission_potalctor___dp_mission_potal2_clbk __dp_mission_potalctor___dp_mission_potal2_user(nullptr);
+        static info::__dp_mission_potalfind4_ptr __dp_mission_potalfind4_next(nullptr);
+        static info::__dp_mission_potalfind4_clbk __dp_mission_potalfind4_user(nullptr);
+        static info::__dp_mission_potalset6_ptr __dp_mission_potalset6_next(nullptr);
+        static info::__dp_mission_potalset6_clbk __dp_mission_potalset6_user(nullptr);
+        static info::__dp_mission_potaldtor___dp_mission_potal8_ptr __dp_mission_potaldtor___dp_mission_potal8_next(nullptr);
+        static info::__dp_mission_potaldtor___dp_mission_potal8_clbk __dp_mission_potaldtor___dp_mission_potal8_user(nullptr);
         
-        void __dp_mission_potalctor___dp_mission_potal2_wrapper(struct __dp_mission_potal* _this)
+        static void __dp_mission_potalctor___dp_mission_potal2_wrapper(struct __dp_mission_potal* _this)
         {
            __dp_mission_potalctor___dp_mission_potal2_user(_this, __dp_mission_potalctor___dp_mission_potal2_next);
         };
-        bool __dp_mission_potalfind4_wrapper(struct __dp_mission_potal* _this, char* pcode)
+        static bool __dp_mission_potalfind4_wrapper(struct __dp_mission_potal* _this, char* pcode)
         {
            return __dp_mission_potalfind4_user(_this, pcode, __dp_mission_potalfind4_next);
         };
-        void __dp_mission_potalset6_wrapper(struct __dp_mission_potal* _this, char* szCode)
+        static void __dp_mission_potalset6_wrapper(struct __dp_mission_potal* _this, char* szCode)
         {
            __dp_mission_potalset6_user(_this, szCode, __dp_mission_potalset6_next);
         };
-        void __dp_mission_potaldtor___dp_mission_potal8_wrapper(struct __dp_mission_potal* _this)
+        static void __dp_mission_potaldtor___dp_mission_potal8_wrapper(struct __dp_mission_potal* _this)
         {
            __dp_mission_potaldtor___dp_mission_potal8_user(_this, __dp_mission_potaldtor___dp_mission_potal8_next);
         };
         
-        hook_record __dp_mission_potal_functions[] = {
+        static hook_record __dp_mission_potal_functions[] = {
         {   (LPVOID)0x140272d20L,
             (LPVOID *)&__dp_mission_potalctor___dp_mission_potal2_user,
             (LPVOID *)&__dp_mission_potalctor___dp_mission_potal2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

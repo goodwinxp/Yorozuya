@@ -10,39 +10,39 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan1_ptr ATL__CFileTimeSpanctor_CFileTimeSpan1_next(nullptr);
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan1_clbk ATL__CFileTimeSpanctor_CFileTimeSpan1_user(nullptr);
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan2_ptr ATL__CFileTimeSpanctor_CFileTimeSpan2_next(nullptr);
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan2_clbk ATL__CFileTimeSpanctor_CFileTimeSpan2_user(nullptr);
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan3_ptr ATL__CFileTimeSpanctor_CFileTimeSpan3_next(nullptr);
-            info::ATL__CFileTimeSpanctor_CFileTimeSpan3_clbk ATL__CFileTimeSpanctor_CFileTimeSpan3_user(nullptr);
-            info::ATL__CFileTimeSpanGetTimeSpan4_ptr ATL__CFileTimeSpanGetTimeSpan4_next(nullptr);
-            info::ATL__CFileTimeSpanGetTimeSpan4_clbk ATL__CFileTimeSpanGetTimeSpan4_user(nullptr);
-            info::ATL__CFileTimeSpanSetTimeSpan5_ptr ATL__CFileTimeSpanSetTimeSpan5_next(nullptr);
-            info::ATL__CFileTimeSpanSetTimeSpan5_clbk ATL__CFileTimeSpanSetTimeSpan5_user(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan1_ptr ATL__CFileTimeSpanctor_CFileTimeSpan1_next(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan1_clbk ATL__CFileTimeSpanctor_CFileTimeSpan1_user(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan2_ptr ATL__CFileTimeSpanctor_CFileTimeSpan2_next(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan2_clbk ATL__CFileTimeSpanctor_CFileTimeSpan2_user(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan3_ptr ATL__CFileTimeSpanctor_CFileTimeSpan3_next(nullptr);
+            static info::ATL__CFileTimeSpanctor_CFileTimeSpan3_clbk ATL__CFileTimeSpanctor_CFileTimeSpan3_user(nullptr);
+            static info::ATL__CFileTimeSpanGetTimeSpan4_ptr ATL__CFileTimeSpanGetTimeSpan4_next(nullptr);
+            static info::ATL__CFileTimeSpanGetTimeSpan4_clbk ATL__CFileTimeSpanGetTimeSpan4_user(nullptr);
+            static info::ATL__CFileTimeSpanSetTimeSpan5_ptr ATL__CFileTimeSpanSetTimeSpan5_next(nullptr);
+            static info::ATL__CFileTimeSpanSetTimeSpan5_clbk ATL__CFileTimeSpanSetTimeSpan5_user(nullptr);
             
-            void ATL__CFileTimeSpanctor_CFileTimeSpan1_wrapper(struct CFileTimeSpan* _this, struct CFileTimeSpan* span)
+            static void ATL__CFileTimeSpanctor_CFileTimeSpan1_wrapper(struct CFileTimeSpan* _this, struct CFileTimeSpan* span)
             {
                ATL__CFileTimeSpanctor_CFileTimeSpan1_user(_this, span, ATL__CFileTimeSpanctor_CFileTimeSpan1_next);
             };
-            void ATL__CFileTimeSpanctor_CFileTimeSpan2_wrapper(struct CFileTimeSpan* _this, int64_t nSpan)
+            static void ATL__CFileTimeSpanctor_CFileTimeSpan2_wrapper(struct CFileTimeSpan* _this, int64_t nSpan)
             {
                ATL__CFileTimeSpanctor_CFileTimeSpan2_user(_this, nSpan, ATL__CFileTimeSpanctor_CFileTimeSpan2_next);
             };
-            void ATL__CFileTimeSpanctor_CFileTimeSpan3_wrapper(struct CFileTimeSpan* _this)
+            static void ATL__CFileTimeSpanctor_CFileTimeSpan3_wrapper(struct CFileTimeSpan* _this)
             {
                ATL__CFileTimeSpanctor_CFileTimeSpan3_user(_this, ATL__CFileTimeSpanctor_CFileTimeSpan3_next);
             };
-            int64_t ATL__CFileTimeSpanGetTimeSpan4_wrapper(struct CFileTimeSpan* _this)
+            static int64_t ATL__CFileTimeSpanGetTimeSpan4_wrapper(struct CFileTimeSpan* _this)
             {
                return ATL__CFileTimeSpanGetTimeSpan4_user(_this, ATL__CFileTimeSpanGetTimeSpan4_next);
             };
-            void ATL__CFileTimeSpanSetTimeSpan5_wrapper(struct CFileTimeSpan* _this, int64_t nSpan)
+            static void ATL__CFileTimeSpanSetTimeSpan5_wrapper(struct CFileTimeSpan* _this, int64_t nSpan)
             {
                ATL__CFileTimeSpanSetTimeSpan5_user(_this, nSpan, ATL__CFileTimeSpanSetTimeSpan5_next);
             };
             
-            hook_record CFileTimeSpan_functions[] = {
+            static hook_record CFileTimeSpan_functions[] = {
             {   (LPVOID)0x1406735a0L,
                 (LPVOID *)&ATL__CFileTimeSpanctor_CFileTimeSpan1_user,
                 (LPVOID *)&ATL__CFileTimeSpanctor_CFileTimeSpan1_next,
@@ -71,6 +71,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

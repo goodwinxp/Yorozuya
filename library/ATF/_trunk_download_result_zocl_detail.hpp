@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_trunk_download_result_zoclctor__trunk_download_result_zocl2_ptr _trunk_download_result_zoclctor__trunk_download_result_zocl2_next(nullptr);
-        info::_trunk_download_result_zoclctor__trunk_download_result_zocl2_clbk _trunk_download_result_zoclctor__trunk_download_result_zocl2_user(nullptr);
-        info::_trunk_download_result_zoclsize4_ptr _trunk_download_result_zoclsize4_next(nullptr);
-        info::_trunk_download_result_zoclsize4_clbk _trunk_download_result_zoclsize4_user(nullptr);
+        static info::_trunk_download_result_zoclctor__trunk_download_result_zocl2_ptr _trunk_download_result_zoclctor__trunk_download_result_zocl2_next(nullptr);
+        static info::_trunk_download_result_zoclctor__trunk_download_result_zocl2_clbk _trunk_download_result_zoclctor__trunk_download_result_zocl2_user(nullptr);
+        static info::_trunk_download_result_zoclsize4_ptr _trunk_download_result_zoclsize4_next(nullptr);
+        static info::_trunk_download_result_zoclsize4_clbk _trunk_download_result_zoclsize4_user(nullptr);
         
-        void _trunk_download_result_zoclctor__trunk_download_result_zocl2_wrapper(struct _trunk_download_result_zocl* _this)
+        static void _trunk_download_result_zoclctor__trunk_download_result_zocl2_wrapper(struct _trunk_download_result_zocl* _this)
         {
            _trunk_download_result_zoclctor__trunk_download_result_zocl2_user(_this, _trunk_download_result_zoclctor__trunk_download_result_zocl2_next);
         };
-        int _trunk_download_result_zoclsize4_wrapper(struct _trunk_download_result_zocl* _this)
+        static int _trunk_download_result_zoclsize4_wrapper(struct _trunk_download_result_zocl* _this)
         {
            return _trunk_download_result_zoclsize4_user(_this, _trunk_download_result_zoclsize4_next);
         };
         
-        hook_record _trunk_download_result_zocl_functions[] = {
+        static hook_record _trunk_download_result_zocl_functions[] = {
         {   (LPVOID)0x1400eff00L,
             (LPVOID *)&_trunk_download_result_zoclctor__trunk_download_result_zocl2_user,
             (LPVOID *)&_trunk_download_result_zoclctor__trunk_download_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

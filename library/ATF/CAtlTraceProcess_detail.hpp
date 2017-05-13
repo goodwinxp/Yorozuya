@@ -8,75 +8,75 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAtlTraceProcessBase1_ptr CAtlTraceProcessBase1_next(nullptr);
-        info::CAtlTraceProcessBase1_clbk CAtlTraceProcessBase1_user(nullptr);
-        info::CAtlTraceProcessctor_CAtlTraceProcess2_ptr CAtlTraceProcessctor_CAtlTraceProcess2_next(nullptr);
-        info::CAtlTraceProcessctor_CAtlTraceProcess2_clbk CAtlTraceProcessctor_CAtlTraceProcess2_user(nullptr);
-        info::CAtlTraceProcessCategoryCount3_ptr CAtlTraceProcessCategoryCount3_next(nullptr);
-        info::CAtlTraceProcessCategoryCount3_clbk CAtlTraceProcessCategoryCount3_user(nullptr);
-        info::CAtlTraceProcessDecRef4_ptr CAtlTraceProcessDecRef4_next(nullptr);
-        info::CAtlTraceProcessDecRef4_clbk CAtlTraceProcessDecRef4_user(nullptr);
-        info::CAtlTraceProcessGetNextCookie5_ptr CAtlTraceProcessGetNextCookie5_next(nullptr);
-        info::CAtlTraceProcessGetNextCookie5_clbk CAtlTraceProcessGetNextCookie5_user(nullptr);
-        info::CAtlTraceProcessId6_ptr CAtlTraceProcessId6_next(nullptr);
-        info::CAtlTraceProcessId6_clbk CAtlTraceProcessId6_user(nullptr);
-        info::CAtlTraceProcessIncCategoryCount7_ptr CAtlTraceProcessIncCategoryCount7_next(nullptr);
-        info::CAtlTraceProcessIncCategoryCount7_clbk CAtlTraceProcessIncCategoryCount7_user(nullptr);
-        info::CAtlTraceProcessIncModuleCount8_ptr CAtlTraceProcessIncModuleCount8_next(nullptr);
-        info::CAtlTraceProcessIncModuleCount8_clbk CAtlTraceProcessIncModuleCount8_user(nullptr);
-        info::CAtlTraceProcessIncRef9_ptr CAtlTraceProcessIncRef9_next(nullptr);
-        info::CAtlTraceProcessIncRef9_clbk CAtlTraceProcessIncRef9_user(nullptr);
-        info::CAtlTraceProcessMaxSize10_ptr CAtlTraceProcessMaxSize10_next(nullptr);
-        info::CAtlTraceProcessMaxSize10_clbk CAtlTraceProcessMaxSize10_user(nullptr);
-        info::CAtlTraceProcessModuleCount11_ptr CAtlTraceProcessModuleCount11_next(nullptr);
-        info::CAtlTraceProcessModuleCount11_clbk CAtlTraceProcessModuleCount11_user(nullptr);
+        static info::CAtlTraceProcessBase1_ptr CAtlTraceProcessBase1_next(nullptr);
+        static info::CAtlTraceProcessBase1_clbk CAtlTraceProcessBase1_user(nullptr);
+        static info::CAtlTraceProcessctor_CAtlTraceProcess2_ptr CAtlTraceProcessctor_CAtlTraceProcess2_next(nullptr);
+        static info::CAtlTraceProcessctor_CAtlTraceProcess2_clbk CAtlTraceProcessctor_CAtlTraceProcess2_user(nullptr);
+        static info::CAtlTraceProcessCategoryCount3_ptr CAtlTraceProcessCategoryCount3_next(nullptr);
+        static info::CAtlTraceProcessCategoryCount3_clbk CAtlTraceProcessCategoryCount3_user(nullptr);
+        static info::CAtlTraceProcessDecRef4_ptr CAtlTraceProcessDecRef4_next(nullptr);
+        static info::CAtlTraceProcessDecRef4_clbk CAtlTraceProcessDecRef4_user(nullptr);
+        static info::CAtlTraceProcessGetNextCookie5_ptr CAtlTraceProcessGetNextCookie5_next(nullptr);
+        static info::CAtlTraceProcessGetNextCookie5_clbk CAtlTraceProcessGetNextCookie5_user(nullptr);
+        static info::CAtlTraceProcessId6_ptr CAtlTraceProcessId6_next(nullptr);
+        static info::CAtlTraceProcessId6_clbk CAtlTraceProcessId6_user(nullptr);
+        static info::CAtlTraceProcessIncCategoryCount7_ptr CAtlTraceProcessIncCategoryCount7_next(nullptr);
+        static info::CAtlTraceProcessIncCategoryCount7_clbk CAtlTraceProcessIncCategoryCount7_user(nullptr);
+        static info::CAtlTraceProcessIncModuleCount8_ptr CAtlTraceProcessIncModuleCount8_next(nullptr);
+        static info::CAtlTraceProcessIncModuleCount8_clbk CAtlTraceProcessIncModuleCount8_user(nullptr);
+        static info::CAtlTraceProcessIncRef9_ptr CAtlTraceProcessIncRef9_next(nullptr);
+        static info::CAtlTraceProcessIncRef9_clbk CAtlTraceProcessIncRef9_user(nullptr);
+        static info::CAtlTraceProcessMaxSize10_ptr CAtlTraceProcessMaxSize10_next(nullptr);
+        static info::CAtlTraceProcessMaxSize10_clbk CAtlTraceProcessMaxSize10_user(nullptr);
+        static info::CAtlTraceProcessModuleCount11_ptr CAtlTraceProcessModuleCount11_next(nullptr);
+        static info::CAtlTraceProcessModuleCount11_clbk CAtlTraceProcessModuleCount11_user(nullptr);
         
-        void* CAtlTraceProcessBase1_wrapper(struct CAtlTraceProcess* _this)
+        static void* CAtlTraceProcessBase1_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessBase1_user(_this, CAtlTraceProcessBase1_next);
         };
-        void CAtlTraceProcessctor_CAtlTraceProcess2_wrapper(struct CAtlTraceProcess* _this, uint64_t dwMaxSize)
+        static void CAtlTraceProcessctor_CAtlTraceProcess2_wrapper(struct CAtlTraceProcess* _this, uint64_t dwMaxSize)
         {
            CAtlTraceProcessctor_CAtlTraceProcess2_user(_this, dwMaxSize, CAtlTraceProcessctor_CAtlTraceProcess2_next);
         };
-        int CAtlTraceProcessCategoryCount3_wrapper(struct CAtlTraceProcess* _this)
+        static int CAtlTraceProcessCategoryCount3_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessCategoryCount3_user(_this, CAtlTraceProcessCategoryCount3_next);
         };
-        unsigned int CAtlTraceProcessDecRef4_wrapper(struct CAtlTraceProcess* _this)
+        static unsigned int CAtlTraceProcessDecRef4_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessDecRef4_user(_this, CAtlTraceProcessDecRef4_next);
         };
-        int CAtlTraceProcessGetNextCookie5_wrapper(struct CAtlTraceProcess* _this)
+        static int CAtlTraceProcessGetNextCookie5_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessGetNextCookie5_user(_this, CAtlTraceProcessGetNextCookie5_next);
         };
-        unsigned int CAtlTraceProcessId6_wrapper(struct CAtlTraceProcess* _this)
+        static unsigned int CAtlTraceProcessId6_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessId6_user(_this, CAtlTraceProcessId6_next);
         };
-        void CAtlTraceProcessIncCategoryCount7_wrapper(struct CAtlTraceProcess* _this, unsigned int nCategories)
+        static void CAtlTraceProcessIncCategoryCount7_wrapper(struct CAtlTraceProcess* _this, unsigned int nCategories)
         {
            CAtlTraceProcessIncCategoryCount7_user(_this, nCategories, CAtlTraceProcessIncCategoryCount7_next);
         };
-        void CAtlTraceProcessIncModuleCount8_wrapper(struct CAtlTraceProcess* _this, unsigned int nModules)
+        static void CAtlTraceProcessIncModuleCount8_wrapper(struct CAtlTraceProcess* _this, unsigned int nModules)
         {
            CAtlTraceProcessIncModuleCount8_user(_this, nModules, CAtlTraceProcessIncModuleCount8_next);
         };
-        unsigned int CAtlTraceProcessIncRef9_wrapper(struct CAtlTraceProcess* _this)
+        static unsigned int CAtlTraceProcessIncRef9_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessIncRef9_user(_this, CAtlTraceProcessIncRef9_next);
         };
-        uint64_t CAtlTraceProcessMaxSize10_wrapper(struct CAtlTraceProcess* _this)
+        static uint64_t CAtlTraceProcessMaxSize10_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessMaxSize10_user(_this, CAtlTraceProcessMaxSize10_next);
         };
-        int CAtlTraceProcessModuleCount11_wrapper(struct CAtlTraceProcess* _this)
+        static int CAtlTraceProcessModuleCount11_wrapper(struct CAtlTraceProcess* _this)
         {
            return CAtlTraceProcessModuleCount11_user(_this, CAtlTraceProcessModuleCount11_next);
         };
         
-        hook_record CAtlTraceProcess_functions[] = {
+        static hook_record CAtlTraceProcess_functions[] = {
         {   (LPVOID)0x140675400L,
             (LPVOID *)&CAtlTraceProcessBase1_user,
             (LPVOID *)&CAtlTraceProcessBase1_next,
@@ -135,5 +135,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

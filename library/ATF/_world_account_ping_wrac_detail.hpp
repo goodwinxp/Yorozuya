@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_world_account_ping_wracsize2_ptr _world_account_ping_wracsize2_next(nullptr);
-        info::_world_account_ping_wracsize2_clbk _world_account_ping_wracsize2_user(nullptr);
+        static info::_world_account_ping_wracsize2_ptr _world_account_ping_wracsize2_next(nullptr);
+        static info::_world_account_ping_wracsize2_clbk _world_account_ping_wracsize2_user(nullptr);
         
-        int _world_account_ping_wracsize2_wrapper(struct _world_account_ping_wrac* _this)
+        static int _world_account_ping_wracsize2_wrapper(struct _world_account_ping_wrac* _this)
         {
            return _world_account_ping_wracsize2_user(_this, _world_account_ping_wracsize2_next);
         };
         
-        hook_record _world_account_ping_wrac_functions[] = {
+        static hook_record _world_account_ping_wrac_functions[] = {
         {   (LPVOID)0x1402080f0L,
             (LPVOID *)&_world_account_ping_wracsize2_user,
             (LPVOID *)&_world_account_ping_wracsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

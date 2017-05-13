@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNetFrameRatector_CNetFrameRate2_ptr CNetFrameRatector_CNetFrameRate2_next(nullptr);
-        info::CNetFrameRatector_CNetFrameRate2_clbk CNetFrameRatector_CNetFrameRate2_user(nullptr);
-        info::CNetFrameRateCalcFrameRate4_ptr CNetFrameRateCalcFrameRate4_next(nullptr);
-        info::CNetFrameRateCalcFrameRate4_clbk CNetFrameRateCalcFrameRate4_user(nullptr);
+        static info::CNetFrameRatector_CNetFrameRate2_ptr CNetFrameRatector_CNetFrameRate2_next(nullptr);
+        static info::CNetFrameRatector_CNetFrameRate2_clbk CNetFrameRatector_CNetFrameRate2_user(nullptr);
+        static info::CNetFrameRateCalcFrameRate4_ptr CNetFrameRateCalcFrameRate4_next(nullptr);
+        static info::CNetFrameRateCalcFrameRate4_clbk CNetFrameRateCalcFrameRate4_user(nullptr);
         
-        void CNetFrameRatector_CNetFrameRate2_wrapper(struct CNetFrameRate* _this)
+        static void CNetFrameRatector_CNetFrameRate2_wrapper(struct CNetFrameRate* _this)
         {
            CNetFrameRatector_CNetFrameRate2_user(_this, CNetFrameRatector_CNetFrameRate2_next);
         };
-        void CNetFrameRateCalcFrameRate4_wrapper(struct CNetFrameRate* _this)
+        static void CNetFrameRateCalcFrameRate4_wrapper(struct CNetFrameRate* _this)
         {
            CNetFrameRateCalcFrameRate4_user(_this, CNetFrameRateCalcFrameRate4_next);
         };
         
-        hook_record CNetFrameRate_functions[] = {
+        static hook_record CNetFrameRate_functions[] = {
         {   (LPVOID)0x14047c990L,
             (LPVOID *)&CNetFrameRatector_CNetFrameRate2_user,
             (LPVOID *)&CNetFrameRatector_CNetFrameRate2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

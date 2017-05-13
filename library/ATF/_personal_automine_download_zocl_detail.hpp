@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_personal_automine_download_zoclsize2_ptr _personal_automine_download_zoclsize2_next(nullptr);
-        info::_personal_automine_download_zoclsize2_clbk _personal_automine_download_zoclsize2_user(nullptr);
+        static info::_personal_automine_download_zoclsize2_ptr _personal_automine_download_zoclsize2_next(nullptr);
+        static info::_personal_automine_download_zoclsize2_clbk _personal_automine_download_zoclsize2_user(nullptr);
         
-        int _personal_automine_download_zoclsize2_wrapper(struct _personal_automine_download_zocl* _this)
+        static int _personal_automine_download_zoclsize2_wrapper(struct _personal_automine_download_zocl* _this)
         {
            return _personal_automine_download_zoclsize2_user(_this, _personal_automine_download_zoclsize2_next);
         };
         
-        hook_record _personal_automine_download_zocl_functions[] = {
+        static hook_record _personal_automine_download_zocl_functions[] = {
         {   (LPVOID)0x1400ef3c0L,
             (LPVOID *)&_personal_automine_download_zoclsize2_user,
             (LPVOID *)&_personal_automine_download_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

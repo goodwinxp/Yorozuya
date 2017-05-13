@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CGuildRoomSystemctor_CGuildRoomSystem2_ptr CGuildRoomSystemctor_CGuildRoomSystem2_next(nullptr);
-        info::CGuildRoomSystemctor_CGuildRoomSystem2_clbk CGuildRoomSystemctor_CGuildRoomSystem2_user(nullptr);
-        info::CGuildRoomSystemGetInstance4_ptr CGuildRoomSystemGetInstance4_next(nullptr);
-        info::CGuildRoomSystemGetInstance4_clbk CGuildRoomSystemGetInstance4_user(nullptr);
-        info::CGuildRoomSystemGetMapData6_ptr CGuildRoomSystemGetMapData6_next(nullptr);
-        info::CGuildRoomSystemGetMapData6_clbk CGuildRoomSystemGetMapData6_user(nullptr);
-        info::CGuildRoomSystemGetMapPos8_ptr CGuildRoomSystemGetMapPos8_next(nullptr);
-        info::CGuildRoomSystemGetMapPos8_clbk CGuildRoomSystemGetMapPos8_user(nullptr);
-        info::CGuildRoomSystemGetRestTime10_ptr CGuildRoomSystemGetRestTime10_next(nullptr);
-        info::CGuildRoomSystemGetRestTime10_clbk CGuildRoomSystemGetRestTime10_user(nullptr);
-        info::CGuildRoomSystemGetRoomCountByType12_ptr CGuildRoomSystemGetRoomCountByType12_next(nullptr);
-        info::CGuildRoomSystemGetRoomCountByType12_clbk CGuildRoomSystemGetRoomCountByType12_user(nullptr);
-        info::CGuildRoomSystemGetRoomType14_ptr CGuildRoomSystemGetRoomType14_next(nullptr);
-        info::CGuildRoomSystemGetRoomType14_clbk CGuildRoomSystemGetRoomType14_user(nullptr);
-        info::CGuildRoomSystemInit16_ptr CGuildRoomSystemInit16_next(nullptr);
-        info::CGuildRoomSystemInit16_clbk CGuildRoomSystemInit16_user(nullptr);
-        info::CGuildRoomSystemIsGuildRoomMemberIn18_ptr CGuildRoomSystemIsGuildRoomMemberIn18_next(nullptr);
-        info::CGuildRoomSystemIsGuildRoomMemberIn18_clbk CGuildRoomSystemIsGuildRoomMemberIn18_user(nullptr);
-        info::CGuildRoomSystemIsRoomRented20_ptr CGuildRoomSystemIsRoomRented20_next(nullptr);
-        info::CGuildRoomSystemIsRoomRented20_clbk CGuildRoomSystemIsRoomRented20_user(nullptr);
-        info::CGuildRoomSystemLoad_db22_ptr CGuildRoomSystemLoad_db22_next(nullptr);
-        info::CGuildRoomSystemLoad_db22_clbk CGuildRoomSystemLoad_db22_user(nullptr);
-        info::CGuildRoomSystemRentRoom24_ptr CGuildRoomSystemRentRoom24_next(nullptr);
-        info::CGuildRoomSystemRentRoom24_clbk CGuildRoomSystemRentRoom24_user(nullptr);
-        info::CGuildRoomSystemRentRoomTimer26_ptr CGuildRoomSystemRentRoomTimer26_next(nullptr);
-        info::CGuildRoomSystemRentRoomTimer26_clbk CGuildRoomSystemRentRoomTimer26_user(nullptr);
-        info::CGuildRoomSystemRoomIn28_ptr CGuildRoomSystemRoomIn28_next(nullptr);
-        info::CGuildRoomSystemRoomIn28_clbk CGuildRoomSystemRoomIn28_user(nullptr);
-        info::CGuildRoomSystemRoomOut30_ptr CGuildRoomSystemRoomOut30_next(nullptr);
-        info::CGuildRoomSystemRoomOut30_clbk CGuildRoomSystemRoomOut30_user(nullptr);
-        info::CGuildRoomSystemSetPlayerOut32_ptr CGuildRoomSystemSetPlayerOut32_next(nullptr);
-        info::CGuildRoomSystemSetPlayerOut32_clbk CGuildRoomSystemSetPlayerOut32_user(nullptr);
-        info::CGuildRoomSystemdtor_CGuildRoomSystem34_ptr CGuildRoomSystemdtor_CGuildRoomSystem34_next(nullptr);
-        info::CGuildRoomSystemdtor_CGuildRoomSystem34_clbk CGuildRoomSystemdtor_CGuildRoomSystem34_user(nullptr);
+        static info::CGuildRoomSystemctor_CGuildRoomSystem2_ptr CGuildRoomSystemctor_CGuildRoomSystem2_next(nullptr);
+        static info::CGuildRoomSystemctor_CGuildRoomSystem2_clbk CGuildRoomSystemctor_CGuildRoomSystem2_user(nullptr);
+        static info::CGuildRoomSystemGetInstance4_ptr CGuildRoomSystemGetInstance4_next(nullptr);
+        static info::CGuildRoomSystemGetInstance4_clbk CGuildRoomSystemGetInstance4_user(nullptr);
+        static info::CGuildRoomSystemGetMapData6_ptr CGuildRoomSystemGetMapData6_next(nullptr);
+        static info::CGuildRoomSystemGetMapData6_clbk CGuildRoomSystemGetMapData6_user(nullptr);
+        static info::CGuildRoomSystemGetMapPos8_ptr CGuildRoomSystemGetMapPos8_next(nullptr);
+        static info::CGuildRoomSystemGetMapPos8_clbk CGuildRoomSystemGetMapPos8_user(nullptr);
+        static info::CGuildRoomSystemGetRestTime10_ptr CGuildRoomSystemGetRestTime10_next(nullptr);
+        static info::CGuildRoomSystemGetRestTime10_clbk CGuildRoomSystemGetRestTime10_user(nullptr);
+        static info::CGuildRoomSystemGetRoomCountByType12_ptr CGuildRoomSystemGetRoomCountByType12_next(nullptr);
+        static info::CGuildRoomSystemGetRoomCountByType12_clbk CGuildRoomSystemGetRoomCountByType12_user(nullptr);
+        static info::CGuildRoomSystemGetRoomType14_ptr CGuildRoomSystemGetRoomType14_next(nullptr);
+        static info::CGuildRoomSystemGetRoomType14_clbk CGuildRoomSystemGetRoomType14_user(nullptr);
+        static info::CGuildRoomSystemInit16_ptr CGuildRoomSystemInit16_next(nullptr);
+        static info::CGuildRoomSystemInit16_clbk CGuildRoomSystemInit16_user(nullptr);
+        static info::CGuildRoomSystemIsGuildRoomMemberIn18_ptr CGuildRoomSystemIsGuildRoomMemberIn18_next(nullptr);
+        static info::CGuildRoomSystemIsGuildRoomMemberIn18_clbk CGuildRoomSystemIsGuildRoomMemberIn18_user(nullptr);
+        static info::CGuildRoomSystemIsRoomRented20_ptr CGuildRoomSystemIsRoomRented20_next(nullptr);
+        static info::CGuildRoomSystemIsRoomRented20_clbk CGuildRoomSystemIsRoomRented20_user(nullptr);
+        static info::CGuildRoomSystemLoad_db22_ptr CGuildRoomSystemLoad_db22_next(nullptr);
+        static info::CGuildRoomSystemLoad_db22_clbk CGuildRoomSystemLoad_db22_user(nullptr);
+        static info::CGuildRoomSystemRentRoom24_ptr CGuildRoomSystemRentRoom24_next(nullptr);
+        static info::CGuildRoomSystemRentRoom24_clbk CGuildRoomSystemRentRoom24_user(nullptr);
+        static info::CGuildRoomSystemRentRoomTimer26_ptr CGuildRoomSystemRentRoomTimer26_next(nullptr);
+        static info::CGuildRoomSystemRentRoomTimer26_clbk CGuildRoomSystemRentRoomTimer26_user(nullptr);
+        static info::CGuildRoomSystemRoomIn28_ptr CGuildRoomSystemRoomIn28_next(nullptr);
+        static info::CGuildRoomSystemRoomIn28_clbk CGuildRoomSystemRoomIn28_user(nullptr);
+        static info::CGuildRoomSystemRoomOut30_ptr CGuildRoomSystemRoomOut30_next(nullptr);
+        static info::CGuildRoomSystemRoomOut30_clbk CGuildRoomSystemRoomOut30_user(nullptr);
+        static info::CGuildRoomSystemSetPlayerOut32_ptr CGuildRoomSystemSetPlayerOut32_next(nullptr);
+        static info::CGuildRoomSystemSetPlayerOut32_clbk CGuildRoomSystemSetPlayerOut32_user(nullptr);
+        static info::CGuildRoomSystemdtor_CGuildRoomSystem34_ptr CGuildRoomSystemdtor_CGuildRoomSystem34_next(nullptr);
+        static info::CGuildRoomSystemdtor_CGuildRoomSystem34_clbk CGuildRoomSystemdtor_CGuildRoomSystem34_user(nullptr);
         
-        void CGuildRoomSystemctor_CGuildRoomSystem2_wrapper(struct CGuildRoomSystem* _this)
+        static void CGuildRoomSystemctor_CGuildRoomSystem2_wrapper(struct CGuildRoomSystem* _this)
         {
            CGuildRoomSystemctor_CGuildRoomSystem2_user(_this, CGuildRoomSystemctor_CGuildRoomSystem2_next);
         };
-        struct CGuildRoomSystem* CGuildRoomSystemGetInstance4_wrapper()
+        static struct CGuildRoomSystem* CGuildRoomSystemGetInstance4_wrapper()
         {
            return CGuildRoomSystemGetInstance4_user(CGuildRoomSystemGetInstance4_next);
         };
-        struct CMapData* CGuildRoomSystemGetMapData6_wrapper(struct CGuildRoomSystem* _this, char byRace, char byMapType)
+        static struct CMapData* CGuildRoomSystemGetMapData6_wrapper(struct CGuildRoomSystem* _this, char byRace, char byMapType)
         {
            return CGuildRoomSystemGetMapData6_user(_this, byRace, byMapType, CGuildRoomSystemGetMapData6_next);
         };
-        bool CGuildRoomSystemGetMapPos8_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, float* pPos, struct CMapData* pMap, uint16_t* wMapLayer, char* byRoomType)
+        static bool CGuildRoomSystemGetMapPos8_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, float* pPos, struct CMapData* pMap, uint16_t* wMapLayer, char* byRoomType)
         {
            return CGuildRoomSystemGetMapPos8_user(_this, dwGuildSerial, pPos, pMap, wMapLayer, byRoomType, CGuildRoomSystemGetMapPos8_next);
         };
-        bool CGuildRoomSystemGetRestTime10_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int* tt)
+        static bool CGuildRoomSystemGetRestTime10_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int* tt)
         {
            return CGuildRoomSystemGetRestTime10_user(_this, dwGuildSerial, tt, CGuildRoomSystemGetRestTime10_next);
         };
-        int CGuildRoomSystemGetRoomCountByType12_wrapper(struct CGuildRoomSystem* _this, char byRace, char byRoomType)
+        static int CGuildRoomSystemGetRoomCountByType12_wrapper(struct CGuildRoomSystem* _this, char byRace, char byRoomType)
         {
            return CGuildRoomSystemGetRoomCountByType12_user(_this, byRace, byRoomType, CGuildRoomSystemGetRoomCountByType12_next);
         };
-        char CGuildRoomSystemGetRoomType14_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial)
+        static char CGuildRoomSystemGetRoomType14_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial)
         {
            return CGuildRoomSystemGetRoomType14_user(_this, dwGuildSerial, CGuildRoomSystemGetRoomType14_next);
         };
-        bool CGuildRoomSystemInit16_wrapper(struct CGuildRoomSystem* _this)
+        static bool CGuildRoomSystemInit16_wrapper(struct CGuildRoomSystem* _this)
         {
            return CGuildRoomSystemInit16_user(_this, CGuildRoomSystemInit16_next);
         };
-        bool CGuildRoomSystemIsGuildRoomMemberIn18_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
+        static bool CGuildRoomSystemIsGuildRoomMemberIn18_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomSystemIsGuildRoomMemberIn18_user(_this, dwGuildSerial, n, dwCharSerial, CGuildRoomSystemIsGuildRoomMemberIn18_next);
         };
-        bool CGuildRoomSystemIsRoomRented20_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial)
+        static bool CGuildRoomSystemIsRoomRented20_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial)
         {
            return CGuildRoomSystemIsRoomRented20_user(_this, dwGuildSerial, CGuildRoomSystemIsRoomRented20_next);
         };
-        bool CGuildRoomSystemLoad_db22_wrapper(struct CGuildRoomSystem* _this)
+        static bool CGuildRoomSystemLoad_db22_wrapper(struct CGuildRoomSystem* _this)
         {
            return CGuildRoomSystemLoad_db22_user(_this, CGuildRoomSystemLoad_db22_next);
         };
-        char CGuildRoomSystemRentRoom24_wrapper(struct CGuildRoomSystem* _this, char byRace, char byRoomType, int iGuildInx, unsigned int dwGuildSerial, struct tagTIMESTAMP_STRUCT* ts, bool bRestore)
+        static char CGuildRoomSystemRentRoom24_wrapper(struct CGuildRoomSystem* _this, char byRace, char byRoomType, int iGuildInx, unsigned int dwGuildSerial, struct tagTIMESTAMP_STRUCT* ts, bool bRestore)
         {
            return CGuildRoomSystemRentRoom24_user(_this, byRace, byRoomType, iGuildInx, dwGuildSerial, ts, bRestore, CGuildRoomSystemRentRoom24_next);
         };
-        void CGuildRoomSystemRentRoomTimer26_wrapper(struct CGuildRoomSystem* _this)
+        static void CGuildRoomSystemRentRoomTimer26_wrapper(struct CGuildRoomSystem* _this)
         {
            CGuildRoomSystemRentRoomTimer26_user(_this, CGuildRoomSystemRentRoomTimer26_next);
         };
-        int CGuildRoomSystemRoomIn28_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
+        static int CGuildRoomSystemRoomIn28_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomSystemRoomIn28_user(_this, dwGuildSerial, n, dwCharSerial, CGuildRoomSystemRoomIn28_next);
         };
-        int CGuildRoomSystemRoomOut30_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
+        static int CGuildRoomSystemRoomOut30_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomSystemRoomOut30_user(_this, dwGuildSerial, n, dwCharSerial, CGuildRoomSystemRoomOut30_next);
         };
-        int CGuildRoomSystemSetPlayerOut32_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
+        static int CGuildRoomSystemSetPlayerOut32_wrapper(struct CGuildRoomSystem* _this, unsigned int dwGuildSerial, int n, unsigned int dwCharSerial)
         {
            return CGuildRoomSystemSetPlayerOut32_user(_this, dwGuildSerial, n, dwCharSerial, CGuildRoomSystemSetPlayerOut32_next);
         };
-        void CGuildRoomSystemdtor_CGuildRoomSystem34_wrapper(struct CGuildRoomSystem* _this)
+        static void CGuildRoomSystemdtor_CGuildRoomSystem34_wrapper(struct CGuildRoomSystem* _this)
         {
            CGuildRoomSystemdtor_CGuildRoomSystem34_user(_this, CGuildRoomSystemdtor_CGuildRoomSystem34_next);
         };
         
-        hook_record CGuildRoomSystem_functions[] = {
+        static hook_record CGuildRoomSystem_functions[] = {
         {   (LPVOID)0x1402e9610L,
             (LPVOID *)&CGuildRoomSystemctor_CGuildRoomSystem2_user,
             (LPVOID *)&CGuildRoomSystemctor_CGuildRoomSystem2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

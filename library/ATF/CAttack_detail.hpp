@@ -8,105 +8,105 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAttackAreaDamageProc2_ptr CAttackAreaDamageProc2_next(nullptr);
-        info::CAttackAreaDamageProc2_clbk CAttackAreaDamageProc2_user(nullptr);
-        info::CAttackAttackForce4_ptr CAttackAttackForce4_next(nullptr);
-        info::CAttackAttackForce4_clbk CAttackAttackForce4_user(nullptr);
-        info::CAttackAttackGen6_ptr CAttackAttackGen6_next(nullptr);
-        info::CAttackAttackGen6_clbk CAttackAttackGen6_user(nullptr);
-        info::CAttackctor_CAttack8_ptr CAttackctor_CAttack8_next(nullptr);
-        info::CAttackctor_CAttack8_clbk CAttackctor_CAttack8_user(nullptr);
-        info::CAttackCalcAvgDamage10_ptr CAttackCalcAvgDamage10_next(nullptr);
-        info::CAttackCalcAvgDamage10_clbk CAttackCalcAvgDamage10_user(nullptr);
-        info::CAttackCheckGuildBattleLimit12_ptr CAttackCheckGuildBattleLimit12_next(nullptr);
-        info::CAttackCheckGuildBattleLimit12_clbk CAttackCheckGuildBattleLimit12_user(nullptr);
-        info::CAttackFlashDamageProc14_ptr CAttackFlashDamageProc14_next(nullptr);
-        info::CAttackFlashDamageProc14_clbk CAttackFlashDamageProc14_user(nullptr);
-        info::CAttackGetAttackFC16_ptr CAttackGetAttackFC16_next(nullptr);
-        info::CAttackGetAttackFC16_clbk CAttackGetAttackFC16_user(nullptr);
-        info::CAttackGetMeleeSkillIndex18_ptr CAttackGetMeleeSkillIndex18_next(nullptr);
-        info::CAttackGetMeleeSkillIndex18_clbk CAttackGetMeleeSkillIndex18_user(nullptr);
-        info::CAttackIsCharInSector20_ptr CAttackIsCharInSector20_next(nullptr);
-        info::CAttackIsCharInSector20_clbk CAttackIsCharInSector20_user(nullptr);
-        info::CAttackMonsterCritical_Exception_Rate22_ptr CAttackMonsterCritical_Exception_Rate22_next(nullptr);
-        info::CAttackMonsterCritical_Exception_Rate22_clbk CAttackMonsterCritical_Exception_Rate22_user(nullptr);
-        info::CAttackSectorDamageProc24_ptr CAttackSectorDamageProc24_next(nullptr);
-        info::CAttackSectorDamageProc24_clbk CAttackSectorDamageProc24_user(nullptr);
-        info::CAttackSetActiveSucc26_ptr CAttackSetActiveSucc26_next(nullptr);
-        info::CAttackSetActiveSucc26_clbk CAttackSetActiveSucc26_user(nullptr);
-        info::CAttackSetStaticMember28_ptr CAttackSetStaticMember28_next(nullptr);
-        info::CAttackSetStaticMember28_clbk CAttackSetStaticMember28_user(nullptr);
-        info::CAttack_CalcForceAttPnt30_ptr CAttack_CalcForceAttPnt30_next(nullptr);
-        info::CAttack_CalcForceAttPnt30_clbk CAttack_CalcForceAttPnt30_user(nullptr);
-        info::CAttack_CalcGenAttPnt32_ptr CAttack_CalcGenAttPnt32_next(nullptr);
-        info::CAttack_CalcGenAttPnt32_clbk CAttack_CalcGenAttPnt32_user(nullptr);
+        static info::CAttackAreaDamageProc2_ptr CAttackAreaDamageProc2_next(nullptr);
+        static info::CAttackAreaDamageProc2_clbk CAttackAreaDamageProc2_user(nullptr);
+        static info::CAttackAttackForce4_ptr CAttackAttackForce4_next(nullptr);
+        static info::CAttackAttackForce4_clbk CAttackAttackForce4_user(nullptr);
+        static info::CAttackAttackGen6_ptr CAttackAttackGen6_next(nullptr);
+        static info::CAttackAttackGen6_clbk CAttackAttackGen6_user(nullptr);
+        static info::CAttackctor_CAttack8_ptr CAttackctor_CAttack8_next(nullptr);
+        static info::CAttackctor_CAttack8_clbk CAttackctor_CAttack8_user(nullptr);
+        static info::CAttackCalcAvgDamage10_ptr CAttackCalcAvgDamage10_next(nullptr);
+        static info::CAttackCalcAvgDamage10_clbk CAttackCalcAvgDamage10_user(nullptr);
+        static info::CAttackCheckGuildBattleLimit12_ptr CAttackCheckGuildBattleLimit12_next(nullptr);
+        static info::CAttackCheckGuildBattleLimit12_clbk CAttackCheckGuildBattleLimit12_user(nullptr);
+        static info::CAttackFlashDamageProc14_ptr CAttackFlashDamageProc14_next(nullptr);
+        static info::CAttackFlashDamageProc14_clbk CAttackFlashDamageProc14_user(nullptr);
+        static info::CAttackGetAttackFC16_ptr CAttackGetAttackFC16_next(nullptr);
+        static info::CAttackGetAttackFC16_clbk CAttackGetAttackFC16_user(nullptr);
+        static info::CAttackGetMeleeSkillIndex18_ptr CAttackGetMeleeSkillIndex18_next(nullptr);
+        static info::CAttackGetMeleeSkillIndex18_clbk CAttackGetMeleeSkillIndex18_user(nullptr);
+        static info::CAttackIsCharInSector20_ptr CAttackIsCharInSector20_next(nullptr);
+        static info::CAttackIsCharInSector20_clbk CAttackIsCharInSector20_user(nullptr);
+        static info::CAttackMonsterCritical_Exception_Rate22_ptr CAttackMonsterCritical_Exception_Rate22_next(nullptr);
+        static info::CAttackMonsterCritical_Exception_Rate22_clbk CAttackMonsterCritical_Exception_Rate22_user(nullptr);
+        static info::CAttackSectorDamageProc24_ptr CAttackSectorDamageProc24_next(nullptr);
+        static info::CAttackSectorDamageProc24_clbk CAttackSectorDamageProc24_user(nullptr);
+        static info::CAttackSetActiveSucc26_ptr CAttackSetActiveSucc26_next(nullptr);
+        static info::CAttackSetActiveSucc26_clbk CAttackSetActiveSucc26_user(nullptr);
+        static info::CAttackSetStaticMember28_ptr CAttackSetStaticMember28_next(nullptr);
+        static info::CAttackSetStaticMember28_clbk CAttackSetStaticMember28_user(nullptr);
+        static info::CAttack_CalcForceAttPnt30_ptr CAttack_CalcForceAttPnt30_next(nullptr);
+        static info::CAttack_CalcForceAttPnt30_clbk CAttack_CalcForceAttPnt30_user(nullptr);
+        static info::CAttack_CalcGenAttPnt32_ptr CAttack_CalcGenAttPnt32_next(nullptr);
+        static info::CAttack_CalcGenAttPnt32_clbk CAttack_CalcGenAttPnt32_user(nullptr);
         
-        void CAttackAreaDamageProc2_wrapper(struct CAttack* _this, int nLimitRadius, int nAttPower, float* pTar, int nEffAttPower, bool bUseEffBullet)
+        static void CAttackAreaDamageProc2_wrapper(struct CAttack* _this, int nLimitRadius, int nAttPower, float* pTar, int nEffAttPower, bool bUseEffBullet)
         {
            CAttackAreaDamageProc2_user(_this, nLimitRadius, nAttPower, pTar, nEffAttPower, bUseEffBullet, CAttackAreaDamageProc2_next);
         };
-        void CAttackAttackForce4_wrapper(struct CAttack* _this, struct _attack_param* pParam, bool bUseEffBullet)
+        static void CAttackAttackForce4_wrapper(struct CAttack* _this, struct _attack_param* pParam, bool bUseEffBullet)
         {
            CAttackAttackForce4_user(_this, pParam, bUseEffBullet, CAttackAttackForce4_next);
         };
-        void CAttackAttackGen6_wrapper(struct CAttack* _this, struct _attack_param* pParam, bool bMustMiss, bool bUseEffBullet)
+        static void CAttackAttackGen6_wrapper(struct CAttack* _this, struct _attack_param* pParam, bool bMustMiss, bool bUseEffBullet)
         {
            CAttackAttackGen6_user(_this, pParam, bMustMiss, bUseEffBullet, CAttackAttackGen6_next);
         };
-        void CAttackctor_CAttack8_wrapper(struct CAttack* _this, struct CCharacter* pThis)
+        static void CAttackctor_CAttack8_wrapper(struct CAttack* _this, struct CCharacter* pThis)
         {
            CAttackctor_CAttack8_user(_this, pThis, CAttackctor_CAttack8_next);
         };
-        void CAttackCalcAvgDamage10_wrapper(struct CAttack* _this)
+        static void CAttackCalcAvgDamage10_wrapper(struct CAttack* _this)
         {
            CAttackCalcAvgDamage10_user(_this, CAttackCalcAvgDamage10_next);
         };
-        bool CAttackCheckGuildBattleLimit12_wrapper(struct CAttack* _this, struct CGameObject* pObject, bool* pbInGuildBattle)
+        static bool CAttackCheckGuildBattleLimit12_wrapper(struct CAttack* _this, struct CGameObject* pObject, bool* pbInGuildBattle)
         {
            return CAttackCheckGuildBattleLimit12_user(_this, pObject, pbInGuildBattle, CAttackCheckGuildBattleLimit12_next);
         };
-        void CAttackFlashDamageProc14_wrapper(struct CAttack* _this, int nLimDist, int nAttPower, int nAngle, int nEffAttPower, bool bUseEffBullet)
+        static void CAttackFlashDamageProc14_wrapper(struct CAttack* _this, int nLimDist, int nAttPower, int nAngle, int nEffAttPower, bool bUseEffBullet)
         {
            CAttackFlashDamageProc14_user(_this, nLimDist, nAttPower, nAngle, nEffAttPower, bUseEffBullet, CAttackFlashDamageProc14_next);
         };
-        float CAttackGetAttackFC16_wrapper(struct CAttack* _this, struct CPlayer* pPlayer, char bySkill, bool bNear, bool bUnit)
+        static float CAttackGetAttackFC16_wrapper(struct CAttack* _this, struct CPlayer* pPlayer, char bySkill, bool bNear, bool bUnit)
         {
            return CAttackGetAttackFC16_user(_this, pPlayer, bySkill, bNear, bUnit, CAttackGetAttackFC16_next);
         };
-        int CAttackGetMeleeSkillIndex18_wrapper(int nMeleeTechCode)
+        static int CAttackGetMeleeSkillIndex18_wrapper(int nMeleeTechCode)
         {
            return CAttackGetMeleeSkillIndex18_user(nMeleeTechCode, CAttackGetMeleeSkillIndex18_next);
         };
-        int CAttackIsCharInSector20_wrapper(float* chkpos, float* src, float* dest, float angle, float radius)
+        static int CAttackIsCharInSector20_wrapper(float* chkpos, float* src, float* dest, float angle, float radius)
         {
            return CAttackIsCharInSector20_user(chkpos, src, dest, angle, radius, CAttackIsCharInSector20_next);
         };
-        int CAttackMonsterCritical_Exception_Rate22_wrapper(struct CAttack* _this, struct CCharacter* pCharacter, bool bBackAttack)
+        static int CAttackMonsterCritical_Exception_Rate22_wrapper(struct CAttack* _this, struct CCharacter* pCharacter, bool bBackAttack)
         {
            return CAttackMonsterCritical_Exception_Rate22_user(_this, pCharacter, bBackAttack, CAttackMonsterCritical_Exception_Rate22_next);
         };
-        void CAttackSectorDamageProc24_wrapper(struct CAttack* _this, int nSkillLv, int nAttPower, int nAngle, int nShotNum, int nWeaponRange, int nEffAttPower, bool bUseEffBullet)
+        static void CAttackSectorDamageProc24_wrapper(struct CAttack* _this, int nSkillLv, int nAttPower, int nAngle, int nShotNum, int nWeaponRange, int nEffAttPower, bool bUseEffBullet)
         {
            CAttackSectorDamageProc24_user(_this, nSkillLv, nAttPower, nAngle, nShotNum, nWeaponRange, nEffAttPower, bUseEffBullet, CAttackSectorDamageProc24_next);
         };
-        void CAttackSetActiveSucc26_wrapper(struct CAttack* _this, bool bSucc)
+        static void CAttackSetActiveSucc26_wrapper(struct CAttack* _this, bool bSucc)
         {
            CAttackSetActiveSucc26_user(_this, bSucc, CAttackSetActiveSucc26_next);
         };
-        void CAttackSetStaticMember28_wrapper(struct CRecordData* pSkillData)
+        static void CAttackSetStaticMember28_wrapper(struct CRecordData* pSkillData)
         {
            CAttackSetStaticMember28_user(pSkillData, CAttackSetStaticMember28_next);
         };
-        int CAttack_CalcForceAttPnt30_wrapper(struct CAttack* _this, bool bUseEffBullet)
+        static int CAttack_CalcForceAttPnt30_wrapper(struct CAttack* _this, bool bUseEffBullet)
         {
            return CAttack_CalcForceAttPnt30_user(_this, bUseEffBullet, CAttack_CalcForceAttPnt30_next);
         };
-        int CAttack_CalcGenAttPnt32_wrapper(struct CAttack* _this, bool bUseEffBullet)
+        static int CAttack_CalcGenAttPnt32_wrapper(struct CAttack* _this, bool bUseEffBullet)
         {
            return CAttack_CalcGenAttPnt32_user(_this, bUseEffBullet, CAttack_CalcGenAttPnt32_next);
         };
         
-        hook_record CAttack_functions[] = {
+        static hook_record CAttack_functions[] = {
         {   (LPVOID)0x14016c320L,
             (LPVOID *)&CAttackAreaDamageProc2_user,
             (LPVOID *)&CAttackAreaDamageProc2_next,
@@ -190,5 +190,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

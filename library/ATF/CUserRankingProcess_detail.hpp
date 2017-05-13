@@ -8,495 +8,495 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUserRankingProcessAllocObject2_ptr CUserRankingProcessAllocObject2_next(nullptr);
-        info::CUserRankingProcessAllocObject2_clbk CUserRankingProcessAllocObject2_user(nullptr);
-        info::CUserRankingProcessctor_CUserRankingProcess4_ptr CUserRankingProcessctor_CUserRankingProcess4_next(nullptr);
-        info::CUserRankingProcessctor_CUserRankingProcess4_clbk CUserRankingProcessctor_CUserRankingProcess4_user(nullptr);
-        info::CUserRankingProcessCheckAndCreateTodayPvpRankTable6_ptr CUserRankingProcessCheckAndCreateTodayPvpRankTable6_next(nullptr);
-        info::CUserRankingProcessCheckAndCreateTodayPvpRankTable6_clbk CUserRankingProcessCheckAndCreateTodayPvpRankTable6_user(nullptr);
-        info::CUserRankingProcessCheckTomorrowPvpRankDate8_ptr CUserRankingProcessCheckTomorrowPvpRankDate8_next(nullptr);
-        info::CUserRankingProcessCheckTomorrowPvpRankDate8_clbk CUserRankingProcessCheckTomorrowPvpRankDate8_user(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep110_ptr CUserRankingProcessCompleteGuildRankStep110_next(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep110_clbk CUserRankingProcessCompleteGuildRankStep110_user(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep212_ptr CUserRankingProcessCompleteGuildRankStep212_next(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep212_clbk CUserRankingProcessCompleteGuildRankStep212_user(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep314_ptr CUserRankingProcessCompleteGuildRankStep314_next(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep314_clbk CUserRankingProcessCompleteGuildRankStep314_user(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep416_ptr CUserRankingProcessCompleteGuildRankStep416_next(nullptr);
-        info::CUserRankingProcessCompleteGuildRankStep416_clbk CUserRankingProcessCompleteGuildRankStep416_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep118_ptr CUserRankingProcessCompleteRaceRankStep118_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep118_clbk CUserRankingProcessCompleteRaceRankStep118_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep1020_ptr CUserRankingProcessCompleteRaceRankStep1020_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep1020_clbk CUserRankingProcessCompleteRaceRankStep1020_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep1122_ptr CUserRankingProcessCompleteRaceRankStep1122_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep1122_clbk CUserRankingProcessCompleteRaceRankStep1122_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep224_ptr CUserRankingProcessCompleteRaceRankStep224_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep224_clbk CUserRankingProcessCompleteRaceRankStep224_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep326_ptr CUserRankingProcessCompleteRaceRankStep326_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep326_clbk CUserRankingProcessCompleteRaceRankStep326_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep428_ptr CUserRankingProcessCompleteRaceRankStep428_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep428_clbk CUserRankingProcessCompleteRaceRankStep428_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep530_ptr CUserRankingProcessCompleteRaceRankStep530_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep530_clbk CUserRankingProcessCompleteRaceRankStep530_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep632_ptr CUserRankingProcessCompleteRaceRankStep632_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep632_clbk CUserRankingProcessCompleteRaceRankStep632_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep734_ptr CUserRankingProcessCompleteRaceRankStep734_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep734_clbk CUserRankingProcessCompleteRaceRankStep734_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep836_ptr CUserRankingProcessCompleteRaceRankStep836_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep836_clbk CUserRankingProcessCompleteRaceRankStep836_user(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep938_ptr CUserRankingProcessCompleteRaceRankStep938_next(nullptr);
-        info::CUserRankingProcessCompleteRaceRankStep938_clbk CUserRankingProcessCompleteRaceRankStep938_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep140_ptr CUserRankingProcessCompleteRankInGuildStep140_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep140_clbk CUserRankingProcessCompleteRankInGuildStep140_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep242_ptr CUserRankingProcessCompleteRankInGuildStep242_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep242_clbk CUserRankingProcessCompleteRankInGuildStep242_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep344_ptr CUserRankingProcessCompleteRankInGuildStep344_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep344_clbk CUserRankingProcessCompleteRankInGuildStep344_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep446_ptr CUserRankingProcessCompleteRankInGuildStep446_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep446_clbk CUserRankingProcessCompleteRankInGuildStep446_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep548_ptr CUserRankingProcessCompleteRankInGuildStep548_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep548_clbk CUserRankingProcessCompleteRankInGuildStep548_user(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep650_ptr CUserRankingProcessCompleteRankInGuildStep650_next(nullptr);
-        info::CUserRankingProcessCompleteRankInGuildStep650_clbk CUserRankingProcessCompleteRankInGuildStep650_user(nullptr);
-        info::CUserRankingProcessCompleteRankUpdateAndSelectGarde52_ptr CUserRankingProcessCompleteRankUpdateAndSelectGarde52_next(nullptr);
-        info::CUserRankingProcessCompleteRankUpdateAndSelectGarde52_clbk CUserRankingProcessCompleteRankUpdateAndSelectGarde52_user(nullptr);
-        info::CUserRankingProcessFindRank54_ptr CUserRankingProcessFindRank54_next(nullptr);
-        info::CUserRankingProcessFindRank54_clbk CUserRankingProcessFindRank54_user(nullptr);
-        info::CUserRankingProcessFlipPvPRankTop56_ptr CUserRankingProcessFlipPvPRankTop56_next(nullptr);
-        info::CUserRankingProcessFlipPvPRankTop56_clbk CUserRankingProcessFlipPvPRankTop56_user(nullptr);
-        info::CUserRankingProcessGetBossType58_ptr CUserRankingProcessGetBossType58_next(nullptr);
-        info::CUserRankingProcessGetBossType58_clbk CUserRankingProcessGetBossType58_user(nullptr);
-        info::CUserRankingProcessGetCurrentPvpRankData60_ptr CUserRankingProcessGetCurrentPvpRankData60_next(nullptr);
-        info::CUserRankingProcessGetCurrentPvpRankData60_clbk CUserRankingProcessGetCurrentPvpRankData60_user(nullptr);
-        info::CUserRankingProcessGetCurrentRaceBossSerial62_ptr CUserRankingProcessGetCurrentRaceBossSerial62_next(nullptr);
-        info::CUserRankingProcessGetCurrentRaceBossSerial62_clbk CUserRankingProcessGetCurrentRaceBossSerial62_user(nullptr);
-        info::CUserRankingProcessGetRankDateStr64_ptr CUserRankingProcessGetRankDateStr64_next(nullptr);
-        info::CUserRankingProcessGetRankDateStr64_clbk CUserRankingProcessGetRankDateStr64_user(nullptr);
-        info::CUserRankingProcessGetTommorrowStr66_ptr CUserRankingProcessGetTommorrowStr66_next(nullptr);
-        info::CUserRankingProcessGetTommorrowStr66_clbk CUserRankingProcessGetTommorrowStr66_user(nullptr);
-        info::CUserRankingProcessIncreaseVesion68_ptr CUserRankingProcessIncreaseVesion68_next(nullptr);
-        info::CUserRankingProcessIncreaseVesion68_clbk CUserRankingProcessIncreaseVesion68_user(nullptr);
-        info::CUserRankingProcessInit70_ptr CUserRankingProcessInit70_next(nullptr);
-        info::CUserRankingProcessInit70_clbk CUserRankingProcessInit70_user(nullptr);
-        info::CUserRankingProcessInitProcFunc72_ptr CUserRankingProcessInitProcFunc72_next(nullptr);
-        info::CUserRankingProcessInitProcFunc72_clbk CUserRankingProcessInitProcFunc72_user(nullptr);
-        info::CUserRankingProcessIsCurrentRaceBossGroup74_ptr CUserRankingProcessIsCurrentRaceBossGroup74_next(nullptr);
-        info::CUserRankingProcessIsCurrentRaceBossGroup74_clbk CUserRankingProcessIsCurrentRaceBossGroup74_user(nullptr);
-        info::CUserRankingProcessIsRaceViceBoss76_ptr CUserRankingProcessIsRaceViceBoss76_next(nullptr);
-        info::CUserRankingProcessIsRaceViceBoss76_clbk CUserRankingProcessIsRaceViceBoss76_user(nullptr);
-        info::CUserRankingProcessLoad78_ptr CUserRankingProcessLoad78_next(nullptr);
-        info::CUserRankingProcessLoad78_clbk CUserRankingProcessLoad78_user(nullptr);
-        info::CUserRankingProcessLoadINI80_ptr CUserRankingProcessLoadINI80_next(nullptr);
-        info::CUserRankingProcessLoadINI80_clbk CUserRankingProcessLoadINI80_user(nullptr);
-        info::CUserRankingProcessLoop82_ptr CUserRankingProcessLoop82_next(nullptr);
-        info::CUserRankingProcessLoop82_clbk CUserRankingProcessLoop82_user(nullptr);
-        info::CUserRankingProcessProcApplyGuildGrade84_ptr CUserRankingProcessProcApplyGuildGrade84_next(nullptr);
-        info::CUserRankingProcessProcApplyGuildGrade84_clbk CUserRankingProcessProcApplyGuildGrade84_user(nullptr);
-        info::CUserRankingProcessProcApplyRankInGuild86_ptr CUserRankingProcessProcApplyRankInGuild86_next(nullptr);
-        info::CUserRankingProcessProcApplyRankInGuild86_clbk CUserRankingProcessProcApplyRankInGuild86_user(nullptr);
-        info::CUserRankingProcessProcFailedWait88_ptr CUserRankingProcessProcFailedWait88_next(nullptr);
-        info::CUserRankingProcessProcFailedWait88_clbk CUserRankingProcessProcFailedWait88_user(nullptr);
-        info::CUserRankingProcessProcNotifyVersionUp90_ptr CUserRankingProcessProcNotifyVersionUp90_next(nullptr);
-        info::CUserRankingProcessProcNotifyVersionUp90_clbk CUserRankingProcessProcNotifyVersionUp90_user(nullptr);
-        info::CUserRankingProcessProcRankComplete92_ptr CUserRankingProcessProcRankComplete92_next(nullptr);
-        info::CUserRankingProcessProcRankComplete92_clbk CUserRankingProcessProcRankComplete92_user(nullptr);
-        info::CUserRankingProcessProcRankStart94_ptr CUserRankingProcessProcRankStart94_next(nullptr);
-        info::CUserRankingProcessProcRankStart94_clbk CUserRankingProcessProcRankStart94_user(nullptr);
-        info::CUserRankingProcessProcRankSuccess96_ptr CUserRankingProcessProcRankSuccess96_next(nullptr);
-        info::CUserRankingProcessProcRankSuccess96_clbk CUserRankingProcessProcRankSuccess96_user(nullptr);
-        info::CUserRankingProcessProcSaveTargetList98_ptr CUserRankingProcessProcSaveTargetList98_next(nullptr);
-        info::CUserRankingProcessProcSaveTargetList98_clbk CUserRankingProcessProcSaveTargetList98_user(nullptr);
-        info::CUserRankingProcessProcWait100_ptr CUserRankingProcessProcWait100_next(nullptr);
-        info::CUserRankingProcessProcWait100_clbk CUserRankingProcessProcWait100_user(nullptr);
-        info::CUserRankingProcessProcWaitDayChanged102_ptr CUserRankingProcessProcWaitDayChanged102_next(nullptr);
-        info::CUserRankingProcessProcWaitDayChanged102_clbk CUserRankingProcessProcWaitDayChanged102_user(nullptr);
-        info::CUserRankingProcessPvpRankDataPacking104_ptr CUserRankingProcessPvpRankDataPacking104_next(nullptr);
-        info::CUserRankingProcessPvpRankDataPacking104_clbk CUserRankingProcessPvpRankDataPacking104_user(nullptr);
-        info::CUserRankingProcessPvpRankListRequest106_ptr CUserRankingProcessPvpRankListRequest106_next(nullptr);
-        info::CUserRankingProcessPvpRankListRequest106_clbk CUserRankingProcessPvpRankListRequest106_user(nullptr);
-        info::CUserRankingProcessSetCurrentRaceBossSerial108_ptr CUserRankingProcessSetCurrentRaceBossSerial108_next(nullptr);
-        info::CUserRankingProcessSetCurrentRaceBossSerial108_clbk CUserRankingProcessSetCurrentRaceBossSerial108_user(nullptr);
-        info::CUserRankingProcessSetLogger110_ptr CUserRankingProcessSetLogger110_next(nullptr);
-        info::CUserRankingProcessSetLogger110_clbk CUserRankingProcessSetLogger110_user(nullptr);
-        info::CUserRankingProcessSetRankingStartTime112_ptr CUserRankingProcessSetRankingStartTime112_next(nullptr);
-        info::CUserRankingProcessSetRankingStartTime112_clbk CUserRankingProcessSetRankingStartTime112_user(nullptr);
-        info::CUserRankingProcessSetUpdateRaceBossSerial114_ptr CUserRankingProcessSetUpdateRaceBossSerial114_next(nullptr);
-        info::CUserRankingProcessSetUpdateRaceBossSerial114_clbk CUserRankingProcessSetUpdateRaceBossSerial114_user(nullptr);
-        info::CUserRankingProcessUpdateAndSelectGuildGrade116_ptr CUserRankingProcessUpdateAndSelectGuildGrade116_next(nullptr);
-        info::CUserRankingProcessUpdateAndSelectGuildGrade116_clbk CUserRankingProcessUpdateAndSelectGuildGrade116_user(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep1118_ptr CUserRankingProcessUpdateGuildRankStep1118_next(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep1118_clbk CUserRankingProcessUpdateGuildRankStep1118_user(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep2120_ptr CUserRankingProcessUpdateGuildRankStep2120_next(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep2120_clbk CUserRankingProcessUpdateGuildRankStep2120_user(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep3122_ptr CUserRankingProcessUpdateGuildRankStep3122_next(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep3122_clbk CUserRankingProcessUpdateGuildRankStep3122_user(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep4124_ptr CUserRankingProcessUpdateGuildRankStep4124_next(nullptr);
-        info::CUserRankingProcessUpdateGuildRankStep4124_clbk CUserRankingProcessUpdateGuildRankStep4124_user(nullptr);
-        info::CUserRankingProcessUpdateNextRankingStartTime126_ptr CUserRankingProcessUpdateNextRankingStartTime126_next(nullptr);
-        info::CUserRankingProcessUpdateNextRankingStartTime126_clbk CUserRankingProcessUpdateNextRankingStartTime126_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep1128_ptr CUserRankingProcessUpdateRaceRankStep1128_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep1128_clbk CUserRankingProcessUpdateRaceRankStep1128_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep10130_ptr CUserRankingProcessUpdateRaceRankStep10130_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep10130_clbk CUserRankingProcessUpdateRaceRankStep10130_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep11132_ptr CUserRankingProcessUpdateRaceRankStep11132_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep11132_clbk CUserRankingProcessUpdateRaceRankStep11132_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep2134_ptr CUserRankingProcessUpdateRaceRankStep2134_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep2134_clbk CUserRankingProcessUpdateRaceRankStep2134_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep3136_ptr CUserRankingProcessUpdateRaceRankStep3136_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep3136_clbk CUserRankingProcessUpdateRaceRankStep3136_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep4138_ptr CUserRankingProcessUpdateRaceRankStep4138_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep4138_clbk CUserRankingProcessUpdateRaceRankStep4138_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep5140_ptr CUserRankingProcessUpdateRaceRankStep5140_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep5140_clbk CUserRankingProcessUpdateRaceRankStep5140_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep6142_ptr CUserRankingProcessUpdateRaceRankStep6142_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep6142_clbk CUserRankingProcessUpdateRaceRankStep6142_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep7144_ptr CUserRankingProcessUpdateRaceRankStep7144_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep7144_clbk CUserRankingProcessUpdateRaceRankStep7144_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep8146_ptr CUserRankingProcessUpdateRaceRankStep8146_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep8146_clbk CUserRankingProcessUpdateRaceRankStep8146_user(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep9148_ptr CUserRankingProcessUpdateRaceRankStep9148_next(nullptr);
-        info::CUserRankingProcessUpdateRaceRankStep9148_clbk CUserRankingProcessUpdateRaceRankStep9148_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep1150_ptr CUserRankingProcessUpdateRankinGuildStep1150_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep1150_clbk CUserRankingProcessUpdateRankinGuildStep1150_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep2152_ptr CUserRankingProcessUpdateRankinGuildStep2152_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep2152_clbk CUserRankingProcessUpdateRankinGuildStep2152_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep3154_ptr CUserRankingProcessUpdateRankinGuildStep3154_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep3154_clbk CUserRankingProcessUpdateRankinGuildStep3154_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep4156_ptr CUserRankingProcessUpdateRankinGuildStep4156_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep4156_clbk CUserRankingProcessUpdateRankinGuildStep4156_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep5158_ptr CUserRankingProcessUpdateRankinGuildStep5158_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep5158_clbk CUserRankingProcessUpdateRankinGuildStep5158_user(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep6160_ptr CUserRankingProcessUpdateRankinGuildStep6160_next(nullptr);
-        info::CUserRankingProcessUpdateRankinGuildStep6160_clbk CUserRankingProcessUpdateRankinGuildStep6160_user(nullptr);
-        info::CUserRankingProcessdtor_CUserRankingProcess162_ptr CUserRankingProcessdtor_CUserRankingProcess162_next(nullptr);
-        info::CUserRankingProcessdtor_CUserRankingProcess162_clbk CUserRankingProcessdtor_CUserRankingProcess162_user(nullptr);
+        static info::CUserRankingProcessAllocObject2_ptr CUserRankingProcessAllocObject2_next(nullptr);
+        static info::CUserRankingProcessAllocObject2_clbk CUserRankingProcessAllocObject2_user(nullptr);
+        static info::CUserRankingProcessctor_CUserRankingProcess4_ptr CUserRankingProcessctor_CUserRankingProcess4_next(nullptr);
+        static info::CUserRankingProcessctor_CUserRankingProcess4_clbk CUserRankingProcessctor_CUserRankingProcess4_user(nullptr);
+        static info::CUserRankingProcessCheckAndCreateTodayPvpRankTable6_ptr CUserRankingProcessCheckAndCreateTodayPvpRankTable6_next(nullptr);
+        static info::CUserRankingProcessCheckAndCreateTodayPvpRankTable6_clbk CUserRankingProcessCheckAndCreateTodayPvpRankTable6_user(nullptr);
+        static info::CUserRankingProcessCheckTomorrowPvpRankDate8_ptr CUserRankingProcessCheckTomorrowPvpRankDate8_next(nullptr);
+        static info::CUserRankingProcessCheckTomorrowPvpRankDate8_clbk CUserRankingProcessCheckTomorrowPvpRankDate8_user(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep110_ptr CUserRankingProcessCompleteGuildRankStep110_next(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep110_clbk CUserRankingProcessCompleteGuildRankStep110_user(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep212_ptr CUserRankingProcessCompleteGuildRankStep212_next(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep212_clbk CUserRankingProcessCompleteGuildRankStep212_user(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep314_ptr CUserRankingProcessCompleteGuildRankStep314_next(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep314_clbk CUserRankingProcessCompleteGuildRankStep314_user(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep416_ptr CUserRankingProcessCompleteGuildRankStep416_next(nullptr);
+        static info::CUserRankingProcessCompleteGuildRankStep416_clbk CUserRankingProcessCompleteGuildRankStep416_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep118_ptr CUserRankingProcessCompleteRaceRankStep118_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep118_clbk CUserRankingProcessCompleteRaceRankStep118_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep1020_ptr CUserRankingProcessCompleteRaceRankStep1020_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep1020_clbk CUserRankingProcessCompleteRaceRankStep1020_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep1122_ptr CUserRankingProcessCompleteRaceRankStep1122_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep1122_clbk CUserRankingProcessCompleteRaceRankStep1122_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep224_ptr CUserRankingProcessCompleteRaceRankStep224_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep224_clbk CUserRankingProcessCompleteRaceRankStep224_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep326_ptr CUserRankingProcessCompleteRaceRankStep326_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep326_clbk CUserRankingProcessCompleteRaceRankStep326_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep428_ptr CUserRankingProcessCompleteRaceRankStep428_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep428_clbk CUserRankingProcessCompleteRaceRankStep428_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep530_ptr CUserRankingProcessCompleteRaceRankStep530_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep530_clbk CUserRankingProcessCompleteRaceRankStep530_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep632_ptr CUserRankingProcessCompleteRaceRankStep632_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep632_clbk CUserRankingProcessCompleteRaceRankStep632_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep734_ptr CUserRankingProcessCompleteRaceRankStep734_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep734_clbk CUserRankingProcessCompleteRaceRankStep734_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep836_ptr CUserRankingProcessCompleteRaceRankStep836_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep836_clbk CUserRankingProcessCompleteRaceRankStep836_user(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep938_ptr CUserRankingProcessCompleteRaceRankStep938_next(nullptr);
+        static info::CUserRankingProcessCompleteRaceRankStep938_clbk CUserRankingProcessCompleteRaceRankStep938_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep140_ptr CUserRankingProcessCompleteRankInGuildStep140_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep140_clbk CUserRankingProcessCompleteRankInGuildStep140_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep242_ptr CUserRankingProcessCompleteRankInGuildStep242_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep242_clbk CUserRankingProcessCompleteRankInGuildStep242_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep344_ptr CUserRankingProcessCompleteRankInGuildStep344_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep344_clbk CUserRankingProcessCompleteRankInGuildStep344_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep446_ptr CUserRankingProcessCompleteRankInGuildStep446_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep446_clbk CUserRankingProcessCompleteRankInGuildStep446_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep548_ptr CUserRankingProcessCompleteRankInGuildStep548_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep548_clbk CUserRankingProcessCompleteRankInGuildStep548_user(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep650_ptr CUserRankingProcessCompleteRankInGuildStep650_next(nullptr);
+        static info::CUserRankingProcessCompleteRankInGuildStep650_clbk CUserRankingProcessCompleteRankInGuildStep650_user(nullptr);
+        static info::CUserRankingProcessCompleteRankUpdateAndSelectGarde52_ptr CUserRankingProcessCompleteRankUpdateAndSelectGarde52_next(nullptr);
+        static info::CUserRankingProcessCompleteRankUpdateAndSelectGarde52_clbk CUserRankingProcessCompleteRankUpdateAndSelectGarde52_user(nullptr);
+        static info::CUserRankingProcessFindRank54_ptr CUserRankingProcessFindRank54_next(nullptr);
+        static info::CUserRankingProcessFindRank54_clbk CUserRankingProcessFindRank54_user(nullptr);
+        static info::CUserRankingProcessFlipPvPRankTop56_ptr CUserRankingProcessFlipPvPRankTop56_next(nullptr);
+        static info::CUserRankingProcessFlipPvPRankTop56_clbk CUserRankingProcessFlipPvPRankTop56_user(nullptr);
+        static info::CUserRankingProcessGetBossType58_ptr CUserRankingProcessGetBossType58_next(nullptr);
+        static info::CUserRankingProcessGetBossType58_clbk CUserRankingProcessGetBossType58_user(nullptr);
+        static info::CUserRankingProcessGetCurrentPvpRankData60_ptr CUserRankingProcessGetCurrentPvpRankData60_next(nullptr);
+        static info::CUserRankingProcessGetCurrentPvpRankData60_clbk CUserRankingProcessGetCurrentPvpRankData60_user(nullptr);
+        static info::CUserRankingProcessGetCurrentRaceBossSerial62_ptr CUserRankingProcessGetCurrentRaceBossSerial62_next(nullptr);
+        static info::CUserRankingProcessGetCurrentRaceBossSerial62_clbk CUserRankingProcessGetCurrentRaceBossSerial62_user(nullptr);
+        static info::CUserRankingProcessGetRankDateStr64_ptr CUserRankingProcessGetRankDateStr64_next(nullptr);
+        static info::CUserRankingProcessGetRankDateStr64_clbk CUserRankingProcessGetRankDateStr64_user(nullptr);
+        static info::CUserRankingProcessGetTommorrowStr66_ptr CUserRankingProcessGetTommorrowStr66_next(nullptr);
+        static info::CUserRankingProcessGetTommorrowStr66_clbk CUserRankingProcessGetTommorrowStr66_user(nullptr);
+        static info::CUserRankingProcessIncreaseVesion68_ptr CUserRankingProcessIncreaseVesion68_next(nullptr);
+        static info::CUserRankingProcessIncreaseVesion68_clbk CUserRankingProcessIncreaseVesion68_user(nullptr);
+        static info::CUserRankingProcessInit70_ptr CUserRankingProcessInit70_next(nullptr);
+        static info::CUserRankingProcessInit70_clbk CUserRankingProcessInit70_user(nullptr);
+        static info::CUserRankingProcessInitProcFunc72_ptr CUserRankingProcessInitProcFunc72_next(nullptr);
+        static info::CUserRankingProcessInitProcFunc72_clbk CUserRankingProcessInitProcFunc72_user(nullptr);
+        static info::CUserRankingProcessIsCurrentRaceBossGroup74_ptr CUserRankingProcessIsCurrentRaceBossGroup74_next(nullptr);
+        static info::CUserRankingProcessIsCurrentRaceBossGroup74_clbk CUserRankingProcessIsCurrentRaceBossGroup74_user(nullptr);
+        static info::CUserRankingProcessIsRaceViceBoss76_ptr CUserRankingProcessIsRaceViceBoss76_next(nullptr);
+        static info::CUserRankingProcessIsRaceViceBoss76_clbk CUserRankingProcessIsRaceViceBoss76_user(nullptr);
+        static info::CUserRankingProcessLoad78_ptr CUserRankingProcessLoad78_next(nullptr);
+        static info::CUserRankingProcessLoad78_clbk CUserRankingProcessLoad78_user(nullptr);
+        static info::CUserRankingProcessLoadINI80_ptr CUserRankingProcessLoadINI80_next(nullptr);
+        static info::CUserRankingProcessLoadINI80_clbk CUserRankingProcessLoadINI80_user(nullptr);
+        static info::CUserRankingProcessLoop82_ptr CUserRankingProcessLoop82_next(nullptr);
+        static info::CUserRankingProcessLoop82_clbk CUserRankingProcessLoop82_user(nullptr);
+        static info::CUserRankingProcessProcApplyGuildGrade84_ptr CUserRankingProcessProcApplyGuildGrade84_next(nullptr);
+        static info::CUserRankingProcessProcApplyGuildGrade84_clbk CUserRankingProcessProcApplyGuildGrade84_user(nullptr);
+        static info::CUserRankingProcessProcApplyRankInGuild86_ptr CUserRankingProcessProcApplyRankInGuild86_next(nullptr);
+        static info::CUserRankingProcessProcApplyRankInGuild86_clbk CUserRankingProcessProcApplyRankInGuild86_user(nullptr);
+        static info::CUserRankingProcessProcFailedWait88_ptr CUserRankingProcessProcFailedWait88_next(nullptr);
+        static info::CUserRankingProcessProcFailedWait88_clbk CUserRankingProcessProcFailedWait88_user(nullptr);
+        static info::CUserRankingProcessProcNotifyVersionUp90_ptr CUserRankingProcessProcNotifyVersionUp90_next(nullptr);
+        static info::CUserRankingProcessProcNotifyVersionUp90_clbk CUserRankingProcessProcNotifyVersionUp90_user(nullptr);
+        static info::CUserRankingProcessProcRankComplete92_ptr CUserRankingProcessProcRankComplete92_next(nullptr);
+        static info::CUserRankingProcessProcRankComplete92_clbk CUserRankingProcessProcRankComplete92_user(nullptr);
+        static info::CUserRankingProcessProcRankStart94_ptr CUserRankingProcessProcRankStart94_next(nullptr);
+        static info::CUserRankingProcessProcRankStart94_clbk CUserRankingProcessProcRankStart94_user(nullptr);
+        static info::CUserRankingProcessProcRankSuccess96_ptr CUserRankingProcessProcRankSuccess96_next(nullptr);
+        static info::CUserRankingProcessProcRankSuccess96_clbk CUserRankingProcessProcRankSuccess96_user(nullptr);
+        static info::CUserRankingProcessProcSaveTargetList98_ptr CUserRankingProcessProcSaveTargetList98_next(nullptr);
+        static info::CUserRankingProcessProcSaveTargetList98_clbk CUserRankingProcessProcSaveTargetList98_user(nullptr);
+        static info::CUserRankingProcessProcWait100_ptr CUserRankingProcessProcWait100_next(nullptr);
+        static info::CUserRankingProcessProcWait100_clbk CUserRankingProcessProcWait100_user(nullptr);
+        static info::CUserRankingProcessProcWaitDayChanged102_ptr CUserRankingProcessProcWaitDayChanged102_next(nullptr);
+        static info::CUserRankingProcessProcWaitDayChanged102_clbk CUserRankingProcessProcWaitDayChanged102_user(nullptr);
+        static info::CUserRankingProcessPvpRankDataPacking104_ptr CUserRankingProcessPvpRankDataPacking104_next(nullptr);
+        static info::CUserRankingProcessPvpRankDataPacking104_clbk CUserRankingProcessPvpRankDataPacking104_user(nullptr);
+        static info::CUserRankingProcessPvpRankListRequest106_ptr CUserRankingProcessPvpRankListRequest106_next(nullptr);
+        static info::CUserRankingProcessPvpRankListRequest106_clbk CUserRankingProcessPvpRankListRequest106_user(nullptr);
+        static info::CUserRankingProcessSetCurrentRaceBossSerial108_ptr CUserRankingProcessSetCurrentRaceBossSerial108_next(nullptr);
+        static info::CUserRankingProcessSetCurrentRaceBossSerial108_clbk CUserRankingProcessSetCurrentRaceBossSerial108_user(nullptr);
+        static info::CUserRankingProcessSetLogger110_ptr CUserRankingProcessSetLogger110_next(nullptr);
+        static info::CUserRankingProcessSetLogger110_clbk CUserRankingProcessSetLogger110_user(nullptr);
+        static info::CUserRankingProcessSetRankingStartTime112_ptr CUserRankingProcessSetRankingStartTime112_next(nullptr);
+        static info::CUserRankingProcessSetRankingStartTime112_clbk CUserRankingProcessSetRankingStartTime112_user(nullptr);
+        static info::CUserRankingProcessSetUpdateRaceBossSerial114_ptr CUserRankingProcessSetUpdateRaceBossSerial114_next(nullptr);
+        static info::CUserRankingProcessSetUpdateRaceBossSerial114_clbk CUserRankingProcessSetUpdateRaceBossSerial114_user(nullptr);
+        static info::CUserRankingProcessUpdateAndSelectGuildGrade116_ptr CUserRankingProcessUpdateAndSelectGuildGrade116_next(nullptr);
+        static info::CUserRankingProcessUpdateAndSelectGuildGrade116_clbk CUserRankingProcessUpdateAndSelectGuildGrade116_user(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep1118_ptr CUserRankingProcessUpdateGuildRankStep1118_next(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep1118_clbk CUserRankingProcessUpdateGuildRankStep1118_user(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep2120_ptr CUserRankingProcessUpdateGuildRankStep2120_next(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep2120_clbk CUserRankingProcessUpdateGuildRankStep2120_user(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep3122_ptr CUserRankingProcessUpdateGuildRankStep3122_next(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep3122_clbk CUserRankingProcessUpdateGuildRankStep3122_user(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep4124_ptr CUserRankingProcessUpdateGuildRankStep4124_next(nullptr);
+        static info::CUserRankingProcessUpdateGuildRankStep4124_clbk CUserRankingProcessUpdateGuildRankStep4124_user(nullptr);
+        static info::CUserRankingProcessUpdateNextRankingStartTime126_ptr CUserRankingProcessUpdateNextRankingStartTime126_next(nullptr);
+        static info::CUserRankingProcessUpdateNextRankingStartTime126_clbk CUserRankingProcessUpdateNextRankingStartTime126_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep1128_ptr CUserRankingProcessUpdateRaceRankStep1128_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep1128_clbk CUserRankingProcessUpdateRaceRankStep1128_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep10130_ptr CUserRankingProcessUpdateRaceRankStep10130_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep10130_clbk CUserRankingProcessUpdateRaceRankStep10130_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep11132_ptr CUserRankingProcessUpdateRaceRankStep11132_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep11132_clbk CUserRankingProcessUpdateRaceRankStep11132_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep2134_ptr CUserRankingProcessUpdateRaceRankStep2134_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep2134_clbk CUserRankingProcessUpdateRaceRankStep2134_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep3136_ptr CUserRankingProcessUpdateRaceRankStep3136_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep3136_clbk CUserRankingProcessUpdateRaceRankStep3136_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep4138_ptr CUserRankingProcessUpdateRaceRankStep4138_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep4138_clbk CUserRankingProcessUpdateRaceRankStep4138_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep5140_ptr CUserRankingProcessUpdateRaceRankStep5140_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep5140_clbk CUserRankingProcessUpdateRaceRankStep5140_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep6142_ptr CUserRankingProcessUpdateRaceRankStep6142_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep6142_clbk CUserRankingProcessUpdateRaceRankStep6142_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep7144_ptr CUserRankingProcessUpdateRaceRankStep7144_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep7144_clbk CUserRankingProcessUpdateRaceRankStep7144_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep8146_ptr CUserRankingProcessUpdateRaceRankStep8146_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep8146_clbk CUserRankingProcessUpdateRaceRankStep8146_user(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep9148_ptr CUserRankingProcessUpdateRaceRankStep9148_next(nullptr);
+        static info::CUserRankingProcessUpdateRaceRankStep9148_clbk CUserRankingProcessUpdateRaceRankStep9148_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep1150_ptr CUserRankingProcessUpdateRankinGuildStep1150_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep1150_clbk CUserRankingProcessUpdateRankinGuildStep1150_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep2152_ptr CUserRankingProcessUpdateRankinGuildStep2152_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep2152_clbk CUserRankingProcessUpdateRankinGuildStep2152_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep3154_ptr CUserRankingProcessUpdateRankinGuildStep3154_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep3154_clbk CUserRankingProcessUpdateRankinGuildStep3154_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep4156_ptr CUserRankingProcessUpdateRankinGuildStep4156_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep4156_clbk CUserRankingProcessUpdateRankinGuildStep4156_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep5158_ptr CUserRankingProcessUpdateRankinGuildStep5158_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep5158_clbk CUserRankingProcessUpdateRankinGuildStep5158_user(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep6160_ptr CUserRankingProcessUpdateRankinGuildStep6160_next(nullptr);
+        static info::CUserRankingProcessUpdateRankinGuildStep6160_clbk CUserRankingProcessUpdateRankinGuildStep6160_user(nullptr);
+        static info::CUserRankingProcessdtor_CUserRankingProcess162_ptr CUserRankingProcessdtor_CUserRankingProcess162_next(nullptr);
+        static info::CUserRankingProcessdtor_CUserRankingProcess162_clbk CUserRankingProcessdtor_CUserRankingProcess162_user(nullptr);
         
-        bool CUserRankingProcessAllocObject2_wrapper(struct CUserRankingProcess* _this)
+        static bool CUserRankingProcessAllocObject2_wrapper(struct CUserRankingProcess* _this)
         {
            return CUserRankingProcessAllocObject2_user(_this, CUserRankingProcessAllocObject2_next);
         };
-        void CUserRankingProcessctor_CUserRankingProcess4_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessctor_CUserRankingProcess4_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessctor_CUserRankingProcess4_user(_this, CUserRankingProcessctor_CUserRankingProcess4_next);
         };
-        bool CUserRankingProcessCheckAndCreateTodayPvpRankTable6_wrapper(struct CUserRankingProcess* _this, char* szDate)
+        static bool CUserRankingProcessCheckAndCreateTodayPvpRankTable6_wrapper(struct CUserRankingProcess* _this, char* szDate)
         {
            return CUserRankingProcessCheckAndCreateTodayPvpRankTable6_user(_this, szDate, CUserRankingProcessCheckAndCreateTodayPvpRankTable6_next);
         };
-        void CUserRankingProcessCheckTomorrowPvpRankDate8_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessCheckTomorrowPvpRankDate8_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessCheckTomorrowPvpRankDate8_user(_this, CUserRankingProcessCheckTomorrowPvpRankDate8_next);
         };
-        void CUserRankingProcessCompleteGuildRankStep110_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteGuildRankStep110_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteGuildRankStep110_user(_this, byRet, szData, CUserRankingProcessCompleteGuildRankStep110_next);
         };
-        void CUserRankingProcessCompleteGuildRankStep212_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteGuildRankStep212_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteGuildRankStep212_user(_this, byRet, szData, CUserRankingProcessCompleteGuildRankStep212_next);
         };
-        void CUserRankingProcessCompleteGuildRankStep314_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteGuildRankStep314_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteGuildRankStep314_user(_this, byRet, szData, CUserRankingProcessCompleteGuildRankStep314_next);
         };
-        void CUserRankingProcessCompleteGuildRankStep416_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteGuildRankStep416_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteGuildRankStep416_user(_this, byRet, szData, CUserRankingProcessCompleteGuildRankStep416_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep118_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep118_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep118_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep118_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep1020_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep1020_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep1020_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep1020_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep1122_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep1122_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep1122_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep1122_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep224_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep224_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep224_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep224_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep326_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep326_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep326_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep326_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep428_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep428_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep428_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep428_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep530_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep530_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep530_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep530_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep632_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep632_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep632_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep632_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep734_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep734_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep734_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep734_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep836_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep836_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep836_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep836_next);
         };
-        void CUserRankingProcessCompleteRaceRankStep938_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRaceRankStep938_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRaceRankStep938_user(_this, byRet, szData, CUserRankingProcessCompleteRaceRankStep938_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep140_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep140_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep140_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep140_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep242_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep242_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep242_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep242_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep344_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep344_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep344_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep344_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep446_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep446_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep446_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep446_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep548_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep548_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep548_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep548_next);
         };
-        void CUserRankingProcessCompleteRankInGuildStep650_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankInGuildStep650_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankInGuildStep650_user(_this, byRet, szData, CUserRankingProcessCompleteRankInGuildStep650_next);
         };
-        void CUserRankingProcessCompleteRankUpdateAndSelectGarde52_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
+        static void CUserRankingProcessCompleteRankUpdateAndSelectGarde52_wrapper(struct CUserRankingProcess* _this, char byRet, char* szData)
         {
            CUserRankingProcessCompleteRankUpdateAndSelectGarde52_user(_this, byRet, szData, CUserRankingProcessCompleteRankUpdateAndSelectGarde52_next);
         };
-        unsigned int CUserRankingProcessFindRank54_wrapper(struct CUserRankingProcess* _this, char byRaceCode, unsigned int dwAvatorSerial)
+        static unsigned int CUserRankingProcessFindRank54_wrapper(struct CUserRankingProcess* _this, char byRaceCode, unsigned int dwAvatorSerial)
         {
            return CUserRankingProcessFindRank54_user(_this, byRaceCode, dwAvatorSerial, CUserRankingProcessFindRank54_next);
         };
-        void CUserRankingProcessFlipPvPRankTop56_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessFlipPvPRankTop56_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessFlipPvPRankTop56_user(_this, CUserRankingProcessFlipPvPRankTop56_next);
         };
-        char CUserRankingProcessGetBossType58_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
+        static char CUserRankingProcessGetBossType58_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
         {
            return CUserRankingProcessGetBossType58_user(_this, byRace, dwSerial, CUserRankingProcessGetBossType58_next);
         };
-        struct _PVP_RANK_DATA* CUserRankingProcessGetCurrentPvpRankData60_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth)
+        static struct _PVP_RANK_DATA* CUserRankingProcessGetCurrentPvpRankData60_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth)
         {
            return CUserRankingProcessGetCurrentPvpRankData60_user(_this, byRace, byNth, CUserRankingProcessGetCurrentPvpRankData60_next);
         };
-        unsigned int CUserRankingProcessGetCurrentRaceBossSerial62_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth)
+        static unsigned int CUserRankingProcessGetCurrentRaceBossSerial62_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth)
         {
            return CUserRankingProcessGetCurrentRaceBossSerial62_user(_this, byRace, byNth, CUserRankingProcessGetCurrentRaceBossSerial62_next);
         };
-        void CUserRankingProcessGetRankDateStr64_wrapper(struct CUserRankingProcess* _this, char* szDate, uint64_t tDateStrSize)
+        static void CUserRankingProcessGetRankDateStr64_wrapper(struct CUserRankingProcess* _this, char* szDate, uint64_t tDateStrSize)
         {
            CUserRankingProcessGetRankDateStr64_user(_this, szDate, tDateStrSize, CUserRankingProcessGetRankDateStr64_next);
         };
-        void CUserRankingProcessGetTommorrowStr66_wrapper(struct CUserRankingProcess* _this, char* szTommorrow)
+        static void CUserRankingProcessGetTommorrowStr66_wrapper(struct CUserRankingProcess* _this, char* szTommorrow)
         {
            CUserRankingProcessGetTommorrowStr66_user(_this, szTommorrow, CUserRankingProcessGetTommorrowStr66_next);
         };
-        void CUserRankingProcessIncreaseVesion68_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessIncreaseVesion68_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessIncreaseVesion68_user(_this, CUserRankingProcessIncreaseVesion68_next);
         };
-        bool CUserRankingProcessInit70_wrapper(struct CUserRankingProcess* _this)
+        static bool CUserRankingProcessInit70_wrapper(struct CUserRankingProcess* _this)
         {
            return CUserRankingProcessInit70_user(_this, CUserRankingProcessInit70_next);
         };
-        bool CUserRankingProcessInitProcFunc72_wrapper(struct CUserRankingProcess* _this)
+        static bool CUserRankingProcessInitProcFunc72_wrapper(struct CUserRankingProcess* _this)
         {
            return CUserRankingProcessInitProcFunc72_user(_this, CUserRankingProcessInitProcFunc72_next);
         };
-        bool CUserRankingProcessIsCurrentRaceBossGroup74_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
+        static bool CUserRankingProcessIsCurrentRaceBossGroup74_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
         {
            return CUserRankingProcessIsCurrentRaceBossGroup74_user(_this, byRace, dwSerial, CUserRankingProcessIsCurrentRaceBossGroup74_next);
         };
-        bool CUserRankingProcessIsRaceViceBoss76_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
+        static bool CUserRankingProcessIsRaceViceBoss76_wrapper(struct CUserRankingProcess* _this, char byRace, unsigned int dwSerial)
         {
            return CUserRankingProcessIsRaceViceBoss76_user(_this, byRace, dwSerial, CUserRankingProcessIsRaceViceBoss76_next);
         };
-        bool CUserRankingProcessLoad78_wrapper(struct CUserRankingProcess* _this)
+        static bool CUserRankingProcessLoad78_wrapper(struct CUserRankingProcess* _this)
         {
            return CUserRankingProcessLoad78_user(_this, CUserRankingProcessLoad78_next);
         };
-        void CUserRankingProcessLoadINI80_wrapper(struct CUserRankingProcess* _this, int* piHour, int* piMin)
+        static void CUserRankingProcessLoadINI80_wrapper(struct CUserRankingProcess* _this, int* piHour, int* piMin)
         {
            CUserRankingProcessLoadINI80_user(_this, piHour, piMin, CUserRankingProcessLoadINI80_next);
         };
-        void CUserRankingProcessLoop82_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessLoop82_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessLoop82_user(_this, CUserRankingProcessLoop82_next);
         };
-        void CUserRankingProcessProcApplyGuildGrade84_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcApplyGuildGrade84_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcApplyGuildGrade84_user(_this, CUserRankingProcessProcApplyGuildGrade84_next);
         };
-        void CUserRankingProcessProcApplyRankInGuild86_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcApplyRankInGuild86_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcApplyRankInGuild86_user(_this, CUserRankingProcessProcApplyRankInGuild86_next);
         };
-        void CUserRankingProcessProcFailedWait88_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcFailedWait88_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcFailedWait88_user(_this, CUserRankingProcessProcFailedWait88_next);
         };
-        void CUserRankingProcessProcNotifyVersionUp90_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcNotifyVersionUp90_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcNotifyVersionUp90_user(_this, CUserRankingProcessProcNotifyVersionUp90_next);
         };
-        void CUserRankingProcessProcRankComplete92_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcRankComplete92_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcRankComplete92_user(_this, CUserRankingProcessProcRankComplete92_next);
         };
-        void CUserRankingProcessProcRankStart94_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcRankStart94_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcRankStart94_user(_this, CUserRankingProcessProcRankStart94_next);
         };
-        void CUserRankingProcessProcRankSuccess96_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcRankSuccess96_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcRankSuccess96_user(_this, CUserRankingProcessProcRankSuccess96_next);
         };
-        void CUserRankingProcessProcSaveTargetList98_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcSaveTargetList98_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcSaveTargetList98_user(_this, CUserRankingProcessProcSaveTargetList98_next);
         };
-        void CUserRankingProcessProcWait100_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcWait100_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcWait100_user(_this, CUserRankingProcessProcWait100_next);
         };
-        void CUserRankingProcessProcWaitDayChanged102_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessProcWaitDayChanged102_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessProcWaitDayChanged102_user(_this, CUserRankingProcessProcWaitDayChanged102_next);
         };
-        void CUserRankingProcessPvpRankDataPacking104_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessPvpRankDataPacking104_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessPvpRankDataPacking104_user(_this, CUserRankingProcessPvpRankDataPacking104_next);
         };
-        void CUserRankingProcessPvpRankListRequest106_wrapper(struct CUserRankingProcess* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
+        static void CUserRankingProcessPvpRankListRequest106_wrapper(struct CUserRankingProcess* _this, uint16_t wIndex, char byRace, char byVersion, char byPage)
         {
            CUserRankingProcessPvpRankListRequest106_user(_this, wIndex, byRace, byVersion, byPage, CUserRankingProcessPvpRankListRequest106_next);
         };
-        void CUserRankingProcessSetCurrentRaceBossSerial108_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth, unsigned int dwSerial)
+        static void CUserRankingProcessSetCurrentRaceBossSerial108_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth, unsigned int dwSerial)
         {
            CUserRankingProcessSetCurrentRaceBossSerial108_user(_this, byRace, byNth, dwSerial, CUserRankingProcessSetCurrentRaceBossSerial108_next);
         };
-        void CUserRankingProcessSetLogger110_wrapper(struct CUserRankingProcess* _this, struct CLogFile* pkLogger)
+        static void CUserRankingProcessSetLogger110_wrapper(struct CUserRankingProcess* _this, struct CLogFile* pkLogger)
         {
            CUserRankingProcessSetLogger110_user(_this, pkLogger, CUserRankingProcessSetLogger110_next);
         };
-        bool CUserRankingProcessSetRankingStartTime112_wrapper(struct CUserRankingProcess* _this, int iHour, int iMin)
+        static bool CUserRankingProcessSetRankingStartTime112_wrapper(struct CUserRankingProcess* _this, int iHour, int iMin)
         {
            return CUserRankingProcessSetRankingStartTime112_user(_this, iHour, iMin, CUserRankingProcessSetRankingStartTime112_next);
         };
-        void CUserRankingProcessSetUpdateRaceBossSerial114_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth, unsigned int dwSerial)
+        static void CUserRankingProcessSetUpdateRaceBossSerial114_wrapper(struct CUserRankingProcess* _this, char byRace, char byNth, unsigned int dwSerial)
         {
            CUserRankingProcessSetUpdateRaceBossSerial114_user(_this, byRace, byNth, dwSerial, CUserRankingProcessSetUpdateRaceBossSerial114_next);
         };
-        char CUserRankingProcessUpdateAndSelectGuildGrade116_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateAndSelectGuildGrade116_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateAndSelectGuildGrade116_user(_this, szData, CUserRankingProcessUpdateAndSelectGuildGrade116_next);
         };
-        char CUserRankingProcessUpdateGuildRankStep1118_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateGuildRankStep1118_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateGuildRankStep1118_user(_this, szData, CUserRankingProcessUpdateGuildRankStep1118_next);
         };
-        char CUserRankingProcessUpdateGuildRankStep2120_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateGuildRankStep2120_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateGuildRankStep2120_user(_this, szData, CUserRankingProcessUpdateGuildRankStep2120_next);
         };
-        char CUserRankingProcessUpdateGuildRankStep3122_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateGuildRankStep3122_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateGuildRankStep3122_user(_this, szData, CUserRankingProcessUpdateGuildRankStep3122_next);
         };
-        char CUserRankingProcessUpdateGuildRankStep4124_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateGuildRankStep4124_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateGuildRankStep4124_user(_this, szData, CUserRankingProcessUpdateGuildRankStep4124_next);
         };
-        void CUserRankingProcessUpdateNextRankingStartTime126_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessUpdateNextRankingStartTime126_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessUpdateNextRankingStartTime126_user(_this, CUserRankingProcessUpdateNextRankingStartTime126_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep1128_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep1128_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep1128_user(_this, szData, CUserRankingProcessUpdateRaceRankStep1128_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep10130_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep10130_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep10130_user(_this, szData, CUserRankingProcessUpdateRaceRankStep10130_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep11132_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep11132_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep11132_user(_this, szData, CUserRankingProcessUpdateRaceRankStep11132_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep2134_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep2134_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep2134_user(_this, szData, CUserRankingProcessUpdateRaceRankStep2134_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep3136_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep3136_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep3136_user(_this, szData, CUserRankingProcessUpdateRaceRankStep3136_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep4138_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep4138_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep4138_user(_this, szData, CUserRankingProcessUpdateRaceRankStep4138_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep5140_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep5140_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep5140_user(_this, szData, CUserRankingProcessUpdateRaceRankStep5140_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep6142_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep6142_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep6142_user(_this, szData, CUserRankingProcessUpdateRaceRankStep6142_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep7144_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep7144_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep7144_user(_this, szData, CUserRankingProcessUpdateRaceRankStep7144_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep8146_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep8146_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep8146_user(_this, szData, CUserRankingProcessUpdateRaceRankStep8146_next);
         };
-        char CUserRankingProcessUpdateRaceRankStep9148_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRaceRankStep9148_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRaceRankStep9148_user(_this, szData, CUserRankingProcessUpdateRaceRankStep9148_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep1150_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep1150_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep1150_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep1150_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep2152_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep2152_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep2152_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep2152_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep3154_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep3154_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep3154_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep3154_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep4156_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep4156_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep4156_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep4156_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep5158_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep5158_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep5158_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep5158_next);
         };
-        char CUserRankingProcessUpdateRankinGuildStep6160_wrapper(struct CUserRankingProcess* _this, char* szData)
+        static char CUserRankingProcessUpdateRankinGuildStep6160_wrapper(struct CUserRankingProcess* _this, char* szData)
         {
            return CUserRankingProcessUpdateRankinGuildStep6160_user(_this, szData, CUserRankingProcessUpdateRankinGuildStep6160_next);
         };
-        void CUserRankingProcessdtor_CUserRankingProcess162_wrapper(struct CUserRankingProcess* _this)
+        static void CUserRankingProcessdtor_CUserRankingProcess162_wrapper(struct CUserRankingProcess* _this)
         {
            CUserRankingProcessdtor_CUserRankingProcess162_user(_this, CUserRankingProcessdtor_CUserRankingProcess162_next);
         };
         
-        hook_record CUserRankingProcess_functions[] = {
+        static hook_record CUserRankingProcess_functions[] = {
         {   (LPVOID)0x140342480L,
             (LPVOID *)&CUserRankingProcessAllocObject2_user,
             (LPVOID *)&CUserRankingProcessAllocObject2_next,
@@ -905,5 +905,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

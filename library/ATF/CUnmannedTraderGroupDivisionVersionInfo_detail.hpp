@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_ptr CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_clbk CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_user(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_ptr CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_clbk CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_user(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoGetVersion6_ptr CUnmannedTraderGroupDivisionVersionInfoGetVersion6_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoGetVersion6_clbk CUnmannedTraderGroupDivisionVersionInfoGetVersion6_user(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_ptr CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_clbk CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_user(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_ptr CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_clbk CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_user(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_ptr CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_next(nullptr);
-        info::CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_clbk CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_ptr CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_clbk CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_ptr CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_clbk CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoGetVersion6_ptr CUnmannedTraderGroupDivisionVersionInfoGetVersion6_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoGetVersion6_clbk CUnmannedTraderGroupDivisionVersionInfoGetVersion6_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_ptr CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_clbk CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_ptr CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_clbk CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_user(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_ptr CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_next(nullptr);
+        static info::CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_clbk CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_user(nullptr);
         
-        void CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, struct CUnmannedTraderGroupDivisionVersionInfo* lhs)
+        static void CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, struct CUnmannedTraderGroupDivisionVersionInfo* lhs)
         {
            CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_user(_this, lhs, CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_next);
         };
-        void CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, int iType, unsigned int uiMaxCnt)
+        static void CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, int iType, unsigned int uiMaxCnt)
         {
            CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_user(_this, iType, uiMaxCnt, CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo4_next);
         };
-        bool CUnmannedTraderGroupDivisionVersionInfoGetVersion6_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, char byClass, unsigned int* dwVer)
+        static bool CUnmannedTraderGroupDivisionVersionInfoGetVersion6_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, char byClass, unsigned int* dwVer)
         {
            return CUnmannedTraderGroupDivisionVersionInfoGetVersion6_user(_this, byClass, dwVer, CUnmannedTraderGroupDivisionVersionInfoGetVersion6_next);
         };
-        bool CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, char byClass)
+        static bool CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this, char byClass)
         {
            return CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_user(_this, byClass, CUnmannedTraderGroupDivisionVersionInfoIncreaseVersion8_next);
         };
-        bool CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this)
+        static bool CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this)
         {
            return CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_user(_this, CUnmannedTraderGroupDivisionVersionInfoIsEmpty10_next);
         };
-        void CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this)
+        static void CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_wrapper(struct CUnmannedTraderGroupDivisionVersionInfo* _this)
         {
            CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_user(_this, CUnmannedTraderGroupDivisionVersionInfodtor_CUnmannedTraderGroupDivisionVersionInfo16_next);
         };
         
-        hook_record CUnmannedTraderGroupDivisionVersionInfo_functions[] = {
+        static hook_record CUnmannedTraderGroupDivisionVersionInfo_functions[] = {
         {   (LPVOID)0x140399520L,
             (LPVOID *)&CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_user,
             (LPVOID *)&CUnmannedTraderGroupDivisionVersionInfoctor_CUnmannedTraderGroupDivisionVersionInfo2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

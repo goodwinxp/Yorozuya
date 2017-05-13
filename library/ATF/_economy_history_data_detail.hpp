@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_economy_history_dataInit2_ptr _economy_history_dataInit2_next(nullptr);
-        info::_economy_history_dataInit2_clbk _economy_history_dataInit2_user(nullptr);
-        info::_economy_history_datactor__economy_history_data4_ptr _economy_history_datactor__economy_history_data4_next(nullptr);
-        info::_economy_history_datactor__economy_history_data4_clbk _economy_history_datactor__economy_history_data4_user(nullptr);
+        static info::_economy_history_dataInit2_ptr _economy_history_dataInit2_next(nullptr);
+        static info::_economy_history_dataInit2_clbk _economy_history_dataInit2_user(nullptr);
+        static info::_economy_history_datactor__economy_history_data4_ptr _economy_history_datactor__economy_history_data4_next(nullptr);
+        static info::_economy_history_datactor__economy_history_data4_clbk _economy_history_datactor__economy_history_data4_user(nullptr);
         
-        void _economy_history_dataInit2_wrapper(struct _economy_history_data* _this)
+        static void _economy_history_dataInit2_wrapper(struct _economy_history_data* _this)
         {
            _economy_history_dataInit2_user(_this, _economy_history_dataInit2_next);
         };
-        void _economy_history_datactor__economy_history_data4_wrapper(struct _economy_history_data* _this)
+        static void _economy_history_datactor__economy_history_data4_wrapper(struct _economy_history_data* _this)
         {
            _economy_history_datactor__economy_history_data4_user(_this, _economy_history_datactor__economy_history_data4_next);
         };
         
-        hook_record _economy_history_data_functions[] = {
+        static hook_record _economy_history_data_functions[] = {
         {   (LPVOID)0x1402058c0L,
             (LPVOID *)&_economy_history_dataInit2_user,
             (LPVOID *)&_economy_history_dataInit2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

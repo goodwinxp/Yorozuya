@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_unmannedtrader_regist_item_success_result_zoclsize2_ptr _unmannedtrader_regist_item_success_result_zoclsize2_next(nullptr);
-        info::_unmannedtrader_regist_item_success_result_zoclsize2_clbk _unmannedtrader_regist_item_success_result_zoclsize2_user(nullptr);
+        static info::_unmannedtrader_regist_item_success_result_zoclsize2_ptr _unmannedtrader_regist_item_success_result_zoclsize2_next(nullptr);
+        static info::_unmannedtrader_regist_item_success_result_zoclsize2_clbk _unmannedtrader_regist_item_success_result_zoclsize2_user(nullptr);
         
-        int _unmannedtrader_regist_item_success_result_zoclsize2_wrapper(struct _unmannedtrader_regist_item_success_result_zocl* _this)
+        static int _unmannedtrader_regist_item_success_result_zoclsize2_wrapper(struct _unmannedtrader_regist_item_success_result_zocl* _this)
         {
            return _unmannedtrader_regist_item_success_result_zoclsize2_user(_this, _unmannedtrader_regist_item_success_result_zoclsize2_next);
         };
         
-        hook_record _unmannedtrader_regist_item_success_result_zocl_functions[] = {
+        static hook_record _unmannedtrader_regist_item_success_result_zocl_functions[] = {
         {   (LPVOID)0x14035fd80L,
             (LPVOID *)&_unmannedtrader_regist_item_success_result_zoclsize2_user,
             (LPVOID *)&_unmannedtrader_regist_item_success_result_zoclsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

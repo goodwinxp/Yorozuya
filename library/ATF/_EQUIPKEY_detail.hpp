@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_EQUIPKEYCovDBKey2_ptr _EQUIPKEYCovDBKey2_next(nullptr);
-        info::_EQUIPKEYCovDBKey2_clbk _EQUIPKEYCovDBKey2_user(nullptr);
-        info::_EQUIPKEYIsFilled4_ptr _EQUIPKEYIsFilled4_next(nullptr);
-        info::_EQUIPKEYIsFilled4_clbk _EQUIPKEYIsFilled4_user(nullptr);
-        info::_EQUIPKEYLoadDBKey6_ptr _EQUIPKEYLoadDBKey6_next(nullptr);
-        info::_EQUIPKEYLoadDBKey6_clbk _EQUIPKEYLoadDBKey6_user(nullptr);
-        info::_EQUIPKEYSetRelease8_ptr _EQUIPKEYSetRelease8_next(nullptr);
-        info::_EQUIPKEYSetRelease8_clbk _EQUIPKEYSetRelease8_user(nullptr);
+        static info::_EQUIPKEYCovDBKey2_ptr _EQUIPKEYCovDBKey2_next(nullptr);
+        static info::_EQUIPKEYCovDBKey2_clbk _EQUIPKEYCovDBKey2_user(nullptr);
+        static info::_EQUIPKEYIsFilled4_ptr _EQUIPKEYIsFilled4_next(nullptr);
+        static info::_EQUIPKEYIsFilled4_clbk _EQUIPKEYIsFilled4_user(nullptr);
+        static info::_EQUIPKEYLoadDBKey6_ptr _EQUIPKEYLoadDBKey6_next(nullptr);
+        static info::_EQUIPKEYLoadDBKey6_clbk _EQUIPKEYLoadDBKey6_user(nullptr);
+        static info::_EQUIPKEYSetRelease8_ptr _EQUIPKEYSetRelease8_next(nullptr);
+        static info::_EQUIPKEYSetRelease8_clbk _EQUIPKEYSetRelease8_user(nullptr);
         
-        int16_t _EQUIPKEYCovDBKey2_wrapper(struct _EQUIPKEY* _this)
+        static int16_t _EQUIPKEYCovDBKey2_wrapper(struct _EQUIPKEY* _this)
         {
            return _EQUIPKEYCovDBKey2_user(_this, _EQUIPKEYCovDBKey2_next);
         };
-        bool _EQUIPKEYIsFilled4_wrapper(struct _EQUIPKEY* _this)
+        static bool _EQUIPKEYIsFilled4_wrapper(struct _EQUIPKEY* _this)
         {
            return _EQUIPKEYIsFilled4_user(_this, _EQUIPKEYIsFilled4_next);
         };
-        void _EQUIPKEYLoadDBKey6_wrapper(struct _EQUIPKEY* _this, int16_t pl_zKey)
+        static void _EQUIPKEYLoadDBKey6_wrapper(struct _EQUIPKEY* _this, int16_t pl_zKey)
         {
            _EQUIPKEYLoadDBKey6_user(_this, pl_zKey, _EQUIPKEYLoadDBKey6_next);
         };
-        void _EQUIPKEYSetRelease8_wrapper(struct _EQUIPKEY* _this)
+        static void _EQUIPKEYSetRelease8_wrapper(struct _EQUIPKEY* _this)
         {
            _EQUIPKEYSetRelease8_user(_this, _EQUIPKEYSetRelease8_next);
         };
         
-        hook_record _EQUIPKEY_functions[] = {
+        static hook_record _EQUIPKEY_functions[] = {
         {   (LPVOID)0x1401bf280L,
             (LPVOID *)&_EQUIPKEYCovDBKey2_user,
             (LPVOID *)&_EQUIPKEYCovDBKey2_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

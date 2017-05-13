@@ -8,111 +8,111 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRecallEffectControllerctor_CRecallEffectController2_ptr CRecallEffectControllerctor_CRecallEffectController2_next(nullptr);
-        info::CRecallEffectControllerctor_CRecallEffectController2_clbk CRecallEffectControllerctor_CRecallEffectController2_user(nullptr);
-        info::CRecallEffectControllerCleanUp4_ptr CRecallEffectControllerCleanUp4_next(nullptr);
-        info::CRecallEffectControllerCleanUp4_clbk CRecallEffectControllerCleanUp4_user(nullptr);
-        info::CRecallEffectControllerClose6_ptr CRecallEffectControllerClose6_next(nullptr);
-        info::CRecallEffectControllerClose6_clbk CRecallEffectControllerClose6_user(nullptr);
-        info::CRecallEffectControllerDecideRecall8_ptr CRecallEffectControllerDecideRecall8_next(nullptr);
-        info::CRecallEffectControllerDecideRecall8_clbk CRecallEffectControllerDecideRecall8_user(nullptr);
-        info::CRecallEffectControllerDestroy10_ptr CRecallEffectControllerDestroy10_next(nullptr);
-        info::CRecallEffectControllerDestroy10_clbk CRecallEffectControllerDestroy10_user(nullptr);
-        info::CRecallEffectControllerGetEmpty12_ptr CRecallEffectControllerGetEmpty12_next(nullptr);
-        info::CRecallEffectControllerGetEmpty12_clbk CRecallEffectControllerGetEmpty12_user(nullptr);
-        info::CRecallEffectControllerGetResistedRecall14_ptr CRecallEffectControllerGetResistedRecall14_next(nullptr);
-        info::CRecallEffectControllerGetResistedRecall14_clbk CRecallEffectControllerGetResistedRecall14_user(nullptr);
-        info::CRecallEffectControllerInit16_ptr CRecallEffectControllerInit16_next(nullptr);
-        info::CRecallEffectControllerInit16_clbk CRecallEffectControllerInit16_user(nullptr);
-        info::CRecallEffectControllerInstance18_ptr CRecallEffectControllerInstance18_next(nullptr);
-        info::CRecallEffectControllerInstance18_clbk CRecallEffectControllerInstance18_user(nullptr);
-        info::CRecallEffectControllerOnLoop20_ptr CRecallEffectControllerOnLoop20_next(nullptr);
-        info::CRecallEffectControllerOnLoop20_clbk CRecallEffectControllerOnLoop20_user(nullptr);
-        info::CRecallEffectControllerProcessRequestRecall22_ptr CRecallEffectControllerProcessRequestRecall22_next(nullptr);
-        info::CRecallEffectControllerProcessRequestRecall22_clbk CRecallEffectControllerProcessRequestRecall22_user(nullptr);
-        info::CRecallEffectControllerRequestRecall24_ptr CRecallEffectControllerRequestRecall24_next(nullptr);
-        info::CRecallEffectControllerRequestRecall24_clbk CRecallEffectControllerRequestRecall24_user(nullptr);
-        info::CRecallEffectControllerSendDecideRecallErrorResultToDest26_ptr CRecallEffectControllerSendDecideRecallErrorResultToDest26_next(nullptr);
-        info::CRecallEffectControllerSendDecideRecallErrorResultToDest26_clbk CRecallEffectControllerSendDecideRecallErrorResultToDest26_user(nullptr);
-        info::CRecallEffectControllerSendRecallReqeustResult28_ptr CRecallEffectControllerSendRecallReqeustResult28_next(nullptr);
-        info::CRecallEffectControllerSendRecallReqeustResult28_clbk CRecallEffectControllerSendRecallReqeustResult28_user(nullptr);
-        info::CRecallEffectControllerSendRecallReqeustToDest30_ptr CRecallEffectControllerSendRecallReqeustToDest30_next(nullptr);
-        info::CRecallEffectControllerSendRecallReqeustToDest30_clbk CRecallEffectControllerSendRecallReqeustToDest30_user(nullptr);
-        info::CRecallEffectControllerUpdateClose32_ptr CRecallEffectControllerUpdateClose32_next(nullptr);
-        info::CRecallEffectControllerUpdateClose32_clbk CRecallEffectControllerUpdateClose32_user(nullptr);
-        info::CRecallEffectControllerdtor_CRecallEffectController36_ptr CRecallEffectControllerdtor_CRecallEffectController36_next(nullptr);
-        info::CRecallEffectControllerdtor_CRecallEffectController36_clbk CRecallEffectControllerdtor_CRecallEffectController36_user(nullptr);
+        static info::CRecallEffectControllerctor_CRecallEffectController2_ptr CRecallEffectControllerctor_CRecallEffectController2_next(nullptr);
+        static info::CRecallEffectControllerctor_CRecallEffectController2_clbk CRecallEffectControllerctor_CRecallEffectController2_user(nullptr);
+        static info::CRecallEffectControllerCleanUp4_ptr CRecallEffectControllerCleanUp4_next(nullptr);
+        static info::CRecallEffectControllerCleanUp4_clbk CRecallEffectControllerCleanUp4_user(nullptr);
+        static info::CRecallEffectControllerClose6_ptr CRecallEffectControllerClose6_next(nullptr);
+        static info::CRecallEffectControllerClose6_clbk CRecallEffectControllerClose6_user(nullptr);
+        static info::CRecallEffectControllerDecideRecall8_ptr CRecallEffectControllerDecideRecall8_next(nullptr);
+        static info::CRecallEffectControllerDecideRecall8_clbk CRecallEffectControllerDecideRecall8_user(nullptr);
+        static info::CRecallEffectControllerDestroy10_ptr CRecallEffectControllerDestroy10_next(nullptr);
+        static info::CRecallEffectControllerDestroy10_clbk CRecallEffectControllerDestroy10_user(nullptr);
+        static info::CRecallEffectControllerGetEmpty12_ptr CRecallEffectControllerGetEmpty12_next(nullptr);
+        static info::CRecallEffectControllerGetEmpty12_clbk CRecallEffectControllerGetEmpty12_user(nullptr);
+        static info::CRecallEffectControllerGetResistedRecall14_ptr CRecallEffectControllerGetResistedRecall14_next(nullptr);
+        static info::CRecallEffectControllerGetResistedRecall14_clbk CRecallEffectControllerGetResistedRecall14_user(nullptr);
+        static info::CRecallEffectControllerInit16_ptr CRecallEffectControllerInit16_next(nullptr);
+        static info::CRecallEffectControllerInit16_clbk CRecallEffectControllerInit16_user(nullptr);
+        static info::CRecallEffectControllerInstance18_ptr CRecallEffectControllerInstance18_next(nullptr);
+        static info::CRecallEffectControllerInstance18_clbk CRecallEffectControllerInstance18_user(nullptr);
+        static info::CRecallEffectControllerOnLoop20_ptr CRecallEffectControllerOnLoop20_next(nullptr);
+        static info::CRecallEffectControllerOnLoop20_clbk CRecallEffectControllerOnLoop20_user(nullptr);
+        static info::CRecallEffectControllerProcessRequestRecall22_ptr CRecallEffectControllerProcessRequestRecall22_next(nullptr);
+        static info::CRecallEffectControllerProcessRequestRecall22_clbk CRecallEffectControllerProcessRequestRecall22_user(nullptr);
+        static info::CRecallEffectControllerRequestRecall24_ptr CRecallEffectControllerRequestRecall24_next(nullptr);
+        static info::CRecallEffectControllerRequestRecall24_clbk CRecallEffectControllerRequestRecall24_user(nullptr);
+        static info::CRecallEffectControllerSendDecideRecallErrorResultToDest26_ptr CRecallEffectControllerSendDecideRecallErrorResultToDest26_next(nullptr);
+        static info::CRecallEffectControllerSendDecideRecallErrorResultToDest26_clbk CRecallEffectControllerSendDecideRecallErrorResultToDest26_user(nullptr);
+        static info::CRecallEffectControllerSendRecallReqeustResult28_ptr CRecallEffectControllerSendRecallReqeustResult28_next(nullptr);
+        static info::CRecallEffectControllerSendRecallReqeustResult28_clbk CRecallEffectControllerSendRecallReqeustResult28_user(nullptr);
+        static info::CRecallEffectControllerSendRecallReqeustToDest30_ptr CRecallEffectControllerSendRecallReqeustToDest30_next(nullptr);
+        static info::CRecallEffectControllerSendRecallReqeustToDest30_clbk CRecallEffectControllerSendRecallReqeustToDest30_user(nullptr);
+        static info::CRecallEffectControllerUpdateClose32_ptr CRecallEffectControllerUpdateClose32_next(nullptr);
+        static info::CRecallEffectControllerUpdateClose32_clbk CRecallEffectControllerUpdateClose32_user(nullptr);
+        static info::CRecallEffectControllerdtor_CRecallEffectController36_ptr CRecallEffectControllerdtor_CRecallEffectController36_next(nullptr);
+        static info::CRecallEffectControllerdtor_CRecallEffectController36_clbk CRecallEffectControllerdtor_CRecallEffectController36_user(nullptr);
         
-        void CRecallEffectControllerctor_CRecallEffectController2_wrapper(struct CRecallEffectController* _this)
+        static void CRecallEffectControllerctor_CRecallEffectController2_wrapper(struct CRecallEffectController* _this)
         {
            CRecallEffectControllerctor_CRecallEffectController2_user(_this, CRecallEffectControllerctor_CRecallEffectController2_next);
         };
-        void CRecallEffectControllerCleanUp4_wrapper(struct CRecallEffectController* _this)
+        static void CRecallEffectControllerCleanUp4_wrapper(struct CRecallEffectController* _this)
         {
            CRecallEffectControllerCleanUp4_user(_this, CRecallEffectControllerCleanUp4_next);
         };
-        void CRecallEffectControllerClose6_wrapper(struct CRecallEffectController* _this, struct CRecallRequest* pkRequest, bool bDone)
+        static void CRecallEffectControllerClose6_wrapper(struct CRecallEffectController* _this, struct CRecallRequest* pkRequest, bool bDone)
         {
            CRecallEffectControllerClose6_user(_this, pkRequest, bDone, CRecallEffectControllerClose6_next);
         };
-        void CRecallEffectControllerDecideRecall8_wrapper(struct CRecallEffectController* _this, uint16_t dwRequestID, char byAgree, struct CPlayer* pkObj)
+        static void CRecallEffectControllerDecideRecall8_wrapper(struct CRecallEffectController* _this, uint16_t dwRequestID, char byAgree, struct CPlayer* pkObj)
         {
            CRecallEffectControllerDecideRecall8_user(_this, dwRequestID, byAgree, pkObj, CRecallEffectControllerDecideRecall8_next);
         };
-        void CRecallEffectControllerDestroy10_wrapper()
+        static void CRecallEffectControllerDestroy10_wrapper()
         {
            CRecallEffectControllerDestroy10_user(CRecallEffectControllerDestroy10_next);
         };
-        struct CRecallRequest* CRecallEffectControllerGetEmpty12_wrapper(struct CRecallEffectController* _this)
+        static struct CRecallRequest* CRecallEffectControllerGetEmpty12_wrapper(struct CRecallEffectController* _this)
         {
            return CRecallEffectControllerGetEmpty12_user(_this, CRecallEffectControllerGetEmpty12_next);
         };
-        char CRecallEffectControllerGetResistedRecall14_wrapper(struct CRecallEffectController* _this, uint16_t wID, struct CRecallRequest** pkRequest)
+        static char CRecallEffectControllerGetResistedRecall14_wrapper(struct CRecallEffectController* _this, uint16_t wID, struct CRecallRequest** pkRequest)
         {
            return CRecallEffectControllerGetResistedRecall14_user(_this, wID, pkRequest, CRecallEffectControllerGetResistedRecall14_next);
         };
-        bool CRecallEffectControllerInit16_wrapper(struct CRecallEffectController* _this, unsigned int uiSize)
+        static bool CRecallEffectControllerInit16_wrapper(struct CRecallEffectController* _this, unsigned int uiSize)
         {
            return CRecallEffectControllerInit16_user(_this, uiSize, CRecallEffectControllerInit16_next);
         };
-        struct CRecallEffectController* CRecallEffectControllerInstance18_wrapper()
+        static struct CRecallEffectController* CRecallEffectControllerInstance18_wrapper()
         {
            return CRecallEffectControllerInstance18_user(CRecallEffectControllerInstance18_next);
         };
-        void CRecallEffectControllerOnLoop20_wrapper(struct CRecallEffectController* _this)
+        static void CRecallEffectControllerOnLoop20_wrapper(struct CRecallEffectController* _this)
         {
            CRecallEffectControllerOnLoop20_user(_this, CRecallEffectControllerOnLoop20_next);
         };
-        char CRecallEffectControllerProcessRequestRecall22_wrapper(struct CRecallEffectController* _this, struct CPlayer* pkPerformer, struct CCharacter* pkDest, struct CRecallRequest** pkRequest, bool bRecallParty, bool bStone, bool bBattleModeUse)
+        static char CRecallEffectControllerProcessRequestRecall22_wrapper(struct CRecallEffectController* _this, struct CPlayer* pkPerformer, struct CCharacter* pkDest, struct CRecallRequest** pkRequest, bool bRecallParty, bool bStone, bool bBattleModeUse)
         {
            return CRecallEffectControllerProcessRequestRecall22_user(_this, pkPerformer, pkDest, pkRequest, bRecallParty, bStone, bBattleModeUse, CRecallEffectControllerProcessRequestRecall22_next);
         };
-        bool CRecallEffectControllerRequestRecall24_wrapper(struct CRecallEffectController* _this, struct CPlayer* pkPerformer, struct CCharacter* pkDest, bool bRecallParty, bool bStone, bool bBattleModeUse)
+        static bool CRecallEffectControllerRequestRecall24_wrapper(struct CRecallEffectController* _this, struct CPlayer* pkPerformer, struct CCharacter* pkDest, bool bRecallParty, bool bStone, bool bBattleModeUse)
         {
            return CRecallEffectControllerRequestRecall24_user(_this, pkPerformer, pkDest, bRecallParty, bStone, bBattleModeUse, CRecallEffectControllerRequestRecall24_next);
         };
-        void CRecallEffectControllerSendDecideRecallErrorResultToDest26_wrapper(struct CRecallEffectController* _this, char byErr, struct CPlayer* pkDest, int nCallerMapCode)
+        static void CRecallEffectControllerSendDecideRecallErrorResultToDest26_wrapper(struct CRecallEffectController* _this, char byErr, struct CPlayer* pkDest, int nCallerMapCode)
         {
            CRecallEffectControllerSendDecideRecallErrorResultToDest26_user(_this, byErr, pkDest, nCallerMapCode, CRecallEffectControllerSendDecideRecallErrorResultToDest26_next);
         };
-        void CRecallEffectControllerSendRecallReqeustResult28_wrapper(struct CRecallEffectController* _this, char byRet, struct CPlayer* pkObj)
+        static void CRecallEffectControllerSendRecallReqeustResult28_wrapper(struct CRecallEffectController* _this, char byRet, struct CPlayer* pkObj)
         {
            CRecallEffectControllerSendRecallReqeustResult28_user(_this, byRet, pkObj, CRecallEffectControllerSendRecallReqeustResult28_next);
         };
-        void CRecallEffectControllerSendRecallReqeustToDest30_wrapper(struct CRecallEffectController* _this, uint16_t wRequestID, struct CPlayer* pkPerformer, struct CPlayer* pkDest)
+        static void CRecallEffectControllerSendRecallReqeustToDest30_wrapper(struct CRecallEffectController* _this, uint16_t wRequestID, struct CPlayer* pkPerformer, struct CPlayer* pkDest)
         {
            CRecallEffectControllerSendRecallReqeustToDest30_user(_this, wRequestID, pkPerformer, pkDest, CRecallEffectControllerSendRecallReqeustToDest30_next);
         };
-        void CRecallEffectControllerUpdateClose32_wrapper(struct CRecallEffectController* _this)
+        static void CRecallEffectControllerUpdateClose32_wrapper(struct CRecallEffectController* _this)
         {
            CRecallEffectControllerUpdateClose32_user(_this, CRecallEffectControllerUpdateClose32_next);
         };
-        void CRecallEffectControllerdtor_CRecallEffectController36_wrapper(struct CRecallEffectController* _this)
+        static void CRecallEffectControllerdtor_CRecallEffectController36_wrapper(struct CRecallEffectController* _this)
         {
            CRecallEffectControllerdtor_CRecallEffectController36_user(_this, CRecallEffectControllerdtor_CRecallEffectController36_next);
         };
         
-        hook_record CRecallEffectController_functions[] = {
+        static hook_record CRecallEffectController_functions[] = {
         {   (LPVOID)0x14024dd80L,
             (LPVOID *)&CRecallEffectControllerctor_CRecallEffectController2_user,
             (LPVOID *)&CRecallEffectControllerctor_CRecallEffectController2_next,
@@ -201,5 +201,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

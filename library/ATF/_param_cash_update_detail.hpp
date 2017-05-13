@@ -8,35 +8,35 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_param_cash_updatector__param_cash_update2_ptr _param_cash_updatector__param_cash_update2_next(nullptr);
-        info::_param_cash_updatector__param_cash_update2_clbk _param_cash_updatector__param_cash_update2_user(nullptr);
-        info::_param_cash_updatesize4_ptr _param_cash_updatesize4_next(nullptr);
-        info::_param_cash_updatesize4_clbk _param_cash_updatesize4_user(nullptr);
-        info::_param_cash_updatedtor__param_cash_update6_ptr _param_cash_updatedtor__param_cash_update6_next(nullptr);
-        info::_param_cash_updatedtor__param_cash_update6_clbk _param_cash_updatedtor__param_cash_update6_user(nullptr);
+        static info::_param_cash_updatector__param_cash_update2_ptr _param_cash_updatector__param_cash_update2_next(nullptr);
+        static info::_param_cash_updatector__param_cash_update2_clbk _param_cash_updatector__param_cash_update2_user(nullptr);
+        static info::_param_cash_updatesize4_ptr _param_cash_updatesize4_next(nullptr);
+        static info::_param_cash_updatesize4_clbk _param_cash_updatesize4_user(nullptr);
+        static info::_param_cash_updatedtor__param_cash_update6_ptr _param_cash_updatedtor__param_cash_update6_next(nullptr);
+        static info::_param_cash_updatedtor__param_cash_update6_clbk _param_cash_updatedtor__param_cash_update6_user(nullptr);
         
-        info::_param_cash_update____itemctor___item2_ptr _param_cash_update____itemctor___item2_next(nullptr);
-        info::_param_cash_update____itemctor___item2_clbk _param_cash_update____itemctor___item2_user(nullptr);
+        static info::_param_cash_update____itemctor___item2_ptr _param_cash_update____itemctor___item2_next(nullptr);
+        static info::_param_cash_update____itemctor___item2_clbk _param_cash_update____itemctor___item2_user(nullptr);
         
-        void _param_cash_updatector__param_cash_update2_wrapper(struct _param_cash_update* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
+        static void _param_cash_updatector__param_cash_update2_wrapper(struct _param_cash_update* _this, unsigned int dwAc, unsigned int dwAv, uint16_t wSock)
         {
            _param_cash_updatector__param_cash_update2_user(_this, dwAc, dwAv, wSock, _param_cash_updatector__param_cash_update2_next);
         };
-        int _param_cash_updatesize4_wrapper(struct _param_cash_update* _this)
+        static int _param_cash_updatesize4_wrapper(struct _param_cash_update* _this)
         {
            return _param_cash_updatesize4_user(_this, _param_cash_updatesize4_next);
         };
-        void _param_cash_updatedtor__param_cash_update6_wrapper(struct _param_cash_update* _this)
+        static void _param_cash_updatedtor__param_cash_update6_wrapper(struct _param_cash_update* _this)
         {
            _param_cash_updatedtor__param_cash_update6_user(_this, _param_cash_updatedtor__param_cash_update6_next);
         };
         
-        void _param_cash_update____itemctor___item2_wrapper(struct _param_cash_update::__item* _this)
+        static void _param_cash_update____itemctor___item2_wrapper(struct _param_cash_update::__item* _this)
         {
            _param_cash_update____itemctor___item2_user(_this, _param_cash_update____itemctor___item2_next);
         };
         
-        hook_record _param_cash_update_functions[] = {
+        static hook_record _param_cash_update_functions[] = {
         {   (LPVOID)0x1402f2790L,
             (LPVOID *)&_param_cash_updatector__param_cash_update2_user,
             (LPVOID *)&_param_cash_updatector__param_cash_update2_next,
@@ -61,5 +61,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

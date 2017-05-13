@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_candidate_info_Init2_ptr _candidate_info_Init2_next(nullptr);
-        info::_candidate_info_Init2_clbk _candidate_info_Init2_user(nullptr);
-        info::_candidate_infoctor__candidate_info4_ptr _candidate_infoctor__candidate_info4_next(nullptr);
-        info::_candidate_infoctor__candidate_info4_clbk _candidate_infoctor__candidate_info4_user(nullptr);
+        static info::_candidate_info_Init2_ptr _candidate_info_Init2_next(nullptr);
+        static info::_candidate_info_Init2_clbk _candidate_info_Init2_user(nullptr);
+        static info::_candidate_infoctor__candidate_info4_ptr _candidate_infoctor__candidate_info4_next(nullptr);
+        static info::_candidate_infoctor__candidate_info4_clbk _candidate_infoctor__candidate_info4_user(nullptr);
         
-        void _candidate_info_Init2_wrapper(struct _candidate_info* _this)
+        static void _candidate_info_Init2_wrapper(struct _candidate_info* _this)
         {
            _candidate_info_Init2_user(_this, _candidate_info_Init2_next);
         };
-        void _candidate_infoctor__candidate_info4_wrapper(struct _candidate_info* _this)
+        static void _candidate_infoctor__candidate_info4_wrapper(struct _candidate_info* _this)
         {
            _candidate_infoctor__candidate_info4_user(_this, _candidate_infoctor__candidate_info4_next);
         };
         
-        hook_record _candidate_info_functions[] = {
+        static hook_record _candidate_info_functions[] = {
         {   (LPVOID)0x1402b62b0L,
             (LPVOID *)&_candidate_info_Init2_user,
             (LPVOID *)&_candidate_info_Init2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

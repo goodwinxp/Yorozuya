@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_ptr _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_next(nullptr);
-        info::_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_clbk _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_user(nullptr);
+        static info::_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_ptr _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_next(nullptr);
+        static info::_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_clbk _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_user(nullptr);
         
-        void _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_wrapper(struct _throw_skill_result_other_zocl* _this)
+        static void _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_wrapper(struct _throw_skill_result_other_zocl* _this)
         {
            _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_user(_this, _throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_next);
         };
         
-        hook_record _throw_skill_result_other_zocl_functions[] = {
+        static hook_record _throw_skill_result_other_zocl_functions[] = {
         {   (LPVOID)0x1400efd90L,
             (LPVOID *)&_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_user,
             (LPVOID *)&_throw_skill_result_other_zoclctor__throw_skill_result_other_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

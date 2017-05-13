@@ -8,51 +8,51 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::FinalDecisionProcessorDoit2_ptr FinalDecisionProcessorDoit2_next(nullptr);
-        info::FinalDecisionProcessorDoit2_clbk FinalDecisionProcessorDoit2_user(nullptr);
-        info::FinalDecisionProcessorctor_FinalDecisionProcessor4_ptr FinalDecisionProcessorctor_FinalDecisionProcessor4_next(nullptr);
-        info::FinalDecisionProcessorctor_FinalDecisionProcessor4_clbk FinalDecisionProcessorctor_FinalDecisionProcessor4_user(nullptr);
-        info::FinalDecisionProcessorInitialize6_ptr FinalDecisionProcessorInitialize6_next(nullptr);
-        info::FinalDecisionProcessorInitialize6_clbk FinalDecisionProcessorInitialize6_user(nullptr);
-        info::FinalDecisionProcessor_FinalDecision8_ptr FinalDecisionProcessor_FinalDecision8_next(nullptr);
-        info::FinalDecisionProcessor_FinalDecision8_clbk FinalDecisionProcessor_FinalDecision8_user(nullptr);
-        info::FinalDecisionProcessor_ReqNetFinalDecision10_ptr FinalDecisionProcessor_ReqNetFinalDecision10_next(nullptr);
-        info::FinalDecisionProcessor_ReqNetFinalDecision10_clbk FinalDecisionProcessor_ReqNetFinalDecision10_user(nullptr);
-        info::FinalDecisionProcessor_SetWinner12_ptr FinalDecisionProcessor_SetWinner12_next(nullptr);
-        info::FinalDecisionProcessor_SetWinner12_clbk FinalDecisionProcessor_SetWinner12_user(nullptr);
-        info::FinalDecisionProcessordtor_FinalDecisionProcessor17_ptr FinalDecisionProcessordtor_FinalDecisionProcessor17_next(nullptr);
-        info::FinalDecisionProcessordtor_FinalDecisionProcessor17_clbk FinalDecisionProcessordtor_FinalDecisionProcessor17_user(nullptr);
+        static info::FinalDecisionProcessorDoit2_ptr FinalDecisionProcessorDoit2_next(nullptr);
+        static info::FinalDecisionProcessorDoit2_clbk FinalDecisionProcessorDoit2_user(nullptr);
+        static info::FinalDecisionProcessorctor_FinalDecisionProcessor4_ptr FinalDecisionProcessorctor_FinalDecisionProcessor4_next(nullptr);
+        static info::FinalDecisionProcessorctor_FinalDecisionProcessor4_clbk FinalDecisionProcessorctor_FinalDecisionProcessor4_user(nullptr);
+        static info::FinalDecisionProcessorInitialize6_ptr FinalDecisionProcessorInitialize6_next(nullptr);
+        static info::FinalDecisionProcessorInitialize6_clbk FinalDecisionProcessorInitialize6_user(nullptr);
+        static info::FinalDecisionProcessor_FinalDecision8_ptr FinalDecisionProcessor_FinalDecision8_next(nullptr);
+        static info::FinalDecisionProcessor_FinalDecision8_clbk FinalDecisionProcessor_FinalDecision8_user(nullptr);
+        static info::FinalDecisionProcessor_ReqNetFinalDecision10_ptr FinalDecisionProcessor_ReqNetFinalDecision10_next(nullptr);
+        static info::FinalDecisionProcessor_ReqNetFinalDecision10_clbk FinalDecisionProcessor_ReqNetFinalDecision10_user(nullptr);
+        static info::FinalDecisionProcessor_SetWinner12_ptr FinalDecisionProcessor_SetWinner12_next(nullptr);
+        static info::FinalDecisionProcessor_SetWinner12_clbk FinalDecisionProcessor_SetWinner12_user(nullptr);
+        static info::FinalDecisionProcessordtor_FinalDecisionProcessor17_ptr FinalDecisionProcessordtor_FinalDecisionProcessor17_next(nullptr);
+        static info::FinalDecisionProcessordtor_FinalDecisionProcessor17_clbk FinalDecisionProcessordtor_FinalDecisionProcessor17_user(nullptr);
         
-        int FinalDecisionProcessorDoit2_wrapper(struct FinalDecisionProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
+        static int FinalDecisionProcessorDoit2_wrapper(struct FinalDecisionProcessor* _this, Cmd eCmd, struct CPlayer* pOne, char* pdata)
         {
            return FinalDecisionProcessorDoit2_user(_this, eCmd, pOne, pdata, FinalDecisionProcessorDoit2_next);
         };
-        void FinalDecisionProcessorctor_FinalDecisionProcessor4_wrapper(struct FinalDecisionProcessor* _this)
+        static void FinalDecisionProcessorctor_FinalDecisionProcessor4_wrapper(struct FinalDecisionProcessor* _this)
         {
            FinalDecisionProcessorctor_FinalDecisionProcessor4_user(_this, FinalDecisionProcessorctor_FinalDecisionProcessor4_next);
         };
-        bool FinalDecisionProcessorInitialize6_wrapper(struct FinalDecisionProcessor* _this)
+        static bool FinalDecisionProcessorInitialize6_wrapper(struct FinalDecisionProcessor* _this)
         {
            return FinalDecisionProcessorInitialize6_user(_this, FinalDecisionProcessorInitialize6_next);
         };
-        void FinalDecisionProcessor_FinalDecision8_wrapper(struct FinalDecisionProcessor* _this)
+        static void FinalDecisionProcessor_FinalDecision8_wrapper(struct FinalDecisionProcessor* _this)
         {
            FinalDecisionProcessor_FinalDecision8_user(_this, FinalDecisionProcessor_FinalDecision8_next);
         };
-        void FinalDecisionProcessor_ReqNetFinalDecision10_wrapper(struct FinalDecisionProcessor* _this, struct CPlayer* pOne)
+        static void FinalDecisionProcessor_ReqNetFinalDecision10_wrapper(struct FinalDecisionProcessor* _this, struct CPlayer* pOne)
         {
            FinalDecisionProcessor_ReqNetFinalDecision10_user(_this, pOne, FinalDecisionProcessor_ReqNetFinalDecision10_next);
         };
-        void FinalDecisionProcessor_SetWinner12_wrapper(struct FinalDecisionProcessor* _this)
+        static void FinalDecisionProcessor_SetWinner12_wrapper(struct FinalDecisionProcessor* _this)
         {
            FinalDecisionProcessor_SetWinner12_user(_this, FinalDecisionProcessor_SetWinner12_next);
         };
-        void FinalDecisionProcessordtor_FinalDecisionProcessor17_wrapper(struct FinalDecisionProcessor* _this)
+        static void FinalDecisionProcessordtor_FinalDecisionProcessor17_wrapper(struct FinalDecisionProcessor* _this)
         {
            FinalDecisionProcessordtor_FinalDecisionProcessor17_user(_this, FinalDecisionProcessordtor_FinalDecisionProcessor17_next);
         };
         
-        hook_record FinalDecisionProcessor_functions[] = {
+        static hook_record FinalDecisionProcessor_functions[] = {
         {   (LPVOID)0x1402bdf90L,
             (LPVOID *)&FinalDecisionProcessorDoit2_user,
             (LPVOID *)&FinalDecisionProcessorDoit2_next,
@@ -91,5 +91,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

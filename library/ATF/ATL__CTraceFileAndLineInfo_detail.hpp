@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_ptr ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_next(nullptr);
-            info::ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_clbk ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_user(nullptr);
+            static info::ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_ptr ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_next(nullptr);
+            static info::ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_clbk ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_user(nullptr);
             
-            void ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_wrapper(struct ATL::CTraceFileAndLineInfo* _this, char* pszFileName, int nLineNo)
+            static void ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_wrapper(struct ATL::CTraceFileAndLineInfo* _this, char* pszFileName, int nLineNo)
             {
                ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_user(_this, pszFileName, nLineNo, ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_next);
             };
             
-            hook_record CTraceFileAndLineInfo_functions[] = {
+            static hook_record CTraceFileAndLineInfo_functions[] = {
             {   (LPVOID)0x140024ff0L,
                 (LPVOID *)&ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_user,
                 (LPVOID *)&ATL__CTraceFileAndLineInfoctor_CTraceFileAndLineInfo2_next,
@@ -27,6 +27,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

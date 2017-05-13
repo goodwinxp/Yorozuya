@@ -8,249 +8,249 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CRFNewDatabaseAllocSelectHandle2_ptr CRFNewDatabaseAllocSelectHandle2_next(nullptr);
-        info::CRFNewDatabaseAllocSelectHandle2_clbk CRFNewDatabaseAllocSelectHandle2_user(nullptr);
-        info::CRFNewDatabaseAllocUpdateHandle4_ptr CRFNewDatabaseAllocUpdateHandle4_next(nullptr);
-        info::CRFNewDatabaseAllocUpdateHandle4_clbk CRFNewDatabaseAllocUpdateHandle4_user(nullptr);
-        info::CRFNewDatabasector_CRFNewDatabase6_ptr CRFNewDatabasector_CRFNewDatabase6_next(nullptr);
-        info::CRFNewDatabasector_CRFNewDatabase6_clbk CRFNewDatabasector_CRFNewDatabase6_user(nullptr);
-        info::CRFNewDatabaseCheckLogFileHour8_ptr CRFNewDatabaseCheckLogFileHour8_next(nullptr);
-        info::CRFNewDatabaseCheckLogFileHour8_clbk CRFNewDatabaseCheckLogFileHour8_user(nullptr);
-        info::CRFNewDatabaseCommitTransaction10_ptr CRFNewDatabaseCommitTransaction10_next(nullptr);
-        info::CRFNewDatabaseCommitTransaction10_clbk CRFNewDatabaseCommitTransaction10_user(nullptr);
-        info::CRFNewDatabaseConfigUserODBC12_ptr CRFNewDatabaseConfigUserODBC12_next(nullptr);
-        info::CRFNewDatabaseConfigUserODBC12_clbk CRFNewDatabaseConfigUserODBC12_user(nullptr);
-        info::CRFNewDatabaseDiagRecALog14_ptr CRFNewDatabaseDiagRecALog14_next(nullptr);
-        info::CRFNewDatabaseDiagRecALog14_clbk CRFNewDatabaseDiagRecALog14_user(nullptr);
-        info::CRFNewDatabaseDiagRecWLog16_ptr CRFNewDatabaseDiagRecWLog16_next(nullptr);
-        info::CRFNewDatabaseDiagRecWLog16_clbk CRFNewDatabaseDiagRecWLog16_user(nullptr);
-        info::CRFNewDatabaseEndDataBase18_ptr CRFNewDatabaseEndDataBase18_next(nullptr);
-        info::CRFNewDatabaseEndDataBase18_clbk CRFNewDatabaseEndDataBase18_user(nullptr);
-        info::CRFNewDatabaseEroorActionProcSQL_ERROR20_ptr CRFNewDatabaseEroorActionProcSQL_ERROR20_next(nullptr);
-        info::CRFNewDatabaseEroorActionProcSQL_ERROR20_clbk CRFNewDatabaseEroorActionProcSQL_ERROR20_user(nullptr);
-        info::CRFNewDatabaseErrFmtLog22_ptr CRFNewDatabaseErrFmtLog22_next(nullptr);
-        info::CRFNewDatabaseErrFmtLog22_clbk CRFNewDatabaseErrFmtLog22_user(nullptr);
-        info::CRFNewDatabaseErrFmtLog24_ptr CRFNewDatabaseErrFmtLog24_next(nullptr);
-        info::CRFNewDatabaseErrFmtLog24_clbk CRFNewDatabaseErrFmtLog24_user(nullptr);
-        info::CRFNewDatabaseErrLog26_ptr CRFNewDatabaseErrLog26_next(nullptr);
-        info::CRFNewDatabaseErrLog26_clbk CRFNewDatabaseErrLog26_user(nullptr);
-        info::CRFNewDatabaseErrorAction28_ptr CRFNewDatabaseErrorAction28_next(nullptr);
-        info::CRFNewDatabaseErrorAction28_clbk CRFNewDatabaseErrorAction28_user(nullptr);
-        info::CRFNewDatabaseErrorMsgLog30_ptr CRFNewDatabaseErrorMsgLog30_next(nullptr);
-        info::CRFNewDatabaseErrorMsgLog30_clbk CRFNewDatabaseErrorMsgLog30_user(nullptr);
-        info::CRFNewDatabaseErrorMsgLog32_ptr CRFNewDatabaseErrorMsgLog32_next(nullptr);
-        info::CRFNewDatabaseErrorMsgLog32_clbk CRFNewDatabaseErrorMsgLog32_user(nullptr);
-        info::CRFNewDatabaseExecUpdateBinaryQuery34_ptr CRFNewDatabaseExecUpdateBinaryQuery34_next(nullptr);
-        info::CRFNewDatabaseExecUpdateBinaryQuery34_clbk CRFNewDatabaseExecUpdateBinaryQuery34_user(nullptr);
-        info::CRFNewDatabaseExecUpdateQuery36_ptr CRFNewDatabaseExecUpdateQuery36_next(nullptr);
-        info::CRFNewDatabaseExecUpdateQuery36_clbk CRFNewDatabaseExecUpdateQuery36_user(nullptr);
-        info::CRFNewDatabaseExecUpdateQuery38_ptr CRFNewDatabaseExecUpdateQuery38_next(nullptr);
-        info::CRFNewDatabaseExecUpdateQuery38_clbk CRFNewDatabaseExecUpdateQuery38_user(nullptr);
-        info::CRFNewDatabaseFmtLog40_ptr CRFNewDatabaseFmtLog40_next(nullptr);
-        info::CRFNewDatabaseFmtLog40_clbk CRFNewDatabaseFmtLog40_user(nullptr);
-        info::CRFNewDatabaseFmtLog42_ptr CRFNewDatabaseFmtLog42_next(nullptr);
-        info::CRFNewDatabaseFmtLog42_clbk CRFNewDatabaseFmtLog42_user(nullptr);
-        info::CRFNewDatabaseFreeSelectHandle44_ptr CRFNewDatabaseFreeSelectHandle44_next(nullptr);
-        info::CRFNewDatabaseFreeSelectHandle44_clbk CRFNewDatabaseFreeSelectHandle44_user(nullptr);
-        info::CRFNewDatabaseFreeUpdateHandle46_ptr CRFNewDatabaseFreeUpdateHandle46_next(nullptr);
-        info::CRFNewDatabaseFreeUpdateHandle46_clbk CRFNewDatabaseFreeUpdateHandle46_user(nullptr);
-        info::CRFNewDatabaseGetLocalHour48_ptr CRFNewDatabaseGetLocalHour48_next(nullptr);
-        info::CRFNewDatabaseGetLocalHour48_clbk CRFNewDatabaseGetLocalHour48_user(nullptr);
-        info::CRFNewDatabaseIsConectionActive50_ptr CRFNewDatabaseIsConectionActive50_next(nullptr);
-        info::CRFNewDatabaseIsConectionActive50_clbk CRFNewDatabaseIsConectionActive50_user(nullptr);
-        info::CRFNewDatabaseLog52_ptr CRFNewDatabaseLog52_next(nullptr);
-        info::CRFNewDatabaseLog52_clbk CRFNewDatabaseLog52_user(nullptr);
-        info::CRFNewDatabaseReConnectDataBase54_ptr CRFNewDatabaseReConnectDataBase54_next(nullptr);
-        info::CRFNewDatabaseReConnectDataBase54_clbk CRFNewDatabaseReConnectDataBase54_user(nullptr);
-        info::CRFNewDatabaseRollbackTransaction56_ptr CRFNewDatabaseRollbackTransaction56_next(nullptr);
-        info::CRFNewDatabaseRollbackTransaction56_clbk CRFNewDatabaseRollbackTransaction56_user(nullptr);
-        info::CRFNewDatabaseSQLExecDirect_RetErrCode58_ptr CRFNewDatabaseSQLExecDirect_RetErrCode58_next(nullptr);
-        info::CRFNewDatabaseSQLExecDirect_RetErrCode58_clbk CRFNewDatabaseSQLExecDirect_RetErrCode58_user(nullptr);
-        info::CRFNewDatabaseSQLFetch_RetErrCode60_ptr CRFNewDatabaseSQLFetch_RetErrCode60_next(nullptr);
-        info::CRFNewDatabaseSQLFetch_RetErrCode60_clbk CRFNewDatabaseSQLFetch_RetErrCode60_user(nullptr);
-        info::CRFNewDatabaseSQLGetData_Binary_RetErrCode62_ptr CRFNewDatabaseSQLGetData_Binary_RetErrCode62_next(nullptr);
-        info::CRFNewDatabaseSQLGetData_Binary_RetErrCode62_clbk CRFNewDatabaseSQLGetData_Binary_RetErrCode62_user(nullptr);
-        info::CRFNewDatabaseSQLGetData_RetErrCode64_ptr CRFNewDatabaseSQLGetData_RetErrCode64_next(nullptr);
-        info::CRFNewDatabaseSQLGetData_RetErrCode64_clbk CRFNewDatabaseSQLGetData_RetErrCode64_user(nullptr);
-        info::CRFNewDatabaseSelectCleanUp66_ptr CRFNewDatabaseSelectCleanUp66_next(nullptr);
-        info::CRFNewDatabaseSelectCleanUp66_clbk CRFNewDatabaseSelectCleanUp66_user(nullptr);
-        info::CRFNewDatabaseSelect_NextHourDate68_ptr CRFNewDatabaseSelect_NextHourDate68_next(nullptr);
-        info::CRFNewDatabaseSelect_NextHourDate68_clbk CRFNewDatabaseSelect_NextHourDate68_user(nullptr);
-        info::CRFNewDatabaseSetAutoCommitMode70_ptr CRFNewDatabaseSetAutoCommitMode70_next(nullptr);
-        info::CRFNewDatabaseSetAutoCommitMode70_clbk CRFNewDatabaseSetAutoCommitMode70_user(nullptr);
-        info::CRFNewDatabaseSetLogFile72_ptr CRFNewDatabaseSetLogFile72_next(nullptr);
-        info::CRFNewDatabaseSetLogFile72_clbk CRFNewDatabaseSetLogFile72_user(nullptr);
-        info::CRFNewDatabaseSetReconnectFailExitFlag74_ptr CRFNewDatabaseSetReconnectFailExitFlag74_next(nullptr);
-        info::CRFNewDatabaseSetReconnectFailExitFlag74_clbk CRFNewDatabaseSetReconnectFailExitFlag74_user(nullptr);
-        info::CRFNewDatabaseStartDataBase76_ptr CRFNewDatabaseStartDataBase76_next(nullptr);
-        info::CRFNewDatabaseStartDataBase76_clbk CRFNewDatabaseStartDataBase76_user(nullptr);
-        info::CRFNewDatabaseTableExist78_ptr CRFNewDatabaseTableExist78_next(nullptr);
-        info::CRFNewDatabaseTableExist78_clbk CRFNewDatabaseTableExist78_user(nullptr);
-        info::CRFNewDatabasedtor_CRFNewDatabase83_ptr CRFNewDatabasedtor_CRFNewDatabase83_next(nullptr);
-        info::CRFNewDatabasedtor_CRFNewDatabase83_clbk CRFNewDatabasedtor_CRFNewDatabase83_user(nullptr);
+        static info::CRFNewDatabaseAllocSelectHandle2_ptr CRFNewDatabaseAllocSelectHandle2_next(nullptr);
+        static info::CRFNewDatabaseAllocSelectHandle2_clbk CRFNewDatabaseAllocSelectHandle2_user(nullptr);
+        static info::CRFNewDatabaseAllocUpdateHandle4_ptr CRFNewDatabaseAllocUpdateHandle4_next(nullptr);
+        static info::CRFNewDatabaseAllocUpdateHandle4_clbk CRFNewDatabaseAllocUpdateHandle4_user(nullptr);
+        static info::CRFNewDatabasector_CRFNewDatabase6_ptr CRFNewDatabasector_CRFNewDatabase6_next(nullptr);
+        static info::CRFNewDatabasector_CRFNewDatabase6_clbk CRFNewDatabasector_CRFNewDatabase6_user(nullptr);
+        static info::CRFNewDatabaseCheckLogFileHour8_ptr CRFNewDatabaseCheckLogFileHour8_next(nullptr);
+        static info::CRFNewDatabaseCheckLogFileHour8_clbk CRFNewDatabaseCheckLogFileHour8_user(nullptr);
+        static info::CRFNewDatabaseCommitTransaction10_ptr CRFNewDatabaseCommitTransaction10_next(nullptr);
+        static info::CRFNewDatabaseCommitTransaction10_clbk CRFNewDatabaseCommitTransaction10_user(nullptr);
+        static info::CRFNewDatabaseConfigUserODBC12_ptr CRFNewDatabaseConfigUserODBC12_next(nullptr);
+        static info::CRFNewDatabaseConfigUserODBC12_clbk CRFNewDatabaseConfigUserODBC12_user(nullptr);
+        static info::CRFNewDatabaseDiagRecALog14_ptr CRFNewDatabaseDiagRecALog14_next(nullptr);
+        static info::CRFNewDatabaseDiagRecALog14_clbk CRFNewDatabaseDiagRecALog14_user(nullptr);
+        static info::CRFNewDatabaseDiagRecWLog16_ptr CRFNewDatabaseDiagRecWLog16_next(nullptr);
+        static info::CRFNewDatabaseDiagRecWLog16_clbk CRFNewDatabaseDiagRecWLog16_user(nullptr);
+        static info::CRFNewDatabaseEndDataBase18_ptr CRFNewDatabaseEndDataBase18_next(nullptr);
+        static info::CRFNewDatabaseEndDataBase18_clbk CRFNewDatabaseEndDataBase18_user(nullptr);
+        static info::CRFNewDatabaseEroorActionProcSQL_ERROR20_ptr CRFNewDatabaseEroorActionProcSQL_ERROR20_next(nullptr);
+        static info::CRFNewDatabaseEroorActionProcSQL_ERROR20_clbk CRFNewDatabaseEroorActionProcSQL_ERROR20_user(nullptr);
+        static info::CRFNewDatabaseErrFmtLog22_ptr CRFNewDatabaseErrFmtLog22_next(nullptr);
+        static info::CRFNewDatabaseErrFmtLog22_clbk CRFNewDatabaseErrFmtLog22_user(nullptr);
+        static info::CRFNewDatabaseErrFmtLog24_ptr CRFNewDatabaseErrFmtLog24_next(nullptr);
+        static info::CRFNewDatabaseErrFmtLog24_clbk CRFNewDatabaseErrFmtLog24_user(nullptr);
+        static info::CRFNewDatabaseErrLog26_ptr CRFNewDatabaseErrLog26_next(nullptr);
+        static info::CRFNewDatabaseErrLog26_clbk CRFNewDatabaseErrLog26_user(nullptr);
+        static info::CRFNewDatabaseErrorAction28_ptr CRFNewDatabaseErrorAction28_next(nullptr);
+        static info::CRFNewDatabaseErrorAction28_clbk CRFNewDatabaseErrorAction28_user(nullptr);
+        static info::CRFNewDatabaseErrorMsgLog30_ptr CRFNewDatabaseErrorMsgLog30_next(nullptr);
+        static info::CRFNewDatabaseErrorMsgLog30_clbk CRFNewDatabaseErrorMsgLog30_user(nullptr);
+        static info::CRFNewDatabaseErrorMsgLog32_ptr CRFNewDatabaseErrorMsgLog32_next(nullptr);
+        static info::CRFNewDatabaseErrorMsgLog32_clbk CRFNewDatabaseErrorMsgLog32_user(nullptr);
+        static info::CRFNewDatabaseExecUpdateBinaryQuery34_ptr CRFNewDatabaseExecUpdateBinaryQuery34_next(nullptr);
+        static info::CRFNewDatabaseExecUpdateBinaryQuery34_clbk CRFNewDatabaseExecUpdateBinaryQuery34_user(nullptr);
+        static info::CRFNewDatabaseExecUpdateQuery36_ptr CRFNewDatabaseExecUpdateQuery36_next(nullptr);
+        static info::CRFNewDatabaseExecUpdateQuery36_clbk CRFNewDatabaseExecUpdateQuery36_user(nullptr);
+        static info::CRFNewDatabaseExecUpdateQuery38_ptr CRFNewDatabaseExecUpdateQuery38_next(nullptr);
+        static info::CRFNewDatabaseExecUpdateQuery38_clbk CRFNewDatabaseExecUpdateQuery38_user(nullptr);
+        static info::CRFNewDatabaseFmtLog40_ptr CRFNewDatabaseFmtLog40_next(nullptr);
+        static info::CRFNewDatabaseFmtLog40_clbk CRFNewDatabaseFmtLog40_user(nullptr);
+        static info::CRFNewDatabaseFmtLog42_ptr CRFNewDatabaseFmtLog42_next(nullptr);
+        static info::CRFNewDatabaseFmtLog42_clbk CRFNewDatabaseFmtLog42_user(nullptr);
+        static info::CRFNewDatabaseFreeSelectHandle44_ptr CRFNewDatabaseFreeSelectHandle44_next(nullptr);
+        static info::CRFNewDatabaseFreeSelectHandle44_clbk CRFNewDatabaseFreeSelectHandle44_user(nullptr);
+        static info::CRFNewDatabaseFreeUpdateHandle46_ptr CRFNewDatabaseFreeUpdateHandle46_next(nullptr);
+        static info::CRFNewDatabaseFreeUpdateHandle46_clbk CRFNewDatabaseFreeUpdateHandle46_user(nullptr);
+        static info::CRFNewDatabaseGetLocalHour48_ptr CRFNewDatabaseGetLocalHour48_next(nullptr);
+        static info::CRFNewDatabaseGetLocalHour48_clbk CRFNewDatabaseGetLocalHour48_user(nullptr);
+        static info::CRFNewDatabaseIsConectionActive50_ptr CRFNewDatabaseIsConectionActive50_next(nullptr);
+        static info::CRFNewDatabaseIsConectionActive50_clbk CRFNewDatabaseIsConectionActive50_user(nullptr);
+        static info::CRFNewDatabaseLog52_ptr CRFNewDatabaseLog52_next(nullptr);
+        static info::CRFNewDatabaseLog52_clbk CRFNewDatabaseLog52_user(nullptr);
+        static info::CRFNewDatabaseReConnectDataBase54_ptr CRFNewDatabaseReConnectDataBase54_next(nullptr);
+        static info::CRFNewDatabaseReConnectDataBase54_clbk CRFNewDatabaseReConnectDataBase54_user(nullptr);
+        static info::CRFNewDatabaseRollbackTransaction56_ptr CRFNewDatabaseRollbackTransaction56_next(nullptr);
+        static info::CRFNewDatabaseRollbackTransaction56_clbk CRFNewDatabaseRollbackTransaction56_user(nullptr);
+        static info::CRFNewDatabaseSQLExecDirect_RetErrCode58_ptr CRFNewDatabaseSQLExecDirect_RetErrCode58_next(nullptr);
+        static info::CRFNewDatabaseSQLExecDirect_RetErrCode58_clbk CRFNewDatabaseSQLExecDirect_RetErrCode58_user(nullptr);
+        static info::CRFNewDatabaseSQLFetch_RetErrCode60_ptr CRFNewDatabaseSQLFetch_RetErrCode60_next(nullptr);
+        static info::CRFNewDatabaseSQLFetch_RetErrCode60_clbk CRFNewDatabaseSQLFetch_RetErrCode60_user(nullptr);
+        static info::CRFNewDatabaseSQLGetData_Binary_RetErrCode62_ptr CRFNewDatabaseSQLGetData_Binary_RetErrCode62_next(nullptr);
+        static info::CRFNewDatabaseSQLGetData_Binary_RetErrCode62_clbk CRFNewDatabaseSQLGetData_Binary_RetErrCode62_user(nullptr);
+        static info::CRFNewDatabaseSQLGetData_RetErrCode64_ptr CRFNewDatabaseSQLGetData_RetErrCode64_next(nullptr);
+        static info::CRFNewDatabaseSQLGetData_RetErrCode64_clbk CRFNewDatabaseSQLGetData_RetErrCode64_user(nullptr);
+        static info::CRFNewDatabaseSelectCleanUp66_ptr CRFNewDatabaseSelectCleanUp66_next(nullptr);
+        static info::CRFNewDatabaseSelectCleanUp66_clbk CRFNewDatabaseSelectCleanUp66_user(nullptr);
+        static info::CRFNewDatabaseSelect_NextHourDate68_ptr CRFNewDatabaseSelect_NextHourDate68_next(nullptr);
+        static info::CRFNewDatabaseSelect_NextHourDate68_clbk CRFNewDatabaseSelect_NextHourDate68_user(nullptr);
+        static info::CRFNewDatabaseSetAutoCommitMode70_ptr CRFNewDatabaseSetAutoCommitMode70_next(nullptr);
+        static info::CRFNewDatabaseSetAutoCommitMode70_clbk CRFNewDatabaseSetAutoCommitMode70_user(nullptr);
+        static info::CRFNewDatabaseSetLogFile72_ptr CRFNewDatabaseSetLogFile72_next(nullptr);
+        static info::CRFNewDatabaseSetLogFile72_clbk CRFNewDatabaseSetLogFile72_user(nullptr);
+        static info::CRFNewDatabaseSetReconnectFailExitFlag74_ptr CRFNewDatabaseSetReconnectFailExitFlag74_next(nullptr);
+        static info::CRFNewDatabaseSetReconnectFailExitFlag74_clbk CRFNewDatabaseSetReconnectFailExitFlag74_user(nullptr);
+        static info::CRFNewDatabaseStartDataBase76_ptr CRFNewDatabaseStartDataBase76_next(nullptr);
+        static info::CRFNewDatabaseStartDataBase76_clbk CRFNewDatabaseStartDataBase76_user(nullptr);
+        static info::CRFNewDatabaseTableExist78_ptr CRFNewDatabaseTableExist78_next(nullptr);
+        static info::CRFNewDatabaseTableExist78_clbk CRFNewDatabaseTableExist78_user(nullptr);
+        static info::CRFNewDatabasedtor_CRFNewDatabase83_ptr CRFNewDatabasedtor_CRFNewDatabase83_next(nullptr);
+        static info::CRFNewDatabasedtor_CRFNewDatabase83_clbk CRFNewDatabasedtor_CRFNewDatabase83_user(nullptr);
         
-        bool CRFNewDatabaseAllocSelectHandle2_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseAllocSelectHandle2_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseAllocSelectHandle2_user(_this, CRFNewDatabaseAllocSelectHandle2_next);
         };
-        bool CRFNewDatabaseAllocUpdateHandle4_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseAllocUpdateHandle4_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseAllocUpdateHandle4_user(_this, CRFNewDatabaseAllocUpdateHandle4_next);
         };
-        void CRFNewDatabasector_CRFNewDatabase6_wrapper(struct CRFNewDatabase* _this)
+        static void CRFNewDatabasector_CRFNewDatabase6_wrapper(struct CRFNewDatabase* _this)
         {
            CRFNewDatabasector_CRFNewDatabase6_user(_this, CRFNewDatabasector_CRFNewDatabase6_next);
         };
-        void CRFNewDatabaseCheckLogFileHour8_wrapper(struct CRFNewDatabase* _this)
+        static void CRFNewDatabaseCheckLogFileHour8_wrapper(struct CRFNewDatabase* _this)
         {
            CRFNewDatabaseCheckLogFileHour8_user(_this, CRFNewDatabaseCheckLogFileHour8_next);
         };
-        bool CRFNewDatabaseCommitTransaction10_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseCommitTransaction10_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseCommitTransaction10_user(_this, CRFNewDatabaseCommitTransaction10_next);
         };
-        bool CRFNewDatabaseConfigUserODBC12_wrapper(struct CRFNewDatabase* _this, char* szDSN, char* szServer, char* szDatabase, uint16_t wPort)
+        static bool CRFNewDatabaseConfigUserODBC12_wrapper(struct CRFNewDatabase* _this, char* szDSN, char* szServer, char* szDatabase, uint16_t wPort)
         {
            return CRFNewDatabaseConfigUserODBC12_user(_this, szDSN, szServer, szDatabase, wPort, CRFNewDatabaseConfigUserODBC12_next);
         };
-        void CRFNewDatabaseDiagRecALog14_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, int16_t HandleType, void* Handle)
+        static void CRFNewDatabaseDiagRecALog14_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, int16_t HandleType, void* Handle)
         {
            CRFNewDatabaseDiagRecALog14_user(_this, sqlRet, HandleType, Handle, CRFNewDatabaseDiagRecALog14_next);
         };
-        void CRFNewDatabaseDiagRecWLog16_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, int16_t HandleType, void* Handle)
+        static void CRFNewDatabaseDiagRecWLog16_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, int16_t HandleType, void* Handle)
         {
            CRFNewDatabaseDiagRecWLog16_user(_this, sqlRet, HandleType, Handle, CRFNewDatabaseDiagRecWLog16_next);
         };
-        void CRFNewDatabaseEndDataBase18_wrapper(struct CRFNewDatabase* _this)
+        static void CRFNewDatabaseEndDataBase18_wrapper(struct CRFNewDatabase* _this)
         {
            CRFNewDatabaseEndDataBase18_user(_this, CRFNewDatabaseEndDataBase18_next);
         };
-        bool CRFNewDatabaseEroorActionProcSQL_ERROR20_wrapper(struct CRFNewDatabase* _this, void* SQLStmt)
+        static bool CRFNewDatabaseEroorActionProcSQL_ERROR20_wrapper(struct CRFNewDatabase* _this, void* SQLStmt)
         {
            return CRFNewDatabaseEroorActionProcSQL_ERROR20_user(_this, SQLStmt, CRFNewDatabaseEroorActionProcSQL_ERROR20_next);
         };
-        void CRFNewDatabaseErrFmtLog22_wrapper(struct CRFNewDatabase* _this, char* fmt)
+        static void CRFNewDatabaseErrFmtLog22_wrapper(struct CRFNewDatabase* _this, char* fmt)
         {
            CRFNewDatabaseErrFmtLog22_user(_this, fmt, CRFNewDatabaseErrFmtLog22_next);
         };
-        void CRFNewDatabaseErrFmtLog24_wrapper(struct CRFNewDatabase* _this, wchar_t* lpcwFmt)
+        static void CRFNewDatabaseErrFmtLog24_wrapper(struct CRFNewDatabase* _this, wchar_t* lpcwFmt)
         {
            CRFNewDatabaseErrFmtLog24_user(_this, lpcwFmt, CRFNewDatabaseErrFmtLog24_next);
         };
-        void CRFNewDatabaseErrLog26_wrapper(struct CRFNewDatabase* _this, char* szLog)
+        static void CRFNewDatabaseErrLog26_wrapper(struct CRFNewDatabase* _this, char* szLog)
         {
            CRFNewDatabaseErrLog26_user(_this, szLog, CRFNewDatabaseErrLog26_next);
         };
-        void CRFNewDatabaseErrorAction28_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, void* SQLStmt)
+        static void CRFNewDatabaseErrorAction28_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, void* SQLStmt)
         {
            CRFNewDatabaseErrorAction28_user(_this, sqlRet, SQLStmt, CRFNewDatabaseErrorAction28_next);
         };
-        void CRFNewDatabaseErrorMsgLog30_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, char* strQuery, char* strKind, void* SQLStmt)
+        static void CRFNewDatabaseErrorMsgLog30_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, char* strQuery, char* strKind, void* SQLStmt)
         {
            CRFNewDatabaseErrorMsgLog30_user(_this, sqlRet, strQuery, strKind, SQLStmt, CRFNewDatabaseErrorMsgLog30_next);
         };
-        void CRFNewDatabaseErrorMsgLog32_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, wchar_t* strQuery, wchar_t* strKind, void* SQLStmt)
+        static void CRFNewDatabaseErrorMsgLog32_wrapper(struct CRFNewDatabase* _this, int16_t sqlRet, wchar_t* strQuery, wchar_t* strKind, void* SQLStmt)
         {
            CRFNewDatabaseErrorMsgLog32_user(_this, sqlRet, strQuery, strKind, SQLStmt, CRFNewDatabaseErrorMsgLog32_next);
         };
-        bool CRFNewDatabaseExecUpdateBinaryQuery34_wrapper(struct CRFNewDatabase* _this, char* strQuery, void* buf, int size, bool bNoDataError)
+        static bool CRFNewDatabaseExecUpdateBinaryQuery34_wrapper(struct CRFNewDatabase* _this, char* strQuery, void* buf, int size, bool bNoDataError)
         {
            return CRFNewDatabaseExecUpdateBinaryQuery34_user(_this, strQuery, buf, size, bNoDataError, CRFNewDatabaseExecUpdateBinaryQuery34_next);
         };
-        bool CRFNewDatabaseExecUpdateQuery36_wrapper(struct CRFNewDatabase* _this, char* strQuery, bool bNoDataError)
+        static bool CRFNewDatabaseExecUpdateQuery36_wrapper(struct CRFNewDatabase* _this, char* strQuery, bool bNoDataError)
         {
            return CRFNewDatabaseExecUpdateQuery36_user(_this, strQuery, bNoDataError, CRFNewDatabaseExecUpdateQuery36_next);
         };
-        bool CRFNewDatabaseExecUpdateQuery38_wrapper(struct CRFNewDatabase* _this, wchar_t* wstrQuery, bool bNoDataError)
+        static bool CRFNewDatabaseExecUpdateQuery38_wrapper(struct CRFNewDatabase* _this, wchar_t* wstrQuery, bool bNoDataError)
         {
            return CRFNewDatabaseExecUpdateQuery38_user(_this, wstrQuery, bNoDataError, CRFNewDatabaseExecUpdateQuery38_next);
         };
-        void CRFNewDatabaseFmtLog40_wrapper(struct CRFNewDatabase* _this, char* fmt)
+        static void CRFNewDatabaseFmtLog40_wrapper(struct CRFNewDatabase* _this, char* fmt)
         {
            CRFNewDatabaseFmtLog40_user(_this, fmt, CRFNewDatabaseFmtLog40_next);
         };
-        void CRFNewDatabaseFmtLog42_wrapper(struct CRFNewDatabase* _this, wchar_t* lpcwFmt)
+        static void CRFNewDatabaseFmtLog42_wrapper(struct CRFNewDatabase* _this, wchar_t* lpcwFmt)
         {
            CRFNewDatabaseFmtLog42_user(_this, lpcwFmt, CRFNewDatabaseFmtLog42_next);
         };
-        bool CRFNewDatabaseFreeSelectHandle44_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseFreeSelectHandle44_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseFreeSelectHandle44_user(_this, CRFNewDatabaseFreeSelectHandle44_next);
         };
-        bool CRFNewDatabaseFreeUpdateHandle46_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseFreeUpdateHandle46_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseFreeUpdateHandle46_user(_this, CRFNewDatabaseFreeUpdateHandle46_next);
         };
-        char CRFNewDatabaseGetLocalHour48_wrapper(struct CRFNewDatabase* _this)
+        static char CRFNewDatabaseGetLocalHour48_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseGetLocalHour48_user(_this, CRFNewDatabaseGetLocalHour48_next);
         };
-        bool CRFNewDatabaseIsConectionActive50_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseIsConectionActive50_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseIsConectionActive50_user(_this, CRFNewDatabaseIsConectionActive50_next);
         };
-        void CRFNewDatabaseLog52_wrapper(struct CRFNewDatabase* _this, char* szLog)
+        static void CRFNewDatabaseLog52_wrapper(struct CRFNewDatabase* _this, char* szLog)
         {
            CRFNewDatabaseLog52_user(_this, szLog, CRFNewDatabaseLog52_next);
         };
-        bool CRFNewDatabaseReConnectDataBase54_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseReConnectDataBase54_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseReConnectDataBase54_user(_this, CRFNewDatabaseReConnectDataBase54_next);
         };
-        bool CRFNewDatabaseRollbackTransaction56_wrapper(struct CRFNewDatabase* _this)
+        static bool CRFNewDatabaseRollbackTransaction56_wrapper(struct CRFNewDatabase* _this)
         {
            return CRFNewDatabaseRollbackTransaction56_user(_this, CRFNewDatabaseRollbackTransaction56_next);
         };
-        char CRFNewDatabaseSQLExecDirect_RetErrCode58_wrapper(struct CRFNewDatabase* _this, char* strQuery)
+        static char CRFNewDatabaseSQLExecDirect_RetErrCode58_wrapper(struct CRFNewDatabase* _this, char* strQuery)
         {
            return CRFNewDatabaseSQLExecDirect_RetErrCode58_user(_this, strQuery, CRFNewDatabaseSQLExecDirect_RetErrCode58_next);
         };
-        char CRFNewDatabaseSQLFetch_RetErrCode60_wrapper(struct CRFNewDatabase* _this, char* strQuery)
+        static char CRFNewDatabaseSQLFetch_RetErrCode60_wrapper(struct CRFNewDatabase* _this, char* strQuery)
         {
            return CRFNewDatabaseSQLFetch_RetErrCode60_user(_this, strQuery, CRFNewDatabaseSQLFetch_RetErrCode60_next);
         };
-        char CRFNewDatabaseSQLGetData_Binary_RetErrCode62_wrapper(struct CRFNewDatabase* _this, char* strQuery, uint16_t* ColumnNumber, char* pData, uint64_t tDataSize)
+        static char CRFNewDatabaseSQLGetData_Binary_RetErrCode62_wrapper(struct CRFNewDatabase* _this, char* strQuery, uint16_t* ColumnNumber, char* pData, uint64_t tDataSize)
         {
            return CRFNewDatabaseSQLGetData_Binary_RetErrCode62_user(_this, strQuery, ColumnNumber, pData, tDataSize, CRFNewDatabaseSQLGetData_Binary_RetErrCode62_next);
         };
-        char CRFNewDatabaseSQLGetData_RetErrCode64_wrapper(struct CRFNewDatabase* _this, char* strQuery, uint16_t* ColumnNumber, int16_t TargetType, void* TargetValue)
+        static char CRFNewDatabaseSQLGetData_RetErrCode64_wrapper(struct CRFNewDatabase* _this, char* strQuery, uint16_t* ColumnNumber, int16_t TargetType, void* TargetValue)
         {
            return CRFNewDatabaseSQLGetData_RetErrCode64_user(_this, strQuery, ColumnNumber, TargetType, TargetValue, CRFNewDatabaseSQLGetData_RetErrCode64_next);
         };
-        void CRFNewDatabaseSelectCleanUp66_wrapper(struct CRFNewDatabase* _this, char* strQuery)
+        static void CRFNewDatabaseSelectCleanUp66_wrapper(struct CRFNewDatabase* _this, char* strQuery)
         {
            CRFNewDatabaseSelectCleanUp66_user(_this, strQuery, CRFNewDatabaseSelectCleanUp66_next);
         };
-        bool CRFNewDatabaseSelect_NextHourDate68_wrapper(struct CRFNewDatabase* _this, char byAddHour, char* szDate)
+        static bool CRFNewDatabaseSelect_NextHourDate68_wrapper(struct CRFNewDatabase* _this, char byAddHour, char* szDate)
         {
            return CRFNewDatabaseSelect_NextHourDate68_user(_this, byAddHour, szDate, CRFNewDatabaseSelect_NextHourDate68_next);
         };
-        void CRFNewDatabaseSetAutoCommitMode70_wrapper(struct CRFNewDatabase* _this, bool bAutoCommit)
+        static void CRFNewDatabaseSetAutoCommitMode70_wrapper(struct CRFNewDatabase* _this, bool bAutoCommit)
         {
            CRFNewDatabaseSetAutoCommitMode70_user(_this, bAutoCommit, CRFNewDatabaseSetAutoCommitMode70_next);
         };
-        void CRFNewDatabaseSetLogFile72_wrapper(struct CRFNewDatabase* _this, char* szUpperLogPath, char* szOdbcName)
+        static void CRFNewDatabaseSetLogFile72_wrapper(struct CRFNewDatabase* _this, char* szUpperLogPath, char* szOdbcName)
         {
            CRFNewDatabaseSetLogFile72_user(_this, szUpperLogPath, szOdbcName, CRFNewDatabaseSetLogFile72_next);
         };
-        void CRFNewDatabaseSetReconnectFailExitFlag74_wrapper(struct CRFNewDatabase* _this, bool bFlag)
+        static void CRFNewDatabaseSetReconnectFailExitFlag74_wrapper(struct CRFNewDatabase* _this, bool bFlag)
         {
            CRFNewDatabaseSetReconnectFailExitFlag74_user(_this, bFlag, CRFNewDatabaseSetReconnectFailExitFlag74_next);
         };
-        bool CRFNewDatabaseStartDataBase76_wrapper(struct CRFNewDatabase* _this, char* odbcName, char* accountName, char* passWord)
+        static bool CRFNewDatabaseStartDataBase76_wrapper(struct CRFNewDatabase* _this, char* odbcName, char* accountName, char* passWord)
         {
            return CRFNewDatabaseStartDataBase76_user(_this, odbcName, accountName, passWord, CRFNewDatabaseStartDataBase76_next);
         };
-        bool CRFNewDatabaseTableExist78_wrapper(struct CRFNewDatabase* _this, char* szTableName)
+        static bool CRFNewDatabaseTableExist78_wrapper(struct CRFNewDatabase* _this, char* szTableName)
         {
            return CRFNewDatabaseTableExist78_user(_this, szTableName, CRFNewDatabaseTableExist78_next);
         };
-        void CRFNewDatabasedtor_CRFNewDatabase83_wrapper(struct CRFNewDatabase* _this)
+        static void CRFNewDatabasedtor_CRFNewDatabase83_wrapper(struct CRFNewDatabase* _this)
         {
            CRFNewDatabasedtor_CRFNewDatabase83_user(_this, CRFNewDatabasedtor_CRFNewDatabase83_next);
         };
         
-        hook_record CRFNewDatabase_functions[] = {
+        static hook_record CRFNewDatabase_functions[] = {
         {   (LPVOID)0x1404875a0L,
             (LPVOID *)&CRFNewDatabaseAllocSelectHandle2_user,
             (LPVOID *)&CRFNewDatabaseAllocSelectHandle2_next,
@@ -454,5 +454,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

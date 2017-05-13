@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
-            info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
+            static info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
+            static info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
             
-            void std__pairctor_pair2_wrapper(struct std::pair<int,int>* _this, int* _Val1, int* _Val2)
+            static void std__pairctor_pair2_wrapper(struct std::pair<int,int>* _this, int* _Val1, int* _Val2)
             {
                std__pairctor_pair2_user(_this, _Val1, _Val2);
             };
             
-            hook_record pair<int,int>_functions[] = {
+            static hook_record pair<int,int>_functions[] = {
             {   (LPVOID)0x14019af80L,
                 (LPVOID *)&std__pairctor_pair2_user,
                 (LPVOID *)&std__pairctor_pair2_next,
@@ -27,7 +27,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__pair_info.hpp"
@@ -38,21 +38,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
-            info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
-            info::std__pairctor_pair4_ptr std__pairctor_pair4_next(nullptr);
-            info::std__pairctor_pair4_clbk std__pairctor_pair4_user(nullptr);
+            static info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
+            static info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
+            static info::std__pairctor_pair4_ptr std__pairctor_pair4_next(nullptr);
+            static info::std__pairctor_pair4_clbk std__pairctor_pair4_user(nullptr);
             
-            void std__pairctor_pair2_wrapper(struct std::pair<int,CNationCodeStr *>* _this, int* _Val1, struct CNationCodeStr** _Val2)
+            static void std__pairctor_pair2_wrapper(struct std::pair<int,CNationCodeStr *>* _this, int* _Val1, struct CNationCodeStr** _Val2)
             {
                std__pairctor_pair2_user(_this, _Val1, _Val2);
             };
-            void std__pairctor_pair4_wrapper(struct std::pair<int,CNationCodeStr *>* _this, struct std::pair<int const ,CNationCodeStr *>* _Right)
+            static void std__pairctor_pair4_wrapper(struct std::pair<int,CNationCodeStr *>* _this, struct std::pair<int const ,CNationCodeStr *>* _Right)
             {
                std__pairctor_pair4_user(_this, _Right);
             };
             
-            hook_record pair<int,CNationCodeStr *>_functions[] = {
+            static hook_record pair<int,CNationCodeStr *>_functions[] = {
             {   (LPVOID)0x140210f40L,
                 (LPVOID *)&std__pairctor_pair2_user,
                 (LPVOID *)&std__pairctor_pair2_next,
@@ -66,7 +66,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__pair_info.hpp"
@@ -77,15 +77,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
-            info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
+            static info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
+            static info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
             
-            void std__pairctor_pair2_wrapper(struct std::pair<int,CAsyncLogInfo *>* _this, struct std::pair<int const ,CAsyncLogInfo *>* _Right)
+            static void std__pairctor_pair2_wrapper(struct std::pair<int,CAsyncLogInfo *>* _this, struct std::pair<int const ,CAsyncLogInfo *>* _Right)
             {
                std__pairctor_pair2_user(_this, _Right);
             };
             
-            hook_record pair<int,CAsyncLogInfo *>_functions[] = {
+            static hook_record pair<int,CAsyncLogInfo *>_functions[] = {
             {   (LPVOID)0x1403c7590L,
                 (LPVOID *)&std__pairctor_pair2_user,
                 (LPVOID *)&std__pairctor_pair2_next,
@@ -94,7 +94,7 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE
 #include "std__pair_info.hpp"
@@ -105,21 +105,21 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
-            info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
-            info::std__pairctor_pair4_ptr std__pairctor_pair4_next(nullptr);
-            info::std__pairctor_pair4_clbk std__pairctor_pair4_user(nullptr);
+            static info::std__pairctor_pair2_ptr std__pairctor_pair2_next(nullptr);
+            static info::std__pairctor_pair2_clbk std__pairctor_pair2_user(nullptr);
+            static info::std__pairctor_pair4_ptr std__pairctor_pair4_next(nullptr);
+            static info::std__pairctor_pair4_clbk std__pairctor_pair4_user(nullptr);
             
-            void std__pairctor_pair2_wrapper(struct std::pair<int,CNationSettingFactory *>* _this, int* _Val1, struct CNationSettingFactory** _Val2)
+            static void std__pairctor_pair2_wrapper(struct std::pair<int,CNationSettingFactory *>* _this, int* _Val1, struct CNationSettingFactory** _Val2)
             {
                std__pairctor_pair2_user(_this, _Val1, _Val2);
             };
-            void std__pairctor_pair4_wrapper(struct std::pair<int,CNationSettingFactory *>* _this, struct std::pair<int const ,CNationSettingFactory *>* _Right)
+            static void std__pairctor_pair4_wrapper(struct std::pair<int,CNationSettingFactory *>* _this, struct std::pair<int const ,CNationSettingFactory *>* _Right)
             {
                std__pairctor_pair4_user(_this, _Right);
             };
             
-            hook_record pair<int,CNationSettingFactory *>_functions[] = {
+            static hook_record pair<int,CNationSettingFactory *>_functions[] = {
             {   (LPVOID)0x140221e90L,
                 (LPVOID *)&std__pairctor_pair2_user,
                 (LPVOID *)&std__pairctor_pair2_next,
@@ -133,6 +133,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace std
 END_ATF_NAMESPACE

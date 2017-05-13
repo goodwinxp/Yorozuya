@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__monster_groupctor___monster_group2_ptr __monster_groupctor___monster_group2_next(nullptr);
-        info::__monster_groupctor___monster_group2_clbk __monster_groupctor___monster_group2_user(nullptr);
+        static info::__monster_groupctor___monster_group2_ptr __monster_groupctor___monster_group2_next(nullptr);
+        static info::__monster_groupctor___monster_group2_clbk __monster_groupctor___monster_group2_user(nullptr);
         
-        void __monster_groupctor___monster_group2_wrapper(struct __monster_group* _this)
+        static void __monster_groupctor___monster_group2_wrapper(struct __monster_group* _this)
         {
            __monster_groupctor___monster_group2_user(_this, __monster_groupctor___monster_group2_next);
         };
         
-        hook_record __monster_group_functions[] = {
+        static hook_record __monster_group_functions[] = {
         {   (LPVOID)0x140279fb0L,
             (LPVOID *)&__monster_groupctor___monster_group2_user,
             (LPVOID *)&__monster_groupctor___monster_group2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

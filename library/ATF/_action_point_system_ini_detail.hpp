@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_action_point_system_inictor__action_point_system_ini2_ptr _action_point_system_inictor__action_point_system_ini2_next(nullptr);
-        info::_action_point_system_inictor__action_point_system_ini2_clbk _action_point_system_inictor__action_point_system_ini2_user(nullptr);
+        static info::_action_point_system_inictor__action_point_system_ini2_ptr _action_point_system_inictor__action_point_system_ini2_next(nullptr);
+        static info::_action_point_system_inictor__action_point_system_ini2_clbk _action_point_system_inictor__action_point_system_ini2_user(nullptr);
         
-        void _action_point_system_inictor__action_point_system_ini2_wrapper(struct _action_point_system_ini* _this)
+        static void _action_point_system_inictor__action_point_system_ini2_wrapper(struct _action_point_system_ini* _this)
         {
            _action_point_system_inictor__action_point_system_ini2_user(_this, _action_point_system_inictor__action_point_system_ini2_next);
         };
         
-        hook_record _action_point_system_ini_functions[] = {
+        static hook_record _action_point_system_ini_functions[] = {
         {   (LPVOID)0x140411de0L,
             (LPVOID *)&_action_point_system_inictor__action_point_system_ini2_user,
             (LPVOID *)&_action_point_system_inictor__action_point_system_ini2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

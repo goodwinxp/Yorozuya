@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_ptr _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_next(nullptr);
-        info::_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_clbk _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_user(nullptr);
-        info::_not_arranged_char_inform_zoclsize4_ptr _not_arranged_char_inform_zoclsize4_next(nullptr);
-        info::_not_arranged_char_inform_zoclsize4_clbk _not_arranged_char_inform_zoclsize4_user(nullptr);
+        static info::_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_ptr _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_next(nullptr);
+        static info::_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_clbk _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_user(nullptr);
+        static info::_not_arranged_char_inform_zoclsize4_ptr _not_arranged_char_inform_zoclsize4_next(nullptr);
+        static info::_not_arranged_char_inform_zoclsize4_clbk _not_arranged_char_inform_zoclsize4_user(nullptr);
         
-        void _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_wrapper(struct _not_arranged_char_inform_zocl* _this)
+        static void _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_wrapper(struct _not_arranged_char_inform_zocl* _this)
         {
            _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_user(_this, _not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_next);
         };
-        int _not_arranged_char_inform_zoclsize4_wrapper(struct _not_arranged_char_inform_zocl* _this)
+        static int _not_arranged_char_inform_zoclsize4_wrapper(struct _not_arranged_char_inform_zocl* _this)
         {
            return _not_arranged_char_inform_zoclsize4_user(_this, _not_arranged_char_inform_zoclsize4_next);
         };
         
-        hook_record _not_arranged_char_inform_zocl_functions[] = {
+        static hook_record _not_arranged_char_inform_zocl_functions[] = {
         {   (LPVOID)0x14011f750L,
             (LPVOID *)&_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_user,
             (LPVOID *)&_not_arranged_char_inform_zoclctor__not_arranged_char_inform_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

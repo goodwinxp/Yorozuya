@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCryptParamAlloc2_ptr CCryptParamAlloc2_next(nullptr);
-        info::CCryptParamAlloc2_clbk CCryptParamAlloc2_user(nullptr);
-        info::CCryptParamctor_CCryptParam4_ptr CCryptParamctor_CCryptParam4_next(nullptr);
-        info::CCryptParamctor_CCryptParam4_clbk CCryptParamctor_CCryptParam4_user(nullptr);
-        info::CCryptParamCheckPublicKeyHash6_ptr CCryptParamCheckPublicKeyHash6_next(nullptr);
-        info::CCryptParamCheckPublicKeyHash6_clbk CCryptParamCheckPublicKeyHash6_user(nullptr);
-        info::CCryptParamCiphertextLength8_ptr CCryptParamCiphertextLength8_next(nullptr);
-        info::CCryptParamCiphertextLength8_clbk CCryptParamCiphertextLength8_user(nullptr);
-        info::CCryptParamEncrypt10_ptr CCryptParamEncrypt10_next(nullptr);
-        info::CCryptParamEncrypt10_clbk CCryptParamEncrypt10_user(nullptr);
-        info::CCryptParamLoad12_ptr CCryptParamLoad12_next(nullptr);
-        info::CCryptParamLoad12_clbk CCryptParamLoad12_user(nullptr);
-        info::CCryptParamLoadKey14_ptr CCryptParamLoadKey14_next(nullptr);
-        info::CCryptParamLoadKey14_clbk CCryptParamLoadKey14_user(nullptr);
-        info::CCryptParamMaxPlaintextLength16_ptr CCryptParamMaxPlaintextLength16_next(nullptr);
-        info::CCryptParamMaxPlaintextLength16_clbk CCryptParamMaxPlaintextLength16_user(nullptr);
-        info::CCryptParamSetAESDecryptor18_ptr CCryptParamSetAESDecryptor18_next(nullptr);
-        info::CCryptParamSetAESDecryptor18_clbk CCryptParamSetAESDecryptor18_user(nullptr);
-        info::CCryptParamdtor_CCryptParam23_ptr CCryptParamdtor_CCryptParam23_next(nullptr);
-        info::CCryptParamdtor_CCryptParam23_clbk CCryptParamdtor_CCryptParam23_user(nullptr);
+        static info::CCryptParamAlloc2_ptr CCryptParamAlloc2_next(nullptr);
+        static info::CCryptParamAlloc2_clbk CCryptParamAlloc2_user(nullptr);
+        static info::CCryptParamctor_CCryptParam4_ptr CCryptParamctor_CCryptParam4_next(nullptr);
+        static info::CCryptParamctor_CCryptParam4_clbk CCryptParamctor_CCryptParam4_user(nullptr);
+        static info::CCryptParamCheckPublicKeyHash6_ptr CCryptParamCheckPublicKeyHash6_next(nullptr);
+        static info::CCryptParamCheckPublicKeyHash6_clbk CCryptParamCheckPublicKeyHash6_user(nullptr);
+        static info::CCryptParamCiphertextLength8_ptr CCryptParamCiphertextLength8_next(nullptr);
+        static info::CCryptParamCiphertextLength8_clbk CCryptParamCiphertextLength8_user(nullptr);
+        static info::CCryptParamEncrypt10_ptr CCryptParamEncrypt10_next(nullptr);
+        static info::CCryptParamEncrypt10_clbk CCryptParamEncrypt10_user(nullptr);
+        static info::CCryptParamLoad12_ptr CCryptParamLoad12_next(nullptr);
+        static info::CCryptParamLoad12_clbk CCryptParamLoad12_user(nullptr);
+        static info::CCryptParamLoadKey14_ptr CCryptParamLoadKey14_next(nullptr);
+        static info::CCryptParamLoadKey14_clbk CCryptParamLoadKey14_user(nullptr);
+        static info::CCryptParamMaxPlaintextLength16_ptr CCryptParamMaxPlaintextLength16_next(nullptr);
+        static info::CCryptParamMaxPlaintextLength16_clbk CCryptParamMaxPlaintextLength16_user(nullptr);
+        static info::CCryptParamSetAESDecryptor18_ptr CCryptParamSetAESDecryptor18_next(nullptr);
+        static info::CCryptParamSetAESDecryptor18_clbk CCryptParamSetAESDecryptor18_user(nullptr);
+        static info::CCryptParamdtor_CCryptParam23_ptr CCryptParamdtor_CCryptParam23_next(nullptr);
+        static info::CCryptParamdtor_CCryptParam23_clbk CCryptParamdtor_CCryptParam23_user(nullptr);
         
-        void CCryptParamAlloc2_wrapper(struct CCryptParam* _this)
+        static void CCryptParamAlloc2_wrapper(struct CCryptParam* _this)
         {
            CCryptParamAlloc2_user(_this, CCryptParamAlloc2_next);
         };
-        void CCryptParamctor_CCryptParam4_wrapper(struct CCryptParam* _this, struct CryptoPP::AutoSeededRandomPool* prng)
+        static void CCryptParamctor_CCryptParam4_wrapper(struct CCryptParam* _this, struct CryptoPP::AutoSeededRandomPool* prng)
         {
            CCryptParamctor_CCryptParam4_user(_this, prng, CCryptParamctor_CCryptParam4_next);
         };
-        void CCryptParamCheckPublicKeyHash6_wrapper(struct CCryptParam* _this, struct CryptoPP::ByteQueue* kQueuePub)
+        static void CCryptParamCheckPublicKeyHash6_wrapper(struct CCryptParam* _this, struct CryptoPP::ByteQueue* kQueuePub)
         {
            CCryptParamCheckPublicKeyHash6_user(_this, kQueuePub, CCryptParamCheckPublicKeyHash6_next);
         };
-        uint64_t CCryptParamCiphertextLength8_wrapper(struct CCryptParam* _this, uint64_t tMaxUseSize)
+        static uint64_t CCryptParamCiphertextLength8_wrapper(struct CCryptParam* _this, uint64_t tMaxUseSize)
         {
            return CCryptParamCiphertextLength8_user(_this, tMaxUseSize, CCryptParamCiphertextLength8_next);
         };
-        bool CCryptParamEncrypt10_wrapper(struct CCryptParam* _this, char* pText, uint64_t tLength, char* pCipherText, uint64_t tCipherTextLength)
+        static bool CCryptParamEncrypt10_wrapper(struct CCryptParam* _this, char* pText, uint64_t tLength, char* pCipherText, uint64_t tCipherTextLength)
         {
            return CCryptParamEncrypt10_user(_this, pText, tLength, pCipherText, tCipherTextLength, CCryptParamEncrypt10_next);
         };
-        bool CCryptParamLoad12_wrapper(struct CCryptParam* _this, char* szKeyPath)
+        static bool CCryptParamLoad12_wrapper(struct CCryptParam* _this, char* szKeyPath)
         {
            return CCryptParamLoad12_user(_this, szKeyPath, CCryptParamLoad12_next);
         };
-        void CCryptParamLoadKey14_wrapper(struct CCryptParam* _this, struct CryptoPP::ByteQueue* kQueuePub, char* szKeyPath)
+        static void CCryptParamLoadKey14_wrapper(struct CCryptParam* _this, struct CryptoPP::ByteQueue* kQueuePub, char* szKeyPath)
         {
            CCryptParamLoadKey14_user(_this, kQueuePub, szKeyPath, CCryptParamLoadKey14_next);
         };
-        uint64_t CCryptParamMaxPlaintextLength16_wrapper(struct CCryptParam* _this, uint64_t ciphertextLength)
+        static uint64_t CCryptParamMaxPlaintextLength16_wrapper(struct CCryptParam* _this, uint64_t ciphertextLength)
         {
            return CCryptParamMaxPlaintextLength16_user(_this, ciphertextLength, CCryptParamMaxPlaintextLength16_next);
         };
-        void CCryptParamSetAESDecryptor18_wrapper(struct CCryptParam* _this)
+        static void CCryptParamSetAESDecryptor18_wrapper(struct CCryptParam* _this)
         {
            CCryptParamSetAESDecryptor18_user(_this, CCryptParamSetAESDecryptor18_next);
         };
-        void CCryptParamdtor_CCryptParam23_wrapper(struct CCryptParam* _this)
+        static void CCryptParamdtor_CCryptParam23_wrapper(struct CCryptParam* _this)
         {
            CCryptParamdtor_CCryptParam23_user(_this, CCryptParamdtor_CCryptParam23_next);
         };
         
-        hook_record CCryptParam_functions[] = {
+        static hook_record CCryptParam_functions[] = {
         {   (LPVOID)0x140447bf0L,
             (LPVOID *)&CCryptParamAlloc2_user,
             (LPVOID *)&CCryptParamAlloc2_next,
@@ -124,6 +124,6 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE
 */

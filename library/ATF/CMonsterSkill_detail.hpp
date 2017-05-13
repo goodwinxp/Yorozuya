@@ -8,201 +8,201 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMonsterSkillctor_CMonsterSkill2_ptr CMonsterSkillctor_CMonsterSkill2_next(nullptr);
-        info::CMonsterSkillctor_CMonsterSkill2_clbk CMonsterSkillctor_CMonsterSkill2_user(nullptr);
-        info::CMonsterSkillCopy4_ptr CMonsterSkillCopy4_next(nullptr);
-        info::CMonsterSkillCopy4_clbk CMonsterSkillCopy4_user(nullptr);
-        info::CMonsterSkillGetAccumulationCount6_ptr CMonsterSkillGetAccumulationCount6_next(nullptr);
-        info::CMonsterSkillGetAccumulationCount6_clbk CMonsterSkillGetAccumulationCount6_user(nullptr);
-        info::CMonsterSkillGetAttackDist8_ptr CMonsterSkillGetAttackDist8_next(nullptr);
-        info::CMonsterSkillGetAttackDist8_clbk CMonsterSkillGetAttackDist8_user(nullptr);
-        info::CMonsterSkillGetBeforeTime10_ptr CMonsterSkillGetBeforeTime10_next(nullptr);
-        info::CMonsterSkillGetBeforeTime10_clbk CMonsterSkillGetBeforeTime10_user(nullptr);
-        info::CMonsterSkillGetDstCaseType12_ptr CMonsterSkillGetDstCaseType12_next(nullptr);
-        info::CMonsterSkillGetDstCaseType12_clbk CMonsterSkillGetDstCaseType12_user(nullptr);
-        info::CMonsterSkillGetElement14_ptr CMonsterSkillGetElement14_next(nullptr);
-        info::CMonsterSkillGetElement14_clbk CMonsterSkillGetElement14_user(nullptr);
-        info::CMonsterSkillGetExceptMotive16_ptr CMonsterSkillGetExceptMotive16_next(nullptr);
-        info::CMonsterSkillGetExceptMotive16_clbk CMonsterSkillGetExceptMotive16_user(nullptr);
-        info::CMonsterSkillGetExceptMotiveValue18_ptr CMonsterSkillGetExceptMotiveValue18_next(nullptr);
-        info::CMonsterSkillGetExceptMotiveValue18_clbk CMonsterSkillGetExceptMotiveValue18_user(nullptr);
-        info::CMonsterSkillGetFld20_ptr CMonsterSkillGetFld20_next(nullptr);
-        info::CMonsterSkillGetFld20_clbk CMonsterSkillGetFld20_user(nullptr);
-        info::CMonsterSkillGetMaxDmg22_ptr CMonsterSkillGetMaxDmg22_next(nullptr);
-        info::CMonsterSkillGetMaxDmg22_clbk CMonsterSkillGetMaxDmg22_user(nullptr);
-        info::CMonsterSkillGetMaxProb24_ptr CMonsterSkillGetMaxProb24_next(nullptr);
-        info::CMonsterSkillGetMaxProb24_clbk CMonsterSkillGetMaxProb24_user(nullptr);
-        info::CMonsterSkillGetMinDmg26_ptr CMonsterSkillGetMinDmg26_next(nullptr);
-        info::CMonsterSkillGetMinDmg26_clbk CMonsterSkillGetMinDmg26_user(nullptr);
-        info::CMonsterSkillGetMinProb28_ptr CMonsterSkillGetMinProb28_next(nullptr);
-        info::CMonsterSkillGetMinProb28_clbk CMonsterSkillGetMinProb28_user(nullptr);
-        info::CMonsterSkillGetMotive30_ptr CMonsterSkillGetMotive30_next(nullptr);
-        info::CMonsterSkillGetMotive30_clbk CMonsterSkillGetMotive30_user(nullptr);
-        info::CMonsterSkillGetMotiveValue32_ptr CMonsterSkillGetMotiveValue32_next(nullptr);
-        info::CMonsterSkillGetMotiveValue32_clbk CMonsterSkillGetMotiveValue32_user(nullptr);
-        info::CMonsterSkillGetNextActionDelayTime34_ptr CMonsterSkillGetNextActionDelayTime34_next(nullptr);
-        info::CMonsterSkillGetNextActionDelayTime34_clbk CMonsterSkillGetNextActionDelayTime34_user(nullptr);
-        info::CMonsterSkillGetSFLv36_ptr CMonsterSkillGetSFLv36_next(nullptr);
-        info::CMonsterSkillGetSFLv36_clbk CMonsterSkillGetSFLv36_user(nullptr);
-        info::CMonsterSkillGetSPActionProbability38_ptr CMonsterSkillGetSPActionProbability38_next(nullptr);
-        info::CMonsterSkillGetSPActionProbability38_clbk CMonsterSkillGetSPActionProbability38_user(nullptr);
-        info::CMonsterSkillGetSPLimitCount40_ptr CMonsterSkillGetSPLimitCount40_next(nullptr);
-        info::CMonsterSkillGetSPLimitCount40_clbk CMonsterSkillGetSPLimitCount40_user(nullptr);
-        info::CMonsterSkillGetType42_ptr CMonsterSkillGetType42_next(nullptr);
-        info::CMonsterSkillGetType42_clbk CMonsterSkillGetType42_user(nullptr);
-        info::CMonsterSkillGetUseType44_ptr CMonsterSkillGetUseType44_next(nullptr);
-        info::CMonsterSkillGetUseType44_clbk CMonsterSkillGetUseType44_user(nullptr);
-        info::CMonsterSkillInit46_ptr CMonsterSkillInit46_next(nullptr);
-        info::CMonsterSkillInit46_clbk CMonsterSkillInit46_user(nullptr);
-        info::CMonsterSkillIsAttackAble48_ptr CMonsterSkillIsAttackAble48_next(nullptr);
-        info::CMonsterSkillIsAttackAble48_clbk CMonsterSkillIsAttackAble48_user(nullptr);
-        info::CMonsterSkillIsExit50_ptr CMonsterSkillIsExit50_next(nullptr);
-        info::CMonsterSkillIsExit50_clbk CMonsterSkillIsExit50_user(nullptr);
-        info::CMonsterSkillNextPass52_ptr CMonsterSkillNextPass52_next(nullptr);
-        info::CMonsterSkillNextPass52_clbk CMonsterSkillNextPass52_user(nullptr);
-        info::CMonsterSkillSetAccumulationCountAdd54_ptr CMonsterSkillSetAccumulationCountAdd54_next(nullptr);
-        info::CMonsterSkillSetAccumulationCountAdd54_clbk CMonsterSkillSetAccumulationCountAdd54_user(nullptr);
-        info::CMonsterSkillSetForce56_ptr CMonsterSkillSetForce56_next(nullptr);
-        info::CMonsterSkillSetForce56_clbk CMonsterSkillSetForce56_user(nullptr);
-        info::CMonsterSkillSetGen58_ptr CMonsterSkillSetGen58_next(nullptr);
-        info::CMonsterSkillSetGen58_clbk CMonsterSkillSetGen58_user(nullptr);
-        info::CMonsterSkillSetSkill60_ptr CMonsterSkillSetSkill60_next(nullptr);
-        info::CMonsterSkillSetSkill60_clbk CMonsterSkillSetSkill60_user(nullptr);
-        info::CMonsterSkillUse62_ptr CMonsterSkillUse62_next(nullptr);
-        info::CMonsterSkillUse62_clbk CMonsterSkillUse62_user(nullptr);
-        info::CMonsterSkilldtor_CMonsterSkill64_ptr CMonsterSkilldtor_CMonsterSkill64_next(nullptr);
-        info::CMonsterSkilldtor_CMonsterSkill64_clbk CMonsterSkilldtor_CMonsterSkill64_user(nullptr);
+        static info::CMonsterSkillctor_CMonsterSkill2_ptr CMonsterSkillctor_CMonsterSkill2_next(nullptr);
+        static info::CMonsterSkillctor_CMonsterSkill2_clbk CMonsterSkillctor_CMonsterSkill2_user(nullptr);
+        static info::CMonsterSkillCopy4_ptr CMonsterSkillCopy4_next(nullptr);
+        static info::CMonsterSkillCopy4_clbk CMonsterSkillCopy4_user(nullptr);
+        static info::CMonsterSkillGetAccumulationCount6_ptr CMonsterSkillGetAccumulationCount6_next(nullptr);
+        static info::CMonsterSkillGetAccumulationCount6_clbk CMonsterSkillGetAccumulationCount6_user(nullptr);
+        static info::CMonsterSkillGetAttackDist8_ptr CMonsterSkillGetAttackDist8_next(nullptr);
+        static info::CMonsterSkillGetAttackDist8_clbk CMonsterSkillGetAttackDist8_user(nullptr);
+        static info::CMonsterSkillGetBeforeTime10_ptr CMonsterSkillGetBeforeTime10_next(nullptr);
+        static info::CMonsterSkillGetBeforeTime10_clbk CMonsterSkillGetBeforeTime10_user(nullptr);
+        static info::CMonsterSkillGetDstCaseType12_ptr CMonsterSkillGetDstCaseType12_next(nullptr);
+        static info::CMonsterSkillGetDstCaseType12_clbk CMonsterSkillGetDstCaseType12_user(nullptr);
+        static info::CMonsterSkillGetElement14_ptr CMonsterSkillGetElement14_next(nullptr);
+        static info::CMonsterSkillGetElement14_clbk CMonsterSkillGetElement14_user(nullptr);
+        static info::CMonsterSkillGetExceptMotive16_ptr CMonsterSkillGetExceptMotive16_next(nullptr);
+        static info::CMonsterSkillGetExceptMotive16_clbk CMonsterSkillGetExceptMotive16_user(nullptr);
+        static info::CMonsterSkillGetExceptMotiveValue18_ptr CMonsterSkillGetExceptMotiveValue18_next(nullptr);
+        static info::CMonsterSkillGetExceptMotiveValue18_clbk CMonsterSkillGetExceptMotiveValue18_user(nullptr);
+        static info::CMonsterSkillGetFld20_ptr CMonsterSkillGetFld20_next(nullptr);
+        static info::CMonsterSkillGetFld20_clbk CMonsterSkillGetFld20_user(nullptr);
+        static info::CMonsterSkillGetMaxDmg22_ptr CMonsterSkillGetMaxDmg22_next(nullptr);
+        static info::CMonsterSkillGetMaxDmg22_clbk CMonsterSkillGetMaxDmg22_user(nullptr);
+        static info::CMonsterSkillGetMaxProb24_ptr CMonsterSkillGetMaxProb24_next(nullptr);
+        static info::CMonsterSkillGetMaxProb24_clbk CMonsterSkillGetMaxProb24_user(nullptr);
+        static info::CMonsterSkillGetMinDmg26_ptr CMonsterSkillGetMinDmg26_next(nullptr);
+        static info::CMonsterSkillGetMinDmg26_clbk CMonsterSkillGetMinDmg26_user(nullptr);
+        static info::CMonsterSkillGetMinProb28_ptr CMonsterSkillGetMinProb28_next(nullptr);
+        static info::CMonsterSkillGetMinProb28_clbk CMonsterSkillGetMinProb28_user(nullptr);
+        static info::CMonsterSkillGetMotive30_ptr CMonsterSkillGetMotive30_next(nullptr);
+        static info::CMonsterSkillGetMotive30_clbk CMonsterSkillGetMotive30_user(nullptr);
+        static info::CMonsterSkillGetMotiveValue32_ptr CMonsterSkillGetMotiveValue32_next(nullptr);
+        static info::CMonsterSkillGetMotiveValue32_clbk CMonsterSkillGetMotiveValue32_user(nullptr);
+        static info::CMonsterSkillGetNextActionDelayTime34_ptr CMonsterSkillGetNextActionDelayTime34_next(nullptr);
+        static info::CMonsterSkillGetNextActionDelayTime34_clbk CMonsterSkillGetNextActionDelayTime34_user(nullptr);
+        static info::CMonsterSkillGetSFLv36_ptr CMonsterSkillGetSFLv36_next(nullptr);
+        static info::CMonsterSkillGetSFLv36_clbk CMonsterSkillGetSFLv36_user(nullptr);
+        static info::CMonsterSkillGetSPActionProbability38_ptr CMonsterSkillGetSPActionProbability38_next(nullptr);
+        static info::CMonsterSkillGetSPActionProbability38_clbk CMonsterSkillGetSPActionProbability38_user(nullptr);
+        static info::CMonsterSkillGetSPLimitCount40_ptr CMonsterSkillGetSPLimitCount40_next(nullptr);
+        static info::CMonsterSkillGetSPLimitCount40_clbk CMonsterSkillGetSPLimitCount40_user(nullptr);
+        static info::CMonsterSkillGetType42_ptr CMonsterSkillGetType42_next(nullptr);
+        static info::CMonsterSkillGetType42_clbk CMonsterSkillGetType42_user(nullptr);
+        static info::CMonsterSkillGetUseType44_ptr CMonsterSkillGetUseType44_next(nullptr);
+        static info::CMonsterSkillGetUseType44_clbk CMonsterSkillGetUseType44_user(nullptr);
+        static info::CMonsterSkillInit46_ptr CMonsterSkillInit46_next(nullptr);
+        static info::CMonsterSkillInit46_clbk CMonsterSkillInit46_user(nullptr);
+        static info::CMonsterSkillIsAttackAble48_ptr CMonsterSkillIsAttackAble48_next(nullptr);
+        static info::CMonsterSkillIsAttackAble48_clbk CMonsterSkillIsAttackAble48_user(nullptr);
+        static info::CMonsterSkillIsExit50_ptr CMonsterSkillIsExit50_next(nullptr);
+        static info::CMonsterSkillIsExit50_clbk CMonsterSkillIsExit50_user(nullptr);
+        static info::CMonsterSkillNextPass52_ptr CMonsterSkillNextPass52_next(nullptr);
+        static info::CMonsterSkillNextPass52_clbk CMonsterSkillNextPass52_user(nullptr);
+        static info::CMonsterSkillSetAccumulationCountAdd54_ptr CMonsterSkillSetAccumulationCountAdd54_next(nullptr);
+        static info::CMonsterSkillSetAccumulationCountAdd54_clbk CMonsterSkillSetAccumulationCountAdd54_user(nullptr);
+        static info::CMonsterSkillSetForce56_ptr CMonsterSkillSetForce56_next(nullptr);
+        static info::CMonsterSkillSetForce56_clbk CMonsterSkillSetForce56_user(nullptr);
+        static info::CMonsterSkillSetGen58_ptr CMonsterSkillSetGen58_next(nullptr);
+        static info::CMonsterSkillSetGen58_clbk CMonsterSkillSetGen58_user(nullptr);
+        static info::CMonsterSkillSetSkill60_ptr CMonsterSkillSetSkill60_next(nullptr);
+        static info::CMonsterSkillSetSkill60_clbk CMonsterSkillSetSkill60_user(nullptr);
+        static info::CMonsterSkillUse62_ptr CMonsterSkillUse62_next(nullptr);
+        static info::CMonsterSkillUse62_clbk CMonsterSkillUse62_user(nullptr);
+        static info::CMonsterSkilldtor_CMonsterSkill64_ptr CMonsterSkilldtor_CMonsterSkill64_next(nullptr);
+        static info::CMonsterSkilldtor_CMonsterSkill64_clbk CMonsterSkilldtor_CMonsterSkill64_user(nullptr);
         
-        void CMonsterSkillctor_CMonsterSkill2_wrapper(struct CMonsterSkill* _this)
+        static void CMonsterSkillctor_CMonsterSkill2_wrapper(struct CMonsterSkill* _this)
         {
            CMonsterSkillctor_CMonsterSkill2_user(_this, CMonsterSkillctor_CMonsterSkill2_next);
         };
-        void CMonsterSkillCopy4_wrapper(struct CMonsterSkill* _this, struct CMonsterSkill* Cls)
+        static void CMonsterSkillCopy4_wrapper(struct CMonsterSkill* _this, struct CMonsterSkill* Cls)
         {
            CMonsterSkillCopy4_user(_this, Cls, CMonsterSkillCopy4_next);
         };
-        int CMonsterSkillGetAccumulationCount6_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetAccumulationCount6_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetAccumulationCount6_user(_this, CMonsterSkillGetAccumulationCount6_next);
         };
-        float CMonsterSkillGetAttackDist8_wrapper(struct CMonsterSkill* _this)
+        static float CMonsterSkillGetAttackDist8_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetAttackDist8_user(_this, CMonsterSkillGetAttackDist8_next);
         };
-        unsigned int CMonsterSkillGetBeforeTime10_wrapper(struct CMonsterSkill* _this)
+        static unsigned int CMonsterSkillGetBeforeTime10_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetBeforeTime10_user(_this, CMonsterSkillGetBeforeTime10_next);
         };
-        int CMonsterSkillGetDstCaseType12_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetDstCaseType12_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetDstCaseType12_user(_this, CMonsterSkillGetDstCaseType12_next);
         };
-        int CMonsterSkillGetElement14_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetElement14_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetElement14_user(_this, CMonsterSkillGetElement14_next);
         };
-        int CMonsterSkillGetExceptMotive16_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetExceptMotive16_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetExceptMotive16_user(_this, CMonsterSkillGetExceptMotive16_next);
         };
-        int CMonsterSkillGetExceptMotiveValue18_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetExceptMotiveValue18_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetExceptMotiveValue18_user(_this, CMonsterSkillGetExceptMotiveValue18_next);
         };
-        struct _base_fld* CMonsterSkillGetFld20_wrapper(struct CMonsterSkill* _this)
+        static struct _base_fld* CMonsterSkillGetFld20_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetFld20_user(_this, CMonsterSkillGetFld20_next);
         };
-        int CMonsterSkillGetMaxDmg22_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMaxDmg22_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMaxDmg22_user(_this, CMonsterSkillGetMaxDmg22_next);
         };
-        int CMonsterSkillGetMaxProb24_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMaxProb24_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMaxProb24_user(_this, CMonsterSkillGetMaxProb24_next);
         };
-        int CMonsterSkillGetMinDmg26_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMinDmg26_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMinDmg26_user(_this, CMonsterSkillGetMinDmg26_next);
         };
-        int CMonsterSkillGetMinProb28_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMinProb28_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMinProb28_user(_this, CMonsterSkillGetMinProb28_next);
         };
-        int CMonsterSkillGetMotive30_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMotive30_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMotive30_user(_this, CMonsterSkillGetMotive30_next);
         };
-        int CMonsterSkillGetMotiveValue32_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetMotiveValue32_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetMotiveValue32_user(_this, CMonsterSkillGetMotiveValue32_next);
         };
-        unsigned int CMonsterSkillGetNextActionDelayTime34_wrapper(struct CMonsterSkill* _this)
+        static unsigned int CMonsterSkillGetNextActionDelayTime34_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetNextActionDelayTime34_user(_this, CMonsterSkillGetNextActionDelayTime34_next);
         };
-        int CMonsterSkillGetSFLv36_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetSFLv36_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetSFLv36_user(_this, CMonsterSkillGetSFLv36_next);
         };
-        int CMonsterSkillGetSPActionProbability38_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetSPActionProbability38_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetSPActionProbability38_user(_this, CMonsterSkillGetSPActionProbability38_next);
         };
-        int CMonsterSkillGetSPLimitCount40_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetSPLimitCount40_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetSPLimitCount40_user(_this, CMonsterSkillGetSPLimitCount40_next);
         };
-        int CMonsterSkillGetType42_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetType42_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetType42_user(_this, CMonsterSkillGetType42_next);
         };
-        int CMonsterSkillGetUseType44_wrapper(struct CMonsterSkill* _this)
+        static int CMonsterSkillGetUseType44_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillGetUseType44_user(_this, CMonsterSkillGetUseType44_next);
         };
-        void CMonsterSkillInit46_wrapper(struct CMonsterSkill* _this)
+        static void CMonsterSkillInit46_wrapper(struct CMonsterSkill* _this)
         {
            CMonsterSkillInit46_user(_this, CMonsterSkillInit46_next);
         };
-        bool CMonsterSkillIsAttackAble48_wrapper(struct CMonsterSkill* _this)
+        static bool CMonsterSkillIsAttackAble48_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillIsAttackAble48_user(_this, CMonsterSkillIsAttackAble48_next);
         };
-        bool CMonsterSkillIsExit50_wrapper(struct CMonsterSkill* _this)
+        static bool CMonsterSkillIsExit50_wrapper(struct CMonsterSkill* _this)
         {
            return CMonsterSkillIsExit50_user(_this, CMonsterSkillIsExit50_next);
         };
-        void CMonsterSkillNextPass52_wrapper(struct CMonsterSkill* _this)
+        static void CMonsterSkillNextPass52_wrapper(struct CMonsterSkill* _this)
         {
            CMonsterSkillNextPass52_user(_this, CMonsterSkillNextPass52_next);
         };
-        void CMonsterSkillSetAccumulationCountAdd54_wrapper(struct CMonsterSkill* _this, int nTempAccumulationCount)
+        static void CMonsterSkillSetAccumulationCountAdd54_wrapper(struct CMonsterSkill* _this, int nTempAccumulationCount)
         {
            CMonsterSkillSetAccumulationCountAdd54_user(_this, nTempAccumulationCount, CMonsterSkillSetAccumulationCountAdd54_next);
         };
-        int CMonsterSkillSetForce56_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, struct _monster_sp_fld* pSPCont, int nSFLv, struct _force_fld* pForceFld, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay, int nMotive, int nMotiveValue, int skillDestType)
+        static int CMonsterSkillSetForce56_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, struct _monster_sp_fld* pSPCont, int nSFLv, struct _force_fld* pForceFld, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay, int nMotive, int nMotiveValue, int skillDestType)
         {
            return CMonsterSkillSetForce56_user(_this, pMonsterFld, pSPCont, nSFLv, pForceFld, dwDelayTime, fAttackDist, dwCastDelay, nMotive, nMotiveValue, skillDestType, CMonsterSkillSetForce56_next);
         };
-        int CMonsterSkillSetGen58_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, int nSFLv, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay)
+        static int CMonsterSkillSetGen58_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, int nSFLv, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay)
         {
            return CMonsterSkillSetGen58_user(_this, pMonsterFld, nSFLv, dwDelayTime, fAttackDist, dwCastDelay, CMonsterSkillSetGen58_next);
         };
-        int CMonsterSkillSetSkill60_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, struct _monster_sp_fld* pSPCont, int nSFLv, int nEffectType, struct _skill_fld* pSkillFld, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay, int nMotive, int nMotiveValue, int skillDestType)
+        static int CMonsterSkillSetSkill60_wrapper(struct CMonsterSkill* _this, struct _monster_fld* pMonsterFld, struct _monster_sp_fld* pSPCont, int nSFLv, int nEffectType, struct _skill_fld* pSkillFld, unsigned int dwDelayTime, float fAttackDist, unsigned int dwCastDelay, int nMotive, int nMotiveValue, int skillDestType)
         {
            return CMonsterSkillSetSkill60_user(_this, pMonsterFld, pSPCont, nSFLv, nEffectType, pSkillFld, dwDelayTime, fAttackDist, dwCastDelay, nMotive, nMotiveValue, skillDestType, CMonsterSkillSetSkill60_next);
         };
-        int CMonsterSkillUse62_wrapper(struct CMonsterSkill* _this, unsigned int dwUsedTime, bool bCount)
+        static int CMonsterSkillUse62_wrapper(struct CMonsterSkill* _this, unsigned int dwUsedTime, bool bCount)
         {
            return CMonsterSkillUse62_user(_this, dwUsedTime, bCount, CMonsterSkillUse62_next);
         };
-        void CMonsterSkilldtor_CMonsterSkill64_wrapper(struct CMonsterSkill* _this)
+        static void CMonsterSkilldtor_CMonsterSkill64_wrapper(struct CMonsterSkill* _this)
         {
            CMonsterSkilldtor_CMonsterSkill64_user(_this, CMonsterSkilldtor_CMonsterSkill64_next);
         };
         
-        hook_record CMonsterSkill_functions[] = {
+        static hook_record CMonsterSkill_functions[] = {
         {   (LPVOID)0x14014b5a0L,
             (LPVOID *)&CMonsterSkillctor_CMonsterSkill2_user,
             (LPVOID *)&CMonsterSkillctor_CMonsterSkill2_next,
@@ -366,5 +366,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

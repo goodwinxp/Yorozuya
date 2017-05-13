@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CObjectIsKindOf1_ptr CObjectIsKindOf1_next(nullptr);
-        info::CObjectIsKindOf1_clbk CObjectIsKindOf1_user(nullptr);
-        info::CObjectSerialize2_ptr CObjectSerialize2_next(nullptr);
-        info::CObjectSerialize2_clbk CObjectSerialize2_user(nullptr);
+        static info::CObjectIsKindOf1_ptr CObjectIsKindOf1_next(nullptr);
+        static info::CObjectIsKindOf1_clbk CObjectIsKindOf1_user(nullptr);
+        static info::CObjectSerialize2_ptr CObjectSerialize2_next(nullptr);
+        static info::CObjectSerialize2_clbk CObjectSerialize2_user(nullptr);
         
-        int64_t CObjectIsKindOf1_wrapper(struct CObject* _this, struct CRuntimeClass* arg_0)
+        static int64_t CObjectIsKindOf1_wrapper(struct CObject* _this, struct CRuntimeClass* arg_0)
         {
            return CObjectIsKindOf1_user(_this, arg_0, CObjectIsKindOf1_next);
         };
-        void CObjectSerialize2_wrapper(struct CObject* _this, struct CArchive* arg_0)
+        static void CObjectSerialize2_wrapper(struct CObject* _this, struct CArchive* arg_0)
         {
            CObjectSerialize2_user(_this, arg_0, CObjectSerialize2_next);
         };
         
-        hook_record CObject_functions[] = {
+        static hook_record CObject_functions[] = {
         {   (LPVOID)0x1404dc210L,
             (LPVOID *)&CObjectIsKindOf1_user,
             (LPVOID *)&CObjectIsKindOf1_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

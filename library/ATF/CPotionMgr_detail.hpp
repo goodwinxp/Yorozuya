@@ -8,117 +8,117 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPotionMgrApplyPotion2_ptr CPotionMgrApplyPotion2_next(nullptr);
-        info::CPotionMgrApplyPotion2_clbk CPotionMgrApplyPotion2_user(nullptr);
-        info::CPotionMgrctor_CPotionMgr4_ptr CPotionMgrctor_CPotionMgr4_next(nullptr);
-        info::CPotionMgrctor_CPotionMgr4_clbk CPotionMgrctor_CPotionMgr4_user(nullptr);
-        info::CPotionMgrCheckPotionUsableMap6_ptr CPotionMgrCheckPotionUsableMap6_next(nullptr);
-        info::CPotionMgrCheckPotionUsableMap6_clbk CPotionMgrCheckPotionUsableMap6_user(nullptr);
-        info::CPotionMgrComplete_RenameChar_DB_Select8_ptr CPotionMgrComplete_RenameChar_DB_Select8_next(nullptr);
-        info::CPotionMgrComplete_RenameChar_DB_Select8_clbk CPotionMgrComplete_RenameChar_DB_Select8_user(nullptr);
-        info::CPotionMgrComplete_RenameChar_DB_Update10_ptr CPotionMgrComplete_RenameChar_DB_Update10_next(nullptr);
-        info::CPotionMgrComplete_RenameChar_DB_Update10_clbk CPotionMgrComplete_RenameChar_DB_Update10_user(nullptr);
-        info::CPotionMgrDatafileInit12_ptr CPotionMgrDatafileInit12_next(nullptr);
-        info::CPotionMgrDatafileInit12_clbk CPotionMgrDatafileInit12_user(nullptr);
-        info::CPotionMgrInsertMovePotionStoneEffect14_ptr CPotionMgrInsertMovePotionStoneEffect14_next(nullptr);
-        info::CPotionMgrInsertMovePotionStoneEffect14_clbk CPotionMgrInsertMovePotionStoneEffect14_user(nullptr);
-        info::CPotionMgrInsertPotionContEffect16_ptr CPotionMgrInsertPotionContEffect16_next(nullptr);
-        info::CPotionMgrInsertPotionContEffect16_clbk CPotionMgrInsertPotionContEffect16_user(nullptr);
-        info::CPotionMgrInsertRenamePotion18_ptr CPotionMgrInsertRenamePotion18_next(nullptr);
-        info::CPotionMgrInsertRenamePotion18_clbk CPotionMgrInsertRenamePotion18_user(nullptr);
-        info::CPotionMgrIsPotionDelayUseIndex20_ptr CPotionMgrIsPotionDelayUseIndex20_next(nullptr);
-        info::CPotionMgrIsPotionDelayUseIndex20_clbk CPotionMgrIsPotionDelayUseIndex20_user(nullptr);
-        info::CPotionMgrPreCheckPotion22_ptr CPotionMgrPreCheckPotion22_next(nullptr);
-        info::CPotionMgrPreCheckPotion22_clbk CPotionMgrPreCheckPotion22_user(nullptr);
-        info::CPotionMgrPushRenamePotionDBLog24_ptr CPotionMgrPushRenamePotionDBLog24_next(nullptr);
-        info::CPotionMgrPushRenamePotionDBLog24_clbk CPotionMgrPushRenamePotionDBLog24_user(nullptr);
-        info::CPotionMgrRemovePotionContEffect26_ptr CPotionMgrRemovePotionContEffect26_next(nullptr);
-        info::CPotionMgrRemovePotionContEffect26_clbk CPotionMgrRemovePotionContEffect26_user(nullptr);
-        info::CPotionMgrSelectDeleteBuf28_ptr CPotionMgrSelectDeleteBuf28_next(nullptr);
-        info::CPotionMgrSelectDeleteBuf28_clbk CPotionMgrSelectDeleteBuf28_user(nullptr);
-        info::CPotionMgrSetPotionDataName30_ptr CPotionMgrSetPotionDataName30_next(nullptr);
-        info::CPotionMgrSetPotionDataName30_clbk CPotionMgrSetPotionDataName30_user(nullptr);
-        info::CPotionMgrUpdatePotionContEffect32_ptr CPotionMgrUpdatePotionContEffect32_next(nullptr);
-        info::CPotionMgrUpdatePotionContEffect32_clbk CPotionMgrUpdatePotionContEffect32_user(nullptr);
-        info::CPotionMgrUsePotion34_ptr CPotionMgrUsePotion34_next(nullptr);
-        info::CPotionMgrUsePotion34_clbk CPotionMgrUsePotion34_user(nullptr);
-        info::CPotionMgrdtor_CPotionMgr36_ptr CPotionMgrdtor_CPotionMgr36_next(nullptr);
-        info::CPotionMgrdtor_CPotionMgr36_clbk CPotionMgrdtor_CPotionMgr36_user(nullptr);
+        static info::CPotionMgrApplyPotion2_ptr CPotionMgrApplyPotion2_next(nullptr);
+        static info::CPotionMgrApplyPotion2_clbk CPotionMgrApplyPotion2_user(nullptr);
+        static info::CPotionMgrctor_CPotionMgr4_ptr CPotionMgrctor_CPotionMgr4_next(nullptr);
+        static info::CPotionMgrctor_CPotionMgr4_clbk CPotionMgrctor_CPotionMgr4_user(nullptr);
+        static info::CPotionMgrCheckPotionUsableMap6_ptr CPotionMgrCheckPotionUsableMap6_next(nullptr);
+        static info::CPotionMgrCheckPotionUsableMap6_clbk CPotionMgrCheckPotionUsableMap6_user(nullptr);
+        static info::CPotionMgrComplete_RenameChar_DB_Select8_ptr CPotionMgrComplete_RenameChar_DB_Select8_next(nullptr);
+        static info::CPotionMgrComplete_RenameChar_DB_Select8_clbk CPotionMgrComplete_RenameChar_DB_Select8_user(nullptr);
+        static info::CPotionMgrComplete_RenameChar_DB_Update10_ptr CPotionMgrComplete_RenameChar_DB_Update10_next(nullptr);
+        static info::CPotionMgrComplete_RenameChar_DB_Update10_clbk CPotionMgrComplete_RenameChar_DB_Update10_user(nullptr);
+        static info::CPotionMgrDatafileInit12_ptr CPotionMgrDatafileInit12_next(nullptr);
+        static info::CPotionMgrDatafileInit12_clbk CPotionMgrDatafileInit12_user(nullptr);
+        static info::CPotionMgrInsertMovePotionStoneEffect14_ptr CPotionMgrInsertMovePotionStoneEffect14_next(nullptr);
+        static info::CPotionMgrInsertMovePotionStoneEffect14_clbk CPotionMgrInsertMovePotionStoneEffect14_user(nullptr);
+        static info::CPotionMgrInsertPotionContEffect16_ptr CPotionMgrInsertPotionContEffect16_next(nullptr);
+        static info::CPotionMgrInsertPotionContEffect16_clbk CPotionMgrInsertPotionContEffect16_user(nullptr);
+        static info::CPotionMgrInsertRenamePotion18_ptr CPotionMgrInsertRenamePotion18_next(nullptr);
+        static info::CPotionMgrInsertRenamePotion18_clbk CPotionMgrInsertRenamePotion18_user(nullptr);
+        static info::CPotionMgrIsPotionDelayUseIndex20_ptr CPotionMgrIsPotionDelayUseIndex20_next(nullptr);
+        static info::CPotionMgrIsPotionDelayUseIndex20_clbk CPotionMgrIsPotionDelayUseIndex20_user(nullptr);
+        static info::CPotionMgrPreCheckPotion22_ptr CPotionMgrPreCheckPotion22_next(nullptr);
+        static info::CPotionMgrPreCheckPotion22_clbk CPotionMgrPreCheckPotion22_user(nullptr);
+        static info::CPotionMgrPushRenamePotionDBLog24_ptr CPotionMgrPushRenamePotionDBLog24_next(nullptr);
+        static info::CPotionMgrPushRenamePotionDBLog24_clbk CPotionMgrPushRenamePotionDBLog24_user(nullptr);
+        static info::CPotionMgrRemovePotionContEffect26_ptr CPotionMgrRemovePotionContEffect26_next(nullptr);
+        static info::CPotionMgrRemovePotionContEffect26_clbk CPotionMgrRemovePotionContEffect26_user(nullptr);
+        static info::CPotionMgrSelectDeleteBuf28_ptr CPotionMgrSelectDeleteBuf28_next(nullptr);
+        static info::CPotionMgrSelectDeleteBuf28_clbk CPotionMgrSelectDeleteBuf28_user(nullptr);
+        static info::CPotionMgrSetPotionDataName30_ptr CPotionMgrSetPotionDataName30_next(nullptr);
+        static info::CPotionMgrSetPotionDataName30_clbk CPotionMgrSetPotionDataName30_user(nullptr);
+        static info::CPotionMgrUpdatePotionContEffect32_ptr CPotionMgrUpdatePotionContEffect32_next(nullptr);
+        static info::CPotionMgrUpdatePotionContEffect32_clbk CPotionMgrUpdatePotionContEffect32_user(nullptr);
+        static info::CPotionMgrUsePotion34_ptr CPotionMgrUsePotion34_next(nullptr);
+        static info::CPotionMgrUsePotion34_clbk CPotionMgrUsePotion34_user(nullptr);
+        static info::CPotionMgrdtor_CPotionMgr36_ptr CPotionMgrdtor_CPotionMgr36_next(nullptr);
+        static info::CPotionMgrdtor_CPotionMgr36_clbk CPotionMgrdtor_CPotionMgr36_user(nullptr);
         
-        int CPotionMgrApplyPotion2_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CPlayer* pApplyPlayer, struct _skill_fld* pEffecFld, struct _CheckPotion_fld* pCheckFld, struct _PotionItem_fld* pfB, bool bCommonPotion)
+        static int CPotionMgrApplyPotion2_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CPlayer* pApplyPlayer, struct _skill_fld* pEffecFld, struct _CheckPotion_fld* pCheckFld, struct _PotionItem_fld* pfB, bool bCommonPotion)
         {
            return CPotionMgrApplyPotion2_user(_this, pUsePlayer, pApplyPlayer, pEffecFld, pCheckFld, pfB, bCommonPotion, CPotionMgrApplyPotion2_next);
         };
-        void CPotionMgrctor_CPotionMgr4_wrapper(struct CPotionMgr* _this)
+        static void CPotionMgrctor_CPotionMgr4_wrapper(struct CPotionMgr* _this)
         {
            CPotionMgrctor_CPotionMgr4_user(_this, CPotionMgrctor_CPotionMgr4_next);
         };
-        bool CPotionMgrCheckPotionUsableMap6_wrapper(struct CPotionMgr* _this, struct _PotionItem_fld* pPotionFld, struct CMapData* pMap)
+        static bool CPotionMgrCheckPotionUsableMap6_wrapper(struct CPotionMgr* _this, struct _PotionItem_fld* pPotionFld, struct CMapData* pMap)
         {
            return CPotionMgrCheckPotionUsableMap6_user(_this, pPotionFld, pMap, CPotionMgrCheckPotionUsableMap6_next);
         };
-        void CPotionMgrComplete_RenameChar_DB_Select8_wrapper(struct CPotionMgr* _this, char byRet, char* p)
+        static void CPotionMgrComplete_RenameChar_DB_Select8_wrapper(struct CPotionMgr* _this, char byRet, char* p)
         {
            CPotionMgrComplete_RenameChar_DB_Select8_user(_this, byRet, p, CPotionMgrComplete_RenameChar_DB_Select8_next);
         };
-        void CPotionMgrComplete_RenameChar_DB_Update10_wrapper(struct CPotionMgr* _this, char byRet, char* p)
+        static void CPotionMgrComplete_RenameChar_DB_Update10_wrapper(struct CPotionMgr* _this, char byRet, char* p)
         {
            CPotionMgrComplete_RenameChar_DB_Update10_user(_this, byRet, p, CPotionMgrComplete_RenameChar_DB_Update10_next);
         };
-        bool CPotionMgrDatafileInit12_wrapper(struct CPotionMgr* _this)
+        static bool CPotionMgrDatafileInit12_wrapper(struct CPotionMgr* _this)
         {
            return CPotionMgrDatafileInit12_user(_this, CPotionMgrDatafileInit12_next);
         };
-        void CPotionMgrInsertMovePotionStoneEffect14_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer)
+        static void CPotionMgrInsertMovePotionStoneEffect14_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer)
         {
            CPotionMgrInsertMovePotionStoneEffect14_user(_this, pApplyPlayer, CPotionMgrInsertMovePotionStoneEffect14_next);
         };
-        int CPotionMgrInsertPotionContEffect16_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer, struct _ContPotionData* ContPotionData, struct _skill_fld* pEffecFld, unsigned int dwDurTime)
+        static int CPotionMgrInsertPotionContEffect16_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer, struct _ContPotionData* ContPotionData, struct _skill_fld* pEffecFld, unsigned int dwDurTime)
         {
            return CPotionMgrInsertPotionContEffect16_user(_this, pApplyPlayer, ContPotionData, pEffecFld, dwDurTime, CPotionMgrInsertPotionContEffect16_next);
         };
-        bool CPotionMgrInsertRenamePotion18_wrapper(struct CPotionMgr* _this, struct CRFWorldDatabase* pkWorldDB, char* pData)
+        static bool CPotionMgrInsertRenamePotion18_wrapper(struct CPotionMgr* _this, struct CRFWorldDatabase* pkWorldDB, char* pData)
         {
            return CPotionMgrInsertRenamePotion18_user(_this, pkWorldDB, pData, CPotionMgrInsertRenamePotion18_next);
         };
-        bool CPotionMgrIsPotionDelayUseIndex20_wrapper(struct CPotionMgr* _this, int nIndex)
+        static bool CPotionMgrIsPotionDelayUseIndex20_wrapper(struct CPotionMgr* _this, int nIndex)
         {
            return CPotionMgrIsPotionDelayUseIndex20_user(_this, nIndex, CPotionMgrIsPotionDelayUseIndex20_next);
         };
-        int CPotionMgrPreCheckPotion22_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CCharacter** pTargetCharacter, struct _PotionItem_fld* pfB, unsigned int nCurTime, struct _skill_fld* pFld, bool bCheckDist)
+        static int CPotionMgrPreCheckPotion22_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CCharacter** pTargetCharacter, struct _PotionItem_fld* pfB, unsigned int nCurTime, struct _skill_fld* pFld, bool bCheckDist)
         {
            return CPotionMgrPreCheckPotion22_user(_this, pUsePlayer, pTargetCharacter, pfB, nCurTime, pFld, bCheckDist, CPotionMgrPreCheckPotion22_next);
         };
-        void CPotionMgrPushRenamePotionDBLog24_wrapper(struct CPotionMgr* _this, char* pInfo)
+        static void CPotionMgrPushRenamePotionDBLog24_wrapper(struct CPotionMgr* _this, char* pInfo)
         {
            CPotionMgrPushRenamePotionDBLog24_user(_this, pInfo, CPotionMgrPushRenamePotionDBLog24_next);
         };
-        int CPotionMgrRemovePotionContEffect26_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer, struct _ContPotionData* ContPotionData)
+        static int CPotionMgrRemovePotionContEffect26_wrapper(struct CPotionMgr* _this, struct CPlayer* pApplyPlayer, struct _ContPotionData* ContPotionData)
         {
            return CPotionMgrRemovePotionContEffect26_user(_this, pApplyPlayer, ContPotionData, CPotionMgrRemovePotionContEffect26_next);
         };
-        int CPotionMgrSelectDeleteBuf28_wrapper(struct CPotionMgr* _this, struct CPlayer* pOne, bool bUse, bool bRemove)
+        static int CPotionMgrSelectDeleteBuf28_wrapper(struct CPotionMgr* _this, struct CPlayer* pOne, bool bUse, bool bRemove)
         {
            return CPotionMgrSelectDeleteBuf28_user(_this, pOne, bUse, bRemove, CPotionMgrSelectDeleteBuf28_next);
         };
-        bool CPotionMgrSetPotionDataName30_wrapper(struct CPotionMgr* _this)
+        static bool CPotionMgrSetPotionDataName30_wrapper(struct CPotionMgr* _this)
         {
            return CPotionMgrSetPotionDataName30_user(_this, CPotionMgrSetPotionDataName30_next);
         };
-        void CPotionMgrUpdatePotionContEffect32_wrapper(struct CPotionMgr* _this, struct CPlayer* pPlayer)
+        static void CPotionMgrUpdatePotionContEffect32_wrapper(struct CPotionMgr* _this, struct CPlayer* pPlayer)
         {
            CPotionMgrUpdatePotionContEffect32_user(_this, pPlayer, CPotionMgrUpdatePotionContEffect32_next);
         };
-        int CPotionMgrUsePotion34_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CCharacter* pTargetCharacter, struct _PotionItem_fld* pfB, unsigned int nCurTime)
+        static int CPotionMgrUsePotion34_wrapper(struct CPotionMgr* _this, struct CPlayer* pUsePlayer, struct CCharacter* pTargetCharacter, struct _PotionItem_fld* pfB, unsigned int nCurTime)
         {
            return CPotionMgrUsePotion34_user(_this, pUsePlayer, pTargetCharacter, pfB, nCurTime, CPotionMgrUsePotion34_next);
         };
-        void CPotionMgrdtor_CPotionMgr36_wrapper(struct CPotionMgr* _this)
+        static void CPotionMgrdtor_CPotionMgr36_wrapper(struct CPotionMgr* _this)
         {
            CPotionMgrdtor_CPotionMgr36_user(_this, CPotionMgrdtor_CPotionMgr36_next);
         };
         
-        hook_record CPotionMgr_functions[] = {
+        static hook_record CPotionMgr_functions[] = {
         {   (LPVOID)0x14039e6d0L,
             (LPVOID *)&CPotionMgrApplyPotion2_user,
             (LPVOID *)&CPotionMgrApplyPotion2_next,
@@ -212,5 +212,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

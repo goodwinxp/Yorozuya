@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_src_guild_out_guildbattlecostsize2_ptr _qry_case_src_guild_out_guildbattlecostsize2_next(nullptr);
-        info::_qry_case_src_guild_out_guildbattlecostsize2_clbk _qry_case_src_guild_out_guildbattlecostsize2_user(nullptr);
+        static info::_qry_case_src_guild_out_guildbattlecostsize2_ptr _qry_case_src_guild_out_guildbattlecostsize2_next(nullptr);
+        static info::_qry_case_src_guild_out_guildbattlecostsize2_clbk _qry_case_src_guild_out_guildbattlecostsize2_user(nullptr);
         
-        int _qry_case_src_guild_out_guildbattlecostsize2_wrapper(struct _qry_case_src_guild_out_guildbattlecost* _this)
+        static int _qry_case_src_guild_out_guildbattlecostsize2_wrapper(struct _qry_case_src_guild_out_guildbattlecost* _this)
         {
            return _qry_case_src_guild_out_guildbattlecostsize2_user(_this, _qry_case_src_guild_out_guildbattlecostsize2_next);
         };
         
-        hook_record _qry_case_src_guild_out_guildbattlecost_functions[] = {
+        static hook_record _qry_case_src_guild_out_guildbattlecost_functions[] = {
         {   (LPVOID)0x14025d5c0L,
             (LPVOID *)&_qry_case_src_guild_out_guildbattlecostsize2_user,
             (LPVOID *)&_qry_case_src_guild_out_guildbattlecostsize2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

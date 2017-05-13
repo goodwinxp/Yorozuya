@@ -8,555 +8,555 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CHolyStoneSystemAlterSchedule2_ptr CHolyStoneSystemAlterSchedule2_next(nullptr);
-        info::CHolyStoneSystemAlterSchedule2_clbk CHolyStoneSystemAlterSchedule2_user(nullptr);
-        info::CHolyStoneSystemAuthMiningTicket4_ptr CHolyStoneSystemAuthMiningTicket4_next(nullptr);
-        info::CHolyStoneSystemAuthMiningTicket4_clbk CHolyStoneSystemAuthMiningTicket4_user(nullptr);
-        info::CHolyStoneSystemctor_CHolyStoneSystem6_ptr CHolyStoneSystemctor_CHolyStoneSystem6_next(nullptr);
-        info::CHolyStoneSystemctor_CHolyStoneSystem6_clbk CHolyStoneSystemctor_CHolyStoneSystem6_user(nullptr);
-        info::CHolyStoneSystemCheckDestroyerIsArriveMine8_ptr CHolyStoneSystemCheckDestroyerIsArriveMine8_next(nullptr);
-        info::CHolyStoneSystemCheckDestroyerIsArriveMine8_clbk CHolyStoneSystemCheckDestroyerIsArriveMine8_user(nullptr);
-        info::CHolyStoneSystemCheckHolyMaster10_ptr CHolyStoneSystemCheckHolyMaster10_next(nullptr);
-        info::CHolyStoneSystemCheckHolyMaster10_clbk CHolyStoneSystemCheckHolyMaster10_user(nullptr);
-        info::CHolyStoneSystemCheckKeeperPlusTime12_ptr CHolyStoneSystemCheckKeeperPlusTime12_next(nullptr);
-        info::CHolyStoneSystemCheckKeeperPlusTime12_clbk CHolyStoneSystemCheckKeeperPlusTime12_user(nullptr);
-        info::CHolyStoneSystemContinueStartSystem14_ptr CHolyStoneSystemContinueStartSystem14_next(nullptr);
-        info::CHolyStoneSystemContinueStartSystem14_clbk CHolyStoneSystemContinueStartSystem14_user(nullptr);
-        info::CHolyStoneSystemCreateHolyKeeper16_ptr CHolyStoneSystemCreateHolyKeeper16_next(nullptr);
-        info::CHolyStoneSystemCreateHolyKeeper16_clbk CHolyStoneSystemCreateHolyKeeper16_user(nullptr);
-        info::CHolyStoneSystemCreateHolyStone18_ptr CHolyStoneSystemCreateHolyStone18_next(nullptr);
-        info::CHolyStoneSystemCreateHolyStone18_clbk CHolyStoneSystemCreateHolyStone18_user(nullptr);
-        info::CHolyStoneSystemDestroyHolyKeeper20_ptr CHolyStoneSystemDestroyHolyKeeper20_next(nullptr);
-        info::CHolyStoneSystemDestroyHolyKeeper20_clbk CHolyStoneSystemDestroyHolyKeeper20_user(nullptr);
-        info::CHolyStoneSystemDestroyHolyStone22_ptr CHolyStoneSystemDestroyHolyStone22_next(nullptr);
-        info::CHolyStoneSystemDestroyHolyStone22_clbk CHolyStoneSystemDestroyHolyStone22_user(nullptr);
-        info::CHolyStoneSystemFindStoragedQuestCash24_ptr CHolyStoneSystemFindStoragedQuestCash24_next(nullptr);
-        info::CHolyStoneSystemFindStoragedQuestCash24_clbk CHolyStoneSystemFindStoragedQuestCash24_user(nullptr);
-        info::CHolyStoneSystemGetControlLeftTime26_ptr CHolyStoneSystemGetControlLeftTime26_next(nullptr);
-        info::CHolyStoneSystemGetControlLeftTime26_clbk CHolyStoneSystemGetControlLeftTime26_user(nullptr);
-        info::CHolyStoneSystemGetDestroyStoneRace28_ptr CHolyStoneSystemGetDestroyStoneRace28_next(nullptr);
-        info::CHolyStoneSystemGetDestroyStoneRace28_clbk CHolyStoneSystemGetDestroyStoneRace28_user(nullptr);
-        info::CHolyStoneSystemGetDestroyerGuildSerial30_ptr CHolyStoneSystemGetDestroyerGuildSerial30_next(nullptr);
-        info::CHolyStoneSystemGetDestroyerGuildSerial30_clbk CHolyStoneSystemGetDestroyerGuildSerial30_user(nullptr);
-        info::CHolyStoneSystemGetDestroyerSerial32_ptr CHolyStoneSystemGetDestroyerSerial32_next(nullptr);
-        info::CHolyStoneSystemGetDestroyerSerial32_clbk CHolyStoneSystemGetDestroyerSerial32_user(nullptr);
-        info::CHolyStoneSystemGetDestroyerState34_ptr CHolyStoneSystemGetDestroyerState34_next(nullptr);
-        info::CHolyStoneSystemGetDestroyerState34_clbk CHolyStoneSystemGetDestroyerState34_user(nullptr);
-        info::CHolyStoneSystemGetGoldBoxConsumable36_ptr CHolyStoneSystemGetGoldBoxConsumable36_next(nullptr);
-        info::CHolyStoneSystemGetGoldBoxConsumable36_clbk CHolyStoneSystemGetGoldBoxConsumable36_user(nullptr);
-        info::CHolyStoneSystemGetHolyMasterRace38_ptr CHolyStoneSystemGetHolyMasterRace38_next(nullptr);
-        info::CHolyStoneSystemGetHolyMasterRace38_clbk CHolyStoneSystemGetHolyMasterRace38_user(nullptr);
-        info::CHolyStoneSystemGetHolyMentalString40_ptr CHolyStoneSystemGetHolyMentalString40_next(nullptr);
-        info::CHolyStoneSystemGetHolyMentalString40_clbk CHolyStoneSystemGetHolyMentalString40_user(nullptr);
-        info::CHolyStoneSystemGetKeeperDestroyRace42_ptr CHolyStoneSystemGetKeeperDestroyRace42_next(nullptr);
-        info::CHolyStoneSystemGetKeeperDestroyRace42_clbk CHolyStoneSystemGetKeeperDestroyRace42_user(nullptr);
-        info::CHolyStoneSystemGetMapData44_ptr CHolyStoneSystemGetMapData44_next(nullptr);
-        info::CHolyStoneSystemGetMapData44_clbk CHolyStoneSystemGetMapData44_user(nullptr);
-        info::CHolyStoneSystemGetNumOfTime46_ptr CHolyStoneSystemGetNumOfTime46_next(nullptr);
-        info::CHolyStoneSystemGetNumOfTime46_clbk CHolyStoneSystemGetNumOfTime46_user(nullptr);
-        info::CHolyStoneSystemGetPortalDummy48_ptr CHolyStoneSystemGetPortalDummy48_next(nullptr);
-        info::CHolyStoneSystemGetPortalDummy48_clbk CHolyStoneSystemGetPortalDummy48_user(nullptr);
-        info::CHolyStoneSystemGetSceneCode50_ptr CHolyStoneSystemGetSceneCode50_next(nullptr);
-        info::CHolyStoneSystemGetSceneCode50_clbk CHolyStoneSystemGetSceneCode50_user(nullptr);
-        info::CHolyStoneSystemGetStartBattleTickTime52_ptr CHolyStoneSystemGetStartBattleTickTime52_next(nullptr);
-        info::CHolyStoneSystemGetStartBattleTickTime52_clbk CHolyStoneSystemGetStartBattleTickTime52_user(nullptr);
-        info::CHolyStoneSystemGetStartDay54_ptr CHolyStoneSystemGetStartDay54_next(nullptr);
-        info::CHolyStoneSystemGetStartDay54_clbk CHolyStoneSystemGetStartDay54_user(nullptr);
-        info::CHolyStoneSystemGetStartHour56_ptr CHolyStoneSystemGetStartHour56_next(nullptr);
-        info::CHolyStoneSystemGetStartHour56_clbk CHolyStoneSystemGetStartHour56_user(nullptr);
-        info::CHolyStoneSystemGetStartMin58_ptr CHolyStoneSystemGetStartMin58_next(nullptr);
-        info::CHolyStoneSystemGetStartMin58_clbk CHolyStoneSystemGetStartMin58_user(nullptr);
-        info::CHolyStoneSystemGetStartMonth60_ptr CHolyStoneSystemGetStartMonth60_next(nullptr);
-        info::CHolyStoneSystemGetStartMonth60_clbk CHolyStoneSystemGetStartMonth60_user(nullptr);
-        info::CHolyStoneSystemGetStartYear62_ptr CHolyStoneSystemGetStartYear62_next(nullptr);
-        info::CHolyStoneSystemGetStartYear62_clbk CHolyStoneSystemGetStartYear62_user(nullptr);
-        info::CHolyStoneSystemGiveHSKQuest64_ptr CHolyStoneSystemGiveHSKQuest64_next(nullptr);
-        info::CHolyStoneSystemGiveHSKQuest64_clbk CHolyStoneSystemGiveHSKQuest64_user(nullptr);
-        info::CHolyStoneSystemHSKRespawnSystem66_ptr CHolyStoneSystemHSKRespawnSystem66_next(nullptr);
-        info::CHolyStoneSystemHSKRespawnSystem66_clbk CHolyStoneSystemHSKRespawnSystem66_user(nullptr);
-        info::CHolyStoneSystemInitHolySystem68_ptr CHolyStoneSystemInitHolySystem68_next(nullptr);
-        info::CHolyStoneSystemInitHolySystem68_clbk CHolyStoneSystemInitHolySystem68_user(nullptr);
-        info::CHolyStoneSystemInitQuestCash70_ptr CHolyStoneSystemInitQuestCash70_next(nullptr);
-        info::CHolyStoneSystemInitQuestCash70_clbk CHolyStoneSystemInitQuestCash70_user(nullptr);
-        info::CHolyStoneSystemInitQuestCash_Other72_ptr CHolyStoneSystemInitQuestCash_Other72_next(nullptr);
-        info::CHolyStoneSystemInitQuestCash_Other72_clbk CHolyStoneSystemInitQuestCash_Other72_user(nullptr);
-        info::CHolyStoneSystemIsControlScene74_ptr CHolyStoneSystemIsControlScene74_next(nullptr);
-        info::CHolyStoneSystemIsControlScene74_clbk CHolyStoneSystemIsControlScene74_user(nullptr);
-        info::CHolyStoneSystemIsItemLootAuthority76_ptr CHolyStoneSystemIsItemLootAuthority76_next(nullptr);
-        info::CHolyStoneSystemIsItemLootAuthority76_clbk CHolyStoneSystemIsItemLootAuthority76_user(nullptr);
-        info::CHolyStoneSystemIsMentalPass78_ptr CHolyStoneSystemIsMentalPass78_next(nullptr);
-        info::CHolyStoneSystemIsMentalPass78_clbk CHolyStoneSystemIsMentalPass78_user(nullptr);
-        info::CHolyStoneSystemIsMinigeTicketCheck80_ptr CHolyStoneSystemIsMinigeTicketCheck80_next(nullptr);
-        info::CHolyStoneSystemIsMinigeTicketCheck80_clbk CHolyStoneSystemIsMinigeTicketCheck80_user(nullptr);
-        info::CHolyStoneSystemIsUseReturnItem82_ptr CHolyStoneSystemIsUseReturnItem82_next(nullptr);
-        info::CHolyStoneSystemIsUseReturnItem82_clbk CHolyStoneSystemIsUseReturnItem82_user(nullptr);
-        info::CHolyStoneSystemOnLoop84_ptr CHolyStoneSystemOnLoop84_next(nullptr);
-        info::CHolyStoneSystemOnLoop84_clbk CHolyStoneSystemOnLoop84_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_ptr CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_clbk CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_ptr CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_clbk CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_INIT90_ptr CHolyStoneSystemOn_HS_SCENE_INIT90_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_INIT90_clbk CHolyStoneSystemOn_HS_SCENE_INIT90_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_user(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_next(nullptr);
-        info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_user(nullptr);
-        info::CHolyStoneSystemPeneltyFailRace100_ptr CHolyStoneSystemPeneltyFailRace100_next(nullptr);
-        info::CHolyStoneSystemPeneltyFailRace100_clbk CHolyStoneSystemPeneltyFailRace100_user(nullptr);
-        info::CHolyStoneSystemPeneltyLoseRace102_ptr CHolyStoneSystemPeneltyLoseRace102_next(nullptr);
-        info::CHolyStoneSystemPeneltyLoseRace102_clbk CHolyStoneSystemPeneltyLoseRace102_user(nullptr);
-        info::CHolyStoneSystemPopStoredQuestCash_Other104_ptr CHolyStoneSystemPopStoredQuestCash_Other104_next(nullptr);
-        info::CHolyStoneSystemPopStoredQuestCash_Other104_clbk CHolyStoneSystemPopStoredQuestCash_Other104_user(nullptr);
-        info::CHolyStoneSystemPushQuestCash_Other106_ptr CHolyStoneSystemPushQuestCash_Other106_next(nullptr);
-        info::CHolyStoneSystemPushQuestCash_Other106_clbk CHolyStoneSystemPushQuestCash_Other106_user(nullptr);
-        info::CHolyStoneSystemPushStoreQuestCash108_ptr CHolyStoneSystemPushStoreQuestCash108_next(nullptr);
-        info::CHolyStoneSystemPushStoreQuestCash108_clbk CHolyStoneSystemPushStoreQuestCash108_user(nullptr);
-        info::CHolyStoneSystemReceiveDestroyKeeper110_ptr CHolyStoneSystemReceiveDestroyKeeper110_next(nullptr);
-        info::CHolyStoneSystemReceiveDestroyKeeper110_clbk CHolyStoneSystemReceiveDestroyKeeper110_user(nullptr);
-        info::CHolyStoneSystemRecoverPvpCash112_ptr CHolyStoneSystemRecoverPvpCash112_next(nullptr);
-        info::CHolyStoneSystemRecoverPvpCash112_clbk CHolyStoneSystemRecoverPvpCash112_user(nullptr);
-        info::CHolyStoneSystemReleaseLastAttBuff114_ptr CHolyStoneSystemReleaseLastAttBuff114_next(nullptr);
-        info::CHolyStoneSystemReleaseLastAttBuff114_clbk CHolyStoneSystemReleaseLastAttBuff114_user(nullptr);
-        info::CHolyStoneSystemSendHolyStoneHP116_ptr CHolyStoneSystemSendHolyStoneHP116_next(nullptr);
-        info::CHolyStoneSystemSendHolyStoneHP116_clbk CHolyStoneSystemSendHolyStoneHP116_user(nullptr);
-        info::CHolyStoneSystemSendHolyStoneHPToRaceBoss118_ptr CHolyStoneSystemSendHolyStoneHPToRaceBoss118_next(nullptr);
-        info::CHolyStoneSystemSendHolyStoneHPToRaceBoss118_clbk CHolyStoneSystemSendHolyStoneHPToRaceBoss118_user(nullptr);
-        info::CHolyStoneSystemSendIsArriveDestroyer120_ptr CHolyStoneSystemSendIsArriveDestroyer120_next(nullptr);
-        info::CHolyStoneSystemSendIsArriveDestroyer120_clbk CHolyStoneSystemSendIsArriveDestroyer120_user(nullptr);
-        info::CHolyStoneSystemSendMsg_CreateHolyMaster122_ptr CHolyStoneSystemSendMsg_CreateHolyMaster122_next(nullptr);
-        info::CHolyStoneSystemSendMsg_CreateHolyMaster122_clbk CHolyStoneSystemSendMsg_CreateHolyMaster122_user(nullptr);
-        info::CHolyStoneSystemSendMsg_EndBattle124_ptr CHolyStoneSystemSendMsg_EndBattle124_next(nullptr);
-        info::CHolyStoneSystemSendMsg_EndBattle124_clbk CHolyStoneSystemSendMsg_EndBattle124_user(nullptr);
-        info::CHolyStoneSystemSendMsg_EnterKeeper126_ptr CHolyStoneSystemSendMsg_EnterKeeper126_next(nullptr);
-        info::CHolyStoneSystemSendMsg_EnterKeeper126_clbk CHolyStoneSystemSendMsg_EnterKeeper126_user(nullptr);
-        info::CHolyStoneSystemSendMsg_EnterStone128_ptr CHolyStoneSystemSendMsg_EnterStone128_next(nullptr);
-        info::CHolyStoneSystemSendMsg_EnterStone128_clbk CHolyStoneSystemSendMsg_EnterStone128_user(nullptr);
-        info::CHolyStoneSystemSendMsg_ExitStone130_ptr CHolyStoneSystemSendMsg_ExitStone130_next(nullptr);
-        info::CHolyStoneSystemSendMsg_ExitStone130_clbk CHolyStoneSystemSendMsg_ExitStone130_user(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_ptr CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_next(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_clbk CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_user(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_ptr CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_next(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_clbk CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_user(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyStoneSystemState136_ptr CHolyStoneSystemSendMsg_HolyStoneSystemState136_next(nullptr);
-        info::CHolyStoneSystemSendMsg_HolyStoneSystemState136_clbk CHolyStoneSystemSendMsg_HolyStoneSystemState136_user(nullptr);
-        info::CHolyStoneSystemSendMsg_NoticeNextQuest138_ptr CHolyStoneSystemSendMsg_NoticeNextQuest138_next(nullptr);
-        info::CHolyStoneSystemSendMsg_NoticeNextQuest138_clbk CHolyStoneSystemSendMsg_NoticeNextQuest138_user(nullptr);
-        info::CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_ptr CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_next(nullptr);
-        info::CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_clbk CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_user(nullptr);
-        info::CHolyStoneSystemSendMsg_StartBattle142_ptr CHolyStoneSystemSendMsg_StartBattle142_next(nullptr);
-        info::CHolyStoneSystemSendMsg_StartBattle142_clbk CHolyStoneSystemSendMsg_StartBattle142_user(nullptr);
-        info::CHolyStoneSystemSendMsg_WaitKeeper144_ptr CHolyStoneSystemSendMsg_WaitKeeper144_next(nullptr);
-        info::CHolyStoneSystemSendMsg_WaitKeeper144_clbk CHolyStoneSystemSendMsg_WaitKeeper144_user(nullptr);
-        info::CHolyStoneSystemSendMsg_WaitStone146_ptr CHolyStoneSystemSendMsg_WaitStone146_next(nullptr);
-        info::CHolyStoneSystemSendMsg_WaitStone146_clbk CHolyStoneSystemSendMsg_WaitStone146_user(nullptr);
-        info::CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_ptr CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_next(nullptr);
-        info::CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_clbk CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_user(nullptr);
-        info::CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_ptr CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_next(nullptr);
-        info::CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_clbk CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_user(nullptr);
-        info::CHolyStoneSystemSendSMS_CompleteQuest152_ptr CHolyStoneSystemSendSMS_CompleteQuest152_next(nullptr);
-        info::CHolyStoneSystemSendSMS_CompleteQuest152_clbk CHolyStoneSystemSendSMS_CompleteQuest152_user(nullptr);
-        info::CHolyStoneSystemSendSMS_MineTimeExtend154_ptr CHolyStoneSystemSendSMS_MineTimeExtend154_next(nullptr);
-        info::CHolyStoneSystemSendSMS_MineTimeExtend154_clbk CHolyStoneSystemSendSMS_MineTimeExtend154_user(nullptr);
-        info::CHolyStoneSystemSetDestroyStoneRace156_ptr CHolyStoneSystemSetDestroyStoneRace156_next(nullptr);
-        info::CHolyStoneSystemSetDestroyStoneRace156_clbk CHolyStoneSystemSetDestroyStoneRace156_user(nullptr);
-        info::CHolyStoneSystemSetEffectToDestroyerGuildMember158_ptr CHolyStoneSystemSetEffectToDestroyerGuildMember158_next(nullptr);
-        info::CHolyStoneSystemSetEffectToDestroyerGuildMember158_clbk CHolyStoneSystemSetEffectToDestroyerGuildMember158_user(nullptr);
-        info::CHolyStoneSystemSetGoldBoxConsumable160_ptr CHolyStoneSystemSetGoldBoxConsumable160_next(nullptr);
-        info::CHolyStoneSystemSetGoldBoxConsumable160_clbk CHolyStoneSystemSetGoldBoxConsumable160_user(nullptr);
-        info::CHolyStoneSystemSetHolyMasterRace162_ptr CHolyStoneSystemSetHolyMasterRace162_next(nullptr);
-        info::CHolyStoneSystemSetHolyMasterRace162_clbk CHolyStoneSystemSetHolyMasterRace162_user(nullptr);
-        info::CHolyStoneSystemSetKeeperDestroyRace164_ptr CHolyStoneSystemSetKeeperDestroyRace164_next(nullptr);
-        info::CHolyStoneSystemSetKeeperDestroyRace164_clbk CHolyStoneSystemSetKeeperDestroyRace164_user(nullptr);
-        info::CHolyStoneSystemSetScene166_ptr CHolyStoneSystemSetScene166_next(nullptr);
-        info::CHolyStoneSystemSetScene166_clbk CHolyStoneSystemSetScene166_user(nullptr);
-        info::CHolyStoneSystemSetTermTimeDefault168_ptr CHolyStoneSystemSetTermTimeDefault168_next(nullptr);
-        info::CHolyStoneSystemSetTermTimeDefault168_clbk CHolyStoneSystemSetTermTimeDefault168_user(nullptr);
-        info::CHolyStoneSystemUnAllRegisterPerAutoMine170_ptr CHolyStoneSystemUnAllRegisterPerAutoMine170_next(nullptr);
-        info::CHolyStoneSystemUnAllRegisterPerAutoMine170_clbk CHolyStoneSystemUnAllRegisterPerAutoMine170_user(nullptr);
-        info::CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_ptr CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_next(nullptr);
-        info::CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_clbk CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_user(nullptr);
-        info::CHolyStoneSystemWriteLogPer10Min_Combat174_ptr CHolyStoneSystemWriteLogPer10Min_Combat174_next(nullptr);
-        info::CHolyStoneSystemWriteLogPer10Min_Combat174_clbk CHolyStoneSystemWriteLogPer10Min_Combat174_user(nullptr);
-        info::CHolyStoneSystemct_KeeperStart176_ptr CHolyStoneSystemct_KeeperStart176_next(nullptr);
-        info::CHolyStoneSystemct_KeeperStart176_clbk CHolyStoneSystemct_KeeperStart176_user(nullptr);
-        info::CHolyStoneSystemct_State178_ptr CHolyStoneSystemct_State178_next(nullptr);
-        info::CHolyStoneSystemct_State178_clbk CHolyStoneSystemct_State178_user(nullptr);
-        info::CHolyStoneSystemct_StopBattle180_ptr CHolyStoneSystemct_StopBattle180_next(nullptr);
-        info::CHolyStoneSystemct_StopBattle180_clbk CHolyStoneSystemct_StopBattle180_user(nullptr);
-        info::CHolyStoneSystemdtor_CHolyStoneSystem182_ptr CHolyStoneSystemdtor_CHolyStoneSystem182_next(nullptr);
-        info::CHolyStoneSystemdtor_CHolyStoneSystem182_clbk CHolyStoneSystemdtor_CHolyStoneSystem182_user(nullptr);
+        static info::CHolyStoneSystemAlterSchedule2_ptr CHolyStoneSystemAlterSchedule2_next(nullptr);
+        static info::CHolyStoneSystemAlterSchedule2_clbk CHolyStoneSystemAlterSchedule2_user(nullptr);
+        static info::CHolyStoneSystemAuthMiningTicket4_ptr CHolyStoneSystemAuthMiningTicket4_next(nullptr);
+        static info::CHolyStoneSystemAuthMiningTicket4_clbk CHolyStoneSystemAuthMiningTicket4_user(nullptr);
+        static info::CHolyStoneSystemctor_CHolyStoneSystem6_ptr CHolyStoneSystemctor_CHolyStoneSystem6_next(nullptr);
+        static info::CHolyStoneSystemctor_CHolyStoneSystem6_clbk CHolyStoneSystemctor_CHolyStoneSystem6_user(nullptr);
+        static info::CHolyStoneSystemCheckDestroyerIsArriveMine8_ptr CHolyStoneSystemCheckDestroyerIsArriveMine8_next(nullptr);
+        static info::CHolyStoneSystemCheckDestroyerIsArriveMine8_clbk CHolyStoneSystemCheckDestroyerIsArriveMine8_user(nullptr);
+        static info::CHolyStoneSystemCheckHolyMaster10_ptr CHolyStoneSystemCheckHolyMaster10_next(nullptr);
+        static info::CHolyStoneSystemCheckHolyMaster10_clbk CHolyStoneSystemCheckHolyMaster10_user(nullptr);
+        static info::CHolyStoneSystemCheckKeeperPlusTime12_ptr CHolyStoneSystemCheckKeeperPlusTime12_next(nullptr);
+        static info::CHolyStoneSystemCheckKeeperPlusTime12_clbk CHolyStoneSystemCheckKeeperPlusTime12_user(nullptr);
+        static info::CHolyStoneSystemContinueStartSystem14_ptr CHolyStoneSystemContinueStartSystem14_next(nullptr);
+        static info::CHolyStoneSystemContinueStartSystem14_clbk CHolyStoneSystemContinueStartSystem14_user(nullptr);
+        static info::CHolyStoneSystemCreateHolyKeeper16_ptr CHolyStoneSystemCreateHolyKeeper16_next(nullptr);
+        static info::CHolyStoneSystemCreateHolyKeeper16_clbk CHolyStoneSystemCreateHolyKeeper16_user(nullptr);
+        static info::CHolyStoneSystemCreateHolyStone18_ptr CHolyStoneSystemCreateHolyStone18_next(nullptr);
+        static info::CHolyStoneSystemCreateHolyStone18_clbk CHolyStoneSystemCreateHolyStone18_user(nullptr);
+        static info::CHolyStoneSystemDestroyHolyKeeper20_ptr CHolyStoneSystemDestroyHolyKeeper20_next(nullptr);
+        static info::CHolyStoneSystemDestroyHolyKeeper20_clbk CHolyStoneSystemDestroyHolyKeeper20_user(nullptr);
+        static info::CHolyStoneSystemDestroyHolyStone22_ptr CHolyStoneSystemDestroyHolyStone22_next(nullptr);
+        static info::CHolyStoneSystemDestroyHolyStone22_clbk CHolyStoneSystemDestroyHolyStone22_user(nullptr);
+        static info::CHolyStoneSystemFindStoragedQuestCash24_ptr CHolyStoneSystemFindStoragedQuestCash24_next(nullptr);
+        static info::CHolyStoneSystemFindStoragedQuestCash24_clbk CHolyStoneSystemFindStoragedQuestCash24_user(nullptr);
+        static info::CHolyStoneSystemGetControlLeftTime26_ptr CHolyStoneSystemGetControlLeftTime26_next(nullptr);
+        static info::CHolyStoneSystemGetControlLeftTime26_clbk CHolyStoneSystemGetControlLeftTime26_user(nullptr);
+        static info::CHolyStoneSystemGetDestroyStoneRace28_ptr CHolyStoneSystemGetDestroyStoneRace28_next(nullptr);
+        static info::CHolyStoneSystemGetDestroyStoneRace28_clbk CHolyStoneSystemGetDestroyStoneRace28_user(nullptr);
+        static info::CHolyStoneSystemGetDestroyerGuildSerial30_ptr CHolyStoneSystemGetDestroyerGuildSerial30_next(nullptr);
+        static info::CHolyStoneSystemGetDestroyerGuildSerial30_clbk CHolyStoneSystemGetDestroyerGuildSerial30_user(nullptr);
+        static info::CHolyStoneSystemGetDestroyerSerial32_ptr CHolyStoneSystemGetDestroyerSerial32_next(nullptr);
+        static info::CHolyStoneSystemGetDestroyerSerial32_clbk CHolyStoneSystemGetDestroyerSerial32_user(nullptr);
+        static info::CHolyStoneSystemGetDestroyerState34_ptr CHolyStoneSystemGetDestroyerState34_next(nullptr);
+        static info::CHolyStoneSystemGetDestroyerState34_clbk CHolyStoneSystemGetDestroyerState34_user(nullptr);
+        static info::CHolyStoneSystemGetGoldBoxConsumable36_ptr CHolyStoneSystemGetGoldBoxConsumable36_next(nullptr);
+        static info::CHolyStoneSystemGetGoldBoxConsumable36_clbk CHolyStoneSystemGetGoldBoxConsumable36_user(nullptr);
+        static info::CHolyStoneSystemGetHolyMasterRace38_ptr CHolyStoneSystemGetHolyMasterRace38_next(nullptr);
+        static info::CHolyStoneSystemGetHolyMasterRace38_clbk CHolyStoneSystemGetHolyMasterRace38_user(nullptr);
+        static info::CHolyStoneSystemGetHolyMentalString40_ptr CHolyStoneSystemGetHolyMentalString40_next(nullptr);
+        static info::CHolyStoneSystemGetHolyMentalString40_clbk CHolyStoneSystemGetHolyMentalString40_user(nullptr);
+        static info::CHolyStoneSystemGetKeeperDestroyRace42_ptr CHolyStoneSystemGetKeeperDestroyRace42_next(nullptr);
+        static info::CHolyStoneSystemGetKeeperDestroyRace42_clbk CHolyStoneSystemGetKeeperDestroyRace42_user(nullptr);
+        static info::CHolyStoneSystemGetMapData44_ptr CHolyStoneSystemGetMapData44_next(nullptr);
+        static info::CHolyStoneSystemGetMapData44_clbk CHolyStoneSystemGetMapData44_user(nullptr);
+        static info::CHolyStoneSystemGetNumOfTime46_ptr CHolyStoneSystemGetNumOfTime46_next(nullptr);
+        static info::CHolyStoneSystemGetNumOfTime46_clbk CHolyStoneSystemGetNumOfTime46_user(nullptr);
+        static info::CHolyStoneSystemGetPortalDummy48_ptr CHolyStoneSystemGetPortalDummy48_next(nullptr);
+        static info::CHolyStoneSystemGetPortalDummy48_clbk CHolyStoneSystemGetPortalDummy48_user(nullptr);
+        static info::CHolyStoneSystemGetSceneCode50_ptr CHolyStoneSystemGetSceneCode50_next(nullptr);
+        static info::CHolyStoneSystemGetSceneCode50_clbk CHolyStoneSystemGetSceneCode50_user(nullptr);
+        static info::CHolyStoneSystemGetStartBattleTickTime52_ptr CHolyStoneSystemGetStartBattleTickTime52_next(nullptr);
+        static info::CHolyStoneSystemGetStartBattleTickTime52_clbk CHolyStoneSystemGetStartBattleTickTime52_user(nullptr);
+        static info::CHolyStoneSystemGetStartDay54_ptr CHolyStoneSystemGetStartDay54_next(nullptr);
+        static info::CHolyStoneSystemGetStartDay54_clbk CHolyStoneSystemGetStartDay54_user(nullptr);
+        static info::CHolyStoneSystemGetStartHour56_ptr CHolyStoneSystemGetStartHour56_next(nullptr);
+        static info::CHolyStoneSystemGetStartHour56_clbk CHolyStoneSystemGetStartHour56_user(nullptr);
+        static info::CHolyStoneSystemGetStartMin58_ptr CHolyStoneSystemGetStartMin58_next(nullptr);
+        static info::CHolyStoneSystemGetStartMin58_clbk CHolyStoneSystemGetStartMin58_user(nullptr);
+        static info::CHolyStoneSystemGetStartMonth60_ptr CHolyStoneSystemGetStartMonth60_next(nullptr);
+        static info::CHolyStoneSystemGetStartMonth60_clbk CHolyStoneSystemGetStartMonth60_user(nullptr);
+        static info::CHolyStoneSystemGetStartYear62_ptr CHolyStoneSystemGetStartYear62_next(nullptr);
+        static info::CHolyStoneSystemGetStartYear62_clbk CHolyStoneSystemGetStartYear62_user(nullptr);
+        static info::CHolyStoneSystemGiveHSKQuest64_ptr CHolyStoneSystemGiveHSKQuest64_next(nullptr);
+        static info::CHolyStoneSystemGiveHSKQuest64_clbk CHolyStoneSystemGiveHSKQuest64_user(nullptr);
+        static info::CHolyStoneSystemHSKRespawnSystem66_ptr CHolyStoneSystemHSKRespawnSystem66_next(nullptr);
+        static info::CHolyStoneSystemHSKRespawnSystem66_clbk CHolyStoneSystemHSKRespawnSystem66_user(nullptr);
+        static info::CHolyStoneSystemInitHolySystem68_ptr CHolyStoneSystemInitHolySystem68_next(nullptr);
+        static info::CHolyStoneSystemInitHolySystem68_clbk CHolyStoneSystemInitHolySystem68_user(nullptr);
+        static info::CHolyStoneSystemInitQuestCash70_ptr CHolyStoneSystemInitQuestCash70_next(nullptr);
+        static info::CHolyStoneSystemInitQuestCash70_clbk CHolyStoneSystemInitQuestCash70_user(nullptr);
+        static info::CHolyStoneSystemInitQuestCash_Other72_ptr CHolyStoneSystemInitQuestCash_Other72_next(nullptr);
+        static info::CHolyStoneSystemInitQuestCash_Other72_clbk CHolyStoneSystemInitQuestCash_Other72_user(nullptr);
+        static info::CHolyStoneSystemIsControlScene74_ptr CHolyStoneSystemIsControlScene74_next(nullptr);
+        static info::CHolyStoneSystemIsControlScene74_clbk CHolyStoneSystemIsControlScene74_user(nullptr);
+        static info::CHolyStoneSystemIsItemLootAuthority76_ptr CHolyStoneSystemIsItemLootAuthority76_next(nullptr);
+        static info::CHolyStoneSystemIsItemLootAuthority76_clbk CHolyStoneSystemIsItemLootAuthority76_user(nullptr);
+        static info::CHolyStoneSystemIsMentalPass78_ptr CHolyStoneSystemIsMentalPass78_next(nullptr);
+        static info::CHolyStoneSystemIsMentalPass78_clbk CHolyStoneSystemIsMentalPass78_user(nullptr);
+        static info::CHolyStoneSystemIsMinigeTicketCheck80_ptr CHolyStoneSystemIsMinigeTicketCheck80_next(nullptr);
+        static info::CHolyStoneSystemIsMinigeTicketCheck80_clbk CHolyStoneSystemIsMinigeTicketCheck80_user(nullptr);
+        static info::CHolyStoneSystemIsUseReturnItem82_ptr CHolyStoneSystemIsUseReturnItem82_next(nullptr);
+        static info::CHolyStoneSystemIsUseReturnItem82_clbk CHolyStoneSystemIsUseReturnItem82_user(nullptr);
+        static info::CHolyStoneSystemOnLoop84_ptr CHolyStoneSystemOnLoop84_next(nullptr);
+        static info::CHolyStoneSystemOnLoop84_clbk CHolyStoneSystemOnLoop84_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_ptr CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_clbk CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_ptr CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_clbk CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_INIT90_ptr CHolyStoneSystemOn_HS_SCENE_INIT90_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_INIT90_clbk CHolyStoneSystemOn_HS_SCENE_INIT90_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_user(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_ptr CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_next(nullptr);
+        static info::CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_clbk CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_user(nullptr);
+        static info::CHolyStoneSystemPeneltyFailRace100_ptr CHolyStoneSystemPeneltyFailRace100_next(nullptr);
+        static info::CHolyStoneSystemPeneltyFailRace100_clbk CHolyStoneSystemPeneltyFailRace100_user(nullptr);
+        static info::CHolyStoneSystemPeneltyLoseRace102_ptr CHolyStoneSystemPeneltyLoseRace102_next(nullptr);
+        static info::CHolyStoneSystemPeneltyLoseRace102_clbk CHolyStoneSystemPeneltyLoseRace102_user(nullptr);
+        static info::CHolyStoneSystemPopStoredQuestCash_Other104_ptr CHolyStoneSystemPopStoredQuestCash_Other104_next(nullptr);
+        static info::CHolyStoneSystemPopStoredQuestCash_Other104_clbk CHolyStoneSystemPopStoredQuestCash_Other104_user(nullptr);
+        static info::CHolyStoneSystemPushQuestCash_Other106_ptr CHolyStoneSystemPushQuestCash_Other106_next(nullptr);
+        static info::CHolyStoneSystemPushQuestCash_Other106_clbk CHolyStoneSystemPushQuestCash_Other106_user(nullptr);
+        static info::CHolyStoneSystemPushStoreQuestCash108_ptr CHolyStoneSystemPushStoreQuestCash108_next(nullptr);
+        static info::CHolyStoneSystemPushStoreQuestCash108_clbk CHolyStoneSystemPushStoreQuestCash108_user(nullptr);
+        static info::CHolyStoneSystemReceiveDestroyKeeper110_ptr CHolyStoneSystemReceiveDestroyKeeper110_next(nullptr);
+        static info::CHolyStoneSystemReceiveDestroyKeeper110_clbk CHolyStoneSystemReceiveDestroyKeeper110_user(nullptr);
+        static info::CHolyStoneSystemRecoverPvpCash112_ptr CHolyStoneSystemRecoverPvpCash112_next(nullptr);
+        static info::CHolyStoneSystemRecoverPvpCash112_clbk CHolyStoneSystemRecoverPvpCash112_user(nullptr);
+        static info::CHolyStoneSystemReleaseLastAttBuff114_ptr CHolyStoneSystemReleaseLastAttBuff114_next(nullptr);
+        static info::CHolyStoneSystemReleaseLastAttBuff114_clbk CHolyStoneSystemReleaseLastAttBuff114_user(nullptr);
+        static info::CHolyStoneSystemSendHolyStoneHP116_ptr CHolyStoneSystemSendHolyStoneHP116_next(nullptr);
+        static info::CHolyStoneSystemSendHolyStoneHP116_clbk CHolyStoneSystemSendHolyStoneHP116_user(nullptr);
+        static info::CHolyStoneSystemSendHolyStoneHPToRaceBoss118_ptr CHolyStoneSystemSendHolyStoneHPToRaceBoss118_next(nullptr);
+        static info::CHolyStoneSystemSendHolyStoneHPToRaceBoss118_clbk CHolyStoneSystemSendHolyStoneHPToRaceBoss118_user(nullptr);
+        static info::CHolyStoneSystemSendIsArriveDestroyer120_ptr CHolyStoneSystemSendIsArriveDestroyer120_next(nullptr);
+        static info::CHolyStoneSystemSendIsArriveDestroyer120_clbk CHolyStoneSystemSendIsArriveDestroyer120_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_CreateHolyMaster122_ptr CHolyStoneSystemSendMsg_CreateHolyMaster122_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_CreateHolyMaster122_clbk CHolyStoneSystemSendMsg_CreateHolyMaster122_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_EndBattle124_ptr CHolyStoneSystemSendMsg_EndBattle124_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_EndBattle124_clbk CHolyStoneSystemSendMsg_EndBattle124_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_EnterKeeper126_ptr CHolyStoneSystemSendMsg_EnterKeeper126_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_EnterKeeper126_clbk CHolyStoneSystemSendMsg_EnterKeeper126_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_EnterStone128_ptr CHolyStoneSystemSendMsg_EnterStone128_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_EnterStone128_clbk CHolyStoneSystemSendMsg_EnterStone128_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_ExitStone130_ptr CHolyStoneSystemSendMsg_ExitStone130_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_ExitStone130_clbk CHolyStoneSystemSendMsg_ExitStone130_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_ptr CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_clbk CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_ptr CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_clbk CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyStoneSystemState136_ptr CHolyStoneSystemSendMsg_HolyStoneSystemState136_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_HolyStoneSystemState136_clbk CHolyStoneSystemSendMsg_HolyStoneSystemState136_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_NoticeNextQuest138_ptr CHolyStoneSystemSendMsg_NoticeNextQuest138_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_NoticeNextQuest138_clbk CHolyStoneSystemSendMsg_NoticeNextQuest138_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_ptr CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_clbk CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_StartBattle142_ptr CHolyStoneSystemSendMsg_StartBattle142_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_StartBattle142_clbk CHolyStoneSystemSendMsg_StartBattle142_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_WaitKeeper144_ptr CHolyStoneSystemSendMsg_WaitKeeper144_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_WaitKeeper144_clbk CHolyStoneSystemSendMsg_WaitKeeper144_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_WaitStone146_ptr CHolyStoneSystemSendMsg_WaitStone146_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_WaitStone146_clbk CHolyStoneSystemSendMsg_WaitStone146_user(nullptr);
+        static info::CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_ptr CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_next(nullptr);
+        static info::CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_clbk CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_user(nullptr);
+        static info::CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_ptr CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_next(nullptr);
+        static info::CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_clbk CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_user(nullptr);
+        static info::CHolyStoneSystemSendSMS_CompleteQuest152_ptr CHolyStoneSystemSendSMS_CompleteQuest152_next(nullptr);
+        static info::CHolyStoneSystemSendSMS_CompleteQuest152_clbk CHolyStoneSystemSendSMS_CompleteQuest152_user(nullptr);
+        static info::CHolyStoneSystemSendSMS_MineTimeExtend154_ptr CHolyStoneSystemSendSMS_MineTimeExtend154_next(nullptr);
+        static info::CHolyStoneSystemSendSMS_MineTimeExtend154_clbk CHolyStoneSystemSendSMS_MineTimeExtend154_user(nullptr);
+        static info::CHolyStoneSystemSetDestroyStoneRace156_ptr CHolyStoneSystemSetDestroyStoneRace156_next(nullptr);
+        static info::CHolyStoneSystemSetDestroyStoneRace156_clbk CHolyStoneSystemSetDestroyStoneRace156_user(nullptr);
+        static info::CHolyStoneSystemSetEffectToDestroyerGuildMember158_ptr CHolyStoneSystemSetEffectToDestroyerGuildMember158_next(nullptr);
+        static info::CHolyStoneSystemSetEffectToDestroyerGuildMember158_clbk CHolyStoneSystemSetEffectToDestroyerGuildMember158_user(nullptr);
+        static info::CHolyStoneSystemSetGoldBoxConsumable160_ptr CHolyStoneSystemSetGoldBoxConsumable160_next(nullptr);
+        static info::CHolyStoneSystemSetGoldBoxConsumable160_clbk CHolyStoneSystemSetGoldBoxConsumable160_user(nullptr);
+        static info::CHolyStoneSystemSetHolyMasterRace162_ptr CHolyStoneSystemSetHolyMasterRace162_next(nullptr);
+        static info::CHolyStoneSystemSetHolyMasterRace162_clbk CHolyStoneSystemSetHolyMasterRace162_user(nullptr);
+        static info::CHolyStoneSystemSetKeeperDestroyRace164_ptr CHolyStoneSystemSetKeeperDestroyRace164_next(nullptr);
+        static info::CHolyStoneSystemSetKeeperDestroyRace164_clbk CHolyStoneSystemSetKeeperDestroyRace164_user(nullptr);
+        static info::CHolyStoneSystemSetScene166_ptr CHolyStoneSystemSetScene166_next(nullptr);
+        static info::CHolyStoneSystemSetScene166_clbk CHolyStoneSystemSetScene166_user(nullptr);
+        static info::CHolyStoneSystemSetTermTimeDefault168_ptr CHolyStoneSystemSetTermTimeDefault168_next(nullptr);
+        static info::CHolyStoneSystemSetTermTimeDefault168_clbk CHolyStoneSystemSetTermTimeDefault168_user(nullptr);
+        static info::CHolyStoneSystemUnAllRegisterPerAutoMine170_ptr CHolyStoneSystemUnAllRegisterPerAutoMine170_next(nullptr);
+        static info::CHolyStoneSystemUnAllRegisterPerAutoMine170_clbk CHolyStoneSystemUnAllRegisterPerAutoMine170_user(nullptr);
+        static info::CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_ptr CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_next(nullptr);
+        static info::CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_clbk CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_user(nullptr);
+        static info::CHolyStoneSystemWriteLogPer10Min_Combat174_ptr CHolyStoneSystemWriteLogPer10Min_Combat174_next(nullptr);
+        static info::CHolyStoneSystemWriteLogPer10Min_Combat174_clbk CHolyStoneSystemWriteLogPer10Min_Combat174_user(nullptr);
+        static info::CHolyStoneSystemct_KeeperStart176_ptr CHolyStoneSystemct_KeeperStart176_next(nullptr);
+        static info::CHolyStoneSystemct_KeeperStart176_clbk CHolyStoneSystemct_KeeperStart176_user(nullptr);
+        static info::CHolyStoneSystemct_State178_ptr CHolyStoneSystemct_State178_next(nullptr);
+        static info::CHolyStoneSystemct_State178_clbk CHolyStoneSystemct_State178_user(nullptr);
+        static info::CHolyStoneSystemct_StopBattle180_ptr CHolyStoneSystemct_StopBattle180_next(nullptr);
+        static info::CHolyStoneSystemct_StopBattle180_clbk CHolyStoneSystemct_StopBattle180_user(nullptr);
+        static info::CHolyStoneSystemdtor_CHolyStoneSystem182_ptr CHolyStoneSystemdtor_CHolyStoneSystem182_next(nullptr);
+        static info::CHolyStoneSystemdtor_CHolyStoneSystem182_clbk CHolyStoneSystemdtor_CHolyStoneSystem182_user(nullptr);
         
-        void CHolyStoneSystemAlterSchedule2_wrapper(struct CHolyStoneSystem* _this, char byScheduleCode, char byNumOfTime)
+        static void CHolyStoneSystemAlterSchedule2_wrapper(struct CHolyStoneSystem* _this, char byScheduleCode, char byNumOfTime)
         {
            CHolyStoneSystemAlterSchedule2_user(_this, byScheduleCode, byNumOfTime, CHolyStoneSystemAlterSchedule2_next);
         };
-        bool CHolyStoneSystemAuthMiningTicket4_wrapper(struct CHolyStoneSystem* _this, unsigned int dwKey)
+        static bool CHolyStoneSystemAuthMiningTicket4_wrapper(struct CHolyStoneSystem* _this, unsigned int dwKey)
         {
            return CHolyStoneSystemAuthMiningTicket4_user(_this, dwKey, CHolyStoneSystemAuthMiningTicket4_next);
         };
-        void CHolyStoneSystemctor_CHolyStoneSystem6_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemctor_CHolyStoneSystem6_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemctor_CHolyStoneSystem6_user(_this, CHolyStoneSystemctor_CHolyStoneSystem6_next);
         };
-        void CHolyStoneSystemCheckDestroyerIsArriveMine8_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemCheckDestroyerIsArriveMine8_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemCheckDestroyerIsArriveMine8_user(_this, CHolyStoneSystemCheckDestroyerIsArriveMine8_next);
         };
-        bool CHolyStoneSystemCheckHolyMaster10_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pAtter, char byDestroyStoneRaceCode)
+        static bool CHolyStoneSystemCheckHolyMaster10_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pAtter, char byDestroyStoneRaceCode)
         {
            return CHolyStoneSystemCheckHolyMaster10_user(_this, pAtter, byDestroyStoneRaceCode, CHolyStoneSystemCheckHolyMaster10_next);
         };
-        void CHolyStoneSystemCheckKeeperPlusTime12_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemCheckKeeperPlusTime12_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemCheckKeeperPlusTime12_user(_this, CHolyStoneSystemCheckKeeperPlusTime12_next);
         };
-        bool CHolyStoneSystemContinueStartSystem14_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemContinueStartSystem14_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemContinueStartSystem14_user(_this, CHolyStoneSystemContinueStartSystem14_next);
         };
-        void CHolyStoneSystemCreateHolyKeeper16_wrapper(struct CHolyStoneSystem* _this, int nCreateType)
+        static void CHolyStoneSystemCreateHolyKeeper16_wrapper(struct CHolyStoneSystem* _this, int nCreateType)
         {
            CHolyStoneSystemCreateHolyKeeper16_user(_this, nCreateType, CHolyStoneSystemCreateHolyKeeper16_next);
         };
-        void CHolyStoneSystemCreateHolyStone18_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemCreateHolyStone18_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemCreateHolyStone18_user(_this, CHolyStoneSystemCreateHolyStone18_next);
         };
-        void CHolyStoneSystemDestroyHolyKeeper20_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemDestroyHolyKeeper20_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemDestroyHolyKeeper20_user(_this, CHolyStoneSystemDestroyHolyKeeper20_next);
         };
-        void CHolyStoneSystemDestroyHolyStone22_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemDestroyHolyStone22_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemDestroyHolyStone22_user(_this, CHolyStoneSystemDestroyHolyStone22_next);
         };
-        struct _QUEST_CASH* CHolyStoneSystemFindStoragedQuestCash24_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial)
+        static struct _QUEST_CASH* CHolyStoneSystemFindStoragedQuestCash24_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial)
         {
            return CHolyStoneSystemFindStoragedQuestCash24_user(_this, dwAvatorSerial, CHolyStoneSystemFindStoragedQuestCash24_next);
         };
-        int CHolyStoneSystemGetControlLeftTime26_wrapper(struct CHolyStoneSystem* _this)
+        static int CHolyStoneSystemGetControlLeftTime26_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetControlLeftTime26_user(_this, CHolyStoneSystemGetControlLeftTime26_next);
         };
-        int CHolyStoneSystemGetDestroyStoneRace28_wrapper(struct CHolyStoneSystem* _this)
+        static int CHolyStoneSystemGetDestroyStoneRace28_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetDestroyStoneRace28_user(_this, CHolyStoneSystemGetDestroyStoneRace28_next);
         };
-        unsigned int CHolyStoneSystemGetDestroyerGuildSerial30_wrapper(struct CHolyStoneSystem* _this)
+        static unsigned int CHolyStoneSystemGetDestroyerGuildSerial30_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetDestroyerGuildSerial30_user(_this, CHolyStoneSystemGetDestroyerGuildSerial30_next);
         };
-        unsigned int CHolyStoneSystemGetDestroyerSerial32_wrapper(struct CHolyStoneSystem* _this)
+        static unsigned int CHolyStoneSystemGetDestroyerSerial32_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetDestroyerSerial32_user(_this, CHolyStoneSystemGetDestroyerSerial32_next);
         };
-        int CHolyStoneSystemGetDestroyerState34_wrapper(struct CHolyStoneSystem* _this)
+        static int CHolyStoneSystemGetDestroyerState34_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetDestroyerState34_user(_this, CHolyStoneSystemGetDestroyerState34_next);
         };
-        bool CHolyStoneSystemGetGoldBoxConsumable36_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemGetGoldBoxConsumable36_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetGoldBoxConsumable36_user(_this, CHolyStoneSystemGetGoldBoxConsumable36_next);
         };
-        int CHolyStoneSystemGetHolyMasterRace38_wrapper(struct CHolyStoneSystem* _this)
+        static int CHolyStoneSystemGetHolyMasterRace38_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetHolyMasterRace38_user(_this, CHolyStoneSystemGetHolyMasterRace38_next);
         };
-        char* CHolyStoneSystemGetHolyMentalString40_wrapper(struct CHolyStoneSystem* _this)
+        static char* CHolyStoneSystemGetHolyMentalString40_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetHolyMentalString40_user(_this, CHolyStoneSystemGetHolyMentalString40_next);
         };
-        char CHolyStoneSystemGetKeeperDestroyRace42_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetKeeperDestroyRace42_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetKeeperDestroyRace42_user(_this, CHolyStoneSystemGetKeeperDestroyRace42_next);
         };
-        struct CMapData* CHolyStoneSystemGetMapData44_wrapper(struct CHolyStoneSystem* _this)
+        static struct CMapData* CHolyStoneSystemGetMapData44_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetMapData44_user(_this, CHolyStoneSystemGetMapData44_next);
         };
-        char CHolyStoneSystemGetNumOfTime46_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetNumOfTime46_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetNumOfTime46_user(_this, CHolyStoneSystemGetNumOfTime46_next);
         };
-        struct _portal_dummy* CHolyStoneSystemGetPortalDummy48_wrapper(struct CHolyStoneSystem* _this, char byRace)
+        static struct _portal_dummy* CHolyStoneSystemGetPortalDummy48_wrapper(struct CHolyStoneSystem* _this, char byRace)
         {
            return CHolyStoneSystemGetPortalDummy48_user(_this, byRace, CHolyStoneSystemGetPortalDummy48_next);
         };
-        int CHolyStoneSystemGetSceneCode50_wrapper(struct CHolyStoneSystem* _this)
+        static int CHolyStoneSystemGetSceneCode50_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetSceneCode50_user(_this, CHolyStoneSystemGetSceneCode50_next);
         };
-        unsigned int CHolyStoneSystemGetStartBattleTickTime52_wrapper(struct CHolyStoneSystem* _this)
+        static unsigned int CHolyStoneSystemGetStartBattleTickTime52_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartBattleTickTime52_user(_this, CHolyStoneSystemGetStartBattleTickTime52_next);
         };
-        char CHolyStoneSystemGetStartDay54_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetStartDay54_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartDay54_user(_this, CHolyStoneSystemGetStartDay54_next);
         };
-        char CHolyStoneSystemGetStartHour56_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetStartHour56_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartHour56_user(_this, CHolyStoneSystemGetStartHour56_next);
         };
-        char CHolyStoneSystemGetStartMin58_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetStartMin58_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartMin58_user(_this, CHolyStoneSystemGetStartMin58_next);
         };
-        char CHolyStoneSystemGetStartMonth60_wrapper(struct CHolyStoneSystem* _this)
+        static char CHolyStoneSystemGetStartMonth60_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartMonth60_user(_this, CHolyStoneSystemGetStartMonth60_next);
         };
-        uint16_t CHolyStoneSystemGetStartYear62_wrapper(struct CHolyStoneSystem* _this)
+        static uint16_t CHolyStoneSystemGetStartYear62_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemGetStartYear62_user(_this, CHolyStoneSystemGetStartYear62_next);
         };
-        void CHolyStoneSystemGiveHSKQuest64_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemGiveHSKQuest64_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemGiveHSKQuest64_user(_this, CHolyStoneSystemGiveHSKQuest64_next);
         };
-        void CHolyStoneSystemHSKRespawnSystem66_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemHSKRespawnSystem66_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemHSKRespawnSystem66_user(_this, CHolyStoneSystemHSKRespawnSystem66_next);
         };
-        bool CHolyStoneSystemInitHolySystem68_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemInitHolySystem68_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemInitHolySystem68_user(_this, CHolyStoneSystemInitHolySystem68_next);
         };
-        void CHolyStoneSystemInitQuestCash70_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemInitQuestCash70_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemInitQuestCash70_user(_this, CHolyStoneSystemInitQuestCash70_next);
         };
-        void CHolyStoneSystemInitQuestCash_Other72_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemInitQuestCash_Other72_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemInitQuestCash_Other72_user(_this, CHolyStoneSystemInitQuestCash_Other72_next);
         };
-        bool CHolyStoneSystemIsControlScene74_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemIsControlScene74_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemIsControlScene74_user(_this, CHolyStoneSystemIsControlScene74_next);
         };
-        bool CHolyStoneSystemIsItemLootAuthority76_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pOne, char byCreateCode)
+        static bool CHolyStoneSystemIsItemLootAuthority76_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pOne, char byCreateCode)
         {
            return CHolyStoneSystemIsItemLootAuthority76_user(_this, pOne, byCreateCode, CHolyStoneSystemIsItemLootAuthority76_next);
         };
-        bool CHolyStoneSystemIsMentalPass78_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemIsMentalPass78_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemIsMentalPass78_user(_this, CHolyStoneSystemIsMentalPass78_next);
         };
-        bool CHolyStoneSystemIsMinigeTicketCheck80_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemIsMinigeTicketCheck80_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemIsMinigeTicketCheck80_user(_this, CHolyStoneSystemIsMinigeTicketCheck80_next);
         };
-        bool CHolyStoneSystemIsUseReturnItem82_wrapper(struct CHolyStoneSystem* _this, unsigned int dwObjSerial)
+        static bool CHolyStoneSystemIsUseReturnItem82_wrapper(struct CHolyStoneSystem* _this, unsigned int dwObjSerial)
         {
            return CHolyStoneSystemIsUseReturnItem82_user(_this, dwObjSerial, CHolyStoneSystemIsUseReturnItem82_next);
         };
-        void CHolyStoneSystemOnLoop84_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOnLoop84_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOnLoop84_user(_this, CHolyStoneSystemOnLoop84_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_user(_this, CHolyStoneSystemOn_HS_SCENE_BATTLE_END_WAIT_TIME86_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_user(_this, CHolyStoneSystemOn_HS_SCENE_BATTLE_TIME88_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_INIT90_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_INIT90_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_INIT90_user(_this, CHolyStoneSystemOn_HS_SCENE_INIT90_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_user(_this, CHolyStoneSystemOn_HS_SCENE_KEEPER_ATTACKABLE_TIME92_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_user(_this, CHolyStoneSystemOn_HS_SCENE_KEEPER_CHAOS_TIME94_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_user(_this, CHolyStoneSystemOn_HS_SCENE_KEEPER_DEATTACKABLE_TIME96_next);
         };
-        void CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_user(_this, CHolyStoneSystemOn_HS_SCENE_KEEPER_DIE_TIME98_next);
         };
-        void CHolyStoneSystemPeneltyFailRace100_wrapper(struct CHolyStoneSystem* _this, char byFailRace)
+        static void CHolyStoneSystemPeneltyFailRace100_wrapper(struct CHolyStoneSystem* _this, char byFailRace)
         {
            CHolyStoneSystemPeneltyFailRace100_user(_this, byFailRace, CHolyStoneSystemPeneltyFailRace100_next);
         };
-        void CHolyStoneSystemPeneltyLoseRace102_wrapper(struct CHolyStoneSystem* _this, char byDestroyedRace)
+        static void CHolyStoneSystemPeneltyLoseRace102_wrapper(struct CHolyStoneSystem* _this, char byDestroyedRace)
         {
            CHolyStoneSystemPeneltyLoseRace102_user(_this, byDestroyedRace, CHolyStoneSystemPeneltyLoseRace102_next);
         };
-        struct _QUEST_CASH_OTHER* CHolyStoneSystemPopStoredQuestCash_Other104_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial)
+        static struct _QUEST_CASH_OTHER* CHolyStoneSystemPopStoredQuestCash_Other104_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial)
         {
            return CHolyStoneSystemPopStoredQuestCash_Other104_user(_this, dwAvatorSerial, CHolyStoneSystemPopStoredQuestCash_Other104_next);
         };
-        void CHolyStoneSystemPushQuestCash_Other106_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial, char byStoneMapMoveInfo)
+        static void CHolyStoneSystemPushQuestCash_Other106_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial, char byStoneMapMoveInfo)
         {
            CHolyStoneSystemPushQuestCash_Other106_user(_this, dwAvatorSerial, byStoneMapMoveInfo, CHolyStoneSystemPushQuestCash_Other106_next);
         };
-        void CHolyStoneSystemPushStoreQuestCash108_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial, char byQuestType, int nPvpPoint, uint16_t wKillPoint, uint16_t wDiePoint, char byCristalBattleDBInfo, char byHSKTime)
+        static void CHolyStoneSystemPushStoreQuestCash108_wrapper(struct CHolyStoneSystem* _this, unsigned int dwAvatorSerial, char byQuestType, int nPvpPoint, uint16_t wKillPoint, uint16_t wDiePoint, char byCristalBattleDBInfo, char byHSKTime)
         {
            CHolyStoneSystemPushStoreQuestCash108_user(_this, dwAvatorSerial, byQuestType, nPvpPoint, wKillPoint, wDiePoint, byCristalBattleDBInfo, byHSKTime, CHolyStoneSystemPushStoreQuestCash108_next);
         };
-        void CHolyStoneSystemReceiveDestroyKeeper110_wrapper(struct CHolyStoneSystem* _this, struct CCharacter* pCharacter)
+        static void CHolyStoneSystemReceiveDestroyKeeper110_wrapper(struct CHolyStoneSystem* _this, struct CCharacter* pCharacter)
         {
            CHolyStoneSystemReceiveDestroyKeeper110_user(_this, pCharacter, CHolyStoneSystemReceiveDestroyKeeper110_next);
         };
-        void CHolyStoneSystemRecoverPvpCash112_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemRecoverPvpCash112_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemRecoverPvpCash112_user(_this, CHolyStoneSystemRecoverPvpCash112_next);
         };
-        void CHolyStoneSystemReleaseLastAttBuff114_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemReleaseLastAttBuff114_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemReleaseLastAttBuff114_user(_this, CHolyStoneSystemReleaseLastAttBuff114_next);
         };
-        void CHolyStoneSystemSendHolyStoneHP116_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pkPlayer)
+        static void CHolyStoneSystemSendHolyStoneHP116_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pkPlayer)
         {
            CHolyStoneSystemSendHolyStoneHP116_user(_this, pkPlayer, CHolyStoneSystemSendHolyStoneHP116_next);
         };
-        void CHolyStoneSystemSendHolyStoneHPToRaceBoss118_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSendHolyStoneHPToRaceBoss118_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSendHolyStoneHPToRaceBoss118_user(_this, CHolyStoneSystemSendHolyStoneHPToRaceBoss118_next);
         };
-        void CHolyStoneSystemSendIsArriveDestroyer120_wrapper(struct CHolyStoneSystem* _this, char byArrive)
+        static void CHolyStoneSystemSendIsArriveDestroyer120_wrapper(struct CHolyStoneSystem* _this, char byArrive)
         {
            CHolyStoneSystemSendIsArriveDestroyer120_user(_this, byArrive, CHolyStoneSystemSendIsArriveDestroyer120_next);
         };
-        void CHolyStoneSystemSendMsg_CreateHolyMaster122_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pkDestroyer, int nControlSec)
+        static void CHolyStoneSystemSendMsg_CreateHolyMaster122_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pkDestroyer, int nControlSec)
         {
            CHolyStoneSystemSendMsg_CreateHolyMaster122_user(_this, pkDestroyer, nControlSec, CHolyStoneSystemSendMsg_CreateHolyMaster122_next);
         };
-        void CHolyStoneSystemSendMsg_EndBattle124_wrapper(struct CHolyStoneSystem* _this, char byLoseRace)
+        static void CHolyStoneSystemSendMsg_EndBattle124_wrapper(struct CHolyStoneSystem* _this, char byLoseRace)
         {
            CHolyStoneSystemSendMsg_EndBattle124_user(_this, byLoseRace, CHolyStoneSystemSendMsg_EndBattle124_next);
         };
-        void CHolyStoneSystemSendMsg_EnterKeeper126_wrapper(struct CHolyStoneSystem* _this, int n)
+        static void CHolyStoneSystemSendMsg_EnterKeeper126_wrapper(struct CHolyStoneSystem* _this, int n)
         {
            CHolyStoneSystemSendMsg_EnterKeeper126_user(_this, n, CHolyStoneSystemSendMsg_EnterKeeper126_next);
         };
-        void CHolyStoneSystemSendMsg_EnterStone128_wrapper(struct CHolyStoneSystem* _this, int n)
+        static void CHolyStoneSystemSendMsg_EnterStone128_wrapper(struct CHolyStoneSystem* _this, int n)
         {
            CHolyStoneSystemSendMsg_EnterStone128_user(_this, n, CHolyStoneSystemSendMsg_EnterStone128_next);
         };
-        void CHolyStoneSystemSendMsg_ExitStone130_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSendMsg_ExitStone130_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSendMsg_ExitStone130_user(_this, CHolyStoneSystemSendMsg_ExitStone130_next);
         };
-        void CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_wrapper(struct CHolyStoneSystem* _this, bool bAttackAble)
+        static void CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_wrapper(struct CHolyStoneSystem* _this, bool bAttackAble)
         {
            CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_user(_this, bAttackAble, CHolyStoneSystemSendMsg_HolyKeeperAttackAbleState132_next);
         };
-        void CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_user(_this, CHolyStoneSystemSendMsg_HolyKeeperStateChaos134_next);
         };
-        void CHolyStoneSystemSendMsg_HolyStoneSystemState136_wrapper(struct CHolyStoneSystem* _this, int nPlayerIndex)
+        static void CHolyStoneSystemSendMsg_HolyStoneSystemState136_wrapper(struct CHolyStoneSystem* _this, int nPlayerIndex)
         {
            CHolyStoneSystemSendMsg_HolyStoneSystemState136_user(_this, nPlayerIndex, CHolyStoneSystemSendMsg_HolyStoneSystemState136_next);
         };
-        void CHolyStoneSystemSendMsg_NoticeNextQuest138_wrapper(struct CHolyStoneSystem* _this, int n, char byStoneMapMoveInfo)
+        static void CHolyStoneSystemSendMsg_NoticeNextQuest138_wrapper(struct CHolyStoneSystem* _this, int n, char byStoneMapMoveInfo)
         {
            CHolyStoneSystemSendMsg_NoticeNextQuest138_user(_this, n, byStoneMapMoveInfo, CHolyStoneSystemSendMsg_NoticeNextQuest138_next);
         };
-        void CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_wrapper(struct CHolyStoneSystem* _this, bool bKeepKeeper)
+        static void CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_wrapper(struct CHolyStoneSystem* _this, bool bKeepKeeper)
         {
            CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_user(_this, bKeepKeeper, CHolyStoneSystemSendMsg_NotifyHolyKeeperAttackTimeBeKeepKeeper140_next);
         };
-        void CHolyStoneSystemSendMsg_StartBattle142_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSendMsg_StartBattle142_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSendMsg_StartBattle142_user(_this, CHolyStoneSystemSendMsg_StartBattle142_next);
         };
-        void CHolyStoneSystemSendMsg_WaitKeeper144_wrapper(struct CHolyStoneSystem* _this, int n, char byWaitType)
+        static void CHolyStoneSystemSendMsg_WaitKeeper144_wrapper(struct CHolyStoneSystem* _this, int n, char byWaitType)
         {
            CHolyStoneSystemSendMsg_WaitKeeper144_user(_this, n, byWaitType, CHolyStoneSystemSendMsg_WaitKeeper144_next);
         };
-        void CHolyStoneSystemSendMsg_WaitStone146_wrapper(struct CHolyStoneSystem* _this, int n)
+        static void CHolyStoneSystemSendMsg_WaitStone146_wrapper(struct CHolyStoneSystem* _this, int n)
         {
            CHolyStoneSystemSendMsg_WaitStone146_user(_this, n, CHolyStoneSystemSendMsg_WaitStone146_next);
         };
-        void CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pPlayer, int bByAnimus)
+        static void CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pPlayer, int bByAnimus)
         {
            CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_user(_this, pPlayer, bByAnimus, CHolyStoneSystemSendMsg_to_webagent_about_last_attacker_for_keeper148_next);
         };
-        void CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_user(_this, CHolyStoneSystemSendNotifyHolyStoneDestroyedToRaceBoss150_next);
         };
-        void CHolyStoneSystemSendSMS_CompleteQuest152_wrapper(struct CHolyStoneSystem* _this, char byDestroyedRace, char* pwszMasterName, int nControlSec, char* szMasterClass, char byMasterLv)
+        static void CHolyStoneSystemSendSMS_CompleteQuest152_wrapper(struct CHolyStoneSystem* _this, char byDestroyedRace, char* pwszMasterName, int nControlSec, char* szMasterClass, char byMasterLv)
         {
            CHolyStoneSystemSendSMS_CompleteQuest152_user(_this, byDestroyedRace, pwszMasterName, nControlSec, szMasterClass, byMasterLv, CHolyStoneSystemSendSMS_CompleteQuest152_next);
         };
-        void CHolyStoneSystemSendSMS_MineTimeExtend154_wrapper(struct CHolyStoneSystem* _this, int nControlSec)
+        static void CHolyStoneSystemSendSMS_MineTimeExtend154_wrapper(struct CHolyStoneSystem* _this, int nControlSec)
         {
            CHolyStoneSystemSendSMS_MineTimeExtend154_user(_this, nControlSec, CHolyStoneSystemSendSMS_MineTimeExtend154_next);
         };
-        void CHolyStoneSystemSetDestroyStoneRace156_wrapper(struct CHolyStoneSystem* _this, int nRace)
+        static void CHolyStoneSystemSetDestroyStoneRace156_wrapper(struct CHolyStoneSystem* _this, int nRace)
         {
            CHolyStoneSystemSetDestroyStoneRace156_user(_this, nRace, CHolyStoneSystemSetDestroyStoneRace156_next);
         };
-        void CHolyStoneSystemSetEffectToDestroyerGuildMember158_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemSetEffectToDestroyerGuildMember158_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemSetEffectToDestroyerGuildMember158_user(_this, CHolyStoneSystemSetEffectToDestroyerGuildMember158_next);
         };
-        void CHolyStoneSystemSetGoldBoxConsumable160_wrapper(struct CHolyStoneSystem* _this, bool bFlag)
+        static void CHolyStoneSystemSetGoldBoxConsumable160_wrapper(struct CHolyStoneSystem* _this, bool bFlag)
         {
            CHolyStoneSystemSetGoldBoxConsumable160_user(_this, bFlag, CHolyStoneSystemSetGoldBoxConsumable160_next);
         };
-        void CHolyStoneSystemSetHolyMasterRace162_wrapper(struct CHolyStoneSystem* _this, int nMaster)
+        static void CHolyStoneSystemSetHolyMasterRace162_wrapper(struct CHolyStoneSystem* _this, int nMaster)
         {
            CHolyStoneSystemSetHolyMasterRace162_user(_this, nMaster, CHolyStoneSystemSetHolyMasterRace162_next);
         };
-        void CHolyStoneSystemSetKeeperDestroyRace164_wrapper(struct CHolyStoneSystem* _this, char byRace)
+        static void CHolyStoneSystemSetKeeperDestroyRace164_wrapper(struct CHolyStoneSystem* _this, char byRace)
         {
            CHolyStoneSystemSetKeeperDestroyRace164_user(_this, byRace, CHolyStoneSystemSetKeeperDestroyRace164_next);
         };
-        bool CHolyStoneSystemSetScene166_wrapper(struct CHolyStoneSystem* _this, char byNumOfTime, int nSceneCode, unsigned int nPassTime, int nChangeReason)
+        static bool CHolyStoneSystemSetScene166_wrapper(struct CHolyStoneSystem* _this, char byNumOfTime, int nSceneCode, unsigned int nPassTime, int nChangeReason)
         {
            return CHolyStoneSystemSetScene166_user(_this, byNumOfTime, nSceneCode, nPassTime, nChangeReason, CHolyStoneSystemSetScene166_next);
         };
-        void CHolyStoneSystemSetTermTimeDefault168_wrapper(struct CHolyStoneSystem* _this, char byNumOfTime)
+        static void CHolyStoneSystemSetTermTimeDefault168_wrapper(struct CHolyStoneSystem* _this, char byNumOfTime)
         {
            CHolyStoneSystemSetTermTimeDefault168_user(_this, byNumOfTime, CHolyStoneSystemSetTermTimeDefault168_next);
         };
-        void CHolyStoneSystemUnAllRegisterPerAutoMine170_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemUnAllRegisterPerAutoMine170_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemUnAllRegisterPerAutoMine170_user(_this, CHolyStoneSystemUnAllRegisterPerAutoMine170_next);
         };
-        void CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_user(_this, CHolyStoneSystemUpdateNotifyHolyStoneHPToRaceBoss172_next);
         };
-        void CHolyStoneSystemWriteLogPer10Min_Combat174_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemWriteLogPer10Min_Combat174_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemWriteLogPer10Min_Combat174_user(_this, CHolyStoneSystemWriteLogPer10Min_Combat174_next);
         };
-        bool CHolyStoneSystemct_KeeperStart176_wrapper(struct CHolyStoneSystem* _this, int nKeeperState, int nRace, int nPassTime)
+        static bool CHolyStoneSystemct_KeeperStart176_wrapper(struct CHolyStoneSystem* _this, int nKeeperState, int nRace, int nPassTime)
         {
            return CHolyStoneSystemct_KeeperStart176_user(_this, nKeeperState, nRace, nPassTime, CHolyStoneSystemct_KeeperStart176_next);
         };
-        bool CHolyStoneSystemct_State178_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pOne)
+        static bool CHolyStoneSystemct_State178_wrapper(struct CHolyStoneSystem* _this, struct CPlayer* pOne)
         {
            return CHolyStoneSystemct_State178_user(_this, pOne, CHolyStoneSystemct_State178_next);
         };
-        bool CHolyStoneSystemct_StopBattle180_wrapper(struct CHolyStoneSystem* _this)
+        static bool CHolyStoneSystemct_StopBattle180_wrapper(struct CHolyStoneSystem* _this)
         {
            return CHolyStoneSystemct_StopBattle180_user(_this, CHolyStoneSystemct_StopBattle180_next);
         };
-        void CHolyStoneSystemdtor_CHolyStoneSystem182_wrapper(struct CHolyStoneSystem* _this)
+        static void CHolyStoneSystemdtor_CHolyStoneSystem182_wrapper(struct CHolyStoneSystem* _this)
         {
            CHolyStoneSystemdtor_CHolyStoneSystem182_user(_this, CHolyStoneSystemdtor_CHolyStoneSystem182_next);
         };
         
-        hook_record CHolyStoneSystem_functions[] = {
+        static hook_record CHolyStoneSystem_functions[] = {
         {   (LPVOID)0x14027b2b0L,
             (LPVOID *)&CHolyStoneSystemAlterSchedule2_user,
             (LPVOID *)&CHolyStoneSystemAlterSchedule2_next,
@@ -1015,5 +1015,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

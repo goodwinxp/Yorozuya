@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_lobby_logoutctor__qry_case_lobby_logout2_ptr _qry_case_lobby_logoutctor__qry_case_lobby_logout2_next(nullptr);
-        info::_qry_case_lobby_logoutctor__qry_case_lobby_logout2_clbk _qry_case_lobby_logoutctor__qry_case_lobby_logout2_user(nullptr);
-        info::_qry_case_lobby_logoutinit4_ptr _qry_case_lobby_logoutinit4_next(nullptr);
-        info::_qry_case_lobby_logoutinit4_clbk _qry_case_lobby_logoutinit4_user(nullptr);
-        info::_qry_case_lobby_logoutsize6_ptr _qry_case_lobby_logoutsize6_next(nullptr);
-        info::_qry_case_lobby_logoutsize6_clbk _qry_case_lobby_logoutsize6_user(nullptr);
+        static info::_qry_case_lobby_logoutctor__qry_case_lobby_logout2_ptr _qry_case_lobby_logoutctor__qry_case_lobby_logout2_next(nullptr);
+        static info::_qry_case_lobby_logoutctor__qry_case_lobby_logout2_clbk _qry_case_lobby_logoutctor__qry_case_lobby_logout2_user(nullptr);
+        static info::_qry_case_lobby_logoutinit4_ptr _qry_case_lobby_logoutinit4_next(nullptr);
+        static info::_qry_case_lobby_logoutinit4_clbk _qry_case_lobby_logoutinit4_user(nullptr);
+        static info::_qry_case_lobby_logoutsize6_ptr _qry_case_lobby_logoutsize6_next(nullptr);
+        static info::_qry_case_lobby_logoutsize6_clbk _qry_case_lobby_logoutsize6_user(nullptr);
         
-        void _qry_case_lobby_logoutctor__qry_case_lobby_logout2_wrapper(struct _qry_case_lobby_logout* _this)
+        static void _qry_case_lobby_logoutctor__qry_case_lobby_logout2_wrapper(struct _qry_case_lobby_logout* _this)
         {
            _qry_case_lobby_logoutctor__qry_case_lobby_logout2_user(_this, _qry_case_lobby_logoutctor__qry_case_lobby_logout2_next);
         };
-        void _qry_case_lobby_logoutinit4_wrapper(struct _qry_case_lobby_logout* _this)
+        static void _qry_case_lobby_logoutinit4_wrapper(struct _qry_case_lobby_logout* _this)
         {
            _qry_case_lobby_logoutinit4_user(_this, _qry_case_lobby_logoutinit4_next);
         };
-        int _qry_case_lobby_logoutsize6_wrapper(struct _qry_case_lobby_logout* _this)
+        static int _qry_case_lobby_logoutsize6_wrapper(struct _qry_case_lobby_logout* _this)
         {
            return _qry_case_lobby_logoutsize6_user(_this, _qry_case_lobby_logoutsize6_next);
         };
         
-        hook_record _qry_case_lobby_logout_functions[] = {
+        static hook_record _qry_case_lobby_logout_functions[] = {
         {   (LPVOID)0x14011f290L,
             (LPVOID *)&_qry_case_lobby_logoutctor__qry_case_lobby_logout2_user,
             (LPVOID *)&_qry_case_lobby_logoutctor__qry_case_lobby_logout2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,33 +8,33 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::ULILink1_ptr ULILink1_next(nullptr);
-        info::ULILink1_clbk ULILink1_user(nullptr);
-        info::ULIctor_ULI2_ptr ULIctor_ULI2_next(nullptr);
-        info::ULIctor_ULI2_clbk ULIctor_ULI2_user(nullptr);
-        info::ULIUnlink3_ptr ULIUnlink3_next(nullptr);
-        info::ULIUnlink3_clbk ULIUnlink3_user(nullptr);
-        info::ULIdtor_ULI7_ptr ULIdtor_ULI7_next(nullptr);
-        info::ULIdtor_ULI7_clbk ULIdtor_ULI7_user(nullptr);
+        static info::ULILink1_ptr ULILink1_next(nullptr);
+        static info::ULILink1_clbk ULILink1_user(nullptr);
+        static info::ULIctor_ULI2_ptr ULIctor_ULI2_next(nullptr);
+        static info::ULIctor_ULI2_clbk ULIctor_ULI2_user(nullptr);
+        static info::ULIUnlink3_ptr ULIUnlink3_next(nullptr);
+        static info::ULIUnlink3_clbk ULIUnlink3_user(nullptr);
+        static info::ULIdtor_ULI7_ptr ULIdtor_ULI7_next(nullptr);
+        static info::ULIdtor_ULI7_clbk ULIdtor_ULI7_user(nullptr);
         
-        void ULILink1_wrapper(struct ULI* _this)
+        static void ULILink1_wrapper(struct ULI* _this)
         {
            ULILink1_user(_this, ULILink1_next);
         };
-        void ULIctor_ULI2_wrapper(struct ULI* _this, struct ImgDelayDescr* pidd_)
+        static void ULIctor_ULI2_wrapper(struct ULI* _this, struct ImgDelayDescr* pidd_)
         {
            ULIctor_ULI2_user(_this, pidd_, ULIctor_ULI2_next);
         };
-        void ULIUnlink3_wrapper(struct ULI* _this)
+        static void ULIUnlink3_wrapper(struct ULI* _this)
         {
            ULIUnlink3_user(_this, ULIUnlink3_next);
         };
-        void ULIdtor_ULI7_wrapper(struct ULI* _this)
+        static void ULIdtor_ULI7_wrapper(struct ULI* _this)
         {
            ULIdtor_ULI7_user(_this, ULIdtor_ULI7_next);
         };
         
-        hook_record ULI_functions[] = {
+        static hook_record ULI_functions[] = {
         {   (LPVOID)0x1406764dcL,
             (LPVOID *)&ULILink1_user,
             (LPVOID *)&ULILink1_next,
@@ -58,5 +58,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_ptr _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_next(nullptr);
-        info::_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_clbk _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_user(nullptr);
+        static info::_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_ptr _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_next(nullptr);
+        static info::_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_clbk _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_user(nullptr);
         
-        void _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_wrapper(struct _notice_move_limit_map_msg_zocl* _this)
+        static void _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_wrapper(struct _notice_move_limit_map_msg_zocl* _this)
         {
            _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_user(_this, _notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_next);
         };
         
-        hook_record _notice_move_limit_map_msg_zocl_functions[] = {
+        static hook_record _notice_move_limit_map_msg_zocl_functions[] = {
         {   (LPVOID)0x1403a7100L,
             (LPVOID *)&_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_user,
             (LPVOID *)&_notice_move_limit_map_msg_zoclctor__notice_move_limit_map_msg_zocl2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

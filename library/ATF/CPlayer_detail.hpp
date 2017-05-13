@@ -8,6145 +8,6145 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CPlayerAddDalant2_ptr CPlayerAddDalant2_next(nullptr);
-        info::CPlayerAddDalant2_clbk CPlayerAddDalant2_user(nullptr);
-        info::CPlayerAddGold4_ptr CPlayerAddGold4_next(nullptr);
-        info::CPlayerAddGold4_clbk CPlayerAddGold4_user(nullptr);
-        info::CPlayerAlterDalant6_ptr CPlayerAlterDalant6_next(nullptr);
-        info::CPlayerAlterDalant6_clbk CPlayerAlterDalant6_user(nullptr);
-        info::CPlayerAlterExp8_ptr CPlayerAlterExp8_next(nullptr);
-        info::CPlayerAlterExp8_clbk CPlayerAlterExp8_user(nullptr);
-        info::CPlayerAlterExp_Animus10_ptr CPlayerAlterExp_Animus10_next(nullptr);
-        info::CPlayerAlterExp_Animus10_clbk CPlayerAlterExp_Animus10_user(nullptr);
-        info::CPlayerAlterExp_Potion12_ptr CPlayerAlterExp_Potion12_next(nullptr);
-        info::CPlayerAlterExp_Potion12_clbk CPlayerAlterExp_Potion12_user(nullptr);
-        info::CPlayerAlterFP_Animus14_ptr CPlayerAlterFP_Animus14_next(nullptr);
-        info::CPlayerAlterFP_Animus14_clbk CPlayerAlterFP_Animus14_user(nullptr);
-        info::CPlayerAlterGold16_ptr CPlayerAlterGold16_next(nullptr);
-        info::CPlayerAlterGold16_clbk CPlayerAlterGold16_user(nullptr);
-        info::CPlayerAlterHP_Animus18_ptr CPlayerAlterHP_Animus18_next(nullptr);
-        info::CPlayerAlterHP_Animus18_clbk CPlayerAlterHP_Animus18_user(nullptr);
-        info::CPlayerAlterMaxLevel20_ptr CPlayerAlterMaxLevel20_next(nullptr);
-        info::CPlayerAlterMaxLevel20_clbk CPlayerAlterMaxLevel20_user(nullptr);
-        info::CPlayerAlterMode_Animus22_ptr CPlayerAlterMode_Animus22_next(nullptr);
-        info::CPlayerAlterMode_Animus22_clbk CPlayerAlterMode_Animus22_user(nullptr);
-        info::CPlayerAlterPvPCashBag24_ptr CPlayerAlterPvPCashBag24_next(nullptr);
-        info::CPlayerAlterPvPCashBag24_clbk CPlayerAlterPvPCashBag24_user(nullptr);
-        info::CPlayerAlterPvPPoint26_ptr CPlayerAlterPvPPoint26_next(nullptr);
-        info::CPlayerAlterPvPPoint26_clbk CPlayerAlterPvPPoint26_user(nullptr);
-        info::CPlayerAlterPvpPointLeak28_ptr CPlayerAlterPvpPointLeak28_next(nullptr);
-        info::CPlayerAlterPvpPointLeak28_clbk CPlayerAlterPvpPointLeak28_user(nullptr);
-        info::CPlayerAlterSec30_ptr CPlayerAlterSec30_next(nullptr);
-        info::CPlayerAlterSec30_clbk CPlayerAlterSec30_user(nullptr);
-        info::CPlayerApplyEquipItemEffect32_ptr CPlayerApplyEquipItemEffect32_next(nullptr);
-        info::CPlayerApplyEquipItemEffect32_clbk CPlayerApplyEquipItemEffect32_user(nullptr);
-        info::CPlayerApplySetItemEffect34_ptr CPlayerApplySetItemEffect34_next(nullptr);
-        info::CPlayerApplySetItemEffect34_clbk CPlayerApplySetItemEffect34_user(nullptr);
-        info::CPlayerAttackableHeight36_ptr CPlayerAttackableHeight36_next(nullptr);
-        info::CPlayerAttackableHeight36_clbk CPlayerAttackableHeight36_user(nullptr);
-        info::CPlayerAutoCharge_Booster38_ptr CPlayerAutoCharge_Booster38_next(nullptr);
-        info::CPlayerAutoCharge_Booster38_clbk CPlayerAutoCharge_Booster38_user(nullptr);
-        info::CPlayerAutoRecover40_ptr CPlayerAutoRecover40_next(nullptr);
-        info::CPlayerAutoRecover40_clbk CPlayerAutoRecover40_user(nullptr);
-        info::CPlayerAutoRecover_Animus42_ptr CPlayerAutoRecover_Animus42_next(nullptr);
-        info::CPlayerAutoRecover_Animus42_clbk CPlayerAutoRecover_Animus42_user(nullptr);
-        info::CPlayerBilling_Logout44_ptr CPlayerBilling_Logout44_next(nullptr);
-        info::CPlayerBilling_Logout44_clbk CPlayerBilling_Logout44_user(nullptr);
-        info::CPlayerBreakCloakBooster46_ptr CPlayerBreakCloakBooster46_next(nullptr);
-        info::CPlayerBreakCloakBooster46_clbk CPlayerBreakCloakBooster46_user(nullptr);
-        info::CPlayerctor_CPlayer48_ptr CPlayerctor_CPlayer48_next(nullptr);
-        info::CPlayerctor_CPlayer48_clbk CPlayerctor_CPlayer48_user(nullptr);
-        info::CPlayerCalPvpCashPoint50_ptr CPlayerCalPvpCashPoint50_next(nullptr);
-        info::CPlayerCalPvpCashPoint50_clbk CPlayerCalPvpCashPoint50_user(nullptr);
-        info::CPlayerCalPvpTempCash52_ptr CPlayerCalPvpTempCash52_next(nullptr);
-        info::CPlayerCalPvpTempCash52_clbk CPlayerCalPvpTempCash52_user(nullptr);
-        info::CPlayerCalcAddPointByClass54_ptr CPlayerCalcAddPointByClass54_next(nullptr);
-        info::CPlayerCalcAddPointByClass54_clbk CPlayerCalcAddPointByClass54_user(nullptr);
-        info::CPlayerCalcCurFPRate56_ptr CPlayerCalcCurFPRate56_next(nullptr);
-        info::CPlayerCalcCurFPRate56_clbk CPlayerCalcCurFPRate56_user(nullptr);
-        info::CPlayerCalcCurHPRate58_ptr CPlayerCalcCurHPRate58_next(nullptr);
-        info::CPlayerCalcCurHPRate58_clbk CPlayerCalcCurHPRate58_user(nullptr);
-        info::CPlayerCalcCurSPRate60_ptr CPlayerCalcCurSPRate60_next(nullptr);
-        info::CPlayerCalcCurSPRate60_clbk CPlayerCalcCurSPRate60_user(nullptr);
-        info::CPlayerCalcDPRate62_ptr CPlayerCalcDPRate62_next(nullptr);
-        info::CPlayerCalcDPRate62_clbk CPlayerCalcDPRate62_user(nullptr);
-        info::CPlayerCalcDefTol64_ptr CPlayerCalcDefTol64_next(nullptr);
-        info::CPlayerCalcDefTol64_clbk CPlayerCalcDefTol64_user(nullptr);
-        info::CPlayerCalcEquipAttackDelay66_ptr CPlayerCalcEquipAttackDelay66_next(nullptr);
-        info::CPlayerCalcEquipAttackDelay66_clbk CPlayerCalcEquipAttackDelay66_user(nullptr);
-        info::CPlayerCalcEquipMaxDP68_ptr CPlayerCalcEquipMaxDP68_next(nullptr);
-        info::CPlayerCalcEquipMaxDP68_clbk CPlayerCalcEquipMaxDP68_user(nullptr);
-        info::CPlayerCalcEquipSpeed70_ptr CPlayerCalcEquipSpeed70_next(nullptr);
-        info::CPlayerCalcEquipSpeed70_clbk CPlayerCalcEquipSpeed70_user(nullptr);
-        info::CPlayerCalcExp72_ptr CPlayerCalcExp72_next(nullptr);
-        info::CPlayerCalcExp72_clbk CPlayerCalcExp72_user(nullptr);
-        info::CPlayerCalcPvP74_ptr CPlayerCalcPvP74_next(nullptr);
-        info::CPlayerCalcPvP74_clbk CPlayerCalcPvP74_user(nullptr);
-        info::CPlayerCheckAlterMaxPoint76_ptr CPlayerCheckAlterMaxPoint76_next(nullptr);
-        info::CPlayerCheckAlterMaxPoint76_clbk CPlayerCheckAlterMaxPoint76_user(nullptr);
-        info::CPlayerCheckBattleMode78_ptr CPlayerCheckBattleMode78_next(nullptr);
-        info::CPlayerCheckBattleMode78_clbk CPlayerCheckBattleMode78_user(nullptr);
-        info::CPlayerCheckGroupMapPoint80_ptr CPlayerCheckGroupMapPoint80_next(nullptr);
-        info::CPlayerCheckGroupMapPoint80_clbk CPlayerCheckGroupMapPoint80_user(nullptr);
-        info::CPlayerCheckGroupTargeting82_ptr CPlayerCheckGroupTargeting82_next(nullptr);
-        info::CPlayerCheckGroupTargeting82_clbk CPlayerCheckGroupTargeting82_user(nullptr);
-        info::CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_ptr CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_next(nullptr);
-        info::CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_clbk CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_user(nullptr);
-        info::CPlayerCheckNameChange86_ptr CPlayerCheckNameChange86_next(nullptr);
-        info::CPlayerCheckNameChange86_clbk CPlayerCheckNameChange86_user(nullptr);
-        info::CPlayerCheckPosInTown88_ptr CPlayerCheckPosInTown88_next(nullptr);
-        info::CPlayerCheckPosInTown88_clbk CPlayerCheckPosInTown88_user(nullptr);
-        info::CPlayerCheckPos_Region90_ptr CPlayerCheckPos_Region90_next(nullptr);
-        info::CPlayerCheckPos_Region90_clbk CPlayerCheckPos_Region90_user(nullptr);
-        info::CPlayerCheckUnitCutTime92_ptr CPlayerCheckUnitCutTime92_next(nullptr);
-        info::CPlayerCheckUnitCutTime92_clbk CPlayerCheckUnitCutTime92_user(nullptr);
-        info::CPlayerCheet_BufEffectEnd94_ptr CPlayerCheet_BufEffectEnd94_next(nullptr);
-        info::CPlayerCheet_BufEffectEnd94_clbk CPlayerCheet_BufEffectEnd94_user(nullptr);
-        info::CPlayerClearGravityStone96_ptr CPlayerClearGravityStone96_next(nullptr);
-        info::CPlayerClearGravityStone96_clbk CPlayerClearGravityStone96_user(nullptr);
-        info::CPlayerCorpse98_ptr CPlayerCorpse98_next(nullptr);
-        info::CPlayerCorpse98_clbk CPlayerCorpse98_user(nullptr);
-        info::CPlayerCreate100_ptr CPlayerCreate100_next(nullptr);
-        info::CPlayerCreate100_clbk CPlayerCreate100_user(nullptr);
-        info::CPlayerCreateComplete102_ptr CPlayerCreateComplete102_next(nullptr);
-        info::CPlayerCreateComplete102_clbk CPlayerCreateComplete102_user(nullptr);
-        info::CPlayerDTradeInit104_ptr CPlayerDTradeInit104_next(nullptr);
-        info::CPlayerDTradeInit104_clbk CPlayerDTradeInit104_user(nullptr);
-        info::CPlayerDecHalfSFContDam106_ptr CPlayerDecHalfSFContDam106_next(nullptr);
-        info::CPlayerDecHalfSFContDam106_clbk CPlayerDecHalfSFContDam106_user(nullptr);
-        info::CPlayerDelPostData108_ptr CPlayerDelPostData108_next(nullptr);
-        info::CPlayerDelPostData108_clbk CPlayerDelPostData108_user(nullptr);
-        info::CPlayerDeleteCouponItem110_ptr CPlayerDeleteCouponItem110_next(nullptr);
-        info::CPlayerDeleteCouponItem110_clbk CPlayerDeleteCouponItem110_user(nullptr);
-        info::CPlayerDeleteUseConsumeItem112_ptr CPlayerDeleteUseConsumeItem112_next(nullptr);
-        info::CPlayerDeleteUseConsumeItem112_clbk CPlayerDeleteUseConsumeItem112_user(nullptr);
-        info::CPlayerEmb_AddStorage114_ptr CPlayerEmb_AddStorage114_next(nullptr);
-        info::CPlayerEmb_AddStorage114_clbk CPlayerEmb_AddStorage114_user(nullptr);
-        info::CPlayerEmb_AlterDurPoint116_ptr CPlayerEmb_AlterDurPoint116_next(nullptr);
-        info::CPlayerEmb_AlterDurPoint116_clbk CPlayerEmb_AlterDurPoint116_user(nullptr);
-        info::CPlayerEmb_AlterStat118_ptr CPlayerEmb_AlterStat118_next(nullptr);
-        info::CPlayerEmb_AlterStat118_clbk CPlayerEmb_AlterStat118_user(nullptr);
-        info::CPlayerEmb_AlterStat_F120_ptr CPlayerEmb_AlterStat_F120_next(nullptr);
-        info::CPlayerEmb_AlterStat_F120_clbk CPlayerEmb_AlterStat_F120_user(nullptr);
-        info::CPlayerEmb_CheckActForQuest122_ptr CPlayerEmb_CheckActForQuest122_next(nullptr);
-        info::CPlayerEmb_CheckActForQuest122_clbk CPlayerEmb_CheckActForQuest122_user(nullptr);
-        info::CPlayerEmb_CheckActForQuestParty124_ptr CPlayerEmb_CheckActForQuestParty124_next(nullptr);
-        info::CPlayerEmb_CheckActForQuestParty124_clbk CPlayerEmb_CheckActForQuestParty124_user(nullptr);
-        info::CPlayerEmb_CompleteQuest126_ptr CPlayerEmb_CompleteQuest126_next(nullptr);
-        info::CPlayerEmb_CompleteQuest126_clbk CPlayerEmb_CompleteQuest126_user(nullptr);
-        info::CPlayerEmb_CreateNPCQuest128_ptr CPlayerEmb_CreateNPCQuest128_next(nullptr);
-        info::CPlayerEmb_CreateNPCQuest128_clbk CPlayerEmb_CreateNPCQuest128_user(nullptr);
-        info::CPlayerEmb_CreateQuestEvent130_ptr CPlayerEmb_CreateQuestEvent130_next(nullptr);
-        info::CPlayerEmb_CreateQuestEvent130_clbk CPlayerEmb_CreateQuestEvent130_user(nullptr);
-        info::CPlayerEmb_DelStorage132_ptr CPlayerEmb_DelStorage132_next(nullptr);
-        info::CPlayerEmb_DelStorage132_clbk CPlayerEmb_DelStorage132_user(nullptr);
-        info::CPlayerEmb_EquipLink134_ptr CPlayerEmb_EquipLink134_next(nullptr);
-        info::CPlayerEmb_EquipLink134_clbk CPlayerEmb_EquipLink134_user(nullptr);
-        info::CPlayerEmb_ItemUpgrade136_ptr CPlayerEmb_ItemUpgrade136_next(nullptr);
-        info::CPlayerEmb_ItemUpgrade136_clbk CPlayerEmb_ItemUpgrade136_user(nullptr);
-        info::CPlayerEmb_RidindUnit138_ptr CPlayerEmb_RidindUnit138_next(nullptr);
-        info::CPlayerEmb_RidindUnit138_clbk CPlayerEmb_RidindUnit138_user(nullptr);
-        info::CPlayerEmb_StartQuest140_ptr CPlayerEmb_StartQuest140_next(nullptr);
-        info::CPlayerEmb_StartQuest140_clbk CPlayerEmb_StartQuest140_user(nullptr);
-        info::CPlayerEmb_UpdateStat142_ptr CPlayerEmb_UpdateStat142_next(nullptr);
-        info::CPlayerEmb_UpdateStat142_clbk CPlayerEmb_UpdateStat142_user(nullptr);
-        info::CPlayerExitUpdateDataToWorld144_ptr CPlayerExitUpdateDataToWorld144_next(nullptr);
-        info::CPlayerExitUpdateDataToWorld144_clbk CPlayerExitUpdateDataToWorld144_user(nullptr);
-        info::CPlayerExtractStringToTime146_ptr CPlayerExtractStringToTime146_next(nullptr);
-        info::CPlayerExtractStringToTime146_clbk CPlayerExtractStringToTime146_user(nullptr);
-        info::CPlayerFindFarChatPlayerWithTemp148_ptr CPlayerFindFarChatPlayerWithTemp148_next(nullptr);
-        info::CPlayerFindFarChatPlayerWithTemp148_clbk CPlayerFindFarChatPlayerWithTemp148_user(nullptr);
-        info::CPlayerFixTargetWhile150_ptr CPlayerFixTargetWhile150_next(nullptr);
-        info::CPlayerFixTargetWhile150_clbk CPlayerFixTargetWhile150_user(nullptr);
-        info::CPlayerForcePullUnit152_ptr CPlayerForcePullUnit152_next(nullptr);
-        info::CPlayerForcePullUnit152_clbk CPlayerForcePullUnit152_user(nullptr);
-        info::CPlayerGetAddSpeed154_ptr CPlayerGetAddSpeed154_next(nullptr);
-        info::CPlayerGetAddSpeed154_clbk CPlayerGetAddSpeed154_user(nullptr);
-        info::CPlayerGetAfterEffect156_ptr CPlayerGetAfterEffect156_next(nullptr);
-        info::CPlayerGetAfterEffect156_clbk CPlayerGetAfterEffect156_user(nullptr);
-        info::CPlayerGetAttackDP158_ptr CPlayerGetAttackDP158_next(nullptr);
-        info::CPlayerGetAttackDP158_clbk CPlayerGetAttackDP158_user(nullptr);
-        info::CPlayerGetAttackLevel160_ptr CPlayerGetAttackLevel160_next(nullptr);
-        info::CPlayerGetAttackLevel160_clbk CPlayerGetAttackLevel160_user(nullptr);
-        info::CPlayerGetAttackRange162_ptr CPlayerGetAttackRange162_next(nullptr);
-        info::CPlayerGetAttackRange162_clbk CPlayerGetAttackRange162_user(nullptr);
-        info::CPlayerGetAvoidRate164_ptr CPlayerGetAvoidRate164_next(nullptr);
-        info::CPlayerGetAvoidRate164_clbk CPlayerGetAvoidRate164_user(nullptr);
-        info::CPlayerGetBillingType166_ptr CPlayerGetBillingType166_next(nullptr);
-        info::CPlayerGetBillingType166_clbk CPlayerGetBillingType166_user(nullptr);
-        info::CPlayerGetBindDummy168_ptr CPlayerGetBindDummy168_next(nullptr);
-        info::CPlayerGetBindDummy168_clbk CPlayerGetBindDummy168_user(nullptr);
-        info::CPlayerGetBindMap170_ptr CPlayerGetBindMap170_next(nullptr);
-        info::CPlayerGetBindMap170_clbk CPlayerGetBindMap170_user(nullptr);
-        info::CPlayerGetBindMapData172_ptr CPlayerGetBindMapData172_next(nullptr);
-        info::CPlayerGetBindMapData172_clbk CPlayerGetBindMapData172_user(nullptr);
-        info::CPlayerGetCashAmount174_ptr CPlayerGetCashAmount174_next(nullptr);
-        info::CPlayerGetCashAmount174_clbk CPlayerGetCashAmount174_user(nullptr);
-        info::CPlayerGetDP176_ptr CPlayerGetDP176_next(nullptr);
-        info::CPlayerGetDP176_clbk CPlayerGetDP176_user(nullptr);
-        info::CPlayerGetDamageDP178_ptr CPlayerGetDamageDP178_next(nullptr);
-        info::CPlayerGetDamageDP178_clbk CPlayerGetDamageDP178_user(nullptr);
-        info::CPlayerGetDamageLevel180_ptr CPlayerGetDamageLevel180_next(nullptr);
-        info::CPlayerGetDamageLevel180_clbk CPlayerGetDamageLevel180_user(nullptr);
-        info::CPlayerGetDefFC182_ptr CPlayerGetDefFC182_next(nullptr);
-        info::CPlayerGetDefFC182_clbk CPlayerGetDefFC182_user(nullptr);
-        info::CPlayerGetDefFacing184_ptr CPlayerGetDefFacing184_next(nullptr);
-        info::CPlayerGetDefFacing184_clbk CPlayerGetDefFacing184_user(nullptr);
-        info::CPlayerGetDefGap186_ptr CPlayerGetDefGap186_next(nullptr);
-        info::CPlayerGetDefGap186_clbk CPlayerGetDefGap186_user(nullptr);
-        info::CPlayerGetDefSkill188_ptr CPlayerGetDefSkill188_next(nullptr);
-        info::CPlayerGetDefSkill188_clbk CPlayerGetDefSkill188_user(nullptr);
-        info::CPlayerGetEffectEquipCode190_ptr CPlayerGetEffectEquipCode190_next(nullptr);
-        info::CPlayerGetEffectEquipCode190_clbk CPlayerGetEffectEquipCode190_user(nullptr);
-        info::CPlayerGetFP192_ptr CPlayerGetFP192_next(nullptr);
-        info::CPlayerGetFP192_clbk CPlayerGetFP192_user(nullptr);
-        info::CPlayerGetFireTol194_ptr CPlayerGetFireTol194_next(nullptr);
-        info::CPlayerGetFireTol194_clbk CPlayerGetFireTol194_user(nullptr);
-        info::CPlayerGetGauge196_ptr CPlayerGetGauge196_next(nullptr);
-        info::CPlayerGetGauge196_clbk CPlayerGetGauge196_user(nullptr);
-        info::CPlayerGetGenAttackProb198_ptr CPlayerGetGenAttackProb198_next(nullptr);
-        info::CPlayerGetGenAttackProb198_clbk CPlayerGetGenAttackProb198_user(nullptr);
-        info::CPlayerGetGroupTarget200_ptr CPlayerGetGroupTarget200_next(nullptr);
-        info::CPlayerGetGroupTarget200_clbk CPlayerGetGroupTarget200_user(nullptr);
-        info::CPlayerGetHP202_ptr CPlayerGetHP202_next(nullptr);
-        info::CPlayerGetHP202_clbk CPlayerGetHP202_user(nullptr);
-        info::CPlayerGetInitClassCost204_ptr CPlayerGetInitClassCost204_next(nullptr);
-        info::CPlayerGetInitClassCost204_clbk CPlayerGetInitClassCost204_user(nullptr);
-        info::CPlayerGetLevel206_ptr CPlayerGetLevel206_next(nullptr);
-        info::CPlayerGetLevel206_clbk CPlayerGetLevel206_user(nullptr);
-        info::CPlayerGetMasteryCumAfterAttack208_ptr CPlayerGetMasteryCumAfterAttack208_next(nullptr);
-        info::CPlayerGetMasteryCumAfterAttack208_clbk CPlayerGetMasteryCumAfterAttack208_user(nullptr);
-        info::CPlayerGetMaxDP210_ptr CPlayerGetMaxDP210_next(nullptr);
-        info::CPlayerGetMaxDP210_clbk CPlayerGetMaxDP210_user(nullptr);
-        info::CPlayerGetMaxFP212_ptr CPlayerGetMaxFP212_next(nullptr);
-        info::CPlayerGetMaxFP212_clbk CPlayerGetMaxFP212_user(nullptr);
-        info::CPlayerGetMaxHP214_ptr CPlayerGetMaxHP214_next(nullptr);
-        info::CPlayerGetMaxHP214_clbk CPlayerGetMaxHP214_user(nullptr);
-        info::CPlayerGetMaxSP216_ptr CPlayerGetMaxSP216_next(nullptr);
-        info::CPlayerGetMaxSP216_clbk CPlayerGetMaxSP216_user(nullptr);
-        info::CPlayerGetMoney218_ptr CPlayerGetMoney218_next(nullptr);
-        info::CPlayerGetMoney218_clbk CPlayerGetMoney218_user(nullptr);
-        info::CPlayerGetMoveSpeed220_ptr CPlayerGetMoveSpeed220_next(nullptr);
-        info::CPlayerGetMoveSpeed220_clbk CPlayerGetMoveSpeed220_user(nullptr);
-        info::CPlayerGetObjName222_ptr CPlayerGetObjName222_next(nullptr);
-        info::CPlayerGetObjName222_clbk CPlayerGetObjName222_user(nullptr);
-        info::CPlayerGetObjRace224_ptr CPlayerGetObjRace224_next(nullptr);
-        info::CPlayerGetObjRace224_clbk CPlayerGetObjRace224_user(nullptr);
-        info::CPlayerGetPartyExpDistributionRate226_ptr CPlayerGetPartyExpDistributionRate226_next(nullptr);
-        info::CPlayerGetPartyExpDistributionRate226_clbk CPlayerGetPartyExpDistributionRate226_user(nullptr);
-        info::CPlayerGetPvpOrderView228_ptr CPlayerGetPvpOrderView228_next(nullptr);
-        info::CPlayerGetPvpOrderView228_clbk CPlayerGetPvpOrderView228_user(nullptr);
-        info::CPlayerGetPvpPointLeak230_ptr CPlayerGetPvpPointLeak230_next(nullptr);
-        info::CPlayerGetPvpPointLeak230_clbk CPlayerGetPvpPointLeak230_user(nullptr);
-        info::CPlayerGetPvpPointLimiter232_ptr CPlayerGetPvpPointLimiter232_next(nullptr);
-        info::CPlayerGetPvpPointLimiter232_clbk CPlayerGetPvpPointLimiter232_user(nullptr);
-        info::CPlayerGetRecallAnimus234_ptr CPlayerGetRecallAnimus234_next(nullptr);
-        info::CPlayerGetRecallAnimus234_clbk CPlayerGetRecallAnimus234_user(nullptr);
-        info::CPlayerGetRewardItems_DarkDungeon236_ptr CPlayerGetRewardItems_DarkDungeon236_next(nullptr);
-        info::CPlayerGetRewardItems_DarkDungeon236_clbk CPlayerGetRewardItems_DarkDungeon236_user(nullptr);
-        info::CPlayerGetSP238_ptr CPlayerGetSP238_next(nullptr);
-        info::CPlayerGetSP238_clbk CPlayerGetSP238_user(nullptr);
-        info::CPlayerGetSoilTol240_ptr CPlayerGetSoilTol240_next(nullptr);
-        info::CPlayerGetSoilTol240_clbk CPlayerGetSoilTol240_user(nullptr);
-        info::CPlayerGetStateFlag242_ptr CPlayerGetStateFlag242_next(nullptr);
-        info::CPlayerGetStateFlag242_clbk CPlayerGetStateFlag242_user(nullptr);
-        info::CPlayerGetTargetObj244_ptr CPlayerGetTargetObj244_next(nullptr);
-        info::CPlayerGetTargetObj244_clbk CPlayerGetTargetObj244_user(nullptr);
-        info::CPlayerGetUseConsumeItem246_ptr CPlayerGetUseConsumeItem246_next(nullptr);
-        info::CPlayerGetUseConsumeItem246_clbk CPlayerGetUseConsumeItem246_user(nullptr);
-        info::CPlayerGetVisualVer248_ptr CPlayerGetVisualVer248_next(nullptr);
-        info::CPlayerGetVisualVer248_clbk CPlayerGetVisualVer248_user(nullptr);
-        info::CPlayerGetWaterTol250_ptr CPlayerGetWaterTol250_next(nullptr);
-        info::CPlayerGetWaterTol250_clbk CPlayerGetWaterTol250_user(nullptr);
-        info::CPlayerGetWeaponAdjust252_ptr CPlayerGetWeaponAdjust252_next(nullptr);
-        info::CPlayerGetWeaponAdjust252_clbk CPlayerGetWeaponAdjust252_user(nullptr);
-        info::CPlayerGetWeaponClass254_ptr CPlayerGetWeaponClass254_next(nullptr);
-        info::CPlayerGetWeaponClass254_clbk CPlayerGetWeaponClass254_user(nullptr);
-        info::CPlayerGetWeaponRange256_ptr CPlayerGetWeaponRange256_next(nullptr);
-        info::CPlayerGetWeaponRange256_clbk CPlayerGetWeaponRange256_user(nullptr);
-        info::CPlayerGetWidth258_ptr CPlayerGetWidth258_next(nullptr);
-        info::CPlayerGetWidth258_clbk CPlayerGetWidth258_user(nullptr);
-        info::CPlayerGetWindTol260_ptr CPlayerGetWindTol260_next(nullptr);
-        info::CPlayerGetWindTol260_clbk CPlayerGetWindTol260_user(nullptr);
-        info::CPlayerGuild_Buy_Emblem_Complete262_ptr CPlayerGuild_Buy_Emblem_Complete262_next(nullptr);
-        info::CPlayerGuild_Buy_Emblem_Complete262_clbk CPlayerGuild_Buy_Emblem_Complete262_user(nullptr);
-        info::CPlayerGuild_Disjoint_Complete264_ptr CPlayerGuild_Disjoint_Complete264_next(nullptr);
-        info::CPlayerGuild_Disjoint_Complete264_clbk CPlayerGuild_Disjoint_Complete264_user(nullptr);
-        info::CPlayerGuild_Force_Leave_Complete266_ptr CPlayerGuild_Force_Leave_Complete266_next(nullptr);
-        info::CPlayerGuild_Force_Leave_Complete266_clbk CPlayerGuild_Force_Leave_Complete266_user(nullptr);
-        info::CPlayerGuild_Insert_Complete268_ptr CPlayerGuild_Insert_Complete268_next(nullptr);
-        info::CPlayerGuild_Insert_Complete268_clbk CPlayerGuild_Insert_Complete268_user(nullptr);
-        info::CPlayerGuild_Join_Accept_Complete270_ptr CPlayerGuild_Join_Accept_Complete270_next(nullptr);
-        info::CPlayerGuild_Join_Accept_Complete270_clbk CPlayerGuild_Join_Accept_Complete270_user(nullptr);
-        info::CPlayerGuild_Pop_Money_Complete272_ptr CPlayerGuild_Pop_Money_Complete272_next(nullptr);
-        info::CPlayerGuild_Pop_Money_Complete272_clbk CPlayerGuild_Pop_Money_Complete272_user(nullptr);
-        info::CPlayerGuild_Push_Money_Complete274_ptr CPlayerGuild_Push_Money_Complete274_next(nullptr);
-        info::CPlayerGuild_Push_Money_Complete274_clbk CPlayerGuild_Push_Money_Complete274_user(nullptr);
-        info::CPlayerGuild_Self_Leave_Complete276_ptr CPlayerGuild_Self_Leave_Complete276_next(nullptr);
-        info::CPlayerGuild_Self_Leave_Complete276_clbk CPlayerGuild_Self_Leave_Complete276_user(nullptr);
-        info::CPlayerGuild_Update_GuildMater_Complete278_ptr CPlayerGuild_Update_GuildMater_Complete278_next(nullptr);
-        info::CPlayerGuild_Update_GuildMater_Complete278_clbk CPlayerGuild_Update_GuildMater_Complete278_user(nullptr);
-        info::CPlayerHSKQuestEnd_Att280_ptr CPlayerHSKQuestEnd_Att280_next(nullptr);
-        info::CPlayerHSKQuestEnd_Att280_clbk CPlayerHSKQuestEnd_Att280_user(nullptr);
-        info::CPlayerHideNameEffect282_ptr CPlayerHideNameEffect282_next(nullptr);
-        info::CPlayerHideNameEffect282_clbk CPlayerHideNameEffect282_user(nullptr);
-        info::CPlayerIncCriEffKillPoint284_ptr CPlayerIncCriEffKillPoint284_next(nullptr);
-        info::CPlayerIncCriEffKillPoint284_clbk CPlayerIncCriEffKillPoint284_user(nullptr);
-        info::CPlayerIncCriEffPvPCashBag286_ptr CPlayerIncCriEffPvPCashBag286_next(nullptr);
-        info::CPlayerIncCriEffPvPCashBag286_clbk CPlayerIncCriEffPvPCashBag286_user(nullptr);
-        info::CPlayerIncPvPPoint288_ptr CPlayerIncPvPPoint288_next(nullptr);
-        info::CPlayerIncPvPPoint288_clbk CPlayerIncPvPPoint288_user(nullptr);
-        info::CPlayerInit290_ptr CPlayerInit290_next(nullptr);
-        info::CPlayerInit290_clbk CPlayerInit290_user(nullptr);
-        info::CPlayerIntoMap292_ptr CPlayerIntoMap292_next(nullptr);
-        info::CPlayerIntoMap292_clbk CPlayerIntoMap292_user(nullptr);
-        info::CPlayerIsActingSiegeMode294_ptr CPlayerIsActingSiegeMode294_next(nullptr);
-        info::CPlayerIsActingSiegeMode294_clbk CPlayerIsActingSiegeMode294_user(nullptr);
-        info::CPlayerIsApplyPcbangPrimium296_ptr CPlayerIsApplyPcbangPrimium296_next(nullptr);
-        info::CPlayerIsApplyPcbangPrimium296_clbk CPlayerIsApplyPcbangPrimium296_user(nullptr);
-        info::CPlayerIsBeAttackedAble298_ptr CPlayerIsBeAttackedAble298_next(nullptr);
-        info::CPlayerIsBeAttackedAble298_clbk CPlayerIsBeAttackedAble298_user(nullptr);
-        info::CPlayerIsBeDamagedAble300_ptr CPlayerIsBeDamagedAble300_next(nullptr);
-        info::CPlayerIsBeDamagedAble300_clbk CPlayerIsBeDamagedAble300_user(nullptr);
-        info::CPlayerIsBulletValidity302_ptr CPlayerIsBulletValidity302_next(nullptr);
-        info::CPlayerIsBulletValidity302_clbk CPlayerIsBulletValidity302_user(nullptr);
-        info::CPlayerIsChaosMode304_ptr CPlayerIsChaosMode304_next(nullptr);
-        info::CPlayerIsChaosMode304_clbk CPlayerIsChaosMode304_user(nullptr);
-        info::CPlayerIsEffBulletValidity306_ptr CPlayerIsEffBulletValidity306_next(nullptr);
-        info::CPlayerIsEffBulletValidity306_clbk CPlayerIsEffBulletValidity306_user(nullptr);
-        info::CPlayerIsEffectableEquip308_ptr CPlayerIsEffectableEquip308_next(nullptr);
-        info::CPlayerIsEffectableEquip308_clbk CPlayerIsEffectableEquip308_user(nullptr);
-        info::CPlayerIsEquipAbleGrade310_ptr CPlayerIsEquipAbleGrade310_next(nullptr);
-        info::CPlayerIsEquipAbleGrade310_clbk CPlayerIsEquipAbleGrade310_user(nullptr);
-        info::CPlayerIsHaveMentalTicket312_ptr CPlayerIsHaveMentalTicket312_next(nullptr);
-        info::CPlayerIsHaveMentalTicket312_clbk CPlayerIsHaveMentalTicket312_user(nullptr);
-        info::CPlayerIsInTown314_ptr CPlayerIsInTown314_next(nullptr);
-        info::CPlayerIsInTown314_clbk CPlayerIsInTown314_user(nullptr);
-        info::CPlayerIsLastAttBuff316_ptr CPlayerIsLastAttBuff316_next(nullptr);
-        info::CPlayerIsLastAttBuff316_clbk CPlayerIsLastAttBuff316_user(nullptr);
-        info::CPlayerIsMapLoading318_ptr CPlayerIsMapLoading318_next(nullptr);
-        info::CPlayerIsMapLoading318_clbk CPlayerIsMapLoading318_user(nullptr);
-        info::CPlayerIsMineMode320_ptr CPlayerIsMineMode320_next(nullptr);
-        info::CPlayerIsMineMode320_clbk CPlayerIsMineMode320_user(nullptr);
-        info::CPlayerIsMiningByMinigTicket322_ptr CPlayerIsMiningByMinigTicket322_next(nullptr);
-        info::CPlayerIsMiningByMinigTicket322_clbk CPlayerIsMiningByMinigTicket322_user(nullptr);
-        info::CPlayerIsOutExtraStopPos324_ptr CPlayerIsOutExtraStopPos324_next(nullptr);
-        info::CPlayerIsOutExtraStopPos324_clbk CPlayerIsOutExtraStopPos324_user(nullptr);
-        info::CPlayerIsOverOneDay326_ptr CPlayerIsOverOneDay326_next(nullptr);
-        info::CPlayerIsOverOneDay326_clbk CPlayerIsOverOneDay326_user(nullptr);
-        info::CPlayerIsPassExpLimitLvDiff328_ptr CPlayerIsPassExpLimitLvDiff328_next(nullptr);
-        info::CPlayerIsPassExpLimitLvDiff328_clbk CPlayerIsPassExpLimitLvDiff328_user(nullptr);
-        info::CPlayerIsPassMasteryLimitLvDiff330_ptr CPlayerIsPassMasteryLimitLvDiff330_next(nullptr);
-        info::CPlayerIsPassMasteryLimitLvDiff330_clbk CPlayerIsPassMasteryLimitLvDiff330_user(nullptr);
-        info::CPlayerIsPunished332_ptr CPlayerIsPunished332_next(nullptr);
-        info::CPlayerIsPunished332_clbk CPlayerIsPunished332_user(nullptr);
-        info::CPlayerIsRecallAnimus334_ptr CPlayerIsRecallAnimus334_next(nullptr);
-        info::CPlayerIsRecallAnimus334_clbk CPlayerIsRecallAnimus334_user(nullptr);
-        info::CPlayerIsRecvableContEffect336_ptr CPlayerIsRecvableContEffect336_next(nullptr);
-        info::CPlayerIsRecvableContEffect336_clbk CPlayerIsRecvableContEffect336_user(nullptr);
-        info::CPlayerIsReturnPostUpdate338_ptr CPlayerIsReturnPostUpdate338_next(nullptr);
-        info::CPlayerIsReturnPostUpdate338_clbk CPlayerIsReturnPostUpdate338_user(nullptr);
-        info::CPlayerIsRidingShip340_ptr CPlayerIsRidingShip340_next(nullptr);
-        info::CPlayerIsRidingShip340_clbk CPlayerIsRidingShip340_user(nullptr);
-        info::CPlayerIsRidingUnit342_ptr CPlayerIsRidingUnit342_next(nullptr);
-        info::CPlayerIsRidingUnit342_clbk CPlayerIsRidingUnit342_user(nullptr);
-        info::CPlayerIsSFActableByClass344_ptr CPlayerIsSFActableByClass344_next(nullptr);
-        info::CPlayerIsSFActableByClass344_clbk CPlayerIsSFActableByClass344_user(nullptr);
-        info::CPlayerIsSFUsableGauge346_ptr CPlayerIsSFUsableGauge346_next(nullptr);
-        info::CPlayerIsSFUsableGauge346_clbk CPlayerIsSFUsableGauge346_user(nullptr);
-        info::CPlayerIsSFUsableSFMastery348_ptr CPlayerIsSFUsableSFMastery348_next(nullptr);
-        info::CPlayerIsSFUsableSFMastery348_clbk CPlayerIsSFUsableSFMastery348_user(nullptr);
-        info::CPlayerIsSFUseableRace350_ptr CPlayerIsSFUseableRace350_next(nullptr);
-        info::CPlayerIsSFUseableRace350_clbk CPlayerIsSFUseableRace350_user(nullptr);
-        info::CPlayerIsSiegeMode352_ptr CPlayerIsSiegeMode352_next(nullptr);
-        info::CPlayerIsSiegeMode352_clbk CPlayerIsSiegeMode352_user(nullptr);
-        info::CPlayerIsTargetObj354_ptr CPlayerIsTargetObj354_next(nullptr);
-        info::CPlayerIsTargetObj354_clbk CPlayerIsTargetObj354_user(nullptr);
-        info::CPlayerIsUsableAccountType356_ptr CPlayerIsUsableAccountType356_next(nullptr);
-        info::CPlayerIsUsableAccountType356_clbk CPlayerIsUsableAccountType356_user(nullptr);
-        info::CPlayerIsUseCloakBooster358_ptr CPlayerIsUseCloakBooster358_next(nullptr);
-        info::CPlayerIsUseCloakBooster358_clbk CPlayerIsUseCloakBooster358_user(nullptr);
-        info::CPlayerIsUseReleaseRaceBuffPotion360_ptr CPlayerIsUseReleaseRaceBuffPotion360_next(nullptr);
-        info::CPlayerIsUseReleaseRaceBuffPotion360_clbk CPlayerIsUseReleaseRaceBuffPotion360_user(nullptr);
-        info::CPlayerIs_Battle_Mode362_ptr CPlayerIs_Battle_Mode362_next(nullptr);
-        info::CPlayerIs_Battle_Mode362_clbk CPlayerIs_Battle_Mode362_user(nullptr);
-        info::CPlayerLimLvNpcQuestDelete364_ptr CPlayerLimLvNpcQuestDelete364_next(nullptr);
-        info::CPlayerLimLvNpcQuestDelete364_clbk CPlayerLimLvNpcQuestDelete364_user(nullptr);
-        info::CPlayerLoad366_ptr CPlayerLoad366_next(nullptr);
-        info::CPlayerLoad366_clbk CPlayerLoad366_user(nullptr);
-        info::CPlayerLoop368_ptr CPlayerLoop368_next(nullptr);
-        info::CPlayerLoop368_clbk CPlayerLoop368_user(nullptr);
-        info::CPlayerNetClose370_ptr CPlayerNetClose370_next(nullptr);
-        info::CPlayerNetClose370_clbk CPlayerNetClose370_user(nullptr);
-        info::CPlayerNewViewCircleObject372_ptr CPlayerNewViewCircleObject372_next(nullptr);
-        info::CPlayerNewViewCircleObject372_clbk CPlayerNewViewCircleObject372_user(nullptr);
-        info::CPlayerOnLoop_Static374_ptr CPlayerOnLoop_Static374_next(nullptr);
-        info::CPlayerOnLoop_Static374_clbk CPlayerOnLoop_Static374_user(nullptr);
-        info::CPlayerOutOfMap376_ptr CPlayerOutOfMap376_next(nullptr);
-        info::CPlayerOutOfMap376_clbk CPlayerOutOfMap376_user(nullptr);
-        info::CPlayerOutOfSec378_ptr CPlayerOutOfSec378_next(nullptr);
-        info::CPlayerOutOfSec378_clbk CPlayerOutOfSec378_user(nullptr);
-        info::CPlayerPastWhisperInit380_ptr CPlayerPastWhisperInit380_next(nullptr);
-        info::CPlayerPastWhisperInit380_clbk CPlayerPastWhisperInit380_user(nullptr);
-        info::CPlayerPotion_Buf_Extend382_ptr CPlayerPotion_Buf_Extend382_next(nullptr);
-        info::CPlayerPotion_Buf_Extend382_clbk CPlayerPotion_Buf_Extend382_user(nullptr);
-        info::CPlayerPushDQSCheatPlyerVoteInfo384_ptr CPlayerPushDQSCheatPlyerVoteInfo384_next(nullptr);
-        info::CPlayerPushDQSCheatPlyerVoteInfo384_clbk CPlayerPushDQSCheatPlyerVoteInfo384_user(nullptr);
-        info::CPlayerPushDQSUpdatePlyerVoteInfo386_ptr CPlayerPushDQSUpdatePlyerVoteInfo386_next(nullptr);
-        info::CPlayerPushDQSUpdatePlyerVoteInfo386_clbk CPlayerPushDQSUpdatePlyerVoteInfo386_user(nullptr);
-        info::CPlayerPushDQSUpdateVoteAvilable388_ptr CPlayerPushDQSUpdateVoteAvilable388_next(nullptr);
-        info::CPlayerPushDQSUpdateVoteAvilable388_clbk CPlayerPushDQSUpdateVoteAvilable388_user(nullptr);
-        info::CPlayerReCalcMaxHFSP390_ptr CPlayerReCalcMaxHFSP390_next(nullptr);
-        info::CPlayerReCalcMaxHFSP390_clbk CPlayerReCalcMaxHFSP390_user(nullptr);
-        info::CPlayerRecallRandomPositionInRange392_ptr CPlayerRecallRandomPositionInRange392_next(nullptr);
-        info::CPlayerRecallRandomPositionInRange392_clbk CPlayerRecallRandomPositionInRange392_user(nullptr);
-        info::CPlayerRecvHSKQuest394_ptr CPlayerRecvHSKQuest394_next(nullptr);
-        info::CPlayerRecvHSKQuest394_clbk CPlayerRecvHSKQuest394_user(nullptr);
-        info::CPlayerRecvKillMessage396_ptr CPlayerRecvKillMessage396_next(nullptr);
-        info::CPlayerRecvKillMessage396_clbk CPlayerRecvKillMessage396_user(nullptr);
-        info::CPlayerReservationForceClose398_ptr CPlayerReservationForceClose398_next(nullptr);
-        info::CPlayerReservationForceClose398_clbk CPlayerReservationForceClose398_user(nullptr);
-        info::CPlayerResurrect400_ptr CPlayerResurrect400_next(nullptr);
-        info::CPlayerResurrect400_clbk CPlayerResurrect400_user(nullptr);
-        info::CPlayerReturn_AnimusAsk402_ptr CPlayerReturn_AnimusAsk402_next(nullptr);
-        info::CPlayerReturn_AnimusAsk402_clbk CPlayerReturn_AnimusAsk402_user(nullptr);
-        info::CPlayerRewardChangeClass404_ptr CPlayerRewardChangeClass404_next(nullptr);
-        info::CPlayerRewardChangeClass404_clbk CPlayerRewardChangeClass404_user(nullptr);
-        info::CPlayerRewardChangeClassMastery406_ptr CPlayerRewardChangeClassMastery406_next(nullptr);
-        info::CPlayerRewardChangeClassMastery406_clbk CPlayerRewardChangeClassMastery406_user(nullptr);
-        info::CPlayerRewardChangeClassRewardItem408_ptr CPlayerRewardChangeClassRewardItem408_next(nullptr);
-        info::CPlayerRewardChangeClassRewardItem408_clbk CPlayerRewardChangeClassRewardItem408_user(nullptr);
-        info::CPlayerRewardRaceWarPvpCash410_ptr CPlayerRewardRaceWarPvpCash410_next(nullptr);
-        info::CPlayerRewardRaceWarPvpCash410_clbk CPlayerRewardRaceWarPvpCash410_user(nullptr);
-        info::CPlayerReward_DarkDungeon412_ptr CPlayerReward_DarkDungeon412_next(nullptr);
-        info::CPlayerReward_DarkDungeon412_clbk CPlayerReward_DarkDungeon412_user(nullptr);
-        info::CPlayerRobbedHP414_ptr CPlayerRobbedHP414_next(nullptr);
-        info::CPlayerRobbedHP414_clbk CPlayerRobbedHP414_user(nullptr);
-        info::CPlayerSFContDelMessage416_ptr CPlayerSFContDelMessage416_next(nullptr);
-        info::CPlayerSFContDelMessage416_clbk CPlayerSFContDelMessage416_user(nullptr);
-        info::CPlayerSFContInsertMessage418_ptr CPlayerSFContInsertMessage418_next(nullptr);
-        info::CPlayerSFContInsertMessage418_clbk CPlayerSFContInsertMessage418_user(nullptr);
-        info::CPlayerSFContUpdateTimeMessage420_ptr CPlayerSFContUpdateTimeMessage420_next(nullptr);
-        info::CPlayerSFContUpdateTimeMessage420_clbk CPlayerSFContUpdateTimeMessage420_user(nullptr);
-        info::CPlayerSF_AllContDamageForceRemove_Once422_ptr CPlayerSF_AllContDamageForceRemove_Once422_next(nullptr);
-        info::CPlayerSF_AllContDamageForceRemove_Once422_clbk CPlayerSF_AllContDamageForceRemove_Once422_user(nullptr);
-        info::CPlayerSF_AllContDamageRemove_Once424_ptr CPlayerSF_AllContDamageRemove_Once424_next(nullptr);
-        info::CPlayerSF_AllContDamageRemove_Once424_clbk CPlayerSF_AllContDamageRemove_Once424_user(nullptr);
-        info::CPlayerSF_AllContHelpForceRemove_Once426_ptr CPlayerSF_AllContHelpForceRemove_Once426_next(nullptr);
-        info::CPlayerSF_AllContHelpForceRemove_Once426_clbk CPlayerSF_AllContHelpForceRemove_Once426_user(nullptr);
-        info::CPlayerSF_AllContHelpSkillRemove_Once428_ptr CPlayerSF_AllContHelpSkillRemove_Once428_next(nullptr);
-        info::CPlayerSF_AllContHelpSkillRemove_Once428_clbk CPlayerSF_AllContHelpSkillRemove_Once428_user(nullptr);
-        info::CPlayerSF_AttHPtoDstFP_Once430_ptr CPlayerSF_AttHPtoDstFP_Once430_next(nullptr);
-        info::CPlayerSF_AttHPtoDstFP_Once430_clbk CPlayerSF_AttHPtoDstFP_Once430_user(nullptr);
-        info::CPlayerSF_ContDamageTimeInc_Once432_ptr CPlayerSF_ContDamageTimeInc_Once432_next(nullptr);
-        info::CPlayerSF_ContDamageTimeInc_Once432_clbk CPlayerSF_ContDamageTimeInc_Once432_user(nullptr);
-        info::CPlayerSF_ContHelpTimeInc_Once434_ptr CPlayerSF_ContHelpTimeInc_Once434_next(nullptr);
-        info::CPlayerSF_ContHelpTimeInc_Once434_clbk CPlayerSF_ContHelpTimeInc_Once434_user(nullptr);
-        info::CPlayerSF_ConvertMonsterTarget436_ptr CPlayerSF_ConvertMonsterTarget436_next(nullptr);
-        info::CPlayerSF_ConvertMonsterTarget436_clbk CPlayerSF_ConvertMonsterTarget436_user(nullptr);
-        info::CPlayerSF_ConvertTargetDest438_ptr CPlayerSF_ConvertTargetDest438_next(nullptr);
-        info::CPlayerSF_ConvertTargetDest438_clbk CPlayerSF_ConvertTargetDest438_user(nullptr);
-        info::CPlayerSF_DamageAndStun440_ptr CPlayerSF_DamageAndStun440_next(nullptr);
-        info::CPlayerSF_DamageAndStun440_clbk CPlayerSF_DamageAndStun440_user(nullptr);
-        info::CPlayerSF_FPDec442_ptr CPlayerSF_FPDec442_next(nullptr);
-        info::CPlayerSF_FPDec442_clbk CPlayerSF_FPDec442_user(nullptr);
-        info::CPlayerSF_HFSInc_Once444_ptr CPlayerSF_HFSInc_Once444_next(nullptr);
-        info::CPlayerSF_HFSInc_Once444_clbk CPlayerSF_HFSInc_Once444_user(nullptr);
-        info::CPlayerSF_HPInc_Once446_ptr CPlayerSF_HPInc_Once446_next(nullptr);
-        info::CPlayerSF_HPInc_Once446_clbk CPlayerSF_HPInc_Once446_user(nullptr);
-        info::CPlayerSF_IncHPCircleParty448_ptr CPlayerSF_IncHPCircleParty448_next(nullptr);
-        info::CPlayerSF_IncHPCircleParty448_clbk CPlayerSF_IncHPCircleParty448_user(nullptr);
-        info::CPlayerSF_IncreaseDP450_ptr CPlayerSF_IncreaseDP450_next(nullptr);
-        info::CPlayerSF_IncreaseDP450_clbk CPlayerSF_IncreaseDP450_user(nullptr);
-        info::CPlayerSF_LateContDamageRemove_Once452_ptr CPlayerSF_LateContDamageRemove_Once452_next(nullptr);
-        info::CPlayerSF_LateContDamageRemove_Once452_clbk CPlayerSF_LateContDamageRemove_Once452_user(nullptr);
-        info::CPlayerSF_LateContHelpForceRemove_Once454_ptr CPlayerSF_LateContHelpForceRemove_Once454_next(nullptr);
-        info::CPlayerSF_LateContHelpForceRemove_Once454_clbk CPlayerSF_LateContHelpForceRemove_Once454_user(nullptr);
-        info::CPlayerSF_LateContHelpSkillRemove_Once456_ptr CPlayerSF_LateContHelpSkillRemove_Once456_next(nullptr);
-        info::CPlayerSF_LateContHelpSkillRemove_Once456_clbk CPlayerSF_LateContHelpSkillRemove_Once456_user(nullptr);
-        info::CPlayerSF_MakePortalReturnBindPositionPartyMember458_ptr CPlayerSF_MakePortalReturnBindPositionPartyMember458_next(nullptr);
-        info::CPlayerSF_MakePortalReturnBindPositionPartyMember458_clbk CPlayerSF_MakePortalReturnBindPositionPartyMember458_user(nullptr);
-        info::CPlayerSF_MakeZeroAnimusRecallTimeOnce460_ptr CPlayerSF_MakeZeroAnimusRecallTimeOnce460_next(nullptr);
-        info::CPlayerSF_MakeZeroAnimusRecallTimeOnce460_clbk CPlayerSF_MakeZeroAnimusRecallTimeOnce460_user(nullptr);
-        info::CPlayerSF_OthersContHelpSFRemove_Once462_ptr CPlayerSF_OthersContHelpSFRemove_Once462_next(nullptr);
-        info::CPlayerSF_OthersContHelpSFRemove_Once462_clbk CPlayerSF_OthersContHelpSFRemove_Once462_user(nullptr);
-        info::CPlayerSF_OverHealing_Once464_ptr CPlayerSF_OverHealing_Once464_next(nullptr);
-        info::CPlayerSF_OverHealing_Once464_clbk CPlayerSF_OverHealing_Once464_user(nullptr);
-        info::CPlayerSF_RecoverAllReturnStateAnimusHPFull466_ptr CPlayerSF_RecoverAllReturnStateAnimusHPFull466_next(nullptr);
-        info::CPlayerSF_RecoverAllReturnStateAnimusHPFull466_clbk CPlayerSF_RecoverAllReturnStateAnimusHPFull466_user(nullptr);
-        info::CPlayerSF_ReleaseMonsterTarget468_ptr CPlayerSF_ReleaseMonsterTarget468_next(nullptr);
-        info::CPlayerSF_ReleaseMonsterTarget468_clbk CPlayerSF_ReleaseMonsterTarget468_user(nullptr);
-        info::CPlayerSF_RemoveAllContHelp_Once470_ptr CPlayerSF_RemoveAllContHelp_Once470_next(nullptr);
-        info::CPlayerSF_RemoveAllContHelp_Once470_clbk CPlayerSF_RemoveAllContHelp_Once470_user(nullptr);
-        info::CPlayerSF_Resurrect_Once472_ptr CPlayerSF_Resurrect_Once472_next(nullptr);
-        info::CPlayerSF_Resurrect_Once472_clbk CPlayerSF_Resurrect_Once472_user(nullptr);
-        info::CPlayerSF_ReturnBindPosition474_ptr CPlayerSF_ReturnBindPosition474_next(nullptr);
-        info::CPlayerSF_ReturnBindPosition474_clbk CPlayerSF_ReturnBindPosition474_user(nullptr);
-        info::CPlayerSF_SPDec476_ptr CPlayerSF_SPDec476_next(nullptr);
-        info::CPlayerSF_SPDec476_clbk CPlayerSF_SPDec476_user(nullptr);
-        info::CPlayerSF_STInc_Once478_ptr CPlayerSF_STInc_Once478_next(nullptr);
-        info::CPlayerSF_STInc_Once478_clbk CPlayerSF_STInc_Once478_user(nullptr);
-        info::CPlayerSF_SelfDestruction480_ptr CPlayerSF_SelfDestruction480_next(nullptr);
-        info::CPlayerSF_SelfDestruction480_clbk CPlayerSF_SelfDestruction480_user(nullptr);
-        info::CPlayerSF_SkillContHelpTimeInc_Once482_ptr CPlayerSF_SkillContHelpTimeInc_Once482_next(nullptr);
-        info::CPlayerSF_SkillContHelpTimeInc_Once482_clbk CPlayerSF_SkillContHelpTimeInc_Once482_user(nullptr);
-        info::CPlayerSF_Stun484_ptr CPlayerSF_Stun484_next(nullptr);
-        info::CPlayerSF_Stun484_clbk CPlayerSF_Stun484_user(nullptr);
-        info::CPlayerSF_TeleportToDestination486_ptr CPlayerSF_TeleportToDestination486_next(nullptr);
-        info::CPlayerSF_TeleportToDestination486_clbk CPlayerSF_TeleportToDestination486_user(nullptr);
-        info::CPlayerSF_TransDestHP488_ptr CPlayerSF_TransDestHP488_next(nullptr);
-        info::CPlayerSF_TransDestHP488_clbk CPlayerSF_TransDestHP488_user(nullptr);
-        info::CPlayerSF_TransMonsterHP490_ptr CPlayerSF_TransMonsterHP490_next(nullptr);
-        info::CPlayerSF_TransMonsterHP490_clbk CPlayerSF_TransMonsterHP490_user(nullptr);
-        info::CPlayerSendData_ChatTrans492_ptr CPlayerSendData_ChatTrans492_next(nullptr);
-        info::CPlayerSendData_ChatTrans492_clbk CPlayerSendData_ChatTrans492_user(nullptr);
-        info::CPlayerSendData_PartyMemberEffect494_ptr CPlayerSendData_PartyMemberEffect494_next(nullptr);
-        info::CPlayerSendData_PartyMemberEffect494_clbk CPlayerSendData_PartyMemberEffect494_user(nullptr);
-        info::CPlayerSendData_PartyMemberFP496_ptr CPlayerSendData_PartyMemberFP496_next(nullptr);
-        info::CPlayerSendData_PartyMemberFP496_clbk CPlayerSendData_PartyMemberFP496_user(nullptr);
-        info::CPlayerSendData_PartyMemberHP498_ptr CPlayerSendData_PartyMemberHP498_next(nullptr);
-        info::CPlayerSendData_PartyMemberHP498_clbk CPlayerSendData_PartyMemberHP498_user(nullptr);
-        info::CPlayerSendData_PartyMemberInfo500_ptr CPlayerSendData_PartyMemberInfo500_next(nullptr);
-        info::CPlayerSendData_PartyMemberInfo500_clbk CPlayerSendData_PartyMemberInfo500_user(nullptr);
-        info::CPlayerSendData_PartyMemberInfoToMembers502_ptr CPlayerSendData_PartyMemberInfoToMembers502_next(nullptr);
-        info::CPlayerSendData_PartyMemberInfoToMembers502_clbk CPlayerSendData_PartyMemberInfoToMembers502_user(nullptr);
-        info::CPlayerSendData_PartyMemberLv504_ptr CPlayerSendData_PartyMemberLv504_next(nullptr);
-        info::CPlayerSendData_PartyMemberLv504_clbk CPlayerSendData_PartyMemberLv504_user(nullptr);
-        info::CPlayerSendData_PartyMemberMaxHFSP506_ptr CPlayerSendData_PartyMemberMaxHFSP506_next(nullptr);
-        info::CPlayerSendData_PartyMemberMaxHFSP506_clbk CPlayerSendData_PartyMemberMaxHFSP506_user(nullptr);
-        info::CPlayerSendData_PartyMemberPos508_ptr CPlayerSendData_PartyMemberPos508_next(nullptr);
-        info::CPlayerSendData_PartyMemberPos508_clbk CPlayerSendData_PartyMemberPos508_user(nullptr);
-        info::CPlayerSendData_PartyMemberSP510_ptr CPlayerSendData_PartyMemberSP510_next(nullptr);
-        info::CPlayerSendData_PartyMemberSP510_clbk CPlayerSendData_PartyMemberSP510_user(nullptr);
-        info::CPlayerSendMsg_AMPInvenDownloadResult512_ptr CPlayerSendMsg_AMPInvenDownloadResult512_next(nullptr);
-        info::CPlayerSendMsg_AMPInvenDownloadResult512_clbk CPlayerSendMsg_AMPInvenDownloadResult512_user(nullptr);
-        info::CPlayerSendMsg_AddBagResult514_ptr CPlayerSendMsg_AddBagResult514_next(nullptr);
-        info::CPlayerSendMsg_AddBagResult514_clbk CPlayerSendMsg_AddBagResult514_user(nullptr);
-        info::CPlayerSendMsg_AddEffect516_ptr CPlayerSendMsg_AddEffect516_next(nullptr);
-        info::CPlayerSendMsg_AddEffect516_clbk CPlayerSendMsg_AddEffect516_user(nullptr);
-        info::CPlayerSendMsg_AdjustAmountInform518_ptr CPlayerSendMsg_AdjustAmountInform518_next(nullptr);
-        info::CPlayerSendMsg_AdjustAmountInform518_clbk CPlayerSendMsg_AdjustAmountInform518_user(nullptr);
-        info::CPlayerSendMsg_AlterBooster520_ptr CPlayerSendMsg_AlterBooster520_next(nullptr);
-        info::CPlayerSendMsg_AlterBooster520_clbk CPlayerSendMsg_AlterBooster520_user(nullptr);
-        info::CPlayerSendMsg_AlterContEffectTime522_ptr CPlayerSendMsg_AlterContEffectTime522_next(nullptr);
-        info::CPlayerSendMsg_AlterContEffectTime522_clbk CPlayerSendMsg_AlterContEffectTime522_user(nullptr);
-        info::CPlayerSendMsg_AlterEquipSPInform524_ptr CPlayerSendMsg_AlterEquipSPInform524_next(nullptr);
-        info::CPlayerSendMsg_AlterEquipSPInform524_clbk CPlayerSendMsg_AlterEquipSPInform524_user(nullptr);
-        info::CPlayerSendMsg_AlterExpInform526_ptr CPlayerSendMsg_AlterExpInform526_next(nullptr);
-        info::CPlayerSendMsg_AlterExpInform526_clbk CPlayerSendMsg_AlterExpInform526_user(nullptr);
-        info::CPlayerSendMsg_AlterGradeInform528_ptr CPlayerSendMsg_AlterGradeInform528_next(nullptr);
-        info::CPlayerSendMsg_AlterGradeInform528_clbk CPlayerSendMsg_AlterGradeInform528_user(nullptr);
-        info::CPlayerSendMsg_AlterHPInform530_ptr CPlayerSendMsg_AlterHPInform530_next(nullptr);
-        info::CPlayerSendMsg_AlterHPInform530_clbk CPlayerSendMsg_AlterHPInform530_user(nullptr);
-        info::CPlayerSendMsg_AlterItemDurInform532_ptr CPlayerSendMsg_AlterItemDurInform532_next(nullptr);
-        info::CPlayerSendMsg_AlterItemDurInform532_clbk CPlayerSendMsg_AlterItemDurInform532_user(nullptr);
-        info::CPlayerSendMsg_AlterMaxDP534_ptr CPlayerSendMsg_AlterMaxDP534_next(nullptr);
-        info::CPlayerSendMsg_AlterMaxDP534_clbk CPlayerSendMsg_AlterMaxDP534_user(nullptr);
-        info::CPlayerSendMsg_AlterMoneyInform536_ptr CPlayerSendMsg_AlterMoneyInform536_next(nullptr);
-        info::CPlayerSendMsg_AlterMoneyInform536_clbk CPlayerSendMsg_AlterMoneyInform536_user(nullptr);
-        info::CPlayerSendMsg_AlterPvPCash538_ptr CPlayerSendMsg_AlterPvPCash538_next(nullptr);
-        info::CPlayerSendMsg_AlterPvPCash538_clbk CPlayerSendMsg_AlterPvPCash538_user(nullptr);
-        info::CPlayerSendMsg_AlterPvPPoint540_ptr CPlayerSendMsg_AlterPvPPoint540_next(nullptr);
-        info::CPlayerSendMsg_AlterPvPPoint540_clbk CPlayerSendMsg_AlterPvPPoint540_user(nullptr);
-        info::CPlayerSendMsg_AlterPvPRank542_ptr CPlayerSendMsg_AlterPvPRank542_next(nullptr);
-        info::CPlayerSendMsg_AlterPvPRank542_clbk CPlayerSendMsg_AlterPvPRank542_user(nullptr);
-        info::CPlayerSendMsg_AlterRegionInform544_ptr CPlayerSendMsg_AlterRegionInform544_next(nullptr);
-        info::CPlayerSendMsg_AlterRegionInform544_clbk CPlayerSendMsg_AlterRegionInform544_user(nullptr);
-        info::CPlayerSendMsg_AlterSPInform546_ptr CPlayerSendMsg_AlterSPInform546_next(nullptr);
-        info::CPlayerSendMsg_AlterSPInform546_clbk CPlayerSendMsg_AlterSPInform546_user(nullptr);
-        info::CPlayerSendMsg_AlterTol548_ptr CPlayerSendMsg_AlterTol548_next(nullptr);
-        info::CPlayerSendMsg_AlterTol548_clbk CPlayerSendMsg_AlterTol548_user(nullptr);
-        info::CPlayerSendMsg_AlterTowerHP550_ptr CPlayerSendMsg_AlterTowerHP550_next(nullptr);
-        info::CPlayerSendMsg_AlterTowerHP550_clbk CPlayerSendMsg_AlterTowerHP550_user(nullptr);
-        info::CPlayerSendMsg_AlterTownOrField552_ptr CPlayerSendMsg_AlterTownOrField552_next(nullptr);
-        info::CPlayerSendMsg_AlterTownOrField552_clbk CPlayerSendMsg_AlterTownOrField552_user(nullptr);
-        info::CPlayerSendMsg_AlterUnitBulletInform554_ptr CPlayerSendMsg_AlterUnitBulletInform554_next(nullptr);
-        info::CPlayerSendMsg_AlterUnitBulletInform554_clbk CPlayerSendMsg_AlterUnitBulletInform554_user(nullptr);
-        info::CPlayerSendMsg_AlterUnitHPInform556_ptr CPlayerSendMsg_AlterUnitHPInform556_next(nullptr);
-        info::CPlayerSendMsg_AlterUnitHPInform556_clbk CPlayerSendMsg_AlterUnitHPInform556_user(nullptr);
-        info::CPlayerSendMsg_AlterWeaponBulletInform558_ptr CPlayerSendMsg_AlterWeaponBulletInform558_next(nullptr);
-        info::CPlayerSendMsg_AlterWeaponBulletInform558_clbk CPlayerSendMsg_AlterWeaponBulletInform558_user(nullptr);
-        info::CPlayerSendMsg_Alter_Action_Point560_ptr CPlayerSendMsg_Alter_Action_Point560_next(nullptr);
-        info::CPlayerSendMsg_Alter_Action_Point560_clbk CPlayerSendMsg_Alter_Action_Point560_user(nullptr);
-        info::CPlayerSendMsg_AnimusExpInform562_ptr CPlayerSendMsg_AnimusExpInform562_next(nullptr);
-        info::CPlayerSendMsg_AnimusExpInform562_clbk CPlayerSendMsg_AnimusExpInform562_user(nullptr);
-        info::CPlayerSendMsg_AnimusFPInform564_ptr CPlayerSendMsg_AnimusFPInform564_next(nullptr);
-        info::CPlayerSendMsg_AnimusFPInform564_clbk CPlayerSendMsg_AnimusFPInform564_user(nullptr);
-        info::CPlayerSendMsg_AnimusHPInform566_ptr CPlayerSendMsg_AnimusHPInform566_next(nullptr);
-        info::CPlayerSendMsg_AnimusHPInform566_clbk CPlayerSendMsg_AnimusHPInform566_user(nullptr);
-        info::CPlayerSendMsg_AnimusInvenChange568_ptr CPlayerSendMsg_AnimusInvenChange568_next(nullptr);
-        info::CPlayerSendMsg_AnimusInvenChange568_clbk CPlayerSendMsg_AnimusInvenChange568_user(nullptr);
-        info::CPlayerSendMsg_AnimusModeInform570_ptr CPlayerSendMsg_AnimusModeInform570_next(nullptr);
-        info::CPlayerSendMsg_AnimusModeInform570_clbk CPlayerSendMsg_AnimusModeInform570_user(nullptr);
-        info::CPlayerSendMsg_AnimusRecallResult572_ptr CPlayerSendMsg_AnimusRecallResult572_next(nullptr);
-        info::CPlayerSendMsg_AnimusRecallResult572_clbk CPlayerSendMsg_AnimusRecallResult572_user(nullptr);
-        info::CPlayerSendMsg_AnimusRecallWaitTimeFree574_ptr CPlayerSendMsg_AnimusRecallWaitTimeFree574_next(nullptr);
-        info::CPlayerSendMsg_AnimusRecallWaitTimeFree574_clbk CPlayerSendMsg_AnimusRecallWaitTimeFree574_user(nullptr);
-        info::CPlayerSendMsg_AnimusReturnResult576_ptr CPlayerSendMsg_AnimusReturnResult576_next(nullptr);
-        info::CPlayerSendMsg_AnimusReturnResult576_clbk CPlayerSendMsg_AnimusReturnResult576_user(nullptr);
-        info::CPlayerSendMsg_AnimusTargetResult578_ptr CPlayerSendMsg_AnimusTargetResult578_next(nullptr);
-        info::CPlayerSendMsg_AnimusTargetResult578_clbk CPlayerSendMsg_AnimusTargetResult578_user(nullptr);
-        info::CPlayerSendMsg_ApexInform580_ptr CPlayerSendMsg_ApexInform580_next(nullptr);
-        info::CPlayerSendMsg_ApexInform580_clbk CPlayerSendMsg_ApexInform580_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Count582_ptr CPlayerSendMsg_AttackResult_Count582_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Count582_clbk CPlayerSendMsg_AttackResult_Count582_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Error584_ptr CPlayerSendMsg_AttackResult_Error584_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Error584_clbk CPlayerSendMsg_AttackResult_Error584_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Force586_ptr CPlayerSendMsg_AttackResult_Force586_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Force586_clbk CPlayerSendMsg_AttackResult_Force586_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Gen588_ptr CPlayerSendMsg_AttackResult_Gen588_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Gen588_clbk CPlayerSendMsg_AttackResult_Gen588_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_SelfDestruction590_ptr CPlayerSendMsg_AttackResult_SelfDestruction590_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_SelfDestruction590_clbk CPlayerSendMsg_AttackResult_SelfDestruction590_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Siege592_ptr CPlayerSendMsg_AttackResult_Siege592_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Siege592_clbk CPlayerSendMsg_AttackResult_Siege592_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Skill594_ptr CPlayerSendMsg_AttackResult_Skill594_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Skill594_clbk CPlayerSendMsg_AttackResult_Skill594_user(nullptr);
-        info::CPlayerSendMsg_AttackResult_Unit596_ptr CPlayerSendMsg_AttackResult_Unit596_next(nullptr);
-        info::CPlayerSendMsg_AttackResult_Unit596_clbk CPlayerSendMsg_AttackResult_Unit596_user(nullptr);
-        info::CPlayerSendMsg_AwayPartyInvitationQuestion598_ptr CPlayerSendMsg_AwayPartyInvitationQuestion598_next(nullptr);
-        info::CPlayerSendMsg_AwayPartyInvitationQuestion598_clbk CPlayerSendMsg_AwayPartyInvitationQuestion598_user(nullptr);
-        info::CPlayerSendMsg_AwayPartyRequestResult600_ptr CPlayerSendMsg_AwayPartyRequestResult600_next(nullptr);
-        info::CPlayerSendMsg_AwayPartyRequestResult600_clbk CPlayerSendMsg_AwayPartyRequestResult600_user(nullptr);
-        info::CPlayerSendMsg_BackTowerResult602_ptr CPlayerSendMsg_BackTowerResult602_next(nullptr);
-        info::CPlayerSendMsg_BackTowerResult602_clbk CPlayerSendMsg_BackTowerResult602_user(nullptr);
-        info::CPlayerSendMsg_BackTrapResult604_ptr CPlayerSendMsg_BackTrapResult604_next(nullptr);
-        info::CPlayerSendMsg_BackTrapResult604_clbk CPlayerSendMsg_BackTrapResult604_user(nullptr);
-        info::CPlayerSendMsg_BaseDownloadResult606_ptr CPlayerSendMsg_BaseDownloadResult606_next(nullptr);
-        info::CPlayerSendMsg_BaseDownloadResult606_clbk CPlayerSendMsg_BaseDownloadResult606_user(nullptr);
-        info::CPlayerSendMsg_BillingExipreInform608_ptr CPlayerSendMsg_BillingExipreInform608_next(nullptr);
-        info::CPlayerSendMsg_BillingExipreInform608_clbk CPlayerSendMsg_BillingExipreInform608_user(nullptr);
-        info::CPlayerSendMsg_BillingTypeChangeInform610_ptr CPlayerSendMsg_BillingTypeChangeInform610_next(nullptr);
-        info::CPlayerSendMsg_BillingTypeChangeInform610_clbk CPlayerSendMsg_BillingTypeChangeInform610_user(nullptr);
-        info::CPlayerSendMsg_BreakdownEquipItem612_ptr CPlayerSendMsg_BreakdownEquipItem612_next(nullptr);
-        info::CPlayerSendMsg_BreakdownEquipItem612_clbk CPlayerSendMsg_BreakdownEquipItem612_user(nullptr);
-        info::CPlayerSendMsg_BuddhaEventMsg614_ptr CPlayerSendMsg_BuddhaEventMsg614_next(nullptr);
-        info::CPlayerSendMsg_BuddhaEventMsg614_clbk CPlayerSendMsg_BuddhaEventMsg614_user(nullptr);
-        info::CPlayerSendMsg_BuddyAddAnswerResult616_ptr CPlayerSendMsg_BuddyAddAnswerResult616_next(nullptr);
-        info::CPlayerSendMsg_BuddyAddAnswerResult616_clbk CPlayerSendMsg_BuddyAddAnswerResult616_user(nullptr);
-        info::CPlayerSendMsg_BuddyAddAsk618_ptr CPlayerSendMsg_BuddyAddAsk618_next(nullptr);
-        info::CPlayerSendMsg_BuddyAddAsk618_clbk CPlayerSendMsg_BuddyAddAsk618_user(nullptr);
-        info::CPlayerSendMsg_BuddyAddFail620_ptr CPlayerSendMsg_BuddyAddFail620_next(nullptr);
-        info::CPlayerSendMsg_BuddyAddFail620_clbk CPlayerSendMsg_BuddyAddFail620_user(nullptr);
-        info::CPlayerSendMsg_BuddyDelResult622_ptr CPlayerSendMsg_BuddyDelResult622_next(nullptr);
-        info::CPlayerSendMsg_BuddyDelResult622_clbk CPlayerSendMsg_BuddyDelResult622_user(nullptr);
-        info::CPlayerSendMsg_BuddyLoginInform624_ptr CPlayerSendMsg_BuddyLoginInform624_next(nullptr);
-        info::CPlayerSendMsg_BuddyLoginInform624_clbk CPlayerSendMsg_BuddyLoginInform624_user(nullptr);
-        info::CPlayerSendMsg_BuddyLogoffInform626_ptr CPlayerSendMsg_BuddyLogoffInform626_next(nullptr);
-        info::CPlayerSendMsg_BuddyLogoffInform626_clbk CPlayerSendMsg_BuddyLogoffInform626_user(nullptr);
-        info::CPlayerSendMsg_BuddyNameReNewal628_ptr CPlayerSendMsg_BuddyNameReNewal628_next(nullptr);
-        info::CPlayerSendMsg_BuddyNameReNewal628_clbk CPlayerSendMsg_BuddyNameReNewal628_user(nullptr);
-        info::CPlayerSendMsg_BuddyPosInform630_ptr CPlayerSendMsg_BuddyPosInform630_next(nullptr);
-        info::CPlayerSendMsg_BuddyPosInform630_clbk CPlayerSendMsg_BuddyPosInform630_user(nullptr);
-        info::CPlayerSendMsg_BuyCashItemMode632_ptr CPlayerSendMsg_BuyCashItemMode632_next(nullptr);
-        info::CPlayerSendMsg_BuyCashItemMode632_clbk CPlayerSendMsg_BuyCashItemMode632_user(nullptr);
-        info::CPlayerSendMsg_BuyItemStoreResult634_ptr CPlayerSendMsg_BuyItemStoreResult634_next(nullptr);
-        info::CPlayerSendMsg_BuyItemStoreResult634_clbk CPlayerSendMsg_BuyItemStoreResult634_user(nullptr);
-        info::CPlayerSendMsg_CancelSuggestResult636_ptr CPlayerSendMsg_CancelSuggestResult636_next(nullptr);
-        info::CPlayerSendMsg_CancelSuggestResult636_clbk CPlayerSendMsg_CancelSuggestResult636_user(nullptr);
-        info::CPlayerSendMsg_CastVoteResult638_ptr CPlayerSendMsg_CastVoteResult638_next(nullptr);
-        info::CPlayerSendMsg_CastVoteResult638_clbk CPlayerSendMsg_CastVoteResult638_user(nullptr);
-        info::CPlayerSendMsg_ChangeClassCommand640_ptr CPlayerSendMsg_ChangeClassCommand640_next(nullptr);
-        info::CPlayerSendMsg_ChangeClassCommand640_clbk CPlayerSendMsg_ChangeClassCommand640_user(nullptr);
-        info::CPlayerSendMsg_CharacterRenameCashResult642_ptr CPlayerSendMsg_CharacterRenameCashResult642_next(nullptr);
-        info::CPlayerSendMsg_CharacterRenameCashResult642_clbk CPlayerSendMsg_CharacterRenameCashResult642_user(nullptr);
-        info::CPlayerSendMsg_ChatFarFailure644_ptr CPlayerSendMsg_ChatFarFailure644_next(nullptr);
-        info::CPlayerSendMsg_ChatFarFailure644_clbk CPlayerSendMsg_ChatFarFailure644_user(nullptr);
-        info::CPlayerSendMsg_Circle_DelEffect646_ptr CPlayerSendMsg_Circle_DelEffect646_next(nullptr);
-        info::CPlayerSendMsg_Circle_DelEffect646_clbk CPlayerSendMsg_Circle_DelEffect646_user(nullptr);
-        info::CPlayerSendMsg_ClassSkillResult648_ptr CPlayerSendMsg_ClassSkillResult648_next(nullptr);
-        info::CPlayerSendMsg_ClassSkillResult648_clbk CPlayerSendMsg_ClassSkillResult648_user(nullptr);
-        info::CPlayerSendMsg_ClearDarkHole650_ptr CPlayerSendMsg_ClearDarkHole650_next(nullptr);
-        info::CPlayerSendMsg_ClearDarkHole650_clbk CPlayerSendMsg_ClearDarkHole650_user(nullptr);
-        info::CPlayerSendMsg_CombineItemExAcceptResult652_ptr CPlayerSendMsg_CombineItemExAcceptResult652_next(nullptr);
-        info::CPlayerSendMsg_CombineItemExAcceptResult652_clbk CPlayerSendMsg_CombineItemExAcceptResult652_user(nullptr);
-        info::CPlayerSendMsg_CombineItemExResult654_ptr CPlayerSendMsg_CombineItemExResult654_next(nullptr);
-        info::CPlayerSendMsg_CombineItemExResult654_clbk CPlayerSendMsg_CombineItemExResult654_user(nullptr);
-        info::CPlayerSendMsg_CombineItemResult656_ptr CPlayerSendMsg_CombineItemResult656_next(nullptr);
-        info::CPlayerSendMsg_CombineItemResult656_clbk CPlayerSendMsg_CombineItemResult656_user(nullptr);
-        info::CPlayerSendMsg_CombineLendItemResult658_ptr CPlayerSendMsg_CombineLendItemResult658_next(nullptr);
-        info::CPlayerSendMsg_CombineLendItemResult658_clbk CPlayerSendMsg_CombineLendItemResult658_user(nullptr);
-        info::CPlayerSendMsg_CreateTowerResult660_ptr CPlayerSendMsg_CreateTowerResult660_next(nullptr);
-        info::CPlayerSendMsg_CreateTowerResult660_clbk CPlayerSendMsg_CreateTowerResult660_user(nullptr);
-        info::CPlayerSendMsg_CreateTrapResult662_ptr CPlayerSendMsg_CreateTrapResult662_next(nullptr);
-        info::CPlayerSendMsg_CreateTrapResult662_clbk CPlayerSendMsg_CreateTrapResult662_user(nullptr);
-        info::CPlayerSendMsg_CumDownloadResult664_ptr CPlayerSendMsg_CumDownloadResult664_next(nullptr);
-        info::CPlayerSendMsg_CumDownloadResult664_clbk CPlayerSendMsg_CumDownloadResult664_user(nullptr);
-        info::CPlayerSendMsg_CuttingCompleteResult666_ptr CPlayerSendMsg_CuttingCompleteResult666_next(nullptr);
-        info::CPlayerSendMsg_CuttingCompleteResult666_clbk CPlayerSendMsg_CuttingCompleteResult666_user(nullptr);
-        info::CPlayerSendMsg_DTradeAccomplishInform668_ptr CPlayerSendMsg_DTradeAccomplishInform668_next(nullptr);
-        info::CPlayerSendMsg_DTradeAccomplishInform668_clbk CPlayerSendMsg_DTradeAccomplishInform668_user(nullptr);
-        info::CPlayerSendMsg_DTradeAddInform670_ptr CPlayerSendMsg_DTradeAddInform670_next(nullptr);
-        info::CPlayerSendMsg_DTradeAddInform670_clbk CPlayerSendMsg_DTradeAddInform670_user(nullptr);
-        info::CPlayerSendMsg_DTradeAddResult672_ptr CPlayerSendMsg_DTradeAddResult672_next(nullptr);
-        info::CPlayerSendMsg_DTradeAddResult672_clbk CPlayerSendMsg_DTradeAddResult672_user(nullptr);
-        info::CPlayerSendMsg_DTradeAnswerResult674_ptr CPlayerSendMsg_DTradeAnswerResult674_next(nullptr);
-        info::CPlayerSendMsg_DTradeAnswerResult674_clbk CPlayerSendMsg_DTradeAnswerResult674_user(nullptr);
-        info::CPlayerSendMsg_DTradeAskInform676_ptr CPlayerSendMsg_DTradeAskInform676_next(nullptr);
-        info::CPlayerSendMsg_DTradeAskInform676_clbk CPlayerSendMsg_DTradeAskInform676_user(nullptr);
-        info::CPlayerSendMsg_DTradeAskResult678_ptr CPlayerSendMsg_DTradeAskResult678_next(nullptr);
-        info::CPlayerSendMsg_DTradeAskResult678_clbk CPlayerSendMsg_DTradeAskResult678_user(nullptr);
-        info::CPlayerSendMsg_DTradeBetInform680_ptr CPlayerSendMsg_DTradeBetInform680_next(nullptr);
-        info::CPlayerSendMsg_DTradeBetInform680_clbk CPlayerSendMsg_DTradeBetInform680_user(nullptr);
-        info::CPlayerSendMsg_DTradeBetResult682_ptr CPlayerSendMsg_DTradeBetResult682_next(nullptr);
-        info::CPlayerSendMsg_DTradeBetResult682_clbk CPlayerSendMsg_DTradeBetResult682_user(nullptr);
-        info::CPlayerSendMsg_DTradeCancleInform684_ptr CPlayerSendMsg_DTradeCancleInform684_next(nullptr);
-        info::CPlayerSendMsg_DTradeCancleInform684_clbk CPlayerSendMsg_DTradeCancleInform684_user(nullptr);
-        info::CPlayerSendMsg_DTradeCancleResult686_ptr CPlayerSendMsg_DTradeCancleResult686_next(nullptr);
-        info::CPlayerSendMsg_DTradeCancleResult686_clbk CPlayerSendMsg_DTradeCancleResult686_user(nullptr);
-        info::CPlayerSendMsg_DTradeCloseInform688_ptr CPlayerSendMsg_DTradeCloseInform688_next(nullptr);
-        info::CPlayerSendMsg_DTradeCloseInform688_clbk CPlayerSendMsg_DTradeCloseInform688_user(nullptr);
-        info::CPlayerSendMsg_DTradeDelInform690_ptr CPlayerSendMsg_DTradeDelInform690_next(nullptr);
-        info::CPlayerSendMsg_DTradeDelInform690_clbk CPlayerSendMsg_DTradeDelInform690_user(nullptr);
-        info::CPlayerSendMsg_DTradeDelResult692_ptr CPlayerSendMsg_DTradeDelResult692_next(nullptr);
-        info::CPlayerSendMsg_DTradeDelResult692_clbk CPlayerSendMsg_DTradeDelResult692_user(nullptr);
-        info::CPlayerSendMsg_DTradeLockInform694_ptr CPlayerSendMsg_DTradeLockInform694_next(nullptr);
-        info::CPlayerSendMsg_DTradeLockInform694_clbk CPlayerSendMsg_DTradeLockInform694_user(nullptr);
-        info::CPlayerSendMsg_DTradeLockResult696_ptr CPlayerSendMsg_DTradeLockResult696_next(nullptr);
-        info::CPlayerSendMsg_DTradeLockResult696_clbk CPlayerSendMsg_DTradeLockResult696_user(nullptr);
-        info::CPlayerSendMsg_DTradeOKInform698_ptr CPlayerSendMsg_DTradeOKInform698_next(nullptr);
-        info::CPlayerSendMsg_DTradeOKInform698_clbk CPlayerSendMsg_DTradeOKInform698_user(nullptr);
-        info::CPlayerSendMsg_DTradeOKResult700_ptr CPlayerSendMsg_DTradeOKResult700_next(nullptr);
-        info::CPlayerSendMsg_DTradeOKResult700_clbk CPlayerSendMsg_DTradeOKResult700_user(nullptr);
-        info::CPlayerSendMsg_DTradeStartInform702_ptr CPlayerSendMsg_DTradeStartInform702_next(nullptr);
-        info::CPlayerSendMsg_DTradeStartInform702_clbk CPlayerSendMsg_DTradeStartInform702_user(nullptr);
-        info::CPlayerSendMsg_DTradeUnitAddInform704_ptr CPlayerSendMsg_DTradeUnitAddInform704_next(nullptr);
-        info::CPlayerSendMsg_DTradeUnitAddInform704_clbk CPlayerSendMsg_DTradeUnitAddInform704_user(nullptr);
-        info::CPlayerSendMsg_DTradeUnitInfoInform706_ptr CPlayerSendMsg_DTradeUnitInfoInform706_next(nullptr);
-        info::CPlayerSendMsg_DTradeUnitInfoInform706_clbk CPlayerSendMsg_DTradeUnitInfoInform706_user(nullptr);
-        info::CPlayerSendMsg_DamageResult708_ptr CPlayerSendMsg_DamageResult708_next(nullptr);
-        info::CPlayerSendMsg_DamageResult708_clbk CPlayerSendMsg_DamageResult708_user(nullptr);
-        info::CPlayerSendMsg_DarkHoleOpenFail710_ptr CPlayerSendMsg_DarkHoleOpenFail710_next(nullptr);
-        info::CPlayerSendMsg_DarkHoleOpenFail710_clbk CPlayerSendMsg_DarkHoleOpenFail710_user(nullptr);
-        info::CPlayerSendMsg_DarkHoleOpenResult712_ptr CPlayerSendMsg_DarkHoleOpenResult712_next(nullptr);
-        info::CPlayerSendMsg_DarkHoleOpenResult712_clbk CPlayerSendMsg_DarkHoleOpenResult712_user(nullptr);
-        info::CPlayerSendMsg_DarkHoleRewardMessage714_ptr CPlayerSendMsg_DarkHoleRewardMessage714_next(nullptr);
-        info::CPlayerSendMsg_DarkHoleRewardMessage714_clbk CPlayerSendMsg_DarkHoleRewardMessage714_user(nullptr);
-        info::CPlayerSendMsg_DelEffect716_ptr CPlayerSendMsg_DelEffect716_next(nullptr);
-        info::CPlayerSendMsg_DelEffect716_clbk CPlayerSendMsg_DelEffect716_user(nullptr);
-        info::CPlayerSendMsg_DeleteStorageInform718_ptr CPlayerSendMsg_DeleteStorageInform718_next(nullptr);
-        info::CPlayerSendMsg_DeleteStorageInform718_clbk CPlayerSendMsg_DeleteStorageInform718_user(nullptr);
-        info::CPlayerSendMsg_Destroy720_ptr CPlayerSendMsg_Destroy720_next(nullptr);
-        info::CPlayerSendMsg_Destroy720_clbk CPlayerSendMsg_Destroy720_user(nullptr);
-        info::CPlayerSendMsg_Die722_ptr CPlayerSendMsg_Die722_next(nullptr);
-        info::CPlayerSendMsg_Die722_clbk CPlayerSendMsg_Die722_user(nullptr);
-        info::CPlayerSendMsg_EconomyHistoryInform724_ptr CPlayerSendMsg_EconomyHistoryInform724_next(nullptr);
-        info::CPlayerSendMsg_EconomyHistoryInform724_clbk CPlayerSendMsg_EconomyHistoryInform724_user(nullptr);
-        info::CPlayerSendMsg_EconomyRateInform726_ptr CPlayerSendMsg_EconomyRateInform726_next(nullptr);
-        info::CPlayerSendMsg_EconomyRateInform726_clbk CPlayerSendMsg_EconomyRateInform726_user(nullptr);
-        info::CPlayerSendMsg_EmbellishResult728_ptr CPlayerSendMsg_EmbellishResult728_next(nullptr);
-        info::CPlayerSendMsg_EmbellishResult728_clbk CPlayerSendMsg_EmbellishResult728_user(nullptr);
-        info::CPlayerSendMsg_EnterDarkHole730_ptr CPlayerSendMsg_EnterDarkHole730_next(nullptr);
-        info::CPlayerSendMsg_EnterDarkHole730_clbk CPlayerSendMsg_EnterDarkHole730_user(nullptr);
-        info::CPlayerSendMsg_EquipItemLevelLimit732_ptr CPlayerSendMsg_EquipItemLevelLimit732_next(nullptr);
-        info::CPlayerSendMsg_EquipItemLevelLimit732_clbk CPlayerSendMsg_EquipItemLevelLimit732_user(nullptr);
-        info::CPlayerSendMsg_EquipPartChange734_ptr CPlayerSendMsg_EquipPartChange734_next(nullptr);
-        info::CPlayerSendMsg_EquipPartChange734_clbk CPlayerSendMsg_EquipPartChange734_user(nullptr);
-        info::CPlayerSendMsg_EquipPartResult736_ptr CPlayerSendMsg_EquipPartResult736_next(nullptr);
-        info::CPlayerSendMsg_EquipPartResult736_clbk CPlayerSendMsg_EquipPartResult736_user(nullptr);
-        info::CPlayerSendMsg_ExchangeItemResult738_ptr CPlayerSendMsg_ExchangeItemResult738_next(nullptr);
-        info::CPlayerSendMsg_ExchangeItemResult738_clbk CPlayerSendMsg_ExchangeItemResult738_user(nullptr);
-        info::CPlayerSendMsg_ExchangeLendItemResult740_ptr CPlayerSendMsg_ExchangeLendItemResult740_next(nullptr);
-        info::CPlayerSendMsg_ExchangeLendItemResult740_clbk CPlayerSendMsg_ExchangeLendItemResult740_user(nullptr);
-        info::CPlayerSendMsg_ExchangeMoneyResult742_ptr CPlayerSendMsg_ExchangeMoneyResult742_next(nullptr);
-        info::CPlayerSendMsg_ExchangeMoneyResult742_clbk CPlayerSendMsg_ExchangeMoneyResult742_user(nullptr);
-        info::CPlayerSendMsg_ExitWorldResult744_ptr CPlayerSendMsg_ExitWorldResult744_next(nullptr);
-        info::CPlayerSendMsg_ExitWorldResult744_clbk CPlayerSendMsg_ExitWorldResult744_user(nullptr);
-        info::CPlayerSendMsg_ExtTrunkExtendResult746_ptr CPlayerSendMsg_ExtTrunkExtendResult746_next(nullptr);
-        info::CPlayerSendMsg_ExtTrunkExtendResult746_clbk CPlayerSendMsg_ExtTrunkExtendResult746_user(nullptr);
-        info::CPlayerSendMsg_FanfareItem748_ptr CPlayerSendMsg_FanfareItem748_next(nullptr);
-        info::CPlayerSendMsg_FanfareItem748_clbk CPlayerSendMsg_FanfareItem748_user(nullptr);
-        info::CPlayerSendMsg_FcitemInform750_ptr CPlayerSendMsg_FcitemInform750_next(nullptr);
-        info::CPlayerSendMsg_FcitemInform750_clbk CPlayerSendMsg_FcitemInform750_user(nullptr);
-        info::CPlayerSendMsg_FixPosition752_ptr CPlayerSendMsg_FixPosition752_next(nullptr);
-        info::CPlayerSendMsg_FixPosition752_clbk CPlayerSendMsg_FixPosition752_user(nullptr);
-        info::CPlayerSendMsg_ForceDownloadResult754_ptr CPlayerSendMsg_ForceDownloadResult754_next(nullptr);
-        info::CPlayerSendMsg_ForceDownloadResult754_clbk CPlayerSendMsg_ForceDownloadResult754_user(nullptr);
-        info::CPlayerSendMsg_ForceInvenChange756_ptr CPlayerSendMsg_ForceInvenChange756_next(nullptr);
-        info::CPlayerSendMsg_ForceInvenChange756_clbk CPlayerSendMsg_ForceInvenChange756_user(nullptr);
-        info::CPlayerSendMsg_ForceResult758_ptr CPlayerSendMsg_ForceResult758_next(nullptr);
-        info::CPlayerSendMsg_ForceResult758_clbk CPlayerSendMsg_ForceResult758_user(nullptr);
-        info::CPlayerSendMsg_GM_Greeting760_ptr CPlayerSendMsg_GM_Greeting760_next(nullptr);
-        info::CPlayerSendMsg_GM_Greeting760_clbk CPlayerSendMsg_GM_Greeting760_user(nullptr);
-        info::CPlayerSendMsg_GUILD_Greeting762_ptr CPlayerSendMsg_GUILD_Greeting762_next(nullptr);
-        info::CPlayerSendMsg_GUILD_Greeting762_clbk CPlayerSendMsg_GUILD_Greeting762_user(nullptr);
-        info::CPlayerSendMsg_GestureInform764_ptr CPlayerSendMsg_GestureInform764_next(nullptr);
-        info::CPlayerSendMsg_GestureInform764_clbk CPlayerSendMsg_GestureInform764_user(nullptr);
-        info::CPlayerSendMsg_GiveupDarkHole766_ptr CPlayerSendMsg_GiveupDarkHole766_next(nullptr);
-        info::CPlayerSendMsg_GiveupDarkHole766_clbk CPlayerSendMsg_GiveupDarkHole766_user(nullptr);
-        info::CPlayerSendMsg_GotoBasePortalResult768_ptr CPlayerSendMsg_GotoBasePortalResult768_next(nullptr);
-        info::CPlayerSendMsg_GotoBasePortalResult768_clbk CPlayerSendMsg_GotoBasePortalResult768_user(nullptr);
-        info::CPlayerSendMsg_GotoRecallResult770_ptr CPlayerSendMsg_GotoRecallResult770_next(nullptr);
-        info::CPlayerSendMsg_GotoRecallResult770_clbk CPlayerSendMsg_GotoRecallResult770_user(nullptr);
-        info::CPlayerSendMsg_GroupTargetInform772_ptr CPlayerSendMsg_GroupTargetInform772_next(nullptr);
-        info::CPlayerSendMsg_GroupTargetInform772_clbk CPlayerSendMsg_GroupTargetInform772_user(nullptr);
-        info::CPlayerSendMsg_GuildEstablishFail774_ptr CPlayerSendMsg_GuildEstablishFail774_next(nullptr);
-        info::CPlayerSendMsg_GuildEstablishFail774_clbk CPlayerSendMsg_GuildEstablishFail774_user(nullptr);
-        info::CPlayerSendMsg_GuildForceLeaveBoradori776_ptr CPlayerSendMsg_GuildForceLeaveBoradori776_next(nullptr);
-        info::CPlayerSendMsg_GuildForceLeaveBoradori776_clbk CPlayerSendMsg_GuildForceLeaveBoradori776_user(nullptr);
-        info::CPlayerSendMsg_GuildJoinAcceptFail778_ptr CPlayerSendMsg_GuildJoinAcceptFail778_next(nullptr);
-        info::CPlayerSendMsg_GuildJoinAcceptFail778_clbk CPlayerSendMsg_GuildJoinAcceptFail778_user(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyCancelResult780_ptr CPlayerSendMsg_GuildJoinApplyCancelResult780_next(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyCancelResult780_clbk CPlayerSendMsg_GuildJoinApplyCancelResult780_user(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyRejectInform782_ptr CPlayerSendMsg_GuildJoinApplyRejectInform782_next(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyRejectInform782_clbk CPlayerSendMsg_GuildJoinApplyRejectInform782_user(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyResult784_ptr CPlayerSendMsg_GuildJoinApplyResult784_next(nullptr);
-        info::CPlayerSendMsg_GuildJoinApplyResult784_clbk CPlayerSendMsg_GuildJoinApplyResult784_user(nullptr);
-        info::CPlayerSendMsg_GuildJoinOtherInform786_ptr CPlayerSendMsg_GuildJoinOtherInform786_next(nullptr);
-        info::CPlayerSendMsg_GuildJoinOtherInform786_clbk CPlayerSendMsg_GuildJoinOtherInform786_user(nullptr);
-        info::CPlayerSendMsg_GuildManageResult788_ptr CPlayerSendMsg_GuildManageResult788_next(nullptr);
-        info::CPlayerSendMsg_GuildManageResult788_clbk CPlayerSendMsg_GuildManageResult788_user(nullptr);
-        info::CPlayerSendMsg_GuildMasterEffect790_ptr CPlayerSendMsg_GuildMasterEffect790_next(nullptr);
-        info::CPlayerSendMsg_GuildMasterEffect790_clbk CPlayerSendMsg_GuildMasterEffect790_user(nullptr);
-        info::CPlayerSendMsg_GuildPushMoneyResult792_ptr CPlayerSendMsg_GuildPushMoneyResult792_next(nullptr);
-        info::CPlayerSendMsg_GuildPushMoneyResult792_clbk CPlayerSendMsg_GuildPushMoneyResult792_user(nullptr);
-        info::CPlayerSendMsg_GuildRoomEnterResult794_ptr CPlayerSendMsg_GuildRoomEnterResult794_next(nullptr);
-        info::CPlayerSendMsg_GuildRoomEnterResult794_clbk CPlayerSendMsg_GuildRoomEnterResult794_user(nullptr);
-        info::CPlayerSendMsg_GuildRoomOutResult796_ptr CPlayerSendMsg_GuildRoomOutResult796_next(nullptr);
-        info::CPlayerSendMsg_GuildRoomOutResult796_clbk CPlayerSendMsg_GuildRoomOutResult796_user(nullptr);
-        info::CPlayerSendMsg_GuildRoomRentResult798_ptr CPlayerSendMsg_GuildRoomRentResult798_next(nullptr);
-        info::CPlayerSendMsg_GuildRoomRentResult798_clbk CPlayerSendMsg_GuildRoomRentResult798_user(nullptr);
-        info::CPlayerSendMsg_GuildRoomRestTimeResult800_ptr CPlayerSendMsg_GuildRoomRestTimeResult800_next(nullptr);
-        info::CPlayerSendMsg_GuildRoomRestTimeResult800_clbk CPlayerSendMsg_GuildRoomRestTimeResult800_user(nullptr);
-        info::CPlayerSendMsg_GuildSelfLeaveResult802_ptr CPlayerSendMsg_GuildSelfLeaveResult802_next(nullptr);
-        info::CPlayerSendMsg_GuildSelfLeaveResult802_clbk CPlayerSendMsg_GuildSelfLeaveResult802_user(nullptr);
-        info::CPlayerSendMsg_GuildSetHonorResult804_ptr CPlayerSendMsg_GuildSetHonorResult804_next(nullptr);
-        info::CPlayerSendMsg_GuildSetHonorResult804_clbk CPlayerSendMsg_GuildSetHonorResult804_user(nullptr);
-        info::CPlayerSendMsg_HSKQuestActCum806_ptr CPlayerSendMsg_HSKQuestActCum806_next(nullptr);
-        info::CPlayerSendMsg_HSKQuestActCum806_clbk CPlayerSendMsg_HSKQuestActCum806_user(nullptr);
-        info::CPlayerSendMsg_HSKQuestSucc808_ptr CPlayerSendMsg_HSKQuestSucc808_next(nullptr);
-        info::CPlayerSendMsg_HSKQuestSucc808_clbk CPlayerSendMsg_HSKQuestSucc808_user(nullptr);
-        info::CPlayerSendMsg_HonorGuildMark810_ptr CPlayerSendMsg_HonorGuildMark810_next(nullptr);
-        info::CPlayerSendMsg_HonorGuildMark810_clbk CPlayerSendMsg_HonorGuildMark810_user(nullptr);
-        info::CPlayerSendMsg_InformTaxIncome812_ptr CPlayerSendMsg_InformTaxIncome812_next(nullptr);
-        info::CPlayerSendMsg_InformTaxIncome812_clbk CPlayerSendMsg_InformTaxIncome812_user(nullptr);
-        info::CPlayerSendMsg_Init_Action_Point814_ptr CPlayerSendMsg_Init_Action_Point814_next(nullptr);
-        info::CPlayerSendMsg_Init_Action_Point814_clbk CPlayerSendMsg_Init_Action_Point814_user(nullptr);
-        info::CPlayerSendMsg_InsertItemInform816_ptr CPlayerSendMsg_InsertItemInform816_next(nullptr);
-        info::CPlayerSendMsg_InsertItemInform816_clbk CPlayerSendMsg_InsertItemInform816_user(nullptr);
-        info::CPlayerSendMsg_InsertNewQuest818_ptr CPlayerSendMsg_InsertNewQuest818_next(nullptr);
-        info::CPlayerSendMsg_InsertNewQuest818_clbk CPlayerSendMsg_InsertNewQuest818_user(nullptr);
-        info::CPlayerSendMsg_InsertNextQuest820_ptr CPlayerSendMsg_InsertNextQuest820_next(nullptr);
-        info::CPlayerSendMsg_InsertNextQuest820_clbk CPlayerSendMsg_InsertNextQuest820_user(nullptr);
-        info::CPlayerSendMsg_InsertQuestFailure822_ptr CPlayerSendMsg_InsertQuestFailure822_next(nullptr);
-        info::CPlayerSendMsg_InsertQuestFailure822_clbk CPlayerSendMsg_InsertQuestFailure822_user(nullptr);
-        info::CPlayerSendMsg_InsertQuestItemInform824_ptr CPlayerSendMsg_InsertQuestItemInform824_next(nullptr);
-        info::CPlayerSendMsg_InsertQuestItemInform824_clbk CPlayerSendMsg_InsertQuestItemInform824_user(nullptr);
-        info::CPlayerSendMsg_InvenDownloadResult826_ptr CPlayerSendMsg_InvenDownloadResult826_next(nullptr);
-        info::CPlayerSendMsg_InvenDownloadResult826_clbk CPlayerSendMsg_InvenDownloadResult826_user(nullptr);
-        info::CPlayerSendMsg_ItemDowngrade828_ptr CPlayerSendMsg_ItemDowngrade828_next(nullptr);
-        info::CPlayerSendMsg_ItemDowngrade828_clbk CPlayerSendMsg_ItemDowngrade828_user(nullptr);
-        info::CPlayerSendMsg_ItemStorageRefresh830_ptr CPlayerSendMsg_ItemStorageRefresh830_next(nullptr);
-        info::CPlayerSendMsg_ItemStorageRefresh830_clbk CPlayerSendMsg_ItemStorageRefresh830_user(nullptr);
-        info::CPlayerSendMsg_ItemUpgrade832_ptr CPlayerSendMsg_ItemUpgrade832_next(nullptr);
-        info::CPlayerSendMsg_ItemUpgrade832_clbk CPlayerSendMsg_ItemUpgrade832_user(nullptr);
-        info::CPlayerSendMsg_JadeEffectErr834_ptr CPlayerSendMsg_JadeEffectErr834_next(nullptr);
-        info::CPlayerSendMsg_JadeEffectErr834_clbk CPlayerSendMsg_JadeEffectErr834_user(nullptr);
-        info::CPlayerSendMsg_LendItemTimeExpired836_ptr CPlayerSendMsg_LendItemTimeExpired836_next(nullptr);
-        info::CPlayerSendMsg_LendItemTimeExpired836_clbk CPlayerSendMsg_LendItemTimeExpired836_user(nullptr);
-        info::CPlayerSendMsg_Level838_ptr CPlayerSendMsg_Level838_next(nullptr);
-        info::CPlayerSendMsg_Level838_clbk CPlayerSendMsg_Level838_user(nullptr);
-        info::CPlayerSendMsg_LinkBoardDownloadResult840_ptr CPlayerSendMsg_LinkBoardDownloadResult840_next(nullptr);
-        info::CPlayerSendMsg_LinkBoardDownloadResult840_clbk CPlayerSendMsg_LinkBoardDownloadResult840_user(nullptr);
-        info::CPlayerSendMsg_MacroRequest842_ptr CPlayerSendMsg_MacroRequest842_next(nullptr);
-        info::CPlayerSendMsg_MacroRequest842_clbk CPlayerSendMsg_MacroRequest842_user(nullptr);
-        info::CPlayerSendMsg_MadeTrapNumInform844_ptr CPlayerSendMsg_MadeTrapNumInform844_next(nullptr);
-        info::CPlayerSendMsg_MadeTrapNumInform844_clbk CPlayerSendMsg_MadeTrapNumInform844_user(nullptr);
-        info::CPlayerSendMsg_MakeItemCheatSendButtonEnable846_ptr CPlayerSendMsg_MakeItemCheatSendButtonEnable846_next(nullptr);
-        info::CPlayerSendMsg_MakeItemCheatSendButtonEnable846_clbk CPlayerSendMsg_MakeItemCheatSendButtonEnable846_user(nullptr);
-        info::CPlayerSendMsg_MakeItemResult848_ptr CPlayerSendMsg_MakeItemResult848_next(nullptr);
-        info::CPlayerSendMsg_MakeItemResult848_clbk CPlayerSendMsg_MakeItemResult848_user(nullptr);
-        info::CPlayerSendMsg_MapEnvInform850_ptr CPlayerSendMsg_MapEnvInform850_next(nullptr);
-        info::CPlayerSendMsg_MapEnvInform850_clbk CPlayerSendMsg_MapEnvInform850_user(nullptr);
-        info::CPlayerSendMsg_MapOut852_ptr CPlayerSendMsg_MapOut852_next(nullptr);
-        info::CPlayerSendMsg_MapOut852_clbk CPlayerSendMsg_MapOut852_user(nullptr);
-        info::CPlayerSendMsg_MaxHFSP854_ptr CPlayerSendMsg_MaxHFSP854_next(nullptr);
-        info::CPlayerSendMsg_MaxHFSP854_clbk CPlayerSendMsg_MaxHFSP854_user(nullptr);
-        info::CPlayerSendMsg_MaxPvpPointInform856_ptr CPlayerSendMsg_MaxPvpPointInform856_next(nullptr);
-        info::CPlayerSendMsg_MaxPvpPointInform856_clbk CPlayerSendMsg_MaxPvpPointInform856_user(nullptr);
-        info::CPlayerSendMsg_MineCancle858_ptr CPlayerSendMsg_MineCancle858_next(nullptr);
-        info::CPlayerSendMsg_MineCancle858_clbk CPlayerSendMsg_MineCancle858_user(nullptr);
-        info::CPlayerSendMsg_MineCompleteResult860_ptr CPlayerSendMsg_MineCompleteResult860_next(nullptr);
-        info::CPlayerSendMsg_MineCompleteResult860_clbk CPlayerSendMsg_MineCompleteResult860_user(nullptr);
-        info::CPlayerSendMsg_MineStartResult862_ptr CPlayerSendMsg_MineStartResult862_next(nullptr);
-        info::CPlayerSendMsg_MineStartResult862_clbk CPlayerSendMsg_MineStartResult862_user(nullptr);
-        info::CPlayerSendMsg_MonsterAggroData864_ptr CPlayerSendMsg_MonsterAggroData864_next(nullptr);
-        info::CPlayerSendMsg_MonsterAggroData864_clbk CPlayerSendMsg_MonsterAggroData864_user(nullptr);
-        info::CPlayerSendMsg_MoveError866_ptr CPlayerSendMsg_MoveError866_next(nullptr);
-        info::CPlayerSendMsg_MoveError866_clbk CPlayerSendMsg_MoveError866_user(nullptr);
-        info::CPlayerSendMsg_MoveNext868_ptr CPlayerSendMsg_MoveNext868_next(nullptr);
-        info::CPlayerSendMsg_MoveNext868_clbk CPlayerSendMsg_MoveNext868_user(nullptr);
-        info::CPlayerSendMsg_MovePortal870_ptr CPlayerSendMsg_MovePortal870_next(nullptr);
-        info::CPlayerSendMsg_MovePortal870_clbk CPlayerSendMsg_MovePortal870_user(nullptr);
-        info::CPlayerSendMsg_MovePortal872_ptr CPlayerSendMsg_MovePortal872_next(nullptr);
-        info::CPlayerSendMsg_MovePortal872_clbk CPlayerSendMsg_MovePortal872_user(nullptr);
-        info::CPlayerSendMsg_MoveToOwnStoneMapInform874_ptr CPlayerSendMsg_MoveToOwnStoneMapInform874_next(nullptr);
-        info::CPlayerSendMsg_MoveToOwnStoneMapInform874_clbk CPlayerSendMsg_MoveToOwnStoneMapInform874_user(nullptr);
-        info::CPlayerSendMsg_MoveToOwnStoneMapResult876_ptr CPlayerSendMsg_MoveToOwnStoneMapResult876_next(nullptr);
-        info::CPlayerSendMsg_MoveToOwnStoneMapResult876_clbk CPlayerSendMsg_MoveToOwnStoneMapResult876_user(nullptr);
-        info::CPlayerSendMsg_NPCLinkItemCheckResult878_ptr CPlayerSendMsg_NPCLinkItemCheckResult878_next(nullptr);
-        info::CPlayerSendMsg_NPCLinkItemCheckResult878_clbk CPlayerSendMsg_NPCLinkItemCheckResult878_user(nullptr);
-        info::CPlayerSendMsg_NewMovePotionResult880_ptr CPlayerSendMsg_NewMovePotionResult880_next(nullptr);
-        info::CPlayerSendMsg_NewMovePotionResult880_clbk CPlayerSendMsg_NewMovePotionResult880_user(nullptr);
-        info::CPlayerSendMsg_NewViewOther882_ptr CPlayerSendMsg_NewViewOther882_next(nullptr);
-        info::CPlayerSendMsg_NewViewOther882_clbk CPlayerSendMsg_NewViewOther882_user(nullptr);
-        info::CPlayerSendMsg_NotifyEffectForGetItem884_ptr CPlayerSendMsg_NotifyEffectForGetItem884_next(nullptr);
-        info::CPlayerSendMsg_NotifyEffectForGetItem884_clbk CPlayerSendMsg_NotifyEffectForGetItem884_user(nullptr);
-        info::CPlayerSendMsg_NotifyGetExpInfo886_ptr CPlayerSendMsg_NotifyGetExpInfo886_next(nullptr);
-        info::CPlayerSendMsg_NotifyGetExpInfo886_clbk CPlayerSendMsg_NotifyGetExpInfo886_user(nullptr);
-        info::CPlayerSendMsg_Notify_ExceptFromRaceRanking888_ptr CPlayerSendMsg_Notify_ExceptFromRaceRanking888_next(nullptr);
-        info::CPlayerSendMsg_Notify_ExceptFromRaceRanking888_clbk CPlayerSendMsg_Notify_ExceptFromRaceRanking888_user(nullptr);
-        info::CPlayerSendMsg_Notify_Get_Golden_Box890_ptr CPlayerSendMsg_Notify_Get_Golden_Box890_next(nullptr);
-        info::CPlayerSendMsg_Notify_Get_Golden_Box890_clbk CPlayerSendMsg_Notify_Get_Golden_Box890_user(nullptr);
-        info::CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_ptr CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_next(nullptr);
-        info::CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_clbk CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_user(nullptr);
-        info::CPlayerSendMsg_Notify_Me_Get_Golden_Box894_ptr CPlayerSendMsg_Notify_Me_Get_Golden_Box894_next(nullptr);
-        info::CPlayerSendMsg_Notify_Me_Get_Golden_Box894_clbk CPlayerSendMsg_Notify_Me_Get_Golden_Box894_user(nullptr);
-        info::CPlayerSendMsg_NpcQuestHistoryInform896_ptr CPlayerSendMsg_NpcQuestHistoryInform896_next(nullptr);
-        info::CPlayerSendMsg_NpcQuestHistoryInform896_clbk CPlayerSendMsg_NpcQuestHistoryInform896_user(nullptr);
-        info::CPlayerSendMsg_NpcQuestListResult898_ptr CPlayerSendMsg_NpcQuestListResult898_next(nullptr);
-        info::CPlayerSendMsg_NpcQuestListResult898_clbk CPlayerSendMsg_NpcQuestListResult898_user(nullptr);
-        info::CPlayerSendMsg_OffPartResult900_ptr CPlayerSendMsg_OffPartResult900_next(nullptr);
-        info::CPlayerSendMsg_OffPartResult900_clbk CPlayerSendMsg_OffPartResult900_user(nullptr);
-        info::CPlayerSendMsg_OfferSuggestResult902_ptr CPlayerSendMsg_OfferSuggestResult902_next(nullptr);
-        info::CPlayerSendMsg_OfferSuggestResult902_clbk CPlayerSendMsg_OfferSuggestResult902_user(nullptr);
-        info::CPlayerSendMsg_OreCuttingResult904_ptr CPlayerSendMsg_OreCuttingResult904_next(nullptr);
-        info::CPlayerSendMsg_OreCuttingResult904_clbk CPlayerSendMsg_OreCuttingResult904_user(nullptr);
-        info::CPlayerSendMsg_OreIntoBagResult906_ptr CPlayerSendMsg_OreIntoBagResult906_next(nullptr);
-        info::CPlayerSendMsg_OreIntoBagResult906_clbk CPlayerSendMsg_OreIntoBagResult906_user(nullptr);
-        info::CPlayerSendMsg_OreTransferCount908_ptr CPlayerSendMsg_OreTransferCount908_next(nullptr);
-        info::CPlayerSendMsg_OreTransferCount908_clbk CPlayerSendMsg_OreTransferCount908_user(nullptr);
-        info::CPlayerSendMsg_OtherShapeAll910_ptr CPlayerSendMsg_OtherShapeAll910_next(nullptr);
-        info::CPlayerSendMsg_OtherShapeAll910_clbk CPlayerSendMsg_OtherShapeAll910_user(nullptr);
-        info::CPlayerSendMsg_OtherShapeError912_ptr CPlayerSendMsg_OtherShapeError912_next(nullptr);
-        info::CPlayerSendMsg_OtherShapeError912_clbk CPlayerSendMsg_OtherShapeError912_user(nullptr);
-        info::CPlayerSendMsg_OtherShapePart914_ptr CPlayerSendMsg_OtherShapePart914_next(nullptr);
-        info::CPlayerSendMsg_OtherShapePart914_clbk CPlayerSendMsg_OtherShapePart914_user(nullptr);
-        info::CPlayerSendMsg_OtherShapePartEx_CashChange916_ptr CPlayerSendMsg_OtherShapePartEx_CashChange916_next(nullptr);
-        info::CPlayerSendMsg_OtherShapePartEx_CashChange916_clbk CPlayerSendMsg_OtherShapePartEx_CashChange916_user(nullptr);
-        info::CPlayerSendMsg_PartyAlterLootShareResult918_ptr CPlayerSendMsg_PartyAlterLootShareResult918_next(nullptr);
-        info::CPlayerSendMsg_PartyAlterLootShareResult918_clbk CPlayerSendMsg_PartyAlterLootShareResult918_user(nullptr);
-        info::CPlayerSendMsg_PartyDisjointResult920_ptr CPlayerSendMsg_PartyDisjointResult920_next(nullptr);
-        info::CPlayerSendMsg_PartyDisjointResult920_clbk CPlayerSendMsg_PartyDisjointResult920_user(nullptr);
-        info::CPlayerSendMsg_PartyJoinApplicationQuestion922_ptr CPlayerSendMsg_PartyJoinApplicationQuestion922_next(nullptr);
-        info::CPlayerSendMsg_PartyJoinApplicationQuestion922_clbk CPlayerSendMsg_PartyJoinApplicationQuestion922_user(nullptr);
-        info::CPlayerSendMsg_PartyJoinFailLevel924_ptr CPlayerSendMsg_PartyJoinFailLevel924_next(nullptr);
-        info::CPlayerSendMsg_PartyJoinFailLevel924_clbk CPlayerSendMsg_PartyJoinFailLevel924_user(nullptr);
-        info::CPlayerSendMsg_PartyJoinInvitationQuestion926_ptr CPlayerSendMsg_PartyJoinInvitationQuestion926_next(nullptr);
-        info::CPlayerSendMsg_PartyJoinInvitationQuestion926_clbk CPlayerSendMsg_PartyJoinInvitationQuestion926_user(nullptr);
-        info::CPlayerSendMsg_PartyJoinJoinerResult928_ptr CPlayerSendMsg_PartyJoinJoinerResult928_next(nullptr);
-        info::CPlayerSendMsg_PartyJoinJoinerResult928_clbk CPlayerSendMsg_PartyJoinJoinerResult928_user(nullptr);
-        info::CPlayerSendMsg_PartyJoinMemberResult930_ptr CPlayerSendMsg_PartyJoinMemberResult930_next(nullptr);
-        info::CPlayerSendMsg_PartyJoinMemberResult930_clbk CPlayerSendMsg_PartyJoinMemberResult930_user(nullptr);
-        info::CPlayerSendMsg_PartyLeaveCompulsionResult932_ptr CPlayerSendMsg_PartyLeaveCompulsionResult932_next(nullptr);
-        info::CPlayerSendMsg_PartyLeaveCompulsionResult932_clbk CPlayerSendMsg_PartyLeaveCompulsionResult932_user(nullptr);
-        info::CPlayerSendMsg_PartyLeaveSelfResult934_ptr CPlayerSendMsg_PartyLeaveSelfResult934_next(nullptr);
-        info::CPlayerSendMsg_PartyLeaveSelfResult934_clbk CPlayerSendMsg_PartyLeaveSelfResult934_user(nullptr);
-        info::CPlayerSendMsg_PartyLockResult936_ptr CPlayerSendMsg_PartyLockResult936_next(nullptr);
-        info::CPlayerSendMsg_PartyLockResult936_clbk CPlayerSendMsg_PartyLockResult936_user(nullptr);
-        info::CPlayerSendMsg_PartyLootItemInform938_ptr CPlayerSendMsg_PartyLootItemInform938_next(nullptr);
-        info::CPlayerSendMsg_PartyLootItemInform938_clbk CPlayerSendMsg_PartyLootItemInform938_user(nullptr);
-        info::CPlayerSendMsg_PartySuccessResult940_ptr CPlayerSendMsg_PartySuccessResult940_next(nullptr);
-        info::CPlayerSendMsg_PartySuccessResult940_clbk CPlayerSendMsg_PartySuccessResult940_user(nullptr);
-        info::CPlayerSendMsg_PcRoomCharClass942_ptr CPlayerSendMsg_PcRoomCharClass942_next(nullptr);
-        info::CPlayerSendMsg_PcRoomCharClass942_clbk CPlayerSendMsg_PcRoomCharClass942_user(nullptr);
-        info::CPlayerSendMsg_PcRoomError944_ptr CPlayerSendMsg_PcRoomError944_next(nullptr);
-        info::CPlayerSendMsg_PcRoomError944_clbk CPlayerSendMsg_PcRoomError944_user(nullptr);
-        info::CPlayerSendMsg_PostContent946_ptr CPlayerSendMsg_PostContent946_next(nullptr);
-        info::CPlayerSendMsg_PostContent946_clbk CPlayerSendMsg_PostContent946_user(nullptr);
-        info::CPlayerSendMsg_PostDelete948_ptr CPlayerSendMsg_PostDelete948_next(nullptr);
-        info::CPlayerSendMsg_PostDelete948_clbk CPlayerSendMsg_PostDelete948_user(nullptr);
-        info::CPlayerSendMsg_PostDelivery950_ptr CPlayerSendMsg_PostDelivery950_next(nullptr);
-        info::CPlayerSendMsg_PostDelivery950_clbk CPlayerSendMsg_PostDelivery950_user(nullptr);
-        info::CPlayerSendMsg_PostItemGold952_ptr CPlayerSendMsg_PostItemGold952_next(nullptr);
-        info::CPlayerSendMsg_PostItemGold952_clbk CPlayerSendMsg_PostItemGold952_user(nullptr);
-        info::CPlayerSendMsg_PostReturn954_ptr CPlayerSendMsg_PostReturn954_next(nullptr);
-        info::CPlayerSendMsg_PostReturn954_clbk CPlayerSendMsg_PostReturn954_user(nullptr);
-        info::CPlayerSendMsg_PostReturnConfirm956_ptr CPlayerSendMsg_PostReturnConfirm956_next(nullptr);
-        info::CPlayerSendMsg_PostReturnConfirm956_clbk CPlayerSendMsg_PostReturnConfirm956_user(nullptr);
-        info::CPlayerSendMsg_PostSendReply958_ptr CPlayerSendMsg_PostSendReply958_next(nullptr);
-        info::CPlayerSendMsg_PostSendReply958_clbk CPlayerSendMsg_PostSendReply958_user(nullptr);
-        info::CPlayerSendMsg_PotionDelayTime960_ptr CPlayerSendMsg_PotionDelayTime960_next(nullptr);
-        info::CPlayerSendMsg_PotionDelayTime960_clbk CPlayerSendMsg_PotionDelayTime960_user(nullptr);
-        info::CPlayerSendMsg_PotionDivision962_ptr CPlayerSendMsg_PotionDivision962_next(nullptr);
-        info::CPlayerSendMsg_PotionDivision962_clbk CPlayerSendMsg_PotionDivision962_user(nullptr);
-        info::CPlayerSendMsg_PotionSeparation964_ptr CPlayerSendMsg_PotionSeparation964_next(nullptr);
-        info::CPlayerSendMsg_PotionSeparation964_clbk CPlayerSendMsg_PotionSeparation964_user(nullptr);
-        info::CPlayerSendMsg_PremiumCashItemUse966_ptr CPlayerSendMsg_PremiumCashItemUse966_next(nullptr);
-        info::CPlayerSendMsg_PremiumCashItemUse966_clbk CPlayerSendMsg_PremiumCashItemUse966_user(nullptr);
-        info::CPlayerSendMsg_ProposeVoteResult968_ptr CPlayerSendMsg_ProposeVoteResult968_next(nullptr);
-        info::CPlayerSendMsg_ProposeVoteResult968_clbk CPlayerSendMsg_ProposeVoteResult968_user(nullptr);
-        info::CPlayerSendMsg_PvpRankListVersionUp970_ptr CPlayerSendMsg_PvpRankListVersionUp970_next(nullptr);
-        info::CPlayerSendMsg_PvpRankListVersionUp970_clbk CPlayerSendMsg_PvpRankListVersionUp970_user(nullptr);
-        info::CPlayerSendMsg_QuestComplete972_ptr CPlayerSendMsg_QuestComplete972_next(nullptr);
-        info::CPlayerSendMsg_QuestComplete972_clbk CPlayerSendMsg_QuestComplete972_user(nullptr);
-        info::CPlayerSendMsg_QuestDownloadResult974_ptr CPlayerSendMsg_QuestDownloadResult974_next(nullptr);
-        info::CPlayerSendMsg_QuestDownloadResult974_clbk CPlayerSendMsg_QuestDownloadResult974_user(nullptr);
-        info::CPlayerSendMsg_QuestFailure976_ptr CPlayerSendMsg_QuestFailure976_next(nullptr);
-        info::CPlayerSendMsg_QuestFailure976_clbk CPlayerSendMsg_QuestFailure976_user(nullptr);
-        info::CPlayerSendMsg_QuestGiveUpResult978_ptr CPlayerSendMsg_QuestGiveUpResult978_next(nullptr);
-        info::CPlayerSendMsg_QuestGiveUpResult978_clbk CPlayerSendMsg_QuestGiveUpResult978_user(nullptr);
-        info::CPlayerSendMsg_QuestHistoryDownloadResult980_ptr CPlayerSendMsg_QuestHistoryDownloadResult980_next(nullptr);
-        info::CPlayerSendMsg_QuestHistoryDownloadResult980_clbk CPlayerSendMsg_QuestHistoryDownloadResult980_user(nullptr);
-        info::CPlayerSendMsg_QuestProcess982_ptr CPlayerSendMsg_QuestProcess982_next(nullptr);
-        info::CPlayerSendMsg_QuestProcess982_clbk CPlayerSendMsg_QuestProcess982_user(nullptr);
-        info::CPlayerSendMsg_RACE_Greeting984_ptr CPlayerSendMsg_RACE_Greeting984_next(nullptr);
-        info::CPlayerSendMsg_RACE_Greeting984_clbk CPlayerSendMsg_RACE_Greeting984_user(nullptr);
-        info::CPlayerSendMsg_RaceBattlePenelty986_ptr CPlayerSendMsg_RaceBattlePenelty986_next(nullptr);
-        info::CPlayerSendMsg_RaceBattlePenelty986_clbk CPlayerSendMsg_RaceBattlePenelty986_user(nullptr);
-        info::CPlayerSendMsg_RaceBossCryMsg988_ptr CPlayerSendMsg_RaceBossCryMsg988_next(nullptr);
-        info::CPlayerSendMsg_RaceBossCryMsg988_clbk CPlayerSendMsg_RaceBossCryMsg988_user(nullptr);
-        info::CPlayerSendMsg_RaceTopInform990_ptr CPlayerSendMsg_RaceTopInform990_next(nullptr);
-        info::CPlayerSendMsg_RaceTopInform990_clbk CPlayerSendMsg_RaceTopInform990_user(nullptr);
-        info::CPlayerSendMsg_RadarCharSearchResult992_ptr CPlayerSendMsg_RadarCharSearchResult992_next(nullptr);
-        info::CPlayerSendMsg_RadarCharSearchResult992_clbk CPlayerSendMsg_RadarCharSearchResult992_user(nullptr);
-        info::CPlayerSendMsg_RadarDelayTime994_ptr CPlayerSendMsg_RadarDelayTime994_next(nullptr);
-        info::CPlayerSendMsg_RadarDelayTime994_clbk CPlayerSendMsg_RadarDelayTime994_user(nullptr);
-        info::CPlayerSendMsg_ReEnterAsk996_ptr CPlayerSendMsg_ReEnterAsk996_next(nullptr);
-        info::CPlayerSendMsg_ReEnterAsk996_clbk CPlayerSendMsg_ReEnterAsk996_user(nullptr);
-        info::CPlayerSendMsg_ReEnterDarkHoleResult998_ptr CPlayerSendMsg_ReEnterDarkHoleResult998_next(nullptr);
-        info::CPlayerSendMsg_ReEnterDarkHoleResult998_clbk CPlayerSendMsg_ReEnterDarkHoleResult998_user(nullptr);
-        info::CPlayerSendMsg_RealMovePoint1000_ptr CPlayerSendMsg_RealMovePoint1000_next(nullptr);
-        info::CPlayerSendMsg_RealMovePoint1000_clbk CPlayerSendMsg_RealMovePoint1000_user(nullptr);
-        info::CPlayerSendMsg_Recover1002_ptr CPlayerSendMsg_Recover1002_next(nullptr);
-        info::CPlayerSendMsg_Recover1002_clbk CPlayerSendMsg_Recover1002_user(nullptr);
-        info::CPlayerSendMsg_RecvHSKQuest1004_ptr CPlayerSendMsg_RecvHSKQuest1004_next(nullptr);
-        info::CPlayerSendMsg_RecvHSKQuest1004_clbk CPlayerSendMsg_RecvHSKQuest1004_user(nullptr);
-        info::CPlayerSendMsg_RefeshGroupTargetPosition1006_ptr CPlayerSendMsg_RefeshGroupTargetPosition1006_next(nullptr);
-        info::CPlayerSendMsg_RefeshGroupTargetPosition1006_clbk CPlayerSendMsg_RefeshGroupTargetPosition1006_user(nullptr);
-        info::CPlayerSendMsg_RegistBindResult1008_ptr CPlayerSendMsg_RegistBindResult1008_next(nullptr);
-        info::CPlayerSendMsg_RegistBindResult1008_clbk CPlayerSendMsg_RegistBindResult1008_user(nullptr);
-        info::CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_ptr CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_next(nullptr);
-        info::CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_clbk CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_user(nullptr);
-        info::CPlayerSendMsg_ReleaseSiegeModeResult1012_ptr CPlayerSendMsg_ReleaseSiegeModeResult1012_next(nullptr);
-        info::CPlayerSendMsg_ReleaseSiegeModeResult1012_clbk CPlayerSendMsg_ReleaseSiegeModeResult1012_user(nullptr);
-        info::CPlayerSendMsg_RemainOreRate1014_ptr CPlayerSendMsg_RemainOreRate1014_next(nullptr);
-        info::CPlayerSendMsg_RemainOreRate1014_clbk CPlayerSendMsg_RemainOreRate1014_user(nullptr);
-        info::CPlayerSendMsg_RemainTimeInform1016_ptr CPlayerSendMsg_RemainTimeInform1016_next(nullptr);
-        info::CPlayerSendMsg_RemainTimeInform1016_clbk CPlayerSendMsg_RemainTimeInform1016_user(nullptr);
-        info::CPlayerSendMsg_ResDivision1018_ptr CPlayerSendMsg_ResDivision1018_next(nullptr);
-        info::CPlayerSendMsg_ResDivision1018_clbk CPlayerSendMsg_ResDivision1018_user(nullptr);
-        info::CPlayerSendMsg_ResSeparation1020_ptr CPlayerSendMsg_ResSeparation1020_next(nullptr);
-        info::CPlayerSendMsg_ResSeparation1020_clbk CPlayerSendMsg_ResSeparation1020_user(nullptr);
-        info::CPlayerSendMsg_ResultChangeTaxRate1022_ptr CPlayerSendMsg_ResultChangeTaxRate1022_next(nullptr);
-        info::CPlayerSendMsg_ResultChangeTaxRate1022_clbk CPlayerSendMsg_ResultChangeTaxRate1022_user(nullptr);
-        info::CPlayerSendMsg_ResultNpcQuest1024_ptr CPlayerSendMsg_ResultNpcQuest1024_next(nullptr);
-        info::CPlayerSendMsg_ResultNpcQuest1024_clbk CPlayerSendMsg_ResultNpcQuest1024_user(nullptr);
-        info::CPlayerSendMsg_Resurrect1026_ptr CPlayerSendMsg_Resurrect1026_next(nullptr);
-        info::CPlayerSendMsg_Resurrect1026_clbk CPlayerSendMsg_Resurrect1026_user(nullptr);
-        info::CPlayerSendMsg_ResurrectInform1028_ptr CPlayerSendMsg_ResurrectInform1028_next(nullptr);
-        info::CPlayerSendMsg_ResurrectInform1028_clbk CPlayerSendMsg_ResurrectInform1028_user(nullptr);
-        info::CPlayerSendMsg_Revival1030_ptr CPlayerSendMsg_Revival1030_next(nullptr);
-        info::CPlayerSendMsg_Revival1030_clbk CPlayerSendMsg_Revival1030_user(nullptr);
-        info::CPlayerSendMsg_RevivalOfJade1032_ptr CPlayerSendMsg_RevivalOfJade1032_next(nullptr);
-        info::CPlayerSendMsg_RevivalOfJade1032_clbk CPlayerSendMsg_RevivalOfJade1032_user(nullptr);
-        info::CPlayerSendMsg_RewardAddItem1034_ptr CPlayerSendMsg_RewardAddItem1034_next(nullptr);
-        info::CPlayerSendMsg_RewardAddItem1034_clbk CPlayerSendMsg_RewardAddItem1034_user(nullptr);
-        info::CPlayerSendMsg_SFDelayRequest1036_ptr CPlayerSendMsg_SFDelayRequest1036_next(nullptr);
-        info::CPlayerSendMsg_SFDelayRequest1036_clbk CPlayerSendMsg_SFDelayRequest1036_user(nullptr);
-        info::CPlayerSendMsg_SelectClassResult1038_ptr CPlayerSendMsg_SelectClassResult1038_next(nullptr);
-        info::CPlayerSendMsg_SelectClassResult1038_clbk CPlayerSendMsg_SelectClassResult1038_user(nullptr);
-        info::CPlayerSendMsg_SelectQuestReward1040_ptr CPlayerSendMsg_SelectQuestReward1040_next(nullptr);
-        info::CPlayerSendMsg_SelectQuestReward1040_clbk CPlayerSendMsg_SelectQuestReward1040_user(nullptr);
-        info::CPlayerSendMsg_SelectWaitedQuest1042_ptr CPlayerSendMsg_SelectWaitedQuest1042_next(nullptr);
-        info::CPlayerSendMsg_SelectWaitedQuest1042_clbk CPlayerSendMsg_SelectWaitedQuest1042_user(nullptr);
-        info::CPlayerSendMsg_SellItemStoreResult1044_ptr CPlayerSendMsg_SellItemStoreResult1044_next(nullptr);
-        info::CPlayerSendMsg_SellItemStoreResult1044_clbk CPlayerSendMsg_SellItemStoreResult1044_user(nullptr);
-        info::CPlayerSendMsg_SetDPInform1046_ptr CPlayerSendMsg_SetDPInform1046_next(nullptr);
-        info::CPlayerSendMsg_SetDPInform1046_clbk CPlayerSendMsg_SetDPInform1046_user(nullptr);
-        info::CPlayerSendMsg_SetFPInform1048_ptr CPlayerSendMsg_SetFPInform1048_next(nullptr);
-        info::CPlayerSendMsg_SetFPInform1048_clbk CPlayerSendMsg_SetFPInform1048_user(nullptr);
-        info::CPlayerSendMsg_SetGroupMapPoint1050_ptr CPlayerSendMsg_SetGroupMapPoint1050_next(nullptr);
-        info::CPlayerSendMsg_SetGroupMapPoint1050_clbk CPlayerSendMsg_SetGroupMapPoint1050_user(nullptr);
-        info::CPlayerSendMsg_SetGroupTargetObjectResult1052_ptr CPlayerSendMsg_SetGroupTargetObjectResult1052_next(nullptr);
-        info::CPlayerSendMsg_SetGroupTargetObjectResult1052_clbk CPlayerSendMsg_SetGroupTargetObjectResult1052_user(nullptr);
-        info::CPlayerSendMsg_SetHPInform1054_ptr CPlayerSendMsg_SetHPInform1054_next(nullptr);
-        info::CPlayerSendMsg_SetHPInform1054_clbk CPlayerSendMsg_SetHPInform1054_user(nullptr);
-        info::CPlayerSendMsg_SetItemCheckResult1056_ptr CPlayerSendMsg_SetItemCheckResult1056_next(nullptr);
-        info::CPlayerSendMsg_SetItemCheckResult1056_clbk CPlayerSendMsg_SetItemCheckResult1056_user(nullptr);
-        info::CPlayerSendMsg_SetSPInform1058_ptr CPlayerSendMsg_SetSPInform1058_next(nullptr);
-        info::CPlayerSendMsg_SetSPInform1058_clbk CPlayerSendMsg_SetSPInform1058_user(nullptr);
-        info::CPlayerSendMsg_SetTargetObjectResult1060_ptr CPlayerSendMsg_SetTargetObjectResult1060_next(nullptr);
-        info::CPlayerSendMsg_SetTargetObjectResult1060_clbk CPlayerSendMsg_SetTargetObjectResult1060_user(nullptr);
-        info::CPlayerSendMsg_SkillResult1062_ptr CPlayerSendMsg_SkillResult1062_next(nullptr);
-        info::CPlayerSendMsg_SkillResult1062_clbk CPlayerSendMsg_SkillResult1062_user(nullptr);
-        info::CPlayerSendMsg_SpecialDownloadResult1064_ptr CPlayerSendMsg_SpecialDownloadResult1064_next(nullptr);
-        info::CPlayerSendMsg_SpecialDownloadResult1064_clbk CPlayerSendMsg_SpecialDownloadResult1064_user(nullptr);
-        info::CPlayerSendMsg_StartContSF1066_ptr CPlayerSendMsg_StartContSF1066_next(nullptr);
-        info::CPlayerSendMsg_StartContSF1066_clbk CPlayerSendMsg_StartContSF1066_user(nullptr);
-        info::CPlayerSendMsg_StartNewPos1068_ptr CPlayerSendMsg_StartNewPos1068_next(nullptr);
-        info::CPlayerSendMsg_StartNewPos1068_clbk CPlayerSendMsg_StartNewPos1068_user(nullptr);
-        info::CPlayerSendMsg_StartShopping1070_ptr CPlayerSendMsg_StartShopping1070_next(nullptr);
-        info::CPlayerSendMsg_StartShopping1070_clbk CPlayerSendMsg_StartShopping1070_user(nullptr);
-        info::CPlayerSendMsg_StatInform1072_ptr CPlayerSendMsg_StatInform1072_next(nullptr);
-        info::CPlayerSendMsg_StatInform1072_clbk CPlayerSendMsg_StatInform1072_user(nullptr);
-        info::CPlayerSendMsg_StateInform1074_ptr CPlayerSendMsg_StateInform1074_next(nullptr);
-        info::CPlayerSendMsg_StateInform1074_clbk CPlayerSendMsg_StateInform1074_user(nullptr);
-        info::CPlayerSendMsg_Stop1076_ptr CPlayerSendMsg_Stop1076_next(nullptr);
-        info::CPlayerSendMsg_Stop1076_clbk CPlayerSendMsg_Stop1076_user(nullptr);
-        info::CPlayerSendMsg_StoreLimitItemAmountInfo1078_ptr CPlayerSendMsg_StoreLimitItemAmountInfo1078_next(nullptr);
-        info::CPlayerSendMsg_StoreLimitItemAmountInfo1078_clbk CPlayerSendMsg_StoreLimitItemAmountInfo1078_user(nullptr);
-        info::CPlayerSendMsg_StoreListResult1080_ptr CPlayerSendMsg_StoreListResult1080_next(nullptr);
-        info::CPlayerSendMsg_StoreListResult1080_clbk CPlayerSendMsg_StoreListResult1080_user(nullptr);
-        info::CPlayerSendMsg_TLStatusInfo1082_ptr CPlayerSendMsg_TLStatusInfo1082_next(nullptr);
-        info::CPlayerSendMsg_TLStatusInfo1082_clbk CPlayerSendMsg_TLStatusInfo1082_user(nullptr);
-        info::CPlayerSendMsg_TLStatusPenalty1084_ptr CPlayerSendMsg_TLStatusPenalty1084_next(nullptr);
-        info::CPlayerSendMsg_TLStatusPenalty1084_clbk CPlayerSendMsg_TLStatusPenalty1084_user(nullptr);
-        info::CPlayerSendMsg_TakeAddResult1086_ptr CPlayerSendMsg_TakeAddResult1086_next(nullptr);
-        info::CPlayerSendMsg_TakeAddResult1086_clbk CPlayerSendMsg_TakeAddResult1086_user(nullptr);
-        info::CPlayerSendMsg_TakeNewResult1088_ptr CPlayerSendMsg_TakeNewResult1088_next(nullptr);
-        info::CPlayerSendMsg_TakeNewResult1088_clbk CPlayerSendMsg_TakeNewResult1088_user(nullptr);
-        info::CPlayerSendMsg_TalikCrystalExchangeResult1090_ptr CPlayerSendMsg_TalikCrystalExchangeResult1090_next(nullptr);
-        info::CPlayerSendMsg_TalikCrystalExchangeResult1090_clbk CPlayerSendMsg_TalikCrystalExchangeResult1090_user(nullptr);
-        info::CPlayerSendMsg_TargetObjectHPInform1092_ptr CPlayerSendMsg_TargetObjectHPInform1092_next(nullptr);
-        info::CPlayerSendMsg_TargetObjectHPInform1092_clbk CPlayerSendMsg_TargetObjectHPInform1092_user(nullptr);
-        info::CPlayerSendMsg_TeleportError1094_ptr CPlayerSendMsg_TeleportError1094_next(nullptr);
-        info::CPlayerSendMsg_TeleportError1094_clbk CPlayerSendMsg_TeleportError1094_user(nullptr);
-        info::CPlayerSendMsg_TestAttackResult1096_ptr CPlayerSendMsg_TestAttackResult1096_next(nullptr);
-        info::CPlayerSendMsg_TestAttackResult1096_clbk CPlayerSendMsg_TestAttackResult1096_user(nullptr);
-        info::CPlayerSendMsg_ThrowSkillResult1098_ptr CPlayerSendMsg_ThrowSkillResult1098_next(nullptr);
-        info::CPlayerSendMsg_ThrowSkillResult1098_clbk CPlayerSendMsg_ThrowSkillResult1098_user(nullptr);
-        info::CPlayerSendMsg_ThrowStorageResult1100_ptr CPlayerSendMsg_ThrowStorageResult1100_next(nullptr);
-        info::CPlayerSendMsg_ThrowStorageResult1100_clbk CPlayerSendMsg_ThrowStorageResult1100_user(nullptr);
-        info::CPlayerSendMsg_ThrowUnitResult1102_ptr CPlayerSendMsg_ThrowUnitResult1102_next(nullptr);
-        info::CPlayerSendMsg_ThrowUnitResult1102_clbk CPlayerSendMsg_ThrowUnitResult1102_user(nullptr);
-        info::CPlayerSendMsg_TowerContinue1104_ptr CPlayerSendMsg_TowerContinue1104_next(nullptr);
-        info::CPlayerSendMsg_TowerContinue1104_clbk CPlayerSendMsg_TowerContinue1104_user(nullptr);
-        info::CPlayerSendMsg_TransShipRenewTicketResult1106_ptr CPlayerSendMsg_TransShipRenewTicketResult1106_next(nullptr);
-        info::CPlayerSendMsg_TransShipRenewTicketResult1106_clbk CPlayerSendMsg_TransShipRenewTicketResult1106_user(nullptr);
-        info::CPlayerSendMsg_TransformSiegeModeResult1108_ptr CPlayerSendMsg_TransformSiegeModeResult1108_next(nullptr);
-        info::CPlayerSendMsg_TransformSiegeModeResult1108_clbk CPlayerSendMsg_TransformSiegeModeResult1108_user(nullptr);
-        info::CPlayerSendMsg_TrunkChangPasswdResult1110_ptr CPlayerSendMsg_TrunkChangPasswdResult1110_next(nullptr);
-        info::CPlayerSendMsg_TrunkChangPasswdResult1110_clbk CPlayerSendMsg_TrunkChangPasswdResult1110_user(nullptr);
-        info::CPlayerSendMsg_TrunkDownloadResult1112_ptr CPlayerSendMsg_TrunkDownloadResult1112_next(nullptr);
-        info::CPlayerSendMsg_TrunkDownloadResult1112_clbk CPlayerSendMsg_TrunkDownloadResult1112_user(nullptr);
-        info::CPlayerSendMsg_TrunkEstResult1114_ptr CPlayerSendMsg_TrunkEstResult1114_next(nullptr);
-        info::CPlayerSendMsg_TrunkEstResult1114_clbk CPlayerSendMsg_TrunkEstResult1114_user(nullptr);
-        info::CPlayerSendMsg_TrunkExtendResult1116_ptr CPlayerSendMsg_TrunkExtendResult1116_next(nullptr);
-        info::CPlayerSendMsg_TrunkExtendResult1116_clbk CPlayerSendMsg_TrunkExtendResult1116_user(nullptr);
-        info::CPlayerSendMsg_TrunkHintAnswerResult1118_ptr CPlayerSendMsg_TrunkHintAnswerResult1118_next(nullptr);
-        info::CPlayerSendMsg_TrunkHintAnswerResult1118_clbk CPlayerSendMsg_TrunkHintAnswerResult1118_user(nullptr);
-        info::CPlayerSendMsg_TrunkIoMoneyResult1120_ptr CPlayerSendMsg_TrunkIoMoneyResult1120_next(nullptr);
-        info::CPlayerSendMsg_TrunkIoMoneyResult1120_clbk CPlayerSendMsg_TrunkIoMoneyResult1120_user(nullptr);
-        info::CPlayerSendMsg_TrunkIoResult1122_ptr CPlayerSendMsg_TrunkIoResult1122_next(nullptr);
-        info::CPlayerSendMsg_TrunkIoResult1122_clbk CPlayerSendMsg_TrunkIoResult1122_user(nullptr);
-        info::CPlayerSendMsg_TrunkPotionDivision1124_ptr CPlayerSendMsg_TrunkPotionDivision1124_next(nullptr);
-        info::CPlayerSendMsg_TrunkPotionDivision1124_clbk CPlayerSendMsg_TrunkPotionDivision1124_user(nullptr);
-        info::CPlayerSendMsg_TrunkPwHintIndexResult1126_ptr CPlayerSendMsg_TrunkPwHintIndexResult1126_next(nullptr);
-        info::CPlayerSendMsg_TrunkPwHintIndexResult1126_clbk CPlayerSendMsg_TrunkPwHintIndexResult1126_user(nullptr);
-        info::CPlayerSendMsg_TrunkResDivision1128_ptr CPlayerSendMsg_TrunkResDivision1128_next(nullptr);
-        info::CPlayerSendMsg_TrunkResDivision1128_clbk CPlayerSendMsg_TrunkResDivision1128_user(nullptr);
-        info::CPlayerSendMsg_UILock_FindPW_Result1130_ptr CPlayerSendMsg_UILock_FindPW_Result1130_next(nullptr);
-        info::CPlayerSendMsg_UILock_FindPW_Result1130_clbk CPlayerSendMsg_UILock_FindPW_Result1130_user(nullptr);
-        info::CPlayerSendMsg_UILock_Init_Request_ToAccount1132_ptr CPlayerSendMsg_UILock_Init_Request_ToAccount1132_next(nullptr);
-        info::CPlayerSendMsg_UILock_Init_Request_ToAccount1132_clbk CPlayerSendMsg_UILock_Init_Request_ToAccount1132_user(nullptr);
-        info::CPlayerSendMsg_UILock_Init_Result1134_ptr CPlayerSendMsg_UILock_Init_Result1134_next(nullptr);
-        info::CPlayerSendMsg_UILock_Init_Result1134_clbk CPlayerSendMsg_UILock_Init_Result1134_user(nullptr);
-        info::CPlayerSendMsg_UILock_Login_Result1136_ptr CPlayerSendMsg_UILock_Login_Result1136_next(nullptr);
-        info::CPlayerSendMsg_UILock_Login_Result1136_clbk CPlayerSendMsg_UILock_Login_Result1136_user(nullptr);
-        info::CPlayerSendMsg_UILock_Update_Request_ToAccount1138_ptr CPlayerSendMsg_UILock_Update_Request_ToAccount1138_next(nullptr);
-        info::CPlayerSendMsg_UILock_Update_Request_ToAccount1138_clbk CPlayerSendMsg_UILock_Update_Request_ToAccount1138_user(nullptr);
-        info::CPlayerSendMsg_UILock_Update_Result1140_ptr CPlayerSendMsg_UILock_Update_Result1140_next(nullptr);
-        info::CPlayerSendMsg_UILock_Update_Result1140_clbk CPlayerSendMsg_UILock_Update_Result1140_user(nullptr);
-        info::CPlayerSendMsg_UnitAlterFeeInform1142_ptr CPlayerSendMsg_UnitAlterFeeInform1142_next(nullptr);
-        info::CPlayerSendMsg_UnitAlterFeeInform1142_clbk CPlayerSendMsg_UnitAlterFeeInform1142_user(nullptr);
-        info::CPlayerSendMsg_UnitBulletFillResult1144_ptr CPlayerSendMsg_UnitBulletFillResult1144_next(nullptr);
-        info::CPlayerSendMsg_UnitBulletFillResult1144_clbk CPlayerSendMsg_UnitBulletFillResult1144_user(nullptr);
-        info::CPlayerSendMsg_UnitBulletReplaceResult1146_ptr CPlayerSendMsg_UnitBulletReplaceResult1146_next(nullptr);
-        info::CPlayerSendMsg_UnitBulletReplaceResult1146_clbk CPlayerSendMsg_UnitBulletReplaceResult1146_user(nullptr);
-        info::CPlayerSendMsg_UnitDeliveryResult1148_ptr CPlayerSendMsg_UnitDeliveryResult1148_next(nullptr);
-        info::CPlayerSendMsg_UnitDeliveryResult1148_clbk CPlayerSendMsg_UnitDeliveryResult1148_user(nullptr);
-        info::CPlayerSendMsg_UnitDestroy1150_ptr CPlayerSendMsg_UnitDestroy1150_next(nullptr);
-        info::CPlayerSendMsg_UnitDestroy1150_clbk CPlayerSendMsg_UnitDestroy1150_user(nullptr);
-        info::CPlayerSendMsg_UnitForceReturnInform1152_ptr CPlayerSendMsg_UnitForceReturnInform1152_next(nullptr);
-        info::CPlayerSendMsg_UnitForceReturnInform1152_clbk CPlayerSendMsg_UnitForceReturnInform1152_user(nullptr);
-        info::CPlayerSendMsg_UnitFrameBuyResult1154_ptr CPlayerSendMsg_UnitFrameBuyResult1154_next(nullptr);
-        info::CPlayerSendMsg_UnitFrameBuyResult1154_clbk CPlayerSendMsg_UnitFrameBuyResult1154_user(nullptr);
-        info::CPlayerSendMsg_UnitFrameRepairResult1156_ptr CPlayerSendMsg_UnitFrameRepairResult1156_next(nullptr);
-        info::CPlayerSendMsg_UnitFrameRepairResult1156_clbk CPlayerSendMsg_UnitFrameRepairResult1156_user(nullptr);
-        info::CPlayerSendMsg_UnitLeaveResult1158_ptr CPlayerSendMsg_UnitLeaveResult1158_next(nullptr);
-        info::CPlayerSendMsg_UnitLeaveResult1158_clbk CPlayerSendMsg_UnitLeaveResult1158_user(nullptr);
-        info::CPlayerSendMsg_UnitPackFillResult1160_ptr CPlayerSendMsg_UnitPackFillResult1160_next(nullptr);
-        info::CPlayerSendMsg_UnitPackFillResult1160_clbk CPlayerSendMsg_UnitPackFillResult1160_user(nullptr);
-        info::CPlayerSendMsg_UnitPartTuningResult1162_ptr CPlayerSendMsg_UnitPartTuningResult1162_next(nullptr);
-        info::CPlayerSendMsg_UnitPartTuningResult1162_clbk CPlayerSendMsg_UnitPartTuningResult1162_user(nullptr);
-        info::CPlayerSendMsg_UnitReturnResult1164_ptr CPlayerSendMsg_UnitReturnResult1164_next(nullptr);
-        info::CPlayerSendMsg_UnitReturnResult1164_clbk CPlayerSendMsg_UnitReturnResult1164_user(nullptr);
-        info::CPlayerSendMsg_UnitRideChange1166_ptr CPlayerSendMsg_UnitRideChange1166_next(nullptr);
-        info::CPlayerSendMsg_UnitRideChange1166_clbk CPlayerSendMsg_UnitRideChange1166_user(nullptr);
-        info::CPlayerSendMsg_UnitSellResult1168_ptr CPlayerSendMsg_UnitSellResult1168_next(nullptr);
-        info::CPlayerSendMsg_UnitSellResult1168_clbk CPlayerSendMsg_UnitSellResult1168_user(nullptr);
-        info::CPlayerSendMsg_UnitTakeResult1170_ptr CPlayerSendMsg_UnitTakeResult1170_next(nullptr);
-        info::CPlayerSendMsg_UnitTakeResult1170_clbk CPlayerSendMsg_UnitTakeResult1170_user(nullptr);
-        info::CPlayerSendMsg_UpdateTLStatusInfo1172_ptr CPlayerSendMsg_UpdateTLStatusInfo1172_next(nullptr);
-        info::CPlayerSendMsg_UpdateTLStatusInfo1172_clbk CPlayerSendMsg_UpdateTLStatusInfo1172_user(nullptr);
-        info::CPlayerSendMsg_UsPotionResultOther1174_ptr CPlayerSendMsg_UsPotionResultOther1174_next(nullptr);
-        info::CPlayerSendMsg_UsPotionResultOther1174_clbk CPlayerSendMsg_UsPotionResultOther1174_user(nullptr);
-        info::CPlayerSendMsg_UseJadeResult1176_ptr CPlayerSendMsg_UseJadeResult1176_next(nullptr);
-        info::CPlayerSendMsg_UseJadeResult1176_clbk CPlayerSendMsg_UseJadeResult1176_user(nullptr);
-        info::CPlayerSendMsg_UsePotionResult1178_ptr CPlayerSendMsg_UsePotionResult1178_next(nullptr);
-        info::CPlayerSendMsg_UsePotionResult1178_clbk CPlayerSendMsg_UsePotionResult1178_user(nullptr);
-        info::CPlayerSendMsg_UseRadarResult1180_ptr CPlayerSendMsg_UseRadarResult1180_next(nullptr);
-        info::CPlayerSendMsg_UseRadarResult1180_clbk CPlayerSendMsg_UseRadarResult1180_user(nullptr);
-        info::CPlayerSendMsg_VoteResult1182_ptr CPlayerSendMsg_VoteResult1182_next(nullptr);
-        info::CPlayerSendMsg_VoteResult1182_clbk CPlayerSendMsg_VoteResult1182_user(nullptr);
-        info::CPlayerSendTargetMonsterSFContInfo1184_ptr CPlayerSendTargetMonsterSFContInfo1184_next(nullptr);
-        info::CPlayerSendTargetMonsterSFContInfo1184_clbk CPlayerSendTargetMonsterSFContInfo1184_user(nullptr);
-        info::CPlayerSendTargetPlayerDamageContInfo1186_ptr CPlayerSendTargetPlayerDamageContInfo1186_next(nullptr);
-        info::CPlayerSendTargetPlayerDamageContInfo1186_clbk CPlayerSendTargetPlayerDamageContInfo1186_user(nullptr);
-        info::CPlayerSenseState1188_ptr CPlayerSenseState1188_next(nullptr);
-        info::CPlayerSenseState1188_clbk CPlayerSenseState1188_user(nullptr);
-        info::CPlayerSetAttackPart1190_ptr CPlayerSetAttackPart1190_next(nullptr);
-        info::CPlayerSetAttackPart1190_clbk CPlayerSetAttackPart1190_user(nullptr);
-        info::CPlayerSetBattleMode1192_ptr CPlayerSetBattleMode1192_next(nullptr);
-        info::CPlayerSetBattleMode1192_clbk CPlayerSetBattleMode1192_user(nullptr);
-        info::CPlayerSetBindDummy1194_ptr CPlayerSetBindDummy1194_next(nullptr);
-        info::CPlayerSetBindDummy1194_clbk CPlayerSetBindDummy1194_user(nullptr);
-        info::CPlayerSetBindMapData1196_ptr CPlayerSetBindMapData1196_next(nullptr);
-        info::CPlayerSetBindMapData1196_clbk CPlayerSetBindMapData1196_user(nullptr);
-        info::CPlayerSetBindPosition1198_ptr CPlayerSetBindPosition1198_next(nullptr);
-        info::CPlayerSetBindPosition1198_clbk CPlayerSetBindPosition1198_user(nullptr);
-        info::CPlayerSetCashAmount1200_ptr CPlayerSetCashAmount1200_next(nullptr);
-        info::CPlayerSetCashAmount1200_clbk CPlayerSetCashAmount1200_user(nullptr);
-        info::CPlayerSetCntEnable1202_ptr CPlayerSetCntEnable1202_next(nullptr);
-        info::CPlayerSetCntEnable1202_clbk CPlayerSetCntEnable1202_user(nullptr);
-        info::CPlayerSetDP1204_ptr CPlayerSetDP1204_next(nullptr);
-        info::CPlayerSetDP1204_clbk CPlayerSetDP1204_user(nullptr);
-        info::CPlayerSetDamage1206_ptr CPlayerSetDamage1206_next(nullptr);
-        info::CPlayerSetDamage1206_clbk CPlayerSetDamage1206_user(nullptr);
-        info::CPlayerSetEffectEquipCode1208_ptr CPlayerSetEffectEquipCode1208_next(nullptr);
-        info::CPlayerSetEffectEquipCode1208_clbk CPlayerSetEffectEquipCode1208_user(nullptr);
-        info::CPlayerSetEquipEffect1210_ptr CPlayerSetEquipEffect1210_next(nullptr);
-        info::CPlayerSetEquipEffect1210_clbk CPlayerSetEquipEffect1210_user(nullptr);
-        info::CPlayerSetEquipJadeEffect1212_ptr CPlayerSetEquipJadeEffect1212_next(nullptr);
-        info::CPlayerSetEquipJadeEffect1212_clbk CPlayerSetEquipJadeEffect1212_user(nullptr);
-        info::CPlayerSetFP1214_ptr CPlayerSetFP1214_next(nullptr);
-        info::CPlayerSetFP1214_clbk CPlayerSetFP1214_user(nullptr);
-        info::CPlayerSetGauge1216_ptr CPlayerSetGauge1216_next(nullptr);
-        info::CPlayerSetGauge1216_clbk CPlayerSetGauge1216_user(nullptr);
-        info::CPlayerSetGrade1218_ptr CPlayerSetGrade1218_next(nullptr);
-        info::CPlayerSetGrade1218_clbk CPlayerSetGrade1218_user(nullptr);
-        info::CPlayerSetHP1220_ptr CPlayerSetHP1220_next(nullptr);
-        info::CPlayerSetHP1220_clbk CPlayerSetHP1220_user(nullptr);
-        info::CPlayerSetHaveEffect1222_ptr CPlayerSetHaveEffect1222_next(nullptr);
-        info::CPlayerSetHaveEffect1222_clbk CPlayerSetHaveEffect1222_user(nullptr);
-        info::CPlayerSetHaveEffectUseTime1224_ptr CPlayerSetHaveEffectUseTime1224_next(nullptr);
-        info::CPlayerSetHaveEffectUseTime1224_clbk CPlayerSetHaveEffectUseTime1224_user(nullptr);
-        info::CPlayerSetLastAttBuff1226_ptr CPlayerSetLastAttBuff1226_next(nullptr);
-        info::CPlayerSetLastAttBuff1226_clbk CPlayerSetLastAttBuff1226_user(nullptr);
-        info::CPlayerSetLevel1228_ptr CPlayerSetLevel1228_next(nullptr);
-        info::CPlayerSetLevel1228_clbk CPlayerSetLevel1228_user(nullptr);
-        info::CPlayerSetLevelD1230_ptr CPlayerSetLevelD1230_next(nullptr);
-        info::CPlayerSetLevelD1230_clbk CPlayerSetLevelD1230_user(nullptr);
-        info::CPlayerSetMstHaveEffect1232_ptr CPlayerSetMstHaveEffect1232_next(nullptr);
-        info::CPlayerSetMstHaveEffect1232_clbk CPlayerSetMstHaveEffect1232_user(nullptr);
-        info::CPlayerSetMstPt1234_ptr CPlayerSetMstPt1234_next(nullptr);
-        info::CPlayerSetMstPt1234_clbk CPlayerSetMstPt1234_user(nullptr);
-        info::CPlayerSetPotionActDelay1236_ptr CPlayerSetPotionActDelay1236_next(nullptr);
-        info::CPlayerSetPotionActDelay1236_clbk CPlayerSetPotionActDelay1236_user(nullptr);
-        info::CPlayerSetPvpPointLeak1238_ptr CPlayerSetPvpPointLeak1238_next(nullptr);
-        info::CPlayerSetPvpPointLeak1238_clbk CPlayerSetPvpPointLeak1238_user(nullptr);
-        info::CPlayerSetRankRate1240_ptr CPlayerSetRankRate1240_next(nullptr);
-        info::CPlayerSetRankRate1240_clbk CPlayerSetRankRate1240_user(nullptr);
-        info::CPlayerSetSP1242_ptr CPlayerSetSP1242_next(nullptr);
-        info::CPlayerSetSP1242_clbk CPlayerSetSP1242_user(nullptr);
-        info::CPlayerSetShapeAllBuffer1244_ptr CPlayerSetShapeAllBuffer1244_next(nullptr);
-        info::CPlayerSetShapeAllBuffer1244_clbk CPlayerSetShapeAllBuffer1244_user(nullptr);
-        info::CPlayerSetSiege1246_ptr CPlayerSetSiege1246_next(nullptr);
-        info::CPlayerSetSiege1246_clbk CPlayerSetSiege1246_user(nullptr);
-        info::CPlayerSetStateFlag1248_ptr CPlayerSetStateFlag1248_next(nullptr);
-        info::CPlayerSetStateFlag1248_clbk CPlayerSetStateFlag1248_user(nullptr);
-        info::CPlayerSetStaticMember1250_ptr CPlayerSetStaticMember1250_next(nullptr);
-        info::CPlayerSetStaticMember1250_clbk CPlayerSetStaticMember1250_user(nullptr);
-        info::CPlayerSetTarPos1252_ptr CPlayerSetTarPos1252_next(nullptr);
-        info::CPlayerSetTarPos1252_clbk CPlayerSetTarPos1252_user(nullptr);
-        info::CPlayerSetUseReleaseRaceBuffPotion1254_ptr CPlayerSetUseReleaseRaceBuffPotion1254_next(nullptr);
-        info::CPlayerSetUseReleaseRaceBuffPotion1254_clbk CPlayerSetUseReleaseRaceBuffPotion1254_user(nullptr);
-        info::CPlayerSetVote1256_ptr CPlayerSetVote1256_next(nullptr);
-        info::CPlayerSetVote1256_clbk CPlayerSetVote1256_user(nullptr);
-        info::CPlayerSortPost1258_ptr CPlayerSortPost1258_next(nullptr);
-        info::CPlayerSortPost1258_clbk CPlayerSortPost1258_user(nullptr);
-        info::CPlayerSubActPoint1260_ptr CPlayerSubActPoint1260_next(nullptr);
-        info::CPlayerSubActPoint1260_clbk CPlayerSubActPoint1260_user(nullptr);
-        info::CPlayerSubDalant1262_ptr CPlayerSubDalant1262_next(nullptr);
-        info::CPlayerSubDalant1262_clbk CPlayerSubDalant1262_user(nullptr);
-        info::CPlayerSubGold1264_ptr CPlayerSubGold1264_next(nullptr);
-        info::CPlayerSubGold1264_clbk CPlayerSubGold1264_user(nullptr);
-        info::CPlayerSubPoint1266_ptr CPlayerSubPoint1266_next(nullptr);
-        info::CPlayerSubPoint1266_clbk CPlayerSubPoint1266_user(nullptr);
-        info::CPlayerSumMinuteBetween1268_ptr CPlayerSumMinuteBetween1268_next(nullptr);
-        info::CPlayerSumMinuteBetween1268_clbk CPlayerSumMinuteBetween1268_user(nullptr);
-        info::CPlayerSumMinuteOne1270_ptr CPlayerSumMinuteOne1270_next(nullptr);
-        info::CPlayerSumMinuteOne1270_clbk CPlayerSumMinuteOne1270_user(nullptr);
-        info::CPlayerTakeGravityStone1272_ptr CPlayerTakeGravityStone1272_next(nullptr);
-        info::CPlayerTakeGravityStone1272_clbk CPlayerTakeGravityStone1272_user(nullptr);
-        info::CPlayerUpdateAuraSFCont1274_ptr CPlayerUpdateAuraSFCont1274_next(nullptr);
-        info::CPlayerUpdateAuraSFCont1274_clbk CPlayerUpdateAuraSFCont1274_user(nullptr);
-        info::CPlayerUpdateChaosModeState1276_ptr CPlayerUpdateChaosModeState1276_next(nullptr);
-        info::CPlayerUpdateChaosModeState1276_clbk CPlayerUpdateChaosModeState1276_user(nullptr);
-        info::CPlayerUpdateDelPost1278_ptr CPlayerUpdateDelPost1278_next(nullptr);
-        info::CPlayerUpdateDelPost1278_clbk CPlayerUpdateDelPost1278_user(nullptr);
-        info::CPlayerUpdateLastCriTicket1280_ptr CPlayerUpdateLastCriTicket1280_next(nullptr);
-        info::CPlayerUpdateLastCriTicket1280_clbk CPlayerUpdateLastCriTicket1280_user(nullptr);
-        info::CPlayerUpdateLastMetalTicket1282_ptr CPlayerUpdateLastMetalTicket1282_next(nullptr);
-        info::CPlayerUpdateLastMetalTicket1282_clbk CPlayerUpdateLastMetalTicket1282_user(nullptr);
-        info::CPlayerUpdatePost1284_ptr CPlayerUpdatePost1284_next(nullptr);
-        info::CPlayerUpdatePost1284_clbk CPlayerUpdatePost1284_user(nullptr);
-        info::CPlayerUpdatePostAddLog1286_ptr CPlayerUpdatePostAddLog1286_next(nullptr);
-        info::CPlayerUpdatePostAddLog1286_clbk CPlayerUpdatePostAddLog1286_user(nullptr);
-        info::CPlayerUpdatePvpOrderView1288_ptr CPlayerUpdatePvpOrderView1288_next(nullptr);
-        info::CPlayerUpdatePvpOrderView1288_clbk CPlayerUpdatePvpOrderView1288_user(nullptr);
-        info::CPlayerUpdatePvpPointLimiter1290_ptr CPlayerUpdatePvpPointLimiter1290_next(nullptr);
-        info::CPlayerUpdatePvpPointLimiter1290_clbk CPlayerUpdatePvpPointLimiter1290_user(nullptr);
-        info::CPlayerUpdateReturnPost1292_ptr CPlayerUpdateReturnPost1292_next(nullptr);
-        info::CPlayerUpdateReturnPost1292_clbk CPlayerUpdateReturnPost1292_user(nullptr);
-        info::CPlayerUpdateVisualVer1294_ptr CPlayerUpdateVisualVer1294_next(nullptr);
-        info::CPlayerUpdateVisualVer1294_clbk CPlayerUpdateVisualVer1294_user(nullptr);
-        info::CPlayerUpdate_GoldPoint1296_ptr CPlayerUpdate_GoldPoint1296_next(nullptr);
-        info::CPlayerUpdate_GoldPoint1296_clbk CPlayerUpdate_GoldPoint1296_user(nullptr);
-        info::CPlayerUpdatedMasteryWriteHistory1298_ptr CPlayerUpdatedMasteryWriteHistory1298_next(nullptr);
-        info::CPlayerUpdatedMasteryWriteHistory1298_clbk CPlayerUpdatedMasteryWriteHistory1298_user(nullptr);
-        info::CPlayerWPActiveForce1300_ptr CPlayerWPActiveForce1300_next(nullptr);
-        info::CPlayerWPActiveForce1300_clbk CPlayerWPActiveForce1300_user(nullptr);
-        info::CPlayerWPActiveSkill1302_ptr CPlayerWPActiveSkill1302_next(nullptr);
-        info::CPlayerWPActiveSkill1302_clbk CPlayerWPActiveSkill1302_user(nullptr);
-        info::CPlayerWeaponSFActive1304_ptr CPlayerWeaponSFActive1304_next(nullptr);
-        info::CPlayerWeaponSFActive1304_clbk CPlayerWeaponSFActive1304_user(nullptr);
-        info::CPlayer_AnimusReturn1306_ptr CPlayer_AnimusReturn1306_next(nullptr);
-        info::CPlayer_AnimusReturn1306_clbk CPlayer_AnimusReturn1306_user(nullptr);
-        info::CPlayer_CalcMaxFP1308_ptr CPlayer_CalcMaxFP1308_next(nullptr);
-        info::CPlayer_CalcMaxFP1308_clbk CPlayer_CalcMaxFP1308_user(nullptr);
-        info::CPlayer_CalcMaxHP1310_ptr CPlayer_CalcMaxHP1310_next(nullptr);
-        info::CPlayer_CalcMaxHP1310_clbk CPlayer_CalcMaxHP1310_user(nullptr);
-        info::CPlayer_CalcMaxSP1312_ptr CPlayer_CalcMaxSP1312_next(nullptr);
-        info::CPlayer_CalcMaxSP1312_clbk CPlayer_CalcMaxSP1312_user(nullptr);
-        info::CPlayer_CheckForcePullUnit1314_ptr CPlayer_CheckForcePullUnit1314_next(nullptr);
-        info::CPlayer_CheckForcePullUnit1314_clbk CPlayer_CheckForcePullUnit1314_user(nullptr);
-        info::CPlayer_DeleteUnitKey1316_ptr CPlayer_DeleteUnitKey1316_next(nullptr);
-        info::CPlayer_DeleteUnitKey1316_clbk CPlayer_DeleteUnitKey1316_user(nullptr);
-        info::CPlayer_GetItemEffect1318_ptr CPlayer_GetItemEffect1318_next(nullptr);
-        info::CPlayer_GetItemEffect1318_clbk CPlayer_GetItemEffect1318_user(nullptr);
-        info::CPlayer_GetPartyMemberInCircle1320_ptr CPlayer_GetPartyMemberInCircle1320_next(nullptr);
-        info::CPlayer_GetPartyMemberInCircle1320_clbk CPlayer_GetPartyMemberInCircle1320_user(nullptr);
-        info::CPlayer_LockUnitKey1322_ptr CPlayer_LockUnitKey1322_next(nullptr);
-        info::CPlayer_LockUnitKey1322_clbk CPlayer_LockUnitKey1322_user(nullptr);
-        info::CPlayer_Reward_Quest1324_ptr CPlayer_Reward_Quest1324_next(nullptr);
-        info::CPlayer_Reward_Quest1324_clbk CPlayer_Reward_Quest1324_user(nullptr);
-        info::CPlayer_TowerAllReturn1326_ptr CPlayer_TowerAllReturn1326_next(nullptr);
-        info::CPlayer_TowerAllReturn1326_clbk CPlayer_TowerAllReturn1326_user(nullptr);
-        info::CPlayer_TowerDestroy1328_ptr CPlayer_TowerDestroy1328_next(nullptr);
-        info::CPlayer_TowerDestroy1328_clbk CPlayer_TowerDestroy1328_user(nullptr);
-        info::CPlayer_TowerReturn1330_ptr CPlayer_TowerReturn1330_next(nullptr);
-        info::CPlayer_TowerReturn1330_clbk CPlayer_TowerReturn1330_user(nullptr);
-        info::CPlayer_TrapDestroy1332_ptr CPlayer_TrapDestroy1332_next(nullptr);
-        info::CPlayer_TrapDestroy1332_clbk CPlayer_TrapDestroy1332_user(nullptr);
-        info::CPlayer_TrapReturn1334_ptr CPlayer_TrapReturn1334_next(nullptr);
-        info::CPlayer_TrapReturn1334_clbk CPlayer_TrapReturn1334_user(nullptr);
-        info::CPlayer_UnitDestroy1336_ptr CPlayer_UnitDestroy1336_next(nullptr);
-        info::CPlayer_UnitDestroy1336_clbk CPlayer_UnitDestroy1336_user(nullptr);
-        info::CPlayer_UpdateUnitDebt1338_ptr CPlayer_UpdateUnitDebt1338_next(nullptr);
-        info::CPlayer_UpdateUnitDebt1338_clbk CPlayer_UpdateUnitDebt1338_user(nullptr);
-        info::CPlayer_check_dst_param_after_attack1340_ptr CPlayer_check_dst_param_after_attack1340_next(nullptr);
-        info::CPlayer_check_dst_param_after_attack1340_clbk CPlayer_check_dst_param_after_attack1340_user(nullptr);
-        info::CPlayer_check_embel_part1342_ptr CPlayer_check_embel_part1342_next(nullptr);
-        info::CPlayer_check_embel_part1342_clbk CPlayer_check_embel_part1342_user(nullptr);
-        info::CPlayer_check_equip_part1344_ptr CPlayer_check_equip_part1344_next(nullptr);
-        info::CPlayer_check_equip_part1344_clbk CPlayer_check_equip_part1344_user(nullptr);
-        info::CPlayer_check_equipmastery_lim1346_ptr CPlayer_check_equipmastery_lim1346_next(nullptr);
-        info::CPlayer_check_equipmastery_lim1346_clbk CPlayer_check_equipmastery_lim1346_user(nullptr);
-        info::CPlayer_check_exp_after_attack1348_ptr CPlayer_check_exp_after_attack1348_next(nullptr);
-        info::CPlayer_check_exp_after_attack1348_clbk CPlayer_check_exp_after_attack1348_user(nullptr);
-        info::CPlayer_check_guild_target_object1350_ptr CPlayer_check_guild_target_object1350_next(nullptr);
-        info::CPlayer_check_guild_target_object1350_clbk CPlayer_check_guild_target_object1350_user(nullptr);
-        info::CPlayer_check_hp_send_party1352_ptr CPlayer_check_hp_send_party1352_next(nullptr);
-        info::CPlayer_check_hp_send_party1352_clbk CPlayer_check_hp_send_party1352_user(nullptr);
-        info::CPlayer_check_mastery_cum_lim1354_ptr CPlayer_check_mastery_cum_lim1354_next(nullptr);
-        info::CPlayer_check_mastery_cum_lim1354_clbk CPlayer_check_mastery_cum_lim1354_user(nullptr);
-        info::CPlayer_check_mastery_lim1356_ptr CPlayer_check_mastery_lim1356_next(nullptr);
-        info::CPlayer_check_mastery_lim1356_clbk CPlayer_check_mastery_lim1356_user(nullptr);
-        info::CPlayer_check_party_target_object1358_ptr CPlayer_check_party_target_object1358_next(nullptr);
-        info::CPlayer_check_party_target_object1358_clbk CPlayer_check_party_target_object1358_user(nullptr);
-        info::CPlayer_check_race_target_object1360_ptr CPlayer_check_race_target_object1360_next(nullptr);
-        info::CPlayer_check_race_target_object1360_clbk CPlayer_check_race_target_object1360_user(nullptr);
-        info::CPlayer_check_target_object1362_ptr CPlayer_check_target_object1362_next(nullptr);
-        info::CPlayer_check_target_object1362_clbk CPlayer_check_target_object1362_user(nullptr);
-        info::CPlayer_pre_check_force_attack1364_ptr CPlayer_pre_check_force_attack1364_next(nullptr);
-        info::CPlayer_pre_check_force_attack1364_clbk CPlayer_pre_check_force_attack1364_user(nullptr);
-        info::CPlayer_pre_check_in_guild_battle1366_ptr CPlayer_pre_check_in_guild_battle1366_next(nullptr);
-        info::CPlayer_pre_check_in_guild_battle1366_clbk CPlayer_pre_check_in_guild_battle1366_user(nullptr);
-        info::CPlayer_pre_check_in_guild_battle_race1368_ptr CPlayer_pre_check_in_guild_battle_race1368_next(nullptr);
-        info::CPlayer_pre_check_in_guild_battle_race1368_clbk CPlayer_pre_check_in_guild_battle_race1368_user(nullptr);
-        info::CPlayer_pre_check_normal_attack1370_ptr CPlayer_pre_check_normal_attack1370_next(nullptr);
-        info::CPlayer_pre_check_normal_attack1370_clbk CPlayer_pre_check_normal_attack1370_user(nullptr);
-        info::CPlayer_pre_check_siege_attack1372_ptr CPlayer_pre_check_siege_attack1372_next(nullptr);
-        info::CPlayer_pre_check_siege_attack1372_clbk CPlayer_pre_check_siege_attack1372_user(nullptr);
-        info::CPlayer_pre_check_skill_attack1374_ptr CPlayer_pre_check_skill_attack1374_next(nullptr);
-        info::CPlayer_pre_check_skill_attack1374_clbk CPlayer_pre_check_skill_attack1374_user(nullptr);
-        info::CPlayer_pre_check_skill_enable1376_ptr CPlayer_pre_check_skill_enable1376_next(nullptr);
-        info::CPlayer_pre_check_skill_enable1376_clbk CPlayer_pre_check_skill_enable1376_user(nullptr);
-        info::CPlayer_pre_check_skill_gradelimit1378_ptr CPlayer_pre_check_skill_gradelimit1378_next(nullptr);
-        info::CPlayer_pre_check_skill_gradelimit1378_clbk CPlayer_pre_check_skill_gradelimit1378_user(nullptr);
-        info::CPlayer_pre_check_unit_attack1380_ptr CPlayer_pre_check_unit_attack1380_next(nullptr);
-        info::CPlayer_pre_check_unit_attack1380_clbk CPlayer_pre_check_unit_attack1380_user(nullptr);
-        info::CPlayer_pre_check_wpactive_force_attack1382_ptr CPlayer_pre_check_wpactive_force_attack1382_next(nullptr);
-        info::CPlayer_pre_check_wpactive_force_attack1382_clbk CPlayer_pre_check_wpactive_force_attack1382_user(nullptr);
-        info::CPlayer_pre_check_wpactive_skill_attack1384_ptr CPlayer_pre_check_wpactive_skill_attack1384_next(nullptr);
-        info::CPlayer_pre_check_wpactive_skill_attack1384_clbk CPlayer_pre_check_wpactive_skill_attack1384_user(nullptr);
-        info::CPlayer_set_db_sf_effect1386_ptr CPlayer_set_db_sf_effect1386_next(nullptr);
-        info::CPlayer_set_db_sf_effect1386_clbk CPlayer_set_db_sf_effect1386_user(nullptr);
-        info::CPlayerapply_case_equip_std_effect1391_ptr CPlayerapply_case_equip_std_effect1391_next(nullptr);
-        info::CPlayerapply_case_equip_std_effect1391_clbk CPlayerapply_case_equip_std_effect1391_user(nullptr);
-        info::CPlayerapply_case_equip_upgrade_effect1393_ptr CPlayerapply_case_equip_upgrade_effect1393_next(nullptr);
-        info::CPlayerapply_case_equip_upgrade_effect1393_clbk CPlayerapply_case_equip_upgrade_effect1393_user(nullptr);
-        info::CPlayerapply_have_item_std_effect1395_ptr CPlayerapply_have_item_std_effect1395_next(nullptr);
-        info::CPlayerapply_have_item_std_effect1395_clbk CPlayerapply_have_item_std_effect1395_user(nullptr);
-        info::CPlayerapply_normal_item_std_effect1397_ptr CPlayerapply_normal_item_std_effect1397_next(nullptr);
-        info::CPlayerapply_normal_item_std_effect1397_clbk CPlayerapply_normal_item_std_effect1397_user(nullptr);
-        info::CPlayerdev_SetGuildGrade1399_ptr CPlayerdev_SetGuildGrade1399_next(nullptr);
-        info::CPlayerdev_SetGuildGrade1399_clbk CPlayerdev_SetGuildGrade1399_user(nullptr);
-        info::CPlayerdev_SetGuildGradeByGuildSerial1401_ptr CPlayerdev_SetGuildGradeByGuildSerial1401_next(nullptr);
-        info::CPlayerdev_SetGuildGradeByGuildSerial1401_clbk CPlayerdev_SetGuildGradeByGuildSerial1401_user(nullptr);
-        info::CPlayerdev_SetGuildGradeByName1403_ptr CPlayerdev_SetGuildGradeByName1403_next(nullptr);
-        info::CPlayerdev_SetGuildGradeByName1403_clbk CPlayerdev_SetGuildGradeByName1403_user(nullptr);
-        info::CPlayerdev_after_effect1405_ptr CPlayerdev_after_effect1405_next(nullptr);
-        info::CPlayerdev_after_effect1405_clbk CPlayerdev_after_effect1405_user(nullptr);
-        info::CPlayerdev_all_kill1407_ptr CPlayerdev_all_kill1407_next(nullptr);
-        info::CPlayerdev_all_kill1407_clbk CPlayerdev_all_kill1407_user(nullptr);
-        info::CPlayerdev_animus_recall_time_free1409_ptr CPlayerdev_animus_recall_time_free1409_next(nullptr);
-        info::CPlayerdev_animus_recall_time_free1409_clbk CPlayerdev_animus_recall_time_free1409_user(nullptr);
-        info::CPlayerdev_avator_copy1411_ptr CPlayerdev_avator_copy1411_next(nullptr);
-        info::CPlayerdev_avator_copy1411_clbk CPlayerdev_avator_copy1411_user(nullptr);
-        info::CPlayerdev_change_class1413_ptr CPlayerdev_change_class1413_next(nullptr);
-        info::CPlayerdev_change_class1413_clbk CPlayerdev_change_class1413_user(nullptr);
-        info::CPlayerdev_cont_effect_del1415_ptr CPlayerdev_cont_effect_del1415_next(nullptr);
-        info::CPlayerdev_cont_effect_del1415_clbk CPlayerdev_cont_effect_del1415_user(nullptr);
-        info::CPlayerdev_cont_effect_time1417_ptr CPlayerdev_cont_effect_time1417_next(nullptr);
-        info::CPlayerdev_cont_effect_time1417_clbk CPlayerdev_cont_effect_time1417_user(nullptr);
-        info::CPlayerdev_dalant1419_ptr CPlayerdev_dalant1419_next(nullptr);
-        info::CPlayerdev_dalant1419_clbk CPlayerdev_dalant1419_user(nullptr);
-        info::CPlayerdev_die1421_ptr CPlayerdev_die1421_next(nullptr);
-        info::CPlayerdev_die1421_clbk CPlayerdev_die1421_user(nullptr);
-        info::CPlayerdev_drop_item1423_ptr CPlayerdev_drop_item1423_next(nullptr);
-        info::CPlayerdev_drop_item1423_clbk CPlayerdev_drop_item1423_user(nullptr);
-        info::CPlayerdev_free_sf_by_class1425_ptr CPlayerdev_free_sf_by_class1425_next(nullptr);
-        info::CPlayerdev_free_sf_by_class1425_clbk CPlayerdev_free_sf_by_class1425_user(nullptr);
-        info::CPlayerdev_full_animus_gauge1427_ptr CPlayerdev_full_animus_gauge1427_next(nullptr);
-        info::CPlayerdev_full_animus_gauge1427_clbk CPlayerdev_full_animus_gauge1427_user(nullptr);
-        info::CPlayerdev_full_force1429_ptr CPlayerdev_full_force1429_next(nullptr);
-        info::CPlayerdev_full_force1429_clbk CPlayerdev_full_force1429_user(nullptr);
-        info::CPlayerdev_full_point1431_ptr CPlayerdev_full_point1431_next(nullptr);
-        info::CPlayerdev_full_point1431_clbk CPlayerdev_full_point1431_user(nullptr);
-        info::CPlayerdev_gold1433_ptr CPlayerdev_gold1433_next(nullptr);
-        info::CPlayerdev_gold1433_clbk CPlayerdev_gold1433_user(nullptr);
-        info::CPlayerdev_goto_monster1435_ptr CPlayerdev_goto_monster1435_next(nullptr);
-        info::CPlayerdev_goto_monster1435_clbk CPlayerdev_goto_monster1435_user(nullptr);
-        info::CPlayerdev_goto_npc1437_ptr CPlayerdev_goto_npc1437_next(nullptr);
-        info::CPlayerdev_goto_npc1437_clbk CPlayerdev_goto_npc1437_user(nullptr);
-        info::CPlayerdev_half_inven_amount1439_ptr CPlayerdev_half_inven_amount1439_next(nullptr);
-        info::CPlayerdev_half_inven_amount1439_clbk CPlayerdev_half_inven_amount1439_user(nullptr);
-        info::CPlayerdev_half_point1441_ptr CPlayerdev_half_point1441_next(nullptr);
-        info::CPlayerdev_half_point1441_clbk CPlayerdev_half_point1441_user(nullptr);
-        info::CPlayerdev_init_monster1443_ptr CPlayerdev_init_monster1443_next(nullptr);
-        info::CPlayerdev_init_monster1443_clbk CPlayerdev_init_monster1443_user(nullptr);
-        info::CPlayerdev_inven_empty1445_ptr CPlayerdev_inven_empty1445_next(nullptr);
-        info::CPlayerdev_inven_empty1445_clbk CPlayerdev_inven_empty1445_user(nullptr);
-        info::CPlayerdev_item_make_no_use_matrial1447_ptr CPlayerdev_item_make_no_use_matrial1447_next(nullptr);
-        info::CPlayerdev_item_make_no_use_matrial1447_clbk CPlayerdev_item_make_no_use_matrial1447_user(nullptr);
-        info::CPlayerdev_loot_bag1449_ptr CPlayerdev_loot_bag1449_next(nullptr);
-        info::CPlayerdev_loot_bag1449_clbk CPlayerdev_loot_bag1449_user(nullptr);
-        info::CPlayerdev_loot_free1451_ptr CPlayerdev_loot_free1451_next(nullptr);
-        info::CPlayerdev_loot_free1451_clbk CPlayerdev_loot_free1451_user(nullptr);
-        info::CPlayerdev_loot_fullitem1453_ptr CPlayerdev_loot_fullitem1453_next(nullptr);
-        info::CPlayerdev_loot_fullitem1453_clbk CPlayerdev_loot_fullitem1453_user(nullptr);
-        info::CPlayerdev_loot_item1455_ptr CPlayerdev_loot_item1455_next(nullptr);
-        info::CPlayerdev_loot_item1455_clbk CPlayerdev_loot_item1455_user(nullptr);
-        info::CPlayerdev_loot_material1457_ptr CPlayerdev_loot_material1457_next(nullptr);
-        info::CPlayerdev_loot_material1457_clbk CPlayerdev_loot_material1457_user(nullptr);
-        info::CPlayerdev_loot_mine1459_ptr CPlayerdev_loot_mine1459_next(nullptr);
-        info::CPlayerdev_loot_mine1459_clbk CPlayerdev_loot_mine1459_user(nullptr);
-        info::CPlayerdev_loot_tower1461_ptr CPlayerdev_loot_tower1461_next(nullptr);
-        info::CPlayerdev_loot_tower1461_clbk CPlayerdev_loot_tower1461_user(nullptr);
-        info::CPlayerdev_lv1463_ptr CPlayerdev_lv1463_next(nullptr);
-        info::CPlayerdev_lv1463_clbk CPlayerdev_lv1463_user(nullptr);
-        info::CPlayerdev_make_succ1465_ptr CPlayerdev_make_succ1465_next(nullptr);
-        info::CPlayerdev_make_succ1465_clbk CPlayerdev_make_succ1465_user(nullptr);
-        info::CPlayerdev_max_level_ext1467_ptr CPlayerdev_max_level_ext1467_next(nullptr);
-        info::CPlayerdev_max_level_ext1467_clbk CPlayerdev_max_level_ext1467_user(nullptr);
-        info::CPlayerdev_never_die1469_ptr CPlayerdev_never_die1469_next(nullptr);
-        info::CPlayerdev_never_die1469_clbk CPlayerdev_never_die1469_user(nullptr);
-        info::CPlayerdev_quest_complete1471_ptr CPlayerdev_quest_complete1471_next(nullptr);
-        info::CPlayerdev_quest_complete1471_clbk CPlayerdev_quest_complete1471_user(nullptr);
-        info::CPlayerdev_quest_complete_other1473_ptr CPlayerdev_quest_complete_other1473_next(nullptr);
-        info::CPlayerdev_quest_complete_other1473_clbk CPlayerdev_quest_complete_other1473_user(nullptr);
-        info::CPlayerdev_set_animus_exp1475_ptr CPlayerdev_set_animus_exp1475_next(nullptr);
-        info::CPlayerdev_set_animus_exp1475_clbk CPlayerdev_set_animus_exp1475_user(nullptr);
-        info::CPlayerdev_set_animus_lv1477_ptr CPlayerdev_set_animus_lv1477_next(nullptr);
-        info::CPlayerdev_set_animus_lv1477_clbk CPlayerdev_set_animus_lv1477_user(nullptr);
-        info::CPlayerdev_set_hp1479_ptr CPlayerdev_set_hp1479_next(nullptr);
-        info::CPlayerdev_set_hp1479_clbk CPlayerdev_set_hp1479_user(nullptr);
-        info::CPlayerdev_trap_attack_grade1481_ptr CPlayerdev_trap_attack_grade1481_next(nullptr);
-        info::CPlayerdev_trap_attack_grade1481_clbk CPlayerdev_trap_attack_grade1481_user(nullptr);
-        info::CPlayerdev_up_all1483_ptr CPlayerdev_up_all1483_next(nullptr);
-        info::CPlayerdev_up_all1483_clbk CPlayerdev_up_all1483_user(nullptr);
-        info::CPlayerdev_up_all_pt1485_ptr CPlayerdev_up_all_pt1485_next(nullptr);
-        info::CPlayerdev_up_all_pt1485_clbk CPlayerdev_up_all_pt1485_user(nullptr);
-        info::CPlayerdev_up_cashbag1487_ptr CPlayerdev_up_cashbag1487_next(nullptr);
-        info::CPlayerdev_up_cashbag1487_clbk CPlayerdev_up_cashbag1487_user(nullptr);
-        info::CPlayerdev_up_forceitem1489_ptr CPlayerdev_up_forceitem1489_next(nullptr);
-        info::CPlayerdev_up_forceitem1489_clbk CPlayerdev_up_forceitem1489_user(nullptr);
-        info::CPlayerdev_up_forcemastery1491_ptr CPlayerdev_up_forcemastery1491_next(nullptr);
-        info::CPlayerdev_up_forcemastery1491_clbk CPlayerdev_up_forcemastery1491_user(nullptr);
-        info::CPlayerdev_up_mastery1493_ptr CPlayerdev_up_mastery1493_next(nullptr);
-        info::CPlayerdev_up_mastery1493_clbk CPlayerdev_up_mastery1493_user(nullptr);
-        info::CPlayerdev_up_pvp1495_ptr CPlayerdev_up_pvp1495_next(nullptr);
-        info::CPlayerdev_up_pvp1495_clbk CPlayerdev_up_pvp1495_user(nullptr);
-        info::CPlayerdev_up_skill1497_ptr CPlayerdev_up_skill1497_next(nullptr);
-        info::CPlayerdev_up_skill1497_clbk CPlayerdev_up_skill1497_user(nullptr);
-        info::CPlayerdev_view_boss1499_ptr CPlayerdev_view_boss1499_next(nullptr);
-        info::CPlayerdev_view_boss1499_clbk CPlayerdev_view_boss1499_user(nullptr);
-        info::CPlayerdev_view_method1501_ptr CPlayerdev_view_method1501_next(nullptr);
-        info::CPlayerdev_view_method1501_clbk CPlayerdev_view_method1501_user(nullptr);
-        info::CPlayermake_force_attack_param1503_ptr CPlayermake_force_attack_param1503_next(nullptr);
-        info::CPlayermake_force_attack_param1503_clbk CPlayermake_force_attack_param1503_user(nullptr);
-        info::CPlayermake_gen_attack_param1505_ptr CPlayermake_gen_attack_param1505_next(nullptr);
-        info::CPlayermake_gen_attack_param1505_clbk CPlayermake_gen_attack_param1505_user(nullptr);
-        info::CPlayermake_siege_attack_param1507_ptr CPlayermake_siege_attack_param1507_next(nullptr);
-        info::CPlayermake_siege_attack_param1507_clbk CPlayermake_siege_attack_param1507_user(nullptr);
-        info::CPlayermake_skill_attack_param1509_ptr CPlayermake_skill_attack_param1509_next(nullptr);
-        info::CPlayermake_skill_attack_param1509_clbk CPlayermake_skill_attack_param1509_user(nullptr);
-        info::CPlayermake_unit_attack_param1511_ptr CPlayermake_unit_attack_param1511_next(nullptr);
-        info::CPlayermake_unit_attack_param1511_clbk CPlayermake_unit_attack_param1511_user(nullptr);
-        info::CPlayermake_wpactive_force_attack_param1513_ptr CPlayermake_wpactive_force_attack_param1513_next(nullptr);
-        info::CPlayermake_wpactive_force_attack_param1513_clbk CPlayermake_wpactive_force_attack_param1513_user(nullptr);
-        info::CPlayermake_wpactive_skill_attack_param1515_ptr CPlayermake_wpactive_skill_attack_param1515_next(nullptr);
-        info::CPlayermake_wpactive_skill_attack_param1515_clbk CPlayermake_wpactive_skill_attack_param1515_user(nullptr);
-        info::CPlayermgr_MaxAttackPoint1517_ptr CPlayermgr_MaxAttackPoint1517_next(nullptr);
-        info::CPlayermgr_MaxAttackPoint1517_clbk CPlayermgr_MaxAttackPoint1517_user(nullptr);
-        info::CPlayermgr_TrunkInit1519_ptr CPlayermgr_TrunkInit1519_next(nullptr);
-        info::CPlayermgr_TrunkInit1519_clbk CPlayermgr_TrunkInit1519_user(nullptr);
-        info::CPlayermgr_all_item_muzi1521_ptr CPlayermgr_all_item_muzi1521_next(nullptr);
-        info::CPlayermgr_all_item_muzi1521_clbk CPlayermgr_all_item_muzi1521_user(nullptr);
-        info::CPlayermgr_change_degree1523_ptr CPlayermgr_change_degree1523_next(nullptr);
-        info::CPlayermgr_change_degree1523_clbk CPlayermgr_change_degree1523_user(nullptr);
-        info::CPlayermgr_defense_item_grace1525_ptr CPlayermgr_defense_item_grace1525_next(nullptr);
-        info::CPlayermgr_defense_item_grace1525_clbk CPlayermgr_defense_item_grace1525_user(nullptr);
-        info::CPlayermgr_destroy_system_tower1527_ptr CPlayermgr_destroy_system_tower1527_next(nullptr);
-        info::CPlayermgr_destroy_system_tower1527_clbk CPlayermgr_destroy_system_tower1527_user(nullptr);
-        info::CPlayermgr_dungeon_pass1529_ptr CPlayermgr_dungeon_pass1529_next(nullptr);
-        info::CPlayermgr_dungeon_pass1529_clbk CPlayermgr_dungeon_pass1529_user(nullptr);
-        info::CPlayermgr_exit_keeper1531_ptr CPlayermgr_exit_keeper1531_next(nullptr);
-        info::CPlayermgr_exit_keeper1531_clbk CPlayermgr_exit_keeper1531_user(nullptr);
-        info::CPlayermgr_exit_stone1533_ptr CPlayermgr_exit_stone1533_next(nullptr);
-        info::CPlayermgr_exit_stone1533_clbk CPlayermgr_exit_stone1533_user(nullptr);
-        info::CPlayermgr_free_ride_ship1535_ptr CPlayermgr_free_ride_ship1535_next(nullptr);
-        info::CPlayermgr_free_ride_ship1535_clbk CPlayermgr_free_ride_ship1535_user(nullptr);
-        info::CPlayermgr_gotoCoordinates1537_ptr CPlayermgr_gotoCoordinates1537_next(nullptr);
-        info::CPlayermgr_gotoCoordinates1537_clbk CPlayermgr_gotoCoordinates1537_user(nullptr);
-        info::CPlayermgr_gotoDstCoordinates1539_ptr CPlayermgr_gotoDstCoordinates1539_next(nullptr);
-        info::CPlayermgr_gotoDstCoordinates1539_clbk CPlayermgr_gotoDstCoordinates1539_user(nullptr);
-        info::CPlayermgr_goto_mine1541_ptr CPlayermgr_goto_mine1541_next(nullptr);
-        info::CPlayermgr_goto_mine1541_clbk CPlayermgr_goto_mine1541_user(nullptr);
-        info::CPlayermgr_goto_shipport1543_ptr CPlayermgr_goto_shipport1543_next(nullptr);
-        info::CPlayermgr_goto_shipport1543_clbk CPlayermgr_goto_shipport1543_user(nullptr);
-        info::CPlayermgr_goto_stone1545_ptr CPlayermgr_goto_stone1545_next(nullptr);
-        info::CPlayermgr_goto_stone1545_clbk CPlayermgr_goto_stone1545_user(nullptr);
-        info::CPlayermgr_goto_store1547_ptr CPlayermgr_goto_store1547_next(nullptr);
-        info::CPlayermgr_goto_store1547_clbk CPlayermgr_goto_store1547_user(nullptr);
-        info::CPlayermgr_holykeeper_start1549_ptr CPlayermgr_holykeeper_start1549_next(nullptr);
-        info::CPlayermgr_holykeeper_start1549_clbk CPlayermgr_holykeeper_start1549_user(nullptr);
-        info::CPlayermgr_holystone_start1551_ptr CPlayermgr_holystone_start1551_next(nullptr);
-        info::CPlayermgr_holystone_start1551_clbk CPlayermgr_holystone_start1551_user(nullptr);
-        info::CPlayermgr_item_telekinesis1553_ptr CPlayermgr_item_telekinesis1553_next(nullptr);
-        info::CPlayermgr_item_telekinesis1553_clbk CPlayermgr_item_telekinesis1553_user(nullptr);
-        info::CPlayermgr_kick1555_ptr CPlayermgr_kick1555_next(nullptr);
-        info::CPlayermgr_kick1555_clbk CPlayermgr_kick1555_user(nullptr);
-        info::CPlayermgr_make_system_tower1557_ptr CPlayermgr_make_system_tower1557_next(nullptr);
-        info::CPlayermgr_make_system_tower1557_clbk CPlayermgr_make_system_tower1557_user(nullptr);
-        info::CPlayermgr_matchless1559_ptr CPlayermgr_matchless1559_next(nullptr);
-        info::CPlayermgr_matchless1559_clbk CPlayermgr_matchless1559_user(nullptr);
-        info::CPlayermgr_pass_sch_one_step1561_ptr CPlayermgr_pass_sch_one_step1561_next(nullptr);
-        info::CPlayermgr_pass_sch_one_step1561_clbk CPlayermgr_pass_sch_one_step1561_user(nullptr);
-        info::CPlayermgr_recall_guild_player1563_ptr CPlayermgr_recall_guild_player1563_next(nullptr);
-        info::CPlayermgr_recall_guild_player1563_clbk CPlayermgr_recall_guild_player1563_user(nullptr);
-        info::CPlayermgr_recall_mon1565_ptr CPlayermgr_recall_mon1565_next(nullptr);
-        info::CPlayermgr_recall_mon1565_clbk CPlayermgr_recall_mon1565_user(nullptr);
-        info::CPlayermgr_recall_party_player1567_ptr CPlayermgr_recall_party_player1567_next(nullptr);
-        info::CPlayermgr_recall_party_player1567_clbk CPlayermgr_recall_party_player1567_user(nullptr);
-        info::CPlayermgr_recall_player1569_ptr CPlayermgr_recall_player1569_next(nullptr);
-        info::CPlayermgr_recall_player1569_clbk CPlayermgr_recall_player1569_user(nullptr);
-        info::CPlayermgr_resurrect_player1571_ptr CPlayermgr_resurrect_player1571_next(nullptr);
-        info::CPlayermgr_resurrect_player1571_clbk CPlayermgr_resurrect_player1571_user(nullptr);
-        info::CPlayermgr_set_animus_attack_point1573_ptr CPlayermgr_set_animus_attack_point1573_next(nullptr);
-        info::CPlayermgr_set_animus_attack_point1573_clbk CPlayermgr_set_animus_attack_point1573_user(nullptr);
-        info::CPlayermgr_tracing1575_ptr CPlayermgr_tracing1575_next(nullptr);
-        info::CPlayermgr_tracing1575_clbk CPlayermgr_tracing1575_user(nullptr);
-        info::CPlayermgr_user_ban1577_ptr CPlayermgr_user_ban1577_next(nullptr);
-        info::CPlayermgr_user_ban1577_clbk CPlayermgr_user_ban1577_user(nullptr);
-        info::CPlayermgr_whisper1579_ptr CPlayermgr_whisper1579_next(nullptr);
-        info::CPlayermgr_whisper1579_clbk CPlayermgr_whisper1579_user(nullptr);
-        info::CPlayerpc_AddBag1581_ptr CPlayerpc_AddBag1581_next(nullptr);
-        info::CPlayerpc_AddBag1581_clbk CPlayerpc_AddBag1581_user(nullptr);
-        info::CPlayerpc_AlterItemSlotRequest1583_ptr CPlayerpc_AlterItemSlotRequest1583_next(nullptr);
-        info::CPlayerpc_AlterItemSlotRequest1583_clbk CPlayerpc_AlterItemSlotRequest1583_user(nullptr);
-        info::CPlayerpc_AlterLinkBoardSlotRequest1585_ptr CPlayerpc_AlterLinkBoardSlotRequest1585_next(nullptr);
-        info::CPlayerpc_AlterLinkBoardSlotRequest1585_clbk CPlayerpc_AlterLinkBoardSlotRequest1585_user(nullptr);
-        info::CPlayerpc_AlterWindowInfoRequest1587_ptr CPlayerpc_AlterWindowInfoRequest1587_next(nullptr);
-        info::CPlayerpc_AlterWindowInfoRequest1587_clbk CPlayerpc_AlterWindowInfoRequest1587_user(nullptr);
-        info::CPlayerpc_AnimusCommandRequest1589_ptr CPlayerpc_AnimusCommandRequest1589_next(nullptr);
-        info::CPlayerpc_AnimusCommandRequest1589_clbk CPlayerpc_AnimusCommandRequest1589_user(nullptr);
-        info::CPlayerpc_AnimusInvenChange1591_ptr CPlayerpc_AnimusInvenChange1591_next(nullptr);
-        info::CPlayerpc_AnimusInvenChange1591_clbk CPlayerpc_AnimusInvenChange1591_user(nullptr);
-        info::CPlayerpc_AnimusRecallRequest1593_ptr CPlayerpc_AnimusRecallRequest1593_next(nullptr);
-        info::CPlayerpc_AnimusRecallRequest1593_clbk CPlayerpc_AnimusRecallRequest1593_user(nullptr);
-        info::CPlayerpc_AnimusReturnRequest1595_ptr CPlayerpc_AnimusReturnRequest1595_next(nullptr);
-        info::CPlayerpc_AnimusReturnRequest1595_clbk CPlayerpc_AnimusReturnRequest1595_user(nullptr);
-        info::CPlayerpc_AnimusTargetRequest1597_ptr CPlayerpc_AnimusTargetRequest1597_next(nullptr);
-        info::CPlayerpc_AnimusTargetRequest1597_clbk CPlayerpc_AnimusTargetRequest1597_user(nullptr);
-        info::CPlayerpc_AwayPartyJoinInvitationAnswer1599_ptr CPlayerpc_AwayPartyJoinInvitationAnswer1599_next(nullptr);
-        info::CPlayerpc_AwayPartyJoinInvitationAnswer1599_clbk CPlayerpc_AwayPartyJoinInvitationAnswer1599_user(nullptr);
-        info::CPlayerpc_AwaypartyInvitationRequest1601_ptr CPlayerpc_AwaypartyInvitationRequest1601_next(nullptr);
-        info::CPlayerpc_AwaypartyInvitationRequest1601_clbk CPlayerpc_AwaypartyInvitationRequest1601_user(nullptr);
-        info::CPlayerpc_BackTowerRequest1603_ptr CPlayerpc_BackTowerRequest1603_next(nullptr);
-        info::CPlayerpc_BackTowerRequest1603_clbk CPlayerpc_BackTowerRequest1603_user(nullptr);
-        info::CPlayerpc_BackTrapRequest1605_ptr CPlayerpc_BackTrapRequest1605_next(nullptr);
-        info::CPlayerpc_BackTrapRequest1605_clbk CPlayerpc_BackTrapRequest1605_user(nullptr);
-        info::CPlayerpc_BillingInfoRequest1607_ptr CPlayerpc_BillingInfoRequest1607_next(nullptr);
-        info::CPlayerpc_BillingInfoRequest1607_clbk CPlayerpc_BillingInfoRequest1607_user(nullptr);
-        info::CPlayerpc_BriefPass1609_ptr CPlayerpc_BriefPass1609_next(nullptr);
-        info::CPlayerpc_BriefPass1609_clbk CPlayerpc_BriefPass1609_user(nullptr);
-        info::CPlayerpc_BuddyAddAnswer1611_ptr CPlayerpc_BuddyAddAnswer1611_next(nullptr);
-        info::CPlayerpc_BuddyAddAnswer1611_clbk CPlayerpc_BuddyAddAnswer1611_user(nullptr);
-        info::CPlayerpc_BuddyAddRequest1613_ptr CPlayerpc_BuddyAddRequest1613_next(nullptr);
-        info::CPlayerpc_BuddyAddRequest1613_clbk CPlayerpc_BuddyAddRequest1613_user(nullptr);
-        info::CPlayerpc_BuddyDelRequest1615_ptr CPlayerpc_BuddyDelRequest1615_next(nullptr);
-        info::CPlayerpc_BuddyDelRequest1615_clbk CPlayerpc_BuddyDelRequest1615_user(nullptr);
-        info::CPlayerpc_BuddyDownloadRequest1617_ptr CPlayerpc_BuddyDownloadRequest1617_next(nullptr);
-        info::CPlayerpc_BuddyDownloadRequest1617_clbk CPlayerpc_BuddyDownloadRequest1617_user(nullptr);
-        info::CPlayerpc_BuyItemStore1619_ptr CPlayerpc_BuyItemStore1619_next(nullptr);
-        info::CPlayerpc_BuyItemStore1619_clbk CPlayerpc_BuyItemStore1619_user(nullptr);
-        info::CPlayerpc_CanSelectClassRequest1621_ptr CPlayerpc_CanSelectClassRequest1621_next(nullptr);
-        info::CPlayerpc_CanSelectClassRequest1621_clbk CPlayerpc_CanSelectClassRequest1621_user(nullptr);
-        info::CPlayerpc_CastVoteRequest1623_ptr CPlayerpc_CastVoteRequest1623_next(nullptr);
-        info::CPlayerpc_CastVoteRequest1623_clbk CPlayerpc_CastVoteRequest1623_user(nullptr);
-        info::CPlayerpc_ChangeModeType1625_ptr CPlayerpc_ChangeModeType1625_next(nullptr);
-        info::CPlayerpc_ChangeModeType1625_clbk CPlayerpc_ChangeModeType1625_user(nullptr);
-        info::CPlayerpc_CharacterRenameCash1627_ptr CPlayerpc_CharacterRenameCash1627_next(nullptr);
-        info::CPlayerpc_CharacterRenameCash1627_clbk CPlayerpc_CharacterRenameCash1627_user(nullptr);
-        info::CPlayerpc_CharacterRenameCheck1629_ptr CPlayerpc_CharacterRenameCheck1629_next(nullptr);
-        info::CPlayerpc_CharacterRenameCheck1629_clbk CPlayerpc_CharacterRenameCheck1629_user(nullptr);
-        info::CPlayerpc_ChatAllRequest1631_ptr CPlayerpc_ChatAllRequest1631_next(nullptr);
-        info::CPlayerpc_ChatAllRequest1631_clbk CPlayerpc_ChatAllRequest1631_user(nullptr);
-        info::CPlayerpc_ChatCircleRequest1633_ptr CPlayerpc_ChatCircleRequest1633_next(nullptr);
-        info::CPlayerpc_ChatCircleRequest1633_clbk CPlayerpc_ChatCircleRequest1633_user(nullptr);
-        info::CPlayerpc_ChatFarRequest1635_ptr CPlayerpc_ChatFarRequest1635_next(nullptr);
-        info::CPlayerpc_ChatFarRequest1635_clbk CPlayerpc_ChatFarRequest1635_user(nullptr);
-        info::CPlayerpc_ChatGmNoticeRequest1637_ptr CPlayerpc_ChatGmNoticeRequest1637_next(nullptr);
-        info::CPlayerpc_ChatGmNoticeRequest1637_clbk CPlayerpc_ChatGmNoticeRequest1637_user(nullptr);
-        info::CPlayerpc_ChatGuildEstSenRequest1639_ptr CPlayerpc_ChatGuildEstSenRequest1639_next(nullptr);
-        info::CPlayerpc_ChatGuildEstSenRequest1639_clbk CPlayerpc_ChatGuildEstSenRequest1639_user(nullptr);
-        info::CPlayerpc_ChatGuildRequest1641_ptr CPlayerpc_ChatGuildRequest1641_next(nullptr);
-        info::CPlayerpc_ChatGuildRequest1641_clbk CPlayerpc_ChatGuildRequest1641_user(nullptr);
-        info::CPlayerpc_ChatMapRequest1643_ptr CPlayerpc_ChatMapRequest1643_next(nullptr);
-        info::CPlayerpc_ChatMapRequest1643_clbk CPlayerpc_ChatMapRequest1643_user(nullptr);
-        info::CPlayerpc_ChatMgrWhisperRequest1645_ptr CPlayerpc_ChatMgrWhisperRequest1645_next(nullptr);
-        info::CPlayerpc_ChatMgrWhisperRequest1645_clbk CPlayerpc_ChatMgrWhisperRequest1645_user(nullptr);
-        info::CPlayerpc_ChatMultiFarRequest1647_ptr CPlayerpc_ChatMultiFarRequest1647_next(nullptr);
-        info::CPlayerpc_ChatMultiFarRequest1647_clbk CPlayerpc_ChatMultiFarRequest1647_user(nullptr);
-        info::CPlayerpc_ChatOperatorRequest1649_ptr CPlayerpc_ChatOperatorRequest1649_next(nullptr);
-        info::CPlayerpc_ChatOperatorRequest1649_clbk CPlayerpc_ChatOperatorRequest1649_user(nullptr);
-        info::CPlayerpc_ChatPartyRequest1651_ptr CPlayerpc_ChatPartyRequest1651_next(nullptr);
-        info::CPlayerpc_ChatPartyRequest1651_clbk CPlayerpc_ChatPartyRequest1651_user(nullptr);
-        info::CPlayerpc_ChatRaceBossCryRequest1653_ptr CPlayerpc_ChatRaceBossCryRequest1653_next(nullptr);
-        info::CPlayerpc_ChatRaceBossCryRequest1653_clbk CPlayerpc_ChatRaceBossCryRequest1653_user(nullptr);
-        info::CPlayerpc_ChatRaceBossRequest1655_ptr CPlayerpc_ChatRaceBossRequest1655_next(nullptr);
-        info::CPlayerpc_ChatRaceBossRequest1655_clbk CPlayerpc_ChatRaceBossRequest1655_user(nullptr);
-        info::CPlayerpc_ChatRaceRequest1657_ptr CPlayerpc_ChatRaceRequest1657_next(nullptr);
-        info::CPlayerpc_ChatRaceRequest1657_clbk CPlayerpc_ChatRaceRequest1657_user(nullptr);
-        info::CPlayerpc_ChatRePresentationRequest1659_ptr CPlayerpc_ChatRePresentationRequest1659_next(nullptr);
-        info::CPlayerpc_ChatRePresentationRequest1659_clbk CPlayerpc_ChatRePresentationRequest1659_user(nullptr);
-        info::CPlayerpc_ChatTradeRequestMsg1661_ptr CPlayerpc_ChatTradeRequestMsg1661_next(nullptr);
-        info::CPlayerpc_ChatTradeRequestMsg1661_clbk CPlayerpc_ChatTradeRequestMsg1661_user(nullptr);
-        info::CPlayerpc_ClassSkillRequest1663_ptr CPlayerpc_ClassSkillRequest1663_next(nullptr);
-        info::CPlayerpc_ClassSkillRequest1663_clbk CPlayerpc_ClassSkillRequest1663_user(nullptr);
-        info::CPlayerpc_CombineItem1665_ptr CPlayerpc_CombineItem1665_next(nullptr);
-        info::CPlayerpc_CombineItem1665_clbk CPlayerpc_CombineItem1665_user(nullptr);
-        info::CPlayerpc_CombineItemEx1667_ptr CPlayerpc_CombineItemEx1667_next(nullptr);
-        info::CPlayerpc_CombineItemEx1667_clbk CPlayerpc_CombineItemEx1667_user(nullptr);
-        info::CPlayerpc_CombineItemExAccept1669_ptr CPlayerpc_CombineItemExAccept1669_next(nullptr);
-        info::CPlayerpc_CombineItemExAccept1669_clbk CPlayerpc_CombineItemExAccept1669_user(nullptr);
-        info::CPlayerpc_CuttingComplete1671_ptr CPlayerpc_CuttingComplete1671_next(nullptr);
-        info::CPlayerpc_CuttingComplete1671_clbk CPlayerpc_CuttingComplete1671_user(nullptr);
-        info::CPlayerpc_DTradeAddRequest1673_ptr CPlayerpc_DTradeAddRequest1673_next(nullptr);
-        info::CPlayerpc_DTradeAddRequest1673_clbk CPlayerpc_DTradeAddRequest1673_user(nullptr);
-        info::CPlayerpc_DTradeAnswerRequest1675_ptr CPlayerpc_DTradeAnswerRequest1675_next(nullptr);
-        info::CPlayerpc_DTradeAnswerRequest1675_clbk CPlayerpc_DTradeAnswerRequest1675_user(nullptr);
-        info::CPlayerpc_DTradeAskRequest1677_ptr CPlayerpc_DTradeAskRequest1677_next(nullptr);
-        info::CPlayerpc_DTradeAskRequest1677_clbk CPlayerpc_DTradeAskRequest1677_user(nullptr);
-        info::CPlayerpc_DTradeBetRequest1679_ptr CPlayerpc_DTradeBetRequest1679_next(nullptr);
-        info::CPlayerpc_DTradeBetRequest1679_clbk CPlayerpc_DTradeBetRequest1679_user(nullptr);
-        info::CPlayerpc_DTradeCancleRequest1681_ptr CPlayerpc_DTradeCancleRequest1681_next(nullptr);
-        info::CPlayerpc_DTradeCancleRequest1681_clbk CPlayerpc_DTradeCancleRequest1681_user(nullptr);
-        info::CPlayerpc_DTradeDelRequest1683_ptr CPlayerpc_DTradeDelRequest1683_next(nullptr);
-        info::CPlayerpc_DTradeDelRequest1683_clbk CPlayerpc_DTradeDelRequest1683_user(nullptr);
-        info::CPlayerpc_DTradeLockRequest1685_ptr CPlayerpc_DTradeLockRequest1685_next(nullptr);
-        info::CPlayerpc_DTradeLockRequest1685_clbk CPlayerpc_DTradeLockRequest1685_user(nullptr);
-        info::CPlayerpc_DTradeOKRequest1687_ptr CPlayerpc_DTradeOKRequest1687_next(nullptr);
-        info::CPlayerpc_DTradeOKRequest1687_clbk CPlayerpc_DTradeOKRequest1687_user(nullptr);
-        info::CPlayerpc_DarkHoleAnswerReenterRequest1689_ptr CPlayerpc_DarkHoleAnswerReenterRequest1689_next(nullptr);
-        info::CPlayerpc_DarkHoleAnswerReenterRequest1689_clbk CPlayerpc_DarkHoleAnswerReenterRequest1689_user(nullptr);
-        info::CPlayerpc_DarkHoleClearOutRequest1691_ptr CPlayerpc_DarkHoleClearOutRequest1691_next(nullptr);
-        info::CPlayerpc_DarkHoleClearOutRequest1691_clbk CPlayerpc_DarkHoleClearOutRequest1691_user(nullptr);
-        info::CPlayerpc_DarkHoleEnterRequest1693_ptr CPlayerpc_DarkHoleEnterRequest1693_next(nullptr);
-        info::CPlayerpc_DarkHoleEnterRequest1693_clbk CPlayerpc_DarkHoleEnterRequest1693_user(nullptr);
-        info::CPlayerpc_DarkHoleGiveupOutRequest1695_ptr CPlayerpc_DarkHoleGiveupOutRequest1695_next(nullptr);
-        info::CPlayerpc_DarkHoleGiveupOutRequest1695_clbk CPlayerpc_DarkHoleGiveupOutRequest1695_user(nullptr);
-        info::CPlayerpc_DarkHoleOpenRequest1697_ptr CPlayerpc_DarkHoleOpenRequest1697_next(nullptr);
-        info::CPlayerpc_DarkHoleOpenRequest1697_clbk CPlayerpc_DarkHoleOpenRequest1697_user(nullptr);
-        info::CPlayerpc_DowngradeItem1699_ptr CPlayerpc_DowngradeItem1699_next(nullptr);
-        info::CPlayerpc_DowngradeItem1699_clbk CPlayerpc_DowngradeItem1699_user(nullptr);
-        info::CPlayerpc_EmbellishPart1701_ptr CPlayerpc_EmbellishPart1701_next(nullptr);
-        info::CPlayerpc_EmbellishPart1701_clbk CPlayerpc_EmbellishPart1701_user(nullptr);
-        info::CPlayerpc_EquipPart1703_ptr CPlayerpc_EquipPart1703_next(nullptr);
-        info::CPlayerpc_EquipPart1703_clbk CPlayerpc_EquipPart1703_user(nullptr);
-        info::CPlayerpc_ExchangeDalantForGold1705_ptr CPlayerpc_ExchangeDalantForGold1705_next(nullptr);
-        info::CPlayerpc_ExchangeDalantForGold1705_clbk CPlayerpc_ExchangeDalantForGold1705_user(nullptr);
-        info::CPlayerpc_ExchangeGoldForDalant1707_ptr CPlayerpc_ExchangeGoldForDalant1707_next(nullptr);
-        info::CPlayerpc_ExchangeGoldForDalant1707_clbk CPlayerpc_ExchangeGoldForDalant1707_user(nullptr);
-        info::CPlayerpc_ExchangeGoldForPvP1709_ptr CPlayerpc_ExchangeGoldForPvP1709_next(nullptr);
-        info::CPlayerpc_ExchangeGoldForPvP1709_clbk CPlayerpc_ExchangeGoldForPvP1709_user(nullptr);
-        info::CPlayerpc_ExchangeItem1711_ptr CPlayerpc_ExchangeItem1711_next(nullptr);
-        info::CPlayerpc_ExchangeItem1711_clbk CPlayerpc_ExchangeItem1711_user(nullptr);
-        info::CPlayerpc_ExitWorldRequest1713_ptr CPlayerpc_ExitWorldRequest1713_next(nullptr);
-        info::CPlayerpc_ExitWorldRequest1713_clbk CPlayerpc_ExitWorldRequest1713_user(nullptr);
-        info::CPlayerpc_ForceInvenChange1715_ptr CPlayerpc_ForceInvenChange1715_next(nullptr);
-        info::CPlayerpc_ForceInvenChange1715_clbk CPlayerpc_ForceInvenChange1715_user(nullptr);
-        info::CPlayerpc_ForceRequest1717_ptr CPlayerpc_ForceRequest1717_next(nullptr);
-        info::CPlayerpc_ForceRequest1717_clbk CPlayerpc_ForceRequest1717_user(nullptr);
-        info::CPlayerpc_GestureRequest1719_ptr CPlayerpc_GestureRequest1719_next(nullptr);
-        info::CPlayerpc_GestureRequest1719_clbk CPlayerpc_GestureRequest1719_user(nullptr);
-        info::CPlayerpc_GiveItem1721_ptr CPlayerpc_GiveItem1721_next(nullptr);
-        info::CPlayerpc_GiveItem1721_clbk CPlayerpc_GiveItem1721_user(nullptr);
-        info::CPlayerpc_GotoAvatorRequest1723_ptr CPlayerpc_GotoAvatorRequest1723_next(nullptr);
-        info::CPlayerpc_GotoAvatorRequest1723_clbk CPlayerpc_GotoAvatorRequest1723_user(nullptr);
-        info::CPlayerpc_GotoBasePortalRequest1725_ptr CPlayerpc_GotoBasePortalRequest1725_next(nullptr);
-        info::CPlayerpc_GotoBasePortalRequest1725_clbk CPlayerpc_GotoBasePortalRequest1725_user(nullptr);
-        info::CPlayerpc_GuildBattleBlock1727_ptr CPlayerpc_GuildBattleBlock1727_next(nullptr);
-        info::CPlayerpc_GuildBattleBlock1727_clbk CPlayerpc_GuildBattleBlock1727_user(nullptr);
-        info::CPlayerpc_GuildCancelSuggestRequest1729_ptr CPlayerpc_GuildCancelSuggestRequest1729_next(nullptr);
-        info::CPlayerpc_GuildCancelSuggestRequest1729_clbk CPlayerpc_GuildCancelSuggestRequest1729_user(nullptr);
-        info::CPlayerpc_GuildDownLoadRequest1731_ptr CPlayerpc_GuildDownLoadRequest1731_next(nullptr);
-        info::CPlayerpc_GuildDownLoadRequest1731_clbk CPlayerpc_GuildDownLoadRequest1731_user(nullptr);
-        info::CPlayerpc_GuildEstablishRequest1733_ptr CPlayerpc_GuildEstablishRequest1733_next(nullptr);
-        info::CPlayerpc_GuildEstablishRequest1733_clbk CPlayerpc_GuildEstablishRequest1733_user(nullptr);
-        info::CPlayerpc_GuildHonorListRequest1735_ptr CPlayerpc_GuildHonorListRequest1735_next(nullptr);
-        info::CPlayerpc_GuildHonorListRequest1735_clbk CPlayerpc_GuildHonorListRequest1735_user(nullptr);
-        info::CPlayerpc_GuildJoinAcceptRequest1737_ptr CPlayerpc_GuildJoinAcceptRequest1737_next(nullptr);
-        info::CPlayerpc_GuildJoinAcceptRequest1737_clbk CPlayerpc_GuildJoinAcceptRequest1737_user(nullptr);
-        info::CPlayerpc_GuildJoinApplyCancelRequest1739_ptr CPlayerpc_GuildJoinApplyCancelRequest1739_next(nullptr);
-        info::CPlayerpc_GuildJoinApplyCancelRequest1739_clbk CPlayerpc_GuildJoinApplyCancelRequest1739_user(nullptr);
-        info::CPlayerpc_GuildJoinApplyRequest1741_ptr CPlayerpc_GuildJoinApplyRequest1741_next(nullptr);
-        info::CPlayerpc_GuildJoinApplyRequest1741_clbk CPlayerpc_GuildJoinApplyRequest1741_user(nullptr);
-        info::CPlayerpc_GuildListRequest1743_ptr CPlayerpc_GuildListRequest1743_next(nullptr);
-        info::CPlayerpc_GuildListRequest1743_clbk CPlayerpc_GuildListRequest1743_user(nullptr);
-        info::CPlayerpc_GuildManageRequest1745_ptr CPlayerpc_GuildManageRequest1745_next(nullptr);
-        info::CPlayerpc_GuildManageRequest1745_clbk CPlayerpc_GuildManageRequest1745_user(nullptr);
-        info::CPlayerpc_GuildNextHonorListRequest1747_ptr CPlayerpc_GuildNextHonorListRequest1747_next(nullptr);
-        info::CPlayerpc_GuildNextHonorListRequest1747_clbk CPlayerpc_GuildNextHonorListRequest1747_user(nullptr);
-        info::CPlayerpc_GuildOfferSuggestRequest1749_ptr CPlayerpc_GuildOfferSuggestRequest1749_next(nullptr);
-        info::CPlayerpc_GuildOfferSuggestRequest1749_clbk CPlayerpc_GuildOfferSuggestRequest1749_user(nullptr);
-        info::CPlayerpc_GuildPushMoneyRequest1751_ptr CPlayerpc_GuildPushMoneyRequest1751_next(nullptr);
-        info::CPlayerpc_GuildPushMoneyRequest1751_clbk CPlayerpc_GuildPushMoneyRequest1751_user(nullptr);
-        info::CPlayerpc_GuildQueryInfoRequest1753_ptr CPlayerpc_GuildQueryInfoRequest1753_next(nullptr);
-        info::CPlayerpc_GuildQueryInfoRequest1753_clbk CPlayerpc_GuildQueryInfoRequest1753_user(nullptr);
-        info::CPlayerpc_GuildRoomEnterRequest1755_ptr CPlayerpc_GuildRoomEnterRequest1755_next(nullptr);
-        info::CPlayerpc_GuildRoomEnterRequest1755_clbk CPlayerpc_GuildRoomEnterRequest1755_user(nullptr);
-        info::CPlayerpc_GuildRoomOutRequest1757_ptr CPlayerpc_GuildRoomOutRequest1757_next(nullptr);
-        info::CPlayerpc_GuildRoomOutRequest1757_clbk CPlayerpc_GuildRoomOutRequest1757_user(nullptr);
-        info::CPlayerpc_GuildRoomRentRequest1759_ptr CPlayerpc_GuildRoomRentRequest1759_next(nullptr);
-        info::CPlayerpc_GuildRoomRentRequest1759_clbk CPlayerpc_GuildRoomRentRequest1759_user(nullptr);
-        info::CPlayerpc_GuildRoomRestTimeRequest1761_ptr CPlayerpc_GuildRoomRestTimeRequest1761_next(nullptr);
-        info::CPlayerpc_GuildRoomRestTimeRequest1761_clbk CPlayerpc_GuildRoomRestTimeRequest1761_user(nullptr);
-        info::CPlayerpc_GuildSelfLeaveRequest1763_ptr CPlayerpc_GuildSelfLeaveRequest1763_next(nullptr);
-        info::CPlayerpc_GuildSelfLeaveRequest1763_clbk CPlayerpc_GuildSelfLeaveRequest1763_user(nullptr);
-        info::CPlayerpc_GuildSetHonorRequest1765_ptr CPlayerpc_GuildSetHonorRequest1765_next(nullptr);
-        info::CPlayerpc_GuildSetHonorRequest1765_clbk CPlayerpc_GuildSetHonorRequest1765_user(nullptr);
-        info::CPlayerpc_GuildVoteRequest1767_ptr CPlayerpc_GuildVoteRequest1767_next(nullptr);
-        info::CPlayerpc_GuildVoteRequest1767_clbk CPlayerpc_GuildVoteRequest1767_user(nullptr);
-        info::CPlayerpc_InitClass1769_ptr CPlayerpc_InitClass1769_next(nullptr);
-        info::CPlayerpc_InitClass1769_clbk CPlayerpc_InitClass1769_user(nullptr);
-        info::CPlayerpc_InitClassRequest1771_ptr CPlayerpc_InitClassRequest1771_next(nullptr);
-        info::CPlayerpc_InitClassRequest1771_clbk CPlayerpc_InitClassRequest1771_user(nullptr);
-        info::CPlayerpc_LimitItemNumRequest1773_ptr CPlayerpc_LimitItemNumRequest1773_next(nullptr);
-        info::CPlayerpc_LimitItemNumRequest1773_clbk CPlayerpc_LimitItemNumRequest1773_user(nullptr);
-        info::CPlayerpc_LinkBoardRequest1775_ptr CPlayerpc_LinkBoardRequest1775_next(nullptr);
-        info::CPlayerpc_LinkBoardRequest1775_clbk CPlayerpc_LinkBoardRequest1775_user(nullptr);
-        info::CPlayerpc_MacroUpdate1777_ptr CPlayerpc_MacroUpdate1777_next(nullptr);
-        info::CPlayerpc_MacroUpdate1777_clbk CPlayerpc_MacroUpdate1777_user(nullptr);
-        info::CPlayerpc_MakeItem1779_ptr CPlayerpc_MakeItem1779_next(nullptr);
-        info::CPlayerpc_MakeItem1779_clbk CPlayerpc_MakeItem1779_user(nullptr);
-        info::CPlayerpc_MakeTowerRequest1781_ptr CPlayerpc_MakeTowerRequest1781_next(nullptr);
-        info::CPlayerpc_MakeTowerRequest1781_clbk CPlayerpc_MakeTowerRequest1781_user(nullptr);
-        info::CPlayerpc_MakeTrapRequest1783_ptr CPlayerpc_MakeTrapRequest1783_next(nullptr);
-        info::CPlayerpc_MakeTrapRequest1783_clbk CPlayerpc_MakeTrapRequest1783_user(nullptr);
-        info::CPlayerpc_MineCancle1785_ptr CPlayerpc_MineCancle1785_next(nullptr);
-        info::CPlayerpc_MineCancle1785_clbk CPlayerpc_MineCancle1785_user(nullptr);
-        info::CPlayerpc_MineComplete1787_ptr CPlayerpc_MineComplete1787_next(nullptr);
-        info::CPlayerpc_MineComplete1787_clbk CPlayerpc_MineComplete1787_user(nullptr);
-        info::CPlayerpc_MineStart1789_ptr CPlayerpc_MineStart1789_next(nullptr);
-        info::CPlayerpc_MineStart1789_clbk CPlayerpc_MineStart1789_user(nullptr);
-        info::CPlayerpc_MoveModeChangeRequest1791_ptr CPlayerpc_MoveModeChangeRequest1791_next(nullptr);
-        info::CPlayerpc_MoveModeChangeRequest1791_clbk CPlayerpc_MoveModeChangeRequest1791_user(nullptr);
-        info::CPlayerpc_MoveNext1793_ptr CPlayerpc_MoveNext1793_next(nullptr);
-        info::CPlayerpc_MoveNext1793_clbk CPlayerpc_MoveNext1793_user(nullptr);
-        info::CPlayerpc_MovePortal1795_ptr CPlayerpc_MovePortal1795_next(nullptr);
-        info::CPlayerpc_MovePortal1795_clbk CPlayerpc_MovePortal1795_user(nullptr);
-        info::CPlayerpc_MoveStop1797_ptr CPlayerpc_MoveStop1797_next(nullptr);
-        info::CPlayerpc_MoveStop1797_clbk CPlayerpc_MoveStop1797_user(nullptr);
-        info::CPlayerpc_MoveToOwnStoneMapRequest1799_ptr CPlayerpc_MoveToOwnStoneMapRequest1799_next(nullptr);
-        info::CPlayerpc_MoveToOwnStoneMapRequest1799_clbk CPlayerpc_MoveToOwnStoneMapRequest1799_user(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest1801_ptr CPlayerpc_NPCLinkCheckItemRequest1801_next(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest1801_clbk CPlayerpc_NPCLinkCheckItemRequest1801_user(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest_Check1803_ptr CPlayerpc_NPCLinkCheckItemRequest_Check1803_next(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest_Check1803_clbk CPlayerpc_NPCLinkCheckItemRequest_Check1803_user(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest_Use1805_ptr CPlayerpc_NPCLinkCheckItemRequest_Use1805_next(nullptr);
-        info::CPlayerpc_NPCLinkCheckItemRequest_Use1805_clbk CPlayerpc_NPCLinkCheckItemRequest_Use1805_user(nullptr);
-        info::CPlayerpc_NewPosStart1807_ptr CPlayerpc_NewPosStart1807_next(nullptr);
-        info::CPlayerpc_NewPosStart1807_clbk CPlayerpc_NewPosStart1807_user(nullptr);
-        info::CPlayerpc_NotifyRaceBossCryMsg1809_ptr CPlayerpc_NotifyRaceBossCryMsg1809_next(nullptr);
-        info::CPlayerpc_NotifyRaceBossCryMsg1809_clbk CPlayerpc_NotifyRaceBossCryMsg1809_user(nullptr);
-        info::CPlayerpc_NuclearAfterEffect1811_ptr CPlayerpc_NuclearAfterEffect1811_next(nullptr);
-        info::CPlayerpc_NuclearAfterEffect1811_clbk CPlayerpc_NuclearAfterEffect1811_user(nullptr);
-        info::CPlayerpc_OffPart1813_ptr CPlayerpc_OffPart1813_next(nullptr);
-        info::CPlayerpc_OffPart1813_clbk CPlayerpc_OffPart1813_user(nullptr);
-        info::CPlayerpc_OreCutting1815_ptr CPlayerpc_OreCutting1815_next(nullptr);
-        info::CPlayerpc_OreCutting1815_clbk CPlayerpc_OreCutting1815_user(nullptr);
-        info::CPlayerpc_OreIntoBag1817_ptr CPlayerpc_OreIntoBag1817_next(nullptr);
-        info::CPlayerpc_OreIntoBag1817_clbk CPlayerpc_OreIntoBag1817_user(nullptr);
-        info::CPlayerpc_PartyAlterLootShareReqeuest1819_ptr CPlayerpc_PartyAlterLootShareReqeuest1819_next(nullptr);
-        info::CPlayerpc_PartyAlterLootShareReqeuest1819_clbk CPlayerpc_PartyAlterLootShareReqeuest1819_user(nullptr);
-        info::CPlayerpc_PartyDisJointReqeuest1821_ptr CPlayerpc_PartyDisJointReqeuest1821_next(nullptr);
-        info::CPlayerpc_PartyDisJointReqeuest1821_clbk CPlayerpc_PartyDisJointReqeuest1821_user(nullptr);
-        info::CPlayerpc_PartyJoinApplication1823_ptr CPlayerpc_PartyJoinApplication1823_next(nullptr);
-        info::CPlayerpc_PartyJoinApplication1823_clbk CPlayerpc_PartyJoinApplication1823_user(nullptr);
-        info::CPlayerpc_PartyJoinApplicationAnswer1825_ptr CPlayerpc_PartyJoinApplicationAnswer1825_next(nullptr);
-        info::CPlayerpc_PartyJoinApplicationAnswer1825_clbk CPlayerpc_PartyJoinApplicationAnswer1825_user(nullptr);
-        info::CPlayerpc_PartyJoinInvitation1827_ptr CPlayerpc_PartyJoinInvitation1827_next(nullptr);
-        info::CPlayerpc_PartyJoinInvitation1827_clbk CPlayerpc_PartyJoinInvitation1827_user(nullptr);
-        info::CPlayerpc_PartyJoinInvitationAnswer1829_ptr CPlayerpc_PartyJoinInvitationAnswer1829_next(nullptr);
-        info::CPlayerpc_PartyJoinInvitationAnswer1829_clbk CPlayerpc_PartyJoinInvitationAnswer1829_user(nullptr);
-        info::CPlayerpc_PartyLeaveCompulsionReqeuest1831_ptr CPlayerpc_PartyLeaveCompulsionReqeuest1831_next(nullptr);
-        info::CPlayerpc_PartyLeaveCompulsionReqeuest1831_clbk CPlayerpc_PartyLeaveCompulsionReqeuest1831_user(nullptr);
-        info::CPlayerpc_PartyLeaveSelfReqeuest1833_ptr CPlayerpc_PartyLeaveSelfReqeuest1833_next(nullptr);
-        info::CPlayerpc_PartyLeaveSelfReqeuest1833_clbk CPlayerpc_PartyLeaveSelfReqeuest1833_user(nullptr);
-        info::CPlayerpc_PartyLockReqeuest1835_ptr CPlayerpc_PartyLockReqeuest1835_next(nullptr);
-        info::CPlayerpc_PartyLockReqeuest1835_clbk CPlayerpc_PartyLockReqeuest1835_user(nullptr);
-        info::CPlayerpc_PartyReqBlock1837_ptr CPlayerpc_PartyReqBlock1837_next(nullptr);
-        info::CPlayerpc_PartyReqBlock1837_clbk CPlayerpc_PartyReqBlock1837_user(nullptr);
-        info::CPlayerpc_PartySuccessionReqeuest1839_ptr CPlayerpc_PartySuccessionReqeuest1839_next(nullptr);
-        info::CPlayerpc_PartySuccessionReqeuest1839_clbk CPlayerpc_PartySuccessionReqeuest1839_user(nullptr);
-        info::CPlayerpc_PlayAttack_Force1841_ptr CPlayerpc_PlayAttack_Force1841_next(nullptr);
-        info::CPlayerpc_PlayAttack_Force1841_clbk CPlayerpc_PlayAttack_Force1841_user(nullptr);
-        info::CPlayerpc_PlayAttack_Gen1843_ptr CPlayerpc_PlayAttack_Gen1843_next(nullptr);
-        info::CPlayerpc_PlayAttack_Gen1843_clbk CPlayerpc_PlayAttack_Gen1843_user(nullptr);
-        info::CPlayerpc_PlayAttack_SelfDestruction1845_ptr CPlayerpc_PlayAttack_SelfDestruction1845_next(nullptr);
-        info::CPlayerpc_PlayAttack_SelfDestruction1845_clbk CPlayerpc_PlayAttack_SelfDestruction1845_user(nullptr);
-        info::CPlayerpc_PlayAttack_Siege1847_ptr CPlayerpc_PlayAttack_Siege1847_next(nullptr);
-        info::CPlayerpc_PlayAttack_Siege1847_clbk CPlayerpc_PlayAttack_Siege1847_user(nullptr);
-        info::CPlayerpc_PlayAttack_Skill1849_ptr CPlayerpc_PlayAttack_Skill1849_next(nullptr);
-        info::CPlayerpc_PlayAttack_Skill1849_clbk CPlayerpc_PlayAttack_Skill1849_user(nullptr);
-        info::CPlayerpc_PlayAttack_Test1851_ptr CPlayerpc_PlayAttack_Test1851_next(nullptr);
-        info::CPlayerpc_PlayAttack_Test1851_clbk CPlayerpc_PlayAttack_Test1851_user(nullptr);
-        info::CPlayerpc_PlayAttack_Unit1853_ptr CPlayerpc_PlayAttack_Unit1853_next(nullptr);
-        info::CPlayerpc_PlayAttack_Unit1853_clbk CPlayerpc_PlayAttack_Unit1853_user(nullptr);
-        info::CPlayerpc_PostContentRequest1855_ptr CPlayerpc_PostContentRequest1855_next(nullptr);
-        info::CPlayerpc_PostContentRequest1855_clbk CPlayerpc_PostContentRequest1855_user(nullptr);
-        info::CPlayerpc_PostDeleteRequest1857_ptr CPlayerpc_PostDeleteRequest1857_next(nullptr);
-        info::CPlayerpc_PostDeleteRequest1857_clbk CPlayerpc_PostDeleteRequest1857_user(nullptr);
-        info::CPlayerpc_PostItemGoldRequest1859_ptr CPlayerpc_PostItemGoldRequest1859_next(nullptr);
-        info::CPlayerpc_PostItemGoldRequest1859_clbk CPlayerpc_PostItemGoldRequest1859_user(nullptr);
-        info::CPlayerpc_PostListRequest1861_ptr CPlayerpc_PostListRequest1861_next(nullptr);
-        info::CPlayerpc_PostListRequest1861_clbk CPlayerpc_PostListRequest1861_user(nullptr);
-        info::CPlayerpc_PostReturnConfirmRequest1863_ptr CPlayerpc_PostReturnConfirmRequest1863_next(nullptr);
-        info::CPlayerpc_PostReturnConfirmRequest1863_clbk CPlayerpc_PostReturnConfirmRequest1863_user(nullptr);
-        info::CPlayerpc_PotionDivision1865_ptr CPlayerpc_PotionDivision1865_next(nullptr);
-        info::CPlayerpc_PotionDivision1865_clbk CPlayerpc_PotionDivision1865_user(nullptr);
-        info::CPlayerpc_PotionSeparation1867_ptr CPlayerpc_PotionSeparation1867_next(nullptr);
-        info::CPlayerpc_PotionSeparation1867_clbk CPlayerpc_PotionSeparation1867_user(nullptr);
-        info::CPlayerpc_PotionUseTrunkExtend1869_ptr CPlayerpc_PotionUseTrunkExtend1869_next(nullptr);
-        info::CPlayerpc_PotionUseTrunkExtend1869_clbk CPlayerpc_PotionUseTrunkExtend1869_user(nullptr);
-        info::CPlayerpc_ProposeVoteRequest1871_ptr CPlayerpc_ProposeVoteRequest1871_next(nullptr);
-        info::CPlayerpc_ProposeVoteRequest1871_clbk CPlayerpc_ProposeVoteRequest1871_user(nullptr);
-        info::CPlayerpc_PvpCashRecorver1873_ptr CPlayerpc_PvpCashRecorver1873_next(nullptr);
-        info::CPlayerpc_PvpCashRecorver1873_clbk CPlayerpc_PvpCashRecorver1873_user(nullptr);
-        info::CPlayerpc_QuestGiveupRequest1875_ptr CPlayerpc_QuestGiveupRequest1875_next(nullptr);
-        info::CPlayerpc_QuestGiveupRequest1875_clbk CPlayerpc_QuestGiveupRequest1875_user(nullptr);
-        info::CPlayerpc_RadarCharInfo1877_ptr CPlayerpc_RadarCharInfo1877_next(nullptr);
-        info::CPlayerpc_RadarCharInfo1877_clbk CPlayerpc_RadarCharInfo1877_user(nullptr);
-        info::CPlayerpc_RealMovPos1879_ptr CPlayerpc_RealMovPos1879_next(nullptr);
-        info::CPlayerpc_RealMovPos1879_clbk CPlayerpc_RealMovPos1879_user(nullptr);
-        info::CPlayerpc_RefreshGroupTargetPosition1881_ptr CPlayerpc_RefreshGroupTargetPosition1881_next(nullptr);
-        info::CPlayerpc_RefreshGroupTargetPosition1881_clbk CPlayerpc_RefreshGroupTargetPosition1881_user(nullptr);
-        info::CPlayerpc_RegistBind1883_ptr CPlayerpc_RegistBind1883_next(nullptr);
-        info::CPlayerpc_RegistBind1883_clbk CPlayerpc_RegistBind1883_user(nullptr);
-        info::CPlayerpc_ReleaseGroupTargetObjectRequest1885_ptr CPlayerpc_ReleaseGroupTargetObjectRequest1885_next(nullptr);
-        info::CPlayerpc_ReleaseGroupTargetObjectRequest1885_clbk CPlayerpc_ReleaseGroupTargetObjectRequest1885_user(nullptr);
-        info::CPlayerpc_ReleaseSiegeModeRequest1887_ptr CPlayerpc_ReleaseSiegeModeRequest1887_next(nullptr);
-        info::CPlayerpc_ReleaseSiegeModeRequest1887_clbk CPlayerpc_ReleaseSiegeModeRequest1887_user(nullptr);
-        info::CPlayerpc_ReleaseTargetObjectRequest1889_ptr CPlayerpc_ReleaseTargetObjectRequest1889_next(nullptr);
-        info::CPlayerpc_ReleaseTargetObjectRequest1889_clbk CPlayerpc_ReleaseTargetObjectRequest1889_user(nullptr);
-        info::CPlayerpc_RenameItemNConditionCheck1891_ptr CPlayerpc_RenameItemNConditionCheck1891_next(nullptr);
-        info::CPlayerpc_RenameItemNConditionCheck1891_clbk CPlayerpc_RenameItemNConditionCheck1891_user(nullptr);
-        info::CPlayerpc_RequestChangeTaxRate1893_ptr CPlayerpc_RequestChangeTaxRate1893_next(nullptr);
-        info::CPlayerpc_RequestChangeTaxRate1893_clbk CPlayerpc_RequestChangeTaxRate1893_user(nullptr);
-        info::CPlayerpc_RequestDialogWithNPC1895_ptr CPlayerpc_RequestDialogWithNPC1895_next(nullptr);
-        info::CPlayerpc_RequestDialogWithNPC1895_clbk CPlayerpc_RequestDialogWithNPC1895_user(nullptr);
-        info::CPlayerpc_RequestPatriarchPunishment1897_ptr CPlayerpc_RequestPatriarchPunishment1897_next(nullptr);
-        info::CPlayerpc_RequestPatriarchPunishment1897_clbk CPlayerpc_RequestPatriarchPunishment1897_user(nullptr);
-        info::CPlayerpc_RequestQuestFromNPC1899_ptr CPlayerpc_RequestQuestFromNPC1899_next(nullptr);
-        info::CPlayerpc_RequestQuestFromNPC1899_clbk CPlayerpc_RequestQuestFromNPC1899_user(nullptr);
-        info::CPlayerpc_RequestQuestListFromNPC1901_ptr CPlayerpc_RequestQuestListFromNPC1901_next(nullptr);
-        info::CPlayerpc_RequestQuestListFromNPC1901_clbk CPlayerpc_RequestQuestListFromNPC1901_user(nullptr);
-        info::CPlayerpc_RequestTaxRate1903_ptr CPlayerpc_RequestTaxRate1903_next(nullptr);
-        info::CPlayerpc_RequestTaxRate1903_clbk CPlayerpc_RequestTaxRate1903_user(nullptr);
-        info::CPlayerpc_RequestUILockCertify1905_ptr CPlayerpc_RequestUILockCertify1905_next(nullptr);
-        info::CPlayerpc_RequestUILockCertify1905_clbk CPlayerpc_RequestUILockCertify1905_user(nullptr);
-        info::CPlayerpc_RequestUILockFindPW1907_ptr CPlayerpc_RequestUILockFindPW1907_next(nullptr);
-        info::CPlayerpc_RequestUILockFindPW1907_clbk CPlayerpc_RequestUILockFindPW1907_user(nullptr);
-        info::CPlayerpc_RequestUILockInit1909_ptr CPlayerpc_RequestUILockInit1909_next(nullptr);
-        info::CPlayerpc_RequestUILockInit1909_clbk CPlayerpc_RequestUILockInit1909_user(nullptr);
-        info::CPlayerpc_RequestUILockUpdate1911_ptr CPlayerpc_RequestUILockUpdate1911_next(nullptr);
-        info::CPlayerpc_RequestUILockUpdate1911_clbk CPlayerpc_RequestUILockUpdate1911_user(nullptr);
-        info::CPlayerpc_RequestWatchingWithNPC1913_ptr CPlayerpc_RequestWatchingWithNPC1913_next(nullptr);
-        info::CPlayerpc_RequestWatchingWithNPC1913_clbk CPlayerpc_RequestWatchingWithNPC1913_user(nullptr);
-        info::CPlayerpc_ResDivision1915_ptr CPlayerpc_ResDivision1915_next(nullptr);
-        info::CPlayerpc_ResDivision1915_clbk CPlayerpc_ResDivision1915_user(nullptr);
-        info::CPlayerpc_ResSeparation1917_ptr CPlayerpc_ResSeparation1917_next(nullptr);
-        info::CPlayerpc_ResSeparation1917_clbk CPlayerpc_ResSeparation1917_user(nullptr);
-        info::CPlayerpc_Resurrect1919_ptr CPlayerpc_Resurrect1919_next(nullptr);
-        info::CPlayerpc_Resurrect1919_clbk CPlayerpc_Resurrect1919_user(nullptr);
-        info::CPlayerpc_Revival1921_ptr CPlayerpc_Revival1921_next(nullptr);
-        info::CPlayerpc_Revival1921_clbk CPlayerpc_Revival1921_user(nullptr);
-        info::CPlayerpc_SelectClassRequest1923_ptr CPlayerpc_SelectClassRequest1923_next(nullptr);
-        info::CPlayerpc_SelectClassRequest1923_clbk CPlayerpc_SelectClassRequest1923_user(nullptr);
-        info::CPlayerpc_SelectQuestAfterHappenEvent1925_ptr CPlayerpc_SelectQuestAfterHappenEvent1925_next(nullptr);
-        info::CPlayerpc_SelectQuestAfterHappenEvent1925_clbk CPlayerpc_SelectQuestAfterHappenEvent1925_user(nullptr);
-        info::CPlayerpc_SelectQuestReward1927_ptr CPlayerpc_SelectQuestReward1927_next(nullptr);
-        info::CPlayerpc_SelectQuestReward1927_clbk CPlayerpc_SelectQuestReward1927_user(nullptr);
-        info::CPlayerpc_SellItemStore1929_ptr CPlayerpc_SellItemStore1929_next(nullptr);
-        info::CPlayerpc_SellItemStore1929_clbk CPlayerpc_SellItemStore1929_user(nullptr);
-        info::CPlayerpc_SetGroupMapPointRequest1931_ptr CPlayerpc_SetGroupMapPointRequest1931_next(nullptr);
-        info::CPlayerpc_SetGroupMapPointRequest1931_clbk CPlayerpc_SetGroupMapPointRequest1931_user(nullptr);
-        info::CPlayerpc_SetGroupTargetObjectRequest1933_ptr CPlayerpc_SetGroupTargetObjectRequest1933_next(nullptr);
-        info::CPlayerpc_SetGroupTargetObjectRequest1933_clbk CPlayerpc_SetGroupTargetObjectRequest1933_user(nullptr);
-        info::CPlayerpc_SetInGuildBattle1935_ptr CPlayerpc_SetInGuildBattle1935_next(nullptr);
-        info::CPlayerpc_SetInGuildBattle1935_clbk CPlayerpc_SetInGuildBattle1935_user(nullptr);
-        info::CPlayerpc_SetItemCheckRequest1937_ptr CPlayerpc_SetItemCheckRequest1937_next(nullptr);
-        info::CPlayerpc_SetItemCheckRequest1937_clbk CPlayerpc_SetItemCheckRequest1937_user(nullptr);
-        info::CPlayerpc_SetRaceBossCryMsg1939_ptr CPlayerpc_SetRaceBossCryMsg1939_next(nullptr);
-        info::CPlayerpc_SetRaceBossCryMsg1939_clbk CPlayerpc_SetRaceBossCryMsg1939_user(nullptr);
-        info::CPlayerpc_SetTargetObjectRequest1941_ptr CPlayerpc_SetTargetObjectRequest1941_next(nullptr);
-        info::CPlayerpc_SetTargetObjectRequest1941_clbk CPlayerpc_SetTargetObjectRequest1941_user(nullptr);
-        info::CPlayerpc_SkillRequest1943_ptr CPlayerpc_SkillRequest1943_next(nullptr);
-        info::CPlayerpc_SkillRequest1943_clbk CPlayerpc_SkillRequest1943_user(nullptr);
-        info::CPlayerpc_Stop1945_ptr CPlayerpc_Stop1945_next(nullptr);
-        info::CPlayerpc_Stop1945_clbk CPlayerpc_Stop1945_user(nullptr);
-        info::CPlayerpc_TakeGroundingItem1947_ptr CPlayerpc_TakeGroundingItem1947_next(nullptr);
-        info::CPlayerpc_TakeGroundingItem1947_clbk CPlayerpc_TakeGroundingItem1947_user(nullptr);
-        info::CPlayerpc_TalikCrystalExchange1949_ptr CPlayerpc_TalikCrystalExchange1949_next(nullptr);
-        info::CPlayerpc_TalikCrystalExchange1949_clbk CPlayerpc_TalikCrystalExchange1949_user(nullptr);
-        info::CPlayerpc_ThrowSkillRequest1951_ptr CPlayerpc_ThrowSkillRequest1951_next(nullptr);
-        info::CPlayerpc_ThrowSkillRequest1951_clbk CPlayerpc_ThrowSkillRequest1951_user(nullptr);
-        info::CPlayerpc_ThrowStorageItem1953_ptr CPlayerpc_ThrowStorageItem1953_next(nullptr);
-        info::CPlayerpc_ThrowStorageItem1953_clbk CPlayerpc_ThrowStorageItem1953_user(nullptr);
-        info::CPlayerpc_ThrowUnitRequest1955_ptr CPlayerpc_ThrowUnitRequest1955_next(nullptr);
-        info::CPlayerpc_ThrowUnitRequest1955_clbk CPlayerpc_ThrowUnitRequest1955_user(nullptr);
-        info::CPlayerpc_TradeBlock1957_ptr CPlayerpc_TradeBlock1957_next(nullptr);
-        info::CPlayerpc_TradeBlock1957_clbk CPlayerpc_TradeBlock1957_user(nullptr);
-        info::CPlayerpc_TransShipRenewTicketRequest1959_ptr CPlayerpc_TransShipRenewTicketRequest1959_next(nullptr);
-        info::CPlayerpc_TransShipRenewTicketRequest1959_clbk CPlayerpc_TransShipRenewTicketRequest1959_user(nullptr);
-        info::CPlayerpc_TransformSiegeModeRequest1961_ptr CPlayerpc_TransformSiegeModeRequest1961_next(nullptr);
-        info::CPlayerpc_TransformSiegeModeRequest1961_clbk CPlayerpc_TransformSiegeModeRequest1961_user(nullptr);
-        info::CPlayerpc_TrunkAlterItemSlotRequest1963_ptr CPlayerpc_TrunkAlterItemSlotRequest1963_next(nullptr);
-        info::CPlayerpc_TrunkAlterItemSlotRequest1963_clbk CPlayerpc_TrunkAlterItemSlotRequest1963_user(nullptr);
-        info::CPlayerpc_TrunkChangePasswdRequest1965_ptr CPlayerpc_TrunkChangePasswdRequest1965_next(nullptr);
-        info::CPlayerpc_TrunkChangePasswdRequest1965_clbk CPlayerpc_TrunkChangePasswdRequest1965_user(nullptr);
-        info::CPlayerpc_TrunkCreateCostIsFreeRequest1967_ptr CPlayerpc_TrunkCreateCostIsFreeRequest1967_next(nullptr);
-        info::CPlayerpc_TrunkCreateCostIsFreeRequest1967_clbk CPlayerpc_TrunkCreateCostIsFreeRequest1967_user(nullptr);
-        info::CPlayerpc_TrunkDownloadRequest1969_ptr CPlayerpc_TrunkDownloadRequest1969_next(nullptr);
-        info::CPlayerpc_TrunkDownloadRequest1969_clbk CPlayerpc_TrunkDownloadRequest1969_user(nullptr);
-        info::CPlayerpc_TrunkEstRequest1971_ptr CPlayerpc_TrunkEstRequest1971_next(nullptr);
-        info::CPlayerpc_TrunkEstRequest1971_clbk CPlayerpc_TrunkEstRequest1971_user(nullptr);
-        info::CPlayerpc_TrunkExtendRequest1973_ptr CPlayerpc_TrunkExtendRequest1973_next(nullptr);
-        info::CPlayerpc_TrunkExtendRequest1973_clbk CPlayerpc_TrunkExtendRequest1973_user(nullptr);
-        info::CPlayerpc_TrunkHintAnswerRequest1975_ptr CPlayerpc_TrunkHintAnswerRequest1975_next(nullptr);
-        info::CPlayerpc_TrunkHintAnswerRequest1975_clbk CPlayerpc_TrunkHintAnswerRequest1975_user(nullptr);
-        info::CPlayerpc_TrunkIoMergeRequest1977_ptr CPlayerpc_TrunkIoMergeRequest1977_next(nullptr);
-        info::CPlayerpc_TrunkIoMergeRequest1977_clbk CPlayerpc_TrunkIoMergeRequest1977_user(nullptr);
-        info::CPlayerpc_TrunkIoMoneyRequest1979_ptr CPlayerpc_TrunkIoMoneyRequest1979_next(nullptr);
-        info::CPlayerpc_TrunkIoMoneyRequest1979_clbk CPlayerpc_TrunkIoMoneyRequest1979_user(nullptr);
-        info::CPlayerpc_TrunkIoMoveRequest1981_ptr CPlayerpc_TrunkIoMoveRequest1981_next(nullptr);
-        info::CPlayerpc_TrunkIoMoveRequest1981_clbk CPlayerpc_TrunkIoMoveRequest1981_user(nullptr);
-        info::CPlayerpc_TrunkIoSwapRequest1983_ptr CPlayerpc_TrunkIoSwapRequest1983_next(nullptr);
-        info::CPlayerpc_TrunkIoSwapRequest1983_clbk CPlayerpc_TrunkIoSwapRequest1983_user(nullptr);
-        info::CPlayerpc_TrunkPotionDivision1985_ptr CPlayerpc_TrunkPotionDivision1985_next(nullptr);
-        info::CPlayerpc_TrunkPotionDivision1985_clbk CPlayerpc_TrunkPotionDivision1985_user(nullptr);
-        info::CPlayerpc_TrunkPwHintIndexRequest1987_ptr CPlayerpc_TrunkPwHintIndexRequest1987_next(nullptr);
-        info::CPlayerpc_TrunkPwHintIndexRequest1987_clbk CPlayerpc_TrunkPwHintIndexRequest1987_user(nullptr);
-        info::CPlayerpc_TrunkResDivision1989_ptr CPlayerpc_TrunkResDivision1989_next(nullptr);
-        info::CPlayerpc_TrunkResDivision1989_clbk CPlayerpc_TrunkResDivision1989_user(nullptr);
-        info::CPlayerpc_UnitBulletFillRequest1991_ptr CPlayerpc_UnitBulletFillRequest1991_next(nullptr);
-        info::CPlayerpc_UnitBulletFillRequest1991_clbk CPlayerpc_UnitBulletFillRequest1991_user(nullptr);
-        info::CPlayerpc_UnitBulletReplaceRequest1993_ptr CPlayerpc_UnitBulletReplaceRequest1993_next(nullptr);
-        info::CPlayerpc_UnitBulletReplaceRequest1993_clbk CPlayerpc_UnitBulletReplaceRequest1993_user(nullptr);
-        info::CPlayerpc_UnitDeliveryRequest1995_ptr CPlayerpc_UnitDeliveryRequest1995_next(nullptr);
-        info::CPlayerpc_UnitDeliveryRequest1995_clbk CPlayerpc_UnitDeliveryRequest1995_user(nullptr);
-        info::CPlayerpc_UnitFrameBuyRequest1997_ptr CPlayerpc_UnitFrameBuyRequest1997_next(nullptr);
-        info::CPlayerpc_UnitFrameBuyRequest1997_clbk CPlayerpc_UnitFrameBuyRequest1997_user(nullptr);
-        info::CPlayerpc_UnitFrameRepairRequest1999_ptr CPlayerpc_UnitFrameRepairRequest1999_next(nullptr);
-        info::CPlayerpc_UnitFrameRepairRequest1999_clbk CPlayerpc_UnitFrameRepairRequest1999_user(nullptr);
-        info::CPlayerpc_UnitLeaveRequest2001_ptr CPlayerpc_UnitLeaveRequest2001_next(nullptr);
-        info::CPlayerpc_UnitLeaveRequest2001_clbk CPlayerpc_UnitLeaveRequest2001_user(nullptr);
-        info::CPlayerpc_UnitPackFillRequest2003_ptr CPlayerpc_UnitPackFillRequest2003_next(nullptr);
-        info::CPlayerpc_UnitPackFillRequest2003_clbk CPlayerpc_UnitPackFillRequest2003_user(nullptr);
-        info::CPlayerpc_UnitPartTuningRequest2005_ptr CPlayerpc_UnitPartTuningRequest2005_next(nullptr);
-        info::CPlayerpc_UnitPartTuningRequest2005_clbk CPlayerpc_UnitPartTuningRequest2005_user(nullptr);
-        info::CPlayerpc_UnitReturnRequest2007_ptr CPlayerpc_UnitReturnRequest2007_next(nullptr);
-        info::CPlayerpc_UnitReturnRequest2007_clbk CPlayerpc_UnitReturnRequest2007_user(nullptr);
-        info::CPlayerpc_UnitSellRequest2009_ptr CPlayerpc_UnitSellRequest2009_next(nullptr);
-        info::CPlayerpc_UnitSellRequest2009_clbk CPlayerpc_UnitSellRequest2009_user(nullptr);
-        info::CPlayerpc_UnitTakeRequest2011_ptr CPlayerpc_UnitTakeRequest2011_next(nullptr);
-        info::CPlayerpc_UnitTakeRequest2011_clbk CPlayerpc_UnitTakeRequest2011_user(nullptr);
-        info::CPlayerpc_UpdateDataForPostSend2013_ptr CPlayerpc_UpdateDataForPostSend2013_next(nullptr);
-        info::CPlayerpc_UpdateDataForPostSend2013_clbk CPlayerpc_UpdateDataForPostSend2013_user(nullptr);
-        info::CPlayerpc_UpdateDataForTrade2015_ptr CPlayerpc_UpdateDataForTrade2015_next(nullptr);
-        info::CPlayerpc_UpdateDataForTrade2015_clbk CPlayerpc_UpdateDataForTrade2015_user(nullptr);
-        info::CPlayerpc_UpgradeItem2017_ptr CPlayerpc_UpgradeItem2017_next(nullptr);
-        info::CPlayerpc_UpgradeItem2017_clbk CPlayerpc_UpgradeItem2017_user(nullptr);
-        info::CPlayerpc_UseFireCracker2019_ptr CPlayerpc_UseFireCracker2019_next(nullptr);
-        info::CPlayerpc_UseFireCracker2019_clbk CPlayerpc_UseFireCracker2019_user(nullptr);
-        info::CPlayerpc_UsePotionItem2021_ptr CPlayerpc_UsePotionItem2021_next(nullptr);
-        info::CPlayerpc_UsePotionItem2021_clbk CPlayerpc_UsePotionItem2021_user(nullptr);
-        info::CPlayerpc_UseRadarItem2023_ptr CPlayerpc_UseRadarItem2023_next(nullptr);
-        info::CPlayerpc_UseRadarItem2023_clbk CPlayerpc_UseRadarItem2023_user(nullptr);
-        info::CPlayerpc_UseRecoverLossExpItem2025_ptr CPlayerpc_UseRecoverLossExpItem2025_next(nullptr);
-        info::CPlayerpc_UseRecoverLossExpItem2025_clbk CPlayerpc_UseRecoverLossExpItem2025_user(nullptr);
-        info::CPlayerpc_UserSoccerBall2027_ptr CPlayerpc_UserSoccerBall2027_next(nullptr);
-        info::CPlayerpc_UserSoccerBall2027_clbk CPlayerpc_UserSoccerBall2027_user(nullptr);
-        info::CPlayerpc_WPActiveAttack_Force2029_ptr CPlayerpc_WPActiveAttack_Force2029_next(nullptr);
-        info::CPlayerpc_WPActiveAttack_Force2029_clbk CPlayerpc_WPActiveAttack_Force2029_user(nullptr);
-        info::CPlayerpc_WPActiveAttack_Skill2031_ptr CPlayerpc_WPActiveAttack_Skill2031_next(nullptr);
-        info::CPlayerpc_WPActiveAttack_Skill2031_clbk CPlayerpc_WPActiveAttack_Skill2031_user(nullptr);
-        info::CPlayerpc_WhisperBlock2033_ptr CPlayerpc_WhisperBlock2033_next(nullptr);
-        info::CPlayerpc_WhisperBlock2033_clbk CPlayerpc_WhisperBlock2033_user(nullptr);
-        info::CPlayerskill_process2035_ptr CPlayerskill_process2035_next(nullptr);
-        info::CPlayerskill_process2035_clbk CPlayerskill_process2035_user(nullptr);
-        info::CPlayerskill_process_for_aura2037_ptr CPlayerskill_process_for_aura2037_next(nullptr);
-        info::CPlayerskill_process_for_aura2037_clbk CPlayerskill_process_for_aura2037_user(nullptr);
-        info::CPlayerskill_process_for_item2039_ptr CPlayerskill_process_for_item2039_next(nullptr);
-        info::CPlayerskill_process_for_item2039_clbk CPlayerskill_process_for_item2039_user(nullptr);
-        info::CPlayerdtor_CPlayer2041_ptr CPlayerdtor_CPlayer2041_next(nullptr);
-        info::CPlayerdtor_CPlayer2041_clbk CPlayerdtor_CPlayer2041_user(nullptr);
+        static info::CPlayerAddDalant2_ptr CPlayerAddDalant2_next(nullptr);
+        static info::CPlayerAddDalant2_clbk CPlayerAddDalant2_user(nullptr);
+        static info::CPlayerAddGold4_ptr CPlayerAddGold4_next(nullptr);
+        static info::CPlayerAddGold4_clbk CPlayerAddGold4_user(nullptr);
+        static info::CPlayerAlterDalant6_ptr CPlayerAlterDalant6_next(nullptr);
+        static info::CPlayerAlterDalant6_clbk CPlayerAlterDalant6_user(nullptr);
+        static info::CPlayerAlterExp8_ptr CPlayerAlterExp8_next(nullptr);
+        static info::CPlayerAlterExp8_clbk CPlayerAlterExp8_user(nullptr);
+        static info::CPlayerAlterExp_Animus10_ptr CPlayerAlterExp_Animus10_next(nullptr);
+        static info::CPlayerAlterExp_Animus10_clbk CPlayerAlterExp_Animus10_user(nullptr);
+        static info::CPlayerAlterExp_Potion12_ptr CPlayerAlterExp_Potion12_next(nullptr);
+        static info::CPlayerAlterExp_Potion12_clbk CPlayerAlterExp_Potion12_user(nullptr);
+        static info::CPlayerAlterFP_Animus14_ptr CPlayerAlterFP_Animus14_next(nullptr);
+        static info::CPlayerAlterFP_Animus14_clbk CPlayerAlterFP_Animus14_user(nullptr);
+        static info::CPlayerAlterGold16_ptr CPlayerAlterGold16_next(nullptr);
+        static info::CPlayerAlterGold16_clbk CPlayerAlterGold16_user(nullptr);
+        static info::CPlayerAlterHP_Animus18_ptr CPlayerAlterHP_Animus18_next(nullptr);
+        static info::CPlayerAlterHP_Animus18_clbk CPlayerAlterHP_Animus18_user(nullptr);
+        static info::CPlayerAlterMaxLevel20_ptr CPlayerAlterMaxLevel20_next(nullptr);
+        static info::CPlayerAlterMaxLevel20_clbk CPlayerAlterMaxLevel20_user(nullptr);
+        static info::CPlayerAlterMode_Animus22_ptr CPlayerAlterMode_Animus22_next(nullptr);
+        static info::CPlayerAlterMode_Animus22_clbk CPlayerAlterMode_Animus22_user(nullptr);
+        static info::CPlayerAlterPvPCashBag24_ptr CPlayerAlterPvPCashBag24_next(nullptr);
+        static info::CPlayerAlterPvPCashBag24_clbk CPlayerAlterPvPCashBag24_user(nullptr);
+        static info::CPlayerAlterPvPPoint26_ptr CPlayerAlterPvPPoint26_next(nullptr);
+        static info::CPlayerAlterPvPPoint26_clbk CPlayerAlterPvPPoint26_user(nullptr);
+        static info::CPlayerAlterPvpPointLeak28_ptr CPlayerAlterPvpPointLeak28_next(nullptr);
+        static info::CPlayerAlterPvpPointLeak28_clbk CPlayerAlterPvpPointLeak28_user(nullptr);
+        static info::CPlayerAlterSec30_ptr CPlayerAlterSec30_next(nullptr);
+        static info::CPlayerAlterSec30_clbk CPlayerAlterSec30_user(nullptr);
+        static info::CPlayerApplyEquipItemEffect32_ptr CPlayerApplyEquipItemEffect32_next(nullptr);
+        static info::CPlayerApplyEquipItemEffect32_clbk CPlayerApplyEquipItemEffect32_user(nullptr);
+        static info::CPlayerApplySetItemEffect34_ptr CPlayerApplySetItemEffect34_next(nullptr);
+        static info::CPlayerApplySetItemEffect34_clbk CPlayerApplySetItemEffect34_user(nullptr);
+        static info::CPlayerAttackableHeight36_ptr CPlayerAttackableHeight36_next(nullptr);
+        static info::CPlayerAttackableHeight36_clbk CPlayerAttackableHeight36_user(nullptr);
+        static info::CPlayerAutoCharge_Booster38_ptr CPlayerAutoCharge_Booster38_next(nullptr);
+        static info::CPlayerAutoCharge_Booster38_clbk CPlayerAutoCharge_Booster38_user(nullptr);
+        static info::CPlayerAutoRecover40_ptr CPlayerAutoRecover40_next(nullptr);
+        static info::CPlayerAutoRecover40_clbk CPlayerAutoRecover40_user(nullptr);
+        static info::CPlayerAutoRecover_Animus42_ptr CPlayerAutoRecover_Animus42_next(nullptr);
+        static info::CPlayerAutoRecover_Animus42_clbk CPlayerAutoRecover_Animus42_user(nullptr);
+        static info::CPlayerBilling_Logout44_ptr CPlayerBilling_Logout44_next(nullptr);
+        static info::CPlayerBilling_Logout44_clbk CPlayerBilling_Logout44_user(nullptr);
+        static info::CPlayerBreakCloakBooster46_ptr CPlayerBreakCloakBooster46_next(nullptr);
+        static info::CPlayerBreakCloakBooster46_clbk CPlayerBreakCloakBooster46_user(nullptr);
+        static info::CPlayerctor_CPlayer48_ptr CPlayerctor_CPlayer48_next(nullptr);
+        static info::CPlayerctor_CPlayer48_clbk CPlayerctor_CPlayer48_user(nullptr);
+        static info::CPlayerCalPvpCashPoint50_ptr CPlayerCalPvpCashPoint50_next(nullptr);
+        static info::CPlayerCalPvpCashPoint50_clbk CPlayerCalPvpCashPoint50_user(nullptr);
+        static info::CPlayerCalPvpTempCash52_ptr CPlayerCalPvpTempCash52_next(nullptr);
+        static info::CPlayerCalPvpTempCash52_clbk CPlayerCalPvpTempCash52_user(nullptr);
+        static info::CPlayerCalcAddPointByClass54_ptr CPlayerCalcAddPointByClass54_next(nullptr);
+        static info::CPlayerCalcAddPointByClass54_clbk CPlayerCalcAddPointByClass54_user(nullptr);
+        static info::CPlayerCalcCurFPRate56_ptr CPlayerCalcCurFPRate56_next(nullptr);
+        static info::CPlayerCalcCurFPRate56_clbk CPlayerCalcCurFPRate56_user(nullptr);
+        static info::CPlayerCalcCurHPRate58_ptr CPlayerCalcCurHPRate58_next(nullptr);
+        static info::CPlayerCalcCurHPRate58_clbk CPlayerCalcCurHPRate58_user(nullptr);
+        static info::CPlayerCalcCurSPRate60_ptr CPlayerCalcCurSPRate60_next(nullptr);
+        static info::CPlayerCalcCurSPRate60_clbk CPlayerCalcCurSPRate60_user(nullptr);
+        static info::CPlayerCalcDPRate62_ptr CPlayerCalcDPRate62_next(nullptr);
+        static info::CPlayerCalcDPRate62_clbk CPlayerCalcDPRate62_user(nullptr);
+        static info::CPlayerCalcDefTol64_ptr CPlayerCalcDefTol64_next(nullptr);
+        static info::CPlayerCalcDefTol64_clbk CPlayerCalcDefTol64_user(nullptr);
+        static info::CPlayerCalcEquipAttackDelay66_ptr CPlayerCalcEquipAttackDelay66_next(nullptr);
+        static info::CPlayerCalcEquipAttackDelay66_clbk CPlayerCalcEquipAttackDelay66_user(nullptr);
+        static info::CPlayerCalcEquipMaxDP68_ptr CPlayerCalcEquipMaxDP68_next(nullptr);
+        static info::CPlayerCalcEquipMaxDP68_clbk CPlayerCalcEquipMaxDP68_user(nullptr);
+        static info::CPlayerCalcEquipSpeed70_ptr CPlayerCalcEquipSpeed70_next(nullptr);
+        static info::CPlayerCalcEquipSpeed70_clbk CPlayerCalcEquipSpeed70_user(nullptr);
+        static info::CPlayerCalcExp72_ptr CPlayerCalcExp72_next(nullptr);
+        static info::CPlayerCalcExp72_clbk CPlayerCalcExp72_user(nullptr);
+        static info::CPlayerCalcPvP74_ptr CPlayerCalcPvP74_next(nullptr);
+        static info::CPlayerCalcPvP74_clbk CPlayerCalcPvP74_user(nullptr);
+        static info::CPlayerCheckAlterMaxPoint76_ptr CPlayerCheckAlterMaxPoint76_next(nullptr);
+        static info::CPlayerCheckAlterMaxPoint76_clbk CPlayerCheckAlterMaxPoint76_user(nullptr);
+        static info::CPlayerCheckBattleMode78_ptr CPlayerCheckBattleMode78_next(nullptr);
+        static info::CPlayerCheckBattleMode78_clbk CPlayerCheckBattleMode78_user(nullptr);
+        static info::CPlayerCheckGroupMapPoint80_ptr CPlayerCheckGroupMapPoint80_next(nullptr);
+        static info::CPlayerCheckGroupMapPoint80_clbk CPlayerCheckGroupMapPoint80_user(nullptr);
+        static info::CPlayerCheckGroupTargeting82_ptr CPlayerCheckGroupTargeting82_next(nullptr);
+        static info::CPlayerCheckGroupTargeting82_clbk CPlayerCheckGroupTargeting82_user(nullptr);
+        static info::CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_ptr CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_next(nullptr);
+        static info::CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_clbk CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_user(nullptr);
+        static info::CPlayerCheckNameChange86_ptr CPlayerCheckNameChange86_next(nullptr);
+        static info::CPlayerCheckNameChange86_clbk CPlayerCheckNameChange86_user(nullptr);
+        static info::CPlayerCheckPosInTown88_ptr CPlayerCheckPosInTown88_next(nullptr);
+        static info::CPlayerCheckPosInTown88_clbk CPlayerCheckPosInTown88_user(nullptr);
+        static info::CPlayerCheckPos_Region90_ptr CPlayerCheckPos_Region90_next(nullptr);
+        static info::CPlayerCheckPos_Region90_clbk CPlayerCheckPos_Region90_user(nullptr);
+        static info::CPlayerCheckUnitCutTime92_ptr CPlayerCheckUnitCutTime92_next(nullptr);
+        static info::CPlayerCheckUnitCutTime92_clbk CPlayerCheckUnitCutTime92_user(nullptr);
+        static info::CPlayerCheet_BufEffectEnd94_ptr CPlayerCheet_BufEffectEnd94_next(nullptr);
+        static info::CPlayerCheet_BufEffectEnd94_clbk CPlayerCheet_BufEffectEnd94_user(nullptr);
+        static info::CPlayerClearGravityStone96_ptr CPlayerClearGravityStone96_next(nullptr);
+        static info::CPlayerClearGravityStone96_clbk CPlayerClearGravityStone96_user(nullptr);
+        static info::CPlayerCorpse98_ptr CPlayerCorpse98_next(nullptr);
+        static info::CPlayerCorpse98_clbk CPlayerCorpse98_user(nullptr);
+        static info::CPlayerCreate100_ptr CPlayerCreate100_next(nullptr);
+        static info::CPlayerCreate100_clbk CPlayerCreate100_user(nullptr);
+        static info::CPlayerCreateComplete102_ptr CPlayerCreateComplete102_next(nullptr);
+        static info::CPlayerCreateComplete102_clbk CPlayerCreateComplete102_user(nullptr);
+        static info::CPlayerDTradeInit104_ptr CPlayerDTradeInit104_next(nullptr);
+        static info::CPlayerDTradeInit104_clbk CPlayerDTradeInit104_user(nullptr);
+        static info::CPlayerDecHalfSFContDam106_ptr CPlayerDecHalfSFContDam106_next(nullptr);
+        static info::CPlayerDecHalfSFContDam106_clbk CPlayerDecHalfSFContDam106_user(nullptr);
+        static info::CPlayerDelPostData108_ptr CPlayerDelPostData108_next(nullptr);
+        static info::CPlayerDelPostData108_clbk CPlayerDelPostData108_user(nullptr);
+        static info::CPlayerDeleteCouponItem110_ptr CPlayerDeleteCouponItem110_next(nullptr);
+        static info::CPlayerDeleteCouponItem110_clbk CPlayerDeleteCouponItem110_user(nullptr);
+        static info::CPlayerDeleteUseConsumeItem112_ptr CPlayerDeleteUseConsumeItem112_next(nullptr);
+        static info::CPlayerDeleteUseConsumeItem112_clbk CPlayerDeleteUseConsumeItem112_user(nullptr);
+        static info::CPlayerEmb_AddStorage114_ptr CPlayerEmb_AddStorage114_next(nullptr);
+        static info::CPlayerEmb_AddStorage114_clbk CPlayerEmb_AddStorage114_user(nullptr);
+        static info::CPlayerEmb_AlterDurPoint116_ptr CPlayerEmb_AlterDurPoint116_next(nullptr);
+        static info::CPlayerEmb_AlterDurPoint116_clbk CPlayerEmb_AlterDurPoint116_user(nullptr);
+        static info::CPlayerEmb_AlterStat118_ptr CPlayerEmb_AlterStat118_next(nullptr);
+        static info::CPlayerEmb_AlterStat118_clbk CPlayerEmb_AlterStat118_user(nullptr);
+        static info::CPlayerEmb_AlterStat_F120_ptr CPlayerEmb_AlterStat_F120_next(nullptr);
+        static info::CPlayerEmb_AlterStat_F120_clbk CPlayerEmb_AlterStat_F120_user(nullptr);
+        static info::CPlayerEmb_CheckActForQuest122_ptr CPlayerEmb_CheckActForQuest122_next(nullptr);
+        static info::CPlayerEmb_CheckActForQuest122_clbk CPlayerEmb_CheckActForQuest122_user(nullptr);
+        static info::CPlayerEmb_CheckActForQuestParty124_ptr CPlayerEmb_CheckActForQuestParty124_next(nullptr);
+        static info::CPlayerEmb_CheckActForQuestParty124_clbk CPlayerEmb_CheckActForQuestParty124_user(nullptr);
+        static info::CPlayerEmb_CompleteQuest126_ptr CPlayerEmb_CompleteQuest126_next(nullptr);
+        static info::CPlayerEmb_CompleteQuest126_clbk CPlayerEmb_CompleteQuest126_user(nullptr);
+        static info::CPlayerEmb_CreateNPCQuest128_ptr CPlayerEmb_CreateNPCQuest128_next(nullptr);
+        static info::CPlayerEmb_CreateNPCQuest128_clbk CPlayerEmb_CreateNPCQuest128_user(nullptr);
+        static info::CPlayerEmb_CreateQuestEvent130_ptr CPlayerEmb_CreateQuestEvent130_next(nullptr);
+        static info::CPlayerEmb_CreateQuestEvent130_clbk CPlayerEmb_CreateQuestEvent130_user(nullptr);
+        static info::CPlayerEmb_DelStorage132_ptr CPlayerEmb_DelStorage132_next(nullptr);
+        static info::CPlayerEmb_DelStorage132_clbk CPlayerEmb_DelStorage132_user(nullptr);
+        static info::CPlayerEmb_EquipLink134_ptr CPlayerEmb_EquipLink134_next(nullptr);
+        static info::CPlayerEmb_EquipLink134_clbk CPlayerEmb_EquipLink134_user(nullptr);
+        static info::CPlayerEmb_ItemUpgrade136_ptr CPlayerEmb_ItemUpgrade136_next(nullptr);
+        static info::CPlayerEmb_ItemUpgrade136_clbk CPlayerEmb_ItemUpgrade136_user(nullptr);
+        static info::CPlayerEmb_RidindUnit138_ptr CPlayerEmb_RidindUnit138_next(nullptr);
+        static info::CPlayerEmb_RidindUnit138_clbk CPlayerEmb_RidindUnit138_user(nullptr);
+        static info::CPlayerEmb_StartQuest140_ptr CPlayerEmb_StartQuest140_next(nullptr);
+        static info::CPlayerEmb_StartQuest140_clbk CPlayerEmb_StartQuest140_user(nullptr);
+        static info::CPlayerEmb_UpdateStat142_ptr CPlayerEmb_UpdateStat142_next(nullptr);
+        static info::CPlayerEmb_UpdateStat142_clbk CPlayerEmb_UpdateStat142_user(nullptr);
+        static info::CPlayerExitUpdateDataToWorld144_ptr CPlayerExitUpdateDataToWorld144_next(nullptr);
+        static info::CPlayerExitUpdateDataToWorld144_clbk CPlayerExitUpdateDataToWorld144_user(nullptr);
+        static info::CPlayerExtractStringToTime146_ptr CPlayerExtractStringToTime146_next(nullptr);
+        static info::CPlayerExtractStringToTime146_clbk CPlayerExtractStringToTime146_user(nullptr);
+        static info::CPlayerFindFarChatPlayerWithTemp148_ptr CPlayerFindFarChatPlayerWithTemp148_next(nullptr);
+        static info::CPlayerFindFarChatPlayerWithTemp148_clbk CPlayerFindFarChatPlayerWithTemp148_user(nullptr);
+        static info::CPlayerFixTargetWhile150_ptr CPlayerFixTargetWhile150_next(nullptr);
+        static info::CPlayerFixTargetWhile150_clbk CPlayerFixTargetWhile150_user(nullptr);
+        static info::CPlayerForcePullUnit152_ptr CPlayerForcePullUnit152_next(nullptr);
+        static info::CPlayerForcePullUnit152_clbk CPlayerForcePullUnit152_user(nullptr);
+        static info::CPlayerGetAddSpeed154_ptr CPlayerGetAddSpeed154_next(nullptr);
+        static info::CPlayerGetAddSpeed154_clbk CPlayerGetAddSpeed154_user(nullptr);
+        static info::CPlayerGetAfterEffect156_ptr CPlayerGetAfterEffect156_next(nullptr);
+        static info::CPlayerGetAfterEffect156_clbk CPlayerGetAfterEffect156_user(nullptr);
+        static info::CPlayerGetAttackDP158_ptr CPlayerGetAttackDP158_next(nullptr);
+        static info::CPlayerGetAttackDP158_clbk CPlayerGetAttackDP158_user(nullptr);
+        static info::CPlayerGetAttackLevel160_ptr CPlayerGetAttackLevel160_next(nullptr);
+        static info::CPlayerGetAttackLevel160_clbk CPlayerGetAttackLevel160_user(nullptr);
+        static info::CPlayerGetAttackRange162_ptr CPlayerGetAttackRange162_next(nullptr);
+        static info::CPlayerGetAttackRange162_clbk CPlayerGetAttackRange162_user(nullptr);
+        static info::CPlayerGetAvoidRate164_ptr CPlayerGetAvoidRate164_next(nullptr);
+        static info::CPlayerGetAvoidRate164_clbk CPlayerGetAvoidRate164_user(nullptr);
+        static info::CPlayerGetBillingType166_ptr CPlayerGetBillingType166_next(nullptr);
+        static info::CPlayerGetBillingType166_clbk CPlayerGetBillingType166_user(nullptr);
+        static info::CPlayerGetBindDummy168_ptr CPlayerGetBindDummy168_next(nullptr);
+        static info::CPlayerGetBindDummy168_clbk CPlayerGetBindDummy168_user(nullptr);
+        static info::CPlayerGetBindMap170_ptr CPlayerGetBindMap170_next(nullptr);
+        static info::CPlayerGetBindMap170_clbk CPlayerGetBindMap170_user(nullptr);
+        static info::CPlayerGetBindMapData172_ptr CPlayerGetBindMapData172_next(nullptr);
+        static info::CPlayerGetBindMapData172_clbk CPlayerGetBindMapData172_user(nullptr);
+        static info::CPlayerGetCashAmount174_ptr CPlayerGetCashAmount174_next(nullptr);
+        static info::CPlayerGetCashAmount174_clbk CPlayerGetCashAmount174_user(nullptr);
+        static info::CPlayerGetDP176_ptr CPlayerGetDP176_next(nullptr);
+        static info::CPlayerGetDP176_clbk CPlayerGetDP176_user(nullptr);
+        static info::CPlayerGetDamageDP178_ptr CPlayerGetDamageDP178_next(nullptr);
+        static info::CPlayerGetDamageDP178_clbk CPlayerGetDamageDP178_user(nullptr);
+        static info::CPlayerGetDamageLevel180_ptr CPlayerGetDamageLevel180_next(nullptr);
+        static info::CPlayerGetDamageLevel180_clbk CPlayerGetDamageLevel180_user(nullptr);
+        static info::CPlayerGetDefFC182_ptr CPlayerGetDefFC182_next(nullptr);
+        static info::CPlayerGetDefFC182_clbk CPlayerGetDefFC182_user(nullptr);
+        static info::CPlayerGetDefFacing184_ptr CPlayerGetDefFacing184_next(nullptr);
+        static info::CPlayerGetDefFacing184_clbk CPlayerGetDefFacing184_user(nullptr);
+        static info::CPlayerGetDefGap186_ptr CPlayerGetDefGap186_next(nullptr);
+        static info::CPlayerGetDefGap186_clbk CPlayerGetDefGap186_user(nullptr);
+        static info::CPlayerGetDefSkill188_ptr CPlayerGetDefSkill188_next(nullptr);
+        static info::CPlayerGetDefSkill188_clbk CPlayerGetDefSkill188_user(nullptr);
+        static info::CPlayerGetEffectEquipCode190_ptr CPlayerGetEffectEquipCode190_next(nullptr);
+        static info::CPlayerGetEffectEquipCode190_clbk CPlayerGetEffectEquipCode190_user(nullptr);
+        static info::CPlayerGetFP192_ptr CPlayerGetFP192_next(nullptr);
+        static info::CPlayerGetFP192_clbk CPlayerGetFP192_user(nullptr);
+        static info::CPlayerGetFireTol194_ptr CPlayerGetFireTol194_next(nullptr);
+        static info::CPlayerGetFireTol194_clbk CPlayerGetFireTol194_user(nullptr);
+        static info::CPlayerGetGauge196_ptr CPlayerGetGauge196_next(nullptr);
+        static info::CPlayerGetGauge196_clbk CPlayerGetGauge196_user(nullptr);
+        static info::CPlayerGetGenAttackProb198_ptr CPlayerGetGenAttackProb198_next(nullptr);
+        static info::CPlayerGetGenAttackProb198_clbk CPlayerGetGenAttackProb198_user(nullptr);
+        static info::CPlayerGetGroupTarget200_ptr CPlayerGetGroupTarget200_next(nullptr);
+        static info::CPlayerGetGroupTarget200_clbk CPlayerGetGroupTarget200_user(nullptr);
+        static info::CPlayerGetHP202_ptr CPlayerGetHP202_next(nullptr);
+        static info::CPlayerGetHP202_clbk CPlayerGetHP202_user(nullptr);
+        static info::CPlayerGetInitClassCost204_ptr CPlayerGetInitClassCost204_next(nullptr);
+        static info::CPlayerGetInitClassCost204_clbk CPlayerGetInitClassCost204_user(nullptr);
+        static info::CPlayerGetLevel206_ptr CPlayerGetLevel206_next(nullptr);
+        static info::CPlayerGetLevel206_clbk CPlayerGetLevel206_user(nullptr);
+        static info::CPlayerGetMasteryCumAfterAttack208_ptr CPlayerGetMasteryCumAfterAttack208_next(nullptr);
+        static info::CPlayerGetMasteryCumAfterAttack208_clbk CPlayerGetMasteryCumAfterAttack208_user(nullptr);
+        static info::CPlayerGetMaxDP210_ptr CPlayerGetMaxDP210_next(nullptr);
+        static info::CPlayerGetMaxDP210_clbk CPlayerGetMaxDP210_user(nullptr);
+        static info::CPlayerGetMaxFP212_ptr CPlayerGetMaxFP212_next(nullptr);
+        static info::CPlayerGetMaxFP212_clbk CPlayerGetMaxFP212_user(nullptr);
+        static info::CPlayerGetMaxHP214_ptr CPlayerGetMaxHP214_next(nullptr);
+        static info::CPlayerGetMaxHP214_clbk CPlayerGetMaxHP214_user(nullptr);
+        static info::CPlayerGetMaxSP216_ptr CPlayerGetMaxSP216_next(nullptr);
+        static info::CPlayerGetMaxSP216_clbk CPlayerGetMaxSP216_user(nullptr);
+        static info::CPlayerGetMoney218_ptr CPlayerGetMoney218_next(nullptr);
+        static info::CPlayerGetMoney218_clbk CPlayerGetMoney218_user(nullptr);
+        static info::CPlayerGetMoveSpeed220_ptr CPlayerGetMoveSpeed220_next(nullptr);
+        static info::CPlayerGetMoveSpeed220_clbk CPlayerGetMoveSpeed220_user(nullptr);
+        static info::CPlayerGetObjName222_ptr CPlayerGetObjName222_next(nullptr);
+        static info::CPlayerGetObjName222_clbk CPlayerGetObjName222_user(nullptr);
+        static info::CPlayerGetObjRace224_ptr CPlayerGetObjRace224_next(nullptr);
+        static info::CPlayerGetObjRace224_clbk CPlayerGetObjRace224_user(nullptr);
+        static info::CPlayerGetPartyExpDistributionRate226_ptr CPlayerGetPartyExpDistributionRate226_next(nullptr);
+        static info::CPlayerGetPartyExpDistributionRate226_clbk CPlayerGetPartyExpDistributionRate226_user(nullptr);
+        static info::CPlayerGetPvpOrderView228_ptr CPlayerGetPvpOrderView228_next(nullptr);
+        static info::CPlayerGetPvpOrderView228_clbk CPlayerGetPvpOrderView228_user(nullptr);
+        static info::CPlayerGetPvpPointLeak230_ptr CPlayerGetPvpPointLeak230_next(nullptr);
+        static info::CPlayerGetPvpPointLeak230_clbk CPlayerGetPvpPointLeak230_user(nullptr);
+        static info::CPlayerGetPvpPointLimiter232_ptr CPlayerGetPvpPointLimiter232_next(nullptr);
+        static info::CPlayerGetPvpPointLimiter232_clbk CPlayerGetPvpPointLimiter232_user(nullptr);
+        static info::CPlayerGetRecallAnimus234_ptr CPlayerGetRecallAnimus234_next(nullptr);
+        static info::CPlayerGetRecallAnimus234_clbk CPlayerGetRecallAnimus234_user(nullptr);
+        static info::CPlayerGetRewardItems_DarkDungeon236_ptr CPlayerGetRewardItems_DarkDungeon236_next(nullptr);
+        static info::CPlayerGetRewardItems_DarkDungeon236_clbk CPlayerGetRewardItems_DarkDungeon236_user(nullptr);
+        static info::CPlayerGetSP238_ptr CPlayerGetSP238_next(nullptr);
+        static info::CPlayerGetSP238_clbk CPlayerGetSP238_user(nullptr);
+        static info::CPlayerGetSoilTol240_ptr CPlayerGetSoilTol240_next(nullptr);
+        static info::CPlayerGetSoilTol240_clbk CPlayerGetSoilTol240_user(nullptr);
+        static info::CPlayerGetStateFlag242_ptr CPlayerGetStateFlag242_next(nullptr);
+        static info::CPlayerGetStateFlag242_clbk CPlayerGetStateFlag242_user(nullptr);
+        static info::CPlayerGetTargetObj244_ptr CPlayerGetTargetObj244_next(nullptr);
+        static info::CPlayerGetTargetObj244_clbk CPlayerGetTargetObj244_user(nullptr);
+        static info::CPlayerGetUseConsumeItem246_ptr CPlayerGetUseConsumeItem246_next(nullptr);
+        static info::CPlayerGetUseConsumeItem246_clbk CPlayerGetUseConsumeItem246_user(nullptr);
+        static info::CPlayerGetVisualVer248_ptr CPlayerGetVisualVer248_next(nullptr);
+        static info::CPlayerGetVisualVer248_clbk CPlayerGetVisualVer248_user(nullptr);
+        static info::CPlayerGetWaterTol250_ptr CPlayerGetWaterTol250_next(nullptr);
+        static info::CPlayerGetWaterTol250_clbk CPlayerGetWaterTol250_user(nullptr);
+        static info::CPlayerGetWeaponAdjust252_ptr CPlayerGetWeaponAdjust252_next(nullptr);
+        static info::CPlayerGetWeaponAdjust252_clbk CPlayerGetWeaponAdjust252_user(nullptr);
+        static info::CPlayerGetWeaponClass254_ptr CPlayerGetWeaponClass254_next(nullptr);
+        static info::CPlayerGetWeaponClass254_clbk CPlayerGetWeaponClass254_user(nullptr);
+        static info::CPlayerGetWeaponRange256_ptr CPlayerGetWeaponRange256_next(nullptr);
+        static info::CPlayerGetWeaponRange256_clbk CPlayerGetWeaponRange256_user(nullptr);
+        static info::CPlayerGetWidth258_ptr CPlayerGetWidth258_next(nullptr);
+        static info::CPlayerGetWidth258_clbk CPlayerGetWidth258_user(nullptr);
+        static info::CPlayerGetWindTol260_ptr CPlayerGetWindTol260_next(nullptr);
+        static info::CPlayerGetWindTol260_clbk CPlayerGetWindTol260_user(nullptr);
+        static info::CPlayerGuild_Buy_Emblem_Complete262_ptr CPlayerGuild_Buy_Emblem_Complete262_next(nullptr);
+        static info::CPlayerGuild_Buy_Emblem_Complete262_clbk CPlayerGuild_Buy_Emblem_Complete262_user(nullptr);
+        static info::CPlayerGuild_Disjoint_Complete264_ptr CPlayerGuild_Disjoint_Complete264_next(nullptr);
+        static info::CPlayerGuild_Disjoint_Complete264_clbk CPlayerGuild_Disjoint_Complete264_user(nullptr);
+        static info::CPlayerGuild_Force_Leave_Complete266_ptr CPlayerGuild_Force_Leave_Complete266_next(nullptr);
+        static info::CPlayerGuild_Force_Leave_Complete266_clbk CPlayerGuild_Force_Leave_Complete266_user(nullptr);
+        static info::CPlayerGuild_Insert_Complete268_ptr CPlayerGuild_Insert_Complete268_next(nullptr);
+        static info::CPlayerGuild_Insert_Complete268_clbk CPlayerGuild_Insert_Complete268_user(nullptr);
+        static info::CPlayerGuild_Join_Accept_Complete270_ptr CPlayerGuild_Join_Accept_Complete270_next(nullptr);
+        static info::CPlayerGuild_Join_Accept_Complete270_clbk CPlayerGuild_Join_Accept_Complete270_user(nullptr);
+        static info::CPlayerGuild_Pop_Money_Complete272_ptr CPlayerGuild_Pop_Money_Complete272_next(nullptr);
+        static info::CPlayerGuild_Pop_Money_Complete272_clbk CPlayerGuild_Pop_Money_Complete272_user(nullptr);
+        static info::CPlayerGuild_Push_Money_Complete274_ptr CPlayerGuild_Push_Money_Complete274_next(nullptr);
+        static info::CPlayerGuild_Push_Money_Complete274_clbk CPlayerGuild_Push_Money_Complete274_user(nullptr);
+        static info::CPlayerGuild_Self_Leave_Complete276_ptr CPlayerGuild_Self_Leave_Complete276_next(nullptr);
+        static info::CPlayerGuild_Self_Leave_Complete276_clbk CPlayerGuild_Self_Leave_Complete276_user(nullptr);
+        static info::CPlayerGuild_Update_GuildMater_Complete278_ptr CPlayerGuild_Update_GuildMater_Complete278_next(nullptr);
+        static info::CPlayerGuild_Update_GuildMater_Complete278_clbk CPlayerGuild_Update_GuildMater_Complete278_user(nullptr);
+        static info::CPlayerHSKQuestEnd_Att280_ptr CPlayerHSKQuestEnd_Att280_next(nullptr);
+        static info::CPlayerHSKQuestEnd_Att280_clbk CPlayerHSKQuestEnd_Att280_user(nullptr);
+        static info::CPlayerHideNameEffect282_ptr CPlayerHideNameEffect282_next(nullptr);
+        static info::CPlayerHideNameEffect282_clbk CPlayerHideNameEffect282_user(nullptr);
+        static info::CPlayerIncCriEffKillPoint284_ptr CPlayerIncCriEffKillPoint284_next(nullptr);
+        static info::CPlayerIncCriEffKillPoint284_clbk CPlayerIncCriEffKillPoint284_user(nullptr);
+        static info::CPlayerIncCriEffPvPCashBag286_ptr CPlayerIncCriEffPvPCashBag286_next(nullptr);
+        static info::CPlayerIncCriEffPvPCashBag286_clbk CPlayerIncCriEffPvPCashBag286_user(nullptr);
+        static info::CPlayerIncPvPPoint288_ptr CPlayerIncPvPPoint288_next(nullptr);
+        static info::CPlayerIncPvPPoint288_clbk CPlayerIncPvPPoint288_user(nullptr);
+        static info::CPlayerInit290_ptr CPlayerInit290_next(nullptr);
+        static info::CPlayerInit290_clbk CPlayerInit290_user(nullptr);
+        static info::CPlayerIntoMap292_ptr CPlayerIntoMap292_next(nullptr);
+        static info::CPlayerIntoMap292_clbk CPlayerIntoMap292_user(nullptr);
+        static info::CPlayerIsActingSiegeMode294_ptr CPlayerIsActingSiegeMode294_next(nullptr);
+        static info::CPlayerIsActingSiegeMode294_clbk CPlayerIsActingSiegeMode294_user(nullptr);
+        static info::CPlayerIsApplyPcbangPrimium296_ptr CPlayerIsApplyPcbangPrimium296_next(nullptr);
+        static info::CPlayerIsApplyPcbangPrimium296_clbk CPlayerIsApplyPcbangPrimium296_user(nullptr);
+        static info::CPlayerIsBeAttackedAble298_ptr CPlayerIsBeAttackedAble298_next(nullptr);
+        static info::CPlayerIsBeAttackedAble298_clbk CPlayerIsBeAttackedAble298_user(nullptr);
+        static info::CPlayerIsBeDamagedAble300_ptr CPlayerIsBeDamagedAble300_next(nullptr);
+        static info::CPlayerIsBeDamagedAble300_clbk CPlayerIsBeDamagedAble300_user(nullptr);
+        static info::CPlayerIsBulletValidity302_ptr CPlayerIsBulletValidity302_next(nullptr);
+        static info::CPlayerIsBulletValidity302_clbk CPlayerIsBulletValidity302_user(nullptr);
+        static info::CPlayerIsChaosMode304_ptr CPlayerIsChaosMode304_next(nullptr);
+        static info::CPlayerIsChaosMode304_clbk CPlayerIsChaosMode304_user(nullptr);
+        static info::CPlayerIsEffBulletValidity306_ptr CPlayerIsEffBulletValidity306_next(nullptr);
+        static info::CPlayerIsEffBulletValidity306_clbk CPlayerIsEffBulletValidity306_user(nullptr);
+        static info::CPlayerIsEffectableEquip308_ptr CPlayerIsEffectableEquip308_next(nullptr);
+        static info::CPlayerIsEffectableEquip308_clbk CPlayerIsEffectableEquip308_user(nullptr);
+        static info::CPlayerIsEquipAbleGrade310_ptr CPlayerIsEquipAbleGrade310_next(nullptr);
+        static info::CPlayerIsEquipAbleGrade310_clbk CPlayerIsEquipAbleGrade310_user(nullptr);
+        static info::CPlayerIsHaveMentalTicket312_ptr CPlayerIsHaveMentalTicket312_next(nullptr);
+        static info::CPlayerIsHaveMentalTicket312_clbk CPlayerIsHaveMentalTicket312_user(nullptr);
+        static info::CPlayerIsInTown314_ptr CPlayerIsInTown314_next(nullptr);
+        static info::CPlayerIsInTown314_clbk CPlayerIsInTown314_user(nullptr);
+        static info::CPlayerIsLastAttBuff316_ptr CPlayerIsLastAttBuff316_next(nullptr);
+        static info::CPlayerIsLastAttBuff316_clbk CPlayerIsLastAttBuff316_user(nullptr);
+        static info::CPlayerIsMapLoading318_ptr CPlayerIsMapLoading318_next(nullptr);
+        static info::CPlayerIsMapLoading318_clbk CPlayerIsMapLoading318_user(nullptr);
+        static info::CPlayerIsMineMode320_ptr CPlayerIsMineMode320_next(nullptr);
+        static info::CPlayerIsMineMode320_clbk CPlayerIsMineMode320_user(nullptr);
+        static info::CPlayerIsMiningByMinigTicket322_ptr CPlayerIsMiningByMinigTicket322_next(nullptr);
+        static info::CPlayerIsMiningByMinigTicket322_clbk CPlayerIsMiningByMinigTicket322_user(nullptr);
+        static info::CPlayerIsOutExtraStopPos324_ptr CPlayerIsOutExtraStopPos324_next(nullptr);
+        static info::CPlayerIsOutExtraStopPos324_clbk CPlayerIsOutExtraStopPos324_user(nullptr);
+        static info::CPlayerIsOverOneDay326_ptr CPlayerIsOverOneDay326_next(nullptr);
+        static info::CPlayerIsOverOneDay326_clbk CPlayerIsOverOneDay326_user(nullptr);
+        static info::CPlayerIsPassExpLimitLvDiff328_ptr CPlayerIsPassExpLimitLvDiff328_next(nullptr);
+        static info::CPlayerIsPassExpLimitLvDiff328_clbk CPlayerIsPassExpLimitLvDiff328_user(nullptr);
+        static info::CPlayerIsPassMasteryLimitLvDiff330_ptr CPlayerIsPassMasteryLimitLvDiff330_next(nullptr);
+        static info::CPlayerIsPassMasteryLimitLvDiff330_clbk CPlayerIsPassMasteryLimitLvDiff330_user(nullptr);
+        static info::CPlayerIsPunished332_ptr CPlayerIsPunished332_next(nullptr);
+        static info::CPlayerIsPunished332_clbk CPlayerIsPunished332_user(nullptr);
+        static info::CPlayerIsRecallAnimus334_ptr CPlayerIsRecallAnimus334_next(nullptr);
+        static info::CPlayerIsRecallAnimus334_clbk CPlayerIsRecallAnimus334_user(nullptr);
+        static info::CPlayerIsRecvableContEffect336_ptr CPlayerIsRecvableContEffect336_next(nullptr);
+        static info::CPlayerIsRecvableContEffect336_clbk CPlayerIsRecvableContEffect336_user(nullptr);
+        static info::CPlayerIsReturnPostUpdate338_ptr CPlayerIsReturnPostUpdate338_next(nullptr);
+        static info::CPlayerIsReturnPostUpdate338_clbk CPlayerIsReturnPostUpdate338_user(nullptr);
+        static info::CPlayerIsRidingShip340_ptr CPlayerIsRidingShip340_next(nullptr);
+        static info::CPlayerIsRidingShip340_clbk CPlayerIsRidingShip340_user(nullptr);
+        static info::CPlayerIsRidingUnit342_ptr CPlayerIsRidingUnit342_next(nullptr);
+        static info::CPlayerIsRidingUnit342_clbk CPlayerIsRidingUnit342_user(nullptr);
+        static info::CPlayerIsSFActableByClass344_ptr CPlayerIsSFActableByClass344_next(nullptr);
+        static info::CPlayerIsSFActableByClass344_clbk CPlayerIsSFActableByClass344_user(nullptr);
+        static info::CPlayerIsSFUsableGauge346_ptr CPlayerIsSFUsableGauge346_next(nullptr);
+        static info::CPlayerIsSFUsableGauge346_clbk CPlayerIsSFUsableGauge346_user(nullptr);
+        static info::CPlayerIsSFUsableSFMastery348_ptr CPlayerIsSFUsableSFMastery348_next(nullptr);
+        static info::CPlayerIsSFUsableSFMastery348_clbk CPlayerIsSFUsableSFMastery348_user(nullptr);
+        static info::CPlayerIsSFUseableRace350_ptr CPlayerIsSFUseableRace350_next(nullptr);
+        static info::CPlayerIsSFUseableRace350_clbk CPlayerIsSFUseableRace350_user(nullptr);
+        static info::CPlayerIsSiegeMode352_ptr CPlayerIsSiegeMode352_next(nullptr);
+        static info::CPlayerIsSiegeMode352_clbk CPlayerIsSiegeMode352_user(nullptr);
+        static info::CPlayerIsTargetObj354_ptr CPlayerIsTargetObj354_next(nullptr);
+        static info::CPlayerIsTargetObj354_clbk CPlayerIsTargetObj354_user(nullptr);
+        static info::CPlayerIsUsableAccountType356_ptr CPlayerIsUsableAccountType356_next(nullptr);
+        static info::CPlayerIsUsableAccountType356_clbk CPlayerIsUsableAccountType356_user(nullptr);
+        static info::CPlayerIsUseCloakBooster358_ptr CPlayerIsUseCloakBooster358_next(nullptr);
+        static info::CPlayerIsUseCloakBooster358_clbk CPlayerIsUseCloakBooster358_user(nullptr);
+        static info::CPlayerIsUseReleaseRaceBuffPotion360_ptr CPlayerIsUseReleaseRaceBuffPotion360_next(nullptr);
+        static info::CPlayerIsUseReleaseRaceBuffPotion360_clbk CPlayerIsUseReleaseRaceBuffPotion360_user(nullptr);
+        static info::CPlayerIs_Battle_Mode362_ptr CPlayerIs_Battle_Mode362_next(nullptr);
+        static info::CPlayerIs_Battle_Mode362_clbk CPlayerIs_Battle_Mode362_user(nullptr);
+        static info::CPlayerLimLvNpcQuestDelete364_ptr CPlayerLimLvNpcQuestDelete364_next(nullptr);
+        static info::CPlayerLimLvNpcQuestDelete364_clbk CPlayerLimLvNpcQuestDelete364_user(nullptr);
+        static info::CPlayerLoad366_ptr CPlayerLoad366_next(nullptr);
+        static info::CPlayerLoad366_clbk CPlayerLoad366_user(nullptr);
+        static info::CPlayerLoop368_ptr CPlayerLoop368_next(nullptr);
+        static info::CPlayerLoop368_clbk CPlayerLoop368_user(nullptr);
+        static info::CPlayerNetClose370_ptr CPlayerNetClose370_next(nullptr);
+        static info::CPlayerNetClose370_clbk CPlayerNetClose370_user(nullptr);
+        static info::CPlayerNewViewCircleObject372_ptr CPlayerNewViewCircleObject372_next(nullptr);
+        static info::CPlayerNewViewCircleObject372_clbk CPlayerNewViewCircleObject372_user(nullptr);
+        static info::CPlayerOnLoop_Static374_ptr CPlayerOnLoop_Static374_next(nullptr);
+        static info::CPlayerOnLoop_Static374_clbk CPlayerOnLoop_Static374_user(nullptr);
+        static info::CPlayerOutOfMap376_ptr CPlayerOutOfMap376_next(nullptr);
+        static info::CPlayerOutOfMap376_clbk CPlayerOutOfMap376_user(nullptr);
+        static info::CPlayerOutOfSec378_ptr CPlayerOutOfSec378_next(nullptr);
+        static info::CPlayerOutOfSec378_clbk CPlayerOutOfSec378_user(nullptr);
+        static info::CPlayerPastWhisperInit380_ptr CPlayerPastWhisperInit380_next(nullptr);
+        static info::CPlayerPastWhisperInit380_clbk CPlayerPastWhisperInit380_user(nullptr);
+        static info::CPlayerPotion_Buf_Extend382_ptr CPlayerPotion_Buf_Extend382_next(nullptr);
+        static info::CPlayerPotion_Buf_Extend382_clbk CPlayerPotion_Buf_Extend382_user(nullptr);
+        static info::CPlayerPushDQSCheatPlyerVoteInfo384_ptr CPlayerPushDQSCheatPlyerVoteInfo384_next(nullptr);
+        static info::CPlayerPushDQSCheatPlyerVoteInfo384_clbk CPlayerPushDQSCheatPlyerVoteInfo384_user(nullptr);
+        static info::CPlayerPushDQSUpdatePlyerVoteInfo386_ptr CPlayerPushDQSUpdatePlyerVoteInfo386_next(nullptr);
+        static info::CPlayerPushDQSUpdatePlyerVoteInfo386_clbk CPlayerPushDQSUpdatePlyerVoteInfo386_user(nullptr);
+        static info::CPlayerPushDQSUpdateVoteAvilable388_ptr CPlayerPushDQSUpdateVoteAvilable388_next(nullptr);
+        static info::CPlayerPushDQSUpdateVoteAvilable388_clbk CPlayerPushDQSUpdateVoteAvilable388_user(nullptr);
+        static info::CPlayerReCalcMaxHFSP390_ptr CPlayerReCalcMaxHFSP390_next(nullptr);
+        static info::CPlayerReCalcMaxHFSP390_clbk CPlayerReCalcMaxHFSP390_user(nullptr);
+        static info::CPlayerRecallRandomPositionInRange392_ptr CPlayerRecallRandomPositionInRange392_next(nullptr);
+        static info::CPlayerRecallRandomPositionInRange392_clbk CPlayerRecallRandomPositionInRange392_user(nullptr);
+        static info::CPlayerRecvHSKQuest394_ptr CPlayerRecvHSKQuest394_next(nullptr);
+        static info::CPlayerRecvHSKQuest394_clbk CPlayerRecvHSKQuest394_user(nullptr);
+        static info::CPlayerRecvKillMessage396_ptr CPlayerRecvKillMessage396_next(nullptr);
+        static info::CPlayerRecvKillMessage396_clbk CPlayerRecvKillMessage396_user(nullptr);
+        static info::CPlayerReservationForceClose398_ptr CPlayerReservationForceClose398_next(nullptr);
+        static info::CPlayerReservationForceClose398_clbk CPlayerReservationForceClose398_user(nullptr);
+        static info::CPlayerResurrect400_ptr CPlayerResurrect400_next(nullptr);
+        static info::CPlayerResurrect400_clbk CPlayerResurrect400_user(nullptr);
+        static info::CPlayerReturn_AnimusAsk402_ptr CPlayerReturn_AnimusAsk402_next(nullptr);
+        static info::CPlayerReturn_AnimusAsk402_clbk CPlayerReturn_AnimusAsk402_user(nullptr);
+        static info::CPlayerRewardChangeClass404_ptr CPlayerRewardChangeClass404_next(nullptr);
+        static info::CPlayerRewardChangeClass404_clbk CPlayerRewardChangeClass404_user(nullptr);
+        static info::CPlayerRewardChangeClassMastery406_ptr CPlayerRewardChangeClassMastery406_next(nullptr);
+        static info::CPlayerRewardChangeClassMastery406_clbk CPlayerRewardChangeClassMastery406_user(nullptr);
+        static info::CPlayerRewardChangeClassRewardItem408_ptr CPlayerRewardChangeClassRewardItem408_next(nullptr);
+        static info::CPlayerRewardChangeClassRewardItem408_clbk CPlayerRewardChangeClassRewardItem408_user(nullptr);
+        static info::CPlayerRewardRaceWarPvpCash410_ptr CPlayerRewardRaceWarPvpCash410_next(nullptr);
+        static info::CPlayerRewardRaceWarPvpCash410_clbk CPlayerRewardRaceWarPvpCash410_user(nullptr);
+        static info::CPlayerReward_DarkDungeon412_ptr CPlayerReward_DarkDungeon412_next(nullptr);
+        static info::CPlayerReward_DarkDungeon412_clbk CPlayerReward_DarkDungeon412_user(nullptr);
+        static info::CPlayerRobbedHP414_ptr CPlayerRobbedHP414_next(nullptr);
+        static info::CPlayerRobbedHP414_clbk CPlayerRobbedHP414_user(nullptr);
+        static info::CPlayerSFContDelMessage416_ptr CPlayerSFContDelMessage416_next(nullptr);
+        static info::CPlayerSFContDelMessage416_clbk CPlayerSFContDelMessage416_user(nullptr);
+        static info::CPlayerSFContInsertMessage418_ptr CPlayerSFContInsertMessage418_next(nullptr);
+        static info::CPlayerSFContInsertMessage418_clbk CPlayerSFContInsertMessage418_user(nullptr);
+        static info::CPlayerSFContUpdateTimeMessage420_ptr CPlayerSFContUpdateTimeMessage420_next(nullptr);
+        static info::CPlayerSFContUpdateTimeMessage420_clbk CPlayerSFContUpdateTimeMessage420_user(nullptr);
+        static info::CPlayerSF_AllContDamageForceRemove_Once422_ptr CPlayerSF_AllContDamageForceRemove_Once422_next(nullptr);
+        static info::CPlayerSF_AllContDamageForceRemove_Once422_clbk CPlayerSF_AllContDamageForceRemove_Once422_user(nullptr);
+        static info::CPlayerSF_AllContDamageRemove_Once424_ptr CPlayerSF_AllContDamageRemove_Once424_next(nullptr);
+        static info::CPlayerSF_AllContDamageRemove_Once424_clbk CPlayerSF_AllContDamageRemove_Once424_user(nullptr);
+        static info::CPlayerSF_AllContHelpForceRemove_Once426_ptr CPlayerSF_AllContHelpForceRemove_Once426_next(nullptr);
+        static info::CPlayerSF_AllContHelpForceRemove_Once426_clbk CPlayerSF_AllContHelpForceRemove_Once426_user(nullptr);
+        static info::CPlayerSF_AllContHelpSkillRemove_Once428_ptr CPlayerSF_AllContHelpSkillRemove_Once428_next(nullptr);
+        static info::CPlayerSF_AllContHelpSkillRemove_Once428_clbk CPlayerSF_AllContHelpSkillRemove_Once428_user(nullptr);
+        static info::CPlayerSF_AttHPtoDstFP_Once430_ptr CPlayerSF_AttHPtoDstFP_Once430_next(nullptr);
+        static info::CPlayerSF_AttHPtoDstFP_Once430_clbk CPlayerSF_AttHPtoDstFP_Once430_user(nullptr);
+        static info::CPlayerSF_ContDamageTimeInc_Once432_ptr CPlayerSF_ContDamageTimeInc_Once432_next(nullptr);
+        static info::CPlayerSF_ContDamageTimeInc_Once432_clbk CPlayerSF_ContDamageTimeInc_Once432_user(nullptr);
+        static info::CPlayerSF_ContHelpTimeInc_Once434_ptr CPlayerSF_ContHelpTimeInc_Once434_next(nullptr);
+        static info::CPlayerSF_ContHelpTimeInc_Once434_clbk CPlayerSF_ContHelpTimeInc_Once434_user(nullptr);
+        static info::CPlayerSF_ConvertMonsterTarget436_ptr CPlayerSF_ConvertMonsterTarget436_next(nullptr);
+        static info::CPlayerSF_ConvertMonsterTarget436_clbk CPlayerSF_ConvertMonsterTarget436_user(nullptr);
+        static info::CPlayerSF_ConvertTargetDest438_ptr CPlayerSF_ConvertTargetDest438_next(nullptr);
+        static info::CPlayerSF_ConvertTargetDest438_clbk CPlayerSF_ConvertTargetDest438_user(nullptr);
+        static info::CPlayerSF_DamageAndStun440_ptr CPlayerSF_DamageAndStun440_next(nullptr);
+        static info::CPlayerSF_DamageAndStun440_clbk CPlayerSF_DamageAndStun440_user(nullptr);
+        static info::CPlayerSF_FPDec442_ptr CPlayerSF_FPDec442_next(nullptr);
+        static info::CPlayerSF_FPDec442_clbk CPlayerSF_FPDec442_user(nullptr);
+        static info::CPlayerSF_HFSInc_Once444_ptr CPlayerSF_HFSInc_Once444_next(nullptr);
+        static info::CPlayerSF_HFSInc_Once444_clbk CPlayerSF_HFSInc_Once444_user(nullptr);
+        static info::CPlayerSF_HPInc_Once446_ptr CPlayerSF_HPInc_Once446_next(nullptr);
+        static info::CPlayerSF_HPInc_Once446_clbk CPlayerSF_HPInc_Once446_user(nullptr);
+        static info::CPlayerSF_IncHPCircleParty448_ptr CPlayerSF_IncHPCircleParty448_next(nullptr);
+        static info::CPlayerSF_IncHPCircleParty448_clbk CPlayerSF_IncHPCircleParty448_user(nullptr);
+        static info::CPlayerSF_IncreaseDP450_ptr CPlayerSF_IncreaseDP450_next(nullptr);
+        static info::CPlayerSF_IncreaseDP450_clbk CPlayerSF_IncreaseDP450_user(nullptr);
+        static info::CPlayerSF_LateContDamageRemove_Once452_ptr CPlayerSF_LateContDamageRemove_Once452_next(nullptr);
+        static info::CPlayerSF_LateContDamageRemove_Once452_clbk CPlayerSF_LateContDamageRemove_Once452_user(nullptr);
+        static info::CPlayerSF_LateContHelpForceRemove_Once454_ptr CPlayerSF_LateContHelpForceRemove_Once454_next(nullptr);
+        static info::CPlayerSF_LateContHelpForceRemove_Once454_clbk CPlayerSF_LateContHelpForceRemove_Once454_user(nullptr);
+        static info::CPlayerSF_LateContHelpSkillRemove_Once456_ptr CPlayerSF_LateContHelpSkillRemove_Once456_next(nullptr);
+        static info::CPlayerSF_LateContHelpSkillRemove_Once456_clbk CPlayerSF_LateContHelpSkillRemove_Once456_user(nullptr);
+        static info::CPlayerSF_MakePortalReturnBindPositionPartyMember458_ptr CPlayerSF_MakePortalReturnBindPositionPartyMember458_next(nullptr);
+        static info::CPlayerSF_MakePortalReturnBindPositionPartyMember458_clbk CPlayerSF_MakePortalReturnBindPositionPartyMember458_user(nullptr);
+        static info::CPlayerSF_MakeZeroAnimusRecallTimeOnce460_ptr CPlayerSF_MakeZeroAnimusRecallTimeOnce460_next(nullptr);
+        static info::CPlayerSF_MakeZeroAnimusRecallTimeOnce460_clbk CPlayerSF_MakeZeroAnimusRecallTimeOnce460_user(nullptr);
+        static info::CPlayerSF_OthersContHelpSFRemove_Once462_ptr CPlayerSF_OthersContHelpSFRemove_Once462_next(nullptr);
+        static info::CPlayerSF_OthersContHelpSFRemove_Once462_clbk CPlayerSF_OthersContHelpSFRemove_Once462_user(nullptr);
+        static info::CPlayerSF_OverHealing_Once464_ptr CPlayerSF_OverHealing_Once464_next(nullptr);
+        static info::CPlayerSF_OverHealing_Once464_clbk CPlayerSF_OverHealing_Once464_user(nullptr);
+        static info::CPlayerSF_RecoverAllReturnStateAnimusHPFull466_ptr CPlayerSF_RecoverAllReturnStateAnimusHPFull466_next(nullptr);
+        static info::CPlayerSF_RecoverAllReturnStateAnimusHPFull466_clbk CPlayerSF_RecoverAllReturnStateAnimusHPFull466_user(nullptr);
+        static info::CPlayerSF_ReleaseMonsterTarget468_ptr CPlayerSF_ReleaseMonsterTarget468_next(nullptr);
+        static info::CPlayerSF_ReleaseMonsterTarget468_clbk CPlayerSF_ReleaseMonsterTarget468_user(nullptr);
+        static info::CPlayerSF_RemoveAllContHelp_Once470_ptr CPlayerSF_RemoveAllContHelp_Once470_next(nullptr);
+        static info::CPlayerSF_RemoveAllContHelp_Once470_clbk CPlayerSF_RemoveAllContHelp_Once470_user(nullptr);
+        static info::CPlayerSF_Resurrect_Once472_ptr CPlayerSF_Resurrect_Once472_next(nullptr);
+        static info::CPlayerSF_Resurrect_Once472_clbk CPlayerSF_Resurrect_Once472_user(nullptr);
+        static info::CPlayerSF_ReturnBindPosition474_ptr CPlayerSF_ReturnBindPosition474_next(nullptr);
+        static info::CPlayerSF_ReturnBindPosition474_clbk CPlayerSF_ReturnBindPosition474_user(nullptr);
+        static info::CPlayerSF_SPDec476_ptr CPlayerSF_SPDec476_next(nullptr);
+        static info::CPlayerSF_SPDec476_clbk CPlayerSF_SPDec476_user(nullptr);
+        static info::CPlayerSF_STInc_Once478_ptr CPlayerSF_STInc_Once478_next(nullptr);
+        static info::CPlayerSF_STInc_Once478_clbk CPlayerSF_STInc_Once478_user(nullptr);
+        static info::CPlayerSF_SelfDestruction480_ptr CPlayerSF_SelfDestruction480_next(nullptr);
+        static info::CPlayerSF_SelfDestruction480_clbk CPlayerSF_SelfDestruction480_user(nullptr);
+        static info::CPlayerSF_SkillContHelpTimeInc_Once482_ptr CPlayerSF_SkillContHelpTimeInc_Once482_next(nullptr);
+        static info::CPlayerSF_SkillContHelpTimeInc_Once482_clbk CPlayerSF_SkillContHelpTimeInc_Once482_user(nullptr);
+        static info::CPlayerSF_Stun484_ptr CPlayerSF_Stun484_next(nullptr);
+        static info::CPlayerSF_Stun484_clbk CPlayerSF_Stun484_user(nullptr);
+        static info::CPlayerSF_TeleportToDestination486_ptr CPlayerSF_TeleportToDestination486_next(nullptr);
+        static info::CPlayerSF_TeleportToDestination486_clbk CPlayerSF_TeleportToDestination486_user(nullptr);
+        static info::CPlayerSF_TransDestHP488_ptr CPlayerSF_TransDestHP488_next(nullptr);
+        static info::CPlayerSF_TransDestHP488_clbk CPlayerSF_TransDestHP488_user(nullptr);
+        static info::CPlayerSF_TransMonsterHP490_ptr CPlayerSF_TransMonsterHP490_next(nullptr);
+        static info::CPlayerSF_TransMonsterHP490_clbk CPlayerSF_TransMonsterHP490_user(nullptr);
+        static info::CPlayerSendData_ChatTrans492_ptr CPlayerSendData_ChatTrans492_next(nullptr);
+        static info::CPlayerSendData_ChatTrans492_clbk CPlayerSendData_ChatTrans492_user(nullptr);
+        static info::CPlayerSendData_PartyMemberEffect494_ptr CPlayerSendData_PartyMemberEffect494_next(nullptr);
+        static info::CPlayerSendData_PartyMemberEffect494_clbk CPlayerSendData_PartyMemberEffect494_user(nullptr);
+        static info::CPlayerSendData_PartyMemberFP496_ptr CPlayerSendData_PartyMemberFP496_next(nullptr);
+        static info::CPlayerSendData_PartyMemberFP496_clbk CPlayerSendData_PartyMemberFP496_user(nullptr);
+        static info::CPlayerSendData_PartyMemberHP498_ptr CPlayerSendData_PartyMemberHP498_next(nullptr);
+        static info::CPlayerSendData_PartyMemberHP498_clbk CPlayerSendData_PartyMemberHP498_user(nullptr);
+        static info::CPlayerSendData_PartyMemberInfo500_ptr CPlayerSendData_PartyMemberInfo500_next(nullptr);
+        static info::CPlayerSendData_PartyMemberInfo500_clbk CPlayerSendData_PartyMemberInfo500_user(nullptr);
+        static info::CPlayerSendData_PartyMemberInfoToMembers502_ptr CPlayerSendData_PartyMemberInfoToMembers502_next(nullptr);
+        static info::CPlayerSendData_PartyMemberInfoToMembers502_clbk CPlayerSendData_PartyMemberInfoToMembers502_user(nullptr);
+        static info::CPlayerSendData_PartyMemberLv504_ptr CPlayerSendData_PartyMemberLv504_next(nullptr);
+        static info::CPlayerSendData_PartyMemberLv504_clbk CPlayerSendData_PartyMemberLv504_user(nullptr);
+        static info::CPlayerSendData_PartyMemberMaxHFSP506_ptr CPlayerSendData_PartyMemberMaxHFSP506_next(nullptr);
+        static info::CPlayerSendData_PartyMemberMaxHFSP506_clbk CPlayerSendData_PartyMemberMaxHFSP506_user(nullptr);
+        static info::CPlayerSendData_PartyMemberPos508_ptr CPlayerSendData_PartyMemberPos508_next(nullptr);
+        static info::CPlayerSendData_PartyMemberPos508_clbk CPlayerSendData_PartyMemberPos508_user(nullptr);
+        static info::CPlayerSendData_PartyMemberSP510_ptr CPlayerSendData_PartyMemberSP510_next(nullptr);
+        static info::CPlayerSendData_PartyMemberSP510_clbk CPlayerSendData_PartyMemberSP510_user(nullptr);
+        static info::CPlayerSendMsg_AMPInvenDownloadResult512_ptr CPlayerSendMsg_AMPInvenDownloadResult512_next(nullptr);
+        static info::CPlayerSendMsg_AMPInvenDownloadResult512_clbk CPlayerSendMsg_AMPInvenDownloadResult512_user(nullptr);
+        static info::CPlayerSendMsg_AddBagResult514_ptr CPlayerSendMsg_AddBagResult514_next(nullptr);
+        static info::CPlayerSendMsg_AddBagResult514_clbk CPlayerSendMsg_AddBagResult514_user(nullptr);
+        static info::CPlayerSendMsg_AddEffect516_ptr CPlayerSendMsg_AddEffect516_next(nullptr);
+        static info::CPlayerSendMsg_AddEffect516_clbk CPlayerSendMsg_AddEffect516_user(nullptr);
+        static info::CPlayerSendMsg_AdjustAmountInform518_ptr CPlayerSendMsg_AdjustAmountInform518_next(nullptr);
+        static info::CPlayerSendMsg_AdjustAmountInform518_clbk CPlayerSendMsg_AdjustAmountInform518_user(nullptr);
+        static info::CPlayerSendMsg_AlterBooster520_ptr CPlayerSendMsg_AlterBooster520_next(nullptr);
+        static info::CPlayerSendMsg_AlterBooster520_clbk CPlayerSendMsg_AlterBooster520_user(nullptr);
+        static info::CPlayerSendMsg_AlterContEffectTime522_ptr CPlayerSendMsg_AlterContEffectTime522_next(nullptr);
+        static info::CPlayerSendMsg_AlterContEffectTime522_clbk CPlayerSendMsg_AlterContEffectTime522_user(nullptr);
+        static info::CPlayerSendMsg_AlterEquipSPInform524_ptr CPlayerSendMsg_AlterEquipSPInform524_next(nullptr);
+        static info::CPlayerSendMsg_AlterEquipSPInform524_clbk CPlayerSendMsg_AlterEquipSPInform524_user(nullptr);
+        static info::CPlayerSendMsg_AlterExpInform526_ptr CPlayerSendMsg_AlterExpInform526_next(nullptr);
+        static info::CPlayerSendMsg_AlterExpInform526_clbk CPlayerSendMsg_AlterExpInform526_user(nullptr);
+        static info::CPlayerSendMsg_AlterGradeInform528_ptr CPlayerSendMsg_AlterGradeInform528_next(nullptr);
+        static info::CPlayerSendMsg_AlterGradeInform528_clbk CPlayerSendMsg_AlterGradeInform528_user(nullptr);
+        static info::CPlayerSendMsg_AlterHPInform530_ptr CPlayerSendMsg_AlterHPInform530_next(nullptr);
+        static info::CPlayerSendMsg_AlterHPInform530_clbk CPlayerSendMsg_AlterHPInform530_user(nullptr);
+        static info::CPlayerSendMsg_AlterItemDurInform532_ptr CPlayerSendMsg_AlterItemDurInform532_next(nullptr);
+        static info::CPlayerSendMsg_AlterItemDurInform532_clbk CPlayerSendMsg_AlterItemDurInform532_user(nullptr);
+        static info::CPlayerSendMsg_AlterMaxDP534_ptr CPlayerSendMsg_AlterMaxDP534_next(nullptr);
+        static info::CPlayerSendMsg_AlterMaxDP534_clbk CPlayerSendMsg_AlterMaxDP534_user(nullptr);
+        static info::CPlayerSendMsg_AlterMoneyInform536_ptr CPlayerSendMsg_AlterMoneyInform536_next(nullptr);
+        static info::CPlayerSendMsg_AlterMoneyInform536_clbk CPlayerSendMsg_AlterMoneyInform536_user(nullptr);
+        static info::CPlayerSendMsg_AlterPvPCash538_ptr CPlayerSendMsg_AlterPvPCash538_next(nullptr);
+        static info::CPlayerSendMsg_AlterPvPCash538_clbk CPlayerSendMsg_AlterPvPCash538_user(nullptr);
+        static info::CPlayerSendMsg_AlterPvPPoint540_ptr CPlayerSendMsg_AlterPvPPoint540_next(nullptr);
+        static info::CPlayerSendMsg_AlterPvPPoint540_clbk CPlayerSendMsg_AlterPvPPoint540_user(nullptr);
+        static info::CPlayerSendMsg_AlterPvPRank542_ptr CPlayerSendMsg_AlterPvPRank542_next(nullptr);
+        static info::CPlayerSendMsg_AlterPvPRank542_clbk CPlayerSendMsg_AlterPvPRank542_user(nullptr);
+        static info::CPlayerSendMsg_AlterRegionInform544_ptr CPlayerSendMsg_AlterRegionInform544_next(nullptr);
+        static info::CPlayerSendMsg_AlterRegionInform544_clbk CPlayerSendMsg_AlterRegionInform544_user(nullptr);
+        static info::CPlayerSendMsg_AlterSPInform546_ptr CPlayerSendMsg_AlterSPInform546_next(nullptr);
+        static info::CPlayerSendMsg_AlterSPInform546_clbk CPlayerSendMsg_AlterSPInform546_user(nullptr);
+        static info::CPlayerSendMsg_AlterTol548_ptr CPlayerSendMsg_AlterTol548_next(nullptr);
+        static info::CPlayerSendMsg_AlterTol548_clbk CPlayerSendMsg_AlterTol548_user(nullptr);
+        static info::CPlayerSendMsg_AlterTowerHP550_ptr CPlayerSendMsg_AlterTowerHP550_next(nullptr);
+        static info::CPlayerSendMsg_AlterTowerHP550_clbk CPlayerSendMsg_AlterTowerHP550_user(nullptr);
+        static info::CPlayerSendMsg_AlterTownOrField552_ptr CPlayerSendMsg_AlterTownOrField552_next(nullptr);
+        static info::CPlayerSendMsg_AlterTownOrField552_clbk CPlayerSendMsg_AlterTownOrField552_user(nullptr);
+        static info::CPlayerSendMsg_AlterUnitBulletInform554_ptr CPlayerSendMsg_AlterUnitBulletInform554_next(nullptr);
+        static info::CPlayerSendMsg_AlterUnitBulletInform554_clbk CPlayerSendMsg_AlterUnitBulletInform554_user(nullptr);
+        static info::CPlayerSendMsg_AlterUnitHPInform556_ptr CPlayerSendMsg_AlterUnitHPInform556_next(nullptr);
+        static info::CPlayerSendMsg_AlterUnitHPInform556_clbk CPlayerSendMsg_AlterUnitHPInform556_user(nullptr);
+        static info::CPlayerSendMsg_AlterWeaponBulletInform558_ptr CPlayerSendMsg_AlterWeaponBulletInform558_next(nullptr);
+        static info::CPlayerSendMsg_AlterWeaponBulletInform558_clbk CPlayerSendMsg_AlterWeaponBulletInform558_user(nullptr);
+        static info::CPlayerSendMsg_Alter_Action_Point560_ptr CPlayerSendMsg_Alter_Action_Point560_next(nullptr);
+        static info::CPlayerSendMsg_Alter_Action_Point560_clbk CPlayerSendMsg_Alter_Action_Point560_user(nullptr);
+        static info::CPlayerSendMsg_AnimusExpInform562_ptr CPlayerSendMsg_AnimusExpInform562_next(nullptr);
+        static info::CPlayerSendMsg_AnimusExpInform562_clbk CPlayerSendMsg_AnimusExpInform562_user(nullptr);
+        static info::CPlayerSendMsg_AnimusFPInform564_ptr CPlayerSendMsg_AnimusFPInform564_next(nullptr);
+        static info::CPlayerSendMsg_AnimusFPInform564_clbk CPlayerSendMsg_AnimusFPInform564_user(nullptr);
+        static info::CPlayerSendMsg_AnimusHPInform566_ptr CPlayerSendMsg_AnimusHPInform566_next(nullptr);
+        static info::CPlayerSendMsg_AnimusHPInform566_clbk CPlayerSendMsg_AnimusHPInform566_user(nullptr);
+        static info::CPlayerSendMsg_AnimusInvenChange568_ptr CPlayerSendMsg_AnimusInvenChange568_next(nullptr);
+        static info::CPlayerSendMsg_AnimusInvenChange568_clbk CPlayerSendMsg_AnimusInvenChange568_user(nullptr);
+        static info::CPlayerSendMsg_AnimusModeInform570_ptr CPlayerSendMsg_AnimusModeInform570_next(nullptr);
+        static info::CPlayerSendMsg_AnimusModeInform570_clbk CPlayerSendMsg_AnimusModeInform570_user(nullptr);
+        static info::CPlayerSendMsg_AnimusRecallResult572_ptr CPlayerSendMsg_AnimusRecallResult572_next(nullptr);
+        static info::CPlayerSendMsg_AnimusRecallResult572_clbk CPlayerSendMsg_AnimusRecallResult572_user(nullptr);
+        static info::CPlayerSendMsg_AnimusRecallWaitTimeFree574_ptr CPlayerSendMsg_AnimusRecallWaitTimeFree574_next(nullptr);
+        static info::CPlayerSendMsg_AnimusRecallWaitTimeFree574_clbk CPlayerSendMsg_AnimusRecallWaitTimeFree574_user(nullptr);
+        static info::CPlayerSendMsg_AnimusReturnResult576_ptr CPlayerSendMsg_AnimusReturnResult576_next(nullptr);
+        static info::CPlayerSendMsg_AnimusReturnResult576_clbk CPlayerSendMsg_AnimusReturnResult576_user(nullptr);
+        static info::CPlayerSendMsg_AnimusTargetResult578_ptr CPlayerSendMsg_AnimusTargetResult578_next(nullptr);
+        static info::CPlayerSendMsg_AnimusTargetResult578_clbk CPlayerSendMsg_AnimusTargetResult578_user(nullptr);
+        static info::CPlayerSendMsg_ApexInform580_ptr CPlayerSendMsg_ApexInform580_next(nullptr);
+        static info::CPlayerSendMsg_ApexInform580_clbk CPlayerSendMsg_ApexInform580_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Count582_ptr CPlayerSendMsg_AttackResult_Count582_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Count582_clbk CPlayerSendMsg_AttackResult_Count582_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Error584_ptr CPlayerSendMsg_AttackResult_Error584_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Error584_clbk CPlayerSendMsg_AttackResult_Error584_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Force586_ptr CPlayerSendMsg_AttackResult_Force586_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Force586_clbk CPlayerSendMsg_AttackResult_Force586_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Gen588_ptr CPlayerSendMsg_AttackResult_Gen588_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Gen588_clbk CPlayerSendMsg_AttackResult_Gen588_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_SelfDestruction590_ptr CPlayerSendMsg_AttackResult_SelfDestruction590_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_SelfDestruction590_clbk CPlayerSendMsg_AttackResult_SelfDestruction590_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Siege592_ptr CPlayerSendMsg_AttackResult_Siege592_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Siege592_clbk CPlayerSendMsg_AttackResult_Siege592_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Skill594_ptr CPlayerSendMsg_AttackResult_Skill594_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Skill594_clbk CPlayerSendMsg_AttackResult_Skill594_user(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Unit596_ptr CPlayerSendMsg_AttackResult_Unit596_next(nullptr);
+        static info::CPlayerSendMsg_AttackResult_Unit596_clbk CPlayerSendMsg_AttackResult_Unit596_user(nullptr);
+        static info::CPlayerSendMsg_AwayPartyInvitationQuestion598_ptr CPlayerSendMsg_AwayPartyInvitationQuestion598_next(nullptr);
+        static info::CPlayerSendMsg_AwayPartyInvitationQuestion598_clbk CPlayerSendMsg_AwayPartyInvitationQuestion598_user(nullptr);
+        static info::CPlayerSendMsg_AwayPartyRequestResult600_ptr CPlayerSendMsg_AwayPartyRequestResult600_next(nullptr);
+        static info::CPlayerSendMsg_AwayPartyRequestResult600_clbk CPlayerSendMsg_AwayPartyRequestResult600_user(nullptr);
+        static info::CPlayerSendMsg_BackTowerResult602_ptr CPlayerSendMsg_BackTowerResult602_next(nullptr);
+        static info::CPlayerSendMsg_BackTowerResult602_clbk CPlayerSendMsg_BackTowerResult602_user(nullptr);
+        static info::CPlayerSendMsg_BackTrapResult604_ptr CPlayerSendMsg_BackTrapResult604_next(nullptr);
+        static info::CPlayerSendMsg_BackTrapResult604_clbk CPlayerSendMsg_BackTrapResult604_user(nullptr);
+        static info::CPlayerSendMsg_BaseDownloadResult606_ptr CPlayerSendMsg_BaseDownloadResult606_next(nullptr);
+        static info::CPlayerSendMsg_BaseDownloadResult606_clbk CPlayerSendMsg_BaseDownloadResult606_user(nullptr);
+        static info::CPlayerSendMsg_BillingExipreInform608_ptr CPlayerSendMsg_BillingExipreInform608_next(nullptr);
+        static info::CPlayerSendMsg_BillingExipreInform608_clbk CPlayerSendMsg_BillingExipreInform608_user(nullptr);
+        static info::CPlayerSendMsg_BillingTypeChangeInform610_ptr CPlayerSendMsg_BillingTypeChangeInform610_next(nullptr);
+        static info::CPlayerSendMsg_BillingTypeChangeInform610_clbk CPlayerSendMsg_BillingTypeChangeInform610_user(nullptr);
+        static info::CPlayerSendMsg_BreakdownEquipItem612_ptr CPlayerSendMsg_BreakdownEquipItem612_next(nullptr);
+        static info::CPlayerSendMsg_BreakdownEquipItem612_clbk CPlayerSendMsg_BreakdownEquipItem612_user(nullptr);
+        static info::CPlayerSendMsg_BuddhaEventMsg614_ptr CPlayerSendMsg_BuddhaEventMsg614_next(nullptr);
+        static info::CPlayerSendMsg_BuddhaEventMsg614_clbk CPlayerSendMsg_BuddhaEventMsg614_user(nullptr);
+        static info::CPlayerSendMsg_BuddyAddAnswerResult616_ptr CPlayerSendMsg_BuddyAddAnswerResult616_next(nullptr);
+        static info::CPlayerSendMsg_BuddyAddAnswerResult616_clbk CPlayerSendMsg_BuddyAddAnswerResult616_user(nullptr);
+        static info::CPlayerSendMsg_BuddyAddAsk618_ptr CPlayerSendMsg_BuddyAddAsk618_next(nullptr);
+        static info::CPlayerSendMsg_BuddyAddAsk618_clbk CPlayerSendMsg_BuddyAddAsk618_user(nullptr);
+        static info::CPlayerSendMsg_BuddyAddFail620_ptr CPlayerSendMsg_BuddyAddFail620_next(nullptr);
+        static info::CPlayerSendMsg_BuddyAddFail620_clbk CPlayerSendMsg_BuddyAddFail620_user(nullptr);
+        static info::CPlayerSendMsg_BuddyDelResult622_ptr CPlayerSendMsg_BuddyDelResult622_next(nullptr);
+        static info::CPlayerSendMsg_BuddyDelResult622_clbk CPlayerSendMsg_BuddyDelResult622_user(nullptr);
+        static info::CPlayerSendMsg_BuddyLoginInform624_ptr CPlayerSendMsg_BuddyLoginInform624_next(nullptr);
+        static info::CPlayerSendMsg_BuddyLoginInform624_clbk CPlayerSendMsg_BuddyLoginInform624_user(nullptr);
+        static info::CPlayerSendMsg_BuddyLogoffInform626_ptr CPlayerSendMsg_BuddyLogoffInform626_next(nullptr);
+        static info::CPlayerSendMsg_BuddyLogoffInform626_clbk CPlayerSendMsg_BuddyLogoffInform626_user(nullptr);
+        static info::CPlayerSendMsg_BuddyNameReNewal628_ptr CPlayerSendMsg_BuddyNameReNewal628_next(nullptr);
+        static info::CPlayerSendMsg_BuddyNameReNewal628_clbk CPlayerSendMsg_BuddyNameReNewal628_user(nullptr);
+        static info::CPlayerSendMsg_BuddyPosInform630_ptr CPlayerSendMsg_BuddyPosInform630_next(nullptr);
+        static info::CPlayerSendMsg_BuddyPosInform630_clbk CPlayerSendMsg_BuddyPosInform630_user(nullptr);
+        static info::CPlayerSendMsg_BuyCashItemMode632_ptr CPlayerSendMsg_BuyCashItemMode632_next(nullptr);
+        static info::CPlayerSendMsg_BuyCashItemMode632_clbk CPlayerSendMsg_BuyCashItemMode632_user(nullptr);
+        static info::CPlayerSendMsg_BuyItemStoreResult634_ptr CPlayerSendMsg_BuyItemStoreResult634_next(nullptr);
+        static info::CPlayerSendMsg_BuyItemStoreResult634_clbk CPlayerSendMsg_BuyItemStoreResult634_user(nullptr);
+        static info::CPlayerSendMsg_CancelSuggestResult636_ptr CPlayerSendMsg_CancelSuggestResult636_next(nullptr);
+        static info::CPlayerSendMsg_CancelSuggestResult636_clbk CPlayerSendMsg_CancelSuggestResult636_user(nullptr);
+        static info::CPlayerSendMsg_CastVoteResult638_ptr CPlayerSendMsg_CastVoteResult638_next(nullptr);
+        static info::CPlayerSendMsg_CastVoteResult638_clbk CPlayerSendMsg_CastVoteResult638_user(nullptr);
+        static info::CPlayerSendMsg_ChangeClassCommand640_ptr CPlayerSendMsg_ChangeClassCommand640_next(nullptr);
+        static info::CPlayerSendMsg_ChangeClassCommand640_clbk CPlayerSendMsg_ChangeClassCommand640_user(nullptr);
+        static info::CPlayerSendMsg_CharacterRenameCashResult642_ptr CPlayerSendMsg_CharacterRenameCashResult642_next(nullptr);
+        static info::CPlayerSendMsg_CharacterRenameCashResult642_clbk CPlayerSendMsg_CharacterRenameCashResult642_user(nullptr);
+        static info::CPlayerSendMsg_ChatFarFailure644_ptr CPlayerSendMsg_ChatFarFailure644_next(nullptr);
+        static info::CPlayerSendMsg_ChatFarFailure644_clbk CPlayerSendMsg_ChatFarFailure644_user(nullptr);
+        static info::CPlayerSendMsg_Circle_DelEffect646_ptr CPlayerSendMsg_Circle_DelEffect646_next(nullptr);
+        static info::CPlayerSendMsg_Circle_DelEffect646_clbk CPlayerSendMsg_Circle_DelEffect646_user(nullptr);
+        static info::CPlayerSendMsg_ClassSkillResult648_ptr CPlayerSendMsg_ClassSkillResult648_next(nullptr);
+        static info::CPlayerSendMsg_ClassSkillResult648_clbk CPlayerSendMsg_ClassSkillResult648_user(nullptr);
+        static info::CPlayerSendMsg_ClearDarkHole650_ptr CPlayerSendMsg_ClearDarkHole650_next(nullptr);
+        static info::CPlayerSendMsg_ClearDarkHole650_clbk CPlayerSendMsg_ClearDarkHole650_user(nullptr);
+        static info::CPlayerSendMsg_CombineItemExAcceptResult652_ptr CPlayerSendMsg_CombineItemExAcceptResult652_next(nullptr);
+        static info::CPlayerSendMsg_CombineItemExAcceptResult652_clbk CPlayerSendMsg_CombineItemExAcceptResult652_user(nullptr);
+        static info::CPlayerSendMsg_CombineItemExResult654_ptr CPlayerSendMsg_CombineItemExResult654_next(nullptr);
+        static info::CPlayerSendMsg_CombineItemExResult654_clbk CPlayerSendMsg_CombineItemExResult654_user(nullptr);
+        static info::CPlayerSendMsg_CombineItemResult656_ptr CPlayerSendMsg_CombineItemResult656_next(nullptr);
+        static info::CPlayerSendMsg_CombineItemResult656_clbk CPlayerSendMsg_CombineItemResult656_user(nullptr);
+        static info::CPlayerSendMsg_CombineLendItemResult658_ptr CPlayerSendMsg_CombineLendItemResult658_next(nullptr);
+        static info::CPlayerSendMsg_CombineLendItemResult658_clbk CPlayerSendMsg_CombineLendItemResult658_user(nullptr);
+        static info::CPlayerSendMsg_CreateTowerResult660_ptr CPlayerSendMsg_CreateTowerResult660_next(nullptr);
+        static info::CPlayerSendMsg_CreateTowerResult660_clbk CPlayerSendMsg_CreateTowerResult660_user(nullptr);
+        static info::CPlayerSendMsg_CreateTrapResult662_ptr CPlayerSendMsg_CreateTrapResult662_next(nullptr);
+        static info::CPlayerSendMsg_CreateTrapResult662_clbk CPlayerSendMsg_CreateTrapResult662_user(nullptr);
+        static info::CPlayerSendMsg_CumDownloadResult664_ptr CPlayerSendMsg_CumDownloadResult664_next(nullptr);
+        static info::CPlayerSendMsg_CumDownloadResult664_clbk CPlayerSendMsg_CumDownloadResult664_user(nullptr);
+        static info::CPlayerSendMsg_CuttingCompleteResult666_ptr CPlayerSendMsg_CuttingCompleteResult666_next(nullptr);
+        static info::CPlayerSendMsg_CuttingCompleteResult666_clbk CPlayerSendMsg_CuttingCompleteResult666_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAccomplishInform668_ptr CPlayerSendMsg_DTradeAccomplishInform668_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAccomplishInform668_clbk CPlayerSendMsg_DTradeAccomplishInform668_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAddInform670_ptr CPlayerSendMsg_DTradeAddInform670_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAddInform670_clbk CPlayerSendMsg_DTradeAddInform670_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAddResult672_ptr CPlayerSendMsg_DTradeAddResult672_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAddResult672_clbk CPlayerSendMsg_DTradeAddResult672_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAnswerResult674_ptr CPlayerSendMsg_DTradeAnswerResult674_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAnswerResult674_clbk CPlayerSendMsg_DTradeAnswerResult674_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAskInform676_ptr CPlayerSendMsg_DTradeAskInform676_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAskInform676_clbk CPlayerSendMsg_DTradeAskInform676_user(nullptr);
+        static info::CPlayerSendMsg_DTradeAskResult678_ptr CPlayerSendMsg_DTradeAskResult678_next(nullptr);
+        static info::CPlayerSendMsg_DTradeAskResult678_clbk CPlayerSendMsg_DTradeAskResult678_user(nullptr);
+        static info::CPlayerSendMsg_DTradeBetInform680_ptr CPlayerSendMsg_DTradeBetInform680_next(nullptr);
+        static info::CPlayerSendMsg_DTradeBetInform680_clbk CPlayerSendMsg_DTradeBetInform680_user(nullptr);
+        static info::CPlayerSendMsg_DTradeBetResult682_ptr CPlayerSendMsg_DTradeBetResult682_next(nullptr);
+        static info::CPlayerSendMsg_DTradeBetResult682_clbk CPlayerSendMsg_DTradeBetResult682_user(nullptr);
+        static info::CPlayerSendMsg_DTradeCancleInform684_ptr CPlayerSendMsg_DTradeCancleInform684_next(nullptr);
+        static info::CPlayerSendMsg_DTradeCancleInform684_clbk CPlayerSendMsg_DTradeCancleInform684_user(nullptr);
+        static info::CPlayerSendMsg_DTradeCancleResult686_ptr CPlayerSendMsg_DTradeCancleResult686_next(nullptr);
+        static info::CPlayerSendMsg_DTradeCancleResult686_clbk CPlayerSendMsg_DTradeCancleResult686_user(nullptr);
+        static info::CPlayerSendMsg_DTradeCloseInform688_ptr CPlayerSendMsg_DTradeCloseInform688_next(nullptr);
+        static info::CPlayerSendMsg_DTradeCloseInform688_clbk CPlayerSendMsg_DTradeCloseInform688_user(nullptr);
+        static info::CPlayerSendMsg_DTradeDelInform690_ptr CPlayerSendMsg_DTradeDelInform690_next(nullptr);
+        static info::CPlayerSendMsg_DTradeDelInform690_clbk CPlayerSendMsg_DTradeDelInform690_user(nullptr);
+        static info::CPlayerSendMsg_DTradeDelResult692_ptr CPlayerSendMsg_DTradeDelResult692_next(nullptr);
+        static info::CPlayerSendMsg_DTradeDelResult692_clbk CPlayerSendMsg_DTradeDelResult692_user(nullptr);
+        static info::CPlayerSendMsg_DTradeLockInform694_ptr CPlayerSendMsg_DTradeLockInform694_next(nullptr);
+        static info::CPlayerSendMsg_DTradeLockInform694_clbk CPlayerSendMsg_DTradeLockInform694_user(nullptr);
+        static info::CPlayerSendMsg_DTradeLockResult696_ptr CPlayerSendMsg_DTradeLockResult696_next(nullptr);
+        static info::CPlayerSendMsg_DTradeLockResult696_clbk CPlayerSendMsg_DTradeLockResult696_user(nullptr);
+        static info::CPlayerSendMsg_DTradeOKInform698_ptr CPlayerSendMsg_DTradeOKInform698_next(nullptr);
+        static info::CPlayerSendMsg_DTradeOKInform698_clbk CPlayerSendMsg_DTradeOKInform698_user(nullptr);
+        static info::CPlayerSendMsg_DTradeOKResult700_ptr CPlayerSendMsg_DTradeOKResult700_next(nullptr);
+        static info::CPlayerSendMsg_DTradeOKResult700_clbk CPlayerSendMsg_DTradeOKResult700_user(nullptr);
+        static info::CPlayerSendMsg_DTradeStartInform702_ptr CPlayerSendMsg_DTradeStartInform702_next(nullptr);
+        static info::CPlayerSendMsg_DTradeStartInform702_clbk CPlayerSendMsg_DTradeStartInform702_user(nullptr);
+        static info::CPlayerSendMsg_DTradeUnitAddInform704_ptr CPlayerSendMsg_DTradeUnitAddInform704_next(nullptr);
+        static info::CPlayerSendMsg_DTradeUnitAddInform704_clbk CPlayerSendMsg_DTradeUnitAddInform704_user(nullptr);
+        static info::CPlayerSendMsg_DTradeUnitInfoInform706_ptr CPlayerSendMsg_DTradeUnitInfoInform706_next(nullptr);
+        static info::CPlayerSendMsg_DTradeUnitInfoInform706_clbk CPlayerSendMsg_DTradeUnitInfoInform706_user(nullptr);
+        static info::CPlayerSendMsg_DamageResult708_ptr CPlayerSendMsg_DamageResult708_next(nullptr);
+        static info::CPlayerSendMsg_DamageResult708_clbk CPlayerSendMsg_DamageResult708_user(nullptr);
+        static info::CPlayerSendMsg_DarkHoleOpenFail710_ptr CPlayerSendMsg_DarkHoleOpenFail710_next(nullptr);
+        static info::CPlayerSendMsg_DarkHoleOpenFail710_clbk CPlayerSendMsg_DarkHoleOpenFail710_user(nullptr);
+        static info::CPlayerSendMsg_DarkHoleOpenResult712_ptr CPlayerSendMsg_DarkHoleOpenResult712_next(nullptr);
+        static info::CPlayerSendMsg_DarkHoleOpenResult712_clbk CPlayerSendMsg_DarkHoleOpenResult712_user(nullptr);
+        static info::CPlayerSendMsg_DarkHoleRewardMessage714_ptr CPlayerSendMsg_DarkHoleRewardMessage714_next(nullptr);
+        static info::CPlayerSendMsg_DarkHoleRewardMessage714_clbk CPlayerSendMsg_DarkHoleRewardMessage714_user(nullptr);
+        static info::CPlayerSendMsg_DelEffect716_ptr CPlayerSendMsg_DelEffect716_next(nullptr);
+        static info::CPlayerSendMsg_DelEffect716_clbk CPlayerSendMsg_DelEffect716_user(nullptr);
+        static info::CPlayerSendMsg_DeleteStorageInform718_ptr CPlayerSendMsg_DeleteStorageInform718_next(nullptr);
+        static info::CPlayerSendMsg_DeleteStorageInform718_clbk CPlayerSendMsg_DeleteStorageInform718_user(nullptr);
+        static info::CPlayerSendMsg_Destroy720_ptr CPlayerSendMsg_Destroy720_next(nullptr);
+        static info::CPlayerSendMsg_Destroy720_clbk CPlayerSendMsg_Destroy720_user(nullptr);
+        static info::CPlayerSendMsg_Die722_ptr CPlayerSendMsg_Die722_next(nullptr);
+        static info::CPlayerSendMsg_Die722_clbk CPlayerSendMsg_Die722_user(nullptr);
+        static info::CPlayerSendMsg_EconomyHistoryInform724_ptr CPlayerSendMsg_EconomyHistoryInform724_next(nullptr);
+        static info::CPlayerSendMsg_EconomyHistoryInform724_clbk CPlayerSendMsg_EconomyHistoryInform724_user(nullptr);
+        static info::CPlayerSendMsg_EconomyRateInform726_ptr CPlayerSendMsg_EconomyRateInform726_next(nullptr);
+        static info::CPlayerSendMsg_EconomyRateInform726_clbk CPlayerSendMsg_EconomyRateInform726_user(nullptr);
+        static info::CPlayerSendMsg_EmbellishResult728_ptr CPlayerSendMsg_EmbellishResult728_next(nullptr);
+        static info::CPlayerSendMsg_EmbellishResult728_clbk CPlayerSendMsg_EmbellishResult728_user(nullptr);
+        static info::CPlayerSendMsg_EnterDarkHole730_ptr CPlayerSendMsg_EnterDarkHole730_next(nullptr);
+        static info::CPlayerSendMsg_EnterDarkHole730_clbk CPlayerSendMsg_EnterDarkHole730_user(nullptr);
+        static info::CPlayerSendMsg_EquipItemLevelLimit732_ptr CPlayerSendMsg_EquipItemLevelLimit732_next(nullptr);
+        static info::CPlayerSendMsg_EquipItemLevelLimit732_clbk CPlayerSendMsg_EquipItemLevelLimit732_user(nullptr);
+        static info::CPlayerSendMsg_EquipPartChange734_ptr CPlayerSendMsg_EquipPartChange734_next(nullptr);
+        static info::CPlayerSendMsg_EquipPartChange734_clbk CPlayerSendMsg_EquipPartChange734_user(nullptr);
+        static info::CPlayerSendMsg_EquipPartResult736_ptr CPlayerSendMsg_EquipPartResult736_next(nullptr);
+        static info::CPlayerSendMsg_EquipPartResult736_clbk CPlayerSendMsg_EquipPartResult736_user(nullptr);
+        static info::CPlayerSendMsg_ExchangeItemResult738_ptr CPlayerSendMsg_ExchangeItemResult738_next(nullptr);
+        static info::CPlayerSendMsg_ExchangeItemResult738_clbk CPlayerSendMsg_ExchangeItemResult738_user(nullptr);
+        static info::CPlayerSendMsg_ExchangeLendItemResult740_ptr CPlayerSendMsg_ExchangeLendItemResult740_next(nullptr);
+        static info::CPlayerSendMsg_ExchangeLendItemResult740_clbk CPlayerSendMsg_ExchangeLendItemResult740_user(nullptr);
+        static info::CPlayerSendMsg_ExchangeMoneyResult742_ptr CPlayerSendMsg_ExchangeMoneyResult742_next(nullptr);
+        static info::CPlayerSendMsg_ExchangeMoneyResult742_clbk CPlayerSendMsg_ExchangeMoneyResult742_user(nullptr);
+        static info::CPlayerSendMsg_ExitWorldResult744_ptr CPlayerSendMsg_ExitWorldResult744_next(nullptr);
+        static info::CPlayerSendMsg_ExitWorldResult744_clbk CPlayerSendMsg_ExitWorldResult744_user(nullptr);
+        static info::CPlayerSendMsg_ExtTrunkExtendResult746_ptr CPlayerSendMsg_ExtTrunkExtendResult746_next(nullptr);
+        static info::CPlayerSendMsg_ExtTrunkExtendResult746_clbk CPlayerSendMsg_ExtTrunkExtendResult746_user(nullptr);
+        static info::CPlayerSendMsg_FanfareItem748_ptr CPlayerSendMsg_FanfareItem748_next(nullptr);
+        static info::CPlayerSendMsg_FanfareItem748_clbk CPlayerSendMsg_FanfareItem748_user(nullptr);
+        static info::CPlayerSendMsg_FcitemInform750_ptr CPlayerSendMsg_FcitemInform750_next(nullptr);
+        static info::CPlayerSendMsg_FcitemInform750_clbk CPlayerSendMsg_FcitemInform750_user(nullptr);
+        static info::CPlayerSendMsg_FixPosition752_ptr CPlayerSendMsg_FixPosition752_next(nullptr);
+        static info::CPlayerSendMsg_FixPosition752_clbk CPlayerSendMsg_FixPosition752_user(nullptr);
+        static info::CPlayerSendMsg_ForceDownloadResult754_ptr CPlayerSendMsg_ForceDownloadResult754_next(nullptr);
+        static info::CPlayerSendMsg_ForceDownloadResult754_clbk CPlayerSendMsg_ForceDownloadResult754_user(nullptr);
+        static info::CPlayerSendMsg_ForceInvenChange756_ptr CPlayerSendMsg_ForceInvenChange756_next(nullptr);
+        static info::CPlayerSendMsg_ForceInvenChange756_clbk CPlayerSendMsg_ForceInvenChange756_user(nullptr);
+        static info::CPlayerSendMsg_ForceResult758_ptr CPlayerSendMsg_ForceResult758_next(nullptr);
+        static info::CPlayerSendMsg_ForceResult758_clbk CPlayerSendMsg_ForceResult758_user(nullptr);
+        static info::CPlayerSendMsg_GM_Greeting760_ptr CPlayerSendMsg_GM_Greeting760_next(nullptr);
+        static info::CPlayerSendMsg_GM_Greeting760_clbk CPlayerSendMsg_GM_Greeting760_user(nullptr);
+        static info::CPlayerSendMsg_GUILD_Greeting762_ptr CPlayerSendMsg_GUILD_Greeting762_next(nullptr);
+        static info::CPlayerSendMsg_GUILD_Greeting762_clbk CPlayerSendMsg_GUILD_Greeting762_user(nullptr);
+        static info::CPlayerSendMsg_GestureInform764_ptr CPlayerSendMsg_GestureInform764_next(nullptr);
+        static info::CPlayerSendMsg_GestureInform764_clbk CPlayerSendMsg_GestureInform764_user(nullptr);
+        static info::CPlayerSendMsg_GiveupDarkHole766_ptr CPlayerSendMsg_GiveupDarkHole766_next(nullptr);
+        static info::CPlayerSendMsg_GiveupDarkHole766_clbk CPlayerSendMsg_GiveupDarkHole766_user(nullptr);
+        static info::CPlayerSendMsg_GotoBasePortalResult768_ptr CPlayerSendMsg_GotoBasePortalResult768_next(nullptr);
+        static info::CPlayerSendMsg_GotoBasePortalResult768_clbk CPlayerSendMsg_GotoBasePortalResult768_user(nullptr);
+        static info::CPlayerSendMsg_GotoRecallResult770_ptr CPlayerSendMsg_GotoRecallResult770_next(nullptr);
+        static info::CPlayerSendMsg_GotoRecallResult770_clbk CPlayerSendMsg_GotoRecallResult770_user(nullptr);
+        static info::CPlayerSendMsg_GroupTargetInform772_ptr CPlayerSendMsg_GroupTargetInform772_next(nullptr);
+        static info::CPlayerSendMsg_GroupTargetInform772_clbk CPlayerSendMsg_GroupTargetInform772_user(nullptr);
+        static info::CPlayerSendMsg_GuildEstablishFail774_ptr CPlayerSendMsg_GuildEstablishFail774_next(nullptr);
+        static info::CPlayerSendMsg_GuildEstablishFail774_clbk CPlayerSendMsg_GuildEstablishFail774_user(nullptr);
+        static info::CPlayerSendMsg_GuildForceLeaveBoradori776_ptr CPlayerSendMsg_GuildForceLeaveBoradori776_next(nullptr);
+        static info::CPlayerSendMsg_GuildForceLeaveBoradori776_clbk CPlayerSendMsg_GuildForceLeaveBoradori776_user(nullptr);
+        static info::CPlayerSendMsg_GuildJoinAcceptFail778_ptr CPlayerSendMsg_GuildJoinAcceptFail778_next(nullptr);
+        static info::CPlayerSendMsg_GuildJoinAcceptFail778_clbk CPlayerSendMsg_GuildJoinAcceptFail778_user(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyCancelResult780_ptr CPlayerSendMsg_GuildJoinApplyCancelResult780_next(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyCancelResult780_clbk CPlayerSendMsg_GuildJoinApplyCancelResult780_user(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyRejectInform782_ptr CPlayerSendMsg_GuildJoinApplyRejectInform782_next(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyRejectInform782_clbk CPlayerSendMsg_GuildJoinApplyRejectInform782_user(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyResult784_ptr CPlayerSendMsg_GuildJoinApplyResult784_next(nullptr);
+        static info::CPlayerSendMsg_GuildJoinApplyResult784_clbk CPlayerSendMsg_GuildJoinApplyResult784_user(nullptr);
+        static info::CPlayerSendMsg_GuildJoinOtherInform786_ptr CPlayerSendMsg_GuildJoinOtherInform786_next(nullptr);
+        static info::CPlayerSendMsg_GuildJoinOtherInform786_clbk CPlayerSendMsg_GuildJoinOtherInform786_user(nullptr);
+        static info::CPlayerSendMsg_GuildManageResult788_ptr CPlayerSendMsg_GuildManageResult788_next(nullptr);
+        static info::CPlayerSendMsg_GuildManageResult788_clbk CPlayerSendMsg_GuildManageResult788_user(nullptr);
+        static info::CPlayerSendMsg_GuildMasterEffect790_ptr CPlayerSendMsg_GuildMasterEffect790_next(nullptr);
+        static info::CPlayerSendMsg_GuildMasterEffect790_clbk CPlayerSendMsg_GuildMasterEffect790_user(nullptr);
+        static info::CPlayerSendMsg_GuildPushMoneyResult792_ptr CPlayerSendMsg_GuildPushMoneyResult792_next(nullptr);
+        static info::CPlayerSendMsg_GuildPushMoneyResult792_clbk CPlayerSendMsg_GuildPushMoneyResult792_user(nullptr);
+        static info::CPlayerSendMsg_GuildRoomEnterResult794_ptr CPlayerSendMsg_GuildRoomEnterResult794_next(nullptr);
+        static info::CPlayerSendMsg_GuildRoomEnterResult794_clbk CPlayerSendMsg_GuildRoomEnterResult794_user(nullptr);
+        static info::CPlayerSendMsg_GuildRoomOutResult796_ptr CPlayerSendMsg_GuildRoomOutResult796_next(nullptr);
+        static info::CPlayerSendMsg_GuildRoomOutResult796_clbk CPlayerSendMsg_GuildRoomOutResult796_user(nullptr);
+        static info::CPlayerSendMsg_GuildRoomRentResult798_ptr CPlayerSendMsg_GuildRoomRentResult798_next(nullptr);
+        static info::CPlayerSendMsg_GuildRoomRentResult798_clbk CPlayerSendMsg_GuildRoomRentResult798_user(nullptr);
+        static info::CPlayerSendMsg_GuildRoomRestTimeResult800_ptr CPlayerSendMsg_GuildRoomRestTimeResult800_next(nullptr);
+        static info::CPlayerSendMsg_GuildRoomRestTimeResult800_clbk CPlayerSendMsg_GuildRoomRestTimeResult800_user(nullptr);
+        static info::CPlayerSendMsg_GuildSelfLeaveResult802_ptr CPlayerSendMsg_GuildSelfLeaveResult802_next(nullptr);
+        static info::CPlayerSendMsg_GuildSelfLeaveResult802_clbk CPlayerSendMsg_GuildSelfLeaveResult802_user(nullptr);
+        static info::CPlayerSendMsg_GuildSetHonorResult804_ptr CPlayerSendMsg_GuildSetHonorResult804_next(nullptr);
+        static info::CPlayerSendMsg_GuildSetHonorResult804_clbk CPlayerSendMsg_GuildSetHonorResult804_user(nullptr);
+        static info::CPlayerSendMsg_HSKQuestActCum806_ptr CPlayerSendMsg_HSKQuestActCum806_next(nullptr);
+        static info::CPlayerSendMsg_HSKQuestActCum806_clbk CPlayerSendMsg_HSKQuestActCum806_user(nullptr);
+        static info::CPlayerSendMsg_HSKQuestSucc808_ptr CPlayerSendMsg_HSKQuestSucc808_next(nullptr);
+        static info::CPlayerSendMsg_HSKQuestSucc808_clbk CPlayerSendMsg_HSKQuestSucc808_user(nullptr);
+        static info::CPlayerSendMsg_HonorGuildMark810_ptr CPlayerSendMsg_HonorGuildMark810_next(nullptr);
+        static info::CPlayerSendMsg_HonorGuildMark810_clbk CPlayerSendMsg_HonorGuildMark810_user(nullptr);
+        static info::CPlayerSendMsg_InformTaxIncome812_ptr CPlayerSendMsg_InformTaxIncome812_next(nullptr);
+        static info::CPlayerSendMsg_InformTaxIncome812_clbk CPlayerSendMsg_InformTaxIncome812_user(nullptr);
+        static info::CPlayerSendMsg_Init_Action_Point814_ptr CPlayerSendMsg_Init_Action_Point814_next(nullptr);
+        static info::CPlayerSendMsg_Init_Action_Point814_clbk CPlayerSendMsg_Init_Action_Point814_user(nullptr);
+        static info::CPlayerSendMsg_InsertItemInform816_ptr CPlayerSendMsg_InsertItemInform816_next(nullptr);
+        static info::CPlayerSendMsg_InsertItemInform816_clbk CPlayerSendMsg_InsertItemInform816_user(nullptr);
+        static info::CPlayerSendMsg_InsertNewQuest818_ptr CPlayerSendMsg_InsertNewQuest818_next(nullptr);
+        static info::CPlayerSendMsg_InsertNewQuest818_clbk CPlayerSendMsg_InsertNewQuest818_user(nullptr);
+        static info::CPlayerSendMsg_InsertNextQuest820_ptr CPlayerSendMsg_InsertNextQuest820_next(nullptr);
+        static info::CPlayerSendMsg_InsertNextQuest820_clbk CPlayerSendMsg_InsertNextQuest820_user(nullptr);
+        static info::CPlayerSendMsg_InsertQuestFailure822_ptr CPlayerSendMsg_InsertQuestFailure822_next(nullptr);
+        static info::CPlayerSendMsg_InsertQuestFailure822_clbk CPlayerSendMsg_InsertQuestFailure822_user(nullptr);
+        static info::CPlayerSendMsg_InsertQuestItemInform824_ptr CPlayerSendMsg_InsertQuestItemInform824_next(nullptr);
+        static info::CPlayerSendMsg_InsertQuestItemInform824_clbk CPlayerSendMsg_InsertQuestItemInform824_user(nullptr);
+        static info::CPlayerSendMsg_InvenDownloadResult826_ptr CPlayerSendMsg_InvenDownloadResult826_next(nullptr);
+        static info::CPlayerSendMsg_InvenDownloadResult826_clbk CPlayerSendMsg_InvenDownloadResult826_user(nullptr);
+        static info::CPlayerSendMsg_ItemDowngrade828_ptr CPlayerSendMsg_ItemDowngrade828_next(nullptr);
+        static info::CPlayerSendMsg_ItemDowngrade828_clbk CPlayerSendMsg_ItemDowngrade828_user(nullptr);
+        static info::CPlayerSendMsg_ItemStorageRefresh830_ptr CPlayerSendMsg_ItemStorageRefresh830_next(nullptr);
+        static info::CPlayerSendMsg_ItemStorageRefresh830_clbk CPlayerSendMsg_ItemStorageRefresh830_user(nullptr);
+        static info::CPlayerSendMsg_ItemUpgrade832_ptr CPlayerSendMsg_ItemUpgrade832_next(nullptr);
+        static info::CPlayerSendMsg_ItemUpgrade832_clbk CPlayerSendMsg_ItemUpgrade832_user(nullptr);
+        static info::CPlayerSendMsg_JadeEffectErr834_ptr CPlayerSendMsg_JadeEffectErr834_next(nullptr);
+        static info::CPlayerSendMsg_JadeEffectErr834_clbk CPlayerSendMsg_JadeEffectErr834_user(nullptr);
+        static info::CPlayerSendMsg_LendItemTimeExpired836_ptr CPlayerSendMsg_LendItemTimeExpired836_next(nullptr);
+        static info::CPlayerSendMsg_LendItemTimeExpired836_clbk CPlayerSendMsg_LendItemTimeExpired836_user(nullptr);
+        static info::CPlayerSendMsg_Level838_ptr CPlayerSendMsg_Level838_next(nullptr);
+        static info::CPlayerSendMsg_Level838_clbk CPlayerSendMsg_Level838_user(nullptr);
+        static info::CPlayerSendMsg_LinkBoardDownloadResult840_ptr CPlayerSendMsg_LinkBoardDownloadResult840_next(nullptr);
+        static info::CPlayerSendMsg_LinkBoardDownloadResult840_clbk CPlayerSendMsg_LinkBoardDownloadResult840_user(nullptr);
+        static info::CPlayerSendMsg_MacroRequest842_ptr CPlayerSendMsg_MacroRequest842_next(nullptr);
+        static info::CPlayerSendMsg_MacroRequest842_clbk CPlayerSendMsg_MacroRequest842_user(nullptr);
+        static info::CPlayerSendMsg_MadeTrapNumInform844_ptr CPlayerSendMsg_MadeTrapNumInform844_next(nullptr);
+        static info::CPlayerSendMsg_MadeTrapNumInform844_clbk CPlayerSendMsg_MadeTrapNumInform844_user(nullptr);
+        static info::CPlayerSendMsg_MakeItemCheatSendButtonEnable846_ptr CPlayerSendMsg_MakeItemCheatSendButtonEnable846_next(nullptr);
+        static info::CPlayerSendMsg_MakeItemCheatSendButtonEnable846_clbk CPlayerSendMsg_MakeItemCheatSendButtonEnable846_user(nullptr);
+        static info::CPlayerSendMsg_MakeItemResult848_ptr CPlayerSendMsg_MakeItemResult848_next(nullptr);
+        static info::CPlayerSendMsg_MakeItemResult848_clbk CPlayerSendMsg_MakeItemResult848_user(nullptr);
+        static info::CPlayerSendMsg_MapEnvInform850_ptr CPlayerSendMsg_MapEnvInform850_next(nullptr);
+        static info::CPlayerSendMsg_MapEnvInform850_clbk CPlayerSendMsg_MapEnvInform850_user(nullptr);
+        static info::CPlayerSendMsg_MapOut852_ptr CPlayerSendMsg_MapOut852_next(nullptr);
+        static info::CPlayerSendMsg_MapOut852_clbk CPlayerSendMsg_MapOut852_user(nullptr);
+        static info::CPlayerSendMsg_MaxHFSP854_ptr CPlayerSendMsg_MaxHFSP854_next(nullptr);
+        static info::CPlayerSendMsg_MaxHFSP854_clbk CPlayerSendMsg_MaxHFSP854_user(nullptr);
+        static info::CPlayerSendMsg_MaxPvpPointInform856_ptr CPlayerSendMsg_MaxPvpPointInform856_next(nullptr);
+        static info::CPlayerSendMsg_MaxPvpPointInform856_clbk CPlayerSendMsg_MaxPvpPointInform856_user(nullptr);
+        static info::CPlayerSendMsg_MineCancle858_ptr CPlayerSendMsg_MineCancle858_next(nullptr);
+        static info::CPlayerSendMsg_MineCancle858_clbk CPlayerSendMsg_MineCancle858_user(nullptr);
+        static info::CPlayerSendMsg_MineCompleteResult860_ptr CPlayerSendMsg_MineCompleteResult860_next(nullptr);
+        static info::CPlayerSendMsg_MineCompleteResult860_clbk CPlayerSendMsg_MineCompleteResult860_user(nullptr);
+        static info::CPlayerSendMsg_MineStartResult862_ptr CPlayerSendMsg_MineStartResult862_next(nullptr);
+        static info::CPlayerSendMsg_MineStartResult862_clbk CPlayerSendMsg_MineStartResult862_user(nullptr);
+        static info::CPlayerSendMsg_MonsterAggroData864_ptr CPlayerSendMsg_MonsterAggroData864_next(nullptr);
+        static info::CPlayerSendMsg_MonsterAggroData864_clbk CPlayerSendMsg_MonsterAggroData864_user(nullptr);
+        static info::CPlayerSendMsg_MoveError866_ptr CPlayerSendMsg_MoveError866_next(nullptr);
+        static info::CPlayerSendMsg_MoveError866_clbk CPlayerSendMsg_MoveError866_user(nullptr);
+        static info::CPlayerSendMsg_MoveNext868_ptr CPlayerSendMsg_MoveNext868_next(nullptr);
+        static info::CPlayerSendMsg_MoveNext868_clbk CPlayerSendMsg_MoveNext868_user(nullptr);
+        static info::CPlayerSendMsg_MovePortal870_ptr CPlayerSendMsg_MovePortal870_next(nullptr);
+        static info::CPlayerSendMsg_MovePortal870_clbk CPlayerSendMsg_MovePortal870_user(nullptr);
+        static info::CPlayerSendMsg_MovePortal872_ptr CPlayerSendMsg_MovePortal872_next(nullptr);
+        static info::CPlayerSendMsg_MovePortal872_clbk CPlayerSendMsg_MovePortal872_user(nullptr);
+        static info::CPlayerSendMsg_MoveToOwnStoneMapInform874_ptr CPlayerSendMsg_MoveToOwnStoneMapInform874_next(nullptr);
+        static info::CPlayerSendMsg_MoveToOwnStoneMapInform874_clbk CPlayerSendMsg_MoveToOwnStoneMapInform874_user(nullptr);
+        static info::CPlayerSendMsg_MoveToOwnStoneMapResult876_ptr CPlayerSendMsg_MoveToOwnStoneMapResult876_next(nullptr);
+        static info::CPlayerSendMsg_MoveToOwnStoneMapResult876_clbk CPlayerSendMsg_MoveToOwnStoneMapResult876_user(nullptr);
+        static info::CPlayerSendMsg_NPCLinkItemCheckResult878_ptr CPlayerSendMsg_NPCLinkItemCheckResult878_next(nullptr);
+        static info::CPlayerSendMsg_NPCLinkItemCheckResult878_clbk CPlayerSendMsg_NPCLinkItemCheckResult878_user(nullptr);
+        static info::CPlayerSendMsg_NewMovePotionResult880_ptr CPlayerSendMsg_NewMovePotionResult880_next(nullptr);
+        static info::CPlayerSendMsg_NewMovePotionResult880_clbk CPlayerSendMsg_NewMovePotionResult880_user(nullptr);
+        static info::CPlayerSendMsg_NewViewOther882_ptr CPlayerSendMsg_NewViewOther882_next(nullptr);
+        static info::CPlayerSendMsg_NewViewOther882_clbk CPlayerSendMsg_NewViewOther882_user(nullptr);
+        static info::CPlayerSendMsg_NotifyEffectForGetItem884_ptr CPlayerSendMsg_NotifyEffectForGetItem884_next(nullptr);
+        static info::CPlayerSendMsg_NotifyEffectForGetItem884_clbk CPlayerSendMsg_NotifyEffectForGetItem884_user(nullptr);
+        static info::CPlayerSendMsg_NotifyGetExpInfo886_ptr CPlayerSendMsg_NotifyGetExpInfo886_next(nullptr);
+        static info::CPlayerSendMsg_NotifyGetExpInfo886_clbk CPlayerSendMsg_NotifyGetExpInfo886_user(nullptr);
+        static info::CPlayerSendMsg_Notify_ExceptFromRaceRanking888_ptr CPlayerSendMsg_Notify_ExceptFromRaceRanking888_next(nullptr);
+        static info::CPlayerSendMsg_Notify_ExceptFromRaceRanking888_clbk CPlayerSendMsg_Notify_ExceptFromRaceRanking888_user(nullptr);
+        static info::CPlayerSendMsg_Notify_Get_Golden_Box890_ptr CPlayerSendMsg_Notify_Get_Golden_Box890_next(nullptr);
+        static info::CPlayerSendMsg_Notify_Get_Golden_Box890_clbk CPlayerSendMsg_Notify_Get_Golden_Box890_user(nullptr);
+        static info::CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_ptr CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_next(nullptr);
+        static info::CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_clbk CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_user(nullptr);
+        static info::CPlayerSendMsg_Notify_Me_Get_Golden_Box894_ptr CPlayerSendMsg_Notify_Me_Get_Golden_Box894_next(nullptr);
+        static info::CPlayerSendMsg_Notify_Me_Get_Golden_Box894_clbk CPlayerSendMsg_Notify_Me_Get_Golden_Box894_user(nullptr);
+        static info::CPlayerSendMsg_NpcQuestHistoryInform896_ptr CPlayerSendMsg_NpcQuestHistoryInform896_next(nullptr);
+        static info::CPlayerSendMsg_NpcQuestHistoryInform896_clbk CPlayerSendMsg_NpcQuestHistoryInform896_user(nullptr);
+        static info::CPlayerSendMsg_NpcQuestListResult898_ptr CPlayerSendMsg_NpcQuestListResult898_next(nullptr);
+        static info::CPlayerSendMsg_NpcQuestListResult898_clbk CPlayerSendMsg_NpcQuestListResult898_user(nullptr);
+        static info::CPlayerSendMsg_OffPartResult900_ptr CPlayerSendMsg_OffPartResult900_next(nullptr);
+        static info::CPlayerSendMsg_OffPartResult900_clbk CPlayerSendMsg_OffPartResult900_user(nullptr);
+        static info::CPlayerSendMsg_OfferSuggestResult902_ptr CPlayerSendMsg_OfferSuggestResult902_next(nullptr);
+        static info::CPlayerSendMsg_OfferSuggestResult902_clbk CPlayerSendMsg_OfferSuggestResult902_user(nullptr);
+        static info::CPlayerSendMsg_OreCuttingResult904_ptr CPlayerSendMsg_OreCuttingResult904_next(nullptr);
+        static info::CPlayerSendMsg_OreCuttingResult904_clbk CPlayerSendMsg_OreCuttingResult904_user(nullptr);
+        static info::CPlayerSendMsg_OreIntoBagResult906_ptr CPlayerSendMsg_OreIntoBagResult906_next(nullptr);
+        static info::CPlayerSendMsg_OreIntoBagResult906_clbk CPlayerSendMsg_OreIntoBagResult906_user(nullptr);
+        static info::CPlayerSendMsg_OreTransferCount908_ptr CPlayerSendMsg_OreTransferCount908_next(nullptr);
+        static info::CPlayerSendMsg_OreTransferCount908_clbk CPlayerSendMsg_OreTransferCount908_user(nullptr);
+        static info::CPlayerSendMsg_OtherShapeAll910_ptr CPlayerSendMsg_OtherShapeAll910_next(nullptr);
+        static info::CPlayerSendMsg_OtherShapeAll910_clbk CPlayerSendMsg_OtherShapeAll910_user(nullptr);
+        static info::CPlayerSendMsg_OtherShapeError912_ptr CPlayerSendMsg_OtherShapeError912_next(nullptr);
+        static info::CPlayerSendMsg_OtherShapeError912_clbk CPlayerSendMsg_OtherShapeError912_user(nullptr);
+        static info::CPlayerSendMsg_OtherShapePart914_ptr CPlayerSendMsg_OtherShapePart914_next(nullptr);
+        static info::CPlayerSendMsg_OtherShapePart914_clbk CPlayerSendMsg_OtherShapePart914_user(nullptr);
+        static info::CPlayerSendMsg_OtherShapePartEx_CashChange916_ptr CPlayerSendMsg_OtherShapePartEx_CashChange916_next(nullptr);
+        static info::CPlayerSendMsg_OtherShapePartEx_CashChange916_clbk CPlayerSendMsg_OtherShapePartEx_CashChange916_user(nullptr);
+        static info::CPlayerSendMsg_PartyAlterLootShareResult918_ptr CPlayerSendMsg_PartyAlterLootShareResult918_next(nullptr);
+        static info::CPlayerSendMsg_PartyAlterLootShareResult918_clbk CPlayerSendMsg_PartyAlterLootShareResult918_user(nullptr);
+        static info::CPlayerSendMsg_PartyDisjointResult920_ptr CPlayerSendMsg_PartyDisjointResult920_next(nullptr);
+        static info::CPlayerSendMsg_PartyDisjointResult920_clbk CPlayerSendMsg_PartyDisjointResult920_user(nullptr);
+        static info::CPlayerSendMsg_PartyJoinApplicationQuestion922_ptr CPlayerSendMsg_PartyJoinApplicationQuestion922_next(nullptr);
+        static info::CPlayerSendMsg_PartyJoinApplicationQuestion922_clbk CPlayerSendMsg_PartyJoinApplicationQuestion922_user(nullptr);
+        static info::CPlayerSendMsg_PartyJoinFailLevel924_ptr CPlayerSendMsg_PartyJoinFailLevel924_next(nullptr);
+        static info::CPlayerSendMsg_PartyJoinFailLevel924_clbk CPlayerSendMsg_PartyJoinFailLevel924_user(nullptr);
+        static info::CPlayerSendMsg_PartyJoinInvitationQuestion926_ptr CPlayerSendMsg_PartyJoinInvitationQuestion926_next(nullptr);
+        static info::CPlayerSendMsg_PartyJoinInvitationQuestion926_clbk CPlayerSendMsg_PartyJoinInvitationQuestion926_user(nullptr);
+        static info::CPlayerSendMsg_PartyJoinJoinerResult928_ptr CPlayerSendMsg_PartyJoinJoinerResult928_next(nullptr);
+        static info::CPlayerSendMsg_PartyJoinJoinerResult928_clbk CPlayerSendMsg_PartyJoinJoinerResult928_user(nullptr);
+        static info::CPlayerSendMsg_PartyJoinMemberResult930_ptr CPlayerSendMsg_PartyJoinMemberResult930_next(nullptr);
+        static info::CPlayerSendMsg_PartyJoinMemberResult930_clbk CPlayerSendMsg_PartyJoinMemberResult930_user(nullptr);
+        static info::CPlayerSendMsg_PartyLeaveCompulsionResult932_ptr CPlayerSendMsg_PartyLeaveCompulsionResult932_next(nullptr);
+        static info::CPlayerSendMsg_PartyLeaveCompulsionResult932_clbk CPlayerSendMsg_PartyLeaveCompulsionResult932_user(nullptr);
+        static info::CPlayerSendMsg_PartyLeaveSelfResult934_ptr CPlayerSendMsg_PartyLeaveSelfResult934_next(nullptr);
+        static info::CPlayerSendMsg_PartyLeaveSelfResult934_clbk CPlayerSendMsg_PartyLeaveSelfResult934_user(nullptr);
+        static info::CPlayerSendMsg_PartyLockResult936_ptr CPlayerSendMsg_PartyLockResult936_next(nullptr);
+        static info::CPlayerSendMsg_PartyLockResult936_clbk CPlayerSendMsg_PartyLockResult936_user(nullptr);
+        static info::CPlayerSendMsg_PartyLootItemInform938_ptr CPlayerSendMsg_PartyLootItemInform938_next(nullptr);
+        static info::CPlayerSendMsg_PartyLootItemInform938_clbk CPlayerSendMsg_PartyLootItemInform938_user(nullptr);
+        static info::CPlayerSendMsg_PartySuccessResult940_ptr CPlayerSendMsg_PartySuccessResult940_next(nullptr);
+        static info::CPlayerSendMsg_PartySuccessResult940_clbk CPlayerSendMsg_PartySuccessResult940_user(nullptr);
+        static info::CPlayerSendMsg_PcRoomCharClass942_ptr CPlayerSendMsg_PcRoomCharClass942_next(nullptr);
+        static info::CPlayerSendMsg_PcRoomCharClass942_clbk CPlayerSendMsg_PcRoomCharClass942_user(nullptr);
+        static info::CPlayerSendMsg_PcRoomError944_ptr CPlayerSendMsg_PcRoomError944_next(nullptr);
+        static info::CPlayerSendMsg_PcRoomError944_clbk CPlayerSendMsg_PcRoomError944_user(nullptr);
+        static info::CPlayerSendMsg_PostContent946_ptr CPlayerSendMsg_PostContent946_next(nullptr);
+        static info::CPlayerSendMsg_PostContent946_clbk CPlayerSendMsg_PostContent946_user(nullptr);
+        static info::CPlayerSendMsg_PostDelete948_ptr CPlayerSendMsg_PostDelete948_next(nullptr);
+        static info::CPlayerSendMsg_PostDelete948_clbk CPlayerSendMsg_PostDelete948_user(nullptr);
+        static info::CPlayerSendMsg_PostDelivery950_ptr CPlayerSendMsg_PostDelivery950_next(nullptr);
+        static info::CPlayerSendMsg_PostDelivery950_clbk CPlayerSendMsg_PostDelivery950_user(nullptr);
+        static info::CPlayerSendMsg_PostItemGold952_ptr CPlayerSendMsg_PostItemGold952_next(nullptr);
+        static info::CPlayerSendMsg_PostItemGold952_clbk CPlayerSendMsg_PostItemGold952_user(nullptr);
+        static info::CPlayerSendMsg_PostReturn954_ptr CPlayerSendMsg_PostReturn954_next(nullptr);
+        static info::CPlayerSendMsg_PostReturn954_clbk CPlayerSendMsg_PostReturn954_user(nullptr);
+        static info::CPlayerSendMsg_PostReturnConfirm956_ptr CPlayerSendMsg_PostReturnConfirm956_next(nullptr);
+        static info::CPlayerSendMsg_PostReturnConfirm956_clbk CPlayerSendMsg_PostReturnConfirm956_user(nullptr);
+        static info::CPlayerSendMsg_PostSendReply958_ptr CPlayerSendMsg_PostSendReply958_next(nullptr);
+        static info::CPlayerSendMsg_PostSendReply958_clbk CPlayerSendMsg_PostSendReply958_user(nullptr);
+        static info::CPlayerSendMsg_PotionDelayTime960_ptr CPlayerSendMsg_PotionDelayTime960_next(nullptr);
+        static info::CPlayerSendMsg_PotionDelayTime960_clbk CPlayerSendMsg_PotionDelayTime960_user(nullptr);
+        static info::CPlayerSendMsg_PotionDivision962_ptr CPlayerSendMsg_PotionDivision962_next(nullptr);
+        static info::CPlayerSendMsg_PotionDivision962_clbk CPlayerSendMsg_PotionDivision962_user(nullptr);
+        static info::CPlayerSendMsg_PotionSeparation964_ptr CPlayerSendMsg_PotionSeparation964_next(nullptr);
+        static info::CPlayerSendMsg_PotionSeparation964_clbk CPlayerSendMsg_PotionSeparation964_user(nullptr);
+        static info::CPlayerSendMsg_PremiumCashItemUse966_ptr CPlayerSendMsg_PremiumCashItemUse966_next(nullptr);
+        static info::CPlayerSendMsg_PremiumCashItemUse966_clbk CPlayerSendMsg_PremiumCashItemUse966_user(nullptr);
+        static info::CPlayerSendMsg_ProposeVoteResult968_ptr CPlayerSendMsg_ProposeVoteResult968_next(nullptr);
+        static info::CPlayerSendMsg_ProposeVoteResult968_clbk CPlayerSendMsg_ProposeVoteResult968_user(nullptr);
+        static info::CPlayerSendMsg_PvpRankListVersionUp970_ptr CPlayerSendMsg_PvpRankListVersionUp970_next(nullptr);
+        static info::CPlayerSendMsg_PvpRankListVersionUp970_clbk CPlayerSendMsg_PvpRankListVersionUp970_user(nullptr);
+        static info::CPlayerSendMsg_QuestComplete972_ptr CPlayerSendMsg_QuestComplete972_next(nullptr);
+        static info::CPlayerSendMsg_QuestComplete972_clbk CPlayerSendMsg_QuestComplete972_user(nullptr);
+        static info::CPlayerSendMsg_QuestDownloadResult974_ptr CPlayerSendMsg_QuestDownloadResult974_next(nullptr);
+        static info::CPlayerSendMsg_QuestDownloadResult974_clbk CPlayerSendMsg_QuestDownloadResult974_user(nullptr);
+        static info::CPlayerSendMsg_QuestFailure976_ptr CPlayerSendMsg_QuestFailure976_next(nullptr);
+        static info::CPlayerSendMsg_QuestFailure976_clbk CPlayerSendMsg_QuestFailure976_user(nullptr);
+        static info::CPlayerSendMsg_QuestGiveUpResult978_ptr CPlayerSendMsg_QuestGiveUpResult978_next(nullptr);
+        static info::CPlayerSendMsg_QuestGiveUpResult978_clbk CPlayerSendMsg_QuestGiveUpResult978_user(nullptr);
+        static info::CPlayerSendMsg_QuestHistoryDownloadResult980_ptr CPlayerSendMsg_QuestHistoryDownloadResult980_next(nullptr);
+        static info::CPlayerSendMsg_QuestHistoryDownloadResult980_clbk CPlayerSendMsg_QuestHistoryDownloadResult980_user(nullptr);
+        static info::CPlayerSendMsg_QuestProcess982_ptr CPlayerSendMsg_QuestProcess982_next(nullptr);
+        static info::CPlayerSendMsg_QuestProcess982_clbk CPlayerSendMsg_QuestProcess982_user(nullptr);
+        static info::CPlayerSendMsg_RACE_Greeting984_ptr CPlayerSendMsg_RACE_Greeting984_next(nullptr);
+        static info::CPlayerSendMsg_RACE_Greeting984_clbk CPlayerSendMsg_RACE_Greeting984_user(nullptr);
+        static info::CPlayerSendMsg_RaceBattlePenelty986_ptr CPlayerSendMsg_RaceBattlePenelty986_next(nullptr);
+        static info::CPlayerSendMsg_RaceBattlePenelty986_clbk CPlayerSendMsg_RaceBattlePenelty986_user(nullptr);
+        static info::CPlayerSendMsg_RaceBossCryMsg988_ptr CPlayerSendMsg_RaceBossCryMsg988_next(nullptr);
+        static info::CPlayerSendMsg_RaceBossCryMsg988_clbk CPlayerSendMsg_RaceBossCryMsg988_user(nullptr);
+        static info::CPlayerSendMsg_RaceTopInform990_ptr CPlayerSendMsg_RaceTopInform990_next(nullptr);
+        static info::CPlayerSendMsg_RaceTopInform990_clbk CPlayerSendMsg_RaceTopInform990_user(nullptr);
+        static info::CPlayerSendMsg_RadarCharSearchResult992_ptr CPlayerSendMsg_RadarCharSearchResult992_next(nullptr);
+        static info::CPlayerSendMsg_RadarCharSearchResult992_clbk CPlayerSendMsg_RadarCharSearchResult992_user(nullptr);
+        static info::CPlayerSendMsg_RadarDelayTime994_ptr CPlayerSendMsg_RadarDelayTime994_next(nullptr);
+        static info::CPlayerSendMsg_RadarDelayTime994_clbk CPlayerSendMsg_RadarDelayTime994_user(nullptr);
+        static info::CPlayerSendMsg_ReEnterAsk996_ptr CPlayerSendMsg_ReEnterAsk996_next(nullptr);
+        static info::CPlayerSendMsg_ReEnterAsk996_clbk CPlayerSendMsg_ReEnterAsk996_user(nullptr);
+        static info::CPlayerSendMsg_ReEnterDarkHoleResult998_ptr CPlayerSendMsg_ReEnterDarkHoleResult998_next(nullptr);
+        static info::CPlayerSendMsg_ReEnterDarkHoleResult998_clbk CPlayerSendMsg_ReEnterDarkHoleResult998_user(nullptr);
+        static info::CPlayerSendMsg_RealMovePoint1000_ptr CPlayerSendMsg_RealMovePoint1000_next(nullptr);
+        static info::CPlayerSendMsg_RealMovePoint1000_clbk CPlayerSendMsg_RealMovePoint1000_user(nullptr);
+        static info::CPlayerSendMsg_Recover1002_ptr CPlayerSendMsg_Recover1002_next(nullptr);
+        static info::CPlayerSendMsg_Recover1002_clbk CPlayerSendMsg_Recover1002_user(nullptr);
+        static info::CPlayerSendMsg_RecvHSKQuest1004_ptr CPlayerSendMsg_RecvHSKQuest1004_next(nullptr);
+        static info::CPlayerSendMsg_RecvHSKQuest1004_clbk CPlayerSendMsg_RecvHSKQuest1004_user(nullptr);
+        static info::CPlayerSendMsg_RefeshGroupTargetPosition1006_ptr CPlayerSendMsg_RefeshGroupTargetPosition1006_next(nullptr);
+        static info::CPlayerSendMsg_RefeshGroupTargetPosition1006_clbk CPlayerSendMsg_RefeshGroupTargetPosition1006_user(nullptr);
+        static info::CPlayerSendMsg_RegistBindResult1008_ptr CPlayerSendMsg_RegistBindResult1008_next(nullptr);
+        static info::CPlayerSendMsg_RegistBindResult1008_clbk CPlayerSendMsg_RegistBindResult1008_user(nullptr);
+        static info::CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_ptr CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_next(nullptr);
+        static info::CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_clbk CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_user(nullptr);
+        static info::CPlayerSendMsg_ReleaseSiegeModeResult1012_ptr CPlayerSendMsg_ReleaseSiegeModeResult1012_next(nullptr);
+        static info::CPlayerSendMsg_ReleaseSiegeModeResult1012_clbk CPlayerSendMsg_ReleaseSiegeModeResult1012_user(nullptr);
+        static info::CPlayerSendMsg_RemainOreRate1014_ptr CPlayerSendMsg_RemainOreRate1014_next(nullptr);
+        static info::CPlayerSendMsg_RemainOreRate1014_clbk CPlayerSendMsg_RemainOreRate1014_user(nullptr);
+        static info::CPlayerSendMsg_RemainTimeInform1016_ptr CPlayerSendMsg_RemainTimeInform1016_next(nullptr);
+        static info::CPlayerSendMsg_RemainTimeInform1016_clbk CPlayerSendMsg_RemainTimeInform1016_user(nullptr);
+        static info::CPlayerSendMsg_ResDivision1018_ptr CPlayerSendMsg_ResDivision1018_next(nullptr);
+        static info::CPlayerSendMsg_ResDivision1018_clbk CPlayerSendMsg_ResDivision1018_user(nullptr);
+        static info::CPlayerSendMsg_ResSeparation1020_ptr CPlayerSendMsg_ResSeparation1020_next(nullptr);
+        static info::CPlayerSendMsg_ResSeparation1020_clbk CPlayerSendMsg_ResSeparation1020_user(nullptr);
+        static info::CPlayerSendMsg_ResultChangeTaxRate1022_ptr CPlayerSendMsg_ResultChangeTaxRate1022_next(nullptr);
+        static info::CPlayerSendMsg_ResultChangeTaxRate1022_clbk CPlayerSendMsg_ResultChangeTaxRate1022_user(nullptr);
+        static info::CPlayerSendMsg_ResultNpcQuest1024_ptr CPlayerSendMsg_ResultNpcQuest1024_next(nullptr);
+        static info::CPlayerSendMsg_ResultNpcQuest1024_clbk CPlayerSendMsg_ResultNpcQuest1024_user(nullptr);
+        static info::CPlayerSendMsg_Resurrect1026_ptr CPlayerSendMsg_Resurrect1026_next(nullptr);
+        static info::CPlayerSendMsg_Resurrect1026_clbk CPlayerSendMsg_Resurrect1026_user(nullptr);
+        static info::CPlayerSendMsg_ResurrectInform1028_ptr CPlayerSendMsg_ResurrectInform1028_next(nullptr);
+        static info::CPlayerSendMsg_ResurrectInform1028_clbk CPlayerSendMsg_ResurrectInform1028_user(nullptr);
+        static info::CPlayerSendMsg_Revival1030_ptr CPlayerSendMsg_Revival1030_next(nullptr);
+        static info::CPlayerSendMsg_Revival1030_clbk CPlayerSendMsg_Revival1030_user(nullptr);
+        static info::CPlayerSendMsg_RevivalOfJade1032_ptr CPlayerSendMsg_RevivalOfJade1032_next(nullptr);
+        static info::CPlayerSendMsg_RevivalOfJade1032_clbk CPlayerSendMsg_RevivalOfJade1032_user(nullptr);
+        static info::CPlayerSendMsg_RewardAddItem1034_ptr CPlayerSendMsg_RewardAddItem1034_next(nullptr);
+        static info::CPlayerSendMsg_RewardAddItem1034_clbk CPlayerSendMsg_RewardAddItem1034_user(nullptr);
+        static info::CPlayerSendMsg_SFDelayRequest1036_ptr CPlayerSendMsg_SFDelayRequest1036_next(nullptr);
+        static info::CPlayerSendMsg_SFDelayRequest1036_clbk CPlayerSendMsg_SFDelayRequest1036_user(nullptr);
+        static info::CPlayerSendMsg_SelectClassResult1038_ptr CPlayerSendMsg_SelectClassResult1038_next(nullptr);
+        static info::CPlayerSendMsg_SelectClassResult1038_clbk CPlayerSendMsg_SelectClassResult1038_user(nullptr);
+        static info::CPlayerSendMsg_SelectQuestReward1040_ptr CPlayerSendMsg_SelectQuestReward1040_next(nullptr);
+        static info::CPlayerSendMsg_SelectQuestReward1040_clbk CPlayerSendMsg_SelectQuestReward1040_user(nullptr);
+        static info::CPlayerSendMsg_SelectWaitedQuest1042_ptr CPlayerSendMsg_SelectWaitedQuest1042_next(nullptr);
+        static info::CPlayerSendMsg_SelectWaitedQuest1042_clbk CPlayerSendMsg_SelectWaitedQuest1042_user(nullptr);
+        static info::CPlayerSendMsg_SellItemStoreResult1044_ptr CPlayerSendMsg_SellItemStoreResult1044_next(nullptr);
+        static info::CPlayerSendMsg_SellItemStoreResult1044_clbk CPlayerSendMsg_SellItemStoreResult1044_user(nullptr);
+        static info::CPlayerSendMsg_SetDPInform1046_ptr CPlayerSendMsg_SetDPInform1046_next(nullptr);
+        static info::CPlayerSendMsg_SetDPInform1046_clbk CPlayerSendMsg_SetDPInform1046_user(nullptr);
+        static info::CPlayerSendMsg_SetFPInform1048_ptr CPlayerSendMsg_SetFPInform1048_next(nullptr);
+        static info::CPlayerSendMsg_SetFPInform1048_clbk CPlayerSendMsg_SetFPInform1048_user(nullptr);
+        static info::CPlayerSendMsg_SetGroupMapPoint1050_ptr CPlayerSendMsg_SetGroupMapPoint1050_next(nullptr);
+        static info::CPlayerSendMsg_SetGroupMapPoint1050_clbk CPlayerSendMsg_SetGroupMapPoint1050_user(nullptr);
+        static info::CPlayerSendMsg_SetGroupTargetObjectResult1052_ptr CPlayerSendMsg_SetGroupTargetObjectResult1052_next(nullptr);
+        static info::CPlayerSendMsg_SetGroupTargetObjectResult1052_clbk CPlayerSendMsg_SetGroupTargetObjectResult1052_user(nullptr);
+        static info::CPlayerSendMsg_SetHPInform1054_ptr CPlayerSendMsg_SetHPInform1054_next(nullptr);
+        static info::CPlayerSendMsg_SetHPInform1054_clbk CPlayerSendMsg_SetHPInform1054_user(nullptr);
+        static info::CPlayerSendMsg_SetItemCheckResult1056_ptr CPlayerSendMsg_SetItemCheckResult1056_next(nullptr);
+        static info::CPlayerSendMsg_SetItemCheckResult1056_clbk CPlayerSendMsg_SetItemCheckResult1056_user(nullptr);
+        static info::CPlayerSendMsg_SetSPInform1058_ptr CPlayerSendMsg_SetSPInform1058_next(nullptr);
+        static info::CPlayerSendMsg_SetSPInform1058_clbk CPlayerSendMsg_SetSPInform1058_user(nullptr);
+        static info::CPlayerSendMsg_SetTargetObjectResult1060_ptr CPlayerSendMsg_SetTargetObjectResult1060_next(nullptr);
+        static info::CPlayerSendMsg_SetTargetObjectResult1060_clbk CPlayerSendMsg_SetTargetObjectResult1060_user(nullptr);
+        static info::CPlayerSendMsg_SkillResult1062_ptr CPlayerSendMsg_SkillResult1062_next(nullptr);
+        static info::CPlayerSendMsg_SkillResult1062_clbk CPlayerSendMsg_SkillResult1062_user(nullptr);
+        static info::CPlayerSendMsg_SpecialDownloadResult1064_ptr CPlayerSendMsg_SpecialDownloadResult1064_next(nullptr);
+        static info::CPlayerSendMsg_SpecialDownloadResult1064_clbk CPlayerSendMsg_SpecialDownloadResult1064_user(nullptr);
+        static info::CPlayerSendMsg_StartContSF1066_ptr CPlayerSendMsg_StartContSF1066_next(nullptr);
+        static info::CPlayerSendMsg_StartContSF1066_clbk CPlayerSendMsg_StartContSF1066_user(nullptr);
+        static info::CPlayerSendMsg_StartNewPos1068_ptr CPlayerSendMsg_StartNewPos1068_next(nullptr);
+        static info::CPlayerSendMsg_StartNewPos1068_clbk CPlayerSendMsg_StartNewPos1068_user(nullptr);
+        static info::CPlayerSendMsg_StartShopping1070_ptr CPlayerSendMsg_StartShopping1070_next(nullptr);
+        static info::CPlayerSendMsg_StartShopping1070_clbk CPlayerSendMsg_StartShopping1070_user(nullptr);
+        static info::CPlayerSendMsg_StatInform1072_ptr CPlayerSendMsg_StatInform1072_next(nullptr);
+        static info::CPlayerSendMsg_StatInform1072_clbk CPlayerSendMsg_StatInform1072_user(nullptr);
+        static info::CPlayerSendMsg_StateInform1074_ptr CPlayerSendMsg_StateInform1074_next(nullptr);
+        static info::CPlayerSendMsg_StateInform1074_clbk CPlayerSendMsg_StateInform1074_user(nullptr);
+        static info::CPlayerSendMsg_Stop1076_ptr CPlayerSendMsg_Stop1076_next(nullptr);
+        static info::CPlayerSendMsg_Stop1076_clbk CPlayerSendMsg_Stop1076_user(nullptr);
+        static info::CPlayerSendMsg_StoreLimitItemAmountInfo1078_ptr CPlayerSendMsg_StoreLimitItemAmountInfo1078_next(nullptr);
+        static info::CPlayerSendMsg_StoreLimitItemAmountInfo1078_clbk CPlayerSendMsg_StoreLimitItemAmountInfo1078_user(nullptr);
+        static info::CPlayerSendMsg_StoreListResult1080_ptr CPlayerSendMsg_StoreListResult1080_next(nullptr);
+        static info::CPlayerSendMsg_StoreListResult1080_clbk CPlayerSendMsg_StoreListResult1080_user(nullptr);
+        static info::CPlayerSendMsg_TLStatusInfo1082_ptr CPlayerSendMsg_TLStatusInfo1082_next(nullptr);
+        static info::CPlayerSendMsg_TLStatusInfo1082_clbk CPlayerSendMsg_TLStatusInfo1082_user(nullptr);
+        static info::CPlayerSendMsg_TLStatusPenalty1084_ptr CPlayerSendMsg_TLStatusPenalty1084_next(nullptr);
+        static info::CPlayerSendMsg_TLStatusPenalty1084_clbk CPlayerSendMsg_TLStatusPenalty1084_user(nullptr);
+        static info::CPlayerSendMsg_TakeAddResult1086_ptr CPlayerSendMsg_TakeAddResult1086_next(nullptr);
+        static info::CPlayerSendMsg_TakeAddResult1086_clbk CPlayerSendMsg_TakeAddResult1086_user(nullptr);
+        static info::CPlayerSendMsg_TakeNewResult1088_ptr CPlayerSendMsg_TakeNewResult1088_next(nullptr);
+        static info::CPlayerSendMsg_TakeNewResult1088_clbk CPlayerSendMsg_TakeNewResult1088_user(nullptr);
+        static info::CPlayerSendMsg_TalikCrystalExchangeResult1090_ptr CPlayerSendMsg_TalikCrystalExchangeResult1090_next(nullptr);
+        static info::CPlayerSendMsg_TalikCrystalExchangeResult1090_clbk CPlayerSendMsg_TalikCrystalExchangeResult1090_user(nullptr);
+        static info::CPlayerSendMsg_TargetObjectHPInform1092_ptr CPlayerSendMsg_TargetObjectHPInform1092_next(nullptr);
+        static info::CPlayerSendMsg_TargetObjectHPInform1092_clbk CPlayerSendMsg_TargetObjectHPInform1092_user(nullptr);
+        static info::CPlayerSendMsg_TeleportError1094_ptr CPlayerSendMsg_TeleportError1094_next(nullptr);
+        static info::CPlayerSendMsg_TeleportError1094_clbk CPlayerSendMsg_TeleportError1094_user(nullptr);
+        static info::CPlayerSendMsg_TestAttackResult1096_ptr CPlayerSendMsg_TestAttackResult1096_next(nullptr);
+        static info::CPlayerSendMsg_TestAttackResult1096_clbk CPlayerSendMsg_TestAttackResult1096_user(nullptr);
+        static info::CPlayerSendMsg_ThrowSkillResult1098_ptr CPlayerSendMsg_ThrowSkillResult1098_next(nullptr);
+        static info::CPlayerSendMsg_ThrowSkillResult1098_clbk CPlayerSendMsg_ThrowSkillResult1098_user(nullptr);
+        static info::CPlayerSendMsg_ThrowStorageResult1100_ptr CPlayerSendMsg_ThrowStorageResult1100_next(nullptr);
+        static info::CPlayerSendMsg_ThrowStorageResult1100_clbk CPlayerSendMsg_ThrowStorageResult1100_user(nullptr);
+        static info::CPlayerSendMsg_ThrowUnitResult1102_ptr CPlayerSendMsg_ThrowUnitResult1102_next(nullptr);
+        static info::CPlayerSendMsg_ThrowUnitResult1102_clbk CPlayerSendMsg_ThrowUnitResult1102_user(nullptr);
+        static info::CPlayerSendMsg_TowerContinue1104_ptr CPlayerSendMsg_TowerContinue1104_next(nullptr);
+        static info::CPlayerSendMsg_TowerContinue1104_clbk CPlayerSendMsg_TowerContinue1104_user(nullptr);
+        static info::CPlayerSendMsg_TransShipRenewTicketResult1106_ptr CPlayerSendMsg_TransShipRenewTicketResult1106_next(nullptr);
+        static info::CPlayerSendMsg_TransShipRenewTicketResult1106_clbk CPlayerSendMsg_TransShipRenewTicketResult1106_user(nullptr);
+        static info::CPlayerSendMsg_TransformSiegeModeResult1108_ptr CPlayerSendMsg_TransformSiegeModeResult1108_next(nullptr);
+        static info::CPlayerSendMsg_TransformSiegeModeResult1108_clbk CPlayerSendMsg_TransformSiegeModeResult1108_user(nullptr);
+        static info::CPlayerSendMsg_TrunkChangPasswdResult1110_ptr CPlayerSendMsg_TrunkChangPasswdResult1110_next(nullptr);
+        static info::CPlayerSendMsg_TrunkChangPasswdResult1110_clbk CPlayerSendMsg_TrunkChangPasswdResult1110_user(nullptr);
+        static info::CPlayerSendMsg_TrunkDownloadResult1112_ptr CPlayerSendMsg_TrunkDownloadResult1112_next(nullptr);
+        static info::CPlayerSendMsg_TrunkDownloadResult1112_clbk CPlayerSendMsg_TrunkDownloadResult1112_user(nullptr);
+        static info::CPlayerSendMsg_TrunkEstResult1114_ptr CPlayerSendMsg_TrunkEstResult1114_next(nullptr);
+        static info::CPlayerSendMsg_TrunkEstResult1114_clbk CPlayerSendMsg_TrunkEstResult1114_user(nullptr);
+        static info::CPlayerSendMsg_TrunkExtendResult1116_ptr CPlayerSendMsg_TrunkExtendResult1116_next(nullptr);
+        static info::CPlayerSendMsg_TrunkExtendResult1116_clbk CPlayerSendMsg_TrunkExtendResult1116_user(nullptr);
+        static info::CPlayerSendMsg_TrunkHintAnswerResult1118_ptr CPlayerSendMsg_TrunkHintAnswerResult1118_next(nullptr);
+        static info::CPlayerSendMsg_TrunkHintAnswerResult1118_clbk CPlayerSendMsg_TrunkHintAnswerResult1118_user(nullptr);
+        static info::CPlayerSendMsg_TrunkIoMoneyResult1120_ptr CPlayerSendMsg_TrunkIoMoneyResult1120_next(nullptr);
+        static info::CPlayerSendMsg_TrunkIoMoneyResult1120_clbk CPlayerSendMsg_TrunkIoMoneyResult1120_user(nullptr);
+        static info::CPlayerSendMsg_TrunkIoResult1122_ptr CPlayerSendMsg_TrunkIoResult1122_next(nullptr);
+        static info::CPlayerSendMsg_TrunkIoResult1122_clbk CPlayerSendMsg_TrunkIoResult1122_user(nullptr);
+        static info::CPlayerSendMsg_TrunkPotionDivision1124_ptr CPlayerSendMsg_TrunkPotionDivision1124_next(nullptr);
+        static info::CPlayerSendMsg_TrunkPotionDivision1124_clbk CPlayerSendMsg_TrunkPotionDivision1124_user(nullptr);
+        static info::CPlayerSendMsg_TrunkPwHintIndexResult1126_ptr CPlayerSendMsg_TrunkPwHintIndexResult1126_next(nullptr);
+        static info::CPlayerSendMsg_TrunkPwHintIndexResult1126_clbk CPlayerSendMsg_TrunkPwHintIndexResult1126_user(nullptr);
+        static info::CPlayerSendMsg_TrunkResDivision1128_ptr CPlayerSendMsg_TrunkResDivision1128_next(nullptr);
+        static info::CPlayerSendMsg_TrunkResDivision1128_clbk CPlayerSendMsg_TrunkResDivision1128_user(nullptr);
+        static info::CPlayerSendMsg_UILock_FindPW_Result1130_ptr CPlayerSendMsg_UILock_FindPW_Result1130_next(nullptr);
+        static info::CPlayerSendMsg_UILock_FindPW_Result1130_clbk CPlayerSendMsg_UILock_FindPW_Result1130_user(nullptr);
+        static info::CPlayerSendMsg_UILock_Init_Request_ToAccount1132_ptr CPlayerSendMsg_UILock_Init_Request_ToAccount1132_next(nullptr);
+        static info::CPlayerSendMsg_UILock_Init_Request_ToAccount1132_clbk CPlayerSendMsg_UILock_Init_Request_ToAccount1132_user(nullptr);
+        static info::CPlayerSendMsg_UILock_Init_Result1134_ptr CPlayerSendMsg_UILock_Init_Result1134_next(nullptr);
+        static info::CPlayerSendMsg_UILock_Init_Result1134_clbk CPlayerSendMsg_UILock_Init_Result1134_user(nullptr);
+        static info::CPlayerSendMsg_UILock_Login_Result1136_ptr CPlayerSendMsg_UILock_Login_Result1136_next(nullptr);
+        static info::CPlayerSendMsg_UILock_Login_Result1136_clbk CPlayerSendMsg_UILock_Login_Result1136_user(nullptr);
+        static info::CPlayerSendMsg_UILock_Update_Request_ToAccount1138_ptr CPlayerSendMsg_UILock_Update_Request_ToAccount1138_next(nullptr);
+        static info::CPlayerSendMsg_UILock_Update_Request_ToAccount1138_clbk CPlayerSendMsg_UILock_Update_Request_ToAccount1138_user(nullptr);
+        static info::CPlayerSendMsg_UILock_Update_Result1140_ptr CPlayerSendMsg_UILock_Update_Result1140_next(nullptr);
+        static info::CPlayerSendMsg_UILock_Update_Result1140_clbk CPlayerSendMsg_UILock_Update_Result1140_user(nullptr);
+        static info::CPlayerSendMsg_UnitAlterFeeInform1142_ptr CPlayerSendMsg_UnitAlterFeeInform1142_next(nullptr);
+        static info::CPlayerSendMsg_UnitAlterFeeInform1142_clbk CPlayerSendMsg_UnitAlterFeeInform1142_user(nullptr);
+        static info::CPlayerSendMsg_UnitBulletFillResult1144_ptr CPlayerSendMsg_UnitBulletFillResult1144_next(nullptr);
+        static info::CPlayerSendMsg_UnitBulletFillResult1144_clbk CPlayerSendMsg_UnitBulletFillResult1144_user(nullptr);
+        static info::CPlayerSendMsg_UnitBulletReplaceResult1146_ptr CPlayerSendMsg_UnitBulletReplaceResult1146_next(nullptr);
+        static info::CPlayerSendMsg_UnitBulletReplaceResult1146_clbk CPlayerSendMsg_UnitBulletReplaceResult1146_user(nullptr);
+        static info::CPlayerSendMsg_UnitDeliveryResult1148_ptr CPlayerSendMsg_UnitDeliveryResult1148_next(nullptr);
+        static info::CPlayerSendMsg_UnitDeliveryResult1148_clbk CPlayerSendMsg_UnitDeliveryResult1148_user(nullptr);
+        static info::CPlayerSendMsg_UnitDestroy1150_ptr CPlayerSendMsg_UnitDestroy1150_next(nullptr);
+        static info::CPlayerSendMsg_UnitDestroy1150_clbk CPlayerSendMsg_UnitDestroy1150_user(nullptr);
+        static info::CPlayerSendMsg_UnitForceReturnInform1152_ptr CPlayerSendMsg_UnitForceReturnInform1152_next(nullptr);
+        static info::CPlayerSendMsg_UnitForceReturnInform1152_clbk CPlayerSendMsg_UnitForceReturnInform1152_user(nullptr);
+        static info::CPlayerSendMsg_UnitFrameBuyResult1154_ptr CPlayerSendMsg_UnitFrameBuyResult1154_next(nullptr);
+        static info::CPlayerSendMsg_UnitFrameBuyResult1154_clbk CPlayerSendMsg_UnitFrameBuyResult1154_user(nullptr);
+        static info::CPlayerSendMsg_UnitFrameRepairResult1156_ptr CPlayerSendMsg_UnitFrameRepairResult1156_next(nullptr);
+        static info::CPlayerSendMsg_UnitFrameRepairResult1156_clbk CPlayerSendMsg_UnitFrameRepairResult1156_user(nullptr);
+        static info::CPlayerSendMsg_UnitLeaveResult1158_ptr CPlayerSendMsg_UnitLeaveResult1158_next(nullptr);
+        static info::CPlayerSendMsg_UnitLeaveResult1158_clbk CPlayerSendMsg_UnitLeaveResult1158_user(nullptr);
+        static info::CPlayerSendMsg_UnitPackFillResult1160_ptr CPlayerSendMsg_UnitPackFillResult1160_next(nullptr);
+        static info::CPlayerSendMsg_UnitPackFillResult1160_clbk CPlayerSendMsg_UnitPackFillResult1160_user(nullptr);
+        static info::CPlayerSendMsg_UnitPartTuningResult1162_ptr CPlayerSendMsg_UnitPartTuningResult1162_next(nullptr);
+        static info::CPlayerSendMsg_UnitPartTuningResult1162_clbk CPlayerSendMsg_UnitPartTuningResult1162_user(nullptr);
+        static info::CPlayerSendMsg_UnitReturnResult1164_ptr CPlayerSendMsg_UnitReturnResult1164_next(nullptr);
+        static info::CPlayerSendMsg_UnitReturnResult1164_clbk CPlayerSendMsg_UnitReturnResult1164_user(nullptr);
+        static info::CPlayerSendMsg_UnitRideChange1166_ptr CPlayerSendMsg_UnitRideChange1166_next(nullptr);
+        static info::CPlayerSendMsg_UnitRideChange1166_clbk CPlayerSendMsg_UnitRideChange1166_user(nullptr);
+        static info::CPlayerSendMsg_UnitSellResult1168_ptr CPlayerSendMsg_UnitSellResult1168_next(nullptr);
+        static info::CPlayerSendMsg_UnitSellResult1168_clbk CPlayerSendMsg_UnitSellResult1168_user(nullptr);
+        static info::CPlayerSendMsg_UnitTakeResult1170_ptr CPlayerSendMsg_UnitTakeResult1170_next(nullptr);
+        static info::CPlayerSendMsg_UnitTakeResult1170_clbk CPlayerSendMsg_UnitTakeResult1170_user(nullptr);
+        static info::CPlayerSendMsg_UpdateTLStatusInfo1172_ptr CPlayerSendMsg_UpdateTLStatusInfo1172_next(nullptr);
+        static info::CPlayerSendMsg_UpdateTLStatusInfo1172_clbk CPlayerSendMsg_UpdateTLStatusInfo1172_user(nullptr);
+        static info::CPlayerSendMsg_UsPotionResultOther1174_ptr CPlayerSendMsg_UsPotionResultOther1174_next(nullptr);
+        static info::CPlayerSendMsg_UsPotionResultOther1174_clbk CPlayerSendMsg_UsPotionResultOther1174_user(nullptr);
+        static info::CPlayerSendMsg_UseJadeResult1176_ptr CPlayerSendMsg_UseJadeResult1176_next(nullptr);
+        static info::CPlayerSendMsg_UseJadeResult1176_clbk CPlayerSendMsg_UseJadeResult1176_user(nullptr);
+        static info::CPlayerSendMsg_UsePotionResult1178_ptr CPlayerSendMsg_UsePotionResult1178_next(nullptr);
+        static info::CPlayerSendMsg_UsePotionResult1178_clbk CPlayerSendMsg_UsePotionResult1178_user(nullptr);
+        static info::CPlayerSendMsg_UseRadarResult1180_ptr CPlayerSendMsg_UseRadarResult1180_next(nullptr);
+        static info::CPlayerSendMsg_UseRadarResult1180_clbk CPlayerSendMsg_UseRadarResult1180_user(nullptr);
+        static info::CPlayerSendMsg_VoteResult1182_ptr CPlayerSendMsg_VoteResult1182_next(nullptr);
+        static info::CPlayerSendMsg_VoteResult1182_clbk CPlayerSendMsg_VoteResult1182_user(nullptr);
+        static info::CPlayerSendTargetMonsterSFContInfo1184_ptr CPlayerSendTargetMonsterSFContInfo1184_next(nullptr);
+        static info::CPlayerSendTargetMonsterSFContInfo1184_clbk CPlayerSendTargetMonsterSFContInfo1184_user(nullptr);
+        static info::CPlayerSendTargetPlayerDamageContInfo1186_ptr CPlayerSendTargetPlayerDamageContInfo1186_next(nullptr);
+        static info::CPlayerSendTargetPlayerDamageContInfo1186_clbk CPlayerSendTargetPlayerDamageContInfo1186_user(nullptr);
+        static info::CPlayerSenseState1188_ptr CPlayerSenseState1188_next(nullptr);
+        static info::CPlayerSenseState1188_clbk CPlayerSenseState1188_user(nullptr);
+        static info::CPlayerSetAttackPart1190_ptr CPlayerSetAttackPart1190_next(nullptr);
+        static info::CPlayerSetAttackPart1190_clbk CPlayerSetAttackPart1190_user(nullptr);
+        static info::CPlayerSetBattleMode1192_ptr CPlayerSetBattleMode1192_next(nullptr);
+        static info::CPlayerSetBattleMode1192_clbk CPlayerSetBattleMode1192_user(nullptr);
+        static info::CPlayerSetBindDummy1194_ptr CPlayerSetBindDummy1194_next(nullptr);
+        static info::CPlayerSetBindDummy1194_clbk CPlayerSetBindDummy1194_user(nullptr);
+        static info::CPlayerSetBindMapData1196_ptr CPlayerSetBindMapData1196_next(nullptr);
+        static info::CPlayerSetBindMapData1196_clbk CPlayerSetBindMapData1196_user(nullptr);
+        static info::CPlayerSetBindPosition1198_ptr CPlayerSetBindPosition1198_next(nullptr);
+        static info::CPlayerSetBindPosition1198_clbk CPlayerSetBindPosition1198_user(nullptr);
+        static info::CPlayerSetCashAmount1200_ptr CPlayerSetCashAmount1200_next(nullptr);
+        static info::CPlayerSetCashAmount1200_clbk CPlayerSetCashAmount1200_user(nullptr);
+        static info::CPlayerSetCntEnable1202_ptr CPlayerSetCntEnable1202_next(nullptr);
+        static info::CPlayerSetCntEnable1202_clbk CPlayerSetCntEnable1202_user(nullptr);
+        static info::CPlayerSetDP1204_ptr CPlayerSetDP1204_next(nullptr);
+        static info::CPlayerSetDP1204_clbk CPlayerSetDP1204_user(nullptr);
+        static info::CPlayerSetDamage1206_ptr CPlayerSetDamage1206_next(nullptr);
+        static info::CPlayerSetDamage1206_clbk CPlayerSetDamage1206_user(nullptr);
+        static info::CPlayerSetEffectEquipCode1208_ptr CPlayerSetEffectEquipCode1208_next(nullptr);
+        static info::CPlayerSetEffectEquipCode1208_clbk CPlayerSetEffectEquipCode1208_user(nullptr);
+        static info::CPlayerSetEquipEffect1210_ptr CPlayerSetEquipEffect1210_next(nullptr);
+        static info::CPlayerSetEquipEffect1210_clbk CPlayerSetEquipEffect1210_user(nullptr);
+        static info::CPlayerSetEquipJadeEffect1212_ptr CPlayerSetEquipJadeEffect1212_next(nullptr);
+        static info::CPlayerSetEquipJadeEffect1212_clbk CPlayerSetEquipJadeEffect1212_user(nullptr);
+        static info::CPlayerSetFP1214_ptr CPlayerSetFP1214_next(nullptr);
+        static info::CPlayerSetFP1214_clbk CPlayerSetFP1214_user(nullptr);
+        static info::CPlayerSetGauge1216_ptr CPlayerSetGauge1216_next(nullptr);
+        static info::CPlayerSetGauge1216_clbk CPlayerSetGauge1216_user(nullptr);
+        static info::CPlayerSetGrade1218_ptr CPlayerSetGrade1218_next(nullptr);
+        static info::CPlayerSetGrade1218_clbk CPlayerSetGrade1218_user(nullptr);
+        static info::CPlayerSetHP1220_ptr CPlayerSetHP1220_next(nullptr);
+        static info::CPlayerSetHP1220_clbk CPlayerSetHP1220_user(nullptr);
+        static info::CPlayerSetHaveEffect1222_ptr CPlayerSetHaveEffect1222_next(nullptr);
+        static info::CPlayerSetHaveEffect1222_clbk CPlayerSetHaveEffect1222_user(nullptr);
+        static info::CPlayerSetHaveEffectUseTime1224_ptr CPlayerSetHaveEffectUseTime1224_next(nullptr);
+        static info::CPlayerSetHaveEffectUseTime1224_clbk CPlayerSetHaveEffectUseTime1224_user(nullptr);
+        static info::CPlayerSetLastAttBuff1226_ptr CPlayerSetLastAttBuff1226_next(nullptr);
+        static info::CPlayerSetLastAttBuff1226_clbk CPlayerSetLastAttBuff1226_user(nullptr);
+        static info::CPlayerSetLevel1228_ptr CPlayerSetLevel1228_next(nullptr);
+        static info::CPlayerSetLevel1228_clbk CPlayerSetLevel1228_user(nullptr);
+        static info::CPlayerSetLevelD1230_ptr CPlayerSetLevelD1230_next(nullptr);
+        static info::CPlayerSetLevelD1230_clbk CPlayerSetLevelD1230_user(nullptr);
+        static info::CPlayerSetMstHaveEffect1232_ptr CPlayerSetMstHaveEffect1232_next(nullptr);
+        static info::CPlayerSetMstHaveEffect1232_clbk CPlayerSetMstHaveEffect1232_user(nullptr);
+        static info::CPlayerSetMstPt1234_ptr CPlayerSetMstPt1234_next(nullptr);
+        static info::CPlayerSetMstPt1234_clbk CPlayerSetMstPt1234_user(nullptr);
+        static info::CPlayerSetPotionActDelay1236_ptr CPlayerSetPotionActDelay1236_next(nullptr);
+        static info::CPlayerSetPotionActDelay1236_clbk CPlayerSetPotionActDelay1236_user(nullptr);
+        static info::CPlayerSetPvpPointLeak1238_ptr CPlayerSetPvpPointLeak1238_next(nullptr);
+        static info::CPlayerSetPvpPointLeak1238_clbk CPlayerSetPvpPointLeak1238_user(nullptr);
+        static info::CPlayerSetRankRate1240_ptr CPlayerSetRankRate1240_next(nullptr);
+        static info::CPlayerSetRankRate1240_clbk CPlayerSetRankRate1240_user(nullptr);
+        static info::CPlayerSetSP1242_ptr CPlayerSetSP1242_next(nullptr);
+        static info::CPlayerSetSP1242_clbk CPlayerSetSP1242_user(nullptr);
+        static info::CPlayerSetShapeAllBuffer1244_ptr CPlayerSetShapeAllBuffer1244_next(nullptr);
+        static info::CPlayerSetShapeAllBuffer1244_clbk CPlayerSetShapeAllBuffer1244_user(nullptr);
+        static info::CPlayerSetSiege1246_ptr CPlayerSetSiege1246_next(nullptr);
+        static info::CPlayerSetSiege1246_clbk CPlayerSetSiege1246_user(nullptr);
+        static info::CPlayerSetStateFlag1248_ptr CPlayerSetStateFlag1248_next(nullptr);
+        static info::CPlayerSetStateFlag1248_clbk CPlayerSetStateFlag1248_user(nullptr);
+        static info::CPlayerSetStaticMember1250_ptr CPlayerSetStaticMember1250_next(nullptr);
+        static info::CPlayerSetStaticMember1250_clbk CPlayerSetStaticMember1250_user(nullptr);
+        static info::CPlayerSetTarPos1252_ptr CPlayerSetTarPos1252_next(nullptr);
+        static info::CPlayerSetTarPos1252_clbk CPlayerSetTarPos1252_user(nullptr);
+        static info::CPlayerSetUseReleaseRaceBuffPotion1254_ptr CPlayerSetUseReleaseRaceBuffPotion1254_next(nullptr);
+        static info::CPlayerSetUseReleaseRaceBuffPotion1254_clbk CPlayerSetUseReleaseRaceBuffPotion1254_user(nullptr);
+        static info::CPlayerSetVote1256_ptr CPlayerSetVote1256_next(nullptr);
+        static info::CPlayerSetVote1256_clbk CPlayerSetVote1256_user(nullptr);
+        static info::CPlayerSortPost1258_ptr CPlayerSortPost1258_next(nullptr);
+        static info::CPlayerSortPost1258_clbk CPlayerSortPost1258_user(nullptr);
+        static info::CPlayerSubActPoint1260_ptr CPlayerSubActPoint1260_next(nullptr);
+        static info::CPlayerSubActPoint1260_clbk CPlayerSubActPoint1260_user(nullptr);
+        static info::CPlayerSubDalant1262_ptr CPlayerSubDalant1262_next(nullptr);
+        static info::CPlayerSubDalant1262_clbk CPlayerSubDalant1262_user(nullptr);
+        static info::CPlayerSubGold1264_ptr CPlayerSubGold1264_next(nullptr);
+        static info::CPlayerSubGold1264_clbk CPlayerSubGold1264_user(nullptr);
+        static info::CPlayerSubPoint1266_ptr CPlayerSubPoint1266_next(nullptr);
+        static info::CPlayerSubPoint1266_clbk CPlayerSubPoint1266_user(nullptr);
+        static info::CPlayerSumMinuteBetween1268_ptr CPlayerSumMinuteBetween1268_next(nullptr);
+        static info::CPlayerSumMinuteBetween1268_clbk CPlayerSumMinuteBetween1268_user(nullptr);
+        static info::CPlayerSumMinuteOne1270_ptr CPlayerSumMinuteOne1270_next(nullptr);
+        static info::CPlayerSumMinuteOne1270_clbk CPlayerSumMinuteOne1270_user(nullptr);
+        static info::CPlayerTakeGravityStone1272_ptr CPlayerTakeGravityStone1272_next(nullptr);
+        static info::CPlayerTakeGravityStone1272_clbk CPlayerTakeGravityStone1272_user(nullptr);
+        static info::CPlayerUpdateAuraSFCont1274_ptr CPlayerUpdateAuraSFCont1274_next(nullptr);
+        static info::CPlayerUpdateAuraSFCont1274_clbk CPlayerUpdateAuraSFCont1274_user(nullptr);
+        static info::CPlayerUpdateChaosModeState1276_ptr CPlayerUpdateChaosModeState1276_next(nullptr);
+        static info::CPlayerUpdateChaosModeState1276_clbk CPlayerUpdateChaosModeState1276_user(nullptr);
+        static info::CPlayerUpdateDelPost1278_ptr CPlayerUpdateDelPost1278_next(nullptr);
+        static info::CPlayerUpdateDelPost1278_clbk CPlayerUpdateDelPost1278_user(nullptr);
+        static info::CPlayerUpdateLastCriTicket1280_ptr CPlayerUpdateLastCriTicket1280_next(nullptr);
+        static info::CPlayerUpdateLastCriTicket1280_clbk CPlayerUpdateLastCriTicket1280_user(nullptr);
+        static info::CPlayerUpdateLastMetalTicket1282_ptr CPlayerUpdateLastMetalTicket1282_next(nullptr);
+        static info::CPlayerUpdateLastMetalTicket1282_clbk CPlayerUpdateLastMetalTicket1282_user(nullptr);
+        static info::CPlayerUpdatePost1284_ptr CPlayerUpdatePost1284_next(nullptr);
+        static info::CPlayerUpdatePost1284_clbk CPlayerUpdatePost1284_user(nullptr);
+        static info::CPlayerUpdatePostAddLog1286_ptr CPlayerUpdatePostAddLog1286_next(nullptr);
+        static info::CPlayerUpdatePostAddLog1286_clbk CPlayerUpdatePostAddLog1286_user(nullptr);
+        static info::CPlayerUpdatePvpOrderView1288_ptr CPlayerUpdatePvpOrderView1288_next(nullptr);
+        static info::CPlayerUpdatePvpOrderView1288_clbk CPlayerUpdatePvpOrderView1288_user(nullptr);
+        static info::CPlayerUpdatePvpPointLimiter1290_ptr CPlayerUpdatePvpPointLimiter1290_next(nullptr);
+        static info::CPlayerUpdatePvpPointLimiter1290_clbk CPlayerUpdatePvpPointLimiter1290_user(nullptr);
+        static info::CPlayerUpdateReturnPost1292_ptr CPlayerUpdateReturnPost1292_next(nullptr);
+        static info::CPlayerUpdateReturnPost1292_clbk CPlayerUpdateReturnPost1292_user(nullptr);
+        static info::CPlayerUpdateVisualVer1294_ptr CPlayerUpdateVisualVer1294_next(nullptr);
+        static info::CPlayerUpdateVisualVer1294_clbk CPlayerUpdateVisualVer1294_user(nullptr);
+        static info::CPlayerUpdate_GoldPoint1296_ptr CPlayerUpdate_GoldPoint1296_next(nullptr);
+        static info::CPlayerUpdate_GoldPoint1296_clbk CPlayerUpdate_GoldPoint1296_user(nullptr);
+        static info::CPlayerUpdatedMasteryWriteHistory1298_ptr CPlayerUpdatedMasteryWriteHistory1298_next(nullptr);
+        static info::CPlayerUpdatedMasteryWriteHistory1298_clbk CPlayerUpdatedMasteryWriteHistory1298_user(nullptr);
+        static info::CPlayerWPActiveForce1300_ptr CPlayerWPActiveForce1300_next(nullptr);
+        static info::CPlayerWPActiveForce1300_clbk CPlayerWPActiveForce1300_user(nullptr);
+        static info::CPlayerWPActiveSkill1302_ptr CPlayerWPActiveSkill1302_next(nullptr);
+        static info::CPlayerWPActiveSkill1302_clbk CPlayerWPActiveSkill1302_user(nullptr);
+        static info::CPlayerWeaponSFActive1304_ptr CPlayerWeaponSFActive1304_next(nullptr);
+        static info::CPlayerWeaponSFActive1304_clbk CPlayerWeaponSFActive1304_user(nullptr);
+        static info::CPlayer_AnimusReturn1306_ptr CPlayer_AnimusReturn1306_next(nullptr);
+        static info::CPlayer_AnimusReturn1306_clbk CPlayer_AnimusReturn1306_user(nullptr);
+        static info::CPlayer_CalcMaxFP1308_ptr CPlayer_CalcMaxFP1308_next(nullptr);
+        static info::CPlayer_CalcMaxFP1308_clbk CPlayer_CalcMaxFP1308_user(nullptr);
+        static info::CPlayer_CalcMaxHP1310_ptr CPlayer_CalcMaxHP1310_next(nullptr);
+        static info::CPlayer_CalcMaxHP1310_clbk CPlayer_CalcMaxHP1310_user(nullptr);
+        static info::CPlayer_CalcMaxSP1312_ptr CPlayer_CalcMaxSP1312_next(nullptr);
+        static info::CPlayer_CalcMaxSP1312_clbk CPlayer_CalcMaxSP1312_user(nullptr);
+        static info::CPlayer_CheckForcePullUnit1314_ptr CPlayer_CheckForcePullUnit1314_next(nullptr);
+        static info::CPlayer_CheckForcePullUnit1314_clbk CPlayer_CheckForcePullUnit1314_user(nullptr);
+        static info::CPlayer_DeleteUnitKey1316_ptr CPlayer_DeleteUnitKey1316_next(nullptr);
+        static info::CPlayer_DeleteUnitKey1316_clbk CPlayer_DeleteUnitKey1316_user(nullptr);
+        static info::CPlayer_GetItemEffect1318_ptr CPlayer_GetItemEffect1318_next(nullptr);
+        static info::CPlayer_GetItemEffect1318_clbk CPlayer_GetItemEffect1318_user(nullptr);
+        static info::CPlayer_GetPartyMemberInCircle1320_ptr CPlayer_GetPartyMemberInCircle1320_next(nullptr);
+        static info::CPlayer_GetPartyMemberInCircle1320_clbk CPlayer_GetPartyMemberInCircle1320_user(nullptr);
+        static info::CPlayer_LockUnitKey1322_ptr CPlayer_LockUnitKey1322_next(nullptr);
+        static info::CPlayer_LockUnitKey1322_clbk CPlayer_LockUnitKey1322_user(nullptr);
+        static info::CPlayer_Reward_Quest1324_ptr CPlayer_Reward_Quest1324_next(nullptr);
+        static info::CPlayer_Reward_Quest1324_clbk CPlayer_Reward_Quest1324_user(nullptr);
+        static info::CPlayer_TowerAllReturn1326_ptr CPlayer_TowerAllReturn1326_next(nullptr);
+        static info::CPlayer_TowerAllReturn1326_clbk CPlayer_TowerAllReturn1326_user(nullptr);
+        static info::CPlayer_TowerDestroy1328_ptr CPlayer_TowerDestroy1328_next(nullptr);
+        static info::CPlayer_TowerDestroy1328_clbk CPlayer_TowerDestroy1328_user(nullptr);
+        static info::CPlayer_TowerReturn1330_ptr CPlayer_TowerReturn1330_next(nullptr);
+        static info::CPlayer_TowerReturn1330_clbk CPlayer_TowerReturn1330_user(nullptr);
+        static info::CPlayer_TrapDestroy1332_ptr CPlayer_TrapDestroy1332_next(nullptr);
+        static info::CPlayer_TrapDestroy1332_clbk CPlayer_TrapDestroy1332_user(nullptr);
+        static info::CPlayer_TrapReturn1334_ptr CPlayer_TrapReturn1334_next(nullptr);
+        static info::CPlayer_TrapReturn1334_clbk CPlayer_TrapReturn1334_user(nullptr);
+        static info::CPlayer_UnitDestroy1336_ptr CPlayer_UnitDestroy1336_next(nullptr);
+        static info::CPlayer_UnitDestroy1336_clbk CPlayer_UnitDestroy1336_user(nullptr);
+        static info::CPlayer_UpdateUnitDebt1338_ptr CPlayer_UpdateUnitDebt1338_next(nullptr);
+        static info::CPlayer_UpdateUnitDebt1338_clbk CPlayer_UpdateUnitDebt1338_user(nullptr);
+        static info::CPlayer_check_dst_param_after_attack1340_ptr CPlayer_check_dst_param_after_attack1340_next(nullptr);
+        static info::CPlayer_check_dst_param_after_attack1340_clbk CPlayer_check_dst_param_after_attack1340_user(nullptr);
+        static info::CPlayer_check_embel_part1342_ptr CPlayer_check_embel_part1342_next(nullptr);
+        static info::CPlayer_check_embel_part1342_clbk CPlayer_check_embel_part1342_user(nullptr);
+        static info::CPlayer_check_equip_part1344_ptr CPlayer_check_equip_part1344_next(nullptr);
+        static info::CPlayer_check_equip_part1344_clbk CPlayer_check_equip_part1344_user(nullptr);
+        static info::CPlayer_check_equipmastery_lim1346_ptr CPlayer_check_equipmastery_lim1346_next(nullptr);
+        static info::CPlayer_check_equipmastery_lim1346_clbk CPlayer_check_equipmastery_lim1346_user(nullptr);
+        static info::CPlayer_check_exp_after_attack1348_ptr CPlayer_check_exp_after_attack1348_next(nullptr);
+        static info::CPlayer_check_exp_after_attack1348_clbk CPlayer_check_exp_after_attack1348_user(nullptr);
+        static info::CPlayer_check_guild_target_object1350_ptr CPlayer_check_guild_target_object1350_next(nullptr);
+        static info::CPlayer_check_guild_target_object1350_clbk CPlayer_check_guild_target_object1350_user(nullptr);
+        static info::CPlayer_check_hp_send_party1352_ptr CPlayer_check_hp_send_party1352_next(nullptr);
+        static info::CPlayer_check_hp_send_party1352_clbk CPlayer_check_hp_send_party1352_user(nullptr);
+        static info::CPlayer_check_mastery_cum_lim1354_ptr CPlayer_check_mastery_cum_lim1354_next(nullptr);
+        static info::CPlayer_check_mastery_cum_lim1354_clbk CPlayer_check_mastery_cum_lim1354_user(nullptr);
+        static info::CPlayer_check_mastery_lim1356_ptr CPlayer_check_mastery_lim1356_next(nullptr);
+        static info::CPlayer_check_mastery_lim1356_clbk CPlayer_check_mastery_lim1356_user(nullptr);
+        static info::CPlayer_check_party_target_object1358_ptr CPlayer_check_party_target_object1358_next(nullptr);
+        static info::CPlayer_check_party_target_object1358_clbk CPlayer_check_party_target_object1358_user(nullptr);
+        static info::CPlayer_check_race_target_object1360_ptr CPlayer_check_race_target_object1360_next(nullptr);
+        static info::CPlayer_check_race_target_object1360_clbk CPlayer_check_race_target_object1360_user(nullptr);
+        static info::CPlayer_check_target_object1362_ptr CPlayer_check_target_object1362_next(nullptr);
+        static info::CPlayer_check_target_object1362_clbk CPlayer_check_target_object1362_user(nullptr);
+        static info::CPlayer_pre_check_force_attack1364_ptr CPlayer_pre_check_force_attack1364_next(nullptr);
+        static info::CPlayer_pre_check_force_attack1364_clbk CPlayer_pre_check_force_attack1364_user(nullptr);
+        static info::CPlayer_pre_check_in_guild_battle1366_ptr CPlayer_pre_check_in_guild_battle1366_next(nullptr);
+        static info::CPlayer_pre_check_in_guild_battle1366_clbk CPlayer_pre_check_in_guild_battle1366_user(nullptr);
+        static info::CPlayer_pre_check_in_guild_battle_race1368_ptr CPlayer_pre_check_in_guild_battle_race1368_next(nullptr);
+        static info::CPlayer_pre_check_in_guild_battle_race1368_clbk CPlayer_pre_check_in_guild_battle_race1368_user(nullptr);
+        static info::CPlayer_pre_check_normal_attack1370_ptr CPlayer_pre_check_normal_attack1370_next(nullptr);
+        static info::CPlayer_pre_check_normal_attack1370_clbk CPlayer_pre_check_normal_attack1370_user(nullptr);
+        static info::CPlayer_pre_check_siege_attack1372_ptr CPlayer_pre_check_siege_attack1372_next(nullptr);
+        static info::CPlayer_pre_check_siege_attack1372_clbk CPlayer_pre_check_siege_attack1372_user(nullptr);
+        static info::CPlayer_pre_check_skill_attack1374_ptr CPlayer_pre_check_skill_attack1374_next(nullptr);
+        static info::CPlayer_pre_check_skill_attack1374_clbk CPlayer_pre_check_skill_attack1374_user(nullptr);
+        static info::CPlayer_pre_check_skill_enable1376_ptr CPlayer_pre_check_skill_enable1376_next(nullptr);
+        static info::CPlayer_pre_check_skill_enable1376_clbk CPlayer_pre_check_skill_enable1376_user(nullptr);
+        static info::CPlayer_pre_check_skill_gradelimit1378_ptr CPlayer_pre_check_skill_gradelimit1378_next(nullptr);
+        static info::CPlayer_pre_check_skill_gradelimit1378_clbk CPlayer_pre_check_skill_gradelimit1378_user(nullptr);
+        static info::CPlayer_pre_check_unit_attack1380_ptr CPlayer_pre_check_unit_attack1380_next(nullptr);
+        static info::CPlayer_pre_check_unit_attack1380_clbk CPlayer_pre_check_unit_attack1380_user(nullptr);
+        static info::CPlayer_pre_check_wpactive_force_attack1382_ptr CPlayer_pre_check_wpactive_force_attack1382_next(nullptr);
+        static info::CPlayer_pre_check_wpactive_force_attack1382_clbk CPlayer_pre_check_wpactive_force_attack1382_user(nullptr);
+        static info::CPlayer_pre_check_wpactive_skill_attack1384_ptr CPlayer_pre_check_wpactive_skill_attack1384_next(nullptr);
+        static info::CPlayer_pre_check_wpactive_skill_attack1384_clbk CPlayer_pre_check_wpactive_skill_attack1384_user(nullptr);
+        static info::CPlayer_set_db_sf_effect1386_ptr CPlayer_set_db_sf_effect1386_next(nullptr);
+        static info::CPlayer_set_db_sf_effect1386_clbk CPlayer_set_db_sf_effect1386_user(nullptr);
+        static info::CPlayerapply_case_equip_std_effect1391_ptr CPlayerapply_case_equip_std_effect1391_next(nullptr);
+        static info::CPlayerapply_case_equip_std_effect1391_clbk CPlayerapply_case_equip_std_effect1391_user(nullptr);
+        static info::CPlayerapply_case_equip_upgrade_effect1393_ptr CPlayerapply_case_equip_upgrade_effect1393_next(nullptr);
+        static info::CPlayerapply_case_equip_upgrade_effect1393_clbk CPlayerapply_case_equip_upgrade_effect1393_user(nullptr);
+        static info::CPlayerapply_have_item_std_effect1395_ptr CPlayerapply_have_item_std_effect1395_next(nullptr);
+        static info::CPlayerapply_have_item_std_effect1395_clbk CPlayerapply_have_item_std_effect1395_user(nullptr);
+        static info::CPlayerapply_normal_item_std_effect1397_ptr CPlayerapply_normal_item_std_effect1397_next(nullptr);
+        static info::CPlayerapply_normal_item_std_effect1397_clbk CPlayerapply_normal_item_std_effect1397_user(nullptr);
+        static info::CPlayerdev_SetGuildGrade1399_ptr CPlayerdev_SetGuildGrade1399_next(nullptr);
+        static info::CPlayerdev_SetGuildGrade1399_clbk CPlayerdev_SetGuildGrade1399_user(nullptr);
+        static info::CPlayerdev_SetGuildGradeByGuildSerial1401_ptr CPlayerdev_SetGuildGradeByGuildSerial1401_next(nullptr);
+        static info::CPlayerdev_SetGuildGradeByGuildSerial1401_clbk CPlayerdev_SetGuildGradeByGuildSerial1401_user(nullptr);
+        static info::CPlayerdev_SetGuildGradeByName1403_ptr CPlayerdev_SetGuildGradeByName1403_next(nullptr);
+        static info::CPlayerdev_SetGuildGradeByName1403_clbk CPlayerdev_SetGuildGradeByName1403_user(nullptr);
+        static info::CPlayerdev_after_effect1405_ptr CPlayerdev_after_effect1405_next(nullptr);
+        static info::CPlayerdev_after_effect1405_clbk CPlayerdev_after_effect1405_user(nullptr);
+        static info::CPlayerdev_all_kill1407_ptr CPlayerdev_all_kill1407_next(nullptr);
+        static info::CPlayerdev_all_kill1407_clbk CPlayerdev_all_kill1407_user(nullptr);
+        static info::CPlayerdev_animus_recall_time_free1409_ptr CPlayerdev_animus_recall_time_free1409_next(nullptr);
+        static info::CPlayerdev_animus_recall_time_free1409_clbk CPlayerdev_animus_recall_time_free1409_user(nullptr);
+        static info::CPlayerdev_avator_copy1411_ptr CPlayerdev_avator_copy1411_next(nullptr);
+        static info::CPlayerdev_avator_copy1411_clbk CPlayerdev_avator_copy1411_user(nullptr);
+        static info::CPlayerdev_change_class1413_ptr CPlayerdev_change_class1413_next(nullptr);
+        static info::CPlayerdev_change_class1413_clbk CPlayerdev_change_class1413_user(nullptr);
+        static info::CPlayerdev_cont_effect_del1415_ptr CPlayerdev_cont_effect_del1415_next(nullptr);
+        static info::CPlayerdev_cont_effect_del1415_clbk CPlayerdev_cont_effect_del1415_user(nullptr);
+        static info::CPlayerdev_cont_effect_time1417_ptr CPlayerdev_cont_effect_time1417_next(nullptr);
+        static info::CPlayerdev_cont_effect_time1417_clbk CPlayerdev_cont_effect_time1417_user(nullptr);
+        static info::CPlayerdev_dalant1419_ptr CPlayerdev_dalant1419_next(nullptr);
+        static info::CPlayerdev_dalant1419_clbk CPlayerdev_dalant1419_user(nullptr);
+        static info::CPlayerdev_die1421_ptr CPlayerdev_die1421_next(nullptr);
+        static info::CPlayerdev_die1421_clbk CPlayerdev_die1421_user(nullptr);
+        static info::CPlayerdev_drop_item1423_ptr CPlayerdev_drop_item1423_next(nullptr);
+        static info::CPlayerdev_drop_item1423_clbk CPlayerdev_drop_item1423_user(nullptr);
+        static info::CPlayerdev_free_sf_by_class1425_ptr CPlayerdev_free_sf_by_class1425_next(nullptr);
+        static info::CPlayerdev_free_sf_by_class1425_clbk CPlayerdev_free_sf_by_class1425_user(nullptr);
+        static info::CPlayerdev_full_animus_gauge1427_ptr CPlayerdev_full_animus_gauge1427_next(nullptr);
+        static info::CPlayerdev_full_animus_gauge1427_clbk CPlayerdev_full_animus_gauge1427_user(nullptr);
+        static info::CPlayerdev_full_force1429_ptr CPlayerdev_full_force1429_next(nullptr);
+        static info::CPlayerdev_full_force1429_clbk CPlayerdev_full_force1429_user(nullptr);
+        static info::CPlayerdev_full_point1431_ptr CPlayerdev_full_point1431_next(nullptr);
+        static info::CPlayerdev_full_point1431_clbk CPlayerdev_full_point1431_user(nullptr);
+        static info::CPlayerdev_gold1433_ptr CPlayerdev_gold1433_next(nullptr);
+        static info::CPlayerdev_gold1433_clbk CPlayerdev_gold1433_user(nullptr);
+        static info::CPlayerdev_goto_monster1435_ptr CPlayerdev_goto_monster1435_next(nullptr);
+        static info::CPlayerdev_goto_monster1435_clbk CPlayerdev_goto_monster1435_user(nullptr);
+        static info::CPlayerdev_goto_npc1437_ptr CPlayerdev_goto_npc1437_next(nullptr);
+        static info::CPlayerdev_goto_npc1437_clbk CPlayerdev_goto_npc1437_user(nullptr);
+        static info::CPlayerdev_half_inven_amount1439_ptr CPlayerdev_half_inven_amount1439_next(nullptr);
+        static info::CPlayerdev_half_inven_amount1439_clbk CPlayerdev_half_inven_amount1439_user(nullptr);
+        static info::CPlayerdev_half_point1441_ptr CPlayerdev_half_point1441_next(nullptr);
+        static info::CPlayerdev_half_point1441_clbk CPlayerdev_half_point1441_user(nullptr);
+        static info::CPlayerdev_init_monster1443_ptr CPlayerdev_init_monster1443_next(nullptr);
+        static info::CPlayerdev_init_monster1443_clbk CPlayerdev_init_monster1443_user(nullptr);
+        static info::CPlayerdev_inven_empty1445_ptr CPlayerdev_inven_empty1445_next(nullptr);
+        static info::CPlayerdev_inven_empty1445_clbk CPlayerdev_inven_empty1445_user(nullptr);
+        static info::CPlayerdev_item_make_no_use_matrial1447_ptr CPlayerdev_item_make_no_use_matrial1447_next(nullptr);
+        static info::CPlayerdev_item_make_no_use_matrial1447_clbk CPlayerdev_item_make_no_use_matrial1447_user(nullptr);
+        static info::CPlayerdev_loot_bag1449_ptr CPlayerdev_loot_bag1449_next(nullptr);
+        static info::CPlayerdev_loot_bag1449_clbk CPlayerdev_loot_bag1449_user(nullptr);
+        static info::CPlayerdev_loot_free1451_ptr CPlayerdev_loot_free1451_next(nullptr);
+        static info::CPlayerdev_loot_free1451_clbk CPlayerdev_loot_free1451_user(nullptr);
+        static info::CPlayerdev_loot_fullitem1453_ptr CPlayerdev_loot_fullitem1453_next(nullptr);
+        static info::CPlayerdev_loot_fullitem1453_clbk CPlayerdev_loot_fullitem1453_user(nullptr);
+        static info::CPlayerdev_loot_item1455_ptr CPlayerdev_loot_item1455_next(nullptr);
+        static info::CPlayerdev_loot_item1455_clbk CPlayerdev_loot_item1455_user(nullptr);
+        static info::CPlayerdev_loot_material1457_ptr CPlayerdev_loot_material1457_next(nullptr);
+        static info::CPlayerdev_loot_material1457_clbk CPlayerdev_loot_material1457_user(nullptr);
+        static info::CPlayerdev_loot_mine1459_ptr CPlayerdev_loot_mine1459_next(nullptr);
+        static info::CPlayerdev_loot_mine1459_clbk CPlayerdev_loot_mine1459_user(nullptr);
+        static info::CPlayerdev_loot_tower1461_ptr CPlayerdev_loot_tower1461_next(nullptr);
+        static info::CPlayerdev_loot_tower1461_clbk CPlayerdev_loot_tower1461_user(nullptr);
+        static info::CPlayerdev_lv1463_ptr CPlayerdev_lv1463_next(nullptr);
+        static info::CPlayerdev_lv1463_clbk CPlayerdev_lv1463_user(nullptr);
+        static info::CPlayerdev_make_succ1465_ptr CPlayerdev_make_succ1465_next(nullptr);
+        static info::CPlayerdev_make_succ1465_clbk CPlayerdev_make_succ1465_user(nullptr);
+        static info::CPlayerdev_max_level_ext1467_ptr CPlayerdev_max_level_ext1467_next(nullptr);
+        static info::CPlayerdev_max_level_ext1467_clbk CPlayerdev_max_level_ext1467_user(nullptr);
+        static info::CPlayerdev_never_die1469_ptr CPlayerdev_never_die1469_next(nullptr);
+        static info::CPlayerdev_never_die1469_clbk CPlayerdev_never_die1469_user(nullptr);
+        static info::CPlayerdev_quest_complete1471_ptr CPlayerdev_quest_complete1471_next(nullptr);
+        static info::CPlayerdev_quest_complete1471_clbk CPlayerdev_quest_complete1471_user(nullptr);
+        static info::CPlayerdev_quest_complete_other1473_ptr CPlayerdev_quest_complete_other1473_next(nullptr);
+        static info::CPlayerdev_quest_complete_other1473_clbk CPlayerdev_quest_complete_other1473_user(nullptr);
+        static info::CPlayerdev_set_animus_exp1475_ptr CPlayerdev_set_animus_exp1475_next(nullptr);
+        static info::CPlayerdev_set_animus_exp1475_clbk CPlayerdev_set_animus_exp1475_user(nullptr);
+        static info::CPlayerdev_set_animus_lv1477_ptr CPlayerdev_set_animus_lv1477_next(nullptr);
+        static info::CPlayerdev_set_animus_lv1477_clbk CPlayerdev_set_animus_lv1477_user(nullptr);
+        static info::CPlayerdev_set_hp1479_ptr CPlayerdev_set_hp1479_next(nullptr);
+        static info::CPlayerdev_set_hp1479_clbk CPlayerdev_set_hp1479_user(nullptr);
+        static info::CPlayerdev_trap_attack_grade1481_ptr CPlayerdev_trap_attack_grade1481_next(nullptr);
+        static info::CPlayerdev_trap_attack_grade1481_clbk CPlayerdev_trap_attack_grade1481_user(nullptr);
+        static info::CPlayerdev_up_all1483_ptr CPlayerdev_up_all1483_next(nullptr);
+        static info::CPlayerdev_up_all1483_clbk CPlayerdev_up_all1483_user(nullptr);
+        static info::CPlayerdev_up_all_pt1485_ptr CPlayerdev_up_all_pt1485_next(nullptr);
+        static info::CPlayerdev_up_all_pt1485_clbk CPlayerdev_up_all_pt1485_user(nullptr);
+        static info::CPlayerdev_up_cashbag1487_ptr CPlayerdev_up_cashbag1487_next(nullptr);
+        static info::CPlayerdev_up_cashbag1487_clbk CPlayerdev_up_cashbag1487_user(nullptr);
+        static info::CPlayerdev_up_forceitem1489_ptr CPlayerdev_up_forceitem1489_next(nullptr);
+        static info::CPlayerdev_up_forceitem1489_clbk CPlayerdev_up_forceitem1489_user(nullptr);
+        static info::CPlayerdev_up_forcemastery1491_ptr CPlayerdev_up_forcemastery1491_next(nullptr);
+        static info::CPlayerdev_up_forcemastery1491_clbk CPlayerdev_up_forcemastery1491_user(nullptr);
+        static info::CPlayerdev_up_mastery1493_ptr CPlayerdev_up_mastery1493_next(nullptr);
+        static info::CPlayerdev_up_mastery1493_clbk CPlayerdev_up_mastery1493_user(nullptr);
+        static info::CPlayerdev_up_pvp1495_ptr CPlayerdev_up_pvp1495_next(nullptr);
+        static info::CPlayerdev_up_pvp1495_clbk CPlayerdev_up_pvp1495_user(nullptr);
+        static info::CPlayerdev_up_skill1497_ptr CPlayerdev_up_skill1497_next(nullptr);
+        static info::CPlayerdev_up_skill1497_clbk CPlayerdev_up_skill1497_user(nullptr);
+        static info::CPlayerdev_view_boss1499_ptr CPlayerdev_view_boss1499_next(nullptr);
+        static info::CPlayerdev_view_boss1499_clbk CPlayerdev_view_boss1499_user(nullptr);
+        static info::CPlayerdev_view_method1501_ptr CPlayerdev_view_method1501_next(nullptr);
+        static info::CPlayerdev_view_method1501_clbk CPlayerdev_view_method1501_user(nullptr);
+        static info::CPlayermake_force_attack_param1503_ptr CPlayermake_force_attack_param1503_next(nullptr);
+        static info::CPlayermake_force_attack_param1503_clbk CPlayermake_force_attack_param1503_user(nullptr);
+        static info::CPlayermake_gen_attack_param1505_ptr CPlayermake_gen_attack_param1505_next(nullptr);
+        static info::CPlayermake_gen_attack_param1505_clbk CPlayermake_gen_attack_param1505_user(nullptr);
+        static info::CPlayermake_siege_attack_param1507_ptr CPlayermake_siege_attack_param1507_next(nullptr);
+        static info::CPlayermake_siege_attack_param1507_clbk CPlayermake_siege_attack_param1507_user(nullptr);
+        static info::CPlayermake_skill_attack_param1509_ptr CPlayermake_skill_attack_param1509_next(nullptr);
+        static info::CPlayermake_skill_attack_param1509_clbk CPlayermake_skill_attack_param1509_user(nullptr);
+        static info::CPlayermake_unit_attack_param1511_ptr CPlayermake_unit_attack_param1511_next(nullptr);
+        static info::CPlayermake_unit_attack_param1511_clbk CPlayermake_unit_attack_param1511_user(nullptr);
+        static info::CPlayermake_wpactive_force_attack_param1513_ptr CPlayermake_wpactive_force_attack_param1513_next(nullptr);
+        static info::CPlayermake_wpactive_force_attack_param1513_clbk CPlayermake_wpactive_force_attack_param1513_user(nullptr);
+        static info::CPlayermake_wpactive_skill_attack_param1515_ptr CPlayermake_wpactive_skill_attack_param1515_next(nullptr);
+        static info::CPlayermake_wpactive_skill_attack_param1515_clbk CPlayermake_wpactive_skill_attack_param1515_user(nullptr);
+        static info::CPlayermgr_MaxAttackPoint1517_ptr CPlayermgr_MaxAttackPoint1517_next(nullptr);
+        static info::CPlayermgr_MaxAttackPoint1517_clbk CPlayermgr_MaxAttackPoint1517_user(nullptr);
+        static info::CPlayermgr_TrunkInit1519_ptr CPlayermgr_TrunkInit1519_next(nullptr);
+        static info::CPlayermgr_TrunkInit1519_clbk CPlayermgr_TrunkInit1519_user(nullptr);
+        static info::CPlayermgr_all_item_muzi1521_ptr CPlayermgr_all_item_muzi1521_next(nullptr);
+        static info::CPlayermgr_all_item_muzi1521_clbk CPlayermgr_all_item_muzi1521_user(nullptr);
+        static info::CPlayermgr_change_degree1523_ptr CPlayermgr_change_degree1523_next(nullptr);
+        static info::CPlayermgr_change_degree1523_clbk CPlayermgr_change_degree1523_user(nullptr);
+        static info::CPlayermgr_defense_item_grace1525_ptr CPlayermgr_defense_item_grace1525_next(nullptr);
+        static info::CPlayermgr_defense_item_grace1525_clbk CPlayermgr_defense_item_grace1525_user(nullptr);
+        static info::CPlayermgr_destroy_system_tower1527_ptr CPlayermgr_destroy_system_tower1527_next(nullptr);
+        static info::CPlayermgr_destroy_system_tower1527_clbk CPlayermgr_destroy_system_tower1527_user(nullptr);
+        static info::CPlayermgr_dungeon_pass1529_ptr CPlayermgr_dungeon_pass1529_next(nullptr);
+        static info::CPlayermgr_dungeon_pass1529_clbk CPlayermgr_dungeon_pass1529_user(nullptr);
+        static info::CPlayermgr_exit_keeper1531_ptr CPlayermgr_exit_keeper1531_next(nullptr);
+        static info::CPlayermgr_exit_keeper1531_clbk CPlayermgr_exit_keeper1531_user(nullptr);
+        static info::CPlayermgr_exit_stone1533_ptr CPlayermgr_exit_stone1533_next(nullptr);
+        static info::CPlayermgr_exit_stone1533_clbk CPlayermgr_exit_stone1533_user(nullptr);
+        static info::CPlayermgr_free_ride_ship1535_ptr CPlayermgr_free_ride_ship1535_next(nullptr);
+        static info::CPlayermgr_free_ride_ship1535_clbk CPlayermgr_free_ride_ship1535_user(nullptr);
+        static info::CPlayermgr_gotoCoordinates1537_ptr CPlayermgr_gotoCoordinates1537_next(nullptr);
+        static info::CPlayermgr_gotoCoordinates1537_clbk CPlayermgr_gotoCoordinates1537_user(nullptr);
+        static info::CPlayermgr_gotoDstCoordinates1539_ptr CPlayermgr_gotoDstCoordinates1539_next(nullptr);
+        static info::CPlayermgr_gotoDstCoordinates1539_clbk CPlayermgr_gotoDstCoordinates1539_user(nullptr);
+        static info::CPlayermgr_goto_mine1541_ptr CPlayermgr_goto_mine1541_next(nullptr);
+        static info::CPlayermgr_goto_mine1541_clbk CPlayermgr_goto_mine1541_user(nullptr);
+        static info::CPlayermgr_goto_shipport1543_ptr CPlayermgr_goto_shipport1543_next(nullptr);
+        static info::CPlayermgr_goto_shipport1543_clbk CPlayermgr_goto_shipport1543_user(nullptr);
+        static info::CPlayermgr_goto_stone1545_ptr CPlayermgr_goto_stone1545_next(nullptr);
+        static info::CPlayermgr_goto_stone1545_clbk CPlayermgr_goto_stone1545_user(nullptr);
+        static info::CPlayermgr_goto_store1547_ptr CPlayermgr_goto_store1547_next(nullptr);
+        static info::CPlayermgr_goto_store1547_clbk CPlayermgr_goto_store1547_user(nullptr);
+        static info::CPlayermgr_holykeeper_start1549_ptr CPlayermgr_holykeeper_start1549_next(nullptr);
+        static info::CPlayermgr_holykeeper_start1549_clbk CPlayermgr_holykeeper_start1549_user(nullptr);
+        static info::CPlayermgr_holystone_start1551_ptr CPlayermgr_holystone_start1551_next(nullptr);
+        static info::CPlayermgr_holystone_start1551_clbk CPlayermgr_holystone_start1551_user(nullptr);
+        static info::CPlayermgr_item_telekinesis1553_ptr CPlayermgr_item_telekinesis1553_next(nullptr);
+        static info::CPlayermgr_item_telekinesis1553_clbk CPlayermgr_item_telekinesis1553_user(nullptr);
+        static info::CPlayermgr_kick1555_ptr CPlayermgr_kick1555_next(nullptr);
+        static info::CPlayermgr_kick1555_clbk CPlayermgr_kick1555_user(nullptr);
+        static info::CPlayermgr_make_system_tower1557_ptr CPlayermgr_make_system_tower1557_next(nullptr);
+        static info::CPlayermgr_make_system_tower1557_clbk CPlayermgr_make_system_tower1557_user(nullptr);
+        static info::CPlayermgr_matchless1559_ptr CPlayermgr_matchless1559_next(nullptr);
+        static info::CPlayermgr_matchless1559_clbk CPlayermgr_matchless1559_user(nullptr);
+        static info::CPlayermgr_pass_sch_one_step1561_ptr CPlayermgr_pass_sch_one_step1561_next(nullptr);
+        static info::CPlayermgr_pass_sch_one_step1561_clbk CPlayermgr_pass_sch_one_step1561_user(nullptr);
+        static info::CPlayermgr_recall_guild_player1563_ptr CPlayermgr_recall_guild_player1563_next(nullptr);
+        static info::CPlayermgr_recall_guild_player1563_clbk CPlayermgr_recall_guild_player1563_user(nullptr);
+        static info::CPlayermgr_recall_mon1565_ptr CPlayermgr_recall_mon1565_next(nullptr);
+        static info::CPlayermgr_recall_mon1565_clbk CPlayermgr_recall_mon1565_user(nullptr);
+        static info::CPlayermgr_recall_party_player1567_ptr CPlayermgr_recall_party_player1567_next(nullptr);
+        static info::CPlayermgr_recall_party_player1567_clbk CPlayermgr_recall_party_player1567_user(nullptr);
+        static info::CPlayermgr_recall_player1569_ptr CPlayermgr_recall_player1569_next(nullptr);
+        static info::CPlayermgr_recall_player1569_clbk CPlayermgr_recall_player1569_user(nullptr);
+        static info::CPlayermgr_resurrect_player1571_ptr CPlayermgr_resurrect_player1571_next(nullptr);
+        static info::CPlayermgr_resurrect_player1571_clbk CPlayermgr_resurrect_player1571_user(nullptr);
+        static info::CPlayermgr_set_animus_attack_point1573_ptr CPlayermgr_set_animus_attack_point1573_next(nullptr);
+        static info::CPlayermgr_set_animus_attack_point1573_clbk CPlayermgr_set_animus_attack_point1573_user(nullptr);
+        static info::CPlayermgr_tracing1575_ptr CPlayermgr_tracing1575_next(nullptr);
+        static info::CPlayermgr_tracing1575_clbk CPlayermgr_tracing1575_user(nullptr);
+        static info::CPlayermgr_user_ban1577_ptr CPlayermgr_user_ban1577_next(nullptr);
+        static info::CPlayermgr_user_ban1577_clbk CPlayermgr_user_ban1577_user(nullptr);
+        static info::CPlayermgr_whisper1579_ptr CPlayermgr_whisper1579_next(nullptr);
+        static info::CPlayermgr_whisper1579_clbk CPlayermgr_whisper1579_user(nullptr);
+        static info::CPlayerpc_AddBag1581_ptr CPlayerpc_AddBag1581_next(nullptr);
+        static info::CPlayerpc_AddBag1581_clbk CPlayerpc_AddBag1581_user(nullptr);
+        static info::CPlayerpc_AlterItemSlotRequest1583_ptr CPlayerpc_AlterItemSlotRequest1583_next(nullptr);
+        static info::CPlayerpc_AlterItemSlotRequest1583_clbk CPlayerpc_AlterItemSlotRequest1583_user(nullptr);
+        static info::CPlayerpc_AlterLinkBoardSlotRequest1585_ptr CPlayerpc_AlterLinkBoardSlotRequest1585_next(nullptr);
+        static info::CPlayerpc_AlterLinkBoardSlotRequest1585_clbk CPlayerpc_AlterLinkBoardSlotRequest1585_user(nullptr);
+        static info::CPlayerpc_AlterWindowInfoRequest1587_ptr CPlayerpc_AlterWindowInfoRequest1587_next(nullptr);
+        static info::CPlayerpc_AlterWindowInfoRequest1587_clbk CPlayerpc_AlterWindowInfoRequest1587_user(nullptr);
+        static info::CPlayerpc_AnimusCommandRequest1589_ptr CPlayerpc_AnimusCommandRequest1589_next(nullptr);
+        static info::CPlayerpc_AnimusCommandRequest1589_clbk CPlayerpc_AnimusCommandRequest1589_user(nullptr);
+        static info::CPlayerpc_AnimusInvenChange1591_ptr CPlayerpc_AnimusInvenChange1591_next(nullptr);
+        static info::CPlayerpc_AnimusInvenChange1591_clbk CPlayerpc_AnimusInvenChange1591_user(nullptr);
+        static info::CPlayerpc_AnimusRecallRequest1593_ptr CPlayerpc_AnimusRecallRequest1593_next(nullptr);
+        static info::CPlayerpc_AnimusRecallRequest1593_clbk CPlayerpc_AnimusRecallRequest1593_user(nullptr);
+        static info::CPlayerpc_AnimusReturnRequest1595_ptr CPlayerpc_AnimusReturnRequest1595_next(nullptr);
+        static info::CPlayerpc_AnimusReturnRequest1595_clbk CPlayerpc_AnimusReturnRequest1595_user(nullptr);
+        static info::CPlayerpc_AnimusTargetRequest1597_ptr CPlayerpc_AnimusTargetRequest1597_next(nullptr);
+        static info::CPlayerpc_AnimusTargetRequest1597_clbk CPlayerpc_AnimusTargetRequest1597_user(nullptr);
+        static info::CPlayerpc_AwayPartyJoinInvitationAnswer1599_ptr CPlayerpc_AwayPartyJoinInvitationAnswer1599_next(nullptr);
+        static info::CPlayerpc_AwayPartyJoinInvitationAnswer1599_clbk CPlayerpc_AwayPartyJoinInvitationAnswer1599_user(nullptr);
+        static info::CPlayerpc_AwaypartyInvitationRequest1601_ptr CPlayerpc_AwaypartyInvitationRequest1601_next(nullptr);
+        static info::CPlayerpc_AwaypartyInvitationRequest1601_clbk CPlayerpc_AwaypartyInvitationRequest1601_user(nullptr);
+        static info::CPlayerpc_BackTowerRequest1603_ptr CPlayerpc_BackTowerRequest1603_next(nullptr);
+        static info::CPlayerpc_BackTowerRequest1603_clbk CPlayerpc_BackTowerRequest1603_user(nullptr);
+        static info::CPlayerpc_BackTrapRequest1605_ptr CPlayerpc_BackTrapRequest1605_next(nullptr);
+        static info::CPlayerpc_BackTrapRequest1605_clbk CPlayerpc_BackTrapRequest1605_user(nullptr);
+        static info::CPlayerpc_BillingInfoRequest1607_ptr CPlayerpc_BillingInfoRequest1607_next(nullptr);
+        static info::CPlayerpc_BillingInfoRequest1607_clbk CPlayerpc_BillingInfoRequest1607_user(nullptr);
+        static info::CPlayerpc_BriefPass1609_ptr CPlayerpc_BriefPass1609_next(nullptr);
+        static info::CPlayerpc_BriefPass1609_clbk CPlayerpc_BriefPass1609_user(nullptr);
+        static info::CPlayerpc_BuddyAddAnswer1611_ptr CPlayerpc_BuddyAddAnswer1611_next(nullptr);
+        static info::CPlayerpc_BuddyAddAnswer1611_clbk CPlayerpc_BuddyAddAnswer1611_user(nullptr);
+        static info::CPlayerpc_BuddyAddRequest1613_ptr CPlayerpc_BuddyAddRequest1613_next(nullptr);
+        static info::CPlayerpc_BuddyAddRequest1613_clbk CPlayerpc_BuddyAddRequest1613_user(nullptr);
+        static info::CPlayerpc_BuddyDelRequest1615_ptr CPlayerpc_BuddyDelRequest1615_next(nullptr);
+        static info::CPlayerpc_BuddyDelRequest1615_clbk CPlayerpc_BuddyDelRequest1615_user(nullptr);
+        static info::CPlayerpc_BuddyDownloadRequest1617_ptr CPlayerpc_BuddyDownloadRequest1617_next(nullptr);
+        static info::CPlayerpc_BuddyDownloadRequest1617_clbk CPlayerpc_BuddyDownloadRequest1617_user(nullptr);
+        static info::CPlayerpc_BuyItemStore1619_ptr CPlayerpc_BuyItemStore1619_next(nullptr);
+        static info::CPlayerpc_BuyItemStore1619_clbk CPlayerpc_BuyItemStore1619_user(nullptr);
+        static info::CPlayerpc_CanSelectClassRequest1621_ptr CPlayerpc_CanSelectClassRequest1621_next(nullptr);
+        static info::CPlayerpc_CanSelectClassRequest1621_clbk CPlayerpc_CanSelectClassRequest1621_user(nullptr);
+        static info::CPlayerpc_CastVoteRequest1623_ptr CPlayerpc_CastVoteRequest1623_next(nullptr);
+        static info::CPlayerpc_CastVoteRequest1623_clbk CPlayerpc_CastVoteRequest1623_user(nullptr);
+        static info::CPlayerpc_ChangeModeType1625_ptr CPlayerpc_ChangeModeType1625_next(nullptr);
+        static info::CPlayerpc_ChangeModeType1625_clbk CPlayerpc_ChangeModeType1625_user(nullptr);
+        static info::CPlayerpc_CharacterRenameCash1627_ptr CPlayerpc_CharacterRenameCash1627_next(nullptr);
+        static info::CPlayerpc_CharacterRenameCash1627_clbk CPlayerpc_CharacterRenameCash1627_user(nullptr);
+        static info::CPlayerpc_CharacterRenameCheck1629_ptr CPlayerpc_CharacterRenameCheck1629_next(nullptr);
+        static info::CPlayerpc_CharacterRenameCheck1629_clbk CPlayerpc_CharacterRenameCheck1629_user(nullptr);
+        static info::CPlayerpc_ChatAllRequest1631_ptr CPlayerpc_ChatAllRequest1631_next(nullptr);
+        static info::CPlayerpc_ChatAllRequest1631_clbk CPlayerpc_ChatAllRequest1631_user(nullptr);
+        static info::CPlayerpc_ChatCircleRequest1633_ptr CPlayerpc_ChatCircleRequest1633_next(nullptr);
+        static info::CPlayerpc_ChatCircleRequest1633_clbk CPlayerpc_ChatCircleRequest1633_user(nullptr);
+        static info::CPlayerpc_ChatFarRequest1635_ptr CPlayerpc_ChatFarRequest1635_next(nullptr);
+        static info::CPlayerpc_ChatFarRequest1635_clbk CPlayerpc_ChatFarRequest1635_user(nullptr);
+        static info::CPlayerpc_ChatGmNoticeRequest1637_ptr CPlayerpc_ChatGmNoticeRequest1637_next(nullptr);
+        static info::CPlayerpc_ChatGmNoticeRequest1637_clbk CPlayerpc_ChatGmNoticeRequest1637_user(nullptr);
+        static info::CPlayerpc_ChatGuildEstSenRequest1639_ptr CPlayerpc_ChatGuildEstSenRequest1639_next(nullptr);
+        static info::CPlayerpc_ChatGuildEstSenRequest1639_clbk CPlayerpc_ChatGuildEstSenRequest1639_user(nullptr);
+        static info::CPlayerpc_ChatGuildRequest1641_ptr CPlayerpc_ChatGuildRequest1641_next(nullptr);
+        static info::CPlayerpc_ChatGuildRequest1641_clbk CPlayerpc_ChatGuildRequest1641_user(nullptr);
+        static info::CPlayerpc_ChatMapRequest1643_ptr CPlayerpc_ChatMapRequest1643_next(nullptr);
+        static info::CPlayerpc_ChatMapRequest1643_clbk CPlayerpc_ChatMapRequest1643_user(nullptr);
+        static info::CPlayerpc_ChatMgrWhisperRequest1645_ptr CPlayerpc_ChatMgrWhisperRequest1645_next(nullptr);
+        static info::CPlayerpc_ChatMgrWhisperRequest1645_clbk CPlayerpc_ChatMgrWhisperRequest1645_user(nullptr);
+        static info::CPlayerpc_ChatMultiFarRequest1647_ptr CPlayerpc_ChatMultiFarRequest1647_next(nullptr);
+        static info::CPlayerpc_ChatMultiFarRequest1647_clbk CPlayerpc_ChatMultiFarRequest1647_user(nullptr);
+        static info::CPlayerpc_ChatOperatorRequest1649_ptr CPlayerpc_ChatOperatorRequest1649_next(nullptr);
+        static info::CPlayerpc_ChatOperatorRequest1649_clbk CPlayerpc_ChatOperatorRequest1649_user(nullptr);
+        static info::CPlayerpc_ChatPartyRequest1651_ptr CPlayerpc_ChatPartyRequest1651_next(nullptr);
+        static info::CPlayerpc_ChatPartyRequest1651_clbk CPlayerpc_ChatPartyRequest1651_user(nullptr);
+        static info::CPlayerpc_ChatRaceBossCryRequest1653_ptr CPlayerpc_ChatRaceBossCryRequest1653_next(nullptr);
+        static info::CPlayerpc_ChatRaceBossCryRequest1653_clbk CPlayerpc_ChatRaceBossCryRequest1653_user(nullptr);
+        static info::CPlayerpc_ChatRaceBossRequest1655_ptr CPlayerpc_ChatRaceBossRequest1655_next(nullptr);
+        static info::CPlayerpc_ChatRaceBossRequest1655_clbk CPlayerpc_ChatRaceBossRequest1655_user(nullptr);
+        static info::CPlayerpc_ChatRaceRequest1657_ptr CPlayerpc_ChatRaceRequest1657_next(nullptr);
+        static info::CPlayerpc_ChatRaceRequest1657_clbk CPlayerpc_ChatRaceRequest1657_user(nullptr);
+        static info::CPlayerpc_ChatRePresentationRequest1659_ptr CPlayerpc_ChatRePresentationRequest1659_next(nullptr);
+        static info::CPlayerpc_ChatRePresentationRequest1659_clbk CPlayerpc_ChatRePresentationRequest1659_user(nullptr);
+        static info::CPlayerpc_ChatTradeRequestMsg1661_ptr CPlayerpc_ChatTradeRequestMsg1661_next(nullptr);
+        static info::CPlayerpc_ChatTradeRequestMsg1661_clbk CPlayerpc_ChatTradeRequestMsg1661_user(nullptr);
+        static info::CPlayerpc_ClassSkillRequest1663_ptr CPlayerpc_ClassSkillRequest1663_next(nullptr);
+        static info::CPlayerpc_ClassSkillRequest1663_clbk CPlayerpc_ClassSkillRequest1663_user(nullptr);
+        static info::CPlayerpc_CombineItem1665_ptr CPlayerpc_CombineItem1665_next(nullptr);
+        static info::CPlayerpc_CombineItem1665_clbk CPlayerpc_CombineItem1665_user(nullptr);
+        static info::CPlayerpc_CombineItemEx1667_ptr CPlayerpc_CombineItemEx1667_next(nullptr);
+        static info::CPlayerpc_CombineItemEx1667_clbk CPlayerpc_CombineItemEx1667_user(nullptr);
+        static info::CPlayerpc_CombineItemExAccept1669_ptr CPlayerpc_CombineItemExAccept1669_next(nullptr);
+        static info::CPlayerpc_CombineItemExAccept1669_clbk CPlayerpc_CombineItemExAccept1669_user(nullptr);
+        static info::CPlayerpc_CuttingComplete1671_ptr CPlayerpc_CuttingComplete1671_next(nullptr);
+        static info::CPlayerpc_CuttingComplete1671_clbk CPlayerpc_CuttingComplete1671_user(nullptr);
+        static info::CPlayerpc_DTradeAddRequest1673_ptr CPlayerpc_DTradeAddRequest1673_next(nullptr);
+        static info::CPlayerpc_DTradeAddRequest1673_clbk CPlayerpc_DTradeAddRequest1673_user(nullptr);
+        static info::CPlayerpc_DTradeAnswerRequest1675_ptr CPlayerpc_DTradeAnswerRequest1675_next(nullptr);
+        static info::CPlayerpc_DTradeAnswerRequest1675_clbk CPlayerpc_DTradeAnswerRequest1675_user(nullptr);
+        static info::CPlayerpc_DTradeAskRequest1677_ptr CPlayerpc_DTradeAskRequest1677_next(nullptr);
+        static info::CPlayerpc_DTradeAskRequest1677_clbk CPlayerpc_DTradeAskRequest1677_user(nullptr);
+        static info::CPlayerpc_DTradeBetRequest1679_ptr CPlayerpc_DTradeBetRequest1679_next(nullptr);
+        static info::CPlayerpc_DTradeBetRequest1679_clbk CPlayerpc_DTradeBetRequest1679_user(nullptr);
+        static info::CPlayerpc_DTradeCancleRequest1681_ptr CPlayerpc_DTradeCancleRequest1681_next(nullptr);
+        static info::CPlayerpc_DTradeCancleRequest1681_clbk CPlayerpc_DTradeCancleRequest1681_user(nullptr);
+        static info::CPlayerpc_DTradeDelRequest1683_ptr CPlayerpc_DTradeDelRequest1683_next(nullptr);
+        static info::CPlayerpc_DTradeDelRequest1683_clbk CPlayerpc_DTradeDelRequest1683_user(nullptr);
+        static info::CPlayerpc_DTradeLockRequest1685_ptr CPlayerpc_DTradeLockRequest1685_next(nullptr);
+        static info::CPlayerpc_DTradeLockRequest1685_clbk CPlayerpc_DTradeLockRequest1685_user(nullptr);
+        static info::CPlayerpc_DTradeOKRequest1687_ptr CPlayerpc_DTradeOKRequest1687_next(nullptr);
+        static info::CPlayerpc_DTradeOKRequest1687_clbk CPlayerpc_DTradeOKRequest1687_user(nullptr);
+        static info::CPlayerpc_DarkHoleAnswerReenterRequest1689_ptr CPlayerpc_DarkHoleAnswerReenterRequest1689_next(nullptr);
+        static info::CPlayerpc_DarkHoleAnswerReenterRequest1689_clbk CPlayerpc_DarkHoleAnswerReenterRequest1689_user(nullptr);
+        static info::CPlayerpc_DarkHoleClearOutRequest1691_ptr CPlayerpc_DarkHoleClearOutRequest1691_next(nullptr);
+        static info::CPlayerpc_DarkHoleClearOutRequest1691_clbk CPlayerpc_DarkHoleClearOutRequest1691_user(nullptr);
+        static info::CPlayerpc_DarkHoleEnterRequest1693_ptr CPlayerpc_DarkHoleEnterRequest1693_next(nullptr);
+        static info::CPlayerpc_DarkHoleEnterRequest1693_clbk CPlayerpc_DarkHoleEnterRequest1693_user(nullptr);
+        static info::CPlayerpc_DarkHoleGiveupOutRequest1695_ptr CPlayerpc_DarkHoleGiveupOutRequest1695_next(nullptr);
+        static info::CPlayerpc_DarkHoleGiveupOutRequest1695_clbk CPlayerpc_DarkHoleGiveupOutRequest1695_user(nullptr);
+        static info::CPlayerpc_DarkHoleOpenRequest1697_ptr CPlayerpc_DarkHoleOpenRequest1697_next(nullptr);
+        static info::CPlayerpc_DarkHoleOpenRequest1697_clbk CPlayerpc_DarkHoleOpenRequest1697_user(nullptr);
+        static info::CPlayerpc_DowngradeItem1699_ptr CPlayerpc_DowngradeItem1699_next(nullptr);
+        static info::CPlayerpc_DowngradeItem1699_clbk CPlayerpc_DowngradeItem1699_user(nullptr);
+        static info::CPlayerpc_EmbellishPart1701_ptr CPlayerpc_EmbellishPart1701_next(nullptr);
+        static info::CPlayerpc_EmbellishPart1701_clbk CPlayerpc_EmbellishPart1701_user(nullptr);
+        static info::CPlayerpc_EquipPart1703_ptr CPlayerpc_EquipPart1703_next(nullptr);
+        static info::CPlayerpc_EquipPart1703_clbk CPlayerpc_EquipPart1703_user(nullptr);
+        static info::CPlayerpc_ExchangeDalantForGold1705_ptr CPlayerpc_ExchangeDalantForGold1705_next(nullptr);
+        static info::CPlayerpc_ExchangeDalantForGold1705_clbk CPlayerpc_ExchangeDalantForGold1705_user(nullptr);
+        static info::CPlayerpc_ExchangeGoldForDalant1707_ptr CPlayerpc_ExchangeGoldForDalant1707_next(nullptr);
+        static info::CPlayerpc_ExchangeGoldForDalant1707_clbk CPlayerpc_ExchangeGoldForDalant1707_user(nullptr);
+        static info::CPlayerpc_ExchangeGoldForPvP1709_ptr CPlayerpc_ExchangeGoldForPvP1709_next(nullptr);
+        static info::CPlayerpc_ExchangeGoldForPvP1709_clbk CPlayerpc_ExchangeGoldForPvP1709_user(nullptr);
+        static info::CPlayerpc_ExchangeItem1711_ptr CPlayerpc_ExchangeItem1711_next(nullptr);
+        static info::CPlayerpc_ExchangeItem1711_clbk CPlayerpc_ExchangeItem1711_user(nullptr);
+        static info::CPlayerpc_ExitWorldRequest1713_ptr CPlayerpc_ExitWorldRequest1713_next(nullptr);
+        static info::CPlayerpc_ExitWorldRequest1713_clbk CPlayerpc_ExitWorldRequest1713_user(nullptr);
+        static info::CPlayerpc_ForceInvenChange1715_ptr CPlayerpc_ForceInvenChange1715_next(nullptr);
+        static info::CPlayerpc_ForceInvenChange1715_clbk CPlayerpc_ForceInvenChange1715_user(nullptr);
+        static info::CPlayerpc_ForceRequest1717_ptr CPlayerpc_ForceRequest1717_next(nullptr);
+        static info::CPlayerpc_ForceRequest1717_clbk CPlayerpc_ForceRequest1717_user(nullptr);
+        static info::CPlayerpc_GestureRequest1719_ptr CPlayerpc_GestureRequest1719_next(nullptr);
+        static info::CPlayerpc_GestureRequest1719_clbk CPlayerpc_GestureRequest1719_user(nullptr);
+        static info::CPlayerpc_GiveItem1721_ptr CPlayerpc_GiveItem1721_next(nullptr);
+        static info::CPlayerpc_GiveItem1721_clbk CPlayerpc_GiveItem1721_user(nullptr);
+        static info::CPlayerpc_GotoAvatorRequest1723_ptr CPlayerpc_GotoAvatorRequest1723_next(nullptr);
+        static info::CPlayerpc_GotoAvatorRequest1723_clbk CPlayerpc_GotoAvatorRequest1723_user(nullptr);
+        static info::CPlayerpc_GotoBasePortalRequest1725_ptr CPlayerpc_GotoBasePortalRequest1725_next(nullptr);
+        static info::CPlayerpc_GotoBasePortalRequest1725_clbk CPlayerpc_GotoBasePortalRequest1725_user(nullptr);
+        static info::CPlayerpc_GuildBattleBlock1727_ptr CPlayerpc_GuildBattleBlock1727_next(nullptr);
+        static info::CPlayerpc_GuildBattleBlock1727_clbk CPlayerpc_GuildBattleBlock1727_user(nullptr);
+        static info::CPlayerpc_GuildCancelSuggestRequest1729_ptr CPlayerpc_GuildCancelSuggestRequest1729_next(nullptr);
+        static info::CPlayerpc_GuildCancelSuggestRequest1729_clbk CPlayerpc_GuildCancelSuggestRequest1729_user(nullptr);
+        static info::CPlayerpc_GuildDownLoadRequest1731_ptr CPlayerpc_GuildDownLoadRequest1731_next(nullptr);
+        static info::CPlayerpc_GuildDownLoadRequest1731_clbk CPlayerpc_GuildDownLoadRequest1731_user(nullptr);
+        static info::CPlayerpc_GuildEstablishRequest1733_ptr CPlayerpc_GuildEstablishRequest1733_next(nullptr);
+        static info::CPlayerpc_GuildEstablishRequest1733_clbk CPlayerpc_GuildEstablishRequest1733_user(nullptr);
+        static info::CPlayerpc_GuildHonorListRequest1735_ptr CPlayerpc_GuildHonorListRequest1735_next(nullptr);
+        static info::CPlayerpc_GuildHonorListRequest1735_clbk CPlayerpc_GuildHonorListRequest1735_user(nullptr);
+        static info::CPlayerpc_GuildJoinAcceptRequest1737_ptr CPlayerpc_GuildJoinAcceptRequest1737_next(nullptr);
+        static info::CPlayerpc_GuildJoinAcceptRequest1737_clbk CPlayerpc_GuildJoinAcceptRequest1737_user(nullptr);
+        static info::CPlayerpc_GuildJoinApplyCancelRequest1739_ptr CPlayerpc_GuildJoinApplyCancelRequest1739_next(nullptr);
+        static info::CPlayerpc_GuildJoinApplyCancelRequest1739_clbk CPlayerpc_GuildJoinApplyCancelRequest1739_user(nullptr);
+        static info::CPlayerpc_GuildJoinApplyRequest1741_ptr CPlayerpc_GuildJoinApplyRequest1741_next(nullptr);
+        static info::CPlayerpc_GuildJoinApplyRequest1741_clbk CPlayerpc_GuildJoinApplyRequest1741_user(nullptr);
+        static info::CPlayerpc_GuildListRequest1743_ptr CPlayerpc_GuildListRequest1743_next(nullptr);
+        static info::CPlayerpc_GuildListRequest1743_clbk CPlayerpc_GuildListRequest1743_user(nullptr);
+        static info::CPlayerpc_GuildManageRequest1745_ptr CPlayerpc_GuildManageRequest1745_next(nullptr);
+        static info::CPlayerpc_GuildManageRequest1745_clbk CPlayerpc_GuildManageRequest1745_user(nullptr);
+        static info::CPlayerpc_GuildNextHonorListRequest1747_ptr CPlayerpc_GuildNextHonorListRequest1747_next(nullptr);
+        static info::CPlayerpc_GuildNextHonorListRequest1747_clbk CPlayerpc_GuildNextHonorListRequest1747_user(nullptr);
+        static info::CPlayerpc_GuildOfferSuggestRequest1749_ptr CPlayerpc_GuildOfferSuggestRequest1749_next(nullptr);
+        static info::CPlayerpc_GuildOfferSuggestRequest1749_clbk CPlayerpc_GuildOfferSuggestRequest1749_user(nullptr);
+        static info::CPlayerpc_GuildPushMoneyRequest1751_ptr CPlayerpc_GuildPushMoneyRequest1751_next(nullptr);
+        static info::CPlayerpc_GuildPushMoneyRequest1751_clbk CPlayerpc_GuildPushMoneyRequest1751_user(nullptr);
+        static info::CPlayerpc_GuildQueryInfoRequest1753_ptr CPlayerpc_GuildQueryInfoRequest1753_next(nullptr);
+        static info::CPlayerpc_GuildQueryInfoRequest1753_clbk CPlayerpc_GuildQueryInfoRequest1753_user(nullptr);
+        static info::CPlayerpc_GuildRoomEnterRequest1755_ptr CPlayerpc_GuildRoomEnterRequest1755_next(nullptr);
+        static info::CPlayerpc_GuildRoomEnterRequest1755_clbk CPlayerpc_GuildRoomEnterRequest1755_user(nullptr);
+        static info::CPlayerpc_GuildRoomOutRequest1757_ptr CPlayerpc_GuildRoomOutRequest1757_next(nullptr);
+        static info::CPlayerpc_GuildRoomOutRequest1757_clbk CPlayerpc_GuildRoomOutRequest1757_user(nullptr);
+        static info::CPlayerpc_GuildRoomRentRequest1759_ptr CPlayerpc_GuildRoomRentRequest1759_next(nullptr);
+        static info::CPlayerpc_GuildRoomRentRequest1759_clbk CPlayerpc_GuildRoomRentRequest1759_user(nullptr);
+        static info::CPlayerpc_GuildRoomRestTimeRequest1761_ptr CPlayerpc_GuildRoomRestTimeRequest1761_next(nullptr);
+        static info::CPlayerpc_GuildRoomRestTimeRequest1761_clbk CPlayerpc_GuildRoomRestTimeRequest1761_user(nullptr);
+        static info::CPlayerpc_GuildSelfLeaveRequest1763_ptr CPlayerpc_GuildSelfLeaveRequest1763_next(nullptr);
+        static info::CPlayerpc_GuildSelfLeaveRequest1763_clbk CPlayerpc_GuildSelfLeaveRequest1763_user(nullptr);
+        static info::CPlayerpc_GuildSetHonorRequest1765_ptr CPlayerpc_GuildSetHonorRequest1765_next(nullptr);
+        static info::CPlayerpc_GuildSetHonorRequest1765_clbk CPlayerpc_GuildSetHonorRequest1765_user(nullptr);
+        static info::CPlayerpc_GuildVoteRequest1767_ptr CPlayerpc_GuildVoteRequest1767_next(nullptr);
+        static info::CPlayerpc_GuildVoteRequest1767_clbk CPlayerpc_GuildVoteRequest1767_user(nullptr);
+        static info::CPlayerpc_InitClass1769_ptr CPlayerpc_InitClass1769_next(nullptr);
+        static info::CPlayerpc_InitClass1769_clbk CPlayerpc_InitClass1769_user(nullptr);
+        static info::CPlayerpc_InitClassRequest1771_ptr CPlayerpc_InitClassRequest1771_next(nullptr);
+        static info::CPlayerpc_InitClassRequest1771_clbk CPlayerpc_InitClassRequest1771_user(nullptr);
+        static info::CPlayerpc_LimitItemNumRequest1773_ptr CPlayerpc_LimitItemNumRequest1773_next(nullptr);
+        static info::CPlayerpc_LimitItemNumRequest1773_clbk CPlayerpc_LimitItemNumRequest1773_user(nullptr);
+        static info::CPlayerpc_LinkBoardRequest1775_ptr CPlayerpc_LinkBoardRequest1775_next(nullptr);
+        static info::CPlayerpc_LinkBoardRequest1775_clbk CPlayerpc_LinkBoardRequest1775_user(nullptr);
+        static info::CPlayerpc_MacroUpdate1777_ptr CPlayerpc_MacroUpdate1777_next(nullptr);
+        static info::CPlayerpc_MacroUpdate1777_clbk CPlayerpc_MacroUpdate1777_user(nullptr);
+        static info::CPlayerpc_MakeItem1779_ptr CPlayerpc_MakeItem1779_next(nullptr);
+        static info::CPlayerpc_MakeItem1779_clbk CPlayerpc_MakeItem1779_user(nullptr);
+        static info::CPlayerpc_MakeTowerRequest1781_ptr CPlayerpc_MakeTowerRequest1781_next(nullptr);
+        static info::CPlayerpc_MakeTowerRequest1781_clbk CPlayerpc_MakeTowerRequest1781_user(nullptr);
+        static info::CPlayerpc_MakeTrapRequest1783_ptr CPlayerpc_MakeTrapRequest1783_next(nullptr);
+        static info::CPlayerpc_MakeTrapRequest1783_clbk CPlayerpc_MakeTrapRequest1783_user(nullptr);
+        static info::CPlayerpc_MineCancle1785_ptr CPlayerpc_MineCancle1785_next(nullptr);
+        static info::CPlayerpc_MineCancle1785_clbk CPlayerpc_MineCancle1785_user(nullptr);
+        static info::CPlayerpc_MineComplete1787_ptr CPlayerpc_MineComplete1787_next(nullptr);
+        static info::CPlayerpc_MineComplete1787_clbk CPlayerpc_MineComplete1787_user(nullptr);
+        static info::CPlayerpc_MineStart1789_ptr CPlayerpc_MineStart1789_next(nullptr);
+        static info::CPlayerpc_MineStart1789_clbk CPlayerpc_MineStart1789_user(nullptr);
+        static info::CPlayerpc_MoveModeChangeRequest1791_ptr CPlayerpc_MoveModeChangeRequest1791_next(nullptr);
+        static info::CPlayerpc_MoveModeChangeRequest1791_clbk CPlayerpc_MoveModeChangeRequest1791_user(nullptr);
+        static info::CPlayerpc_MoveNext1793_ptr CPlayerpc_MoveNext1793_next(nullptr);
+        static info::CPlayerpc_MoveNext1793_clbk CPlayerpc_MoveNext1793_user(nullptr);
+        static info::CPlayerpc_MovePortal1795_ptr CPlayerpc_MovePortal1795_next(nullptr);
+        static info::CPlayerpc_MovePortal1795_clbk CPlayerpc_MovePortal1795_user(nullptr);
+        static info::CPlayerpc_MoveStop1797_ptr CPlayerpc_MoveStop1797_next(nullptr);
+        static info::CPlayerpc_MoveStop1797_clbk CPlayerpc_MoveStop1797_user(nullptr);
+        static info::CPlayerpc_MoveToOwnStoneMapRequest1799_ptr CPlayerpc_MoveToOwnStoneMapRequest1799_next(nullptr);
+        static info::CPlayerpc_MoveToOwnStoneMapRequest1799_clbk CPlayerpc_MoveToOwnStoneMapRequest1799_user(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest1801_ptr CPlayerpc_NPCLinkCheckItemRequest1801_next(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest1801_clbk CPlayerpc_NPCLinkCheckItemRequest1801_user(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest_Check1803_ptr CPlayerpc_NPCLinkCheckItemRequest_Check1803_next(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest_Check1803_clbk CPlayerpc_NPCLinkCheckItemRequest_Check1803_user(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest_Use1805_ptr CPlayerpc_NPCLinkCheckItemRequest_Use1805_next(nullptr);
+        static info::CPlayerpc_NPCLinkCheckItemRequest_Use1805_clbk CPlayerpc_NPCLinkCheckItemRequest_Use1805_user(nullptr);
+        static info::CPlayerpc_NewPosStart1807_ptr CPlayerpc_NewPosStart1807_next(nullptr);
+        static info::CPlayerpc_NewPosStart1807_clbk CPlayerpc_NewPosStart1807_user(nullptr);
+        static info::CPlayerpc_NotifyRaceBossCryMsg1809_ptr CPlayerpc_NotifyRaceBossCryMsg1809_next(nullptr);
+        static info::CPlayerpc_NotifyRaceBossCryMsg1809_clbk CPlayerpc_NotifyRaceBossCryMsg1809_user(nullptr);
+        static info::CPlayerpc_NuclearAfterEffect1811_ptr CPlayerpc_NuclearAfterEffect1811_next(nullptr);
+        static info::CPlayerpc_NuclearAfterEffect1811_clbk CPlayerpc_NuclearAfterEffect1811_user(nullptr);
+        static info::CPlayerpc_OffPart1813_ptr CPlayerpc_OffPart1813_next(nullptr);
+        static info::CPlayerpc_OffPart1813_clbk CPlayerpc_OffPart1813_user(nullptr);
+        static info::CPlayerpc_OreCutting1815_ptr CPlayerpc_OreCutting1815_next(nullptr);
+        static info::CPlayerpc_OreCutting1815_clbk CPlayerpc_OreCutting1815_user(nullptr);
+        static info::CPlayerpc_OreIntoBag1817_ptr CPlayerpc_OreIntoBag1817_next(nullptr);
+        static info::CPlayerpc_OreIntoBag1817_clbk CPlayerpc_OreIntoBag1817_user(nullptr);
+        static info::CPlayerpc_PartyAlterLootShareReqeuest1819_ptr CPlayerpc_PartyAlterLootShareReqeuest1819_next(nullptr);
+        static info::CPlayerpc_PartyAlterLootShareReqeuest1819_clbk CPlayerpc_PartyAlterLootShareReqeuest1819_user(nullptr);
+        static info::CPlayerpc_PartyDisJointReqeuest1821_ptr CPlayerpc_PartyDisJointReqeuest1821_next(nullptr);
+        static info::CPlayerpc_PartyDisJointReqeuest1821_clbk CPlayerpc_PartyDisJointReqeuest1821_user(nullptr);
+        static info::CPlayerpc_PartyJoinApplication1823_ptr CPlayerpc_PartyJoinApplication1823_next(nullptr);
+        static info::CPlayerpc_PartyJoinApplication1823_clbk CPlayerpc_PartyJoinApplication1823_user(nullptr);
+        static info::CPlayerpc_PartyJoinApplicationAnswer1825_ptr CPlayerpc_PartyJoinApplicationAnswer1825_next(nullptr);
+        static info::CPlayerpc_PartyJoinApplicationAnswer1825_clbk CPlayerpc_PartyJoinApplicationAnswer1825_user(nullptr);
+        static info::CPlayerpc_PartyJoinInvitation1827_ptr CPlayerpc_PartyJoinInvitation1827_next(nullptr);
+        static info::CPlayerpc_PartyJoinInvitation1827_clbk CPlayerpc_PartyJoinInvitation1827_user(nullptr);
+        static info::CPlayerpc_PartyJoinInvitationAnswer1829_ptr CPlayerpc_PartyJoinInvitationAnswer1829_next(nullptr);
+        static info::CPlayerpc_PartyJoinInvitationAnswer1829_clbk CPlayerpc_PartyJoinInvitationAnswer1829_user(nullptr);
+        static info::CPlayerpc_PartyLeaveCompulsionReqeuest1831_ptr CPlayerpc_PartyLeaveCompulsionReqeuest1831_next(nullptr);
+        static info::CPlayerpc_PartyLeaveCompulsionReqeuest1831_clbk CPlayerpc_PartyLeaveCompulsionReqeuest1831_user(nullptr);
+        static info::CPlayerpc_PartyLeaveSelfReqeuest1833_ptr CPlayerpc_PartyLeaveSelfReqeuest1833_next(nullptr);
+        static info::CPlayerpc_PartyLeaveSelfReqeuest1833_clbk CPlayerpc_PartyLeaveSelfReqeuest1833_user(nullptr);
+        static info::CPlayerpc_PartyLockReqeuest1835_ptr CPlayerpc_PartyLockReqeuest1835_next(nullptr);
+        static info::CPlayerpc_PartyLockReqeuest1835_clbk CPlayerpc_PartyLockReqeuest1835_user(nullptr);
+        static info::CPlayerpc_PartyReqBlock1837_ptr CPlayerpc_PartyReqBlock1837_next(nullptr);
+        static info::CPlayerpc_PartyReqBlock1837_clbk CPlayerpc_PartyReqBlock1837_user(nullptr);
+        static info::CPlayerpc_PartySuccessionReqeuest1839_ptr CPlayerpc_PartySuccessionReqeuest1839_next(nullptr);
+        static info::CPlayerpc_PartySuccessionReqeuest1839_clbk CPlayerpc_PartySuccessionReqeuest1839_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Force1841_ptr CPlayerpc_PlayAttack_Force1841_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Force1841_clbk CPlayerpc_PlayAttack_Force1841_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Gen1843_ptr CPlayerpc_PlayAttack_Gen1843_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Gen1843_clbk CPlayerpc_PlayAttack_Gen1843_user(nullptr);
+        static info::CPlayerpc_PlayAttack_SelfDestruction1845_ptr CPlayerpc_PlayAttack_SelfDestruction1845_next(nullptr);
+        static info::CPlayerpc_PlayAttack_SelfDestruction1845_clbk CPlayerpc_PlayAttack_SelfDestruction1845_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Siege1847_ptr CPlayerpc_PlayAttack_Siege1847_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Siege1847_clbk CPlayerpc_PlayAttack_Siege1847_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Skill1849_ptr CPlayerpc_PlayAttack_Skill1849_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Skill1849_clbk CPlayerpc_PlayAttack_Skill1849_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Test1851_ptr CPlayerpc_PlayAttack_Test1851_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Test1851_clbk CPlayerpc_PlayAttack_Test1851_user(nullptr);
+        static info::CPlayerpc_PlayAttack_Unit1853_ptr CPlayerpc_PlayAttack_Unit1853_next(nullptr);
+        static info::CPlayerpc_PlayAttack_Unit1853_clbk CPlayerpc_PlayAttack_Unit1853_user(nullptr);
+        static info::CPlayerpc_PostContentRequest1855_ptr CPlayerpc_PostContentRequest1855_next(nullptr);
+        static info::CPlayerpc_PostContentRequest1855_clbk CPlayerpc_PostContentRequest1855_user(nullptr);
+        static info::CPlayerpc_PostDeleteRequest1857_ptr CPlayerpc_PostDeleteRequest1857_next(nullptr);
+        static info::CPlayerpc_PostDeleteRequest1857_clbk CPlayerpc_PostDeleteRequest1857_user(nullptr);
+        static info::CPlayerpc_PostItemGoldRequest1859_ptr CPlayerpc_PostItemGoldRequest1859_next(nullptr);
+        static info::CPlayerpc_PostItemGoldRequest1859_clbk CPlayerpc_PostItemGoldRequest1859_user(nullptr);
+        static info::CPlayerpc_PostListRequest1861_ptr CPlayerpc_PostListRequest1861_next(nullptr);
+        static info::CPlayerpc_PostListRequest1861_clbk CPlayerpc_PostListRequest1861_user(nullptr);
+        static info::CPlayerpc_PostReturnConfirmRequest1863_ptr CPlayerpc_PostReturnConfirmRequest1863_next(nullptr);
+        static info::CPlayerpc_PostReturnConfirmRequest1863_clbk CPlayerpc_PostReturnConfirmRequest1863_user(nullptr);
+        static info::CPlayerpc_PotionDivision1865_ptr CPlayerpc_PotionDivision1865_next(nullptr);
+        static info::CPlayerpc_PotionDivision1865_clbk CPlayerpc_PotionDivision1865_user(nullptr);
+        static info::CPlayerpc_PotionSeparation1867_ptr CPlayerpc_PotionSeparation1867_next(nullptr);
+        static info::CPlayerpc_PotionSeparation1867_clbk CPlayerpc_PotionSeparation1867_user(nullptr);
+        static info::CPlayerpc_PotionUseTrunkExtend1869_ptr CPlayerpc_PotionUseTrunkExtend1869_next(nullptr);
+        static info::CPlayerpc_PotionUseTrunkExtend1869_clbk CPlayerpc_PotionUseTrunkExtend1869_user(nullptr);
+        static info::CPlayerpc_ProposeVoteRequest1871_ptr CPlayerpc_ProposeVoteRequest1871_next(nullptr);
+        static info::CPlayerpc_ProposeVoteRequest1871_clbk CPlayerpc_ProposeVoteRequest1871_user(nullptr);
+        static info::CPlayerpc_PvpCashRecorver1873_ptr CPlayerpc_PvpCashRecorver1873_next(nullptr);
+        static info::CPlayerpc_PvpCashRecorver1873_clbk CPlayerpc_PvpCashRecorver1873_user(nullptr);
+        static info::CPlayerpc_QuestGiveupRequest1875_ptr CPlayerpc_QuestGiveupRequest1875_next(nullptr);
+        static info::CPlayerpc_QuestGiveupRequest1875_clbk CPlayerpc_QuestGiveupRequest1875_user(nullptr);
+        static info::CPlayerpc_RadarCharInfo1877_ptr CPlayerpc_RadarCharInfo1877_next(nullptr);
+        static info::CPlayerpc_RadarCharInfo1877_clbk CPlayerpc_RadarCharInfo1877_user(nullptr);
+        static info::CPlayerpc_RealMovPos1879_ptr CPlayerpc_RealMovPos1879_next(nullptr);
+        static info::CPlayerpc_RealMovPos1879_clbk CPlayerpc_RealMovPos1879_user(nullptr);
+        static info::CPlayerpc_RefreshGroupTargetPosition1881_ptr CPlayerpc_RefreshGroupTargetPosition1881_next(nullptr);
+        static info::CPlayerpc_RefreshGroupTargetPosition1881_clbk CPlayerpc_RefreshGroupTargetPosition1881_user(nullptr);
+        static info::CPlayerpc_RegistBind1883_ptr CPlayerpc_RegistBind1883_next(nullptr);
+        static info::CPlayerpc_RegistBind1883_clbk CPlayerpc_RegistBind1883_user(nullptr);
+        static info::CPlayerpc_ReleaseGroupTargetObjectRequest1885_ptr CPlayerpc_ReleaseGroupTargetObjectRequest1885_next(nullptr);
+        static info::CPlayerpc_ReleaseGroupTargetObjectRequest1885_clbk CPlayerpc_ReleaseGroupTargetObjectRequest1885_user(nullptr);
+        static info::CPlayerpc_ReleaseSiegeModeRequest1887_ptr CPlayerpc_ReleaseSiegeModeRequest1887_next(nullptr);
+        static info::CPlayerpc_ReleaseSiegeModeRequest1887_clbk CPlayerpc_ReleaseSiegeModeRequest1887_user(nullptr);
+        static info::CPlayerpc_ReleaseTargetObjectRequest1889_ptr CPlayerpc_ReleaseTargetObjectRequest1889_next(nullptr);
+        static info::CPlayerpc_ReleaseTargetObjectRequest1889_clbk CPlayerpc_ReleaseTargetObjectRequest1889_user(nullptr);
+        static info::CPlayerpc_RenameItemNConditionCheck1891_ptr CPlayerpc_RenameItemNConditionCheck1891_next(nullptr);
+        static info::CPlayerpc_RenameItemNConditionCheck1891_clbk CPlayerpc_RenameItemNConditionCheck1891_user(nullptr);
+        static info::CPlayerpc_RequestChangeTaxRate1893_ptr CPlayerpc_RequestChangeTaxRate1893_next(nullptr);
+        static info::CPlayerpc_RequestChangeTaxRate1893_clbk CPlayerpc_RequestChangeTaxRate1893_user(nullptr);
+        static info::CPlayerpc_RequestDialogWithNPC1895_ptr CPlayerpc_RequestDialogWithNPC1895_next(nullptr);
+        static info::CPlayerpc_RequestDialogWithNPC1895_clbk CPlayerpc_RequestDialogWithNPC1895_user(nullptr);
+        static info::CPlayerpc_RequestPatriarchPunishment1897_ptr CPlayerpc_RequestPatriarchPunishment1897_next(nullptr);
+        static info::CPlayerpc_RequestPatriarchPunishment1897_clbk CPlayerpc_RequestPatriarchPunishment1897_user(nullptr);
+        static info::CPlayerpc_RequestQuestFromNPC1899_ptr CPlayerpc_RequestQuestFromNPC1899_next(nullptr);
+        static info::CPlayerpc_RequestQuestFromNPC1899_clbk CPlayerpc_RequestQuestFromNPC1899_user(nullptr);
+        static info::CPlayerpc_RequestQuestListFromNPC1901_ptr CPlayerpc_RequestQuestListFromNPC1901_next(nullptr);
+        static info::CPlayerpc_RequestQuestListFromNPC1901_clbk CPlayerpc_RequestQuestListFromNPC1901_user(nullptr);
+        static info::CPlayerpc_RequestTaxRate1903_ptr CPlayerpc_RequestTaxRate1903_next(nullptr);
+        static info::CPlayerpc_RequestTaxRate1903_clbk CPlayerpc_RequestTaxRate1903_user(nullptr);
+        static info::CPlayerpc_RequestUILockCertify1905_ptr CPlayerpc_RequestUILockCertify1905_next(nullptr);
+        static info::CPlayerpc_RequestUILockCertify1905_clbk CPlayerpc_RequestUILockCertify1905_user(nullptr);
+        static info::CPlayerpc_RequestUILockFindPW1907_ptr CPlayerpc_RequestUILockFindPW1907_next(nullptr);
+        static info::CPlayerpc_RequestUILockFindPW1907_clbk CPlayerpc_RequestUILockFindPW1907_user(nullptr);
+        static info::CPlayerpc_RequestUILockInit1909_ptr CPlayerpc_RequestUILockInit1909_next(nullptr);
+        static info::CPlayerpc_RequestUILockInit1909_clbk CPlayerpc_RequestUILockInit1909_user(nullptr);
+        static info::CPlayerpc_RequestUILockUpdate1911_ptr CPlayerpc_RequestUILockUpdate1911_next(nullptr);
+        static info::CPlayerpc_RequestUILockUpdate1911_clbk CPlayerpc_RequestUILockUpdate1911_user(nullptr);
+        static info::CPlayerpc_RequestWatchingWithNPC1913_ptr CPlayerpc_RequestWatchingWithNPC1913_next(nullptr);
+        static info::CPlayerpc_RequestWatchingWithNPC1913_clbk CPlayerpc_RequestWatchingWithNPC1913_user(nullptr);
+        static info::CPlayerpc_ResDivision1915_ptr CPlayerpc_ResDivision1915_next(nullptr);
+        static info::CPlayerpc_ResDivision1915_clbk CPlayerpc_ResDivision1915_user(nullptr);
+        static info::CPlayerpc_ResSeparation1917_ptr CPlayerpc_ResSeparation1917_next(nullptr);
+        static info::CPlayerpc_ResSeparation1917_clbk CPlayerpc_ResSeparation1917_user(nullptr);
+        static info::CPlayerpc_Resurrect1919_ptr CPlayerpc_Resurrect1919_next(nullptr);
+        static info::CPlayerpc_Resurrect1919_clbk CPlayerpc_Resurrect1919_user(nullptr);
+        static info::CPlayerpc_Revival1921_ptr CPlayerpc_Revival1921_next(nullptr);
+        static info::CPlayerpc_Revival1921_clbk CPlayerpc_Revival1921_user(nullptr);
+        static info::CPlayerpc_SelectClassRequest1923_ptr CPlayerpc_SelectClassRequest1923_next(nullptr);
+        static info::CPlayerpc_SelectClassRequest1923_clbk CPlayerpc_SelectClassRequest1923_user(nullptr);
+        static info::CPlayerpc_SelectQuestAfterHappenEvent1925_ptr CPlayerpc_SelectQuestAfterHappenEvent1925_next(nullptr);
+        static info::CPlayerpc_SelectQuestAfterHappenEvent1925_clbk CPlayerpc_SelectQuestAfterHappenEvent1925_user(nullptr);
+        static info::CPlayerpc_SelectQuestReward1927_ptr CPlayerpc_SelectQuestReward1927_next(nullptr);
+        static info::CPlayerpc_SelectQuestReward1927_clbk CPlayerpc_SelectQuestReward1927_user(nullptr);
+        static info::CPlayerpc_SellItemStore1929_ptr CPlayerpc_SellItemStore1929_next(nullptr);
+        static info::CPlayerpc_SellItemStore1929_clbk CPlayerpc_SellItemStore1929_user(nullptr);
+        static info::CPlayerpc_SetGroupMapPointRequest1931_ptr CPlayerpc_SetGroupMapPointRequest1931_next(nullptr);
+        static info::CPlayerpc_SetGroupMapPointRequest1931_clbk CPlayerpc_SetGroupMapPointRequest1931_user(nullptr);
+        static info::CPlayerpc_SetGroupTargetObjectRequest1933_ptr CPlayerpc_SetGroupTargetObjectRequest1933_next(nullptr);
+        static info::CPlayerpc_SetGroupTargetObjectRequest1933_clbk CPlayerpc_SetGroupTargetObjectRequest1933_user(nullptr);
+        static info::CPlayerpc_SetInGuildBattle1935_ptr CPlayerpc_SetInGuildBattle1935_next(nullptr);
+        static info::CPlayerpc_SetInGuildBattle1935_clbk CPlayerpc_SetInGuildBattle1935_user(nullptr);
+        static info::CPlayerpc_SetItemCheckRequest1937_ptr CPlayerpc_SetItemCheckRequest1937_next(nullptr);
+        static info::CPlayerpc_SetItemCheckRequest1937_clbk CPlayerpc_SetItemCheckRequest1937_user(nullptr);
+        static info::CPlayerpc_SetRaceBossCryMsg1939_ptr CPlayerpc_SetRaceBossCryMsg1939_next(nullptr);
+        static info::CPlayerpc_SetRaceBossCryMsg1939_clbk CPlayerpc_SetRaceBossCryMsg1939_user(nullptr);
+        static info::CPlayerpc_SetTargetObjectRequest1941_ptr CPlayerpc_SetTargetObjectRequest1941_next(nullptr);
+        static info::CPlayerpc_SetTargetObjectRequest1941_clbk CPlayerpc_SetTargetObjectRequest1941_user(nullptr);
+        static info::CPlayerpc_SkillRequest1943_ptr CPlayerpc_SkillRequest1943_next(nullptr);
+        static info::CPlayerpc_SkillRequest1943_clbk CPlayerpc_SkillRequest1943_user(nullptr);
+        static info::CPlayerpc_Stop1945_ptr CPlayerpc_Stop1945_next(nullptr);
+        static info::CPlayerpc_Stop1945_clbk CPlayerpc_Stop1945_user(nullptr);
+        static info::CPlayerpc_TakeGroundingItem1947_ptr CPlayerpc_TakeGroundingItem1947_next(nullptr);
+        static info::CPlayerpc_TakeGroundingItem1947_clbk CPlayerpc_TakeGroundingItem1947_user(nullptr);
+        static info::CPlayerpc_TalikCrystalExchange1949_ptr CPlayerpc_TalikCrystalExchange1949_next(nullptr);
+        static info::CPlayerpc_TalikCrystalExchange1949_clbk CPlayerpc_TalikCrystalExchange1949_user(nullptr);
+        static info::CPlayerpc_ThrowSkillRequest1951_ptr CPlayerpc_ThrowSkillRequest1951_next(nullptr);
+        static info::CPlayerpc_ThrowSkillRequest1951_clbk CPlayerpc_ThrowSkillRequest1951_user(nullptr);
+        static info::CPlayerpc_ThrowStorageItem1953_ptr CPlayerpc_ThrowStorageItem1953_next(nullptr);
+        static info::CPlayerpc_ThrowStorageItem1953_clbk CPlayerpc_ThrowStorageItem1953_user(nullptr);
+        static info::CPlayerpc_ThrowUnitRequest1955_ptr CPlayerpc_ThrowUnitRequest1955_next(nullptr);
+        static info::CPlayerpc_ThrowUnitRequest1955_clbk CPlayerpc_ThrowUnitRequest1955_user(nullptr);
+        static info::CPlayerpc_TradeBlock1957_ptr CPlayerpc_TradeBlock1957_next(nullptr);
+        static info::CPlayerpc_TradeBlock1957_clbk CPlayerpc_TradeBlock1957_user(nullptr);
+        static info::CPlayerpc_TransShipRenewTicketRequest1959_ptr CPlayerpc_TransShipRenewTicketRequest1959_next(nullptr);
+        static info::CPlayerpc_TransShipRenewTicketRequest1959_clbk CPlayerpc_TransShipRenewTicketRequest1959_user(nullptr);
+        static info::CPlayerpc_TransformSiegeModeRequest1961_ptr CPlayerpc_TransformSiegeModeRequest1961_next(nullptr);
+        static info::CPlayerpc_TransformSiegeModeRequest1961_clbk CPlayerpc_TransformSiegeModeRequest1961_user(nullptr);
+        static info::CPlayerpc_TrunkAlterItemSlotRequest1963_ptr CPlayerpc_TrunkAlterItemSlotRequest1963_next(nullptr);
+        static info::CPlayerpc_TrunkAlterItemSlotRequest1963_clbk CPlayerpc_TrunkAlterItemSlotRequest1963_user(nullptr);
+        static info::CPlayerpc_TrunkChangePasswdRequest1965_ptr CPlayerpc_TrunkChangePasswdRequest1965_next(nullptr);
+        static info::CPlayerpc_TrunkChangePasswdRequest1965_clbk CPlayerpc_TrunkChangePasswdRequest1965_user(nullptr);
+        static info::CPlayerpc_TrunkCreateCostIsFreeRequest1967_ptr CPlayerpc_TrunkCreateCostIsFreeRequest1967_next(nullptr);
+        static info::CPlayerpc_TrunkCreateCostIsFreeRequest1967_clbk CPlayerpc_TrunkCreateCostIsFreeRequest1967_user(nullptr);
+        static info::CPlayerpc_TrunkDownloadRequest1969_ptr CPlayerpc_TrunkDownloadRequest1969_next(nullptr);
+        static info::CPlayerpc_TrunkDownloadRequest1969_clbk CPlayerpc_TrunkDownloadRequest1969_user(nullptr);
+        static info::CPlayerpc_TrunkEstRequest1971_ptr CPlayerpc_TrunkEstRequest1971_next(nullptr);
+        static info::CPlayerpc_TrunkEstRequest1971_clbk CPlayerpc_TrunkEstRequest1971_user(nullptr);
+        static info::CPlayerpc_TrunkExtendRequest1973_ptr CPlayerpc_TrunkExtendRequest1973_next(nullptr);
+        static info::CPlayerpc_TrunkExtendRequest1973_clbk CPlayerpc_TrunkExtendRequest1973_user(nullptr);
+        static info::CPlayerpc_TrunkHintAnswerRequest1975_ptr CPlayerpc_TrunkHintAnswerRequest1975_next(nullptr);
+        static info::CPlayerpc_TrunkHintAnswerRequest1975_clbk CPlayerpc_TrunkHintAnswerRequest1975_user(nullptr);
+        static info::CPlayerpc_TrunkIoMergeRequest1977_ptr CPlayerpc_TrunkIoMergeRequest1977_next(nullptr);
+        static info::CPlayerpc_TrunkIoMergeRequest1977_clbk CPlayerpc_TrunkIoMergeRequest1977_user(nullptr);
+        static info::CPlayerpc_TrunkIoMoneyRequest1979_ptr CPlayerpc_TrunkIoMoneyRequest1979_next(nullptr);
+        static info::CPlayerpc_TrunkIoMoneyRequest1979_clbk CPlayerpc_TrunkIoMoneyRequest1979_user(nullptr);
+        static info::CPlayerpc_TrunkIoMoveRequest1981_ptr CPlayerpc_TrunkIoMoveRequest1981_next(nullptr);
+        static info::CPlayerpc_TrunkIoMoveRequest1981_clbk CPlayerpc_TrunkIoMoveRequest1981_user(nullptr);
+        static info::CPlayerpc_TrunkIoSwapRequest1983_ptr CPlayerpc_TrunkIoSwapRequest1983_next(nullptr);
+        static info::CPlayerpc_TrunkIoSwapRequest1983_clbk CPlayerpc_TrunkIoSwapRequest1983_user(nullptr);
+        static info::CPlayerpc_TrunkPotionDivision1985_ptr CPlayerpc_TrunkPotionDivision1985_next(nullptr);
+        static info::CPlayerpc_TrunkPotionDivision1985_clbk CPlayerpc_TrunkPotionDivision1985_user(nullptr);
+        static info::CPlayerpc_TrunkPwHintIndexRequest1987_ptr CPlayerpc_TrunkPwHintIndexRequest1987_next(nullptr);
+        static info::CPlayerpc_TrunkPwHintIndexRequest1987_clbk CPlayerpc_TrunkPwHintIndexRequest1987_user(nullptr);
+        static info::CPlayerpc_TrunkResDivision1989_ptr CPlayerpc_TrunkResDivision1989_next(nullptr);
+        static info::CPlayerpc_TrunkResDivision1989_clbk CPlayerpc_TrunkResDivision1989_user(nullptr);
+        static info::CPlayerpc_UnitBulletFillRequest1991_ptr CPlayerpc_UnitBulletFillRequest1991_next(nullptr);
+        static info::CPlayerpc_UnitBulletFillRequest1991_clbk CPlayerpc_UnitBulletFillRequest1991_user(nullptr);
+        static info::CPlayerpc_UnitBulletReplaceRequest1993_ptr CPlayerpc_UnitBulletReplaceRequest1993_next(nullptr);
+        static info::CPlayerpc_UnitBulletReplaceRequest1993_clbk CPlayerpc_UnitBulletReplaceRequest1993_user(nullptr);
+        static info::CPlayerpc_UnitDeliveryRequest1995_ptr CPlayerpc_UnitDeliveryRequest1995_next(nullptr);
+        static info::CPlayerpc_UnitDeliveryRequest1995_clbk CPlayerpc_UnitDeliveryRequest1995_user(nullptr);
+        static info::CPlayerpc_UnitFrameBuyRequest1997_ptr CPlayerpc_UnitFrameBuyRequest1997_next(nullptr);
+        static info::CPlayerpc_UnitFrameBuyRequest1997_clbk CPlayerpc_UnitFrameBuyRequest1997_user(nullptr);
+        static info::CPlayerpc_UnitFrameRepairRequest1999_ptr CPlayerpc_UnitFrameRepairRequest1999_next(nullptr);
+        static info::CPlayerpc_UnitFrameRepairRequest1999_clbk CPlayerpc_UnitFrameRepairRequest1999_user(nullptr);
+        static info::CPlayerpc_UnitLeaveRequest2001_ptr CPlayerpc_UnitLeaveRequest2001_next(nullptr);
+        static info::CPlayerpc_UnitLeaveRequest2001_clbk CPlayerpc_UnitLeaveRequest2001_user(nullptr);
+        static info::CPlayerpc_UnitPackFillRequest2003_ptr CPlayerpc_UnitPackFillRequest2003_next(nullptr);
+        static info::CPlayerpc_UnitPackFillRequest2003_clbk CPlayerpc_UnitPackFillRequest2003_user(nullptr);
+        static info::CPlayerpc_UnitPartTuningRequest2005_ptr CPlayerpc_UnitPartTuningRequest2005_next(nullptr);
+        static info::CPlayerpc_UnitPartTuningRequest2005_clbk CPlayerpc_UnitPartTuningRequest2005_user(nullptr);
+        static info::CPlayerpc_UnitReturnRequest2007_ptr CPlayerpc_UnitReturnRequest2007_next(nullptr);
+        static info::CPlayerpc_UnitReturnRequest2007_clbk CPlayerpc_UnitReturnRequest2007_user(nullptr);
+        static info::CPlayerpc_UnitSellRequest2009_ptr CPlayerpc_UnitSellRequest2009_next(nullptr);
+        static info::CPlayerpc_UnitSellRequest2009_clbk CPlayerpc_UnitSellRequest2009_user(nullptr);
+        static info::CPlayerpc_UnitTakeRequest2011_ptr CPlayerpc_UnitTakeRequest2011_next(nullptr);
+        static info::CPlayerpc_UnitTakeRequest2011_clbk CPlayerpc_UnitTakeRequest2011_user(nullptr);
+        static info::CPlayerpc_UpdateDataForPostSend2013_ptr CPlayerpc_UpdateDataForPostSend2013_next(nullptr);
+        static info::CPlayerpc_UpdateDataForPostSend2013_clbk CPlayerpc_UpdateDataForPostSend2013_user(nullptr);
+        static info::CPlayerpc_UpdateDataForTrade2015_ptr CPlayerpc_UpdateDataForTrade2015_next(nullptr);
+        static info::CPlayerpc_UpdateDataForTrade2015_clbk CPlayerpc_UpdateDataForTrade2015_user(nullptr);
+        static info::CPlayerpc_UpgradeItem2017_ptr CPlayerpc_UpgradeItem2017_next(nullptr);
+        static info::CPlayerpc_UpgradeItem2017_clbk CPlayerpc_UpgradeItem2017_user(nullptr);
+        static info::CPlayerpc_UseFireCracker2019_ptr CPlayerpc_UseFireCracker2019_next(nullptr);
+        static info::CPlayerpc_UseFireCracker2019_clbk CPlayerpc_UseFireCracker2019_user(nullptr);
+        static info::CPlayerpc_UsePotionItem2021_ptr CPlayerpc_UsePotionItem2021_next(nullptr);
+        static info::CPlayerpc_UsePotionItem2021_clbk CPlayerpc_UsePotionItem2021_user(nullptr);
+        static info::CPlayerpc_UseRadarItem2023_ptr CPlayerpc_UseRadarItem2023_next(nullptr);
+        static info::CPlayerpc_UseRadarItem2023_clbk CPlayerpc_UseRadarItem2023_user(nullptr);
+        static info::CPlayerpc_UseRecoverLossExpItem2025_ptr CPlayerpc_UseRecoverLossExpItem2025_next(nullptr);
+        static info::CPlayerpc_UseRecoverLossExpItem2025_clbk CPlayerpc_UseRecoverLossExpItem2025_user(nullptr);
+        static info::CPlayerpc_UserSoccerBall2027_ptr CPlayerpc_UserSoccerBall2027_next(nullptr);
+        static info::CPlayerpc_UserSoccerBall2027_clbk CPlayerpc_UserSoccerBall2027_user(nullptr);
+        static info::CPlayerpc_WPActiveAttack_Force2029_ptr CPlayerpc_WPActiveAttack_Force2029_next(nullptr);
+        static info::CPlayerpc_WPActiveAttack_Force2029_clbk CPlayerpc_WPActiveAttack_Force2029_user(nullptr);
+        static info::CPlayerpc_WPActiveAttack_Skill2031_ptr CPlayerpc_WPActiveAttack_Skill2031_next(nullptr);
+        static info::CPlayerpc_WPActiveAttack_Skill2031_clbk CPlayerpc_WPActiveAttack_Skill2031_user(nullptr);
+        static info::CPlayerpc_WhisperBlock2033_ptr CPlayerpc_WhisperBlock2033_next(nullptr);
+        static info::CPlayerpc_WhisperBlock2033_clbk CPlayerpc_WhisperBlock2033_user(nullptr);
+        static info::CPlayerskill_process2035_ptr CPlayerskill_process2035_next(nullptr);
+        static info::CPlayerskill_process2035_clbk CPlayerskill_process2035_user(nullptr);
+        static info::CPlayerskill_process_for_aura2037_ptr CPlayerskill_process_for_aura2037_next(nullptr);
+        static info::CPlayerskill_process_for_aura2037_clbk CPlayerskill_process_for_aura2037_user(nullptr);
+        static info::CPlayerskill_process_for_item2039_ptr CPlayerskill_process_for_item2039_next(nullptr);
+        static info::CPlayerskill_process_for_item2039_clbk CPlayerskill_process_for_item2039_user(nullptr);
+        static info::CPlayerdtor_CPlayer2041_ptr CPlayerdtor_CPlayer2041_next(nullptr);
+        static info::CPlayerdtor_CPlayer2041_clbk CPlayerdtor_CPlayer2041_user(nullptr);
         
-        info::CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_ptr CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_next(nullptr);
-        info::CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_clbk CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_user(nullptr);
+        static info::CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_ptr CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_next(nullptr);
+        static info::CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_clbk CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_user(nullptr);
         
-        info::CPlayer____targetctor___target2_ptr CPlayer____targetctor___target2_next(nullptr);
-        info::CPlayer____targetctor___target2_clbk CPlayer____targetctor___target2_user(nullptr);
-        info::CPlayer____targetinit4_ptr CPlayer____targetinit4_next(nullptr);
-        info::CPlayer____targetinit4_clbk CPlayer____targetinit4_user(nullptr);
+        static info::CPlayer____targetctor___target2_ptr CPlayer____targetctor___target2_next(nullptr);
+        static info::CPlayer____targetctor___target2_clbk CPlayer____targetctor___target2_user(nullptr);
+        static info::CPlayer____targetinit4_ptr CPlayer____targetinit4_next(nullptr);
+        static info::CPlayer____targetinit4_clbk CPlayer____targetinit4_user(nullptr);
         
-        void CPlayerAddDalant2_wrapper(struct CPlayer* _this, unsigned int dwPush, bool bApply)
+        static void CPlayerAddDalant2_wrapper(struct CPlayer* _this, unsigned int dwPush, bool bApply)
         {
            CPlayerAddDalant2_user(_this, dwPush, bApply, CPlayerAddDalant2_next);
         };
-        void CPlayerAddGold4_wrapper(struct CPlayer* _this, unsigned int dwPush, bool bApply)
+        static void CPlayerAddGold4_wrapper(struct CPlayer* _this, unsigned int dwPush, bool bApply)
         {
            CPlayerAddGold4_user(_this, dwPush, bApply, CPlayerAddGold4_next);
         };
-        void CPlayerAlterDalant6_wrapper(struct CPlayer* _this, long double dDalant)
+        static void CPlayerAlterDalant6_wrapper(struct CPlayer* _this, long double dDalant)
         {
            CPlayerAlterDalant6_user(_this, dDalant, CPlayerAlterDalant6_next);
         };
-        void CPlayerAlterExp8_wrapper(struct CPlayer* _this, long double dAlterExp, bool bReward, bool bUseExpRecoverItem, bool bUseExpAdditionItem)
+        static void CPlayerAlterExp8_wrapper(struct CPlayer* _this, long double dAlterExp, bool bReward, bool bUseExpRecoverItem, bool bUseExpAdditionItem)
         {
            CPlayerAlterExp8_user(_this, dAlterExp, bReward, bUseExpRecoverItem, bUseExpAdditionItem, CPlayerAlterExp8_next);
         };
-        void CPlayerAlterExp_Animus10_wrapper(struct CPlayer* _this, int64_t nAlterExp)
+        static void CPlayerAlterExp_Animus10_wrapper(struct CPlayer* _this, int64_t nAlterExp)
         {
            CPlayerAlterExp_Animus10_user(_this, nAlterExp, CPlayerAlterExp_Animus10_next);
         };
-        void CPlayerAlterExp_Potion12_wrapper(struct CPlayer* _this, long double dAlterExp)
+        static void CPlayerAlterExp_Potion12_wrapper(struct CPlayer* _this, long double dAlterExp)
         {
            CPlayerAlterExp_Potion12_user(_this, dAlterExp, CPlayerAlterExp_Potion12_next);
         };
-        void CPlayerAlterFP_Animus14_wrapper(struct CPlayer* _this, int nNewFP)
+        static void CPlayerAlterFP_Animus14_wrapper(struct CPlayer* _this, int nNewFP)
         {
            CPlayerAlterFP_Animus14_user(_this, nNewFP, CPlayerAlterFP_Animus14_next);
         };
-        void CPlayerAlterGold16_wrapper(struct CPlayer* _this, long double dGold)
+        static void CPlayerAlterGold16_wrapper(struct CPlayer* _this, long double dGold)
         {
            CPlayerAlterGold16_user(_this, dGold, CPlayerAlterGold16_next);
         };
-        void CPlayerAlterHP_Animus18_wrapper(struct CPlayer* _this, int nNewHP)
+        static void CPlayerAlterHP_Animus18_wrapper(struct CPlayer* _this, int nNewHP)
         {
            CPlayerAlterHP_Animus18_user(_this, nNewHP, CPlayerAlterHP_Animus18_next);
         };
-        void CPlayerAlterMaxLevel20_wrapper(struct CPlayer* _this, char byMaxLevel)
+        static void CPlayerAlterMaxLevel20_wrapper(struct CPlayer* _this, char byMaxLevel)
         {
            CPlayerAlterMaxLevel20_user(_this, byMaxLevel, CPlayerAlterMaxLevel20_next);
         };
-        void CPlayerAlterMode_Animus22_wrapper(struct CPlayer* _this, char byMode)
+        static void CPlayerAlterMode_Animus22_wrapper(struct CPlayer* _this, char byMode)
         {
            CPlayerAlterMode_Animus22_user(_this, byMode, CPlayerAlterMode_Animus22_next);
         };
-        void CPlayerAlterPvPCashBag24_wrapper(struct CPlayer* _this, long double dAlter, PVP_MONEY_ALTER_TYPE IOCode)
+        static void CPlayerAlterPvPCashBag24_wrapper(struct CPlayer* _this, long double dAlter, PVP_MONEY_ALTER_TYPE IOCode)
         {
            CPlayerAlterPvPCashBag24_user(_this, dAlter, IOCode, CPlayerAlterPvPCashBag24_next);
         };
-        void CPlayerAlterPvPPoint26_wrapper(struct CPlayer* _this, long double dAlter, PVP_ALTER_TYPE AlterType, unsigned int dwDstSerial)
+        static void CPlayerAlterPvPPoint26_wrapper(struct CPlayer* _this, long double dAlter, PVP_ALTER_TYPE AlterType, unsigned int dwDstSerial)
         {
            CPlayerAlterPvPPoint26_user(_this, dAlter, AlterType, dwDstSerial, CPlayerAlterPvPPoint26_next);
         };
-        void CPlayerAlterPvpPointLeak28_wrapper(struct CPlayer* _this, long double dAlter)
+        static void CPlayerAlterPvpPointLeak28_wrapper(struct CPlayer* _this, long double dAlter)
         {
            CPlayerAlterPvpPointLeak28_user(_this, dAlter, CPlayerAlterPvpPointLeak28_next);
         };
-        void CPlayerAlterSec30_wrapper(struct CPlayer* _this)
+        static void CPlayerAlterSec30_wrapper(struct CPlayer* _this)
         {
            CPlayerAlterSec30_user(_this, CPlayerAlterSec30_next);
         };
-        bool CPlayerApplyEquipItemEffect32_wrapper(struct CPlayer* _this, int iItemEffectCode, bool bEquip)
+        static bool CPlayerApplyEquipItemEffect32_wrapper(struct CPlayer* _this, int iItemEffectCode, bool bEquip)
         {
            return CPlayerApplyEquipItemEffect32_user(_this, iItemEffectCode, bEquip, CPlayerApplyEquipItemEffect32_next);
         };
-        void CPlayerApplySetItemEffect34_wrapper(struct CPlayer* _this, struct si_interpret* pSI, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum, bool bSetEffect)
+        static void CPlayerApplySetItemEffect34_wrapper(struct CPlayer* _this, struct si_interpret* pSI, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum, bool bSetEffect)
         {
            CPlayerApplySetItemEffect34_user(_this, pSI, dwSetItem, bySetItemNum, bySetEffectNum, bSetEffect, CPlayerApplySetItemEffect34_next);
         };
-        int CPlayerAttackableHeight36_wrapper(struct CPlayer* _this)
+        static int CPlayerAttackableHeight36_wrapper(struct CPlayer* _this)
         {
            return CPlayerAttackableHeight36_user(_this, CPlayerAttackableHeight36_next);
         };
-        void CPlayerAutoCharge_Booster38_wrapper(struct CPlayer* _this)
+        static void CPlayerAutoCharge_Booster38_wrapper(struct CPlayer* _this)
         {
            CPlayerAutoCharge_Booster38_user(_this, CPlayerAutoCharge_Booster38_next);
         };
-        void CPlayerAutoRecover40_wrapper(struct CPlayer* _this)
+        static void CPlayerAutoRecover40_wrapper(struct CPlayer* _this)
         {
            CPlayerAutoRecover40_user(_this, CPlayerAutoRecover40_next);
         };
-        void CPlayerAutoRecover_Animus42_wrapper(struct CPlayer* _this)
+        static void CPlayerAutoRecover_Animus42_wrapper(struct CPlayer* _this)
         {
            CPlayerAutoRecover_Animus42_user(_this, CPlayerAutoRecover_Animus42_next);
         };
-        void CPlayerBilling_Logout44_wrapper(struct CPlayer* _this)
+        static void CPlayerBilling_Logout44_wrapper(struct CPlayer* _this)
         {
            CPlayerBilling_Logout44_user(_this, CPlayerBilling_Logout44_next);
         };
-        void CPlayerBreakCloakBooster46_wrapper(struct CPlayer* _this)
+        static void CPlayerBreakCloakBooster46_wrapper(struct CPlayer* _this)
         {
            CPlayerBreakCloakBooster46_user(_this, CPlayerBreakCloakBooster46_next);
         };
-        void CPlayerctor_CPlayer48_wrapper(struct CPlayer* _this)
+        static void CPlayerctor_CPlayer48_wrapper(struct CPlayer* _this)
         {
            CPlayerctor_CPlayer48_user(_this, CPlayerctor_CPlayer48_next);
         };
-        long double CPlayerCalPvpCashPoint50_wrapper(struct CPlayer* _this, int nDstLv, int nSrcLv, char* pSrcClass)
+        static long double CPlayerCalPvpCashPoint50_wrapper(struct CPlayer* _this, int nDstLv, int nSrcLv, char* pSrcClass)
         {
            return CPlayerCalPvpCashPoint50_user(_this, nDstLv, nSrcLv, pSrcClass, CPlayerCalPvpCashPoint50_next);
         };
-        void CPlayerCalPvpTempCash52_wrapper(struct CPlayer* _this, struct CPlayer* pDier, char byKillerObjID)
+        static void CPlayerCalPvpTempCash52_wrapper(struct CPlayer* _this, struct CPlayer* pDier, char byKillerObjID)
         {
            CPlayerCalPvpTempCash52_user(_this, pDier, byKillerObjID, CPlayerCalPvpTempCash52_next);
         };
-        void CPlayerCalcAddPointByClass54_wrapper(struct CPlayer* _this)
+        static void CPlayerCalcAddPointByClass54_wrapper(struct CPlayer* _this)
         {
            CPlayerCalcAddPointByClass54_user(_this, CPlayerCalcAddPointByClass54_next);
         };
-        uint16_t CPlayerCalcCurFPRate56_wrapper(struct CPlayer* _this)
+        static uint16_t CPlayerCalcCurFPRate56_wrapper(struct CPlayer* _this)
         {
            return CPlayerCalcCurFPRate56_user(_this, CPlayerCalcCurFPRate56_next);
         };
-        uint16_t CPlayerCalcCurHPRate58_wrapper(struct CPlayer* _this)
+        static uint16_t CPlayerCalcCurHPRate58_wrapper(struct CPlayer* _this)
         {
            return CPlayerCalcCurHPRate58_user(_this, CPlayerCalcCurHPRate58_next);
         };
-        uint16_t CPlayerCalcCurSPRate60_wrapper(struct CPlayer* _this)
+        static uint16_t CPlayerCalcCurSPRate60_wrapper(struct CPlayer* _this)
         {
            return CPlayerCalcCurSPRate60_user(_this, CPlayerCalcCurSPRate60_next);
         };
-        float CPlayerCalcDPRate62_wrapper(struct CPlayer* _this)
+        static float CPlayerCalcDPRate62_wrapper(struct CPlayer* _this)
         {
            return CPlayerCalcDPRate62_user(_this, CPlayerCalcDPRate62_next);
         };
-        void CPlayerCalcDefTol64_wrapper(struct CPlayer* _this)
+        static void CPlayerCalcDefTol64_wrapper(struct CPlayer* _this)
         {
            CPlayerCalcDefTol64_user(_this, CPlayerCalcDefTol64_next);
         };
-        int CPlayerCalcEquipAttackDelay66_wrapper(struct CPlayer* _this)
+        static int CPlayerCalcEquipAttackDelay66_wrapper(struct CPlayer* _this)
         {
            return CPlayerCalcEquipAttackDelay66_user(_this, CPlayerCalcEquipAttackDelay66_next);
         };
-        void CPlayerCalcEquipMaxDP68_wrapper(struct CPlayer* _this, bool bInit)
+        static void CPlayerCalcEquipMaxDP68_wrapper(struct CPlayer* _this, bool bInit)
         {
            CPlayerCalcEquipMaxDP68_user(_this, bInit, CPlayerCalcEquipMaxDP68_next);
         };
-        void CPlayerCalcEquipSpeed70_wrapper(struct CPlayer* _this)
+        static void CPlayerCalcEquipSpeed70_wrapper(struct CPlayer* _this)
         {
            CPlayerCalcEquipSpeed70_user(_this, CPlayerCalcEquipSpeed70_next);
         };
-        void CPlayerCalcExp72_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nDam, struct CPartyModeKillMonsterExpNotify* kPartyExpNotify)
+        static void CPlayerCalcExp72_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nDam, struct CPartyModeKillMonsterExpNotify* kPartyExpNotify)
         {
            CPlayerCalcExp72_user(_this, pDst, nDam, kPartyExpNotify, CPlayerCalcExp72_next);
         };
-        void CPlayerCalcPvP74_wrapper(struct CPlayer* _this, struct CPlayer* pDier, char byKillerObjID)
+        static void CPlayerCalcPvP74_wrapper(struct CPlayer* _this, struct CPlayer* pDier, char byKillerObjID)
         {
            CPlayerCalcPvP74_user(_this, pDier, byKillerObjID, CPlayerCalcPvP74_next);
         };
-        void CPlayerCheckAlterMaxPoint76_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckAlterMaxPoint76_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckAlterMaxPoint76_user(_this, CPlayerCheckAlterMaxPoint76_next);
         };
-        void CPlayerCheckBattleMode78_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckBattleMode78_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckBattleMode78_user(_this, CPlayerCheckBattleMode78_next);
         };
-        void CPlayerCheckGroupMapPoint80_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckGroupMapPoint80_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckGroupMapPoint80_user(_this, CPlayerCheckGroupMapPoint80_next);
         };
-        void CPlayerCheckGroupTargeting82_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckGroupTargeting82_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckGroupTargeting82_user(_this, CPlayerCheckGroupTargeting82_next);
         };
-        void CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_wrapper(struct CPlayer* _this, char* strItemCode)
+        static void CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_wrapper(struct CPlayer* _this, char* strItemCode)
         {
            CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_user(_this, strItemCode, CPlayerCheckMentalTakeAndUpdateLastMetalTicket84_next);
         };
-        void CPlayerCheckNameChange86_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckNameChange86_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckNameChange86_user(_this, CPlayerCheckNameChange86_next);
         };
-        void CPlayerCheckPosInTown88_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckPosInTown88_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckPosInTown88_user(_this, CPlayerCheckPosInTown88_next);
         };
-        void CPlayerCheckPos_Region90_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckPos_Region90_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckPos_Region90_user(_this, CPlayerCheckPos_Region90_next);
         };
-        void CPlayerCheckUnitCutTime92_wrapper(struct CPlayer* _this)
+        static void CPlayerCheckUnitCutTime92_wrapper(struct CPlayer* _this)
         {
            CPlayerCheckUnitCutTime92_user(_this, CPlayerCheckUnitCutTime92_next);
         };
-        void CPlayerCheet_BufEffectEnd94_wrapper(struct CPlayer* _this)
+        static void CPlayerCheet_BufEffectEnd94_wrapper(struct CPlayer* _this)
         {
            CPlayerCheet_BufEffectEnd94_user(_this, CPlayerCheet_BufEffectEnd94_next);
         };
-        void CPlayerClearGravityStone96_wrapper(struct CPlayer* _this)
+        static void CPlayerClearGravityStone96_wrapper(struct CPlayer* _this)
         {
            CPlayerClearGravityStone96_user(_this, CPlayerClearGravityStone96_next);
         };
-        bool CPlayerCorpse98_wrapper(struct CPlayer* _this, struct CCharacter* pAtter)
+        static bool CPlayerCorpse98_wrapper(struct CPlayer* _this, struct CCharacter* pAtter)
         {
            return CPlayerCorpse98_user(_this, pAtter, CPlayerCorpse98_next);
         };
-        bool CPlayerCreate100_wrapper(struct CPlayer* _this)
+        static bool CPlayerCreate100_wrapper(struct CPlayer* _this)
         {
            return CPlayerCreate100_user(_this, CPlayerCreate100_next);
         };
-        void CPlayerCreateComplete102_wrapper(struct CPlayer* _this)
+        static void CPlayerCreateComplete102_wrapper(struct CPlayer* _this)
         {
            CPlayerCreateComplete102_user(_this, CPlayerCreateComplete102_next);
         };
-        void CPlayerDTradeInit104_wrapper(struct CPlayer* _this)
+        static void CPlayerDTradeInit104_wrapper(struct CPlayer* _this)
         {
            CPlayerDTradeInit104_user(_this, CPlayerDTradeInit104_next);
         };
-        bool CPlayerDecHalfSFContDam106_wrapper(struct CPlayer* _this, float fEffVal)
+        static bool CPlayerDecHalfSFContDam106_wrapper(struct CPlayer* _this, float fEffVal)
         {
            return CPlayerDecHalfSFContDam106_user(_this, fEffVal, CPlayerDecHalfSFContDam106_next);
         };
-        void CPlayerDelPostData108_wrapper(struct CPlayer* _this, unsigned int dwIndex)
+        static void CPlayerDelPostData108_wrapper(struct CPlayer* _this, unsigned int dwIndex)
         {
            CPlayerDelPostData108_user(_this, dwIndex, CPlayerDelPostData108_next);
         };
-        void CPlayerDeleteCouponItem110_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* CouponItem, int n)
+        static void CPlayerDeleteCouponItem110_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* CouponItem, int n)
         {
            CPlayerDeleteCouponItem110_user(_this, CouponItem, n, CPlayerDeleteCouponItem110_next);
         };
-        bool CPlayerDeleteUseConsumeItem112_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con** ppConsumeItems, int* pnConsume, bool* pbOverLap)
+        static bool CPlayerDeleteUseConsumeItem112_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con** ppConsumeItems, int* pnConsume, bool* pbOverLap)
         {
            return CPlayerDeleteUseConsumeItem112_user(_this, ppConsumeItems, pnConsume, pbOverLap, CPlayerDeleteUseConsumeItem112_next);
         };
-        struct _STORAGE_LIST::_db_con* CPlayerEmb_AddStorage114_wrapper(struct CPlayer* _this, char byStorageCode, struct _STORAGE_LIST::_storage_con* pCon, bool bEquipChange, bool bAdd)
+        static struct _STORAGE_LIST::_db_con* CPlayerEmb_AddStorage114_wrapper(struct CPlayer* _this, char byStorageCode, struct _STORAGE_LIST::_storage_con* pCon, bool bEquipChange, bool bAdd)
         {
            return CPlayerEmb_AddStorage114_user(_this, byStorageCode, pCon, bEquipChange, bAdd, CPlayerEmb_AddStorage114_next);
         };
-        unsigned int CPlayerEmb_AlterDurPoint116_wrapper(struct CPlayer* _this, char byStorageCode, char byStorageIndex, int nAlter, bool bUpdate, bool bSend)
+        static unsigned int CPlayerEmb_AlterDurPoint116_wrapper(struct CPlayer* _this, char byStorageCode, char byStorageIndex, int nAlter, bool bUpdate, bool bSend)
         {
            return CPlayerEmb_AlterDurPoint116_user(_this, byStorageCode, byStorageIndex, nAlter, bUpdate, bSend, CPlayerEmb_AlterDurPoint116_next);
         };
-        void CPlayerEmb_AlterStat118_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex, unsigned int dwAlter, char byReason, char* strErrorCodePos, bool bPcbangPrimiumFavorReward)
+        static void CPlayerEmb_AlterStat118_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex, unsigned int dwAlter, char byReason, char* strErrorCodePos, bool bPcbangPrimiumFavorReward)
         {
            CPlayerEmb_AlterStat118_user(_this, byMasteryClass, byIndex, dwAlter, byReason, strErrorCodePos, bPcbangPrimiumFavorReward, CPlayerEmb_AlterStat118_next);
         };
-        void CPlayerEmb_AlterStat_F120_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex, float fAlter, char byReason)
+        static void CPlayerEmb_AlterStat_F120_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex, float fAlter, char byReason)
         {
            CPlayerEmb_AlterStat_F120_user(_this, byMasteryClass, byIndex, fAlter, byReason, CPlayerEmb_AlterStat_F120_next);
         };
-        bool CPlayerEmb_CheckActForQuest122_wrapper(struct CPlayer* _this, int nActCode, char* pszReqCode, uint16_t wAddCount, bool bParty)
+        static bool CPlayerEmb_CheckActForQuest122_wrapper(struct CPlayer* _this, int nActCode, char* pszReqCode, uint16_t wAddCount, bool bParty)
         {
            return CPlayerEmb_CheckActForQuest122_user(_this, nActCode, pszReqCode, wAddCount, bParty, CPlayerEmb_CheckActForQuest122_next);
         };
-        void CPlayerEmb_CheckActForQuestParty124_wrapper(struct CPlayer* _this, int nActCode, char* pszReqCode, uint16_t wAddCount)
+        static void CPlayerEmb_CheckActForQuestParty124_wrapper(struct CPlayer* _this, int nActCode, char* pszReqCode, uint16_t wAddCount)
         {
            CPlayerEmb_CheckActForQuestParty124_user(_this, nActCode, pszReqCode, wAddCount, CPlayerEmb_CheckActForQuestParty124_next);
         };
-        void CPlayerEmb_CompleteQuest126_wrapper(struct CPlayer* _this, char byQuestDBSlot, char byRewardItemIndex, char byLinkQuestIndex)
+        static void CPlayerEmb_CompleteQuest126_wrapper(struct CPlayer* _this, char byQuestDBSlot, char byRewardItemIndex, char byLinkQuestIndex)
         {
            CPlayerEmb_CompleteQuest126_user(_this, byQuestDBSlot, byRewardItemIndex, byLinkQuestIndex, CPlayerEmb_CompleteQuest126_next);
         };
-        bool CPlayerEmb_CreateNPCQuest128_wrapper(struct CPlayer* _this, char* pszEventCode, unsigned int dwNPCQuestIndex)
+        static bool CPlayerEmb_CreateNPCQuest128_wrapper(struct CPlayer* _this, char* pszEventCode, unsigned int dwNPCQuestIndex)
         {
            return CPlayerEmb_CreateNPCQuest128_user(_this, pszEventCode, dwNPCQuestIndex, CPlayerEmb_CreateNPCQuest128_next);
         };
-        bool CPlayerEmb_CreateQuestEvent130_wrapper(struct CPlayer* _this, QUEST_HAPPEN HappenType, char* pszEventCode)
+        static bool CPlayerEmb_CreateQuestEvent130_wrapper(struct CPlayer* _this, QUEST_HAPPEN HappenType, char* pszEventCode)
         {
            return CPlayerEmb_CreateQuestEvent130_user(_this, HappenType, pszEventCode, CPlayerEmb_CreateQuestEvent130_next);
         };
-        bool CPlayerEmb_DelStorage132_wrapper(struct CPlayer* _this, char byStorageCode, char byStorageIndex, bool bEquipChange, bool bDelete, char* strErrorCodePos)
+        static bool CPlayerEmb_DelStorage132_wrapper(struct CPlayer* _this, char byStorageCode, char byStorageIndex, bool bEquipChange, bool bDelete, char* strErrorCodePos)
         {
            return CPlayerEmb_DelStorage132_user(_this, byStorageCode, byStorageIndex, bEquipChange, bDelete, strErrorCodePos, CPlayerEmb_DelStorage132_next);
         };
-        void CPlayerEmb_EquipLink134_wrapper(struct CPlayer* _this)
+        static void CPlayerEmb_EquipLink134_wrapper(struct CPlayer* _this)
         {
            CPlayerEmb_EquipLink134_user(_this, CPlayerEmb_EquipLink134_next);
         };
-        void CPlayerEmb_ItemUpgrade136_wrapper(struct CPlayer* _this, char byUpgradeType, char byStorageCode, char byStorageIndex, unsigned int dwGradeInfo)
+        static void CPlayerEmb_ItemUpgrade136_wrapper(struct CPlayer* _this, char byUpgradeType, char byStorageCode, char byStorageIndex, unsigned int dwGradeInfo)
         {
            CPlayerEmb_ItemUpgrade136_user(_this, byUpgradeType, byStorageCode, byStorageIndex, dwGradeInfo, CPlayerEmb_ItemUpgrade136_next);
         };
-        void CPlayerEmb_RidindUnit138_wrapper(struct CPlayer* _this, bool bRiding, struct CParkingUnit* pCreateUnit)
+        static void CPlayerEmb_RidindUnit138_wrapper(struct CPlayer* _this, bool bRiding, struct CParkingUnit* pCreateUnit)
         {
            CPlayerEmb_RidindUnit138_user(_this, bRiding, pCreateUnit, CPlayerEmb_RidindUnit138_next);
         };
-        bool CPlayerEmb_StartQuest140_wrapper(struct CPlayer* _this, char bySelectQuest, struct _happen_event_cont* pHappenEvent)
+        static bool CPlayerEmb_StartQuest140_wrapper(struct CPlayer* _this, char bySelectQuest, struct _happen_event_cont* pHappenEvent)
         {
            return CPlayerEmb_StartQuest140_user(_this, bySelectQuest, pHappenEvent, CPlayerEmb_StartQuest140_next);
         };
-        int CPlayerEmb_UpdateStat142_wrapper(struct CPlayer* _this, unsigned int dwStatIndex, unsigned int dwNewData, unsigned int dwOldData)
+        static int CPlayerEmb_UpdateStat142_wrapper(struct CPlayer* _this, unsigned int dwStatIndex, unsigned int dwNewData, unsigned int dwOldData)
         {
            return CPlayerEmb_UpdateStat142_user(_this, dwStatIndex, dwNewData, dwOldData, CPlayerEmb_UpdateStat142_next);
         };
-        void CPlayerExitUpdateDataToWorld144_wrapper(struct CPlayer* _this)
+        static void CPlayerExitUpdateDataToWorld144_wrapper(struct CPlayer* _this)
         {
            CPlayerExitUpdateDataToWorld144_user(_this, CPlayerExitUpdateDataToWorld144_next);
         };
-        void CPlayerExtractStringToTime146_wrapper(struct CPlayer* _this, unsigned int dwTemp, struct _SYSTEMTIME* tm)
+        static void CPlayerExtractStringToTime146_wrapper(struct CPlayer* _this, unsigned int dwTemp, struct _SYSTEMTIME* tm)
         {
            CPlayerExtractStringToTime146_user(_this, dwTemp, tm, CPlayerExtractStringToTime146_next);
         };
-        struct CPlayer* CPlayerFindFarChatPlayerWithTemp148_wrapper(struct CPlayer* _this, char* pwszName)
+        static struct CPlayer* CPlayerFindFarChatPlayerWithTemp148_wrapper(struct CPlayer* _this, char* pwszName)
         {
            return CPlayerFindFarChatPlayerWithTemp148_user(_this, pwszName, CPlayerFindFarChatPlayerWithTemp148_next);
         };
-        bool CPlayerFixTargetWhile150_wrapper(struct CPlayer* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
+        static bool CPlayerFixTargetWhile150_wrapper(struct CPlayer* _this, struct CCharacter* pkTarget, unsigned int dwMiliSecond)
         {
            return CPlayerFixTargetWhile150_user(_this, pkTarget, dwMiliSecond, CPlayerFixTargetWhile150_next);
         };
-        void CPlayerForcePullUnit152_wrapper(struct CPlayer* _this, bool bLogout)
+        static void CPlayerForcePullUnit152_wrapper(struct CPlayer* _this, bool bLogout)
         {
            CPlayerForcePullUnit152_user(_this, bLogout, CPlayerForcePullUnit152_next);
         };
-        float CPlayerGetAddSpeed154_wrapper(struct CPlayer* _this)
+        static float CPlayerGetAddSpeed154_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAddSpeed154_user(_this, CPlayerGetAddSpeed154_next);
         };
-        struct _sf_continous* CPlayerGetAfterEffect156_wrapper(struct CPlayer* _this)
+        static struct _sf_continous* CPlayerGetAfterEffect156_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAfterEffect156_user(_this, CPlayerGetAfterEffect156_next);
         };
-        int CPlayerGetAttackDP158_wrapper(struct CPlayer* _this)
+        static int CPlayerGetAttackDP158_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAttackDP158_user(_this, CPlayerGetAttackDP158_next);
         };
-        int CPlayerGetAttackLevel160_wrapper(struct CPlayer* _this)
+        static int CPlayerGetAttackLevel160_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAttackLevel160_user(_this, CPlayerGetAttackLevel160_next);
         };
-        float CPlayerGetAttackRange162_wrapper(struct CPlayer* _this)
+        static float CPlayerGetAttackRange162_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAttackRange162_user(_this, CPlayerGetAttackRange162_next);
         };
-        int CPlayerGetAvoidRate164_wrapper(struct CPlayer* _this)
+        static int CPlayerGetAvoidRate164_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetAvoidRate164_user(_this, CPlayerGetAvoidRate164_next);
         };
-        int CPlayerGetBillingType166_wrapper(struct CPlayer* _this)
+        static int CPlayerGetBillingType166_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetBillingType166_user(_this, CPlayerGetBillingType166_next);
         };
-        struct _dummy_position* CPlayerGetBindDummy168_wrapper(struct CPlayer* _this)
+        static struct _dummy_position* CPlayerGetBindDummy168_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetBindDummy168_user(_this, CPlayerGetBindDummy168_next);
         };
-        struct CMapData* CPlayerGetBindMap170_wrapper(struct CPlayer* _this, float* pfPos, bool bIgnoreMapClass)
+        static struct CMapData* CPlayerGetBindMap170_wrapper(struct CPlayer* _this, float* pfPos, bool bIgnoreMapClass)
         {
            return CPlayerGetBindMap170_user(_this, pfPos, bIgnoreMapClass, CPlayerGetBindMap170_next);
         };
-        struct CMapData* CPlayerGetBindMapData172_wrapper(struct CPlayer* _this)
+        static struct CMapData* CPlayerGetBindMapData172_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetBindMapData172_user(_this, CPlayerGetBindMapData172_next);
         };
-        int CPlayerGetCashAmount174_wrapper(struct CPlayer* _this)
+        static int CPlayerGetCashAmount174_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetCashAmount174_user(_this, CPlayerGetCashAmount174_next);
         };
-        int CPlayerGetDP176_wrapper(struct CPlayer* _this)
+        static int CPlayerGetDP176_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetDP176_user(_this, CPlayerGetDP176_next);
         };
-        int CPlayerGetDamageDP178_wrapper(struct CPlayer* _this, int nAttackPart)
+        static int CPlayerGetDamageDP178_wrapper(struct CPlayer* _this, int nAttackPart)
         {
            return CPlayerGetDamageDP178_user(_this, nAttackPart, CPlayerGetDamageDP178_next);
         };
-        int CPlayerGetDamageLevel180_wrapper(struct CPlayer* _this, int nAttackPart)
+        static int CPlayerGetDamageLevel180_wrapper(struct CPlayer* _this, int nAttackPart)
         {
            return CPlayerGetDamageLevel180_user(_this, nAttackPart, CPlayerGetDamageLevel180_next);
         };
-        int CPlayerGetDefFC182_wrapper(struct CPlayer* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
+        static int CPlayerGetDefFC182_wrapper(struct CPlayer* _this, int nAttactPart, struct CCharacter* pAttChar, int* pnConvertPart)
         {
            return CPlayerGetDefFC182_user(_this, nAttactPart, pAttChar, pnConvertPart, CPlayerGetDefFC182_next);
         };
-        float CPlayerGetDefFacing184_wrapper(struct CPlayer* _this, int nPart)
+        static float CPlayerGetDefFacing184_wrapper(struct CPlayer* _this, int nPart)
         {
            return CPlayerGetDefFacing184_user(_this, nPart, CPlayerGetDefFacing184_next);
         };
-        float CPlayerGetDefGap186_wrapper(struct CPlayer* _this, int nPart)
+        static float CPlayerGetDefGap186_wrapper(struct CPlayer* _this, int nPart)
         {
            return CPlayerGetDefGap186_user(_this, nPart, CPlayerGetDefGap186_next);
         };
-        int CPlayerGetDefSkill188_wrapper(struct CPlayer* _this, bool bBackAttackDamage)
+        static int CPlayerGetDefSkill188_wrapper(struct CPlayer* _this, bool bBackAttackDamage)
         {
            return CPlayerGetDefSkill188_user(_this, bBackAttackDamage, CPlayerGetDefSkill188_next);
         };
-        char CPlayerGetEffectEquipCode190_wrapper(struct CPlayer* _this, char byStorageCode, char bySlotIndex)
+        static char CPlayerGetEffectEquipCode190_wrapper(struct CPlayer* _this, char byStorageCode, char bySlotIndex)
         {
            return CPlayerGetEffectEquipCode190_user(_this, byStorageCode, bySlotIndex, CPlayerGetEffectEquipCode190_next);
         };
-        int CPlayerGetFP192_wrapper(struct CPlayer* _this)
+        static int CPlayerGetFP192_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetFP192_user(_this, CPlayerGetFP192_next);
         };
-        int CPlayerGetFireTol194_wrapper(struct CPlayer* _this)
+        static int CPlayerGetFireTol194_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetFireTol194_user(_this, CPlayerGetFireTol194_next);
         };
-        int CPlayerGetGauge196_wrapper(struct CPlayer* _this, int nParamCode)
+        static int CPlayerGetGauge196_wrapper(struct CPlayer* _this, int nParamCode)
         {
            return CPlayerGetGauge196_user(_this, nParamCode, CPlayerGetGauge196_next);
         };
-        int CPlayerGetGenAttackProb198_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
+        static int CPlayerGetGenAttackProb198_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nPart, bool bBackAttack)
         {
            return CPlayerGetGenAttackProb198_user(_this, pDst, nPart, bBackAttack, CPlayerGetGenAttackProb198_next);
         };
-        struct CPlayer::__target* CPlayerGetGroupTarget200_wrapper(struct CPlayer* _this, char byGroupType)
+        static struct CPlayer::__target* CPlayerGetGroupTarget200_wrapper(struct CPlayer* _this, char byGroupType)
         {
            return CPlayerGetGroupTarget200_user(_this, byGroupType, CPlayerGetGroupTarget200_next);
         };
-        int CPlayerGetHP202_wrapper(struct CPlayer* _this)
+        static int CPlayerGetHP202_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetHP202_user(_this, CPlayerGetHP202_next);
         };
-        unsigned int CPlayerGetInitClassCost204_wrapper(struct CPlayer* _this)
+        static unsigned int CPlayerGetInitClassCost204_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetInitClassCost204_user(_this, CPlayerGetInitClassCost204_next);
         };
-        int CPlayerGetLevel206_wrapper(struct CPlayer* _this)
+        static int CPlayerGetLevel206_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetLevel206_user(_this, CPlayerGetLevel206_next);
         };
-        int CPlayerGetMasteryCumAfterAttack208_wrapper(struct CPlayer* _this, int nDstLv)
+        static int CPlayerGetMasteryCumAfterAttack208_wrapper(struct CPlayer* _this, int nDstLv)
         {
            return CPlayerGetMasteryCumAfterAttack208_user(_this, nDstLv, CPlayerGetMasteryCumAfterAttack208_next);
         };
-        int CPlayerGetMaxDP210_wrapper(struct CPlayer* _this)
+        static int CPlayerGetMaxDP210_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetMaxDP210_user(_this, CPlayerGetMaxDP210_next);
         };
-        int CPlayerGetMaxFP212_wrapper(struct CPlayer* _this)
+        static int CPlayerGetMaxFP212_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetMaxFP212_user(_this, CPlayerGetMaxFP212_next);
         };
-        int CPlayerGetMaxHP214_wrapper(struct CPlayer* _this)
+        static int CPlayerGetMaxHP214_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetMaxHP214_user(_this, CPlayerGetMaxHP214_next);
         };
-        int CPlayerGetMaxSP216_wrapper(struct CPlayer* _this)
+        static int CPlayerGetMaxSP216_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetMaxSP216_user(_this, CPlayerGetMaxSP216_next);
         };
-        unsigned int CPlayerGetMoney218_wrapper(struct CPlayer* _this, char byMoneyCode)
+        static unsigned int CPlayerGetMoney218_wrapper(struct CPlayer* _this, char byMoneyCode)
         {
            return CPlayerGetMoney218_user(_this, byMoneyCode, CPlayerGetMoney218_next);
         };
-        float CPlayerGetMoveSpeed220_wrapper(struct CPlayer* _this)
+        static float CPlayerGetMoveSpeed220_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetMoveSpeed220_user(_this, CPlayerGetMoveSpeed220_next);
         };
-        char* CPlayerGetObjName222_wrapper(struct CPlayer* _this)
+        static char* CPlayerGetObjName222_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetObjName222_user(_this, CPlayerGetObjName222_next);
         };
-        int CPlayerGetObjRace224_wrapper(struct CPlayer* _this)
+        static int CPlayerGetObjRace224_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetObjRace224_user(_this, CPlayerGetObjRace224_next);
         };
-        float CPlayerGetPartyExpDistributionRate226_wrapper(struct CPlayer* _this, int iPartyMemberLevel, int iMaxLevel, int i2ndLevel)
+        static float CPlayerGetPartyExpDistributionRate226_wrapper(struct CPlayer* _this, int iPartyMemberLevel, int iMaxLevel, int i2ndLevel)
         {
            return CPlayerGetPartyExpDistributionRate226_user(_this, iPartyMemberLevel, iMaxLevel, i2ndLevel, CPlayerGetPartyExpDistributionRate226_next);
         };
-        struct CPvpOrderView* CPlayerGetPvpOrderView228_wrapper(struct CPlayer* _this)
+        static struct CPvpOrderView* CPlayerGetPvpOrderView228_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetPvpOrderView228_user(_this, CPlayerGetPvpOrderView228_next);
         };
-        long double CPlayerGetPvpPointLeak230_wrapper(struct CPlayer* _this)
+        static long double CPlayerGetPvpPointLeak230_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetPvpPointLeak230_user(_this, CPlayerGetPvpPointLeak230_next);
         };
-        struct CPvpPointLimiter* CPlayerGetPvpPointLimiter232_wrapper(struct CPlayer* _this, struct CPvpPointLimiter* result)
+        static struct CPvpPointLimiter* CPlayerGetPvpPointLimiter232_wrapper(struct CPlayer* _this, struct CPvpPointLimiter* result)
         {
            return CPlayerGetPvpPointLimiter232_user(_this, result, CPlayerGetPvpPointLimiter232_next);
         };
-        struct CAnimus* CPlayerGetRecallAnimus234_wrapper(struct CPlayer* _this)
+        static struct CAnimus* CPlayerGetRecallAnimus234_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetRecallAnimus234_user(_this, CPlayerGetRecallAnimus234_next);
         };
-        int CPlayerGetRewardItems_DarkDungeon236_wrapper(struct CPlayer* _this, struct _dh_reward_sub_setup* pSetup, struct _STORAGE_LIST::_db_con* pItems, int bRealBoss)
+        static int CPlayerGetRewardItems_DarkDungeon236_wrapper(struct CPlayer* _this, struct _dh_reward_sub_setup* pSetup, struct _STORAGE_LIST::_db_con* pItems, int bRealBoss)
         {
            return CPlayerGetRewardItems_DarkDungeon236_user(_this, pSetup, pItems, bRealBoss, CPlayerGetRewardItems_DarkDungeon236_next);
         };
-        int CPlayerGetSP238_wrapper(struct CPlayer* _this)
+        static int CPlayerGetSP238_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetSP238_user(_this, CPlayerGetSP238_next);
         };
-        int CPlayerGetSoilTol240_wrapper(struct CPlayer* _this)
+        static int CPlayerGetSoilTol240_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetSoilTol240_user(_this, CPlayerGetSoilTol240_next);
         };
-        uint64_t CPlayerGetStateFlag242_wrapper(struct CPlayer* _this)
+        static uint64_t CPlayerGetStateFlag242_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetStateFlag242_user(_this, CPlayerGetStateFlag242_next);
         };
-        struct CGameObject* CPlayerGetTargetObj244_wrapper(struct CPlayer* _this)
+        static struct CGameObject* CPlayerGetTargetObj244_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetTargetObj244_user(_this, CPlayerGetTargetObj244_next);
         };
-        bool CPlayerGetUseConsumeItem246_wrapper(struct CPlayer* _this, struct _consume_item_list* pConsumeList, uint16_t* pItemSerials, struct _STORAGE_LIST::_db_con** ppConsumeItems, int* pnConsume, bool* pbOverLap)
+        static bool CPlayerGetUseConsumeItem246_wrapper(struct CPlayer* _this, struct _consume_item_list* pConsumeList, uint16_t* pItemSerials, struct _STORAGE_LIST::_db_con** ppConsumeItems, int* pnConsume, bool* pbOverLap)
         {
            return CPlayerGetUseConsumeItem246_user(_this, pConsumeList, pItemSerials, ppConsumeItems, pnConsume, pbOverLap, CPlayerGetUseConsumeItem246_next);
         };
-        int CPlayerGetVisualVer248_wrapper(struct CPlayer* _this)
+        static int CPlayerGetVisualVer248_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetVisualVer248_user(_this, CPlayerGetVisualVer248_next);
         };
-        int CPlayerGetWaterTol250_wrapper(struct CPlayer* _this)
+        static int CPlayerGetWaterTol250_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWaterTol250_user(_this, CPlayerGetWaterTol250_next);
         };
-        float CPlayerGetWeaponAdjust252_wrapper(struct CPlayer* _this)
+        static float CPlayerGetWeaponAdjust252_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWeaponAdjust252_user(_this, CPlayerGetWeaponAdjust252_next);
         };
-        int CPlayerGetWeaponClass254_wrapper(struct CPlayer* _this)
+        static int CPlayerGetWeaponClass254_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWeaponClass254_user(_this, CPlayerGetWeaponClass254_next);
         };
-        int CPlayerGetWeaponRange256_wrapper(struct CPlayer* _this)
+        static int CPlayerGetWeaponRange256_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWeaponRange256_user(_this, CPlayerGetWeaponRange256_next);
         };
-        float CPlayerGetWidth258_wrapper(struct CPlayer* _this)
+        static float CPlayerGetWidth258_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWidth258_user(_this, CPlayerGetWidth258_next);
         };
-        int CPlayerGetWindTol260_wrapper(struct CPlayer* _this)
+        static int CPlayerGetWindTol260_wrapper(struct CPlayer* _this)
         {
            return CPlayerGetWindTol260_user(_this, CPlayerGetWindTol260_next);
         };
-        void CPlayerGuild_Buy_Emblem_Complete262_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Buy_Emblem_Complete262_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Buy_Emblem_Complete262_user(pData, CPlayerGuild_Buy_Emblem_Complete262_next);
         };
-        void CPlayerGuild_Disjoint_Complete264_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Disjoint_Complete264_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Disjoint_Complete264_user(pData, CPlayerGuild_Disjoint_Complete264_next);
         };
-        void CPlayerGuild_Force_Leave_Complete266_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Force_Leave_Complete266_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Force_Leave_Complete266_user(pData, CPlayerGuild_Force_Leave_Complete266_next);
         };
-        void CPlayerGuild_Insert_Complete268_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Insert_Complete268_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Insert_Complete268_user(pData, CPlayerGuild_Insert_Complete268_next);
         };
-        void CPlayerGuild_Join_Accept_Complete270_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Join_Accept_Complete270_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Join_Accept_Complete270_user(pData, CPlayerGuild_Join_Accept_Complete270_next);
         };
-        void CPlayerGuild_Pop_Money_Complete272_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Pop_Money_Complete272_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Pop_Money_Complete272_user(pData, CPlayerGuild_Pop_Money_Complete272_next);
         };
-        void CPlayerGuild_Push_Money_Complete274_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Push_Money_Complete274_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Push_Money_Complete274_user(pData, CPlayerGuild_Push_Money_Complete274_next);
         };
-        void CPlayerGuild_Self_Leave_Complete276_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Self_Leave_Complete276_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Self_Leave_Complete276_user(pData, CPlayerGuild_Self_Leave_Complete276_next);
         };
-        void CPlayerGuild_Update_GuildMater_Complete278_wrapper(struct _DB_QRY_SYN_DATA* pData)
+        static void CPlayerGuild_Update_GuildMater_Complete278_wrapper(struct _DB_QRY_SYN_DATA* pData)
         {
            CPlayerGuild_Update_GuildMater_Complete278_user(pData, CPlayerGuild_Update_GuildMater_Complete278_next);
         };
-        void CPlayerHSKQuestEnd_Att280_wrapper(struct CPlayer* _this, char byDestroyStoneRaceCode, struct CPlayer* pDestroyer)
+        static void CPlayerHSKQuestEnd_Att280_wrapper(struct CPlayer* _this, char byDestroyStoneRaceCode, struct CPlayer* pDestroyer)
         {
            CPlayerHSKQuestEnd_Att280_user(_this, byDestroyStoneRaceCode, pDestroyer, CPlayerHSKQuestEnd_Att280_next);
         };
-        void CPlayerHideNameEffect282_wrapper(struct CPlayer* _this, bool bAdd)
+        static void CPlayerHideNameEffect282_wrapper(struct CPlayer* _this, bool bAdd)
         {
            CPlayerHideNameEffect282_user(_this, bAdd, CPlayerHideNameEffect282_next);
         };
-        void CPlayerIncCriEffKillPoint284_wrapper(struct CPlayer* _this)
+        static void CPlayerIncCriEffKillPoint284_wrapper(struct CPlayer* _this)
         {
            CPlayerIncCriEffKillPoint284_user(_this, CPlayerIncCriEffKillPoint284_next);
         };
-        void CPlayerIncCriEffPvPCashBag286_wrapper(struct CPlayer* _this, long double dAlter)
+        static void CPlayerIncCriEffPvPCashBag286_wrapper(struct CPlayer* _this, long double dAlter)
         {
            CPlayerIncCriEffPvPCashBag286_user(_this, dAlter, CPlayerIncCriEffPvPCashBag286_next);
         };
-        void CPlayerIncPvPPoint288_wrapper(struct CPlayer* _this, long double dAlter, PVP_ALTER_TYPE AlterType, unsigned int dwDstSerial)
+        static void CPlayerIncPvPPoint288_wrapper(struct CPlayer* _this, long double dAlter, PVP_ALTER_TYPE AlterType, unsigned int dwDstSerial)
         {
            CPlayerIncPvPPoint288_user(_this, dAlter, AlterType, dwDstSerial, CPlayerIncPvPPoint288_next);
         };
-        bool CPlayerInit290_wrapper(struct CPlayer* _this, struct _object_id* pID)
+        static bool CPlayerInit290_wrapper(struct CPlayer* _this, struct _object_id* pID)
         {
            return CPlayerInit290_user(_this, pID, CPlayerInit290_next);
         };
-        bool CPlayerIntoMap292_wrapper(struct CPlayer* _this, char byMapInMode)
+        static bool CPlayerIntoMap292_wrapper(struct CPlayer* _this, char byMapInMode)
         {
            return CPlayerIntoMap292_user(_this, byMapInMode, CPlayerIntoMap292_next);
         };
-        bool CPlayerIsActingSiegeMode294_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsActingSiegeMode294_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsActingSiegeMode294_user(_this, CPlayerIsActingSiegeMode294_next);
         };
-        bool CPlayerIsApplyPcbangPrimium296_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsApplyPcbangPrimium296_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsApplyPcbangPrimium296_user(_this, CPlayerIsApplyPcbangPrimium296_next);
         };
-        bool CPlayerIsBeAttackedAble298_wrapper(struct CPlayer* _this, bool bFirst)
+        static bool CPlayerIsBeAttackedAble298_wrapper(struct CPlayer* _this, bool bFirst)
         {
            return CPlayerIsBeAttackedAble298_user(_this, bFirst, CPlayerIsBeAttackedAble298_next);
         };
-        bool CPlayerIsBeDamagedAble300_wrapper(struct CPlayer* _this, struct CCharacter* pAtter)
+        static bool CPlayerIsBeDamagedAble300_wrapper(struct CPlayer* _this, struct CCharacter* pAtter)
         {
            return CPlayerIsBeDamagedAble300_user(_this, pAtter, CPlayerIsBeDamagedAble300_next);
         };
-        struct _STORAGE_LIST::_db_con* CPlayerIsBulletValidity302_wrapper(struct CPlayer* _this, uint16_t wBulletSerial)
+        static struct _STORAGE_LIST::_db_con* CPlayerIsBulletValidity302_wrapper(struct CPlayer* _this, uint16_t wBulletSerial)
         {
            return CPlayerIsBulletValidity302_user(_this, wBulletSerial, CPlayerIsBulletValidity302_next);
         };
-        bool CPlayerIsChaosMode304_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsChaosMode304_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsChaosMode304_user(_this, CPlayerIsChaosMode304_next);
         };
-        struct _STORAGE_LIST::_db_con* CPlayerIsEffBulletValidity306_wrapper(struct CPlayer* _this, uint16_t wEffBulletSerial)
+        static struct _STORAGE_LIST::_db_con* CPlayerIsEffBulletValidity306_wrapper(struct CPlayer* _this, uint16_t wEffBulletSerial)
         {
            return CPlayerIsEffBulletValidity306_user(_this, wEffBulletSerial, CPlayerIsEffBulletValidity306_next);
         };
-        bool CPlayerIsEffectableEquip308_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_storage_con* pCon)
+        static bool CPlayerIsEffectableEquip308_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_storage_con* pCon)
         {
            return CPlayerIsEffectableEquip308_user(_this, pCon, CPlayerIsEffectableEquip308_next);
         };
-        bool CPlayerIsEquipAbleGrade310_wrapper(struct CPlayer* _this, char byGradeLv)
+        static bool CPlayerIsEquipAbleGrade310_wrapper(struct CPlayer* _this, char byGradeLv)
         {
            return CPlayerIsEquipAbleGrade310_user(_this, byGradeLv, CPlayerIsEquipAbleGrade310_next);
         };
-        bool CPlayerIsHaveMentalTicket312_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsHaveMentalTicket312_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsHaveMentalTicket312_user(_this, CPlayerIsHaveMentalTicket312_next);
         };
-        bool CPlayerIsInTown314_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsInTown314_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsInTown314_user(_this, CPlayerIsInTown314_next);
         };
-        bool CPlayerIsLastAttBuff316_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsLastAttBuff316_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsLastAttBuff316_user(_this, CPlayerIsLastAttBuff316_next);
         };
-        bool CPlayerIsMapLoading318_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsMapLoading318_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsMapLoading318_user(_this, CPlayerIsMapLoading318_next);
         };
-        bool CPlayerIsMineMode320_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsMineMode320_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsMineMode320_user(_this, CPlayerIsMineMode320_next);
         };
-        bool CPlayerIsMiningByMinigTicket322_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsMiningByMinigTicket322_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsMiningByMinigTicket322_user(_this, CPlayerIsMiningByMinigTicket322_next);
         };
-        bool CPlayerIsOutExtraStopPos324_wrapper(struct CPlayer* _this, float* pfStopPos)
+        static bool CPlayerIsOutExtraStopPos324_wrapper(struct CPlayer* _this, float* pfStopPos)
         {
            return CPlayerIsOutExtraStopPos324_user(_this, pfStopPos, CPlayerIsOutExtraStopPos324_next);
         };
-        bool CPlayerIsOverOneDay326_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsOverOneDay326_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsOverOneDay326_user(_this, CPlayerIsOverOneDay326_next);
         };
-        bool CPlayerIsPassExpLimitLvDiff328_wrapper(struct CPlayer* _this, int iDstLevel, bool* bGetAttackExp)
+        static bool CPlayerIsPassExpLimitLvDiff328_wrapper(struct CPlayer* _this, int iDstLevel, bool* bGetAttackExp)
         {
            return CPlayerIsPassExpLimitLvDiff328_user(_this, iDstLevel, bGetAttackExp, CPlayerIsPassExpLimitLvDiff328_next);
         };
-        bool CPlayerIsPassMasteryLimitLvDiff330_wrapper(struct CPlayer* _this, int iDstLevel)
+        static bool CPlayerIsPassMasteryLimitLvDiff330_wrapper(struct CPlayer* _this, int iDstLevel)
         {
            return CPlayerIsPassMasteryLimitLvDiff330_user(_this, iDstLevel, CPlayerIsPassMasteryLimitLvDiff330_next);
         };
-        bool CPlayerIsPunished332_wrapper(struct CPlayer* _this, char byType, bool bSend)
+        static bool CPlayerIsPunished332_wrapper(struct CPlayer* _this, char byType, bool bSend)
         {
            return CPlayerIsPunished332_user(_this, byType, bSend, CPlayerIsPunished332_next);
         };
-        bool CPlayerIsRecallAnimus334_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsRecallAnimus334_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsRecallAnimus334_user(_this, CPlayerIsRecallAnimus334_next);
         };
-        bool CPlayerIsRecvableContEffect336_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsRecvableContEffect336_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsRecvableContEffect336_user(_this, CPlayerIsRecvableContEffect336_next);
         };
-        bool CPlayerIsReturnPostUpdate338_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsReturnPostUpdate338_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsReturnPostUpdate338_user(_this, CPlayerIsReturnPostUpdate338_next);
         };
-        bool CPlayerIsRidingShip340_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsRidingShip340_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsRidingShip340_user(_this, CPlayerIsRidingShip340_next);
         };
-        bool CPlayerIsRidingUnit342_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsRidingUnit342_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsRidingUnit342_user(_this, CPlayerIsRidingUnit342_next);
         };
-        bool CPlayerIsSFActableByClass344_wrapper(struct CPlayer* _this, char byEffectCode, struct _base_fld* pSFFld)
+        static bool CPlayerIsSFActableByClass344_wrapper(struct CPlayer* _this, char byEffectCode, struct _base_fld* pSFFld)
         {
            return CPlayerIsSFActableByClass344_user(_this, byEffectCode, pSFFld, CPlayerIsSFActableByClass344_next);
         };
-        bool CPlayerIsSFUsableGauge346_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, uint16_t* pwDelPoint)
+        static bool CPlayerIsSFUsableGauge346_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, uint16_t* pwDelPoint)
         {
            return CPlayerIsSFUsableGauge346_user(_this, byEffectCode, wEffectIndex, pwDelPoint, CPlayerIsSFUsableGauge346_next);
         };
-        bool CPlayerIsSFUsableSFMastery348_wrapper(struct CPlayer* _this, char byMasteryCode, int nMasteryIndex)
+        static bool CPlayerIsSFUsableSFMastery348_wrapper(struct CPlayer* _this, char byMasteryCode, int nMasteryIndex)
         {
            return CPlayerIsSFUsableSFMastery348_user(_this, byMasteryCode, nMasteryIndex, CPlayerIsSFUsableSFMastery348_next);
         };
-        bool CPlayerIsSFUseableRace350_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex)
+        static bool CPlayerIsSFUseableRace350_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex)
         {
            return CPlayerIsSFUseableRace350_user(_this, byEffectCode, wEffectIndex, CPlayerIsSFUseableRace350_next);
         };
-        bool CPlayerIsSiegeMode352_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsSiegeMode352_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsSiegeMode352_user(_this, CPlayerIsSiegeMode352_next);
         };
-        bool CPlayerIsTargetObj354_wrapper(struct CPlayer* _this, struct CGameObject* pkObj)
+        static bool CPlayerIsTargetObj354_wrapper(struct CPlayer* _this, struct CGameObject* pkObj)
         {
            return CPlayerIsTargetObj354_user(_this, pkObj, CPlayerIsTargetObj354_next);
         };
-        bool CPlayerIsUsableAccountType356_wrapper(struct CPlayer* _this, int nCashType)
+        static bool CPlayerIsUsableAccountType356_wrapper(struct CPlayer* _this, int nCashType)
         {
            return CPlayerIsUsableAccountType356_user(_this, nCashType, CPlayerIsUsableAccountType356_next);
         };
-        bool CPlayerIsUseCloakBooster358_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsUseCloakBooster358_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsUseCloakBooster358_user(_this, CPlayerIsUseCloakBooster358_next);
         };
-        bool CPlayerIsUseReleaseRaceBuffPotion360_wrapper(struct CPlayer* _this)
+        static bool CPlayerIsUseReleaseRaceBuffPotion360_wrapper(struct CPlayer* _this)
         {
            return CPlayerIsUseReleaseRaceBuffPotion360_user(_this, CPlayerIsUseReleaseRaceBuffPotion360_next);
         };
-        bool CPlayerIs_Battle_Mode362_wrapper(struct CPlayer* _this)
+        static bool CPlayerIs_Battle_Mode362_wrapper(struct CPlayer* _this)
         {
            return CPlayerIs_Battle_Mode362_user(_this, CPlayerIs_Battle_Mode362_next);
         };
-        void CPlayerLimLvNpcQuestDelete364_wrapper(struct CPlayer* _this, char byQuestDBSlot)
+        static void CPlayerLimLvNpcQuestDelete364_wrapper(struct CPlayer* _this, char byQuestDBSlot)
         {
            CPlayerLimLvNpcQuestDelete364_user(_this, byQuestDBSlot, CPlayerLimLvNpcQuestDelete364_next);
         };
-        bool CPlayerLoad366_wrapper(struct CPlayer* _this, struct CUserDB* pUser, bool bFirstStart)
+        static bool CPlayerLoad366_wrapper(struct CPlayer* _this, struct CUserDB* pUser, bool bFirstStart)
         {
            return CPlayerLoad366_user(_this, pUser, bFirstStart, CPlayerLoad366_next);
         };
-        void CPlayerLoop368_wrapper(struct CPlayer* _this)
+        static void CPlayerLoop368_wrapper(struct CPlayer* _this)
         {
            CPlayerLoop368_user(_this, CPlayerLoop368_next);
         };
-        void CPlayerNetClose370_wrapper(struct CPlayer* _this, bool bMoveOutLobby)
+        static void CPlayerNetClose370_wrapper(struct CPlayer* _this, bool bMoveOutLobby)
         {
            CPlayerNetClose370_user(_this, bMoveOutLobby, CPlayerNetClose370_next);
         };
-        void CPlayerNewViewCircleObject372_wrapper(struct CPlayer* _this)
+        static void CPlayerNewViewCircleObject372_wrapper(struct CPlayer* _this)
         {
            CPlayerNewViewCircleObject372_user(_this, CPlayerNewViewCircleObject372_next);
         };
-        void CPlayerOnLoop_Static374_wrapper()
+        static void CPlayerOnLoop_Static374_wrapper()
         {
            CPlayerOnLoop_Static374_user(CPlayerOnLoop_Static374_next);
         };
-        bool CPlayerOutOfMap376_wrapper(struct CPlayer* _this, struct CMapData* pIntoMap, uint16_t wLayerIndex, char byMapOutType, float* pfStartPos)
+        static bool CPlayerOutOfMap376_wrapper(struct CPlayer* _this, struct CMapData* pIntoMap, uint16_t wLayerIndex, char byMapOutType, float* pfStartPos)
         {
            return CPlayerOutOfMap376_user(_this, pIntoMap, wLayerIndex, byMapOutType, pfStartPos, CPlayerOutOfMap376_next);
         };
-        void CPlayerOutOfSec378_wrapper(struct CPlayer* _this)
+        static void CPlayerOutOfSec378_wrapper(struct CPlayer* _this)
         {
            CPlayerOutOfSec378_user(_this, CPlayerOutOfSec378_next);
         };
-        void CPlayerPastWhisperInit380_wrapper(struct CPlayer* _this)
+        static void CPlayerPastWhisperInit380_wrapper(struct CPlayer* _this)
         {
            CPlayerPastWhisperInit380_user(_this, CPlayerPastWhisperInit380_next);
         };
-        void CPlayerPotion_Buf_Extend382_wrapper(struct CPlayer* _this)
+        static void CPlayerPotion_Buf_Extend382_wrapper(struct CPlayer* _this)
         {
            CPlayerPotion_Buf_Extend382_user(_this, CPlayerPotion_Buf_Extend382_next);
         };
-        void CPlayerPushDQSCheatPlyerVoteInfo384_wrapper(struct CPlayer* _this)
+        static void CPlayerPushDQSCheatPlyerVoteInfo384_wrapper(struct CPlayer* _this)
         {
            CPlayerPushDQSCheatPlyerVoteInfo384_user(_this, CPlayerPushDQSCheatPlyerVoteInfo384_next);
         };
-        void CPlayerPushDQSUpdatePlyerVoteInfo386_wrapper(struct CPlayer* _this)
+        static void CPlayerPushDQSUpdatePlyerVoteInfo386_wrapper(struct CPlayer* _this)
         {
            CPlayerPushDQSUpdatePlyerVoteInfo386_user(_this, CPlayerPushDQSUpdatePlyerVoteInfo386_next);
         };
-        void CPlayerPushDQSUpdateVoteAvilable388_wrapper(struct CPlayer* _this)
+        static void CPlayerPushDQSUpdateVoteAvilable388_wrapper(struct CPlayer* _this)
         {
            CPlayerPushDQSUpdateVoteAvilable388_user(_this, CPlayerPushDQSUpdateVoteAvilable388_next);
         };
-        void CPlayerReCalcMaxHFSP390_wrapper(struct CPlayer* _this, bool bSend, bool bRatio)
+        static void CPlayerReCalcMaxHFSP390_wrapper(struct CPlayer* _this, bool bSend, bool bRatio)
         {
            CPlayerReCalcMaxHFSP390_user(_this, bSend, bRatio, CPlayerReCalcMaxHFSP390_next);
         };
-        void CPlayerRecallRandomPositionInRange392_wrapper(struct CPlayer* _this, struct CMapData* pIntoMap, uint16_t wMapLayerIndex, float* pStartPos, int iRange)
+        static void CPlayerRecallRandomPositionInRange392_wrapper(struct CPlayer* _this, struct CMapData* pIntoMap, uint16_t wMapLayerIndex, float* pStartPos, int iRange)
         {
            CPlayerRecallRandomPositionInRange392_user(_this, pIntoMap, wMapLayerIndex, pStartPos, iRange, CPlayerRecallRandomPositionInRange392_next);
         };
-        void CPlayerRecvHSKQuest394_wrapper(struct CPlayer* _this, char byHSKQuestCode, char byCristalBattleDBInfo, int nPvpPoint, uint16_t wKillPoint, uint16_t wDieCount, char byHSKTime)
+        static void CPlayerRecvHSKQuest394_wrapper(struct CPlayer* _this, char byHSKQuestCode, char byCristalBattleDBInfo, int nPvpPoint, uint16_t wKillPoint, uint16_t wDieCount, char byHSKTime)
         {
            CPlayerRecvHSKQuest394_user(_this, byHSKQuestCode, byCristalBattleDBInfo, nPvpPoint, wKillPoint, wDieCount, byHSKTime, CPlayerRecvHSKQuest394_next);
         };
-        void CPlayerRecvKillMessage396_wrapper(struct CPlayer* _this, struct CCharacter* pDier)
+        static void CPlayerRecvKillMessage396_wrapper(struct CPlayer* _this, struct CCharacter* pDier)
         {
            CPlayerRecvKillMessage396_user(_this, pDier, CPlayerRecvKillMessage396_next);
         };
-        void CPlayerReservationForceClose398_wrapper(struct CPlayer* _this)
+        static void CPlayerReservationForceClose398_wrapper(struct CPlayer* _this)
         {
            CPlayerReservationForceClose398_user(_this, CPlayerReservationForceClose398_next);
         };
-        void CPlayerResurrect400_wrapper(struct CPlayer* _this)
+        static void CPlayerResurrect400_wrapper(struct CPlayer* _this)
         {
            CPlayerResurrect400_user(_this, CPlayerResurrect400_next);
         };
-        void CPlayerReturn_AnimusAsk402_wrapper(struct CPlayer* _this, char byReturnType)
+        static void CPlayerReturn_AnimusAsk402_wrapper(struct CPlayer* _this, char byReturnType)
         {
            CPlayerReturn_AnimusAsk402_user(_this, byReturnType, CPlayerReturn_AnimusAsk402_next);
         };
-        void CPlayerRewardChangeClass404_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld, char bySelectRewardItem)
+        static void CPlayerRewardChangeClass404_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld, char bySelectRewardItem)
         {
            CPlayerRewardChangeClass404_user(_this, pClassFld, bySelectRewardItem, CPlayerRewardChangeClass404_next);
         };
-        void CPlayerRewardChangeClassMastery406_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld)
+        static void CPlayerRewardChangeClassMastery406_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld)
         {
            CPlayerRewardChangeClassMastery406_user(_this, pClassFld, CPlayerRewardChangeClassMastery406_next);
         };
-        void CPlayerRewardChangeClassRewardItem408_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld, char bySelectRewardItem)
+        static void CPlayerRewardChangeClassRewardItem408_wrapper(struct CPlayer* _this, struct _class_fld* pClassFld, char bySelectRewardItem)
         {
            CPlayerRewardChangeClassRewardItem408_user(_this, pClassFld, bySelectRewardItem, CPlayerRewardChangeClassRewardItem408_next);
         };
-        void CPlayerRewardRaceWarPvpCash410_wrapper(struct CPlayer* _this)
+        static void CPlayerRewardRaceWarPvpCash410_wrapper(struct CPlayer* _this)
         {
            CPlayerRewardRaceWarPvpCash410_user(_this, CPlayerRewardRaceWarPvpCash410_next);
         };
-        void CPlayerReward_DarkDungeon412_wrapper(struct CPlayer* _this, struct _dh_reward_sub_setup* pSetup, char* pszTitle, int bRealBoss, struct _STORAGE_LIST::_db_con* pItem, int* bIsRewarded)
+        static void CPlayerReward_DarkDungeon412_wrapper(struct CPlayer* _this, struct _dh_reward_sub_setup* pSetup, char* pszTitle, int bRealBoss, struct _STORAGE_LIST::_db_con* pItem, int* bIsRewarded)
         {
            CPlayerReward_DarkDungeon412_user(_this, pSetup, pszTitle, bRealBoss, pItem, bIsRewarded, CPlayerReward_DarkDungeon412_next);
         };
-        bool CPlayerRobbedHP414_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nDecHP)
+        static bool CPlayerRobbedHP414_wrapper(struct CPlayer* _this, struct CCharacter* pDst, int nDecHP)
         {
            return CPlayerRobbedHP414_user(_this, pDst, nDecHP, CPlayerRobbedHP414_next);
         };
-        void CPlayerSFContDelMessage416_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, bool bSend, bool bAura)
+        static void CPlayerSFContDelMessage416_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, bool bSend, bool bAura)
         {
            CPlayerSFContDelMessage416_user(_this, byContCode, byListIndex, bSend, bAura, CPlayerSFContDelMessage416_next);
         };
-        void CPlayerSFContInsertMessage418_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, bool bAuraSkill, struct CPlayer* pPlayerAct)
+        static void CPlayerSFContInsertMessage418_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, bool bAuraSkill, struct CPlayer* pPlayerAct)
         {
            CPlayerSFContInsertMessage418_user(_this, byContCode, byListIndex, bAuraSkill, pPlayerAct, CPlayerSFContInsertMessage418_next);
         };
-        void CPlayerSFContUpdateTimeMessage420_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, int nLeftTime)
+        static void CPlayerSFContUpdateTimeMessage420_wrapper(struct CPlayer* _this, char byContCode, char byListIndex, int nLeftTime)
         {
            CPlayerSFContUpdateTimeMessage420_user(_this, byContCode, byListIndex, nLeftTime, CPlayerSFContUpdateTimeMessage420_next);
         };
-        bool CPlayerSF_AllContDamageForceRemove_Once422_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_AllContDamageForceRemove_Once422_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_AllContDamageForceRemove_Once422_user(_this, pDstObj, CPlayerSF_AllContDamageForceRemove_Once422_next);
         };
-        bool CPlayerSF_AllContDamageRemove_Once424_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_AllContDamageRemove_Once424_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_AllContDamageRemove_Once424_user(_this, pDstObj, CPlayerSF_AllContDamageRemove_Once424_next);
         };
-        bool CPlayerSF_AllContHelpForceRemove_Once426_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_AllContHelpForceRemove_Once426_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_AllContHelpForceRemove_Once426_user(_this, pDstObj, CPlayerSF_AllContHelpForceRemove_Once426_next);
         };
-        bool CPlayerSF_AllContHelpSkillRemove_Once428_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_AllContHelpSkillRemove_Once428_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_AllContHelpSkillRemove_Once428_user(_this, pDstObj, CPlayerSF_AllContHelpSkillRemove_Once428_next);
         };
-        bool CPlayerSF_AttHPtoDstFP_Once430_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_AttHPtoDstFP_Once430_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_AttHPtoDstFP_Once430_user(_this, pDstObj, fEffectValue, CPlayerSF_AttHPtoDstFP_Once430_next);
         };
-        bool CPlayerSF_ContDamageTimeInc_Once432_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ContDamageTimeInc_Once432_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ContDamageTimeInc_Once432_user(_this, pDstObj, fEffectValue, CPlayerSF_ContDamageTimeInc_Once432_next);
         };
-        bool CPlayerSF_ContHelpTimeInc_Once434_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ContHelpTimeInc_Once434_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ContHelpTimeInc_Once434_user(_this, pDstObj, fEffectValue, CPlayerSF_ContHelpTimeInc_Once434_next);
         };
-        bool CPlayerSF_ConvertMonsterTarget436_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ConvertMonsterTarget436_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ConvertMonsterTarget436_user(_this, pDstObj, fEffectValue, CPlayerSF_ConvertMonsterTarget436_next);
         };
-        bool CPlayerSF_ConvertTargetDest438_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ConvertTargetDest438_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ConvertTargetDest438_user(_this, pDstObj, fEffectValue, CPlayerSF_ConvertTargetDest438_next);
         };
-        bool CPlayerSF_DamageAndStun440_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_DamageAndStun440_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_DamageAndStun440_user(_this, pDstObj, fEffectValue, CPlayerSF_DamageAndStun440_next);
         };
-        bool CPlayerSF_FPDec442_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_FPDec442_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_FPDec442_user(_this, pDstObj, fEffectValue, CPlayerSF_FPDec442_next);
         };
-        bool CPlayerSF_HFSInc_Once444_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_HFSInc_Once444_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_HFSInc_Once444_user(_this, pDstObj, CPlayerSF_HFSInc_Once444_next);
         };
-        bool CPlayerSF_HPInc_Once446_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_HPInc_Once446_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_HPInc_Once446_user(_this, pDstObj, fEffectValue, CPlayerSF_HPInc_Once446_next);
         };
-        bool CPlayerSF_IncHPCircleParty448_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_IncHPCircleParty448_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_IncHPCircleParty448_user(_this, pDstObj, fEffectValue, CPlayerSF_IncHPCircleParty448_next);
         };
-        bool CPlayerSF_IncreaseDP450_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_IncreaseDP450_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_IncreaseDP450_user(_this, pDstObj, fEffectValue, CPlayerSF_IncreaseDP450_next);
         };
-        bool CPlayerSF_LateContDamageRemove_Once452_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_LateContDamageRemove_Once452_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_LateContDamageRemove_Once452_user(_this, pDstObj, CPlayerSF_LateContDamageRemove_Once452_next);
         };
-        bool CPlayerSF_LateContHelpForceRemove_Once454_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_LateContHelpForceRemove_Once454_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_LateContHelpForceRemove_Once454_user(_this, pDstObj, CPlayerSF_LateContHelpForceRemove_Once454_next);
         };
-        bool CPlayerSF_LateContHelpSkillRemove_Once456_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_LateContHelpSkillRemove_Once456_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_LateContHelpSkillRemove_Once456_user(_this, pDstObj, CPlayerSF_LateContHelpSkillRemove_Once456_next);
         };
-        bool CPlayerSF_MakePortalReturnBindPositionPartyMember458_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
+        static bool CPlayerSF_MakePortalReturnBindPositionPartyMember458_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
         {
            return CPlayerSF_MakePortalReturnBindPositionPartyMember458_user(_this, pDstObj, fEffectValue, byRet, CPlayerSF_MakePortalReturnBindPositionPartyMember458_next);
         };
-        bool CPlayerSF_MakeZeroAnimusRecallTimeOnce460_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_MakeZeroAnimusRecallTimeOnce460_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_MakeZeroAnimusRecallTimeOnce460_user(_this, pDstObj, fEffectValue, CPlayerSF_MakeZeroAnimusRecallTimeOnce460_next);
         };
-        bool CPlayerSF_OthersContHelpSFRemove_Once462_wrapper(struct CPlayer* _this, float fEffectValue)
+        static bool CPlayerSF_OthersContHelpSFRemove_Once462_wrapper(struct CPlayer* _this, float fEffectValue)
         {
            return CPlayerSF_OthersContHelpSFRemove_Once462_user(_this, fEffectValue, CPlayerSF_OthersContHelpSFRemove_Once462_next);
         };
-        bool CPlayerSF_OverHealing_Once464_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_OverHealing_Once464_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_OverHealing_Once464_user(_this, pDstObj, fEffectValue, CPlayerSF_OverHealing_Once464_next);
         };
-        bool CPlayerSF_RecoverAllReturnStateAnimusHPFull466_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_RecoverAllReturnStateAnimusHPFull466_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_RecoverAllReturnStateAnimusHPFull466_user(_this, pDstObj, fEffectValue, CPlayerSF_RecoverAllReturnStateAnimusHPFull466_next);
         };
-        bool CPlayerSF_ReleaseMonsterTarget468_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ReleaseMonsterTarget468_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ReleaseMonsterTarget468_user(_this, pDstObj, fEffectValue, CPlayerSF_ReleaseMonsterTarget468_next);
         };
-        bool CPlayerSF_RemoveAllContHelp_Once470_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_RemoveAllContHelp_Once470_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_RemoveAllContHelp_Once470_user(_this, pDstObj, fEffectValue, CPlayerSF_RemoveAllContHelp_Once470_next);
         };
-        bool CPlayerSF_Resurrect_Once472_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
+        static bool CPlayerSF_Resurrect_Once472_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj)
         {
            return CPlayerSF_Resurrect_Once472_user(_this, pDstObj, CPlayerSF_Resurrect_Once472_next);
         };
-        bool CPlayerSF_ReturnBindPosition474_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_ReturnBindPosition474_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_ReturnBindPosition474_user(_this, pDstObj, fEffectValue, CPlayerSF_ReturnBindPosition474_next);
         };
-        bool CPlayerSF_SPDec476_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_SPDec476_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_SPDec476_user(_this, pDstObj, fEffectValue, CPlayerSF_SPDec476_next);
         };
-        bool CPlayerSF_STInc_Once478_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_STInc_Once478_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_STInc_Once478_user(_this, pDstObj, fEffectValue, CPlayerSF_STInc_Once478_next);
         };
-        bool CPlayerSF_SelfDestruction480_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_SelfDestruction480_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_SelfDestruction480_user(_this, pDstObj, fEffectValue, CPlayerSF_SelfDestruction480_next);
         };
-        bool CPlayerSF_SkillContHelpTimeInc_Once482_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_SkillContHelpTimeInc_Once482_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_SkillContHelpTimeInc_Once482_user(_this, pDstObj, fEffectValue, CPlayerSF_SkillContHelpTimeInc_Once482_next);
         };
-        bool CPlayerSF_Stun484_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_Stun484_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_Stun484_user(_this, pDstObj, fEffectValue, CPlayerSF_Stun484_next);
         };
-        bool CPlayerSF_TeleportToDestination486_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, bool bStone)
+        static bool CPlayerSF_TeleportToDestination486_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, bool bStone)
         {
            return CPlayerSF_TeleportToDestination486_user(_this, pDstObj, bStone, CPlayerSF_TeleportToDestination486_next);
         };
-        bool CPlayerSF_TransDestHP488_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
+        static bool CPlayerSF_TransDestHP488_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue, char* byRet)
         {
            return CPlayerSF_TransDestHP488_user(_this, pDstObj, fEffectValue, byRet, CPlayerSF_TransDestHP488_next);
         };
-        bool CPlayerSF_TransMonsterHP490_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
+        static bool CPlayerSF_TransMonsterHP490_wrapper(struct CPlayer* _this, struct CCharacter* pDstObj, float fEffectValue)
         {
            return CPlayerSF_TransMonsterHP490_user(_this, pDstObj, fEffectValue, CPlayerSF_TransMonsterHP490_next);
         };
-        void CPlayerSendData_ChatTrans492_wrapper(struct CPlayer* _this, char byChatType, unsigned int dwSenderSerial, char byRaceCode, bool bFilter, char* pwszMessage, char byPvpGrade, char* pwszSender)
+        static void CPlayerSendData_ChatTrans492_wrapper(struct CPlayer* _this, char byChatType, unsigned int dwSenderSerial, char byRaceCode, bool bFilter, char* pwszMessage, char byPvpGrade, char* pwszSender)
         {
            CPlayerSendData_ChatTrans492_user(_this, byChatType, dwSenderSerial, byRaceCode, bFilter, pwszMessage, byPvpGrade, pwszSender, CPlayerSendData_ChatTrans492_next);
         };
-        void CPlayerSendData_PartyMemberEffect494_wrapper(struct CPlayer* _this, char byAlterCode, uint16_t wEffectCode, char byLv)
+        static void CPlayerSendData_PartyMemberEffect494_wrapper(struct CPlayer* _this, char byAlterCode, uint16_t wEffectCode, char byLv)
         {
            CPlayerSendData_PartyMemberEffect494_user(_this, byAlterCode, wEffectCode, byLv, CPlayerSendData_PartyMemberEffect494_next);
         };
-        void CPlayerSendData_PartyMemberFP496_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberFP496_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberFP496_user(_this, CPlayerSendData_PartyMemberFP496_next);
         };
-        void CPlayerSendData_PartyMemberHP498_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberHP498_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberHP498_user(_this, CPlayerSendData_PartyMemberHP498_next);
         };
-        void CPlayerSendData_PartyMemberInfo500_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
+        static void CPlayerSendData_PartyMemberInfo500_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
         {
            CPlayerSendData_PartyMemberInfo500_user(_this, wDstIndex, CPlayerSendData_PartyMemberInfo500_next);
         };
-        void CPlayerSendData_PartyMemberInfoToMembers502_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberInfoToMembers502_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberInfoToMembers502_user(_this, CPlayerSendData_PartyMemberInfoToMembers502_next);
         };
-        void CPlayerSendData_PartyMemberLv504_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberLv504_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberLv504_user(_this, CPlayerSendData_PartyMemberLv504_next);
         };
-        void CPlayerSendData_PartyMemberMaxHFSP506_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberMaxHFSP506_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberMaxHFSP506_user(_this, CPlayerSendData_PartyMemberMaxHFSP506_next);
         };
-        void CPlayerSendData_PartyMemberPos508_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberPos508_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberPos508_user(_this, CPlayerSendData_PartyMemberPos508_next);
         };
-        void CPlayerSendData_PartyMemberSP510_wrapper(struct CPlayer* _this)
+        static void CPlayerSendData_PartyMemberSP510_wrapper(struct CPlayer* _this)
         {
            CPlayerSendData_PartyMemberSP510_user(_this, CPlayerSendData_PartyMemberSP510_next);
         };
-        void CPlayerSendMsg_AMPInvenDownloadResult512_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AMPInvenDownloadResult512_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AMPInvenDownloadResult512_user(_this, CPlayerSendMsg_AMPInvenDownloadResult512_next);
         };
-        void CPlayerSendMsg_AddBagResult514_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_AddBagResult514_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_AddBagResult514_user(_this, byErrCode, CPlayerSendMsg_AddBagResult514_next);
         };
-        void CPlayerSendMsg_AddEffect516_wrapper(struct CPlayer* _this, uint16_t wEffectCode, char byLv, uint16_t wDurSec, unsigned int dwPlayerSerial, char* wszPlayerName)
+        static void CPlayerSendMsg_AddEffect516_wrapper(struct CPlayer* _this, uint16_t wEffectCode, char byLv, uint16_t wDurSec, unsigned int dwPlayerSerial, char* wszPlayerName)
         {
            CPlayerSendMsg_AddEffect516_user(_this, wEffectCode, byLv, wDurSec, dwPlayerSerial, wszPlayerName, CPlayerSendMsg_AddEffect516_next);
         };
-        void CPlayerSendMsg_AdjustAmountInform518_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial, unsigned int dwDur)
+        static void CPlayerSendMsg_AdjustAmountInform518_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial, unsigned int dwDur)
         {
            CPlayerSendMsg_AdjustAmountInform518_user(_this, byStorageCode, wSerial, dwDur, CPlayerSendMsg_AdjustAmountInform518_next);
         };
-        void CPlayerSendMsg_AlterBooster520_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterBooster520_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterBooster520_user(_this, CPlayerSendMsg_AlterBooster520_next);
         };
-        void CPlayerSendMsg_AlterContEffectTime522_wrapper(struct CPlayer* _this, char byContType)
+        static void CPlayerSendMsg_AlterContEffectTime522_wrapper(struct CPlayer* _this, char byContType)
         {
            CPlayerSendMsg_AlterContEffectTime522_user(_this, byContType, CPlayerSendMsg_AlterContEffectTime522_next);
         };
-        void CPlayerSendMsg_AlterEquipSPInform524_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterEquipSPInform524_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterEquipSPInform524_user(_this, CPlayerSendMsg_AlterEquipSPInform524_next);
         };
-        void CPlayerSendMsg_AlterExpInform526_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterExpInform526_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterExpInform526_user(_this, CPlayerSendMsg_AlterExpInform526_next);
         };
-        void CPlayerSendMsg_AlterGradeInform528_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterGradeInform528_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterGradeInform528_user(_this, CPlayerSendMsg_AlterGradeInform528_next);
         };
-        void CPlayerSendMsg_AlterHPInform530_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterHPInform530_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterHPInform530_user(_this, CPlayerSendMsg_AlterHPInform530_next);
         };
-        void CPlayerSendMsg_AlterItemDurInform532_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wItemSerial, uint64_t dwDur)
+        static void CPlayerSendMsg_AlterItemDurInform532_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wItemSerial, uint64_t dwDur)
         {
            CPlayerSendMsg_AlterItemDurInform532_user(_this, byStorageCode, wItemSerial, dwDur, CPlayerSendMsg_AlterItemDurInform532_next);
         };
-        void CPlayerSendMsg_AlterMaxDP534_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterMaxDP534_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterMaxDP534_user(_this, CPlayerSendMsg_AlterMaxDP534_next);
         };
-        void CPlayerSendMsg_AlterMoneyInform536_wrapper(struct CPlayer* _this, char byReasonCode)
+        static void CPlayerSendMsg_AlterMoneyInform536_wrapper(struct CPlayer* _this, char byReasonCode)
         {
            CPlayerSendMsg_AlterMoneyInform536_user(_this, byReasonCode, CPlayerSendMsg_AlterMoneyInform536_next);
         };
-        void CPlayerSendMsg_AlterPvPCash538_wrapper(struct CPlayer* _this, int nIOCode)
+        static void CPlayerSendMsg_AlterPvPCash538_wrapper(struct CPlayer* _this, int nIOCode)
         {
            CPlayerSendMsg_AlterPvPCash538_user(_this, nIOCode, CPlayerSendMsg_AlterPvPCash538_next);
         };
-        void CPlayerSendMsg_AlterPvPPoint540_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterPvPPoint540_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterPvPPoint540_user(_this, CPlayerSendMsg_AlterPvPPoint540_next);
         };
-        void CPlayerSendMsg_AlterPvPRank542_wrapper(struct CPlayer* _this, uint16_t wPvpRate, unsigned int dwPvpRank)
+        static void CPlayerSendMsg_AlterPvPRank542_wrapper(struct CPlayer* _this, uint16_t wPvpRate, unsigned int dwPvpRank)
         {
            CPlayerSendMsg_AlterPvPRank542_user(_this, wPvpRate, dwPvpRank, CPlayerSendMsg_AlterPvPRank542_next);
         };
-        void CPlayerSendMsg_AlterRegionInform544_wrapper(struct CPlayer* _this, int nRegionIndex)
+        static void CPlayerSendMsg_AlterRegionInform544_wrapper(struct CPlayer* _this, int nRegionIndex)
         {
            CPlayerSendMsg_AlterRegionInform544_user(_this, nRegionIndex, CPlayerSendMsg_AlterRegionInform544_next);
         };
-        void CPlayerSendMsg_AlterSPInform546_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterSPInform546_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterSPInform546_user(_this, CPlayerSendMsg_AlterSPInform546_next);
         };
-        void CPlayerSendMsg_AlterTol548_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterTol548_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterTol548_user(_this, CPlayerSendMsg_AlterTol548_next);
         };
-        void CPlayerSendMsg_AlterTowerHP550_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t wLeftHP)
+        static void CPlayerSendMsg_AlterTowerHP550_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t wLeftHP)
         {
            CPlayerSendMsg_AlterTowerHP550_user(_this, wItemSerial, wLeftHP, CPlayerSendMsg_AlterTowerHP550_next);
         };
-        void CPlayerSendMsg_AlterTownOrField552_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AlterTownOrField552_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AlterTownOrField552_user(_this, CPlayerSendMsg_AlterTownOrField552_next);
         };
-        void CPlayerSendMsg_AlterUnitBulletInform554_wrapper(struct CPlayer* _this, char byPart, uint16_t wLeftNum)
+        static void CPlayerSendMsg_AlterUnitBulletInform554_wrapper(struct CPlayer* _this, char byPart, uint16_t wLeftNum)
         {
            CPlayerSendMsg_AlterUnitBulletInform554_user(_this, byPart, wLeftNum, CPlayerSendMsg_AlterUnitBulletInform554_next);
         };
-        void CPlayerSendMsg_AlterUnitHPInform556_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwGauge)
+        static void CPlayerSendMsg_AlterUnitHPInform556_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwGauge)
         {
            CPlayerSendMsg_AlterUnitHPInform556_user(_this, bySlotIndex, dwGauge, CPlayerSendMsg_AlterUnitHPInform556_next);
         };
-        void CPlayerSendMsg_AlterWeaponBulletInform558_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t wLeftNum)
+        static void CPlayerSendMsg_AlterWeaponBulletInform558_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t wLeftNum)
         {
            CPlayerSendMsg_AlterWeaponBulletInform558_user(_this, wItemSerial, wLeftNum, CPlayerSendMsg_AlterWeaponBulletInform558_next);
         };
-        void CPlayerSendMsg_Alter_Action_Point560_wrapper(struct CPlayer* _this, char byActCode, unsigned int dwActPoint)
+        static void CPlayerSendMsg_Alter_Action_Point560_wrapper(struct CPlayer* _this, char byActCode, unsigned int dwActPoint)
         {
            CPlayerSendMsg_Alter_Action_Point560_user(_this, byActCode, dwActPoint, CPlayerSendMsg_Alter_Action_Point560_next);
         };
-        void CPlayerSendMsg_AnimusExpInform562_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AnimusExpInform562_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AnimusExpInform562_user(_this, CPlayerSendMsg_AnimusExpInform562_next);
         };
-        void CPlayerSendMsg_AnimusFPInform564_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AnimusFPInform564_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AnimusFPInform564_user(_this, CPlayerSendMsg_AnimusFPInform564_next);
         };
-        void CPlayerSendMsg_AnimusHPInform566_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_AnimusHPInform566_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_AnimusHPInform566_user(_this, CPlayerSendMsg_AnimusHPInform566_next);
         };
-        void CPlayerSendMsg_AnimusInvenChange568_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_AnimusInvenChange568_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_AnimusInvenChange568_user(_this, byErrCode, CPlayerSendMsg_AnimusInvenChange568_next);
         };
-        void CPlayerSendMsg_AnimusModeInform570_wrapper(struct CPlayer* _this, char byMode)
+        static void CPlayerSendMsg_AnimusModeInform570_wrapper(struct CPlayer* _this, char byMode)
         {
            CPlayerSendMsg_AnimusModeInform570_user(_this, byMode, CPlayerSendMsg_AnimusModeInform570_next);
         };
-        void CPlayerSendMsg_AnimusRecallResult572_wrapper(struct CPlayer* _this, char byResultCode, uint16_t wLeftFP, struct CAnimus* pNewAnimus)
+        static void CPlayerSendMsg_AnimusRecallResult572_wrapper(struct CPlayer* _this, char byResultCode, uint16_t wLeftFP, struct CAnimus* pNewAnimus)
         {
            CPlayerSendMsg_AnimusRecallResult572_user(_this, byResultCode, wLeftFP, pNewAnimus, CPlayerSendMsg_AnimusRecallResult572_next);
         };
-        void CPlayerSendMsg_AnimusRecallWaitTimeFree574_wrapper(struct CPlayer* _this, bool bFree)
+        static void CPlayerSendMsg_AnimusRecallWaitTimeFree574_wrapper(struct CPlayer* _this, bool bFree)
         {
            CPlayerSendMsg_AnimusRecallWaitTimeFree574_user(_this, bFree, CPlayerSendMsg_AnimusRecallWaitTimeFree574_next);
         };
-        void CPlayerSendMsg_AnimusReturnResult576_wrapper(struct CPlayer* _this, char byRetCode, uint16_t wAnimusItemSerial, char byReturnType)
+        static void CPlayerSendMsg_AnimusReturnResult576_wrapper(struct CPlayer* _this, char byRetCode, uint16_t wAnimusItemSerial, char byReturnType)
         {
            CPlayerSendMsg_AnimusReturnResult576_user(_this, byRetCode, wAnimusItemSerial, byReturnType, CPlayerSendMsg_AnimusReturnResult576_next);
         };
-        void CPlayerSendMsg_AnimusTargetResult578_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_AnimusTargetResult578_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_AnimusTargetResult578_user(_this, byRetCode, CPlayerSendMsg_AnimusTargetResult578_next);
         };
-        void CPlayerSendMsg_ApexInform580_wrapper(struct CPlayer* _this, unsigned int dwRecvSize, char* pMsg)
+        static void CPlayerSendMsg_ApexInform580_wrapper(struct CPlayer* _this, unsigned int dwRecvSize, char* pMsg)
         {
            CPlayerSendMsg_ApexInform580_user(_this, dwRecvSize, pMsg, CPlayerSendMsg_ApexInform580_next);
         };
-        void CPlayerSendMsg_AttackResult_Count582_wrapper(struct CPlayer* _this, struct CAttack* pAt)
+        static void CPlayerSendMsg_AttackResult_Count582_wrapper(struct CPlayer* _this, struct CAttack* pAt)
         {
            CPlayerSendMsg_AttackResult_Count582_user(_this, pAt, CPlayerSendMsg_AttackResult_Count582_next);
         };
-        void CPlayerSendMsg_AttackResult_Error584_wrapper(struct CPlayer* _this, int nErrCode)
+        static void CPlayerSendMsg_AttackResult_Error584_wrapper(struct CPlayer* _this, int nErrCode)
         {
            CPlayerSendMsg_AttackResult_Error584_user(_this, nErrCode, CPlayerSendMsg_AttackResult_Error584_next);
         };
-        void CPlayerSendMsg_AttackResult_Force586_wrapper(struct CPlayer* _this, struct CAttack* pAt)
+        static void CPlayerSendMsg_AttackResult_Force586_wrapper(struct CPlayer* _this, struct CAttack* pAt)
         {
            CPlayerSendMsg_AttackResult_Force586_user(_this, pAt, CPlayerSendMsg_AttackResult_Force586_next);
         };
-        void CPlayerSendMsg_AttackResult_Gen588_wrapper(struct CPlayer* _this, struct CAttack* pAt, uint16_t wBulletIndex)
+        static void CPlayerSendMsg_AttackResult_Gen588_wrapper(struct CPlayer* _this, struct CAttack* pAt, uint16_t wBulletIndex)
         {
            CPlayerSendMsg_AttackResult_Gen588_user(_this, pAt, wBulletIndex, CPlayerSendMsg_AttackResult_Gen588_next);
         };
-        void CPlayerSendMsg_AttackResult_SelfDestruction590_wrapper(struct CPlayer* _this, struct CAttack* pAt)
+        static void CPlayerSendMsg_AttackResult_SelfDestruction590_wrapper(struct CPlayer* _this, struct CAttack* pAt)
         {
            CPlayerSendMsg_AttackResult_SelfDestruction590_user(_this, pAt, CPlayerSendMsg_AttackResult_SelfDestruction590_next);
         };
-        void CPlayerSendMsg_AttackResult_Siege592_wrapper(struct CPlayer* _this, struct CAttack* pAt, uint16_t wBulletIndex)
+        static void CPlayerSendMsg_AttackResult_Siege592_wrapper(struct CPlayer* _this, struct CAttack* pAt, uint16_t wBulletIndex)
         {
            CPlayerSendMsg_AttackResult_Siege592_user(_this, pAt, wBulletIndex, CPlayerSendMsg_AttackResult_Siege592_next);
         };
-        void CPlayerSendMsg_AttackResult_Skill594_wrapper(struct CPlayer* _this, char byEffectCode, struct CPlayerAttack* pAt, uint16_t wBulletIndex)
+        static void CPlayerSendMsg_AttackResult_Skill594_wrapper(struct CPlayer* _this, char byEffectCode, struct CPlayerAttack* pAt, uint16_t wBulletIndex)
         {
            CPlayerSendMsg_AttackResult_Skill594_user(_this, byEffectCode, pAt, wBulletIndex, CPlayerSendMsg_AttackResult_Skill594_next);
         };
-        void CPlayerSendMsg_AttackResult_Unit596_wrapper(struct CPlayer* _this, struct CAttack* pAt, char byWeaponPart, uint16_t wBulletIndex)
+        static void CPlayerSendMsg_AttackResult_Unit596_wrapper(struct CPlayer* _this, struct CAttack* pAt, char byWeaponPart, uint16_t wBulletIndex)
         {
            CPlayerSendMsg_AttackResult_Unit596_user(_this, pAt, byWeaponPart, wBulletIndex, CPlayerSendMsg_AttackResult_Unit596_next);
         };
-        void CPlayerSendMsg_AwayPartyInvitationQuestion598_wrapper(struct CPlayer* _this, uint16_t wJoinerIndex)
+        static void CPlayerSendMsg_AwayPartyInvitationQuestion598_wrapper(struct CPlayer* _this, uint16_t wJoinerIndex)
         {
            CPlayerSendMsg_AwayPartyInvitationQuestion598_user(_this, wJoinerIndex, CPlayerSendMsg_AwayPartyInvitationQuestion598_next);
         };
-        void CPlayerSendMsg_AwayPartyRequestResult600_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_AwayPartyRequestResult600_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_AwayPartyRequestResult600_user(_this, byRetCode, CPlayerSendMsg_AwayPartyRequestResult600_next);
         };
-        void CPlayerSendMsg_BackTowerResult602_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wItemSerial, uint16_t wLeftHP)
+        static void CPlayerSendMsg_BackTowerResult602_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wItemSerial, uint16_t wLeftHP)
         {
            CPlayerSendMsg_BackTowerResult602_user(_this, byErrCode, wItemSerial, wLeftHP, CPlayerSendMsg_BackTowerResult602_next);
         };
-        void CPlayerSendMsg_BackTrapResult604_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_BackTrapResult604_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_BackTrapResult604_user(_this, byErrCode, CPlayerSendMsg_BackTrapResult604_next);
         };
-        void CPlayerSendMsg_BaseDownloadResult606_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_BaseDownloadResult606_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_BaseDownloadResult606_user(_this, CPlayerSendMsg_BaseDownloadResult606_next);
         };
-        void CPlayerSendMsg_BillingExipreInform608_wrapper(struct CPlayer* _this, char byKind, uint16_t wWaitSec)
+        static void CPlayerSendMsg_BillingExipreInform608_wrapper(struct CPlayer* _this, char byKind, uint16_t wWaitSec)
         {
            CPlayerSendMsg_BillingExipreInform608_user(_this, byKind, wWaitSec, CPlayerSendMsg_BillingExipreInform608_next);
         };
-        void CPlayerSendMsg_BillingTypeChangeInform610_wrapper(struct CPlayer* _this, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate, char byReason)
+        static void CPlayerSendMsg_BillingTypeChangeInform610_wrapper(struct CPlayer* _this, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate, char byReason)
         {
            CPlayerSendMsg_BillingTypeChangeInform610_user(_this, iType, lRemainTime, pstEndDate, byReason, CPlayerSendMsg_BillingTypeChangeInform610_next);
         };
-        void CPlayerSendMsg_BreakdownEquipItem612_wrapper(struct CPlayer* _this, char byPartIndex, uint16_t wSerial)
+        static void CPlayerSendMsg_BreakdownEquipItem612_wrapper(struct CPlayer* _this, char byPartIndex, uint16_t wSerial)
         {
            CPlayerSendMsg_BreakdownEquipItem612_user(_this, byPartIndex, wSerial, CPlayerSendMsg_BreakdownEquipItem612_next);
         };
-        void CPlayerSendMsg_BuddhaEventMsg614_wrapper(struct CPlayer* _this, char byErrorCode)
+        static void CPlayerSendMsg_BuddhaEventMsg614_wrapper(struct CPlayer* _this, char byErrorCode)
         {
            CPlayerSendMsg_BuddhaEventMsg614_user(_this, byErrorCode, CPlayerSendMsg_BuddhaEventMsg614_next);
         };
-        void CPlayerSendMsg_BuddyAddAnswerResult616_wrapper(struct CPlayer* _this, char byRetCode, bool bAccept, unsigned int dwAskerSerial, uint16_t wIndex, unsigned int dwSerial, char* pwszCharName)
+        static void CPlayerSendMsg_BuddyAddAnswerResult616_wrapper(struct CPlayer* _this, char byRetCode, bool bAccept, unsigned int dwAskerSerial, uint16_t wIndex, unsigned int dwSerial, char* pwszCharName)
         {
            CPlayerSendMsg_BuddyAddAnswerResult616_user(_this, byRetCode, bAccept, dwAskerSerial, wIndex, dwSerial, pwszCharName, CPlayerSendMsg_BuddyAddAnswerResult616_next);
         };
-        void CPlayerSendMsg_BuddyAddAsk618_wrapper(struct CPlayer* _this, uint16_t wAskerIndex, unsigned int dwAskerSerial, char* pwszAskerName)
+        static void CPlayerSendMsg_BuddyAddAsk618_wrapper(struct CPlayer* _this, uint16_t wAskerIndex, unsigned int dwAskerSerial, char* pwszAskerName)
         {
            CPlayerSendMsg_BuddyAddAsk618_user(_this, wAskerIndex, dwAskerSerial, pwszAskerName, CPlayerSendMsg_BuddyAddAsk618_next);
         };
-        void CPlayerSendMsg_BuddyAddFail620_wrapper(struct CPlayer* _this, char byRetCode, char* pwszDstName)
+        static void CPlayerSendMsg_BuddyAddFail620_wrapper(struct CPlayer* _this, char byRetCode, char* pwszDstName)
         {
            CPlayerSendMsg_BuddyAddFail620_user(_this, byRetCode, pwszDstName, CPlayerSendMsg_BuddyAddFail620_next);
         };
-        void CPlayerSendMsg_BuddyDelResult622_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwSerial)
+        static void CPlayerSendMsg_BuddyDelResult622_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwSerial)
         {
            CPlayerSendMsg_BuddyDelResult622_user(_this, byRetCode, dwSerial, CPlayerSendMsg_BuddyDelResult622_next);
         };
-        void CPlayerSendMsg_BuddyLoginInform624_wrapper(struct CPlayer* _this, unsigned int dwObjSerial, char byMapIndex, char byPosCode)
+        static void CPlayerSendMsg_BuddyLoginInform624_wrapper(struct CPlayer* _this, unsigned int dwObjSerial, char byMapIndex, char byPosCode)
         {
            CPlayerSendMsg_BuddyLoginInform624_user(_this, dwObjSerial, byMapIndex, byPosCode, CPlayerSendMsg_BuddyLoginInform624_next);
         };
-        void CPlayerSendMsg_BuddyLogoffInform626_wrapper(struct CPlayer* _this, unsigned int dwObjSerial)
+        static void CPlayerSendMsg_BuddyLogoffInform626_wrapper(struct CPlayer* _this, unsigned int dwObjSerial)
         {
            CPlayerSendMsg_BuddyLogoffInform626_user(_this, dwObjSerial, CPlayerSendMsg_BuddyLogoffInform626_next);
         };
-        void CPlayerSendMsg_BuddyNameReNewal628_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* wszName)
+        static void CPlayerSendMsg_BuddyNameReNewal628_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* wszName)
         {
            CPlayerSendMsg_BuddyNameReNewal628_user(_this, dwSerial, wszName, CPlayerSendMsg_BuddyNameReNewal628_next);
         };
-        void CPlayerSendMsg_BuddyPosInform630_wrapper(struct CPlayer* _this, unsigned int dwDstSerial, char byMapIndex, char byPosCode)
+        static void CPlayerSendMsg_BuddyPosInform630_wrapper(struct CPlayer* _this, unsigned int dwDstSerial, char byMapIndex, char byPosCode)
         {
            CPlayerSendMsg_BuddyPosInform630_user(_this, dwDstSerial, byMapIndex, byPosCode, CPlayerSendMsg_BuddyPosInform630_next);
         };
-        void CPlayerSendMsg_BuyCashItemMode632_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_BuyCashItemMode632_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_BuyCashItemMode632_user(_this, CPlayerSendMsg_BuyCashItemMode632_next);
         };
-        void CPlayerSendMsg_BuyItemStoreResult634_wrapper(struct CPlayer* _this, struct CItemStore* pStore, int nOfferNum, struct _buy_offer* pCard, char byErrCode)
+        static void CPlayerSendMsg_BuyItemStoreResult634_wrapper(struct CPlayer* _this, struct CItemStore* pStore, int nOfferNum, struct _buy_offer* pCard, char byErrCode)
         {
            CPlayerSendMsg_BuyItemStoreResult634_user(_this, pStore, nOfferNum, pCard, byErrCode, CPlayerSendMsg_BuyItemStoreResult634_next);
         };
-        void CPlayerSendMsg_CancelSuggestResult636_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_CancelSuggestResult636_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_CancelSuggestResult636_user(_this, byRetCode, CPlayerSendMsg_CancelSuggestResult636_next);
         };
-        void CPlayerSendMsg_CastVoteResult638_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_CastVoteResult638_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_CastVoteResult638_user(_this, byRetCode, CPlayerSendMsg_CastVoteResult638_next);
         };
-        void CPlayerSendMsg_ChangeClassCommand640_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_ChangeClassCommand640_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_ChangeClassCommand640_user(_this, CPlayerSendMsg_ChangeClassCommand640_next);
         };
-        void CPlayerSendMsg_CharacterRenameCashResult642_wrapper(struct CPlayer* _this, bool bChange, char byErrCode)
+        static void CPlayerSendMsg_CharacterRenameCashResult642_wrapper(struct CPlayer* _this, bool bChange, char byErrCode)
         {
            CPlayerSendMsg_CharacterRenameCashResult642_user(_this, bChange, byErrCode, CPlayerSendMsg_CharacterRenameCashResult642_next);
         };
-        void CPlayerSendMsg_ChatFarFailure644_wrapper(struct CPlayer* _this, bool bBlock)
+        static void CPlayerSendMsg_ChatFarFailure644_wrapper(struct CPlayer* _this, bool bBlock)
         {
            CPlayerSendMsg_ChatFarFailure644_user(_this, bBlock, CPlayerSendMsg_ChatFarFailure644_next);
         };
-        void CPlayerSendMsg_Circle_DelEffect646_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, char byLv, bool bToOne)
+        static void CPlayerSendMsg_Circle_DelEffect646_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, char byLv, bool bToOne)
         {
            CPlayerSendMsg_Circle_DelEffect646_user(_this, byEffectCode, wEffectIndex, byLv, bToOne, CPlayerSendMsg_Circle_DelEffect646_next);
         };
-        void CPlayerSendMsg_ClassSkillResult648_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, uint16_t wSkillIndex)
+        static void CPlayerSendMsg_ClassSkillResult648_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, uint16_t wSkillIndex)
         {
            CPlayerSendMsg_ClassSkillResult648_user(_this, byErrCode, pidDst, wSkillIndex, CPlayerSendMsg_ClassSkillResult648_next);
         };
-        void CPlayerSendMsg_ClearDarkHole650_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ClearDarkHole650_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ClearDarkHole650_user(_this, byErrCode, CPlayerSendMsg_ClearDarkHole650_next);
         };
-        void CPlayerSendMsg_CombineItemExAcceptResult652_wrapper(struct CPlayer* _this, struct _combine_ex_item_accept_result_zocl* pSend)
+        static void CPlayerSendMsg_CombineItemExAcceptResult652_wrapper(struct CPlayer* _this, struct _combine_ex_item_accept_result_zocl* pSend)
         {
            CPlayerSendMsg_CombineItemExAcceptResult652_user(_this, pSend, CPlayerSendMsg_CombineItemExAcceptResult652_next);
         };
-        void CPlayerSendMsg_CombineItemExResult654_wrapper(struct CPlayer* _this, struct _combine_ex_item_result_zocl* pSend)
+        static void CPlayerSendMsg_CombineItemExResult654_wrapper(struct CPlayer* _this, struct _combine_ex_item_result_zocl* pSend)
         {
            CPlayerSendMsg_CombineItemExResult654_user(_this, pSend, CPlayerSendMsg_CombineItemExResult654_next);
         };
-        void CPlayerSendMsg_CombineItemResult656_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwFee, struct _STORAGE_LIST::_db_con* pNewItem)
+        static void CPlayerSendMsg_CombineItemResult656_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwFee, struct _STORAGE_LIST::_db_con* pNewItem)
         {
            CPlayerSendMsg_CombineItemResult656_user(_this, byErrCode, dwFee, pNewItem, CPlayerSendMsg_CombineItemResult656_next);
         };
-        void CPlayerSendMsg_CombineLendItemResult658_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwFee, struct _STORAGE_LIST::_db_con* pNewItem)
+        static void CPlayerSendMsg_CombineLendItemResult658_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwFee, struct _STORAGE_LIST::_db_con* pNewItem)
         {
            CPlayerSendMsg_CombineLendItemResult658_user(_this, byErrCode, dwFee, pNewItem, CPlayerSendMsg_CombineLendItemResult658_next);
         };
-        void CPlayerSendMsg_CreateTowerResult660_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwTowerObjSerial)
+        static void CPlayerSendMsg_CreateTowerResult660_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwTowerObjSerial)
         {
            CPlayerSendMsg_CreateTowerResult660_user(_this, byErrCode, dwTowerObjSerial, CPlayerSendMsg_CreateTowerResult660_next);
         };
-        void CPlayerSendMsg_CreateTrapResult662_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwTrapObjSerial)
+        static void CPlayerSendMsg_CreateTrapResult662_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwTrapObjSerial)
         {
            CPlayerSendMsg_CreateTrapResult662_user(_this, byErrCode, dwTrapObjSerial, CPlayerSendMsg_CreateTrapResult662_next);
         };
-        void CPlayerSendMsg_CumDownloadResult664_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_CumDownloadResult664_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_CumDownloadResult664_user(_this, CPlayerSendMsg_CumDownloadResult664_next);
         };
-        void CPlayerSendMsg_CuttingCompleteResult666_wrapper(struct CPlayer* _this, char byRet)
+        static void CPlayerSendMsg_CuttingCompleteResult666_wrapper(struct CPlayer* _this, char byRet)
         {
            CPlayerSendMsg_CuttingCompleteResult666_user(_this, byRet, CPlayerSendMsg_CuttingCompleteResult666_next);
         };
-        void CPlayerSendMsg_DTradeAccomplishInform668_wrapper(struct CPlayer* _this, bool bSucc, uint16_t wStartSerial)
+        static void CPlayerSendMsg_DTradeAccomplishInform668_wrapper(struct CPlayer* _this, bool bSucc, uint16_t wStartSerial)
         {
            CPlayerSendMsg_DTradeAccomplishInform668_user(_this, bSucc, wStartSerial, CPlayerSendMsg_DTradeAccomplishInform668_next);
         };
-        void CPlayerSendMsg_DTradeAddInform670_wrapper(struct CPlayer* _this, char bySlotIndex, struct _STORAGE_LIST::_db_con* pItem, char byAmount)
+        static void CPlayerSendMsg_DTradeAddInform670_wrapper(struct CPlayer* _this, char bySlotIndex, struct _STORAGE_LIST::_db_con* pItem, char byAmount)
         {
            CPlayerSendMsg_DTradeAddInform670_user(_this, bySlotIndex, pItem, byAmount, CPlayerSendMsg_DTradeAddInform670_next);
         };
-        void CPlayerSendMsg_DTradeAddResult672_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeAddResult672_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeAddResult672_user(_this, byErrCode, CPlayerSendMsg_DTradeAddResult672_next);
         };
-        void CPlayerSendMsg_DTradeAnswerResult674_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeAnswerResult674_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeAnswerResult674_user(_this, byErrCode, CPlayerSendMsg_DTradeAnswerResult674_next);
         };
-        void CPlayerSendMsg_DTradeAskInform676_wrapper(struct CPlayer* _this, struct CPlayer* pAsker)
+        static void CPlayerSendMsg_DTradeAskInform676_wrapper(struct CPlayer* _this, struct CPlayer* pAsker)
         {
            CPlayerSendMsg_DTradeAskInform676_user(_this, pAsker, CPlayerSendMsg_DTradeAskInform676_next);
         };
-        void CPlayerSendMsg_DTradeAskResult678_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeAskResult678_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeAskResult678_user(_this, byErrCode, CPlayerSendMsg_DTradeAskResult678_next);
         };
-        void CPlayerSendMsg_DTradeBetInform680_wrapper(struct CPlayer* _this, char byUnitCode, unsigned int dwAmount)
+        static void CPlayerSendMsg_DTradeBetInform680_wrapper(struct CPlayer* _this, char byUnitCode, unsigned int dwAmount)
         {
            CPlayerSendMsg_DTradeBetInform680_user(_this, byUnitCode, dwAmount, CPlayerSendMsg_DTradeBetInform680_next);
         };
-        void CPlayerSendMsg_DTradeBetResult682_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeBetResult682_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeBetResult682_user(_this, byErrCode, CPlayerSendMsg_DTradeBetResult682_next);
         };
-        void CPlayerSendMsg_DTradeCancleInform684_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_DTradeCancleInform684_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_DTradeCancleInform684_user(_this, CPlayerSendMsg_DTradeCancleInform684_next);
         };
-        void CPlayerSendMsg_DTradeCancleResult686_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeCancleResult686_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeCancleResult686_user(_this, byErrCode, CPlayerSendMsg_DTradeCancleResult686_next);
         };
-        void CPlayerSendMsg_DTradeCloseInform688_wrapper(struct CPlayer* _this, char byCloseCode)
+        static void CPlayerSendMsg_DTradeCloseInform688_wrapper(struct CPlayer* _this, char byCloseCode)
         {
            CPlayerSendMsg_DTradeCloseInform688_user(_this, byCloseCode, CPlayerSendMsg_DTradeCloseInform688_next);
         };
-        void CPlayerSendMsg_DTradeDelInform690_wrapper(struct CPlayer* _this, char bySlotIndex)
+        static void CPlayerSendMsg_DTradeDelInform690_wrapper(struct CPlayer* _this, char bySlotIndex)
         {
            CPlayerSendMsg_DTradeDelInform690_user(_this, bySlotIndex, CPlayerSendMsg_DTradeDelInform690_next);
         };
-        void CPlayerSendMsg_DTradeDelResult692_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeDelResult692_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeDelResult692_user(_this, byErrCode, CPlayerSendMsg_DTradeDelResult692_next);
         };
-        void CPlayerSendMsg_DTradeLockInform694_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_DTradeLockInform694_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_DTradeLockInform694_user(_this, CPlayerSendMsg_DTradeLockInform694_next);
         };
-        void CPlayerSendMsg_DTradeLockResult696_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeLockResult696_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeLockResult696_user(_this, byErrCode, CPlayerSendMsg_DTradeLockResult696_next);
         };
-        void CPlayerSendMsg_DTradeOKInform698_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_DTradeOKInform698_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_DTradeOKInform698_user(_this, CPlayerSendMsg_DTradeOKInform698_next);
         };
-        void CPlayerSendMsg_DTradeOKResult700_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_DTradeOKResult700_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_DTradeOKResult700_user(_this, byErrCode, CPlayerSendMsg_DTradeOKResult700_next);
         };
-        void CPlayerSendMsg_DTradeStartInform702_wrapper(struct CPlayer* _this, struct CPlayer* pAsker, struct CPlayer* pAnswer, unsigned int* pdwKey)
+        static void CPlayerSendMsg_DTradeStartInform702_wrapper(struct CPlayer* _this, struct CPlayer* pAsker, struct CPlayer* pAnswer, unsigned int* pdwKey)
         {
            CPlayerSendMsg_DTradeStartInform702_user(_this, pAsker, pAnswer, pdwKey, CPlayerSendMsg_DTradeStartInform702_next);
         };
-        void CPlayerSendMsg_DTradeUnitAddInform704_wrapper(struct CPlayer* _this, uint16_t wUnitKeySerial, struct _UNIT_DB_BASE::_LIST* pUnitData)
+        static void CPlayerSendMsg_DTradeUnitAddInform704_wrapper(struct CPlayer* _this, uint16_t wUnitKeySerial, struct _UNIT_DB_BASE::_LIST* pUnitData)
         {
            CPlayerSendMsg_DTradeUnitAddInform704_user(_this, wUnitKeySerial, pUnitData, CPlayerSendMsg_DTradeUnitAddInform704_next);
         };
-        void CPlayerSendMsg_DTradeUnitInfoInform706_wrapper(struct CPlayer* _this, char byTradeSlotIndex, struct _UNIT_DB_BASE::_LIST* pUnitData)
+        static void CPlayerSendMsg_DTradeUnitInfoInform706_wrapper(struct CPlayer* _this, char byTradeSlotIndex, struct _UNIT_DB_BASE::_LIST* pUnitData)
         {
            CPlayerSendMsg_DTradeUnitInfoInform706_user(_this, byTradeSlotIndex, pUnitData, CPlayerSendMsg_DTradeUnitInfoInform706_next);
         };
-        void CPlayerSendMsg_DamageResult708_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_DamageResult708_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_DamageResult708_user(_this, pItem, CPlayerSendMsg_DamageResult708_next);
         };
-        void CPlayerSendMsg_DarkHoleOpenFail710_wrapper(struct CPlayer* _this, int n, char byErrCode)
+        static void CPlayerSendMsg_DarkHoleOpenFail710_wrapper(struct CPlayer* _this, int n, char byErrCode)
         {
            CPlayerSendMsg_DarkHoleOpenFail710_user(_this, n, byErrCode, CPlayerSendMsg_DarkHoleOpenFail710_next);
         };
-        void CPlayerSendMsg_DarkHoleOpenResult712_wrapper(struct CPlayer* _this, int n, int bPartyOnly, char byErrCode, uint16_t wHoleIndex, unsigned int dwHoleSerial)
+        static void CPlayerSendMsg_DarkHoleOpenResult712_wrapper(struct CPlayer* _this, int n, int bPartyOnly, char byErrCode, uint16_t wHoleIndex, unsigned int dwHoleSerial)
         {
            CPlayerSendMsg_DarkHoleOpenResult712_user(_this, n, bPartyOnly, byErrCode, wHoleIndex, dwHoleSerial, CPlayerSendMsg_DarkHoleOpenResult712_next);
         };
-        void CPlayerSendMsg_DarkHoleRewardMessage714_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwMemberIndex, int isRewarded)
+        static void CPlayerSendMsg_DarkHoleRewardMessage714_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwMemberIndex, int isRewarded)
         {
            CPlayerSendMsg_DarkHoleRewardMessage714_user(_this, pItem, dwMemberIndex, isRewarded, CPlayerSendMsg_DarkHoleRewardMessage714_next);
         };
-        void CPlayerSendMsg_DelEffect716_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, char byLv)
+        static void CPlayerSendMsg_DelEffect716_wrapper(struct CPlayer* _this, char byEffectCode, uint16_t wEffectIndex, char byLv)
         {
            CPlayerSendMsg_DelEffect716_user(_this, byEffectCode, wEffectIndex, byLv, CPlayerSendMsg_DelEffect716_next);
         };
-        void CPlayerSendMsg_DeleteStorageInform718_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial)
+        static void CPlayerSendMsg_DeleteStorageInform718_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial)
         {
            CPlayerSendMsg_DeleteStorageInform718_user(_this, byStorageCode, wSerial, CPlayerSendMsg_DeleteStorageInform718_next);
         };
-        void CPlayerSendMsg_Destroy720_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_Destroy720_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_Destroy720_user(_this, CPlayerSendMsg_Destroy720_next);
         };
-        void CPlayerSendMsg_Die722_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_Die722_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_Die722_user(_this, CPlayerSendMsg_Die722_next);
         };
-        void CPlayerSendMsg_EconomyHistoryInform724_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_EconomyHistoryInform724_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_EconomyHistoryInform724_user(_this, CPlayerSendMsg_EconomyHistoryInform724_next);
         };
-        void CPlayerSendMsg_EconomyRateInform726_wrapper(struct CPlayer* _this, bool bStart)
+        static void CPlayerSendMsg_EconomyRateInform726_wrapper(struct CPlayer* _this, bool bStart)
         {
            CPlayerSendMsg_EconomyRateInform726_user(_this, bStart, CPlayerSendMsg_EconomyRateInform726_next);
         };
-        void CPlayerSendMsg_EmbellishResult728_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_EmbellishResult728_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_EmbellishResult728_user(_this, byErrCode, CPlayerSendMsg_EmbellishResult728_next);
         };
-        void CPlayerSendMsg_EnterDarkHole730_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwHoleSerial)
+        static void CPlayerSendMsg_EnterDarkHole730_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwHoleSerial)
         {
            CPlayerSendMsg_EnterDarkHole730_user(_this, byErrCode, dwHoleSerial, CPlayerSendMsg_EnterDarkHole730_next);
         };
-        void CPlayerSendMsg_EquipItemLevelLimit732_wrapper(struct CPlayer* _this, int nCurPlayerLv)
+        static void CPlayerSendMsg_EquipItemLevelLimit732_wrapper(struct CPlayer* _this, int nCurPlayerLv)
         {
            CPlayerSendMsg_EquipItemLevelLimit732_user(_this, nCurPlayerLv, CPlayerSendMsg_EquipItemLevelLimit732_next);
         };
-        void CPlayerSendMsg_EquipPartChange734_wrapper(struct CPlayer* _this, char byPart)
+        static void CPlayerSendMsg_EquipPartChange734_wrapper(struct CPlayer* _this, char byPart)
         {
            CPlayerSendMsg_EquipPartChange734_user(_this, byPart, CPlayerSendMsg_EquipPartChange734_next);
         };
-        void CPlayerSendMsg_EquipPartResult736_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_EquipPartResult736_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_EquipPartResult736_user(_this, byErrCode, CPlayerSendMsg_EquipPartResult736_next);
         };
-        void CPlayerSendMsg_ExchangeItemResult738_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pNewItem)
+        static void CPlayerSendMsg_ExchangeItemResult738_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pNewItem)
         {
            CPlayerSendMsg_ExchangeItemResult738_user(_this, byErrCode, pNewItem, CPlayerSendMsg_ExchangeItemResult738_next);
         };
-        void CPlayerSendMsg_ExchangeLendItemResult740_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pNewItem)
+        static void CPlayerSendMsg_ExchangeLendItemResult740_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pNewItem)
         {
            CPlayerSendMsg_ExchangeLendItemResult740_user(_this, byErrCode, pNewItem, CPlayerSendMsg_ExchangeLendItemResult740_next);
         };
-        void CPlayerSendMsg_ExchangeMoneyResult742_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ExchangeMoneyResult742_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ExchangeMoneyResult742_user(_this, byErrCode, CPlayerSendMsg_ExchangeMoneyResult742_next);
         };
-        void CPlayerSendMsg_ExitWorldResult744_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_ExitWorldResult744_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_ExitWorldResult744_user(_this, byRetCode, CPlayerSendMsg_ExitWorldResult744_next);
         };
-        void CPlayerSendMsg_ExtTrunkExtendResult746_wrapper(struct CPlayer* _this, char byRetCode, char bySlotNum, char byLackSlotNum)
+        static void CPlayerSendMsg_ExtTrunkExtendResult746_wrapper(struct CPlayer* _this, char byRetCode, char bySlotNum, char byLackSlotNum)
         {
            CPlayerSendMsg_ExtTrunkExtendResult746_user(_this, byRetCode, bySlotNum, byLackSlotNum, CPlayerSendMsg_ExtTrunkExtendResult746_next);
         };
-        void CPlayerSendMsg_FanfareItem748_wrapper(struct CPlayer* _this, char byGetType, struct _STORAGE_LIST::_db_con* pItem, struct CItemBox* pItemBox)
+        static void CPlayerSendMsg_FanfareItem748_wrapper(struct CPlayer* _this, char byGetType, struct _STORAGE_LIST::_db_con* pItem, struct CItemBox* pItemBox)
         {
            CPlayerSendMsg_FanfareItem748_user(_this, byGetType, pItem, pItemBox, CPlayerSendMsg_FanfareItem748_next);
         };
-        void CPlayerSendMsg_FcitemInform750_wrapper(struct CPlayer* _this, uint16_t wItemSerial, unsigned int dwNewStat)
+        static void CPlayerSendMsg_FcitemInform750_wrapper(struct CPlayer* _this, uint16_t wItemSerial, unsigned int dwNewStat)
         {
            CPlayerSendMsg_FcitemInform750_user(_this, wItemSerial, dwNewStat, CPlayerSendMsg_FcitemInform750_next);
         };
-        void CPlayerSendMsg_FixPosition752_wrapper(struct CPlayer* _this, int n)
+        static void CPlayerSendMsg_FixPosition752_wrapper(struct CPlayer* _this, int n)
         {
            CPlayerSendMsg_FixPosition752_user(_this, n, CPlayerSendMsg_FixPosition752_next);
         };
-        void CPlayerSendMsg_ForceDownloadResult754_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_ForceDownloadResult754_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_ForceDownloadResult754_user(_this, CPlayerSendMsg_ForceDownloadResult754_next);
         };
-        void CPlayerSendMsg_ForceInvenChange756_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ForceInvenChange756_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ForceInvenChange756_user(_this, byErrCode, CPlayerSendMsg_ForceInvenChange756_next);
         };
-        void CPlayerSendMsg_ForceResult758_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, struct _STORAGE_LIST::_db_con* pForceItem, int nSFLv)
+        static void CPlayerSendMsg_ForceResult758_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, struct _STORAGE_LIST::_db_con* pForceItem, int nSFLv)
         {
            CPlayerSendMsg_ForceResult758_user(_this, byErrCode, pidDst, pForceItem, nSFLv, CPlayerSendMsg_ForceResult758_next);
         };
-        void CPlayerSendMsg_GM_Greeting760_wrapper(struct CPlayer* _this, char* wszGMName, char* wszMsg)
+        static void CPlayerSendMsg_GM_Greeting760_wrapper(struct CPlayer* _this, char* wszGMName, char* wszMsg)
         {
            CPlayerSendMsg_GM_Greeting760_user(_this, wszGMName, wszMsg, CPlayerSendMsg_GM_Greeting760_next);
         };
-        void CPlayerSendMsg_GUILD_Greeting762_wrapper(struct CPlayer* _this, char* wszName, char* wszMsg)
+        static void CPlayerSendMsg_GUILD_Greeting762_wrapper(struct CPlayer* _this, char* wszName, char* wszMsg)
         {
            CPlayerSendMsg_GUILD_Greeting762_user(_this, wszName, wszMsg, CPlayerSendMsg_GUILD_Greeting762_next);
         };
-        void CPlayerSendMsg_GestureInform764_wrapper(struct CPlayer* _this, char byGestureType)
+        static void CPlayerSendMsg_GestureInform764_wrapper(struct CPlayer* _this, char byGestureType)
         {
            CPlayerSendMsg_GestureInform764_user(_this, byGestureType, CPlayerSendMsg_GestureInform764_next);
         };
-        void CPlayerSendMsg_GiveupDarkHole766_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_GiveupDarkHole766_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_GiveupDarkHole766_user(_this, byErrCode, CPlayerSendMsg_GiveupDarkHole766_next);
         };
-        void CPlayerSendMsg_GotoBasePortalResult768_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_GotoBasePortalResult768_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_GotoBasePortalResult768_user(_this, byErrCode, CPlayerSendMsg_GotoBasePortalResult768_next);
         };
-        void CPlayerSendMsg_GotoRecallResult770_wrapper(struct CPlayer* _this, char byErrCode, char byMapCode, float* pfStartPos, char byMapInType)
+        static void CPlayerSendMsg_GotoRecallResult770_wrapper(struct CPlayer* _this, char byErrCode, char byMapCode, float* pfStartPos, char byMapInType)
         {
            CPlayerSendMsg_GotoRecallResult770_user(_this, byErrCode, byMapCode, pfStartPos, byMapInType, CPlayerSendMsg_GotoRecallResult770_next);
         };
-        void CPlayerSendMsg_GroupTargetInform772_wrapper(struct CPlayer* _this, char byGroupType, char* pwszName)
+        static void CPlayerSendMsg_GroupTargetInform772_wrapper(struct CPlayer* _this, char byGroupType, char* pwszName)
         {
            CPlayerSendMsg_GroupTargetInform772_user(_this, byGroupType, pwszName, CPlayerSendMsg_GroupTargetInform772_next);
         };
-        void CPlayerSendMsg_GuildEstablishFail774_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildEstablishFail774_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildEstablishFail774_user(_this, byRetCode, CPlayerSendMsg_GuildEstablishFail774_next);
         };
-        void CPlayerSendMsg_GuildForceLeaveBoradori776_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_GuildForceLeaveBoradori776_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_GuildForceLeaveBoradori776_user(_this, CPlayerSendMsg_GuildForceLeaveBoradori776_next);
         };
-        void CPlayerSendMsg_GuildJoinAcceptFail778_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwApplierSerial)
+        static void CPlayerSendMsg_GuildJoinAcceptFail778_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwApplierSerial)
         {
            CPlayerSendMsg_GuildJoinAcceptFail778_user(_this, byRetCode, dwApplierSerial, CPlayerSendMsg_GuildJoinAcceptFail778_next);
         };
-        void CPlayerSendMsg_GuildJoinApplyCancelResult780_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildJoinApplyCancelResult780_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildJoinApplyCancelResult780_user(_this, byRetCode, CPlayerSendMsg_GuildJoinApplyCancelResult780_next);
         };
-        void CPlayerSendMsg_GuildJoinApplyRejectInform782_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_GuildJoinApplyRejectInform782_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_GuildJoinApplyRejectInform782_user(_this, CPlayerSendMsg_GuildJoinApplyRejectInform782_next);
         };
-        void CPlayerSendMsg_GuildJoinApplyResult784_wrapper(struct CPlayer* _this, char byRetCode, struct CGuild* pApplyGuild)
+        static void CPlayerSendMsg_GuildJoinApplyResult784_wrapper(struct CPlayer* _this, char byRetCode, struct CGuild* pApplyGuild)
         {
            CPlayerSendMsg_GuildJoinApplyResult784_user(_this, byRetCode, pApplyGuild, CPlayerSendMsg_GuildJoinApplyResult784_next);
         };
-        void CPlayerSendMsg_GuildJoinOtherInform786_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_GuildJoinOtherInform786_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_GuildJoinOtherInform786_user(_this, CPlayerSendMsg_GuildJoinOtherInform786_next);
         };
-        void CPlayerSendMsg_GuildManageResult788_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildManageResult788_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildManageResult788_user(_this, byRetCode, CPlayerSendMsg_GuildManageResult788_next);
         };
-        void CPlayerSendMsg_GuildMasterEffect790_wrapper(struct CPlayer* _this, char byState, char byGrade, char byEffSubAttack, char byEffSubDefence, char byEffAddAttack, char byEffAddDefence)
+        static void CPlayerSendMsg_GuildMasterEffect790_wrapper(struct CPlayer* _this, char byState, char byGrade, char byEffSubAttack, char byEffSubDefence, char byEffAddAttack, char byEffAddDefence)
         {
            CPlayerSendMsg_GuildMasterEffect790_user(_this, byState, byGrade, byEffSubAttack, byEffSubDefence, byEffAddAttack, byEffAddDefence, CPlayerSendMsg_GuildMasterEffect790_next);
         };
-        void CPlayerSendMsg_GuildPushMoneyResult792_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildPushMoneyResult792_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildPushMoneyResult792_user(_this, byRetCode, CPlayerSendMsg_GuildPushMoneyResult792_next);
         };
-        void CPlayerSendMsg_GuildRoomEnterResult794_wrapper(struct CPlayer* _this, char byRetCode, char bySubRetCode, char byMapIndex, uint16_t wMapLayer, float* pPos, int tt)
+        static void CPlayerSendMsg_GuildRoomEnterResult794_wrapper(struct CPlayer* _this, char byRetCode, char bySubRetCode, char byMapIndex, uint16_t wMapLayer, float* pPos, int tt)
         {
            CPlayerSendMsg_GuildRoomEnterResult794_user(_this, byRetCode, bySubRetCode, byMapIndex, wMapLayer, pPos, tt, CPlayerSendMsg_GuildRoomEnterResult794_next);
         };
-        void CPlayerSendMsg_GuildRoomOutResult796_wrapper(struct CPlayer* _this, char byRetCode, char byMapIndex, uint16_t wMapLayer, float* pPos)
+        static void CPlayerSendMsg_GuildRoomOutResult796_wrapper(struct CPlayer* _this, char byRetCode, char byMapIndex, uint16_t wMapLayer, float* pPos)
         {
            CPlayerSendMsg_GuildRoomOutResult796_user(_this, byRetCode, byMapIndex, wMapLayer, pPos, CPlayerSendMsg_GuildRoomOutResult796_next);
         };
-        void CPlayerSendMsg_GuildRoomRentResult798_wrapper(struct CPlayer* _this, char byRetCode, char bySubRetCode, char byRoomType)
+        static void CPlayerSendMsg_GuildRoomRentResult798_wrapper(struct CPlayer* _this, char byRetCode, char bySubRetCode, char byRoomType)
         {
            CPlayerSendMsg_GuildRoomRentResult798_user(_this, byRetCode, bySubRetCode, byRoomType, CPlayerSendMsg_GuildRoomRentResult798_next);
         };
-        void CPlayerSendMsg_GuildRoomRestTimeResult800_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_GuildRoomRestTimeResult800_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_GuildRoomRestTimeResult800_user(_this, CPlayerSendMsg_GuildRoomRestTimeResult800_next);
         };
-        void CPlayerSendMsg_GuildSelfLeaveResult802_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildSelfLeaveResult802_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildSelfLeaveResult802_user(_this, byRetCode, CPlayerSendMsg_GuildSelfLeaveResult802_next);
         };
-        void CPlayerSendMsg_GuildSetHonorResult804_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_GuildSetHonorResult804_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_GuildSetHonorResult804_user(_this, byRetCode, CPlayerSendMsg_GuildSetHonorResult804_next);
         };
-        void CPlayerSendMsg_HSKQuestActCum806_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_HSKQuestActCum806_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_HSKQuestActCum806_user(_this, CPlayerSendMsg_HSKQuestActCum806_next);
         };
-        void CPlayerSendMsg_HSKQuestSucc808_wrapper(struct CPlayer* _this, char byQuestCode, bool bSucc)
+        static void CPlayerSendMsg_HSKQuestSucc808_wrapper(struct CPlayer* _this, char byQuestCode, bool bSucc)
         {
            CPlayerSendMsg_HSKQuestSucc808_user(_this, byQuestCode, bSucc, CPlayerSendMsg_HSKQuestSucc808_next);
         };
-        void CPlayerSendMsg_HonorGuildMark810_wrapper(struct CPlayer* _this, char byRank)
+        static void CPlayerSendMsg_HonorGuildMark810_wrapper(struct CPlayer* _this, char byRank)
         {
            CPlayerSendMsg_HonorGuildMark810_user(_this, byRank, CPlayerSendMsg_HonorGuildMark810_next);
         };
-        void CPlayerSendMsg_InformTaxIncome812_wrapper(struct CPlayer* _this, char byRet, unsigned int dwComm, char* pwszDate)
+        static void CPlayerSendMsg_InformTaxIncome812_wrapper(struct CPlayer* _this, char byRet, unsigned int dwComm, char* pwszDate)
         {
            CPlayerSendMsg_InformTaxIncome812_user(_this, byRet, dwComm, pwszDate, CPlayerSendMsg_InformTaxIncome812_next);
         };
-        void CPlayerSendMsg_Init_Action_Point814_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_Init_Action_Point814_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_Init_Action_Point814_user(_this, CPlayerSendMsg_Init_Action_Point814_next);
         };
-        void CPlayerSendMsg_InsertItemInform816_wrapper(struct CPlayer* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_InsertItemInform816_wrapper(struct CPlayer* _this, char byStorageCode, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_InsertItemInform816_user(_this, byStorageCode, pItem, CPlayerSendMsg_InsertItemInform816_next);
         };
-        void CPlayerSendMsg_InsertNewQuest818_wrapper(struct CPlayer* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pQuestDB)
+        static void CPlayerSendMsg_InsertNewQuest818_wrapper(struct CPlayer* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pQuestDB)
         {
            CPlayerSendMsg_InsertNewQuest818_user(_this, bySlotIndex, pQuestDB, CPlayerSendMsg_InsertNewQuest818_next);
         };
-        void CPlayerSendMsg_InsertNextQuest820_wrapper(struct CPlayer* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pQuestDB)
+        static void CPlayerSendMsg_InsertNextQuest820_wrapper(struct CPlayer* _this, char bySlotIndex, struct _QUEST_DB_BASE::_LIST* pQuestDB)
         {
            CPlayerSendMsg_InsertNextQuest820_user(_this, bySlotIndex, pQuestDB, CPlayerSendMsg_InsertNextQuest820_next);
         };
-        void CPlayerSendMsg_InsertQuestFailure822_wrapper(struct CPlayer* _this, char byEventType, unsigned int dwEventIndex, char byEventNodeIndex)
+        static void CPlayerSendMsg_InsertQuestFailure822_wrapper(struct CPlayer* _this, char byEventType, unsigned int dwEventIndex, char byEventNodeIndex)
         {
            CPlayerSendMsg_InsertQuestFailure822_user(_this, byEventType, dwEventIndex, byEventNodeIndex, CPlayerSendMsg_InsertQuestFailure822_next);
         };
-        void CPlayerSendMsg_InsertQuestItemInform824_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_InsertQuestItemInform824_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_InsertQuestItemInform824_user(_this, pItem, CPlayerSendMsg_InsertQuestItemInform824_next);
         };
-        void CPlayerSendMsg_InvenDownloadResult826_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_InvenDownloadResult826_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_InvenDownloadResult826_user(_this, CPlayerSendMsg_InvenDownloadResult826_next);
         };
-        void CPlayerSendMsg_ItemDowngrade828_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ItemDowngrade828_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ItemDowngrade828_user(_this, byErrCode, CPlayerSendMsg_ItemDowngrade828_next);
         };
-        void CPlayerSendMsg_ItemStorageRefresh830_wrapper(struct CPlayer* _this, char byStorageCode)
+        static void CPlayerSendMsg_ItemStorageRefresh830_wrapper(struct CPlayer* _this, char byStorageCode)
         {
            CPlayerSendMsg_ItemStorageRefresh830_user(_this, byStorageCode, CPlayerSendMsg_ItemStorageRefresh830_next);
         };
-        void CPlayerSendMsg_ItemUpgrade832_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ItemUpgrade832_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ItemUpgrade832_user(_this, byErrCode, CPlayerSendMsg_ItemUpgrade832_next);
         };
-        void CPlayerSendMsg_JadeEffectErr834_wrapper(struct CPlayer* _this, char byErrorCode)
+        static void CPlayerSendMsg_JadeEffectErr834_wrapper(struct CPlayer* _this, char byErrorCode)
         {
            CPlayerSendMsg_JadeEffectErr834_user(_this, byErrorCode, CPlayerSendMsg_JadeEffectErr834_next);
         };
-        void CPlayerSendMsg_LendItemTimeExpired836_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial)
+        static void CPlayerSendMsg_LendItemTimeExpired836_wrapper(struct CPlayer* _this, char byStorageCode, uint16_t wSerial)
         {
            CPlayerSendMsg_LendItemTimeExpired836_user(_this, byStorageCode, wSerial, CPlayerSendMsg_LendItemTimeExpired836_next);
         };
-        void CPlayerSendMsg_Level838_wrapper(struct CPlayer* _this, int nLevel)
+        static void CPlayerSendMsg_Level838_wrapper(struct CPlayer* _this, int nLevel)
         {
            CPlayerSendMsg_Level838_user(_this, nLevel, CPlayerSendMsg_Level838_next);
         };
-        void CPlayerSendMsg_LinkBoardDownloadResult840_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_LinkBoardDownloadResult840_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_LinkBoardDownloadResult840_user(_this, CPlayerSendMsg_LinkBoardDownloadResult840_next);
         };
-        void CPlayerSendMsg_MacroRequest842_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_MacroRequest842_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_MacroRequest842_user(_this, CPlayerSendMsg_MacroRequest842_next);
         };
-        void CPlayerSendMsg_MadeTrapNumInform844_wrapper(struct CPlayer* _this, char byNum)
+        static void CPlayerSendMsg_MadeTrapNumInform844_wrapper(struct CPlayer* _this, char byNum)
         {
            CPlayerSendMsg_MadeTrapNumInform844_user(_this, byNum, CPlayerSendMsg_MadeTrapNumInform844_next);
         };
-        void CPlayerSendMsg_MakeItemCheatSendButtonEnable846_wrapper(struct CPlayer* _this, bool bEnableSendButton)
+        static void CPlayerSendMsg_MakeItemCheatSendButtonEnable846_wrapper(struct CPlayer* _this, bool bEnableSendButton)
         {
            CPlayerSendMsg_MakeItemCheatSendButtonEnable846_user(_this, bEnableSendButton, CPlayerSendMsg_MakeItemCheatSendButtonEnable846_next);
         };
-        void CPlayerSendMsg_MakeItemResult848_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_MakeItemResult848_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_MakeItemResult848_user(_this, byErrCode, CPlayerSendMsg_MakeItemResult848_next);
         };
-        void CPlayerSendMsg_MapEnvInform850_wrapper(struct CPlayer* _this, char byMapCode, unsigned int dwMapEnvCode)
+        static void CPlayerSendMsg_MapEnvInform850_wrapper(struct CPlayer* _this, char byMapCode, unsigned int dwMapEnvCode)
         {
            CPlayerSendMsg_MapEnvInform850_user(_this, byMapCode, dwMapEnvCode, CPlayerSendMsg_MapEnvInform850_next);
         };
-        void CPlayerSendMsg_MapOut852_wrapper(struct CPlayer* _this, char byMapOutCode, char byNextMapCode)
+        static void CPlayerSendMsg_MapOut852_wrapper(struct CPlayer* _this, char byMapOutCode, char byNextMapCode)
         {
            CPlayerSendMsg_MapOut852_user(_this, byMapOutCode, byNextMapCode, CPlayerSendMsg_MapOut852_next);
         };
-        void CPlayerSendMsg_MaxHFSP854_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_MaxHFSP854_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_MaxHFSP854_user(_this, CPlayerSendMsg_MaxHFSP854_next);
         };
-        void CPlayerSendMsg_MaxPvpPointInform856_wrapper(struct CPlayer* _this, int nMax)
+        static void CPlayerSendMsg_MaxPvpPointInform856_wrapper(struct CPlayer* _this, int nMax)
         {
            CPlayerSendMsg_MaxPvpPointInform856_user(_this, nMax, CPlayerSendMsg_MaxPvpPointInform856_next);
         };
-        void CPlayerSendMsg_MineCancle858_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_MineCancle858_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_MineCancle858_user(_this, CPlayerSendMsg_MineCancle858_next);
         };
-        void CPlayerSendMsg_MineCompleteResult860_wrapper(struct CPlayer* _this, char byErrCode, char byNewOreIndex, uint16_t dwOreSerial, char byOreDur, uint16_t dwBatteryLeftDurPoint)
+        static void CPlayerSendMsg_MineCompleteResult860_wrapper(struct CPlayer* _this, char byErrCode, char byNewOreIndex, uint16_t dwOreSerial, char byOreDur, uint16_t dwBatteryLeftDurPoint)
         {
            CPlayerSendMsg_MineCompleteResult860_user(_this, byErrCode, byNewOreIndex, dwOreSerial, byOreDur, dwBatteryLeftDurPoint, CPlayerSendMsg_MineCompleteResult860_next);
         };
-        void CPlayerSendMsg_MineStartResult862_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_MineStartResult862_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_MineStartResult862_user(_this, byErrCode, CPlayerSendMsg_MineStartResult862_next);
         };
-        void CPlayerSendMsg_MonsterAggroData864_wrapper(struct CPlayer* _this, struct CCharacter* pCharacter)
+        static void CPlayerSendMsg_MonsterAggroData864_wrapper(struct CPlayer* _this, struct CCharacter* pCharacter)
         {
            CPlayerSendMsg_MonsterAggroData864_user(_this, pCharacter, CPlayerSendMsg_MonsterAggroData864_next);
         };
-        void CPlayerSendMsg_MoveError866_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_MoveError866_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_MoveError866_user(_this, byRetCode, CPlayerSendMsg_MoveError866_next);
         };
-        void CPlayerSendMsg_MoveNext868_wrapper(struct CPlayer* _this, bool bOtherSend)
+        static void CPlayerSendMsg_MoveNext868_wrapper(struct CPlayer* _this, bool bOtherSend)
         {
            CPlayerSendMsg_MoveNext868_user(_this, bOtherSend, CPlayerSendMsg_MoveNext868_next);
         };
-        void CPlayerSendMsg_MovePortal870_wrapper(struct CPlayer* _this, char byMapIndex, float* pfStartPos, char byZoneCode)
+        static void CPlayerSendMsg_MovePortal870_wrapper(struct CPlayer* _this, char byMapIndex, float* pfStartPos, char byZoneCode)
         {
            CPlayerSendMsg_MovePortal870_user(_this, byMapIndex, pfStartPos, byZoneCode, CPlayerSendMsg_MovePortal870_next);
         };
-        void CPlayerSendMsg_MovePortal872_wrapper(struct CPlayer* _this, char byRet, char byMapIndex, char byPotalIndex, float* pfStartPos, bool bEqualZone)
+        static void CPlayerSendMsg_MovePortal872_wrapper(struct CPlayer* _this, char byRet, char byMapIndex, char byPotalIndex, float* pfStartPos, bool bEqualZone)
         {
            CPlayerSendMsg_MovePortal872_user(_this, byRet, byMapIndex, byPotalIndex, pfStartPos, bEqualZone, CPlayerSendMsg_MovePortal872_next);
         };
-        void CPlayerSendMsg_MoveToOwnStoneMapInform874_wrapper(struct CPlayer* _this, char byStoneMapMoveInfo)
+        static void CPlayerSendMsg_MoveToOwnStoneMapInform874_wrapper(struct CPlayer* _this, char byStoneMapMoveInfo)
         {
            CPlayerSendMsg_MoveToOwnStoneMapInform874_user(_this, byStoneMapMoveInfo, CPlayerSendMsg_MoveToOwnStoneMapInform874_next);
         };
-        void CPlayerSendMsg_MoveToOwnStoneMapResult876_wrapper(struct CPlayer* _this, char byRetCode, char byMapIndex, float* pos)
+        static void CPlayerSendMsg_MoveToOwnStoneMapResult876_wrapper(struct CPlayer* _this, char byRetCode, char byMapIndex, float* pos)
         {
            CPlayerSendMsg_MoveToOwnStoneMapResult876_user(_this, byRetCode, byMapIndex, pos, CPlayerSendMsg_MoveToOwnStoneMapResult876_next);
         };
-        void CPlayerSendMsg_NPCLinkItemCheckResult878_wrapper(struct CPlayer* _this, char byResCode, struct _STORAGE_POS_INDIV* pStorage)
+        static void CPlayerSendMsg_NPCLinkItemCheckResult878_wrapper(struct CPlayer* _this, char byResCode, struct _STORAGE_POS_INDIV* pStorage)
         {
            CPlayerSendMsg_NPCLinkItemCheckResult878_user(_this, byResCode, pStorage, CPlayerSendMsg_NPCLinkItemCheckResult878_next);
         };
-        void CPlayerSendMsg_NewMovePotionResult880_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_NewMovePotionResult880_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_NewMovePotionResult880_user(_this, CPlayerSendMsg_NewMovePotionResult880_next);
         };
-        void CPlayerSendMsg_NewViewOther882_wrapper(struct CPlayer* _this, char byViewType)
+        static void CPlayerSendMsg_NewViewOther882_wrapper(struct CPlayer* _this, char byViewType)
         {
            CPlayerSendMsg_NewViewOther882_user(_this, byViewType, CPlayerSendMsg_NewViewOther882_next);
         };
-        void CPlayerSendMsg_NotifyEffectForGetItem884_wrapper(struct CPlayer* _this, char byBoxType, unsigned int dwCharSerial, char* szCharName, struct _STORAGE_LIST::_db_con* pItem, bool bCircle)
+        static void CPlayerSendMsg_NotifyEffectForGetItem884_wrapper(struct CPlayer* _this, char byBoxType, unsigned int dwCharSerial, char* szCharName, struct _STORAGE_LIST::_db_con* pItem, bool bCircle)
         {
            CPlayerSendMsg_NotifyEffectForGetItem884_user(_this, byBoxType, dwCharSerial, szCharName, pItem, bCircle, CPlayerSendMsg_NotifyEffectForGetItem884_next);
         };
-        void CPlayerSendMsg_NotifyGetExpInfo886_wrapper(struct CPlayer* _this, long double dOldExp, long double dAlterExp, long double dCurExp)
+        static void CPlayerSendMsg_NotifyGetExpInfo886_wrapper(struct CPlayer* _this, long double dOldExp, long double dAlterExp, long double dCurExp)
         {
            CPlayerSendMsg_NotifyGetExpInfo886_user(_this, dOldExp, dAlterExp, dCurExp, CPlayerSendMsg_NotifyGetExpInfo886_next);
         };
-        void CPlayerSendMsg_Notify_ExceptFromRaceRanking888_wrapper(struct CPlayer* _this, int bExcepted)
+        static void CPlayerSendMsg_Notify_ExceptFromRaceRanking888_wrapper(struct CPlayer* _this, int bExcepted)
         {
            CPlayerSendMsg_Notify_ExceptFromRaceRanking888_user(_this, bExcepted, CPlayerSendMsg_Notify_ExceptFromRaceRanking888_next);
         };
-        void CPlayerSendMsg_Notify_Get_Golden_Box890_wrapper(struct CPlayer* _this, char byBoxType, unsigned int dwCharSerial, char* szCharName, struct _STORAGE_LIST::_db_con* pItem, bool bCircle)
+        static void CPlayerSendMsg_Notify_Get_Golden_Box890_wrapper(struct CPlayer* _this, char byBoxType, unsigned int dwCharSerial, char* szCharName, struct _STORAGE_LIST::_db_con* pItem, bool bCircle)
         {
            CPlayerSendMsg_Notify_Get_Golden_Box890_user(_this, byBoxType, dwCharSerial, szCharName, pItem, bCircle, CPlayerSendMsg_Notify_Get_Golden_Box890_next);
         };
-        void CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_user(_this, CPlayerSendMsg_Notify_Gravity_Stone_Owner_Die892_next);
         };
-        void CPlayerSendMsg_Notify_Me_Get_Golden_Box894_wrapper(struct CPlayer* _this, char byBoxType, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_Notify_Me_Get_Golden_Box894_wrapper(struct CPlayer* _this, char byBoxType, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_Notify_Me_Get_Golden_Box894_user(_this, byBoxType, pItem, CPlayerSendMsg_Notify_Me_Get_Golden_Box894_next);
         };
-        void CPlayerSendMsg_NpcQuestHistoryInform896_wrapper(struct CPlayer* _this, char bySlotIndex)
+        static void CPlayerSendMsg_NpcQuestHistoryInform896_wrapper(struct CPlayer* _this, char bySlotIndex)
         {
            CPlayerSendMsg_NpcQuestHistoryInform896_user(_this, bySlotIndex, CPlayerSendMsg_NpcQuestHistoryInform896_next);
         };
-        void CPlayerSendMsg_NpcQuestListResult898_wrapper(struct CPlayer* _this, struct _NPCQuestIndexTempData* pQuestIndexData)
+        static void CPlayerSendMsg_NpcQuestListResult898_wrapper(struct CPlayer* _this, struct _NPCQuestIndexTempData* pQuestIndexData)
         {
            CPlayerSendMsg_NpcQuestListResult898_user(_this, pQuestIndexData, CPlayerSendMsg_NpcQuestListResult898_next);
         };
-        void CPlayerSendMsg_OffPartResult900_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_OffPartResult900_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_OffPartResult900_user(_this, byErrCode, CPlayerSendMsg_OffPartResult900_next);
         };
-        void CPlayerSendMsg_OfferSuggestResult902_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_OfferSuggestResult902_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_OfferSuggestResult902_user(_this, byRetCode, CPlayerSendMsg_OfferSuggestResult902_next);
         };
-        void CPlayerSendMsg_OreCuttingResult904_wrapper(struct CPlayer* _this, char byErrCode, char byLeftOreNum, unsigned int dwConsumDalant)
+        static void CPlayerSendMsg_OreCuttingResult904_wrapper(struct CPlayer* _this, char byErrCode, char byLeftOreNum, unsigned int dwConsumDalant)
         {
            CPlayerSendMsg_OreCuttingResult904_user(_this, byErrCode, byLeftOreNum, dwConsumDalant, CPlayerSendMsg_OreCuttingResult904_next);
         };
-        void CPlayerSendMsg_OreIntoBagResult906_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wNewSerial, char byLendType, unsigned int dwLendTime)
+        static void CPlayerSendMsg_OreIntoBagResult906_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wNewSerial, char byLendType, unsigned int dwLendTime)
         {
            CPlayerSendMsg_OreIntoBagResult906_user(_this, byErrCode, wNewSerial, byLendType, dwLendTime, CPlayerSendMsg_OreIntoBagResult906_next);
         };
-        void CPlayerSendMsg_OreTransferCount908_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_OreTransferCount908_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_OreTransferCount908_user(_this, CPlayerSendMsg_OreTransferCount908_next);
         };
-        void CPlayerSendMsg_OtherShapeAll910_wrapper(struct CPlayer* _this, struct CPlayer* pDst)
+        static void CPlayerSendMsg_OtherShapeAll910_wrapper(struct CPlayer* _this, struct CPlayer* pDst)
         {
            CPlayerSendMsg_OtherShapeAll910_user(_this, pDst, CPlayerSendMsg_OtherShapeAll910_next);
         };
-        void CPlayerSendMsg_OtherShapeError912_wrapper(struct CPlayer* _this, struct CPlayer* pDst, char byErrCode)
+        static void CPlayerSendMsg_OtherShapeError912_wrapper(struct CPlayer* _this, struct CPlayer* pDst, char byErrCode)
         {
            CPlayerSendMsg_OtherShapeError912_user(_this, pDst, byErrCode, CPlayerSendMsg_OtherShapeError912_next);
         };
-        void CPlayerSendMsg_OtherShapePart914_wrapper(struct CPlayer* _this, struct CPlayer* pDst)
+        static void CPlayerSendMsg_OtherShapePart914_wrapper(struct CPlayer* _this, struct CPlayer* pDst)
         {
            CPlayerSendMsg_OtherShapePart914_user(_this, pDst, CPlayerSendMsg_OtherShapePart914_next);
         };
-        void CPlayerSendMsg_OtherShapePartEx_CashChange916_wrapper(struct CPlayer* _this, struct CPlayer* pDst, CPlayer::CashChangeStateFlag ServerData, CPlayer::CashChangeStateFlag ClinetData)
+        static void CPlayerSendMsg_OtherShapePartEx_CashChange916_wrapper(struct CPlayer* _this, struct CPlayer* pDst, CPlayer::CashChangeStateFlag ServerData, CPlayer::CashChangeStateFlag ClinetData)
         {
            CPlayerSendMsg_OtherShapePartEx_CashChange916_user(_this, pDst, ServerData, ClinetData, CPlayerSendMsg_OtherShapePartEx_CashChange916_next);
         };
-        void CPlayerSendMsg_PartyAlterLootShareResult918_wrapper(struct CPlayer* _this, char byLootShareMode)
+        static void CPlayerSendMsg_PartyAlterLootShareResult918_wrapper(struct CPlayer* _this, char byLootShareMode)
         {
            CPlayerSendMsg_PartyAlterLootShareResult918_user(_this, byLootShareMode, CPlayerSendMsg_PartyAlterLootShareResult918_next);
         };
-        void CPlayerSendMsg_PartyDisjointResult920_wrapper(struct CPlayer* _this, char bSuccess)
+        static void CPlayerSendMsg_PartyDisjointResult920_wrapper(struct CPlayer* _this, char bSuccess)
         {
            CPlayerSendMsg_PartyDisjointResult920_user(_this, bSuccess, CPlayerSendMsg_PartyDisjointResult920_next);
         };
-        void CPlayerSendMsg_PartyJoinApplicationQuestion922_wrapper(struct CPlayer* _this, struct CPlayer* pJoiner)
+        static void CPlayerSendMsg_PartyJoinApplicationQuestion922_wrapper(struct CPlayer* _this, struct CPlayer* pJoiner)
         {
            CPlayerSendMsg_PartyJoinApplicationQuestion922_user(_this, pJoiner, CPlayerSendMsg_PartyJoinApplicationQuestion922_next);
         };
-        void CPlayerSendMsg_PartyJoinFailLevel924_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_PartyJoinFailLevel924_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_PartyJoinFailLevel924_user(_this, CPlayerSendMsg_PartyJoinFailLevel924_next);
         };
-        void CPlayerSendMsg_PartyJoinInvitationQuestion926_wrapper(struct CPlayer* _this, uint16_t wJoinerIndex)
+        static void CPlayerSendMsg_PartyJoinInvitationQuestion926_wrapper(struct CPlayer* _this, uint16_t wJoinerIndex)
         {
            CPlayerSendMsg_PartyJoinInvitationQuestion926_user(_this, wJoinerIndex, CPlayerSendMsg_PartyJoinInvitationQuestion926_next);
         };
-        void CPlayerSendMsg_PartyJoinJoinerResult928_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_PartyJoinJoinerResult928_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_PartyJoinJoinerResult928_user(_this, CPlayerSendMsg_PartyJoinJoinerResult928_next);
         };
-        void CPlayerSendMsg_PartyJoinMemberResult930_wrapper(struct CPlayer* _this, struct CPartyPlayer* pJoiner, char byLootShareMode)
+        static void CPlayerSendMsg_PartyJoinMemberResult930_wrapper(struct CPlayer* _this, struct CPartyPlayer* pJoiner, char byLootShareMode)
         {
            CPlayerSendMsg_PartyJoinMemberResult930_user(_this, pJoiner, byLootShareMode, CPlayerSendMsg_PartyJoinMemberResult930_next);
         };
-        void CPlayerSendMsg_PartyLeaveCompulsionResult932_wrapper(struct CPlayer* _this, struct CPartyPlayer* pLeaver)
+        static void CPlayerSendMsg_PartyLeaveCompulsionResult932_wrapper(struct CPlayer* _this, struct CPartyPlayer* pLeaver)
         {
            CPlayerSendMsg_PartyLeaveCompulsionResult932_user(_this, pLeaver, CPlayerSendMsg_PartyLeaveCompulsionResult932_next);
         };
-        void CPlayerSendMsg_PartyLeaveSelfResult934_wrapper(struct CPlayer* _this, struct CPartyPlayer* pLeaver, bool bWorldExit)
+        static void CPlayerSendMsg_PartyLeaveSelfResult934_wrapper(struct CPlayer* _this, struct CPartyPlayer* pLeaver, bool bWorldExit)
         {
            CPlayerSendMsg_PartyLeaveSelfResult934_user(_this, pLeaver, bWorldExit, CPlayerSendMsg_PartyLeaveSelfResult934_next);
         };
-        void CPlayerSendMsg_PartyLockResult936_wrapper(struct CPlayer* _this, char byRet)
+        static void CPlayerSendMsg_PartyLockResult936_wrapper(struct CPlayer* _this, char byRet)
         {
            CPlayerSendMsg_PartyLockResult936_user(_this, byRet, CPlayerSendMsg_PartyLockResult936_next);
         };
-        void CPlayerSendMsg_PartyLootItemInform938_wrapper(struct CPlayer* _this, unsigned int dwTakerSerial, char byTableCode, uint16_t wItemIndex, char byNum)
+        static void CPlayerSendMsg_PartyLootItemInform938_wrapper(struct CPlayer* _this, unsigned int dwTakerSerial, char byTableCode, uint16_t wItemIndex, char byNum)
         {
            CPlayerSendMsg_PartyLootItemInform938_user(_this, dwTakerSerial, byTableCode, wItemIndex, byNum, CPlayerSendMsg_PartyLootItemInform938_next);
         };
-        void CPlayerSendMsg_PartySuccessResult940_wrapper(struct CPlayer* _this, struct CPartyPlayer* pSuccessor)
+        static void CPlayerSendMsg_PartySuccessResult940_wrapper(struct CPlayer* _this, struct CPartyPlayer* pSuccessor)
         {
            CPlayerSendMsg_PartySuccessResult940_user(_this, pSuccessor, CPlayerSendMsg_PartySuccessResult940_next);
         };
-        void CPlayerSendMsg_PcRoomCharClass942_wrapper(struct CPlayer* _this, unsigned int dwPcRoomClassIndex)
+        static void CPlayerSendMsg_PcRoomCharClass942_wrapper(struct CPlayer* _this, unsigned int dwPcRoomClassIndex)
         {
            CPlayerSendMsg_PcRoomCharClass942_user(_this, dwPcRoomClassIndex, CPlayerSendMsg_PcRoomCharClass942_next);
         };
-        void CPlayerSendMsg_PcRoomError944_wrapper(struct CPlayer* _this, char byErrorCode)
+        static void CPlayerSendMsg_PcRoomError944_wrapper(struct CPlayer* _this, char byErrorCode)
         {
            CPlayerSendMsg_PcRoomError944_user(_this, byErrorCode, CPlayerSendMsg_PcRoomError944_next);
         };
-        void CPlayerSendMsg_PostContent946_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial, char* wszContent, char byTableCode, uint16_t wItemIndex, uint64_t dwDur, unsigned int dwLv, unsigned int dwGold)
+        static void CPlayerSendMsg_PostContent946_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial, char* wszContent, char byTableCode, uint16_t wItemIndex, uint64_t dwDur, unsigned int dwLv, unsigned int dwGold)
         {
            CPlayerSendMsg_PostContent946_user(_this, byErrCode, dwPostSerial, wszContent, byTableCode, wItemIndex, dwDur, dwLv, dwGold, CPlayerSendMsg_PostContent946_next);
         };
-        void CPlayerSendMsg_PostDelete948_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial)
+        static void CPlayerSendMsg_PostDelete948_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial)
         {
            CPlayerSendMsg_PostDelete948_user(_this, byErrCode, dwPostSerial, CPlayerSendMsg_PostDelete948_next);
         };
-        void CPlayerSendMsg_PostDelivery950_wrapper(struct CPlayer* _this, char byIndex, unsigned int dwPostSerial, char* wszSendName, char* wszTitle, bool bItem, bool bGold, char byState)
+        static void CPlayerSendMsg_PostDelivery950_wrapper(struct CPlayer* _this, char byIndex, unsigned int dwPostSerial, char* wszSendName, char* wszTitle, bool bItem, bool bGold, char byState)
         {
            CPlayerSendMsg_PostDelivery950_user(_this, byIndex, dwPostSerial, wszSendName, wszTitle, bItem, bGold, byState, CPlayerSendMsg_PostDelivery950_next);
         };
-        void CPlayerSendMsg_PostItemGold952_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_PostItemGold952_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_PostItemGold952_user(_this, byErrCode, CPlayerSendMsg_PostItemGold952_next);
         };
-        void CPlayerSendMsg_PostReturn954_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial, char* wszRecvName, char* wszTitle, char* wszContent, char byTableCode, uint16_t wItemIndex, uint64_t dwDur, unsigned int dwLv, unsigned int dwGold)
+        static void CPlayerSendMsg_PostReturn954_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial, char* wszRecvName, char* wszTitle, char* wszContent, char byTableCode, uint16_t wItemIndex, uint64_t dwDur, unsigned int dwLv, unsigned int dwGold)
         {
            CPlayerSendMsg_PostReturn954_user(_this, byErrCode, dwPostSerial, wszRecvName, wszTitle, wszContent, byTableCode, wItemIndex, dwDur, dwLv, dwGold, CPlayerSendMsg_PostReturn954_next);
         };
-        void CPlayerSendMsg_PostReturnConfirm956_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial)
+        static void CPlayerSendMsg_PostReturnConfirm956_wrapper(struct CPlayer* _this, char byErrCode, unsigned int dwPostSerial)
         {
            CPlayerSendMsg_PostReturnConfirm956_user(_this, byErrCode, dwPostSerial, CPlayerSendMsg_PostReturnConfirm956_next);
         };
-        void CPlayerSendMsg_PostSendReply958_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_PostSendReply958_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_PostSendReply958_user(_this, byErrCode, CPlayerSendMsg_PostSendReply958_next);
         };
-        void CPlayerSendMsg_PotionDelayTime960_wrapper(struct CPlayer* _this, unsigned int* pdwPotionNextUseTime, unsigned int dwCurTime)
+        static void CPlayerSendMsg_PotionDelayTime960_wrapper(struct CPlayer* _this, unsigned int* pdwPotionNextUseTime, unsigned int dwCurTime)
         {
            CPlayerSendMsg_PotionDelayTime960_user(_this, pdwPotionNextUseTime, dwCurTime, CPlayerSendMsg_PotionDelayTime960_next);
         };
-        void CPlayerSendMsg_PotionDivision962_wrapper(struct CPlayer* _this, uint16_t wSerial, char byParentAmount, uint16_t wChildSerial, char byChildAmount, int nRet)
+        static void CPlayerSendMsg_PotionDivision962_wrapper(struct CPlayer* _this, uint16_t wSerial, char byParentAmount, uint16_t wChildSerial, char byChildAmount, int nRet)
         {
            CPlayerSendMsg_PotionDivision962_user(_this, wSerial, byParentAmount, wChildSerial, byChildAmount, nRet, CPlayerSendMsg_PotionDivision962_next);
         };
-        void CPlayerSendMsg_PotionSeparation964_wrapper(struct CPlayer* _this, uint16_t wParentSerial, char byParentAmount, uint16_t wChildSerial, char byChildAmount, int nRet)
+        static void CPlayerSendMsg_PotionSeparation964_wrapper(struct CPlayer* _this, uint16_t wParentSerial, char byParentAmount, uint16_t wChildSerial, char byChildAmount, int nRet)
         {
            CPlayerSendMsg_PotionSeparation964_user(_this, wParentSerial, byParentAmount, wChildSerial, byChildAmount, nRet, CPlayerSendMsg_PotionSeparation964_next);
         };
-        void CPlayerSendMsg_PremiumCashItemUse966_wrapper(struct CPlayer* _this, uint16_t wSerial)
+        static void CPlayerSendMsg_PremiumCashItemUse966_wrapper(struct CPlayer* _this, uint16_t wSerial)
         {
            CPlayerSendMsg_PremiumCashItemUse966_user(_this, wSerial, CPlayerSendMsg_PremiumCashItemUse966_next);
         };
-        void CPlayerSendMsg_ProposeVoteResult968_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_ProposeVoteResult968_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_ProposeVoteResult968_user(_this, byRetCode, CPlayerSendMsg_ProposeVoteResult968_next);
         };
-        void CPlayerSendMsg_PvpRankListVersionUp970_wrapper(struct CPlayer* _this, char byVersion)
+        static void CPlayerSendMsg_PvpRankListVersionUp970_wrapper(struct CPlayer* _this, char byVersion)
         {
            CPlayerSendMsg_PvpRankListVersionUp970_user(_this, byVersion, CPlayerSendMsg_PvpRankListVersionUp970_next);
         };
-        void CPlayerSendMsg_QuestComplete972_wrapper(struct CPlayer* _this, char byQuestDBSlot)
+        static void CPlayerSendMsg_QuestComplete972_wrapper(struct CPlayer* _this, char byQuestDBSlot)
         {
            CPlayerSendMsg_QuestComplete972_user(_this, byQuestDBSlot, CPlayerSendMsg_QuestComplete972_next);
         };
-        void CPlayerSendMsg_QuestDownloadResult974_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_QuestDownloadResult974_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_QuestDownloadResult974_user(_this, CPlayerSendMsg_QuestDownloadResult974_next);
         };
-        void CPlayerSendMsg_QuestFailure976_wrapper(struct CPlayer* _this, char byFailCode, char byQuestDBSlot)
+        static void CPlayerSendMsg_QuestFailure976_wrapper(struct CPlayer* _this, char byFailCode, char byQuestDBSlot)
         {
            CPlayerSendMsg_QuestFailure976_user(_this, byFailCode, byQuestDBSlot, CPlayerSendMsg_QuestFailure976_next);
         };
-        void CPlayerSendMsg_QuestGiveUpResult978_wrapper(struct CPlayer* _this, char byReturnSlot)
+        static void CPlayerSendMsg_QuestGiveUpResult978_wrapper(struct CPlayer* _this, char byReturnSlot)
         {
            CPlayerSendMsg_QuestGiveUpResult978_user(_this, byReturnSlot, CPlayerSendMsg_QuestGiveUpResult978_next);
         };
-        void CPlayerSendMsg_QuestHistoryDownloadResult980_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_QuestHistoryDownloadResult980_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_QuestHistoryDownloadResult980_user(_this, CPlayerSendMsg_QuestHistoryDownloadResult980_next);
         };
-        void CPlayerSendMsg_QuestProcess982_wrapper(struct CPlayer* _this, char byQuestDBSlot, char byActIndex, uint16_t wCount)
+        static void CPlayerSendMsg_QuestProcess982_wrapper(struct CPlayer* _this, char byQuestDBSlot, char byActIndex, uint16_t wCount)
         {
            CPlayerSendMsg_QuestProcess982_user(_this, byQuestDBSlot, byActIndex, wCount, CPlayerSendMsg_QuestProcess982_next);
         };
-        void CPlayerSendMsg_RACE_Greeting984_wrapper(struct CPlayer* _this, char* wszBossName, char* wszMsg)
+        static void CPlayerSendMsg_RACE_Greeting984_wrapper(struct CPlayer* _this, char* wszBossName, char* wszMsg)
         {
            CPlayerSendMsg_RACE_Greeting984_user(_this, wszBossName, wszMsg, CPlayerSendMsg_RACE_Greeting984_next);
         };
-        void CPlayerSendMsg_RaceBattlePenelty986_wrapper(struct CPlayer* _this, int nAlterPoint, char byAlterType)
+        static void CPlayerSendMsg_RaceBattlePenelty986_wrapper(struct CPlayer* _this, int nAlterPoint, char byAlterType)
         {
            CPlayerSendMsg_RaceBattlePenelty986_user(_this, nAlterPoint, byAlterType, CPlayerSendMsg_RaceBattlePenelty986_next);
         };
-        void CPlayerSendMsg_RaceBossCryMsg988_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_RaceBossCryMsg988_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_RaceBossCryMsg988_user(_this, CPlayerSendMsg_RaceBossCryMsg988_next);
         };
-        void CPlayerSendMsg_RaceTopInform990_wrapper(struct CPlayer* _this, bool bTop)
+        static void CPlayerSendMsg_RaceTopInform990_wrapper(struct CPlayer* _this, bool bTop)
         {
            CPlayerSendMsg_RaceTopInform990_user(_this, bTop, CPlayerSendMsg_RaceTopInform990_next);
         };
-        void CPlayerSendMsg_RadarCharSearchResult992_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_RadarCharSearchResult992_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_RadarCharSearchResult992_user(_this, CPlayerSendMsg_RadarCharSearchResult992_next);
         };
-        void CPlayerSendMsg_RadarDelayTime994_wrapper(struct CPlayer* _this, unsigned int dwDelay)
+        static void CPlayerSendMsg_RadarDelayTime994_wrapper(struct CPlayer* _this, unsigned int dwDelay)
         {
            CPlayerSendMsg_RadarDelayTime994_user(_this, dwDelay, CPlayerSendMsg_RadarDelayTime994_next);
         };
-        void CPlayerSendMsg_ReEnterAsk996_wrapper(struct CPlayer* _this, uint16_t wChannelIndex, unsigned int dwChannelSerial)
+        static void CPlayerSendMsg_ReEnterAsk996_wrapper(struct CPlayer* _this, uint16_t wChannelIndex, unsigned int dwChannelSerial)
         {
            CPlayerSendMsg_ReEnterAsk996_user(_this, wChannelIndex, dwChannelSerial, CPlayerSendMsg_ReEnterAsk996_next);
         };
-        void CPlayerSendMsg_ReEnterDarkHoleResult998_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_ReEnterDarkHoleResult998_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_ReEnterDarkHoleResult998_user(_this, byRetCode, CPlayerSendMsg_ReEnterDarkHoleResult998_next);
         };
-        void CPlayerSendMsg_RealMovePoint1000_wrapper(struct CPlayer* _this, int n)
+        static void CPlayerSendMsg_RealMovePoint1000_wrapper(struct CPlayer* _this, int n)
         {
            CPlayerSendMsg_RealMovePoint1000_user(_this, n, CPlayerSendMsg_RealMovePoint1000_next);
         };
-        void CPlayerSendMsg_Recover1002_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_Recover1002_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_Recover1002_user(_this, CPlayerSendMsg_Recover1002_next);
         };
-        void CPlayerSendMsg_RecvHSKQuest1004_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_RecvHSKQuest1004_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_RecvHSKQuest1004_user(_this, CPlayerSendMsg_RecvHSKQuest1004_next);
         };
-        void CPlayerSendMsg_RefeshGroupTargetPosition1006_wrapper(struct CPlayer* _this, char byGroupType)
+        static void CPlayerSendMsg_RefeshGroupTargetPosition1006_wrapper(struct CPlayer* _this, char byGroupType)
         {
            CPlayerSendMsg_RefeshGroupTargetPosition1006_user(_this, byGroupType, CPlayerSendMsg_RefeshGroupTargetPosition1006_next);
         };
-        void CPlayerSendMsg_RegistBindResult1008_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_RegistBindResult1008_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_RegistBindResult1008_user(_this, byRetCode, CPlayerSendMsg_RegistBindResult1008_next);
         };
-        void CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_wrapper(struct CPlayer* _this, char byGroupType)
+        static void CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_wrapper(struct CPlayer* _this, char byGroupType)
         {
            CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_user(_this, byGroupType, CPlayerSendMsg_ReleaseGroupTargetObjectResult1010_next);
         };
-        void CPlayerSendMsg_ReleaseSiegeModeResult1012_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_ReleaseSiegeModeResult1012_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_ReleaseSiegeModeResult1012_user(_this, byRetCode, CPlayerSendMsg_ReleaseSiegeModeResult1012_next);
         };
-        void CPlayerSendMsg_RemainOreRate1014_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_RemainOreRate1014_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_RemainOreRate1014_user(_this, CPlayerSendMsg_RemainOreRate1014_next);
         };
-        void CPlayerSendMsg_RemainTimeInform1016_wrapper(struct CPlayer* _this, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
+        static void CPlayerSendMsg_RemainTimeInform1016_wrapper(struct CPlayer* _this, int16_t iType, int lRemainTime, struct _SYSTEMTIME* pstEndDate)
         {
            CPlayerSendMsg_RemainTimeInform1016_user(_this, iType, lRemainTime, pstEndDate, CPlayerSendMsg_RemainTimeInform1016_next);
         };
-        void CPlayerSendMsg_ResDivision1018_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pTargetOre)
+        static void CPlayerSendMsg_ResDivision1018_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pTargetOre)
         {
            CPlayerSendMsg_ResDivision1018_user(_this, byErrCode, pStartOre, pTargetOre, CPlayerSendMsg_ResDivision1018_next);
         };
-        void CPlayerSendMsg_ResSeparation1020_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pNewOre)
+        static void CPlayerSendMsg_ResSeparation1020_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pNewOre)
         {
            CPlayerSendMsg_ResSeparation1020_user(_this, byErrCode, pStartOre, pNewOre, CPlayerSendMsg_ResSeparation1020_next);
         };
-        void CPlayerSendMsg_ResultChangeTaxRate1022_wrapper(struct CPlayer* _this, char byRetCode, char byNextTax)
+        static void CPlayerSendMsg_ResultChangeTaxRate1022_wrapper(struct CPlayer* _this, char byRetCode, char byNextTax)
         {
            CPlayerSendMsg_ResultChangeTaxRate1022_user(_this, byRetCode, byNextTax, CPlayerSendMsg_ResultChangeTaxRate1022_next);
         };
-        void CPlayerSendMsg_ResultNpcQuest1024_wrapper(struct CPlayer* _this, bool bSucc)
+        static void CPlayerSendMsg_ResultNpcQuest1024_wrapper(struct CPlayer* _this, bool bSucc)
         {
            CPlayerSendMsg_ResultNpcQuest1024_user(_this, bSucc, CPlayerSendMsg_ResultNpcQuest1024_next);
         };
-        void CPlayerSendMsg_Resurrect1026_wrapper(struct CPlayer* _this, char byRet, bool bQuickPotion)
+        static void CPlayerSendMsg_Resurrect1026_wrapper(struct CPlayer* _this, char byRet, bool bQuickPotion)
         {
            CPlayerSendMsg_Resurrect1026_user(_this, byRet, bQuickPotion, CPlayerSendMsg_Resurrect1026_next);
         };
-        void CPlayerSendMsg_ResurrectInform1028_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_ResurrectInform1028_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_ResurrectInform1028_user(_this, CPlayerSendMsg_ResurrectInform1028_next);
         };
-        void CPlayerSendMsg_Revival1030_wrapper(struct CPlayer* _this, char byRet, bool bEquialZone)
+        static void CPlayerSendMsg_Revival1030_wrapper(struct CPlayer* _this, char byRet, bool bEquialZone)
         {
            CPlayerSendMsg_Revival1030_user(_this, byRet, bEquialZone, CPlayerSendMsg_Revival1030_next);
         };
-        void CPlayerSendMsg_RevivalOfJade1032_wrapper(struct CPlayer* _this, uint16_t wSuccRate)
+        static void CPlayerSendMsg_RevivalOfJade1032_wrapper(struct CPlayer* _this, uint16_t wSuccRate)
         {
            CPlayerSendMsg_RevivalOfJade1032_user(_this, wSuccRate, CPlayerSendMsg_RevivalOfJade1032_next);
         };
-        void CPlayerSendMsg_RewardAddItem1034_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, char byReason)
+        static void CPlayerSendMsg_RewardAddItem1034_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, char byReason)
         {
            CPlayerSendMsg_RewardAddItem1034_user(_this, pItem, byReason, CPlayerSendMsg_RewardAddItem1034_next);
         };
-        void CPlayerSendMsg_SFDelayRequest1036_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SFDelayRequest1036_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SFDelayRequest1036_user(_this, CPlayerSendMsg_SFDelayRequest1036_next);
         };
-        void CPlayerSendMsg_SelectClassResult1038_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSelClassIndex)
+        static void CPlayerSendMsg_SelectClassResult1038_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSelClassIndex)
         {
            CPlayerSendMsg_SelectClassResult1038_user(_this, byErrCode, wSelClassIndex, CPlayerSendMsg_SelectClassResult1038_next);
         };
-        void CPlayerSendMsg_SelectQuestReward1040_wrapper(struct CPlayer* _this, char byQuestDBSlot)
+        static void CPlayerSendMsg_SelectQuestReward1040_wrapper(struct CPlayer* _this, char byQuestDBSlot)
         {
            CPlayerSendMsg_SelectQuestReward1040_user(_this, byQuestDBSlot, CPlayerSendMsg_SelectQuestReward1040_next);
         };
-        void CPlayerSendMsg_SelectWaitedQuest1042_wrapper(struct CPlayer* _this, char byEventType, unsigned int dwEventIndex, char byEventNodeIndex)
+        static void CPlayerSendMsg_SelectWaitedQuest1042_wrapper(struct CPlayer* _this, char byEventType, unsigned int dwEventIndex, char byEventNodeIndex)
         {
            CPlayerSendMsg_SelectWaitedQuest1042_user(_this, byEventType, dwEventIndex, byEventNodeIndex, CPlayerSendMsg_SelectWaitedQuest1042_next);
         };
-        void CPlayerSendMsg_SellItemStoreResult1044_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byErrCode)
+        static void CPlayerSendMsg_SellItemStoreResult1044_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byErrCode)
         {
            CPlayerSendMsg_SellItemStoreResult1044_user(_this, pStore, byErrCode, CPlayerSendMsg_SellItemStoreResult1044_next);
         };
-        void CPlayerSendMsg_SetDPInform1046_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SetDPInform1046_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SetDPInform1046_user(_this, CPlayerSendMsg_SetDPInform1046_next);
         };
-        void CPlayerSendMsg_SetFPInform1048_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SetFPInform1048_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SetFPInform1048_user(_this, CPlayerSendMsg_SetFPInform1048_next);
         };
-        void CPlayerSendMsg_SetGroupMapPoint1050_wrapper(struct CPlayer* _this, char byRetCode, char byGroupType, char byMapCode, float* pzTar, char byRemain)
+        static void CPlayerSendMsg_SetGroupMapPoint1050_wrapper(struct CPlayer* _this, char byRetCode, char byGroupType, char byMapCode, float* pzTar, char byRemain)
         {
            CPlayerSendMsg_SetGroupMapPoint1050_user(_this, byRetCode, byGroupType, byMapCode, pzTar, byRemain, CPlayerSendMsg_SetGroupMapPoint1050_next);
         };
-        void CPlayerSendMsg_SetGroupTargetObjectResult1052_wrapper(struct CPlayer* _this, char byRetCode, char byGroupType)
+        static void CPlayerSendMsg_SetGroupTargetObjectResult1052_wrapper(struct CPlayer* _this, char byRetCode, char byGroupType)
         {
            CPlayerSendMsg_SetGroupTargetObjectResult1052_user(_this, byRetCode, byGroupType, CPlayerSendMsg_SetGroupTargetObjectResult1052_next);
         };
-        void CPlayerSendMsg_SetHPInform1054_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SetHPInform1054_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SetHPInform1054_user(_this, CPlayerSendMsg_SetHPInform1054_next);
         };
-        void CPlayerSendMsg_SetItemCheckResult1056_wrapper(struct CPlayer* _this, char byResult, unsigned int dwSetItem, char bySetEffectNum)
+        static void CPlayerSendMsg_SetItemCheckResult1056_wrapper(struct CPlayer* _this, char byResult, unsigned int dwSetItem, char bySetEffectNum)
         {
            CPlayerSendMsg_SetItemCheckResult1056_user(_this, byResult, dwSetItem, bySetEffectNum, CPlayerSendMsg_SetItemCheckResult1056_next);
         };
-        void CPlayerSendMsg_SetSPInform1058_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SetSPInform1058_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SetSPInform1058_user(_this, CPlayerSendMsg_SetSPInform1058_next);
         };
-        void CPlayerSendMsg_SetTargetObjectResult1060_wrapper(struct CPlayer* _this, char byRetCode, bool bForce)
+        static void CPlayerSendMsg_SetTargetObjectResult1060_wrapper(struct CPlayer* _this, char byRetCode, bool bForce)
         {
            CPlayerSendMsg_SetTargetObjectResult1060_user(_this, byRetCode, bForce, CPlayerSendMsg_SetTargetObjectResult1060_next);
         };
-        void CPlayerSendMsg_SkillResult1062_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, char bySkillIndex, int nSFLv)
+        static void CPlayerSendMsg_SkillResult1062_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, char bySkillIndex, int nSFLv)
         {
            CPlayerSendMsg_SkillResult1062_user(_this, byErrCode, pidDst, bySkillIndex, nSFLv, CPlayerSendMsg_SkillResult1062_next);
         };
-        void CPlayerSendMsg_SpecialDownloadResult1064_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_SpecialDownloadResult1064_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_SpecialDownloadResult1064_user(_this, CPlayerSendMsg_SpecialDownloadResult1064_next);
         };
-        void CPlayerSendMsg_StartContSF1066_wrapper(struct CPlayer* _this, struct _sf_continous* pCont)
+        static void CPlayerSendMsg_StartContSF1066_wrapper(struct CPlayer* _this, struct _sf_continous* pCont)
         {
            CPlayerSendMsg_StartContSF1066_user(_this, pCont, CPlayerSendMsg_StartContSF1066_next);
         };
-        void CPlayerSendMsg_StartNewPos1068_wrapper(struct CPlayer* _this, char byMapInMode)
+        static void CPlayerSendMsg_StartNewPos1068_wrapper(struct CPlayer* _this, char byMapInMode)
         {
            CPlayerSendMsg_StartNewPos1068_user(_this, byMapInMode, CPlayerSendMsg_StartNewPos1068_next);
         };
-        void CPlayerSendMsg_StartShopping1070_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_StartShopping1070_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_StartShopping1070_user(_this, CPlayerSendMsg_StartShopping1070_next);
         };
-        void CPlayerSendMsg_StatInform1072_wrapper(struct CPlayer* _this, char byStatIndex, unsigned int dwNewStat, char byReason)
+        static void CPlayerSendMsg_StatInform1072_wrapper(struct CPlayer* _this, char byStatIndex, unsigned int dwNewStat, char byReason)
         {
            CPlayerSendMsg_StatInform1072_user(_this, byStatIndex, dwNewStat, byReason, CPlayerSendMsg_StatInform1072_next);
         };
-        void CPlayerSendMsg_StateInform1074_wrapper(struct CPlayer* _this, uint64_t dwStateFlag)
+        static void CPlayerSendMsg_StateInform1074_wrapper(struct CPlayer* _this, uint64_t dwStateFlag)
         {
            CPlayerSendMsg_StateInform1074_user(_this, dwStateFlag, CPlayerSendMsg_StateInform1074_next);
         };
-        void CPlayerSendMsg_Stop1076_wrapper(struct CPlayer* _this, bool bAll)
+        static void CPlayerSendMsg_Stop1076_wrapper(struct CPlayer* _this, bool bAll)
         {
            CPlayerSendMsg_Stop1076_user(_this, bAll, CPlayerSendMsg_Stop1076_next);
         };
-        void CPlayerSendMsg_StoreLimitItemAmountInfo1078_wrapper(struct CPlayer* _this, unsigned int dwStoreIndex, struct _limit_amount_info* pAmountInfo)
+        static void CPlayerSendMsg_StoreLimitItemAmountInfo1078_wrapper(struct CPlayer* _this, unsigned int dwStoreIndex, struct _limit_amount_info* pAmountInfo)
         {
            CPlayerSendMsg_StoreLimitItemAmountInfo1078_user(_this, dwStoreIndex, pAmountInfo, CPlayerSendMsg_StoreLimitItemAmountInfo1078_next);
         };
-        void CPlayerSendMsg_StoreListResult1080_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_StoreListResult1080_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_StoreListResult1080_user(_this, CPlayerSendMsg_StoreListResult1080_next);
         };
-        void CPlayerSendMsg_TLStatusInfo1082_wrapper(struct CPlayer* _this, unsigned int dwFatigue, char wStatus)
+        static void CPlayerSendMsg_TLStatusInfo1082_wrapper(struct CPlayer* _this, unsigned int dwFatigue, char wStatus)
         {
            CPlayerSendMsg_TLStatusInfo1082_user(_this, dwFatigue, wStatus, CPlayerSendMsg_TLStatusInfo1082_next);
         };
-        void CPlayerSendMsg_TLStatusPenalty1084_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_TLStatusPenalty1084_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_TLStatusPenalty1084_user(_this, byErrCode, CPlayerSendMsg_TLStatusPenalty1084_next);
         };
-        void CPlayerSendMsg_TakeAddResult1086_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_TakeAddResult1086_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_TakeAddResult1086_user(_this, byErrCode, pItem, CPlayerSendMsg_TakeAddResult1086_next);
         };
-        void CPlayerSendMsg_TakeNewResult1088_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pItem)
+        static void CPlayerSendMsg_TakeNewResult1088_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pItem)
         {
            CPlayerSendMsg_TakeNewResult1088_user(_this, byErrCode, pItem, CPlayerSendMsg_TakeNewResult1088_next);
         };
-        void CPlayerSendMsg_TalikCrystalExchangeResult1090_wrapper(struct CPlayer* _this, char byRet, char byExchangeNum, struct _STORAGE_LIST::_db_con* pNewItem)
+        static void CPlayerSendMsg_TalikCrystalExchangeResult1090_wrapper(struct CPlayer* _this, char byRet, char byExchangeNum, struct _STORAGE_LIST::_db_con* pNewItem)
         {
            CPlayerSendMsg_TalikCrystalExchangeResult1090_user(_this, byRet, byExchangeNum, pNewItem, CPlayerSendMsg_TalikCrystalExchangeResult1090_next);
         };
-        void CPlayerSendMsg_TargetObjectHPInform1092_wrapper(struct CPlayer* _this)
+        static void CPlayerSendMsg_TargetObjectHPInform1092_wrapper(struct CPlayer* _this)
         {
            CPlayerSendMsg_TargetObjectHPInform1092_user(_this, CPlayerSendMsg_TargetObjectHPInform1092_next);
         };
-        void CPlayerSendMsg_TeleportError1094_wrapper(struct CPlayer* _this, char byErrorCode, unsigned int dwMapIndex)
+        static void CPlayerSendMsg_TeleportError1094_wrapper(struct CPlayer* _this, char byErrorCode, unsigned int dwMapIndex)
         {
            CPlayerSendMsg_TeleportError1094_user(_this, byErrorCode, dwMapIndex, CPlayerSendMsg_TeleportError1094_next);
         };
-        void CPlayerSendMsg_TestAttackResult1096_wrapper(struct CPlayer* _this, char byEffectCode, char byEffectIndex, uint16_t wBulletItemIndex, char byEffectLv, char byWeaponPart, int16_t* pzTar)
+        static void CPlayerSendMsg_TestAttackResult1096_wrapper(struct CPlayer* _this, char byEffectCode, char byEffectIndex, uint16_t wBulletItemIndex, char byEffectLv, char byWeaponPart, int16_t* pzTar)
         {
            CPlayerSendMsg_TestAttackResult1096_user(_this, byEffectCode, byEffectIndex, wBulletItemIndex, byEffectLv, byWeaponPart, pzTar, CPlayerSendMsg_TestAttackResult1096_next);
         };
-        void CPlayerSendMsg_ThrowSkillResult1098_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, char bySkillIndex)
+        static void CPlayerSendMsg_ThrowSkillResult1098_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, char bySkillIndex)
         {
            CPlayerSendMsg_ThrowSkillResult1098_user(_this, byErrCode, pidDst, bySkillIndex, CPlayerSendMsg_ThrowSkillResult1098_next);
         };
-        void CPlayerSendMsg_ThrowStorageResult1100_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_ThrowStorageResult1100_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_ThrowStorageResult1100_user(_this, byErrCode, CPlayerSendMsg_ThrowStorageResult1100_next);
         };
-        void CPlayerSendMsg_ThrowUnitResult1102_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, uint16_t wBulletIndex)
+        static void CPlayerSendMsg_ThrowUnitResult1102_wrapper(struct CPlayer* _this, char byErrCode, struct _CHRID* pidDst, uint16_t wBulletIndex)
         {
            CPlayerSendMsg_ThrowUnitResult1102_user(_this, byErrCode, pidDst, wBulletIndex, CPlayerSendMsg_ThrowUnitResult1102_next);
         };
-        void CPlayerSendMsg_TowerContinue1104_wrapper(struct CPlayer* _this, uint16_t wItemSerial, struct CGuardTower* pTwr)
+        static void CPlayerSendMsg_TowerContinue1104_wrapper(struct CPlayer* _this, uint16_t wItemSerial, struct CGuardTower* pTwr)
         {
            CPlayerSendMsg_TowerContinue1104_user(_this, wItemSerial, pTwr, CPlayerSendMsg_TowerContinue1104_next);
         };
-        void CPlayerSendMsg_TransShipRenewTicketResult1106_wrapper(struct CPlayer* _this, char byErrCode)
+        static void CPlayerSendMsg_TransShipRenewTicketResult1106_wrapper(struct CPlayer* _this, char byErrCode)
         {
            CPlayerSendMsg_TransShipRenewTicketResult1106_user(_this, byErrCode, CPlayerSendMsg_TransShipRenewTicketResult1106_next);
         };
-        void CPlayerSendMsg_TransformSiegeModeResult1108_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_TransformSiegeModeResult1108_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_TransformSiegeModeResult1108_user(_this, byRetCode, CPlayerSendMsg_TransformSiegeModeResult1108_next);
         };
-        void CPlayerSendMsg_TrunkChangPasswdResult1110_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_TrunkChangPasswdResult1110_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_TrunkChangPasswdResult1110_user(_this, byRetCode, CPlayerSendMsg_TrunkChangPasswdResult1110_next);
         };
-        void CPlayerSendMsg_TrunkDownloadResult1112_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_TrunkDownloadResult1112_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_TrunkDownloadResult1112_user(_this, byRetCode, CPlayerSendMsg_TrunkDownloadResult1112_next);
         };
-        void CPlayerSendMsg_TrunkEstResult1114_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwLeftDalant)
+        static void CPlayerSendMsg_TrunkEstResult1114_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwLeftDalant)
         {
            CPlayerSendMsg_TrunkEstResult1114_user(_this, byRetCode, dwLeftDalant, CPlayerSendMsg_TrunkEstResult1114_next);
         };
-        void CPlayerSendMsg_TrunkExtendResult1116_wrapper(struct CPlayer* _this, char byRetCode, char bySlotNum, unsigned int dwLeftDalant, unsigned int dwConsumDalant)
+        static void CPlayerSendMsg_TrunkExtendResult1116_wrapper(struct CPlayer* _this, char byRetCode, char bySlotNum, unsigned int dwLeftDalant, unsigned int dwConsumDalant)
         {
            CPlayerSendMsg_TrunkExtendResult1116_user(_this, byRetCode, bySlotNum, dwLeftDalant, dwConsumDalant, CPlayerSendMsg_TrunkExtendResult1116_next);
         };
-        void CPlayerSendMsg_TrunkHintAnswerResult1118_wrapper(struct CPlayer* _this, char byRetCode, char* pwszPassword)
+        static void CPlayerSendMsg_TrunkHintAnswerResult1118_wrapper(struct CPlayer* _this, char byRetCode, char* pwszPassword)
         {
            CPlayerSendMsg_TrunkHintAnswerResult1118_user(_this, byRetCode, pwszPassword, CPlayerSendMsg_TrunkHintAnswerResult1118_next);
         };
-        void CPlayerSendMsg_TrunkIoMoneyResult1120_wrapper(struct CPlayer* _this, char byRetCode, long double dTrunkDalant, long double dTrunkGold, unsigned int dwDalant, unsigned int dwGold, unsigned int dwFeeDalant)
+        static void CPlayerSendMsg_TrunkIoMoneyResult1120_wrapper(struct CPlayer* _this, char byRetCode, long double dTrunkDalant, long double dTrunkGold, unsigned int dwDalant, unsigned int dwGold, unsigned int dwFeeDalant)
         {
            CPlayerSendMsg_TrunkIoMoneyResult1120_user(_this, byRetCode, dTrunkDalant, dTrunkGold, dwDalant, dwGold, dwFeeDalant, CPlayerSendMsg_TrunkIoMoneyResult1120_next);
         };
-        void CPlayerSendMsg_TrunkIoResult1122_wrapper(struct CPlayer* _this, char byCase, char byRetCode, unsigned int dwLeftDalant, unsigned int dwConsumDanlant)
+        static void CPlayerSendMsg_TrunkIoResult1122_wrapper(struct CPlayer* _this, char byCase, char byRetCode, unsigned int dwLeftDalant, unsigned int dwConsumDanlant)
         {
            CPlayerSendMsg_TrunkIoResult1122_user(_this, byCase, byRetCode, dwLeftDalant, dwConsumDanlant, CPlayerSendMsg_TrunkIoResult1122_next);
         };
-        void CPlayerSendMsg_TrunkPotionDivision1124_wrapper(struct CPlayer* _this, uint16_t wSerial, uint16_t wParentAmount, uint16_t wChildSerial, uint16_t wChildAmount, int nRet)
+        static void CPlayerSendMsg_TrunkPotionDivision1124_wrapper(struct CPlayer* _this, uint16_t wSerial, uint16_t wParentAmount, uint16_t wChildSerial, uint16_t wChildAmount, int nRet)
         {
            CPlayerSendMsg_TrunkPotionDivision1124_user(_this, wSerial, wParentAmount, wChildSerial, wChildAmount, nRet, CPlayerSendMsg_TrunkPotionDivision1124_next);
         };
-        void CPlayerSendMsg_TrunkPwHintIndexResult1126_wrapper(struct CPlayer* _this, char byRetCode, char byHintIndex)
+        static void CPlayerSendMsg_TrunkPwHintIndexResult1126_wrapper(struct CPlayer* _this, char byRetCode, char byHintIndex)
         {
            CPlayerSendMsg_TrunkPwHintIndexResult1126_user(_this, byRetCode, byHintIndex, CPlayerSendMsg_TrunkPwHintIndexResult1126_next);
         };
-        void CPlayerSendMsg_TrunkResDivision1128_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pTargetOre)
+        static void CPlayerSendMsg_TrunkResDivision1128_wrapper(struct CPlayer* _this, char byErrCode, struct _STORAGE_LIST::_db_con* pStartOre, struct _STORAGE_LIST::_db_con* pTargetOre)
         {
            CPlayerSendMsg_TrunkResDivision1128_user(_this, byErrCode, pStartOre, pTargetOre, CPlayerSendMsg_TrunkResDivision1128_next);
         };
-        void CPlayerSendMsg_UILock_FindPW_Result1130_wrapper(struct CPlayer* _this, char byRet, char* uszUILockPW, char byFindPassFailCount)
+        static void CPlayerSendMsg_UILock_FindPW_Result1130_wrapper(struct CPlayer* _this, char byRet, char* uszUILockPW, char byFindPassFailCount)
         {
            CPlayerSendMsg_UILock_FindPW_Result1130_user(_this, byRet, uszUILockPW, byFindPassFailCount, CPlayerSendMsg_UILock_FindPW_Result1130_next);
         };
-        void CPlayerSendMsg_UILock_Init_Request_ToAccount1132_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* uszUILockPW, uint16_t wUserIndex, char byHintIndex, char* uszHintAnswer)
+        static void CPlayerSendMsg_UILock_Init_Request_ToAccount1132_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* uszUILockPW, uint16_t wUserIndex, char byHintIndex, char* uszHintAnswer)
         {
            CPlayerSendMsg_UILock_Init_Request_ToAccount1132_user(_this, dwSerial, uszUILockPW, wUserIndex, byHintIndex, uszHintAnswer, CPlayerSendMsg_UILock_Init_Request_ToAccount1132_next);
         };
-        void CPlayerSendMsg_UILock_Init_Result1134_wrapper(struct CPlayer* _this, char byRet)
+        static void CPlayerSendMsg_UILock_Init_Result1134_wrapper(struct CPlayer* _this, char byRet)
         {
            CPlayerSendMsg_UILock_Init_Result1134_user(_this, byRet, CPlayerSendMsg_UILock_Init_Result1134_next);
         };
-        void CPlayerSendMsg_UILock_Login_Result1136_wrapper(struct CPlayer* _this, char byRet, char byFailCount)
+        static void CPlayerSendMsg_UILock_Login_Result1136_wrapper(struct CPlayer* _this, char byRet, char byFailCount)
         {
            CPlayerSendMsg_UILock_Login_Result1136_user(_this, byRet, byFailCount, CPlayerSendMsg_UILock_Login_Result1136_next);
         };
-        void CPlayerSendMsg_UILock_Update_Request_ToAccount1138_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* uszUILockPW, uint16_t wUserIndex, char byHintIndex, char* uszHintAnswer)
+        static void CPlayerSendMsg_UILock_Update_Request_ToAccount1138_wrapper(struct CPlayer* _this, unsigned int dwSerial, char* uszUILockPW, uint16_t wUserIndex, char byHintIndex, char* uszHintAnswer)
         {
            CPlayerSendMsg_UILock_Update_Request_ToAccount1138_user(_this, dwSerial, uszUILockPW, wUserIndex, byHintIndex, uszHintAnswer, CPlayerSendMsg_UILock_Update_Request_ToAccount1138_next);
         };
-        void CPlayerSendMsg_UILock_Update_Result1140_wrapper(struct CPlayer* _this, char byRet)
+        static void CPlayerSendMsg_UILock_Update_Result1140_wrapper(struct CPlayer* _this, char byRet)
         {
            CPlayerSendMsg_UILock_Update_Result1140_user(_this, byRet, CPlayerSendMsg_UILock_Update_Result1140_next);
         };
-        void CPlayerSendMsg_UnitAlterFeeInform1142_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwPullingFee)
+        static void CPlayerSendMsg_UnitAlterFeeInform1142_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwPullingFee)
         {
            CPlayerSendMsg_UnitAlterFeeInform1142_user(_this, bySlotIndex, dwPullingFee, CPlayerSendMsg_UnitAlterFeeInform1142_next);
         };
-        void CPlayerSendMsg_UnitBulletFillResult1144_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, uint16_t* pwBulletIndex, unsigned int* pdwConsumMoney)
+        static void CPlayerSendMsg_UnitBulletFillResult1144_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, uint16_t* pwBulletIndex, unsigned int* pdwConsumMoney)
         {
            CPlayerSendMsg_UnitBulletFillResult1144_user(_this, byRetCode, bySlotIndex, pwBulletIndex, pdwConsumMoney, CPlayerSendMsg_UnitBulletFillResult1144_next);
         };
-        void CPlayerSendMsg_UnitBulletReplaceResult1146_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_UnitBulletReplaceResult1146_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_UnitBulletReplaceResult1146_user(_this, byRetCode, CPlayerSendMsg_UnitBulletReplaceResult1146_next);
         };
-        void CPlayerSendMsg_UnitDeliveryResult1148_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, unsigned int dwParkingUnitSerial, unsigned int dwPayDalant)
+        static void CPlayerSendMsg_UnitDeliveryResult1148_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, unsigned int dwParkingUnitSerial, unsigned int dwPayDalant)
         {
            CPlayerSendMsg_UnitDeliveryResult1148_user(_this, byRetCode, bySlotIndex, dwParkingUnitSerial, dwPayDalant, CPlayerSendMsg_UnitDeliveryResult1148_next);
         };
-        void CPlayerSendMsg_UnitDestroy1150_wrapper(struct CPlayer* _this, char bySlotIndex)
+        static void CPlayerSendMsg_UnitDestroy1150_wrapper(struct CPlayer* _this, char bySlotIndex)
         {
            CPlayerSendMsg_UnitDestroy1150_user(_this, bySlotIndex, CPlayerSendMsg_UnitDestroy1150_next);
         };
-        void CPlayerSendMsg_UnitForceReturnInform1152_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwDebt)
+        static void CPlayerSendMsg_UnitForceReturnInform1152_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwDebt)
         {
            CPlayerSendMsg_UnitForceReturnInform1152_user(_this, bySlotIndex, dwDebt, CPlayerSendMsg_UnitForceReturnInform1152_next);
         };
-        void CPlayerSendMsg_UnitFrameBuyResult1154_wrapper(struct CPlayer* _this, char byRetCode, char byFrameCode, char byUnitSlotIndex, uint16_t wKeyIndex, uint16_t wKeySerial, unsigned int* pdwConsumMoney)
+        static void CPlayerSendMsg_UnitFrameBuyResult1154_wrapper(struct CPlayer* _this, char byRetCode, char byFrameCode, char byUnitSlotIndex, uint16_t wKeyIndex, uint16_t wKeySerial, unsigned int* pdwConsumMoney)
         {
            CPlayerSendMsg_UnitFrameBuyResult1154_user(_this, byRetCode, byFrameCode, byUnitSlotIndex, wKeyIndex, wKeySerial, pdwConsumMoney, CPlayerSendMsg_UnitFrameBuyResult1154_next);
         };
-        void CPlayerSendMsg_UnitFrameRepairResult1156_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, unsigned int dwNewGauge, unsigned int dwConsumDalant)
+        static void CPlayerSendMsg_UnitFrameRepairResult1156_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, unsigned int dwNewGauge, unsigned int dwConsumDalant)
         {
            CPlayerSendMsg_UnitFrameRepairResult1156_user(_this, byRetCode, bySlotIndex, dwNewGauge, dwConsumDalant, CPlayerSendMsg_UnitFrameRepairResult1156_next);
         };
-        void CPlayerSendMsg_UnitLeaveResult1158_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_UnitLeaveResult1158_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_UnitLeaveResult1158_user(_this, byRetCode, CPlayerSendMsg_UnitLeaveResult1158_next);
         };
-        void CPlayerSendMsg_UnitPackFillResult1160_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, char byFillNum, struct _unit_pack_fill_request_clzo::__list* pList, unsigned int* pdwConsumMoney)
+        static void CPlayerSendMsg_UnitPackFillResult1160_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, char byFillNum, struct _unit_pack_fill_request_clzo::__list* pList, unsigned int* pdwConsumMoney)
         {
            CPlayerSendMsg_UnitPackFillResult1160_user(_this, byRetCode, bySlotIndex, byFillNum, pList, pdwConsumMoney, CPlayerSendMsg_UnitPackFillResult1160_next);
         };
-        void CPlayerSendMsg_UnitPartTuningResult1162_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, int* pnCost)
+        static void CPlayerSendMsg_UnitPartTuningResult1162_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, int* pnCost)
         {
            CPlayerSendMsg_UnitPartTuningResult1162_user(_this, byRetCode, bySlotIndex, pnCost, CPlayerSendMsg_UnitPartTuningResult1162_next);
         };
-        void CPlayerSendMsg_UnitReturnResult1164_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwPayDalant)
+        static void CPlayerSendMsg_UnitReturnResult1164_wrapper(struct CPlayer* _this, char byRetCode, unsigned int dwPayDalant)
         {
            CPlayerSendMsg_UnitReturnResult1164_user(_this, byRetCode, dwPayDalant, CPlayerSendMsg_UnitReturnResult1164_next);
         };
-        void CPlayerSendMsg_UnitRideChange1166_wrapper(struct CPlayer* _this, bool bTake, struct CParkingUnit* pUnit)
+        static void CPlayerSendMsg_UnitRideChange1166_wrapper(struct CPlayer* _this, bool bTake, struct CParkingUnit* pUnit)
         {
            CPlayerSendMsg_UnitRideChange1166_user(_this, bTake, pUnit, CPlayerSendMsg_UnitRideChange1166_next);
         };
-        void CPlayerSendMsg_UnitSellResult1168_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, uint16_t wKeySerial, int nAddMoney, unsigned int dwTotalNonpay, unsigned int dwSumDalant, unsigned int dwSumGold)
+        static void CPlayerSendMsg_UnitSellResult1168_wrapper(struct CPlayer* _this, char byRetCode, char bySlotIndex, uint16_t wKeySerial, int nAddMoney, unsigned int dwTotalNonpay, unsigned int dwSumDalant, unsigned int dwSumGold)
         {
            CPlayerSendMsg_UnitSellResult1168_user(_this, byRetCode, bySlotIndex, wKeySerial, nAddMoney, dwTotalNonpay, dwSumDalant, dwSumGold, CPlayerSendMsg_UnitSellResult1168_next);
         };
-        void CPlayerSendMsg_UnitTakeResult1170_wrapper(struct CPlayer* _this, char byRetCode)
+        static void CPlayerSendMsg_UnitTakeResult1170_wrapper(struct CPlayer* _this, char byRetCode)
         {
            CPlayerSendMsg_UnitTakeResult1170_user(_this, byRetCode, CPlayerSendMsg_UnitTakeResult1170_next);
         };
-        void CPlayerSendMsg_UpdateTLStatusInfo1172_wrapper(struct CPlayer* _this, unsigned int dwFatigue, char wStatus)
+        static void CPlayerSendMsg_UpdateTLStatusInfo1172_wrapper(struct CPlayer* _this, unsigned int dwFatigue, char wStatus)
         {
            CPlayerSendMsg_UpdateTLStatusInfo1172_user(_this, dwFatigue, wStatus, CPlayerSendMsg_UpdateTLStatusInfo1172_next);
         };
-        void CPlayerSendMsg_UsPotionResultOther1174_wrapper(struct CPlayer* _this, char byRetcode, uint16_t wPotionIndex, struct CPlayer* pUsePlayer, bool bCircle)
+        static void CPlayerSendMsg_UsPotionResultOther1174_wrapper(struct CPlayer* _this, char byRetcode, uint16_t wPotionIndex, struct CPlayer* pUsePlayer, bool bCircle)
         {
            CPlayerSendMsg_UsPotionResultOther1174_user(_this, byRetcode, wPotionIndex, pUsePlayer, bCircle, CPlayerSendMsg_UsPotionResultOther1174_next);
         };
-        void CPlayerSendMsg_UseJadeResult1176_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wItemSerial)
+        static void CPlayerSendMsg_UseJadeResult1176_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wItemSerial)
         {
            CPlayerSendMsg_UseJadeResult1176_user(_this, byErrCode, wItemSerial, CPlayerSendMsg_UseJadeResult1176_next);
         };
-        void CPlayerSendMsg_UsePotionResult1178_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSerial, char byLeftNum)
+        static void CPlayerSendMsg_UsePotionResult1178_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSerial, char byLeftNum)
         {
            CPlayerSendMsg_UsePotionResult1178_user(_this, byErrCode, wSerial, byLeftNum, CPlayerSendMsg_UsePotionResult1178_next);
         };
-        void CPlayerSendMsg_UseRadarResult1180_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSerial, unsigned int dwDelay)
+        static void CPlayerSendMsg_UseRadarResult1180_wrapper(struct CPlayer* _this, char byErrCode, uint16_t wSerial, unsigned int dwDelay)
         {
            CPlayerSendMsg_UseRadarResult1180_user(_this, byErrCode, wSerial, dwDelay, CPlayerSendMsg_UseRadarResult1180_next);
         };
-        void CPlayerSendMsg_VoteResult1182_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey, char byRetCode)
+        static void CPlayerSendMsg_VoteResult1182_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey, char byRetCode)
         {
            CPlayerSendMsg_VoteResult1182_user(_this, dwMatterVoteSynKey, byRetCode, CPlayerSendMsg_VoteResult1182_next);
         };
-        void CPlayerSendTargetMonsterSFContInfo1184_wrapper(struct CPlayer* _this)
+        static void CPlayerSendTargetMonsterSFContInfo1184_wrapper(struct CPlayer* _this)
         {
            CPlayerSendTargetMonsterSFContInfo1184_user(_this, CPlayerSendTargetMonsterSFContInfo1184_next);
         };
-        void CPlayerSendTargetPlayerDamageContInfo1186_wrapper(struct CPlayer* _this)
+        static void CPlayerSendTargetPlayerDamageContInfo1186_wrapper(struct CPlayer* _this)
         {
            CPlayerSendTargetPlayerDamageContInfo1186_user(_this, CPlayerSendTargetPlayerDamageContInfo1186_next);
         };
-        void CPlayerSenseState1188_wrapper(struct CPlayer* _this)
+        static void CPlayerSenseState1188_wrapper(struct CPlayer* _this)
         {
            CPlayerSenseState1188_user(_this, CPlayerSenseState1188_next);
         };
-        void CPlayerSetAttackPart1190_wrapper(struct CPlayer* _this, int nAttactPart)
+        static void CPlayerSetAttackPart1190_wrapper(struct CPlayer* _this, int nAttactPart)
         {
            CPlayerSetAttackPart1190_user(_this, nAttactPart, CPlayerSetAttackPart1190_next);
         };
-        void CPlayerSetBattleMode1192_wrapper(struct CPlayer* _this, bool bAttack)
+        static void CPlayerSetBattleMode1192_wrapper(struct CPlayer* _this, bool bAttack)
         {
            CPlayerSetBattleMode1192_user(_this, bAttack, CPlayerSetBattleMode1192_next);
         };
-        void CPlayerSetBindDummy1194_wrapper(struct CPlayer* _this, struct _dummy_position* pDummy)
+        static void CPlayerSetBindDummy1194_wrapper(struct CPlayer* _this, struct _dummy_position* pDummy)
         {
            CPlayerSetBindDummy1194_user(_this, pDummy, CPlayerSetBindDummy1194_next);
         };
-        void CPlayerSetBindMapData1196_wrapper(struct CPlayer* _this, struct CMapData* pMapData)
+        static void CPlayerSetBindMapData1196_wrapper(struct CPlayer* _this, struct CMapData* pMapData)
         {
            CPlayerSetBindMapData1196_user(_this, pMapData, CPlayerSetBindMapData1196_next);
         };
-        bool CPlayerSetBindPosition1198_wrapper(struct CPlayer* _this, struct CMapData* pMap, struct _dummy_position* pDummy)
+        static bool CPlayerSetBindPosition1198_wrapper(struct CPlayer* _this, struct CMapData* pMap, struct _dummy_position* pDummy)
         {
            return CPlayerSetBindPosition1198_user(_this, pMap, pDummy, CPlayerSetBindPosition1198_next);
         };
-        void CPlayerSetCashAmount1200_wrapper(struct CPlayer* _this, int nAmount)
+        static void CPlayerSetCashAmount1200_wrapper(struct CPlayer* _this, int nAmount)
         {
            CPlayerSetCashAmount1200_user(_this, nAmount, CPlayerSetCashAmount1200_next);
         };
-        void CPlayerSetCntEnable1202_wrapper(struct CPlayer* _this, bool bSet)
+        static void CPlayerSetCntEnable1202_wrapper(struct CPlayer* _this, bool bSet)
         {
            CPlayerSetCntEnable1202_user(_this, bSet, CPlayerSetCntEnable1202_next);
         };
-        bool CPlayerSetDP1204_wrapper(struct CPlayer* _this, int nDP, bool bOver)
+        static bool CPlayerSetDP1204_wrapper(struct CPlayer* _this, int nDP, bool bOver)
         {
            return CPlayerSetDP1204_user(_this, nDP, bOver, CPlayerSetDP1204_next);
         };
-        int CPlayerSetDamage1206_wrapper(struct CPlayer* _this, int nDamage, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
+        static int CPlayerSetDamage1206_wrapper(struct CPlayer* _this, int nDamage, struct CCharacter* pDst, int nDstLv, bool bCrt, int nAttackType, unsigned int dwAttackSerial, bool bJadeReturn)
         {
            return CPlayerSetDamage1206_user(_this, nDamage, pDst, nDstLv, bCrt, nAttackType, dwAttackSerial, bJadeReturn, CPlayerSetDamage1206_next);
         };
-        void CPlayerSetEffectEquipCode1208_wrapper(struct CPlayer* _this, char byStorageCode, char bySlotIndex, char byCode)
+        static void CPlayerSetEffectEquipCode1208_wrapper(struct CPlayer* _this, char byStorageCode, char bySlotIndex, char byCode)
         {
            CPlayerSetEffectEquipCode1208_user(_this, byStorageCode, bySlotIndex, byCode, CPlayerSetEffectEquipCode1208_next);
         };
-        void CPlayerSetEquipEffect1210_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_storage_con* pItem, bool bEquip)
+        static void CPlayerSetEquipEffect1210_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_storage_con* pItem, bool bEquip)
         {
            CPlayerSetEquipEffect1210_user(_this, pItem, bEquip, CPlayerSetEquipEffect1210_next);
         };
-        void CPlayerSetEquipJadeEffect1212_wrapper(struct CPlayer* _this, int nParam, float fCurVal, bool bAdd)
+        static void CPlayerSetEquipJadeEffect1212_wrapper(struct CPlayer* _this, int nParam, float fCurVal, bool bAdd)
         {
            CPlayerSetEquipJadeEffect1212_user(_this, nParam, fCurVal, bAdd, CPlayerSetEquipJadeEffect1212_next);
         };
-        bool CPlayerSetFP1214_wrapper(struct CPlayer* _this, int nFP, bool bOver)
+        static bool CPlayerSetFP1214_wrapper(struct CPlayer* _this, int nFP, bool bOver)
         {
            return CPlayerSetFP1214_user(_this, nFP, bOver, CPlayerSetFP1214_next);
         };
-        void CPlayerSetGauge1216_wrapper(struct CPlayer* _this, int nParamCode, int nValue, bool bOver)
+        static void CPlayerSetGauge1216_wrapper(struct CPlayer* _this, int nParamCode, int nValue, bool bOver)
         {
            CPlayerSetGauge1216_user(_this, nParamCode, nValue, bOver, CPlayerSetGauge1216_next);
         };
-        void CPlayerSetGrade1218_wrapper(struct CPlayer* _this, char byGrade)
+        static void CPlayerSetGrade1218_wrapper(struct CPlayer* _this, char byGrade)
         {
            CPlayerSetGrade1218_user(_this, byGrade, CPlayerSetGrade1218_next);
         };
-        bool CPlayerSetHP1220_wrapper(struct CPlayer* _this, int nHP, bool bOver)
+        static bool CPlayerSetHP1220_wrapper(struct CPlayer* _this, int nHP, bool bOver)
         {
            return CPlayerSetHP1220_user(_this, nHP, bOver, CPlayerSetHP1220_next);
         };
-        void CPlayerSetHaveEffect1222_wrapper(struct CPlayer* _this, bool bLogin)
+        static void CPlayerSetHaveEffect1222_wrapper(struct CPlayer* _this, bool bLogin)
         {
            CPlayerSetHaveEffect1222_user(_this, bLogin, CPlayerSetHaveEffect1222_next);
         };
-        void CPlayerSetHaveEffectUseTime1224_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bAdd)
+        static void CPlayerSetHaveEffectUseTime1224_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bAdd)
         {
            CPlayerSetHaveEffectUseTime1224_user(_this, pItem, bAdd, CPlayerSetHaveEffectUseTime1224_next);
         };
-        void CPlayerSetLastAttBuff1226_wrapper(struct CPlayer* _this, bool bSet)
+        static void CPlayerSetLastAttBuff1226_wrapper(struct CPlayer* _this, bool bSet)
         {
            CPlayerSetLastAttBuff1226_user(_this, bSet, CPlayerSetLastAttBuff1226_next);
         };
-        void CPlayerSetLevel1228_wrapper(struct CPlayer* _this, char byNewLevel)
+        static void CPlayerSetLevel1228_wrapper(struct CPlayer* _this, char byNewLevel)
         {
            CPlayerSetLevel1228_user(_this, byNewLevel, CPlayerSetLevel1228_next);
         };
-        void CPlayerSetLevelD1230_wrapper(struct CPlayer* _this, char byDownLevel)
+        static void CPlayerSetLevelD1230_wrapper(struct CPlayer* _this, char byDownLevel)
         {
            CPlayerSetLevelD1230_user(_this, byDownLevel, CPlayerSetLevelD1230_next);
         };
-        void CPlayerSetMstHaveEffect1232_wrapper(struct CPlayer* _this, struct _ResourceItem_fld* pFld, struct _STORAGE_LIST::_db_con* pItem, bool bAdd, int nAlter)
+        static void CPlayerSetMstHaveEffect1232_wrapper(struct CPlayer* _this, struct _ResourceItem_fld* pFld, struct _STORAGE_LIST::_db_con* pItem, bool bAdd, int nAlter)
         {
            CPlayerSetMstHaveEffect1232_user(_this, pFld, pItem, bAdd, nAlter, CPlayerSetMstHaveEffect1232_next);
         };
-        void CPlayerSetMstPt1234_wrapper(struct CPlayer* _this, int nMstCode, float fVal, bool bAdd, int nWpType)
+        static void CPlayerSetMstPt1234_wrapper(struct CPlayer* _this, int nMstCode, float fVal, bool bAdd, int nWpType)
         {
            CPlayerSetMstPt1234_user(_this, nMstCode, fVal, bAdd, nWpType, CPlayerSetMstPt1234_next);
         };
-        void CPlayerSetPotionActDelay1236_wrapper(struct CPlayer* _this, char byPotionClass, unsigned int dwCurrTime, unsigned int dwActDelay)
+        static void CPlayerSetPotionActDelay1236_wrapper(struct CPlayer* _this, char byPotionClass, unsigned int dwCurrTime, unsigned int dwActDelay)
         {
            CPlayerSetPotionActDelay1236_user(_this, byPotionClass, dwCurrTime, dwActDelay, CPlayerSetPotionActDelay1236_next);
         };
-        void CPlayerSetPvpPointLeak1238_wrapper(struct CPlayer* _this, long double dValue)
+        static void CPlayerSetPvpPointLeak1238_wrapper(struct CPlayer* _this, long double dValue)
         {
            CPlayerSetPvpPointLeak1238_user(_this, dValue, CPlayerSetPvpPointLeak1238_next);
         };
-        void CPlayerSetRankRate1240_wrapper(struct CPlayer* _this, uint16_t wRankRate, unsigned int dwRank)
+        static void CPlayerSetRankRate1240_wrapper(struct CPlayer* _this, uint16_t wRankRate, unsigned int dwRank)
         {
            CPlayerSetRankRate1240_user(_this, wRankRate, dwRank, CPlayerSetRankRate1240_next);
         };
-        bool CPlayerSetSP1242_wrapper(struct CPlayer* _this, int nSP, bool bOver)
+        static bool CPlayerSetSP1242_wrapper(struct CPlayer* _this, int nSP, bool bOver)
         {
            return CPlayerSetSP1242_user(_this, nSP, bOver, CPlayerSetSP1242_next);
         };
-        void CPlayerSetShapeAllBuffer1244_wrapper(struct CPlayer* _this)
+        static void CPlayerSetShapeAllBuffer1244_wrapper(struct CPlayer* _this)
         {
            CPlayerSetShapeAllBuffer1244_user(_this, CPlayerSetShapeAllBuffer1244_next);
         };
-        void CPlayerSetSiege1246_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pSiegeItem)
+        static void CPlayerSetSiege1246_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pSiegeItem)
         {
            CPlayerSetSiege1246_user(_this, pSiegeItem, CPlayerSetSiege1246_next);
         };
-        void CPlayerSetStateFlag1248_wrapper(struct CPlayer* _this)
+        static void CPlayerSetStateFlag1248_wrapper(struct CPlayer* _this)
         {
            CPlayerSetStateFlag1248_user(_this, CPlayerSetStateFlag1248_next);
         };
-        void CPlayerSetStaticMember1250_wrapper()
+        static void CPlayerSetStaticMember1250_wrapper()
         {
            CPlayerSetStaticMember1250_user(CPlayerSetStaticMember1250_next);
         };
-        bool CPlayerSetTarPos1252_wrapper(struct CPlayer* _this, float* fTarPos, bool bColl)
+        static bool CPlayerSetTarPos1252_wrapper(struct CPlayer* _this, float* fTarPos, bool bColl)
         {
            return CPlayerSetTarPos1252_user(_this, fTarPos, bColl, CPlayerSetTarPos1252_next);
         };
-        void CPlayerSetUseReleaseRaceBuffPotion1254_wrapper(struct CPlayer* _this)
+        static void CPlayerSetUseReleaseRaceBuffPotion1254_wrapper(struct CPlayer* _this)
         {
            CPlayerSetUseReleaseRaceBuffPotion1254_user(_this, CPlayerSetUseReleaseRaceBuffPotion1254_next);
         };
-        void CPlayerSetVote1256_wrapper(struct CPlayer* _this, int nSerial)
+        static void CPlayerSetVote1256_wrapper(struct CPlayer* _this, int nSerial)
         {
            CPlayerSetVote1256_user(_this, nSerial, CPlayerSetVote1256_next);
         };
-        void CPlayerSortPost1258_wrapper(struct CPlayer* _this, int nNumber)
+        static void CPlayerSortPost1258_wrapper(struct CPlayer* _this, int nNumber)
         {
            CPlayerSortPost1258_user(_this, nNumber, CPlayerSortPost1258_next);
         };
-        void CPlayerSubActPoint1260_wrapper(struct CPlayer* _this, char byCode, unsigned int dwSub)
+        static void CPlayerSubActPoint1260_wrapper(struct CPlayer* _this, char byCode, unsigned int dwSub)
         {
            CPlayerSubActPoint1260_user(_this, byCode, dwSub, CPlayerSubActPoint1260_next);
         };
-        void CPlayerSubDalant1262_wrapper(struct CPlayer* _this, unsigned int dwSub)
+        static void CPlayerSubDalant1262_wrapper(struct CPlayer* _this, unsigned int dwSub)
         {
            CPlayerSubDalant1262_user(_this, dwSub, CPlayerSubDalant1262_next);
         };
-        void CPlayerSubGold1264_wrapper(struct CPlayer* _this, unsigned int dwSub)
+        static void CPlayerSubGold1264_wrapper(struct CPlayer* _this, unsigned int dwSub)
         {
            CPlayerSubGold1264_user(_this, dwSub, CPlayerSubGold1264_next);
         };
-        void CPlayerSubPoint1266_wrapper(struct CPlayer* _this, unsigned int dwSub)
+        static void CPlayerSubPoint1266_wrapper(struct CPlayer* _this, unsigned int dwSub)
         {
            CPlayerSubPoint1266_user(_this, dwSub, CPlayerSubPoint1266_next);
         };
-        unsigned int CPlayerSumMinuteBetween1268_wrapper(struct CPlayer* _this, struct _SYSTEMTIME* tmLast, struct _SYSTEMTIME* tmLocal)
+        static unsigned int CPlayerSumMinuteBetween1268_wrapper(struct CPlayer* _this, struct _SYSTEMTIME* tmLast, struct _SYSTEMTIME* tmLocal)
         {
            return CPlayerSumMinuteBetween1268_user(_this, tmLast, tmLocal, CPlayerSumMinuteBetween1268_next);
         };
-        unsigned int CPlayerSumMinuteOne1270_wrapper(struct CPlayer* _this, struct _SYSTEMTIME* tm)
+        static unsigned int CPlayerSumMinuteOne1270_wrapper(struct CPlayer* _this, struct _SYSTEMTIME* tm)
         {
            return CPlayerSumMinuteOne1270_user(_this, tm, CPlayerSumMinuteOne1270_next);
         };
-        void CPlayerTakeGravityStone1272_wrapper(struct CPlayer* _this)
+        static void CPlayerTakeGravityStone1272_wrapper(struct CPlayer* _this)
         {
            CPlayerTakeGravityStone1272_user(_this, CPlayerTakeGravityStone1272_next);
         };
-        void CPlayerUpdateAuraSFCont1274_wrapper(struct CPlayer* _this)
+        static void CPlayerUpdateAuraSFCont1274_wrapper(struct CPlayer* _this)
         {
            CPlayerUpdateAuraSFCont1274_user(_this, CPlayerUpdateAuraSFCont1274_next);
         };
-        void CPlayerUpdateChaosModeState1276_wrapper(struct CPlayer* _this, unsigned int dwCurTime)
+        static void CPlayerUpdateChaosModeState1276_wrapper(struct CPlayer* _this, unsigned int dwCurTime)
         {
            CPlayerUpdateChaosModeState1276_user(_this, dwCurTime, CPlayerUpdateChaosModeState1276_next);
         };
-        bool CPlayerUpdateDelPost1278_wrapper(struct CPlayer* _this, unsigned int dwPostSerial, int nIndex)
+        static bool CPlayerUpdateDelPost1278_wrapper(struct CPlayer* _this, unsigned int dwPostSerial, int nIndex)
         {
            return CPlayerUpdateDelPost1278_user(_this, dwPostSerial, nIndex, CPlayerUpdateDelPost1278_next);
         };
-        void CPlayerUpdateLastCriTicket1280_wrapper(struct CPlayer* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static void CPlayerUpdateLastCriTicket1280_wrapper(struct CPlayer* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            CPlayerUpdateLastCriTicket1280_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, CPlayerUpdateLastCriTicket1280_next);
         };
-        void CPlayerUpdateLastMetalTicket1282_wrapper(struct CPlayer* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
+        static void CPlayerUpdateLastMetalTicket1282_wrapper(struct CPlayer* _this, uint16_t byCurrentYear, char byCurrentMonth, char byCurrentDay, char byCurrentHour, char byNumOfTime)
         {
            CPlayerUpdateLastMetalTicket1282_user(_this, byCurrentYear, byCurrentMonth, byCurrentDay, byCurrentHour, byNumOfTime, CPlayerUpdateLastMetalTicket1282_next);
         };
-        void CPlayerUpdatePost1284_wrapper(struct CPlayer* _this, unsigned int dwIndex)
+        static void CPlayerUpdatePost1284_wrapper(struct CPlayer* _this, unsigned int dwIndex)
         {
            CPlayerUpdatePost1284_user(_this, dwIndex, CPlayerUpdatePost1284_next);
         };
-        void CPlayerUpdatePostAddLog1286_wrapper(struct CPlayer* _this, unsigned int dwIndex, bool bLog, int nItemKey)
+        static void CPlayerUpdatePostAddLog1286_wrapper(struct CPlayer* _this, unsigned int dwIndex, bool bLog, int nItemKey)
         {
            CPlayerUpdatePostAddLog1286_user(_this, dwIndex, bLog, nItemKey, CPlayerUpdatePostAddLog1286_next);
         };
-        void CPlayerUpdatePvpOrderView1288_wrapper(struct CPlayer* _this, int64_t tCurTime)
+        static void CPlayerUpdatePvpOrderView1288_wrapper(struct CPlayer* _this, int64_t tCurTime)
         {
            CPlayerUpdatePvpOrderView1288_user(_this, tCurTime, CPlayerUpdatePvpOrderView1288_next);
         };
-        void CPlayerUpdatePvpPointLimiter1290_wrapper(struct CPlayer* _this, int64_t tCurTime)
+        static void CPlayerUpdatePvpPointLimiter1290_wrapper(struct CPlayer* _this, int64_t tCurTime)
         {
            CPlayerUpdatePvpPointLimiter1290_user(_this, tCurTime, CPlayerUpdatePvpPointLimiter1290_next);
         };
-        void CPlayerUpdateReturnPost1292_wrapper(struct CPlayer* _this, unsigned int dwSerial)
+        static void CPlayerUpdateReturnPost1292_wrapper(struct CPlayer* _this, unsigned int dwSerial)
         {
            CPlayerUpdateReturnPost1292_user(_this, dwSerial, CPlayerUpdateReturnPost1292_next);
         };
-        void CPlayerUpdateVisualVer1294_wrapper(struct CPlayer* _this, CPlayer::CashChangeStateFlag byChangeFlagMask)
+        static void CPlayerUpdateVisualVer1294_wrapper(struct CPlayer* _this, CPlayer::CashChangeStateFlag byChangeFlagMask)
         {
            CPlayerUpdateVisualVer1294_user(_this, byChangeFlagMask, CPlayerUpdateVisualVer1294_next);
         };
-        bool CPlayerUpdate_GoldPoint1296_wrapper(struct CPlayer* _this, unsigned int dwPoint)
+        static bool CPlayerUpdate_GoldPoint1296_wrapper(struct CPlayer* _this, unsigned int dwPoint)
         {
            return CPlayerUpdate_GoldPoint1296_user(_this, dwPoint, CPlayerUpdate_GoldPoint1296_next);
         };
-        void CPlayerUpdatedMasteryWriteHistory1298_wrapper(struct CPlayer* _this)
+        static void CPlayerUpdatedMasteryWriteHistory1298_wrapper(struct CPlayer* _this)
         {
            CPlayerUpdatedMasteryWriteHistory1298_user(_this, CPlayerUpdatedMasteryWriteHistory1298_next);
         };
-        bool CPlayerWPActiveForce1300_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int nDamagedObjNum, struct _force_fld* pForceFld)
+        static bool CPlayerWPActiveForce1300_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int nDamagedObjNum, struct _force_fld* pForceFld)
         {
            return CPlayerWPActiveForce1300_user(_this, pDamList, nDamagedObjNum, pForceFld, CPlayerWPActiveForce1300_next);
         };
-        bool CPlayerWPActiveSkill1302_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int nDamagedObjNum, struct _skill_fld* pSkillFld, int nEffectCode)
+        static bool CPlayerWPActiveSkill1302_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int nDamagedObjNum, struct _skill_fld* pSkillFld, int nEffectCode)
         {
            return CPlayerWPActiveSkill1302_user(_this, pDamList, nDamagedObjNum, pSkillFld, nEffectCode, CPlayerWPActiveSkill1302_next);
         };
-        bool CPlayerWeaponSFActive1304_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, int* nShotNum, uint16_t wBulletSerial)
+        static bool CPlayerWeaponSFActive1304_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, int* nShotNum, uint16_t wBulletSerial)
         {
            return CPlayerWeaponSFActive1304_user(_this, pDamList, nDamagedObjNum, nShotNum, wBulletSerial, CPlayerWeaponSFActive1304_next);
         };
-        void CPlayer_AnimusReturn1306_wrapper(struct CPlayer* _this, char byReturnType)
+        static void CPlayer_AnimusReturn1306_wrapper(struct CPlayer* _this, char byReturnType)
         {
            CPlayer_AnimusReturn1306_user(_this, byReturnType, CPlayer_AnimusReturn1306_next);
         };
-        int CPlayer_CalcMaxFP1308_wrapper(struct CPlayer* _this)
+        static int CPlayer_CalcMaxFP1308_wrapper(struct CPlayer* _this)
         {
            return CPlayer_CalcMaxFP1308_user(_this, CPlayer_CalcMaxFP1308_next);
         };
-        int CPlayer_CalcMaxHP1310_wrapper(struct CPlayer* _this)
+        static int CPlayer_CalcMaxHP1310_wrapper(struct CPlayer* _this)
         {
            return CPlayer_CalcMaxHP1310_user(_this, CPlayer_CalcMaxHP1310_next);
         };
-        int CPlayer_CalcMaxSP1312_wrapper(struct CPlayer* _this)
+        static int CPlayer_CalcMaxSP1312_wrapper(struct CPlayer* _this)
         {
            return CPlayer_CalcMaxSP1312_user(_this, CPlayer_CalcMaxSP1312_next);
         };
-        void CPlayer_CheckForcePullUnit1314_wrapper(struct CPlayer* _this)
+        static void CPlayer_CheckForcePullUnit1314_wrapper(struct CPlayer* _this)
         {
            CPlayer_CheckForcePullUnit1314_user(_this, CPlayer_CheckForcePullUnit1314_next);
         };
-        uint16_t CPlayer_DeleteUnitKey1316_wrapper(struct CPlayer* _this, char bySlotIndex)
+        static uint16_t CPlayer_DeleteUnitKey1316_wrapper(struct CPlayer* _this, char bySlotIndex)
         {
            return CPlayer_DeleteUnitKey1316_user(_this, bySlotIndex, CPlayer_DeleteUnitKey1316_next);
         };
-        struct _ITEM_EFFECT* CPlayer_GetItemEffect1318_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
+        static struct _ITEM_EFFECT* CPlayer_GetItemEffect1318_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem)
         {
            return CPlayer_GetItemEffect1318_user(_this, pItem, CPlayer_GetItemEffect1318_next);
         };
-        char CPlayer_GetPartyMemberInCircle1320_wrapper(struct CPlayer* _this, struct CPlayer** out_ppMember, int nMax, bool bOne)
+        static char CPlayer_GetPartyMemberInCircle1320_wrapper(struct CPlayer* _this, struct CPlayer** out_ppMember, int nMax, bool bOne)
         {
            return CPlayer_GetPartyMemberInCircle1320_user(_this, out_ppMember, nMax, bOne, CPlayer_GetPartyMemberInCircle1320_next);
         };
-        bool CPlayer_LockUnitKey1322_wrapper(struct CPlayer* _this, char bySlotIndex, bool bLock)
+        static bool CPlayer_LockUnitKey1322_wrapper(struct CPlayer* _this, char bySlotIndex, bool bLock)
         {
            return CPlayer_LockUnitKey1322_user(_this, bySlotIndex, bLock, CPlayer_LockUnitKey1322_next);
         };
-        struct _Quest_fld* CPlayer_Reward_Quest1324_wrapper(struct CPlayer* _this, struct _Quest_fld* pQuestFld, char byRewardItemIndex)
+        static struct _Quest_fld* CPlayer_Reward_Quest1324_wrapper(struct CPlayer* _this, struct _Quest_fld* pQuestFld, char byRewardItemIndex)
         {
            return CPlayer_Reward_Quest1324_user(_this, pQuestFld, byRewardItemIndex, CPlayer_Reward_Quest1324_next);
         };
-        void CPlayer_TowerAllReturn1326_wrapper(struct CPlayer* _this, char byDestroyType, bool bForceReturn)
+        static void CPlayer_TowerAllReturn1326_wrapper(struct CPlayer* _this, char byDestroyType, bool bForceReturn)
         {
            CPlayer_TowerAllReturn1326_user(_this, byDestroyType, bForceReturn, CPlayer_TowerAllReturn1326_next);
         };
-        void CPlayer_TowerDestroy1328_wrapper(struct CPlayer* _this, struct CGuardTower* pTowerObj)
+        static void CPlayer_TowerDestroy1328_wrapper(struct CPlayer* _this, struct CGuardTower* pTowerObj)
         {
            CPlayer_TowerDestroy1328_user(_this, pTowerObj, CPlayer_TowerDestroy1328_next);
         };
-        uint16_t CPlayer_TowerReturn1330_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pTowerItem)
+        static uint16_t CPlayer_TowerReturn1330_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pTowerItem)
         {
            return CPlayer_TowerReturn1330_user(_this, pTowerItem, CPlayer_TowerReturn1330_next);
         };
-        void CPlayer_TrapDestroy1332_wrapper(struct CPlayer* _this, struct CTrap* pTrap, char byDestroyCode)
+        static void CPlayer_TrapDestroy1332_wrapper(struct CPlayer* _this, struct CTrap* pTrap, char byDestroyCode)
         {
            CPlayer_TrapDestroy1332_user(_this, pTrap, byDestroyCode, CPlayer_TrapDestroy1332_next);
         };
-        void CPlayer_TrapReturn1334_wrapper(struct CPlayer* _this, struct CTrap* pTrap, uint16_t wAddSerial)
+        static void CPlayer_TrapReturn1334_wrapper(struct CPlayer* _this, struct CTrap* pTrap, uint16_t wAddSerial)
         {
            CPlayer_TrapReturn1334_user(_this, pTrap, wAddSerial, CPlayer_TrapReturn1334_next);
         };
-        void CPlayer_UnitDestroy1336_wrapper(struct CPlayer* _this, char byUnitSlot)
+        static void CPlayer_UnitDestroy1336_wrapper(struct CPlayer* _this, char byUnitSlot)
         {
            CPlayer_UnitDestroy1336_user(_this, byUnitSlot, CPlayer_UnitDestroy1336_next);
         };
-        void CPlayer_UpdateUnitDebt1338_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwPull)
+        static void CPlayer_UpdateUnitDebt1338_wrapper(struct CPlayer* _this, char bySlotIndex, unsigned int dwPull)
         {
            CPlayer_UpdateUnitDebt1338_user(_this, bySlotIndex, dwPull, CPlayer_UpdateUnitDebt1338_next);
         };
-        void CPlayer_check_dst_param_after_attack1340_wrapper(struct CPlayer* _this, int nTotalDam, struct CCharacter* pTarget)
+        static void CPlayer_check_dst_param_after_attack1340_wrapper(struct CPlayer* _this, int nTotalDam, struct CCharacter* pTarget)
         {
            CPlayer_check_dst_param_after_attack1340_user(_this, nTotalDam, pTarget, CPlayer_check_dst_param_after_attack1340_next);
         };
-        bool CPlayer_check_embel_part1342_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pFixingItem)
+        static bool CPlayer_check_embel_part1342_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pFixingItem)
         {
            return CPlayer_check_embel_part1342_user(_this, pFixingItem, CPlayer_check_embel_part1342_next);
         };
-        bool CPlayer_check_equip_part1344_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pFixingItem)
+        static bool CPlayer_check_equip_part1344_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pFixingItem)
         {
            return CPlayer_check_equip_part1344_user(_this, pFixingItem, CPlayer_check_equip_part1344_next);
         };
-        int CPlayer_check_equipmastery_lim1346_wrapper(struct CPlayer* _this, int EquipMasteryCode)
+        static int CPlayer_check_equipmastery_lim1346_wrapper(struct CPlayer* _this, int EquipMasteryCode)
         {
            return CPlayer_check_equipmastery_lim1346_user(_this, EquipMasteryCode, CPlayer_check_equipmastery_lim1346_next);
         };
-        int CPlayer_check_exp_after_attack1348_wrapper(struct CPlayer* _this, int nDamagedObjNum, struct _be_damaged_char* pList, struct CPartyModeKillMonsterExpNotify* kPartyExpNotify)
+        static int CPlayer_check_exp_after_attack1348_wrapper(struct CPlayer* _this, int nDamagedObjNum, struct _be_damaged_char* pList, struct CPartyModeKillMonsterExpNotify* kPartyExpNotify)
         {
            return CPlayer_check_exp_after_attack1348_user(_this, nDamagedObjNum, pList, kPartyExpNotify, CPlayer_check_exp_after_attack1348_next);
         };
-        void CPlayer_check_guild_target_object1350_wrapper(struct CPlayer* _this)
+        static void CPlayer_check_guild_target_object1350_wrapper(struct CPlayer* _this)
         {
            CPlayer_check_guild_target_object1350_user(_this, CPlayer_check_guild_target_object1350_next);
         };
-        void CPlayer_check_hp_send_party1352_wrapper(struct CPlayer* _this)
+        static void CPlayer_check_hp_send_party1352_wrapper(struct CPlayer* _this)
         {
            CPlayer_check_hp_send_party1352_user(_this, CPlayer_check_hp_send_party1352_next);
         };
-        unsigned int CPlayer_check_mastery_cum_lim1354_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex)
+        static unsigned int CPlayer_check_mastery_cum_lim1354_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex)
         {
            return CPlayer_check_mastery_cum_lim1354_user(_this, byMasteryClass, byIndex, CPlayer_check_mastery_cum_lim1354_next);
         };
-        unsigned int CPlayer_check_mastery_lim1356_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex)
+        static unsigned int CPlayer_check_mastery_lim1356_wrapper(struct CPlayer* _this, char byMasteryClass, char byIndex)
         {
            return CPlayer_check_mastery_lim1356_user(_this, byMasteryClass, byIndex, CPlayer_check_mastery_lim1356_next);
         };
-        void CPlayer_check_party_target_object1358_wrapper(struct CPlayer* _this)
+        static void CPlayer_check_party_target_object1358_wrapper(struct CPlayer* _this)
         {
            CPlayer_check_party_target_object1358_user(_this, CPlayer_check_party_target_object1358_next);
         };
-        void CPlayer_check_race_target_object1360_wrapper(struct CPlayer* _this)
+        static void CPlayer_check_race_target_object1360_wrapper(struct CPlayer* _this)
         {
            CPlayer_check_race_target_object1360_user(_this, CPlayer_check_race_target_object1360_next);
         };
-        void CPlayer_check_target_object1362_wrapper(struct CPlayer* _this)
+        static void CPlayer_check_target_object1362_wrapper(struct CPlayer* _this)
         {
            CPlayer_check_target_object1362_user(_this, CPlayer_check_target_object1362_next);
         };
-        int CPlayer_pre_check_force_attack1364_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfTarPos, uint16_t wForceItemSerial, struct _force_fld** ppForceFld, struct _STORAGE_LIST::_db_con** ppForceItem, uint16_t* pdwDecPoint, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
+        static int CPlayer_pre_check_force_attack1364_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfTarPos, uint16_t wForceItemSerial, struct _force_fld** ppForceFld, struct _STORAGE_LIST::_db_con** ppForceItem, uint16_t* pdwDecPoint, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
         {
            return CPlayer_pre_check_force_attack1364_user(_this, pDst, pfTarPos, wForceItemSerial, ppForceFld, ppForceItem, pdwDecPoint, wEffBtSerial, ppEffBtProp, ppfldEffBt, CPlayer_pre_check_force_attack1364_next);
         };
-        int CPlayer_pre_check_in_guild_battle1366_wrapper(struct CPlayer* _this, struct CCharacter* pDst)
+        static int CPlayer_pre_check_in_guild_battle1366_wrapper(struct CPlayer* _this, struct CCharacter* pDst)
         {
            return CPlayer_pre_check_in_guild_battle1366_user(_this, pDst, CPlayer_pre_check_in_guild_battle1366_next);
         };
-        bool CPlayer_pre_check_in_guild_battle_race1368_wrapper(struct CPlayer* _this, struct CCharacter* pDst, bool bEqueal)
+        static bool CPlayer_pre_check_in_guild_battle_race1368_wrapper(struct CPlayer* _this, struct CCharacter* pDst, bool bEqueal)
         {
            return CPlayer_pre_check_in_guild_battle_race1368_user(_this, pDst, bEqueal, CPlayer_pre_check_in_guild_battle_race1368_next);
         };
-        int CPlayer_pre_check_normal_attack1370_wrapper(struct CPlayer* _this, struct CCharacter* pDst, uint16_t wBulletSerial, bool bCount, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
+        static int CPlayer_pre_check_normal_attack1370_wrapper(struct CPlayer* _this, struct CCharacter* pDst, uint16_t wBulletSerial, bool bCount, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
         {
            return CPlayer_pre_check_normal_attack1370_user(_this, pDst, wBulletSerial, bCount, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBtProp, ppfldEffBt, CPlayer_pre_check_normal_attack1370_next);
         };
-        int CPlayer_pre_check_siege_attack1372_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBulletProp, struct _BulletItem_fld** ppfldEffBullet)
+        static int CPlayer_pre_check_siege_attack1372_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBulletProp, struct _BulletItem_fld** ppfldEffBullet)
         {
            return CPlayer_pre_check_siege_attack1372_user(_this, pDst, pfAttackPos, wBulletSerial, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBulletProp, ppfldEffBullet, CPlayer_pre_check_siege_attack1372_next);
         };
-        int CPlayer_pre_check_skill_attack1374_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, struct _skill_fld* pSkillFld, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, int nEffectGroup, uint16_t* pdwDecPoint, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
+        static int CPlayer_pre_check_skill_attack1374_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, struct _skill_fld* pSkillFld, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet, int nEffectGroup, uint16_t* pdwDecPoint, uint16_t wEffBtSerial, struct _STORAGE_LIST::_db_con** ppEffBtProp, struct _BulletItem_fld** ppfldEffBt)
         {
            return CPlayer_pre_check_skill_attack1374_user(_this, pDst, pfAttackPos, byEffectCode, pSkillFld, wBulletSerial, ppBulletProp, ppfldBullet, nEffectGroup, pdwDecPoint, wEffBtSerial, ppEffBtProp, ppfldEffBt, CPlayer_pre_check_skill_attack1374_next);
         };
-        bool CPlayer_pre_check_skill_enable1376_wrapper(struct CPlayer* _this, struct _skill_fld* pSkillFld)
+        static bool CPlayer_pre_check_skill_enable1376_wrapper(struct CPlayer* _this, struct _skill_fld* pSkillFld)
         {
            return CPlayer_pre_check_skill_enable1376_user(_this, pSkillFld, CPlayer_pre_check_skill_enable1376_next);
         };
-        bool CPlayer_pre_check_skill_gradelimit1378_wrapper(struct CPlayer* _this, struct _skill_fld* pSkillFld)
+        static bool CPlayer_pre_check_skill_gradelimit1378_wrapper(struct CPlayer* _this, struct _skill_fld* pSkillFld)
         {
            return CPlayer_pre_check_skill_gradelimit1378_user(_this, pSkillFld, CPlayer_pre_check_skill_gradelimit1378_next);
         };
-        int CPlayer_pre_check_unit_attack1380_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byWeaponPart, struct _UnitPart_fld** ppWeaponFld, struct _UnitBullet_fld** ppBulletFld, struct _unit_bullet_param** ppBulletParam)
+        static int CPlayer_pre_check_unit_attack1380_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byWeaponPart, struct _UnitPart_fld** ppWeaponFld, struct _UnitBullet_fld** ppBulletFld, struct _unit_bullet_param** ppBulletParam)
         {
            return CPlayer_pre_check_unit_attack1380_user(_this, pDst, byWeaponPart, ppWeaponFld, ppBulletFld, ppBulletParam, CPlayer_pre_check_unit_attack1380_next);
         };
-        bool CPlayer_pre_check_wpactive_force_attack1382_wrapper(struct CPlayer* _this)
+        static bool CPlayer_pre_check_wpactive_force_attack1382_wrapper(struct CPlayer* _this)
         {
            return CPlayer_pre_check_wpactive_force_attack1382_user(_this, CPlayer_pre_check_wpactive_force_attack1382_next);
         };
-        bool CPlayer_pre_check_wpactive_skill_attack1384_wrapper(struct CPlayer* _this, char byEffectCode, struct _skill_fld* pSkillFld, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet)
+        static bool CPlayer_pre_check_wpactive_skill_attack1384_wrapper(struct CPlayer* _this, char byEffectCode, struct _skill_fld* pSkillFld, uint16_t wBulletSerial, struct _STORAGE_LIST::_db_con** ppBulletProp, struct _BulletItem_fld** ppfldBullet)
         {
            return CPlayer_pre_check_wpactive_skill_attack1384_user(_this, byEffectCode, pSkillFld, wBulletSerial, ppBulletProp, ppfldBullet, CPlayer_pre_check_wpactive_skill_attack1384_next);
         };
-        void CPlayer_set_db_sf_effect1386_wrapper(struct CPlayer* _this, struct _SFCONT_DB_BASE* pDBBase)
+        static void CPlayer_set_db_sf_effect1386_wrapper(struct CPlayer* _this, struct _SFCONT_DB_BASE* pDBBase)
         {
            CPlayer_set_db_sf_effect1386_user(_this, pDBBase, CPlayer_set_db_sf_effect1386_next);
         };
-        void CPlayerapply_case_equip_std_effect1391_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bEquip)
+        static void CPlayerapply_case_equip_std_effect1391_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bEquip)
         {
            CPlayerapply_case_equip_std_effect1391_user(_this, pItem, bEquip, CPlayerapply_case_equip_std_effect1391_next);
         };
-        void CPlayerapply_case_equip_upgrade_effect1393_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bEquip)
+        static void CPlayerapply_case_equip_upgrade_effect1393_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* pItem, bool bEquip)
         {
            CPlayerapply_case_equip_upgrade_effect1393_user(_this, pItem, bEquip, CPlayerapply_case_equip_upgrade_effect1393_next);
         };
-        void CPlayerapply_have_item_std_effect1395_wrapper(struct CPlayer* _this, int nEffCode, float fVal, bool bAdd, int nDiffCnt)
+        static void CPlayerapply_have_item_std_effect1395_wrapper(struct CPlayer* _this, int nEffCode, float fVal, bool bAdd, int nDiffCnt)
         {
            CPlayerapply_have_item_std_effect1395_user(_this, nEffCode, fVal, bAdd, nDiffCnt, CPlayerapply_have_item_std_effect1395_next);
         };
-        void CPlayerapply_normal_item_std_effect1397_wrapper(struct CPlayer* _this, int nEffCode, float fVal, bool bEquip)
+        static void CPlayerapply_normal_item_std_effect1397_wrapper(struct CPlayer* _this, int nEffCode, float fVal, bool bEquip)
         {
            CPlayerapply_normal_item_std_effect1397_user(_this, nEffCode, fVal, bEquip, CPlayerapply_normal_item_std_effect1397_next);
         };
-        bool CPlayerdev_SetGuildGrade1399_wrapper(struct CPlayer* _this, char byGrade)
+        static bool CPlayerdev_SetGuildGrade1399_wrapper(struct CPlayer* _this, char byGrade)
         {
            return CPlayerdev_SetGuildGrade1399_user(_this, byGrade, CPlayerdev_SetGuildGrade1399_next);
         };
-        bool CPlayerdev_SetGuildGradeByGuildSerial1401_wrapper(struct CPlayer* _this, unsigned int dwGuildSerial, char byGrade)
+        static bool CPlayerdev_SetGuildGradeByGuildSerial1401_wrapper(struct CPlayer* _this, unsigned int dwGuildSerial, char byGrade)
         {
            return CPlayerdev_SetGuildGradeByGuildSerial1401_user(_this, dwGuildSerial, byGrade, CPlayerdev_SetGuildGradeByGuildSerial1401_next);
         };
-        bool CPlayerdev_SetGuildGradeByName1403_wrapper(struct CPlayer* _this, char* uszGuildName, char byGrade)
+        static bool CPlayerdev_SetGuildGradeByName1403_wrapper(struct CPlayer* _this, char* uszGuildName, char byGrade)
         {
            return CPlayerdev_SetGuildGradeByName1403_user(_this, uszGuildName, byGrade, CPlayerdev_SetGuildGradeByName1403_next);
         };
-        bool CPlayerdev_after_effect1405_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_after_effect1405_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_after_effect1405_user(_this, CPlayerdev_after_effect1405_next);
         };
-        bool CPlayerdev_all_kill1407_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_all_kill1407_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_all_kill1407_user(_this, CPlayerdev_all_kill1407_next);
         };
-        bool CPlayerdev_animus_recall_time_free1409_wrapper(struct CPlayer* _this, bool bFree)
+        static bool CPlayerdev_animus_recall_time_free1409_wrapper(struct CPlayer* _this, bool bFree)
         {
            return CPlayerdev_animus_recall_time_free1409_user(_this, bFree, CPlayerdev_animus_recall_time_free1409_next);
         };
-        bool CPlayerdev_avator_copy1411_wrapper(struct CPlayer* _this, char* pwszDstName)
+        static bool CPlayerdev_avator_copy1411_wrapper(struct CPlayer* _this, char* pwszDstName)
         {
            return CPlayerdev_avator_copy1411_user(_this, pwszDstName, CPlayerdev_avator_copy1411_next);
         };
-        bool CPlayerdev_change_class1413_wrapper(struct CPlayer* _this, char* pszClassCode)
+        static bool CPlayerdev_change_class1413_wrapper(struct CPlayer* _this, char* pszClassCode)
         {
            return CPlayerdev_change_class1413_user(_this, pszClassCode, CPlayerdev_change_class1413_next);
         };
-        bool CPlayerdev_cont_effect_del1415_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_cont_effect_del1415_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_cont_effect_del1415_user(_this, CPlayerdev_cont_effect_del1415_next);
         };
-        bool CPlayerdev_cont_effect_time1417_wrapper(struct CPlayer* _this, unsigned int dwSec)
+        static bool CPlayerdev_cont_effect_time1417_wrapper(struct CPlayer* _this, unsigned int dwSec)
         {
            return CPlayerdev_cont_effect_time1417_user(_this, dwSec, CPlayerdev_cont_effect_time1417_next);
         };
-        bool CPlayerdev_dalant1419_wrapper(struct CPlayer* _this, unsigned int dwDalant)
+        static bool CPlayerdev_dalant1419_wrapper(struct CPlayer* _this, unsigned int dwDalant)
         {
            return CPlayerdev_dalant1419_user(_this, dwDalant, CPlayerdev_dalant1419_next);
         };
-        bool CPlayerdev_die1421_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_die1421_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_die1421_user(_this, CPlayerdev_die1421_next);
         };
-        bool CPlayerdev_drop_item1423_wrapper(struct CPlayer* _this, char* pszItemCode, int nNum, char* pszUpTalCode, int nUpNum)
+        static bool CPlayerdev_drop_item1423_wrapper(struct CPlayer* _this, char* pszItemCode, int nNum, char* pszUpTalCode, int nUpNum)
         {
            return CPlayerdev_drop_item1423_user(_this, pszItemCode, nNum, pszUpTalCode, nUpNum, CPlayerdev_drop_item1423_next);
         };
-        bool CPlayerdev_free_sf_by_class1425_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_free_sf_by_class1425_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_free_sf_by_class1425_user(_this, CPlayerdev_free_sf_by_class1425_next);
         };
-        bool CPlayerdev_full_animus_gauge1427_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_full_animus_gauge1427_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_full_animus_gauge1427_user(_this, CPlayerdev_full_animus_gauge1427_next);
         };
-        bool CPlayerdev_full_force1429_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_full_force1429_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_full_force1429_user(_this, CPlayerdev_full_force1429_next);
         };
-        bool CPlayerdev_full_point1431_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_full_point1431_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_full_point1431_user(_this, CPlayerdev_full_point1431_next);
         };
-        bool CPlayerdev_gold1433_wrapper(struct CPlayer* _this, unsigned int dwGold)
+        static bool CPlayerdev_gold1433_wrapper(struct CPlayer* _this, unsigned int dwGold)
         {
            return CPlayerdev_gold1433_user(_this, dwGold, CPlayerdev_gold1433_next);
         };
-        bool CPlayerdev_goto_monster1435_wrapper(struct CPlayer* _this, struct CMonster* pMon)
+        static bool CPlayerdev_goto_monster1435_wrapper(struct CPlayer* _this, struct CMonster* pMon)
         {
            return CPlayerdev_goto_monster1435_user(_this, pMon, CPlayerdev_goto_monster1435_next);
         };
-        bool CPlayerdev_goto_npc1437_wrapper(struct CPlayer* _this, struct CMerchant* pNpc)
+        static bool CPlayerdev_goto_npc1437_wrapper(struct CPlayer* _this, struct CMerchant* pNpc)
         {
            return CPlayerdev_goto_npc1437_user(_this, pNpc, CPlayerdev_goto_npc1437_next);
         };
-        bool CPlayerdev_half_inven_amount1439_wrapper(struct CPlayer* _this, uint64_t dwAmount)
+        static bool CPlayerdev_half_inven_amount1439_wrapper(struct CPlayer* _this, uint64_t dwAmount)
         {
            return CPlayerdev_half_inven_amount1439_user(_this, dwAmount, CPlayerdev_half_inven_amount1439_next);
         };
-        bool CPlayerdev_half_point1441_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_half_point1441_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_half_point1441_user(_this, CPlayerdev_half_point1441_next);
         };
-        bool CPlayerdev_init_monster1443_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_init_monster1443_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_init_monster1443_user(_this, CPlayerdev_init_monster1443_next);
         };
-        bool CPlayerdev_inven_empty1445_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_inven_empty1445_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_inven_empty1445_user(_this, CPlayerdev_inven_empty1445_next);
         };
-        bool CPlayerdev_item_make_no_use_matrial1447_wrapper(struct CPlayer* _this, bool noUsingMatrial)
+        static bool CPlayerdev_item_make_no_use_matrial1447_wrapper(struct CPlayer* _this, bool noUsingMatrial)
         {
            return CPlayerdev_item_make_no_use_matrial1447_user(_this, noUsingMatrial, CPlayerdev_item_make_no_use_matrial1447_next);
         };
-        bool CPlayerdev_loot_bag1449_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_loot_bag1449_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_loot_bag1449_user(_this, CPlayerdev_loot_bag1449_next);
         };
-        bool CPlayerdev_loot_free1451_wrapper(struct CPlayer* _this, bool bFree)
+        static bool CPlayerdev_loot_free1451_wrapper(struct CPlayer* _this, bool bFree)
         {
            return CPlayerdev_loot_free1451_user(_this, bFree, CPlayerdev_loot_free1451_next);
         };
-        bool CPlayerdev_loot_fullitem1453_wrapper(struct CPlayer* _this, char byLv)
+        static bool CPlayerdev_loot_fullitem1453_wrapper(struct CPlayer* _this, char byLv)
         {
            return CPlayerdev_loot_fullitem1453_user(_this, byLv, CPlayerdev_loot_fullitem1453_next);
         };
-        bool CPlayerdev_loot_item1455_wrapper(struct CPlayer* _this, char* pszItemCode, int nNum, char* pszUpTalCode, int nUpNum)
+        static bool CPlayerdev_loot_item1455_wrapper(struct CPlayer* _this, char* pszItemCode, int nNum, char* pszUpTalCode, int nUpNum)
         {
            return CPlayerdev_loot_item1455_user(_this, pszItemCode, nNum, pszUpTalCode, nUpNum, CPlayerdev_loot_item1455_next);
         };
-        bool CPlayerdev_loot_material1457_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_loot_material1457_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_loot_material1457_user(_this, CPlayerdev_loot_material1457_next);
         };
-        bool CPlayerdev_loot_mine1459_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_loot_mine1459_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_loot_mine1459_user(_this, CPlayerdev_loot_mine1459_next);
         };
-        bool CPlayerdev_loot_tower1461_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_loot_tower1461_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_loot_tower1461_user(_this, CPlayerdev_loot_tower1461_next);
         };
-        bool CPlayerdev_lv1463_wrapper(struct CPlayer* _this, int nLv)
+        static bool CPlayerdev_lv1463_wrapper(struct CPlayer* _this, int nLv)
         {
            return CPlayerdev_lv1463_user(_this, nLv, CPlayerdev_lv1463_next);
         };
-        bool CPlayerdev_make_succ1465_wrapper(struct CPlayer* _this, bool bSucc)
+        static bool CPlayerdev_make_succ1465_wrapper(struct CPlayer* _this, bool bSucc)
         {
            return CPlayerdev_make_succ1465_user(_this, bSucc, CPlayerdev_make_succ1465_next);
         };
-        bool CPlayerdev_max_level_ext1467_wrapper(struct CPlayer* _this, char byMaxLevel)
+        static bool CPlayerdev_max_level_ext1467_wrapper(struct CPlayer* _this, char byMaxLevel)
         {
            return CPlayerdev_max_level_ext1467_user(_this, byMaxLevel, CPlayerdev_max_level_ext1467_next);
         };
-        bool CPlayerdev_never_die1469_wrapper(struct CPlayer* _this, bool bSet)
+        static bool CPlayerdev_never_die1469_wrapper(struct CPlayer* _this, bool bSet)
         {
            return CPlayerdev_never_die1469_user(_this, bSet, CPlayerdev_never_die1469_next);
         };
-        bool CPlayerdev_quest_complete1471_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_quest_complete1471_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_quest_complete1471_user(_this, CPlayerdev_quest_complete1471_next);
         };
-        bool CPlayerdev_quest_complete_other1473_wrapper(struct CPlayer* _this, char* pwszCharName)
+        static bool CPlayerdev_quest_complete_other1473_wrapper(struct CPlayer* _this, char* pwszCharName)
         {
            return CPlayerdev_quest_complete_other1473_user(_this, pwszCharName, CPlayerdev_quest_complete_other1473_next);
         };
-        bool CPlayerdev_set_animus_exp1475_wrapper(struct CPlayer* _this, uint64_t dwExpPoint)
+        static bool CPlayerdev_set_animus_exp1475_wrapper(struct CPlayer* _this, uint64_t dwExpPoint)
         {
            return CPlayerdev_set_animus_exp1475_user(_this, dwExpPoint, CPlayerdev_set_animus_exp1475_next);
         };
-        bool CPlayerdev_set_animus_lv1477_wrapper(struct CPlayer* _this, int nAnimusLv)
+        static bool CPlayerdev_set_animus_lv1477_wrapper(struct CPlayer* _this, int nAnimusLv)
         {
            return CPlayerdev_set_animus_lv1477_user(_this, nAnimusLv, CPlayerdev_set_animus_lv1477_next);
         };
-        bool CPlayerdev_set_hp1479_wrapper(struct CPlayer* _this, float prob)
+        static bool CPlayerdev_set_hp1479_wrapper(struct CPlayer* _this, float prob)
         {
            return CPlayerdev_set_hp1479_user(_this, prob, CPlayerdev_set_hp1479_next);
         };
-        bool CPlayerdev_trap_attack_grade1481_wrapper(struct CPlayer* _this, int nPoint)
+        static bool CPlayerdev_trap_attack_grade1481_wrapper(struct CPlayer* _this, int nPoint)
         {
            return CPlayerdev_trap_attack_grade1481_user(_this, nPoint, CPlayerdev_trap_attack_grade1481_next);
         };
-        bool CPlayerdev_up_all1483_wrapper(struct CPlayer* _this, int nCum)
+        static bool CPlayerdev_up_all1483_wrapper(struct CPlayer* _this, int nCum)
         {
            return CPlayerdev_up_all1483_user(_this, nCum, CPlayerdev_up_all1483_next);
         };
-        bool CPlayerdev_up_all_pt1485_wrapper(struct CPlayer* _this, int nLv)
+        static bool CPlayerdev_up_all_pt1485_wrapper(struct CPlayer* _this, int nLv)
         {
            return CPlayerdev_up_all_pt1485_user(_this, nLv, CPlayerdev_up_all_pt1485_next);
         };
-        bool CPlayerdev_up_cashbag1487_wrapper(struct CPlayer* _this, long double dPoint)
+        static bool CPlayerdev_up_cashbag1487_wrapper(struct CPlayer* _this, long double dPoint)
         {
            return CPlayerdev_up_cashbag1487_user(_this, dPoint, CPlayerdev_up_cashbag1487_next);
         };
-        bool CPlayerdev_up_forceitem1489_wrapper(struct CPlayer* _this, int nCum)
+        static bool CPlayerdev_up_forceitem1489_wrapper(struct CPlayer* _this, int nCum)
         {
            return CPlayerdev_up_forceitem1489_user(_this, nCum, CPlayerdev_up_forceitem1489_next);
         };
-        bool CPlayerdev_up_forcemastery1491_wrapper(struct CPlayer* _this, int nCum)
+        static bool CPlayerdev_up_forcemastery1491_wrapper(struct CPlayer* _this, int nCum)
         {
            return CPlayerdev_up_forcemastery1491_user(_this, nCum, CPlayerdev_up_forcemastery1491_next);
         };
-        bool CPlayerdev_up_mastery1493_wrapper(struct CPlayer* _this, int nMasteryCode, int nMasteryIndex, int nLv)
+        static bool CPlayerdev_up_mastery1493_wrapper(struct CPlayer* _this, int nMasteryCode, int nMasteryIndex, int nLv)
         {
            return CPlayerdev_up_mastery1493_user(_this, nMasteryCode, nMasteryIndex, nLv, CPlayerdev_up_mastery1493_next);
         };
-        bool CPlayerdev_up_pvp1495_wrapper(struct CPlayer* _this, long double dPoint)
+        static bool CPlayerdev_up_pvp1495_wrapper(struct CPlayer* _this, long double dPoint)
         {
            return CPlayerdev_up_pvp1495_user(_this, dPoint, CPlayerdev_up_pvp1495_next);
         };
-        bool CPlayerdev_up_skill1497_wrapper(struct CPlayer* _this, char* pszSkillCode, int nCum)
+        static bool CPlayerdev_up_skill1497_wrapper(struct CPlayer* _this, char* pszSkillCode, int nCum)
         {
            return CPlayerdev_up_skill1497_user(_this, pszSkillCode, nCum, CPlayerdev_up_skill1497_next);
         };
-        bool CPlayerdev_view_boss1499_wrapper(struct CPlayer* _this)
+        static bool CPlayerdev_view_boss1499_wrapper(struct CPlayer* _this)
         {
            return CPlayerdev_view_boss1499_user(_this, CPlayerdev_view_boss1499_next);
         };
-        bool CPlayerdev_view_method1501_wrapper(struct CPlayer* _this, char* pwszDstName)
+        static bool CPlayerdev_view_method1501_wrapper(struct CPlayer* _this, char* pwszDstName)
         {
            return CPlayerdev_view_method1501_user(_this, pwszDstName, CPlayerdev_view_method1501_next);
         };
-        void CPlayermake_force_attack_param1503_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _force_fld* pForceFld, struct _STORAGE_LIST::_db_con* pForceItem, float* pTar, struct _attack_param* pAP, struct _STORAGE_LIST::_db_con* pEffBulletItem, float fAddEffBtFc)
+        static void CPlayermake_force_attack_param1503_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _force_fld* pForceFld, struct _STORAGE_LIST::_db_con* pForceItem, float* pTar, struct _attack_param* pAP, struct _STORAGE_LIST::_db_con* pEffBulletItem, float fAddEffBtFc)
         {
            CPlayermake_force_attack_param1503_user(_this, pDst, pForceFld, pForceItem, pTar, pAP, pEffBulletItem, fAddEffBtFc, CPlayermake_force_attack_param1503_next);
         };
-        void CPlayermake_gen_attack_param1505_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byPart, struct _BulletItem_fld* pBulletFld, float fAddBulletFc, struct _attack_param* pAP, struct _BulletItem_fld* pEffBtFld, float fAddEffBtFc)
+        static void CPlayermake_gen_attack_param1505_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byPart, struct _BulletItem_fld* pBulletFld, float fAddBulletFc, struct _attack_param* pAP, struct _BulletItem_fld* pEffBtFld, float fAddEffBtFc)
         {
            CPlayermake_gen_attack_param1505_user(_this, pDst, byPart, pBulletFld, fAddBulletFc, pAP, pEffBtFld, fAddEffBtFc, CPlayermake_gen_attack_param1505_next);
         };
-        void CPlayermake_siege_attack_param1507_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byPart, struct _BulletItem_fld* pBulletFld, float fAddBulletFc, struct _attack_param* pAP, struct _BulletItem_fld* pEffBulletFld, float fAddEffBtFc)
+        static void CPlayermake_siege_attack_param1507_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byPart, struct _BulletItem_fld* pBulletFld, float fAddBulletFc, struct _attack_param* pAP, struct _BulletItem_fld* pEffBulletFld, float fAddEffBtFc)
         {
            CPlayermake_siege_attack_param1507_user(_this, pDst, pfAttackPos, byPart, pBulletFld, fAddBulletFc, pAP, pEffBulletFld, fAddEffBtFc, CPlayermake_siege_attack_param1507_next);
         };
-        void CPlayermake_skill_attack_param1509_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, struct _skill_fld* pSkillFld, int nAttType, struct _STORAGE_LIST::_db_con* pBulletItem, float fAddBulletFc, struct _attack_param* pAP, struct _STORAGE_LIST::_db_con* pEffBulletItem, float fAddEffBulletFc)
+        static void CPlayermake_skill_attack_param1509_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, struct _skill_fld* pSkillFld, int nAttType, struct _STORAGE_LIST::_db_con* pBulletItem, float fAddBulletFc, struct _attack_param* pAP, struct _STORAGE_LIST::_db_con* pEffBulletItem, float fAddEffBulletFc)
         {
            CPlayermake_skill_attack_param1509_user(_this, pDst, pfAttackPos, byEffectCode, pSkillFld, nAttType, pBulletItem, fAddBulletFc, pAP, pEffBulletItem, fAddEffBulletFc, CPlayermake_skill_attack_param1509_next);
         };
-        void CPlayermake_unit_attack_param1511_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _UnitPart_fld* pWeaponFld, float fAddBulletFc, struct _attack_param* pAP)
+        static void CPlayermake_unit_attack_param1511_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _UnitPart_fld* pWeaponFld, float fAddBulletFc, struct _attack_param* pAP)
         {
            CPlayermake_unit_attack_param1511_user(_this, pDst, pWeaponFld, fAddBulletFc, pAP, CPlayermake_unit_attack_param1511_next);
         };
-        void CPlayermake_wpactive_force_attack_param1513_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _force_fld* pForceFld, float* pfAttackPos, struct _attack_param* pAP)
+        static void CPlayermake_wpactive_force_attack_param1513_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _force_fld* pForceFld, float* pfAttackPos, struct _attack_param* pAP)
         {
            CPlayermake_wpactive_force_attack_param1513_user(_this, pDst, pForceFld, pfAttackPos, pAP, CPlayermake_wpactive_force_attack_param1513_next);
         };
-        void CPlayermake_wpactive_skill_attack_param1515_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _skill_fld* pSkillFld, float* pfAttackPos, char byEffectCode, int nAttType, struct _STORAGE_LIST::_db_con* pBulletItem, float fAddBulletFc, struct _attack_param* pAP, int* nShotNum)
+        static void CPlayermake_wpactive_skill_attack_param1515_wrapper(struct CPlayer* _this, struct CCharacter* pDst, struct _skill_fld* pSkillFld, float* pfAttackPos, char byEffectCode, int nAttType, struct _STORAGE_LIST::_db_con* pBulletItem, float fAddBulletFc, struct _attack_param* pAP, int* nShotNum)
         {
            CPlayermake_wpactive_skill_attack_param1515_user(_this, pDst, pSkillFld, pfAttackPos, byEffectCode, nAttType, pBulletItem, fAddBulletFc, pAP, nShotNum, CPlayermake_wpactive_skill_attack_param1515_next);
         };
-        bool CPlayermgr_MaxAttackPoint1517_wrapper(struct CPlayer* _this, int nMax)
+        static bool CPlayermgr_MaxAttackPoint1517_wrapper(struct CPlayer* _this, int nMax)
         {
            return CPlayermgr_MaxAttackPoint1517_user(_this, nMax, CPlayermgr_MaxAttackPoint1517_next);
         };
-        bool CPlayermgr_TrunkInit1519_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_TrunkInit1519_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_TrunkInit1519_user(_this, CPlayermgr_TrunkInit1519_next);
         };
-        bool CPlayermgr_all_item_muzi1521_wrapper(struct CPlayer* _this, int nLv)
+        static bool CPlayermgr_all_item_muzi1521_wrapper(struct CPlayer* _this, int nLv)
         {
            return CPlayermgr_all_item_muzi1521_user(_this, nLv, CPlayermgr_all_item_muzi1521_next);
         };
-        bool CPlayermgr_change_degree1523_wrapper(struct CPlayer* _this, int nDegree)
+        static bool CPlayermgr_change_degree1523_wrapper(struct CPlayer* _this, int nDegree)
         {
            return CPlayermgr_change_degree1523_user(_this, nDegree, CPlayermgr_change_degree1523_next);
         };
-        bool CPlayermgr_defense_item_grace1525_wrapper(struct CPlayer* _this, char byItemCode, int nLv)
+        static bool CPlayermgr_defense_item_grace1525_wrapper(struct CPlayer* _this, char byItemCode, int nLv)
         {
            return CPlayermgr_defense_item_grace1525_user(_this, byItemCode, nLv, CPlayermgr_defense_item_grace1525_next);
         };
-        bool CPlayermgr_destroy_system_tower1527_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_destroy_system_tower1527_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_destroy_system_tower1527_user(_this, CPlayermgr_destroy_system_tower1527_next);
         };
-        bool CPlayermgr_dungeon_pass1529_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_dungeon_pass1529_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_dungeon_pass1529_user(_this, CPlayermgr_dungeon_pass1529_next);
         };
-        bool CPlayermgr_exit_keeper1531_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_exit_keeper1531_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_exit_keeper1531_user(_this, CPlayermgr_exit_keeper1531_next);
         };
-        bool CPlayermgr_exit_stone1533_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_exit_stone1533_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_exit_stone1533_user(_this, CPlayermgr_exit_stone1533_next);
         };
-        bool CPlayermgr_free_ride_ship1535_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_free_ride_ship1535_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_free_ride_ship1535_user(_this, CPlayermgr_free_ride_ship1535_next);
         };
-        bool CPlayermgr_gotoCoordinates1537_wrapper(struct CPlayer* _this, char* pszMapCode, float fX, float fY, float fZ)
+        static bool CPlayermgr_gotoCoordinates1537_wrapper(struct CPlayer* _this, char* pszMapCode, float fX, float fY, float fZ)
         {
            return CPlayermgr_gotoCoordinates1537_user(_this, pszMapCode, fX, fY, fZ, CPlayermgr_gotoCoordinates1537_next);
         };
-        bool CPlayermgr_gotoDstCoordinates1539_wrapper(struct CPlayer* _this, char* pwszDstName, char* pszMapCode, float fX, float fY, float fZ)
+        static bool CPlayermgr_gotoDstCoordinates1539_wrapper(struct CPlayer* _this, char* pwszDstName, char* pszMapCode, float fX, float fY, float fZ)
         {
            return CPlayermgr_gotoDstCoordinates1539_user(_this, pwszDstName, pszMapCode, fX, fY, fZ, CPlayermgr_gotoDstCoordinates1539_next);
         };
-        bool CPlayermgr_goto_mine1541_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_goto_mine1541_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_goto_mine1541_user(_this, CPlayermgr_goto_mine1541_next);
         };
-        bool CPlayermgr_goto_shipport1543_wrapper(struct CPlayer* _this, int nRaceCode, int nPort)
+        static bool CPlayermgr_goto_shipport1543_wrapper(struct CPlayer* _this, int nRaceCode, int nPort)
         {
            return CPlayermgr_goto_shipport1543_user(_this, nRaceCode, nPort, CPlayermgr_goto_shipport1543_next);
         };
-        bool CPlayermgr_goto_stone1545_wrapper(struct CPlayer* _this, char byRaceCode)
+        static bool CPlayermgr_goto_stone1545_wrapper(struct CPlayer* _this, char byRaceCode)
         {
            return CPlayermgr_goto_stone1545_user(_this, byRaceCode, CPlayermgr_goto_stone1545_next);
         };
-        bool CPlayermgr_goto_store1547_wrapper(struct CPlayer* _this, int nRaceCode, char* pszNPCName)
+        static bool CPlayermgr_goto_store1547_wrapper(struct CPlayer* _this, int nRaceCode, char* pszNPCName)
         {
            return CPlayermgr_goto_store1547_user(_this, nRaceCode, pszNPCName, CPlayermgr_goto_store1547_next);
         };
-        bool CPlayermgr_holykeeper_start1549_wrapper(struct CPlayer* _this, int nRace)
+        static bool CPlayermgr_holykeeper_start1549_wrapper(struct CPlayer* _this, int nRace)
         {
            return CPlayermgr_holykeeper_start1549_user(_this, nRace, CPlayermgr_holykeeper_start1549_next);
         };
-        bool CPlayermgr_holystone_start1551_wrapper(struct CPlayer* _this, int nNumOfTime)
+        static bool CPlayermgr_holystone_start1551_wrapper(struct CPlayer* _this, int nNumOfTime)
         {
            return CPlayermgr_holystone_start1551_user(_this, nNumOfTime, CPlayermgr_holystone_start1551_next);
         };
-        bool CPlayermgr_item_telekinesis1553_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_item_telekinesis1553_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_item_telekinesis1553_user(_this, CPlayermgr_item_telekinesis1553_next);
         };
-        bool CPlayermgr_kick1555_wrapper(struct CPlayer* _this, char* pwszCharName)
+        static bool CPlayermgr_kick1555_wrapper(struct CPlayer* _this, char* pwszCharName)
         {
            return CPlayermgr_kick1555_user(_this, pwszCharName, CPlayermgr_kick1555_next);
         };
-        bool CPlayermgr_make_system_tower1557_wrapper(struct CPlayer* _this, char* pszTowerCode)
+        static bool CPlayermgr_make_system_tower1557_wrapper(struct CPlayer* _this, char* pszTowerCode)
         {
            return CPlayermgr_make_system_tower1557_user(_this, pszTowerCode, CPlayermgr_make_system_tower1557_next);
         };
-        bool CPlayermgr_matchless1559_wrapper(struct CPlayer* _this, bool bMatchless)
+        static bool CPlayermgr_matchless1559_wrapper(struct CPlayer* _this, bool bMatchless)
         {
            return CPlayermgr_matchless1559_user(_this, bMatchless, CPlayermgr_matchless1559_next);
         };
-        bool CPlayermgr_pass_sch_one_step1561_wrapper(struct CPlayer* _this)
+        static bool CPlayermgr_pass_sch_one_step1561_wrapper(struct CPlayer* _this)
         {
            return CPlayermgr_pass_sch_one_step1561_user(_this, CPlayermgr_pass_sch_one_step1561_next);
         };
-        bool CPlayermgr_recall_guild_player1563_wrapper(struct CPlayer* _this, char* wszDestCharName)
+        static bool CPlayermgr_recall_guild_player1563_wrapper(struct CPlayer* _this, char* wszDestCharName)
         {
            return CPlayermgr_recall_guild_player1563_user(_this, wszDestCharName, CPlayermgr_recall_guild_player1563_next);
         };
-        bool CPlayermgr_recall_mon1565_wrapper(struct CPlayer* _this, char* pszMonCode, int nCreateNum)
+        static bool CPlayermgr_recall_mon1565_wrapper(struct CPlayer* _this, char* pszMonCode, int nCreateNum)
         {
            return CPlayermgr_recall_mon1565_user(_this, pszMonCode, nCreateNum, CPlayermgr_recall_mon1565_next);
         };
-        bool CPlayermgr_recall_party_player1567_wrapper(struct CPlayer* _this, char* wszDestCharName)
+        static bool CPlayermgr_recall_party_player1567_wrapper(struct CPlayer* _this, char* wszDestCharName)
         {
            return CPlayermgr_recall_party_player1567_user(_this, wszDestCharName, CPlayermgr_recall_party_player1567_next);
         };
-        bool CPlayermgr_recall_player1569_wrapper(struct CPlayer* _this, char* pwszCharName)
+        static bool CPlayermgr_recall_player1569_wrapper(struct CPlayer* _this, char* pwszCharName)
         {
            return CPlayermgr_recall_player1569_user(_this, pwszCharName, CPlayermgr_recall_player1569_next);
         };
-        bool CPlayermgr_resurrect_player1571_wrapper(struct CPlayer* _this, char* pwszCharName)
+        static bool CPlayermgr_resurrect_player1571_wrapper(struct CPlayer* _this, char* pwszCharName)
         {
            return CPlayermgr_resurrect_player1571_user(_this, pwszCharName, CPlayermgr_resurrect_player1571_next);
         };
-        bool CPlayermgr_set_animus_attack_point1573_wrapper(struct CPlayer* _this, int nPoint)
+        static bool CPlayermgr_set_animus_attack_point1573_wrapper(struct CPlayer* _this, int nPoint)
         {
            return CPlayermgr_set_animus_attack_point1573_user(_this, nPoint, CPlayermgr_set_animus_attack_point1573_next);
         };
-        bool CPlayermgr_tracing1575_wrapper(struct CPlayer* _this, bool bOn)
+        static bool CPlayermgr_tracing1575_wrapper(struct CPlayer* _this, bool bOn)
         {
            return CPlayermgr_tracing1575_user(_this, bOn, CPlayermgr_tracing1575_next);
         };
-        bool CPlayermgr_user_ban1577_wrapper(struct CPlayer* _this, char* uszCharName, int iPeriod, char* uszReason, char byBlockType)
+        static bool CPlayermgr_user_ban1577_wrapper(struct CPlayer* _this, char* uszCharName, int iPeriod, char* uszReason, char byBlockType)
         {
            return CPlayermgr_user_ban1577_user(_this, uszCharName, iPeriod, uszReason, byBlockType, CPlayermgr_user_ban1577_next);
         };
-        bool CPlayermgr_whisper1579_wrapper(struct CPlayer* _this, char* pwszMsg)
+        static bool CPlayermgr_whisper1579_wrapper(struct CPlayer* _this, char* pwszMsg)
         {
            return CPlayermgr_whisper1579_user(_this, pwszMsg, CPlayermgr_whisper1579_next);
         };
-        void CPlayerpc_AddBag1581_wrapper(struct CPlayer* _this, uint16_t wBagItemSerial)
+        static void CPlayerpc_AddBag1581_wrapper(struct CPlayer* _this, uint16_t wBagItemSerial)
         {
            CPlayerpc_AddBag1581_user(_this, wBagItemSerial, CPlayerpc_AddBag1581_next);
         };
-        void CPlayerpc_AlterItemSlotRequest1583_wrapper(struct CPlayer* _this, char byNum, struct _alter_item_slot_request_clzo::__list* pList)
+        static void CPlayerpc_AlterItemSlotRequest1583_wrapper(struct CPlayer* _this, char byNum, struct _alter_item_slot_request_clzo::__list* pList)
         {
            CPlayerpc_AlterItemSlotRequest1583_user(_this, byNum, pList, CPlayerpc_AlterItemSlotRequest1583_next);
         };
-        void CPlayerpc_AlterLinkBoardSlotRequest1585_wrapper(struct CPlayer* _this, char byNum, struct _alter_link_slot_request_clzo::__list* pList, char byLBLock)
+        static void CPlayerpc_AlterLinkBoardSlotRequest1585_wrapper(struct CPlayer* _this, char byNum, struct _alter_link_slot_request_clzo::__list* pList, char byLBLock)
         {
            CPlayerpc_AlterLinkBoardSlotRequest1585_user(_this, byNum, pList, byLBLock, CPlayerpc_AlterLinkBoardSlotRequest1585_next);
         };
-        void CPlayerpc_AlterWindowInfoRequest1587_wrapper(struct CPlayer* _this, unsigned int* pdwSkill, unsigned int* pdwForce, unsigned int* pdwChar, unsigned int* pdwAnimus, unsigned int dwInven, unsigned int* pdwInvenBag)
+        static void CPlayerpc_AlterWindowInfoRequest1587_wrapper(struct CPlayer* _this, unsigned int* pdwSkill, unsigned int* pdwForce, unsigned int* pdwChar, unsigned int* pdwAnimus, unsigned int dwInven, unsigned int* pdwInvenBag)
         {
            CPlayerpc_AlterWindowInfoRequest1587_user(_this, pdwSkill, pdwForce, pdwChar, pdwAnimus, dwInven, pdwInvenBag, CPlayerpc_AlterWindowInfoRequest1587_next);
         };
-        void CPlayerpc_AnimusCommandRequest1589_wrapper(struct CPlayer* _this, char byCommandCode)
+        static void CPlayerpc_AnimusCommandRequest1589_wrapper(struct CPlayer* _this, char byCommandCode)
         {
            CPlayerpc_AnimusCommandRequest1589_user(_this, byCommandCode, CPlayerpc_AnimusCommandRequest1589_next);
         };
-        void CPlayerpc_AnimusInvenChange1591_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wReplaceSerial)
+        static void CPlayerpc_AnimusInvenChange1591_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wReplaceSerial)
         {
            CPlayerpc_AnimusInvenChange1591_user(_this, pItem, wReplaceSerial, CPlayerpc_AnimusInvenChange1591_next);
         };
-        void CPlayerpc_AnimusRecallRequest1593_wrapper(struct CPlayer* _this, uint16_t wAnimusItemSerial, uint16_t wAnimusClientHP, uint16_t wAnimusClientFP)
+        static void CPlayerpc_AnimusRecallRequest1593_wrapper(struct CPlayer* _this, uint16_t wAnimusItemSerial, uint16_t wAnimusClientHP, uint16_t wAnimusClientFP)
         {
            CPlayerpc_AnimusRecallRequest1593_user(_this, wAnimusItemSerial, wAnimusClientHP, wAnimusClientFP, CPlayerpc_AnimusRecallRequest1593_next);
         };
-        void CPlayerpc_AnimusReturnRequest1595_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_AnimusReturnRequest1595_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_AnimusReturnRequest1595_user(_this, CPlayerpc_AnimusReturnRequest1595_next);
         };
-        void CPlayerpc_AnimusTargetRequest1597_wrapper(struct CPlayer* _this, char byObjectID, uint16_t wObjectIndex, unsigned int dwObjectSerial)
+        static void CPlayerpc_AnimusTargetRequest1597_wrapper(struct CPlayer* _this, char byObjectID, uint16_t wObjectIndex, unsigned int dwObjectSerial)
         {
            CPlayerpc_AnimusTargetRequest1597_user(_this, byObjectID, wObjectIndex, dwObjectSerial, CPlayerpc_AnimusTargetRequest1597_next);
         };
-        void CPlayerpc_AwayPartyJoinInvitationAnswer1599_wrapper(struct CPlayer* _this, struct _CLID* pidBoss, char byRetCode)
+        static void CPlayerpc_AwayPartyJoinInvitationAnswer1599_wrapper(struct CPlayer* _this, struct _CLID* pidBoss, char byRetCode)
         {
            CPlayerpc_AwayPartyJoinInvitationAnswer1599_user(_this, pidBoss, byRetCode, CPlayerpc_AwayPartyJoinInvitationAnswer1599_next);
         };
-        void CPlayerpc_AwaypartyInvitationRequest1601_wrapper(struct CPlayer* _this, char* pwszCharName)
+        static void CPlayerpc_AwaypartyInvitationRequest1601_wrapper(struct CPlayer* _this, char* pwszCharName)
         {
            CPlayerpc_AwaypartyInvitationRequest1601_user(_this, pwszCharName, CPlayerpc_AwaypartyInvitationRequest1601_next);
         };
-        void CPlayerpc_BackTowerRequest1603_wrapper(struct CPlayer* _this, unsigned int dwTowerObjSerial)
+        static void CPlayerpc_BackTowerRequest1603_wrapper(struct CPlayer* _this, unsigned int dwTowerObjSerial)
         {
            CPlayerpc_BackTowerRequest1603_user(_this, dwTowerObjSerial, CPlayerpc_BackTowerRequest1603_next);
         };
-        void CPlayerpc_BackTrapRequest1605_wrapper(struct CPlayer* _this, unsigned int dwTrapObjSerial, uint16_t wAddSerial)
+        static void CPlayerpc_BackTrapRequest1605_wrapper(struct CPlayer* _this, unsigned int dwTrapObjSerial, uint16_t wAddSerial)
         {
            CPlayerpc_BackTrapRequest1605_user(_this, dwTrapObjSerial, wAddSerial, CPlayerpc_BackTrapRequest1605_next);
         };
-        void CPlayerpc_BillingInfoRequest1607_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_BillingInfoRequest1607_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_BillingInfoRequest1607_user(_this, CPlayerpc_BillingInfoRequest1607_next);
         };
-        void CPlayerpc_BriefPass1609_wrapper(struct CPlayer* _this, char byQuestSlotIndex)
+        static void CPlayerpc_BriefPass1609_wrapper(struct CPlayer* _this, char byQuestSlotIndex)
         {
            CPlayerpc_BriefPass1609_user(_this, byQuestSlotIndex, CPlayerpc_BriefPass1609_next);
         };
-        void CPlayerpc_BuddyAddAnswer1611_wrapper(struct CPlayer* _this, bool bAccept, uint16_t wAskerIndex, unsigned int dwAskerSerial)
+        static void CPlayerpc_BuddyAddAnswer1611_wrapper(struct CPlayer* _this, bool bAccept, uint16_t wAskerIndex, unsigned int dwAskerSerial)
         {
            CPlayerpc_BuddyAddAnswer1611_user(_this, bAccept, wAskerIndex, dwAskerSerial, CPlayerpc_BuddyAddAnswer1611_next);
         };
-        void CPlayerpc_BuddyAddRequest1613_wrapper(struct CPlayer* _this, uint16_t wDstIndex, unsigned int dwDstSerial, char* pwszDstName)
+        static void CPlayerpc_BuddyAddRequest1613_wrapper(struct CPlayer* _this, uint16_t wDstIndex, unsigned int dwDstSerial, char* pwszDstName)
         {
            CPlayerpc_BuddyAddRequest1613_user(_this, wDstIndex, dwDstSerial, pwszDstName, CPlayerpc_BuddyAddRequest1613_next);
         };
-        void CPlayerpc_BuddyDelRequest1615_wrapper(struct CPlayer* _this, unsigned int dwSerial)
+        static void CPlayerpc_BuddyDelRequest1615_wrapper(struct CPlayer* _this, unsigned int dwSerial)
         {
            CPlayerpc_BuddyDelRequest1615_user(_this, dwSerial, CPlayerpc_BuddyDelRequest1615_next);
         };
-        void CPlayerpc_BuddyDownloadRequest1617_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_BuddyDownloadRequest1617_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_BuddyDownloadRequest1617_user(_this, CPlayerpc_BuddyDownloadRequest1617_next);
         };
-        void CPlayerpc_BuyItemStore1619_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byOfferNum, struct _buy_store_request_clzo::_list* pList, int bUseNPCLinkIntem)
+        static void CPlayerpc_BuyItemStore1619_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byOfferNum, struct _buy_store_request_clzo::_list* pList, int bUseNPCLinkIntem)
         {
            CPlayerpc_BuyItemStore1619_user(_this, pStore, byOfferNum, pList, bUseNPCLinkIntem, CPlayerpc_BuyItemStore1619_next);
         };
-        char CPlayerpc_CanSelectClassRequest1621_wrapper(struct CPlayer* _this, char* pIsRealClassUp)
+        static char CPlayerpc_CanSelectClassRequest1621_wrapper(struct CPlayer* _this, char* pIsRealClassUp)
         {
            return CPlayerpc_CanSelectClassRequest1621_user(_this, pIsRealClassUp, CPlayerpc_CanSelectClassRequest1621_next);
         };
-        void CPlayerpc_CastVoteRequest1623_wrapper(struct CPlayer* _this, int nVoteSerial, char byCode)
+        static void CPlayerpc_CastVoteRequest1623_wrapper(struct CPlayer* _this, int nVoteSerial, char byCode)
         {
            CPlayerpc_CastVoteRequest1623_user(_this, nVoteSerial, byCode, CPlayerpc_CastVoteRequest1623_next);
         };
-        void CPlayerpc_ChangeModeType1625_wrapper(struct CPlayer* _this, int nModeType, int nStandType)
+        static void CPlayerpc_ChangeModeType1625_wrapper(struct CPlayer* _this, int nModeType, int nStandType)
         {
            CPlayerpc_ChangeModeType1625_user(_this, nModeType, nStandType, CPlayerpc_ChangeModeType1625_next);
         };
-        bool CPlayerpc_CharacterRenameCash1627_wrapper(struct CPlayer* _this, bool bChange, struct _STORAGE_POS_INDIV* pItem, char* strCharacterName)
+        static bool CPlayerpc_CharacterRenameCash1627_wrapper(struct CPlayer* _this, bool bChange, struct _STORAGE_POS_INDIV* pItem, char* strCharacterName)
         {
            return CPlayerpc_CharacterRenameCash1627_user(_this, bChange, pItem, strCharacterName, CPlayerpc_CharacterRenameCash1627_next);
         };
-        char CPlayerpc_CharacterRenameCheck1629_wrapper(struct CPlayer* _this, char* strCharacterName)
+        static char CPlayerpc_CharacterRenameCheck1629_wrapper(struct CPlayer* _this, char* strCharacterName)
         {
            return CPlayerpc_CharacterRenameCheck1629_user(_this, strCharacterName, CPlayerpc_CharacterRenameCheck1629_next);
         };
-        void CPlayerpc_ChatAllRequest1631_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatAllRequest1631_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatAllRequest1631_user(_this, pwszChatData, CPlayerpc_ChatAllRequest1631_next);
         };
-        void CPlayerpc_ChatCircleRequest1633_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatCircleRequest1633_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatCircleRequest1633_user(_this, pwszChatData, CPlayerpc_ChatCircleRequest1633_next);
         };
-        void CPlayerpc_ChatFarRequest1635_wrapper(struct CPlayer* _this, char* pwszName, char* pwszChatData)
+        static void CPlayerpc_ChatFarRequest1635_wrapper(struct CPlayer* _this, char* pwszName, char* pwszChatData)
         {
            CPlayerpc_ChatFarRequest1635_user(_this, pwszName, pwszChatData, CPlayerpc_ChatFarRequest1635_next);
         };
-        void CPlayerpc_ChatGmNoticeRequest1637_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatGmNoticeRequest1637_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatGmNoticeRequest1637_user(_this, pwszChatData, CPlayerpc_ChatGmNoticeRequest1637_next);
         };
-        void CPlayerpc_ChatGuildEstSenRequest1639_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatGuildEstSenRequest1639_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatGuildEstSenRequest1639_user(_this, pwszChatData, CPlayerpc_ChatGuildEstSenRequest1639_next);
         };
-        void CPlayerpc_ChatGuildRequest1641_wrapper(struct CPlayer* _this, unsigned int dwDstSerial, char* pwszChatData)
+        static void CPlayerpc_ChatGuildRequest1641_wrapper(struct CPlayer* _this, unsigned int dwDstSerial, char* pwszChatData)
         {
            CPlayerpc_ChatGuildRequest1641_user(_this, dwDstSerial, pwszChatData, CPlayerpc_ChatGuildRequest1641_next);
         };
-        void CPlayerpc_ChatMapRequest1643_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatMapRequest1643_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatMapRequest1643_user(_this, pwszChatData, CPlayerpc_ChatMapRequest1643_next);
         };
-        void CPlayerpc_ChatMgrWhisperRequest1645_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatMgrWhisperRequest1645_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatMgrWhisperRequest1645_user(_this, pwszChatData, CPlayerpc_ChatMgrWhisperRequest1645_next);
         };
-        void CPlayerpc_ChatMultiFarRequest1647_wrapper(struct CPlayer* _this, char byDstNum, struct _w_name* pDstName, char* pwszMsg)
+        static void CPlayerpc_ChatMultiFarRequest1647_wrapper(struct CPlayer* _this, char byDstNum, struct _w_name* pDstName, char* pwszMsg)
         {
            CPlayerpc_ChatMultiFarRequest1647_user(_this, byDstNum, pDstName, pwszMsg, CPlayerpc_ChatMultiFarRequest1647_next);
         };
-        void CPlayerpc_ChatOperatorRequest1649_wrapper(struct CPlayer* _this, char byRaceCode, char* pwszChatData)
+        static void CPlayerpc_ChatOperatorRequest1649_wrapper(struct CPlayer* _this, char byRaceCode, char* pwszChatData)
         {
            CPlayerpc_ChatOperatorRequest1649_user(_this, byRaceCode, pwszChatData, CPlayerpc_ChatOperatorRequest1649_next);
         };
-        void CPlayerpc_ChatPartyRequest1651_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatPartyRequest1651_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatPartyRequest1651_user(_this, pwszChatData, CPlayerpc_ChatPartyRequest1651_next);
         };
-        void CPlayerpc_ChatRaceBossCryRequest1653_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatRaceBossCryRequest1653_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatRaceBossCryRequest1653_user(_this, pwszChatData, CPlayerpc_ChatRaceBossCryRequest1653_next);
         };
-        void CPlayerpc_ChatRaceBossRequest1655_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatRaceBossRequest1655_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatRaceBossRequest1655_user(_this, pwszChatData, CPlayerpc_ChatRaceBossRequest1655_next);
         };
-        void CPlayerpc_ChatRaceRequest1657_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatRaceRequest1657_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatRaceRequest1657_user(_this, pwszChatData, CPlayerpc_ChatRaceRequest1657_next);
         };
-        void CPlayerpc_ChatRePresentationRequest1659_wrapper(struct CPlayer* _this, char* pwszChatData)
+        static void CPlayerpc_ChatRePresentationRequest1659_wrapper(struct CPlayer* _this, char* pwszChatData)
         {
            CPlayerpc_ChatRePresentationRequest1659_user(_this, pwszChatData, CPlayerpc_ChatRePresentationRequest1659_next);
         };
-        void CPlayerpc_ChatTradeRequestMsg1661_wrapper(struct CPlayer* _this, char bySubType, char* pwszTradeMsg)
+        static void CPlayerpc_ChatTradeRequestMsg1661_wrapper(struct CPlayer* _this, char bySubType, char* pwszTradeMsg)
         {
            CPlayerpc_ChatTradeRequestMsg1661_user(_this, bySubType, pwszTradeMsg, CPlayerpc_ChatTradeRequestMsg1661_next);
         };
-        void CPlayerpc_ClassSkillRequest1663_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
+        static void CPlayerpc_ClassSkillRequest1663_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
         {
            CPlayerpc_ClassSkillRequest1663_user(_this, wSkillIndex, pidDst, pConsumeSerial, CPlayerpc_ClassSkillRequest1663_next);
         };
-        void CPlayerpc_CombineItem1665_wrapper(struct CPlayer* _this, uint16_t wManualIndex, char byMaterialNum, struct _STORAGE_POS_INDIV* pipMaterials, uint16_t wOverlapSerial)
+        static void CPlayerpc_CombineItem1665_wrapper(struct CPlayer* _this, uint16_t wManualIndex, char byMaterialNum, struct _STORAGE_POS_INDIV* pipMaterials, uint16_t wOverlapSerial)
         {
            CPlayerpc_CombineItem1665_user(_this, wManualIndex, byMaterialNum, pipMaterials, wOverlapSerial, CPlayerpc_CombineItem1665_next);
         };
-        void CPlayerpc_CombineItemEx1667_wrapper(struct CPlayer* _this, struct _combine_ex_item_request_clzo* pRecv)
+        static void CPlayerpc_CombineItemEx1667_wrapper(struct CPlayer* _this, struct _combine_ex_item_request_clzo* pRecv)
         {
            CPlayerpc_CombineItemEx1667_user(_this, pRecv, CPlayerpc_CombineItemEx1667_next);
         };
-        void CPlayerpc_CombineItemExAccept1669_wrapper(struct CPlayer* _this, struct _combine_ex_item_accept_request_clzo* pRecv)
+        static void CPlayerpc_CombineItemExAccept1669_wrapper(struct CPlayer* _this, struct _combine_ex_item_accept_request_clzo* pRecv)
         {
            CPlayerpc_CombineItemExAccept1669_user(_this, pRecv, CPlayerpc_CombineItemExAccept1669_next);
         };
-        void CPlayerpc_CuttingComplete1671_wrapper(struct CPlayer* _this, char byNpcRace)
+        static void CPlayerpc_CuttingComplete1671_wrapper(struct CPlayer* _this, char byNpcRace)
         {
            CPlayerpc_CuttingComplete1671_user(_this, byNpcRace, CPlayerpc_CuttingComplete1671_next);
         };
-        void CPlayerpc_DTradeAddRequest1673_wrapper(struct CPlayer* _this, char bySlotIndex, char byStorageCode, unsigned int dwSerial, char byAmount)
+        static void CPlayerpc_DTradeAddRequest1673_wrapper(struct CPlayer* _this, char bySlotIndex, char byStorageCode, unsigned int dwSerial, char byAmount)
         {
            CPlayerpc_DTradeAddRequest1673_user(_this, bySlotIndex, byStorageCode, dwSerial, byAmount, CPlayerpc_DTradeAddRequest1673_next);
         };
-        void CPlayerpc_DTradeAnswerRequest1675_wrapper(struct CPlayer* _this, struct _CLID* pidAsker)
+        static void CPlayerpc_DTradeAnswerRequest1675_wrapper(struct CPlayer* _this, struct _CLID* pidAsker)
         {
            CPlayerpc_DTradeAnswerRequest1675_user(_this, pidAsker, CPlayerpc_DTradeAnswerRequest1675_next);
         };
-        void CPlayerpc_DTradeAskRequest1677_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
+        static void CPlayerpc_DTradeAskRequest1677_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
         {
            CPlayerpc_DTradeAskRequest1677_user(_this, wDstIndex, CPlayerpc_DTradeAskRequest1677_next);
         };
-        void CPlayerpc_DTradeBetRequest1679_wrapper(struct CPlayer* _this, char byMoneyUnit, unsigned int dwBetAmount)
+        static void CPlayerpc_DTradeBetRequest1679_wrapper(struct CPlayer* _this, char byMoneyUnit, unsigned int dwBetAmount)
         {
            CPlayerpc_DTradeBetRequest1679_user(_this, byMoneyUnit, dwBetAmount, CPlayerpc_DTradeBetRequest1679_next);
         };
-        void CPlayerpc_DTradeCancleRequest1681_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_DTradeCancleRequest1681_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_DTradeCancleRequest1681_user(_this, CPlayerpc_DTradeCancleRequest1681_next);
         };
-        void CPlayerpc_DTradeDelRequest1683_wrapper(struct CPlayer* _this, char bySlotIndex)
+        static void CPlayerpc_DTradeDelRequest1683_wrapper(struct CPlayer* _this, char bySlotIndex)
         {
            CPlayerpc_DTradeDelRequest1683_user(_this, bySlotIndex, CPlayerpc_DTradeDelRequest1683_next);
         };
-        void CPlayerpc_DTradeLockRequest1685_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_DTradeLockRequest1685_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_DTradeLockRequest1685_user(_this, CPlayerpc_DTradeLockRequest1685_next);
         };
-        void CPlayerpc_DTradeOKRequest1687_wrapper(struct CPlayer* _this, unsigned int* pdwKey)
+        static void CPlayerpc_DTradeOKRequest1687_wrapper(struct CPlayer* _this, unsigned int* pdwKey)
         {
            CPlayerpc_DTradeOKRequest1687_user(_this, pdwKey, CPlayerpc_DTradeOKRequest1687_next);
         };
-        void CPlayerpc_DarkHoleAnswerReenterRequest1689_wrapper(struct CPlayer* _this, bool bEnter, uint16_t wChannelIndex, unsigned int dwChannelSerial)
+        static void CPlayerpc_DarkHoleAnswerReenterRequest1689_wrapper(struct CPlayer* _this, bool bEnter, uint16_t wChannelIndex, unsigned int dwChannelSerial)
         {
            CPlayerpc_DarkHoleAnswerReenterRequest1689_user(_this, bEnter, wChannelIndex, dwChannelSerial, CPlayerpc_DarkHoleAnswerReenterRequest1689_next);
         };
-        void CPlayerpc_DarkHoleClearOutRequest1691_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_DarkHoleClearOutRequest1691_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_DarkHoleClearOutRequest1691_user(_this, CPlayerpc_DarkHoleClearOutRequest1691_next);
         };
-        void CPlayerpc_DarkHoleEnterRequest1693_wrapper(struct CPlayer* _this, uint16_t wHoleIndex, unsigned int dwHoleSerial)
+        static void CPlayerpc_DarkHoleEnterRequest1693_wrapper(struct CPlayer* _this, uint16_t wHoleIndex, unsigned int dwHoleSerial)
         {
            CPlayerpc_DarkHoleEnterRequest1693_user(_this, wHoleIndex, dwHoleSerial, CPlayerpc_DarkHoleEnterRequest1693_next);
         };
-        void CPlayerpc_DarkHoleGiveupOutRequest1695_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_DarkHoleGiveupOutRequest1695_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_DarkHoleGiveupOutRequest1695_user(_this, CPlayerpc_DarkHoleGiveupOutRequest1695_next);
         };
-        void CPlayerpc_DarkHoleOpenRequest1697_wrapper(struct CPlayer* _this, unsigned int dwItemSerial)
+        static void CPlayerpc_DarkHoleOpenRequest1697_wrapper(struct CPlayer* _this, unsigned int dwItemSerial)
         {
            CPlayerpc_DarkHoleOpenRequest1697_user(_this, dwItemSerial, CPlayerpc_DarkHoleOpenRequest1697_next);
         };
-        void CPlayerpc_DowngradeItem1699_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pposTalik, struct _STORAGE_POS_INDIV* pposToolItem, struct _STORAGE_POS_INDIV* pposUpgItem)
+        static void CPlayerpc_DowngradeItem1699_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pposTalik, struct _STORAGE_POS_INDIV* pposToolItem, struct _STORAGE_POS_INDIV* pposUpgItem)
         {
            CPlayerpc_DowngradeItem1699_user(_this, pposTalik, pposToolItem, pposUpgItem, CPlayerpc_DowngradeItem1699_next);
         };
-        void CPlayerpc_EmbellishPart1701_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wChangeSerial)
+        static void CPlayerpc_EmbellishPart1701_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wChangeSerial)
         {
            CPlayerpc_EmbellishPart1701_user(_this, pItem, wChangeSerial, CPlayerpc_EmbellishPart1701_next);
         };
-        void CPlayerpc_EquipPart1703_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
+        static void CPlayerpc_EquipPart1703_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
         {
            CPlayerpc_EquipPart1703_user(_this, pItem, CPlayerpc_EquipPart1703_next);
         };
-        void CPlayerpc_ExchangeDalantForGold1705_wrapper(struct CPlayer* _this, unsigned int dwDalant)
+        static void CPlayerpc_ExchangeDalantForGold1705_wrapper(struct CPlayer* _this, unsigned int dwDalant)
         {
            CPlayerpc_ExchangeDalantForGold1705_user(_this, dwDalant, CPlayerpc_ExchangeDalantForGold1705_next);
         };
-        void CPlayerpc_ExchangeGoldForDalant1707_wrapper(struct CPlayer* _this, unsigned int dwGold)
+        static void CPlayerpc_ExchangeGoldForDalant1707_wrapper(struct CPlayer* _this, unsigned int dwGold)
         {
            CPlayerpc_ExchangeGoldForDalant1707_user(_this, dwGold, CPlayerpc_ExchangeGoldForDalant1707_next);
         };
-        void CPlayerpc_ExchangeGoldForPvP1709_wrapper(struct CPlayer* _this, unsigned int dwGold)
+        static void CPlayerpc_ExchangeGoldForPvP1709_wrapper(struct CPlayer* _this, unsigned int dwGold)
         {
            CPlayerpc_ExchangeGoldForPvP1709_user(_this, dwGold, CPlayerpc_ExchangeGoldForPvP1709_next);
         };
-        void CPlayerpc_ExchangeItem1711_wrapper(struct CPlayer* _this, uint16_t wManualIndex, uint16_t wItemSerial)
+        static void CPlayerpc_ExchangeItem1711_wrapper(struct CPlayer* _this, uint16_t wManualIndex, uint16_t wItemSerial)
         {
            CPlayerpc_ExchangeItem1711_user(_this, wManualIndex, wItemSerial, CPlayerpc_ExchangeItem1711_next);
         };
-        void CPlayerpc_ExitWorldRequest1713_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_ExitWorldRequest1713_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_ExitWorldRequest1713_user(_this, CPlayerpc_ExitWorldRequest1713_next);
         };
-        void CPlayerpc_ForceInvenChange1715_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wReplaceSerial)
+        static void CPlayerpc_ForceInvenChange1715_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t wReplaceSerial)
         {
            CPlayerpc_ForceInvenChange1715_user(_this, pItem, wReplaceSerial, CPlayerpc_ForceInvenChange1715_next);
         };
-        void CPlayerpc_ForceRequest1717_wrapper(struct CPlayer* _this, uint16_t wForceSerial, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
+        static void CPlayerpc_ForceRequest1717_wrapper(struct CPlayer* _this, uint16_t wForceSerial, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
         {
            CPlayerpc_ForceRequest1717_user(_this, wForceSerial, pidDst, pConsumeSerial, CPlayerpc_ForceRequest1717_next);
         };
-        void CPlayerpc_GestureRequest1719_wrapper(struct CPlayer* _this, char byGestureType)
+        static void CPlayerpc_GestureRequest1719_wrapper(struct CPlayer* _this, char byGestureType)
         {
            CPlayerpc_GestureRequest1719_user(_this, byGestureType, CPlayerpc_GestureRequest1719_next);
         };
-        bool CPlayerpc_GiveItem1721_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* kItem, char* szReason, bool bDrop)
+        static bool CPlayerpc_GiveItem1721_wrapper(struct CPlayer* _this, struct _STORAGE_LIST::_db_con* kItem, char* szReason, bool bDrop)
         {
            return CPlayerpc_GiveItem1721_user(_this, kItem, szReason, bDrop, CPlayerpc_GiveItem1721_next);
         };
-        void CPlayerpc_GotoAvatorRequest1723_wrapper(struct CPlayer* _this, char* pwszAvatorName)
+        static void CPlayerpc_GotoAvatorRequest1723_wrapper(struct CPlayer* _this, char* pwszAvatorName)
         {
            CPlayerpc_GotoAvatorRequest1723_user(_this, pwszAvatorName, CPlayerpc_GotoAvatorRequest1723_next);
         };
-        void CPlayerpc_GotoBasePortalRequest1725_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
+        static void CPlayerpc_GotoBasePortalRequest1725_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
         {
            CPlayerpc_GotoBasePortalRequest1725_user(_this, wItemSerial, CPlayerpc_GotoBasePortalRequest1725_next);
         };
-        void CPlayerpc_GuildBattleBlock1727_wrapper(struct CPlayer* _this, bool bBlock)
+        static void CPlayerpc_GuildBattleBlock1727_wrapper(struct CPlayer* _this, bool bBlock)
         {
            CPlayerpc_GuildBattleBlock1727_user(_this, bBlock, CPlayerpc_GuildBattleBlock1727_next);
         };
-        void CPlayerpc_GuildCancelSuggestRequest1729_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey)
+        static void CPlayerpc_GuildCancelSuggestRequest1729_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey)
         {
            CPlayerpc_GuildCancelSuggestRequest1729_user(_this, dwMatterVoteSynKey, CPlayerpc_GuildCancelSuggestRequest1729_next);
         };
-        void CPlayerpc_GuildDownLoadRequest1731_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_GuildDownLoadRequest1731_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_GuildDownLoadRequest1731_user(_this, CPlayerpc_GuildDownLoadRequest1731_next);
         };
-        void CPlayerpc_GuildEstablishRequest1733_wrapper(struct CPlayer* _this, char* pwszGuildName)
+        static void CPlayerpc_GuildEstablishRequest1733_wrapper(struct CPlayer* _this, char* pwszGuildName)
         {
            CPlayerpc_GuildEstablishRequest1733_user(_this, pwszGuildName, CPlayerpc_GuildEstablishRequest1733_next);
         };
-        void CPlayerpc_GuildHonorListRequest1735_wrapper(struct CPlayer* _this, char byUI)
+        static void CPlayerpc_GuildHonorListRequest1735_wrapper(struct CPlayer* _this, char byUI)
         {
            CPlayerpc_GuildHonorListRequest1735_user(_this, byUI, CPlayerpc_GuildHonorListRequest1735_next);
         };
-        void CPlayerpc_GuildJoinAcceptRequest1737_wrapper(struct CPlayer* _this, unsigned int dwApplierSerial, bool bAccept)
+        static void CPlayerpc_GuildJoinAcceptRequest1737_wrapper(struct CPlayer* _this, unsigned int dwApplierSerial, bool bAccept)
         {
            CPlayerpc_GuildJoinAcceptRequest1737_user(_this, dwApplierSerial, bAccept, CPlayerpc_GuildJoinAcceptRequest1737_next);
         };
-        void CPlayerpc_GuildJoinApplyCancelRequest1739_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_GuildJoinApplyCancelRequest1739_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_GuildJoinApplyCancelRequest1739_user(_this, CPlayerpc_GuildJoinApplyCancelRequest1739_next);
         };
-        void CPlayerpc_GuildJoinApplyRequest1741_wrapper(struct CPlayer* _this, char* pwszGuildName)
+        static void CPlayerpc_GuildJoinApplyRequest1741_wrapper(struct CPlayer* _this, char* pwszGuildName)
         {
            CPlayerpc_GuildJoinApplyRequest1741_user(_this, pwszGuildName, CPlayerpc_GuildJoinApplyRequest1741_next);
         };
-        void CPlayerpc_GuildListRequest1743_wrapper(struct CPlayer* _this, char byPage)
+        static void CPlayerpc_GuildListRequest1743_wrapper(struct CPlayer* _this, char byPage)
         {
            CPlayerpc_GuildListRequest1743_user(_this, byPage, CPlayerpc_GuildListRequest1743_next);
         };
-        void CPlayerpc_GuildManageRequest1745_wrapper(struct CPlayer* _this, char byType, unsigned int dwDst, unsigned int dwObj1, unsigned int dwObj2, unsigned int dwObj3)
+        static void CPlayerpc_GuildManageRequest1745_wrapper(struct CPlayer* _this, char byType, unsigned int dwDst, unsigned int dwObj1, unsigned int dwObj2, unsigned int dwObj3)
         {
            CPlayerpc_GuildManageRequest1745_user(_this, byType, dwDst, dwObj1, dwObj2, dwObj3, CPlayerpc_GuildManageRequest1745_next);
         };
-        void CPlayerpc_GuildNextHonorListRequest1747_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_GuildNextHonorListRequest1747_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_GuildNextHonorListRequest1747_user(_this, CPlayerpc_GuildNextHonorListRequest1747_next);
         };
-        void CPlayerpc_GuildOfferSuggestRequest1749_wrapper(struct CPlayer* _this, char byMatterType, unsigned int dwMatterDst, char* pwszComment, unsigned int dwMatterObj1, unsigned int dwMatterObj2, unsigned int dwMatterObj3)
+        static void CPlayerpc_GuildOfferSuggestRequest1749_wrapper(struct CPlayer* _this, char byMatterType, unsigned int dwMatterDst, char* pwszComment, unsigned int dwMatterObj1, unsigned int dwMatterObj2, unsigned int dwMatterObj3)
         {
            CPlayerpc_GuildOfferSuggestRequest1749_user(_this, byMatterType, dwMatterDst, pwszComment, dwMatterObj1, dwMatterObj2, dwMatterObj3, CPlayerpc_GuildOfferSuggestRequest1749_next);
         };
-        void CPlayerpc_GuildPushMoneyRequest1751_wrapper(struct CPlayer* _this, unsigned int dwPushDalant, unsigned int dwPushGold)
+        static void CPlayerpc_GuildPushMoneyRequest1751_wrapper(struct CPlayer* _this, unsigned int dwPushDalant, unsigned int dwPushGold)
         {
            CPlayerpc_GuildPushMoneyRequest1751_user(_this, dwPushDalant, dwPushGold, CPlayerpc_GuildPushMoneyRequest1751_next);
         };
-        void CPlayerpc_GuildQueryInfoRequest1753_wrapper(struct CPlayer* _this, unsigned int dwGuildSerial)
+        static void CPlayerpc_GuildQueryInfoRequest1753_wrapper(struct CPlayer* _this, unsigned int dwGuildSerial)
         {
            CPlayerpc_GuildQueryInfoRequest1753_user(_this, dwGuildSerial, CPlayerpc_GuildQueryInfoRequest1753_next);
         };
-        void CPlayerpc_GuildRoomEnterRequest1755_wrapper(struct CPlayer* _this, struct _guildroom_enter_request_clzo* pProtocol)
+        static void CPlayerpc_GuildRoomEnterRequest1755_wrapper(struct CPlayer* _this, struct _guildroom_enter_request_clzo* pProtocol)
         {
            CPlayerpc_GuildRoomEnterRequest1755_user(_this, pProtocol, CPlayerpc_GuildRoomEnterRequest1755_next);
         };
-        void CPlayerpc_GuildRoomOutRequest1757_wrapper(struct CPlayer* _this, struct _guildroom_out_request_clzo* pProtocol)
+        static void CPlayerpc_GuildRoomOutRequest1757_wrapper(struct CPlayer* _this, struct _guildroom_out_request_clzo* pProtocol)
         {
            CPlayerpc_GuildRoomOutRequest1757_user(_this, pProtocol, CPlayerpc_GuildRoomOutRequest1757_next);
         };
-        void CPlayerpc_GuildRoomRentRequest1759_wrapper(struct CPlayer* _this, struct _guildroom_rent_request_clzo* pProtocol)
+        static void CPlayerpc_GuildRoomRentRequest1759_wrapper(struct CPlayer* _this, struct _guildroom_rent_request_clzo* pProtocol)
         {
            CPlayerpc_GuildRoomRentRequest1759_user(_this, pProtocol, CPlayerpc_GuildRoomRentRequest1759_next);
         };
-        void CPlayerpc_GuildRoomRestTimeRequest1761_wrapper(struct CPlayer* _this, struct _guildroom_resttime_request_clzo* pProtocol)
+        static void CPlayerpc_GuildRoomRestTimeRequest1761_wrapper(struct CPlayer* _this, struct _guildroom_resttime_request_clzo* pProtocol)
         {
            CPlayerpc_GuildRoomRestTimeRequest1761_user(_this, pProtocol, CPlayerpc_GuildRoomRestTimeRequest1761_next);
         };
-        void CPlayerpc_GuildSelfLeaveRequest1763_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_GuildSelfLeaveRequest1763_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_GuildSelfLeaveRequest1763_user(_this, CPlayerpc_GuildSelfLeaveRequest1763_next);
         };
-        void CPlayerpc_GuildSetHonorRequest1765_wrapper(struct CPlayer* _this, struct _guild_honor_set_request_clzo* pData)
+        static void CPlayerpc_GuildSetHonorRequest1765_wrapper(struct CPlayer* _this, struct _guild_honor_set_request_clzo* pData)
         {
            CPlayerpc_GuildSetHonorRequest1765_user(_this, pData, CPlayerpc_GuildSetHonorRequest1765_next);
         };
-        void CPlayerpc_GuildVoteRequest1767_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey, char byVoteCode)
+        static void CPlayerpc_GuildVoteRequest1767_wrapper(struct CPlayer* _this, unsigned int dwMatterVoteSynKey, char byVoteCode)
         {
            CPlayerpc_GuildVoteRequest1767_user(_this, dwMatterVoteSynKey, byVoteCode, CPlayerpc_GuildVoteRequest1767_next);
         };
-        char CPlayerpc_InitClass1769_wrapper(struct CPlayer* _this)
+        static char CPlayerpc_InitClass1769_wrapper(struct CPlayer* _this)
         {
            return CPlayerpc_InitClass1769_user(_this, CPlayerpc_InitClass1769_next);
         };
-        char CPlayerpc_InitClassRequest1771_wrapper(struct CPlayer* _this)
+        static char CPlayerpc_InitClassRequest1771_wrapper(struct CPlayer* _this)
         {
            return CPlayerpc_InitClassRequest1771_user(_this, CPlayerpc_InitClassRequest1771_next);
         };
-        void CPlayerpc_LimitItemNumRequest1773_wrapper(struct CPlayer* _this, unsigned int dwStoreIndex)
+        static void CPlayerpc_LimitItemNumRequest1773_wrapper(struct CPlayer* _this, unsigned int dwStoreIndex)
         {
            CPlayerpc_LimitItemNumRequest1773_user(_this, dwStoreIndex, CPlayerpc_LimitItemNumRequest1773_next);
         };
-        void CPlayerpc_LinkBoardRequest1775_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_LinkBoardRequest1775_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_LinkBoardRequest1775_user(_this, CPlayerpc_LinkBoardRequest1775_next);
         };
-        void CPlayerpc_MacroUpdate1777_wrapper(struct CPlayer* _this, char* pBuf)
+        static void CPlayerpc_MacroUpdate1777_wrapper(struct CPlayer* _this, char* pBuf)
         {
            CPlayerpc_MacroUpdate1777_user(_this, pBuf, CPlayerpc_MacroUpdate1777_next);
         };
-        void CPlayerpc_MakeItem1779_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pipMakeTool, uint16_t wManualIndex, char byMaterialNum, struct _STORAGE_POS_INDIV* pipMaterials)
+        static void CPlayerpc_MakeItem1779_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pipMakeTool, uint16_t wManualIndex, char byMaterialNum, struct _STORAGE_POS_INDIV* pipMaterials)
         {
            CPlayerpc_MakeItem1779_user(_this, pipMakeTool, wManualIndex, byMaterialNum, pipMaterials, CPlayerpc_MakeItem1779_next);
         };
-        void CPlayerpc_MakeTowerRequest1781_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, uint16_t wTowerItemSerial, char byMaterialNum, struct _make_tower_request_clzo::__material* pMaterial, float* pfPos, uint16_t* pConsumeSerial)
+        static void CPlayerpc_MakeTowerRequest1781_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, uint16_t wTowerItemSerial, char byMaterialNum, struct _make_tower_request_clzo::__material* pMaterial, float* pfPos, uint16_t* pConsumeSerial)
         {
            CPlayerpc_MakeTowerRequest1781_user(_this, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pfPos, pConsumeSerial, CPlayerpc_MakeTowerRequest1781_next);
         };
-        void CPlayerpc_MakeTrapRequest1783_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, uint16_t wTrapItemSerial, float* pfPos, uint16_t* pConsumeSerial)
+        static void CPlayerpc_MakeTrapRequest1783_wrapper(struct CPlayer* _this, uint16_t wSkillIndex, uint16_t wTrapItemSerial, float* pfPos, uint16_t* pConsumeSerial)
         {
            CPlayerpc_MakeTrapRequest1783_user(_this, wSkillIndex, wTrapItemSerial, pfPos, pConsumeSerial, CPlayerpc_MakeTrapRequest1783_next);
         };
-        void CPlayerpc_MineCancle1785_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_MineCancle1785_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_MineCancle1785_user(_this, CPlayerpc_MineCancle1785_next);
         };
-        void CPlayerpc_MineComplete1787_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_MineComplete1787_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_MineComplete1787_user(_this, CPlayerpc_MineComplete1787_next);
         };
-        void CPlayerpc_MineStart1789_wrapper(struct CPlayer* _this, char byMineIndex, char byOreIndex, uint16_t wBatterySerial)
+        static void CPlayerpc_MineStart1789_wrapper(struct CPlayer* _this, char byMineIndex, char byOreIndex, uint16_t wBatterySerial)
         {
            CPlayerpc_MineStart1789_user(_this, byMineIndex, byOreIndex, wBatterySerial, CPlayerpc_MineStart1789_next);
         };
-        void CPlayerpc_MoveModeChangeRequest1791_wrapper(struct CPlayer* _this, char byMoveType)
+        static void CPlayerpc_MoveModeChangeRequest1791_wrapper(struct CPlayer* _this, char byMoveType)
         {
            CPlayerpc_MoveModeChangeRequest1791_user(_this, byMoveType, CPlayerpc_MoveModeChangeRequest1791_next);
         };
-        void CPlayerpc_MoveNext1793_wrapper(struct CPlayer* _this, char byMoveType, float* pfCur, float* pfTar, char byDirect)
+        static void CPlayerpc_MoveNext1793_wrapper(struct CPlayer* _this, char byMoveType, float* pfCur, float* pfTar, char byDirect)
         {
            CPlayerpc_MoveNext1793_user(_this, byMoveType, pfCur, pfTar, byDirect, CPlayerpc_MoveNext1793_next);
         };
-        void CPlayerpc_MovePortal1795_wrapper(struct CPlayer* _this, int nPortalIndex, uint16_t* pConsumeSerial)
+        static void CPlayerpc_MovePortal1795_wrapper(struct CPlayer* _this, int nPortalIndex, uint16_t* pConsumeSerial)
         {
            CPlayerpc_MovePortal1795_user(_this, nPortalIndex, pConsumeSerial, CPlayerpc_MovePortal1795_next);
         };
-        void CPlayerpc_MoveStop1797_wrapper(struct CPlayer* _this, float* pfCur)
+        static void CPlayerpc_MoveStop1797_wrapper(struct CPlayer* _this, float* pfCur)
         {
            CPlayerpc_MoveStop1797_user(_this, pfCur, CPlayerpc_MoveStop1797_next);
         };
-        void CPlayerpc_MoveToOwnStoneMapRequest1799_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_MoveToOwnStoneMapRequest1799_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_MoveToOwnStoneMapRequest1799_user(_this, CPlayerpc_MoveToOwnStoneMapRequest1799_next);
         };
-        bool CPlayerpc_NPCLinkCheckItemRequest1801_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
+        static bool CPlayerpc_NPCLinkCheckItemRequest1801_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
         {
            return CPlayerpc_NPCLinkCheckItemRequest1801_user(_this, pStorage, CPlayerpc_NPCLinkCheckItemRequest1801_next);
         };
-        char CPlayerpc_NPCLinkCheckItemRequest_Check1803_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
+        static char CPlayerpc_NPCLinkCheckItemRequest_Check1803_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
         {
            return CPlayerpc_NPCLinkCheckItemRequest_Check1803_user(_this, pStorage, CPlayerpc_NPCLinkCheckItemRequest_Check1803_next);
         };
-        char CPlayerpc_NPCLinkCheckItemRequest_Use1805_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
+        static char CPlayerpc_NPCLinkCheckItemRequest_Use1805_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pStorage)
         {
            return CPlayerpc_NPCLinkCheckItemRequest_Use1805_user(_this, pStorage, CPlayerpc_NPCLinkCheckItemRequest_Use1805_next);
         };
-        void CPlayerpc_NewPosStart1807_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_NewPosStart1807_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_NewPosStart1807_user(_this, CPlayerpc_NewPosStart1807_next);
         };
-        void CPlayerpc_NotifyRaceBossCryMsg1809_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_NotifyRaceBossCryMsg1809_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_NotifyRaceBossCryMsg1809_user(_this, CPlayerpc_NotifyRaceBossCryMsg1809_next);
         };
-        void CPlayerpc_NuclearAfterEffect1811_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_NuclearAfterEffect1811_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_NuclearAfterEffect1811_user(_this, CPlayerpc_NuclearAfterEffect1811_next);
         };
-        void CPlayerpc_OffPart1813_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
+        static void CPlayerpc_OffPart1813_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
         {
            CPlayerpc_OffPart1813_user(_this, pItem, CPlayerpc_OffPart1813_next);
         };
-        void CPlayerpc_OreCutting1815_wrapper(struct CPlayer* _this, uint16_t wOreSerial, char byProcessNum)
+        static void CPlayerpc_OreCutting1815_wrapper(struct CPlayer* _this, uint16_t wOreSerial, char byProcessNum)
         {
            CPlayerpc_OreCutting1815_user(_this, wOreSerial, byProcessNum, CPlayerpc_OreCutting1815_next);
         };
-        void CPlayerpc_OreIntoBag1817_wrapper(struct CPlayer* _this, uint16_t wResIndex, uint16_t wSerial, char byAddAmount)
+        static void CPlayerpc_OreIntoBag1817_wrapper(struct CPlayer* _this, uint16_t wResIndex, uint16_t wSerial, char byAddAmount)
         {
            CPlayerpc_OreIntoBag1817_user(_this, wResIndex, wSerial, byAddAmount, CPlayerpc_OreIntoBag1817_next);
         };
-        void CPlayerpc_PartyAlterLootShareReqeuest1819_wrapper(struct CPlayer* _this, char byLootShareMode)
+        static void CPlayerpc_PartyAlterLootShareReqeuest1819_wrapper(struct CPlayer* _this, char byLootShareMode)
         {
            CPlayerpc_PartyAlterLootShareReqeuest1819_user(_this, byLootShareMode, CPlayerpc_PartyAlterLootShareReqeuest1819_next);
         };
-        void CPlayerpc_PartyDisJointReqeuest1821_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_PartyDisJointReqeuest1821_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_PartyDisJointReqeuest1821_user(_this, CPlayerpc_PartyDisJointReqeuest1821_next);
         };
-        void CPlayerpc_PartyJoinApplication1823_wrapper(struct CPlayer* _this, uint16_t wBossIndex)
+        static void CPlayerpc_PartyJoinApplication1823_wrapper(struct CPlayer* _this, uint16_t wBossIndex)
         {
            CPlayerpc_PartyJoinApplication1823_user(_this, wBossIndex, CPlayerpc_PartyJoinApplication1823_next);
         };
-        void CPlayerpc_PartyJoinApplicationAnswer1825_wrapper(struct CPlayer* _this, struct _CLID* pidApplicant)
+        static void CPlayerpc_PartyJoinApplicationAnswer1825_wrapper(struct CPlayer* _this, struct _CLID* pidApplicant)
         {
            CPlayerpc_PartyJoinApplicationAnswer1825_user(_this, pidApplicant, CPlayerpc_PartyJoinApplicationAnswer1825_next);
         };
-        void CPlayerpc_PartyJoinInvitation1827_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
+        static void CPlayerpc_PartyJoinInvitation1827_wrapper(struct CPlayer* _this, uint16_t wDstIndex)
         {
            CPlayerpc_PartyJoinInvitation1827_user(_this, wDstIndex, CPlayerpc_PartyJoinInvitation1827_next);
         };
-        void CPlayerpc_PartyJoinInvitationAnswer1829_wrapper(struct CPlayer* _this, struct _CLID* pidBoss)
+        static void CPlayerpc_PartyJoinInvitationAnswer1829_wrapper(struct CPlayer* _this, struct _CLID* pidBoss)
         {
            CPlayerpc_PartyJoinInvitationAnswer1829_user(_this, pidBoss, CPlayerpc_PartyJoinInvitationAnswer1829_next);
         };
-        void CPlayerpc_PartyLeaveCompulsionReqeuest1831_wrapper(struct CPlayer* _this, unsigned int dwExiterSerial)
+        static void CPlayerpc_PartyLeaveCompulsionReqeuest1831_wrapper(struct CPlayer* _this, unsigned int dwExiterSerial)
         {
            CPlayerpc_PartyLeaveCompulsionReqeuest1831_user(_this, dwExiterSerial, CPlayerpc_PartyLeaveCompulsionReqeuest1831_next);
         };
-        void CPlayerpc_PartyLeaveSelfReqeuest1833_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_PartyLeaveSelfReqeuest1833_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_PartyLeaveSelfReqeuest1833_user(_this, CPlayerpc_PartyLeaveSelfReqeuest1833_next);
         };
-        void CPlayerpc_PartyLockReqeuest1835_wrapper(struct CPlayer* _this, bool bLock)
+        static void CPlayerpc_PartyLockReqeuest1835_wrapper(struct CPlayer* _this, bool bLock)
         {
            CPlayerpc_PartyLockReqeuest1835_user(_this, bLock, CPlayerpc_PartyLockReqeuest1835_next);
         };
-        void CPlayerpc_PartyReqBlock1837_wrapper(struct CPlayer* _this, bool bBlock)
+        static void CPlayerpc_PartyReqBlock1837_wrapper(struct CPlayer* _this, bool bBlock)
         {
            CPlayerpc_PartyReqBlock1837_user(_this, bBlock, CPlayerpc_PartyReqBlock1837_next);
         };
-        void CPlayerpc_PartySuccessionReqeuest1839_wrapper(struct CPlayer* _this, unsigned int dwSuccessorSerial)
+        static void CPlayerpc_PartySuccessionReqeuest1839_wrapper(struct CPlayer* _this, unsigned int dwSuccessorSerial)
         {
            CPlayerpc_PartySuccessionReqeuest1839_user(_this, dwSuccessorSerial, CPlayerpc_PartySuccessionReqeuest1839_next);
         };
-        void CPlayerpc_PlayAttack_Force1841_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAreaPos, uint16_t wForceSerial, uint16_t* pConsumeSerial, uint16_t wEffBtSerial)
+        static void CPlayerpc_PlayAttack_Force1841_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAreaPos, uint16_t wForceSerial, uint16_t* pConsumeSerial, uint16_t wEffBtSerial)
         {
            CPlayerpc_PlayAttack_Force1841_user(_this, pDst, pfAreaPos, wForceSerial, pConsumeSerial, wEffBtSerial, CPlayerpc_PlayAttack_Force1841_next);
         };
-        void CPlayerpc_PlayAttack_Gen1843_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byAttPart, uint16_t wBulletSerial, uint16_t wEffBtSerial, bool bCount)
+        static void CPlayerpc_PlayAttack_Gen1843_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byAttPart, uint16_t wBulletSerial, uint16_t wEffBtSerial, bool bCount)
         {
            CPlayerpc_PlayAttack_Gen1843_user(_this, pDst, byAttPart, wBulletSerial, wEffBtSerial, bCount, CPlayerpc_PlayAttack_Gen1843_next);
         };
-        void CPlayerpc_PlayAttack_SelfDestruction1845_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_PlayAttack_SelfDestruction1845_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_PlayAttack_SelfDestruction1845_user(_this, CPlayerpc_PlayAttack_SelfDestruction1845_next);
         };
-        void CPlayerpc_PlayAttack_Siege1847_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byAttPart, uint16_t wBulletSerial, uint16_t wEffBtSerial)
+        static void CPlayerpc_PlayAttack_Siege1847_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byAttPart, uint16_t wBulletSerial, uint16_t wEffBtSerial)
         {
            CPlayerpc_PlayAttack_Siege1847_user(_this, pDst, pfAttackPos, byAttPart, wBulletSerial, wEffBtSerial, CPlayerpc_PlayAttack_Siege1847_next);
         };
-        void CPlayerpc_PlayAttack_Skill1849_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, uint16_t wSkillIndex, uint16_t wBulletSerial, uint16_t* pConsumeSerial, uint16_t wEffBtSerial)
+        static void CPlayerpc_PlayAttack_Skill1849_wrapper(struct CPlayer* _this, struct CCharacter* pDst, float* pfAttackPos, char byEffectCode, uint16_t wSkillIndex, uint16_t wBulletSerial, uint16_t* pConsumeSerial, uint16_t wEffBtSerial)
         {
            CPlayerpc_PlayAttack_Skill1849_user(_this, pDst, pfAttackPos, byEffectCode, wSkillIndex, wBulletSerial, pConsumeSerial, wEffBtSerial, CPlayerpc_PlayAttack_Skill1849_next);
         };
-        void CPlayerpc_PlayAttack_Test1851_wrapper(struct CPlayer* _this, char byEffectCode, char byEffectIndex, uint16_t wBulletItemSerial, char byWeaponPart, int16_t* pzTar)
+        static void CPlayerpc_PlayAttack_Test1851_wrapper(struct CPlayer* _this, char byEffectCode, char byEffectIndex, uint16_t wBulletItemSerial, char byWeaponPart, int16_t* pzTar)
         {
            CPlayerpc_PlayAttack_Test1851_user(_this, byEffectCode, byEffectIndex, wBulletItemSerial, byWeaponPart, pzTar, CPlayerpc_PlayAttack_Test1851_next);
         };
-        void CPlayerpc_PlayAttack_Unit1853_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byWeaponPart)
+        static void CPlayerpc_PlayAttack_Unit1853_wrapper(struct CPlayer* _this, struct CCharacter* pDst, char byWeaponPart)
         {
            CPlayerpc_PlayAttack_Unit1853_user(_this, pDst, byWeaponPart, CPlayerpc_PlayAttack_Unit1853_next);
         };
-        void CPlayerpc_PostContentRequest1855_wrapper(struct CPlayer* _this, unsigned int dwIndex)
+        static void CPlayerpc_PostContentRequest1855_wrapper(struct CPlayer* _this, unsigned int dwIndex)
         {
            CPlayerpc_PostContentRequest1855_user(_this, dwIndex, CPlayerpc_PostContentRequest1855_next);
         };
-        void CPlayerpc_PostDeleteRequest1857_wrapper(struct CPlayer* _this, unsigned int dwIndex)
+        static void CPlayerpc_PostDeleteRequest1857_wrapper(struct CPlayer* _this, unsigned int dwIndex)
         {
            CPlayerpc_PostDeleteRequest1857_user(_this, dwIndex, CPlayerpc_PostDeleteRequest1857_next);
         };
-        void CPlayerpc_PostItemGoldRequest1859_wrapper(struct CPlayer* _this, unsigned int dwIndex)
+        static void CPlayerpc_PostItemGoldRequest1859_wrapper(struct CPlayer* _this, unsigned int dwIndex)
         {
            CPlayerpc_PostItemGoldRequest1859_user(_this, dwIndex, CPlayerpc_PostItemGoldRequest1859_next);
         };
-        void CPlayerpc_PostListRequest1861_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_PostListRequest1861_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_PostListRequest1861_user(_this, CPlayerpc_PostListRequest1861_next);
         };
-        void CPlayerpc_PostReturnConfirmRequest1863_wrapper(struct CPlayer* _this, unsigned int dwPostSerial)
+        static void CPlayerpc_PostReturnConfirmRequest1863_wrapper(struct CPlayer* _this, unsigned int dwPostSerial)
         {
            CPlayerpc_PostReturnConfirmRequest1863_user(_this, dwPostSerial, CPlayerpc_PostReturnConfirmRequest1863_next);
         };
-        void CPlayerpc_PotionDivision1865_wrapper(struct CPlayer* _this, uint16_t wSerial, uint16_t wTarSerial, char byAmount)
+        static void CPlayerpc_PotionDivision1865_wrapper(struct CPlayer* _this, uint16_t wSerial, uint16_t wTarSerial, char byAmount)
         {
            CPlayerpc_PotionDivision1865_user(_this, wSerial, wTarSerial, byAmount, CPlayerpc_PotionDivision1865_next);
         };
-        void CPlayerpc_PotionSeparation1867_wrapper(struct CPlayer* _this, uint16_t wSerial, char byAmount)
+        static void CPlayerpc_PotionSeparation1867_wrapper(struct CPlayer* _this, uint16_t wSerial, char byAmount)
         {
            CPlayerpc_PotionSeparation1867_user(_this, wSerial, byAmount, CPlayerpc_PotionSeparation1867_next);
         };
-        void CPlayerpc_PotionUseTrunkExtend1869_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_PotionUseTrunkExtend1869_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_PotionUseTrunkExtend1869_user(_this, CPlayerpc_PotionUseTrunkExtend1869_next);
         };
-        void CPlayerpc_ProposeVoteRequest1871_wrapper(struct CPlayer* _this, char byLimGrade, char* pwszCont)
+        static void CPlayerpc_ProposeVoteRequest1871_wrapper(struct CPlayer* _this, char byLimGrade, char* pwszCont)
         {
            CPlayerpc_ProposeVoteRequest1871_user(_this, byLimGrade, pwszCont, CPlayerpc_ProposeVoteRequest1871_next);
         };
-        void CPlayerpc_PvpCashRecorver1873_wrapper(struct CPlayer* _this, unsigned int dwItemSerial, char byItemCnt)
+        static void CPlayerpc_PvpCashRecorver1873_wrapper(struct CPlayer* _this, unsigned int dwItemSerial, char byItemCnt)
         {
            CPlayerpc_PvpCashRecorver1873_user(_this, dwItemSerial, byItemCnt, CPlayerpc_PvpCashRecorver1873_next);
         };
-        void CPlayerpc_QuestGiveupRequest1875_wrapper(struct CPlayer* _this, char byQuestDBSlot)
+        static void CPlayerpc_QuestGiveupRequest1875_wrapper(struct CPlayer* _this, char byQuestDBSlot)
         {
            CPlayerpc_QuestGiveupRequest1875_user(_this, byQuestDBSlot, CPlayerpc_QuestGiveupRequest1875_next);
         };
-        bool CPlayerpc_RadarCharInfo1877_wrapper(struct CPlayer* _this)
+        static bool CPlayerpc_RadarCharInfo1877_wrapper(struct CPlayer* _this)
         {
            return CPlayerpc_RadarCharInfo1877_user(_this, CPlayerpc_RadarCharInfo1877_next);
         };
-        void CPlayerpc_RealMovPos1879_wrapper(struct CPlayer* _this, float* pfCur)
+        static void CPlayerpc_RealMovPos1879_wrapper(struct CPlayer* _this, float* pfCur)
         {
            CPlayerpc_RealMovPos1879_user(_this, pfCur, CPlayerpc_RealMovPos1879_next);
         };
-        void CPlayerpc_RefreshGroupTargetPosition1881_wrapper(struct CPlayer* _this, char byGroupType, struct CGameObject* pObject)
+        static void CPlayerpc_RefreshGroupTargetPosition1881_wrapper(struct CPlayer* _this, char byGroupType, struct CGameObject* pObject)
         {
            CPlayerpc_RefreshGroupTargetPosition1881_user(_this, byGroupType, pObject, CPlayerpc_RefreshGroupTargetPosition1881_next);
         };
-        void CPlayerpc_RegistBind1883_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
+        static void CPlayerpc_RegistBind1883_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
         {
            CPlayerpc_RegistBind1883_user(_this, pStore, CPlayerpc_RegistBind1883_next);
         };
-        void CPlayerpc_ReleaseGroupTargetObjectRequest1885_wrapper(struct CPlayer* _this, char byGroupType)
+        static void CPlayerpc_ReleaseGroupTargetObjectRequest1885_wrapper(struct CPlayer* _this, char byGroupType)
         {
            CPlayerpc_ReleaseGroupTargetObjectRequest1885_user(_this, byGroupType, CPlayerpc_ReleaseGroupTargetObjectRequest1885_next);
         };
-        void CPlayerpc_ReleaseSiegeModeRequest1887_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_ReleaseSiegeModeRequest1887_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_ReleaseSiegeModeRequest1887_user(_this, CPlayerpc_ReleaseSiegeModeRequest1887_next);
         };
-        void CPlayerpc_ReleaseTargetObjectRequest1889_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_ReleaseTargetObjectRequest1889_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_ReleaseTargetObjectRequest1889_user(_this, CPlayerpc_ReleaseTargetObjectRequest1889_next);
         };
-        char CPlayerpc_RenameItemNConditionCheck1891_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItemInfo, struct _STORAGE_LIST::_db_con** ppItem)
+        static char CPlayerpc_RenameItemNConditionCheck1891_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItemInfo, struct _STORAGE_LIST::_db_con** ppItem)
         {
            return CPlayerpc_RenameItemNConditionCheck1891_user(_this, pItemInfo, ppItem, CPlayerpc_RenameItemNConditionCheck1891_next);
         };
-        void CPlayerpc_RequestChangeTaxRate1893_wrapper(struct CPlayer* _this, char byTaxRate)
+        static void CPlayerpc_RequestChangeTaxRate1893_wrapper(struct CPlayer* _this, char byTaxRate)
         {
            CPlayerpc_RequestChangeTaxRate1893_user(_this, byTaxRate, CPlayerpc_RequestChangeTaxRate1893_next);
         };
-        void CPlayerpc_RequestDialogWithNPC1895_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
+        static void CPlayerpc_RequestDialogWithNPC1895_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
         {
            CPlayerpc_RequestDialogWithNPC1895_user(_this, pStore, CPlayerpc_RequestDialogWithNPC1895_next);
         };
-        void CPlayerpc_RequestPatriarchPunishment1897_wrapper(struct CPlayer* _this, char byType, char* pwszName, char* pwszCont)
+        static void CPlayerpc_RequestPatriarchPunishment1897_wrapper(struct CPlayer* _this, char byType, char* pwszName, char* pwszCont)
         {
            CPlayerpc_RequestPatriarchPunishment1897_user(_this, byType, pwszName, pwszCont, CPlayerpc_RequestPatriarchPunishment1897_next);
         };
-        void CPlayerpc_RequestQuestFromNPC1899_wrapper(struct CPlayer* _this, struct CItemStore* pStore, unsigned int dwNPCQuestIndex)
+        static void CPlayerpc_RequestQuestFromNPC1899_wrapper(struct CPlayer* _this, struct CItemStore* pStore, unsigned int dwNPCQuestIndex)
         {
            CPlayerpc_RequestQuestFromNPC1899_user(_this, pStore, dwNPCQuestIndex, CPlayerpc_RequestQuestFromNPC1899_next);
         };
-        void CPlayerpc_RequestQuestListFromNPC1901_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
+        static void CPlayerpc_RequestQuestListFromNPC1901_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
         {
            CPlayerpc_RequestQuestListFromNPC1901_user(_this, pStore, CPlayerpc_RequestQuestListFromNPC1901_next);
         };
-        void CPlayerpc_RequestTaxRate1903_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_RequestTaxRate1903_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_RequestTaxRate1903_user(_this, CPlayerpc_RequestTaxRate1903_next);
         };
-        void CPlayerpc_RequestUILockCertify1905_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* uszUILockPW)
+        static void CPlayerpc_RequestUILockCertify1905_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* uszUILockPW)
         {
            CPlayerpc_RequestUILockCertify1905_user(_this, pUserDB, uszUILockPW, CPlayerpc_RequestUILockCertify1905_next);
         };
-        void CPlayerpc_RequestUILockFindPW1907_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* uszHintAnswer)
+        static void CPlayerpc_RequestUILockFindPW1907_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* uszHintAnswer)
         {
            CPlayerpc_RequestUILockFindPW1907_user(_this, pUserDB, uszHintAnswer, CPlayerpc_RequestUILockFindPW1907_next);
         };
-        void CPlayerpc_RequestUILockInit1909_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* szUILockPW, char* szUILockPW_Confirm, char byUILock_HintIndex, char* uszUILock_HintAnswer)
+        static void CPlayerpc_RequestUILockInit1909_wrapper(struct CPlayer* _this, struct CUserDB* pUserDB, char* szUILockPW, char* szUILockPW_Confirm, char byUILock_HintIndex, char* uszUILock_HintAnswer)
         {
            CPlayerpc_RequestUILockInit1909_user(_this, pUserDB, szUILockPW, szUILockPW_Confirm, byUILock_HintIndex, uszUILock_HintAnswer, CPlayerpc_RequestUILockInit1909_next);
         };
-        void CPlayerpc_RequestUILockUpdate1911_wrapper(struct CPlayer* _this, char* uszUILockPWOld, char* uszUILockPW, char* uszUILockPW_Confirm, char byUILock_HintIndex, char* uszUILock_HintAnswer)
+        static void CPlayerpc_RequestUILockUpdate1911_wrapper(struct CPlayer* _this, char* uszUILockPWOld, char* uszUILockPW, char* uszUILockPW_Confirm, char byUILock_HintIndex, char* uszUILock_HintAnswer)
         {
            CPlayerpc_RequestUILockUpdate1911_user(_this, uszUILockPWOld, uszUILockPW, uszUILockPW_Confirm, byUILock_HintIndex, uszUILock_HintAnswer, CPlayerpc_RequestUILockUpdate1911_next);
         };
-        void CPlayerpc_RequestWatchingWithNPC1913_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
+        static void CPlayerpc_RequestWatchingWithNPC1913_wrapper(struct CPlayer* _this, struct CItemStore* pStore)
         {
            CPlayerpc_RequestWatchingWithNPC1913_user(_this, pStore, CPlayerpc_RequestWatchingWithNPC1913_next);
         };
-        void CPlayerpc_ResDivision1915_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, char byMoveAmount)
+        static void CPlayerpc_ResDivision1915_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, char byMoveAmount)
         {
            CPlayerpc_ResDivision1915_user(_this, wStartSerial, wTarSerial, byMoveAmount, CPlayerpc_ResDivision1915_next);
         };
-        void CPlayerpc_ResSeparation1917_wrapper(struct CPlayer* _this, uint16_t wStartSerial, char byMoveAmount)
+        static void CPlayerpc_ResSeparation1917_wrapper(struct CPlayer* _this, uint16_t wStartSerial, char byMoveAmount)
         {
            CPlayerpc_ResSeparation1917_user(_this, wStartSerial, byMoveAmount, CPlayerpc_ResSeparation1917_next);
         };
-        bool CPlayerpc_Resurrect1919_wrapper(struct CPlayer* _this, bool bQuickPotion)
+        static bool CPlayerpc_Resurrect1919_wrapper(struct CPlayer* _this, bool bQuickPotion)
         {
            return CPlayerpc_Resurrect1919_user(_this, bQuickPotion, CPlayerpc_Resurrect1919_next);
         };
-        void CPlayerpc_Revival1921_wrapper(struct CPlayer* _this, bool bUseableJade)
+        static void CPlayerpc_Revival1921_wrapper(struct CPlayer* _this, bool bUseableJade)
         {
            CPlayerpc_Revival1921_user(_this, bUseableJade, CPlayerpc_Revival1921_next);
         };
-        void CPlayerpc_SelectClassRequest1923_wrapper(struct CPlayer* _this, uint16_t wSelClassIndex, char bySelectRewardItem)
+        static void CPlayerpc_SelectClassRequest1923_wrapper(struct CPlayer* _this, uint16_t wSelClassIndex, char bySelectRewardItem)
         {
            CPlayerpc_SelectClassRequest1923_user(_this, wSelClassIndex, bySelectRewardItem, CPlayerpc_SelectClassRequest1923_next);
         };
-        void CPlayerpc_SelectQuestAfterHappenEvent1925_wrapper(struct CPlayer* _this, char bySelectIndex)
+        static void CPlayerpc_SelectQuestAfterHappenEvent1925_wrapper(struct CPlayer* _this, char bySelectIndex)
         {
            CPlayerpc_SelectQuestAfterHappenEvent1925_user(_this, bySelectIndex, CPlayerpc_SelectQuestAfterHappenEvent1925_next);
         };
-        void CPlayerpc_SelectQuestReward1927_wrapper(struct CPlayer* _this, char byQuestDBSlot, char bySelectItemSlotIndex, char bySelectLinkQuestIndex)
+        static void CPlayerpc_SelectQuestReward1927_wrapper(struct CPlayer* _this, char byQuestDBSlot, char bySelectItemSlotIndex, char bySelectLinkQuestIndex)
         {
            CPlayerpc_SelectQuestReward1927_user(_this, byQuestDBSlot, bySelectItemSlotIndex, bySelectLinkQuestIndex, CPlayerpc_SelectQuestReward1927_next);
         };
-        void CPlayerpc_SellItemStore1929_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byOfferNum, struct _sell_store_request_clzo::_list* pList, int bUseNPCLinkIntem)
+        static void CPlayerpc_SellItemStore1929_wrapper(struct CPlayer* _this, struct CItemStore* pStore, char byOfferNum, struct _sell_store_request_clzo::_list* pList, int bUseNPCLinkIntem)
         {
            CPlayerpc_SellItemStore1929_user(_this, pStore, byOfferNum, pList, bUseNPCLinkIntem, CPlayerpc_SellItemStore1929_next);
         };
-        void CPlayerpc_SetGroupMapPointRequest1931_wrapper(struct CPlayer* _this, char byGroupType, float* pzTar)
+        static void CPlayerpc_SetGroupMapPointRequest1931_wrapper(struct CPlayer* _this, char byGroupType, float* pzTar)
         {
            CPlayerpc_SetGroupMapPointRequest1931_user(_this, byGroupType, pzTar, CPlayerpc_SetGroupMapPointRequest1931_next);
         };
-        void CPlayerpc_SetGroupTargetObjectRequest1933_wrapper(struct CPlayer* _this, struct CGameObject* pTar, unsigned int dwSerial, char byGroupType)
+        static void CPlayerpc_SetGroupTargetObjectRequest1933_wrapper(struct CPlayer* _this, struct CGameObject* pTar, unsigned int dwSerial, char byGroupType)
         {
            CPlayerpc_SetGroupTargetObjectRequest1933_user(_this, pTar, dwSerial, byGroupType, CPlayerpc_SetGroupTargetObjectRequest1933_next);
         };
-        void CPlayerpc_SetInGuildBattle1935_wrapper(struct CPlayer* _this, bool bInGuildBattle, char byColorInx)
+        static void CPlayerpc_SetInGuildBattle1935_wrapper(struct CPlayer* _this, bool bInGuildBattle, char byColorInx)
         {
            CPlayerpc_SetInGuildBattle1935_user(_this, bInGuildBattle, byColorInx, CPlayerpc_SetInGuildBattle1935_next);
         };
-        bool CPlayerpc_SetItemCheckRequest1937_wrapper(struct CPlayer* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum, bool bSet)
+        static bool CPlayerpc_SetItemCheckRequest1937_wrapper(struct CPlayer* _this, unsigned int dwSetItem, char bySetItemNum, char bySetEffectNum, bool bSet)
         {
            return CPlayerpc_SetItemCheckRequest1937_user(_this, dwSetItem, bySetItemNum, bySetEffectNum, bSet, CPlayerpc_SetItemCheckRequest1937_next);
         };
-        void CPlayerpc_SetRaceBossCryMsg1939_wrapper(struct CPlayer* _this, char bySlot, char* pwszCryMsg)
+        static void CPlayerpc_SetRaceBossCryMsg1939_wrapper(struct CPlayer* _this, char bySlot, char* pwszCryMsg)
         {
            CPlayerpc_SetRaceBossCryMsg1939_user(_this, bySlot, pwszCryMsg, CPlayerpc_SetRaceBossCryMsg1939_next);
         };
-        void CPlayerpc_SetTargetObjectRequest1941_wrapper(struct CPlayer* _this, struct CGameObject* pTar, unsigned int dwSerial, bool bForce)
+        static void CPlayerpc_SetTargetObjectRequest1941_wrapper(struct CPlayer* _this, struct CGameObject* pTar, unsigned int dwSerial, bool bForce)
         {
            CPlayerpc_SetTargetObjectRequest1941_user(_this, pTar, dwSerial, bForce, CPlayerpc_SetTargetObjectRequest1941_next);
         };
-        void CPlayerpc_SkillRequest1943_wrapper(struct CPlayer* _this, char bySkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
+        static void CPlayerpc_SkillRequest1943_wrapper(struct CPlayer* _this, char bySkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
         {
            CPlayerpc_SkillRequest1943_user(_this, bySkillIndex, pidDst, pConsumeSerial, CPlayerpc_SkillRequest1943_next);
         };
-        void CPlayerpc_Stop1945_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_Stop1945_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_Stop1945_user(_this, CPlayerpc_Stop1945_next);
         };
-        void CPlayerpc_TakeGroundingItem1947_wrapper(struct CPlayer* _this, struct CItemBox* pBox, uint16_t wAddSerial)
+        static void CPlayerpc_TakeGroundingItem1947_wrapper(struct CPlayer* _this, struct CItemBox* pBox, uint16_t wAddSerial)
         {
            CPlayerpc_TakeGroundingItem1947_user(_this, pBox, wAddSerial, CPlayerpc_TakeGroundingItem1947_next);
         };
-        void CPlayerpc_TalikCrystalExchange1949_wrapper(struct CPlayer* _this, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
+        static void CPlayerpc_TalikCrystalExchange1949_wrapper(struct CPlayer* _this, char byExchangeNum, struct _talik_crystal_exchange_clzo::_list* pList)
         {
            CPlayerpc_TalikCrystalExchange1949_user(_this, byExchangeNum, pList, CPlayerpc_TalikCrystalExchange1949_next);
         };
-        void CPlayerpc_ThrowSkillRequest1951_wrapper(struct CPlayer* _this, uint16_t wBulletSerial, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
+        static void CPlayerpc_ThrowSkillRequest1951_wrapper(struct CPlayer* _this, uint16_t wBulletSerial, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
         {
            CPlayerpc_ThrowSkillRequest1951_user(_this, wBulletSerial, pidDst, pConsumeSerial, CPlayerpc_ThrowSkillRequest1951_next);
         };
-        void CPlayerpc_ThrowStorageItem1953_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
+        static void CPlayerpc_ThrowStorageItem1953_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem)
         {
            CPlayerpc_ThrowStorageItem1953_user(_this, pItem, CPlayerpc_ThrowStorageItem1953_next);
         };
-        void CPlayerpc_ThrowUnitRequest1955_wrapper(struct CPlayer* _this, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
+        static void CPlayerpc_ThrowUnitRequest1955_wrapper(struct CPlayer* _this, struct _CHRID* pidDst, uint16_t* pConsumeSerial)
         {
            CPlayerpc_ThrowUnitRequest1955_user(_this, pidDst, pConsumeSerial, CPlayerpc_ThrowUnitRequest1955_next);
         };
-        void CPlayerpc_TradeBlock1957_wrapper(struct CPlayer* _this, bool bBlock)
+        static void CPlayerpc_TradeBlock1957_wrapper(struct CPlayer* _this, bool bBlock)
         {
            CPlayerpc_TradeBlock1957_user(_this, bBlock, CPlayerpc_TradeBlock1957_next);
         };
-        void CPlayerpc_TransShipRenewTicketRequest1959_wrapper(struct CPlayer* _this, uint16_t wTicketItemSerial)
+        static void CPlayerpc_TransShipRenewTicketRequest1959_wrapper(struct CPlayer* _this, uint16_t wTicketItemSerial)
         {
            CPlayerpc_TransShipRenewTicketRequest1959_user(_this, wTicketItemSerial, CPlayerpc_TransShipRenewTicketRequest1959_next);
         };
-        void CPlayerpc_TransformSiegeModeRequest1961_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
+        static void CPlayerpc_TransformSiegeModeRequest1961_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
         {
            CPlayerpc_TransformSiegeModeRequest1961_user(_this, wItemSerial, CPlayerpc_TransformSiegeModeRequest1961_next);
         };
-        void CPlayerpc_TrunkAlterItemSlotRequest1963_wrapper(struct CPlayer* _this, unsigned int dwItemSerial, char byClientSlotIndex, char byStorageIndex)
+        static void CPlayerpc_TrunkAlterItemSlotRequest1963_wrapper(struct CPlayer* _this, unsigned int dwItemSerial, char byClientSlotIndex, char byStorageIndex)
         {
            CPlayerpc_TrunkAlterItemSlotRequest1963_user(_this, dwItemSerial, byClientSlotIndex, byStorageIndex, CPlayerpc_TrunkAlterItemSlotRequest1963_next);
         };
-        void CPlayerpc_TrunkChangePasswdRequest1965_wrapper(struct CPlayer* _this, char* pwszPrevPassword, char* pwszChngPassword, char byHintIndex, char* pwszHintAnswer)
+        static void CPlayerpc_TrunkChangePasswdRequest1965_wrapper(struct CPlayer* _this, char* pwszPrevPassword, char* pwszChngPassword, char byHintIndex, char* pwszHintAnswer)
         {
            CPlayerpc_TrunkChangePasswdRequest1965_user(_this, pwszPrevPassword, pwszChngPassword, byHintIndex, pwszHintAnswer, CPlayerpc_TrunkChangePasswdRequest1965_next);
         };
-        char CPlayerpc_TrunkCreateCostIsFreeRequest1967_wrapper(struct CPlayer* _this)
+        static char CPlayerpc_TrunkCreateCostIsFreeRequest1967_wrapper(struct CPlayer* _this)
         {
            return CPlayerpc_TrunkCreateCostIsFreeRequest1967_user(_this, CPlayerpc_TrunkCreateCostIsFreeRequest1967_next);
         };
-        void CPlayerpc_TrunkDownloadRequest1969_wrapper(struct CPlayer* _this, char* pwszPassword)
+        static void CPlayerpc_TrunkDownloadRequest1969_wrapper(struct CPlayer* _this, char* pwszPassword)
         {
            CPlayerpc_TrunkDownloadRequest1969_user(_this, pwszPassword, CPlayerpc_TrunkDownloadRequest1969_next);
         };
-        void CPlayerpc_TrunkEstRequest1971_wrapper(struct CPlayer* _this, char* pwszPassword, char byHintIndex, char* pwszHintAnswer)
+        static void CPlayerpc_TrunkEstRequest1971_wrapper(struct CPlayer* _this, char* pwszPassword, char byHintIndex, char* pwszHintAnswer)
         {
            CPlayerpc_TrunkEstRequest1971_user(_this, pwszPassword, byHintIndex, pwszHintAnswer, CPlayerpc_TrunkEstRequest1971_next);
         };
-        void CPlayerpc_TrunkExtendRequest1973_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_TrunkExtendRequest1973_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_TrunkExtendRequest1973_user(_this, CPlayerpc_TrunkExtendRequest1973_next);
         };
-        void CPlayerpc_TrunkHintAnswerRequest1975_wrapper(struct CPlayer* _this, char* pwszAnswer)
+        static void CPlayerpc_TrunkHintAnswerRequest1975_wrapper(struct CPlayer* _this, char* pwszAnswer)
         {
            CPlayerpc_TrunkHintAnswerRequest1975_user(_this, pwszAnswer, CPlayerpc_TrunkHintAnswerRequest1975_next);
         };
-        void CPlayerpc_TrunkIoMergeRequest1977_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wStartItemSerial, uint16_t wTarItemSerial, uint16_t wMoveAmount)
+        static void CPlayerpc_TrunkIoMergeRequest1977_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wStartItemSerial, uint16_t wTarItemSerial, uint16_t wMoveAmount)
         {
            CPlayerpc_TrunkIoMergeRequest1977_user(_this, byStartStorageIndex, byTarStorageIndex, wStartItemSerial, wTarItemSerial, wMoveAmount, CPlayerpc_TrunkIoMergeRequest1977_next);
         };
-        void CPlayerpc_TrunkIoMoneyRequest1979_wrapper(struct CPlayer* _this, char byCase, unsigned int dwDalant, unsigned int dwGold)
+        static void CPlayerpc_TrunkIoMoneyRequest1979_wrapper(struct CPlayer* _this, char byCase, unsigned int dwDalant, unsigned int dwGold)
         {
            CPlayerpc_TrunkIoMoneyRequest1979_user(_this, byCase, dwDalant, dwGold, CPlayerpc_TrunkIoMoneyRequest1979_next);
         };
-        void CPlayerpc_TrunkIoMoveRequest1981_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wItemSerial, char byClientSlotIndex)
+        static void CPlayerpc_TrunkIoMoveRequest1981_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wItemSerial, char byClientSlotIndex)
         {
            CPlayerpc_TrunkIoMoveRequest1981_user(_this, byStartStorageIndex, byTarStorageIndex, wItemSerial, byClientSlotIndex, CPlayerpc_TrunkIoMoveRequest1981_next);
         };
-        void CPlayerpc_TrunkIoSwapRequest1983_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wStartItemSerial, uint16_t wTarItemSerial)
+        static void CPlayerpc_TrunkIoSwapRequest1983_wrapper(struct CPlayer* _this, char byStartStorageIndex, char byTarStorageIndex, uint16_t wStartItemSerial, uint16_t wTarItemSerial)
         {
            CPlayerpc_TrunkIoSwapRequest1983_user(_this, byStartStorageIndex, byTarStorageIndex, wStartItemSerial, wTarItemSerial, CPlayerpc_TrunkIoSwapRequest1983_next);
         };
-        void CPlayerpc_TrunkPotionDivision1985_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, uint16_t wMoveAmount, char byStorageIndex)
+        static void CPlayerpc_TrunkPotionDivision1985_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, uint16_t wMoveAmount, char byStorageIndex)
         {
            CPlayerpc_TrunkPotionDivision1985_user(_this, wStartSerial, wTarSerial, wMoveAmount, byStorageIndex, CPlayerpc_TrunkPotionDivision1985_next);
         };
-        void CPlayerpc_TrunkPwHintIndexRequest1987_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_TrunkPwHintIndexRequest1987_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_TrunkPwHintIndexRequest1987_user(_this, CPlayerpc_TrunkPwHintIndexRequest1987_next);
         };
-        void CPlayerpc_TrunkResDivision1989_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, uint16_t wMoveAmount, char byStorageIndex)
+        static void CPlayerpc_TrunkResDivision1989_wrapper(struct CPlayer* _this, uint16_t wStartSerial, uint16_t wTarSerial, uint16_t wMoveAmount, char byStorageIndex)
         {
            CPlayerpc_TrunkResDivision1989_user(_this, wStartSerial, wTarSerial, wMoveAmount, byStorageIndex, CPlayerpc_TrunkResDivision1989_next);
         };
-        void CPlayerpc_UnitBulletFillRequest1991_wrapper(struct CPlayer* _this, char bySlotIndex, uint16_t* pwBulletIndex, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitBulletFillRequest1991_wrapper(struct CPlayer* _this, char bySlotIndex, uint16_t* pwBulletIndex, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitBulletFillRequest1991_user(_this, bySlotIndex, pwBulletIndex, bUseNPCLinkIntem, CPlayerpc_UnitBulletFillRequest1991_next);
         };
-        void CPlayerpc_UnitBulletReplaceRequest1993_wrapper(struct CPlayer* _this, char bySlotIndex, char byPackIndex, char byBulletPart)
+        static void CPlayerpc_UnitBulletReplaceRequest1993_wrapper(struct CPlayer* _this, char bySlotIndex, char byPackIndex, char byBulletPart)
         {
            CPlayerpc_UnitBulletReplaceRequest1993_user(_this, bySlotIndex, byPackIndex, byBulletPart, CPlayerpc_UnitBulletReplaceRequest1993_next);
         };
-        void CPlayerpc_UnitDeliveryRequest1995_wrapper(struct CPlayer* _this, char bySlotIndex, struct CItemStore* pStore, bool bPayFee, float* pfNewPos, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitDeliveryRequest1995_wrapper(struct CPlayer* _this, char bySlotIndex, struct CItemStore* pStore, bool bPayFee, float* pfNewPos, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitDeliveryRequest1995_user(_this, bySlotIndex, pStore, bPayFee, pfNewPos, bUseNPCLinkIntem, CPlayerpc_UnitDeliveryRequest1995_next);
         };
-        void CPlayerpc_UnitFrameBuyRequest1997_wrapper(struct CPlayer* _this, char byFrameCode, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitFrameBuyRequest1997_wrapper(struct CPlayer* _this, char byFrameCode, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitFrameBuyRequest1997_user(_this, byFrameCode, bUseNPCLinkIntem, CPlayerpc_UnitFrameBuyRequest1997_next);
         };
-        void CPlayerpc_UnitFrameRepairRequest1999_wrapper(struct CPlayer* _this, char bySlotIndex, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitFrameRepairRequest1999_wrapper(struct CPlayer* _this, char bySlotIndex, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitFrameRepairRequest1999_user(_this, bySlotIndex, bUseNPCLinkIntem, CPlayerpc_UnitFrameRepairRequest1999_next);
         };
-        void CPlayerpc_UnitLeaveRequest2001_wrapper(struct CPlayer* _this, float* pfNewPos)
+        static void CPlayerpc_UnitLeaveRequest2001_wrapper(struct CPlayer* _this, float* pfNewPos)
         {
            CPlayerpc_UnitLeaveRequest2001_user(_this, pfNewPos, CPlayerpc_UnitLeaveRequest2001_next);
         };
-        void CPlayerpc_UnitPackFillRequest2003_wrapper(struct CPlayer* _this, char bySlotIndex, char byFillNum, struct _unit_pack_fill_request_clzo::__list* pList, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitPackFillRequest2003_wrapper(struct CPlayer* _this, char bySlotIndex, char byFillNum, struct _unit_pack_fill_request_clzo::__list* pList, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitPackFillRequest2003_user(_this, bySlotIndex, byFillNum, pList, bUseNPCLinkIntem, CPlayerpc_UnitPackFillRequest2003_next);
         };
-        void CPlayerpc_UnitPartTuningRequest2005_wrapper(struct CPlayer* _this, char bySlotIndex, char byTuningNum, struct _tuning_data* pTuningData, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitPartTuningRequest2005_wrapper(struct CPlayer* _this, char bySlotIndex, char byTuningNum, struct _tuning_data* pTuningData, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitPartTuningRequest2005_user(_this, bySlotIndex, byTuningNum, pTuningData, bUseNPCLinkIntem, CPlayerpc_UnitPartTuningRequest2005_next);
         };
-        void CPlayerpc_UnitReturnRequest2007_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_UnitReturnRequest2007_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_UnitReturnRequest2007_user(_this, CPlayerpc_UnitReturnRequest2007_next);
         };
-        void CPlayerpc_UnitSellRequest2009_wrapper(struct CPlayer* _this, char bySlotIndex, int bUseNPCLinkIntem)
+        static void CPlayerpc_UnitSellRequest2009_wrapper(struct CPlayer* _this, char bySlotIndex, int bUseNPCLinkIntem)
         {
            CPlayerpc_UnitSellRequest2009_user(_this, bySlotIndex, bUseNPCLinkIntem, CPlayerpc_UnitSellRequest2009_next);
         };
-        void CPlayerpc_UnitTakeRequest2011_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_UnitTakeRequest2011_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_UnitTakeRequest2011_user(_this, CPlayerpc_UnitTakeRequest2011_next);
         };
-        void CPlayerpc_UpdateDataForPostSend2013_wrapper(struct CPlayer* _this)
+        static void CPlayerpc_UpdateDataForPostSend2013_wrapper(struct CPlayer* _this)
         {
            CPlayerpc_UpdateDataForPostSend2013_user(_this, CPlayerpc_UpdateDataForPostSend2013_next);
         };
-        void CPlayerpc_UpdateDataForTrade2015_wrapper(struct CPlayer* _this, struct CPlayer* pTrader)
+        static void CPlayerpc_UpdateDataForTrade2015_wrapper(struct CPlayer* _this, struct CPlayer* pTrader)
         {
            CPlayerpc_UpdateDataForTrade2015_user(_this, pTrader, CPlayerpc_UpdateDataForTrade2015_next);
         };
-        void CPlayerpc_UpgradeItem2017_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pposTalik, struct _STORAGE_POS_INDIV* pposToolItem, struct _STORAGE_POS_INDIV* pposUpgItem, char byJewelNum, struct _STORAGE_POS_INDIV* pposUpgJewel)
+        static void CPlayerpc_UpgradeItem2017_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pposTalik, struct _STORAGE_POS_INDIV* pposToolItem, struct _STORAGE_POS_INDIV* pposUpgItem, char byJewelNum, struct _STORAGE_POS_INDIV* pposUpgJewel)
         {
            CPlayerpc_UpgradeItem2017_user(_this, pposTalik, pposToolItem, pposUpgItem, byJewelNum, pposUpgJewel, CPlayerpc_UpgradeItem2017_next);
         };
-        int CPlayerpc_UseFireCracker2019_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
+        static int CPlayerpc_UseFireCracker2019_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
         {
            return CPlayerpc_UseFireCracker2019_user(_this, wItemSerial, CPlayerpc_UseFireCracker2019_next);
         };
-        void CPlayerpc_UsePotionItem2021_wrapper(struct CPlayer* _this, struct CPlayer* pTargetPlayer, struct _STORAGE_POS_INDIV* pItem)
+        static void CPlayerpc_UsePotionItem2021_wrapper(struct CPlayer* _this, struct CPlayer* pTargetPlayer, struct _STORAGE_POS_INDIV* pItem)
         {
            CPlayerpc_UsePotionItem2021_user(_this, pTargetPlayer, pItem, CPlayerpc_UsePotionItem2021_next);
         };
-        bool CPlayerpc_UseRadarItem2023_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t* pConsumeSerial)
+        static bool CPlayerpc_UseRadarItem2023_wrapper(struct CPlayer* _this, struct _STORAGE_POS_INDIV* pItem, uint16_t* pConsumeSerial)
         {
            return CPlayerpc_UseRadarItem2023_user(_this, pItem, pConsumeSerial, CPlayerpc_UseRadarItem2023_next);
         };
-        char CPlayerpc_UseRecoverLossExpItem2025_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
+        static char CPlayerpc_UseRecoverLossExpItem2025_wrapper(struct CPlayer* _this, uint16_t wItemSerial)
         {
            return CPlayerpc_UseRecoverLossExpItem2025_user(_this, wItemSerial, CPlayerpc_UseRecoverLossExpItem2025_next);
         };
-        char CPlayerpc_UserSoccerBall2027_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t* wItemIndex)
+        static char CPlayerpc_UserSoccerBall2027_wrapper(struct CPlayer* _this, uint16_t wItemSerial, uint16_t* wItemIndex)
         {
            return CPlayerpc_UserSoccerBall2027_user(_this, wItemSerial, wItemIndex, CPlayerpc_UserSoccerBall2027_next);
         };
-        bool CPlayerpc_WPActiveAttack_Force2029_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, struct _force_fld* pForceFld)
+        static bool CPlayerpc_WPActiveAttack_Force2029_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, struct _force_fld* pForceFld)
         {
            return CPlayerpc_WPActiveAttack_Force2029_user(_this, pDamList, nDamagedObjNum, pForceFld, CPlayerpc_WPActiveAttack_Force2029_next);
         };
-        bool CPlayerpc_WPActiveAttack_Skill2031_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, int* nShotNum, struct _skill_fld* pSkillFld, char byEffectCode, uint16_t wBulletSerial)
+        static bool CPlayerpc_WPActiveAttack_Skill2031_wrapper(struct CPlayer* _this, struct _be_damaged_char* pDamList, int* nDamagedObjNum, int* nShotNum, struct _skill_fld* pSkillFld, char byEffectCode, uint16_t wBulletSerial)
         {
            return CPlayerpc_WPActiveAttack_Skill2031_user(_this, pDamList, nDamagedObjNum, nShotNum, pSkillFld, byEffectCode, wBulletSerial, CPlayerpc_WPActiveAttack_Skill2031_next);
         };
-        void CPlayerpc_WhisperBlock2033_wrapper(struct CPlayer* _this, bool bBlock)
+        static void CPlayerpc_WhisperBlock2033_wrapper(struct CPlayer* _this, bool bBlock)
         {
            CPlayerpc_WhisperBlock2033_user(_this, bBlock, CPlayerpc_WhisperBlock2033_next);
         };
-        char CPlayerskill_process2035_wrapper(struct CPlayer* _this, int nEffectCode, int nSkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial, int* pnLv)
+        static char CPlayerskill_process2035_wrapper(struct CPlayer* _this, int nEffectCode, int nSkillIndex, struct _CHRID* pidDst, uint16_t* pConsumeSerial, int* pnLv)
         {
            return CPlayerskill_process2035_user(_this, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv, CPlayerskill_process2035_next);
         };
-        void CPlayerskill_process_for_aura2037_wrapper(struct CPlayer* _this, int nSkillIndex)
+        static void CPlayerskill_process_for_aura2037_wrapper(struct CPlayer* _this, int nSkillIndex)
         {
            CPlayerskill_process_for_aura2037_user(_this, nSkillIndex, CPlayerskill_process_for_aura2037_next);
         };
-        char CPlayerskill_process_for_item2039_wrapper(struct CPlayer* _this, int nSkillIndex, struct _CHRID* pidDst, int* pnLv)
+        static char CPlayerskill_process_for_item2039_wrapper(struct CPlayer* _this, int nSkillIndex, struct _CHRID* pidDst, int* pnLv)
         {
            return CPlayerskill_process_for_item2039_user(_this, nSkillIndex, pidDst, pnLv, CPlayerskill_process_for_item2039_next);
         };
-        void CPlayerdtor_CPlayer2041_wrapper(struct CPlayer* _this)
+        static void CPlayerdtor_CPlayer2041_wrapper(struct CPlayer* _this)
         {
            CPlayerdtor_CPlayer2041_user(_this, CPlayerdtor_CPlayer2041_next);
         };
         
-        void CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_wrapper(CPlayer::CashChangeStateFlag* _this, int cashrename)
+        static void CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_wrapper(CPlayer::CashChangeStateFlag* _this, int cashrename)
         {
            CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_user(_this, cashrename, CPlayer__CashChangeStateFlagctor_CashChangeStateFlag2_next);
         };
         
-        void CPlayer____targetctor___target2_wrapper(struct CPlayer::__target* _this)
+        static void CPlayer____targetctor___target2_wrapper(struct CPlayer::__target* _this)
         {
            CPlayer____targetctor___target2_user(_this, CPlayer____targetctor___target2_next);
         };
-        void CPlayer____targetinit4_wrapper(struct CPlayer::__target* _this)
+        static void CPlayer____targetinit4_wrapper(struct CPlayer::__target* _this)
         {
            CPlayer____targetinit4_user(_this, CPlayer____targetinit4_next);
         };
         
-        hook_record CPlayer_functions[] = {
+        static hook_record CPlayer_functions[] = {
         {   (LPVOID)0x140055b00L,
             (LPVOID *)&CPlayerAddDalant2_user,
             (LPVOID *)&CPlayerAddDalant2_next,
@@ -11262,5 +11262,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

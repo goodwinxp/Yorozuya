@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_PARTICLE_ELEMENTUpDate1_ptr _PARTICLE_ELEMENTUpDate1_next(nullptr);
-        info::_PARTICLE_ELEMENTUpDate1_clbk _PARTICLE_ELEMENTUpDate1_user(nullptr);
+        static info::_PARTICLE_ELEMENTUpDate1_ptr _PARTICLE_ELEMENTUpDate1_next(nullptr);
+        static info::_PARTICLE_ELEMENTUpDate1_clbk _PARTICLE_ELEMENTUpDate1_user(nullptr);
         
-        void _PARTICLE_ELEMENTUpDate1_wrapper(struct _PARTICLE_ELEMENT* _this, float arg_0)
+        static void _PARTICLE_ELEMENTUpDate1_wrapper(struct _PARTICLE_ELEMENT* _this, float arg_0)
         {
            _PARTICLE_ELEMENTUpDate1_user(_this, arg_0, _PARTICLE_ELEMENTUpDate1_next);
         };
         
-        hook_record _PARTICLE_ELEMENT_functions[] = {
+        static hook_record _PARTICLE_ELEMENT_functions[] = {
         {   (LPVOID)0x1405172a0L,
             (LPVOID *)&_PARTICLE_ELEMENTUpDate1_user,
             (LPVOID *)&_PARTICLE_ELEMENTUpDate1_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

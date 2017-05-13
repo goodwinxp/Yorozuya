@@ -8,69 +8,69 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CVoteSystemActVote2_ptr CVoteSystemActVote2_next(nullptr);
-        info::CVoteSystemActVote2_clbk CVoteSystemActVote2_user(nullptr);
-        info::CVoteSystemctor_CVoteSystem4_ptr CVoteSystemctor_CVoteSystem4_next(nullptr);
-        info::CVoteSystemctor_CVoteSystem4_clbk CVoteSystemctor_CVoteSystem4_user(nullptr);
-        info::CVoteSystemCompleteSelectCharSerial6_ptr CVoteSystemCompleteSelectCharSerial6_next(nullptr);
-        info::CVoteSystemCompleteSelectCharSerial6_clbk CVoteSystemCompleteSelectCharSerial6_user(nullptr);
-        info::CVoteSystemLoop8_ptr CVoteSystemLoop8_next(nullptr);
-        info::CVoteSystemLoop8_clbk CVoteSystemLoop8_user(nullptr);
-        info::CVoteSystemProcessPunishment10_ptr CVoteSystemProcessPunishment10_next(nullptr);
-        info::CVoteSystemProcessPunishment10_clbk CVoteSystemProcessPunishment10_user(nullptr);
-        info::CVoteSystemSendMsg_StartedVoteInform12_ptr CVoteSystemSendMsg_StartedVoteInform12_next(nullptr);
-        info::CVoteSystemSendMsg_StartedVoteInform12_clbk CVoteSystemSendMsg_StartedVoteInform12_user(nullptr);
-        info::CVoteSystemStartVote14_ptr CVoteSystemStartVote14_next(nullptr);
-        info::CVoteSystemStartVote14_clbk CVoteSystemStartVote14_user(nullptr);
-        info::CVoteSystemStartVote16_ptr CVoteSystemStartVote16_next(nullptr);
-        info::CVoteSystemStartVote16_clbk CVoteSystemStartVote16_user(nullptr);
-        info::CVoteSystemStopVote18_ptr CVoteSystemStopVote18_next(nullptr);
-        info::CVoteSystemStopVote18_clbk CVoteSystemStopVote18_user(nullptr);
-        info::CVoteSystemdtor_CVoteSystem20_ptr CVoteSystemdtor_CVoteSystem20_next(nullptr);
-        info::CVoteSystemdtor_CVoteSystem20_clbk CVoteSystemdtor_CVoteSystem20_user(nullptr);
+        static info::CVoteSystemActVote2_ptr CVoteSystemActVote2_next(nullptr);
+        static info::CVoteSystemActVote2_clbk CVoteSystemActVote2_user(nullptr);
+        static info::CVoteSystemctor_CVoteSystem4_ptr CVoteSystemctor_CVoteSystem4_next(nullptr);
+        static info::CVoteSystemctor_CVoteSystem4_clbk CVoteSystemctor_CVoteSystem4_user(nullptr);
+        static info::CVoteSystemCompleteSelectCharSerial6_ptr CVoteSystemCompleteSelectCharSerial6_next(nullptr);
+        static info::CVoteSystemCompleteSelectCharSerial6_clbk CVoteSystemCompleteSelectCharSerial6_user(nullptr);
+        static info::CVoteSystemLoop8_ptr CVoteSystemLoop8_next(nullptr);
+        static info::CVoteSystemLoop8_clbk CVoteSystemLoop8_user(nullptr);
+        static info::CVoteSystemProcessPunishment10_ptr CVoteSystemProcessPunishment10_next(nullptr);
+        static info::CVoteSystemProcessPunishment10_clbk CVoteSystemProcessPunishment10_user(nullptr);
+        static info::CVoteSystemSendMsg_StartedVoteInform12_ptr CVoteSystemSendMsg_StartedVoteInform12_next(nullptr);
+        static info::CVoteSystemSendMsg_StartedVoteInform12_clbk CVoteSystemSendMsg_StartedVoteInform12_user(nullptr);
+        static info::CVoteSystemStartVote14_ptr CVoteSystemStartVote14_next(nullptr);
+        static info::CVoteSystemStartVote14_clbk CVoteSystemStartVote14_user(nullptr);
+        static info::CVoteSystemStartVote16_ptr CVoteSystemStartVote16_next(nullptr);
+        static info::CVoteSystemStartVote16_clbk CVoteSystemStartVote16_user(nullptr);
+        static info::CVoteSystemStopVote18_ptr CVoteSystemStopVote18_next(nullptr);
+        static info::CVoteSystemStopVote18_clbk CVoteSystemStopVote18_user(nullptr);
+        static info::CVoteSystemdtor_CVoteSystem20_ptr CVoteSystemdtor_CVoteSystem20_next(nullptr);
+        static info::CVoteSystemdtor_CVoteSystem20_clbk CVoteSystemdtor_CVoteSystem20_user(nullptr);
         
-        bool CVoteSystemActVote2_wrapper(struct CVoteSystem* _this, unsigned int dwAvatorSerial, char byPoint)
+        static bool CVoteSystemActVote2_wrapper(struct CVoteSystem* _this, unsigned int dwAvatorSerial, char byPoint)
         {
            return CVoteSystemActVote2_user(_this, dwAvatorSerial, byPoint, CVoteSystemActVote2_next);
         };
-        void CVoteSystemctor_CVoteSystem4_wrapper(struct CVoteSystem* _this)
+        static void CVoteSystemctor_CVoteSystem4_wrapper(struct CVoteSystem* _this)
         {
            CVoteSystemctor_CVoteSystem4_user(_this, CVoteSystemctor_CVoteSystem4_next);
         };
-        void CVoteSystemCompleteSelectCharSerial6_wrapper(struct CVoteSystem* _this, char* pData)
+        static void CVoteSystemCompleteSelectCharSerial6_wrapper(struct CVoteSystem* _this, char* pData)
         {
            CVoteSystemCompleteSelectCharSerial6_user(_this, pData, CVoteSystemCompleteSelectCharSerial6_next);
         };
-        void CVoteSystemLoop8_wrapper(struct CVoteSystem* _this)
+        static void CVoteSystemLoop8_wrapper(struct CVoteSystem* _this)
         {
            CVoteSystemLoop8_user(_this, CVoteSystemLoop8_next);
         };
-        void CVoteSystemProcessPunishment10_wrapper(struct CVoteSystem* _this)
+        static void CVoteSystemProcessPunishment10_wrapper(struct CVoteSystem* _this)
         {
            CVoteSystemProcessPunishment10_user(_this, CVoteSystemProcessPunishment10_next);
         };
-        void CVoteSystemSendMsg_StartedVoteInform12_wrapper(struct CVoteSystem* _this, int n, unsigned int dwAvatorSerial, bool bPunish)
+        static void CVoteSystemSendMsg_StartedVoteInform12_wrapper(struct CVoteSystem* _this, int n, unsigned int dwAvatorSerial, bool bPunish)
         {
            CVoteSystemSendMsg_StartedVoteInform12_user(_this, n, dwAvatorSerial, bPunish, CVoteSystemSendMsg_StartedVoteInform12_next);
         };
-        bool CVoteSystemStartVote14_wrapper(struct CVoteSystem* _this, char* pwszContent, char byLimGrade, char byRaceCode)
+        static bool CVoteSystemStartVote14_wrapper(struct CVoteSystem* _this, char* pwszContent, char byLimGrade, char byRaceCode)
         {
            return CVoteSystemStartVote14_user(_this, pwszContent, byLimGrade, byRaceCode, CVoteSystemStartVote14_next);
         };
-        bool CVoteSystemStartVote16_wrapper(struct CVoteSystem* _this, char byRaceCode, char byPunishType, char* pwszContent, char* pwszName, unsigned int dwSerial)
+        static bool CVoteSystemStartVote16_wrapper(struct CVoteSystem* _this, char byRaceCode, char byPunishType, char* pwszContent, char* pwszName, unsigned int dwSerial)
         {
            return CVoteSystemStartVote16_user(_this, byRaceCode, byPunishType, pwszContent, pwszName, dwSerial, CVoteSystemStartVote16_next);
         };
-        bool CVoteSystemStopVote18_wrapper(struct CVoteSystem* _this)
+        static bool CVoteSystemStopVote18_wrapper(struct CVoteSystem* _this)
         {
            return CVoteSystemStopVote18_user(_this, CVoteSystemStopVote18_next);
         };
-        void CVoteSystemdtor_CVoteSystem20_wrapper(struct CVoteSystem* _this)
+        static void CVoteSystemdtor_CVoteSystem20_wrapper(struct CVoteSystem* _this)
         {
            CVoteSystemdtor_CVoteSystem20_user(_this, CVoteSystemdtor_CVoteSystem20_next);
         };
         
-        hook_record CVoteSystem_functions[] = {
+        static hook_record CVoteSystem_functions[] = {
         {   (LPVOID)0x1402b0580L,
             (LPVOID *)&CVoteSystemActVote2_user,
             (LPVOID *)&CVoteSystemActVote2_next,
@@ -124,5 +124,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

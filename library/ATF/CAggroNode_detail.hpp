@@ -8,39 +8,39 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAggroNodector_CAggroNode2_ptr CAggroNodector_CAggroNode2_next(nullptr);
-        info::CAggroNodector_CAggroNode2_clbk CAggroNodector_CAggroNode2_user(nullptr);
-        info::CAggroNodeInit4_ptr CAggroNodeInit4_next(nullptr);
-        info::CAggroNodeInit4_clbk CAggroNodeInit4_user(nullptr);
-        info::CAggroNodeIsLive6_ptr CAggroNodeIsLive6_next(nullptr);
-        info::CAggroNodeIsLive6_clbk CAggroNodeIsLive6_user(nullptr);
-        info::CAggroNodeSet8_ptr CAggroNodeSet8_next(nullptr);
-        info::CAggroNodeSet8_clbk CAggroNodeSet8_user(nullptr);
-        info::CAggroNodeSetAggro10_ptr CAggroNodeSetAggro10_next(nullptr);
-        info::CAggroNodeSetAggro10_clbk CAggroNodeSetAggro10_user(nullptr);
+        static info::CAggroNodector_CAggroNode2_ptr CAggroNodector_CAggroNode2_next(nullptr);
+        static info::CAggroNodector_CAggroNode2_clbk CAggroNodector_CAggroNode2_user(nullptr);
+        static info::CAggroNodeInit4_ptr CAggroNodeInit4_next(nullptr);
+        static info::CAggroNodeInit4_clbk CAggroNodeInit4_user(nullptr);
+        static info::CAggroNodeIsLive6_ptr CAggroNodeIsLive6_next(nullptr);
+        static info::CAggroNodeIsLive6_clbk CAggroNodeIsLive6_user(nullptr);
+        static info::CAggroNodeSet8_ptr CAggroNodeSet8_next(nullptr);
+        static info::CAggroNodeSet8_clbk CAggroNodeSet8_user(nullptr);
+        static info::CAggroNodeSetAggro10_ptr CAggroNodeSetAggro10_next(nullptr);
+        static info::CAggroNodeSetAggro10_clbk CAggroNodeSetAggro10_user(nullptr);
         
-        void CAggroNodector_CAggroNode2_wrapper(struct CAggroNode* _this)
+        static void CAggroNodector_CAggroNode2_wrapper(struct CAggroNode* _this)
         {
            CAggroNodector_CAggroNode2_user(_this, CAggroNodector_CAggroNode2_next);
         };
-        void CAggroNodeInit4_wrapper(struct CAggroNode* _this)
+        static void CAggroNodeInit4_wrapper(struct CAggroNode* _this)
         {
            CAggroNodeInit4_user(_this, CAggroNodeInit4_next);
         };
-        int CAggroNodeIsLive6_wrapper(struct CAggroNode* _this)
+        static int CAggroNodeIsLive6_wrapper(struct CAggroNode* _this)
         {
            return CAggroNodeIsLive6_user(_this, CAggroNodeIsLive6_next);
         };
-        void CAggroNodeSet8_wrapper(struct CAggroNode* _this, struct CCharacter* pCharacter)
+        static void CAggroNodeSet8_wrapper(struct CAggroNode* _this, struct CCharacter* pCharacter)
         {
            CAggroNodeSet8_user(_this, pCharacter, CAggroNodeSet8_next);
         };
-        void CAggroNodeSetAggro10_wrapper(struct CAggroNode* _this, int nDam, float fAdd, int nAttackType, unsigned int dwAttackSerial, int bOtherPlayerSupport, int bFirstAttack, int bTempSkill)
+        static void CAggroNodeSetAggro10_wrapper(struct CAggroNode* _this, int nDam, float fAdd, int nAttackType, unsigned int dwAttackSerial, int bOtherPlayerSupport, int bFirstAttack, int bTempSkill)
         {
            CAggroNodeSetAggro10_user(_this, nDam, fAdd, nAttackType, dwAttackSerial, bOtherPlayerSupport, bFirstAttack, bTempSkill, CAggroNodeSetAggro10_next);
         };
         
-        hook_record CAggroNode_functions[] = {
+        static hook_record CAggroNode_functions[] = {
         {   (LPVOID)0x1401616e0L,
             (LPVOID *)&CAggroNodector_CAggroNode2_user,
             (LPVOID *)&CAggroNodector_CAggroNode2_next,
@@ -69,5 +69,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

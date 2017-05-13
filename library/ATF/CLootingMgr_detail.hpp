@@ -8,53 +8,53 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLootingMgrctor_CLootingMgr2_ptr CLootingMgrctor_CLootingMgr2_next(nullptr);
-        info::CLootingMgrctor_CLootingMgr2_clbk CLootingMgrctor_CLootingMgr2_user(nullptr);
-        info::CLootingMgrGetLooter4_ptr CLootingMgrGetLooter4_next(nullptr);
-        info::CLootingMgrGetLooter4_clbk CLootingMgrGetLooter4_user(nullptr);
-        info::CLootingMgrInit6_ptr CLootingMgrInit6_next(nullptr);
-        info::CLootingMgrInit6_clbk CLootingMgrInit6_user(nullptr);
-        info::CLootingMgrPushDamage8_ptr CLootingMgrPushDamage8_next(nullptr);
-        info::CLootingMgrPushDamage8_clbk CLootingMgrPushDamage8_user(nullptr);
+        static info::CLootingMgrctor_CLootingMgr2_ptr CLootingMgrctor_CLootingMgr2_next(nullptr);
+        static info::CLootingMgrctor_CLootingMgr2_clbk CLootingMgrctor_CLootingMgr2_user(nullptr);
+        static info::CLootingMgrGetLooter4_ptr CLootingMgrGetLooter4_next(nullptr);
+        static info::CLootingMgrGetLooter4_clbk CLootingMgrGetLooter4_user(nullptr);
+        static info::CLootingMgrInit6_ptr CLootingMgrInit6_next(nullptr);
+        static info::CLootingMgrInit6_clbk CLootingMgrInit6_user(nullptr);
+        static info::CLootingMgrPushDamage8_ptr CLootingMgrPushDamage8_next(nullptr);
+        static info::CLootingMgrPushDamage8_clbk CLootingMgrPushDamage8_user(nullptr);
         
-        info::CLootingMgr___listGetScore2_ptr CLootingMgr___listGetScore2_next(nullptr);
-        info::CLootingMgr___listGetScore2_clbk CLootingMgr___listGetScore2_user(nullptr);
-        info::CLootingMgr___listInit4_ptr CLootingMgr___listInit4_next(nullptr);
-        info::CLootingMgr___listInit4_clbk CLootingMgr___listInit4_user(nullptr);
-        info::CLootingMgr___listctor__list6_ptr CLootingMgr___listctor__list6_next(nullptr);
-        info::CLootingMgr___listctor__list6_clbk CLootingMgr___listctor__list6_user(nullptr);
+        static info::CLootingMgr___listGetScore2_ptr CLootingMgr___listGetScore2_next(nullptr);
+        static info::CLootingMgr___listGetScore2_clbk CLootingMgr___listGetScore2_user(nullptr);
+        static info::CLootingMgr___listInit4_ptr CLootingMgr___listInit4_next(nullptr);
+        static info::CLootingMgr___listInit4_clbk CLootingMgr___listInit4_user(nullptr);
+        static info::CLootingMgr___listctor__list6_ptr CLootingMgr___listctor__list6_next(nullptr);
+        static info::CLootingMgr___listctor__list6_clbk CLootingMgr___listctor__list6_user(nullptr);
         
-        void CLootingMgrctor_CLootingMgr2_wrapper(struct CLootingMgr* _this)
+        static void CLootingMgrctor_CLootingMgr2_wrapper(struct CLootingMgr* _this)
         {
            CLootingMgrctor_CLootingMgr2_user(_this, CLootingMgrctor_CLootingMgr2_next);
         };
-        struct CPlayer* CLootingMgrGetLooter4_wrapper(struct CLootingMgr* _this, struct CMapData* pMap, float* pPos, struct CPlayer* pSkipObject)
+        static struct CPlayer* CLootingMgrGetLooter4_wrapper(struct CLootingMgr* _this, struct CMapData* pMap, float* pPos, struct CPlayer* pSkipObject)
         {
            return CLootingMgrGetLooter4_user(_this, pMap, pPos, pSkipObject, CLootingMgrGetLooter4_next);
         };
-        void CLootingMgrInit6_wrapper(struct CLootingMgr* _this, int nUserNode)
+        static void CLootingMgrInit6_wrapper(struct CLootingMgr* _this, int nUserNode)
         {
            CLootingMgrInit6_user(_this, nUserNode, CLootingMgrInit6_next);
         };
-        void CLootingMgrPushDamage8_wrapper(struct CLootingMgr* _this, struct CPlayer* pAtter, uint16_t wDamage)
+        static void CLootingMgrPushDamage8_wrapper(struct CLootingMgr* _this, struct CPlayer* pAtter, uint16_t wDamage)
         {
            CLootingMgrPushDamage8_user(_this, pAtter, wDamage, CLootingMgrPushDamage8_next);
         };
         
-        long double CLootingMgr___listGetScore2_wrapper(struct CLootingMgr::_list* _this, bool bBonus)
+        static long double CLootingMgr___listGetScore2_wrapper(struct CLootingMgr::_list* _this, bool bBonus)
         {
            return CLootingMgr___listGetScore2_user(_this, bBonus, CLootingMgr___listGetScore2_next);
         };
-        void CLootingMgr___listInit4_wrapper(struct CLootingMgr::_list* _this)
+        static void CLootingMgr___listInit4_wrapper(struct CLootingMgr::_list* _this)
         {
            CLootingMgr___listInit4_user(_this, CLootingMgr___listInit4_next);
         };
-        void CLootingMgr___listctor__list6_wrapper(struct CLootingMgr::_list* _this)
+        static void CLootingMgr___listctor__list6_wrapper(struct CLootingMgr::_list* _this)
         {
            CLootingMgr___listctor__list6_user(_this, CLootingMgr___listctor__list6_next);
         };
         
-        hook_record CLootingMgr_functions[] = {
+        static hook_record CLootingMgr_functions[] = {
         {   (LPVOID)0x14014b780L,
             (LPVOID *)&CLootingMgrctor_CLootingMgr2_user,
             (LPVOID *)&CLootingMgrctor_CLootingMgr2_next,
@@ -94,5 +94,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

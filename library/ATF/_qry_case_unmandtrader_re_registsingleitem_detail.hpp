@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_ptr _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_next(nullptr);
-        info::_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_clbk _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_user(nullptr);
-        info::_qry_case_unmandtrader_re_registsingleitemsize4_ptr _qry_case_unmandtrader_re_registsingleitemsize4_next(nullptr);
-        info::_qry_case_unmandtrader_re_registsingleitemsize4_clbk _qry_case_unmandtrader_re_registsingleitemsize4_user(nullptr);
+        static info::_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_ptr _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_next(nullptr);
+        static info::_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_clbk _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_user(nullptr);
+        static info::_qry_case_unmandtrader_re_registsingleitemsize4_ptr _qry_case_unmandtrader_re_registsingleitemsize4_next(nullptr);
+        static info::_qry_case_unmandtrader_re_registsingleitemsize4_clbk _qry_case_unmandtrader_re_registsingleitemsize4_user(nullptr);
         
-        void _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_wrapper(struct _qry_case_unmandtrader_re_registsingleitem* _this)
+        static void _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_wrapper(struct _qry_case_unmandtrader_re_registsingleitem* _this)
         {
            _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_user(_this, _qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_next);
         };
-        int _qry_case_unmandtrader_re_registsingleitemsize4_wrapper(struct _qry_case_unmandtrader_re_registsingleitem* _this)
+        static int _qry_case_unmandtrader_re_registsingleitemsize4_wrapper(struct _qry_case_unmandtrader_re_registsingleitem* _this)
         {
            return _qry_case_unmandtrader_re_registsingleitemsize4_user(_this, _qry_case_unmandtrader_re_registsingleitemsize4_next);
         };
         
-        hook_record _qry_case_unmandtrader_re_registsingleitem_functions[] = {
+        static hook_record _qry_case_unmandtrader_re_registsingleitem_functions[] = {
         {   (LPVOID)0x14035f7d0L,
             (LPVOID *)&_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_user,
             (LPVOID *)&_qry_case_unmandtrader_re_registsingleitemctor__qry_case_unmandtrader_re_registsingleitem2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

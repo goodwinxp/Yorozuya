@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_store_list_result_zoclctor__store_list_result_zocl2_ptr _store_list_result_zoclctor__store_list_result_zocl2_next(nullptr);
-        info::_store_list_result_zoclctor__store_list_result_zocl2_clbk _store_list_result_zoclctor__store_list_result_zocl2_user(nullptr);
-        info::_store_list_result_zoclsize4_ptr _store_list_result_zoclsize4_next(nullptr);
-        info::_store_list_result_zoclsize4_clbk _store_list_result_zoclsize4_user(nullptr);
+        static info::_store_list_result_zoclctor__store_list_result_zocl2_ptr _store_list_result_zoclctor__store_list_result_zocl2_next(nullptr);
+        static info::_store_list_result_zoclctor__store_list_result_zocl2_clbk _store_list_result_zoclctor__store_list_result_zocl2_user(nullptr);
+        static info::_store_list_result_zoclsize4_ptr _store_list_result_zoclsize4_next(nullptr);
+        static info::_store_list_result_zoclsize4_clbk _store_list_result_zoclsize4_user(nullptr);
         
-        void _store_list_result_zoclctor__store_list_result_zocl2_wrapper(struct _store_list_result_zocl* _this)
+        static void _store_list_result_zoclctor__store_list_result_zocl2_wrapper(struct _store_list_result_zocl* _this)
         {
            _store_list_result_zoclctor__store_list_result_zocl2_user(_this, _store_list_result_zoclctor__store_list_result_zocl2_next);
         };
-        int _store_list_result_zoclsize4_wrapper(struct _store_list_result_zocl* _this)
+        static int _store_list_result_zoclsize4_wrapper(struct _store_list_result_zocl* _this)
         {
            return _store_list_result_zoclsize4_user(_this, _store_list_result_zoclsize4_next);
         };
         
-        hook_record _store_list_result_zocl_functions[] = {
+        static hook_record _store_list_result_zocl_functions[] = {
         {   (LPVOID)0x1400ef8b0L,
             (LPVOID *)&_store_list_result_zoclctor__store_list_result_zocl2_user,
             (LPVOID *)&_store_list_result_zoclctor__store_list_result_zocl2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

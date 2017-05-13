@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_ptr _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_next(nullptr);
-        info::_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_clbk _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_user(nullptr);
-        info::_QUEST_CASH_OTHERinit4_ptr _QUEST_CASH_OTHERinit4_next(nullptr);
-        info::_QUEST_CASH_OTHERinit4_clbk _QUEST_CASH_OTHERinit4_user(nullptr);
-        info::_QUEST_CASH_OTHERisLoaded6_ptr _QUEST_CASH_OTHERisLoaded6_next(nullptr);
-        info::_QUEST_CASH_OTHERisLoaded6_clbk _QUEST_CASH_OTHERisLoaded6_user(nullptr);
+        static info::_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_ptr _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_next(nullptr);
+        static info::_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_clbk _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_user(nullptr);
+        static info::_QUEST_CASH_OTHERinit4_ptr _QUEST_CASH_OTHERinit4_next(nullptr);
+        static info::_QUEST_CASH_OTHERinit4_clbk _QUEST_CASH_OTHERinit4_user(nullptr);
+        static info::_QUEST_CASH_OTHERisLoaded6_ptr _QUEST_CASH_OTHERisLoaded6_next(nullptr);
+        static info::_QUEST_CASH_OTHERisLoaded6_clbk _QUEST_CASH_OTHERisLoaded6_user(nullptr);
         
-        void _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_wrapper(struct _QUEST_CASH_OTHER* _this)
+        static void _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_wrapper(struct _QUEST_CASH_OTHER* _this)
         {
            _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_user(_this, _QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_next);
         };
-        void _QUEST_CASH_OTHERinit4_wrapper(struct _QUEST_CASH_OTHER* _this)
+        static void _QUEST_CASH_OTHERinit4_wrapper(struct _QUEST_CASH_OTHER* _this)
         {
            _QUEST_CASH_OTHERinit4_user(_this, _QUEST_CASH_OTHERinit4_next);
         };
-        bool _QUEST_CASH_OTHERisLoaded6_wrapper(struct _QUEST_CASH_OTHER* _this)
+        static bool _QUEST_CASH_OTHERisLoaded6_wrapper(struct _QUEST_CASH_OTHER* _this)
         {
            return _QUEST_CASH_OTHERisLoaded6_user(_this, _QUEST_CASH_OTHERisLoaded6_next);
         };
         
-        hook_record _QUEST_CASH_OTHER_functions[] = {
+        static hook_record _QUEST_CASH_OTHER_functions[] = {
         {   (LPVOID)0x140284280L,
             (LPVOID *)&_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_user,
             (LPVOID *)&_QUEST_CASH_OTHERctor__QUEST_CASH_OTHER2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

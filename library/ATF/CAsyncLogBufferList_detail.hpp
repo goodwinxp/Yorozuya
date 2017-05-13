@@ -8,63 +8,63 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CAsyncLogBufferListctor_CAsyncLogBufferList2_ptr CAsyncLogBufferListctor_CAsyncLogBufferList2_next(nullptr);
-        info::CAsyncLogBufferListctor_CAsyncLogBufferList2_clbk CAsyncLogBufferListctor_CAsyncLogBufferList2_user(nullptr);
-        info::CAsyncLogBufferListGetBufferSize4_ptr CAsyncLogBufferListGetBufferSize4_next(nullptr);
-        info::CAsyncLogBufferListGetBufferSize4_clbk CAsyncLogBufferListGetBufferSize4_user(nullptr);
-        info::CAsyncLogBufferListGetEmptySize6_ptr CAsyncLogBufferListGetEmptySize6_next(nullptr);
-        info::CAsyncLogBufferListGetEmptySize6_clbk CAsyncLogBufferListGetEmptySize6_user(nullptr);
-        info::CAsyncLogBufferListGetProcCount8_ptr CAsyncLogBufferListGetProcCount8_next(nullptr);
-        info::CAsyncLogBufferListGetProcCount8_clbk CAsyncLogBufferListGetProcCount8_user(nullptr);
-        info::CAsyncLogBufferListInit10_ptr CAsyncLogBufferListInit10_next(nullptr);
-        info::CAsyncLogBufferListInit10_clbk CAsyncLogBufferListInit10_user(nullptr);
-        info::CAsyncLogBufferListLog12_ptr CAsyncLogBufferListLog12_next(nullptr);
-        info::CAsyncLogBufferListLog12_clbk CAsyncLogBufferListLog12_user(nullptr);
-        info::CAsyncLogBufferListProcWrite14_ptr CAsyncLogBufferListProcWrite14_next(nullptr);
-        info::CAsyncLogBufferListProcWrite14_clbk CAsyncLogBufferListProcWrite14_user(nullptr);
-        info::CAsyncLogBufferListWriteFile16_ptr CAsyncLogBufferListWriteFile16_next(nullptr);
-        info::CAsyncLogBufferListWriteFile16_clbk CAsyncLogBufferListWriteFile16_user(nullptr);
-        info::CAsyncLogBufferListdtor_CAsyncLogBufferList20_ptr CAsyncLogBufferListdtor_CAsyncLogBufferList20_next(nullptr);
-        info::CAsyncLogBufferListdtor_CAsyncLogBufferList20_clbk CAsyncLogBufferListdtor_CAsyncLogBufferList20_user(nullptr);
+        static info::CAsyncLogBufferListctor_CAsyncLogBufferList2_ptr CAsyncLogBufferListctor_CAsyncLogBufferList2_next(nullptr);
+        static info::CAsyncLogBufferListctor_CAsyncLogBufferList2_clbk CAsyncLogBufferListctor_CAsyncLogBufferList2_user(nullptr);
+        static info::CAsyncLogBufferListGetBufferSize4_ptr CAsyncLogBufferListGetBufferSize4_next(nullptr);
+        static info::CAsyncLogBufferListGetBufferSize4_clbk CAsyncLogBufferListGetBufferSize4_user(nullptr);
+        static info::CAsyncLogBufferListGetEmptySize6_ptr CAsyncLogBufferListGetEmptySize6_next(nullptr);
+        static info::CAsyncLogBufferListGetEmptySize6_clbk CAsyncLogBufferListGetEmptySize6_user(nullptr);
+        static info::CAsyncLogBufferListGetProcCount8_ptr CAsyncLogBufferListGetProcCount8_next(nullptr);
+        static info::CAsyncLogBufferListGetProcCount8_clbk CAsyncLogBufferListGetProcCount8_user(nullptr);
+        static info::CAsyncLogBufferListInit10_ptr CAsyncLogBufferListInit10_next(nullptr);
+        static info::CAsyncLogBufferListInit10_clbk CAsyncLogBufferListInit10_user(nullptr);
+        static info::CAsyncLogBufferListLog12_ptr CAsyncLogBufferListLog12_next(nullptr);
+        static info::CAsyncLogBufferListLog12_clbk CAsyncLogBufferListLog12_user(nullptr);
+        static info::CAsyncLogBufferListProcWrite14_ptr CAsyncLogBufferListProcWrite14_next(nullptr);
+        static info::CAsyncLogBufferListProcWrite14_clbk CAsyncLogBufferListProcWrite14_user(nullptr);
+        static info::CAsyncLogBufferListWriteFile16_ptr CAsyncLogBufferListWriteFile16_next(nullptr);
+        static info::CAsyncLogBufferListWriteFile16_clbk CAsyncLogBufferListWriteFile16_user(nullptr);
+        static info::CAsyncLogBufferListdtor_CAsyncLogBufferList20_ptr CAsyncLogBufferListdtor_CAsyncLogBufferList20_next(nullptr);
+        static info::CAsyncLogBufferListdtor_CAsyncLogBufferList20_clbk CAsyncLogBufferListdtor_CAsyncLogBufferList20_user(nullptr);
         
-        void CAsyncLogBufferListctor_CAsyncLogBufferList2_wrapper(struct CAsyncLogBufferList* _this)
+        static void CAsyncLogBufferListctor_CAsyncLogBufferList2_wrapper(struct CAsyncLogBufferList* _this)
         {
            CAsyncLogBufferListctor_CAsyncLogBufferList2_user(_this, CAsyncLogBufferListctor_CAsyncLogBufferList2_next);
         };
-        unsigned int CAsyncLogBufferListGetBufferSize4_wrapper(struct CAsyncLogBufferList* _this)
+        static unsigned int CAsyncLogBufferListGetBufferSize4_wrapper(struct CAsyncLogBufferList* _this)
         {
            return CAsyncLogBufferListGetBufferSize4_user(_this, CAsyncLogBufferListGetBufferSize4_next);
         };
-        int CAsyncLogBufferListGetEmptySize6_wrapper(struct CAsyncLogBufferList* _this)
+        static int CAsyncLogBufferListGetEmptySize6_wrapper(struct CAsyncLogBufferList* _this)
         {
            return CAsyncLogBufferListGetEmptySize6_user(_this, CAsyncLogBufferListGetEmptySize6_next);
         };
-        int CAsyncLogBufferListGetProcCount8_wrapper(struct CAsyncLogBufferList* _this)
+        static int CAsyncLogBufferListGetProcCount8_wrapper(struct CAsyncLogBufferList* _this)
         {
            return CAsyncLogBufferListGetProcCount8_user(_this, CAsyncLogBufferListGetProcCount8_next);
         };
-        bool CAsyncLogBufferListInit10_wrapper(struct CAsyncLogBufferList* _this, unsigned int uiMaxBufferCnt, unsigned int uiMaxBufferSize, struct CLogFile* logLoading)
+        static bool CAsyncLogBufferListInit10_wrapper(struct CAsyncLogBufferList* _this, unsigned int uiMaxBufferCnt, unsigned int uiMaxBufferSize, struct CLogFile* logLoading)
         {
            return CAsyncLogBufferListInit10_user(_this, uiMaxBufferCnt, uiMaxBufferSize, logLoading, CAsyncLogBufferListInit10_next);
         };
-        bool CAsyncLogBufferListLog12_wrapper(struct CAsyncLogBufferList* _this, char* pszFileName, char* szLog, int iLen)
+        static bool CAsyncLogBufferListLog12_wrapper(struct CAsyncLogBufferList* _this, char* pszFileName, char* szLog, int iLen)
         {
            return CAsyncLogBufferListLog12_user(_this, pszFileName, szLog, iLen, CAsyncLogBufferListLog12_next);
         };
-        void CAsyncLogBufferListProcWrite14_wrapper(struct CAsyncLogBufferList* _this)
+        static void CAsyncLogBufferListProcWrite14_wrapper(struct CAsyncLogBufferList* _this)
         {
            CAsyncLogBufferListProcWrite14_user(_this, CAsyncLogBufferListProcWrite14_next);
         };
-        void CAsyncLogBufferListWriteFile16_wrapper(char* pszFileName, int nLen, char* pszData)
+        static void CAsyncLogBufferListWriteFile16_wrapper(char* pszFileName, int nLen, char* pszData)
         {
            CAsyncLogBufferListWriteFile16_user(pszFileName, nLen, pszData, CAsyncLogBufferListWriteFile16_next);
         };
-        void CAsyncLogBufferListdtor_CAsyncLogBufferList20_wrapper(struct CAsyncLogBufferList* _this)
+        static void CAsyncLogBufferListdtor_CAsyncLogBufferList20_wrapper(struct CAsyncLogBufferList* _this)
         {
            CAsyncLogBufferListdtor_CAsyncLogBufferList20_user(_this, CAsyncLogBufferListdtor_CAsyncLogBufferList20_next);
         };
         
-        hook_record CAsyncLogBufferList_functions[] = {
+        static hook_record CAsyncLogBufferList_functions[] = {
         {   (LPVOID)0x1403bd460L,
             (LPVOID *)&CAsyncLogBufferListctor_CAsyncLogBufferList2_user,
             (LPVOID *)&CAsyncLogBufferListctor_CAsyncLogBufferList2_next,
@@ -113,5 +113,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

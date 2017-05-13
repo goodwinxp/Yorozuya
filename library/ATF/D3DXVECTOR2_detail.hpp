@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::D3DXVECTOR2ctor_D3DXVECTOR22_ptr D3DXVECTOR2ctor_D3DXVECTOR22_next(nullptr);
-        info::D3DXVECTOR2ctor_D3DXVECTOR22_clbk D3DXVECTOR2ctor_D3DXVECTOR22_user(nullptr);
+        static info::D3DXVECTOR2ctor_D3DXVECTOR22_ptr D3DXVECTOR2ctor_D3DXVECTOR22_next(nullptr);
+        static info::D3DXVECTOR2ctor_D3DXVECTOR22_clbk D3DXVECTOR2ctor_D3DXVECTOR22_user(nullptr);
         
-        void D3DXVECTOR2ctor_D3DXVECTOR22_wrapper(struct D3DXVECTOR2* _this)
+        static void D3DXVECTOR2ctor_D3DXVECTOR22_wrapper(struct D3DXVECTOR2* _this)
         {
            D3DXVECTOR2ctor_D3DXVECTOR22_user(_this, D3DXVECTOR2ctor_D3DXVECTOR22_next);
         };
         
-        hook_record D3DXVECTOR2_functions[] = {
+        static hook_record D3DXVECTOR2_functions[] = {
         {   (LPVOID)0x14012d1d0L,
             (LPVOID *)&D3DXVECTOR2ctor_D3DXVECTOR22_user,
             (LPVOID *)&D3DXVECTOR2ctor_D3DXVECTOR22_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

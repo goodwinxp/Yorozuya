@@ -8,579 +8,579 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_ptr CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_next(nullptr);
-        info::CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_clbk CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_user(nullptr);
-        info::CMgrAvatorItemHistoryClassUP4_ptr CMgrAvatorItemHistoryClassUP4_next(nullptr);
-        info::CMgrAvatorItemHistoryClassUP4_clbk CMgrAvatorItemHistoryClassUP4_user(nullptr);
-        info::CMgrAvatorItemHistoryClearLogBuffer6_ptr CMgrAvatorItemHistoryClearLogBuffer6_next(nullptr);
-        info::CMgrAvatorItemHistoryClearLogBuffer6_clbk CMgrAvatorItemHistoryClearLogBuffer6_user(nullptr);
-        info::CMgrAvatorItemHistoryGetNewFileName8_ptr CMgrAvatorItemHistoryGetNewFileName8_next(nullptr);
-        info::CMgrAvatorItemHistoryGetNewFileName8_clbk CMgrAvatorItemHistoryGetNewFileName8_user(nullptr);
-        info::CMgrAvatorItemHistoryGetTotalWaitSize10_ptr CMgrAvatorItemHistoryGetTotalWaitSize10_next(nullptr);
-        info::CMgrAvatorItemHistoryGetTotalWaitSize10_clbk CMgrAvatorItemHistoryGetTotalWaitSize10_user(nullptr);
-        info::CMgrAvatorItemHistoryIOThread12_ptr CMgrAvatorItemHistoryIOThread12_next(nullptr);
-        info::CMgrAvatorItemHistoryIOThread12_clbk CMgrAvatorItemHistoryIOThread12_user(nullptr);
-        info::CMgrAvatorItemHistoryInitClass14_ptr CMgrAvatorItemHistoryInitClass14_next(nullptr);
-        info::CMgrAvatorItemHistoryInitClass14_clbk CMgrAvatorItemHistoryInitClass14_user(nullptr);
-        info::CMgrAvatorItemHistoryOnLoop16_ptr CMgrAvatorItemHistoryOnLoop16_next(nullptr);
-        info::CMgrAvatorItemHistoryOnLoop16_clbk CMgrAvatorItemHistoryOnLoop16_user(nullptr);
-        info::CMgrAvatorItemHistoryWriteFile18_ptr CMgrAvatorItemHistoryWriteFile18_next(nullptr);
-        info::CMgrAvatorItemHistoryWriteFile18_clbk CMgrAvatorItemHistoryWriteFile18_user(nullptr);
-        info::CMgrAvatorItemHistoryWriteLog20_ptr CMgrAvatorItemHistoryWriteLog20_next(nullptr);
-        info::CMgrAvatorItemHistoryWriteLog20_clbk CMgrAvatorItemHistoryWriteLog20_user(nullptr);
-        info::CMgrAvatorItemHistoryadd_storage_fail22_ptr CMgrAvatorItemHistoryadd_storage_fail22_next(nullptr);
-        info::CMgrAvatorItemHistoryadd_storage_fail22_clbk CMgrAvatorItemHistoryadd_storage_fail22_user(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_buy24_ptr CMgrAvatorItemHistoryauto_trade_buy24_next(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_buy24_clbk CMgrAvatorItemHistoryauto_trade_buy24_user(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_login_sell26_ptr CMgrAvatorItemHistoryauto_trade_login_sell26_next(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_login_sell26_clbk CMgrAvatorItemHistoryauto_trade_login_sell26_user(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_sell28_ptr CMgrAvatorItemHistoryauto_trade_sell28_next(nullptr);
-        info::CMgrAvatorItemHistoryauto_trade_sell28_clbk CMgrAvatorItemHistoryauto_trade_sell28_user(nullptr);
-        info::CMgrAvatorItemHistoryback_trap_item30_ptr CMgrAvatorItemHistoryback_trap_item30_next(nullptr);
-        info::CMgrAvatorItemHistoryback_trap_item30_clbk CMgrAvatorItemHistoryback_trap_item30_user(nullptr);
-        info::CMgrAvatorItemHistorybuy_item32_ptr CMgrAvatorItemHistorybuy_item32_next(nullptr);
-        info::CMgrAvatorItemHistorybuy_item32_clbk CMgrAvatorItemHistorybuy_item32_user(nullptr);
-        info::CMgrAvatorItemHistorybuy_to_inven_cashitem34_ptr CMgrAvatorItemHistorybuy_to_inven_cashitem34_next(nullptr);
-        info::CMgrAvatorItemHistorybuy_to_inven_cashitem34_clbk CMgrAvatorItemHistorybuy_to_inven_cashitem34_user(nullptr);
-        info::CMgrAvatorItemHistorybuy_unit36_ptr CMgrAvatorItemHistorybuy_unit36_next(nullptr);
-        info::CMgrAvatorItemHistorybuy_unit36_clbk CMgrAvatorItemHistorybuy_unit36_user(nullptr);
-        info::CMgrAvatorItemHistorycash_item_use38_ptr CMgrAvatorItemHistorycash_item_use38_next(nullptr);
-        info::CMgrAvatorItemHistorycash_item_use38_clbk CMgrAvatorItemHistorycash_item_use38_user(nullptr);
-        info::CMgrAvatorItemHistorycashitem_del_from_inven40_ptr CMgrAvatorItemHistorycashitem_del_from_inven40_next(nullptr);
-        info::CMgrAvatorItemHistorycashitem_del_from_inven40_clbk CMgrAvatorItemHistorycashitem_del_from_inven40_user(nullptr);
-        info::CMgrAvatorItemHistorychar_copy42_ptr CMgrAvatorItemHistorychar_copy42_next(nullptr);
-        info::CMgrAvatorItemHistorychar_copy42_clbk CMgrAvatorItemHistorychar_copy42_user(nullptr);
-        info::CMgrAvatorItemHistorycheat_add_item44_ptr CMgrAvatorItemHistorycheat_add_item44_next(nullptr);
-        info::CMgrAvatorItemHistorycheat_add_item44_clbk CMgrAvatorItemHistorycheat_add_item44_user(nullptr);
-        info::CMgrAvatorItemHistorycheat_alter_money46_ptr CMgrAvatorItemHistorycheat_alter_money46_next(nullptr);
-        info::CMgrAvatorItemHistorycheat_alter_money46_clbk CMgrAvatorItemHistorycheat_alter_money46_user(nullptr);
-        info::CMgrAvatorItemHistorycheat_del_item48_ptr CMgrAvatorItemHistorycheat_del_item48_next(nullptr);
-        info::CMgrAvatorItemHistorycheat_del_item48_clbk CMgrAvatorItemHistorycheat_del_item48_user(nullptr);
-        info::CMgrAvatorItemHistorycheat_make_item_no_material50_ptr CMgrAvatorItemHistorycheat_make_item_no_material50_next(nullptr);
-        info::CMgrAvatorItemHistorycheat_make_item_no_material50_clbk CMgrAvatorItemHistorycheat_make_item_no_material50_user(nullptr);
-        info::CMgrAvatorItemHistoryclose52_ptr CMgrAvatorItemHistoryclose52_next(nullptr);
-        info::CMgrAvatorItemHistoryclose52_clbk CMgrAvatorItemHistoryclose52_user(nullptr);
-        info::CMgrAvatorItemHistorycombine_ex_reward_item54_ptr CMgrAvatorItemHistorycombine_ex_reward_item54_next(nullptr);
-        info::CMgrAvatorItemHistorycombine_ex_reward_item54_clbk CMgrAvatorItemHistorycombine_ex_reward_item54_user(nullptr);
-        info::CMgrAvatorItemHistorycombine_ex_using_material56_ptr CMgrAvatorItemHistorycombine_ex_using_material56_next(nullptr);
-        info::CMgrAvatorItemHistorycombine_ex_using_material56_clbk CMgrAvatorItemHistorycombine_ex_using_material56_user(nullptr);
-        info::CMgrAvatorItemHistorycombine_item58_ptr CMgrAvatorItemHistorycombine_item58_next(nullptr);
-        info::CMgrAvatorItemHistorycombine_item58_clbk CMgrAvatorItemHistorycombine_item58_user(nullptr);
-        info::CMgrAvatorItemHistoryconsume_del_item60_ptr CMgrAvatorItemHistoryconsume_del_item60_next(nullptr);
-        info::CMgrAvatorItemHistoryconsume_del_item60_clbk CMgrAvatorItemHistoryconsume_del_item60_user(nullptr);
-        info::CMgrAvatorItemHistorycoupon_use_buy_item62_ptr CMgrAvatorItemHistorycoupon_use_buy_item62_next(nullptr);
-        info::CMgrAvatorItemHistorycoupon_use_buy_item62_clbk CMgrAvatorItemHistorycoupon_use_buy_item62_user(nullptr);
-        info::CMgrAvatorItemHistorycut_clear_item64_ptr CMgrAvatorItemHistorycut_clear_item64_next(nullptr);
-        info::CMgrAvatorItemHistorycut_clear_item64_clbk CMgrAvatorItemHistorycut_clear_item64_user(nullptr);
-        info::CMgrAvatorItemHistorycut_item66_ptr CMgrAvatorItemHistorycut_item66_next(nullptr);
-        info::CMgrAvatorItemHistorycut_item66_clbk CMgrAvatorItemHistorycut_item66_user(nullptr);
-        info::CMgrAvatorItemHistorydelete_npc_quest_item68_ptr CMgrAvatorItemHistorydelete_npc_quest_item68_next(nullptr);
-        info::CMgrAvatorItemHistorydelete_npc_quest_item68_clbk CMgrAvatorItemHistorydelete_npc_quest_item68_user(nullptr);
-        info::CMgrAvatorItemHistorydestroy_unit70_ptr CMgrAvatorItemHistorydestroy_unit70_next(nullptr);
-        info::CMgrAvatorItemHistorydestroy_unit70_clbk CMgrAvatorItemHistorydestroy_unit70_user(nullptr);
-        info::CMgrAvatorItemHistoryexchange_item72_ptr CMgrAvatorItemHistoryexchange_item72_next(nullptr);
-        info::CMgrAvatorItemHistoryexchange_item72_clbk CMgrAvatorItemHistoryexchange_item72_user(nullptr);
-        info::CMgrAvatorItemHistoryexchange_money74_ptr CMgrAvatorItemHistoryexchange_money74_next(nullptr);
-        info::CMgrAvatorItemHistoryexchange_money74_clbk CMgrAvatorItemHistoryexchange_money74_user(nullptr);
-        info::CMgrAvatorItemHistoryexchange_pvp_gold76_ptr CMgrAvatorItemHistoryexchange_pvp_gold76_next(nullptr);
-        info::CMgrAvatorItemHistoryexchange_pvp_gold76_clbk CMgrAvatorItemHistoryexchange_pvp_gold76_user(nullptr);
-        info::CMgrAvatorItemHistoryexp_prof_log78_ptr CMgrAvatorItemHistoryexp_prof_log78_next(nullptr);
-        info::CMgrAvatorItemHistoryexp_prof_log78_clbk CMgrAvatorItemHistoryexp_prof_log78_user(nullptr);
-        info::CMgrAvatorItemHistorygrade_down_item80_ptr CMgrAvatorItemHistorygrade_down_item80_next(nullptr);
-        info::CMgrAvatorItemHistorygrade_down_item80_clbk CMgrAvatorItemHistorygrade_down_item80_user(nullptr);
-        info::CMgrAvatorItemHistorygrade_up_item82_ptr CMgrAvatorItemHistorygrade_up_item82_next(nullptr);
-        info::CMgrAvatorItemHistorygrade_up_item82_clbk CMgrAvatorItemHistorygrade_up_item82_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_est_money84_ptr CMgrAvatorItemHistoryguild_est_money84_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_est_money84_clbk CMgrAvatorItemHistoryguild_est_money84_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_est_money_rollback86_ptr CMgrAvatorItemHistoryguild_est_money_rollback86_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_est_money_rollback86_clbk CMgrAvatorItemHistoryguild_est_money_rollback86_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_pop_money88_ptr CMgrAvatorItemHistoryguild_pop_money88_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_pop_money88_clbk CMgrAvatorItemHistoryguild_pop_money88_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_pop_money_rollback90_ptr CMgrAvatorItemHistoryguild_pop_money_rollback90_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_pop_money_rollback90_clbk CMgrAvatorItemHistoryguild_pop_money_rollback90_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_push_money92_ptr CMgrAvatorItemHistoryguild_push_money92_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_push_money92_clbk CMgrAvatorItemHistoryguild_push_money92_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_push_money_rollback94_ptr CMgrAvatorItemHistoryguild_push_money_rollback94_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_push_money_rollback94_clbk CMgrAvatorItemHistoryguild_push_money_rollback94_user(nullptr);
-        info::CMgrAvatorItemHistoryguild_suggest_change_taxrate96_ptr CMgrAvatorItemHistoryguild_suggest_change_taxrate96_next(nullptr);
-        info::CMgrAvatorItemHistoryguild_suggest_change_taxrate96_clbk CMgrAvatorItemHistoryguild_suggest_change_taxrate96_user(nullptr);
-        info::CMgrAvatorItemHistoryhave_auto_item98_ptr CMgrAvatorItemHistoryhave_auto_item98_next(nullptr);
-        info::CMgrAvatorItemHistoryhave_auto_item98_clbk CMgrAvatorItemHistoryhave_auto_item98_user(nullptr);
-        info::CMgrAvatorItemHistoryhave_item100_ptr CMgrAvatorItemHistoryhave_item100_next(nullptr);
-        info::CMgrAvatorItemHistoryhave_item100_clbk CMgrAvatorItemHistoryhave_item100_user(nullptr);
-        info::CMgrAvatorItemHistoryhave_item_close102_ptr CMgrAvatorItemHistoryhave_item_close102_next(nullptr);
-        info::CMgrAvatorItemHistoryhave_item_close102_clbk CMgrAvatorItemHistoryhave_item_close102_user(nullptr);
-        info::CMgrAvatorItemHistoryitem_serial_full104_ptr CMgrAvatorItemHistoryitem_serial_full104_next(nullptr);
-        info::CMgrAvatorItemHistoryitem_serial_full104_clbk CMgrAvatorItemHistoryitem_serial_full104_user(nullptr);
-        info::CMgrAvatorItemHistorylenditem_del_from_inven106_ptr CMgrAvatorItemHistorylenditem_del_from_inven106_next(nullptr);
-        info::CMgrAvatorItemHistorylenditem_del_from_inven106_clbk CMgrAvatorItemHistorylenditem_del_from_inven106_user(nullptr);
-        info::CMgrAvatorItemHistorylogin_cancel_auto_trade108_ptr CMgrAvatorItemHistorylogin_cancel_auto_trade108_next(nullptr);
-        info::CMgrAvatorItemHistorylogin_cancel_auto_trade108_clbk CMgrAvatorItemHistorylogin_cancel_auto_trade108_user(nullptr);
-        info::CMgrAvatorItemHistorymake_item110_ptr CMgrAvatorItemHistorymake_item110_next(nullptr);
-        info::CMgrAvatorItemHistorymake_item110_clbk CMgrAvatorItemHistorymake_item110_user(nullptr);
-        info::CMgrAvatorItemHistorymastery_change_jade112_ptr CMgrAvatorItemHistorymastery_change_jade112_next(nullptr);
-        info::CMgrAvatorItemHistorymastery_change_jade112_clbk CMgrAvatorItemHistorymastery_change_jade112_user(nullptr);
-        info::CMgrAvatorItemHistorypatriarch_push_money114_ptr CMgrAvatorItemHistorypatriarch_push_money114_next(nullptr);
-        info::CMgrAvatorItemHistorypatriarch_push_money114_clbk CMgrAvatorItemHistorypatriarch_push_money114_user(nullptr);
-        info::CMgrAvatorItemHistorypay_money116_ptr CMgrAvatorItemHistorypay_money116_next(nullptr);
-        info::CMgrAvatorItemHistorypay_money116_clbk CMgrAvatorItemHistorypay_money116_user(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_install118_ptr CMgrAvatorItemHistorypersonal_amine_install118_next(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_install118_clbk CMgrAvatorItemHistorypersonal_amine_install118_user(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_itemlog120_ptr CMgrAvatorItemHistorypersonal_amine_itemlog120_next(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_itemlog120_clbk CMgrAvatorItemHistorypersonal_amine_itemlog120_user(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_stop122_ptr CMgrAvatorItemHistorypersonal_amine_stop122_next(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_stop122_clbk CMgrAvatorItemHistorypersonal_amine_stop122_user(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_uninstall124_ptr CMgrAvatorItemHistorypersonal_amine_uninstall124_next(nullptr);
-        info::CMgrAvatorItemHistorypersonal_amine_uninstall124_clbk CMgrAvatorItemHistorypersonal_amine_uninstall124_user(nullptr);
-        info::CMgrAvatorItemHistorypost_delete126_ptr CMgrAvatorItemHistorypost_delete126_next(nullptr);
-        info::CMgrAvatorItemHistorypost_delete126_clbk CMgrAvatorItemHistorypost_delete126_user(nullptr);
-        info::CMgrAvatorItemHistorypost_getpresent128_ptr CMgrAvatorItemHistorypost_getpresent128_next(nullptr);
-        info::CMgrAvatorItemHistorypost_getpresent128_clbk CMgrAvatorItemHistorypost_getpresent128_user(nullptr);
-        info::CMgrAvatorItemHistorypost_receive130_ptr CMgrAvatorItemHistorypost_receive130_next(nullptr);
-        info::CMgrAvatorItemHistorypost_receive130_clbk CMgrAvatorItemHistorypost_receive130_user(nullptr);
-        info::CMgrAvatorItemHistorypost_return132_ptr CMgrAvatorItemHistorypost_return132_next(nullptr);
-        info::CMgrAvatorItemHistorypost_return132_clbk CMgrAvatorItemHistorypost_return132_user(nullptr);
-        info::CMgrAvatorItemHistorypost_returnreceive134_ptr CMgrAvatorItemHistorypost_returnreceive134_next(nullptr);
-        info::CMgrAvatorItemHistorypost_returnreceive134_clbk CMgrAvatorItemHistorypost_returnreceive134_user(nullptr);
-        info::CMgrAvatorItemHistorypost_senditem136_ptr CMgrAvatorItemHistorypost_senditem136_next(nullptr);
-        info::CMgrAvatorItemHistorypost_senditem136_clbk CMgrAvatorItemHistorypost_senditem136_user(nullptr);
-        info::CMgrAvatorItemHistorypost_storage138_ptr CMgrAvatorItemHistorypost_storage138_next(nullptr);
-        info::CMgrAvatorItemHistorypost_storage138_clbk CMgrAvatorItemHistorypost_storage138_user(nullptr);
-        info::CMgrAvatorItemHistoryprice_auto_trade140_ptr CMgrAvatorItemHistoryprice_auto_trade140_next(nullptr);
-        info::CMgrAvatorItemHistoryprice_auto_trade140_clbk CMgrAvatorItemHistoryprice_auto_trade140_user(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_candidate142_ptr CMgrAvatorItemHistoryraceboss_candidate142_next(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_candidate142_clbk CMgrAvatorItemHistoryraceboss_candidate142_user(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_giveback144_ptr CMgrAvatorItemHistoryraceboss_giveback144_next(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_giveback144_clbk CMgrAvatorItemHistoryraceboss_giveback144_user(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_vote146_ptr CMgrAvatorItemHistoryraceboss_vote146_next(nullptr);
-        info::CMgrAvatorItemHistoryraceboss_vote146_clbk CMgrAvatorItemHistoryraceboss_vote146_user(nullptr);
-        info::CMgrAvatorItemHistoryre_reg_auto_trade148_ptr CMgrAvatorItemHistoryre_reg_auto_trade148_next(nullptr);
-        info::CMgrAvatorItemHistoryre_reg_auto_trade148_clbk CMgrAvatorItemHistoryre_reg_auto_trade148_user(nullptr);
-        info::CMgrAvatorItemHistoryread_cashamount150_ptr CMgrAvatorItemHistoryread_cashamount150_next(nullptr);
-        info::CMgrAvatorItemHistoryread_cashamount150_clbk CMgrAvatorItemHistoryread_cashamount150_user(nullptr);
-        info::CMgrAvatorItemHistoryreg_auto_trade152_ptr CMgrAvatorItemHistoryreg_auto_trade152_next(nullptr);
-        info::CMgrAvatorItemHistoryreg_auto_trade152_clbk CMgrAvatorItemHistoryreg_auto_trade152_user(nullptr);
-        info::CMgrAvatorItemHistoryreturn_post_storage154_ptr CMgrAvatorItemHistoryreturn_post_storage154_next(nullptr);
-        info::CMgrAvatorItemHistoryreturn_post_storage154_clbk CMgrAvatorItemHistoryreturn_post_storage154_user(nullptr);
-        info::CMgrAvatorItemHistoryreward_add_item156_ptr CMgrAvatorItemHistoryreward_add_item156_next(nullptr);
-        info::CMgrAvatorItemHistoryreward_add_item156_clbk CMgrAvatorItemHistoryreward_add_item156_user(nullptr);
-        info::CMgrAvatorItemHistoryreward_add_money158_ptr CMgrAvatorItemHistoryreward_add_money158_next(nullptr);
-        info::CMgrAvatorItemHistoryreward_add_money158_clbk CMgrAvatorItemHistoryreward_add_money158_user(nullptr);
-        info::CMgrAvatorItemHistoryrollback_cashitem160_ptr CMgrAvatorItemHistoryrollback_cashitem160_next(nullptr);
-        info::CMgrAvatorItemHistoryrollback_cashitem160_clbk CMgrAvatorItemHistoryrollback_cashitem160_user(nullptr);
-        info::CMgrAvatorItemHistoryself_cancel_auto_trade162_ptr CMgrAvatorItemHistoryself_cancel_auto_trade162_next(nullptr);
-        info::CMgrAvatorItemHistoryself_cancel_auto_trade162_clbk CMgrAvatorItemHistoryself_cancel_auto_trade162_user(nullptr);
-        info::CMgrAvatorItemHistorysell_item164_ptr CMgrAvatorItemHistorysell_item164_next(nullptr);
-        info::CMgrAvatorItemHistorysell_item164_clbk CMgrAvatorItemHistorysell_item164_user(nullptr);
-        info::CMgrAvatorItemHistorysell_unit166_ptr CMgrAvatorItemHistorysell_unit166_next(nullptr);
-        info::CMgrAvatorItemHistorysell_unit166_clbk CMgrAvatorItemHistorysell_unit166_user(nullptr);
-        info::CMgrAvatorItemHistorytake_ground_item168_ptr CMgrAvatorItemHistorytake_ground_item168_next(nullptr);
-        info::CMgrAvatorItemHistorytake_ground_item168_clbk CMgrAvatorItemHistorytake_ground_item168_user(nullptr);
-        info::CMgrAvatorItemHistorythrow_ground_item170_ptr CMgrAvatorItemHistorythrow_ground_item170_next(nullptr);
-        info::CMgrAvatorItemHistorythrow_ground_item170_clbk CMgrAvatorItemHistorythrow_ground_item170_user(nullptr);
-        info::CMgrAvatorItemHistorytime_jade_effect_log172_ptr CMgrAvatorItemHistorytime_jade_effect_log172_next(nullptr);
-        info::CMgrAvatorItemHistorytime_jade_effect_log172_clbk CMgrAvatorItemHistorytime_jade_effect_log172_user(nullptr);
-        info::CMgrAvatorItemHistorytime_out_cancel_auto_trade174_ptr CMgrAvatorItemHistorytime_out_cancel_auto_trade174_next(nullptr);
-        info::CMgrAvatorItemHistorytime_out_cancel_auto_trade174_clbk CMgrAvatorItemHistorytime_out_cancel_auto_trade174_user(nullptr);
-        info::CMgrAvatorItemHistorytrade176_ptr CMgrAvatorItemHistorytrade176_next(nullptr);
-        info::CMgrAvatorItemHistorytrade176_clbk CMgrAvatorItemHistorytrade176_user(nullptr);
-        info::CMgrAvatorItemHistorytrans_ground_item178_ptr CMgrAvatorItemHistorytrans_ground_item178_next(nullptr);
-        info::CMgrAvatorItemHistorytrans_ground_item178_clbk CMgrAvatorItemHistorytrans_ground_item178_user(nullptr);
-        info::CMgrAvatorItemHistorytrunk_io_item180_ptr CMgrAvatorItemHistorytrunk_io_item180_next(nullptr);
-        info::CMgrAvatorItemHistorytrunk_io_item180_clbk CMgrAvatorItemHistorytrunk_io_item180_user(nullptr);
-        info::CMgrAvatorItemHistorytrunk_io_money182_ptr CMgrAvatorItemHistorytrunk_io_money182_next(nullptr);
-        info::CMgrAvatorItemHistorytrunk_io_money182_clbk CMgrAvatorItemHistorytrunk_io_money182_user(nullptr);
-        info::CMgrAvatorItemHistorytrunk_swap_item184_ptr CMgrAvatorItemHistorytrunk_swap_item184_next(nullptr);
-        info::CMgrAvatorItemHistorytrunk_swap_item184_clbk CMgrAvatorItemHistorytrunk_swap_item184_user(nullptr);
-        info::CMgrAvatorItemHistorytuning_unit186_ptr CMgrAvatorItemHistorytuning_unit186_next(nullptr);
-        info::CMgrAvatorItemHistorytuning_unit186_clbk CMgrAvatorItemHistorytuning_unit186_user(nullptr);
-        info::CMgrAvatorItemHistoryused_cash188_ptr CMgrAvatorItemHistoryused_cash188_next(nullptr);
-        info::CMgrAvatorItemHistoryused_cash188_clbk CMgrAvatorItemHistoryused_cash188_user(nullptr);
-        info::CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_ptr CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_next(nullptr);
-        info::CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_clbk CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_user(nullptr);
+        static info::CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_ptr CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_next(nullptr);
+        static info::CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_clbk CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_user(nullptr);
+        static info::CMgrAvatorItemHistoryClassUP4_ptr CMgrAvatorItemHistoryClassUP4_next(nullptr);
+        static info::CMgrAvatorItemHistoryClassUP4_clbk CMgrAvatorItemHistoryClassUP4_user(nullptr);
+        static info::CMgrAvatorItemHistoryClearLogBuffer6_ptr CMgrAvatorItemHistoryClearLogBuffer6_next(nullptr);
+        static info::CMgrAvatorItemHistoryClearLogBuffer6_clbk CMgrAvatorItemHistoryClearLogBuffer6_user(nullptr);
+        static info::CMgrAvatorItemHistoryGetNewFileName8_ptr CMgrAvatorItemHistoryGetNewFileName8_next(nullptr);
+        static info::CMgrAvatorItemHistoryGetNewFileName8_clbk CMgrAvatorItemHistoryGetNewFileName8_user(nullptr);
+        static info::CMgrAvatorItemHistoryGetTotalWaitSize10_ptr CMgrAvatorItemHistoryGetTotalWaitSize10_next(nullptr);
+        static info::CMgrAvatorItemHistoryGetTotalWaitSize10_clbk CMgrAvatorItemHistoryGetTotalWaitSize10_user(nullptr);
+        static info::CMgrAvatorItemHistoryIOThread12_ptr CMgrAvatorItemHistoryIOThread12_next(nullptr);
+        static info::CMgrAvatorItemHistoryIOThread12_clbk CMgrAvatorItemHistoryIOThread12_user(nullptr);
+        static info::CMgrAvatorItemHistoryInitClass14_ptr CMgrAvatorItemHistoryInitClass14_next(nullptr);
+        static info::CMgrAvatorItemHistoryInitClass14_clbk CMgrAvatorItemHistoryInitClass14_user(nullptr);
+        static info::CMgrAvatorItemHistoryOnLoop16_ptr CMgrAvatorItemHistoryOnLoop16_next(nullptr);
+        static info::CMgrAvatorItemHistoryOnLoop16_clbk CMgrAvatorItemHistoryOnLoop16_user(nullptr);
+        static info::CMgrAvatorItemHistoryWriteFile18_ptr CMgrAvatorItemHistoryWriteFile18_next(nullptr);
+        static info::CMgrAvatorItemHistoryWriteFile18_clbk CMgrAvatorItemHistoryWriteFile18_user(nullptr);
+        static info::CMgrAvatorItemHistoryWriteLog20_ptr CMgrAvatorItemHistoryWriteLog20_next(nullptr);
+        static info::CMgrAvatorItemHistoryWriteLog20_clbk CMgrAvatorItemHistoryWriteLog20_user(nullptr);
+        static info::CMgrAvatorItemHistoryadd_storage_fail22_ptr CMgrAvatorItemHistoryadd_storage_fail22_next(nullptr);
+        static info::CMgrAvatorItemHistoryadd_storage_fail22_clbk CMgrAvatorItemHistoryadd_storage_fail22_user(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_buy24_ptr CMgrAvatorItemHistoryauto_trade_buy24_next(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_buy24_clbk CMgrAvatorItemHistoryauto_trade_buy24_user(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_login_sell26_ptr CMgrAvatorItemHistoryauto_trade_login_sell26_next(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_login_sell26_clbk CMgrAvatorItemHistoryauto_trade_login_sell26_user(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_sell28_ptr CMgrAvatorItemHistoryauto_trade_sell28_next(nullptr);
+        static info::CMgrAvatorItemHistoryauto_trade_sell28_clbk CMgrAvatorItemHistoryauto_trade_sell28_user(nullptr);
+        static info::CMgrAvatorItemHistoryback_trap_item30_ptr CMgrAvatorItemHistoryback_trap_item30_next(nullptr);
+        static info::CMgrAvatorItemHistoryback_trap_item30_clbk CMgrAvatorItemHistoryback_trap_item30_user(nullptr);
+        static info::CMgrAvatorItemHistorybuy_item32_ptr CMgrAvatorItemHistorybuy_item32_next(nullptr);
+        static info::CMgrAvatorItemHistorybuy_item32_clbk CMgrAvatorItemHistorybuy_item32_user(nullptr);
+        static info::CMgrAvatorItemHistorybuy_to_inven_cashitem34_ptr CMgrAvatorItemHistorybuy_to_inven_cashitem34_next(nullptr);
+        static info::CMgrAvatorItemHistorybuy_to_inven_cashitem34_clbk CMgrAvatorItemHistorybuy_to_inven_cashitem34_user(nullptr);
+        static info::CMgrAvatorItemHistorybuy_unit36_ptr CMgrAvatorItemHistorybuy_unit36_next(nullptr);
+        static info::CMgrAvatorItemHistorybuy_unit36_clbk CMgrAvatorItemHistorybuy_unit36_user(nullptr);
+        static info::CMgrAvatorItemHistorycash_item_use38_ptr CMgrAvatorItemHistorycash_item_use38_next(nullptr);
+        static info::CMgrAvatorItemHistorycash_item_use38_clbk CMgrAvatorItemHistorycash_item_use38_user(nullptr);
+        static info::CMgrAvatorItemHistorycashitem_del_from_inven40_ptr CMgrAvatorItemHistorycashitem_del_from_inven40_next(nullptr);
+        static info::CMgrAvatorItemHistorycashitem_del_from_inven40_clbk CMgrAvatorItemHistorycashitem_del_from_inven40_user(nullptr);
+        static info::CMgrAvatorItemHistorychar_copy42_ptr CMgrAvatorItemHistorychar_copy42_next(nullptr);
+        static info::CMgrAvatorItemHistorychar_copy42_clbk CMgrAvatorItemHistorychar_copy42_user(nullptr);
+        static info::CMgrAvatorItemHistorycheat_add_item44_ptr CMgrAvatorItemHistorycheat_add_item44_next(nullptr);
+        static info::CMgrAvatorItemHistorycheat_add_item44_clbk CMgrAvatorItemHistorycheat_add_item44_user(nullptr);
+        static info::CMgrAvatorItemHistorycheat_alter_money46_ptr CMgrAvatorItemHistorycheat_alter_money46_next(nullptr);
+        static info::CMgrAvatorItemHistorycheat_alter_money46_clbk CMgrAvatorItemHistorycheat_alter_money46_user(nullptr);
+        static info::CMgrAvatorItemHistorycheat_del_item48_ptr CMgrAvatorItemHistorycheat_del_item48_next(nullptr);
+        static info::CMgrAvatorItemHistorycheat_del_item48_clbk CMgrAvatorItemHistorycheat_del_item48_user(nullptr);
+        static info::CMgrAvatorItemHistorycheat_make_item_no_material50_ptr CMgrAvatorItemHistorycheat_make_item_no_material50_next(nullptr);
+        static info::CMgrAvatorItemHistorycheat_make_item_no_material50_clbk CMgrAvatorItemHistorycheat_make_item_no_material50_user(nullptr);
+        static info::CMgrAvatorItemHistoryclose52_ptr CMgrAvatorItemHistoryclose52_next(nullptr);
+        static info::CMgrAvatorItemHistoryclose52_clbk CMgrAvatorItemHistoryclose52_user(nullptr);
+        static info::CMgrAvatorItemHistorycombine_ex_reward_item54_ptr CMgrAvatorItemHistorycombine_ex_reward_item54_next(nullptr);
+        static info::CMgrAvatorItemHistorycombine_ex_reward_item54_clbk CMgrAvatorItemHistorycombine_ex_reward_item54_user(nullptr);
+        static info::CMgrAvatorItemHistorycombine_ex_using_material56_ptr CMgrAvatorItemHistorycombine_ex_using_material56_next(nullptr);
+        static info::CMgrAvatorItemHistorycombine_ex_using_material56_clbk CMgrAvatorItemHistorycombine_ex_using_material56_user(nullptr);
+        static info::CMgrAvatorItemHistorycombine_item58_ptr CMgrAvatorItemHistorycombine_item58_next(nullptr);
+        static info::CMgrAvatorItemHistorycombine_item58_clbk CMgrAvatorItemHistorycombine_item58_user(nullptr);
+        static info::CMgrAvatorItemHistoryconsume_del_item60_ptr CMgrAvatorItemHistoryconsume_del_item60_next(nullptr);
+        static info::CMgrAvatorItemHistoryconsume_del_item60_clbk CMgrAvatorItemHistoryconsume_del_item60_user(nullptr);
+        static info::CMgrAvatorItemHistorycoupon_use_buy_item62_ptr CMgrAvatorItemHistorycoupon_use_buy_item62_next(nullptr);
+        static info::CMgrAvatorItemHistorycoupon_use_buy_item62_clbk CMgrAvatorItemHistorycoupon_use_buy_item62_user(nullptr);
+        static info::CMgrAvatorItemHistorycut_clear_item64_ptr CMgrAvatorItemHistorycut_clear_item64_next(nullptr);
+        static info::CMgrAvatorItemHistorycut_clear_item64_clbk CMgrAvatorItemHistorycut_clear_item64_user(nullptr);
+        static info::CMgrAvatorItemHistorycut_item66_ptr CMgrAvatorItemHistorycut_item66_next(nullptr);
+        static info::CMgrAvatorItemHistorycut_item66_clbk CMgrAvatorItemHistorycut_item66_user(nullptr);
+        static info::CMgrAvatorItemHistorydelete_npc_quest_item68_ptr CMgrAvatorItemHistorydelete_npc_quest_item68_next(nullptr);
+        static info::CMgrAvatorItemHistorydelete_npc_quest_item68_clbk CMgrAvatorItemHistorydelete_npc_quest_item68_user(nullptr);
+        static info::CMgrAvatorItemHistorydestroy_unit70_ptr CMgrAvatorItemHistorydestroy_unit70_next(nullptr);
+        static info::CMgrAvatorItemHistorydestroy_unit70_clbk CMgrAvatorItemHistorydestroy_unit70_user(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_item72_ptr CMgrAvatorItemHistoryexchange_item72_next(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_item72_clbk CMgrAvatorItemHistoryexchange_item72_user(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_money74_ptr CMgrAvatorItemHistoryexchange_money74_next(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_money74_clbk CMgrAvatorItemHistoryexchange_money74_user(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_pvp_gold76_ptr CMgrAvatorItemHistoryexchange_pvp_gold76_next(nullptr);
+        static info::CMgrAvatorItemHistoryexchange_pvp_gold76_clbk CMgrAvatorItemHistoryexchange_pvp_gold76_user(nullptr);
+        static info::CMgrAvatorItemHistoryexp_prof_log78_ptr CMgrAvatorItemHistoryexp_prof_log78_next(nullptr);
+        static info::CMgrAvatorItemHistoryexp_prof_log78_clbk CMgrAvatorItemHistoryexp_prof_log78_user(nullptr);
+        static info::CMgrAvatorItemHistorygrade_down_item80_ptr CMgrAvatorItemHistorygrade_down_item80_next(nullptr);
+        static info::CMgrAvatorItemHistorygrade_down_item80_clbk CMgrAvatorItemHistorygrade_down_item80_user(nullptr);
+        static info::CMgrAvatorItemHistorygrade_up_item82_ptr CMgrAvatorItemHistorygrade_up_item82_next(nullptr);
+        static info::CMgrAvatorItemHistorygrade_up_item82_clbk CMgrAvatorItemHistorygrade_up_item82_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_est_money84_ptr CMgrAvatorItemHistoryguild_est_money84_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_est_money84_clbk CMgrAvatorItemHistoryguild_est_money84_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_est_money_rollback86_ptr CMgrAvatorItemHistoryguild_est_money_rollback86_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_est_money_rollback86_clbk CMgrAvatorItemHistoryguild_est_money_rollback86_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_pop_money88_ptr CMgrAvatorItemHistoryguild_pop_money88_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_pop_money88_clbk CMgrAvatorItemHistoryguild_pop_money88_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_pop_money_rollback90_ptr CMgrAvatorItemHistoryguild_pop_money_rollback90_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_pop_money_rollback90_clbk CMgrAvatorItemHistoryguild_pop_money_rollback90_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_push_money92_ptr CMgrAvatorItemHistoryguild_push_money92_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_push_money92_clbk CMgrAvatorItemHistoryguild_push_money92_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_push_money_rollback94_ptr CMgrAvatorItemHistoryguild_push_money_rollback94_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_push_money_rollback94_clbk CMgrAvatorItemHistoryguild_push_money_rollback94_user(nullptr);
+        static info::CMgrAvatorItemHistoryguild_suggest_change_taxrate96_ptr CMgrAvatorItemHistoryguild_suggest_change_taxrate96_next(nullptr);
+        static info::CMgrAvatorItemHistoryguild_suggest_change_taxrate96_clbk CMgrAvatorItemHistoryguild_suggest_change_taxrate96_user(nullptr);
+        static info::CMgrAvatorItemHistoryhave_auto_item98_ptr CMgrAvatorItemHistoryhave_auto_item98_next(nullptr);
+        static info::CMgrAvatorItemHistoryhave_auto_item98_clbk CMgrAvatorItemHistoryhave_auto_item98_user(nullptr);
+        static info::CMgrAvatorItemHistoryhave_item100_ptr CMgrAvatorItemHistoryhave_item100_next(nullptr);
+        static info::CMgrAvatorItemHistoryhave_item100_clbk CMgrAvatorItemHistoryhave_item100_user(nullptr);
+        static info::CMgrAvatorItemHistoryhave_item_close102_ptr CMgrAvatorItemHistoryhave_item_close102_next(nullptr);
+        static info::CMgrAvatorItemHistoryhave_item_close102_clbk CMgrAvatorItemHistoryhave_item_close102_user(nullptr);
+        static info::CMgrAvatorItemHistoryitem_serial_full104_ptr CMgrAvatorItemHistoryitem_serial_full104_next(nullptr);
+        static info::CMgrAvatorItemHistoryitem_serial_full104_clbk CMgrAvatorItemHistoryitem_serial_full104_user(nullptr);
+        static info::CMgrAvatorItemHistorylenditem_del_from_inven106_ptr CMgrAvatorItemHistorylenditem_del_from_inven106_next(nullptr);
+        static info::CMgrAvatorItemHistorylenditem_del_from_inven106_clbk CMgrAvatorItemHistorylenditem_del_from_inven106_user(nullptr);
+        static info::CMgrAvatorItemHistorylogin_cancel_auto_trade108_ptr CMgrAvatorItemHistorylogin_cancel_auto_trade108_next(nullptr);
+        static info::CMgrAvatorItemHistorylogin_cancel_auto_trade108_clbk CMgrAvatorItemHistorylogin_cancel_auto_trade108_user(nullptr);
+        static info::CMgrAvatorItemHistorymake_item110_ptr CMgrAvatorItemHistorymake_item110_next(nullptr);
+        static info::CMgrAvatorItemHistorymake_item110_clbk CMgrAvatorItemHistorymake_item110_user(nullptr);
+        static info::CMgrAvatorItemHistorymastery_change_jade112_ptr CMgrAvatorItemHistorymastery_change_jade112_next(nullptr);
+        static info::CMgrAvatorItemHistorymastery_change_jade112_clbk CMgrAvatorItemHistorymastery_change_jade112_user(nullptr);
+        static info::CMgrAvatorItemHistorypatriarch_push_money114_ptr CMgrAvatorItemHistorypatriarch_push_money114_next(nullptr);
+        static info::CMgrAvatorItemHistorypatriarch_push_money114_clbk CMgrAvatorItemHistorypatriarch_push_money114_user(nullptr);
+        static info::CMgrAvatorItemHistorypay_money116_ptr CMgrAvatorItemHistorypay_money116_next(nullptr);
+        static info::CMgrAvatorItemHistorypay_money116_clbk CMgrAvatorItemHistorypay_money116_user(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_install118_ptr CMgrAvatorItemHistorypersonal_amine_install118_next(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_install118_clbk CMgrAvatorItemHistorypersonal_amine_install118_user(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_itemlog120_ptr CMgrAvatorItemHistorypersonal_amine_itemlog120_next(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_itemlog120_clbk CMgrAvatorItemHistorypersonal_amine_itemlog120_user(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_stop122_ptr CMgrAvatorItemHistorypersonal_amine_stop122_next(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_stop122_clbk CMgrAvatorItemHistorypersonal_amine_stop122_user(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_uninstall124_ptr CMgrAvatorItemHistorypersonal_amine_uninstall124_next(nullptr);
+        static info::CMgrAvatorItemHistorypersonal_amine_uninstall124_clbk CMgrAvatorItemHistorypersonal_amine_uninstall124_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_delete126_ptr CMgrAvatorItemHistorypost_delete126_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_delete126_clbk CMgrAvatorItemHistorypost_delete126_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_getpresent128_ptr CMgrAvatorItemHistorypost_getpresent128_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_getpresent128_clbk CMgrAvatorItemHistorypost_getpresent128_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_receive130_ptr CMgrAvatorItemHistorypost_receive130_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_receive130_clbk CMgrAvatorItemHistorypost_receive130_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_return132_ptr CMgrAvatorItemHistorypost_return132_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_return132_clbk CMgrAvatorItemHistorypost_return132_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_returnreceive134_ptr CMgrAvatorItemHistorypost_returnreceive134_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_returnreceive134_clbk CMgrAvatorItemHistorypost_returnreceive134_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_senditem136_ptr CMgrAvatorItemHistorypost_senditem136_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_senditem136_clbk CMgrAvatorItemHistorypost_senditem136_user(nullptr);
+        static info::CMgrAvatorItemHistorypost_storage138_ptr CMgrAvatorItemHistorypost_storage138_next(nullptr);
+        static info::CMgrAvatorItemHistorypost_storage138_clbk CMgrAvatorItemHistorypost_storage138_user(nullptr);
+        static info::CMgrAvatorItemHistoryprice_auto_trade140_ptr CMgrAvatorItemHistoryprice_auto_trade140_next(nullptr);
+        static info::CMgrAvatorItemHistoryprice_auto_trade140_clbk CMgrAvatorItemHistoryprice_auto_trade140_user(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_candidate142_ptr CMgrAvatorItemHistoryraceboss_candidate142_next(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_candidate142_clbk CMgrAvatorItemHistoryraceboss_candidate142_user(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_giveback144_ptr CMgrAvatorItemHistoryraceboss_giveback144_next(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_giveback144_clbk CMgrAvatorItemHistoryraceboss_giveback144_user(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_vote146_ptr CMgrAvatorItemHistoryraceboss_vote146_next(nullptr);
+        static info::CMgrAvatorItemHistoryraceboss_vote146_clbk CMgrAvatorItemHistoryraceboss_vote146_user(nullptr);
+        static info::CMgrAvatorItemHistoryre_reg_auto_trade148_ptr CMgrAvatorItemHistoryre_reg_auto_trade148_next(nullptr);
+        static info::CMgrAvatorItemHistoryre_reg_auto_trade148_clbk CMgrAvatorItemHistoryre_reg_auto_trade148_user(nullptr);
+        static info::CMgrAvatorItemHistoryread_cashamount150_ptr CMgrAvatorItemHistoryread_cashamount150_next(nullptr);
+        static info::CMgrAvatorItemHistoryread_cashamount150_clbk CMgrAvatorItemHistoryread_cashamount150_user(nullptr);
+        static info::CMgrAvatorItemHistoryreg_auto_trade152_ptr CMgrAvatorItemHistoryreg_auto_trade152_next(nullptr);
+        static info::CMgrAvatorItemHistoryreg_auto_trade152_clbk CMgrAvatorItemHistoryreg_auto_trade152_user(nullptr);
+        static info::CMgrAvatorItemHistoryreturn_post_storage154_ptr CMgrAvatorItemHistoryreturn_post_storage154_next(nullptr);
+        static info::CMgrAvatorItemHistoryreturn_post_storage154_clbk CMgrAvatorItemHistoryreturn_post_storage154_user(nullptr);
+        static info::CMgrAvatorItemHistoryreward_add_item156_ptr CMgrAvatorItemHistoryreward_add_item156_next(nullptr);
+        static info::CMgrAvatorItemHistoryreward_add_item156_clbk CMgrAvatorItemHistoryreward_add_item156_user(nullptr);
+        static info::CMgrAvatorItemHistoryreward_add_money158_ptr CMgrAvatorItemHistoryreward_add_money158_next(nullptr);
+        static info::CMgrAvatorItemHistoryreward_add_money158_clbk CMgrAvatorItemHistoryreward_add_money158_user(nullptr);
+        static info::CMgrAvatorItemHistoryrollback_cashitem160_ptr CMgrAvatorItemHistoryrollback_cashitem160_next(nullptr);
+        static info::CMgrAvatorItemHistoryrollback_cashitem160_clbk CMgrAvatorItemHistoryrollback_cashitem160_user(nullptr);
+        static info::CMgrAvatorItemHistoryself_cancel_auto_trade162_ptr CMgrAvatorItemHistoryself_cancel_auto_trade162_next(nullptr);
+        static info::CMgrAvatorItemHistoryself_cancel_auto_trade162_clbk CMgrAvatorItemHistoryself_cancel_auto_trade162_user(nullptr);
+        static info::CMgrAvatorItemHistorysell_item164_ptr CMgrAvatorItemHistorysell_item164_next(nullptr);
+        static info::CMgrAvatorItemHistorysell_item164_clbk CMgrAvatorItemHistorysell_item164_user(nullptr);
+        static info::CMgrAvatorItemHistorysell_unit166_ptr CMgrAvatorItemHistorysell_unit166_next(nullptr);
+        static info::CMgrAvatorItemHistorysell_unit166_clbk CMgrAvatorItemHistorysell_unit166_user(nullptr);
+        static info::CMgrAvatorItemHistorytake_ground_item168_ptr CMgrAvatorItemHistorytake_ground_item168_next(nullptr);
+        static info::CMgrAvatorItemHistorytake_ground_item168_clbk CMgrAvatorItemHistorytake_ground_item168_user(nullptr);
+        static info::CMgrAvatorItemHistorythrow_ground_item170_ptr CMgrAvatorItemHistorythrow_ground_item170_next(nullptr);
+        static info::CMgrAvatorItemHistorythrow_ground_item170_clbk CMgrAvatorItemHistorythrow_ground_item170_user(nullptr);
+        static info::CMgrAvatorItemHistorytime_jade_effect_log172_ptr CMgrAvatorItemHistorytime_jade_effect_log172_next(nullptr);
+        static info::CMgrAvatorItemHistorytime_jade_effect_log172_clbk CMgrAvatorItemHistorytime_jade_effect_log172_user(nullptr);
+        static info::CMgrAvatorItemHistorytime_out_cancel_auto_trade174_ptr CMgrAvatorItemHistorytime_out_cancel_auto_trade174_next(nullptr);
+        static info::CMgrAvatorItemHistorytime_out_cancel_auto_trade174_clbk CMgrAvatorItemHistorytime_out_cancel_auto_trade174_user(nullptr);
+        static info::CMgrAvatorItemHistorytrade176_ptr CMgrAvatorItemHistorytrade176_next(nullptr);
+        static info::CMgrAvatorItemHistorytrade176_clbk CMgrAvatorItemHistorytrade176_user(nullptr);
+        static info::CMgrAvatorItemHistorytrans_ground_item178_ptr CMgrAvatorItemHistorytrans_ground_item178_next(nullptr);
+        static info::CMgrAvatorItemHistorytrans_ground_item178_clbk CMgrAvatorItemHistorytrans_ground_item178_user(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_io_item180_ptr CMgrAvatorItemHistorytrunk_io_item180_next(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_io_item180_clbk CMgrAvatorItemHistorytrunk_io_item180_user(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_io_money182_ptr CMgrAvatorItemHistorytrunk_io_money182_next(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_io_money182_clbk CMgrAvatorItemHistorytrunk_io_money182_user(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_swap_item184_ptr CMgrAvatorItemHistorytrunk_swap_item184_next(nullptr);
+        static info::CMgrAvatorItemHistorytrunk_swap_item184_clbk CMgrAvatorItemHistorytrunk_swap_item184_user(nullptr);
+        static info::CMgrAvatorItemHistorytuning_unit186_ptr CMgrAvatorItemHistorytuning_unit186_next(nullptr);
+        static info::CMgrAvatorItemHistorytuning_unit186_clbk CMgrAvatorItemHistorytuning_unit186_user(nullptr);
+        static info::CMgrAvatorItemHistoryused_cash188_ptr CMgrAvatorItemHistoryused_cash188_next(nullptr);
+        static info::CMgrAvatorItemHistoryused_cash188_clbk CMgrAvatorItemHistoryused_cash188_user(nullptr);
+        static info::CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_ptr CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_next(nullptr);
+        static info::CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_clbk CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_user(nullptr);
         
-        void CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_wrapper(struct CMgrAvatorItemHistory* _this)
+        static void CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_wrapper(struct CMgrAvatorItemHistory* _this)
         {
            CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_user(_this, CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_next);
         };
-        void CMgrAvatorItemHistoryClassUP4_wrapper(struct CMgrAvatorItemHistory* _this, char byCurClassGrade, char byLastClassGrade, char* szOldClass, char* szCurClass, int* piOldMaxPoint, int* piAlterMaxPoint, char* pszFileName)
+        static void CMgrAvatorItemHistoryClassUP4_wrapper(struct CMgrAvatorItemHistory* _this, char byCurClassGrade, char byLastClassGrade, char* szOldClass, char* szCurClass, int* piOldMaxPoint, int* piAlterMaxPoint, char* pszFileName)
         {
            CMgrAvatorItemHistoryClassUP4_user(_this, byCurClassGrade, byLastClassGrade, szOldClass, szCurClass, piOldMaxPoint, piAlterMaxPoint, pszFileName, CMgrAvatorItemHistoryClassUP4_next);
         };
-        void CMgrAvatorItemHistoryClearLogBuffer6_wrapper(struct CMgrAvatorItemHistory* _this)
+        static void CMgrAvatorItemHistoryClearLogBuffer6_wrapper(struct CMgrAvatorItemHistory* _this)
         {
            CMgrAvatorItemHistoryClearLogBuffer6_user(_this, CMgrAvatorItemHistoryClearLogBuffer6_next);
         };
-        void CMgrAvatorItemHistoryGetNewFileName8_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwAvatorSerial, char* pszFileName)
+        static void CMgrAvatorItemHistoryGetNewFileName8_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwAvatorSerial, char* pszFileName)
         {
            CMgrAvatorItemHistoryGetNewFileName8_user(_this, dwAvatorSerial, pszFileName, CMgrAvatorItemHistoryGetNewFileName8_next);
         };
-        int CMgrAvatorItemHistoryGetTotalWaitSize10_wrapper(struct CMgrAvatorItemHistory* _this)
+        static int CMgrAvatorItemHistoryGetTotalWaitSize10_wrapper(struct CMgrAvatorItemHistory* _this)
         {
            return CMgrAvatorItemHistoryGetTotalWaitSize10_user(_this, CMgrAvatorItemHistoryGetTotalWaitSize10_next);
         };
-        void CMgrAvatorItemHistoryIOThread12_wrapper(void* pv)
+        static void CMgrAvatorItemHistoryIOThread12_wrapper(void* pv)
         {
            CMgrAvatorItemHistoryIOThread12_user(pv, CMgrAvatorItemHistoryIOThread12_next);
         };
-        void CMgrAvatorItemHistoryInitClass14_wrapper(struct CMgrAvatorItemHistory* _this, int iCostGold, unsigned int dwInitClassCnt, char byLastClassGrade, char* szOldClass, char* szCurClass, int* piOldMaxPoint, int* piAlterMaxPoint, char* pszFileName)
+        static void CMgrAvatorItemHistoryInitClass14_wrapper(struct CMgrAvatorItemHistory* _this, int iCostGold, unsigned int dwInitClassCnt, char byLastClassGrade, char* szOldClass, char* szCurClass, int* piOldMaxPoint, int* piAlterMaxPoint, char* pszFileName)
         {
            CMgrAvatorItemHistoryInitClass14_user(_this, iCostGold, dwInitClassCnt, byLastClassGrade, szOldClass, szCurClass, piOldMaxPoint, piAlterMaxPoint, pszFileName, CMgrAvatorItemHistoryInitClass14_next);
         };
-        void CMgrAvatorItemHistoryOnLoop16_wrapper(struct CMgrAvatorItemHistory* _this)
+        static void CMgrAvatorItemHistoryOnLoop16_wrapper(struct CMgrAvatorItemHistory* _this)
         {
            CMgrAvatorItemHistoryOnLoop16_user(_this, CMgrAvatorItemHistoryOnLoop16_next);
         };
-        void CMgrAvatorItemHistoryWriteFile18_wrapper(struct CMgrAvatorItemHistory* _this, char* pszFileName, char* pszLog)
+        static void CMgrAvatorItemHistoryWriteFile18_wrapper(struct CMgrAvatorItemHistory* _this, char* pszFileName, char* pszLog)
         {
            CMgrAvatorItemHistoryWriteFile18_user(_this, pszFileName, pszLog, CMgrAvatorItemHistoryWriteFile18_next);
         };
-        void CMgrAvatorItemHistoryWriteLog20_wrapper(struct CMgrAvatorItemHistory* _this, char* pszFileName)
+        static void CMgrAvatorItemHistoryWriteLog20_wrapper(struct CMgrAvatorItemHistory* _this, char* pszFileName)
         {
            CMgrAvatorItemHistoryWriteLog20_user(_this, pszFileName, CMgrAvatorItemHistoryWriteLog20_next);
         };
-        void CMgrAvatorItemHistoryadd_storage_fail22_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* strErrorCodePos, char* pszFileName)
+        static void CMgrAvatorItemHistoryadd_storage_fail22_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* strErrorCodePos, char* pszFileName)
         {
            CMgrAvatorItemHistoryadd_storage_fail22_user(_this, n, pItem, strErrorCodePos, pszFileName, CMgrAvatorItemHistoryadd_storage_fail22_next);
         };
-        void CMgrAvatorItemHistoryauto_trade_buy24_wrapper(struct CMgrAvatorItemHistory* _this, char* szSellerName, unsigned int dwSellerSerial, char* szSellerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwPrice, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryauto_trade_buy24_wrapper(struct CMgrAvatorItemHistory* _this, char* szSellerName, unsigned int dwSellerSerial, char* szSellerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwPrice, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryauto_trade_buy24_user(_this, szSellerName, dwSellerSerial, szSellerID, dwRegistSerial, pItem, dwPrice, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryauto_trade_buy24_next);
         };
-        void CMgrAvatorItemHistoryauto_trade_login_sell26_wrapper(struct CMgrAvatorItemHistory* _this, char* szBuyerName, unsigned int dwBuyerSerial, char* szBuyerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, int64_t tResultTime, unsigned int dwPrice, unsigned int dwTax, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryauto_trade_login_sell26_wrapper(struct CMgrAvatorItemHistory* _this, char* szBuyerName, unsigned int dwBuyerSerial, char* szBuyerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, int64_t tResultTime, unsigned int dwPrice, unsigned int dwTax, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryauto_trade_login_sell26_user(_this, szBuyerName, dwBuyerSerial, szBuyerID, dwRegistSerial, pItem, tResultTime, dwPrice, dwTax, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryauto_trade_login_sell26_next);
         };
-        void CMgrAvatorItemHistoryauto_trade_sell28_wrapper(struct CMgrAvatorItemHistory* _this, char* szBuyerName, unsigned int dwBuyerSerial, char* szBuyerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwPrice, unsigned int dwTax, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryauto_trade_sell28_wrapper(struct CMgrAvatorItemHistory* _this, char* szBuyerName, unsigned int dwBuyerSerial, char* szBuyerID, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pItem, unsigned int dwPrice, unsigned int dwTax, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryauto_trade_sell28_user(_this, szBuyerName, dwBuyerSerial, szBuyerID, dwRegistSerial, pItem, dwPrice, dwTax, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryauto_trade_sell28_next);
         };
-        void CMgrAvatorItemHistoryback_trap_item30_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
+        static void CMgrAvatorItemHistoryback_trap_item30_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
         {
            CMgrAvatorItemHistoryback_trap_item30_user(_this, n, pItem, pszFileName, CMgrAvatorItemHistoryback_trap_item30_next);
         };
-        void CMgrAvatorItemHistorybuy_item32_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _buy_offer* pOffer, char byOfferNum, unsigned int dwCostDalant, unsigned int dwCostGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorybuy_item32_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _buy_offer* pOffer, char byOfferNum, unsigned int dwCostDalant, unsigned int dwCostGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorybuy_item32_user(_this, n, pOffer, byOfferNum, dwCostDalant, dwCostGold, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorybuy_item32_next);
         };
-        void CMgrAvatorItemHistorybuy_to_inven_cashitem34_wrapper(struct CMgrAvatorItemHistory* _this, char byTbl, uint16_t wIndex, int nPrice, int nDis, int nNum, int nBuyPrice, int nAmount, char* pFileName, uint64_t lnUID, char byEventType)
+        static void CMgrAvatorItemHistorybuy_to_inven_cashitem34_wrapper(struct CMgrAvatorItemHistory* _this, char byTbl, uint16_t wIndex, int nPrice, int nDis, int nNum, int nBuyPrice, int nAmount, char* pFileName, uint64_t lnUID, char byEventType)
         {
            CMgrAvatorItemHistorybuy_to_inven_cashitem34_user(_this, byTbl, wIndex, nPrice, nDis, nNum, nBuyPrice, nAmount, pFileName, lnUID, byEventType, CMgrAvatorItemHistorybuy_to_inven_cashitem34_next);
         };
-        void CMgrAvatorItemHistorybuy_unit36_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData, unsigned int* pdwConsumMoney, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorybuy_unit36_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData, unsigned int* pdwConsumMoney, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorybuy_unit36_user(_this, n, bySlotIndex, pData, pdwConsumMoney, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorybuy_unit36_next);
         };
-        void CMgrAvatorItemHistorycash_item_use38_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pUseItem, char* pszFileName)
+        static void CMgrAvatorItemHistorycash_item_use38_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pUseItem, char* pszFileName)
         {
            CMgrAvatorItemHistorycash_item_use38_user(_this, n, pUseItem, pszFileName, CMgrAvatorItemHistorycash_item_use38_next);
         };
-        void CMgrAvatorItemHistorycashitem_del_from_inven40_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, uint64_t lnUID, char* pFN)
+        static void CMgrAvatorItemHistorycashitem_del_from_inven40_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, uint64_t lnUID, char* pFN)
         {
            CMgrAvatorItemHistorycashitem_del_from_inven40_user(_this, byTblCode, wItemIndex, lnUID, pFN, CMgrAvatorItemHistorycashitem_del_from_inven40_next);
         };
-        void CMgrAvatorItemHistorychar_copy42_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszDstName, unsigned int dwDstSerial, char* pszFileName)
+        static void CMgrAvatorItemHistorychar_copy42_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszDstName, unsigned int dwDstSerial, char* pszFileName)
         {
            CMgrAvatorItemHistorychar_copy42_user(_this, n, pszDstName, dwDstSerial, pszFileName, CMgrAvatorItemHistorychar_copy42_next);
         };
-        void CMgrAvatorItemHistorycheat_add_item44_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char byAddNum, char* pszFileName)
+        static void CMgrAvatorItemHistorycheat_add_item44_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char byAddNum, char* pszFileName)
         {
            CMgrAvatorItemHistorycheat_add_item44_user(_this, n, pItem, byAddNum, pszFileName, CMgrAvatorItemHistorycheat_add_item44_next);
         };
-        void CMgrAvatorItemHistorycheat_alter_money46_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorycheat_alter_money46_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorycheat_alter_money46_user(_this, n, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorycheat_alter_money46_next);
         };
-        void CMgrAvatorItemHistorycheat_del_item48_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char byDelNum, char* pszFileName)
+        static void CMgrAvatorItemHistorycheat_del_item48_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char byDelNum, char* pszFileName)
         {
            CMgrAvatorItemHistorycheat_del_item48_user(_this, n, pItem, byDelNum, pszFileName, CMgrAvatorItemHistorycheat_del_item48_next);
         };
-        void CMgrAvatorItemHistorycheat_make_item_no_material50_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byRetCode, struct _STORAGE_LIST::_db_con* pMakeItem, char* pszFileName)
+        static void CMgrAvatorItemHistorycheat_make_item_no_material50_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byRetCode, struct _STORAGE_LIST::_db_con* pMakeItem, char* pszFileName)
         {
            CMgrAvatorItemHistorycheat_make_item_no_material50_user(_this, n, byRetCode, pMakeItem, pszFileName, CMgrAvatorItemHistorycheat_make_item_no_material50_next);
         };
-        void CMgrAvatorItemHistoryclose52_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pCloseCode, char* pszFileName)
+        static void CMgrAvatorItemHistoryclose52_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pCloseCode, char* pszFileName)
         {
            CMgrAvatorItemHistoryclose52_user(_this, n, pCloseCode, pszFileName, CMgrAvatorItemHistoryclose52_next);
         };
-        void CMgrAvatorItemHistorycombine_ex_reward_item54_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byMakeNum, struct _ITEMCOMBINE_DB_BASE* pCombineDB, char* pbyRewardTypeList, uint64_t* lnUIDs, char* strFileName)
+        static void CMgrAvatorItemHistorycombine_ex_reward_item54_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byMakeNum, struct _ITEMCOMBINE_DB_BASE* pCombineDB, char* pbyRewardTypeList, uint64_t* lnUIDs, char* strFileName)
         {
            CMgrAvatorItemHistorycombine_ex_reward_item54_user(_this, n, byMakeNum, pCombineDB, pbyRewardTypeList, lnUIDs, strFileName, CMgrAvatorItemHistorycombine_ex_reward_item54_next);
         };
-        void CMgrAvatorItemHistorycombine_ex_using_material56_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwCheckKey, char bySlotNum, struct _STORAGE_LIST::_db_con** ppMaterial, char* pbyMtrNum, unsigned int dwFee, char* strFileName, int bSucc, unsigned int dwFailCount)
+        static void CMgrAvatorItemHistorycombine_ex_using_material56_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwCheckKey, char bySlotNum, struct _STORAGE_LIST::_db_con** ppMaterial, char* pbyMtrNum, unsigned int dwFee, char* strFileName, int bSucc, unsigned int dwFailCount)
         {
            CMgrAvatorItemHistorycombine_ex_using_material56_user(_this, n, dwCheckKey, bySlotNum, ppMaterial, pbyMtrNum, dwFee, strFileName, bSucc, dwFailCount, CMgrAvatorItemHistorycombine_ex_using_material56_next);
         };
-        void CMgrAvatorItemHistorycombine_item58_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pMaterial, char* pbyMtrNum, char byMaterialNum, struct _STORAGE_LIST::_db_con* pMakeItem, unsigned int dwFee, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistorycombine_item58_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pMaterial, char* pbyMtrNum, char byMaterialNum, struct _STORAGE_LIST::_db_con* pMakeItem, unsigned int dwFee, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistorycombine_item58_user(_this, n, pMaterial, pbyMtrNum, byMaterialNum, pMakeItem, dwFee, dwLeftDalant, pszFileName, CMgrAvatorItemHistorycombine_item58_next);
         };
-        void CMgrAvatorItemHistoryconsume_del_item60_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
+        static void CMgrAvatorItemHistoryconsume_del_item60_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
         {
            CMgrAvatorItemHistoryconsume_del_item60_user(_this, n, pItem, pszFileName, CMgrAvatorItemHistoryconsume_del_item60_next);
         };
-        void CMgrAvatorItemHistorycoupon_use_buy_item62_wrapper(struct CMgrAvatorItemHistory* _this, struct _STORAGE_LIST::_db_con* pCouponItem, char* ApplyItem, char* pszFileName)
+        static void CMgrAvatorItemHistorycoupon_use_buy_item62_wrapper(struct CMgrAvatorItemHistory* _this, struct _STORAGE_LIST::_db_con* pCouponItem, char* ApplyItem, char* pszFileName)
         {
            CMgrAvatorItemHistorycoupon_use_buy_item62_user(_this, pCouponItem, ApplyItem, pszFileName, CMgrAvatorItemHistorycoupon_use_buy_item62_next);
         };
-        void CMgrAvatorItemHistorycut_clear_item64_wrapper(struct CMgrAvatorItemHistory* _this, int n, uint16_t* pwCuttingResBuffer, unsigned int dwAddGold, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorycut_clear_item64_wrapper(struct CMgrAvatorItemHistory* _this, int n, uint16_t* pwCuttingResBuffer, unsigned int dwAddGold, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorycut_clear_item64_user(_this, n, pwCuttingResBuffer, dwAddGold, dwNewGold, pszFileName, CMgrAvatorItemHistorycut_clear_item64_next);
         };
-        void CMgrAvatorItemHistorycut_item66_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pOreItem, int nOreNum, uint16_t* pwCuttingResBuffer, unsigned int dwCostDalant, unsigned int dwNewDalant, char* pszFileName)
+        static void CMgrAvatorItemHistorycut_item66_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pOreItem, int nOreNum, uint16_t* pwCuttingResBuffer, unsigned int dwCostDalant, unsigned int dwNewDalant, char* pszFileName)
         {
            CMgrAvatorItemHistorycut_item66_user(_this, n, pOreItem, nOreNum, pwCuttingResBuffer, dwCostDalant, dwNewDalant, pszFileName, CMgrAvatorItemHistorycut_item66_next);
         };
-        void CMgrAvatorItemHistorydelete_npc_quest_item68_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
+        static void CMgrAvatorItemHistorydelete_npc_quest_item68_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
         {
            CMgrAvatorItemHistorydelete_npc_quest_item68_user(_this, n, pItem, pszFileName, CMgrAvatorItemHistorydelete_npc_quest_item68_next);
         };
-        void CMgrAvatorItemHistorydestroy_unit70_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, char byFrameCode, char* pszFileName)
+        static void CMgrAvatorItemHistorydestroy_unit70_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, char byFrameCode, char* pszFileName)
         {
            CMgrAvatorItemHistorydestroy_unit70_user(_this, n, bySlotIndex, byFrameCode, pszFileName, CMgrAvatorItemHistorydestroy_unit70_next);
         };
-        void CMgrAvatorItemHistoryexchange_item72_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pUseItem, struct _STORAGE_LIST::_db_con* pOutItem, char* pszFileName)
+        static void CMgrAvatorItemHistoryexchange_item72_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pUseItem, struct _STORAGE_LIST::_db_con* pOutItem, char* pszFileName)
         {
            CMgrAvatorItemHistoryexchange_item72_user(_this, n, pUseItem, pOutItem, pszFileName, CMgrAvatorItemHistoryexchange_item72_next);
         };
-        void CMgrAvatorItemHistoryexchange_money74_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwCurDalant, unsigned int dwCurGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryexchange_money74_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwCurDalant, unsigned int dwCurGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryexchange_money74_user(_this, n, dwCurDalant, dwCurGold, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistoryexchange_money74_next);
         };
-        void CMgrAvatorItemHistoryexchange_pvp_gold76_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwPoint, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryexchange_pvp_gold76_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwPoint, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryexchange_pvp_gold76_user(_this, n, dwPoint, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistoryexchange_pvp_gold76_next);
         };
-        void CMgrAvatorItemHistoryexp_prof_log78_wrapper(struct CMgrAvatorItemHistory* _this, int count, char* szFile)
+        static void CMgrAvatorItemHistoryexp_prof_log78_wrapper(struct CMgrAvatorItemHistory* _this, int count, char* szFile)
         {
            CMgrAvatorItemHistoryexp_prof_log78_user(_this, count, szFile, CMgrAvatorItemHistoryexp_prof_log78_next);
         };
-        void CMgrAvatorItemHistorygrade_down_item80_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, struct _STORAGE_LIST::_db_con* pTalik, unsigned int dwAfterLv, char* pszFileName)
+        static void CMgrAvatorItemHistorygrade_down_item80_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, struct _STORAGE_LIST::_db_con* pTalik, unsigned int dwAfterLv, char* pszFileName)
         {
            CMgrAvatorItemHistorygrade_down_item80_user(_this, n, pItem, pTalik, dwAfterLv, pszFileName, CMgrAvatorItemHistorygrade_down_item80_next);
         };
-        void CMgrAvatorItemHistorygrade_up_item82_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, struct _STORAGE_LIST::_db_con* pTalik, struct _STORAGE_LIST::_db_con* pJewel, char byJewelNum, char byErrCode, unsigned int dwAfterLv, char* pszFileName)
+        static void CMgrAvatorItemHistorygrade_up_item82_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, struct _STORAGE_LIST::_db_con* pTalik, struct _STORAGE_LIST::_db_con* pJewel, char byJewelNum, char byErrCode, unsigned int dwAfterLv, char* pszFileName)
         {
            CMgrAvatorItemHistorygrade_up_item82_user(_this, n, pItem, pTalik, pJewel, byJewelNum, byErrCode, dwAfterLv, pszFileName, CMgrAvatorItemHistorygrade_up_item82_next);
         };
-        void CMgrAvatorItemHistoryguild_est_money84_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwEstDalant, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_est_money84_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwEstDalant, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_est_money84_user(_this, n, pszGuildName, dwEstDalant, dwLeftDalant, pszFileName, CMgrAvatorItemHistoryguild_est_money84_next);
         };
-        void CMgrAvatorItemHistoryguild_est_money_rollback86_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwEstDalant, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_est_money_rollback86_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwEstDalant, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_est_money_rollback86_user(_this, n, pszGuildName, dwEstDalant, dwLeftDalant, pszFileName, CMgrAvatorItemHistoryguild_est_money_rollback86_next);
         };
-        void CMgrAvatorItemHistoryguild_pop_money88_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPopDalant, unsigned int dwPopGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_pop_money88_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPopDalant, unsigned int dwPopGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_pop_money88_user(_this, n, pszGuildName, dwPopDalant, dwPopGold, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryguild_pop_money88_next);
         };
-        void CMgrAvatorItemHistoryguild_pop_money_rollback90_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPopDalant, unsigned int dwPopGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_pop_money_rollback90_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPopDalant, unsigned int dwPopGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_pop_money_rollback90_user(_this, n, pszGuildName, dwPopDalant, dwPopGold, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryguild_pop_money_rollback90_next);
         };
-        void CMgrAvatorItemHistoryguild_push_money92_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPushDalant, unsigned int dwPushGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_push_money92_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPushDalant, unsigned int dwPushGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_push_money92_user(_this, n, pszGuildName, dwPushDalant, dwPushGold, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryguild_push_money92_next);
         };
-        void CMgrAvatorItemHistoryguild_push_money_rollback94_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPushDalant, unsigned int dwPushGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryguild_push_money_rollback94_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszGuildName, unsigned int dwPushDalant, unsigned int dwPushGold, unsigned int dwLeftDalant, unsigned int dwLeftGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryguild_push_money_rollback94_user(_this, n, pszGuildName, dwPushDalant, dwPushGold, dwLeftDalant, dwLeftGold, pszFileName, CMgrAvatorItemHistoryguild_push_money_rollback94_next);
         };
-        void CMgrAvatorItemHistoryguild_suggest_change_taxrate96_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwGuild, unsigned int dwMatterObj2, char* szFile)
+        static void CMgrAvatorItemHistoryguild_suggest_change_taxrate96_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwGuild, unsigned int dwMatterObj2, char* szFile)
         {
            CMgrAvatorItemHistoryguild_suggest_change_taxrate96_user(_this, dwGuild, dwMatterObj2, szFile, CMgrAvatorItemHistoryguild_suggest_change_taxrate96_next);
         };
-        void CMgrAvatorItemHistoryhave_auto_item98_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct CUnmannedTraderRegistItemInfo* pkInfo, char byMaxCnt)
+        static void CMgrAvatorItemHistoryhave_auto_item98_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct CUnmannedTraderRegistItemInfo* pkInfo, char byMaxCnt)
         {
            CMgrAvatorItemHistoryhave_auto_item98_user(_this, n, pkInfo, byMaxCnt, CMgrAvatorItemHistoryhave_auto_item98_next);
         };
-        void CMgrAvatorItemHistoryhave_item100_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszName, struct _AVATOR_DATA* pLoadData, struct _AVATOR_DATA* pBackupData, char* pszID, unsigned int dwIDSerial, char byDgr, unsigned int dwIP, unsigned int dwExpRate, bool bStart, char* pszFileName)
+        static void CMgrAvatorItemHistoryhave_item100_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszName, struct _AVATOR_DATA* pLoadData, struct _AVATOR_DATA* pBackupData, char* pszID, unsigned int dwIDSerial, char byDgr, unsigned int dwIP, unsigned int dwExpRate, bool bStart, char* pszFileName)
         {
            CMgrAvatorItemHistoryhave_item100_user(_this, n, pszName, pLoadData, pBackupData, pszID, dwIDSerial, byDgr, dwIP, dwExpRate, bStart, pszFileName, CMgrAvatorItemHistoryhave_item100_next);
         };
-        void CMgrAvatorItemHistoryhave_item_close102_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszName, struct _AVATOR_DATA* pLoadData, struct _AVATOR_DATA* pBackupData, char* pszID, unsigned int dwIDSerial, char byDgr, unsigned int dwIP, unsigned int dwExpRate, struct CUnmannedTraderRegistItemInfo* pkInfo, char byMaxCnt, char* pszFileName)
+        static void CMgrAvatorItemHistoryhave_item_close102_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszName, struct _AVATOR_DATA* pLoadData, struct _AVATOR_DATA* pBackupData, char* pszID, unsigned int dwIDSerial, char byDgr, unsigned int dwIP, unsigned int dwExpRate, struct CUnmannedTraderRegistItemInfo* pkInfo, char byMaxCnt, char* pszFileName)
         {
            CMgrAvatorItemHistoryhave_item_close102_user(_this, n, pszName, pLoadData, pBackupData, pszID, dwIDSerial, byDgr, dwIP, dwExpRate, pkInfo, byMaxCnt, pszFileName, CMgrAvatorItemHistoryhave_item_close102_next);
         };
-        void CMgrAvatorItemHistoryitem_serial_full104_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszFileName)
+        static void CMgrAvatorItemHistoryitem_serial_full104_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszFileName)
         {
            CMgrAvatorItemHistoryitem_serial_full104_user(_this, n, pszFileName, CMgrAvatorItemHistoryitem_serial_full104_next);
         };
-        void CMgrAvatorItemHistorylenditem_del_from_inven106_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, uint64_t lnUID, char* pFN)
+        static void CMgrAvatorItemHistorylenditem_del_from_inven106_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, uint64_t lnUID, char* pFN)
         {
            CMgrAvatorItemHistorylenditem_del_from_inven106_user(_this, byTblCode, wItemIndex, lnUID, pFN, CMgrAvatorItemHistorylenditem_del_from_inven106_next);
         };
-        void CMgrAvatorItemHistorylogin_cancel_auto_trade108_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, int64_t tResultTime, char* pszFileName)
+        static void CMgrAvatorItemHistorylogin_cancel_auto_trade108_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, int64_t tResultTime, char* pszFileName)
         {
            CMgrAvatorItemHistorylogin_cancel_auto_trade108_user(_this, n, dwRegistSerial, pRegItem, tResultTime, pszFileName, CMgrAvatorItemHistorylogin_cancel_auto_trade108_next);
         };
-        void CMgrAvatorItemHistorymake_item110_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pMaterial, char* pbyMtrNum, char byMaterialNum, char byRetCode, bool bInsert, struct _STORAGE_LIST::_db_con* pMakeItem, char* pszFileName)
+        static void CMgrAvatorItemHistorymake_item110_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pMaterial, char* pbyMtrNum, char byMaterialNum, char byRetCode, bool bInsert, struct _STORAGE_LIST::_db_con* pMakeItem, char* pszFileName)
         {
            CMgrAvatorItemHistorymake_item110_user(_this, n, pMaterial, pbyMtrNum, byMaterialNum, byRetCode, bInsert, pMakeItem, pszFileName, CMgrAvatorItemHistorymake_item110_next);
         };
-        void CMgrAvatorItemHistorymastery_change_jade112_wrapper(struct CMgrAvatorItemHistory* _this, int nMstCode, unsigned int dwOldCum, unsigned int dwNewCum, int nLv, float fVal, char* szFileName, int nWpType)
+        static void CMgrAvatorItemHistorymastery_change_jade112_wrapper(struct CMgrAvatorItemHistory* _this, int nMstCode, unsigned int dwOldCum, unsigned int dwNewCum, int nLv, float fVal, char* szFileName, int nWpType)
         {
            CMgrAvatorItemHistorymastery_change_jade112_user(_this, nMstCode, dwOldCum, dwNewCum, nLv, fVal, szFileName, nWpType, CMgrAvatorItemHistorymastery_change_jade112_next);
         };
-        void CMgrAvatorItemHistorypatriarch_push_money114_wrapper(struct CMgrAvatorItemHistory* _this, char* pwszPatriarchName, unsigned int dwPushDalant, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistorypatriarch_push_money114_wrapper(struct CMgrAvatorItemHistory* _this, char* pwszPatriarchName, unsigned int dwPushDalant, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistorypatriarch_push_money114_user(_this, pwszPatriarchName, dwPushDalant, dwLeftDalant, pszFileName, CMgrAvatorItemHistorypatriarch_push_money114_next);
         };
-        void CMgrAvatorItemHistorypay_money116_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, unsigned int dwPayDalant, unsigned int dwPayGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorypay_money116_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, unsigned int dwPayDalant, unsigned int dwPayGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorypay_money116_user(_this, n, pszClause, dwPayDalant, dwPayGold, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorypay_money116_next);
         };
-        void CMgrAvatorItemHistorypersonal_amine_install118_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, struct _personal_amine_inven_db_load* pCon, char* szFileName)
+        static void CMgrAvatorItemHistorypersonal_amine_install118_wrapper(struct CMgrAvatorItemHistory* _this, char byTblCode, uint16_t wItemIndex, struct _personal_amine_inven_db_load* pCon, char* szFileName)
         {
            CMgrAvatorItemHistorypersonal_amine_install118_user(_this, byTblCode, wItemIndex, pCon, szFileName, CMgrAvatorItemHistorypersonal_amine_install118_next);
         };
-        void CMgrAvatorItemHistorypersonal_amine_itemlog120_wrapper(struct CMgrAvatorItemHistory* _this, char* szLogDesc, char byPos, char byTblCode, uint16_t wItemIndex, unsigned int dwDur, char* szFileName)
+        static void CMgrAvatorItemHistorypersonal_amine_itemlog120_wrapper(struct CMgrAvatorItemHistory* _this, char* szLogDesc, char byPos, char byTblCode, uint16_t wItemIndex, unsigned int dwDur, char* szFileName)
         {
            CMgrAvatorItemHistorypersonal_amine_itemlog120_user(_this, szLogDesc, byPos, byTblCode, wItemIndex, dwDur, szFileName, CMgrAvatorItemHistorypersonal_amine_itemlog120_next);
         };
-        void CMgrAvatorItemHistorypersonal_amine_stop122_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int* pdwMineCnt, int nMaxOreNum, char byTblCode, uint16_t wItemIndex, char* szFileName)
+        static void CMgrAvatorItemHistorypersonal_amine_stop122_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int* pdwMineCnt, int nMaxOreNum, char byTblCode, uint16_t wItemIndex, char* szFileName)
         {
            CMgrAvatorItemHistorypersonal_amine_stop122_user(_this, pdwMineCnt, nMaxOreNum, byTblCode, wItemIndex, szFileName, CMgrAvatorItemHistorypersonal_amine_stop122_next);
         };
-        void CMgrAvatorItemHistorypersonal_amine_uninstall124_wrapper(struct CMgrAvatorItemHistory* _this, char byType, unsigned int* pdwMineCnt, int nMaxOreNum, struct _STORAGE_LIST::_db_con* pItem, char* szFileName)
+        static void CMgrAvatorItemHistorypersonal_amine_uninstall124_wrapper(struct CMgrAvatorItemHistory* _this, char byType, unsigned int* pdwMineCnt, int nMaxOreNum, struct _STORAGE_LIST::_db_con* pItem, char* szFileName)
         {
            CMgrAvatorItemHistorypersonal_amine_uninstall124_user(_this, byType, pdwMineCnt, nMaxOreNum, pItem, szFileName, CMgrAvatorItemHistorypersonal_amine_uninstall124_next);
         };
-        void CMgrAvatorItemHistorypost_delete126_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
+        static void CMgrAvatorItemHistorypost_delete126_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
         {
            CMgrAvatorItemHistorypost_delete126_user(_this, pPost, pFileName, CMgrAvatorItemHistorypost_delete126_next);
         };
-        void CMgrAvatorItemHistorypost_getpresent128_wrapper(struct CMgrAvatorItemHistory* _this, char* wszSendName, unsigned int dwPostSerial, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
+        static void CMgrAvatorItemHistorypost_getpresent128_wrapper(struct CMgrAvatorItemHistory* _this, char* wszSendName, unsigned int dwPostSerial, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
         {
            CMgrAvatorItemHistorypost_getpresent128_user(_this, wszSendName, dwPostSerial, Item, dwDur, dwGold, pFileName, CMgrAvatorItemHistorypost_getpresent128_next);
         };
-        void CMgrAvatorItemHistorypost_receive130_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
+        static void CMgrAvatorItemHistorypost_receive130_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
         {
            CMgrAvatorItemHistorypost_receive130_user(_this, pPost, pFileName, CMgrAvatorItemHistorypost_receive130_next);
         };
-        void CMgrAvatorItemHistorypost_return132_wrapper(struct CMgrAvatorItemHistory* _this, char* wszRecvName, unsigned int dwPostSerial, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
+        static void CMgrAvatorItemHistorypost_return132_wrapper(struct CMgrAvatorItemHistory* _this, char* wszRecvName, unsigned int dwPostSerial, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
         {
            CMgrAvatorItemHistorypost_return132_user(_this, wszRecvName, dwPostSerial, Item, dwDur, dwGold, pFileName, CMgrAvatorItemHistorypost_return132_next);
         };
-        void CMgrAvatorItemHistorypost_returnreceive134_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
+        static void CMgrAvatorItemHistorypost_returnreceive134_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostData* pPost, char* pFileName)
         {
            CMgrAvatorItemHistorypost_returnreceive134_user(_this, pPost, pFileName, CMgrAvatorItemHistorypost_returnreceive134_next);
         };
-        void CMgrAvatorItemHistorypost_senditem136_wrapper(struct CMgrAvatorItemHistory* _this, char* wszRecvName, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
+        static void CMgrAvatorItemHistorypost_senditem136_wrapper(struct CMgrAvatorItemHistory* _this, char* wszRecvName, struct _STORAGE_LIST::_db_con* Item, uint64_t dwDur, unsigned int dwGold, char* pFileName)
         {
            CMgrAvatorItemHistorypost_senditem136_user(_this, wszRecvName, Item, dwDur, dwGold, pFileName, CMgrAvatorItemHistorypost_senditem136_next);
         };
-        void CMgrAvatorItemHistorypost_storage138_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostStorage* pStorage, char* pFileName)
+        static void CMgrAvatorItemHistorypost_storage138_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostStorage* pStorage, char* pFileName)
         {
            CMgrAvatorItemHistorypost_storage138_user(_this, pStorage, pFileName, CMgrAvatorItemHistorypost_storage138_next);
         };
-        void CMgrAvatorItemHistoryprice_auto_trade140_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwTax, unsigned int dwOldPrice, unsigned int dwNewPrice, char* pszFileName)
+        static void CMgrAvatorItemHistoryprice_auto_trade140_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwTax, unsigned int dwOldPrice, unsigned int dwNewPrice, char* pszFileName)
         {
            CMgrAvatorItemHistoryprice_auto_trade140_user(_this, n, dwRegistSerial, pRegItem, dwTax, dwOldPrice, dwNewPrice, pszFileName, CMgrAvatorItemHistoryprice_auto_trade140_next);
         };
-        void CMgrAvatorItemHistoryraceboss_candidate142_wrapper(struct CMgrAvatorItemHistory* _this, int ncost, unsigned int dwSerial, char* pszFileName)
+        static void CMgrAvatorItemHistoryraceboss_candidate142_wrapper(struct CMgrAvatorItemHistory* _this, int ncost, unsigned int dwSerial, char* pszFileName)
         {
            CMgrAvatorItemHistoryraceboss_candidate142_user(_this, ncost, dwSerial, pszFileName, CMgrAvatorItemHistoryraceboss_candidate142_next);
         };
-        void CMgrAvatorItemHistoryraceboss_giveback144_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszFileName)
+        static void CMgrAvatorItemHistoryraceboss_giveback144_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwSerial, unsigned int dwDalant, char* pszFileName)
         {
            CMgrAvatorItemHistoryraceboss_giveback144_user(_this, dwSerial, dwDalant, pszFileName, CMgrAvatorItemHistoryraceboss_giveback144_next);
         };
-        void CMgrAvatorItemHistoryraceboss_vote146_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwSerial, unsigned int dwAvatorSerial, char* pAvatorName, char* pszFileName)
+        static void CMgrAvatorItemHistoryraceboss_vote146_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwSerial, unsigned int dwAvatorSerial, char* pAvatorName, char* pszFileName)
         {
            CMgrAvatorItemHistoryraceboss_vote146_user(_this, dwSerial, dwAvatorSerial, pAvatorName, pszFileName, CMgrAvatorItemHistoryraceboss_vote146_next);
         };
-        void CMgrAvatorItemHistoryre_reg_auto_trade148_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwPrice, unsigned int dwfee, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistoryre_reg_auto_trade148_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwPrice, unsigned int dwfee, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistoryre_reg_auto_trade148_user(_this, n, dwRegistSerial, pRegItem, dwPrice, dwfee, dwLeftDalant, pszFileName, CMgrAvatorItemHistoryre_reg_auto_trade148_next);
         };
-        void CMgrAvatorItemHistoryread_cashamount150_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwAC, unsigned int dwAV, int nCash, char* pFileName)
+        static void CMgrAvatorItemHistoryread_cashamount150_wrapper(struct CMgrAvatorItemHistory* _this, unsigned int dwAC, unsigned int dwAV, int nCash, char* pFileName)
         {
            CMgrAvatorItemHistoryread_cashamount150_user(_this, dwAC, dwAV, nCash, pFileName, CMgrAvatorItemHistoryread_cashamount150_next);
         };
-        void CMgrAvatorItemHistoryreg_auto_trade152_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwPrice, unsigned int dwfee, unsigned int dwLeftDalant, char* pszFileName)
+        static void CMgrAvatorItemHistoryreg_auto_trade152_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, unsigned int dwPrice, unsigned int dwfee, unsigned int dwLeftDalant, char* pszFileName)
         {
            CMgrAvatorItemHistoryreg_auto_trade152_user(_this, n, dwRegistSerial, pRegItem, dwPrice, dwfee, dwLeftDalant, pszFileName, CMgrAvatorItemHistoryreg_auto_trade152_next);
         };
-        void CMgrAvatorItemHistoryreturn_post_storage154_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostReturnStorage* pReturn, char* pFileName)
+        static void CMgrAvatorItemHistoryreturn_post_storage154_wrapper(struct CMgrAvatorItemHistory* _this, struct CPostReturnStorage* pReturn, char* pFileName)
         {
            CMgrAvatorItemHistoryreturn_post_storage154_user(_this, pReturn, pFileName, CMgrAvatorItemHistoryreturn_post_storage154_next);
         };
-        void CMgrAvatorItemHistoryreward_add_item156_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
+        static void CMgrAvatorItemHistoryreward_add_item156_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, struct _STORAGE_LIST::_db_con* pItem, char* pszFileName)
         {
            CMgrAvatorItemHistoryreward_add_item156_user(_this, n, pszClause, pItem, pszFileName, CMgrAvatorItemHistoryreward_add_item156_next);
         };
-        void CMgrAvatorItemHistoryreward_add_money158_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, unsigned int dwAddDalant, unsigned int dwAddGold, unsigned int dwSumDalant, unsigned int dwSumGold, char* pszFileName)
+        static void CMgrAvatorItemHistoryreward_add_money158_wrapper(struct CMgrAvatorItemHistory* _this, int n, char* pszClause, unsigned int dwAddDalant, unsigned int dwAddGold, unsigned int dwSumDalant, unsigned int dwSumGold, char* pszFileName)
         {
            CMgrAvatorItemHistoryreward_add_money158_user(_this, n, pszClause, dwAddDalant, dwAddGold, dwSumDalant, dwSumGold, pszFileName, CMgrAvatorItemHistoryreward_add_money158_next);
         };
-        void CMgrAvatorItemHistoryrollback_cashitem160_wrapper(struct CMgrAvatorItemHistory* _this, char* szRet, uint64_t lnUID, char* strItemCode, int nCash, char* pFileName)
+        static void CMgrAvatorItemHistoryrollback_cashitem160_wrapper(struct CMgrAvatorItemHistory* _this, char* szRet, uint64_t lnUID, char* strItemCode, int nCash, char* pFileName)
         {
            CMgrAvatorItemHistoryrollback_cashitem160_user(_this, szRet, lnUID, strItemCode, nCash, pFileName, CMgrAvatorItemHistoryrollback_cashitem160_next);
         };
-        void CMgrAvatorItemHistoryself_cancel_auto_trade162_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, char* pszFileName)
+        static void CMgrAvatorItemHistoryself_cancel_auto_trade162_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, char* pszFileName)
         {
            CMgrAvatorItemHistoryself_cancel_auto_trade162_user(_this, n, dwRegistSerial, pRegItem, pszFileName, CMgrAvatorItemHistoryself_cancel_auto_trade162_next);
         };
-        void CMgrAvatorItemHistorysell_item164_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _sell_offer* pOffer, char byOfferNum, unsigned int dwIncomeDalant, unsigned int dwIncomeGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorysell_item164_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _sell_offer* pOffer, char byOfferNum, unsigned int dwIncomeDalant, unsigned int dwIncomeGold, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorysell_item164_user(_this, n, pOffer, byOfferNum, dwIncomeDalant, dwIncomeGold, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorysell_item164_next);
         };
-        void CMgrAvatorItemHistorysell_unit166_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, char byFrameCode, float fGaugeRate, unsigned int dwSellMoney, unsigned int dwPayDalant, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorysell_unit166_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, char byFrameCode, float fGaugeRate, unsigned int dwSellMoney, unsigned int dwPayDalant, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorysell_unit166_user(_this, n, bySlotIndex, byFrameCode, fGaugeRate, dwSellMoney, dwPayDalant, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorysell_unit166_next);
         };
-        void CMgrAvatorItemHistorytake_ground_item168_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byItemBoxCode, struct _STORAGE_LIST::_db_con* pItem, char* pszThrowerName, unsigned int dwThrowerSerial, char* pszThrowerID, uint16_t wMonRecIndex, char* pMapCode, float* pfPos, char* pszFileName)
+        static void CMgrAvatorItemHistorytake_ground_item168_wrapper(struct CMgrAvatorItemHistory* _this, int n, char byItemBoxCode, struct _STORAGE_LIST::_db_con* pItem, char* pszThrowerName, unsigned int dwThrowerSerial, char* pszThrowerID, uint16_t wMonRecIndex, char* pMapCode, float* pfPos, char* pszFileName)
         {
            CMgrAvatorItemHistorytake_ground_item168_user(_this, n, byItemBoxCode, pItem, pszThrowerName, dwThrowerSerial, pszThrowerID, wMonRecIndex, pMapCode, pfPos, pszFileName, CMgrAvatorItemHistorytake_ground_item168_next);
         };
-        void CMgrAvatorItemHistorythrow_ground_item170_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pMapCode, float* pfPos, char* pszFileName)
+        static void CMgrAvatorItemHistorythrow_ground_item170_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pItem, char* pMapCode, float* pfPos, char* pszFileName)
         {
            CMgrAvatorItemHistorythrow_ground_item170_user(_this, n, pItem, pMapCode, pfPos, pszFileName, CMgrAvatorItemHistorythrow_ground_item170_next);
         };
-        void CMgrAvatorItemHistorytime_jade_effect_log172_wrapper(struct CMgrAvatorItemHistory* _this, char* pszItemName, struct _STORAGE_LIST::_db_con* pItem, bool bAdd, char* pszFileName)
+        static void CMgrAvatorItemHistorytime_jade_effect_log172_wrapper(struct CMgrAvatorItemHistory* _this, char* pszItemName, struct _STORAGE_LIST::_db_con* pItem, bool bAdd, char* pszFileName)
         {
            CMgrAvatorItemHistorytime_jade_effect_log172_user(_this, pszItemName, pItem, bAdd, pszFileName, CMgrAvatorItemHistorytime_jade_effect_log172_next);
         };
-        void CMgrAvatorItemHistorytime_out_cancel_auto_trade174_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, char* pszFileName)
+        static void CMgrAvatorItemHistorytime_out_cancel_auto_trade174_wrapper(struct CMgrAvatorItemHistory* _this, int n, unsigned int dwRegistSerial, struct _STORAGE_LIST::_db_con* pRegItem, char* pszFileName)
         {
            CMgrAvatorItemHistorytime_out_cancel_auto_trade174_user(_this, n, dwRegistSerial, pRegItem, pszFileName, CMgrAvatorItemHistorytime_out_cancel_auto_trade174_next);
         };
-        void CMgrAvatorItemHistorytrade176_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pOutItem, int nOutItemNum, unsigned int dwOutDalant, unsigned int dwOutGold, struct _STORAGE_LIST::_db_con* pInItem, int nInItemNum, unsigned int dwInDalant, unsigned int dwInGold, char* pszDstName, unsigned int dwDstSerial, char* pszDstID, unsigned int dwSumDalant, unsigned int dwSumGold, char* pMapCode, float* pfPos, char* pszFileName)
+        static void CMgrAvatorItemHistorytrade176_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pOutItem, int nOutItemNum, unsigned int dwOutDalant, unsigned int dwOutGold, struct _STORAGE_LIST::_db_con* pInItem, int nInItemNum, unsigned int dwInDalant, unsigned int dwInGold, char* pszDstName, unsigned int dwDstSerial, char* pszDstID, unsigned int dwSumDalant, unsigned int dwSumGold, char* pMapCode, float* pfPos, char* pszFileName)
         {
            CMgrAvatorItemHistorytrade176_user(_this, n, pOutItem, nOutItemNum, dwOutDalant, dwOutGold, pInItem, nInItemNum, dwInDalant, dwInGold, pszDstName, dwDstSerial, pszDstID, dwSumDalant, dwSumGold, pMapCode, pfPos, pszFileName, CMgrAvatorItemHistorytrade176_next);
         };
-        void CMgrAvatorItemHistorytrans_ground_item178_wrapper(struct CMgrAvatorItemHistory* _this, struct _STORAGE_LIST::_db_con* pItem, char* pszTakerName, unsigned int dwTakerSerial, char* pszTakerID, char* pszFileName)
+        static void CMgrAvatorItemHistorytrans_ground_item178_wrapper(struct CMgrAvatorItemHistory* _this, struct _STORAGE_LIST::_db_con* pItem, char* pszTakerName, unsigned int dwTakerSerial, char* pszTakerID, char* pszFileName)
         {
            CMgrAvatorItemHistorytrans_ground_item178_user(_this, pItem, pszTakerName, dwTakerSerial, pszTakerID, pszFileName, CMgrAvatorItemHistorytrans_ground_item178_next);
         };
-        void CMgrAvatorItemHistorytrunk_io_item180_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pIOItem, bool bInput, unsigned int dwFeeDalant, unsigned int dwNewDalant, char* pszFileName)
+        static void CMgrAvatorItemHistorytrunk_io_item180_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pIOItem, bool bInput, unsigned int dwFeeDalant, unsigned int dwNewDalant, char* pszFileName)
         {
            CMgrAvatorItemHistorytrunk_io_item180_user(_this, n, pIOItem, bInput, dwFeeDalant, dwNewDalant, pszFileName, CMgrAvatorItemHistorytrunk_io_item180_next);
         };
-        void CMgrAvatorItemHistorytrunk_io_money182_wrapper(struct CMgrAvatorItemHistory* _this, int n, bool bInput, unsigned int dwIODalant, unsigned int dwIOGold, unsigned int dwPayDalant, unsigned int dwInvenDalant, unsigned int dwInvenGold, unsigned int dwTrkDalant, unsigned int dwTrkGold, char* pszFileName)
+        static void CMgrAvatorItemHistorytrunk_io_money182_wrapper(struct CMgrAvatorItemHistory* _this, int n, bool bInput, unsigned int dwIODalant, unsigned int dwIOGold, unsigned int dwPayDalant, unsigned int dwInvenDalant, unsigned int dwInvenGold, unsigned int dwTrkDalant, unsigned int dwTrkGold, char* pszFileName)
         {
            CMgrAvatorItemHistorytrunk_io_money182_user(_this, n, bInput, dwIODalant, dwIOGold, dwPayDalant, dwInvenDalant, dwInvenGold, dwTrkDalant, dwTrkGold, pszFileName, CMgrAvatorItemHistorytrunk_io_money182_next);
         };
-        void CMgrAvatorItemHistorytrunk_swap_item184_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pInputItem, struct _STORAGE_LIST::_db_con* pOutputItem, unsigned int dwFeeDalant, unsigned int dwNewDalant, char* pszFileName)
+        static void CMgrAvatorItemHistorytrunk_swap_item184_wrapper(struct CMgrAvatorItemHistory* _this, int n, struct _STORAGE_LIST::_db_con* pInputItem, struct _STORAGE_LIST::_db_con* pOutputItem, unsigned int dwFeeDalant, unsigned int dwNewDalant, char* pszFileName)
         {
            CMgrAvatorItemHistorytrunk_swap_item184_user(_this, n, pInputItem, pOutputItem, dwFeeDalant, dwNewDalant, pszFileName, CMgrAvatorItemHistorytrunk_swap_item184_next);
         };
-        void CMgrAvatorItemHistorytuning_unit186_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData, int* pnPayMoney, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
+        static void CMgrAvatorItemHistorytuning_unit186_wrapper(struct CMgrAvatorItemHistory* _this, int n, char bySlotIndex, struct _UNIT_DB_BASE::_LIST* pData, int* pnPayMoney, unsigned int dwNewDalant, unsigned int dwNewGold, char* pszFileName)
         {
            CMgrAvatorItemHistorytuning_unit186_user(_this, n, bySlotIndex, pData, pnPayMoney, dwNewDalant, dwNewGold, pszFileName, CMgrAvatorItemHistorytuning_unit186_next);
         };
-        void CMgrAvatorItemHistoryused_cash188_wrapper(struct CMgrAvatorItemHistory* _this, int nCurCash, int nUseCash, char* pFileName)
+        static void CMgrAvatorItemHistoryused_cash188_wrapper(struct CMgrAvatorItemHistory* _this, int nCurCash, int nUseCash, char* pFileName)
         {
            CMgrAvatorItemHistoryused_cash188_user(_this, nCurCash, nUseCash, pFileName, CMgrAvatorItemHistoryused_cash188_next);
         };
-        void CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_wrapper(struct CMgrAvatorItemHistory* _this)
+        static void CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_wrapper(struct CMgrAvatorItemHistory* _this)
         {
            CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_user(_this, CMgrAvatorItemHistorydtor_CMgrAvatorItemHistory190_next);
         };
         
-        hook_record CMgrAvatorItemHistory_functions[] = {
+        static hook_record CMgrAvatorItemHistory_functions[] = {
         {   (LPVOID)0x1402357e0L,
             (LPVOID *)&CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_user,
             (LPVOID *)&CMgrAvatorItemHistoryctor_CMgrAvatorItemHistory2_next,
@@ -1059,5 +1059,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

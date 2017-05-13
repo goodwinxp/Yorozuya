@@ -8,21 +8,21 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::__respond_checkctor___respond_check2_ptr __respond_checkctor___respond_check2_next(nullptr);
-        info::__respond_checkctor___respond_check2_clbk __respond_checkctor___respond_check2_user(nullptr);
-        info::__respond_checkdtor___respond_check6_ptr __respond_checkdtor___respond_check6_next(nullptr);
-        info::__respond_checkdtor___respond_check6_clbk __respond_checkdtor___respond_check6_user(nullptr);
+        static info::__respond_checkctor___respond_check2_ptr __respond_checkctor___respond_check2_next(nullptr);
+        static info::__respond_checkctor___respond_check2_clbk __respond_checkctor___respond_check2_user(nullptr);
+        static info::__respond_checkdtor___respond_check6_ptr __respond_checkdtor___respond_check6_next(nullptr);
+        static info::__respond_checkdtor___respond_check6_clbk __respond_checkdtor___respond_check6_user(nullptr);
         
-        void __respond_checkctor___respond_check2_wrapper(struct __respond_check* _this)
+        static void __respond_checkctor___respond_check2_wrapper(struct __respond_check* _this)
         {
            __respond_checkctor___respond_check2_user(_this, __respond_checkctor___respond_check2_next);
         };
-        void __respond_checkdtor___respond_check6_wrapper(struct __respond_check* _this)
+        static void __respond_checkdtor___respond_check6_wrapper(struct __respond_check* _this)
         {
            __respond_checkdtor___respond_check6_user(_this, __respond_checkdtor___respond_check6_next);
         };
         
-        hook_record __respond_check_functions[] = {
+        static hook_record __respond_check_functions[] = {
         {   (LPVOID)0x14027a5a0L,
             (LPVOID *)&__respond_checkctor___respond_check2_user,
             (LPVOID *)&__respond_checkctor___respond_check2_next,
@@ -36,5 +36,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

@@ -8,41 +8,41 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CLuaCommandExctor_CLuaCommandEx2_ptr CLuaCommandExctor_CLuaCommandEx2_next(nullptr);
-        info::CLuaCommandExctor_CLuaCommandEx2_clbk CLuaCommandExctor_CLuaCommandEx2_user(nullptr);
-        info::CLuaCommandExGetScriptName4_ptr CLuaCommandExGetScriptName4_next(nullptr);
-        info::CLuaCommandExGetScriptName4_clbk CLuaCommandExGetScriptName4_user(nullptr);
-        info::CLuaCommandExSetCmd6_ptr CLuaCommandExSetCmd6_next(nullptr);
-        info::CLuaCommandExSetCmd6_clbk CLuaCommandExSetCmd6_user(nullptr);
-        info::CLuaCommandExdtor_CLuaCommandEx10_ptr CLuaCommandExdtor_CLuaCommandEx10_next(nullptr);
-        info::CLuaCommandExdtor_CLuaCommandEx10_clbk CLuaCommandExdtor_CLuaCommandEx10_user(nullptr);
+        static info::CLuaCommandExctor_CLuaCommandEx2_ptr CLuaCommandExctor_CLuaCommandEx2_next(nullptr);
+        static info::CLuaCommandExctor_CLuaCommandEx2_clbk CLuaCommandExctor_CLuaCommandEx2_user(nullptr);
+        static info::CLuaCommandExGetScriptName4_ptr CLuaCommandExGetScriptName4_next(nullptr);
+        static info::CLuaCommandExGetScriptName4_clbk CLuaCommandExGetScriptName4_user(nullptr);
+        static info::CLuaCommandExSetCmd6_ptr CLuaCommandExSetCmd6_next(nullptr);
+        static info::CLuaCommandExSetCmd6_clbk CLuaCommandExSetCmd6_user(nullptr);
+        static info::CLuaCommandExdtor_CLuaCommandEx10_ptr CLuaCommandExdtor_CLuaCommandEx10_next(nullptr);
+        static info::CLuaCommandExdtor_CLuaCommandEx10_clbk CLuaCommandExdtor_CLuaCommandEx10_user(nullptr);
         
-        info::CLuaCommandEx___Statector__State2_ptr CLuaCommandEx___Statector__State2_next(nullptr);
-        info::CLuaCommandEx___Statector__State2_clbk CLuaCommandEx___Statector__State2_user(nullptr);
+        static info::CLuaCommandEx___Statector__State2_ptr CLuaCommandEx___Statector__State2_next(nullptr);
+        static info::CLuaCommandEx___Statector__State2_clbk CLuaCommandEx___Statector__State2_user(nullptr);
         
-        void CLuaCommandExctor_CLuaCommandEx2_wrapper(struct CLuaCommandEx* _this)
+        static void CLuaCommandExctor_CLuaCommandEx2_wrapper(struct CLuaCommandEx* _this)
         {
            CLuaCommandExctor_CLuaCommandEx2_user(_this, CLuaCommandExctor_CLuaCommandEx2_next);
         };
-        char* CLuaCommandExGetScriptName4_wrapper(struct CLuaCommandEx* _this)
+        static char* CLuaCommandExGetScriptName4_wrapper(struct CLuaCommandEx* _this)
         {
            return CLuaCommandExGetScriptName4_user(_this, CLuaCommandExGetScriptName4_next);
         };
-        void CLuaCommandExSetCmd6_wrapper(struct CLuaCommandEx* _this, char byType, char* strScriptName, char* strName)
+        static void CLuaCommandExSetCmd6_wrapper(struct CLuaCommandEx* _this, char byType, char* strScriptName, char* strName)
         {
            CLuaCommandExSetCmd6_user(_this, byType, strScriptName, strName, CLuaCommandExSetCmd6_next);
         };
-        void CLuaCommandExdtor_CLuaCommandEx10_wrapper(struct CLuaCommandEx* _this)
+        static void CLuaCommandExdtor_CLuaCommandEx10_wrapper(struct CLuaCommandEx* _this)
         {
            CLuaCommandExdtor_CLuaCommandEx10_user(_this, CLuaCommandExdtor_CLuaCommandEx10_next);
         };
         
-        void CLuaCommandEx___Statector__State2_wrapper(struct CLuaCommandEx::_State* _this)
+        static void CLuaCommandEx___Statector__State2_wrapper(struct CLuaCommandEx::_State* _this)
         {
            CLuaCommandEx___Statector__State2_user(_this, CLuaCommandEx___Statector__State2_next);
         };
         
-        hook_record CLuaCommandEx_functions[] = {
+        static hook_record CLuaCommandEx_functions[] = {
         {   (LPVOID)0x1404024e0L,
             (LPVOID *)&CLuaCommandExctor_CLuaCommandEx2_user,
             (LPVOID *)&CLuaCommandExctor_CLuaCommandEx2_next,
@@ -72,5 +72,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

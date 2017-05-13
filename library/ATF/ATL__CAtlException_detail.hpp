@@ -10,15 +10,15 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::ATL__CAtlExceptionctor_CAtlException1_ptr ATL__CAtlExceptionctor_CAtlException1_next(nullptr);
-            info::ATL__CAtlExceptionctor_CAtlException1_clbk ATL__CAtlExceptionctor_CAtlException1_user(nullptr);
+            static info::ATL__CAtlExceptionctor_CAtlException1_ptr ATL__CAtlExceptionctor_CAtlException1_next(nullptr);
+            static info::ATL__CAtlExceptionctor_CAtlException1_clbk ATL__CAtlExceptionctor_CAtlException1_user(nullptr);
             
-            void ATL__CAtlExceptionctor_CAtlException1_wrapper(struct ATL::CAtlException* _this, HRESULT hr)
+            static void ATL__CAtlExceptionctor_CAtlException1_wrapper(struct ATL::CAtlException* _this, HRESULT hr)
             {
                ATL__CAtlExceptionctor_CAtlException1_user(_this, hr, ATL__CAtlExceptionctor_CAtlException1_next);
             };
             
-            hook_record CAtlException_functions[] = {
+            static hook_record CAtlException_functions[] = {
             {   (LPVOID)0x14066dd10L,
                 (LPVOID *)&ATL__CAtlExceptionctor_CAtlException1_user,
                 (LPVOID *)&ATL__CAtlExceptionctor_CAtlException1_next,
@@ -27,6 +27,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace ATL
 END_ATF_NAMESPACE

@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CSizector_CSize1_ptr CSizector_CSize1_next(nullptr);
-        info::CSizector_CSize1_clbk CSizector_CSize1_user(nullptr);
-        info::CSizector_CSize2_ptr CSizector_CSize2_next(nullptr);
-        info::CSizector_CSize2_clbk CSizector_CSize2_user(nullptr);
-        info::CSizector_CSize3_ptr CSizector_CSize3_next(nullptr);
-        info::CSizector_CSize3_clbk CSizector_CSize3_user(nullptr);
-        info::CSizector_CSize4_ptr CSizector_CSize4_next(nullptr);
-        info::CSizector_CSize4_clbk CSizector_CSize4_user(nullptr);
-        info::CSizector_CSize5_ptr CSizector_CSize5_next(nullptr);
-        info::CSizector_CSize5_clbk CSizector_CSize5_user(nullptr);
-        info::CSizeSetSize6_ptr CSizeSetSize6_next(nullptr);
-        info::CSizeSetSize6_clbk CSizeSetSize6_user(nullptr);
+        static info::CSizector_CSize1_ptr CSizector_CSize1_next(nullptr);
+        static info::CSizector_CSize1_clbk CSizector_CSize1_user(nullptr);
+        static info::CSizector_CSize2_ptr CSizector_CSize2_next(nullptr);
+        static info::CSizector_CSize2_clbk CSizector_CSize2_user(nullptr);
+        static info::CSizector_CSize3_ptr CSizector_CSize3_next(nullptr);
+        static info::CSizector_CSize3_clbk CSizector_CSize3_user(nullptr);
+        static info::CSizector_CSize4_ptr CSizector_CSize4_next(nullptr);
+        static info::CSizector_CSize4_clbk CSizector_CSize4_user(nullptr);
+        static info::CSizector_CSize5_ptr CSizector_CSize5_next(nullptr);
+        static info::CSizector_CSize5_clbk CSizector_CSize5_user(nullptr);
+        static info::CSizeSetSize6_ptr CSizeSetSize6_next(nullptr);
+        static info::CSizeSetSize6_clbk CSizeSetSize6_user(nullptr);
         
-        void CSizector_CSize1_wrapper(struct CSize* _this, int initCX, int initCY)
+        static void CSizector_CSize1_wrapper(struct CSize* _this, int initCX, int initCY)
         {
            CSizector_CSize1_user(_this, initCX, initCY, CSizector_CSize1_next);
         };
-        void CSizector_CSize2_wrapper(struct CSize* _this, struct tagPOINT initPt)
+        static void CSizector_CSize2_wrapper(struct CSize* _this, struct tagPOINT initPt)
         {
            CSizector_CSize2_user(_this, initPt, CSizector_CSize2_next);
         };
-        void CSizector_CSize3_wrapper(struct CSize* _this, struct tagSIZE initSize)
+        static void CSizector_CSize3_wrapper(struct CSize* _this, struct tagSIZE initSize)
         {
            CSizector_CSize3_user(_this, initSize, CSizector_CSize3_next);
         };
-        void CSizector_CSize4_wrapper(struct CSize* _this, unsigned int dwSize)
+        static void CSizector_CSize4_wrapper(struct CSize* _this, unsigned int dwSize)
         {
            CSizector_CSize4_user(_this, dwSize, CSizector_CSize4_next);
         };
-        void CSizector_CSize5_wrapper(struct CSize* _this)
+        static void CSizector_CSize5_wrapper(struct CSize* _this)
         {
            CSizector_CSize5_user(_this, CSizector_CSize5_next);
         };
-        void CSizeSetSize6_wrapper(struct CSize* _this, int CX, int CY)
+        static void CSizeSetSize6_wrapper(struct CSize* _this, int CX, int CY)
         {
            CSizeSetSize6_user(_this, CX, CY, CSizeSetSize6_next);
         };
         
-        hook_record CSize_functions[] = {
+        static hook_record CSize_functions[] = {
         {   (LPVOID)0x1406705f0L,
             (LPVOID *)&CSizector_CSize1_user,
             (LPVOID *)&CSizector_CSize1_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

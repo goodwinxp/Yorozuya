@@ -8,195 +8,195 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::TRC_AutoTradeAddGDalant2_ptr TRC_AutoTradeAddGDalant2_next(nullptr);
-        info::TRC_AutoTradeAddGDalant2_clbk TRC_AutoTradeAddGDalant2_user(nullptr);
-        info::TRC_AutoTradeCalcPrice4_ptr TRC_AutoTradeCalcPrice4_next(nullptr);
-        info::TRC_AutoTradeCalcPrice4_clbk TRC_AutoTradeCalcPrice4_user(nullptr);
-        info::TRC_AutoTradeChangeOwner6_ptr TRC_AutoTradeChangeOwner6_next(nullptr);
-        info::TRC_AutoTradeChangeOwner6_clbk TRC_AutoTradeChangeOwner6_user(nullptr);
-        info::TRC_AutoTradeChangeTaxRate8_ptr TRC_AutoTradeChangeTaxRate8_next(nullptr);
-        info::TRC_AutoTradeChangeTaxRate8_clbk TRC_AutoTradeChangeTaxRate8_user(nullptr);
-        info::TRC_AutoTradeChangeTaxRate10_ptr TRC_AutoTradeChangeTaxRate10_next(nullptr);
-        info::TRC_AutoTradeChangeTaxRate10_clbk TRC_AutoTradeChangeTaxRate10_user(nullptr);
-        info::TRC_AutoTradeInitialzie12_ptr TRC_AutoTradeInitialzie12_next(nullptr);
-        info::TRC_AutoTradeInitialzie12_clbk TRC_AutoTradeInitialzie12_user(nullptr);
-        info::TRC_AutoTradeIsMaster14_ptr TRC_AutoTradeIsMaster14_next(nullptr);
-        info::TRC_AutoTradeIsMaster14_clbk TRC_AutoTradeIsMaster14_user(nullptr);
-        info::TRC_AutoTradeIsOwnerGuild16_ptr TRC_AutoTradeIsOwnerGuild16_next(nullptr);
-        info::TRC_AutoTradeIsOwnerGuild16_clbk TRC_AutoTradeIsOwnerGuild16_user(nullptr);
-        info::TRC_AutoTradePushDQSData18_ptr TRC_AutoTradePushDQSData18_next(nullptr);
-        info::TRC_AutoTradePushDQSData18_clbk TRC_AutoTradePushDQSData18_user(nullptr);
-        info::TRC_AutoTradePushDQSData_GuildInMoney20_ptr TRC_AutoTradePushDQSData_GuildInMoney20_next(nullptr);
-        info::TRC_AutoTradePushDQSData_GuildInMoney20_clbk TRC_AutoTradePushDQSData_GuildInMoney20_user(nullptr);
-        info::TRC_AutoTradeSendMsg_PatriarchTaxRate22_ptr TRC_AutoTradeSendMsg_PatriarchTaxRate22_next(nullptr);
-        info::TRC_AutoTradeSendMsg_PatriarchTaxRate22_clbk TRC_AutoTradeSendMsg_PatriarchTaxRate22_user(nullptr);
-        info::TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_ptr TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_next(nullptr);
-        info::TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_clbk TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_user(nullptr);
-        info::TRC_AutoTradeSetGuildMaintainMoney26_ptr TRC_AutoTradeSetGuildMaintainMoney26_next(nullptr);
-        info::TRC_AutoTradeSetGuildMaintainMoney26_clbk TRC_AutoTradeSetGuildMaintainMoney26_user(nullptr);
-        info::TRC_AutoTradeSetPatriarchTaxMoney28_ptr TRC_AutoTradeSetPatriarchTaxMoney28_next(nullptr);
-        info::TRC_AutoTradeSetPatriarchTaxMoney28_clbk TRC_AutoTradeSetPatriarchTaxMoney28_user(nullptr);
-        info::TRC_AutoTradector_TRC_AutoTrade30_ptr TRC_AutoTradector_TRC_AutoTrade30_next(nullptr);
-        info::TRC_AutoTradector_TRC_AutoTrade30_clbk TRC_AutoTradector_TRC_AutoTrade30_user(nullptr);
-        info::TRC_AutoTradector_TRC_AutoTrade32_ptr TRC_AutoTradector_TRC_AutoTrade32_next(nullptr);
-        info::TRC_AutoTradector_TRC_AutoTrade32_clbk TRC_AutoTradector_TRC_AutoTrade32_user(nullptr);
-        info::TRC_AutoTrade_db_load34_ptr TRC_AutoTrade_db_load34_next(nullptr);
-        info::TRC_AutoTrade_db_load34_clbk TRC_AutoTrade_db_load34_user(nullptr);
-        info::TRC_AutoTrade_insert_info36_ptr TRC_AutoTrade_insert_info36_next(nullptr);
-        info::TRC_AutoTrade_insert_info36_clbk TRC_AutoTrade_insert_info36_user(nullptr);
-        info::TRC_AutoTradecheck40_ptr TRC_AutoTradecheck40_next(nullptr);
-        info::TRC_AutoTradecheck40_clbk TRC_AutoTradecheck40_user(nullptr);
-        info::TRC_AutoTradegetOwnerGuild42_ptr TRC_AutoTradegetOwnerGuild42_next(nullptr);
-        info::TRC_AutoTradegetOwnerGuild42_clbk TRC_AutoTradegetOwnerGuild42_user(nullptr);
-        info::TRC_AutoTradegetSuggestedTime44_ptr TRC_AutoTradegetSuggestedTime44_next(nullptr);
-        info::TRC_AutoTradegetSuggestedTime44_clbk TRC_AutoTradegetSuggestedTime44_user(nullptr);
-        info::TRC_AutoTradeget_guidlname46_ptr TRC_AutoTradeget_guidlname46_next(nullptr);
-        info::TRC_AutoTradeget_guidlname46_clbk TRC_AutoTradeget_guidlname46_user(nullptr);
-        info::TRC_AutoTradeget_next_tax48_ptr TRC_AutoTradeget_next_tax48_next(nullptr);
-        info::TRC_AutoTradeget_next_tax48_clbk TRC_AutoTradeget_next_tax48_user(nullptr);
-        info::TRC_AutoTradeget_race50_ptr TRC_AutoTradeget_race50_next(nullptr);
-        info::TRC_AutoTradeget_race50_clbk TRC_AutoTradeget_race50_user(nullptr);
-        info::TRC_AutoTradeget_taxrate52_ptr TRC_AutoTradeget_taxrate52_next(nullptr);
-        info::TRC_AutoTradeget_taxrate52_clbk TRC_AutoTradeget_taxrate52_user(nullptr);
-        info::TRC_AutoTradehis_income_money54_ptr TRC_AutoTradehis_income_money54_next(nullptr);
-        info::TRC_AutoTradehis_income_money54_clbk TRC_AutoTradehis_income_money54_user(nullptr);
-        info::TRC_AutoTradehistory_used_cheet_changetaxrate56_ptr TRC_AutoTradehistory_used_cheet_changetaxrate56_next(nullptr);
-        info::TRC_AutoTradehistory_used_cheet_changetaxrate56_clbk TRC_AutoTradehistory_used_cheet_changetaxrate56_user(nullptr);
-        info::TRC_AutoTradesendmsg_taxrate58_ptr TRC_AutoTradesendmsg_taxrate58_next(nullptr);
-        info::TRC_AutoTradesendmsg_taxrate58_clbk TRC_AutoTradesendmsg_taxrate58_user(nullptr);
-        info::TRC_AutoTradeset_owner60_ptr TRC_AutoTradeset_owner60_next(nullptr);
-        info::TRC_AutoTradeset_owner60_clbk TRC_AutoTradeset_owner60_user(nullptr);
-        info::TRC_AutoTradeset_suggested62_ptr TRC_AutoTradeset_suggested62_next(nullptr);
-        info::TRC_AutoTradeset_suggested62_clbk TRC_AutoTradeset_suggested62_user(nullptr);
-        info::TRC_AutoTradedtor_TRC_AutoTrade64_ptr TRC_AutoTradedtor_TRC_AutoTrade64_next(nullptr);
-        info::TRC_AutoTradedtor_TRC_AutoTrade64_clbk TRC_AutoTradedtor_TRC_AutoTrade64_user(nullptr);
+        static info::TRC_AutoTradeAddGDalant2_ptr TRC_AutoTradeAddGDalant2_next(nullptr);
+        static info::TRC_AutoTradeAddGDalant2_clbk TRC_AutoTradeAddGDalant2_user(nullptr);
+        static info::TRC_AutoTradeCalcPrice4_ptr TRC_AutoTradeCalcPrice4_next(nullptr);
+        static info::TRC_AutoTradeCalcPrice4_clbk TRC_AutoTradeCalcPrice4_user(nullptr);
+        static info::TRC_AutoTradeChangeOwner6_ptr TRC_AutoTradeChangeOwner6_next(nullptr);
+        static info::TRC_AutoTradeChangeOwner6_clbk TRC_AutoTradeChangeOwner6_user(nullptr);
+        static info::TRC_AutoTradeChangeTaxRate8_ptr TRC_AutoTradeChangeTaxRate8_next(nullptr);
+        static info::TRC_AutoTradeChangeTaxRate8_clbk TRC_AutoTradeChangeTaxRate8_user(nullptr);
+        static info::TRC_AutoTradeChangeTaxRate10_ptr TRC_AutoTradeChangeTaxRate10_next(nullptr);
+        static info::TRC_AutoTradeChangeTaxRate10_clbk TRC_AutoTradeChangeTaxRate10_user(nullptr);
+        static info::TRC_AutoTradeInitialzie12_ptr TRC_AutoTradeInitialzie12_next(nullptr);
+        static info::TRC_AutoTradeInitialzie12_clbk TRC_AutoTradeInitialzie12_user(nullptr);
+        static info::TRC_AutoTradeIsMaster14_ptr TRC_AutoTradeIsMaster14_next(nullptr);
+        static info::TRC_AutoTradeIsMaster14_clbk TRC_AutoTradeIsMaster14_user(nullptr);
+        static info::TRC_AutoTradeIsOwnerGuild16_ptr TRC_AutoTradeIsOwnerGuild16_next(nullptr);
+        static info::TRC_AutoTradeIsOwnerGuild16_clbk TRC_AutoTradeIsOwnerGuild16_user(nullptr);
+        static info::TRC_AutoTradePushDQSData18_ptr TRC_AutoTradePushDQSData18_next(nullptr);
+        static info::TRC_AutoTradePushDQSData18_clbk TRC_AutoTradePushDQSData18_user(nullptr);
+        static info::TRC_AutoTradePushDQSData_GuildInMoney20_ptr TRC_AutoTradePushDQSData_GuildInMoney20_next(nullptr);
+        static info::TRC_AutoTradePushDQSData_GuildInMoney20_clbk TRC_AutoTradePushDQSData_GuildInMoney20_user(nullptr);
+        static info::TRC_AutoTradeSendMsg_PatriarchTaxRate22_ptr TRC_AutoTradeSendMsg_PatriarchTaxRate22_next(nullptr);
+        static info::TRC_AutoTradeSendMsg_PatriarchTaxRate22_clbk TRC_AutoTradeSendMsg_PatriarchTaxRate22_user(nullptr);
+        static info::TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_ptr TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_next(nullptr);
+        static info::TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_clbk TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_user(nullptr);
+        static info::TRC_AutoTradeSetGuildMaintainMoney26_ptr TRC_AutoTradeSetGuildMaintainMoney26_next(nullptr);
+        static info::TRC_AutoTradeSetGuildMaintainMoney26_clbk TRC_AutoTradeSetGuildMaintainMoney26_user(nullptr);
+        static info::TRC_AutoTradeSetPatriarchTaxMoney28_ptr TRC_AutoTradeSetPatriarchTaxMoney28_next(nullptr);
+        static info::TRC_AutoTradeSetPatriarchTaxMoney28_clbk TRC_AutoTradeSetPatriarchTaxMoney28_user(nullptr);
+        static info::TRC_AutoTradector_TRC_AutoTrade30_ptr TRC_AutoTradector_TRC_AutoTrade30_next(nullptr);
+        static info::TRC_AutoTradector_TRC_AutoTrade30_clbk TRC_AutoTradector_TRC_AutoTrade30_user(nullptr);
+        static info::TRC_AutoTradector_TRC_AutoTrade32_ptr TRC_AutoTradector_TRC_AutoTrade32_next(nullptr);
+        static info::TRC_AutoTradector_TRC_AutoTrade32_clbk TRC_AutoTradector_TRC_AutoTrade32_user(nullptr);
+        static info::TRC_AutoTrade_db_load34_ptr TRC_AutoTrade_db_load34_next(nullptr);
+        static info::TRC_AutoTrade_db_load34_clbk TRC_AutoTrade_db_load34_user(nullptr);
+        static info::TRC_AutoTrade_insert_info36_ptr TRC_AutoTrade_insert_info36_next(nullptr);
+        static info::TRC_AutoTrade_insert_info36_clbk TRC_AutoTrade_insert_info36_user(nullptr);
+        static info::TRC_AutoTradecheck40_ptr TRC_AutoTradecheck40_next(nullptr);
+        static info::TRC_AutoTradecheck40_clbk TRC_AutoTradecheck40_user(nullptr);
+        static info::TRC_AutoTradegetOwnerGuild42_ptr TRC_AutoTradegetOwnerGuild42_next(nullptr);
+        static info::TRC_AutoTradegetOwnerGuild42_clbk TRC_AutoTradegetOwnerGuild42_user(nullptr);
+        static info::TRC_AutoTradegetSuggestedTime44_ptr TRC_AutoTradegetSuggestedTime44_next(nullptr);
+        static info::TRC_AutoTradegetSuggestedTime44_clbk TRC_AutoTradegetSuggestedTime44_user(nullptr);
+        static info::TRC_AutoTradeget_guidlname46_ptr TRC_AutoTradeget_guidlname46_next(nullptr);
+        static info::TRC_AutoTradeget_guidlname46_clbk TRC_AutoTradeget_guidlname46_user(nullptr);
+        static info::TRC_AutoTradeget_next_tax48_ptr TRC_AutoTradeget_next_tax48_next(nullptr);
+        static info::TRC_AutoTradeget_next_tax48_clbk TRC_AutoTradeget_next_tax48_user(nullptr);
+        static info::TRC_AutoTradeget_race50_ptr TRC_AutoTradeget_race50_next(nullptr);
+        static info::TRC_AutoTradeget_race50_clbk TRC_AutoTradeget_race50_user(nullptr);
+        static info::TRC_AutoTradeget_taxrate52_ptr TRC_AutoTradeget_taxrate52_next(nullptr);
+        static info::TRC_AutoTradeget_taxrate52_clbk TRC_AutoTradeget_taxrate52_user(nullptr);
+        static info::TRC_AutoTradehis_income_money54_ptr TRC_AutoTradehis_income_money54_next(nullptr);
+        static info::TRC_AutoTradehis_income_money54_clbk TRC_AutoTradehis_income_money54_user(nullptr);
+        static info::TRC_AutoTradehistory_used_cheet_changetaxrate56_ptr TRC_AutoTradehistory_used_cheet_changetaxrate56_next(nullptr);
+        static info::TRC_AutoTradehistory_used_cheet_changetaxrate56_clbk TRC_AutoTradehistory_used_cheet_changetaxrate56_user(nullptr);
+        static info::TRC_AutoTradesendmsg_taxrate58_ptr TRC_AutoTradesendmsg_taxrate58_next(nullptr);
+        static info::TRC_AutoTradesendmsg_taxrate58_clbk TRC_AutoTradesendmsg_taxrate58_user(nullptr);
+        static info::TRC_AutoTradeset_owner60_ptr TRC_AutoTradeset_owner60_next(nullptr);
+        static info::TRC_AutoTradeset_owner60_clbk TRC_AutoTradeset_owner60_user(nullptr);
+        static info::TRC_AutoTradeset_suggested62_ptr TRC_AutoTradeset_suggested62_next(nullptr);
+        static info::TRC_AutoTradeset_suggested62_clbk TRC_AutoTradeset_suggested62_user(nullptr);
+        static info::TRC_AutoTradedtor_TRC_AutoTrade64_ptr TRC_AutoTradedtor_TRC_AutoTrade64_next(nullptr);
+        static info::TRC_AutoTradedtor_TRC_AutoTrade64_clbk TRC_AutoTradedtor_TRC_AutoTrade64_user(nullptr);
         
-        void TRC_AutoTradeAddGDalant2_wrapper(struct TRC_AutoTrade* _this, char* pdata)
+        static void TRC_AutoTradeAddGDalant2_wrapper(struct TRC_AutoTrade* _this, char* pdata)
         {
            TRC_AutoTradeAddGDalant2_user(_this, pdata, TRC_AutoTradeAddGDalant2_next);
         };
-        unsigned int TRC_AutoTradeCalcPrice4_wrapper(struct TRC_AutoTrade* _this, unsigned int nGuildSerial, unsigned int nPrice)
+        static unsigned int TRC_AutoTradeCalcPrice4_wrapper(struct TRC_AutoTrade* _this, unsigned int nGuildSerial, unsigned int nPrice)
         {
            return TRC_AutoTradeCalcPrice4_user(_this, nGuildSerial, nPrice, TRC_AutoTradeCalcPrice4_next);
         };
-        int TRC_AutoTradeChangeOwner6_wrapper(struct TRC_AutoTrade* _this, struct CGuild* pGuild)
+        static int TRC_AutoTradeChangeOwner6_wrapper(struct TRC_AutoTrade* _this, struct CGuild* pGuild)
         {
            return TRC_AutoTradeChangeOwner6_user(_this, pGuild, TRC_AutoTradeChangeOwner6_next);
         };
-        int TRC_AutoTradeChangeTaxRate8_wrapper(struct TRC_AutoTrade* _this, float fNewTaxRate)
+        static int TRC_AutoTradeChangeTaxRate8_wrapper(struct TRC_AutoTrade* _this, float fNewTaxRate)
         {
            return TRC_AutoTradeChangeTaxRate8_user(_this, fNewTaxRate, TRC_AutoTradeChangeTaxRate8_next);
         };
-        void TRC_AutoTradeChangeTaxRate10_wrapper(struct TRC_AutoTrade* _this)
+        static void TRC_AutoTradeChangeTaxRate10_wrapper(struct TRC_AutoTrade* _this)
         {
            TRC_AutoTradeChangeTaxRate10_user(_this, TRC_AutoTradeChangeTaxRate10_next);
         };
-        bool TRC_AutoTradeInitialzie12_wrapper(struct TRC_AutoTrade* _this)
+        static bool TRC_AutoTradeInitialzie12_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradeInitialzie12_user(_this, TRC_AutoTradeInitialzie12_next);
         };
-        bool TRC_AutoTradeIsMaster14_wrapper(struct TRC_AutoTrade* _this, unsigned int dwSerial)
+        static bool TRC_AutoTradeIsMaster14_wrapper(struct TRC_AutoTrade* _this, unsigned int dwSerial)
         {
            return TRC_AutoTradeIsMaster14_user(_this, dwSerial, TRC_AutoTradeIsMaster14_next);
         };
-        bool TRC_AutoTradeIsOwnerGuild16_wrapper(struct TRC_AutoTrade* _this, unsigned int nGuildSerial)
+        static bool TRC_AutoTradeIsOwnerGuild16_wrapper(struct TRC_AutoTrade* _this, unsigned int nGuildSerial)
         {
            return TRC_AutoTradeIsOwnerGuild16_user(_this, nGuildSerial, TRC_AutoTradeIsOwnerGuild16_next);
         };
-        void TRC_AutoTradePushDQSData18_wrapper(struct TRC_AutoTrade* _this)
+        static void TRC_AutoTradePushDQSData18_wrapper(struct TRC_AutoTrade* _this)
         {
            TRC_AutoTradePushDQSData18_user(_this, TRC_AutoTradePushDQSData18_next);
         };
-        void TRC_AutoTradePushDQSData_GuildInMoney20_wrapper(struct TRC_AutoTrade* _this, unsigned int dwRetPrice, unsigned int dwSeller)
+        static void TRC_AutoTradePushDQSData_GuildInMoney20_wrapper(struct TRC_AutoTrade* _this, unsigned int dwRetPrice, unsigned int dwSeller)
         {
            TRC_AutoTradePushDQSData_GuildInMoney20_user(_this, dwRetPrice, dwSeller, TRC_AutoTradePushDQSData_GuildInMoney20_next);
         };
-        void TRC_AutoTradeSendMsg_PatriarchTaxRate22_wrapper(struct TRC_AutoTrade* _this, int n)
+        static void TRC_AutoTradeSendMsg_PatriarchTaxRate22_wrapper(struct TRC_AutoTrade* _this, int n)
         {
            TRC_AutoTradeSendMsg_PatriarchTaxRate22_user(_this, n, TRC_AutoTradeSendMsg_PatriarchTaxRate22_next);
         };
-        void TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_wrapper(struct TRC_AutoTrade* _this, int n)
+        static void TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_wrapper(struct TRC_AutoTrade* _this, int n)
         {
            TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_user(_this, n, TRC_AutoTradeSendMsg_UserLogInNotifyTaxRate24_next);
         };
-        void TRC_AutoTradeSetGuildMaintainMoney26_wrapper(struct TRC_AutoTrade* _this, unsigned int dwTax, unsigned int dwSeller)
+        static void TRC_AutoTradeSetGuildMaintainMoney26_wrapper(struct TRC_AutoTrade* _this, unsigned int dwTax, unsigned int dwSeller)
         {
            TRC_AutoTradeSetGuildMaintainMoney26_user(_this, dwTax, dwSeller, TRC_AutoTradeSetGuildMaintainMoney26_next);
         };
-        void TRC_AutoTradeSetPatriarchTaxMoney28_wrapper(struct TRC_AutoTrade* _this, unsigned int dwTax)
+        static void TRC_AutoTradeSetPatriarchTaxMoney28_wrapper(struct TRC_AutoTrade* _this, unsigned int dwTax)
         {
            TRC_AutoTradeSetPatriarchTaxMoney28_user(_this, dwTax, TRC_AutoTradeSetPatriarchTaxMoney28_next);
         };
-        void TRC_AutoTradector_TRC_AutoTrade30_wrapper(struct TRC_AutoTrade* _this, char byRace)
+        static void TRC_AutoTradector_TRC_AutoTrade30_wrapper(struct TRC_AutoTrade* _this, char byRace)
         {
            TRC_AutoTradector_TRC_AutoTrade30_user(_this, byRace, TRC_AutoTradector_TRC_AutoTrade30_next);
         };
-        void TRC_AutoTradector_TRC_AutoTrade32_wrapper(struct TRC_AutoTrade* _this)
+        static void TRC_AutoTradector_TRC_AutoTrade32_wrapper(struct TRC_AutoTrade* _this)
         {
            TRC_AutoTradector_TRC_AutoTrade32_user(_this, TRC_AutoTradector_TRC_AutoTrade32_next);
         };
-        bool TRC_AutoTrade_db_load34_wrapper(struct TRC_AutoTrade* _this, char byRace)
+        static bool TRC_AutoTrade_db_load34_wrapper(struct TRC_AutoTrade* _this, char byRace)
         {
            return TRC_AutoTrade_db_load34_user(_this, byRace, TRC_AutoTrade_db_load34_next);
         };
-        char TRC_AutoTrade_insert_info36_wrapper(char* pdata)
+        static char TRC_AutoTrade_insert_info36_wrapper(char* pdata)
         {
            return TRC_AutoTrade_insert_info36_user(pdata, TRC_AutoTrade_insert_info36_next);
         };
-        int TRC_AutoTradecheck40_wrapper(struct TRC_AutoTrade* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial)
+        static int TRC_AutoTradecheck40_wrapper(struct TRC_AutoTrade* _this, unsigned int dwAvatorSerial, unsigned int dwGuildSerial)
         {
            return TRC_AutoTradecheck40_user(_this, dwAvatorSerial, dwGuildSerial, TRC_AutoTradecheck40_next);
         };
-        struct CGuild* TRC_AutoTradegetOwnerGuild42_wrapper(struct TRC_AutoTrade* _this)
+        static struct CGuild* TRC_AutoTradegetOwnerGuild42_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradegetOwnerGuild42_user(_this, TRC_AutoTradegetOwnerGuild42_next);
         };
-        unsigned int TRC_AutoTradegetSuggestedTime44_wrapper(struct TRC_AutoTrade* _this)
+        static unsigned int TRC_AutoTradegetSuggestedTime44_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradegetSuggestedTime44_user(_this, TRC_AutoTradegetSuggestedTime44_next);
         };
-        char* TRC_AutoTradeget_guidlname46_wrapper(struct TRC_AutoTrade* _this)
+        static char* TRC_AutoTradeget_guidlname46_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradeget_guidlname46_user(_this, TRC_AutoTradeget_guidlname46_next);
         };
-        float TRC_AutoTradeget_next_tax48_wrapper(struct TRC_AutoTrade* _this)
+        static float TRC_AutoTradeget_next_tax48_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradeget_next_tax48_user(_this, TRC_AutoTradeget_next_tax48_next);
         };
-        char TRC_AutoTradeget_race50_wrapper(struct TRC_AutoTrade* _this)
+        static char TRC_AutoTradeget_race50_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradeget_race50_user(_this, TRC_AutoTradeget_race50_next);
         };
-        float TRC_AutoTradeget_taxrate52_wrapper(struct TRC_AutoTrade* _this)
+        static float TRC_AutoTradeget_taxrate52_wrapper(struct TRC_AutoTrade* _this)
         {
            return TRC_AutoTradeget_taxrate52_user(_this, TRC_AutoTradeget_taxrate52_next);
         };
-        void TRC_AutoTradehis_income_money54_wrapper(struct TRC_AutoTrade* _this)
+        static void TRC_AutoTradehis_income_money54_wrapper(struct TRC_AutoTrade* _this)
         {
            TRC_AutoTradehis_income_money54_user(_this, TRC_AutoTradehis_income_money54_next);
         };
-        void TRC_AutoTradehistory_used_cheet_changetaxrate56_wrapper(struct TRC_AutoTrade* _this, unsigned int dwProb, char* pName)
+        static void TRC_AutoTradehistory_used_cheet_changetaxrate56_wrapper(struct TRC_AutoTrade* _this, unsigned int dwProb, char* pName)
         {
            TRC_AutoTradehistory_used_cheet_changetaxrate56_user(_this, dwProb, pName, TRC_AutoTradehistory_used_cheet_changetaxrate56_next);
         };
-        void TRC_AutoTradesendmsg_taxrate58_wrapper(struct TRC_AutoTrade* _this, int n, char byRet)
+        static void TRC_AutoTradesendmsg_taxrate58_wrapper(struct TRC_AutoTrade* _this, int n, char byRet)
         {
            TRC_AutoTradesendmsg_taxrate58_user(_this, n, byRet, TRC_AutoTradesendmsg_taxrate58_next);
         };
-        void TRC_AutoTradeset_owner60_wrapper(struct TRC_AutoTrade* _this, struct CGuild* pGuild)
+        static void TRC_AutoTradeset_owner60_wrapper(struct TRC_AutoTrade* _this, struct CGuild* pGuild)
         {
            TRC_AutoTradeset_owner60_user(_this, pGuild, TRC_AutoTradeset_owner60_next);
         };
-        void TRC_AutoTradeset_suggested62_wrapper(struct TRC_AutoTrade* _this, char byMatterType, unsigned int dwMatterDst, char* wszMatterDst, unsigned int dwNext)
+        static void TRC_AutoTradeset_suggested62_wrapper(struct TRC_AutoTrade* _this, char byMatterType, unsigned int dwMatterDst, char* wszMatterDst, unsigned int dwNext)
         {
            TRC_AutoTradeset_suggested62_user(_this, byMatterType, dwMatterDst, wszMatterDst, dwNext, TRC_AutoTradeset_suggested62_next);
         };
-        void TRC_AutoTradedtor_TRC_AutoTrade64_wrapper(struct TRC_AutoTrade* _this)
+        static void TRC_AutoTradedtor_TRC_AutoTrade64_wrapper(struct TRC_AutoTrade* _this)
         {
            TRC_AutoTradedtor_TRC_AutoTrade64_user(_this, TRC_AutoTradedtor_TRC_AutoTrade64_next);
         };
         
-        hook_record TRC_AutoTrade_functions[] = {
+        static hook_record TRC_AutoTrade_functions[] = {
         {   (LPVOID)0x1402d85c0L,
             (LPVOID *)&TRC_AutoTradeAddGDalant2_user,
             (LPVOID *)&TRC_AutoTradeAddGDalant2_next,
@@ -355,5 +355,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

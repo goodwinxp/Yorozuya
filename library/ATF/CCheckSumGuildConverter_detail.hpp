@@ -8,15 +8,15 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CCheckSumGuildConverterConvert2_ptr CCheckSumGuildConverterConvert2_next(nullptr);
-        info::CCheckSumGuildConverterConvert2_clbk CCheckSumGuildConverterConvert2_user(nullptr);
+        static info::CCheckSumGuildConverterConvert2_ptr CCheckSumGuildConverterConvert2_next(nullptr);
+        static info::CCheckSumGuildConverterConvert2_clbk CCheckSumGuildConverterConvert2_user(nullptr);
         
-        void CCheckSumGuildConverterConvert2_wrapper(struct CCheckSumGuildConverter* _this, long double dDalant, long double dGold, struct CCheckSumGuildData* pkCheckSum)
+        static void CCheckSumGuildConverterConvert2_wrapper(struct CCheckSumGuildConverter* _this, long double dDalant, long double dGold, struct CCheckSumGuildData* pkCheckSum)
         {
            CCheckSumGuildConverterConvert2_user(_this, dDalant, dGold, pkCheckSum, CCheckSumGuildConverterConvert2_next);
         };
         
-        hook_record CCheckSumGuildConverter_functions[] = {
+        static hook_record CCheckSumGuildConverter_functions[] = {
         {   (LPVOID)0x1402c1760L,
             (LPVOID *)&CCheckSumGuildConverterConvert2_user,
             (LPVOID *)&CCheckSumGuildConverterConvert2_next,
@@ -25,5 +25,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

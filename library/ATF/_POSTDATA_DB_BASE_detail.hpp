@@ -8,27 +8,27 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::_POSTDATA_DB_BASEInit2_ptr _POSTDATA_DB_BASEInit2_next(nullptr);
-        info::_POSTDATA_DB_BASEInit2_clbk _POSTDATA_DB_BASEInit2_user(nullptr);
-        info::_POSTDATA_DB_BASEUpdateInit4_ptr _POSTDATA_DB_BASEUpdateInit4_next(nullptr);
-        info::_POSTDATA_DB_BASEUpdateInit4_clbk _POSTDATA_DB_BASEUpdateInit4_user(nullptr);
-        info::_POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_ptr _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_next(nullptr);
-        info::_POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_clbk _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_user(nullptr);
+        static info::_POSTDATA_DB_BASEInit2_ptr _POSTDATA_DB_BASEInit2_next(nullptr);
+        static info::_POSTDATA_DB_BASEInit2_clbk _POSTDATA_DB_BASEInit2_user(nullptr);
+        static info::_POSTDATA_DB_BASEUpdateInit4_ptr _POSTDATA_DB_BASEUpdateInit4_next(nullptr);
+        static info::_POSTDATA_DB_BASEUpdateInit4_clbk _POSTDATA_DB_BASEUpdateInit4_user(nullptr);
+        static info::_POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_ptr _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_next(nullptr);
+        static info::_POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_clbk _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_user(nullptr);
         
-        void _POSTDATA_DB_BASEInit2_wrapper(struct _POSTDATA_DB_BASE* _this)
+        static void _POSTDATA_DB_BASEInit2_wrapper(struct _POSTDATA_DB_BASE* _this)
         {
            _POSTDATA_DB_BASEInit2_user(_this, _POSTDATA_DB_BASEInit2_next);
         };
-        void _POSTDATA_DB_BASEUpdateInit4_wrapper(struct _POSTDATA_DB_BASE* _this)
+        static void _POSTDATA_DB_BASEUpdateInit4_wrapper(struct _POSTDATA_DB_BASE* _this)
         {
            _POSTDATA_DB_BASEUpdateInit4_user(_this, _POSTDATA_DB_BASEUpdateInit4_next);
         };
-        void _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_wrapper(struct _POSTDATA_DB_BASE* _this)
+        static void _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_wrapper(struct _POSTDATA_DB_BASE* _this)
         {
            _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_user(_this, _POSTDATA_DB_BASEctor__POSTDATA_DB_BASE6_next);
         };
         
-        hook_record _POSTDATA_DB_BASE_functions[] = {
+        static hook_record _POSTDATA_DB_BASE_functions[] = {
         {   (LPVOID)0x140077680L,
             (LPVOID *)&_POSTDATA_DB_BASEInit2_user,
             (LPVOID *)&_POSTDATA_DB_BASEInit2_next,
@@ -47,5 +47,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

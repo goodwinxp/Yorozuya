@@ -8,45 +8,45 @@
 START_ATF_NAMESPACE
     namespace detail
     {
-        info::CNationCodeStrTablector_CNationCodeStrTable2_ptr CNationCodeStrTablector_CNationCodeStrTable2_next(nullptr);
-        info::CNationCodeStrTablector_CNationCodeStrTable2_clbk CNationCodeStrTablector_CNationCodeStrTable2_user(nullptr);
-        info::CNationCodeStrTableGetCode4_ptr CNationCodeStrTableGetCode4_next(nullptr);
-        info::CNationCodeStrTableGetCode4_clbk CNationCodeStrTableGetCode4_user(nullptr);
-        info::CNationCodeStrTableGetStr6_ptr CNationCodeStrTableGetStr6_next(nullptr);
-        info::CNationCodeStrTableGetStr6_clbk CNationCodeStrTableGetStr6_user(nullptr);
-        info::CNationCodeStrTableInit8_ptr CNationCodeStrTableInit8_next(nullptr);
-        info::CNationCodeStrTableInit8_clbk CNationCodeStrTableInit8_user(nullptr);
-        info::CNationCodeStrTableRegistCode10_ptr CNationCodeStrTableRegistCode10_next(nullptr);
-        info::CNationCodeStrTableRegistCode10_clbk CNationCodeStrTableRegistCode10_user(nullptr);
-        info::CNationCodeStrTabledtor_CNationCodeStrTable12_ptr CNationCodeStrTabledtor_CNationCodeStrTable12_next(nullptr);
-        info::CNationCodeStrTabledtor_CNationCodeStrTable12_clbk CNationCodeStrTabledtor_CNationCodeStrTable12_user(nullptr);
+        static info::CNationCodeStrTablector_CNationCodeStrTable2_ptr CNationCodeStrTablector_CNationCodeStrTable2_next(nullptr);
+        static info::CNationCodeStrTablector_CNationCodeStrTable2_clbk CNationCodeStrTablector_CNationCodeStrTable2_user(nullptr);
+        static info::CNationCodeStrTableGetCode4_ptr CNationCodeStrTableGetCode4_next(nullptr);
+        static info::CNationCodeStrTableGetCode4_clbk CNationCodeStrTableGetCode4_user(nullptr);
+        static info::CNationCodeStrTableGetStr6_ptr CNationCodeStrTableGetStr6_next(nullptr);
+        static info::CNationCodeStrTableGetStr6_clbk CNationCodeStrTableGetStr6_user(nullptr);
+        static info::CNationCodeStrTableInit8_ptr CNationCodeStrTableInit8_next(nullptr);
+        static info::CNationCodeStrTableInit8_clbk CNationCodeStrTableInit8_user(nullptr);
+        static info::CNationCodeStrTableRegistCode10_ptr CNationCodeStrTableRegistCode10_next(nullptr);
+        static info::CNationCodeStrTableRegistCode10_clbk CNationCodeStrTableRegistCode10_user(nullptr);
+        static info::CNationCodeStrTabledtor_CNationCodeStrTable12_ptr CNationCodeStrTabledtor_CNationCodeStrTable12_next(nullptr);
+        static info::CNationCodeStrTabledtor_CNationCodeStrTable12_clbk CNationCodeStrTabledtor_CNationCodeStrTable12_user(nullptr);
         
-        void CNationCodeStrTablector_CNationCodeStrTable2_wrapper(struct CNationCodeStrTable* _this)
+        static void CNationCodeStrTablector_CNationCodeStrTable2_wrapper(struct CNationCodeStrTable* _this)
         {
            CNationCodeStrTablector_CNationCodeStrTable2_user(_this, CNationCodeStrTablector_CNationCodeStrTable2_next);
         };
-        int CNationCodeStrTableGetCode4_wrapper(struct CNationCodeStrTable* _this, char* szCodeStr)
+        static int CNationCodeStrTableGetCode4_wrapper(struct CNationCodeStrTable* _this, char* szCodeStr)
         {
            return CNationCodeStrTableGetCode4_user(_this, szCodeStr, CNationCodeStrTableGetCode4_next);
         };
-        char* CNationCodeStrTableGetStr6_wrapper(struct CNationCodeStrTable* _this, int iType)
+        static char* CNationCodeStrTableGetStr6_wrapper(struct CNationCodeStrTable* _this, int iType)
         {
            return CNationCodeStrTableGetStr6_user(_this, iType, CNationCodeStrTableGetStr6_next);
         };
-        bool CNationCodeStrTableInit8_wrapper(struct CNationCodeStrTable* _this)
+        static bool CNationCodeStrTableInit8_wrapper(struct CNationCodeStrTable* _this)
         {
            return CNationCodeStrTableInit8_user(_this, CNationCodeStrTableInit8_next);
         };
-        int CNationCodeStrTableRegistCode10_wrapper(struct CNationCodeStrTable* _this)
+        static int CNationCodeStrTableRegistCode10_wrapper(struct CNationCodeStrTable* _this)
         {
            return CNationCodeStrTableRegistCode10_user(_this, CNationCodeStrTableRegistCode10_next);
         };
-        void CNationCodeStrTabledtor_CNationCodeStrTable12_wrapper(struct CNationCodeStrTable* _this)
+        static void CNationCodeStrTabledtor_CNationCodeStrTable12_wrapper(struct CNationCodeStrTable* _this)
         {
            CNationCodeStrTabledtor_CNationCodeStrTable12_user(_this, CNationCodeStrTabledtor_CNationCodeStrTable12_next);
         };
         
-        hook_record CNationCodeStrTable_functions[] = {
+        static hook_record CNationCodeStrTable_functions[] = {
         {   (LPVOID)0x140204ad0L,
             (LPVOID *)&CNationCodeStrTablector_CNationCodeStrTable2_user,
             (LPVOID *)&CNationCodeStrTablector_CNationCodeStrTable2_next,
@@ -80,5 +80,5 @@ START_ATF_NAMESPACE
         
         };
         
-    }; // end namespace detail
+    }; // static end namespace detail
 END_ATF_NAMESPACE

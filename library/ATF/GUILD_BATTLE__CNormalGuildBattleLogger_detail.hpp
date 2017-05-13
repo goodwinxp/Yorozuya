@@ -10,45 +10,45 @@ START_ATF_NAMESPACE
     {
         namespace detail
         {
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_ptr GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_clbk GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_ptr GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_clbk GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerInit6_ptr GUILD_BATTLE__CNormalGuildBattleLoggerInit6_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerInit6_clbk GUILD_BATTLE__CNormalGuildBattleLoggerInit6_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerLog8_ptr GUILD_BATTLE__CNormalGuildBattleLoggerLog8_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerLog8_clbk GUILD_BATTLE__CNormalGuildBattleLoggerLog8_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerLog10_ptr GUILD_BATTLE__CNormalGuildBattleLoggerLog10_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerLog10_clbk GUILD_BATTLE__CNormalGuildBattleLoggerLog10_user(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_ptr GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_next(nullptr);
-            info::GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_clbk GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_ptr GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_clbk GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_ptr GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_clbk GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerInit6_ptr GUILD_BATTLE__CNormalGuildBattleLoggerInit6_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerInit6_clbk GUILD_BATTLE__CNormalGuildBattleLoggerInit6_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerLog8_ptr GUILD_BATTLE__CNormalGuildBattleLoggerLog8_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerLog8_clbk GUILD_BATTLE__CNormalGuildBattleLoggerLog8_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerLog10_ptr GUILD_BATTLE__CNormalGuildBattleLoggerLog10_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerLog10_clbk GUILD_BATTLE__CNormalGuildBattleLoggerLog10_user(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_ptr GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_next(nullptr);
+            static info::GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_clbk GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_user(nullptr);
             
-            void GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_user(_this, GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, char* szLogName)
+            static void GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, char* szLogName)
             {
                GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_user(_this, szLogName, GUILD_BATTLE__CNormalGuildBattleLoggerCreateLogFile4_next);
             };
-            bool GUILD_BATTLE__CNormalGuildBattleLoggerInit6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
+            static bool GUILD_BATTLE__CNormalGuildBattleLoggerInit6_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
             {
                return GUILD_BATTLE__CNormalGuildBattleLoggerInit6_user(_this, GUILD_BATTLE__CNormalGuildBattleLoggerInit6_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleLoggerLog8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, char* fmt)
+            static void GUILD_BATTLE__CNormalGuildBattleLoggerLog8_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, char* fmt)
             {
                GUILD_BATTLE__CNormalGuildBattleLoggerLog8_user(_this, fmt, GUILD_BATTLE__CNormalGuildBattleLoggerLog8_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleLoggerLog10_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, wchar_t* fmt)
+            static void GUILD_BATTLE__CNormalGuildBattleLoggerLog10_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this, wchar_t* fmt)
             {
                GUILD_BATTLE__CNormalGuildBattleLoggerLog10_user(_this, fmt, GUILD_BATTLE__CNormalGuildBattleLoggerLog10_next);
             };
-            void GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
+            static void GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_wrapper(struct GUILD_BATTLE::CNormalGuildBattleLogger* _this)
             {
                GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_user(_this, GUILD_BATTLE__CNormalGuildBattleLoggerdtor_CNormalGuildBattleLogger12_next);
             };
             
-            hook_record CNormalGuildBattleLogger_functions[] = {
+            static hook_record CNormalGuildBattleLogger_functions[] = {
             {   (LPVOID)0x1403eb070L,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_user,
                 (LPVOID *)&GUILD_BATTLE__CNormalGuildBattleLoggerctor_CNormalGuildBattleLogger2_next,
@@ -82,6 +82,6 @@ START_ATF_NAMESPACE
             
             };
             
-        }; // end namespace detail
+        }; // static end namespace detail
     }; // end namespace GUILD_BATTLE
 END_ATF_NAMESPACE
