@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "Trap.h"
+#include "ETypes.h"
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_addpvppoint.hpp>
 
@@ -13,6 +14,8 @@ namespace GameServer
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CTrap::RecvKillMessage, &CTrap::RecvKillMessage);
             core.set_hook(&ATF::CTrap::SendMsg_FixPosition, &CTrap::SendMsg_FixPosition);
+            core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CTrap::pc_MakeTrapRequest);
+            
         }
 
         void CTrap::unload()
@@ -20,6 +23,7 @@ namespace GameServer
             auto& core = ATF::CATFCore::get_instance();
             core.unset_hook(&ATF::CTrap::RecvKillMessage);
             core.unset_hook(&ATF::CTrap::SendMsg_FixPosition);
+            core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
         }
 
         void CTrap::loop()
@@ -106,6 +110,41 @@ namespace GameServer
             }
 
             next(pTrap, n);
+        }
+
+        void WINAPIV CTrap::pc_MakeTrapRequest(
+            ATF::CPlayer * pObj, 
+            uint16_t wSkillIndex, 
+            uint16_t wTrapItemSerial, 
+            float * pfPos, 
+            uint16_t * pConsumeSerial, 
+            ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next)
+        {
+            do
+            {
+                if (pObj->m_bMapLoading)
+                    break;
+
+                auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTrapItemSerial);
+                if (!pTrapItem)
+                    break;
+
+                if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_trap)
+                    break;
+
+                auto& tblItemData = ATF::global::g_MainThread->m_tblItemData[pTrapItem->m_byTableCode];
+                ATF::_TrapItem_fld* pTrapFld = (ATF::_TrapItem_fld*)tblItemData.GetRecord(pTrapItem->m_wItemIndex);
+                if (!pTrapFld)
+                    break;
+
+                if (pObj->GetLevel() > pTrapFld->m_nUpLevelLim)
+                    break;
+
+                if (pObj->GetLevel() < pTrapFld->m_nLevelLim)
+                    break;
+
+                next(pObj, wSkillIndex, wTrapItemSerial, pfPos, pConsumeSerial);
+            } while (false);
         }
     }
 }
