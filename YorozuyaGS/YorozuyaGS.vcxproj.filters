@@ -46,6 +46,9 @@
     <Filter Include="Implementation\Fixes\MiningOre">
       <UniqueIdentifier>{39ee3179-5602-426d-9704-6e786f445445}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Trap">
+      <UniqueIdentifier>{48c0338d-0a93-4f86-8919-a81bbafdf6c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -77,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="MiningOre.cpp">
       <Filter>Implementation\Fixes\MiningOre</Filter>
+    </ClCompile>
+    <ClCompile Include="Trap.cpp">
+      <Filter>Implementation\Fixes\Trap</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="MiningOre.h">
       <Filter>Implementation\Fixes\MiningOre</Filter>
+    </ClInclude>
+    <ClInclude Include="Trap.h">
+      <Filter>Implementation\Fixes\Trap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

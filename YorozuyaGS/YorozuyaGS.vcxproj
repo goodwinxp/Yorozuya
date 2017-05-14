@@ -238,6 +238,7 @@
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Trade.h" />
+    <ClInclude Include="Trap.h" />
     <ClInclude Include="UnitDelivery.h" />
     <ClInclude Include="ViewInvisible.h" />
     <ClInclude Include="Yorozuya.h" />
@@ -267,6 +268,7 @@
     <ClCompile Include="Macros.cpp" />
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
+    <ClCompile Include="Trap.cpp" />
     <ClCompile Include="ViewInvisible.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
