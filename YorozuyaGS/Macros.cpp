@@ -16,6 +16,8 @@ namespace GameServer
 
         void CMacros::unload()
         {
+            auto& core = ATF::CATFCore::get_instance();
+            core.unset_hook(&ATF::CMainThread::_db_Update_MacroData);
         }
 
         void CMacros::loop()
@@ -54,7 +56,6 @@ namespace GameServer
                         j[0] = '\0';
                 }
             }
-
 
             for (auto &i : pOldMacro->mcr_Chat)
             {
