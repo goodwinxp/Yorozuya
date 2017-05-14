@@ -43,6 +43,9 @@
     <Filter Include="Implementation\Fixes\ViewInvisible">
       <UniqueIdentifier>{e43d18ab-92a4-4958-9776-0cf059fb682a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\MiningOre">
+      <UniqueIdentifier>{39ee3179-5602-426d-9704-6e786f445445}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="ViewInvisible.cpp">
       <Filter>Implementation\Fixes\ViewInvisible</Filter>
+    </ClCompile>
+    <ClCompile Include="MiningOre.cpp">
+      <Filter>Implementation\Fixes\MiningOre</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +115,9 @@
     </ClInclude>
     <ClInclude Include="ViewInvisible.h">
       <Filter>Implementation\Fixes\ViewInvisible</Filter>
+    </ClInclude>
+    <ClInclude Include="MiningOre.h">
+      <Filter>Implementation\Fixes\MiningOre</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
