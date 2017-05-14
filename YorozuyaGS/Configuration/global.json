@@ -1,5 +1,9 @@
 {
-	"registry": {
-		"modules": []
-	}
+    "intervals": {
+        "open_world_wait": 10000,
+        "step_delay": 10
+    },
+    "registry": {
+        "modules": []
+    }
 }

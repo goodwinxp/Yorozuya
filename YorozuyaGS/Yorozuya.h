@@ -29,6 +29,9 @@ namespace GameServer
         void configure();
 
     private:
+        std::chrono::milliseconds m_timeStepDelay;
+        std::chrono::milliseconds m_timeWaitOpenWorld;
+
         std::once_flag m_ofStart;
         std::once_flag m_ofStop;
 

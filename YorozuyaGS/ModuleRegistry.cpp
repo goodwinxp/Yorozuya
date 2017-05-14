@@ -15,7 +15,7 @@ namespace GameServer
 
     void CModuleRegistry::load()
     {
-        std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        _STD unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
         for (auto& m : m_mapModules)
         {
             m.second->load();
@@ -24,7 +24,7 @@ namespace GameServer
 
     void CModuleRegistry::unload()
     {
-        std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        _STD unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
         for (auto& m : m_mapModules)
         {
             m.second->unload();
@@ -33,7 +33,7 @@ namespace GameServer
 
     void CModuleRegistry::loop()
     {
-        std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        _STD unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
         for (auto& m : m_mapModules)
         {
             m.second->loop();
@@ -43,7 +43,7 @@ namespace GameServer
     void CModuleRegistry::configure(
         const rapidjson::Value& nodeConfig)
     {
-        std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        _STD unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
         for (auto& module : nodeConfig["modules"].GetArray())
         {
             ModuleName_t name = module["name"].GetString();
@@ -61,7 +61,7 @@ namespace GameServer
     void CModuleRegistry::load_module()
     {
         static const fs::path pathModuleFolder = L"./YorozuyaGS/";
-        static const std::wregex maskDll(L".*?.dll");
+        static const _STD wregex maskDll(L".*?.dll");
 
         fs::directory_iterator end_itr;
         for (fs::directory_iterator i(pathModuleFolder); i != end_itr; ++i)
@@ -69,20 +69,20 @@ namespace GameServer
             if (!fs::is_regular_file(i->status())) 
                 continue;
 
-            if (!std::regex_match(i->path().filename().generic_wstring(), maskDll))
+            if (!_STD regex_match(i->path().filename().generic_wstring(), maskDll))
                 continue;
 
-            push_module(std::make_shared<ModuleDllHelper::CModuleDll>(i->path()));
+            push_module(_STD make_shared<ModuleDllHelper::CModuleDll>(i->path()));
         }
     }
 
     void CModuleRegistry::push_module(Module_ptr spModule)
     {
-        std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        _STD unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
         auto it = m_mapModules.insert(
-            std::pair<ModuleName_t, Module_ptr>(
+            _STD pair<ModuleName_t, Module_ptr>(
                 spModule->get_name(), 
-                std::move(spModule)));
+                _STD move(spModule)));
 
         assert(it.second);
     }

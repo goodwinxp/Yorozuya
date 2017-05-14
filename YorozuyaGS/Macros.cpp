@@ -2,22 +2,23 @@
 
 #include "Macros.h"
 #include <ATF/global.hpp>
-#include <ATF/CMainThread_info.hpp>
 
 namespace GameServer
 {
     namespace Fixes
     {
+        using namespace ATF;
+
         void CMacros::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
+            auto& core = CATFCore::get_instance();
+            core.set_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
         }
 
         void CMacros::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CMainThread::_db_Update_MacroData);
+            auto& core = CATFCore::get_instance();
+            core.unset_hook(&CMainThread::_db_Update_MacroData);
         }
 
         void CMacros::loop()
@@ -26,7 +27,7 @@ namespace GameServer
 
         ModuleVersion_t CMacros::get_version()
         {
-            return ATF::usVersion;
+            return usVersion;
         }
 
         ModuleName_t CMacros::get_name()
@@ -42,17 +43,17 @@ namespace GameServer
         }
 
         bool WINAPIV CMacros::_db_Update_MacroData(
-            struct ATF::CMainThread* pObj,
+            struct CMainThread* pObj,
             unsigned int dwSerial,
-            struct ATF::_AIOC_A_MACRODATA* pMacro,
-            struct ATF::_AIOC_A_MACRODATA* pOldMacro,
-            ATF::info::CMainThread_db_Update_MacroData266_ptr next)
+            struct _AIOC_A_MACRODATA* pMacro,
+            struct _AIOC_A_MACRODATA* pOldMacro,
+            info::CMainThread_db_Update_MacroData266_ptr next)
         {
             for (auto &i : pMacro->mcr_Chat)
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!ATF::global::IsSQLValidString(j))
+                    if (!global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }
@@ -61,7 +62,7 @@ namespace GameServer
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!ATF::global::IsSQLValidString(j))
+                    if (!global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }

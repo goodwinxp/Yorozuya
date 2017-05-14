@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CMainThread_info.hpp>
+#include <ATF/CPlayer_info.hpp>
 
 namespace GameServer
 {
@@ -11,10 +11,10 @@ namespace GameServer
 
     namespace Fixes
     {
-        class CMacros : public IModule, CModuleRegister<CMacros>
+        class CTrade : public IModule, CModuleRegister<CTrade>
         {
         public:
-            CMacros() { };
+            CTrade() { };
 
             virtual void load();
 
@@ -27,13 +27,12 @@ namespace GameServer
             virtual ModuleName_t get_name();
 
             virtual void configure(const rapidjson::Value& nodeConfig);
+
         private:
-            static bool WINAPIV _db_Update_MacroData(
-                ATF::CMainThread* pObj,
-                unsigned int dwSerial,
-                ATF::_AIOC_A_MACRODATA* pMacro,
-                ATF::_AIOC_A_MACRODATA* pOldMacro,
-                ATF::info::CMainThread_db_Update_MacroData266_ptr next);
+            static void WINAPIV pc_DTradeOKRequest(
+                struct ATF::CPlayer* pObj,
+                unsigned int* pdwKey,
+                ATF::info::CPlayerpc_DTradeOKRequest1687_ptr next);
         };
     };
 };

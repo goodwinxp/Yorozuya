@@ -231,9 +231,12 @@
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
+    <ClInclude Include="ETypes.h" />
+    <ClInclude Include="ItemCheckHelper.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Trade.h" />
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +260,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ItemCheckHelper.cpp" />
     <ClCompile Include="Macros.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -267,6 +271,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Trade.cpp" />
     <ClCompile Include="Yorozuya.cpp" />
   </ItemGroup>
   <ItemGroup>

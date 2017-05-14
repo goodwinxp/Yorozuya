@@ -46,24 +46,20 @@ namespace GameServer
 
     void CYorozuya::routine()
     {
-        using namespace std::chrono;
         std::unique_lock<std::mutex> RoutineLock(m_mtxRoutine);
         
-        { // prewait
+        {
             std::unique_lock<std::mutex> lock(m_mtxCondition);
-            while(!m_cvCondition.wait_for(lock, 10s, [] {
-                return ATF::global::g_MainThread->m_bWorldOpen;
+            while(!m_cvCondition.wait_for(lock, m_timeWaitOpenWorld, [this] {
+                return ATF::global::g_MainThread->m_bWorldOpen || m_bStop.load();
             }));
         }
 
-        for (;!m_bStop.load();)
+        for (;!m_bStop.load(); std::this_thread::sleep_for(m_timeStepDelay))
         {
             m_ModuleRegistry.loop();
-
-            std::unique_lock<std::mutex> lock(m_mtxCondition);
-            if (m_cvCondition.wait_for(lock, 5s, [this] { return m_bStop.load(); }))
-                break;
         }
+
         RoutineLock.unlock();
 
         ::_endthreadex(0);
@@ -75,10 +71,11 @@ namespace GameServer
 
         rapidjson::IStreamWrapper isw(ifs);
         rapidjson::Document GlobalConfig;
-        if (GlobalConfig.ParseStream(isw).HasParseError())
-        {
-            // todo : logging
-        }
+        if (GlobalConfig.ParseStream(isw).HasParseError()); // todo logging
+
+        const auto&  cfgIntervals = GlobalConfig["intervals"];
+        m_timeWaitOpenWorld = std::chrono::milliseconds(cfgIntervals["open_world_wait"].GetUint64());
+        m_timeStepDelay = std::chrono::milliseconds(cfgIntervals["step_delay"].GetUint64());
         
         m_ModuleRegistry.configure(GlobalConfig["registry"]);
     }

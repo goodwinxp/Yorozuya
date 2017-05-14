@@ -31,6 +31,12 @@
     <Filter Include="Implementation\Fixes\Macros">
       <UniqueIdentifier>{20ddd43d-89b4-4686-add5-28db65204562}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Trade">
+      <UniqueIdentifier>{6e07834d-8ec9-4294-acd2-c566b448514d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Utils">
+      <UniqueIdentifier>{267211dc-6ee0-4971-aee6-c95814bfc120}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -47,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="Macros.cpp">
       <Filter>Implementation\Fixes\Macros</Filter>
+    </ClCompile>
+    <ClCompile Include="Trade.cpp">
+      <Filter>Implementation\Fixes\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemCheckHelper.cpp">
+      <Filter>Implementation\Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +82,15 @@
     </ClInclude>
     <ClInclude Include="Macros.h">
       <Filter>Implementation\Fixes\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="Trade.h">
+      <Filter>Implementation\Fixes\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemCheckHelper.h">
+      <Filter>Implementation\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ETypes.h">
+      <Filter>Implementation\Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
