@@ -49,6 +49,9 @@
     <Filter Include="Implementation\Fixes\Trap">
       <UniqueIdentifier>{48c0338d-0a93-4f86-8919-a81bbafdf6c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Player">
+      <UniqueIdentifier>{6a832ba5-0d5d-45e9-89da-24362a1bffb3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -83,6 +86,9 @@
     </ClCompile>
     <ClCompile Include="Trap.cpp">
       <Filter>Implementation\Fixes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Implementation\Fixes\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="Trap.h">
       <Filter>Implementation\Fixes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Implementation\Fixes\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

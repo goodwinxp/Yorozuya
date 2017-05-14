@@ -73,4 +73,17 @@ namespace GameServer
         tbl_code_npc_cupone = 36,
         item_tbl_num = 37,
     };
+
+    enum class e_obj_id : uint8_t
+    {
+        obj_id_player = 0,
+        obj_id_monster = 1,
+        obj_id_npc = 2,
+        obj_id_animus = 3,
+        obj_id_tower = 4,
+        obj_id_stone = 5,
+        obj_id_keeper = 6,
+        obj_id_trap = 7,
+        num = 8
+    };
 }

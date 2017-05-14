@@ -231,6 +231,7 @@
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
     <ClInclude Include="ItemCheckHelper.h" />
     <ClInclude Include="Macros.h" />
@@ -244,6 +245,7 @@
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
