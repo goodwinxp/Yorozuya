@@ -25,6 +25,12 @@
     <Filter Include="Implementation\Addons">
       <UniqueIdentifier>{bb0a8c58-6179-4c9e-855d-999f09ea6bfc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Modules\Registry">
+      <UniqueIdentifier>{4dc14335-3a61-4c39-95ba-0e51a7c2aea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\Macros">
+      <UniqueIdentifier>{20ddd43d-89b4-4686-add5-28db65204562}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -36,6 +42,12 @@
     <ClCompile Include="Yorozuya.cpp">
       <Filter>Implementation</Filter>
     </ClCompile>
+    <ClCompile Include="ModuleRegistry.cpp">
+      <Filter>Implementation\Modules\Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Macros.cpp">
+      <Filter>Implementation\Fixes\Macros</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -46,6 +58,18 @@
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp">
       <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Interfaces\ModuleInterface.h">
+      <Filter>Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleRegistry.h">
+      <Filter>Implementation\Modules\Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Implementation\Fixes\Macros</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
