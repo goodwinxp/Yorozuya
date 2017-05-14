@@ -32,6 +32,11 @@ namespace GameServer
                 ATF::CTrap* pObj,
                 ATF::CCharacter* pDier,
                 ATF::info::CTrapRecvKillMessage70_ptr next);
+
+            static void WINAPIV SendMsg_FixPosition(
+                ATF::CTrap* pTrap,
+                int n,
+                ATF::info::CTrapSendMsg_FixPosition82_ptr next);
         };
     };
 };

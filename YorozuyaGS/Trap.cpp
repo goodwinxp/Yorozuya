@@ -12,12 +12,14 @@ namespace GameServer
         {
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CTrap::RecvKillMessage, &CTrap::RecvKillMessage);
+            core.set_hook(&ATF::CTrap::SendMsg_FixPosition, &CTrap::SendMsg_FixPosition);
         }
 
         void CTrap::unload()
         {
             auto& core = ATF::CATFCore::get_instance();
             core.unset_hook(&ATF::CTrap::RecvKillMessage);
+            core.unset_hook(&ATF::CTrap::SendMsg_FixPosition);
         }
 
         void CTrap::loop()
@@ -87,6 +89,23 @@ namespace GameServer
 
                 pPlayerDier->AlterPvPPoint(-dAlterPoint, ATF::PVP_ALTER_TYPE::die_dec, pObj->m_dwMasterSerial);
             }
+        }
+
+        void WINAPIV CTrap::SendMsg_FixPosition(
+            ATF::CTrap* pTrap,
+            int n,
+            ATF::info::CTrapSendMsg_FixPosition82_ptr next)
+        {
+            ATF::CPlayer* pPlayer = &ATF::global::g_Player[n];
+            if (pTrap->m_dwMasterSerial != pPlayer->m_Param.GetCharSerial())
+            {
+                if (!pPlayer->m_EP.GetEff_State(23))
+                {
+                    return;
+                }
+            }
+
+            next(pTrap, n);
         }
     }
 }

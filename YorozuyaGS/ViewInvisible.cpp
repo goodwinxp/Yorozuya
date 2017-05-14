@@ -13,14 +13,12 @@ namespace GameServer
         void CViewInvisible::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&CTrap::SendMsg_FixPosition, &CViewInvisible::Trap_SendMsg_FixPosition);
             core.set_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::Player_SendMsg_FixPosition);
         }
 
         void CViewInvisible::unload()
         {
             auto& core = CATFCore::get_instance();
-            core.unset_hook(&CTrap::SendMsg_FixPosition);
             core.unset_hook(&CPlayer::SendMsg_FixPosition);
         }
 
@@ -60,23 +58,6 @@ namespace GameServer
             }*/
 
             next(pPlayer, n);
-        }
-
-        void WINAPIV CViewInvisible::Trap_SendMsg_FixPosition(
-            CTrap* pTrap, 
-            int n, 
-            info::CTrapSendMsg_FixPosition82_ptr next)
-        {
-            CPlayer* pPlayer = &global::g_Player[n];
-            if (pTrap->m_dwMasterSerial != pPlayer->m_Param.GetCharSerial())
-            {
-                if (!pPlayer->m_EP.GetEff_State(23))
-                {
-                    return;
-                }
-            }
-
-            next(pTrap, n);
         }
     }
 }
