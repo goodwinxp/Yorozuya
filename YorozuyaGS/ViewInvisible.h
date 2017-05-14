@@ -4,6 +4,7 @@
 #include "../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CTrap_info.hpp>
+#include <ATF/CPlayer_info.hpp>
 
 namespace GameServer
 {
@@ -28,7 +29,12 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
         private:
-            static void WINAPIV SendMsg_FixPosition(
+            static void WINAPIV Player_SendMsg_FixPosition(
+                ATF::CPlayer* pPlayer,
+                int n,
+                ATF::info::CPlayerSendMsg_FixPosition752_ptr next);
+
+            static void WINAPIV Trap_SendMsg_FixPosition(
                 ATF::CTrap* pTrap, 
                 int n,
                 ATF::info::CTrapSendMsg_FixPosition82_ptr next);
