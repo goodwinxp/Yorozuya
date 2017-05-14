@@ -59,12 +59,12 @@ namespace GameServer
                     && pObj->m_pMaster->m_bOper
                     && pObj->m_pMaster->m_dwObjSerial == pObj->m_dwMasterSerial)
                 {
-                    pObj->m_pMaster->vfptr->RecvKillMessage(pObj->m_pMaster, pDier);
+                    pObj->m_pMaster->RecvKillMessage(pDier);
                 }
                 return;
             }
 
-            if (!pDier->m_ObjID.m_byID && pObj->m_dwMasterSerial != -1)
+            if (pDier->m_ObjID.m_byID == (BYTE)e_obj_id::obj_id_player && pObj->m_dwMasterSerial != -1)
             {
                 auto pPlayerDier = (ATF::CPlayer *)pDier;
 
