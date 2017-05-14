@@ -12,7 +12,7 @@ START_ATF_NAMESPACE
         {
             float m_fEff_Rate[62];
             float m_fEff_Plus[42];
-            char m_bEff_State[29];
+            bool m_bEff_State[29];
             float m_fEff_Have[83];
         };
         __param_data *m_pDataParam;

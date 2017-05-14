@@ -238,6 +238,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Trade.h" />
     <ClInclude Include="UnitDelivery.h" />
+    <ClInclude Include="ViewInvisible.h" />
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +265,7 @@
     <ClCompile Include="ItemCheckHelper.cpp" />
     <ClCompile Include="Macros.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
+    <ClCompile Include="ViewInvisible.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

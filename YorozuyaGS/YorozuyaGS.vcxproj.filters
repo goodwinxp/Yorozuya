@@ -40,6 +40,9 @@
     <Filter Include="Implementation\Fixes\UnitDelivery">
       <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\ViewInvisible">
+      <UniqueIdentifier>{e43d18ab-92a4-4958-9776-0cf059fb682a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -65,6 +68,9 @@
     </ClCompile>
     <ClCompile Include="UnitDelivery.cpp">
       <Filter>Implementation\Fixes\UnitDelivery</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewInvisible.cpp">
+      <Filter>Implementation\Fixes\ViewInvisible</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="UnitDelivery.h">
       <Filter>Implementation\Fixes\UnitDelivery</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewInvisible.h">
+      <Filter>Implementation\Fixes\ViewInvisible</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
