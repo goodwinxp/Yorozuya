@@ -237,6 +237,7 @@
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Trade.h" />
+    <ClInclude Include="UnitDelivery.h" />
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
@@ -272,6 +273,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Trade.cpp" />
+    <ClCompile Include="UnitDelivery.cpp" />
     <ClCompile Include="Yorozuya.cpp" />
   </ItemGroup>
   <ItemGroup>

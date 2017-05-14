@@ -37,6 +37,9 @@
     <Filter Include="Implementation\Utils">
       <UniqueIdentifier>{267211dc-6ee0-4971-aee6-c95814bfc120}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\UnitDelivery">
+      <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -59,6 +62,9 @@
     </ClCompile>
     <ClCompile Include="ItemCheckHelper.cpp">
       <Filter>Implementation\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitDelivery.cpp">
+      <Filter>Implementation\Fixes\UnitDelivery</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +97,9 @@
     </ClInclude>
     <ClInclude Include="ETypes.h">
       <Filter>Implementation\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitDelivery.h">
+      <Filter>Implementation\Fixes\UnitDelivery</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

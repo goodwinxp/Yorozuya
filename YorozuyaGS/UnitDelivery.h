@@ -1,0 +1,42 @@
+#pragma once
+
+#include "ModuleRegistry.h"
+#include "../Common/Interfaces/ModuleInterface.h"
+
+#include <ATF/CPlayer_info.hpp>
+
+namespace GameServer
+{
+    using namespace Yorozuya::Module;
+
+    namespace Fixes
+    {
+        class CUnitDelivery : public IModule, CModuleRegister<CUnitDelivery>
+        {
+        public:
+            CUnitDelivery() { };
+
+            virtual void load();
+
+            virtual void unload();
+
+            virtual void loop();
+
+            virtual ModuleVersion_t get_version();
+
+            virtual ModuleName_t get_name();
+
+            virtual void configure(const rapidjson::Value& nodeConfig);
+
+        private:
+            static void WINAPIV pc_UnitDeliveryRequest(
+                ATF::CPlayer* pPlayer,
+                char bySlotIndex, 
+                struct ATF::CItemStore* pStore,
+                bool bPayFee, 
+                float* pfNewPos, 
+                int bUseNPCLinkIntem,
+                ATF::info::CPlayerpc_UnitDeliveryRequest1995_ptr next);
+        };
+    };
+};
