@@ -90,36 +90,24 @@ namespace GameServer
                 }
 
                 if (pObj->m_pmTrd.bySellItemNum > pDst->m_Param.m_dbInven.GetNumEmptyCon())
-                {
                     break;
-                }
 
                 if (pDst->m_pmTrd.bySellItemNum > pObj->m_Param.m_dbInven.GetNumEmptyCon())
-                {
                     break;
-                }
 
                 if (pObj->m_pmTrd.dwDTrade_Dalant > pObj->m_Param.GetDalant() ||
                     pDst->m_pmTrd.dwDTrade_Dalant > pDst->m_Param.GetDalant())
-                {
                     break;
-                }
 
                 if (pObj->m_pmTrd.dwDTrade_Gold > pObj->m_Param.GetGold() ||
                     pDst->m_pmTrd.dwDTrade_Gold > pDst->m_Param.GetGold())
-                {
                     break;
-                }
 
                 if (fnCheckExchange(pObj))
-                {
                     break;
-                }
 
                 if (fnCheckExchange(pDst))
-                {
                     break;
-                }
 
                 bCheckPassed = true;
             } while (false);
