@@ -6,20 +6,17 @@
 #include <MinHook.h>
 
 START_ATF_NAMESPACE
-    namespace detail
+    template<typename T>
+    LPVOID cast_pointer_function(T function)
     {
-        template<typename T>
-        LPVOID cast_pointer_function(T function)
+        union
         {
-            union
-            {
-                T val0;
-                LPVOID val1;
-            } rec;
-            rec.val0 = function;
+            T val0;
+            LPVOID val1;
+        } rec;
+        rec.val0 = function;
 
-            return rec.val1;
-        }
+        return rec.val1;
     }
 
     class CATFCore
@@ -70,8 +67,8 @@ START_ATF_NAMESPACE
             MH_STATUS status = MH_UNKNOWN;
             do
             {
-                LPVOID key = detail::cast_pointer_function(pTarget);
-                *_mapper_function[key].ppOrig = detail::cast_pointer_function(pDetour);
+                LPVOID key = cast_pointer_function(pTarget);
+                *_mapper_function[key].ppOrig = cast_pointer_function(pDetour);
 
                 status = MH_CreateHook(
                     _mapper_function[key].pTrgAppOrig,
@@ -98,7 +95,7 @@ START_ATF_NAMESPACE
             MH_STATUS status = MH_UNKNOWN;
             do
             {
-                LPVOID key = detail::cast_pointer_function(pTarget);
+                LPVOID key = cast_pointer_function(pTarget);
                 auto it = _mapper_function.find(key);
                 if (it == _mapper_function.end())
                     break;
