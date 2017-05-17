@@ -54,7 +54,7 @@ namespace GameServer
             m_dPvpPoint = nodeConfig["pvp_point"].GetDouble();
             m_dPvpCashBag = nodeConfig["pvp_cash_bag"].GetDouble();
             m_bScoreListShow = nodeConfig["score_list_show"].GetBool();
-            m_bScoreListShow = nodeConfig["score_hide"].GetBool();
+            m_bScoreHide = nodeConfig["score_hide"].GetBool();
         }
 
         bool CVote::check_conditions(
