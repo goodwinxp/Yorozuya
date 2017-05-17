@@ -8,7 +8,16 @@ START_ATF_NAMESPACE
     struct CGameObjectVtbl
     {
         void *(WINAPIV *__vecDelDtor)(struct CGameObject *_this, unsigned int);
-        BYTE gap8[80];
+        void (WINAPIV *SetStun)(struct CGameObject *_this, bool);
+        uint16_t(WINAPIV *CalcCurHPRate)(struct CGameObject *_this);
+        void (WINAPIV *SendMsg_RealFixPosition)(struct CGameObject *_this, bool);
+        void (WINAPIV *Loop)(struct CGameObject *_this);
+        void (WINAPIV *AlterSec)(struct CGameObject *_this);
+        void (WINAPIV *OutOfSec)(struct CGameObject *_this);
+        void (WINAPIV *SendMsg_FixPosition)(struct CGameObject *_this, int);
+        void (WINAPIV *SendMsg_RealMovePoint)(struct CGameObject *_this, int);
+        void (WINAPIV *SendMsg_StunInform)(struct CGameObject *_this);
+        void (WINAPIV *SendMsg_SetHPInform)(struct CGameObject *_this);
         int (WINAPIV *GetHP)(struct CGameObject *_this);
         bool (WINAPIV *SetHP)(struct CGameObject *_this, int, bool);
         int (WINAPIV *GetMaxHP)(struct CGameObject *_this);
