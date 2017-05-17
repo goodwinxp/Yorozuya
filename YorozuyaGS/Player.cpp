@@ -15,6 +15,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
             core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
+            core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
         }
 
         void CPlayer::unload()
@@ -24,6 +25,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
             core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
             core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
+            core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
         }
 
         void CPlayer::loop()
@@ -68,9 +70,7 @@ namespace GameServer
             ATF::info::CPlayerCalPvpTempCash52_ptr next)
         {
             if (pObj->m_Param.GetRaceCode() == pDier->m_Param.GetRaceCode())
-            {
                 return;
-            }
 
             next(pObj, pDier, byKillerObjID);
         }
@@ -85,7 +85,7 @@ namespace GameServer
         {
             do
             {
-                if (pObj->m_bMapLoading)
+                if (pObj->IsMapLoading())
                     break;
 
                 auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTrapItemSerial);
@@ -114,7 +114,7 @@ namespace GameServer
         {
             do
             {
-                if (pObj->m_bMapLoading)
+                if (pObj->IsMapLoading())
                     break;
 
                 auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTowerItemSerial);
@@ -129,6 +129,23 @@ namespace GameServer
 
                 next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pfPos, pConsumeSerial);
             } while (false);
+        }
+
+        void WINAPIV CPlayer::pc_GestureRequest(
+            ATF::CPlayer * pObj, 
+            char byGestureType, 
+            ATF::info::CPlayerpc_GestureRequest1719_ptr next)
+        {
+            if (pObj->IsMineMode())
+                return;
+
+            if (pObj->IsSiegeMode())
+                return;
+
+            if (pObj->IsRidingUnit())
+                return;
+
+            next(pObj, byGestureType);
         }
     }
 }

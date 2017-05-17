@@ -58,6 +58,11 @@ namespace GameServer
                 float* pfPos,
                 uint16_t* pConsumeSerial, 
                 ATF::info::CPlayerpc_MakeTowerRequest1781_ptr next);
+
+            static void WINAPIV pc_GestureRequest(
+                ATF::CPlayer* pObj,
+                char byGestureType,
+                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
         };
     };
 };
