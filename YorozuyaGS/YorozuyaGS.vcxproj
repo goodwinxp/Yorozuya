@@ -242,6 +242,7 @@
     <ClInclude Include="Trap.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="ViewInvisible.h" />
+    <ClInclude Include="Vote.h" />
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +283,7 @@
     </ClCompile>
     <ClCompile Include="Trade.cpp" />
     <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="Vote.cpp" />
     <ClCompile Include="Yorozuya.cpp" />
   </ItemGroup>
   <ItemGroup>

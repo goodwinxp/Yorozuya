@@ -35,7 +35,7 @@ namespace GameServer
 
     #pragma optimize("", off)
     template<typename _Ty>
-    class CModuleRegister 
+    class CModuleRegister
     {
     public:
         CModuleRegister()
@@ -48,7 +48,8 @@ namespace GameServer
         {
             exec_register() 
             {
-                CModuleRegistry::get_instance().push_module(_STD make_shared<_Ty>());
+                CModuleRegistry::get_instance()->push_module(
+                    CSingleton<_Ty>::get_instance());
             }
         };
         static exec_register objModuleRegister;
@@ -57,4 +58,9 @@ namespace GameServer
     template<typename _Ty> 
     typename CModuleRegister<_Ty>::exec_register CModuleRegister<_Ty>::objModuleRegister;
     #pragma optimize("", on)
+
+    template<typename _Ty>
+    static auto GetModule() {
+        return CSingleton<_Ty>::get_instance();
+    }
 };

@@ -9,16 +9,16 @@ namespace SingletonHelper
     class CSingleton
     {
     public:
-        using InstancePtr =  std::unique_ptr<_Ty>;
+        using InstancePtr =  std::shared_ptr<_Ty>;
 
         CSingleton() = default;
 
-        static _Ty& get_instance()
+        static InstancePtr get_instance()
         {
             std::call_once(CSingleton<_Ty>::m_onceFlag, []() {
                 CSingleton<_Ty>::m_upInstance.reset(new _Ty());
             });
-            return *m_upInstance;
+            return m_upInstance;
         }
 
     private:

@@ -52,6 +52,9 @@
     <Filter Include="Implementation\Fixes\Unit">
       <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Vote">
+      <UniqueIdentifier>{3cf2e210-ea01-4cc8-8f0f-5d987e9b3fa3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -89,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="Unit.cpp">
       <Filter>Implementation\Fixes\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Vote.cpp">
+      <Filter>Implementation\Fixes\Vote</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="Unit.h">
       <Filter>Implementation\Fixes\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Vote.h">
+      <Filter>Implementation\Fixes\Vote</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
