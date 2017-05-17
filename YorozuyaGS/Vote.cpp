@@ -5,6 +5,7 @@
 #include <ATF/global.hpp>
 #include <ATF/PatriarchElectProcessor.hpp>
 #include <ATF/CandidateMgr.hpp>
+#include <ATF/_pt_notify_vote_score_zocl.hpp>
 
 namespace GameServer
 {
@@ -52,7 +53,8 @@ namespace GameServer
             m_nPlayTime = nodeConfig["play_time"].GetInt();
             m_dPvpPoint = nodeConfig["pvp_point"].GetDouble();
             m_dPvpCashBag = nodeConfig["pvp_cash_bag"].GetDouble();
-            m_bScoreShow = nodeConfig["score_show"].GetBool();
+            m_bScoreListShow = nodeConfig["score_list_show"].GetBool();
+            m_bScoreListShow = nodeConfig["score_hide"].GetBool();
         }
 
         bool CVote::check_conditions(
@@ -134,7 +136,7 @@ namespace GameServer
                     break;
                 }
 
-                char pbyType[2]{56, 5};
+                char pbyType[2]{ 56, 5 };
                 auto msg = &pObj->_kCandidateInfo[pOne->m_Param.GetRaceCode()];
                 ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)msg, msg->size());
             } while (false);
@@ -159,11 +161,29 @@ namespace GameServer
             ATF::CPlayer * pOne, 
             ATF::info::Voter_SendVoteScore16_ptr next)
         {
+            UNREFERENCED_PARAMETER(next);
+
             auto instance = GetModule<CVote>();
-            if (!instance->score_show())
+            if (!instance->score_list_show())
                 return;
 
-            next(pObj, pOne);
+            if (pObj->_kCandidateInfo[pOne->m_Param.GetRaceCode()].byCnt < 2)
+                return;
+
+            char pbyType[2]{ 56, 6 };
+            ATF::_pt_notify_vote_score_zocl info;
+            memcpy_s(
+                &info, sizeof(info), 
+                &pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()], 
+                sizeof(&pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()]));
+
+            if (!instance->score_hide())
+            {
+                for(auto& b : info.body) 
+                    b.byScoreRate = 0;
+            }
+            
+            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)&info, info.size());
         }
 
         void WINAPIV CVote::_SendVoteScoreAll(
@@ -171,11 +191,38 @@ namespace GameServer
             char byRace, 
             ATF::info::Voter_SendVoteScoreAll18_ptr next)
         {
+            UNREFERENCED_PARAMETER(next);
+
             auto instance = GetModule<CVote>();
-            if (!instance->score_show())
+            if (!instance->score_list_show())
                 return;
 
-            next(pObj, byRace);
+            if (pObj->_kCandidateInfo[byRace].byCnt < 2)
+                return;
+
+            char pbyType[2]{ 56, 6 };
+            ATF::_pt_notify_vote_score_zocl info;
+            memcpy_s(
+                &info, sizeof(info),
+                &pObj->_kVoteScoreInfo[byRace], sizeof(&pObj->_kVoteScoreInfo[byRace]));
+
+            if (!instance->score_hide())
+            {
+                for (auto& b : info.body)
+                    b.byScoreRate = 0;
+            }
+
+            for (int i = 0; i < MAX_PLAYER; ++i)
+            {
+                auto& player = ATF::global::g_Player[i];
+                if (!player.m_bOper)
+                    continue;
+
+                if (player.m_Param.GetRaceCode() != byRace)
+                    continue;
+                
+                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(i, pbyType, (char *)&info, info.size());
+            }
         }
 
         int WINAPIV CVote::_Vote(

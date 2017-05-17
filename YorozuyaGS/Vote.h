@@ -28,7 +28,10 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
 
-            bool score_show() const { return m_bScoreShow; }
+            bool score_list_show() const { return m_bScoreListShow; }
+
+            bool score_hide() const { return m_bScoreHide; }
+
             bool check_conditions(ATF::CPlayer* pOne);
 
         private:
@@ -48,7 +51,8 @@ namespace GameServer
                 return m_dPvpCashBag;
             }
         private:
-            bool m_bScoreShow = false;
+            bool m_bScoreHide = true;
+            bool m_bScoreListShow = false;
             int32_t m_nLv = 0;
             uint32_t m_nPlayTime = 0;
             long double m_dPvpPoint = 0.f;
