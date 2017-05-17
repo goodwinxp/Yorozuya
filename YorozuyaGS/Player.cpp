@@ -95,15 +95,7 @@ namespace GameServer
                 if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_trap)
                     break;
 
-                auto& tblItemData = ATF::global::g_MainThread->m_tblItemData[pTrapItem->m_byTableCode];
-                ATF::_TrapItem_fld* pTrapFld = (ATF::_TrapItem_fld*)tblItemData.GetRecord(pTrapItem->m_wItemIndex);
-                if (!pTrapFld)
-                    break;
-
-                if (pObj->GetLevel() > pTrapFld->m_nUpLevelLim)
-                    break;
-
-                if (pObj->GetLevel() < pTrapFld->m_nLevelLim)
+                if (!pObj->IsEffectableEquip(pTrapItem))
                     break;
 
                 next(pObj, wSkillIndex, wTrapItemSerial, pfPos, pConsumeSerial);
@@ -132,15 +124,7 @@ namespace GameServer
                 if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_tower)
                     break;
 
-                auto& tblItemData = ATF::global::g_MainThread->m_tblItemData[pTrapItem->m_byTableCode];
-                ATF::_GuardTowerItem_fld* pTowerFld = (ATF::_GuardTowerItem_fld*)tblItemData.GetRecord(pTrapItem->m_wItemIndex);
-                if (!pTowerFld)
-                    break;
-
-                if (pObj->GetLevel() > pTowerFld->m_nUpLevelLim)
-                    break;
-
-                if (pObj->GetLevel() < pTowerFld->m_nLevelLim)
+                if (!pObj->IsEffectableEquip(pTrapItem))
                     break;
 
                 next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pfPos, pConsumeSerial);
