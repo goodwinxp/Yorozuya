@@ -12,7 +12,7 @@ namespace GameServer
 {
     CYorozuya::CYorozuya()
         : m_AtfCoreRegistry(ATF::CATFCoreRegistry::get_instance())
-        , m_ModuleRegistry(CModuleRegistry::get_instance())
+        , m_spModuleRegistry(CModuleRegistry::get_instance())
     {
         m_AtfCoreRegistry.registry();
     }
@@ -22,7 +22,7 @@ namespace GameServer
         std::call_once(m_ofStart, [this] {
             configure();
 
-            m_ModuleRegistry.load();
+            m_spModuleRegistry->load();
 
             ::_beginthread(&CYorozuya::s_routine, 0, (void *)this);
         });
@@ -31,7 +31,7 @@ namespace GameServer
     void CYorozuya::stop()
     {
         std::call_once(m_ofStop, [this] {
-            m_ModuleRegistry.unload();
+            m_spModuleRegistry->unload();
 
             m_bStop.store(true);
             m_cvCondition.notify_all();
@@ -57,7 +57,7 @@ namespace GameServer
 
         for (;!m_bStop.load(); std::this_thread::sleep_for(m_timeStepDelay))
         {
-            m_ModuleRegistry.loop();
+            m_spModuleRegistry->loop();
         }
 
         RoutineLock.unlock();
@@ -77,7 +77,7 @@ namespace GameServer
         m_timeWaitOpenWorld = std::chrono::milliseconds(cfgIntervals["open_world_wait"].GetUint64());
         m_timeStepDelay = std::chrono::milliseconds(cfgIntervals["step_delay"].GetUint64());
         
-        m_ModuleRegistry.configure(GlobalConfig["registry"]);
+        m_spModuleRegistry->configure(GlobalConfig["registry"]);
     }
 
     #define DllExport __declspec(dllexport)

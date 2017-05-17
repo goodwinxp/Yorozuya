@@ -1,7 +1,10 @@
 #include "stdafx.h"
 
 #include "Vote.h"
+#include "ETypes.h"
 #include <ATF/global.hpp>
+#include <ATF/PatriarchElectProcessor.hpp>
+#include <ATF/CandidateMgr.hpp>
 
 namespace GameServer
 {
@@ -10,15 +13,21 @@ namespace GameServer
         void CVote::load()
         {
             auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CVoteSystem::SendMsg_StartedVoteInform, &CVote::SendMsg_StartedVoteInform);
             core.set_hook(&ATF::Voter::_Vote, &CVote::_Vote);
+            core.set_hook(&ATF::Voter::_SendVotePaper, &CVote::_SendVotePaper);
+            core.set_hook(&ATF::Voter::_SendVotePaperAll, &CVote::_SendVotePaperAll);
+            core.set_hook(&ATF::Voter::_SendVoteScore, &CVote::_SendVoteScore);
+            core.set_hook(&ATF::Voter::_SendVoteScoreAll, &CVote::_SendVoteScoreAll);
         }
 
         void CVote::unload()
         {
             auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CVoteSystem::SendMsg_StartedVoteInform);
             core.unset_hook(&ATF::Voter::_Vote);
+            core.unset_hook(&ATF::Voter::_SendVotePaper);
+            core.unset_hook(&ATF::Voter::_SendVotePaperAll);
+            core.unset_hook(&ATF::Voter::_SendVoteScore);
+            core.unset_hook(&ATF::Voter::_SendVoteScoreAll);
         }
 
         void CVote::loop()
@@ -43,6 +52,7 @@ namespace GameServer
             m_nPlayTime = nodeConfig["play_time"].GetInt();
             m_dPvpPoint = nodeConfig["pvp_point"].GetDouble();
             m_dPvpCashBag = nodeConfig["pvp_cash_bag"].GetDouble();
+            m_bScoreShow = nodeConfig["score_show"].GetBool();
         }
 
         bool CVote::check_conditions(
@@ -52,6 +62,9 @@ namespace GameServer
 
             do
             {
+                if (!pOne || !pOne->m_bOper)
+                    break;
+
                 if (get_level() > pOne->GetLevel())
                     break;
 
@@ -61,7 +74,13 @@ namespace GameServer
                 if (get_pvp_point() > pOne->m_Param.GetPvPPoint())
                     break;
 
-                if (get_play_time() > pOne->m_pUserDB->m_dwTotalPlayMin)
+                if (get_play_time() > pOne->m_pUserDB->m_AvatorData.dbSupplement.dwAccumPlayTime)
+                    break;
+
+                if (!pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
+                    break;
+
+                if (pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade < 2)
                     break;
 
                 result = true;
@@ -70,16 +89,93 @@ namespace GameServer
             return result;
         }
 
-        void WINAPIV CVote::SendMsg_StartedVoteInform(
-            ATF::CVoteSystem * pObj, 
-            int n, 
-            unsigned int dwAvatorSerial, 
-            bool bPunish, 
-            ATF::info::CVoteSystemSendMsg_StartedVoteInform12_ptr next)
+        int WINAPIV CVote::_SendVotePaper(
+            ATF::Voter * pObj, 
+            ATF::CPlayer * pOne, 
+            ATF::info::Voter_SendVotePaper12_ptr next)
+        {
+            UNREFERENCED_PARAMETER(next);
+
+            auto spModule = GetModule<CVote>();
+            int result = 0;
+
+            do
+            {
+                if (!pOne)
+                    break;
+
+                if (!pOne->m_bOper)
+                    break;
+
+                if (pObj->_kCandidateInfo[pOne->m_Param.GetRaceCode()].byCnt < 2)
+                {
+                    auto instance = ATF::PatriarchElectProcessor::Instance();
+                    instance->SendMsg_ResultCode(pOne->m_id.wIndex, 8);
+                    result = 9;
+                    break;
+                }
+
+                if (pOne->m_pUserDB->m_AvatorData.dbAvator.m_bOverlapVote)
+                {
+                    result = 10;
+                    break;
+                }
+
+                if (!spModule->check_conditions(pOne))
+                {
+                    result = 11;
+                    break;
+                }
+
+                auto instance = ATF::CandidateMgr::Instance();
+                if (instance->IsRegistedAvator_2(pOne->m_Param.GetRaceCode(), pOne->m_Param.GetCharSerial()))
+                {
+                    result = 11;
+                    break;
+                }
+
+                char pbyType[2]{56, 5};
+                auto msg = &pObj->_kCandidateInfo[pOne->m_Param.GetRaceCode()];
+                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)msg, msg->size());
+            } while (false);
+
+            return result;
+        }
+
+        void WINAPIV CVote::_SendVotePaperAll(
+            ATF::Voter * pObj, 
+            ATF::info::Voter_SendVotePaperAll14_ptr next)
+        {
+            UNREFERENCED_PARAMETER(next);
+
+            for (int i = 0; i < MAX_PLAYER; ++i)
+            {
+                _SendVotePaper(pObj, &ATF::global::g_Player[i], nullptr);
+            }
+        }
+
+        void WINAPIV CVote::_SendVoteScore(
+            ATF::Voter * pObj, 
+            ATF::CPlayer * pOne, 
+            ATF::info::Voter_SendVoteScore16_ptr next)
         {
             auto instance = GetModule<CVote>();
-            if (instance->check_conditions(&ATF::global::g_Player[n]))
-                next(pObj, n, dwAvatorSerial, bPunish);
+            if (!instance->score_show())
+                return;
+
+            next(pObj, pOne);
+        }
+
+        void WINAPIV CVote::_SendVoteScoreAll(
+            ATF::Voter * pObj, 
+            char byRace, 
+            ATF::info::Voter_SendVoteScoreAll18_ptr next)
+        {
+            auto instance = GetModule<CVote>();
+            if (!instance->score_show())
+                return;
+
+            next(pObj, byRace);
         }
 
         int WINAPIV CVote::_Vote(

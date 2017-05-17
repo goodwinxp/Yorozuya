@@ -41,6 +41,6 @@ namespace GameServer
         std::condition_variable m_cvCondition;
 
         ATF::CATFCoreRegistry& m_AtfCoreRegistry;
-        CModuleRegistry& m_ModuleRegistry;
+        CModuleRegistry::InstancePtr m_spModuleRegistry;
     };
 }
