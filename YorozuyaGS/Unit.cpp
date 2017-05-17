@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-#include "UnitDelivery.h"
+#include "Unit.h"
 
 namespace GameServer
 {
@@ -8,39 +8,39 @@ namespace GameServer
     {
         using namespace ATF;
 
-        void CUnitDelivery::load()
+        void CUnit::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&CPlayer::pc_UnitDeliveryRequest, &CUnitDelivery::pc_UnitDeliveryRequest);
+            core.set_hook(&CPlayer::pc_UnitDeliveryRequest, &CUnit::pc_UnitDeliveryRequest);
         }
 
-        void CUnitDelivery::unload()
+        void CUnit::unload()
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook(&CPlayer::pc_UnitDeliveryRequest);
         }
 
-        void CUnitDelivery::loop()
+        void CUnit::loop()
         {
         }
 
-        ModuleVersion_t CUnitDelivery::get_version()
+        ModuleVersion_t CUnit::get_version()
         {
             return usVersion;
         }
 
-        ModuleName_t CUnitDelivery::get_name()
+        ModuleName_t CUnit::get_name()
         {
-            static const ModuleName_t name = "fix_unitdelivery";
+            static const ModuleName_t name = "fix_unit";
             return name;
         }
 
-        void CUnitDelivery::configure(const rapidjson::Value & nodeConfig)
+        void CUnit::configure(const rapidjson::Value & nodeConfig)
         {
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
-        void WINAPIV CUnitDelivery::pc_UnitDeliveryRequest(
+        void WINAPIV CUnit::pc_UnitDeliveryRequest(
             CPlayer* pPlayer,
             char bySlotIndex, 
             CItemStore * pStore, 

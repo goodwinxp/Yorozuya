@@ -37,9 +37,6 @@
     <Filter Include="Implementation\Utils">
       <UniqueIdentifier>{267211dc-6ee0-4971-aee6-c95814bfc120}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Fixes\UnitDelivery">
-      <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Implementation\Fixes\ViewInvisible">
       <UniqueIdentifier>{e43d18ab-92a4-4958-9776-0cf059fb682a}</UniqueIdentifier>
     </Filter>
@@ -51,6 +48,9 @@
     </Filter>
     <Filter Include="Implementation\Fixes\Player">
       <UniqueIdentifier>{6a832ba5-0d5d-45e9-89da-24362a1bffb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\Unit">
+      <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -75,9 +75,6 @@
     <ClCompile Include="ItemCheckHelper.cpp">
       <Filter>Implementation\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="UnitDelivery.cpp">
-      <Filter>Implementation\Fixes\UnitDelivery</Filter>
-    </ClCompile>
     <ClCompile Include="ViewInvisible.cpp">
       <Filter>Implementation\Fixes\ViewInvisible</Filter>
     </ClCompile>
@@ -89,6 +86,9 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Implementation\Fixes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Implementation\Fixes\Unit</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +122,6 @@
     <ClInclude Include="ETypes.h">
       <Filter>Implementation\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="UnitDelivery.h">
-      <Filter>Implementation\Fixes\UnitDelivery</Filter>
-    </ClInclude>
     <ClInclude Include="ViewInvisible.h">
       <Filter>Implementation\Fixes\ViewInvisible</Filter>
     </ClInclude>
@@ -136,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Implementation\Fixes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Implementation\Fixes\Unit</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,10 +11,10 @@ namespace GameServer
 
     namespace Fixes
     {
-        class CUnitDelivery : public IModule, CModuleRegister<CUnitDelivery>
+        class CUnit : public IModule, CModuleRegister<CUnit>
         {
         public:
-            CUnitDelivery() { };
+            CUnit() { };
 
             virtual void load();
 
