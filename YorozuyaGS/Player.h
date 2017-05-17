@@ -4,6 +4,7 @@
 #include "../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CPlayer_info.hpp>
+#include <ATF/_make_tower_request_clzo.hpp>
 
 namespace GameServer
 {
@@ -39,6 +40,24 @@ namespace GameServer
                 ATF::CPlayer *pDier,
                 char byKillerObjID,
                 ATF::info::CPlayerCalPvpTempCash52_ptr next);
+
+            static void WINAPIV pc_MakeTrapRequest(
+                ATF::CPlayer* pObj,
+                uint16_t wSkillIndex,
+                uint16_t wTrapItemSerial,
+                float* pfPos,
+                uint16_t* pConsumeSerial,
+                ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next);
+
+            static void WINAPIV pc_MakeTowerRequest(
+                ATF::CPlayer* pObj,
+                uint16_t wSkillIndex,
+                uint16_t wTowerItemSerial,
+                char byMaterialNum,
+                ATF::_make_tower_request_clzo::__material* pMaterial,
+                float* pfPos,
+                uint16_t* pConsumeSerial, 
+                ATF::info::CPlayerpc_MakeTowerRequest1781_ptr next);
         };
     };
 };

@@ -49,6 +49,7 @@ namespace GameServer
             int bUseNPCLinkIntem, 
             info::CPlayerpc_UnitDeliveryRequest1995_ptr next)
         {
+            UNREFERENCED_PARAMETER(pfNewPos);
             next(pPlayer, bySlotIndex, pStore, bPayFee, pPlayer->m_fCurPos, bUseNPCLinkIntem);
         }
     }

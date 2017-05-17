@@ -38,14 +38,6 @@ namespace GameServer
                 ATF::CTrap* pTrap,
                 int n,
                 ATF::info::CTrapSendMsg_FixPosition82_ptr next);
-
-            static void WINAPIV pc_MakeTrapRequest(
-                ATF::CPlayer* pObj, 
-                uint16_t wSkillIndex, 
-                uint16_t wTrapItemSerial, 
-                float* pfPos, 
-                uint16_t* pConsumeSerial, 
-                ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next);
         };
     };
 };
