@@ -86,4 +86,15 @@ namespace GameServer
         obj_id_trap = 7,
         num = 8
     };
+
+    enum class e_type_line : uint8_t
+    {
+        client = 0,
+        account = 1,
+        web_agent = 2,
+        billing = 3,
+        num
+    };
+
+    #define MAX_PLAYER 2532
 }
