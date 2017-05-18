@@ -64,16 +64,6 @@ namespace GameServer
                 char byGestureType,
                 ATF::info::CPlayerpc_GestureRequest1719_ptr next);
 
-            static void WINAPIV pc_GestureRequest(
-                ATF::CPlayer* pObj,
-                char byGestureType,
-                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
-
-            static void WINAPIV pc_GestureRequest(
-                ATF::CPlayer* pObj,
-                char byGestureType,
-                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
-
             static void WINAPIV pc_GuildManageRequest(
                 ATF::CPlayer* pObj,
                 char byType,
