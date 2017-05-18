@@ -180,7 +180,9 @@ namespace GameServer
 
             if (!instance->score_hide())
             {
-                for(auto& b : info.body) 
+                info.byVoteRate = 0;
+                info.byNonvoteRate = 0;
+                for (auto& b : info.body)
                     b.byScoreRate = 0;
             }
             
@@ -209,6 +211,8 @@ namespace GameServer
 
             if (!instance->score_hide())
             {
+                info.byVoteRate = 0;
+                info.byNonvoteRate = 0;
                 for (auto& b : info.body)
                     b.byScoreRate = 0;
             }
