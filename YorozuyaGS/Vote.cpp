@@ -53,6 +53,7 @@ namespace GameServer
             m_nPlayTime = nodeConfig["play_time"].GetInt();
             m_dPvpPoint = nodeConfig["pvp_point"].GetDouble();
             m_dPvpCashBag = nodeConfig["pvp_cash_bag"].GetDouble();
+            m_nClassGrade = nodeConfig["class_grade"].GetInt();
             m_bScoreListShow = nodeConfig["score_list_show"].GetBool();
             m_bScoreHide = nodeConfig["score_hide"].GetBool();
         }
@@ -67,6 +68,12 @@ namespace GameServer
                 if (!pOne || !pOne->m_bOper)
                     break;
 
+                if (!pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
+                    break;
+
+                if (get_class_grade() > pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade)
+                    break;
+
                 if (get_level() > pOne->GetLevel())
                     break;
 
@@ -77,12 +84,6 @@ namespace GameServer
                     break;
 
                 if (get_play_time() > pOne->m_pUserDB->m_AvatorData.dbSupplement.dwAccumPlayTime)
-                    break;
-
-                if (!pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
-                    break;
-
-                if (pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade < 2)
                     break;
 
                 result = true;
