@@ -2,9 +2,56 @@
 #pragma once
 
 #include "./common/common.h"
-
+#include "$68212A2FF8893AF40C04AE444C41E2BE.hpp"
 
 START_ATF_NAMESPACE
+    enum class _EFF_PLUS : int32_t
+    {
+        GE_Hit_ = 0x0,
+        GH1 = 0x1,
+        Lcr_Hit = 0x2,
+        GE_Avd = 0x3,
+        GE_Att_Dist_ = 0x4,
+        GAD1 = 0x5,
+        SK_Att_Dist_ = 0x6,
+        SAD1 = 0x7,
+        FC_Att_Dist = 0x8,
+        GE_Att_Spd_ = 0x9,
+        GAS1 = 0xA,
+        Lcr_Att_Spd = 0xB,
+        SK_Spd = 0xC,
+        FC_Spd = 0xD,
+        GE_CrtExt = 0xE,
+        Part_Tol_ = 0xF,
+        PT1 = 0x10,
+        PT2 = 0x11,
+        PT3 = 0x12,
+        SK_LvUp = 0x13,
+        Move_Run_Spd = 0x14,
+        Transparency = 0x15,
+        Detect = 0x16,
+        Anti_CtDm = 0x17,
+        Know_WeakPoint = 0x18,
+        FP_Rev_Add = 0x19,
+        View_Circle = 0x1A,
+        Avoid_Con = 0x1B,
+        Dst_Shd = 0x1C,
+        DEF_ShdDefRate = 0x1D,
+        SK_HitRate = 0x1E,
+        FC_HitRate = 0x1F,
+        HP_Per2Sec = 0x20,
+        FP_Per2Sec = 0x21,
+        SP_Per2Sec = 0x22,
+        DP_Max = 0x23,
+        Lcr_Att_Dist = 0x24,
+        All_AvdCrt = 0x25,
+        Con_Eff_CancelRate = 0x26,
+        Fg_Crt = 0x27,
+        Potion_Inc_All_Hit = 0x28,
+        Potion_Inc_Ignore_Sheild = 0x29,
+        __END = 0x2A,
+    };
+
     #pragma pack(push, 8)
     struct _effect_parameter
     {
