@@ -72,6 +72,12 @@ namespace GameServer
                 unsigned int dwObj2,
                 unsigned int dwObj3,
                 ATF::info::CPlayerpc_GuildManageRequest1745_ptr next);
+
+            static void WINAPIV pc_MovePortal(
+                ATF::CPlayer* pObj, 
+                int nPortalIndex, 
+                uint16_t* pConsumeSerial, 
+                ATF::info::CPlayerpc_MovePortal1795_ptr next);
         };
     };
 };

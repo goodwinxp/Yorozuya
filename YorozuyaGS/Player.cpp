@@ -167,5 +167,24 @@ namespace GameServer
 
             next(pObj, byType, dwDst, dwObj1, dwObj2, dwObj3);
         }
+        
+        void WINAPIV CPlayer::pc_MovePortal(
+            ATF::CPlayer * pObj, 
+            int nPortalIndex, 
+            uint16_t * pConsumeSerial, 
+            ATF::info::CPlayerpc_MovePortal1795_ptr next)
+        {
+            if (pObj->Is_Battle_Mode())
+            {
+                float pNewPos[3];
+                char byMapIndx = -1;
+                char byPortalIndx = -1;
+
+                pObj->SendMsg_MovePortal(4, byMapIndx, byPortalIndx, pNewPos, true);
+                return;
+            }
+
+            next(pObj, nPortalIndex, pConsumeSerial);;
+        }
     }
 }
