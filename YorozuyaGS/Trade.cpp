@@ -50,7 +50,7 @@ namespace GameServer
             ATF::info::CPlayerpc_DTradeOKRequest1687_ptr next)
         {
             bool bCheckPassed = false;
-            CPlayer* pDst = &global::g_Player[pObj->m_pmTrd.wDTradeDstIndex];
+            CPlayer* pDst = nullptr;
 
             auto fnCheckExchange = [](CPlayer* pPlayer) -> bool
             {
@@ -77,6 +77,12 @@ namespace GameServer
 
             do
             {
+                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
+                {
+                    bCheckPassed = true;
+                    break;
+                }
+
                 if (!pObj->m_pmTrd.bDTradeMode || !pObj->m_pmTrd.bDTradeLock)
                 {
                     bCheckPassed = true;
@@ -114,6 +120,16 @@ namespace GameServer
 
             if (bCheckPassed)
                 next(pObj, pdwKey);
+            else
+            {
+                pObj->m_pmTrd.Init();
+                pObj->SendMsg_DTradeCloseInform(0);
+                if (pDst)
+                {
+                    pDst->m_pmTrd.Init();
+                    pDst->SendMsg_DTradeCloseInform(0);
+                }
+            }
         }
     }
 }
