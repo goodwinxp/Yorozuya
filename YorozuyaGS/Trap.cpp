@@ -101,7 +101,7 @@ namespace GameServer
             ATF::CPlayer* pPlayer = &ATF::global::g_Player[n];
             if (pTrap->m_dwMasterSerial != pPlayer->m_Param.GetCharSerial())
             {
-                if (!pPlayer->m_EP.GetEff_State(23))
+                if (!pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
                 {
                     return;
                 }

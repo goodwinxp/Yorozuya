@@ -43,19 +43,23 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
+        // SendMsg_StateInform
+        // SendMsg_FixPosition
+        // SendMsg_OtherShapePart
+        // SendMsg_OtherShapeAll
         void WINAPIV CViewInvisible::Player_SendMsg_FixPosition(
             ATF::CPlayer* pPlayer,
             int n,
             ATF::info::CPlayerSendMsg_FixPosition752_ptr next)
         {
-            /* CPlayer* pDstPlayer = &global::g_Player[n];
-            if (pPlayer->m_EP.GetEff_State())
+            CPlayer* pDstPlayer = &global::g_Player[n];
+            if (pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Invisible))
             {
-                if (!pDstPlayer->m_EP.GetEff_State(23))
+                if (!pDstPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Detect))
                 {
                     return;
                 }
-            }*/
+            }
 
             next(pPlayer, n);
         }
