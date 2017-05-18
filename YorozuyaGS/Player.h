@@ -63,6 +63,25 @@ namespace GameServer
                 ATF::CPlayer* pObj,
                 char byGestureType,
                 ATF::info::CPlayerpc_GestureRequest1719_ptr next);
+
+            static void WINAPIV pc_GestureRequest(
+                ATF::CPlayer* pObj,
+                char byGestureType,
+                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
+
+            static void WINAPIV pc_GestureRequest(
+                ATF::CPlayer* pObj,
+                char byGestureType,
+                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
+
+            static void WINAPIV pc_GuildManageRequest(
+                ATF::CPlayer* pObj,
+                char byType,
+                unsigned int dwDst,
+                unsigned int dwObj1,
+                unsigned int dwObj2,
+                unsigned int dwObj3,
+                ATF::info::CPlayerpc_GuildManageRequest1745_ptr next);
         };
     };
 };

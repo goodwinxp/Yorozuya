@@ -16,6 +16,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
             core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
+            core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
         }
 
         void CPlayer::unload()
@@ -26,6 +27,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
             core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
             core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
+            core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
         }
 
         void CPlayer::loop()
@@ -146,6 +148,24 @@ namespace GameServer
                 return;
 
             next(pObj, byGestureType);
+        }
+
+        void WINAPIV CPlayer::pc_GuildManageRequest(
+            ATF::CPlayer * pObj, 
+            char byType, 
+            unsigned int dwDst, 
+            unsigned int dwObj1, 
+            unsigned int dwObj2, 
+            unsigned int dwObj3, 
+            ATF::info::CPlayerpc_GuildManageRequest1745_ptr next)
+        {
+            if (!pObj->m_Param.m_pGuild)
+            {
+                pObj->SendMsg_GuildManageResult(202);
+                return;
+            }
+
+            next(pObj, byType, dwDst, dwObj1, dwObj2, dwObj3);
         }
     }
 }
