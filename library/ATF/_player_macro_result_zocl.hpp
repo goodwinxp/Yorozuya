@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _player_macro_result_zocl
     {
         unsigned int potion[3];

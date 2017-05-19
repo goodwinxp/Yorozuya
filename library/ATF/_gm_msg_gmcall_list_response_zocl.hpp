@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _gm_msg_gmcall_list_response_zocl
     {
         struct  _call_node

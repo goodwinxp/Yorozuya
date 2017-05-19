@@ -6,7 +6,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _remaintime_inform_zocl
     {
         __int16 iType;

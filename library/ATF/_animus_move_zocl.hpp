@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _animus_move_zocl
     {
         unsigned int dwSerial;

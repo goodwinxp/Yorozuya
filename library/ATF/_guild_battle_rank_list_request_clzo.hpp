@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _guild_battle_rank_list_request_clzo
     {
         unsigned int dwCurVer;

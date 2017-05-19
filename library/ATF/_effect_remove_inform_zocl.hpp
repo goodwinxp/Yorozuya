@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _effect_remove_inform_zocl
     {
         unsigned __int16 wEffectCode;

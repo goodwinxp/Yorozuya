@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _notify_effect_for_get_gold_box_item_zocl
     {
         char byBoxType;

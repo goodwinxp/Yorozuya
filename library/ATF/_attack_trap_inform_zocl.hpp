@@ -6,7 +6,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _attack_trap_inform_zocl
     {
         unsigned int dwAtterSerial;

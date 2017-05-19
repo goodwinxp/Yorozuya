@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _back_trap_request_clzo
     {
         unsigned int dwTrapObjSerial;

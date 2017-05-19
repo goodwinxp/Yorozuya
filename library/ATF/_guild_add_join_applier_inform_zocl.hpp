@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _guild_add_join_applier_inform_zocl
     {
         unsigned int dwApplierSerial;

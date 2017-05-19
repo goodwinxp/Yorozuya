@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _personal_automine_battery_extract_clzo
     {
         unsigned int dwObjSerial;

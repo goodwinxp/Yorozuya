@@ -6,7 +6,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _d_trade_start_inform_zocl
     {
         _CLID idAsker;

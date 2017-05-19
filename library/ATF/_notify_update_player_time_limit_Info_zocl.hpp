@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _notify_update_player_time_limit_Info_zocl
     {
         unsigned int dwFatigue;

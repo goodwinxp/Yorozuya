@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _use_fire_cracker_item_inform_zocl
     {
         unsigned int dwUserObjSerial;
