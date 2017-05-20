@@ -28,10 +28,20 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
         private:
-            static void WINAPIV Player_SendMsg_FixPosition(
+            static void WINAPIV CPlayer_SendMsg_FixPosition(
                 ATF::CPlayer* pPlayer,
-                int n,
+                int dwClientIndex,
                 ATF::info::CPlayerSendMsg_FixPosition752_ptr next);
+
+            static void WINAPIV CPlayer__SendMsg_OtherShapePart(
+                ATF::CPlayer *pPlayer,
+                ATF::CPlayer *pDst,
+                ATF::info::CPlayerSendMsg_OtherShapePart914_ptr next);
+
+            static void WINAPIV CPlayer__SendMsg_OtherShapeAll(
+                ATF::CPlayer *pPlayer,
+                ATF::CPlayer *pDst,
+                ATF::info::CPlayerSendMsg_OtherShapeAll910_ptr next);
         };
     };
 };
