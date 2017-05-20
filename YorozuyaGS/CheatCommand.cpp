@@ -49,6 +49,11 @@ namespace GameServer
 
             if (pOne)
             {
+                if (pOne->m_bySubDgr == 0 && pOne->m_byUserDgr == 0)
+                {
+                    return false;
+                }
+
                 if (!((1 << pOne->m_byUserDgr) & pCmd->nUseDegree))
                     return false;
 
