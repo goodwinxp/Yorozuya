@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _attack_skill_request_clzo
     {
         char byID;
-         __declspec(align(1)) unsigned __int16 wIndex;
+        unsigned __int16 wIndex;
         char byEffectCode;
         unsigned __int16 wSkillIndex;
         unsigned __int16 wBulletSerial;

@@ -12,11 +12,11 @@ START_ATF_NAMESPACE
         {
             unsigned int dwRegistSerial;
             char byTableCode;
-             __declspec(align(1)) unsigned __int16 wItemIndex;
-             __declspec(align(1)) unsigned __int64 dwD;
-             __declspec(align(1)) unsigned int dwU;
-             __declspec(align(1)) unsigned int dwPrice;
-             __declspec(align(1)) unsigned int dwOwner;
+            unsigned __int16 wItemIndex;
+            unsigned __int64 dwD;
+            unsigned int dwU;
+            unsigned int dwPrice;
+            unsigned int dwOwner;
             char wszOwnerName[17];
             unsigned int dwLeftSec;
         };

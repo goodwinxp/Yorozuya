@@ -8,10 +8,10 @@ START_ATF_NAMESPACE
     struct _add_lend_item_result_zocl
     {
         char byTblCode;
-         __declspec(align(1)) unsigned __int16 wItemIdx;
-         __declspec(align(1)) unsigned int dwDur;
-         __declspec(align(1)) unsigned int dwUp;
-         __declspec(align(1)) unsigned int dwItemSerial;
+        unsigned __int16 wItemIdx;
+        unsigned int dwDur;
+        unsigned int dwUp;
+        unsigned int dwItemSerial;
         char byCsMethod;
         unsigned int dwT;
     public:

@@ -8,8 +8,8 @@ START_ATF_NAMESPACE
     struct _RTC_ALLOCA_NODE
     {
         int guard1;
-         __declspec(align(1)) _RTC_ALLOCA_NODE *next;
-         __declspec(align(1)) unsigned __int64 allocaSize;
+        _RTC_ALLOCA_NODE *next;
+        unsigned __int64 allocaSize;
         int guard2[3];
     };
 END_ATF_NAMESPACE

@@ -9,8 +9,8 @@ START_ATF_NAMESPACE
     {
         char byRetCode;
         char byTaxRate;
-         __declspec(align(1)) unsigned int dwLeftDalant;
-         __declspec(align(1)) unsigned int dwTax;
+        unsigned int dwLeftDalant;
+        unsigned int dwTax;
         unsigned __int16 wItemSerial;
         unsigned int dwNewPrice;
         unsigned int dwRegistSerial;

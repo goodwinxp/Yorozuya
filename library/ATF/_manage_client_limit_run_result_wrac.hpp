@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _manage_client_limit_run_result_wrac
     {
         char byRet;
-         __declspec(align(1)) _CLID idLocal;
+        _CLID idLocal;
         char byLoginServerIndex;
     };
 END_ATF_NAMESPACE

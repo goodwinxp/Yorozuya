@@ -35,7 +35,7 @@ START_ATF_NAMESPACE
         unsigned int dwMasterSerial;
         char byProcRet;
         unsigned int dwCount;
-        __declspec(align(8)) __list List[50];
+        __list List[50];
     public:
         _qry_case_post_storage_list_get()
         {

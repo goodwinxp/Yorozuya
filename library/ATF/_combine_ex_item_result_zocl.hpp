@@ -52,8 +52,8 @@ START_ATF_NAMESPACE
         };
         char byErrCode;
         char byDlgType;
-         __declspec(align(1)) unsigned int dwDalant;
-         __declspec(align(1)) unsigned int dwCheckKey;
+        unsigned int dwDalant;
+        unsigned int dwCheckKey;
         char bySelectItemCount;
         _Result_ItemList_Buff ItemBuff;
         unsigned int dwResultEffectType;

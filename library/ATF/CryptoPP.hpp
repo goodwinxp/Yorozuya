@@ -7723,7 +7723,7 @@ START_ATF_NAMESPACE
         struct AdditiveCipherAbstractPolicyVtbl
         {
             void *(WINAPIV *__vecDelDtor)(AdditiveCipherAbstractPolicy *_this, unsigned int);
-            __declspec(align(16)) unsigned int (WINAPIV *GetBytesPerIteration)(AdditiveCipherAbstractPolicy *_this);
+            unsigned int (WINAPIV *GetBytesPerIteration)(AdditiveCipherAbstractPolicy *_this);
             unsigned int (WINAPIV *GetOptimalBlockSize)(AdditiveCipherAbstractPolicy *_this);
             unsigned int (WINAPIV *GetIterationsToBuffer)(AdditiveCipherAbstractPolicy *_this);
             void (WINAPIV *WriteKeystream)(AdditiveCipherAbstractPolicy *_this, char *, unsigned __int64);
@@ -8272,7 +8272,7 @@ START_ATF_NAMESPACE
         struct PK_SignatureMessageEncodingMethodVtbl
         {
             void *(WINAPIV *__vecDelDtor)(PK_SignatureMessageEncodingMethod *_this, unsigned int);
-            __declspec(align(16)) unsigned __int64 (WINAPIV *MaxRecoverableLength)(PK_SignatureMessageEncodingMethod *_this, unsigned __int64, unsigned __int64, unsigned __int64);
+            unsigned __int64 (WINAPIV *MaxRecoverableLength)(PK_SignatureMessageEncodingMethod *_this, unsigned __int64, unsigned __int64, unsigned __int64);
             bool (WINAPIV *RecoverablePartFirst)(PK_SignatureMessageEncodingMethod *_this);
             void (WINAPIV *ProcessSemisignature)(PK_SignatureMessageEncodingMethod *_this, HashTransformation *, const char *, unsigned __int64);
             void (WINAPIV *ProcessRecoverableMessage)(PK_SignatureMessageEncodingMethod *_this, HashTransformation *, const char *, unsigned __int64, const char *, unsigned __int64, SecBlock<unsigned char,AllocatorWithCleanup<unsigned char,0> > *);

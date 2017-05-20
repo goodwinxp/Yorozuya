@@ -17,7 +17,7 @@ START_ATF_NAMESPACE
         tagVS_FIXEDFILEINFO VersionInfo;
         void *CvRecord;
         unsigned int SizeOfCvRecord;
-         __declspec(align(1)) void *MiscRecord;
+        void *MiscRecord;
         unsigned int SizeOfMiscRecord;
     };
 END_ATF_NAMESPACE

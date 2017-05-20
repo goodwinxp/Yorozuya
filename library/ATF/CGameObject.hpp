@@ -612,4 +612,6 @@ START_ATF_NAMESPACE
             (org_ptr(0x14017a6b0L))(this);
         };
     };
+
+    static_assert(sizeof(CGameObject) == 0xC0, "sizeof CGameObject need 0xC0");
 END_ATF_NAMESPACE

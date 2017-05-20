@@ -9,10 +9,10 @@ START_ATF_NAMESPACE
     struct _SHChangeUpdateImageIDList
     {
         unsigned __int16 cb;
-         __declspec(align(1)) int iIconIndex;
-         __declspec(align(1)) int iCurIndex;
-         __declspec(align(1)) unsigned int uFlags;
-         __declspec(align(1)) unsigned int dwProcessID;
+        int iIconIndex;
+        int iCurIndex;
+        unsigned int uFlags;
+        unsigned int dwProcessID;
         wchar_t szName[260];
         unsigned __int16 cbZero;
     };

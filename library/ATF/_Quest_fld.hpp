@@ -22,7 +22,7 @@ START_ATF_NAMESPACE
         int m_bCompQuestType;
         _action_node m_ActionNode[3];
         int m_nMaxLevel;
-         __declspec(align(1)) long double m_dConsExp;
+        long double m_dConsExp;
         int m_nConsContribution;
         int m_nConsDalant;
         int m_nConspvppoint;

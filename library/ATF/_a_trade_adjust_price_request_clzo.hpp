@@ -8,9 +8,9 @@ START_ATF_NAMESPACE
     struct _a_trade_adjust_price_request_clzo
     {
         char byStoreIndex;
-         __declspec(align(1)) unsigned __int16 wItemSerial;
-         __declspec(align(1)) unsigned int dwNewPrice;
-         __declspec(align(1)) unsigned int dwRegistSerial;
+        unsigned __int16 wItemSerial;
+        unsigned int dwNewPrice;
+        unsigned int dwRegistSerial;
         char byTaxRate;
     };
 END_ATF_NAMESPACE

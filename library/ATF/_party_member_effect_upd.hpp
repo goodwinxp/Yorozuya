@@ -9,7 +9,7 @@ START_ATF_NAMESPACE
     {
         unsigned int dwMemSerial;
         char byAlterCode;
-         __declspec(align(1)) unsigned __int16 wEffectCode;
+        unsigned __int16 wEffectCode;
         char byEffectLv;
     };
 END_ATF_NAMESPACE

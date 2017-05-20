@@ -6,6 +6,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 1)
     struct _ITEMCOMBINE_DB_BASE
     {
         struct _LIST
@@ -33,8 +34,8 @@ START_ATF_NAMESPACE
         bool m_bIsResult;
         char m_byItemListNum;
         char m_byDlgType;
-         __declspec(align(1)) unsigned int m_dwDalant;
-         __declspec(align(1)) unsigned int m_dwCheckKey;
+        unsigned int m_dwDalant;
+        unsigned int m_dwCheckKey;
         char m_bySelectItemCount;
         _LIST m_List[24];
         unsigned int m_dwResultEffectType;
@@ -61,4 +62,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140077180L))(this);
         };
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE

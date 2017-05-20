@@ -22,6 +22,6 @@ START_ATF_NAMESPACE
             unsigned __int16 wStorageIndex;
         };
         unsigned int dwCount;
-        __declspec(align(8)) __list List[50];
+        __list List[50];
     };
 END_ATF_NAMESPACE

@@ -10,7 +10,7 @@ START_ATF_NAMESPACE
         char bySubQryCase;
         char byCollisionType;
         char byRace;
-         __declspec(align(1)) unsigned int dwGuildSerial;
+        unsigned int dwGuildSerial;
         char byOreIdx;
     public:
         _qry_case_amine_selore()

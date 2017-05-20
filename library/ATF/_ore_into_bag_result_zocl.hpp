@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _ore_into_bag_result_zocl
     {
         char byErrCode;
-         __declspec(align(1)) unsigned __int16 wNewSerial;
+        unsigned __int16 wNewSerial;
         char byCsMethod;
         unsigned int dwT;
     };

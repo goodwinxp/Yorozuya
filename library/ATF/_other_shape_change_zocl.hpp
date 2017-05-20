@@ -13,7 +13,7 @@ START_ATF_NAMESPACE
             char byLv;
         };
         unsigned __int16 wIndex;
-         __declspec(align(1)) unsigned int dwSerial;
+        unsigned int dwSerial;
         unsigned __int16 wEquipVer;
         char byPartIndex;
         _model ModelPerPart;

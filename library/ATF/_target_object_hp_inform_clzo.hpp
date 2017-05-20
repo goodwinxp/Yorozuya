@@ -9,7 +9,7 @@ START_ATF_NAMESPACE
     {
         char byKind;
         char byID;
-         __declspec(align(1)) unsigned int dwSerial;
+        unsigned int dwSerial;
         unsigned __int16 wHPRate;
     };
 END_ATF_NAMESPACE

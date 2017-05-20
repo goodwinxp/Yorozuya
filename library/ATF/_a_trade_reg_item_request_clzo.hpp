@@ -8,11 +8,11 @@ START_ATF_NAMESPACE
     struct _a_trade_reg_item_request_clzo
     {
         char byStoreIndex;
-         __declspec(align(1)) unsigned __int16 wItemSerial;
+        unsigned __int16 wItemSerial;
         char byAmount;
         char byItemTableCode;
-         __declspec(align(1)) unsigned __int16 wItemIndex;
-         __declspec(align(1)) unsigned int dwPrice;
+        unsigned __int16 wItemIndex;
+        unsigned int dwPrice;
         char byTax;
         int bUseNpcLink;
     };

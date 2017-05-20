@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _ore_cutting_request_clzo
     {
         char byCuttingHouse;
-         __declspec(align(1)) unsigned __int16 wOreSerial;
+        unsigned __int16 wOreSerial;
         char byProcessNum;
     };
 END_ATF_NAMESPACE

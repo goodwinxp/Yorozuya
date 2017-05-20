@@ -9,9 +9,9 @@ START_ATF_NAMESPACE
     {
         char szStartTime[17];
         char szEndTime[17];
-         __declspec(align(1)) unsigned int dwRedSerial;
+        unsigned int dwRedSerial;
         char wszRedName[17];
-         __declspec(align(1)) unsigned int dwBlueSerial;
+        unsigned int dwBlueSerial;
         char wszBlueName[17];
         unsigned int dwRedScore;
         unsigned int dwBlueScore;
@@ -22,9 +22,9 @@ START_ATF_NAMESPACE
         unsigned int dwRedKillCntSum;
         unsigned int dwBlueKillCntSum;
         char byBattleResult;
-         __declspec(align(1)) unsigned int dwMaxGoalCharacSerial;
+        unsigned int dwMaxGoalCharacSerial;
         char wszMaxGoalCharacName[17];
-         __declspec(align(1)) unsigned int dwMaxKillCharacSerial;
+        unsigned int dwMaxKillCharacSerial;
         char wszMaxKillCharacName[17];
         char byJoinLimit;
         unsigned int dwGuildBattleCost;

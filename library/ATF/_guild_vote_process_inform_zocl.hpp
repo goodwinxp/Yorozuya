@@ -9,12 +9,12 @@ START_ATF_NAMESPACE
     {
         bool bStart;
         char byMatterType;
-         __declspec(align(1)) unsigned int dwMatterDst;
-         __declspec(align(1)) unsigned int dwMatterObj1;
-         __declspec(align(1)) unsigned int dwMatterObj2;
-         __declspec(align(1)) unsigned int dwMatterObj3;
-         __declspec(align(1)) unsigned int dwMatterVoteSynKey;
-         __declspec(align(1)) unsigned int dwSuggesterSerial;
+        unsigned int dwMatterDst;
+        unsigned int dwMatterObj1;
+        unsigned int dwMatterObj2;
+        unsigned int dwMatterObj3;
+        unsigned int dwMatterVoteSynKey;
+        unsigned int dwSuggesterSerial;
         char byLoginSeniorNum;
         char byTotalSeniorNum;
         bool bActed;

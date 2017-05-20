@@ -125,6 +125,7 @@ START_ATF_NAMESPACE
             insert_time = 0x1,
             delete_time = 0x2,
         };
+
         union CashChangeStateFlag
         {
             $621D0DDFB6A4DE55506A65C7CCDC95CE __s0;
@@ -141,6 +142,8 @@ START_ATF_NAMESPACE
                 (org_ptr(0x140073f40L))(this, cashrename);
             };
         };
+        static_assert(sizeof(CashChangeStateFlag) == 0x4, "sizeof CashChangeStateFlag need 0x4");
+
         struct __target
         {
             CGameObject *pObject;
@@ -167,6 +170,8 @@ START_ATF_NAMESPACE
                 (org_ptr(0x1400741b0L))(this);
             };
         };
+        static_assert(sizeof(__target) == 0x48, "sizeof __target need 0x48");
+
         bool m_bLoad;
         bool m_bOper;
         bool m_bPostLoad;
@@ -478,7 +483,7 @@ START_ATF_NAMESPACE
             (org_ptr(0x140064590L))(this);
         };
         CPlayer()
-			: m_CashChangeStateFlag(0)
+            : m_CashChangeStateFlag(0)
         {
             using org_ptr = void (WINAPIV*)(struct CPlayer*);
             (org_ptr(0x1400478b0L))(this);
@@ -5469,4 +5474,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140048050L))(this);
         };
     };
+    static_assert(sizeof(CPlayer) == 0xC6A8, "sizeof CPlayer need 0xC6A8");
 END_ATF_NAMESPACE

@@ -11,7 +11,7 @@ START_ATF_NAMESPACE
         struct _list
         {
             char byStorageCode;
-             __declspec(align(1)) unsigned __int16 wSerial;
+            unsigned __int16 wSerial;
             char byAmount;
         };
         unsigned int dwStoreIndex;

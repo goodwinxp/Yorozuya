@@ -9,7 +9,7 @@ START_ATF_NAMESPACE
     {
         unsigned int dwTakerSerial;
         char byItemTableCode;
-         __declspec(align(1)) unsigned __int16 wItemIndex;
+        unsigned __int16 wItemIndex;
         char byNum;
     };
 END_ATF_NAMESPACE

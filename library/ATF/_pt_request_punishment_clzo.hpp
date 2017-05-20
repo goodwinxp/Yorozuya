@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _pt_request_punishment_clzo
     {
         char byType;
-         __declspec(align(1)) unsigned __int16 wContentSize;
+        unsigned __int16 wContentSize;
         char wszCharName[17];
         char wszContent[1280];
     };

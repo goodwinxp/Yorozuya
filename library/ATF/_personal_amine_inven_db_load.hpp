@@ -21,4 +21,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x14010deb0L))(this);
         };
     };
+    static_assert(sizeof(_personal_amine_inven_db_load) == 0x7E4, "sizeof _personal_amine_inven_db_load need 0x7E4");
 END_ATF_NAMESPACE

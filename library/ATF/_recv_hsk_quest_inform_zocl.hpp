@@ -8,8 +8,8 @@ START_ATF_NAMESPACE
     struct _recv_hsk_quest_inform_zocl
     {
         char byHSKQuestCode;
-         __declspec(align(1)) int nPvpPoint;
-         __declspec(align(1)) unsigned __int16 wKillPoint;
+        int nPvpPoint;
+        unsigned __int16 wKillPoint;
         char byHolyMentalCount;
     };
 END_ATF_NAMESPACE

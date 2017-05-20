@@ -22,6 +22,6 @@ START_ATF_NAMESPACE
             char szBuyerAccount[13];
         };
         unsigned int dwCnt;
-        __declspec(align(8)) __trade_key list[20];
+       __trade_key list[20];
     };
 END_ATF_NAMESPACE

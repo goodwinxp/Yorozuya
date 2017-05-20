@@ -6,6 +6,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 1)
     struct _RENAME_POTION_USE_INFO
     {
         _STORAGE_POS_INDIV ItemInfo;
@@ -27,4 +28,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140073d80L))(this);
         };
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE

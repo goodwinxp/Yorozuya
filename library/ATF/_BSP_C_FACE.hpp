@@ -9,7 +9,7 @@ START_ATF_NAMESPACE
     {
         char Attr;
         char VNum;
-         __declspec(align(1)) unsigned int VStartId;
+        unsigned int VStartId;
         unsigned __int16 MatGIndex;
         float Normal[4];
     };

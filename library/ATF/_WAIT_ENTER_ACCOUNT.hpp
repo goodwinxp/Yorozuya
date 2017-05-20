@@ -15,7 +15,7 @@ START_ATF_NAMESPACE
         char m_szAccountID[13];
         char m_byUserDgr;
         char m_bySubDgr;
-         __declspec(align(1)) _GLBID m_gidGlobal;
+        _GLBID m_gidGlobal;
         unsigned int m_dwKey[4];
         unsigned int m_dwLoadTime;
         bool m_bChatLock;

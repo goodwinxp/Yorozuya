@@ -8,9 +8,9 @@ START_ATF_NAMESPACE
     struct _keeper_enter_inform_zocl
     {
         bool bNow;
-         __declspec(align(1)) unsigned __int16 wTotalSecTime;
-         __declspec(align(1)) __int16 zHurrySecTime;
-         __declspec(align(1)) __int16 zExitSecTime;
+        unsigned __int16 wTotalSecTime;
+        __int16 zHurrySecTime;
+        __int16 zExitSecTime;
         char byMasterRace;
         bool bChaos;
         char byAttackAbleType;

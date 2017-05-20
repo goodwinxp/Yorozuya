@@ -8,10 +8,10 @@ START_ATF_NAMESPACE
     struct _use_potion_result_zocl
     {
         char byErrCode;
-         __declspec(align(1)) unsigned __int16 wPotionSerial;
-         __declspec(align(1)) unsigned __int16 wHP;
-         __declspec(align(1)) unsigned __int16 wFP;
-         __declspec(align(1)) unsigned __int16 wSP;
+        unsigned __int16 wPotionSerial;
+        unsigned __int16 wHP;
+        unsigned __int16 wFP;
+        unsigned __int16 wSP;
         char byLeftNum;
     };
 END_ATF_NAMESPACE

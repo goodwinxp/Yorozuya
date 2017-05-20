@@ -8,6 +8,6 @@ START_ATF_NAMESPACE
     struct _STRRET
     {
         unsigned int uType;
-        __declspec(align(8)) $5BD6A816EEBE7A476F6AD5FA67EBF9D6 ___u1;
+        $5BD6A816EEBE7A476F6AD5FA67EBF9D6 ___u1;
     };
 END_ATF_NAMESPACE

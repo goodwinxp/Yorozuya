@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct SrcVtbl
     {
         bool (WINAPIV *Close)(Src *_this);
-        __declspec(align(16)) bool (WINAPIV *Remove)(Src *_this, const char *);
+        bool (WINAPIV *Remove)(Src *_this, const char *);
         bool (WINAPIV *QueryByName)(Src *_this, const char *, SrcHeaderOut *);
         bool (WINAPIV *GetData)(Src *_this, SrcHeaderOut *, void *);
         bool (WINAPIV *GetEnum)(Src *_this, EnumSrc **);

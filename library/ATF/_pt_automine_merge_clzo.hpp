@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _pt_automine_merge_clzo
     {
         char byPage;
-         __declspec(align(1)) _INVENKEY item;
+        _INVENKEY item;
         char byOverlapNum;
     };
 END_ATF_NAMESPACE

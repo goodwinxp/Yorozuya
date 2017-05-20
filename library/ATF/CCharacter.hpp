@@ -292,4 +292,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140172360L))(this);
         };
     };
+    static_assert(sizeof(CCharacter) == 0x750, "sizeof CCharacter need 0x750");
 END_ATF_NAMESPACE

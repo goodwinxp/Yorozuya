@@ -6,7 +6,7 @@
 
 
 START_ATF_NAMESPACE
-    union  __declspec(align(4)) $5BD6A816EEBE7A476F6AD5FA67EBF9D6
+    union  $5BD6A816EEBE7A476F6AD5FA67EBF9D6
     {
         wchar_t *pOleStr;
         unsigned int uOffset;

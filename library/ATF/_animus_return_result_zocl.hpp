@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _animus_return_result_zocl
     {
         char byResultCode;
-         __declspec(align(1)) unsigned __int16 wAnimusItemSerial;
+        unsigned __int16 wAnimusItemSerial;
         char byReturnType;
     };
 END_ATF_NAMESPACE

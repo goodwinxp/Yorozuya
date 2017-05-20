@@ -8,8 +8,8 @@ START_ATF_NAMESPACE
     struct _attack_siege_request_clzo
     {
         char byID;
-         __declspec(align(1)) unsigned __int16 wIndex;
-         __declspec(align(1)) __int16 zAttackPos[2];
+        unsigned __int16 wIndex;
+        __int16 zAttackPos[2];
         char byAttPart;
         unsigned __int16 wBulletSerial;
         unsigned __int16 wEffBulletSerial;

@@ -14,8 +14,8 @@ START_ATF_NAMESPACE
         };
         unsigned int dwObjSerial;
         char byActType;
-         __declspec(align(1)) unsigned int dwOwnerSerial;
-         __declspec(align(1)) unsigned __int16 wItemSerial;
+        unsigned int dwOwnerSerial;
+        unsigned __int16 wItemSerial;
         char byCnt;
         __battery battery[2];
     public:

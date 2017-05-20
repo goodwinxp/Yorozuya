@@ -8,10 +8,10 @@ START_ATF_NAMESPACE
     struct _guild_battle_start_zocl
     {
         char byColorInx;
-         __declspec(align(1)) unsigned int dwLeftRedScore;
-         __declspec(align(1)) unsigned int dwRightBlueScore;
-         __declspec(align(1)) unsigned int dwLeftRedGoalCnt;
-         __declspec(align(1)) unsigned int dwRightBlueGoalCnt;
+        unsigned int dwLeftRedScore;
+        unsigned int dwRightBlueScore;
+        unsigned int dwLeftRedGoalCnt;
+        unsigned int dwRightBlueGoalCnt;
         char byLeftHour;
         char byLeftMin;
         char byLeftSec;

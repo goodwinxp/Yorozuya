@@ -8,8 +8,8 @@ START_ATF_NAMESPACE
     struct _SHChangeDWORDAsIDList
     {
         unsigned __int16 cb;
-         __declspec(align(1)) unsigned int dwItem1;
-         __declspec(align(1)) unsigned int dwItem2;
+        unsigned int dwItem1;
+        unsigned int dwItem2;
         unsigned __int16 cbZero;
     };
 END_ATF_NAMESPACE

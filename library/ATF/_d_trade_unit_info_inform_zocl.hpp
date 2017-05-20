@@ -9,7 +9,7 @@ START_ATF_NAMESPACE
     {
         char byTradeSlotIndex;
         char byFrame;
-         __declspec(align(1)) unsigned int dwGauge;
+        unsigned int dwGauge;
         char byPart[6];
         unsigned int dwBullet[2];
         unsigned int dwSpare[8];

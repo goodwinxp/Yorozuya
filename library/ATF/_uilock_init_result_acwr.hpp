@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _uilock_init_result_acwr
     {
         char byRet;
-         __declspec(align(1)) unsigned __int16 wUserIndex;
+        unsigned __int16 wUserIndex;
         char uszUILockPW[13];
         char byHintIndex;
         char uszHintAnswer[17];

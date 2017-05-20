@@ -10,7 +10,7 @@ START_ATF_NAMESPACE
         char byGoodIndex;
         char byGoodAmount;
         char byStorageCode;
-         __declspec(align(1)) _STORAGE_LIST::_db_con Item;
+        _STORAGE_LIST::_db_con Item;
         unsigned __int16 wSerial;
     public:
         _buy_offer()

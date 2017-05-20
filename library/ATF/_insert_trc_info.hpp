@@ -8,12 +8,12 @@ START_ATF_NAMESPACE
     struct _insert_trc_info
     {
         char byRace;
-         __declspec(align(1)) unsigned int dwGSerial;
+        unsigned int dwGSerial;
         char szGuildName[17];
         char byMatterType;
-         __declspec(align(1)) unsigned int dwMatterDst;
+        unsigned int dwMatterDst;
         char wszMatterDst[64];
-         __declspec(align(1)) unsigned int dwNext;
+        unsigned int dwNext;
         char byCurrTax;
     public:
         int size()

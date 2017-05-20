@@ -10,8 +10,8 @@ START_ATF_NAMESPACE
     {
         unsigned int dwAtterSerial;
         char byWeaponPart;
-         __declspec(align(1)) unsigned __int16 wWeaponIndex;
-         __declspec(align(1)) unsigned __int16 wBulletIndex;
+        unsigned __int16 wWeaponIndex;
+        unsigned __int16 wBulletIndex;
         char byAttackPart;
         bool bCritical;
         char byListNum;

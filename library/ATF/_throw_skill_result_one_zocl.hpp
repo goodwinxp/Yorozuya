@@ -11,7 +11,7 @@ START_ATF_NAMESPACE
         struct __effected_list
         {
             char byObjID;
-             __declspec(align(1)) unsigned int dwObjSerial;
+            unsigned int dwObjSerial;
             char byRetCode;
             unsigned __int16 wEffectValue;
         };

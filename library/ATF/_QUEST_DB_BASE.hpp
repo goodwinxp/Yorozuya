@@ -5,6 +5,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 1)
     struct _QUEST_DB_BASE
     {
         struct  _LIST
@@ -97,4 +98,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140076800L))(this);
         };
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE

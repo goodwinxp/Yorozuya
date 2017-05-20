@@ -11,7 +11,7 @@ START_ATF_NAMESPACE
         struct basic_streambuf<wchar_t,char_traits<wchar_t> >Vtbl
         {
             void *(WINAPIV *__vecDelDtor)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this, unsigned int);
-            __declspec(align(16)) unsigned __int16 (WINAPIV *pbackfail)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this, unsigned __int16);
+            unsigned __int16 (WINAPIV *pbackfail)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this, unsigned __int16);
             __int64 (WINAPIV *showmanyc)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this);
             unsigned __int16 (WINAPIV *underflow)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this);
             unsigned __int16 (WINAPIV *uflow)(basic_streambuf<wchar_t,char_traits<wchar_t> > *_this);
@@ -35,7 +35,7 @@ START_ATF_NAMESPACE
         struct basic_streambuf<char,char_traits<char> >Vtbl
         {
             void *(WINAPIV *__vecDelDtor)(basic_streambuf<char,char_traits<char> > *_this, unsigned int);
-            __declspec(align(16)) int (WINAPIV *pbackfail)(basic_streambuf<char,char_traits<char> > *_this, int);
+            int (WINAPIV *pbackfail)(basic_streambuf<char,char_traits<char> > *_this, int);
             __int64 (WINAPIV *showmanyc)(basic_streambuf<char,char_traits<char> > *_this);
             int (WINAPIV *underflow)(basic_streambuf<char,char_traits<char> > *_this);
             int (WINAPIV *uflow)(basic_streambuf<char,char_traits<char> > *_this);

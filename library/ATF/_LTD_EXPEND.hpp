@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _LTD_EXPEND
     {
         bool m_bExist;
-         __declspec(align(1)) _SYSTEMTIME m_timeLocal;
+        _SYSTEMTIME m_timeLocal;
         char m_bySubLogType;
         char m_wszEtcInfo[128];
     };

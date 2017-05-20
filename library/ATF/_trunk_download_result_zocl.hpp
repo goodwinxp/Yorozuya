@@ -12,10 +12,10 @@ START_ATF_NAMESPACE
         {
             unsigned __int16 wSerial;
             char byTableCode;
-             __declspec(align(1)) unsigned __int16 wItemIndex;
-             __declspec(align(1)) unsigned __int64 dwDurPoint;
+            unsigned __int16 wItemIndex;
+            unsigned __int64 dwDurPoint;
             char byClientIndex;
-             __declspec(align(1)) unsigned int dwUptInfo;
+            unsigned int dwUptInfo;
             char byRace;
             char byCsMethod;
             unsigned int dwT;

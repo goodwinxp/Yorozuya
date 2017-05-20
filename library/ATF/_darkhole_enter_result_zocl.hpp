@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _darkhole_enter_result_zocl
     {
         char byRetCode;
-         __declspec(align(1)) unsigned int dwHoleSerial;
+        unsigned int dwHoleSerial;
         char byMapCode;
         __int16 zPos[3];
     public:

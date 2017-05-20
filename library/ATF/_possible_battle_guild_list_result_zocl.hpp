@@ -16,8 +16,8 @@ START_ATF_NAMESPACE
         };
         char byPage;
         char byMaxPage;
-         __declspec(align(1)) unsigned int dwCurVer;
-         __declspec(align(1)) unsigned int dwBattleCost;
+        unsigned int dwCurVer;
+        unsigned int dwBattleCost;
         char byMapCnt;
         char byMapInx[100];
         char byCount;

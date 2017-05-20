@@ -11,7 +11,7 @@ START_ATF_NAMESPACE
     struct CPartyPlayer
     {
         bool m_bLogin;
-         __declspec(align(1)) _CLID m_id;
+        _CLID m_id;
         char m_wszName[17];
         unsigned __int16 m_wZoneIndex;
         CPartyPlayer *m_pPartyBoss;

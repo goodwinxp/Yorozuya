@@ -11,8 +11,8 @@ START_ATF_NAMESPACE
         struct _list_equip
         {
             char sTableCode;
-             __declspec(align(1)) unsigned __int16 wItemIndex;
-             __declspec(align(1)) unsigned int dwUptInfo;
+            unsigned __int16 wItemIndex;
+            unsigned int dwUptInfo;
             char byCsMethod;
             unsigned int dwT;
         };

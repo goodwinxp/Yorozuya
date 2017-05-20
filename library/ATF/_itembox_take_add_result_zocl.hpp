@@ -8,7 +8,7 @@ START_ATF_NAMESPACE
     struct _itembox_take_add_result_zocl
     {
         char sErrorCode;
-         __declspec(align(1)) unsigned __int16 wItemSerial;
+        unsigned __int16 wItemSerial;
         char byAmount;
     public:
         int size()

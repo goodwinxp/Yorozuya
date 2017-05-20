@@ -12,7 +12,7 @@ START_ATF_NAMESPACE
         char wszName[17];
         char byClassInGuild;
         char byLv;
-         __declspec(align(1)) unsigned int dwPvpPoint;
+        unsigned int dwPvpPoint;
         char byGuildRank;
     };
 END_ATF_NAMESPACE

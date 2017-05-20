@@ -17,7 +17,7 @@ START_ATF_NAMESPACE
             unsigned __int16 wItemIdx;
             unsigned __int16 wStoreIdx;
             char byOverlapNum;
-             __declspec(align(1)) int nEvent[8];
+            int nEvent[8];
             char byEventType;
         };
         char nNum;

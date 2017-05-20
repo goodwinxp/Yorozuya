@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-	#pragma pack(push, 1)
+    #pragma pack(push, 1)
     struct _other_shape_all_zocl
     {
         struct  _model
@@ -14,7 +14,7 @@ START_ATF_NAMESPACE
             char byLv;
         };
         unsigned __int16 wIndex;
-         __declspec(align(1)) unsigned int dwSerial;
+        unsigned int dwSerial;
         unsigned __int16 wEquipVer;
         char byCashChangeStateFlag;
         char byRecIndex;
@@ -22,7 +22,7 @@ START_ATF_NAMESPACE
         char byHairIndex;
         _model ModelPerPart[8];
         char byUserGrade;
-         __declspec(align(1)) unsigned int dwGuildSerial;
+        unsigned int dwGuildSerial;
         char wszName[17];
         char byColor;
         char byHonorGuildRank;
@@ -46,5 +46,5 @@ START_ATF_NAMESPACE
             return (org_ptr(0x1400ef050L))(this);
         };
     };
-	#pragma pack(pop)
+    #pragma pack(pop)
 END_ATF_NAMESPACE

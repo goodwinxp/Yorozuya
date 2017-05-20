@@ -10,7 +10,7 @@ START_ATF_NAMESPACE
         char byRet;
         char wszGuildName[17];
         char wszCharName[17];
-         __declspec(align(1)) int iTakePortalInx;
+        int iTakePortalInx;
         char byColor;
     public:
         int size()

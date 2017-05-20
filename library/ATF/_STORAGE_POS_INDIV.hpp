@@ -6,9 +6,11 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 1)
     struct  _STORAGE_POS_INDIV : _STORAGE_POS
     {
-         __declspec(align(1)) unsigned __int16 wItemSerial;
+        unsigned __int16 wItemSerial;
         char byNum;
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE

@@ -11,7 +11,7 @@ START_ATF_NAMESPACE
         char byRetCode;
         _CHRID idPerformer;
         _CHRID idDster;
-         __declspec(align(1)) unsigned __int16 wSkillIndex;
+        unsigned __int16 wSkillIndex;
         char byAttackSerial;
     };
 END_ATF_NAMESPACE
