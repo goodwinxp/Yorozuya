@@ -231,6 +231,7 @@
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
+    <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="Guild.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
@@ -247,6 +248,7 @@
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CheatCommand.cpp" />
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">

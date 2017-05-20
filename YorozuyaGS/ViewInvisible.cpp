@@ -56,9 +56,16 @@ namespace GameServer
                 if (pPlayer->m_bObserver && !pDst->m_byUserDgr)
                     break;
 
-                if (pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Stealth) &&
-                    !pDst->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Detect))
-                    break;
+                if (pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Stealth) ||
+                    pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Invisible) ||
+                    pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Invincible) ||
+                    pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Transparency))
+                {
+                    if (!pDst->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Detect))
+                    {
+                        break;
+                    }
+                }
 
                 bPassed = true;
             } while (false);

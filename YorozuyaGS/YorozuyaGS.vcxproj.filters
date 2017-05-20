@@ -58,6 +58,9 @@
     <Filter Include="Implementation\Fixes\Guild">
       <UniqueIdentifier>{99848ae7-d06b-448a-ad60-10bbb94df9f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\CheatCommand">
+      <UniqueIdentifier>{c042b090-b1b0-40d8-b730-f223d2a86a42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="Guild.cpp">
       <Filter>Implementation\Fixes\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatCommand.cpp">
+      <Filter>Implementation\Fixes\CheatCommand</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="Guild.h">
       <Filter>Implementation\Fixes\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatCommand.h">
+      <Filter>Implementation\Fixes\CheatCommand</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
