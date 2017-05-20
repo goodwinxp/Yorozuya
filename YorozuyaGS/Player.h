@@ -78,6 +78,12 @@ namespace GameServer
                 int nPortalIndex, 
                 uint16_t* pConsumeSerial, 
                 ATF::info::CPlayerpc_MovePortal1795_ptr next);
+
+            static char WINAPIV pc_CharacterRenameCheck(
+                ATF::CPlayer *pObj, 
+                char *strCharacterName,
+                ATF::info::CPlayerpc_CharacterRenameCheck1629_ptr next);
+
         };
     };
 };

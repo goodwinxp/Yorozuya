@@ -17,6 +17,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
             core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
             core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
+            core.set_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
         }
 
         void CPlayer::unload()
@@ -28,6 +29,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
             core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
             core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
+            core.unset_hook(&ATF::CPlayer::pc_CharacterRenameCheck);
         }
 
         void CPlayer::loop()
@@ -185,6 +187,17 @@ namespace GameServer
             }
 
             next(pObj, nPortalIndex, pConsumeSerial);;
+        }
+
+        char WINAPIV CPlayer::pc_CharacterRenameCheck(
+            ATF::CPlayer * pObj, 
+            char * strCharacterName, 
+            ATF::info::CPlayerpc_CharacterRenameCheck1629_ptr next)
+        {
+            if (ATF::global::IsSQLValidString(strCharacterName))
+                return next(pObj, strCharacterName);
+
+            return 6;
         }
     }
 }
