@@ -2,6 +2,7 @@
 
 #include "./common/common.h"
 #include "CPlayer.hpp"
+#include "__time32_t.hpp"
 
 START_ATF_NAMESPACE
     namespace global
@@ -24,6 +25,8 @@ START_ATF_NAMESPACE
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
 
+
+        static __time32_t* Time((__time32_t*)0x1415B71F8L);
         static CPlayer_ptr g_Player((CPlayer_ptr)0x1799CA490L);
         static CLogFile_ptr s_logTrace_Boss_Looting((CLogFile_ptr)0x14136F9E0L);
         static CMainThread_ptr g_MainThread((CMainThread_ptr)0x14154F250L);
