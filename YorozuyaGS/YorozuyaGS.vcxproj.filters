@@ -64,6 +64,9 @@
     <Filter Include="Implementation\Fixes\CreatePlayer">
       <UniqueIdentifier>{cd64afa6-430b-450e-9a46-b276ca54313a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\UpdateGeneral">
+      <UniqueIdentifier>{c6e01146-e788-4c6a-b17e-0d8d8ee0f916}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -113,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="CreatePlayer.cpp">
       <Filter>Implementation\Fixes\CreatePlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateGeneral.cpp">
+      <Filter>Implementation\Fixes\UpdateGeneral</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="CreatePlayer.h">
       <Filter>Implementation\Fixes\CreatePlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateGeneral.h">
+      <Filter>Implementation\Fixes\UpdateGeneral</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
