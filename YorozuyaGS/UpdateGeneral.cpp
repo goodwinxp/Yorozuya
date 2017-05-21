@@ -150,7 +150,7 @@ namespace GameServer
                 strcat(pSzQuery, Source);
             }
             
-            for (int i = 0; i < size_array(pNewData->dbEquip.m_EmbellishList); ++i)
+            for (int i = 0; i < 6; ++i)
             {
                 if (pNewData->dbEquip.m_EmbellishList[i].Key.IsFilled())
                 {
