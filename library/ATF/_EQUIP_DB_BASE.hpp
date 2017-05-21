@@ -6,6 +6,7 @@
 
 
 START_ATF_NAMESPACE
+#pragma pack(push, 1)
     struct _EQUIP_DB_BASE
     {
         struct  _EMBELLISH_LIST
@@ -62,4 +63,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140075a10L))(this);
         };
     };
+#pragma pack(pop)
 END_ATF_NAMESPACE

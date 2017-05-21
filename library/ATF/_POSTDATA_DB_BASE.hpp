@@ -8,6 +8,7 @@
 
 
 START_ATF_NAMESPACE
+#pragma pack(push, 1)
     struct _POSTDATA_DB_BASE
     {
         _POSTSTORAGE_DB_BASE dbPost;
@@ -35,4 +36,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x140077390L))(this);
         };
     };
+#pragma pack(pop)
 END_ATF_NAMESPACE

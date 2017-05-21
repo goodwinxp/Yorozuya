@@ -5,6 +5,7 @@
 
 
 START_ATF_NAMESPACE
+#pragma pack(push, 1)
     struct _STAT_DB_BASE
     {
         unsigned int m_dwDamWpCnt[2];
@@ -41,4 +42,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x1400745f0L))(this);
         };
     };
+#pragma pack(pop)
 END_ATF_NAMESPACE

@@ -5,6 +5,7 @@
 #include "_ANIMUSKEY.hpp"
 
 START_ATF_NAMESPACE
+#pragma pack(push, 1)
     struct _ANIMUS_DB_BASE
     {
         struct  _LIST
@@ -67,4 +68,5 @@ START_ATF_NAMESPACE
             (org_ptr(0x1400761e0L))(this);
         };
     };
+#pragma pack(pop)
 END_ATF_NAMESPACE
