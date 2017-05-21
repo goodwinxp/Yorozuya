@@ -55,17 +55,29 @@ namespace GameServer
 
             do
             {
-                if (pOne->m_dwPcBangGiveItemListIndex != -1)
+                int count = 0;
+                for (auto& UID : pOne->m_pUserDB->m_AvatorData.dbPcBangFavorItem.lnUID)
+                {
+                    if (UID != -1)
+                    {
+                        ++count;
+                        break;
+                    }
+                }
+
+                if (count != 0)
                 {
                     pOne->SendMsg_PcRoomError(1);
                     break;
                 }
 
-                if (!next(pObj, pOne, dwRecIndex, bySeletItemIndex, nSelectCount))
+                if (pOne->GetBillingType() == 0)
+                {
+                    pOne->SendMsg_PcRoomError(1);
                     break;
+                }
 
-                pOne->m_dwPcBangGiveItemListIndex = dwRecIndex;
-                result = true;
+                result = next(pObj, pOne, dwRecIndex, bySeletItemIndex, nSelectCount);
             } while (false);
 
             return result;
