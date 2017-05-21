@@ -207,8 +207,7 @@ namespace GameServer
             unsigned __int16 wItemSerial, 
             ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next)
         {
-            if (pObj->Is_Battle_Mode() && 
-                (pObj->m_bySubDgr == 0 && pObj->m_byUserDgr == 0))
+            if (pObj->Is_Battle_Mode() && pObj->m_byUserDgr == 0)
             {
                 pObj->SendMsg_GotoBasePortalResult(8);
                 return;

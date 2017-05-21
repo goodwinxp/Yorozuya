@@ -77,10 +77,7 @@ namespace GameServer
 
             do
             {
-                if (pObj->m_byUserDgr || pDst->m_byUserDgr == 0)
-                    break;
-
-                if (pDst->m_byUserDgr || pObj->m_byUserDgr == 0)
+                if (!(pDst->m_byUserDgr == 0 && pObj->m_byUserDgr == 0))
                     break;
 
                 if (pObj->m_Param.GetRaceCode() != pDst->m_Param.GetRaceCode())
