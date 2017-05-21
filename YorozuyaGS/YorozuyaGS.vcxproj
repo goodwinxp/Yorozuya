@@ -234,6 +234,7 @@
     <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
+    <ClInclude Include="PcBangFavor.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
     <ClInclude Include="ItemCheckHelper.h" />
@@ -253,6 +254,7 @@
     <ClCompile Include="CheatCommand.cpp" />
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
+    <ClCompile Include="PcBangFavor.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
