@@ -77,6 +77,21 @@ namespace GameServer
 
             do
             {
+                if (pObj->m_bySubDgr != 0 || pObj->m_byUserDgr != 0)
+                    break;
+
+                if (pDst->m_bySubDgr != 0 || pDst->m_byUserDgr != 0)
+                    break;
+
+                if (pObj->m_Param.GetRaceCode() != pDst->m_Param.GetRaceCode())
+                    break;
+
+                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
+                {
+                    bCheckPassed = true;
+                    break;
+                }
+
                 if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
                 {
                     bCheckPassed = true;
