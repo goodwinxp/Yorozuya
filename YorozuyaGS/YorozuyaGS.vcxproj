@@ -232,6 +232,7 @@
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="CheatCommand.h" />
+    <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
@@ -249,6 +250,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CheatCommand.cpp" />
+    <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">

@@ -61,6 +61,9 @@
     <Filter Include="Implementation\Fixes\CheatCommand">
       <UniqueIdentifier>{c042b090-b1b0-40d8-b730-f223d2a86a42}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\CreatePlayer">
+      <UniqueIdentifier>{cd64afa6-430b-450e-9a46-b276ca54313a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -107,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="CheatCommand.cpp">
       <Filter>Implementation\Fixes\CheatCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePlayer.cpp">
+      <Filter>Implementation\Fixes\CreatePlayer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="CheatCommand.h">
       <Filter>Implementation\Fixes\CheatCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePlayer.h">
+      <Filter>Implementation\Fixes\CreatePlayer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
