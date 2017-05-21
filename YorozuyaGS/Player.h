@@ -84,6 +84,10 @@ namespace GameServer
                 char *strCharacterName,
                 ATF::info::CPlayerpc_CharacterRenameCheck1629_ptr next);
 
+            static void WINAPIV pc_GotoBasePortalRequest(
+                ATF::CPlayer *pObj,
+                unsigned __int16 wItemSerial,
+                ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next);
         };
     };
 };

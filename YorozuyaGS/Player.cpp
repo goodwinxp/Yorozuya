@@ -18,6 +18,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
             core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
             core.set_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
+            core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
         }
 
         void CPlayer::unload()
@@ -30,6 +31,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
             core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
             core.unset_hook(&ATF::CPlayer::pc_CharacterRenameCheck);
+            core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
         }
 
         void CPlayer::loop()
@@ -198,6 +200,21 @@ namespace GameServer
                 return next(pObj, strCharacterName);
 
             return 6;
+        }
+
+        void WINAPIV CPlayer::pc_GotoBasePortalRequest(
+            ATF::CPlayer * pObj, 
+            unsigned __int16 wItemSerial, 
+            ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next)
+        {
+            if (pObj->Is_Battle_Mode() && 
+                (pObj->m_bySubDgr == 0 && pObj->m_byUserDgr == 0))
+            {
+                pObj->SendMsg_GotoBasePortalResult(8);
+                return;
+            }
+
+            next(pObj, wItemSerial);
         }
     }
 }
