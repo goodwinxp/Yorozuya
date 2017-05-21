@@ -77,23 +77,23 @@ namespace GameServer
 
             do
             {
-                if (!(pDst->m_byUserDgr == 0 && pObj->m_byUserDgr == 0))
+                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
+                {
+                    bCheckPassed = true;
+                    break;
+                }
+
+                if (!pDst)
+                    break;
+
+                if (pObj->m_byUserDgr && pDst->m_byUserDgr == 0)
+                    break;
+
+                if (pDst->m_byUserDgr && pObj->m_byUserDgr == 0)
                     break;
 
                 if (pObj->m_Param.GetRaceCode() != pDst->m_Param.GetRaceCode())
                     break;
-
-                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
-                {
-                    bCheckPassed = true;
-                    break;
-                }
-
-                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
-                {
-                    bCheckPassed = true;
-                    break;
-                }
 
                 if (!pObj->m_pmTrd.bDTradeMode || !pObj->m_pmTrd.bDTradeLock)
                 {
@@ -121,10 +121,10 @@ namespace GameServer
                     pDst->m_pmTrd.dwDTrade_Gold > pDst->m_Param.GetGold())
                     break;
 
-                if (fnCheckExchange(pObj))
+                if (!fnCheckExchange(pObj))
                     break;
 
-                if (fnCheckExchange(pDst))
+                if (!fnCheckExchange(pDst))
                     break;
 
                 bCheckPassed = true;
