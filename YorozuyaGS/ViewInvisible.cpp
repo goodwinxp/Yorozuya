@@ -58,7 +58,7 @@ namespace GameServer
 
                 if (pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Stealth))
                 {
-                    if (!pDst->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Detect))
+                    if (pDst->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Detect) != 1.0f)
                     {
                         break;
                     }
