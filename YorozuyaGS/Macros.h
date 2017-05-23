@@ -34,6 +34,14 @@ namespace GameServer
                 ATF::_AIOC_A_MACRODATA* pMacro,
                 ATF::_AIOC_A_MACRODATA* pOldMacro,
                 ATF::info::CMainThread_db_Update_MacroData266_ptr next);
+
+            static bool WINAPIV _db_Update_CryMsg(
+                ATF::CMainThread* pObj,
+                unsigned int dwSerial, 
+                ATF::_AVATOR_DATA* pNewData,
+                ATF::_AVATOR_DATA* pOldData,
+                char* pwszQuery,
+                ATF::info::CMainThread_db_Update_CryMsg252_ptr next);
         };
     };
 };

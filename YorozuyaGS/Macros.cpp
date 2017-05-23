@@ -13,12 +13,14 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.set_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
+            core.set_hook(&CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
         }
 
         void CMacros::unload()
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook(&CMainThread::_db_Update_MacroData);
+            core.unset_hook(&CMainThread::_db_Update_CryMsg);
         }
 
         void CMacros::loop()
@@ -68,6 +70,23 @@ namespace GameServer
             }
 
             return next(pObj, dwSerial, pMacro, pOldMacro);
+        }
+
+        bool WINAPIV CMacros::_db_Update_CryMsg(
+            ATF::CMainThread * pObj, 
+            unsigned int dwSerial, 
+            _AVATOR_DATA * pNewData, 
+            _AVATOR_DATA * pOldData, 
+            char * pwszQuery, 
+            ATF::info::CMainThread_db_Update_CryMsg252_ptr next)
+        {
+            for (auto &i : pNewData->dbBossCry.m_List)
+            {       
+                if (!global::IsSQLValidString(i.wszCryMsg))
+                    i.wszCryMsg[0] = '\0';
+            }
+
+            return next(pObj, dwSerial, pNewData, pOldData, pwszQuery);
         }
     }
 };
