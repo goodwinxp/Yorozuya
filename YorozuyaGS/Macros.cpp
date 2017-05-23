@@ -85,6 +85,11 @@ namespace GameServer
                 if (!global::IsSQLValidString(i.wszCryMsg))
                     i.wszCryMsg[0] = '\0';
             }
+            for (auto &i : pOldData->dbBossCry.m_List)
+            {
+                if (!global::IsSQLValidString(i.wszCryMsg))
+                    i.wszCryMsg[0] = '\0';
+            }
 
             return next(pObj, dwSerial, pNewData, pOldData, pwszQuery);
         }
