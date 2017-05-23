@@ -96,5 +96,17 @@ namespace GameServer
         num
     };
 
+    enum class e_money_type : uint8_t
+    {
+        cp = 0,
+        gold = 1,
+        pvp_point = 2,
+        gold_point = 3,
+        processing_point = 4,
+        hunter_point = 5,
+        unknown = 6,
+        num
+    };
+
     #define MAX_PLAYER 2532
 }

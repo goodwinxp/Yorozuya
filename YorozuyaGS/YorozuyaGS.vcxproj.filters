@@ -70,6 +70,9 @@
     <Filter Include="Implementation\Fixes\PcBangFavor">
       <UniqueIdentifier>{774a8f92-6288-4e85-859f-057b20d6a406}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Store">
+      <UniqueIdentifier>{292ca720-6865-4724-82a1-13f22689c64e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -125,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="PcBangFavor.cpp">
       <Filter>Implementation\Fixes\PcBangFavor</Filter>
+    </ClCompile>
+    <ClCompile Include="Store.cpp">
+      <Filter>Implementation\Fixes\Store</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +196,9 @@
     </ClInclude>
     <ClInclude Include="PcBangFavor.h">
       <Filter>Implementation\Fixes\PcBangFavor</Filter>
+    </ClInclude>
+    <ClInclude Include="Store.h">
+      <Filter>Implementation\Fixes\Store</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

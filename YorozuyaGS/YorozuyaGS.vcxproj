@@ -242,6 +242,7 @@
     <ClInclude Include="MiningOre.h" />
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Store.h" />
     <ClInclude Include="Trade.h" />
     <ClInclude Include="Trap.h" />
     <ClInclude Include="Unit.h" />
@@ -280,6 +281,7 @@
     <ClCompile Include="Macros.cpp" />
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
+    <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />
     <ClCompile Include="UpdateGeneral.cpp" />
     <ClCompile Include="ViewInvisible.cpp" />
