@@ -180,7 +180,7 @@ namespace GameServer
         {
             if (pObj->Is_Battle_Mode())
             {
-                float pNewPos[3];
+                float pNewPos[3]{ 0.0f };
                 char byMapIndx = -1;
                 char byPortalIndx = -1;
 
