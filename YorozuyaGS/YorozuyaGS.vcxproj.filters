@@ -73,6 +73,9 @@
     <Filter Include="Implementation\Fixes\Store">
       <UniqueIdentifier>{292ca720-6865-4724-82a1-13f22689c64e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\PotionMgr">
+      <UniqueIdentifier>{31a519c1-5b7b-460b-a1f3-198574d5ca65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -131,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="Store.cpp">
       <Filter>Implementation\Fixes\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="PotionMgr.cpp">
+      <Filter>Implementation\Fixes\PotionMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +205,9 @@
     </ClInclude>
     <ClInclude Include="Store.h">
       <Filter>Implementation\Fixes\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="PotionMgr.h">
+      <Filter>Implementation\Fixes\PotionMgr</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

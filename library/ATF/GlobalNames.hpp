@@ -24,8 +24,10 @@ START_ATF_NAMESPACE
         using CDarkHole_ptr = struct CDarkHole*;
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
+        using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
+        using CRecordData_ptr = struct CRecordData*;
 
-
+        static CRecordData_ptr stru_1799C6AA0((CRecordData_ptr)0x1799C6AA0);
         static __time32_t* Time((__time32_t*)0x1415B71F8L);
         static CPlayer_ptr g_Player((CPlayer_ptr)0x1799CA490L);
         static CLogFile_ptr s_logTrace_Boss_Looting((CLogFile_ptr)0x14136F9E0L);
@@ -47,5 +49,6 @@ START_ATF_NAMESPACE
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);
         static CGuild_ptr g_Guild((CGuild_ptr)0x141500040L);
         static CNetProcess_ptr* g_NetProcess((CNetProcess_ptr *)0x1414F2088L);
+        static CHolyStoneSystem_ptr g_HolySys((CHolyStoneSystem_ptr)0x184981C90L);
     }; // static end namespace global
 END_ATF_NAMESPACE
