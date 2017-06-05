@@ -6,6 +6,15 @@
 
 namespace GameServer
 {
+    namespace
+    {
+        #define CheckEffLimType(x, y) \
+        { \
+            if (x == y && x != -1 && y != -1) \
+                return 31; \
+        }
+    }
+
     namespace Fixes
     {
         void CPotionMgr::load()
@@ -276,9 +285,8 @@ namespace GameServer
                     }
                 }
 
-                
                 if (pUsePlayer->m_PotionBufUse.IsExtPotionUse())
-                { // todo : fix it
+                {
                     if (pFld->m_nTempEffectType == 53)
                     {
                         nResult = 30;
@@ -295,39 +303,15 @@ namespace GameServer
                         auto pCurrFld = (ATF::_skill_fld*)pObj->m_tblPotionEffectData.GetRecord(index);
                         auto pPotionFld = (ATF::_PotionItem_fld*)ATF::global::g_MainThread->m_tblItemData[13].GetRecord(index);
 
-                        if (!pCurrFld)
+                        if (!pCurrFld || !pPotionFld)
                             continue;
 
-                        if (pPotionFld && pfB->m_nPotionCheck != pPotionFld->m_nPotionCheck)
+                        if (pfB->m_nPotionCheck != pPotionFld->m_nPotionCheck)
                         {
-                            if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType)
-                            {
-                                if (pCurrFld->m_nEffLimType != -1 && pFld->m_nEffLimType != -1)
-                                {
-                                    return 31;
-                                }
-                            }
-                            else if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType2)
-                            {
-                                if (pCurrFld->m_nEffLimType != -1 && pFld->m_nEffLimType2 != -1)
-                                {
-                                    return 31;
-                                }
-                            }
-                            else if (pCurrFld->m_nEffLimType2 == pFld->m_nEffLimType)
-                            {
-                                if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType != -1)
-                                {
-                                    return 31;
-                                }
-                            }
-                            else if (pCurrFld->m_nEffLimType2 == pFld->m_nEffLimType2)
-                            {
-                                if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType2 != -1)
-                                {
-                                    return 31;
-                                }
-                            }
+                            CheckEffLimType(pCurrFld->m_nEffLimType, pFld->m_nEffLimType);
+                            CheckEffLimType(pCurrFld->m_nEffLimType, pFld->m_nEffLimType2);
+                            CheckEffLimType(pCurrFld->m_nEffLimType2, pFld->m_nEffLimType);
+                            CheckEffLimType(pCurrFld->m_nEffLimType2, pFld->m_nEffLimType2);
                         }
                     }
                 }
