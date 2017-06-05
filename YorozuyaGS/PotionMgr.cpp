@@ -278,71 +278,54 @@ namespace GameServer
 
                 
                 if (pUsePlayer->m_PotionBufUse.IsExtPotionUse())
-                {
+                { // todo : fix it
                     if (pFld->m_nTempEffectType == 53)
                     {
                         nResult = 30;
                         break;
                     }
 
-                    auto& data = pUsePlayer->m_PotionParam.m_ContCommonPotionData;
-
-                    for (int j = 0; j < 2; ++j)
+                    for (auto& data : pUsePlayer->m_PotionParam.m_ContCommonPotionData)
                     {
-                        if (!data[j].IsLive())
+                        if (!data.IsLive())
                             continue;
-                        
-                        auto index = data->GetEffectIndex();
-                        
+
+                        auto index = data.GetEffectIndex();
+
                         auto pCurrFld = (ATF::_skill_fld*)pObj->m_tblPotionEffectData.GetRecord(index);
-                        auto pTrgtFld = (ATF::_skill_fld*)ATF::global::stru_1799C6AA0[13].GetRecord(index); // stru_1799C6AA0
+                        auto pPotionFld = (ATF::_PotionItem_fld*)ATF::global::g_MainThread->m_tblItemData[13].GetRecord(index);
 
                         if (!pCurrFld)
                             continue;
 
-                        if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType)
+                        if (pPotionFld && pfB->m_nPotionCheck != pPotionFld->m_nPotionCheck)
                         {
-                            if (pTrgtFld && pfB->m_nPotionCheck < pTrgtFld->m_bActivate)
+                            if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType)
                             {
                                 if (pCurrFld->m_nEffLimType != -1 && pFld->m_nEffLimType != -1)
                                 {
                                     return 31;
                                 }
                             }
-                        }
-                        else if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType2)
-                        {
-                            if (pTrgtFld && pfB->m_nPotionCheck < pTrgtFld->m_bActivate)
+                            else if (pCurrFld->m_nEffLimType == pFld->m_nEffLimType2)
                             {
                                 if (pCurrFld->m_nEffLimType != -1 && pFld->m_nEffLimType2 != -1)
                                 {
                                     return 31;
                                 }
                             }
-                        }
-                     
-                        #define __PAIR__(high, low) (((unsigned long)(high)<<sizeof(high)*8) | low)
-
-                        if (__PAIR__(pCurrFld->m_nEffLimType, pCurrFld->m_nEffLimType) != __PAIR__(pFld->m_nEffLimType2, pFld->m_nEffLimType))
-                        {
-                            if (pCurrFld->m_nEffLimType2 == pFld->m_nEffLimType)
+                            else if (pCurrFld->m_nEffLimType2 == pFld->m_nEffLimType)
                             {
-                                if (pTrgtFld && pfB->m_nPotionCheck < pTrgtFld->m_bActivate)
+                                if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType != -1)
                                 {
-                                    if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType != -1)
-                                    {
-                                        return 31;
-                                    }
+                                    return 31;
                                 }
                             }
                             else if (pCurrFld->m_nEffLimType2 == pFld->m_nEffLimType2)
                             {
-                                if (pTrgtFld && pfB->m_nPotionCheck < pTrgtFld->m_bActivate)
+                                if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType2 != -1)
                                 {
-                                    if (pCurrFld->m_nEffLimType2 != -1 && pFld->m_nEffLimType2 != -1)
-                                    {
-                                        return 31;
-                                    }
+                                    return 31;
                                 }
                             }
                         }
