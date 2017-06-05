@@ -142,13 +142,6 @@ namespace GameServer
             char byGestureType, 
             ATF::info::CPlayerpc_GestureRequest1719_ptr next)
         {
-            // 09 00 
-            // 11 19 01 40 00 00 00
-            char pbyType[2]{ 0x11, 0x19 };
-            char msg[] = { 0x01, 0x40, 0x00, 0x00, 0x00 };
-
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pObj->m_ObjID.m_wIndex, pbyType, (char *)msg, sizeof(msg));
-
             if (pObj->IsMineMode())
                 return;
 
