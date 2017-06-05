@@ -322,43 +322,36 @@ namespace GameServer
                     pFld->m_nTempEffectType == 71)
                 {
                     auto pTrgPlayer = (ATF::CPlayer *)*pTargetCharacter;
-
                     if (!pObj->CheckPotionUsableMap(pfB, pTrgPlayer->m_pCurMap))
                     {
                         nResult = 37;
                         break;
                     }
 
-                    auto pGuildRoom = ATF::CGuildRoomSystem::GetInstance();
-                    if (pFld->m_nTempEffectType != 48 && 
-                        pFld->m_nTempEffectType != 70)
+                    auto fnRoomOut = [](ATF::CPlayer * player)
                     {
-                        if (pFld->m_nTempEffectType == 49 || 
-                            pFld->m_nTempEffectType == 71)
+                        auto pGuildRoom = ATF::CGuildRoomSystem::GetInstance();
+                        if (player->m_Param.m_pGuild)
                         {
-                            if (pUsePlayer->m_Param.m_pGuild)
+                            if (player->m_pCurMap == pGuildRoom->GetMapData(player->m_Param.GetRaceCode(), 0) ||
+                                player->m_pCurMap == pGuildRoom->GetMapData(player->m_Param.GetRaceCode(), 1))
                             {
-                                if (pUsePlayer->m_pCurMap == pGuildRoom->GetMapData(pUsePlayer->m_Param.GetRaceCode(), 0) ||
-                                    pUsePlayer->m_pCurMap == pGuildRoom->GetMapData(pUsePlayer->m_Param.GetRaceCode(), 1))
-                                {
-                                    pGuildRoom->RoomOut(
-                                        pUsePlayer->m_Param.m_pGuild->m_dwSerial,
-                                        pUsePlayer->m_ObjID.m_wIndex,
-                                        pUsePlayer->m_pUserDB->m_dwSerial);
-                                }
+                                pGuildRoom->RoomOut(
+                                    player->m_Param.m_pGuild->m_dwSerial,
+                                    player->m_ObjID.m_wIndex,
+                                    player->m_pUserDB->m_dwSerial);
                             }
                         }
-                    }
-                    else if (pTrgPlayer->m_Param.m_pGuild)
+                    };
+
+                    if (pFld->m_nTempEffectType == 48 || pFld->m_nTempEffectType == 70)
                     {
-                        if (pTrgPlayer->m_pCurMap == pGuildRoom->GetMapData(pTrgPlayer->m_Param.GetRaceCode(), 0) ||
-                            pTrgPlayer->m_pCurMap == pGuildRoom->GetMapData(pTrgPlayer->m_Param.GetRaceCode(), 1))
-                        {
-                            pGuildRoom->RoomOut(
-                                pTrgPlayer->m_Param.m_pGuild->m_dwSerial,
-                                pTrgPlayer->m_ObjID.m_wIndex,
-                                pTrgPlayer->m_pUserDB->m_dwSerial);
-                        }
+                        fnRoomOut(pTrgPlayer);
+                    }
+
+                    if (pFld->m_nTempEffectType == 49 || pFld->m_nTempEffectType == 71)
+                    {
+                        fnRoomOut(pUsePlayer);
                     }
                 }
 
