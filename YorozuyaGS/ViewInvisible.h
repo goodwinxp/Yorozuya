@@ -4,6 +4,7 @@
 #include "../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CPlayer_info.hpp>
+#include <ATF/CGameObject_info.hpp>
 
 namespace GameServer
 {
@@ -28,10 +29,23 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
         private:
-            static void WINAPIV CPlayer_SendMsg_FixPosition(
+            static void WINAPIV CGameObject__CircleReport(
+                ATF::CGameObject* pObj,
+                char* pbyType,
+                char* szMsg,
+                int nMsgSize,
+                bool bToOne,
+                ATF::info::CGameObjectCircleReport24_ptr next);
+
+            static void WINAPIV CPlayer__SendMsg_FixPosition(
                 ATF::CPlayer* pPlayer,
                 int dwClientIndex,
                 ATF::info::CPlayerSendMsg_FixPosition752_ptr next);
+
+            static void WINAPIV CPlayer__SendMsg_RealMovePoint(
+                ATF::CPlayer *pPlayer,
+                int dwClientIndex,
+                ATF::info::CPlayerSendMsg_RealMovePoint1000_ptr next);
 
             static void WINAPIV CPlayer__SendMsg_OtherShapePart(
                 ATF::CPlayer *pPlayer,
