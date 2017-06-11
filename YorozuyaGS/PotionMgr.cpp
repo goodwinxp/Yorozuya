@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#include "ETypes.h"
 #include "PotionMgr.h"
 #include <ATF/CRaceBuffManager.hpp>
 #include <ATF/CGuildRoomSystem.hpp>
@@ -301,7 +302,7 @@ namespace GameServer
                         auto index = data.GetEffectIndex();
 
                         auto pCurrFld = (ATF::_skill_fld*)pObj->m_tblPotionEffectData.GetRecord(index);
-                        auto pPotionFld = (ATF::_PotionItem_fld*)ATF::global::g_MainThread->m_tblItemData[13].GetRecord(index);
+                        auto pPotionFld = (ATF::_PotionItem_fld*)ATF::global::g_MainThread->m_tblItemData[(int)e_code_item_table::tbl_code_potion].GetRecord(index);
 
                         if (!pCurrFld || !pPotionFld)
                             continue;
