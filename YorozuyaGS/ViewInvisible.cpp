@@ -63,6 +63,13 @@ namespace GameServer
             bool bPassed = false;
             do
             {
+                if (pPlayer->m_ObjID.m_byKind != (int)e_obj_id::obj_id_player ||
+                    pDst->m_ObjID.m_byKind != (int)e_obj_id::obj_id_player)
+                {
+                    bPassed = true;
+                    break;
+                }
+                
                 if (pPlayer->m_bObserver && !pDst->m_byUserDgr)
                     break;
 
