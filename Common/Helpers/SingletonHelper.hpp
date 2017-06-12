@@ -15,24 +15,15 @@ namespace SingletonHelper
 
         static InstancePtr get_instance()
         {
-            std::call_once(CSingleton<_Ty>::m_onceFlag, []() {
-                CSingleton<_Ty>::m_upInstance.reset(new _Ty());
-            });
-            return m_upInstance;
+            static std::mutex m_mtx;
+            std::lock_guard<decltype(m_mtx)> lock(m_mtx);
+            static InstancePtr instance(new _Ty());
+
+            return instance;
         }
 
     private:
         CSingleton(const CSingleton&) = delete;
         CSingleton & operator=(const CSingleton&) = delete;
-
-    private:
-        static std::once_flag m_onceFlag;
-        static InstancePtr m_upInstance;
     };
-
-    template<typename _Ty>
-    typename CSingleton<_Ty>::InstancePtr  CSingleton<_Ty>::m_upInstance;
-
-    template<typename _Ty>
-    std::once_flag CSingleton<_Ty>::m_onceFlag;
 }

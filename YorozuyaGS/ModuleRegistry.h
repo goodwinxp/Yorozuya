@@ -48,8 +48,8 @@ namespace GameServer
         {
             exec_register() 
             {
-                CModuleRegistry::get_instance()->push_module(
-                    CSingleton<_Ty>::get_instance());
+                auto registry = CModuleRegistry::get_instance();
+                registry->push_module(CSingleton<_Ty>::get_instance());
             }
         };
         static exec_register objModuleRegister;
