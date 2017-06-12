@@ -79,6 +79,9 @@
     <Filter Include="Implementation\Fixes\ChatSystem">
       <UniqueIdentifier>{df0f5e39-c221-4f98-a8e4-5670aa31f199}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\AttackSystem">
+      <UniqueIdentifier>{6796257e-e00e-420e-9ad3-8865227e966a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -143,6 +146,9 @@
     </ClCompile>
     <ClCompile Include="ChatSystem.cpp">
       <Filter>Implementation\Fixes\ChatSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackSystem.cpp">
+      <Filter>Implementation\Fixes\AttackSystem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="ChatSystem.h">
       <Filter>Implementation\Fixes\ChatSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSystem.h">
+      <Filter>Implementation\Fixes\AttackSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
