@@ -34,7 +34,7 @@ namespace GameServer
 
         ModuleName_t CMiningOre::get_name()
         {
-            static const ModuleName_t name = "fix_miningore";
+            static const ModuleName_t name = "fix_MiningOre";
             return name;
         }
 

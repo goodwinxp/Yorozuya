@@ -35,7 +35,7 @@ namespace GameServer
 
         ModuleName_t CTrap::get_name()
         {
-            static const ModuleName_t name = "fix_trap";
+            static const ModuleName_t name = "fix_Trap";
             return name;
         }
 

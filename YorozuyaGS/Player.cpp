@@ -45,7 +45,7 @@ namespace GameServer
 
         ModuleName_t CPlayer::get_name()
         {
-            static const ModuleName_t name = "fix_player";
+            static const ModuleName_t name = "fix_Player";
             return name;
         }
 

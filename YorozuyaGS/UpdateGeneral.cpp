@@ -39,7 +39,7 @@ namespace GameServer
 
         ModuleName_t CUpdateGeneral::get_name()
         {
-            static const ModuleName_t name = "fix_updategeneral";
+            static const ModuleName_t name = "fix_UpdateGeneral";
             return name;
         }
 

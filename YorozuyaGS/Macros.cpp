@@ -34,7 +34,7 @@ namespace GameServer
 
         ModuleName_t CMacros::get_name()
         {
-            static const ModuleName_t name = "fix_macros";
+            static const ModuleName_t name = "fix_Macros";
             return name;
         }
 

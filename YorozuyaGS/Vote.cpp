@@ -42,7 +42,7 @@ namespace GameServer
 
         ModuleName_t CVote::get_name()
         {
-            static const ModuleName_t name = "fix_vote";
+            static const ModuleName_t name = "fix_Vote";
             return name;
         }
 

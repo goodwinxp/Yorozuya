@@ -34,7 +34,7 @@ namespace GameServer
 
         ModuleName_t CStore::get_name()
         {
-            static const ModuleName_t name = "fix_store";
+            static const ModuleName_t name = "fix_Store";
             return name;
         }
 

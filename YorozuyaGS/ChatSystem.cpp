@@ -33,7 +33,7 @@ namespace GameServer
 
         ModuleName_t CChatSystem::get_name()
         {
-            static const ModuleName_t name = "fix_chatsystem";
+            static const ModuleName_t name = "fix_ChatSystem";
             return name;
         }
 

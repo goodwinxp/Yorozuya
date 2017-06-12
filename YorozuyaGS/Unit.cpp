@@ -31,7 +31,7 @@ namespace GameServer
 
         ModuleName_t CUnit::get_name()
         {
-            static const ModuleName_t name = "fix_unit";
+            static const ModuleName_t name = "fix_Unit";
             return name;
         }
 

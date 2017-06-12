@@ -31,7 +31,7 @@ namespace GameServer
 
         ModuleName_t CGuild::get_name()
         {
-            static const ModuleName_t name = "fix_guild";
+            static const ModuleName_t name = "fix_Guild";
             return name;
         }
 

@@ -33,7 +33,7 @@ namespace GameServer
 
         ModuleName_t CCreatePlayer::get_name()
         {
-            static const ModuleName_t name = "fix_createplayer";
+            static const ModuleName_t name = "fix_CreatePlayer";
             return name;
         }
 

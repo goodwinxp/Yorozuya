@@ -41,7 +41,7 @@ namespace GameServer
 
         ModuleName_t CPotionMgr::get_name()
         {
-            static const ModuleName_t name = "fix_potionmgr";
+            static const ModuleName_t name = "fix_PotionMgr";
             return name;
         }
 

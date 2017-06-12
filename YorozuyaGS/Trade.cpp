@@ -35,7 +35,7 @@ namespace GameServer
 
         ModuleName_t CTrade::get_name()
         {
-            static const ModuleName_t name = "fix_trade";
+            static const ModuleName_t name = "fix_Trade";
             return name;
         }
 

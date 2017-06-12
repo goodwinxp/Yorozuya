@@ -33,7 +33,7 @@ namespace GameServer
 
         ModuleName_t CPcBangFavor::get_name()
         {
-            static const ModuleName_t name = "fix_pcbangfavor";
+            static const ModuleName_t name = "fix_PCBangFavor";
             return name;
         }
 

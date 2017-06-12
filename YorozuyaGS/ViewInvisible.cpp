@@ -48,7 +48,7 @@ namespace GameServer
 
         ModuleName_t CViewInvisible::get_name()
         {
-            static const ModuleName_t name = "fix_viewinvisible";
+            static const ModuleName_t name = "fix_ViewInvisible";
             return name;
         }
 

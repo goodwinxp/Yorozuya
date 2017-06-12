@@ -31,7 +31,7 @@ namespace GameServer
 
         ModuleName_t CCheatCommand::get_name()
         {
-            static const ModuleName_t name = "fix_cheatcommand";
+            static const ModuleName_t name = "fix_CheatCommand";
             return name;
         }
 
