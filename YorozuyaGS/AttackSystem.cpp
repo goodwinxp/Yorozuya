@@ -64,10 +64,10 @@ namespace GameServer
 
             if (byEffectCode == 2)
             {
-                if (pPlayer->IsSiegeMode() && 
-                    pSkillFld->m_nTempEffectType != 23)
+                if (pPlayer->IsSiegeMode())
                 {
-                    return -20;
+                    if (pSkillFld->m_nTempEffectType != 23)
+                        return -20;
                 }
                 else if (pSkillFld->m_nTempEffectType == 23)
                 {
