@@ -145,7 +145,7 @@ namespace GameServer
             if (pObj->IsMineMode())
                 return;
 
-            if (pObj->IsSiegeMode())
+            if (pObj->IsActingSiegeMode() || pObj->IsSiegeMode())
                 return;
 
             if (pObj->IsRidingUnit())

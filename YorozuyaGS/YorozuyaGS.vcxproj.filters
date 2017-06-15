@@ -82,6 +82,9 @@
     <Filter Include="Implementation\Fixes\AttackSystem">
       <UniqueIdentifier>{6796257e-e00e-420e-9ad3-8865227e966a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\QuestMng">
+      <UniqueIdentifier>{d6438ea4-42f8-43c1-9493-b2f452c9ec6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -149,6 +152,9 @@
     </ClCompile>
     <ClCompile Include="AttackSystem.cpp">
       <Filter>Implementation\Fixes\AttackSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestMng.cpp">
+      <Filter>Implementation\Fixes\QuestMng</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -226,6 +232,9 @@
     </ClInclude>
     <ClInclude Include="AttackSystem.h">
       <Filter>Implementation\Fixes\AttackSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestMng.h">
+      <Filter>Implementation\Fixes\QuestMng</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

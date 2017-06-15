@@ -26,8 +26,9 @@ START_ATF_NAMESPACE
         using CNetProcess_ptr = struct CNetProcess*;
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
         using CRecordData_ptr = struct CRecordData*;
+        using CRecordData_ptr2 = struct CRecordData**;
 
-        static CRecordData_ptr stru_1799C6AA0((CRecordData_ptr)0x1799C6AA0);
+        static CRecordData_ptr2 s_tblQuest((CRecordData_ptr2)0x1849AC0C0L);
         static __time32_t* Time((__time32_t*)0x1415B71F8L);
         static CPlayer_ptr g_Player((CPlayer_ptr)0x1799CA490L);
         static CLogFile_ptr s_logTrace_Boss_Looting((CLogFile_ptr)0x14136F9E0L);

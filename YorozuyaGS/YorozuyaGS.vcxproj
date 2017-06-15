@@ -131,6 +131,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -146,6 +147,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YOROZUYAGS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -164,6 +166,8 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -184,6 +188,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -204,6 +209,8 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -224,6 +231,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -250,6 +258,7 @@
     <ClInclude Include="MiningOre.h" />
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="PotionMgr.h" />
+    <ClInclude Include="QuestMng.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Store.h" />
     <ClInclude Include="Trade.h" />
@@ -293,6 +302,7 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PotionMgr.cpp" />
+    <ClCompile Include="QuestMng.cpp" />
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />
     <ClCompile Include="UpdateGeneral.cpp" />
