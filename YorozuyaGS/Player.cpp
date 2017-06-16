@@ -11,6 +11,7 @@ namespace GameServer
         void CPlayer::load()
         {
             auto& core = ATF::CATFCore::get_instance();
+            core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
             core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
@@ -24,6 +25,7 @@ namespace GameServer
         void CPlayer::unload()
         {
             auto& core = ATF::CATFCore::get_instance();
+            core.unset_hook(&ATF::CPlayer::Load);
             core.unset_hook(&ATF::CPlayer::CalcPvP);
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
             core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
