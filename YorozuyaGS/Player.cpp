@@ -67,7 +67,7 @@ namespace GameServer
             if (bResult && !pObj->m_Param.m_pGuild)
             {
                 auto dwDestroyerSerial = ATF::global::g_HolySys->GetDestroyerSerial();
-                if (dwDestroyerSerial != -1 && pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
+                if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
                 {
                     pObj->SetLastAttBuff(false);
                 }
