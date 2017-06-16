@@ -55,6 +55,24 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
+        bool WINAPIV CPlayer::Load(
+            ATF::CPlayer * pObj, 
+            ATF::CUserDB * pUser, 
+            bool bFirstStart, 
+            ATF::info::CPlayerLoad366_ptr next)
+        {
+            bool bResult = next(pObj, pUser, bFirstStart);
+            if (bResult && !pObj->m_Param.m_pGuild)
+            {
+                auto dwDestroyerSerial = ATF::global::g_HolySys->GetDestroyerSerial();
+                if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
+                {
+                    pObj->SetLastAttBuff(false);
+                }
+            }
+            return bResult;
+        }
+
         void WINAPIV CPlayer::CalcPvP(
             ATF::CPlayer * pObj, 
             ATF::CPlayer * pDier, 

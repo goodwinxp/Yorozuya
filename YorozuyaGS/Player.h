@@ -29,6 +29,12 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
         private:
+            static bool WINAPIV Load(
+                ATF::CPlayer *pObj, 
+                ATF::CUserDB* pUser, 
+                bool bFirstStart,
+                ATF::info::CPlayerLoad366_ptr next);
+
             static void WINAPIV CalcPvP(
                 ATF::CPlayer *pObj, 
                 ATF::CPlayer *pDier, 
