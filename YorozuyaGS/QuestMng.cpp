@@ -56,43 +56,47 @@ namespace GameServer
 
             do
             {
-                bool bFind = false;
-                DWORD dwHappenIndex = 0;
+                ATF::_happen_event_cont* pHappenEvent = nullptr;
                 for (auto& quest : pPlayer->m_NPCQuestIndexTempData.IndexData)
                 {
                     if (quest.dwQuestIndex != dwNPCQuestIndex)
                         continue;
 
-                    dwHappenIndex = quest.dwQuestHappenIndex;
-                    bFind = true;
+                    pHappenEvent = pPlayer->m_QuestMgr.CheckNPCQuestStartable(
+                        pszEventCode, 
+                        pPlayer->m_Param.GetRaceCode(),
+                        dwNPCQuestIndex, 
+                        quest.dwQuestHappenIndex);
+                    break;
                 }
 
-                if (!bFind)
-                    break;
-
-                int nRaceCode = pPlayer->m_Param.GetRaceCode();
-                auto pHappenEvent = pPlayer->m_QuestMgr.CheckNPCQuestStartable(pszEventCode, nRaceCode, dwNPCQuestIndex, dwHappenIndex);
                 if (!pHappenEvent)
                     break;
+
+                for (auto& quest : pPlayer->m_QuestMgr.m_pQuestData->m_List)
+                {
+                    if (quest.byQuestType != ATF::QUEST_HAPPEN::quest_happen_type_npc)
+                        continue;
+
+                    if (quest.wIndex == dwNPCQuestIndex)
+                        return false;
+                }
 
                 auto pQuestFld = (_Quest_fld *)(*ATF::global::s_tblQuest)->GetRecord(dwNPCQuestIndex);
                 if (!pQuestFld)
                     break;
 
-                if (pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt)
+                for (int k = 0; k < pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt; ++k)
                 {
-                    for (int k = 0; k < pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt; ++k)
-                    {
-                        if (!strcmp(pPlayer->m_pUserDB->m_AvatorData.dbQuest.m_StartHistory[k].szQuestCode, pQuestFld->m_strCode))
-                        {
-                            if (pQuestFld->m_bQuestRepeat)
-                                break;
+                    if (strcmp(pPlayer->m_pUserDB->m_AvatorData.dbQuest.m_StartHistory[k].szQuestCode, pQuestFld->m_strCode))
+                        continue;
 
-                            return false;
-                        }
-                    }
+                    if (pQuestFld->m_bQuestRepeat)
+                        break;
+
+                    return false;
                 }
-
+                
                 _happen_event_cont Dst;
                 memcpy(&Dst, pHappenEvent, sizeof(Dst));
                 if (!pPlayer->Emb_StartQuest(-1, &Dst))
