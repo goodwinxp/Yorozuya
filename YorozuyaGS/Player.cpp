@@ -124,7 +124,7 @@ namespace GameServer
                 if (!pObj->IsEffectableEquip(pTrapItem))
                     break;
 
-                next(pObj, wSkillIndex, wTrapItemSerial, pfPos, pConsumeSerial);
+                next(pObj, wSkillIndex, wTrapItemSerial, pObj->m_fCurPos, pConsumeSerial);
             } while (false);
         }
 
@@ -153,7 +153,7 @@ namespace GameServer
                 if (!pObj->IsEffectableEquip(pTrapItem))
                     break;
 
-                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pfPos, pConsumeSerial);
+                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pObj->m_fCurPos, pConsumeSerial);
             } while (false);
         }
 
