@@ -29,6 +29,11 @@ namespace GameServer
 
             virtual void configure(const rapidjson::Value& nodeConfig);
         private:
+            static void WINAPIV CPlayer__SendMsg_StateInform(
+                ATF::CPlayer *pPlayer, 
+                uint64_t dwStateFlag,
+                ATF::info::CPlayerSendMsg_StateInform1074_ptr next);
+
             static void WINAPIV CGameObject__CircleReport(
                 ATF::CGameObject* pObj,
                 char* pbyType,

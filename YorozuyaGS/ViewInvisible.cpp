@@ -21,6 +21,7 @@ namespace GameServer
                 (void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport, 
                 &CViewInvisible::CGameObject__CircleReport);
 
+            core.set_hook(&CPlayer::SendMsg_StateInform, &CViewInvisible::CPlayer__SendMsg_StateInform);
             core.set_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
             core.set_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
             core.set_hook(&CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
@@ -31,6 +32,7 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook((void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport);
+            core.unset_hook(&CPlayer::SendMsg_StateInform);
             core.unset_hook(&CPlayer::SendMsg_FixPosition);
             core.unset_hook(&CPlayer::SendMsg_RealMovePoint);
             core.unset_hook(&CPlayer::SendMsg_OtherShapePart);
@@ -56,6 +58,16 @@ namespace GameServer
             const rapidjson::Value & nodeConfig)
         {
             UNREFERENCED_PARAMETER(nodeConfig);
+        }
+
+        void WINAPIV CViewInvisible::CPlayer__SendMsg_StateInform(
+            ATF::CPlayer * pPlayer, 
+            uint64_t dwStateFlag, 
+            ATF::info::CPlayerSendMsg_StateInform1074_ptr next)
+        {
+            pPlayer->SendMsg_NewViewOther(pPlayer->m_byMapInModeBuffer);
+            pPlayer->NewViewCircleObject();
+            next(pPlayer, dwStateFlag);
         }
 
         bool check_conditions(ATF::CPlayer *pPlayer, ATF::CPlayer *pDst)
