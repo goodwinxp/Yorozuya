@@ -109,6 +109,7 @@ namespace GameServer
             uint16_t * pConsumeSerial,
             ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next)
         {
+            UNREFERENCED_PARAMETER(pfPos);
             do
             {
                 if (pObj->IsMapLoading())
@@ -138,6 +139,7 @@ namespace GameServer
             uint16_t * pConsumeSerial,
             ATF::info::CPlayerpc_MakeTowerRequest1781_ptr next)
         {
+            UNREFERENCED_PARAMETER(pfPos);
             do
             {
                 if (pObj->IsMapLoading())
@@ -185,7 +187,7 @@ namespace GameServer
         {
             if (!pObj->m_Param.m_pGuild)
             {
-                pObj->SendMsg_GuildManageResult(202);
+                pObj->SendMsg_GuildManageResult((char)202);
                 return;
             }
 
