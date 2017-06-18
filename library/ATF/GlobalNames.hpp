@@ -27,7 +27,9 @@ START_ATF_NAMESPACE
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
         using CRecordData_ptr = struct CRecordData*;
         using CRecordData_ptr2 = struct CRecordData**;
+        using CMgrAvatorItemHistory_ptr = struct CMgrAvatorItemHistory*;
 
+        static CMgrAvatorItemHistory_ptr s_MgrItemHistory((CMgrAvatorItemHistory_ptr)0x14098AA40L);
         static CRecordData_ptr2 s_tblQuest((CRecordData_ptr2)0x1849AC0C0L);
         static __time32_t* Time((__time32_t*)0x1415B71F8L);
         static CPlayer_ptr g_Player((CPlayer_ptr)0x1799CA490L);

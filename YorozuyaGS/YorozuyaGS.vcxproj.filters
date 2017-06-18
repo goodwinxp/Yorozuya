@@ -85,6 +85,12 @@
     <Filter Include="Implementation\Fixes\QuestMng">
       <UniqueIdentifier>{d6438ea4-42f8-43c1-9493-b2f452c9ec6b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\UnmannedTrader">
+      <UniqueIdentifier>{632011d3-ab3e-47cf-b6d4-72bf3777902b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\PostSystem">
+      <UniqueIdentifier>{7a2d2e51-2529-49f0-9449-da8973679f93}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -155,6 +161,12 @@
     </ClCompile>
     <ClCompile Include="QuestMng.cpp">
       <Filter>Implementation\Fixes\QuestMng</Filter>
+    </ClCompile>
+    <ClCompile Include="UnmannedTrader.cpp">
+      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSystem.cpp">
+      <Filter>Implementation\Fixes\PostSystem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +247,12 @@
     </ClInclude>
     <ClInclude Include="QuestMng.h">
       <Filter>Implementation\Fixes\QuestMng</Filter>
+    </ClInclude>
+    <ClInclude Include="UnmannedTrader.h">
+      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSystem.h">
+      <Filter>Implementation\Fixes\PostSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
