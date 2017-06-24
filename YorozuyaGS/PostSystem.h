@@ -34,6 +34,11 @@ namespace GameServer
                 ATF::CMainThread *pObj, 
                 char *pData, 
                 ATF::info::CMainThreadLoad_ReturnPost_Complete114_ptr next);
+
+            static void WINAPIV CMainThread__Load_PostStorage_Complete(
+                ATF::CMainThread *pObj, 
+                char *pData,
+                ATF::info::CMainThreadLoad_PostStorage_Complete112_ptr next);
         };
     };
 };

@@ -14,6 +14,7 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.set_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
+            core.set_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
         }
 
         void CPostSystem::unload()
@@ -67,6 +68,8 @@ namespace GameServer
                 if (pPlayer->m_bPostLoad)
                     break;
 
+                pPlayer->m_bPostLoad = true;
+
                 auto pReturnPostStorage = &pPlayer->m_Param.m_ReturnPostStorage;
                 for (unsigned int j = 0; j < pInfo->dwCount; ++j)
                 {
@@ -98,7 +101,6 @@ namespace GameServer
                     &pPlayer->m_Param.m_ReturnPostStorage, 
                     pPlayer->m_szItemHistoryFileName);
 
-                pPlayer->m_bPostLoad = true;
                 if (!pInfo->dwCount)
                     break;
 
@@ -119,6 +121,32 @@ namespace GameServer
                         PostData.m_dwUpt,
                         PostData.m_dwGold);
                 }
+            } while (false);
+        }
+
+        void WINAPIV CPostSystem::CMainThread__Load_PostStorage_Complete(
+            ATF::CMainThread * pObj,
+            char * pData, 
+            ATF::info::CMainThreadLoad_PostStorage_Complete112_ptr next)
+        {
+            _qry_case_post_storage_list_get* pInfo = (_qry_case_post_storage_list_get *)pData;
+
+            do
+            {
+                if (pInfo->byProcRet == 1)
+                    break;
+
+                ATF::CPlayer* pPlayer = ATF::global::GetPtrPlayerFromSerial(ATF::global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
+                if (!pPlayer)
+                    break;
+
+                if (!pPlayer->m_bLoad)
+                    break;
+
+                if (pPlayer->m_bPostLoad)
+                    break;
+
+                next(pObj, pData);
             } while (false);
         }
     }
