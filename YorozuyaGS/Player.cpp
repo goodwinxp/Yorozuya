@@ -14,6 +14,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
+            core.set_hook(&ATF::CPlayer::pc_MovePortal, &CPlayer::pc_MovePortal);
             core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
             core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
@@ -28,6 +29,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::Load);
             core.unset_hook(&ATF::CPlayer::CalcPvP);
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
+            core.unset_hook(&ATF::CPlayer::pc_MovePortal);
             core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
             core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
             core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
