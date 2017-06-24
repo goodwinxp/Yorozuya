@@ -71,7 +71,8 @@ namespace GameServer
                     break;
                 }
 
-                if (pOne->GetBillingType() == 0)
+                if (pOne->m_pUserDB->m_BillingInfo.iType != 7 ||
+                    !pOne->m_pUserDB->m_BillingInfo.bIsPcBang)
                 {
                     pOne->SendMsg_PcRoomError(1);
                     break;
