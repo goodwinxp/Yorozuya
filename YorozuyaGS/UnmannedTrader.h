@@ -2,7 +2,7 @@
 
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
-
+#include <ATF/CUnmannedTraderController_info.hpp>
 
 namespace GameServer
 {
@@ -26,6 +26,13 @@ namespace GameServer
             virtual ModuleName_t get_name();
 
             virtual void configure(const rapidjson::Value& nodeConfig);
+        private:
+            static void WINAPIV CompleteBuy(
+                ATF::CUnmannedTraderUserInfoTable *pObj,
+                char byRet, 
+                char *pLoadData, 
+                ATF::CUnmannedTraderTradeInfo *pkTaradInfo,
+                ATF::info::CUnmannedTraderUserInfoTableCompleteBuy16_ptr next);
         };
     };
 };

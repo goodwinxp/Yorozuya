@@ -8,12 +8,17 @@
 START_ATF_NAMESPACE
     namespace std
     {
-		template<typename _Ty, typename _Alloc = allocator<_Ty>>
+        template<typename _Ty, typename _Alloc = allocator<_Ty>>
         struct vector : _Vector_val<_Ty, _Alloc>
         {
-			_Ty* _Myfirst;
-			_Ty* _Mylast;
-			_Ty* _Myend;
+            _Ty* _Myfirst;
+            _Ty* _Mylast;
+            _Ty* _Myend;
+
+            _Ty& operator[] (int indx)
+            {
+                return _Myfirst[indx];
+            }
         };
     }; // end namespace std
 END_ATF_NAMESPACE
