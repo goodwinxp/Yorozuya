@@ -266,6 +266,7 @@
     <ClInclude Include="Trap.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="UnmannedTrader.h" />
+    <ClInclude Include="UnmannedTraderEx.h" />
     <ClInclude Include="UpdateGeneral.h" />
     <ClInclude Include="ViewInvisible.h" />
     <ClInclude Include="Vote.h" />

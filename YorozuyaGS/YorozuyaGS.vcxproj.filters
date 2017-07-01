@@ -254,5 +254,8 @@
     <ClInclude Include="PostSystem.h">
       <Filter>Implementation\Fixes\PostSystem</Filter>
     </ClInclude>
+    <ClInclude Include="UnmannedTraderEx.h">
+      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

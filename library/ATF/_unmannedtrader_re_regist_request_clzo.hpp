@@ -5,6 +5,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 1)
     struct _unmannedtrader_re_regist_request_clzo
     {
         struct  __list
@@ -21,4 +22,5 @@ START_ATF_NAMESPACE
         char byRegedNum;
         __list List[10];
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE
