@@ -39,17 +39,6 @@ namespace GameServer
                 ATF::CMainThread *pObj, 
                 char *pData,
                 ATF::info::CMainThreadLoad_PostStorage_Complete112_ptr next);
-
-            static void WINAPIV CPlayer__NetClose(
-                ATF::CPlayer *pObj, 
-                bool bMoveOutLobby, 
-                ATF::info::CPlayerNetClose370_ptr next);
-
-            static bool WINAPIV CPlayer__Load(
-                ATF::CPlayer *pObj, 
-                ATF::CUserDB *pUser,
-                bool bFirstStart, 
-                ATF::info::CPlayerLoad366_ptr next);
         };
     };
 };

@@ -35,6 +35,11 @@ namespace GameServer
                 bool bFirstStart,
                 ATF::info::CPlayerLoad366_ptr next);
 
+            static void WINAPIV NetClose(
+                ATF::CPlayer *pObj,
+                bool bMoveOutLobby,
+                ATF::info::CPlayerNetClose370_ptr next);
+
             static void WINAPIV CalcPvP(
                 ATF::CPlayer *pObj, 
                 ATF::CPlayer *pDier, 

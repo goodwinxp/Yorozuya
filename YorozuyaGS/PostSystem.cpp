@@ -15,8 +15,6 @@ namespace GameServer
             auto& core = CATFCore::get_instance();
             core.set_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
             core.set_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
-            core.set_hook(&ATF::CPlayer::NetClose, &CPostSystem::CPlayer__NetClose);
-            core.set_hook(&ATF::CPlayer::Load, &CPostSystem::CPlayer__Load);
         }
 
         void CPostSystem::unload()
@@ -24,8 +22,6 @@ namespace GameServer
             auto& core = CATFCore::get_instance();
             core.unset_hook(&ATF::CMainThread::Load_ReturnPost_Complete);
             core.unset_hook(&ATF::CMainThread::Load_PostStorage_Complete);
-            core.unset_hook(&ATF::CPlayer::NetClose);
-            core.unset_hook(&ATF::CPlayer::Load);
         }
 
         void CPostSystem::loop()
@@ -153,25 +149,6 @@ namespace GameServer
 
                 next(pObj, pData);
             } while (false);
-        }
-
-        void WINAPIV CPostSystem::CPlayer__NetClose(
-            ATF::CPlayer * pObj,
-            bool bMoveOutLobby, 
-            ATF::info::CPlayerNetClose370_ptr next)
-        {
-            next(pObj, bMoveOutLobby);
-            pObj->m_bPostLoad = false;
-        }
-
-        bool WINAPIV CPostSystem::CPlayer__Load(
-            ATF::CPlayer * pObj, 
-            ATF::CUserDB * pUser,
-            bool bFirstStart, 
-            ATF::info::CPlayerLoad366_ptr next)
-        {
-            pObj->m_bPostLoad = false;
-            return next(pObj, pUser, bFirstStart);
         }
     }
 }

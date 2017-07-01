@@ -12,6 +12,7 @@ namespace GameServer
         {
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
+            core.set_hook(&ATF::CPlayer::NetClose, &CPlayer::NetClose);
             core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
             core.set_hook(&ATF::CPlayer::pc_MovePortal, &CPlayer::pc_MovePortal);
@@ -27,6 +28,7 @@ namespace GameServer
         {
             auto& core = ATF::CATFCore::get_instance();
             core.unset_hook(&ATF::CPlayer::Load);
+            core.unset_hook(&ATF::CPlayer::NetClose);
             core.unset_hook(&ATF::CPlayer::CalcPvP);
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
             core.unset_hook(&ATF::CPlayer::pc_MovePortal);
@@ -65,6 +67,7 @@ namespace GameServer
             bool bFirstStart, 
             ATF::info::CPlayerLoad366_ptr next)
         {
+            pObj->m_bPostLoad = false;
             bool bResult = next(pObj, pUser, bFirstStart);
             if (bResult && !pObj->m_Param.m_pGuild)
             {
@@ -75,6 +78,15 @@ namespace GameServer
                 }
             }
             return bResult;
+        }
+
+        void WINAPIV CPlayer::NetClose(
+            ATF::CPlayer *pObj,
+            bool bMoveOutLobby,
+            ATF::info::CPlayerNetClose370_ptr next)
+        {
+            next(pObj, bMoveOutLobby);
+            pObj->m_bPostLoad = false;
         }
 
         void WINAPIV CPlayer::CalcPvP(
