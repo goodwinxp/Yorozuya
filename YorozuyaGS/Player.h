@@ -99,6 +99,11 @@ namespace GameServer
                 ATF::CPlayer *pObj,
                 unsigned __int16 wItemSerial,
                 ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next);
+
+            static void WINAPIV pc_ThrowStorageItem(
+                ATF::CPlayer *pObj, 
+                ATF::_STORAGE_POS_INDIV* pItem,
+                ATF::info::CPlayerpc_ThrowStorageItem1953_ptr next);
         };
     };
 };

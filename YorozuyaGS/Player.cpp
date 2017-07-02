@@ -22,6 +22,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
             core.set_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
             core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
+            core.set_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
         }
 
         void CPlayer::unload()
@@ -38,6 +39,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
             core.unset_hook(&ATF::CPlayer::pc_CharacterRenameCheck);
             core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
+            core.unset_hook(&ATF::CPlayer::pc_ThrowStorageItem);
         }
 
         void CPlayer::loop()
@@ -250,6 +252,60 @@ namespace GameServer
             }
 
             next(pObj, wItemSerial);
+        }
+
+        void WINAPIV CPlayer::pc_ThrowStorageItem(
+            ATF::CPlayer * pObj, 
+            ATF::_STORAGE_POS_INDIV* pItem,
+            ATF::info::CPlayerpc_ThrowStorageItem1953_ptr next)
+        {
+            if (!pObj->m_pUserDB)
+                return;
+
+            char byResult = 0;
+
+            do
+            {
+                auto pStoragePtr = pObj->m_Param.m_pStoragePtr[pItem->byStorageCode];
+                if (pObj->m_EP.GetEff_State(ATF::_EFF_STATE::Stone_Lck))
+                {
+                    byResult = 5;
+                    break;
+                }
+
+                if (pObj->m_EP.GetEff_State(ATF::_EFF_STATE::Invincible))
+                {
+                    byResult = 5;
+                    break;
+                }
+
+                auto pSrc = pStoragePtr->GetPtrFromSerial(pItem->wItemSerial);
+                if (!pSrc)
+                {
+                    byResult = 2;
+                    break;
+                }
+
+                if (pSrc->m_bLock)
+                {
+                    byResult = 9;
+                    break;
+                }
+
+                if (ATF::global::IsOverLapItem(pSrc->m_byTableCode))
+                {
+                    if (pItem->byNum <= 0 || pItem->byNum > pSrc->m_dwDur)
+                    {
+                        pObj->SendMsg_AdjustAmountInform(pItem->byStorageCode, pItem->wItemSerial, pSrc->m_dwDur);
+                        byResult = 3;
+                        break;
+                    }
+                }
+
+                next(pObj, pItem);
+            } while (false);
+
+            pObj->SendMsg_ThrowStorageResult(byResult);
         }
     }
 }

@@ -14,11 +14,5 @@ START_ATF_NAMESPACE
 		};
 
 		CTSingletonVtbl *vfptr;
-
-		static _Ty* Instance()
-		{
-			static _Ty instance;
-			return instance;
-		};
 	};
 END_ATF_NAMESPACE
