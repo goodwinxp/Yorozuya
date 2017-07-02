@@ -155,9 +155,12 @@ namespace GameServer
                             ATF::CTrap* pTrap = (ATF::CTrap*)pObj;
                             if (pTrap->m_dwMasterSerial != pDst->m_Param.GetCharSerial())
                             {
-                                if (!pDst->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
+                                if (!(nMsgSize == 5 && !bToOne))
                                 {
-                                    continue;
+                                    if (!pDst->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
+                                    {
+                                        continue;
+                                    }
                                 }
                             }
                         }

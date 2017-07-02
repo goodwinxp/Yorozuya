@@ -1,9 +1,11 @@
 #include "stdafx.h"
 
+#include <cmath>
 #include "Trap.h"
 #include "ETypes.h"
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_addpvppoint.hpp>
+#include <ATF/_trap_fixpositon_zocl.hpp>
 
 namespace GameServer
 {
@@ -12,6 +14,7 @@ namespace GameServer
         void CTrap::load()
         {
             auto& core = ATF::CATFCore::get_instance();
+            core.set_hook(&ATF::CTrap::SendMsg_Attack, &CTrap::SendMsg_Attack);
             core.set_hook(&ATF::CTrap::RecvKillMessage, &CTrap::RecvKillMessage);
             core.set_hook(&ATF::CTrap::SendMsg_FixPosition, &CTrap::SendMsg_FixPosition);
             
@@ -20,6 +23,7 @@ namespace GameServer
         void CTrap::unload()
         {
             auto& core = ATF::CATFCore::get_instance();
+            core.unset_hook(&ATF::CTrap::SendMsg_Attack);
             core.unset_hook(&ATF::CTrap::RecvKillMessage);
             core.unset_hook(&ATF::CTrap::SendMsg_FixPosition);
         }
@@ -43,6 +47,30 @@ namespace GameServer
             const rapidjson::Value & nodeConfig)
         {
             UNREFERENCED_PARAMETER(nodeConfig);
+        }
+
+        void WINAPIV CTrap::SendMsg_FixPositionImpl(ATF::CTrap* pTrap, int n)
+        {
+            ATF::_trap_fixpositon_zocl szMsg;
+            szMsg.wRecIndex = pTrap->m_pRecordSet->m_dwIndex;
+            szMsg.wIndex = pTrap->m_ObjID.m_wIndex;
+            szMsg.dwSerial = pTrap->m_dwObjSerial;
+            ATF::global::FloatToShort(pTrap->m_fCurPos, szMsg.zCur, 3);
+            szMsg.dwMasterSerial = pTrap->m_dwMasterSerial;
+
+            szMsg.bTranspar = (pTrap->m_bBreakTransparBuffer == 0);
+            szMsg.byRaceCode = pTrap->m_byRaceCode;
+            if (pTrap->m_bComplete)
+            {
+                szMsg.wCompLeftSec = 0;
+            }
+            else
+            {
+                szMsg.wCompLeftSec = (timeGetTime() - pTrap->m_dwStartMakeTime) / 1000;
+            }
+
+            char byType[2] = { 4, -88 };
+            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(n, byType, (char *)&szMsg, sizeof(szMsg));
         }
 
         void WINAPIV CTrap::RecvKillMessage(
@@ -93,6 +121,7 @@ namespace GameServer
             }
         }
 
+
         void WINAPIV CTrap::SendMsg_FixPosition(
             ATF::CTrap* pTrap,
             int n,
@@ -108,6 +137,24 @@ namespace GameServer
             }
 
             next(pTrap, n);
+        }
+
+        void WINAPIV CTrap::SendMsg_Attack(
+            ATF::CTrap* pTrap,
+            ATF::CAttack *pAt,
+            ATF::info::CTrapSendMsg_Attack76_ptr next)
+        {
+            for (int j = 0; j < pAt->m_nDamagedObjNum; ++j)
+            {
+                auto pTarget = pAt->m_DamList[j].m_pChar;
+                if (pTarget->m_ObjID.m_byKind == (uint8_t)e_obj_id::obj_id_player &&
+                    !pTarget->m_ObjID.m_byID)
+                {
+                    CTrap::SendMsg_FixPositionImpl(pTrap, pTarget->m_ObjID.m_wIndex);
+                }
+            }
+
+            next(pTrap, pAt);
         }
     }
 }

@@ -28,7 +28,12 @@ namespace GameServer
             virtual ModuleName_t get_name();
 
             virtual void configure(const rapidjson::Value& nodeConfig);
+
         private:
+            static void WINAPIV SendMsg_FixPositionImpl(
+                ATF::CTrap* pTrap,
+                int n);
+
             static void WINAPIV RecvKillMessage(
                 ATF::CTrap* pObj,
                 ATF::CCharacter* pDier,
@@ -38,6 +43,11 @@ namespace GameServer
                 ATF::CTrap* pTrap,
                 int n,
                 ATF::info::CTrapSendMsg_FixPosition82_ptr next);
+
+            static void WINAPIV SendMsg_Attack(
+                ATF::CTrap* pTrap,
+                ATF::CAttack *pAt,
+                ATF::info::CTrapSendMsg_Attack76_ptr next);
         };
     };
 };
