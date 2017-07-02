@@ -250,6 +250,7 @@
     <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
+    <ClInclude Include="NetworkEx.h" />
     <ClInclude Include="PcBangFavor.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
@@ -278,6 +279,7 @@
     <ClCompile Include="CheatCommand.cpp" />
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
+    <ClCompile Include="NetworkEx.cpp" />
     <ClCompile Include="PcBangFavor.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">

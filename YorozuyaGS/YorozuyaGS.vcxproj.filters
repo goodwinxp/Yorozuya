@@ -91,6 +91,9 @@
     <Filter Include="Implementation\Fixes\PostSystem">
       <UniqueIdentifier>{7a2d2e51-2529-49f0-9449-da8973679f93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\NetworkEx">
+      <UniqueIdentifier>{71d1d1ce-c478-4d8f-827b-757912d79089}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -167,6 +170,9 @@
     </ClCompile>
     <ClCompile Include="PostSystem.cpp">
       <Filter>Implementation\Fixes\PostSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkEx.cpp">
+      <Filter>Implementation\Fixes\NetworkEx</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -256,6 +262,9 @@
     </ClInclude>
     <ClInclude Include="UnmannedTraderEx.h">
       <Filter>Implementation\Fixes\UnmannedTrader</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkEx.h">
+      <Filter>Implementation\Fixes\NetworkEx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
