@@ -151,9 +151,9 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(next);
 
-            for (int i = 0; i < MAX_PLAYER; ++i)
+            for (auto& player : ATF::global::g_Player)
             {
-                _SendVotePaper(pObj, &ATF::global::g_Player[i], nullptr);
+                _SendVotePaper(pObj, &player, nullptr);
             }
         }
 
@@ -225,7 +225,7 @@ namespace GameServer
 
                 if (player.m_Param.GetRaceCode() != byRace)
                     continue;
-                
+
                 ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(i, pbyType, (char *)&info, info.size());
             }
         }

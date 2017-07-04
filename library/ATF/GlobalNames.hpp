@@ -7,6 +7,8 @@
 START_ATF_NAMESPACE
     namespace global
     {
+        #define MAX_PLAYER 2532
+
         using CPlayer_ptr = struct CPlayer*;
         using CLogFile_ptr = struct CLogFile*;
         using CMainThread_ptr = struct CMainThread*;
@@ -29,13 +31,14 @@ START_ATF_NAMESPACE
         using CRecordData_ptr2 = struct CRecordData**;
         using CMgrAvatorItemHistory_ptr = struct CMgrAvatorItemHistory*;
         using CRFWorldDatabase_ptr2 = struct CRFWorldDatabase**;
-
+        using CPlayer_Ref = ATF::CPlayer(&)[MAX_PLAYER];
+        using CPlayer_Ptr = ATF::CPlayer(*)[MAX_PLAYER];
 
         static CRFWorldDatabase_ptr2 pkDB((CRFWorldDatabase_ptr2)0x1415B7000L);
         static CMgrAvatorItemHistory_ptr s_MgrItemHistory((CMgrAvatorItemHistory_ptr)0x14098AA40L);
         static CRecordData_ptr2 s_tblQuest((CRecordData_ptr2)0x1849AC0C0L);
         static __time32_t* Time((__time32_t*)0x1415B71F8L);
-        static CPlayer_ptr g_Player((CPlayer_ptr)0x1799CA490L);
+        static CPlayer_Ref g_Player = (*(CPlayer_Ptr)0x1799CA490L);
         static CLogFile_ptr s_logTrace_Boss_Looting((CLogFile_ptr)0x14136F9E0L);
         static CMainThread_ptr g_MainThread((CMainThread_ptr)0x14154F250L);
         static float* s_fExpDivUnderParty_Kill((float*)0x14096B228L);
