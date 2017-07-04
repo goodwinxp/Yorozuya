@@ -4,8 +4,6 @@
 #include "ModuleRegistry.h"
 #include "../Common/Helpers/ModuleDllHelper.hpp"
 
-#include "Macros.h"
-
 namespace GameServer
 {
     CModuleRegistry::CModuleRegistry()
