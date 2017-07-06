@@ -68,17 +68,23 @@ START_ATF_NAMESPACE
             do
             {
                 LPVOID key = cast_pointer_function(pTarget);
-                *_mapper_function[key].ppOrig = cast_pointer_function(pDetour);
+
+                auto it_find = _mapper_function.find(key);
+                if (it_find == _mapper_function.end())
+                    break;
+
+                auto& rec = it_find->second;
+                *rec.ppOrig = cast_pointer_function(pDetour);
 
                 status = MH_CreateHook(
-                    _mapper_function[key].pTrgAppOrig,
-                    reinterpret_cast<LPVOID>(_mapper_function[key].pWrapper),
-                    reinterpret_cast<LPVOID*>(_mapper_function[key].ppTramp));
+                    rec.pTrgAppOrig,
+                    reinterpret_cast<LPVOID>(rec.pWrapper),
+                    reinterpret_cast<LPVOID*>(rec.ppTramp));
 
                 if (status != MH_OK)
                     break;
 
-                status = MH_EnableHook(_mapper_function[key].pTrgAppOrig);
+                status = MH_EnableHook(rec.pTrgAppOrig);
                 if (status != MH_OK)
                     break;
 
