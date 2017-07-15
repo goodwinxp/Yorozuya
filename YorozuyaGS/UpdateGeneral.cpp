@@ -56,7 +56,7 @@ namespace GameServer
             ATF::_AVATOR_DATA* pOldData,
             char* pSzQuery,
             bool bCheckLowHigh,
-            ATF::info::CMainThread_db_Update_General258_ptr next)
+            ATF::Info::CMainThread_db_Update_General258_ptr next)
         {
             for (int i = 0; i < size_array(pNewData->dbAvator.m_fStartPos); ++i)
             {

@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 
 namespace GameServer
 {
@@ -42,7 +42,7 @@ namespace GameServer
                 uint16_t wEffBtSerial, 
                 ATF::_STORAGE_LIST::_db_con** ppEffBtProp,
                 ATF::_BulletItem_fld** ppfldEffBt,
-                ATF::info::CPlayer_pre_check_skill_attack1374_ptr next);
+                ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next);
         };
     };
 };

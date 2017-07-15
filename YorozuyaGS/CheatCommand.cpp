@@ -11,13 +11,13 @@ namespace GameServer
         void CCheatCommand::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
+            core.set_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
         }
 
         void CCheatCommand::unload()
         {
             auto& core = CATFCore::get_instance();
-            core.unset_hook(&global::AuthorityFilter);
+            core.unset_hook(&Global::AuthorityFilter);
         }
 
         void CCheatCommand::loop()
@@ -43,7 +43,7 @@ namespace GameServer
         bool WINAPIV CCheatCommand::AuthorityFilter(
             ATF::CHEAT_COMMAND* pCmd, 
             ATF::CPlayer* pOne, 
-            ATF::global::info::globalAuthorityFilter25_ptr next)
+            ATF::Global::Info::AuthorityFilter25_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 

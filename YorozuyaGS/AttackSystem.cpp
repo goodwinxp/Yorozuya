@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "AttackSystem.h"
-#include <ATF/global.hpp>
+#include <ATF/Global.hpp>
 
 
 namespace GameServer
@@ -57,7 +57,7 @@ namespace GameServer
             uint16_t wEffBtSerial, 
             ATF::_STORAGE_LIST::_db_con ** ppEffBtProp, 
             ATF::_BulletItem_fld ** ppfldEffBt, 
-            ATF::info::CPlayer_pre_check_skill_attack1374_ptr next)
+            ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next)
         {
             if (!pSkillFld)
                 return -60;

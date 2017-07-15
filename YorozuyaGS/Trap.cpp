@@ -55,7 +55,7 @@ namespace GameServer
             szMsg.wRecIndex = pTrap->m_pRecordSet->m_dwIndex;
             szMsg.wIndex = pTrap->m_ObjID.m_wIndex;
             szMsg.dwSerial = pTrap->m_dwObjSerial;
-            ATF::global::FloatToShort(pTrap->m_fCurPos, szMsg.zCur, 3);
+            ATF::Global::FloatToShort(pTrap->m_fCurPos, szMsg.zCur, 3);
             szMsg.dwMasterSerial = pTrap->m_dwMasterSerial;
 
             szMsg.bTranspar = (pTrap->m_bBreakTransparBuffer == 0);
@@ -70,13 +70,13 @@ namespace GameServer
             }
 
             char byType[2] = { 4, -88 };
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(n, byType, (char *)&szMsg, sizeof(szMsg));
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(n, byType, (char *)&szMsg, sizeof(szMsg));
         }
 
         void WINAPIV CTrap::RecvKillMessage(
             ATF::CTrap* pObj,
             ATF::CCharacter* pDier,
-            ATF::info::CTrapRecvKillMessage70_ptr next)
+            ATF::Info::CTrapRecvKillMessage70_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
             if (pObj->m_pMaster)
@@ -115,7 +115,7 @@ namespace GameServer
                 qryAddpvppoint.dwPoint = (unsigned int)floor(dAlterPoint);
                 qryAddpvppoint.dwCashBag = (unsigned int)floor(dAlterPoint);
 
-                ATF::global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, 13, (char *)&qryAddpvppoint, qryAddpvppoint.size());
+                ATF::Global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, 13, (char *)&qryAddpvppoint, qryAddpvppoint.size());
 
                 pPlayerDier->AlterPvPPoint(-dAlterPoint, ATF::PVP_ALTER_TYPE::die_dec, pObj->m_dwMasterSerial);
             }
@@ -125,9 +125,9 @@ namespace GameServer
         void WINAPIV CTrap::SendMsg_FixPosition(
             ATF::CTrap* pTrap,
             int n,
-            ATF::info::CTrapSendMsg_FixPosition82_ptr next)
+            ATF::Info::CTrapSendMsg_FixPosition82_ptr next)
         {
-            ATF::CPlayer* pPlayer = &ATF::global::g_Player[n];
+            ATF::CPlayer* pPlayer = &ATF::Global::g_Player[n];
             if (pTrap->m_dwMasterSerial != pPlayer->m_Param.GetCharSerial())
             {
                 if (!pPlayer->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
@@ -142,7 +142,7 @@ namespace GameServer
         void WINAPIV CTrap::SendMsg_Attack(
             ATF::CTrap* pTrap,
             ATF::CAttack *pAt,
-            ATF::info::CTrapSendMsg_Attack76_ptr next)
+            ATF::Info::CTrapSendMsg_Attack76_ptr next)
         {
             for (int j = 0; j < pAt->m_nDamagedObjNum; ++j)
             {

@@ -48,7 +48,7 @@ namespace GameServer
         void WINAPIV CPostSystem::CMainThread__Load_ReturnPost_Complete(
             ATF::CMainThread *pObj,
             char *pData,
-            ATF::info::CMainThreadLoad_ReturnPost_Complete114_ptr next)
+            ATF::Info::CMainThreadLoad_ReturnPost_Complete114_ptr next)
         {
             UNREFERENCED_PARAMETER(pObj);
             UNREFERENCED_PARAMETER(next);
@@ -59,7 +59,7 @@ namespace GameServer
                 if (pInfo->byProcRet == 1)
                     break;
 
-                ATF::CPlayer* pPlayer = ATF::global::GetPtrPlayerFromSerial(ATF::global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
+                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
                 if (!pPlayer)
                     break;
 
@@ -92,13 +92,13 @@ namespace GameServer
 
                     if (pPost->m_Key.IsFilled() || pPost->m_dwGold)
                     {
-                        ATF::global::s_MgrItemHistory->post_returnreceive(
+                        ATF::Global::s_MgrItemHistory->post_returnreceive(
                             pPost,
                             pPlayer->m_szItemHistoryFileName);
                     }
                 }
 
-                ATF::global::s_MgrItemHistory->return_post_storage(
+                ATF::Global::s_MgrItemHistory->return_post_storage(
                     &pPlayer->m_Param.m_ReturnPostStorage, 
                     pPlayer->m_szItemHistoryFileName);
 
@@ -128,7 +128,7 @@ namespace GameServer
         void WINAPIV CPostSystem::CMainThread__Load_PostStorage_Complete(
             ATF::CMainThread * pObj,
             char * pData, 
-            ATF::info::CMainThreadLoad_PostStorage_Complete112_ptr next)
+            ATF::Info::CMainThreadLoad_PostStorage_Complete112_ptr next)
         {
             _qry_case_post_storage_list_get* pInfo = (_qry_case_post_storage_list_get *)pData;
 
@@ -137,7 +137,7 @@ namespace GameServer
                 if (pInfo->byProcRet == 1)
                     break;
 
-                ATF::CPlayer* pPlayer = ATF::global::GetPtrPlayerFromSerial(ATF::global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
+                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
                 if (!pPlayer)
                     break;
 

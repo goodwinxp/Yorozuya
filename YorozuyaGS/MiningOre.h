@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 
 namespace GameServer
 {
@@ -33,7 +33,7 @@ namespace GameServer
                 char byMineIndex, 
                 char byOreIndex, 
                 uint16_t wBatterySerial, 
-                ATF::info::CPlayerpc_MineStart1789_ptr);
+                ATF::Info::CPlayerpc_MineStart1789_ptr);
         };
     };
 };

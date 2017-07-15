@@ -2,7 +2,7 @@
 
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
-#include <ATF/CUnmannedTraderController_info.hpp>
+#include <ATF/CUnmannedTraderControllerInfo.hpp>
 
 
 namespace GameServer
@@ -33,24 +33,24 @@ namespace GameServer
                 char byRet, 
                 char *pLoadData, 
                 ATF::CUnmannedTraderTradeInfo *pkTaradInfo,
-                ATF::info::CUnmannedTraderUserInfoTableCompleteBuy16_ptr next);
+                ATF::Info::CUnmannedTraderUserInfoTableCompleteBuy16_ptr next);
 
             static void WINAPIV ReRegist(
                 ATF::CUnmannedTraderUserInfo *pObj,
                 char byType,
                 ATF::_unmannedtrader_re_regist_request_clzo *pRequest,
                 ATF::CLogFile *pkLogger,
-                ATF::info::CUnmannedTraderUserInfoReRegist110_ptr next);
+                ATF::Info::CUnmannedTraderUserInfoReRegist110_ptr next);
 
             static bool WINAPIV UpdateReRegist(
                 ATF::CUnmannedTraderController *pObj,
                 char *pData,
-                ATF::info::CUnmannedTraderControllerUpdateReRegist108_ptr next);
+                ATF::Info::CUnmannedTraderControllerUpdateReRegist108_ptr next);
 
             static void WINAPIV CompleteReRegist(
                 ATF::CUnmannedTraderUserInfoTable *pObj,
                 char *pData,
-                ATF::info::CUnmannedTraderUserInfoTableCompleteReRegist22_ptr next);
+                ATF::Info::CUnmannedTraderUserInfoTableCompleteReRegist22_ptr next);
 
         private:
             static bool WINAPIV Update_UnmannedTraderSingleItemInfo(

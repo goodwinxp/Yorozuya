@@ -47,7 +47,7 @@ namespace GameServer
         void WINAPIV CTrade::pc_DTradeOKRequest(
             ATF::CPlayer* pObj,
             unsigned int* pdwKey,
-            ATF::info::CPlayerpc_DTradeOKRequest1687_ptr next)
+            ATF::Info::CPlayerpc_DTradeOKRequest1687_ptr next)
         {
             bool bCheckPassed = false;
             CPlayer* pDst = nullptr;
@@ -77,7 +77,7 @@ namespace GameServer
 
             do
             {
-                if (!ATF::global::DTradeEqualPerson(pObj, &pDst))
+                if (!ATF::Global::DTradeEqualPerson(pObj, &pDst))
                 {
                     bCheckPassed = true;
                     break;

@@ -116,6 +116,6 @@ START_ATF_NAMESPACE
             return result;
         }
     private:
-        _STD map<LPVOID, _hook_record> _mapper_function;
+        ::std::map<LPVOID, _hook_record> _mapper_function;
     };
 END_ATF_NAMESPACE

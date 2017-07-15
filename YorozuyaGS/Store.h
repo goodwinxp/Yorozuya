@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CItemStore_info.hpp>
+#include <ATF/CItemStoreInfo.hpp>
 
 namespace GameServer
 {
@@ -40,7 +40,7 @@ namespace GameServer
                 float fDiscountRate, 
                 char byRace, 
                 char byGrade,
-                ATF::info::CItemStoreIsSell36_ptr next);
+                ATF::Info::CItemStoreIsSell36_ptr next);
         };
     };
 };

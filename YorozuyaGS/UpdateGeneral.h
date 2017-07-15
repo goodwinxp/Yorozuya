@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CMainThread_info.hpp>
+#include <ATF/CMainThreadInfo.hpp>
 
 namespace GameServer
 {
@@ -35,7 +35,7 @@ namespace GameServer
                 ATF::_AVATOR_DATA* pOldData,
                 char* pSzQuery, 
                 bool bCheckLowHigh,
-                ATF::info::CMainThread_db_Update_General258_ptr next);
+                ATF::Info::CMainThread_db_Update_General258_ptr next);
         };
     };
 };

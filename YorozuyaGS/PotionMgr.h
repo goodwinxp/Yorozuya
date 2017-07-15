@@ -4,7 +4,7 @@
 #include "../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/_PotionItem_fld.hpp>
-#include <ATF/CPotionMgr_info.hpp>
+#include <ATF/CPotionMgrInfo.hpp>
 
 namespace GameServer
 {
@@ -37,7 +37,7 @@ namespace GameServer
                 unsigned int nCurTime,
                 ATF::_skill_fld* pFld,
                 bool bCheckDist,
-                ATF::info::CPotionMgrPreCheckPotion22_ptr next);
+                ATF::Info::CPotionMgrPreCheckPotion22_ptr next);
         };
     };
 };

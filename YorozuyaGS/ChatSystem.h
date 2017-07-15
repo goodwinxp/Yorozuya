@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 
 namespace GameServer
 {
@@ -32,7 +32,12 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 char *pwszName,
                 char *pwszChatData,
-                ATF::info::CPlayerpc_ChatFarRequest1635_ptr next);
+                ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next);
+
+            static void WINAPIV pc_ChatCircleRequest(
+                ATF::CPlayer *pPlayer,
+                char *pwszChatData,
+                ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next);
         };
     };
 };

@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 
 namespace GameServer
 {
@@ -36,7 +36,7 @@ namespace GameServer
                 bool bPayFee, 
                 float* pfNewPos, 
                 int bUseNPCLinkIntem,
-                ATF::info::CPlayerpc_UnitDeliveryRequest1995_ptr next);
+                ATF::Info::CPlayerpc_UnitDeliveryRequest1995_ptr next);
         };
     };
 };

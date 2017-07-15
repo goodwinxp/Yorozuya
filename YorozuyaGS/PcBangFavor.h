@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPcBangFavor_info.hpp>
+#include <ATF/CPcBangFavorInfo.hpp>
 
 namespace GameServer
 {
@@ -34,7 +34,7 @@ namespace GameServer
                 unsigned int dwRecIndex, 
                 char* bySeletItemIndex, 
                 int nSelectCount,
-                ATF::info::CPcBangFavorPcBangGiveItem16_ptr next);
+                ATF::Info::CPcBangFavorPcBangGiveItem16_ptr next);
         };
     };
 };

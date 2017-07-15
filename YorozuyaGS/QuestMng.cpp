@@ -48,7 +48,7 @@ namespace GameServer
             ATF::CPlayer * pPlayer, 
             char * pszEventCode, 
             unsigned int dwNPCQuestIndex, 
-            ATF::info::CPlayerEmb_CreateNPCQuest128_ptr next)
+            ATF::Info::CPlayerEmb_CreateNPCQuest128_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -82,7 +82,7 @@ namespace GameServer
                         return false;
                 }
 
-                auto pQuestFld = (_Quest_fld *)(*ATF::global::s_tblQuest)->GetRecord(dwNPCQuestIndex);
+                auto pQuestFld = (_Quest_fld *)(*ATF::Global::s_tblQuest)->GetRecord(dwNPCQuestIndex);
                 if (!pQuestFld)
                     break;
 

@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 
 namespace GameServer
 {
@@ -32,7 +32,7 @@ namespace GameServer
                 ATF::CPlayer* pPlayer,
                 char* pszEventCode, 
                 unsigned int dwNPCQuestIndex,
-                ATF::info::CPlayerEmb_CreateNPCQuest128_ptr next);
+                ATF::Info::CPlayerEmb_CreateNPCQuest128_ptr next);
         };
     };
 };

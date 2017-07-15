@@ -3,8 +3,8 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
-#include <ATF/CGameObject_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
+#include <ATF/CGameObjectInfo.hpp>
 
 namespace GameServer
 {
@@ -32,7 +32,7 @@ namespace GameServer
             static void WINAPIV CPlayer__SendMsg_StateInform(
                 ATF::CPlayer *pPlayer, 
                 uint64_t dwStateFlag,
-                ATF::info::CPlayerSendMsg_StateInform1074_ptr next);
+                ATF::Info::CPlayerSendMsg_StateInform1074_ptr next);
 
             static void WINAPIV CGameObject__CircleReport(
                 ATF::CGameObject* pObj,
@@ -40,27 +40,27 @@ namespace GameServer
                 char* szMsg,
                 int nMsgSize,
                 bool bToOne,
-                ATF::info::CGameObjectCircleReport24_ptr next);
+                ATF::Info::CGameObjectCircleReport24_ptr next);
 
             static void WINAPIV CPlayer__SendMsg_FixPosition(
                 ATF::CPlayer* pPlayer,
                 int dwClientIndex,
-                ATF::info::CPlayerSendMsg_FixPosition752_ptr next);
+                ATF::Info::CPlayerSendMsg_FixPosition752_ptr next);
 
             static void WINAPIV CPlayer__SendMsg_RealMovePoint(
                 ATF::CPlayer *pPlayer,
                 int dwClientIndex,
-                ATF::info::CPlayerSendMsg_RealMovePoint1000_ptr next);
+                ATF::Info::CPlayerSendMsg_RealMovePoint1000_ptr next);
 
             static void WINAPIV CPlayer__SendMsg_OtherShapePart(
                 ATF::CPlayer *pPlayer,
                 ATF::CPlayer *pDst,
-                ATF::info::CPlayerSendMsg_OtherShapePart914_ptr next);
+                ATF::Info::CPlayerSendMsg_OtherShapePart914_ptr next);
 
             static void WINAPIV CPlayer__SendMsg_OtherShapeAll(
                 ATF::CPlayer *pPlayer,
                 ATF::CPlayer *pDst,
-                ATF::info::CPlayerSendMsg_OtherShapeAll910_ptr next);
+                ATF::Info::CPlayerSendMsg_OtherShapeAll910_ptr next);
         };
     };
 };

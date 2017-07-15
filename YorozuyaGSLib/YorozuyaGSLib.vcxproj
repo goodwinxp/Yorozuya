@@ -1,22 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="ReleaseDebug|Win32">
-      <Configuration>ReleaseDebug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="ReleaseDebug|x64">
-      <Configuration>ReleaseDebug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
@@ -25,205 +9,2268 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="atf_lib.cpp" />
+    <ProjectConfiguration Include="ReleaseDebug|x64">
+      <Configuration>ReleaseDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A9BBA646-32B8-4412-8C45-F21518A178EF}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
-    <RootNamespace>YorozuyaGSLib</RootNamespace>
+    <ProjectGUID>{0E0EA503-B731-3FAD-BE56-60AC806B69E3}</ProjectGUID>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>YorozuyaGSLib</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'" Label="PropertySheets">
+  <ImportGroup Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <WarningLevel>Level4</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-    </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
-    <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\</AdditionalIncludeDirectories>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
     </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include;</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
     <Lib>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\source\AINet.cpp" />
+    <ClCompile Include=".\source\AINetDetail.cpp" />
+    <ClCompile Include=".\source\AINetFile.cpp" />
+    <ClCompile Include=".\source\AINetFileDetail.cpp" />
+    <ClCompile Include=".\source\AINetFtp.cpp" />
+    <ClCompile Include=".\source\AINetFtpDetail.cpp" />
+    <ClCompile Include=".\source\AP_BatterySlot.cpp" />
+    <ClCompile Include=".\source\AP_BatterySlotDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CAtlException.cpp" />
+    <ClCompile Include=".\source\ATL__CAtlExceptionDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CCRTAllocator.cpp" />
+    <ClCompile Include=".\source\ATL__CCRTAllocatorDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CComBSTR.cpp" />
+    <ClCompile Include=".\source\ATL__CComBSTRDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CFileTime.cpp" />
+    <ClCompile Include=".\source\ATL__CFileTimeDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CFileTimeSpan.cpp" />
+    <ClCompile Include=".\source\ATL__CFileTimeSpanDetail.cpp" />
+    <ClCompile Include=".\source\ATL__COleDateTime.cpp" />
+    <ClCompile Include=".\source\ATL__COleDateTimeSpan.cpp" />
+    <ClCompile Include=".\source\ATL__CTime.cpp" />
+    <ClCompile Include=".\source\ATL__CTimeDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CTimeSpan.cpp" />
+    <ClCompile Include=".\source\ATL__CTimeSpanDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CTrace.cpp" />
+    <ClCompile Include=".\source\ATL__CTraceCategory.cpp" />
+    <ClCompile Include=".\source\ATL__CTraceCategoryDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CTraceDetail.cpp" />
+    <ClCompile Include=".\source\ATL__CTraceFileAndLineInfo.cpp" />
+    <ClCompile Include=".\source\ATL__CTraceFileAndLineInfoDetail.cpp" />
+    <ClCompile Include=".\source\AggroCaculateData.cpp" />
+    <ClCompile Include=".\source\AggroCaculateDataDetail.cpp" />
+    <ClCompile Include=".\source\AreaData.cpp" />
+    <ClCompile Include=".\source\AreaDataDetail.cpp" />
+    <ClCompile Include=".\source\AreaList.cpp" />
+    <ClCompile Include=".\source\AreaListDetail.cpp" />
+    <ClCompile Include=".\source\Atmosphere.cpp" />
+    <ClCompile Include=".\source\AtmosphereDetail.cpp" />
+    <ClCompile Include=".\source\AutoMineMachine.cpp" />
+    <ClCompile Include=".\source\AutoMineMachineDetail.cpp" />
+    <ClCompile Include=".\source\AutoMineMachineMng.cpp" />
+    <ClCompile Include=".\source\AutoMineMachineMngDetail.cpp" />
+    <ClCompile Include=".\source\AutominePersonal.cpp" />
+    <ClCompile Include=".\source\AutominePersonalDetail.cpp" />
+    <ClCompile Include=".\source\AutominePersonalMgr.cpp" />
+    <ClCompile Include=".\source\AutominePersonalMgrDetail.cpp" />
+    <ClCompile Include=".\source\BASE_HACKSHEILD_PARAM.cpp" />
+    <ClCompile Include=".\source\BASE_HACKSHEILD_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\BNetwork.cpp" />
+    <ClCompile Include=".\source\BNetworkDetail.cpp" />
+    <ClCompile Include=".\source\BossSchedule.cpp" />
+    <ClCompile Include=".\source\BossScheduleDetail.cpp" />
+    <ClCompile Include=".\source\BossSchedule_Map.cpp" />
+    <ClCompile Include=".\source\BossSchedule_MapDetail.cpp" />
+    <ClCompile Include=".\source\BossSchedule_TBL.cpp" />
+    <ClCompile Include=".\source\BossSchedule_TBLDetail.cpp" />
+    <ClCompile Include=".\source\C24Timer.cpp" />
+    <ClCompile Include=".\source\C24TimerDetail.cpp" />
+    <ClCompile Include=".\source\CAITimer.cpp" />
+    <ClCompile Include=".\source\CAITimerDetail.cpp" />
+    <ClCompile Include=".\source\CActionPointSystemMgr.cpp" />
+    <ClCompile Include=".\source\CActionPointSystemMgrDetail.cpp" />
+    <ClCompile Include=".\source\CAggroNode.cpp" />
+    <ClCompile Include=".\source\CAggroNodeDetail.cpp" />
+    <ClCompile Include=".\source\CAlpha.cpp" />
+    <ClCompile Include=".\source\CAlphaDetail.cpp" />
+    <ClCompile Include=".\source\CAniCamera.cpp" />
+    <ClCompile Include=".\source\CAniCameraDetail.cpp" />
+    <ClCompile Include=".\source\CAnimus.cpp" />
+    <ClCompile Include=".\source\CAnimusDetail.cpp" />
+    <ClCompile Include=".\source\CAsyncLogBuffer.cpp" />
+    <ClCompile Include=".\source\CAsyncLogBufferDetail.cpp" />
+    <ClCompile Include=".\source\CAsyncLogBufferList.cpp" />
+    <ClCompile Include=".\source\CAsyncLogBufferListDetail.cpp" />
+    <ClCompile Include=".\source\CAsyncLogInfo.cpp" />
+    <ClCompile Include=".\source\CAsyncLogInfoDetail.cpp" />
+    <ClCompile Include=".\source\CAsyncLogger.cpp" />
+    <ClCompile Include=".\source\CAsyncLoggerDetail.cpp" />
+    <ClCompile Include=".\source\CAttack.cpp" />
+    <ClCompile Include=".\source\CAttackDetail.cpp" />
+    <ClCompile Include=".\source\CBattleTournamentInfo.cpp" />
+    <ClCompile Include=".\source\CBattleTournamentInfoDetail.cpp" />
+    <ClCompile Include=".\source\CBilling.cpp" />
+    <ClCompile Include=".\source\CBillingBR.cpp" />
+    <ClCompile Include=".\source\CBillingBRDetail.cpp" />
+    <ClCompile Include=".\source\CBillingCN.cpp" />
+    <ClCompile Include=".\source\CBillingCNDetail.cpp" />
+    <ClCompile Include=".\source\CBillingDetail.cpp" />
+    <ClCompile Include=".\source\CBillingID.cpp" />
+    <ClCompile Include=".\source\CBillingIDDetail.cpp" />
+    <ClCompile Include=".\source\CBillingJP.cpp" />
+    <ClCompile Include=".\source\CBillingJPDetail.cpp" />
+    <ClCompile Include=".\source\CBillingKR.cpp" />
+    <ClCompile Include=".\source\CBillingKRDetail.cpp" />
+    <ClCompile Include=".\source\CBillingManagerDetail.cpp" />
+    <ClCompile Include=".\source\CBillingNULL.cpp" />
+    <ClCompile Include=".\source\CBillingNULLDetail.cpp" />
+    <ClCompile Include=".\source\CBillingPH.cpp" />
+    <ClCompile Include=".\source\CBillingPHDetail.cpp" />
+    <ClCompile Include=".\source\CBillingRU.cpp" />
+    <ClCompile Include=".\source\CBillingRUDetail.cpp" />
+    <ClCompile Include=".\source\CBossMonsterScheduleSystemDetail.cpp" />
+    <ClCompile Include=".\source\CBsp.cpp" />
+    <ClCompile Include=".\source\CBspDetail.cpp" />
+    <ClCompile Include=".\source\CCashDBWorkManagerDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerBR.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerBRDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerCN.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerCNDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerES.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerESDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerGB.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerGBDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerID.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerIDDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerJP.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerJPDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerKR.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerKRDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerNULL.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerNULLDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerPH.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerPHDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerRU.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerRUDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerTH.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerTHDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerTW.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerTWDetail.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerUS.cpp" />
+    <ClCompile Include=".\source\CCashDbWorkerUSDetail.cpp" />
+    <ClCompile Include=".\source\CCharacter.cpp" />
+    <ClCompile Include=".\source\CCharacterDetail.cpp" />
+    <ClCompile Include=".\source\CChatStealSystem.cpp" />
+    <ClCompile Include=".\source\CChatStealSystemDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSum.cpp" />
+    <ClCompile Include=".\source\CCheckSumBaseConverter.cpp" />
+    <ClCompile Include=".\source\CCheckSumBaseConverterDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSumCharacAccountTrunkData.cpp" />
+    <ClCompile Include=".\source\CCheckSumCharacAccountTrunkDataDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSumCharacTrunkConverter.cpp" />
+    <ClCompile Include=".\source\CCheckSumCharacTrunkConverterDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSumDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSumGuildConverter.cpp" />
+    <ClCompile Include=".\source\CCheckSumGuildConverterDetail.cpp" />
+    <ClCompile Include=".\source\CCheckSumGuildData.cpp" />
+    <ClCompile Include=".\source\CCheckSumGuildDataDetail.cpp" />
+    <ClCompile Include=".\source\CChiNetworkEX.cpp" />
+    <ClCompile Include=".\source\CChiNetworkEXDetail.cpp" />
+    <ClCompile Include=".\source\CCircleZone.cpp" />
+    <ClCompile Include=".\source\CCircleZoneDetail.cpp" />
+    <ClCompile Include=".\source\CClientDC.cpp" />
+    <ClCompile Include=".\source\CClientDCDetail.cpp" />
+    <ClCompile Include=".\source\CComCtlWrapper.cpp" />
+    <ClCompile Include=".\source\CCommDlgWrapper.cpp" />
+    <ClCompile Include=".\source\CCommandLineInfo.cpp" />
+    <ClCompile Include=".\source\CCommandLineInfoDetail.cpp" />
+    <ClCompile Include=".\source\CConnNumPHMgr.cpp" />
+    <ClCompile Include=".\source\CConnNumPHMgrDetail.cpp" />
+    <ClCompile Include=".\source\CControlCreationInfo.cpp" />
+    <ClCompile Include=".\source\CCouponMgr.cpp" />
+    <ClCompile Include=".\source\CCouponMgrDetail.cpp" />
+    <ClCompile Include=".\source\CD3DApplication.cpp" />
+    <ClCompile Include=".\source\CD3DApplicationDetail.cpp" />
+    <ClCompile Include=".\source\CD3DArcBall.cpp" />
+    <ClCompile Include=".\source\CD3DArcBallDetail.cpp" />
+    <ClCompile Include=".\source\CD3DCamera.cpp" />
+    <ClCompile Include=".\source\CD3DCameraDetail.cpp" />
+    <ClCompile Include=".\source\CDarkHole.cpp" />
+    <ClCompile Include=".\source\CDarkHoleChannel.cpp" />
+    <ClCompile Include=".\source\CDarkHoleChannelDetail.cpp" />
+    <ClCompile Include=".\source\CDarkHoleDetail.cpp" />
+    <ClCompile Include=".\source\CDarkHoleDungeonQuest.cpp" />
+    <ClCompile Include=".\source\CDarkHoleDungeonQuestDetail.cpp" />
+    <ClCompile Include=".\source\CDarkHoleDungeonQuestSetup.cpp" />
+    <ClCompile Include=".\source\CDarkHoleDungeonQuestSetupDetail.cpp" />
+    <ClCompile Include=".\source\CDatabase.cpp" />
+    <ClCompile Include=".\source\CDummyPosTable.cpp" />
+    <ClCompile Include=".\source\CDummyPosTableDetail.cpp" />
+    <ClCompile Include=".\source\CEngNetworkBillEXDetail.cpp" />
+    <ClCompile Include=".\source\CEnglandBillingMgr.cpp" />
+    <ClCompile Include=".\source\CEnglandBillingMgrDetail.cpp" />
+    <ClCompile Include=".\source\CEntity.cpp" />
+    <ClCompile Include=".\source\CEntityDetail.cpp" />
+    <ClCompile Include=".\source\CEquipItemSFAgent.cpp" />
+    <ClCompile Include=".\source\CEquipItemSFAgentDetail.cpp" />
+    <ClCompile Include=".\source\CEventLootTable.cpp" />
+    <ClCompile Include=".\source\CEventLootTableDetail.cpp" />
+    <ClCompile Include=".\source\CExtDummy.cpp" />
+    <ClCompile Include=".\source\CExtDummyDetail.cpp" />
+    <ClCompile Include=".\source\CExtPotionBuf.cpp" />
+    <ClCompile Include=".\source\CExtPotionBufDetail.cpp" />
+    <ClCompile Include=".\source\CFPS.cpp" />
+    <ClCompile Include=".\source\CFPSDetail.cpp" />
+    <ClCompile Include=".\source\CFieldExchange.cpp" />
+    <ClCompile Include=".\source\CFile.cpp" />
+    <ClCompile Include=".\source\CFixedAllocNoSync.cpp" />
+    <ClCompile Include=".\source\CFrameRate.cpp" />
+    <ClCompile Include=".\source\CFrameRateDetail.cpp" />
+    <ClCompile Include=".\source\CFtpConnection.cpp" />
+    <ClCompile Include=".\source\CGameObject.cpp" />
+    <ClCompile Include=".\source\CGameObjectDetail.cpp" />
+    <ClCompile Include=".\source\CGameStatistics.cpp" />
+    <ClCompile Include=".\source\CGameStatisticsDetail.cpp" />
+    <ClCompile Include=".\source\CGdiObject.cpp" />
+    <ClCompile Include=".\source\CGdiObjectDetail.cpp" />
+    <ClCompile Include=".\source\CGoldenBoxItemMgr.cpp" />
+    <ClCompile Include=".\source\CGoldenBoxItemMgrDetail.cpp" />
+    <ClCompile Include=".\source\CGravityStone.cpp" />
+    <ClCompile Include=".\source\CGravityStoneDetail.cpp" />
+    <ClCompile Include=".\source\CGravityStoneRegener.cpp" />
+    <ClCompile Include=".\source\CGravityStoneRegenerDetail.cpp" />
+    <ClCompile Include=".\source\CGuardTower.cpp" />
+    <ClCompile Include=".\source\CGuardTowerDetail.cpp" />
+    <ClCompile Include=".\source\CGuild.cpp" />
+    <ClCompile Include=".\source\CGuildBattleController.cpp" />
+    <ClCompile Include=".\source\CGuildBattleControllerDetail.cpp" />
+    <ClCompile Include=".\source\CGuildDetail.cpp" />
+    <ClCompile Include=".\source\CGuildList.cpp" />
+    <ClCompile Include=".\source\CGuildListDetail.cpp" />
+    <ClCompile Include=".\source\CGuildMasterEffect.cpp" />
+    <ClCompile Include=".\source\CGuildMasterEffectDetail.cpp" />
+    <ClCompile Include=".\source\CGuildRanking.cpp" />
+    <ClCompile Include=".\source\CGuildRankingDetail.cpp" />
+    <ClCompile Include=".\source\CGuildRoomInfo.cpp" />
+    <ClCompile Include=".\source\CGuildRoomInfoDetail.cpp" />
+    <ClCompile Include=".\source\CGuildRoomSystem.cpp" />
+    <ClCompile Include=".\source\CGuildRoomSystemDetail.cpp" />
+    <ClCompile Include=".\source\CHEAT_COMMANDDetail.cpp" />
+    <ClCompile Include=".\source\CHackShieldExSystem.cpp" />
+    <ClCompile Include=".\source\CHackShieldExSystemDetail.cpp" />
+    <ClCompile Include=".\source\CHolyKeeper.cpp" />
+    <ClCompile Include=".\source\CHolyKeeperDetail.cpp" />
+    <ClCompile Include=".\source\CHolyScheduleData.cpp" />
+    <ClCompile Include=".\source\CHolyScheduleDataDetail.cpp" />
+    <ClCompile Include=".\source\CHolyStone.cpp" />
+    <ClCompile Include=".\source\CHolyStoneDetail.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSaveData.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSaveDataDetail.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSystem.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSystemDataMgr.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSystemDataMgrDetail.cpp" />
+    <ClCompile Include=".\source\CHolyStoneSystemDetail.cpp" />
+    <ClCompile Include=".\source\CHonorGuild.cpp" />
+    <ClCompile Include=".\source\CHonorGuildDetail.cpp" />
+    <ClCompile Include=".\source\CIndexBuffer.cpp" />
+    <ClCompile Include=".\source\CIndexBufferDetail.cpp" />
+    <ClCompile Include=".\source\CIndexList.cpp" />
+    <ClCompile Include=".\source\CIndexListDetail.cpp" />
+    <ClCompile Include=".\source\CIniFile.cpp" />
+    <ClCompile Include=".\source\CIniFileDetail.cpp" />
+    <ClCompile Include=".\source\CItemBox.cpp" />
+    <ClCompile Include=".\source\CItemBoxDetail.cpp" />
+    <ClCompile Include=".\source\CItemDropMgr.cpp" />
+    <ClCompile Include=".\source\CItemDropMgrDetail.cpp" />
+    <ClCompile Include=".\source\CItemLootTable.cpp" />
+    <ClCompile Include=".\source\CItemLootTableDetail.cpp" />
+    <ClCompile Include=".\source\CItemStore.cpp" />
+    <ClCompile Include=".\source\CItemStoreDetail.cpp" />
+    <ClCompile Include=".\source\CItemStoreManager.cpp" />
+    <ClCompile Include=".\source\CItemStoreManagerDetail.cpp" />
+    <ClCompile Include=".\source\CItemUpgradeTable.cpp" />
+    <ClCompile Include=".\source\CItemUpgradeTableDetail.cpp" />
+    <ClCompile Include=".\source\CLevel.cpp" />
+    <ClCompile Include=".\source\CLevelDetail.cpp" />
+    <ClCompile Include=".\source\CLogFile.cpp" />
+    <ClCompile Include=".\source\CLogFileDetail.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTask.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTaskDetail.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTaskManager.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTaskManagerDetail.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTaskPool.cpp" />
+    <ClCompile Include=".\source\CLogTypeDBTaskPoolDetail.cpp" />
+    <ClCompile Include=".\source\CLootingMgr.cpp" />
+    <ClCompile Include=".\source\CLootingMgrDetail.cpp" />
+    <ClCompile Include=".\source\CLuaCommand.cpp" />
+    <ClCompile Include=".\source\CLuaCommandDetail.cpp" />
+    <ClCompile Include=".\source\CLuaCommandEx.cpp" />
+    <ClCompile Include=".\source\CLuaCommandExDetail.cpp" />
+    <ClCompile Include=".\source\CLuaEventMgr.cpp" />
+    <ClCompile Include=".\source\CLuaEventMgrDetail.cpp" />
+    <ClCompile Include=".\source\CLuaEventNode.cpp" />
+    <ClCompile Include=".\source\CLuaEventNodeDetail.cpp" />
+    <ClCompile Include=".\source\CLuaLootingMgr.cpp" />
+    <ClCompile Include=".\source\CLuaLootingMgrDetail.cpp" />
+    <ClCompile Include=".\source\CLuaLooting_Novus_Item.cpp" />
+    <ClCompile Include=".\source\CLuaLooting_Novus_ItemDetail.cpp" />
+    <ClCompile Include=".\source\CLuaScript.cpp" />
+    <ClCompile Include=".\source\CLuaScriptDetail.cpp" />
+    <ClCompile Include=".\source\CLuaScriptMgr.cpp" />
+    <ClCompile Include=".\source\CLuaScriptMgrDetail.cpp" />
+    <ClCompile Include=".\source\CLuaSignalReActor.cpp" />
+    <ClCompile Include=".\source\CLuaSignalReActorDetail.cpp" />
+    <ClCompile Include=".\source\CMainThread.cpp" />
+    <ClCompile Include=".\source\CMainThreadDetail.cpp" />
+    <ClCompile Include=".\source\CMapData.cpp" />
+    <ClCompile Include=".\source\CMapDataDetail.cpp" />
+    <ClCompile Include=".\source\CMapDataTable.cpp" />
+    <ClCompile Include=".\source\CMapDataTableDetail.cpp" />
+    <ClCompile Include=".\source\CMapItemStoreList.cpp" />
+    <ClCompile Include=".\source\CMapItemStoreListDetail.cpp" />
+    <ClCompile Include=".\source\CMapOperation.cpp" />
+    <ClCompile Include=".\source\CMapOperationDetail.cpp" />
+    <ClCompile Include=".\source\CMapPtrToPtr.cpp" />
+    <ClCompile Include=".\source\CMapPtrToWord.cpp" />
+    <ClCompile Include=".\source\CMapStringToOb.cpp" />
+    <ClCompile Include=".\source\CMapStringToPtr.cpp" />
+    <ClCompile Include=".\source\CMapStringToString.cpp" />
+    <ClCompile Include=".\source\CMapWordToOb.cpp" />
+    <ClCompile Include=".\source\CMapWordToPtr.cpp" />
+    <ClCompile Include=".\source\CMemoryState.cpp" />
+    <ClCompile Include=".\source\CMerchant.cpp" />
+    <ClCompile Include=".\source\CMerchantDetail.cpp" />
+    <ClCompile Include=".\source\CMergeFile.cpp" />
+    <ClCompile Include=".\source\CMergeFileDetail.cpp" />
+    <ClCompile Include=".\source\CMergeFileManager.cpp" />
+    <ClCompile Include=".\source\CMergeFileManagerDetail.cpp" />
+    <ClCompile Include=".\source\CMgrAccountLobbyHistory.cpp" />
+    <ClCompile Include=".\source\CMgrAccountLobbyHistoryDetail.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorItemHistory.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorItemHistoryDetail.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorLvHistory.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorLvHistoryDetail.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorQuestHistory.cpp" />
+    <ClCompile Include=".\source\CMgrAvatorQuestHistoryDetail.cpp" />
+    <ClCompile Include=".\source\CMgrGuildHistory.cpp" />
+    <ClCompile Include=".\source\CMgrGuildHistoryDetail.cpp" />
+    <ClCompile Include=".\source\CMoneySupplyMgr.cpp" />
+    <ClCompile Include=".\source\CMoneySupplyMgrDetail.cpp" />
+    <ClCompile Include=".\source\CMonster.cpp" />
+    <ClCompile Include=".\source\CMonsterAI.cpp" />
+    <ClCompile Include=".\source\CMonsterAIDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterAggroMgr.cpp" />
+    <ClCompile Include=".\source\CMonsterAggroMgrDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterAttack.cpp" />
+    <ClCompile Include=".\source\CMonsterAttackDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterEventRespawn.cpp" />
+    <ClCompile Include=".\source\CMonsterEventRespawnDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterEventSet.cpp" />
+    <ClCompile Include=".\source\CMonsterEventSetDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterHelper.cpp" />
+    <ClCompile Include=".\source\CMonsterHelperDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterHierarchy.cpp" />
+    <ClCompile Include=".\source\CMonsterHierarchyDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterSPGroupTable.cpp" />
+    <ClCompile Include=".\source\CMonsterSPGroupTableDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterSkill.cpp" />
+    <ClCompile Include=".\source\CMonsterSkillDetail.cpp" />
+    <ClCompile Include=".\source\CMonsterSkillPool.cpp" />
+    <ClCompile Include=".\source\CMonsterSkillPoolDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitEnviromentValues.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitEnviromentValuesDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfo.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfoDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfoList.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfoListDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfoPortal.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitInfoPortalDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitManager.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitManagerDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRight.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightInfo.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightInfoDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightInfoList.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightInfoListDetail.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightPortal.cpp" />
+    <ClCompile Include=".\source\CMoveMapLimitRightPortalDetail.cpp" />
+    <ClCompile Include=".\source\CMsgData.cpp" />
+    <ClCompile Include=".\source\CMsgDataDetail.cpp" />
+    <ClCompile Include=".\source\CMsgProcess.cpp" />
+    <ClCompile Include=".\source\CMsgProcessDetail.cpp" />
+    <ClCompile Include=".\source\CMyCriticalSection.cpp" />
+    <ClCompile Include=".\source\CMyCriticalSectionDetail.cpp" />
+    <ClCompile Include=".\source\CMyTimer.cpp" />
+    <ClCompile Include=".\source\CMyTimerDetail.cpp" />
+    <ClCompile Include=".\source\CNationCodeStr.cpp" />
+    <ClCompile Include=".\source\CNationCodeStrDetail.cpp" />
+    <ClCompile Include=".\source\CNationCodeStrTable.cpp" />
+    <ClCompile Include=".\source\CNationCodeStrTableDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingData.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataBR.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataBRDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataCN.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataCNDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataES.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataESDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataGB.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataGBDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataID.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataIDDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataJP.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataJPDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataKR.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataKRDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataNULL.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataNULLDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataPH.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataPHDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataRU.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataRUDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataTH.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataTHDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataTW.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataTWDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataUS.cpp" />
+    <ClCompile Include=".\source\CNationSettingDataUSDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactory.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryBR.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryBRDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryCN.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryCNDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryES.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryESDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryGB.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryGBDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryGroup.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryGroupDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryID.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryIDDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryJP.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryJPDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryKR.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryKRDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryPH.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryPHDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryRU.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryRUDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryTH.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryTHDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryTW.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryTWDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryUS.cpp" />
+    <ClCompile Include=".\source\CNationSettingFactoryUSDetail.cpp" />
+    <ClCompile Include=".\source\CNationSettingManagerDetail.cpp" />
+    <ClCompile Include=".\source\CNetCriticalSection.cpp" />
+    <ClCompile Include=".\source\CNetCriticalSectionDetail.cpp" />
+    <ClCompile Include=".\source\CNetFrameRate.cpp" />
+    <ClCompile Include=".\source\CNetFrameRateDetail.cpp" />
+    <ClCompile Include=".\source\CNetIndexList.cpp" />
+    <ClCompile Include=".\source\CNetIndexListDetail.cpp" />
+    <ClCompile Include=".\source\CNetProcess.cpp" />
+    <ClCompile Include=".\source\CNetProcessDetail.cpp" />
+    <ClCompile Include=".\source\CNetSocket.cpp" />
+    <ClCompile Include=".\source\CNetSocketDetail.cpp" />
+    <ClCompile Include=".\source\CNetTimer.cpp" />
+    <ClCompile Include=".\source\CNetTimerDetail.cpp" />
+    <ClCompile Include=".\source\CNetWorking.cpp" />
+    <ClCompile Include=".\source\CNetWorkingDetail.cpp" />
+    <ClCompile Include=".\source\CNetwork.cpp" />
+    <ClCompile Include=".\source\CNetworkDetail.cpp" />
+    <ClCompile Include=".\source\CNetworkEX.cpp" />
+    <ClCompile Include=".\source\CNetworkEXDetail.cpp" />
+    <ClCompile Include=".\source\CNotifyNotifyRaceLeaderSownerUTaxrate.cpp" />
+    <ClCompile Include=".\source\CNotifyNotifyRaceLeaderSownerUTaxrateDetail.cpp" />
+    <ClCompile Include=".\source\CNuclearBomb.cpp" />
+    <ClCompile Include=".\source\CNuclearBombDetail.cpp" />
+    <ClCompile Include=".\source\CNuclearBombMgr.cpp" />
+    <ClCompile Include=".\source\CNuclearBombMgrDetail.cpp" />
+    <ClCompile Include=".\source\CObList.cpp" />
+    <ClCompile Include=".\source\CObject.cpp" />
+    <ClCompile Include=".\source\CObjectDetail.cpp" />
+    <ClCompile Include=".\source\CObjectList.cpp" />
+    <ClCompile Include=".\source\CObjectListDetail.cpp" />
+    <ClCompile Include=".\source\COreAmountMgr.cpp" />
+    <ClCompile Include=".\source\COreAmountMgrDetail.cpp" />
+    <ClCompile Include=".\source\COreCuttingTable.cpp" />
+    <ClCompile Include=".\source\COreCuttingTableDetail.cpp" />
+    <ClCompile Include=".\source\CPaintDC.cpp" />
+    <ClCompile Include=".\source\CPaintDCDetail.cpp" />
+    <ClCompile Include=".\source\CParkingUnit.cpp" />
+    <ClCompile Include=".\source\CParkingUnitDetail.cpp" />
+    <ClCompile Include=".\source\CParticle.cpp" />
+    <ClCompile Include=".\source\CParticleDetail.cpp" />
+    <ClCompile Include=".\source\CPartyModeKillMonsterExpNotify.cpp" />
+    <ClCompile Include=".\source\CPartyModeKillMonsterExpNotifyDetail.cpp" />
+    <ClCompile Include=".\source\CPartyPlayer.cpp" />
+    <ClCompile Include=".\source\CPartyPlayerDetail.cpp" />
+    <ClCompile Include=".\source\CPathFinder.cpp" />
+    <ClCompile Include=".\source\CPathFinderDetail.cpp" />
+    <ClCompile Include=".\source\CPathMgr.cpp" />
+    <ClCompile Include=".\source\CPathMgrDetail.cpp" />
+    <ClCompile Include=".\source\CPcBangFavor.cpp" />
+    <ClCompile Include=".\source\CPcBangFavorDetail.cpp" />
+    <ClCompile Include=".\source\CPlayMP3.cpp" />
+    <ClCompile Include=".\source\CPlayMP3Detail.cpp" />
+    <ClCompile Include=".\source\CPlayer.cpp" />
+    <ClCompile Include=".\source\CPlayerAttack.cpp" />
+    <ClCompile Include=".\source\CPlayerAttackDetail.cpp" />
+    <ClCompile Include=".\source\CPlayerDB.cpp" />
+    <ClCompile Include=".\source\CPlayerDBDetail.cpp" />
+    <ClCompile Include=".\source\CPlayerDetail.cpp" />
+    <ClCompile Include=".\source\CPoint.cpp" />
+    <ClCompile Include=".\source\CPointDetail.cpp" />
+    <ClCompile Include=".\source\CPostData.cpp" />
+    <ClCompile Include=".\source\CPostDataDetail.cpp" />
+    <ClCompile Include=".\source\CPostReturnStorage.cpp" />
+    <ClCompile Include=".\source\CPostReturnStorageDetail.cpp" />
+    <ClCompile Include=".\source\CPostStorage.cpp" />
+    <ClCompile Include=".\source\CPostStorageDetail.cpp" />
+    <ClCompile Include=".\source\CPostSystemManager.cpp" />
+    <ClCompile Include=".\source\CPostSystemManagerDetail.cpp" />
+    <ClCompile Include=".\source\CPotionMgr.cpp" />
+    <ClCompile Include=".\source\CPotionMgrDetail.cpp" />
+    <ClCompile Include=".\source\CPotionParam.cpp" />
+    <ClCompile Include=".\source\CPotionParamDetail.cpp" />
+    <ClCompile Include=".\source\CPtrList.cpp" />
+    <ClCompile Include=".\source\CPvpCashMng.cpp" />
+    <ClCompile Include=".\source\CPvpCashMngDetail.cpp" />
+    <ClCompile Include=".\source\CPvpCashPoint.cpp" />
+    <ClCompile Include=".\source\CPvpCashPointDetail.cpp" />
+    <ClCompile Include=".\source\CPvpOrderView.cpp" />
+    <ClCompile Include=".\source\CPvpOrderViewDetail.cpp" />
+    <ClCompile Include=".\source\CPvpPointLimiter.cpp" />
+    <ClCompile Include=".\source\CPvpPointLimiterDetail.cpp" />
+    <ClCompile Include=".\source\CPvpUserAndGuildRankingSystem.cpp" />
+    <ClCompile Include=".\source\CPvpUserAndGuildRankingSystemDetail.cpp" />
+    <ClCompile Include=".\source\CPvpUserRankingInfo.cpp" />
+    <ClCompile Include=".\source\CPvpUserRankingInfoDetail.cpp" />
+    <ClCompile Include=".\source\CPvpUserRankingTargetUserList.cpp" />
+    <ClCompile Include=".\source\CPvpUserRankingTargetUserListDetail.cpp" />
+    <ClCompile Include=".\source\CQuestMgr.cpp" />
+    <ClCompile Include=".\source\CQuestMgrDetail.cpp" />
+    <ClCompile Include=".\source\CR3Font.cpp" />
+    <ClCompile Include=".\source\CR3FontDetail.cpp" />
+    <ClCompile Include=".\source\CRFCashItemDatabase.cpp" />
+    <ClCompile Include=".\source\CRFCashItemDatabaseDetail.cpp" />
+    <ClCompile Include=".\source\CRFDBItemLog.cpp" />
+    <ClCompile Include=".\source\CRFDBItemLogDetail.cpp" />
+    <ClCompile Include=".\source\CRFMonsterAIMgr.cpp" />
+    <ClCompile Include=".\source\CRFMonsterAIMgrDetail.cpp" />
+    <ClCompile Include=".\source\CRFNewDatabase.cpp" />
+    <ClCompile Include=".\source\CRFNewDatabaseDetail.cpp" />
+    <ClCompile Include=".\source\CRFWorldDatabase.cpp" />
+    <ClCompile Include=".\source\CRFWorldDatabaseDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBossMsgController.cpp" />
+    <ClCompile Include=".\source\CRaceBossMsgControllerDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBossWinRate.cpp" />
+    <ClCompile Include=".\source\CRaceBossWinRateDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffByHolyQuestProcedure.cpp" />
+    <ClCompile Include=".\source\CRaceBuffByHolyQuestProcedureDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffHolyQuestResultInfo.cpp" />
+    <ClCompile Include=".\source\CRaceBuffHolyQuestResultInfoDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuest.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuestDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuestList.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuestListDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuestfGroup.cpp" />
+    <ClCompile Include=".\source\CRaceBuffInfoByHolyQuestfGroupDetail.cpp" />
+    <ClCompile Include=".\source\CRaceBuffManager.cpp" />
+    <ClCompile Include=".\source\CRaceBuffManagerDetail.cpp" />
+    <ClCompile Include=".\source\CRadarItemMgr.cpp" />
+    <ClCompile Include=".\source\CRadarItemMgrDetail.cpp" />
+    <ClCompile Include=".\source\CRealMoveRequestDelayChecker.cpp" />
+    <ClCompile Include=".\source\CRealMoveRequestDelayCheckerDetail.cpp" />
+    <ClCompile Include=".\source\CRecallEffectController.cpp" />
+    <ClCompile Include=".\source\CRecallEffectControllerDetail.cpp" />
+    <ClCompile Include=".\source\CRecallRequest.cpp" />
+    <ClCompile Include=".\source\CRecallRequestDetail.cpp" />
+    <ClCompile Include=".\source\CRecordData.cpp" />
+    <ClCompile Include=".\source\CRecordDataDetail.cpp" />
+    <ClCompile Include=".\source\CRecordset.cpp" />
+    <ClCompile Include=".\source\CRect.cpp" />
+    <ClCompile Include=".\source\CRectDetail.cpp" />
+    <ClCompile Include=".\source\CRectTracker.cpp" />
+    <ClCompile Include=".\source\CReturnGate.cpp" />
+    <ClCompile Include=".\source\CReturnGateController.cpp" />
+    <ClCompile Include=".\source\CReturnGateControllerDetail.cpp" />
+    <ClCompile Include=".\source\CReturnGateCreateParam.cpp" />
+    <ClCompile Include=".\source\CReturnGateCreateParamDetail.cpp" />
+    <ClCompile Include=".\source\CReturnGateDetail.cpp" />
+    <ClCompile Include=".\source\CRusiaBillingMgr.cpp" />
+    <ClCompile Include=".\source\CRusiaBillingMgrDetail.cpp" />
+    <ClCompile Include=".\source\CSUItemSystem.cpp" />
+    <ClCompile Include=".\source\CSUItemSystemDetail.cpp" />
+    <ClCompile Include=".\source\CSetItemEffect.cpp" />
+    <ClCompile Include=".\source\CSetItemEffectDetail.cpp" />
+    <ClCompile Include=".\source\CSetItemType.cpp" />
+    <ClCompile Include=".\source\CSetItemTypeDetail.cpp" />
+    <ClCompile Include=".\source\CSize.cpp" />
+    <ClCompile Include=".\source\CSizeDetail.cpp" />
+    <ClCompile Include=".\source\CSkyBox.cpp" />
+    <ClCompile Include=".\source\CSkyBoxDetail.cpp" />
+    <ClCompile Include=".\source\CStringList.cpp" />
+    <ClCompile Include=".\source\CSyncCS.cpp" />
+    <ClCompile Include=".\source\CSyncCSDetail.cpp" />
+    <ClCompile Include=".\source\CTakeOut.cpp" />
+    <ClCompile Include=".\source\CTakeOutDetail.cpp" />
+    <ClCompile Include=".\source\CTalkCrystalCombineManager.cpp" />
+    <ClCompile Include=".\source\CTalkCrystalCombineManagerDetail.cpp" />
+    <ClCompile Include=".\source\CTerm.cpp" />
+    <ClCompile Include=".\source\CTermDetail.cpp" />
+    <ClCompile Include=".\source\CTextureRender.cpp" />
+    <ClCompile Include=".\source\CTextureRenderDetail.cpp" />
+    <ClCompile Include=".\source\CTimer.cpp" />
+    <ClCompile Include=".\source\CTimerDetail.cpp" />
+    <ClCompile Include=".\source\CToolCollisionFace.cpp" />
+    <ClCompile Include=".\source\CToolCollisionFaceDetail.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankInfo.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankInfoDetail.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankManager.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankManagerDetail.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankRecord.cpp" />
+    <ClCompile Include=".\source\CTotalGuildRankRecordDetail.cpp" />
+    <ClCompile Include=".\source\CTransportShip.cpp" />
+    <ClCompile Include=".\source\CTransportShipDetail.cpp" />
+    <ClCompile Include=".\source\CTrap.cpp" />
+    <ClCompile Include=".\source\CTrapDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoFactory.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoFactoryDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoTableCodeType.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoTableCodeTypeDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoTableType.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderClassInfoTableTypeDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderController.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderControllerDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderDivisionInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderDivisionInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupDivisionVersionInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupDivisionVersionInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupIDInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupIDInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupItemInfoTable.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupItemInfoTableDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupVersionInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderGroupVersionInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderItemCodeInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderItemCodeInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderItemState.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderItemStateDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderLazyCleaner.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderLazyCleanerDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderRegistItemInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderRegistItemInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderRequestLimiter.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderRequestLimiterDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSchedule.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderScheduleDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderScheduler.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSchedulerDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSortType.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSortTypeDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassFactory.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassFactoryDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoCode.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoCodeDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoDefault.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoDefaultDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoForceLiverGrade.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoForceLiverGradeDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoLevel.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderSubClassInfoLevelDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderTaxRateManager.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderTaxRateManagerDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderTradeInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderTradeInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderUserInfo.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderUserInfoDetail.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderUserInfoTable.cpp" />
+    <ClCompile Include=".\source\CUnmannedTraderUserInfoTableDetail.cpp" />
+    <ClCompile Include=".\source\CUserDB.cpp" />
+    <ClCompile Include=".\source\CUserDBDetail.cpp" />
+    <ClCompile Include=".\source\CUserRankingProcess.cpp" />
+    <ClCompile Include=".\source\CUserRankingProcessDetail.cpp" />
+    <ClCompile Include=".\source\CVertexBuffer.cpp" />
+    <ClCompile Include=".\source\CVertexBufferDetail.cpp" />
+    <ClCompile Include=".\source\CVoteSystem.cpp" />
+    <ClCompile Include=".\source\CVoteSystemDetail.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankInfo.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankInfoDetail.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankManager.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankManagerDetail.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankOwnerInfo.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankOwnerInfoDetail.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankRecord.cpp" />
+    <ClCompile Include=".\source\CWeeklyGuildRankRecordDetail.cpp" />
+    <ClCompile Include=".\source\CWorldSchedule.cpp" />
+    <ClCompile Include=".\source\CWorldScheduleDetail.cpp" />
+    <ClCompile Include=".\source\CandidateMgr.cpp" />
+    <ClCompile Include=".\source\CandidateMgrDetail.cpp" />
+    <ClCompile Include=".\source\CandidateRegister.cpp" />
+    <ClCompile Include=".\source\CandidateRegisterDetail.cpp" />
+    <ClCompile Include=".\source\CashDbWorker.cpp" />
+    <ClCompile Include=".\source\CashDbWorkerDetail.cpp" />
+    <ClCompile Include=".\source\CashItemRemoteStore.cpp" />
+    <ClCompile Include=".\source\CashItemRemoteStoreDetail.cpp" />
+    <ClCompile Include=".\source\ClassOrderProcessor.cpp" />
+    <ClCompile Include=".\source\ClassOrderProcessorDetail.cpp" />
+    <ClCompile Include=".\source\ControllerTaxRate.cpp" />
+    <ClCompile Include=".\source\ControllerTaxRateDetail.cpp" />
+    <ClCompile Include=".\source\D3DXVECTOR2.cpp" />
+    <ClCompile Include=".\source\D3DXVECTOR2Detail.cpp" />
+    <ClCompile Include=".\source\Define_the_symbol__ATL_MIXED__Thank_you.cpp" />
+    <ClCompile Include=".\source\Define_the_symbol__ATL_MIXED__Thank_youDetail.cpp" />
+    <ClCompile Include=".\source\DfAIMgr.cpp" />
+    <ClCompile Include=".\source\DfAIMgrDetail.cpp" />
+    <ClCompile Include=".\source\DnBuffNode.cpp" />
+    <ClCompile Include=".\source\DnBuffNodeDetail.cpp" />
+    <ClCompile Include=".\source\EHExceptionRecord.cpp" />
+    <ClCompile Include=".\source\ElectProcessor.cpp" />
+    <ClCompile Include=".\source\ElectProcessorDetail.cpp" />
+    <ClCompile Include=".\source\EmotionPresentationChecker.cpp" />
+    <ClCompile Include=".\source\EmotionPresentationCheckerDetail.cpp" />
+    <ClCompile Include=".\source\FONT2DVERTEX.cpp" />
+    <ClCompile Include=".\source\FONT2DVERTEXDetail.cpp" />
+    <ClCompile Include=".\source\FinalDecisionApplyer.cpp" />
+    <ClCompile Include=".\source\FinalDecisionApplyerDetail.cpp" />
+    <ClCompile Include=".\source\FinalDecisionProcessor.cpp" />
+    <ClCompile Include=".\source\FinalDecisionProcessorDetail.cpp" />
+    <ClCompile Include=".\source\GMCallMgr.cpp" />
+    <ClCompile Include=".\source\GMCallMgrDetail.cpp" />
+    <ClCompile Include=".\source\GMRequestData.cpp" />
+    <ClCompile Include=".\source\GMRequestDataDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CCurrentGuildBattleInfoManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CCurrentGuildBattleInfoManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattle.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleLogger.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleLoggerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRankManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRankManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedSchedule.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedScheduleDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedScheduleListManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedScheduleListManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedScheduleMapGroup.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleReservedScheduleMapGroupDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRewardItem.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRewardItemDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRewardItemManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleRewardItemManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleSchedule.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleScheduleDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleScheduleManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleScheduleManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleSchedulePool.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleSchedulePoolDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleScheduler.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleSchedulerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleState.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleStateDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleStateList.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CGuildBattleStateListDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattle.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleField.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleFieldDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleFieldList.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleFieldListDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleGuild.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleGuildDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleGuildMember.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleGuildMemberDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleLogger.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleLoggerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleState.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateCountDown.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateCountDownDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateDivide.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateDivideDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateFin.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateFinDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateInBattle.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateInBattleDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateList.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateListDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateListPool.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateListPoolDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateNotify.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateNotifyDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateReady.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateReadyDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateReturn.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateReturnDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRound.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundList.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundListDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundProcess.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundProcessDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPos.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundReturnStartPosDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundStart.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CNormalGuildBattleStateRoundStartDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CPossibleBattleGuildListManager.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CPossibleBattleGuildListManagerDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildScheduleDayGroup.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildScheduleDayGroupDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildScheduleMapGroup.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildScheduleMapGroupDetail.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildSchedulePage.cpp" />
+    <ClCompile Include=".\source\GUILD_BATTLE__CReservedGuildSchedulePageDetail.cpp" />
+    <ClCompile Include=".\source\Global.cpp" />
+    <ClCompile Include=".\source\Global__GlobalDetail.cpp" />
+    <ClCompile Include=".\source\GuildCreateEventInfo.cpp" />
+    <ClCompile Include=".\source\GuildCreateEventInfoDetail.cpp" />
+    <ClCompile Include=".\source\HACKSHEILD_PARAM_ANTICP.cpp" />
+    <ClCompile Include=".\source\HACKSHEILD_PARAM_ANTICPDetail.cpp" />
+    <ClCompile Include=".\source\ICsSendInterface.cpp" />
+    <ClCompile Include=".\source\ICsSendInterfaceDetail.cpp" />
+    <ClCompile Include=".\source\INI_Key.cpp" />
+    <ClCompile Include=".\source\INI_KeyDetail.cpp" />
+    <ClCompile Include=".\source\INI_Section.cpp" />
+    <ClCompile Include=".\source\INI_SectionDetail.cpp" />
+    <ClCompile Include=".\source\INationGameGuardSystem.cpp" />
+    <ClCompile Include=".\source\INationGameGuardSystemDetail.cpp" />
+    <ClCompile Include=".\source\ItemCombineMgr.cpp" />
+    <ClCompile Include=".\source\ItemCombineMgrDetail.cpp" />
+    <ClCompile Include=".\source\LendItemMng.cpp" />
+    <ClCompile Include=".\source\LendItemMngDetail.cpp" />
+    <ClCompile Include=".\source\LendItemSheet.cpp" />
+    <ClCompile Include=".\source\LendItemSheetDetail.cpp" />
+    <ClCompile Include=".\source\LtdWriter.cpp" />
+    <ClCompile Include=".\source\LtdWriterDetail.cpp" />
+    <ClCompile Include=".\source\LuaParam3.cpp" />
+    <ClCompile Include=".\source\LuaParam3Detail.cpp" />
+    <ClCompile Include=".\source\MD5.cpp" />
+    <ClCompile Include=".\source\MD5Detail.cpp" />
+    <ClCompile Include=".\source\MiningTicket.cpp" />
+    <ClCompile Include=".\source\MiningTicketDetail.cpp" />
+    <ClCompile Include=".\source\MonsterSFContDamageToleracne.cpp" />
+    <ClCompile Include=".\source\MonsterSFContDamageToleracneDetail.cpp" />
+    <ClCompile Include=".\source\MonsterSetInfoData.cpp" />
+    <ClCompile Include=".\source\MonsterSetInfoDataDetail.cpp" />
+    <ClCompile Include=".\source\MonsterStateData.cpp" />
+    <ClCompile Include=".\source\MonsterStateDataDetail.cpp" />
+    <ClCompile Include=".\source\MyTimer.cpp" />
+    <ClCompile Include=".\source\MyTimerDetail.cpp" />
+    <ClCompile Include=".\source\PatriarchElectProcessor.cpp" />
+    <ClCompile Include=".\source\PatriarchElectProcessorDetail.cpp" />
+    <ClCompile Include=".\source\Player_TL_Status.cpp" />
+    <ClCompile Include=".\source\Player_TL_StatusDetail.cpp" />
+    <ClCompile Include=".\source\PotionInnerData.cpp" />
+    <ClCompile Include=".\source\PotionInnerDataDetail.cpp" />
+    <ClCompile Include=".\source\R3Camera.cpp" />
+    <ClCompile Include=".\source\R3CameraDetail.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsg.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsgDetail.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsgList.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsgListDetail.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsgListManager.cpp" />
+    <ClCompile Include=".\source\RACE_BOSS_MSG__CMsgListManagerDetail.cpp" />
+    <ClCompile Include=".\source\RECV_DATA.cpp" />
+    <ClCompile Include=".\source\RECV_DATADetail.cpp" />
+    <ClCompile Include=".\source\RFEventBase.cpp" />
+    <ClCompile Include=".\source\RFEventBaseDetail.cpp" />
+    <ClCompile Include=".\source\RFEvent_ClassRefine.cpp" />
+    <ClCompile Include=".\source\RFEvent_ClassRefineDetail.cpp" />
+    <ClCompile Include=".\source\Request_Buy_Item.cpp" />
+    <ClCompile Include=".\source\Request_Buy_ItemDetail.cpp" />
+    <ClCompile Include=".\source\Request_Remain_Cash.cpp" />
+    <ClCompile Include=".\source\Request_Remain_CashDetail.cpp" />
+    <ClCompile Include=".\source\SF_Timer.cpp" />
+    <ClCompile Include=".\source\SF_TimerDetail.cpp" />
+    <ClCompile Include=".\source\SKILL.cpp" />
+    <ClCompile Include=".\source\SKILLDetail.cpp" />
+    <ClCompile Include=".\source\ScheduleMSG.cpp" />
+    <ClCompile Include=".\source\ScheduleMSGDetail.cpp" />
+    <ClCompile Include=".\source\SecondCandidateCrystallizer.cpp" />
+    <ClCompile Include=".\source\SecondCandidateCrystallizerDetail.cpp" />
+    <ClCompile Include=".\source\Sky.cpp" />
+    <ClCompile Include=".\source\SkyDetail.cpp" />
+    <ClCompile Include=".\source\Sun.cpp" />
+    <ClCompile Include=".\source\SunDetail.cpp" />
+    <ClCompile Include=".\source\TRC_AutoTrade.cpp" />
+    <ClCompile Include=".\source\TRC_AutoTradeDetail.cpp" />
+    <ClCompile Include=".\source\Task.cpp" />
+    <ClCompile Include=".\source\TaskDetail.cpp" />
+    <ClCompile Include=".\source\TaskPool.cpp" />
+    <ClCompile Include=".\source\TaskPoolDetail.cpp" />
+    <ClCompile Include=".\source\TimeItem.cpp" />
+    <ClCompile Include=".\source\TimeItemDetail.cpp" />
+    <ClCompile Include=".\source\TimeLimitJade.cpp" />
+    <ClCompile Include=".\source\TimeLimitJadeDetail.cpp" />
+    <ClCompile Include=".\source\TimeLimitJadeMng.cpp" />
+    <ClCompile Include=".\source\TimeLimitJadeMngDetail.cpp" />
+    <ClCompile Include=".\source\TimeLimitMgr.cpp" />
+    <ClCompile Include=".\source\TimeLimitMgrDetail.cpp" />
+    <ClCompile Include=".\source\TournamentWinner.cpp" />
+    <ClCompile Include=".\source\TournamentWinnerDetail.cpp" />
+    <ClCompile Include=".\source\UIDGenerator.cpp" />
+    <ClCompile Include=".\source\UIDGeneratorDetail.cpp" />
+    <ClCompile Include=".\source\ULI.cpp" />
+    <ClCompile Include=".\source\ULIDetail.cpp" />
+    <ClCompile Include=".\source\US__AbstractThread.cpp" />
+    <ClCompile Include=".\source\US__AbstractThreadDetail.cpp" />
+    <ClCompile Include=".\source\US__CNoneCopyAble.cpp" />
+    <ClCompile Include=".\source\US__CNoneCopyAbleDetail.cpp" />
+    <ClCompile Include=".\source\US__CriticalSection.cpp" />
+    <ClCompile Include=".\source\US__CriticalSectionDetail.cpp" />
+    <ClCompile Include=".\source\UsRefObject.cpp" />
+    <ClCompile Include=".\source\UsRefObjectDetail.cpp" />
+    <ClCompile Include=".\source\UsStateTBL.cpp" />
+    <ClCompile Include=".\source\UsStateTBLDetail.cpp" />
+    <ClCompile Include=".\source\Us_FSM_Node.cpp" />
+    <ClCompile Include=".\source\Us_FSM_NodeDetail.cpp" />
+    <ClCompile Include=".\source\Us_HFSM.cpp" />
+    <ClCompile Include=".\source\Us_HFSMDetail.cpp" />
+    <ClCompile Include=".\source\Voter.cpp" />
+    <ClCompile Include=".\source\VoterDetail.cpp" />
+    <ClCompile Include=".\source\WheatyExceptionReport.cpp" />
+    <ClCompile Include=".\source\WheatyExceptionReportDetail.cpp" />
+    <ClCompile Include=".\source\Worker.cpp" />
+    <ClCompile Include=".\source\WorkerDetail.cpp" />
+    <ClCompile Include=".\source\_100_per_random_table.cpp" />
+    <ClCompile Include=".\source\_100_per_random_tableDetail.cpp" />
+    <ClCompile Include=".\source\_AFX_OCC_DIALOG_INFO.cpp" />
+    <ClCompile Include=".\source\_AIOC_A_MACRODATA.cpp" />
+    <ClCompile Include=".\source\_ANIMUSKEY.cpp" />
+    <ClCompile Include=".\source\_ANIMUSKEYDetail.cpp" />
+    <ClCompile Include=".\source\_ANIMUS_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_ANIMUS_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_ANIMUS_RETURN_DELAY.cpp" />
+    <ClCompile Include=".\source\_ANIMUS_RETURN_DELAYDetail.cpp" />
+    <ClCompile Include=".\source\_ATTACK_DELAY_CHECKER.cpp" />
+    <ClCompile Include=".\source\_ATTACK_DELAY_CHECKERDetail.cpp" />
+    <ClCompile Include=".\source\_AUTOMINE_SLOT.cpp" />
+    <ClCompile Include=".\source\_AUTOMINE_SLOTDetail.cpp" />
+    <ClCompile Include=".\source\_AVATOR_DATA.cpp" />
+    <ClCompile Include=".\source\_AVATOR_DATADetail.cpp" />
+    <ClCompile Include=".\source\_AVATOR_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_AVATOR_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_BILLING_FORCE_CLOSE_DELAY.cpp" />
+    <ClCompile Include=".\source\_BILLING_FORCE_CLOSE_DELAYDetail.cpp" />
+    <ClCompile Include=".\source\_BILLING_INFO.cpp" />
+    <ClCompile Include=".\source\_BILLING_INFODetail.cpp" />
+    <ClCompile Include=".\source\_BUDDY_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_BUDDY_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_BUDDY_LIST.cpp" />
+    <ClCompile Include=".\source\_BUDDY_LISTDetail.cpp" />
+    <ClCompile Include=".\source\_COMBINEKEY.cpp" />
+    <ClCompile Include=".\source\_COMBINEKEYDetail.cpp" />
+    <ClCompile Include=".\source\_CRYMSG_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_CRYMSG_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_CRYMSG_LIST.cpp" />
+    <ClCompile Include=".\source\_CRYMSG_LISTDetail.cpp" />
+    <ClCompile Include=".\source\_CUTTING_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_CUTTING_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_ChatStealTargetInfo.cpp" />
+    <ClCompile Include=".\source\_ChatStealTargetInfoDetail.cpp" />
+    <ClCompile Include=".\source\_CheckPotion_fld.cpp" />
+    <ClCompile Include=".\source\_ContPotionData.cpp" />
+    <ClCompile Include=".\source\_ContPotionDataDetail.cpp" />
+    <ClCompile Include=".\source\_DB_LOAD_AUTOMINE_MACHINE.cpp" />
+    <ClCompile Include=".\source\_DB_LOAD_AUTOMINE_MACHINEDetail.cpp" />
+    <ClCompile Include=".\source\_DB_QRY_SYN_DATA.cpp" />
+    <ClCompile Include=".\source\_DB_QRY_SYN_DATADetail.cpp" />
+    <ClCompile Include=".\source\_DELAY_PROCESS.cpp" />
+    <ClCompile Include=".\source\_DELAY_PROCESSDetail.cpp" />
+    <ClCompile Include=".\source\_DELPOST_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_DELPOST_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_DTRADE_ITEM.cpp" />
+    <ClCompile Include=".\source\_DTRADE_ITEMDetail.cpp" />
+    <ClCompile Include=".\source\_DTRADE_PARAM.cpp" />
+    <ClCompile Include=".\source\_DTRADE_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_DropItemGroupInfo.cpp" />
+    <ClCompile Include=".\source\_ECONOMY_SYSTEM.cpp" />
+    <ClCompile Include=".\source\_ECONOMY_SYSTEMDetail.cpp" />
+    <ClCompile Include=".\source\_EMBELLKEY.cpp" />
+    <ClCompile Include=".\source\_EMBELLKEYDetail.cpp" />
+    <ClCompile Include=".\source\_EQUIPKEY.cpp" />
+    <ClCompile Include=".\source\_EQUIPKEYDetail.cpp" />
+    <ClCompile Include=".\source\_EQUIP_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_EQUIP_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_Exttrunk_db_load.cpp" />
+    <ClCompile Include=".\source\_Exttrunk_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_FORCEKEY.cpp" />
+    <ClCompile Include=".\source\_FORCEKEYDetail.cpp" />
+    <ClCompile Include=".\source\_FORCE_CLOSE.cpp" />
+    <ClCompile Include=".\source\_FORCE_CLOSEDetail.cpp" />
+    <ClCompile Include=".\source\_FORCE_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_FORCE_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_GDI_NONREMOTE.cpp" />
+    <ClCompile Include=".\source\_GDI_OBJECT.cpp" />
+    <ClCompile Include=".\source\_GuardTowerItem_fld.cpp" />
+    <ClCompile Include=".\source\_INVENKEY.cpp" />
+    <ClCompile Include=".\source\_INVENKEYDetail.cpp" />
+    <ClCompile Include=".\source\_INVEN_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_INVEN_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_ITEMCOMBINE_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_ITEMCOMBINE_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_Init_action_point_zocl.cpp" />
+    <ClCompile Include=".\source\_Init_action_point_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_ItemCombine_exp_fld.cpp" />
+    <ClCompile Include=".\source\_ItemCombine_fld.cpp" />
+    <ClCompile Include=".\source\_ItemExchange_fld.cpp" />
+    <ClCompile Include=".\source\_ItemMakeData_fld.cpp" />
+    <ClCompile Include=".\source\_LAYER_SET.cpp" />
+    <ClCompile Include=".\source\_LAYER_SETDetail.cpp" />
+    <ClCompile Include=".\source\_LINKKEY.cpp" />
+    <ClCompile Include=".\source\_LINKKEYDetail.cpp" />
+    <ClCompile Include=".\source\_LINK_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_LINK_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_LTD.cpp" />
+    <ClCompile Include=".\source\_LTDDetail.cpp" />
+    <ClCompile Include=".\source\_LTD_ITEMINFO.cpp" />
+    <ClCompile Include=".\source\_MASTERY_PARAM.cpp" />
+    <ClCompile Include=".\source\_MASTERY_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_MONEY_SUPPLY_DATA.cpp" />
+    <ClCompile Include=".\source\_MONEY_SUPPLY_DATADetail.cpp" />
+    <ClCompile Include=".\source\_MOVE_LOBBY_DELAY.cpp" />
+    <ClCompile Include=".\source\_MOVE_LOBBY_DELAYDetail.cpp" />
+    <ClCompile Include=".\source\_MULTI_BLOCK.cpp" />
+    <ClCompile Include=".\source\_MULTI_BLOCKDetail.cpp" />
+    <ClCompile Include=".\source\_NEAR_DATA.cpp" />
+    <ClCompile Include=".\source\_NEAR_DATADetail.cpp" />
+    <ClCompile Include=".\source\_NET_BUFFER.cpp" />
+    <ClCompile Include=".\source\_NET_BUFFERDetail.cpp" />
+    <ClCompile Include=".\source\_NET_TYPE_PARAM.cpp" />
+    <ClCompile Include=".\source\_NET_TYPE_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_NOT_ARRANGED_AVATOR_DB.cpp" />
+    <ClCompile Include=".\source\_NOT_ARRANGED_AVATOR_DBDetail.cpp" />
+    <ClCompile Include=".\source\_NPCQuestIndexTempData.cpp" />
+    <ClCompile Include=".\source\_NPCQuestIndexTempDataDetail.cpp" />
+    <ClCompile Include=".\source\_NameChangeBuddyInfo.cpp" />
+    <ClCompile Include=".\source\_NameChangeBuddyInfoDetail.cpp" />
+    <ClCompile Include=".\source\_PARTICLE_ELEMENT.cpp" />
+    <ClCompile Include=".\source\_PARTICLE_ELEMENTDetail.cpp" />
+    <ClCompile Include=".\source\_PCBANG_FAVOR_ITEM_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_PCBANG_FAVOR_ITEM_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_PCBANG_PLAY_TIME.cpp" />
+    <ClCompile Include=".\source\_PCBANG_PLAY_TIMEDetail.cpp" />
+    <ClCompile Include=".\source\_PERSONALAMINE_INVEN_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_PERSONALAMINE_INVEN_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_POSTDATA_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_POSTDATA_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_POSTSTORAGE_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_POSTSTORAGE_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_POTION_NEXT_USE_TIME_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_POTION_NEXT_USE_TIME_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_PVPPOINT_LIMIT_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_PVPPOINT_LIMIT_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_PVP_ORDER_VIEW_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_PVP_ORDER_VIEW_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_PVP_RANK_REFRESH_USER.cpp" />
+    <ClCompile Include=".\source\_PVP_RANK_REFRESH_USERDetail.cpp" />
+    <ClCompile Include=".\source\_QUEST_CASH.cpp" />
+    <ClCompile Include=".\source\_QUEST_CASHDetail.cpp" />
+    <ClCompile Include=".\source\_QUEST_CASH_OTHER.cpp" />
+    <ClCompile Include=".\source\_QUEST_CASH_OTHERDetail.cpp" />
+    <ClCompile Include=".\source\_QUEST_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_QUEST_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_R3ENGINE_STATE.cpp" />
+    <ClCompile Include=".\source\_R3ENGINE_STATEDetail.cpp" />
+    <ClCompile Include=".\source\_REGED.cpp" />
+    <ClCompile Include=".\source\_REGEDDetail.cpp" />
+    <ClCompile Include=".\source\_REGED_AVATOR_DB.cpp" />
+    <ClCompile Include=".\source\_REGED_AVATOR_DBDetail.cpp" />
+    <ClCompile Include=".\source\_RENAME_POTION_USE_INFO.cpp" />
+    <ClCompile Include=".\source\_RENAME_POTION_USE_INFODetail.cpp" />
+    <ClCompile Include=".\source\_RETURNPOST_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_RETURNPOST_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_RemotableHandle.cpp" />
+    <ClCompile Include=".\source\_SFCONT_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_SFCONT_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_SKILL_IDX_PER_MASTERY.cpp" />
+    <ClCompile Include=".\source\_SKILL_IDX_PER_MASTERYDetail.cpp" />
+    <ClCompile Include=".\source\_SOCK_TYPE_PARAM.cpp" />
+    <ClCompile Include=".\source\_SOCK_TYPE_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_SOUND_ENTITIES_LIST.cpp" />
+    <ClCompile Include=".\source\_SOUND_ENTITIES_LISTDetail.cpp" />
+    <ClCompile Include=".\source\_SRAND.cpp" />
+    <ClCompile Include=".\source\_SRANDDetail.cpp" />
+    <ClCompile Include=".\source\_STAT_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_STAT_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_STORAGE_LIST.cpp" />
+    <ClCompile Include=".\source\_STORAGE_LISTDetail.cpp" />
+    <ClCompile Include=".\source\_SUPPLEMENT_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_SUPPLEMENT_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_SYNC_STATE.cpp" />
+    <ClCompile Include=".\source\_SYNC_STATEDetail.cpp" />
+    <ClCompile Include=".\source\_SYN_DATA.cpp" />
+    <ClCompile Include=".\source\_SYN_DATADetail.cpp" />
+    <ClCompile Include=".\source\_SYN_HEADER.cpp" />
+    <ClCompile Include=".\source\_SYN_HEADERDetail.cpp" />
+    <ClCompile Include=".\source\_THREAD_CONFIG.cpp" />
+    <ClCompile Include=".\source\_THREAD_CONFIGDetail.cpp" />
+    <ClCompile Include=".\source\_TOWER_PARAM.cpp" />
+    <ClCompile Include=".\source\_TOWER_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_TRADE_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_TRADE_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_TRAP_PARAM.cpp" />
+    <ClCompile Include=".\source\_TRAP_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\_TRUNK_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_TRUNK_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_UNIT_DB_BASE.cpp" />
+    <ClCompile Include=".\source\_UNIT_DB_BASEDetail.cpp" />
+    <ClCompile Include=".\source\_WAIT_ENTER_ACCOUNT.cpp" />
+    <ClCompile Include=".\source\_WAIT_ENTER_ACCOUNTDetail.cpp" />
+    <ClCompile Include=".\source\_WEAPON_PARAM.cpp" />
+    <ClCompile Include=".\source\_WEAPON_PARAMDetail.cpp" />
+    <ClCompile Include=".\source\__MIDL___MIDL_itf_wtypes_0003_0001.cpp" />
+    <ClCompile Include=".\source\__TEMP_WAIT_TOWER.cpp" />
+    <ClCompile Include=".\source\__TEMP_WAIT_TOWERDetail.cpp" />
+    <ClCompile Include=".\source\__add_loot_item.cpp" />
+    <ClCompile Include=".\source\__add_loot_itemDetail.cpp" />
+    <ClCompile Include=".\source\__add_monster.cpp" />
+    <ClCompile Include=".\source\__add_monsterDetail.cpp" />
+    <ClCompile Include=".\source\__add_time.cpp" />
+    <ClCompile Include=".\source\__add_timeDetail.cpp" />
+    <ClCompile Include=".\source\__change_monster.cpp" />
+    <ClCompile Include=".\source\__change_monsterDetail.cpp" />
+    <ClCompile Include=".\source\__dp_mission_potal.cpp" />
+    <ClCompile Include=".\source\__dp_mission_potalDetail.cpp" />
+    <ClCompile Include=".\source\__dummy_block.cpp" />
+    <ClCompile Include=".\source\__dummy_blockDetail.cpp" />
+    <ClCompile Include=".\source\__error_info.cpp" />
+    <ClCompile Include=".\source\__error_infoDetail.cpp" />
+    <ClCompile Include=".\source\__guild_list_page.cpp" />
+    <ClCompile Include=".\source\__guild_list_pageDetail.cpp" />
+    <ClCompile Include=".\source\__holy_keeper_data.cpp" />
+    <ClCompile Include=".\source\__holy_keeper_dataDetail.cpp" />
+    <ClCompile Include=".\source\__holy_stone_data.cpp" />
+    <ClCompile Include=".\source\__holy_stone_dataDetail.cpp" />
+    <ClCompile Include=".\source\__inner_check.cpp" />
+    <ClCompile Include=".\source\__inner_checkDetail.cpp" />
+    <ClCompile Include=".\source\__monster_group.cpp" />
+    <ClCompile Include=".\source\__monster_groupDetail.cpp" />
+    <ClCompile Include=".\source\__respawn_monster.cpp" />
+    <ClCompile Include=".\source\__respawn_monsterDetail.cpp" />
+    <ClCompile Include=".\source\__respond_check.cpp" />
+    <ClCompile Include=".\source\__respond_checkDetail.cpp" />
+    <ClCompile Include=".\source\_a_trade_adjust_price_result_zocl.cpp" />
+    <ClCompile Include=".\source\_a_trade_adjust_price_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_a_trade_clear_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_a_trade_clear_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_action_point_system_ini.cpp" />
+    <ClCompile Include=".\source\_action_point_system_iniDetail.cpp" />
+    <ClCompile Include=".\source\_add_char_result_zone.cpp" />
+    <ClCompile Include=".\source\_add_char_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_add_lend_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_add_lend_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_alive_char_result_zocl.cpp" />
+    <ClCompile Include=".\source\_alive_char_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_alter_action_point_zocl.cpp" />
+    <ClCompile Include=".\source\_alter_action_point_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_alter_cont_effect_time_zocl.cpp" />
+    <ClCompile Include=".\source\_alter_cont_effect_time_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_alter_item_slot_request_clzo.cpp" />
+    <ClCompile Include=".\source\_alter_link_slot_request_clzo.cpp" />
+    <ClCompile Include=".\source\_animus_create_setdata.cpp" />
+    <ClCompile Include=".\source\_animus_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_animus_db_load.cpp" />
+    <ClCompile Include=".\source\_animus_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_animus_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_animus_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_announ_message_receipt_udp.cpp" />
+    <ClCompile Include=".\source\_announ_message_receipt_udpDetail.cpp" />
+    <ClCompile Include=".\source\_apex_block_request_wrac.cpp" />
+    <ClCompile Include=".\source\_apex_block_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_apex_id.cpp" />
+    <ClCompile Include=".\source\_apex_idDetail.cpp" />
+    <ClCompile Include=".\source\_apex_send_ip.cpp" />
+    <ClCompile Include=".\source\_apex_send_ipDetail.cpp" />
+    <ClCompile Include=".\source\_apex_send_login.cpp" />
+    <ClCompile Include=".\source\_apex_send_loginDetail.cpp" />
+    <ClCompile Include=".\source\_apex_send_logout.cpp" />
+    <ClCompile Include=".\source\_apex_send_logoutDetail.cpp" />
+    <ClCompile Include=".\source\_apex_send_trans.cpp" />
+    <ClCompile Include=".\source\_apex_send_transDetail.cpp" />
+    <ClCompile Include=".\source\_atrade_taxrate_result_zocl.cpp" />
+    <ClCompile Include=".\source\_atrade_taxrate_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_count_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_count_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_force_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_force_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_gen_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_gen_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_keeper_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_keeper_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_param.cpp" />
+    <ClCompile Include=".\source\_attack_paramDetail.cpp" />
+    <ClCompile Include=".\source\_attack_selfdestruction_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_selfdestruction_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_siege_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_siege_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_skill_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_skill_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_trap_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_trap_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_attack_unit_result_zocl.cpp" />
+    <ClCompile Include=".\source\_attack_unit_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_bag_db_load.cpp" />
+    <ClCompile Include=".\source\_bag_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_base_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_base_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_base_fld.cpp" />
+    <ClCompile Include=".\source\_base_fldDetail.cpp" />
+    <ClCompile Include=".\source\_be_damaged_char.cpp" />
+    <ClCompile Include=".\source\_be_damaged_charDetail.cpp" />
+    <ClCompile Include=".\source\_be_damaged_player.cpp" />
+    <ClCompile Include=".\source\_be_damaged_playerDetail.cpp" />
+    <ClCompile Include=".\source\_bind_dummy.cpp" />
+    <ClCompile Include=".\source\_bind_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_buddy_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_buddy_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_buy_offer.cpp" />
+    <ClCompile Include=".\source\_buy_offerDetail.cpp" />
+    <ClCompile Include=".\source\_buy_store_request_clzo.cpp" />
+    <ClCompile Include=".\source\_buy_store_success_zocl.cpp" />
+    <ClCompile Include=".\source\_buy_store_success_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_cancel_raceboss_msg_result_zoct.cpp" />
+    <ClCompile Include=".\source\_cancel_raceboss_msg_result_zoctDetail.cpp" />
+    <ClCompile Include=".\source\_candidate_info.cpp" />
+    <ClCompile Include=".\source\_candidate_infoDetail.cpp" />
+    <ClCompile Include=".\source\_cash_discount_.cpp" />
+    <ClCompile Include=".\source\_cash_discount_Detail.cpp" />
+    <ClCompile Include=".\source\_cash_discount_event_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_cash_discount_event_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_cash_discount_ini_.cpp" />
+    <ClCompile Include=".\source\_cash_discount_ini_Detail.cpp" />
+    <ClCompile Include=".\source\_cash_event.cpp" />
+    <ClCompile Include=".\source\_cash_eventDetail.cpp" />
+    <ClCompile Include=".\source\_cash_event_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_cash_event_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_cash_event_ini.cpp" />
+    <ClCompile Include=".\source\_cash_event_iniDetail.cpp" />
+    <ClCompile Include=".\source\_cash_lim_sale.cpp" />
+    <ClCompile Include=".\source\_cashdb_setting_request_wrac.cpp" />
+    <ClCompile Include=".\source\_cashdb_setting_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_ccrfg_detect_alret.cpp" />
+    <ClCompile Include=".\source\_ccrfg_detect_alretDetail.cpp" />
+    <ClCompile Include=".\source\_character_create_setdata.cpp" />
+    <ClCompile Include=".\source\_character_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_character_db_load.cpp" />
+    <ClCompile Include=".\source\_character_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_character_disconnect_result_wrac.cpp" />
+    <ClCompile Include=".\source\_character_disconnect_result_wracDetail.cpp" />
+    <ClCompile Include=".\source\_chat_lock_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_chat_lock_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_chat_message_receipt_udp.cpp" />
+    <ClCompile Include=".\source\_chat_message_receipt_udpDetail.cpp" />
+    <ClCompile Include=".\source\_chat_multi_far_trans_zocl.cpp" />
+    <ClCompile Include=".\source\_chat_multi_far_trans_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_chat_steal_message_gm_zocl.cpp" />
+    <ClCompile Include=".\source\_chat_steal_message_gm_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_check_is_block_ip_result_acwr.cpp" />
+    <ClCompile Include=".\source\_check_query.cpp" />
+    <ClCompile Include=".\source\_check_queryDetail.cpp" />
+    <ClCompile Include=".\source\_check_speed_hack_ans.cpp" />
+    <ClCompile Include=".\source\_check_speed_hack_ansDetail.cpp" />
+    <ClCompile Include=".\source\_class_fld.cpp" />
+    <ClCompile Include=".\source\_class_value.cpp" />
+    <ClCompile Include=".\source\_class_valueDetail.cpp" />
+    <ClCompile Include=".\source\_coll_point.cpp" />
+    <ClCompile Include=".\source\_coll_pointDetail.cpp" />
+    <ClCompile Include=".\source\_combine_ex_item_accept_request_clzo.cpp" />
+    <ClCompile Include=".\source\_combine_ex_item_request_clzo.cpp" />
+    <ClCompile Include=".\source\_combine_ex_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_combine_ex_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_combine_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_combine_lend_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_combine_lend_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_con_event_.cpp" />
+    <ClCompile Include=".\source\_con_event_Detail.cpp" />
+    <ClCompile Include=".\source\_conditional_event_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_conditional_event_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_connection_status_result_zoct.cpp" />
+    <ClCompile Include=".\source\_connection_status_result_zoctDetail.cpp" />
+    <ClCompile Include=".\source\_create_holy_master_zocl.cpp" />
+    <ClCompile Include=".\source\_create_holy_master_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_cum_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_cum_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_cutting_complete_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_answer_reenter_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_answer_reenter_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_ask_reenter_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_ask_reenter_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_channel_close_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_channel_close_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_clear_out_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_clear_out_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_create_setdata.cpp" />
+    <ClCompile Include=".\source\_darkhole_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_create_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_create_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_destroy_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_destroy_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_enter_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_enter_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_fixpositon_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_fixpositon_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_giveup_out_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_giveup_out_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_job_count_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_job_count_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_job_pass_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_job_pass_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_leader_change_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_leader_change_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_member_info_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_member_info_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_info_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_info_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_pass_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_pass_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_quest_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_mission_quest_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_new_member_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_new_member_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_new_mission_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_new_mission_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_all_portal_by_result_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_all_portal_by_result_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_portal_by_react_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_portal_by_react_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_result_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_open_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_outof_member_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_outof_member_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_quest_info_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_quest_info_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_real_add_time_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_real_add_time_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_real_msg_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_real_msg_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_state_change_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_state_change_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_darkhole_timeout_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_darkhole_timeout_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_db_cash_limited_sale.cpp" />
+    <ClCompile Include=".\source\_db_golden_box_item.cpp" />
+    <ClCompile Include=".\source\_db_golden_box_itemDetail.cpp" />
+    <ClCompile Include=".\source\_del_char_result_zone.cpp" />
+    <ClCompile Include=".\source\_del_char_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_detected_char_list.cpp" />
+    <ClCompile Include=".\source\_detected_char_listDetail.cpp" />
+    <ClCompile Include=".\source\_dh_job_setup.cpp" />
+    <ClCompile Include=".\source\_dh_job_setupDetail.cpp" />
+    <ClCompile Include=".\source\_dh_mission_mgr.cpp" />
+    <ClCompile Include=".\source\_dh_mission_mgrDetail.cpp" />
+    <ClCompile Include=".\source\_dh_mission_setup.cpp" />
+    <ClCompile Include=".\source\_dh_mission_setupDetail.cpp" />
+    <ClCompile Include=".\source\_dh_player_mgr.cpp" />
+    <ClCompile Include=".\source\_dh_player_mgrDetail.cpp" />
+    <ClCompile Include=".\source\_dh_quest_setup.cpp" />
+    <ClCompile Include=".\source\_dh_quest_setupDetail.cpp" />
+    <ClCompile Include=".\source\_dh_reward_sub_setup.cpp" />
+    <ClCompile Include=".\source\_dh_reward_sub_setupDetail.cpp" />
+    <ClCompile Include=".\source\_dummy_position.cpp" />
+    <ClCompile Include=".\source\_dummy_positionDetail.cpp" />
+    <ClCompile Include=".\source\_economy_history_data.cpp" />
+    <ClCompile Include=".\source\_economy_history_dataDetail.cpp" />
+    <ClCompile Include=".\source\_effect_parameter.cpp" />
+    <ClCompile Include=".\source\_effect_parameterDetail.cpp" />
+    <ClCompile Include=".\source\_embellish_db_load.cpp" />
+    <ClCompile Include=".\source\_embellish_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_enter_lobby_report_wrac.cpp" />
+    <ClCompile Include=".\source\_enter_lobby_report_wracDetail.cpp" />
+    <ClCompile Include=".\source\_enter_world_request_wrac.cpp" />
+    <ClCompile Include=".\source\_enter_world_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_enter_world_result_zone.cpp" />
+    <ClCompile Include=".\source\_enter_world_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_equip_db_load.cpp" />
+    <ClCompile Include=".\source\_equip_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_equip_up_item_lv_limit_zocl.cpp" />
+    <ClCompile Include=".\source\_equip_up_item_lv_limit_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_event_participant_classrefine.cpp" />
+    <ClCompile Include=".\source\_event_participant_classrefineDetail.cpp" />
+    <ClCompile Include=".\source\_event_respawn.cpp" />
+    <ClCompile Include=".\source\_event_respawnDetail.cpp" />
+    <ClCompile Include=".\source\_event_set.cpp" />
+    <ClCompile Include=".\source\_event_setDetail.cpp" />
+    <ClCompile Include=".\source\_event_set_looting.cpp" />
+    <ClCompile Include=".\source\_event_set_lootingDetail.cpp" />
+    <ClCompile Include=".\source\_exchange_lend_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_exchange_lend_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_fireguard_block_request_wrac.cpp" />
+    <ClCompile Include=".\source\_fireguard_block_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_force_db_load.cpp" />
+    <ClCompile Include=".\source\_force_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_force_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_force_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_gm_msg_gmcall_list_response_zocl.cpp" />
+    <ClCompile Include=".\source\_gm_msg_gmcall_list_response_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_goldbox_index.cpp" />
+    <ClCompile Include=".\source\_goldbox_indexDetail.cpp" />
+    <ClCompile Include=".\source\_golden_box_item.cpp" />
+    <ClCompile Include=".\source\_golden_box_itemDetail.cpp" />
+    <ClCompile Include=".\source\_golden_box_item_event.cpp" />
+    <ClCompile Include=".\source\_golden_box_item_eventDetail.cpp" />
+    <ClCompile Include=".\source\_golden_box_item_ini.cpp" />
+    <ClCompile Include=".\source\_golden_box_item_iniDetail.cpp" />
+    <ClCompile Include=".\source\_good_storage_info.cpp" />
+    <ClCompile Include=".\source\_good_storage_infoDetail.cpp" />
+    <ClCompile Include=".\source\_guild_alter_member_grade_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_alter_member_grade_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_alter_member_state_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_alter_member_state_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_applier_download_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_applier_download_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_applier_info.cpp" />
+    <ClCompile Include=".\source\_guild_applier_infoDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_get_gravity_stone_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_battle_get_gravity_stone_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_goal_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_battle_goal_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_rank_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_battle_rank_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_reserved_schedule_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_battle_reserved_schedule_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_suggest_matter.cpp" />
+    <ClCompile Include=".\source\_guild_battle_suggest_matterDetail.cpp" />
+    <ClCompile Include=".\source\_guild_battle_suggest_request_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_battle_suggest_request_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_honor_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_honor_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_honor_set_request_clzo.cpp" />
+    <ClCompile Include=".\source\_guild_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_manage_request_clzo.cpp" />
+    <ClCompile Include=".\source\_guild_manage_request_clzoDetail.cpp" />
+    <ClCompile Include=".\source\_guild_master_info.cpp" />
+    <ClCompile Include=".\source\_guild_master_infoDetail.cpp" />
+    <ClCompile Include=".\source\_guild_member_buddy_download_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_member_buddy_download_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_member_download_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_member_download_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_member_info.cpp" />
+    <ClCompile Include=".\source\_guild_member_infoDetail.cpp" />
+    <ClCompile Include=".\source\_guild_member_refresh_data.cpp" />
+    <ClCompile Include=".\source\_guild_money_io_download_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_money_io_download_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_query_info_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_query_info_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guild_vote_process_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_guild_vote_process_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guildroom_enter_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guildroom_enter_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guildroom_info.cpp" />
+    <ClCompile Include=".\source\_guildroom_out_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guildroom_out_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_guildroom_rent_result_zocl.cpp" />
+    <ClCompile Include=".\source\_guildroom_rent_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_happen_event_cont.cpp" />
+    <ClCompile Include=".\source\_happen_event_contDetail.cpp" />
+    <ClCompile Include=".\source\_holy_quest_report_wrac.cpp" />
+    <ClCompile Include=".\source\_holy_quest_report_wracDetail.cpp" />
+    <ClCompile Include=".\source\_insert_new_quest_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_insert_new_quest_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_insert_next_quest_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_insert_next_quest_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_insert_trc_info.cpp" />
+    <ClCompile Include=".\source\_insert_trc_infoDetail.cpp" />
+    <ClCompile Include=".\source\_inven_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_inven_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_item_fanfare_zocl.cpp" />
+    <ClCompile Include=".\source\_item_fanfare_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_itembox_create_setdata.cpp" />
+    <ClCompile Include=".\source\_itembox_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_itembox_take_add_result_zocl.cpp" />
+    <ClCompile Include=".\source\_itembox_take_add_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_itembox_take_new_result_zocl.cpp" />
+    <ClCompile Include=".\source\_itembox_take_new_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_job_sub_setup.cpp" />
+    <ClCompile Include=".\source\_job_sub_setupDetail.cpp" />
+    <ClCompile Include=".\source\_keeper_create_setdata.cpp" />
+    <ClCompile Include=".\source\_keeper_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_limit_amount_info.cpp" />
+    <ClCompile Include=".\source\_limit_amount_infoDetail.cpp" />
+    <ClCompile Include=".\source\_limit_item_db_data.cpp" />
+    <ClCompile Include=".\source\_limit_item_db_dataDetail.cpp" />
+    <ClCompile Include=".\source\_limit_item_info.cpp" />
+    <ClCompile Include=".\source\_limit_item_infoDetail.cpp" />
+    <ClCompile Include=".\source\_limit_item_num_info_zocl.cpp" />
+    <ClCompile Include=".\source\_limit_item_num_info_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_limitedsale_event_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_limitedsale_event_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_log_case_charselect.cpp" />
+    <ClCompile Include=".\source\_log_case_charselectDetail.cpp" />
+    <ClCompile Include=".\source\_log_change_class_after_init_class.cpp" />
+    <ClCompile Include=".\source\_log_change_class_after_init_classDetail.cpp" />
+    <ClCompile Include=".\source\_log_sheet_economy.cpp" />
+    <ClCompile Include=".\source\_log_sheet_economyDetail.cpp" />
+    <ClCompile Include=".\source\_log_sheet_lv.cpp" />
+    <ClCompile Include=".\source\_log_sheet_lvDetail.cpp" />
+    <ClCompile Include=".\source\_log_sheet_usernum.cpp" />
+    <ClCompile Include=".\source\_log_sheet_usernumDetail.cpp" />
+    <ClCompile Include=".\source\_logout_account_request_wrac.cpp" />
+    <ClCompile Include=".\source\_logout_account_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_lt_qry_case_insert_settlementowner_log.cpp" />
+    <ClCompile Include=".\source\_lt_qry_case_unmandtrader_select_list.cpp" />
+    <ClCompile Include=".\source\_make_tower_request_clzo.cpp" />
+    <ClCompile Include=".\source\_map_fld.cpp" />
+    <ClCompile Include=".\source\_map_fldDetail.cpp" />
+    <ClCompile Include=".\source\_map_rate.cpp" />
+    <ClCompile Include=".\source\_map_rateDetail.cpp" />
+    <ClCompile Include=".\source\_mastery_up_data.cpp" />
+    <ClCompile Include=".\source\_mastery_up_dataDetail.cpp" />
+    <ClCompile Include=".\source\_max_point.cpp" />
+    <ClCompile Include=".\source\_max_pointDetail.cpp" />
+    <ClCompile Include=".\source\_message.cpp" />
+    <ClCompile Include=".\source\_messageDetail.cpp" />
+    <ClCompile Include=".\source\_mon_active.cpp" />
+    <ClCompile Include=".\source\_mon_activeDetail.cpp" />
+    <ClCompile Include=".\source\_mon_block.cpp" />
+    <ClCompile Include=".\source\_mon_blockDetail.cpp" />
+    <ClCompile Include=".\source\_mon_block_fld.cpp" />
+    <ClCompile Include=".\source\_money_supply_gatering_inform_zowb.cpp" />
+    <ClCompile Include=".\source\_money_supply_gatering_inform_zowbDetail.cpp" />
+    <ClCompile Include=".\source\_monster_create_setdata.cpp" />
+    <ClCompile Include=".\source\_monster_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_monster_fld.cpp" />
+    <ClCompile Include=".\source\_monster_sp_group.cpp" />
+    <ClCompile Include=".\source\_monster_sp_groupDetail.cpp" />
+    <ClCompile Include=".\source\_move_to_own_stonemap_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_move_to_own_stonemap_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_move_to_own_stonemap_result_zocl.cpp" />
+    <ClCompile Include=".\source\_move_to_own_stonemap_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_moveout_user_result_zone.cpp" />
+    <ClCompile Include=".\source\_moveout_user_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_not_arranged_char_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_not_arranged_char_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notice_move_limit_map_msg_zocl.cpp" />
+    <ClCompile Include=".\source\_notice_move_limit_map_msg_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_buy_cashitem_mode.cpp" />
+    <ClCompile Include=".\source\_notify_cont_play_time_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_cont_play_time_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_coupon_ensure_time_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_coupon_ensure_time_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_coupon_error_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_coupon_error_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_guild_battle_state_zowb.cpp" />
+    <ClCompile Include=".\source\_notify_local_time_result_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_local_time_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_max_pvp_point_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_max_pvp_point_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_not_use_premium_cashitem_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_not_use_premium_cashitem_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_pvp_cash_point_error_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_pvp_cash_point_error_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_race_boss_winrate_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_race_boss_winrate_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_notify_remain_coupon_zocl.cpp" />
+    <ClCompile Include=".\source\_notify_remain_coupon_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_npc_create_setdata.cpp" />
+    <ClCompile Include=".\source\_npc_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_npc_quest_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_npc_quest_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_npclink_check_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_npclink_check_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_current_state_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_current_state_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_destruction_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_destruction_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_drop_result_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_drop_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_explosion_result_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_explosion_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_position_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_bomb_position_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_create_setdata.cpp" />
+    <ClCompile Include=".\source\_nuclear_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_explosion_success_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_explosion_success_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_find_rader_result_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_find_rader_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_position_result_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_position_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_nuclear_result_code_zocl.cpp" />
+    <ClCompile Include=".\source\_nuclear_result_code_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_object_create_setdata.cpp" />
+    <ClCompile Include=".\source\_object_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_object_id.cpp" />
+    <ClCompile Include=".\source\_object_idDetail.cpp" />
+    <ClCompile Include=".\source\_object_list_point.cpp" />
+    <ClCompile Include=".\source\_object_list_pointDetail.cpp" />
+    <ClCompile Include=".\source\_open_world_request_wrac.cpp" />
+    <ClCompile Include=".\source\_open_world_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_ore_cutting_result_zocl.cpp" />
+    <ClCompile Include=".\source\_ore_cutting_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_other_shape_all_zocl.cpp" />
+    <ClCompile Include=".\source\_other_shape_all_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_other_shape_change_zocl.cpp" />
+    <ClCompile Include=".\source\_other_shape_part_zocl.cpp" />
+    <ClCompile Include=".\source\_other_shape_part_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_param_cash.cpp" />
+    <ClCompile Include=".\source\_param_cashDetail.cpp" />
+    <ClCompile Include=".\source\_param_cash_rollback.cpp" />
+    <ClCompile Include=".\source\_param_cash_rollbackDetail.cpp" />
+    <ClCompile Include=".\source\_param_cash_select.cpp" />
+    <ClCompile Include=".\source\_param_cash_selectDetail.cpp" />
+    <ClCompile Include=".\source\_param_cash_total_selling.cpp" />
+    <ClCompile Include=".\source\_param_cash_total_sellingDetail.cpp" />
+    <ClCompile Include=".\source\_param_cash_update.cpp" />
+    <ClCompile Include=".\source\_param_cash_updateDetail.cpp" />
+    <ClCompile Include=".\source\_param_cashitem_dblog.cpp" />
+    <ClCompile Include=".\source\_param_cashitem_dblogDetail.cpp" />
+    <ClCompile Include=".\source\_parkingunit_create_setdata.cpp" />
+    <ClCompile Include=".\source\_parkingunit_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_party_join_joiner_result_zocl.cpp" />
+    <ClCompile Include=".\source\_party_join_joiner_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_party_member_info_upd.cpp" />
+    <ClCompile Include=".\source\_party_member_info_updDetail.cpp" />
+    <ClCompile Include=".\source\_patriarch_comm_list.cpp" />
+    <ClCompile Include=".\source\_personal_amine_errmsg_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_amine_errmsg_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_amine_fixpos_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_amine_fixpos_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_amine_infoui_open_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_amine_infoui_open_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_amine_inven.cpp" />
+    <ClCompile Include=".\source\_personal_amine_inven_db_load.cpp" />
+    <ClCompile Include=".\source\_personal_amine_inven_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_personal_amine_make_storage_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_amine_make_storage_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_amine_mineore_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_amine_mineore_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_alter_dur_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_alter_dur_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_attacked_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_attacked_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_battery_extract_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_battery_extract_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_battery_insert_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_battery_insert_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_current_state_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_current_state_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_delbattery_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_delbattery_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_download_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_download_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_install_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_install_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_popore_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_popore_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_selore_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_selore_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_stop_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_stop_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_uninstall_circle_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_uninstall_circle_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_personal_automine_uninstall_zocl.cpp" />
+    <ClCompile Include=".\source\_personal_automine_uninstall_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_portal_dummy.cpp" />
+    <ClCompile Include=".\source\_portal_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_possible_battle_guild_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_possible_battle_guild_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_post_content_result_zocl.cpp" />
+    <ClCompile Include=".\source\_post_content_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_post_result_zocl.cpp" />
+    <ClCompile Include=".\source\_post_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_post_return_zocl.cpp" />
+    <ClCompile Include=".\source\_post_storage_list.cpp" />
+    <ClCompile Include=".\source\_pt_appoint_inform_request_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_appoint_inform_request_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_automine_charge_money_db_update_fail_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_automine_charge_money_db_update_fail_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_automine_getoutore_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_automine_getoutore_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_automine_info_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_automine_info_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_automine_result_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_automine_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_automine_state_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_automine_state_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_inform_appoint_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_inform_appoint_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_inform_commission_income_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_inform_commission_income_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_inform_punishment_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_inform_punishment_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_inform_tax_rate_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_inform_tax_rate_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_notify_final_decision.cpp" />
+    <ClCompile Include=".\source\_pt_notify_final_decisionDetail.cpp" />
+    <ClCompile Include=".\source\_pt_notify_vote_score_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_notify_vote_score_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_propose_appoint_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_propose_appoint_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_query_appoint_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_query_appoint_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_result_appoint_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_result_appoint_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_result_change_tax_rate_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_result_change_tax_rate_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_result_code_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_result_code_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_result_fcandidacy_list_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_result_fcandidacy_list_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_result_punishment_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_result_punishment_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pt_trans_votepaper_zocl.cpp" />
+    <ClCompile Include=".\source\_pt_trans_votepaper_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvp_cash_recover_itemlist_result_zocl.cpp" />
+    <ClCompile Include=".\source\_pvp_cash_recover_itemlist_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_end_zocl.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_end_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_point_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_pvp_order_view_point_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvp_rank_list_result_data_zocl.cpp" />
+    <ClCompile Include=".\source\_pvp_rank_list_result_data_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_pvppoint_guild_rank_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_addguildbattleschedule.cpp" />
+    <ClCompile Include=".\source\_qry_case_addguildbattlescheduleDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_addpvppoint.cpp" />
+    <ClCompile Include=".\source\_qry_case_addpvppointDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_alive_char.cpp" />
+    <ClCompile Include=".\source\_qry_case_alive_charDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_all_store_limit_item.cpp" />
+    <ClCompile Include=".\source\_qry_case_all_store_limit_itemDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_battery_discharge.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_battery_dischargeDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_batterycharge.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_batterychargeDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_mineore.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_mineoreDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_moveore.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_moveoreDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_newowner.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_newownerDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_selore.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_seloreDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_workstate.cpp" />
+    <ClCompile Include=".\source\_qry_case_amine_workstateDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_buyemblem.cpp" />
+    <ClCompile Include=".\source\_qry_case_buyemblemDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_character_rename.cpp" />
+    <ClCompile Include=".\source\_qry_case_character_renameDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_cheat_player_vote_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_cheat_player_vote_infoDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_contsave.cpp" />
+    <ClCompile Include=".\source\_qry_case_contsaveDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_dest_guild_out_guildbattlecost.cpp" />
+    <ClCompile Include=".\source\_qry_case_dest_guild_out_guildbattlecostDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_discharge_patriarch.cpp" />
+    <ClCompile Include=".\source\_qry_case_discharge_patriarchDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_disjointguild.cpp" />
+    <ClCompile Include=".\source\_qry_case_disjointguildDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_forceleave.cpp" />
+    <ClCompile Include=".\source\_qry_case_forceleaveDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_gm_greetingmsg.cpp" />
+    <ClCompile Include=".\source\_qry_case_gm_greetingmsgDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_guild_greetingmsg.cpp" />
+    <ClCompile Include=".\source\_qry_case_guild_greetingmsgDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_atrade_tax.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_atrade_taxDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_guildbattlecost.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_guildbattlecostDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_guildbattlerewardmoney.cpp" />
+    <ClCompile Include=".\source\_qry_case_in_guildbattlerewardmoneyDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_inputgmoney.cpp" />
+    <ClCompile Include=".\source\_qry_case_inputgmoneyDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_candidate.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_candidateDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_orelog.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_orelogDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_patriarch_comm.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_patriarch_commDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_timelimit_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_insert_timelimit_infoDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insertguild.cpp" />
+    <ClCompile Include=".\source\_qry_case_insertguildDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_insertitem.cpp" />
+    <ClCompile Include=".\source\_qry_case_insertitemDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_joinacguild.cpp" />
+    <ClCompile Include=".\source\_qry_case_joinacguildDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_load_guildbattle_totalrecord.cpp" />
+    <ClCompile Include=".\source\_qry_case_load_guildbattle_totalrecordDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_loadguildbattlerank.cpp" />
+    <ClCompile Include=".\source\_qry_case_loadguildbattlerankDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_lobby_logout.cpp" />
+    <ClCompile Include=".\source\_qry_case_lobby_logoutDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_make_storage.cpp" />
+    <ClCompile Include=".\source\_qry_case_make_storageDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_outputgmoney.cpp" />
+    <ClCompile Include=".\source\_qry_case_outputgmoneyDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_content_get.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_content_getDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_disable_regi.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_list_regi.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_list_regiDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_return_list_get.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_return_list_getDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_send.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_sendDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_serial_check.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_serial_checkDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_storage_list_get.cpp" />
+    <ClCompile Include=".\source\_qry_case_post_storage_list_getDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_race_greetingmsg.cpp" />
+    <ClCompile Include=".\source\_qry_case_race_greetingmsgDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_raceboss_accumulation_winrate.cpp" />
+    <ClCompile Include=".\source\_qry_case_raceboss_accumulation_winrateDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_rank_racerank_guildrank.cpp" />
+    <ClCompile Include=".\source\_qry_case_rank_racerank_guildrankDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_request_refund.cpp" />
+    <ClCompile Include=".\source\_qry_case_request_refundDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_charserial.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_charserialDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_guild_master_lastconn.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_guild_master_lastconnDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_patriarch_comm.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_patriarch_commDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_timelimit_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_select_timelimit_infoDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_selfleave.cpp" />
+    <ClCompile Include=".\source\_qry_case_selfleaveDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_sendwebracebosssms.cpp" />
+    <ClCompile Include=".\source\_qry_case_sendwebracebosssmsDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_src_guild_out_guildbattlecost.cpp" />
+    <ClCompile Include=".\source\_qry_case_src_guild_out_guildbattlecostDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_store_instance_store_update.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_buy_get_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_buy_update_complete.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_buy_update_rollback.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_buy_update_wait.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_cheat_updateregisttime.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_cheat_updateregisttimeDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_log_in_proc_update_complete.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_re_registsingleitem.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_re_registsingleitemDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_re_registsingleitem_roll_back.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_updateitemstate.cpp" />
+    <ClCompile Include=".\source\_qry_case_unmandtrader_updateitemstateDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_data_for_post_send.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_data_for_post_sendDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_data_for_trade.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_data_for_tradeDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_guildmaster.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_guildmasterDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_honor_guild.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_honor_guildDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_mineore.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_mineoreDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_player_vote_info.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_player_vote_infoDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_punishment.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_punishmentDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_server_reset_token.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_server_reset_tokenDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_user_guild_data.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_user_guild_dataDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_vote_available.cpp" />
+    <ClCompile Include=".\source\_qry_case_update_vote_availableDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_updateclearguildbattleDayInfo.cpp" />
+    <ClCompile Include=".\source\_qry_case_updateclearguildbattleDayInfoDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatedrawguildbattlerank.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatedrawguildbattlerankDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatereservedschedule.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatereservedscheduleDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_updateweeklyguildpvppointsum.cpp" />
+    <ClCompile Include=".\source\_qry_case_updateweeklyguildpvppointsumDetail.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatewinloseguildbattlerank.cpp" />
+    <ClCompile Include=".\source\_qry_case_updatewinloseguildbattlerankDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_delete.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_deleteDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_insert.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_insertDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_load.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_loadDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_lobby.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_lobbyDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_logout.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_logoutDetail.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_reged.cpp" />
+    <ClCompile Include=".\source\_qry_sheet_regedDetail.cpp" />
+    <ClCompile Include=".\source\_quest_check_result.cpp" />
+    <ClCompile Include=".\source\_quest_check_resultDetail.cpp" />
+    <ClCompile Include=".\source\_quest_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_quest_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_quest_dummy.cpp" />
+    <ClCompile Include=".\source\_quest_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_quest_fail_result.cpp" />
+    <ClCompile Include=".\source\_quest_fail_resultDetail.cpp" />
+    <ClCompile Include=".\source\_quest_history_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_quest_history_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_quick_link.cpp" />
+    <ClCompile Include=".\source\_quick_linkDetail.cpp" />
+    <ClCompile Include=".\source\_radar_char_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_radar_char_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_react_area.cpp" />
+    <ClCompile Include=".\source\_react_areaDetail.cpp" />
+    <ClCompile Include=".\source\_react_obj.cpp" />
+    <ClCompile Include=".\source\_react_objDetail.cpp" />
+    <ClCompile Include=".\source\_react_sub_setup.cpp" />
+    <ClCompile Include=".\source\_react_sub_setupDetail.cpp" />
+    <ClCompile Include=".\source\_record_bin_header.cpp" />
+    <ClCompile Include=".\source\_record_bin_headerDetail.cpp" />
+    <ClCompile Include=".\source\_rege_char_data.cpp" />
+    <ClCompile Include=".\source\_rege_char_dataDetail.cpp" />
+    <ClCompile Include=".\source\_reged_char_result_zone.cpp" />
+    <ClCompile Include=".\source\_reged_char_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_request_csi_buy_clzo.cpp" />
+    <ClCompile Include=".\source\_res_dummy.cpp" />
+    <ClCompile Include=".\source\_res_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_result_csi_buy_zocl.cpp" />
+    <ClCompile Include=".\source\_result_csi_buy_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_result_csi_error_zocl.cpp" />
+    <ClCompile Include=".\source\_result_csi_error_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_result_csi_goods_list_zocl.cpp" />
+    <ClCompile Include=".\source\_result_csi_goods_list_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_return_post_list.cpp" />
+    <ClCompile Include=".\source\_safe_dummy.cpp" />
+    <ClCompile Include=".\source\_safe_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_sel_char_result_zone.cpp" />
+    <ClCompile Include=".\source\_sel_char_result_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_sel_patriarch_elect_state.cpp" />
+    <ClCompile Include=".\source\_sel_patriarch_elect_stateDetail.cpp" />
+    <ClCompile Include=".\source\_select_avator_report_wrac.cpp" />
+    <ClCompile Include=".\source\_select_avator_report_wracDetail.cpp" />
+    <ClCompile Include=".\source\_sell_store_request_clzo.cpp" />
+    <ClCompile Include=".\source\_server_notify_inform_zone.cpp" />
+    <ClCompile Include=".\source\_server_notify_inform_zoneDetail.cpp" />
+    <ClCompile Include=".\source\_server_rate_realtime_load.cpp" />
+    <ClCompile Include=".\source\_server_rate_realtime_loadDetail.cpp" />
+    <ClCompile Include=".\source\_sf_continous.cpp" />
+    <ClCompile Include=".\source\_sf_continousDetail.cpp" />
+    <ClCompile Include=".\source\_sf_delay_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_sf_delay_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_skill_lv_up_data.cpp" />
+    <ClCompile Include=".\source\_skill_lv_up_dataDetail.cpp" />
+    <ClCompile Include=".\source\_socket.cpp" />
+    <ClCompile Include=".\source\_socketDetail.cpp" />
+    <ClCompile Include=".\source\_start_dummy.cpp" />
+    <ClCompile Include=".\source\_start_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_start_world_request_wrac.cpp" />
+    <ClCompile Include=".\source\_start_world_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_started_vote_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_started_vote_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_starting_vote_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_starting_vote_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_stone_create_setdata.cpp" />
+    <ClCompile Include=".\source\_stone_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_stop_world_request_wrac.cpp" />
+    <ClCompile Include=".\source\_stop_world_request_wracDetail.cpp" />
+    <ClCompile Include=".\source\_storage_refresh_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_storage_refresh_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_store_dummy.cpp" />
+    <ClCompile Include=".\source\_store_dummyDetail.cpp" />
+    <ClCompile Include=".\source\_store_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_store_list_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_suggested_matter.cpp" />
+    <ClCompile Include=".\source\_suggested_matterDetail.cpp" />
+    <ClCompile Include=".\source\_suggested_matter_change_taxrate.cpp" />
+    <ClCompile Include=".\source\_suggested_matter_change_taxrateDetail.cpp" />
+    <ClCompile Include=".\source\_talik_crystal_exchange_clzo.cpp" />
+    <ClCompile Include=".\source\_talik_crystal_exchange_zocl.cpp" />
+    <ClCompile Include=".\source\_talik_crystal_exchange_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_talik_recvr_list.cpp" />
+    <ClCompile Include=".\source\_talik_recvr_listDetail.cpp" />
+    <ClCompile Include=".\source\_talk_crystal_matrial_combine_node.cpp" />
+    <ClCompile Include=".\source\_talk_crystal_matrial_combine_nodeDetail.cpp" />
+    <ClCompile Include=".\source\_target_monster_aggro_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_target_monster_aggro_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_target_monster_contsf_allinform_zocl.cpp" />
+    <ClCompile Include=".\source\_target_monster_contsf_allinform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_target_player_damage_contsf_allinform_zocl.cpp" />
+    <ClCompile Include=".\source\_target_player_damage_contsf_allinform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_thread_parameter.cpp" />
+    <ClCompile Include=".\source\_thread_parameterDetail.cpp" />
+    <ClCompile Include=".\source\_throw_skill_result_one_zocl.cpp" />
+    <ClCompile Include=".\source\_throw_skill_result_one_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_throw_skill_result_other_zocl.cpp" />
+    <ClCompile Include=".\source\_throw_skill_result_other_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_throw_unit_result_one_zocl.cpp" />
+    <ClCompile Include=".\source\_throw_unit_result_one_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_throw_unit_result_other_zocl.cpp" />
+    <ClCompile Include=".\source\_throw_unit_result_other_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_total_count.cpp" />
+    <ClCompile Include=".\source\_total_countDetail.cpp" />
+    <ClCompile Include=".\source\_total_guild_rank_info.cpp" />
+    <ClCompile Include=".\source\_total_guild_rank_result_zocl.cpp" />
+    <ClCompile Include=".\source\_total_guild_rank_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_tower_create_setdata.cpp" />
+    <ClCompile Include=".\source\_tower_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_trade_wait_link.cpp" />
+    <ClCompile Include=".\source\_trans_account_report_wrac.cpp" />
+    <ClCompile Include=".\source\_trans_account_report_wracDetail.cpp" />
+    <ClCompile Include=".\source\_trans_gm_msg_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_trans_gm_msg_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_trans_ship_ticket_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_trap_create_setdata.cpp" />
+    <ClCompile Include=".\source\_trap_create_setdataDetail.cpp" />
+    <ClCompile Include=".\source\_trunk_db_load.cpp" />
+    <ClCompile Include=".\source\_trunk_db_loadDetail.cpp" />
+    <ClCompile Include=".\source\_trunk_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_trunk_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_trunk_est_result_zocl.cpp" />
+    <ClCompile Include=".\source\_trunk_est_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unit_bullet_param.cpp" />
+    <ClCompile Include=".\source\_unit_bullet_paramDetail.cpp" />
+    <ClCompile Include=".\source\_unit_download_result_zocl.cpp" />
+    <ClCompile Include=".\source\_unit_download_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unit_pack_fill_request_clzo.cpp" />
+    <ClCompile Include=".\source\_unit_pack_fill_result_zocl.cpp" />
+    <ClCompile Include=".\source\_unit_pack_fill_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_Regist_item_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_Regist_item_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_Sell_Wait_item_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_Sell_Wait_item_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_buy_item_request_clzo.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_buy_item_result_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_buy_item_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_close_item_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_close_item_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_continue_item_inform_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_continue_item_inform_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_page_info.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_re_regist_request_clzo.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_re_regist_result_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_re_regist_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_regist_item_success_result_zocl.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_regist_item_success_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_reserved_schedule_info.cpp" />
+    <ClCompile Include=".\source\_unmannedtrader_search_list_result_zocl.cpp" />
+    <ClCompile Include=".\source\_update_candidate_wincount_packing.cpp" />
+    <ClCompile Include=".\source\_update_candidate_wincount_packingDetail.cpp" />
+    <ClCompile Include=".\source\_userCLIPFORMAT.cpp" />
+    <ClCompile Include=".\source\_userHBITMAP.cpp" />
+    <ClCompile Include=".\source\_userHENHMETAFILE.cpp" />
+    <ClCompile Include=".\source\_userHGLOBAL.cpp" />
+    <ClCompile Include=".\source\_userHMETAFILE.cpp" />
+    <ClCompile Include=".\source\_userHMETAFILEPICT.cpp" />
+    <ClCompile Include=".\source\_userHPALETTE.cpp" />
+    <ClCompile Include=".\source\_userSTGMEDIUM.cpp" />
+    <ClCompile Include=".\source\_user_num_report_wrac.cpp" />
+    <ClCompile Include=".\source\_user_num_report_wracDetail.cpp" />
+    <ClCompile Include=".\source\_weekly_guild_rank_result_zocl.cpp" />
+    <ClCompile Include=".\source\_weekly_guild_rank_result_zoclDetail.cpp" />
+    <ClCompile Include=".\source\_weeklyguildrank_owner_info.cpp" />
+    <ClCompile Include=".\source\_wireSAFEARRAY_UNION.cpp" />
+    <ClCompile Include=".\source\_world_account_ping_wrac.cpp" />
+    <ClCompile Include=".\source\_world_account_ping_wracDetail.cpp" />
+    <ClCompile Include=".\source\_worlddb_arrange_char_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_arrange_char_infoDetail.cpp" />
+    <ClCompile Include=".\source\_worlddb_buddy_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_cash_limited_sale.cpp" />
+    <ClCompile Include=".\source\_worlddb_character_array_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_crymsg_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_economy_history_info_array.cpp" />
+    <ClCompile Include=".\source\_worlddb_golden_box_item.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_battle_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_battle_rank_list.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_battle_reserved_schedule_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_battle_schedule_list.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_member_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_guild_money_io_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_inven_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_item_list.cpp" />
+    <ClCompile Include=".\source\_worlddb_itemcombineex_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_npc_quest_complete_history.cpp" />
+    <ClCompile Include=".\source\_worlddb_npc_quest_complete_historyDetail.cpp" />
+    <ClCompile Include=".\source\_worlddb_ore_cutting.cpp" />
+    <ClCompile Include=".\source\_worlddb_potion_delay_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_potion_delay_infoDetail.cpp" />
+    <ClCompile Include=".\source\_worlddb_quest_array.cpp" />
+    <ClCompile Include=".\source\_worlddb_rankinguild_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_sf_delay_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_sf_delay_infoDetail.cpp" />
+    <ClCompile Include=".\source\_worlddb_start_npc_quest_complete_history.cpp" />
+    <ClCompile Include=".\source\_worlddb_trade_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_trunk_info.cpp" />
+    <ClCompile Include=".\source\_worlddb_unit_info_array.cpp" />
+    <ClCompile Include=".\source\_worlddb_user_count_info.cpp" />
+    <ClCompile Include=".\source\cStaticMember_Player.cpp" />
+    <ClCompile Include=".\source\cStaticMember_PlayerDetail.cpp" />
+    <ClCompile Include=".\source\qry_case_cash_limsale.cpp" />
+    <ClCompile Include=".\source\qry_case_cash_limsaleDetail.cpp" />
+    <ClCompile Include=".\source\qry_case_golden_box_item.cpp" />
+    <ClCompile Include=".\source\qry_case_golden_box_itemDetail.cpp" />
+    <ClCompile Include=".\source\qry_case_select_golden_box_item.cpp" />
+    <ClCompile Include=".\source\si_effect.cpp" />
+    <ClCompile Include=".\source\si_effectDetail.cpp" />
+    <ClCompile Include=".\source\si_interpret.cpp" />
+    <ClCompile Include=".\source\si_interpretDetail.cpp" />
+    <ClCompile Include=".\source\std___Container_base.cpp" />
+    <ClCompile Include=".\source\std___Container_baseDetail.cpp" />
+    <ClCompile Include=".\source\std___Iterator_base.cpp" />
+    <ClCompile Include=".\source\std___Iterator_baseDetail.cpp" />
+    <ClCompile Include=".\source\std___Lockit.cpp" />
+    <ClCompile Include=".\source\std___LockitDetail.cpp" />
+    <ClCompile Include=".\source\std___String_base.cpp" />
+    <ClCompile Include=".\source\std___String_baseDetail.cpp" />
+    <ClCompile Include=".\source\std__bad_alloc.cpp" />
+    <ClCompile Include=".\source\std__bad_allocDetail.cpp" />
+    <ClCompile Include=".\source\std__exception.cpp" />
+    <ClCompile Include=".\source\std__exceptionDetail.cpp" />
+    <ClCompile Include=".\source\std__ios_baseDetail.cpp" />
+    <ClCompile Include=".\source\std__length_error.cpp" />
+    <ClCompile Include=".\source\std__length_errorDetail.cpp" />
+    <ClCompile Include=".\source\std__logic_error.cpp" />
+    <ClCompile Include=".\source\std__logic_errorDetail.cpp" />
+    <ClCompile Include=".\source\std__out_of_range.cpp" />
+    <ClCompile Include=".\source\std__out_of_rangeDetail.cpp" />
+    <ClCompile Include=".\source\strFILE.cpp" />
+    <ClCompile Include=".\source\strFILEDetail.cpp" />
+    <ClCompile Include=".\source\type_info.cpp" />
+    <ClCompile Include=".\source\type_infoDetail.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

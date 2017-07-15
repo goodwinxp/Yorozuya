@@ -3,8 +3,8 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
-#include <ATF/CMainThread_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
+#include <ATF/CMainThreadInfo.hpp>
 
 namespace GameServer
 {
@@ -33,12 +33,12 @@ namespace GameServer
             static void WINAPIV CMainThread__Load_ReturnPost_Complete(
                 ATF::CMainThread *pObj, 
                 char *pData, 
-                ATF::info::CMainThreadLoad_ReturnPost_Complete114_ptr next);
+                ATF::Info::CMainThreadLoad_ReturnPost_Complete114_ptr next);
 
             static void WINAPIV CMainThread__Load_PostStorage_Complete(
                 ATF::CMainThread *pObj, 
                 char *pData,
-                ATF::info::CMainThreadLoad_PostStorage_Complete112_ptr next);
+                ATF::Info::CMainThreadLoad_PostStorage_Complete112_ptr next);
         };
     };
 };

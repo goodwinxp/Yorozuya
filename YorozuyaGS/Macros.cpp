@@ -49,13 +49,13 @@ namespace GameServer
             unsigned int dwSerial,
             struct _AIOC_A_MACRODATA* pMacro,
             struct _AIOC_A_MACRODATA* pOldMacro,
-            info::CMainThread_db_Update_MacroData266_ptr next)
+            ATF::Info::CMainThread_db_Update_MacroData266_ptr next)
         {
             for (auto &i : pMacro->mcr_Chat)
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!global::IsSQLValidString(j))
+                    if (!Global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }
@@ -64,7 +64,7 @@ namespace GameServer
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!global::IsSQLValidString(j))
+                    if (!Global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }
@@ -78,16 +78,16 @@ namespace GameServer
             _AVATOR_DATA * pNewData, 
             _AVATOR_DATA * pOldData, 
             char * pwszQuery, 
-            ATF::info::CMainThread_db_Update_CryMsg252_ptr next)
+            ATF::Info::CMainThread_db_Update_CryMsg252_ptr next)
         {
             for (auto &i : pNewData->dbBossCry.m_List)
             {       
-                if (!global::IsSQLValidString(i.wszCryMsg))
+                if (!Global::IsSQLValidString(i.wszCryMsg))
                     i.wszCryMsg[0] = '\0';
             }
             for (auto &i : pOldData->dbBossCry.m_List)
             {
-                if (!global::IsSQLValidString(i.wszCryMsg))
+                if (!Global::IsSQLValidString(i.wszCryMsg))
                     i.wszCryMsg[0] = '\0';
             }
 

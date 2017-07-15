@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "ChatSystem.h"
-#include <ATF/global.hpp>
+#include <ATF/Global.hpp>
 
 
 namespace GameServer
@@ -14,12 +14,14 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
+            //core.set_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
         }
 
         void CChatSystem::unload()
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook(&ATF::CPlayer::pc_ChatFarRequest);
+            //core.unset_hook(&ATF::CPlayer::pc_ChatCircleRequest);
         }
 
         void CChatSystem::loop()
@@ -47,7 +49,7 @@ namespace GameServer
             ATF::CPlayer *pPlayer, 
             char *pwszName, 
             char *pwszChatData,
-            ATF::info::CPlayerpc_ChatFarRequest1635_ptr next)
+            ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -86,8 +88,8 @@ namespace GameServer
                         pDst->m_EP.GetEff_Have(_EFF_HAVE::Chat_All_Race) == 0.0)
                     {
                         auto RankingInstance = ATF::CPvpUserAndGuildRankingSystem::Instance();
-                        auto dwSerail = RankingInstance->GetCurrentRaceBossSerial(dstRaceCode, 0);
-                        if (dwSerail != pDst->m_dwObjSerial)
+                        auto dwSerial = RankingInstance->GetCurrentRaceBossSerial(dstRaceCode, 0);
+                        if (dwSerial != pDst->m_dwObjSerial)
                             bFilter = true;
                     }
                 }
@@ -116,6 +118,15 @@ namespace GameServer
                 auto StealSystem = ATF::CChatStealSystem::Instance();
                 StealSystem->StealChatMsg(pPlayer, byChatType, pwszChatData);
             } while (false);
+        }
+
+        void WINAPIV CChatSystem::pc_ChatCircleRequest(
+            ATF::CPlayer * pPlayer, 
+            char * pwszChatData, 
+            ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next)
+        {
+            if (!ATF::Global::ProcessCheatCommand(pPlayer, pwszChatData))
+                next(pPlayer, pwszChatData);
         }
     }
 }

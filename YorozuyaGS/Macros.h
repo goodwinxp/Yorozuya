@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CMainThread_info.hpp>
+#include <ATF/CMainThreadInfo.hpp>
 
 namespace GameServer
 {
@@ -33,7 +33,7 @@ namespace GameServer
                 unsigned int dwSerial,
                 ATF::_AIOC_A_MACRODATA* pMacro,
                 ATF::_AIOC_A_MACRODATA* pOldMacro,
-                ATF::info::CMainThread_db_Update_MacroData266_ptr next);
+                ATF::Info::CMainThread_db_Update_MacroData266_ptr next);
 
             static bool WINAPIV _db_Update_CryMsg(
                 ATF::CMainThread* pObj,
@@ -41,7 +41,7 @@ namespace GameServer
                 ATF::_AVATOR_DATA* pNewData,
                 ATF::_AVATOR_DATA* pOldData,
                 char* pwszQuery,
-                ATF::info::CMainThread_db_Update_CryMsg252_ptr next);
+                ATF::Info::CMainThread_db_Update_CryMsg252_ptr next);
         };
     };
 };

@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CGuild_info.hpp>
+#include <ATF/CGuildInfo.hpp>
 
 namespace GameServer
 {
@@ -31,7 +31,7 @@ namespace GameServer
             static char WINAPIV ManageAcceptORRefuseGuildBattle(
                 ATF::CGuild* pObj, 
                 bool bAccept, 
-                ATF::info::CGuildManageAcceptORRefuseGuildBattle80_ptr next);
+                ATF::Info::CGuildManageAcceptORRefuseGuildBattle80_ptr next);
         };
     };
 };

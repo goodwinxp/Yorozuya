@@ -7,6 +7,19 @@
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_unmandtrader_buy_get_info.hpp>
 
+
+
+/* Variant 2
+Дюп через смену специализации
+*/
+
+/* Variant 3
+Дюп через макс. кол-во денег
+Возможно что для GU этот баг не актуален
+*/
+
+
+
 namespace GameServer
 {
     namespace Fixes
@@ -57,7 +70,7 @@ namespace GameServer
             char byRet,
             char * pLoadData, 
             ATF::CUnmannedTraderTradeInfo * pkTaradInfo, 
-            ATF::info::CUnmannedTraderUserInfoTableCompleteBuy16_ptr next)
+            ATF::Info::CUnmannedTraderUserInfoTableCompleteBuy16_ptr next)
         {
             UNREFERENCED_PARAMETER(byRet);
             UNREFERENCED_PARAMETER(next);
@@ -120,14 +133,14 @@ namespace GameServer
                     pObj->SubCompleteBuyIncreaseVesion(pkQuery->byDivision, pkQuery->byClass);
 
                 if (pQryData.byNum > 0)
-                    ATF::global::g_MainThread->PushDQSData(0xFFFFFFFF, 0i64, 68, (char *)&pQryData, sizeof(pQryData));
+                    ATF::Global::g_MainThread->PushDQSData(0xFFFFFFFF, 0i64, 68, (char *)&pQryData, sizeof(pQryData));
 
                 if (nSucceeded < Dst.byNum)
                     Dst.byRetCode = -1;
 
                 Dst.dwLeftDalant = ppkBuyPlayer->m_Param.GetDalant();
                 char pbyType[] = { 30, 31 };
-                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(ppkBuyPlayer->m_ObjID.m_wIndex, pbyType, (char *)&Dst, Dst.size());
+                ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(ppkBuyPlayer->m_ObjID.m_wIndex, pbyType, (char *)&Dst, Dst.size());
             } while (false);
         }
 
@@ -136,7 +149,7 @@ namespace GameServer
             char byType,
             ATF::_unmannedtrader_re_regist_request_clzo *pRequest,
             ATF::CLogFile *pkLogger,
-            ATF::info::CUnmannedTraderUserInfoReRegist110_ptr next)
+            ATF::Info::CUnmannedTraderUserInfoReRegist110_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -195,27 +208,27 @@ namespace GameServer
 
                 if (dwSub)
                 {
-                    ATF::global::g_Player[pObj->m_wInx].SubDalant(dwSub);
+                    ATF::Global::g_Player[pObj->m_wInx].SubDalant(dwSub);
 
-                    int nLv = ATF::global::g_Player[pObj->m_wInx].m_Param.GetLevel();
+                    int nLv = ATF::Global::g_Player[pObj->m_wInx].m_Param.GetLevel();
                     if (nLv == 30 || nLv == 40 || nLv == 50 || nLv == 60)
                     {
                         ATF::CMoneySupplyMgr::Instance()->UpdateFeeMoneyData(
-                            ATF::global::g_Player[pObj->m_wInx].m_Param.GetRaceCode(),
+                            ATF::Global::g_Player[pObj->m_wInx].m_Param.GetRaceCode(),
                             nLv, 
                             dwSub);
                     }
                 }
 
                 pObj->m_kRequestState.SetRequest(5);
-                ATF::global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, 140, (char *)&Dst, sizeof(Dst));
+                ATF::Global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, 140, (char *)&Dst, sizeof(Dst));
             } while (false);
         }
 
         bool WINAPIV CUnmannedTrader::UpdateReRegist(
             ATF::CUnmannedTraderController * pObj, 
             char * pData, 
-            ATF::info::CUnmannedTraderControllerUpdateReRegist108_ptr next)
+            ATF::Info::CUnmannedTraderControllerUpdateReRegist108_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -250,7 +263,7 @@ namespace GameServer
                     
                     if (!pQryData->List[j].bRegist)
                     {
-                        bState = (*ATF::global::pkDB)->Update_UnmannedTraderItemState(
+                        bState = (*ATF::Global::pkDB)->Update_UnmannedTraderItemState(
                             pQryData->byType,
                             pQryData->List[j].dwRegistSerial,
                             pQryData->List[j].byUpdateState,
@@ -264,7 +277,7 @@ namespace GameServer
 
                     if (pQryData->List[j].byProcRet)
                     {
-                        bState = (*ATF::global::pkDB)->Update_UnmannedTraderItemState(
+                        bState = (*ATF::Global::pkDB)->Update_UnmannedTraderItemState(
                             pQryData->byType,
                             pQryData->List[j].dwRegistSerial,
                             5,
@@ -277,7 +290,7 @@ namespace GameServer
                     }
 
                     unsigned int pdwRegister = 0;
-                    char byResult = (*ATF::global::pkDB)->Select_UnmannedTraderRegister(
+                    char byResult = (*ATF::Global::pkDB)->Select_UnmannedTraderRegister(
                         pQryData->byType,
                         pQryData->List[j].dwRegistSerial,
                         &pdwRegister);
@@ -295,7 +308,7 @@ namespace GameServer
                     }
 
                     bState = Update_UnmannedTraderSingleItemInfo(
-                        *ATF::global::pkDB,
+                        *ATF::Global::pkDB,
                         pQryData->List[j].dwRegistSerial,
                         pQryData->List[j].byAmount);
                     if (!bState)
@@ -304,7 +317,7 @@ namespace GameServer
                         continue;
                     }
 
-                    bState = (*ATF::global::pkDB)->Update_UnmannedTraderReRegist(
+                    bState = (*ATF::Global::pkDB)->Update_UnmannedTraderReRegist(
                         pQryData->byType,
                         pQryData->List[j].dwRegistSerial,
                         pQryData->List[j].byUpdateState,
@@ -326,7 +339,7 @@ namespace GameServer
         void WINAPIV CUnmannedTrader::CompleteReRegist(
             ATF::CUnmannedTraderUserInfoTable * pObj, 
             char * pData, 
-            ATF::info::CUnmannedTraderUserInfoTableCompleteReRegist22_ptr next)
+            ATF::Info::CUnmannedTraderUserInfoTableCompleteReRegist22_ptr next)
         {
             do
             {

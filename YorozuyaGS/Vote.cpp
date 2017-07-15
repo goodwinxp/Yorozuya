@@ -95,7 +95,7 @@ namespace GameServer
         int WINAPIV CVote::_SendVotePaper(
             ATF::Voter * pObj, 
             ATF::CPlayer * pOne, 
-            ATF::info::Voter_SendVotePaper12_ptr next)
+            ATF::Info::Voter_SendVotePaper12_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -139,7 +139,7 @@ namespace GameServer
 
                 char pbyType[2]{ 56, 5 };
                 auto msg = &pObj->_kCandidateInfo[pOne->m_Param.GetRaceCode()];
-                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)msg, msg->size());
+                ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)msg, msg->size());
             } while (false);
 
             return result;
@@ -147,11 +147,11 @@ namespace GameServer
 
         void WINAPIV CVote::_SendVotePaperAll(
             ATF::Voter * pObj, 
-            ATF::info::Voter_SendVotePaperAll14_ptr next)
+            ATF::Info::Voter_SendVotePaperAll14_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
-            for (auto& player : ATF::global::g_Player)
+            for (auto& player : ATF::Global::g_Player)
             {
                 _SendVotePaper(pObj, &player, nullptr);
             }
@@ -160,7 +160,7 @@ namespace GameServer
         void WINAPIV CVote::_SendVoteScore(
             ATF::Voter * pObj, 
             ATF::CPlayer * pOne, 
-            ATF::info::Voter_SendVoteScore16_ptr next)
+            ATF::Info::Voter_SendVoteScore16_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -186,13 +186,13 @@ namespace GameServer
                     b.byScoreRate = 0;
             }
             
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)&info, info.size());
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pOne->m_ObjID.m_wIndex, pbyType, (char *)&info, info.size());
         }
 
         void WINAPIV CVote::_SendVoteScoreAll(
             ATF::Voter * pObj, 
             char byRace, 
-            ATF::info::Voter_SendVoteScoreAll18_ptr next)
+            ATF::Info::Voter_SendVoteScoreAll18_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -219,14 +219,14 @@ namespace GameServer
 
             for (int i = 0; i < MAX_PLAYER; ++i)
             {
-                auto& player = ATF::global::g_Player[i];
+                auto& player = ATF::Global::g_Player[i];
                 if (!player.m_bOper)
                     continue;
 
                 if (player.m_Param.GetRaceCode() != byRace)
                     continue;
 
-                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(i, pbyType, (char *)&info, info.size());
+                ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(i, pbyType, (char *)&info, info.size());
             }
         }
 
@@ -234,7 +234,7 @@ namespace GameServer
             ATF::Voter * pObj, 
             ATF::CPlayer * pOne, 
             char * pdata, 
-            ATF::info::Voter_Vote22_ptr next)
+            ATF::Info::Voter_Vote22_ptr next)
         {
             auto instance = GetModule<CVote>();
             if (instance->check_conditions(pOne))

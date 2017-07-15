@@ -2,7 +2,7 @@
 
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
-#include <ATF/Voter_info.hpp>
+#include <ATF/VoterInfo.hpp>
 
 
 namespace GameServer
@@ -67,27 +67,27 @@ namespace GameServer
             static int WINAPIV _SendVotePaper(
                 ATF::Voter* pObj, 
                 ATF::CPlayer* pOne,
-                ATF::info::Voter_SendVotePaper12_ptr next);
+                ATF::Info::Voter_SendVotePaper12_ptr next);
 
             static void WINAPIV _SendVotePaperAll(
                 ATF::Voter* pObj,
-                ATF::info::Voter_SendVotePaperAll14_ptr next);
+                ATF::Info::Voter_SendVotePaperAll14_ptr next);
 
             static void WINAPIV _SendVoteScore(
                 ATF::Voter* pObj, 
                 ATF::CPlayer* pOne,
-                ATF::info::Voter_SendVoteScore16_ptr next);
+                ATF::Info::Voter_SendVoteScore16_ptr next);
 
             static void WINAPIV _SendVoteScoreAll(
                 ATF::Voter* pObj, 
                 char byRace,
-                ATF::info::Voter_SendVoteScoreAll18_ptr next);
+                ATF::Info::Voter_SendVoteScoreAll18_ptr next);
 
             static int WINAPIV _Vote(
                 ATF::Voter* pObj, 
                 ATF::CPlayer* pOne,
                 char* pdata, 
-                ATF::info::Voter_Vote22_ptr next);
+                ATF::Info::Voter_Vote22_ptr next);
         };
     };
 };

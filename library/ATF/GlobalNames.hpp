@@ -1,11 +1,11 @@
 #pragma once
 
-#include "./common/common.h"
-#include "CPlayer.hpp"
-#include "__time32_t.hpp"
+#include <common/common.h>
+#include <CPlayer.hpp>
+#include <__time32_t.hpp>
 
 START_ATF_NAMESPACE
-    namespace global
+    namespace Global
     {
         #define MAX_PLAYER 2532
 

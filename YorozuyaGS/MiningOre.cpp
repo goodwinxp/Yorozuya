@@ -49,9 +49,9 @@ namespace GameServer
             char byMineIndex,
             char byOreIndex,
             uint16_t wBatterySerial,
-            ATF::info::CPlayerpc_MineStart1789_ptr next)
+            ATF::Info::CPlayerpc_MineStart1789_ptr next)
         {
-            auto pOreFld = ATF::global::g_MainThread->m_tblItemData[(int)e_code_item_table::tbl_code_ore].GetRecord(byOreIndex);
+            auto pOreFld = ATF::Global::g_MainThread->m_tblItemData[(int)e_code_item_table::tbl_code_ore].GetRecord(byOreIndex);
             if (pOreFld == nullptr)
             {
                 pPlayer->SendMsg_MineStartResult(9);

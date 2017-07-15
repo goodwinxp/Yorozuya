@@ -63,7 +63,7 @@ namespace GameServer
             char byRaceSexCode, 
             char * pszClassCode, 
             unsigned int dwBaseShape, 
-            ATF::info::CUserDBInsert_Char_Request50_ptr next)
+            ATF::Info::CUserDBInsert_Char_Request50_ptr next)
         {
             if (!CheckBaseShape(dwBaseShape))
             {

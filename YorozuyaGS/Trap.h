@@ -3,8 +3,8 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
-#include <ATF/CTrap_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
+#include <ATF/CTrapInfo.hpp>
 
 namespace GameServer
 {
@@ -37,17 +37,17 @@ namespace GameServer
             static void WINAPIV RecvKillMessage(
                 ATF::CTrap* pObj,
                 ATF::CCharacter* pDier,
-                ATF::info::CTrapRecvKillMessage70_ptr next);
+                ATF::Info::CTrapRecvKillMessage70_ptr next);
 
             static void WINAPIV SendMsg_FixPosition(
                 ATF::CTrap* pTrap,
                 int n,
-                ATF::info::CTrapSendMsg_FixPosition82_ptr next);
+                ATF::Info::CTrapSendMsg_FixPosition82_ptr next);
 
             static void WINAPIV SendMsg_Attack(
                 ATF::CTrap* pTrap,
                 ATF::CAttack *pAt,
-                ATF::info::CTrapSendMsg_Attack76_ptr next);
+                ATF::Info::CTrapSendMsg_Attack76_ptr next);
         };
     };
 };

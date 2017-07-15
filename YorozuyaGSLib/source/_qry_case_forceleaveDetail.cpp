@@ -1,0 +1,27 @@
+#include <_qry_case_forceleaveDetail.hpp>
+#include <common/ATFCore.hpp>
+
+
+START_ATF_NAMESPACE
+    namespace Detail
+    {
+        Info::_qry_case_forceleavesize2_ptr _qry_case_forceleavesize2_next(nullptr);
+        Info::_qry_case_forceleavesize2_clbk _qry_case_forceleavesize2_user(nullptr);
+        
+        int _qry_case_forceleavesize2_wrapper(struct _qry_case_forceleave* _this)
+        {
+           return _qry_case_forceleavesize2_user(_this, _qry_case_forceleavesize2_next);
+        };
+        
+        ::std::array<hook_record, 1> _qry_case_forceleave_functions = 
+        {
+            _hook_record {
+                (LPVOID)0x14025d630L,
+                (LPVOID *)&_qry_case_forceleavesize2_user,
+                (LPVOID *)&_qry_case_forceleavesize2_next,
+                (LPVOID)cast_pointer_function(_qry_case_forceleavesize2_wrapper),
+                (LPVOID)cast_pointer_function((int(_qry_case_forceleave::*)())&_qry_case_forceleave::size)
+            },
+        };
+    }; // end namespace Detail
+END_ATF_NAMESPACE

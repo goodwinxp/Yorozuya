@@ -51,7 +51,7 @@ namespace GameServer
         {
             std::unique_lock<std::mutex> lock(m_mtxCondition);
             while(!m_cvCondition.wait_for(lock, m_timeWaitOpenWorld, [this] {
-                return ATF::global::g_MainThread->m_bWorldOpen || m_bStop.load();
+                return ATF::Global::g_MainThread->m_bWorldOpen || m_bStop.load();
             }));
         }
 

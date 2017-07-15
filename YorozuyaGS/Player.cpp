@@ -67,13 +67,13 @@ namespace GameServer
             ATF::CPlayer * pObj, 
             ATF::CUserDB * pUser, 
             bool bFirstStart, 
-            ATF::info::CPlayerLoad366_ptr next)
+            ATF::Info::CPlayerLoad366_ptr next)
         {
             pObj->m_bPostLoad = false;
             bool bResult = next(pObj, pUser, bFirstStart);
             if (bResult && !pObj->m_Param.m_pGuild)
             {
-                auto dwDestroyerSerial = ATF::global::g_HolySys->GetDestroyerSerial();
+                auto dwDestroyerSerial = ATF::Global::g_HolySys->GetDestroyerSerial();
                 if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
                 {
                     pObj->SetLastAttBuff(false);
@@ -85,7 +85,7 @@ namespace GameServer
         void WINAPIV CPlayer::NetClose(
             ATF::CPlayer *pObj,
             bool bMoveOutLobby,
-            ATF::info::CPlayerNetClose370_ptr next)
+            ATF::Info::CPlayerNetClose370_ptr next)
         {
             next(pObj, bMoveOutLobby);
             pObj->m_bPostLoad = false;
@@ -95,7 +95,7 @@ namespace GameServer
             ATF::CPlayer * pObj, 
             ATF::CPlayer * pDier, 
             char byKillerObjID,
-            ATF::info::CPlayerCalcPvP74_ptr next)
+            ATF::Info::CPlayerCalcPvP74_ptr next)
         {
             if (pObj->m_Param.GetRaceCode() == pDier->m_Param.GetRaceCode())
             {
@@ -109,7 +109,7 @@ namespace GameServer
             ATF::CPlayer * pObj, 
             ATF::CPlayer * pDier, 
             char byKillerObjID,
-            ATF::info::CPlayerCalPvpTempCash52_ptr next)
+            ATF::Info::CPlayerCalPvpTempCash52_ptr next)
         {
             if (pObj->m_Param.GetRaceCode() == pDier->m_Param.GetRaceCode())
                 return;
@@ -123,7 +123,7 @@ namespace GameServer
             uint16_t wTrapItemSerial,
             float * pfPos,
             uint16_t * pConsumeSerial,
-            ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next)
+            ATF::Info::CPlayerpc_MakeTrapRequest1783_ptr next)
         {
             UNREFERENCED_PARAMETER(pfPos);
             do
@@ -153,7 +153,7 @@ namespace GameServer
             ATF::_make_tower_request_clzo::__material * pMaterial, 
             float * pfPos, 
             uint16_t * pConsumeSerial,
-            ATF::info::CPlayerpc_MakeTowerRequest1781_ptr next)
+            ATF::Info::CPlayerpc_MakeTowerRequest1781_ptr next)
         {
             UNREFERENCED_PARAMETER(pfPos);
             do
@@ -178,7 +178,7 @@ namespace GameServer
         void WINAPIV CPlayer::pc_GestureRequest(
             ATF::CPlayer * pObj, 
             char byGestureType, 
-            ATF::info::CPlayerpc_GestureRequest1719_ptr next)
+            ATF::Info::CPlayerpc_GestureRequest1719_ptr next)
         {
             if (pObj->IsMineMode())
                 return;
@@ -199,7 +199,7 @@ namespace GameServer
             unsigned int dwObj1, 
             unsigned int dwObj2, 
             unsigned int dwObj3, 
-            ATF::info::CPlayerpc_GuildManageRequest1745_ptr next)
+            ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next)
         {
             if (!pObj->m_Param.m_pGuild)
             {
@@ -214,7 +214,7 @@ namespace GameServer
             ATF::CPlayer * pObj, 
             int nPortalIndex, 
             uint16_t * pConsumeSerial, 
-            ATF::info::CPlayerpc_MovePortal1795_ptr next)
+            ATF::Info::CPlayerpc_MovePortal1795_ptr next)
         {
             if (pObj->Is_Battle_Mode())
             {
@@ -232,9 +232,9 @@ namespace GameServer
         char WINAPIV CPlayer::pc_CharacterRenameCheck(
             ATF::CPlayer * pObj, 
             char * strCharacterName, 
-            ATF::info::CPlayerpc_CharacterRenameCheck1629_ptr next)
+            ATF::Info::CPlayerpc_CharacterRenameCheck1629_ptr next)
         {
-            if (ATF::global::IsSQLValidString(strCharacterName))
+            if (ATF::Global::IsSQLValidString(strCharacterName))
                 return next(pObj, strCharacterName);
 
             return 6;
@@ -243,7 +243,7 @@ namespace GameServer
         void WINAPIV CPlayer::pc_GotoBasePortalRequest(
             ATF::CPlayer * pObj, 
             unsigned __int16 wItemSerial, 
-            ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next)
+            ATF::Info::CPlayerpc_GotoBasePortalRequest1725_ptr next)
         {
             if (pObj->Is_Battle_Mode() && pObj->m_byUserDgr == 0)
             {
@@ -257,7 +257,7 @@ namespace GameServer
         void WINAPIV CPlayer::pc_ThrowStorageItem(
             ATF::CPlayer * pObj, 
             ATF::_STORAGE_POS_INDIV* pItem,
-            ATF::info::CPlayerpc_ThrowStorageItem1953_ptr next)
+            ATF::Info::CPlayerpc_ThrowStorageItem1953_ptr next)
         {
             if (!pObj->m_pUserDB)
                 return;
@@ -292,7 +292,7 @@ namespace GameServer
                     break;
                 }
 
-                if (ATF::global::IsOverLapItem(pSrc->m_byTableCode))
+                if (ATF::Global::IsOverLapItem(pSrc->m_byTableCode))
                 {
                     if (pItem->byNum <= 0 || pItem->byNum > pSrc->m_dwDur)
                     {

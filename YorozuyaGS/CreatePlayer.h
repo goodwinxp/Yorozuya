@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CUserDB_info.hpp>
+#include <ATF/CUserDBInfo.hpp>
 
 namespace GameServer
 {
@@ -35,7 +35,7 @@ namespace GameServer
                 char byRaceSexCode, 
                 char *pszClassCode, 
                 unsigned int dwBaseShape,
-                ATF::info::CUserDBInsert_Char_Request50_ptr next);
+                ATF::Info::CUserDBInsert_Char_Request50_ptr next);
         };
     };
 };

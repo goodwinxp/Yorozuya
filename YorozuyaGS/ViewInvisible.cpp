@@ -6,7 +6,7 @@
 #include <ATF/global.hpp>
 #include <ATF/_player_fixpositon_zocl.hpp>
 #include <ATF/_player_real_move_zocl.hpp>
-#include <ATF/CGameObject_detail.hpp>
+#include <ATF/CGameObjectInfo.hpp>
 
 namespace GameServer
 {
@@ -63,7 +63,7 @@ namespace GameServer
         void WINAPIV CViewInvisible::CPlayer__SendMsg_StateInform(
             ATF::CPlayer * pPlayer, 
             uint64_t dwStateFlag, 
-            ATF::info::CPlayerSendMsg_StateInform1074_ptr next)
+            ATF::Info::CPlayerSendMsg_StateInform1074_ptr next)
         {
             next(pPlayer, dwStateFlag);
             pPlayer->NewViewCircleObject();
@@ -104,7 +104,7 @@ namespace GameServer
             char * szMsg,
             int nMsgSize,
             bool bToOne,
-            ATF::info::CGameObjectCircleReport24_ptr next)
+            ATF::Info::CGameObjectCircleReport24_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -115,13 +115,13 @@ namespace GameServer
                     if (!pObj->m_bPlayerCircleList[dwClientIndex])
                         continue;
 
-                    ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, szMsg, nMsgSize);
+                    ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, szMsg, nMsgSize);
                 }
                 return;
             }
 
             if (bToOne && !pObj->m_ObjID.m_byKind && !pObj->m_ObjID.m_byID)
-                ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pObj->m_ObjID.m_wIndex, pbyType, szMsg, nMsgSize);
+                ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pObj->m_ObjID.m_wIndex, pbyType, szMsg, nMsgSize);
 
             if (!(pObj->m_pCurMap && pObj->m_dwCurSec != -1))
                 return;
@@ -174,7 +174,7 @@ namespace GameServer
                             continue;
                         }
 
-                        ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, szMsg, nMsgSize);
+                        ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, szMsg, nMsgSize);
                     }
                 }
             }
@@ -183,11 +183,11 @@ namespace GameServer
         void WINAPIV CViewInvisible::CPlayer__SendMsg_FixPosition(
             ATF::CPlayer* pPlayer,
             int dwClientIndex,
-            ATF::info::CPlayerSendMsg_FixPosition752_ptr next)
+            ATF::Info::CPlayerSendMsg_FixPosition752_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
-            CPlayer* pDstPlayer = &global::g_Player[dwClientIndex];
+            CPlayer* pDstPlayer = &Global::g_Player[dwClientIndex];
             if (!check_conditions(pPlayer, pDstPlayer))
                 return;
 
@@ -197,22 +197,22 @@ namespace GameServer
             szMsg.wIndex = pPlayer->m_ObjID.m_wIndex;
             szMsg.dwSerial = pPlayer->m_dwObjSerial;
             szMsg.wEquipVer = pPlayer->GetVisualVer();
-            ATF::global::FloatToShort(pPlayer->m_fCurPos, szMsg.zCur, 3);
+            ATF::Global::FloatToShort(pPlayer->m_fCurPos, szMsg.zCur, 3);
             szMsg.byRaceCode = pPlayer->m_Param.GetRaceSexCode();
             szMsg.dwStateFlag = pPlayer->GetStateFlag();
             szMsg.wLastEffectCode = pPlayer->m_wLastContEffect;
             szMsg.byColor = pPlayer->m_byGuildBattleColorInx;
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_RealMovePoint(
             ATF::CPlayer * pPlayer,
             int dwClientIndex,
-            ATF::info::CPlayerSendMsg_RealMovePoint1000_ptr next)
+            ATF::Info::CPlayerSendMsg_RealMovePoint1000_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
-            CPlayer* pDstPlayer = &global::g_Player[dwClientIndex];
+            CPlayer* pDstPlayer = &Global::g_Player[dwClientIndex];
             if (!check_conditions(pPlayer, pDstPlayer))
                 return;
 
@@ -224,7 +224,7 @@ namespace GameServer
             szMsg.dwSerial = pPlayer->m_dwObjSerial;
             szMsg.dwEquipVer = pPlayer->GetVisualVer();
 
-            ATF::global::FloatToShort(pPlayer->m_fCurPos, szMsg.zCur, 3);
+            ATF::Global::FloatToShort(pPlayer->m_fCurPos, szMsg.zCur, 3);
 
             szMsg.zTar[0] = (signed int)_STD floor(pPlayer->m_fTarPos[0]);
             szMsg.zTar[1] = (signed int)_STD floor(pPlayer->m_fTarPos[2]);
@@ -234,13 +234,13 @@ namespace GameServer
             szMsg.byDirect = pPlayer->m_byMoveDirect;
             szMsg.byColor = pPlayer->m_byGuildBattleColorInx;
 
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_OtherShapePart(
             ATF::CPlayer * pPlayer,
             ATF::CPlayer * pDst,
-            ATF::info::CPlayerSendMsg_OtherShapePart914_ptr next)
+            ATF::Info::CPlayerSendMsg_OtherShapePart914_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
             if (!check_conditions(pPlayer, pDst))
@@ -254,13 +254,13 @@ namespace GameServer
 
             char pbyType[2]{ 3, 0x20 };
 
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufSpapePart, pPlayer->m_bufSpapePart.size());
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufSpapePart, pPlayer->m_bufSpapePart.size());
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_OtherShapeAll(
             ATF::CPlayer * pPlayer,
             ATF::CPlayer * pDst,
-            ATF::info::CPlayerSendMsg_OtherShapeAll910_ptr next)
+            ATF::Info::CPlayerSendMsg_OtherShapeAll910_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
             if (!check_conditions(pPlayer, pDst))
@@ -275,7 +275,7 @@ namespace GameServer
             char pbyType[2]{ 3, 0x1f };
             auto const test = sizeof(ATF::CGameObject);
 
-            ATF::global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufShapeAll, pPlayer->m_bufShapeAll.size());
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufShapeAll, pPlayer->m_bufShapeAll.size());
         }
     }
 }

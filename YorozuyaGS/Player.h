@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/CPlayer_info.hpp>
+#include <ATF/CPlayerInfo.hpp>
 #include <ATF/_make_tower_request_clzo.hpp>
 
 namespace GameServer
@@ -33,24 +33,24 @@ namespace GameServer
                 ATF::CPlayer *pObj, 
                 ATF::CUserDB* pUser, 
                 bool bFirstStart,
-                ATF::info::CPlayerLoad366_ptr next);
+                ATF::Info::CPlayerLoad366_ptr next);
 
             static void WINAPIV NetClose(
                 ATF::CPlayer *pObj,
                 bool bMoveOutLobby,
-                ATF::info::CPlayerNetClose370_ptr next);
+                ATF::Info::CPlayerNetClose370_ptr next);
 
             static void WINAPIV CalcPvP(
                 ATF::CPlayer *pObj, 
                 ATF::CPlayer *pDier, 
                 char byKillerObjID,
-                ATF::info::CPlayerCalcPvP74_ptr next);
+                ATF::Info::CPlayerCalcPvP74_ptr next);
 
             static void WINAPIV CalPvpTempCash(
                 ATF::CPlayer *pObj,
                 ATF::CPlayer *pDier,
                 char byKillerObjID,
-                ATF::info::CPlayerCalPvpTempCash52_ptr next);
+                ATF::Info::CPlayerCalPvpTempCash52_ptr next);
 
             static void WINAPIV pc_MakeTrapRequest(
                 ATF::CPlayer* pObj,
@@ -58,7 +58,7 @@ namespace GameServer
                 uint16_t wTrapItemSerial,
                 float* pfPos,
                 uint16_t* pConsumeSerial,
-                ATF::info::CPlayerpc_MakeTrapRequest1783_ptr next);
+                ATF::Info::CPlayerpc_MakeTrapRequest1783_ptr next);
 
             static void WINAPIV pc_MakeTowerRequest(
                 ATF::CPlayer* pObj,
@@ -68,12 +68,12 @@ namespace GameServer
                 ATF::_make_tower_request_clzo::__material* pMaterial,
                 float* pfPos,
                 uint16_t* pConsumeSerial, 
-                ATF::info::CPlayerpc_MakeTowerRequest1781_ptr next);
+                ATF::Info::CPlayerpc_MakeTowerRequest1781_ptr next);
 
             static void WINAPIV pc_GestureRequest(
                 ATF::CPlayer* pObj,
                 char byGestureType,
-                ATF::info::CPlayerpc_GestureRequest1719_ptr next);
+                ATF::Info::CPlayerpc_GestureRequest1719_ptr next);
 
             static void WINAPIV pc_GuildManageRequest(
                 ATF::CPlayer* pObj,
@@ -82,28 +82,28 @@ namespace GameServer
                 unsigned int dwObj1,
                 unsigned int dwObj2,
                 unsigned int dwObj3,
-                ATF::info::CPlayerpc_GuildManageRequest1745_ptr next);
+                ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next);
 
             static void WINAPIV pc_MovePortal(
                 ATF::CPlayer* pObj, 
                 int nPortalIndex, 
                 uint16_t* pConsumeSerial, 
-                ATF::info::CPlayerpc_MovePortal1795_ptr next);
+                ATF::Info::CPlayerpc_MovePortal1795_ptr next);
 
             static char WINAPIV pc_CharacterRenameCheck(
                 ATF::CPlayer *pObj, 
                 char *strCharacterName,
-                ATF::info::CPlayerpc_CharacterRenameCheck1629_ptr next);
+                ATF::Info::CPlayerpc_CharacterRenameCheck1629_ptr next);
 
             static void WINAPIV pc_GotoBasePortalRequest(
                 ATF::CPlayer *pObj,
                 unsigned __int16 wItemSerial,
-                ATF::info::CPlayerpc_GotoBasePortalRequest1725_ptr next);
+                ATF::Info::CPlayerpc_GotoBasePortalRequest1725_ptr next);
 
             static void WINAPIV pc_ThrowStorageItem(
                 ATF::CPlayer *pObj, 
                 ATF::_STORAGE_POS_INDIV* pItem,
-                ATF::info::CPlayerpc_ThrowStorageItem1953_ptr next);
+                ATF::Info::CPlayerpc_ThrowStorageItem1953_ptr next);
         };
     };
 };

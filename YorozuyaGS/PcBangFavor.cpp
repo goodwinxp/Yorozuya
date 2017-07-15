@@ -49,7 +49,7 @@ namespace GameServer
             unsigned int dwRecIndex, 
             char * bySeletItemIndex, 
             int nSelectCount, 
-            ATF::info::CPcBangFavorPcBangGiveItem16_ptr next)
+            ATF::Info::CPcBangFavorPcBangGiveItem16_ptr next)
         {
             bool result = false;
 

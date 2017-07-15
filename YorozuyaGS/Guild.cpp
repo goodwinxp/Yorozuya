@@ -43,7 +43,7 @@ namespace GameServer
         char WINAPIV CGuild::ManageAcceptORRefuseGuildBattle(
             ATF::CGuild * pObj, 
             bool bAccept, 
-            ATF::info::CGuildManageAcceptORRefuseGuildBattle80_ptr next)
+            ATF::Info::CGuildManageAcceptORRefuseGuildBattle80_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 

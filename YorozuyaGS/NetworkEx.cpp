@@ -50,7 +50,7 @@ namespace GameServer
             ATF::CNetworkEX * pObj, 
             int n, 
             char * pBuf, 
-            ATF::info::CNetworkEXDTradeAskRequest200_ptr next)
+            ATF::Info::CNetworkEXDTradeAskRequest200_ptr next)
         {
             bool result = false;
 
@@ -72,7 +72,7 @@ namespace GameServer
             int n, 
             uint16_t wSize, 
             char * pBuf, 
-            ATF::info::CNetworkEXApex_R48_ptr next)
+            ATF::Info::CNetworkEXApex_R48_ptr next)
         {
             UNREFERENCED_PARAMETER(pObj);
             UNREFERENCED_PARAMETER(n);
@@ -88,7 +88,7 @@ namespace GameServer
             int n, 
             uint16_t wSize, 
             char * pBuf, 
-            ATF::info::CNetworkEXApex_T50_ptr next)
+            ATF::Info::CNetworkEXApex_T50_ptr next)
         {
             UNREFERENCED_PARAMETER(pObj);
             UNREFERENCED_PARAMETER(n);

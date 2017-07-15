@@ -22,7 +22,7 @@ namespace GameServer
                     break;
                 }
 
-                _base_fld* pRecordItem = global::g_MainThread->m_tblItemData[pItem->m_byTableCode].GetRecord(pItem->m_wItemIndex);
+                _base_fld* pRecordItem = Global::g_MainThread->m_tblItemData[pItem->m_byTableCode].GetRecord(pItem->m_wItemIndex);
                 if (!pRecordItem)
                 {
                     break;

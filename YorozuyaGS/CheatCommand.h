@@ -3,7 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
-#include <ATF/global_info.hpp>
+#include <ATF/Global__GlobalInfo.hpp>
 
 namespace GameServer
 {
@@ -32,7 +32,7 @@ namespace GameServer
             static bool WINAPIV AuthorityFilter(
                 ATF::CHEAT_COMMAND* pCmd, 
                 ATF::CPlayer* pOne,
-                ATF::global::info::globalAuthorityFilter25_ptr next);
+                ATF::Global::Info::AuthorityFilter25_ptr next);
         };
     };
 };

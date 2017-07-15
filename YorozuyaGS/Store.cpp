@@ -56,7 +56,7 @@ namespace GameServer
             float fDiscountRate, 
             char byRace, 
             char byGrade, 
-            ATF::info::CItemStoreIsSell36_ptr next)
+            ATF::Info::CItemStoreIsSell36_ptr next)
         {
             static const uint64_t MaxPrice = 0xffffffff;
             uint64_t uuSummaryPrice[(size_t)e_money_type::num] = { 0 };
@@ -65,11 +65,11 @@ namespace GameServer
             {
                 char nTableCode = pObj->m_pStorageItem[pOffer[i].byGoodIndex].byItemTableCode;
                 if (pOffer[i].byGoodAmount > 1 && 
-                    ATF::global::IsOverLapItem(nTableCode) == FALSE)
+                    ATF::Global::IsOverLapItem(nTableCode) == FALSE)
                     return 100;
             }
 
-            float fR = ATF::global::eGetTex(byRace) + 1.0;
+            float fR = ATF::Global::eGetTex(byRace) + 1.0;
             for (int i = 0; i < byOfferNum; ++i)
             {
                 char byMoneyUnit = 0;

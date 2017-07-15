@@ -58,7 +58,7 @@ namespace GameServer
             unsigned int nCurTime, 
             ATF::_skill_fld* pFld, 
             bool bCheckDist, 
-            ATF::info::CPotionMgrPreCheckPotion22_ptr next)
+            ATF::Info::CPotionMgrPreCheckPotion22_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
 
@@ -111,7 +111,7 @@ namespace GameServer
 
                 if (bCheckDist && pUsePlayer != *pTargetCharacter)
                 {
-                    auto fDist = ATF::global::GetSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
+                    auto fDist = ATF::Global::GetSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
                     if (fDist > (float)pfB->m_nUseRange)
                     {
                         nResult = 20;
@@ -214,8 +214,8 @@ namespace GameServer
                     }
 
                     if (pfB->m_nDelayType == 35 &&
-                        ATF::global::g_HolySys->GetDestroyerState() == 2 &&
-                        ATF::global::g_HolySys->GetDestroyerSerial() == pUsePlayer->m_dwObjSerial)
+                        ATF::Global::g_HolySys->GetDestroyerState() == 2 &&
+                        ATF::Global::g_HolySys->GetDestroyerSerial() == pUsePlayer->m_dwObjSerial)
                     {
                         nResult = 45;
                         break;
@@ -302,7 +302,7 @@ namespace GameServer
                         auto index = data.GetEffectIndex();
 
                         auto pCurrFld = (ATF::_skill_fld*)pObj->m_tblPotionEffectData.GetRecord(index);
-                        auto pPotionFld = (ATF::_PotionItem_fld*)ATF::global::g_MainThread->m_tblItemData[(int)e_code_item_table::tbl_code_potion].GetRecord(index);
+                        auto pPotionFld = (ATF::_PotionItem_fld*)ATF::Global::g_MainThread->m_tblItemData[(int)e_code_item_table::tbl_code_potion].GetRecord(index);
 
                         if (!pCurrFld || !pPotionFld)
                             continue;
