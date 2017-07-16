@@ -61,6 +61,11 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 ATF::CPlayer *pDst,
                 ATF::Info::CPlayerSendMsg_OtherShapeAll910_ptr next);
+
+        private:
+            static void CPlayer__SendMsg_OtherShapeAllImpl(
+                ATF::CPlayer * pPlayer,
+                ATF::CPlayer * pDst);
         };
     };
 };

@@ -66,7 +66,6 @@ namespace GameServer
             ATF::Info::CPlayerSendMsg_StateInform1074_ptr next)
         {
             next(pPlayer, dwStateFlag);
-            pPlayer->NewViewCircleObject();
         }
 
         bool check_conditions(ATF::CPlayer *pPlayer, ATF::CPlayer *pDst)
@@ -112,10 +111,8 @@ namespace GameServer
             {
                 for (int dwClientIndex = 0; dwClientIndex < MAX_PLAYER; ++dwClientIndex)
                 {
-                    if (!pObj->m_bPlayerCircleList[dwClientIndex])
-                        continue;
-
-                    ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, szMsg, nMsgSize);
+                    if (pObj->m_bPlayerCircleList[dwClientIndex])
+                        ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, szMsg, nMsgSize);
                 }
                 return;
             }
@@ -123,7 +120,7 @@ namespace GameServer
             if (bToOne && !pObj->m_ObjID.m_byKind && !pObj->m_ObjID.m_byID)
                 ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pObj->m_ObjID.m_wIndex, pbyType, szMsg, nMsgSize);
 
-            if (!(pObj->m_pCurMap && pObj->m_dwCurSec != -1))
+            if (!pObj->m_pCurMap || pObj->m_dwCurSec == -1)
                 return;
 
             int nRadius = pObj->GetUseSectorRange();
@@ -150,26 +147,31 @@ namespace GameServer
                         if (pDst == pObj)
                             continue;
 
-                        if (pObj->m_ObjID.m_byID == 7)
+                        if (!pObj->m_ObjID.m_byKind)
                         {
-                            ATF::CTrap* pTrap = (ATF::CTrap*)pObj;
-                            if (pTrap->m_dwMasterSerial != pDst->m_Param.GetCharSerial())
+                            if (pObj->m_ObjID.m_byID == 0)
                             {
-                                if (!(nMsgSize == 5 && !bToOne))
+                                if (!check_conditions((ATF::CPlayer*)pObj, pDst))
+                                    continue;
+                            }
+
+                            if (pObj->m_ObjID.m_byID == 7)
+                            {
+                                ATF::CTrap* pTrap = (ATF::CTrap*)pObj;
+                                if (pTrap->m_dwMasterSerial != pDst->m_Param.GetCharSerial())
                                 {
-                                    if (!pDst->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
+                                    if (!(nMsgSize == 5 && !bToOne))
                                     {
-                                        continue;
+                                        if (!pDst->m_EP.GetEff_State((int)ATF::_EFF_STATE::Find_Trap))
+                                        {
+                                            continue;
+                                        }
                                     }
                                 }
                             }
                         }
-                        if (!pObj->m_ObjID.m_byKind)
-                        {
-                            if (!check_conditions((ATF::CPlayer*)pObj, pDst))
-                                continue;
-                        }
-                        else if (pObj->m_bObserver && !pDst->m_byUserDgr)
+
+                        if (pObj->m_bObserver && !pDst->m_byUserDgr)
                         {
                             continue;
                         }
@@ -203,6 +205,8 @@ namespace GameServer
             szMsg.wLastEffectCode = pPlayer->m_wLastContEffect;
             szMsg.byColor = pPlayer->m_byGuildBattleColorInx;
             ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
+
+            CPlayer__SendMsg_OtherShapeAllImpl(pPlayer, pDstPlayer);
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_RealMovePoint(
@@ -235,6 +239,8 @@ namespace GameServer
             szMsg.byColor = pPlayer->m_byGuildBattleColorInx;
 
             ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
+
+            CPlayer__SendMsg_OtherShapeAllImpl(pPlayer, pDstPlayer);
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_OtherShapePart(
@@ -243,18 +249,8 @@ namespace GameServer
             ATF::Info::CPlayerSendMsg_OtherShapePart914_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
-            if (!check_conditions(pPlayer, pDst))
-                return;
 
-            if (!pPlayer->m_bLive)
-            {
-                pPlayer->SendMsg_OtherShapeError(pDst, 0);
-                return;
-            }
-
-            char pbyType[2]{ 3, 0x20 };
-
-            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufSpapePart, pPlayer->m_bufSpapePart.size());
+            pPlayer->SendMsg_OtherShapeAll(pDst);
         }
 
         void WINAPIV CViewInvisible::CPlayer__SendMsg_OtherShapeAll(
@@ -266,16 +262,28 @@ namespace GameServer
             if (!check_conditions(pPlayer, pDst))
                 return;
 
+            pPlayer->NewViewCircleObject();
+            
+            CPlayer__SendMsg_OtherShapeAllImpl(pPlayer, pDst);
+        }
+
+        void CViewInvisible::CPlayer__SendMsg_OtherShapeAllImpl(
+            ATF::CPlayer * pPlayer, 
+            ATF::CPlayer * pDst)
+        {
             if (!pPlayer->m_bLive)
             {
                 pPlayer->SendMsg_OtherShapeError(pDst, 0);
                 return;
             }
 
-            char pbyType[2]{ 3, 0x1f };
-            auto const test = sizeof(ATF::CGameObject);
+            char pbyType[2]{ 3, 31 };
 
-            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pDst->m_ObjID.m_wIndex, pbyType, (char *)&pPlayer->m_bufShapeAll, pPlayer->m_bufShapeAll.size());
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(
+                pDst->m_ObjID.m_wIndex,
+                pbyType,
+                (char *)&pPlayer->m_bufShapeAll,
+                pPlayer->m_bufShapeAll.size());
         }
     }
 }
