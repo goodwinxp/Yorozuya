@@ -66,6 +66,8 @@ namespace GameServer
             ATF::Info::CPlayerSendMsg_StateInform1074_ptr next)
         {
             next(pPlayer, dwStateFlag);
+
+            pPlayer->NewViewCircleObject();
         }
 
         bool check_conditions(ATF::CPlayer *pPlayer, ATF::CPlayer *pDst)
