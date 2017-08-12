@@ -32,4 +32,5 @@ START_ATF_NAMESPACE
         void dtor_Voter();
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<Voter, 1608>(), "Voter");
 END_ATF_NAMESPACE

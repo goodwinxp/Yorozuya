@@ -9,6 +9,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct ElectProcessor
     {
         enum ProcessorType
@@ -35,4 +36,6 @@ START_ATF_NAMESPACE
         ~ElectProcessor();
         void dtor_ElectProcessor();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<ElectProcessor, 200>(), "ElectProcessor");
 END_ATF_NAMESPACE
