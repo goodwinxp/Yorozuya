@@ -178,7 +178,7 @@ namespace GameServer
                 &pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()], 
                 sizeof(pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()]));
 
-            if (!instance->score_hide())
+            if (instance->score_hide())
             {
                 info.byVoteRate = 0;
                 info.byNonvoteRate = 0;
@@ -210,7 +210,7 @@ namespace GameServer
                 &pObj->_kVoteScoreInfo[byRace], 
                 sizeof(pObj->_kVoteScoreInfo[byRace]));
 
-            if (!instance->score_hide())
+            if (instance->score_hide())
             {
                 info.byVoteRate = 0;
                 info.byNonvoteRate = 0;
