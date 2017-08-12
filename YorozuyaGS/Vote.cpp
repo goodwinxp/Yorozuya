@@ -176,7 +176,7 @@ namespace GameServer
             memcpy_s(
                 &info, sizeof(info), 
                 &pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()], 
-                sizeof(&pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()]));
+                sizeof(pObj->_kVoteScoreInfo[pOne->m_Param.GetRaceCode()]));
 
             if (!instance->score_hide())
             {
@@ -207,7 +207,8 @@ namespace GameServer
             ATF::_pt_notify_vote_score_zocl info;
             memcpy_s(
                 &info, sizeof(info),
-                &pObj->_kVoteScoreInfo[byRace], sizeof(&pObj->_kVoteScoreInfo[byRace]));
+                &pObj->_kVoteScoreInfo[byRace], 
+                sizeof(pObj->_kVoteScoreInfo[byRace]));
 
             if (!instance->score_hide())
             {
