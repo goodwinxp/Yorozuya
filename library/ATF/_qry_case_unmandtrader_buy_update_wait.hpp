@@ -5,6 +5,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct _qry_case_unmandtrader_buy_update_wait
     {
         struct __list
@@ -36,4 +37,6 @@ START_ATF_NAMESPACE
         char byNum;
         __list List[10];
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<_qry_case_unmandtrader_buy_update_wait, 992>(), "_qry_case_unmandtrader_buy_update_wait");
 END_ATF_NAMESPACE
