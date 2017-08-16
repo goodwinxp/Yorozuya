@@ -58,8 +58,7 @@ namespace GameServer
             char byGrade, 
             ATF::Info::CItemStoreIsSell36_ptr next)
         {
-            static const uint64_t MaxPrice = 0xffffffff;
-            uint64_t uuSummaryPrice[(size_t)e_money_type::num] = { 0 };
+            _STD array<uint64_t, (size_t)e_money_type::num> uuSummaryPrice{0};
 
             for (int i = 0; i < byOfferNum; ++i)
             {
@@ -74,7 +73,7 @@ namespace GameServer
             {
                 char byMoneyUnit = 0;
                 uint64_t cur_summ = pObj->CalcSellPrice(pOffer[i].byGoodIndex, &byMoneyUnit);
-                if (byMoneyUnit >= _ARRAYSIZE(uuSummaryPrice) || byMoneyUnit < 0)
+                if (byMoneyUnit >= uuSummaryPrice.size() || byMoneyUnit < 0)
                     continue;
 
                 uuSummaryPrice[byMoneyUnit] += cur_summ * pOffer[i].byGoodAmount * fR;
@@ -89,9 +88,9 @@ namespace GameServer
                     TradePrice *= 1.0 - fDiscountRate;
             }
 
-            for (auto &TradePrice : uuSummaryPrice)
+            for (const auto &TradePrice : uuSummaryPrice)
             {
-                if (TradePrice >= MaxPrice)
+                if (TradePrice >= UINT32_MAX)
                 {
                     return 100;
                 }
