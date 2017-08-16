@@ -94,6 +94,9 @@
     <Filter Include="Implementation\Fixes\NetworkEx">
       <UniqueIdentifier>{71d1d1ce-c478-4d8f-827b-757912d79089}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Trunk">
+      <UniqueIdentifier>{be239024-89dd-4f03-8eee-2af981693b23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -173,6 +176,9 @@
     </ClCompile>
     <ClCompile Include="NetworkEx.cpp">
       <Filter>Implementation\Fixes\NetworkEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Trunk.cpp">
+      <Filter>Implementation\Fixes\Trunk</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -265,6 +271,9 @@
     </ClInclude>
     <ClInclude Include="NetworkEx.h">
       <Filter>Implementation\Fixes\NetworkEx</Filter>
+    </ClInclude>
+    <ClInclude Include="Trunk.h">
+      <Filter>Implementation\Fixes\Trunk</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -133,6 +133,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -212,6 +216,10 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -233,6 +241,10 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -266,6 +278,7 @@
     <ClInclude Include="Store.h" />
     <ClInclude Include="Trade.h" />
     <ClInclude Include="Trap.h" />
+    <ClInclude Include="Trunk.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="UnmannedTrader.h" />
     <ClInclude Include="UnmannedTraderEx.h" />
@@ -312,6 +325,7 @@
     <ClCompile Include="QuestMng.cpp" />
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />
+    <ClCompile Include="Trunk.cpp" />
     <ClCompile Include="UnmannedTrader.cpp" />
     <ClCompile Include="UpdateGeneral.cpp" />
     <ClCompile Include="ViewInvisible.cpp" />

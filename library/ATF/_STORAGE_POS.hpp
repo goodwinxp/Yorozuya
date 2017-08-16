@@ -2,6 +2,7 @@
 #pragma once
 
 #include <common/common.h>
+#include "$FE149BD64943A35FB471F74C3D3B2245.hpp"
 
 
 START_ATF_NAMESPACE
