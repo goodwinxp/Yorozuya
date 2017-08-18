@@ -2271,6 +2271,11 @@
     <ClCompile Include=".\source\type_info.cpp" />
     <ClCompile Include=".\source\type_infoDetail.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\library\MinHook\build\VC15\libMinHook.vcxproj">
+      <Project>{f142a341-5ee0-442d-a15f-98ae9b48dbae}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
