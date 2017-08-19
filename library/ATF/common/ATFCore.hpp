@@ -2,7 +2,7 @@
 
 #include "./common.h"
 
-#include <map>
+#include <unordered_map>
 #include <MinHook.h>
 
 START_ATF_NAMESPACE
@@ -19,6 +19,7 @@ START_ATF_NAMESPACE
         return rec.val1;
     }
 
+    #pragma pack(push, 8)
     class CATFCore
     {
     public:
@@ -26,9 +27,7 @@ START_ATF_NAMESPACE
             MH_Initialize();
         }
 
-        CATFCore(const CATFCore&)
-        {
-        }
+        CATFCore(const CATFCore&) = default;
 
     public:
         ~CATFCore() {
@@ -42,22 +41,22 @@ START_ATF_NAMESPACE
 
     public:
         void cleanup() {
-            for (auto& r : _mapper_function)
+            for (auto& r : m_mapFunctions)
                 MH_DisableHook(r.second.pTrgAppOrig);
         }
 
         void reg_wrapper(LPVOID fnTarget, _hook_record& rec)
         {
-            _mapper_function[fnTarget] = rec;
+            m_mapFunctions[fnTarget] = rec;
         }
 
         void unreg_wrapper(
             LPVOID fnTarget)
         {
-            if (_mapper_function.find(fnTarget) == _mapper_function.end())
+            if (m_mapFunctions.find(fnTarget) == m_mapFunctions.end())
                 return;
 
-            _mapper_function.erase(fnTarget);
+            m_mapFunctions.erase(fnTarget);
         }
 
         template <typename T1, typename T2>
@@ -69,8 +68,8 @@ START_ATF_NAMESPACE
             {
                 LPVOID key = cast_pointer_function(pTarget);
 
-                auto it_find = _mapper_function.find(key);
-                if (it_find == _mapper_function.end())
+                auto it_find = m_mapFunctions.find(key);
+                if (it_find == m_mapFunctions.end())
                     break;
 
                 auto& rec = it_find->second;
@@ -102,8 +101,8 @@ START_ATF_NAMESPACE
             do
             {
                 LPVOID key = cast_pointer_function(pTarget);
-                auto it = _mapper_function.find(key);
-                if (it == _mapper_function.end())
+                auto it = m_mapFunctions.find(key);
+                if (it == m_mapFunctions.end())
                     break;
 
                 status = MH_DisableHook(it->second.pTrgAppOrig);
@@ -116,6 +115,7 @@ START_ATF_NAMESPACE
             return result;
         }
     private:
-        ::std::map<LPVOID, _hook_record> _mapper_function;
+        _STD unordered_map<LPVOID, _hook_record> m_mapFunctions;
     };
+    #pragma pack(pop)
 END_ATF_NAMESPACE

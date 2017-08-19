@@ -86,7 +86,7 @@ namespace GameServer
                 if (!pQuestFld)
                     break;
 
-                for (int k = 0; k < pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt; ++k)
+                for (unsigned int k = 0; k < pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt; ++k)
                 {
                     if (strcmp(pPlayer->m_pUserDB->m_AvatorData.dbQuest.m_StartHistory[k].szQuestCode, pQuestFld->m_strCode))
                         continue;
@@ -116,7 +116,7 @@ namespace GameServer
                 time_t _Time = 0i64;
                 time(&_Time);
 
-                pHisData.nEndTime = floor(_Time + pQuestFld->m_dRepeatTime);
+                pHisData.nEndTime = static_cast<__int64>(floor(_Time + pQuestFld->m_dRepeatTime));
 
                 bResult = pPlayer->m_pUserDB->Update_StartNPCQuestHistory(pPlayer->m_pUserDB->m_AvatorData.dbQuest.dwListCnt, &pHisData);
             } while (false);

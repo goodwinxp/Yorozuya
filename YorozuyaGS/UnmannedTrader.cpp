@@ -221,7 +221,7 @@ namespace GameServer
                 }
 
                 pObj->m_kRequestState.SetRequest(5);
-                ATF::Global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, 140, (char *)&Dst, sizeof(Dst));
+                ATF::Global::g_MainThread->PushDQSData(0xFFFFFFFF, 0, static_cast<unsigned char>(140), (char *)&Dst, sizeof(Dst));
             } while (false);
         }
 

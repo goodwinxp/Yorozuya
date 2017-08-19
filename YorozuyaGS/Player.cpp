@@ -296,7 +296,7 @@ namespace GameServer
                 {
                     if (pItem->byNum <= 0 || pItem->byNum > pSrc->m_dwDur)
                     {
-                        pObj->SendMsg_AdjustAmountInform(pItem->byStorageCode, pItem->wItemSerial, pSrc->m_dwDur);
+                        pObj->SendMsg_AdjustAmountInform(pItem->byStorageCode, pItem->wItemSerial, static_cast<unsigned int>(pSrc->m_dwDur));
                         byResult = 3;
                         break;
                     }

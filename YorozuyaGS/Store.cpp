@@ -68,7 +68,7 @@ namespace GameServer
                     return 100;
             }
 
-            float fR = ATF::Global::eGetTex(byRace) + 1.0;
+            float fR = ATF::Global::eGetTex(byRace) + 1.0f;
             for (int i = 0; i < byOfferNum; ++i)
             {
                 char byMoneyUnit = 0;
@@ -76,7 +76,7 @@ namespace GameServer
                 if (byMoneyUnit >= uuSummaryPrice.size() || byMoneyUnit < 0)
                     continue;
 
-                uuSummaryPrice[byMoneyUnit] += cur_summ * pOffer[i].byGoodAmount * fR;
+                uuSummaryPrice[byMoneyUnit] += static_cast<uint64_t>(cur_summ * pOffer[i].byGoodAmount * fR);
             }
 
             if (fDiscountRate > 0.0f)
@@ -85,7 +85,7 @@ namespace GameServer
                     fDiscountRate = 1.0f;
 
                 for (auto &TradePrice : uuSummaryPrice)
-                    TradePrice *= 1.0 - fDiscountRate;
+                    TradePrice = static_cast<uint64_t>(TradePrice * (1.0f - fDiscountRate));
             }
 
             for (const auto &TradePrice : uuSummaryPrice)

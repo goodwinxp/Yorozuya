@@ -66,7 +66,7 @@ namespace GameServer
             }
             else
             {
-                szMsg.wCompLeftSec = (timeGetTime() - pTrap->m_dwStartMakeTime) / 1000;
+                szMsg.wCompLeftSec = static_cast<unsigned short>((timeGetTime() - pTrap->m_dwStartMakeTime) / 1000);
             }
 
             char byType[2] = { 4, -88 };
