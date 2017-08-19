@@ -17,6 +17,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_TrunkResDivision, &CTrunk::pc_TrunkResDivision);
             core.set_hook(&ATF::CPlayer::pc_TrunkPotionDivision, &CTrunk::pc_TrunkPotionDivision);
             core.set_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest, &CTrunk::pc_TrunkIoMergeRequest);
+            core.set_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest, &CTrunk::pc_TrunkIoMoveRequest);
         }
 
         void CTrunk::unload()
@@ -26,6 +27,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_TrunkResDivision);
             core.unset_hook(&ATF::CPlayer::pc_TrunkPotionDivision);
             core.unset_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest);
+            core.unset_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest);
         }
 
         void CTrunk::loop()
@@ -58,22 +60,22 @@ namespace GameServer
 
             do 
             {
-                auto item = pPlayer->m_Param.m_pStoragePtr[byStorageIndex]->GetPtrFromSerial(dwItemSerial);
-
-                if (item == nullptr)
-                    break;
-
                 int nItemRace = -1;
                 if (byStorageIndex == ATF::STORAGE_POS::TRUNK)
                 {
-                    nItemRace = pPlayer->m_Param.m_dbTrunk.m_byItemSlotRace[item->m_byStorageIndex];
+                    nItemRace = pPlayer->m_Param.GetTrunkSlotRace(dwItemSerial);
                 }
                 else if (byStorageIndex == ATF::STORAGE_POS::EXT_TRUNK)
                 {
-                    nItemRace = pPlayer->m_Param.m_dbExtTrunk.m_byItemSlotRace[item->m_byStorageIndex];
+                    nItemRace = pPlayer->m_Param.GetExtTrunkSlotRace(dwItemSerial);
                 }
 
-                result = pPlayer->vfptr->GetObjRace(pPlayer) == nItemRace;
+                if (nItemRace == -1)
+                {
+                    break;
+                }
+
+                result = pPlayer->m_Param.GetRaceCode() == nItemRace;
             } while (false);
 
             return result;
@@ -92,7 +94,7 @@ namespace GameServer
             }
             else
             {
-                pPlayer->SendMsg_TrunkIoResult(1, 44, pPlayer->m_Param.GetDalant(), 0);
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
             }
         }
 
@@ -111,7 +113,7 @@ namespace GameServer
             }
             else
             {
-                pPlayer->SendMsg_TrunkIoResult(1, 44, pPlayer->m_Param.GetDalant(), 0);
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
             }
         }
 
@@ -130,7 +132,7 @@ namespace GameServer
             }
             else
             {
-                pPlayer->SendMsg_TrunkIoResult(1, 44, pPlayer->m_Param.GetDalant(), 0);
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
             }
         }
 
@@ -167,7 +169,36 @@ namespace GameServer
             
             if (!succeeded)
             {
-                pPlayer->SendMsg_TrunkIoResult(1, 44, pPlayer->m_Param.GetDalant(), 0);
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
+            }
+        }
+
+        void WINAPIV CTrunk::pc_TrunkIoMoveRequest(
+            ATF::CPlayer * pPlayer, 
+            char byStartStorageIndex, 
+            char byTarStorageIndex, 
+            uint16_t wItemSerial, 
+            char byClientSlotIndex, 
+            ATF::Info::CPlayerpc_TrunkIoMoveRequest1981_ptr next)
+        {
+            bool succeeded = false;
+
+            do
+            {
+                if (byStartStorageIndex == ATF::STORAGE_POS::TRUNK ||
+                    byStartStorageIndex == ATF::STORAGE_POS::EXT_TRUNK)
+                {
+                    if (!CTrunk::check_item_race(pPlayer, wItemSerial, byStartStorageIndex))
+                        break;
+                }
+
+                succeeded = true;
+                next(pPlayer, byStartStorageIndex, byTarStorageIndex, wItemSerial, byClientSlotIndex);
+            } while (false);
+
+            if (!succeeded)
+            {
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
             }
         }
     }
