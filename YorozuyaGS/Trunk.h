@@ -74,6 +74,14 @@ namespace GameServer
                 uint16_t wItemSerial, 
                 char byClientSlotIndex,
                 ATF::Info::CPlayerpc_TrunkIoMoveRequest1981_ptr next);
+
+            static void WINAPIV pc_TrunkIoSwapRequest(
+                ATF::CPlayer *pPlayer,
+                char byStartStorageIndex, 
+                char byTarStorageIndex, 
+                uint16_t wStartItemSerial, 
+                uint16_t wTarItemSerial, 
+                ATF::Info::CPlayerpc_TrunkIoSwapRequest1983_ptr next);
         };
     };
 };

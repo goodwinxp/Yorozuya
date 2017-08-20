@@ -18,6 +18,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_TrunkPotionDivision, &CTrunk::pc_TrunkPotionDivision);
             core.set_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest, &CTrunk::pc_TrunkIoMergeRequest);
             core.set_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest, &CTrunk::pc_TrunkIoMoveRequest);
+            core.set_hook(&ATF::CPlayer::pc_TrunkIoSwapRequest, &CTrunk::pc_TrunkIoSwapRequest);
         }
 
         void CTrunk::unload()
@@ -28,6 +29,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_TrunkPotionDivision);
             core.unset_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest);
             core.unset_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest);
+            core.unset_hook(&ATF::CPlayer::pc_TrunkIoSwapRequest);
         }
 
         void CTrunk::loop()
@@ -194,6 +196,42 @@ namespace GameServer
 
                 succeeded = true;
                 next(pPlayer, byStartStorageIndex, byTarStorageIndex, wItemSerial, byClientSlotIndex);
+            } while (false);
+
+            if (!succeeded)
+            {
+                pPlayer->SendMsg_TrunkIoResult(1, 17, pPlayer->m_Param.GetDalant(), 0);
+            }
+        }
+
+        void WINAPIV CTrunk::pc_TrunkIoSwapRequest(
+            ATF::CPlayer * pPlayer, 
+            char byStartStorageIndex, 
+            char byTarStorageIndex,
+            uint16_t wStartItemSerial, 
+            uint16_t wTarItemSerial, 
+            ATF::Info::CPlayerpc_TrunkIoSwapRequest1983_ptr next)
+        {
+            bool succeeded = false;
+
+            do
+            {
+                if (byStartStorageIndex == ATF::STORAGE_POS::TRUNK ||
+                    byStartStorageIndex == ATF::STORAGE_POS::EXT_TRUNK)
+                {
+                    if (!CTrunk::check_item_race(pPlayer, wStartItemSerial, byStartStorageIndex))
+                        break;
+                }
+
+                if (byTarStorageIndex == ATF::STORAGE_POS::TRUNK ||
+                    byTarStorageIndex == ATF::STORAGE_POS::EXT_TRUNK)
+                {
+                    if (!CTrunk::check_item_race(pPlayer, wTarItemSerial, byTarStorageIndex))
+                        break;
+                }
+
+                succeeded = true;
+                next(pPlayer, byStartStorageIndex, byTarStorageIndex, wStartItemSerial, wTarItemSerial);
             } while (false);
 
             if (!succeeded)
