@@ -97,6 +97,9 @@
     <Filter Include="Implementation\Fixes\Trunk">
       <UniqueIdentifier>{be239024-89dd-4f03-8eee-2af981693b23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\CheckEquip">
+      <UniqueIdentifier>{a29eb2ba-d869-4000-846e-04f4ed3ba569}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -179,6 +182,9 @@
     </ClCompile>
     <ClCompile Include="Trunk.cpp">
       <Filter>Implementation\Fixes\Trunk</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckEquip.cpp">
+      <Filter>Implementation\Fixes\CheckEquip</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -274,6 +280,9 @@
     </ClInclude>
     <ClInclude Include="Trunk.h">
       <Filter>Implementation\Fixes\Trunk</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckEquip.h">
+      <Filter>Implementation\Fixes\CheckEquip</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
