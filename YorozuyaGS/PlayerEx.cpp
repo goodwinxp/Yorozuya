@@ -4,6 +4,8 @@
 #include <ATF\CSUItemSystem.hpp>
 #include <ATF\si_interpret.hpp>
 
+// TODO : optimization for detect activating set
+
 namespace GameServer
 {
     namespace Extension
