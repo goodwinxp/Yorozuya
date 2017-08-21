@@ -218,7 +218,7 @@ namespace GameServer
                     b.byScoreRate = 0;
             }
 
-            for (int i = 0; i < MAX_PLAYER; ++i)
+            for (int i = 0; i < ATF::Global::max_player; ++i)
             {
                 auto& player = ATF::Global::g_Player[i];
                 if (!player.m_bOper)

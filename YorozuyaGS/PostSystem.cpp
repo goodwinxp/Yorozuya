@@ -59,7 +59,7 @@ namespace GameServer
                 if (pInfo->byProcRet == 1)
                     break;
 
-                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
+                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, ATF::Global::max_player, pInfo->dwMasterSerial);
                 if (!pPlayer)
                     break;
 
@@ -137,7 +137,7 @@ namespace GameServer
                 if (pInfo->byProcRet == 1)
                     break;
 
-                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, MAX_PLAYER, pInfo->dwMasterSerial);
+                ATF::CPlayer* pPlayer = ATF::Global::GetPtrPlayerFromSerial(ATF::Global::g_Player, ATF::Global::max_player, pInfo->dwMasterSerial);
                 if (!pPlayer)
                     break;
 

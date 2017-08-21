@@ -58,7 +58,7 @@ namespace GameServer
             {
                 ATF::_d_trade_ask_request_clzo* pMsg = (ATF::_d_trade_ask_request_clzo*)pBuf;
 
-                if (pMsg->wDstIndex >= MAX_PLAYER)
+                if (pMsg->wDstIndex >= ATF::Global::max_player)
                     break;
 
                 result = next(pObj, n, pBuf);

@@ -111,7 +111,7 @@ namespace GameServer
 
             if (pObj->m_bPlayerCircleList)
             {
-                for (int dwClientIndex = 0; dwClientIndex < MAX_PLAYER; ++dwClientIndex)
+                for (int dwClientIndex = 0; dwClientIndex < ATF::Global::max_player; ++dwClientIndex)
                 {
                     if (pObj->m_bPlayerCircleList[dwClientIndex])
                         ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(dwClientIndex, pbyType, szMsg, nMsgSize);

@@ -22,9 +22,6 @@
     <Filter Include="Common\Interfaces">
       <UniqueIdentifier>{84729fe2-b8d5-4ddb-bbac-8c5a47e2cb76}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Addons">
-      <UniqueIdentifier>{bb0a8c58-6179-4c9e-855d-999f09ea6bfc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Implementation\Modules\Registry">
       <UniqueIdentifier>{4dc14335-3a61-4c39-95ba-0e51a7c2aea7}</UniqueIdentifier>
     </Filter>
@@ -97,8 +94,14 @@
     <Filter Include="Implementation\Fixes\Trunk">
       <UniqueIdentifier>{be239024-89dd-4f03-8eee-2af981693b23}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Fixes\CheckEquip">
+    <Filter Include="Implementation\Fixes\Equip">
       <UniqueIdentifier>{a29eb2ba-d869-4000-846e-04f4ed3ba569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Extension">
+      <UniqueIdentifier>{971f852f-50d9-4cfd-852a-fa51392744a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Extension\PlayerEx">
+      <UniqueIdentifier>{f2c272f9-f9d6-474d-a60f-324a62632076}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -183,8 +186,11 @@
     <ClCompile Include="Trunk.cpp">
       <Filter>Implementation\Fixes\Trunk</Filter>
     </ClCompile>
-    <ClCompile Include="CheckEquip.cpp">
-      <Filter>Implementation\Fixes\CheckEquip</Filter>
+    <ClCompile Include="Equip.cpp">
+      <Filter>Implementation\Fixes\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx.cpp">
+      <Filter>Implementation\Extension\PlayerEx</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -281,8 +287,11 @@
     <ClInclude Include="Trunk.h">
       <Filter>Implementation\Fixes\Trunk</Filter>
     </ClInclude>
-    <ClInclude Include="CheckEquip.h">
-      <Filter>Implementation\Fixes\CheckEquip</Filter>
+    <ClInclude Include="Equip.h">
+      <Filter>Implementation\Fixes\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx.h">
+      <Filter>Implementation\Extension\PlayerEx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

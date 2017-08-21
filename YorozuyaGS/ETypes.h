@@ -107,6 +107,4 @@ namespace GameServer
         unknown = 6,
         num
     };
-
-    #define MAX_PLAYER 2532
 }

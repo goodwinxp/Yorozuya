@@ -7,7 +7,7 @@
 START_ATF_NAMESPACE
     namespace Global
     {
-        #define MAX_PLAYER 2532
+        const size_t max_player = 2532;
 
         using CPlayer_ptr = struct CPlayer*;
         using CLogFile_ptr = struct CLogFile*;
@@ -31,8 +31,8 @@ START_ATF_NAMESPACE
         using CRecordData_ptr2 = struct CRecordData**;
         using CMgrAvatorItemHistory_ptr = struct CMgrAvatorItemHistory*;
         using CRFWorldDatabase_ptr2 = struct CRFWorldDatabase**;
-        using CPlayer_Ref = ATF::CPlayer(&)[MAX_PLAYER];
-        using CPlayer_Ptr = ATF::CPlayer(*)[MAX_PLAYER];
+        using CPlayer_Ref = ATF::CPlayer(&)[max_player];
+        using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
 
         static CRFWorldDatabase_ptr2 pkDB((CRFWorldDatabase_ptr2)0x1415B7000L);
         static CMgrAvatorItemHistory_ptr s_MgrItemHistory((CMgrAvatorItemHistory_ptr)0x14098AA40L);

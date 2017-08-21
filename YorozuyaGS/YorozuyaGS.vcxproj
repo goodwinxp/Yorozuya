@@ -140,7 +140,7 @@
     <ClInclude Include="AttackSystem.h" />
     <ClInclude Include="ChatSystem.h" />
     <ClInclude Include="CheatCommand.h" />
-    <ClInclude Include="CheckEquip.h" />
+    <ClInclude Include="Equip.h" />
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
     <ClInclude Include="NetworkEx.h" />
@@ -151,6 +151,7 @@
     <ClInclude Include="Macros.h" />
     <ClInclude Include="MiningOre.h" />
     <ClInclude Include="ModuleRegistry.h" />
+    <ClInclude Include="PlayerEx.h" />
     <ClInclude Include="PostSystem.h" />
     <ClInclude Include="PotionMgr.h" />
     <ClInclude Include="QuestMng.h" />
@@ -171,7 +172,7 @@
     <ClCompile Include="AttackSystem.cpp" />
     <ClCompile Include="ChatSystem.cpp" />
     <ClCompile Include="CheatCommand.cpp" />
-    <ClCompile Include="CheckEquip.cpp" />
+    <ClCompile Include="Equip.cpp" />
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="NetworkEx.cpp" />
@@ -192,6 +193,7 @@
     <ClCompile Include="Macros.cpp" />
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
+    <ClCompile Include="PlayerEx.cpp" />
     <ClCompile Include="PostSystem.cpp" />
     <ClCompile Include="PotionMgr.cpp" />
     <ClCompile Include="QuestMng.cpp" />

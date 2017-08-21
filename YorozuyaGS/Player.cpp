@@ -1,7 +1,8 @@
 #include "stdafx.h"
 
-#include "Player.h"
 #include "ETypes.h"
+#include "Player.h"
+#include "PlayerEx.h"
 #include <ATF/global.hpp>
 
 namespace GameServer
@@ -64,21 +65,28 @@ namespace GameServer
         }
 
         bool WINAPIV CPlayer::Load(
-            ATF::CPlayer * pObj, 
-            ATF::CUserDB * pUser, 
-            bool bFirstStart, 
+            ATF::CPlayer * pObj,
+            ATF::CUserDB * pUser,
+            bool bFirstStart,
             ATF::Info::CPlayerLoad366_ptr next)
         {
             pObj->m_bPostLoad = false;
             bool bResult = next(pObj, pUser, bFirstStart);
-            if (bResult && !pObj->m_Param.m_pGuild)
+            if (bResult)
             {
-                auto dwDestroyerSerial = ATF::Global::g_HolySys->GetDestroyerSerial();
-                if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
+                if (!pObj->m_Param.m_pGuild)
                 {
-                    pObj->SetLastAttBuff(false);
+                    auto dwDestroyerSerial = ATF::Global::g_HolySys->GetDestroyerSerial();
+                    if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
+                    {
+                        pObj->SetLastAttBuff(false);
+                    }
                 }
+
+                auto& player_ex = GameServer::Extension::CPlayerEx::get_instance();
+                player_ex->Load(pObj);
             }
+
             return bResult;
         }
 
@@ -89,6 +97,9 @@ namespace GameServer
         {
             next(pObj, bMoveOutLobby);
             pObj->m_bPostLoad = false;
+
+            auto& player_ex = GameServer::Extension::CPlayerEx::get_instance();
+            player_ex->NetClose(pObj);
         }
 
         void WINAPIV CPlayer::CalcPvP(
