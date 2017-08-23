@@ -1,5 +1,6 @@
 #pragma once
 
+#include <unordered_set>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "..\Common\Helpers\SingletonHelper.hpp"
@@ -10,12 +11,45 @@ namespace GameServer
     {
         namespace detail
         {
-            struct _set_item_info
+            union _set_item_info
             {
-                uint32_t dwSetItem = 0;
-                uint8_t  bySetItemNum = 0;
-                uint8_t  bySetEffectNum = 0;
+                struct
+                {
+                    uint32_t dwSetItem;
+                    uint8_t  bySetItemNum;
+                    uint8_t  bySetEffectNum;
+                } info;
+
+                uint64_t value;
+
+                _set_item_info()
+                    : value(0)
+                {
+                }
+
+                bool operator<(const _set_item_info& rhs) const
+                {
+                    return (value < rhs.value);
+                }
             };
+
+            class hashing_func {
+            public:
+                uint64_t operator()(const _set_item_info &obj) const 
+                {
+                    return obj.value;
+                }
+            };
+
+            class key_equal_fn {
+            public:
+                bool operator()(const _set_item_info& t1, const _set_item_info& t2) const 
+                {
+                    return (t1.value == t2.value);
+                }
+            };
+            
+            using ContainerSetItemInfo_t = _STD unordered_set<detail::_set_item_info, hashing_func, key_equal_fn>;
         };
 
         class CPlayerEx
@@ -23,6 +57,8 @@ namespace GameServer
         {
         public:
             CPlayerEx();
+
+            void loop();
 
             void update_set_item();
 
@@ -42,9 +78,11 @@ namespace GameServer
             void save();
 
         private:
+            bool m_bUpdatedSetItem = false;
             ATF::CPlayer *m_pPlayer = nullptr;
 
-            _STD vector<detail::_set_item_info> m_vecInfoCurrentSetItem;
+            std::mutex m_mtxCurrentSetInfo;
+            detail::ContainerSetItemInfo_t m_setInfoCurrentSetItem;
         };
     };
 };

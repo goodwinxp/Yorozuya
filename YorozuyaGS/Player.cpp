@@ -9,10 +9,17 @@ namespace GameServer
 {
     namespace Fixes
     {
+        namespace
+        {
+            using namespace ATF;
+            using namespace GameServer::Extension;
+        }
+
         void CPlayer::load()
         {
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
+            core.set_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
             core.set_hook(&ATF::CPlayer::NetClose, &CPlayer::NetClose);
             core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
@@ -64,6 +71,16 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
+        void WINAPIV CPlayer::Loop(
+            ATF::CPlayer* pPlayer, 
+            ATF::Info::CPlayerLoop368_ptr next)
+        {
+            next(pPlayer);
+
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            PlayerEx.loop();
+        }
+
         bool WINAPIV CPlayer::Load(
             ATF::CPlayer * pObj,
             ATF::CUserDB * pUser,
@@ -83,7 +100,7 @@ namespace GameServer
                     }
                 }
 
-                auto& player_ex = GameServer::Extension::CPlayerEx::get_instance();
+                auto& player_ex = CPlayerEx::get_instance();
                 player_ex->Load(pObj);
             }
 
@@ -98,7 +115,7 @@ namespace GameServer
             next(pObj, bMoveOutLobby);
             pObj->m_bPostLoad = false;
 
-            auto& player_ex = GameServer::Extension::CPlayerEx::get_instance();
+            auto& player_ex = CPlayerEx::get_instance();
             player_ex->NetClose(pObj);
         }
 

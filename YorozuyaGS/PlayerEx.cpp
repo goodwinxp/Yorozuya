@@ -1,10 +1,10 @@
 #include "stdafx.h"
 
 #include "PlayerEx.h"
+#include <algorithm>
 #include <ATF\CSUItemSystem.hpp>
 #include <ATF\si_interpret.hpp>
 
-// TODO : optimization for detect activating set
 
 namespace GameServer
 {
@@ -14,7 +14,16 @@ namespace GameServer
 
         CPlayerEx::CPlayerEx()
         {
-            m_vecInfoCurrentSetItem.reserve(10);
+            m_setInfoCurrentSetItem.reserve(10);
+        }
+
+        void CPlayerEx::loop()
+        {
+            std::unique_lock<decltype(m_mtxCurrentSetInfo)> lock(m_mtxCurrentSetInfo);
+            for (const auto& v : m_setInfoCurrentSetItem)
+            {
+                m_pPlayer->SendMsg_SetItemCheckResult(8, v.info.dwSetItem, v.info.bySetEffectNum);
+            }
         }
 
         void CPlayerEx::update_set_item()
@@ -23,50 +32,66 @@ namespace GameServer
             ATF::CRecordData& tblSetItemEff = pSUItemSystemInstance->m_SUOrigin[0];
             ATF::CSetItemType& pSetItemType = pSUItemSystemInstance->m_SetItemType;
 
-            for (auto& info : m_vecInfoCurrentSetItem)
+            detail::ContainerSetItemInfo_t setCurrent;
+            {
+                for (uint32_t dwSetItem = 0; dwSetItem < tblSetItemEff.GetRecordNum(); ++dwSetItem)
+                {
+                    ATF::_SetItemEff_fld* pSetItemFld = (ATF::_SetItemEff_fld*)tblSetItemEff.GetRecord(dwSetItem);
+
+                    if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceCode()] == '0')
+                        continue;
+
+                    detail::_set_item_info SetItemInfo;
+                    SetItemInfo.info.dwSetItem = dwSetItem;
+                    SetItemInfo.info.bySetItemNum = 
+                        m_pPlayer->m_clsSetItem.Check_EquipItem(
+                            &m_pPlayer->m_pUserDB->m_AvatorData, pSetItemFld);
+
+                    if (SetItemInfo.info.bySetItemNum != 0)
+                    {
+                        ATF::si_interpret* pSI_Interpret = pSetItemType.Getsi_interpret(dwSetItem);
+                        for (int i = 0; i < pSI_Interpret->GetEffectTypeCount(); ++i)
+                        {
+                            if (pSI_Interpret->GetCountOfItem(i) != SetItemInfo.info.bySetItemNum)
+                                continue;
+
+                            SetItemInfo.info.bySetEffectNum = pSI_Interpret->GetCountOfEffect(i);
+                            setCurrent.emplace(std::move(SetItemInfo));
+                            break;
+                        }
+                    }
+                }
+            }
+
+            detail::ContainerSetItemInfo_t setDiff;
+
+            std::unique_lock<decltype(m_mtxCurrentSetInfo)> lock(m_mtxCurrentSetInfo);
+
+            std::set_symmetric_difference(
+                m_setInfoCurrentSetItem.begin(), m_setInfoCurrentSetItem.end(),
+                setCurrent.begin(), setCurrent.end(),
+                std::inserter(setDiff, setDiff.begin()));
+
+            if (setDiff.empty())
+                return;
+
+            for (const auto& v : m_setInfoCurrentSetItem)
             {
                 m_pPlayer->pc_SetItemCheckRequest(
-                    info.dwSetItem,
-                    info.bySetItemNum,
-                    info.bySetEffectNum,
+                    v.info.dwSetItem,
+                    v.info.bySetItemNum,
+                    v.info.bySetEffectNum,
                     false);
             }
-            m_vecInfoCurrentSetItem.clear();
 
-            for (uint32_t dwSetItem = 0; dwSetItem < tblSetItemEff.GetRecordNum(); ++dwSetItem)
+            m_setInfoCurrentSetItem.clear();
+
+            for (const auto& v : setCurrent)
             {
-                uint8_t bySetItemNum = m_pPlayer->m_clsSetItem.Check_EquipItem(
-                    &m_pPlayer->m_pUserDB->m_AvatorData,
-                    (ATF::_SetItemEff_fld*)tblSetItemEff.GetRecord(dwSetItem));
-
-                if (bySetItemNum == 0)
-                {
+                if (!m_pPlayer->pc_SetItemCheckRequest(v.info.dwSetItem, v.info.bySetItemNum, v.info.bySetEffectNum, true))
                     continue;
-                }
 
-                ATF::si_interpret* pSI_Interpret = pSetItemType.Getsi_interpret(dwSetItem);
-
-                uint8_t bySetEffectNum = 0;
-                for (int i = 0; i < pSI_Interpret->GetEffectTypeCount(); ++i)
-                {
-                    if (pSI_Interpret->GetCountOfItem(i) != bySetItemNum)
-                    {
-                        continue;
-                    }
-
-                    bySetEffectNum = pSI_Interpret->GetCountOfEffect(i);
-                    break;
-                }
-
-                if (m_pPlayer->pc_SetItemCheckRequest(dwSetItem, bySetItemNum, bySetEffectNum, true))
-                {
-                    m_vecInfoCurrentSetItem.emplace_back(
-                        detail::_set_item_info{
-                        dwSetItem,
-                        bySetItemNum,
-                        bySetEffectNum
-                    });
-                }
+                m_setInfoCurrentSetItem.insert(v);
             }
         }
 
@@ -103,8 +128,9 @@ namespace GameServer
 
         bool CPlayerEx::init(ATF::CPlayer* pPlayer)
         {
+            m_bUpdatedSetItem = false;
             m_pPlayer = pPlayer;
-            m_vecInfoCurrentSetItem.clear();
+            m_setInfoCurrentSetItem.clear();
 
             update_set_item();
 
@@ -113,7 +139,8 @@ namespace GameServer
 
         void CPlayerEx::save()
         {
-            m_vecInfoCurrentSetItem.clear();
+            m_setInfoCurrentSetItem.clear();
+            m_bUpdatedSetItem = false;
             m_pPlayer = nullptr;
         }
     }
