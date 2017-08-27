@@ -103,6 +103,9 @@
     <Filter Include="Implementation\Extension\PlayerEx">
       <UniqueIdentifier>{f2c272f9-f9d6-474d-a60f-324a62632076}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\CrashDump">
+      <UniqueIdentifier>{7bc92765-7618-49c2-9940-8c3d8a665ded}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -191,6 +194,9 @@
     </ClCompile>
     <ClCompile Include="PlayerEx.cpp">
       <Filter>Implementation\Extension\PlayerEx</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashDump.cpp">
+      <Filter>Implementation\Extension\CrashDump</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -292,6 +298,9 @@
     </ClInclude>
     <ClInclude Include="PlayerEx.h">
       <Filter>Implementation\Extension\PlayerEx</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashDump.h">
+      <Filter>Implementation\Extension\CrashDump</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

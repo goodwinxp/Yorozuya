@@ -140,6 +140,7 @@
     <ClInclude Include="AttackSystem.h" />
     <ClInclude Include="ChatSystem.h" />
     <ClInclude Include="CheatCommand.h" />
+    <ClInclude Include="CrashDump.h" />
     <ClInclude Include="Equip.h" />
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
@@ -172,6 +173,7 @@
     <ClCompile Include="AttackSystem.cpp" />
     <ClCompile Include="ChatSystem.cpp" />
     <ClCompile Include="CheatCommand.cpp" />
+    <ClCompile Include="CrashDump.cpp" />
     <ClCompile Include="Equip.cpp" />
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
