@@ -78,7 +78,6 @@ namespace GameServer
             void save();
 
         private:
-            bool m_bUpdatedSetItem = false;
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxCurrentSetInfo;

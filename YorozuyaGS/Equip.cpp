@@ -22,6 +22,7 @@ namespace GameServer
             core.set_hook(&ATF::CNetworkEX::SetItemCheckRequest, &CEquip::SetItemCheckRequest);
             core.set_hook(&ATF::CPlayer::Emb_AddStorage, &CEquip::Emb_AddStorage);
             core.set_hook(&ATF::CPlayer::Emb_DelStorage, &CEquip::Emb_DelStorage);
+            core.set_hook(&ATF::CPlayer::pc_SetItemCheckRequest, &CEquip::pc_SetItemCheckRequest);
         }
 
         void CEquip::unload()
@@ -31,6 +32,7 @@ namespace GameServer
             core.unset_hook(&ATF::CNetworkEX::SetItemCheckRequest);
             core.unset_hook(&ATF::CPlayer::Emb_AddStorage);
             core.unset_hook(&ATF::CPlayer::Emb_DelStorage);
+            core.unset_hook(&ATF::CPlayer::pc_SetItemCheckRequest);
         }
 
         void CEquip::loop()
@@ -87,7 +89,7 @@ namespace GameServer
                 if (ATF::Global::g_Player[n].m_bOper)
                 {
                     ATF::_set_item_check_request_clzo* pMsg = (ATF::_set_item_check_request_clzo*)pBuf;
-                    ATF::Global::g_Player[n].SendMsg_SetItemCheckResult(2, pMsg->dwSetIndex, pMsg->bySetEffectNum);
+                    ATF::Global::g_Player[n].SendMsg_SetItemCheckResult(9, pMsg->dwSetIndex, pMsg->bySetEffectNum);
                 }
             }
 
@@ -150,6 +152,97 @@ namespace GameServer
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
                 PlayerEx.update_set_item();
+            } while (false);
+
+            return result;
+        }
+
+        bool WINAPIV CEquip::pc_SetItemCheckRequest(
+            ATF::CPlayer *pPlayer,
+            unsigned int dwSetItem,
+            char bySetItemNum,
+            char bySetEffectNum,
+            bool bSet,
+            ATF::Info::CPlayerpc_SetItemCheckRequest1937_ptr next)
+        {
+            UNREFERENCED_PARAMETER(next);
+            bool result = false;
+
+            do
+            {
+                auto pSUItemSystemInst = ATF::CSUItemSystem::Instance();
+                auto pSetItemType = pSUItemSystemInst->GetCSetItemType();
+                if (!pSetItemType)
+                {
+                    break;
+                }
+
+                auto pSI = pSetItemType->Getsi_interpret(dwSetItem);
+                if (!pSI)
+                {
+                    break;
+                }
+
+                uint8_t byResult = 9;
+                if (!bSet)
+                {
+                    byResult = pPlayer->m_clsSetItem.SetOffEffect(dwSetItem, bySetItemNum, bySetEffectNum);
+                    if (byResult == 1)
+                        pPlayer->ApplySetItemEffect(pSI, dwSetItem, bySetItemNum, bySetEffectNum, false);
+                }
+                else
+                {
+                    char szStrCode[64]{ 0 };
+                    bool bIsEquipAbleGrade = false;
+
+                    int nTableCode = pSUItemSystemInst->GetSetItemTableInfo(dwSetItem, szStrCode, 64);
+                    if (nTableCode > -1)
+                    {
+                        int nEquipGrade = ATF::Global::GetItemEquipGrade(nTableCode, szStrCode);
+                        if (pPlayer->IsEquipAbleGrade(nEquipGrade))
+                            bIsEquipAbleGrade = true;
+                    }
+
+                    if (bIsEquipAbleGrade)
+                    {
+                        byResult = pPlayer->m_clsSetItem.SetOnEffect(
+                            &pPlayer->m_pUserDB->m_AvatorData,
+                            dwSetItem,
+                            bySetItemNum,
+                            bySetEffectNum);
+
+                        switch (byResult)
+                        {
+                        case 0:
+                            pPlayer->ApplySetItemEffect(pSI, dwSetItem, bySetItemNum, bySetEffectNum, true);
+                            break;
+                        case 8:
+                            pPlayer->ApplySetItemEffect(
+                                pSI, 
+                                pPlayer->m_clsSetItem.GetResetIdx(),
+                                pPlayer->m_clsSetItem.GetResetItemNum(),
+                                pPlayer->m_clsSetItem.GetResetEffectNum(),
+                                false);
+                            pPlayer->ApplySetItemEffect(
+                                pSI, 
+                                dwSetItem, 
+                                bySetItemNum, 
+                                bySetEffectNum, 
+                                true);
+                            break;
+                        case 4:
+                        case 3:
+                        case 2:
+                        case 7:
+                            break;
+                        default:
+                            byResult = 9;
+                            break;
+                        }
+                    }
+                }
+
+                result = true;
             } while (false);
 
             return result;

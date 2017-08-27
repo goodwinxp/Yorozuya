@@ -82,6 +82,7 @@ namespace GameServer
                     v.info.bySetItemNum,
                     v.info.bySetEffectNum,
                     false);
+                m_pPlayer->SendMsg_SetItemCheckResult(1, v.info.dwSetItem, v.info.bySetEffectNum);
             }
 
             m_setInfoCurrentSetItem.clear();
@@ -90,6 +91,8 @@ namespace GameServer
             {
                 if (!m_pPlayer->pc_SetItemCheckRequest(v.info.dwSetItem, v.info.bySetItemNum, v.info.bySetEffectNum, true))
                     continue;
+
+                m_pPlayer->SendMsg_SetItemCheckResult(0, v.info.dwSetItem, v.info.bySetEffectNum);
 
                 m_setInfoCurrentSetItem.insert(v);
             }
@@ -128,7 +131,6 @@ namespace GameServer
 
         bool CPlayerEx::init(ATF::CPlayer* pPlayer)
         {
-            m_bUpdatedSetItem = false;
             m_pPlayer = pPlayer;
             m_setInfoCurrentSetItem.clear();
 
@@ -140,7 +142,6 @@ namespace GameServer
         void CPlayerEx::save()
         {
             m_setInfoCurrentSetItem.clear();
-            m_bUpdatedSetItem = false;
             m_pPlayer = nullptr;
         }
     }

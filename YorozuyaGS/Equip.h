@@ -55,6 +55,14 @@ namespace GameServer
                 bool bDelete, 
                 char *strErrorCodePos,
                 ATF::Info::CPlayerEmb_DelStorage132_ptr next);
+
+            static bool WINAPIV pc_SetItemCheckRequest(
+                ATF::CPlayer *pPlayer,
+                unsigned int dwSetItem,
+                char bySetItemNum,
+                char bySetEffectNum,
+                bool bSet,
+                ATF::Info::CPlayerpc_SetItemCheckRequest1937_ptr next);
         };
     };
 };
