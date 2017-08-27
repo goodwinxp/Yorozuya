@@ -41,6 +41,15 @@ namespace GameServer
                     if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceCode()] == '0')
                         continue;
 
+                    char szStrCode[64]{ 0 };
+                    int nTableCode = pSUItemSystemInstance->GetSetItemTableInfo(dwSetItem, szStrCode, sizeof(szStrCode));
+                    if (nTableCode > -1)
+                    {
+                        int nItemGrade = ATF::Global::GetItemEquipGrade(nTableCode, szStrCode);
+                        if (!m_pPlayer->IsEquipAbleGrade(nItemGrade))
+                            continue;
+                    }
+
                     detail::_set_item_info SetItemInfo;
                     SetItemInfo.info.dwSetItem = dwSetItem;
                     SetItemInfo.info.bySetItemNum = 
