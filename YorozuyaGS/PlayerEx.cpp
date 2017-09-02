@@ -16,6 +16,7 @@ namespace GameServer
         {
             m_setSetItemInfo.reserve(10);
             m_mapSetItemAction.reserve(10);
+            m_setKillerInfo.reserve(30);
         }
 
         void CPlayerEx::loop()
@@ -245,6 +246,8 @@ namespace GameServer
             }
             m_setSetItemInfo.clear();
 
+            clear_serial_list();
+
             update_set_item(true);
 
             return true;
@@ -256,7 +259,11 @@ namespace GameServer
                 std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
                 m_mapSetItemAction.clear();
             }
+
             m_setSetItemInfo.clear();
+
+            clear_serial_list();
+
             m_pPlayer = nullptr;
         }
     }

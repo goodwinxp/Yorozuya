@@ -106,6 +106,9 @@
     <Filter Include="Implementation\Extension\CrashDump">
       <UniqueIdentifier>{7bc92765-7618-49c2-9940-8c3d8a665ded}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\PlayerEx\PvpOrderView">
+      <UniqueIdentifier>{24f22438-12fc-4aca-a8da-4fc328e4a94c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -197,6 +200,15 @@
     </ClCompile>
     <ClCompile Include="CrashDump.cpp">
       <Filter>Implementation\Extension\CrashDump</Filter>
+    </ClCompile>
+    <ClCompile Include="PvpOrderView.cpp">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSystem.cpp">
+      <Filter>Implementation\Fixes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerPvpOrderView.cpp">
+      <Filter>Implementation\Fixes\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +313,9 @@
     </ClInclude>
     <ClInclude Include="CrashDump.h">
       <Filter>Implementation\Extension\CrashDump</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx_detail.h">
+      <Filter>Implementation\Extension\PlayerEx</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

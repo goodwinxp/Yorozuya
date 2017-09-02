@@ -153,6 +153,7 @@
     <ClInclude Include="MiningOre.h" />
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="PlayerEx.h" />
+    <ClInclude Include="PlayerEx_detail.h" />
     <ClInclude Include="PostSystem.h" />
     <ClInclude Include="PotionMgr.h" />
     <ClInclude Include="QuestMng.h" />
@@ -196,8 +197,11 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PlayerEx.cpp" />
+    <ClCompile Include="PlayerPvpOrderView.cpp" />
+    <ClCompile Include="PlayerSystem.cpp" />
     <ClCompile Include="PostSystem.cpp" />
     <ClCompile Include="PotionMgr.cpp" />
+    <ClCompile Include="PvpOrderView.cpp" />
     <ClCompile Include="QuestMng.cpp" />
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />
