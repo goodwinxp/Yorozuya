@@ -30,14 +30,14 @@ namespace GameServer
         }
 
         void WINAPIV CPlayer::UpdatePvpOrderView(
-            ATF::CPlayer * pPlayer,
+            ATF::CPlayer* pPlayer,
             int64_t tCurTime,
             ATF::Info::CPlayerUpdatePvpOrderView1288_ptr next)
         {
             next(pPlayer, tCurTime);
 
             auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            PlayerEx.clear_serial_list();
+            PlayerEx.CleanSerialList();
         }
 
         void WINAPIV CPlayer::CalPvpTempCash(
@@ -50,7 +50,7 @@ namespace GameServer
                 return;
 
             auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pDier);
-            if (!PlayerEx.insert_serial_killer(pObj->m_pUserDB->m_dwSerial))
+            if (!PlayerEx.PushSerialKiller(pObj->m_pUserDB->m_dwSerial))
             {
                 return;
             }

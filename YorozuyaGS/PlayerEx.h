@@ -15,15 +15,15 @@ namespace GameServer
         public:
             CPlayerEx();
 
-            void loop();
+            void Loop();
 
-            void update_set_item(bool bFirst = false);
+            void UpdateSetItem(bool bFirst = false);
 
-            void set_item_check_request(DWORD dwSetIndex,  BYTE bySetItemNum, BYTE bySetEffectNum);
+            void SetItemCheckRequest(DWORD dwSetIndex,  BYTE bySetItemNum, BYTE bySetEffectNum);
 
-            bool insert_serial_killer(DWORD dwKillerSerial);
+            bool PushSerialKiller(DWORD dwKillerSerial);
 
-            void clear_serial_list();
+            void CleanSerialList();
 
         public:
             static bool Load(ATF::CPlayer* pPlayer);
@@ -36,9 +36,12 @@ namespace GameServer
             static CPlayerEx g_PlayerEx[ATF::Global::max_player];
 
         private:
-            bool init(ATF::CPlayer* pPlayer);
+            bool Init(ATF::CPlayer* pPlayer);
 
-            void save();
+            void Save();
+
+        private:
+            void CleanSetItem();
 
         private:
             ATF::CPlayer *m_pPlayer = nullptr;

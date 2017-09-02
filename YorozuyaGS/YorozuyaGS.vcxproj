@@ -201,7 +201,7 @@
     <ClCompile Include="PlayerSystem.cpp" />
     <ClCompile Include="PostSystem.cpp" />
     <ClCompile Include="PotionMgr.cpp" />
-    <ClCompile Include="PvpOrderView.cpp" />
+    <ClCompile Include="PlayerEx_PvpOrderView.cpp" />
     <ClCompile Include="QuestMng.cpp" />
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />

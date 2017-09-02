@@ -22,7 +22,7 @@ namespace GameServer
             next(pPlayer);
 
             auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            PlayerEx.loop();
+            PlayerEx.Loop();
         }
 
         bool WINAPIV CPlayer::Load(

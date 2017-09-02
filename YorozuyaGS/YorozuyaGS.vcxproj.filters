@@ -201,14 +201,14 @@
     <ClCompile Include="CrashDump.cpp">
       <Filter>Implementation\Extension\CrashDump</Filter>
     </ClCompile>
-    <ClCompile Include="PvpOrderView.cpp">
-      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
-    </ClCompile>
     <ClCompile Include="PlayerSystem.cpp">
       <Filter>Implementation\Fixes\Player</Filter>
     </ClCompile>
     <ClCompile Include="PlayerPvpOrderView.cpp">
       <Filter>Implementation\Fixes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx_PvpOrderView.cpp">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

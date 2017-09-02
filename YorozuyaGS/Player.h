@@ -53,7 +53,7 @@ namespace GameServer
             static void WINAPIV UpdatePvpOrderView(
                 ATF::CPlayer *pPlayer,
                 int64_t tCurTime,
-                ATF::Info::CPlayerUpdatePvpOrderView1288_ptr next);
+                ATF::Info::CPlayerUpdatePvpPointLimiter1290_ptr next);
 
             static void WINAPIV CalPvpTempCash(
                 ATF::CPlayer *pPlayer,
