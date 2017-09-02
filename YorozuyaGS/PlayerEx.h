@@ -1,6 +1,7 @@
 #pragma once
 
 #include <unordered_set>
+#include <unordered_map>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "..\Common\Helpers\SingletonHelper.hpp"
@@ -49,7 +50,19 @@ namespace GameServer
                 }
             };
             
-            using ContainerSetItemInfo_t = _STD unordered_set<detail::_set_item_info, hashing_func, key_equal_fn>;
+            struct _set_item_action
+            {
+                uint8_t code_result;
+                std::chrono::time_point<std::chrono::steady_clock> action_added;
+
+                bool is_due(
+                    const std::chrono::time_point<std::chrono::steady_clock>& current_time) const
+                {
+                    return std::chrono::duration_cast<std::chrono::minutes>(current_time - action_added) > std::chrono::minutes(1);
+                }
+            };
+            using ContainerSetItemInfo_t = _STD unordered_set<_set_item_info, hashing_func, key_equal_fn>;
+            using ContainerSetItemAction_t = _STD unordered_map<_set_item_info, _set_item_action, hashing_func, key_equal_fn>;
         };
 
         class CPlayerEx
@@ -60,7 +73,9 @@ namespace GameServer
 
             void loop();
 
-            void update_set_item();
+            void update_set_item(bool bFirst = false);
+
+            void set_item_check_request(DWORD dwSetIndex,  BYTE bySetItemNum, BYTE bySetEffectNum);
 
         public:
             static bool Load(ATF::CPlayer* pPlayer);
@@ -80,8 +95,10 @@ namespace GameServer
         private:
             ATF::CPlayer *m_pPlayer = nullptr;
 
-            std::mutex m_mtxCurrentSetInfo;
-            detail::ContainerSetItemInfo_t m_setInfoCurrentSetItem;
+            detail::ContainerSetItemInfo_t m_setSetItemInfo;
+
+            std::mutex m_mtxSetAction;
+            detail::ContainerSetItemAction_t m_mapSetItemAction;
         };
     };
 };

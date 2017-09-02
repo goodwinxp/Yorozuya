@@ -86,10 +86,19 @@ namespace GameServer
 
             if (n < ATF::Global::max_player)
             {
-                if (ATF::Global::g_Player[n].m_bOper)
+                auto pPlayer = &ATF::Global::g_Player[n];
+                if (pPlayer->m_bOper)
                 {
                     ATF::_set_item_check_request_clzo* pMsg = (ATF::_set_item_check_request_clzo*)pBuf;
-                    ATF::Global::g_Player[n].SendMsg_SetItemCheckResult(9, pMsg->dwSetIndex, pMsg->bySetEffectNum);
+                    if (pMsg->bSet)
+                    {
+                        auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                        PlayerEx.set_item_check_request(pMsg->dwSetIndex, pMsg->bySetItemNum, pMsg->bySetEffectNum);
+                    }
+                    else
+                    {
+                        pPlayer->SendMsg_SetItemCheckResult(2, pMsg->dwSetIndex, pMsg->bySetItemNum);
+                    }
                 }
             }
 
