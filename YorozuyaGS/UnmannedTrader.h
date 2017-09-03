@@ -52,6 +52,9 @@ namespace GameServer
                 char *pData,
                 ATF::Info::CUnmannedTraderUserInfoTableCompleteReRegist22_ptr next);
 
+            static void WINAPIV NotifyRegistItem(
+                ATF::CUnmannedTraderUserInfo *pObj,
+                ATF::Info::CUnmannedTraderUserInfoNotifyRegistItem104_ptr next);
         private:
             static bool WINAPIV Update_UnmannedTraderSingleItemInfo(
                 ATF::CRFWorldDatabase * pObj,

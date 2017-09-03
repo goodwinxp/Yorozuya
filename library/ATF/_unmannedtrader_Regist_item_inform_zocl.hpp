@@ -6,10 +6,11 @@
 
 START_ATF_NAMESPACE
     #pragma pack(push, 1)
-    struct  _unmannedtrader_Regist_item_inform_zocl
+    struct _unmannedtrader_Regist_item_inform_zocl
     {
-        struct  __list
+        struct __list
         {
+            bool bUnknown;
             unsigned __int16 wItemSerial;
             unsigned int dwRegistSerial;
             unsigned int dwPrice;
@@ -23,6 +24,6 @@ START_ATF_NAMESPACE
         void ctor__unmannedtrader_Regist_item_inform_zocl();
         int size();
     };
-    #pragma pack(pop)    
-    static_assert(ATF::checkSize<_unmannedtrader_Regist_item_inform_zocl, 181>(), "_unmannedtrader_Regist_item_inform_zocl");
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<_unmannedtrader_Regist_item_inform_zocl, 191>(), "_unmannedtrader_Regist_item_inform_zocl");
 END_ATF_NAMESPACE
