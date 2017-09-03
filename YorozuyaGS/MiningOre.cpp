@@ -68,7 +68,7 @@ namespace GameServer
 
             for (const auto& item : ItemsOre)
             {
-                if (strcmp(pOreFld->m_strCode, item) == 0)
+                if (*(uint64_t*)pOreFld->m_strCode == *(uint64_t*)item)
                 {
                     pPlayer->SendMsg_MineStartResult(9);
                     return;
