@@ -23,9 +23,11 @@ namespace GameServer
 
             bool PushSerialKiller(DWORD dwKillerSerial);
 
-            void CleanSerialList();
+            void CleanSerialKillerList();
 
         public:
+            static void AdjustSerialKillerList();
+
             static bool Load(ATF::CPlayer* pPlayer);
 
             static void NetClose(ATF::CPlayer* pPlayer);
@@ -39,6 +41,11 @@ namespace GameServer
             bool Init(ATF::CPlayer* pPlayer);
 
             void Save();
+
+        private:
+            void LoadSerialKillerList();
+
+            void SaveSerialKillerList();
 
         private:
             void CleanSetItem();

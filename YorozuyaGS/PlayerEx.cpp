@@ -14,9 +14,9 @@ namespace GameServer
 
         CPlayerEx::CPlayerEx()
         {
+            m_setKillerInfo.reserve(30);
             m_setSetItemInfo.reserve(10);
             m_mapSetItemAction.reserve(10);
-            m_setKillerInfo.reserve(30);
         }
 
         void CPlayerEx::Loop()
@@ -242,7 +242,7 @@ namespace GameServer
 
             CleanSetItem();
 
-            CleanSerialList();
+            CleanSerialKillerList();
 
             UpdateSetItem(true);
 
@@ -253,7 +253,7 @@ namespace GameServer
         {
             CleanSetItem();
 
-            CleanSerialList();
+            CleanSerialKillerList();
 
             m_pPlayer = nullptr;
         }

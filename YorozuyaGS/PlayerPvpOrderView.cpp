@@ -37,7 +37,7 @@ namespace GameServer
             next(pPlayer, tCurTime);
 
             auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            PlayerEx.CleanSerialList();
+            PlayerEx.CleanSerialKillerList();
         }
 
         void WINAPIV CPlayer::CalPvpTempCash(
