@@ -44,6 +44,14 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
+        static const char* const ItemsOre[] = {
+            "ioblu04",
+            "iored04",
+            "ioyel04",
+            "iogre04",
+            "iobla04"
+        };
+
         void WINAPIV CMiningOre::pc_MineStart(
             ATF::CPlayer* pPlayer,
             char byMineIndex,
@@ -58,6 +66,15 @@ namespace GameServer
                 return;
             }
 
+            for (const auto& item : ItemsOre)
+            {
+                if (strcmp(pOreFld->m_strCode, item) == 0)
+                {
+                    pPlayer->SendMsg_MineStartResult(9);
+                    return;
+                }
+            }
+            
             next(pPlayer, byMineIndex, byOreIndex, wBatterySerial);
         }
     }
