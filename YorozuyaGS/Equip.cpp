@@ -93,7 +93,7 @@ namespace GameServer
                     if (pMsg->bSet)
                     {
                         auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                        PlayerEx.set_item_check_request(pMsg->dwSetIndex, pMsg->bySetItemNum, pMsg->bySetEffectNum);
+                        PlayerEx.SetItemCheckRequest(pMsg->dwSetIndex, pMsg->bySetItemNum, pMsg->bySetEffectNum);
                     }
                     else
                     {
@@ -126,7 +126,7 @@ namespace GameServer
                     break;
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                PlayerEx.update_set_item();
+                PlayerEx.UpdateSetItem();
             } while (false);
 
             return pItem;
@@ -160,7 +160,7 @@ namespace GameServer
                     break;
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                PlayerEx.update_set_item();
+                PlayerEx.UpdateSetItem();
             } while (false);
 
             return result;

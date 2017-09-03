@@ -50,6 +50,11 @@ namespace GameServer
                 char byKillerObjID,
                 ATF::Info::CPlayerCalcPvP74_ptr next);
 
+            static void WINAPIV UpdatePvpOrderView(
+                ATF::CPlayer *pPlayer,
+                int64_t tCurTime,
+                ATF::Info::CPlayerUpdatePvpPointLimiter1290_ptr next);
+
             static void WINAPIV CalPvpTempCash(
                 ATF::CPlayer *pPlayer,
                 ATF::CPlayer *pDier,

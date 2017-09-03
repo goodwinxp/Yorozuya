@@ -23,6 +23,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::NetClose, &CPlayer::NetClose);
             core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
             core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
+            core.set_hook(&ATF::CPlayer::UpdatePvpOrderView, &CPlayer::UpdatePvpOrderView);
             core.set_hook(&ATF::CPlayer::pc_MovePortal, &CPlayer::pc_MovePortal);
             core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
@@ -37,6 +38,7 @@ namespace GameServer
         {
             auto& core = ATF::CATFCore::get_instance();
             core.unset_hook(&ATF::CPlayer::Load);
+            core.unset_hook(&ATF::CPlayer::Loop);
             core.unset_hook(&ATF::CPlayer::NetClose);
             core.unset_hook(&ATF::CPlayer::CalcPvP);
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
@@ -71,79 +73,7 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
-        void WINAPIV CPlayer::Loop(
-            ATF::CPlayer* pPlayer, 
-            ATF::Info::CPlayerLoop368_ptr next)
-        {
-            next(pPlayer);
-
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            PlayerEx.loop();
-        }
-
-        bool WINAPIV CPlayer::Load(
-            ATF::CPlayer * pObj,
-            ATF::CUserDB * pUser,
-            bool bFirstStart,
-            ATF::Info::CPlayerLoad366_ptr next)
-        {
-            pObj->m_bPostLoad = false;
-            bool bResult = next(pObj, pUser, bFirstStart);
-            if (bResult)
-            {
-                if (!pObj->m_Param.m_pGuild)
-                {
-                    auto dwDestroyerSerial = ATF::Global::g_HolySys->GetDestroyerSerial();
-                    if (pObj->m_Param.GetCharSerial() != dwDestroyerSerial)
-                    {
-                        pObj->SetLastAttBuff(false);
-                    }
-                }
-
-                auto& player_ex = CPlayerEx::get_instance();
-                player_ex->Load(pObj);
-            }
-
-            return bResult;
-        }
-
-        void WINAPIV CPlayer::NetClose(
-            ATF::CPlayer *pObj,
-            bool bMoveOutLobby,
-            ATF::Info::CPlayerNetClose370_ptr next)
-        {
-            next(pObj, bMoveOutLobby);
-            pObj->m_bPostLoad = false;
-
-            auto& player_ex = CPlayerEx::get_instance();
-            player_ex->NetClose(pObj);
-        }
-
-        void WINAPIV CPlayer::CalcPvP(
-            ATF::CPlayer * pObj, 
-            ATF::CPlayer * pDier, 
-            char byKillerObjID,
-            ATF::Info::CPlayerCalcPvP74_ptr next)
-        {
-            if (pObj->m_Param.GetRaceCode() == pDier->m_Param.GetRaceCode())
-            {
-                return;
-            }
-
-            next(pObj, pDier, byKillerObjID);
-        }
-
-        void WINAPIV CPlayer::CalPvpTempCash(
-            ATF::CPlayer * pObj, 
-            ATF::CPlayer * pDier, 
-            char byKillerObjID,
-            ATF::Info::CPlayerCalPvpTempCash52_ptr next)
-        {
-            if (pObj->m_Param.GetRaceCode() == pDier->m_Param.GetRaceCode())
-                return;
-
-            next(pObj, pDier, byKillerObjID);
-        }
+        
 
         void WINAPIV CPlayer::pc_MakeTrapRequest(
             ATF::CPlayer * pObj,

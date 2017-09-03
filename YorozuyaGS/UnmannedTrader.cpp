@@ -7,18 +7,9 @@
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_unmandtrader_buy_get_info.hpp>
 
-
-
 /* Variant 2
 Дюп через смену специализации
 */
-
-/* Variant 3
-Дюп через макс. кол-во денег
-Возможно что для GU этот баг не актуален
-*/
-
-
 
 namespace GameServer
 {
@@ -33,6 +24,7 @@ namespace GameServer
             core.set_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteReRegist, &CUnmannedTrader::CompleteReRegist);
             core.set_hook(&ATF::CUnmannedTraderUserInfo::ReRegist, &CUnmannedTrader::ReRegist);
             core.set_hook(&ATF::CUnmannedTraderController::UpdateReRegist, &CUnmannedTrader::UpdateReRegist);
+            core.set_hook(&ATF::CUnmannedTraderUserInfo::NotifyRegistItem, &CUnmannedTrader::NotifyRegistItem);
         }
 
         void CUnmannedTrader::unload()
@@ -42,6 +34,7 @@ namespace GameServer
             core.unset_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteReRegist);
             core.unset_hook(&ATF::CUnmannedTraderUserInfo::ReRegist);
             core.unset_hook(&ATF::CUnmannedTraderController::UpdateReRegist);
+            core.unset_hook(&ATF::CUnmannedTraderUserInfo::NotifyRegistItem);
         }
 
         void CUnmannedTrader::loop()
@@ -370,6 +363,46 @@ namespace GameServer
 
                 next(pObj, (char *)&origQryData);
             } while (false);
+        }
+
+        void WINAPIV CUnmannedTrader::NotifyRegistItem(
+            ATF::CUnmannedTraderUserInfo* pObj, 
+            ATF::Info::CUnmannedTraderUserInfoNotifyRegistItem104_ptr next)
+        {
+            UNREFERENCED_PARAMETER(pObj);
+
+            _unmannedtrader_Regist_item_inform_zocl Msg;
+            for (int j = 0; j < pObj->m_byMaxRegistCnt; ++j)
+            {
+                auto& Info = pObj->m_vecRegistItemInfo[j];
+                if (!Info.IsRegist())
+                    continue;
+
+                Msg.List[Msg.byNum].bUnknown = false;
+                Msg.List[Msg.byNum].wItemSerial = Info.GetItemSerial();
+                Msg.List[Msg.byNum].dwRegistSerial = Info.GetRegistSerial();
+                Msg.List[Msg.byNum].dwPrice = Info.GetPrice();
+                Msg.List[Msg.byNum].dwLeftSec = Info.GetLeftSec();
+                Msg.List[Msg.byNum].dwListIndex = 0;
+
+                auto Instance = ATF::CUnmannedTraderGroupItemInfoTable::Instance();
+
+                char byDivision = -1;
+                char byClass = -1;
+                char bySubClass = -1;
+                Instance->GetGroupID(
+                    Info.GetTableCode(),
+                    Info.GetItemIndex(),
+                    &byDivision, 
+                    &byClass,
+                    &bySubClass,
+                    &Msg.List[Msg.byNum].dwListIndex);
+
+                ++Msg.byNum;
+            }
+
+            char pbyType[2]{ 30, 25 };
+            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pObj->m_wInx, pbyType, (char *)&Msg, Msg.size());
         }
 
         bool WINAPIV CUnmannedTrader::Update_UnmannedTraderSingleItemInfo(

@@ -14,11 +14,12 @@ namespace GameServer
 
         CPlayerEx::CPlayerEx()
         {
+            m_setKillerInfo.reserve(30);
             m_setSetItemInfo.reserve(10);
             m_mapSetItemAction.reserve(10);
         }
 
-        void CPlayerEx::loop()
+        void CPlayerEx::Loop()
         {
             {
                 auto current_time = std::chrono::steady_clock::now();
@@ -32,7 +33,7 @@ namespace GameServer
             }
         }
 
-        void CPlayerEx::update_set_item(bool bFirst)
+        void CPlayerEx::UpdateSetItem(bool bFirst)
         {
             auto pSUItemSystemInstance = ATF::CSUItemSystem::Instance();
             ATF::CSetItemType* pSetItemType = pSUItemSystemInstance->GetCSetItemType();
@@ -152,7 +153,7 @@ namespace GameServer
             m_setSetItemInfo.swap(setCurrent);
         }
 
-        void CPlayerEx::set_item_check_request(DWORD dwSetIndex, BYTE bySetItemNum, BYTE bySetEffectNum)
+        void CPlayerEx::SetItemCheckRequest(DWORD dwSetIndex, BYTE bySetItemNum, BYTE bySetEffectNum)
         {
             detail::_set_item_info SetItemInfo;
             SetItemInfo.info.dwSetItem = dwSetIndex;
@@ -213,7 +214,7 @@ namespace GameServer
                 if (pPlayer->m_id.wIndex >= ATF::Global::max_player)
                     break;
 
-                result = g_PlayerEx[pPlayer->m_id.wIndex].init(pPlayer);
+                result = g_PlayerEx[pPlayer->m_id.wIndex].Init(pPlayer);
             } while (false);
 
             return result;
@@ -226,7 +227,7 @@ namespace GameServer
                 if (pPlayer->m_id.wIndex >= ATF::Global::max_player)
                     break;
 
-                g_PlayerEx[pPlayer->m_id.wIndex].save();
+                g_PlayerEx[pPlayer->m_id.wIndex].Save();
             } while (false);
         }
 
@@ -235,29 +236,36 @@ namespace GameServer
             return g_PlayerEx[pPlayer->m_id.wIndex];
         }
 
-        bool CPlayerEx::init(ATF::CPlayer* pPlayer)
+        bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
             m_pPlayer = pPlayer;
 
-            {
-                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
-                m_mapSetItemAction.clear();
-            }
-            m_setSetItemInfo.clear();
+            CleanSetItem();
 
-            update_set_item(true);
+            CleanSerialKillerList();
+
+            UpdateSetItem(true);
 
             return true;
         }
 
-        void CPlayerEx::save()
+        void CPlayerEx::Save()
+        {
+            CleanSetItem();
+
+            CleanSerialKillerList();
+
+            m_pPlayer = nullptr;
+        }
+
+        void CPlayerEx::CleanSetItem()
         {
             {
                 std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
                 m_mapSetItemAction.clear();
             }
+
             m_setSetItemInfo.clear();
-            m_pPlayer = nullptr;
         }
     }
 }
