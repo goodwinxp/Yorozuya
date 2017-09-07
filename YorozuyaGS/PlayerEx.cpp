@@ -31,6 +31,13 @@ namespace GameServer
                         return kv.second.is_due(current_time);
                     });
             }
+            {
+                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
+                for (const auto& v : m_setSetItemInfo)
+                {
+                    m_pPlayer->SendMsg_SetItemCheckResult(8, v.info.dwSetItem, v.info.bySetEffectNum);
+                }
+            }
         }
 
         void CPlayerEx::UpdateSetItem(bool bFirst)
@@ -150,7 +157,10 @@ namespace GameServer
             }
             #pragma endregion DetectSetOnActionCode
 
-            m_setSetItemInfo.swap(setCurrent);
+            {
+                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
+                m_setSetItemInfo.swap(setCurrent);
+            }
         }
 
         void CPlayerEx::SetItemCheckRequest(DWORD dwSetIndex, BYTE bySetItemNum, BYTE bySetEffectNum)

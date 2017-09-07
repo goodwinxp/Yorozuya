@@ -53,6 +53,7 @@ namespace GameServer
         private:
             ATF::CPlayer *m_pPlayer = nullptr;
 
+            std::mutex m_mtxSetInfo;
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
 
             std::mutex m_mtxSetAction;
