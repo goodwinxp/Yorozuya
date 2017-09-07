@@ -57,7 +57,7 @@ namespace GameServer
                 for (uint32_t dwSetIndex = 0; dwSetIndex < pSetItemEff->GetRecordNum(); ++dwSetIndex)
                 {
                     ATF::_SetItemEff_fld* pSetItemFld = (ATF::_SetItemEff_fld*)pSetItemEff->GetRecord(dwSetIndex);
-                    if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceCode()] == '0')
+                    if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceSexCode()] == '0')
                         continue;
 
                     char szStrCode[64]{ 0 };
