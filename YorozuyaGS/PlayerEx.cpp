@@ -31,6 +31,13 @@ namespace GameServer
                         return kv.second.is_due(current_time);
                     });
             }
+            {
+                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
+                for (const auto& v : m_setSetItemInfo)
+                {
+                    m_pPlayer->SendMsg_SetItemCheckResult(8, v.info.dwSetItem, v.info.bySetEffectNum);
+                }
+            }
         }
 
         void CPlayerEx::UpdateSetItem(bool bFirst)
@@ -50,7 +57,7 @@ namespace GameServer
                 for (uint32_t dwSetIndex = 0; dwSetIndex < pSetItemEff->GetRecordNum(); ++dwSetIndex)
                 {
                     ATF::_SetItemEff_fld* pSetItemFld = (ATF::_SetItemEff_fld*)pSetItemEff->GetRecord(dwSetIndex);
-                    if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceCode()] == '0')
+                    if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceSexCode()] == '0')
                         continue;
 
                     char szStrCode[64]{ 0 };
@@ -150,7 +157,10 @@ namespace GameServer
             }
             #pragma endregion DetectSetOnActionCode
 
-            m_setSetItemInfo.swap(setCurrent);
+            {
+                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
+                m_setSetItemInfo.swap(setCurrent);
+            }
         }
 
         void CPlayerEx::SetItemCheckRequest(DWORD dwSetIndex, BYTE bySetItemNum, BYTE bySetEffectNum)
