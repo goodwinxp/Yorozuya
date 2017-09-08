@@ -31,13 +31,6 @@ namespace GameServer
                         return kv.second.is_due(current_time);
                     });
             }
-            {
-                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
-                for (const auto& v : m_setSetItemInfo)
-                {
-                    m_pPlayer->SendMsg_SetItemCheckResult(8, v.info.dwSetItem, v.info.bySetEffectNum);
-                }
-            }
         }
 
         void CPlayerEx::UpdateSetItem(bool bFirst)
@@ -137,10 +130,12 @@ namespace GameServer
                     {
                         if (it_find->value == v.value)
                         {
-                            item_action.code_result = 4;
+                            //item_action.code_result = 8;
+                            item_action.code_result = 8;
                         }
                         else
                         {
+                            //item_action.code_result = 4;
                             item_action.code_result = 8;
                         }
                     }
@@ -157,10 +152,7 @@ namespace GameServer
             }
             #pragma endregion DetectSetOnActionCode
 
-            {
-                std::unique_lock<decltype(m_mtxSetAction)> lock(m_mtxSetAction);
-                m_setSetItemInfo.swap(setCurrent);
-            }
+            m_setSetItemInfo.swap(setCurrent);
         }
 
         void CPlayerEx::SetItemCheckRequest(DWORD dwSetIndex, BYTE bySetItemNum, BYTE bySetEffectNum)
@@ -170,7 +162,7 @@ namespace GameServer
             SetItemInfo.info.bySetItemNum = bySetItemNum;
             SetItemInfo.info.bySetEffectNum = bySetEffectNum;
 
-            BYTE byResult = 7;
+            BYTE byResult = 9;
 
             do
             {
@@ -184,7 +176,7 @@ namespace GameServer
                     break;
 
                 ATF::_SetItemEff_fld* pSetItemFld = (ATF::_SetItemEff_fld*)pSetItemEff->GetRecord(dwSetIndex);
-                if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceCode()] == '0')
+                if (pSetItemFld->m_strCivil[m_pPlayer->m_Param.GetRaceSexCode()] == '0')
                 {
                     byResult = 3;
                     break;
