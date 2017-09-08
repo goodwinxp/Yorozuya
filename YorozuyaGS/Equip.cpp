@@ -97,7 +97,7 @@ namespace GameServer
                     }
                     else
                     {
-                        pPlayer->SendMsg_SetItemCheckResult(2, pMsg->dwSetIndex, pMsg->bySetItemNum);
+                        pPlayer->SendMsg_SetItemCheckResult(6, pMsg->dwSetIndex, pMsg->bySetItemNum);
                     }
                 }
             }
