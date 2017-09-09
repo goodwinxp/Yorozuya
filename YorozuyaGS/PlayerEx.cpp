@@ -62,27 +62,41 @@ namespace GameServer
                             continue;
                     }
 
-                    detail::_set_item_info SetItemInfo;
-                    SetItemInfo.info.dwSetItem = dwSetIndex;
-                    SetItemInfo.info.bySetItemNum = 
-                        m_pPlayer->m_clsSetItem.Check_EquipItem(
-                            &m_pPlayer->m_pUserDB->m_AvatorData, pSetItemFld);
+                    BYTE byHaveItem = m_pPlayer->m_clsSetItem.Check_EquipItem(
+                        &m_pPlayer->m_pUserDB->m_AvatorData, pSetItemFld);
 
-                    if (SetItemInfo.info.bySetItemNum != 0)
+                    if (byHaveItem == 0)
+                        continue;
+                    
+                    ATF::si_interpret* pSI_Interpret = pSetItemType->Getsi_interpret(dwSetIndex);
+                    if (!pSI_Interpret)
+                        continue;
+
+                    for (int i = 0; i < pSI_Interpret->GetEffectTypeCount(); ++i)
                     {
-                        ATF::si_interpret* pSI_Interpret = pSetItemType->Getsi_interpret(dwSetIndex);
-                        if (!pSI_Interpret)
+                        detail::_set_item_info SetItemInfo;
+                        SetItemInfo.info.dwSetItem = dwSetIndex;
+                        if (pSI_Interpret->GetCountOfItem(i) > byHaveItem)
                             continue;
 
-                        for (int i = 0; i < pSI_Interpret->GetEffectTypeCount(); ++i)
-                        {
-                            if (pSI_Interpret->GetCountOfItem(i) != SetItemInfo.info.bySetItemNum)
-                                continue;
+                        SetItemInfo.info.bySetItemNum = pSI_Interpret->GetCountOfItem(i);
+                        SetItemInfo.info.bySetEffectNum = pSI_Interpret->GetCountOfEffect(i);
 
-                            SetItemInfo.info.bySetEffectNum = pSI_Interpret->GetCountOfEffect(i);
-                            setCurrent.emplace(std::move(SetItemInfo));
+                        const auto it_find = _STD find_if(
+                            setCurrent.begin(), setCurrent.end(),
+                            [&](const detail::ContainerSetItemInfo_t::value_type& item) {
+                                return item.info.dwSetItem == SetItemInfo.info.dwSetItem 
+                                    && item.info.bySetItemNum < SetItemInfo.info.bySetItemNum;
+                            });
+
+                        if (it_find != setCurrent.cend())
+                        {
+                            setCurrent.erase(it_find);
                         }
+
+                        setCurrent.emplace(std::move(SetItemInfo));
                     }
+                    
                 }
             }
             #pragma endregion DetectCurrentActiveSetEff
@@ -128,14 +142,12 @@ namespace GameServer
 
                     if (m_setSetItemInfo.cend() != it_find)
                     {
-                        if (it_find->value == v.value)
+                        if (v.info.bySetItemNum == it_find->info.bySetItemNum)
                         {
-                            //item_action.code_result = 8;
-                            item_action.code_result = 8;
+                            item_action.code_result = 4;
                         }
                         else
                         {
-                            //item_action.code_result = 4;
                             item_action.code_result = 8;
                         }
                     }
