@@ -142,14 +142,7 @@ namespace GameServer
 
                     if (m_setSetItemInfo.cend() != it_find)
                     {
-                        if (v.info.bySetItemNum == it_find->info.bySetItemNum)
-                        {
-                            item_action.code_result = 4;
-                        }
-                        else
-                        {
-                            item_action.code_result = 8;
-                        }
+                         item_action.code_result = 8;
                     }
                     else
                     {
