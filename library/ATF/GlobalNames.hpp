@@ -59,5 +59,6 @@ START_ATF_NAMESPACE
         static CGuild_ptr g_Guild((CGuild_ptr)0x141500040L);
         static CNetProcess_ptr* g_NetProcess((CNetProcess_ptr *)0x1414F2088L);
         static CHolyStoneSystem_ptr g_HolySys((CHolyStoneSystem_ptr)0x184981C90L);
+        static bool* g_HideLicenseWindow((bool*)0x1799C9AE8L);
     }; // static end namespace global
 END_ATF_NAMESPACE
