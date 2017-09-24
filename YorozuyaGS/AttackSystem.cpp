@@ -2,7 +2,7 @@
 
 #include "AttackSystem.h"
 #include <ATF/Global.hpp>
-
+#include <ATF/_SiegeKitItem_fld.hpp>
 
 namespace GameServer
 {
@@ -67,6 +67,15 @@ namespace GameServer
                 if (pPlayer->IsSiegeMode())
                 {
                     if (pSkillFld->m_nTempEffectType != 23)
+                        return -20;
+
+                    auto& RecordData = ATF::Global::g_MainThread->m_tblItemData[pPlayer->m_pSiegeItem->m_byTableCode];
+                    ATF::_SiegeKitItem_fld* item = (ATF::_SiegeKitItem_fld*)RecordData.GetRecord(pPlayer->m_pSiegeItem->m_wItemIndex);
+
+                    if (item->m_nLevelLim == 30 && pSkillFld->m_nLv != 0)
+                        return -20;
+
+                    if (item->m_nLevelLim == 40 && pSkillFld->m_nLv != 1)
                         return -20;
                 }
                 else if (pSkillFld->m_nTempEffectType == 23)
