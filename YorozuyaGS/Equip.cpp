@@ -76,32 +76,11 @@ namespace GameServer
         }
 
         bool WINAPIV CEquip::SetItemCheckRequest(
-            ATF::CNetworkEX *pNetwork,
-            int n, 
-            char *pBuf,
-            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next)
+            ATF::CNetworkEX */*pNetwork*/,
+            int /*n*/, 
+            char */*pBuf*/,
+            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr /*next*/)
         {
-            UNREFERENCED_PARAMETER(pNetwork);
-            UNREFERENCED_PARAMETER(next);
-
-            if (n < ATF::Global::max_player)
-            {
-                auto pPlayer = &ATF::Global::g_Player[n];
-                if (pPlayer->m_bOper)
-                {
-                    ATF::_set_item_check_request_clzo* pMsg = (ATF::_set_item_check_request_clzo*)pBuf;
-                    if (pMsg->bSet)
-                    {
-                        auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                        PlayerEx.SetItemCheckRequest(pMsg->dwSetIndex, pMsg->bySetItemNum, pMsg->bySetEffectNum);
-                    }
-                    else
-                    {
-                        pPlayer->SendMsg_SetItemCheckResult(6, pMsg->dwSetIndex, pMsg->bySetItemNum);
-                    }
-                }
-            }
-
             return true;
         }
 
@@ -175,86 +154,9 @@ namespace GameServer
             ATF::Info::CPlayerpc_SetItemCheckRequest1937_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
-            bool result = false;
 
-            do
-            {
-                auto pSUItemSystemInst = ATF::CSUItemSystem::Instance();
-                auto pSetItemType = pSUItemSystemInst->GetCSetItemType();
-                if (!pSetItemType)
-                {
-                    break;
-                }
-
-                auto pSI = pSetItemType->Getsi_interpret(dwSetItem);
-                if (!pSI)
-                {
-                    break;
-                }
-
-                uint8_t byResult = 9;
-                if (!bSet)
-                {
-                    byResult = pPlayer->m_clsSetItem.SetOffEffect(dwSetItem, bySetItemNum, bySetEffectNum);
-                    if (byResult == 1)
-                        pPlayer->ApplySetItemEffect(pSI, dwSetItem, bySetItemNum, bySetEffectNum, false);
-                }
-                else
-                {
-                    char szStrCode[64]{ 0 };
-                    bool bIsEquipAbleGrade = false;
-
-                    int nTableCode = pSUItemSystemInst->GetSetItemTableInfo(dwSetItem, szStrCode, 64);
-                    if (nTableCode > -1)
-                    {
-                        int nEquipGrade = ATF::Global::GetItemEquipGrade(nTableCode, szStrCode);
-                        if (pPlayer->IsEquipAbleGrade(nEquipGrade))
-                            bIsEquipAbleGrade = true;
-                    }
-
-                    if (bIsEquipAbleGrade)
-                    {
-                        byResult = pPlayer->m_clsSetItem.SetOnEffect(
-                            &pPlayer->m_pUserDB->m_AvatorData,
-                            dwSetItem,
-                            bySetItemNum,
-                            bySetEffectNum);
-
-                        switch (byResult)
-                        {
-                        case 0:
-                            pPlayer->ApplySetItemEffect(pSI, dwSetItem, bySetItemNum, bySetEffectNum, true);
-                            break;
-                        case 8:
-                            pPlayer->ApplySetItemEffect(
-                                pSI, 
-                                pPlayer->m_clsSetItem.GetResetIdx(),
-                                pPlayer->m_clsSetItem.GetResetItemNum(),
-                                pPlayer->m_clsSetItem.GetResetEffectNum(),
-                                false);
-                            pPlayer->ApplySetItemEffect(
-                                pSI, 
-                                dwSetItem, 
-                                bySetItemNum, 
-                                bySetEffectNum, 
-                                true);
-                            break;
-                        case 4:
-                        case 3:
-                        case 2:
-                        case 7:
-                            break;
-                        default:
-                            byResult = 9;
-                            break;
-                        }
-                    }
-                }
-
-                result = true;
-            } while (false);
-
-            return result;
+            uint8_t byResult;
+            return CPlayerEx::pc_SetItemCheckRequest(pPlayer, dwSetItem, bySetItemNum, bySetEffectNum, bSet, byResult);
         }
     }
 }

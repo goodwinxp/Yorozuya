@@ -17,10 +17,8 @@ namespace GameServer
 
             void Loop();
 
-            void UpdateSetItem(bool bFirst = false);
-
-            void SetItemCheckRequest(DWORD dwSetIndex,  BYTE bySetItemNum, BYTE bySetEffectNum);
-
+            void UpdateSetItem();
+            
             bool PushSerialKiller(DWORD dwKillerSerial);
 
             void CleanSerialKillerList();
@@ -33,6 +31,14 @@ namespace GameServer
             static void NetClose(ATF::CPlayer* pPlayer);
 
             static CPlayerEx& GetPlayerEx(const ATF::CPlayer* pPlayer);
+
+            static bool WINAPIV pc_SetItemCheckRequest(
+                ATF::CPlayer *pPlayer,
+                unsigned int dwSetItem,
+                char bySetItemNum,
+                char bySetEffectNum,
+                bool bSet,
+                uint8_t& byResult);
 
         private:
             static CPlayerEx g_PlayerEx[ATF::Global::max_player];
@@ -53,11 +59,9 @@ namespace GameServer
         private:
             ATF::CPlayer *m_pPlayer = nullptr;
 
+            std::mutex m_mtxSetView;
+            detail::ContainerSetItemInfo_t m_setSetItemInfoView;
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
-
-            std::mutex m_mtxSetAction;
-            detail::ContainerSetItemAction_t m_mapSetItemAction;
-
         private:
             std::mutex m_mtxKillerInfo;
             std::unordered_set<DWORD> m_setKillerInfo;
