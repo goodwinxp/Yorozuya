@@ -109,6 +109,9 @@
     <Filter Include="Implementation\Extension\PlayerEx\PvpOrderView">
       <UniqueIdentifier>{24f22438-12fc-4aca-a8da-4fc328e4a94c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\ReadSystemPass">
+      <UniqueIdentifier>{f14f6349-860f-4a12-88f4-1de7d233a87f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -209,6 +212,9 @@
     </ClCompile>
     <ClCompile Include="PlayerEx_PvpOrderView.cpp">
       <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadSystemPass.cpp">
+      <Filter>Implementation\Extension\ReadSystemPass</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -316,6 +322,9 @@
     </ClInclude>
     <ClInclude Include="PlayerEx_detail.h">
       <Filter>Implementation\Extension\PlayerEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadSystemPass.h">
+      <Filter>Implementation\Extension\ReadSystemPass</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

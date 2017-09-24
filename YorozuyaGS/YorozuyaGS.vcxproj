@@ -157,6 +157,7 @@
     <ClInclude Include="PostSystem.h" />
     <ClInclude Include="PotionMgr.h" />
     <ClInclude Include="QuestMng.h" />
+    <ClInclude Include="ReadSystemPass.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Store.h" />
     <ClInclude Include="Trade.h" />
@@ -203,6 +204,7 @@
     <ClCompile Include="PotionMgr.cpp" />
     <ClCompile Include="PlayerEx_PvpOrderView.cpp" />
     <ClCompile Include="QuestMng.cpp" />
+    <ClCompile Include="ReadSystemPass.cpp" />
     <ClCompile Include="Store.cpp" />
     <ClCompile Include="Trap.cpp" />
     <ClCompile Include="Trunk.cpp" />

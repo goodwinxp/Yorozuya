@@ -43,6 +43,22 @@ namespace GameServer
                 ATF::_STORAGE_LIST::_db_con** ppEffBtProp,
                 ATF::_BulletItem_fld** ppfldEffBt,
                 ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next);
+
+            static void WINAPIV pc_ForceRequest(
+                ATF::CPlayer* pPlayer,
+                uint16_t wForceSerial,
+                ATF::_CHRID* pidDst,
+                uint16_t* pConsumeSerial,
+                ATF::Info::CPlayerpc_ForceRequest1717_ptr next);
+
+            static char WINAPIV skill_process(
+                ATF::CPlayer* pPlayer,
+                int nEffectCode,
+                int nSkillIndex,
+                ATF::_CHRID* pidDst,
+                uint16_t* pConsumeSerial,
+                int* pnLv,
+                ATF::Info::CPlayerskill_process2035_ptr next);
         };
     };
 };
