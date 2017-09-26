@@ -32,6 +32,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
             core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
+            core.set_hook(&ATF::CPlayer::pc_ExchangeItem, &CPlayer::pc_ExchangeItem);
         }
 
         void CPlayer::unload()
@@ -42,6 +43,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::NetClose);
             core.unset_hook(&ATF::CPlayer::CalcPvP);
             core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
+            core.unset_hook(&ATF::CPlayer::UpdatePvpOrderView);
             core.unset_hook(&ATF::CPlayer::pc_MovePortal);
             core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
             core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
@@ -50,6 +52,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_CharacterRenameCheck);
             core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowStorageItem);
+            core.unset_hook(&ATF::CPlayer::pc_ExchangeItem);
         }
 
         void CPlayer::loop()
@@ -264,6 +267,48 @@ namespace GameServer
             } while (false);
 
             pObj->SendMsg_ThrowStorageResult(byResult);
+        }
+
+        void WINAPIV CPlayer::pc_ExchangeItem(
+            ATF::CPlayer * pPlayer, 
+            unsigned __int16 wManualIndex, 
+            unsigned __int16 wItemSerial, 
+            ATF::Info::CPlayerpc_ExchangeItem1711_ptr next)
+        {
+            uint8_t byResult = 0;
+            do
+            {
+                auto pCon = pPlayer->m_Param.m_dbInven.GetPtrFromSerial(wItemSerial);
+                if (!pCon)
+                {
+                    byResult = 4;
+                    break;
+                }
+
+                if (pCon->m_bLock)
+                {
+                    byResult = 4;
+                    break;
+                }
+
+                if (pCon->m_byTableCode != (uint8_t)e_code_item_table::tbl_code_box)
+                {
+                    byResult = 12;
+                    break;
+                }
+
+                if (pCon->m_dwDur <= 0 || pCon->m_dwDur > 99)
+                {
+                    byResult = 4;
+                    break;
+                }
+
+                next(pPlayer, wManualIndex, wItemSerial);
+                return;
+            } while (false);
+
+            _STORAGE_LIST::_db_con pNewItem;
+            pPlayer->SendMsg_ExchangeItemResult(byResult, &pNewItem);
         }
     }
 }
