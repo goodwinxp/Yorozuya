@@ -4,6 +4,7 @@
 #include "../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CPlayerInfo.hpp>
+#include <ATF/CPostSystemManagerInfo.hpp>
 #include <ATF/CMainThreadInfo.hpp>
 
 namespace GameServer
@@ -39,6 +40,14 @@ namespace GameServer
                 ATF::CMainThread *pObj, 
                 char *pData,
                 ATF::Info::CMainThreadLoad_PostStorage_Complete112_ptr next);
+
+            static char WINAPIV CheckRegister(
+                ATF::CPostSystemManager *pObj, 
+                ATF::CPlayer *pOne, 
+                ATF::_STORAGE_POS_INDIV *pItemInfo, 
+                unsigned int dwGold, 
+                ATF::_STORAGE_LIST::_db_con **pItem,
+                ATF::Info::CPostSystemManagerCheckRegister4_ptr next);
         };
     };
 };

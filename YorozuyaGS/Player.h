@@ -113,6 +113,12 @@ namespace GameServer
                 ATF::CPlayer *pPlayer, 
                 ATF::_STORAGE_POS_INDIV* pItem,
                 ATF::Info::CPlayerpc_ThrowStorageItem1953_ptr next);
+
+            static void WINAPIV pc_ExchangeItem(
+                ATF::CPlayer *pPlayer,
+                unsigned __int16 wManualIndex, 
+                unsigned __int16 wItemSerial,
+                ATF::Info::CPlayerpc_ExchangeItem1711_ptr next);
         };
     };
 };
