@@ -13,13 +13,16 @@ namespace GameServer
         void CPostSystem::load()
         {
             auto& core = CATFCore::get_instance();
+            core.set_hook(&ATF::CPostSystemManager::CheckRegister, &CPostSystem::CheckRegister);
             core.set_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
             core.set_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
+            
         }
 
         void CPostSystem::unload()
         {
             auto& core = CATFCore::get_instance();
+            core.unset_hook(&ATF::CPostSystemManager::CheckRegister);
             core.unset_hook(&ATF::CMainThread::Load_ReturnPost_Complete);
             core.unset_hook(&ATF::CMainThread::Load_PostStorage_Complete);
         }
@@ -149,6 +152,26 @@ namespace GameServer
 
                 next(pObj, pData);
             } while (false);
+        }
+
+        char WINAPIV CPostSystem::CheckRegister(
+            ATF::CPostSystemManager * pObj, 
+            ATF::CPlayer * pOne, 
+            ATF::_STORAGE_POS_INDIV * pItemInfo, 
+            unsigned int dwGold, 
+            ATF::_STORAGE_LIST::_db_con ** pItem, 
+            ATF::Info::CPostSystemManagerCheckRegister4_ptr next)
+        {
+            char byResult = next(pObj, pOne, pItemInfo, dwGold, pItem);
+            if (byResult == 0 && pItem != nullptr)
+            {
+                if (ATF::Global::IsOverLapItem((*pItem)->m_byTableCode))
+                {
+                    if (pItemInfo->byNum <= 0 || pItemInfo->byNum > 99)
+                        byResult = 5;
+                }
+            }
+            return byResult;
         }
     }
 }
