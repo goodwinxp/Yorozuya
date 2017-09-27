@@ -163,7 +163,7 @@ namespace GameServer
             ATF::Info::CPostSystemManagerCheckRegister4_ptr next)
         {
             char byResult = next(pObj, pOne, pItemInfo, dwGold, pItem);
-            if (byResult == 0 && pItem != nullptr)
+            if (byResult == 0 && *pItem != nullptr)
             {
                 if (ATF::Global::IsOverLapItem((*pItem)->m_byTableCode))
                 {
