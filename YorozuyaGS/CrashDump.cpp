@@ -89,7 +89,7 @@ namespace GameServer
 
             _STD wstring wsRet(L"Dump " + ::std::to_wstring(m_nCrash++));
 
-            return wsRet + tmCurrentTime.Format(L". %d.%M.%Y %H-%M-%S.dmp").GetString();
+            return wsRet + tmCurrentTime.Format(L". %d.%m.%Y %H-%M-%S.dmp").GetString();
         }
 
         void WINAPIV CCrashDump::GenerateExceptionReport(
