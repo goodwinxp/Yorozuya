@@ -20,6 +20,7 @@ namespace GameServer
 
         void CPlayerEx::Loop()
         {
+            if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
             {
                 std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
                 for (const auto& set : m_setSetItemInfoView)
