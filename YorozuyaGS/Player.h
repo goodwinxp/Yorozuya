@@ -119,6 +119,24 @@ namespace GameServer
                 unsigned __int16 wManualIndex, 
                 unsigned __int16 wItemSerial,
                 ATF::Info::CPlayerpc_ExchangeItem1711_ptr next);
+
+            static void WINAPIV pc_MoveNext(
+                ATF::CPlayer *pPlayer,
+                char byMoveType,
+                float* pfCur,
+                float* pfTar,
+                char byDirect,
+                ATF::Info::CPlayerpc_MoveNext1793_ptr next);
+
+            static void WINAPIV pc_RealMovPos(
+                ATF::CPlayer *pPlayer,
+                float* pfCur,
+                ATF::Info::CPlayerpc_RealMovPos1879_ptr next);
+
+            static void WINAPIV pc_MoveStop(
+                ATF::CPlayer *pPlayer,
+                float* pfCur,
+                ATF::Info::CPlayerpc_MoveStop1797_ptr next);
         };
     };
 };

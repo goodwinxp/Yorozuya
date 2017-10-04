@@ -198,6 +198,8 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PlayerEx.cpp" />
+    <ClCompile Include="PlayerEx_Move.cpp" />
+    <ClCompile Include="PlayerMove.cpp" />
     <ClCompile Include="PlayerPvpOrderView.cpp" />
     <ClCompile Include="PlayerSystem.cpp" />
     <ClCompile Include="PostSystem.cpp" />

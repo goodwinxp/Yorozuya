@@ -17,7 +17,7 @@ namespace GameServer
             std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);
             m_setKillerInfo.clear();
         }
-
+        
         void CPlayerEx::AdjustSerialKillerList()
         {
             // delete all info for current serial

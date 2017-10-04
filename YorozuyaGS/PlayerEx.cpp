@@ -10,6 +10,7 @@ namespace GameServer
 {
     namespace Extension
     {
+        DWORD CPlayerEx::g_CurrentTime = GetTickCount();
         CPlayerEx CPlayerEx::g_PlayerEx[ATF::Global::max_player];
 
         CPlayerEx::CPlayerEx()
@@ -20,6 +21,7 @@ namespace GameServer
 
         void CPlayerEx::Loop()
         {
+            g_CurrentTime = GetTickCount();
             if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
             {
                 std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
@@ -265,6 +267,8 @@ namespace GameServer
             CleanSetItem();
 
             CleanSerialKillerList();
+
+            InitMoveInfo();
 
             UpdateSetItem();
 

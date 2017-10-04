@@ -33,6 +33,10 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
             core.set_hook(&ATF::CPlayer::pc_ExchangeItem, &CPlayer::pc_ExchangeItem);
+
+            core.set_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
+            core.set_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
+            core.set_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
         }
 
         void CPlayer::unload()
@@ -53,6 +57,9 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowStorageItem);
             core.unset_hook(&ATF::CPlayer::pc_ExchangeItem);
+            core.unset_hook(&ATF::CPlayer::pc_MoveNext);
+            core.unset_hook(&ATF::CPlayer::pc_RealMovPos);
+            core.unset_hook(&ATF::CPlayer::pc_MoveStop);
         }
 
         void CPlayer::loop()
@@ -310,5 +317,6 @@ namespace GameServer
             _STORAGE_LIST::_db_con pNewItem;
             pPlayer->SendMsg_ExchangeItemResult(byResult, &pNewItem);
         }
+
     }
 }

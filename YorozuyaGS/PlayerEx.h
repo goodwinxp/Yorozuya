@@ -23,6 +23,8 @@ namespace GameServer
 
             void CleanSerialKillerList();
 
+            bool CheckMove(float* pfTar);
+
         public:
             static void AdjustSerialKillerList();
 
@@ -57,6 +59,19 @@ namespace GameServer
             void CleanSetItem();
 
         private:
+            void InitMoveInfo();
+
+            void MoveError();
+
+            bool CheckSpeedHack(float fRealSpeed, float* fTar);
+
+            bool CheckFlyHack(float* fTar);
+
+            bool CheckWallHack(float* fTar);
+
+            float GetMoveSpeed();
+
+        private:
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;
@@ -65,6 +80,16 @@ namespace GameServer
         private:
             std::mutex m_mtxKillerInfo;
             std::unordered_set<DWORD> m_setKillerInfo;
+
+        private:
+            DWORD m_dwTimeLastMove;
+            DWORD m_dwTimeLastWarning;
+            float m_fLastSpeed;
+            int m_nCountMove;
+            int m_nCountWarning;
+
+        private:
+            static DWORD g_CurrentTime;
         };
     };
 };
