@@ -138,6 +138,7 @@
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
+    <ClInclude Include="AttackSystemError.h" />
     <ClInclude Include="ChatSystem.h" />
     <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="CrashDump.h" />

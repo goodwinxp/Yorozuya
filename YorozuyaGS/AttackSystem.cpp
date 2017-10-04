@@ -1,6 +1,9 @@
 #include "stdafx.h"
 
+#include "ETypes.h"
 #include "AttackSystem.h"
+#include "AttackSystemError.h"
+
 #include <ATF/Global.hpp>
 #include <ATF/_SiegeKitItem_fld.hpp>
 
@@ -64,27 +67,27 @@ namespace GameServer
             ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next)
         {
             if (!pSkillFld)
-                return -60;
+                return error_attack_data;
 
-            if (byEffectCode == 2)
+            if (byEffectCode == effect_code_class)
             {
                 if (pPlayer->IsSiegeMode())
                 {
                     if (pSkillFld->m_nTempEffectType != 23)
-                        return -20;
+                        return error_attack_skill_lock;
 
                     auto& RecordData = ATF::Global::g_MainThread->m_tblItemData[pPlayer->m_pSiegeItem->m_byTableCode];
                     ATF::_SiegeKitItem_fld* item = (ATF::_SiegeKitItem_fld*)RecordData.GetRecord(pPlayer->m_pSiegeItem->m_wItemIndex);
 
                     if (item->m_nLevelLim == 30 && pSkillFld->m_nLv != 0)
-                        return -20;
+                        return error_attack_skill_lock;
 
                     if (item->m_nLevelLim == 40 && pSkillFld->m_nLv != 1)
-                        return -20;
+                        return error_attack_skill_lock;
                 }
                 else if (pSkillFld->m_nTempEffectType == 23)
                 {
-                    return -20;
+                    return error_attack_skill_lock;
                 }
             }
 

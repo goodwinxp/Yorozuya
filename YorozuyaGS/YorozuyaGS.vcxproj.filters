@@ -335,5 +335,8 @@
     <ClInclude Include="ReadSystemPass.h">
       <Filter>Implementation\Extension\ReadSystemPass</Filter>
     </ClInclude>
+    <ClInclude Include="AttackSystemError.h">
+      <Filter>Implementation\Fixes\AttackSystem</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

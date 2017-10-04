@@ -1,0 +1,29 @@
+#pragma once
+
+#define error_attack_hit                 0
+#define error_attack_dst_not_live       -1
+#define error_attack_map                -2
+#define error_attack_radius             -3
+#define error_attack_avoid              -4
+#define error_attack_delay              -5
+#define error_attack_invalid_dst        -6
+#define error_attack_height             -7
+#define error_attack_userace            -8
+#define error_attack_correctweapon      -9
+#define error_attack_fpshortage         -10
+#define error_attack_avator_corpse      -11
+#define error_attack_dst_corpse         -12
+#define error_attack_sf_exist           -13
+#define error_attack_few_mastery        -14
+#define error_attack_not_have_skill     -15
+#define error_attack_not_have_force     -16
+#define error_attack_not_have_bullet    -17
+#define error_attack_counter_attack     -18
+#define error_attack_force_lock         -19
+#define error_attack_skill_lock         -20
+#define error_attack_unit_state         -21
+#define error_attack_unit_err           -22
+#define error_attack_match_bullet       -23
+#define error_attack_rule               -50
+#define error_attack_data               -60
+#define error_attack_dst_counterattack  -100
