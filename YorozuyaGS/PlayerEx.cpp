@@ -22,12 +22,15 @@ namespace GameServer
         void CPlayerEx::Loop()
         {
             g_CurrentTime = GetTickCount();
-            if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
+            if (m_pPlayer)
             {
-                std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
-                for (const auto& set : m_setSetItemInfoView)
+                if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                 {
-                    m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                    std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                    for (const auto& set : m_setSetItemInfoView)
+                    {
+                        m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                    }
                 }
             }
         }
