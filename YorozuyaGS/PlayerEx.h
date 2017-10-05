@@ -72,6 +72,7 @@ namespace GameServer
             float GetMoveSpeed();
 
         private:
+            std::mutex m_mtxPlayer;
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;
