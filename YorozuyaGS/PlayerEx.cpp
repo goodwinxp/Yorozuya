@@ -22,14 +22,17 @@ namespace GameServer
         void CPlayerEx::Loop()
         {
             g_CurrentTime = GetTickCount();
-            if (m_pPlayer)
             {
-                if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
+                std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
+                if (m_pPlayer)
                 {
-                    std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
-                    for (const auto& set : m_setSetItemInfoView)
+                    if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                     {
-                        m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                        std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                        for (const auto& set : m_setSetItemInfoView)
+                        {
+                            m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                        }
                     }
                 }
             }
@@ -265,6 +268,7 @@ namespace GameServer
 
         bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
+            std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
             m_pPlayer = pPlayer;
 
             CleanSetItem();
@@ -284,7 +288,10 @@ namespace GameServer
 
             CleanSerialKillerList();
 
-            m_pPlayer = nullptr;
+            {
+                std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
+                m_pPlayer = nullptr;
+            }
         }
 
         void CPlayerEx::CleanSetItem()
