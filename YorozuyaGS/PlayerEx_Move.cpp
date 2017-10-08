@@ -113,6 +113,7 @@ namespace GameServer
         bool CPlayerEx::CheckSpeedHack(float fRealSpeed, float* fTar)
         {
             float fTime = 0.1f;
+            const DWORD tmCurrentTime = timeGetTime();
             if (!m_pPlayer->m_bMove || m_nCountMove < 1)
             {
                 if (memcmp(m_pPlayer->m_fCurPos, fTar, sizeof(m_pPlayer->m_fCurPos)) == 0)
@@ -123,7 +124,7 @@ namespace GameServer
             }
             else
             {
-                fTime += (g_CurrentTime - m_dwTimeLastMove) / 1000.0f;
+                fTime += (tmCurrentTime - m_dwTimeLastMove) / 1000.0f;
                 if (fTime > 5.0f)
                     fTime = 2.5f;
             }
@@ -143,11 +144,11 @@ namespace GameServer
 
             BYTE byCountWarning = 0;
 
-            fTime = (g_CurrentTime - m_dwTimeLastWarning) / 1000.0f;
+            fTime = (tmCurrentTime - m_dwTimeLastWarning) / 1000.0f;
             if (fTime < 2.0f) // Время с последнего страйка
                 byCountWarning = m_nCountWarning;
 
-            m_dwTimeLastWarning = g_CurrentTime;
+            m_dwTimeLastWarning = tmCurrentTime;
 
             if (byCountWarning >= 15)
             {
@@ -197,7 +198,7 @@ namespace GameServer
                 MoveError();
             
             ++m_nCountMove;
-            m_dwTimeLastMove = g_CurrentTime + 50;
+            m_dwTimeLastMove = timeGetTime();
 
             return result;
         }
@@ -218,7 +219,7 @@ namespace GameServer
             m_fLastSpeed = GetMoveSpeed();
             m_nCountMove = 0;
             m_nCountWarning = 0;
-            m_dwTimeLastMove = g_CurrentTime + 50;
+            m_dwTimeLastMove = timeGetTime();
             m_dwTimeLastWarning = 0;
         }
     }

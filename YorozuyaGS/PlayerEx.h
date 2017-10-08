@@ -88,9 +88,6 @@ namespace GameServer
             float m_fLastSpeed;
             int m_nCountMove;
             int m_nCountWarning;
-
-        private:
-            static DWORD g_CurrentTime;
         };
     };
 };
