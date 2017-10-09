@@ -1,5 +1,6 @@
 #pragma once
 
+#include <chrono>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "PlayerEx_detail.h"
@@ -83,8 +84,8 @@ namespace GameServer
             std::unordered_set<DWORD> m_setKillerInfo;
 
         private:
-            DWORD m_dwTimeLastMove;
-            DWORD m_dwTimeLastWarning;
+            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastMove;
+            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastWarning;
             float m_fLastSpeed;
             int m_nCountMove;
             int m_nCountWarning;

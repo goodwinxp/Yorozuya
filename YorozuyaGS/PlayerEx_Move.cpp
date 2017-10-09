@@ -112,24 +112,26 @@ namespace GameServer
 
         bool CPlayerEx::CheckSpeedHack(float fRealSpeed, float* fTar)
         {
-            float fTime = 0.1f;
-            const DWORD tmCurrentTime = timeGetTime();
+            const auto tpCurrentTime = ::std::chrono::high_resolution_clock::now();
+
+            auto tmTime = ::std::chrono::milliseconds(100);
             if (!m_pPlayer->m_bMove || m_nCountMove < 1)
             {
                 if (memcmp(m_pPlayer->m_fCurPos, fTar, sizeof(m_pPlayer->m_fCurPos)) == 0)
                     return true;
 
                 m_nCountMove = 0;
-                fTime += 0.6f;
+                tmTime += ::std::chrono::milliseconds(600);
             }
             else
             {
-                fTime += (tmCurrentTime - m_dwTimeLastMove) / 1000.0f;
-                if (fTime > 5.0f)
-                    fTime = 2.5f;
+                const auto tmDiff = tpCurrentTime - m_tpLastMove;
+                tmTime += ::std::chrono::duration_cast<::std::chrono::milliseconds>(tmDiff);
+                if (tmTime > ::std::chrono::milliseconds(5000))
+                    tmTime = ::std::chrono::milliseconds(2500);
             }
 
-            const float fDist = fRealSpeed * 15.0f * fTime;
+            const float fDist = fRealSpeed * 15.0f * tmTime.count() / 1000.f;
             const float fSqrt = ATF::Global::GetSqrt(m_pPlayer->m_fCurPos, fTar);
             if (fSqrt < fDist)
                 return true;
@@ -142,30 +144,33 @@ namespace GameServer
             if (fRatio >= 5.0f)
                 return false;
 
-            BYTE byCountWarning = 0;
+            const auto tmWarningDiff = 
+                ::std::chrono::duration_cast<::std::chrono::milliseconds>(
+                    tpCurrentTime - m_tpLastWarning);
 
-            fTime = (tmCurrentTime - m_dwTimeLastWarning) / 1000.0f;
-            if (fTime < 2.0f) // Время с последнего страйка
-                byCountWarning = m_nCountWarning;
-
-            m_dwTimeLastWarning = tmCurrentTime;
-
-            if (byCountWarning >= 15)
-            {
+            if (tmWarningDiff >= ::std::chrono::milliseconds(3000)) // Время с последнего страйка
                 m_nCountWarning = 0;
+
+            int nCountWarning = m_nCountWarning;
+            m_tpLastWarning = tpCurrentTime;
+
+            if (nCountWarning >= 15)
+            {
                 return false;
             }
+            else
+            {
+                if (fRatio > 1.3f && fRatio <= 1.65f)
+                    nCountWarning += 2;
 
-            if (fRatio > 1.3f && fRatio <= 1.65f)
-                byCountWarning += 2;
+                else if (fRatio > 1.65f && fRatio <= 2.1f)
+                    nCountWarning += 5;
 
-            else if (fRatio > 1.65f && fRatio <= 2.1f)
-                byCountWarning += 5;
+                else
+                    nCountWarning += 9;
+            }
 
-            else if (fRatio > 2.1f)
-                byCountWarning += 9;
-
-            m_nCountWarning = ++byCountWarning;
+            m_nCountWarning = ++nCountWarning;
 
             return true;
         };
@@ -195,11 +200,15 @@ namespace GameServer
             } while (false);
 
             if (!result)
+            {
                 MoveError();
+            }
+            else
+            {
+                ++m_nCountMove;
+                m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+            }
             
-            ++m_nCountMove;
-            m_dwTimeLastMove = timeGetTime();
-
             return result;
         }
 
@@ -219,8 +228,8 @@ namespace GameServer
             m_fLastSpeed = GetMoveSpeed();
             m_nCountMove = 0;
             m_nCountWarning = 0;
-            m_dwTimeLastMove = timeGetTime();
-            m_dwTimeLastWarning = 0;
+            m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+            m_tpLastWarning = ::std::chrono::high_resolution_clock::now();
         }
     }
 }
