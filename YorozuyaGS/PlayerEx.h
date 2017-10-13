@@ -1,5 +1,6 @@
 #pragma once
 
+#include <chrono>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "PlayerEx_detail.h"
@@ -22,6 +23,11 @@ namespace GameServer
             bool PushSerialKiller(DWORD dwKillerSerial);
 
             void CleanSerialKillerList();
+
+            bool CheckMove(float* pfTar);
+
+        public:
+            static bool init_player(size_t indx, ATF::CPlayer* pPlayer);
 
         public:
             static void AdjustSerialKillerList();
@@ -57,6 +63,19 @@ namespace GameServer
             void CleanSetItem();
 
         private:
+            void InitMoveInfo();
+
+            void MoveError();
+
+            bool CheckSpeedHack(float fRealSpeed, float* fTar);
+
+            bool CheckFlyHack(float* fTar);
+
+            bool CheckWallHack(float* fTar);
+
+            float GetMoveSpeed();
+
+        private:
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;
@@ -65,6 +84,13 @@ namespace GameServer
         private:
             std::mutex m_mtxKillerInfo;
             std::unordered_set<DWORD> m_setKillerInfo;
+
+        private:
+            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastMove;
+            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastWarning;
+            float m_fLastSpeed;
+            int m_nCountMove;
+            int m_nCountWarning;
         };
     };
 };

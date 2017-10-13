@@ -107,4 +107,10 @@ namespace GameServer
         unknown = 6,
         num
     };
+
+    #define effect_code_skill   0
+    #define effect_code_force   1
+    #define effect_code_class   2
+    #define effect_code_bullet  3
+    #define EFFECT_CODE_NUM     4
 }

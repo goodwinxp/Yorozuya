@@ -138,6 +138,7 @@
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
+    <ClInclude Include="AttackSystemError.h" />
     <ClInclude Include="ChatSystem.h" />
     <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="CrashDump.h" />
@@ -198,6 +199,8 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PlayerEx.cpp" />
+    <ClCompile Include="PlayerEx_Move.cpp" />
+    <ClCompile Include="PlayerMove.cpp" />
     <ClCompile Include="PlayerPvpOrderView.cpp" />
     <ClCompile Include="PlayerSystem.cpp" />
     <ClCompile Include="PostSystem.cpp" />

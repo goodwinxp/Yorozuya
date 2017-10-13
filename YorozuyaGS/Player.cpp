@@ -17,6 +17,8 @@ namespace GameServer
 
         void CPlayer::load()
         {
+            init_player_ex();
+
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             core.set_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
@@ -33,6 +35,10 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
             core.set_hook(&ATF::CPlayer::pc_ExchangeItem, &CPlayer::pc_ExchangeItem);
+
+            core.set_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
+            core.set_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
+            core.set_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
         }
 
         void CPlayer::unload()
@@ -53,6 +59,9 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowStorageItem);
             core.unset_hook(&ATF::CPlayer::pc_ExchangeItem);
+            core.unset_hook(&ATF::CPlayer::pc_MoveNext);
+            core.unset_hook(&ATF::CPlayer::pc_RealMovPos);
+            core.unset_hook(&ATF::CPlayer::pc_MoveStop);
         }
 
         void CPlayer::loop()
@@ -76,7 +85,14 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
-        
+        void CPlayer::init_player_ex()
+        {
+            auto& player_ex = CPlayerEx::get_instance();
+            for (size_t i = 0; i < ATF::Global::max_player; ++i)
+            {
+                player_ex->init_player(i, &ATF::Global::g_Player[i]);
+            }
+        }
 
         void WINAPIV CPlayer::pc_MakeTrapRequest(
             ATF::CPlayer * pObj,
@@ -206,10 +222,19 @@ namespace GameServer
             unsigned __int16 wItemSerial, 
             ATF::Info::CPlayerpc_GotoBasePortalRequest1725_ptr next)
         {
-            if (pObj->Is_Battle_Mode() && pObj->m_byUserDgr == 0)
+            if (pObj->m_byUserDgr == 0)
             {
-                pObj->SendMsg_GotoBasePortalResult(8);
-                return;
+                if (pObj->Is_Battle_Mode())
+                {
+                    pObj->SendMsg_GotoBasePortalResult(8);
+                    return;
+                }
+
+                if (wItemSerial == 0xffff)
+                {
+                    pObj->SendMsg_GotoBasePortalResult(8);
+                    return;
+                }
             }
 
             next(pObj, wItemSerial);
@@ -310,5 +335,6 @@ namespace GameServer
             _STORAGE_LIST::_db_con pNewItem;
             pPlayer->SendMsg_ExchangeItemResult(byResult, &pNewItem);
         }
+
     }
 }

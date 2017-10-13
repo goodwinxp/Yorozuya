@@ -112,6 +112,9 @@
     <Filter Include="Implementation\Extension\ReadSystemPass">
       <UniqueIdentifier>{f14f6349-860f-4a12-88f4-1de7d233a87f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\PlayerEx\Move">
+      <UniqueIdentifier>{a5a5a5fb-58b8-48ea-9fef-8da7d2bfd206}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -215,6 +218,12 @@
     </ClCompile>
     <ClCompile Include="ReadSystemPass.cpp">
       <Filter>Implementation\Extension\ReadSystemPass</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMove.cpp">
+      <Filter>Implementation\Fixes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx_Move.cpp">
+      <Filter>Implementation\Extension\PlayerEx\Move</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -325,6 +334,9 @@
     </ClInclude>
     <ClInclude Include="ReadSystemPass.h">
       <Filter>Implementation\Extension\ReadSystemPass</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSystemError.h">
+      <Filter>Implementation\Fixes\AttackSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

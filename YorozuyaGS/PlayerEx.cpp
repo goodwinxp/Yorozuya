@@ -20,11 +20,15 @@ namespace GameServer
 
         void CPlayerEx::Loop()
         {
+            if (m_pPlayer->m_bLoad && m_pPlayer->m_bOper)
             {
-                std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
-                for (const auto& set : m_setSetItemInfoView)
+                if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                 {
-                    m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                    std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                    for (const auto& set : m_setSetItemInfoView)
+                    {
+                        m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                    }
                 }
             }
         }
@@ -259,11 +263,11 @@ namespace GameServer
 
         bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
-            m_pPlayer = pPlayer;
-
             CleanSetItem();
 
             CleanSerialKillerList();
+
+            InitMoveInfo();
 
             UpdateSetItem();
 
@@ -275,13 +279,27 @@ namespace GameServer
             CleanSetItem();
 
             CleanSerialKillerList();
-
-            m_pPlayer = nullptr;
         }
 
         void CPlayerEx::CleanSetItem()
         {
             m_setSetItemInfo.clear();
+        }
+
+        bool CPlayerEx::init_player(size_t indx, ATF::CPlayer * pPlayer)
+        {
+            bool result = false;
+
+            do
+            {
+                if (indx >= ATF::Global::max_player)
+                    break;
+
+                g_PlayerEx[indx].m_pPlayer = pPlayer;
+                result = true;
+            } while (false);
+
+            return result;
         }
     }
 }

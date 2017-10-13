@@ -32,7 +32,7 @@ namespace GameServer
 
             bool score_hide() const { return m_bScoreHide; }
 
-            bool check_conditions(ATF::CPlayer* pOne);
+            bool check_conditions(ATF::CPlayer* pOne, bool bView = false);
 
         private:
             auto get_level() const {

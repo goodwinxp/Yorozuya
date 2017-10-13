@@ -59,7 +59,8 @@ namespace GameServer
         }
 
         bool CVote::check_conditions(
-            ATF::CPlayer * pOne)
+            ATF::CPlayer * pOne,
+            bool bView)
         {
             bool result = false;
 
@@ -68,7 +69,7 @@ namespace GameServer
                 if (!pOne || !pOne->m_bOper)
                     break;
 
-                if (!pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
+                if (!bView && !pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
                     break;
 
                 if (get_class_grade() > pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade)
@@ -124,7 +125,7 @@ namespace GameServer
                     break;
                 }
 
-                if (!spModule->check_conditions(pOne))
+                if (!spModule->check_conditions(pOne, true))
                 {
                     result = 11;
                     break;
