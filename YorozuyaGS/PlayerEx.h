@@ -27,6 +27,9 @@ namespace GameServer
             bool CheckMove(float* pfTar);
 
         public:
+            static bool init_player(size_t indx, ATF::CPlayer* pPlayer);
+
+        public:
             static void AdjustSerialKillerList();
 
             static bool Load(ATF::CPlayer* pPlayer);
@@ -73,7 +76,6 @@ namespace GameServer
             float GetMoveSpeed();
 
         private:
-            std::mutex m_mtxPlayer;
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;

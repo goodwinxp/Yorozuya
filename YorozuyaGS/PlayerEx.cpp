@@ -20,8 +20,7 @@ namespace GameServer
 
         void CPlayerEx::Loop()
         {
-            std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
-            if (m_pPlayer)
+            if (m_pPlayer->m_bLoad && m_pPlayer->m_bOper)
             {
                 if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                 {
@@ -264,9 +263,6 @@ namespace GameServer
 
         bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
-            std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
-            m_pPlayer = pPlayer;
-
             CleanSetItem();
 
             CleanSerialKillerList();
@@ -283,16 +279,27 @@ namespace GameServer
             CleanSetItem();
 
             CleanSerialKillerList();
-
-            {
-                std::unique_lock<decltype(m_mtxPlayer)> lock(m_mtxPlayer);
-                m_pPlayer = nullptr;
-            }
         }
 
         void CPlayerEx::CleanSetItem()
         {
             m_setSetItemInfo.clear();
+        }
+
+        bool CPlayerEx::init_player(size_t indx, ATF::CPlayer * pPlayer)
+        {
+            bool result = false;
+
+            do
+            {
+                if (indx >= ATF::Global::max_player)
+                    break;
+
+                g_PlayerEx[indx].m_pPlayer = pPlayer;
+                result = true;
+            } while (false);
+
+            return result;
         }
     }
 }

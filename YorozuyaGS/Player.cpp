@@ -17,6 +17,8 @@ namespace GameServer
 
         void CPlayer::load()
         {
+            init_player_ex();
+
             auto& core = ATF::CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             core.set_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
@@ -83,7 +85,14 @@ namespace GameServer
             UNREFERENCED_PARAMETER(nodeConfig);
         }
 
-        
+        void CPlayer::init_player_ex()
+        {
+            auto& player_ex = CPlayerEx::get_instance();
+            for (size_t i = 0; i < ATF::Global::max_player; ++i)
+            {
+                player_ex->init_player(i, &ATF::Global::g_Player[i]);
+            }
+        }
 
         void WINAPIV CPlayer::pc_MakeTrapRequest(
             ATF::CPlayer * pObj,

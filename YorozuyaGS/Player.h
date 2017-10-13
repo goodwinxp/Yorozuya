@@ -28,6 +28,10 @@ namespace GameServer
             virtual ModuleName_t get_name();
 
             virtual void configure(const rapidjson::Value& nodeConfig);
+
+        private:
+            void init_player_ex();
+
         private:
             static void WINAPIV Loop(
                 ATF::CPlayer *pPlayer,
