@@ -57,9 +57,6 @@ namespace GameServer
 
         void CCrashDump::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::WheatyExceptionReport::GenerateExceptionReport);
-            core.unset_hook(&CCrashDump::UnhandledExceptionFilter);
         }
 
         void CCrashDump::loop()
