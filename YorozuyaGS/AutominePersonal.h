@@ -33,7 +33,7 @@ namespace GameServer
                 ATF::AutominePersonal* pObj,
                 ATF::Info::AutominePersonalsend_attacked64_ptr next);
 
-            static uint8_t WINAPIV sub_battery(
+            static char WINAPIV sub_battery(
                 ATF::AutominePersonal* pObj,
                 unsigned int dwUsed,
                 ATF::Info::AutominePersonalsub_battery86_ptr next);
