@@ -115,6 +115,9 @@
     <Filter Include="Implementation\Extension\PlayerEx\Move">
       <UniqueIdentifier>{a5a5a5fb-58b8-48ea-9fef-8da7d2bfd206}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\AutominePersonal">
+      <UniqueIdentifier>{8e39544e-b3b3-45ed-9fd7-68ddfd5507d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -224,6 +227,9 @@
     </ClCompile>
     <ClCompile Include="PlayerEx_Move.cpp">
       <Filter>Implementation\Extension\PlayerEx\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="AutominePersonal.cpp">
+      <Filter>Implementation\Fixes\AutominePersonal</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -337,6 +343,9 @@
     </ClInclude>
     <ClInclude Include="AttackSystemError.h">
       <Filter>Implementation\Fixes\AttackSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AutominePersonal.h">
+      <Filter>Implementation\Fixes\AutominePersonal</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
