@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#include "ETypes.h"
 #include "Equip.h"
 #include "PlayerEx.h"
 #include <ATF/global.hpp>
@@ -65,6 +66,12 @@ namespace GameServer
             
             do 
             {
+                if ((uint8_t)e_code_item_table::tbl_code_siege_kit == pCon->m_byTableCode)
+                {
+                    result = true;
+                    break;
+                }
+
                 int nItemEquipGrade = ATF::Global::GetItemEquipGrade(pCon->m_byTableCode, pCon->m_wItemIndex);
                 if (!pPlayer->IsEquipAbleGrade(nItemEquipGrade))
                     break;
