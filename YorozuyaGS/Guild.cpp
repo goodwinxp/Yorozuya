@@ -114,6 +114,8 @@ namespace GameServer
             ATF::_guildroom_enter_request_clzo * pProtocol,
             ATF::Info::CPlayerpc_GuildRoomEnterRequest1755_ptr next)
         {
+            UNREFERENCED_PARAMETER(next);
+
             auto fnFindNpc = [pPlayer](ATF::CMapItemStoreList* pMapItemStoreList)->bool
             {
                 for (int j = 0; j < pMapItemStoreList->m_nItemStoreNum; ++j)
@@ -250,6 +252,7 @@ namespace GameServer
             ATF::_guildroom_out_request_clzo * pProtocol,
             ATF::Info::CPlayerpc_GuildRoomOutRequest1757_ptr next)
         {
+            UNREFERENCED_PARAMETER(next);
             char byResult = 0;
 
             do
