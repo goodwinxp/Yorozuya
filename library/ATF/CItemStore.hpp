@@ -64,4 +64,5 @@ START_ATF_NAMESPACE
         void dtor_CItemStore();
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<CItemStore, 0x78>(), "CItemStore");
 END_ATF_NAMESPACE

@@ -34,4 +34,5 @@ START_ATF_NAMESPACE
         ~_qry_case_all_store_limit_item();
         void dtor__qry_case_all_store_limit_item();
     };
+    static_assert(ATF::checkSize<_qry_case_all_store_limit_item, 0x10>(), "_qry_case_all_store_limit_item");
 END_ATF_NAMESPACE
