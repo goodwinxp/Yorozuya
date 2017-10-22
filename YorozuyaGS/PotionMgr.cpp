@@ -111,7 +111,7 @@ namespace GameServer
 
                 if (bCheckDist && pUsePlayer != *pTargetCharacter)
                 {
-                    auto fDist = ATF::Global::GetSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
+                    auto fDist = ATF::Global::Get3DSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
                     if (fDist > (float)pfB->m_nUseRange)
                     {
                         nResult = 20;

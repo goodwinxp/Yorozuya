@@ -130,7 +130,7 @@ namespace GameServer
                         if (button != 44)
                             continue;
 
-                        if (ATF::Global::GetSqrt(pPosStore, pPlayer->m_fCurPos) < 100.0)
+                        if (ATF::Global::Get3DSqrt(pPosStore, pPlayer->m_fCurPos) < 100.0)
                         {
                             return true;
                         }
