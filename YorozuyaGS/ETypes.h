@@ -84,7 +84,8 @@ namespace GameServer
         obj_id_stone = 5,
         obj_id_keeper = 6,
         obj_id_trap = 7,
-        num = 8
+        num = 8,
+        unknown = 255
     };
 
     enum class e_type_line : uint8_t
@@ -106,6 +107,23 @@ namespace GameServer
         hunter_point = 5,
         unknown = 6,
         num
+    };
+
+    enum class e_wp_type : uint8_t
+    {
+        knife = 0,
+        sword = 1,
+        axe = 2,
+        mace = 3,
+        spear = 4,
+        bow = 5,
+        firearm = 6,
+        luancher = 7,
+        _throw = 8,
+        staff = 9,
+        mine = 10,
+        grenade = 11,
+        num = 12
     };
 
     #define effect_code_skill   0
