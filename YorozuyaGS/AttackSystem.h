@@ -156,6 +156,56 @@ namespace GameServer
                 ATF::CPlayer* pPlayer,
                 uint16_t wBulletSerial,
                 ATF::Info::CPlayerIsBulletValidity302_ptr next);
+
+            static void WINAPIV make_gen_attack_param(
+                ATF::CPlayer* pPlayer,
+                ATF::CCharacter* pDst,
+                char byPart,
+                ATF::_BulletItem_fld* pBulletFld,
+                float fAddBulletFc,
+                ATF::_attack_param* pAP,
+                ATF::_BulletItem_fld* pEffBtFld,
+                float fAddEffBtFc,
+                ATF::Info::CPlayermake_gen_attack_param1505_ptr next);
+
+            static void WINAPIV make_siege_attack_param(
+                ATF::CPlayer* pPlayer,
+                ATF::CCharacter* pDst,
+                float* pfAttackPos,
+                char byPart,
+                ATF::_BulletItem_fld* pBulletFld,
+                float fAddBulletFc,
+                ATF::_attack_param* pAP,
+                ATF::_BulletItem_fld* pEffBulletFld,
+                float fAddEffBtFc,
+                ATF::Info::CPlayermake_siege_attack_param1507_ptr next);
+
+            static void WINAPIV make_skill_attack_param(
+                ATF::CPlayer* pPlayer,
+                ATF::CCharacter* pDst,
+                float* pfAttackPos,
+                char byEffectCode,
+                ATF::_skill_fld* pSkillFld,
+                int nAttType,
+                ATF::_STORAGE_LIST::_db_con* pBulletItem,
+                float fAddBulletFc,
+                ATF::_attack_param* pAP,
+                ATF::_STORAGE_LIST::_db_con* pEffBulletItem,
+                float fAddEffBulletFc,
+                ATF::Info::CPlayermake_skill_attack_param1509_ptr next);
+
+            static void WINAPIV make_wpactive_skill_attack_param(
+                ATF::CPlayer* pPlayer,
+                ATF::CCharacter* pDst,
+                ATF::_skill_fld* pSkillFld,
+                float* pfAttackPos,
+                char byEffectCode,
+                int nAttType,
+                ATF::_STORAGE_LIST::_db_con* pBulletItem,
+                float fAddBulletFc,
+                ATF::_attack_param* pAP,
+                int* nShotNum,
+                ATF::Info::CPlayermake_wpactive_skill_attack_param1515_ptr next);
         };
     };
 };

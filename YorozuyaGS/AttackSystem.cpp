@@ -31,6 +31,10 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
             core.set_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
+            core.set_hook(&ATF::CPlayer::make_gen_attack_param, &CAttackSystem::make_gen_attack_param);
+            core.set_hook(&ATF::CPlayer::make_siege_attack_param, &CAttackSystem::make_siege_attack_param);
+            core.set_hook(&ATF::CPlayer::make_skill_attack_param, &CAttackSystem::make_skill_attack_param);
+            core.set_hook(&ATF::CPlayer::make_wpactive_skill_attack_param, &CAttackSystem::make_wpactive_skill_attack_param);
         }
 
         void CAttackSystem::unload()
@@ -50,6 +54,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_ThrowSkillRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowUnitRequest);
             core.unset_hook(&ATF::CPlayer::IsBulletValidity);
+            core.unset_hook(&ATF::CPlayer::make_gen_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_siege_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_skill_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_wpactive_skill_attack_param);
         }
 
         void CAttackSystem::loop()
