@@ -150,6 +150,12 @@ namespace GameServer
                 ATF::_CHRID* pidDst,
                 uint16_t* pConsumeSerial,
                 ATF::Info::CPlayerpc_ThrowUnitRequest1955_ptr next);
+
+        private:
+            static ATF::_STORAGE_LIST::_db_con* WINAPIV IsBulletValidity(
+                ATF::CPlayer* pPlayer,
+                uint16_t wBulletSerial,
+                ATF::Info::CPlayerIsBulletValidity302_ptr next);
         };
     };
 };

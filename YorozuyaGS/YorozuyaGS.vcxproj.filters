@@ -231,6 +231,9 @@
     <ClCompile Include="AutominePersonal.cpp">
       <Filter>Implementation\Fixes\AutominePersonal</Filter>
     </ClCompile>
+    <ClCompile Include="AttackSystem_CalcPoint.cpp">
+      <Filter>Implementation\Fixes\AttackSystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

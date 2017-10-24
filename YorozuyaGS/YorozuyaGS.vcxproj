@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AttackSystem.cpp" />
+    <ClCompile Include="AttackSystem_CalcPoint.cpp" />
     <ClCompile Include="AutominePersonal.cpp" />
     <ClCompile Include="ChatSystem.cpp" />
     <ClCompile Include="CheatCommand.cpp" />

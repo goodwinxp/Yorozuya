@@ -30,6 +30,7 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::pc_PlayAttack_Unit, &CAttackSystem::pc_PlayAttack_Unit);
             core.set_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
+            core.set_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
         }
 
         void CAttackSystem::unload()
@@ -48,6 +49,7 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Unit);
             core.unset_hook(&ATF::CPlayer::pc_ThrowSkillRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowUnitRequest);
+            core.unset_hook(&ATF::CPlayer::IsBulletValidity);
         }
 
         void CAttackSystem::loop()
