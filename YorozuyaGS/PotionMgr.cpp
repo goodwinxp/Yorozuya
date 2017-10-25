@@ -2,6 +2,7 @@
 
 #include "ETypes.h"
 #include "PotionMgr.h"
+#include <ATF/global.hpp>
 #include <ATF/CRaceBuffManager.hpp>
 #include <ATF/CGuildRoomSystem.hpp>
 
@@ -79,7 +80,7 @@ namespace GameServer
                     break;
                 }
 
-                if (true)// todo : check Major_Cash_Item
+                if (*ATF::Global::Major_Cash_Item)
                 {
                     if (pFld->m_nTempEffectType == 48 || 
                         pFld->m_nTempEffectType == 49 ||
