@@ -148,6 +148,7 @@
     <ClInclude Include="Guild.h" />
     <ClInclude Include="NetworkEx.h" />
     <ClInclude Include="PcBangFavor.h" />
+    <ClInclude Include="Performance.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
     <ClInclude Include="ItemCheckHelper.h" />
@@ -185,6 +186,7 @@
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="NetworkEx.cpp" />
     <ClCompile Include="PcBangFavor.cpp" />
+    <ClCompile Include="Performance.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>

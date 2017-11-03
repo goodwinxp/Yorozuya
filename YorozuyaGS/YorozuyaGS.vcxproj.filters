@@ -118,6 +118,9 @@
     <Filter Include="Implementation\Fixes\AutominePersonal">
       <UniqueIdentifier>{8e39544e-b3b3-45ed-9fd7-68ddfd5507d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\Performance">
+      <UniqueIdentifier>{5916199d-738c-40de-bc71-8088b9fab9bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -234,6 +237,9 @@
     <ClCompile Include="AttackSystem_CalcPoint.cpp">
       <Filter>Implementation\Fixes\AttackSystem</Filter>
     </ClCompile>
+    <ClCompile Include="Performance.cpp">
+      <Filter>Implementation\Extension\Performance</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -349,6 +355,9 @@
     </ClInclude>
     <ClInclude Include="AutominePersonal.h">
       <Filter>Implementation\Fixes\AutominePersonal</Filter>
+    </ClInclude>
+    <ClInclude Include="Performance.h">
+      <Filter>Implementation\Extension\Performance</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
