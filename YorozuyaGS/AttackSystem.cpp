@@ -20,14 +20,6 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::_pre_check_skill_attack, &CAttackSystem::_pre_check_skill_attack);
             core.set_hook(&ATF::CPlayer::skill_process, &CAttackSystem::skill_process);
             core.set_hook(&ATF::CPlayer::pc_ForceRequest, &CAttackSystem::pc_ForceRequest);
-            core.set_hook(&ATF::CPlayer::pc_SkillRequest, &CAttackSystem::pc_SkillRequest);
-            core.set_hook(&ATF::CPlayer::pc_ClassSkillRequest, &CAttackSystem::pc_ClassSkillRequest);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_Force, &CAttackSystem::pc_PlayAttack_Force);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_Gen, &CAttackSystem::pc_PlayAttack_Gen);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_SelfDestruction, &CAttackSystem::pc_PlayAttack_SelfDestruction);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_Siege, &CAttackSystem::pc_PlayAttack_Siege);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_Skill, &CAttackSystem::pc_PlayAttack_Skill);
-            core.set_hook(&ATF::CPlayer::pc_PlayAttack_Unit, &CAttackSystem::pc_PlayAttack_Unit);
             core.set_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
             core.set_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
             core.set_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
@@ -43,14 +35,6 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::_pre_check_skill_attack);
             core.unset_hook(&ATF::CPlayer::skill_process);
             core.unset_hook(&ATF::CPlayer::pc_ForceRequest);
-            core.unset_hook(&ATF::CPlayer::pc_SkillRequest);
-            core.unset_hook(&ATF::CPlayer::pc_ClassSkillRequest);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Force);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Gen);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_SelfDestruction);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Siege);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Skill);
-            core.unset_hook(&ATF::CPlayer::pc_PlayAttack_Unit);
             core.unset_hook(&ATF::CPlayer::pc_ThrowSkillRequest);
             core.unset_hook(&ATF::CPlayer::pc_ThrowUnitRequest);
             core.unset_hook(&ATF::CPlayer::IsBulletValidity);
@@ -146,7 +130,7 @@ namespace GameServer
             uint16_t * pConsumeSerial,
             int * pnLv,
             ATF::Info::CPlayerskill_process2035_ptr next)
-        {
+        {    // need check radius
             if (pPlayer->IsSiegeMode())
             {
                 return 14;
@@ -161,7 +145,7 @@ namespace GameServer
             ATF::_CHRID* pidDst,
             uint16_t* pConsumeSerial,
             ATF::Info::CPlayerpc_ForceRequest1717_ptr next)
-        {
+        {   // need check radius
             if (pPlayer->IsSiegeMode())
             {
                 pPlayer->SendMsg_ForceResult(14, pidDst, nullptr, 0);
@@ -169,92 +153,6 @@ namespace GameServer
             }
 
             next(pPlayer, wForceSerial, pidDst, pConsumeSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_SkillRequest(
-            ATF::CPlayer* pPlayer,
-            char bySkillIndex,
-            ATF::_CHRID* pidDst,
-            uint16_t* pConsumeSerial,
-            ATF::Info::CPlayerpc_SkillRequest1943_ptr next)
-        {
-            next(pPlayer, bySkillIndex, pidDst, pConsumeSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_ClassSkillRequest(
-            ATF::CPlayer* pPlayer,
-            uint16_t wSkillIndex,
-            ATF::_CHRID* pidDst,
-            uint16_t* pConsumeSerial,
-            ATF::Info::CPlayerpc_ClassSkillRequest1663_ptr next)
-        {
-            next(pPlayer, wSkillIndex, pidDst, pConsumeSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_Force(
-            ATF::CPlayer* pPlayer,
-            ATF::CCharacter* pDst,
-            float* pfAreaPos,
-            uint16_t wForceSerial,
-            uint16_t* pConsumeSerial,
-            uint16_t wEffBtSerial,
-            ATF::Info::CPlayerpc_PlayAttack_Force1841_ptr next)
-        {
-            next(pPlayer, pDst, pfAreaPos, wForceSerial, pConsumeSerial, wEffBtSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_Gen(
-            ATF::CPlayer* pPlayer,
-            ATF::CCharacter* pDst,
-            char byAttPart,
-            uint16_t wBulletSerial,
-            uint16_t wEffBtSerial,
-            bool bCount,
-            ATF::Info::CPlayerpc_PlayAttack_Gen1843_ptr next)
-        {
-            next(pPlayer, pDst, byAttPart, wBulletSerial, wEffBtSerial, bCount);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_SelfDestruction(
-            ATF::CPlayer* pPlayer,
-            ATF::Info::CPlayerpc_PlayAttack_SelfDestruction1845_ptr next)
-        {
-            next(pPlayer);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_Siege(
-            ATF::CPlayer* pPlayer,
-            ATF::CCharacter* pDst,
-            float* pfAttackPos,
-            char byAttPart,
-            uint16_t wBulletSerial,
-            uint16_t wEffBtSerial,
-            ATF::Info::CPlayerpc_PlayAttack_Siege1847_ptr next)
-        {
-            next(pPlayer, pDst, pfAttackPos, byAttPart, wBulletSerial, wEffBtSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_Skill(
-            ATF::CPlayer* pPlayer,
-            ATF::CCharacter* pDst,
-            float* pfAttackPos,
-            char byEffectCode,
-            uint16_t wSkillIndex,
-            uint16_t wBulletSerial,
-            uint16_t* pConsumeSerial,
-            uint16_t wEffBtSerial,
-            ATF::Info::CPlayerpc_PlayAttack_Skill1849_ptr next)
-        {
-            next(pPlayer, pDst, pfAttackPos, byEffectCode, wSkillIndex, wBulletSerial, pConsumeSerial, wEffBtSerial);
-        }
-
-        void WINAPIV CAttackSystem::pc_PlayAttack_Unit(
-            ATF::CPlayer* pPlayer,
-            ATF::CCharacter* pDst,
-            char byWeaponPart,
-            ATF::Info::CPlayerpc_PlayAttack_Unit1853_ptr next)
-        {
-            next(pPlayer, pDst, byWeaponPart);
         }
 
         void WINAPIV CAttackSystem::pc_ThrowSkillRequest(
