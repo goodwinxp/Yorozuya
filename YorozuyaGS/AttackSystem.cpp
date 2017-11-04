@@ -44,25 +44,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::make_wpactive_skill_attack_param);
         }
 
-        void CAttackSystem::loop()
-        {
-        }
-
-        ModuleVersion_t CAttackSystem::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CAttackSystem::get_name()
         {
             static const ModuleName_t name = "fix_AttackSystem";
             return name;
-        }
-
-        void CAttackSystem::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         int WINAPIV CAttackSystem::_pre_check_skill_attack(

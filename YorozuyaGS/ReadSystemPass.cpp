@@ -43,25 +43,10 @@ namespace GameServer
             core.unset_hook(&ATF::CNationSettingDataTH::ReadSystemPass);
         }
 
-        void CReadSystemPass::loop()
-        {
-        }
-
-        ModuleVersion_t CReadSystemPass::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CReadSystemPass::get_name()
         {
             static const ModuleName_t name = "ext_ReadSystemPass";
             return name;
-        }
-
-        void CReadSystemPass::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CReadSystemPass::ReadSystemPass(ATF::CNationSettingData * pObj, void * next)

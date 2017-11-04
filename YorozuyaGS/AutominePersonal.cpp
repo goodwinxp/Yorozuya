@@ -23,26 +23,12 @@ namespace GameServer
             core.unset_hook(&AutominePersonal::sub_battery);
         }
 
-        void CAutominePersonal::loop()
-        {
-        }
-
-        ModuleVersion_t CAutominePersonal::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CAutominePersonal::get_name()
         {
             static const ModuleName_t name = "fix_AutominePersonal";
             return name;
         }
 
-        void CAutominePersonal::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
-        }
         void WINAPIV CAutominePersonal::send_attacked(
             ATF::AutominePersonal * pObj,
             ATF::Info::AutominePersonalsend_attacked64_ptr next)

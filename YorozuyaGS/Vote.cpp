@@ -31,15 +31,6 @@ namespace GameServer
             core.unset_hook(&ATF::Voter::_SendVoteScoreAll);
         }
 
-        void CVote::loop()
-        {
-        }
-
-        ModuleVersion_t CVote::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CVote::get_name()
         {
             static const ModuleName_t name = "fix_Vote";

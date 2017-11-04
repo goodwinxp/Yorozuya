@@ -22,25 +22,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPcBangFavor::PcBangGiveItem);
         }
 
-        void CPcBangFavor::loop()
-        {
-        }
-
-        ModuleVersion_t CPcBangFavor::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CPcBangFavor::get_name()
         {
             static const ModuleName_t name = "fix_PCBangFavor";
             return name;
-        }
-
-        void CPcBangFavor::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CPcBangFavor::PcBangGiveItem(

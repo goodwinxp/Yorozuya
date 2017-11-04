@@ -36,25 +36,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_SetItemCheckRequest);
         }
 
-        void CEquip::loop()
-        {
-        }
-
-        ModuleVersion_t CEquip::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CEquip::get_name()
         {
             static const ModuleName_t name = "fix_Equip";
             return name;
-        }
-
-        void CEquip::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CEquip::IsEffectableEquip(

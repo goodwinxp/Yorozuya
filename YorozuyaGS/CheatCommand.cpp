@@ -20,24 +20,10 @@ namespace GameServer
             core.unset_hook(&Global::AuthorityFilter);
         }
 
-        void CCheatCommand::loop()
-        {
-        }
-
-        ModuleVersion_t CCheatCommand::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CCheatCommand::get_name()
         {
             static const ModuleName_t name = "fix_CheatCommand";
             return name;
-        }
-
-        void CCheatCommand::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CCheatCommand::AuthorityFilter(
@@ -46,7 +32,6 @@ namespace GameServer
             ATF::Global::Info::AuthorityFilter25_ptr next)
         {
             UNREFERENCED_PARAMETER(next);
-
             if (pOne)
             {
                 if (pOne->m_byUserDgr == 0)

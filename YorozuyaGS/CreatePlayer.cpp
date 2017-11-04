@@ -22,25 +22,10 @@ namespace GameServer
             core.unset_hook(&CUserDB::Insert_Char_Request);
         }
 
-        void CCreatePlayer::loop()
-        {
-        }
-
-        ModuleVersion_t CCreatePlayer::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CCreatePlayer::get_name()
         {
             static const ModuleName_t name = "fix_CreatePlayer";
             return name;
-        }
-
-        void CCreatePlayer::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool CheckBaseShape(unsigned int dwBaseShape)

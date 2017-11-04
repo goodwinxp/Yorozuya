@@ -23,25 +23,10 @@ namespace GameServer
             core.unset_hook(&ATF::CItemStore::IsSell);
         }
 
-        void CStore::loop()
-        {
-        }
-
-        ModuleVersion_t CStore::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CStore::get_name()
         {
             static const ModuleName_t name = "fix_Store";
             return name;
-        }
-
-        void CStore::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         char WINAPIV CStore::IsSell(

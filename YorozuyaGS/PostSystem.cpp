@@ -27,25 +27,10 @@ namespace GameServer
             core.unset_hook(&ATF::CMainThread::Load_PostStorage_Complete);
         }
 
-        void CPostSystem::loop()
-        {
-        }
-
-        ModuleVersion_t CPostSystem::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CPostSystem::get_name()
         {
             static const ModuleName_t name = "fix_PostSystem";
             return name;
-        }
-
-        void CPostSystem::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void WINAPIV CPostSystem::CMainThread__Load_ReturnPost_Complete(

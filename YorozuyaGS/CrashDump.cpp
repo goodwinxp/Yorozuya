@@ -59,25 +59,10 @@ namespace GameServer
         {
         }
 
-        void CCrashDump::loop()
-        {
-        }
-
-        ModuleVersion_t CCrashDump::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CCrashDump::get_name()
         {
             static const ModuleName_t name = "system_CrashDump";
             return name;
-        }
-
-        void CCrashDump::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         _STD wstring CCrashDump::BuildFileNameDump()

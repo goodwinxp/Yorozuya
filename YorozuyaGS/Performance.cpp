@@ -21,25 +21,10 @@ namespace GameServer
             core.unset_hook(&ATF::Global::GetSqrt);
         }
 
-        void CPerformance::loop()
-        {
-        }
-
-        ModuleVersion_t CPerformance::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CPerformance::get_name()
         {
             static const ModuleName_t name = "system_Performance";
             return name;
-        }
-
-        void CPerformance::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         float WINAPIV CPerformance::GetSqrt(

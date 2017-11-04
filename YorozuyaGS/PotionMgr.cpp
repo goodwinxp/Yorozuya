@@ -31,24 +31,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPotionMgr::PreCheckPotion);
         }
 
-        void CPotionMgr::loop()
-        {
-        }
-
-        ModuleVersion_t CPotionMgr::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CPotionMgr::get_name()
         {
             static const ModuleName_t name = "fix_PotionMgr";
             return name;
-        }
-
-        void CPotionMgr::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         int WINAPIV CPotionMgr::PreCheckPotion(

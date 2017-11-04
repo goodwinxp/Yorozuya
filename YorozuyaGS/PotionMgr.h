@@ -21,13 +21,7 @@ namespace GameServer
 
             virtual void unload();
 
-            virtual void loop();
-
-            virtual ModuleVersion_t get_version();
-
             virtual ModuleName_t get_name();
-
-            virtual void configure(const rapidjson::Value& nodeConfig);
         private:
             static int WINAPIV PreCheckPotion(
                 ATF::CPotionMgr* pObj,

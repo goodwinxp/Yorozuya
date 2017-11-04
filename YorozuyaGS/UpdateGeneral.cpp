@@ -28,25 +28,10 @@ namespace GameServer
             core.unset_hook(&ATF::CMainThread::_db_Update_General);
         }
 
-        void CUpdateGeneral::loop()
-        {
-        }
-
-        ModuleVersion_t CUpdateGeneral::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CUpdateGeneral::get_name()
         {
             static const ModuleName_t name = "fix_UpdateGeneral";
             return name;
-        }
-
-        void CUpdateGeneral::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CUpdateGeneral::_db_Update_General(

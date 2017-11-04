@@ -24,24 +24,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_GuildRoomOutRequest);
         }
 
-        void CGuild::loop()
-        {
-        }
-
-        ModuleVersion_t CGuild::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CGuild::get_name()
         {
             static const ModuleName_t name = "fix_Guild";
             return name;
-        }
-
-        void CGuild::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         char WINAPIV CGuild::ManageAcceptORRefuseGuildBattle(

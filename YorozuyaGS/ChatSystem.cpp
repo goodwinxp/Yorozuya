@@ -14,23 +14,14 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.set_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
-            //core.set_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
+            core.set_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
         }
 
         void CChatSystem::unload()
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook(&ATF::CPlayer::pc_ChatFarRequest);
-            //core.unset_hook(&ATF::CPlayer::pc_ChatCircleRequest);
-        }
-
-        void CChatSystem::loop()
-        {
-        }
-
-        ModuleVersion_t CChatSystem::get_version()
-        {
-            return usVersion;
+            core.unset_hook(&ATF::CPlayer::pc_ChatCircleRequest);
         }
 
         ModuleName_t CChatSystem::get_name()
@@ -38,13 +29,7 @@ namespace GameServer
             static const ModuleName_t name = "fix_ChatSystem";
             return name;
         }
-
-        void CChatSystem::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
-        }
-
+        
         void WINAPIV CChatSystem::pc_ChatFarRequest(
             ATF::CPlayer *pPlayer, 
             char *pwszName, 
@@ -125,8 +110,7 @@ namespace GameServer
             char * pwszChatData, 
             ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next)
         {
-            if (!ATF::Global::ProcessCheatCommand(pPlayer, pwszChatData))
-                next(pPlayer, pwszChatData);
+            next(pPlayer, pwszChatData);
         }
     }
 }

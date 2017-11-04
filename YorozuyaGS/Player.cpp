@@ -64,25 +64,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_MoveStop);
         }
 
-        void CPlayer::loop()
-        {
-        }
-
-        ModuleVersion_t CPlayer::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CPlayer::get_name()
         {
             static const ModuleName_t name = "fix_Player";
             return name;
-        }
-
-        void CPlayer::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void CPlayer::init_player_ex()
