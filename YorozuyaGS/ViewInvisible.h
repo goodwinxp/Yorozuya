@@ -26,7 +26,6 @@ namespace GameServer
             static void WINAPIV SendMsg_StateInform(
                 ATF::CPlayer *pPlayer,
                 uint64_t dwStateFlag,
-                bool bNewViewRequired,
                 bool bBreakTransparant);
 
         private:

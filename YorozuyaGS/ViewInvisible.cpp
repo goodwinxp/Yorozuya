@@ -50,18 +50,12 @@ namespace GameServer
         void WINAPIV CViewInvisible::SendMsg_StateInform(
             ATF::CPlayer * pPlayer,
             uint64_t dwStateFlag,
-            bool bNewViewRequired,
             bool bBreakTransparant)
         {
             if (bBreakTransparant)
-            {
                 pPlayer->SendMsg_NewViewOther(3);
-            }
 
             pPlayer->SendMsg_StateInform(dwStateFlag);
-
-            if (bNewViewRequired)
-                pPlayer->NewViewCircleObject();
         }
 
         void WINAPIV CViewInvisible::CPlayer__SenseState(
@@ -70,19 +64,20 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(next);
 
-            uint64_t dwOldStateFlag = pPlayer->GetStateFlag();
+            _STD bitset<64> oldStateFlag(pPlayer->GetStateFlag());
             pPlayer->SetStateFlag();
-            uint64_t dwNewStateFlag = pPlayer->GetStateFlag();
+            _STD bitset<64> newStateFlag(pPlayer->GetStateFlag());
 
-            if (dwOldStateFlag != dwNewStateFlag)
+            if (oldStateFlag != newStateFlag)
             {
-                _STD bitset<64> oldStateFlag(dwOldStateFlag), newStateFlag(dwNewStateFlag);
-                oldStateFlag.set(0); newStateFlag.set(0);
-                oldStateFlag.set(1); newStateFlag.set(1);
+                bool bBreakTransparant = false;
+                for (int indx : {2, 9, 51, 52})
+                {
+                    if (!bBreakTransparant)
+                        bBreakTransparant = oldStateFlag.test(indx) ? !newStateFlag.test(indx) : false;
+                }
 
-                bool bBreakTransparant = oldStateFlag.test(2) ? !newStateFlag.test(2) : false;
-                bool bNewViewRequired = oldStateFlag != newStateFlag;
-                CViewInvisible::SendMsg_StateInform(pPlayer, dwNewStateFlag, bNewViewRequired, bBreakTransparant);
+                CViewInvisible::SendMsg_StateInform(pPlayer, pPlayer->GetStateFlag(), bBreakTransparant);
             }
         }
 
