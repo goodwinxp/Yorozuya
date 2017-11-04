@@ -118,7 +118,7 @@ namespace GameServer
         spear = 4,
         bow = 5,
         firearm = 6,
-        luancher = 7,
+        launcher = 7,
         _throw = 8,
         staff = 9,
         mine = 10,

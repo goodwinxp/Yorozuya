@@ -68,11 +68,15 @@ namespace GameServer
         }
 
         bool WINAPIV CEquip::SetItemCheckRequest(
-            ATF::CNetworkEX */*pNetwork*/,
-            int /*n*/, 
-            char */*pBuf*/,
-            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr /*next*/)
+            ATF::CNetworkEX *pNetwork,
+            int n, 
+            char *pBuf,
+            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next)
         {
+            UNREFERENCED_PARAMETER(pNetwork);
+            UNREFERENCED_PARAMETER(n);
+            UNREFERENCED_PARAMETER(pBuf);
+            UNREFERENCED_PARAMETER(next);
             return true;
         }
 

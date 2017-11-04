@@ -19,7 +19,7 @@ namespace GameServer
         {
             if (pPlayer->m_pmWpn.byWpType == (char)e_wp_type::bow ||
                 pPlayer->m_pmWpn.byWpType == (char)e_wp_type::firearm ||
-                pPlayer->m_pmWpn.byWpType == (char)e_wp_type::luancher ||
+                pPlayer->m_pmWpn.byWpType == (char)e_wp_type::launcher ||
                 pPlayer->m_pmWpn.byWpType == (char)e_wp_type::grenade)
             {
                 return next(pPlayer, wBulletSerial);

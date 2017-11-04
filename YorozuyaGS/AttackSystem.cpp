@@ -115,13 +115,55 @@ namespace GameServer
             uint16_t * pConsumeSerial,
             int * pnLv,
             ATF::Info::CPlayerskill_process2035_ptr next)
-        {    // need check radius
-            if (pPlayer->IsSiegeMode())
+        {
+            char byRetCode = 0;
+            do
             {
-                return 14;
-            }
+                if (pPlayer->IsSiegeMode())
+                {
+                    byRetCode = 14;
+                    break;
+                }
 
-            return next(pPlayer, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv);
+                auto pDst = ATF::Global::g_MainThread->GetObjectA((int)e_obj_id::obj_id_player, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                    break;
+
+                ATF::_skill_fld* pSkillFld =
+                    (ATF::_skill_fld*)ATF::Global::g_MainThread->m_tblEffectData[effect_code_class].GetRecord(nSkillIndex);
+
+                if (nEffectCode == effect_code_class &&
+                    pSkillFld->m_nTempEffectType == 36 &&
+                    pSkillFld->m_nEffectClass == 6)
+                {
+                    break;
+                }
+
+                float fAvailableDist = pPlayer->m_pmWpn.wGaAttRange;
+                fAvailableDist += pSkillFld->m_nBonusDistance;
+                fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
+
+                if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher)
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Lcr_Att_Dist);
+                else
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::GE_Att_Dist_ + pPlayer->m_pmWpn.byWpClass);
+
+                fAvailableDist += pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + (int)ATF::_EFF_PLUS::FC_Att_Dist);
+
+                if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                    {
+                        byRetCode = error_attack_radius;
+                        break;
+                    }
+                }
+            } while (false);
+
+            if (byRetCode == 0)
+                byRetCode = next(pPlayer, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv);
+
+            return byRetCode;
         }
 
         void WINAPIV CAttackSystem::pc_ForceRequest(
@@ -130,14 +172,48 @@ namespace GameServer
             ATF::_CHRID* pidDst,
             uint16_t* pConsumeSerial,
             ATF::Info::CPlayerpc_ForceRequest1717_ptr next)
-        {   // need check radius
-            if (pPlayer->IsSiegeMode())
+        {
+            char byRetCode = 0;
+            do
             {
-                pPlayer->SendMsg_ForceResult(14, pidDst, nullptr, 0);
-                return;
-            }
+                if (pPlayer->IsSiegeMode())
+                {
+                    byRetCode = 14;
+                    break;
+                }
 
-            next(pPlayer, wForceSerial, pidDst, pConsumeSerial);
+                auto pForceItem = pPlayer->m_Param.m_dbForce.GetPtrFromSerial(wForceSerial);
+                if (!pForceItem)
+                    break;
+
+                auto pDst = ATF::Global::g_MainThread->GetObjectA((int)e_obj_id::obj_id_player, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                    break;
+
+                ATF::_force_fld* pForceFld = 
+                    (ATF::_force_fld*)ATF::Global::g_MainThread->m_tblEffectData[effect_code_force]
+                    .GetRecord((*ATF::Global::s_pnLinkForceItemToEffect)[pForceItem->m_wItemIndex]);
+
+                if (!pForceFld)
+                    break;
+
+                float fAvailableDist = pForceFld->m_nActDistance + 40.f;
+                fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
+                fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::FC_Att_Dist);
+                if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                    {
+                        byRetCode = error_attack_radius;
+                        break;
+                    }
+                }
+            } while (false);
+
+            if (byRetCode == 0)
+                next(pPlayer, wForceSerial, pidDst, pConsumeSerial);
+            else
+                pPlayer->SendMsg_ForceResult(byRetCode, pidDst, nullptr, 0);
         }
 
         void WINAPIV CAttackSystem::pc_ThrowSkillRequest(
@@ -158,7 +234,7 @@ namespace GameServer
                 }
                 
                 float fAvailableDist = 0.0;
-                if (pPlayer->m_pmWpn.byWpType == (char)e_wp_type::luancher ||
+                if (pPlayer->m_pmWpn.byWpType == (char)e_wp_type::launcher ||
                     pPlayer->m_pmWpn.byWpType == (char)e_wp_type::grenade)
                 {
                     fAvailableDist = (pDst->vfptr->GetWidth(pDst) / 2.f) + pPlayer->m_pmWpn.wGaAttRange;
