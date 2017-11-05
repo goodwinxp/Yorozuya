@@ -70,6 +70,7 @@ namespace GameServer
             float * fTar,
             ATF::Global::Info::GetYAngle700_ptr next)
         {
+            UNREFERENCED_PARAMETER(next);
             const F32vec4 vecTar = F32vec4(0.f, fTar[2], 0.f, fTar[0]);
             const F32vec4 vecPos = F32vec4(0.f, fPos[2], 0.f, fPos[0]);
             const F32vec4 diff = vecTar - vecPos;
