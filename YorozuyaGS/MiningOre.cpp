@@ -23,25 +23,10 @@ namespace GameServer
             core.unset_hook(&CPlayer::pc_MineStart);
         }
 
-        void CMiningOre::loop()
-        {
-        }
-
-        ModuleVersion_t CMiningOre::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CMiningOre::get_name()
         {
             static const ModuleName_t name = "fix_MiningOre";
             return name;
-        }
-
-        void CMiningOre::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         static const char* const ItemsOre[] = {

@@ -18,13 +18,21 @@ namespace Yorozuya
 
             virtual void unload() = 0;
 
-            virtual void loop() = 0;
-
-            virtual ModuleVersion_t get_version() = 0;
-
             virtual ModuleName_t get_name() = 0;
 
-            virtual void configure(const rapidjson::Value& nodeConfig) = 0;
+            virtual void loop()
+            {
+            }
+
+            virtual ModuleVersion_t get_version()
+            {
+                return ATF::usVersion;
+            }
+
+            virtual void configure(const rapidjson::Value& nodeConfig)
+            {
+                UNREFERENCED_PARAMETER(nodeConfig);
+            }
         };
         using Module_ptr = _STD shared_ptr<IModule>;
     }

@@ -25,25 +25,10 @@ namespace GameServer
             core.unset_hook(&ATF::CNetworkEX::Apex_T);
         }
 
-        void CNetworkEX::loop()
-        {
-        }
-
-        ModuleVersion_t CNetworkEX::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CNetworkEX::get_name()
         {
             static const ModuleName_t name = "fix_NetworkEx";
             return name;
-        }
-
-        void CNetworkEX::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CNetworkEX::DTradeAskRequest(

@@ -32,25 +32,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_TrunkIoSwapRequest);
         }
 
-        void CTrunk::loop()
-        {
-        }
-
-        ModuleVersion_t CTrunk::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CTrunk::get_name()
         {
             static const ModuleName_t name = "fix_Trunk";
             return name;
-        }
-
-        void CTrunk::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CTrunk::check_item_race(

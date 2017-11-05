@@ -11,6 +11,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct  AutominePersonal : CCharacter
     {
         bool m_bDBLoad;
@@ -87,4 +88,6 @@ START_ATF_NAMESPACE
         ~AutominePersonal();
         void dtor_AutominePersonal();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<AutominePersonal, 0xe70>(), "AutominePersonal");
 END_ATF_NAMESPACE

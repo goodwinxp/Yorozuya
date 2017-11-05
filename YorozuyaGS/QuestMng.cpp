@@ -23,25 +23,10 @@ namespace GameServer
             core.unset_hook(&CPlayer::Emb_CreateNPCQuest);
         }
 
-        void CQuestMng::loop()
-        {
-        }
-
-        ModuleVersion_t CQuestMng::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CQuestMng::get_name()
         {
             static const ModuleName_t name = "fix_QuestMng";
             return name;
-        }
-
-        void CQuestMng::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CQuestMng::Emb_CreateNPCQuest(

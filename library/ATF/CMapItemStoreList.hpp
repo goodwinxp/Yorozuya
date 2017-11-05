@@ -7,6 +7,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct CMapItemStoreList
     {
         bool m_bUse;
@@ -25,4 +26,6 @@ START_ATF_NAMESPACE
         ~CMapItemStoreList();
         void dtor_CMapItemStoreList();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<CMapItemStoreList, 0x18>(), "CMapItemStoreList");
 END_ATF_NAMESPACE

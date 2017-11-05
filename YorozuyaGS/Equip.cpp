@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#include "ETypes.h"
 #include "Equip.h"
 #include "PlayerEx.h"
 #include <ATF/global.hpp>
@@ -35,25 +36,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::pc_SetItemCheckRequest);
         }
 
-        void CEquip::loop()
-        {
-        }
-
-        ModuleVersion_t CEquip::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CEquip::get_name()
         {
             static const ModuleName_t name = "fix_Equip";
             return name;
-        }
-
-        void CEquip::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CEquip::IsEffectableEquip(
@@ -65,6 +51,12 @@ namespace GameServer
             
             do 
             {
+                if ((uint8_t)e_code_item_table::tbl_code_siege_kit == pCon->m_byTableCode)
+                {
+                    result = true;
+                    break;
+                }
+
                 int nItemEquipGrade = ATF::Global::GetItemEquipGrade(pCon->m_byTableCode, pCon->m_wItemIndex);
                 if (!pPlayer->IsEquipAbleGrade(nItemEquipGrade))
                     break;
@@ -76,11 +68,15 @@ namespace GameServer
         }
 
         bool WINAPIV CEquip::SetItemCheckRequest(
-            ATF::CNetworkEX */*pNetwork*/,
-            int /*n*/, 
-            char */*pBuf*/,
-            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr /*next*/)
+            ATF::CNetworkEX *pNetwork,
+            int n, 
+            char *pBuf,
+            ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next)
         {
+            UNREFERENCED_PARAMETER(pNetwork);
+            UNREFERENCED_PARAMETER(n);
+            UNREFERENCED_PARAMETER(pBuf);
+            UNREFERENCED_PARAMETER(next);
             return true;
         }
 

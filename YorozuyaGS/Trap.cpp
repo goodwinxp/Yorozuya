@@ -28,25 +28,10 @@ namespace GameServer
             core.unset_hook(&ATF::CTrap::SendMsg_FixPosition);
         }
 
-        void CTrap::loop()
-        {
-        }
-
-        ModuleVersion_t CTrap::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CTrap::get_name()
         {
             static const ModuleName_t name = "fix_Trap";
             return name;
-        }
-
-        void CTrap::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void WINAPIV CTrap::SendMsg_FixPositionImpl(ATF::CTrap* pTrap, int n)

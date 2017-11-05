@@ -60,34 +60,30 @@ namespace GameServer
             else
             {
                 ATF::_player_fld * pPlayerFld = (ATF::_player_fld*)ATF::Global::g_MainThread->m_tblPlayer.GetRecord(m_pPlayer->m_Param.m_dbChar.m_byRaceSexCode);
-                switch (m_pPlayer->m_byMoveType)
+                if (m_pPlayer->m_bInGuildBattle && m_pPlayer->m_bTakeGravityStone)
                 {
-                case 0:
-                    m_fAvatarSpeed += pPlayerFld->m_fMoveWalkRate;
+                    m_fAvatarSpeed = 3.0f;
                     m_fAvatarSpeed += m_pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Move_Run_Spd);
-                    break;
-
-                case 1:
-                    if (m_pPlayer->m_bInGuildBattle && m_pPlayer->m_bTakeGravityStone)
+                }
+                else
+                {
+                    switch (m_pPlayer->m_byMoveType)
                     {
-                        m_fAvatarSpeed = 3.0;
+                    case 0:
+                        m_fAvatarSpeed += pPlayerFld->m_fMoveWalkRate;
+                        m_fAvatarSpeed += m_pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Move_Run_Spd);
+                        break;
+
+                    case 1:
+                        m_fAvatarSpeed += pPlayerFld->m_fMoveRunRate;
+                        m_fAvatarSpeed += m_pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Move_Run_Spd);
+                        break;
+
+                    case 2:
+                        m_fAvatarSpeed += pPlayerFld->m_fMoveRunRate;
+                        m_fAvatarSpeed += m_pPlayer->EquipItemSFAgent.GetBoosterAddSpeed();
                         break;
                     }
-
-                    m_fAvatarSpeed += pPlayerFld->m_fMoveRunRate;
-                    m_fAvatarSpeed += m_pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Move_Run_Spd);
-                    break;
-
-                case 2:
-                    if (m_pPlayer->m_bInGuildBattle && m_pPlayer->m_bTakeGravityStone)
-                    {
-                        m_fAvatarSpeed = 3.0;
-                        break;
-                    }
-
-                    m_fAvatarSpeed += pPlayerFld->m_fMoveRunRate;
-                    m_fAvatarSpeed += m_pPlayer->EquipItemSFAgent.GetBoosterAddSpeed();
-                    break;
                 }
             }
 
@@ -96,7 +92,7 @@ namespace GameServer
 
         bool CPlayerEx::CheckFlyHack(float* fTar)
         {
-            if (ATF::Global::GetSqrt(m_pPlayer->m_fCurPos, fTar) <= 15.0f &&
+            if (ATF::Global::Get3DSqrt(m_pPlayer->m_fCurPos, fTar) <= 15.0f &&
                 std::fabs(m_pPlayer->m_fCurPos[1] - fTar[1]) >= 120.0f)
                 return false;
 
@@ -132,7 +128,7 @@ namespace GameServer
             }
 
             const float fDist = fRealSpeed * 15.0f * tmTime.count() / 1000.f;
-            const float fSqrt = ATF::Global::GetSqrt(m_pPlayer->m_fCurPos, fTar);
+            const float fSqrt = ATF::Global::Get3DSqrt(m_pPlayer->m_fCurPos, fTar);
             if (fSqrt < fDist)
                 return true;
 

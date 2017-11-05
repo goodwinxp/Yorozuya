@@ -2,6 +2,7 @@
 
 #include "ETypes.h"
 #include "PotionMgr.h"
+#include <ATF/global.hpp>
 #include <ATF/CRaceBuffManager.hpp>
 #include <ATF/CGuildRoomSystem.hpp>
 
@@ -30,24 +31,10 @@ namespace GameServer
             core.unset_hook(&ATF::CPotionMgr::PreCheckPotion);
         }
 
-        void CPotionMgr::loop()
-        {
-        }
-
-        ModuleVersion_t CPotionMgr::get_version()
-        {
-            return ATF::usVersion;
-        }
-
         ModuleName_t CPotionMgr::get_name()
         {
             static const ModuleName_t name = "fix_PotionMgr";
             return name;
-        }
-
-        void CPotionMgr::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         int WINAPIV CPotionMgr::PreCheckPotion(
@@ -79,7 +66,7 @@ namespace GameServer
                     break;
                 }
 
-                if (true)// todo : check Major_Cash_Item
+                if (*ATF::Global::Major_Cash_Item)
                 {
                     if (pFld->m_nTempEffectType == 48 || 
                         pFld->m_nTempEffectType == 49 ||
@@ -111,7 +98,7 @@ namespace GameServer
 
                 if (bCheckDist && pUsePlayer != *pTargetCharacter)
                 {
-                    auto fDist = ATF::Global::GetSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
+                    auto fDist = ATF::Global::Get3DSqrt(pUsePlayer->m_fCurPos, (*pTargetCharacter)->m_fCurPos);
                     if (fDist > (float)pfB->m_nUseRange)
                     {
                         nResult = 20;

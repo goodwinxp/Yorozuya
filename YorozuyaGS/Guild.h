@@ -20,18 +20,22 @@ namespace GameServer
 
             virtual void unload();
 
-            virtual void loop();
-
-            virtual ModuleVersion_t get_version();
-
             virtual ModuleName_t get_name();
-
-            virtual void configure(const rapidjson::Value& nodeConfig);
         private:
             static char WINAPIV ManageAcceptORRefuseGuildBattle(
                 ATF::CGuild* pObj, 
                 bool bAccept, 
                 ATF::Info::CGuildManageAcceptORRefuseGuildBattle80_ptr next);
+
+            static void WINAPIV pc_GuildRoomEnterRequest(
+                ATF::CPlayer *pPlayer,
+                ATF::_guildroom_enter_request_clzo* pProtocol,
+                ATF::Info::CPlayerpc_GuildRoomEnterRequest1755_ptr next);
+
+            static void WINAPIV pc_GuildRoomOutRequest(
+                ATF::CPlayer *pPlayer,
+                ATF::_guildroom_out_request_clzo* pProtocol,
+                ATF::Info::CPlayerpc_GuildRoomOutRequest1757_ptr next);
         };
     };
 };

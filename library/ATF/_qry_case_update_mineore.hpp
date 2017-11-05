@@ -5,6 +5,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct _qry_case_update_mineore
     {
         struct __changed
@@ -22,4 +23,6 @@ START_ATF_NAMESPACE
         _qry_case_update_mineore();
         void ctor__qry_case_update_mineore();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<_qry_case_update_mineore, 0x1f0>(), "_qry_case_update_mineore");
 END_ATF_NAMESPACE

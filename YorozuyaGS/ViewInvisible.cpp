@@ -1,6 +1,8 @@
 #include "stdafx.h"
 
 #include <cmath>
+#include <bitset>
+
 #include "ETypes.h"
 #include "ViewInvisible.h"
 #include <ATF/global.hpp>
@@ -21,7 +23,7 @@ namespace GameServer
                 (void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport, 
                 &CViewInvisible::CGameObject__CircleReport);
 
-            core.set_hook(&CPlayer::SendMsg_StateInform, &CViewInvisible::CPlayer__SendMsg_StateInform);
+            core.set_hook(&CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
             core.set_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
             core.set_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
             core.set_hook(&CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
@@ -32,20 +34,11 @@ namespace GameServer
         {
             auto& core = CATFCore::get_instance();
             core.unset_hook((void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport);
-            core.unset_hook(&CPlayer::SendMsg_StateInform);
+            core.unset_hook(&CPlayer::SenseState);
             core.unset_hook(&CPlayer::SendMsg_FixPosition);
             core.unset_hook(&CPlayer::SendMsg_RealMovePoint);
             core.unset_hook(&CPlayer::SendMsg_OtherShapePart);
             core.unset_hook(&CPlayer::SendMsg_OtherShapeAll);
-        }
-
-        void CViewInvisible::loop()
-        {
-        }
-
-        ModuleVersion_t CViewInvisible::get_version()
-        {
-            return usVersion;
         }
 
         ModuleName_t CViewInvisible::get_name()
@@ -54,20 +47,38 @@ namespace GameServer
             return name;
         }
 
-        void CViewInvisible::configure(
-            const rapidjson::Value & nodeConfig)
+        void WINAPIV CViewInvisible::SendMsg_StateInform(
+            ATF::CPlayer * pPlayer,
+            uint64_t dwStateFlag,
+            bool bBreakTransparant)
         {
-            UNREFERENCED_PARAMETER(nodeConfig);
+            if (bBreakTransparant)
+                pPlayer->SendMsg_NewViewOther(3);
+
+            pPlayer->SendMsg_StateInform(dwStateFlag);
         }
 
-        void WINAPIV CViewInvisible::CPlayer__SendMsg_StateInform(
-            ATF::CPlayer * pPlayer, 
-            uint64_t dwStateFlag, 
-            ATF::Info::CPlayerSendMsg_StateInform1074_ptr next)
+        void WINAPIV CViewInvisible::CPlayer__SenseState(
+            ATF::CPlayer * pPlayer,
+            ATF::Info::CPlayerSenseState1188_ptr next)
         {
-            next(pPlayer, dwStateFlag);
+            UNREFERENCED_PARAMETER(next);
 
-            pPlayer->NewViewCircleObject();
+            _STD bitset<64> oldStateFlag(pPlayer->GetStateFlag());
+            pPlayer->SetStateFlag();
+            _STD bitset<64> newStateFlag(pPlayer->GetStateFlag());
+
+            if (oldStateFlag != newStateFlag)
+            {
+                bool bBreakTransparant = false;
+                for (int indx : {2, 9, 51, 52})
+                {
+                    if (!bBreakTransparant)
+                        bBreakTransparant = oldStateFlag.test(indx) ? !newStateFlag.test(indx) : false;
+                }
+
+                CViewInvisible::SendMsg_StateInform(pPlayer, pPlayer->GetStateFlag(), bBreakTransparant);
+            }
         }
 
         bool check_conditions(ATF::CPlayer *pPlayer, ATF::CPlayer *pDst)

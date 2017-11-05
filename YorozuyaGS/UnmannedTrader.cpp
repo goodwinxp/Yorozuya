@@ -7,9 +7,6 @@
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_unmandtrader_buy_get_info.hpp>
 
-/* Variant 2
-Дюп через смену специализации
-*/
 
 namespace GameServer
 {
@@ -37,25 +34,10 @@ namespace GameServer
             core.unset_hook(&ATF::CUnmannedTraderUserInfo::NotifyRegistItem);
         }
 
-        void CUnmannedTrader::loop()
-        {
-        }
-
-        ModuleVersion_t CUnmannedTrader::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CUnmannedTrader::get_name()
         {
             static const ModuleName_t name = "fix_UnmannedTrader";
             return name;
-        }
-
-        void CUnmannedTrader::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void WINAPIV CUnmannedTrader::CompleteBuy(

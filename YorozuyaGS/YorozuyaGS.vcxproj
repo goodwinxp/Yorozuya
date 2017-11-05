@@ -79,6 +79,8 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -101,6 +103,8 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -124,6 +128,8 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -139,6 +145,7 @@
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
     <ClInclude Include="AttackSystemError.h" />
+    <ClInclude Include="AutominePersonal.h" />
     <ClInclude Include="ChatSystem.h" />
     <ClInclude Include="CheatCommand.h" />
     <ClInclude Include="CrashDump.h" />
@@ -147,6 +154,7 @@
     <ClInclude Include="Guild.h" />
     <ClInclude Include="NetworkEx.h" />
     <ClInclude Include="PcBangFavor.h" />
+    <ClInclude Include="Performance.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ETypes.h" />
     <ClInclude Include="ItemCheckHelper.h" />
@@ -174,6 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AttackSystem.cpp" />
+    <ClCompile Include="AttackSystem_CalcPoint.cpp" />
+    <ClCompile Include="AutominePersonal.cpp" />
     <ClCompile Include="ChatSystem.cpp" />
     <ClCompile Include="CheatCommand.cpp" />
     <ClCompile Include="CrashDump.cpp" />
@@ -182,6 +192,7 @@
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="NetworkEx.cpp" />
     <ClCompile Include="PcBangFavor.cpp" />
+    <ClCompile Include="Performance.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>

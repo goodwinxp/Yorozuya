@@ -34,6 +34,7 @@ START_ATF_NAMESPACE
         using CPlayer_Ref = ATF::CPlayer(&)[max_player];
         using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
 
+        static bool* Major_Cash_Item((bool*)0x14096E033L);
         static CRFWorldDatabase_ptr2 pkDB((CRFWorldDatabase_ptr2)0x1415B7000L);
         static CMgrAvatorItemHistory_ptr s_MgrItemHistory((CMgrAvatorItemHistory_ptr)0x14098AA40L);
         static CRecordData_ptr2 s_tblQuest((CRecordData_ptr2)0x1849AC0C0L);

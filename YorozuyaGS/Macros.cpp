@@ -23,25 +23,10 @@ namespace GameServer
             core.unset_hook(&CMainThread::_db_Update_CryMsg);
         }
 
-        void CMacros::loop()
-        {
-        }
-
-        ModuleVersion_t CMacros::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CMacros::get_name()
         {
             static const ModuleName_t name = "fix_Macros";
             return name;
-        }
-
-        void CMacros::configure(
-            const rapidjson::Value& nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         bool WINAPIV CMacros::_db_Update_MacroData(

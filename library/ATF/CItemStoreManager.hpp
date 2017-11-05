@@ -12,6 +12,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct CItemStoreManager
     {
         CLogFile *m_pkLogger;
@@ -57,4 +58,6 @@ START_ATF_NAMESPACE
         ~CItemStoreManager();
         void dtor_CItemStoreManager();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<CItemStoreManager, 0x138>(), "CItemStoreManager");
 END_ATF_NAMESPACE

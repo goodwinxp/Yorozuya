@@ -6,6 +6,7 @@
 
 #include <ATF/Global.hpp>
 #include <ATF/_SiegeKitItem_fld.hpp>
+#include <ATF/_UnitFrame_fld.hpp>
 
 namespace GameServer
 {
@@ -19,6 +20,13 @@ namespace GameServer
             core.set_hook(&ATF::CPlayer::_pre_check_skill_attack, &CAttackSystem::_pre_check_skill_attack);
             core.set_hook(&ATF::CPlayer::skill_process, &CAttackSystem::skill_process);
             core.set_hook(&ATF::CPlayer::pc_ForceRequest, &CAttackSystem::pc_ForceRequest);
+            core.set_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
+            core.set_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
+            core.set_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
+            core.set_hook(&ATF::CPlayer::make_gen_attack_param, &CAttackSystem::make_gen_attack_param);
+            core.set_hook(&ATF::CPlayer::make_siege_attack_param, &CAttackSystem::make_siege_attack_param);
+            core.set_hook(&ATF::CPlayer::make_skill_attack_param, &CAttackSystem::make_skill_attack_param);
+            core.set_hook(&ATF::CPlayer::make_wpactive_skill_attack_param, &CAttackSystem::make_wpactive_skill_attack_param);
         }
 
         void CAttackSystem::unload()
@@ -27,27 +35,19 @@ namespace GameServer
             core.unset_hook(&ATF::CPlayer::_pre_check_skill_attack);
             core.unset_hook(&ATF::CPlayer::skill_process);
             core.unset_hook(&ATF::CPlayer::pc_ForceRequest);
-        }
-
-        void CAttackSystem::loop()
-        {
-        }
-
-        ModuleVersion_t CAttackSystem::get_version()
-        {
-            return usVersion;
+            core.unset_hook(&ATF::CPlayer::pc_ThrowSkillRequest);
+            core.unset_hook(&ATF::CPlayer::pc_ThrowUnitRequest);
+            core.unset_hook(&ATF::CPlayer::IsBulletValidity);
+            core.unset_hook(&ATF::CPlayer::make_gen_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_siege_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_skill_attack_param);
+            core.unset_hook(&ATF::CPlayer::make_wpactive_skill_attack_param);
         }
 
         ModuleName_t CAttackSystem::get_name()
         {
             static const ModuleName_t name = "fix_AttackSystem";
             return name;
-        }
-
-        void CAttackSystem::configure(
-            const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         int WINAPIV CAttackSystem::_pre_check_skill_attack(
@@ -107,22 +107,6 @@ namespace GameServer
                 ppfldEffBt);
         }
 
-        void WINAPIV CAttackSystem::pc_ForceRequest(
-            ATF::CPlayer* pPlayer,
-            uint16_t wForceSerial,
-            ATF::_CHRID* pidDst,
-            uint16_t* pConsumeSerial,
-            ATF::Info::CPlayerpc_ForceRequest1717_ptr next)
-        {
-            if (pPlayer->IsSiegeMode())
-            {
-                pPlayer->SendMsg_ForceResult(14, pidDst, nullptr, 0);
-                return;
-            }
-
-            next(pPlayer, wForceSerial, pidDst, pConsumeSerial);
-        }
-
         char WINAPIV CAttackSystem::skill_process(
             ATF::CPlayer * pPlayer,
             int nEffectCode,
@@ -132,12 +116,204 @@ namespace GameServer
             int * pnLv,
             ATF::Info::CPlayerskill_process2035_ptr next)
         {
-            if (pPlayer->IsSiegeMode())
+            char byRetCode = 0;
+            do
             {
-                return 14;
-            }
+                if (pPlayer->IsSiegeMode())
+                {
+                    byRetCode = 14;
+                    break;
+                }
 
-            return next(pPlayer, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv);
+                auto pDst = ATF::Global::g_MainThread->GetObjectA((int)e_obj_id::obj_id_player, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                    break;
+
+                ATF::_skill_fld* pSkillFld =
+                    (ATF::_skill_fld*)ATF::Global::g_MainThread->m_tblEffectData[effect_code_class].GetRecord(nSkillIndex);
+
+                if (nEffectCode == effect_code_class &&
+                    pSkillFld->m_nTempEffectType == 36 &&
+                    pSkillFld->m_nEffectClass == 6)
+                {
+                    break;
+                }
+
+                float fAvailableDist = pPlayer->m_pmWpn.wGaAttRange;
+                fAvailableDist += pSkillFld->m_nBonusDistance;
+                fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
+
+                if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher)
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Lcr_Att_Dist);
+                else
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::GE_Att_Dist_ + pPlayer->m_pmWpn.byWpClass);
+
+                fAvailableDist += pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + (int)ATF::_EFF_PLUS::FC_Att_Dist);
+
+                if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                    {
+                        byRetCode = error_attack_radius;
+                        break;
+                    }
+                }
+            } while (false);
+
+            if (byRetCode == 0)
+                byRetCode = next(pPlayer, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv);
+
+            return byRetCode;
+        }
+
+        void WINAPIV CAttackSystem::pc_ForceRequest(
+            ATF::CPlayer* pPlayer,
+            uint16_t wForceSerial,
+            ATF::_CHRID* pidDst,
+            uint16_t* pConsumeSerial,
+            ATF::Info::CPlayerpc_ForceRequest1717_ptr next)
+        {
+            char byRetCode = 0;
+            do
+            {
+                if (pPlayer->IsSiegeMode())
+                {
+                    byRetCode = 14;
+                    break;
+                }
+
+                auto pForceItem = pPlayer->m_Param.m_dbForce.GetPtrFromSerial(wForceSerial);
+                if (!pForceItem)
+                    break;
+
+                auto pDst = ATF::Global::g_MainThread->GetObjectA((int)e_obj_id::obj_id_player, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                    break;
+
+                ATF::_force_fld* pForceFld = 
+                    (ATF::_force_fld*)ATF::Global::g_MainThread->m_tblEffectData[effect_code_force]
+                    .GetRecord((*ATF::Global::s_pnLinkForceItemToEffect)[pForceItem->m_wItemIndex]);
+
+                if (!pForceFld)
+                    break;
+
+                float fAvailableDist = pForceFld->m_nActDistance + 40.f;
+                fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
+                fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::FC_Att_Dist);
+                if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                    {
+                        byRetCode = error_attack_radius;
+                        break;
+                    }
+                }
+            } while (false);
+
+            if (byRetCode == 0)
+                next(pPlayer, wForceSerial, pidDst, pConsumeSerial);
+            else
+                pPlayer->SendMsg_ForceResult(byRetCode, pidDst, nullptr, 0);
+        }
+
+        void WINAPIV CAttackSystem::pc_ThrowSkillRequest(
+            ATF::CPlayer* pPlayer,
+            uint16_t wBulletSerial,
+            ATF::_CHRID* pidDst,
+            uint16_t* pConsumeSerial,
+            ATF::Info::CPlayerpc_ThrowSkillRequest1951_ptr next)
+        {
+            char byRetCode = 0;
+            do
+            {
+                auto pDst = ATF::Global::g_MainThread->GetObjectA(0, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                {
+                    byRetCode = 2;
+                    break;
+                }
+                
+                float fAvailableDist = 0.0;
+                if (pPlayer->m_pmWpn.byWpType == (char)e_wp_type::launcher ||
+                    pPlayer->m_pmWpn.byWpType == (char)e_wp_type::grenade)
+                {
+                    fAvailableDist = (pDst->vfptr->GetWidth(pDst) / 2.f) + pPlayer->m_pmWpn.wGaAttRange;
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Lcr_Att_Dist);
+                }
+                else
+                {
+                    fAvailableDist = (pDst->vfptr->GetWidth(pDst) / 2.f) + pPlayer->m_pmWpn.wGaAttRange;
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus(
+                        pPlayer->m_pmWpn.byWpClass + (int)ATF::_EFF_PLUS::GE_Att_Dist_);
+                }
+
+                if (ATF::Global::Get3DSqrt(pPlayer->m_fCurPos, pDst->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pPlayer->m_fCurPos, pDst->m_fOldPos) > fAvailableDist)
+                    {
+                        byRetCode = 5;
+                        break;
+                    }
+                }
+
+                next(pPlayer, wBulletSerial, pidDst, pConsumeSerial);
+            } while (false);
+
+            if (byRetCode != 0)
+            {
+                pPlayer->SendMsg_ThrowSkillResult(byRetCode, pidDst, -1);
+            }
+        }
+
+        void WINAPIV CAttackSystem::pc_ThrowUnitRequest(
+            ATF::CPlayer * pPlayer,
+            ATF::_CHRID * pidDst,
+            uint16_t * pConsumeSerial,
+            ATF::Info::CPlayerpc_ThrowUnitRequest1955_ptr next)
+        {
+            char byRetCode = 0;
+            do
+            {
+                if (!pPlayer->IsRidingUnit())
+                {
+                    byRetCode = 23;
+                    break;
+                }
+
+                auto pDst = ATF::Global::g_MainThread->GetObjectA(0, pidDst->byID, pidDst->wIndex);
+                if (!pDst)
+                {
+                    byRetCode = 2;
+                    break;
+                }
+
+                ATF::_UnitPart_fld* pPartFld = 
+                    (ATF::_UnitPart_fld*)ATF::Global::g_MainThread->m_tblUnitPart[4].GetRecord(
+                        pPlayer->m_pUsingUnit->byPart[4]);
+
+                if (!pPartFld)
+                {
+                    byRetCode = 23;
+                    break;
+                }
+
+                float fAvailableDist = (pDst->vfptr->GetWidth(pDst) / 2.f) + pPartFld->m_fAttackRange;
+                if (ATF::Global::Get3DSqrt(pPlayer->m_fCurPos, pDst->m_fCurPos) > fAvailableDist)
+                {
+                    if (ATF::Global::Get3DSqrt(pPlayer->m_fCurPos, pDst->m_fOldPos) > fAvailableDist)
+                    {
+                        byRetCode = 5;
+                        break;
+                    }
+                }
+
+                next(pPlayer, pidDst, pConsumeSerial);
+            } while (false);
+
+            if (byRetCode != 0)
+            {
+                pPlayer->SendMsg_ThrowUnitResult(byRetCode, pidDst, -1);
+            }
         }
     }
 }

@@ -20,24 +20,10 @@ namespace GameServer
             core.unset_hook(&CPlayer::pc_UnitDeliveryRequest);
         }
 
-        void CUnit::loop()
-        {
-        }
-
-        ModuleVersion_t CUnit::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CUnit::get_name()
         {
             static const ModuleName_t name = "fix_Unit";
             return name;
-        }
-
-        void CUnit::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void WINAPIV CUnit::pc_UnitDeliveryRequest(

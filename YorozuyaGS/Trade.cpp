@@ -24,24 +24,10 @@ namespace GameServer
             core.unset_hook(&CPlayer::pc_DTradeOKRequest);
         }
 
-        void CTrade::loop()
-        {
-        }
-
-        ModuleVersion_t CTrade::get_version()
-        {
-            return usVersion;
-        }
-
         ModuleName_t CTrade::get_name()
         {
             static const ModuleName_t name = "fix_Trade";
             return name;
-        }
-
-        void CTrade::configure(const rapidjson::Value & nodeConfig)
-        {
-            UNREFERENCED_PARAMETER(nodeConfig);
         }
 
         void WINAPIV CTrade::pc_DTradeOKRequest(

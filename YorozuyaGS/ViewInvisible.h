@@ -21,18 +21,17 @@ namespace GameServer
 
             virtual void unload();
 
-            virtual void loop();
-
-            virtual ModuleVersion_t get_version();
-
             virtual ModuleName_t get_name();
-
-            virtual void configure(const rapidjson::Value& nodeConfig);
         private:
-            static void WINAPIV CPlayer__SendMsg_StateInform(
-                ATF::CPlayer *pPlayer, 
+            static void WINAPIV SendMsg_StateInform(
+                ATF::CPlayer *pPlayer,
                 uint64_t dwStateFlag,
-                ATF::Info::CPlayerSendMsg_StateInform1074_ptr next);
+                bool bBreakTransparant);
+
+        private:
+            static void WINAPIV CPlayer__SenseState(
+                ATF::CPlayer *pPlayer,
+                ATF::Info::CPlayerSenseState1188_ptr next);
 
             static void WINAPIV CGameObject__CircleReport(
                 ATF::CGameObject* pObj,
