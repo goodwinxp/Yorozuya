@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "ETypes.h"
+#include "PlayerEx.h"
 #include "AttackSystem.h"
 #include "AttackSystemError.h"
 
@@ -12,7 +13,11 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
+        namespace
+        {
+            using namespace ATF;
+            using namespace GameServer::Extension;
+        }
 
         void CAttackSystem::load()
         {
@@ -44,19 +49,19 @@ namespace GameServer
         }
 
         int WINAPIV CAttackSystem::_pre_check_skill_attack(
-            ATF::CPlayer * pPlayer, 
-            ATF::CCharacter * pDst, 
-            float * pfAttackPos, 
-            char byEffectCode, 
-            ATF::_skill_fld * pSkillFld, 
-            uint16_t wBulletSerial, 
-            ATF::_STORAGE_LIST::_db_con ** ppBulletProp, 
-            ATF::_BulletItem_fld ** ppfldBullet, 
-            int nEffectGroup, 
-            uint16_t * pdwDecPoint, 
-            uint16_t wEffBtSerial, 
-            ATF::_STORAGE_LIST::_db_con ** ppEffBtProp, 
-            ATF::_BulletItem_fld ** ppfldEffBt, 
+            ATF::CPlayer * pPlayer,
+            ATF::CCharacter * pDst,
+            float * pfAttackPos,
+            char byEffectCode,
+            ATF::_skill_fld * pSkillFld,
+            uint16_t wBulletSerial,
+            ATF::_STORAGE_LIST::_db_con ** ppBulletProp,
+            ATF::_BulletItem_fld ** ppfldBullet,
+            int nEffectGroup,
+            uint16_t * pdwDecPoint,
+            uint16_t wEffBtSerial,
+            ATF::_STORAGE_LIST::_db_con ** ppEffBtProp,
+            ATF::_BulletItem_fld ** ppfldEffBt,
             ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next)
         {
             if (!pSkillFld)
@@ -84,6 +89,8 @@ namespace GameServer
                 }
             }
 
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            // todo : process delay
             return next(
                 pPlayer,
                 pDst,
@@ -113,6 +120,8 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt, 
             ATF::Info::CPlayer_pre_check_force_attack1364_ptr next)
         {
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            // todo : process delay
             return next(
                 pPlayer,
                 pDst,
@@ -138,6 +147,8 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt,
             ATF::Info::CPlayer_pre_check_normal_attack1370_ptr next)
         {
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            // todo : process delay
             return next(
                 pPlayer,
                 pDst,
@@ -162,7 +173,8 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBullet,
             ATF::Info::CPlayer_pre_check_siege_attack1372_ptr next)
         {
-
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            // todo : process delay
             return next(
                 pPlayer,
                 pDst,
@@ -184,6 +196,8 @@ namespace GameServer
             ATF::_unit_bullet_param ** ppBulletParam,
             ATF::Info::CPlayer_pre_check_unit_attack1380_ptr next)
         {
+            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+            // todo : process delay
             return next(
                 pPlayer,
                 pDst,
@@ -244,6 +258,8 @@ namespace GameServer
                         break;
                     }
                 }
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                // todo : process delay
             } while (false);
 
             if (byRetCode == 0)
@@ -294,6 +310,9 @@ namespace GameServer
                         break;
                     }
                 }
+
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                // todo : process delay
             } while (false);
 
             if (byRetCode == 0)
@@ -342,6 +361,8 @@ namespace GameServer
                     }
                 }
 
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                // todo : process delay
                 next(pPlayer, wBulletSerial, pidDst, pConsumeSerial);
             } while (false);
 
@@ -393,6 +414,8 @@ namespace GameServer
                     }
                 }
 
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                // todo : process delay
                 next(pPlayer, pidDst, pConsumeSerial);
             } while (false);
 

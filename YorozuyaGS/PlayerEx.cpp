@@ -263,7 +263,9 @@ namespace GameServer
 
         bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
-            CleanSetItem();
+            ResetSetItem();
+
+            ResetAttackDelay();
 
             CleanSerialKillerList();
 
@@ -276,14 +278,21 @@ namespace GameServer
 
         void CPlayerEx::Save()
         {
-            CleanSetItem();
+            ResetSetItem();
+
+            ResetAttackDelay();
 
             CleanSerialKillerList();
         }
 
-        void CPlayerEx::CleanSetItem()
+        void CPlayerEx::ResetSetItem()
         {
             m_setSetItemInfo.clear();
+        }
+
+        void CPlayerEx::ResetAttackDelay()
+        {
+            m_AttackDelay.reset();
         }
 
         bool CPlayerEx::init_player(size_t indx, ATF::CPlayer * pPlayer)

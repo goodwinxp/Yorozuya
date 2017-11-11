@@ -13,7 +13,7 @@ namespace GameServer
         #define _MAX_PATH_POS   16
         #define _PATH_NOT_FOUND 0
 
-        bool CPlayerEx::CheckWallHack( float* fTar)
+        bool CPlayerEx::CheckWallHack( float* fTar) const
         {
             float fPos[3] = { 0.0f };
             float fCurPos[3] = { 0.0f };
@@ -34,7 +34,7 @@ namespace GameServer
             return true;
         }
 
-        float CPlayerEx::GetMoveSpeed()
+        float CPlayerEx::GetMoveSpeed() const
         {
             float m_fAvatarSpeed = 0.0f;
             if (m_pPlayer->IsRidingUnit())
@@ -90,7 +90,7 @@ namespace GameServer
             return m_fAvatarSpeed;
         }
 
-        bool CPlayerEx::CheckFlyHack(float* fTar)
+        bool CPlayerEx::CheckFlyHack(float* fTar) const
         {
             if (ATF::Global::Get3DSqrt(m_pPlayer->m_fCurPos, fTar) <= 15.0f &&
                 std::fabs(m_pPlayer->m_fCurPos[1] - fTar[1]) >= 120.0f)
@@ -106,22 +106,22 @@ namespace GameServer
             return true;
         }
 
-        bool CPlayerEx::CheckSpeedHack(float fRealSpeed, float* fTar)
+        bool CPlayerEx::CheckSpeedHack(float fRealSpeed, float* fTar) const
         {
             const auto tpCurrentTime = ::std::chrono::high_resolution_clock::now();
 
             auto tmTime = ::std::chrono::milliseconds(100);
-            if (!m_pPlayer->m_bMove || m_nCountMove < 1)
+            if (!m_pPlayer->m_bMove || m_MoveInfo.m_nCountMove < 1)
             {
                 if (memcmp(m_pPlayer->m_fCurPos, fTar, sizeof(m_pPlayer->m_fCurPos)) == 0)
                     return true;
 
-                m_nCountMove = 0;
+                m_MoveInfo.m_nCountMove = 0;
                 tmTime += ::std::chrono::milliseconds(600);
             }
             else
             {
-                const auto tmDiff = tpCurrentTime - m_tpLastMove;
+                const auto tmDiff = tpCurrentTime - m_MoveInfo.m_tpLastMove;
                 tmTime += ::std::chrono::duration_cast<::std::chrono::milliseconds>(tmDiff);
                 if (tmTime > ::std::chrono::milliseconds(5000))
                     tmTime = ::std::chrono::milliseconds(2500);
@@ -140,15 +140,11 @@ namespace GameServer
             if (fRatio >= 5.0f)
                 return false;
 
-            const auto tmWarningDiff = 
-                ::std::chrono::duration_cast<::std::chrono::milliseconds>(
-                    tpCurrentTime - m_tpLastWarning);
+            if (m_MoveInfo.m_timerWarning.is_end()) // Время с последнего страйка
+                m_MoveInfo.m_nCountWarning = 0;
 
-            if (tmWarningDiff >= ::std::chrono::milliseconds(3000)) // Время с последнего страйка
-                m_nCountWarning = 0;
-
-            int nCountWarning = m_nCountWarning;
-            m_tpLastWarning = tpCurrentTime;
+            int nCountWarning = m_MoveInfo.m_nCountWarning;
+            m_MoveInfo.m_timerWarning.begin(::std::chrono::milliseconds(3000));
 
             if (nCountWarning >= 15)
             {
@@ -166,20 +162,20 @@ namespace GameServer
                     nCountWarning += 9;
             }
 
-            m_nCountWarning = ++nCountWarning;
+            m_MoveInfo.m_nCountWarning = ++nCountWarning;
 
             return true;
         };
 
-        bool CPlayerEx::CheckMove(float* pfTar)
+        bool CPlayerEx::CheckMove(float* pfTar) const
         {
             bool result = false;
 
             do
             {
-                const float fLastSpeed = m_fLastSpeed;
+                const float fLastSpeed = m_MoveInfo.m_fLastSpeed;
                 float fCurrentSpeed = GetMoveSpeed();
-                m_fLastSpeed = fCurrentSpeed;
+                m_MoveInfo.m_fLastSpeed = fCurrentSpeed;
                 if (fLastSpeed > fCurrentSpeed)
                     fCurrentSpeed = fLastSpeed;
 
@@ -201,14 +197,14 @@ namespace GameServer
             }
             else
             {
-                ++m_nCountMove;
-                m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+                ++m_MoveInfo.m_nCountMove;
+                m_MoveInfo.m_tpLastMove = ::std::chrono::high_resolution_clock::now();
             }
             
             return result;
         }
 
-        void CPlayerEx::MoveError()
+        void CPlayerEx::MoveError() const
         {
             m_pPlayer->SendMsg_MoveError(11);
             if (m_pPlayer->m_bMove)
@@ -221,11 +217,8 @@ namespace GameServer
 
         void CPlayerEx::InitMoveInfo()
         {
-            m_fLastSpeed = GetMoveSpeed();
-            m_nCountMove = 0;
-            m_nCountWarning = 0;
-            m_tpLastMove = ::std::chrono::high_resolution_clock::now();
-            m_tpLastWarning = ::std::chrono::high_resolution_clock::now();
+            m_MoveInfo.reset();
+            m_MoveInfo.m_fLastSpeed = GetMoveSpeed();
         }
     }
 }

@@ -121,6 +121,9 @@
     <Filter Include="Implementation\Extension\Performance">
       <UniqueIdentifier>{5916199d-738c-40de-bc71-8088b9fab9bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\PlayerEx\AttackDelay">
+      <UniqueIdentifier>{01a3c6f6-8a2d-4b6a-8660-490cd3ef91a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -243,6 +246,9 @@
     <ClCompile Include="..\Common\Helpers\zip.cpp">
       <Filter>Common\Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerEx_AttackDelay.cpp">
+      <Filter>Implementation\Extension\PlayerEx\AttackDelay</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -363,6 +369,9 @@
       <Filter>Implementation\Extension\Performance</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\zip.h">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Helpers\TimeHelper.hpp">
       <Filter>Common\Helpers</Filter>
     </ClInclude>
   </ItemGroup>

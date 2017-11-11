@@ -4,6 +4,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include <vector>
+#include "..\Common\Helpers\TimeHelper.hpp"
+
 namespace GameServer
 {
     namespace Extension
@@ -61,6 +64,61 @@ namespace GameServer
             };
             using ContainerSetItemInfo_t = _STD unordered_set<_set_item_info, hashing_func, key_equal_fn>;
             using ContainerSetItemAction_t = _STD unordered_map<_set_item_info, _set_item_action, hashing_func, key_equal_fn>;
+        }
+
+        namespace detail
+        {
+            struct _attack_delay
+            {
+                enum type_skill
+                {
+                    warrior,
+                    ranger,
+                    class_skill,
+                    num
+                };
+
+                TimeHelper::CTimer unit;
+                TimeHelper::CTimer siege;
+                TimeHelper::CTimer normal;
+                TimeHelper::CTimer self_destruction;
+                TimeHelper::CTimer force[6][4];
+                std::vector<TimeHelper::CTimer> skill[type_skill::num];
+
+                void reset()
+                {
+                    unit.abort();
+                    siege.abort();
+                    normal.abort();
+                    self_destruction.abort();
+                    for (auto& i : force)
+                    {
+                        for (auto& j : i)
+                            j.abort();
+                    }
+
+                    skill[type_skill::warrior].swap(std::vector<TimeHelper::CTimer>(4));
+                    skill[type_skill::ranger].swap(std::vector<TimeHelper::CTimer>(4));
+                    skill[type_skill::class_skill].swap(std::vector<TimeHelper::CTimer>(3));
+                }
+            };
+
+            struct _move_info
+            {
+                ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastMove;
+                TimeHelper::CTimer m_timerWarning;
+                float m_fLastSpeed;
+                int m_nCountMove;
+                int m_nCountWarning;
+
+                void reset()
+                {
+                    m_nCountMove = 0;
+                    m_nCountWarning = 0;
+                    m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+                    m_timerWarning.abort();
+                }
+            };
         }
     }
 }

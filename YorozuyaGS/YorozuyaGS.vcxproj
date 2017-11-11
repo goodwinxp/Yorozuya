@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
+    <ClInclude Include="..\Common\Helpers\TimeHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\zip.h" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
@@ -212,6 +213,7 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PlayerEx.cpp" />
+    <ClCompile Include="PlayerEx_AttackDelay.cpp" />
     <ClCompile Include="PlayerEx_Move.cpp" />
     <ClCompile Include="PlayerMove.cpp" />
     <ClCompile Include="PlayerPvpOrderView.cpp" />
