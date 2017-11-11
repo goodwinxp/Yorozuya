@@ -13,19 +13,15 @@ namespace GameServer
     {
         void CTrap::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CTrap::SendMsg_Attack, &CTrap::SendMsg_Attack);
-            core.set_hook(&ATF::CTrap::RecvKillMessage, &CTrap::RecvKillMessage);
-            core.set_hook(&ATF::CTrap::SendMsg_FixPosition, &CTrap::SendMsg_FixPosition);
+            enable_hook(&ATF::CTrap::SendMsg_Attack, &CTrap::SendMsg_Attack);
+            enable_hook(&ATF::CTrap::RecvKillMessage, &CTrap::RecvKillMessage);
+            enable_hook(&ATF::CTrap::SendMsg_FixPosition, &CTrap::SendMsg_FixPosition);
             
         }
 
         void CTrap::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CTrap::SendMsg_Attack);
-            core.unset_hook(&ATF::CTrap::RecvKillMessage);
-            core.unset_hook(&ATF::CTrap::SendMsg_FixPosition);
+            cleanup_all_hook();
         }
 
         ModuleName_t CTrap::get_name()

@@ -19,7 +19,7 @@ namespace GameServer
         void CUpdateGeneral::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CMainThread::_db_Update_General, &CUpdateGeneral::_db_Update_General);
+            enable_hook(&ATF::CMainThread::_db_Update_General, &CUpdateGeneral::_db_Update_General);
         }
 
         void CUpdateGeneral::unload()

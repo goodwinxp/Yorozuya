@@ -13,8 +13,8 @@ namespace GameServer
         void CChatSystem::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
-            core.set_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
+            enable_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
+            enable_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
         }
 
         void CChatSystem::unload()

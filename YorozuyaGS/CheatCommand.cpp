@@ -11,7 +11,7 @@ namespace GameServer
         void CCheatCommand::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
+            enable_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
         }
 
         void CCheatCommand::unload()

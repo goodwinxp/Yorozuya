@@ -19,15 +19,15 @@ namespace GameServer
         void CViewInvisible::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(
+            enable_hook(
                 (void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport, 
                 &CViewInvisible::CGameObject__CircleReport);
 
-            core.set_hook(&CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
-            core.set_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
-            core.set_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
-            core.set_hook(&CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
-            core.set_hook(&CPlayer::SendMsg_OtherShapeAll, &CViewInvisible::CPlayer__SendMsg_OtherShapeAll);
+            enable_hook(&CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
+            enable_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
+            enable_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
+            enable_hook(&CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
+            enable_hook(&CPlayer::SendMsg_OtherShapeAll, &CViewInvisible::CPlayer__SendMsg_OtherShapeAll);
         }
 
         void CViewInvisible::unload()

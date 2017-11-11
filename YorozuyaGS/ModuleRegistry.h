@@ -1,7 +1,9 @@
 #pragma once
 
-#include <map>
+#include <unordered_map>
+#include <unordered_set>
 #include <filesystem>
+#include <ATF.hpp>
 #include "../Common/Helpers/SingletonHelper.hpp"
 #include "../Common/Interfaces/ModuleInterface.h"
 
@@ -30,7 +32,7 @@ namespace GameServer
 
     private:
         _STD mutex m_mtxMap;
-        _STD map<ModuleName_t, Module_ptr> m_mapModules;
+        _STD unordered_map<ModuleName_t, Module_ptr> m_mapModules;
     };
 
     #pragma optimize("", off)
@@ -43,7 +45,29 @@ namespace GameServer
             (void)objModuleRegister;
         }
 
+    protected:
+        template <typename T1, typename T2>
+        inline bool enable_hook(T1 pTarget, T2 pDetour)
+        {
+            auto& core = ATF::CATFCore::get_instance();
+            bool result = core.set_hook(pTarget, pDetour);
+            if (result)
+                m_setEnabledHook.insert(ATF::cast_pointer_function(pTarget));
+
+            return result;
+        }
+
+        void cleanup_all_hook() const
+        {
+            auto& core = ATF::CATFCore::get_instance();
+            for (auto& p : m_setEnabledHook)
+            {
+                core.unset_hook(p);
+            }
+        }
     private:
+        _STD unordered_set<LPVOID> m_setEnabledHook;
+
         struct exec_register 
         {
             exec_register() 

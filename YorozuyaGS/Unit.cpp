@@ -11,7 +11,7 @@ namespace GameServer
         void CUnit::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&CPlayer::pc_UnitDeliveryRequest, &CUnit::pc_UnitDeliveryRequest);
+            enable_hook(&CPlayer::pc_UnitDeliveryRequest, &CUnit::pc_UnitDeliveryRequest);
         }
 
         void CUnit::unload()

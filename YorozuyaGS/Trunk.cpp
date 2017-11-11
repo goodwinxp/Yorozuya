@@ -13,12 +13,12 @@ namespace GameServer
         void CTrunk::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPlayer::pc_TrunkAlterItemSlotRequest, &CTrunk::pc_TrunkAlterItemSlotRequest);
-            core.set_hook(&ATF::CPlayer::pc_TrunkResDivision, &CTrunk::pc_TrunkResDivision);
-            core.set_hook(&ATF::CPlayer::pc_TrunkPotionDivision, &CTrunk::pc_TrunkPotionDivision);
-            core.set_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest, &CTrunk::pc_TrunkIoMergeRequest);
-            core.set_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest, &CTrunk::pc_TrunkIoMoveRequest);
-            core.set_hook(&ATF::CPlayer::pc_TrunkIoSwapRequest, &CTrunk::pc_TrunkIoSwapRequest);
+            enable_hook(&ATF::CPlayer::pc_TrunkAlterItemSlotRequest, &CTrunk::pc_TrunkAlterItemSlotRequest);
+            enable_hook(&ATF::CPlayer::pc_TrunkResDivision, &CTrunk::pc_TrunkResDivision);
+            enable_hook(&ATF::CPlayer::pc_TrunkPotionDivision, &CTrunk::pc_TrunkPotionDivision);
+            enable_hook(&ATF::CPlayer::pc_TrunkIoMergeRequest, &CTrunk::pc_TrunkIoMergeRequest);
+            enable_hook(&ATF::CPlayer::pc_TrunkIoMoveRequest, &CTrunk::pc_TrunkIoMoveRequest);
+            enable_hook(&ATF::CPlayer::pc_TrunkIoSwapRequest, &CTrunk::pc_TrunkIoSwapRequest);
         }
 
         void CTrunk::unload()

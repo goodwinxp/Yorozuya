@@ -11,18 +11,14 @@ namespace GameServer
     {
         void CNetworkEX::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CNetworkEX::DTradeAskRequest, &CNetworkEX::DTradeAskRequest);
-            core.set_hook(&ATF::CNetworkEX::Apex_R, &CNetworkEX::Apex_R);
-            core.set_hook(&ATF::CNetworkEX::Apex_T, &CNetworkEX::Apex_T);
+            enable_hook(&ATF::CNetworkEX::DTradeAskRequest, &CNetworkEX::DTradeAskRequest);
+            enable_hook(&ATF::CNetworkEX::Apex_R, &CNetworkEX::Apex_R);
+            enable_hook(&ATF::CNetworkEX::Apex_T, &CNetworkEX::Apex_T);
         }
 
         void CNetworkEX::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CNetworkEX::DTradeAskRequest);
-            core.unset_hook(&ATF::CNetworkEX::Apex_R);
-            core.unset_hook(&ATF::CNetworkEX::Apex_T);
+            cleanup_all_hook();
         }
 
         ModuleName_t CNetworkEX::get_name()

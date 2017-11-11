@@ -12,8 +12,8 @@ namespace GameServer
         void CAutominePersonal::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&AutominePersonal::send_attacked, &CAutominePersonal::send_attacked);
-            core.set_hook(&AutominePersonal::sub_battery, &CAutominePersonal::sub_battery);
+            enable_hook(&AutominePersonal::send_attacked, &CAutominePersonal::send_attacked);
+            enable_hook(&AutominePersonal::sub_battery, &CAutominePersonal::sub_battery);
         }
 
         void CAutominePersonal::unload()

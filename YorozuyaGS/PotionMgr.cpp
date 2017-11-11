@@ -21,14 +21,12 @@ namespace GameServer
     {
         void CPotionMgr::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CPotionMgr::PreCheckPotion, &CPotionMgr::PreCheckPotion);
+            enable_hook(&ATF::CPotionMgr::PreCheckPotion, &CPotionMgr::PreCheckPotion);
         }
 
         void CPotionMgr::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CPotionMgr::PreCheckPotion);
+            cleanup_all_hook();
         }
 
         ModuleName_t CPotionMgr::get_name()

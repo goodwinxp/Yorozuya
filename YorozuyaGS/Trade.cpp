@@ -15,7 +15,7 @@ namespace GameServer
         void CTrade::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&CPlayer::pc_DTradeOKRequest, &CTrade::pc_DTradeOKRequest);
+            enable_hook(&CPlayer::pc_DTradeOKRequest, &CTrade::pc_DTradeOKRequest);
         }
 
         void CTrade::unload()

@@ -19,49 +19,30 @@ namespace GameServer
         {
             init_player_ex();
 
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CPlayer::Load, &CPlayer::Load);
-            core.set_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
-            core.set_hook(&ATF::CPlayer::NetClose, &CPlayer::NetClose);
-            core.set_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
-            core.set_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
-            core.set_hook(&ATF::CPlayer::UpdatePvpOrderView, &CPlayer::UpdatePvpOrderView);
-            core.set_hook(&ATF::CPlayer::pc_MovePortal, &CPlayer::pc_MovePortal);
-            core.set_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
-            core.set_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
-            core.set_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
-            core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
-            core.set_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
-            core.set_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
-            core.set_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
-            core.set_hook(&ATF::CPlayer::pc_ExchangeItem, &CPlayer::pc_ExchangeItem);
+            enable_hook(&ATF::CPlayer::Load, &CPlayer::Load);
+            enable_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
+            enable_hook(&ATF::CPlayer::NetClose, &CPlayer::NetClose);
+            enable_hook(&ATF::CPlayer::CalcPvP, &CPlayer::CalcPvP);
+            enable_hook(&ATF::CPlayer::CalPvpTempCash, &CPlayer::CalPvpTempCash);
+            enable_hook(&ATF::CPlayer::UpdatePvpOrderView, &CPlayer::UpdatePvpOrderView);
+            enable_hook(&ATF::CPlayer::pc_MovePortal, &CPlayer::pc_MovePortal);
+            enable_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
+            enable_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
+            enable_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
+            enable_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
+            enable_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
+            enable_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
+            enable_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
+            enable_hook(&ATF::CPlayer::pc_ExchangeItem, &CPlayer::pc_ExchangeItem);
 
-            core.set_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
-            core.set_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
-            core.set_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
+            enable_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
+            enable_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
+            enable_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
         }
 
         void CPlayer::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CPlayer::Load);
-            core.unset_hook(&ATF::CPlayer::Loop);
-            core.unset_hook(&ATF::CPlayer::NetClose);
-            core.unset_hook(&ATF::CPlayer::CalcPvP);
-            core.unset_hook(&ATF::CPlayer::CalPvpTempCash);
-            core.unset_hook(&ATF::CPlayer::UpdatePvpOrderView);
-            core.unset_hook(&ATF::CPlayer::pc_MovePortal);
-            core.unset_hook(&ATF::CPlayer::pc_MakeTrapRequest);
-            core.unset_hook(&ATF::CPlayer::pc_MakeTowerRequest);
-            core.unset_hook(&ATF::CPlayer::pc_GestureRequest);
-            core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
-            core.unset_hook(&ATF::CPlayer::pc_CharacterRenameCheck);
-            core.unset_hook(&ATF::CPlayer::pc_GotoBasePortalRequest);
-            core.unset_hook(&ATF::CPlayer::pc_ThrowStorageItem);
-            core.unset_hook(&ATF::CPlayer::pc_ExchangeItem);
-            core.unset_hook(&ATF::CPlayer::pc_MoveNext);
-            core.unset_hook(&ATF::CPlayer::pc_RealMovPos);
-            core.unset_hook(&ATF::CPlayer::pc_MoveStop);
+            cleanup_all_hook();
         }
 
         ModuleName_t CPlayer::get_name()

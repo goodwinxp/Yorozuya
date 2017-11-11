@@ -9,38 +9,24 @@ namespace GameServer
     {
         void CReadSystemPass::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::Global::AfxWinMain, &CReadSystemPass::AfxWinMain);
-            core.set_hook(&ATF::CNationSettingDataKR::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataGB::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataID::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataJP::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataPH::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataRU::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataBR::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataTW::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataCN::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataUS::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataES::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
-            core.set_hook(&ATF::CNationSettingDataTH::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::Global::AfxWinMain, &CReadSystemPass::AfxWinMain);
+            enable_hook(&ATF::CNationSettingDataKR::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataGB::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataID::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataJP::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataPH::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataRU::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataBR::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataTW::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataCN::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataUS::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataES::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
+            enable_hook(&ATF::CNationSettingDataTH::ReadSystemPass, &CReadSystemPass::ReadSystemPass);
         }
 
         void CReadSystemPass::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::Global::AfxWinMain);
-            core.unset_hook(&ATF::CNationSettingDataKR::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataGB::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataID::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataJP::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataPH::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataRU::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataBR::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataTW::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataCN::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataUS::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataES::ReadSystemPass);
-            core.unset_hook(&ATF::CNationSettingDataTH::ReadSystemPass);
+            cleanup_all_hook();
         }
 
         ModuleName_t CReadSystemPass::get_name()

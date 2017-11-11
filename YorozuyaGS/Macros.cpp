@@ -12,8 +12,8 @@ namespace GameServer
         void CMacros::load()
         {
             auto& core = CATFCore::get_instance();
-            core.set_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
-            core.set_hook(&CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
+            enable_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
+            enable_hook(&CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
         }
 
         void CMacros::unload()
