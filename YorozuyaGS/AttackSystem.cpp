@@ -16,32 +16,25 @@ namespace GameServer
 
         void CAttackSystem::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPlayer::_pre_check_skill_attack, &CAttackSystem::_pre_check_skill_attack);
-            core.set_hook(&ATF::CPlayer::skill_process, &CAttackSystem::skill_process);
-            core.set_hook(&ATF::CPlayer::pc_ForceRequest, &CAttackSystem::pc_ForceRequest);
-            core.set_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
-            core.set_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
-            core.set_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
-            core.set_hook(&ATF::CPlayer::make_gen_attack_param, &CAttackSystem::make_gen_attack_param);
-            core.set_hook(&ATF::CPlayer::make_siege_attack_param, &CAttackSystem::make_siege_attack_param);
-            core.set_hook(&ATF::CPlayer::make_skill_attack_param, &CAttackSystem::make_skill_attack_param);
-            core.set_hook(&ATF::CPlayer::make_wpactive_skill_attack_param, &CAttackSystem::make_wpactive_skill_attack_param);
+            enable_hook(&ATF::CPlayer::skill_process, &CAttackSystem::skill_process);
+            enable_hook(&ATF::CPlayer::_pre_check_skill_attack, &CAttackSystem::_pre_check_skill_attack);
+            enable_hook(&ATF::CPlayer::_pre_check_force_attack, &CAttackSystem::_pre_check_force_attack);
+            enable_hook(&ATF::CPlayer::_pre_check_normal_attack, &CAttackSystem::_pre_check_normal_attack);
+            enable_hook(&ATF::CPlayer::_pre_check_siege_attack, &CAttackSystem::_pre_check_siege_attack);
+            enable_hook(&ATF::CPlayer::_pre_check_unit_attack, &CAttackSystem::_pre_check_unit_attack);
+            enable_hook(&ATF::CPlayer::pc_ForceRequest, &CAttackSystem::pc_ForceRequest);
+            enable_hook(&ATF::CPlayer::pc_ThrowSkillRequest, &CAttackSystem::pc_ThrowSkillRequest);
+            enable_hook(&ATF::CPlayer::pc_ThrowUnitRequest, &CAttackSystem::pc_ThrowUnitRequest);
+            enable_hook(&ATF::CPlayer::IsBulletValidity, &CAttackSystem::IsBulletValidity);
+            enable_hook(&ATF::CPlayer::make_gen_attack_param, &CAttackSystem::make_gen_attack_param);
+            enable_hook(&ATF::CPlayer::make_siege_attack_param, &CAttackSystem::make_siege_attack_param);
+            enable_hook(&ATF::CPlayer::make_skill_attack_param, &CAttackSystem::make_skill_attack_param);
+            enable_hook(&ATF::CPlayer::make_wpactive_skill_attack_param, &CAttackSystem::make_wpactive_skill_attack_param);
         }
 
         void CAttackSystem::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CPlayer::_pre_check_skill_attack);
-            core.unset_hook(&ATF::CPlayer::skill_process);
-            core.unset_hook(&ATF::CPlayer::pc_ForceRequest);
-            core.unset_hook(&ATF::CPlayer::pc_ThrowSkillRequest);
-            core.unset_hook(&ATF::CPlayer::pc_ThrowUnitRequest);
-            core.unset_hook(&ATF::CPlayer::IsBulletValidity);
-            core.unset_hook(&ATF::CPlayer::make_gen_attack_param);
-            core.unset_hook(&ATF::CPlayer::make_siege_attack_param);
-            core.unset_hook(&ATF::CPlayer::make_skill_attack_param);
-            core.unset_hook(&ATF::CPlayer::make_wpactive_skill_attack_param);
+            cleanup_all_hook();
         }
 
         ModuleName_t CAttackSystem::get_name()
@@ -105,6 +98,64 @@ namespace GameServer
                 wEffBtSerial,
                 ppEffBtProp,
                 ppfldEffBt);
+        }
+
+        int WINAPIV CAttackSystem::_pre_check_force_attack(
+            ATF::CPlayer * pPlayer, 
+            ATF::CCharacter * pDst, 
+            float * pfTarPos,
+            uint16_t wForceItemSerial, 
+            ATF::_force_fld ** ppForceFld, 
+            ATF::_STORAGE_LIST::_db_con ** ppForceItem, 
+            uint16_t * pdwDecPoint, 
+            uint16_t wEffBtSerial, 
+            ATF::_STORAGE_LIST::_db_con ** ppEffBtProp, 
+            ATF::_BulletItem_fld ** ppfldEffBt, 
+            ATF::Info::CPlayer_pre_check_force_attack1364_ptr next)
+        {
+            return next(pPlayer, pDst, pfTarPos, wForceItemSerial, ppForceFld, ppForceItem, pdwDecPoint, wEffBtSerial, ppEffBtProp, ppfldEffBt);
+        }
+
+        int WINAPIV CAttackSystem::_pre_check_normal_attack(
+            ATF::CPlayer * pPlayer,
+            ATF::CCharacter * pDst,
+            uint16_t wBulletSerial,
+            bool bCount,
+            ATF::_STORAGE_LIST::_db_con ** ppBulletProp,
+            ATF::_BulletItem_fld ** ppfldBullet,
+            uint16_t wEffBtSerial,
+            ATF::_STORAGE_LIST::_db_con ** ppEffBtProp,
+            ATF::_BulletItem_fld ** ppfldEffBt,
+            ATF::Info::CPlayer_pre_check_normal_attack1370_ptr next)
+        {
+            return next(pPlayer, pDst, wBulletSerial, bCount, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBtProp, ppfldEffBt);
+        }
+
+        int WINAPIV CAttackSystem::_pre_check_siege_attack(
+            ATF::CPlayer * pPlayer,
+            ATF::CCharacter * pDst,
+            float * pfAttackPos,
+            uint16_t wBulletSerial,
+            ATF::_STORAGE_LIST::_db_con ** ppBulletProp,
+            ATF::_BulletItem_fld ** ppfldBullet,
+            uint16_t wEffBtSerial,
+            ATF::_STORAGE_LIST::_db_con ** ppEffBulletProp,
+            ATF::_BulletItem_fld ** ppfldEffBullet,
+            ATF::Info::CPlayer_pre_check_siege_attack1372_ptr next)
+        {
+            return next(pPlayer, pDst, pfAttackPos, wBulletSerial, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBulletProp, ppfldEffBullet);
+        }
+
+        int WINAPIV CAttackSystem::_pre_check_unit_attack(
+            ATF::CPlayer * pPlayer,
+            ATF::CCharacter * pDst,
+            char byWeaponPart,
+            ATF::_UnitPart_fld ** ppWeaponFld,
+            ATF::_UnitBullet_fld ** ppBulletFld,
+            ATF::_unit_bullet_param ** ppBulletParam,
+            ATF::Info::CPlayer_pre_check_unit_attack1380_ptr next)
+        {
+            return next(pPlayer, pDst, byWeaponPart, ppWeaponFld, ppBulletFld, ppBulletParam);
         }
 
         char WINAPIV CAttackSystem::skill_process(

@@ -54,6 +54,52 @@ namespace GameServer
                 ATF::_BulletItem_fld** ppfldEffBt,
                 ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next);
 
+            static int WINAPIV _pre_check_force_attack(
+                ATF::CPlayer *pPlayer,
+                ATF::CCharacter* pDst,
+                float* pfTarPos,
+                uint16_t wForceItemSerial,
+                ATF::_force_fld** ppForceFld,
+                ATF::_STORAGE_LIST::_db_con** ppForceItem,
+                uint16_t* pdwDecPoint,
+                uint16_t wEffBtSerial,
+                ATF::_STORAGE_LIST::_db_con** ppEffBtProp,
+                ATF::_BulletItem_fld** ppfldEffBt,
+                ATF::Info::CPlayer_pre_check_force_attack1364_ptr next);
+
+            static int WINAPIV _pre_check_normal_attack(
+                ATF::CPlayer *pPlayer,
+                ATF::CCharacter* pDst,
+                uint16_t wBulletSerial,
+                bool bCount,
+                ATF::_STORAGE_LIST::_db_con** ppBulletProp,
+                ATF::_BulletItem_fld** ppfldBullet,
+                uint16_t wEffBtSerial,
+                ATF::_STORAGE_LIST::_db_con** ppEffBtProp,
+                ATF::_BulletItem_fld** ppfldEffBt,
+                ATF::Info::CPlayer_pre_check_normal_attack1370_ptr next);
+
+            static int WINAPIV _pre_check_siege_attack(
+                ATF::CPlayer *pPlayer,
+                ATF::CCharacter* pDst,
+                float* pfAttackPos,
+                uint16_t wBulletSerial,
+                ATF::_STORAGE_LIST::_db_con** ppBulletProp,
+                ATF::_BulletItem_fld** ppfldBullet,
+                uint16_t wEffBtSerial,
+                ATF::_STORAGE_LIST::_db_con** ppEffBulletProp,
+                ATF::_BulletItem_fld** ppfldEffBullet,
+                ATF::Info::CPlayer_pre_check_siege_attack1372_ptr next);
+
+            static int WINAPIV _pre_check_unit_attack(
+                ATF::CPlayer *pPlayer,
+                ATF::CCharacter* pDst,
+                char byWeaponPart,
+                ATF::_UnitPart_fld** ppWeaponFld,
+                ATF::_UnitBullet_fld** ppBulletFld,
+                ATF::_unit_bullet_param** ppBulletParam,
+                ATF::Info::CPlayer_pre_check_unit_attack1380_ptr next);
+
             static char WINAPIV skill_process(
                 ATF::CPlayer* pPlayer,
                 int nEffectCode,
