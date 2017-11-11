@@ -14,6 +14,7 @@ namespace GameServer
             core.set_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle, &CGuild::ManageAcceptORRefuseGuildBattle);
             core.set_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest, &CGuild::pc_GuildRoomEnterRequest);
             core.set_hook(&ATF::CPlayer::pc_GuildRoomOutRequest, &CGuild::pc_GuildRoomOutRequest);
+            core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CGuild::pc_GuildManageRequest);
             core.set_hook(&ATF::CGuild::ManageExpulseMember, &CGuild::ManageExpulseMember);
         }
 
@@ -23,6 +24,7 @@ namespace GameServer
             core.unset_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle);
             core.unset_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest);
             core.unset_hook(&ATF::CPlayer::pc_GuildRoomOutRequest);
+            core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
             core.unset_hook(&ATF::CGuild::ManageExpulseMember);
         }
 
@@ -313,6 +315,25 @@ namespace GameServer
             }
 
             return next(pGuild, dwMemberSerial);
+        }
+
+        void WINAPIV CGuild::pc_GuildManageRequest(
+            ATF::CPlayer* pPlayer,
+            char byType,
+            unsigned int dwDst,
+            unsigned int dwObj1,
+            unsigned int dwObj2,
+            unsigned int dwObj3,
+            ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next)
+        {
+            if (pPlayer->m_Param.m_pGuild)
+            {
+                next(pPlayer, byType, dwDst, dwObj1, dwObj2, dwObj3);
+            }
+            else
+            {
+                pPlayer->SendMsg_GuildManageResult(-53);
+            }
         }
     }
 }
