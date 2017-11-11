@@ -146,11 +146,10 @@ namespace GameServer
             };
 
             auto pathZip = fs::path(pathFileDump).replace_extension(L"zip");
-            HZIP hZip = nullptr;
 
             do
             {
-                hZip = CreateZip(pathZip.generic_wstring().c_str(), 0);
+                HZIP hZip = CreateZip(pathZip.generic_wstring().c_str(), 0);
                 if (hZip == nullptr)
                     break;
 
@@ -168,13 +167,13 @@ namespace GameServer
                     }
                 }
 
+                CloseZip(hZip);
+
                 if (count != vecRequiredFiles.size())
                     break;
 
                 fs::remove(pathFileDump);
             } while (false);
-
-            CloseZip(hZip);
         }
 
         LONG WINAPI CCrashDump::UnhandledExceptionFilter(::_EXCEPTION_POINTERS * ExceptionInfo)
