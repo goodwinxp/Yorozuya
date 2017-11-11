@@ -14,14 +14,12 @@ namespace GameServer
 
         void CTrade::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&CPlayer::pc_DTradeOKRequest, &CTrade::pc_DTradeOKRequest);
         }
 
         void CTrade::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&CPlayer::pc_DTradeOKRequest);
+            cleanup_all_hook();
         }
 
         ModuleName_t CTrade::get_name()

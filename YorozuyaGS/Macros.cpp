@@ -11,16 +11,13 @@ namespace GameServer
 
         void CMacros::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
             enable_hook(&CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
         }
 
         void CMacros::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&CMainThread::_db_Update_MacroData);
-            core.unset_hook(&CMainThread::_db_Update_CryMsg);
+            cleanup_all_hook();
         }
 
         ModuleName_t CMacros::get_name()

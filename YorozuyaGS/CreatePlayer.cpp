@@ -12,14 +12,12 @@ namespace GameServer
 
         void CCreatePlayer::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&CUserDB::Insert_Char_Request, &CCreatePlayer::Insert_Char_Request);
         }
 
         void CCreatePlayer::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&CUserDB::Insert_Char_Request);
+            cleanup_all_hook();
         }
 
         ModuleName_t CCreatePlayer::get_name()

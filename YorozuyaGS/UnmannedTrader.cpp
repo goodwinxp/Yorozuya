@@ -16,7 +16,6 @@ namespace GameServer
 
         void CUnmannedTrader::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteBuy, &CUnmannedTrader::CompleteBuy);
             enable_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteReRegist, &CUnmannedTrader::CompleteReRegist);
             enable_hook(&ATF::CUnmannedTraderUserInfo::ReRegist, &CUnmannedTrader::ReRegist);
@@ -26,12 +25,7 @@ namespace GameServer
 
         void CUnmannedTrader::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteBuy);
-            core.unset_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteReRegist);
-            core.unset_hook(&ATF::CUnmannedTraderUserInfo::ReRegist);
-            core.unset_hook(&ATF::CUnmannedTraderController::UpdateReRegist);
-            core.unset_hook(&ATF::CUnmannedTraderUserInfo::NotifyRegistItem);
+            cleanup_all_hook();
         }
 
         ModuleName_t CUnmannedTrader::get_name()

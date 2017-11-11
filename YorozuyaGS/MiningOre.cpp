@@ -13,14 +13,12 @@ namespace GameServer
 
         void CMiningOre::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&CPlayer::pc_MineStart, &CMiningOre::pc_MineStart);
         }
 
         void CMiningOre::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&CPlayer::pc_MineStart);
+            cleanup_all_hook();
         }
 
         ModuleName_t CMiningOre::get_name()

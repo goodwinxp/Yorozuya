@@ -18,7 +18,6 @@ namespace GameServer
 
         void CEquip::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&ATF::CPlayer::IsEffectableEquip, &CEquip::IsEffectableEquip);
             enable_hook(&ATF::CNetworkEX::SetItemCheckRequest, &CEquip::SetItemCheckRequest);
             enable_hook(&ATF::CPlayer::Emb_AddStorage, &CEquip::Emb_AddStorage);
@@ -28,12 +27,7 @@ namespace GameServer
 
         void CEquip::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CPlayer::IsEffectableEquip);
-            core.unset_hook(&ATF::CNetworkEX::SetItemCheckRequest);
-            core.unset_hook(&ATF::CPlayer::Emb_AddStorage);
-            core.unset_hook(&ATF::CPlayer::Emb_DelStorage);
-            core.unset_hook(&ATF::CPlayer::pc_SetItemCheckRequest);
+            cleanup_all_hook();
         }
 
         ModuleName_t CEquip::get_name()

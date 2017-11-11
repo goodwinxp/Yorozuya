@@ -18,11 +18,9 @@ namespace GameServer
 
         void CViewInvisible::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(
                 (void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport, 
                 &CViewInvisible::CGameObject__CircleReport);
-
             enable_hook(&CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
             enable_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
             enable_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
@@ -32,13 +30,7 @@ namespace GameServer
 
         void CViewInvisible::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook((void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport);
-            core.unset_hook(&CPlayer::SenseState);
-            core.unset_hook(&CPlayer::SendMsg_FixPosition);
-            core.unset_hook(&CPlayer::SendMsg_RealMovePoint);
-            core.unset_hook(&CPlayer::SendMsg_OtherShapePart);
-            core.unset_hook(&CPlayer::SendMsg_OtherShapeAll);
+            cleanup_all_hook();
         }
 
         ModuleName_t CViewInvisible::get_name()

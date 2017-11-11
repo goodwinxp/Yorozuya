@@ -16,7 +16,6 @@ namespace GameServer
 
         void CPerformance::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&ATF::Global::GetSqrt, &CPerformance::GetSqrt);
             enable_hook(&ATF::Global::Get3DSqrt, &CPerformance::Get3DSqrt);
             enable_hook((float(*)(float* Pos, float* Tar))&ATF::Global::GetYAngle, &CPerformance::GetYAngle);
@@ -25,11 +24,7 @@ namespace GameServer
 
         void CPerformance::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::Global::GetSqrt);
-            core.unset_hook(&ATF::Global::Get3DSqrt);
-            core.unset_hook((float(*)(float* Pos, float* Tar))&ATF::Global::GetYAngle);
-            core.unset_hook(&ATF::Global::GetDist);
+            cleanup_all_hook();
         }
 
         ModuleName_t CPerformance::get_name()

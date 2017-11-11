@@ -113,7 +113,17 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt, 
             ATF::Info::CPlayer_pre_check_force_attack1364_ptr next)
         {
-            return next(pPlayer, pDst, pfTarPos, wForceItemSerial, ppForceFld, ppForceItem, pdwDecPoint, wEffBtSerial, ppEffBtProp, ppfldEffBt);
+            return next(
+                pPlayer,
+                pDst,
+                pfTarPos,
+                wForceItemSerial,
+                ppForceFld,
+                ppForceItem,
+                pdwDecPoint,
+                wEffBtSerial,
+                ppEffBtProp,
+                ppfldEffBt);
         }
 
         int WINAPIV CAttackSystem::_pre_check_normal_attack(
@@ -128,7 +138,16 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt,
             ATF::Info::CPlayer_pre_check_normal_attack1370_ptr next)
         {
-            return next(pPlayer, pDst, wBulletSerial, bCount, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBtProp, ppfldEffBt);
+            return next(
+                pPlayer,
+                pDst,
+                wBulletSerial,
+                bCount,
+                ppBulletProp,
+                ppfldBullet,
+                wEffBtSerial,
+                ppEffBtProp,
+                ppfldEffBt);
         }
 
         int WINAPIV CAttackSystem::_pre_check_siege_attack(
@@ -143,7 +162,17 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBullet,
             ATF::Info::CPlayer_pre_check_siege_attack1372_ptr next)
         {
-            return next(pPlayer, pDst, pfAttackPos, wBulletSerial, ppBulletProp, ppfldBullet, wEffBtSerial, ppEffBulletProp, ppfldEffBullet);
+
+            return next(
+                pPlayer,
+                pDst,
+                pfAttackPos,
+                wBulletSerial,
+                ppBulletProp,
+                ppfldBullet,
+                wEffBtSerial,
+                ppEffBulletProp,
+                ppfldEffBullet);
         }
 
         int WINAPIV CAttackSystem::_pre_check_unit_attack(
@@ -155,7 +184,13 @@ namespace GameServer
             ATF::_unit_bullet_param ** ppBulletParam,
             ATF::Info::CPlayer_pre_check_unit_attack1380_ptr next)
         {
-            return next(pPlayer, pDst, byWeaponPart, ppWeaponFld, ppBulletFld, ppBulletParam);
+            return next(
+                pPlayer,
+                pDst,
+                byWeaponPart,
+                ppWeaponFld,
+                ppBulletFld,
+                ppBulletParam);
         }
 
         char WINAPIV CAttackSystem::skill_process(

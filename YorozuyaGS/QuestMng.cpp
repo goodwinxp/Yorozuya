@@ -13,14 +13,12 @@ namespace GameServer
 
         void CQuestMng::load()
         {
-            auto& core = CATFCore::get_instance();
             enable_hook(&CPlayer::Emb_CreateNPCQuest, &CQuestMng::Emb_CreateNPCQuest);
         }
 
         void CQuestMng::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&CPlayer::Emb_CreateNPCQuest);
+            cleanup_all_hook();
         }
 
         ModuleName_t CQuestMng::get_name()
