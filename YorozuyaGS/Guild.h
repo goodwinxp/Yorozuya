@@ -41,6 +41,15 @@ namespace GameServer
                 ATF::CGuild *pGuild,
                 unsigned int dwMemberSerial,
                 ATF::Info::CGuildManageExpulseMember84_ptr next);
+
+            static void WINAPIV pc_GuildManageRequest(
+                ATF::CPlayer *pPlayer,
+                char byType,
+                unsigned int dwDst,
+                unsigned int dwObj1,
+                unsigned int dwObj2,
+                unsigned int dwObj3,
+                ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next);
         };
     };
 };
