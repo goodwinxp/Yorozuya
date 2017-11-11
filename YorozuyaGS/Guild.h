@@ -36,6 +36,11 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 ATF::_guildroom_out_request_clzo* pProtocol,
                 ATF::Info::CPlayerpc_GuildRoomOutRequest1757_ptr next);
+
+            static char WINAPIV ManageExpulseMember(
+                ATF::CGuild *pGuild,
+                unsigned int dwMemberSerial,
+                ATF::Info::CGuildManageExpulseMember84_ptr next);
         };
     };
 };
