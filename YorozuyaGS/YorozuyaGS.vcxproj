@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
+    <ClInclude Include="..\Common\Helpers\zip.h" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
     <ClInclude Include="AttackSystemError.h" />
@@ -181,6 +182,7 @@
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\Helpers\zip.cpp" />
     <ClCompile Include="AttackSystem.cpp" />
     <ClCompile Include="AttackSystem_CalcPoint.cpp" />
     <ClCompile Include="AutominePersonal.cpp" />

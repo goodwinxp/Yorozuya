@@ -240,6 +240,9 @@
     <ClCompile Include="Performance.cpp">
       <Filter>Implementation\Extension\Performance</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\Helpers\zip.cpp">
+      <Filter>Common\Helpers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -358,6 +361,9 @@
     </ClInclude>
     <ClInclude Include="Performance.h">
       <Filter>Implementation\Extension\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Helpers\zip.h">
+      <Filter>Common\Helpers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
