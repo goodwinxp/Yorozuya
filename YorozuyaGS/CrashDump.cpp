@@ -5,6 +5,9 @@
 #include <dbghelp.h>
 #pragma comment(lib, "dbghelp.lib")
 
+#include "..\Common\Helpers\zip.h"
+
+
 namespace GameServer
 {
     namespace Fixes
@@ -17,6 +20,24 @@ namespace GameServer
         UnhandledExceptionFilterPtr_t UnhandledExceptionFilter_next(nullptr);
         UnhandledExceptionFilterClbk_t UnhandledExceptionFilter_user(nullptr);
 
+        inline fs::path GetPathByHandle(HMODULE hModule)
+        {
+            TCHAR szPath[MAX_PATH] = {};
+            GetModuleFileName(hModule, szPath, _countof(szPath));
+            return fs::path(szPath);
+        }
+
+        inline fs::path GetGameServerExePath()
+        {
+            return GetPathByHandle(nullptr);
+        }
+
+        EXTERN_C IMAGE_DOS_HEADER __ImageBase;
+        inline fs::path GetDllPath()
+        {
+            return GetPathByHandle((HMODULE)&__ImageBase);
+        }
+
         void UnhandledExceptionFilter_wrapper(::_EXCEPTION_POINTERS * pExceptionInfo)
         {
             UnhandledExceptionFilter_user(pExceptionInfo, UnhandledExceptionFilter_next);
@@ -28,7 +49,7 @@ namespace GameServer
         CCrashDump::CCrashDump() 
         {
             HMODULE hKernel = GetModuleHandleW(L"kernel32.dll");
-            if (hKernel != NULL)
+            if (hKernel != nullptr)
             {
                 m_pSystemUnhandledFilter = GetProcAddress(hKernel, "UnhandledExceptionFilter");
 
@@ -86,10 +107,10 @@ namespace GameServer
                 pathFileDump.generic_wstring().c_str(),
                 GENERIC_WRITE,
                 0,
-                NULL,
+                nullptr,
                 CREATE_ALWAYS,
                 FILE_ATTRIBUTE_NORMAL,
-                NULL);
+                nullptr);
 
             if (hFile == INVALID_HANDLE_VALUE)
                 return;
@@ -99,16 +120,61 @@ namespace GameServer
             eInfo.ExceptionPointers = pExceptionInfo;
             eInfo.ClientPointers = FALSE;
 
-            MiniDumpWriteDump(
+            int type = MiniDumpNormal;
+            type |= MiniDumpWithDataSegs;
+            type |= MiniDumpFilterModulePaths;
+
+            BOOL bWriteDump = MiniDumpWriteDump(
                 GetCurrentProcess(),
                 GetCurrentProcessId(),
                 hFile,
-                MiniDumpWithDataSegs,
+                static_cast<_MINIDUMP_TYPE>(type),
                 &eInfo,
-                NULL,
-                NULL);
+                nullptr,
+                nullptr);
 
             CloseHandle(hFile);
+
+            if (bWriteDump != TRUE)
+                return;
+
+            _STD vector<fs::path> vecRequiredFiles {
+                pathFileDump,
+                GetGameServerExePath(),
+                GetDllPath(),
+                GetDllPath().replace_extension(L"pdb")
+            };
+
+            auto pathZip = fs::path(pathFileDump).replace_extension(L"zip");
+            HZIP hZip = nullptr;
+
+            do
+            {
+                hZip = CreateZip(pathZip.generic_wstring().c_str(), 0);
+                if (hZip == nullptr)
+                    break;
+
+                size_t count = 0;
+                ZRESULT hResult = ZR_OK;
+                for (auto& file : vecRequiredFiles)
+                {
+                    hResult = ZipAdd(
+                        hZip, file.filename().c_str(),
+                        file.generic_wstring().c_str());
+
+                    if (hResult == ZR_OK)
+                    {
+                        ++count;
+                    }
+                }
+
+                if (count != vecRequiredFiles.size())
+                    break;
+
+                fs::remove(pathFileDump);
+            } while (false);
+
+            CloseZip(hZip);
         }
 
         LONG WINAPI CCrashDump::UnhandledExceptionFilter(::_EXCEPTION_POINTERS * ExceptionInfo)
