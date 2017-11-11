@@ -14,6 +14,7 @@ namespace GameServer
             core.set_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle, &CGuild::ManageAcceptORRefuseGuildBattle);
             core.set_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest, &CGuild::pc_GuildRoomEnterRequest);
             core.set_hook(&ATF::CPlayer::pc_GuildRoomOutRequest, &CGuild::pc_GuildRoomOutRequest);
+            core.set_hook(&ATF::CGuild::ManageExpulseMember, &CGuild::ManageExpulseMember);
         }
 
         void CGuild::unload()
@@ -22,6 +23,7 @@ namespace GameServer
             core.unset_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle);
             core.unset_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest);
             core.unset_hook(&ATF::CPlayer::pc_GuildRoomOutRequest);
+            core.unset_hook(&ATF::CGuild::ManageExpulseMember);
         }
 
         ModuleName_t CGuild::get_name()
@@ -296,6 +298,21 @@ namespace GameServer
 
             if (byResult != 0)
                 pPlayer->SendMsg_GuildRoomOutResult(byResult, 0, 0, nullptr);
+        }
+
+        char WINAPIV CGuild::ManageExpulseMember(
+            ATF::CGuild * pGuild,
+            unsigned int dwMemberSerial,
+            ATF::Info::CGuildManageExpulseMember84_ptr next)
+        {
+            auto pInstance = ATF::GUILD_BATTLE::CNormalGuildBattleManager::Instance();
+            LPVOID pBattle = pInstance->GetBattleByGuildSerial(pGuild->m_dwSerial);
+            if (pBattle)
+            {
+                return 0x6e;
+            }
+
+            return next(pGuild, dwMemberSerial);
         }
     }
 }
