@@ -64,47 +64,87 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt,
             ATF::Info::CPlayer_pre_check_skill_attack1374_ptr next)
         {
-            if (!pSkillFld)
-                return error_attack_data;
+            int nResult = 0;
 
-            if (byEffectCode == effect_code_class)
+            do
             {
-                if (pPlayer->IsSiegeMode())
+                if (!pSkillFld)
                 {
-                    if (pSkillFld->m_nTempEffectType != 23)
-                        return error_attack_skill_lock;
-
-                    auto& RecordData = ATF::Global::g_MainThread->m_tblItemData[pPlayer->m_pSiegeItem->m_byTableCode];
-                    ATF::_SiegeKitItem_fld* item = (ATF::_SiegeKitItem_fld*)RecordData.GetRecord(pPlayer->m_pSiegeItem->m_wItemIndex);
-
-                    if (item->m_nLevelLim == 30 && pSkillFld->m_nLv != 0)
-                        return error_attack_skill_lock;
-
-                    if (item->m_nLevelLim == 40 && pSkillFld->m_nLv != 1)
-                        return error_attack_skill_lock;
+                    nResult = error_attack_data;
+                    break;
                 }
-                else if (pSkillFld->m_nTempEffectType == 23)
+
+                if (byEffectCode == effect_code_class)
                 {
-                    return error_attack_skill_lock;
-                }
-            }
+                    if (pPlayer->IsSiegeMode())
+                    {
+                        if (pSkillFld->m_nTempEffectType != 23)
+                        {
+                            nResult = error_attack_skill_lock;
+                            break;
+                        }
 
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            // todo : process delay
-            return next(
-                pPlayer,
-                pDst,
-                pfAttackPos,
-                byEffectCode,
-                pSkillFld,
-                wBulletSerial,
-                ppBulletProp,
-                ppfldBullet,
-                nEffectGroup,
-                pdwDecPoint,
-                wEffBtSerial,
-                ppEffBtProp,
-                ppfldEffBt);
+                        auto& RecordData = ATF::Global::g_MainThread->m_tblItemData[pPlayer->m_pSiegeItem->m_byTableCode];
+                        ATF::_SiegeKitItem_fld* item = (ATF::_SiegeKitItem_fld*)RecordData.GetRecord(pPlayer->m_pSiegeItem->m_wItemIndex);
+
+                        if (item->m_nLevelLim == 30 && pSkillFld->m_nLv != 0)
+                        {
+                            nResult = error_attack_skill_lock;
+                            break;
+                        }
+
+                        if (item->m_nLevelLim == 40 && pSkillFld->m_nLv != 1)
+                        {
+                            nResult = error_attack_skill_lock;
+                            break;
+                        }
+                    }
+                    else if (pSkillFld->m_nTempEffectType == 23)
+                    {
+                        nResult = error_attack_skill_lock;
+                        break;
+                    }
+                }
+
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+
+                bool bIsDelay = PlayerEx.CheckSkillAttackDelay(
+                    pSkillFld->m_nClass,
+                    pSkillFld->m_nLv,
+                    pSkillFld->m_dwIndex);
+
+                if (!bIsDelay)
+                {
+                    nResult = error_attack_delay;
+                    break;
+                }
+
+                nResult = next(
+                    pPlayer,
+                    pDst,
+                    pfAttackPos,
+                    byEffectCode,
+                    pSkillFld,
+                    wBulletSerial,
+                    ppBulletProp,
+                    ppfldBullet,
+                    nEffectGroup,
+                    pdwDecPoint,
+                    wEffBtSerial,
+                    ppEffBtProp,
+                    ppfldEffBt);
+
+                if (nResult != 0)
+                    break;
+
+                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::SK_Spd);
+                nDelay += (int)pSkillFld->m_fActDelay;
+                PlayerEx.SetSkillAttackDelay(
+                    pSkillFld->m_nClass, pSkillFld->m_nLv, pSkillFld->m_dwIndex,
+                    _STD chrono::milliseconds(nDelay));
+            } while (false);
+
+            return nResult;
         }
 
         int WINAPIV CAttackSystem::_pre_check_force_attack(
@@ -120,9 +160,7 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt, 
             ATF::Info::CPlayer_pre_check_force_attack1364_ptr next)
         {
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            // todo : process delay
-            return next(
+            int nResult = next(
                 pPlayer,
                 pDst,
                 pfTarPos,
@@ -133,6 +171,28 @@ namespace GameServer
                 wEffBtSerial,
                 ppEffBtProp,
                 ppfldEffBt);
+
+            do
+            {
+                if (nResult != 0)
+                    break;
+
+                ATF::_force_fld* pForceFld = *ppForceFld;
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                bool bIsDelay = PlayerEx.CheckForceAttackDelay(pForceFld->m_nClass, pForceFld->m_nLv);
+                if (!bIsDelay)
+                {
+                    nResult = error_attack_delay;
+                    break;
+                }
+
+                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::FC_Spd);
+                PlayerEx.SetForceAttackDelay(
+                    pForceFld->m_nClass, pForceFld->m_nLv,
+                    _STD chrono::milliseconds((int)pForceFld->m_fActDelay + nAddDelay));
+            } while (false);
+
+            return nResult;
         }
 
         int WINAPIV CAttackSystem::_pre_check_normal_attack(
@@ -147,18 +207,45 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBt,
             ATF::Info::CPlayer_pre_check_normal_attack1370_ptr next)
         {
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            // todo : process delay
-            return next(
-                pPlayer,
-                pDst,
-                wBulletSerial,
-                bCount,
-                ppBulletProp,
-                ppfldBullet,
-                wEffBtSerial,
-                ppEffBtProp,
-                ppfldEffBt);
+            int nResult = 0;
+            do
+            {
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                if (!PlayerEx.CheckNormalAttackDelay())
+                {
+                    nResult = error_attack_delay;
+                    break;
+                }
+
+                nResult = next(
+                    pPlayer,
+                    pDst,
+                    wBulletSerial,
+                    bCount,
+                    ppBulletProp,
+                    ppfldBullet,
+                    wEffBtSerial,
+                    ppEffBtProp,
+                    ppfldEffBt);
+
+                if (nResult != 0)
+                    break;
+
+                int nDelay = pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
+                if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::launcher)
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + _EFF_PLUS::GE_Att_Spd_);
+                    nDelay += pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
+                }
+                else
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                }
+
+                PlayerEx.SetNormalAttackDelay(_STD chrono::milliseconds(nDelay));
+            } while (false);
+
+            return nResult;
         }
 
         int WINAPIV CAttackSystem::_pre_check_siege_attack(
@@ -173,18 +260,44 @@ namespace GameServer
             ATF::_BulletItem_fld ** ppfldEffBullet,
             ATF::Info::CPlayer_pre_check_siege_attack1372_ptr next)
         {
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            // todo : process delay
-            return next(
-                pPlayer,
-                pDst,
-                pfAttackPos,
-                wBulletSerial,
-                ppBulletProp,
-                ppfldBullet,
-                wEffBtSerial,
-                ppEffBulletProp,
-                ppfldEffBullet);
+            int nResult = 0;
+            do
+            {
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                if (!PlayerEx.CheckSiegeAttackDelay())
+                {
+                    nResult = error_attack_delay;
+                    break;
+                }
+
+                nResult = next(
+                    pPlayer,
+                    pDst,
+                    pfAttackPos,
+                    wBulletSerial,
+                    ppBulletProp,
+                    ppfldBullet,
+                    wEffBtSerial,
+                    ppEffBulletProp,
+                    ppfldEffBullet);
+
+                if (nResult != 0)
+                    break;
+
+                int nDelay = pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
+                if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::launcher)
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + _EFF_PLUS::GE_Att_Spd_);
+                }
+                else
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                }
+
+                PlayerEx.SetSiegeAttackDelay(_STD chrono::milliseconds(nDelay));
+            } while (false);
+
+            return nResult;
         }
 
         int WINAPIV CAttackSystem::_pre_check_unit_attack(
@@ -196,15 +309,32 @@ namespace GameServer
             ATF::_unit_bullet_param ** ppBulletParam,
             ATF::Info::CPlayer_pre_check_unit_attack1380_ptr next)
         {
-            auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-            // todo : process delay
-            return next(
-                pPlayer,
-                pDst,
-                byWeaponPart,
-                ppWeaponFld,
-                ppBulletFld,
-                ppBulletParam);
+            int nResult = 0;
+            do
+            {
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                if (!PlayerEx.CheckUnitAttackDelay())
+                {
+                    nResult = error_attack_delay;
+                    break;
+                }
+
+                nResult = next(
+                    pPlayer,
+                    pDst,
+                    byWeaponPart,
+                    ppWeaponFld,
+                    ppBulletFld,
+                    ppBulletParam);
+
+                if (nResult != 0)
+                    break;
+
+                ATF::_UnitPart_fld *pWeaponFld = *ppWeaponFld;
+                PlayerEx.SetUnitAttackDelay(_STD chrono::milliseconds(pWeaponFld->m_nAttackDel));
+            } while (false);
+
+            return nResult;
         }
 
         char WINAPIV CAttackSystem::skill_process(
@@ -217,6 +347,8 @@ namespace GameServer
             ATF::Info::CPlayerskill_process2035_ptr next)
         {
             char byRetCode = 0;
+            ATF::_skill_fld* pSkillFld = nullptr;
+
             do
             {
                 if (pPlayer->IsSiegeMode())
@@ -229,8 +361,7 @@ namespace GameServer
                 if (!pDst)
                     break;
 
-                ATF::_skill_fld* pSkillFld =
-                    (ATF::_skill_fld*)ATF::Global::g_MainThread->m_tblEffectData[effect_code_class].GetRecord(nSkillIndex);
+                pSkillFld = (ATF::_skill_fld*)ATF::Global::g_MainThread->m_tblEffectData[nEffectCode].GetRecord(nSkillIndex);
 
                 if (nEffectCode == effect_code_class &&
                     pSkillFld->m_nTempEffectType == 36 &&
@@ -259,11 +390,32 @@ namespace GameServer
                     }
                 }
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                // todo : process delay
+
+                bool bIsDelay = PlayerEx.CheckSkillAttackDelay(
+                    pSkillFld->m_nClass,
+                    pSkillFld->m_nLv,
+                    pSkillFld->m_dwIndex);
+
+                if (!bIsDelay)
+                {
+                    byRetCode = error_attack_delay;
+                    break;
+                }
             } while (false);
 
             if (byRetCode == 0)
                 byRetCode = next(pPlayer, nEffectCode, nSkillIndex, pidDst, pConsumeSerial, pnLv);
+
+            if (byRetCode == 0 && pSkillFld)
+            {
+                auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
+                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::SK_Spd);
+                nDelay += (int)pSkillFld->m_fActDelay;
+
+                PlayerEx.SetSkillAttackDelay(
+                    pSkillFld->m_nClass, pSkillFld->m_nLv, pSkillFld->m_dwIndex,
+                    _STD chrono::milliseconds(nDelay));
+            }
 
             return byRetCode;
         }
@@ -312,7 +464,17 @@ namespace GameServer
                 }
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                // todo : process delay
+                bool bIsDelay = PlayerEx.CheckForceAttackDelay(pForceFld->m_nClass, pForceFld->m_nLv);
+                if (!bIsDelay)
+                {
+                    byRetCode = error_attack_delay;
+                    break;
+                }
+
+                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::FC_Spd);
+                PlayerEx.SetForceAttackDelay(
+                    pForceFld->m_nClass, pForceFld->m_nLv,
+                    _STD chrono::milliseconds((int)pForceFld->m_fActDelay + nAddDelay));
             } while (false);
 
             if (byRetCode == 0)
@@ -362,7 +524,26 @@ namespace GameServer
                 }
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                // todo : process delay
+                if (!PlayerEx.CheckNormalAttackDelay())
+                {
+                    byRetCode = 9;
+                    break;
+                }
+
+                int nDelay = pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
+                if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::grenade &&
+                    !pPlayer->m_pmWpn.byWpClass)
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::GE_Att_Spd_);
+                }
+                if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher ||
+                    pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::grenade)
+                {
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                }
+
+                PlayerEx.SetNormalAttackDelay(_STD chrono::milliseconds(nDelay));
+
                 next(pPlayer, wBulletSerial, pidDst, pConsumeSerial);
             } while (false);
 
@@ -415,7 +596,14 @@ namespace GameServer
                 }
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                // todo : process delay
+                if (!PlayerEx.CheckUnitAttackDelay())
+                {
+                    byRetCode = 9;
+                    break;
+                }
+
+                PlayerEx.SetUnitAttackDelay(_STD chrono::milliseconds(pPartFld->m_nAttackDel));
+
                 next(pPlayer, pidDst, pConsumeSerial);
             } while (false);
 

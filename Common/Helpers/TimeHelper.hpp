@@ -14,21 +14,21 @@ namespace TimeHelper
 
         inline void abort()
         {
-            tmEnd = ::std::chrono::steady_clock::now();
+            tmEnd = _STD chrono::steady_clock::now();
         }
 
         template<typename _interval>
         inline void begin(_interval term)
         {
-            tmEnd = ::std::chrono::steady_clock::now() + term;
+            tmEnd = _STD chrono::steady_clock::now() + term;
         }
 
         inline bool is_end() const
         {
-            return ::std::chrono::steady_clock::now() > tmEnd;
+            return _STD chrono::steady_clock::now() > tmEnd;
         }
 
     private:
-        ::std::chrono::time_point<std::chrono::steady_clock> tmEnd;
+        _STD chrono::time_point<std::chrono::steady_clock> tmEnd;
     };
 }

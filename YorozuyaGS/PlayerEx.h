@@ -28,6 +28,28 @@ namespace GameServer
             bool CheckMove(float* pfTar) const;
 
         public:
+            bool CheckUnitAttackDelay() const;
+
+            bool CheckSiegeAttackDelay() const;
+
+            bool CheckNormalAttackDelay() const;
+
+            bool CheckForceAttackDelay(int nCode, int nSub) const;
+
+            bool CheckSkillAttackDelay(int nCode, int nSub, int indx) const;
+
+        public:
+            void SetUnitAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetSiegeAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetNormalAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetForceAttackDelay(int nCode, int nSub, _STD chrono::milliseconds msDelay);
+
+            void SetSkillAttackDelay(int nCode, int nSub, int indx, _STD chrono::milliseconds msDelay);
+
+        public:
             static bool init_player(size_t indx, ATF::CPlayer* pPlayer);
 
         public:

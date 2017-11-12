@@ -54,12 +54,12 @@ namespace GameServer
             struct _set_item_action
             {
                 uint8_t code_result;
-                std::chrono::time_point<std::chrono::steady_clock> action_added;
+                _STD chrono::time_point<_STD chrono::steady_clock> action_added;
 
                 bool is_due(
-                    const std::chrono::time_point<std::chrono::steady_clock>& current_time) const
+                    const _STD chrono::time_point<_STD chrono::steady_clock>& current_time) const
                 {
-                    return std::chrono::duration_cast<std::chrono::minutes>(current_time - action_added) > std::chrono::minutes(1);
+                    return _STD chrono::duration_cast<_STD chrono::minutes>(current_time - action_added) > _STD chrono::minutes(1);
                 }
             };
             using ContainerSetItemInfo_t = _STD unordered_set<_set_item_info, hashing_func, key_equal_fn>;
@@ -70,42 +70,40 @@ namespace GameServer
         {
             struct _attack_delay
             {
-                enum type_skill
-                {
-                    warrior,
-                    ranger,
-                    class_skill,
-                    num
-                };
-
                 TimeHelper::CTimer unit;
                 TimeHelper::CTimer siege;
                 TimeHelper::CTimer normal;
-                TimeHelper::CTimer self_destruction;
+                mutable _STD unordered_map<int, TimeHelper::CTimer> class_skill[3];
                 TimeHelper::CTimer force[6][4];
-                std::vector<TimeHelper::CTimer> skill[type_skill::num];
+                TimeHelper::CTimer skill[4][4];
 
                 void reset()
                 {
                     unit.abort();
                     siege.abort();
                     normal.abort();
-                    self_destruction.abort();
                     for (auto& i : force)
                     {
                         for (auto& j : i)
                             j.abort();
                     }
 
-                    skill[type_skill::warrior].swap(std::vector<TimeHelper::CTimer>(4));
-                    skill[type_skill::ranger].swap(std::vector<TimeHelper::CTimer>(4));
-                    skill[type_skill::class_skill].swap(std::vector<TimeHelper::CTimer>(3));
+                    for (auto& i : class_skill)
+                    {
+                        i.swap(_STD unordered_map<int, TimeHelper::CTimer>{});
+                    }
+
+                    for (auto& i : skill)
+                    {
+                        for (auto& j : i)
+                            j.abort();
+                    }
                 }
             };
 
             struct _move_info
             {
-                ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastMove;
+                _STD chrono::time_point<_STD chrono::steady_clock> m_tpLastMove;
                 TimeHelper::CTimer m_timerWarning;
                 float m_fLastSpeed;
                 int m_nCountMove;
@@ -115,7 +113,7 @@ namespace GameServer
                 {
                     m_nCountMove = 0;
                     m_nCountWarning = 0;
-                    m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+                    m_tpLastMove = _STD chrono::high_resolution_clock::now();
                     m_timerWarning.abort();
                 }
             };
