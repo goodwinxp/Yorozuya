@@ -1,6 +1,7 @@
 #pragma once
 
 #include <chrono>
+#include <set>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "PlayerEx_detail.h"
@@ -27,6 +28,9 @@ namespace GameServer
 
             bool CheckMove(float* pfTar) const;
 
+            void DBSave();
+
+            static void CheckDayChangedPvpPointClear();
         public:
             bool CheckUnitAttackDelay() const;
 
@@ -108,7 +112,8 @@ namespace GameServer
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
         private:
             std::mutex m_mtxKillerInfo;
-            std::unordered_set<DWORD> m_setKillerInfo;
+            std::set<uint32_t> m_setKillerInfo;
+            std::set<uint32_t> m_setSavedKillerInfo;
 
         private:
             detail::_attack_delay m_AttackDelay;

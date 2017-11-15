@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <ATF\CSUItemSystem.hpp>
 #include <ATF\si_interpret.hpp>
-#include <experimental/unordered_map>
 
 namespace GameServer
 {
@@ -14,7 +13,6 @@ namespace GameServer
 
         CPlayerEx::CPlayerEx()
         {
-            m_setKillerInfo.reserve(30);
             m_setSetItemInfo.reserve(10);
         }
 
@@ -31,6 +29,10 @@ namespace GameServer
                     }
                 }
             }
+
+         
+                AdjustSerialKillerList();
+            
         }
 
         void CPlayerEx::UpdateSetItem()
@@ -273,6 +275,8 @@ namespace GameServer
 
             UpdateSetItem();
 
+            LoadSerialKillerList();
+
             return true;
         }
 
@@ -283,6 +287,11 @@ namespace GameServer
             ResetAttackDelay();
 
             CleanSerialKillerList();
+        }
+
+        void CPlayerEx::DBSave()
+        {
+            SaveSerialKillerList();
         }
 
         void CPlayerEx::ResetSetItem()

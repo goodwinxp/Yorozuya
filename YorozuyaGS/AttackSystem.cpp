@@ -235,7 +235,6 @@ namespace GameServer
                 if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::launcher)
                 {
                     nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + _EFF_PLUS::GE_Att_Spd_);
-                    nDelay += pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
                 }
                 else
                 {

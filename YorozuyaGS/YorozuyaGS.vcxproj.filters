@@ -249,6 +249,9 @@
     <ClCompile Include="PlayerEx_AttackDelay.cpp">
       <Filter>Implementation\Extension\PlayerEx\AttackDelay</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -373,6 +376,9 @@
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\TimeHelper.hpp">
       <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx_PvpOrderViewDB.h">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

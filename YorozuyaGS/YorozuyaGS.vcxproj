@@ -165,6 +165,7 @@
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="PlayerEx.h" />
     <ClInclude Include="PlayerEx_detail.h" />
+    <ClInclude Include="PlayerEx_PvpOrderViewDB.h" />
     <ClInclude Include="PostSystem.h" />
     <ClInclude Include="PotionMgr.h" />
     <ClInclude Include="QuestMng.h" />
@@ -215,6 +216,7 @@
     <ClCompile Include="PlayerEx.cpp" />
     <ClCompile Include="PlayerEx_AttackDelay.cpp" />
     <ClCompile Include="PlayerEx_Move.cpp" />
+    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp" />
     <ClCompile Include="PlayerMove.cpp" />
     <ClCompile Include="PlayerPvpOrderView.cpp" />
     <ClCompile Include="PlayerSystem.cpp" />

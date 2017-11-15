@@ -69,23 +69,40 @@ namespace GameServer
             ATF::Info::CPlayerpc_MakeTrapRequest1783_ptr next)
         {
             UNREFERENCED_PARAMETER(pfPos);
+            uint8_t byErrCode = 0;
             do
             {
                 if (pObj->IsMapLoading())
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTrapItemSerial);
                 if (!pTrapItem)
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_trap)
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 if (!pObj->IsEffectableEquip(pTrapItem))
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 next(pObj, wSkillIndex, wTrapItemSerial, pObj->m_fCurPos, pConsumeSerial);
             } while (false);
+
+
+            if (byErrCode != 0)
+                pObj->SendMsg_CreateTowerResult(byErrCode, -1);
         }
 
         void WINAPIV CPlayer::pc_MakeTowerRequest(
@@ -99,23 +116,39 @@ namespace GameServer
             ATF::Info::CPlayerpc_MakeTowerRequest1781_ptr next)
         {
             UNREFERENCED_PARAMETER(pfPos);
+            uint8_t byErrCode = 0;
             do
             {
                 if (pObj->IsMapLoading())
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTowerItemSerial);
                 if (!pTrapItem)
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_tower)
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 if (!pObj->IsEffectableEquip(pTrapItem))
+                {
+                    byErrCode = 1;
                     break;
+                }
 
                 next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pObj->m_fCurPos, pConsumeSerial);
             } while (false);
+
+            if (byErrCode != 0)
+                pObj->SendMsg_CreateTowerResult(byErrCode, -1);
         }
 
         void WINAPIV CPlayer::pc_GestureRequest(
