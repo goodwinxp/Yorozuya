@@ -362,32 +362,31 @@ namespace GameServer
 
                 pSkillFld = (ATF::_skill_fld*)ATF::Global::g_MainThread->m_tblEffectData[nEffectCode].GetRecord(nSkillIndex);
 
-                if (nEffectCode == effect_code_class &&
+                if (!(nEffectCode == effect_code_class &&
                     pSkillFld->m_nTempEffectType == 36 &&
-                    pSkillFld->m_nEffectClass == 6)
+                    pSkillFld->m_nEffectClass == 6)) // проверка на призыв(чандра)
                 {
-                    break;
-                }
+                    float fAvailableDist = pPlayer->m_pmWpn.wGaAttRange;
+                    fAvailableDist += pSkillFld->m_nBonusDistance;
+                    fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
 
-                float fAvailableDist = pPlayer->m_pmWpn.wGaAttRange;
-                fAvailableDist += pSkillFld->m_nBonusDistance;
-                fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
+                    if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher)
+                        fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Lcr_Att_Dist);
+                    else
+                        fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::GE_Att_Dist_ + pPlayer->m_pmWpn.byWpClass);
 
-                if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher)
-                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::Lcr_Att_Dist);
-                else
-                    fAvailableDist += pPlayer->m_EP.GetEff_Plus((int)ATF::_EFF_PLUS::GE_Att_Dist_ + pPlayer->m_pmWpn.byWpClass);
+                    fAvailableDist += pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + (int)ATF::_EFF_PLUS::FC_Att_Dist);
 
-                fAvailableDist += pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + (int)ATF::_EFF_PLUS::FC_Att_Dist);
-
-                if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
-                {
-                    if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                    if (ATF::Global::Get3DSqrt(pDst->m_fCurPos, pPlayer->m_fCurPos) > fAvailableDist)
                     {
-                        byRetCode = error_attack_radius;
-                        break;
+                        if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
+                        {
+                            byRetCode = error_attack_radius;
+                            break;
+                        }
                     }
                 }
+
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
 
                 bool bIsDelay = PlayerEx.CheckSkillAttackDelay(
