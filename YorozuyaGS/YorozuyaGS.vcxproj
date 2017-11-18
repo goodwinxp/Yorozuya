@@ -155,6 +155,7 @@
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
     <ClInclude Include="NetworkEx.h" />
+    <ClInclude Include="NpcData.h" />
     <ClInclude Include="PcBangFavor.h" />
     <ClInclude Include="Performance.h" />
     <ClInclude Include="Player.h" />
@@ -195,6 +196,7 @@
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="NetworkEx.cpp" />
+    <ClCompile Include="NpcData.cpp" />
     <ClCompile Include="PcBangFavor.cpp" />
     <ClCompile Include="Performance.cpp" />
     <ClCompile Include="Player.cpp" />

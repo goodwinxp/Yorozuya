@@ -16,7 +16,7 @@ namespace GameServer
             CPvpOrderViewDB();
 
         public:
-            bool CleanKillerList();
+            void CleanKillerList();
 
             bool LoadKillerList(_STD set<uint32_t>& setKillerInfo);
 
