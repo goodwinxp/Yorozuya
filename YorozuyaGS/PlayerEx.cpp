@@ -29,10 +29,6 @@ namespace GameServer
                     }
                 }
             }
-
-         
-                AdjustSerialKillerList();
-            
         }
 
         void CPlayerEx::UpdateSetItem()

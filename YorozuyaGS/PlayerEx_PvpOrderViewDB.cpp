@@ -27,9 +27,9 @@ namespace GameServer
             }
         }
 
-        bool CPvpOrderViewDB::CleanKillerList()
+        void CPvpOrderViewDB::CleanKillerList()
         {
-            return CRFNewDatabase::ExecUpdateQuery(L"DELETE FROM [tbl_KillerList]", true);
+            CRFNewDatabase::ExecUpdateQuery(L"DELETE FROM [tbl_KillerList]", false);
         }
 
         bool CPvpOrderViewDB::LoadKillerList(std::set<uint32_t>& setKillerInfo)
