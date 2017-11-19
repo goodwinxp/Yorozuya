@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "PlayerEx.h"
 #include <ATF/global.hpp>
+#include <ATF/_buy_store_failure_zocl.hpp>
 
 namespace GameServer
 {
@@ -61,6 +62,31 @@ namespace GameServer
 
             auto& player_ex = CPlayerEx::get_instance();
             player_ex->NetClose(pObj);
+        }
+
+        void WINAPIV CPlayer::SendMsg_Alter_Action_Point(
+            ATF::CPlayer * pPlayer,
+            char byActCode,
+            unsigned int dwActPoint,
+            ATF::Info::CPlayerSendMsg_Alter_Action_Point560_ptr next)
+        {
+            if (byActCode == 1)
+            {
+                _buy_store_failure_zocl szMsg;
+                szMsg.byRetCode = 19;
+                szMsg.dwDalant = pPlayer->m_Param.GetDalant();
+                szMsg.dwGold = pPlayer->m_Param.GetGold();
+                szMsg.dPoint = pPlayer->m_kPvpOrderView.GetPvpCash();
+                for (int j = 0; j < 3; ++j)
+                    szMsg.dwActPoint[j] = pPlayer->m_pUserDB->GetActPoint(j);
+
+                char pbyType[] = { 12, 3 };
+                ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pPlayer->m_ObjID.m_wIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
+            }
+            else
+            {
+                next(pPlayer, byActCode, dwActPoint);
+            }
         }
     }
 }

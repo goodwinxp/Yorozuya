@@ -134,6 +134,12 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 float* pfCur,
                 ATF::Info::CPlayerpc_MoveStop1797_ptr next);
+
+            static void WINAPIV SendMsg_Alter_Action_Point(
+                ATF::CPlayer *pPlayer,
+                char byActCode,
+                unsigned int dwActPoint,
+                ATF::Info::CPlayerSendMsg_Alter_Action_Point560_ptr next);
         };
     };
 };
