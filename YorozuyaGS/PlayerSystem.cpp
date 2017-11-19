@@ -16,21 +16,6 @@ namespace GameServer
             using namespace GameServer::Extension;
         }
 
-        void FullUpdate_Alter_Action_Point_Impl(
-            ATF::CPlayer* pPlayer)
-        {
-            _buy_store_failure_zocl szMsg;
-            szMsg.byRetCode = 19;
-            szMsg.dwDalant = pPlayer->m_Param.GetDalant();
-            szMsg.dwGold = pPlayer->m_Param.GetGold();
-            szMsg.dPoint = pPlayer->m_kPvpOrderView.GetPvpCash();
-            for (int j = 0; j < 3; ++j)
-                szMsg.dwActPoint[j] = pPlayer->m_pUserDB->GetActPoint(j);
-
-            char pbyType[] = { 12, 3 };
-            ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]->LoadSendMsg(pPlayer->m_ObjID.m_wIndex, pbyType, (char *)&szMsg, sizeof(szMsg));
-        }
-
         void WINAPIV CPlayer::Loop(
             ATF::CPlayer* pPlayer,
             ATF::Info::CPlayerLoop368_ptr next)
@@ -62,8 +47,6 @@ namespace GameServer
 
                 auto& player_ex = CPlayerEx::get_instance();
                 player_ex->Load(pObj);
-
-                FullUpdate_Alter_Action_Point_Impl(pObj);
             }
 
             return bResult;
@@ -79,22 +62,6 @@ namespace GameServer
 
             auto& player_ex = CPlayerEx::get_instance();
             player_ex->NetClose(pObj);
-        }
-
-        void WINAPIV CPlayer::SendMsg_Alter_Action_Point(
-            ATF::CPlayer * pPlayer,
-            char byActCode,
-            unsigned int dwActPoint,
-            ATF::Info::CPlayerSendMsg_Alter_Action_Point560_ptr next)
-        {
-            if (byActCode == 1)
-            {
-                FullUpdate_Alter_Action_Point_Impl(pPlayer);
-            }
-            else
-            {
-                next(pPlayer, byActCode, dwActPoint);
-            }
         }
     }
 }
