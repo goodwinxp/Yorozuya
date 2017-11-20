@@ -43,7 +43,7 @@ namespace GameServer
             {
                 for (auto& c : m_szPassword)
                     c = 'x';
-                m_szPassword[16] = '\0';
+                m_szPassword[15] = '\0';
 
                 m_szPassword[0] = 'X';
                 m_szPassword[3] = symbols[0];
@@ -57,7 +57,7 @@ namespace GameServer
                 return m_szPassword;
             }
         private:
-            char m_szPassword[17];
+            char m_szPassword[16];
         };
 
         bool WINAPIV CReadSystemPass::ReadSystemPass(
