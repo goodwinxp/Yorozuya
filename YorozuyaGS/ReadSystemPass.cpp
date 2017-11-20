@@ -35,10 +35,56 @@ namespace GameServer
             return name;
         }
 
-        bool WINAPIV CReadSystemPass::ReadSystemPass(ATF::CNationSettingData * pObj, void * next)
+        class CSystemPass
         {
-            UNREFERENCED_PARAMETER(pObj);
-            UNREFERENCED_PARAMETER(next);
+        public:
+            constexpr CSystemPass(const char* symbols)
+                : m_szPassword{ '\0' }
+            {
+                for (auto& c : m_szPassword)
+                    c = 'x';
+                m_szPassword[16] = '\0';
+
+                m_szPassword[0] = 'X';
+                m_szPassword[3] = symbols[0];
+                m_szPassword[5] = symbols[1];
+                m_szPassword[8] = symbols[2];
+                m_szPassword[11] = symbols[3];
+            }
+
+            const char* get_password() const
+            {
+                return m_szPassword;
+            }
+        private:
+            char m_szPassword[17];
+        };
+
+        bool WINAPIV CReadSystemPass::ReadSystemPass(
+            ATF::CNationSettingData * pObj,
+            ATF::Info::CNationSettingDataReadSystemPass52_ptr next)
+        {
+            static const _STD unordered_map<int, const char*> mapSystemPass = {
+                { 410, CSystemPass("trj7").get_password() }, //"KR"
+                { 826, CSystemPass("wp2v").get_password() }, //"GB"
+                { 360, CSystemPass("k0qf").get_password() }, //"ID"
+                { 392, CSystemPass("n729").get_password() }, //"JP"
+                { 608, CSystemPass("qah3").get_password() }, //"PH"
+                { 643, CSystemPass("u71v").get_password() }, //"RU"
+                { 76,  CSystemPass("6dxo").get_password() }, //"BR"
+                { 158, CSystemPass("zw3t").get_password() }, //"TW"
+                { 156, CSystemPass("s4iy").get_password() }, //"CN"
+                { 840, CSystemPass("9ecs").get_password() }, //"US"
+                { 724, CSystemPass("p5yt").get_password() }, //"ES"
+                { 764, CSystemPass("dvb3").get_password() }, //"TH"
+            };
+
+            const auto it_find = mapSystemPass.find(pObj->m_iNationCode);
+            if (it_find == mapSystemPass.end())
+                return next(pObj);
+
+            strcpy_s(pObj->m_szVaildKey, it_find->second);
+
             return true;
         }
 
