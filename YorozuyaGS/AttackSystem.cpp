@@ -178,10 +178,13 @@ namespace GameServer
                     break;
 
                 ATF::_force_fld* pForceFld = *ppForceFld;
-                if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
+                if (pPlayer->m_pmWpn.GetAttackToolType() == 1)
                 {
-                    nResult = error_attack_correctweapon;
-                    break;
+                    if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
+                    {
+                        nResult = error_attack_correctweapon;
+                        break;
+                    }
                 }
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
@@ -455,11 +458,15 @@ namespace GameServer
                 if (!pForceFld)
                     break;
 
-                if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
+                if (pPlayer->m_pmWpn.GetAttackToolType() == 1)
                 {
-                    byRetCode = error_attack_correctweapon;
-                    break;
+                    if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
+                    {
+                        byRetCode = error_attack_correctweapon;
+                        break;
+                    }
                 }
+                
 
                 float fAvailableDist = pForceFld->m_nActDistance + 40.f;
                 fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
