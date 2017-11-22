@@ -178,15 +178,6 @@ namespace GameServer
                     break;
 
                 ATF::_force_fld* pForceFld = *ppForceFld;
-                if (pPlayer->m_pmWpn.GetAttackToolType() == 1)
-                {
-                    if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
-                    {
-                        nResult = error_attack_correctweapon;
-                        break;
-                    }
-                }
-
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
                 bool bIsDelay = PlayerEx.CheckForceAttackDelay(pForceFld->m_nClass, pForceFld->m_nLv);
                 if (!bIsDelay)
@@ -458,15 +449,15 @@ namespace GameServer
                 if (!pForceFld)
                     break;
 
-                if (pPlayer->m_pmWpn.GetAttackToolType() == 1)
+                if (strchr(pForceFld->m_strFixWeapon, '1') != nullptr)
                 {
-                    if (pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
+                    if (pPlayer->m_pmWpn.GetAttackToolType() != 1 ||
+                        pForceFld->m_strFixWeapon[pPlayer->m_pmWpn.byWpType] != '1')
                     {
-                        byRetCode = error_attack_correctweapon;
+                        byRetCode = 8;
                         break;
                     }
                 }
-                
 
                 float fAvailableDist = pForceFld->m_nActDistance + 40.f;
                 fAvailableDist += pDst->vfptr->GetWidth(pDst) / 2.0f;
@@ -475,7 +466,7 @@ namespace GameServer
                 {
                     if (ATF::Global::Get3DSqrt(pDst->m_fOldPos, pPlayer->m_fCurPos) > fAvailableDist)
                     {
-                        byRetCode = error_attack_radius;
+                        byRetCode = 8;
                         break;
                     }
                 }
@@ -484,7 +475,7 @@ namespace GameServer
                 bool bIsDelay = PlayerEx.CheckForceAttackDelay(pForceFld->m_nClass, pForceFld->m_nLv);
                 if (!bIsDelay)
                 {
-                    byRetCode = error_attack_delay;
+                    byRetCode = 9;
                     break;
                 }
 
