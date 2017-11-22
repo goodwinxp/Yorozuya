@@ -38,7 +38,7 @@ namespace GameServer
         class CSystemPass
         {
         public:
-            constexpr CSystemPass(const char* symbols)
+            CSystemPass(const char* symbols)
                 : m_szPassword{ '\0' }
             {
                 for (auto& c : m_szPassword)
