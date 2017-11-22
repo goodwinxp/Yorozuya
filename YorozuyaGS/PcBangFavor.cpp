@@ -12,14 +12,12 @@ namespace GameServer
 
         void CPcBangFavor::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPcBangFavor::PcBangGiveItem, &CPcBangFavor::PcBangGiveItem);
+            enable_hook(&ATF::CPcBangFavor::PcBangGiveItem, &CPcBangFavor::PcBangGiveItem);
         }
 
         void CPcBangFavor::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CPcBangFavor::PcBangGiveItem);
+            cleanup_all_hook();
         }
 
         ModuleName_t CPcBangFavor::get_name()

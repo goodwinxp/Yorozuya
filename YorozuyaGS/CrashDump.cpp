@@ -54,7 +54,6 @@ namespace GameServer
                 m_pSystemUnhandledFilter = GetProcAddress(hKernel, "UnhandledExceptionFilter");
 
                 auto& core = CATFCore::get_instance();
-
                 core.reg_wrapper(
                     m_pSystemUnhandledFilter,
                     _hook_record{
@@ -69,9 +68,8 @@ namespace GameServer
 
         void CCrashDump::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::WheatyExceptionReport::GenerateExceptionReport, &CCrashDump::GenerateExceptionReport);
-            core.set_hook(&CCrashDump::UnhandledExceptionFilter, &CCrashDump::UnhandledExceptionFilter);
+            enable_hook(&ATF::WheatyExceptionReport::GenerateExceptionReport, &CCrashDump::GenerateExceptionReport);
+            enable_hook(&CCrashDump::UnhandledExceptionFilter, &CCrashDump::UnhandledExceptionFilter);
 
             ::std::tr2::sys::create_directories(m_pathCrashFolder);
         }

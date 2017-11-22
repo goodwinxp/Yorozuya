@@ -12,16 +12,12 @@ namespace GameServer
 
         void CChatSystem::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
-            core.set_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatSystem::pc_ChatCircleRequest);
+            enable_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
         }
 
         void CChatSystem::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CPlayer::pc_ChatFarRequest);
-            core.unset_hook(&ATF::CPlayer::pc_ChatCircleRequest);
+            cleanup_all_hook();
         }
 
         ModuleName_t CChatSystem::get_name()
@@ -103,14 +99,6 @@ namespace GameServer
                 auto StealSystem = ATF::CChatStealSystem::Instance();
                 StealSystem->StealChatMsg(pPlayer, byChatType, pwszChatData);
             } while (false);
-        }
-
-        void WINAPIV CChatSystem::pc_ChatCircleRequest(
-            ATF::CPlayer * pPlayer, 
-            char * pwszChatData, 
-            ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next)
-        {
-            next(pPlayer, pwszChatData);
         }
     }
 }

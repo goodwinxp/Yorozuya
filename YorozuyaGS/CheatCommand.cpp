@@ -10,14 +10,12 @@ namespace GameServer
 
         void CCheatCommand::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
+            enable_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
         }
 
         void CCheatCommand::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&Global::AuthorityFilter);
+            cleanup_all_hook();
         }
 
         ModuleName_t CCheatCommand::get_name()

@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
+    <ClInclude Include="..\Common\Helpers\TimeHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\zip.h" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="AttackSystem.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="CreatePlayer.h" />
     <ClInclude Include="Guild.h" />
     <ClInclude Include="NetworkEx.h" />
+    <ClInclude Include="NpcData.h" />
     <ClInclude Include="PcBangFavor.h" />
     <ClInclude Include="Performance.h" />
     <ClInclude Include="Player.h" />
@@ -164,6 +166,7 @@
     <ClInclude Include="ModuleRegistry.h" />
     <ClInclude Include="PlayerEx.h" />
     <ClInclude Include="PlayerEx_detail.h" />
+    <ClInclude Include="PlayerEx_PvpOrderViewDB.h" />
     <ClInclude Include="PostSystem.h" />
     <ClInclude Include="PotionMgr.h" />
     <ClInclude Include="QuestMng.h" />
@@ -193,6 +196,7 @@
     <ClCompile Include="CreatePlayer.cpp" />
     <ClCompile Include="Guild.cpp" />
     <ClCompile Include="NetworkEx.cpp" />
+    <ClCompile Include="NpcData.cpp" />
     <ClCompile Include="PcBangFavor.cpp" />
     <ClCompile Include="Performance.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -212,7 +216,9 @@
     <ClCompile Include="MiningOre.cpp" />
     <ClCompile Include="ModuleRegistry.cpp" />
     <ClCompile Include="PlayerEx.cpp" />
+    <ClCompile Include="PlayerEx_AttackDelay.cpp" />
     <ClCompile Include="PlayerEx_Move.cpp" />
+    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp" />
     <ClCompile Include="PlayerMove.cpp" />
     <ClCompile Include="PlayerPvpOrderView.cpp" />
     <ClCompile Include="PlayerSystem.cpp" />

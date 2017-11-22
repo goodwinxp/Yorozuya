@@ -24,7 +24,10 @@ namespace GameServer
             virtual ModuleName_t get_name();
 
         private:
-            static bool WINAPIV ReadSystemPass(ATF::CNationSettingData* pObj, void* next);
+            
+            static bool WINAPIV ReadSystemPass(
+                ATF::CNationSettingData* pObj, 
+                ATF::Info::CNationSettingDataReadSystemPass52_ptr next);
 
             static int64_t WINAPIV AfxWinMain(
                 ATF::HINSTANCE arg_0,

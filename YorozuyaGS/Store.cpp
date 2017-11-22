@@ -13,14 +13,12 @@ namespace GameServer
 
         void CStore::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CItemStore::IsSell, &CStore::IsSell);
+            enable_hook(&ATF::CItemStore::IsSell, &CStore::IsSell);
         }
 
         void CStore::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CItemStore::IsSell);
+            cleanup_all_hook();
         }
 
         ModuleName_t CStore::get_name()

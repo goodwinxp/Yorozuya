@@ -28,6 +28,13 @@ START_ATF_NAMESPACE
             using org_ptr = void (WINAPIV*)(struct CNationSettingManager*);
             (org_ptr(0x140229190L))(this);
         };
+
+        static struct CNationSettingManager* Instance()
+        {
+            using org_ptr = struct CNationSettingManager* (WINAPIV*)();
+            return (org_ptr(0x140012D00L))();
+        };
+
         bool CheckEnterWorldRequest(int n, char* pBuf)
         {
             using org_ptr = bool (WINAPIV*)(struct CNationSettingManager*, int, char*);

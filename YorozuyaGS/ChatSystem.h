@@ -27,11 +27,6 @@ namespace GameServer
                 char *pwszName,
                 char *pwszChatData,
                 ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next);
-
-            static void WINAPIV pc_ChatCircleRequest(
-                ATF::CPlayer *pPlayer,
-                char *pwszChatData,
-                ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next);
         };
     };
 };

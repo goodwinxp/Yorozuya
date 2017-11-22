@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "PlayerEx.h"
 #include <ATF/global.hpp>
+#include <ATF/_buy_store_failure_zocl.hpp>
 
 namespace GameServer
 {

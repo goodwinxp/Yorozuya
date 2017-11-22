@@ -1,10 +1,12 @@
 #pragma once
 
 #include <chrono>
+#include <set>
 #include <ATF\CPlayer.hpp>
 #include <ATF\Global.hpp>
 #include "PlayerEx_detail.h"
 #include "..\Common\Helpers\SingletonHelper.hpp"
+#include "..\Common\Helpers\TimeHelper.hpp"
 
 namespace GameServer
 {
@@ -24,7 +26,32 @@ namespace GameServer
 
             void CleanSerialKillerList();
 
-            bool CheckMove(float* pfTar);
+            bool CheckMove(float* pfTar) const;
+
+            void DBSave();
+
+            static void CheckDayChangedPvpPointClear();
+        public:
+            bool CheckUnitAttackDelay() const;
+
+            bool CheckSiegeAttackDelay() const;
+
+            bool CheckNormalAttackDelay() const;
+
+            bool CheckForceAttackDelay(int nCode, int nSub) const;
+
+            bool CheckSkillAttackDelay(int nCode, int nSub, int indx) const;
+
+        public:
+            void SetUnitAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetSiegeAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetNormalAttackDelay(_STD chrono::milliseconds msDelay);
+
+            void SetForceAttackDelay(int nCode, int nSub, _STD chrono::milliseconds msDelay);
+
+            void SetSkillAttackDelay(int nCode, int nSub, int indx, _STD chrono::milliseconds msDelay);
 
         public:
             static bool init_player(size_t indx, ATF::CPlayer* pPlayer);
@@ -60,20 +87,22 @@ namespace GameServer
             void SaveSerialKillerList();
 
         private:
-            void CleanSetItem();
+            void ResetSetItem();
+
+            void ResetAttackDelay();
 
         private:
             void InitMoveInfo();
 
-            void MoveError();
+            void MoveError() const;
 
-            bool CheckSpeedHack(float fRealSpeed, float* fTar);
+            bool CheckSpeedHack(float fRealSpeed, float* fTar) const;
 
-            bool CheckFlyHack(float* fTar);
+            bool CheckFlyHack(float* fTar) const;
 
-            bool CheckWallHack(float* fTar);
+            bool CheckWallHack(float* fTar) const;
 
-            float GetMoveSpeed();
+            float GetMoveSpeed() const;
 
         private:
             ATF::CPlayer *m_pPlayer = nullptr;
@@ -83,14 +112,12 @@ namespace GameServer
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
         private:
             std::mutex m_mtxKillerInfo;
-            std::unordered_set<DWORD> m_setKillerInfo;
+            std::set<uint32_t> m_setKillerInfo;
+            std::set<uint32_t> m_setSavedKillerInfo;
 
         private:
-            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastMove;
-            ::std::chrono::time_point<std::chrono::steady_clock> m_tpLastWarning;
-            float m_fLastSpeed;
-            int m_nCountMove;
-            int m_nCountWarning;
+            detail::_attack_delay m_AttackDelay;
+            mutable detail::_move_info m_MoveInfo;
         };
     };
 };

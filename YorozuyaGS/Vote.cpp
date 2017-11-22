@@ -13,22 +13,16 @@ namespace GameServer
     {
         void CVote::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::Voter::_Vote, &CVote::_Vote);
-            core.set_hook(&ATF::Voter::_SendVotePaper, &CVote::_SendVotePaper);
-            core.set_hook(&ATF::Voter::_SendVotePaperAll, &CVote::_SendVotePaperAll);
-            core.set_hook(&ATF::Voter::_SendVoteScore, &CVote::_SendVoteScore);
-            core.set_hook(&ATF::Voter::_SendVoteScoreAll, &CVote::_SendVoteScoreAll);
+            enable_hook(&ATF::Voter::_Vote, &CVote::_Vote);
+            enable_hook(&ATF::Voter::_SendVotePaper, &CVote::_SendVotePaper);
+            enable_hook(&ATF::Voter::_SendVotePaperAll, &CVote::_SendVotePaperAll);
+            enable_hook(&ATF::Voter::_SendVoteScore, &CVote::_SendVoteScore);
+            enable_hook(&ATF::Voter::_SendVoteScoreAll, &CVote::_SendVoteScoreAll);
         }
 
         void CVote::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::Voter::_Vote);
-            core.unset_hook(&ATF::Voter::_SendVotePaper);
-            core.unset_hook(&ATF::Voter::_SendVotePaperAll);
-            core.unset_hook(&ATF::Voter::_SendVoteScore);
-            core.unset_hook(&ATF::Voter::_SendVoteScoreAll);
+            cleanup_all_hook();
         }
 
         ModuleName_t CVote::get_name()

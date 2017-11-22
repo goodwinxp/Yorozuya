@@ -25,9 +25,6 @@
     <Filter Include="Implementation\Modules\Registry">
       <UniqueIdentifier>{4dc14335-3a61-4c39-95ba-0e51a7c2aea7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Fixes\Macros">
-      <UniqueIdentifier>{20ddd43d-89b4-4686-add5-28db65204562}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Implementation\Fixes\Trade">
       <UniqueIdentifier>{6e07834d-8ec9-4294-acd2-c566b448514d}</UniqueIdentifier>
     </Filter>
@@ -60,9 +57,6 @@
     </Filter>
     <Filter Include="Implementation\Fixes\CreatePlayer">
       <UniqueIdentifier>{cd64afa6-430b-450e-9a46-b276ca54313a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\UpdateGeneral">
-      <UniqueIdentifier>{c6e01146-e788-4c6a-b17e-0d8d8ee0f916}</UniqueIdentifier>
     </Filter>
     <Filter Include="Implementation\Fixes\PcBangFavor">
       <UniqueIdentifier>{774a8f92-6288-4e85-859f-057b20d6a406}</UniqueIdentifier>
@@ -121,6 +115,21 @@
     <Filter Include="Implementation\Extension\Performance">
       <UniqueIdentifier>{5916199d-738c-40de-bc71-8088b9fab9bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Extension\PlayerEx\AttackDelay">
+      <UniqueIdentifier>{01a3c6f6-8a2d-4b6a-8660-490cd3ef91a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\SaveData">
+      <UniqueIdentifier>{bbeebadd-aec9-4a47-bc3b-7b5066974c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\SaveData\UpdateGeneral">
+      <UniqueIdentifier>{c6e01146-e788-4c6a-b17e-0d8d8ee0f916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\SaveData\Macros">
+      <UniqueIdentifier>{20ddd43d-89b4-4686-add5-28db65204562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation\Fixes\SaveData\NpcData">
+      <UniqueIdentifier>{b20c195e-344f-486e-9315-849fe84e499a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -136,7 +145,7 @@
       <Filter>Implementation\Modules\Registry</Filter>
     </ClCompile>
     <ClCompile Include="Macros.cpp">
-      <Filter>Implementation\Fixes\Macros</Filter>
+      <Filter>Implementation\Fixes\SaveData\Macros</Filter>
     </ClCompile>
     <ClCompile Include="Trade.cpp">
       <Filter>Implementation\Fixes\Trade</Filter>
@@ -172,7 +181,7 @@
       <Filter>Implementation\Fixes\CreatePlayer</Filter>
     </ClCompile>
     <ClCompile Include="UpdateGeneral.cpp">
-      <Filter>Implementation\Fixes\UpdateGeneral</Filter>
+      <Filter>Implementation\Fixes\SaveData\UpdateGeneral</Filter>
     </ClCompile>
     <ClCompile Include="PcBangFavor.cpp">
       <Filter>Implementation\Fixes\PcBangFavor</Filter>
@@ -243,6 +252,15 @@
     <ClCompile Include="..\Common\Helpers\zip.cpp">
       <Filter>Common\Helpers</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerEx_AttackDelay.cpp">
+      <Filter>Implementation\Extension\PlayerEx\AttackDelay</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcData.cpp">
+      <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -264,7 +282,7 @@
       <Filter>Common\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="Macros.h">
-      <Filter>Implementation\Fixes\Macros</Filter>
+      <Filter>Implementation\Fixes\SaveData\Macros</Filter>
     </ClInclude>
     <ClInclude Include="Trade.h">
       <Filter>Implementation\Fixes\Trade</Filter>
@@ -303,7 +321,7 @@
       <Filter>Implementation\Fixes\CreatePlayer</Filter>
     </ClInclude>
     <ClInclude Include="UpdateGeneral.h">
-      <Filter>Implementation\Fixes\UpdateGeneral</Filter>
+      <Filter>Implementation\Fixes\SaveData\UpdateGeneral</Filter>
     </ClInclude>
     <ClInclude Include="PcBangFavor.h">
       <Filter>Implementation\Fixes\PcBangFavor</Filter>
@@ -364,6 +382,15 @@
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\zip.h">
       <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Helpers\TimeHelper.hpp">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx_PvpOrderViewDB.h">
+      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcData.h">
+      <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

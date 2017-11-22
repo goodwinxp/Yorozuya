@@ -10,22 +10,16 @@ namespace GameServer
     {
         void CGuild::load()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.set_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle, &CGuild::ManageAcceptORRefuseGuildBattle);
-            core.set_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest, &CGuild::pc_GuildRoomEnterRequest);
-            core.set_hook(&ATF::CPlayer::pc_GuildRoomOutRequest, &CGuild::pc_GuildRoomOutRequest);
-            core.set_hook(&ATF::CPlayer::pc_GuildManageRequest, &CGuild::pc_GuildManageRequest);
-            core.set_hook(&ATF::CGuild::ManageExpulseMember, &CGuild::ManageExpulseMember);
+            enable_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle, &CGuild::ManageAcceptORRefuseGuildBattle);
+            enable_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest, &CGuild::pc_GuildRoomEnterRequest);
+            enable_hook(&ATF::CPlayer::pc_GuildRoomOutRequest, &CGuild::pc_GuildRoomOutRequest);
+            enable_hook(&ATF::CPlayer::pc_GuildManageRequest, &CGuild::pc_GuildManageRequest);
+            enable_hook(&ATF::CGuild::ManageExpulseMember, &CGuild::ManageExpulseMember);
         }
 
         void CGuild::unload()
         {
-            auto& core = ATF::CATFCore::get_instance();
-            core.unset_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle);
-            core.unset_hook(&ATF::CPlayer::pc_GuildRoomEnterRequest);
-            core.unset_hook(&ATF::CPlayer::pc_GuildRoomOutRequest);
-            core.unset_hook(&ATF::CPlayer::pc_GuildManageRequest);
-            core.unset_hook(&ATF::CGuild::ManageExpulseMember);
+            cleanup_all_hook();
         }
 
         ModuleName_t CGuild::get_name()

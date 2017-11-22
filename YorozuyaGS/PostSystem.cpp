@@ -12,19 +12,15 @@ namespace GameServer
 
         void CPostSystem::load()
         {
-            auto& core = CATFCore::get_instance();
-            core.set_hook(&ATF::CPostSystemManager::CheckRegister, &CPostSystem::CheckRegister);
-            core.set_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
-            core.set_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
+            enable_hook(&ATF::CPostSystemManager::CheckRegister, &CPostSystem::CheckRegister);
+            enable_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
+            enable_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
             
         }
 
         void CPostSystem::unload()
         {
-            auto& core = CATFCore::get_instance();
-            core.unset_hook(&ATF::CPostSystemManager::CheckRegister);
-            core.unset_hook(&ATF::CMainThread::Load_ReturnPost_Complete);
-            core.unset_hook(&ATF::CMainThread::Load_PostStorage_Complete);
+            cleanup_all_hook();
         }
 
         ModuleName_t CPostSystem::get_name()
