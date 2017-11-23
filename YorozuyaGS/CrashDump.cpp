@@ -55,9 +55,9 @@ namespace GameServer
 
                 auto& core = CATFCore::get_instance();
                 core.reg_wrapper(
-                    m_pSystemUnhandledFilter,
+                    &CCrashDump::UnhandledExceptionFilter,
                     _hook_record{
-                        (LPVOID)0x14031d270L,
+                        (LPVOID)m_pSystemUnhandledFilter,
                         (LPVOID *)&UnhandledExceptionFilter_user,
                         (LPVOID *)&UnhandledExceptionFilter_next,
                         (LPVOID)cast_pointer_function(UnhandledExceptionFilter_wrapper),
