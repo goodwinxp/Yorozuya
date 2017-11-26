@@ -8,11 +8,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CCreatePlayer::load()
         {
-            enable_hook(&CUserDB::Insert_Char_Request, &CCreatePlayer::Insert_Char_Request);
+            enable_hook(&ATF::CUserDB::Insert_Char_Request, &CCreatePlayer::Insert_Char_Request);
         }
 
         void CCreatePlayer::unload()

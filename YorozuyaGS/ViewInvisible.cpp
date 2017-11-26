@@ -14,18 +14,16 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CViewInvisible::load()
         {
             enable_hook(
-                (void(CGameObject::*)(char*, char*, int, bool))&CGameObject::CircleReport, 
+                (void(ATF::CGameObject::*)(char*, char*, int, bool))&ATF::CGameObject::CircleReport,
                 &CViewInvisible::CGameObject__CircleReport);
-            enable_hook(&CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
-            enable_hook(&CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
-            enable_hook(&CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
-            enable_hook(&CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
-            enable_hook(&CPlayer::SendMsg_OtherShapeAll, &CViewInvisible::CPlayer__SendMsg_OtherShapeAll);
+            enable_hook(&ATF::CPlayer::SenseState, &CViewInvisible::CPlayer__SenseState);
+            enable_hook(&ATF::CPlayer::SendMsg_FixPosition, &CViewInvisible::CPlayer__SendMsg_FixPosition);
+            enable_hook(&ATF::CPlayer::SendMsg_RealMovePoint, &CViewInvisible::CPlayer__SendMsg_RealMovePoint);
+            enable_hook(&ATF::CPlayer::SendMsg_OtherShapePart, &CViewInvisible::CPlayer__SendMsg_OtherShapePart);
+            enable_hook(&ATF::CPlayer::SendMsg_OtherShapeAll, &CViewInvisible::CPlayer__SendMsg_OtherShapeAll);
         }
 
         void CViewInvisible::unload()
@@ -146,7 +144,7 @@ namespace GameServer
                     ATF::_object_list_point* pCurr = pSector->m_Head.m_pNext;
                     while (pCurr != &pSector->m_Tail)
                     {
-                        CPlayer* pDst = (CPlayer *)pCurr->m_pItem;
+                        ATF::CPlayer* pDst = (ATF::CPlayer *)pCurr->m_pItem;
                         pCurr = pCurr->m_pNext;
 
                         if (pDst == pObj)
@@ -194,7 +192,7 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(next);
 
-            CPlayer* pDstPlayer = &Global::g_Player[dwClientIndex];
+            ATF::CPlayer* pDstPlayer = &ATF::Global::g_Player[dwClientIndex];
             if (!check_conditions(pPlayer, pDstPlayer))
                 return;
 
@@ -221,7 +219,7 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(next);
 
-            CPlayer* pDstPlayer = &Global::g_Player[dwClientIndex];
+            ATF::CPlayer* pDstPlayer = &ATF::Global::g_Player[dwClientIndex];
             if (!check_conditions(pPlayer, pDstPlayer))
                 return;
 

@@ -54,6 +54,9 @@ namespace GameServer
             if (result)
                 m_setEnabledHook.insert(ATF::cast_pointer_function(pTarget));
 
+            if (!result)
+                throw std::runtime_error("enable_hook");
+
             return result;
         }
 

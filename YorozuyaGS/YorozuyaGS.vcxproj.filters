@@ -130,6 +130,9 @@
     <Filter Include="Implementation\Fixes\SaveData\NpcData">
       <UniqueIdentifier>{b20c195e-344f-486e-9315-849fe84e499a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Implementation\Fixes\Animus">
+      <UniqueIdentifier>{db1adb0c-805c-416a-b472-482670e73fbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -261,6 +264,9 @@
     <ClCompile Include="NpcData.cpp">
       <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
     </ClCompile>
+    <ClCompile Include="Animus.cpp">
+      <Filter>Implementation\Fixes\Animus</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -391,6 +397,9 @@
     </ClInclude>
     <ClInclude Include="NpcData.h">
       <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
+    </ClInclude>
+    <ClInclude Include="Animus.h">
+      <Filter>Implementation\Fixes\Animus</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

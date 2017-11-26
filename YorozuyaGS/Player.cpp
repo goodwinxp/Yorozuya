@@ -11,7 +11,6 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
             using namespace GameServer::Extension;
         }
 
@@ -29,7 +28,6 @@ namespace GameServer
             enable_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             enable_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
             enable_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
-            enable_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
             enable_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
             enable_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
             enable_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
@@ -166,24 +164,6 @@ namespace GameServer
                 return;
 
             next(pObj, byGestureType);
-        }
-
-        void WINAPIV CPlayer::pc_GuildManageRequest(
-            ATF::CPlayer * pObj, 
-            char byType, 
-            unsigned int dwDst, 
-            unsigned int dwObj1, 
-            unsigned int dwObj2, 
-            unsigned int dwObj3, 
-            ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next)
-        {
-            if (!pObj->m_Param.m_pGuild)
-            {
-                pObj->SendMsg_GuildManageResult((char)202);
-                return;
-            }
-
-            next(pObj, byType, dwDst, dwObj1, dwObj2, dwObj3);
         }
         
         void WINAPIV CPlayer::pc_MovePortal(
@@ -331,7 +311,7 @@ namespace GameServer
                 return;
             } while (false);
 
-            _STORAGE_LIST::_db_con pNewItem;
+            ATF::_STORAGE_LIST::_db_con pNewItem;
             pPlayer->SendMsg_ExchangeItemResult(byResult, &pNewItem);
         }
 

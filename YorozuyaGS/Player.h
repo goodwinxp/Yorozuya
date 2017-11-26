@@ -81,15 +81,6 @@ namespace GameServer
                 char byGestureType,
                 ATF::Info::CPlayerpc_GestureRequest1719_ptr next);
 
-            static void WINAPIV pc_GuildManageRequest(
-                ATF::CPlayer* pPlayer,
-                char byType,
-                unsigned int dwDst,
-                unsigned int dwObj1,
-                unsigned int dwObj2,
-                unsigned int dwObj3,
-                ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next);
-
             static void WINAPIV pc_MovePortal(
                 ATF::CPlayer* pPlayer, 
                 int nPortalIndex, 

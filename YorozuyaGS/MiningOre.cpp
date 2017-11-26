@@ -9,11 +9,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CMiningOre::load()
         {
-            enable_hook(&CPlayer::pc_MineStart, &CMiningOre::pc_MineStart);
+            enable_hook(&ATF::CPlayer::pc_MineStart, &CMiningOre::pc_MineStart);
         }
 
         void CMiningOre::unload()

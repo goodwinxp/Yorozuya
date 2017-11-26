@@ -10,11 +10,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CTrade::load()
         {
-            enable_hook(&CPlayer::pc_DTradeOKRequest, &CTrade::pc_DTradeOKRequest);
+            enable_hook(&ATF::CPlayer::pc_DTradeOKRequest, &CTrade::pc_DTradeOKRequest);
         }
 
         void CTrade::unload()
@@ -34,14 +32,14 @@ namespace GameServer
             ATF::Info::CPlayerpc_DTradeOKRequest1687_ptr next)
         {
             bool bCheckPassed = false;
-            CPlayer* pDst = nullptr;
+            ATF::CPlayer* pDst = nullptr;
 
-            auto fnCheckExchange = [](CPlayer* pPlayer) -> bool
+            auto fnCheckExchange = [](ATF::CPlayer* pPlayer) -> bool
             {
                 bool result = true;
                 for (int i = 0; i < pPlayer->m_pmTrd.bySellItemNum; ++i)
                 {
-                    if (pPlayer->m_pmTrd.DItemNode[i].byStorageCode >= STORAGE_POS::STORAGE_NUM)
+                    if (pPlayer->m_pmTrd.DItemNode[i].byStorageCode >= ATF::STORAGE_POS::STORAGE_NUM)
                     {
                         result = false;
                         break;

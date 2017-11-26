@@ -12,7 +12,7 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
+            
             using namespace GameServer::Extension;
         }
 

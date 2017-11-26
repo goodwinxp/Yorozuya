@@ -6,11 +6,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CUnit::load()
         {
-            enable_hook(&CPlayer::pc_UnitDeliveryRequest, &CUnit::pc_UnitDeliveryRequest);
+            enable_hook(&ATF::CPlayer::pc_UnitDeliveryRequest, &CUnit::pc_UnitDeliveryRequest);
         }
 
         void CUnit::unload()
@@ -25,9 +23,9 @@ namespace GameServer
         }
 
         void WINAPIV CUnit::pc_UnitDeliveryRequest(
-            CPlayer* pPlayer,
+            ATF::CPlayer* pPlayer,
             char bySlotIndex, 
-            CItemStore * pStore, 
+            ATF::CItemStore * pStore,
             bool bPayFee, 
             float * pfNewPos, 
             int bUseNPCLinkIntem, 

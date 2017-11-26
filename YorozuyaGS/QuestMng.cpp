@@ -9,11 +9,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CQuestMng::load()
         {
-            enable_hook(&CPlayer::Emb_CreateNPCQuest, &CQuestMng::Emb_CreateNPCQuest);
+            enable_hook(&ATF::CPlayer::Emb_CreateNPCQuest, &CQuestMng::Emb_CreateNPCQuest);
         }
 
         void CQuestMng::unload()
@@ -65,7 +63,7 @@ namespace GameServer
                         return false;
                 }
 
-                auto pQuestFld = (_Quest_fld *)(*ATF::Global::s_tblQuest)->GetRecord(dwNPCQuestIndex);
+                auto pQuestFld = (ATF::_Quest_fld *)(*ATF::Global::s_tblQuest)->GetRecord(dwNPCQuestIndex);
                 if (!pQuestFld)
                     break;
 
@@ -80,7 +78,7 @@ namespace GameServer
                     return false;
                 }
                 
-                _happen_event_cont Dst;
+                ATF::_happen_event_cont Dst;
                 memcpy(&Dst, pHappenEvent, sizeof(Dst));
                 if (!pPlayer->Emb_StartQuest(-1, &Dst))
                     break;

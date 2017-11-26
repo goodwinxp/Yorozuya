@@ -12,8 +12,6 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CUnmannedTrader::load()
         {
             enable_hook(&ATF::CUnmannedTraderUserInfoTable::CompleteBuy, &CUnmannedTrader::CompleteBuy);
@@ -49,7 +47,7 @@ namespace GameServer
                 ATF::CPlayer* ppkBuyPlayer = nullptr;
                 ATF::CUnmannedTraderUserInfo* ppkBuyUser = nullptr;
 
-                _qry_case_unmandtrader_buy_update_wait *pkQuery = (_qry_case_unmandtrader_buy_update_wait*)pLoadData;
+                ATF::_qry_case_unmandtrader_buy_update_wait *pkQuery = (ATF::_qry_case_unmandtrader_buy_update_wait*)pLoadData;
                 if (!pObj->SubCompleteBuyFindBuyer(pkQuery, &ppkBuyUser, &ppkBuyPlayer))
                     break;
 
@@ -61,8 +59,8 @@ namespace GameServer
 
                 ppkBuyUser->ClearRequest();
 
-                _unmannedtrader_buy_item_result_zocl Dst;
-                _qry_case_unmandtrader_buy_update_complete pQryData;
+                ATF::_unmannedtrader_buy_item_result_zocl Dst;
+                ATF::_qry_case_unmandtrader_buy_update_complete pQryData;
 
                 memset(&Dst, 0, sizeof(Dst));
                 memset(&pQryData, 0, sizeof(pQryData));
@@ -314,7 +312,7 @@ namespace GameServer
             {
                 _qry_case_unmandtrader_re_registsingleitem_ex* pQryData = (_qry_case_unmandtrader_re_registsingleitem_ex*)pData;
 
-                _qry_case_unmandtrader_re_registsingleitem origQryData;
+                ATF::_qry_case_unmandtrader_re_registsingleitem origQryData;
                 memset(&origQryData, 0, sizeof(origQryData));
 
                 origQryData.byNum = pQryData->byNum;
@@ -347,7 +345,7 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(pObj);
 
-            _unmannedtrader_Regist_item_inform_zocl Msg;
+            ATF::_unmannedtrader_Regist_item_inform_zocl Msg;
             for (int j = 0; j < pObj->m_byMaxRegistCnt; ++j)
             {
                 auto& Info = pObj->m_vecRegistItemInfo[j];
