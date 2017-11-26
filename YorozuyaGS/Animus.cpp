@@ -99,6 +99,17 @@ namespace GameServer
                         break;
 
                     auto master_level = pObj->m_pMaster->GetLevel();
+                    if (pAnimusFld->m_nLevel < 50)
+                    {
+                        int nNeedMast = pow((pAnimusFld->m_nLevel - 5), 2) / 20.0;
+                        int nHaveMast = pObj->m_pMaster->m_pmMst.GetMasteryPerMast(6, 0);
+                        if (nHaveMast < nNeedMast)
+                        {
+                            pObj->m_pMaster->Emb_AlterStat(6, 0, nAlterExpa, 0, "CPlayer::AlterExp_Animus()---0", true);
+                            break;
+                        }
+                    }
+
                     if ((master_level >= 50 || pAnimusFld->m_nLevel > 50) &&
                         (master_level < 50 || (pAnimusFld->m_nLevel > master_level + 1)))
                     {
