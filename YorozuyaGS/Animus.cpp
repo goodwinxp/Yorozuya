@@ -105,7 +105,10 @@ namespace GameServer
                         int nHaveMast = pObj->m_pMaster->m_pmMst.GetMasteryPerMast(6, 0);
                         if (nHaveMast < nNeedMast)
                         {
-                            pObj->m_pMaster->Emb_AlterStat(6, 0, nAlterExpa, 0, "CPlayer::AlterExp_Animus()---0", true);
+                            if (nAlterExpa > 0)
+                            {
+                                pObj->m_pMaster->Emb_AlterStat(6, 0, nAlterExpa, 0, "CPlayer::AlterExp_Animus()---0", true);
+                            }
                             break;
                         }
                     }
