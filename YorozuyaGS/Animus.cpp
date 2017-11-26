@@ -8,8 +8,6 @@ namespace GameServer
 {
     namespace Fixes
     {
-        
-
         void CAnimus::load()
         {
             enable_hook(&ATF::CAnimus::AlterExp, &CAnimus::AlterExp);
@@ -31,7 +29,7 @@ namespace GameServer
             int64_t nAddExp,
             ATF::Info::CAnimusAlterExp6_ptr next)
         {
-           
+            UNREFERENCED_PARAMETER(next);
             do
             {
                 if (!pObj->m_pMaster)
