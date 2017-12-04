@@ -35,13 +35,7 @@ namespace GameServer
         bool CPvpOrderViewDB::LoadKillerList(std::set<uint32_t>& setKillerInfo)
         {
             // todo
-            return false;
-        }
-
-        bool CPvpOrderViewDB::SaveKillerList(const std::set<uint32_t>& setKillerInfo)
-        {
-            // todo
-            return false;
+            return true;
         }
     }
 }

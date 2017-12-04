@@ -46,7 +46,7 @@ namespace GameServer
             {
                 if ((uint8_t)e_code_item_table::tbl_code_siege_kit == pCon->m_byTableCode)
                 {
-                    result = true;
+                    result = next(pPlayer, pCon);
                     break;
                 }
 

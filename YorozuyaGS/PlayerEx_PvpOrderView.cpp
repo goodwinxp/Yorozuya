@@ -29,7 +29,6 @@ namespace GameServer
         {
             auto instance = CPvpOrderViewDB::get_instance();
             instance->CleanKillerList();
-
             for (auto& player : g_PlayerEx)
             {
                 player.CleanSerialKillerList();
@@ -57,7 +56,8 @@ namespace GameServer
                 m_setSavedKillerInfo.begin(), m_setSavedKillerInfo.end(),
                 std::inserter(setDiffKillerInfo, setDiffKillerInfo.end()));
 
-            instance->SaveKillerList(setDiffKillerInfo);
+            // todo: push to dqs thread this set
+            //instance->SaveKillerList(setDiffKillerInfo);
 
             {
                 std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);

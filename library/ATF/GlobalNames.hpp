@@ -26,6 +26,7 @@ START_ATF_NAMESPACE
         using CDarkHole_ptr = struct CDarkHole*;
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
+        using CNetworkEX_ptr = struct CNetworkEX*;
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
         using TimeLimitMgr_ptr = struct TimeLimitMgr*;
         using CRecordData_ptr = struct CRecordData*;
@@ -61,6 +62,7 @@ START_ATF_NAMESPACE
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);
         static CGuild_ptr g_Guild((CGuild_ptr)0x141500040L);
         static CNetProcess_ptr* g_NetProcess((CNetProcess_ptr *)0x1414F2088L);
+        static CNetworkEX_ptr g_Network((CNetworkEX_ptr)0x1414AC9E0L);
         static CHolyStoneSystem_ptr g_HolySys((CHolyStoneSystem_ptr)0x184981C90L);
         static bool* g_HideLicenseWindow((bool*)0x1799C9AE8L);
         static CRecordData_ptr g_tblExchangeItems((CRecordData_ptr)0x1799C6928L);

@@ -12,7 +12,6 @@ namespace GameServer
     {
         namespace
         {
-            
             using namespace GameServer::Extension;
         }
 

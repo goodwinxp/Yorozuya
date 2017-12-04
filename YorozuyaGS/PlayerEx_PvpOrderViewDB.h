@@ -19,8 +19,6 @@ namespace GameServer
             void CleanKillerList();
 
             bool LoadKillerList(_STD set<uint32_t>& setKillerInfo);
-
-            bool SaveKillerList(const _STD set<uint32_t>& setKillerInfo);
         };
     }
 }
