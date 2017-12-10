@@ -9,7 +9,7 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
+            
             using namespace GameServer::Extension;
         }
         void WINAPIV CPlayer::pc_MoveNext(

@@ -31,33 +31,19 @@ namespace GameServer
             bool check_conditions(ATF::CPlayer* pOne, bool bView = false);
 
         private:
-            auto get_level() const {
-                return m_nLv;
-            }
-
-            auto get_class_grade() const {
-                return m_nClassGrade;
-            }
-
-            auto get_play_time() const {
-                return m_nPlayTime;
-            }
-
-            auto get_pvp_point() const {
-                return m_dPvpPoint;
-            }
-
-            auto get_pvp_cash_bag() const {
-                return m_dPvpCashBag;
-            }
+            bool check_level(int32_t nLv) const;
+            bool check_class_grade(int32_t nClassGrade) const;
+            bool check_play_time(uint32_t nPlayTime) const;
+            bool check_pvp_point(double dPvpPoint) const;
+            bool check_pvp_cash_bag(double dPvpCashBag) const;
         private:
             bool m_bScoreHide = true;
             bool m_bScoreListShow = false;
             int32_t m_nLv = 0;
-            int32_t m_nClassGrade = 0;
-            uint32_t m_nPlayTime = 0;
-            long double m_dPvpPoint = 0.f;
-            long double m_dPvpCashBag = 0.f;            
+            int32_t m_nClassGrade = 0; bool m_bCheckClassGrade = false;
+            uint32_t m_nPlayTime = 0; bool m_bCheckPlayTime = false;
+            long double m_dPvpPoint = 0.f; bool m_bCheckPvpPoint = false;
+            long double m_dPvpCashBag = 0.f; bool m_bCheckPvpCashBag = false;
 
         private:
             static int WINAPIV _SendVotePaper(

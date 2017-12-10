@@ -9,7 +9,7 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
+        
 
         void CStore::load()
         {

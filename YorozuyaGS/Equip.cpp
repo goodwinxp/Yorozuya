@@ -12,7 +12,6 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
             using namespace GameServer::Extension;
         }
 
@@ -47,7 +46,7 @@ namespace GameServer
             {
                 if ((uint8_t)e_code_item_table::tbl_code_siege_kit == pCon->m_byTableCode)
                 {
-                    result = true;
+                    result = next(pPlayer, pCon);
                     break;
                 }
 
@@ -90,8 +89,8 @@ namespace GameServer
                 if (pItem == nullptr)
                     break;
 
-                if (byStorageCode != STORAGE_POS::EMBELLISH &&
-                    byStorageCode != STORAGE_POS::EQUIP)
+                if (byStorageCode != ATF::STORAGE_POS::EMBELLISH &&
+                    byStorageCode != ATF::STORAGE_POS::EQUIP)
                     break;
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
@@ -114,7 +113,7 @@ namespace GameServer
 
             do 
             {
-                if (byStorageCode >= STORAGE_POS::STORAGE_NUM)
+                if (byStorageCode >= ATF::STORAGE_POS::STORAGE_NUM)
                 {
                     result = next(pPlayer, byStorageCode, byStorageIndex, bEquipChange, bDelete, strErrorCodePos);
                     break;
@@ -124,8 +123,8 @@ namespace GameServer
                 if (!result)
                     break;
 
-                if (byStorageCode != STORAGE_POS::EMBELLISH &&
-                    byStorageCode != STORAGE_POS::EQUIP)
+                if (byStorageCode != ATF::STORAGE_POS::EMBELLISH &&
+                    byStorageCode != ATF::STORAGE_POS::EQUIP)
                     break;
 
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);

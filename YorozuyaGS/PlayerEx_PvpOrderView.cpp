@@ -12,6 +12,18 @@ namespace GameServer
             AdjustSerialKillerList();
         }
 
+        void CPlayerEx::LoadSerialKillerListComplete(
+            std::set<uint32_t>&& setKillerList,
+            uint32_t dwPlayerSerial)
+        {
+            if (m_dwPlayerSerial == dwPlayerSerial)
+            {
+                std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);
+                m_setKillerInfo = setKillerList;
+                m_setSavedKillerInfo = m_setKillerInfo;
+            }
+        }
+
         bool CPlayerEx::PushSerialKiller(DWORD dwKillerSerial)
         {
             std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);
@@ -27,20 +39,19 @@ namespace GameServer
         
         void CPlayerEx::AdjustSerialKillerList()
         {
-            auto instance = CPvpOrderViewDB::get_instance();
-            instance->CleanKillerList();
-
             for (auto& player : g_PlayerEx)
             {
                 player.CleanSerialKillerList();
             }
+            auto instance = CPvpOrderViewDB::get_instance();
+            instance->CleanKillerList();
         }
 
         void CPlayerEx::LoadSerialKillerList()
         {
             auto instance = CPvpOrderViewDB::get_instance();
             std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);
-            instance->LoadKillerList(m_setKillerInfo);
+            instance->LoadKillerList(this, m_dwPlayerSerial);
         }
 
         void CPlayerEx::SaveSerialKillerList()
@@ -57,7 +68,9 @@ namespace GameServer
                 m_setSavedKillerInfo.begin(), m_setSavedKillerInfo.end(),
                 std::inserter(setDiffKillerInfo, setDiffKillerInfo.end()));
 
-            instance->SaveKillerList(setDiffKillerInfo);
+            instance->SaveKillerList(
+                std::move(setDiffKillerInfo),
+                m_dwPlayerSerial);
 
             {
                 std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);

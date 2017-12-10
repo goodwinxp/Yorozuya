@@ -47,14 +47,14 @@ namespace GameServer
 
     protected:
         template <typename T1, typename T2>
-        inline bool enable_hook(T1 pTarget, T2 pDetour)
+        inline void enable_hook(T1 pTarget, T2 pDetour)
         {
             auto& core = ATF::CATFCore::get_instance();
             bool result = core.set_hook(pTarget, pDetour);
             if (result)
                 m_setEnabledHook.insert(ATF::cast_pointer_function(pTarget));
-
-            return result;
+            else
+                throw std::runtime_error("enable_hook");
         }
 
         void cleanup_all_hook() const

@@ -8,8 +8,6 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CChatSystem::load()
         {
             enable_hook(&ATF::CPlayer::pc_ChatFarRequest, &CChatSystem::pc_ChatFarRequest);
@@ -66,7 +64,7 @@ namespace GameServer
                     int dstRaceCode = pDst->m_Param.GetRaceCode();
                     int playerRaceCode = pPlayer->m_Param.GetRaceCode();
                     if (dstRaceCode != playerRaceCode && pDst->m_byUserDgr < 2 &&
-                        pDst->m_EP.GetEff_Have(_EFF_HAVE::Chat_All_Race) == 0.0)
+                        pDst->m_EP.GetEff_Have(ATF::_EFF_HAVE::Chat_All_Race) == 0.0)
                     {
                         auto RankingInstance = ATF::CPvpUserAndGuildRankingSystem::Instance();
                         auto dwSerial = RankingInstance->GetCurrentRaceBossSerial(dstRaceCode, 0);

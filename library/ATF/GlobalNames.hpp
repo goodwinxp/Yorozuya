@@ -26,7 +26,9 @@ START_ATF_NAMESPACE
         using CDarkHole_ptr = struct CDarkHole*;
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
+        using CNetworkEX_ptr = struct CNetworkEX*;
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
+        using TimeLimitMgr_ptr = struct TimeLimitMgr*;
         using CRecordData_ptr = struct CRecordData*;
         using CRecordData_ptr2 = struct CRecordData**;
         using CMgrAvatorItemHistory_ptr = struct CMgrAvatorItemHistory*;
@@ -34,6 +36,7 @@ START_ATF_NAMESPACE
         using CPlayer_Ref = ATF::CPlayer(&)[max_player];
         using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
 
+        static TimeLimitMgr_ptr g_TimerLimitMgr((TimeLimitMgr_ptr)0x1799CA2D0L);
         static bool* Major_Cash_Item((bool*)0x14096E033L);
         static CRFWorldDatabase_ptr2 pkDB((CRFWorldDatabase_ptr2)0x1415B7000L);
         static CMgrAvatorItemHistory_ptr s_MgrItemHistory((CMgrAvatorItemHistory_ptr)0x14098AA40L);
@@ -59,8 +62,12 @@ START_ATF_NAMESPACE
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);
         static CGuild_ptr g_Guild((CGuild_ptr)0x141500040L);
         static CNetProcess_ptr* g_NetProcess((CNetProcess_ptr *)0x1414F2088L);
+        static CNetworkEX_ptr g_Network((CNetworkEX_ptr)0x1414AC9E0L);
         static CHolyStoneSystem_ptr g_HolySys((CHolyStoneSystem_ptr)0x184981C90L);
         static bool* g_HideLicenseWindow((bool*)0x1799C9AE8L);
         static CRecordData_ptr g_tblExchangeItems((CRecordData_ptr)0x1799C6928L);
+
+        static float* pPCBANG_PRIMIUM_FAVOR__ANIMUS_EXP_RATE((float*)0x14096E018L);
+        static float* pANIMUS_EXP_RATE((float*)0x14096E000L);
     }; // static end namespace global
 END_ATF_NAMESPACE

@@ -15,7 +15,6 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
             using namespace GameServer::Extension;
         }
 
@@ -137,7 +136,7 @@ namespace GameServer
                 if (nResult != 0)
                     break;
 
-                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::SK_Spd);
+                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::SK_Spd);
                 nDelay += (int)pSkillFld->m_fActDelay;
                 PlayerEx.SetSkillAttackDelay(
                     pSkillFld->m_nClass, pSkillFld->m_nLv, pSkillFld->m_dwIndex,
@@ -186,7 +185,7 @@ namespace GameServer
                     break;
                 }
 
-                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::FC_Spd);
+                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::FC_Spd);
                 PlayerEx.SetForceAttackDelay(
                     pForceFld->m_nClass, pForceFld->m_nLv,
                     _STD chrono::milliseconds((int)pForceFld->m_fActDelay + nAddDelay));
@@ -234,11 +233,11 @@ namespace GameServer
                 int nDelay = pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
                 if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::launcher)
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + _EFF_PLUS::GE_Att_Spd_);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + ATF::_EFF_PLUS::GE_Att_Spd_);
                 }
                 else
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::Lcr_Att_Spd);
                 }
 
                 PlayerEx.SetNormalAttackDelay(_STD chrono::milliseconds(nDelay));
@@ -286,11 +285,11 @@ namespace GameServer
                 int nDelay = pPlayer->m_pmWpn.GetAttackDelay(pPlayer->GetLevel(), pPlayer->CalcEquipAttackDelay());
                 if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::launcher)
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + _EFF_PLUS::GE_Att_Spd_);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(pPlayer->m_pmWpn.byWpClass + ATF::_EFF_PLUS::GE_Att_Spd_);
                 }
                 else
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::Lcr_Att_Spd);
                 }
 
                 PlayerEx.SetSiegeAttackDelay(_STD chrono::milliseconds(nDelay));
@@ -407,7 +406,7 @@ namespace GameServer
             if (byRetCode == 0 && pSkillFld)
             {
                 auto& PlayerEx = CPlayerEx::get_instance()->GetPlayerEx(pPlayer);
-                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::SK_Spd);
+                int nDelay = (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::SK_Spd);
                 nDelay += (int)pSkillFld->m_fActDelay;
 
                 PlayerEx.SetSkillAttackDelay(
@@ -479,7 +478,7 @@ namespace GameServer
                     break;
                 }
 
-                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::FC_Spd);
+                int nAddDelay = (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::FC_Spd);
                 PlayerEx.SetForceAttackDelay(
                     pForceFld->m_nClass, pForceFld->m_nLv,
                     _STD chrono::milliseconds((int)pForceFld->m_fActDelay + nAddDelay));
@@ -542,12 +541,12 @@ namespace GameServer
                 if (pPlayer->m_pmWpn.byWpType != (uint8_t)e_wp_type::grenade &&
                     !pPlayer->m_pmWpn.byWpClass)
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::GE_Att_Spd_);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::GE_Att_Spd_);
                 }
                 if (pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::launcher ||
                     pPlayer->m_pmWpn.byWpType == (uint8_t)e_wp_type::grenade)
                 {
-                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(_EFF_PLUS::Lcr_Att_Spd);
+                    nDelay += (int)pPlayer->m_EP.GetEff_Plus(ATF::_EFF_PLUS::Lcr_Att_Spd);
                 }
 
                 PlayerEx.SetNormalAttackDelay(_STD chrono::milliseconds(nDelay));

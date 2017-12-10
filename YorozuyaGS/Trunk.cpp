@@ -8,7 +8,7 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
+        
 
         void CTrunk::load()
         {

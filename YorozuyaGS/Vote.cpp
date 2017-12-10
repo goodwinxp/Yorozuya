@@ -2,6 +2,8 @@
 
 #include "Vote.h"
 #include "ETypes.h"
+#include "../Common/Helpers/RapidHelper.hpp"
+
 #include <ATF/global.hpp>
 #include <ATF/PatriarchElectProcessor.hpp>
 #include <ATF/CandidateMgr.hpp>
@@ -11,6 +13,15 @@ namespace GameServer
 {
     namespace Fixes
     {
+        namespace
+        {
+            static const int32_t nDefaultLv = 30;
+            static const int32_t nDefaultPlayTime = UINT32_MAX;
+            static const int32_t nDefaultClassGrade = -1;
+            static const double dDefaultPvpPoint = -1.;
+            static const double dDefaultPvpCashBag = -1.;
+        }
+
         void CVote::load()
         {
             enable_hook(&ATF::Voter::_Vote, &CVote::_Vote);
@@ -34,13 +45,13 @@ namespace GameServer
         void CVote::configure(
             const rapidjson::Value & nodeConfig)
         {
-            m_nLv = nodeConfig["level"].GetInt();
-            m_nPlayTime = nodeConfig["play_time"].GetInt();
-            m_dPvpPoint = nodeConfig["pvp_point"].GetDouble();
-            m_dPvpCashBag = nodeConfig["pvp_cash_bag"].GetDouble();
-            m_nClassGrade = nodeConfig["class_grade"].GetInt();
-            m_bScoreListShow = nodeConfig["score_list_show"].GetBool();
-            m_bScoreHide = nodeConfig["score_hide"].GetBool();
+            m_nLv = RapidHelper::GetValueOrDefault(nodeConfig, "level", nDefaultLv);
+            m_nPlayTime = RapidHelper::GetValueOrDefault(nodeConfig, "play_time", nDefaultPlayTime);
+            m_dPvpPoint = RapidHelper::GetValueOrDefault(nodeConfig, "pvp_point", dDefaultPvpPoint);
+            m_dPvpCashBag = RapidHelper::GetValueOrDefault(nodeConfig, "pvp_cash_bag", dDefaultPvpCashBag);
+            m_nClassGrade = RapidHelper::GetValueOrDefault(nodeConfig, "class_grade", nDefaultClassGrade);
+            m_bScoreListShow = RapidHelper::GetValueOrDefault(nodeConfig, "score_list_show", true);
+            m_bScoreHide = RapidHelper::GetValueOrDefault(nodeConfig, "score_hide", false);
         }
 
         bool CVote::check_conditions(
@@ -57,25 +68,58 @@ namespace GameServer
                 if (!bView && !pOne->m_pUserDB->m_AvatorData.dbSupplement.VoteEnable)
                     break;
 
-                if (get_class_grade() > pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade)
+                if (!check_class_grade(pOne->m_pUserDB->m_AvatorData.dbAvator.m_byLastClassGrade))
                     break;
 
-                if (get_level() > pOne->GetLevel())
+                if (!check_level(pOne->GetLevel()))
                     break;
 
-                if (get_pvp_cash_bag() > pOne->GetPvpOrderView()->GetPvpCash())
+                if (!check_pvp_cash_bag(pOne->GetPvpOrderView()->GetPvpCash()))
                     break;
 
-                if (get_pvp_point() > pOne->m_Param.GetPvPPoint())
+                if (!check_pvp_point(pOne->m_Param.GetPvPPoint()))
                     break;
 
-                if (get_play_time() > pOne->m_pUserDB->m_AvatorData.dbSupplement.dwAccumPlayTime)
+                if (!check_play_time(pOne->m_pUserDB->m_AvatorData.dbSupplement.dwAccumPlayTime))
                     break;
 
                 result = true;
             } while (false);
 
             return result;
+        }
+
+        bool CVote::check_level(int32_t nLv) const
+        {
+            return nLv >= m_nLv;
+        }
+
+        bool CVote::check_class_grade(int32_t nClassGrade) const
+        {
+            if (m_nClassGrade == nDefaultClassGrade)
+                return true;
+            return nClassGrade >= m_nClassGrade;
+        }
+
+        bool CVote::check_play_time(uint32_t nPlayTime) const
+        {
+            if (m_nPlayTime == nDefaultPlayTime)
+                return true;
+            return nPlayTime >= m_nPlayTime;
+        }
+
+        bool CVote::check_pvp_point(double dPvpPoint) const
+        {
+            if (m_dPvpPoint == dDefaultPvpPoint)
+                return true;
+            return dPvpPoint >= m_dPvpPoint;
+        }
+
+        bool CVote::check_pvp_cash_bag(double dPvpCashBag) const
+        {
+            if (m_dPvpCashBag == dDefaultPvpCashBag)
+                return true;
+            return dPvpCashBag >= m_dPvpCashBag;
         }
 
         int WINAPIV CVote::_SendVotePaper(

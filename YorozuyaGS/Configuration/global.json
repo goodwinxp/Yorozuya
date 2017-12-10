@@ -1,9 +1,18 @@
 {
-    "intervals": {
-        "open_world_wait": 10000,
-        "step_delay": 10
-    },
-    "registry": {
-        "modules": []
-    }
+  "intervals": {
+    "open_world_wait": 10000,
+    "step_delay": 10
+  },
+  "registry": {
+    "modules": [
+      {
+        "name": "fix_Vote",
+        "config": {
+          "level": 30,
+          "score_list_show": true,
+          "score_hide": false
+        }
+      }
+    ]
+  }
 }

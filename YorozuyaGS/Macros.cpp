@@ -7,12 +7,10 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CMacros::load()
         {
-            enable_hook(&CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
-            enable_hook(&CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
+            enable_hook(&ATF::CMainThread::_db_Update_MacroData, &CMacros::_db_Update_MacroData);
+            enable_hook(&ATF::CMainThread::_db_Update_CryMsg, &CMacros::_db_Update_CryMsg);
         }
 
         void CMacros::unload()
@@ -27,17 +25,17 @@ namespace GameServer
         }
 
         bool WINAPIV CMacros::_db_Update_MacroData(
-            struct CMainThread* pObj,
+            ATF::CMainThread* pObj,
             unsigned int dwSerial,
-            struct _AIOC_A_MACRODATA* pMacro,
-            struct _AIOC_A_MACRODATA* pOldMacro,
+            ATF::_AIOC_A_MACRODATA* pMacro,
+            ATF::_AIOC_A_MACRODATA* pOldMacro,
             ATF::Info::CMainThread_db_Update_MacroData266_ptr next)
         {
             for (auto &i : pMacro->mcr_Chat)
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!Global::IsSQLValidString(j))
+                    if (!ATF::Global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }
@@ -46,7 +44,7 @@ namespace GameServer
             {
                 for (auto &j : i.Chat)
                 {
-                    if (!Global::IsSQLValidString(j))
+                    if (!ATF::Global::IsSQLValidString(j))
                         j[0] = '\0';
                 }
             }
@@ -57,19 +55,19 @@ namespace GameServer
         bool WINAPIV CMacros::_db_Update_CryMsg(
             ATF::CMainThread * pObj, 
             unsigned int dwSerial, 
-            _AVATOR_DATA * pNewData, 
-            _AVATOR_DATA * pOldData, 
+            ATF::_AVATOR_DATA * pNewData,
+            ATF::_AVATOR_DATA * pOldData,
             char * pwszQuery, 
             ATF::Info::CMainThread_db_Update_CryMsg252_ptr next)
         {
             for (auto &i : pNewData->dbBossCry.m_List)
             {       
-                if (!Global::IsSQLValidString(i.wszCryMsg))
+                if (!ATF::Global::IsSQLValidString(i.wszCryMsg))
                     i.wszCryMsg[0] = '\0';
             }
             for (auto &i : pOldData->dbBossCry.m_List)
             {
-                if (!Global::IsSQLValidString(i.wszCryMsg))
+                if (!ATF::Global::IsSQLValidString(i.wszCryMsg))
                     i.wszCryMsg[0] = '\0';
             }
 

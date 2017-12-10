@@ -8,14 +8,11 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CPostSystem::load()
         {
             enable_hook(&ATF::CPostSystemManager::CheckRegister, &CPostSystem::CheckRegister);
             enable_hook(&ATF::CMainThread::Load_ReturnPost_Complete, &CPostSystem::CMainThread__Load_ReturnPost_Complete);
             enable_hook(&ATF::CMainThread::Load_PostStorage_Complete, &CPostSystem::CMainThread__Load_PostStorage_Complete);
-            
         }
 
         void CPostSystem::unload()
@@ -36,7 +33,7 @@ namespace GameServer
         {
             UNREFERENCED_PARAMETER(pObj);
             UNREFERENCED_PARAMETER(next);
-            _qry_case_post_return_list_get* pInfo = (_qry_case_post_return_list_get *)pData;
+            ATF::_qry_case_post_return_list_get* pInfo = (ATF::_qry_case_post_return_list_get *)pData;
 
             do
             {
@@ -114,7 +111,7 @@ namespace GameServer
             char * pData, 
             ATF::Info::CMainThreadLoad_PostStorage_Complete112_ptr next)
         {
-            _qry_case_post_storage_list_get* pInfo = (_qry_case_post_storage_list_get *)pData;
+            ATF::_qry_case_post_storage_list_get* pInfo = (ATF::_qry_case_post_storage_list_get *)pData;
 
             do
             {

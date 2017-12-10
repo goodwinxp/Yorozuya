@@ -14,7 +14,7 @@ namespace GameServer
             return N;
         }
 
-        using namespace ATF;
+        
 
         void CUpdateGeneral::load()
         {

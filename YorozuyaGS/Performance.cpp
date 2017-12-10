@@ -7,7 +7,7 @@ namespace GameServer
 {
     namespace Extension
     {
-        using namespace ATF;
+        
 
         constexpr double PiToAngle(float value)
         {

@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 8)
     struct _log_case_charselect
     {
         char szID[13];
@@ -22,4 +22,5 @@ START_ATF_NAMESPACE
         int size();
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<_log_case_charselect, 0x34>(), "_log_case_charselect");
 END_ATF_NAMESPACE

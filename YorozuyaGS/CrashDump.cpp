@@ -12,8 +12,6 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         using UnhandledExceptionFilterPtr_t = LONG(WINAPIV*)(::_EXCEPTION_POINTERS *);
         using UnhandledExceptionFilterClbk_t = LONG(WINAPIV*)(::_EXCEPTION_POINTERS *, UnhandledExceptionFilterPtr_t);
 
@@ -53,15 +51,15 @@ namespace GameServer
             {
                 m_pSystemUnhandledFilter = GetProcAddress(hKernel, "UnhandledExceptionFilter");
 
-                auto& core = CATFCore::get_instance();
+                auto& core = ATF::CATFCore::get_instance();
                 core.reg_wrapper(
-                    m_pSystemUnhandledFilter,
-                    _hook_record{
-                        (LPVOID)0x14031d270L,
+                    &CCrashDump::UnhandledExceptionFilter,
+                    ATF::_hook_record{
+                        (LPVOID)m_pSystemUnhandledFilter,
                         (LPVOID *)&UnhandledExceptionFilter_user,
                         (LPVOID *)&UnhandledExceptionFilter_next,
-                        (LPVOID)cast_pointer_function(UnhandledExceptionFilter_wrapper),
-                        (LPVOID)cast_pointer_function((void(*)())&CCrashDump::UnhandledExceptionFilter)
+                        (LPVOID)ATF::cast_pointer_function(UnhandledExceptionFilter_wrapper),
+                        (LPVOID)ATF::cast_pointer_function((void(*)())&CCrashDump::UnhandledExceptionFilter)
                     });
             }
         }

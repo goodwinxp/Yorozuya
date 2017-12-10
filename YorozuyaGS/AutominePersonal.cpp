@@ -7,12 +7,10 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CAutominePersonal::load()
         {
-            enable_hook(&AutominePersonal::send_attacked, &CAutominePersonal::send_attacked);
-            enable_hook(&AutominePersonal::sub_battery, &CAutominePersonal::sub_battery);
+            enable_hook(&ATF::AutominePersonal::send_attacked, &CAutominePersonal::send_attacked);
+            enable_hook(&ATF::AutominePersonal::sub_battery, &CAutominePersonal::sub_battery);
         }
 
         void CAutominePersonal::unload()
@@ -30,7 +28,7 @@ namespace GameServer
             ATF::AutominePersonal * pObj,
             ATF::Info::AutominePersonalsend_attacked64_ptr next)
         {
-            _personal_automine_alter_dur_zocl msg;
+            ATF::_personal_automine_alter_dur_zocl msg;
             msg.dwObjSerial = pObj->m_dwObjSerial;
             msg.wHPRate = pObj->vfptr->CalcCurHPRate(pObj);
             char byType[2] = { 14, 60 };

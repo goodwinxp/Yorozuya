@@ -10,7 +10,7 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
+        
 
         ATF::_STORAGE_LIST::_db_con* WINAPIV CAttackSystem::IsBulletValidity(
             ATF::CPlayer* pPlayer,

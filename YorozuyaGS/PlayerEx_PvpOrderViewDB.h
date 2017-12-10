@@ -1,8 +1,12 @@
 #pragma once
 
 #include <set>
+#include <stdint.h>
 #include <ATF/CRFNewDatabase.hpp>
+
+#include "PlayerEx.h"
 #include "..\Common\Helpers\SingletonHelper.hpp"
+#include "..\Common\Helpers\ThreadPool.hpp"
 
 namespace GameServer
 {
@@ -16,11 +20,28 @@ namespace GameServer
             CPvpOrderViewDB();
 
         public:
+            void AdjustTable();
+
             void CleanKillerList();
 
-            bool LoadKillerList(_STD set<uint32_t>& setKillerInfo);
+            void LoadKillerList(
+                CPlayerEx* pPlayer,
+                uint32_t dwPlayerSerial);
 
-            bool SaveKillerList(const _STD set<uint32_t>& setKillerInfo);
+            void SaveKillerList(
+                _STD set<uint32_t>&& setKillerList,
+                uint32_t dwPlayerSerial);
+        private:
+            void LoadKillerListImpl(
+                uint32_t dwPlayerSerial,
+                _STD set<uint32_t>& setKillerList);
+
+            void SaveKillerListImpl(
+                const _STD set<uint32_t>& setKillerList,
+                uint32_t dwPlayerSerial);
+
+        private:
+            CThreadPool m_thPool;
         };
     }
 }

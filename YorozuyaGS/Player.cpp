@@ -3,6 +3,7 @@
 #include "ETypes.h"
 #include "Player.h"
 #include "PlayerEx.h"
+#include "PlayerEx_PvpOrderViewDB.h"
 #include <ATF/global.hpp>
 
 namespace GameServer
@@ -11,7 +12,6 @@ namespace GameServer
     {
         namespace
         {
-            using namespace ATF;
             using namespace GameServer::Extension;
         }
 
@@ -29,7 +29,6 @@ namespace GameServer
             enable_hook(&ATF::CPlayer::pc_MakeTrapRequest, &CPlayer::pc_MakeTrapRequest);
             enable_hook(&ATF::CPlayer::pc_MakeTowerRequest, &CPlayer::pc_MakeTowerRequest);
             enable_hook(&ATF::CPlayer::pc_GestureRequest, &CPlayer::pc_GestureRequest);
-            enable_hook(&ATF::CPlayer::pc_GuildManageRequest, &CPlayer::pc_GuildManageRequest);
             enable_hook(&ATF::CPlayer::pc_CharacterRenameCheck, &CPlayer::pc_CharacterRenameCheck);
             enable_hook(&ATF::CPlayer::pc_GotoBasePortalRequest, &CPlayer::pc_GotoBasePortalRequest);
             enable_hook(&ATF::CPlayer::pc_ThrowStorageItem, &CPlayer::pc_ThrowStorageItem);
@@ -38,6 +37,8 @@ namespace GameServer
             enable_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
             enable_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
             enable_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
+
+            enable_hook(&ATF::CMainThread::CheckDayChangedPvpPointClear, &CPlayer::CheckDayChangedPvpPointClear);
         }
 
         void CPlayer::unload()
@@ -49,6 +50,15 @@ namespace GameServer
         {
             static const ModuleName_t name = "fix_Player";
             return name;
+        }
+
+        void CPlayer::loop()
+        {
+            if (m_AdjustKillerTable.is_end())
+            {
+                CPvpOrderViewDB::get_instance()->AdjustTable();
+                m_AdjustKillerTable.begin(std::chrono::seconds(60));
+            }
         }
 
         void CPlayer::init_player_ex()
@@ -166,24 +176,6 @@ namespace GameServer
                 return;
 
             next(pObj, byGestureType);
-        }
-
-        void WINAPIV CPlayer::pc_GuildManageRequest(
-            ATF::CPlayer * pObj, 
-            char byType, 
-            unsigned int dwDst, 
-            unsigned int dwObj1, 
-            unsigned int dwObj2, 
-            unsigned int dwObj3, 
-            ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next)
-        {
-            if (!pObj->m_Param.m_pGuild)
-            {
-                pObj->SendMsg_GuildManageResult((char)202);
-                return;
-            }
-
-            next(pObj, byType, dwDst, dwObj1, dwObj2, dwObj3);
         }
         
         void WINAPIV CPlayer::pc_MovePortal(
@@ -331,7 +323,7 @@ namespace GameServer
                 return;
             } while (false);
 
-            _STORAGE_LIST::_db_con pNewItem;
+            ATF::_STORAGE_LIST::_db_con pNewItem;
             pPlayer->SendMsg_ExchangeItemResult(byResult, &pNewItem);
         }
 

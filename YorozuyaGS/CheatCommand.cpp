@@ -6,11 +6,9 @@ namespace GameServer
 {
     namespace Fixes
     {
-        using namespace ATF;
-
         void CCheatCommand::load()
         {
-            enable_hook(&Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
+            enable_hook(&ATF::Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
         }
 
         void CCheatCommand::unload()

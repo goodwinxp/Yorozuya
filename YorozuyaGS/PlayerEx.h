@@ -31,6 +31,10 @@ namespace GameServer
             void DBSave();
 
             static void CheckDayChangedPvpPointClear();
+
+            void LoadSerialKillerListComplete(
+                std::set<uint32_t>&& setKillerList,
+                uint32_t dwPlayerSerial);
         public:
             bool CheckUnitAttackDelay() const;
 
@@ -105,6 +109,7 @@ namespace GameServer
             float GetMoveSpeed() const;
 
         private:
+            uint32_t m_dwPlayerSerial;
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;

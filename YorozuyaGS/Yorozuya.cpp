@@ -5,8 +5,9 @@
 #include <rapidjson/document.h>
 #include <rapidjson/istreamwrapper.h>
 
-#include "Yorozuya.h"
+#include <ATF/global.hpp>
 
+#include "Yorozuya.h"
 
 namespace GameServer
 {
@@ -71,7 +72,11 @@ namespace GameServer
 
         rapidjson::IStreamWrapper isw(ifs);
         rapidjson::Document GlobalConfig;
-        if (GlobalConfig.ParseStream(isw).HasParseError()); // todo logging
+        if (GlobalConfig.ParseStream(isw).HasParseError())
+        {
+            ATF::Global::MyMessageBox("CYorozuya::configure", "Configuration file - corrupted");
+            throw std::runtime_error("Configuration file - corrupted");
+        }
 
         const auto&  cfgIntervals = GlobalConfig["intervals"];
         m_timeWaitOpenWorld = std::chrono::milliseconds(cfgIntervals["open_world_wait"].GetUint64());

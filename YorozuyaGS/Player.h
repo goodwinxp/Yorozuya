@@ -2,7 +2,8 @@
 
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
-
+#include "../Common/Helpers/TimeHelper.hpp"
+#include <ATF/CMainThreadInfo.hpp>
 #include <ATF/CPlayerInfo.hpp>
 #include <ATF/_make_tower_request_clzo.hpp>
 
@@ -22,6 +23,9 @@ namespace GameServer
             virtual void unload();
 
             virtual ModuleName_t get_name();
+
+            virtual void loop();
+
         private:
             void init_player_ex();
 
@@ -50,7 +54,7 @@ namespace GameServer
             static void WINAPIV UpdatePvpOrderView(
                 ATF::CPlayer *pPlayer,
                 int64_t tCurTime,
-                ATF::Info::CPlayerUpdatePvpPointLimiter1290_ptr next);
+                ATF::Info::CPlayerUpdatePvpOrderView1288_ptr next);
 
             static void WINAPIV CalPvpTempCash(
                 ATF::CPlayer *pPlayer,
@@ -80,15 +84,6 @@ namespace GameServer
                 ATF::CPlayer* pPlayer,
                 char byGestureType,
                 ATF::Info::CPlayerpc_GestureRequest1719_ptr next);
-
-            static void WINAPIV pc_GuildManageRequest(
-                ATF::CPlayer* pPlayer,
-                char byType,
-                unsigned int dwDst,
-                unsigned int dwObj1,
-                unsigned int dwObj2,
-                unsigned int dwObj3,
-                ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next);
 
             static void WINAPIV pc_MovePortal(
                 ATF::CPlayer* pPlayer, 
@@ -134,6 +129,13 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 float* pfCur,
                 ATF::Info::CPlayerpc_MoveStop1797_ptr next);
+
+            static void WINAPIV CheckDayChangedPvpPointClear(
+                ATF::CMainThread *pObj,
+                ATF::Info::CMainThreadCheckDayChangedPvpPointClear20_ptr next);
+
+            private:
+                TimeHelper::CTimer m_AdjustKillerTable;
         };
     };
 };

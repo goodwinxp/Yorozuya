@@ -187,31 +187,19 @@ namespace GameServer
                     break;
                 }
 
-                if (pPlayer->m_byStoneMapMoveInfo == 1)
-                {
-                    pPlayer->m_byStoneMapMoveInfo = 2;
-                }
-                else if (pPlayer->m_byStoneMapMoveInfo == 2)
+                auto nSerial = pPlayer->m_pCurMap->GetMapCode();
+                auto pItemStoreMngInstance = ATF::CItemStoreManager::Instance();
+                auto pItemStoreList = pItemStoreMngInstance->GetMapItemStoreListBySerial(nSerial);
+                if (!pItemStoreList)
                 {
                     byRetCode = 5;
                     break;
                 }
-                else
-                {
-                    auto nSerial = pPlayer->m_pCurMap->GetMapCode();
-                    auto pItemStoreMngInstance = ATF::CItemStoreManager::Instance();
-                    auto pItemStoreList = pItemStoreMngInstance->GetMapItemStoreListBySerial(nSerial);
-                    if (!pItemStoreList)
-                    {
-                        byRetCode = 5;
-                        break;
-                    }
 
-                    if (!fnFindNpc(pItemStoreList))
-                    {
-                        byRetCode = 5;
-                        break;
-                    }
+                if (!fnFindNpc(pItemStoreList))
+                {
+                    byRetCode = 5;
+                    break;
                 }
 
                 // SUCESS
