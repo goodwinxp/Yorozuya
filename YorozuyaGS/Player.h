@@ -26,6 +26,8 @@ namespace GameServer
         private:
             void init_player_ex();
 
+            void init_db_connection();
+
         private:
             static void WINAPIV Loop(
                 ATF::CPlayer *pPlayer,

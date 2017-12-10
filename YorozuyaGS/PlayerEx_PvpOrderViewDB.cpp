@@ -35,8 +35,6 @@ namespace GameServer
                 ATF::Global::MyMessageBox("DatabaseInit", "Connect World DB Failed!");
                 throw std::runtime_error("Connect World DB Failed!");
             }
-
-            AdjustTable();
         }
 
         void CPvpOrderViewDB::CleanKillerList()

@@ -3,6 +3,7 @@
 #include "ETypes.h"
 #include "Player.h"
 #include "PlayerEx.h"
+#include "PlayerEx_PvpOrderViewDB.h"
 #include <ATF/global.hpp>
 
 namespace GameServer
@@ -17,6 +18,7 @@ namespace GameServer
         void CPlayer::load()
         {
             init_player_ex();
+            init_db_connection();
 
             enable_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             enable_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
@@ -58,6 +60,11 @@ namespace GameServer
             {
                 player_ex->init_player(i, &ATF::Global::g_Player[i]);
             }
+        }
+
+        void CPlayer::init_db_connection()
+        {
+            CPvpOrderViewDB::get_instance()->AdjustTable();
         }
 
         void WINAPIV CPlayer::pc_MakeTrapRequest(

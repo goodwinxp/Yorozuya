@@ -20,6 +20,8 @@ namespace GameServer
             CPvpOrderViewDB();
 
         public:
+            void AdjustTable();
+
             void CleanKillerList();
 
             void LoadKillerList(
@@ -29,10 +31,7 @@ namespace GameServer
             void SaveKillerList(
                 _STD set<uint32_t>&& setKillerList,
                 uint32_t dwPlayerSerial);
-
         private:
-            void AdjustTable();
-
             void LoadKillerListImpl(
                 uint32_t dwPlayerSerial,
                 _STD set<uint32_t>& setKillerList);
