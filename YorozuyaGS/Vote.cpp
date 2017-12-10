@@ -110,11 +110,15 @@ namespace GameServer
 
         bool CVote::check_pvp_point(double dPvpPoint) const
         {
+            if (m_dPvpPoint == dDefaultPvpPoint)
+                return true;
             return dPvpPoint >= m_dPvpPoint;
         }
 
         bool CVote::check_pvp_cash_bag(double dPvpCashBag) const
         {
+            if (m_dPvpCashBag == dDefaultPvpCashBag)
+                return true;
             return dPvpCashBag >= m_dPvpCashBag;
         }
 
