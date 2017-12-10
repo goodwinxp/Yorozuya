@@ -1,14 +1,24 @@
 #include "stdafx.h"
 
+#include <sql.h>
+#include <sqlext.h>
 #include <ATF/global.hpp>
 #include <ATF/CNationSettingManager.hpp>
 #include "PlayerEx_PvpOrderViewDB.h"
+
+#pragma comment(lib, "odbc32.lib")
+
+namespace
+{
+    static const size_t nCountThread = 1;
+}
 
 namespace GameServer
 {
     namespace Extension
     {
         CPvpOrderViewDB::CPvpOrderViewDB()
+            : m_thPool(nCountThread)
         {
             auto instance = ATF::CNationSettingManager::Instance();
 
@@ -25,17 +35,143 @@ namespace GameServer
                 ATF::Global::MyMessageBox("DatabaseInit", "Connect World DB Failed!");
                 throw std::runtime_error("Connect World DB Failed!");
             }
+
+            AdjustTable();
         }
 
         void CPvpOrderViewDB::CleanKillerList()
         {
-            CRFNewDatabase::ExecUpdateQuery(L"DELETE FROM [tbl_KillerList]", false);
+            m_thPool.enqueue([=]() {
+                CRFNewDatabase::ExecUpdateQuery(L"DELETE FROM [tbl_KillerList]", false);
+            });
         }
 
-        bool CPvpOrderViewDB::LoadKillerList(std::set<uint32_t>& setKillerInfo)
+        void CPvpOrderViewDB::LoadKillerList(
+            CPlayerEx* pPlayer,
+            uint32_t dwPlayerSerial)
         {
-            // todo
-            return true;
+            m_thPool.enqueue([=]() {
+                std::set<uint32_t> setKillerList;
+                LoadKillerListImpl(dwPlayerSerial, setKillerList);
+                pPlayer->LoadSerialKillerListComplete(std::move(setKillerList), dwPlayerSerial);
+            });
+        }
+
+        void CPvpOrderViewDB::SaveKillerList(
+            std::set<uint32_t>&& setKillerList,
+            uint32_t dwPlayerSerial)
+        {
+            m_thPool.enqueue(
+                [this, dwPlayerSerial, list = std::set<uint32_t>(setKillerList)]()
+                {
+                    SaveKillerListImpl(list, dwPlayerSerial);
+                });
+        }
+
+        void CPvpOrderViewDB::AdjustTable()
+        {
+            if (TableExist("tbl_KillerList"))
+                return;
+
+            static wchar_t wszQueryCreateTable[] = LR"(
+                CREATE TABLE [dbo].[tbl_KillerList](
+                    [PlayerSerial] [int] NOT NULL,
+                    [DiedPlayerSerial] [int] NOT NULL,
+                    [When] [date] NOT NULL);
+                CREATE INDEX indx_load_list ON [tbl_KillerList] ([PlayerSerial], [When]);
+            )";
+
+            CRFNewDatabase::ExecUpdateQuery(wszQueryCreateTable, false);
+        }
+
+        void CPvpOrderViewDB::LoadKillerListImpl(
+            uint32_t dwPlayerSerial,
+            _STD set<uint32_t>& setKillerList)
+        {
+            std::string sQuerySelect(
+                "SELECT [DiedPlayerSerial] FROM [tbl_KillerList] WHERE [When] = CONVERT(date, GETDATE()) AND [PlayerSerial] = ");
+            sQuerySelect += std::to_string(dwPlayerSerial);
+
+            char* strQuery = (char *)sQuerySelect.c_str();
+
+            if (m_bSaveDBLog)
+            {
+                CRFNewDatabase::Log(strQuery);
+            }
+
+            if (m_hStmtSelect == SQL_NULL_HSTMT)
+            {
+                if (ReConnectDataBase() == false)
+                {
+                    CRFNewDatabase::ErrFmtLog("ReConnectDataBase Fail. Load killer list");
+                    return;
+                }
+            }
+
+            SQLRETURN sqlRet = SQLExecDirectA(m_hStmtSelect, (SQLCHAR *)strQuery, SQL_NTS);
+            if (sqlRet != SQL_SUCCESS && sqlRet != SQL_SUCCESS_WITH_INFO)
+            {
+                SQLCloseCursor(m_hStmtSelect);
+                if (sqlRet == SQL_NO_DATA)
+                    return;
+                else
+                {
+                    CRFNewDatabase::ErrorMsgLog(sqlRet, strQuery, "SQLExecDirectA", m_hStmtSelect);
+                    CRFNewDatabase::ErrorAction(sqlRet, m_hStmtSelect);
+                    return;
+                }
+            }
+
+            SQLLEN size;
+            while (TRUE)
+            {
+                sqlRet = SQLFetch(m_hStmtSelect);
+
+                if (sqlRet != SQL_SUCCESS && sqlRet != SQL_SUCCESS_WITH_INFO) 
+                    break;
+
+                uint32_t dwSerial;
+                sqlRet = SQLGetData(m_hStmtSelect, 1, SQL_C_ULONG, &dwSerial, 0, &size);
+                setKillerList.insert(dwSerial);
+
+                if (sqlRet != SQL_SUCCESS && sqlRet != SQL_SUCCESS_WITH_INFO)
+                    break;
+            }
+
+            SQLCloseCursor(m_hStmtSelect);
+
+            if (m_bSaveDBLog)
+                CRFNewDatabase::Log((char *)(sQuerySelect + " Success").c_str());
+        }
+
+        void CPvpOrderViewDB::SaveKillerListImpl(
+            const std::set<uint32_t>& setKillerList,
+            uint32_t dwPlayerSerial)
+        {
+            if (setKillerList.empty())
+                return;
+
+            std::string sQueryInsert(
+                "INSERT INTO [tbl_KillerList] ([PlayerSerial], [DiedPlayerSerial], [When]) VALUES ");
+
+            bool first = true;
+            for (auto& v : setKillerList)
+            {
+                if (!first)
+                {
+                    sQueryInsert += ",";
+                }
+                else
+                {
+                    first = false;
+                }
+                    
+                sQueryInsert += "(" + std::to_string(dwPlayerSerial);
+                sQueryInsert += ", " + std::to_string(v);
+                sQueryInsert += ", CONVERT(date, GETDATE()))";
+            }
+
+            CRFNewDatabase::ExecUpdateQuery((char *)sQueryInsert.c_str(), false);
         }
     }
 }

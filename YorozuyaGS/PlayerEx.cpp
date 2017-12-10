@@ -261,6 +261,8 @@ namespace GameServer
 
         bool CPlayerEx::Init(ATF::CPlayer* pPlayer)
         {
+            m_dwPlayerSerial = pPlayer->m_pUserDB->m_dwSerial;
+
             ResetSetItem();
 
             ResetAttackDelay();
@@ -278,11 +280,15 @@ namespace GameServer
 
         void CPlayerEx::Save()
         {
+            DBSave();
+
             ResetSetItem();
 
             ResetAttackDelay();
 
             CleanSerialKillerList();
+
+            m_dwPlayerSerial = -1;
         }
 
         void CPlayerEx::DBSave()

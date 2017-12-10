@@ -401,5 +401,8 @@
     <ClInclude Include="Animus.h">
       <Filter>Implementation\Fixes\Animus</Filter>
     </ClInclude>
+    <ClInclude Include="..\Common\Helpers\ThreadPool.hpp">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

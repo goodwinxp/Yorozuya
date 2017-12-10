@@ -36,6 +36,8 @@ namespace GameServer
             enable_hook(&ATF::CPlayer::pc_MoveNext, &CPlayer::pc_MoveNext);
             enable_hook(&ATF::CPlayer::pc_RealMovPos, &CPlayer::pc_RealMovPos);
             enable_hook(&ATF::CPlayer::pc_MoveStop, &CPlayer::pc_MoveStop);
+
+            enable_hook(&ATF::CMainThread::CheckDayChangedPvpPointClear, &CPlayer::CheckDayChangedPvpPointClear);
         }
 
         void CPlayer::unload()

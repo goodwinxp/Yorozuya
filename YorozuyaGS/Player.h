@@ -3,6 +3,7 @@
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
 
+#include <ATF/CMainThreadInfo.hpp>
 #include <ATF/CPlayerInfo.hpp>
 #include <ATF/_make_tower_request_clzo.hpp>
 
@@ -50,7 +51,7 @@ namespace GameServer
             static void WINAPIV UpdatePvpOrderView(
                 ATF::CPlayer *pPlayer,
                 int64_t tCurTime,
-                ATF::Info::CPlayerUpdatePvpPointLimiter1290_ptr next);
+                ATF::Info::CPlayerUpdatePvpOrderView1288_ptr next);
 
             static void WINAPIV CalPvpTempCash(
                 ATF::CPlayer *pPlayer,
@@ -125,6 +126,10 @@ namespace GameServer
                 ATF::CPlayer *pPlayer,
                 float* pfCur,
                 ATF::Info::CPlayerpc_MoveStop1797_ptr next);
+
+            static void WINAPIV CheckDayChangedPvpPointClear(
+                ATF::CMainThread *pObj,
+                ATF::Info::CMainThreadCheckDayChangedPvpPointClear20_ptr next);
         };
     };
 };
