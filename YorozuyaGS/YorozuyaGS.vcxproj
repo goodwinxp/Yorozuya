@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
+    <ClInclude Include="..\Common\Helpers\RapidHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\ThreadPool.hpp" />
     <ClInclude Include="..\Common\Helpers\TimeHelper.hpp" />

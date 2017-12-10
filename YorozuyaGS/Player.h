@@ -2,7 +2,7 @@
 
 #include "ModuleRegistry.h"
 #include "../Common/Interfaces/ModuleInterface.h"
-
+#include "../Common/Helpers/TimeHelper.hpp"
 #include <ATF/CMainThreadInfo.hpp>
 #include <ATF/CPlayerInfo.hpp>
 #include <ATF/_make_tower_request_clzo.hpp>
@@ -23,10 +23,11 @@ namespace GameServer
             virtual void unload();
 
             virtual ModuleName_t get_name();
+
+            virtual void loop();
+
         private:
             void init_player_ex();
-
-            void init_db_connection();
 
         private:
             static void WINAPIV Loop(
@@ -132,6 +133,9 @@ namespace GameServer
             static void WINAPIV CheckDayChangedPvpPointClear(
                 ATF::CMainThread *pObj,
                 ATF::Info::CMainThreadCheckDayChangedPvpPointClear20_ptr next);
+
+            private:
+                TimeHelper::CTimer m_AdjustKillerTable;
         };
     };
 };

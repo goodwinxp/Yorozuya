@@ -404,5 +404,8 @@
     <ClInclude Include="..\Common\Helpers\ThreadPool.hpp">
       <Filter>Common\Helpers</Filter>
     </ClInclude>
+    <ClInclude Include="..\Common\Helpers\RapidHelper.hpp">
+      <Filter>Common\Helpers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

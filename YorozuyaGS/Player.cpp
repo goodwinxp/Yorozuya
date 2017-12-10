@@ -18,7 +18,6 @@ namespace GameServer
         void CPlayer::load()
         {
             init_player_ex();
-            init_db_connection();
 
             enable_hook(&ATF::CPlayer::Load, &CPlayer::Load);
             enable_hook(&ATF::CPlayer::Loop, &CPlayer::Loop);
@@ -53,6 +52,15 @@ namespace GameServer
             return name;
         }
 
+        void CPlayer::loop()
+        {
+            if (m_AdjustKillerTable.is_end())
+            {
+                CPvpOrderViewDB::get_instance()->AdjustTable();
+                m_AdjustKillerTable.begin(std::chrono::seconds(60));
+            }
+        }
+
         void CPlayer::init_player_ex()
         {
             auto& player_ex = CPlayerEx::get_instance();
@@ -60,11 +68,6 @@ namespace GameServer
             {
                 player_ex->init_player(i, &ATF::Global::g_Player[i]);
             }
-        }
-
-        void CPlayer::init_db_connection()
-        {
-            CPvpOrderViewDB::get_instance()->AdjustTable();
         }
 
         void WINAPIV CPlayer::pc_MakeTrapRequest(
