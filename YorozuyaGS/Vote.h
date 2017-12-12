@@ -40,10 +40,10 @@ namespace GameServer
             bool m_bScoreHide = true;
             bool m_bScoreListShow = false;
             int32_t m_nLv = 0;
-            int32_t m_nClassGrade = 0; bool m_bCheckClassGrade = false;
-            uint32_t m_nPlayTime = 0; bool m_bCheckPlayTime = false;
-            long double m_dPvpPoint = 0.f; bool m_bCheckPvpPoint = false;
-            long double m_dPvpCashBag = 0.f; bool m_bCheckPvpCashBag = false;
+            int32_t m_nClassGrade = 0;
+            uint32_t m_nPlayTime = 0;
+            long double m_dPvpPoint = 0.f;
+            long double m_dPvpCashBag = 0.f;
 
         private:
             static int WINAPIV _SendVotePaper(
