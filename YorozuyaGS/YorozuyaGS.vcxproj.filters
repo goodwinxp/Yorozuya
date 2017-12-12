@@ -133,6 +133,9 @@
     <Filter Include="Implementation\Fixes\Animus">
       <UniqueIdentifier>{db1adb0c-805c-416a-b472-482670e73fbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{2309d194-3d30-40be-8dfb-a59dcbff0da3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -407,5 +410,16 @@
     <ClInclude Include="..\Common\Helpers\RapidHelper.hpp">
       <Filter>Common\Helpers</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
