@@ -9,6 +9,10 @@
         "name": "fix.vote",
         "config": {
           "level": 30,
+          "play_time": -1,
+          "pvp_point": -1,
+          "pvp_cash_bag": -1.0,
+          "class_grade": 0,
           "score_list_show": true,
           "score_hide": false
         }
@@ -22,3 +26,4 @@
     ]
   }
 }
+
