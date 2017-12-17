@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "Trap.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <cmath>
 #include <ATF/global.hpp>
@@ -82,7 +82,6 @@ namespace GameServer
                 if (dAlterPoint > pPlayerDier->m_Param.GetPvPPoint())
                     dAlterPoint = pPlayerDier->m_Param.GetPvPPoint();
 
-                // todo : replcat coeff in config
                 dAlterPoint *= 0.3;
 
                 if (dAlterPoint < 1.0)

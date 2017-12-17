@@ -12,6 +12,12 @@
           "score_list_show": true,
           "score_hide": false
         }
+      },
+      {
+        "name": "addons.loot_exchange",
+        "config": {
+          "activated": true
+        }
       }
     ]
   }

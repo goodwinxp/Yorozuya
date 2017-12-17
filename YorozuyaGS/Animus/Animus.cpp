@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "Animus.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <ATF/global.hpp>
 

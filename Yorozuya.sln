@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientRun", "ClientRun\Clie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Addons", "Addons", "{9B077178-ACCD-4F3E-A838-D899DBB75DEB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LootExchange", "Addons\LootExchange\LootExchange.vcxproj", "{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -53,16 +55,18 @@ Global
 		{F142A341-5EE0-442D-A15F-98AE9B48DBAE}.ReleaseDebug|x64.ActiveCfg = Release|x64
 		{F142A341-5EE0-442D-A15F-98AE9B48DBAE}.ReleaseDebug|x64.Build.0 = Release|x64
 		{F142A341-5EE0-442D-A15F-98AE9B48DBAE}.ReleaseDebug|x86.ActiveCfg = Release|x64
-		{F142A341-5EE0-442D-A15F-98AE9B48DBAE}.ReleaseDebug|x86.Build.0 = Release|x64
-		{F142A341-5EE0-442D-A15F-98AE9B48DBAE}.ReleaseDebug|x86.Deploy.0 = Release|x64
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.Release|x64.ActiveCfg = Release|x64
-		{62D4FA23-3793-4999-9099-9A2DDE44578B}.Release|x64.Build.0 = Release|x64
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.Release|x86.ActiveCfg = Release|Win32
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.Release|x86.Build.0 = Release|Win32
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.ReleaseDebug|x64.ActiveCfg = Release|x64
-		{62D4FA23-3793-4999-9099-9A2DDE44578B}.ReleaseDebug|x64.Build.0 = Release|x64
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.ReleaseDebug|x86.ActiveCfg = Release|Win32
 		{62D4FA23-3793-4999-9099-9A2DDE44578B}.ReleaseDebug|x86.Build.0 = Release|Win32
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.Release|x64.ActiveCfg = Release|x64
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.Release|x64.Build.0 = Release|x64
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.Release|x86.ActiveCfg = Release|x64
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5}.ReleaseDebug|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +77,7 @@ Global
 		{F142A341-5EE0-442D-A15F-98AE9B48DBAE} = {959345FA-F893-4A07-BC18-000AE429E98A}
 		{62D4FA23-3793-4999-9099-9A2DDE44578B} = {14526F49-7E8A-4B6B-A6E4-F316231F6265}
 		{9B077178-ACCD-4F3E-A838-D899DBB75DEB} = {750435D7-0A39-4031-A76B-E48C2024A000}
+		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}

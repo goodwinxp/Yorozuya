@@ -16,11 +16,11 @@ namespace GameServer
         public:
             CPlayerTrade() { };
 
-            virtual void load();
+            virtual void load() override;
 
-            virtual void unload();
+            virtual void unload() override;
 
-            virtual Yorozuya::Module::ModuleName_t get_name();
+            virtual Yorozuya::Module::ModuleName_t get_name() override;
         private:
             static void WINAPIV pc_DTradeOKRequest(
                 struct ATF::CPlayer* pObj,

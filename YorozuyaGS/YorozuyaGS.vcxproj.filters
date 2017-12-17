@@ -314,9 +314,6 @@
     <ClInclude Include="Common\version.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Common\ETypes.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="Common\ItemCheckHelper.h">
       <Filter>Common\ItemCheckHelper</Filter>
     </ClInclude>
@@ -439,6 +436,9 @@
     </ClInclude>
     <ClInclude Include="Player\PlayerChatSystem.h">
       <Filter>Impl\Fixes\Player\ChatSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ETypes.h">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

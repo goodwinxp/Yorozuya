@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "Vote.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 #include "../../Common/Helpers/RapidHelper.hpp"
 
 #include <ATF/global.hpp>

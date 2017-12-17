@@ -2,7 +2,7 @@
 
 #include "UnmannedTrader.h"
 #include "UnmannedTraderEx.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <ATF/global.hpp>
 #include <ATF/_qry_case_unmandtrader_buy_get_info.hpp>

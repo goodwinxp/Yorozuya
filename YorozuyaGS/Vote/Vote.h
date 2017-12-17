@@ -16,14 +16,15 @@ namespace GameServer
         public:
             CVote() { };
 
-            virtual void load();
+            virtual void load() override;
 
-            virtual void unload();
+            virtual void unload() override;
 
-            virtual Yorozuya::Module::ModuleName_t get_name();
+            virtual Yorozuya::Module::ModuleName_t get_name() override;
 
-            virtual void configure(const rapidjson::Value& nodeConfig);
+            virtual void configure(const rapidjson::Value& nodeConfig) override;
 
+        public:
             bool score_list_show() const { return m_bScoreListShow; }
 
             bool score_hide() const { return m_bScoreHide; }

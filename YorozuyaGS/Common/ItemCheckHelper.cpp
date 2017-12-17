@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-#include "Etypes.h"
+#include "../../Common/ETypes.h"
 #include "ItemCheckHelper.h"
 
 #include <ATF/global.hpp>

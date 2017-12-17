@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "PlayerEx.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 namespace GameServer
 {

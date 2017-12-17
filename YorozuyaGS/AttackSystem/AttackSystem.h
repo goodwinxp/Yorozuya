@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 #include "../Common/ModuleRegistry.h"
 #include "../../Common/Interfaces/ModuleInterface.h"
 
@@ -32,11 +32,11 @@ namespace GameServer
         public:
             CAttackSystem() { };
 
-            virtual void load();
+            virtual void load() override;
 
-            virtual void unload();
+            virtual void unload() override;
 
-            virtual Yorozuya::Module::ModuleName_t get_name();
+            virtual Yorozuya::Module::ModuleName_t get_name() override;
         private:
             static int WINAPIV _pre_check_skill_attack(
                 ATF::CPlayer *pPlayer, 

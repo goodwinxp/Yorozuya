@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "Player.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 #include "../PlayerEx/PlayerEx.h"
 
 #include <ATF/global.hpp>

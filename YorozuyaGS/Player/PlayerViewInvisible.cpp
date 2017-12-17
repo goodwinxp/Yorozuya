@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "PlayerViewInvisible.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <cmath>
 #include <bitset>

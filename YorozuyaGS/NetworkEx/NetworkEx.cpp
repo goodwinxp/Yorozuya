@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "NetworkEx.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <ATF/global.hpp>
 #include <ATF/_d_trade_ask_request_clzo.hpp>

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "PlayerQuestMng.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <ATF/global.hpp>
 

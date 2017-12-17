@@ -6,6 +6,7 @@
 #include <ATF.hpp>
 #include "../Common/Helpers/SingletonHelper.hpp"
 #include "../Common/Interfaces/ModuleInterface.h"
+#include "../Common/Helpers/ModuleHook.hpp"
 
 namespace GameServer
 {
@@ -41,6 +42,7 @@ namespace GameServer
     #pragma optimize("", off)
     template<typename _Ty>
     class CModuleRegister
+        : public CModuleHook
     {
     public:
         CModuleRegister()
@@ -48,29 +50,7 @@ namespace GameServer
             (void)objModuleRegister;
         }
 
-    protected:
-        template <typename T1, typename T2>
-        inline void enable_hook(T1 pTarget, T2 pDetour)
-        {
-            auto& core = ATF::CATFCore::get_instance();
-            bool result = core.set_hook(pTarget, pDetour);
-            if (result)
-                m_setEnabledHook.insert(ATF::cast_pointer_function(pTarget));
-            else
-                throw std::runtime_error("enable_hook");
-        }
-
-        void cleanup_all_hook() const
-        {
-            auto& core = ATF::CATFCore::get_instance();
-            for (auto& p : m_setEnabledHook)
-            {
-                core.unset_hook(p);
-            }
-        }
     private:
-        ::std::unordered_set<LPVOID> m_setEnabledHook;
-
         struct exec_register 
         {
             exec_register() 

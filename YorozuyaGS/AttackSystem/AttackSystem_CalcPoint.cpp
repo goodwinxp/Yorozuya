@@ -2,7 +2,7 @@
 
 #include "AttackSystem.h"
 #include "AttackSystemError.h"
-#include "../Common/ETypes.h"
+#include "../../Common/ETypes.h"
 
 #include <ATF/Global.hpp>
 
