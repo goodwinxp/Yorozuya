@@ -4,15 +4,6 @@
     <Filter Include="Main">
       <UniqueIdentifier>{d7ab938b-d0c0-44f1-bd44-e07251ecea41}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation">
-      <UniqueIdentifier>{db776c93-4053-4da3-8610-2ae5306bd331}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Modules">
-      <UniqueIdentifier>{984002e2-c9d4-4d3d-9849-93949cda1a8a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes">
-      <UniqueIdentifier>{8b9b2f5e-2631-49b7-bd7a-62c95af4320c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Common">
       <UniqueIdentifier>{338e16ac-dc29-4c25-8903-b8f673b31143}</UniqueIdentifier>
     </Filter>
@@ -22,387 +13,294 @@
     <Filter Include="Common\Interfaces">
       <UniqueIdentifier>{84729fe2-b8d5-4ddb-bbac-8c5a47e2cb76}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Modules\Registry">
-      <UniqueIdentifier>{4dc14335-3a61-4c39-95ba-0e51a7c2aea7}</UniqueIdentifier>
+    <Filter Include="Common\ItemCheckHelper">
+      <UniqueIdentifier>{17a32fd8-8492-4d48-8ed8-1fce20d9a4e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Fixes\Trade">
-      <UniqueIdentifier>{6e07834d-8ec9-4294-acd2-c566b448514d}</UniqueIdentifier>
+    <Filter Include="Common\ModuleRegistry">
+      <UniqueIdentifier>{aa9c70cc-b208-435b-87f0-44dd8a2274fb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Utils">
-      <UniqueIdentifier>{267211dc-6ee0-4971-aee6-c95814bfc120}</UniqueIdentifier>
+    <Filter Include="General">
+      <UniqueIdentifier>{db776c93-4053-4da3-8610-2ae5306bd331}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Implementation\Fixes\ViewInvisible">
-      <UniqueIdentifier>{e43d18ab-92a4-4958-9776-0cf059fb682a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\MiningOre">
-      <UniqueIdentifier>{39ee3179-5602-426d-9704-6e786f445445}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Trap">
-      <UniqueIdentifier>{48c0338d-0a93-4f86-8919-a81bbafdf6c1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Player">
-      <UniqueIdentifier>{6a832ba5-0d5d-45e9-89da-24362a1bffb3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Unit">
-      <UniqueIdentifier>{bb6b1a64-3f3c-4d47-b571-fc3ae31630be}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Vote">
-      <UniqueIdentifier>{3cf2e210-ea01-4cc8-8f0f-5d987e9b3fa3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Guild">
-      <UniqueIdentifier>{99848ae7-d06b-448a-ad60-10bbb94df9f2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\CheatCommand">
-      <UniqueIdentifier>{c042b090-b1b0-40d8-b730-f223d2a86a42}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\CreatePlayer">
-      <UniqueIdentifier>{cd64afa6-430b-450e-9a46-b276ca54313a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\PcBangFavor">
-      <UniqueIdentifier>{774a8f92-6288-4e85-859f-057b20d6a406}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Store">
-      <UniqueIdentifier>{292ca720-6865-4724-82a1-13f22689c64e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\PotionMgr">
-      <UniqueIdentifier>{31a519c1-5b7b-460b-a1f3-198574d5ca65}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\ChatSystem">
-      <UniqueIdentifier>{df0f5e39-c221-4f98-a8e4-5670aa31f199}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\AttackSystem">
-      <UniqueIdentifier>{6796257e-e00e-420e-9ad3-8865227e966a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\QuestMng">
-      <UniqueIdentifier>{d6438ea4-42f8-43c1-9493-b2f452c9ec6b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\UnmannedTrader">
-      <UniqueIdentifier>{632011d3-ab3e-47cf-b6d4-72bf3777902b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\PostSystem">
-      <UniqueIdentifier>{7a2d2e51-2529-49f0-9449-da8973679f93}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\NetworkEx">
-      <UniqueIdentifier>{71d1d1ce-c478-4d8f-827b-757912d79089}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Trunk">
-      <UniqueIdentifier>{be239024-89dd-4f03-8eee-2af981693b23}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Equip">
-      <UniqueIdentifier>{a29eb2ba-d869-4000-846e-04f4ed3ba569}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension">
-      <UniqueIdentifier>{971f852f-50d9-4cfd-852a-fa51392744a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\PlayerEx">
-      <UniqueIdentifier>{f2c272f9-f9d6-474d-a60f-324a62632076}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\CrashDump">
-      <UniqueIdentifier>{7bc92765-7618-49c2-9940-8c3d8a665ded}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\PlayerEx\PvpOrderView">
-      <UniqueIdentifier>{24f22438-12fc-4aca-a8da-4fc328e4a94c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\ReadSystemPass">
-      <UniqueIdentifier>{f14f6349-860f-4a12-88f4-1de7d233a87f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\PlayerEx\Move">
-      <UniqueIdentifier>{a5a5a5fb-58b8-48ea-9fef-8da7d2bfd206}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\AutominePersonal">
-      <UniqueIdentifier>{8e39544e-b3b3-45ed-9fd7-68ddfd5507d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\Performance">
-      <UniqueIdentifier>{5916199d-738c-40de-bc71-8088b9fab9bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Extension\PlayerEx\AttackDelay">
-      <UniqueIdentifier>{01a3c6f6-8a2d-4b6a-8660-490cd3ef91a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\SaveData">
-      <UniqueIdentifier>{bbeebadd-aec9-4a47-bc3b-7b5066974c29}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\SaveData\UpdateGeneral">
-      <UniqueIdentifier>{c6e01146-e788-4c6a-b17e-0d8d8ee0f916}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\SaveData\Macros">
-      <UniqueIdentifier>{20ddd43d-89b4-4686-add5-28db65204562}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\SaveData\NpcData">
-      <UniqueIdentifier>{b20c195e-344f-486e-9315-849fe84e499a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Implementation\Fixes\Animus">
-      <UniqueIdentifier>{db1adb0c-805c-416a-b472-482670e73fbb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource">
+    <Filter Include="General\Resource">
       <UniqueIdentifier>{2309d194-3d30-40be-8dfb-a59dcbff0da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{889c5401-91ba-41bf-8972-bd4ffb2d2ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes">
+      <UniqueIdentifier>{fea1b297-9a7d-4935-9fcd-eb958ffc7477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension">
+      <UniqueIdentifier>{1b360dd6-e387-442d-b432-74656f2de8c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player">
+      <UniqueIdentifier>{d4561e1e-e50b-4a7f-820b-7af30272c6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Animus">
+      <UniqueIdentifier>{49605d83-c8ee-4b4c-adfb-2ddc7d3a49aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\AutominePersonal">
+      <UniqueIdentifier>{40d879b6-f70b-462a-9e83-3eb2a006205b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\CheatCommand">
+      <UniqueIdentifier>{7628e2b1-06f9-4c47-9b5e-ce1e336ff887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\ChatSystem">
+      <UniqueIdentifier>{8c77647b-aba5-4888-a259-fe8d9cf477a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\CrashDump">
+      <UniqueIdentifier>{82628f80-1b22-4697-8853-8f0b32b1bc01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\CreatePlayer">
+      <UniqueIdentifier>{5eacad60-884c-4113-8e2a-74070680131f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\Equip">
+      <UniqueIdentifier>{6d939cb6-a19f-4206-aaf4-9dc1d9c898bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Guild">
+      <UniqueIdentifier>{448fd0ec-8e3f-4eb3-8a1d-c06a68c47d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\Guild">
+      <UniqueIdentifier>{e6650586-a73c-4005-865c-9db7c575c199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\MiningOre">
+      <UniqueIdentifier>{ea9654bd-f8e9-4c98-aad1-247a0bdbb3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\NetworkEx">
+      <UniqueIdentifier>{1d9833d6-c0ae-4ae7-a713-1a967309c5a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\PcBangFavor">
+      <UniqueIdentifier>{3fa09d64-c417-4913-8f20-e28525b1d683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\Performance">
+      <UniqueIdentifier>{c655b387-dbb8-4e5f-b4c4-ce1f2ce82cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\PostSystem">
+      <UniqueIdentifier>{fda88713-957a-4108-9f57-c40ffb313802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\PotionMgr">
+      <UniqueIdentifier>{2961d265-e1a5-41ac-9617-23cfcb844b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\QuestMng">
+      <UniqueIdentifier>{544be589-3eee-4e00-9c84-7673636d0915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\ReadSystemPass">
+      <UniqueIdentifier>{27be548b-ae35-4546-b86f-c8a7eece3647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\NpcData">
+      <UniqueIdentifier>{6ff6f47d-fa68-451b-a342-14a68d92d0e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Store">
+      <UniqueIdentifier>{e49d514a-445d-49ac-9e27-d1263ce0b238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Trap">
+      <UniqueIdentifier>{ad595d22-8dca-4c30-b077-4ae2ec257a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\UnmannedTrader">
+      <UniqueIdentifier>{a4994447-a9aa-4bd5-a321-23382abf9049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\ViewInvisible">
+      <UniqueIdentifier>{dad03f3b-8fd6-4fd8-bde2-eb43c5676955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Vote">
+      <UniqueIdentifier>{62826a61-c23f-43f6-abcd-b5b4ee172996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\MoveSystem">
+      <UniqueIdentifier>{0f23eea2-d9ad-40ab-8cc7-daa9225fd112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\PlayerEx">
+      <UniqueIdentifier>{d36b15ed-c466-4072-8639-3974e0904662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\PvpOrderView">
+      <UniqueIdentifier>{857c1e7d-6069-4439-a4f4-d0101b37130a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\System">
+      <UniqueIdentifier>{267f6493-f469-4e62-b507-20a5b214205d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\Trade">
+      <UniqueIdentifier>{5219fcde-e260-43f0-93bc-b76fc6fe693c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\Trunk">
+      <UniqueIdentifier>{2e66b612-e6f1-4b9d-9dba-395b373d33a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\Player\Unit">
+      <UniqueIdentifier>{512654e8-605a-4c08-96e8-75ab5cabbedb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\PlayerEx\MoveSystem">
+      <UniqueIdentifier>{4cb10782-6f47-409e-bfd0-af76bce46363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\PlayerEx\PvpOrderView">
+      <UniqueIdentifier>{ce33ae48-597c-411f-83d7-3b065b87eb0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Extension\PlayerEx\Attack">
+      <UniqueIdentifier>{95301e7e-a5de-4f07-ac2c-7f10e48ebed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\AttackSystem">
+      <UniqueIdentifier>{1b1e24a4-69b3-4b83-aa79-01ec35833f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\SaveData">
+      <UniqueIdentifier>{b84acb0c-eef5-4bb9-8f63-ebef903fc802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\SaveData\Macros">
+      <UniqueIdentifier>{758d8b66-1120-4f40-bfa7-334d697d4bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl\Fixes\SaveData\UpdateGeneral">
+      <UniqueIdentifier>{0c33e787-6cfe-4f9d-8472-0e4724bc0737}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
-    <ClCompile Include="Yorozuya.cpp">
-      <Filter>Implementation</Filter>
-    </ClCompile>
-    <ClCompile Include="ModuleRegistry.cpp">
-      <Filter>Implementation\Modules\Registry</Filter>
-    </ClCompile>
-    <ClCompile Include="Macros.cpp">
-      <Filter>Implementation\Fixes\SaveData\Macros</Filter>
-    </ClCompile>
-    <ClCompile Include="Trade.cpp">
-      <Filter>Implementation\Fixes\Trade</Filter>
-    </ClCompile>
-    <ClCompile Include="ItemCheckHelper.cpp">
-      <Filter>Implementation\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewInvisible.cpp">
-      <Filter>Implementation\Fixes\ViewInvisible</Filter>
-    </ClCompile>
-    <ClCompile Include="MiningOre.cpp">
-      <Filter>Implementation\Fixes\MiningOre</Filter>
-    </ClCompile>
-    <ClCompile Include="Trap.cpp">
-      <Filter>Implementation\Fixes\Trap</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Implementation\Fixes\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Unit.cpp">
-      <Filter>Implementation\Fixes\Unit</Filter>
-    </ClCompile>
-    <ClCompile Include="Vote.cpp">
-      <Filter>Implementation\Fixes\Vote</Filter>
-    </ClCompile>
-    <ClCompile Include="Guild.cpp">
-      <Filter>Implementation\Fixes\Guild</Filter>
-    </ClCompile>
-    <ClCompile Include="CheatCommand.cpp">
-      <Filter>Implementation\Fixes\CheatCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="CreatePlayer.cpp">
-      <Filter>Implementation\Fixes\CreatePlayer</Filter>
-    </ClCompile>
-    <ClCompile Include="UpdateGeneral.cpp">
-      <Filter>Implementation\Fixes\SaveData\UpdateGeneral</Filter>
-    </ClCompile>
-    <ClCompile Include="PcBangFavor.cpp">
-      <Filter>Implementation\Fixes\PcBangFavor</Filter>
-    </ClCompile>
-    <ClCompile Include="Store.cpp">
-      <Filter>Implementation\Fixes\Store</Filter>
-    </ClCompile>
-    <ClCompile Include="PotionMgr.cpp">
-      <Filter>Implementation\Fixes\PotionMgr</Filter>
-    </ClCompile>
-    <ClCompile Include="ChatSystem.cpp">
-      <Filter>Implementation\Fixes\ChatSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="AttackSystem.cpp">
-      <Filter>Implementation\Fixes\AttackSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="QuestMng.cpp">
-      <Filter>Implementation\Fixes\QuestMng</Filter>
-    </ClCompile>
-    <ClCompile Include="UnmannedTrader.cpp">
-      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
-    </ClCompile>
-    <ClCompile Include="PostSystem.cpp">
-      <Filter>Implementation\Fixes\PostSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="NetworkEx.cpp">
-      <Filter>Implementation\Fixes\NetworkEx</Filter>
-    </ClCompile>
-    <ClCompile Include="Trunk.cpp">
-      <Filter>Implementation\Fixes\Trunk</Filter>
-    </ClCompile>
-    <ClCompile Include="Equip.cpp">
-      <Filter>Implementation\Fixes\Equip</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerEx.cpp">
-      <Filter>Implementation\Extension\PlayerEx</Filter>
-    </ClCompile>
-    <ClCompile Include="CrashDump.cpp">
-      <Filter>Implementation\Extension\CrashDump</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerSystem.cpp">
-      <Filter>Implementation\Fixes\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerPvpOrderView.cpp">
-      <Filter>Implementation\Fixes\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerEx_PvpOrderView.cpp">
-      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
-    </ClCompile>
-    <ClCompile Include="ReadSystemPass.cpp">
-      <Filter>Implementation\Extension\ReadSystemPass</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerMove.cpp">
-      <Filter>Implementation\Fixes\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerEx_Move.cpp">
-      <Filter>Implementation\Extension\PlayerEx\Move</Filter>
-    </ClCompile>
-    <ClCompile Include="AutominePersonal.cpp">
-      <Filter>Implementation\Fixes\AutominePersonal</Filter>
-    </ClCompile>
-    <ClCompile Include="AttackSystem_CalcPoint.cpp">
-      <Filter>Implementation\Fixes\AttackSystem</Filter>
-    </ClCompile>
-    <ClCompile Include="Performance.cpp">
-      <Filter>Implementation\Extension\Performance</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\Helpers\zip.cpp">
       <Filter>Common\Helpers</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerEx_AttackDelay.cpp">
-      <Filter>Implementation\Extension\PlayerEx\AttackDelay</Filter>
+    <ClCompile Include="Common\ItemCheckHelper.cpp">
+      <Filter>Common\ItemCheckHelper</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp">
-      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
+    <ClCompile Include="Common\ModuleRegistry.cpp">
+      <Filter>Common\ModuleRegistry</Filter>
     </ClCompile>
-    <ClCompile Include="NpcData.cpp">
-      <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>General</Filter>
     </ClCompile>
-    <ClCompile Include="Animus.cpp">
-      <Filter>Implementation\Fixes\Animus</Filter>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="Yorozuya.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Animus\Animus.cpp">
+      <Filter>Impl\Fixes\Animus</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatCommand\CheatCommand.cpp">
+      <Filter>Impl\Fixes\CheatCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashDump\CrashDump.cpp">
+      <Filter>Impl\Extension\CrashDump</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePlayer\CreatePlayer.cpp">
+      <Filter>Impl\Fixes\CreatePlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkEx\NetworkEx.cpp">
+      <Filter>Impl\Fixes\NetworkEx</Filter>
+    </ClCompile>
+    <ClCompile Include="PcBangFavor\PcBangFavor.cpp">
+      <Filter>Impl\Fixes\PcBangFavor</Filter>
+    </ClCompile>
+    <ClCompile Include="Performance\Performance.cpp">
+      <Filter>Impl\Extension\Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>Impl\Fixes\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerPvpOrderView.cpp">
+      <Filter>Impl\Fixes\Player\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerSystem.cpp">
+      <Filter>Impl\Fixes\Player\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadSystemPass\ReadSystemPass.cpp">
+      <Filter>Impl\Extension\ReadSystemPass</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx\PlayerEx.cpp">
+      <Filter>Impl\Extension\PlayerEx</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx\PlayerEx_Move.cpp">
+      <Filter>Impl\Extension\PlayerEx\MoveSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx\PlayerEx_PvpOrderView.cpp">
+      <Filter>Impl\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx\PlayerEx_PvpOrderViewDB.cpp">
+      <Filter>Impl\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEx\PlayerEx_AttackDelay.cpp">
+      <Filter>Impl\Extension\PlayerEx\Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="PostSystem\PostSystem.cpp">
+      <Filter>Impl\Fixes\PostSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PotionMgr\PotionMgr.cpp">
+      <Filter>Impl\Fixes\PotionMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveData\Macros.cpp">
+      <Filter>Impl\Fixes\SaveData\Macros</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveData\UpdateGeneral.cpp">
+      <Filter>Impl\Fixes\SaveData\UpdateGeneral</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcData\NpcData.cpp">
+      <Filter>Impl\Fixes\NpcData</Filter>
+    </ClCompile>
+    <ClCompile Include="Store\Store.cpp">
+      <Filter>Impl\Fixes\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="Trap\Trap.cpp">
+      <Filter>Impl\Fixes\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="UnmannedTrader\UnmannedTrader.cpp">
+      <Filter>Impl\Fixes\UnmannedTrader</Filter>
+    </ClCompile>
+    <ClCompile Include="Vote\Vote.cpp">
+      <Filter>Impl\Fixes\Vote</Filter>
+    </ClCompile>
+    <ClCompile Include="AutominePersonal\AutominePersonal.cpp">
+      <Filter>Impl\Fixes\AutominePersonal</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild\Guild.cpp">
+      <Filter>Impl\Fixes\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerGuild.cpp">
+      <Filter>Impl\Fixes\Player\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackSystem\AttackSystem.cpp">
+      <Filter>Impl\Fixes\AttackSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackSystem\AttackSystem_CalcPoint.cpp">
+      <Filter>Impl\Fixes\AttackSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerMoveSystem.cpp">
+      <Filter>Impl\Fixes\Player\MoveSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerTrade.cpp">
+      <Filter>Impl\Fixes\Player\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerTrunk.cpp">
+      <Filter>Impl\Fixes\Player\Trunk</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerUnit.cpp">
+      <Filter>Impl\Fixes\Player\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerEquip.cpp">
+      <Filter>Impl\Fixes\Player\Equip</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerMiningOre.cpp">
+      <Filter>Impl\Fixes\Player\MiningOre</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerQuestMng.cpp">
+      <Filter>Impl\Fixes\Player\QuestMng</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerViewInvisible.cpp">
+      <Filter>Impl\Fixes\Player\ViewInvisible</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerChatSystem.cpp">
+      <Filter>Impl\Fixes\Player\ChatSystem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Main</Filter>
-    </ClInclude>
-    <ClInclude Include="Yorozuya.h">
-      <Filter>Implementation</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp">
       <Filter>Common\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h">
       <Filter>Common\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="ModuleRegistry.h">
-      <Filter>Implementation\Modules\Registry</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp">
       <Filter>Common\Helpers</Filter>
-    </ClInclude>
-    <ClInclude Include="Macros.h">
-      <Filter>Implementation\Fixes\SaveData\Macros</Filter>
-    </ClInclude>
-    <ClInclude Include="Trade.h">
-      <Filter>Implementation\Fixes\Trade</Filter>
-    </ClInclude>
-    <ClInclude Include="ItemCheckHelper.h">
-      <Filter>Implementation\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="ETypes.h">
-      <Filter>Implementation\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewInvisible.h">
-      <Filter>Implementation\Fixes\ViewInvisible</Filter>
-    </ClInclude>
-    <ClInclude Include="MiningOre.h">
-      <Filter>Implementation\Fixes\MiningOre</Filter>
-    </ClInclude>
-    <ClInclude Include="Trap.h">
-      <Filter>Implementation\Fixes\Trap</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Implementation\Fixes\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>Implementation\Fixes\Unit</Filter>
-    </ClInclude>
-    <ClInclude Include="Vote.h">
-      <Filter>Implementation\Fixes\Vote</Filter>
-    </ClInclude>
-    <ClInclude Include="Guild.h">
-      <Filter>Implementation\Fixes\Guild</Filter>
-    </ClInclude>
-    <ClInclude Include="CheatCommand.h">
-      <Filter>Implementation\Fixes\CheatCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="CreatePlayer.h">
-      <Filter>Implementation\Fixes\CreatePlayer</Filter>
-    </ClInclude>
-    <ClInclude Include="UpdateGeneral.h">
-      <Filter>Implementation\Fixes\SaveData\UpdateGeneral</Filter>
-    </ClInclude>
-    <ClInclude Include="PcBangFavor.h">
-      <Filter>Implementation\Fixes\PcBangFavor</Filter>
-    </ClInclude>
-    <ClInclude Include="Store.h">
-      <Filter>Implementation\Fixes\Store</Filter>
-    </ClInclude>
-    <ClInclude Include="PotionMgr.h">
-      <Filter>Implementation\Fixes\PotionMgr</Filter>
-    </ClInclude>
-    <ClInclude Include="ChatSystem.h">
-      <Filter>Implementation\Fixes\ChatSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="AttackSystem.h">
-      <Filter>Implementation\Fixes\AttackSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="QuestMng.h">
-      <Filter>Implementation\Fixes\QuestMng</Filter>
-    </ClInclude>
-    <ClInclude Include="UnmannedTrader.h">
-      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
-    </ClInclude>
-    <ClInclude Include="PostSystem.h">
-      <Filter>Implementation\Fixes\PostSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="UnmannedTraderEx.h">
-      <Filter>Implementation\Fixes\UnmannedTrader</Filter>
-    </ClInclude>
-    <ClInclude Include="NetworkEx.h">
-      <Filter>Implementation\Fixes\NetworkEx</Filter>
-    </ClInclude>
-    <ClInclude Include="Trunk.h">
-      <Filter>Implementation\Fixes\Trunk</Filter>
-    </ClInclude>
-    <ClInclude Include="Equip.h">
-      <Filter>Implementation\Fixes\Equip</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerEx.h">
-      <Filter>Implementation\Extension\PlayerEx</Filter>
-    </ClInclude>
-    <ClInclude Include="CrashDump.h">
-      <Filter>Implementation\Extension\CrashDump</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerEx_detail.h">
-      <Filter>Implementation\Extension\PlayerEx</Filter>
-    </ClInclude>
-    <ClInclude Include="ReadSystemPass.h">
-      <Filter>Implementation\Extension\ReadSystemPass</Filter>
-    </ClInclude>
-    <ClInclude Include="AttackSystemError.h">
-      <Filter>Implementation\Fixes\AttackSystem</Filter>
-    </ClInclude>
-    <ClInclude Include="AutominePersonal.h">
-      <Filter>Implementation\Fixes\AutominePersonal</Filter>
-    </ClInclude>
-    <ClInclude Include="Performance.h">
-      <Filter>Implementation\Extension\Performance</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\zip.h">
       <Filter>Common\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\TimeHelper.hpp">
       <Filter>Common\Helpers</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerEx_PvpOrderViewDB.h">
-      <Filter>Implementation\Extension\PlayerEx\PvpOrderView</Filter>
-    </ClInclude>
-    <ClInclude Include="NpcData.h">
-      <Filter>Implementation\Fixes\SaveData\NpcData</Filter>
-    </ClInclude>
-    <ClInclude Include="Animus.h">
-      <Filter>Implementation\Fixes\Animus</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Helpers\ThreadPool.hpp">
       <Filter>Common\Helpers</Filter>
@@ -411,15 +309,141 @@
       <Filter>Common\Helpers</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Resource</Filter>
+      <Filter>General\Resource</Filter>
     </ClInclude>
-    <ClInclude Include="version.h">
-      <Filter>Resource</Filter>
+    <ClInclude Include="Common\version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ETypes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ItemCheckHelper.h">
+      <Filter>Common\ItemCheckHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ModuleRegistry.h">
+      <Filter>Common\ModuleRegistry</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="Yorozuya.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Animus\Animus.h">
+      <Filter>Impl\Fixes\Animus</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatCommand\CheatCommand.h">
+      <Filter>Impl\Fixes\CheatCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashDump\CrashDump.h">
+      <Filter>Impl\Extension\CrashDump</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePlayer\CreatePlayer.h">
+      <Filter>Impl\Fixes\CreatePlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkEx\NetworkEx.h">
+      <Filter>Impl\Fixes\NetworkEx</Filter>
+    </ClInclude>
+    <ClInclude Include="PcBangFavor\PcBangFavor.h">
+      <Filter>Impl\Fixes\PcBangFavor</Filter>
+    </ClInclude>
+    <ClInclude Include="Performance\Performance.h">
+      <Filter>Impl\Extension\Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\Player.h">
+      <Filter>Impl\Fixes\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadSystemPass\ReadSystemPass.h">
+      <Filter>Impl\Extension\ReadSystemPass</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx\PlayerEx.h">
+      <Filter>Impl\Extension\PlayerEx</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx\PlayerEx_detail.h">
+      <Filter>Impl\Extension\PlayerEx</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEx\PlayerEx_PvpOrderViewDB.h">
+      <Filter>Impl\Extension\PlayerEx\PvpOrderView</Filter>
+    </ClInclude>
+    <ClInclude Include="PostSystem\PostSystem.h">
+      <Filter>Impl\Fixes\PostSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PotionMgr\PotionMgr.h">
+      <Filter>Impl\Fixes\PotionMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData\Macros.h">
+      <Filter>Impl\Fixes\SaveData\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveData\UpdateGeneral.h">
+      <Filter>Impl\Fixes\SaveData\UpdateGeneral</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcData\NpcData.h">
+      <Filter>Impl\Fixes\NpcData</Filter>
+    </ClInclude>
+    <ClInclude Include="Store\Store.h">
+      <Filter>Impl\Fixes\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="Trap\Trap.h">
+      <Filter>Impl\Fixes\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="UnmannedTrader\UnmannedTrader.h">
+      <Filter>Impl\Fixes\UnmannedTrader</Filter>
+    </ClInclude>
+    <ClInclude Include="UnmannedTrader\UnmannedTraderEx.h">
+      <Filter>Impl\Fixes\UnmannedTrader</Filter>
+    </ClInclude>
+    <ClInclude Include="Vote\Vote.h">
+      <Filter>Impl\Fixes\Vote</Filter>
+    </ClInclude>
+    <ClInclude Include="AutominePersonal\AutominePersonal.h">
+      <Filter>Impl\Fixes\AutominePersonal</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild\Guild.h">
+      <Filter>Impl\Fixes\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerGuild.h">
+      <Filter>Impl\Fixes\Player\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSystem\AttackSystem.h">
+      <Filter>Impl\Fixes\AttackSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSystem\AttackSystemError.h">
+      <Filter>Impl\Fixes\AttackSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerMoveSystem.h">
+      <Filter>Impl\Fixes\Player\MoveSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerPvpOrderView.h">
+      <Filter>Impl\Fixes\Player\PvpOrderView</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerTrade.h">
+      <Filter>Impl\Fixes\Player\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerTrunk.h">
+      <Filter>Impl\Fixes\Player\Trunk</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerUnit.h">
+      <Filter>Impl\Fixes\Player\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerEquip.h">
+      <Filter>Impl\Fixes\Player\Equip</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerMiningOre.h">
+      <Filter>Impl\Fixes\Player\MiningOre</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerQuestMng.h">
+      <Filter>Impl\Fixes\Player\QuestMng</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerViewInvisible.h">
+      <Filter>Impl\Fixes\Player\ViewInvisible</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\PlayerChatSystem.h">
+      <Filter>Impl\Fixes\Player\ChatSystem</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
-      <Filter>Resource</Filter>
+      <Filter>General\Resource</Filter>
     </ResourceCompile>
   </ItemGroup>
 </Project>

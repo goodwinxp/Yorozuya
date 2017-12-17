@@ -7,7 +7,7 @@
 
 namespace ModuleDllHelper
 {
-    namespace fs = _STD tr2::sys;
+    namespace fs = ::std::experimental::filesystem::v1;
     using namespace Yorozuya;
     
     class CModuleDll : public Module::IModule

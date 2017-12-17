@@ -19,7 +19,7 @@
     <ProjectGuid>{4C8EF5AC-A092-49CD-A5FA-85DA93546ACC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Yorozuya</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
