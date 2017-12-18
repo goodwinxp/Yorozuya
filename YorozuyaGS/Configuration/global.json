@@ -20,7 +20,8 @@
       {
         "name": "addons.loot_exchange",
         "config": {
-          "activated": true
+          "activated": true,
+		  "exchange_all": false
         }
       }
     ]

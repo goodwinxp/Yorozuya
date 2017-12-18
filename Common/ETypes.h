@@ -4,6 +4,7 @@
 #include <ATF/_WeaponItem_fld.hpp>
 #include <ATF/_CloakItem_fld.hpp>
 #include <ATF/_RingItem_fld.hpp>
+#include <ATF/_AmuletItem_fld.hpp>
 #include <ATF/_BulletItem_fld.hpp>
 #include <ATF/_MakeToolItem_fld.hpp>
 #include <ATF/_BagItem_fld.hpp>
@@ -102,10 +103,10 @@ namespace GameServer
         cp = 0,
         gold = 1,
         pvp_point = 2,
-        gold_point = 3,
+        pvp_point_2 = 3,
         processing_point = 4,
         hunter_point = 5,
-        unknown = 6,
+        gold_point = 6,
         num
     };
 

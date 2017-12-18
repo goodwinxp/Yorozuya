@@ -25,14 +25,20 @@ namespace GameServer
             virtual void configure(const rapidjson::Value& nodeConfig) override;
 
         private:
-            static int GetMoneyType(ATF::_base_fld* pRec, char byTableCode);
+            static int GetMoneyType(
+                ATF::_base_fld* pRec, char byTableCode);
 
-            static int GetMoneyValue(ATF::_base_fld* pRec, char byTableCode, uint32_t nMoneyType);
+            static int GetMoneyValue(
+                ATF::_base_fld * pRec,
+                char byTableCode,
+                uint32_t nMoneyType,
+                int nRace);
 
-            static void AddMoney(ATF::CPlayer* pObj, uint32_t nMoneyType, int nMoneyValue);
+            static bool AddMoney(ATF::CPlayer* pObj, uint32_t nMoneyType, int nMoneyValue);
 
         private:
             static bool m_bActivated;
+            static bool m_bExchangeAll;
 
         private:
             static void WINAPIV pc_TakeGroundingItem(
