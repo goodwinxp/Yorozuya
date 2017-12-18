@@ -21,7 +21,7 @@
         "name": "addons.loot_exchange",
         "config": {
           "activated": true,
-		  "exchange_all": false
+          "exchange_all": false
         }
       }
     ]
