@@ -20,4 +20,5 @@ START_ATF_NAMESPACE
         char byThrowerRace;
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<_itembox_create_zocl, 0x19>(), "_itembox_create_zocl");
 END_ATF_NAMESPACE

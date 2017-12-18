@@ -22,6 +22,8 @@ namespace GameServer
 
         void loop();
 
+        void zone_start();
+
         void configure(const rapidjson::Value& nodeConfig);
 
         void push_module(Yorozuya::Module::Module_ptr spModule);

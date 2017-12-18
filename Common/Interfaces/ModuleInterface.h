@@ -24,6 +24,10 @@ namespace Yorozuya
             {
             }
 
+            virtual void zone_start()
+            {
+            }
+
             virtual ModuleVersion_t get_version()
             {
                 return ATF::usVersion;

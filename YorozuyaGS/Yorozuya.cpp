@@ -8,6 +8,7 @@
 #include <ATF/global.hpp>
 
 #include "Yorozuya.h"
+#include "../../Common/Helpers/RapidHelper.hpp"
 
 namespace GameServer
 {
@@ -56,6 +57,8 @@ namespace GameServer
             }));
         }
 
+        m_spModuleRegistry->zone_start();
+
         for (;!m_bStop.load(); std::this_thread::sleep_for(m_timeStepDelay))
         {
             m_spModuleRegistry->loop();
@@ -79,8 +82,11 @@ namespace GameServer
         }
 
         const auto&  cfgIntervals = GlobalConfig["intervals"];
-        m_timeWaitOpenWorld = std::chrono::milliseconds(cfgIntervals["open_world_wait"].GetUint64());
-        m_timeStepDelay = std::chrono::milliseconds(cfgIntervals["step_delay"].GetUint64());
+        m_timeWaitOpenWorld = std::chrono::milliseconds(
+            RapidHelper::GetValue<uint64_t>(cfgIntervals, "open_world_wait"));
+
+        m_timeStepDelay = std::chrono::milliseconds(
+            RapidHelper::GetValue<uint64_t>(cfgIntervals, "step_delay"));
         
         m_spModuleRegistry->configure(GlobalConfig["registry"]);
     }

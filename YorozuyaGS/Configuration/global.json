@@ -23,6 +23,13 @@
           "activated": true,
           "exchange_all": false
         }
+      },
+      {
+        "name": "addons.replace_loot_name",
+        "config": {
+          "activated": false,
+          "replace_item": "iyyyy24"
+        }
       }
     ]
   }

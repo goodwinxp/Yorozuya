@@ -38,6 +38,15 @@ namespace GameServer
         }
     }
 
+    void CModuleRegistry::zone_start()
+    {
+        ::std::unique_lock<decltype(m_mtxMap)> lock(m_mtxMap);
+        for (auto& m : m_mapModules)
+        {
+            m.second->zone_start();
+        }
+    }
+    
     void CModuleRegistry::configure(
         const rapidjson::Value& nodeConfig)
     {
