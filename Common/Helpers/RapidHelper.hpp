@@ -5,12 +5,12 @@
 namespace RapidHelper
 {
     template<typename _Ty>
-    _Ty GetValue(
+    inline _Ty GetValue(
         const rapidjson::Value& node,
         const char* wszNameAttr);
 
     template<>
-    uint32_t GetValue<uint32_t>(
+    inline uint32_t GetValue<uint32_t>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -18,7 +18,7 @@ namespace RapidHelper
     }
 
     template<>
-    uint64_t GetValue<uint64_t>(
+    inline uint64_t GetValue<uint64_t>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -26,7 +26,7 @@ namespace RapidHelper
     }
 
     template<>
-    int32_t GetValue<int32_t>(
+    inline int32_t GetValue<int32_t>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -34,7 +34,7 @@ namespace RapidHelper
     }
 
     template<>
-    int64_t GetValue<int64_t>(
+    inline int64_t GetValue<int64_t>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -42,7 +42,7 @@ namespace RapidHelper
     }
 
     template<>
-    float GetValue<float>(
+    inline float GetValue<float>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -50,7 +50,7 @@ namespace RapidHelper
     }
 
     template<>
-    double GetValue<double>(
+    inline double GetValue<double>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
@@ -58,15 +58,23 @@ namespace RapidHelper
     }
 
     template<>
-    bool GetValue<bool>(
+    inline bool GetValue<bool>(
         const rapidjson::Value& node,
         const char* wszNameAttr)
     {
         return node[wszNameAttr].GetBool();
     }
 
+    template<>
+    inline std::string GetValue<std::string>(
+        const rapidjson::Value& node,
+        const char* wszNameAttr)
+    {
+        return node[wszNameAttr].GetString();
+    }
+
     template<typename _Ty>
-    _Ty GetValueOrDefault(
+    inline _Ty GetValueOrDefault(
         const rapidjson::Value& node,
         const char* wszNameAttr,
         const _Ty& default_value)

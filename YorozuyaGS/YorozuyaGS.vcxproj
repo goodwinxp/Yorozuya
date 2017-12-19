@@ -5,10 +5,6 @@
       <Configuration>ReleaseDebug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|x64">
-      <Configuration>Debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
@@ -19,16 +15,9 @@
     <ProjectGuid>{2F325A98-EFAE-4DBB-932A-F9851B4DB7C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>YorozuyaGS</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -48,9 +37,6 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -58,36 +44,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;YOROZUYAGS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;$(SolutionDir)\library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
-      <CompileAsManaged>false</CompileAsManaged>
-      <CompileAsWinRT>false</CompileAsWinRT>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <ControlFlowGuard>false</ControlFlowGuard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>libMinHook-$(PlatformTarget)-$(PlatformToolset)-mtd.lib;YorozuyaGSLib.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-    </Link>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -96,7 +58,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;YOROZUYAGS_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;$(SolutionDir)\library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;$(SolutionDir)\library\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -105,6 +67,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <ControlFlowGuard>false</ControlFlowGuard>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -112,6 +75,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>libMinHook-$(PlatformTarget)-$(PlatformToolset)-mt.lib;YorozuyaGSLib.lib;winmm.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
@@ -122,7 +87,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;YOROZUYAGS_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;$(SolutionDir)\library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\library\ATF\;$(SolutionDir)\library\MinHook\include\;$(SolutionDir)\library\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpplatest</LanguageStandard>
@@ -130,6 +95,8 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <ControlFlowGuard>false</ControlFlowGuard>
+      <BrowseInformation>false</BrowseInformation>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,9 +104,15 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>libMinHook-$(PlatformTarget)-$(PlatformToolset)-mt.lib;YorozuyaGSLib.lib;winmm.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)\library\MinHook\lib;$(SolutionDir)$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\ETypes.h" />
     <ClInclude Include="..\Common\Helpers\ModuleDllHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\RapidHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\SingletonHelper.hpp" />
@@ -147,67 +120,63 @@
     <ClInclude Include="..\Common\Helpers\TimeHelper.hpp" />
     <ClInclude Include="..\Common\Helpers\zip.h" />
     <ClInclude Include="..\Common\Interfaces\ModuleInterface.h" />
-    <ClInclude Include="Animus.h" />
-    <ClInclude Include="AttackSystem.h" />
-    <ClInclude Include="AttackSystemError.h" />
-    <ClInclude Include="AutominePersonal.h" />
-    <ClInclude Include="ChatSystem.h" />
-    <ClInclude Include="CheatCommand.h" />
-    <ClInclude Include="CrashDump.h" />
-    <ClInclude Include="Equip.h" />
-    <ClInclude Include="CreatePlayer.h" />
-    <ClInclude Include="Guild.h" />
-    <ClInclude Include="NetworkEx.h" />
-    <ClInclude Include="NpcData.h" />
-    <ClInclude Include="PcBangFavor.h" />
-    <ClInclude Include="Performance.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="ETypes.h" />
-    <ClInclude Include="ItemCheckHelper.h" />
-    <ClInclude Include="Macros.h" />
-    <ClInclude Include="MiningOre.h" />
-    <ClInclude Include="ModuleRegistry.h" />
-    <ClInclude Include="PlayerEx.h" />
-    <ClInclude Include="PlayerEx_detail.h" />
-    <ClInclude Include="PlayerEx_PvpOrderViewDB.h" />
-    <ClInclude Include="PostSystem.h" />
-    <ClInclude Include="PotionMgr.h" />
-    <ClInclude Include="QuestMng.h" />
-    <ClInclude Include="ReadSystemPass.h" />
+    <ClInclude Include="Animus\Animus.h" />
+    <ClInclude Include="AttackSystem\AttackSystem.h" />
+    <ClInclude Include="AttackSystem\AttackSystemError.h" />
+    <ClInclude Include="AutominePersonal\AutominePersonal.h" />
+    <ClInclude Include="CheatCommand\CheatCommand.h" />
+    <ClInclude Include="Common\ItemCheckHelper.h" />
+    <ClInclude Include="Common\ModuleRegistry.h" />
+    <ClInclude Include="Common\version.h" />
+    <ClInclude Include="CrashDump\CrashDump.h" />
+    <ClInclude Include="CreatePlayer\CreatePlayer.h" />
+    <ClInclude Include="Guild\Guild.h" />
+    <ClInclude Include="LogType\LogType.h" />
+    <ClInclude Include="NetworkEx\NetworkEx.h" />
+    <ClInclude Include="NpcData\NpcData.h" />
+    <ClInclude Include="PcBangFavor\PcBangFavor.h" />
+    <ClInclude Include="Performance\Performance.h" />
+    <ClInclude Include="PlayerEx\PlayerEx.h" />
+    <ClInclude Include="PlayerEx\PlayerEx_detail.h" />
+    <ClInclude Include="PlayerEx\PlayerEx_PvpOrderViewDB.h" />
+    <ClInclude Include="Player\Player.h" />
+    <ClInclude Include="Player\PlayerChatSystem.h" />
+    <ClInclude Include="Player\PlayerEquip.h" />
+    <ClInclude Include="Player\PlayerGuild.h" />
+    <ClInclude Include="Player\PlayerMiningOre.h" />
+    <ClInclude Include="Player\PlayerMoveSystem.h" />
+    <ClInclude Include="Player\PlayerPvpOrderView.h" />
+    <ClInclude Include="Player\PlayerQuestMng.h" />
+    <ClInclude Include="Player\PlayerTrade.h" />
+    <ClInclude Include="Player\PlayerTrunk.h" />
+    <ClInclude Include="Player\PlayerUnit.h" />
+    <ClInclude Include="Player\PlayerViewInvisible.h" />
+    <ClInclude Include="PostSystem\PostSystem.h" />
+    <ClInclude Include="PotionMgr\PotionMgr.h" />
+    <ClInclude Include="ReadSystemPass\ReadSystemPass.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SaveData\Macros.h" />
+    <ClInclude Include="SaveData\UpdateGeneral.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Store.h" />
-    <ClInclude Include="Trade.h" />
-    <ClInclude Include="Trap.h" />
-    <ClInclude Include="Trunk.h" />
-    <ClInclude Include="Unit.h" />
-    <ClInclude Include="UnmannedTrader.h" />
-    <ClInclude Include="UnmannedTraderEx.h" />
-    <ClInclude Include="UpdateGeneral.h" />
-    <ClInclude Include="ViewInvisible.h" />
-    <ClInclude Include="Vote.h" />
+    <ClInclude Include="Store\Store.h" />
+    <ClInclude Include="Trap\Trap.h" />
+    <ClInclude Include="UnmannedTrader\UnmannedTrader.h" />
+    <ClInclude Include="UnmannedTrader\UnmannedTraderEx.h" />
+    <ClInclude Include="Vote\Vote.h" />
     <ClInclude Include="Yorozuya.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\Helpers\zip.cpp" />
-    <ClCompile Include="Animus.cpp" />
-    <ClCompile Include="AttackSystem.cpp" />
-    <ClCompile Include="AttackSystem_CalcPoint.cpp" />
-    <ClCompile Include="AutominePersonal.cpp" />
-    <ClCompile Include="ChatSystem.cpp" />
-    <ClCompile Include="CheatCommand.cpp" />
-    <ClCompile Include="CrashDump.cpp" />
-    <ClCompile Include="Equip.cpp" />
-    <ClCompile Include="CreatePlayer.cpp" />
-    <ClCompile Include="Guild.cpp" />
-    <ClCompile Include="NetworkEx.cpp" />
-    <ClCompile Include="NpcData.cpp" />
-    <ClCompile Include="PcBangFavor.cpp" />
-    <ClCompile Include="Performance.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Animus\Animus.cpp" />
+    <ClCompile Include="AttackSystem\AttackSystem.cpp" />
+    <ClCompile Include="AttackSystem\AttackSystem_CalcPoint.cpp" />
+    <ClCompile Include="AutominePersonal\AutominePersonal.cpp" />
+    <ClCompile Include="CheatCommand\CheatCommand.cpp" />
+    <ClCompile Include="Common\ItemCheckHelper.cpp" />
+    <ClCompile Include="Common\ModuleRegistry.cpp" />
+    <ClCompile Include="CrashDump\CrashDump.cpp" />
+    <ClCompile Include="CreatePlayer\CreatePlayer.cpp" />
     <ClCompile Include="dllmain.cpp">
-      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      </PrecompiledHeader>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -215,36 +184,43 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">
       </PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="ItemCheckHelper.cpp" />
-    <ClCompile Include="Macros.cpp" />
-    <ClCompile Include="MiningOre.cpp" />
-    <ClCompile Include="ModuleRegistry.cpp" />
-    <ClCompile Include="PlayerEx.cpp" />
-    <ClCompile Include="PlayerEx_AttackDelay.cpp" />
-    <ClCompile Include="PlayerEx_Move.cpp" />
-    <ClCompile Include="PlayerEx_PvpOrderViewDB.cpp" />
-    <ClCompile Include="PlayerMove.cpp" />
-    <ClCompile Include="PlayerPvpOrderView.cpp" />
-    <ClCompile Include="PlayerSystem.cpp" />
-    <ClCompile Include="PostSystem.cpp" />
-    <ClCompile Include="PotionMgr.cpp" />
-    <ClCompile Include="PlayerEx_PvpOrderView.cpp" />
-    <ClCompile Include="QuestMng.cpp" />
-    <ClCompile Include="ReadSystemPass.cpp" />
-    <ClCompile Include="Store.cpp" />
-    <ClCompile Include="Trap.cpp" />
-    <ClCompile Include="Trunk.cpp" />
-    <ClCompile Include="UnmannedTrader.cpp" />
-    <ClCompile Include="UpdateGeneral.cpp" />
-    <ClCompile Include="ViewInvisible.cpp" />
+    <ClCompile Include="Guild\Guild.cpp" />
+    <ClCompile Include="LogType\LogType.cpp" />
+    <ClCompile Include="NetworkEx\NetworkEx.cpp" />
+    <ClCompile Include="NpcData\NpcData.cpp" />
+    <ClCompile Include="PcBangFavor\PcBangFavor.cpp" />
+    <ClCompile Include="Performance\Performance.cpp" />
+    <ClCompile Include="PlayerEx\PlayerEx.cpp" />
+    <ClCompile Include="PlayerEx\PlayerEx_AttackDelay.cpp" />
+    <ClCompile Include="PlayerEx\PlayerEx_Move.cpp" />
+    <ClCompile Include="PlayerEx\PlayerEx_PvpOrderView.cpp" />
+    <ClCompile Include="PlayerEx\PlayerEx_PvpOrderViewDB.cpp" />
+    <ClCompile Include="Player\PlayerChatSystem.cpp" />
+    <ClCompile Include="Player\PlayerEquip.cpp" />
+    <ClCompile Include="Player\PlayerGuild.cpp" />
+    <ClCompile Include="Player\Player.cpp" />
+    <ClCompile Include="Player\PlayerMiningOre.cpp" />
+    <ClCompile Include="Player\PlayerMoveSystem.cpp" />
+    <ClCompile Include="Player\PlayerPvpOrderView.cpp" />
+    <ClCompile Include="Player\PlayerQuestMng.cpp" />
+    <ClCompile Include="Player\PlayerSystem.cpp" />
+    <ClCompile Include="Player\PlayerTrade.cpp" />
+    <ClCompile Include="Player\PlayerTrunk.cpp" />
+    <ClCompile Include="Player\PlayerUnit.cpp" />
+    <ClCompile Include="Player\PlayerViewInvisible.cpp" />
+    <ClCompile Include="PostSystem\PostSystem.cpp" />
+    <ClCompile Include="PotionMgr\PotionMgr.cpp" />
+    <ClCompile Include="ReadSystemPass\ReadSystemPass.cpp" />
+    <ClCompile Include="SaveData\Macros.cpp" />
+    <ClCompile Include="SaveData\UpdateGeneral.cpp" />
     <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Trade.cpp" />
-    <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Vote.cpp" />
+    <ClCompile Include="Store\Store.cpp" />
+    <ClCompile Include="Trap\Trap.cpp" />
+    <ClCompile Include="UnmannedTrader\UnmannedTrader.cpp" />
+    <ClCompile Include="Vote\Vote.cpp" />
     <ClCompile Include="Yorozuya.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +230,9 @@
     <ProjectReference Include="..\YorozuyaGSLib\YorozuyaGSLib.vcxproj">
       <Project>{0e0ea503-b731-3fad-be56-60ac806b69e3}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

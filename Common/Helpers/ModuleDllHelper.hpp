@@ -7,7 +7,7 @@
 
 namespace ModuleDllHelper
 {
-    namespace fs = _STD tr2::sys;
+    namespace fs = ::std::experimental::filesystem::v1;
     using namespace Yorozuya;
     
     class CModuleDll : public Module::IModule
@@ -35,32 +35,37 @@ namespace ModuleDllHelper
             CloseHandle(m_hDll);
         }
 
-        virtual void load()
+        virtual void load() override
         {
             m_impl->load();
         }
 
-        virtual void unload()
+        virtual void unload() override
         {
             m_impl->unload();
         }
 
-        virtual void loop()
+        virtual void loop() override
         {
             m_impl->loop();
         }
 
-        virtual Module::ModuleVersion_t get_version()
+        virtual void zone_start() override
+        {
+            return m_impl->zone_start();
+        }
+
+        virtual Module::ModuleVersion_t get_version() override
         {
             return m_impl->get_version();
         }
 
-        virtual Module::ModuleName_t get_name()
+        virtual Module::ModuleName_t get_name() override
         {
             return m_impl->get_name();
         }
 
-        virtual void configure(const rapidjson::Value& nodeConfig)
+        virtual void configure(const rapidjson::Value& nodeConfig) override
         {
             m_impl->configure(nodeConfig);
         }

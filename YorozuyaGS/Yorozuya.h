@@ -5,14 +5,13 @@
 #include <thread>
 #include <mutex>
 
-#include "ModuleRegistry.h"
+#include "./Common/ModuleRegistry.h"
 #include "../Common/Helpers/SingletonHelper.hpp"
-
 
 namespace GameServer
 {
-    using namespace SingletonHelper;
-    class CYorozuya : public CSingleton<CYorozuya>
+    class CYorozuya 
+        : public SingletonHelper::CSingleton<CYorozuya>
     {
     public:
         CYorozuya();

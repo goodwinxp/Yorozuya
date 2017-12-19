@@ -1,18 +1,43 @@
 {
   "intervals": {
-    "open_world_wait": 10000,
+    "open_world_wait": 1000,
     "step_delay": 10
   },
   "registry": {
     "modules": [
       {
-        "name": "fix_Vote",
+        "name": "system.crash_dump",
+        "config": {
+          "full_dump": true
+        }
+      },
+      {
+        "name": "fix.vote",
         "config": {
           "level": 30,
+          "play_time": -1,
+          "pvp_point": -1,
+          "pvp_cash_bag": -1.0,
+          "class_grade": 0,
           "score_list_show": true,
           "score_hide": false
+        }
+      },
+      {
+        "name": "addons.loot_exchange",
+        "config": {
+          "activated": false,
+          "exchange_all": false
+        }
+      },
+      {
+        "name": "addons.replace_loot_name",
+        "config": {
+          "activated": false,
+          "replace_item": "iyyyy24"
         }
       }
     ]
   }
 }
+
