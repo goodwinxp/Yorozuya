@@ -57,4 +57,5 @@ START_ATF_NAMESPACE
         void dtor_CItemBox();
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<CItemBox, 0x178>(), "CItemBox");
 END_ATF_NAMESPACE

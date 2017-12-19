@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <filesystem>
 
+namespace fs = ::std::experimental::filesystem::v1;
+
 #include <ATF.hpp>
 
-namespace fs = _STD tr2::sys;

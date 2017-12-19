@@ -5,7 +5,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 2)
+    #pragma pack(push, 1)
     struct  _itembox_fixpositon_zocl
     {
         char byItemTableCode;
@@ -18,4 +18,5 @@ START_ATF_NAMESPACE
         char byThrowerRace;
     };
     #pragma pack(pop)
+    static_assert(ATF::checkSize<_itembox_fixpositon_zocl, 0x12>(), "_itembox_fixpositon_zocl");
 END_ATF_NAMESPACE

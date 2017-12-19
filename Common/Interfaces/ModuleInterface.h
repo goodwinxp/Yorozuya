@@ -9,7 +9,7 @@ namespace Yorozuya
     namespace Module
     {
         using ModuleVersion_t = uint32_t;
-        using ModuleName_t = _STD string;
+        using ModuleName_t = ::std::string;
 
         class IModule
         {
@@ -24,6 +24,10 @@ namespace Yorozuya
             {
             }
 
+            virtual void zone_start()
+            {
+            }
+
             virtual ModuleVersion_t get_version()
             {
                 return ATF::usVersion;
@@ -34,7 +38,7 @@ namespace Yorozuya
                 UNREFERENCED_PARAMETER(nodeConfig);
             }
         };
-        using Module_ptr = _STD shared_ptr<IModule>;
+        using Module_ptr = ::std::shared_ptr<IModule>;
     }
 
     namespace ModuleApi
@@ -44,7 +48,7 @@ namespace Yorozuya
         Module::IModule* CreateModule();
         using CreateModule_ptr = decltype(&CreateModule);
         static MethodName_t csNameCreateModule = "CreateModule";
-        
+
         void ReleaseModule(Module::IModule*);
         using ReleaseModule_ptr = decltype(&ReleaseModule);
         static MethodName_t csNameReleaseModule = "ReleaseModule";
