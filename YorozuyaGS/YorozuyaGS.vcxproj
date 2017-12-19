@@ -131,6 +131,7 @@
     <ClInclude Include="CrashDump\CrashDump.h" />
     <ClInclude Include="CreatePlayer\CreatePlayer.h" />
     <ClInclude Include="Guild\Guild.h" />
+    <ClInclude Include="LogType\LogType.h" />
     <ClInclude Include="NetworkEx\NetworkEx.h" />
     <ClInclude Include="NpcData\NpcData.h" />
     <ClInclude Include="PcBangFavor\PcBangFavor.h" />
@@ -184,6 +185,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Guild\Guild.cpp" />
+    <ClCompile Include="LogType\LogType.cpp" />
     <ClCompile Include="NetworkEx\NetworkEx.cpp" />
     <ClCompile Include="NpcData\NpcData.cpp" />
     <ClCompile Include="PcBangFavor\PcBangFavor.cpp" />

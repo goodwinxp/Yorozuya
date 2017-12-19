@@ -16,6 +16,7 @@ namespace GameServer
             enable_hook(&ATF::CNetworkEX::DTradeAskRequest, &CNetworkEX::DTradeAskRequest);
             enable_hook(&ATF::CNetworkEX::Apex_R, &CNetworkEX::Apex_R);
             enable_hook(&ATF::CNetworkEX::Apex_T, &CNetworkEX::Apex_T);
+            enable_hook(&ATF::CNetworkEX::DataAnalysis, &CNetworkEX::DataAnalysis);
         }
 
         void CNetworkEX::unload()
@@ -88,6 +89,43 @@ namespace GameServer
             UNREFERENCED_PARAMETER(pBuf);
             UNREFERENCED_PARAMETER(next);
             return true;
+        }
+
+        bool WINAPIV CNetworkEX::DataAnalysis(
+            ATF::CNetworkEX * pNetwork,
+            unsigned int dwProID,
+            unsigned int dwClientIndex,
+            ATF::_MSG_HEADER * pMsgHeader,
+            char * pMsg,
+            ATF::Info::CNetworkEXDataAnalysis222_ptr next)
+        {
+            UNREFERENCED_PARAMETER(next);
+
+            bool result = false;
+            if (dwClientIndex >= 0 && dwClientIndex < ATF::Global::max_player)
+            {
+                switch (dwProID)
+                {
+                case 0:
+                    pNetwork->ClientLineAnalysis(dwClientIndex, pMsgHeader, pMsg);
+                    result = true;
+                    break;
+                case 1:
+                    result = pNetwork->AccountLineAnalysis(dwClientIndex, pMsgHeader, pMsg);
+                    break;
+                case 3:
+                    result = pNetwork->BillingLineAnalysis(dwClientIndex, pMsgHeader, pMsg);
+                    break;
+                case 2:
+                    result = pNetwork->WebAgentLineAnalysis(dwClientIndex, pMsgHeader, pMsg);
+                    break;
+                default:
+                    result = false;
+                    break;
+                }
+            }
+
+            return result;
         }
     }
 }

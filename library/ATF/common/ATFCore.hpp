@@ -31,6 +31,7 @@ START_ATF_NAMESPACE
 
     public:
         ~CATFCore() {
+            cleanup();
             MH_Uninitialize();
         }
 
@@ -41,18 +42,22 @@ START_ATF_NAMESPACE
 
     public:
         void cleanup() {
+            _STD unique_lock<_STD recursive_mutex> lock(m_mtx);
             for (auto& r : m_mapFunctions)
                 MH_DisableHook(r.second.pTrgAppOrig);
+            m_mapFunctions.clear();
         }
 
         void reg_wrapper(LPVOID fnTarget, _hook_record& rec)
         {
+            _STD unique_lock<_STD recursive_mutex> lock(m_mtx);
             m_mapFunctions[fnTarget] = rec;
         }
 
         void unreg_wrapper(
             LPVOID fnTarget)
         {
+            _STD unique_lock<_STD recursive_mutex> lock(m_mtx);
             if (m_mapFunctions.find(fnTarget) == m_mapFunctions.end())
                 return;
 
@@ -64,6 +69,7 @@ START_ATF_NAMESPACE
         {
             bool result = false;
             MH_STATUS status = MH_UNKNOWN;
+            _STD unique_lock<_STD recursive_mutex> lock(m_mtx);
             do
             {
                 LPVOID key = cast_pointer_function(pTarget);
@@ -98,6 +104,7 @@ START_ATF_NAMESPACE
         {
             bool result = false;
             MH_STATUS status = MH_UNKNOWN;
+            _STD unique_lock<_STD recursive_mutex> lock(m_mtx);
             do
             {
                 LPVOID key = cast_pointer_function(pTarget);
@@ -115,6 +122,7 @@ START_ATF_NAMESPACE
             return result;
         }
     private:
+        _STD recursive_mutex m_mtx;
         _STD unordered_map<LPVOID, _hook_record> m_mapFunctions;
     };
     #pragma pack(pop)

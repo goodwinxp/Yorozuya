@@ -47,6 +47,14 @@ namespace GameServer
                 int n,
                 char *pBuf,
                 ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next);
+
+            static bool WINAPIV DataAnalysis(
+                ATF::CNetworkEX *pNetwork,
+                unsigned int dwProID,
+                unsigned int dwClientIndex,
+                ATF::_MSG_HEADER *pMsgHeader,
+                char *pMsg,
+                ATF::Info::CNetworkEXDataAnalysis222_ptr next);
         };
     };
 };

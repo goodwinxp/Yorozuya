@@ -6,6 +6,12 @@
   "registry": {
     "modules": [
       {
+        "name": "system.crash_dump",
+        "config": {
+          "full_dump": true
+        }
+      },
+      {
         "name": "fix.vote",
         "config": {
           "level": 30,
@@ -20,7 +26,7 @@
       {
         "name": "addons.loot_exchange",
         "config": {
-          "activated": true,
+          "activated": false,
           "exchange_all": false
         }
       },
