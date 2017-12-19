@@ -148,6 +148,9 @@
     <Filter Include="Impl\Fixes\SaveData\UpdateGeneral">
       <UniqueIdentifier>{0c33e787-6cfe-4f9d-8472-0e4724bc0737}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Impl\Fixes\LogType">
+      <UniqueIdentifier>{fa50f69a-9c6c-4fbe-aa79-80d613a7c2f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\Helpers\zip.cpp">
@@ -284,6 +287,9 @@
     </ClCompile>
     <ClCompile Include="Player\PlayerChatSystem.cpp">
       <Filter>Impl\Fixes\Player\ChatSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LogType\LogType.cpp">
+      <Filter>Impl\Fixes\LogType</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -439,6 +445,9 @@
     </ClInclude>
     <ClInclude Include="..\Common\ETypes.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="LogType\LogType.h">
+      <Filter>Impl\Fixes\LogType</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

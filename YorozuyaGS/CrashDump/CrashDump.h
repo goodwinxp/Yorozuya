@@ -24,6 +24,9 @@ namespace GameServer
             virtual void unload() override;
 
             virtual Yorozuya::Module::ModuleName_t get_name() override;
+
+            virtual void configure(const rapidjson::Value& nodeConfig) override;
+
         private:
             static ::std::wstring BuildFileNameDump();
 
@@ -37,6 +40,7 @@ namespace GameServer
         private:
             FARPROC m_pSystemUnhandledFilter = nullptr;
 
+            static bool m_bFullDump;
             static int m_nCrash;
             static const fs::path m_pathCrashFolder;
         };

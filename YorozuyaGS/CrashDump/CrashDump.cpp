@@ -6,7 +6,7 @@
 #pragma comment(lib, "dbghelp.lib")
 
 #include "../../Common/Helpers/zip.h"
-
+#include "../../Common/Helpers/RapidHelper.hpp"
 
 namespace GameServer
 {
@@ -42,6 +42,7 @@ namespace GameServer
         };
 
         int CCrashDump::m_nCrash = 0;
+        bool CCrashDump::m_bFullDump = false;
         const fs::path CCrashDump::m_pathCrashFolder = L".\\YorozuyaGS\\CrashDump\\";
 
         CCrashDump::CCrashDump() 
@@ -82,6 +83,12 @@ namespace GameServer
             return name;
         }
 
+        void CCrashDump::configure(
+            const rapidjson::Value & nodeConfig)
+        {
+            m_bFullDump = RapidHelper::GetValueOrDefault(nodeConfig, "full_dump", true);
+        }
+
         ::std::wstring CCrashDump::BuildFileNameDump()
         {
             ::ATL::CTime tmCurrentTime(::ATL::CTime::GetCurrentTime());
@@ -116,9 +123,21 @@ namespace GameServer
             eInfo.ExceptionPointers = pExceptionInfo;
             eInfo.ClientPointers = FALSE;
 
-            int type = MiniDumpNormal;
-            type |= MiniDumpWithDataSegs;
-            type |= MiniDumpFilterModulePaths;
+            int type;
+            if (CCrashDump::m_bFullDump)
+            {
+                type = MiniDumpWithFullMemory;
+                type |= MiniDumpWithFullMemoryInfo;
+                type |= MiniDumpWithHandleData;
+                type |= MiniDumpWithUnloadedModules;
+                type |= MiniDumpWithThreadInfo;
+            }
+            else
+            {
+                type = MiniDumpNormal;
+                type |= MiniDumpWithDataSegs;
+                type |= MiniDumpFilterModulePaths;
+            }
 
             BOOL bWriteDump = MiniDumpWriteDump(
                 GetCurrentProcess(),

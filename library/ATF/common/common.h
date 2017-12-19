@@ -7,6 +7,7 @@
 #include <memory>
 #include <vector>
 #include <array>
+#include <mutex>
 
 #define START_ATF_NAMESPACE namespace ATF {
 #define END_ATF_NAMESPACE };
