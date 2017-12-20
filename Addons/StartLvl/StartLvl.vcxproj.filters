@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{17cc36fa-d748-43b5-b4e0-ff78abdd707b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{7877313f-a3e8-4c6d-9a15-550cd3c63c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d4becd7d-2604-4fc2-88fd-cadca50506a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Interfaces">
+      <UniqueIdentifier>{66223936-6a3c-4c2a-bb4b-a4e93a40c4b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StartLvl.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ETypes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Interfaces\ModuleInterface.h">
+      <Filter>Common\Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleProxy.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="StartLvl.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
