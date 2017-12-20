@@ -36,6 +36,13 @@
           "activated": false,
           "replace_item": "iyyyy24"
         }
+      },
+      {
+        "name": "addons.StartLvl",
+        "config": {
+          "activated": true,
+          "StartLvL": 65
+        }
       }
     ]
   }
