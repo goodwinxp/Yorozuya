@@ -34,6 +34,7 @@
         "name": "addons.replace_loot_name",
         "config": {
           "activated": false,
+          "only_pitboss": true,
           "replace_item": "iyyyy24"
         }
       }
