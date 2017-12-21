@@ -29,6 +29,7 @@ namespace GameServer
 
         private:
             static bool m_bActivated;
+            static bool m_bOnlyPitboss;
 
             struct _item_code
             {
