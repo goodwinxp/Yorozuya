@@ -10,8 +10,10 @@ Default value: 1000
 ### "step_delay"
 ???
 
-## system.crash_dump
+## Modules
 
-### "full_dump"
+### system.crash_dump
+
+#### "full_dump"
 
 Allows to create dump when zoneserver crashes.
