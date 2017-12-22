@@ -5,5 +5,5 @@ Free defense for RFOnline server version 2.2.3.2
 > Visual Studio 2017 15.5.2 and higher<br>
 > x64 toolset visual studio<br>
 
-## Docs
-Пользовательскую документацию можно получить по [ссылке](./docs/index.md).
+# Docs
+You can get user's docs from [link](./docs/index.md).
