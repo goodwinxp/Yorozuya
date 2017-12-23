@@ -2,12 +2,14 @@
 
 #include <common/common.h>
 #include <CPlayer.hpp>
+#include <CItemBox.hpp>
 #include <__time32_t.hpp>
 
 START_ATF_NAMESPACE
     namespace Global
     {
         const size_t max_player = 2532;
+        const size_t item_box = 5064;
 
         using CPlayer_ptr = struct CPlayer*;
         using CLogFile_ptr = struct CLogFile*;
@@ -18,7 +20,6 @@ START_ATF_NAMESPACE
         using CMerchant_ptr = struct CMerchant*;
         using CAnimus_ptr = struct CAnimus*;
         using CGuardTower_ptr = struct CGuardTower*;
-        using CItemBox_ptr = struct CItemBox*;
         using CParkingUnit_ptr = struct CParkingUnit*;
         using CHolyStone_ptr = struct CHolyStone*;
         using CHolyKeeper_ptr = struct CHolyKeeper*;
@@ -35,6 +36,8 @@ START_ATF_NAMESPACE
         using CRFWorldDatabase_ptr2 = struct CRFWorldDatabase**;
         using CPlayer_Ref = ATF::CPlayer(&)[max_player];
         using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
+        using CItemBox_Ref = ATF::CItemBox(&)[item_box];
+        using CItemBox_Ptr = ATF::CItemBox(*)[item_box];
 
         static TimeLimitMgr_ptr g_TimerLimitMgr((TimeLimitMgr_ptr)0x1799CA2D0L);
         static bool* Major_Cash_Item((bool*)0x14096E033L);
@@ -54,7 +57,7 @@ START_ATF_NAMESPACE
         static CMerchant_ptr g_NPC((CMerchant_ptr)0x1414FFFF8L);
         static CAnimus_ptr g_Animus((CAnimus_ptr)0x141500000L);
         static CGuardTower_ptr g_Tower((CGuardTower_ptr)0x141500008L);
-        static CItemBox_ptr g_ItemBox((CItemBox_ptr)0x141500010L);
+        static CItemBox_Ptr* g_ItemBox((CItemBox_Ptr*)0x141500010L);
         static CParkingUnit_ptr g_ParkingUnit((CParkingUnit_ptr)0x141500018L);
         static CHolyStone_ptr g_Stone((CHolyStone_ptr)0x141500020L);
         static CHolyKeeper_ptr g_Keeper((CHolyKeeper_ptr)0x141500028L);

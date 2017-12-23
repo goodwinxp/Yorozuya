@@ -13,6 +13,7 @@ namespace GameServer
     namespace Addon
     {
         bool CReplaceLootName::m_bActivated = false;
+        bool CReplaceLootName::m_bOnlyPitboss = false;
         CReplaceLootName::_item_code CReplaceLootName::m_ReplaceItem;
 
         void CReplaceLootName::load()
@@ -56,6 +57,7 @@ namespace GameServer
             const rapidjson::Value& nodeConfig)
         {
             m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
+            m_bOnlyPitboss = RapidHelper::GetValueOrDefault(nodeConfig, "only_pitboss", false);
             m_sItemCode = RapidHelper::GetValue<std::string>(nodeConfig, "replace_item");
         }
 
@@ -69,6 +71,12 @@ namespace GameServer
             ATF::Info::CItemBoxSendMsg_Create14_ptr next)
         {
             if (!CReplaceLootName::m_bActivated)
+            {
+                next(pObj);
+                return;
+            }
+
+            if (CReplaceLootName::m_bOnlyPitboss && !pObj->m_bBossMob)
             {
                 next(pObj);
                 return;
@@ -112,8 +120,17 @@ namespace GameServer
                 return;
             }
 
-            if (pObj->m_bHide)
+            if (CReplaceLootName::m_bOnlyPitboss && !pObj->m_bBossMob)
+            {
+                next(pObj, n);
                 return;
+            }
+
+            if (pObj->m_bHide)
+            {
+                next(pObj, n);
+                return;
+            }
 
             ATF::_itembox_fixpositon_zocl msg;
             msg.byItemTableCode = GetItemCode().nTableCode;
@@ -140,6 +157,11 @@ namespace GameServer
             {
                 if (!CReplaceLootName::m_bActivated)
                     break;
+
+                if (CReplaceLootName::m_bOnlyPitboss && !pBox->m_bBossMob)
+                {
+                    break;
+                }
 
                 if (!ATF::Global::IsOverLapItem(pBox->m_Item.m_byTableCode))
                 {

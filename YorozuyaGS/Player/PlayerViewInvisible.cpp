@@ -76,6 +76,12 @@ namespace GameServer
             bool bPassed = false;
             do
             {
+                if (!pDst || !pPlayer)
+                {
+                    bPassed = true;
+                    break;
+                }
+
                 if (pPlayer->m_ObjID.m_byKind != (int)e_obj_id::obj_id_player ||
                     pDst->m_ObjID.m_byKind != (int)e_obj_id::obj_id_player)
                 {
@@ -147,18 +153,21 @@ namespace GameServer
                         ATF::CPlayer* pDst = (ATF::CPlayer *)pCurr->m_pItem;
                         pCurr = pCurr->m_pNext;
 
+                        if (pDst == nullptr)
+                            continue;
+
                         if (pDst == pObj)
                             continue;
 
                         if (!pObj->m_ObjID.m_byKind)
                         {
-                            if (pObj->m_ObjID.m_byID == 0)
+                            if (pObj->m_ObjID.m_byID == (int)e_obj_id::obj_id_player)
                             {
                                 if (!check_conditions((ATF::CPlayer*)pObj, pDst))
                                     continue;
                             }
 
-                            if (pObj->m_ObjID.m_byID == 7)
+                            if (pObj->m_ObjID.m_byID == (int)e_obj_id::obj_id_trap)
                             {
                                 ATF::CTrap* pTrap = (ATF::CTrap*)pObj;
                                 if (pTrap->m_dwMasterSerial != pDst->m_Param.GetCharSerial())
