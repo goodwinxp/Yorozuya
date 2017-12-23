@@ -12,11 +12,11 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{15aeffd8-1a80-47ba-87df-1358ae7c407e}</ProjectGuid>
+    <ProjectGuid>{7388e53c-152e-42ce-b304-0835fe4547de}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>RadiusDropLoot</RootNamespace>
+    <RootNamespace>EnchantChance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>RadiusDropLoot</ProjectName>
+    <ProjectName>EnchantChance</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -113,14 +113,14 @@
     <ClInclude Include="..\..\Common\ETypes.h" />
     <ClInclude Include="..\..\Common\Interfaces\ModuleInterface.h" />
     <ClInclude Include="Common\version.h" />
-    <ClInclude Include="RadiusDropLoot.h" />
+    <ClInclude Include="EnchantChance.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="ModuleProxy.cpp" />
-    <ClCompile Include="RadiusDropLoot.cpp" />
+    <ClCompile Include="EnchantChance.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDebug|x64'">Create</PrecompiledHeader>

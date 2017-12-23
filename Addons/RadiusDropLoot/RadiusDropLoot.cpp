@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-#include "addon.h"
+#include "RadiusDropLoot.h"
 #include "../../Common/ETypes.h"
 #include "../../Common/Helpers/RapidHelper.hpp"
 
@@ -10,36 +10,36 @@ namespace GameServer
 {
     namespace Addon
     {
-        bool CAddon::m_bActivated = false;
-        bool CAddon::m_bOnlyPitboss = false;
-        int CAddon::m_nRange = 10;
+        bool CRadiusDropLoot::m_bActivated = false;
+        bool CRadiusDropLoot::m_bOnlyPitboss = false;
+        int CRadiusDropLoot::m_nRange = 10;
 
-        void CAddon::load()
+        void CRadiusDropLoot::load()
         {
             enable_hook(
                 (ATF::Global::Info::CreateItemBox111_ptr)&ATF::Global::CreateItemBox,
-                &CAddon::CreateItemBox);
+                &CRadiusDropLoot::CreateItemBox);
         }
 
-        void CAddon::unload()
+        void CRadiusDropLoot::unload()
         {
             cleanup_all_hook();
         }
 
-        Yorozuya::Module::ModuleName_t CAddon::get_name()
+        Yorozuya::Module::ModuleName_t CRadiusDropLoot::get_name()
         {
             static const Yorozuya::Module::ModuleName_t name = "addons.radius_drop_loot";
             return name;
         }
 
-        void CAddon::configure(const rapidjson::Value & nodeConfig)
+        void CRadiusDropLoot::configure(const rapidjson::Value & nodeConfig)
         {
-            CAddon::m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
-            CAddon::m_bOnlyPitboss = RapidHelper::GetValueOrDefault(nodeConfig, "only_pitboss", false);
-            CAddon::m_nRange = RapidHelper::GetValueOrDefault(nodeConfig, "range", 100);
+            CRadiusDropLoot::m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
+            CRadiusDropLoot::m_bOnlyPitboss = RapidHelper::GetValueOrDefault(nodeConfig, "only_pitboss", false);
+            CRadiusDropLoot::m_nRange = RapidHelper::GetValueOrDefault(nodeConfig, "range", 100);
         }
 
-        ATF::CItemBox* CAddon::CreateItemBox(
+        ATF::CItemBox* CRadiusDropLoot::CreateItemBox(
             ATF::_STORAGE_LIST::_db_con* pItem,
             ATF::CPlayer* pOwner,
             unsigned int dwPartyBossSerial,
@@ -55,7 +55,7 @@ namespace GameServer
             ATF::CItemBox* result = nullptr;
             do
             {
-                if (!CAddon::m_bActivated)
+                if (!CRadiusDropLoot::m_bActivated)
                 {
                     result = next(pItem, pOwner, dwPartyBossSerial, bPartyShare, pThrower, byCreateCode, pMap, wLayerIndex, pStdPos, bHide);
                     break;
@@ -69,7 +69,7 @@ namespace GameServer
                 }
 
                 ATF::CMonster* pMonster = (ATF::CMonster*)pThrower;
-                if (CAddon::m_bOnlyPitboss && !pMonster->IsBossMonster())
+                if (CRadiusDropLoot::m_bOnlyPitboss && !pMonster->IsBossMonster())
                 {
                     result = next(pItem, pOwner, dwPartyBossSerial, bPartyShare, pThrower, byCreateCode, pMap, wLayerIndex, pStdPos, bHide);
                     break;
@@ -105,7 +105,7 @@ namespace GameServer
                 Dst.m_pMap = pMap;
                 Dst.m_nLayerIndex = wLayerIndex;
                 Dst.dwPartyBossSerial = dwPartyBossSerial;
-                if (!pMap->GetRandPosInRange(pStdPos, CAddon::m_nRange, Dst.m_fStartPos))
+                if (!pMap->GetRandPosInRange(pStdPos, CRadiusDropLoot::m_nRange, Dst.m_fStartPos))
                     break;
 
                 if (!pItemBox->Create(&Dst, bHide))

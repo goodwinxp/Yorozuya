@@ -37,7 +37,7 @@
     <ClInclude Include="resource.h">
       <Filter>General\Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="RadiusDropLoot.h">
+    <ClInclude Include="EnchantChance.h">
       <Filter>Impl</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,7 +51,7 @@
     <ClCompile Include="ModuleProxy.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="RadiusDropLoot.cpp">
+    <ClCompile Include="EnchantChance.cpp">
       <Filter>Impl</Filter>
     </ClCompile>
   </ItemGroup>

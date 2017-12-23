@@ -45,6 +45,12 @@
           "only_pitboss": false,
           "range": 100
         }
+      },
+      {
+        "name": "addons.enchant_chance",
+        "config": {
+          "activated": false
+        }
       }
     ]
   }

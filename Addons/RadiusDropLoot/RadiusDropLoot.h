@@ -9,12 +9,12 @@ namespace GameServer
 {
     namespace Addon
     {
-        class CAddon
+        class CRadiusDropLoot
             : public Yorozuya::Module::IModule
             , CModuleHook
         {
         public:
-            CAddon() { };
+            CRadiusDropLoot() { };
 
             virtual void load() override;
 

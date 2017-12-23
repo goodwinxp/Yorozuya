@@ -11,12 +11,6 @@ namespace Memory
             DWORD   flOldProtect = PAGE_NOACCESS;
             SIZE_T  nNumberOfBytesWritten = 0;
             HANDLE  hProcess = GetCurrentProcess();
-
-            if (hProcess == INVALID_HANDLE_VALUE)
-            {
-                return false;
-            }
-
             if (!VirtualProtectEx(hProcess, lpAddress, nSize, PAGE_WRITECOPY, &flOldProtect))
             {
                 return false;
@@ -45,12 +39,6 @@ namespace Memory
             DWORD   flOldProtect = PAGE_NOACCESS;
             SIZE_T  nNumberOfBytesRead = 0;
             HANDLE  hProcess = GetCurrentProcess();
-
-            if (hProcess == INVALID_HANDLE_VALUE)
-            {
-                return false;
-            }
-
             if (!VirtualProtectEx(hProcess, lpAddress, nSize, PAGE_READONLY, &flOldProtect))
             {
                 return false;

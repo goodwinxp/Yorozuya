@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-#include "RadiusDropLoot.h"
+#include "EnchantChance.h"
 #include "../../Common/Helpers/ModuleProxy.hpp"
 #include "../../Common/Interfaces/ModuleInterface.h"
 
@@ -11,11 +11,11 @@ using namespace GameServer::Addon;
 extern "C" DllExport
 Yorozuya::Module::IModule* CreateModule()
 {
-    return ModuleProxy::CModuleProxy<CRadiusDropLoot>::get_instance()->CreateModule();
+    return ModuleProxy::CModuleProxy<CEnchantChance>::get_instance()->CreateModule();
 }
 
 extern "C" DllExport
 void ReleaseModule(Yorozuya::Module::IModule* pObj)
 {
-    ModuleProxy::CModuleProxy<CRadiusDropLoot>::get_instance()->ReleaseModule(pObj);
+    ModuleProxy::CModuleProxy<CEnchantChance>::get_instance()->ReleaseModule(pObj);
 }
