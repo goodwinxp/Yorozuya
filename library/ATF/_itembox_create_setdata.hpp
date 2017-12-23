@@ -7,7 +7,7 @@
 
 
 START_ATF_NAMESPACE
-    #pragma pack(push, 4)
+    #pragma pack(push, 8)
     struct  _itembox_create_setdata : _object_create_setdata
     {
         struct CPlayer *pOwner;

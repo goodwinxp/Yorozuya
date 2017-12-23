@@ -37,6 +37,14 @@
           "only_pitboss": true,
           "replace_item": "iyyyy24"
         }
+      },
+      {
+        "name": "addons.radius_drop_loot",
+        "config": {
+          "activated": false,
+          "only_pitboss": false,
+          "range": 100
+        }
       }
     ]
   }

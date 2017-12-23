@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LootExchange", "Addons\Loot
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReplaceLootName", "Addons\ReplaceLootName\ReplaceLootName.vcxproj", "{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadiusDropLoot", "Addons\RadiusDropLoot\RadiusDropLoot.vcxproj", "{15AEFFD8-1A80-47BA-87DF-1358AE7C407E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -57,6 +59,10 @@ Global
 		{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA}.Release|x64.Build.0 = Release|x64
 		{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
 		{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E}.Release|x64.ActiveCfg = Release|x64
+		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E}.Release|x64.Build.0 = Release|x64
+		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{9B077178-ACCD-4F3E-A838-D899DBB75DEB} = {750435D7-0A39-4031-A76B-E48C2024A000}
 		{F3EC7A58-F57F-4C9B-956E-346DD37ADFC5} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
+		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}
