@@ -1,3 +1,4 @@
-File offset | New Value
------------------------
-0x1415e6 | 90 B8 01 00 00 00
+File offset | New Value | Description
+---------------------------------
+0x1415e6 | 90 B8 01 00 00 00 | For fix set items
+0x144f8e | EB | For stone hp view

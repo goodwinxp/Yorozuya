@@ -11,6 +11,7 @@
 
 
 START_ATF_NAMESPACE
+    #pragma pack(push, 8)
     struct  CHolyStone : CCharacter
     {
         bool m_bOper;
@@ -74,4 +75,6 @@ START_ATF_NAMESPACE
         ~CHolyStone();
         void dtor_CHolyStone();
     };
+    #pragma pack(pop)
+    static_assert(ATF::checkSize<CHolyStone, 0x7C0>(), "CHolyStone");
 END_ATF_NAMESPACE
