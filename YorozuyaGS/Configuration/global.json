@@ -51,6 +51,19 @@
         "config": {
           "activated": false
         }
+      },
+      {
+        "name": "addons.advert",
+        "config": {
+          "activated": true,
+          "records": [
+            {
+              "delay": 600,
+              "hide_for_premium": true,
+              "message": "Vote for this server and take bonus"
+            }
+          ]
+        }
       }
     ]
   }

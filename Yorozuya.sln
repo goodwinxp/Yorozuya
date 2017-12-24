@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RadiusDropLoot", "Addons\Ra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnchantChance", "Addons\EnchantChance\EnchantChance.vcxproj", "{7388E53C-152E-42CE-B304-0835FE4547DE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advert", "Addons\Advert\Advert.vcxproj", "{82099A51-2F6D-43CB-BF03-434D7DBD6D0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -69,6 +71,10 @@ Global
 		{7388E53C-152E-42CE-B304-0835FE4547DE}.Release|x64.Build.0 = Release|x64
 		{7388E53C-152E-42CE-B304-0835FE4547DE}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
 		{7388E53C-152E-42CE-B304-0835FE4547DE}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A}.Release|x64.ActiveCfg = Release|x64
+		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A}.Release|x64.Build.0 = Release|x64
+		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{7D7B09FD-E03D-46B3-B2C9-73C964BAC3AA} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{15AEFFD8-1A80-47BA-87DF-1358AE7C407E} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{7388E53C-152E-42CE-B304-0835FE4547DE} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
+		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}
