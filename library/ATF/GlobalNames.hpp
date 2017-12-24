@@ -3,6 +3,7 @@
 #include <common/common.h>
 #include <CPlayer.hpp>
 #include <CItemBox.hpp>
+#include <CHolyStone.hpp>
 #include <__time32_t.hpp>
 
 START_ATF_NAMESPACE
@@ -21,13 +22,12 @@ START_ATF_NAMESPACE
         using CAnimus_ptr = struct CAnimus*;
         using CGuardTower_ptr = struct CGuardTower*;
         using CParkingUnit_ptr = struct CParkingUnit*;
-        using CHolyStone_ptr = struct CHolyStone*;
-        using CHolyKeeper_ptr = struct CHolyKeeper*;
         using CTrap_ptr = struct CTrap*;
         using CDarkHole_ptr = struct CDarkHole*;
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
         using CNetworkEX_ptr = struct CNetworkEX*;
+        using CHolyKeeper_ptr = struct CHolyKeeper*;
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
         using TimeLimitMgr_ptr = struct TimeLimitMgr*;
         using CRecordData_ptr = struct CRecordData*;
@@ -38,6 +38,8 @@ START_ATF_NAMESPACE
         using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
         using CItemBox_Ref = ATF::CItemBox(&)[item_box];
         using CItemBox_Ptr = ATF::CItemBox(*)[item_box];
+        using CHolyStone_Ref = ATF::CHolyStone(&)[3];
+        using CHolyStone_Ptr = ATF::CHolyStone(*)[3];
 
         static TimeLimitMgr_ptr g_TimerLimitMgr((TimeLimitMgr_ptr)0x1799CA2D0L);
         static bool* Major_Cash_Item((bool*)0x14096E033L);
@@ -59,7 +61,7 @@ START_ATF_NAMESPACE
         static CGuardTower_ptr g_Tower((CGuardTower_ptr)0x141500008L);
         static CItemBox_Ptr* g_ItemBox((CItemBox_Ptr*)0x141500010L);
         static CParkingUnit_ptr g_ParkingUnit((CParkingUnit_ptr)0x141500018L);
-        static CHolyStone_ptr g_Stone((CHolyStone_ptr)0x141500020L);
+        static CHolyStone_Ptr* g_Stone((CHolyStone_Ptr*)0x141500020L);
         static CHolyKeeper_ptr g_Keeper((CHolyKeeper_ptr)0x141500028L);
         static CTrap_ptr g_Trap((CTrap_ptr)0x141500030L);
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);

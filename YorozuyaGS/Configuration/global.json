@@ -64,6 +64,13 @@
             }
           ]
         }
+      },
+      {
+        "name": "addons.stone_hp",
+        "config": {
+          "activated": false,
+          "min_lv": 30
+        }
       }
     ]
   }
