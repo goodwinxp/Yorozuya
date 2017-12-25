@@ -71,6 +71,12 @@
           "activated": false,
           "min_lv": 30
         }
+      },
+      {
+        "name": "addons.pvp_potion",
+        "config": {
+          "activated": false
+        }
       }
     ]
   }
