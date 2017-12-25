@@ -49,7 +49,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CPvpPotion::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.pvp_potion";
+            static const Yorozuya::Module::ModuleName_t name = "addon.pvp_potion";
             return name;
         }
 

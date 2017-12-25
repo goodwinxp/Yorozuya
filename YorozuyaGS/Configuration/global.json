@@ -24,14 +24,14 @@
         }
       },
       {
-        "name": "addons.loot_exchange",
+        "name": "addon.loot_exchange",
         "config": {
           "activated": false,
           "exchange_all": false
         }
       },
       {
-        "name": "addons.replace_loot_name",
+        "name": "addon.replace_loot_name",
         "config": {
           "activated": false,
           "only_pitboss": true,
@@ -39,7 +39,7 @@
         }
       },
       {
-        "name": "addons.radius_drop_loot",
+        "name": "addon.radius_drop_loot",
         "config": {
           "activated": false,
           "only_pitboss": false,
@@ -47,13 +47,13 @@
         }
       },
       {
-        "name": "addons.enchant_chance",
+        "name": "addon.enchant_chance",
         "config": {
           "activated": false
         }
       },
       {
-        "name": "addons.advert",
+        "name": "addon.advert",
         "config": {
           "activated": true,
           "records": [
@@ -66,14 +66,20 @@
         }
       },
       {
-        "name": "addons.stone_hp",
+        "name": "addon.stone_hp",
         "config": {
           "activated": false,
           "min_lv": 30
         }
       },
       {
-        "name": "addons.pvp_potion",
+        "name": "addon.pvp_potion",
+        "config": {
+          "activated": false
+        }
+      },
+      {
+        "name": "addon.mau_exp",
         "config": {
           "activated": false
         }

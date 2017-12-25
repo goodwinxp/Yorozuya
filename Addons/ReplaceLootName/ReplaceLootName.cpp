@@ -49,7 +49,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CReplaceLootName::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.replace_loot_name";
+            static const Yorozuya::Module::ModuleName_t name = "addon.replace_loot_name";
             return name;
         }
 

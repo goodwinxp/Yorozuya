@@ -28,7 +28,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CRadiusDropLoot::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.radius_drop_loot";
+            static const Yorozuya::Module::ModuleName_t name = "addon.radius_drop_loot";
             return name;
         }
 

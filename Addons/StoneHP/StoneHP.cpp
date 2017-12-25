@@ -33,7 +33,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CStoneHP::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.stone_hp";
+            static const Yorozuya::Module::ModuleName_t name = "addon.stone_hp";
             return name;
         }
 
