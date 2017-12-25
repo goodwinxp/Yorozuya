@@ -78,9 +78,9 @@ namespace GameServer
                     nDam = pMon->GetHP();
                 }
 
-                if (!pMon->IsBossMonster() && bGetAttackExp)
+                if (nLeftHP != 0)
                 {
-                    if (nLeftHP != 0)
+                    if (!pMon->IsBossMonster() && bGetAttackExp)
                     {
                         float fSetExt = (pDstRec->m_fExt * 0.7f) * (nDam / pDstRec->m_fMaxHP);
 
@@ -92,8 +92,8 @@ namespace GameServer
                             dAlter += pMon->GetLevel();
                             pObj->Emb_AlterStat(6, 0, dAlter, 0, strErrorCodePos, true);
                         }
-                        break;
                     }
+                    break;
                 }
 
                 float fKillExt = 0.f;
