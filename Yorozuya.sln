@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advert", "Addons\Advert\Adv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StoneHP", "Addons\StoneHP\StoneHP.vcxproj", "{CF3882AB-8D92-48DB-A752-57D4A2E59011}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PvpPotion", "Addons\PvpPotion\PvpPotion.vcxproj", "{16DC60E5-86C2-4878-B8EB-87D863500711}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -81,6 +83,10 @@ Global
 		{CF3882AB-8D92-48DB-A752-57D4A2E59011}.Release|x64.Build.0 = Release|x64
 		{CF3882AB-8D92-48DB-A752-57D4A2E59011}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
 		{CF3882AB-8D92-48DB-A752-57D4A2E59011}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{16DC60E5-86C2-4878-B8EB-87D863500711}.Release|x64.ActiveCfg = Release|x64
+		{16DC60E5-86C2-4878-B8EB-87D863500711}.Release|x64.Build.0 = Release|x64
+		{16DC60E5-86C2-4878-B8EB-87D863500711}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{16DC60E5-86C2-4878-B8EB-87D863500711}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{7388E53C-152E-42CE-B304-0835FE4547DE} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{82099A51-2F6D-43CB-BF03-434D7DBD6D0A} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{CF3882AB-8D92-48DB-A752-57D4A2E59011} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
+		{16DC60E5-86C2-4878-B8EB-87D863500711} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}

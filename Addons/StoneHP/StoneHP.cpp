@@ -67,7 +67,7 @@ namespace GameServer
 
             ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
-            for (int j = 0; j < 3; ++j)
+            for (int j = 0; j < _countof(gStone); ++j)
                 msg.wHPRate[j] = gStone[j].GetHP();
 
             for (auto& player : ATF::Global::g_Player)
@@ -104,7 +104,7 @@ namespace GameServer
 
             ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
-            for (int j = 0; j < 3; ++j)
+            for (int j = 0; j < _countof(gStone); ++j)
                 msg.wHPRate[j] = gStone[j].GetHP();
 
             for (auto& player : ATF::Global::g_Player)
@@ -153,7 +153,7 @@ namespace GameServer
 
                         ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
-                        for (int j = 0; j < 3; ++j)
+                        for (int j = 0; j < _countof(gStone); ++j)
                             msg.wHPRate[j] = gStone[j].GetHP();
 
                         char byType[2]{ 13, 33 };
