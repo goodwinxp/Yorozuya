@@ -32,7 +32,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CEnchantChance::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.enchant_chance";
+            static const Yorozuya::Module::ModuleName_t name = "addon.enchant_chance";
             return name;
         }
 

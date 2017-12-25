@@ -21,7 +21,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CAdvert::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.advert";
+            static const Yorozuya::Module::ModuleName_t name = "addon.advert";
             return name;
         }
 

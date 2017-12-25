@@ -49,7 +49,7 @@ namespace GameServer
 
         Yorozuya::Module::ModuleName_t CPvpPotion::get_name()
         {
-            static const Yorozuya::Module::ModuleName_t name = "addons.pvp_potion";
+            static const Yorozuya::Module::ModuleName_t name = "addon.pvp_potion";
             return name;
         }
 
@@ -138,8 +138,8 @@ namespace GameServer
 
             if (pEffecFld->m_nTempEffectType != -1)
             {
-                if (pEffecFld->m_nTempEffectType >= 150 &&
-                    pEffecFld->m_nTempEffectType < 182)
+                if (pEffecFld->m_nTempEffectType >= 150 && pEffecFld->m_nTempEffectType < detail::count_orig_effect_func ||
+                    pEffecFld->m_nTempEffectType >= detail::count_new_effect_func)
                 {
                     nResult = -1;
                 }
