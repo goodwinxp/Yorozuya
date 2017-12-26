@@ -13,8 +13,8 @@ namespace GameServer
         namespace
         {
             const int32_t default_start_lv = 1;
-            const int32_t default_start_dalant = 0;
-            const int32_t default_start_gold = 0;
+            const uint32_t default_start_dalant = 0;
+            const uint32_t default_start_gold = 0;
         }
 
         bool CBonusStart::m_bActivated = false;
