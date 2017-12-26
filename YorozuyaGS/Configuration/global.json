@@ -86,7 +86,7 @@
         }
       },
       {
-        "name": "addons.bonus_start",
+        "name": "addon.bonus_start",
         "config": {
           "activated": false,
           "start_lvl": 1,
