@@ -83,6 +83,13 @@
         "config": {
           "activated": false
         }
+      },
+      {
+        "name": "addons.bonus_start",
+        "config": {
+          "activated": true,
+          "startlvl": 50
+        }
       }
     ]
   }

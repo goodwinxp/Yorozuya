@@ -12,6 +12,7 @@ namespace GameServer
         {
             enable_hook(&ATF::CGuild::ManageAcceptORRefuseGuildBattle, &CGuild::ManageAcceptORRefuseGuildBattle);
             enable_hook(&ATF::CGuild::ManageExpulseMember, &CGuild::ManageExpulseMember);
+			enable_hook(&ATF::CPlayer::pc_GuildManageRequest, &CGuild::pc_GuildManageRequest);
         }
 
         void CGuild::unload()
@@ -104,5 +105,24 @@ namespace GameServer
 
             return next(pGuild, dwMemberSerial);
         }
+
+		void WINAPIV CGuild::pc_GuildManageRequest(
+			ATF::CPlayer *_this,
+			char byType,
+			unsigned int dwDst,
+			unsigned int dwObj1,
+			unsigned int dwObj2,
+			unsigned int dwObj3,
+			ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next)
+		{
+			if (_this->m_Param.m_pGuild)
+			{
+				next(_this, byType, dwDst, dwObj1, dwObj2, dwObj3);
+			}
+			else
+			{
+				_this->SendMsg_GuildManageResult(-54);
+			}
+		}
     }
 }

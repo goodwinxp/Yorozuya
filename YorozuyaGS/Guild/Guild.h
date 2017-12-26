@@ -4,6 +4,7 @@
 #include "../../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CGuildInfo.hpp>
+#include <ATF/cplayer.hpp>
 
 namespace GameServer
 {
@@ -31,6 +32,15 @@ namespace GameServer
                 ATF::CGuild *pGuild,
                 unsigned int dwMemberSerial,
                 ATF::Info::CGuildManageExpulseMember84_ptr next);
+			
+			static void WINAPIV pc_GuildManageRequest(
+				ATF::CPlayer *_this,
+				char byType,
+				unsigned int dwDst,
+				unsigned int dwObj1,
+				unsigned int dwObj2,
+				unsigned int dwObj3,
+				ATF::Info::CPlayerpc_GuildManageRequest1745_ptr next);
         };
     };
 };
