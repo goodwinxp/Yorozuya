@@ -84,6 +84,15 @@
           "activated": false,
           "mau_exp_coeff":  1.0
         }
+      },
+      {
+        "name": "addons.bonus_start",
+        "config": {
+          "activated": false,
+          "start_lvl": 1,
+          "start_dalant": 0,
+          "start_gold": 0
+        }
       }
     ]
   }

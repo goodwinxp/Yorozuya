@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{bcd725c1-9fd2-4e2c-9d6b-7a1262ac2f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Impl">
+      <UniqueIdentifier>{498b67b4-48a3-4b54-840f-4255c932d547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{b1777a40-e8cf-452f-ac69-a5c7d2645f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General">
+      <UniqueIdentifier>{ae8c2f0e-cd23-47a0-ba92-1accd346f810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common\Interfaces">
+      <UniqueIdentifier>{b7eb367d-558b-4cde-9cb0-d038a24aff6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Interfaces\ModuleInterface.h">
+      <Filter>Common\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ETypes.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>General\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BonusStart.h">
+      <Filter>Impl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleProxy.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BonusStart.cpp">
+      <Filter>Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>General\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
