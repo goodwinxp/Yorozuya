@@ -25,6 +25,7 @@ namespace GameServer
 
         private:
             static bool m_bActivated;
+            static float m_fMauExpCoeff;
 
         private:
             static void WINAPIV CalcExp(
