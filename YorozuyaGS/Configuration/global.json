@@ -81,7 +81,8 @@
       {
         "name": "addon.mau_exp",
         "config": {
-          "activated": false
+          "activated": false,
+          "mau_exp_coeff":  1.0
         }
       }
     ]

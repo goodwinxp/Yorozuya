@@ -13,9 +13,11 @@ namespace GameServer
         namespace
         {
             const size_t member_per_party = 8;
+            const float default_exp_coeff = 1.f;
         }
 
         bool CMauExp::m_bActivated = false;
+        float CMauExp::m_fMauExpCoeff = default_exp_coeff;
 
         void CMauExp::load()
         {
@@ -36,6 +38,7 @@ namespace GameServer
         void CMauExp::configure(const rapidjson::Value & nodeConfig)
         {
             CMauExp::m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
+            CMauExp::m_fMauExpCoeff = RapidHelper::GetValueOrDefault(nodeConfig, "mau_exp_coeff", default_exp_coeff);
         }
 
         void WINAPIV CMauExp::CalcExp(
@@ -83,8 +86,11 @@ namespace GameServer
                     if (!pMon->IsBossMonster() && bGetAttackExp)
                     {
                         float fSetExt = (pDstRec->m_fExt * 0.7f) * (nDam / pDstRec->m_fMaxHP);
+                        float fExpCoeff = default_exp_coeff;
+                        if (pObj->IsRidingUnit())
+                            fExpCoeff = CMauExp::m_fMauExpCoeff;
 
-                        pObj->AlterExp(fSetExt, false, false, false);
+                        pObj->AlterExp(fSetExt * fExpCoeff, false, false, false);
                         if (pObj->IsRidingUnit())
                         {
                             static char strErrorCodePos[] = "CPlayer::CalcExp()--0";
@@ -106,7 +112,11 @@ namespace GameServer
                 {
                     if (!pMon->IsBossMonster() && bGetAttackExp)
                     {
-                        pObj->AlterExp(fKillExt, false, false, false);
+                        float fExpCoeff = default_exp_coeff;
+                        if (pObj->IsRidingUnit())
+                            fExpCoeff = CMauExp::m_fMauExpCoeff;
+
+                        pObj->AlterExp(fKillExt * fExpCoeff, false, false, false);
                         if (pObj->IsRidingUnit())
                         {
                             static char strErrorCodePos[] = "CPlayer::CalcExp()--1";
@@ -157,8 +167,12 @@ namespace GameServer
                         if (fAddKillExt < 1.f)
                             continue;
 
-                        kPartyExpNotify->Add(pTrgPlayer, fAddKillExt);
-                        pTrgPlayer->AlterExp(fAddKillExt, false, false, false);
+                        float fExpCoeff = default_exp_coeff;
+                        if (pObj->IsRidingUnit())
+                            fExpCoeff = CMauExp::m_fMauExpCoeff;
+
+                        kPartyExpNotify->Add(pTrgPlayer, fAddKillExt * fExpCoeff);
+                        pTrgPlayer->AlterExp(fAddKillExt * fExpCoeff, false, false, false);
                         if (pTrgPlayer->IsRidingUnit())
                         {
                             static char strErrorCodePos[] = "CPlayer::CalcExp()--2";
