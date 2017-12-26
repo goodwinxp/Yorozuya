@@ -4,7 +4,7 @@
 #include "../../Common/Helpers/ModuleProxy.hpp"
 #include "../../Common/Interfaces/ModuleInterface.h"
 
-using namespace GameServer::BonusStart;
+using namespace GameServer::Addon;
 
 #define DllExport __declspec(dllexport)
 

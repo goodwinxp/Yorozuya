@@ -37,7 +37,7 @@
     <ClInclude Include="resource.h">
       <Filter>General\Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="addon.h">
+    <ClInclude Include="BonusStart.h">
       <Filter>Impl</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,7 +51,7 @@
     <ClCompile Include="ModuleProxy.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="addon.cpp">
+    <ClCompile Include="BonusStart.cpp">
       <Filter>Impl</Filter>
     </ClCompile>
   </ItemGroup>

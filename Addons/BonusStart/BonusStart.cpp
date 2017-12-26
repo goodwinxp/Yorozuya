@@ -8,14 +8,16 @@
 
 namespace GameServer
 {
-    namespace BonusStart
+    namespace Addon
     {
 		bool CBonusStart::m_bActivated = false;
-		int32_t m_nStartLvl = 1;
+		int32_t CBonusStart::m_nStartLvl = 1;
+		uint32_t CBonusStart::m_nStartDalant = 0;
+		uint32_t CBonusStart::m_nStartGold = 0;
 
         void CBonusStart::load()
         {
-			enable_hook(&ATF::CPlayer::SendMsg_BuyCashItemMode, &CBonusStart::SendMsg_BuyCashItemMode);
+		    enable_hook(&ATF::CPlayer::CreateComplete, &CBonusStart::CreateComplete);
         }
 
         void CBonusStart::unload()
@@ -31,22 +33,23 @@ namespace GameServer
 
         void CBonusStart::configure(const rapidjson::Value & nodeConfig)
         {
-			m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
-			m_nStartLvl = RapidHelper::GetValueOrDefault(nodeConfig, "startlvl", 1);
+		    m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
+		    m_nStartLvl = RapidHelper::GetValueOrDefault(nodeConfig, "start_lvl", 1);
+		    m_nStartDalant = RapidHelper::GetValueOrDefault(nodeConfig, "start_dalant", 0);
+		    m_nStartGold = RapidHelper::GetValueOrDefault(nodeConfig, "start_gold", 0);
         }
 
-		void WINAPIV CBonusStart::SendMsg_BuyCashItemMode(
-			ATF::CPlayer *_this,
-			ATF::Info::CPlayerSendMsg_BuyCashItemMode632_ptr next)
+		void WINAPIV CBonusStart::CreateComplete(ATF::CPlayer *_this, ATF::Info::CPlayerCreateComplete102_ptr next)
 		{
-			if (_this->m_bFirstStart)
-			{
-				for (int i = 0; i < m_nStartLvl - 1; i++)
+			if (m_bActivated) {
+				if (_this->m_bFirstStart)
 				{
-					_this->AlterExp_Potion(LDBL_MAX);
+				    _this->dev_lv(m_nStartLvl);
+				    _this->dev_dalant(m_nStartDalant);
+				    _this->dev_gold(m_nStartGold);
 				}
 			}
-			return next(_this);
+			next(_this);
 		}
     }
 }

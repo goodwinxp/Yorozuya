@@ -79,10 +79,25 @@
         }
       },
       {
+        "name": "addon.mau_exp",
+        "config": {
+          "activated": false,
+          "mau_exp_coeff":  1.0
+        }
+      },
+      {
         "name": "addons.bonus_start",
         "config": {
-          "activated": true,
-          "startlvl": 50
+          "activated": false,
+          "start_lvl": 1,
+          "start_dalant": 0,
+          "start_gold": 0
+        }
+      },
+      {
+        "name": "addons.various_settings",
+        "config": {
+          "trunk_gold_for_money_exchange_deactivate": true
         }
       }
     ]
