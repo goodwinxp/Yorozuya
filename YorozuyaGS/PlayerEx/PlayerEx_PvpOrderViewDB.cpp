@@ -68,18 +68,34 @@ namespace GameServer
 
         void CPvpOrderViewDB::AdjustTable()
         {
-            if (TableExist("tbl_KillerList"))
-                return;
+            if (!TableExist("tbl_KillerList"))
+            {
+                static wchar_t wszQueryCreateTable[] = LR"(
+                    CREATE TABLE [dbo].[tbl_KillerList](
+                        [PlayerSerial] [int] NOT NULL,
+                        [DiedPlayerSerial] [int] NOT NULL,
+                        [When] [date] NOT NULL);
+                    CREATE INDEX indx_load_list ON [tbl_KillerList] ([PlayerSerial], [When]);
+                )";
 
-            static wchar_t wszQueryCreateTable[] = LR"(
-                CREATE TABLE [dbo].[tbl_KillerList](
-                    [PlayerSerial] [int] NOT NULL,
-                    [DiedPlayerSerial] [int] NOT NULL,
-                    [When] [date] NOT NULL);
-                CREATE INDEX indx_load_list ON [tbl_KillerList] ([PlayerSerial], [When]);
+                CRFNewDatabase::ExecUpdateQuery(wszQueryCreateTable, false);
+            }
+
+            static wchar_t wszQueryUpdateTable[] = LR"(
+                UPDATE dbo.tbl_pvporderview
+                   SET [KillerSerial0] = 0
+                      ,[KillerSerial1] = 0
+                      ,[KillerSerial2] = 0
+                      ,[KillerSerial3] = 0
+                      ,[KillerSerial4] = 0
+                      ,[KillerSerial5] = 0
+                      ,[KillerSerial6] = 0
+                      ,[KillerSerial7] = 0
+                      ,[KillerSerial8] = 0
+                      ,[KillerSerial9] = 0
             )";
 
-            CRFNewDatabase::ExecUpdateQuery(wszQueryCreateTable, false);
+            CRFNewDatabase::ExecUpdateQuery(wszQueryUpdateTable, false);
         }
 
         void CPvpOrderViewDB::LoadKillerListImpl(

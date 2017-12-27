@@ -43,6 +43,20 @@ namespace GameServer
             static void WINAPIV CheckDayChangedPvpPointClear(
                 ATF::CMainThread *pObj,
                 ATF::Info::CMainThreadCheckDayChangedPvpPointClear20_ptr next);
+
+        private:
+            static bool WINAPIV CheckPvpLoseCondition(
+                ATF::CPvpCashPoint* pObj,
+                ATF::CPlayer* pKiller,
+                ATF::CPlayer* pDier,
+                ATF::Info::CPvpCashPointCheckPvpLoseCondition8_ptr next);
+
+            static bool WINAPIV CheckPvpHaveCondition(
+                ATF::CPvpCashPoint *pObj,
+                ATF::CPlayer* pKiller,
+                ATF::CPlayer* pDier,
+                long double dOldTempPoint,
+                ATF::Info::CPvpCashPointCheckPvpHaveCondition6_ptr next);
         };
     };
 };

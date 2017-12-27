@@ -22,7 +22,9 @@ namespace GameServer
             void Loop();
 
             void UpdateSetItem();
-            
+
+            bool AlreadyKilled(DWORD dwKillerSerial);
+
             bool PushSerialKiller(DWORD dwKillerSerial);
 
             void CleanSerialKillerList();
