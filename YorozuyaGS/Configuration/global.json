@@ -98,6 +98,7 @@
         "name": "addon.chat_log",
         "config": {
           "activated": false,
+          "folder": "./YorozuyaGS/Logs/Chat/",
           "circle": false,
           "far": false,
           "party": false,
