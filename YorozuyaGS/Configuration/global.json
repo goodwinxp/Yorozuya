@@ -82,7 +82,7 @@
         "name": "addon.mau_exp",
         "config": {
           "activated": false,
-          "mau_exp_coeff":  1.0
+          "mau_exp_coeff": 1.0
         }
       },
       {
@@ -92,6 +92,25 @@
           "start_lvl": 1,
           "start_dalant": 0,
           "start_gold": 0
+        }
+      },
+      {
+        "name": "addon.chat_log",
+        "config": {
+          "activated": false,
+          "circle": false,
+          "far": false,
+          "party": false,
+          "race": false,
+          "race_boss_cry": false,
+          "guild": false,
+          "map": false,
+          "race_boss": false,
+          "guild_est_sen": false,
+          "multi_far": false,
+          "re_resentation": false,
+          "all": false,
+          "trade": false
         }
       }
     ]
