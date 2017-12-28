@@ -5,6 +5,7 @@
 
 namespace fs = ::std::experimental::filesystem::v1;
 
+#include <ATF/CPlayerInfo.hpp>
 #include "../../Common/Interfaces/ModuleInterface.h"
 #include "../../Common/Helpers/ModuleHook.hpp"
 
@@ -53,7 +54,75 @@ namespace GameServer
             static fs::path m_pathLogFolder;
 
         private:
+            static void WINAPIV pc_ChatCircleRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next);
 
+            static void WINAPIV pc_ChatFarRequest(
+                ATF::CPlayer* pObj,
+                char* pwszName,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next);
+
+            static void WINAPIV pc_ChatPartyRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatPartyRequest1651_ptr next);
+
+            static void WINAPIV pc_ChatRaceRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatRaceRequest1657_ptr next);
+
+            static void WINAPIV pc_ChatRaceBossCryRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatRaceBossCryRequest1653_ptr next);
+
+            static void WINAPIV pc_ChatGuildRequest(
+                ATF::CPlayer* pObj,
+                unsigned int dwDstSerial,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatGuildRequest1641_ptr next);
+
+            static void WINAPIV pc_ChatMapRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatMapRequest1643_ptr next);
+
+            static void WINAPIV pc_ChatRaceBossRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatRaceBossRequest1655_ptr next);
+
+            static void WINAPIV pc_ChatGuildEstSenRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatGuildEstSenRequest1639_ptr next);
+
+            static void WINAPIV pc_ChatMultiFarRequest(
+                ATF::CPlayer* pObj,
+                char byDstNum,
+                ATF::_w_name* pDstName,
+                char* pwszMsg,
+                ATF::Info::CPlayerpc_ChatMultiFarRequest1647_ptr next);
+
+            static void WINAPIV pc_ChatRePresentationRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatRePresentationRequest1659_ptr next);
+
+            static void WINAPIV pc_ChatAllRequest(
+                ATF::CPlayer* pObj,
+                char* pwszChatData,
+                ATF::Info::CPlayerpc_ChatAllRequest1631_ptr next);
+
+            static void WINAPIV pc_ChatTradeRequestMsg(
+                ATF::CPlayer* pObj,
+                char bySubType,
+                char* pwszTradeMsg,
+                ATF::Info::CPlayerpc_ChatTradeRequestMsg1661_ptr next);
         };
     };
 };
