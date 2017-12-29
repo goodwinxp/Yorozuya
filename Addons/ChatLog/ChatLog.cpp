@@ -22,6 +22,10 @@ namespace GameServer
 
         fs::path CChatLog::m_pathLogFolder = default_folder_path;
 
+        CChatLog::CChatLog()
+        {
+        }
+
         void CChatLog::load()
         {
             enable_hook(&ATF::CPlayer::pc_ChatCircleRequest, &CChatLog::pc_ChatCircleRequest);
@@ -58,6 +62,10 @@ namespace GameServer
 
             CChatLog::m_pathLogFolder = RapidHelper::GetValueOrDefault(nodeConfig, "folder", default_folder_path);
 
+            m_pClientLog = ::std::make_shared<P7Helper::CP7LogShared>(
+                L"/P7.Pool=32768",
+                L"ChatLog");
+
             ::std::unordered_map<::std::string, chat_type> mapChatName {
                 { "circle", chat_type::chat_circle },
                 { "far", chat_type::chat_far },
@@ -74,6 +82,7 @@ namespace GameServer
                 { "trade", chat_type::chat_trade }
             };
 
+            ::std::wstring_convert<::std::codecvt_utf8_utf16<wchar_t>> converter;
             for (auto& chat : nodeConfig.GetObject())
             {
                 ::std::string sNameBlock(chat.name.GetString());
@@ -81,7 +90,15 @@ namespace GameServer
                 if (if_find == mapChatName.cend())
                     continue;
 
-                CChatLog::m_arrChatLogging[(size_t)if_find->second] = chat.value.Get<bool>();
+                bool active = chat.value.Get<bool>();
+                CChatLog::m_arrChatLogging[(size_t)if_find->second] = active;
+                if (!active)
+                    continue;
+
+                ::std::wstring wsNameChat = converter.from_bytes(sNameBlock);
+
+                m_arrChatTrace[(size_t)if_find->second] = 
+                    m_pClientLog->create_trace(L"Chat channel", wsNameChat.c_str());
             }
         }
 

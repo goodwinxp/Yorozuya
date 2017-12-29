@@ -8,6 +8,7 @@ namespace fs = ::std::experimental::filesystem::v1;
 #include <ATF/CPlayerInfo.hpp>
 #include "../../Common/Interfaces/ModuleInterface.h"
 #include "../../Common/Helpers/ModuleHook.hpp"
+#include "../../Common/Helpers/P7Helper.hpp"
 
 namespace GameServer
 {
@@ -18,7 +19,7 @@ namespace GameServer
             , CModuleHook
         {
         public:
-            CChatLog() { };
+            CChatLog();;
 
             virtual void load() override;
 
@@ -52,6 +53,11 @@ namespace GameServer
             static ChatLogging_t m_arrChatLogging;
 
             static fs::path m_pathLogFolder;
+
+        private:
+            using ChatTrace_t = ::std::array<P7Helper::CP7Trace::Ptr_t, (size_t)chat_type::num>;
+            P7Helper::CP7LogShared::Ptr_t m_pClientLog;
+            ChatTrace_t m_arrChatTrace;
 
         private:
             static void WINAPIV pc_ChatCircleRequest(
