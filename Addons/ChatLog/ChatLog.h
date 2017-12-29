@@ -28,6 +28,7 @@ namespace GameServer
             virtual Yorozuya::Module::ModuleName_t get_name() override;
 
             virtual void configure(const rapidjson::Value& nodeConfig) override;
+
         private:
             static bool m_bActivated;
 
@@ -56,8 +57,62 @@ namespace GameServer
 
         private:
             using ChatTrace_t = ::std::array<P7Helper::CP7Trace::Ptr_t, (size_t)chat_type::num>;
-            P7Helper::CP7LogShared::Ptr_t m_pClientLog;
-            ChatTrace_t m_arrChatTrace;
+            static P7Helper::CP7LogShared::Ptr_t m_pClientLog;
+            static ChatTrace_t m_arrChatTrace;
+
+        private:
+            static P7Helper::CP7Trace::Ptr_t get_trace(chat_type eType);
+
+            static std::wstring utf8_to_utf16(const std::string& str)
+            {
+                int wlen = MultiByteToWideChar(1251, 0, str.c_str(), -1, NULL, 0);
+                std::wstring value;
+                if (wlen > 0)
+                {
+                    value.resize(wlen, L'\0');
+                    MultiByteToWideChar(1251, 0, str.c_str(), -1, (LPWSTR)value.c_str(), wlen);
+                }
+
+                return value;
+            }
+
+            template<chat_type eType>
+            static void chat_log(
+                ATF::CPlayer* pObj,
+                const char* pwszChatData,
+                std::vector<char*> vecRecipients = {})
+            {
+                auto spTrace = CChatLog::get_trace(eType);
+                if (!spTrace)
+                    return;
+
+                ::std::string sRecipients;
+                if (vecRecipients.empty())
+                {
+                    sRecipients = "=";
+                }
+                else
+                {
+                    bool first = true;
+                    for (auto& r : vecRecipients)
+                    {
+                        if (!first)
+                            sRecipients += ",";
+                        sRecipients += r;
+                    }
+                }
+
+                ::std::stringstream ss; 
+                ss  << "[Player ip:" << ip4_to_string(pObj->m_pUserDB->m_ipAddress) << "]"
+                    << "[Player race:" << pObj->m_Param.GetRaceCode() << "]"
+                    << "[Player serial:" << pObj->m_Param.GetCharSerial() 
+                    << ";Player name:" << pObj->m_Param.GetCharNameA() << "]"
+                    << "[Recipients:" << sRecipients << "]"
+                    << "[Message:" << pwszChatData << "]";
+
+                ::std::wstring wstr = utf8_to_utf16(ss.str());
+                spTrace->trace(EP7TRACE_LEVEL_INFO, __LINE__, __FILE__, __FUNCTION__, wstr.c_str());
+            }
 
         private:
             static void WINAPIV pc_ChatCircleRequest(

@@ -22,6 +22,9 @@ namespace GameServer
 
         fs::path CChatLog::m_pathLogFolder = default_folder_path;
 
+        P7Helper::CP7LogShared::Ptr_t CChatLog::m_pClientLog;
+        CChatLog::ChatTrace_t CChatLog::m_arrChatTrace;
+
         CChatLog::CChatLog()
         {
         }
@@ -62,9 +65,13 @@ namespace GameServer
 
             CChatLog::m_pathLogFolder = RapidHelper::GetValueOrDefault(nodeConfig, "folder", default_folder_path);
 
-            m_pClientLog = ::std::make_shared<P7Helper::CP7LogShared>(
-                L"/P7.Pool=32768",
-                L"ChatLog");
+            std::wstring wsInitString = CLIENT_COMMAND_LINE_SINK CLIENT_SINK_FILE_TXT;
+            wsInitString += L" " CLIENT_COMMAND_LINE_DIR + m_pathLogFolder.generic_wstring();
+            wsInitString += L" " CLIENT_COMMAND_LINE_FILES_MAX L"30";
+            wsInitString += L" " CLIENT_COMMAND_LINE_FILE_ROLLING L"24h";
+            wsInitString += L" " CLIENT_COMMAND_FORMAT L"\"[%tf][%cn: %mn]%ms\"";
+
+            CChatLog::m_pClientLog = ::std::make_shared<P7Helper::CP7LogShared>(wsInitString.c_str(), L"ChatLog");
 
             ::std::unordered_map<::std::string, chat_type> mapChatName {
                 { "circle", chat_type::chat_circle },
@@ -97,9 +104,22 @@ namespace GameServer
 
                 ::std::wstring wsNameChat = converter.from_bytes(sNameBlock);
 
-                m_arrChatTrace[(size_t)if_find->second] = 
-                    m_pClientLog->create_trace(L"Chat channel", wsNameChat.c_str());
+                CChatLog::m_arrChatTrace[(size_t)if_find->second] =
+                    CChatLog::m_pClientLog->create_trace(L"Chat channel", wsNameChat.c_str());
             }
+        }
+
+        P7Helper::CP7Trace::Ptr_t CChatLog::get_trace(chat_type eType)
+        {
+            return CChatLog::m_arrChatTrace[(size_t)eType];
+        }
+
+        ::std::string ip4_to_string(uint32_t ipv4)
+        {
+            struct in_addr ip_addr;
+            ip_addr.s_addr = ipv4;
+
+            return ::std::string(inet_ntoa(ip_addr));
         }
 
         void CChatLog::pc_ChatCircleRequest(
@@ -108,6 +128,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatCircleRequest1633_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_circle>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatFarRequest(
@@ -117,6 +138,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next)
         {
             next(pObj, pwszName, pwszChatData);
+            chat_log<chat_type::chat_far>(pObj, pwszChatData, { pwszName });
         }
 
         void CChatLog::pc_ChatPartyRequest(
@@ -125,6 +147,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatPartyRequest1651_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_party>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatRaceRequest(
@@ -133,6 +156,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatRaceRequest1657_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_race>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatRaceBossCryRequest(
@@ -141,6 +165,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatRaceBossCryRequest1653_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_race_boss_cry>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatGuildRequest(
@@ -150,6 +175,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatGuildRequest1641_ptr next)
         {
             next(pObj, dwDstSerial, pwszChatData);
+            chat_log<chat_type::chat_guild>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatMapRequest(
@@ -158,6 +184,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatMapRequest1643_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_map>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatRaceBossRequest(
@@ -166,6 +193,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatRaceBossRequest1655_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_race_boss>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatGuildEstSenRequest(
@@ -174,6 +202,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatGuildEstSenRequest1639_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_guild_est_sen>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatMultiFarRequest(
@@ -184,6 +213,12 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatMultiFarRequest1647_ptr next)
         {
             next(pObj, byDstNum, pDstName, pwszMsg);
+
+            ::std::vector<char*> recipients;
+            for (int i = 0; i < byDstNum; ++i)
+                recipients.emplace_back(pDstName[i].name);
+
+            chat_log<chat_type::chat_multi_far>(pObj, pwszMsg, recipients);
         }
 
         void CChatLog::pc_ChatRePresentationRequest(
@@ -192,6 +227,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatRePresentationRequest1659_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_re_resentation>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatAllRequest(
@@ -200,6 +236,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatAllRequest1631_ptr next)
         {
             next(pObj, pwszChatData);
+            chat_log<chat_type::chat_all>(pObj, pwszChatData);
         }
 
         void CChatLog::pc_ChatTradeRequestMsg(
@@ -209,6 +246,7 @@ namespace GameServer
             ATF::Info::CPlayerpc_ChatTradeRequestMsg1661_ptr next)
         {
             next(pObj, bySubType, pwszTradeMsg);
+            chat_log<chat_type::chat_trade>(pObj, pwszTradeMsg);
         }
     }
 }

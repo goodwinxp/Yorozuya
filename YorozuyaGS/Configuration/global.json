@@ -99,19 +99,19 @@
         "config": {
           "activated": false,
           "folder": "./YorozuyaGS/Logs/Chat/",
-          "circle": false,
-          "far": false,
-          "party": false,
-          "race": false,
-          "race_boss_cry": false,
-          "guild": false,
-          "map": false,
-          "race_boss": false,
-          "guild_est_sen": false,
-          "multi_far": false,
-          "re_resentation": false,
-          "all": false,
-          "trade": false
+          "circle": true,
+          "far": true,
+          "party": true,
+          "race": true,
+          "race_boss_cry": true,
+          "guild": true,
+          "map": true,
+          "race_boss": true,
+          "guild_est_sen": true,
+          "multi_far": true,
+          "re_resentation": true,
+          "all": true,
+          "trade": true
         }
       }
     ]

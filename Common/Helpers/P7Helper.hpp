@@ -123,10 +123,19 @@ namespace P7Helper
         IP7_Client * m_pClient = nullptr;
     };
 
-    #define MSG_LOG(trace, lv, msg) \
+    #define MSG_LOG(tr, lv, msg) \
     { \
         ::std::wstringstream ss; \
         ss << msg; \
-        trace.trace(lv, __LINE__, __FILE__, __FUNCTION__, ss.str().c_str()); \
+        tr->trace(lv, __LINE__, __FILE__, __FUNCTION__, ss.str().c_str()); \
+    }
+
+    #define MSG_LOG_UTF8(tr, lv, msg) \
+    { \
+        ::std::stringstream ss; \
+        ss << msg; \
+        ::std::wstring_convert<::std::codecvt_utf8_utf16<wchar_t>> converter; \
+        ::std::wstring wstr = converter.from_bytes(ss.str()); \
+        tr->trace(lv, __LINE__, __FILE__, __FUNCTION__, wstr.c_str()); \
     }
 }
