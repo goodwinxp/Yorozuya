@@ -65,15 +65,10 @@ namespace GameServer
 
             CChatLog::m_pathLogFolder = RapidHelper::GetValueOrDefault(nodeConfig, "folder", default_folder_path);
 
-            std::wstring wsInitString = CLIENT_COMMAND_LINE_SINK CLIENT_SINK_FILE_TXT;
-            wsInitString += L" " CLIENT_COMMAND_LINE_DIR + m_pathLogFolder.generic_wstring();
-            wsInitString += L" " CLIENT_COMMAND_LINE_FILES_MAX L"30";
-            wsInitString += L" " CLIENT_COMMAND_LINE_FILE_ROLLING L"24h";
-            wsInitString += L" " CLIENT_COMMAND_FORMAT L"\"[%tf][%cn: %mn]%ms\"";
+            CChatLog::m_pClientLog = ::std::make_shared<P7Helper::CP7LogShared>(
+                build_init_string().c_str(), L"ChatLog");
 
-            CChatLog::m_pClientLog = ::std::make_shared<P7Helper::CP7LogShared>(wsInitString.c_str(), L"ChatLog");
-
-            ::std::unordered_map<::std::string, chat_type> mapChatName {
+            const ::std::unordered_map<::std::string, chat_type> mapChatName {
                 { "circle", chat_type::chat_circle },
                 { "far", chat_type::chat_far },
                 { "party", chat_type::chat_party },
@@ -107,6 +102,17 @@ namespace GameServer
                 CChatLog::m_arrChatTrace[(size_t)if_find->second] =
                     CChatLog::m_pClientLog->create_trace(L"Chat channel", wsNameChat.c_str());
             }
+        }
+
+        std::wstring CChatLog::build_init_string()
+        {
+            std::wstring wsInitString = CLIENT_COMMAND_LINE_SINK CLIENT_SINK_FILE_TXT;
+            wsInitString += L" " CLIENT_COMMAND_LINE_DIR + CChatLog::m_pathLogFolder.generic_wstring();
+            wsInitString += L" " CLIENT_COMMAND_LINE_FILES_MAX L"30";
+            wsInitString += L" " CLIENT_COMMAND_LINE_FILE_ROLLING L"24h";
+            wsInitString += L" " CLIENT_COMMAND_FORMAT L"\"[%tf][%cn: %mn]%ms\"";
+
+            return wsInitString;
         }
 
         P7Helper::CP7Trace::Ptr_t CChatLog::get_trace(chat_type eType)

@@ -30,6 +30,9 @@ namespace GameServer
             virtual void configure(const rapidjson::Value& nodeConfig) override;
 
         private:
+            std::wstring build_init_string();
+
+        private:
             static bool m_bActivated;
 
             enum class chat_type : uint8_t
