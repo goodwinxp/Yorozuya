@@ -4,9 +4,9 @@
 #define STRINGIZE(s) STRINGIZE2(s)
 
 #define VERSION_MAJOR               1
-#define VERSION_MINOR               0
+#define VERSION_MINOR               1
 #define VERSION_REVISION            0
-#define VERSION_BUILD               1
+#define VERSION_BUILD               0
 
 #define VER_FILE_DESCRIPTION_STR    "Defense for server rf online 2232"
 #define VER_FILE_VERSION            VERSION_MAJOR, VERSION_MINOR, VERSION_REVISION, VERSION_BUILD
