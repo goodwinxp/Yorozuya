@@ -2,7 +2,7 @@
 
 #include "../../Common/Interfaces/ModuleInterface.h"
 #include "../../Common/Helpers/ModuleHook.hpp"
-#include "ATF/cplayer.hpp"
+#include "ATF/CPlayerInfo.hpp"
 
 namespace GameServer
 {

@@ -64,10 +64,8 @@ namespace GameServer
             auto instance = CPvpOrderViewDB::get_instance();
             ::std::set<uint32_t> setKillerInfo, setDiffKillerInfo;
             std::unique_lock<decltype(m_mtxKillerInfo)> lock(m_mtxKillerInfo);
-            setKillerInfo = m_setKillerInfo;
-
             ::std::set_difference(
-                setKillerInfo.begin(), setKillerInfo.end(),
+                m_setKillerInfo.begin(), m_setKillerInfo.end(),
                 m_setSavedKillerInfo.begin(), m_setSavedKillerInfo.end(),
                 std::inserter(setDiffKillerInfo, setDiffKillerInfo.end()));
 
@@ -75,7 +73,7 @@ namespace GameServer
                 std::move(setDiffKillerInfo),
                 m_dwPlayerSerial);
 
-            m_setSavedKillerInfo.insert(setKillerInfo.begin(), setKillerInfo.end());
+            m_setSavedKillerInfo.insert(m_setKillerInfo.begin(), m_setKillerInfo.end());
         }
     }
 }

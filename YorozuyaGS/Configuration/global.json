@@ -82,7 +82,7 @@
         "name": "addon.mau_exp",
         "config": {
           "activated": false,
-          "mau_exp_coeff":  1.0
+          "mau_exp_coeff": 1.0
         }
       },
       {
@@ -92,6 +92,26 @@
           "start_lvl": 1,
           "start_dalant": 0,
           "start_gold": 0
+        }
+      },
+      {
+        "name": "addon.chat_log",
+        "config": {
+          "activated": false,
+          "folder": "./YorozuyaGS/Logs/Chat/",
+          "circle": true,
+          "far": true,
+          "party": true,
+          "race": true,
+          "race_boss_cry": true,
+          "guild": true,
+          "map": true,
+          "race_boss": true,
+          "guild_est_sen": true,
+          "multi_far": true,
+          "re_resentation": true,
+          "all": true,
+          "trade": true
         }
       }
     ]

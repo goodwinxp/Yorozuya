@@ -21,12 +21,6 @@ namespace GameServer
             virtual void unload() override;
 
             virtual Yorozuya::Module::ModuleName_t get_name() override;
-        private:
-            static void WINAPIV pc_ChatFarRequest(
-                ATF::CPlayer *pPlayer,
-                char *pwszName,
-                char *pwszChatData,
-                ATF::Info::CPlayerpc_ChatFarRequest1635_ptr next);
         };
     };
 };
