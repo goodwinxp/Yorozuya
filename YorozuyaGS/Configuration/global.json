@@ -113,6 +113,49 @@
           "all": true,
           "trade": true
         }
+      },
+      {
+        "name": "addon.server_memory_patch",
+        "config": {
+          "activated": true,
+          "records": [
+            {
+              "address": "0x215ce9",
+              "value": "EB",
+              "description": "enabled gm commands in release mode"
+            },
+            {
+              "address": "0x02a634",
+              "value": "9090",
+              "description": "enabled button in UI[1/3]"
+            },
+            {
+              "address": "0x02a734",
+              "value": "9090",
+              "description": "enabled button in UI[2/3]"
+            },
+            {
+              "address": "0x02a7c4",
+              "value": "9090",
+              "description": "enabled button in UI[3/3]"
+            },
+            {
+              "address": "0x19ade6",
+              "value": "30750000",
+              "description": "increased count wall in geo data[1/2]"
+            },
+            {
+              "address": "0x19ae03",
+              "value": "30750000",
+              "description": "increased count wall in geo data[2/2]"
+            },
+            {
+              "address": "0x0b2a22",
+              "value": "EB",
+              "description": "ignoring bugged loot stack"
+            }
+          ]
+        }
       }
     ]
   }

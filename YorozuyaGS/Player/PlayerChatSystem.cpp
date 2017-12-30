@@ -10,8 +10,7 @@ namespace GameServer
     {
         void CPlayerChatSystem::load()
         {
-            Memory::WriteMemory(0x14009181DL, 0x90909090);
-            Memory::WriteMemory(0x14009181FL, 0x90909090);
+            Memory::WriteMemoryStr(0x14009181DL, "9090909090");
         }
 
         void CPlayerChatSystem::unload()
