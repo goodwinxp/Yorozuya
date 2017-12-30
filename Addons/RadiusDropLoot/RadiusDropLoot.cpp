@@ -61,6 +61,12 @@ namespace GameServer
                     break;
                 }
 
+                if (!pThrower)
+                {
+                    result = next(pItem, pOwner, dwPartyBossSerial, bPartyShare, pThrower, byCreateCode, pMap, wLayerIndex, pStdPos, bHide);
+                    break;
+                }
+
                 if (pThrower->m_ObjID.m_byKind == 0 &&
                     pThrower->m_ObjID.m_byID != (uint8_t)e_obj_id::obj_id_monster)
                 {
