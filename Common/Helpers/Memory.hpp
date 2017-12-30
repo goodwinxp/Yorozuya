@@ -1,11 +1,45 @@
 #pragma once
 
 #include <Windows.h>
+#include <vector>
 
 namespace Memory
 {
     namespace detail
     {
+        uint8_t sym_to_byte(const char sym)
+        {
+            uint8_t value = 0;
+            if (sym >= 'A' && sym <= 'F')
+            {
+                value = ((sym - 'A') + 10);
+            }
+            else if (sym >= 'a' && sym <= 'f')
+            {
+                value = ((sym - 'a') + 10);
+            }
+            else if (sym >= '0' && sym <= '9')
+            {
+                value = ((sym - '0'));
+            }
+
+            return value;
+        }
+
+        std::vector<uint8_t> to_array(const std::string& str)
+        {
+            std::vector<uint8_t> result;
+            for (int i = 0; i < str.size(); i += 2)
+            {
+                uint8_t value = sym_to_byte(str[i]) << 4;
+                value |= sym_to_byte(str[i + 1]);
+
+                result.emplace_back(value);
+            }
+
+            return result;
+        }
+
         inline bool WriteMemory(LPVOID lpAddress, LPVOID lpBuffer, SIZE_T nSize)
         {
             DWORD   flOldProtect = PAGE_NOACCESS;
@@ -73,6 +107,12 @@ namespace Memory
     inline bool WriteMemory(ULONG_PTR lpAddress, T Value)
     {
         return detail::WriteMemory(lpAddress, &Value, sizeof(T));
+    }
+
+    inline bool WriteMemoryStr(ULONG_PTR lpAddress, const std::string& sValue)
+    {
+        auto arr = detail::to_array(sValue);
+        return detail::WriteMemory(lpAddress, arr.data(), arr.size());
     }
 
     template<typename T>
