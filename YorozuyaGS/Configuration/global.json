@@ -66,6 +66,12 @@
         }
       },
       {
+        "name": "addon.defence_formula",
+        "config": {
+          "activated": false
+        }
+      },
+      {
         "name": "addon.stone_hp",
         "config": {
           "activated": false,

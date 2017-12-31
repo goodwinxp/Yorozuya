@@ -15,7 +15,7 @@
                                     "." STRINGIZE(VERSION_REVISION) \
                                     "." STRINGIZE(VERSION_BUILD)    \
 
-#define VER_PRODUCTNAME_STR         "RadiusDropLoot"
+#define VER_PRODUCTNAME_STR         "<TODO>"
 #define VER_PRODUCT_VERSION         VER_FILE_VERSION
 #define VER_PRODUCT_VERSION_STR     VER_FILE_VERSION_STR
 #define VER_ORIGINAL_FILENAME_STR   VER_PRODUCTNAME_STR ".dll"

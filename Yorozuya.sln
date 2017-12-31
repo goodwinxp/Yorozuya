@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatLog", "Addons\ChatLog\C
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerMemoryPatch", "Addons\ServerMemoryPatch\ServerMemoryPatch.vcxproj", "{DC2DC971-ACA7-4438-BCB0-67CDC1397B7C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DefenceFormula", "Addons\DefenceFormula\DefenceFormula.vcxproj", "{BCF66E19-2AE3-454A-886D-EDF2868C9001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -111,6 +113,10 @@ Global
 		{DC2DC971-ACA7-4438-BCB0-67CDC1397B7C}.Release|x64.Build.0 = Release|x64
 		{DC2DC971-ACA7-4438-BCB0-67CDC1397B7C}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
 		{DC2DC971-ACA7-4438-BCB0-67CDC1397B7C}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{BCF66E19-2AE3-454A-886D-EDF2868C9001}.Release|x64.ActiveCfg = Release|x64
+		{BCF66E19-2AE3-454A-886D-EDF2868C9001}.Release|x64.Build.0 = Release|x64
+		{BCF66E19-2AE3-454A-886D-EDF2868C9001}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{BCF66E19-2AE3-454A-886D-EDF2868C9001}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +138,7 @@ Global
 		{BEA34B92-014B-4020-835F-D143E8D4ABC1} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{7E6D3924-32C7-436E-BF41-41FBFDBAFD9E} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{DC2DC971-ACA7-4438-BCB0-67CDC1397B7C} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
+		{BCF66E19-2AE3-454A-886D-EDF2868C9001} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}
