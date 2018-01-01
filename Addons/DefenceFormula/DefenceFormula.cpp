@@ -13,7 +13,7 @@ namespace GameServer
     {
         namespace
         {
-            enum class eTolType : uint8_t
+            enum class eTolType
             {
                 fire = 0,
                 water,
@@ -69,7 +69,7 @@ namespace GameServer
 
             if (ATF::Global::g_HolySys->GetDestroyerSerial() == pObj->m_dwObjSerial ||
                 pObj->IsLastAttBuff())
-                fDefPlus += 1.3;
+                fDefPlus += 1.3f;
 
             fDefPlus += pObj->m_EP.GetEff_Rate(ATF::_EFF_RATE::DefFc);
             if (!pObj->m_bInGuildBattle)
@@ -79,13 +79,13 @@ namespace GameServer
                 switch (byBossType)
                 {
                 case 0:
-                    fDefPlus += 1.3;
+                    fDefPlus += 1.3f;
                     break;
                 case 1: case 5:
-                    fDefPlus += 1.5;
+                    fDefPlus += 1.5f;
                     break;
                 case 3: case 7:
-                    fDefPlus += 1.2;
+                    fDefPlus += 1.2f;
                     break;
                 default:
                     break;
@@ -133,8 +133,9 @@ namespace GameServer
                 return 1.f;
 
             ATF::CPlayer* pPlayer = (ATF::CPlayer*)pObj;
-            float result = GetDefPlusFromItem(pPlayer, nAttPart);
-            result += CalcDefPlus(pPlayer) / 20;
+            float result = 1.f;
+            result += GetDefPlusFromItem(pPlayer, nAttPart);
+            result += CalcDefPlus(pPlayer) / 20.f;
             return result;
         }
 
@@ -148,41 +149,47 @@ namespace GameServer
                 return next(pObj, byAttTolType, nDamPoint);
 
             const float fTol[(size_t)eTolType::num] = {
-                (float)pObj->GetFireTol() / 100.f,
-                (float)pObj->GetWaterTol() / 100.f,
-                (float)pObj->GetSoilTol() / 100.f,
-                (float)pObj->GetWindTol() / 100.f
+                (float)pObj->vfptr->GetFireTol(pObj) / 100.f,
+                (float)pObj->vfptr->GetWaterTol(pObj) / 100.f,
+                (float)pObj->vfptr->GetSoilTol(pObj) / 100.f,
+                (float)pObj->vfptr->GetWindTol(pObj) / 100.f
             };
 
-            int nTotalTol = 0;
+            float fTotalTol = 0.;
             switch ((eTolType)byAttTolType)
             {
                 case eTolType::fire:
                 {
-                    nTotalTol -= CDefenceFormula::m_fBaseCoeffResist * nDamPoint * fTol[(size_t)eTolType::fire];
-                    nTotalTol -= CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::water];
-                    nTotalTol += CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::soil];
+                    fTotalTol -= CDefenceFormula::m_fBaseCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::fire];
+                    fTotalTol -= CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::water];
+                    fTotalTol += CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::soil];
+                    break;
                 }
                 case eTolType::water:
                 {
-                    nTotalTol -= CDefenceFormula::m_fBaseCoeffResist * nDamPoint * fTol[(size_t)eTolType::water];
-                    nTotalTol -= CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::wind];
-                    nTotalTol += CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::fire];
+                    fTotalTol -= CDefenceFormula::m_fBaseCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::water];
+                    fTotalTol -= CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::wind];
+                    fTotalTol += CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::fire];
+                    break;
                 }
                 case eTolType::soil:
                 {
-                    nTotalTol -= CDefenceFormula::m_fBaseCoeffResist * nDamPoint * fTol[(size_t)eTolType::soil];
-                    nTotalTol -= CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::fire];
-                    nTotalTol += CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::wind];
+                    fTotalTol -= CDefenceFormula::m_fBaseCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::soil];
+                    fTotalTol -= CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::fire];
+                    fTotalTol += CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::wind];
+                    break;
                 }
                 case eTolType::wind:
                 {
-                    nTotalTol -= CDefenceFormula::m_fBaseCoeffResist * nDamPoint * fTol[(size_t)eTolType::wind];
-                    nTotalTol -= CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::soil];
-                    nTotalTol += CDefenceFormula::m_fSupportCoeffResist * nDamPoint * fTol[(size_t)eTolType::water];
+                    fTotalTol -= CDefenceFormula::m_fBaseCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::wind];
+                    fTotalTol -= CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::soil];
+                    fTotalTol += CDefenceFormula::m_fSupportCoeffResist * (float)nDamPoint * fTol[(size_t)eTolType::water];
+                    break;
                 }
+                default:
+                    break;
             }
-            return nTotalTol;
+            return (int)fTotalTol;
         }
 
         int CDefenceFormula::GetAttackDamPoint(
@@ -200,7 +207,7 @@ namespace GameServer
                 if (!CDefenceFormula::m_bActivated)
                     break;
 
-                float fDefPnt = 0.0;
+                float fDefPnt = 0.f;
                 int nTolFc = pDst->GetTotalTol(nTolType, nAttPnt);
                 if (pDst->m_EP.GetEff_State(ATF::_EFF_STATE::Dst_No_Def))
                 {
@@ -217,9 +224,9 @@ namespace GameServer
                         {
                             if (nOutValue > 0)
                             {
-                                nOutValue = nOutValue / 100.0;
-                                if (nOutValue <= 1.0)
-                                    fDefPnt = fDefPnt * (1.0 - nOutValue);
+                                nOutValue = nOutValue / 100.f;
+                                if (nOutValue <= 1.f)
+                                    fDefPnt = fDefPnt * (1.f - nOutValue);
                             }
                         }
                     }
@@ -231,32 +238,41 @@ namespace GameServer
                     break;
                 }
                 
-                float fAveAdj = (pObj->vfptr->GetWeaponAdjust(pObj) + pDst->GetDefGap(nAttPart)) / 2;
+                float fDefFacing = pDst->vfptr->GetDefFacing(pDst, nAttPart);
+                float fDefGap = pDst->vfptr->GetDefGap(pDst, nAttPart);
+                if (nAttPart == 5)
+                {
+                    if (fDefFacing > -2.f)
+                    {
+                        fDefFacing = -2.f;
+                    }
+                    if (fDefGap < -2.f)
+                    {
+                        fDefGap = -2.f;
+                    }
+                }
+
+                float fAveAdj = (pObj->vfptr->GetWeaponAdjust(pObj) + fDefGap) / 2.f;
 
                 float fStdAttFc = 0.f;
-                float fDono1 = pDst->GetDefFacing(nAttPart) - 1;
+                float fDono1 = fDefFacing - 1.f;
                 if (fDono1 != 0.f)
                 {
-                    fStdAttFc = pDst->GetDefFacing(nAttPart) * fDefPnt / 2;
-                    fStdAttFc *= pDst->GetDefGap(nAttPart);
-                    fStdAttFc -= fDefPnt / 2;
-                    fStdAttFc /= fDono1;
+                    fStdAttFc = (fDefFacing * fDefPnt * fDefGap - fDefPnt) / fDono1;
                 }
 
                 float fSecDstFc = 0.f;
-                float fDono2 = fStdAttFc - (fDefPnt / 2 * fAveAdj);
+                float fDono2 = fStdAttFc - (fDefPnt * fAveAdj);
                 if (fDono2 != 0.f)
                 {
-                    fSecDstFc = fStdAttFc - fDefPnt / 2;
-                    fSecDstFc /= fStdAttFc - (fDefPnt / 2 * fAveAdj);
-                    fSecDstFc /= SecDstFcCoeff(pDst, nAttPart);
+                    fSecDstFc = (fStdAttFc - fDefPnt) / fDono2;
                 }
 
-                float fProp = 1.2;
+                float fProp = 1.2f;
                 if (nTolType == -1)
-                    fProp = 1.0;
+                    fProp = 1.f;
 
-                nDamPoint = (nAttPnt * fProp + nTolFc - fDefPnt * fAveAdj) * fSecDstFc;
+                nDamPoint = (((nAttPnt * fProp) + nTolFc) - (fDefPnt * fAveAdj)) * (fSecDstFc / SecDstFcCoeff(pDst, nAttPart));
                 if (nDamPoint < 1)
                     nDamPoint = 1;
             } while (false);
