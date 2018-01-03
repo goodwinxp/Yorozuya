@@ -177,15 +177,16 @@ namespace GameServer
             float fEffectValue,
             char * byRet)
         {
-            ATF::CPlayer *pActChar = (ATF::CPlayer *)pAct;
-            pAct->m_fCurPos;
-            int iMonsterIndx = static_cast<int>(fEffectValue);
             bool result = false;
 
             do
             {
+                int iMonsterIndx = static_cast<int>(fEffectValue);
+                ATF::CPlayer *pActChar = (ATF::CPlayer *)pAct;
+
                 ATF::_monster_fld* pFld = (ATF::_monster_fld*)ATF::Global::g_MainThread
                     ->m_tblMonster.GetRecord(iMonsterIndx);
+
                 if (!pFld)
                     break;
 
