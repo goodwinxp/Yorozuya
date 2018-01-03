@@ -5,7 +5,6 @@
 #include <dbghelp.h>
 #pragma comment(lib, "dbghelp.lib")
 
-#include "../../Common/Helpers/zip.h"
 #include "../../Common/Helpers/RapidHelper.hpp"
 
 namespace GameServer
@@ -152,43 +151,6 @@ namespace GameServer
 
             if (bWriteDump != TRUE)
                 return;
-
-            ::std::vector<fs::path> vecRequiredFiles {
-                pathFileDump,
-                GetGameServerExePath(),
-                GetDllPath(),
-                GetDllPath().replace_extension(L"pdb")
-            };
-
-            auto pathZip = fs::path(pathFileDump).replace_extension(L"zip");
-
-            do
-            {
-                HZIP hZip = CreateZip(pathZip.generic_wstring().c_str(), 0);
-                if (hZip == nullptr)
-                    break;
-
-                size_t count = 0;
-                ZRESULT hResult = ZR_OK;
-                for (auto& file : vecRequiredFiles)
-                {
-                    hResult = ZipAdd(
-                        hZip, file.filename().c_str(),
-                        file.generic_wstring().c_str());
-
-                    if (hResult == ZR_OK)
-                    {
-                        ++count;
-                    }
-                }
-
-                CloseZip(hZip);
-
-                if (count != vecRequiredFiles.size())
-                    break;
-
-                fs::remove(pathFileDump);
-            } while (false);
         }
 
         LONG WINAPI CCrashDump::UnhandledExceptionFilter(::_EXCEPTION_POINTERS * ExceptionInfo)

@@ -68,7 +68,9 @@
       {
         "name": "addon.defence_formula",
         "config": {
-          "activated": false
+          "activated": false,
+		  "base_resist_coeff": 0.1,
+		  "support_resist_coeff": 0.9
         }
       },
       {
