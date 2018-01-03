@@ -31,7 +31,8 @@ namespace GameServer
                 { 185, &AlterMoneyPotion<e_money_type::pvp_point_2> },
                 { 186, &AlterMoneyPotion<e_money_type::processing_point> },
                 { 187, &AlterMoneyPotion<e_money_type::hunter_point> },
-                { 188, &AlterMoneyPotion<e_money_type::gold_point> }
+                { 188, &AlterMoneyPotion<e_money_type::gold_point> },
+                { 189, &RecallMonsterPotion },
             };
 
             for (auto& kv : vecNewFunc)
@@ -58,7 +59,7 @@ namespace GameServer
             CPvpPotion::m_bActivated = RapidHelper::GetValueOrDefault(nodeConfig, "activated", false);
         }
 
-        int CPvpPotion::ApplyPotion(
+        int WINAPIV CPvpPotion::ApplyPotion(
             ATF::CPotionMgr* pObj,
             ATF::CPlayer* pUsePlayer,
             ATF::CPlayer* pApplyPlayer,
@@ -167,6 +168,31 @@ namespace GameServer
                 result = nContEffectResult;
             else
                 result = 0;
+            return result;
+        }
+
+        bool WINAPIV CPvpPotion::RecallMonsterPotion(
+            ATF::CCharacter * pAct,
+            ATF::CCharacter * pTargetChar,
+            float fEffectValue,
+            char * byRet)
+        {
+            bool result = false;
+
+            do
+            {
+                int iMonsterIndx = static_cast<int>(fEffectValue);
+                ATF::CPlayer *pActChar = (ATF::CPlayer *)pAct;
+
+                ATF::_monster_fld* pFld = (ATF::_monster_fld*)ATF::Global::g_MainThread
+                    ->m_tblMonster.GetRecord(iMonsterIndx);
+
+                if (!pFld)
+                    break;
+
+                result = pActChar->mgr_recall_mon(pFld->m_strCode, 1);
+            } while (false);
+
             return result;
         }
     }

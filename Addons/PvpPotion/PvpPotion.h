@@ -12,7 +12,7 @@ namespace GameServer
         namespace detail
         {
             const size_t count_orig_effect_func = 182;
-            const size_t count_new_effect_func = 189;
+            const size_t count_new_effect_func = 190;
         }
 
         class CPvpPotion
@@ -96,6 +96,12 @@ namespace GameServer
 
                 return result;
             }
+
+            static bool WINAPIV RecallMonsterPotion(
+                ATF::CCharacter *pAct,
+                ATF::CCharacter *pTargetChar,
+                float fEffectValue,
+                char *byRet);
 
         private:
             static int WINAPIV ApplyPotion(

@@ -46,6 +46,12 @@ namespace GameServer
             unsigned int dwBaseShape, 
             ATF::Info::CUserDBInsert_Char_Request50_ptr next)
         {
+            if (strlen(pwszCharName) == 0)
+            {
+                pObj->Insert_Char_Complete(47, nullptr);
+                return true;
+            }
+
             if (!CheckBaseShape(dwBaseShape))
             {
                 pObj->Insert_Char_Complete(47, nullptr);

@@ -69,8 +69,8 @@
         "name": "addon.defence_formula",
         "config": {
           "activated": false,
-		  "base_resist_coeff": 0.1,
-		  "support_resist_coeff": 0.9
+          "base_resist_coeff": 0.1,
+          "support_resist_coeff": 0.9
         }
       },
       {
@@ -164,8 +164,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "addon.various_settings",
+        "config": {
+          "settings": [
+            {
+              "name": "exchange",
+              "config": {
+                "activated": false
+              }
+            }
+          ]
+        }
       }
     ]
   }
 }
-

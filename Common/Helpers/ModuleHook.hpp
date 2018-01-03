@@ -9,7 +9,7 @@ namespace GameServer
 {
     class CModuleHook
     {
-    protected:
+    public:
         template <typename T1, typename T2>
         inline void enable_hook(T1 pTarget, T2 pDetour)
         {
