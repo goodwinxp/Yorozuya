@@ -100,7 +100,8 @@ namespace GameServer
                     break;
                 }
 
-                next(pObj, wSkillIndex, wTrapItemSerial, pObj->m_fCurPos, pConsumeSerial);
+                float fNewPos[3]{ pObj->m_fCurPos[0], pfPos[1], pObj->m_fCurPos[2] };
+                next(pObj, wSkillIndex, wTrapItemSerial, fNewPos, pConsumeSerial);
             } while (false);
 
 
@@ -147,7 +148,8 @@ namespace GameServer
                     break;
                 }
 
-                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pObj->m_fCurPos, pConsumeSerial);
+                float fNewPos[3]{ pObj->m_fCurPos[0], pfPos[1], pObj->m_fCurPos[2] };
+                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, fNewPos, pConsumeSerial);
             } while (false);
 
             if (byErrCode != 0)
