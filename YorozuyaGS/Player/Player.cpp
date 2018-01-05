@@ -100,7 +100,8 @@ namespace GameServer
                     break;
                 }
 
-                next(pObj, wSkillIndex, wTrapItemSerial, pObj->m_fCurPos, pConsumeSerial);
+                float fNewPos[3]{ pObj->m_fCurPos[0], pfPos[1], pObj->m_fCurPos[2] };
+                next(pObj, wSkillIndex, wTrapItemSerial, fNewPos, pConsumeSerial);
             } while (false);
 
 
@@ -128,26 +129,27 @@ namespace GameServer
                     break;
                 }
 
-                auto pTrapItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTowerItemSerial);
-                if (!pTrapItem)
+                auto pTowerItem = pObj->m_Param.m_dbInven.GetPtrFromSerial(wTowerItemSerial);
+                if (!pTowerItem)
                 {
                     byErrCode = 1;
                     break;
                 }
 
-                if (pTrapItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_tower)
+                if (pTowerItem->m_byTableCode != (BYTE)e_code_item_table::tbl_code_tower)
                 {
                     byErrCode = 1;
                     break;
                 }
 
-                if (!pObj->IsEffectableEquip(pTrapItem))
+                if (!pObj->IsEffectableEquip(pTowerItem))
                 {
                     byErrCode = 1;
                     break;
                 }
 
-                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, pObj->m_fCurPos, pConsumeSerial);
+                float fNewPos[3]{ pObj->m_fCurPos[0], pfPos[1], pObj->m_fCurPos[2] };
+                next(pObj, wSkillIndex, wTowerItemSerial, byMaterialNum, pMaterial, fNewPos, pConsumeSerial);
             } while (false);
 
             if (byErrCode != 0)
