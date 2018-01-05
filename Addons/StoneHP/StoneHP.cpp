@@ -14,6 +14,14 @@ namespace GameServer
         namespace
         {
             const int default_lv = -1;
+
+            uint16_t CalcStoneHPRate(ATF::CHolyStone& stone)
+            {
+                double fHPRate = static_cast<double>(stone.m_nHP);
+                fHPRate /= static_cast<double>(stone.m_nMaxHP);
+                fHPRate *= 10000.f;
+                return static_cast<uint16_t>(fHPRate);
+            }
         }
 
         bool CStoneHP::m_bActivated = false;
@@ -68,7 +76,9 @@ namespace GameServer
             ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
             for (int j = 0; j < _countof(gStone); ++j)
-                msg.wHPRate[j] = gStone[j].GetHP();
+            {
+                msg.wHPRate[j] = CalcStoneHPRate(gStone[j]);
+            }
 
             for (auto& player : ATF::Global::g_Player)
             {
@@ -105,7 +115,9 @@ namespace GameServer
             ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
             for (int j = 0; j < _countof(gStone); ++j)
-                msg.wHPRate[j] = gStone[j].GetHP();
+            {
+                msg.wHPRate[j] = CalcStoneHPRate(gStone[j]);
+            }
 
             for (auto& player : ATF::Global::g_Player)
             {
@@ -154,7 +166,9 @@ namespace GameServer
                         ATF::Global::CHolyStone_Ref gStone = **ATF::Global::g_Stone;
 
                         for (int j = 0; j < _countof(gStone); ++j)
-                            msg.wHPRate[j] = gStone[j].GetHP();
+                        {
+                            msg.wHPRate[j] = CalcStoneHPRate(gStone[j]);
+                        }
 
                         char byType[2]{ 13, 33 };
                         ATF::Global::g_NetProcess[(uint8_t)e_type_line::client]
