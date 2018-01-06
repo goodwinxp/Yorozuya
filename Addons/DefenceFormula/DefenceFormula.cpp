@@ -117,11 +117,14 @@ namespace GameServer
                     nCnt++;
             }
 
+            if (nCnt == 0)
+                return 0.f;
+
             ATF::_ItemUpgrade_fld* pFld = ATF::Global::g_MainThread->m_tblItemUpgrade.GetRecord(indxDefTalik);
             if (pFld == nullptr)
                 return 0.f;
 
-            return pFld->m_fUp[nCnt];
+            return pFld->m_fUp[nCnt - 1];
         }
 
         float CDefenceFormula::SecDstFcCoeff(ATF::CCharacter * pObj, int nAttPart)
