@@ -74,6 +74,13 @@
         }
       },
       {
+        "name": "addon.accuracy_effect",
+        "config": {
+          "activated": false,
+          "hit": "standart"
+        }
+      },
+      {
         "name": "addon.stone_hp",
         "config": {
           "activated": false,

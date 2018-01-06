@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GMCommands", "Addons\GMComm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VariousSettings", "Addons\VariousSettings\VariousSettings.vcxproj", "{97B75FFF-E244-4CED-9FCC-43EF826A9CB7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccuracyEffect", "Addons\AccuracyEffect\AccuracyEffect.vcxproj", "{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Release|x64 = Release|x64
@@ -129,6 +131,10 @@ Global
 		{97B75FFF-E244-4CED-9FCC-43EF826A9CB7}.Release|x64.Build.0 = Release|x64
 		{97B75FFF-E244-4CED-9FCC-43EF826A9CB7}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
 		{97B75FFF-E244-4CED-9FCC-43EF826A9CB7}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
+		{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C}.Release|x64.ActiveCfg = Release|x64
+		{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C}.Release|x64.Build.0 = Release|x64
+		{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C}.ReleaseDebug|x64.ActiveCfg = ReleaseDebug|x64
+		{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C}.ReleaseDebug|x64.Build.0 = ReleaseDebug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{BCF66E19-2AE3-454A-886D-EDF2868C9001} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{E14A9E5E-A018-4FE5-82A6-9AEFBB65253D} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 		{97B75FFF-E244-4CED-9FCC-43EF826A9CB7} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
+		{7DB14895-DF17-4E19-A0A5-2D2EF33FE89C} = {9B077178-ACCD-4F3E-A838-D899DBB75DEB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE57490E-BBC3-4C6B-9B33-6D9A8A3949C3}

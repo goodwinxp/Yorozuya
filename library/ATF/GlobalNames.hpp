@@ -40,6 +40,8 @@ START_ATF_NAMESPACE
         using CItemBox_Ptr = ATF::CItemBox(*)[item_box];
         using CHolyStone_Ref = ATF::CHolyStone(&)[3];
         using CHolyStone_Ptr = ATF::CHolyStone(*)[3];
+        using LimitAngle_Ref = int(&)[4][4];
+        using LimitAngle_Ptr = int(*)[4][4];
 
         static TimeLimitMgr_ptr g_TimerLimitMgr((TimeLimitMgr_ptr)0x1799CA2D0L);
         static bool* Major_Cash_Item((bool*)0x14096E033L);
@@ -51,9 +53,12 @@ START_ATF_NAMESPACE
         static CLogFile_ptr s_logTrace_Boss_Looting((CLogFile_ptr)0x14136F9E0L);
         static CMainThread_ptr g_MainThread((CMainThread_ptr)0x14154F250L);
         static float* s_fExpDivUnderParty_Kill((float*)0x14096B228L);
-        static int** s_pnLinkForceItemToEffect((int**)0x140988F98);
-        static _skill_fld_ptr ms_pXmas_Snow_Effect((_skill_fld_ptr)0x140988FA0);
-        static _skill_fld_ptr ms_pXmas_Snow_Bullet_Effect((_skill_fld_ptr)0x140988FA8);
+        static int** s_pnLinkForceItemToEffect((int**)0x140988F98L);
+        static int* s_nLimitDist((int*)0x14096CC90L);
+        static int* s_nLimitRadius((int*)0x14096CCE0L);
+        static LimitAngle_Ref s_nLimitAngle = (*(LimitAngle_Ptr)0x14096CCA0L);
+        static _skill_fld_ptr ms_pXmas_Snow_Effect((_skill_fld_ptr)0x140988FA0L);
+        static _skill_fld_ptr ms_pXmas_Snow_Bullet_Effect((_skill_fld_ptr)0x140988FA8L);
         static CUserDB_ptr g_UserDB((CUserDB_ptr)0x1414FFFE8L);
         static CMonster_ptr g_Monster((CMonster_ptr)0x1414FFFF0L);
         static CMerchant_ptr g_NPC((CMerchant_ptr)0x1414FFFF8L);
