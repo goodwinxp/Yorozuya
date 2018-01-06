@@ -234,7 +234,7 @@ namespace GameServer
 
                 if (fDefPnt == -2.0)
                 {
-                    nDamPoint = -1;
+                    nDamPoint = -2;
                     break;
                 }
                 
