@@ -1,5 +1,6 @@
 #include "stdafx.h"
 
+#include <sstream>
 #include "CheatCommand.h"
 
 namespace GameServer
@@ -9,6 +10,7 @@ namespace GameServer
         void CCheatCommand::load()
         {
             enable_hook(&ATF::Global::AuthorityFilter, &CCheatCommand::AuthorityFilter);
+            enable_hook(&ATF::CMainThread::Init, &CCheatCommand::Init);
         }
 
         void CCheatCommand::unload()
@@ -49,6 +51,25 @@ namespace GameServer
                 return false;
             }
             return true;
+        }
+
+        bool WINAPIV CCheatCommand::Init(
+            ATF::CMainThread * pObj,
+            ATF::Info::CMainThreadInit88_ptr next)
+        {
+            bool result = next(pObj);
+            if (result)
+            {
+                ATF::CLogFile* s_logCheat = (ATF::CLogFile *)0x1849ACC70L;
+
+                std::stringstream ss;
+                ss << "..\\ZoneServerLog\\ServiceLog\\Cheat" << ATF::Global::GetKorLocalTime();
+                ss << ".log";
+
+                s_logCheat->SetWriteLogFile((char *)ss.str().c_str(), TRUE, false, true, true);
+            }
+
+            return result;
         }
     }
 }
