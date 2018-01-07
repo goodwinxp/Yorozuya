@@ -4,6 +4,7 @@
 #include "../../Common/Interfaces/ModuleInterface.h"
 
 #include <ATF/CNetworkEXInfo.hpp>
+#include <ATF/CNetProcessInfo.hpp>
 
 namespace GameServer
 {
@@ -55,6 +56,14 @@ namespace GameServer
                 ATF::_MSG_HEADER *pMsgHeader,
                 char *pMsg,
                 ATF::Info::CNetworkEXDataAnalysis222_ptr next);
+
+            static bool WINAPIV SetProcess(
+                ATF::CNetProcess *pObj,
+                int nIndex,
+                ATF::_NET_TYPE_PARAM *pType,
+                ATF::CNetWorking *pNetwork,
+                bool bUseFG,
+                ATF::Info::CNetProcessSetProcess48_ptr next);
         };
     };
 };
