@@ -115,7 +115,7 @@ START_ATF_NAMESPACE
            CExchangeEventdtor_CExchangeEvent33_user(_this, CExchangeEventdtor_CExchangeEvent33_next);
         };
         
-        ::std::array<hook_record, 15> CExchangeEvent_functions = 
+        ::std::array<hook_record, 16> CExchangeEvent_functions = 
         {
             _hook_record {
                 (LPVOID)0x140329780L,

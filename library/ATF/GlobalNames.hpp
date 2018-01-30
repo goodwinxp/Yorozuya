@@ -4,6 +4,7 @@
 #include <CPlayer.hpp>
 #include <CItemBox.hpp>
 #include <CHolyStone.hpp>
+#include <CTransportShip.hpp>
 #include <__time32_t.hpp>
 
 START_ATF_NAMESPACE
@@ -24,11 +25,15 @@ START_ATF_NAMESPACE
         using CParkingUnit_ptr = struct CParkingUnit*;
         using CTrap_ptr = struct CTrap*;
         using CDarkHole_ptr = struct CDarkHole*;
+        using CDarkHoleDungeonQuest_ptr = struct CDarkHoleDungeonQuest*;
         using CGuild_ptr = struct CGuild*;
         using CNetProcess_ptr = struct CNetProcess*;
         using CNetworkEX_ptr = struct CNetworkEX*;
         using CHolyKeeper_ptr = struct CHolyKeeper*;
         using CHolyStoneSystem_ptr = struct CHolyStoneSystem*;
+        using CWorldSchedule_ptr = struct CWorldSchedule*;
+        using CGameStatistics_ptr = struct CGameStatistics*;
+        using CMapOperation_ptr = struct CMapOperation*;
         using TimeLimitMgr_ptr = struct TimeLimitMgr*;
         using CRecordData_ptr = struct CRecordData*;
         using CRecordData_ptr2 = struct CRecordData**;
@@ -38,6 +43,8 @@ START_ATF_NAMESPACE
         using CPlayer_Ptr = ATF::CPlayer(*)[max_player];
         using CItemBox_Ref = ATF::CItemBox(&)[item_box];
         using CItemBox_Ptr = ATF::CItemBox(*)[item_box];
+        using CTransportShip_Ref = ATF::CTransportShip(&)[3];
+        using CTransportShip_Ptr = ATF::CTransportShip(*)[3];
         using CHolyStone_Ref = ATF::CHolyStone(&)[3];
         using CHolyStone_Ptr = ATF::CHolyStone(*)[3];
         using LimitAngle_Ref = int(&)[4][4];
@@ -68,16 +75,25 @@ START_ATF_NAMESPACE
         static CParkingUnit_ptr g_ParkingUnit((CParkingUnit_ptr)0x141500018L);
         static CHolyStone_Ptr* g_Stone((CHolyStone_Ptr*)0x141500020L);
         static CHolyKeeper_ptr g_Keeper((CHolyKeeper_ptr)0x141500028L);
+        static CTransportShip_Ref g_TransportShip(*(CTransportShip_Ptr)0x183ED4A70L);
         static CTrap_ptr g_Trap((CTrap_ptr)0x141500030L);
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);
+        static CDarkHoleDungeonQuest_ptr g_DarkHoleQuest((CDarkHoleDungeonQuest_ptr)0x183F1C1C0L);
         static CGuild_ptr g_Guild((CGuild_ptr)0x141500040L);
         static CNetProcess_ptr* g_NetProcess((CNetProcess_ptr *)0x1414F2088L);
         static CNetworkEX_ptr g_Network((CNetworkEX_ptr)0x1414AC9E0L);
         static CHolyStoneSystem_ptr g_HolySys((CHolyStoneSystem_ptr)0x184981C90L);
         static bool* g_HideLicenseWindow((bool*)0x1799C9AE8L);
         static CRecordData_ptr g_tblExchangeItems((CRecordData_ptr)0x1799C6928L);
+        static CWorldSchedule_ptr g_WorldSch((CWorldSchedule_ptr)0x184A70880L);
+        static CGameStatistics_ptr g_GameStatistics((CGameStatistics_ptr)0x183D78AE0L);
+        static CMapOperation_ptr g_MapOper((CMapOperation_ptr)0x141470B70L);
 
         static float* pPCBANG_PRIMIUM_FAVOR__ANIMUS_EXP_RATE((float*)0x14096E018L);
         static float* pANIMUS_EXP_RATE((float*)0x14096E000L);
+
+        static uint32_t* dwTime_AliveMonNum((uint32_t*)0x141500048L);
+        static uint32_t* dwMaxMonNum((uint32_t*)0x14150004CL);
+        static uint32_t* g_dwCurTime((uint32_t*)0x1799CA318L);
     }; // static end namespace global
 END_ATF_NAMESPACE
