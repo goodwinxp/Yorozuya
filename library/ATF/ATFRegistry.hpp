@@ -95,6 +95,7 @@
 #include <CEntityRegister.hpp>
 #include <CEquipItemSFAgentRegister.hpp>
 #include <CEventLootTableRegister.hpp>
+#include <CExchangeEventRegister.hpp>
 #include <CExtDummyRegister.hpp>
 #include <CExtPotionBufRegister.hpp>
 #include <CFPSRegister.hpp>
@@ -1071,6 +1072,7 @@ START_ATF_NAMESPACE
             _registry.emplace_back(::std::make_shared<Register::CMergeFileRegister>());
             _registry.emplace_back(::std::make_shared<Register::CMergeFileManagerRegister>());
             _registry.emplace_back(::std::make_shared<Register::_SOUND_ENTITIES_LISTRegister>());
+            _registry.emplace_back(::std::make_shared<Register::CExchangeEventRegister>());
             _registry.emplace_back(::std::make_shared<Register::CExtDummyRegister>());
             _registry.emplace_back(::std::make_shared<Register::CPathFinderRegister>());
             _registry.emplace_back(::std::make_shared<Register::CAlphaRegister>());
