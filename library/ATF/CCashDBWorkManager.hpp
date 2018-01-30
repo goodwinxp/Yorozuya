@@ -37,6 +37,11 @@ START_ATF_NAMESPACE
             using org_ptr = void (WINAPIV*)(struct CCashDBWorkManager*, struct _param_cash_update*, int, char*, uint64_t);
             (org_ptr(0x1402f3430L))(this, rParam, nIdx, wszQuery, tBufferSize);
         };
+        static struct CCashDBWorkManager* Instance()
+        {
+            using org_ptr = CCashDBWorkManager * (WINAPIV*)();
+            return (org_ptr(0x140009971L))();
+        }
         bool Initialize()
         {
             using org_ptr = bool (WINAPIV*)(struct CCashDBWorkManager*);
