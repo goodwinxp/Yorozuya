@@ -51,6 +51,7 @@ namespace P7Helper
                 wLine,
                 pszFile,
                 pszFunction,
+                L"%s",
                 pwszMessage);
         }
 
