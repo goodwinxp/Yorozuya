@@ -47,8 +47,10 @@ namespace GameServer
             ATF::Info::CMainThreadOnRun130_ptr next)
         {
             ATF::Global::g_Network->OnLoop();
-            pObj->DQSCompleteProcess();
+            ATF::Global::g_MainThread->DQSCompleteProcess();
             ATF::CCashDBWorkManager::Instance()->CompleteWork();
+
+            ATF::Global::g_MainThread->CheckAccountLineState();
         }
 
         void WINAPIV CMainThread::MyRuleThread()
@@ -60,7 +62,8 @@ namespace GameServer
                 *ATF::Global::g_dwCurTime = timeGetTime();
                 ATF::Global::g_MainThread->m_MainFrameRate.CalcSpeedPerFrame();
                 CMainThread::MyOnRun();
-                if (!ATF::Global::g_MainThread->m_nSleepIgnore && ++nTickCount > ATF::Global::g_MainThread->m_nSleepTerm)
+                if (!ATF::Global::g_MainThread->m_nSleepIgnore &&
+                    ++nTickCount > ATF::Global::g_MainThread->m_nSleepTerm)
                 {
                     Sleep(ATF::Global::g_MainThread->m_nSleepValue);
                     nTickCount = 0;
@@ -73,20 +76,13 @@ namespace GameServer
             //ATF::CMapDisplay::DrawDisplay(&ATF::Global::g_MapDisplay);
             ATF::Global::g_MapOper->OnLoop();
             ATF::Global::g_HolySys->OnLoop();
-            /*
-            //CNetWorking::OnLoop(&g_Network.vfptr);
-            //CMainThread::DQSCompleteProcess(this);
-            //v4 = CTSingleton<CCashDBWorkManager>::Instance();
-            //CCashDBWorkManager::CompleteWork(v4);
-            */
+
             ATF::Global::g_MainThread->CheckAvatorState();
-            ATF::Global::g_MainThread->CheckAccountLineState();
             ATF::Global::g_MainThread->ForceCloseUserInTiming();
-            bool pbChangeDay = 0;
+            bool pbChangeDay = false;
             ATF::Global::eUpdateEconomySystem(&pbChangeDay);
             if ( pbChangeDay )
-                ATF::Global::g_GameStatistics->ConvertDay(
-                    ATF::Global::g_MainThread->m_szWorldName);
+                ATF::Global::g_GameStatistics->ConvertDay(ATF::Global::g_MainThread->m_szWorldName);
 
             ATF::CMoneySupplyMgr::Instance()->LoopMoneySupply();
             ATF::Global::g_MainThread->CheckConnNumLog();
@@ -108,9 +104,9 @@ namespace GameServer
             ATF::CWeeklyGuildRankManager::Instance()->Loop();
             ATF::AutoMineMachineMng::Instance()->Loop();
             
-            if (*ATF::Global::g_dwCurTime - *ATF::Global::dwTime_AliveMonNum > 60000 )
+            if (ATF::Global::GetLoopTime() - *ATF::Global::dwTime_AliveMonNum > 60000 )
             {
-                *ATF::Global::dwTime_AliveMonNum = *ATF::Global::g_dwCurTime;
+                *ATF::Global::dwTime_AliveMonNum = ATF::Global::GetLoopTime();
                 int nDiedMonster = 0;
                 for (int k = 0; k < 30000; ++k )
                 {
