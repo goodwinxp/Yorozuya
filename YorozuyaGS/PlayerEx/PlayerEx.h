@@ -116,6 +116,7 @@ namespace GameServer
             ATF::CPlayer *m_pPlayer = nullptr;
 
             std::mutex m_mtxSetView;
+            TimeHelper::CTimer m_tmPeriodSendItemInfo;
             detail::ContainerSetItemInfo_t m_setSetItemInfoView;
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
         private:
