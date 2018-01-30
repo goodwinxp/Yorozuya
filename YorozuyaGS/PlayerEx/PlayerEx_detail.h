@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <unordered_map>
 #include <unordered_set>
+#include <ATF/global.hpp>
 
 #include "../../Common/Helpers/TimeHelper.hpp"
 
@@ -103,7 +104,7 @@ namespace GameServer
 
             struct _move_info
             {
-                ::std::chrono::time_point<::std::chrono::steady_clock> m_tpLastMove;
+                TimeHelper::Clocks_t::time_point m_tpLastMove;
                 TimeHelper::CTimer m_timerWarning;
                 float m_fLastSpeed;
                 int m_nCountMove;
@@ -113,7 +114,8 @@ namespace GameServer
                 {
                     m_nCountMove = 0;
                     m_nCountWarning = 0;
-                    m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+                    
+                    m_tpLastMove = TimeHelper::GetLoopTimeInChrono();
                     m_timerWarning.abort();
                 }
             };
