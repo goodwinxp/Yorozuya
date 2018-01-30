@@ -75,7 +75,7 @@ START_ATF_NAMESPACE
         static CParkingUnit_ptr g_ParkingUnit((CParkingUnit_ptr)0x141500018L);
         static CHolyStone_Ptr* g_Stone((CHolyStone_Ptr*)0x141500020L);
         static CHolyKeeper_ptr g_Keeper((CHolyKeeper_ptr)0x141500028L);
-        static CTransportShip_Ref g_TransportShip(*(CTransportShip_Ptr)0x183ED4A70L);
+        static CTransportShip_Ref g_TransportShip = (*(CTransportShip_Ptr)0x183ED4A70L);
         static CTrap_ptr g_Trap((CTrap_ptr)0x141500030L);
         static CDarkHole_ptr g_DarkHole((CDarkHole_ptr)0x141500038L);
         static CDarkHoleDungeonQuest_ptr g_DarkHoleQuest((CDarkHoleDungeonQuest_ptr)0x183F1C1C0L);
