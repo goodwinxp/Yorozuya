@@ -12,6 +12,22 @@
         }
       },
       {
+        "name": "fix.main_thread",
+        "config": {
+          "priority_1": 100,
+          "priority_2": 500,
+          "priority_3": 1000,
+          "priority_4": 2000,
+          "priority_5": 5000
+        }
+      },
+      {
+        "name": "fix.network_ex",
+        "config": {
+          "accept_ip_check": true
+        }
+      },
+      {
         "name": "fix.vote",
         "config": {
           "level": 30,

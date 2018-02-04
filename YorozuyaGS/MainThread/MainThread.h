@@ -4,6 +4,7 @@
 #include "../../Common/Interfaces/ModuleInterface.h"
 #include "../../Common/Helpers/TimeHelper.hpp"
 
+#include <unordered_map>
 #include <ATF/CMainThreadInfo.hpp>
 #include <ATF/CExchangeEvent.hpp>
 
@@ -21,7 +22,7 @@ namespace GameServer
                 {
                 }
 
-                CRunRule(::std::chrono::milliseconds interval)
+                CRunRule(const ::std::chrono::milliseconds& interval)
                     : CRunRule(true, interval)
                 {
                 }
@@ -40,7 +41,8 @@ namespace GameServer
                 }
 
             private:
-                CRunRule(bool enabled_timer, ::std::chrono::milliseconds interval = ::std::chrono::milliseconds(0))
+                CRunRule(bool enabled_timer,
+                    const ::std::chrono::milliseconds& interval = ::std::chrono::milliseconds(0))
                     : m_bEnabledTimer(enabled_timer)
                     , m_interval(interval)
                 {
@@ -82,6 +84,18 @@ namespace GameServer
             };
 
             using Tasks_t = ::std::vector<CTask>;
+
+            enum class priority_task
+            {
+                one,
+                two,
+                three,
+                four,
+                five,
+                num
+            };
+
+            using PriorityTimer_t = ::std::unordered_map<priority_task, ::std::chrono::milliseconds>;
         }
 
         class CMainThread
@@ -89,13 +103,18 @@ namespace GameServer
             , CModuleRegister<CMainThread>
         {
         public:
-            CMainThread();
+            CMainThread() { };
 
             virtual void load() override;
 
             virtual void unload() override;
 
             virtual Yorozuya::Module::ModuleName_t get_name() override;
+
+            virtual void configure(const rapidjson::Value& nodeConfig) override;
+
+        private:
+            void make_tasks(const detail::PriorityTimer_t& PriorityTimerValue);
 
         private:
             detail::Tasks_t m_Tasks;

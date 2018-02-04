@@ -22,6 +22,12 @@ namespace GameServer
             virtual void unload() override;
 
             virtual Yorozuya::Module::ModuleName_t get_name() override;
+
+            virtual void configure(const rapidjson::Value& nodeConfig) override;
+
+        private:
+            static bool m_bAcceptIPCheck;
+
         private:
             static bool WINAPIV DTradeAskRequest(
                 ATF::CNetworkEX* pObj, 

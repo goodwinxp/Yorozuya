@@ -2,6 +2,7 @@
 
 #include "NetworkEx.h"
 #include "../../Common/ETypes.h"
+#include "../../Common/Helpers/RapidHelper.hpp"
 
 #include <ATF/global.hpp>
 #include <ATF/_d_trade_ask_request_clzo.hpp>
@@ -10,6 +11,8 @@ namespace GameServer
 {
     namespace Fixes
     {
+        bool CNetworkEX::m_bAcceptIPCheck = false;
+
         void CNetworkEX::load()
         {
             enable_hook(&ATF::CNetworkEX::SetItemCheckRequest, &CNetworkEX::SetItemCheckRequest);
@@ -28,7 +31,14 @@ namespace GameServer
         Yorozuya::Module::ModuleName_t CNetworkEX::get_name()
         {
             static const Yorozuya::Module::ModuleName_t name = "fix.network_ex";
+            
             return name;
+        }
+
+        void CNetworkEX::configure(const rapidjson::Value & nodeConfig)
+        {
+            CNetworkEX::m_bAcceptIPCheck = RapidHelper::GetValueOrDefault(
+                nodeConfig, "accept_ip_check", false);
         }
 
         bool WINAPIV CNetworkEX::DTradeAskRequest(
@@ -81,6 +91,7 @@ namespace GameServer
             UNREFERENCED_PARAMETER(next);
             return true;
         }
+
         bool WINAPIV CNetworkEX::SetItemCheckRequest(
             ATF::CNetworkEX * pNetwork, int n, char * pBuf,
             ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next)
@@ -139,7 +150,7 @@ namespace GameServer
         {
             if (nIndex == 0)
             {
-                pType->m_bAcceptIPCheck = TRUE;
+                pType->m_bAcceptIPCheck = CNetworkEX::m_bAcceptIPCheck ? TRUE : FALSE;
             }
 
             return next(pObj, nIndex, pType, pNetwork, bUseFG);
