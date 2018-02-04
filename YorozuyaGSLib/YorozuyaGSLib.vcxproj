@@ -2229,6 +2229,8 @@
     <ClCompile Include=".\source\strFILEDetail.cpp" />
     <ClCompile Include=".\source\type_info.cpp" />
     <ClCompile Include=".\source\type_infoDetail.cpp" />
+    <ClCompile Include="source\CExchangeEvent.cpp" />
+    <ClCompile Include="source\CExchangeEventDetail.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\library\MinHook\build\VC15\libMinHook.vcxproj">

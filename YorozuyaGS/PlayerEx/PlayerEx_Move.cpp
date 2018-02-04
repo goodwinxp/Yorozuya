@@ -109,7 +109,7 @@ namespace GameServer
 
         bool CPlayerEx::CheckSpeedHack(float fRealSpeed, float* fTar) const
         {
-            const auto tpCurrentTime = ::std::chrono::high_resolution_clock::now();
+            const auto tpCurrentTime = TimeHelper::GetLoopTimeInChrono();
 
             auto tmTime = ::std::chrono::milliseconds(100);
             if (!m_pPlayer->m_bMove || m_MoveInfo.m_nCountMove < 1)
@@ -205,7 +205,7 @@ namespace GameServer
             else
             {
                 ++m_MoveInfo.m_nCountMove;
-                m_MoveInfo.m_tpLastMove = ::std::chrono::high_resolution_clock::now();
+                m_MoveInfo.m_tpLastMove = TimeHelper::GetLoopTimeInChrono();
             }
             
             return result;

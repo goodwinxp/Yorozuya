@@ -151,6 +151,9 @@
     <Filter Include="Impl\Fixes\LogType">
       <UniqueIdentifier>{fa50f69a-9c6c-4fbe-aa79-80d613a7c2f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Impl\Fixes\MainThread">
+      <UniqueIdentifier>{b9e6df72-384a-4c82-948c-5c1e3ad02d6f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\Helpers\zip.cpp">
@@ -290,6 +293,9 @@
     </ClCompile>
     <ClCompile Include="LogType\LogType.cpp">
       <Filter>Impl\Fixes\LogType</Filter>
+    </ClCompile>
+    <ClCompile Include="MainThread\MainThread.cpp">
+      <Filter>Impl\Fixes\MainThread</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -448,6 +454,9 @@
     </ClInclude>
     <ClInclude Include="LogType\LogType.h">
       <Filter>Impl\Fixes\LogType</Filter>
+    </ClInclude>
+    <ClInclude Include="MainThread\MainThread.h">
+      <Filter>Impl\Fixes\MainThread</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

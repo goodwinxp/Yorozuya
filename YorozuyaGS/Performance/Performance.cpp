@@ -44,6 +44,7 @@ namespace GameServer
 
             return sqrt(F32vec4(add_horizontal(diff_pow)))[0];
         }
+
         float WINAPIV CPerformance::Get3DSqrt(
             float * fPos,
             float * fTar,

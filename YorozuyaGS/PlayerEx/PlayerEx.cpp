@@ -23,9 +23,13 @@ namespace GameServer
                 if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                 {
                     std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
-                    for (const auto& set : m_setSetItemInfoView)
+                    if (m_tmPeriodSendItemInfo.is_end())
                     {
-                        m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                        for (const auto& set : m_setSetItemInfoView)
+                        {
+                            m_pPlayer->SendMsg_SetItemCheckResult(8, set.info.dwSetItem, set.info.bySetEffectNum);
+                        }
+                        m_tmPeriodSendItemInfo.begin(::std::chrono::seconds(10));
                     }
                 }
             }
@@ -133,6 +137,7 @@ namespace GameServer
             {
                 std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
                 m_setSetItemInfoView = setCurrent;
+                m_tmPeriodSendItemInfo.abort();
             }
            
             m_setSetItemInfo.swap(setCurrent);
@@ -299,6 +304,12 @@ namespace GameServer
         void CPlayerEx::ResetSetItem()
         {
             m_setSetItemInfo.clear();
+
+            {
+                std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                m_tmPeriodSendItemInfo.abort();
+                m_setSetItemInfoView.clear();
+            }
         }
 
         void CPlayerEx::ResetAttackDelay()

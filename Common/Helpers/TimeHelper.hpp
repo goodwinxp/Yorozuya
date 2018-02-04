@@ -4,6 +4,13 @@
 
 namespace TimeHelper
 {
+    using Clocks_t = ::std::chrono::system_clock;
+
+    inline Clocks_t::time_point GetLoopTimeInChrono()
+    {
+        return Clocks_t::from_time_t(ATF::Global::GetLoopTime());
+    }
+
     class CTimer
     {
     public:
@@ -14,21 +21,21 @@ namespace TimeHelper
 
         inline void abort()
         {
-            tmEnd = ::std::chrono::steady_clock::now();
+            tmEnd = GetLoopTimeInChrono();
         }
 
         template<typename _interval>
         inline void begin(_interval term)
         {
-            tmEnd = ::std::chrono::steady_clock::now() + term;
+            tmEnd = GetLoopTimeInChrono() + term;
         }
 
         inline bool is_end() const
         {
-            return ::std::chrono::steady_clock::now() > tmEnd;
+            return GetLoopTimeInChrono() > tmEnd;
         }
 
     private:
-        ::std::chrono::time_point<std::chrono::steady_clock> tmEnd;
+        Clocks_t::time_point tmEnd;
     };
 }

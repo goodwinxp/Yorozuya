@@ -2,6 +2,7 @@
 
 #include "NetworkEx.h"
 #include "../../Common/ETypes.h"
+#include "../../Common/Helpers/RapidHelper.hpp"
 
 #include <ATF/global.hpp>
 #include <ATF/_d_trade_ask_request_clzo.hpp>
@@ -10,6 +11,8 @@ namespace GameServer
 {
     namespace Fixes
     {
+        bool CNetworkEX::m_bAcceptIPCheck = false;
+
         void CNetworkEX::load()
         {
             enable_hook(&ATF::CNetworkEX::SetItemCheckRequest, &CNetworkEX::SetItemCheckRequest);
@@ -17,6 +20,7 @@ namespace GameServer
             enable_hook(&ATF::CNetworkEX::Apex_R, &CNetworkEX::Apex_R);
             enable_hook(&ATF::CNetworkEX::Apex_T, &CNetworkEX::Apex_T);
             enable_hook(&ATF::CNetworkEX::DataAnalysis, &CNetworkEX::DataAnalysis);
+            enable_hook(&ATF::CNetProcess::SetProcess, &CNetworkEX::SetProcess);
         }
 
         void CNetworkEX::unload()
@@ -27,7 +31,14 @@ namespace GameServer
         Yorozuya::Module::ModuleName_t CNetworkEX::get_name()
         {
             static const Yorozuya::Module::ModuleName_t name = "fix.network_ex";
+            
             return name;
+        }
+
+        void CNetworkEX::configure(const rapidjson::Value & nodeConfig)
+        {
+            CNetworkEX::m_bAcceptIPCheck = RapidHelper::GetValueOrDefault(
+                nodeConfig, "accept_ip_check", false);
         }
 
         bool WINAPIV CNetworkEX::DTradeAskRequest(
@@ -80,6 +91,7 @@ namespace GameServer
             UNREFERENCED_PARAMETER(next);
             return true;
         }
+
         bool WINAPIV CNetworkEX::SetItemCheckRequest(
             ATF::CNetworkEX * pNetwork, int n, char * pBuf,
             ATF::Info::CNetworkEXSetItemCheckRequest512_ptr next)
@@ -126,6 +138,22 @@ namespace GameServer
             }
 
             return result;
+        }
+
+        bool WINAPIV CNetworkEX::SetProcess(
+            ATF::CNetProcess *pObj,
+            int nIndex,
+            ATF::_NET_TYPE_PARAM *pType,
+            ATF::CNetWorking *pNetwork,
+            bool bUseFG,
+            ATF::Info::CNetProcessSetProcess48_ptr next)
+        {
+            if (nIndex == 0)
+            {
+                pType->m_bAcceptIPCheck = CNetworkEX::m_bAcceptIPCheck ? TRUE : FALSE;
+            }
+
+            return next(pObj, nIndex, pType, pNetwork, bUseFG);
         }
     }
 }

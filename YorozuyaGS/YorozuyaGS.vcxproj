@@ -132,6 +132,7 @@
     <ClInclude Include="CreatePlayer\CreatePlayer.h" />
     <ClInclude Include="Guild\Guild.h" />
     <ClInclude Include="LogType\LogType.h" />
+    <ClInclude Include="MainThread\MainThread.h" />
     <ClInclude Include="NetworkEx\NetworkEx.h" />
     <ClInclude Include="NpcData\NpcData.h" />
     <ClInclude Include="PcBangFavor\PcBangFavor.h" />
@@ -186,6 +187,7 @@
     </ClCompile>
     <ClCompile Include="Guild\Guild.cpp" />
     <ClCompile Include="LogType\LogType.cpp" />
+    <ClCompile Include="MainThread\MainThread.cpp" />
     <ClCompile Include="NetworkEx\NetworkEx.cpp" />
     <ClCompile Include="NpcData\NpcData.cpp" />
     <ClCompile Include="PcBangFavor\PcBangFavor.cpp" />
