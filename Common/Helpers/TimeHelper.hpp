@@ -21,7 +21,7 @@ namespace TimeHelper
 
         inline void abort()
         {
-            tmEnd = GetLoopTimeInChrono();
+            tmEnd = Clocks_t::from_time_t(0);
         }
 
         template<typename _interval>

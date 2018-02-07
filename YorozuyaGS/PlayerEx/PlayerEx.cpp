@@ -22,7 +22,7 @@ namespace GameServer
             {
                 if (!m_pPlayer->IsSiegeMode() && !m_pPlayer->IsRidingUnit())
                 {
-                    std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                    CCriticalSectionGuard guard(m_mtxSetView);
                     if (m_tmPeriodSendItemInfo.is_end())
                     {
                         for (const auto& set : m_setSetItemInfoView)
@@ -135,7 +135,7 @@ namespace GameServer
             #pragma endregion DetectSetOnActionCode
 
             {
-                std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                CCriticalSectionGuard guard(m_mtxSetView);
                 m_setSetItemInfoView = setCurrent;
                 m_tmPeriodSendItemInfo.abort();
             }
@@ -306,7 +306,7 @@ namespace GameServer
             m_setSetItemInfo.clear();
 
             {
-                std::unique_lock<decltype(m_mtxSetView)> lock(m_mtxSetView);
+                CCriticalSectionGuard guard(m_mtxSetView);
                 m_tmPeriodSendItemInfo.abort();
                 m_setSetItemInfoView.clear();
             }
