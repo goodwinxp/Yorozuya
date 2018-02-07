@@ -8,6 +8,7 @@
 #include "PlayerEx_detail.h"
 #include "../../Common/Helpers/SingletonHelper.hpp"
 #include "../../Common/Helpers/TimeHelper.hpp"
+#include "../../Common/Helpers/CriticalSection.hpp"
 
 namespace GameServer
 {
@@ -115,12 +116,12 @@ namespace GameServer
             uint32_t m_dwPlayerSerial;
             ATF::CPlayer *m_pPlayer = nullptr;
 
-            std::mutex m_mtxSetView;
+            CCriticalSection m_mtxSetView;
             TimeHelper::CTimer m_tmPeriodSendItemInfo;
             detail::ContainerSetItemInfo_t m_setSetItemInfoView;
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
         private:
-            std::mutex m_mtxKillerInfo;
+            CCriticalSection m_mtxKillerInfo;
             std::set<uint32_t> m_setKillerInfo;
             std::set<uint32_t> m_setSavedKillerInfo;
 
