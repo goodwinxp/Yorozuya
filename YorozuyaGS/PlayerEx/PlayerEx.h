@@ -116,7 +116,6 @@ namespace GameServer
             uint32_t m_dwPlayerSerial;
             ATF::CPlayer *m_pPlayer = nullptr;
 
-            CCriticalSection m_mtxSetView;
             TimeHelper::CTimer m_tmPeriodSendItemInfo;
             detail::ContainerSetItemInfo_t m_setSetItemInfoView;
             detail::ContainerSetItemInfo_t m_setSetItemInfo;
