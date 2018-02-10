@@ -174,11 +174,11 @@ namespace GameServer
 
             do
             {
-                /*if (m_pPlayer->m_byUserDgr > 0)
+                if (m_pPlayer->m_byUserDgr > 0)
                 {
                     result = true;
                     break;
-                }*/
+                }
 
                 const float fLastSpeed = m_MoveInfo.m_fLastSpeed;
                 float fCurrentSpeed = GetMoveSpeed();
